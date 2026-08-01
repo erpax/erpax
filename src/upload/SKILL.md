@@ -2,68 +2,18 @@
 name: upload
 description: "Use when configuring a Payload upload collection or debugging file handling — image sizes/crop/focal point, mime/file-size limits, storage adapters (R2/S3), static serving, or securing uploaded files."
 atomPath: upload
-coordinate: upload · 7/descent · 24e748bc
-contentUuid: "f5b29c84-6b40-5653-aa0f-ad5ba37d1376"
-diamondUuid: "a7c1be91-10a2-8735-a559-6b1bcddbf9df"
-uuid: "24e748bc-8932-80fc-a9b1-d2cff21a463b"
-horo: 7
-bonds:
-  in:
-    - access
-    - accounting
-    - collections
-    - config
-    - deploy
-    - harden
-    - hooks
-    - identity
-    - media
-  out:
-    - access
-    - accounting
-    - collections
-    - config
-    - deploy
-    - harden
-    - hooks
-    - identity
-    - media
+coordinate: "upload · 8/crest · 37b7660d"
+contentUuid: "271db5fa-c618-5c0f-a5ed-e131e191208e"
+diamondUuid: "5c0df65d-fe84-822d-861a-289badc1f66b"
+uuid: "37b7660d-d629-864f-be9d-5d84d5c85736"
+horo: 8
 typography:
   partition: upload
-  bondDegree: 29
-  neighbors: []
+  bondDegree: 30
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - config
-    - deploy
-    - harden
-    - hooks
-    - media
-  matrix:
-    - access
-    - accounting
-    - collections
-    - config
-    - deploy
-    - harden
-    - hooks
-    - identity
-    - media
-  backlinks:
-    - access
-    - accounting
-    - collections
-    - config
-    - deploy
-    - harden
-    - hooks
-    - identity
-    - media
 signatures:
-  computationUuid: "0a448376-39bc-88b5-8e97-a98ba06b23ca"
+  computationUuid: "aec01ca5-c6ec-8ff0-9faa-e08932da11d2"
   stages:
     - stage: path
       stageUuid: "e30c7cf3-dc39-839e-b6ee-e0ee7164523a"
@@ -74,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "eb04a93b-d0a6-86bb-81c7-9bc194e86eb8"
     - stage: horo
-      stageUuid: "5fef0237-9914-8723-9bcd-e38416d0a482"
+      stageUuid: "47d2cf98-3359-8b13-b2ac-5e09a940403e"
     - stage: seal
-      stageUuid: "3d13ba76-8eb0-8b27-9bb0-4b8461dca164"
+      stageUuid: "aad8904b-cb0a-86be-8ff1-f2400a2627b3"
     - stage: uuid
-      stageUuid: "995990af-45b3-831f-936d-b906b3330c78"
+      stageUuid: "88d40977-3a49-8de6-a5fb-48b8c181c886"
 version: 2
 ---
 # upload — file/media collections

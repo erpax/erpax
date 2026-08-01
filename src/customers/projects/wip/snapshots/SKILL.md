@@ -2,32 +2,14 @@
 name: snapshots
 description: "Use when closing a fiscal period — capturing frozen WIP evidence (cost-to-date, EAC, % complete, recognised revenue, unbilled contract asset or deferred liability) per project per period, and anchoring the accrual JE. The IFRS-15 §B14-B19 period-end WIP valuation collection."
 atomPath: "customers/projects/wip/snapshots"
-coordinate: "customers/projects/wip/snapshots · 4/weave · 99dfa755"
-contentUuid: "90f25673-4645-5517-a69d-f424428d5ab1"
-diamondUuid: "817c149b-b236-8641-94b7-1bd6c112b7a0"
-uuid: "99dfa755-cae6-8825-bdd4-9805be9a3bd0"
-horo: 4
-bonds:
-  in:
-    - accounting
-    - adjustments
-    - law
-    - periods
-    - projects
-    - standard
-    - transaction
-  out:
-    - accounting
-    - adjustments
-    - law
-    - periods
-    - projects
-    - standard
-    - transaction
+coordinate: "customers/projects/wip/snapshots · 5/round · cb0b80bf"
+contentUuid: "0269bffa-0bc1-5c15-991d-f067127aafbd"
+diamondUuid: "bf42fe51-3d51-83ef-976a-971147fe9997"
+uuid: "cb0b80bf-37d9-8144-871a-9ab768324a1d"
+horo: 5
 typography:
   partition: customers
   bondDegree: 28
-  neighbors: []
 standards:
   - "IFRS IFRS-15 §107 §108 §109 contract-asset-contract-liability"
   - "IFRS IFRS-15 §B14 §B15 §B16 §B17 §B18 §B19 measurement-of-progress"
@@ -39,33 +21,8 @@ standards:
   - "US-GAAP ASC-606-10-45-1 contract-asset"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - adjustments
-    - law
-    - periods
-    - projects
-    - standard
-    - transaction
-  matrix:
-    - accounting
-    - adjustments
-    - law
-    - periods
-    - projects
-    - standard
-    - transaction
-  backlinks:
-    - accounting
-    - adjustments
-    - law
-    - periods
-    - projects
-    - standard
-    - transaction
 signatures:
-  computationUuid: "6014b4a3-fafa-874a-b546-458925543aa8"
+  computationUuid: "7fb8debf-354b-87fd-b54b-3c381ed2ddba"
   stages:
     - stage: path
       stageUuid: "101a639d-62dd-81b8-b23a-3a2e312b42ce"
@@ -76,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "8e63b2a0-94f6-8b62-bc00-a66a44eee0e6"
     - stage: horo
-      stageUuid: "d1c61e80-1667-833a-9f9a-427b6788affa"
+      stageUuid: "6bf61e9c-c1e1-80b3-8902-c5fd6a2c0c18"
     - stage: seal
       stageUuid: "2647771b-d008-81cd-a9db-43b6c55798d7"
     - stage: uuid
-      stageUuid: "106b5b98-1870-8a76-b12a-ad465aa31b0c"
+      stageUuid: "a602d836-3c81-8f25-9b31-2dc447e887ea"
 version: 2
 ---
 # wip-snapshots

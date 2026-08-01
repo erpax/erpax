@@ -2,36 +2,15 @@
 name: tool
 description: "Use when assembling the MCP tool surface from per-area builders — each area file is self-contained (own I18N, zod schemas, handlers) and exports one buildXxxTools factory whose tools all carry the erpax.<area>.* name prefix."
 atomPath: "agents/mcp/tool"
-coordinate: "agents/mcp/tool · 5/round · 5eda549c"
-contentUuid: "b264ad00-2b22-5738-9fd4-88fe73711e4d"
-diamondUuid: "a2924ee5-28d7-8a48-8d43-47ac8d1ace32"
-uuid: "5eda549c-da2a-8fc8-a6e6-7af878675c79"
-horo: 5
-bonds:
-  in:
-    - how
-    - law
-    - mcp
-    - tool
-  out:
-    - how
-    - law
-    - tool
+coordinate: "agents/mcp/tool · 4/weave · 607ad860"
+contentUuid: "faa13b81-fcb5-552b-957f-e15d8e15df9f"
+diamondUuid: "b9edd30a-ece1-85b5-9e5b-b4fc62196241"
+uuid: "607ad860-dfbe-8388-92ed-de1621850a29"
+horo: 4
 typography:
   partition: agents
   bondDegree: 14
-  neighbors: []
 standards:
-  - "EU-2018/1673"
-  - "EU-2018/1725"
-  - "EU-2018/302"
-  - "EU-2018/389-SCA-RTS"
-  - "EU-2018/843"
-  - "EU-2018/957"
-  - "EU-2023/1113"
-  - "EU-2023/2854"
-  - "EU-2023/956-CBAM"
-  - "ILO-C001"
   - "ISO-19011"
   - "ISO-27001"
   - "ISO-27002"
@@ -47,22 +26,8 @@ standards:
   - "W3C-DID-1.0"
   - "W3C-WAI-ARIA-1.2"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - mcp
-    - tool
-    - uuid
-  matrix:
-    - how
-    - law
-    - tool
-  backlinks:
-    - how
-    - law
-    - tool
 signatures:
-  computationUuid: "7ec7575c-d101-8d13-8568-891335a3a9b4"
+  computationUuid: "5feba0e5-8e02-81b1-8541-3c52f46ca85f"
   stages:
     - stage: path
       stageUuid: "b866a4db-1f18-8e65-956d-42e06a042283"
@@ -73,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "2f008068-8152-8d7b-abf8-95d91bf8e480"
     - stage: horo
-      stageUuid: "1130b6f0-a27c-8e5b-ac4d-dbd8d5e7c580"
+      stageUuid: "957bf31e-c490-80b0-8c71-e987ffab71a0"
     - stage: seal
       stageUuid: "6651468a-d227-8dbc-9aa5-d39e7d68f9ad"
     - stage: uuid
-      stageUuid: "7cc11a49-0c4a-80bf-b7cf-db0c31e08e4c"
+      stageUuid: "d3e0269b-8398-8e2f-a097-c7520400c31f"
 version: 2
 ---
 # agents/mcp/tool — the per-area MCP tool barrel

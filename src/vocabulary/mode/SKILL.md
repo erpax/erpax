@@ -1,113 +1,35 @@
 ---
 name: mode
 description: "Use when reasoning about mode as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/mode
-coordinate: mode · 7/descent · ae67a474
-contentUuid: "a6ab2d3f-b93a-5167-b24e-daec167cca87"
-diamondUuid: "b258c113-7afb-8fb5-84fe-46aeeb816f78"
-uuid: "ae67a474-e3d1-8f33-a6cb-7442fb720e4d"
-horo: 7
-bonds:
-  in:
-    - access
-    - attendance
-    - collapse
-    - course
-    - educational
-    - enumeration
-    - event
-    - game
-    - law
-    - merge
-    - play
-    - program
-    - sti
-    - sufficient
-  out:
-    - access
-    - attendance
-    - collapse
-    - course
-    - educational
-    - enumeration
-    - event
-    - game
-    - law
-    - merge
-    - play
-    - program
-    - sti
-    - sufficient
+atomPath: "vocabulary/mode"
+coordinate: "vocabulary/mode · 8/crest · 11891b49"
+contentUuid: "e7e36bc0-feba-582b-9bdc-742480f0734a"
+diamondUuid: "4ef795bf-8f28-8ff2-91cb-f29554293f4f"
+uuid: "11891b49-6dbd-8969-a533-4319fc9d0832"
+horo: 8
 typography:
-  partition: mode
-  bondDegree: 49
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 51
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - attendance
-    - collapse
-    - course
-    - educational
-    - enumeration
-    - event
-    - game
-    - law
-    - merge
-    - play
-    - program
-    - sti
-    - sufficient
-  matrix:
-    - access
-    - attendance
-    - collapse
-    - course
-    - educational
-    - enumeration
-    - event
-    - game
-    - law
-    - merge
-    - play
-    - program
-    - sti
-    - sufficient
-  backlinks:
-    - access
-    - attendance
-    - collapse
-    - course
-    - educational
-    - enumeration
-    - event
-    - game
-    - law
-    - merge
-    - play
-    - program
-    - sti
-    - sufficient
 signatures:
-  computationUuid: "fdc4167a-bbfb-8384-9aea-4db2200962d0"
+  computationUuid: "356613a4-48ee-8d76-b1ee-374e56435a4a"
   stages:
     - stage: path
-      stageUuid: "d019e24a-a89d-808c-81a7-d343f52cbe14"
+      stageUuid: "c4f32f2b-0b73-85b1-96a3-ebd3147e3412"
     - stage: trinity
-      stageUuid: "cdee0a92-0609-8012-8902-a103f7ed3391"
+      stageUuid: "4ea59cd2-b1c5-8906-859a-f77b530ea4e0"
     - stage: boundary
-      stageUuid: "a501098c-b734-887a-a7f1-fe7b2394507a"
+      stageUuid: "316a47f6-a2fa-8689-80b5-13696ca115fa"
     - stage: links
-      stageUuid: "c6662316-22e5-808d-b5b3-00cc6b9472bb"
+      stageUuid: "dafd1ab4-cc82-8959-aa7b-8480cbddabef"
     - stage: horo
-      stageUuid: "53f920fc-1c57-8c3d-b29b-79e614e1401f"
+      stageUuid: "553e21bd-2fcd-8cd0-994b-56796d9025fc"
     - stage: seal
-      stageUuid: "71b64237-9a61-8ca5-b4c0-d87b55e22f7f"
+      stageUuid: "8c8473af-0253-8f79-931f-ef43be6007e9"
     - stage: uuid
-      stageUuid: "bb233bf5-d2f7-89b4-a816-5ff71e45bfe0"
+      stageUuid: "9d189667-40b9-83b6-9b14-b8d25bdb9103"
 version: 2
 ---
 # mode

@@ -2,171 +2,19 @@
 name: enumeration
 description: "Use when reasoning about enumeration as a medical facet of [[medical]] — vocabulary pivot to @/enumeration; nested not duplicated."
 atomPath: "medical/enumeration"
-coordinate: "medical/enumeration · 8/crest · 1a7879c4"
-contentUuid: "fb2515ae-b3ae-5f5f-a58f-baf983d1a314"
-diamondUuid: "15b31e2b-3817-8d4e-8656-886e72f43e46"
-uuid: "1a7879c4-a02a-8e2b-954b-43c6be2a6808"
-horo: 8
-bonds:
-  in:
-    - adult
-    - aspect
-    - attendance
-    - availability
-    - benefit
-    - digital
-    - efficiency
-    - energy
-    - enumeration
-    - eu
-    - fees
-    - fulfillment
-    - game
-    - group
-    - iptc
-    - label
-    - law
-    - manipulation
-    - measurement
-    - medical
-    - merchant
-    - merge
-    - mode
-    - oriented
-    - platform
-    - price
-    - product
-    - rating
-    - refund
-    - return
-    - size
-    - star
-    - system
-    - tier
-    - wearable
-  out:
-    - adult
-    - aspect
-    - attendance
-    - availability
-    - benefit
-    - digital
-    - efficiency
-    - energy
-    - enumeration
-    - eu
-    - fees
-    - fulfillment
-    - game
-    - group
-    - iptc
-    - label
-    - law
-    - manipulation
-    - measurement
-    - medical
-    - merchant
-    - merge
-    - mode
-    - oriented
-    - platform
-    - price
-    - product
-    - rating
-    - refund
-    - return
-    - size
-    - star
-    - system
-    - tier
-    - wearable
+coordinate: "medical/enumeration · 7/descent · 618238f1"
+contentUuid: "5e62dc8f-357d-5a12-92a9-3de6f5115a1f"
+diamondUuid: "d46c18f5-4a98-8613-852d-58bc72012f82"
+uuid: "618238f1-05ca-866c-8548-ed9089c5d88b"
+horo: 7
 typography:
   partition: medical
   bondDegree: 148
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - enumeration
-    - law
-    - medical
-    - merge
-  matrix:
-    - adult
-    - aspect
-    - attendance
-    - availability
-    - benefit
-    - digital
-    - efficiency
-    - energy
-    - enumeration
-    - eu
-    - fees
-    - fulfillment
-    - game
-    - group
-    - iptc
-    - label
-    - law
-    - manipulation
-    - measurement
-    - medical
-    - merchant
-    - merge
-    - mode
-    - oriented
-    - platform
-    - price
-    - product
-    - rating
-    - refund
-    - return
-    - size
-    - star
-    - system
-    - tier
-    - wearable
-  backlinks:
-    - adult
-    - aspect
-    - attendance
-    - availability
-    - benefit
-    - digital
-    - efficiency
-    - energy
-    - enumeration
-    - eu
-    - fees
-    - fulfillment
-    - game
-    - group
-    - iptc
-    - label
-    - law
-    - manipulation
-    - measurement
-    - medical
-    - merchant
-    - merge
-    - mode
-    - oriented
-    - platform
-    - price
-    - product
-    - rating
-    - refund
-    - return
-    - size
-    - star
-    - system
-    - tier
-    - wearable
 signatures:
-  computationUuid: "401a7a50-d5e0-875e-9329-bc44756606a3"
+  computationUuid: "0dea506c-0d0f-8791-beb8-317432cb354f"
   stages:
     - stage: path
       stageUuid: "ee5086c6-9cdd-81e3-9a53-b27c2a4b4c0c"
@@ -177,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c0122ffc-4cc8-8257-8667-b04159495fd3"
     - stage: horo
-      stageUuid: "49bc034f-0cf7-8253-83e0-90d27328e3bf"
+      stageUuid: "42034ce5-dd44-89ae-b8d7-62ac09e72e36"
     - stage: seal
       stageUuid: "08ab8641-3ea7-89e4-a608-de61567f6273"
     - stage: uuid
-      stageUuid: "aef07d1a-fded-89fd-91fe-665b6afe754e"
+      stageUuid: "47b41e7a-166e-8819-a218-2ec718fbd873"
 version: 2
 ---
 # medical/enumeration — medical facet

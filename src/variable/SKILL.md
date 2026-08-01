@@ -2,62 +2,19 @@
 name: variable
 description: "Use when reasoning about variable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: variable
-coordinate: variable · 4/weave · 7d7d645a
-contentUuid: "a4f4ab25-56cb-55e7-a4d9-0cc86f311cbc"
-diamondUuid: "e8a0c954-e134-8936-9fb5-41f935ba66cf"
-uuid: "7d7d645a-4f2e-8d36-8f5c-e4926f2d011e"
-horo: 4
-bonds:
-  in:
-    - additional
-    - collapse
-    - law
-    - measured
-    - merge
-    - statistical
-    - sti
-  out:
-    - additional
-    - collapse
-    - law
-    - measured
-    - merge
-    - statistical
-    - sti
+coordinate: "variable · 8/crest · aec90d58"
+contentUuid: "90c6c51c-15b0-5fb6-9ade-c61127ecccda"
+diamondUuid: "35d9f2e3-6760-8ce9-89e2-94d8b9509896"
+uuid: "aec90d58-8a68-854d-896f-ed9bcd81a99e"
+horo: 8
 typography:
   partition: variable
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - additional
-    - collapse
-    - law
-    - measured
-    - merge
-    - statistical
-    - sti
-  matrix:
-    - additional
-    - collapse
-    - law
-    - measured
-    - merge
-    - statistical
-    - sti
-  backlinks:
-    - additional
-    - collapse
-    - law
-    - measured
-    - merge
-    - statistical
-    - sti
 signatures:
-  computationUuid: "ef6d8b2f-7ba4-8fa3-8248-6f8be92b7f89"
+  computationUuid: "7e3f129d-88c8-8065-934e-c4d3be7089f6"
   stages:
     - stage: path
       stageUuid: "352453c3-8cd3-8ca4-a004-707d4f7d7ca0"
@@ -68,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "aac00484-939f-811b-944e-8c8186e27a79"
     - stage: horo
-      stageUuid: "f45262e2-b573-8971-bd59-c41b87717833"
+      stageUuid: "ce01f9db-e73a-84c2-a332-996cfff506d1"
     - stage: seal
-      stageUuid: "e5aa7ba5-dd37-8deb-a81a-a9a1f4e686a8"
+      stageUuid: "2b6432ef-8086-8248-add7-f967b65fab95"
     - stage: uuid
-      stageUuid: "2c4508db-d398-8fc7-9f7d-058ee25dc282"
+      stageUuid: "df101f95-2158-86f5-b67f-8d78cce4a67f"
 version: 2
 ---
 # variable

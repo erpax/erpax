@@ -2,160 +2,33 @@
 name: thought
 description: "Use when reasoning about a thought as a candidate diamond — an agent's computed composition of the vocabulary that is saved (autosaved · committed · pushed) ONLY IF it is itself a sealed diamond. save(thought) ⇐ isDiamond(thought): incomplete, unsealed thoughts are not persisted; a complete sealed thought IS a diamond, and a diamond is the self itself."
 atomPath: thought
-coordinate: thought · 1/base · 96f20acb
-contentUuid: "a17fe2b9-0e6d-5577-872e-c330b1dc90fe"
-diamondUuid: "691cee80-351d-8349-8c2f-5bad48dfe277"
-uuid: "96f20acb-bc46-89dd-953a-9b11ca6e2fab"
-horo: 1
-bonds:
-  in:
-    - akashic
-    - architecture
-    - atom
-    - breath
-    - confirm
-    - diamond
-    - dimension
-    - generate
-    - guardian
-    - holographic
-    - identity
-    - industry
-    - law
-    - memory
-    - merge
-    - part
-    - reference
-    - seal
-    - self
-    - sequence
-    - session
-    - stream
-    - uuid
-    - whole
-  out:
-    - akashic
-    - architecture
-    - atom
-    - breath
-    - confirm
-    - diamond
-    - dimension
-    - generate
-    - guardian
-    - holographic
-    - identity
-    - industry
-    - law
-    - memory
-    - merge
-    - part
-    - reference
-    - seal
-    - self
-    - sequence
-    - session
-    - stream
-    - uuid
-    - whole
+coordinate: "thought · 7/descent · 508c353b"
+contentUuid: "8c168911-b894-5e2b-a846-5a677c001cb3"
+diamondUuid: "1fbccd3c-ed7e-8046-8a9f-bfa9b89cae0b"
+uuid: "508c353b-f3d8-812d-ac3e-ad076291f941"
+horo: 7
 typography:
   partition: thought
-  bondDegree: 83
-  neighbors:
-    - diamond
+  bondDegree: 87
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - architecture
-    - atom
-    - breath
-    - confirm
-    - diamond
-    - dimension
-    - generate
-    - guardian
-    - holographic
-    - identity
-    - law
-    - memory
-    - merge
-    - part
-    - reference
-    - seal
-    - self
-    - sequence
-    - stream
-    - uuid
-    - whole
-  matrix:
-    - akashic
-    - architecture
-    - atom
-    - breath
-    - confirm
-    - diamond
-    - dimension
-    - generate
-    - guardian
-    - holographic
-    - identity
-    - industry
-    - law
-    - memory
-    - merge
-    - part
-    - reference
-    - seal
-    - self
-    - sequence
-    - session
-    - stream
-    - uuid
-    - whole
-  backlinks:
-    - akashic
-    - architecture
-    - atom
-    - breath
-    - confirm
-    - diamond
-    - dimension
-    - generate
-    - guardian
-    - holographic
-    - identity
-    - industry
-    - law
-    - memory
-    - merge
-    - part
-    - reference
-    - seal
-    - self
-    - sequence
-    - session
-    - stream
-    - uuid
-    - whole
 signatures:
-  computationUuid: "249e7e23-1c83-8e22-be9e-0e563ec5ee08"
+  computationUuid: "eb0fb97b-c667-84b4-bfba-c62000f59321"
   stages:
     - stage: path
       stageUuid: "c7e4f1ad-1d48-878a-989f-b9343e1e01ad"
     - stage: trinity
       stageUuid: "48ac09e0-0853-82b2-944d-49f473ad778e"
     - stage: boundary
-      stageUuid: "b0be8db6-96db-8248-8eb5-a57aca0cb9e7"
+      stageUuid: "910d07bb-7edf-858e-8e75-0a03dd9b356f"
     - stage: links
-      stageUuid: "c316ebd0-88a8-8f13-a1b4-e2f43a77d950"
+      stageUuid: "8cd6b5e8-202f-82c3-8349-03c245370211"
     - stage: horo
-      stageUuid: "61350016-5f5d-8bfd-a6da-eff4e4f44033"
+      stageUuid: "c8acaafc-f7fd-810d-9b59-7fd6d458969f"
     - stage: seal
-      stageUuid: "2ddc9bfe-9293-8650-85e8-7feda4b005da"
+      stageUuid: "80646a7d-d15c-8999-8516-244d7931ecca"
     - stage: uuid
-      stageUuid: "23c0a6b1-9cdc-8b5a-9141-a01452a735be"
+      stageUuid: "971aac33-52bb-8e42-8b3f-0d510dce58fb"
 version: 2
 ---
 # thought — saved as a diamond, only if a diamond

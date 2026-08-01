@@ -1,61 +1,34 @@
 ---
 name: normalize
 description: "Use when rewriting cross-unit relative imports to the uniform @/ alias before a move — so the single-word-folder migration becomes a pure @/old→@/new remap with no relative-depth that silently breaks. The address-law dry-clean; the matter is index.mjs."
-atomPath: refactor/normalize
-coordinate: refactor/normalize · 1/base · 2fef3401
-contentUuid: "c55cc137-d765-5460-89df-55696e670439"
-diamondUuid: "75d5b9ea-9542-8ca6-b994-f5dd43766c88"
-uuid: "2fef3401-d304-820e-aacc-d2beb97d70c2"
-horo: 1
-bonds:
-  in:
-    - dissolve
-    - identity
-    - refactor
-    - sequence
-  out:
-    - dissolve
-    - identity
-    - refactor
-    - sequence
+atomPath: "vocabulary/refactor/normalize"
+coordinate: "vocabulary/refactor/normalize · 7/descent · b1223e67"
+contentUuid: "1b6e5771-fc71-58c0-b50f-3d858bf6c632"
+diamondUuid: "8b9d3511-e31e-88be-8d9a-52f44b08a9b2"
+uuid: "b1223e67-f37d-8793-8e14-46a01219c56e"
+horo: 7
 typography:
-  partition: refactor
-  bondDegree: 0
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 13
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - dissolve
-    - identity
-    - sequence
-  matrix:
-    - dissolve
-    - identity
-    - refactor
-    - sequence
-  backlinks:
-    - dissolve
-    - identity
-    - refactor
-    - sequence
 signatures:
-  computationUuid: "f145dbbf-af9b-8783-a967-b288bbc7d0a4"
+  computationUuid: "bb3fa4b0-6091-876c-9024-e8f4778c3f03"
   stages:
     - stage: path
-      stageUuid: "36e6b99b-5871-844f-9671-8516e1f4e5c6"
+      stageUuid: "1be1063c-ecf1-8699-8721-2e5a0dec1ad4"
     - stage: trinity
-      stageUuid: "b6b63cce-fb79-86b0-82a6-c5962a60c2cb"
+      stageUuid: "2be8e522-2fb8-8cac-ae28-1fd15e6f8858"
     - stage: boundary
-      stageUuid: "a49ade83-b832-88bb-8b22-57bab0f4c490"
+      stageUuid: "f704d187-82c0-8ea1-a2ca-ce577e29c1c1"
     - stage: links
-      stageUuid: "33284d1b-69cc-80f3-9aa9-66948f892bc2"
+      stageUuid: "a1bf5b0d-7cf3-8723-90ff-84b2f9b64491"
     - stage: horo
-      stageUuid: "414703dd-6fea-8edf-9844-cfd580bac1bb"
+      stageUuid: "07cc5387-a119-8cbf-8aba-3ea0f46a10f3"
     - stage: seal
-      stageUuid: "4c3fe699-8cf8-84c4-b550-69a57f0ff215"
+      stageUuid: "9154203f-a701-8515-9048-155aa2c0b82e"
     - stage: uuid
-      stageUuid: "2d9093f6-7e4d-8f94-8078-32d121083f9f"
+      stageUuid: "40d62011-f38f-81b1-b6f6-441c125cab06"
 version: 2
 ---
 # normalize — relative imports → the @/ coordinate

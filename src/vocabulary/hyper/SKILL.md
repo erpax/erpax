@@ -1,73 +1,35 @@
 ---
 name: hyper
 description: "Use when reasoning about hyper as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/hyper
-coordinate: hyper · 8/crest · 17ee45ae
-contentUuid: "5e8e1a88-c5d4-5b6d-8fb3-a6a84ed2d275"
-diamondUuid: "c2275d44-ead8-8441-a6ce-9a43ca3736e2"
-uuid: "17ee45ae-a4f9-8194-98cf-9ca891f33387"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - entry
-    - law
-    - merge
-    - sti
-    - toc
-  out:
-    - collapse
-    - entry
-    - law
-    - merge
-    - sti
-    - toc
+atomPath: "vocabulary/hyper"
+coordinate: "vocabulary/hyper · 1/base · bd4f6fce"
+contentUuid: "7fef6a44-dd05-58b3-b89e-ed827ab935b9"
+diamondUuid: "e3e6400a-560a-81ab-a472-048398540208"
+uuid: "bd4f6fce-036f-8b81-8149-fd202a210388"
+horo: 1
 typography:
-  partition: hyper
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - entry
-    - law
-    - merge
-    - sti
-    - toc
-  matrix:
-    - collapse
-    - entry
-    - law
-    - merge
-    - sti
-    - toc
-  backlinks:
-    - collapse
-    - entry
-    - law
-    - merge
-    - sti
-    - toc
 signatures:
-  computationUuid: "abe9f6a3-2a52-8f8c-9605-83d03e3bfcf8"
+  computationUuid: "7e6c103c-ba40-8fd1-b545-a8b5ed194768"
   stages:
     - stage: path
-      stageUuid: "ed899a89-8c9e-8807-b919-ed63a8e43548"
+      stageUuid: "fbe68682-e5d3-8492-9cc3-0dc569916b6d"
     - stage: trinity
-      stageUuid: "2badcb33-5951-814b-b3e8-feddc8ac2316"
+      stageUuid: "ce5fd506-a102-85eb-8a7d-539e3278d6eb"
     - stage: boundary
-      stageUuid: "33362f7e-c103-886a-bc33-063de022d355"
+      stageUuid: "1ac99a38-ab5c-84bd-be2e-96f691ffe336"
     - stage: links
-      stageUuid: "58881c4d-6af8-8f8c-8a02-4bb2557f51f2"
+      stageUuid: "1f28ffe2-fec2-8868-8a57-50e046676cb2"
     - stage: horo
-      stageUuid: "9d7e1b2d-a3a9-87a4-92ab-d1cfa547721a"
+      stageUuid: "cf809b95-0586-8dc0-8fe7-1eb9a2a8e7f8"
     - stage: seal
-      stageUuid: "b8b4636f-71ed-8156-ad42-4bb502f5ddab"
+      stageUuid: "6aa58a5c-ab09-8bc0-87bc-17a1f5851196"
     - stage: uuid
-      stageUuid: "096d21a2-ffa0-837c-9456-14ccb0507578"
+      stageUuid: "87facbab-c842-80c2-b15b-d1d99498e69b"
 version: 2
 ---
 # hyper

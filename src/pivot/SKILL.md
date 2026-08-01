@@ -2,89 +2,36 @@
 name: pivot
 description: "Use when folder README models need cross-tab state statistics — axis × count tables and before/after comparisons for seal, balance, gravity, folder law, horo ring, and typography partitions; pure markdown projection for [[readme]]."
 atomPath: pivot
-coordinate: pivot · 2/share · 64bb5f4c
-contentUuid: "b8bac0c0-a3d5-5def-99df-4c99ef99bb14"
-diamondUuid: "90822a11-2f2a-8b9b-863b-d253935db1cd"
-uuid: "64bb5f4c-a49b-81e3-a7d8-aca69ad0feff"
-horo: 2
-bonds:
-  in:
-    - analytics
-    - balance
-    - folder
-    - gravity
-    - horo
-    - law
-    - readme
-    - seal
-    - typography
-  out:
-    - analytics
-    - balance
-    - folder
-    - gravity
-    - horo
-    - law
-    - readme
-    - seal
-    - typography
+coordinate: "pivot · 7/descent · 713ffdc9"
+contentUuid: "f4519f56-b4e5-5c53-bf1d-b62ec18440d2"
+diamondUuid: "8e551cf6-b6ef-87e0-8919-b07b2da6b99a"
+uuid: "713ffdc9-8cf7-8ab1-99a8-0d3145ac960a"
+horo: 7
 typography:
   partition: pivot
   bondDegree: 29
-  neighbors:
-    - analytics
 standards:
   - "ISO/IEC 25010:2023 §5.2.8 modularity — pure fns, no I/O"
-  - "every count is derived from model fields, never hand-set"
+  - "ISO/IEC 25010:2023 §5.2.8 modularity — pure fns, no I/O`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - analytics
-    - balance
-    - folder
-    - gravity
-    - horo
-    - law
-    - readme
-    - seal
-    - typography
-  matrix:
-    - analytics
-    - balance
-    - folder
-    - gravity
-    - horo
-    - law
-    - readme
-    - seal
-    - typography
-  backlinks:
-    - analytics
-    - balance
-    - folder
-    - gravity
-    - horo
-    - law
-    - readme
-    - seal
-    - typography
 signatures:
-  computationUuid: "48bf500d-ed17-827a-a85f-06a4365bd42f"
+  computationUuid: "51c74597-e95a-8cbe-b84f-c6d4ec3fdb53"
   stages:
     - stage: path
       stageUuid: "673469fc-07e9-8993-85b6-5728bb6601fd"
     - stage: trinity
       stageUuid: "529df31d-746f-8f44-92a2-9dc10251cdef"
     - stage: boundary
-      stageUuid: "64e6c98b-ffcc-8873-b4ac-c3b406717d43"
+      stageUuid: "4986ecc2-4a7f-897a-bb3b-5dc0ae6ad0bd"
     - stage: links
       stageUuid: "6d343b1d-1396-8fb0-afba-a3264dc82c7e"
     - stage: horo
-      stageUuid: "5b03a1ec-f665-8e98-9143-03e093179661"
+      stageUuid: "341f5f60-ad3d-8fa0-9a23-e174254ecb24"
     - stage: seal
-      stageUuid: "f909b771-3451-8006-9026-53669f60ca78"
+      stageUuid: "f3cc23a7-9393-851c-ba88-683634c29e9f"
     - stage: uuid
-      stageUuid: "8f9d28f1-91ff-81dc-a1fb-21c2625cc85c"
+      stageUuid: "79bfaf24-4cb9-847f-97fa-297ff793cda7"
 version: 2
 ---
 # pivot — cross-tab state statistics for README models

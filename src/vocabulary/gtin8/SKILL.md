@@ -1,63 +1,35 @@
 ---
 name: gtin8
 description: "Use when reasoning about gtin8 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/gtin8
-coordinate: gtin8 · 8/crest · 5978bb16
-contentUuid: "3dbced02-5132-5ca5-a6bf-58421a34e00c"
-diamondUuid: "c1b6f015-979b-8ba6-885c-40f35177c35d"
-uuid: "5978bb16-8c38-8afd-b864-11a55e2677ff"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/gtin8"
+coordinate: "vocabulary/gtin8 · 2/share · 54b49d20"
+contentUuid: "fe0fd653-64c3-5287-a751-fb33ebde2498"
+diamondUuid: "f9b2ea02-2223-85a6-a0d5-f3bb62f29b40"
+uuid: "54b49d20-13cc-8888-938a-5619a6e9cdc3"
+horo: 2
 typography:
-  partition: gtin8
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "05868fa5-650c-8e67-aeac-226c6952f686"
+  computationUuid: "ac415235-d8f7-85a2-a912-28844dba8743"
   stages:
     - stage: path
-      stageUuid: "30bbdcff-8302-814f-a54f-bb94dfa1e979"
+      stageUuid: "240eecd4-b664-8a5a-88e6-bf8c8d9c683d"
     - stage: trinity
-      stageUuid: "dc22cbdd-d835-8140-9543-a8b896ce5cab"
+      stageUuid: "0752cc8d-d041-84bd-b445-c932472ffc83"
     - stage: boundary
-      stageUuid: "71c9558f-bcf8-83bc-82bc-4e0bc196a731"
+      stageUuid: "97904287-14cf-8f0e-a5c2-b74425401a2d"
     - stage: links
-      stageUuid: "be0df0c8-a359-85b1-b55e-b791f00f0224"
+      stageUuid: "8e845d28-f324-8088-9ec6-9b4d57dc3ad7"
     - stage: horo
-      stageUuid: "5631f81b-8bbc-8449-bf1c-36952ae0c340"
+      stageUuid: "24dc1538-3833-8294-a6db-d85453c3846c"
     - stage: seal
-      stageUuid: "66042d34-f049-8f6d-a031-362348351893"
+      stageUuid: "a45fbd02-1d03-8518-941e-99c4e24ea872"
     - stage: uuid
-      stageUuid: "ee9f046c-d995-8618-893a-7926f5f1e49e"
+      stageUuid: "ab463c19-a325-8f36-82f1-7fc59e4280f2"
 version: 2
 ---
 # gtin8

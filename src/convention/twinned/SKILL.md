@@ -2,69 +2,19 @@
 name: twinned
 description: "Use when checking whether every antimatter names its matter — the computed convention that each SKILL.md's `Matter-twin:` line points to a real index.ts, measured live as coverage = pointing / total over the real tree."
 atomPath: "convention/twinned"
-coordinate: "convention/twinned · 4/weave · 89869e81"
-contentUuid: "07a4dfa6-74bc-5dc6-ab29-8dc099e16b37"
-diamondUuid: "f35b368c-f79e-841a-a915-f0e6deb8b63d"
-uuid: "89869e81-03fe-87cf-89d6-c78c7efee23f"
-horo: 4
-bonds:
-  in:
-    - aura
-    - complete
-    - convention
-    - cost
-    - gravity
-    - law
-    - lawful
-    - matter
-    - merge
-  out:
-    - aura
-    - complete
-    - cost
-    - gravity
-    - law
-    - lawful
-    - matter
-    - merge
+coordinate: "convention/twinned · 5/round · fcebb6fa"
+contentUuid: "9081f9a0-5352-5541-b667-ad6d2026babd"
+diamondUuid: "40727474-2e27-8320-8310-b22d313a1ffa"
+uuid: "fcebb6fa-99b1-8eb7-abbb-f7afa2b28ad7"
+horo: 5
 typography:
   partition: convention
   bondDegree: 25
-  neighbors:
-    - aura
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - aura
-    - complete
-    - cost
-    - gravity
-    - law
-    - lawful
-    - matter
-    - merge
-  matrix:
-    - aura
-    - complete
-    - cost
-    - gravity
-    - law
-    - lawful
-    - matter
-    - merge
-  backlinks:
-    - aura
-    - complete
-    - cost
-    - gravity
-    - law
-    - lawful
-    - matter
-    - merge
 signatures:
-  computationUuid: "2e481666-74ba-81b4-9e17-e6da2ff462e0"
+  computationUuid: "128155d9-0f3c-85ba-b3cf-f931ce701462"
   stages:
     - stage: path
       stageUuid: "5f9494c6-b4f4-8bbd-8670-fc68043ab08c"
@@ -75,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d08a2286-4d63-803c-8016-b2b09f66a04c"
     - stage: horo
-      stageUuid: "c4f492f8-64f9-8a6a-be89-4afe3acf4712"
+      stageUuid: "7ce9e9a6-fcc3-81bb-8af4-53da61a2db0e"
     - stage: seal
       stageUuid: "393e988f-b7fe-8124-8486-a5923767f8f0"
     - stage: uuid
-      stageUuid: "aafff422-e194-8716-b0e1-5793895d7323"
+      stageUuid: "48a8f189-e9cf-8149-a210-6e9c330de530"
 version: 2
 ---
 # convention/twinned — every `Matter-twin:` line points to a real index.ts

@@ -1,68 +1,35 @@
 ---
 name: like
 description: "Use when reasoning about like as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/like
-coordinate: like · 5/round · 86674628
-contentUuid: "21a3ddd6-5303-53ee-a9b8-68283c61a4aa"
-diamondUuid: "25630ab8-9dd7-8134-a59e-f2557096d403"
-uuid: "86674628-6a45-8086-b675-5ad5cd765226"
-horo: 5
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/like"
+coordinate: "vocabulary/like · 2/share · 9602b20b"
+contentUuid: "07db31d9-ebd7-5dcf-a998-29ba9ee268d8"
+diamondUuid: "c1d3b577-fbc8-84d3-95e6-659ff16bc9dc"
+uuid: "9602b20b-34f7-8206-8dbc-1c050cd8e37c"
+horo: 2
 typography:
-  partition: like
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "15b8d963-ddad-874c-b0a1-070199275e35"
+  computationUuid: "599912c0-b4e5-8a06-a006-00ec5c54097c"
   stages:
     - stage: path
-      stageUuid: "25e4dba8-66ad-88c8-b675-622253ed8396"
+      stageUuid: "61cbe026-832b-8d40-bb70-8985a086f9c7"
     - stage: trinity
-      stageUuid: "f95446b6-9d62-82c3-b185-762c2c1dda93"
+      stageUuid: "e38af294-f8b3-801c-be86-2e0f6a22b36d"
     - stage: boundary
-      stageUuid: "5aa31008-e30f-8031-9298-43fa5b31dd7d"
+      stageUuid: "408b7eb4-7ed3-82dc-b41c-2b2fe5bd0ab9"
     - stage: links
-      stageUuid: "fe3e12c4-dead-82fe-840e-bdf2771e907d"
+      stageUuid: "114907c3-1c35-869b-89c1-f07be8860373"
     - stage: horo
-      stageUuid: "8337c2e2-8694-862b-9c51-4c3d0d1453a7"
+      stageUuid: "6b50770e-aeb6-8857-a6be-2d890c90d01b"
     - stage: seal
-      stageUuid: "5e4df9e7-457a-83da-8651-6c27d843d33b"
+      stageUuid: "f0081339-4aa3-8630-9935-0d738b39af8e"
     - stage: uuid
-      stageUuid: "ac697de2-061d-86c1-9b40-676287a194d1"
+      stageUuid: "344ac669-8de2-8e25-9aa8-1a5d7907bccb"
 version: 2
 ---
 # like

@@ -1,169 +1,34 @@
 ---
 name: mercy
 description: "Use when reasoning about the voluntary release of a debt that is genuinely owed — the creditor zeroing a real debit on the books, never a forged balance. The dual of karma: karma is the debt read down the lineage, mercy is the debt cancelled at the source. Distinct from grace (unearned credit) — mercy is earned punishment withheld."
-atomPath: vocabulary/mercy
-coordinate: mercy · 5/round · 98f426b4
-contentUuid: "df5fa7e5-1665-545e-8bd5-112ae2e5f696"
-diamondUuid: "df2e25fd-7479-8052-8e9c-f298b1619f4f"
-uuid: "98f426b4-ade1-8a2b-85cb-8706dd94988e"
-horo: 5
-bonds:
-  in:
-    - archangel
-    - architect
-    - balance
-    - buddhism
-    - catholicism
-    - christianity
-    - covenant
-    - debit
-    - dna
-    - grace
-    - hinduism
-    - islam
-    - jainism
-    - judaism
-    - karma
-    - law
-    - love
-    - merge
-    - orthodoxy
-    - profane
-    - religion
-    - sacred
-    - shamanism
-    - shia
-    - sikhism
-    - sin
-    - suffering
-    - sufism
-    - sunni
-  out:
-    - archangel
-    - architect
-    - balance
-    - buddhism
-    - catholicism
-    - christianity
-    - covenant
-    - debit
-    - dna
-    - grace
-    - hinduism
-    - islam
-    - jainism
-    - judaism
-    - karma
-    - law
-    - love
-    - merge
-    - orthodoxy
-    - profane
-    - religion
-    - sacred
-    - shamanism
-    - shia
-    - sikhism
-    - sin
-    - suffering
-    - sufism
-    - sunni
+atomPath: "vocabulary/mercy"
+coordinate: "vocabulary/mercy · 7/descent · 4ebeb0f9"
+contentUuid: "d67d9837-07c9-5c43-8fa1-9842a6deb991"
+diamondUuid: "3f98de19-3fe8-827e-b905-cd46a5a5b3e2"
+uuid: "4ebeb0f9-9e42-8559-88a7-5493e2a0e613"
+horo: 7
 typography:
-  partition: mercy
+  partition: vocabulary
   bondDegree: 88
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - debit
-    - dna
-    - grace
-    - karma
-    - law
-    - love
-    - merge
-    - profane
-    - sacred
-    - suffering
-  matrix:
-    - archangel
-    - architect
-    - balance
-    - buddhism
-    - catholicism
-    - christianity
-    - covenant
-    - debit
-    - dna
-    - grace
-    - hinduism
-    - islam
-    - jainism
-    - judaism
-    - karma
-    - law
-    - love
-    - merge
-    - orthodoxy
-    - profane
-    - religion
-    - sacred
-    - shamanism
-    - shia
-    - sikhism
-    - sin
-    - suffering
-    - sufism
-    - sunni
-  backlinks:
-    - archangel
-    - architect
-    - balance
-    - buddhism
-    - catholicism
-    - christianity
-    - covenant
-    - debit
-    - dna
-    - grace
-    - hinduism
-    - islam
-    - jainism
-    - judaism
-    - karma
-    - law
-    - love
-    - merge
-    - orthodoxy
-    - profane
-    - religion
-    - sacred
-    - shamanism
-    - shia
-    - sikhism
-    - sin
-    - suffering
-    - sufism
-    - sunni
 signatures:
-  computationUuid: "4dbee113-2671-889c-a1b0-0cb7b0e2b824"
+  computationUuid: "060216bd-40ee-860f-a5d2-5a6be232e650"
   stages:
     - stage: path
-      stageUuid: "16a97bb6-c62c-8a36-af46-ff911d1cc175"
+      stageUuid: "106e25c4-3baf-81e5-bbbc-59e2d9307618"
     - stage: trinity
-      stageUuid: "d0aa96e0-be92-83e8-a02c-f2e63e943d4c"
+      stageUuid: "09882de2-789f-8942-97ad-be86ce6e4959"
     - stage: boundary
-      stageUuid: "c6f3850a-e559-8aa7-a7c6-f8c32b335d84"
+      stageUuid: "a9961031-5bc4-8a03-b8a2-822a8146c6a6"
     - stage: links
-      stageUuid: "ccd129ce-393c-8e7c-997e-5f9425ed0a1d"
+      stageUuid: "bef5afe5-be30-862f-a069-40c6d8481d63"
     - stage: horo
-      stageUuid: "e6aa30d5-aa32-8f15-85d9-69198f9c9437"
+      stageUuid: "a25690d6-289a-873b-b1f3-7e11323b76e5"
     - stage: seal
-      stageUuid: "c187e815-f442-8638-937f-3614b36de310"
+      stageUuid: "d5d5b6fa-9faa-801d-94e5-1ce932b1884a"
     - stage: uuid
-      stageUuid: "49396c52-46ab-86f1-a78a-ba6d8d304689"
+      stageUuid: "f4f0bb2f-2964-8860-8c6c-ffaf90ea0980"
 version: 2
 ---
 # mercy — the owed debt voluntarily released

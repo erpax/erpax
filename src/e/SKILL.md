@@ -2,47 +2,19 @@
 name: e
 description: "Use when e must be read as the growth constant that is its own driver — d/dx eˣ = eˣ, the function whose rate of change equals its state at every point. Completes the self-referential trio: pi unfolds a finite seed to an infinite tail, phi is the fixed point of the fold, e is the fixed point of change. Computed never stored: the series Σ 1/k! and continuous compounding (1+1/n)ⁿ both converge to it from a finite seed."
 atomPath: e
-coordinate: "e · 5/round · f523f3c6"
-contentUuid: "ae45e96d-ac81-515c-9288-9b0dd375afa6"
-diamondUuid: "da2abe99-2c5a-86d4-8570-0466d3613c25"
-uuid: "f523f3c6-4807-8ce4-9607-347a9c85a6af"
-horo: 5
-bonds:
-  in:
-    - fold
-    - law
-    - phi
-    - pi
-  out:
-    - fold
-    - law
-    - phi
-    - pi
+coordinate: "e · 1/base · 34a78ba2"
+contentUuid: "2a73dbad-9f78-5d9e-83be-2a8b16afbaaf"
+diamondUuid: "0347acc3-a584-8296-b1d9-8b2f02fdf511"
+uuid: "34a78ba2-5af5-8912-a41d-0c904c1b1e6e"
+horo: 1
 typography:
   partition: e
   bondDegree: 12
-  neighbors: []
 standards:
   - "Euler's number e = Σ 1/k! = lim (1+1/n)ⁿ — the base of the natural exponential"
 bindings: []
-neighbors:
-  wikilink:
-    - fold
-    - law
-    - phi
-    - pi
-  matrix:
-    - fold
-    - law
-    - phi
-    - pi
-  backlinks:
-    - fold
-    - law
-    - phi
-    - pi
 signatures:
-  computationUuid: "f55e415f-e6e8-80a1-a857-0ea5b7833c3f"
+  computationUuid: "03a72dfa-7ac5-802a-8206-1bc463a64aef"
   stages:
     - stage: path
       stageUuid: "3ea081f4-64ee-8cea-b6ab-b157be0e4e6a"
@@ -53,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "93719d6e-deeb-8bf1-bebf-4d5b3a65796f"
     - stage: horo
-      stageUuid: "c0859238-66be-8e1a-aeed-2cfa09e947da"
+      stageUuid: "3b4bb6e2-7dc6-82bd-b69e-b447bc18f0b1"
     - stage: seal
       stageUuid: "044e2b84-6c61-8d6a-9f36-bf9396d3267c"
     - stage: uuid
-      stageUuid: "cd4ca667-5d27-8191-88ab-23c37841b159"
+      stageUuid: "429dafa5-38e0-87ed-b77e-337cf5d9a107"
 version: 2
 ---
 # e — the number whose rate of change is itself

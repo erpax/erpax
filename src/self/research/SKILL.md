@@ -1,190 +1,42 @@
 ---
 name: research
 description: "Use when an actor must find where its own identity (an email) is used across the corpus and secure those accounts — self-research over the COMPUTED Payload MCP find-surface, scoped to the caller's own access so there is no bypass, with each reset/recover sandbox-gated and receipted. Agnostic — collections and services live in the DB, never hardcoded."
-atomPath: self/research
-coordinate: self/research · 2/share · aec41c5c
-contentUuid: "266b8634-3e9c-5bfc-81b3-1a7eadbfe4eb"
-diamondUuid: "ba506f69-1556-8c9f-a6cf-2c9deefef33d"
-uuid: "aec41c5c-f27d-81b1-ba89-1692a0a3785e"
+atomPath: "self/research"
+coordinate: "self/research · 2/share · 9269a97a"
+contentUuid: "a4d90354-7111-53bf-823c-18546bce58c0"
+diamondUuid: "f31300a5-6d54-8d5f-85d2-1526040e4991"
+uuid: "9269a97a-1a46-86eb-bd5f-f412ed71a935"
 horo: 2
-bonds:
-  in:
-    - accounting
-    - akashic
-    - anchor
-    - angel
-    - breath
-    - civilization
-    - collapse
-    - consultant
-    - consulting
-    - design
-    - development
-    - drone
-    - feedback
-    - history
-    - interview
-    - law
-    - literature
-    - localize
-    - merge
-    - oid
-    - organization
-    - profane
-    - project
-    - proof
-    - research
-    - sacred
-    - science
-    - self
-    - uuid
-    - zeropoint
-  out:
-    - accounting
-    - akashic
-    - anchor
-    - angel
-    - breath
-    - civilization
-    - collapse
-    - consultant
-    - consulting
-    - design
-    - development
-    - drone
-    - feedback
-    - history
-    - interview
-    - law
-    - literature
-    - localize
-    - merge
-    - oid
-    - organization
-    - profane
-    - project
-    - proof
-    - research
-    - sacred
-    - science
-    - uuid
-    - zeropoint
 typography:
   partition: self
-  bondDegree: 149
-  neighbors:
-    - agent
+  bondDegree: 158
 standards:
   - "NIST SP 800-162 ABAC — the access scope is the ownership boundary"
+  - "NIST SP 800-162 ABAC — the access scope is the ownership boundary`"
   - "NIST SP 800-63B §6.1.3 — owner-authorized credential recovery"
+  - "NIST SP 800-63B §6.1.3 — owner-authorized credential recovery`"
   - "NIST-SP-800-162"
   - "OWASP ASVS V5 — least-privilege / IDOR-prevention (no cross-actor read)"
   - "OWASP-ASVS"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accept
-    - access
-    - account
-    - broker
-    - collapse
-    - cost
-    - email
-    - entropy
-    - entry
-    - gate
-    - harmony
-    - identity
-    - law
-    - mcp
-    - plugins
-    - proof
-    - receipt
-    - recover
-    - research
-    - reset
-    - sandbox
-    - security
-    - self
-    - tamper
-    - zeropoint
-  matrix:
-    - accounting
-    - akashic
-    - anchor
-    - angel
-    - breath
-    - civilization
-    - collapse
-    - consultant
-    - consulting
-    - design
-    - development
-    - drone
-    - feedback
-    - history
-    - interview
-    - law
-    - literature
-    - localize
-    - merge
-    - oid
-    - organization
-    - profane
-    - project
-    - proof
-    - research
-    - sacred
-    - science
-    - uuid
-    - zeropoint
-  backlinks:
-    - accounting
-    - akashic
-    - anchor
-    - angel
-    - breath
-    - civilization
-    - collapse
-    - consultant
-    - consulting
-    - design
-    - development
-    - drone
-    - feedback
-    - history
-    - interview
-    - law
-    - literature
-    - localize
-    - merge
-    - oid
-    - organization
-    - profane
-    - project
-    - proof
-    - research
-    - sacred
-    - science
-    - uuid
-    - zeropoint
 signatures:
-  computationUuid: "a6185544-5788-8ec5-b41a-7169c95a382b"
+  computationUuid: "6aa02bf4-344e-8029-9bea-967c1f68aaf6"
   stages:
     - stage: path
       stageUuid: "81cc84ac-f2f5-85e2-b9ed-0e66364b833b"
     - stage: trinity
       stageUuid: "9ed414e6-e71f-8850-b1c5-0c9e8c874528"
     - stage: boundary
-      stageUuid: "cce8a619-53ab-8d0b-8db5-9f4d05825fc0"
+      stageUuid: "f4f0a450-8a86-89c0-b19e-f50e0c943555"
     - stage: links
       stageUuid: "beb763c0-e731-870a-943d-a5491b766541"
     - stage: horo
-      stageUuid: "12f5288f-46fc-8933-a368-cb3651979d58"
+      stageUuid: "d53b06da-2578-8e69-95c8-1eb01161d69f"
     - stage: seal
-      stageUuid: "12b22568-903a-881f-8644-479291fef1d8"
+      stageUuid: "628d8c27-e253-8712-ad66-b74cb4c8e04f"
     - stage: uuid
-      stageUuid: "a15527c8-0dcb-8e00-a759-d3f6a62939c9"
+      stageUuid: "23076be1-2fe6-860b-b5be-47a93de96744"
 version: 2
 ---
 # self-research — find where your identity is used, and secure it (under [[self]])

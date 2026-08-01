@@ -1,68 +1,35 @@
 ---
 name: qualifier
 description: "Use when reasoning about qualifier as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/qualifier
-coordinate: qualifier · 1/base · 1252f78c
-contentUuid: "5d8c481e-64ee-5bf0-af8e-c9fa817e62ee"
-diamondUuid: "3e65484a-b5be-8305-b6e1-c7a4812e4f10"
-uuid: "1252f78c-8443-8bb6-aacc-8d59cfa0fbf9"
+atomPath: "vocabulary/qualifier"
+coordinate: "vocabulary/qualifier · 1/base · 5073fa5f"
+contentUuid: "12260a7b-5eea-5cef-8e11-3f5e33bebe6a"
+diamondUuid: "c00e2c99-85d8-8a09-85c5-deb27a2c3b92"
+uuid: "5073fa5f-a0f3-8897-8ea3-917414ed1d2a"
 horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - measurement
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - measurement
-    - merge
-    - sti
 typography:
-  partition: qualifier
-  bondDegree: 16
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 18
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - measurement
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - measurement
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - measurement
-    - merge
-    - sti
 signatures:
-  computationUuid: "b61ebdeb-ec1c-87cc-bfd2-25508bface4a"
+  computationUuid: "2346b077-446d-8e05-bcfb-fbb87eb53727"
   stages:
     - stage: path
-      stageUuid: "bea8f548-3828-814a-a6ce-2b28b6762f1f"
+      stageUuid: "a3e7b56a-800d-8dbd-8781-cc0606090aeb"
     - stage: trinity
-      stageUuid: "a625192f-8f4a-8b0e-9016-6c21e6647a29"
+      stageUuid: "a198444e-b6e2-80f9-bbea-fb5272f3cda8"
     - stage: boundary
-      stageUuid: "1a7b8c43-d09a-8cbc-9602-7474632a6ab1"
+      stageUuid: "d0a7ad3a-dfde-877b-b896-1b066eee0ff4"
     - stage: links
-      stageUuid: "805d0102-5f04-8332-954c-09fea823cf1d"
+      stageUuid: "9c016a1e-5ca0-842f-9616-e4a26b165c27"
     - stage: horo
-      stageUuid: "41b48496-9d44-882a-8350-c7ad7a778f55"
+      stageUuid: "4f71f69a-7877-8b5f-9686-abdc80dac02e"
     - stage: seal
-      stageUuid: "69671256-843d-8562-a534-e5ed8d613283"
+      stageUuid: "5abdc2b5-e2ee-81e7-870d-b715dc6c25c7"
     - stage: uuid
-      stageUuid: "3d62b408-7e67-84e7-84ff-7c3184afbe00"
+      stageUuid: "59a08259-4af1-801b-aa39-04abfda415e4"
 version: 2
 ---
 # qualifier

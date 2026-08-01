@@ -1,73 +1,35 @@
 ---
 name: advertiser
 description: "Use when reasoning about advertiser as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/advertiser
-coordinate: advertiser · 5/round · 6312a843
-contentUuid: "3d940c80-4569-5df8-86fd-2a3c08d5448d"
-diamondUuid: "76964544-a7fb-8e7b-9d46-ce08efcf9da5"
-uuid: "6312a843-c30a-8352-8b77-9c6ae06ae897"
-horo: 5
-bonds:
-  in:
-    - article
-    - collapse
-    - content
-    - law
-    - merge
-    - sti
-  out:
-    - article
-    - collapse
-    - content
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/advertiser"
+coordinate: "vocabulary/advertiser · 2/share · edca9e8a"
+contentUuid: "3fe9d684-4bb7-59b0-a1e8-cb9d167e2a6b"
+diamondUuid: "b6e6fcb7-65d2-8138-bde9-13f7fc78128e"
+uuid: "edca9e8a-6e94-80cf-8341-ea495c8ea27e"
+horo: 2
 typography:
-  partition: advertiser
-  bondDegree: 20
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 22
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - article
-    - collapse
-    - content
-    - law
-    - merge
-    - sti
-  matrix:
-    - article
-    - collapse
-    - content
-    - law
-    - merge
-    - sti
-  backlinks:
-    - article
-    - collapse
-    - content
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "4646f6e9-c7c5-8e4c-8ac3-bd337d1b2117"
+  computationUuid: "a427bc45-7f3d-8300-aa50-86b097352ae0"
   stages:
     - stage: path
-      stageUuid: "ec475620-2a46-8e2b-9a76-924573d2e715"
+      stageUuid: "af10482b-45b4-8f71-9312-a1ff86b59f27"
     - stage: trinity
-      stageUuid: "4dfbd619-9ac8-8b70-b2ee-a9b3c6a93bc5"
+      stageUuid: "01799cbb-a567-847a-aba1-764fb102ebaf"
     - stage: boundary
-      stageUuid: "edb840e1-a8e6-8576-9ea1-be0c141d095c"
+      stageUuid: "570e0090-ec69-85e4-b3bf-bd513ddfe92d"
     - stage: links
-      stageUuid: "a0eb4b24-a806-833c-b1fc-574ee0d14e82"
+      stageUuid: "b61666e5-241b-863a-98ed-01e0d87589c3"
     - stage: horo
-      stageUuid: "7173d867-5961-84e2-b5da-7d5ec9cba2dd"
+      stageUuid: "0ad8d192-ab4c-8b94-ba52-fc17f9b0024a"
     - stage: seal
-      stageUuid: "609be717-f791-8f71-90a4-3f33bc748daf"
+      stageUuid: "58cd5846-b4dd-86cf-8225-02ba5690edbe"
     - stage: uuid
-      stageUuid: "a7b2674e-5956-8063-9518-6744e35c4685"
+      stageUuid: "7e368a7d-fd4e-87c7-a334-ae5ea56e19fc"
 version: 2
 ---
 # advertiser

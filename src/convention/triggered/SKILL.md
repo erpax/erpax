@@ -1,70 +1,20 @@
 ---
 name: triggered
-description: "Use when checking whether every skill leads with its Use-when trigger — the computed convention that a SKILL.md frontmatter description starts with \\\\\\\"Use when\\\\\\\", measured live as coverage = triggered / total over the real tree."
+description: "Use when checking whether every skill leads with its Use-when trigger — the computed convention that a SKILL.md frontmatter description starts with \\\\\\\\\\\\\\\"Use when\\\\\\\\\\\\\\\", measured live as coverage = triggered / total over the real tree."
 atomPath: "convention/triggered"
-coordinate: "convention/triggered · 4/weave · db5864c2"
-contentUuid: "51d31179-88bc-59b7-a22a-33ede2d5f4f7"
-diamondUuid: "b4da7d53-e776-8ede-aa4c-019491e13a85"
-uuid: "db5864c2-d519-8809-85d9-6ce5a6996022"
+coordinate: "convention/triggered · 4/weave · 80cfb119"
+contentUuid: "46d202d4-c18d-5bae-980e-23854b61bfea"
+diamondUuid: "7717b046-6d2b-8889-a486-02c6b94aa613"
+uuid: "80cfb119-b23a-81c7-be05-f904517dea4d"
 horo: 4
-bonds:
-  in:
-    - aura
-    - collapse
-    - complete
-    - convention
-    - cost
-    - gravity
-    - law
-    - link
-    - merge
-  out:
-    - aura
-    - collapse
-    - complete
-    - cost
-    - gravity
-    - law
-    - link
-    - merge
 typography:
   partition: convention
   bondDegree: 25
-  neighbors:
-    - aura
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - aura
-    - collapse
-    - complete
-    - cost
-    - gravity
-    - law
-    - link
-    - merge
-  matrix:
-    - aura
-    - collapse
-    - complete
-    - cost
-    - gravity
-    - law
-    - link
-    - merge
-  backlinks:
-    - aura
-    - collapse
-    - complete
-    - cost
-    - gravity
-    - law
-    - link
-    - merge
 signatures:
-  computationUuid: "1beb4586-5532-86fe-abb9-920ee39ce935"
+  computationUuid: "4be08c47-d874-8b9d-adf2-4db7ebf25b2b"
   stages:
     - stage: path
       stageUuid: "50fbb304-aea5-83aa-ae03-10ca7788f7e9"
@@ -75,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8e91103a-fa1b-8c16-b343-db128e24801b"
     - stage: horo
-      stageUuid: "6559d44f-7a2a-8504-9490-4c868d006d73"
+      stageUuid: "4ea5ab84-2099-823a-ae12-fd7b1e427a34"
     - stage: seal
       stageUuid: "1d71eec3-8245-8476-89c6-d86e2b52c825"
     - stage: uuid
-      stageUuid: "891b4148-16fd-83e9-bbef-6bdf93028215"
+      stageUuid: "1950dfde-8d4d-88d5-a9e9-597abd7172c9"
 version: 2
 ---
 # convention/triggered — every SKILL description is a Use-when trigger

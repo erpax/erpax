@@ -1,53 +1,35 @@
 ---
 name: endorsee
-description: Use when reasoning about endorsee — A sub property of participant. The person/organization being supported.
-atomPath: vocabulary/endorsee
-coordinate: endorsee · 2/share · 1cfcf64d
-contentUuid: "588a43a8-8c8b-5d1b-97a5-6ca80e7cc46f"
-diamondUuid: "61c699ca-a986-8238-9dfe-18393aef81d8"
-uuid: "1cfcf64d-3988-8a28-82e2-9bfa5875e039"
-horo: 2
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+description: "Use when reasoning about endorsee — A sub property of participant. The person/organization being supported."
+atomPath: "vocabulary/endorsee"
+coordinate: "vocabulary/endorsee · 1/base · 97670eb1"
+contentUuid: "0669b4fd-11d2-5b2c-abe0-18fd7c46bd1c"
+diamondUuid: "3a8e95b1-ff41-865c-962c-e29e59b3c283"
+uuid: "97670eb1-ea99-8162-a5eb-68bc95b4b9ab"
+horo: 1
 typography:
-  partition: endorsee
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "7d1bcb3c-6fb7-837c-b6de-3643c79ff784"
+  computationUuid: "3ccd1acf-56b9-8cea-8a81-b51f845eb78b"
   stages:
     - stage: path
-      stageUuid: "a385a632-480e-8822-928c-71d268000833"
+      stageUuid: "cf03de27-fb7f-8e24-a051-c5661c9e7e5e"
     - stage: trinity
-      stageUuid: "5c46d434-e685-8dbf-b5fa-d7a984e85428"
+      stageUuid: "909d397d-f45c-89e6-94cd-c64352f52357"
     - stage: boundary
-      stageUuid: "378eb374-f008-84d6-864d-8695c982faf3"
+      stageUuid: "15b0c22b-8858-8551-baa3-f3696f9ddac3"
     - stage: links
-      stageUuid: "fb8c8752-df69-8807-8882-be0cca724829"
+      stageUuid: "4ea08a28-1d09-8a49-a3f2-fe5f8de8295f"
     - stage: horo
-      stageUuid: "df19d5f9-7cc0-8032-954c-1843a513be65"
+      stageUuid: "8e950994-6430-84dd-880b-628e297ff463"
     - stage: seal
-      stageUuid: "d40f18b1-ab9f-8563-bf95-0fe0691067c7"
+      stageUuid: "fa1bda55-53dd-89d6-9bf9-8617b17d4204"
     - stage: uuid
-      stageUuid: "90e83727-768f-854d-a679-537470cb6ccf"
+      stageUuid: "3305e7c2-414c-81ee-97b1-6d4266c254fb"
 version: 2
 ---
 # endorsee

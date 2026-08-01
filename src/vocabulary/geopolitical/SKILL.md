@@ -1,63 +1,35 @@
 ---
 name: geopolitical
 description: "Use when reasoning about geopolitical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/geopolitical
-coordinate: geopolitical · 4/weave · 6f231105
-contentUuid: "6fd2c067-b8e1-5718-a09c-2ccc9f8d66f6"
-diamondUuid: "8a22d0fd-ebf0-8cf3-be85-4182b2a42c1e"
-uuid: "6f231105-9f0c-81d7-a8df-7d8dbdf14f19"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/geopolitical"
+coordinate: "vocabulary/geopolitical · 1/base · 0f0d7a04"
+contentUuid: "627cb3fe-5553-5515-9ff5-54b2b9559e40"
+diamondUuid: "47d75f83-7c9d-8458-a7c7-c0880d90eecf"
+uuid: "0f0d7a04-6905-83e0-a632-66174c8d247d"
+horo: 1
 typography:
-  partition: geopolitical
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "e79e5384-d3f7-8899-9dc6-6c6dd7288f6b"
+  computationUuid: "a9830145-d4f9-86e0-a050-380823e6baaa"
   stages:
     - stage: path
-      stageUuid: "ccab6a7e-583f-80c5-bdf9-6b3cae9c72be"
+      stageUuid: "2f663d1a-7386-808e-a651-03e7a8f89dba"
     - stage: trinity
-      stageUuid: "67ff158f-5605-8677-982e-5177a990c8d6"
+      stageUuid: "5d25e6bd-4682-834d-a0ad-5f7c90f862c7"
     - stage: boundary
-      stageUuid: "cc96ca60-6d0c-824e-8fb9-e48d136277f2"
+      stageUuid: "6a551f1d-1ae7-818c-a54e-cc04a0053e7d"
     - stage: links
-      stageUuid: "733d55fe-6726-89f9-9173-97e59d67a05c"
+      stageUuid: "402bfebc-0c13-8170-aa83-ede648eedfea"
     - stage: horo
-      stageUuid: "5f71f08d-3f1a-86f5-8633-807c5a947a92"
+      stageUuid: "e23c45e1-4d1f-8603-a570-19e0891b962d"
     - stage: seal
-      stageUuid: "ca1e72a5-80a3-8d1d-b443-056903270a20"
+      stageUuid: "dd17f910-bfc4-863c-9d4d-46034b0e0983"
     - stage: uuid
-      stageUuid: "9cf0c99d-5fa0-8f0f-9dad-1a3f90288d1b"
+      stageUuid: "b9a204db-9071-8803-bfb1-eb05379ab01e"
 version: 2
 ---
 # geopolitical

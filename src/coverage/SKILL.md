@@ -2,113 +2,17 @@
 name: coverage
 description: "Use when reasoning about coverage — Use to see the development plan as a computed matrix — participants (14 roles) × standards (their concerns), each cell a theorem, each uncovered cell a wave. A cell is covered iff a control cites its standard WITH a test beside it. 100% = every standard, faced by every participant it concerns, is proven. Run: tsx src/coverage/index.ts"
 atomPath: coverage
-coordinate: "coverage · 8/crest · 8058dd7a"
-contentUuid: "6c574e38-a116-5b57-a25c-38d73211218e"
+coordinate: "coverage · 7/descent · 23f89103"
+contentUuid: "71e08849-2c04-50d6-a6f1-03b24fd82445"
 diamondUuid: "b440cf70-7f5b-8885-9141-aafbf9a2b28c"
-uuid: "8058dd7a-585c-819b-be01-61293d162909"
-horo: 8
-bonds:
-  in:
-    - audit
-    - aura
-    - balance
-    - blockchain
-    - blood
-    - cost
-    - gate
-    - heart
-    - law
-    - mission
-    - policy
-    - priorities
-    - proof
-    - redundancy
-    - rules
-    - spatial
-    - syntax
-    - tamper
-    - temporal
-    - testing
-    - vibration
-  out:
-    - audit
-    - aura
-    - balance
-    - blockchain
-    - blood
-    - cost
-    - gate
-    - heart
-    - law
-    - mission
-    - policy
-    - priorities
-    - proof
-    - redundancy
-    - rules
-    - spatial
-    - syntax
-    - tamper
-    - temporal
-    - testing
-    - vibration
+uuid: "23f89103-7855-8b42-9947-6e0346ea24b8"
+horo: 7
 typography:
   partition: coverage
   bondDegree: 76
-  neighbors: []
 standards:
   - "ISO-19011:2018 §6.4 — audit evidence: coverage is traceable, cell by cell"
 bindings: []
-neighbors:
-  wikilink:
-    - audit
-    - law
-    - rules
-    - syntax
-  matrix:
-    - audit
-    - aura
-    - balance
-    - blockchain
-    - blood
-    - cost
-    - gate
-    - heart
-    - law
-    - mission
-    - policy
-    - priorities
-    - proof
-    - redundancy
-    - rules
-    - spatial
-    - syntax
-    - tamper
-    - temporal
-    - testing
-    - vibration
-  backlinks:
-    - audit
-    - aura
-    - balance
-    - blockchain
-    - blood
-    - cost
-    - gate
-    - heart
-    - law
-    - mission
-    - policy
-    - priorities
-    - proof
-    - redundancy
-    - rules
-    - spatial
-    - syntax
-    - tamper
-    - temporal
-    - testing
-    - vibration
 signatures:
   computationUuid: "74423e91-ab87-8151-9aba-47915fb1f4b6"
   stages:

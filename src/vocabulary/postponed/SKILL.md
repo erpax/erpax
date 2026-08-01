@@ -1,63 +1,35 @@
 ---
 name: postponed
 description: "Use when reasoning about postponed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/postponed
-coordinate: postponed · 1/base · eb5ada1e
-contentUuid: "ff7940e9-7fb9-5b34-915a-0d25a1991e03"
-diamondUuid: "645e6237-9126-8347-8c5b-30f5b01d49a1"
-uuid: "eb5ada1e-112b-8bef-9395-dc8e91e89cb4"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/postponed"
+coordinate: "vocabulary/postponed · 8/crest · d2207db2"
+contentUuid: "7f2f4eae-02d2-52e3-b846-932412bb2532"
+diamondUuid: "69525260-d5a1-83d7-a9fb-ad6ef8fe13c7"
+uuid: "d2207db2-0aa8-8762-94b4-a00d2237f35c"
+horo: 8
 typography:
-  partition: postponed
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "615d2f01-ff2b-8cd5-9730-dc422fa30a03"
+  computationUuid: "5e4e14a0-6844-8eb9-aed0-33749df09a0e"
   stages:
     - stage: path
-      stageUuid: "433b2df4-ce1a-8228-9df2-bf89ba2b7037"
+      stageUuid: "6b655c57-2f2f-881a-8465-a5dfef62ce0d"
     - stage: trinity
-      stageUuid: "ce7f12b4-bd74-8355-94ff-457504bc2b3a"
+      stageUuid: "ba659d28-ff69-88ec-b502-d8c84e804372"
     - stage: boundary
-      stageUuid: "23e624f2-f2cc-8a42-a29f-515c45a2d966"
+      stageUuid: "c82934e7-3772-8324-af73-9b390ce0aef9"
     - stage: links
-      stageUuid: "4633f0b1-3edc-8da1-8db6-578a19f09ffd"
+      stageUuid: "849371cd-deb9-81b6-b612-1a127b1351b0"
     - stage: horo
-      stageUuid: "0deeb5ba-a48d-87ec-b4c9-ec9badf56d51"
+      stageUuid: "4e25de3e-47de-86a7-876a-05e6b2bf2b6b"
     - stage: seal
-      stageUuid: "a85bec46-1fc8-8637-b2f2-888d4c359896"
+      stageUuid: "a2a01320-24ea-82cc-bacb-7dceb207e467"
     - stage: uuid
-      stageUuid: "f7e21ab0-5519-8355-8de7-0f3b08e0768f"
+      stageUuid: "ac148dcb-c28d-82f2-8000-4a1f9550ca79"
 version: 2
 ---
 # postponed

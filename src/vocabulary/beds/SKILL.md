@@ -1,93 +1,35 @@
 ---
 name: beds
 description: "Use when reasoning about beds as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/beds
-coordinate: beds · 5/round · 24e22083
-contentUuid: "fe6d8ae9-40b3-5a01-a5b0-ff04e9d1ea1e"
-diamondUuid: "c08cd538-73c7-8e68-95ed-b414aa9ba669"
-uuid: "24e22083-2729-8737-9d6b-d8607854a218"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - cvd
-    - icu
-    - law
-    - merge
-    - num
-    - number
-    - occ
-    - sti
-    - tot
-  out:
-    - collapse
-    - cvd
-    - icu
-    - law
-    - merge
-    - num
-    - number
-    - occ
-    - sti
-    - tot
+atomPath: "vocabulary/beds"
+coordinate: "vocabulary/beds · 1/base · 63c0616c"
+contentUuid: "cfa5e0f8-7a05-5279-82c4-bbec5e25df4c"
+diamondUuid: "1ed51936-b31c-8bda-acb6-d033eb244e52"
+uuid: "63c0616c-8505-864c-bb7a-7bf94fa89a60"
+horo: 1
 typography:
-  partition: beds
+  partition: vocabulary
   bondDegree: 35
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - cvd
-    - icu
-    - law
-    - merge
-    - num
-    - number
-    - occ
-    - sti
-    - tot
-  matrix:
-    - collapse
-    - cvd
-    - icu
-    - law
-    - merge
-    - num
-    - number
-    - occ
-    - sti
-    - tot
-  backlinks:
-    - collapse
-    - cvd
-    - icu
-    - law
-    - merge
-    - num
-    - number
-    - occ
-    - sti
-    - tot
 signatures:
-  computationUuid: "915fa485-9d70-887f-b669-95ded62e0cdd"
+  computationUuid: "717e9ef9-5e28-8311-809c-c27fcd66efeb"
   stages:
     - stage: path
-      stageUuid: "d20a03f0-e78e-8f01-b1a8-1f5ac78be872"
+      stageUuid: "e68914f7-a4dd-82f0-8fab-d95d973a6b0b"
     - stage: trinity
-      stageUuid: "27bd0235-d290-85c5-a26d-5772d247a931"
+      stageUuid: "85bf0032-8f6b-8206-9589-4453ab5abf0f"
     - stage: boundary
-      stageUuid: "0a5515f7-acee-887e-b4f3-2acd1c3edc73"
+      stageUuid: "0c5131af-9b3c-833b-8898-23108f8c220f"
     - stage: links
-      stageUuid: "e357a922-d843-82dc-bd60-6a98e6c826a9"
+      stageUuid: "8b8d8474-89e8-8d0a-b628-6e73c354b2fa"
     - stage: horo
-      stageUuid: "52d372e7-1db4-8d90-9fdc-8034ff89b0bb"
+      stageUuid: "576e5d2b-a0db-848e-925f-715a63e532ec"
     - stage: seal
-      stageUuid: "e6c5f419-5cb7-8b39-9471-535984ee47d6"
+      stageUuid: "f20706dd-48d4-853a-b49e-93af99b30ab7"
     - stage: uuid
-      stageUuid: "155b9943-9ab8-84b7-b1c7-5d02464a7b12"
+      stageUuid: "0637e3e6-6be6-8490-96c4-3f35ff3178c2"
 version: 2
 ---
 # beds

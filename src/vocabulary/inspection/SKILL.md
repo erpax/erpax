@@ -1,57 +1,34 @@
 ---
 name: inspection
 description: Use when modelling one inspection — the singular model of the inspections collection (the plural store); a recorded examination against a standard.
-atomPath: vocabulary/inspection
-coordinate: inspection · 2/share · 18d87483
-contentUuid: "5fbe1e51-2f22-5506-95b0-b13dcf4bcb0d"
-diamondUuid: "48e398ae-f684-84c1-b260-4b97933cd983"
-uuid: "18d87483-6566-89dd-b876-1f6a481a1296"
+atomPath: "vocabulary/inspection"
+coordinate: "vocabulary/inspection · 2/share · 0296c2d7"
+contentUuid: "1c54bbd8-0dca-59e5-aa6f-ef486499bcc4"
+diamondUuid: "3f065ec6-a434-8ff7-91c5-3fd880f5926b"
+uuid: "0296c2d7-bfa0-8e39-9c96-e94232e784aa"
 horo: 2
-bonds:
-  in:
-    - balance
-    - inspections
-    - quality
-  out:
-    - balance
-    - inspections
-    - quality
 typography:
-  partition: inspection
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - inspections
-    - quality
-  matrix:
-    - balance
-    - inspections
-    - quality
-  backlinks:
-    - balance
-    - inspections
-    - quality
 signatures:
-  computationUuid: "e5075972-0e9d-843a-b6d8-384c6a9c1d5c"
+  computationUuid: "38450023-06d7-8a99-b250-4bfb79033c7a"
   stages:
     - stage: path
-      stageUuid: "e6bc4835-2748-8dff-9fe0-a2c19b3f589f"
+      stageUuid: "7643421f-368d-83e2-b94b-a4183dee323f"
     - stage: trinity
-      stageUuid: "ecc3918e-c1d0-8dc8-8888-da4d9d36f57b"
+      stageUuid: "0c3fc9c1-5ad1-886e-b1f2-58a548e0d487"
     - stage: boundary
-      stageUuid: "6022bbd9-6260-8a95-b9b4-7e88f75c0d53"
+      stageUuid: "985f5b2f-377e-8321-8e1d-45c6ad45e0f0"
     - stage: links
-      stageUuid: "44549d04-7292-8326-be6a-5d71b7b585d2"
+      stageUuid: "b0e66a09-0d3d-891d-bb2a-2cffbade2e90"
     - stage: horo
-      stageUuid: "21e57ccf-464e-8ae1-9bb1-803aa3631753"
+      stageUuid: "e85f441a-587b-858f-8605-ffc601b93e18"
     - stage: seal
-      stageUuid: "3bb5d246-f8c3-8a9d-8585-6c78a419b4f9"
+      stageUuid: "419dfc64-7d4f-83f8-be03-e35c400f6628"
     - stage: uuid
-      stageUuid: "74361f0b-624e-8273-9414-f0656b50474e"
+      stageUuid: "91279429-d1c8-8457-8aca-21a41cdf3d06"
 version: 2
 ---
 # inspection — the model of one [[inspections]] row

@@ -2,95 +2,18 @@
 name: development
 description: "Use when planning what to build next — a feasibility-ranked roadmap of capabilities driven by the self-building loop; nextMove picks the highest-feasibility development for the society to advance."
 atomPath: development
-coordinate: "development · 2/share · 352be7eb"
-contentUuid: "5c796804-f99b-5c87-8c3f-90c3dc55b21b"
-diamondUuid: "38be8eac-bd1a-8983-a6f2-2964273a1438"
-uuid: "352be7eb-8eff-8712-959b-d59f0312ec3e"
+coordinate: "development · 2/share · c36fa08c"
+contentUuid: "9283a13a-26ba-5ebf-82ed-23b4c2a596e5"
+diamondUuid: "74866007-d7ed-8a50-bfc7-ecd71465a9cd"
+uuid: "c36fa08c-1fd6-8fd0-a046-c376d0b0e414"
 horo: 2
-bonds:
-  in:
-    - aura
-    - breath
-    - collide
-    - development
-    - expand
-    - generate
-    - law
-    - matrix
-    - quantum
-    - research
-    - reveal
-    - roadmap
-    - sequence
-    - society
-    - wave
-  out:
-    - aura
-    - breath
-    - collide
-    - development
-    - expand
-    - generate
-    - law
-    - matrix
-    - quantum
-    - research
-    - reveal
-    - roadmap
-    - sequence
-    - society
-    - wave
 typography:
   partition: development
   bondDegree: 71
-  neighbors:
-    - aura
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - aura
-    - breath
-    - generate
-    - law
-    - quantum
-    - roadmap
-    - sequence
-    - society
-  matrix:
-    - aura
-    - breath
-    - collide
-    - development
-    - expand
-    - generate
-    - law
-    - matrix
-    - quantum
-    - research
-    - reveal
-    - roadmap
-    - sequence
-    - society
-    - wave
-  backlinks:
-    - aura
-    - breath
-    - collide
-    - development
-    - expand
-    - generate
-    - law
-    - matrix
-    - quantum
-    - research
-    - reveal
-    - roadmap
-    - sequence
-    - society
-    - wave
 signatures:
-  computationUuid: "d25b786d-d01d-8800-8ec4-4c1ab0aa8fa9"
+  computationUuid: "43063e49-f0e7-842f-8678-fd2a04734176"
   stages:
     - stage: path
       stageUuid: "b961d87f-7eaa-8108-b3ab-5dc23f2579c0"
@@ -101,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "17809f6b-1781-8913-b5ba-233610e620c9"
     - stage: horo
-      stageUuid: "2edf8e54-ab40-8cb9-ae7d-b533361ad628"
+      stageUuid: "b0dfe815-e735-868c-a1d2-cecba1b4e962"
     - stage: seal
       stageUuid: "685c8484-8916-88dc-9745-05402d2764c5"
     - stage: uuid
-      stageUuid: "65cc2a04-111b-8197-9e74-0e64b349d9b1"
+      stageUuid: "2327e538-fce2-818d-a01d-5b725c409a76"
 version: 2
 ---
 # development — building toward the goal, one ranked move at a time

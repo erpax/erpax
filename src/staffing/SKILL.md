@@ -2,57 +2,19 @@
 name: staffing
 description: "Use when reasoning about staffing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: staffing
-coordinate: staffing · 1/base · a2298bf7
-contentUuid: "dfbef0ee-b7b6-58fc-9b18-cf459ff3a549"
-diamondUuid: "01a65afb-a546-80de-8212-4a56dce0b58d"
-uuid: "a2298bf7-7f89-8a6f-b158-51551ea76d33"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - diversity
-    - law
-    - merge
-    - report
-    - sti
-  out:
-    - collapse
-    - diversity
-    - law
-    - merge
-    - report
-    - sti
+coordinate: "staffing · 7/descent · 0a1749da"
+contentUuid: "9f967563-0c18-5c3f-a77a-d5da3a44f108"
+diamondUuid: "326da0b9-2610-8d2a-9449-d3f3e1df9773"
+uuid: "0a1749da-3a7b-89d3-a4e5-16c7a7ad365d"
+horo: 7
 typography:
   partition: staffing
-  bondDegree: 20
-  neighbors: []
+  bondDegree: 22
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - diversity
-    - law
-    - merge
-    - report
-    - sti
-  matrix:
-    - collapse
-    - diversity
-    - law
-    - merge
-    - report
-    - sti
-  backlinks:
-    - collapse
-    - diversity
-    - law
-    - merge
-    - report
-    - sti
 signatures:
-  computationUuid: "17411f59-b0db-8fed-8ce8-5c4de46e5d5d"
+  computationUuid: "59459794-1a5a-8a84-b83a-daf7c5ac451d"
   stages:
     - stage: path
       stageUuid: "e021809f-7038-8884-93a1-2aeb641cae1c"
@@ -63,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "63fd1912-ad68-8701-83ef-22f4047c2c24"
     - stage: horo
-      stageUuid: "0435b67e-a61e-83ff-a1fd-f5758c4b5b16"
+      stageUuid: "bd7bc73d-93a8-8d8a-9ee8-0b1b33522a14"
     - stage: seal
-      stageUuid: "08227678-cbb8-8f58-9582-062c80bc1ac1"
+      stageUuid: "80b88db1-5335-8ed3-b891-1ea1a852e34f"
     - stage: uuid
-      stageUuid: "a68e8b30-3961-8567-9929-d227b3c7b41c"
+      stageUuid: "5c9a632d-bdbf-85ee-b68f-81c966a40f58"
 version: 2
 ---
 # staffing

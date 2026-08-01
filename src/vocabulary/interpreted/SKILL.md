@@ -1,68 +1,35 @@
 ---
 name: interpreted
 description: "Use when reasoning about interpreted as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/interpreted
-coordinate: interpreted · 7/descent · 05fae085
-contentUuid: "da61a8db-9f09-5bc0-a050-62d26f4256a1"
-diamondUuid: "2803a1f9-27ef-887a-8548-e1ffe22df537"
-uuid: "05fae085-da3c-8c82-b403-fa6fe8d10fbe"
+atomPath: "vocabulary/interpreted"
+coordinate: "vocabulary/interpreted · 7/descent · 65b1a2ed"
+contentUuid: "e03a0cdd-6f04-59af-b0e0-1f947f1f38aa"
+diamondUuid: "035f1d60-6dcb-8da2-b292-518241babcb6"
+uuid: "65b1a2ed-3745-834e-8982-ef7afa78c8a6"
 horo: 7
-bonds:
-  in:
-    - claim
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - claim
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: interpreted
-  bondDegree: 16
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 18
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - claim
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - claim
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - claim
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "71e9954b-e407-8539-b602-fbd437787e4c"
+  computationUuid: "30dd52dc-c44e-87c7-bdfd-0a40b1f35c03"
   stages:
     - stage: path
-      stageUuid: "a8efa45d-dd33-8517-bed0-e38db8e1942d"
+      stageUuid: "94bfba9f-2c04-8619-a19f-fcc8b54e0876"
     - stage: trinity
-      stageUuid: "6bb263ad-e0fd-8459-9370-b4c7a55d5e32"
+      stageUuid: "d728b6ac-bfa7-868d-92a7-d3dc05b3a951"
     - stage: boundary
-      stageUuid: "42e4939c-b52d-809f-81e7-0099e544a206"
+      stageUuid: "2d0ecc46-5642-8410-a3dd-ea4c543db50e"
     - stage: links
-      stageUuid: "d2ad607c-ece1-89a9-854d-c1e9263f5ae8"
+      stageUuid: "72cabf3e-1557-87af-a481-5e18860d63a9"
     - stage: horo
-      stageUuid: "44adee8a-66aa-859a-ab81-513170053897"
+      stageUuid: "55c8fb31-f09b-840c-8117-d6d3c0c8f39e"
     - stage: seal
-      stageUuid: "9637fdd5-7654-819f-b8cb-a07bd64d00de"
+      stageUuid: "965c8442-8fa4-8bca-8865-ee365adfb0a1"
     - stage: uuid
-      stageUuid: "137f2919-54eb-8e45-a982-ada7c476998b"
+      stageUuid: "3f1208d7-766f-8ec7-9e0e-bfdb426df319"
 version: 2
 ---
 # interpreted

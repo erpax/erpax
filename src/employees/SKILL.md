@@ -2,62 +2,14 @@
 name: employees
 description: "Use when managing workforce records — onboarding an employee, recording compensation (IAS 19 base salary, FTE ratio, bonus, pension, PTO), storing GDPR-classified identity and payroll bank account, linking to the actor-party user, and driving the payroll cycle via time-entries and payroll runs. The GDPR-protected workforce master (admin/payroll-officer access only)."
 atomPath: employees
-coordinate: "employees · 1/base · 039f1673"
-contentUuid: "537cf8eb-de21-54f1-bbde-2407409e0f2f"
-diamondUuid: "9636dee1-30f3-8bc5-8d37-bdd4f16e6f34"
-uuid: "039f1673-9515-87f3-9aec-8dd66fcd98c4"
-horo: 1
-bonds:
-  in:
-    - attrition
-    - bookings
-    - commissions
-    - compensation
-    - competencies
-    - contracts
-    - engagement
-    - entries
-    - identity
-    - law
-    - payments
-    - port
-    - quota
-    - reports
-    - requests
-    - reviews
-    - runs
-    - satisfaction
-    - shifts
-    - tenure
-    - territory
-    - training
-  out:
-    - attrition
-    - bookings
-    - commissions
-    - compensation
-    - competencies
-    - contracts
-    - engagement
-    - entries
-    - identity
-    - law
-    - payments
-    - port
-    - quota
-    - reports
-    - requests
-    - reviews
-    - runs
-    - satisfaction
-    - shifts
-    - tenure
-    - territory
-    - training
+coordinate: "employees · 2/share · 33da7030"
+contentUuid: "81adf0c8-5837-5a1f-942a-e9a1481aa80c"
+diamondUuid: "8da6ff00-a087-805c-9298-5839f0220558"
+uuid: "33da7030-380f-8b01-be94-9fa86e10cd8d"
+horo: 2
 typography:
   partition: employees
   bondDegree: 0
-  neighbors: []
 standards:
   - "GDPR Art.30 records-of-processing-activities"
   - "GDPR Art.6(1)(b) lawful-basis-contract"
@@ -88,65 +40,8 @@ standards:
   - "US-GAAP ASC-715 compensation-retirement-benefits"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - commissions
-    - entries
-    - identity
-    - law
-    - payments
-    - reports
-    - requests
-    - reviews
-    - runs
-  matrix:
-    - attrition
-    - bookings
-    - commissions
-    - compensation
-    - competencies
-    - contracts
-    - engagement
-    - entries
-    - identity
-    - law
-    - payments
-    - port
-    - quota
-    - reports
-    - requests
-    - reviews
-    - runs
-    - satisfaction
-    - shifts
-    - tenure
-    - territory
-    - training
-  backlinks:
-    - attrition
-    - bookings
-    - commissions
-    - compensation
-    - competencies
-    - contracts
-    - engagement
-    - entries
-    - identity
-    - law
-    - payments
-    - port
-    - quota
-    - reports
-    - requests
-    - reviews
-    - runs
-    - satisfaction
-    - shifts
-    - tenure
-    - territory
-    - training
 signatures:
-  computationUuid: "83b09ba0-9a19-86ad-84b9-f1c107fa400c"
+  computationUuid: "2afb655e-0d0b-8e7c-bb4a-15446ecae4bf"
   stages:
     - stage: path
       stageUuid: "e797237f-685b-8805-af56-4d8208d09bd4"
@@ -155,13 +50,13 @@ signatures:
     - stage: boundary
       stageUuid: "a36c6ef8-2c76-8bc9-9083-24698bdb5ba7"
     - stage: links
-      stageUuid: "232dd4bb-5fb3-8ecf-b9e7-8dadc1713eaa"
+      stageUuid: "b5ca5584-c436-8f8d-a253-29ad788d6712"
     - stage: horo
-      stageUuid: "04b6554d-4f12-8ea4-87a0-4816d566abf6"
+      stageUuid: "cba69d3a-72aa-88f2-be66-10334a8c2aaf"
     - stage: seal
       stageUuid: "bf21df0c-b3f4-8738-a50f-3d8674bfeb57"
     - stage: uuid
-      stageUuid: "50ba8cab-c7ba-8f0e-afc6-cb4f125e069a"
+      stageUuid: "9eed0094-37eb-89b0-b3e9-b55601af0751"
 version: 2
 ---
 # employees

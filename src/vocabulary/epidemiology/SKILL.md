@@ -1,53 +1,35 @@
 ---
 name: epidemiology
 description: "Use when reasoning about epidemiology — The characteristics of associated patients, such as age, gender, race etc."
-atomPath: vocabulary/epidemiology
-coordinate: epidemiology · 2/share · bfe9fde6
-contentUuid: "86f25e74-81ee-5a09-a0a0-7b5131a544c3"
-diamondUuid: "607e0752-c7c2-8de8-9205-32f65f1fd4b2"
-uuid: "bfe9fde6-8c4f-8519-966b-60550fcbe4b9"
-horo: 2
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/epidemiology"
+coordinate: "vocabulary/epidemiology · 5/round · 7b4a58d2"
+contentUuid: "7cc9597c-4218-58da-b6fd-9a2af7df8b60"
+diamondUuid: "841a42de-ec77-8df2-8f56-8829d5a13dae"
+uuid: "7b4a58d2-1073-80dd-8f7d-1a8e5cf6a169"
+horo: 5
 typography:
-  partition: epidemiology
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "0fb4a9e6-0695-8d9d-af49-804ddf7fe6b8"
+  computationUuid: "ec1b4ebe-c793-825a-9f99-44412de7f5f3"
   stages:
     - stage: path
-      stageUuid: "b712c14f-b150-8fc1-8b2c-195c4f68e832"
+      stageUuid: "e96bde0b-3d19-8582-88c6-f4ab092a6de9"
     - stage: trinity
-      stageUuid: "b9f0b474-db2b-871e-8209-6839030a385e"
+      stageUuid: "2dd9f31b-d867-813c-9841-147985c6d392"
     - stage: boundary
-      stageUuid: "4bf593a6-bd68-8d0c-a71d-b8e393ff8b23"
+      stageUuid: "58b56f17-4711-8c9a-9e5c-2716b2b3f9f5"
     - stage: links
-      stageUuid: "3fc08fe5-9eeb-8b9d-a167-bc5404bf5046"
+      stageUuid: "6e2b5937-88f9-8466-aa74-33e8cdc34118"
     - stage: horo
-      stageUuid: "41c03b56-bc7d-8bcc-84e9-7118927f8c71"
+      stageUuid: "b50a6279-da65-809f-8274-91a914d06b77"
     - stage: seal
-      stageUuid: "3e71e28c-46cf-89d5-96b8-956b5f4949d6"
+      stageUuid: "278b9346-e408-89b9-bd09-740659ab2d75"
     - stage: uuid
-      stageUuid: "563d3f5a-a45f-8913-a28f-d5b4f24db2da"
+      stageUuid: "bf01a2b8-1084-863e-b499-6f8fac828e74"
 version: 2
 ---
 # epidemiology

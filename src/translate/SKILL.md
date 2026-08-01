@@ -2,111 +2,22 @@
 name: translate
 description: "Use when computing i18n keys and humanizing them into default labels for the translations dropdown — the computed-default + DB-override pattern (DB value > humanized default > raw key). Also enforces the strict singular-model / plural-collection matrix (translation ↔ translations), itself a tamper-cost dimension."
 atomPath: translate
-coordinate: translate · 7/descent · 913347dd
-contentUuid: "4e962151-8254-586b-9164-e9d32a05a7fe"
-diamondUuid: "315fb092-179f-816d-b30a-b4d59e6166de"
-uuid: "913347dd-9032-813a-af06-6019d8ef67cf"
-horo: 7
-bonds:
-  in:
-    - collection
-    - cost
-    - dashboard
-    - gate
-    - law
-    - localize
-    - merge
-    - message
-    - model
-    - quantum
-    - religion
-    - tamper
-    - translation
-    - translations
-    - translator
-    - uuid
-    - word
-  out:
-    - collection
-    - cost
-    - dashboard
-    - gate
-    - law
-    - localize
-    - merge
-    - message
-    - model
-    - quantum
-    - religion
-    - tamper
-    - translation
-    - translations
-    - translator
-    - uuid
-    - word
+coordinate: "translate · 8/crest · 174de2b2"
+contentUuid: "8e64a559-130c-5b43-87c6-1b48a7f664e5"
+diamondUuid: "2186426a-6932-84e6-93bf-70d52897812f"
+uuid: "174de2b2-336e-8d63-9d26-377fdb2c2ffd"
+horo: 8
 typography:
   partition: translate
-  bondDegree: 55
-  neighbors: []
+  bondDegree: 61
 standards:
   - "RFC-7231"
   - "W3C HTTP Content-Language (RFC 7231 §3.1.3.2) · BCP-47 language tags"
+  - "W3C HTTP Content-Language (RFC 7231 §3.1.3.2) · BCP-47 language tags`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - collection
-    - cost
-    - gate
-    - law
-    - localize
-    - merge
-    - message
-    - model
-    - quantum
-    - tamper
-    - translation
-    - translations
-    - translator
-    - uuid
-    - word
-  matrix:
-    - collection
-    - cost
-    - dashboard
-    - gate
-    - law
-    - localize
-    - merge
-    - message
-    - model
-    - quantum
-    - religion
-    - tamper
-    - translation
-    - translations
-    - translator
-    - uuid
-    - word
-  backlinks:
-    - collection
-    - cost
-    - dashboard
-    - gate
-    - law
-    - localize
-    - merge
-    - message
-    - model
-    - quantum
-    - religion
-    - tamper
-    - translation
-    - translations
-    - translator
-    - uuid
-    - word
 signatures:
-  computationUuid: "10b7754e-d626-8992-ae60-c592fc9ee5be"
+  computationUuid: "0f140fb2-3db9-848a-b8a8-f3e188b4abdf"
   stages:
     - stage: path
       stageUuid: "631af55b-9a03-8124-b824-dadaac785f46"
@@ -117,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "6f4ee42a-9438-8bae-87cf-5dd7fd58323c"
     - stage: horo
-      stageUuid: "230735ed-26a4-822c-82bc-aa16d0da48e7"
+      stageUuid: "a905dc5f-ac95-897a-a806-91a94d64a049"
     - stage: seal
-      stageUuid: "1d58cf9b-1589-8375-a5bd-0061be95f8f0"
+      stageUuid: "4ff0cb0e-9a30-8621-866d-a1c18bb7ea98"
     - stage: uuid
-      stageUuid: "87379e74-15f1-86ca-b159-38988066c7d4"
+      stageUuid: "19649809-5890-88ea-be10-72103b3830c1"
 version: 2
 ---
 # translate — compute + humanize keys; enforce the singular/plural matrix (under [[localize]])

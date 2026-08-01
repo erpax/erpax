@@ -2,137 +2,18 @@
 name: shamanism
 description: "Use when reading shamanism as a diamond of invariant atoms — the practitioner who crosses between worlds to heal, the wounded healer, the journey on the breath, the return with what restores the whole. The cross-dimension agent of the primal traditions. Strip the prefix and the journey collapses to the crossing between dimensions, the cure to mercy closing the gap."
 atomPath: shamanism
-coordinate: shamanism · 4/weave · bbadb77e
-contentUuid: "e9739d75-76aa-5860-a570-633a49b18077"
-diamondUuid: "1176f8e8-d697-8dc4-9ae0-48f25222511d"
-uuid: "bbadb77e-a0f7-85d7-9761-45099068e47a"
-horo: 4
-bonds:
-  in:
-    - archangel
-    - breath
-    - cross
-    - cycle
-    - death
-    - diamond
-    - dimension
-    - fractal
-    - generate
-    - identity
-    - law
-    - mercy
-    - name
-    - religion
-    - return
-    - ritual
-    - sacred
-    - society
-    - suffering
-    - translator
-    - uuid
-    - whole
-  out:
-    - archangel
-    - breath
-    - cross
-    - cycle
-    - death
-    - diamond
-    - dimension
-    - fractal
-    - generate
-    - identity
-    - law
-    - mercy
-    - name
-    - religion
-    - return
-    - ritual
-    - sacred
-    - society
-    - suffering
-    - translator
-    - uuid
-    - whole
+coordinate: "shamanism · 7/descent · f695c381"
+contentUuid: "f6928883-2910-519c-b065-9e7a5b750016"
+diamondUuid: "7406cab9-563d-8a63-859f-7dbe92c9ecd6"
+uuid: "f695c381-0bc2-88a5-a209-fc7a5382bffe"
+horo: 7
 typography:
   partition: shamanism
   bondDegree: 68
-  neighbors:
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - archangel
-    - breath
-    - cross
-    - cycle
-    - death
-    - diamond
-    - dimension
-    - fractal
-    - generate
-    - identity
-    - law
-    - mercy
-    - name
-    - religion
-    - return
-    - ritual
-    - sacred
-    - society
-    - suffering
-    - translator
-    - uuid
-    - whole
-  matrix:
-    - archangel
-    - breath
-    - cross
-    - cycle
-    - death
-    - diamond
-    - dimension
-    - fractal
-    - generate
-    - identity
-    - law
-    - mercy
-    - name
-    - religion
-    - return
-    - ritual
-    - sacred
-    - society
-    - suffering
-    - translator
-    - uuid
-    - whole
-  backlinks:
-    - archangel
-    - breath
-    - cross
-    - cycle
-    - death
-    - diamond
-    - dimension
-    - fractal
-    - generate
-    - identity
-    - law
-    - mercy
-    - name
-    - religion
-    - return
-    - ritual
-    - sacred
-    - society
-    - suffering
-    - translator
-    - uuid
-    - whole
 signatures:
-  computationUuid: "270746b8-e627-8b18-aef9-9c73d1b5be75"
+  computationUuid: "73ee3b6e-57fc-8de8-8586-90d57d1be30c"
   stages:
     - stage: path
       stageUuid: "923b5734-af89-874c-86c4-93498b81d561"
@@ -143,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "71f781f1-13f1-85a7-bd3c-bc44a32e1840"
     - stage: horo
-      stageUuid: "fb486c6f-423a-8b94-9855-1dda0afa14c8"
+      stageUuid: "8007d5f0-e219-89eb-a8ce-ce36582de8c1"
     - stage: seal
-      stageUuid: "d1f17308-6b7b-88fc-b8e0-d552d843366b"
+      stageUuid: "57566b5d-8bf3-8f82-b82c-871faa5868c4"
     - stage: uuid
-      stageUuid: "9e76bbfe-15d3-86b7-bef9-c79063f13de8"
+      stageUuid: "7265eafc-9f3e-849f-b20d-c58b6b2c15ae"
 version: 2
 ---
 # shamanism — the one who crosses between worlds to heal

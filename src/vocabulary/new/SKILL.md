@@ -1,73 +1,35 @@
 ---
 name: new
 description: "Use when reasoning about new as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/new
-coordinate: new · 4/weave · ee97b7e4
-contentUuid: "d9293e2c-1ec0-5277-855a-98e3438d9b22"
-diamondUuid: "7c1052ad-a78b-8214-8254-23b242922d6c"
-uuid: "ee97b7e4-1730-8bf4-b925-624884105ae6"
-horo: 4
-bonds:
-  in:
-    - accepting
-    - collapse
-    - law
-    - merge
-    - patients
-    - sti
-  out:
-    - accepting
-    - collapse
-    - law
-    - merge
-    - patients
-    - sti
+atomPath: "vocabulary/new"
+coordinate: "vocabulary/new · 7/descent · 9f4ef985"
+contentUuid: "69514c89-0fac-520a-927c-f2f6c733c8d8"
+diamondUuid: "72aca13c-d582-894c-a4f8-478d27973731"
+uuid: "9f4ef985-9921-82ac-9043-feeff14eaa50"
+horo: 7
 typography:
-  partition: new
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - accepting
-    - collapse
-    - law
-    - merge
-    - patients
-    - sti
-  matrix:
-    - accepting
-    - collapse
-    - law
-    - merge
-    - patients
-    - sti
-  backlinks:
-    - accepting
-    - collapse
-    - law
-    - merge
-    - patients
-    - sti
 signatures:
-  computationUuid: "420de759-8a7b-8cd3-b248-1fada5df52a9"
+  computationUuid: "034f6289-5bc5-80e9-8500-54563277eaa1"
   stages:
     - stage: path
-      stageUuid: "6a390467-fb46-8e4e-bdff-2252f24f394a"
+      stageUuid: "8b25f000-3714-8110-a49f-ac450c9c84c1"
     - stage: trinity
-      stageUuid: "16401259-e3ef-8d41-948c-a0039188a2d3"
+      stageUuid: "f24f521c-c28d-8a72-90ab-c049a88739ab"
     - stage: boundary
-      stageUuid: "778d0fed-c0ab-8c12-9742-69a18e7e5781"
+      stageUuid: "1634ce35-f972-867a-a5a5-78fa099a3a27"
     - stage: links
-      stageUuid: "1349ff87-dd81-8af1-85be-3313f4183339"
+      stageUuid: "b29b5685-5943-840d-a70d-7bb6a0afc6f0"
     - stage: horo
-      stageUuid: "92f967a6-7d03-8d1a-a9c5-e30a617d7471"
+      stageUuid: "66c7782c-2d60-8a51-82a7-b79b41a9e2dc"
     - stage: seal
-      stageUuid: "53e38fac-e0b8-8f82-b598-71be64317bcc"
+      stageUuid: "1c226c8e-6601-8262-a48c-26fe1ceb8486"
     - stage: uuid
-      stageUuid: "c457bccf-7d13-8592-a17d-119f41b52cea"
+      stageUuid: "da27db05-feca-8bfd-b1cd-a2d25a4a127c"
 version: 2
 ---
 # new

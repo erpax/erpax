@@ -1,98 +1,35 @@
 ---
 name: object
 description: "Use when reasoning about object — The object upon which the action is carried out, whose state is kept intact or changed. Also known as the semantic roles patient, affected or undergoer (which change their state) o"
-atomPath: vocabulary/object
-coordinate: object · 2/share · 1a1f757c
-contentUuid: "efa72d65-fe0f-5f6d-8832-01d548d88194"
-diamondUuid: "1b97e291-06d9-8490-b929-8cfdd7ec38a0"
-uuid: "1a1f757c-1a62-83e3-8307-8dc024697906"
+atomPath: "vocabulary/object"
+coordinate: "vocabulary/object · 2/share · d6102836"
+contentUuid: "e8a40af7-bc7d-587c-9337-b061c459c878"
+diamondUuid: "e193e77f-9172-89ca-92c0-badf3fca6734"
+uuid: "d6102836-e0f1-8aae-b6d6-9bda56e6435e"
 horo: 2
-bonds:
-  in:
-    - alignment
-    - audio
-    - image
-    - includes
-    - law
-    - legislation
-    - media
-    - music
-    - snapshot
-    - text
-    - video
-  out:
-    - alignment
-    - audio
-    - image
-    - includes
-    - law
-    - legislation
-    - media
-    - music
-    - snapshot
-    - text
-    - video
 typography:
-  partition: object
-  bondDegree: 40
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 42
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - alignment
-    - audio
-    - image
-    - includes
-    - law
-    - legislation
-    - media
-    - music
-    - snapshot
-    - text
-    - video
-  matrix:
-    - alignment
-    - audio
-    - image
-    - includes
-    - law
-    - legislation
-    - media
-    - music
-    - snapshot
-    - text
-    - video
-  backlinks:
-    - alignment
-    - audio
-    - image
-    - includes
-    - law
-    - legislation
-    - media
-    - music
-    - snapshot
-    - text
-    - video
 signatures:
-  computationUuid: "baa89192-16bd-8393-aaa7-6bba21d14be4"
+  computationUuid: "1f2e121a-d7e7-8208-b850-0eaa879dfdf6"
   stages:
     - stage: path
-      stageUuid: "d5008340-60da-8772-a7fc-94c8520a1fe4"
+      stageUuid: "13968925-0f5d-8b44-9e26-8533713cbcf3"
     - stage: trinity
-      stageUuid: "57f3b454-e97e-8ff6-99a6-3cc42fa0e923"
+      stageUuid: "d568f3f1-1a5c-8f70-a22a-2fb172b936c4"
     - stage: boundary
-      stageUuid: "f03cc2cb-8e92-836b-897a-824ccda2d492"
+      stageUuid: "cf8f5f65-5d16-823b-8695-71a6011547ba"
     - stage: links
-      stageUuid: "aeedf553-767f-8e34-be03-9af26eb62f5d"
+      stageUuid: "df4fc0f0-b5e5-807c-aa87-b28b911f368c"
     - stage: horo
-      stageUuid: "a36b5936-3ab3-85f6-ba72-e38425f64f3e"
+      stageUuid: "a59c777f-678e-8312-9ba0-c7d76a9eb805"
     - stage: seal
-      stageUuid: "d6936b86-21f3-8104-aa03-021ff2379856"
+      stageUuid: "96f0aa52-9d44-8323-93e2-4781620b4d96"
     - stage: uuid
-      stageUuid: "a8dc45c4-05d2-8b78-a8b6-1b690a414d2d"
+      stageUuid: "cad543d4-f2ee-88a1-a8bc-7cb0779b6d2b"
 version: 2
 ---
 # object

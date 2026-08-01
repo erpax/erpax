@@ -2,180 +2,37 @@
 name: path
 description: "Use when normalizing addresses across every surface — fs, url, github, mcp, api, and http all collapse to one canonical atom path; the merge point where external APIs entangle with erpax in all quantum dimensions."
 atomPath: path
-coordinate: path · 8/crest · 9f9d1f01
-contentUuid: "fe831f11-d24f-5d1f-8e2c-7a94d58e854e"
-diamondUuid: "94fb1186-445e-8a55-b662-c25006f128a9"
-uuid: "9f9d1f01-1012-825d-9333-557f9c884ae0"
-horo: 8
-bonds:
-  in:
-    - ai
-    - api
-    - atom
-    - buddhism
-    - cloudflare
-    - diamond
-    - dimension
-    - entropy
-    - folder
-    - fs
-    - github
-    - identity
-    - integrity
-    - islam
-    - jainism
-    - law
-    - matrix
-    - mcp
-    - merge
-    - method
-    - name
-    - purity
-    - quantum
-    - serverless
-    - sti
-    - sunni
-    - uuid
-    - vitepress
-  out:
-    - ai
-    - api
-    - atom
-    - buddhism
-    - cloudflare
-    - diamond
-    - dimension
-    - entropy
-    - folder
-    - fs
-    - github
-    - identity
-    - integrity
-    - islam
-    - jainism
-    - law
-    - matrix
-    - mcp
-    - merge
-    - method
-    - name
-    - purity
-    - quantum
-    - serverless
-    - sti
-    - sunni
-    - uuid
-    - vitepress
+coordinate: "path · 5/round · 497404c5"
+contentUuid: "fcabc43c-f788-5cb5-a2e3-796b77d453dc"
+diamondUuid: "9f0fec0c-0e4d-882c-adce-070f9a2bb0b2"
+uuid: "497404c5-ead4-897a-b6a1-cd4ae7471e56"
+horo: 5
 typography:
   partition: path
-  bondDegree: 0
-  neighbors: []
+  bondDegree: 134
 standards:
-  - "paths computed deterministically; never hand-mapped per surface"
   - "schema.org — XPathType vocabulary word (collided via [[sti]])"
 bindings:
-  - d1_databases/D1
-  - kv_namespaces/AI_CACHE
-  - r2_buckets/R2
-neighbors:
-  wikilink:
-    - accounting
-    - api
-    - atom
-    - cloudflare
-    - dimension
-    - entropy
-    - folder
-    - fs
-    - github
-    - identity
-    - integrity
-    - law
-    - matrix
-    - mcp
-    - merge
-    - method
-    - coa
-    - quantum
-    - serverless
-    - sti
-    - uuid
-    - vitepress
-  matrix:
-    - ai
-    - api
-    - atom
-    - buddhism
-    - cloudflare
-    - diamond
-    - dimension
-    - entropy
-    - folder
-    - fs
-    - github
-    - identity
-    - integrity
-    - islam
-    - jainism
-    - law
-    - matrix
-    - mcp
-    - merge
-    - method
-    - name
-    - purity
-    - quantum
-    - serverless
-    - sti
-    - sunni
-    - uuid
-    - vitepress
-  backlinks:
-    - ai
-    - api
-    - atom
-    - buddhism
-    - cloudflare
-    - diamond
-    - dimension
-    - entropy
-    - folder
-    - fs
-    - github
-    - identity
-    - integrity
-    - islam
-    - jainism
-    - law
-    - matrix
-    - mcp
-    - merge
-    - method
-    - name
-    - purity
-    - quantum
-    - serverless
-    - sti
-    - sunni
-    - uuid
-    - vitepress
+  - "d1_databases/D1"
+  - "kv_namespaces/AI_CACHE"
+  - "r2_buckets/R2"
 signatures:
-  computationUuid: "59849ba0-bb09-8073-8cab-0ff61c3923d1"
+  computationUuid: "5c36f540-58c8-8060-95d4-3b895e18820a"
   stages:
     - stage: path
       stageUuid: "702b9111-e70d-8fe7-bd92-35925a245571"
     - stage: trinity
       stageUuid: "ebbcb50b-ea74-86a5-8450-c854ceed1e8d"
     - stage: boundary
-      stageUuid: "2089332f-9725-8b99-8600-990022a1354d"
+      stageUuid: "6b05559b-949f-815b-8546-d507c00d86c0"
     - stage: links
-      stageUuid: "bd1de7c5-dd72-82f4-b6f7-05910ca5f005"
+      stageUuid: "4403a6b6-1a8f-81fb-9ef3-5acb16917695"
     - stage: horo
-      stageUuid: "fed55a6d-4f16-80f3-ab57-3e7fb69b5ba6"
+      stageUuid: "dceabbc9-02c8-8321-a0eb-d5156c32782e"
     - stage: seal
-      stageUuid: "8e4f5b7c-615f-8ce0-9bad-79c1c57eaeaa"
+      stageUuid: "483c3953-6066-8789-bf80-9934c1047eef"
     - stage: uuid
-      stageUuid: "ad5db403-c537-80d4-8f2d-5cc62ad51e74"
+      stageUuid: "9e603fa6-f998-8995-851a-7e1c83ef1e1f"
 version: 2
 ---
 # path — all meet computationally in THE path

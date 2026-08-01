@@ -2,24 +2,14 @@
 name: deadlines
 description: "Use when tracking filing, audit, certification, reporting, payment, or disclosure deadlines per legal entity and jurisdiction — due-date management, on-track/at-risk/overdue status, and compliance calendar oversight per ISO-37301. The compliance-deadline calendar collection."
 atomPath: "legal/entities/compliance/deadlines"
-coordinate: "legal/entities/compliance/deadlines · 7/descent · 1fb041d5"
-contentUuid: "193b0a39-ee08-5989-9f63-1d237379c4f0"
-diamondUuid: "1316a642-a3c3-817c-9b73-5652b131eeb1"
-uuid: "1fb041d5-1d78-8f1f-8ec3-5964bd6577bb"
-horo: 7
-bonds:
-  in:
-    - entities
-    - law
-    - notifications
-  out:
-    - entities
-    - law
-    - notifications
+coordinate: "legal/entities/compliance/deadlines · 8/crest · f956db68"
+contentUuid: "c0bb4bc9-2b18-59cd-aab8-ae15eb1c5971"
+diamondUuid: "8675bf65-f846-81bb-9be0-a9e700184793"
+uuid: "f956db68-160a-8126-8665-cbfd1edffea2"
+horo: 8
 typography:
   partition: legal
   bondDegree: 0
-  neighbors: []
 standards:
   - "ISO-37301"
   - "ISO-37301:2021 compliance-management-systems"
@@ -29,20 +19,8 @@ standards:
   - "US-CTA-2021"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - notifications
-  matrix:
-    - entities
-    - law
-    - notifications
-  backlinks:
-    - entities
-    - law
-    - notifications
 signatures:
-  computationUuid: "d15f7eac-b05a-820d-9d8b-db3fa5460259"
+  computationUuid: "c0574595-1486-81b1-b980-5054fda94957"
   stages:
     - stage: path
       stageUuid: "f22d93d6-7327-8c6d-9c07-15621935a2e4"
@@ -53,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "f408201f-2111-832f-9872-0d3fca93373c"
     - stage: horo
-      stageUuid: "b4c0b10c-337d-89bb-a6cb-b4524b5a7fb9"
+      stageUuid: "ae06e2f8-2fcc-88c3-850c-1d1f07b8d790"
     - stage: seal
       stageUuid: "3899d114-8c69-8f0f-9507-8244d1e06c34"
     - stage: uuid
-      stageUuid: "776394c5-3da6-8d60-9ab0-769d7d435d8b"
+      stageUuid: "780504da-5f92-8d04-ae0a-5802a448d8db"
 version: 2
 ---
 # compliance-deadlines

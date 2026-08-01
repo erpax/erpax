@@ -1,90 +1,34 @@
 ---
 name: cultivation
 description: "Use when weeds are controlled mechanically among a standing crop — shallow soil-stirring (hoeing, wheel hoe, tine weeder) and thermal (flame weeding). Distinct from tillage (which opens bare ground): cultivation works between the rows of a growing crop, timed to the white-thread weed stage. Many shallow, well-timed passes are the low-cost alternative to herbicide."
-atomPath: vocabulary/cultivation
-coordinate: cultivation · 7/descent · 201ede07
-contentUuid: "5349d13d-f4e9-57fa-a9f7-00909c31cce3"
-diamondUuid: "561141d7-3c75-8eb4-bb10-ce94b85fb1d4"
-uuid: "201ede07-2303-8d1c-a92d-41ac1b5b1a3f"
-horo: 7
-bonds:
-  in:
-    - agriculture
-    - cost
-    - crop
-    - forestry
-    - manufacturing
-    - mulch
-    - scouting
-    - season
-    - spacing
-    - tillage
-  out:
-    - agriculture
-    - cost
-    - crop
-    - forestry
-    - manufacturing
-    - mulch
-    - scouting
-    - season
-    - spacing
-    - tillage
+atomPath: "vocabulary/cultivation"
+coordinate: "vocabulary/cultivation · 2/share · 41aa743e"
+contentUuid: "a42d88c8-eed1-55cb-abd0-e18c54b17f15"
+diamondUuid: "e0291257-17d1-8560-aeaa-91d95ab31838"
+uuid: "41aa743e-ebc1-8d7b-a3c8-28060317fafb"
+horo: 2
 typography:
-  partition: cultivation
+  partition: vocabulary
   bondDegree: 34
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - cost
-    - crop
-    - manufacturing
-    - mulch
-    - scouting
-    - season
-    - tillage
-  matrix:
-    - agriculture
-    - cost
-    - crop
-    - forestry
-    - manufacturing
-    - mulch
-    - scouting
-    - season
-    - spacing
-    - tillage
-  backlinks:
-    - agriculture
-    - cost
-    - crop
-    - forestry
-    - manufacturing
-    - mulch
-    - scouting
-    - season
-    - spacing
-    - tillage
 signatures:
-  computationUuid: "bfe6096e-822a-8ae7-87be-8bbe5690ca62"
+  computationUuid: "c0fe08e4-a8c0-812c-b241-b8eb47453107"
   stages:
     - stage: path
-      stageUuid: "754a7ef2-ea14-8ecc-8d27-d24546cff619"
+      stageUuid: "cc2d49ce-1dd1-8128-9a33-6e67d3728756"
     - stage: trinity
-      stageUuid: "513d75fb-154a-8f32-acce-74532c964a14"
+      stageUuid: "c5621075-c1f6-872e-9da3-91df2f9f9afb"
     - stage: boundary
-      stageUuid: "b71bd001-2202-822c-9d12-56391dc2982e"
+      stageUuid: "604f3d67-2f1a-8bf3-bb8e-597b55122841"
     - stage: links
-      stageUuid: "364b8449-067f-8b99-9080-8f0bc4d9a211"
+      stageUuid: "9a973d43-495e-8aad-a9d3-8a3d6c1b65b5"
     - stage: horo
-      stageUuid: "e9834c70-5b1d-8a40-8890-ba400231b264"
+      stageUuid: "7a621c41-dc45-8751-abb4-c0e1fb11a857"
     - stage: seal
-      stageUuid: "374b56f4-59de-8eb8-8556-fea133fa3671"
+      stageUuid: "6124c6c0-cfe2-860c-875d-41dff01bb074"
     - stage: uuid
-      stageUuid: "83ad52ac-95f7-8237-95f3-06573a1fda00"
+      stageUuid: "77c1e1de-8402-8e68-8a0a-12f8a0efd614"
 version: 2
 ---
 # cultivation — killing weeds among the standing crop

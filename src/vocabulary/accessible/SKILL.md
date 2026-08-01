@@ -1,69 +1,35 @@
 ---
 name: accessible
 description: "Use when reasoning about accessible as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/accessible
-coordinate: accessible · 8/crest · b000997d
-contentUuid: "920cb63c-61ce-5d03-bfde-44c68ef94ff1"
-diamondUuid: "1cecfee3-cbd5-8fbe-9e97-326d4d2c22ce"
-uuid: "b000997d-356e-8bc3-b9cd-638357bbb9c1"
+atomPath: "vocabulary/accessible"
+coordinate: "vocabulary/accessible · 8/crest · 0f1a12a9"
+contentUuid: "b5f493cc-576b-586d-ae8e-d40da7d95932"
+diamondUuid: "d51ad2a7-382d-876b-b781-7692fb42c5ec"
+uuid: "0f1a12a9-74b2-85f9-97ee-137539d46d1a"
 horo: 8
-bonds:
-  in:
-    - collapse
-    - free
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - free
-    - law
-    - merge
-    - sti
 typography:
-  partition: accessible
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
-  - schema.org
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - free
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - free
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - free
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "e1100250-ba02-87b0-9f74-ecd1cdf51bd7"
+  computationUuid: "fd5f74bd-3e35-8991-9035-134423743690"
   stages:
     - stage: path
-      stageUuid: "d16b41bf-aef9-8701-a74b-54e082f38175"
+      stageUuid: "765f4abf-c18d-846a-89ac-5add71826d95"
     - stage: trinity
-      stageUuid: "3170e831-e43a-8fd9-a3fb-111a8a1116a8"
+      stageUuid: "99de0cc8-1f3f-8cb5-ac80-d5b56634077a"
     - stage: boundary
-      stageUuid: "301b7318-99e0-8200-bcae-d264863119de"
+      stageUuid: "d08a8a75-8f1b-87b9-bbde-20d34e6fdfde"
     - stage: links
-      stageUuid: "409e0d6b-ba2d-8f16-868e-37d14c37fc3e"
+      stageUuid: "767dbde9-400a-8592-a1f5-ff65c637f563"
     - stage: horo
-      stageUuid: "ed1ac828-c559-83ac-bc6c-694e68b789f1"
+      stageUuid: "f9efc21d-6e2d-8659-8bc2-f7ec36b25e03"
     - stage: seal
-      stageUuid: "320e6a60-d907-8dff-9d4a-f97c92bf1f15"
+      stageUuid: "f3ea189e-876c-8e8d-8ba0-27cae030a5bb"
     - stage: uuid
-      stageUuid: "f80f9208-65c9-8c58-9a59-f97d90255d5d"
+      stageUuid: "3de2eb89-d8ab-8063-a958-7038038fbd1c"
 version: 2
 ---
 # accessible

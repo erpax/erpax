@@ -2,60 +2,14 @@
 name: cases
 description: "Use when modelling a legal matter as a docket — case lifecycle, parties under roles, append-only evidence, judgments, offences and dispute resolution; the harmony-checked Payload realization of the justice docket."
 atomPath: cases
-coordinate: "cases · 2/share · af614e6a"
-contentUuid: "be0cbef9-c423-5467-8f00-666842ae335f"
-diamondUuid: "19b27015-7acd-8387-afef-2f344d87d9c9"
-uuid: "af614e6a-91bd-8cb0-8720-001bb0112777"
-horo: 2
-bonds:
-  in:
-    - access
-    - accounting
-    - case
-    - disputeresolution
-    - duality
-    - fields
-    - fractal
-    - governinglaw
-    - history
-    - holographic
-    - hooks
-    - horo
-    - identity
-    - jurisdiction
-    - justice
-    - law
-    - merge
-    - proof
-    - shifts
-    - standard
-    - transaction
-  out:
-    - access
-    - accounting
-    - case
-    - disputeresolution
-    - duality
-    - fields
-    - fractal
-    - governinglaw
-    - history
-    - holographic
-    - hooks
-    - horo
-    - identity
-    - jurisdiction
-    - justice
-    - law
-    - merge
-    - proof
-    - shifts
-    - standard
-    - transaction
+coordinate: "cases · 4/weave · 743a8554"
+contentUuid: "bbb0213e-d7ce-516c-9569-e9e266d62d0b"
+diamondUuid: "565e1eb9-867b-858d-8535-ec66bfa7e817"
+uuid: "743a8554-82aa-8a90-a87b-e3239ff97119"
+horo: 4
 typography:
   partition: cases
-  bondDegree: 63
-  neighbors: []
+  bondDegree: 31
 standards:
   - "ISA-500"
   - "ISO-19011:2018 ISA-500 evidence chain-of-custody append-only"
@@ -64,73 +18,8 @@ standards:
   - "UN-COFOG-03 public-order-and-safety law-courts"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - accounting
-    - disputeresolution
-    - duality
-    - fields
-    - fractal
-    - governinglaw
-    - history
-    - holographic
-    - hooks
-    - horo
-    - identity
-    - jurisdiction
-    - justice
-    - law
-    - merge
-    - proof
-    - standard
-    - transaction
-  matrix:
-    - access
-    - accounting
-    - case
-    - disputeresolution
-    - duality
-    - fields
-    - fractal
-    - governinglaw
-    - history
-    - holographic
-    - hooks
-    - horo
-    - identity
-    - jurisdiction
-    - justice
-    - law
-    - merge
-    - proof
-    - shifts
-    - standard
-    - transaction
-  backlinks:
-    - access
-    - accounting
-    - case
-    - disputeresolution
-    - duality
-    - fields
-    - fractal
-    - governinglaw
-    - history
-    - holographic
-    - hooks
-    - horo
-    - identity
-    - jurisdiction
-    - justice
-    - law
-    - merge
-    - proof
-    - shifts
-    - standard
-    - transaction
 signatures:
-  computationUuid: "962095bd-1bd0-8e2d-b429-1580dc327116"
+  computationUuid: "3e6f0071-4884-84eb-98fd-692ac294f0b6"
   stages:
     - stage: path
       stageUuid: "d0e42baa-d4ec-8283-a35c-b360e4d912c4"
@@ -139,13 +28,13 @@ signatures:
     - stage: boundary
       stageUuid: "6c52a385-9268-82cd-b289-7a29f38851f5"
     - stage: links
-      stageUuid: "1cdd47b2-6d97-8d4c-8f62-b3b76c1eca29"
+      stageUuid: "15c2bb01-b8cc-8bb2-bd76-a92207038abb"
     - stage: horo
-      stageUuid: "dd349c90-8b09-812a-96e7-ad9dacec6293"
+      stageUuid: "453b769d-517e-89bc-bcfb-c3e532951369"
     - stage: seal
       stageUuid: "7239fbbd-1522-87a8-af0c-a83b363fa2ad"
     - stage: uuid
-      stageUuid: "966f2599-c613-8cdd-bb35-ba2854ca445b"
+      stageUuid: "66d31dbf-6b67-8083-985c-c2b18a1a6167"
 version: 2
 ---
 # Cases

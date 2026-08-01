@@ -1,68 +1,35 @@
 ---
 name: corrects
 description: "Use when reasoning about corrects as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/corrects
-coordinate: corrects · 1/base · 006dd6a2
-contentUuid: "4179db9c-8e06-533e-968b-8bc85c5eb65c"
-diamondUuid: "1bbbb411-a316-8425-8e3b-12c0d9a0e364"
-uuid: "006dd6a2-d0e9-86a1-a935-0522dfec75cc"
+atomPath: "vocabulary/corrects"
+coordinate: "vocabulary/corrects · 1/base · 354b4f3f"
+contentUuid: "64af94a0-d262-5bf7-a0f2-2775317ceb40"
+diamondUuid: "381e84a3-9187-8549-aa57-efd19ecef384"
+uuid: "354b4f3f-404b-87b3-9798-331179d2e2e3"
 horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
 typography:
-  partition: corrects
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
 signatures:
-  computationUuid: "e9dd5696-fac5-872b-8651-8e5648d2262d"
+  computationUuid: "a0074cfb-c7a1-8b6c-a255-25076a2bd584"
   stages:
     - stage: path
-      stageUuid: "d118b139-bc70-8e94-8877-6d55c6e2675e"
+      stageUuid: "62eb3f47-e58d-87c4-adc2-81da91f6b25e"
     - stage: trinity
-      stageUuid: "d8136890-758c-85c9-8504-0715e15b1efe"
+      stageUuid: "ac72dacb-b55b-8329-87e3-e26fe5577e8f"
     - stage: boundary
-      stageUuid: "fcf55c1f-385d-8647-b867-361bb59a8138"
+      stageUuid: "deecd100-dc2f-8eda-baf8-6497e7c8280c"
     - stage: links
-      stageUuid: "bb8e604d-02e6-8bae-994b-4129410bbd51"
+      stageUuid: "bb38de27-9403-81fa-87ca-d25cd1cec665"
     - stage: horo
-      stageUuid: "b07cb972-4a56-8260-8ae1-4f5cd9a10d93"
+      stageUuid: "0b802381-8c9c-8782-ac49-8a6dc85dea38"
     - stage: seal
-      stageUuid: "49a3dab2-da3f-84b4-87be-0446aed97ca3"
+      stageUuid: "f8662651-b391-80b2-bd00-9aeb67f0f30c"
     - stage: uuid
-      stageUuid: "1792eb16-3d51-8e0e-8bef-297a9e62607c"
+      stageUuid: "d0e08f0f-96fb-86d2-8373-d334979b5bd1"
 version: 2
 ---
 # corrects

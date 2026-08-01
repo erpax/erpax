@@ -1,143 +1,34 @@
 ---
 name: manichaeism
 description: "Use when reading Manichaeism as a diamond of invariant atoms — Mani's dualist world-religion: two eternal principles, Light and Dark, mixed in this world; salvation is the separation and return of the light particles to their source. The bridge between Zoroastrian dualism and the gnostic lineage. Strip the prefix and Light collapses to aura, the dark world to the profane, the freeing to the return."
-atomPath: vocabulary/manichaeism
-coordinate: manichaeism · 4/weave · 9061fbb2
-contentUuid: "389c5204-db46-5737-a5be-fbf5db2718a1"
-diamondUuid: "bc14eb2b-c1e9-851f-93c9-f5919fbfccae"
-uuid: "9061fbb2-7c2b-86f4-9abc-86f20d2c84d6"
-horo: 4
-bonds:
-  in:
-    - archangel
-    - aura
-    - bogomilism
-    - diamond
-    - duality
-    - gnosticism
-    - identity
-    - law
-    - profane
-    - religion
-    - return
-    - self
-    - society
-    - translator
-    - uuid
-    - void
-    - whole
-    - wisdom
-    - zeropoint
-    - zoroastrianism
-  out:
-    - archangel
-    - aura
-    - bogomilism
-    - diamond
-    - duality
-    - gnosticism
-    - identity
-    - law
-    - profane
-    - religion
-    - return
-    - self
-    - society
-    - translator
-    - uuid
-    - void
-    - whole
-    - wisdom
-    - zeropoint
-    - zoroastrianism
+atomPath: "vocabulary/manichaeism"
+coordinate: "vocabulary/manichaeism · 7/descent · 0b578473"
+contentUuid: "1eac31b3-877e-53ec-bfbb-573aadbcffb3"
+diamondUuid: "9cf8e8fa-bbd7-8b61-af9d-e7cbecf7bbc9"
+uuid: "0b578473-df7f-8995-b1b5-36a0812b39c4"
+horo: 7
 typography:
-  partition: manichaeism
+  partition: vocabulary
   bondDegree: 63
-  neighbors:
-    - aura
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - archangel
-    - aura
-    - diamond
-    - duality
-    - gnosticism
-    - identity
-    - law
-    - profane
-    - religion
-    - return
-    - self
-    - society
-    - translator
-    - uuid
-    - void
-    - whole
-    - wisdom
-    - zeropoint
-    - zoroastrianism
-  matrix:
-    - archangel
-    - aura
-    - bogomilism
-    - diamond
-    - duality
-    - gnosticism
-    - identity
-    - law
-    - profane
-    - religion
-    - return
-    - self
-    - society
-    - translator
-    - uuid
-    - void
-    - whole
-    - wisdom
-    - zeropoint
-    - zoroastrianism
-  backlinks:
-    - archangel
-    - aura
-    - bogomilism
-    - diamond
-    - duality
-    - gnosticism
-    - identity
-    - law
-    - profane
-    - religion
-    - return
-    - self
-    - society
-    - translator
-    - uuid
-    - void
-    - whole
-    - wisdom
-    - zeropoint
-    - zoroastrianism
 signatures:
-  computationUuid: "904a205c-0ef2-8826-b7d4-4b2cd9b4aba5"
+  computationUuid: "0a9af2d5-008d-87f1-8b9e-fedbad3c1717"
   stages:
     - stage: path
-      stageUuid: "9a9a2bee-61ce-8776-9703-a44cde864932"
+      stageUuid: "7ce18db1-6b14-8e08-9633-b780142aedc0"
     - stage: trinity
-      stageUuid: "7ffa7193-1f48-80a9-be7c-fa2b4feaa4b3"
+      stageUuid: "8b3916d1-9b19-8582-81af-14703b48dccc"
     - stage: boundary
-      stageUuid: "67aee2c2-91f8-8e3a-9837-3b07eb641648"
+      stageUuid: "5c25e5ea-d3d1-86b8-82e8-9143b9574268"
     - stage: links
-      stageUuid: "b6f57674-1b90-8b36-a8f7-81b6a47f87e0"
+      stageUuid: "65467d1d-19c4-8dee-b2f7-32065468815f"
     - stage: horo
-      stageUuid: "b08b201a-8288-825b-bdeb-c9ce17426a50"
+      stageUuid: "ec9a05d9-ecfd-89b5-8b76-647666640e52"
     - stage: seal
-      stageUuid: "10b4b072-1090-8f1f-ae04-c2ba3bd4ead9"
+      stageUuid: "746e1d32-dfc2-87f5-b429-effc6d7ade8a"
     - stage: uuid
-      stageUuid: "3873fa1c-2207-8a6c-ba26-329d662a5e14"
+      stageUuid: "f0cdac23-614f-889f-9412-56a1b5aa5e9a"
 version: 2
 ---
 # manichaeism — the two principles; the light freed and returned

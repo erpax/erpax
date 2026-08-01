@@ -1,53 +1,35 @@
 ---
 name: nutrition
 description: Use when reasoning about nutrition — Nutrition information about the recipe or menu item.
-atomPath: vocabulary/nutrition
-coordinate: nutrition · 5/round · 89e56ddc
-contentUuid: "fca582a8-cc93-5ea0-a97e-098921e036bb"
-diamondUuid: "13077404-4dbc-89d4-b12b-ef964bf06a6c"
-uuid: "89e56ddc-b5f5-82c9-8c22-87d02a81a4e9"
-horo: 5
-bonds:
-  in:
-    - information
-    - law
-  out:
-    - information
-    - law
+atomPath: "vocabulary/nutrition"
+coordinate: "vocabulary/nutrition · 1/base · 1dcdae57"
+contentUuid: "04a82475-b1cd-58f8-b606-3fd33309f844"
+diamondUuid: "b69966cf-e16d-855b-ab37-bb9c9b03ae66"
+uuid: "1dcdae57-2612-8419-abcb-f31dbff0c687"
+horo: 1
 typography:
-  partition: nutrition
+  partition: vocabulary
   bondDegree: 7
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - information
-    - law
-  matrix:
-    - information
-    - law
-  backlinks:
-    - information
-    - law
 signatures:
-  computationUuid: "6ca5e1d6-1fd6-86f2-a350-152f09668d3a"
+  computationUuid: "8bac45a2-c20d-8263-afd9-b0c881aab804"
   stages:
     - stage: path
-      stageUuid: "522c0ccf-c688-8e23-86f8-6452985a63a2"
+      stageUuid: "98896315-cc0b-8454-9a96-6cce8f082c90"
     - stage: trinity
-      stageUuid: "654bfd92-a109-8972-9fc0-d38f10786231"
+      stageUuid: "f68f248d-bfce-8dbb-993e-d0e24072478a"
     - stage: boundary
-      stageUuid: "1886bbe2-4eb1-89a6-b8ed-00738da95922"
+      stageUuid: "a88aec09-fab5-86fb-a580-ed6f4d04c97d"
     - stage: links
-      stageUuid: "62d86c62-1462-84b6-97a3-124cc9e80d9c"
+      stageUuid: "eb60a205-6616-811f-81a5-090938d09737"
     - stage: horo
-      stageUuid: "cd7e4d66-49e6-8a9e-9a68-6eb5cf13574f"
+      stageUuid: "42e94ce7-f7f5-8e56-92fc-a54eca775d06"
     - stage: seal
-      stageUuid: "38fa6a5b-8b78-845f-9f0a-4fac10bae554"
+      stageUuid: "9f26697d-bc3d-88f7-8d17-1d2e52ec2ef1"
     - stage: uuid
-      stageUuid: "9f64e16e-464f-8b01-944f-e8d8e1338d89"
+      stageUuid: "6ce4481f-8ca7-8650-8bdf-f7aff1d039b0"
 version: 2
 ---
 # nutrition

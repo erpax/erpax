@@ -1,68 +1,35 @@
 ---
 name: downvote
 description: "Use when reasoning about downvote — A schema.org component word, collided out of schema.org compounds — fused from downvoteCount (sti · collapse · merge)."
-atomPath: vocabulary/downvote
-coordinate: downvote · 8/crest · 8c8f779b
-contentUuid: "afa578d8-d237-5c80-b7cf-d10d40de116a"
-diamondUuid: "04476fbc-48cb-8dc9-bfa6-77eac9e92f82"
-uuid: "8c8f779b-7541-8dd0-a5bf-c1b08f9855ea"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - count
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - count
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/downvote"
+coordinate: "vocabulary/downvote · 7/descent · fd9b5770"
+contentUuid: "701bb07d-f6b9-5375-b16e-15e326206832"
+diamondUuid: "38cc16a6-09b8-83cd-9465-29ff78d78ff6"
+uuid: "fd9b5770-756c-8a91-85c0-77d8dd35a7b0"
+horo: 7
 typography:
-  partition: downvote
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - count
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - count
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - count
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "e5102574-15a0-8408-ba07-0fa82b6a9364"
+  computationUuid: "6ef44e12-3d23-8c7f-be4e-97544c81c9fd"
   stages:
     - stage: path
-      stageUuid: "851f873f-9ead-8858-a5fc-140d54ea350d"
+      stageUuid: "3a7f7435-8ddc-8d0f-b016-9c78e03655ce"
     - stage: trinity
-      stageUuid: "730788c6-692d-84e6-8d14-32b958d80136"
+      stageUuid: "7acbbd51-7af6-884d-81e5-cd0aa7aaf5dc"
     - stage: boundary
-      stageUuid: "4657252f-9506-8761-9d50-e8dd254746c9"
+      stageUuid: "17e91236-41c3-80bb-9ab4-721784db0998"
     - stage: links
-      stageUuid: "f6e2ea22-f0a4-84b6-8329-95648bcc0ec8"
+      stageUuid: "80901461-087a-8212-b509-cd656443181f"
     - stage: horo
-      stageUuid: "ea4e4661-c7c1-8ced-a299-e5d31069bc8a"
+      stageUuid: "e05f42b3-1bb8-8de2-9b42-3643d84d7c5b"
     - stage: seal
-      stageUuid: "3e691ad5-68b3-8246-9823-150f519a70e7"
+      stageUuid: "8981e099-dd53-8d20-845b-d7d5b95d548b"
     - stage: uuid
-      stageUuid: "aa17276d-7d6d-89c4-ac34-3c8c65c0f800"
+      stageUuid: "88626da3-fd03-8225-9a5a-cc660c0265b3"
 version: 2
 ---
 # downvote

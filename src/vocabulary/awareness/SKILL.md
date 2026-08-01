@@ -1,90 +1,34 @@
 ---
 name: awareness
 description: "Use when reasoning about the discovery gate of a market — whether people know the thing exists and that it answers a want they hold. The atom marketing produces and trendsetters amplify; distinct from desire (the want) and distribution (the obtaining). If awareness is the zero atom, trendsetters as taste-amplifiers are the right lever."
-atomPath: vocabulary/awareness
-coordinate: awareness · 4/weave · 4cc1967c
-contentUuid: "a734600c-01ee-5994-9363-0dba7ab253af"
-diamondUuid: "ee8089d2-ea39-80a9-8b7a-43fca84ca81f"
-uuid: "4cc1967c-4c3c-820b-93b5-3197477b623c"
-horo: 4
-bonds:
-  in:
-    - desire
-    - diffusion
-    - distribution
-    - habit
-    - law
-    - market
-    - power
-    - segment
-    - signal
-    - trend
-  out:
-    - desire
-    - diffusion
-    - distribution
-    - habit
-    - law
-    - market
-    - power
-    - segment
-    - signal
-    - trend
+atomPath: "vocabulary/awareness"
+coordinate: "vocabulary/awareness · 5/round · c98df44e"
+contentUuid: "146c19c7-d575-5bf0-8d2b-a1e88f4766e6"
+diamondUuid: "f79c1a78-4741-8f6c-8249-6c73ff914315"
+uuid: "c98df44e-11d0-8e8d-8147-43f04ab21383"
+horo: 5
 typography:
-  partition: awareness
+  partition: vocabulary
   bondDegree: 32
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - desire
-    - distribution
-    - law
-    - market
-    - power
-    - segment
-    - signal
-    - trend
-  matrix:
-    - desire
-    - diffusion
-    - distribution
-    - habit
-    - law
-    - market
-    - power
-    - segment
-    - signal
-    - trend
-  backlinks:
-    - desire
-    - diffusion
-    - distribution
-    - habit
-    - law
-    - market
-    - power
-    - segment
-    - signal
-    - trend
 signatures:
-  computationUuid: "a7476b17-da37-8ee3-9a09-0791533a8752"
+  computationUuid: "75d33c18-975a-8385-b896-3ec863107947"
   stages:
     - stage: path
-      stageUuid: "d8752a92-418c-8253-9bcb-66dbaf963a8a"
+      stageUuid: "e85d1772-536e-85fa-9463-b0ab697859b9"
     - stage: trinity
-      stageUuid: "6fbc3a62-fb6d-8e09-b977-d08bfc4f5754"
+      stageUuid: "dfef56ad-3872-8484-a585-7e4996aa8c72"
     - stage: boundary
-      stageUuid: "c476ebfa-bdb8-8e72-924b-64ca1f2e245f"
+      stageUuid: "641efef3-8159-8ec2-8ef7-884dc50bf502"
     - stage: links
-      stageUuid: "7c93317a-db9d-82ef-8278-125ceb39061c"
+      stageUuid: "d7cc59e8-68b1-8fd6-afe9-412950fd7068"
     - stage: horo
-      stageUuid: "4c8334fb-9341-8f53-ba1b-bffc9cb316da"
+      stageUuid: "e9d5b408-c718-8f0f-9466-d3fddb68b8c8"
     - stage: seal
-      stageUuid: "e51fb8d8-ed9d-8c06-980d-d4c1977fba7f"
+      stageUuid: "49eaed54-5e7e-8c37-a089-1ca4d664d008"
     - stage: uuid
-      stageUuid: "658eb579-7932-823f-83fc-bf633d23ff8f"
+      stageUuid: "3b8d19ba-b7ba-8ace-8335-bd1c9ad166ad"
 version: 2
 ---
 # awareness — the discovery gate

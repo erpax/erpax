@@ -2,202 +2,20 @@
 name: page
 description: "Use when reasoning about page as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: page
-coordinate: "page · 7/descent · f731a2b3"
-contentUuid: "4470fe37-0a23-5580-937b-e7d51bfa854a"
-diamondUuid: "11ade281-22ca-8834-96d6-ce8d879c4aa4"
-uuid: "f731a2b3-3226-869f-869d-1076b5b7c2f1"
+coordinate: "page · 7/descent · 1ae4a68b"
+contentUuid: "cd852308-49d0-57bf-ac94-06aa6b942366"
+diamondUuid: "4b53cbd1-e5b8-8d04-b31b-68e8ddcf6cca"
+uuid: "1ae4a68b-65c0-8236-86d3-5658a7d3b532"
 horo: 7
-bonds:
-  in:
-    - about
-    - acquire
-    - booking
-    - checkout
-    - collapse
-    - collection
-    - contact
-    - content
-    - element
-    - end
-    - entity
-    - faq
-    - image
-    - item
-    - law
-    - license
-    - main
-    - medical
-    - merge
-    - page
-    - primary
-    - print
-    - profile
-    - qa
-    - representative
-    - results
-    - search
-    - start
-    - sti
-    - template
-    - tour
-    - url
-    - user
-    - visits
-    - web
-  out:
-    - about
-    - acquire
-    - booking
-    - checkout
-    - collapse
-    - collection
-    - contact
-    - content
-    - element
-    - end
-    - entity
-    - faq
-    - image
-    - item
-    - law
-    - license
-    - main
-    - medical
-    - merge
-    - page
-    - primary
-    - print
-    - profile
-    - qa
-    - representative
-    - results
-    - search
-    - start
-    - sti
-    - template
-    - tour
-    - url
-    - user
-    - visits
-    - web
 typography:
   partition: page
   bondDegree: 0
-  neighbors: []
 standards:
   - "ECMA-402"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - about
-    - acquire
-    - booking
-    - checkout
-    - collapse
-    - collection
-    - contact
-    - content
-    - element
-    - end
-    - entity
-    - faq
-    - image
-    - item
-    - law
-    - license
-    - main
-    - medical
-    - merge
-    - primary
-    - print
-    - profile
-    - qa
-    - representative
-    - results
-    - search
-    - start
-    - sti
-    - template
-    - tour
-    - url
-    - user
-    - visits
-    - web
-  matrix:
-    - about
-    - acquire
-    - booking
-    - checkout
-    - collapse
-    - collection
-    - contact
-    - content
-    - element
-    - end
-    - entity
-    - faq
-    - image
-    - item
-    - law
-    - license
-    - main
-    - medical
-    - merge
-    - page
-    - primary
-    - print
-    - profile
-    - qa
-    - representative
-    - results
-    - search
-    - start
-    - sti
-    - template
-    - tour
-    - url
-    - user
-    - visits
-    - web
-  backlinks:
-    - about
-    - acquire
-    - booking
-    - checkout
-    - collapse
-    - collection
-    - contact
-    - content
-    - element
-    - end
-    - entity
-    - faq
-    - image
-    - item
-    - law
-    - license
-    - main
-    - medical
-    - merge
-    - page
-    - primary
-    - print
-    - profile
-    - qa
-    - representative
-    - results
-    - search
-    - start
-    - sti
-    - template
-    - tour
-    - url
-    - user
-    - visits
-    - web
 signatures:
-  computationUuid: "98e37012-f999-8b46-b7f5-26c6eda44b3a"
+  computationUuid: "53f491bf-4961-881f-baef-33c080498b8b"
   stages:
     - stage: path
       stageUuid: "67a9d817-2e0f-8155-8b29-71841dc7522e"
@@ -208,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "f0a583e5-31e5-8cc5-a2b6-f1b6241d1a72"
     - stage: horo
-      stageUuid: "2a50dc50-8c66-8506-9a58-3a0728f166ec"
+      stageUuid: "a97c57ba-a279-8cf1-96c2-d51fc1002963"
     - stage: seal
       stageUuid: "3e264539-efba-8143-af96-fa061cf645fc"
     - stage: uuid
-      stageUuid: "5e1891f5-1878-88b7-9b76-5f1be5508537"
+      stageUuid: "552c6697-6fe1-8f8e-914d-6147d07c4523"
 version: 2
 ---
 # page

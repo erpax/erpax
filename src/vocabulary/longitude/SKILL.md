@@ -1,58 +1,35 @@
 ---
 name: longitude
 description: Use when reasoning about longitude — The longitude of a location. For example (WGS 84).
-atomPath: vocabulary/longitude
-coordinate: longitude · 5/round · d7b3bd95
-contentUuid: "429c78c3-b60c-5ce2-bc8e-e706ce0383a7"
-diamondUuid: "54e2c89e-6ceb-8bcb-9b9c-ebf38b952e35"
-uuid: "d7b3bd95-96bb-84ce-a21b-7f87e2793260"
-horo: 5
-bonds:
-  in:
-    - law
-    - place
-    - thing
-  out:
-    - law
-    - place
-    - thing
+atomPath: "vocabulary/longitude"
+coordinate: "vocabulary/longitude · 2/share · fb5a186d"
+contentUuid: "492b869e-ed66-53b7-ab17-4a8bb7d68be7"
+diamondUuid: "d3acbb15-09e5-8ded-b333-3facd70943d5"
+uuid: "fb5a186d-0873-8ef7-8341-2805f2e2c0b2"
+horo: 2
 typography:
-  partition: longitude
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - place
-    - thing
-  matrix:
-    - law
-    - place
-    - thing
-  backlinks:
-    - law
-    - place
-    - thing
 signatures:
-  computationUuid: "66849202-e6bf-8438-aaaf-9d0d9e20331d"
+  computationUuid: "8d00bd1f-e3b1-8bab-a246-6097b25a92d0"
   stages:
     - stage: path
-      stageUuid: "347c50a4-bbe3-8f86-90ad-d680f140059f"
+      stageUuid: "260740e6-9877-82d3-8a23-e927c13f775b"
     - stage: trinity
-      stageUuid: "de10be95-b497-8b3d-ade2-8f6c80d23b17"
+      stageUuid: "75d3a2bf-fa22-890e-9e18-55c2b49054be"
     - stage: boundary
-      stageUuid: "c6c2c0a6-c04f-88f7-8bda-7a4194c2f5c8"
+      stageUuid: "c0ef1e20-67ea-82d8-aa0a-66239bccdf77"
     - stage: links
-      stageUuid: "0127cd9b-df2a-8606-86cd-1bd7636dcea1"
+      stageUuid: "8da077e0-597e-8fbd-8690-03c1256013ed"
     - stage: horo
-      stageUuid: "f50f0a9d-6682-8b04-88b4-d1b3103f556d"
+      stageUuid: "24c956af-1242-837e-a2a8-adbccf91e8d2"
     - stage: seal
-      stageUuid: "70771f46-13de-843e-b2fe-81f4845ceb47"
+      stageUuid: "a892a4b5-cf63-8c0b-8dad-55ed0ea3be78"
     - stage: uuid
-      stageUuid: "b2df55f8-663d-8372-a156-5930dd2a8f8c"
+      stageUuid: "ab31a1e9-c615-8ac3-9536-d8b80ac222ea"
 version: 2
 ---
 # longitude

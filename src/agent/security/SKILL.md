@@ -2,83 +2,18 @@
 name: security
 description: Use when reasoning about security — Parse allowlist and security monitor for agent inputs (fail closed).
 atomPath: "agent/security"
-coordinate: "agent/security · 2/share · a23d8b53"
-contentUuid: "6644d54c-3265-5067-b983-3c649598a0fe"
-diamondUuid: "33a5666e-a640-8e28-8571-d23e3e16c0fe"
-uuid: "a23d8b53-5f51-8944-89b4-40c8193dae5c"
-horo: 2
-bonds:
-  in:
-    - access
-    - agent
-    - biometric
-    - clearance
-    - collapse
-    - engineering
-    - law
-    - merge
-    - publish
-    - requirement
-    - research
-    - screening
-    - security
-    - sti
-    - testing
-  out:
-    - access
-    - biometric
-    - clearance
-    - collapse
-    - engineering
-    - law
-    - merge
-    - publish
-    - requirement
-    - research
-    - screening
-    - security
-    - sti
-    - testing
+coordinate: "agent/security · 1/base · 1526f4c0"
+contentUuid: "4a5f95e5-035b-5a47-bcbe-726779567736"
+diamondUuid: "a2852fe2-8f94-8e19-a945-7d2ac91158de"
+uuid: "1526f4c0-d8fa-8b24-bbc5-e62337eedc78"
+horo: 1
 typography:
   partition: agent
   bondDegree: 59
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink: []
-  matrix:
-    - access
-    - biometric
-    - clearance
-    - collapse
-    - engineering
-    - law
-    - merge
-    - publish
-    - requirement
-    - research
-    - screening
-    - security
-    - sti
-    - testing
-  backlinks:
-    - access
-    - biometric
-    - clearance
-    - collapse
-    - engineering
-    - law
-    - merge
-    - publish
-    - requirement
-    - research
-    - screening
-    - security
-    - sti
-    - testing
 signatures:
-  computationUuid: "9da87e46-1c99-88e2-990a-597c2384f87d"
+  computationUuid: "5d0a9e69-a8d8-8dfa-be3f-6491adb4a311"
   stages:
     - stage: path
       stageUuid: "b451f573-069c-8e98-a447-9eb75365aabd"
@@ -89,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e42bd87f-dde7-803e-a557-904d2bdcd0aa"
     - stage: horo
-      stageUuid: "eb4c34f1-5a8d-8df0-a2b9-69d9eb0deaab"
+      stageUuid: "a3ac6c61-0a70-82cb-baa7-7243749842a4"
     - stage: seal
       stageUuid: "7401598c-fc67-8a0d-bc9c-0b2a5a38cd9a"
     - stage: uuid
-      stageUuid: "c3433013-b0d8-8c62-8186-ebe238a63a74"
+      stageUuid: "32442079-85ed-8e41-b0b7-facc21b03b66"
 version: 2
 ---
 # agent/security

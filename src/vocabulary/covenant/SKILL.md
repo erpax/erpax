@@ -1,114 +1,34 @@
 ---
 name: covenant
 description: "Use when reasoning about the binding mutual bond sealed between the part and the source — a two-way agreement entered into, balance pledged on both sides, content-addressed so it cannot be forged or forgotten and inherits down the lineage. Distinct from grace (one-way credit) and from law (the standing rule): covenant is the rule entered into and sealed."
-atomPath: vocabulary/covenant
-coordinate: covenant · 8/crest · 33f7c64f
-contentUuid: "dfc44e91-70ae-5bf6-b79f-d41a7e9621f8"
-diamondUuid: "194cede2-5af4-8ac8-97ec-69bc827e3207"
-uuid: "33f7c64f-e19b-8324-a003-5def893e84cb"
-horo: 8
-bonds:
-  in:
-    - balance
-    - christianity
-    - dna
-    - faith
-    - grace
-    - identity
-    - judaism
-    - law
-    - mercy
-    - merge
-    - religion
-    - return
-    - seal
-    - sin
-    - uuid
-  out:
-    - balance
-    - christianity
-    - dna
-    - faith
-    - grace
-    - identity
-    - judaism
-    - law
-    - mercy
-    - merge
-    - religion
-    - return
-    - seal
-    - sin
-    - uuid
+atomPath: "vocabulary/covenant"
+coordinate: "vocabulary/covenant · 5/round · e29a08dc"
+contentUuid: "4236dceb-6776-5153-a791-c7637424089c"
+diamondUuid: "66d7a03e-3144-8310-9b94-57d4db45385e"
+uuid: "e29a08dc-fdd9-867a-b1a3-488450e5a064"
+horo: 5
 typography:
-  partition: covenant
+  partition: vocabulary
   bondDegree: 45
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - dna
-    - faith
-    - grace
-    - identity
-    - law
-    - mercy
-    - merge
-    - return
-    - seal
-    - sin
-    - uuid
-  matrix:
-    - balance
-    - christianity
-    - dna
-    - faith
-    - grace
-    - identity
-    - judaism
-    - law
-    - mercy
-    - merge
-    - religion
-    - return
-    - seal
-    - sin
-    - uuid
-  backlinks:
-    - balance
-    - christianity
-    - dna
-    - faith
-    - grace
-    - identity
-    - judaism
-    - law
-    - mercy
-    - merge
-    - religion
-    - return
-    - seal
-    - sin
-    - uuid
 signatures:
-  computationUuid: "37700564-2804-8c2d-9dda-b3d411222953"
+  computationUuid: "0ff2b03a-12dc-8429-ab7f-939a0d6f86de"
   stages:
     - stage: path
-      stageUuid: "f21f9f10-8d2a-8d60-8d39-95194b602b5d"
+      stageUuid: "7cdbb8dd-58ed-8f18-bb70-20583c40ee94"
     - stage: trinity
-      stageUuid: "9755b998-46b3-8a10-9352-0d5bf9a89790"
+      stageUuid: "af0b401a-701e-8f46-b804-7be07f4333fa"
     - stage: boundary
-      stageUuid: "5b742e96-29cc-84af-bb94-2452086ab46d"
+      stageUuid: "53369064-c8a6-8301-a584-e51f5838b7af"
     - stage: links
-      stageUuid: "9d0773bf-8e7a-863d-9581-3701e799284c"
+      stageUuid: "f7bb01dd-f246-8e4b-be9d-81b2550598aa"
     - stage: horo
-      stageUuid: "abbc452c-65c9-88d5-9c98-31628fc3915d"
+      stageUuid: "b9636427-f746-8f86-acf9-9255663774b4"
     - stage: seal
-      stageUuid: "52bbbdea-923a-896b-8115-ef27d9910231"
+      stageUuid: "8806d920-0074-8f1c-a1a9-a1cb180f1752"
     - stage: uuid
-      stageUuid: "312329e7-b39a-8dde-8e71-b8dd05454b2c"
+      stageUuid: "38fca73d-a19e-82c0-9b90-cf198deecab3"
 version: 2
 ---
 # covenant — the binding mutual bond, sealed

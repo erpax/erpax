@@ -1,79 +1,20 @@
 ---
 name: cache
 description: "Use when caching by content — the content is its own key (its content-uuid), so the same content is always a hit and a changed input is auto-invalidated; dedup by design with no stale-cache bug."
-atomPath: quantum/cache
-coordinate: quantum/cache · 2/share · aa79b07d
-contentUuid: "096af389-dd0b-5523-9e16-a15f6a0ba750"
-diamondUuid: "f72e4494-b3df-8952-ada8-3881df849d91"
-uuid: "aa79b07d-a79f-8f58-909e-79806285b34b"
-horo: 2
-bonds:
-  in:
-    - artery
-    - bindings
-    - cache
-    - diamond
-    - holographic
-    - law
-    - optimize
-    - pwa
-    - quantum
-    - queries
-    - redirects
-    - request
-  out:
-    - artery
-    - bindings
-    - cache
-    - diamond
-    - holographic
-    - law
-    - optimize
-    - pwa
-    - queries
-    - redirects
-    - request
+atomPath: "quantum/cache"
+coordinate: "quantum/cache · 8/crest · a3b9ad45"
+contentUuid: "9fba91f3-3fd8-5db5-8cdb-921cdb985585"
+diamondUuid: "cc61c559-ce96-8395-bed5-482b21e89daf"
+uuid: "a3b9ad45-ee2f-8799-a083-d691da92cbb9"
+horo: 8
 typography:
   partition: quantum
-  bondDegree: 42
-  neighbors: []
+  bondDegree: 46
 standards:
   - "RFC 9562 §5.8 content-uuid (the cache key)"
 bindings: []
-neighbors:
-  wikilink:
-    - cache
-    - law
-    - merge
-    - pwa
-    - quantum
-    - uuid
-  matrix:
-    - artery
-    - bindings
-    - cache
-    - diamond
-    - holographic
-    - law
-    - optimize
-    - pwa
-    - queries
-    - redirects
-    - request
-  backlinks:
-    - artery
-    - bindings
-    - cache
-    - diamond
-    - holographic
-    - law
-    - optimize
-    - pwa
-    - queries
-    - redirects
-    - request
 signatures:
-  computationUuid: "c0284022-de21-8e5a-a4ae-f10d4ddd9b3f"
+  computationUuid: "7c4c03ab-36a5-8dc8-9e00-84388d207540"
   stages:
     - stage: path
       stageUuid: "50d48c49-a49d-8bc0-86b4-617a429e2d87"
@@ -84,21 +25,21 @@ signatures:
     - stage: links
       stageUuid: "93df9750-1f4c-8c07-81a5-1d8450858663"
     - stage: horo
-      stageUuid: "6c564496-c581-8de8-a9a4-384eacd0d8ff"
+      stageUuid: "ac469a07-ad90-8d46-97a7-ab2db122d069"
     - stage: seal
       stageUuid: "abccbfd8-710b-8146-8454-7275d7eb382c"
     - stage: uuid
-      stageUuid: "9717a4ae-b58c-8376-a869-d98a3d4497a6"
+      stageUuid: "ad1ae872-3abb-8b97-a8f1-0181f595b271"
 quantum:
   superposition:
     - artery
     - bindings
     - cache
     - diamond
+    - fingerprint
     - holographic
     - law
     - optimize
-    - pwa
     - superposition
   collapse:
     - "RFC 9562 §5.8 content-uuid (the cache key)"
@@ -112,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "c0284022-de21-8e5a-a4ae-f10d4ddd9b3f"
-    contentUuid: "096af389-dd0b-5523-9e16-a15f6a0ba750"
+    computationUuid: "7c4c03ab-36a5-8dc8-9e00-84388d207540"
+    contentUuid: "9fba91f3-3fd8-5db5-8cdb-921cdb985585"
 version: 2
 ---
 # quantum/cache — the content-addressed cache
@@ -126,4 +67,4 @@ Matter-twin: `src/quantum/cache/index.ts` (`key` · `sameKey`). Composes [[cache
 
 @standard RFC 9562 §5.8 content-uuid (the cache key)
 
-<sub>content-uuid `096af389-dd0b-5523-9e16-a15f6a0ba750` · account `quantum/cache` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `9fba91f3-3fd8-5db5-8cdb-921cdb985585` · account `quantum/cache` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

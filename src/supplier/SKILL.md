@@ -2,52 +2,19 @@
 name: supplier
 description: "Use when reasoning about supplier as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: supplier
-coordinate: supplier · 4/weave · 4f99f563
-contentUuid: "e4a23c8f-1d6b-5af9-b223-9340f1f9a408"
-diamondUuid: "b8880798-7982-89ef-a851-decdc65ab1a7"
-uuid: "4f99f563-8aa0-8095-bdb7-0a5126fb5ae5"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - eligible
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - eligible
-    - law
-    - merge
-    - sti
+coordinate: "supplier · 7/descent · a9b74290"
+contentUuid: "c691b76b-671b-589f-b8d7-6b2f4027b1f7"
+diamondUuid: "fc45b552-4eff-8eda-9229-4b4b47090535"
+uuid: "a9b74290-afe3-8917-a116-657fb71c0c9a"
+horo: 7
 typography:
   partition: supplier
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - eligible
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - eligible
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - eligible
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "4f14781a-1bb9-87c3-808c-27b9e75f5459"
+  computationUuid: "9c68d9e8-6482-8f2f-b687-faf481011081"
   stages:
     - stage: path
       stageUuid: "276a5feb-d531-87a7-85a7-62ebdbc94857"
@@ -58,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e802494e-7225-84cc-a3cd-b81d7548724f"
     - stage: horo
-      stageUuid: "89170fa1-79ee-8aae-8fdc-f9462c88bc06"
+      stageUuid: "d87ed20c-1937-81c8-9858-44c372bf63bf"
     - stage: seal
-      stageUuid: "e231164c-437f-8a14-8293-61397a8ac474"
+      stageUuid: "9f706f92-8e5e-8f3b-90cc-5b64d0fd3a2a"
     - stage: uuid
-      stageUuid: "5a20a2fa-36b8-80fc-9779-b2c4227fe82b"
+      stageUuid: "4d3db4cf-61a1-8250-af9a-260067e70bc3"
 version: 2
 ---
 # supplier

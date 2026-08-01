@@ -1,63 +1,35 @@
 ---
 name: rebate
 description: "Use when reasoning about rebate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/rebate
-coordinate: rebate · 1/base · 2eed47b2
-contentUuid: "81e0b458-ff78-5642-a9e9-491d30c25b77"
-diamondUuid: "23def387-d939-8079-95cb-354fec424fd2"
-uuid: "2eed47b2-c04a-881c-b0e1-0d4507508f83"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/rebate"
+coordinate: "vocabulary/rebate · 4/weave · 3776cc81"
+contentUuid: "1bbb6f39-84f0-5bd2-8174-6c1df2f37a54"
+diamondUuid: "bc7959b7-60cb-819a-ab39-ac0266478240"
+uuid: "3776cc81-7c85-8008-871c-95178f1bd0a6"
+horo: 4
 typography:
-  partition: rebate
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "ee9bba5c-2792-8175-b79c-95345468e2aa"
+  computationUuid: "d9cf9902-d67f-8041-89e5-ac215b3a96c2"
   stages:
     - stage: path
-      stageUuid: "bfc40c9d-3f1c-8f8e-a327-17f2a97c31c3"
+      stageUuid: "336da5b1-ec40-88c4-91a7-0ffdc074605c"
     - stage: trinity
-      stageUuid: "1624d2bf-93fc-8c5c-9b3e-3a4c4691b808"
+      stageUuid: "161f9b33-cf83-8497-ae1b-4e2ca325b54d"
     - stage: boundary
-      stageUuid: "4175050e-1504-8aaf-971c-5d4d5335af66"
+      stageUuid: "f4419d47-e47c-88a9-921e-34ed07b500b4"
     - stage: links
-      stageUuid: "aff629d5-8045-8821-943b-03626ebdae4f"
+      stageUuid: "49729ed0-29d6-8aae-8287-3f4b96c8795c"
     - stage: horo
-      stageUuid: "af517998-c382-8802-9f8a-baab4e9e5447"
+      stageUuid: "d486245a-7dac-8815-a2aa-2ea91c653ff1"
     - stage: seal
-      stageUuid: "0e190e0f-343a-8d61-8671-e4eae775deea"
+      stageUuid: "6553bbad-ee2c-8556-8b93-17df37136a1a"
     - stage: uuid
-      stageUuid: "f6049f81-bef2-8498-8d84-36eb275dfb91"
+      stageUuid: "700b68d2-8b33-841e-a295-299389a1dfb3"
 version: 2
 ---
 # rebate

@@ -1,87 +1,34 @@
 ---
 name: deduction
 description: "Use when reasoning about deduction — Use for tax-deductible expenses and deduction timing — permanent (non-deductible) vs temporary (deductible in different period) per IAS-12; central to tax provision and deferred-ta"
-atomPath: vocabulary/deduction
-coordinate: deduction · 5/round · 8ce749ad
-contentUuid: "d97ea28b-5914-53e0-822d-60dd1e204eec"
-diamondUuid: "cec4f8d7-85d7-8a79-9ad9-75b458266dae"
-uuid: "8ce749ad-e643-80e5-b1c7-ae25b9f1fa63"
-horo: 5
-bonds:
-  in:
-    - accrual
-    - calculations
-    - entries
-    - items
-    - law
-    - standard
-    - tax
-    - taxexempt
-    - variance
-  out:
-    - accrual
-    - calculations
-    - entries
-    - items
-    - law
-    - standard
-    - tax
-    - taxexempt
-    - variance
+atomPath: "vocabulary/deduction"
+coordinate: "vocabulary/deduction · 4/weave · d474b48c"
+contentUuid: "c58d1afa-87ff-5a3e-9786-6463c6e82ff3"
+diamondUuid: "e7c09ab4-6daa-8802-8c5f-540a7057fd75"
+uuid: "d474b48c-f115-89ad-b1aa-399d17517c99"
+horo: 4
 typography:
-  partition: deduction
+  partition: vocabulary
   bondDegree: 27
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accrual
-    - calculations
-    - entries
-    - items
-    - law
-    - standard
-    - tax
-    - taxexempt
-    - variance
-  matrix:
-    - accrual
-    - calculations
-    - entries
-    - items
-    - law
-    - standard
-    - tax
-    - taxexempt
-    - variance
-  backlinks:
-    - accrual
-    - calculations
-    - entries
-    - items
-    - law
-    - standard
-    - tax
-    - taxexempt
-    - variance
 signatures:
-  computationUuid: "1173692e-b7c4-88af-bdbd-91ef40003f55"
+  computationUuid: "263c23d6-97ed-839d-877c-c5d812826dea"
   stages:
     - stage: path
-      stageUuid: "8a9a8c60-4cd4-8146-abde-eeeefff0c13e"
+      stageUuid: "46d5638b-dbf0-800c-952e-bc9f23157d99"
     - stage: trinity
-      stageUuid: "60f14a70-dae0-8ec0-8e2a-9eda99492d2e"
+      stageUuid: "26c778df-47bf-8ddd-a7f8-3d7928c2f0fb"
     - stage: boundary
-      stageUuid: "c1517b61-58ab-8c74-aeb3-3e7a7b1aef3f"
+      stageUuid: "3c43eb2e-d1ff-8113-8a32-636f8b0b46d9"
     - stage: links
-      stageUuid: "97fbd29d-1e47-8de5-9982-bb01063214b1"
+      stageUuid: "319c24dc-eca6-8948-882c-bb5337db4a69"
     - stage: horo
-      stageUuid: "94e3ee87-0510-8782-b2ad-25582a8d4629"
+      stageUuid: "cd98606d-04e5-8cef-ad0f-37066bd06723"
     - stage: seal
-      stageUuid: "ebdd9396-92e4-8ab2-8617-d56e7beba300"
+      stageUuid: "f7a06005-6352-837e-b5d1-ecea7f51d01f"
     - stage: uuid
-      stageUuid: "13c6c069-f94e-8813-850c-aaf7aa386d1b"
+      stageUuid: "34d529d6-352e-804a-86cc-8020cdcfa7af"
 version: 2
 ---
 # deduction

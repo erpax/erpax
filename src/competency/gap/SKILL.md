@@ -2,39 +2,14 @@
 name: gap
 description: "Use when computing held-vs-required skill gaps — matches held competencies against job/task requirements and scores on the SFIA 1-7 scale. The pure required − held function (recruiting, performance review, agent task-routing)."
 atomPath: "competency/gap"
-coordinate: "competency/gap · 7/descent · 641c869a"
-contentUuid: "bffa53bc-7457-5af5-8d68-5300a53c4d1b"
-diamondUuid: "7f6b4f8c-a4e2-87ce-9469-be99e6533042"
-uuid: "641c869a-fe23-823c-a03c-f01d1c3c0ede"
+coordinate: "competency/gap · 7/descent · 4acc5a13"
+contentUuid: "23eaba6d-f160-5167-b810-f8e71e3cd6cb"
+diamondUuid: "796c67e2-fd9d-8800-8d14-38c2e4b92243"
+uuid: "4acc5a13-0c63-8405-a874-bd404009d2cd"
 horo: 7
-bonds:
-  in:
-    - accounting
-    - collections
-    - competency
-    - decompression
-    - duality
-    - fields
-    - law
-    - merge
-    - standard
-    - train
-    - training
-  out:
-    - accounting
-    - collections
-    - decompression
-    - duality
-    - fields
-    - law
-    - merge
-    - standard
-    - train
-    - training
 typography:
   partition: competency
-  bondDegree: 30
-  neighbors: []
+  bondDegree: 16
 standards:
   - "ISO 30405:2016 essential-vs-optional (mandatory gating)"
   - "ISO 30405:2016 essential-vs-optional (mandatory gating)`"
@@ -42,54 +17,23 @@ standards:
   - "SFIA 8 responsibility-levels-1-7 (the shared held/required scale)"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - collections
-    - duality
-    - fields
-    - law
-    - merge
-    - standard
-  matrix:
-    - accounting
-    - collections
-    - decompression
-    - duality
-    - fields
-    - law
-    - merge
-    - standard
-    - train
-    - training
-  backlinks:
-    - accounting
-    - collections
-    - decompression
-    - duality
-    - fields
-    - law
-    - merge
-    - standard
-    - train
-    - training
 signatures:
-  computationUuid: "9cf7a00e-3519-85b9-9889-3a053519bd97"
+  computationUuid: "3b89f496-f41b-87ba-83e4-3911ce2ef860"
   stages:
     - stage: path
       stageUuid: "12f44faa-9fa9-86c8-b8ef-e5b572270824"
     - stage: trinity
       stageUuid: "eeca39e4-9931-8e65-b1fa-c76f7f695ce3"
     - stage: boundary
-      stageUuid: "4689aec8-7094-89ff-ae8e-9eaaacedcbb5"
+      stageUuid: "6902e0f6-b94a-89b1-a16c-0b6f22e4ca01"
     - stage: links
-      stageUuid: "a8e1adfc-6846-8cbf-bb1e-c1c4cc729fdd"
+      stageUuid: "640d878e-94be-82d6-b5b6-6ba14e70bd8f"
     - stage: horo
-      stageUuid: "8dd0bd07-5f26-84ec-87db-aee54d1aa3a1"
+      stageUuid: "5caaf581-0a4d-8925-8fd9-b6b9d0bfd581"
     - stage: seal
       stageUuid: "bc69c28b-e57f-804a-bb90-fd2577c02d6a"
     - stage: uuid
-      stageUuid: "b97a6bde-ec68-8015-a633-b58b1021644f"
+      stageUuid: "d9c2fcd9-179c-80f1-b97a-d90cec69fc2a"
 version: 2
 ---
 # competency-gap — required − held, on the shared scale

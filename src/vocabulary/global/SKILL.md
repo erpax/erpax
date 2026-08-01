@@ -1,73 +1,35 @@
 ---
 name: global
 description: "Use when reasoning about global as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/global
-coordinate: global · 7/descent · 2195aea9
-contentUuid: "8c1b4c52-d67c-57dc-ba70-bae5444f2a66"
-diamondUuid: "1d55b8cf-e227-8c9f-9b6d-5ae78d1a5f0d"
-uuid: "2195aea9-f8f5-86cb-8028-3321f811febc"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - location
-    - merge
-    - number
-    - sti
-  out:
-    - collapse
-    - law
-    - location
-    - merge
-    - number
-    - sti
+atomPath: "vocabulary/global"
+coordinate: "vocabulary/global · 8/crest · 40cd9e09"
+contentUuid: "8410cdd0-3786-5417-97ec-ec274e1324ed"
+diamondUuid: "3c2aa77a-340f-8067-99c0-738750a50529"
+uuid: "40cd9e09-6376-8182-872c-e86dff452f0c"
+horo: 8
 typography:
-  partition: global
-  bondDegree: 19
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 21
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - location
-    - merge
-    - number
-    - sti
-  matrix:
-    - collapse
-    - law
-    - location
-    - merge
-    - number
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - location
-    - merge
-    - number
-    - sti
 signatures:
-  computationUuid: "68839a54-31fc-8be3-8505-6d369126e7d5"
+  computationUuid: "7e3e2856-abfc-878c-9fc4-2cb675e461c3"
   stages:
     - stage: path
-      stageUuid: "daa3c87b-b2d9-8cb9-8510-abdde9ea9df3"
+      stageUuid: "40466e48-2198-8450-81df-5787d89010cb"
     - stage: trinity
-      stageUuid: "c4bf191f-a04c-8d9c-8ed0-548917e6b6ee"
+      stageUuid: "6922520a-ce0c-829d-a80d-cf912b889524"
     - stage: boundary
-      stageUuid: "9b78603b-6baa-8fac-ba8f-ac862de143b9"
+      stageUuid: "bd533ab1-437b-83aa-b92f-ef2b6260b843"
     - stage: links
-      stageUuid: "d51affb4-8c80-85fc-854e-fa41352e61bf"
+      stageUuid: "207d43d3-0efd-8eb3-a862-1b951db9f589"
     - stage: horo
-      stageUuid: "e3d93532-8011-8a39-a762-e90949b74c92"
+      stageUuid: "3aebbb46-3d11-837a-9b6d-3955176a8732"
     - stage: seal
-      stageUuid: "404198af-26eb-828d-9f74-bf5ae4b40d28"
+      stageUuid: "8e03618a-396b-8de3-b47b-71b87a88764e"
     - stage: uuid
-      stageUuid: "7430fdde-2675-81a3-ba68-67357cedf1af"
+      stageUuid: "361c669b-a207-896a-a928-e67a5ce156d9"
 version: 2
 ---
 # global

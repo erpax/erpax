@@ -1,68 +1,35 @@
 ---
 name: months
 description: "Use when reasoning about months as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/months
-coordinate: months · 4/weave · 531acb02
-contentUuid: "26d1a890-678c-53bb-bec2-439b2b68c379"
-diamondUuid: "e0199e6e-6202-8011-8dbf-c8e12a9bd414"
-uuid: "531acb02-df9a-89ce-ad1f-429dfb98e94d"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - experience
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - experience
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/months"
+coordinate: "vocabulary/months · 5/round · 7dc579aa"
+contentUuid: "d703a4f3-67b0-586f-89cb-46dbd5ae9b9c"
+diamondUuid: "2d7684fb-4583-8727-8854-6fbb9452a484"
+uuid: "7dc579aa-21ce-8f61-9384-89d37a2e1862"
+horo: 5
 typography:
-  partition: months
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - experience
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - experience
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - experience
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "cae12c49-ee12-8bf0-aa22-125aea50486f"
+  computationUuid: "db2839ae-2fd3-8026-90cb-2acb9880690f"
   stages:
     - stage: path
-      stageUuid: "74f3ff6d-e7bd-8e2f-a4d6-bfcf9512ef7b"
+      stageUuid: "39fad8c1-7b18-8fd4-b9bd-5e9b2d5b7201"
     - stage: trinity
-      stageUuid: "2e9ba0b4-c308-8c58-8f1a-272e5d93dc66"
+      stageUuid: "e20b76a2-2849-84a5-8a56-d8c4193b9bc0"
     - stage: boundary
-      stageUuid: "7d2fab28-c02c-8acd-b130-978d1cb03864"
+      stageUuid: "8ce15811-48c0-8072-a356-5913758c7c37"
     - stage: links
-      stageUuid: "4e538dd7-b025-829c-afaa-57392d15376c"
+      stageUuid: "35cf62dc-7cac-8664-a0df-769578e227e8"
     - stage: horo
-      stageUuid: "6570a207-51a9-8e00-9904-b59c4cd8a563"
+      stageUuid: "00e2bcd2-8177-8e65-ae39-31e15a626da7"
     - stage: seal
-      stageUuid: "7851c3e8-9455-813c-a331-a9766c8a87c4"
+      stageUuid: "c66215f7-2e7a-879a-b4c2-84bd52645640"
     - stage: uuid
-      stageUuid: "2963e845-7492-87d5-950e-712ad047861b"
+      stageUuid: "ecb26f18-1cfe-8f30-bffb-72e5493ed396"
 version: 2
 ---
 # months

@@ -1,117 +1,35 @@
 ---
 name: channel
 description: "Use when reasoning about channel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/channel
-coordinate: channel · 7/descent · 2b34ef61
-contentUuid: "2bbe8d27-c432-5b44-b4f1-e06acf6eb178"
-diamondUuid: "679d8a4e-8fa2-8e4d-b222-e996e17c4cc8"
-uuid: "2b34ef61-1809-8a3b-bc6c-588dfa9b94b9"
+atomPath: "vocabulary/channel"
+coordinate: "vocabulary/channel · 7/descent · 6c392a36"
+contentUuid: "58b6867a-7a67-56dd-8150-93a99b834b6d"
+diamondUuid: "c2ce1317-af26-8eec-8154-cced6d20e18d"
+uuid: "6c392a36-acee-8a36-8ae2-4ebc8f20e0e6"
 horo: 7
-bonds:
-  in:
-    - am
-    - available
-    - broadcast
-    - collapse
-    - communication
-    - fm
-    - has
-    - id
-    - law
-    - merge
-    - radio
-    - service
-    - sti
-    - sub
-    - television
-  out:
-    - am
-    - available
-    - broadcast
-    - collapse
-    - communication
-    - fm
-    - has
-    - id
-    - law
-    - merge
-    - radio
-    - service
-    - sti
-    - sub
-    - television
 typography:
-  partition: channel
+  partition: vocabulary
   bondDegree: 54
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - am
-    - available
-    - broadcast
-    - collapse
-    - fm
-    - has
-    - id
-    - law
-    - merge
-    - radio
-    - service
-    - sti
-    - sub
-    - television
-  matrix:
-    - am
-    - available
-    - broadcast
-    - collapse
-    - communication
-    - fm
-    - has
-    - id
-    - law
-    - merge
-    - radio
-    - service
-    - sti
-    - sub
-    - television
-  backlinks:
-    - am
-    - available
-    - broadcast
-    - collapse
-    - communication
-    - fm
-    - has
-    - id
-    - law
-    - merge
-    - radio
-    - service
-    - sti
-    - sub
-    - television
 signatures:
-  computationUuid: "db83bf8c-fe76-8fbb-b03b-8d7b516ee6ed"
+  computationUuid: "de8c6252-be90-864f-87cf-73f793c4016c"
   stages:
     - stage: path
-      stageUuid: "d7452ca6-7239-8a9b-811b-1ead14615d8e"
+      stageUuid: "0ba63c5e-dc40-8db4-a53a-2982172ec59e"
     - stage: trinity
-      stageUuid: "d6ac05c4-25f6-85de-9ab0-d9c6b8c2c375"
+      stageUuid: "1d6e5ba3-3204-8bbe-970a-01e6141eb87a"
     - stage: boundary
-      stageUuid: "e7ffae75-755f-81da-8607-b2c9261dea7f"
+      stageUuid: "5c228ef1-bea8-8464-9b0e-815abee5a43d"
     - stage: links
-      stageUuid: "36d81f4a-286f-8184-bd86-89145a778322"
+      stageUuid: "69710b7c-f8f1-8213-a7bb-d4967e7ad22f"
     - stage: horo
-      stageUuid: "9b0d087a-adbd-892f-9ac6-077ab7823d7b"
+      stageUuid: "45447e8c-a4c0-8aa9-9251-bca74c53c548"
     - stage: seal
-      stageUuid: "13f61097-4934-8319-8472-a245a99eb9a8"
+      stageUuid: "7534fe0d-ca7c-8c31-aa4e-751e14efe32e"
     - stage: uuid
-      stageUuid: "42c36f0f-4668-8713-a22c-8b5908934526"
+      stageUuid: "4a31fe68-bd86-8801-a0b0-a17efc2e3803"
 version: 2
 ---
 # channel

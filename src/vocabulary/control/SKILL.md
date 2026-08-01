@@ -1,73 +1,35 @@
 ---
 name: control
 description: "Use when reasoning about control as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/control
-coordinate: control · 1/base · cedf283b
-contentUuid: "1bae21a7-5461-502c-b10e-b5edc7ec3043"
-diamondUuid: "7419afe9-465b-8034-a6d4-d206a5a678a0"
-uuid: "cedf283b-b2a5-89c8-aae2-1200a79874c1"
-horo: 1
-bonds:
-  in:
-    - accessibility
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - accessibility
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/control"
+coordinate: "vocabulary/control · 4/weave · a202bdd1"
+contentUuid: "daec9975-f361-5bd7-bbc1-372409ea2e05"
+diamondUuid: "16aab316-6740-84c5-a9f9-bdd6145f937d"
+uuid: "a202bdd1-b7db-884f-a0a9-0afa4a598a9f"
+horo: 4
 typography:
-  partition: control
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - accessibility
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - accessibility
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - accessibility
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "2d98b287-f92d-8653-ab7c-ca4dee09ea44"
+  computationUuid: "4e3fda32-46d9-8d7a-99ff-9fed8c75ccdd"
   stages:
     - stage: path
-      stageUuid: "bc015010-d146-8127-9513-9ce92faf33ad"
+      stageUuid: "f57eb7c5-4962-8975-98bf-5fe28a6da9f4"
     - stage: trinity
-      stageUuid: "730721c1-9476-819c-a665-c8cd54cf0166"
+      stageUuid: "18b5d03e-a0dc-851e-8264-c182e8b73b19"
     - stage: boundary
-      stageUuid: "284c6b7a-089b-8fe6-96f3-29217c7d9c98"
+      stageUuid: "13d453fb-0725-8033-8261-a373ba97b6c0"
     - stage: links
-      stageUuid: "7205cd18-402e-8f43-acc6-47dfe8d0af69"
+      stageUuid: "0739fae1-fdc6-8f70-b1a0-08415ecf3af5"
     - stage: horo
-      stageUuid: "fd5b1ea1-180b-8dff-9c35-932c8020af74"
+      stageUuid: "23683265-5342-866e-8de0-9723fd81ad1d"
     - stage: seal
-      stageUuid: "9f85ff3a-b994-886f-ab93-6fdaf33df5f7"
+      stageUuid: "c5c41bb1-371d-8a15-a39d-ad340bc9bf20"
     - stage: uuid
-      stageUuid: "cc494f01-d1ef-8b48-8580-eb773d6d577a"
+      stageUuid: "cf162140-e4d0-8388-ba13-094040b8b3f2"
 version: 2
 ---
 # control

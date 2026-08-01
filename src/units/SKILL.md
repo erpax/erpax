@@ -2,62 +2,19 @@
 name: units
 description: "Use when reasoning about units as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: units
-coordinate: units · 7/descent · d16b7a07
-contentUuid: "9e2e31d2-e522-53a8-ab87-2f895ecc8ff8"
-diamondUuid: "6abd0b64-c520-8d9b-bab3-4f247d6130fe"
-uuid: "d16b7a07-ef57-883f-a532-0a3486cc34b3"
-horo: 7
-bonds:
-  in:
-    - accommodation
-    - available
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
-  out:
-    - accommodation
-    - available
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
+coordinate: "units · 8/crest · 47804a92"
+contentUuid: "42efe8e5-ad43-5351-b673-3d936878d4ca"
+diamondUuid: "70f78b9a-5bbd-8fdf-96e4-6c1c0f4631d6"
+uuid: "47804a92-2f77-875f-8a1b-edb0c1299989"
+horo: 8
 typography:
   partition: units
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - accommodation
-    - available
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
-  matrix:
-    - accommodation
-    - available
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
-  backlinks:
-    - accommodation
-    - available
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
 signatures:
-  computationUuid: "0778023b-dc78-83a2-93aa-889be9ed350d"
+  computationUuid: "d6fb54b9-91b0-89d0-89d3-c68af1a39718"
   stages:
     - stage: path
       stageUuid: "3319df04-d673-8f0f-93b1-4a818b7dcf72"
@@ -68,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4db72fc9-86b2-8bcc-ab1c-9b28caf836e7"
     - stage: horo
-      stageUuid: "c5e156c9-180d-8de2-b467-982331aadffc"
+      stageUuid: "19e5c445-7251-8753-a8e1-717d7e7f18b8"
     - stage: seal
-      stageUuid: "cf982e08-dabd-8eda-aa0f-7c5858449492"
+      stageUuid: "5d95df7d-39f8-81cb-a99e-0d5fd6c5467d"
     - stage: uuid
-      stageUuid: "3b49ecb2-b403-8b1d-b5f0-6df5a07656a7"
+      stageUuid: "ea2a3807-008c-8001-94af-e31effd9a030"
 version: 2
 ---
 # units

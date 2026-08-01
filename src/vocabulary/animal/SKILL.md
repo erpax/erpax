@@ -1,120 +1,34 @@
 ---
 name: animal
 description: "Use when the individual living beast is the node — one identified animal carrying its class (cow/heifer/steer/calf), sex, purpose (dairy/meat/breeding), lifecycle stage, ear-tag identity, and biological-asset value. The member of a herd; the row IAS-41 measures and traceability tags."
-atomPath: vocabulary/animal
-coordinate: animal · 1/base · 53fdce4c
-contentUuid: "55adc80d-47b4-515a-b385-e65a68664ce5"
-diamondUuid: "4c567b2a-5d8f-84f2-999a-bcb001904677"
-uuid: "53fdce4c-7c4c-828e-a367-7bac08984bd0"
-horo: 1
-bonds:
-  in:
-    - assets
-    - breed
-    - fodder
-    - harvest
-    - health
-    - herd
-    - id
-    - identity
-    - lactation
-    - law
-    - lineage
-    - livestock
-    - maturity
-    - mortality
-    - shelter
-    - withdrawal
-  out:
-    - assets
-    - breed
-    - fodder
-    - harvest
-    - health
-    - herd
-    - id
-    - identity
-    - lactation
-    - law
-    - lineage
-    - livestock
-    - maturity
-    - mortality
-    - shelter
-    - withdrawal
+atomPath: "vocabulary/animal"
+coordinate: "vocabulary/animal · 2/share · fa54a1da"
+contentUuid: "e9eac09c-d2d7-524e-9817-bb0ac96622cb"
+diamondUuid: "f3b8f274-aa24-8027-9d65-e8acf9f2f8d9"
+uuid: "fa54a1da-7719-826d-8610-426ee26abb5e"
+horo: 2
 typography:
-  partition: animal
-  bondDegree: 54
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 53
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - assets
-    - breed
-    - harvest
-    - health
-    - herd
-    - id
-    - identity
-    - lactation
-    - law
-    - lineage
-    - livestock
-    - maturity
-    - mortality
-    - withdrawal
-  matrix:
-    - assets
-    - breed
-    - fodder
-    - harvest
-    - health
-    - herd
-    - id
-    - identity
-    - lactation
-    - law
-    - lineage
-    - livestock
-    - maturity
-    - mortality
-    - shelter
-    - withdrawal
-  backlinks:
-    - assets
-    - breed
-    - fodder
-    - harvest
-    - health
-    - herd
-    - id
-    - identity
-    - lactation
-    - law
-    - lineage
-    - livestock
-    - maturity
-    - mortality
-    - shelter
-    - withdrawal
 signatures:
-  computationUuid: "c3c5a989-6294-8399-b7a5-c68f48029d28"
+  computationUuid: "ea56b1a9-45c5-8a7f-8022-f2bc640f0951"
   stages:
     - stage: path
-      stageUuid: "42a292bc-9713-8612-af7d-8969b90b238d"
+      stageUuid: "04682d3b-251f-87e6-ae7e-d957dc4660a9"
     - stage: trinity
-      stageUuid: "dee3bc87-d791-8884-b160-06135fe611f6"
+      stageUuid: "20033922-c192-80c2-b220-6a126c92096d"
     - stage: boundary
-      stageUuid: "0be5401f-e18d-80b5-8776-dde3546813ef"
+      stageUuid: "bd90a491-40e9-8154-8498-aa33b30535d3"
     - stage: links
-      stageUuid: "f6d26117-412c-8ce3-9dbb-91c44e019121"
+      stageUuid: "83deb471-7ccc-87d7-9343-a27685cc9933"
     - stage: horo
-      stageUuid: "c38dd6b6-b0c6-8445-9e72-d6fc5268bea6"
+      stageUuid: "0d955170-ce92-8558-afbe-6ca638d789f6"
     - stage: seal
-      stageUuid: "1e4000fc-5fa5-8cf6-8189-9ee56ac79baa"
+      stageUuid: "d2ec0a8f-70a0-891a-91db-ab0be7c81417"
     - stage: uuid
-      stageUuid: "4ccd962e-7cac-86c7-aacb-bc6076bc3f4a"
+      stageUuid: "eae9b563-79eb-859c-a02b-32c0d89c51b3"
 version: 2
 ---
 # animal — the individual living beast; the member of a herd

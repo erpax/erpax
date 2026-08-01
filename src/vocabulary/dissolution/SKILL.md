@@ -1,84 +1,35 @@
 ---
 name: dissolution
 description: "Use when reasoning about dissolution as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/dissolution
-coordinate: dissolution · 2/share · 88b97d17
-contentUuid: "917e15a6-8978-5139-9f0e-50dc267902d9"
-diamondUuid: "7b6a0f74-8aeb-86ca-ad54-620e0d9c7a7a"
-uuid: "88b97d17-d562-8483-b720-f3ee0f542348"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - date
-    - law
-    - merge
-    - migrate
-    - quaternary
-    - sti
-    - test
-    - void
-  out:
-    - collapse
-    - date
-    - law
-    - merge
-    - migrate
-    - quaternary
-    - sti
-    - test
-    - void
+atomPath: "vocabulary/dissolution"
+coordinate: "vocabulary/dissolution · 5/round · a1b640af"
+contentUuid: "b46d5de9-750e-52c2-8cf2-08f7e15875a6"
+diamondUuid: "1457c33b-cef3-822e-bf23-9975ef146da9"
+uuid: "a1b640af-9e50-8940-929b-2db54df71805"
+horo: 5
 typography:
-  partition: dissolution
+  partition: vocabulary
   bondDegree: 27
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - date
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - date
-    - law
-    - merge
-    - migrate
-    - quaternary
-    - sti
-    - test
-    - void
-  backlinks:
-    - collapse
-    - date
-    - law
-    - merge
-    - migrate
-    - quaternary
-    - sti
-    - test
-    - void
 signatures:
-  computationUuid: "d0478144-ddbe-84de-9cdd-605fc40b6716"
+  computationUuid: "9052cb54-c691-8e4a-bbe3-99a2ad2a2b0a"
   stages:
     - stage: path
-      stageUuid: "935b79ed-d17b-88cf-b0b5-c776e94a79ca"
+      stageUuid: "96491ee1-44e5-864a-bd93-bb920193eb84"
     - stage: trinity
-      stageUuid: "b755553b-260e-812f-9029-7b619fd737cb"
+      stageUuid: "14eee434-6067-8068-bfac-f15c1c41e9d5"
     - stage: boundary
-      stageUuid: "4952c8a8-aa0c-8253-ba26-429a2cd227b6"
+      stageUuid: "e29aaf27-4e51-8d90-a9f2-d6e80d86db12"
     - stage: links
-      stageUuid: "a94dedf1-f064-8d6b-95d7-5b551eabd8ef"
+      stageUuid: "b7881f51-16e7-8c80-9878-7dec1773fbf2"
     - stage: horo
-      stageUuid: "db470181-d3f4-8aaf-ade0-1f1fab05ac09"
+      stageUuid: "e9d5f9d7-bace-8c01-892c-962fbd6204af"
     - stage: seal
-      stageUuid: "a80249a4-811d-8312-a9e9-0610dcff65c2"
+      stageUuid: "b811ab19-f76d-8edf-bb44-a7ff5ac5198f"
     - stage: uuid
-      stageUuid: "22436a59-c33d-8cf2-97ac-ffa1ebcf1f7e"
+      stageUuid: "9b5509af-89e8-8939-9458-8de498d88154"
 version: 2
 ---
 # dissolution

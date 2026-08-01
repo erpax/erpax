@@ -1,157 +1,34 @@
 ---
 name: worker
 description: "Use when modelling one worker — the singular model of the workers collection (the plural store); a person who performs labor for the organization. AND when naming the autonomous deployment face of a [[diamond]] — hook bodies, CLIs, guardians, agents, MCP handlers that run without a human in the loop."
-atomPath: vocabulary/worker
-coordinate: worker · 8/crest · 3e8ed105
-contentUuid: "e7fb781b-a52a-5fb4-b008-4825d91a96b6"
-diamondUuid: "28d9122c-380c-867a-8918-2266e15522d8"
-uuid: "3e8ed105-9f77-8771-b1e4-a0c8bc07b653"
+atomPath: "vocabulary/worker"
+coordinate: "vocabulary/worker · 8/crest · 44cc6357"
+contentUuid: "12e586b3-a0e3-5a63-b53b-725c0766e07d"
+diamondUuid: "8e3306df-2da6-8d07-bfbf-6071ae775b65"
+uuid: "44cc6357-b244-8962-ba80-24cc4ba4cab5"
 horo: 8
-bonds:
-  in:
-    - agent
-    - balance
-    - bindings
-    - cloudflare
-    - confirm
-    - deploy
-    - diamond
-    - employee
-    - guardian
-    - hooks
-    - law
-    - plugin
-    - pwa
-    - quantum
-    - readme
-    - serverless
-    - typography
-    - workers
-  out:
-    - agent
-    - balance
-    - bindings
-    - cloudflare
-    - confirm
-    - deploy
-    - diamond
-    - employee
-    - guardian
-    - hooks
-    - law
-    - plugin
-    - pwa
-    - quantum
-    - readme
-    - serverless
-    - typography
-    - workers
 typography:
-  partition: worker
+  partition: vocabulary
   bondDegree: 63
-  neighbors:
-    - agent
-    - cloudflare
-    - diamond
 standards: []
-bindings:
-  - ai/AI
-  - analytics_engine_datasets/ANALYTICS_AI
-  - analytics_engine_datasets/ANALYTICS_API
-  - analytics_engine_datasets/ANALYTICS_GL
-  - analytics_engine_datasets/ANALYTICS_JOBS
-  - browser/BROWSER
-  - durable_objects/AUDIT_CHAIN_DO
-  - durable_objects/ERPAX_DO
-  - durable_objects/JOB_LOCK
-  - durable_objects/RATE_LIMITER
-  - durable_objects/TENANT_QUOTA
-  - images/IMAGES
-  - kv_namespaces/AI_CACHE
-  - queues/QUEUE_AI_BATCH
-  - queues/QUEUE_DUNNING_OUT
-  - queues/QUEUE_EINVOICE_OUT
-  - queues/QUEUE_EMAIL_OUT
-  - queues/QUEUE_PERIOD_CLOSE
-  - ratelimit/RATE_LIMITER_AI
-  - ratelimit/RATE_LIMITER_API
-  - send_email/EMAIL_SENDER
-  - services/WORKER_SELF_REFERENCE
-  - triggers/CRON
-  - vectorize/VECTORIZE_DOCS
-neighbors:
-  wikilink:
-    - agent
-    - balance
-    - cloudflare
-    - confirm
-    - diamond
-    - employee
-    - guardian
-    - hooks
-    - law
-    - plugin
-    - pwa
-    - quantum
-    - readme
-    - serverless
-    - typography
-    - workers
-  matrix:
-    - agent
-    - balance
-    - bindings
-    - cloudflare
-    - confirm
-    - deploy
-    - diamond
-    - employee
-    - guardian
-    - hooks
-    - law
-    - plugin
-    - pwa
-    - quantum
-    - readme
-    - serverless
-    - typography
-    - workers
-  backlinks:
-    - agent
-    - balance
-    - bindings
-    - cloudflare
-    - confirm
-    - deploy
-    - diamond
-    - employee
-    - guardian
-    - hooks
-    - law
-    - plugin
-    - pwa
-    - quantum
-    - readme
-    - serverless
-    - typography
-    - workers
+bindings: []
 signatures:
-  computationUuid: "b2343c2c-c365-8afb-bf00-c7c8d54b7ba5"
+  computationUuid: "28ef4dc3-4719-8e6f-8eda-84c436bebe4c"
   stages:
     - stage: path
-      stageUuid: "af000b27-4a0d-8dfa-b020-8759f185204b"
+      stageUuid: "43f7c30b-ad28-8490-a716-1febe3e27477"
     - stage: trinity
-      stageUuid: "a72768e1-50b3-818c-8e22-c3dd5cb530cd"
+      stageUuid: "2fc26074-4498-89be-b3da-f7c9f424ebe7"
     - stage: boundary
-      stageUuid: "c8215002-3bad-8829-a505-6e8ae7f9a192"
+      stageUuid: "1c381fd9-0654-83e8-86db-ce57b78170ac"
     - stage: links
-      stageUuid: "a2aa273a-74af-81c5-a282-6a9a6e46d103"
+      stageUuid: "fd467e80-7568-89f9-a7b5-a2bae5d357ed"
     - stage: horo
-      stageUuid: "62604a6e-2ffd-8f42-9f22-242aecbd290a"
+      stageUuid: "33ac28a4-0db3-8777-8a1a-410e23d06a72"
     - stage: seal
-      stageUuid: "b000a144-8c0c-8aa5-a042-299aac6d9e61"
+      stageUuid: "80e3e7a0-25e7-8337-bf7e-74e5c8a23789"
     - stage: uuid
-      stageUuid: "76495b14-4503-80da-ac05-67790c9e2258"
+      stageUuid: "c96a8688-51ae-80b5-b31b-deb5615c1043"
 version: 2
 ---
 # worker — the model of one [[workers]] row

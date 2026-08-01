@@ -1,171 +1,34 @@
 ---
 name: capacity
 description: "Use when planning, tracking, or optimizing resource capacity — workforce availability, machine utilization, warehouse/facility space, or bottleneck detection per work-center/shift/period. The binding constraint in operations."
-atomPath: vocabulary/capacity
-coordinate: capacity · 8/crest · 243947bb
-contentUuid: "594b346c-9d1a-5c31-b356-45c1be03da81"
-diamondUuid: "1f998b7b-950c-8c04-b1fe-4624e06f9741"
-uuid: "243947bb-d86c-8717-a619-a0c3e5e956ce"
-horo: 8
-bonds:
-  in:
-    - agriculture
-    - aquaculture
-    - attendee
-    - biomass
-    - bottleneck
-    - centers
-    - compost
-    - covercrop
-    - fertility
-    - fuel
-    - grazing
-    - herd
-    - irrigation
-    - maximum
-    - measure
-    - moisture
-    - pasture
-    - physical
-    - propagation
-    - rate
-    - remaining
-    - rotation
-    - season
-    - seating
-    - shifts
-    - soil
-    - sustainability
-    - tunnel
-    - vehicle
-    - virtual
-    - yield
-  out:
-    - agriculture
-    - aquaculture
-    - attendee
-    - biomass
-    - bottleneck
-    - centers
-    - compost
-    - covercrop
-    - fertility
-    - fuel
-    - grazing
-    - herd
-    - irrigation
-    - maximum
-    - measure
-    - moisture
-    - pasture
-    - physical
-    - propagation
-    - rate
-    - remaining
-    - rotation
-    - season
-    - seating
-    - shifts
-    - soil
-    - sustainability
-    - tunnel
-    - vehicle
-    - virtual
-    - yield
+atomPath: "vocabulary/capacity"
+coordinate: "vocabulary/capacity · 1/base · 4d767a02"
+contentUuid: "62d5036a-ecca-537b-aa1d-967c8a707ec5"
+diamondUuid: "34589972-dbed-89f9-8823-81714a0bf725"
+uuid: "4d767a02-f7ad-82d3-b483-af33c7198a0d"
+horo: 1
 typography:
-  partition: capacity
-  bondDegree: 94
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 98
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - bottleneck
-    - centers
-    - measure
-    - rate
-    - shifts
-  matrix:
-    - agriculture
-    - aquaculture
-    - attendee
-    - biomass
-    - bottleneck
-    - centers
-    - compost
-    - covercrop
-    - fertility
-    - fuel
-    - grazing
-    - herd
-    - irrigation
-    - maximum
-    - measure
-    - moisture
-    - pasture
-    - physical
-    - propagation
-    - rate
-    - remaining
-    - rotation
-    - season
-    - seating
-    - shifts
-    - soil
-    - sustainability
-    - tunnel
-    - vehicle
-    - virtual
-    - yield
-  backlinks:
-    - agriculture
-    - aquaculture
-    - attendee
-    - biomass
-    - bottleneck
-    - centers
-    - compost
-    - covercrop
-    - fertility
-    - fuel
-    - grazing
-    - herd
-    - irrigation
-    - maximum
-    - measure
-    - moisture
-    - pasture
-    - physical
-    - propagation
-    - rate
-    - remaining
-    - rotation
-    - season
-    - seating
-    - shifts
-    - soil
-    - sustainability
-    - tunnel
-    - vehicle
-    - virtual
-    - yield
 signatures:
-  computationUuid: "e4b6f6ed-e9ca-8351-b3cd-776c0ba57df3"
+  computationUuid: "fff518cb-0c7e-8ca7-8bb3-a3d45dab5103"
   stages:
     - stage: path
-      stageUuid: "47c5639b-c9d3-800a-a61b-212ce5c3879a"
+      stageUuid: "b7c5c918-f2ff-8d81-aee9-4cf342da9e68"
     - stage: trinity
-      stageUuid: "3f5e460e-1cdb-880d-b39d-128c7d5cda03"
+      stageUuid: "55d20593-deae-8d15-bca7-13621e8c4ded"
     - stage: boundary
-      stageUuid: "fda3dcc8-9aee-8a4c-a585-0995c00b7389"
+      stageUuid: "cc4f8d7c-56c9-8be7-abde-bf98df7caac3"
     - stage: links
-      stageUuid: "aab23a89-6f2d-82cc-9656-2cbfef9ea118"
+      stageUuid: "2e32e34a-699f-8977-a0ef-17ea86b4eacf"
     - stage: horo
-      stageUuid: "d02e2c8a-a439-84b4-a8a3-80b046d14f09"
+      stageUuid: "e3c8c3ba-1d67-8b6e-86c1-7566d897e10f"
     - stage: seal
-      stageUuid: "5d025985-953c-8f2c-bdc3-2a76ee181d15"
+      stageUuid: "301b194c-90d1-8a3d-b1bb-152f67d963cc"
     - stage: uuid
-      stageUuid: "1ab7ae7c-3e81-8ee0-93c9-04455cfb0936"
+      stageUuid: "92339b8d-1cc6-839a-98d8-229e7f1ea98c"
 version: 2
 ---
 # capacity

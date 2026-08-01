@@ -1,82 +1,35 @@
 ---
 name: allowed
 description: "Use when reasoning about allowed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/allowed
-coordinate: allowed · 1/base · 47e5ccc0
-contentUuid: "c05572c2-e16b-52b9-a2f4-02ea2a4ac402"
-diamondUuid: "7b2ae958-b64e-8040-9d62-d6f992e55998"
-uuid: "47e5ccc0-e9fd-8e6a-aeaa-3f201a8c8a65"
-horo: 1
-bonds:
-  in:
-    - access
-    - collapse
-    - law
-    - merge
-    - pets
-    - regions
-    - smoking
-    - sti
-  out:
-    - access
-    - collapse
-    - law
-    - merge
-    - pets
-    - regions
-    - smoking
-    - sti
+atomPath: "vocabulary/allowed"
+coordinate: "vocabulary/allowed · 8/crest · dcf02652"
+contentUuid: "a2b104d7-8a46-5e9f-b6fa-6bec1ea67e01"
+diamondUuid: "9367f45b-ae8a-849f-b87a-8d13f612cc30"
+uuid: "dcf02652-ae9f-8ad8-b9db-f71d6935c973"
+horo: 8
 typography:
-  partition: allowed
+  partition: vocabulary
   bondDegree: 27
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - pets
-    - regions
-    - smoking
-    - sti
-  matrix:
-    - access
-    - collapse
-    - law
-    - merge
-    - pets
-    - regions
-    - smoking
-    - sti
-  backlinks:
-    - access
-    - collapse
-    - law
-    - merge
-    - pets
-    - regions
-    - smoking
-    - sti
 signatures:
-  computationUuid: "3c53850f-8f0e-8640-bea8-c7a513eee497"
+  computationUuid: "7d5f9fe4-45f8-8f95-a268-f2fa270d5792"
   stages:
     - stage: path
-      stageUuid: "c8bb0f28-0682-8684-a3f2-c98a7caef098"
+      stageUuid: "d0774203-0afa-8d32-8a59-c2222751e185"
     - stage: trinity
-      stageUuid: "3428a684-3040-8f4b-bfc1-aece76db4137"
+      stageUuid: "7b209953-a3e6-8683-b1bb-e9ed7e2780b9"
     - stage: boundary
-      stageUuid: "9d571ee4-044b-89d8-89c6-72b18ab9ced4"
+      stageUuid: "709c9a66-c6ac-8d44-b6c9-ed01f0bf5102"
     - stage: links
-      stageUuid: "b3d4d7f3-a052-8ed6-bb96-60899b19c6d6"
+      stageUuid: "2e3ff5e9-7814-84eb-a488-c35b5a9828c3"
     - stage: horo
-      stageUuid: "a542db6d-d937-81a3-824d-7c0ba80e3f3a"
+      stageUuid: "283d7a27-bdb8-83cb-b641-644d7eafb6c9"
     - stage: seal
-      stageUuid: "4bab3930-0c9a-875d-a6ca-f98b1927e689"
+      stageUuid: "aaae0e1d-0dc0-8c1e-b64c-611915a8e14f"
     - stage: uuid
-      stageUuid: "3e340c6a-61cc-86a1-9916-27a64c33f1bd"
+      stageUuid: "de481e8b-4fff-85f0-aedc-f439054a2c6e"
 version: 2
 ---
 # allowed

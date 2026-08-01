@@ -1,73 +1,35 @@
 ---
 name: county
 description: "Use when reasoning about county as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/county
-coordinate: county · 7/descent · 6678bd03
-contentUuid: "666d8852-8190-5a56-837d-75d6179f9b96"
-diamondUuid: "5aac887b-670e-840d-8ced-d2a6660e89b2"
-uuid: "6678bd03-09cb-886b-b0c2-f6e5bb04ecad"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - cvd
-    - facility
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - cvd
-    - facility
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/county"
+coordinate: "vocabulary/county · 4/weave · 5b692826"
+contentUuid: "83971c63-cd2e-5f77-a3ea-0962b4b06ad0"
+diamondUuid: "6cca43b9-3c1d-8db4-b8a5-28bf82da9b5c"
+uuid: "5b692826-4fc1-8936-817f-2447cc4cd301"
+horo: 4
 typography:
-  partition: county
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - cvd
-    - facility
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - cvd
-    - facility
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - cvd
-    - facility
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "092e0aee-685c-82af-9ff4-6a0bf0d98d0f"
+  computationUuid: "7dae4026-fc26-89fb-a557-51b7b61bcc89"
   stages:
     - stage: path
-      stageUuid: "d961e3a3-9243-8bb6-a4f8-b2365df96282"
+      stageUuid: "5ff8ff08-c825-8acf-861a-a07d88d52b74"
     - stage: trinity
-      stageUuid: "a0505480-a017-81ac-be93-f94b0f7977d8"
+      stageUuid: "ac3e17dc-8843-8b6b-8700-fa00ffb8d4d8"
     - stage: boundary
-      stageUuid: "e6e1170e-b4e7-8df9-96bd-65675be6afa7"
+      stageUuid: "196ec725-0c3b-8417-b533-6d905724179a"
     - stage: links
-      stageUuid: "d756de8b-4b1c-8471-8e77-c4b7330fbab4"
+      stageUuid: "a23c30fd-0586-855a-949b-61e1348a96a7"
     - stage: horo
-      stageUuid: "56432e30-3fdb-85f6-b228-93360ed99037"
+      stageUuid: "9e8b77f4-07d1-8e34-8aae-4a728afa3ef7"
     - stage: seal
-      stageUuid: "df301f43-6e16-899f-b22f-10558244a454"
+      stageUuid: "88433f50-0f11-8187-a90e-932c539915ee"
     - stage: uuid
-      stageUuid: "20f2dbbf-2741-8c63-9005-71925e9da267"
+      stageUuid: "f0a7284c-a282-8243-8c74-6eba0086bb7b"
 version: 2
 ---
 # county

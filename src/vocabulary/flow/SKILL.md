@@ -1,232 +1,34 @@
 ---
 name: flow
 description: "Use when reasoning about movement in erpax — value between parties (document chain), data in→out (material cycle), event streams, production through routing. The universal root of movement."
-atomPath: vocabulary/flow
-coordinate: flow · 2/share · 55638ad4
-contentUuid: "90984b00-8171-58d1-85da-e5137bc4038b"
-diamondUuid: "43da3366-84d6-8ee3-9ab8-083ce77f3f74"
-uuid: "55638ad4-7ee7-8d52-b575-2e59c70690e5"
+atomPath: "vocabulary/flow"
+coordinate: "vocabulary/flow · 2/share · 39d58d51"
+contentUuid: "fd7642c3-5d39-50f7-8c80-71790a68d3a5"
+diamondUuid: "d990a868-416b-85a1-a0a2-4346f983df20"
+uuid: "39d58d51-4a46-8507-b2b0-f4314a05b43b"
 horo: 2
-bonds:
-  in:
-    - accounting
-    - atom
-    - balance
-    - base
-    - bottleneck
-    - breath
-    - chat
-    - close
-    - commerce
-    - descent
-    - duality
-    - education
-    - end
-    - engine
-    - event
-    - give
-    - grazing
-    - horo
-    - ingest
-    - law
-    - manufacturing
-    - manure
-    - notification
-    - open
-    - party
-    - perspective
-    - phase
-    - queries
-    - reconcile
-    - science
-    - sequence
-    - signal
-    - society
-    - sparsity
-    - stream
-    - take
-    - throughput
-    - transaction
-    - trinity
-    - unity
-    - wave
-    - weave
-    - website
-    - workflow
-    - workspace
-  out:
-    - accounting
-    - atom
-    - balance
-    - base
-    - bottleneck
-    - breath
-    - chat
-    - close
-    - commerce
-    - descent
-    - duality
-    - education
-    - end
-    - engine
-    - event
-    - give
-    - grazing
-    - horo
-    - ingest
-    - law
-    - manufacturing
-    - manure
-    - notification
-    - open
-    - party
-    - perspective
-    - phase
-    - queries
-    - reconcile
-    - science
-    - sequence
-    - signal
-    - society
-    - sparsity
-    - stream
-    - take
-    - throughput
-    - transaction
-    - trinity
-    - unity
-    - wave
-    - weave
-    - website
-    - workflow
-    - workspace
 typography:
-  partition: flow
-  bondDegree: 138
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 134
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - balance
-    - commerce
-    - give
-    - law
-    - manufacturing
-    - queries
-    - reconcile
-    - sequence
-    - take
-  matrix:
-    - accounting
-    - atom
-    - balance
-    - base
-    - bottleneck
-    - breath
-    - chat
-    - close
-    - commerce
-    - descent
-    - duality
-    - education
-    - end
-    - engine
-    - event
-    - give
-    - grazing
-    - horo
-    - ingest
-    - law
-    - manufacturing
-    - manure
-    - notification
-    - open
-    - party
-    - perspective
-    - phase
-    - queries
-    - reconcile
-    - science
-    - sequence
-    - signal
-    - society
-    - sparsity
-    - stream
-    - take
-    - throughput
-    - transaction
-    - trinity
-    - unity
-    - wave
-    - weave
-    - website
-    - workflow
-    - workspace
-  backlinks:
-    - accounting
-    - atom
-    - balance
-    - base
-    - bottleneck
-    - breath
-    - chat
-    - close
-    - commerce
-    - descent
-    - duality
-    - education
-    - end
-    - engine
-    - event
-    - give
-    - grazing
-    - horo
-    - ingest
-    - law
-    - manufacturing
-    - manure
-    - notification
-    - open
-    - party
-    - perspective
-    - phase
-    - queries
-    - reconcile
-    - science
-    - sequence
-    - signal
-    - society
-    - sparsity
-    - stream
-    - take
-    - throughput
-    - transaction
-    - trinity
-    - unity
-    - wave
-    - weave
-    - website
-    - workflow
-    - workspace
 signatures:
-  computationUuid: "677c831f-1724-88d4-a84c-e0e6ed26fc7d"
+  computationUuid: "7d68fdf1-ac29-8c1d-ba69-1a53b4ead475"
   stages:
     - stage: path
-      stageUuid: "a723fae4-d3f2-8f77-a614-144b62f3cf14"
+      stageUuid: "dba0d40d-7b18-8471-94c3-5f0ad0ce15dc"
     - stage: trinity
-      stageUuid: "1b13647d-ace6-8ffd-a185-4ea78238912e"
+      stageUuid: "b75d1182-b6ee-8f8d-93b2-241334ec3d8d"
     - stage: boundary
-      stageUuid: "e484df2d-fc6d-80b5-a609-9b6d41485adf"
+      stageUuid: "338a5419-53e9-8dd8-9cc1-0e09cb8d9bb5"
     - stage: links
-      stageUuid: "58706849-484b-82d3-9591-cbe8c2f4f2f8"
+      stageUuid: "491206dd-9380-8a7c-94b8-36391ef957bf"
     - stage: horo
-      stageUuid: "ab4ebca7-6f59-8e43-a7ac-587624b9a082"
+      stageUuid: "620f7f00-9d69-8660-b0e4-b68d100e56d4"
     - stage: seal
-      stageUuid: "02840456-b458-851a-9766-660b09be91ad"
+      stageUuid: "a1feb70c-528e-867f-8f0e-44c223675512"
     - stage: uuid
-      stageUuid: "b2fe6103-b370-8b99-aaeb-97caad16bf5e"
+      stageUuid: "aba7bcf4-5031-8f19-9747-fb27e13c1b8f"
 version: 2
 ---
 # flow

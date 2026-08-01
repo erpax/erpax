@@ -1,87 +1,35 @@
 ---
 name: archive
 description: "Use when reasoning about archive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/archive
-coordinate: archive · 8/crest · 43a23d74
-contentUuid: "f4190ce5-ec3d-5ffe-b6c7-1be128c6eccc"
-diamondUuid: "e8358dc7-f796-8a38-8488-5860f4f7c136"
-uuid: "43a23d74-3b51-8459-889a-1c1452504a18"
-horo: 8
-bonds:
-  in:
-    - archival
-    - collapse
-    - component
-    - held
-    - holding
-    - law
-    - merge
-    - organization
-    - sti
-  out:
-    - archival
-    - collapse
-    - component
-    - held
-    - holding
-    - law
-    - merge
-    - organization
-    - sti
+atomPath: "vocabulary/archive"
+coordinate: "vocabulary/archive · 7/descent · eb42ebf9"
+contentUuid: "60ef49d1-1fba-5788-97a2-78601c48be98"
+diamondUuid: "810181ca-f957-8e3e-be06-afce858e4a2c"
+uuid: "eb42ebf9-851a-8f00-b223-efe7d0bcd7b3"
+horo: 7
 typography:
-  partition: archive
+  partition: vocabulary
   bondDegree: 30
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - component
-    - held
-    - holding
-    - law
-    - merge
-    - organization
-    - sti
-  matrix:
-    - archival
-    - collapse
-    - component
-    - held
-    - holding
-    - law
-    - merge
-    - organization
-    - sti
-  backlinks:
-    - archival
-    - collapse
-    - component
-    - held
-    - holding
-    - law
-    - merge
-    - organization
-    - sti
 signatures:
-  computationUuid: "d8e2dfd5-e808-8659-92c0-d979a9c08ba3"
+  computationUuid: "861533bc-9b1f-8538-9e7c-a33e60ad6656"
   stages:
     - stage: path
-      stageUuid: "bd87f63a-1b57-8cd1-b8fc-6b08a299a734"
+      stageUuid: "74fecab5-11b3-8f75-8987-12a760418579"
     - stage: trinity
-      stageUuid: "2aab20a2-f4b5-8f5e-8ec3-876977e66369"
+      stageUuid: "a90364fb-18a3-84a2-aa45-f5d460e79f68"
     - stage: boundary
-      stageUuid: "4380a26d-dc49-8b57-9d05-f85e896f096e"
+      stageUuid: "e0e1d888-2716-81a1-a6c6-b8a1a69925bd"
     - stage: links
-      stageUuid: "b5966c4e-c59e-84e5-b534-82df1849ba16"
+      stageUuid: "d3779a48-8496-8dea-88e4-444a21a3ae68"
     - stage: horo
-      stageUuid: "1a34741a-412b-8735-b70f-d17e36aa87a3"
+      stageUuid: "a6da8b0d-e44d-81a9-8751-fb9aacc20ba6"
     - stage: seal
-      stageUuid: "1cc1947f-b323-879c-96f5-0b108ea2e7c6"
+      stageUuid: "becf9441-e175-850a-9e10-1619f4d3626e"
     - stage: uuid
-      stageUuid: "ecb153e0-e1a5-8981-b60e-8042e2007da7"
+      stageUuid: "6b04ec76-c352-8732-b96b-cc6c54032c7b"
 version: 2
 ---
 # archive

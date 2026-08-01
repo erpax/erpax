@@ -1,68 +1,35 @@
 ---
 name: beneficiary
 description: "Use when reasoning about beneficiary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/beneficiary
-coordinate: beneficiary · 7/descent · 0cb3b62a
-contentUuid: "e710cee9-96c9-54d4-b9eb-c98a793d659e"
-diamondUuid: "9d39f1c3-1ed3-8342-a5a2-0e1ea61b8692"
-uuid: "0cb3b62a-5306-8f47-adb8-2e16aca999a7"
-horo: 7
-bonds:
-  in:
-    - bank
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - bank
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/beneficiary"
+coordinate: "vocabulary/beneficiary · 2/share · eeabdba3"
+contentUuid: "24669bec-4ffb-5895-957d-c203eaf7f2e6"
+diamondUuid: "cd85dfdc-564f-8dd0-909e-477786cbd78b"
+uuid: "eeabdba3-b146-8877-be8b-c76bcb6cbeb0"
+horo: 2
 typography:
-  partition: beneficiary
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - bank
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - bank
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - bank
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "834e8bdf-4541-88d2-a7a5-a440e6031a43"
+  computationUuid: "60df3208-630b-8fb2-801a-12bd5610dbc8"
   stages:
     - stage: path
-      stageUuid: "abab8ae1-4822-8d03-b92f-5518ea2af60b"
+      stageUuid: "35aa0b02-9da9-8c23-97d7-9928e59f54d0"
     - stage: trinity
-      stageUuid: "edff5dab-11d8-8168-a61c-7d5fe89350fb"
+      stageUuid: "cb512f6a-8b77-87c8-b388-dea553fc335b"
     - stage: boundary
-      stageUuid: "4c9b2066-6c63-80cc-be78-c1a4fbdb66d0"
+      stageUuid: "6e88bc81-adcd-8681-a4d6-ecdb5e636a62"
     - stage: links
-      stageUuid: "44edb40c-6386-89d4-8187-5ba47fb98b07"
+      stageUuid: "eea711e3-a1be-824a-8c56-1756d6ff65c2"
     - stage: horo
-      stageUuid: "57108fb9-3c18-8d78-a781-bae1dfdb482f"
+      stageUuid: "f46649d2-114e-83f0-895e-29f9d42f194c"
     - stage: seal
-      stageUuid: "1aaeb34f-8af1-8d73-aa48-6c6859c58c99"
+      stageUuid: "4459f918-27ce-8afe-bc26-55054f2290d0"
     - stage: uuid
-      stageUuid: "144010d4-6342-89ef-93c1-e929baa1c9ef"
+      stageUuid: "67c56e88-73e3-8af3-86ec-e294682cca38"
 version: 2
 ---
 # beneficiary

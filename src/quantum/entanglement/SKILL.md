@@ -1,148 +1,19 @@
 ---
 name: entanglement
 description: "Use when grounding the corpus link-field in the physics of quantum entanglement — EPR/Bell correlation, no-cloning, monogamy (CKW), and ER=EPR; the reciprocal, monogamous binding computed on the matrix."
-atomPath: quantum/entanglement
-coordinate: quantum/entanglement · 1/base · 3eca15d5
-contentUuid: "f0e102d5-d8ec-5a43-8726-9f7b105986a3"
+atomPath: "quantum/entanglement"
+coordinate: "quantum/entanglement · 8/crest · e96220f2"
+contentUuid: "356369fc-6c1f-569c-95cb-e6d2e2135440"
 diamondUuid: "acc4f997-71e1-808f-bfd6-7894305ce177"
-uuid: "3eca15d5-bbfa-889d-98a3-fefd53ae52a1"
-horo: 1
-bonds:
-  in:
-    - app
-    - aura
-    - boundary
-    - cloning
-    - communication
-    - development
-    - dust
-    - entanglement
-    - export
-    - graph
-    - gravity
-    - import
-    - karma
-    - key
-    - law
-    - links
-    - matrix
-    - merge
-    - particle
-    - quantum
-    - reciprocal
-    - research
-    - serverless
-    - singularity
-    - superdense
-    - teleportation
-    - translator
-    - typography
-  out:
-    - app
-    - aura
-    - boundary
-    - cloning
-    - communication
-    - development
-    - dust
-    - entanglement
-    - export
-    - graph
-    - gravity
-    - import
-    - karma
-    - key
-    - law
-    - links
-    - matrix
-    - merge
-    - particle
-    - quantum
-    - reciprocal
-    - research
-    - serverless
-    - singularity
-    - superdense
-    - teleportation
-    - translator
-    - typography
+uuid: "e96220f2-f634-8d2f-9e78-bbfe757e08d8"
+horo: 8
 typography:
   partition: quantum
-  bondDegree: 106
-  neighbors: []
+  bondDegree: 107
 standards:
   - "ER=EPR (Maldacena & Susskind, 2013); monogamy (Coffman–Kundu–Wootters, PRA 61 052306, 2000)"
   - "ER=EPR — Maldacena & Susskind (2013); monogamy — Coffman–Kundu–Wootters, PRA 61 052306 (2000)"
-  - "EU-2000/31"
 bindings: []
-neighbors:
-  wikilink:
-    - cloning
-    - entanglement
-    - gravity
-    - law
-    - matrix
-    - merge
-    - quantum
-    - singularity
-  matrix:
-    - app
-    - aura
-    - boundary
-    - cloning
-    - communication
-    - development
-    - dust
-    - entanglement
-    - export
-    - graph
-    - gravity
-    - import
-    - karma
-    - key
-    - law
-    - links
-    - matrix
-    - merge
-    - particle
-    - quantum
-    - reciprocal
-    - research
-    - serverless
-    - singularity
-    - superdense
-    - teleportation
-    - translator
-    - typography
-  backlinks:
-    - app
-    - aura
-    - boundary
-    - cloning
-    - communication
-    - development
-    - dust
-    - entanglement
-    - export
-    - graph
-    - gravity
-    - import
-    - karma
-    - key
-    - law
-    - links
-    - matrix
-    - merge
-    - particle
-    - quantum
-    - reciprocal
-    - research
-    - serverless
-    - singularity
-    - superdense
-    - teleportation
-    - translator
-    - typography
 signatures:
   computationUuid: "a4efe1e5-2b70-8dc1-b843-6ed03d4d5e49"
   stages:
@@ -161,7 +32,6 @@ signatures:
     - stage: uuid
       stageUuid: "d7efa838-bc15-8ec6-9a36-4ba90ae004ae"
 quantum:
-  default: true
   superposition:
     - app
     - aura
@@ -186,7 +56,7 @@ quantum:
     analogResults: false
     speechResults: false
     computationUuid: "a4efe1e5-2b70-8dc1-b843-6ed03d4d5e49"
-    contentUuid: "f0e102d5-d8ec-5a43-8726-9f7b105986a3"
+    contentUuid: "356369fc-6c1f-569c-95cb-e6d2e2135440"
 version: 2
 ---
 # quantum/entanglement — the physics the link-field is grounded in
@@ -212,4 +82,4 @@ Matter-twin: `src/quantum/entanglement/index.ts` (`isMaximallyEntangled` · `rep
 @standard ER=EPR — Maldacena & Susskind (2013); monogamy — Coffman–Kundu–Wootters, PRA 61 052306 (2000)
 @audit computed on the live matrix via ../../entanglement; never hand-asserted
 
-<sub>content-uuid `f0e102d5-d8ec-5a43-8726-9f7b105986a3` · account `quantum/entanglement` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `356369fc-6c1f-569c-95cb-e6d2e2135440` · account `quantum/entanglement` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

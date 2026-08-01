@@ -1,68 +1,35 @@
 ---
 name: products
 description: "Use when reasoning about products as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/products
-coordinate: products · 5/round · 495d398e
-contentUuid: "61dfddce-25e5-59b3-ac79-f6c5cf4b3886"
-diamondUuid: "e1b7857e-d9bd-8921-ac82-a29c4550079a"
-uuid: "495d398e-6aff-8164-9300-ad9241ffc2a4"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - some
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - some
-    - sti
+atomPath: "vocabulary/products"
+coordinate: "vocabulary/products · 7/descent · a7b8d204"
+contentUuid: "44fdc3fb-6d15-5ac1-92e4-596ce2ff66a3"
+diamondUuid: "1e4a79b1-f062-87e4-b44f-d527fe95f276"
+uuid: "a7b8d204-d460-820b-9e5e-7f96b9551419"
+horo: 7
 typography:
-  partition: products
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - some
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - some
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - some
-    - sti
 signatures:
-  computationUuid: "13a8134c-f766-8808-aa6d-cac53af62d09"
+  computationUuid: "414de4f6-eb71-8cd4-899c-e4ade376e41e"
   stages:
     - stage: path
-      stageUuid: "826ed1bb-d032-8201-bc39-3757a3fdf95f"
+      stageUuid: "4f1db9f3-07df-8315-8d37-60d19c894ebc"
     - stage: trinity
-      stageUuid: "89a3a4e1-ea53-807c-8a70-53e2a15dfca2"
+      stageUuid: "984546b7-d956-8536-ae60-588f03374c40"
     - stage: boundary
-      stageUuid: "c0304287-1cac-80b0-af70-df12d0286b4d"
+      stageUuid: "374eb162-4e1a-8938-8093-7605f990172a"
     - stage: links
-      stageUuid: "5c2319b3-ca17-8e8c-a723-cce622e4622a"
+      stageUuid: "5fc892d1-8da1-8a43-b159-5e0c35494439"
     - stage: horo
-      stageUuid: "ba2e81c4-4da0-8fd6-803c-4cdf6e81117e"
+      stageUuid: "47750440-4263-844a-bb8a-28113b793e55"
     - stage: seal
-      stageUuid: "10c260c8-065e-81e4-8b17-82688f1d4d51"
+      stageUuid: "7df8d48b-82b9-8fbd-841d-e215722b3039"
     - stage: uuid
-      stageUuid: "9f924ae5-2fb6-8c31-a06c-976d64b1032a"
+      stageUuid: "4ca1574e-9937-8bc0-9e0c-13ffec7bcb61"
 version: 2
 ---
 # products

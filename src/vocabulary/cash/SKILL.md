@@ -1,68 +1,35 @@
 ---
 name: cash
 description: "Use when reasoning about cash as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/cash
-coordinate: cash · 4/weave · 84686657
-contentUuid: "f83b5c17-82eb-573c-b28f-87c43c0b6a97"
-diamondUuid: "5b62fc6f-c0e4-858c-8687-e17aa58ba1e7"
-uuid: "84686657-8c60-896f-98e7-73fb57e23d16"
-horo: 4
-bonds:
-  in:
-    - back
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - back
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/cash"
+coordinate: "vocabulary/cash · 7/descent · a87778e8"
+contentUuid: "9868110b-3502-5b6c-8d27-7e9adecd42d5"
+diamondUuid: "7028d281-1e96-870e-bc3d-dc158e597dc0"
+uuid: "a87778e8-832c-8d14-8555-e659510cfa21"
+horo: 7
 typography:
-  partition: cash
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - back
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - back
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - back
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "3e17b4af-f738-87ae-ac84-02dd96a03ce1"
+  computationUuid: "898a4705-1733-832c-b750-82b4d38ea5d6"
   stages:
     - stage: path
-      stageUuid: "9973a2d1-1598-82be-95d5-c209bb8ee802"
+      stageUuid: "ffba3ff6-2f2b-8524-9bf5-334f5f11ce4f"
     - stage: trinity
-      stageUuid: "5a5274ae-3b2c-8c08-b1af-54568628c6d5"
+      stageUuid: "896db7df-f919-8306-ba9a-86600c89e36f"
     - stage: boundary
-      stageUuid: "7b3c210c-da4a-8640-8b3c-bb0d2e4baaa3"
+      stageUuid: "fabe9b82-ad72-849c-8bf3-dc47a4da79b3"
     - stage: links
-      stageUuid: "4bfa1641-a5a3-83cc-bd8b-6613d7a53357"
+      stageUuid: "ccba92ba-39b3-8d7e-81f4-4d4128f82dc1"
     - stage: horo
-      stageUuid: "b56277fa-2861-8dc6-bf9a-15871e647e99"
+      stageUuid: "6ae43a19-5044-85b8-807c-0fd2609fe119"
     - stage: seal
-      stageUuid: "f12a5129-bed5-82c1-9b53-871c104dffa5"
+      stageUuid: "5ae1d199-bfbf-882f-bab0-7ccebe429153"
     - stage: uuid
-      stageUuid: "eeb2d092-040f-8118-b6fc-502895f9aafb"
+      stageUuid: "2ca6e3e7-fd45-86cf-9955-69d94e192f2e"
 version: 2
 ---
 # cash

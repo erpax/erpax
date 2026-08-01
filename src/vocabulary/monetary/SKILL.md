@@ -1,78 +1,35 @@
 ---
 name: monetary
 description: "Use when reasoning about monetary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/monetary
-coordinate: monetary · 4/weave · df0f325a
-contentUuid: "de28d3e5-21a4-558c-81c7-ad0a5b951e67"
-diamondUuid: "e48c83eb-beca-8147-a130-96a89207976c"
-uuid: "df0f325a-f2ef-8888-ab5c-46a6e5ffb292"
-horo: 4
-bonds:
-  in:
-    - amount
-    - collapse
-    - distribution
-    - grant
-    - law
-    - merge
-    - sti
-  out:
-    - amount
-    - collapse
-    - distribution
-    - grant
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/monetary"
+coordinate: "vocabulary/monetary · 1/base · 580e10f5"
+contentUuid: "54f7bf21-cae5-5a4a-b858-f8cc3a5da656"
+diamondUuid: "8806d10a-ca65-8189-bf58-d70c1171b0fe"
+uuid: "580e10f5-97d6-87ca-b2b0-0e2d906ca5af"
+horo: 1
 typography:
-  partition: monetary
+  partition: vocabulary
   bondDegree: 22
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - amount
-    - collapse
-    - distribution
-    - grant
-    - law
-    - merge
-    - sti
-  matrix:
-    - amount
-    - collapse
-    - distribution
-    - grant
-    - law
-    - merge
-    - sti
-  backlinks:
-    - amount
-    - collapse
-    - distribution
-    - grant
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "b3c50a4e-ad26-8538-aca5-8e9a390da021"
+  computationUuid: "120cdbd2-3ef9-8d3f-b093-a20fa21cb1d4"
   stages:
     - stage: path
-      stageUuid: "1d107735-63e4-85fd-bc39-5466716ffcf5"
+      stageUuid: "5d2feee7-dd94-8db7-a0b3-7bc9ae9911be"
     - stage: trinity
-      stageUuid: "1376a371-13e1-8456-864f-cd11c6c9e848"
+      stageUuid: "fc183cf4-d51f-8cce-b960-15d0a84d4f1e"
     - stage: boundary
-      stageUuid: "09c56875-17b4-86c9-aa7b-8ba7af084772"
+      stageUuid: "db875013-f07d-874c-869d-c8decd77833c"
     - stage: links
-      stageUuid: "d3d71e2c-8d5a-80c9-a35f-f25af19f0dfb"
+      stageUuid: "5a8c498b-d282-86cb-8c22-e7c1dd167e11"
     - stage: horo
-      stageUuid: "81f97889-f5d2-89d3-b358-4624df82b4a4"
+      stageUuid: "21d11efb-e25e-8a8b-8f2f-c92097825f42"
     - stage: seal
-      stageUuid: "b308c00e-71fd-8085-91c6-705b5457de54"
+      stageUuid: "a1e8d294-aae5-81d7-afe7-2d35cc7e9e1e"
     - stage: uuid
-      stageUuid: "b407183d-21b9-8386-90f4-755571cef279"
+      stageUuid: "0956afdf-1adf-8f82-9c8b-001ca709a0f6"
 version: 2
 ---
 # monetary

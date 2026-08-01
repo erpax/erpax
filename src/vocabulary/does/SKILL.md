@@ -1,73 +1,35 @@
 ---
 name: does
 description: "Use when reasoning about does as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/does
-coordinate: does · 4/weave · aa0f02f0
-contentUuid: "43d258f2-2276-5472-9498-4f5b3f0d2cd3"
-diamondUuid: "8aafd91b-67fc-8402-9afa-d640739a4cdd"
-uuid: "aa0f02f0-4237-8887-9508-9c75f18243c7"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - not
-    - ship
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - not
-    - ship
-    - sti
+atomPath: "vocabulary/does"
+coordinate: "vocabulary/does · 8/crest · 7a09474e"
+contentUuid: "6d2eb1f0-dca1-5d03-b03b-38cd7e1c7596"
+diamondUuid: "0e4aa529-ded2-8fd5-b231-8fdf20e7e84f"
+uuid: "7a09474e-a80e-85d8-8f6b-d90615440e86"
+horo: 8
 typography:
-  partition: does
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - not
-    - ship
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - not
-    - ship
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - not
-    - ship
-    - sti
 signatures:
-  computationUuid: "a951185e-db55-80bc-8c7f-23365846712c"
+  computationUuid: "07263b3b-ee43-800f-898f-5b48370efdbf"
   stages:
     - stage: path
-      stageUuid: "7f104334-feb1-8023-9547-ae1c746a764a"
+      stageUuid: "aab91526-f9f1-86ff-b666-d557ffc53aef"
     - stage: trinity
-      stageUuid: "da6a7449-a432-8dc8-b777-65bf94b3fb8d"
+      stageUuid: "079b04a6-49e3-891c-b9c0-0f8d3e778f3a"
     - stage: boundary
-      stageUuid: "9dfd4327-cd25-80ee-af5c-e5d7824d852b"
+      stageUuid: "766f6089-8b1e-8068-a89c-15526bd2ab25"
     - stage: links
-      stageUuid: "f3943e2f-6eb8-8dae-9f9e-492002d19855"
+      stageUuid: "dd7ce8d8-6c58-8ce2-ac14-b988e782f1c9"
     - stage: horo
-      stageUuid: "428f327b-4ea3-8dbb-b97f-d9f301a71624"
+      stageUuid: "befd2d76-e48e-865c-b722-e3c64732c15d"
     - stage: seal
-      stageUuid: "7ec2fbf2-d2d5-8889-8ecd-cd0e449bd431"
+      stageUuid: "8e854f65-e1b8-8cc9-9471-58af8ae3f13a"
     - stage: uuid
-      stageUuid: "2aaf1198-c6e2-8c77-a711-038936a9dd01"
+      stageUuid: "029f69d3-9e68-8ae3-854d-ec0d8f46e3da"
 version: 2
 ---
 # does

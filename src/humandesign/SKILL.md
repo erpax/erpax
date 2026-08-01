@@ -2,68 +2,20 @@
 name: humandesign
 description: "Use when mapping Human Design onto erpax — its real combinatorics (64 gates = 2^6 I Ching hexagrams, 6 lines, 9 centers, 12 profiles) sent to the math, with the divination layer named as convention and never claimed."
 atomPath: humandesign
-coordinate: "humandesign · 4/weave · 5995cbef"
-contentUuid: "9f4270ed-9a27-52e5-86d1-b458f2da6d66"
-diamondUuid: "1056a3e9-f90f-86f4-86b7-56121385f7a4"
-uuid: "5995cbef-7d72-805f-8183-2d3010de7251"
-horo: 4
-bonds:
-  in:
-    - chakra
-    - law
-    - merge
-    - quantum
-    - rodin
-    - society
-    - torus
-    - uuid
-  out:
-    - chakra
-    - law
-    - merge
-    - quantum
-    - rodin
-    - society
-    - torus
-    - uuid
+coordinate: "humandesign · 1/base · f770f166"
+contentUuid: "001a0e13-238a-5b0e-9a21-491a385bdb36"
+diamondUuid: "043940d3-6f5e-8ee9-b1d4-a39dd8f607b6"
+uuid: "f770f166-3803-8551-aa49-ee105aece60c"
+horo: 1
 typography:
   partition: humandesign
   bondDegree: 24
-  neighbors: []
 standards:
   - "UBL-2.1"
   - "the I Ching hexagram structure (public domain); Human Design (Ra Uru Hu, 1987) as named convention"
 bindings: []
-neighbors:
-  wikilink:
-    - chakra
-    - law
-    - merge
-    - quantum
-    - rodin
-    - society
-    - torus
-    - uuid
-  matrix:
-    - chakra
-    - law
-    - merge
-    - quantum
-    - rodin
-    - society
-    - torus
-    - uuid
-  backlinks:
-    - chakra
-    - law
-    - merge
-    - quantum
-    - rodin
-    - society
-    - torus
-    - uuid
 signatures:
-  computationUuid: "aa745a62-9ca6-84c7-abfe-d79fe8e75d3d"
+  computationUuid: "ef2fcb32-5b87-8ea0-98d3-17f87c5d377d"
   stages:
     - stage: path
       stageUuid: "fdb6c3a0-488c-868f-a330-a2bdf00d8806"
@@ -74,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "b62be555-6cf7-8ad3-8dfe-f74c515aa414"
     - stage: horo
-      stageUuid: "2235123c-38ab-875a-aa22-072d3f28e171"
+      stageUuid: "10680c6c-13cc-8a29-a10e-9a4b1cd7b83d"
     - stage: seal
       stageUuid: "e76246e4-face-87c7-8f89-bb7129bf81db"
     - stage: uuid
-      stageUuid: "f1a0d8cb-b5df-8f4a-99df-b70c7e2eb587"
+      stageUuid: "a1142f1a-a4c8-83b7-af4d-1119d211a9dc"
 version: 2
 ---
 # humandesign — Human Design, sent to the math

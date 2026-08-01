@@ -1,103 +1,35 @@
 ---
 name: complete
 description: "Use when reasoning about complete as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/complete
-coordinate: complete · 7/descent · fd6de8fe
-contentUuid: "9f8fe757-55e4-54ab-b336-62049484ac81"
-diamondUuid: "1345961e-6476-8252-8f94-dbb0fa6e3b75"
-uuid: "fd6de8fe-2587-8f53-ba0a-f229e53a393b"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - data
-    - feed
-    - folded
-    - fronted
-    - honest
-    - law
-    - merge
-    - named
-    - sti
-    - time
-    - triggered
-    - twinned
-  out:
-    - collapse
-    - data
-    - feed
-    - folded
-    - fronted
-    - honest
-    - law
-    - merge
-    - named
-    - sti
-    - time
-    - triggered
-    - twinned
+atomPath: "vocabulary/complete"
+coordinate: "vocabulary/complete · 4/weave · df2195a9"
+contentUuid: "15a40795-b1a4-5247-96d7-2680f23c0889"
+diamondUuid: "fa69dfb4-2088-806f-aa8b-48e752131628"
+uuid: "df2195a9-b4f2-8f69-a994-c7d3e3e74146"
+horo: 4
 typography:
-  partition: complete
-  bondDegree: 50
-  neighbors:
-    - aura
+  partition: vocabulary
+  bondDegree: 56
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - data
-    - feed
-    - law
-    - merge
-    - sti
-    - time
-  matrix:
-    - collapse
-    - data
-    - feed
-    - folded
-    - fronted
-    - honest
-    - law
-    - merge
-    - named
-    - sti
-    - time
-    - triggered
-    - twinned
-  backlinks:
-    - collapse
-    - data
-    - feed
-    - folded
-    - fronted
-    - honest
-    - law
-    - merge
-    - named
-    - sti
-    - time
-    - triggered
-    - twinned
 signatures:
-  computationUuid: "5c1c5b0e-89ca-8d18-9a33-427e1d828381"
+  computationUuid: "5f349384-d81c-8bb5-bfc3-eaabdcf4759b"
   stages:
     - stage: path
-      stageUuid: "f2a4c94f-6ee0-84c9-a06a-2b5bab364a73"
+      stageUuid: "5469798e-97c0-8b0b-9536-68d9bd283481"
     - stage: trinity
-      stageUuid: "fd0989e7-83c7-86b9-b220-f84acd485038"
+      stageUuid: "b48c784b-6cc5-8ae5-9265-0225e3540de9"
     - stage: boundary
-      stageUuid: "2bf98150-272e-8090-a78e-c80b8003a4e9"
+      stageUuid: "8a6bd22d-b0d6-8058-a772-88c2f764ae47"
     - stage: links
-      stageUuid: "d8f69a14-91e1-8fa4-960b-68b0adf07e50"
+      stageUuid: "fa70bb47-6cfa-8303-a676-2fc5138639b3"
     - stage: horo
-      stageUuid: "5168b08f-5522-83a5-88c1-4fcc54fb0249"
+      stageUuid: "472aa056-cb59-8da7-ad05-acae31743a74"
     - stage: seal
-      stageUuid: "dc6bb5a3-9b06-8542-82e4-03d181a12366"
+      stageUuid: "364ab4a7-9cde-87f0-844c-91dc0457b2af"
     - stage: uuid
-      stageUuid: "64bbbcc7-b4db-8244-8782-f90dba2dd10a"
+      stageUuid: "5e70b418-42a6-820b-9326-5707ee0ae84c"
 version: 2
 ---
 # complete

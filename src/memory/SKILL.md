@@ -2,111 +2,19 @@
 name: memory
 description: "Use when reasoning about memory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: memory
-coordinate: "memory · 8/crest · ac1f7e6e"
-contentUuid: "3e7a1b91-2992-56eb-85f0-d819a4707e32"
-diamondUuid: "205fd16c-8e1f-8f9c-b26f-b21c814959db"
-uuid: "ac1f7e6e-4636-8c50-b54a-e256e42fcaea"
-horo: 8
-bonds:
-  in:
-    - akashic
-    - anchor
-    - architecture
-    - collapse
-    - computer
-    - diamond
-    - law
-    - memory
-    - merge
-    - quantum
-    - requirements
-    - seal
-    - session
-    - sti
-    - sync
-    - thought
-    - uuid
-  out:
-    - akashic
-    - anchor
-    - architecture
-    - collapse
-    - computer
-    - diamond
-    - law
-    - memory
-    - merge
-    - quantum
-    - requirements
-    - seal
-    - session
-    - sti
-    - sync
-    - thought
-    - uuid
+coordinate: "memory · 2/share · 636643fc"
+contentUuid: "a13dc0ac-ea07-5b14-be90-426048a87d09"
+diamondUuid: "d6a83593-7724-852a-8ce1-284fdfa47104"
+uuid: "636643fc-46d3-8c2a-968e-367f13cd575e"
+horo: 2
 typography:
   partition: memory
   bondDegree: 96
-  neighbors:
-    - diamond
-    - hallucination
-    - purity
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - architecture
-    - collapse
-    - diamond
-    - law
-    - memory
-    - merge
-    - quantum
-    - requirements
-    - seal
-    - session
-    - sti
-    - thought
-  matrix:
-    - akashic
-    - anchor
-    - architecture
-    - collapse
-    - computer
-    - diamond
-    - law
-    - memory
-    - merge
-    - quantum
-    - requirements
-    - seal
-    - session
-    - sti
-    - sync
-    - thought
-    - uuid
-  backlinks:
-    - akashic
-    - anchor
-    - architecture
-    - collapse
-    - computer
-    - diamond
-    - law
-    - memory
-    - merge
-    - quantum
-    - requirements
-    - seal
-    - session
-    - sti
-    - sync
-    - thought
-    - uuid
 signatures:
-  computationUuid: "e202ebd6-76e7-8d82-91ce-acd2a07256f6"
+  computationUuid: "1888e854-3f92-82a1-b6c7-367872403b56"
   stages:
     - stage: path
       stageUuid: "d59a38cc-4d56-8168-bec3-c179f2673238"
@@ -117,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7871c9be-3b9d-80f8-9295-c859219bc341"
     - stage: horo
-      stageUuid: "47358987-ecce-852a-8e96-867961ae90cc"
+      stageUuid: "7251eefa-00fa-83e2-87e3-10910bc82cd8"
     - stage: seal
       stageUuid: "59a884e9-d043-8bc4-99ae-2f1be7dcc281"
     - stage: uuid
-      stageUuid: "92868bf2-5f3f-8054-9d1f-c1865b4cbe81"
+      stageUuid: "aa73ff40-a379-8f01-942f-34c98168a2ca"
 version: 2
 ---
 # memory

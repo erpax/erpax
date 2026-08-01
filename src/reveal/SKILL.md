@@ -2,108 +2,19 @@
 name: reveal
 description: "Use when looking for structure the corpus grew on its own — emergence, the development exhale's reward. As the forge keeps wiring atoms (↑entropy), past a density threshold a pattern appears that no one authored — a closed triad of three mutually-bound atoms, a trinity revealed by the matrix itself. reveal scans the live uuid-matrix edge graph for these triangles and surfaces them, each keyed by its merged binding-uuid and scored by a horo composition. Honest — a heuristic pattern-finder over the wiring, not a proof the triad means anything."
 atomPath: reveal
-coordinate: reveal · 4/weave · 904afa12
-contentUuid: "6f5d9144-96ce-52f9-98b8-3be97e99050c"
-diamondUuid: "c3ae6120-adb6-8a59-ad37-52cbfd595d40"
-uuid: "904afa12-3454-8e68-8b9e-8abea47b32d4"
-horo: 4
-bonds:
-  in:
-    - development
-    - duality
-    - entropy
-    - fusion
-    - gate
-    - horo
-    - law
-    - link
-    - matrix
-    - merge
-    - pattern
-    - proof
-    - society
-    - trinity
-    - uuid
-    - zeropoint
-  out:
-    - development
-    - duality
-    - entropy
-    - fusion
-    - gate
-    - horo
-    - law
-    - link
-    - matrix
-    - merge
-    - pattern
-    - proof
-    - society
-    - trinity
-    - uuid
-    - zeropoint
+coordinate: "reveal · 5/round · 36167c5b"
+contentUuid: "ef40bc7d-0733-59c7-b1ea-26882ae4c649"
+diamondUuid: "11780943-5e46-85cd-8552-afd7374bdef7"
+uuid: "36167c5b-7f88-8d88-8229-9767653701e0"
+horo: 5
 typography:
   partition: reveal
   bondDegree: 48
-  neighbors: []
 standards:
-  - "emergent triads are computed from the live matrix edges, never asserted"
   - "the structure lives in the wiring — a revealed triad is read from the live matrix edges, never asserted (the @/entropy reciprocity, the RFC 9562 §5.8 content-uuid key)"
 bindings: []
-neighbors:
-  wikilink:
-    - development
-    - duality
-    - entropy
-    - fusion
-    - gate
-    - horo
-    - law
-    - link
-    - matrix
-    - merge
-    - pattern
-    - proof
-    - society
-    - trinity
-    - uuid
-    - zeropoint
-  matrix:
-    - development
-    - duality
-    - entropy
-    - fusion
-    - gate
-    - horo
-    - law
-    - link
-    - matrix
-    - merge
-    - pattern
-    - proof
-    - society
-    - trinity
-    - uuid
-    - zeropoint
-  backlinks:
-    - development
-    - duality
-    - entropy
-    - fusion
-    - gate
-    - horo
-    - law
-    - link
-    - matrix
-    - merge
-    - pattern
-    - proof
-    - society
-    - trinity
-    - uuid
-    - zeropoint
 signatures:
-  computationUuid: "a8d65698-3836-82f8-8f63-9fe210cc8db1"
+  computationUuid: "b1c3f7a5-912e-8836-be40-de876e58abb5"
   stages:
     - stage: path
       stageUuid: "a0f74e8e-6c8b-8857-9404-4323b2d506eb"
@@ -114,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ab092948-d022-8daf-99fa-4e0f96c662f5"
     - stage: horo
-      stageUuid: "fc8e47c0-3d1c-882f-876f-bdf00c6c7d4a"
+      stageUuid: "948f09ff-3f15-8f2b-adc5-0797a191c4ef"
     - stage: seal
-      stageUuid: "3234429a-46d2-825d-ab2f-47e17e1da3c7"
+      stageUuid: "fb999ab7-f872-8a0d-8e0e-c2d8ae0151f1"
     - stage: uuid
-      stageUuid: "1785b6d2-74ab-82cb-8f0a-c033671c1456"
+      stageUuid: "254ea357-0cd7-809f-a8e2-6302e575f0b2"
 version: 2
 ---
 # reveal — emergence: the pattern the forge reveals when it holds enough entropy

@@ -1,68 +1,35 @@
 ---
 name: assess
 description: "Use when reasoning about assess as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/assess
-coordinate: assess · 2/share · 0880112c
-contentUuid: "0f912997-d253-5b82-9445-d9aacec21c3f"
-diamondUuid: "060faaff-5ea1-8327-90b6-780c33681b23"
-uuid: "0880112c-a7b3-822a-a95b-083bcc121f44"
-horo: 2
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/assess"
+coordinate: "vocabulary/assess · 7/descent · cbbe2444"
+contentUuid: "6d9b2229-8032-5eac-97b1-eea8fff94636"
+diamondUuid: "c06337b1-1077-8d23-a7cf-35c8c9494f55"
+uuid: "cbbe2444-9ab7-858e-9571-2932f43810c2"
+horo: 7
 typography:
-  partition: assess
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "04913a16-2829-8406-93e1-3a593bc7607a"
+  computationUuid: "f041eaee-02c0-80e4-9b8d-9544d1bc581c"
   stages:
     - stage: path
-      stageUuid: "7bb22908-6998-8d6a-b994-2a30fbff5236"
+      stageUuid: "c2e74069-6023-8261-9872-3f632f39636f"
     - stage: trinity
-      stageUuid: "7446f8a5-18c8-8add-b21b-e7e5daf8ba4f"
+      stageUuid: "d0c884df-75fd-87f6-bc2f-31654ccff9f0"
     - stage: boundary
-      stageUuid: "cab50cf7-568d-8bf7-857c-87ccb94b7b47"
+      stageUuid: "5c71c69e-42f8-84e3-b5e4-cfeb632d1202"
     - stage: links
-      stageUuid: "c577eb0c-ecb7-8a9b-94aa-7de4068dddd0"
+      stageUuid: "b31c5b91-5d0a-8c36-81c1-8b3b826d98ca"
     - stage: horo
-      stageUuid: "55cd4589-5388-8b67-a785-6a7bc9ad8424"
+      stageUuid: "1a36d807-3bb3-8547-9b76-e07f319d35c6"
     - stage: seal
-      stageUuid: "e0887555-37e3-8b65-b632-0907692a01ec"
+      stageUuid: "28abc7dd-3a69-82a3-8e4e-0f6cc37cf368"
     - stage: uuid
-      stageUuid: "9317447b-673f-8fd2-b6ae-d4aed44374c4"
+      stageUuid: "5c795f21-e1fa-81b3-81dc-12525a883031"
 version: 2
 ---
 # assess

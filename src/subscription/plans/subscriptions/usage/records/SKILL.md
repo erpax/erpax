@@ -1,73 +1,30 @@
 ---
 name: records
 description: "Use when recording or aggregating metered-billing events — per-tenant per-feature countable occurrences (invoices issued, signed PAdES attestations, country-bundle calls) with quantity, rate snapshot, billing-period bucket and idempotency key, rolled into IFRS-15 §B16 usage-based invoice lines. The metered-billing event-log collection."
-atomPath: subscription/plans/subscriptions/usage/records
-coordinate: subscription/plans/subscriptions/usage/records · 7/descent · 24310927
-contentUuid: "09b71bb1-0e98-51da-81c1-f30eb2196b9c"
-diamondUuid: "7e47c30e-8782-856c-8e31-27cc4e21d726"
-uuid: "24310927-ac53-8a8d-99e2-8577349f8194"
+atomPath: "subscription/plans/subscriptions/usage/records"
+coordinate: "subscription/plans/subscriptions/usage/records · 7/descent · 39436489"
+contentUuid: "7685b8b8-a4aa-5be1-b4b3-3db2eabf3cd9"
+diamondUuid: "955cdd9b-df59-8465-bc48-fe42cc531250"
+uuid: "39436489-b34e-8dc4-aea6-8c8fb05e3afc"
 horo: 7
-bonds:
-  in:
-    - access
-    - activities
-    - consent
-    - dataprotection
-    - fields
-    - hooks
-    - identity
-    - standard
-    - usage
-  out:
-    - access
-    - activities
-    - consent
-    - dataprotection
-    - fields
-    - hooks
-    - identity
-    - standard
 typography:
   partition: subscription
   bondDegree: 30
-  neighbors: []
 standards:
   - "IFRS IFRS-15 §B16 §B17 §B18 §B19 usage-based-revenue"
-  - "ISO-19011:2018 audit-trail usage-evidence"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time event-time billing-period"
+  - "ISO-8601-1:2019 date-time event-time billing-period`"
   - "SOC-2 CC4.1 monitoring-and-evaluation"
   - "SOC-2 CC7.4 system-monitoring-and-detection"
   - "US-GAAP ASC-606-10-32-40 usage-based-pricing"
   - "rfc-9562 uuid event-id"
+  - "rfc-9562 uuid event-id`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - commerce
-    - identity
-    - standard
-    - transaction
-  matrix:
-    - access
-    - activities
-    - consent
-    - dataprotection
-    - fields
-    - hooks
-    - identity
-    - standard
-  backlinks:
-    - access
-    - activities
-    - consent
-    - dataprotection
-    - fields
-    - hooks
-    - identity
-    - standard
 signatures:
-  computationUuid: "2dfeddea-6639-8cd1-a40b-d7bcaa84d22f"
+  computationUuid: "6ceccbaa-1910-8165-a1b7-9260fa27f95a"
   stages:
     - stage: path
       stageUuid: "cf3b91a5-47b0-84b2-9675-33dfc3046663"
@@ -78,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "9e648e2b-6596-84c8-9297-1ee5b8195c53"
     - stage: horo
-      stageUuid: "aa4d40ce-d7f1-837f-b038-8705ff92d77b"
+      stageUuid: "1cc38717-5e1b-8dc1-b9f7-6aeeb9ff149d"
     - stage: seal
       stageUuid: "94afd476-fb5e-8c5f-a064-15e7f4cda506"
     - stage: uuid
-      stageUuid: "9f4575cd-09b9-8d18-ac0e-e4862ad64539"
+      stageUuid: "5168a7a6-a4b2-84b5-b5da-e6b2b2b8428a"
 version: 2
 ---
 # usage-records

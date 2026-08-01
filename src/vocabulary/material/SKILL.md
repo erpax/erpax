@@ -1,53 +1,35 @@
 ---
 name: material
 description: "Use when reasoning about material — A material that something is made from, e.g. leather, wool, cotton, paper."
-atomPath: vocabulary/material
-coordinate: material · 7/descent · 0c9e4833
-contentUuid: "380718c6-a9f1-529d-8999-1675162b6837"
-diamondUuid: "eb5ffde9-abf1-8a1c-92c4-41321064a83c"
-uuid: "0c9e4833-07fc-8b75-810f-0e68e7959ca2"
-horo: 7
-bonds:
-  in:
-    - extent
-    - law
-  out:
-    - extent
-    - law
+atomPath: "vocabulary/material"
+coordinate: "vocabulary/material · 5/round · 06aac4f7"
+contentUuid: "a3bbb9cf-7e6d-51e1-8d06-54f8fa0a9712"
+diamondUuid: "e6fc2277-a523-8aa7-9180-a073840be407"
+uuid: "06aac4f7-361d-89d5-8e0c-e2b78e7df679"
+horo: 5
 typography:
-  partition: material
+  partition: vocabulary
   bondDegree: 7
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - extent
-    - law
-  matrix:
-    - extent
-    - law
-  backlinks:
-    - extent
-    - law
 signatures:
-  computationUuid: "4a916b53-355a-87b5-b6a2-b443c4f698fc"
+  computationUuid: "4505e473-ba9c-8ea1-bafe-a4fe0bc2c26c"
   stages:
     - stage: path
-      stageUuid: "dc337353-16b0-8d22-aa41-5a79ad3fe025"
+      stageUuid: "d61f72ab-5e9f-8409-b8b9-85d276f3c335"
     - stage: trinity
-      stageUuid: "043ce125-a9c0-857b-9b5c-abf6c8135926"
+      stageUuid: "e11bb026-2d44-8ded-874f-b7a22bbd8cc7"
     - stage: boundary
-      stageUuid: "a9ffcb3b-6bcf-850d-a78c-7fd1c0e1ad7f"
+      stageUuid: "7a727d83-92d5-8196-a4f3-f7388392b3b2"
     - stage: links
-      stageUuid: "5a781e11-50b9-8bb3-a7aa-e15c7306838e"
+      stageUuid: "37f2225b-dfc8-88bc-9523-108dba2c839e"
     - stage: horo
-      stageUuid: "39c4da52-0402-8bd0-9dbf-244e4a7cfbfc"
+      stageUuid: "cee6b381-e867-85f2-95f8-847e835fe9f7"
     - stage: seal
-      stageUuid: "87a5eb41-8616-8f6a-8e6a-41605014b394"
+      stageUuid: "eb8765f7-ad7f-831d-9d78-fd63b316a0b1"
     - stage: uuid
-      stageUuid: "6b053295-eae3-874f-bbcc-fc8e5c5c1b10"
+      stageUuid: "0a84e792-8c53-85d7-a2ee-834c15a26a06"
 version: 2
 ---
 # material

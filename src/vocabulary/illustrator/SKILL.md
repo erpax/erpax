@@ -1,53 +1,35 @@
 ---
 name: illustrator
 description: Use when reasoning about illustrator — The illustrator of the book.
-atomPath: vocabulary/illustrator
-coordinate: illustrator · 2/share · eabe6057
-contentUuid: "2085ec7c-34a5-5adc-b8e7-754dfee22667"
-diamondUuid: "739ad552-189d-8a4e-9d88-38f7a207233c"
-uuid: "eabe6057-1823-8879-8919-0d07d693e156"
-horo: 2
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/illustrator"
+coordinate: "vocabulary/illustrator · 1/base · a2a11574"
+contentUuid: "1b699316-1325-572f-ae72-3858b32c7b1a"
+diamondUuid: "fdb3f80d-3c11-89d0-8b88-6ed4adc2ac35"
+uuid: "a2a11574-aad2-8925-8e9f-dc165e701756"
+horo: 1
 typography:
-  partition: illustrator
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "cfaca577-7435-8922-b5c0-2246e0bb5a86"
+  computationUuid: "d344ee22-3812-8b6b-93e1-9d1f94e35ae1"
   stages:
     - stage: path
-      stageUuid: "5b58ee37-c0e8-8f17-be0d-59968fb56152"
+      stageUuid: "fc78828d-25ca-8375-b685-549560b697a7"
     - stage: trinity
-      stageUuid: "d43dfaf0-10e7-851d-af9a-7b61a4048c9d"
+      stageUuid: "9ef32235-1946-8a09-97ed-a79d0831f649"
     - stage: boundary
-      stageUuid: "4f18a4cf-a376-8e2f-9d6c-e909db740702"
+      stageUuid: "037ce6c3-7dfc-8a3a-997b-d22b86626bca"
     - stage: links
-      stageUuid: "0e5db000-1c45-86de-b940-fcb898a01db0"
+      stageUuid: "7d5282c4-0b2d-8b73-ba91-d6f1091c1981"
     - stage: horo
-      stageUuid: "4c410ef6-3a57-80e1-aa6c-e4142564212d"
+      stageUuid: "591f1a50-d3d7-8f79-befa-e01619f4638a"
     - stage: seal
-      stageUuid: "0f3424bf-7c5a-8db4-bb9c-7a87e6874220"
+      stageUuid: "b8d00b15-e88b-8bd7-aa3d-d3b7c74ffd6c"
     - stage: uuid
-      stageUuid: "1df58eb1-4b6e-8a73-979a-9a630f5bce83"
+      stageUuid: "be72f700-0526-8039-875d-460abc325d7c"
 version: 2
 ---
 # illustrator

@@ -1,73 +1,35 @@
 ---
 name: enum
 description: "Use when reasoning about enum as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/enum
-coordinate: enum · 4/weave · b6378715
-contentUuid: "965e979b-5c12-5fbd-a7c5-1fabda178f0e"
-diamondUuid: "2b2f6053-772e-8169-a286-ffc1cca7264a"
-uuid: "b6378715-22ec-8046-aec7-247c536fbb63"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - measurement
-    - merge
-    - method
-    - sti
-  out:
-    - collapse
-    - law
-    - measurement
-    - merge
-    - method
-    - sti
+atomPath: "vocabulary/enum"
+coordinate: "vocabulary/enum · 7/descent · 1c373a36"
+contentUuid: "50ccdd0c-1eff-5da5-8c23-c3f7a15fad6f"
+diamondUuid: "883a81f0-a716-8bfb-8719-da1945d20721"
+uuid: "1c373a36-fb8a-856c-bb8b-39ff57132968"
+horo: 7
 typography:
-  partition: enum
-  bondDegree: 19
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 21
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - measurement
-    - merge
-    - method
-    - sti
-  matrix:
-    - collapse
-    - law
-    - measurement
-    - merge
-    - method
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - measurement
-    - merge
-    - method
-    - sti
 signatures:
-  computationUuid: "02a272b9-cd41-804c-a84f-e6331c048750"
+  computationUuid: "cb4edc40-2937-87ba-b2a6-4e4dd3cc63a0"
   stages:
     - stage: path
-      stageUuid: "f394853e-47eb-8329-8623-a7cc67cc4316"
+      stageUuid: "ca641694-9cc5-8365-8d2d-f28108ddb3cc"
     - stage: trinity
-      stageUuid: "0fad9d66-6817-8b22-a9c8-1011bf9558d7"
+      stageUuid: "81ce0b00-c851-89db-8a49-a472b1dd7b39"
     - stage: boundary
-      stageUuid: "ab35221e-a209-8914-8ddd-31dff050e87e"
+      stageUuid: "0e436b3e-818f-8b42-8bf5-e97adee53ea8"
     - stage: links
-      stageUuid: "26deb192-b604-8e8f-b2e6-4ccd75790f13"
+      stageUuid: "e5abffc5-663b-8cb7-a3cf-58d047ac452e"
     - stage: horo
-      stageUuid: "29bcd1d0-8cf1-87c2-affe-4249bb6bb592"
+      stageUuid: "5d830b27-9038-89b7-85ab-c3af662d9829"
     - stage: seal
-      stageUuid: "93fc3367-ec3f-8571-b545-b610a0a50f1f"
+      stageUuid: "10fad336-8bad-8e32-bdb4-5208e31f0a3e"
     - stage: uuid
-      stageUuid: "50bc3957-6e68-8b1c-87be-15330d49d367"
+      stageUuid: "0258ebb7-3a25-8980-b0ce-71e1261a5786"
 version: 2
 ---
 # enum

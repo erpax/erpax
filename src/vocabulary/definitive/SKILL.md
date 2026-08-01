@@ -1,63 +1,35 @@
 ---
 name: definitive
 description: "Use when reasoning about definitive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/definitive
-coordinate: definitive · 2/share · ba62275d
-contentUuid: "7da435bf-fe10-5b1e-9df3-1d4c7a11f35f"
-diamondUuid: "45bfa330-1605-8b67-b34f-b20ad00ade09"
-uuid: "ba62275d-3a22-80f0-9a13-8f3cc516687c"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/definitive"
+coordinate: "vocabulary/definitive · 8/crest · 0cde5e3c"
+contentUuid: "1da20020-4b9e-5a62-bd11-fc2996887b84"
+diamondUuid: "42425d69-2cd0-8e7d-bf30-7f584bcfba64"
+uuid: "0cde5e3c-dab7-82fa-963b-2f4771432227"
+horo: 8
 typography:
-  partition: definitive
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "4ba90bc9-0618-83f0-9108-ecbe8c583f35"
+  computationUuid: "9e961f8c-f621-80a2-8f02-45f25389b039"
   stages:
     - stage: path
-      stageUuid: "b0bf30ae-cf53-8a8d-bf90-deeec70e1e65"
+      stageUuid: "c2f452c7-5b57-8e78-9fd8-1055799f23b2"
     - stage: trinity
-      stageUuid: "0214c7f0-5b99-8e78-833b-344f51e138ce"
+      stageUuid: "ef7c9b57-9ce7-8c6f-b827-b43d00c6e7e9"
     - stage: boundary
-      stageUuid: "7e2bdd31-2bf5-83af-91c5-f336d0d6a9db"
+      stageUuid: "a8ae5db0-de86-8842-a21a-e32ed07003e9"
     - stage: links
-      stageUuid: "e6b862be-f4cb-89a7-9918-78b0f9c37005"
+      stageUuid: "da8662ef-7f0e-8b1d-bf45-916fb4d7a41b"
     - stage: horo
-      stageUuid: "a7952af3-692c-8397-b8fd-98767c3fde04"
+      stageUuid: "f68e240f-7bd7-8b61-a9c7-aaa498497452"
     - stage: seal
-      stageUuid: "cb2ee99e-b9e1-879e-a69c-38eaaf5a3ed9"
+      stageUuid: "209e4601-eebe-89b6-96fc-b84b10f4bbf3"
     - stage: uuid
-      stageUuid: "c97a65f3-159a-8f07-8f90-cf229b2036ec"
+      stageUuid: "651e2556-b18c-8090-9cf7-dd56fc7a533b"
 version: 2
 ---
 # definitive

@@ -1,129 +1,34 @@
 ---
 name: refactor
 description: "Use when reshaping the corpus toward the law — all logic mapped to fs, all is skills, every atom payload⊕vitepress, uuid the coordinate, anything that does not fit is junk. The migration organs live here as atoms, not as loose scripts."
-atomPath: vocabulary/refactor
-coordinate: refactor · 1/base · ddadf41f
-contentUuid: "e6bc2584-3494-5b1a-ab1e-97ec6f8944ed"
-diamondUuid: "1d112177-f4b2-8de2-9dcc-62ea1b6de79d"
-uuid: "ddadf41f-b9c9-83fb-a24f-8031a3c1dc7d"
-horo: 1
-bonds:
-  in:
-    - accounting
-    - atom
-    - contribution
-    - dissolve
-    - gate
-    - identity
-    - integrity
-    - law
-    - matrix
-    - merge
-    - normalize
-    - payload
-    - proof
-    - refactor
-    - self
-    - sequence
-    - vitepress
-    - zeropoint
-  out:
-    - accounting
-    - atom
-    - contribution
-    - dissolve
-    - gate
-    - identity
-    - integrity
-    - law
-    - matrix
-    - merge
-    - normalize
-    - payload
-    - proof
-    - refactor
-    - self
-    - sequence
-    - vitepress
-    - zeropoint
+atomPath: "vocabulary/refactor"
+coordinate: "vocabulary/refactor · 4/weave · 079e24ae"
+contentUuid: "619b5485-b561-5395-8160-5a028c3c72bf"
+diamondUuid: "d87838e8-b756-8e46-a09a-6bbaffcd6c37"
+uuid: "079e24ae-e89f-8817-83ea-5763eda7317d"
+horo: 4
 typography:
-  partition: refactor
+  partition: vocabulary
   bondDegree: 57
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - atom
-    - dissolve
-    - gate
-    - identity
-    - integrity
-    - matrix
-    - merge
-    - normalize
-    - payload
-    - proof
-    - refactor
-    - self
-    - sequence
-    - vitepress
-    - zeropoint
-  matrix:
-    - accounting
-    - atom
-    - contribution
-    - dissolve
-    - gate
-    - identity
-    - integrity
-    - law
-    - matrix
-    - merge
-    - normalize
-    - payload
-    - proof
-    - refactor
-    - self
-    - sequence
-    - vitepress
-    - zeropoint
-  backlinks:
-    - accounting
-    - atom
-    - contribution
-    - dissolve
-    - gate
-    - identity
-    - integrity
-    - law
-    - matrix
-    - merge
-    - normalize
-    - payload
-    - proof
-    - refactor
-    - self
-    - sequence
-    - vitepress
-    - zeropoint
 signatures:
-  computationUuid: "f7f5aec2-2e17-827a-937b-b7b10e08d71c"
+  computationUuid: "3f6cd55a-542c-8385-89e7-10342ae0424a"
   stages:
     - stage: path
-      stageUuid: "c214d354-0d94-8037-b4e5-ebb3bf5ee748"
+      stageUuid: "5be79153-cde6-8110-bddb-e7080d7a5046"
     - stage: trinity
-      stageUuid: "598267e1-2a40-8981-9dee-e9154616ef10"
+      stageUuid: "522b75d8-0672-83f4-9c16-2ff9617ade9c"
     - stage: boundary
-      stageUuid: "e9a8e4da-7ad5-834c-bc08-0c95194a6728"
+      stageUuid: "a7d09d01-e8ca-8ad9-8984-ba6df9b52243"
     - stage: links
-      stageUuid: "97bebf8e-1674-8c47-9339-1f77fd648b03"
+      stageUuid: "0c1eb3b5-aa32-8ee2-93a0-04a76d62579f"
     - stage: horo
-      stageUuid: "d391a4eb-186f-83d6-b4f1-9798dbb4cfc5"
+      stageUuid: "e92537bd-fbed-8a88-8937-0d4231332844"
     - stage: seal
-      stageUuid: "93407f97-bb2e-8f02-9aa3-ba280b905ba2"
+      stageUuid: "52f670f9-8846-85a5-bf15-e8cb27526b81"
     - stage: uuid
-      stageUuid: "a50cdbc2-1588-8930-9ac4-d1a9ec72bcc2"
+      stageUuid: "53d3bda6-b3d1-8a45-b674-b6a69d9f9a33"
 version: 2
 ---
 # refactor — reshape the corpus toward the law

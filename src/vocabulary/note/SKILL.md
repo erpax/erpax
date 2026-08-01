@@ -1,73 +1,35 @@
 ---
 name: note
 description: "Use when reasoning about note — A schema.org component word, collided out of schema.org compounds — fused from NoteDigitalDocument (sti · collapse · merge)."
-atomPath: vocabulary/note
-coordinate: note · 1/base · e05caaeb
-contentUuid: "22bf817e-85e0-5f7d-a43f-73c4f21f5da5"
-diamondUuid: "8d2bff67-2e45-81b6-ba3a-b7f4f03ee3e6"
-uuid: "e05caaeb-76ac-8930-9746-7b69d6e73af6"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - digital
-    - document
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - digital
-    - document
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/note"
+coordinate: "vocabulary/note · 2/share · da2eb349"
+contentUuid: "40e51d22-54ea-5736-b6fb-1ebce1fff8b5"
+diamondUuid: "b9b8d0d2-6c00-8cac-a6a0-0023b041df8d"
+uuid: "da2eb349-7a58-8cf9-9b07-366c09e395df"
+horo: 2
 typography:
-  partition: note
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - digital
-    - document
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - digital
-    - document
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - digital
-    - document
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "42ca6252-2df6-87d7-8d2a-9593f8630407"
+  computationUuid: "1b71bb43-64ae-89f7-8f79-6eb30b169591"
   stages:
     - stage: path
-      stageUuid: "228a8744-5029-84a3-bc8d-95e3e7e9f9bb"
+      stageUuid: "3d15f8d4-fc71-8b61-b30b-660b2b011a11"
     - stage: trinity
-      stageUuid: "bd2ca66f-85a1-8313-b01f-903b32d74759"
+      stageUuid: "e7250872-0027-8728-8568-911db54a6813"
     - stage: boundary
-      stageUuid: "a50dea08-12d6-8c4a-88eb-dcd641af9004"
+      stageUuid: "c884efe2-ba03-8e4e-9580-143782755089"
     - stage: links
-      stageUuid: "927ec880-8d42-895b-b755-d1a371c2f10b"
+      stageUuid: "99a22f25-9dba-85c3-8d20-dd80fb6c2a24"
     - stage: horo
-      stageUuid: "c332880f-9873-8222-9523-2ef17ac24a49"
+      stageUuid: "69230b20-824e-8032-bf5c-477583f51caa"
     - stage: seal
-      stageUuid: "79f966be-9ac9-8477-b73d-effdd7f7c867"
+      stageUuid: "ff4229c4-dcb5-80a3-acbd-adef7932ed76"
     - stage: uuid
-      stageUuid: "3874a91d-77bc-8a05-ba91-12b51c03cb56"
+      stageUuid: "81049901-f25e-814c-b2d1-8a96b8b0a236"
 version: 2
 ---
 # note

@@ -2,123 +2,19 @@
 name: snapshot
 description: "Use when reasoning about snapshot as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: snapshot
-coordinate: snapshot · 8/crest · 797a2661
-contentUuid: "6caacfff-9273-5fc1-9dd8-62ce21ef7e01"
-diamondUuid: "fa622dc0-4a54-8ed4-8a00-7f2da2b18af7"
-uuid: "797a2661-b539-80ca-a082-d952663a20ee"
-horo: 8
-bonds:
-  in:
-    - audio
-    - biometric
-    - collapse
-    - deploy
-    - device
-    - emr
-    - folded
-    - fs
-    - github
-    - image
-    - law
-    - literature
-    - memory
-    - merge
-    - number
-    - object
-    - snapshot
-    - sti
-    - stream
-    - sync
-    - uuid
-    - video
-  out:
-    - audio
-    - biometric
-    - collapse
-    - deploy
-    - device
-    - emr
-    - folded
-    - fs
-    - github
-    - image
-    - law
-    - literature
-    - memory
-    - merge
-    - number
-    - object
-    - snapshot
-    - sti
-    - stream
-    - sync
-    - uuid
-    - video
+coordinate: "snapshot · 1/base · 7ee56c21"
+contentUuid: "d33bcddd-787f-5ce8-ab05-2fae5a0d6cba"
+diamondUuid: "4e856073-79b7-8415-a765-9c8da1bad680"
+uuid: "7ee56c21-1225-8992-8f7b-ce52d12fb949"
+horo: 1
 typography:
   partition: snapshot
-  bondDegree: 89
-  neighbors: []
+  bondDegree: 94
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - audio
-    - collapse
-    - image
-    - law
-    - merge
-    - object
-    - sti
-    - video
-  matrix:
-    - audio
-    - biometric
-    - collapse
-    - deploy
-    - device
-    - emr
-    - folded
-    - fs
-    - github
-    - image
-    - law
-    - literature
-    - memory
-    - merge
-    - number
-    - object
-    - snapshot
-    - sti
-    - stream
-    - sync
-    - uuid
-    - video
-  backlinks:
-    - audio
-    - biometric
-    - collapse
-    - deploy
-    - device
-    - emr
-    - folded
-    - fs
-    - github
-    - image
-    - law
-    - literature
-    - memory
-    - merge
-    - number
-    - object
-    - snapshot
-    - sti
-    - stream
-    - sync
-    - uuid
-    - video
 signatures:
-  computationUuid: "8da794c9-e857-8f43-9721-afd0b59af64b"
+  computationUuid: "ef314c3d-782b-80c9-aa3d-8c5c05e33aa6"
   stages:
     - stage: path
       stageUuid: "c164a256-b8c4-8d1a-97e0-57838110a8d3"
@@ -129,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c64ae794-5330-8922-9895-d1732febca9f"
     - stage: horo
-      stageUuid: "a380ad98-a5da-854d-b53d-74ce336c2dca"
+      stageUuid: "67745ac9-9745-817a-b3bb-85075931918d"
     - stage: seal
-      stageUuid: "9b76f74c-4d23-87a3-84fe-39db5133497e"
+      stageUuid: "0c9a4d9b-5855-896d-8b0d-fc981c3c2272"
     - stage: uuid
-      stageUuid: "3bb33dde-9910-8049-8be6-4d4a943dc9c2"
+      stageUuid: "4eff3c73-c474-8bad-b0a9-c10d0d734335"
 version: 2
 ---
 # snapshot

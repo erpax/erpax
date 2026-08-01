@@ -2,37 +2,14 @@
 name: reviews
 description: "Use when running employee performance cycles — annual, mid-year, quarterly, probation, PIP, 360 — self-assessment plus manager review, competency ratings, merit-increase and promotion recommendations, and GDPR-compliant processing. The employee performance-review collection."
 atomPath: "employees/performance/reviews"
-coordinate: "employees/performance/reviews · 2/share · 2fc3d532"
-contentUuid: "a4f24ac6-0fc7-53f8-8e93-ac4323c68715"
-diamondUuid: "516073e1-b2ec-8921-9a1d-6ce59ba190b2"
-uuid: "2fc3d532-afdc-86bc-ac80-2725eaf7701e"
-horo: 2
-bonds:
-  in:
-    - access
-    - employees
-    - feedback
-    - fields
-    - hooks
-    - identity
-    - law
-    - performance
-    - proof
-    - satisfaction
-  out:
-    - access
-    - employees
-    - feedback
-    - fields
-    - hooks
-    - identity
-    - law
-    - proof
-    - satisfaction
+coordinate: "employees/performance/reviews · 1/base · acfff9ab"
+contentUuid: "c43e0514-77f7-5496-bb15-6d4323cd64b5"
+diamondUuid: "f4ca8ecf-2a30-8b3e-9051-a18b57890d09"
+uuid: "acfff9ab-5fd1-8dce-9ffa-fb5d505106d8"
+horo: 1
 typography:
   partition: employees
-  bondDegree: 27
-  neighbors: []
+  bondDegree: 25
 standards:
   - "EU Equal Treatment Directive 2000/78"
   - GDPR Art.5 PII processing
@@ -40,36 +17,8 @@ standards:
   - "ISO-8601-1:2019 date-time`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - fields
-    - hooks
-    - identity
-    - law
-    - proof
-  matrix:
-    - access
-    - employees
-    - feedback
-    - fields
-    - hooks
-    - identity
-    - law
-    - proof
-    - satisfaction
-  backlinks:
-    - access
-    - employees
-    - feedback
-    - fields
-    - hooks
-    - identity
-    - law
-    - proof
-    - satisfaction
 signatures:
-  computationUuid: "aeb4c32a-1c4b-82c9-9e12-14a25d02e065"
+  computationUuid: "b664f78d-8735-8477-8eb6-85f96c8b485b"
   stages:
     - stage: path
       stageUuid: "5277ad0d-e19b-863b-952e-000dac385bcf"
@@ -78,13 +27,13 @@ signatures:
     - stage: boundary
       stageUuid: "dac28e6c-5d86-8d20-9a67-126286acb7dd"
     - stage: links
-      stageUuid: "327fce69-ee90-846e-8489-1ebce855c70e"
+      stageUuid: "d4440b1a-ff95-86b7-ad5d-40ebd39e20f3"
     - stage: horo
-      stageUuid: "87b666bb-5ce4-8384-b222-736717757831"
+      stageUuid: "b2e10e73-8f25-8c24-a962-7de89b8a57bf"
     - stage: seal
       stageUuid: "f9b059a7-e7da-8eac-a32e-15eb604c42c3"
     - stage: uuid
-      stageUuid: "0632c3de-fe31-83b8-a9c7-1f46e04998e5"
+      stageUuid: "e1df1ff8-5d1e-8f64-b148-d50ea0149ff0"
 version: 2
 ---
 # performance-reviews

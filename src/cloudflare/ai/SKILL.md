@@ -2,33 +2,14 @@
 name: ai
 description: "Use when touching Cloudflare Workers AI — the `ai` wrangler binding, vectorize RAG index, AI gateway vars, and uuid-sealed API keys. Every AI binding derives a DiamondModel on the worker face serving [[agent]] atoms."
 atomPath: "cloudflare/ai"
-coordinate: "cloudflare/ai · 4/weave · 180fdded"
-contentUuid: "1c438ea8-1d87-5631-8454-99e670defdf8"
-diamondUuid: "a3075b20-318c-8207-a912-1f022c9d004d"
-uuid: "180fdded-f9ee-830c-bb74-ab8c55ef52b7"
+coordinate: "cloudflare/ai · 4/weave · f854d184"
+contentUuid: "a0031af9-901b-5bc3-a0a0-cede374e50cb"
+diamondUuid: "72af91e4-847d-8052-9c99-8f899bd293a2"
+uuid: "f854d184-6c99-8cda-83a6-df1a68556807"
 horo: 4
-bonds:
-  in:
-    - bindings
-    - cloudflare
-    - identity
-    - industry
-    - law
-    - models
-  out:
-    - bindings
-    - identity
-    - industry
-    - law
-    - models
 typography:
   partition: cloudflare
-  bondDegree: 31
-  neighbors:
-    - agent
-    - cloudflare
-    - diamond
-    - secret
+  bondDegree: 25
 standards: []
 bindings:
   - "ai/AI"
@@ -40,30 +21,8 @@ bindings:
   - "ratelimit/RATE_LIMITER_AI"
   - "send_email/EMAIL_SENDER"
   - "vectorize/VECTORIZE_DOCS"
-neighbors:
-  wikilink:
-    - agent
-    - cloudflare
-    - diamond
-    - innovation
-    - law
-    - path
-    - payload
-    - secret
-  matrix:
-    - bindings
-    - identity
-    - industry
-    - law
-    - models
-  backlinks:
-    - bindings
-    - identity
-    - industry
-    - law
-    - models
 signatures:
-  computationUuid: "4d0f5f75-f343-8cca-9304-23dec8b6f13c"
+  computationUuid: "32932c03-dc0c-829f-bc9e-54a7c718cb06"
   stages:
     - stage: path
       stageUuid: "f52b7600-5340-89b9-b22c-2a6ff9c5456b"
@@ -74,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "a433a134-c2b7-8f5b-93cb-ab3e9a01501c"
     - stage: horo
-      stageUuid: "ab95be0e-dee2-8763-939b-60673eba6ca5"
+      stageUuid: "d913b9b9-1a80-8628-b2a4-694e0fe1a93b"
     - stage: seal
       stageUuid: "b474c803-f39f-811e-abeb-2ba164275e05"
     - stage: uuid
-      stageUuid: "75894516-1de1-8209-ae0d-02b43fdd42c0"
+      stageUuid: "474b3ddd-2047-87b4-a06f-d1453a93675f"
 version: 2
 ---
 # ai — Cloudflare Workers AI bindings as diamonds

@@ -2,57 +2,19 @@
 name: subcellular
 description: "Use when reasoning about subcellular as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: subcellular
-coordinate: subcellular · 8/crest · ea113b16
-contentUuid: "2edc2204-cb4e-5e3c-8024-fb54d60c0f06"
-diamondUuid: "e2ae9dc6-6068-8bbc-8633-74d24320143b"
-uuid: "ea113b16-5d36-8b4b-b168-ff10d4a4ac28"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - located
-    - location
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - located
-    - location
-    - merge
-    - sti
+coordinate: "subcellular · 1/base · 84ec1214"
+contentUuid: "4c0a40fa-2bf1-5c98-bc51-85d6a9f75d4b"
+diamondUuid: "c09df720-4d78-8e33-86fe-b6d560000b97"
+uuid: "84ec1214-fb23-84a1-9da9-8b2946c0e465"
+horo: 1
 typography:
   partition: subcellular
-  bondDegree: 20
-  neighbors: []
+  bondDegree: 22
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - located
-    - location
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - located
-    - location
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - located
-    - location
-    - merge
-    - sti
 signatures:
-  computationUuid: "4ad5d678-9345-888c-8efd-f801e4ce56a6"
+  computationUuid: "eb0fbc7d-3460-85ba-b034-fcaf7909929f"
   stages:
     - stage: path
       stageUuid: "e039208f-4bc0-8144-bc00-fc75d672b85a"
@@ -63,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d08ba17e-c5db-8ace-be2d-24a4ac3fa053"
     - stage: horo
-      stageUuid: "e6f7876d-2b3a-8a21-af95-7b1846f4494b"
+      stageUuid: "9dfd699b-f868-8ec3-bff6-3d8d58ce4f82"
     - stage: seal
-      stageUuid: "aa91397a-d111-811b-9095-18f4b5ee95f4"
+      stageUuid: "9c79b262-efe2-89cc-b6ed-24cdcc39bd59"
     - stage: uuid
-      stageUuid: "4f73c26f-799c-8013-94f9-16e25884d75a"
+      stageUuid: "06922e9e-91f0-8a25-bab2-4ec5b491d37e"
 version: 2
 ---
 # subcellular

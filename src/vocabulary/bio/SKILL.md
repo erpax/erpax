@@ -1,113 +1,35 @@
 ---
 name: bio
 description: "Use when reasoning about bio as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/bio
-coordinate: bio · 1/base · 603f9ed1
-contentUuid: "e7e4d119-fef2-5bda-966b-355921840e3c"
-diamondUuid: "4028e5a4-581a-8e69-96dd-1d9ca5ae14f7"
-uuid: "603f9ed1-3752-8e11-ab35-06cd9b02ccc2"
-horo: 1
-bonds:
-  in:
-    - chem
-    - collapse
-    - encoded
-    - encodes
-    - entity
-    - has
-    - interaction
-    - law
-    - merge
-    - part
-    - polymer
-    - sequence
-    - similarity
-    - sti
-  out:
-    - chem
-    - collapse
-    - encoded
-    - encodes
-    - entity
-    - has
-    - interaction
-    - law
-    - merge
-    - part
-    - polymer
-    - sequence
-    - similarity
-    - sti
+atomPath: "vocabulary/bio"
+coordinate: "vocabulary/bio · 5/round · a186f01b"
+contentUuid: "7745368d-e8b5-5488-81db-5d535b6a7e40"
+diamondUuid: "9d24491a-392c-8b20-a975-7d5b54e8b526"
+uuid: "a186f01b-b7a9-8f33-954e-e52ed4dfdbff"
+horo: 5
 typography:
-  partition: bio
+  partition: vocabulary
   bondDegree: 50
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - chem
-    - collapse
-    - encoded
-    - encodes
-    - entity
-    - has
-    - interaction
-    - law
-    - merge
-    - part
-    - polymer
-    - sequence
-    - similarity
-    - sti
-  matrix:
-    - chem
-    - collapse
-    - encoded
-    - encodes
-    - entity
-    - has
-    - interaction
-    - law
-    - merge
-    - part
-    - polymer
-    - sequence
-    - similarity
-    - sti
-  backlinks:
-    - chem
-    - collapse
-    - encoded
-    - encodes
-    - entity
-    - has
-    - interaction
-    - law
-    - merge
-    - part
-    - polymer
-    - sequence
-    - similarity
-    - sti
 signatures:
-  computationUuid: "987b2ad3-073b-813b-9d3a-8b05c3f23176"
+  computationUuid: "1d9a3884-09ad-85a1-9118-cf3eccdf14e3"
   stages:
     - stage: path
-      stageUuid: "2938cb93-77b6-801d-ad00-2df34f446f38"
+      stageUuid: "76dbaf75-0b26-8aac-93e1-95435048e333"
     - stage: trinity
-      stageUuid: "f7ce6f5c-08c3-8abd-8d97-21222638461c"
+      stageUuid: "3e1c8e33-9b29-871d-9292-e15df6039745"
     - stage: boundary
-      stageUuid: "5f2fd6a5-00aa-8639-bb8b-28b97a0ab14a"
+      stageUuid: "931de983-ec67-8168-a822-c26f353b05f6"
     - stage: links
-      stageUuid: "dc676801-1216-8756-a854-4930cca6d299"
+      stageUuid: "d4c83873-04bd-881b-bf1f-926b919d6061"
     - stage: horo
-      stageUuid: "c255a3ab-0289-828c-b259-8af8e580ceef"
+      stageUuid: "eb84ca40-508d-8c8d-b01a-5798d94e2d53"
     - stage: seal
-      stageUuid: "9eaee92f-4323-8e1b-95ce-9a28c86da4d5"
+      stageUuid: "0262f0f0-9181-8bab-be28-a07ff9aed1d1"
     - stage: uuid
-      stageUuid: "f2d86128-3002-82a0-9f2e-a7d957a1c31f"
+      stageUuid: "9bb9f0be-bc3e-8bc7-9b08-28a4de131fb0"
 version: 2
 ---
 # bio

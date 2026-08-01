@@ -2,76 +2,19 @@
 name: step
 description: "Use when reasoning about step — A single step item (as HowToStep, text, document, video, etc.) or a HowToSection."
 atomPath: step
-coordinate: step · 4/weave · e1d4a027
-contentUuid: "e08535d1-2e86-5128-9b8c-9492dd5eddff"
-diamondUuid: "37318419-3fa6-8071-a123-de25486e4b7c"
-uuid: "e1d4a027-73c2-864e-8267-56e1eeb5e1c3"
+coordinate: "step · 4/weave · 38e38c58"
+contentUuid: "5b008835-4c26-51a5-a044-2d500d9a1159"
+diamondUuid: "edcf0773-1205-8c9c-a3d0-7900ece6cf2a"
+uuid: "38e38c58-13cb-8f59-9f86-af2bbbdb06f4"
 horo: 4
-bonds:
-  in:
-    - answer
-    - breath
-    - command
-    - concatenate
-    - how
-    - law
-    - mala
-    - question
-    - value
-    - workflow
-  out:
-    - answer
-    - breath
-    - command
-    - concatenate
-    - how
-    - law
-    - mala
-    - question
-    - value
-    - workflow
 typography:
   partition: step
   bondDegree: 35
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - answer
-    - breath
-    - command
-    - concatenate
-    - how
-    - law
-    - question
-    - value
-    - workflow
-  matrix:
-    - answer
-    - breath
-    - command
-    - concatenate
-    - how
-    - law
-    - mala
-    - question
-    - value
-    - workflow
-  backlinks:
-    - answer
-    - breath
-    - command
-    - concatenate
-    - how
-    - law
-    - mala
-    - question
-    - value
-    - workflow
 signatures:
-  computationUuid: "7a9b08b0-7ef7-821f-84de-ec9005cf915f"
+  computationUuid: "987cc94d-034a-821b-aa23-64c5fb84a52f"
   stages:
     - stage: path
       stageUuid: "a113d1d8-ddb1-810a-a290-60416502a751"
@@ -82,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "be862ac3-0820-8c15-aa97-a949d91cd7aa"
     - stage: horo
-      stageUuid: "1c2a2f2e-f081-8dc5-b5a8-675756722347"
+      stageUuid: "2469e835-0401-8045-89c9-24ad2605abbb"
     - stage: seal
-      stageUuid: "5e528512-8b95-8289-83cf-3a84e3487fc3"
+      stageUuid: "dca7b7fa-d8f3-8e07-aa80-b5d461eeaa8a"
     - stage: uuid
-      stageUuid: "13fa498e-3800-85a2-b58e-c64769f36da3"
+      stageUuid: "4726b92f-3529-81d6-bbec-97982130b097"
 version: 2
 ---
 # step

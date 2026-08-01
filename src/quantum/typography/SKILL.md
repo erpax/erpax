@@ -1,214 +1,20 @@
 ---
 name: typography
 description: "Use when treating typographic richness as tamper-cost — each vitepress feature a page uses is a dimension a forger must reproduce, so fuller (gapless) typography costs more to forge."
-atomPath: quantum/typography
-coordinate: quantum/typography · 4/weave · 42aad686
-contentUuid: "8a1535de-daf1-5f3e-b7a7-62084ffb67fb"
-diamondUuid: "d87e9cb4-c951-866b-95e2-a92e187fb2e7"
-uuid: "42aad686-378f-88f7-948e-1d9877a1aad6"
-horo: 4
-bonds:
-  in:
-    - analytics
-    - architecture
-    - atom
-    - aura
-    - blockchain
-    - collapse
-    - cost
-    - css
-    - diamond
-    - digit
-    - entanglement
-    - form
-    - fractal
-    - gate
-    - guardian
-    - harmony
-    - holographic
-    - horo
-    - identity
-    - law
-    - link
-    - matrix
-    - metatron
-    - name
-    - navigation
-    - payload
-    - pivot
-    - proof
-    - purity
-    - quantum
-    - rodin
-    - seal
-    - search
-    - sequence
-    - skill
-    - tamper
-    - text
-    - trinity
-    - typography
-    - upgrade
-    - uuid
-    - vitepress
-    - word
-    - worker
-  out:
-    - analytics
-    - architecture
-    - atom
-    - aura
-    - blockchain
-    - collapse
-    - cost
-    - css
-    - diamond
-    - digit
-    - entanglement
-    - form
-    - fractal
-    - gate
-    - guardian
-    - harmony
-    - holographic
-    - horo
-    - identity
-    - law
-    - link
-    - matrix
-    - metatron
-    - name
-    - navigation
-    - payload
-    - pivot
-    - proof
-    - purity
-    - quantum
-    - rodin
-    - seal
-    - search
-    - sequence
-    - skill
-    - tamper
-    - text
-    - trinity
-    - typography
-    - upgrade
-    - uuid
-    - vitepress
-    - word
-    - worker
+atomPath: "quantum/typography"
+coordinate: "quantum/typography · 8/crest · 2ff783ff"
+contentUuid: "15d02ec4-3f27-56aa-9634-2ecebd9bc381"
+diamondUuid: "b2c067de-9f26-808c-a323-0807596fb6e0"
+uuid: "2ff783ff-4e55-8bf2-a46c-d97e9dca5944"
+horo: 8
 typography:
   partition: quantum
   bondDegree: 146
-  neighbors:
-    - analytics
-    - aura
-    - diamond
-    - purity
 standards:
   - "tamper-cost = entangled dimensions (the holographic principle)"
 bindings: []
-neighbors:
-  wikilink:
-    - holographic
-    - law
-    - quantum
-    - search
-    - tamper
-    - typography
-  matrix:
-    - analytics
-    - architecture
-    - atom
-    - aura
-    - blockchain
-    - collapse
-    - cost
-    - css
-    - diamond
-    - digit
-    - entanglement
-    - form
-    - fractal
-    - gate
-    - guardian
-    - harmony
-    - holographic
-    - horo
-    - identity
-    - law
-    - link
-    - matrix
-    - metatron
-    - name
-    - navigation
-    - payload
-    - pivot
-    - proof
-    - purity
-    - quantum
-    - rodin
-    - seal
-    - search
-    - sequence
-    - skill
-    - tamper
-    - text
-    - trinity
-    - typography
-    - upgrade
-    - uuid
-    - vitepress
-    - word
-    - worker
-  backlinks:
-    - analytics
-    - architecture
-    - atom
-    - aura
-    - blockchain
-    - collapse
-    - cost
-    - css
-    - diamond
-    - digit
-    - entanglement
-    - form
-    - fractal
-    - gate
-    - guardian
-    - harmony
-    - holographic
-    - horo
-    - identity
-    - law
-    - link
-    - matrix
-    - metatron
-    - name
-    - navigation
-    - payload
-    - pivot
-    - proof
-    - purity
-    - quantum
-    - rodin
-    - seal
-    - search
-    - sequence
-    - skill
-    - tamper
-    - text
-    - trinity
-    - typography
-    - upgrade
-    - uuid
-    - vitepress
-    - word
-    - worker
 signatures:
-  computationUuid: "bc38b31c-cff8-8e97-a089-26b405f8833a"
+  computationUuid: "351ae3ac-175f-839b-b4ca-e34dea31e01a"
   stages:
     - stage: path
       stageUuid: "30ecee3c-6545-881c-a317-cbfe41a76616"
@@ -219,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "155685ca-8c1f-849a-9060-e5e6dbb10934"
     - stage: horo
-      stageUuid: "752a4b9d-8f67-8821-84a6-0b49c19c10c2"
+      stageUuid: "5df7a4d3-9ca7-8358-8532-2e54f1ea13dd"
     - stage: seal
       stageUuid: "b1b017df-7a0f-881c-bb85-e3256aa048cd"
     - stage: uuid
-      stageUuid: "0fa611e2-25db-8460-942f-5aa04827bcc6"
+      stageUuid: "bdf24663-84aa-850e-a42b-5b5444b49969"
 quantum:
   superposition:
     - analytics
@@ -247,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "bc38b31c-cff8-8e97-a089-26b405f8833a"
-    contentUuid: "8a1535de-daf1-5f3e-b7a7-62084ffb67fb"
+    computationUuid: "351ae3ac-175f-839b-b4ca-e34dea31e01a"
+    contentUuid: "15d02ec4-3f27-56aa-9634-2ecebd9bc381"
 version: 2
 ---
 # quantum/typography — typography is holographic
@@ -261,4 +67,4 @@ Matter-twin: `src/quantum/typography/index.ts` (`depth` · `tamperBits` · `isGa
 
 @standard tamper-cost = entangled dimensions (the holographic principle)
 
-<sub>content-uuid `8a1535de-daf1-5f3e-b7a7-62084ffb67fb` · account `quantum/typography` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `15d02ec4-3f27-56aa-9634-2ecebd9bc381` · account `quantum/typography` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

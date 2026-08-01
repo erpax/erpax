@@ -2,83 +2,19 @@
 name: water
 description: "Use when reasoning about water as a anatomical part of [[body]] — vocabulary pivot to @/water; nested not duplicated."
 atomPath: "body/water"
-coordinate: "body/water · 1/base · 8e499a1b"
-contentUuid: "c166c103-cd62-5c16-a5a6-23b2d7422a10"
-diamondUuid: "ff55139c-e978-8284-acc4-d8a36cf3cb62"
-uuid: "8e499a1b-89ba-89a8-bf38-00e1a05d8dea"
-horo: 1
-bonds:
-  in:
-    - body
-    - collapse
-    - lake
-    - law
-    - merge
-    - ocean
-    - paganism
-    - river
-    - sea
-    - shinto
-    - sti
-    - taoism
-    - water
-  out:
-    - body
-    - collapse
-    - lake
-    - law
-    - merge
-    - ocean
-    - paganism
-    - river
-    - sea
-    - shinto
-    - sti
-    - taoism
-    - water
+coordinate: "body/water · 4/weave · a98a0c0d"
+contentUuid: "4230b7a2-feee-579a-b26e-1d79542728d8"
+diamondUuid: "8a14e4b5-4a7a-8b6e-bf38-406bfa3beb46"
+uuid: "a98a0c0d-80b9-810b-b409-069895b71cb8"
+horo: 4
 typography:
   partition: body
   bondDegree: 51
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - body
-    - law
-    - merge
-    - water
-  matrix:
-    - body
-    - collapse
-    - lake
-    - law
-    - merge
-    - ocean
-    - paganism
-    - river
-    - sea
-    - shinto
-    - sti
-    - taoism
-    - water
-  backlinks:
-    - body
-    - collapse
-    - lake
-    - law
-    - merge
-    - ocean
-    - paganism
-    - river
-    - sea
-    - shinto
-    - sti
-    - taoism
-    - water
 signatures:
-  computationUuid: "a9d7c6e9-c361-89e3-80ef-3e037d651ce9"
+  computationUuid: "051dca78-5987-8d54-b719-4a1defec4018"
   stages:
     - stage: path
       stageUuid: "1aa1b4de-738c-81b7-a7e1-e9f9be17779b"
@@ -89,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b774f621-e1d1-8dfb-8a61-ec1074dd6759"
     - stage: horo
-      stageUuid: "18ef2fd9-b7e8-88e8-81dd-dfb860fd3c32"
+      stageUuid: "e6f25f25-d007-80fc-b37c-e29d0d9f027a"
     - stage: seal
       stageUuid: "795fb864-02b4-8326-bb54-293bf1bf5ffc"
     - stage: uuid
-      stageUuid: "df1a4d0a-2450-867c-888b-1282ce7d8656"
+      stageUuid: "edf7b846-5768-855e-a08f-4589d284dfc4"
 version: 2
 ---
 # body/water — anatomical part

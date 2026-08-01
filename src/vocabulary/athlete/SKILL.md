@@ -1,58 +1,35 @@
 ---
 name: athlete
 description: Use when reasoning about athlete — A person that acts as performing member of a sports team; a player as opposed to a coach.
-atomPath: vocabulary/athlete
-coordinate: athlete · 4/weave · 019d1633
-contentUuid: "71681b9d-dec2-5dbd-aa3a-4788b37e859e"
-diamondUuid: "b19ee35b-c647-8391-9d83-e235f4d33521"
-uuid: "019d1633-ec56-8dc0-800f-d053af2b4428"
-horo: 4
-bonds:
-  in:
-    - law
-    - person
-    - thing
-  out:
-    - law
-    - person
-    - thing
+atomPath: "vocabulary/athlete"
+coordinate: "vocabulary/athlete · 8/crest · adc17f4a"
+contentUuid: "c7e6df80-c8ad-5e94-9463-3c36b7279658"
+diamondUuid: "4d5ee963-d375-89ec-a36e-5702fdb912e0"
+uuid: "adc17f4a-8b7e-8ac6-9452-733c051ee99a"
+horo: 8
 typography:
-  partition: athlete
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - person
-    - thing
-  matrix:
-    - law
-    - person
-    - thing
-  backlinks:
-    - law
-    - person
-    - thing
 signatures:
-  computationUuid: "1d792486-2dd3-8a95-8030-548bd064e36f"
+  computationUuid: "97be7929-6249-8020-9a2c-19a126841058"
   stages:
     - stage: path
-      stageUuid: "60e8370b-c35c-8b97-bbc4-74fbcb2fb194"
+      stageUuid: "67f3c749-e7d1-8670-9bc1-23b29e393d23"
     - stage: trinity
-      stageUuid: "7f8d3472-bd32-8f61-9902-967869d5c3c3"
+      stageUuid: "e7ff597b-3ca1-8eb0-a5d7-432f0dd43bef"
     - stage: boundary
-      stageUuid: "0e417db1-b8f3-8d88-831f-65fa94aae98b"
+      stageUuid: "4ce0e472-55b9-8d46-925a-c5e9e3a85b8b"
     - stage: links
-      stageUuid: "2e108e70-afaa-86fe-a57d-263895dbcce7"
+      stageUuid: "cb7aead1-5b5c-8b28-afff-f5de15b5b0ac"
     - stage: horo
-      stageUuid: "56a749dd-bf58-8828-abd9-c84518d4747b"
+      stageUuid: "7062f194-da82-82e9-a8e1-26c4db92b850"
     - stage: seal
-      stageUuid: "b7375382-fe36-81d0-b16f-e51273719abc"
+      stageUuid: "124b584b-0b71-8535-a599-62142262c2ef"
     - stage: uuid
-      stageUuid: "801a079d-5e44-80da-97d5-2ac2fac44bbd"
+      stageUuid: "10aec453-651c-8d4c-b064-f24f2387e5b6"
 version: 2
 ---
 # athlete

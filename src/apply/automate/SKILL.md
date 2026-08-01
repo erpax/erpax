@@ -2,72 +2,34 @@
 name: automate
 description: Use when orchestrating erpax efficiency loops — inventory → clean → measure → ratchet → emit. Tamper cost rises as entropy falls; prompt→erpax is the only viable path.
 atomPath: "apply/automate"
-coordinate: "apply/automate · 7/descent · 4d087083"
-contentUuid: "e074ca42-3cb0-5c79-98c3-32b4e8ae4852"
-diamondUuid: "51eabd1b-df1f-86fd-9418-337990c5f8d2"
-uuid: "4d087083-91cb-87f1-b0bf-b42d27d8a639"
-horo: 7
-bonds:
-  in:
-    - apply
-    - efficiency
-    - entanglement
-    - inventory
-    - policy
-  out:
-    - apply
-    - efficiency
-    - entanglement
-    - inventory
-    - policy
+coordinate: "apply/automate · 1/base · dd4d7592"
+contentUuid: "33674370-dd12-55ad-a881-4d19838da237"
+diamondUuid: "de7524d2-8ecf-854d-a9ce-236b7e542a4a"
+uuid: "dd4d7592-9e89-835a-a939-d55d31f66f2b"
+horo: 1
 typography:
   partition: apply
   bondDegree: 20
-  neighbors:
-    - "analytics/max-tamper-cost"
-    - aura
-    - diamond
-    - hallucination
-    - purity
 standards:
   - erpax — automate orchestration loop
 bindings: []
-neighbors:
-  wikilink:
-    - apply
-    - efficiency
-    - entanglement
-    - inventory
-    - policy
-  matrix:
-    - apply
-    - efficiency
-    - entanglement
-    - inventory
-    - policy
-  backlinks:
-    - apply
-    - efficiency
-    - entanglement
-    - inventory
-    - policy
 signatures:
-  computationUuid: "c9a29cc1-bb2c-816d-84dc-b0638f30f80b"
+  computationUuid: "ff4120aa-345d-82eb-8d9f-7cf9f6eaee78"
   stages:
     - stage: path
       stageUuid: "30d8d610-974e-8d46-aed9-cfd907210fe2"
     - stage: trinity
       stageUuid: "0436631d-7de3-8b9c-b8e5-3766874e3155"
     - stage: boundary
-      stageUuid: "9ec13732-b957-821f-97d0-e24005824045"
+      stageUuid: "c065e694-9798-85e3-a07a-076725adc9c0"
     - stage: links
       stageUuid: "04249113-7d8b-84fc-a36d-14cdd15fb9c7"
     - stage: horo
-      stageUuid: "4f09c76c-ddd8-828e-86f7-6d0671c032cf"
+      stageUuid: "f36783cb-491b-8471-927d-a13b38920d5f"
     - stage: seal
       stageUuid: "7dca0387-b0d4-8f60-b349-7e9e54c1c3e7"
     - stage: uuid
-      stageUuid: "1e3a23df-7bc5-840a-88ae-d0c9a8800572"
+      stageUuid: "65783bac-09b7-82fc-8897-c3e435cb95a2"
 version: 2
 ---
 # automate

@@ -1,82 +1,35 @@
 ---
 name: force
 description: "Use when reasoning about force as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/force
-coordinate: force · 8/crest · 10020f5d
-contentUuid: "7aac6d69-7a4f-5f1d-b999-ee9d95825767"
-diamondUuid: "7ee5999f-7f39-8ada-a04a-adedb0ca24af"
-uuid: "10020f5d-387a-876a-bc9d-de60d53def6a"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - legal
-    - legislation
-    - merge
-    - science
-    - status
-    - sti
-  out:
-    - collapse
-    - law
-    - legal
-    - legislation
-    - merge
-    - science
-    - status
-    - sti
+atomPath: "vocabulary/force"
+coordinate: "vocabulary/force · 7/descent · a6dbe040"
+contentUuid: "5cb63ec2-5e92-57c5-a6d2-a5b803224a05"
+diamondUuid: "27603a67-ce09-8ceb-a84e-ab5c27245387"
+uuid: "a6dbe040-de0f-86ef-98b8-7ce6faffde1c"
+horo: 7
 typography:
-  partition: force
+  partition: vocabulary
   bondDegree: 25
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - legal
-    - legislation
-    - merge
-    - status
-    - sti
-  matrix:
-    - collapse
-    - law
-    - legal
-    - legislation
-    - merge
-    - science
-    - status
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - legal
-    - legislation
-    - merge
-    - science
-    - status
-    - sti
 signatures:
-  computationUuid: "ea30fea7-ccf8-8363-93b8-442c9623264b"
+  computationUuid: "b2f9b42f-fb5d-836c-95bd-1f05a8e2b471"
   stages:
     - stage: path
-      stageUuid: "255eb6dc-62a8-8226-8240-e12f282a1095"
+      stageUuid: "f4f85a9a-d9bc-82db-b19c-00ba171102e6"
     - stage: trinity
-      stageUuid: "997f0475-9dd4-88d1-afe5-3f0bffb68bde"
+      stageUuid: "2d84f33e-4824-8cdb-995f-81adbcf6b887"
     - stage: boundary
-      stageUuid: "8e48bd7c-f393-8762-939a-6a47edaea500"
+      stageUuid: "fd21abd3-42cc-86cd-95b8-0cf6e250bf6b"
     - stage: links
-      stageUuid: "eb97d1be-7b83-8591-9bb9-fc6940e047de"
+      stageUuid: "6f3f7d45-dbf1-8e64-abd8-c2671d3c0e10"
     - stage: horo
-      stageUuid: "4d67b2e3-9abc-8b39-8b0d-67cd6250b79f"
+      stageUuid: "861a045f-2765-84b5-84da-5aa153cacfff"
     - stage: seal
-      stageUuid: "5e619e31-4aee-86e4-b19e-b4ff9b8141d7"
+      stageUuid: "34c9816c-3e29-8ce4-97f9-b707cbdaba22"
     - stage: uuid
-      stageUuid: "5ba66231-3f63-8dc3-85f6-9728754db84f"
+      stageUuid: "8c8a7594-e6b2-81cb-9db4-7b389b0d9bbf"
 version: 2
 ---
 # force

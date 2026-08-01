@@ -1,63 +1,35 @@
 ---
 name: icubeds
 description: "Use when reasoning about icubeds as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/icubeds
-coordinate: icubeds · 1/base · c1e862b1
-contentUuid: "5ee3bdf2-8375-58f0-a450-06455b3766eb"
-diamondUuid: "f1989157-03c9-8f60-87d2-a56cf1d865c5"
-uuid: "c1e862b1-3c99-8873-895c-a0a1a95bab51"
+atomPath: "vocabulary/icubeds"
+coordinate: "vocabulary/icubeds · 1/base · 7994bb62"
+contentUuid: "d45f6125-5bf5-5dd7-a0f8-0e8ff633e99e"
+diamondUuid: "226b7e88-c5bd-8d7a-b851-52fecf49c27e"
+uuid: "7994bb62-c59b-83d2-aa54-577a2f24512e"
 horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: icubeds
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "98f74142-3d92-8266-b2c5-b25bc0127939"
+  computationUuid: "7bd5c783-bd01-8904-8fcc-b3a94807d5b2"
   stages:
     - stage: path
-      stageUuid: "83b2e67b-6ce7-8c8c-995b-309235f0c9a4"
+      stageUuid: "4ca4131f-91de-8ff2-82a8-f34c17fb2c7b"
     - stage: trinity
-      stageUuid: "1fd9a025-d0a8-8945-aefd-02fba4bbe33c"
+      stageUuid: "fdd5e9f0-3966-890f-a10a-82685a4d5111"
     - stage: boundary
-      stageUuid: "443832ba-9e10-8ddd-b0c2-ca022f669d5c"
+      stageUuid: "cdbdbfc4-34ae-85a2-85fd-d1f4d24ded9e"
     - stage: links
-      stageUuid: "9501d7f6-fe52-877f-91aa-25bfa756264d"
+      stageUuid: "c5183524-fff3-8078-bfe5-b893319e717f"
     - stage: horo
-      stageUuid: "b4682e64-e4e0-865b-8a3f-ce2cfecfdfbb"
+      stageUuid: "c7a7372f-3983-8852-a73a-23ca4db835c3"
     - stage: seal
-      stageUuid: "14394851-d059-87e7-9040-8400f55567cf"
+      stageUuid: "9e40e063-a81e-8209-b9c4-1d18676a4485"
     - stage: uuid
-      stageUuid: "e3e6f594-c602-8a54-92bf-afedf6668087"
+      stageUuid: "533feb3e-27d3-8682-866f-887aa70e4565"
 version: 2
 ---
 # icubeds

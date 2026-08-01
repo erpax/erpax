@@ -2,60 +2,16 @@
 name: discover
 description: "Use when reasoning about discovery vs creation — all exists at once and just needs to be discovered. Content-addressing is total, so every content (even one never written) already has its address NOW; the map is complete, the 'next' pre-exists as an unread address. Discovering one thing addresses the whole area at once. But the value at a novel address still costs the seed (s>0) — the forms exist, the territory is walked once."
 atomPath: discover
-coordinate: "discover · 4/weave · 3497e7c9"
-contentUuid: "727582cc-ee1a-5f91-bde7-b1c0e851401e"
+coordinate: "discover · 4/weave · 1a91b43f"
+contentUuid: "7a15d318-0ed2-5726-bfc8-4ac72a24dde0"
 diamondUuid: "16aceb43-5d70-886d-920c-22ab4e4b1208"
-uuid: "3497e7c9-0868-8fd5-9a59-d4d54332ec5c"
+uuid: "1a91b43f-d976-8acc-a0ce-3b9ac48e6688"
 horo: 4
-bonds:
-  in:
-    - action
-    - coincidence
-    - conversion
-    - improve
-    - law
-    - merge
-    - optimization
-    - think
-  out:
-    - action
-    - coincidence
-    - conversion
-    - improve
-    - law
-    - merge
-    - optimization
-    - think
 typography:
   partition: discover
   bondDegree: 29
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - coincidence
-    - law
-    - merge
-    - think
-  matrix:
-    - action
-    - coincidence
-    - conversion
-    - improve
-    - law
-    - merge
-    - optimization
-    - think
-  backlinks:
-    - action
-    - coincidence
-    - conversion
-    - improve
-    - law
-    - merge
-    - optimization
-    - think
 signatures:
   computationUuid: "32b8b346-c9ec-8a44-9f71-0e33ae057238"
   stages:

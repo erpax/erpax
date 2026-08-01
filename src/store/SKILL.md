@@ -2,207 +2,19 @@
 name: store
 description: Use when reasoning about store — A retail good store.
 atomPath: store
-coordinate: store · 4/weave · 64196269
-contentUuid: "6cf3c224-6719-58a7-b32a-c01d7c655586"
-diamondUuid: "0f21bc20-948b-8aa7-a0a0-85a27c915bf8"
-uuid: "64196269-350f-80c1-8428-419751ad8d6e"
-horo: 4
-bonds:
-  in:
-    - auto
-    - bike
-    - book
-    - clothing
-    - computer
-    - convenience
-    - department
-    - electronics
-    - equipment
-    - furniture
-    - garden
-    - goods
-    - grocery
-    - hardware
-    - has
-    - home
-    - jewelry
-    - law
-    - liquor
-    - mens
-    - mobile
-    - movie
-    - music
-    - offered
-    - office
-    - online
-    - outlet
-    - parts
-    - pet
-    - phone
-    - rental
-    - returns
-    - shoe
-    - sporting
-    - toy
-    - wholesale
-  out:
-    - auto
-    - bike
-    - book
-    - clothing
-    - computer
-    - convenience
-    - department
-    - electronics
-    - equipment
-    - furniture
-    - garden
-    - goods
-    - grocery
-    - hardware
-    - has
-    - home
-    - jewelry
-    - law
-    - liquor
-    - mens
-    - mobile
-    - movie
-    - music
-    - offered
-    - office
-    - online
-    - outlet
-    - parts
-    - pet
-    - phone
-    - rental
-    - returns
-    - shoe
-    - sporting
-    - toy
-    - wholesale
+coordinate: "store · 1/base · 287e5351"
+contentUuid: "854f786d-b467-5357-8c71-1ee23108f7ca"
+diamondUuid: "00a69727-7b0b-8abc-ae3c-6c187c9c606d"
+uuid: "287e5351-298a-8ac1-93b9-9e6f9bbe9482"
+horo: 1
 typography:
   partition: store
-  bondDegree: 141
-  neighbors: []
+  bondDegree: 150
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - auto
-    - bike
-    - book
-    - clothing
-    - computer
-    - convenience
-    - department
-    - electronics
-    - equipment
-    - furniture
-    - garden
-    - goods
-    - grocery
-    - hardware
-    - has
-    - home
-    - jewelry
-    - law
-    - liquor
-    - mens
-    - mobile
-    - movie
-    - music
-    - offered
-    - office
-    - online
-    - outlet
-    - parts
-    - pet
-    - phone
-    - rental
-    - returns
-    - shoe
-    - sporting
-    - toy
-    - wholesale
-  matrix:
-    - auto
-    - bike
-    - book
-    - clothing
-    - computer
-    - convenience
-    - department
-    - electronics
-    - equipment
-    - furniture
-    - garden
-    - goods
-    - grocery
-    - hardware
-    - has
-    - home
-    - jewelry
-    - law
-    - liquor
-    - mens
-    - mobile
-    - movie
-    - music
-    - offered
-    - office
-    - online
-    - outlet
-    - parts
-    - pet
-    - phone
-    - rental
-    - returns
-    - shoe
-    - sporting
-    - toy
-    - wholesale
-  backlinks:
-    - auto
-    - bike
-    - book
-    - clothing
-    - computer
-    - convenience
-    - department
-    - electronics
-    - equipment
-    - furniture
-    - garden
-    - goods
-    - grocery
-    - hardware
-    - has
-    - home
-    - jewelry
-    - law
-    - liquor
-    - mens
-    - mobile
-    - movie
-    - music
-    - offered
-    - office
-    - online
-    - outlet
-    - parts
-    - pet
-    - phone
-    - rental
-    - returns
-    - shoe
-    - sporting
-    - toy
-    - wholesale
 signatures:
-  computationUuid: "1044249f-89dc-8469-8427-9ed4e30c0752"
+  computationUuid: "d29069a1-5f79-82f6-8424-7a8779d2222c"
   stages:
     - stage: path
       stageUuid: "735b61d7-85eb-8fde-bd20-6bafa6a0ab1b"
@@ -213,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d27d8dc1-e0b9-8b74-b575-e5566f99742c"
     - stage: horo
-      stageUuid: "e1b35806-0397-8c75-92f5-a2928edff667"
+      stageUuid: "40e59c04-4e15-8c85-b8e7-c0d3a51e9a84"
     - stage: seal
-      stageUuid: "ff86e375-543d-88e1-90c8-ad140156e805"
+      stageUuid: "e5d2c8b6-64ca-8040-8aba-ed0ce7b818c3"
     - stage: uuid
-      stageUuid: "4e1707f0-775d-80f5-b32b-95fc6e5de283"
+      stageUuid: "a9ddc7d0-5ea9-83b4-a521-68ef95dab81e"
 version: 2
 ---
 # store

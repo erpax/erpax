@@ -1,78 +1,35 @@
 ---
 name: checking
 description: "Use when reasoning about checking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/checking
-coordinate: checking · 5/round · 6cad5a89
-contentUuid: "23e51433-ae9f-538f-9320-59d7fbbd70fd"
-diamondUuid: "80929c0f-1012-8519-95b7-d983a9fa54f7"
-uuid: "6cad5a89-da75-85e6-af58-fe9730ae26e5"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - fact
-    - law
-    - merge
-    - policy
-    - sti
-    - verification
-  out:
-    - collapse
-    - fact
-    - law
-    - merge
-    - policy
-    - sti
-    - verification
+atomPath: "vocabulary/checking"
+coordinate: "vocabulary/checking · 4/weave · 95c8ceb9"
+contentUuid: "3e58ddd9-c71f-5ae4-a8d7-5c563c0a3756"
+diamondUuid: "16302095-33b0-88de-976a-4d031be54448"
+uuid: "95c8ceb9-704d-887d-8b5e-9437bfab4569"
+horo: 4
 typography:
-  partition: checking
+  partition: vocabulary
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - fact
-    - law
-    - merge
-    - policy
-    - sti
-    - verification
-  matrix:
-    - collapse
-    - fact
-    - law
-    - merge
-    - policy
-    - sti
-    - verification
-  backlinks:
-    - collapse
-    - fact
-    - law
-    - merge
-    - policy
-    - sti
-    - verification
 signatures:
-  computationUuid: "8bea63cb-ad4d-8390-a7ad-78b013e0dc12"
+  computationUuid: "3688cf70-a934-856d-b521-a525bb8dec5b"
   stages:
     - stage: path
-      stageUuid: "da816e80-ceee-8c70-ba34-9d6c62daf72f"
+      stageUuid: "9b53566c-f210-8358-b580-6940a0802b86"
     - stage: trinity
-      stageUuid: "db442e47-46d4-8d8b-828d-1f752c6a449a"
+      stageUuid: "b18cd586-fafc-86b9-8515-d1217ffe74ed"
     - stage: boundary
-      stageUuid: "304f6cac-be18-82b9-a05f-5f1cf09e5694"
+      stageUuid: "7101fab3-51f5-88dc-a178-bb92898df8bf"
     - stage: links
-      stageUuid: "ff7164fc-9f1f-86bf-8952-b533141f441f"
+      stageUuid: "186c41e5-afe1-85ec-acd0-3375336b02fe"
     - stage: horo
-      stageUuid: "fc2d19c9-bddd-83ef-ac35-727eab2e74c9"
+      stageUuid: "ff00bc7b-5119-870c-8479-1cb3e2f90946"
     - stage: seal
-      stageUuid: "9ed558c0-b1b1-83c5-8b5e-9f4f0df62844"
+      stageUuid: "aad41a3e-e257-8664-badb-c53d9b944345"
     - stage: uuid
-      stageUuid: "238cea94-109b-8088-8714-b56085a21850"
+      stageUuid: "674ec6f6-0049-8d61-be8c-d1104401c699"
 version: 2
 ---
 # checking

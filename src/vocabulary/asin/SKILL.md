@@ -1,58 +1,35 @@
 ---
 name: asin
 description: "Use when reasoning about asin — An Amazon Standard Identification Number (ASIN) is a 10-character alphanumeric unique identifier assigned by Amazon.com and its partners for product identification within the Amazo"
-atomPath: vocabulary/asin
-coordinate: asin · 1/base · 3d82b3d9
-contentUuid: "88375a2b-e06e-580f-bd5d-582d3c5022ba"
-diamondUuid: "8bdc576e-2f79-8047-a500-c439556a5496"
-uuid: "3d82b3d9-46d6-8fb3-8060-396df71aab79"
-horo: 1
-bonds:
-  in:
-    - law
-    - product
-    - thing
-  out:
-    - law
-    - product
-    - thing
+atomPath: "vocabulary/asin"
+coordinate: "vocabulary/asin · 2/share · 809ca55e"
+contentUuid: "eacddea0-66b4-5feb-9545-8ae8c7db78e3"
+diamondUuid: "c86e6538-36de-857d-a744-40c44d419d5b"
+uuid: "809ca55e-ec35-8a59-abed-b6c31bf0fc08"
+horo: 2
 typography:
-  partition: asin
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - product
-    - thing
-  matrix:
-    - law
-    - product
-    - thing
-  backlinks:
-    - law
-    - product
-    - thing
 signatures:
-  computationUuid: "16f101bf-d876-8513-9326-355dc49078d3"
+  computationUuid: "b4df3199-5cd3-8ece-b0e9-924a39f6583a"
   stages:
     - stage: path
-      stageUuid: "8a57fb99-d6b0-8e15-b264-3ca3158b0dde"
+      stageUuid: "01db45f0-065f-80b4-b1f8-16eb41a3cbff"
     - stage: trinity
-      stageUuid: "6daa40b6-dd18-8e8e-aac6-a81858050477"
+      stageUuid: "cff8dd80-21f2-894d-983c-0585733c4908"
     - stage: boundary
-      stageUuid: "6dfa85af-30c4-83a9-95e4-34f8bf403c5b"
+      stageUuid: "e8898897-d6f6-8e75-ae73-fc44051a79ee"
     - stage: links
-      stageUuid: "8aa10a18-34ba-8534-a7d6-d3f567af01f3"
+      stageUuid: "cad9604b-c9a9-842c-a4d4-2234f9011232"
     - stage: horo
-      stageUuid: "058dce01-45d8-89b4-8dd6-3f988ffd32d3"
+      stageUuid: "1ef56b2f-cdb4-88e3-98a8-189f615f2c9a"
     - stage: seal
-      stageUuid: "924a73bf-b6fa-8b55-aec4-077303e6a22f"
+      stageUuid: "eff483f8-7d5e-87b3-a9e9-59e496dc4b12"
     - stage: uuid
-      stageUuid: "c1ce5ee2-0c10-883d-9fb8-71eeb9fb321a"
+      stageUuid: "95176d3f-12bd-836e-95f7-f264ad93b533"
 version: 2
 ---
 # asin

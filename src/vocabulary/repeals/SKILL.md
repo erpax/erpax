@@ -1,68 +1,35 @@
 ---
 name: repeals
 description: "Use when reasoning about repeals as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/repeals
-coordinate: repeals · 7/descent · 98a8b54d
-contentUuid: "ba59780d-35a0-5136-a9ef-0d982ce8c42c"
-diamondUuid: "36de4eb5-ecd9-87e6-aeb6-492d88594108"
-uuid: "98a8b54d-9d75-8156-b12a-f1b3d40ad85c"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
+atomPath: "vocabulary/repeals"
+coordinate: "vocabulary/repeals · 4/weave · 7b6a52a9"
+contentUuid: "fecfd54e-417c-5d38-a315-8f329ab72abd"
+diamondUuid: "4f093c7e-80ab-8bf0-9794-de69d79b30bd"
+uuid: "7b6a52a9-802c-8431-b01c-8904541d53f2"
+horo: 4
 typography:
-  partition: repeals
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
 signatures:
-  computationUuid: "e24c21c8-e53c-85cc-834c-8ae2a9d1e09d"
+  computationUuid: "bfe29036-b48c-8a1a-9ac2-a48f8dd32612"
   stages:
     - stage: path
-      stageUuid: "5a7d9fe8-f054-8acc-9a8f-c90dec93efe9"
+      stageUuid: "09d989d8-b401-8f6d-8eb3-ee0e24b60fc9"
     - stage: trinity
-      stageUuid: "5870eb27-5804-8c72-b495-887d5ea8bbf7"
+      stageUuid: "b891c4e3-d264-8910-a17c-daefe238fbfc"
     - stage: boundary
-      stageUuid: "7e605c66-d6c4-8412-88eb-2a9830d338e7"
+      stageUuid: "ac6fd546-126f-8864-b242-0abb3bc11d57"
     - stage: links
-      stageUuid: "9f5c6125-497a-8ea0-a5ea-469094b3c570"
+      stageUuid: "05700643-2f18-8685-bf49-90074fbf0524"
     - stage: horo
-      stageUuid: "ee92d98e-bc22-8433-9b5f-496e83a299a9"
+      stageUuid: "d9505a6b-636b-8553-be37-db67e42fa238"
     - stage: seal
-      stageUuid: "228fbcc6-ac5b-86dd-a0e7-e5099be74e7c"
+      stageUuid: "12b48801-5deb-8247-9666-30f58cf0ddd7"
     - stage: uuid
-      stageUuid: "1ccbb707-1718-8e2a-a7c4-99e829264ed9"
+      stageUuid: "09f912c8-1519-81f5-b792-b189943fdeec"
 version: 2
 ---
 # repeals

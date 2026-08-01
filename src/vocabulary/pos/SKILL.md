@@ -1,68 +1,35 @@
 ---
 name: pos
 description: "Use when reasoning about pos as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/pos
-coordinate: pos · 8/crest · 8909d5cd
-contentUuid: "82b9c60b-cf3d-5bb8-a4a2-15726b556a47"
-diamondUuid: "68ca6b97-ea32-88ec-94ed-604408cde563"
-uuid: "8909d5cd-bfc6-84d1-8e8b-09956c983983"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - has
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - has
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/pos"
+coordinate: "vocabulary/pos · 5/round · ea53bc95"
+contentUuid: "051b0db7-bc74-5dd0-b56f-07542cc8f976"
+diamondUuid: "3cc92462-f91d-8483-97db-bf665d4d56c1"
+uuid: "ea53bc95-3c23-8077-9426-7820442d630d"
+horo: 5
 typography:
-  partition: pos
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - has
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - has
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - has
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "2ab76e9a-c370-8c82-ab81-6f8027e8766f"
+  computationUuid: "ed577225-5b61-8175-9f36-78d35b024efc"
   stages:
     - stage: path
-      stageUuid: "61e6ebad-4a1d-82ff-ab61-5c5c3f95d12b"
+      stageUuid: "5043822d-453d-82e3-9a93-1c7a89a4e90a"
     - stage: trinity
-      stageUuid: "8dab2094-17f4-891e-89fb-f1695891dc7c"
+      stageUuid: "17d18647-b352-86b0-94de-81722d8ac32d"
     - stage: boundary
-      stageUuid: "b10a00d4-da75-832f-9ee7-10114007f933"
+      stageUuid: "99e97572-fb47-8bb4-abc0-d65b95ccfa6e"
     - stage: links
-      stageUuid: "639c6062-bb84-8c20-aa2e-1b2add2ff856"
+      stageUuid: "3966a786-3e31-8599-a786-aff8335ff083"
     - stage: horo
-      stageUuid: "e9ae9c63-1366-88a7-96e9-2e143e234b96"
+      stageUuid: "690c9859-d85c-8be0-a5ff-23ac407125e8"
     - stage: seal
-      stageUuid: "0113c24b-66d6-811d-b73e-caf68ddc42e0"
+      stageUuid: "36ba9c46-bda8-80d9-bd0b-249c0cf8fec9"
     - stage: uuid
-      stageUuid: "439c3c0e-9192-8352-9c37-f9cec4071e5a"
+      stageUuid: "fcf3bc2e-32fb-8938-9916-59c75f5ffe29"
 version: 2
 ---
 # pos

@@ -1,59 +1,35 @@
 ---
 name: abridged
 description: Use when reasoning about abridged — Indicates whether the book is an abridged edition.
-atomPath: vocabulary/abridged
-coordinate: abridged · 1/base · 2218550d
-contentUuid: "8bcbb82c-21db-553e-bd0d-9300fb59cf55"
-diamondUuid: "df0995d6-f83b-8cec-9dcd-88712bef5fb6"
-uuid: "2218550d-b7ef-84ea-a9c9-8cf8fc9fcd4c"
-horo: 1
-bonds:
-  in:
-    - creative
-    - law
-    - thing
-  out:
-    - creative
-    - law
-    - thing
+atomPath: "vocabulary/abridged"
+coordinate: "vocabulary/abridged · 7/descent · 121bad49"
+contentUuid: "568da114-9254-57a8-808c-d7eef3f4de31"
+diamondUuid: "2212aa3d-9a22-8071-bd9c-47911f1315fb"
+uuid: "121bad49-e4b1-8360-a58d-8d3280a55d34"
+horo: 7
 typography:
-  partition: abridged
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
-  - schema.org
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - creative
-    - law
-    - thing
-  matrix:
-    - creative
-    - law
-    - thing
-  backlinks:
-    - creative
-    - law
-    - thing
 signatures:
-  computationUuid: "f1b9621a-cb38-85d7-9f9b-7392bd76df50"
+  computationUuid: "bb9dfc3f-0621-8949-9ecf-e7605fb6bde6"
   stages:
     - stage: path
-      stageUuid: "31207116-539c-8b20-8707-92651accf13f"
+      stageUuid: "4ace9a06-0037-8d36-be14-7158fb36049f"
     - stage: trinity
-      stageUuid: "f01ba9fb-f6d2-8df5-83f2-e61cce8c8cfc"
+      stageUuid: "8ce15c71-5f0c-81eb-bce9-722be252e74e"
     - stage: boundary
-      stageUuid: "856986c7-f8e3-8cef-92d7-14f0202d4e9f"
+      stageUuid: "44cf3720-ad7b-877d-96d3-d5aa5639809c"
     - stage: links
-      stageUuid: "c7a46975-76b3-8183-bd1a-779c9cc3c4cc"
+      stageUuid: "4085ad52-d369-8ac7-bf33-f943318d4b0a"
     - stage: horo
-      stageUuid: "aea8c4c7-e3f1-855a-acba-bfe4aa0b8c38"
+      stageUuid: "baf88e2d-f0fb-8ea8-9624-fc351c4520e4"
     - stage: seal
-      stageUuid: "6a57aeba-af93-878a-9f23-6733f50e1320"
+      stageUuid: "63930627-941a-835e-8bba-693a42f77411"
     - stage: uuid
-      stageUuid: "e290062f-2014-89fd-b4d3-74cd22c92ed3"
+      stageUuid: "919f48eb-2446-890f-a70d-07e3c425623c"
 version: 2
 ---
 # abridged

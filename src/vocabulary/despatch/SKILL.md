@@ -1,63 +1,35 @@
 ---
 name: despatch
 description: "Use when reasoning about despatch as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/despatch
-coordinate: despatch · 2/share · 7ff294ea
-contentUuid: "0f1f444f-6075-5b46-a392-28a227886933"
-diamondUuid: "524648c5-753b-8777-9b03-24c485778488"
-uuid: "7ff294ea-60cf-8e03-8fcd-c34bb978c603"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/despatch"
+coordinate: "vocabulary/despatch · 5/round · 515643c4"
+contentUuid: "620491ad-21ba-5f4e-8abd-2a7050529581"
+diamondUuid: "e1110670-8aef-80e8-be1e-435c9fe99a88"
+uuid: "515643c4-bb4a-8275-b474-e288f4bb1620"
+horo: 5
 typography:
-  partition: despatch
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "2f1bacb7-0075-80c4-be67-999203858f93"
+  computationUuid: "dcad2980-9190-8f51-bb96-2a84c8032855"
   stages:
     - stage: path
-      stageUuid: "5779c05f-b13e-896e-8b57-1df05346bd3e"
+      stageUuid: "ef01e8b0-1239-825a-8e4e-d6962ada19c7"
     - stage: trinity
-      stageUuid: "bdd28e93-4d4c-8fc0-906e-4b1badcb9c6e"
+      stageUuid: "b29cf1c3-faff-85e0-931d-7b37cd1c9953"
     - stage: boundary
-      stageUuid: "9d78238d-22ea-8f0f-9a1f-7d5b745888e2"
+      stageUuid: "039fc46c-2da0-89ca-9c2c-97d03c519eda"
     - stage: links
-      stageUuid: "0eefebd9-709b-8691-8b14-2786895196ec"
+      stageUuid: "7cd29a93-9619-89f7-b808-83ce2d9c0675"
     - stage: horo
-      stageUuid: "5a6ae8a8-db9b-86d3-8f34-4a8a89053f41"
+      stageUuid: "af346b9a-cc14-86cc-83b4-4634837834e4"
     - stage: seal
-      stageUuid: "666634e6-ad72-8165-8c25-64cbbcf4d5f9"
+      stageUuid: "a99a404b-4cee-8167-879e-3712cb6c9c28"
     - stage: uuid
-      stageUuid: "6c01073e-c64b-80ac-a98d-38fc9c31a04b"
+      stageUuid: "4c638324-ad61-8734-802c-1712e137a95b"
 version: 2
 ---
 # despatch

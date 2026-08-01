@@ -2,92 +2,20 @@
 name: platform
 description: "Use when reasoning about platform as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: platform
-coordinate: platform · 2/share · 06d01fc4
-contentUuid: "25312d9c-73a8-5afc-891e-42398a0e0bc3"
-diamondUuid: "4a40fe9f-3575-84fe-b392-098f1d3fe657"
-uuid: "06d01fc4-fc01-8397-99f4-1a7a3e37be7b"
-horo: 2
-bonds:
-  in:
-    - action
-    - arrival
-    - collapse
-    - departure
-    - digital
-    - enumeration
-    - game
-    - law
-    - merge
-    - plugin
-    - runtime
-    - sti
-    - target
-  out:
-    - action
-    - arrival
-    - collapse
-    - departure
-    - digital
-    - enumeration
-    - game
-    - law
-    - merge
-    - plugin
-    - runtime
-    - sti
-    - target
+coordinate: "platform · 5/round · f282ed97"
+contentUuid: "31579516-dd4e-5fea-831e-5c8bd7ff12e9"
+diamondUuid: "8579b02b-315f-8f03-84fb-9c8653bedd03"
+uuid: "f282ed97-8beb-8ab2-b459-06d0793513bd"
+horo: 5
 typography:
   partition: platform
   bondDegree: 0
-  neighbors: []
 standards:
   - "W3C-JSON-LD-1.1"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - arrival
-    - collapse
-    - departure
-    - digital
-    - enumeration
-    - game
-    - law
-    - merge
-    - runtime
-    - sti
-    - target
-  matrix:
-    - action
-    - arrival
-    - collapse
-    - departure
-    - digital
-    - enumeration
-    - game
-    - law
-    - merge
-    - plugin
-    - runtime
-    - sti
-    - target
-  backlinks:
-    - action
-    - arrival
-    - collapse
-    - departure
-    - digital
-    - enumeration
-    - game
-    - law
-    - merge
-    - plugin
-    - runtime
-    - sti
-    - target
 signatures:
-  computationUuid: "6cda666b-05af-8a6a-b549-230b44adb95c"
+  computationUuid: "fb49d7ae-a3bf-85f0-b6ef-9cac9ddf2634"
   stages:
     - stage: path
       stageUuid: "e36e51c1-b55c-80bb-b6c6-efaef8dfb68a"
@@ -98,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "6174e41f-9d03-8e9a-8a4d-46e5d0001e89"
     - stage: horo
-      stageUuid: "b0a7af34-8261-82a9-8599-4088868a7a1d"
+      stageUuid: "667229b7-d461-8bd8-8f82-8c038aff1c58"
     - stage: seal
       stageUuid: "75c516fc-bcee-8693-bead-9f224ddeaf72"
     - stage: uuid
-      stageUuid: "c488bc5f-8b51-898e-8146-b4dc03f185b4"
+      stageUuid: "77d56170-cf5c-8acd-aa7d-2641c60690c2"
 version: 2
 ---
 # platform

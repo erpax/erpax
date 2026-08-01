@@ -1,75 +1,34 @@
 ---
 name: impairment
 description: "Use when an asset's fair value or recoverable amount falls permanently below book value, triggering writedown testing and loss recognition — mandatory under IAS-36 for all assets"
-atomPath: vocabulary/impairment
-coordinate: impairment · 5/round · d441a6ec
-contentUuid: "4df41ac1-505b-5121-8859-cb43d0b90b9f"
-diamondUuid: "bdcb3f3a-2542-88a0-86eb-63d5ddb74e09"
-uuid: "d441a6ec-e7b4-88e1-b8a5-2081e539c107"
+atomPath: "vocabulary/impairment"
+coordinate: "vocabulary/impairment · 5/round · a4a6f7c9"
+contentUuid: "46f5c145-66cf-5bf4-a563-5294b2add14c"
+diamondUuid: "80180568-0b9c-8768-8f09-5ce0954bd607"
+uuid: "a4a6f7c9-ad32-87bc-a711-0a5a3cd083a4"
 horo: 5
-bonds:
-  in:
-    - assets
-    - goodwill
-    - intangible
-    - law
-    - perennial
-    - properties
-    - terroir
-  out:
-    - assets
-    - goodwill
-    - intangible
-    - law
-    - perennial
-    - properties
-    - terroir
 typography:
-  partition: impairment
-  bondDegree: 25
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 27
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - assets
-    - goodwill
-    - intangible
-    - law
-    - properties
-  matrix:
-    - assets
-    - goodwill
-    - intangible
-    - law
-    - perennial
-    - properties
-    - terroir
-  backlinks:
-    - assets
-    - goodwill
-    - intangible
-    - law
-    - perennial
-    - properties
-    - terroir
 signatures:
-  computationUuid: "1a86056c-ddad-85cd-8997-939a955f2caf"
+  computationUuid: "06f1f860-c643-875d-baf5-964922451d0b"
   stages:
     - stage: path
-      stageUuid: "08f769e0-ddba-87a3-adfa-be322e95a879"
+      stageUuid: "c297bbe0-6039-8ed6-bb45-5644926e36e9"
     - stage: trinity
-      stageUuid: "811e0ac0-aeff-8322-91f9-ae796a6ed660"
+      stageUuid: "3cc695c6-f9b5-8dd6-b610-eb836f1f3dd3"
     - stage: boundary
-      stageUuid: "4001d84b-9bb0-88cf-85a4-5c75a75766b1"
+      stageUuid: "61b015fe-4ef7-855d-806a-4b23260fa8e7"
     - stage: links
-      stageUuid: "07069c99-d5c7-8d18-9830-31e9e9060368"
+      stageUuid: "97195f1f-457c-887e-97bd-7e277eb10e6c"
     - stage: horo
-      stageUuid: "88d7e9ad-1b2a-8bb8-82dd-9b137e906880"
+      stageUuid: "da8c7f22-fa47-8a40-b43b-5a9e0ed52a9f"
     - stage: seal
-      stageUuid: "476056f5-c427-84ad-b8a5-5728fe0511fd"
+      stageUuid: "4c641a9a-06f4-8a73-8d21-c26bd4f8cae7"
     - stage: uuid
-      stageUuid: "9b4c03f9-8cbf-83f7-b449-08698b0723f4"
+      stageUuid: "6f57aa92-be50-8ad5-8f18-02ec92767559"
 version: 2
 ---
 # impairment

@@ -2,108 +2,34 @@
 name: strength
 description: "Use when reasoning about the corpus's strength — its DRY-ness amplified by its dimensional slices; strength = coverageCostLog2(dryness, slices), infinite at perfect DRY (zero duplication residue), one slice (the digit's 88.4%) only one term."
 atomPath: strength
-coordinate: strength · 5/round · 66e8f5f7
-contentUuid: "27ecff50-0a8d-5d07-95e7-9b111aae2715"
-diamondUuid: "166e4337-8e06-84fa-84ba-c6b009ce344b"
-uuid: "66e8f5f7-6921-8790-9bd2-09f96b378c2d"
-horo: 5
-bonds:
-  in:
-    - available
-    - collider
-    - cost
-    - digit
-    - drug
-    - dry
-    - gravity
-    - law
-    - merge
-    - recommendation
-    - unit
-    - uuid
-    - value
-  out:
-    - available
-    - collider
-    - cost
-    - digit
-    - drug
-    - dry
-    - gravity
-    - law
-    - merge
-    - recommendation
-    - unit
-    - uuid
-    - value
+coordinate: "strength · 2/share · 37a9a42c"
+contentUuid: "f3e98e54-8056-5738-b72b-9bd9f4d90d14"
+diamondUuid: "fd8cca47-f6f3-811f-a3fd-5fd583e729a5"
+uuid: "37a9a42c-55c2-8bb6-bd01-0ee976fa1905"
+horo: 2
 typography:
   partition: strength
-  bondDegree: 43
-  neighbors: []
+  bondDegree: 47
 standards:
   - "schema.org strength (a magnitude) reframed as tamper-strength · coverageCostLog2 (the ∞ law) · the merge/gravity DRY"
-  - "strength = coverageCostLog2(dryness, slices); dryness read live from the dry residue, computed"
-  - "strength computed from the live dry residue and the slice count, never asserted"
 bindings: []
-neighbors:
-  wikilink:
-    - available
-    - cost
-    - digit
-    - drug
-    - dry
-    - gravity
-    - law
-    - merge
-    - recommendation
-    - unit
-    - uuid
-    - value
-  matrix:
-    - available
-    - collider
-    - cost
-    - digit
-    - drug
-    - dry
-    - gravity
-    - law
-    - merge
-    - recommendation
-    - unit
-    - uuid
-    - value
-  backlinks:
-    - available
-    - collider
-    - cost
-    - digit
-    - drug
-    - dry
-    - gravity
-    - law
-    - merge
-    - recommendation
-    - unit
-    - uuid
-    - value
 signatures:
-  computationUuid: "ae3a9106-97ff-8f02-a633-64dcde8f7592"
+  computationUuid: "75ad46ad-f5f9-82c7-9cb4-556420bc0b77"
   stages:
     - stage: path
       stageUuid: "92032de4-6bc2-85b3-b2d5-73784e56284f"
     - stage: trinity
       stageUuid: "e9324699-7a87-8eef-908e-b3c3f40aa7e7"
     - stage: boundary
-      stageUuid: "c03b3149-fd0a-8ed7-821c-36e0afd0fe04"
+      stageUuid: "311f3511-afe9-80b5-9326-51a01e7f266b"
     - stage: links
       stageUuid: "adeb7dbc-0709-861e-b578-5da42534c36a"
     - stage: horo
-      stageUuid: "fdb27191-8bc2-8526-bc66-7944f0f7266c"
+      stageUuid: "ed270309-18d3-8003-88a8-be356356508d"
     - stage: seal
-      stageUuid: "5af8e358-9eac-8ce6-857a-9868cb582944"
+      stageUuid: "71e161c9-182f-87ba-a710-ff8a3cc16bfc"
     - stage: uuid
-      stageUuid: "2a95de2b-2516-80b8-aeaf-eed27d4f5cc7"
+      stageUuid: "cbf737b6-8dd5-8abf-897a-3feb941456f5"
 version: 2
 ---
 # strength — the DRY math: a DRY corpus has infinite strength

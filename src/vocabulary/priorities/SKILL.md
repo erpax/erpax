@@ -1,78 +1,35 @@
 ---
 name: priorities
 description: "Use when reasoning about priorities as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/priorities
-coordinate: priorities · 2/share · c9ffc950
-contentUuid: "beaa856d-8eec-550e-a53d-4d6f5fffa3e0"
-diamondUuid: "a30cf3f5-bce8-80c3-b98a-4c77a1b87acd"
-uuid: "c9ffc950-ae84-8f83-b1d5-fa514452cfcc"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - coverage
-    - law
-    - merge
-    - mission
-    - policy
-    - sti
-  out:
-    - collapse
-    - coverage
-    - law
-    - merge
-    - mission
-    - policy
-    - sti
+atomPath: "vocabulary/priorities"
+coordinate: "vocabulary/priorities · 5/round · 4a09c9d8"
+contentUuid: "ccf099b6-ad48-5eff-afaf-dbe54acf9181"
+diamondUuid: "4a44f843-948b-8df0-aa71-19c7903b17ba"
+uuid: "4a09c9d8-a68b-88e0-ad1c-0a0348fc83d3"
+horo: 5
 typography:
-  partition: priorities
-  bondDegree: 24
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 26
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - coverage
-    - law
-    - merge
-    - mission
-    - policy
-    - sti
-  matrix:
-    - collapse
-    - coverage
-    - law
-    - merge
-    - mission
-    - policy
-    - sti
-  backlinks:
-    - collapse
-    - coverage
-    - law
-    - merge
-    - mission
-    - policy
-    - sti
 signatures:
-  computationUuid: "ebd87138-970c-894f-9732-09985eed2deb"
+  computationUuid: "1bbe5d4c-0c33-88f3-ac92-9a97911bf829"
   stages:
     - stage: path
-      stageUuid: "862076a2-6ff6-8983-9eb5-a06cb32abe64"
+      stageUuid: "a6dae383-bec8-83b2-a06c-988f586e4547"
     - stage: trinity
-      stageUuid: "d67e59a0-187d-8f2d-a7f5-26bb385ad826"
+      stageUuid: "475d445c-fedb-873e-b585-30f4320fd14d"
     - stage: boundary
-      stageUuid: "ddc468e2-98bd-894d-ac32-96b4da2007db"
+      stageUuid: "db0c0972-a2e8-8ba0-8423-b7736ece4a6a"
     - stage: links
-      stageUuid: "f2ea8e90-b6b6-8ff0-8375-be749af97163"
+      stageUuid: "833d9bc5-d5c3-8bbf-ba6a-076948fe718f"
     - stage: horo
-      stageUuid: "20a83a4a-ecb1-875d-b58e-5bb2786b73a5"
+      stageUuid: "6ee50d7b-cd8a-8eae-aa99-8be435bc3d17"
     - stage: seal
-      stageUuid: "e82d1758-3ac3-8e68-aafc-42cc81cac642"
+      stageUuid: "6c60e227-d670-8272-9264-f3a21549ec4c"
     - stage: uuid
-      stageUuid: "aec754b3-3f2b-82ea-8240-bef5fdc08b8e"
+      stageUuid: "8d4528c4-b61a-8a41-b156-f4a348308deb"
 version: 2
 ---
 # priorities

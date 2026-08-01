@@ -1,63 +1,35 @@
 ---
 name: agreement
 description: "Use when reasoning about agreement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/agreement
-coordinate: agreement · 8/crest · fb82f3d0
-contentUuid: "751644a3-7769-5cb4-8eea-30042adc76ec"
-diamondUuid: "e36d702a-b461-868d-b85a-4bb949912bec"
-uuid: "fb82f3d0-a609-8b05-93ac-be154302d691"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/agreement"
+coordinate: "vocabulary/agreement · 1/base · beb039f4"
+contentUuid: "967d3394-4c1f-5f78-8fde-034fb4f241e4"
+diamondUuid: "8257f9a9-6e05-8af2-bc12-2ea523503223"
+uuid: "beb039f4-290f-8c8a-93bb-65d6539e01b2"
+horo: 1
 typography:
-  partition: agreement
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "83f61531-d74b-8a9f-82a2-6f82aa3805e1"
+  computationUuid: "64dee342-566b-8134-804e-6d3ba06b1246"
   stages:
     - stage: path
-      stageUuid: "f38b495f-e8f2-8c6a-bec4-d96bfd5af43e"
+      stageUuid: "f6c8877b-af14-8f62-80d6-fb0c48fab0f2"
     - stage: trinity
-      stageUuid: "a848b6bd-d594-87a0-b024-24e46d3cf91d"
+      stageUuid: "742c8123-4390-8cab-b57d-c61fdaa9d9aa"
     - stage: boundary
-      stageUuid: "6f309bab-d009-8377-9899-e400c6b0abfb"
+      stageUuid: "1af10824-2f7f-8d5a-81da-2621af150a03"
     - stage: links
-      stageUuid: "e02e4b58-1de5-8fec-811e-36e3712881e1"
+      stageUuid: "9f2b6626-90e2-89e9-8d54-e55510f5e022"
     - stage: horo
-      stageUuid: "85504bf7-1c26-8f49-974b-d486c2165aba"
+      stageUuid: "abc1eb9d-f206-85c1-92a1-fd59a2680900"
     - stage: seal
-      stageUuid: "c4163853-9da2-86b0-a39b-830604bbf3c6"
+      stageUuid: "abd3ad29-6b7f-824e-a3d4-7f60217ab046"
     - stage: uuid
-      stageUuid: "12982923-549b-89ba-928a-8d961f6f5ccf"
+      stageUuid: "b5d4ffa1-c726-8051-bb15-b9435825d602"
 version: 2
 ---
 # agreement

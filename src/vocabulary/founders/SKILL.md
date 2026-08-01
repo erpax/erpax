@@ -1,53 +1,35 @@
 ---
 name: founders
 description: Use when reasoning about founders — A person who founded this organization.
-atomPath: vocabulary/founders
-coordinate: founders · 1/base · 752c0999
-contentUuid: "87c04576-1762-5dfd-8a41-83bc654fb2a7"
-diamondUuid: "47b2ebff-3c94-82fc-9d96-af90fa26e320"
-uuid: "752c0999-3816-82d4-9509-cbf89e3dfd90"
-horo: 1
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/founders"
+coordinate: "vocabulary/founders · 4/weave · c88e456f"
+contentUuid: "350aa3eb-1b8e-5299-9b9f-8ace7cc084c1"
+diamondUuid: "d76f8963-378a-8c96-9b81-570187612cf3"
+uuid: "c88e456f-d060-8de6-9679-fd3abbecfe60"
+horo: 4
 typography:
-  partition: founders
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "ab03a9ee-1710-8b10-822b-884d521d94a2"
+  computationUuid: "455ad0d7-0c04-89d6-ab35-9eed52d811a2"
   stages:
     - stage: path
-      stageUuid: "a8846f73-c27f-8eed-bee9-b747badc9cd7"
+      stageUuid: "654d0871-882f-850a-9715-aa3d43e8497d"
     - stage: trinity
-      stageUuid: "dc7d074c-d40d-857a-8afc-60b4e7c930fd"
+      stageUuid: "0a98073f-6a91-88bb-a2aa-44fdf03546cb"
     - stage: boundary
-      stageUuid: "5d21e160-2348-8f07-8fba-ab0f31fb7a65"
+      stageUuid: "b5ed41be-25a3-8533-bd86-b6dc38a874df"
     - stage: links
-      stageUuid: "15d7d6dd-686c-82aa-8852-0fdc06f2ed7f"
+      stageUuid: "5c2ca8be-13c7-8b27-98af-92e427d83233"
     - stage: horo
-      stageUuid: "7f49da85-0eb7-8d1c-b159-07300459ae91"
+      stageUuid: "6965a157-5b70-8cf9-820b-b3e4811a76e1"
     - stage: seal
-      stageUuid: "5dd84407-89e3-8275-851e-698980dc4d26"
+      stageUuid: "dba02144-e450-8cad-a051-ce6946d0ec8d"
     - stage: uuid
-      stageUuid: "68ba4e3b-83cb-8ddb-aa01-532bfe0c6d6b"
+      stageUuid: "060218b3-b0ea-8aec-a3be-9e9a8fff3e50"
 version: 2
 ---
 # founders

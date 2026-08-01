@@ -1,68 +1,35 @@
 ---
 name: disjoint
 description: "Use when reasoning about disjoint as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/disjoint
-coordinate: disjoint · 7/descent · d9d54021
-contentUuid: "d8b74cb4-3432-5c61-8647-53bcd7e9f9ff"
-diamondUuid: "d0569fbc-6c55-84d5-9c1d-07d3cadf3b53"
-uuid: "d9d54021-1cba-818d-9cc8-df3dc3e4f426"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/disjoint"
+coordinate: "vocabulary/disjoint · 8/crest · 1147c898"
+contentUuid: "8e24ac55-936f-501d-ac24-f55b674dcf1c"
+diamondUuid: "374ee033-3524-8689-9109-acdf38315f25"
+uuid: "1147c898-1b33-837c-9354-a68dbf434125"
+horo: 8
 typography:
-  partition: disjoint
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "397da014-4cda-8167-b191-c36ffd8e44a7"
+  computationUuid: "8cce2f0f-7281-87c1-88f1-2cfcb8d38b72"
   stages:
     - stage: path
-      stageUuid: "1185d111-6e07-8532-b643-b72150aaee6c"
+      stageUuid: "b7b0d9be-eb66-8d2e-9791-d39629296940"
     - stage: trinity
-      stageUuid: "17e86994-8add-813b-b003-8b2c8dfc4db6"
+      stageUuid: "e12f63fe-46ef-87ad-b5b9-148a99149942"
     - stage: boundary
-      stageUuid: "2170b0a8-56ed-8f54-8e05-43f578055443"
+      stageUuid: "fa4105f4-33f5-8ddc-b99d-cf24dbcd9b23"
     - stage: links
-      stageUuid: "f3e18f28-6f18-84dc-8608-7207cec2f54d"
+      stageUuid: "a68f90fc-f2e4-8769-a04e-44cca85e5ada"
     - stage: horo
-      stageUuid: "b41f8fac-06e2-80bb-8c91-6fd57be98000"
+      stageUuid: "29e82993-21b7-80d4-92b6-fc3dd7adb7dc"
     - stage: seal
-      stageUuid: "1f9eb26d-92ad-8932-bba2-3bb8dfe78132"
+      stageUuid: "616f3a4e-dada-82ef-97a2-6b4b981715b6"
     - stage: uuid
-      stageUuid: "b0554757-3060-86c9-930f-e2a1dccaf66b"
+      stageUuid: "7d3b12f3-1409-8e4a-ae6f-b24644b8d852"
 version: 2
 ---
 # disjoint

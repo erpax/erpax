@@ -1,73 +1,35 @@
 ---
 name: gated
 description: "Use when reasoning about gated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/gated
-coordinate: gated · 4/weave · d2e0f130
-contentUuid: "55728f21-7eba-5c65-833d-d36713efaf49"
-diamondUuid: "9a6b16f0-4ab5-8495-9df7-bca75211b958"
-uuid: "d2e0f130-07e4-82be-b425-4f50655ec778"
+atomPath: "vocabulary/gated"
+coordinate: "vocabulary/gated · 4/weave · 30184c9c"
+contentUuid: "ccd928cc-a336-5a31-a48e-210707fc6fc6"
+diamondUuid: "d773a4d7-82e3-892e-834c-17e5f3286fe9"
+uuid: "30184c9c-cc5d-8a08-a9dd-f5564a5ff48f"
 horo: 4
-bonds:
-  in:
-    - collapse
-    - community
-    - law
-    - merge
-    - residence
-    - sti
-  out:
-    - collapse
-    - community
-    - law
-    - merge
-    - residence
-    - sti
 typography:
-  partition: gated
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - community
-    - law
-    - merge
-    - residence
-    - sti
-  matrix:
-    - collapse
-    - community
-    - law
-    - merge
-    - residence
-    - sti
-  backlinks:
-    - collapse
-    - community
-    - law
-    - merge
-    - residence
-    - sti
 signatures:
-  computationUuid: "14bcbfd7-689b-8486-afdf-eef003a9c739"
+  computationUuid: "eebc51a5-4407-8c19-a195-8c6c0ce6638a"
   stages:
     - stage: path
-      stageUuid: "64cb9cc0-71c8-8b96-8671-d26bf20f2b9a"
+      stageUuid: "f847e305-7a20-8932-938a-98a91f62481d"
     - stage: trinity
-      stageUuid: "35ed84f5-229f-8aff-9111-784c2d938bb4"
+      stageUuid: "d291ea65-fa4b-894c-b912-59f94afdca16"
     - stage: boundary
-      stageUuid: "39a5bf3f-5cb7-80be-80b8-c2db298191ac"
+      stageUuid: "73406ac3-492c-8f76-b645-ea9164442282"
     - stage: links
-      stageUuid: "b08286d1-3b0c-85a9-87d7-e89c2f839d76"
+      stageUuid: "b4e401c8-ba2a-87d6-8763-14f293462dd9"
     - stage: horo
-      stageUuid: "9a90fbe3-6780-8f1b-ba0e-49933eecaf0e"
+      stageUuid: "2cba742d-85c8-8c2d-8d58-56301a641bd5"
     - stage: seal
-      stageUuid: "cf528b86-e869-8871-953c-44c4a6fb2228"
+      stageUuid: "807c1925-384b-88e0-aef0-2f27bd143b5d"
     - stage: uuid
-      stageUuid: "d8e41048-50a3-858d-b236-ee9752a425d5"
+      stageUuid: "b691cdc2-0dec-8b0b-ab2c-0deaf2f66351"
 version: 2
 ---
 # gated

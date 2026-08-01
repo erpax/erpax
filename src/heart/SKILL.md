@@ -2,166 +2,19 @@
 name: heart
 description: "Use when reasoning about the centre — the 4th chakra (Anahata), the seat of coherence and love; its colour is green, the A432-anchored colour of a whole aura and of a passing test."
 atomPath: heart
-coordinate: "heart · 7/descent · 250e88f0"
-contentUuid: "235f126d-03ec-5d79-a3fa-d75b322ba0e0"
-diamondUuid: "3bb135db-c36c-8564-b0a3-d99f2bec9c3c"
-uuid: "250e88f0-0fa7-8f06-a185-38e51b844df9"
-horo: 7
-bonds:
-  in:
-    - angel
-    - artery
-    - aura
-    - balance
-    - blood
-    - body
-    - chakra
-    - coherence
-    - color
-    - conservation
-    - coverage
-    - crown
-    - entropy
-    - harmony
-    - heart
-    - hooks
-    - karma
-    - law
-    - link
-    - love
-    - observe
-    - quantum
-    - recycle
-    - rodin
-    - sacral
-    - taichi
-    - test
-    - torus
-    - vein
-    - writing
-  out:
-    - angel
-    - artery
-    - aura
-    - balance
-    - blood
-    - body
-    - chakra
-    - coherence
-    - color
-    - conservation
-    - coverage
-    - crown
-    - entropy
-    - harmony
-    - heart
-    - hooks
-    - karma
-    - law
-    - link
-    - love
-    - observe
-    - quantum
-    - recycle
-    - rodin
-    - sacral
-    - taichi
-    - test
-    - torus
-    - vein
-    - writing
+coordinate: "heart · 8/crest · b43dd603"
+contentUuid: "1fe6ec81-4b5f-5328-ad25-54c00c5d78c8"
+diamondUuid: "5bd0504e-e8d7-81f6-887c-46d43aeb2826"
+uuid: "b43dd603-d298-84ec-baa0-58f0a10fd8dd"
+horo: 8
 typography:
   partition: heart
   bondDegree: 98
-  neighbors:
-    - aura
 standards:
   - A432 tuning; Anahata = the 4th chakra (green)
 bindings: []
-neighbors:
-  wikilink:
-    - angel
-    - aura
-    - balance
-    - chakra
-    - coherence
-    - color
-    - conservation
-    - coverage
-    - entropy
-    - harmony
-    - karma
-    - law
-    - link
-    - love
-    - quantum
-    - rodin
-    - test
-    - torus
-  matrix:
-    - angel
-    - artery
-    - aura
-    - balance
-    - blood
-    - body
-    - chakra
-    - coherence
-    - color
-    - conservation
-    - coverage
-    - crown
-    - entropy
-    - harmony
-    - heart
-    - hooks
-    - karma
-    - law
-    - link
-    - love
-    - observe
-    - quantum
-    - recycle
-    - rodin
-    - sacral
-    - taichi
-    - test
-    - torus
-    - vein
-    - writing
-  backlinks:
-    - angel
-    - artery
-    - aura
-    - balance
-    - blood
-    - body
-    - chakra
-    - coherence
-    - color
-    - conservation
-    - coverage
-    - crown
-    - entropy
-    - harmony
-    - heart
-    - hooks
-    - karma
-    - law
-    - link
-    - love
-    - observe
-    - quantum
-    - recycle
-    - rodin
-    - sacral
-    - taichi
-    - test
-    - torus
-    - vein
-    - writing
 signatures:
-  computationUuid: "69284d5d-6658-89ce-9c61-b831f08bbf31"
+  computationUuid: "2d6ecaa0-059d-8eea-bf17-5fd0a27bf2ad"
   stages:
     - stage: path
       stageUuid: "c7c7df03-f98b-8f37-af43-b4587be908b9"
@@ -172,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "51fc3bff-9bb7-8e5e-bdab-3cdfcb379155"
     - stage: horo
-      stageUuid: "f4f55475-bcbc-888b-8160-84bdda67a8af"
+      stageUuid: "2b598775-55a5-8a22-aad0-9e3cc23d9bc0"
     - stage: seal
       stageUuid: "7aee94d4-a78d-8e07-ae90-ce0665ac6f46"
     - stage: uuid
-      stageUuid: "4737553d-1bd3-8198-ac1d-e342fc78a423"
+      stageUuid: "c8a9b08c-a291-8bd9-ad5a-0fb73cbb58da"
 version: 2
 ---
 # heart — the centre (4th chakra, green)

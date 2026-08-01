@@ -2,50 +2,20 @@
 name: reports
 description: "Use when generating or reviewing immutable post-close analytics — variance analysis (budget vs. actual), financial ratio analysis, segment reporting (IFRS-8 business and geographic), and management KPI scorecards per IFRS IAS-1 / SOX §404. The post-close analytics report collection."
 atomPath: "legal/entities/consolidations/audit/reports/post/close/analytics/reports"
-coordinate: "legal/entities/consolidations/audit/reports/post/close/analytics/reports · 1/base · 432c75cc"
-contentUuid: "e6d1c57a-b635-51c7-8427-8efb91101aa4"
-diamondUuid: "d58bdb7a-e756-8762-8946-ecb706815a5c"
-uuid: "432c75cc-a375-8423-bffe-0cd493b2d631"
-horo: 1
-bonds:
-  in:
-    - accounting
-    - analytics
-    - balance
-    - debit
-    - law
-    - path
-  out:
-    - accounting
-    - balance
-    - debit
-    - law
-    - path
+coordinate: "legal/entities/consolidations/audit/reports/post/close/analytics/reports · 4/weave · b3fb7a7f"
+contentUuid: "7bf50110-640b-5fd1-97a1-d70f509c1321"
+diamondUuid: "f9d06b30-cb0b-8f7d-b6ab-0f27cebc5ab8"
+uuid: "b3fb7a7f-ffab-8a8b-9837-8ec756b9c045"
+horo: 4
 typography:
   partition: legal
   bondDegree: 28
-  neighbors: []
 standards:
   - "IFRS IAS-1 financial-statement-analysis"
   - "SOX §404 close-monitoring"
 bindings: []
-neighbors:
-  wikilink:
-    - reports
-  matrix:
-    - accounting
-    - balance
-    - debit
-    - law
-    - path
-  backlinks:
-    - accounting
-    - balance
-    - debit
-    - law
-    - path
 signatures:
-  computationUuid: "795efe15-bfe2-8837-a7a7-ce599b9e0812"
+  computationUuid: "32e447eb-becd-8128-94e4-5756ec408d9b"
   stages:
     - stage: path
       stageUuid: "5f617b0f-c167-8b80-81fe-ec0de8724eea"
@@ -56,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "72a7c3b9-b682-8af9-88af-d6f79a2fe7c6"
     - stage: horo
-      stageUuid: "ba95d626-b71e-811a-abe2-2ce1a88ae02e"
+      stageUuid: "5e180d7d-7e88-87fe-a5ac-3c27d8b43849"
     - stage: seal
       stageUuid: "7b3634e1-d9cd-80b9-943e-cd778fbff54e"
     - stage: uuid
-      stageUuid: "0b9387d6-16a6-838a-8560-45c8b735e7ef"
+      stageUuid: "3c5a454d-be51-82ee-aa48-7cb5f9ed9cb0"
 version: 2
 ---
 # post-close-analytics-reports

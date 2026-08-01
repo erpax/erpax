@@ -2,34 +2,14 @@
 name: messages
 description: "Use when sending or querying internal addressed messages between users — subject/body, priority (high/normal/low), multi-recipient addressing, threaded replies via parentMessage, optional attachment to invoices/customers/vendors/orders, and read-at tracking. The internal user-to-user messaging collection."
 atomPath: messages
-coordinate: "messages · 1/base · fed6a730"
-contentUuid: "9ed893f9-e5ed-5f48-b4dd-c1a2db79ac0e"
-diamondUuid: "44c19a7a-ba07-83f4-b7c6-4142db80b0cf"
-uuid: "fed6a730-c75e-8054-942a-e5ff63da423b"
+coordinate: "messages · 1/base · 8a7ab513"
+contentUuid: "e714fc9b-42be-5d5e-a554-e3d845ec1a6a"
+diamondUuid: "d929382e-b55d-8850-a4bc-c60858fa8dae"
+uuid: "8a7ab513-1897-8b65-ad3d-2a0790888d7d"
 horo: 1
-bonds:
-  in:
-    - access
-    - auth
-    - collections
-    - comment
-    - fields
-    - hooks
-    - law
-    - standard
-  out:
-    - access
-    - auth
-    - collections
-    - comment
-    - fields
-    - hooks
-    - law
-    - standard
 typography:
   partition: messages
   bondDegree: 24
-  neighbors: []
 standards:
   - "GDPR Art 5(1)(e) storage-limitation retention"
   - "ISO-27001 A.5.23 cloud-service-tenant-isolation"
@@ -38,35 +18,8 @@ standards:
   - "ISO-8601-1:2019 date-time sent-read-timestamps`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - auth
-    - collections
-    - fields
-    - hooks
-    - law
-    - standard
-  matrix:
-    - access
-    - auth
-    - collections
-    - comment
-    - fields
-    - hooks
-    - law
-    - standard
-  backlinks:
-    - access
-    - auth
-    - collections
-    - comment
-    - fields
-    - hooks
-    - law
-    - standard
 signatures:
-  computationUuid: "4e1c659b-3541-8d9d-bc86-13041f6b53dc"
+  computationUuid: "1a72b3d2-20d1-81dc-831d-e12543b035f8"
   stages:
     - stage: path
       stageUuid: "7dcb5e4e-8eba-8ae3-be38-2ff774a0d95d"
@@ -77,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "2e6a97ae-c8df-8c6a-8368-8c85161d1a96"
     - stage: horo
-      stageUuid: "a4f5cc92-9fa5-8a04-8d05-82d637e2f296"
+      stageUuid: "cce88fc4-70f9-815b-8965-b089c12676fe"
     - stage: seal
       stageUuid: "e9039ea4-d0ed-8786-8fed-317fd0bf9e30"
     - stage: uuid
-      stageUuid: "9dddc34d-0e77-8132-beab-6062fa0a0e2c"
+      stageUuid: "c632cf91-08fb-8265-bfd5-ddcf70ba414a"
 version: 2
 ---
 # messages

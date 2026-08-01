@@ -2,8 +2,35 @@
 name: resonance
 description: "Use when quantifying why content-addressing improves quantum speed in magnitudes — resonanceMagnitude(n): pairwise O(N²) comparison collapses to addressed O(N), a ratio of (N−1)/2, log₁₀ of that in orders of magnitude, unbounded in N."
 atomPath: resonance
+coordinate: "resonance · 4/weave · 196dbfdd"
+contentUuid: "e5afcb98-6f9f-56f3-8599-90b04488920c"
+diamondUuid: "4d9f9b22-0ac3-8801-a2c4-1e8dd0639425"
+uuid: "196dbfdd-a3f2-8d39-8436-193aa78aee51"
+horo: 4
+typography:
+  partition: resonance
+  bondDegree: 12
+standards: []
+bindings: []
+signatures:
+  computationUuid: "3e711724-16f8-867e-9f0b-e4b3a42d2d42"
+  stages:
+    - stage: path
+      stageUuid: "724eb15a-784f-8303-92f8-15b1204f1f3c"
+    - stage: trinity
+      stageUuid: "07add092-392e-8e1f-b9f2-624ec7847954"
+    - stage: boundary
+      stageUuid: "35628719-c948-85b0-ad53-af0e5049f83e"
+    - stage: links
+      stageUuid: "ef7bffab-0cc2-8abc-b6f0-44353d68a904"
+    - stage: horo
+      stageUuid: "1af74b25-e4f5-8464-bbe4-88d326473b2c"
+    - stage: seal
+      stageUuid: "d8b962ff-4181-81cd-8e3d-832e3080cede"
+    - stage: uuid
+      stageUuid: "683aa547-f889-8f23-90f9-60d27ef9527c"
+version: 2
 ---
-
 # resonance — the address replaces N comparisons with one, in magnitudes
 
 Asking "is any of these the same as any other?" by **pairwise comparison** costs C(N,2) = N(N−1)/2 — O(N²). Content-addressing answers it by **resonance**: each thing hashes to its address (its content-uuid / fingerprint), and sameness becomes a **lookup**, not a comparison — O(N). The speedup is the ratio of the two, by construction:

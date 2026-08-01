@@ -1,71 +1,34 @@
 ---
 name: kpi
 description: "Use when defining, computing, or tracking KPIs — target metrics with threshold, formula, frequency, owner, and variances. The measurable objective beneath strategy."
-atomPath: vocabulary/kpi
-coordinate: kpi · 7/descent · 160cb48d
-contentUuid: "50ed8794-668a-5765-99f1-57fcea8ae8c4"
-diamondUuid: "8fad6848-54dd-8a6c-8fa5-d02797d655eb"
-uuid: "160cb48d-152b-8086-9bfb-f2537997fe64"
-horo: 7
-bonds:
-  in:
-    - law
-    - measure
-    - metric
-    - rate
-    - schedule
-    - scorecard
-  out:
-    - law
-    - measure
-    - metric
-    - rate
-    - schedule
-    - scorecard
+atomPath: "vocabulary/kpi"
+coordinate: "vocabulary/kpi · 2/share · ef02818c"
+contentUuid: "2bfbbfb2-36fe-54b5-98f9-36feb403736a"
+diamondUuid: "5b6e92b9-7899-8113-8ccf-6c65945174c6"
+uuid: "ef02818c-47ce-84c8-bde0-90ea0e9a599c"
+horo: 2
 typography:
-  partition: kpi
-  bondDegree: 19
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 21
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - measure
-    - metric
-    - rate
-    - schedule
-  matrix:
-    - law
-    - measure
-    - metric
-    - rate
-    - schedule
-    - scorecard
-  backlinks:
-    - law
-    - measure
-    - metric
-    - rate
-    - schedule
-    - scorecard
 signatures:
-  computationUuid: "1e095d41-c306-8e33-b047-1b9272b120ce"
+  computationUuid: "2a5d562b-bd87-8dab-935c-6e8d35b9879f"
   stages:
     - stage: path
-      stageUuid: "774ed171-6ac9-86be-aaed-1f4d62b63de9"
+      stageUuid: "da004711-3a54-8126-9d84-ef5a95c91bb5"
     - stage: trinity
-      stageUuid: "b02b713b-a02d-8c6b-9bff-e171e3611b4e"
+      stageUuid: "0e4bc6d0-16c5-856d-b489-19cdc7067793"
     - stage: boundary
-      stageUuid: "b40e44e3-b1aa-8e8e-8ce1-72f9dab04eae"
+      stageUuid: "e4501d87-2bb4-83ed-be89-55e1a352a74b"
     - stage: links
-      stageUuid: "88d71492-0b2d-8a2d-ad49-fc484226b3d8"
+      stageUuid: "cc6a0d93-7524-8722-a365-a96397b6fbee"
     - stage: horo
-      stageUuid: "1cbc3e50-0950-8acd-98d6-b4151410f8e8"
+      stageUuid: "0738de19-3ad2-8039-8dd4-a11ec7a9023a"
     - stage: seal
-      stageUuid: "c26d945b-7f2d-8eaa-a516-11c01e664997"
+      stageUuid: "d0e8dec9-390c-881c-88de-f6551bd60da3"
     - stage: uuid
-      stageUuid: "89bb8168-e8ca-8584-abca-dd180e3b864b"
+      stageUuid: "3277c6a7-01f0-857f-89b9-dad1abd396c7"
 version: 2
 ---
 # kpi

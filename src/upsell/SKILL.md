@@ -2,56 +2,18 @@
 name: upsell
 description: "Use when recommending higher-value or complementary products — opportunity detection, recommendation engine, success metrics."
 atomPath: upsell
-coordinate: upsell · 8/crest · c3a86886
-contentUuid: "e2a08edb-7382-54d3-b477-81e3ba8964ce"
-diamondUuid: "9b7e4500-b592-80fe-8c5c-29f6836291ec"
-uuid: "c3a86886-b713-8874-b531-3d65a08f8c6f"
-horo: 8
-bonds:
-  in:
-    - campaign
-    - customers
-    - forecast
-    - items
-    - orders
-    - segment
-  out:
-    - campaign
-    - customers
-    - forecast
-    - items
-    - orders
-    - segment
+coordinate: "upsell · 1/base · 0281ab04"
+contentUuid: "9e376810-d213-5d44-8bc8-05314808a520"
+diamondUuid: "24e00759-5e44-881e-83ce-56d83b443fec"
+uuid: "0281ab04-4824-81f9-b4a1-1d2ef5ba5e9d"
+horo: 1
 typography:
   partition: upsell
   bondDegree: 18
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - campaign
-    - customers
-    - forecast
-    - items
-    - orders
-    - segment
-  matrix:
-    - campaign
-    - customers
-    - forecast
-    - items
-    - orders
-    - segment
-  backlinks:
-    - campaign
-    - customers
-    - forecast
-    - items
-    - orders
-    - segment
 signatures:
-  computationUuid: "9f4de71e-1a2d-8935-80e9-8d4b8642199d"
+  computationUuid: "322d1833-1559-813e-a760-d1551832de19"
   stages:
     - stage: path
       stageUuid: "b36d76fa-f52d-8781-b7f6-8273fe3b9521"
@@ -62,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d96ac48f-35a4-86d3-8f6a-c0a2b4769008"
     - stage: horo
-      stageUuid: "17a51084-9f43-8dfb-b2af-7758625115be"
+      stageUuid: "ce09634a-fba4-8c4e-9a96-9b3aac91ed07"
     - stage: seal
-      stageUuid: "bcf09ee8-c7e5-8a29-88c8-f0696bced460"
+      stageUuid: "cf33e60a-0c4f-807d-8574-32a0ddf7839f"
     - stage: uuid
-      stageUuid: "8df16fae-9cef-8b0e-afbf-2365976340a5"
+      stageUuid: "0429f93f-d734-8f52-ace9-abab9178748f"
 version: 2
 ---
 # upsell

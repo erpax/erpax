@@ -1,58 +1,35 @@
 ---
 name: cooperative
 description: Use when reasoning about cooperative — An organization that is a joint project of multiple organizations or persons.
-atomPath: vocabulary/cooperative
-coordinate: cooperative · 1/base · 1d1bd77a
-contentUuid: "4ae8890a-782a-5ec6-ab30-1d1894b74282"
-diamondUuid: "57a1d40d-a2c6-8d69-9157-828969386669"
-uuid: "1d1bd77a-8cf1-82cf-89c7-b9f1cd309337"
+atomPath: "vocabulary/cooperative"
+coordinate: "vocabulary/cooperative · 1/base · c51e9432"
+contentUuid: "21ac17c9-76ce-54c8-9e55-3cd790f15a92"
+diamondUuid: "46cac193-aae9-8575-8435-856302054b41"
+uuid: "c51e9432-d42b-863f-8aff-78a7a02a76fd"
 horo: 1
-bonds:
-  in:
-    - law
-    - organization
-    - thing
-  out:
-    - law
-    - organization
-    - thing
 typography:
-  partition: cooperative
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - organization
-    - thing
-  matrix:
-    - law
-    - organization
-    - thing
-  backlinks:
-    - law
-    - organization
-    - thing
 signatures:
-  computationUuid: "7d424016-40c2-8e30-a367-edb7e7f166a9"
+  computationUuid: "0417e94f-c5f8-8624-975c-e5e7bbbca7a8"
   stages:
     - stage: path
-      stageUuid: "9c5c5945-18a3-8982-8892-04eeae1d0ba7"
+      stageUuid: "cde4e4b6-8996-8d84-9867-d3f6e0a9286e"
     - stage: trinity
-      stageUuid: "c7cd35ce-1d59-8de8-9f38-bfd765937129"
+      stageUuid: "782e84b8-ad89-8cdc-8cec-a66b1d097a23"
     - stage: boundary
-      stageUuid: "285413ec-c18e-8330-94f2-dd47aac9fc30"
+      stageUuid: "6b683728-a41e-8022-a261-5880cb8d2cf0"
     - stage: links
-      stageUuid: "f88aff43-db83-86c8-ad93-85d5f8fca617"
+      stageUuid: "a6507782-74b2-8a00-bad8-73670c41ee4d"
     - stage: horo
-      stageUuid: "786bef3b-52f7-81e4-b7f4-f1cd508ecbfb"
+      stageUuid: "bb2ec412-f69e-8e1e-b4e5-8f017e3a29a0"
     - stage: seal
-      stageUuid: "865a34e6-d2a7-8540-a262-6fd5afcfee93"
+      stageUuid: "b5302988-827b-8701-8ce1-43e84638900f"
     - stage: uuid
-      stageUuid: "ae304cb8-1d37-82da-8995-f9cd94890248"
+      stageUuid: "2f21f353-7d45-8902-b392-cb347c665050"
 version: 2
 ---
 # cooperative

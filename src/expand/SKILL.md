@@ -2,102 +2,19 @@
 name: expand
 description: "Use when reasoning about the development EXHALE — adding a feature enlarges the corpus, and a larger corpus is more surface to wire (more atoms ⇒ more tamper-cost to be earned). expand measures that growth as added entropy, computed on the live matrix; it is gravity read in reverse — the word-chain spreading out, not the folders collapsing in."
 atomPath: expand
-coordinate: "expand · 8/crest · 3c2db5cd"
-contentUuid: "27b98622-cd1e-54a0-a810-55e8ecaddb76"
-diamondUuid: "ec949542-dda3-83f1-800a-2ab316de7046"
-uuid: "3c2db5cd-219e-8915-b3e1-1d6e867482ee"
+coordinate: "expand · 8/crest · 5b4050ca"
+contentUuid: "56049259-611b-54fe-b03d-645932aeb17d"
+diamondUuid: "682b32a4-61c3-8008-9f0e-d35454255f3c"
+uuid: "5b4050ca-ed50-8cf5-bba4-0bd09060771d"
 horo: 8
-bonds:
-  in:
-    - atom
-    - breath
-    - collapse
-    - cost
-    - development
-    - dry
-    - entropy
-    - gate
-    - gravity
-    - horo
-    - law
-    - matrix
-    - one
-    - sequence
-    - word
-  out:
-    - atom
-    - breath
-    - collapse
-    - cost
-    - development
-    - dry
-    - entropy
-    - gate
-    - gravity
-    - horo
-    - law
-    - matrix
-    - one
-    - sequence
-    - word
 typography:
   partition: expand
   bondDegree: 45
-  neighbors: []
 standards:
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring (base-10)"
 bindings: []
-neighbors:
-  wikilink:
-    - atom
-    - breath
-    - collapse
-    - cost
-    - development
-    - dry
-    - entropy
-    - gate
-    - gravity
-    - horo
-    - law
-    - matrix
-    - one
-    - sequence
-    - word
-  matrix:
-    - atom
-    - breath
-    - collapse
-    - cost
-    - development
-    - dry
-    - entropy
-    - gate
-    - gravity
-    - horo
-    - law
-    - matrix
-    - one
-    - sequence
-    - word
-  backlinks:
-    - atom
-    - breath
-    - collapse
-    - cost
-    - development
-    - dry
-    - entropy
-    - gate
-    - gravity
-    - horo
-    - law
-    - matrix
-    - one
-    - sequence
-    - word
 signatures:
-  computationUuid: "1e6a3bbf-d36f-873d-bd4f-ca8fccad82bd"
+  computationUuid: "a68a8308-d960-88cc-a394-2272cec6832e"
   stages:
     - stage: path
       stageUuid: "21aa4ad9-15b7-8b4b-95a4-78508c69cbea"
@@ -108,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f43f5858-16d6-8978-8449-8a2953c532c5"
     - stage: horo
-      stageUuid: "c71a520e-9879-8977-a642-7671867325f8"
+      stageUuid: "1ea98261-1c6b-8d5d-8e32-9f32584341f1"
     - stage: seal
       stageUuid: "41bb213e-96dd-8c1b-a226-0d6709a0f217"
     - stage: uuid
-      stageUuid: "3b2af7e3-2a73-81b9-8964-2947a4c0f7d0"
+      stageUuid: "2c18fd21-b3e8-8e5a-bea1-cee660e814d7"
 version: 2
 ---
 # expand — the development exhale: more atoms, more surface, more cost-to-earn

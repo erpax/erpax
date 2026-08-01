@@ -1,63 +1,35 @@
 ---
 name: gastroenterologic
 description: "Use when reasoning about gastroenterologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/gastroenterologic
-coordinate: gastroenterologic · 2/share · 35b5d4dc
-contentUuid: "a68bf445-5468-5b51-8c6a-e59366d23097"
-diamondUuid: "24e6d3ae-3d4b-8886-98cb-bcaa1416c703"
-uuid: "35b5d4dc-9a21-8596-909a-b74a1fadc6b6"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/gastroenterologic"
+coordinate: "vocabulary/gastroenterologic · 8/crest · f123de14"
+contentUuid: "2eda1683-4866-5c1f-8f8d-acf718096b9b"
+diamondUuid: "53cd7f12-24ee-8b5b-afc0-1508214c939e"
+uuid: "f123de14-7b6a-8748-9539-505d5e9f7b70"
+horo: 8
 typography:
-  partition: gastroenterologic
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "c30494d0-98a4-8dce-b20f-f67ab0918366"
+  computationUuid: "99bf5696-7e2c-8fab-85a0-bc88f80d6009"
   stages:
     - stage: path
-      stageUuid: "a31f8a9a-5d06-8a29-afd0-4dcc490ab133"
+      stageUuid: "f0d5f798-da0c-890d-9649-9786cc5ee1ef"
     - stage: trinity
-      stageUuid: "02c605ac-0758-8db5-9e8a-08fca01ada88"
+      stageUuid: "3e382e70-a69c-838a-a89a-ec48136dae59"
     - stage: boundary
-      stageUuid: "d6ed35ea-718d-8917-814b-c462b7528511"
+      stageUuid: "6cd1d2d1-497d-836a-b457-f1ebd08ee27a"
     - stage: links
-      stageUuid: "9781594d-a1d8-81c1-b51e-a2ee5facd6ba"
+      stageUuid: "aa7f909f-d497-8848-a107-3b4243f15cc2"
     - stage: horo
-      stageUuid: "642f6e1b-288e-8402-a8ce-e62e18c749d6"
+      stageUuid: "88f66855-cc0a-81c6-bd67-cdc71aa19656"
     - stage: seal
-      stageUuid: "c07d3a4d-6a1b-880b-8436-789f64f3f9da"
+      stageUuid: "a867644e-e358-8654-9771-a139f05801c6"
     - stage: uuid
-      stageUuid: "14e251a6-74d8-82d3-bcbc-a75cb17ec9ff"
+      stageUuid: "20e0fd2c-b9f8-8f93-bb1c-21f6ba1b6a37"
 version: 2
 ---
 # gastroenterologic

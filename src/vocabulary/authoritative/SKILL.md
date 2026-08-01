@@ -1,63 +1,35 @@
 ---
 name: authoritative
 description: "Use when reasoning about authoritative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/authoritative
-coordinate: authoritative · 1/base · 80309ec9
-contentUuid: "b6da36e3-dc43-5ed8-9d27-c6e567299b44"
-diamondUuid: "304eb7bb-462b-8240-9d9d-cba77e8b17dd"
-uuid: "80309ec9-7e74-84b7-9797-c5034d2274cf"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/authoritative"
+coordinate: "vocabulary/authoritative · 4/weave · 4ce9aafd"
+contentUuid: "f90150de-0597-50b1-955e-44eae420e413"
+diamondUuid: "2bf64343-0c7a-8b0d-a623-d4fb90ea44ca"
+uuid: "4ce9aafd-aa9b-804a-9d30-951c33f1c724"
+horo: 4
 typography:
-  partition: authoritative
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "0815866b-871e-859f-873a-2ede93058f72"
+  computationUuid: "b180199a-b2c3-8f0a-ac36-463fe2eb4c84"
   stages:
     - stage: path
-      stageUuid: "2211a22c-5322-84df-b8d7-10b5eac92936"
+      stageUuid: "a573f977-bf5a-8cb4-91c7-2502b0f881f1"
     - stage: trinity
-      stageUuid: "d9ae0c35-2266-8bbd-8dbb-e5354e273c2f"
+      stageUuid: "b8da36d7-d89a-851d-af24-56704b140140"
     - stage: boundary
-      stageUuid: "dfff9965-a340-8696-bfda-c080fd515a2b"
+      stageUuid: "c6960041-35b1-8996-a33f-385f896aaf7f"
     - stage: links
-      stageUuid: "0d31e960-0fa7-82e9-9f88-55915d97813d"
+      stageUuid: "465a97fd-8074-868b-8bfc-e678137565ed"
     - stage: horo
-      stageUuid: "463c4c8e-00bd-8986-90a7-10c272f9299f"
+      stageUuid: "fa998de2-a3ae-8f32-aadd-c814eb812d8c"
     - stage: seal
-      stageUuid: "725f9f2b-60a1-816c-bf52-eebf00fc7419"
+      stageUuid: "85d19cb4-0c7a-8fb4-b540-f61497c684ac"
     - stage: uuid
-      stageUuid: "2ac0af6d-2202-8c3d-85bc-bf49fd36fcb1"
+      stageUuid: "943b950c-ff18-85b8-8fa5-f8a35a13c43a"
 version: 2
 ---
 # authoritative

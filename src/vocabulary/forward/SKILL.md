@@ -1,73 +1,35 @@
 ---
 name: forward
 description: "Use when reasoning about forward as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/forward
-coordinate: forward · 2/share · 01a1dd45
-contentUuid: "4dea768b-8587-54b7-b81d-476ba0588d6d"
-diamondUuid: "3fd84955-4c9a-8e0c-ab2a-577c5df8b693"
-uuid: "01a1dd45-d2f3-8667-8a7f-2f87a4560739"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - gears
-    - law
-    - merge
-    - number
-    - sti
-  out:
-    - collapse
-    - gears
-    - law
-    - merge
-    - number
-    - sti
+atomPath: "vocabulary/forward"
+coordinate: "vocabulary/forward · 1/base · c8dffce0"
+contentUuid: "e6e14531-2696-5524-ab76-8814b82f7a09"
+diamondUuid: "05c52ac8-8928-8fe8-b2e2-4ac554b7a12a"
+uuid: "c8dffce0-1db2-8dc8-a7af-1c08813d2a97"
+horo: 1
 typography:
-  partition: forward
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - gears
-    - law
-    - merge
-    - number
-    - sti
-  matrix:
-    - collapse
-    - gears
-    - law
-    - merge
-    - number
-    - sti
-  backlinks:
-    - collapse
-    - gears
-    - law
-    - merge
-    - number
-    - sti
 signatures:
-  computationUuid: "a7beaec7-3064-8f27-b11b-90744f1fd1af"
+  computationUuid: "0884f8dc-a4ca-8750-837d-8fff3511bc60"
   stages:
     - stage: path
-      stageUuid: "3952be10-a85b-8e79-a217-8c0ce14a1249"
+      stageUuid: "41963bdc-1f05-8e5e-8789-e8c2a3fd2743"
     - stage: trinity
-      stageUuid: "6c76113e-2c77-89aa-9327-8a24ed9756aa"
+      stageUuid: "9d5c9b5e-9032-8721-b9b6-9530b3ec7463"
     - stage: boundary
-      stageUuid: "d74c31f1-7e68-8520-8115-269db721c4f7"
+      stageUuid: "a139df4f-1aab-8c8e-9a37-0f8be30c5d47"
     - stage: links
-      stageUuid: "300d0942-c517-8d39-af2c-220f50455c44"
+      stageUuid: "ca811621-46e6-8f6e-a278-1b62df03cb61"
     - stage: horo
-      stageUuid: "9ef5975e-c1c7-82dc-b888-aa343afb41d3"
+      stageUuid: "df675455-a054-8b97-b37b-f2430b7cd40a"
     - stage: seal
-      stageUuid: "2bf8adbd-39ef-8978-86e2-3623a48f7149"
+      stageUuid: "b5a8dd98-9c44-8a69-83f6-1a493d589a39"
     - stage: uuid
-      stageUuid: "71b656eb-52ec-8a90-8edf-11b90518d911"
+      stageUuid: "4010523a-c355-83a0-82a9-5aab66051be1"
 version: 2
 ---
 # forward

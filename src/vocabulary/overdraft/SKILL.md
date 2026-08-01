@@ -1,73 +1,35 @@
 ---
 name: overdraft
 description: "Use when reasoning about overdraft as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/overdraft
-coordinate: overdraft · 4/weave · d92fd617
-contentUuid: "8b83aeb0-1dd3-53bb-8b79-a9580a83a9b0"
-diamondUuid: "a4da8c65-9106-8e2c-b7c8-c3e1721fe95e"
-uuid: "d92fd617-d677-83c8-aa96-7f74033d0973"
-horo: 4
-bonds:
-  in:
-    - account
-    - collapse
-    - law
-    - limit
-    - merge
-    - sti
-  out:
-    - account
-    - collapse
-    - law
-    - limit
-    - merge
-    - sti
+atomPath: "vocabulary/overdraft"
+coordinate: "vocabulary/overdraft · 1/base · ed4ac655"
+contentUuid: "be0d4be4-fb80-576e-b2a0-9ef441899d73"
+diamondUuid: "511b2e9c-1c10-8625-be5d-875b19884b48"
+uuid: "ed4ac655-a5aa-8a5a-9033-bfad5b3c57aa"
+horo: 1
 typography:
-  partition: overdraft
+  partition: vocabulary
   bondDegree: 18
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - account
-    - collapse
-    - law
-    - limit
-    - merge
-    - sti
-  matrix:
-    - account
-    - collapse
-    - law
-    - limit
-    - merge
-    - sti
-  backlinks:
-    - account
-    - collapse
-    - law
-    - limit
-    - merge
-    - sti
 signatures:
-  computationUuid: "d94772f1-02e6-8d6c-acbd-ef42f69392bf"
+  computationUuid: "14534773-be2e-8d5c-8e7f-ec0add10a843"
   stages:
     - stage: path
-      stageUuid: "6e228aae-4cb1-8af5-938c-58cad9819e4c"
+      stageUuid: "3867af45-f727-8290-a754-0b2580d4c83b"
     - stage: trinity
-      stageUuid: "ea6db81b-faf0-8d3e-a0b3-5ac0279a9003"
+      stageUuid: "102b3df7-a1c5-8ed9-9835-d349ffd8c7b4"
     - stage: boundary
-      stageUuid: "cb9cfe5c-5635-86b8-a28b-231202a2f786"
+      stageUuid: "87c580fa-d7e5-8b45-8cb4-94dd6593b942"
     - stage: links
-      stageUuid: "472f51be-cc67-871d-8aa5-4e090d3fe35b"
+      stageUuid: "cfbc0a43-37f4-8767-beb9-81687bc1441b"
     - stage: horo
-      stageUuid: "3ce4e6ec-0d94-8324-86b8-6d5aa0e1a805"
+      stageUuid: "4fc2c288-b315-8b9f-98f8-5134cefe392d"
     - stage: seal
-      stageUuid: "84c1e834-f73d-8c0e-adad-0110fa0bcc8d"
+      stageUuid: "87c65af5-a904-83db-b1f7-91684fed8e87"
     - stage: uuid
-      stageUuid: "8db9922a-4ac6-8b41-bd9b-a1726b98c5d4"
+      stageUuid: "389f73af-05e4-8d74-9d54-f2f9b665f335"
 version: 2
 ---
 # overdraft

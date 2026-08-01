@@ -2,171 +2,19 @@
 name: page
 description: "Use when reasoning about page as a medical facet of [[medical]] — vocabulary pivot to @/page; nested not duplicated."
 atomPath: "medical/page"
-coordinate: "medical/page · 5/round · 0c45cc01"
-contentUuid: "6c05e9c6-030d-5665-ad99-3a939d52c03b"
-diamondUuid: "94fc9aa1-08b5-8b05-a0c0-2d16b5c2ec11"
-uuid: "0c45cc01-02e8-8ccf-b41b-fff93939078e"
-horo: 5
-bonds:
-  in:
-    - about
-    - acquire
-    - booking
-    - checkout
-    - collapse
-    - collection
-    - contact
-    - content
-    - element
-    - end
-    - entity
-    - faq
-    - image
-    - item
-    - law
-    - license
-    - main
-    - medical
-    - merge
-    - page
-    - primary
-    - print
-    - profile
-    - qa
-    - representative
-    - results
-    - search
-    - start
-    - sti
-    - template
-    - tour
-    - url
-    - user
-    - visits
-    - web
-  out:
-    - about
-    - acquire
-    - booking
-    - checkout
-    - collapse
-    - collection
-    - contact
-    - content
-    - element
-    - end
-    - entity
-    - faq
-    - image
-    - item
-    - law
-    - license
-    - main
-    - medical
-    - merge
-    - page
-    - primary
-    - print
-    - profile
-    - qa
-    - representative
-    - results
-    - search
-    - start
-    - sti
-    - template
-    - tour
-    - url
-    - user
-    - visits
-    - web
+coordinate: "medical/page · 2/share · 1e79a108"
+contentUuid: "bd55d71b-f588-5d0c-b903-b50a1486410d"
+diamondUuid: "56e597d1-5c0f-8349-96b9-92eb6ddcce8c"
+uuid: "1e79a108-9e03-81ff-b284-012708299da4"
+horo: 2
 typography:
   partition: medical
   bondDegree: 135
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - medical
-    - merge
-    - page
-  matrix:
-    - about
-    - acquire
-    - booking
-    - checkout
-    - collapse
-    - collection
-    - contact
-    - content
-    - element
-    - end
-    - entity
-    - faq
-    - image
-    - item
-    - law
-    - license
-    - main
-    - medical
-    - merge
-    - page
-    - primary
-    - print
-    - profile
-    - qa
-    - representative
-    - results
-    - search
-    - start
-    - sti
-    - template
-    - tour
-    - url
-    - user
-    - visits
-    - web
-  backlinks:
-    - about
-    - acquire
-    - booking
-    - checkout
-    - collapse
-    - collection
-    - contact
-    - content
-    - element
-    - end
-    - entity
-    - faq
-    - image
-    - item
-    - law
-    - license
-    - main
-    - medical
-    - merge
-    - page
-    - primary
-    - print
-    - profile
-    - qa
-    - representative
-    - results
-    - search
-    - start
-    - sti
-    - template
-    - tour
-    - url
-    - user
-    - visits
-    - web
 signatures:
-  computationUuid: "edd37fad-71d5-8428-99f6-479729b4a1de"
+  computationUuid: "f8b0f186-0b7d-81e5-a8d2-60e6e552445b"
   stages:
     - stage: path
       stageUuid: "727eabfb-a911-80d8-b8da-06ec72570a13"
@@ -177,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5f0e4235-aa76-88cb-be3b-b8121279cbaa"
     - stage: horo
-      stageUuid: "5ed7c131-3f05-8106-85b2-a37341cd8b60"
+      stageUuid: "bc1eb66c-4c8d-8c68-88f9-bb914c36ad1c"
     - stage: seal
       stageUuid: "9528709b-b979-8568-bfe2-45e728f30a98"
     - stage: uuid
-      stageUuid: "cf261192-8323-82f4-8685-ef6613b6daa4"
+      stageUuid: "67b365a7-c90c-8f88-8f8f-751b89aea762"
 version: 2
 ---
 # medical/page — medical facet

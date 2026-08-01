@@ -1,53 +1,35 @@
 ---
 name: embassy
 description: Use when reasoning about embassy — An embassy.
-atomPath: vocabulary/embassy
-coordinate: embassy · 7/descent · efbf6892
-contentUuid: "6a9d1e7a-df20-559f-af6c-9b2b51c01d08"
-diamondUuid: "1655d038-380e-8e01-ac03-1e19b5ac5b6d"
-uuid: "efbf6892-15f5-820b-9b3a-173f2c434873"
-horo: 7
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/embassy"
+coordinate: "vocabulary/embassy · 4/weave · cb001d77"
+contentUuid: "fd0edd12-672d-5a15-ab82-9b9d47e87df1"
+diamondUuid: "22181667-3ed9-8ece-a788-5842987b3f56"
+uuid: "cb001d77-9e6c-8589-87b3-2bf20d3427aa"
+horo: 4
 typography:
-  partition: embassy
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "9988df50-c5ce-892a-8271-2f38e1bba649"
+  computationUuid: "6a27a44b-50a5-8873-80b1-491d9bac3172"
   stages:
     - stage: path
-      stageUuid: "849e0a92-058f-8fb5-b412-eabaeeeed649"
+      stageUuid: "eaa2e440-783b-86f6-ac60-aade5ecdf7a6"
     - stage: trinity
-      stageUuid: "7342ecca-202e-8ddb-b78e-51f83e8a5dc1"
+      stageUuid: "43cdd046-1471-8d81-8d9d-b8a57e53cd1d"
     - stage: boundary
-      stageUuid: "e1790884-a52b-80df-96ca-b4a10cfbd9b9"
+      stageUuid: "6c3edf25-b9ff-8a25-916b-977fc2193974"
     - stage: links
-      stageUuid: "b1950cb0-714d-885a-999d-ea6fa49e484a"
+      stageUuid: "181afd67-2827-8f54-a21e-6f9c1eff504d"
     - stage: horo
-      stageUuid: "f1129384-79a2-8d9c-83d2-2ba94e345385"
+      stageUuid: "fca2c6ca-f893-8d9f-ae61-d20c988af7be"
     - stage: seal
-      stageUuid: "6560830e-9872-89fb-9b69-746415e529bd"
+      stageUuid: "b9a0b4fe-2757-8ecf-8551-446c8bc03807"
     - stage: uuid
-      stageUuid: "1203f4e8-8f02-83d4-aab1-6fe3cb9a464d"
+      stageUuid: "b8b9f83f-33c0-8306-bb9f-6139e2b93b14"
 version: 2
 ---
 # embassy

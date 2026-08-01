@@ -2,73 +2,19 @@
 name: fronted
 description: "Use when checking whether every atom has a front door — the computed convention that each SKILL.md carries valid name and description frontmatter, measured live as coverage = fronted / total over the real corpus tree."
 atomPath: "convention/fronted"
-coordinate: "convention/fronted · 7/descent · 1397fef2"
-contentUuid: "f95852c0-e7b8-5773-b504-005a92a2e845"
-diamondUuid: "73a31abd-0f10-859b-bda8-c126b57666a6"
-uuid: "1397fef2-ff5a-851a-9158-32ae884391db"
-horo: 7
-bonds:
-  in:
-    - akashic
-    - collapse
-    - complete
-    - convention
-    - cost
-    - exported
-    - law
-    - lawful
-    - merge
-    - named
-  out:
-    - akashic
-    - collapse
-    - complete
-    - cost
-    - exported
-    - law
-    - lawful
-    - merge
-    - named
+coordinate: "convention/fronted · 5/round · 64c1bb49"
+contentUuid: "71d9e8ac-a4c5-5434-bfc7-4ffec64e5cbc"
+diamondUuid: "15a0c960-d5be-8c74-a9e5-f253a41dc693"
+uuid: "64c1bb49-c992-8353-bb4f-0fa4c720d401"
+horo: 5
 typography:
   partition: convention
   bondDegree: 29
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - collapse
-    - complete
-    - cost
-    - exported
-    - law
-    - lawful
-    - merge
-    - named
-  matrix:
-    - akashic
-    - collapse
-    - complete
-    - cost
-    - exported
-    - law
-    - lawful
-    - merge
-    - named
-  backlinks:
-    - akashic
-    - collapse
-    - complete
-    - cost
-    - exported
-    - law
-    - lawful
-    - merge
-    - named
 signatures:
-  computationUuid: "fea976c8-e355-895d-9975-1ed1bf59b479"
+  computationUuid: "bb6a3176-6be1-83de-8528-0d621bf24d8c"
   stages:
     - stage: path
       stageUuid: "36fcaff5-aec2-895f-974a-ce889f71d491"
@@ -79,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b38c3fbd-1ff6-8166-b76b-98c824abc5fe"
     - stage: horo
-      stageUuid: "521461d5-3b1f-8718-a590-536d5c451be5"
+      stageUuid: "a3660d3f-6701-8d01-ae1d-936468699c53"
     - stage: seal
       stageUuid: "962d7061-6fdf-8d75-a2a0-5374271b3d9f"
     - stage: uuid
-      stageUuid: "5411fcc1-d292-8a30-9385-0652c61c7da4"
+      stageUuid: "78385059-d559-82bf-aa52-19de7236e269"
 version: 2
 ---
 # convention/fronted — every SKILL.md has valid name + description frontmatter

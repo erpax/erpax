@@ -1,68 +1,35 @@
 ---
 name: invite
 description: "Use when reasoning about invite as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/invite
-coordinate: invite · 4/weave · 01eb2379
-contentUuid: "18201de1-4cfe-59f4-b413-0477cf759260"
-diamondUuid: "a0b6875b-e0a8-8b3e-95dc-09cf38bedd63"
-uuid: "01eb2379-d428-8115-a908-a403551f80a8"
-horo: 4
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/invite"
+coordinate: "vocabulary/invite · 2/share · fef99749"
+contentUuid: "e8cb4f02-7137-5829-958f-214d9beac1b5"
+diamondUuid: "e20cc5ee-48e3-87bd-b7cc-1920a36f17f8"
+uuid: "fef99749-0048-89a6-a7b3-be18d1abd508"
+horo: 2
 typography:
-  partition: invite
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "bac2ba6c-d28a-82f4-878a-0cc0893abd04"
+  computationUuid: "d56094f0-5d48-8bcd-83f3-2d016588b745"
   stages:
     - stage: path
-      stageUuid: "c7cfac46-42e2-8d94-a8fd-be24136df3b3"
+      stageUuid: "7c1b7009-d787-8733-9f81-6823cb9c9233"
     - stage: trinity
-      stageUuid: "de28f8e1-b542-8f66-9ea8-04884251db6a"
+      stageUuid: "f4903da1-eb49-8ec2-bbc1-a8d5923bb3af"
     - stage: boundary
-      stageUuid: "2e9e3ec1-3c5a-8a54-85cc-558ddc59c276"
+      stageUuid: "fc006832-75f4-8a28-882a-4528cd379013"
     - stage: links
-      stageUuid: "31be055a-d42e-8cc5-a8eb-dd3754150121"
+      stageUuid: "45178b0d-15db-83d2-a85f-47ebfc1eca3f"
     - stage: horo
-      stageUuid: "6e34c139-53d4-8ba2-95cb-595424a22d4e"
+      stageUuid: "783098b1-9345-8bd3-b374-5a4d85f44fea"
     - stage: seal
-      stageUuid: "690d8845-f61c-8afb-98d6-2b90f3df4362"
+      stageUuid: "5a68ed96-716c-82f4-b6e6-a01b6284188a"
     - stage: uuid
-      stageUuid: "d09185e7-47a6-8775-b3ed-10e1ef924452"
+      stageUuid: "19f5687d-390a-8be1-ae6e-c20100c65b4d"
 version: 2
 ---
 # invite

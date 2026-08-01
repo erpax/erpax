@@ -1,68 +1,35 @@
 ---
 name: built
 description: "Use when reasoning about built as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/built
-coordinate: built · 8/crest · 17524035
-contentUuid: "91c2cf92-3803-5aa4-8dd4-66733ca98dde"
-diamondUuid: "f92c468d-6ad0-811f-8689-deb144d12733"
-uuid: "17524035-e229-8346-91ee-430623e3a235"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - year
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - year
+atomPath: "vocabulary/built"
+coordinate: "vocabulary/built · 1/base · 46bb940a"
+contentUuid: "26522d4f-eb48-5259-b1ad-8889d140664a"
+diamondUuid: "a90c2640-97b5-8a1f-9dda-e69beb04df3c"
+uuid: "46bb940a-833a-87ab-9e6f-e10d9f160763"
+horo: 1
 typography:
-  partition: built
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - year
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - year
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - year
 signatures:
-  computationUuid: "a0292c7f-cdc4-8a07-8b00-79b1574c3ddc"
+  computationUuid: "feda430e-5768-8e89-bbbe-c3f2e43c5ad9"
   stages:
     - stage: path
-      stageUuid: "a11cf762-9193-8ea4-8cb3-101f98fb8c7d"
+      stageUuid: "131484d1-a7ea-8c5a-83b4-94de46ab3f60"
     - stage: trinity
-      stageUuid: "44e36263-d7b2-8a0f-bd60-74db5b321c64"
+      stageUuid: "0f8338de-b07d-8014-8855-4fecae80097e"
     - stage: boundary
-      stageUuid: "b3e13def-56e3-8cba-b7d0-368ac10b9cf8"
+      stageUuid: "f968b496-3828-810a-8394-84ebdf5da33e"
     - stage: links
-      stageUuid: "7520b5d7-c2cc-88b3-8a9f-037a63133c3a"
+      stageUuid: "b8161653-0be7-85cf-9486-1835bd307d42"
     - stage: horo
-      stageUuid: "8578b2a7-5040-8c7f-97dd-c084da872cf0"
+      stageUuid: "9cb12972-e8ae-8782-88ee-b762f0b62d3a"
     - stage: seal
-      stageUuid: "b544289a-1276-898a-a1f3-138e0640edab"
+      stageUuid: "04768f78-a250-8636-8ffd-cc0ccb5cf086"
     - stage: uuid
-      stageUuid: "00f8f318-f263-8f76-ace4-f14c7a1ac9d2"
+      stageUuid: "01c47c51-604e-88c8-8a47-dc700ea61e9a"
 version: 2
 ---
 # built

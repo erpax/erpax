@@ -1,68 +1,35 @@
 ---
 name: profile
 description: "Use when reasoning about profile as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/profile
-coordinate: profile · 1/base · b81f70da
-contentUuid: "4bdfc3fd-95ba-58cc-b210-c35eaf27a5c5"
-diamondUuid: "674a9ce1-c95b-8048-b344-8a4afcb65fd4"
-uuid: "b81f70da-13fb-83bb-b648-63e8e0f0ba2c"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
+atomPath: "vocabulary/profile"
+coordinate: "vocabulary/profile · 2/share · be6e55bd"
+contentUuid: "18060054-e95c-5860-83e0-f6f60490b92f"
+diamondUuid: "c6ebfc1d-8492-8e77-8d9f-2261a3e49931"
+uuid: "be6e55bd-a304-87f3-9d78-e03de2d39c13"
+horo: 2
 typography:
-  partition: profile
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
 signatures:
-  computationUuid: "fc8fb88c-1bc0-8fe9-a806-72b87f543b49"
+  computationUuid: "80d8e7c3-29e6-889f-be7e-dce5a7f1e330"
   stages:
     - stage: path
-      stageUuid: "c9eb4122-37c1-8788-b7e3-f3b268f3258e"
+      stageUuid: "c75e53d4-b187-823b-91e0-04a003790b3c"
     - stage: trinity
-      stageUuid: "521a0df6-164d-8f4b-9901-c550390c167d"
+      stageUuid: "73acd6c1-f211-8caa-8281-1da53643cbc8"
     - stage: boundary
-      stageUuid: "8cb9a1e1-28fe-8bb2-95d3-ab13f78cf26b"
+      stageUuid: "cb15fad0-b378-88c2-8c6a-f9ead7c0edf2"
     - stage: links
-      stageUuid: "6e9dd476-1d5a-86a4-8d47-bbdfb96963d7"
+      stageUuid: "ae1300a1-bf84-85b7-be2e-e28bbd23569f"
     - stage: horo
-      stageUuid: "08ed92f0-8a34-88e0-a48e-4cbf6f9fba0a"
+      stageUuid: "6a6425da-a250-82d9-85ba-d9d6c599ec34"
     - stage: seal
-      stageUuid: "a7dcd153-cf1d-829f-ae93-c8af1cf976a3"
+      stageUuid: "827073ad-4733-8246-b20e-5c262677f1a4"
     - stage: uuid
-      stageUuid: "ce5ecb1f-2bfd-873b-918b-2666775285ce"
+      stageUuid: "1f2b6c4c-587d-8096-b763-3a11e4e635dc"
 version: 2
 ---
 # profile

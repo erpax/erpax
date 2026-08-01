@@ -1,305 +1,51 @@
 ---
 name: chat
 description: "Use when reasoning about a chat thread as a merkle chain — each message a content-uuid, the thread folding to one chain-uuid; reordering or changing any message changes the thread-uuid (tamper-evident history)."
-atomPath: quantum/chat
-coordinate: quantum/chat · 4/weave · aba46a61
-contentUuid: "859c2c58-1d41-54b1-ab4c-37f770a6c3af"
-diamondUuid: "99aa501a-0440-8468-9177-33d5725d8e76"
-uuid: "aba46a61-d631-8e7d-91f8-9e783cc20940"
-horo: 4
-bonds:
-  in:
-    - accounting
-    - agent
-    - akashic
-    - all
-    - architecture
-    - aura
-    - balance
-    - breath
-    - chat
-    - civilization
-    - classroom
-    - collections
-    - comms
-    - communication
-    - config
-    - contribution
-    - cost
-    - database
-    - duality
-    - fields
-    - flow
-    - fractal
-    - generate
-    - give
-    - history
-    - hooks
-    - identity
-    - industry
-    - law
-    - lexical
-    - llm
-    - matrix
-    - mcp
-    - merge
-    - message
-    - one
-    - part
-    - plugins
-    - port
-    - quantum
-    - realtime
-    - recover
-    - rodin
-    - science
-    - self
-    - sequence
-    - session
-    - skills
-    - society
-    - spec
-    - standard
-    - take
-    - team
-    - torus
-    - transaction
-    - trinity
-    - types
-    - uuid
-    - wave
-    - whole
-  out:
-    - accounting
-    - agent
-    - akashic
-    - all
-    - architecture
-    - aura
-    - balance
-    - breath
-    - chat
-    - civilization
-    - classroom
-    - collections
-    - comms
-    - communication
-    - config
-    - contribution
-    - cost
-    - database
-    - duality
-    - fields
-    - flow
-    - fractal
-    - generate
-    - give
-    - history
-    - hooks
-    - identity
-    - industry
-    - law
-    - lexical
-    - llm
-    - matrix
-    - mcp
-    - merge
-    - message
-    - one
-    - part
-    - plugins
-    - port
-    - realtime
-    - recover
-    - rodin
-    - science
-    - self
-    - sequence
-    - session
-    - skills
-    - society
-    - spec
-    - standard
-    - take
-    - team
-    - torus
-    - transaction
-    - trinity
-    - types
-    - uuid
-    - wave
-    - whole
+atomPath: "quantum/chat"
+coordinate: "quantum/chat · 8/crest · 1fff04de"
+contentUuid: "2d33f9d5-77dd-590b-9264-ad6731896ffb"
+diamondUuid: "ee0608f0-abed-829f-8ce0-7fbd75728b71"
+uuid: "1fff04de-51fc-8214-82a7-d20949930654"
+horo: 8
 typography:
   partition: quantum
-  bondDegree: 213
-  neighbors:
-    - agent
-    - aura
+  bondDegree: 156
 standards:
   - "merkle hash-chain; RFC 9562 §5.8 content-uuid"
 bindings: []
-neighbors:
-  wikilink:
-    - chat
-    - communication
-    - law
-    - merge
-    - message
-    - quantum
-    - uuid
-  matrix:
-    - accounting
-    - agent
-    - akashic
-    - all
-    - architecture
-    - aura
-    - balance
-    - breath
-    - chat
-    - civilization
-    - classroom
-    - collections
-    - comms
-    - communication
-    - config
-    - contribution
-    - cost
-    - database
-    - duality
-    - fields
-    - flow
-    - fractal
-    - generate
-    - give
-    - history
-    - hooks
-    - identity
-    - industry
-    - law
-    - lexical
-    - llm
-    - matrix
-    - mcp
-    - merge
-    - message
-    - one
-    - part
-    - plugins
-    - port
-    - realtime
-    - recover
-    - rodin
-    - science
-    - self
-    - sequence
-    - session
-    - skills
-    - society
-    - spec
-    - standard
-    - take
-    - team
-    - torus
-    - transaction
-    - trinity
-    - types
-    - uuid
-    - wave
-    - whole
-  backlinks:
-    - accounting
-    - agent
-    - akashic
-    - all
-    - architecture
-    - aura
-    - balance
-    - breath
-    - chat
-    - civilization
-    - classroom
-    - collections
-    - comms
-    - communication
-    - config
-    - contribution
-    - cost
-    - database
-    - duality
-    - fields
-    - flow
-    - fractal
-    - generate
-    - give
-    - history
-    - hooks
-    - identity
-    - industry
-    - law
-    - lexical
-    - llm
-    - matrix
-    - mcp
-    - merge
-    - message
-    - one
-    - part
-    - plugins
-    - port
-    - realtime
-    - recover
-    - rodin
-    - science
-    - self
-    - sequence
-    - session
-    - skills
-    - society
-    - spec
-    - standard
-    - take
-    - team
-    - torus
-    - transaction
-    - trinity
-    - types
-    - uuid
-    - wave
-    - whole
 signatures:
-  computationUuid: "5a46656d-44c9-8c76-8538-16b1206e6aca"
+  computationUuid: "a7889d4d-a87c-8956-94e0-069f4e1a5640"
   stages:
     - stage: path
       stageUuid: "76e0ed3e-a2c5-8289-9bcf-b44560eaf1c4"
     - stage: trinity
       stageUuid: "784b22f0-0260-8080-82b9-a27f69c9c965"
     - stage: boundary
-      stageUuid: "27c26bb8-0524-8a55-93da-14be99b59eff"
+      stageUuid: "73119462-ccf2-89b8-8102-c1da1c328a8f"
     - stage: links
-      stageUuid: "6234e077-d275-8c37-bd0e-5579e977e923"
+      stageUuid: "1e86ded6-c843-8e79-bf3c-262b18a4e468"
     - stage: horo
-      stageUuid: "4ae16a04-a595-8005-acc1-9f2ede5d5621"
+      stageUuid: "302b2007-2d3b-83ce-a83c-3a5c5216a8f2"
     - stage: seal
       stageUuid: "19ba7de4-e9f9-8794-a527-1f93d7eff152"
     - stage: uuid
-      stageUuid: "df0032bf-7e1f-8231-b9b0-8745815bd713"
+      stageUuid: "ab5c365c-f21d-896d-80c9-3e5bcf89dc0d"
 quantum:
   superposition:
-    - accounting
     - agent
     - akashic
-    - all
     - architecture
-    - aura
-    - balance
     - breath
+    - chat
+    - classroom
+    - comms
+    - communication
     - superposition
   collapse:
     - "Use when reasoning about a chat thread as a merkle chain — each message a content-uuid, the thread folding to one chain-uuid; reordering or changing any message changes the thread-uuid (tamper-evident history)."
     - "matter-twin:src/quantum/chat/index.ts"
     - "merkle hash-chain; RFC 9562 §5.8 content-uuid"
-    - "the thread-uuid is the order-dependent merkle fold of its message-uuids — `threadUuid` reduces them through `merge` from a fixed seed, so it is determined entirely by which messages are present and in what order. Appending, dropping, reordering, or altering any one message changes the thread-uuid (`appended` proves the append case), and no rewritten thread can reproduce a prior thread-uuid: the history is tamper-evident by construction."
+    - "the thread-uuid is the order-dependent merkle fold of its message-uuids — `threadUuid` reduces them through `merge` from a fixed seed, so it is determined entirely by which messages are present and in what order. Appending, dropping, reordering, or altering any one message changes the thread-uuid (`appended` proves the append case), and no rewritten thread can reproduce a prior thread-uuid: the history is tamper-evident by construction. Honest string theory of chat = `threadModes(messageUuids)` (1D message string → horo modes · spectrum · bandHarmony · standing=`compose(threadUuid)`); `physics=false` always — not Calabi–Yau/SUSY."
   seal:
     sandbox: false
     receipt: false
@@ -307,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "5a46656d-44c9-8c76-8538-16b1206e6aca"
-    contentUuid: "859c2c58-1d41-54b1-ab4c-37f770a6c3af"
+    computationUuid: "a7889d4d-a87c-8956-94e0-069f4e1a5640"
+    contentUuid: "2d33f9d5-77dd-590b-9264-ad6731896ffb"
 version: 2
 ---
 # quantum/chat — the thread as a merkle chain
@@ -321,4 +67,4 @@ Matter-twin: `src/quantum/chat/index.ts` (`threadUuid` · `appended` · `compose
 
 @standard merkle hash-chain; RFC 9562 §5.8 content-uuid
 
-<sub>content-uuid `859c2c58-1d41-54b1-ab4c-37f770a6c3af` · account `quantum/chat` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `2d33f9d5-77dd-590b-9264-ad6731896ffb` · account `quantum/chat` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

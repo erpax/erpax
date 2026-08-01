@@ -2,74 +2,18 @@
 name: sla
 description: "Use when defining response/resolution guarantees on issues/tickets — SLA definition, breach detection, escalation, customer-impact metric."
 atomPath: sla
-coordinate: sla · 7/descent · 5eff945e
-contentUuid: "0c0108d1-afcb-5318-ad17-2f70f0b79642"
-diamondUuid: "4d3e28d7-634c-877b-b5ac-5fce9dbb57e1"
-uuid: "5eff945e-9880-8d5c-ad58-f057a3e3c8e0"
-horo: 7
-bonds:
-  in:
-    - activities
-    - customers
-    - cycles
-    - escalation
-    - law
-    - observability
-    - priority
-    - queue
-    - resolution
-    - workflow
-  out:
-    - activities
-    - customers
-    - cycles
-    - escalation
-    - law
-    - observability
-    - priority
-    - queue
-    - resolution
-    - workflow
+coordinate: "sla · 5/round · 0b49c0e5"
+contentUuid: "82c5e5fa-2010-5317-9316-4c3fe4afd3f5"
+diamondUuid: "84ec6b9d-5f31-814a-92b2-a9289fdc02d5"
+uuid: "0b49c0e5-bdca-8e82-9218-e44575316e44"
+horo: 5
 typography:
   partition: sla
   bondDegree: 31
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - activities
-    - customers
-    - cycles
-    - escalation
-    - law
-    - observability
-    - resolution
-    - workflow
-  matrix:
-    - activities
-    - customers
-    - cycles
-    - escalation
-    - law
-    - observability
-    - priority
-    - queue
-    - resolution
-    - workflow
-  backlinks:
-    - activities
-    - customers
-    - cycles
-    - escalation
-    - law
-    - observability
-    - priority
-    - queue
-    - resolution
-    - workflow
 signatures:
-  computationUuid: "1957ca07-6662-89ed-b737-cbd20aab3331"
+  computationUuid: "7481716e-06a3-8b43-9698-5c40d6b91092"
   stages:
     - stage: path
       stageUuid: "5b1084ba-fd4e-8c50-ba77-2b9833aeda3c"
@@ -80,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3120227f-b0d7-875e-976b-a3674377c034"
     - stage: horo
-      stageUuid: "cb9d7824-8fe1-8f9a-8c87-54917134ef85"
+      stageUuid: "f644c86b-02dd-807c-82f3-bd5a0d377433"
     - stage: seal
-      stageUuid: "15f5f997-221c-871b-bee9-b0c6f3a4b2a7"
+      stageUuid: "5d32bb14-71a9-8b94-a131-4ee6daffb9e8"
     - stage: uuid
-      stageUuid: "d2435210-ad41-8eb0-80c7-33a17d26d5a6"
+      stageUuid: "fc2ace19-4a63-83e4-a724-68a5284b75ea"
 version: 2
 ---
 # sla

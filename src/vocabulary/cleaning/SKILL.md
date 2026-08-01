@@ -1,73 +1,35 @@
 ---
 name: cleaning
 description: "Use when reasoning about cleaning as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/cleaning
-coordinate: cleaning · 4/weave · 9e47fed9
-contentUuid: "e60e491c-21cc-5af4-b977-d3866088a3aa"
-diamondUuid: "07da5b64-53df-8d69-a91d-ede846d043f7"
-uuid: "9e47fed9-68a6-8691-a580-4aaeb44f45fe"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - dry
-    - laundry
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - dry
-    - laundry
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/cleaning"
+coordinate: "vocabulary/cleaning · 1/base · 3001015a"
+contentUuid: "4207100e-b214-5771-8fd2-d1431b3b5b8b"
+diamondUuid: "15a11efd-06f6-8b41-8a06-a5b503af633d"
+uuid: "3001015a-67ac-8b71-a6e0-c1d37d3f5c71"
+horo: 1
 typography:
-  partition: cleaning
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - dry
-    - laundry
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - dry
-    - laundry
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - dry
-    - laundry
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "0ea3b06f-81bb-8b4d-b529-7174af40ef1e"
+  computationUuid: "b4985966-a2e4-832f-a965-3d19b3edbe9e"
   stages:
     - stage: path
-      stageUuid: "4ff5b3ae-3746-8529-9836-cc4c3da8e9dd"
+      stageUuid: "95b75242-8dbb-85dd-af16-b321aa279e0e"
     - stage: trinity
-      stageUuid: "9548bceb-47a3-8717-bea0-ca060cf56e34"
+      stageUuid: "266050f9-efce-8914-9c06-645ddb9a27aa"
     - stage: boundary
-      stageUuid: "345e02a7-eaac-8f60-ad24-f785caafafb5"
+      stageUuid: "361fbc86-9212-823e-993b-3e8150bdb2ec"
     - stage: links
-      stageUuid: "d60410d5-996f-87eb-80cb-31ef138b4cca"
+      stageUuid: "8c6faaa1-33c4-8bac-a065-81bbdf63dab3"
     - stage: horo
-      stageUuid: "57273df6-ac2c-8a59-a568-b2aaf64ba782"
+      stageUuid: "90ec040c-db71-8a07-a0fe-accec0ca8c8c"
     - stage: seal
-      stageUuid: "b7f9977c-1948-859f-a546-c1119e247d78"
+      stageUuid: "9d1e1fb2-de59-8e4d-a1f3-49f63582c797"
     - stage: uuid
-      stageUuid: "d76372aa-97bd-8a67-a260-9bd909398b2e"
+      stageUuid: "737c4a4b-3b40-8ab2-85e2-737ec1a78dd8"
 version: 2
 ---
 # cleaning

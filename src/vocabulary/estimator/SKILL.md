@@ -1,73 +1,35 @@
 ---
 name: estimator
 description: "Use when reasoning about estimator as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/estimator
-coordinate: estimator · 7/descent · bd9ff1c8
-contentUuid: "25a82508-8e3b-5b05-b390-432d9353b30f"
-diamondUuid: "aaf2a9e4-df12-876c-a6a6-db256b250841"
-uuid: "bd9ff1c8-846e-8ab5-a295-e834e9e824a8"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - medical
-    - merge
-    - risk
-    - sti
-  out:
-    - collapse
-    - law
-    - medical
-    - merge
-    - risk
-    - sti
+atomPath: "vocabulary/estimator"
+coordinate: "vocabulary/estimator · 4/weave · ee9d40f1"
+contentUuid: "d10765c6-bc44-51c3-915b-b83db9d7392a"
+diamondUuid: "8680f3e6-8f32-8e3f-9330-fb3bfc807db6"
+uuid: "ee9d40f1-c7f9-89d5-a495-8435a8a23517"
+horo: 4
 typography:
-  partition: estimator
-  bondDegree: 19
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 20
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - medical
-    - merge
-    - risk
-    - sti
-  matrix:
-    - collapse
-    - law
-    - medical
-    - merge
-    - risk
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - medical
-    - merge
-    - risk
-    - sti
 signatures:
-  computationUuid: "a4278326-ac62-8ed3-9a7a-dfaafe83e1d2"
+  computationUuid: "0eea3e7c-a71c-812d-a1f5-d96f2a5ebdb4"
   stages:
     - stage: path
-      stageUuid: "126221d1-b84b-876a-822c-5b7f9018de0d"
+      stageUuid: "e8ae7ad3-ed45-8ad9-9346-8ba987de709f"
     - stage: trinity
-      stageUuid: "b33ee2c2-14ac-87d7-bd39-c84c9ee9b3a3"
+      stageUuid: "9be173fb-a667-87fe-93ff-b8c7174dca50"
     - stage: boundary
-      stageUuid: "8881766a-9828-8143-884e-ba299f86fd20"
+      stageUuid: "5f6bb79c-6a92-8ea4-8486-92cb251e7968"
     - stage: links
-      stageUuid: "56c0fcd4-1db9-8e8b-a886-f7727226ce78"
+      stageUuid: "69e40492-614b-8ad2-ad63-7a63da266457"
     - stage: horo
-      stageUuid: "df02350b-90bd-88ed-a490-79c9b0951978"
+      stageUuid: "543751f1-3967-873b-8b25-6c32279b4ae7"
     - stage: seal
-      stageUuid: "f698ac19-084b-86d6-b2a8-bd5762da406d"
+      stageUuid: "ab0019ba-ca64-861b-9463-840e2183b1ef"
     - stage: uuid
-      stageUuid: "69121cf4-5443-8318-8b29-a3f9b9a2e62e"
+      stageUuid: "c4da8add-f6eb-839c-998f-8ebe513f85d4"
 version: 2
 ---
 # estimator

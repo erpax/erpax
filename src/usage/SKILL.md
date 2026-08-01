@@ -2,77 +2,19 @@
 name: usage
 description: "Use when reasoning about usage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: usage
-coordinate: usage · 1/base · f526c29d
-contentUuid: "e7a4cf71-bb40-5324-b3ed-59e59a8b9abd"
-diamondUuid: "1289be51-ecc5-81c6-b27f-31e8067cb2be"
-uuid: "f526c29d-be3d-8513-ab02-18cf1075305e"
+coordinate: "usage · 1/base · 729b9a85"
+contentUuid: "c2d1e684-4729-5a79-a8c6-a49b3c465a87"
+diamondUuid: "be877362-19c4-8f9a-8783-57f6babb582b"
+uuid: "729b9a85-42b2-8d6e-abd4-890cc2638894"
 horo: 1
-bonds:
-  in:
-    - car
-    - collapse
-    - info
-    - law
-    - merge
-    - permitted
-    - special
-    - sti
-    - type
-    - vehicle
-  out:
-    - car
-    - collapse
-    - info
-    - law
-    - merge
-    - permitted
-    - special
-    - sti
-    - type
-    - vehicle
 typography:
   partition: usage
   bondDegree: 35
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - car
-    - collapse
-    - info
-    - law
-    - merge
-    - permitted
-    - special
-    - sti
-    - type
-    - vehicle
-  matrix:
-    - car
-    - collapse
-    - info
-    - law
-    - merge
-    - permitted
-    - special
-    - sti
-    - type
-    - vehicle
-  backlinks:
-    - car
-    - collapse
-    - info
-    - law
-    - merge
-    - permitted
-    - special
-    - sti
-    - type
-    - vehicle
 signatures:
-  computationUuid: "d623d231-2d3d-8637-bbdc-2c01f4258a48"
+  computationUuid: "c914e7e2-f9f3-8b4b-8f71-739d891d1cd4"
   stages:
     - stage: path
       stageUuid: "7c01c169-807b-8150-aca5-359bec2576c3"
@@ -83,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0c608e65-e70d-840b-9935-6411e320e025"
     - stage: horo
-      stageUuid: "4d40e6c4-b7fd-802c-aeba-703dc3eb3f92"
+      stageUuid: "60dc1563-69aa-8884-acf4-c250bcc5b48c"
     - stage: seal
-      stageUuid: "f5208f41-46a5-818b-8319-b5c9594f0ee9"
+      stageUuid: "b72ef9d8-bd1c-8b36-a1d9-1ddd86a618e7"
     - stage: uuid
-      stageUuid: "ae9ba445-d9f0-801b-a083-3b4ea893f104"
+      stageUuid: "0f9fe8fd-1889-8383-89e5-550c6e9d9654"
 version: 2
 ---
 # usage

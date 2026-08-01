@@ -2,32 +2,14 @@
 name: leases
 description: "Use when recognising and tracking IFRS 16 / ASC 842 lessee leases — ROU asset initial measurement, lease liability PV calculation, discount rate, payment frequency/timing, modifications, and period-end carrying amounts. The lease master-data collection."
 atomPath: leases
-coordinate: "leases · 8/crest · 501203a3"
-contentUuid: "96ca2b11-a6e7-5026-adbf-3199305aa56c"
-diamondUuid: "3eb9a2f9-6db4-8ec3-8b47-22f1a00d0e80"
-uuid: "501203a3-7799-8cc2-a89c-9e51f8a8d61c"
-horo: 8
-bonds:
-  in:
-    - calculate
-    - grazing
-    - modifications
-    - pasture
-    - postings
-    - properties
-    - transaction
-  out:
-    - calculate
-    - grazing
-    - modifications
-    - pasture
-    - postings
-    - properties
-    - transaction
+coordinate: "leases · 4/weave · ceed5ad4"
+contentUuid: "c571bfa1-1af2-5a7f-95cc-d2aed9ba66a9"
+diamondUuid: "15e6be31-1cbc-895c-a540-e7b316d00c55"
+uuid: "ceed5ad4-217b-8e55-ace8-00639d3641b1"
+horo: 4
 typography:
   partition: leases
   bondDegree: 0
-  neighbors: []
 standards:
   - "IFRS IFRS-16 leases lessee-recognition"
   - "IFRS IFRS-16 §22-§35 initial-measurement-rou-asset"
@@ -42,30 +24,8 @@ standards:
   - "US-GAAP ASC-842-20-25 finance-vs-operating-lease"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - calculate
-    - modifications
-    - postings
-    - transaction
-  matrix:
-    - calculate
-    - grazing
-    - modifications
-    - pasture
-    - postings
-    - properties
-    - transaction
-  backlinks:
-    - calculate
-    - grazing
-    - modifications
-    - pasture
-    - postings
-    - properties
-    - transaction
 signatures:
-  computationUuid: "0bb5c9e5-98a2-87a8-ba6d-b46db8cc20d4"
+  computationUuid: "9f3b479d-8a21-80ab-83f0-66dbb8053610"
   stages:
     - stage: path
       stageUuid: "566de06d-1065-88c3-b090-d0ec5a5a7023"
@@ -76,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "07894c5d-5ce7-8252-a4f4-8b064545e334"
     - stage: horo
-      stageUuid: "f406d5ff-c5f2-85fa-9aa9-bb23d8b6d9e6"
+      stageUuid: "c6e38cad-35db-8ef8-92e0-1d885ae2ed3c"
     - stage: seal
       stageUuid: "8aeda79c-b0b9-89a9-8247-3ef60bc3488e"
     - stage: uuid
-      stageUuid: "17d691d8-21eb-8c96-bf21-d991452e04ae"
+      stageUuid: "03ca2c50-ece6-8a98-bc1d-acbc3fec87d3"
 version: 2
 ---
 # leases

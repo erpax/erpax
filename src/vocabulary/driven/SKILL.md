@@ -1,63 +1,35 @@
 ---
 name: driven
 description: "Use when reasoning about driven as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/driven
-coordinate: driven · 8/crest · 6f6c7607
-contentUuid: "592e7385-5851-5ff4-b57c-301c0176a156"
-diamondUuid: "628d57a8-6e31-876e-a006-d47698f68197"
-uuid: "6f6c7607-fefb-8758-9012-d15730c5fb1d"
+atomPath: "vocabulary/driven"
+coordinate: "vocabulary/driven · 8/crest · 15e98f08"
+contentUuid: "c1d56a1c-9efa-5731-8e64-e129f4b2f90c"
+diamondUuid: "b3265017-f5cb-86ba-9ab8-d58402261227"
+uuid: "15e98f08-d293-8025-b707-35b187ca2ba0"
 horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: driven
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "72edd1d7-3972-8782-99ac-e16934557dab"
+  computationUuid: "58158716-aa51-87c5-81fe-6cf1d128acd1"
   stages:
     - stage: path
-      stageUuid: "17089f18-1bb7-8854-a8a0-5dd7ff0a8e19"
+      stageUuid: "a3c248f7-4e16-8704-9d22-ac24cb0010f5"
     - stage: trinity
-      stageUuid: "6e864e94-3655-87cd-942e-d1ac9c49c3fb"
+      stageUuid: "94b07815-6670-86fc-ad62-315d2f9d7d05"
     - stage: boundary
-      stageUuid: "9d8b2162-aece-8f96-a179-40f86053b282"
+      stageUuid: "80005c9c-aed9-8dea-8cc8-76985d11d4bd"
     - stage: links
-      stageUuid: "ece258e9-9483-8649-b541-c41728865499"
+      stageUuid: "fbd6142e-e677-804e-9c5f-8c83c20c6880"
     - stage: horo
-      stageUuid: "0bcb5f6f-db65-8396-94d5-7fa2b8a3b746"
+      stageUuid: "33379cb1-a5b3-8c27-97c5-a52f066ee2c1"
     - stage: seal
-      stageUuid: "4750735d-774a-8c4c-9152-844112a9b993"
+      stageUuid: "ded5d596-48d6-886e-878e-364d43636619"
     - stage: uuid
-      stageUuid: "2f39638f-4535-85c3-85c8-a5a261cb3af7"
+      stageUuid: "ca8cc7d2-2351-8d85-b83c-9a7228814ab5"
 version: 2
 ---
 # driven

@@ -2,98 +2,23 @@
 name: decentralization
 description: "Use when order must arise with NO central controller — a global pattern as the fixed point of LOCAL rules (stigmergy, emergence, flocking), robust because redundant and diverse (no single point of failure), measured by concentration (the Nakamoto coefficient). In erpax, content-uuid merge IS stigmergy — each peer recomputes the id from the content, no coordinator; order emerges from content-addressing, not from a center."
 atomPath: decentralization
-coordinate: "decentralization · 1/base · ed8b2f50"
-contentUuid: "12553535-8e55-5bf9-a3e0-a626b6331387"
-diamondUuid: "b613117c-8b71-84b9-a071-b4cd0966712e"
-uuid: "ed8b2f50-45b2-8713-930e-db629a85b01b"
-horo: 1
-bonds:
-  in:
-    - agent
-    - diversity
-    - ecosystem
-    - federation
-    - law
-    - merge
-    - mycelium
-    - network
-    - self
-    - society
-    - sustainability
-    - uuid
-    - whole
-  out:
-    - agent
-    - diversity
-    - ecosystem
-    - federation
-    - law
-    - merge
-    - mycelium
-    - network
-    - self
-    - society
-    - sustainability
-    - uuid
-    - whole
+coordinate: "decentralization · 8/crest · c1b38658"
+contentUuid: "350c1548-0a6b-57a1-bbba-1bfec3ee0097"
+diamondUuid: "277cf4b7-6aeb-8432-ad5c-b63cd15b335c"
+uuid: "c1b38658-5dbc-8d89-b630-5704bdcf7d96"
+horo: 8
 typography:
   partition: decentralization
   bondDegree: 46
-  neighbors:
-    - agent
 standards:
   - "Barabási–Albert preferential attachment (1999) — why flat networks re-centralize"
   - "COSO-ERM-2017"
-  - "EU-2017/1132"
-  - "EU-2017/828"
   - Gini coefficient
   - Herfindahl–Hirschman Index (HHI)
   - "Nakamoto coefficient (Srinivasan & Lee, 2017)"
 bindings: []
-neighbors:
-  wikilink:
-    - agent
-    - diversity
-    - ecosystem
-    - federation
-    - law
-    - merge
-    - network
-    - self
-    - society
-    - sustainability
-    - uuid
-    - whole
-  matrix:
-    - agent
-    - diversity
-    - ecosystem
-    - federation
-    - law
-    - merge
-    - mycelium
-    - network
-    - self
-    - society
-    - sustainability
-    - uuid
-    - whole
-  backlinks:
-    - agent
-    - diversity
-    - ecosystem
-    - federation
-    - law
-    - merge
-    - mycelium
-    - network
-    - self
-    - society
-    - sustainability
-    - uuid
-    - whole
 signatures:
-  computationUuid: "fe97a44d-1068-8fbc-a77e-d4f2c7240161"
+  computationUuid: "2cd139e0-c9c6-84d7-8b02-a12eadc18763"
   stages:
     - stage: path
       stageUuid: "3d860fac-0654-8c74-a381-3ab1b7ae96b4"
@@ -104,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "a54d2060-c84a-8be4-a815-bc11f1c578d7"
     - stage: horo
-      stageUuid: "696d029c-bd97-83f4-955f-fa033107190a"
+      stageUuid: "fdca1414-f698-8ca8-aecf-37ab6b4beed4"
     - stage: seal
       stageUuid: "c278298b-a345-839c-8847-f2b404e7e826"
     - stage: uuid
-      stageUuid: "eb28a767-2c12-8b40-be45-19e649a4a096"
+      stageUuid: "7d916d5b-1a35-819e-bf65-ec0d6275a5f7"
 version: 2
 ---
 # decentralization — global order from local rules, no controller

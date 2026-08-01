@@ -2,51 +2,16 @@
 name: events
 description: "Use when persisting or querying the durable ISO 19011 / SOX §404 evidence trail — every canonical write (orders, invoices, payments, journal entries, period locks) lands one append-only row queryable by tenant/collection/operation/user/timestamp; Merkle hash chain for tamper-evidence; no log-scraping required for auditors. The canonical audit-evidence collection."
 atomPath: "audit/events"
-coordinate: "audit/events · 2/share · 2422410a"
-contentUuid: "5685b2b2-f063-5f2e-928b-556eb6d74b3a"
-diamondUuid: "d34e057c-bcc7-8134-9b9b-74d5e08bfc81"
-uuid: "2422410a-cedf-8a22-9e38-88ee0b886a16"
-horo: 2
-bonds:
-  in:
-    - audit
-    - auditright
-    - horo
-    - identity
-    - incident
-    - instances
-    - lineage
-    - materiality
-    - observability
-    - party
-    - proof
-    - standard
-    - sub
-  out:
-    - auditright
-    - horo
-    - identity
-    - incident
-    - instances
-    - lineage
-    - materiality
-    - observability
-    - party
-    - proof
-    - standard
-    - sub
+coordinate: "audit/events · 4/weave · 276cc67e"
+contentUuid: "8b30cc9f-ec09-57a6-bbb8-03065bb52eab"
+diamondUuid: "c749a37a-2fc8-8dd7-8ecf-894600ae5a85"
+uuid: "276cc67e-f034-83e5-a671-369c17fa5485"
+horo: 4
 typography:
   partition: audit
   bondDegree: 54
-  neighbors: []
 standards:
   - "5424 §6.2.1 syslog-severity-levels"
-  - "EU-2018/1673"
-  - "EU-2018/1725"
-  - "EU-2018/302"
-  - "EU-2018/389-SCA-RTS"
-  - "EU-2018/843"
-  - "EU-2018/957"
   - "GDPR Art.30 records-of-processing-activities"
   - "ISO 27037:2012 evidence-preservation"
   - "ISO 27037:2012 evidence-preservation`"
@@ -70,41 +35,8 @@ standards:
   - "rfc-9562 uuid event-id`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - horo
-    - identity
-    - party
-    - proof
-    - standard
-  matrix:
-    - auditright
-    - horo
-    - identity
-    - incident
-    - instances
-    - lineage
-    - materiality
-    - observability
-    - party
-    - proof
-    - standard
-    - sub
-  backlinks:
-    - auditright
-    - horo
-    - identity
-    - incident
-    - instances
-    - lineage
-    - materiality
-    - observability
-    - party
-    - proof
-    - standard
-    - sub
 signatures:
-  computationUuid: "dbac5c9f-6663-8c32-a883-879953349de6"
+  computationUuid: "e82bd094-5755-8b82-a45f-4be77bfdc845"
   stages:
     - stage: path
       stageUuid: "f934e69e-3f08-8563-bbd9-ba5342f878ad"
@@ -115,11 +47,11 @@ signatures:
     - stage: links
       stageUuid: "76a23ae0-664d-8828-99a0-f95e91e22b86"
     - stage: horo
-      stageUuid: "ac2497bb-ad7b-8d57-8781-cff2310b7af2"
+      stageUuid: "3918e6ab-3207-84d6-aa18-9457db367caf"
     - stage: seal
       stageUuid: "d2c77aca-e4b6-8acf-987b-b12b3b7acfb8"
     - stage: uuid
-      stageUuid: "45e6db55-ec14-89ac-9b1e-2b61da5e7882"
+      stageUuid: "cc2f65cb-6753-87a9-a1f3-beab64f4ca40"
 version: 2
 ---
 # audit-events

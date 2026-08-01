@@ -1,68 +1,35 @@
 ---
 name: hiring
 description: "Use when reasoning about hiring as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/hiring
-coordinate: hiring · 4/weave · d325510f
-contentUuid: "8969a5ea-53df-5432-b615-58f24850e8d5"
-diamondUuid: "6ccc2109-03b7-8f6c-8880-cc43e768e246"
-uuid: "d325510f-8d31-8457-807a-d953aaccc91a"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - organization
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - organization
-    - sti
+atomPath: "vocabulary/hiring"
+coordinate: "vocabulary/hiring · 8/crest · a0be4e91"
+contentUuid: "5cc68690-b99b-5a4f-917c-ee454b921a6b"
+diamondUuid: "2796e664-63c5-8cc8-81d8-ef50b1ed743a"
+uuid: "a0be4e91-5f65-828f-89f2-7c81a229a35d"
+horo: 8
 typography:
-  partition: hiring
-  bondDegree: 16
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 18
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - organization
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - organization
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - organization
-    - sti
 signatures:
-  computationUuid: "12b8cec7-e0a5-8fed-a943-ed5156dfc4e7"
+  computationUuid: "816fdee7-28cf-8e9c-8b92-02ee708f0268"
   stages:
     - stage: path
-      stageUuid: "f365ebb4-6237-8013-b981-7b7ad457b681"
+      stageUuid: "d7ab7050-3bca-8ff6-a95b-ed0d9ac1e93f"
     - stage: trinity
-      stageUuid: "7f5c46f9-b726-8e17-99bc-202a07844885"
+      stageUuid: "fd159e5e-cd13-8b7b-8445-d11f1e577ca5"
     - stage: boundary
-      stageUuid: "5306000d-76e6-8125-8537-c60fbe3273da"
+      stageUuid: "6cd4051d-6428-88c3-9cdd-f9ab7f1d7277"
     - stage: links
-      stageUuid: "066e2bc0-815a-8cfd-8e76-f0eede04561b"
+      stageUuid: "738e417c-d9cb-8474-9e63-686e55e1cdd0"
     - stage: horo
-      stageUuid: "eb599047-014a-83ad-952b-e13dcffb8660"
+      stageUuid: "3caa1aaa-9ec3-8a18-911b-935414f82541"
     - stage: seal
-      stageUuid: "cd698863-c191-8fca-bd10-327ec16623c5"
+      stageUuid: "02af68a4-dd1b-8d7c-84c0-17a8ff73bb9b"
     - stage: uuid
-      stageUuid: "f5dca54f-de2d-8483-8b69-a3db7081ffcf"
+      stageUuid: "c14dac8f-6db5-8976-a635-00ab71077e63"
 version: 2
 ---
 # hiring

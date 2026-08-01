@@ -2,67 +2,19 @@
 name: until
 description: "Use when reasoning about until as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: until
-coordinate: until · 2/share · a81af57a
-contentUuid: "6555bacd-e60d-50c5-934a-a060eb9b3b94"
-diamondUuid: "9cdac29a-60f6-8322-b173-3dd6a4e72541"
-uuid: "a81af57a-0cad-8bd3-8a03-f8915b388763"
-horo: 2
-bonds:
-  in:
-    - arrival
-    - collapse
-    - expected
-    - law
-    - merge
-    - price
-    - sti
-    - valid
-  out:
-    - arrival
-    - collapse
-    - expected
-    - law
-    - merge
-    - price
-    - sti
-    - valid
+coordinate: "until · 7/descent · 5a59d209"
+contentUuid: "0ed8a474-07ce-50c9-af91-09ca5f1c645f"
+diamondUuid: "1fb93300-68ea-8d97-8d30-98fbf2a8cfcb"
+uuid: "5a59d209-8968-867b-9391-2145f90300b2"
+horo: 7
 typography:
   partition: until
   bondDegree: 28
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - arrival
-    - collapse
-    - expected
-    - law
-    - merge
-    - price
-    - sti
-    - valid
-  matrix:
-    - arrival
-    - collapse
-    - expected
-    - law
-    - merge
-    - price
-    - sti
-    - valid
-  backlinks:
-    - arrival
-    - collapse
-    - expected
-    - law
-    - merge
-    - price
-    - sti
-    - valid
 signatures:
-  computationUuid: "4a01d792-a442-862a-8d73-a06703093fb0"
+  computationUuid: "557d0068-c14b-83a9-a7af-c9c8c6771923"
   stages:
     - stage: path
       stageUuid: "7686cb74-6fa8-8a92-beec-3e446d3c38ac"
@@ -73,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f5ce77c7-5715-830d-b8fe-48d7a416dc1d"
     - stage: horo
-      stageUuid: "8a1915ae-b517-8079-b3d4-8e27ea6e48a5"
+      stageUuid: "b911f160-2111-89a4-8719-e65da85f136e"
     - stage: seal
-      stageUuid: "ce1fc968-ff0e-8d88-9a42-65f21cc9ee39"
+      stageUuid: "2aafeddd-3d38-8cd8-ab50-f1bebf167fe9"
     - stage: uuid
-      stageUuid: "5cd7850e-cd2e-8dec-a50f-1f0e81e4e64b"
+      stageUuid: "3b2a808f-157f-8cf7-a4e3-21075f25d8dc"
 version: 2
 ---
 # until

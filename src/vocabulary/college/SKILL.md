@@ -1,68 +1,35 @@
 ---
 name: college
 description: "Use when reasoning about college as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/college
-coordinate: college · 8/crest · ac6eb14c
-contentUuid: "734b03be-7795-5e78-b580-ef3ea764cafb"
-diamondUuid: "eafe50a0-69cb-8ab5-ace7-28d09bf7c61a"
-uuid: "ac6eb14c-f7e6-80ed-bf0f-987fdf595d7c"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - university
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - university
+atomPath: "vocabulary/college"
+coordinate: "vocabulary/college · 5/round · 84ba7582"
+contentUuid: "3cf98d37-e610-52a7-a584-975f3a03f5d1"
+diamondUuid: "bb139476-18c2-8367-9f6e-6c9d745b985f"
+uuid: "84ba7582-399a-88aa-8da3-e37911f8ff25"
+horo: 5
 typography:
-  partition: college
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - university
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - university
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - university
 signatures:
-  computationUuid: "a45464f6-1b46-88cc-a5f7-000778038bd3"
+  computationUuid: "69488977-f0c8-850b-b977-28af8c4f8a76"
   stages:
     - stage: path
-      stageUuid: "e1264ca9-d985-826c-990a-3c26688d9ea9"
+      stageUuid: "350c70d8-a03e-810f-95b1-07ab98ec31f1"
     - stage: trinity
-      stageUuid: "c74564bf-c40a-8be1-8df0-937ff6164113"
+      stageUuid: "8d82c364-443f-8b1e-accb-84746ce95db8"
     - stage: boundary
-      stageUuid: "e053b1ec-7f15-8f66-ac42-2b33e4185b64"
+      stageUuid: "a1315861-8552-8ade-986d-c4ef06fea1ce"
     - stage: links
-      stageUuid: "fbeab21a-9375-811e-ab4b-f3af42f6077d"
+      stageUuid: "da45bb71-b81e-8e79-a379-05f5aa2a60a6"
     - stage: horo
-      stageUuid: "0a0a9b73-c687-873c-9820-21d7370c36cb"
+      stageUuid: "d664b995-5b15-88da-91a3-de3cbec0f179"
     - stage: seal
-      stageUuid: "aed39ee1-f89b-8ea0-84af-f13b57cd24bd"
+      stageUuid: "dbb6eaaa-e75b-888b-9d71-4bc2bebf08b6"
     - stage: uuid
-      stageUuid: "44d5f041-82e4-8818-ac58-2e75c5ed384b"
+      stageUuid: "941513c7-43e3-8a58-859b-f7fe48c7a7fd"
 version: 2
 ---
 # college

@@ -2,20 +2,14 @@
 name: esr
 description: "Use when implementing or referencing EU CSRD / ESRS."
 atomPath: "eu/csrd/esr"
-coordinate: "eu/csrd/esr · 7/descent · 7e01c79e"
-contentUuid: "1be783ec-d015-540d-a62d-f7be20218ca4"
-diamondUuid: "2618f2f5-ffe1-85a2-b6dc-f7fc01861749"
-uuid: "7e01c79e-49d9-8490-bd0c-008bbb64a6ab"
-horo: 7
-bonds:
-  in:
-    - law
-  out:
-    - law
+coordinate: "eu/csrd/esr · 4/weave · 01335cf2"
+contentUuid: "d60095df-959e-53df-b2fb-186cdf159966"
+diamondUuid: "c746ca6f-2907-8231-888a-a8b0bd630df6"
+uuid: "01335cf2-70d7-85c7-824a-ea7dd535792f"
+horo: 4
 typography:
   partition: eu
   bondDegree: 3
-  neighbors: []
 standards:
   - "EU CSRD Directive 2022/2464"
   - "EU EFRAG ESRS-XBRL taxonomy"
@@ -29,18 +23,13 @@ standards:
   - "IFRS S1 General Sustainability Disclosures`"
   - "IFRS S2 Climate-Related Disclosures"
   - "IFRS S2 Climate-Related Disclosures`"
+  - "IFRS-S1"
+  - "IFRS-S2"
   - XBRL
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-  matrix:
-    - law
-  backlinks:
-    - law
 signatures:
-  computationUuid: "7c131e15-13d4-8a14-8718-27a536603781"
+  computationUuid: "8bdd78ef-73dc-8ace-8168-778f73859ad9"
   stages:
     - stage: path
       stageUuid: "e6056358-8cad-8193-8493-c825482cccd1"
@@ -51,11 +40,11 @@ signatures:
     - stage: links
       stageUuid: "4267e412-ff7f-8754-9245-dd613a80f621"
     - stage: horo
-      stageUuid: "80141e70-1ad4-8c5e-9d24-17053c237ba6"
+      stageUuid: "c5354ff4-6139-863c-b976-47cde316d11f"
     - stage: seal
       stageUuid: "210aa53f-c755-8108-87c5-bc1bec2afc4c"
     - stage: uuid
-      stageUuid: "6bd241a9-f92b-80b8-8a0f-f29c2668598d"
+      stageUuid: "b6121546-1f91-8573-95d2-6cb8e4698370"
 version: 2
 ---
 # EU CSRD / ESRS

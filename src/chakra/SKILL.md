@@ -2,146 +2,19 @@
 name: chakra
 description: "Use when mapping the seven chakras onto erpax — the 7 chakras ARE the 7 horo flow positions (base·share·weave·crest·descent·round·unity = Do·Re·Mi·Fa·Sol·La·Ti = root→crown). Each decodes to a note (A432 just-intonation), a colour and a movement from the SAME content-uuid — and the uuid is computed from the position math, never from the colour. Anchored at 0/K/black/A432."
 atomPath: chakra
-coordinate: "chakra · 4/weave · 919853ec"
-contentUuid: "036808a1-1b64-524d-953f-c805c4cac5cc"
-diamondUuid: "bd2a31c1-ecc8-89a9-bdb2-8cc623f87d0c"
-uuid: "919853ec-12cf-82e3-9132-9b09c8f37c98"
-horo: 4
-bonds:
-  in:
-    - breath
-    - brow
-    - cmyk
-    - color
-    - crown
-    - harmony
-    - heart
-    - horo
-    - humandesign
-    - identity
-    - law
-    - mala
-    - metatron
-    - navel
-    - notes
-    - octave
-    - photon
-    - rodin
-    - root
-    - sacral
-    - sensory
-    - throat
-    - torus
-    - trinity
-    - uuid
-    - vibration
-  out:
-    - breath
-    - brow
-    - cmyk
-    - color
-    - crown
-    - harmony
-    - heart
-    - horo
-    - humandesign
-    - identity
-    - law
-    - mala
-    - metatron
-    - navel
-    - notes
-    - octave
-    - photon
-    - rodin
-    - root
-    - sacral
-    - sensory
-    - throat
-    - torus
-    - trinity
-    - uuid
-    - vibration
+coordinate: "chakra · 5/round · 42a98ad9"
+contentUuid: "5da1327a-5c1a-5643-9b72-13ace6e3f0a6"
+diamondUuid: "d9264030-3680-831b-a808-8c8a22d82056"
+uuid: "42a98ad9-db5b-8232-a693-eeb84bbd426e"
+horo: 5
 typography:
   partition: chakra
   bondDegree: 80
-  neighbors: []
 standards:
   - "ISO-16:1975 a432-tuning-reference (pitch from position)"
 bindings: []
-neighbors:
-  wikilink:
-    - breath
-    - cmyk
-    - harmony
-    - horo
-    - identity
-    - law
-    - metatron
-    - notes
-    - octave
-    - rodin
-    - sensory
-    - torus
-    - trinity
-    - uuid
-    - vibration
-  matrix:
-    - breath
-    - brow
-    - cmyk
-    - color
-    - crown
-    - harmony
-    - heart
-    - horo
-    - humandesign
-    - identity
-    - law
-    - mala
-    - metatron
-    - navel
-    - notes
-    - octave
-    - photon
-    - rodin
-    - root
-    - sacral
-    - sensory
-    - throat
-    - torus
-    - trinity
-    - uuid
-    - vibration
-  backlinks:
-    - breath
-    - brow
-    - cmyk
-    - color
-    - crown
-    - harmony
-    - heart
-    - horo
-    - humandesign
-    - identity
-    - law
-    - mala
-    - metatron
-    - navel
-    - notes
-    - octave
-    - photon
-    - rodin
-    - root
-    - sacral
-    - sensory
-    - throat
-    - torus
-    - trinity
-    - uuid
-    - vibration
 signatures:
-  computationUuid: "5e918e90-27d6-8d95-839a-3aaf11f67868"
+  computationUuid: "1f1ba5dd-94a6-8675-8bb1-76ffef205c95"
   stages:
     - stage: path
       stageUuid: "f1ab0622-9fde-8d5c-adc0-a73f2ed8d88b"
@@ -152,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "003f6278-00e1-8e44-ac05-d61c8df01018"
     - stage: horo
-      stageUuid: "36e60561-fe7a-8256-a1d9-c307062cae8f"
+      stageUuid: "60eaff41-7e75-84e9-bf70-aac9062030eb"
     - stage: seal
       stageUuid: "1ffeb6c5-a333-84ae-a397-2f1819e9be96"
     - stage: uuid
-      stageUuid: "fa081edd-efb6-8ef8-93a5-3904e0f037e5"
+      stageUuid: "91bbee20-b6a9-8ce2-8145-2fea3955d3aa"
 version: 2
 ---
 # chakra — the seven centers ARE the seven horo positions

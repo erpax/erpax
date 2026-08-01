@@ -2,36 +2,14 @@
 name: packages
 description: "Use when modelling the packing hierarchy for a shipment — GS1 SSCC serial shipping container codes, self-referential nesting (pallet → carton → contents), dimensions/weight, item-lot lines, and UN/CEFACT packaging codes. The logistic handling-unit collection that links line items to a shipment."
 atomPath: "items/packages"
-coordinate: "items/packages · 4/weave · 0265a2a5"
-contentUuid: "963b5fb9-021b-53a8-97ac-ddd5f0b44056"
-diamondUuid: "7f12c6fb-9ba5-83ca-b4f7-146208f4fbed"
-uuid: "0265a2a5-4038-8ac4-b830-1d6c18df0f8f"
+coordinate: "items/packages · 4/weave · 5a4d6f36"
+contentUuid: "5edb0c17-f0cf-56be-90f5-7ba4f5037363"
+diamondUuid: "ebaa8645-a9f3-837f-bf26-78449fd977cd"
+uuid: "5a4d6f36-c699-88c0-8155-6ee510be5d1d"
 horo: 4
-bonds:
-  in:
-    - access
-    - accounting
-    - collections
-    - fields
-    - hooks
-    - items
-    - law
-    - shipments
-    - standard
-  out:
-    - access
-    - accounting
-    - collections
-    - fields
-    - hooks
-    - items
-    - law
-    - shipments
-    - standard
 typography:
   partition: items
   bondDegree: 27
-  neighbors: []
 standards:
   - "GS1 General Specifications AI(00) SSCC serial-shipping-container-code"
   - GS1 Logistic Label
@@ -43,37 +21,8 @@ standards:
   - "UN/CEFACT Recommendation 21 packaging-codes"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - accounting
-    - collections
-    - fields
-    - hooks
-    - law
-    - standard
-  matrix:
-    - access
-    - accounting
-    - collections
-    - fields
-    - hooks
-    - items
-    - law
-    - shipments
-    - standard
-  backlinks:
-    - access
-    - accounting
-    - collections
-    - fields
-    - hooks
-    - items
-    - law
-    - shipments
-    - standard
 signatures:
-  computationUuid: "95016987-b27f-840c-aef4-705d7abe8274"
+  computationUuid: "368020c6-15fd-893a-b90f-5c92de6b125f"
   stages:
     - stage: path
       stageUuid: "8ea3744e-cdbf-8fe2-bf73-27dfdf390c3c"
@@ -84,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "f943572b-3056-8ee6-afb4-424b3fa8d926"
     - stage: horo
-      stageUuid: "cd44a889-b280-8522-957e-bed3f49a7b7a"
+      stageUuid: "d12238cd-dafa-8c3b-8373-2b8d3647ff7c"
     - stage: seal
       stageUuid: "081d58aa-fd09-87d9-9fb9-eb4d41bb2be6"
     - stage: uuid
-      stageUuid: "3215bb3b-9697-88a6-a059-86b20fbf661a"
+      stageUuid: "92b4e20a-b78b-8bee-97cb-74fb65e653d3"
 version: 2
 ---
 # packages

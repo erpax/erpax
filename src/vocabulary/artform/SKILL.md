@@ -1,58 +1,35 @@
 ---
 name: artform
 description: "Use when reasoning about artform — e.g. Painting, Drawing, Sculpture, Print, Photograph, Assemblage, Collage, etc."
-atomPath: vocabulary/artform
-coordinate: artform · 8/crest · 5fe06bb2
-contentUuid: "decc1216-ebc7-5e0e-9b8e-2ac1002df005"
-diamondUuid: "892b5bc7-67d7-8f4c-bdee-3c34c4476f21"
-uuid: "5fe06bb2-a63d-81ea-b721-acbb3ef62b0d"
+atomPath: "vocabulary/artform"
+coordinate: "vocabulary/artform · 8/crest · b1b0e9ea"
+contentUuid: "4f6afed3-db0e-5cfd-9c66-200ad5c7b938"
+diamondUuid: "5bb04e58-ad0e-883a-9915-b43d190d9d4d"
+uuid: "b1b0e9ea-e4d1-89e1-9d57-91cee0da1f58"
 horo: 8
-bonds:
-  in:
-    - creative
-    - law
-    - thing
-  out:
-    - creative
-    - law
-    - thing
 typography:
-  partition: artform
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - creative
-    - law
-    - thing
-  matrix:
-    - creative
-    - law
-    - thing
-  backlinks:
-    - creative
-    - law
-    - thing
 signatures:
-  computationUuid: "bc70c57b-624d-8141-af91-979e2b86c83f"
+  computationUuid: "0fd87c3b-7ffd-8019-aabd-1d43394e2ef4"
   stages:
     - stage: path
-      stageUuid: "752f81e9-630f-8f47-b152-24e7d8692409"
+      stageUuid: "edac0fb2-bd6f-8a78-92ed-d08cc42dd441"
     - stage: trinity
-      stageUuid: "35f923df-137b-8abe-b18d-75e97fca5032"
+      stageUuid: "1a40cba3-4f0d-8d41-9fd7-22a6522437b7"
     - stage: boundary
-      stageUuid: "7ca81dbb-3075-8013-b21d-5396b1833e6b"
+      stageUuid: "9f1139dc-d8b5-874b-8706-ee50265cb977"
     - stage: links
-      stageUuid: "6d73c8c5-c9e4-86ac-a4ab-5a7b3cc939ea"
+      stageUuid: "cb49fdf5-1d2f-8282-b764-259259185188"
     - stage: horo
-      stageUuid: "49c8b7fa-fac1-8bc4-a074-f5d5e46ad7dc"
+      stageUuid: "32462815-2851-89b7-8086-2c0d157a3084"
     - stage: seal
-      stageUuid: "d3f837cb-b769-882e-8600-cbdeef7c6ff6"
+      stageUuid: "d43d004c-06cc-8b99-9cd4-12dad46cea00"
     - stage: uuid
-      stageUuid: "a8756802-87f8-8c2a-8d4d-730463e88a2d"
+      stageUuid: "24e558d9-282c-836e-9365-08cd312b2bb2"
 version: 2
 ---
 # artform

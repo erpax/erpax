@@ -1,87 +1,34 @@
 ---
 name: choice
 description: "Use when a buyer selects items up to a value or quantity cap instead of receiving a fixed bundle — the market-style / customizable CSA share (members pick at a table or online to a limit, swap unwanted items), and the generic pick-mix / deli-counter / configure-to-order pattern. The selection model: the inverse of a fixed bundle, trading packing simplicity for member satisfaction."
-atomPath: vocabulary/choice
-coordinate: choice · 5/round · ea914267
-contentUuid: "687e0706-5a03-5efe-b110-61b02375b5c4"
-diamondUuid: "2ecb61b4-7e1c-8a73-bd7a-6a048bfa500a"
-uuid: "ea914267-e00d-8f2d-a985-4da0dfc358c3"
+atomPath: "vocabulary/choice"
+coordinate: "vocabulary/choice · 5/round · a8e1b7f8"
+contentUuid: "b15bf1bb-41c7-55e6-b78a-3751d0804e03"
+diamondUuid: "c1a523ee-25a0-8450-b955-cc93b8139c76"
+uuid: "a8e1b7f8-1dc2-8784-8594-e94acd7aa61c"
 horo: 5
-bonds:
-  in:
-    - agriculture
-    - bundle
-    - commerce
-    - harvest
-    - limit
-    - orders
-    - packs
-    - retention
-    - share
-  out:
-    - agriculture
-    - bundle
-    - commerce
-    - harvest
-    - limit
-    - orders
-    - packs
-    - retention
-    - share
 typography:
-  partition: choice
+  partition: vocabulary
   bondDegree: 29
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - bundle
-    - commerce
-    - harvest
-    - limit
-    - orders
-    - packs
-    - retention
-    - share
-  matrix:
-    - agriculture
-    - bundle
-    - commerce
-    - harvest
-    - limit
-    - orders
-    - packs
-    - retention
-    - share
-  backlinks:
-    - agriculture
-    - bundle
-    - commerce
-    - harvest
-    - limit
-    - orders
-    - packs
-    - retention
-    - share
 signatures:
-  computationUuid: "48e1400d-455b-8d27-ba20-c684cd5aa710"
+  computationUuid: "13b708ca-81f8-8b1c-9b85-753fbf000991"
   stages:
     - stage: path
-      stageUuid: "2576053c-f520-814d-972e-aa8af2551e51"
+      stageUuid: "e13f6576-fe5b-8a5b-8664-f7fdf0daab29"
     - stage: trinity
-      stageUuid: "47b08ee1-cb74-8532-a16d-6a04fe8d58c6"
+      stageUuid: "88df6a62-dadb-877e-8372-d01d3f53ec46"
     - stage: boundary
-      stageUuid: "41ed4e9e-f25e-8b49-a160-e5508c602c73"
+      stageUuid: "1babd65e-c15b-8347-a062-44858c36f688"
     - stage: links
-      stageUuid: "33d2be0a-2161-8bd9-beea-51c66218fbb7"
+      stageUuid: "c50c1724-9641-8bc8-a603-995179057c35"
     - stage: horo
-      stageUuid: "b10a97b4-d7fb-81c4-8616-e83df11d2ab8"
+      stageUuid: "3d3f27ee-70eb-8a1b-ade8-a27144006940"
     - stage: seal
-      stageUuid: "687507e3-2e25-82c3-a9da-1c0c9005c256"
+      stageUuid: "984345b6-60ed-8e90-9a0f-1144b7881771"
     - stage: uuid
-      stageUuid: "ee53b6a2-d0bd-849b-99f1-cdc1b97f4c74"
+      stageUuid: "bdad9973-0126-86d5-9c2f-add8de90de61"
 version: 2
 ---
 # choice — selecting items up to a cap (the customizable order)

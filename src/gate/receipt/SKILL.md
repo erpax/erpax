@@ -2,150 +2,18 @@
 name: receipt
 description: "Use when the push gate must not be an hour-long monolith — green suite verdicts sealed content-addressed by their parsed import closure + schema surface; only changed suites re-run, a failure costs one named batch."
 atomPath: "gate/receipt"
-coordinate: "gate/receipt · 7/descent · c8e6c79c"
-contentUuid: "02538f3e-923f-5c3a-a6e3-f0ed3d2a4fcb"
-diamondUuid: "365a8b85-a759-82e2-af93-b9b3e8f081ef"
-uuid: "c8e6c79c-1459-8ecf-b691-8a8cbde910d6"
-horo: 7
-bonds:
-  in:
-    - access
-    - agent
-    - bindings
-    - blood
-    - comms
-    - exchange
-    - gate
-    - history
-    - holographic
-    - identity
-    - industry
-    - log
-    - mcp
-    - merge
-    - peace
-    - proof
-    - quantum
-    - realtime
-    - request
-    - research
-    - sandbox
-    - sanitization
-    - security
-    - self
-    - society
-    - team
-    - trading
-    - uuid
-    - vein
-    - wave
-  out:
-    - access
-    - agent
-    - bindings
-    - blood
-    - comms
-    - exchange
-    - gate
-    - history
-    - holographic
-    - identity
-    - industry
-    - log
-    - mcp
-    - merge
-    - peace
-    - proof
-    - quantum
-    - realtime
-    - request
-    - research
-    - sandbox
-    - sanitization
-    - security
-    - self
-    - society
-    - team
-    - trading
-    - uuid
-    - vein
-    - wave
+coordinate: "gate/receipt · 2/share · f1b2e295"
+contentUuid: "a36273be-553f-568f-96be-0bb2b783d3b7"
+diamondUuid: "d64322e5-72ab-8a8c-b478-4ce77bff02a4"
+uuid: "f1b2e295-9417-8787-a7b5-cc10b183f41c"
+horo: 2
 typography:
   partition: gate
-  bondDegree: 107
-  neighbors: []
+  bondDegree: 114
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - merge
-    - rules
-    - timeout
-  matrix:
-    - access
-    - agent
-    - bindings
-    - blood
-    - comms
-    - exchange
-    - gate
-    - history
-    - holographic
-    - identity
-    - industry
-    - log
-    - mcp
-    - merge
-    - peace
-    - proof
-    - quantum
-    - realtime
-    - request
-    - research
-    - sandbox
-    - sanitization
-    - security
-    - self
-    - society
-    - team
-    - trading
-    - uuid
-    - vein
-    - wave
-  backlinks:
-    - access
-    - agent
-    - bindings
-    - blood
-    - comms
-    - exchange
-    - gate
-    - history
-    - holographic
-    - identity
-    - industry
-    - log
-    - mcp
-    - merge
-    - peace
-    - proof
-    - quantum
-    - realtime
-    - request
-    - research
-    - sandbox
-    - sanitization
-    - security
-    - self
-    - society
-    - team
-    - trading
-    - uuid
-    - vein
-    - wave
 signatures:
-  computationUuid: "ff20bdaa-60dc-8c86-a896-936b1c9fe706"
+  computationUuid: "db5dd487-7917-8b87-9b80-ca2d9e100865"
   stages:
     - stage: path
       stageUuid: "f178bb35-a2d1-8dd6-b553-60ce2326c2ea"
@@ -156,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "fbddd7e6-c268-8572-9ee0-fcd93e282dd5"
     - stage: horo
-      stageUuid: "bcc96734-e27f-8120-8e12-362040b01f95"
+      stageUuid: "80f5fa27-c690-84ab-9181-16f1c844f3c0"
     - stage: seal
       stageUuid: "6cc79d23-0240-8af8-8e6d-1af1ed6c61c7"
     - stage: uuid
-      stageUuid: "880ff52e-7452-8e9c-8a8e-2fef622215c0"
+      stageUuid: "76b4f0ad-b9ff-8edf-bf1f-b9a6011cf070"
 version: 2
 ---
 # gate/receipt — the push failure fixed at its core

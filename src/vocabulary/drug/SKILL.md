@@ -1,123 +1,35 @@
 ---
 name: drug
 description: "Use when reasoning about drug — A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism. Here the term drug is used interchangeably with the term medicine altho"
-atomPath: vocabulary/drug
-coordinate: drug · 5/round · cd21401b
-contentUuid: "ee76a196-4332-5841-9584-60a09111abdf"
-diamondUuid: "fe4b5f39-896c-84f4-a14d-2a7c71cd39f6"
-uuid: "cd21401b-5a77-8311-97f6-89d66803aec6"
-horo: 5
-bonds:
-  in:
-    - category
-    - class
-    - cost
-    - health
-    - interacting
-    - law
-    - legal
-    - option
-    - plan
-    - pregnancy
-    - prescription
-    - related
-    - status
-    - strength
-    - tier
-    - unit
-  out:
-    - category
-    - class
-    - cost
-    - health
-    - interacting
-    - law
-    - legal
-    - option
-    - plan
-    - pregnancy
-    - prescription
-    - related
-    - status
-    - strength
-    - tier
-    - unit
+atomPath: "vocabulary/drug"
+coordinate: "vocabulary/drug · 4/weave · 2c947be0"
+contentUuid: "d430a67c-42f3-5612-9fc4-86e3806bd155"
+diamondUuid: "530bf1ea-e4f6-8c80-9148-6e8301aaa4f8"
+uuid: "2c947be0-1c5e-8350-9673-2995db4f0acb"
+horo: 4
 typography:
-  partition: drug
-  bondDegree: 60
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 65
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - category
-    - class
-    - cost
-    - health
-    - interacting
-    - law
-    - legal
-    - option
-    - plan
-    - pregnancy
-    - prescription
-    - related
-    - status
-    - strength
-    - tier
-    - unit
-  matrix:
-    - category
-    - class
-    - cost
-    - health
-    - interacting
-    - law
-    - legal
-    - option
-    - plan
-    - pregnancy
-    - prescription
-    - related
-    - status
-    - strength
-    - tier
-    - unit
-  backlinks:
-    - category
-    - class
-    - cost
-    - health
-    - interacting
-    - law
-    - legal
-    - option
-    - plan
-    - pregnancy
-    - prescription
-    - related
-    - status
-    - strength
-    - tier
-    - unit
 signatures:
-  computationUuid: "ad2a84b2-823a-81f0-af76-d6b77b67a772"
+  computationUuid: "9fdf0a9d-94e7-858e-893d-df0f45cccfdb"
   stages:
     - stage: path
-      stageUuid: "2a5344dd-6e44-8771-a043-d369ad91bbd7"
+      stageUuid: "c6aba337-4861-85ed-94e7-b0428c456398"
     - stage: trinity
-      stageUuid: "143f8d53-bbe6-8e62-980e-d867e32cd879"
+      stageUuid: "24310e5f-a330-8a12-8a45-09a53ff6b9f2"
     - stage: boundary
-      stageUuid: "53fd3178-b20b-88db-bf2c-2b02462aaf21"
+      stageUuid: "10efb306-a4d8-8f6b-b7b6-8342ad3d1e11"
     - stage: links
-      stageUuid: "7dc64034-1070-86bb-975c-395c4e0a54b8"
+      stageUuid: "30afaa13-79b7-8416-86c2-34c319b5c84d"
     - stage: horo
-      stageUuid: "ae86f336-d98d-84cd-99ae-f768e8740707"
+      stageUuid: "212d9c94-6032-8550-ba18-a43276ac7c95"
     - stage: seal
-      stageUuid: "4230abf8-699a-8192-b302-262c0b1c7bc4"
+      stageUuid: "7f1cad62-7da0-8f51-be79-c02b81268701"
     - stage: uuid
-      stageUuid: "e89bd16b-e5a9-847b-bb6b-2e00a264da48"
+      stageUuid: "e829cc4a-de38-8b6a-91a5-621be05721ec"
 version: 2
 ---
 # drug

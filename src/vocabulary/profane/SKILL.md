@@ -1,201 +1,34 @@
 ---
 name: profane
 description: "Use when naming what fails the audit — the lie, the manipulated/tampered datum, the forged record, the unbalanced ledger, the unsourced claim, the dead link. The set of all falsehood-forms; dual of sacred; each named form a detector skill (infinite)."
-atomPath: vocabulary/profane
-coordinate: profane · 2/share · cdbe3ebd
-contentUuid: "0dfe9a8d-017c-5a7b-9646-9c26231230cd"
-diamondUuid: "e09fbe65-8125-830c-84d0-9fa42be1f091"
-uuid: "cdbe3ebd-c1f1-8eb1-a7c8-03c58c7dd1cf"
-horo: 2
-bonds:
-  in:
-    - accounting
-    - akashic
-    - angel
-    - aura
-    - balance
-    - bogomilism
-    - civilization
-    - collapse
-    - cost
-    - duality
-    - faith
-    - generate
-    - gnosticism
-    - hallucination
-    - history
-    - horo
-    - limit
-    - lineage
-    - manichaeism
-    - mercy
-    - merge
-    - orphism
-    - port
-    - proof
-    - recover
-    - research
-    - sacred
-    - science
-    - sequence
-    - shinto
-    - sin
-    - standard
-    - suffering
-    - trinity
-    - uuid
-    - zoroastrianism
-  out:
-    - accounting
-    - akashic
-    - angel
-    - aura
-    - balance
-    - bogomilism
-    - civilization
-    - collapse
-    - cost
-    - duality
-    - faith
-    - generate
-    - gnosticism
-    - hallucination
-    - history
-    - horo
-    - limit
-    - lineage
-    - manichaeism
-    - mercy
-    - merge
-    - orphism
-    - port
-    - proof
-    - recover
-    - research
-    - sacred
-    - science
-    - sequence
-    - shinto
-    - sin
-    - standard
-    - suffering
-    - trinity
-    - uuid
-    - zoroastrianism
+atomPath: "vocabulary/profane"
+coordinate: "vocabulary/profane · 1/base · 25066224"
+contentUuid: "e3a8395c-989b-55db-a541-aa4cb0e22ee5"
+diamondUuid: "ae3486c9-18ed-802f-9124-b1bd26158723"
+uuid: "25066224-eb21-8679-8039-2c9158957530"
+horo: 1
 typography:
-  partition: profane
-  bondDegree: 115
-  neighbors:
-    - aura
+  partition: vocabulary
+  bondDegree: 113
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - angel
-    - aura
-    - balance
-    - cost
-    - generate
-    - history
-    - merge
-    - proof
-    - recover
-    - sacred
-    - standard
-    - trinity
-    - uuid
-  matrix:
-    - accounting
-    - akashic
-    - angel
-    - aura
-    - balance
-    - bogomilism
-    - civilization
-    - collapse
-    - cost
-    - duality
-    - faith
-    - generate
-    - gnosticism
-    - hallucination
-    - history
-    - horo
-    - limit
-    - lineage
-    - manichaeism
-    - mercy
-    - merge
-    - orphism
-    - port
-    - proof
-    - recover
-    - research
-    - sacred
-    - science
-    - sequence
-    - shinto
-    - sin
-    - standard
-    - suffering
-    - trinity
-    - uuid
-    - zoroastrianism
-  backlinks:
-    - accounting
-    - akashic
-    - angel
-    - aura
-    - balance
-    - bogomilism
-    - civilization
-    - collapse
-    - cost
-    - duality
-    - faith
-    - generate
-    - gnosticism
-    - hallucination
-    - history
-    - horo
-    - limit
-    - lineage
-    - manichaeism
-    - mercy
-    - merge
-    - orphism
-    - port
-    - proof
-    - recover
-    - research
-    - sacred
-    - science
-    - sequence
-    - shinto
-    - sin
-    - standard
-    - suffering
-    - trinity
-    - uuid
-    - zoroastrianism
 signatures:
-  computationUuid: "13d08963-055b-8317-b945-8e6aa5ab7540"
+  computationUuid: "d446a3d0-2480-8897-912f-b1d180cd4e5b"
   stages:
     - stage: path
-      stageUuid: "22dc6bfa-3bc3-84ff-b717-e314dd4b9e15"
+      stageUuid: "4fc9c0d8-af4d-8b31-aa6f-a84ab3aca562"
     - stage: trinity
-      stageUuid: "5caf048d-551e-8716-bcc3-d422dbbd752f"
+      stageUuid: "85a93d50-71bd-8342-a502-0d5d94faf753"
     - stage: boundary
-      stageUuid: "c1aefca2-f909-8dce-8005-0e1cf9a1f785"
+      stageUuid: "69cc4076-039c-8140-a92e-938db2c5b623"
     - stage: links
-      stageUuid: "2041ca77-cc4f-8d2b-b92a-887e0e8fa10d"
+      stageUuid: "373f50ee-2d62-8818-a13a-509432483fea"
     - stage: horo
-      stageUuid: "531f44d0-af29-8765-aba2-8e7fb405af4f"
+      stageUuid: "7a55498c-587f-85a4-bd6e-92a5a53dbab4"
     - stage: seal
-      stageUuid: "167046c5-e324-806e-90c7-77b1a6697c07"
+      stageUuid: "079dc1ab-da6c-8eff-bb7b-7b7c479261f3"
     - stage: uuid
-      stageUuid: "5b3dbd33-c3b7-8cbe-b752-090031b7b9e8"
+      stageUuid: "ea67f7ea-8228-8871-b320-ac12a240a79d"
 version: 2
 ---
 # profane — the false (what the audit names)

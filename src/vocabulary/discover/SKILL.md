@@ -1,72 +1,35 @@
 ---
 name: discover
 description: "Use when reasoning about discover as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/discover
-coordinate: discover · 7/descent · d978ae3c
-contentUuid: "86cc3722-fa03-5616-afe1-cf534f248987"
-diamondUuid: "df432cf4-8b6b-80fa-aa0b-29d53cb53a49"
-uuid: "d978ae3c-e11a-8bd5-b4c7-fa7259f83a98"
-horo: 7
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - optimization
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - optimization
-    - sti
+atomPath: "vocabulary/discover"
+coordinate: "vocabulary/discover · 5/round · b4b4d5d2"
+contentUuid: "5325acb1-f98c-5c5e-b61c-baa381d39cdf"
+diamondUuid: "16aceb43-5d70-886d-920c-22ab4e4b1208"
+uuid: "b4b4d5d2-31fa-8a20-a4ac-0efcdeaa8637"
+horo: 5
 typography:
-  partition: discover
-  bondDegree: 19
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 29
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - optimization
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - optimization
-    - sti
 signatures:
-  computationUuid: "91f60fb5-fbcc-8074-a6a3-ea98a3958166"
+  computationUuid: "a7a47f49-cc7a-8f66-aa7d-7a38b939c947"
   stages:
     - stage: path
-      stageUuid: "999b1542-f85b-8778-9dd1-c12877303ee5"
+      stageUuid: "adbadc36-bd00-8442-b306-69dbf43dcc41"
     - stage: trinity
-      stageUuid: "c817bd36-bb31-8f98-9c72-769d799f37f7"
+      stageUuid: "3ae93863-84a2-8893-80e4-762085d4098f"
     - stage: boundary
-      stageUuid: "c9ebe38b-3b73-8c69-8156-27382000d68b"
+      stageUuid: "13e367e9-96e6-8831-81b7-9b522239ba84"
     - stage: links
-      stageUuid: "4115db16-fea0-8963-952e-fdd6c536026a"
+      stageUuid: "c3c7d7af-4258-8e79-b39f-edb6a8237a0e"
     - stage: horo
-      stageUuid: "0065a8a3-0253-8abc-921b-d6d6a1e82c2e"
+      stageUuid: "ee7f9add-c170-8482-aaa8-b5d84cf4f831"
     - stage: seal
-      stageUuid: "1a8e8477-71c3-8bf6-92d7-11f9a1bd8f01"
+      stageUuid: "e9a02c43-3427-839f-a2ba-ca9f862334fe"
     - stage: uuid
-      stageUuid: "099f62fb-7530-8766-81dc-adfbe181e793"
+      stageUuid: "ce2f3834-2775-8255-8498-1b667feb6e15"
 version: 2
 ---
 # discover

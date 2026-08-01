@@ -2,57 +2,19 @@
 name: card
 description: "Use when reasoning about card as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: card
-coordinate: "card · 1/base · 9c3e5a4e"
-contentUuid: "0de32473-df29-55d5-9a6c-8c943a07d45e"
-diamondUuid: "3e9f3007-5195-8629-b80a-265b35f1200c"
-uuid: "9c3e5a4e-533a-8582-ba55-f2e5fd322afd"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - credit
-    - law
-    - merge
-    - payment
-    - sti
-  out:
-    - collapse
-    - credit
-    - law
-    - merge
-    - payment
-    - sti
+coordinate: "card · 5/round · 1f7d3e0b"
+contentUuid: "b146131e-b31f-5050-b05a-83f41b0ddd08"
+diamondUuid: "8a065092-191a-8092-b832-8d189b11a32a"
+uuid: "1f7d3e0b-820a-868a-a11c-a11793b8acc0"
+horo: 5
 typography:
   partition: card
   bondDegree: 0
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - credit
-    - law
-    - merge
-    - payment
-    - sti
-  matrix:
-    - collapse
-    - credit
-    - law
-    - merge
-    - payment
-    - sti
-  backlinks:
-    - collapse
-    - credit
-    - law
-    - merge
-    - payment
-    - sti
 signatures:
-  computationUuid: "13b16a0c-3b9f-8628-8dab-524dd7511390"
+  computationUuid: "9519781d-4dd7-85e0-99d1-857d90e28ded"
   stages:
     - stage: path
       stageUuid: "080d0f25-3291-8ef6-932c-35dbc535eec8"
@@ -63,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "63fe8173-87c4-89ee-ae44-c2027234889e"
     - stage: horo
-      stageUuid: "6d5e11d6-7dbe-84d6-a286-d2df66bcb55f"
+      stageUuid: "5068845a-b9fa-86e8-8d4e-3ed980383b9c"
     - stage: seal
       stageUuid: "35332f39-7791-8798-9cec-bc0f09800e8a"
     - stage: uuid
-      stageUuid: "2a58b54e-3507-81dd-be3d-191209de2c95"
+      stageUuid: "47d01bff-5f85-8d7b-ac1b-a6af1b47ba51"
 version: 2
 ---
 # card

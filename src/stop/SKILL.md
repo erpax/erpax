@@ -2,62 +2,19 @@
 name: stop
 description: "Use when reasoning about stop as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: stop
-coordinate: stop · 5/round · 40e4f688
-contentUuid: "e6b0773d-5371-5e7d-9b9c-4c14e57523f8"
-diamondUuid: "f8a85cb3-3575-8636-b656-beee0425138b"
-uuid: "40e4f688-18c3-873d-996f-ee869957d2fe"
+coordinate: "stop · 5/round · 97470b6b"
+contentUuid: "792a8ed3-0106-56a4-b636-b9dfc03d4916"
+diamondUuid: "5f354868-cb84-8ea3-ba7c-d74472cb4d55"
+uuid: "97470b6b-3401-8be3-8641-f40111579369"
 horo: 5
-bonds:
-  in:
-    - arrival
-    - bus
-    - collapse
-    - departure
-    - law
-    - merge
-    - sti
-  out:
-    - arrival
-    - bus
-    - collapse
-    - departure
-    - law
-    - merge
-    - sti
 typography:
   partition: stop
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - arrival
-    - bus
-    - collapse
-    - departure
-    - law
-    - merge
-    - sti
-  matrix:
-    - arrival
-    - bus
-    - collapse
-    - departure
-    - law
-    - merge
-    - sti
-  backlinks:
-    - arrival
-    - bus
-    - collapse
-    - departure
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "88e8c1d9-970b-86e2-a89e-28f990a55e34"
+  computationUuid: "69237528-85c9-82dd-947e-be21567a5334"
   stages:
     - stage: path
       stageUuid: "75b94bcc-8abd-8839-81ca-1cab6332c163"
@@ -68,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "94e6bb66-9cc5-8155-a8d6-f5cb46654e75"
     - stage: horo
-      stageUuid: "b4af1f47-ec41-8eb5-af14-f44d6517b13d"
+      stageUuid: "f91d91a4-5d3e-84ec-87ad-8fe74025b141"
     - stage: seal
-      stageUuid: "23238dd8-1721-856c-8069-8d6a9a27ba66"
+      stageUuid: "e326996f-a4af-8250-be87-0e884028fc3e"
     - stage: uuid
-      stageUuid: "6447126e-6827-88ba-bd32-98421a6a0bb3"
+      stageUuid: "6a67dc23-804b-89a0-be98-31addb639293"
 version: 2
 ---
 # stop

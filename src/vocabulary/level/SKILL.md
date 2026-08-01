@@ -1,115 +1,35 @@
 ---
 name: level
 description: "Use when reasoning about level as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/level
-coordinate: level · 8/crest · 8e85038b
-contentUuid: "e3bd237c-4689-5b3c-a750-e9652d9d6569"
-diamondUuid: "f3d10e94-f7cf-8a49-bd55-214116513299"
-uuid: "8e85038b-eab1-899e-99b9-d5d0887476f7"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - educational
-    - evidence
-    - floor
-    - inventory
-    - law
-    - leap
-    - legal
-    - medical
-    - merge
-    - photon
-    - proficiency
-    - sti
-    - superposition
-    - value
-  out:
-    - collapse
-    - educational
-    - evidence
-    - floor
-    - inventory
-    - law
-    - leap
-    - legal
-    - medical
-    - merge
-    - photon
-    - proficiency
-    - sti
-    - superposition
-    - value
+atomPath: "vocabulary/level"
+coordinate: "vocabulary/level · 4/weave · 67f55fad"
+contentUuid: "0350392f-299d-5e38-8b21-f5f636db392b"
+diamondUuid: "e3518c9c-11f1-8647-b13a-076d2e01201a"
+uuid: "67f55fad-0716-857a-88c6-56a0e3168653"
+horo: 4
 typography:
-  partition: level
-  bondDegree: 52
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 53
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - educational
-    - evidence
-    - floor
-    - inventory
-    - law
-    - legal
-    - medical
-    - merge
-    - proficiency
-    - sti
-    - value
-  matrix:
-    - collapse
-    - educational
-    - evidence
-    - floor
-    - inventory
-    - law
-    - leap
-    - legal
-    - medical
-    - merge
-    - photon
-    - proficiency
-    - sti
-    - superposition
-    - value
-  backlinks:
-    - collapse
-    - educational
-    - evidence
-    - floor
-    - inventory
-    - law
-    - leap
-    - legal
-    - medical
-    - merge
-    - photon
-    - proficiency
-    - sti
-    - superposition
-    - value
 signatures:
-  computationUuid: "d531e42d-da0c-8b8d-84ea-2843d41e7a9d"
+  computationUuid: "f01a9b3f-0199-8059-8158-eae37bd8f50b"
   stages:
     - stage: path
-      stageUuid: "3046fbec-7ee7-8de1-a390-ff8603e8ce99"
+      stageUuid: "115ff731-862a-8502-a3e1-f15894175862"
     - stage: trinity
-      stageUuid: "9d67edcf-8ee3-825b-96c4-d3ca2377c5c1"
+      stageUuid: "85c596b1-ab8f-864e-a335-2951f21b5977"
     - stage: boundary
-      stageUuid: "ddb70eee-a5b6-8edc-b140-dd609c2c1911"
+      stageUuid: "1f4ed42f-6d43-8dac-ab29-ef3e6a9daddb"
     - stage: links
-      stageUuid: "2c11adb7-8276-8fbf-9c0f-ee01be52970b"
+      stageUuid: "d38995b2-4eaf-868a-83df-59b3a694675e"
     - stage: horo
-      stageUuid: "0be26e36-8aad-8f64-8098-1342d8f1358a"
+      stageUuid: "c670ce94-0f9c-89c9-a7b4-6895031c75ef"
     - stage: seal
-      stageUuid: "018a1adc-66f9-82df-82f6-263456d6de96"
+      stageUuid: "b82c7cb8-0cfb-87e0-bcf4-dff8c84edeff"
     - stage: uuid
-      stageUuid: "92e37d62-8b3d-8c3d-8b9f-253b711d7364"
+      stageUuid: "818b63fe-058f-8cc0-825c-6686064645f8"
 version: 2
 ---
 # level

@@ -1,62 +1,34 @@
 ---
 name: calendar
 description: Use when modelling one calendar — the singular model of the calendars collection (the plural store); a scheme of dates against which events and schedules are placed.
-atomPath: vocabulary/calendar
-coordinate: calendar · 1/base · 160c7fed
-contentUuid: "9724607a-32c5-59ca-bafd-bfc619405e9e"
-diamondUuid: "a814496b-2100-8693-8660-672dd9c86ac7"
-uuid: "160c7fed-08d2-84f7-89fa-9533e52bba12"
-horo: 1
-bonds:
-  in:
-    - balance
-    - calendars
-    - event
-    - law
-  out:
-    - balance
-    - calendars
-    - event
-    - law
+atomPath: "vocabulary/calendar"
+coordinate: "vocabulary/calendar · 2/share · eb25b0ca"
+contentUuid: "d97f575d-59c6-57de-a70b-39aff1ec3a08"
+diamondUuid: "13c6f08d-46a8-828b-97f2-b8a722c4362e"
+uuid: "eb25b0ca-31ef-8c25-8ebf-f295dcef8d58"
+horo: 2
 typography:
-  partition: calendar
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - calendars
-    - event
-    - law
-  matrix:
-    - balance
-    - calendars
-    - event
-    - law
-  backlinks:
-    - balance
-    - calendars
-    - event
-    - law
 signatures:
-  computationUuid: "bd11f14f-3332-8df4-9e85-ac7cfb5766b4"
+  computationUuid: "296413c5-d542-8e2b-96c9-340d4be84d67"
   stages:
     - stage: path
-      stageUuid: "e3f8b9ee-bdbc-877a-947f-16e3da093f41"
+      stageUuid: "94d537e4-51cc-8f67-8dff-d88beb08c462"
     - stage: trinity
-      stageUuid: "de3a65d4-2786-82c3-9bff-cfda11c6ba36"
+      stageUuid: "92164485-e547-865b-a10f-bd36d978953b"
     - stage: boundary
-      stageUuid: "36e861a1-bbd9-8e9b-981f-24bd6c7d118e"
+      stageUuid: "58a93df9-b635-8960-b8b0-c8555823b834"
     - stage: links
-      stageUuid: "8c4d4924-0324-8dde-a6ed-053394d86aa4"
+      stageUuid: "52f400db-275d-8514-8d09-9af0614307ec"
     - stage: horo
-      stageUuid: "ca16a45c-9679-8f1d-814b-1c3a0b205b72"
+      stageUuid: "7efefe13-3263-8cb6-88ae-76ddb7b79816"
     - stage: seal
-      stageUuid: "44b43388-350c-8950-8f5a-9888dce25050"
+      stageUuid: "2b4953e6-fcf0-80de-bd47-b408e021f389"
     - stage: uuid
-      stageUuid: "a05ef14d-3fcd-87f5-b267-cbe35762b22a"
+      stageUuid: "168e975b-1756-8a87-8887-07f034f8c589"
 version: 2
 ---
 # calendar — the model of one [[calendars]] row

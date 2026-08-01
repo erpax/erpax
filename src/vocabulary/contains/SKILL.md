@@ -1,78 +1,35 @@
 ---
 name: contains
 description: "Use when reasoning about contains as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/contains
-coordinate: contains · 8/crest · e494526b
-contentUuid: "1ff487d6-ee18-5813-8268-0cf9f00ae184"
-diamondUuid: "3cc5a64d-d928-8cfd-8de5-eb30ee7ca184"
-uuid: "e494526b-abfe-874a-84a4-de7436c74253"
+atomPath: "vocabulary/contains"
+coordinate: "vocabulary/contains · 8/crest · a44a0e38"
+contentUuid: "93cb5ce1-f538-50f1-a7bc-ccadbb487436"
+diamondUuid: "d1b85587-06ef-8bfa-9c5e-fb205956cf10"
+uuid: "a44a0e38-dc7b-88cf-81f5-b0759caa0701"
 horo: 8
-bonds:
-  in:
-    - collapse
-    - geo
-    - law
-    - merge
-    - place
-    - season
-    - sti
-  out:
-    - collapse
-    - geo
-    - law
-    - merge
-    - place
-    - season
-    - sti
 typography:
-  partition: contains
+  partition: vocabulary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - geo
-    - law
-    - merge
-    - place
-    - season
-    - sti
-  matrix:
-    - collapse
-    - geo
-    - law
-    - merge
-    - place
-    - season
-    - sti
-  backlinks:
-    - collapse
-    - geo
-    - law
-    - merge
-    - place
-    - season
-    - sti
 signatures:
-  computationUuid: "da56bce2-00af-8746-bb30-13d48f243560"
+  computationUuid: "566f7272-ee54-8778-906d-d2971d12a8b4"
   stages:
     - stage: path
-      stageUuid: "d0af99ff-101e-877d-a81e-56e4402fadc1"
+      stageUuid: "1b96a955-ce3f-8ea4-b491-cb1a18f1b1ef"
     - stage: trinity
-      stageUuid: "f7a6893f-beac-8e4a-b855-59e0ecf880dd"
+      stageUuid: "cd1859d6-4c5b-810f-b3e5-1fe38b5d945a"
     - stage: boundary
-      stageUuid: "d839f171-9eb2-8c07-b9c9-cbaa4d5b2ee8"
+      stageUuid: "df928e25-332b-8de8-90a2-fd4155366309"
     - stage: links
-      stageUuid: "87fb6770-c348-8808-adb1-db704284dce1"
+      stageUuid: "32b9cfdc-facc-8191-84f8-d78b9ef22e88"
     - stage: horo
-      stageUuid: "2458b328-98e8-8ffc-8514-3577d0bb85f5"
+      stageUuid: "f97cc57c-a8a3-85c8-8168-51d2048f36d0"
     - stage: seal
-      stageUuid: "3023beda-9e7e-8437-98a3-9c5fdff7eb5b"
+      stageUuid: "bd5f1963-c712-8e39-ae11-d484854476cd"
     - stage: uuid
-      stageUuid: "567051c6-b3e4-8ee8-864b-25ce3581a15d"
+      stageUuid: "5b161f66-8823-8520-9dab-7d81b5002c67"
 version: 2
 ---
 # contains

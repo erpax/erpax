@@ -2,39 +2,14 @@
 name: attestations
 description: "Use when assembling SOX §404 audit-pack evidence — indexing PDF/A-2b + PDF/UA-1 attestation cover sheets per completed e2e walk-through, with optional eIDAS PAdES qualified signature (CMS blob, certificate chain, SHA-256 digest). The durable evidence-attestation index."
 atomPath: "evidence/attestations"
-coordinate: "evidence/attestations · 1/base · 4ee293ef"
-contentUuid: "79486ec7-5c52-57cf-bfb5-68556d57e27d"
-diamondUuid: "59cb353c-1c67-8ae9-9cba-e92918d5eb03"
-uuid: "4ee293ef-39de-87cc-be1f-e467e7953ec2"
-horo: 1
-bonds:
-  in:
-    - attestation
-    - combinations
-    - emissions
-    - evidence
-    - horo
-    - identity
-    - law
-    - measurements
-    - party
-    - proof
-    - standard
-  out:
-    - attestation
-    - combinations
-    - emissions
-    - horo
-    - identity
-    - law
-    - measurements
-    - party
-    - proof
-    - standard
+coordinate: "evidence/attestations · 2/share · bf34abbc"
+contentUuid: "ba52dbbf-b7e5-5cbc-8328-433995046f07"
+diamondUuid: "8c3d7dc6-6ca6-8e15-bcba-e3682a914bdb"
+uuid: "bf34abbc-05f5-8d9b-b19d-49695a4e65be"
+horo: 2
 typography:
   partition: evidence
-  bondDegree: 30
-  neighbors: []
+  bondDegree: 28
 standards:
   - "ETSI-EN-319-142"
   - "ETSI-EN-319-142-1 v1.1.1 pades-baseline-profile"
@@ -43,8 +18,6 @@ standards:
   - "ETSI-EN-319-142-1 v1.1.1 pades-baseline-profile`"
   - "EU 910/2014 eidas Art.28 qualified-electronic-signature"
   - "EU 910/2014 eidas qualified-electronic-signature"
-  - "EU-2011/83"
-  - "EU-2014/55"
   - "EU-537/2014"
   - "EU-910/2014"
   - "EU-VAT-Implementing-Reg-282/2011"
@@ -65,38 +38,8 @@ standards:
   - "rfc-5652 cms-detached-signature`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - horo
-    - identity
-    - law
-    - party
-    - proof
-    - standard
-  matrix:
-    - attestation
-    - combinations
-    - emissions
-    - horo
-    - identity
-    - law
-    - measurements
-    - party
-    - proof
-    - standard
-  backlinks:
-    - attestation
-    - combinations
-    - emissions
-    - horo
-    - identity
-    - law
-    - measurements
-    - party
-    - proof
-    - standard
 signatures:
-  computationUuid: "54a4e520-ce2c-8196-ab38-e33bd61d59d1"
+  computationUuid: "9059aeb9-87d4-8ecf-aa70-39e1f2890e6d"
   stages:
     - stage: path
       stageUuid: "43386994-5954-8894-b558-2260f4ccd0bf"
@@ -105,13 +48,13 @@ signatures:
     - stage: boundary
       stageUuid: "311ed648-efe9-8baa-9572-1c8ea8907ea9"
     - stage: links
-      stageUuid: "381cbbbd-e2b8-81a4-b808-d6315db084a3"
+      stageUuid: "872f4dc9-8441-8f63-854a-6b35234acd69"
     - stage: horo
-      stageUuid: "ee136313-8dea-8cca-87d0-c2674dd5bf7e"
+      stageUuid: "8972bec2-89dd-8e28-8f7a-c6f7601dd308"
     - stage: seal
       stageUuid: "3d88e974-6888-8f43-82e0-24d0119d6fd7"
     - stage: uuid
-      stageUuid: "c9c6a1c3-ebf1-8799-88db-334a0e1af2b9"
+      stageUuid: "7a91021e-4779-8d7d-81bc-e35d751f6f58"
 version: 2
 ---
 # evidence-attestations

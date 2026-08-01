@@ -1,83 +1,35 @@
 ---
 name: override
 description: "Use when reasoning about override as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/override
-coordinate: override · 2/share · fa56308e
-contentUuid: "fccf538b-5c05-5c00-aa5f-99ef9e54a272"
-diamondUuid: "2fa2ac41-3d2d-8da3-880c-6cb4a2d11ee8"
-uuid: "fa56308e-f714-84c7-9512-c638f4329d93"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merchant
-    - merge
-    - policy
-    - return
-    - seasonal
-    - sti
-  out:
-    - collapse
-    - law
-    - merchant
-    - merge
-    - policy
-    - return
-    - seasonal
-    - sti
+atomPath: "vocabulary/override"
+coordinate: "vocabulary/override · 1/base · a7241555"
+contentUuid: "39334865-cee7-5ea1-a8e5-00a39d72ac9b"
+diamondUuid: "1a4f30c9-8367-8845-8b4c-1b347245e525"
+uuid: "a7241555-ffcd-8f59-9987-be72f94bc441"
+horo: 1
 typography:
-  partition: override
+  partition: vocabulary
   bondDegree: 28
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merchant
-    - merge
-    - policy
-    - return
-    - seasonal
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merchant
-    - merge
-    - policy
-    - return
-    - seasonal
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merchant
-    - merge
-    - policy
-    - return
-    - seasonal
-    - sti
 signatures:
-  computationUuid: "88ff2a58-f7f0-801e-b6b3-60435658c2a8"
+  computationUuid: "92f1a7b5-c4f5-8372-89d9-acaeb649de0e"
   stages:
     - stage: path
-      stageUuid: "575d9263-d2c1-8d1d-9ff0-daea1e52fe53"
+      stageUuid: "fe669a2f-4280-8877-bc5e-fa53ee871e75"
     - stage: trinity
-      stageUuid: "1fe1eb16-faa1-83e7-96e6-44b537ea6fbd"
+      stageUuid: "263ea3f3-8d63-892c-8a7c-5e9695fdae44"
     - stage: boundary
-      stageUuid: "bdbc3598-5e3c-8415-8653-81867ef6be65"
+      stageUuid: "ad598262-de45-87cb-ad76-eb1cb4272031"
     - stage: links
-      stageUuid: "25b4aa90-1af8-8c82-8017-4a7a1debc89f"
+      stageUuid: "9c6d0865-8010-833c-a767-f7dec0b34721"
     - stage: horo
-      stageUuid: "31903c8e-296b-8320-b5e9-e0d0709692e5"
+      stageUuid: "dc786d30-9ded-83bc-a638-175281300df8"
     - stage: seal
-      stageUuid: "7d694e03-3474-8a48-bb2c-0d77e5f6dcc6"
+      stageUuid: "77d7b426-6cf0-870a-a875-d564e3414e59"
     - stage: uuid
-      stageUuid: "2726d0ca-f3d6-8f12-a7da-5ef2497f31b9"
+      stageUuid: "821988e1-2d65-8c22-834c-11b419579698"
 version: 2
 ---
 # override

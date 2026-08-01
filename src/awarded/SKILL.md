@@ -2,62 +2,19 @@
 name: awarded
 description: "Use when reasoning about awarded as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: awarded
-coordinate: "awarded · 1/base · 3fc49b96"
-contentUuid: "7e239df7-8a45-5459-b00f-0ceb63f938a7"
-diamondUuid: "58c8a25f-fe7f-8e54-a46b-b29533af453d"
-uuid: "3fc49b96-d114-8bf3-ba8e-10e46bc9b44b"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - credential
-    - educational
-    - law
-    - merge
-    - occupational
-    - sti
-  out:
-    - collapse
-    - credential
-    - educational
-    - law
-    - merge
-    - occupational
-    - sti
+coordinate: "awarded · 4/weave · 0d0769b1"
+contentUuid: "6999f514-e83e-5c26-8eac-7d7321ec96a1"
+diamondUuid: "b159fcc0-5eee-833f-b147-4dde1c4c37dd"
+uuid: "0d0769b1-5fc8-80a1-bc4f-b8624ae63f8a"
+horo: 4
 typography:
   partition: awarded
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - credential
-    - educational
-    - law
-    - merge
-    - occupational
-    - sti
-  matrix:
-    - collapse
-    - credential
-    - educational
-    - law
-    - merge
-    - occupational
-    - sti
-  backlinks:
-    - collapse
-    - credential
-    - educational
-    - law
-    - merge
-    - occupational
-    - sti
 signatures:
-  computationUuid: "e37857b0-56bf-844d-aaee-3af21db862e2"
+  computationUuid: "71c90f89-000a-8547-b10c-e2c5bb5ecc6e"
   stages:
     - stage: path
       stageUuid: "c54c72cc-ee68-894b-82ad-9a2f09961b3f"
@@ -68,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "74995f4b-990d-8b62-8535-4d67767fb71d"
     - stage: horo
-      stageUuid: "1e52bf19-9e09-8cf8-8603-849bf2d1bdd0"
+      stageUuid: "8d665d67-293b-8931-9c69-45490a161b84"
     - stage: seal
       stageUuid: "d26b4f22-7f5a-86ed-92ee-23b727759197"
     - stage: uuid
-      stageUuid: "4b756f79-5ef9-84fc-9f7a-7f1d87abd92a"
+      stageUuid: "7106ff11-794e-8c5c-b9aa-9bdb64df5628"
 version: 2
 ---
 # awarded

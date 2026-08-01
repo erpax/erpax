@@ -1,68 +1,35 @@
 ---
 name: disambiguating
 description: "Use when reasoning about disambiguating as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/disambiguating
-coordinate: disambiguating · 8/crest · b59930f7
-contentUuid: "15f5f7a7-a880-5a5d-ba58-ad9cf79ece4c"
-diamondUuid: "4718d0c4-9615-8e98-a7a8-f096dcd6e16e"
-uuid: "b59930f7-c371-868c-8684-399af12c5d6d"
+atomPath: "vocabulary/disambiguating"
+coordinate: "vocabulary/disambiguating · 8/crest · 4856bdb7"
+contentUuid: "2de0fffe-66ac-5ce4-8844-571a4027161d"
+diamondUuid: "6e36f115-c054-8f76-acdc-81e74f662f38"
+uuid: "4856bdb7-6a92-825d-8673-26315bc89f72"
 horo: 8
-bonds:
-  in:
-    - collapse
-    - description
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - description
-    - law
-    - merge
-    - sti
 typography:
-  partition: disambiguating
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - description
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - description
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - description
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "77c70c64-eb67-8a36-aca5-20b34056a3b1"
+  computationUuid: "ab786c44-0e29-870f-b5ac-1b7b0f943bdb"
   stages:
     - stage: path
-      stageUuid: "115384f6-23a9-844d-9ab8-d892baac4eb9"
+      stageUuid: "dfb7cf69-8e8e-8204-8dde-eb3798cd2ee8"
     - stage: trinity
-      stageUuid: "df6b55c0-2925-8b01-8598-121989705b61"
+      stageUuid: "c819c740-47fa-88c9-9076-051a9208ff10"
     - stage: boundary
-      stageUuid: "a1bf03e3-d7cc-8ed9-9c8c-d7103b8efeb5"
+      stageUuid: "1fe98dcd-81fa-8c27-b6eb-06a6bf7b77ae"
     - stage: links
-      stageUuid: "d1ee9fb5-87e2-8e45-b64b-1cc88084fcf4"
+      stageUuid: "df5689fb-e6b1-89dc-974c-14a75f0a41cd"
     - stage: horo
-      stageUuid: "4fcc012b-1eef-8f6a-9da3-345a5146442d"
+      stageUuid: "0b51c6fb-c1dc-8e26-a958-0d6b3f5181cb"
     - stage: seal
-      stageUuid: "1abbba74-b752-8806-b268-25c239f1a782"
+      stageUuid: "ddb9c08c-b6d1-8d8b-839b-768648c2cdbb"
     - stage: uuid
-      stageUuid: "6bc657cf-fbbf-8645-9237-357b434b143a"
+      stageUuid: "4dbe1b4e-31b1-8ac9-989a-6c2d06e239e0"
 version: 2
 ---
 # disambiguating

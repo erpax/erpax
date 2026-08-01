@@ -2,74 +2,20 @@
 name: transactions
 description: "Use when recording or disclosing transactions between a legal entity and its key management, directors, shareholders, controlled entities or joint ventures — arm's-length evidence, board-approval workflow, IAS-24/ASC-850 disclosure reference, linked audit evidence. The related-party disclosure register."
 atomPath: "legal/entities/related/party/transactions"
-coordinate: "legal/entities/related/party/transactions · 2/share · 64bbb466"
-contentUuid: "bd8cdb1c-c55e-5074-8a9a-1c1debc73560"
-diamondUuid: "285acdc8-a796-8f36-b921-76eb42e5b51f"
-uuid: "64bbb466-ebd0-816f-8b4d-23955ea5b1d3"
-horo: 2
-bonds:
-  in:
-    - accounting
-    - entries
-    - fractal
-    - hedge
-    - horo
-    - law
-    - party
-    - proof
-    - rates
-    - standard
-    - transaction
-    - trinity
-  out:
-    - accounting
-    - entries
-    - fractal
-    - hedge
-    - horo
-    - law
-    - proof
-    - rates
-    - standard
-    - transaction
-    - trinity
+coordinate: "legal/entities/related/party/transactions · 4/weave · a82be5e2"
+contentUuid: "accb6ec3-95a2-52e5-91e3-5052b7692c39"
+diamondUuid: "3af31492-18e9-878f-9681-c94e450b3d80"
+uuid: "a82be5e2-432f-82cb-a6b8-cba173f4c7fb"
+horo: 4
 typography:
   partition: legal
   bondDegree: 54
-  neighbors: []
 standards:
   - "IAS-24 related-party-disclosures"
   - "US-GAAP ASC-850 related-party-disclosures"
 bindings: []
-neighbors:
-  wikilink:
-    - evidences
-  matrix:
-    - accounting
-    - entries
-    - fractal
-    - hedge
-    - horo
-    - law
-    - proof
-    - rates
-    - standard
-    - transaction
-    - trinity
-  backlinks:
-    - accounting
-    - entries
-    - fractal
-    - hedge
-    - horo
-    - law
-    - proof
-    - rates
-    - standard
-    - transaction
-    - trinity
 signatures:
-  computationUuid: "eb223597-f1df-808f-a872-05e02b005be4"
+  computationUuid: "1191dc76-4da8-8221-819b-e9fda098d390"
   stages:
     - stage: path
       stageUuid: "ffca0fe6-40fd-8223-91a1-59977a5d78e8"
@@ -80,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "3fe4ec39-c8e7-874b-81af-1bf4efa02973"
     - stage: horo
-      stageUuid: "a781e409-4720-8bb6-9faf-b0e50062689a"
+      stageUuid: "e8bc6dd9-a725-8201-b68b-9358b2d68233"
     - stage: seal
       stageUuid: "05695998-7e01-8912-be2f-5109317f4a59"
     - stage: uuid
-      stageUuid: "39b64361-7cc9-82c9-bddc-5ef3eb999947"
+      stageUuid: "a1e11443-b28e-8eea-91a2-67c82ac1376f"
 version: 2
 ---
 # related-party-transactions

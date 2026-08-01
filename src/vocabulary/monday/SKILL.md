@@ -1,63 +1,35 @@
 ---
 name: monday
 description: "Use when reasoning about monday as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/monday
-coordinate: monday · 1/base · 78a67ca6
-contentUuid: "ec963cda-a18b-5fed-8b2f-91ebadc7afb5"
-diamondUuid: "64a9054a-3a51-8f0e-8c09-7b44f6a05e72"
-uuid: "78a67ca6-92d6-8afa-ad46-e8a0cb133a77"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/monday"
+coordinate: "vocabulary/monday · 5/round · ade3d684"
+contentUuid: "93a1dc3d-82b4-5eb7-96ef-df51a89b5a89"
+diamondUuid: "5e5d1860-8202-8173-b799-13fa8ec7af9f"
+uuid: "ade3d684-23f7-8abd-9ccf-d442a4db5ccc"
+horo: 5
 typography:
-  partition: monday
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "bc3bbca1-701d-80fb-a63b-0959f84de252"
+  computationUuid: "9f34c027-cf64-8682-a4d0-c7be84a43764"
   stages:
     - stage: path
-      stageUuid: "fb58835c-d12f-8fec-a44d-3cf051e6b89e"
+      stageUuid: "79a2cbd2-23c7-8693-87e5-8c74a0c70ae1"
     - stage: trinity
-      stageUuid: "d5425b7d-0807-8ce3-b7a9-78e9c845e37a"
+      stageUuid: "a842ffad-6c17-8965-8e96-6aada47dc985"
     - stage: boundary
-      stageUuid: "1f355fb8-b92c-8a55-abc3-7e0498bf8edb"
+      stageUuid: "ab80d665-558f-8f83-9f35-8ed339354deb"
     - stage: links
-      stageUuid: "3b6b7cc4-a0f5-8b2f-81a8-65fd110dd455"
+      stageUuid: "0ab73e09-b574-80c7-b13c-1e4db5168b32"
     - stage: horo
-      stageUuid: "26cddf15-1bd6-8892-8770-1e77e09a54a1"
+      stageUuid: "1c3be124-c0f3-839b-b7bc-556afdcf7f6b"
     - stage: seal
-      stageUuid: "e73c5440-f00b-8d25-a8c3-f502738b826e"
+      stageUuid: "5483718f-b0fa-8158-a913-bc2efc5156ef"
     - stage: uuid
-      stageUuid: "cb50c04d-644e-8a93-83be-befc1c369355"
+      stageUuid: "66c59da6-8f4f-886d-9724-5bc2441c82ee"
 version: 2
 ---
 # monday

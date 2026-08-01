@@ -1,57 +1,27 @@
 ---
 name: taggings
 description: "Use when attaching, querying or removing label-context associations across any collection — polymorphic (tag × taggable × context × tagger) join where context is a free string enabling unlimited label-sets with zero schema change. The polymorphic tagging-join collection; content-uuid makes each (tag, target, context, tagger) tuple automatically unique."
-atomPath: tags/taggings
-coordinate: tags/taggings · 1/base · 63baf3b1
-contentUuid: "0118c386-2bd1-5ca1-9cba-a3810f319946"
-diamondUuid: "6cac5903-5c0f-88ba-a3ae-8b96236e21a2"
-uuid: "63baf3b1-3c1e-85de-b812-266592fcc376"
-horo: 1
-bonds:
-  in:
-    - identity
-    - standard
-    - tag
-    - tagging
-    - tags
-  out:
-    - identity
-    - standard
-    - tag
-    - tagging
-    - tags
+atomPath: "tags/taggings"
+coordinate: "tags/taggings · 5/round · 5db73d10"
+contentUuid: "88153e4f-5593-5c1e-bbde-240374abc819"
+diamondUuid: "89d9ae9a-aa8d-8516-a32a-4f77830d0416"
+uuid: "5db73d10-e4da-83ed-b615-02027a9a193a"
+horo: 5
 typography:
   partition: tags
   bondDegree: 15
-  neighbors: []
 standards:
-  - "EU-2011/83"
   - "EU-VAT-Implementing-Reg-282/2011"
-  - "ISO-19011:2018 audit-trail tagging-provenance"
   - "ISO-25964-1:2011 thesauri associative-relationships"
+  - "ISO-25964-1:2011 thesauri associative-relationships`"
   - "RFC-4122"
   - "RFC-4122 §4.3 uuid content-addressed-dedup"
+  - "RFC-4122 §4.3 uuid content-addressed-dedup`"
   - "SOX §404 internal-controls"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - identity
-    - standard
-    - tags
-  matrix:
-    - identity
-    - standard
-    - tag
-    - tagging
-    - tags
-  backlinks:
-    - identity
-    - standard
-    - tag
-    - tagging
-    - tags
 signatures:
-  computationUuid: "905382ac-b374-85bf-be6d-fd61f829bf02"
+  computationUuid: "7470bbcf-ee98-8fb7-8d3a-dc68ad85e4e2"
   stages:
     - stage: path
       stageUuid: "bff41ad9-b953-81c7-a2d9-ebf26bae32b4"
@@ -62,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "5bdb8868-00ed-83c7-a8fd-96e177514f82"
     - stage: horo
-      stageUuid: "143e9e03-4c6e-89c3-9fa1-3c41ec51f60c"
+      stageUuid: "4d8d04e7-701b-8e12-8cbd-aa5a2249f512"
     - stage: seal
-      stageUuid: "e5cf6dae-c4ba-8a56-8731-c2bf386450b1"
+      stageUuid: "2f68d6c0-39cd-838e-9cb1-b766c879a749"
     - stage: uuid
-      stageUuid: "dcbce793-d7c4-888c-bdfd-ecebbb14a137"
+      stageUuid: "d79b57c0-426f-8263-b552-67c40c64c467"
 version: 2
 ---
 # taggings

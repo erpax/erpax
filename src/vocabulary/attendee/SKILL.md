@@ -1,73 +1,35 @@
 ---
 name: attendee
 description: Use when reasoning about attendee — A person or organization attending the event.
-atomPath: vocabulary/attendee
-coordinate: attendee · 8/crest · c673e433
-contentUuid: "68388514-b335-5d3e-941d-1e09c87fafa9"
-diamondUuid: "dbdb0e30-3973-8191-9091-c58ee17b6fb4"
-uuid: "c673e433-231e-8617-a2ea-1d31d67506d0"
-horo: 8
-bonds:
-  in:
-    - capacity
-    - law
-    - maximum
-    - physical
-    - remaining
-    - virtual
-  out:
-    - capacity
-    - law
-    - maximum
-    - physical
-    - remaining
-    - virtual
+atomPath: "vocabulary/attendee"
+coordinate: "vocabulary/attendee · 5/round · be4cb32d"
+contentUuid: "d7094965-40e0-56a8-a180-0cced1bb2ded"
+diamondUuid: "5882a2d3-d7e6-821e-a535-60cf2acbcce4"
+uuid: "be4cb32d-0efa-8356-bcd7-fc015316dba0"
+horo: 5
 typography:
-  partition: attendee
+  partition: vocabulary
   bondDegree: 22
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - capacity
-    - law
-    - maximum
-    - physical
-    - remaining
-    - virtual
-  matrix:
-    - capacity
-    - law
-    - maximum
-    - physical
-    - remaining
-    - virtual
-  backlinks:
-    - capacity
-    - law
-    - maximum
-    - physical
-    - remaining
-    - virtual
 signatures:
-  computationUuid: "98c51c3b-c8ac-8edf-91f8-b3ef1d393747"
+  computationUuid: "7a484892-71c3-87b4-9807-d0e436771cfc"
   stages:
     - stage: path
-      stageUuid: "e933e935-b14e-813c-9d55-9682fe8251c2"
+      stageUuid: "a9d85917-e0ad-89d4-9d5b-c75c4c4bf157"
     - stage: trinity
-      stageUuid: "5eaa8fb2-27a2-8099-9205-8f3639f88055"
+      stageUuid: "e6844575-b2ba-8c50-a7c4-1a819bffbf35"
     - stage: boundary
-      stageUuid: "5ffa7579-3f98-8b1c-8c1d-924441638f26"
+      stageUuid: "fe76e4c9-3722-8765-a25c-1fdf9b80dfcc"
     - stage: links
-      stageUuid: "2a7aa79c-bd69-8e14-8621-f3e46a148e42"
+      stageUuid: "d628f419-6405-8068-ae86-cea81e144de6"
     - stage: horo
-      stageUuid: "dca1887b-fb51-80d0-b9e7-3840ea167bad"
+      stageUuid: "68e95c7d-b4bf-82ba-b0fb-84d30fcddbbf"
     - stage: seal
-      stageUuid: "9ca7670a-ff88-8df9-a2b8-fa13a8407755"
+      stageUuid: "30d0c26a-d9f6-8793-9a96-20e1425296c0"
     - stage: uuid
-      stageUuid: "21d5dbab-5184-809e-98ca-2ae65431a55d"
+      stageUuid: "79827fe7-d1fe-8c8d-a77e-9bcae3610a34"
 version: 2
 ---
 # attendee

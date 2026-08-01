@@ -1,72 +1,34 @@
 ---
 name: "lead-score"
 description: "Use when ranking prospect/lead quality — behavioral signals, firmographic attributes, scoring model, threshold for handoff to sales."
-atomPath: vocabulary/lead-score
-coordinate: "lead-score · 4/weave · 0f7c211a"
-contentUuid: "2a1fa83d-7549-5a51-9b27-21c5cea22582"
-diamondUuid: "f0430b98-21c1-828f-988c-7bf600b209b4"
-uuid: "0f7c211a-c6a3-8a06-86ab-00a69f52307b"
-horo: 4
-bonds:
-  in:
-    - activities
-    - law
-    - leads
-    - opportunities
-    - prospect
-    - segment
-  out:
-    - activities
-    - law
-    - leads
-    - opportunities
-    - prospect
-    - segment
+atomPath: "vocabulary/lead-score"
+coordinate: "vocabulary/lead-score · 1/base · 0e09eb44"
+contentUuid: "efd47232-56d5-59af-be35-9da4745f3850"
+diamondUuid: "7e12fa9a-ab26-853d-a9b9-3253421d1fdf"
+uuid: "0e09eb44-7320-88bc-b2b8-a061564fcee5"
+horo: 1
 typography:
-  partition: "lead-score"
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - activities
-    - law
-    - leads
-    - opportunities
-    - prospect
-    - segment
-  matrix:
-    - activities
-    - law
-    - leads
-    - opportunities
-    - prospect
-    - segment
-  backlinks:
-    - activities
-    - law
-    - leads
-    - opportunities
-    - prospect
-    - segment
 signatures:
-  computationUuid: "a67d71d2-aebe-8982-b580-92c9bfa01db3"
+  computationUuid: "c7bc3546-5afe-8978-9748-4cfdb6b24842"
   stages:
     - stage: path
-      stageUuid: "b86b5f7b-0150-8a50-8509-a33db611db9f"
+      stageUuid: "522b4e19-94f0-80ca-9f41-cd0e788d1336"
     - stage: trinity
-      stageUuid: "d7c479df-e87d-8d5e-972b-fdcc0653b088"
+      stageUuid: "b0c14ad1-d2ef-836f-8479-7a8a28c5b7cb"
     - stage: boundary
-      stageUuid: "345bbd45-5f57-8eb2-ac85-9c9b1a77b5b1"
+      stageUuid: "e8d8fd8f-c04f-8d9c-8271-bf587d3edb0f"
     - stage: links
-      stageUuid: "103c6a71-b61d-8453-a9c8-789f4bd5541e"
+      stageUuid: "ea94c695-ad80-8981-b501-1a61368408f3"
     - stage: horo
-      stageUuid: "5f5582ea-754f-8f45-9829-55fdbd6d7fc6"
+      stageUuid: "69628ff7-9567-8470-96bd-030882e5bd23"
     - stage: seal
-      stageUuid: "e54c23ea-6b0b-8631-92a7-fc482403f78a"
+      stageUuid: "6293c1d9-6096-8910-82c4-d2387593f7c9"
     - stage: uuid
-      stageUuid: "500741e5-4e9d-863c-896b-e4e89455e36c"
+      stageUuid: "251186ae-c730-894e-908f-3568cff1f499"
 version: 2
 ---
 # lead-score

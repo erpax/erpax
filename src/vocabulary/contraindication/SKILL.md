@@ -1,58 +1,35 @@
 ---
 name: contraindication
 description: Use when reasoning about contraindication — A contraindication for this therapy.
-atomPath: vocabulary/contraindication
-coordinate: contraindication · 5/round · 0445154f
-contentUuid: "24d6e7af-e785-51fa-aa49-9c03af666144"
-diamondUuid: "617624ba-dd24-8395-84b5-16743d3ce007"
-uuid: "0445154f-f87a-88f0-af72-1d3f897508c3"
-horo: 5
-bonds:
-  in:
-    - guideline
-    - law
-    - medical
-  out:
-    - guideline
-    - law
-    - medical
+atomPath: "vocabulary/contraindication"
+coordinate: "vocabulary/contraindication · 4/weave · 2713d9ca"
+contentUuid: "e110531f-e8c7-520e-9228-2ae363b8ee89"
+diamondUuid: "7ab1b166-da76-8127-85f0-ee3446a1b3a1"
+uuid: "2713d9ca-71bb-8f85-a015-ad395fa72614"
+horo: 4
 typography:
-  partition: contraindication
-  bondDegree: 11
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 20
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - guideline
-    - law
-    - medical
-  matrix:
-    - guideline
-    - law
-    - medical
-  backlinks:
-    - guideline
-    - law
-    - medical
 signatures:
-  computationUuid: "a016863e-133c-87ed-980e-014616a6eb81"
+  computationUuid: "65134a8c-4f35-875d-96cf-843932758b79"
   stages:
     - stage: path
-      stageUuid: "6eac3fcc-4758-89d6-8482-92181344a949"
+      stageUuid: "cf99ee26-a16d-819b-bef4-a6d74d39f08d"
     - stage: trinity
-      stageUuid: "0b5cb963-1c49-8843-8a2a-ae46652f34d0"
+      stageUuid: "2606da0e-54f0-8055-bd23-416c6a3cbb42"
     - stage: boundary
-      stageUuid: "620833de-24ff-87f9-8653-40241afc730c"
+      stageUuid: "86accb0f-c6fa-8439-909a-b3d9d30883c1"
     - stage: links
-      stageUuid: "34ac7afb-520a-8967-b48d-abee713aa832"
+      stageUuid: "f7b5caaf-36be-8796-8daf-91a9ff8e037b"
     - stage: horo
-      stageUuid: "27f98c54-2019-8be6-97dc-3188c43299b7"
+      stageUuid: "0171ae1d-14ee-8d49-bf2d-c0d3158c9067"
     - stage: seal
-      stageUuid: "684bd0ba-58f7-83e2-9e20-685ac3600fa2"
+      stageUuid: "0f42d692-872b-8e64-9e68-dd4bb5e836ea"
     - stage: uuid
-      stageUuid: "2fee3f5e-3345-894a-ac21-a31184b4de19"
+      stageUuid: "faf9b1c7-ffdf-80e4-a93d-a29f4499ae59"
 version: 2
 ---
 # contraindication

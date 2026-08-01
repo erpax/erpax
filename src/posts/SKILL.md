@@ -2,64 +2,28 @@
 name: posts
 description: "Use when publishing or querying CMS articles — authored content with hero image, Lexical rich-text, categories, related posts, SEO meta, per-tenant slug uniqueness, versioned drafts, and scheduled publishing. The Payload CMS post collection."
 atomPath: posts
-coordinate: posts · 5/round · 36041e31
-contentUuid: "6382bcc2-1ca0-5f53-b841-120610aecdde"
-diamondUuid: "53458057-af48-843f-af00-5a02dc7c29d7"
-uuid: "36041e31-2bc3-8e46-9330-6d19061607c2"
-horo: 5
-bonds:
-  in:
-    - blog
-    - categories
-    - law
-    - media
-    - users
-    - versions
-  out:
-    - blog
-    - categories
-    - law
-    - media
-    - users
-    - versions
+coordinate: "posts · 4/weave · c2b2150a"
+contentUuid: "96d5a209-f837-502b-9160-6c0ce0d24bc9"
+diamondUuid: "26bdc9ff-7b34-89dd-aafc-dbeae2d0af2e"
+uuid: "c2b2150a-b8f1-8da6-955e-f6d4ce0d2255"
+horo: 4
 typography:
   partition: posts
-  bondDegree: 0
-  neighbors: []
+  bondDegree: 19
 standards:
   - "3986 uri slug-to-url"
   - "BCP-47 language-tag i18n-routing"
   - "ECMA-402"
   - "ECMA-402 internationalization-api"
-  - "ILO-C111"
   - W3C HTML5 Living Standard
+  - "W3C HTML5 Living Standard`"
   - "WCAG-2.1 level-AA accessibility"
   - schema.org Article
   - schema.org BlogPosting
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - categories
-    - law
-    - media
-    - users
-    - versions
-  matrix:
-    - blog
-    - categories
-    - law
-    - media
-    - users
-    - versions
-  backlinks:
-    - blog
-    - categories
-    - law
-    - media
-    - users
-    - versions
 signatures:
-  computationUuid: "4d6b6847-28f9-8a27-add2-0ed8c7e0dd77"
+  computationUuid: "f588e1fb-4b1c-8ac3-9799-66428daca69b"
   stages:
     - stage: path
       stageUuid: "1faaa317-c0a0-8259-b2cb-5da3668f7813"
@@ -70,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "3ca9de53-49ff-8fb9-ab54-4a77eb20c795"
     - stage: horo
-      stageUuid: "f388423c-c178-83f9-bc9c-b8455a38d5df"
+      stageUuid: "178c4da5-c69d-80b2-a5f5-d450311ecb46"
     - stage: seal
-      stageUuid: "975c7f9a-0bbb-8333-a13a-3c4848165c32"
+      stageUuid: "a59f7144-f4bf-8a20-b8b6-e3ff2ed8e9b3"
     - stage: uuid
-      stageUuid: "d972ac43-abdd-8dc5-826c-8a1e263bbd4e"
+      stageUuid: "3c4b203c-6b2f-8f6c-87f6-41869f13804a"
 version: 2
 ---
 # posts

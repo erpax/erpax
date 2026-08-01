@@ -2,72 +2,19 @@
 name: theater
 description: "Use when reasoning about theater as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: theater
-coordinate: theater · 1/base · 2dd189ee
-contentUuid: "065ebb25-1065-584a-8eac-b25d143176b8"
-diamondUuid: "d88c58ad-ee01-8ac8-b036-6ad721e902a9"
-uuid: "2dd189ee-97f7-834a-b197-11f79ddff29e"
+coordinate: "theater · 1/base · 94569a58"
+contentUuid: "c34d6846-2144-5ba2-b6c1-b13c89d649a2"
+diamondUuid: "1e6ff1d1-f2de-8bc0-9d0f-00b94c39fc72"
+uuid: "94569a58-d5c4-8d0f-876b-e3471801108e"
 horo: 1
-bonds:
-  in:
-    - arts
-    - collapse
-    - event
-    - group
-    - law
-    - merge
-    - movie
-    - performing
-    - sti
-  out:
-    - arts
-    - collapse
-    - event
-    - group
-    - law
-    - merge
-    - movie
-    - performing
-    - sti
 typography:
   partition: theater
-  bondDegree: 31
-  neighbors: []
+  bondDegree: 33
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - arts
-    - collapse
-    - event
-    - group
-    - law
-    - merge
-    - movie
-    - performing
-    - sti
-  matrix:
-    - arts
-    - collapse
-    - event
-    - group
-    - law
-    - merge
-    - movie
-    - performing
-    - sti
-  backlinks:
-    - arts
-    - collapse
-    - event
-    - group
-    - law
-    - merge
-    - movie
-    - performing
-    - sti
 signatures:
-  computationUuid: "87037683-55d1-87f0-af90-6fa63ce95749"
+  computationUuid: "7fae55cd-8962-836a-997e-ec0d84e8ce4b"
   stages:
     - stage: path
       stageUuid: "4edeb65a-30f8-8950-b8e8-ee32fa2ecc7b"
@@ -78,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "67da079b-fa90-8bd1-ba5d-45de993f0f96"
     - stage: horo
-      stageUuid: "1139bb3a-b496-87a6-a520-7e763b21db92"
+      stageUuid: "7dce5e9b-147c-8797-8190-b9e0625f6f6c"
     - stage: seal
-      stageUuid: "be3b487c-384e-8ba6-95ce-85ba093d3932"
+      stageUuid: "d5cf8574-50a7-8443-9caf-45d60d25824e"
     - stage: uuid
-      stageUuid: "c60ace45-aa2d-8a3b-b91c-34d8434b77d0"
+      stageUuid: "058f01eb-67a8-8c97-ac7f-e430e75ebff7"
 version: 2
 ---
 # theater

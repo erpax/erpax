@@ -1,63 +1,35 @@
 ---
 name: itvolunteer
 description: "Use when reasoning about itvolunteer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/itvolunteer
-coordinate: itvolunteer · 1/base · 4923256a
-contentUuid: "cf091947-0bfa-5f34-927d-aab63700a32e"
-diamondUuid: "dfa4d606-b3ee-8436-8a5e-1e629e77c223"
-uuid: "4923256a-8e24-8b10-bc80-5d4e82bd8ec4"
+atomPath: "vocabulary/itvolunteer"
+coordinate: "vocabulary/itvolunteer · 1/base · 098d5c81"
+contentUuid: "7257e48f-bd50-5531-9c12-dd03704b214f"
+diamondUuid: "f670a0a9-6105-8961-ac42-7c934b92ff6d"
+uuid: "098d5c81-04d5-8dd8-9082-fed9505e658d"
 horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: itvolunteer
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "4e0df4b2-79cd-8ad7-8d23-8afd323a4efc"
+  computationUuid: "a9be98e0-d4dd-8977-816d-89d2c9efe791"
   stages:
     - stage: path
-      stageUuid: "351b0746-dc76-8467-8c33-33e2eaad7650"
+      stageUuid: "2f57ec88-dc5d-8313-bb05-b7a7d67ccb1f"
     - stage: trinity
-      stageUuid: "5a3b8ebe-dab8-8367-a48b-15e4bc7fded8"
+      stageUuid: "ef616671-4b29-8e20-a257-935a89b64b8d"
     - stage: boundary
-      stageUuid: "70a1c169-4b05-86b9-987d-a12e9e3747d3"
+      stageUuid: "4305bbca-c427-8233-a5d3-fcb9edc5323e"
     - stage: links
-      stageUuid: "b5914088-4d61-8fdd-87ec-2753ca4da46b"
+      stageUuid: "50c598f2-4e02-8623-871d-ea1521536946"
     - stage: horo
-      stageUuid: "d4a1ef76-f925-8b4e-b27b-dd24a8f3a1c1"
+      stageUuid: "0f80a749-03fa-805f-907d-7c64398ec021"
     - stage: seal
-      stageUuid: "10c77bc1-6086-8cd1-8456-9aa1606ff257"
+      stageUuid: "53242253-00f7-80c9-b0e5-a8e1bcfedc01"
     - stage: uuid
-      stageUuid: "8459d4ee-e709-804f-bd65-da9910521204"
+      stageUuid: "2374a205-6f27-8457-a239-dd1d928fb518"
 version: 2
 ---
 # itvolunteer

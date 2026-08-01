@@ -1,68 +1,35 @@
 ---
 name: professional
 description: "Use when reasoning about professional as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/professional
-coordinate: professional · 7/descent · b8bd7389
-contentUuid: "eb2c7850-f924-557f-8bf0-c03cfcf00f20"
-diamondUuid: "4192df1c-ac28-8021-81ba-b57de9de855d"
-uuid: "b8bd7389-e597-8da7-aed2-c98a238dbf13"
+atomPath: "vocabulary/professional"
+coordinate: "vocabulary/professional · 7/descent · 456ff86e"
+contentUuid: "c7628caa-49bb-5ba1-8ffb-c314f1985992"
+diamondUuid: "2cf81dbb-2b36-84fb-aeeb-24cf28c455b1"
+uuid: "456ff86e-8a60-8cdb-b1e4-b006b4fc7b89"
 horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - service
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - service
-    - sti
 typography:
-  partition: professional
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - service
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - service
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - service
-    - sti
 signatures:
-  computationUuid: "6ececfa0-cbc1-8e0f-8740-09e08cbd6073"
+  computationUuid: "aa6d4062-38c2-8d72-a109-9d9e03d8d56d"
   stages:
     - stage: path
-      stageUuid: "f6c4a286-013a-819a-99b3-128dd6c73ec4"
+      stageUuid: "b0b510d8-b06c-84c9-9a22-8aa8f4c2b492"
     - stage: trinity
-      stageUuid: "c818675a-3d67-8101-87f2-5e931a3659a3"
+      stageUuid: "1148a028-c4a7-83e5-a331-19e84bf6cc02"
     - stage: boundary
-      stageUuid: "f4c1dd3a-c87e-859a-9eb9-fa88ba95478b"
+      stageUuid: "6636f78a-6c31-88cd-b7aa-bc3df2d1c14f"
     - stage: links
-      stageUuid: "ce53415a-7068-8c45-8bdd-ec4853010504"
+      stageUuid: "f5c5bae2-7499-8d90-a10c-a9bbd366af4b"
     - stage: horo
-      stageUuid: "0b297367-f874-876b-a05d-241f0c25d532"
+      stageUuid: "8f119307-b8a6-8ca8-b5d2-a86dd67a95b0"
     - stage: seal
-      stageUuid: "44182ab2-7c5a-8580-ad30-145b8c99f135"
+      stageUuid: "0d1ba990-19bf-8ac4-82e9-fbab2135ea4b"
     - stage: uuid
-      stageUuid: "9b274937-211c-8230-a367-442bf95d517b"
+      stageUuid: "bfbbf9b6-35f1-8d94-b642-5529aa2fd6cf"
 version: 2
 ---
 # professional

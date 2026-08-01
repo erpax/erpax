@@ -2,96 +2,16 @@
 name: analytics
 description: "Use when you need one computed read-out of the whole erpax corpus across every aspect — structure, entropy, coverage, harmony, trust, and economic health. The all-aspects analyzer; it composes the measures already minted on the live uuid-matrix, never re-deriving them."
 atomPath: analytics
-coordinate: "analytics · 5/round · 4bb8ef53"
-contentUuid: "e28a9076-4512-56c7-8317-e9a74ba66435"
-diamondUuid: "fc8efce3-6dff-803a-85ba-c014f9618235"
-uuid: "4bb8ef53-5e27-84c7-a4d1-e09a0b06560e"
-horo: 5
-bonds:
-  in:
-    - accounting
-    - atom
-    - aura
-    - balance
-    - bindings
-    - collections
-    - cost
-    - dimension
-    - dry
-    - entropy
-    - hallucination
-    - harmony
-    - hooks
-    - horo
-    - matrix
-    - maxtampercost
-    - pivot
-    - purity
-    - relocate
-    - standards
-    - tamper
-    - trinity
-    - typography
-    - unavoidable
-  out:
-    - accounting
-    - atom
-    - aura
-    - balance
-    - bindings
-    - collections
-    - cost
-    - dimension
-    - dry
-    - entropy
-    - hallucination
-    - harmony
-    - hooks
-    - horo
-    - matrix
-    - maxtampercost
-    - pivot
-    - purity
-    - relocate
-    - standards
-    - tamper
-    - trinity
-    - typography
-    - unavoidable
+coordinate: "analytics · 4/weave · aa29a369"
+contentUuid: "334f923a-99e4-560e-864c-71429583dac8"
+diamondUuid: "585af785-9e05-8004-9014-e482eb9c1907"
+uuid: "aa29a369-8f0f-8e89-9e5d-d1d5effb9560"
+horo: 4
 typography:
   partition: analytics
-  bondDegree: 84
-  neighbors:
-    - "analytics/max-tamper-cost"
-    - aura
-    - bindings
-    - cost
-    - hallucination
-    - hooks
-    - maxtampercost
-    - pivot
-    - purity
-    - relocate
-    - typography
-    - unavoidable
+  bondDegree: 54
 standards:
   - "ECMA-262"
-  - "EU-2015/847"
-  - "EU-2015/849"
-  - "EU-2019/1150"
-  - "EU-2019/1152"
-  - "EU-2019/1937"
-  - "EU-2019/2161"
-  - "EU-2019/770"
-  - "EU-2019/771"
-  - "EU-2022/1925"
-  - "EU-2022/2065"
-  - "EU-2022/2554"
-  - "EU-2022/2555"
-  - "EU-2022/868"
-  - "EU-2024/1183"
-  - "EU-2024/1620"
-  - "EU-2024/1624"
   - "EU-CSDDD-2024/1760"
   - "EU-Intrastat-Reg-2019/2152"
   - "ISO-4217"
@@ -104,74 +24,8 @@ standards:
   - "W3C-WAI-ARIA-1.2"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - atom
-    - aura
-    - balance
-    - collections
-    - dimension
-    - dry
-    - entropy
-    - harmony
-    - horo
-    - matrix
-    - standards
-    - tamper
-    - trinity
-  matrix:
-    - accounting
-    - atom
-    - aura
-    - balance
-    - bindings
-    - collections
-    - cost
-    - dimension
-    - dry
-    - entropy
-    - hallucination
-    - harmony
-    - hooks
-    - horo
-    - matrix
-    - maxtampercost
-    - pivot
-    - purity
-    - relocate
-    - standards
-    - tamper
-    - trinity
-    - typography
-    - unavoidable
-  backlinks:
-    - accounting
-    - atom
-    - aura
-    - balance
-    - bindings
-    - collections
-    - cost
-    - dimension
-    - dry
-    - entropy
-    - hallucination
-    - harmony
-    - hooks
-    - horo
-    - matrix
-    - maxtampercost
-    - pivot
-    - purity
-    - relocate
-    - standards
-    - tamper
-    - trinity
-    - typography
-    - unavoidable
 signatures:
-  computationUuid: "cb5c7736-4d8b-8925-a87e-74d415aa4641"
+  computationUuid: "fbc511f2-275b-8e18-a1f1-ef01b9421f4c"
   stages:
     - stage: path
       stageUuid: "9e734818-9a0d-8503-86f7-f75d6ca272fd"
@@ -180,13 +34,13 @@ signatures:
     - stage: boundary
       stageUuid: "27d6d799-85b9-87fd-9f47-0efe6cbe060e"
     - stage: links
-      stageUuid: "293c0ee6-1c5d-8cf5-9f00-3da2ad5a87a7"
+      stageUuid: "a3ef7876-eeb4-8a41-a0f0-4b13593ed3af"
     - stage: horo
-      stageUuid: "b1519a26-59ed-8349-997a-b73380b56b54"
+      stageUuid: "60130d82-1bd4-895f-a756-735abae573d5"
     - stage: seal
       stageUuid: "b3e01a1d-08b1-836f-8530-effa1ed21d5f"
     - stage: uuid
-      stageUuid: "da8fcc74-fdff-8cd4-a47f-4ba561b6cb23"
+      stageUuid: "a3cf5bec-c306-83e7-ae96-30a1641e0470"
 version: 2
 ---
 # analytics — the all-aspects analyzer

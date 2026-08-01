@@ -1,68 +1,35 @@
 ---
 name: example
 description: "Use when reasoning about example as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/example
-coordinate: example · 1/base · de3e36ea
-contentUuid: "73c3a6d7-eca1-50ad-a99a-1f7bd8f57005"
-diamondUuid: "2d4d7af7-ffad-8d90-bf33-0c931249093f"
-uuid: "de3e36ea-17b9-845c-b060-475d17819f37"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - work
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - work
+atomPath: "vocabulary/example"
+coordinate: "vocabulary/example · 8/crest · ed065e31"
+contentUuid: "f5c95cda-55dc-5954-ae8f-4165f19e7c91"
+diamondUuid: "384e7934-71e7-8ca8-8f7e-08ad6db15e01"
+uuid: "ed065e31-2d47-8644-8eb1-e6e6951280a9"
+horo: 8
 typography:
-  partition: example
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - work
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - work
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - work
 signatures:
-  computationUuid: "80ed7009-fa0b-8305-a97f-61122570ca39"
+  computationUuid: "0305ff28-4a44-8c0a-860a-3ea7b86efe6f"
   stages:
     - stage: path
-      stageUuid: "7fd8f0d6-ad99-838d-b675-5aa613d83c24"
+      stageUuid: "35581830-ba53-8197-98d6-0a1ef74dfd0b"
     - stage: trinity
-      stageUuid: "d1cb8ff6-052f-879b-8756-7765ffcc4de2"
+      stageUuid: "ba4287a9-6e2d-890c-aa76-b5c796076616"
     - stage: boundary
-      stageUuid: "dcc9c95c-8a28-876c-a2ed-b15fa577e20b"
+      stageUuid: "6ab34b20-f880-8612-bdb3-89e13f0dec63"
     - stage: links
-      stageUuid: "04595c38-bc9c-82c5-907b-30165bc88583"
+      stageUuid: "7d9f871c-c3ac-8495-8237-329cd8addecf"
     - stage: horo
-      stageUuid: "3a82a433-ebb1-8ef6-a349-29e92d63c7e5"
+      stageUuid: "db90f0c7-5f69-8b6f-b36b-619af5b1b21c"
     - stage: seal
-      stageUuid: "779f0ba2-81bd-8916-82de-1f39242477d2"
+      stageUuid: "654be8a7-45b8-817b-a698-3c07cba2d8c0"
     - stage: uuid
-      stageUuid: "9411e4d9-f65e-86c3-88a4-befb7de49d68"
+      stageUuid: "86d8c64b-75a8-8a93-92cc-f70210399f16"
 version: 2
 ---
 # example

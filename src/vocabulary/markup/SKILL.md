@@ -1,73 +1,35 @@
 ---
 name: markup
 description: "Use when reasoning about markup as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/markup
-coordinate: markup · 7/descent · 2f40bf29
-contentUuid: "b36d95dd-3eae-5d17-b0a3-9af1caa46eb7"
-diamondUuid: "5ce63dcc-19b5-862a-8d19-3527f4dd57d1"
-uuid: "2f40bf29-d265-85cf-8d91-cbea366b74aa"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - speech
-    - sti
-    - text
-  out:
-    - collapse
-    - law
-    - merge
-    - speech
-    - sti
-    - text
+atomPath: "vocabulary/markup"
+coordinate: "vocabulary/markup · 4/weave · aada6f78"
+contentUuid: "77a33c07-87f3-5408-9224-e682dcd9ff00"
+diamondUuid: "efb2eb5a-21e1-8dcc-b9e1-3104172398b4"
+uuid: "aada6f78-2da8-8d97-a6d3-539414d490d2"
+horo: 4
 typography:
-  partition: markup
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - speech
-    - sti
-    - text
-  matrix:
-    - collapse
-    - law
-    - merge
-    - speech
-    - sti
-    - text
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - speech
-    - sti
-    - text
 signatures:
-  computationUuid: "e3985b3e-4e78-81c4-876d-3772357fbe91"
+  computationUuid: "f5074d63-ee13-807d-b98f-680e5acc6b7f"
   stages:
     - stage: path
-      stageUuid: "1d82a8e5-20a9-827c-a494-0e9cd8481c91"
+      stageUuid: "184b5461-e56a-8075-a06f-1b0dcd0ac3a2"
     - stage: trinity
-      stageUuid: "0b5e6328-5462-8c7a-bc96-49170b666acf"
+      stageUuid: "6c077cd8-94ce-8f29-9604-cb728b59f170"
     - stage: boundary
-      stageUuid: "cdc67647-ca22-844f-819d-946baafd408d"
+      stageUuid: "61160817-445a-85bc-b7bd-2d747cde90b2"
     - stage: links
-      stageUuid: "0de09aeb-b761-896e-a02c-410df3a5dd7b"
+      stageUuid: "53e148f4-2fec-8c38-8a85-56a2787ece4b"
     - stage: horo
-      stageUuid: "d965fe1a-b337-8d9c-a3f7-9ca9ca092938"
+      stageUuid: "d5b6e725-7c2f-8a2f-a405-a2126a3fae0e"
     - stage: seal
-      stageUuid: "5fa6e3fc-2de3-8052-a3d0-95a104f8950c"
+      stageUuid: "d428d539-801d-8cb8-b98e-1a63e1642e65"
     - stage: uuid
-      stageUuid: "2b8ccd0c-e58b-8a82-a0dc-e31f2cc57e39"
+      stageUuid: "9faadb56-1f2b-80f1-b700-2a8f6ee9edd0"
 version: 2
 ---
 # markup

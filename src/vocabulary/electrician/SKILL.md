@@ -1,53 +1,35 @@
 ---
 name: electrician
 description: Use when reasoning about electrician — An electrician.
-atomPath: vocabulary/electrician
-coordinate: electrician · 8/crest · ff57e0ca
-contentUuid: "dd7951e8-13e3-520e-a491-7b46e778617c"
-diamondUuid: "c7a4f189-d12f-8938-9291-3f27d92c413b"
-uuid: "ff57e0ca-9e66-8878-9136-ff2e800338d8"
-horo: 8
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/electrician"
+coordinate: "vocabulary/electrician · 1/base · 467b15a9"
+contentUuid: "0b8176df-6a16-54d0-a4d8-d7b06c59eb9b"
+diamondUuid: "caa4a811-44bd-8b3e-87b0-ce73f7fa2142"
+uuid: "467b15a9-f8cd-8d52-8e0f-12d546f521b3"
+horo: 1
 typography:
-  partition: electrician
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "526614da-7888-806d-92c3-279704a648db"
+  computationUuid: "dd69d4cd-ba73-8f70-82d4-a49431edeb0e"
   stages:
     - stage: path
-      stageUuid: "e92f0383-6212-8fc8-869f-642ce4214c18"
+      stageUuid: "470cafe3-9c81-856a-ac3f-eb63a7f80fa0"
     - stage: trinity
-      stageUuid: "9f5b3198-bf69-8fd7-97b8-b8aa76b14fe7"
+      stageUuid: "401c29a1-ab2e-8e8c-9f63-2ef4d89439a0"
     - stage: boundary
-      stageUuid: "ee99368c-58aa-8251-bdf3-d632cb2631f0"
+      stageUuid: "27f6f8a3-335c-8ebf-8bd0-10af300e6fbf"
     - stage: links
-      stageUuid: "ea34ff3a-6387-8411-b883-8eab2e3bc006"
+      stageUuid: "f9eff2db-1592-827d-b0cc-d64882c0ed59"
     - stage: horo
-      stageUuid: "9ab5e9d8-9b07-837b-9f75-2716a99fea5d"
+      stageUuid: "3cef8829-aeab-8d87-98a5-903d51363f60"
     - stage: seal
-      stageUuid: "875ce896-fbd4-8f7a-9bbb-884731e41c11"
+      stageUuid: "1fe4f5ca-a5e7-848b-99c2-f50d1eb09b48"
     - stage: uuid
-      stageUuid: "877f8551-f60f-8e02-9306-d86c25a07498"
+      stageUuid: "fc834939-e92d-84a5-b108-0749fce9c246"
 version: 2
 ---
 # electrician

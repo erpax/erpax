@@ -1,68 +1,35 @@
 ---
 name: checkins
 description: "Use when reasoning about checkins as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/checkins
-coordinate: checkins · 2/share · 905163b3
-contentUuid: "dfaa2f94-1b26-5369-9ff8-a95019898207"
-diamondUuid: "29b8c01f-4d68-80ec-b979-4c98785c768e"
-uuid: "905163b3-64bf-8b8d-908e-22c7f2fbdc89"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - user
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - user
+atomPath: "vocabulary/checkins"
+coordinate: "vocabulary/checkins · 5/round · d366b30c"
+contentUuid: "250e16aa-a02e-57c3-99bd-f216b459d0cb"
+diamondUuid: "37845061-aaa8-8713-954c-21997c6930f1"
+uuid: "d366b30c-f6d4-86f7-b59b-8ab78e275b85"
+horo: 5
 typography:
-  partition: checkins
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - user
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - user
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - user
 signatures:
-  computationUuid: "0266f1d0-41f2-8014-b79f-47a58511460a"
+  computationUuid: "bf3cda96-08bb-8a7a-bb33-e112d9047289"
   stages:
     - stage: path
-      stageUuid: "324520c8-f96b-81bb-850d-9169be274809"
+      stageUuid: "2597aa19-8745-8eb3-867d-e6842a199ddb"
     - stage: trinity
-      stageUuid: "7d83178a-6493-88e9-91c5-3ea7d0107554"
+      stageUuid: "152159ac-dc0c-87d2-ba94-fe240bebb0e6"
     - stage: boundary
-      stageUuid: "b91c91b6-cb2d-8d9a-8fad-30ed8a59a9d8"
+      stageUuid: "f3ab84d7-e5f5-8654-8900-00904a2d9635"
     - stage: links
-      stageUuid: "f9386a78-5659-86fa-9f8b-23268c94a288"
+      stageUuid: "515ee55b-fc90-81c1-9b2f-87204da7b995"
     - stage: horo
-      stageUuid: "c5dd0dec-8f23-887c-8470-43d15de4e07c"
+      stageUuid: "4ab5e3c7-cc09-8896-b22f-5d1c8a039720"
     - stage: seal
-      stageUuid: "64adb549-c694-8afd-9674-eaa5e120251c"
+      stageUuid: "15d69dbf-e4a6-89a5-a4c5-bb58e74f3070"
     - stage: uuid
-      stageUuid: "135e0b67-45a1-85ab-9f51-9e41357e4f0e"
+      stageUuid: "a5ea863e-4354-8824-89c6-b6c14b150095"
 version: 2
 ---
 # checkins

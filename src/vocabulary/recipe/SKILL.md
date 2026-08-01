@@ -1,73 +1,35 @@
 ---
 name: recipe
 description: "Use when reasoning about recipe — A recipe. For dietary restrictions covered by the recipe, a few common restrictions are enumerated via suitableForDiet. The keywords property can also be used to add more detail."
-atomPath: vocabulary/recipe
-coordinate: recipe · 2/share · a65113f2
-contentUuid: "bb963967-67d9-5714-a298-7709e6249ebb"
-diamondUuid: "084bdd7f-16f3-8fab-8183-209251063a38"
-uuid: "a65113f2-c989-8042-9f5a-0efcbca370bf"
-horo: 2
-bonds:
-  in:
-    - category
-    - cuisine
-    - ingredient
-    - instructions
-    - law
-    - yield
-  out:
-    - category
-    - cuisine
-    - ingredient
-    - instructions
-    - law
-    - yield
+atomPath: "vocabulary/recipe"
+coordinate: "vocabulary/recipe · 1/base · d882dd6c"
+contentUuid: "09d5a47c-2d7a-5163-b64f-2afa3804dd45"
+diamondUuid: "20898c56-61f0-821f-925c-22f311917d7f"
+uuid: "d882dd6c-d461-8eba-a242-a49db72c4fe9"
+horo: 1
 typography:
-  partition: recipe
+  partition: vocabulary
   bondDegree: 22
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - category
-    - cuisine
-    - ingredient
-    - instructions
-    - law
-    - yield
-  matrix:
-    - category
-    - cuisine
-    - ingredient
-    - instructions
-    - law
-    - yield
-  backlinks:
-    - category
-    - cuisine
-    - ingredient
-    - instructions
-    - law
-    - yield
 signatures:
-  computationUuid: "a12e33cd-535f-843a-af15-d89db7a0db76"
+  computationUuid: "c384c27b-98ee-8ef7-869a-a72effcdd0b1"
   stages:
     - stage: path
-      stageUuid: "ad417187-0252-8c4f-af45-cd7b77d40dff"
+      stageUuid: "67a8f2b7-dd06-82eb-8f34-411dc7bd3b5d"
     - stage: trinity
-      stageUuid: "806101da-9830-848f-a84d-727a712d2c35"
+      stageUuid: "0b162c84-2a93-809a-8681-e693f6f328a7"
     - stage: boundary
-      stageUuid: "c9d6129d-c015-8a4a-8229-93b815052052"
+      stageUuid: "e2d39394-04d7-8ef7-ac87-cb82908712a0"
     - stage: links
-      stageUuid: "a4e5055b-2dc7-871c-9cfa-dd0cb72e7638"
+      stageUuid: "2f161531-a0cc-8cb4-8c94-9ebd627d4b7f"
     - stage: horo
-      stageUuid: "57abd5fe-d0dc-839e-b0a9-d9ba6d6c9a53"
+      stageUuid: "14170ce9-90ef-86cd-bb76-caf7f064ba2f"
     - stage: seal
-      stageUuid: "23cf6370-bb03-890b-943c-2f4d16e3199f"
+      stageUuid: "b64c80d0-c5fc-8f09-8801-50bdc7caf64b"
     - stage: uuid
-      stageUuid: "60c29061-bb27-842b-8b59-e8a26fc9291f"
+      stageUuid: "cab4e16e-eb35-81cf-aff1-9b634f08fc21"
 version: 2
 ---
 # recipe

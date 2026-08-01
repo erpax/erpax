@@ -1,63 +1,35 @@
 ---
 name: official
 description: "Use when reasoning about official as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/official
-coordinate: official · 8/crest · 212fa8fc
-contentUuid: "90adfa14-f5c5-5658-b424-798e470c6eac"
-diamondUuid: "f8be608f-1339-8028-bb4d-c1c34f11da8d"
-uuid: "212fa8fc-d633-8f57-9206-2fb14bd5b640"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/official"
+coordinate: "vocabulary/official · 5/round · b494ce08"
+contentUuid: "eb973827-0e79-5338-b079-823c6773198b"
+diamondUuid: "5e3b671b-8707-8efc-831f-301e58d16e71"
+uuid: "b494ce08-3bdc-8769-a698-ad2419134fa6"
+horo: 5
 typography:
-  partition: official
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "d5bf2e31-147e-897e-bee6-82e29c5984eb"
+  computationUuid: "3bfa511b-e4c0-893c-b1be-2bff81b1b227"
   stages:
     - stage: path
-      stageUuid: "851e4442-724e-8c73-bfcb-a90c433d17e5"
+      stageUuid: "0d9b3614-30e2-8971-8d42-cb3c0cf94564"
     - stage: trinity
-      stageUuid: "a71de0ce-19de-847a-b744-983c1c6035b8"
+      stageUuid: "412bd407-bdf4-8fd4-9768-1b9d8409eaaa"
     - stage: boundary
-      stageUuid: "16142947-84f1-826f-b601-6c44890f45a2"
+      stageUuid: "3e013f9b-2c55-84cc-b8cc-07c02b861d37"
     - stage: links
-      stageUuid: "ce46aa6f-19f9-8bcf-873f-3646d8a80d7d"
+      stageUuid: "44a887a9-7df1-89d1-a628-6e1dbf796761"
     - stage: horo
-      stageUuid: "5cf13f1d-912c-8037-a4f0-86f97d9df14c"
+      stageUuid: "351dbd86-c69b-856f-9e4a-3cfad64309f1"
     - stage: seal
-      stageUuid: "f9a892dd-c97f-814a-8bf9-22e53676e171"
+      stageUuid: "9c585f27-7995-8949-85ec-d74181a9a6dd"
     - stage: uuid
-      stageUuid: "bcc3618f-b069-807f-8096-f2e687860927"
+      stageUuid: "1c1ff680-1020-8cee-a700-10b2f3139224"
 version: 2
 ---
 # official

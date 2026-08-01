@@ -2,62 +2,20 @@
 name: vein
 description: "Use when reasoning about erpax's return vessel — the one-way organ. Venous valves enforce unidirectional flow back to the heart (a ratchet, the append-only return), the veins hold ~70% of blood volume (a capacitance reservoir), and with the artery they close the reciprocal loop. Three properties are computed and mapped — a structural isomorphism — onto erpax's append-only chain and reciprocal wiring."
 atomPath: vein
-coordinate: vein · 1/base · e67d1843
-contentUuid: "fe56559e-cfaf-5b81-b9a4-e0ad77fff196"
-diamondUuid: "12499931-150c-8b9f-baff-0734eab5f1ab"
-uuid: "e67d1843-f145-8781-8c6f-5735578d3df4"
-horo: 1
-bonds:
-  in:
-    - artery
-    - body
-    - conservation
-    - heart
-    - law
-    - receipt
-    - vein
-  out:
-    - artery
-    - body
-    - conservation
-    - heart
-    - law
-    - receipt
-    - vein
+coordinate: "vein · 8/crest · 0b2d26f4"
+contentUuid: "a8030f47-3b07-5975-bcec-3aab29b960e3"
+diamondUuid: "4004e32e-cf9e-87ec-9205-6204279ab772"
+uuid: "0b2d26f4-e064-81ba-bc52-c3d0090ef187"
+horo: 8
 typography:
   partition: vein
   bondDegree: 26
-  neighbors: []
 standards:
-  - computed (a unidirectional valve · volume distribution · loop mass balance)
   - venous valves prevent regurgitation; veins are capacitance vessels holding ≈70% of blood volume
   - venous valves prevent regurgitation; veins hold ≈70% of blood volume (capacitance)
 bindings: []
-neighbors:
-  wikilink:
-    - artery
-    - conservation
-    - heart
-    - law
-    - receipt
-  matrix:
-    - artery
-    - body
-    - conservation
-    - heart
-    - law
-    - receipt
-    - vein
-  backlinks:
-    - artery
-    - body
-    - conservation
-    - heart
-    - law
-    - receipt
-    - vein
 signatures:
-  computationUuid: "77a354a0-6ec5-8aad-b477-2c51edbdbdd2"
+  computationUuid: "d0e56e1f-d5ce-8bd0-be09-0eb5666d7112"
   stages:
     - stage: path
       stageUuid: "8e27d494-4602-8dd5-8e14-bc4ea2a9e638"
@@ -68,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "a48af593-96c7-8a3b-9949-d617f819cdbb"
     - stage: horo
-      stageUuid: "1de364dd-f0e6-8176-b256-a1fffbf72aa5"
+      stageUuid: "906d8ccd-6ca8-857b-8f54-512401819449"
     - stage: seal
-      stageUuid: "a0b4708a-fdb5-82d5-81c0-e98eaeb7558d"
+      stageUuid: "d8582646-2198-81c4-abb1-fa28d544862e"
     - stage: uuid
-      stageUuid: "c9dc9cf1-b530-8c5d-a92a-6b9a5700f1d4"
+      stageUuid: "efe787e7-e7b6-8437-bb56-bd761b60ddd0"
 version: 2
 ---
 # vein — the one-way return (the append-only path)

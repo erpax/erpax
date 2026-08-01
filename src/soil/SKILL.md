@@ -2,145 +2,18 @@
 name: soil
 description: "Use when modelling the living medium a crop grows in — soil as the three-phase (mineral·water·air) body whose texture/structure/tilth, organic matter, biology, moisture and chemistry set what fertility, water, and yield are possible. The parent the fertility/water/cover-crop vocabulary hangs from; a capacity reservoir managed, depleted, and rebuilt."
 atomPath: soil
-coordinate: soil · 1/base · a724524a
-contentUuid: "c9f75342-1cbc-5006-af11-bbe39cfb94f1"
-diamondUuid: "b5d564b2-6cb9-8600-8736-36a9f4c531b3"
-uuid: "a724524a-0cc4-881b-b066-fe735635e840"
-horo: 1
-bonds:
-  in:
-    - agriculture
-    - assets
-    - balance
-    - capacity
-    - compost
-    - conservation
-    - covercrop
-    - crop
-    - ecosystem
-    - fertility
-    - grazing
-    - irrigation
-    - livestock
-    - manure
-    - moisture
-    - mulch
-    - mycelium
-    - mycorrhizae
-    - permaculture
-    - rootstock
-    - rotation
-    - salinity
-    - sustainability
-    - terroir
-    - tillage
-    - yield
-  out:
-    - agriculture
-    - assets
-    - balance
-    - capacity
-    - compost
-    - conservation
-    - covercrop
-    - crop
-    - ecosystem
-    - fertility
-    - grazing
-    - irrigation
-    - livestock
-    - manure
-    - moisture
-    - mulch
-    - mycelium
-    - mycorrhizae
-    - permaculture
-    - rootstock
-    - rotation
-    - salinity
-    - sustainability
-    - terroir
-    - tillage
-    - yield
+coordinate: "soil · 4/weave · 160a1d0b"
+contentUuid: "27a244f9-f0ba-506e-a538-90de825e03ff"
+diamondUuid: "f8f343c5-c19e-8d40-98f0-4d54031218be"
+uuid: "160a1d0b-8f90-8665-b4de-7924506f3896"
+horo: 4
 typography:
   partition: soil
   bondDegree: 88
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - assets
-    - balance
-    - capacity
-    - compost
-    - conservation
-    - covercrop
-    - crop
-    - ecosystem
-    - fertility
-    - moisture
-    - mycorrhizae
-    - salinity
-    - sustainability
-    - tillage
-  matrix:
-    - agriculture
-    - assets
-    - balance
-    - capacity
-    - compost
-    - conservation
-    - covercrop
-    - crop
-    - ecosystem
-    - fertility
-    - grazing
-    - irrigation
-    - livestock
-    - manure
-    - moisture
-    - mulch
-    - mycelium
-    - mycorrhizae
-    - permaculture
-    - rootstock
-    - rotation
-    - salinity
-    - sustainability
-    - terroir
-    - tillage
-    - yield
-  backlinks:
-    - agriculture
-    - assets
-    - balance
-    - capacity
-    - compost
-    - conservation
-    - covercrop
-    - crop
-    - ecosystem
-    - fertility
-    - grazing
-    - irrigation
-    - livestock
-    - manure
-    - moisture
-    - mulch
-    - mycelium
-    - mycorrhizae
-    - permaculture
-    - rootstock
-    - rotation
-    - salinity
-    - sustainability
-    - terroir
-    - tillage
-    - yield
 signatures:
-  computationUuid: "d0a60d43-7f75-82c6-b26c-f0ed009d6a31"
+  computationUuid: "2876caf6-f437-8d45-bd2b-afda0a6b1ef6"
   stages:
     - stage: path
       stageUuid: "10ea7710-6a42-81e4-ba93-fccf62670d47"
@@ -151,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c621c3fa-811e-813c-9f16-36c564bf1e1b"
     - stage: horo
-      stageUuid: "3526f27d-25b1-8f8e-a696-7bf39ada8911"
+      stageUuid: "0ec66f5a-8c33-83b7-a816-ce32eb97324a"
     - stage: seal
-      stageUuid: "4f58f1e4-9a0f-8915-89bc-df155cd7890e"
+      stageUuid: "a9dc85d7-59da-8352-938a-f3452ced7a3c"
     - stage: uuid
-      stageUuid: "c2422c15-4f3a-8d61-b57b-94eb95aefbb7"
+      stageUuid: "0630bed6-26cd-8203-9286-427fc1fe3307"
 version: 2
 ---
 # soil — the living medium; the reservoir crops draw from

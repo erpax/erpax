@@ -2,90 +2,19 @@
 name: workspace
 description: "Use when fusing Google Workspace (Gmail, Calendar, Drive, Docs, Sheets, People, Admin Directory) into erpax to fill the office/productivity gap — a computed API catalogue plus the content-uuid fusion bridge that merges a fetched resource into the mesh idempotently (re-fetch dedups). Credentials live in the per-tenant config sandbox, never in the registry."
 atomPath: "google/workspace"
-coordinate: "google/workspace · 2/share · 09fe93e1"
-contentUuid: "a6cd1ef7-acb2-5082-a922-e75bee045d87"
-diamondUuid: "fef82e79-21dc-8d38-8909-415103436f9f"
-uuid: "09fe93e1-39ad-8a24-923a-7f034610c216"
+coordinate: "google/workspace · 2/share · 0c03d3e4"
+contentUuid: "037a1441-d5f6-55c2-aa97-36cac703a7b9"
+diamondUuid: "be790e1d-2a2b-87b2-acbe-a258cfd150c7"
+uuid: "0c03d3e4-730a-8d80-8480-b7d5dd2bbb02"
 horo: 2
-bonds:
-  in:
-    - accounting
-    - api
-    - connections
-    - entry
-    - federation
-    - flow
-    - identity
-    - ingest
-    - law
-    - mcp
-    - merge
-    - oauth
-    - standard
-  out:
-    - accounting
-    - api
-    - connections
-    - entry
-    - federation
-    - flow
-    - identity
-    - ingest
-    - law
-    - mcp
-    - merge
-    - oauth
-    - standard
 typography:
   partition: google
-  bondDegree: 0
-  neighbors: []
+  bondDegree: 40
 standards:
   - "UBL-2.1"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - api
-    - connections
-    - entry
-    - federation
-    - flow
-    - identity
-    - ingest
-    - law
-    - merge
-    - standard
-  matrix:
-    - accounting
-    - api
-    - connections
-    - entry
-    - federation
-    - flow
-    - identity
-    - ingest
-    - law
-    - mcp
-    - merge
-    - oauth
-    - standard
-  backlinks:
-    - accounting
-    - api
-    - connections
-    - entry
-    - federation
-    - flow
-    - identity
-    - ingest
-    - law
-    - mcp
-    - merge
-    - oauth
-    - standard
 signatures:
-  computationUuid: "d1d923ef-1539-8910-b490-671cea39007f"
+  computationUuid: "ab22eb63-16ba-84e7-b13e-b2272974293c"
   stages:
     - stage: path
       stageUuid: "6dcd48d9-2c9f-843f-80e2-28174a5bc520"
@@ -96,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "21036d64-d02f-8033-8666-b6ed631aad30"
     - stage: horo
-      stageUuid: "76120a3e-51bc-8d0a-8f49-7f8fbf3c214c"
+      stageUuid: "df5f3df7-dc12-8f50-8b56-387f7742ec2d"
     - stage: seal
       stageUuid: "637b755a-4f50-8150-b288-8d50ea49275b"
     - stage: uuid
-      stageUuid: "3f61bd88-011b-843a-acc2-0666f19e6ad0"
+      stageUuid: "163a5e1c-7d32-87d0-8c9c-03640855226f"
 version: 2
 ---
 # google-workspace — the office layer fused into the mesh

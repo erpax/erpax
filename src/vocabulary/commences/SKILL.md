@@ -1,68 +1,35 @@
 ---
 name: commences
 description: "Use when reasoning about commences as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/commences
-coordinate: commences · 1/base · b0e3fe55
-contentUuid: "0322cbb4-4da1-558e-8636-45736e64f676"
-diamondUuid: "d0089b56-4955-87e8-8f62-acb075d04427"
-uuid: "b0e3fe55-4386-89ee-ac9e-983fcc7e2ef5"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
+atomPath: "vocabulary/commences"
+coordinate: "vocabulary/commences · 4/weave · 8596c365"
+contentUuid: "16b17f5b-b1f7-582b-89ea-9446dddeeba1"
+diamondUuid: "13459595-4a5f-8eb4-902a-4c36b6ae6192"
+uuid: "8596c365-8c58-8f55-97a0-cdfb25aa3a0b"
+horo: 4
 typography:
-  partition: commences
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
 signatures:
-  computationUuid: "4336be5d-1552-8969-bcfe-6c3238f87791"
+  computationUuid: "f5e822b4-d3bf-860a-801f-cdf1d46ade50"
   stages:
     - stage: path
-      stageUuid: "d0c3ee3b-b1c3-89ae-b703-e999b8ac470a"
+      stageUuid: "601a8a52-5bc8-88fd-9bce-e68da783abaf"
     - stage: trinity
-      stageUuid: "59b5f216-25c7-8a75-8dd6-61c10e4054e7"
+      stageUuid: "2e37b87a-5800-8772-aec4-ebc8da923d7e"
     - stage: boundary
-      stageUuid: "965acb82-f4d7-88ca-948c-87d61f8a0602"
+      stageUuid: "1d036632-3c75-88d0-b58d-8c6be401b693"
     - stage: links
-      stageUuid: "579e540b-4c22-842d-b721-840cb5af748c"
+      stageUuid: "5efd1f8a-f503-8ed8-aec3-07b668fceae9"
     - stage: horo
-      stageUuid: "fc0c449a-688e-843f-9cf6-3e2b8756774a"
+      stageUuid: "ee0a20c5-55b8-87f6-958e-10259f9ca0b8"
     - stage: seal
-      stageUuid: "8b1c18a1-eeb6-85c3-9ae9-5b8c5c72a2ae"
+      stageUuid: "5812b8a1-a78b-8ad2-80bd-bf41129d42f6"
     - stage: uuid
-      stageUuid: "49a27add-5b22-8f3a-977b-7917a45e3940"
+      stageUuid: "7b168ded-ffe8-8b2e-af43-4ac8ee2f671c"
 version: 2
 ---
 # commences

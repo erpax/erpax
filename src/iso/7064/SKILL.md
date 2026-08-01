@@ -2,36 +2,22 @@
 name: "7064"
 description: "Use when implementing or referencing `src/standards/iso-7064/`."
 atomPath: "iso/7064"
-coordinate: "iso/7064 · 5/round · f6660833"
-contentUuid: "d3e94a2a-67c2-5519-8ace-306cb8712de4"
-diamondUuid: "e44f6b42-2909-8836-bf34-9319ded83027"
-uuid: "f6660833-a165-8467-9534-c08d2f7f414a"
-horo: 5
-bonds:
-  in:
-    - iso
-    - law
-  out:
-    - law
+coordinate: "iso/7064 · 2/share · ac4a7f81"
+contentUuid: "90c1a4ec-20e2-59e1-954b-56ce7f114de5"
+diamondUuid: "cdc57397-a749-87a9-aef2-c466c5a4a481"
+uuid: "ac4a7f81-be2b-8ca5-bd0b-9dcc1c627ddb"
+horo: 2
 typography:
   partition: iso
   bondDegree: 3
-  neighbors: []
 standards:
   - "EU-2003/88/EC"
   - "ISO-7064"
   - "ISO-7064:2003 check-character-systems"
   - "ISO-7064:2003 mod-XX` plus the issuing"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-  matrix:
-    - law
-  backlinks:
-    - law
 signatures:
-  computationUuid: "38505c4c-7864-8104-a90e-79fae6cf022c"
+  computationUuid: "b250f40e-c4e7-83d5-b547-0f9859e9244c"
   stages:
     - stage: path
       stageUuid: "501672c3-f75c-8837-8892-9949b8f11c91"
@@ -42,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "6ee5b31f-955e-83b3-97fa-3e49ef86b45f"
     - stage: horo
-      stageUuid: "4b2433be-cca2-8921-b9bb-c01f1c6b7ea8"
+      stageUuid: "007b76da-26f4-8a6f-8476-df19bbbc6e71"
     - stage: seal
       stageUuid: "6fc9804e-988f-895d-a058-e21e43f85e3a"
     - stage: uuid
-      stageUuid: "0abf63b3-2788-877a-a6e3-ba2ecf38274a"
+      stageUuid: "8c43e9d2-f76b-8c45-bfa4-6f1bdd8f6f1c"
 version: 2
 ---
 # `src/standards/iso-7064/`

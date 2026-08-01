@@ -2,63 +2,22 @@
 name: check
 description: "Use when a notary must verify an instrument before sealing it — the per-document-type duty matrix (identity, capacity, title, encumbrance, cadastre, sanctions, tax, spousal consent, company, signature, timestamp, apostille) mapped to the responsible Bulgarian register and the standard it satisfies, with a rosetta coverage audit that surfaces every unwired gap. Provider adapters are contracts; live wiring needs accredited credentials — no endpoint is fabricated, no gap is hidden."
 atomPath: "notary/check"
-coordinate: "notary/check · 8/crest · 04df4a58"
-contentUuid: "dd28fb62-b772-500f-aa86-96a61e00e3d9"
-diamondUuid: "4e649624-02a7-84fa-81ed-87b390d4ac80"
-uuid: "04df4a58-c3fd-833d-b174-bc003257a377"
-horo: 8
-bonds:
-  in:
-    - action
-    - check
-    - law
-    - notary
-    - out
-    - standards
-    - uuid
-  out:
-    - action
-    - check
-    - law
-    - notary
-    - out
-    - standards
-    - uuid
+coordinate: "notary/check · 1/base · 82ce866f"
+contentUuid: "5bcc7317-8960-59c5-99d2-d1fa15b20fab"
+diamondUuid: "dad1b7a9-ac56-8c73-9eb0-e108ffe596a8"
+uuid: "82ce866f-b081-85da-bc14-d59f8187ae2b"
+horo: 1
 typography:
   partition: notary
   bondDegree: 28
-  neighbors: []
 standards:
-  - "EU-2006/43"
+  - "EU-2018/843"
   - "EU-VAT-Directive"
   - eIDAS
   - "eIDAS (EU 910/2014) · RFC 3161 · AMLD5 (EU 2018/843) · Hague Apostille 1961"
 bindings: []
-neighbors:
-  wikilink:
-    - check
-    - law
-    - notary
-    - standards
-    - uuid
-  matrix:
-    - action
-    - check
-    - law
-    - notary
-    - out
-    - standards
-    - uuid
-  backlinks:
-    - action
-    - check
-    - law
-    - notary
-    - out
-    - standards
-    - uuid
 signatures:
-  computationUuid: "9788b7d7-2d23-8d42-8cbd-9f8f85b8e6ec"
+  computationUuid: "378348d9-0943-8a33-919e-de6a73b66c7b"
   stages:
     - stage: path
       stageUuid: "c1d0233e-08c5-8fd8-afea-8f2b09d28582"
@@ -69,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "75dce7cd-2a32-8c8f-95eb-b58109162c8f"
     - stage: horo
-      stageUuid: "48d6f8c1-e58d-86c9-9188-4b8aaf44638a"
+      stageUuid: "c0f3a1c4-cd53-8a9f-ba62-a00b6e7f55b6"
     - stage: seal
       stageUuid: "6957cd82-6137-8194-ab8b-308eb3509227"
     - stage: uuid
-      stageUuid: "b8fc4a53-2c50-85cb-be18-d0fbaf56b99f"
+      stageUuid: "4331d9fc-e977-8917-a263-8f1095e33e7d"
 version: 2
 ---
 # check — what a notary verifies, per document

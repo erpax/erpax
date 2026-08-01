@@ -1,55 +1,37 @@
 ---
 name: closing
 description: "Use when implementing or referencing Period-End Closing Standard."
-atomPath: period/end/closing
-coordinate: period/end/closing · 4/weave · 7459545e
-contentUuid: "23a08d35-1b49-5463-bc77-3a36d160ee51"
-diamondUuid: "9e4106be-94bb-8191-9288-e454793684ab"
-uuid: "7459545e-9a33-8524-89a9-72b46610762f"
-horo: 4
-bonds:
-  in:
-    - checker
-    - end
-    - law
-  out:
-    - checker
-    - law
+atomPath: "period/end/closing"
+coordinate: "period/end/closing · 1/base · 0e1fff6a"
+contentUuid: "050675f7-860e-5d4a-945a-d2aa33eaaab2"
+diamondUuid: "b9a9e377-899d-855c-b0c8-5a88fdff8c46"
+uuid: "0e1fff6a-44bb-851e-af5e-0b6f5bde1907"
+horo: 1
 typography:
   partition: period
-  bondDegree: 8
-  neighbors: []
+  bondDegree: 6
 standards:
-  - "EU-2014/55"
   - "EU-2016/679"
-  - "EU-537/2014"
-  - "EU-910/2014"
   - "GDPR:2016/679 Art. 32 Security of processing"
+  - "GDPR:2016/679 Art. 32 Security of processing`"
   - "IAS-34"
   - "IAS-34:2023 Interim Financial Reporting"
   - "NIST-SP-800-92"
   - "NIST-SP-800-92 Audit logging"
+  - "NIST-SP-800-92 Audit logging`"
   - "SAF-T"
   - "SAF-T:3.0.2 Standard Audit File for Tax"
   - SOX
   - "SOX:2002 Sec. 404 Internal control assessment"
+  - "SOX:2002 Sec. 404 Internal control assessment`"
   - XBRL
   - "XBRL-GL General Ledger"
   - eIDAS
   - "eIDAS:2014/910/EU Electronic signatures"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - law
-  matrix:
-    - checker
-    - law
-  backlinks:
-    - checker
-    - law
 signatures:
-  computationUuid: "c722465d-bc19-8f7f-9419-c0d15af1575f"
+  computationUuid: "df9ebede-7061-8bc2-91cc-21c895d52894"
   stages:
     - stage: path
       stageUuid: "2d57c044-1d4f-8c3e-bcbb-12dcb0f8017f"
@@ -60,11 +42,11 @@ signatures:
     - stage: links
       stageUuid: "6399e19d-b877-83e7-84c1-77a13b13b562"
     - stage: horo
-      stageUuid: "796f5263-58de-8361-9b22-68a8efaf45bf"
+      stageUuid: "a4bcd710-8ff4-89f8-a519-69141bb2a150"
     - stage: seal
       stageUuid: "0a281f98-f340-82d8-9580-503a3999484c"
     - stage: uuid
-      stageUuid: "f2173523-aad2-8982-b323-ee53f5ff1489"
+      stageUuid: "945e91fc-c69f-893f-9ee1-dda9deb3297c"
 version: 2
 ---
 # Period-End Closing Standard

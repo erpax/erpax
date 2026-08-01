@@ -2,38 +2,14 @@
 name: carriers
 description: "Use when managing shipping or freight carrier master data — DHL, UPS, FedEx, postal, maritime, air-cargo — with per-tenant accounts, INCOTERMS-tagged service levels, hazmat flags, API credentials references, and effective-date lifecycle. The carrier master that normalises free-text carrier strings in shipments."
 atomPath: carriers
-coordinate: "carriers · 2/share · 8b69d5cf"
-contentUuid: "60de2eec-d46c-501e-87f8-05f2bf56a61c"
-diamondUuid: "7fe2d0c0-2424-83dd-b04f-0c7ad61f66ec"
-uuid: "8b69d5cf-ad05-8be9-9f97-08aaa108117b"
-horo: 2
-bonds:
-  in:
-    - access
-    - api
-    - events
-    - fields
-    - hooks
-    - identity
-    - law
-    - pickup
-    - standard
-    - trading
-  out:
-    - access
-    - api
-    - events
-    - fields
-    - hooks
-    - identity
-    - law
-    - pickup
-    - standard
-    - trading
+coordinate: "carriers · 4/weave · bbf7db77"
+contentUuid: "3ee0d9ec-7f5c-58cb-845b-de20ad6cda8c"
+diamondUuid: "43eeaeec-cce5-8ad5-807c-f1f7a3aba907"
+uuid: "bbf7db77-056b-8220-afe3-48a6b0509187"
+horo: 4
 typography:
   partition: carriers
-  bondDegree: 30
-  neighbors: []
+  bondDegree: 28
 standards:
   - "EU-Taxonomy-2020/852"
   - "IATA DGR dangerous-goods-regulations"
@@ -47,38 +23,8 @@ standards:
   - "UPU-S42"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - fields
-    - hooks
-    - identity
-    - law
-    - standard
-  matrix:
-    - access
-    - api
-    - events
-    - fields
-    - hooks
-    - identity
-    - law
-    - pickup
-    - standard
-    - trading
-  backlinks:
-    - access
-    - api
-    - events
-    - fields
-    - hooks
-    - identity
-    - law
-    - pickup
-    - standard
-    - trading
 signatures:
-  computationUuid: "56801833-e0eb-8ddb-beaf-18ffef2db251"
+  computationUuid: "5c498d23-eed6-80f8-99c0-27d021241c03"
   stages:
     - stage: path
       stageUuid: "7308a306-7dcc-8c72-9d4c-fe5462ab0bbe"
@@ -89,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "8d74b8d1-50c2-849d-81a5-e40b720d45ae"
     - stage: horo
-      stageUuid: "00e557f4-4e43-8ad4-8ed7-3947e67b4d17"
+      stageUuid: "ae3db9c5-c1c7-87c9-a863-81090f423380"
     - stage: seal
       stageUuid: "a09653a1-5898-8d8b-bb67-3d529e2ad5b8"
     - stage: uuid
-      stageUuid: "de26526a-61c0-8d54-bc28-5f213f310bb3"
+      stageUuid: "99878a1e-2d71-8f52-842c-6a81b020c910"
 version: 2
 ---
 # carriers

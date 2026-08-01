@@ -2,57 +2,19 @@
 name: transfer
 description: "Use when reasoning about transfer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: transfer
-coordinate: transfer · 2/share · 6bebf7d4
-contentUuid: "efb31f49-08ea-5b15-8c38-53b8690574d7"
-diamondUuid: "783f01b3-8b93-8224-a4ba-b9042c11762a"
-uuid: "6bebf7d4-7dde-887d-8a2a-fb8a93ee08f0"
-horo: 2
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - money
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - money
-    - sti
+coordinate: "transfer · 7/descent · d4244995"
+contentUuid: "9d30bc24-c651-5149-8104-75e530421592"
+diamondUuid: "5636501d-7c69-84d1-83df-86dbd396de19"
+uuid: "d4244995-9917-8efc-8ec9-371b2d5d57f0"
+horo: 7
 typography:
   partition: transfer
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - money
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - money
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - money
-    - sti
 signatures:
-  computationUuid: "aaf2d40a-ed2f-8db9-8fbe-86147eaf0c66"
+  computationUuid: "c17361ff-ca0e-8579-96ff-f5e06ef868f6"
   stages:
     - stage: path
       stageUuid: "0e7d17aa-9e1e-8e9a-a77c-a1f0591f6205"
@@ -63,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "156f3ed2-b82e-85cc-b097-79f82d9f3196"
     - stage: horo
-      stageUuid: "cf584574-c8f6-8123-b124-a3e93df9f01e"
+      stageUuid: "2f61b87a-1416-8fd5-9522-2b4bd7640dec"
     - stage: seal
-      stageUuid: "780856c6-15f7-81f4-8c52-b6f2177a2412"
+      stageUuid: "e78c662e-6bac-8ab4-b014-466fccc54b72"
     - stage: uuid
-      stageUuid: "812e8f9e-53d1-8980-81d5-fc91c284b3c5"
+      stageUuid: "14f5e022-73a4-8daf-99d6-3c0ab06ef33e"
 version: 2
 ---
 # transfer

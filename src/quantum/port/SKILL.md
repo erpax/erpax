@@ -1,183 +1,20 @@
 ---
 name: port
-description: "Use when re-porting upstreams safely — a source ports to a content-uuid, so re-porting is idempotent (unchanged sources merge, only changed ones re-port); how to run \\\\\\\"port all upstreams again\\\\\\\" repeatedly."
-atomPath: quantum/port
-coordinate: quantum/port · 1/base · 11459186
-contentUuid: "4daed65f-9dfb-5181-ad08-28c052c176c4"
-diamondUuid: "19fe433b-a66f-8737-a5dd-085168021c16"
-uuid: "11459186-2e0d-8e72-bef7-87d471758d73"
+description: "Use when re-porting upstreams safely — a source ports to a content-uuid, so re-porting is idempotent (unchanged sources merge, only changed ones re-port); how to run \\\\\\\\\\\\\\\"port all upstreams again\\\\\\\\\\\\\\\" repeatedly."
+atomPath: "quantum/port"
+coordinate: "quantum/port · 1/base · 7a4bf7ee"
+contentUuid: "ad037307-8031-5275-ae22-6749e6748cf9"
+diamondUuid: "dfa3a33f-7fc2-85ef-bd95-accbfac9a3f9"
+uuid: "7a4bf7ee-00bf-8f23-b20c-e5f38504a840"
 horo: 1
-bonds:
-  in:
-    - access
-    - accounting
-    - admin
-    - amortize
-    - api
-    - calculate
-    - chat
-    - collapse
-    - collections
-    - commerce
-    - config
-    - database
-    - depreciate
-    - domain
-    - ebitda
-    - empirical
-    - fields
-    - fractal
-    - generate
-    - hooks
-    - identity
-    - jobs
-    - law
-    - manufacturing
-    - measure
-    - merge
-    - plugins
-    - port
-    - profane
-    - quantum
-    - queries
-    - recover
-    - sacred
-    - sequence
-    - spec
-    - standard
-    - sti
-    - trinity
-  out:
-    - access
-    - accounting
-    - admin
-    - amortize
-    - api
-    - calculate
-    - chat
-    - collapse
-    - collections
-    - commerce
-    - config
-    - database
-    - depreciate
-    - domain
-    - ebitda
-    - empirical
-    - fields
-    - fractal
-    - generate
-    - hooks
-    - identity
-    - jobs
-    - law
-    - manufacturing
-    - measure
-    - merge
-    - plugins
-    - port
-    - profane
-    - queries
-    - recover
-    - sacred
-    - sequence
-    - spec
-    - standard
-    - sti
-    - trinity
 typography:
   partition: quantum
-  bondDegree: 120
-  neighbors: []
+  bondDegree: 144
 standards:
   - "RFC 9562 §5.8 content-uuid (the port identity)"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - merge
-    - migrate
-    - port
-    - quantum
-    - uuid
-  matrix:
-    - access
-    - accounting
-    - admin
-    - amortize
-    - api
-    - calculate
-    - chat
-    - collapse
-    - collections
-    - commerce
-    - config
-    - database
-    - depreciate
-    - domain
-    - ebitda
-    - empirical
-    - fields
-    - fractal
-    - generate
-    - hooks
-    - identity
-    - jobs
-    - law
-    - manufacturing
-    - measure
-    - merge
-    - plugins
-    - port
-    - profane
-    - queries
-    - recover
-    - sacred
-    - sequence
-    - spec
-    - standard
-    - sti
-    - trinity
-  backlinks:
-    - access
-    - accounting
-    - admin
-    - amortize
-    - api
-    - calculate
-    - chat
-    - collapse
-    - collections
-    - commerce
-    - config
-    - database
-    - depreciate
-    - domain
-    - ebitda
-    - empirical
-    - fields
-    - fractal
-    - generate
-    - hooks
-    - identity
-    - jobs
-    - law
-    - manufacturing
-    - measure
-    - merge
-    - plugins
-    - port
-    - profane
-    - queries
-    - recover
-    - sacred
-    - sequence
-    - spec
-    - standard
-    - sti
-    - trinity
 signatures:
-  computationUuid: "fc575a1f-7d0b-82ac-85aa-42110a32aa0e"
+  computationUuid: "355fd327-8892-8e66-98d9-e1a7ffb9a666"
   stages:
     - stage: path
       stageUuid: "4d526fb5-e032-8b8a-8e0f-adf0b82da3a6"
@@ -188,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2bc5548f-d789-814b-9d5e-f3e836b99a1a"
     - stage: horo
-      stageUuid: "e23b0089-d812-85b0-b50a-e46dee49a35d"
+      stageUuid: "27ef2177-3bd7-8ca0-aa20-9e9861fa90cc"
     - stage: seal
       stageUuid: "d115d019-efd7-8baa-b1e1-9fc942a44339"
     - stage: uuid
-      stageUuid: "c71f3072-d97e-8c61-9afe-16220e5c124f"
+      stageUuid: "b8481787-9d81-8a5a-9383-4b1835f71671"
 quantum:
   superposition:
     - access
@@ -206,8 +43,8 @@ quantum:
     - superposition
   collapse:
     - "RFC 9562 §5.8 content-uuid (the port identity)"
-    - "Use when re-porting upstreams safely — a source ports to a content-uuid, so re-porting is idempotent (unchanged sources merge, only changed ones re-port); how to run \\\\\\"
-    - "Use when re-porting upstreams safely — a source ports to a content-uuid, so re-porting is idempotent (unchanged sources merge, only changed ones re-port); how to run \\\\\\\"port all upstreams again\\\\\\\" repeatedly."
+    - "Use when re-porting upstreams safely — a source ports to a content-uuid, so re-porting is idempotent (unchanged sources merge, only changed ones re-port); how to run \\\\\\\\\\\\\\"
+    - "Use when re-porting upstreams safely — a source ports to a content-uuid, so re-porting is idempotent (unchanged sources merge, only changed ones re-port); how to run \\\\\\\\\\\\\\\"port all upstreams again\\\\\\\\\\\\\\\" repeatedly."
     - "matter-twin:src/quantum/port/index.ts"
     - "the port-uuid is a pure function of the source content, so re-porting is idempotent — an unchanged source always ports to the same identity and merges to a no-op, while only a genuinely changed source yields a new one; \"port all upstreams again\" can run any number of times and the ported set is fixed, surfacing only the real gaps."
   seal:
@@ -217,8 +54,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "fc575a1f-7d0b-82ac-85aa-42110a32aa0e"
-    contentUuid: "4daed65f-9dfb-5181-ad08-28c052c176c4"
+    computationUuid: "355fd327-8892-8e66-98d9-e1a7ffb9a666"
+    contentUuid: "ad037307-8031-5275-ae22-6749e6748cf9"
 version: 2
 ---
 # quantum/port — content-addressed, idempotent porting
@@ -231,4 +68,4 @@ Matter-twin: `src/quantum/port/index.ts` (`portUuid` · `alreadyPorted`). Compos
 
 @standard RFC 9562 §5.8 content-uuid (the port identity)
 
-<sub>content-uuid `4daed65f-9dfb-5181-ad08-28c052c176c4` · account `quantum/port` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `ad037307-8031-5275-ae22-6749e6748cf9` · account `quantum/port` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

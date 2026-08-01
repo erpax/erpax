@@ -2,82 +2,19 @@
 name: posting
 description: "Use when reasoning about posting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: posting
-coordinate: posting · 2/share · 35cc38e3
-contentUuid: "f7ddbe28-90c4-5d54-93ae-84af9d3caf9d"
-diamondUuid: "23a66f0e-d68a-8939-a9cc-8b33791ae38e"
-uuid: "35cc38e3-c0c1-8190-8420-0657dcdca0b8"
-horo: 2
-bonds:
-  in:
-    - blog
-    - collapse
-    - discussion
-    - forum
-    - job
-    - law
-    - live
-    - media
-    - merge
-    - social
-    - sti
-  out:
-    - blog
-    - collapse
-    - discussion
-    - forum
-    - job
-    - law
-    - live
-    - media
-    - merge
-    - social
-    - sti
+coordinate: "posting · 4/weave · f814e034"
+contentUuid: "ed612f73-8d17-53b9-b295-cf63642be16c"
+diamondUuid: "78439811-e1e5-8d16-8d8f-3ae654aa3cfd"
+uuid: "f814e034-5282-8d78-85a7-2f4efe099f4c"
+horo: 4
 typography:
   partition: posting
-  bondDegree: 0
-  neighbors: []
+  bondDegree: 42
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - blog
-    - collapse
-    - discussion
-    - forum
-    - job
-    - law
-    - live
-    - media
-    - merge
-    - social
-    - sti
-  matrix:
-    - blog
-    - collapse
-    - discussion
-    - forum
-    - job
-    - law
-    - live
-    - media
-    - merge
-    - social
-    - sti
-  backlinks:
-    - blog
-    - collapse
-    - discussion
-    - forum
-    - job
-    - law
-    - live
-    - media
-    - merge
-    - social
-    - sti
 signatures:
-  computationUuid: "e51e2f9f-ceb9-8628-bfb8-8df22ce50829"
+  computationUuid: "d1603d15-bb05-89d0-91d9-8f3713c1fbfe"
   stages:
     - stage: path
       stageUuid: "fb5148b0-b9a5-8721-9613-144179f6f72f"
@@ -88,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2f9df571-b77b-8b87-8928-37444d0e07e5"
     - stage: horo
-      stageUuid: "5c08a3ed-8ba1-8f46-b9ea-cf062d1029c3"
+      stageUuid: "c8269ac7-aabd-8780-9109-a051cd315a74"
     - stage: seal
-      stageUuid: "9f318100-df20-806d-8d69-58a935d95fd2"
+      stageUuid: "f8e06102-7556-87f1-809d-b4c72f3c0360"
     - stage: uuid
-      stageUuid: "4df6ff6d-d894-8b4c-a221-bcf196957c4f"
+      stageUuid: "ef5fb82b-f72e-84e2-a058-daa8d4e88083"
 version: 2
 ---
 # posting

@@ -1,53 +1,35 @@
 ---
 name: dentist
 description: Use when reasoning about dentist — A dentist.
-atomPath: vocabulary/dentist
-coordinate: dentist · 1/base · 11d4eca6
-contentUuid: "d5b74bc1-7eb1-5b3d-bcd5-04e485e9432b"
-diamondUuid: "b62463e6-273c-8253-9d8b-f4ad2f4261aa"
-uuid: "11d4eca6-a58c-8de6-8a2d-455908eabdb7"
-horo: 1
-bonds:
-  in:
-    - law
-    - person
-  out:
-    - law
-    - person
+atomPath: "vocabulary/dentist"
+coordinate: "vocabulary/dentist · 4/weave · 5e0d83af"
+contentUuid: "4c52d41d-8c5a-5d4a-aa4d-9b00080fa028"
+diamondUuid: "bbf70ec5-34cf-89a4-9063-49083e74cebc"
+uuid: "5e0d83af-cb1c-81ae-92bc-0ba20c4c8d6b"
+horo: 4
 typography:
-  partition: dentist
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - person
-  matrix:
-    - law
-    - person
-  backlinks:
-    - law
-    - person
 signatures:
-  computationUuid: "25642379-0425-8369-b353-733c25f2f0fd"
+  computationUuid: "6f6e3e06-6356-80c2-ab59-96dafb6e7ab4"
   stages:
     - stage: path
-      stageUuid: "4a0e30a3-20fe-81e1-a7d1-f021d893c5c3"
+      stageUuid: "8918cd5a-8d24-8616-9a11-c244191017e9"
     - stage: trinity
-      stageUuid: "cb220826-c7cb-8f44-9ef7-5ccdf43b590c"
+      stageUuid: "3e29a95a-a570-8721-96af-2bff69746f6d"
     - stage: boundary
-      stageUuid: "263020ee-8f78-8702-a584-aab3d3a578c9"
+      stageUuid: "8af9f9d7-c3f1-8e44-adec-d6b4c0320474"
     - stage: links
-      stageUuid: "d0fee25d-e4f2-8b1e-99fc-7df7b2124225"
+      stageUuid: "10312201-0b2d-8480-a844-17fdbb7b502e"
     - stage: horo
-      stageUuid: "9f61283b-5e7e-8d1f-ad94-902222168b23"
+      stageUuid: "fcbe1c74-41df-8af8-bbdd-9986080624d1"
     - stage: seal
-      stageUuid: "9e4db475-73d2-8c6a-8ecf-ff13cf90791e"
+      stageUuid: "148e281e-ebad-8394-ab55-7827c5bf7f25"
     - stage: uuid
-      stageUuid: "74cf1dca-2377-8258-8492-ba2b7677b2a7"
+      stageUuid: "f97985b2-f9b2-898b-981d-8361c2a19b14"
 version: 2
 ---
 # dentist

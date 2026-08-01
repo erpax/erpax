@@ -1,53 +1,35 @@
 ---
 name: children
 description: Use when reasoning about children — A child of the person.
-atomPath: vocabulary/children
-coordinate: children · 7/descent · bce6cbcd
-contentUuid: "f02e911c-f409-5a16-8b74-1b45ad4c16a2"
-diamondUuid: "1f32d637-3dc5-8071-b9d2-ec6c4753a64a"
-uuid: "bce6cbcd-44bf-8034-a88c-b870172109c2"
-horo: 7
-bonds:
-  in:
-    - law
-    - num
-  out:
-    - law
-    - num
+atomPath: "vocabulary/children"
+coordinate: "vocabulary/children · 1/base · 67b9fe5c"
+contentUuid: "30ae839e-5613-5743-af16-8da7dc73c0a3"
+diamondUuid: "9af7917a-7da1-8f0a-bd95-46efc3bfa9ee"
+uuid: "67b9fe5c-e8e9-8070-bd1f-b39305c934a7"
+horo: 1
 typography:
-  partition: children
+  partition: vocabulary
   bondDegree: 7
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - num
-  matrix:
-    - law
-    - num
-  backlinks:
-    - law
-    - num
 signatures:
-  computationUuid: "4e08e183-3e75-8975-b8f1-091c4647c837"
+  computationUuid: "2d2dfcd8-c282-8f12-a1d8-c5951d5252c1"
   stages:
     - stage: path
-      stageUuid: "d3cd6961-27b5-83f1-93db-1ecbb9e0831b"
+      stageUuid: "82636664-7091-846c-b992-551ec60ed419"
     - stage: trinity
-      stageUuid: "ba549d57-ba9e-84fe-a6e9-e3671f066bfc"
+      stageUuid: "7deb90d8-6369-8ab2-8713-c914783eed98"
     - stage: boundary
-      stageUuid: "7ed24ec7-debc-8995-92e9-9f135f808dde"
+      stageUuid: "b83cfb2e-8e0d-8a75-ab3e-fcb5dadf3fd6"
     - stage: links
-      stageUuid: "3d1fc4a4-002f-87dd-8056-709b3b91de71"
+      stageUuid: "f29913cc-9a17-8561-b556-4ebb93f058f0"
     - stage: horo
-      stageUuid: "961c2500-2980-824a-836c-b7e6e7d63b46"
+      stageUuid: "b27ed213-37e8-80b2-838a-25684dbe45b8"
     - stage: seal
-      stageUuid: "fa96970a-caf2-834a-86e0-a801b0c681da"
+      stageUuid: "ad5f9034-8c2d-8bd3-aa1e-318630bb5b99"
     - stage: uuid
-      stageUuid: "d7bb7493-335d-8dee-81d0-136b3fb0e485"
+      stageUuid: "272def06-fe3d-81ef-b42a-d5e471a33f9b"
 version: 2
 ---
 # children

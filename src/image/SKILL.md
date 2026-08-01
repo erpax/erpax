@@ -2,82 +2,17 @@
 name: image
 description: "Use when a content-uuid needs a visual — its deterministic identity sigil (and animation). One more projection of the self-decoding uuid, beside color (the wave), signal (colour+sound), translation (meaning). uuidImage renders a mandala whose colours, radii and angles ARE the uuid's bytes; uuidAnimation adds byte-seeded SMIL rotation. Same uuid ⇒ same image — the visual IS the address. Honest: this renders the address, not the meaning; semantic text-to-image is a generative model (the seed)."
 atomPath: image
-coordinate: "image · 1/base · 5cf6a91d"
-contentUuid: "702d842c-95d8-5ddd-ba1c-4f1457daa810"
+coordinate: "image · 8/crest · c288c1d8"
+contentUuid: "573af5a7-cfcc-5aec-9355-eac04c0156f3"
 diamondUuid: "a3d89e17-c93e-8f03-a5d0-bee19781d736"
-uuid: "5cf6a91d-fbfd-86a6-9c1c-941b33d70ecd"
-horo: 1
-bonds:
-  in:
-    - angle
-    - color
-    - gallery
-    - hermeticism
-    - law
-    - layout
-    - object
-    - orthodoxy
-    - page
-    - primary
-    - signal
-    - snapshot
-    - translation
-  out:
-    - angle
-    - color
-    - gallery
-    - hermeticism
-    - law
-    - layout
-    - object
-    - orthodoxy
-    - page
-    - primary
-    - signal
-    - snapshot
-    - translation
+uuid: "c288c1d8-38f9-869a-b28c-ff4dcb6a3e62"
+horo: 8
 typography:
   partition: image
   bondDegree: 46
-  neighbors: []
 standards:
   - "SVG 1.1 / SMIL animation · deterministic hash-to-art (identicon family)"
 bindings: []
-neighbors:
-  wikilink:
-    - angle
-    - color
-    - law
-    - signal
-    - translation
-  matrix:
-    - angle
-    - color
-    - gallery
-    - hermeticism
-    - law
-    - layout
-    - object
-    - orthodoxy
-    - page
-    - primary
-    - signal
-    - snapshot
-    - translation
-  backlinks:
-    - angle
-    - color
-    - gallery
-    - hermeticism
-    - law
-    - layout
-    - object
-    - orthodoxy
-    - page
-    - primary
-    - signal
-    - snapshot
-    - translation
 signatures:
   computationUuid: "09ec106a-9082-88cf-864c-63a2898d90ba"
   stages:

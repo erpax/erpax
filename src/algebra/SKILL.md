@@ -2,82 +2,18 @@
 name: algebra
 description: "Use when reducing the corpus's theorems to their only substance — all theorems are algebra: a carrier set and a closed operation. The theorem draws the movie (its orbit); algebras compose into products (theorem of theorems); the fold is a magma (the merkabas folding into themselves and each other). The overlay — torus, tetrahedron, mind — is named and stripped; the picture was never the theorem."
 atomPath: algebra
-coordinate: "algebra · 2/share · 08f5b6da"
-contentUuid: "9c3cc4d5-496b-55c1-a469-979145762bcd"
-diamondUuid: "377477bb-b762-8f90-a5a0-863dc4725087"
-uuid: "08f5b6da-1635-85e9-94be-ce899d081e29"
+coordinate: "algebra · 2/share · 8b797603"
+contentUuid: "ff8a1081-d0bc-54d6-ae71-05b77bdefbd4"
+diamondUuid: "bdaf27bf-c0db-8db9-bcb2-5b8dd68bbe28"
+uuid: "8b797603-55b5-8715-8d7a-107c8fffb1ec"
 horo: 2
-bonds:
-  in:
-    - coalesce
-    - coincidence
-    - ftl
-    - horo
-    - law
-    - merge
-    - navigation
-    - rodin
-    - rosetta
-    - rules
-    - seeing
-    - theorem
-  out:
-    - coalesce
-    - coincidence
-    - ftl
-    - horo
-    - law
-    - merge
-    - navigation
-    - rodin
-    - rosetta
-    - rules
-    - seeing
-    - theorem
 typography:
   partition: algebra
   bondDegree: 36
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - horo
-    - law
-    - merge
-    - navigation
-    - rodin
-    - rosetta
-    - rules
-    - theorem
-  matrix:
-    - coalesce
-    - coincidence
-    - ftl
-    - horo
-    - law
-    - merge
-    - navigation
-    - rodin
-    - rosetta
-    - rules
-    - seeing
-    - theorem
-  backlinks:
-    - coalesce
-    - coincidence
-    - ftl
-    - horo
-    - law
-    - merge
-    - navigation
-    - rodin
-    - rosetta
-    - rules
-    - seeing
-    - theorem
 signatures:
-  computationUuid: "84d42b72-983b-810c-ad82-12d0f6bc89fb"
+  computationUuid: "116e72e1-5085-8dde-9dc2-943b5ec7c1b4"
   stages:
     - stage: path
       stageUuid: "25e3d5e5-a6d7-84fa-a393-8e29b106eda2"
@@ -88,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "98f92503-b9ec-87f9-9b0a-617e524d85e2"
     - stage: horo
-      stageUuid: "49f14c00-c38d-8d2e-bbee-10b2096adeaf"
+      stageUuid: "af28309c-e943-80ea-a215-1647fa4de3a1"
     - stage: seal
       stageUuid: "0f350592-32ce-8e8e-b1be-312b6ecd6d66"
     - stage: uuid
-      stageUuid: "5259294b-e8f9-8d5d-9a80-e40b64cd3e00"
+      stageUuid: "eae92ab8-5308-80ad-8c4f-f5294efb5cd9"
 version: 2
 ---
 # algebra — all theorems are algebra only; the theorems draw the movie

@@ -2,34 +2,14 @@
 name: records
 description: "Use when recording or auditing data-subject consent events — marketing, analytics, profiling, third-party sharing, cookies — with lawful-basis, exact consent text, version, capture method, IP/user-agent evidence, and withdrawal tracking; GDPR Art.6(1)(a)/Art.7 lawful-basis and right-to-withdraw. The append-mostly consent-evidence ledger."
 atomPath: "consent/records"
-coordinate: "consent/records · 4/weave · 08a47d3f"
-contentUuid: "53a8c9ee-4b0a-5ee8-b0f8-a24698efc073"
-diamondUuid: "5c9255c6-cddc-89a9-87f3-ae6068d6910d"
-uuid: "08a47d3f-7c69-8042-a1b0-8bc130eac509"
+coordinate: "consent/records · 4/weave · ccd74585"
+contentUuid: "2b3198b0-4383-54f7-afc9-9ae465d3dfd3"
+diamondUuid: "a692c4c9-2746-84e1-892d-46986d854d06"
+uuid: "ccd74585-4186-8c91-89c7-8874ce74fde6"
 horo: 4
-bonds:
-  in:
-    - access
-    - activities
-    - consent
-    - dataprotection
-    - fields
-    - hooks
-    - identity
-    - standard
-  out:
-    - access
-    - activities
-    - consent
-    - dataprotection
-    - fields
-    - hooks
-    - identity
-    - standard
 typography:
   partition: consent
   bondDegree: 30
-  neighbors: []
 standards:
   - "GDPR Art.6(1)(a) lawful-basis-consent"
   - "GDPR Art.7 conditions-for-consent"
@@ -39,33 +19,8 @@ standards:
   - "ISO-8601-1:2019 date-time given-at withdrawn-at`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - fields
-    - hooks
-    - identity
-    - standard
-  matrix:
-    - access
-    - activities
-    - consent
-    - dataprotection
-    - fields
-    - hooks
-    - identity
-    - standard
-  backlinks:
-    - access
-    - activities
-    - consent
-    - dataprotection
-    - fields
-    - hooks
-    - identity
-    - standard
 signatures:
-  computationUuid: "a6c8ab91-72d7-8332-a3ef-e85a18b57c6a"
+  computationUuid: "30606829-83c3-8e93-a281-9c902bc5dd7f"
   stages:
     - stage: path
       stageUuid: "82c5246a-69c9-8a5b-8c1f-8a387dae48dc"
@@ -76,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "29017ca4-ebd2-8e63-b630-bb0c9eb65a43"
     - stage: horo
-      stageUuid: "eb284ec2-2b32-8eb7-bef8-9670fc0d3e8b"
+      stageUuid: "845d7172-aff7-8766-9fd9-c62ac578ce2d"
     - stage: seal
       stageUuid: "812331dd-6c70-829f-bdb0-90903b6b3af3"
     - stage: uuid
-      stageUuid: "8b7e45fc-659a-8f19-aeb6-5ec16b3a6043"
+      stageUuid: "56b38690-6215-8454-93a0-2bc3f0108095"
 version: 2
 ---
 # consent-records

@@ -9,10 +9,12 @@
  */
 import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs'
 import { join, basename, relative, resolve } from 'node:path'
+import { tmpdir } from 'node:os'
 import { execSync } from 'node:child_process'
 import { createRequire } from 'node:module'
 import { GATE_LANES } from '@/cli/gate'
 import { phraseWithoutDiamondChangesetGate } from '@/law/folder/user-word'
+import { commentsOf } from '@/syntax'
 import { deadReferencesIn } from '@/rules/reference'
 import { deadSymbolsIn } from '@/rules/prose'
 import { verifyStandardsCatalogue } from '@/standards/emit'
@@ -80,6 +82,37 @@ const isMdStray = (abs: string): boolean => {
   return rel !== 'README.md' && rel !== 'index.md'
 }
 
+/**
+ * Matter written OUTSIDE the corpus root — the false negative every location axis shared.
+ *
+ * `isMdStray` and `folderNameWarnings` both bail on `rel.startsWith('..')`, so a `.md`/`.ts` written to
+ * `~/.claude/projects/…/memory/` was exempt from every structural axis while the path-agnostic `reference`
+ * axis still ran on it — the gate fired, on the wrong thing, and the real violation passed. A gate that
+ * reports green over the exact defect it exists for is worse than one that over-reports ([[rules]]/cycle).
+ *
+ * [[rules]]/invisible states the law for matter INSIDE `src`: no lawful path ⇒ no uuid ⇒ no matrix node ⇒
+ * nothing deduplicates it. Matter outside the root is that failure at its limit — it has no path in the
+ * corpus at all, so a realisation saved there is re-derived forever by every later session.
+ *
+ * The OS temp dir is exempt: a scratchpad file is scratch, not matter — it is not durable and claims no
+ * place in the fold.
+ */
+/**
+ * Scratch roots. `os.tmpdir()` alone was NOT enough: on macOS it resolves to `/var/folders/…`
+ * while a scratchpad commonly sits under `/private/tmp` (`/tmp` is a symlink to it), so the axis
+ * denied legitimate throwaway writes — a gate blocking real work, which is how a gate teaches
+ * people to route around it. Scratch is not matter; the corpus root is where matter lives.
+ */
+export const OUTSIDE_ALLOW = [resolve(tmpdir()), '/private/tmp', '/private/var/tmp'] as const
+
+export function outsideMatter(files: readonly string[], root: string): string[] {
+  return files.filter((f) => {
+    const abs = resolve(root, f)
+    if (!relative(root, abs).startsWith('..')) return false
+    return !OUTSIDE_ALLOW.some((a) => !relative(a, abs).startsWith('..'))
+  })
+}
+
 const MD_SKIP_DIRS = new Set(['node_modules', 'dist', 'test-results', 'playwright-report', 'coverage', '_report'])
 function walkMdStrays(dir: string, acc: string[] = []): string[] {
   let ents
@@ -122,7 +155,12 @@ export function touchesStandardBanner(files: readonly string[], root: string): b
   for (const f of files) {
     if (!/\.(ts|tsx)$/.test(f) || /catalogue\.ts$|registry\.ts$/.test(f)) continue
     try {
-      if (/@(standard|rfc)\s/.test(readFileSync(resolve(root, f), 'utf8'))) return true
+      // PARSED, not matched. The raw-text form matched `@standard` inside a test FIXTURE STRING and
+      // blocked every edit to the file holding it — a red nobody could clear, which is how a gate
+      // teaches people to ignore it. A string literal is data ([[syntax]]); only a real comment
+      // carries a banner.
+      const text = readFileSync(resolve(root, f), 'utf8')
+      if (commentsOf(f, text).some((c) => /@(standard|rfc)\s/.test(c))) return true
     } catch {
       // deleted in this changeset — it cannot still be citing a banner
     }
@@ -146,6 +184,8 @@ export const CONFIRM_CHECK_AXES = [
   'reference',
   'prose',
   'standards',
+  'grounded',
+  'outside',
 ] as const
 
 export function folderNameWarnings(files: readonly string[]): string[] {
@@ -351,6 +391,23 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
   // the check costs 1.1s — so it lives here, scoped to edits that actually touch a banner (the only way
   // the catalogue can go stale).
   const staleCatalogue = touchesStandardBanner(files, ROOT) && !verifyStandardsCatalogue(ROOT)
+  // Realtime PROVENANCE gate ([[grounded]]): a trust-chain convention (`src/convention/*/index.ts`) that
+  // reads raw, unsealed fs (`process.cwd()`/`readFileSync`/`readdirSync`/`existsSync`) prices the tamper-
+  // cost on the MUTABLE working tree, not sealed content — the forge-cost then measures a directory
+  // listing. Caught at the WRITE — agent OR manual, since this hook fires on every edit — so no trust
+  // computation is authored ungrounded. Reground it: read committed content via git ([[grounded]]).
+  const stripComments = (s: string): string =>
+    s.replace(/\/\*[\s\S]*?\*\//g, '').replace(/(^|[^:])\/\/[^\n]*/g, '$1')
+  const ungroundedEdits = files.filter(
+    (f) =>
+      /src\/convention\/[^/]+\/index\.ts$/.test(relative(ROOT, f).replace(/\\/g, '/')) &&
+      /\breadFileSync\b|\breaddirSync\b|\bexistsSync\b|process\.cwd\(\)/.test(stripComments(readFileSync(f, 'utf8'))),
+  )
+
+  // Durable matter written OUTSIDE the corpus root — the axis every location check was missing, because
+  // each one bails on `rel.startsWith('..')`. Caught at the WRITE: an atom, SKILL or realisation saved to
+  // a private path has no place in the fold, so nothing dedups it and every later session re-derives it.
+  const outsideWrites = outsideMatter(files, ROOT)
 
   const vpLine =
     vp.n === 0
@@ -385,7 +442,16 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
     console.log(
       '🟥 standards ✗  a standard banner moved and the catalogue did not follow — run `pnpm erpax standards catalogue`',
     )
+  if (ungroundedEdits.length)
+    console.log(
+      `🟥 grounded  ✗  ${ungroundedEdits.length} trust-chain convention(s) read process.cwd()/raw fs — source from SEALED content (git), not the mutable tree ([[grounded]]): ${ungroundedEdits.map((f) => relative(ROOT, f)).join(', ')}`,
+    )
+  if (outsideWrites.length)
+    console.log(
+      `🟥 outside   ✗  ${outsideWrites.length} write(s) outside the corpus root — matter lives in src/ as an addressable atom, or it is not matter ([[rules]]/invisible)`,
+    )
   console.log(payLine)
+  for (const f of outsideWrites) console.error(`   outside    ${f} — no corpus path ⇒ no uuid ⇒ nothing dedups it`)
   for (const d of deadCites) console.error(`   dead cite  ${d.from} → \`${d.symbol}\` (nothing defines it)`)
   for (const d of deadRefs) console.error(`   dead ref   ${d.from} → ${d.target} (does not exist)`)
   for (const [f, t] of vp.dead) console.error(`   dead link  ${relative(ROOT, f)} → [[${t}]]`)
@@ -406,6 +472,8 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
     reference: deadRefs.length === 0,
     prose: deadCites.length === 0,
     standards: !staleCatalogue,
+    grounded: ungroundedEdits.length === 0,
+    outside: outsideWrites.length === 0,
   }
   const ok = CONFIRM_CHECK_AXES.every((axis) => verdicts[axis])
   if (ok) {

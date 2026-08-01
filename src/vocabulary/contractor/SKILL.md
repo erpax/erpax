@@ -1,73 +1,35 @@
 ---
 name: contractor
 description: "Use when reasoning about contractor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/contractor
-coordinate: contractor · 4/weave · 216ef2fe
-contentUuid: "0056cc8f-7d66-5b4d-b16a-8408daefdfdb"
-diamondUuid: "c264b795-bc26-8920-ae2f-601b062df409"
-uuid: "216ef2fe-d56b-8457-91be-c9b6edcd110b"
+atomPath: "vocabulary/contractor"
+coordinate: "vocabulary/contractor · 4/weave · 14f9e12b"
+contentUuid: "783659a2-ee19-59b0-8cc9-09065eff77cf"
+diamondUuid: "14b3efae-7590-8ddc-879f-6533b1e43e21"
+uuid: "14f9e12b-e930-869a-95a8-44cebae830a1"
 horo: 4
-bonds:
-  in:
-    - collapse
-    - general
-    - law
-    - merge
-    - roofing
-    - sti
-  out:
-    - collapse
-    - general
-    - law
-    - merge
-    - roofing
-    - sti
 typography:
-  partition: contractor
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - general
-    - law
-    - merge
-    - roofing
-    - sti
-  matrix:
-    - collapse
-    - general
-    - law
-    - merge
-    - roofing
-    - sti
-  backlinks:
-    - collapse
-    - general
-    - law
-    - merge
-    - roofing
-    - sti
 signatures:
-  computationUuid: "3e7b6e7e-1d1a-8e4b-869e-769b9f8265f1"
+  computationUuid: "eb0a0923-cd75-8b98-a73b-d443afbc1b27"
   stages:
     - stage: path
-      stageUuid: "be0d54a2-9965-8dc3-b6ad-b22c31c2902d"
+      stageUuid: "d3c1b383-1699-8464-8c16-4780e5fe1f0c"
     - stage: trinity
-      stageUuid: "4baeb04d-362c-8928-9aad-4e4199c1b0eb"
+      stageUuid: "5ca6c9f7-957b-8d23-80a2-92856278cd48"
     - stage: boundary
-      stageUuid: "bcc3e358-52b2-8ee1-a180-1c3f576b29e4"
+      stageUuid: "9ad87e02-ef40-8522-82dc-4c9ee4fab1bb"
     - stage: links
-      stageUuid: "b7aa0d6a-2ef1-824c-ae8c-15ff791d9921"
+      stageUuid: "e5b1192e-1b84-8361-b9e0-be46f4862712"
     - stage: horo
-      stageUuid: "c24c2938-3f71-8261-96b3-07d4ee8f0a26"
+      stageUuid: "f65eb106-1c7b-8685-a202-b56b67a1de3d"
     - stage: seal
-      stageUuid: "fe954a52-3b1d-8303-8d71-5b4a84e0b6be"
+      stageUuid: "f771f88f-bdb1-8fad-82cf-40c5c1fb2e84"
     - stage: uuid
-      stageUuid: "89eadb86-3327-8529-a4c6-0b56f20946e8"
+      stageUuid: "3c095fd8-5b23-8d29-a2ee-b71e8351ffc3"
 version: 2
 ---
 # contractor

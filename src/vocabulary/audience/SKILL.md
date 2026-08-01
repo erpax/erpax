@@ -1,88 +1,35 @@
 ---
 name: audience
 description: "Use when reasoning about audience — Intended audience for an item, i.e. the group for whom the item was created."
-atomPath: vocabulary/audience
-coordinate: audience · 8/crest · 02452d02
-contentUuid: "25b4d96e-232a-5f76-b830-a79e92ca043b"
-diamondUuid: "d0b6aaf0-ffa5-82fa-b0d8-9c4945142237"
-uuid: "02452d02-124c-802d-8c33-efe46d1151c7"
-horo: 8
-bonds:
-  in:
-    - business
-    - educational
-    - law
-    - medical
-    - parent
-    - people
-    - permit
-    - service
-    - type
-  out:
-    - business
-    - educational
-    - law
-    - medical
-    - parent
-    - people
-    - permit
-    - service
-    - type
+atomPath: "vocabulary/audience"
+coordinate: "vocabulary/audience · 2/share · 13dbe00e"
+contentUuid: "73f73018-3296-5367-8282-0aec5e1cd242"
+diamondUuid: "2c279354-b6e5-84d9-8775-3bde06c1a315"
+uuid: "13dbe00e-65da-87b9-9ef9-fcb1fe74fc14"
+horo: 2
 typography:
-  partition: audience
-  bondDegree: 34
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 45
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - business
-    - educational
-    - law
-    - medical
-    - parent
-    - people
-    - permit
-    - service
-    - type
-  matrix:
-    - business
-    - educational
-    - law
-    - medical
-    - parent
-    - people
-    - permit
-    - service
-    - type
-  backlinks:
-    - business
-    - educational
-    - law
-    - medical
-    - parent
-    - people
-    - permit
-    - service
-    - type
 signatures:
-  computationUuid: "dcd351bf-f707-896b-ab24-3fb88f76f376"
+  computationUuid: "8ec0c7b6-2f47-83cd-9da8-ec367b28d11a"
   stages:
     - stage: path
-      stageUuid: "64a99820-562c-873b-8cfc-dcdc3272609d"
+      stageUuid: "7460fac9-470c-846e-8561-b2c8161d4095"
     - stage: trinity
-      stageUuid: "77c45d02-2d35-843d-9d7f-e5692046212d"
+      stageUuid: "f549c66d-6b31-85d5-9e25-49f7f8aca713"
     - stage: boundary
-      stageUuid: "f25c150b-0559-8b80-825c-872779a38442"
+      stageUuid: "c3c53c97-d700-8008-a42e-f643cd4dba04"
     - stage: links
-      stageUuid: "d4d21507-12ac-8d04-92e4-440538a17df5"
+      stageUuid: "edde0fec-ae21-826c-9146-cda1a6ea355d"
     - stage: horo
-      stageUuid: "276f962f-53d5-8692-8d5f-1f13b0248ca0"
+      stageUuid: "e7f4ecd5-eb09-814d-bdc7-c17d428f1461"
     - stage: seal
-      stageUuid: "5047dca3-1f6a-85dd-bdda-2b535afc2e1b"
+      stageUuid: "91127c44-06ab-89e5-b97b-ffb77eda22b0"
     - stage: uuid
-      stageUuid: "7274d4a9-d504-8862-843c-81d635fe40b3"
+      stageUuid: "370ada7d-7996-86e4-864e-a34c8fc18ca7"
 version: 2
 ---
 # audience

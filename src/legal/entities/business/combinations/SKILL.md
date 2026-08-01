@@ -2,45 +2,14 @@
 name: combinations
 description: "Use when recording an acquisition — asset deal, share deal, reverse acquisition, or NCI step-up — including IFRS 3 §32 goodwill computation, purchase price allocation (PPA) by asset/liability category, and measurement-period tracking. The IFRS 3 acquirer-side M&A register."
 atomPath: "legal/entities/business/combinations"
-coordinate: "legal/entities/business/combinations · 8/crest · ccbabe7e"
-contentUuid: "416d5a17-452f-5b42-ae47-5b3d1b669799"
-diamondUuid: "16dffc92-3ba5-8510-b415-c0dc59621412"
-uuid: "ccbabe7e-359d-8975-829a-555976736b87"
+coordinate: "legal/entities/business/combinations · 8/crest · f33d1b35"
+contentUuid: "30a09f56-a872-5542-aff6-e2e33cad38ba"
+diamondUuid: "504298a5-58e4-8cf4-9c64-f454dee9efe2"
+uuid: "f33d1b35-148b-8488-89bc-042958180876"
 horo: 8
-bonds:
-  in:
-    - accounting
-    - assets
-    - attestations
-    - business
-    - classifications
-    - combination
-    - entities
-    - entries
-    - goodwill
-    - identity
-    - intangible
-    - law
-    - measurements
-    - proof
-  out:
-    - accounting
-    - assets
-    - attestations
-    - classifications
-    - combination
-    - entities
-    - entries
-    - goodwill
-    - identity
-    - intangible
-    - law
-    - measurements
-    - proof
 typography:
   partition: legal
-  bondDegree: 39
-  neighbors: []
+  bondDegree: 25
 standards:
   - "IFRS IFRS-10 §B86 consolidation"
   - "IFRS IFRS-10 §B86 consolidation`"
@@ -62,47 +31,8 @@ standards:
   - "US-GAAP ASC-805 business-combinations"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - assets
-    - attestations
-    - entities
-    - entries
-    - identity
-    - law
-    - measurements
-    - proof
-  matrix:
-    - accounting
-    - assets
-    - attestations
-    - classifications
-    - combination
-    - entities
-    - entries
-    - goodwill
-    - identity
-    - intangible
-    - law
-    - measurements
-    - proof
-  backlinks:
-    - accounting
-    - assets
-    - attestations
-    - classifications
-    - combination
-    - entities
-    - entries
-    - goodwill
-    - identity
-    - intangible
-    - law
-    - measurements
-    - proof
 signatures:
-  computationUuid: "1b96dfa3-11f5-8992-ac33-522eef46cb3e"
+  computationUuid: "758d97b1-5b79-85bd-9ac2-b37b81c85133"
   stages:
     - stage: path
       stageUuid: "b89a2af1-f66a-86c3-b0f0-36f36b52b4b6"
@@ -111,13 +41,13 @@ signatures:
     - stage: boundary
       stageUuid: "6b34a8c2-efe3-8088-8003-94e4fb6c202a"
     - stage: links
-      stageUuid: "292e16dd-5b28-80da-9fe8-8384515616a7"
+      stageUuid: "042ecd88-515e-86af-a016-edee19e22ac7"
     - stage: horo
-      stageUuid: "7757751f-acba-8726-834d-d361a97eb4fa"
+      stageUuid: "264c12a4-6b9f-8c58-937c-ca70df184195"
     - stage: seal
       stageUuid: "76548578-454b-8d86-92d9-ebdc54121322"
     - stage: uuid
-      stageUuid: "6af14b9b-5ba8-8586-9735-6973d0177816"
+      stageUuid: "6f3fe278-699d-8e73-8f89-58c79446fec9"
 version: 2
 ---
 # business-combinations

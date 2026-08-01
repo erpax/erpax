@@ -2,53 +2,21 @@
 name: sanctions
 description: "Use when screening a party against the EU consolidated financial sanctions list — the first REAL wired notary check. Resolves the current list through the OpenSanctions eu_fsf dataset index (authoritative source: the European Commission FSF endpoint, public token), normalises and matches the name, and returns clear vs escalate. A ProviderAdapter for notary/check; Worker-deployable; honest boundary — screening is a review signal not adjudication, data is CC-BY-NC, production ingests periodically."
 atomPath: "notary/check/sanctions"
-coordinate: "notary/check/sanctions · 1/base · c51f9e4e"
-contentUuid: "0dd7a3c6-b66a-50bd-bc1f-710004c8a7c7"
-diamondUuid: "65fc698a-f4d4-879e-a1a6-98a5c43ee5ed"
-uuid: "c51f9e4e-ebdc-8263-a771-6cc157576bba"
-horo: 1
-bonds:
-  in:
-    - check
-    - law
-    - merge
-    - notary
-    - source
-    - standards
-  out:
-    - law
-    - merge
-    - notary
-    - source
-    - standards
+coordinate: "notary/check/sanctions · 7/descent · 553b453e"
+contentUuid: "481b3d2d-5610-5c56-bf76-9a2c3dbe3342"
+diamondUuid: "64a201c5-6508-8ca7-a15d-60bea9e45091"
+uuid: "553b453e-f298-8870-a201-7ed74918a6c0"
+horo: 7
 typography:
   partition: notary
   bondDegree: 15
-  neighbors: []
 standards:
   - "AMLD5 (EU 2018/843) — sanctions / PEP screening within customer due diligence"
   - EU Consolidated Financial Sanctions List (CFSP) — the authoritative source
+  - "EU-2018/843"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - merge
-    - notary
-    - standards
-  matrix:
-    - law
-    - merge
-    - notary
-    - source
-    - standards
-  backlinks:
-    - law
-    - merge
-    - notary
-    - source
-    - standards
 signatures:
-  computationUuid: "f5c1565c-3b3e-884c-8a84-0e7414008e18"
+  computationUuid: "69070167-354a-81fd-a867-e549295096ff"
   stages:
     - stage: path
       stageUuid: "ba86f636-a147-8238-8cb5-84d0215d0d2a"
@@ -59,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "744c11e4-2244-8acf-9e41-9fc3b92560b5"
     - stage: horo
-      stageUuid: "2339bdc9-cfc1-870c-a31d-34ee9ee465e4"
+      stageUuid: "a95342b3-2695-8af0-ae0c-41af120b03ec"
     - stage: seal
       stageUuid: "4916a874-a20d-8bf8-badf-bb35bb30bf3a"
     - stage: uuid
-      stageUuid: "bcd580ff-a151-8a7f-b981-753292b9afc2"
+      stageUuid: "382bbba8-dca1-839c-aa92-012bd1212ede"
 version: 2
 ---
 # sanctions — real EU sanctions screening

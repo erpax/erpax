@@ -1,66 +1,34 @@
 ---
 name: batch
 description: "Use when processing data in bulk — batch ETL jobs, bulk inserts/updates/deletes, batch transaction semantics, atomicity across a batch, partial failure handling and retry strategies in batch operations."
-atomPath: vocabulary/batch
-coordinate: batch · 4/weave · a58f059f
-contentUuid: "26450340-715c-540c-8c28-1123763b933a"
-diamondUuid: "abcdd39b-6443-80d6-8c4a-5e57056b5db7"
-uuid: "a58f059f-2eeb-8ac7-a9f8-b6ae92c5c67c"
-horo: 4
-bonds:
-  in:
-    - ingest
-    - jobs
-    - reconcile
-    - run
-    - transaction
-  out:
-    - ingest
-    - jobs
-    - reconcile
-    - run
-    - transaction
+atomPath: "vocabulary/batch"
+coordinate: "vocabulary/batch · 2/share · 754a0082"
+contentUuid: "fd266501-fb94-512d-81d1-17b9f8d95461"
+diamondUuid: "07375b2a-bf79-8e21-86a2-a475f6c09080"
+uuid: "754a0082-673b-8936-8ef1-6111b4b2d42a"
+horo: 2
 typography:
-  partition: batch
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - ingest
-    - jobs
-    - reconcile
-    - transaction
-  matrix:
-    - ingest
-    - jobs
-    - reconcile
-    - run
-    - transaction
-  backlinks:
-    - ingest
-    - jobs
-    - reconcile
-    - run
-    - transaction
 signatures:
-  computationUuid: "9404412b-a75d-8828-9374-dc8ec8c16f4f"
+  computationUuid: "6f066ba8-4a89-8eef-9f5b-576ce09dcbd7"
   stages:
     - stage: path
-      stageUuid: "1d0997aa-67d4-8ade-a9b1-ddd452b1872f"
+      stageUuid: "0b412f95-bfbc-8cd6-b452-78e34dd331ad"
     - stage: trinity
-      stageUuid: "58adf082-d1a3-89a3-b374-b3313a196482"
+      stageUuid: "4ac8b64a-d494-8332-b732-27b46a94c795"
     - stage: boundary
-      stageUuid: "defa7174-5518-8778-9d61-c5352ef28dde"
+      stageUuid: "7407ed6d-afd4-8172-b98f-05698f734dd2"
     - stage: links
-      stageUuid: "39ba8702-0161-8520-a954-c259e23fb74c"
+      stageUuid: "6b006e7c-b0cb-8ec8-af30-c35555c96792"
     - stage: horo
-      stageUuid: "f574a131-700c-8f26-9de7-ecf20dfee99f"
+      stageUuid: "8a06ac25-1bea-875f-8b5a-e5dddc645908"
     - stage: seal
-      stageUuid: "c4baea7e-aefc-84a8-b5f6-989c809d046f"
+      stageUuid: "f74e64ca-e683-86c7-835c-46b52be2578c"
     - stage: uuid
-      stageUuid: "c6087bc1-653f-823d-86c0-6a5d1569ad87"
+      stageUuid: "225cb3dd-22d7-850e-9d76-4a4d3589146b"
 version: 2
 ---
 # batch

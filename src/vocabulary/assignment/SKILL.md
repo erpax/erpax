@@ -1,66 +1,34 @@
 ---
 name: assignment
 description: "Use when a contract allows or restricts assignment — assignor, assignee, scope (full/partial), consent requirement (unreasonable withholding, notice), prohibited assigns, assumption of obligations."
-atomPath: vocabulary/assignment
-coordinate: assignment · 2/share · b551dbb6
-contentUuid: "a171cca9-afdb-5c1c-b4d3-eb0deffccfef"
-diamondUuid: "876473e2-37cb-8a3d-b63a-f7d87af532ba"
-uuid: "b551dbb6-a39d-855b-bf8c-25994642b079"
+atomPath: "vocabulary/assignment"
+coordinate: "vocabulary/assignment · 2/share · fbc95185"
+contentUuid: "bee29199-8cc0-5d4d-b6a4-b8fb2d3a9975"
+diamondUuid: "187ffc4f-3c13-8a85-aa15-d3c1f3d6dd44"
+uuid: "fbc95185-b456-8785-a499-b166a787c6c3"
 horo: 2
-bonds:
-  in:
-    - consent
-    - contracts
-    - law
-    - matter
-    - queue
-  out:
-    - consent
-    - contracts
-    - law
-    - matter
-    - queue
 typography:
-  partition: assignment
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - consent
-    - contracts
-    - law
-    - matter
-  matrix:
-    - consent
-    - contracts
-    - law
-    - matter
-    - queue
-  backlinks:
-    - consent
-    - contracts
-    - law
-    - matter
-    - queue
 signatures:
-  computationUuid: "d7fbab3c-3a89-85e1-b949-87f0dc99bd68"
+  computationUuid: "5d4e419f-95ec-822e-80de-042c236ae2f4"
   stages:
     - stage: path
-      stageUuid: "daa5b999-7846-82a6-97f2-6d3c3f45cad2"
+      stageUuid: "f76d53b8-6fd0-851f-9a0b-2c1ff579b497"
     - stage: trinity
-      stageUuid: "a74e05eb-50e7-899a-a793-fa2d160d2f8e"
+      stageUuid: "5d7b0c52-1fbd-8af3-ae01-4a25bf4fe8f0"
     - stage: boundary
-      stageUuid: "bc93d7c7-90f6-8e91-bf9c-453c410de090"
+      stageUuid: "46a7054c-d9f7-8135-9a9f-d48eb2b2df51"
     - stage: links
-      stageUuid: "de3e70ac-efb8-8f50-8620-fe66c50b3784"
+      stageUuid: "2bf9251c-44ac-8f94-b1c1-0e69be7d2a35"
     - stage: horo
-      stageUuid: "fb8abe5e-7ab7-83db-adce-c3237db0c511"
+      stageUuid: "b3193ad8-34f1-84a4-8032-e1c4475d262f"
     - stage: seal
-      stageUuid: "0abfb0cf-9a39-85de-99d8-e947f87e4306"
+      stageUuid: "902fc51a-920a-8f60-bf6f-d45617739452"
     - stage: uuid
-      stageUuid: "ab621e57-344c-83d6-a3c9-344da21bf465"
+      stageUuid: "94115e24-99df-8210-81ab-11c7be7b1d7e"
 version: 2
 ---
 # assignment

@@ -1,173 +1,34 @@
 ---
 name: jainism
 description: "Use when reading Jainism as a diamond of invariant atoms — non-harm absolute, the soul weighed down by karma as literal matter and unburdened by austerity, non-possession, the many-sided view of truth. Strip the Prakrit/Sanskrit prefix and ahimsa, jiva, moksha collapse to mercy, self, zeropoint — one content-uuid each."
-atomPath: vocabulary/jainism
-coordinate: jainism · 1/base · 97432dae
-contentUuid: "d28c038b-5b86-5ad8-a1bc-f2c73dfbf5de"
-diamondUuid: "30092a05-e468-8b79-b1dc-820827cd27b1"
-uuid: "97432dae-2758-86fc-b0bd-9c268a479a54"
+atomPath: "vocabulary/jainism"
+coordinate: "vocabulary/jainism · 1/base · a216e464"
+contentUuid: "c2374268-523f-5810-aaf4-be7775b81faa"
+diamondUuid: "afcce022-2971-8531-a956-ad824461070f"
+uuid: "a216e464-14f5-8991-acf4-99d0a1c154fc"
 horo: 1
-bonds:
-  in:
-    - archangel
-    - balance
-    - diamond
-    - dna
-    - ethics
-    - faith
-    - fast
-    - fractal
-    - gift
-    - harmony
-    - identity
-    - karma
-    - law
-    - mercy
-    - merge
-    - path
-    - proof
-    - religion
-    - return
-    - self
-    - society
-    - suffering
-    - translator
-    - uuid
-    - wisdom
-    - zeropoint
-  out:
-    - archangel
-    - balance
-    - diamond
-    - dna
-    - ethics
-    - faith
-    - fast
-    - fractal
-    - gift
-    - harmony
-    - identity
-    - karma
-    - law
-    - mercy
-    - merge
-    - path
-    - proof
-    - religion
-    - return
-    - self
-    - society
-    - suffering
-    - translator
-    - uuid
-    - wisdom
-    - zeropoint
 typography:
-  partition: jainism
+  partition: vocabulary
   bondDegree: 80
-  neighbors:
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - archangel
-    - balance
-    - diamond
-    - dna
-    - ethics
-    - faith
-    - fast
-    - fractal
-    - gift
-    - harmony
-    - identity
-    - karma
-    - law
-    - mercy
-    - merge
-    - path
-    - proof
-    - religion
-    - return
-    - self
-    - society
-    - suffering
-    - translator
-    - uuid
-    - wisdom
-    - zeropoint
-  matrix:
-    - archangel
-    - balance
-    - diamond
-    - dna
-    - ethics
-    - faith
-    - fast
-    - fractal
-    - gift
-    - harmony
-    - identity
-    - karma
-    - law
-    - mercy
-    - merge
-    - path
-    - proof
-    - religion
-    - return
-    - self
-    - society
-    - suffering
-    - translator
-    - uuid
-    - wisdom
-    - zeropoint
-  backlinks:
-    - archangel
-    - balance
-    - diamond
-    - dna
-    - ethics
-    - faith
-    - fast
-    - fractal
-    - gift
-    - harmony
-    - identity
-    - karma
-    - law
-    - mercy
-    - merge
-    - path
-    - proof
-    - religion
-    - return
-    - self
-    - society
-    - suffering
-    - translator
-    - uuid
-    - wisdom
-    - zeropoint
 signatures:
-  computationUuid: "d1171bf3-8950-8ed9-961b-0a2ada9a41aa"
+  computationUuid: "2b085a65-32da-8b1b-acbc-583b02b313a7"
   stages:
     - stage: path
-      stageUuid: "410dd920-db5b-8bc8-a057-605a0c8ddbda"
+      stageUuid: "50b9cc63-c731-8649-a3f5-76c0da63c0df"
     - stage: trinity
-      stageUuid: "d1731c50-5e99-8f8d-b548-8351d1957156"
+      stageUuid: "05d8bc66-8c9c-8d25-9265-669afe3fe9aa"
     - stage: boundary
-      stageUuid: "2effdff7-0fb0-86ee-9345-033f588b7e6d"
+      stageUuid: "81668b74-8099-8a12-a88a-7ec1cc27a0ab"
     - stage: links
-      stageUuid: "56af1a78-1b5e-8acb-a784-348365690863"
+      stageUuid: "3a6a0476-5490-8092-a30e-c24ce6bdd71d"
     - stage: horo
-      stageUuid: "641bb65c-d7c6-863f-ac9e-e9fb8d9a70e4"
+      stageUuid: "de12b6c7-2e4c-8402-a55d-2e2687a29da8"
     - stage: seal
-      stageUuid: "bb64b992-ad0e-8b44-a113-bde4fe0f8c7f"
+      stageUuid: "881a2d93-922a-84f9-ab4f-b8360bf10a14"
     - stage: uuid
-      stageUuid: "2ed17955-bd05-8cd4-9c9a-057a503751b7"
+      stageUuid: "376c605d-4031-8fb6-a7d8-8ca8c56a2221"
 version: 2
 ---
 # jainism — non-harm absolute; the soul unburdened of karma

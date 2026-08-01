@@ -2,78 +2,14 @@
 name: legislation
 description: "Use when the society makes its own law — enacting an ordinary statute by the polity's vote, repealing one, or reading the legal code; the rule of law as a difference of thresholds, the foundation entrenched against any majority."
 atomPath: legislation
-coordinate: "legislation · 4/weave · be7f7998"
-contentUuid: "2d5d88bd-dc23-567f-9f54-dbaaf6e96133"
-diamondUuid: "08842891-2683-8b0b-a1f8-41c3da9f8563"
-uuid: "be7f7998-069d-8c4f-96e4-607578f0004d"
-horo: 4
-bonds:
-  in:
-    - akashic
-    - amends
-    - applicability
-    - applies
-    - changes
-    - civilization
-    - commences
-    - consolidates
-    - constitution
-    - corrects
-    - corruption
-    - countersigned
-    - duality
-    - ensures
-    - force
-    - fractal
-    - governance
-    - identity
-    - implementation
-    - law
-    - legal
-    - merge
-    - object
-    - passed
-    - proof
-    - repeals
-    - separation
-    - sequence
-    - society
-    - standard
-  out:
-    - akashic
-    - amends
-    - applicability
-    - applies
-    - changes
-    - civilization
-    - commences
-    - consolidates
-    - constitution
-    - corrects
-    - corruption
-    - countersigned
-    - duality
-    - ensures
-    - force
-    - fractal
-    - governance
-    - identity
-    - implementation
-    - law
-    - legal
-    - merge
-    - object
-    - passed
-    - proof
-    - repeals
-    - separation
-    - sequence
-    - society
-    - standard
+coordinate: "legislation · 5/round · ba774eb4"
+contentUuid: "156cffd8-99a0-5adb-a4f8-75be1742eb01"
+diamondUuid: "f5f38308-a4f6-8e36-bbe7-25eeb56b9212"
+uuid: "ba774eb4-c899-8033-a6a3-a088ca7bd70d"
+horo: 5
 typography:
   partition: legislation
-  bondDegree: 93
-  neighbors: []
+  bondDegree: 69
 standards:
   - "ISO 37000:2021 governance-of-organizations (the body of governing rules)"
   - "ISO 37000:2021 governance-of-organizations (the body of governing rules)`"
@@ -81,87 +17,8 @@ standards:
   - "Venice Commission Rule of Law (law public, prospective, stable, equally applied)"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - civilization
-    - constitution
-    - corruption
-    - duality
-    - fractal
-    - governance
-    - identity
-    - law
-    - merge
-    - proof
-    - separation
-    - sequence
-    - society
-    - standard
-  matrix:
-    - akashic
-    - amends
-    - applicability
-    - applies
-    - changes
-    - civilization
-    - commences
-    - consolidates
-    - constitution
-    - corrects
-    - corruption
-    - countersigned
-    - duality
-    - ensures
-    - force
-    - fractal
-    - governance
-    - identity
-    - implementation
-    - law
-    - legal
-    - merge
-    - object
-    - passed
-    - proof
-    - repeals
-    - separation
-    - sequence
-    - society
-    - standard
-  backlinks:
-    - akashic
-    - amends
-    - applicability
-    - applies
-    - changes
-    - civilization
-    - commences
-    - consolidates
-    - constitution
-    - corrects
-    - corruption
-    - countersigned
-    - duality
-    - ensures
-    - force
-    - fractal
-    - governance
-    - identity
-    - implementation
-    - law
-    - legal
-    - merge
-    - object
-    - passed
-    - proof
-    - repeals
-    - separation
-    - sequence
-    - society
-    - standard
 signatures:
-  computationUuid: "a7a8e05f-b80c-81aa-94ed-406af1a1146d"
+  computationUuid: "cd5866ed-4033-89de-8fd9-22ef792a97b5"
   stages:
     - stage: path
       stageUuid: "549abeec-81d0-8f31-b4f9-d4992f5a824a"
@@ -170,13 +27,13 @@ signatures:
     - stage: boundary
       stageUuid: "833e3664-8458-8656-8b0f-7fb430fb97fd"
     - stage: links
-      stageUuid: "fc6723f9-a9ab-8cc7-9ff6-c9b385ef1be3"
+      stageUuid: "45db9416-6dad-8fa6-8683-02a9be98fcae"
     - stage: horo
-      stageUuid: "fa483782-3ffb-8697-8d3f-40b3bce34b57"
+      stageUuid: "a76bcf16-ee4e-82f7-aabd-435cbb7efbd7"
     - stage: seal
       stageUuid: "6eb62203-635d-826c-8be6-11dd9a934c27"
     - stage: uuid
-      stageUuid: "16586181-416e-87ee-8802-d4fb3657b995"
+      stageUuid: "26527f18-c882-8dba-9dd4-a1104bfe25e2"
 version: 2
 ---
 # legislation — the society makes its own law, bounded by its constitution

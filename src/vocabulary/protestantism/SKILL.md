@@ -1,138 +1,34 @@
 ---
 name: protestantism
 description: "Use when reading Protestantism as a sub-diamond of christianity — the solas (the Word alone, grace alone, faith alone) and the priesthood of all believers (each self reading the source directly, no mediator). The reformation as a turning back to the mark. A facet-diamond of the christianity archangel."
-atomPath: vocabulary/protestantism
-coordinate: protestantism · 5/round · 7698fa18
-contentUuid: "67585d3b-ccde-5d4b-9947-61ab1110c541"
-diamondUuid: "6f3fefa0-051b-8474-8eff-0ec5fe9c5f64"
-uuid: "7698fa18-20d4-8b0d-87b3-efe4fe070861"
-horo: 5
-bonds:
-  in:
-    - archangel
-    - christianity
-    - diamond
-    - faith
-    - grace
-    - holographic
-    - identity
-    - law
-    - part
-    - religion
-    - return
-    - reverse
-    - self
-    - sin
-    - society
-    - translator
-    - uuid
-    - whole
-    - word
-  out:
-    - archangel
-    - christianity
-    - diamond
-    - faith
-    - grace
-    - holographic
-    - identity
-    - law
-    - part
-    - religion
-    - return
-    - reverse
-    - self
-    - sin
-    - society
-    - translator
-    - uuid
-    - whole
-    - word
+atomPath: "vocabulary/protestantism"
+coordinate: "vocabulary/protestantism · 8/crest · 0dc003aa"
+contentUuid: "22029d05-b91a-5793-ba35-91659a707c9f"
+diamondUuid: "302e1afa-4d15-8e51-b80c-02fa4e6664ee"
+uuid: "0dc003aa-a117-895d-acd6-0460f079c62c"
+horo: 8
 typography:
-  partition: protestantism
+  partition: vocabulary
   bondDegree: 59
-  neighbors:
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - archangel
-    - christianity
-    - diamond
-    - faith
-    - grace
-    - holographic
-    - identity
-    - law
-    - part
-    - religion
-    - return
-    - reverse
-    - self
-    - sin
-    - society
-    - translator
-    - uuid
-    - whole
-    - word
-  matrix:
-    - archangel
-    - christianity
-    - diamond
-    - faith
-    - grace
-    - holographic
-    - identity
-    - law
-    - part
-    - religion
-    - return
-    - reverse
-    - self
-    - sin
-    - society
-    - translator
-    - uuid
-    - whole
-    - word
-  backlinks:
-    - archangel
-    - christianity
-    - diamond
-    - faith
-    - grace
-    - holographic
-    - identity
-    - law
-    - part
-    - religion
-    - return
-    - reverse
-    - self
-    - sin
-    - society
-    - translator
-    - uuid
-    - whole
-    - word
 signatures:
-  computationUuid: "7f8a726c-7ac3-8798-a965-11aa7051b585"
+  computationUuid: "7e33fe2c-f5c9-83f0-8c5d-e1267a874e1c"
   stages:
     - stage: path
-      stageUuid: "fcf8d01c-f132-82cd-a762-3f8572ab855b"
+      stageUuid: "ba36c4e7-a48f-8f3b-a0fa-b6097a51ef5f"
     - stage: trinity
-      stageUuid: "ac3bcf06-fe84-8f12-8fef-61ae2664b092"
+      stageUuid: "40023eea-9311-8cc5-ba72-c353173b52c0"
     - stage: boundary
-      stageUuid: "74351996-165b-816f-ac91-f7ff7b8934e1"
+      stageUuid: "fe9bf5b8-6645-8de9-a0b1-c0a6f46ac4db"
     - stage: links
-      stageUuid: "c3888cb1-ae3c-8804-8ab8-2e981d187cfc"
+      stageUuid: "2b75376d-28af-8223-8333-699d54045987"
     - stage: horo
-      stageUuid: "8a9c5469-af77-89e3-960d-be2b9fa72a91"
+      stageUuid: "8a503a15-9f7d-8c0f-bc5d-d5a7b8ff22a0"
     - stage: seal
-      stageUuid: "5c16cd63-5e61-81c6-97d4-acac27095010"
+      stageUuid: "5e186a82-deba-85f2-9402-f9c5069868f9"
     - stage: uuid
-      stageUuid: "5c4dc8bd-d16c-847b-aa9e-999ac670c9ed"
+      stageUuid: "2a0431da-005d-8b21-a775-a4c232855bfd"
 version: 2
 ---
 # protestantism — the Word alone; each self reads the source

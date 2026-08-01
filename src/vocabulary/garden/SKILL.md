@@ -1,68 +1,35 @@
 ---
 name: garden
 description: "Use when reasoning about garden as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/garden
-coordinate: garden · 2/share · 8c2cbf89
-contentUuid: "e2dfcfaf-524a-5680-ba78-7796d598c9a1"
-diamondUuid: "aed0ebec-e4fd-8ef5-ba8b-14cf8dfc533e"
-uuid: "8c2cbf89-f4cc-8de8-8aaf-da4648c5ccba"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
+atomPath: "vocabulary/garden"
+coordinate: "vocabulary/garden · 7/descent · cf1e940e"
+contentUuid: "1503ac73-8e97-5eb9-a545-b30d2d0a59b4"
+diamondUuid: "a9d1f812-9b5b-8800-b9b8-23038cb66397"
+uuid: "cf1e940e-85a5-823c-be85-12a19521b42f"
+horo: 7
 typography:
-  partition: garden
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
 signatures:
-  computationUuid: "2f3950e3-f757-8454-8a3c-e91db889ff07"
+  computationUuid: "d2f43b98-8d91-8277-aab7-6cc2658c7884"
   stages:
     - stage: path
-      stageUuid: "8aa70590-9b07-810a-9be6-a8d40cf2be12"
+      stageUuid: "dc66feba-6542-8c05-afe1-5ad13c67aa6b"
     - stage: trinity
-      stageUuid: "239acb10-a9fa-88aa-8a2c-73196fd11c60"
+      stageUuid: "484e65f7-41b4-8ab7-a68a-ba0318fd739b"
     - stage: boundary
-      stageUuid: "d4a7d03a-9a3c-8565-a427-1af11f0ef15a"
+      stageUuid: "f86c2fc9-b332-824c-92a4-484f490567c0"
     - stage: links
-      stageUuid: "7d15f6aa-9262-8717-bd36-75c576e04db7"
+      stageUuid: "3b5fc980-ecc3-8b0c-bfb0-a6b8ffc32fc2"
     - stage: horo
-      stageUuid: "c26a0c0d-c0e6-83fe-8361-34f808810cb6"
+      stageUuid: "589cf25a-df51-8752-8941-a0e3c0fbabc3"
     - stage: seal
-      stageUuid: "39696614-aa08-87c0-bd80-709a7a4607fb"
+      stageUuid: "777f4124-895e-85fa-94ba-02d912890459"
     - stage: uuid
-      stageUuid: "f7ea324b-fed9-8c21-9520-3f5ac07f7333"
+      stageUuid: "1a003db6-0ef0-8d41-b29b-8aa6377badb8"
 version: 2
 ---
 # garden

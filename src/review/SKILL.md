@@ -2,107 +2,19 @@
 name: review
 description: "Use when reasoning about review — A review of an item - for example, of a restaurant, movie, or store."
 atomPath: review
-coordinate: review · 5/round · 6e3c5603
-contentUuid: "53cb4e59-8724-5bf0-8cd0-2760c1505f6f"
-diamondUuid: "23d7e8bd-9093-89bb-8635-036ef1783788"
-uuid: "6e3c5603-b1e7-8f62-a1a4-7233b6db7818"
+coordinate: "review · 5/round · a31f04e0"
+contentUuid: "d09c7afd-6d7c-502e-acef-050ffc934878"
+diamondUuid: "44d2563b-9899-8302-86b5-8ffa6fc11041"
+uuid: "a31f04e0-62fd-83b0-8263-d74179e63180"
 horo: 5
-bonds:
-  in:
-    - action
-    - article
-    - aspect
-    - associated
-    - body
-    - claim
-    - count
-    - critic
-    - employer
-    - item
-    - law
-    - media
-    - news
-    - rating
-    - result
-    - user
-  out:
-    - action
-    - article
-    - aspect
-    - associated
-    - body
-    - claim
-    - count
-    - critic
-    - employer
-    - item
-    - law
-    - media
-    - news
-    - rating
-    - result
-    - user
 typography:
   partition: review
-  bondDegree: 60
-  neighbors: []
+  bondDegree: 71
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - article
-    - aspect
-    - associated
-    - body
-    - claim
-    - count
-    - critic
-    - employer
-    - item
-    - law
-    - media
-    - news
-    - rating
-    - result
-    - user
-  matrix:
-    - action
-    - article
-    - aspect
-    - associated
-    - body
-    - claim
-    - count
-    - critic
-    - employer
-    - item
-    - law
-    - media
-    - news
-    - rating
-    - result
-    - user
-  backlinks:
-    - action
-    - article
-    - aspect
-    - associated
-    - body
-    - claim
-    - count
-    - critic
-    - employer
-    - item
-    - law
-    - media
-    - news
-    - rating
-    - result
-    - user
 signatures:
-  computationUuid: "b8563516-91c4-8672-9267-03364dded6f1"
+  computationUuid: "33ae368a-58a6-8aee-9dfc-199de6a419f5"
   stages:
     - stage: path
       stageUuid: "fee63ff6-188f-8ea5-ada1-8c28b917817c"
@@ -113,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "482c42d5-ec90-8e81-b7ad-738bd1ea5bec"
     - stage: horo
-      stageUuid: "bee397a0-e628-8865-907d-ab4d37c6c530"
+      stageUuid: "dee351c2-a757-8b3e-b57c-a4b977005c42"
     - stage: seal
-      stageUuid: "b2947c25-c104-865d-a600-0effcf487f5e"
+      stageUuid: "e6f49dba-f68c-8a4f-96e8-d3c3a137221a"
     - stage: uuid
-      stageUuid: "fd4fbc5e-4d2d-81a7-8495-d94443a35fb0"
+      stageUuid: "4f748d64-a716-85d9-90fc-2fa894356aab"
 version: 2
 ---
 # review

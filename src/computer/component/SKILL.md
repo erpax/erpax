@@ -2,114 +2,19 @@
 name: component
 description: "Use when reasoning about component as a part of [[computer]] — pivot to canonical @/component; nested not duplicated."
 atomPath: "computer/component"
-coordinate: "computer/component · 8/crest · 7702365b"
-contentUuid: "4c04060c-9436-5d0e-8126-f5ac59163486"
-diamondUuid: "c544d8e8-283c-82e7-9ad4-6b054487ea28"
-uuid: "7702365b-53a7-81c9-b66a-0fa50945a00b"
-horo: 8
-bonds:
-  in:
-    - accessibility
-    - archive
-    - atom
-    - component
-    - components
-    - computer
-    - css
-    - design
-    - diamond
-    - enumeration
-    - interactive
-    - law
-    - pixel
-    - price
-    - primitive
-    - render
-    - standard
-    - theme
-    - token
-    - ui
-    - uuid
-  out:
-    - accessibility
-    - archive
-    - atom
-    - component
-    - components
-    - computer
-    - css
-    - design
-    - diamond
-    - enumeration
-    - interactive
-    - law
-    - pixel
-    - price
-    - primitive
-    - render
-    - standard
-    - theme
-    - token
-    - ui
-    - uuid
+coordinate: "computer/component · 5/round · 87ebf851"
+contentUuid: "d079a472-6b40-51c2-8cfd-06df71a23a4f"
+diamondUuid: "7be7d4e5-b737-8402-becb-e49d585cdb6c"
+uuid: "87ebf851-34c2-81d0-8dff-0d016ef87edf"
+horo: 5
 typography:
   partition: computer
   bondDegree: 70
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - component
-    - computer
-    - law
-  matrix:
-    - accessibility
-    - archive
-    - atom
-    - component
-    - components
-    - computer
-    - css
-    - design
-    - diamond
-    - enumeration
-    - interactive
-    - law
-    - pixel
-    - price
-    - primitive
-    - render
-    - standard
-    - theme
-    - token
-    - ui
-    - uuid
-  backlinks:
-    - accessibility
-    - archive
-    - atom
-    - component
-    - components
-    - computer
-    - css
-    - design
-    - diamond
-    - enumeration
-    - interactive
-    - law
-    - pixel
-    - price
-    - primitive
-    - render
-    - standard
-    - theme
-    - token
-    - ui
-    - uuid
 signatures:
-  computationUuid: "8acc1ffc-36b7-8ccb-8264-c3dc73d537de"
+  computationUuid: "f52dbf46-8e1d-8fd6-a184-1f635b925ee5"
   stages:
     - stage: path
       stageUuid: "67fce97b-4fba-881c-b01b-b32a4ca732fe"
@@ -120,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cbd6a924-1bf6-8dfb-8695-e66d0a8c7e97"
     - stage: horo
-      stageUuid: "15010a6a-ca64-8017-b6a4-808c7e75209a"
+      stageUuid: "037244e0-37c5-80c1-9b81-3887f8a32faa"
     - stage: seal
       stageUuid: "e9168104-8407-8571-b218-bc4c51220fcd"
     - stage: uuid
-      stageUuid: "84026ef3-3ab5-85c5-a519-d24786f7b581"
+      stageUuid: "6ab701e3-aaea-88f8-9d48-494e063fa345"
 version: 2
 ---
 # computer/component — renders atoms on screen

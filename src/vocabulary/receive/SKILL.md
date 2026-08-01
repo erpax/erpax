@@ -1,68 +1,35 @@
 ---
 name: receive
 description: "Use when reasoning about receive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/receive
-coordinate: receive · 2/share · 82af16bc
-contentUuid: "311601b9-d64b-5888-80a7-a670c1fabb72"
-diamondUuid: "b802da28-30fc-808e-9ebe-99ab7b3ff77f"
-uuid: "82af16bc-4d62-8fea-b758-58f40d6565fc"
+atomPath: "vocabulary/receive"
+coordinate: "vocabulary/receive · 2/share · 04612352"
+contentUuid: "20a37684-d0b2-55c7-a3f4-ba28e9b020f8"
+diamondUuid: "0055ad9e-c49f-8b46-947f-61f01f546c6b"
+uuid: "04612352-a0f2-8e62-bb60-6b0dff44c623"
 horo: 2
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: receive
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "1315d313-6f2d-85ed-8fc6-e372eb8d400e"
+  computationUuid: "0de50c24-1e26-8b18-9629-7513f88505a5"
   stages:
     - stage: path
-      stageUuid: "8e51d36b-eba6-8e7a-bec0-2d9e92bcf8c4"
+      stageUuid: "f040a4b1-c746-8f82-9ca3-ac28450d6048"
     - stage: trinity
-      stageUuid: "78ea8dd9-4a8c-8c8f-a2e0-98c908bd00c2"
+      stageUuid: "fd966d40-46fa-842a-a4b0-99cdf307937a"
     - stage: boundary
-      stageUuid: "f001e791-cc6e-81d7-8ad5-5811544bb98c"
+      stageUuid: "3e7a90a7-eaad-809e-9a59-b03ee0fd46e6"
     - stage: links
-      stageUuid: "f236a60a-008c-8cdc-90d8-fd943854bd11"
+      stageUuid: "2a0bffa8-332e-8d9b-ba9d-ac11b4339679"
     - stage: horo
-      stageUuid: "a86f5cae-2802-871a-a4f2-9f03ce37f44e"
+      stageUuid: "9428c09b-f520-8d2d-b107-55a5d8eb8525"
     - stage: seal
-      stageUuid: "61335ef9-18b3-874e-a81b-07b3095fa2cf"
+      stageUuid: "90bf90a7-80de-8257-a12d-288e1f9af214"
     - stage: uuid
-      stageUuid: "333854c0-9127-8fd6-8de2-85f15eecd67f"
+      stageUuid: "5af4286e-3b04-8eac-acfd-42d6de2752fe"
 version: 2
 ---
 # receive

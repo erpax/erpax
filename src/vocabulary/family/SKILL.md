@@ -1,94 +1,34 @@
 ---
 name: family
 description: "Use when grouping crops by botanical family — the rank (Brassicaceae, Solanaceae, Cucurbitaceae, Apiaceae, Fabaceae, Asteraceae, Amaranthaceae, Alliaceae, Poaceae) that shares pests, diseases, and nutrient demands, making it the practical unit of crop rotation. The taxonomy rank that carries pest/fertility inheritance; same family ⇒ must not follow itself in a bed."
-atomPath: vocabulary/family
-coordinate: family · 7/descent · 5ef78df0
-contentUuid: "a380db57-54b4-5a4e-afd3-61b8ddb56e7c"
-diamondUuid: "924e2ddf-452c-8fa1-9fc6-1d994e59cd4b"
-uuid: "5ef78df0-417f-8b45-b857-ac37dadf96d3"
-horo: 7
-bonds:
-  in:
-    - agriculture
-    - crop
-    - fertility
-    - fractal
-    - friendly
-    - law
-    - residence
-    - rotation
-    - single
-    - taxonomy
-    - variant
-  out:
-    - agriculture
-    - crop
-    - fertility
-    - fractal
-    - friendly
-    - law
-    - residence
-    - rotation
-    - single
-    - taxonomy
-    - variant
+atomPath: "vocabulary/family"
+coordinate: "vocabulary/family · 2/share · 3aa040ad"
+contentUuid: "72c8207e-44af-5bd9-a89d-e81bd42eaeef"
+diamondUuid: "c0045ad5-3cc5-8e0a-ae63-cf31010273e1"
+uuid: "3aa040ad-2883-8306-ad15-c71375dffe38"
+horo: 2
 typography:
-  partition: family
+  partition: vocabulary
   bondDegree: 35
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - crop
-    - fertility
-    - fractal
-    - law
-    - rotation
-    - taxonomy
-    - variant
-  matrix:
-    - agriculture
-    - crop
-    - fertility
-    - fractal
-    - friendly
-    - law
-    - residence
-    - rotation
-    - single
-    - taxonomy
-    - variant
-  backlinks:
-    - agriculture
-    - crop
-    - fertility
-    - fractal
-    - friendly
-    - law
-    - residence
-    - rotation
-    - single
-    - taxonomy
-    - variant
 signatures:
-  computationUuid: "7a45828f-c4db-8e86-98f0-1b28b53780cd"
+  computationUuid: "ed067387-2295-8a13-97f7-88f4091805f6"
   stages:
     - stage: path
-      stageUuid: "85796233-0e90-8033-af1a-63ed2f07a717"
+      stageUuid: "f192569f-b5c0-8875-a382-3d9ddf254ad5"
     - stage: trinity
-      stageUuid: "88ddc96d-562a-84d3-afd9-661a4abb8287"
+      stageUuid: "df356834-6ac0-8d96-a8ea-efe5c4051371"
     - stage: boundary
-      stageUuid: "4286a9c0-ecc0-8876-8eb5-bc3b48dd9f61"
+      stageUuid: "e9ff5cc7-b788-8b07-b756-2d7a71a04bd1"
     - stage: links
-      stageUuid: "0c96d4f3-5e6f-81b5-8066-6a00a1960300"
+      stageUuid: "d17e6a99-f8c1-8a8f-8445-5d0f5346034d"
     - stage: horo
-      stageUuid: "ad21432a-66f4-8881-ad50-2b49ca68e9e8"
+      stageUuid: "96f11c40-b3e2-8521-99e5-3e9316b08ad0"
     - stage: seal
-      stageUuid: "9dd0a3be-91bd-8611-b9ec-c08c2e6e367c"
+      stageUuid: "699ad866-705a-8730-93a3-a7b965405533"
     - stage: uuid
-      stageUuid: "1b482079-492e-8c64-8176-c66ef37d8ada"
+      stageUuid: "88a1778f-594a-8cc2-9eb4-01ea1e6bf176"
 version: 2
 ---
 # family — the botanical group that shares pests; the rotation unit

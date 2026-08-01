@@ -2,62 +2,21 @@
 name: terminals
 description: "Use when registering or querying virtual POS terminals for the BG Наредба-Н-18 alternative e-shop regime — terminal number, payment-service provider, settlement IBAN, currency, and active/inactive status. The virtual POS terminal master for NRA e-shop declarations."
 atomPath: terminals
-coordinate: terminals · 8/crest · b445a28b
-contentUuid: "bd34de90-6192-5814-b084-3635479af3d0"
-diamondUuid: "42a48904-4899-8960-9e8f-e920a2ebe9b7"
-uuid: "b445a28b-bdb6-8e7b-adf4-a035f98cf43e"
-horo: 8
-bonds:
-  in:
-    - access
-    - devices
-    - fields
-    - hooks
-    - identity
-    - law
-    - standard
-  out:
-    - access
-    - devices
-    - fields
-    - hooks
-    - identity
-    - law
-    - standard
+coordinate: "terminals · 5/round · bf4eb1fe"
+contentUuid: "102ca326-c8a5-5d5b-a915-c3c86b38e85d"
+diamondUuid: "6be69ddf-7f34-8137-a520-537d73fb41da"
+uuid: "bf4eb1fe-3d29-8260-9519-3aed405b6f7e"
+horo: 5
 typography:
   partition: terminals
   bondDegree: 21
-  neighbors: []
 standards:
   - "BG Наредба-Н-18 §алтернативен-режим virtual-POS-terminal"
-  - "ISO-19011:2018 audit-trail"
+  - "ISO-19011`"
+  - "ISO/IEC-27001:2022`"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - fields
-    - hooks
-    - identity
-    - law
-    - standard
-  matrix:
-    - access
-    - devices
-    - fields
-    - hooks
-    - identity
-    - law
-    - standard
-  backlinks:
-    - access
-    - devices
-    - fields
-    - hooks
-    - identity
-    - law
-    - standard
 signatures:
-  computationUuid: "b6867aed-b923-859f-86ff-6dad9efff3e0"
+  computationUuid: "08e6cd7d-d51d-8aa4-84bf-daf6a2fce977"
   stages:
     - stage: path
       stageUuid: "baddb3ec-25c0-87b4-936e-a597edbb67e7"
@@ -68,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "63183521-e6eb-858c-a91f-c1eca9603494"
     - stage: horo
-      stageUuid: "16dd1d4e-b893-8ee7-aac7-d059f911a022"
+      stageUuid: "8efcfa33-5828-876f-b07b-5bdefb139dd1"
     - stage: seal
-      stageUuid: "6ef806ec-3842-8b0a-9bee-ed4e09d6b2d8"
+      stageUuid: "80745e0a-f7bc-81e8-a770-629fb241f317"
     - stage: uuid
-      stageUuid: "1f036061-abce-8711-a4a5-ef89f6fd1d28"
+      stageUuid: "686dd486-edba-88d3-b16c-afc3b214ea53"
 version: 2
 ---
 # terminals

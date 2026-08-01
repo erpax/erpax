@@ -1,93 +1,19 @@
 ---
 name: base
-description: "Use when reasoning about the entry position of the horo state ring — digit 1, \\\\\\\"entering the ring\\\\\\\", the origin step of a flow/lifecycle (on-hand, draft, opened). First of the ascent arc; nested under horo."
+description: "Use when reasoning about the entry position of the horo state ring — digit 1, \\\\\\\\\\\\\\\"entering the ring\\\\\\\\\\\\\\\", the origin step of a flow/lifecycle (on-hand, draft, opened). First of the ascent arc; nested under horo."
 atomPath: "horo/base"
-coordinate: "horo/base · 1/base · bb9aaa35"
-contentUuid: "4a1b0b4a-d53a-5df0-9721-2acdabaf63bd"
-diamondUuid: "f4ab20b5-8dc2-8c7a-a659-4a46c4ae7533"
-uuid: "bb9aaa35-c55b-8872-91f1-fab11d58f557"
+coordinate: "horo/base · 1/base · 0aef2d26"
+contentUuid: "3aa131d7-e126-54e3-827b-ecb178d9c40a"
+diamondUuid: "4f97123e-360d-8f23-949f-043d5fc009a6"
+uuid: "0aef2d26-161e-80e0-aa11-4412f85625ae"
 horo: 1
-bonds:
-  in:
-    - begin
-    - coil
-    - field
-    - fields
-    - flow
-    - horo
-    - law
-    - notes
-    - open
-    - salary
-    - sequence
-    - share
-    - torus
-    - unity
-  out:
-    - begin
-    - coil
-    - field
-    - fields
-    - flow
-    - horo
-    - law
-    - notes
-    - open
-    - salary
-    - sequence
-    - share
-    - torus
-    - unity
 typography:
   partition: horo
   bondDegree: 45
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - begin
-    - coil
-    - fields
-    - flow
-    - horo
-    - law
-    - open
-    - sequence
-    - share
-    - unity
-  matrix:
-    - begin
-    - coil
-    - field
-    - fields
-    - flow
-    - horo
-    - law
-    - notes
-    - open
-    - salary
-    - sequence
-    - share
-    - torus
-    - unity
-  backlinks:
-    - begin
-    - coil
-    - field
-    - fields
-    - flow
-    - horo
-    - law
-    - notes
-    - open
-    - salary
-    - sequence
-    - share
-    - torus
-    - unity
 signatures:
-  computationUuid: "d2473b80-646d-8248-ac61-4af8a194f30c"
+  computationUuid: "714385c9-cb05-8f76-a14a-1fba91b8f077"
   stages:
     - stage: path
       stageUuid: "87795ccf-2ce2-8c46-a510-d8e4242eb7f5"
@@ -98,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "cd6e3dfd-675a-8b98-b76f-8f21da14a176"
     - stage: horo
-      stageUuid: "89d11af1-3ba5-8152-8c92-4c34cb0e4899"
+      stageUuid: "25ac0bcb-1f6f-8ae4-82e6-fc83f5891b7d"
     - stage: seal
       stageUuid: "51885f1e-71d5-8534-bc03-56a4fd6c0546"
     - stage: uuid
-      stageUuid: "b3a911e9-c7bd-89da-903e-3406d80fca23"
+      stageUuid: "c74622d6-595c-8406-88da-7ab4a7cc80cf"
 version: 2
 ---
 # base — horo position 1 (entering the ring)

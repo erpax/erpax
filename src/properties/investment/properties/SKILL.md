@@ -1,66 +1,43 @@
 ---
 name: properties
 description: "Use when recognising or remeasuring IAS 40 investment property — land or buildings held to earn rental income or capital appreciation — under the §30 fair-value or cost model election, with transfer-of-use triggers (§57–65) and IFRS 13 hierarchy classification. The IAS 40 investment-property register."
-atomPath: properties/investment/properties
-coordinate: properties/investment/properties · 8/crest · 1ea523fa
-contentUuid: "8b8b3f04-47f9-55cd-b0c6-8981436dee65"
-diamondUuid: "a1994066-8c79-8bd0-81ac-c7c124571841"
-uuid: "1ea523fa-07e8-8c38-a453-0ac55b096b5f"
-horo: 8
-bonds:
-  in:
-    - investment
-    - leases
-    - orders
-    - properties
-    - requests
-    - spaces
-  out:
-    - leases
-    - orders
-    - properties
-    - requests
-    - spaces
+atomPath: "properties/investment/properties"
+coordinate: "properties/investment/properties · 1/base · 6338361b"
+contentUuid: "84f787cd-2b91-5c35-8a92-4670232ee671"
+diamondUuid: "3dc30531-ca19-83b0-98e0-07aa9cd79bb2"
+uuid: "6338361b-cea1-817a-a298-252c3de5e376"
+horo: 1
 typography:
   partition: properties
   bondDegree: 23
-  neighbors: []
 standards:
   - "IAS-40"
   - "IFRS IAS-40 §30 measurement-model-election"
+  - "IFRS IAS-40 §30 measurement-model-election`"
   - "IFRS IAS-40 §33 fair-value-model"
+  - "IFRS IAS-40 §33 fair-value-model`"
   - "IFRS IAS-40 §5 definition-investment-property"
+  - "IFRS IAS-40 §5 definition-investment-property`"
   - "IFRS IAS-40 §56 cost-model"
+  - "IFRS IAS-40 §56 cost-model`"
   - "IFRS IAS-40 §57-§65 transfers-into-out-of-investment-property"
+  - "IFRS IAS-40 §57-§65 transfers-into-out-of-investment-property`"
   - "IFRS IAS-40 §74 disclosure-requirements"
+  - "IFRS IAS-40 §74 disclosure-requirements`"
   - "IFRS IFRS-13 fair-value-input-hierarchy"
+  - "IFRS IFRS-13 fair-value-input-hierarchy`"
   - "IFRS-13"
-  - "ISO 19011:2018 §6.4.6 audit-evidence-investment-property"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time"
+  - "ISO-8601-1:2019 date-time`"
   - "SOX §404 internal-controls"
   - "US-GAAP"
   - "US-GAAP ASC-360 long-lived-assets (no separate IP standard)"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - leases
-    - measurements
-    - properties
-  matrix:
-    - leases
-    - orders
-    - properties
-    - requests
-    - spaces
-  backlinks:
-    - leases
-    - orders
-    - properties
-    - requests
-    - spaces
 signatures:
-  computationUuid: "5f15e33b-06c8-82fc-9125-51329710470d"
+  computationUuid: "2f8f2514-f202-8ea6-8bbc-8b25946b114e"
   stages:
     - stage: path
       stageUuid: "5c7df80d-d17e-88f6-a07b-56ebd16cc71e"
@@ -71,11 +48,11 @@ signatures:
     - stage: links
       stageUuid: "1e945e4a-aad5-8213-ae00-63cbfc908c63"
     - stage: horo
-      stageUuid: "a083e8ad-cac7-8026-bab4-b2be0329aa19"
+      stageUuid: "8ce13cf0-b0eb-8f1f-8b78-6e23a816f530"
     - stage: seal
       stageUuid: "a0c41547-8fd1-8237-9f27-29ffddb2892c"
     - stage: uuid
-      stageUuid: "056a41f0-ec5f-83e1-a548-c2b2152be2ed"
+      stageUuid: "2904d638-69d1-8fd1-8480-d5cc9ffad002"
 version: 2
 ---
 # investment-properties

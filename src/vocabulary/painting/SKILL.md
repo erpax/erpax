@@ -1,53 +1,35 @@
 ---
 name: painting
 description: Use when reasoning about painting — A painting.
-atomPath: vocabulary/painting
-coordinate: painting · 5/round · 2e7e1ad3
-contentUuid: "5721e0d6-b1a1-5946-959d-651f0241f720"
-diamondUuid: "c5821002-c5fd-8900-9eed-e8cfa3652f10"
-uuid: "2e7e1ad3-5d27-8bcb-a12e-b3107d0a350e"
-horo: 5
-bonds:
-  in:
-    - creative
-    - law
-  out:
-    - creative
-    - law
+atomPath: "vocabulary/painting"
+coordinate: "vocabulary/painting · 4/weave · 9b1761ec"
+contentUuid: "ec891b61-21fc-5bf5-bbaf-7e4a1be07a5c"
+diamondUuid: "d4578333-7d73-87af-b93f-0ef957bec292"
+uuid: "9b1761ec-fff8-8645-8a56-69262cb0661c"
+horo: 4
 typography:
-  partition: painting
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - creative
-    - law
-  matrix:
-    - creative
-    - law
-  backlinks:
-    - creative
-    - law
 signatures:
-  computationUuid: "d238df95-9d21-8221-84d1-9803c1348c42"
+  computationUuid: "18949f40-d699-8c29-a0ba-7693f93e4b7a"
   stages:
     - stage: path
-      stageUuid: "f6af0cba-2052-814e-b6e6-ed36f36c65fa"
+      stageUuid: "7885381a-93cf-8920-93e6-2c600e816981"
     - stage: trinity
-      stageUuid: "b47c9759-5aa1-8d60-adbf-bc92560c4123"
+      stageUuid: "09ecb531-0bf3-8d44-97a9-ea0c523e7163"
     - stage: boundary
-      stageUuid: "b6355c42-6be9-88c1-bc64-485d8a77b658"
+      stageUuid: "40a67478-e6eb-8f2d-b402-3fd6514c9312"
     - stage: links
-      stageUuid: "97464240-54e1-8699-af03-18262276eee2"
+      stageUuid: "38837706-710e-8836-b253-cd016f92084e"
     - stage: horo
-      stageUuid: "661f883e-80af-8abf-9e6f-77cbc1c800fa"
+      stageUuid: "f2765ba2-11ab-8c76-b1a3-141b8b367ef2"
     - stage: seal
-      stageUuid: "416bce52-2b49-84a4-9ff1-11a43c9c58cc"
+      stageUuid: "1d754cde-cf40-86b0-b334-21e1213a6098"
     - stage: uuid
-      stageUuid: "be9952c8-6fb6-8294-a995-a2f359019522"
+      stageUuid: "ef37a1bb-5493-805a-b126-0f9d3902e4de"
 version: 2
 ---
 # painting

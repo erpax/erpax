@@ -1,68 +1,35 @@
 ---
 name: cc
 description: "Use when reasoning about cc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/cc
-coordinate: cc · 4/weave · 25f2f5f9
-contentUuid: "0df3b61f-cc0f-5d9d-82cd-42571d51f51f"
-diamondUuid: "61e7bbfa-00c8-8db9-b9f5-39bc327fdbfb"
-uuid: "25f2f5f9-5647-82a9-841f-d8f5dff7ae13"
+atomPath: "vocabulary/cc"
+coordinate: "vocabulary/cc · 4/weave · d7f23659"
+contentUuid: "edd9c35b-5ad0-5d21-b9be-c319870c9289"
+diamondUuid: "7187ab07-6d32-8319-919b-305b65f64c2c"
+uuid: "d7f23659-4481-83fb-aff0-ffa279a9b30c"
 horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - recipient
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - recipient
-    - sti
 typography:
-  partition: cc
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - recipient
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - recipient
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - recipient
-    - sti
 signatures:
-  computationUuid: "8eac6e6f-546e-8899-833e-da981c54dcdc"
+  computationUuid: "904f5d5e-0439-82ab-abdd-6dc9b0591e93"
   stages:
     - stage: path
-      stageUuid: "2994b26a-e83d-8e40-86b8-3b89537d20ff"
+      stageUuid: "80ba8ba8-2ddf-865e-b2fe-094c6c5fd4ed"
     - stage: trinity
-      stageUuid: "e4ae345a-9df8-83d1-8bf5-01504c05b3db"
+      stageUuid: "83c6fa83-1597-8e90-b513-ca6ef06b43b5"
     - stage: boundary
-      stageUuid: "cbaa5250-6b15-8aec-a8ef-e65585d7299f"
+      stageUuid: "4203a604-6854-8e9a-a3df-d811f0dc2872"
     - stage: links
-      stageUuid: "d14d6b1b-7e80-8a75-aa2c-0f53b3e1f766"
+      stageUuid: "756499db-0e80-8788-bbb7-b2babd4f9921"
     - stage: horo
-      stageUuid: "d9897bde-71e4-875d-8ab2-d37b3b09ae69"
+      stageUuid: "f9baa2b2-7353-8d50-ae26-4a9db3270eb7"
     - stage: seal
-      stageUuid: "8b9a9a08-ce6f-84cf-b3d9-5bd061ed1d5b"
+      stageUuid: "aabd1656-3253-8ea4-bfd2-5d12c8b5edc8"
     - stage: uuid
-      stageUuid: "871b4ecb-52e7-8299-b0a4-bb1dd2350a9b"
+      stageUuid: "c876b6ea-f79f-811d-9f86-030a5fcfe213"
 version: 2
 ---
 # cc

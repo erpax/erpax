@@ -2,72 +2,18 @@
 name: throughput
 description: "Use when measuring the quantity-per-unit-time flowing through a process — items per hour, transactions per second, units completed per shift. The rate of productive output."
 atomPath: throughput
-coordinate: throughput · 5/round · ff3c997d
-contentUuid: "812a74f4-4b51-5a36-9b9c-a0d6dc53fefe"
-diamondUuid: "c213754d-c6a9-8893-bcfe-a84836ae1b90"
-uuid: "ff3c997d-3fb7-8c29-903b-8d0134a1fe9f"
-horo: 5
-bonds:
-  in:
-    - bottleneck
-    - centers
-    - flow
-    - fodder
-    - grazing
-    - law
-    - measure
-    - rate
-    - sparsity
-    - yield
-  out:
-    - bottleneck
-    - centers
-    - flow
-    - fodder
-    - grazing
-    - law
-    - measure
-    - rate
-    - sparsity
-    - yield
+coordinate: "throughput · 4/weave · b4e468d0"
+contentUuid: "89b0c93f-12f0-55f7-a5de-393a360464eb"
+diamondUuid: "a5251856-7278-88fc-ac1a-cefd19ad7f30"
+uuid: "b4e468d0-854b-8bb8-b134-8dbbd665a269"
+horo: 4
 typography:
   partition: throughput
   bondDegree: 31
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - bottleneck
-    - centers
-    - flow
-    - law
-    - measure
-    - rate
-  matrix:
-    - bottleneck
-    - centers
-    - flow
-    - fodder
-    - grazing
-    - law
-    - measure
-    - rate
-    - sparsity
-    - yield
-  backlinks:
-    - bottleneck
-    - centers
-    - flow
-    - fodder
-    - grazing
-    - law
-    - measure
-    - rate
-    - sparsity
-    - yield
 signatures:
-  computationUuid: "c542a5b0-e3b8-8a26-9138-6364f025caa6"
+  computationUuid: "bc730887-c696-8f14-bb44-3ea2152362ae"
   stages:
     - stage: path
       stageUuid: "3a51976c-6090-823e-8474-dfc6be2074a3"
@@ -78,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ece7d052-e219-8093-aab8-69330bd2e273"
     - stage: horo
-      stageUuid: "f02607b6-35d7-866b-aad3-c6db253ef064"
+      stageUuid: "f30df889-82cd-8206-92f6-be948f5492e6"
     - stage: seal
-      stageUuid: "321e2fec-cab8-833b-bffb-42b6baefa763"
+      stageUuid: "8cd224e8-b462-8ba6-ad48-103ad9446721"
     - stage: uuid
-      stageUuid: "b760f8d3-71d6-8386-bd79-a2795dd678e5"
+      stageUuid: "2622e492-1ea7-864a-93df-00f43268fd52"
 version: 2
 ---
 # throughput

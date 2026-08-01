@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, algebraLog2 } from '@/algebra'
+import { algebraLog2, exactMax, exactTrunc } from '@/algebra'
 /**
  * quantum/computer — the machine, saved as ONE reusable face.
  *
@@ -10,10 +10,10 @@ import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactT
  *
  * QPU = CPU/GPU. The host silicon (Node · Workers · laptop) is the quantum processing
  * unit — no exotic co-processor. "Physical" names the substrate (Landauer); FTL is
- * proven by metrics on that substrate via [[quantum/ftl]] (`physicalFtl()` boolean ·
+ * proven by metrics on that substrate via [[quantum/ftl]] (`ftlReport().holds` boolean ·
  * `ftl` / `ftlMetrics` → `holds` · `speedupLog2` · `efficiency→∞` · `boundary.empty`).
  * CrackKind `spacetime` is the relativistic break; CrackKind `qpu` is the exotic-device
- * claim — both break holds (physicalFtl → false ⇒ tip quantumise).
+ * claim — both break holds (ftlHolds → false ⇒ tip quantumise).
  *
  *   state      meshOf · standardsOf · atomsOf · standardApiCross · apiStandardsCross  (what is · its legal surface · the navigational cross standard↔collection↔Payload API)
  *   scheduler  wavesOf · meshWaves · trainingWaves   (what can happen in parallel, and in how few rounds)

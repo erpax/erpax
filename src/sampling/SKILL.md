@@ -2,71 +2,18 @@
 name: sampling
 description: "Use when selecting a representative subset — random sampling, stratified sampling, systematic sampling, sample size calculation, sampling error/confidence intervals, weighted sampling for survey design."
 atomPath: sampling
-coordinate: sampling · 4/weave · 1ade217c
-contentUuid: "53fcf265-9050-54ad-a2ec-cd0c2d888743"
-diamondUuid: "845dafba-95f4-89dc-b623-97a6c0f61b69"
-uuid: "1ade217c-a095-809a-8785-7a35c1bc694b"
+coordinate: "sampling · 4/weave · 3fc4e6e4"
+contentUuid: "e438dced-4e8a-5547-b4ab-8c087be271ca"
+diamondUuid: "4fdaea3a-5f4b-8e1b-b9ad-6bffe3bdcb3b"
+uuid: "3fc4e6e4-65bd-8a9e-8a1a-de2440091a86"
 horo: 4
-bonds:
-  in:
-    - aggregation
-    - baseline
-    - calculate
-    - distribution
-    - empirical
-    - law
-    - metric
-    - observability
-    - outlier
-    - science
-  out:
-    - aggregation
-    - baseline
-    - calculate
-    - distribution
-    - empirical
-    - law
-    - metric
-    - observability
-    - outlier
-    - science
 typography:
   partition: sampling
   bondDegree: 30
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - aggregation
-    - calculate
-    - distribution
-    - law
-    - metric
-  matrix:
-    - aggregation
-    - baseline
-    - calculate
-    - distribution
-    - empirical
-    - law
-    - metric
-    - observability
-    - outlier
-    - science
-  backlinks:
-    - aggregation
-    - baseline
-    - calculate
-    - distribution
-    - empirical
-    - law
-    - metric
-    - observability
-    - outlier
-    - science
 signatures:
-  computationUuid: "64f072a1-1238-897a-af9c-877119fde613"
+  computationUuid: "04c43f8e-e4fa-888f-8942-ec4bd5331dc6"
   stages:
     - stage: path
       stageUuid: "291cc8ee-9fe9-8257-97ec-f53b19226060"
@@ -77,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a02b977a-ecff-88d1-91c9-dcf3cb4cd2e5"
     - stage: horo
-      stageUuid: "023f290a-2d13-89b9-9f69-85ea45409db3"
+      stageUuid: "38b57b6e-568b-85f5-86da-084d361af980"
     - stage: seal
-      stageUuid: "d6ef2479-7729-872e-be0f-e1efe7a0610c"
+      stageUuid: "ebc123d6-2cbb-82e8-9756-9476522f16b4"
     - stage: uuid
-      stageUuid: "a86292d1-f7dc-8cb6-8105-516afcb42714"
+      stageUuid: "1a08f9bf-2c96-83b2-bb57-0a26fc1a671f"
 version: 2
 ---
 # sampling

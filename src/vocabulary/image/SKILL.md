@@ -1,86 +1,35 @@
 ---
 name: image
 description: Use when reasoning about image — An image of the item. This can be a URL or a fully described ImageObject.
-atomPath: vocabulary/image
-coordinate: image · 7/descent · a170d8b2
-contentUuid: "c0b58b95-fc0f-5331-ba72-ed94a38e9f7a"
-diamondUuid: "16845376-9707-8f6d-a1fd-1a2736341923"
-uuid: "a170d8b2-c37f-8d42-bafd-05392ccd69b9"
-horo: 7
-bonds:
-  in:
-    - gallery
-    - hermeticism
-    - law
-    - layout
-    - object
-    - orthodoxy
-    - page
-    - primary
-    - snapshot
-  out:
-    - gallery
-    - hermeticism
-    - law
-    - layout
-    - object
-    - orthodoxy
-    - page
-    - primary
-    - snapshot
+atomPath: "vocabulary/image"
+coordinate: "vocabulary/image · 4/weave · ff9ae574"
+contentUuid: "3f4852b9-e4b4-56c4-96b5-44649a711113"
+diamondUuid: "a3d89e17-c93e-8f03-a5d0-bee19781d736"
+uuid: "ff9ae574-a78f-8acc-9d63-3df584e1fadf"
+horo: 4
 typography:
-  partition: image
-  bondDegree: 33
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 46
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - gallery
-    - law
-    - layout
-    - object
-    - page
-    - primary
-    - snapshot
-  matrix:
-    - gallery
-    - hermeticism
-    - law
-    - layout
-    - object
-    - orthodoxy
-    - page
-    - primary
-    - snapshot
-  backlinks:
-    - gallery
-    - hermeticism
-    - law
-    - layout
-    - object
-    - orthodoxy
-    - page
-    - primary
-    - snapshot
 signatures:
-  computationUuid: "b2010f03-2348-86ae-ba41-9207c895b33a"
+  computationUuid: "32784734-f823-8efd-982f-7c1d6dcfa6aa"
   stages:
     - stage: path
-      stageUuid: "c2b4adcb-48bb-8774-ad48-801856e8d651"
+      stageUuid: "4933df4d-acc8-8315-b0e1-7f831b17f206"
     - stage: trinity
-      stageUuid: "bd30e956-5cc3-89e3-a9d2-17865758c03c"
+      stageUuid: "1438abfa-d6b7-8084-96a2-658f5300d09c"
     - stage: boundary
-      stageUuid: "1e3d837d-80ca-89f3-ac5f-ec52b552ef77"
+      stageUuid: "656c8b45-b6b6-8b6b-bb98-1bba56d31521"
     - stage: links
-      stageUuid: "fe11d7db-98ea-8e3c-bda2-ddf00b2f4db3"
+      stageUuid: "f94e479d-8b44-8911-a6d3-a1402c3c5bb2"
     - stage: horo
-      stageUuid: "e96f93b6-7112-88be-b6d8-61573e7e94a4"
+      stageUuid: "d5261256-4e95-8ab3-afea-beceabec1129"
     - stage: seal
-      stageUuid: "6122cdee-4900-8a29-b6eb-b58584b9d740"
+      stageUuid: "bd0847cd-bebd-8cad-879b-ed7391c2c2f9"
     - stage: uuid
-      stageUuid: "e31b65a2-0836-87dc-a87a-9441c87f578a"
+      stageUuid: "be33b9dd-6c75-8cad-9d4a-2672496cbb28"
 version: 2
 ---
 # image

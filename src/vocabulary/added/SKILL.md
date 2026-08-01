@@ -1,78 +1,35 @@
 ---
 name: added
 description: "Use when reasoning about added as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/added
-coordinate: added · 2/share · 35c2aeda
-contentUuid: "defd2402-46e9-5c91-ad3b-afd2199b4789"
-diamondUuid: "9cc5b5b2-3492-84dd-8dfa-b8937ebb249a"
-uuid: "35c2aeda-ca06-8db7-9ffc-79de674e3f64"
+atomPath: "vocabulary/added"
+coordinate: "vocabulary/added · 2/share · 413b3015"
+contentUuid: "72ef4c92-4e74-5b9e-8501-a2fc5ac3e80b"
+diamondUuid: "b8470c00-b2a0-8ae3-83bc-7a3c9cb5a098"
+uuid: "413b3015-b64b-8620-b311-1c6fdf2edd5a"
 horo: 2
-bonds:
-  in:
-    - collapse
-    - included
-    - law
-    - merge
-    - sti
-    - tax
-    - value
-  out:
-    - collapse
-    - included
-    - law
-    - merge
-    - sti
-    - tax
-    - value
 typography:
-  partition: added
+  partition: vocabulary
   bondDegree: 22
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - included
-    - law
-    - merge
-    - sti
-    - tax
-    - value
-  matrix:
-    - collapse
-    - included
-    - law
-    - merge
-    - sti
-    - tax
-    - value
-  backlinks:
-    - collapse
-    - included
-    - law
-    - merge
-    - sti
-    - tax
-    - value
 signatures:
-  computationUuid: "25970a6b-1e64-877d-a092-845dfdeeb433"
+  computationUuid: "a71d92f3-e02e-8673-9269-e22a2ccf3ed5"
   stages:
     - stage: path
-      stageUuid: "990f7a01-9310-8e29-8969-ceca7d814599"
+      stageUuid: "7a45987a-4c21-8fe6-be90-0d583c7c8158"
     - stage: trinity
-      stageUuid: "72243893-11d3-8331-b12f-161cdc012f62"
+      stageUuid: "f63af160-f266-863d-b4d9-0dc7c38a9cc6"
     - stage: boundary
-      stageUuid: "63407aa5-69df-81a8-befd-72e532231b63"
+      stageUuid: "ec2c256b-680b-8b19-bf1a-98ed744e08d0"
     - stage: links
-      stageUuid: "58a1096c-4927-8564-9864-9495829cf10b"
+      stageUuid: "dae31609-0d9b-867c-ab37-c32f1b7ef735"
     - stage: horo
-      stageUuid: "af130c2b-3107-8f39-afc7-2c9151defd72"
+      stageUuid: "1f7b08a5-d1d4-866a-8026-b6e7fa7e0998"
     - stage: seal
-      stageUuid: "50b64036-1210-8cb0-9b09-e13264f0cc33"
+      stageUuid: "f601aa3f-8894-8ea7-8246-2ce704924b7e"
     - stage: uuid
-      stageUuid: "c671a104-b7cf-890c-8099-20d5ece0a1cd"
+      stageUuid: "3867664d-3899-8d10-ad20-59e5623c6f26"
 version: 2
 ---
 # added

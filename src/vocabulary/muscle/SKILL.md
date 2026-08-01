@@ -1,53 +1,35 @@
 ---
 name: muscle
 description: Use when reasoning about muscle — A muscle is an anatomical structure consisting of a contractile form of tissue that animals use to effect movement.
-atomPath: vocabulary/muscle
-coordinate: muscle · 4/weave · ee2ed8f6
-contentUuid: "65084ecf-f133-5271-ac72-0c629533cd14"
-diamondUuid: "89386469-f44f-8b99-947f-30a60ed6a3f2"
-uuid: "ee2ed8f6-7a4c-848c-9eeb-f411cdcf6894"
-horo: 4
-bonds:
-  in:
-    - action
-    - law
-  out:
-    - action
-    - law
+atomPath: "vocabulary/muscle"
+coordinate: "vocabulary/muscle · 5/round · eae69987"
+contentUuid: "5f22c2e4-e200-5131-a480-1ef317145233"
+diamondUuid: "ea3ecebf-512a-878c-8f3e-0ad51d4b1ce4"
+uuid: "eae69987-28a5-8442-9fb6-e126a175af07"
+horo: 5
 typography:
-  partition: muscle
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - law
-  matrix:
-    - action
-    - law
-  backlinks:
-    - action
-    - law
 signatures:
-  computationUuid: "dd424846-aa02-82a4-8a1b-87fea259ca72"
+  computationUuid: "85e55e70-c6cd-89d5-9eb7-87fb36aa23e1"
   stages:
     - stage: path
-      stageUuid: "8802c3d2-14f4-8268-91cd-d5b81effbdaa"
+      stageUuid: "1f677656-52f7-8a64-8d94-5ebe5cd2b202"
     - stage: trinity
-      stageUuid: "a37260f8-edd5-8003-8c2c-401e55f64a1a"
+      stageUuid: "c226a9f3-d765-8b9f-aed6-eaf4eefe1d2a"
     - stage: boundary
-      stageUuid: "0339323e-18c3-818a-9ad6-7e957e9c7598"
+      stageUuid: "59472517-f443-8a13-b47c-eb4982dc528a"
     - stage: links
-      stageUuid: "b688b1bf-2282-890a-91cc-113ec63c2226"
+      stageUuid: "e1b0229b-0099-838f-a637-f0e162721a4a"
     - stage: horo
-      stageUuid: "a4c9da70-78c3-8e96-b321-d491ff0a940c"
+      stageUuid: "5cc9aadd-f945-8978-a554-c7a4c870291b"
     - stage: seal
-      stageUuid: "6b7dea4d-cd3a-839b-b955-334f9419d404"
+      stageUuid: "e20e43e1-9cc4-813e-8c0c-b0ef2a152bc9"
     - stage: uuid
-      stageUuid: "fd1eb6b6-a750-8b94-822e-c0e1662e996a"
+      stageUuid: "7f1ded31-5fae-8d61-abb3-25b49f1257c7"
 version: 2
 ---
 # muscle

@@ -1,68 +1,35 @@
 ---
 name: district
 description: "Use when reasoning about district as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/district
-coordinate: district · 8/crest · 36d068a8
-contentUuid: "8aa38643-765b-5ac5-aae9-25c23baa4ef6"
-diamondUuid: "0c9840f2-66d1-8347-b1a4-38c20b52c34a"
-uuid: "36d068a8-693f-8d25-a5f4-9bd5acf31441"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - school
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - school
-    - sti
+atomPath: "vocabulary/district"
+coordinate: "vocabulary/district · 5/round · 4f40cd16"
+contentUuid: "15e969ab-43a5-5225-997a-20375ac6fe86"
+diamondUuid: "0ae8e06d-77f2-88e2-9f34-225902e76e96"
+uuid: "4f40cd16-4e00-8750-9695-618cb4692916"
+horo: 5
 typography:
-  partition: district
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - school
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - school
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - school
-    - sti
 signatures:
-  computationUuid: "65170c0e-8a6b-817a-8d09-635ab01cc96e"
+  computationUuid: "31dc166d-e35e-85d7-ad76-a0a475538863"
   stages:
     - stage: path
-      stageUuid: "ea9a1845-73dd-8bc4-8bed-9986c4cee293"
+      stageUuid: "cd68594e-c3b7-84f8-8d86-1afd5da4aff8"
     - stage: trinity
-      stageUuid: "2340d1cf-f444-87dc-a376-c9ec0ff79de0"
+      stageUuid: "b3e089e6-4b78-8b25-9e7a-bab21c5c700a"
     - stage: boundary
-      stageUuid: "9906c9e3-b2b8-83a9-aab8-731456093d77"
+      stageUuid: "3cf03219-d85d-8cd8-91ad-20d01b671502"
     - stage: links
-      stageUuid: "3f1035c9-9eeb-857d-af91-c03d079f628e"
+      stageUuid: "00d54c90-ae2a-89cf-9673-da1b3e42c31a"
     - stage: horo
-      stageUuid: "43d0e89f-8171-8663-8659-449bd82ec2b1"
+      stageUuid: "d5161408-e98b-8b82-a970-bfb6c5078d4b"
     - stage: seal
-      stageUuid: "9e9bbb39-5ff5-8a10-b1d7-8345c3ce7478"
+      stageUuid: "943dfe43-a36e-89f6-a2cc-67b2fb01e357"
     - stage: uuid
-      stageUuid: "3f64256f-54fc-8d1b-9c52-d6c6ed99e91c"
+      stageUuid: "54b2a6a9-5507-8015-9614-144d5d79e469"
 version: 2
 ---
 # district

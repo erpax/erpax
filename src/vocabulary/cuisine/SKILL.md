@@ -1,73 +1,35 @@
 ---
 name: cuisine
 description: "Use when reasoning about cuisine as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/cuisine
-coordinate: cuisine · 4/weave · f9f76067
-contentUuid: "0b34d2b2-cca6-5787-8887-7eff7bddfed0"
-diamondUuid: "6767fa16-929d-83cc-9330-0308bfae0e0a"
-uuid: "f9f76067-86aa-8ade-8949-e0d5a66ffbae"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - recipe
-    - serves
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - recipe
-    - serves
-    - sti
+atomPath: "vocabulary/cuisine"
+coordinate: "vocabulary/cuisine · 1/base · 112abc93"
+contentUuid: "b2937e01-39a4-5a42-a62d-8fd37498bbcf"
+diamondUuid: "d6eb55e9-1631-80e8-a383-88ff8e22df53"
+uuid: "112abc93-d2cb-844d-b3e1-bf6654bc6e59"
+horo: 1
 typography:
-  partition: cuisine
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - recipe
-    - serves
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - recipe
-    - serves
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - recipe
-    - serves
-    - sti
 signatures:
-  computationUuid: "327d9fcc-bd1a-8446-a5de-3d2f4c193021"
+  computationUuid: "133053b5-7269-8d08-88fc-3a71478a4a76"
   stages:
     - stage: path
-      stageUuid: "3cd43031-d660-8ff0-9ca4-d41152376d6e"
+      stageUuid: "d8fa4cd8-1963-82ae-8dab-2af2bec481f0"
     - stage: trinity
-      stageUuid: "9cfa1ab1-18d4-84be-a70e-04b4bdfa4a05"
+      stageUuid: "1acf6020-9b1f-8079-9c9f-75cc8fee026a"
     - stage: boundary
-      stageUuid: "ee6f477d-b478-83a0-a054-9b0527a7415a"
+      stageUuid: "bdb0ddce-1934-8894-80e6-65b5a52398ce"
     - stage: links
-      stageUuid: "29b28856-c2b1-8587-8e43-f9b22b62416d"
+      stageUuid: "3eb27f5c-71ff-8faf-be48-9d5553b55341"
     - stage: horo
-      stageUuid: "1dd4a6ca-ce2e-8073-b302-1d6b6f2e5b83"
+      stageUuid: "0fe6f2dc-75f6-8f8b-92f1-48bb457bd93c"
     - stage: seal
-      stageUuid: "bdfc148b-bf48-8656-855a-7603ef438dcb"
+      stageUuid: "268ae2f2-b753-852b-82db-bb6b2f058616"
     - stage: uuid
-      stageUuid: "5d808b0f-437e-8ba1-b36c-794810988e05"
+      stageUuid: "0b084f25-891b-8ae6-9db9-cb723cf838e9"
 version: 2
 ---
 # cuisine

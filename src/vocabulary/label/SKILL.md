@@ -1,123 +1,35 @@
 ---
 name: label
 description: "Use when reasoning about label as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/label
-coordinate: label · 8/crest · b0e58c6d
-contentUuid: "0aa4507a-c8c1-5852-b18e-5922184916e6"
-diamondUuid: "ab0750b3-5bc3-8fc5-90c8-09a82a8e2d60"
-uuid: "b0e58c6d-adeb-8434-a14d-ee8dd82486be"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - customer
-    - defect
-    - details
-    - enumeration
-    - item
-    - law
-    - merge
-    - record
-    - remorse
-    - return
-    - shipping
-    - source
-    - sti
-    - time
-    - transit
-  out:
-    - collapse
-    - customer
-    - defect
-    - details
-    - enumeration
-    - item
-    - law
-    - merge
-    - record
-    - remorse
-    - return
-    - shipping
-    - source
-    - sti
-    - time
-    - transit
+atomPath: "vocabulary/label"
+coordinate: "vocabulary/label · 2/share · f8380923"
+contentUuid: "0f98cf4f-fef7-5c89-a1e9-8d474c245086"
+diamondUuid: "30a5f535-ffa9-8a2b-ad9f-e801558ac801"
+uuid: "f8380923-27c4-81a1-a13a-931204d2821a"
+horo: 2
 typography:
-  partition: label
-  bondDegree: 57
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 59
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - customer
-    - defect
-    - details
-    - enumeration
-    - item
-    - law
-    - merge
-    - record
-    - remorse
-    - return
-    - shipping
-    - source
-    - sti
-    - time
-    - transit
-  matrix:
-    - collapse
-    - customer
-    - defect
-    - details
-    - enumeration
-    - item
-    - law
-    - merge
-    - record
-    - remorse
-    - return
-    - shipping
-    - source
-    - sti
-    - time
-    - transit
-  backlinks:
-    - collapse
-    - customer
-    - defect
-    - details
-    - enumeration
-    - item
-    - law
-    - merge
-    - record
-    - remorse
-    - return
-    - shipping
-    - source
-    - sti
-    - time
-    - transit
 signatures:
-  computationUuid: "76f98aa5-bb02-8b2c-ad31-9b548e45728a"
+  computationUuid: "707024fd-d61a-8f67-bd24-8ff5d29f723d"
   stages:
     - stage: path
-      stageUuid: "77362619-4250-8186-b739-1a509455a062"
+      stageUuid: "75aa0f0e-f75c-8063-a96e-a4347fb61c5d"
     - stage: trinity
-      stageUuid: "091487da-fdeb-8251-afa0-59d4a11775a2"
+      stageUuid: "441d1307-f997-828c-951f-5cd871abc5c2"
     - stage: boundary
-      stageUuid: "c9968358-1499-8c7e-80ae-e583c61b3153"
+      stageUuid: "5eb996a8-9b0e-8b40-baae-f9821405d60e"
     - stage: links
-      stageUuid: "ada2f925-94b5-8208-9d9f-d65dbde57511"
+      stageUuid: "5a192b27-f4f8-8e01-ba05-3d1981c2a7f4"
     - stage: horo
-      stageUuid: "c78fb787-7a2d-85a6-8cc2-ef95d4be0f31"
+      stageUuid: "00ee7351-3406-8b65-b3aa-59580847c0b6"
     - stage: seal
-      stageUuid: "8f379479-364b-8c48-bdb1-d8abdf92cb5f"
+      stageUuid: "fe62af1c-cf1a-8ae3-8493-1b823be4a57c"
     - stage: uuid
-      stageUuid: "dcc5e4f0-cca3-8782-91a7-6042914db121"
+      stageUuid: "9da775bf-09ff-8b9c-b7c1-1ae45d6e1828"
 version: 2
 ---
 # label

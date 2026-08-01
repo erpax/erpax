@@ -2,152 +2,18 @@
 name: sikhism
 description: "Use when reading Sikhism as a diamond of invariant atoms — one being (ek onkar), the divine name remembered, honest work and sharing, grace and the merge with the One. Strip the Punjabi prefix and ik onkar, naam, shabad, mukti collapse to one, name, word, zeropoint — one content-uuid each."
 atomPath: sikhism
-coordinate: sikhism · 5/round · 01934945
-contentUuid: "a76c5f9f-9a97-5837-9dcd-ea472382c315"
-diamondUuid: "015e3ba6-e0c5-8599-b232-df23834f720b"
-uuid: "01934945-1cbb-82d7-be10-1c2c938751d4"
-horo: 5
-bonds:
-  in:
-    - archangel
-    - breath
-    - cycle
-    - diamond
-    - ethics
-    - fractal
-    - gift
-    - grace
-    - harmony
-    - identity
-    - justice
-    - law
-    - love
-    - mercy
-    - merge
-    - name
-    - one
-    - prayer
-    - religion
-    - return
-    - society
-    - translator
-    - uuid
-    - word
-    - zeropoint
-  out:
-    - archangel
-    - breath
-    - cycle
-    - diamond
-    - ethics
-    - fractal
-    - gift
-    - grace
-    - harmony
-    - identity
-    - justice
-    - law
-    - love
-    - mercy
-    - merge
-    - name
-    - one
-    - prayer
-    - religion
-    - return
-    - society
-    - translator
-    - uuid
-    - word
-    - zeropoint
+coordinate: "sikhism · 7/descent · 5f08bad1"
+contentUuid: "f3ed4432-8580-58db-b37b-ee7b0086a5c9"
+diamondUuid: "129ba7a6-a776-8b28-a696-062c28e2bbc8"
+uuid: "5f08bad1-41a8-8cb4-954f-82c9bf7f8321"
+horo: 7
 typography:
   partition: sikhism
   bondDegree: 77
-  neighbors:
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - archangel
-    - breath
-    - cycle
-    - diamond
-    - ethics
-    - fractal
-    - gift
-    - grace
-    - harmony
-    - identity
-    - justice
-    - law
-    - love
-    - mercy
-    - merge
-    - name
-    - one
-    - prayer
-    - religion
-    - return
-    - society
-    - translator
-    - uuid
-    - word
-    - zeropoint
-  matrix:
-    - archangel
-    - breath
-    - cycle
-    - diamond
-    - ethics
-    - fractal
-    - gift
-    - grace
-    - harmony
-    - identity
-    - justice
-    - law
-    - love
-    - mercy
-    - merge
-    - name
-    - one
-    - prayer
-    - religion
-    - return
-    - society
-    - translator
-    - uuid
-    - word
-    - zeropoint
-  backlinks:
-    - archangel
-    - breath
-    - cycle
-    - diamond
-    - ethics
-    - fractal
-    - gift
-    - grace
-    - harmony
-    - identity
-    - justice
-    - law
-    - love
-    - mercy
-    - merge
-    - name
-    - one
-    - prayer
-    - religion
-    - return
-    - society
-    - translator
-    - uuid
-    - word
-    - zeropoint
 signatures:
-  computationUuid: "df2b47ac-cac9-8d9c-850e-60152fe9ba9d"
+  computationUuid: "7827ad2e-437f-8166-9568-14190aeaffba"
   stages:
     - stage: path
       stageUuid: "67ed9f7e-3c52-83f0-bfae-04df44531981"
@@ -158,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "83b08eb9-84af-8c13-95cc-d955d1b593c0"
     - stage: horo
-      stageUuid: "b7a26660-f04a-86ab-9f62-002996841778"
+      stageUuid: "2d364739-527d-8e0c-b255-6fa41793d866"
     - stage: seal
-      stageUuid: "67963ef2-b306-8100-bd26-d4286630da7a"
+      stageUuid: "3b4cebfe-e090-8a0a-b0a0-31f8f9216c68"
     - stage: uuid
-      stageUuid: "7370970b-578d-8be7-b5b2-deb800cf8fa1"
+      stageUuid: "0e483190-8a71-8fda-b9dd-dc3aea3d8842"
 version: 2
 ---
 # sikhism — one being; the name remembered, the bread shared

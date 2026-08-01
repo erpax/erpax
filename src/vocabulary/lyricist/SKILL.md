@@ -1,53 +1,35 @@
 ---
 name: lyricist
 description: Use when reasoning about lyricist — The person who wrote the words.
-atomPath: vocabulary/lyricist
-coordinate: lyricist · 8/crest · 1bd7c4e4
-contentUuid: "99bfa6d0-d70c-5371-aaf7-c0072f2c6c9e"
-diamondUuid: "3f122a58-e17b-861e-b1bf-59089cd96ac9"
-uuid: "1bd7c4e4-da27-8195-ac36-90f1e743923f"
-horo: 8
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/lyricist"
+coordinate: "vocabulary/lyricist · 2/share · 6a2cb0f8"
+contentUuid: "77c5e2f3-be0f-573b-bdc0-4918c0945610"
+diamondUuid: "0b1a2cc5-d0a0-8430-8625-26b9fb3d10e5"
+uuid: "6a2cb0f8-1241-8305-9a75-513328e25e4d"
+horo: 2
 typography:
-  partition: lyricist
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "3a1c0b91-ae17-83b2-a60d-1049ef66f6bb"
+  computationUuid: "d58ae25b-845b-8b6f-8c24-c0daed12009c"
   stages:
     - stage: path
-      stageUuid: "4830ff51-c022-85dc-8f18-cae4ed3259c8"
+      stageUuid: "86e26bcc-233e-8d7d-91e1-06305d9b384e"
     - stage: trinity
-      stageUuid: "6b6d1160-bcda-89d6-88dc-5f9b5c3ff98a"
+      stageUuid: "e6ecca6e-06cb-8b46-b941-dda438e498c5"
     - stage: boundary
-      stageUuid: "7b633f67-829e-80cb-a9ee-5efd90639926"
+      stageUuid: "f5a70320-3897-8af6-85af-b87c816765fa"
     - stage: links
-      stageUuid: "acb644a4-02fb-84b0-acab-82975087e0d9"
+      stageUuid: "754e94a2-537a-8882-b993-a1e4198016a8"
     - stage: horo
-      stageUuid: "ac533866-8805-8045-98ba-1f797328966f"
+      stageUuid: "9cb3b940-d7f4-8c23-af42-72b12965265b"
     - stage: seal
-      stageUuid: "7fa4264b-9742-84ff-a35b-0829bfda842a"
+      stageUuid: "0288203e-53e1-88d9-b300-3afb19b7c2dd"
     - stage: uuid
-      stageUuid: "c407b51f-2aef-8338-82df-1ff51c36fb06"
+      stageUuid: "af3f4bcd-bf5d-81aa-b778-e574db58af2e"
 version: 2
 ---
 # lyricist

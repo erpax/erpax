@@ -1,68 +1,35 @@
 ---
 name: bicycle
 description: "Use when reasoning about bicycle as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/bicycle
-coordinate: bicycle · 1/base · 91f5a700
-contentUuid: "26b6f71d-6864-5c73-b85d-0584c7771658"
-diamondUuid: "af9ea6dd-8468-86c2-bf9a-97f59558be80"
-uuid: "91f5a700-7382-8264-b1b5-f6ddbd42dbb1"
+atomPath: "vocabulary/bicycle"
+coordinate: "vocabulary/bicycle · 1/base · 94f58148"
+contentUuid: "7904de38-b4cb-5b69-bbde-e8f63e523f56"
+diamondUuid: "8513bfca-05e2-8396-bf12-8b0ffd9d1e94"
+uuid: "94f58148-f979-8031-9b1e-12bee3bf2c8c"
 horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - motorized
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - motorized
-    - sti
 typography:
-  partition: bicycle
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - motorized
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - motorized
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - motorized
-    - sti
 signatures:
-  computationUuid: "b99e5cc0-1f99-8037-8093-ae27f9d8f5ab"
+  computationUuid: "4a09af2b-5835-85a8-b269-418e1462631c"
   stages:
     - stage: path
-      stageUuid: "6a69a7d8-e9bc-834e-86ff-45891070bdf3"
+      stageUuid: "410fb841-880a-80c0-ba01-abed47d8971f"
     - stage: trinity
-      stageUuid: "1c4d9c31-5d09-890e-8c5c-fd55f83ac798"
+      stageUuid: "bd8265dd-dce3-8cfe-9eea-78e56873f99b"
     - stage: boundary
-      stageUuid: "9a6392cb-c404-87f6-8593-e7deac726e0c"
+      stageUuid: "f7f2d89c-9a0a-81ed-9ed5-86fc791e7757"
     - stage: links
-      stageUuid: "60300a7f-8cd2-8496-9578-92700c06d577"
+      stageUuid: "9a1c564c-1e0f-8f6f-9bca-b2028c270f03"
     - stage: horo
-      stageUuid: "7eccb61f-7830-83e9-9a7d-4d3e3c606776"
+      stageUuid: "88cfc658-8d22-870a-b88b-d8eca4804320"
     - stage: seal
-      stageUuid: "bd28cc4a-7a14-8344-9957-472064d21543"
+      stageUuid: "10f669a8-187b-80b2-96fe-2d8cb7d6350c"
     - stage: uuid
-      stageUuid: "96965204-a653-8e49-a9b9-cc8eec2b313d"
+      stageUuid: "ba266dcf-c09d-8944-8085-fc44d881e153"
 version: 2
 ---
 # bicycle

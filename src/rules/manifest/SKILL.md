@@ -3,30 +3,13 @@ name: manifest
 description: "Use when a change touches many files at once — a mass edit carries a scalpel manifest naming the reason for every cut, or it is a blind sweep and is refused. Measures the DOOR rather than the discipline, because the scalpel already makes this class of damage impossible (unique-match-or-refuse, reasonless ops refused, collisions named, a red batch restored to the byte) and it changed nothing while it stayed optional: in one session, hand-rolled sweeps spliced an import into a doc comment, left 3,184 SKILL.md half-written, and reverted the work a keep-list was written to preserve."
 atomPath: "rules/manifest"
 coordinate: "rules/manifest"
-contentUuid: "e6577291-5765-5929-9506-79a4e40365a6"
+contentUuid: "97707e7f-0fb4-5eb8-80d9-9d966462e446"
 diamondUuid: "fa8d2612-ba2b-881b-9b8a-bdc88cbe050d"
-bonds:
-  in:
-    - rules
-  out: []
 typography:
   partition: rules
   bondDegree: 8
-  neighbors:
-    - diamond
-    - hallucination
-    - purity
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - confirm
-    - constitution
-    - law
-    - rules
-    - scalpel
-  matrix: []
-  backlinks: []
 signatures:
   computationUuid: "05e4e77e-9b40-8c90-b094-a88d04c4f1fc"
   stages:

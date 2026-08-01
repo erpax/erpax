@@ -1,73 +1,35 @@
 ---
 name: pharmacology
 description: "Use when reasoning about pharmacology as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/pharmacology
-coordinate: pharmacology · 8/crest · f6337323
-contentUuid: "aadfa679-8bde-5291-a2bd-aaf67739cc14"
-diamondUuid: "b4f03f1d-d7ff-8e9f-b662-9cc4edbfb5b9"
-uuid: "f6337323-62cb-8d21-a82f-c58d4c663aa4"
+atomPath: "vocabulary/pharmacology"
+coordinate: "vocabulary/pharmacology · 8/crest · 6b02cc7c"
+contentUuid: "759e0604-6bb4-5677-bd80-f4f97a608069"
+diamondUuid: "987f6b73-9ed8-80b6-bb3a-713dd917557e"
+uuid: "6b02cc7c-c87f-85a3-a011-f23b593ad4f2"
 horo: 8
-bonds:
-  in:
-    - clincal
-    - clinical
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - clincal
-    - clinical
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: pharmacology
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - clincal
-    - clinical
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - clincal
-    - clinical
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - clincal
-    - clinical
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "d5e2cc9a-0a39-83d3-b732-c03902815844"
+  computationUuid: "3b86bbb7-2f50-80c0-b2c2-008c9d351a87"
   stages:
     - stage: path
-      stageUuid: "1115d87a-bd7a-883e-bc08-75dae382238e"
+      stageUuid: "8e796857-40ad-81bc-9be0-763ef4e3c82c"
     - stage: trinity
-      stageUuid: "c7e5bc64-90d4-8da8-9b2f-f4b9ffae0ebd"
+      stageUuid: "5128c973-4eb6-8bfa-aaf9-70d07f3db850"
     - stage: boundary
-      stageUuid: "7a63d47a-e745-8c67-a3af-0a0353478b3f"
+      stageUuid: "abd191e8-11c8-8a67-a9e4-befb0d7cdaf3"
     - stage: links
-      stageUuid: "5a01d527-b19a-875f-84a8-bdfe4bb2edd7"
+      stageUuid: "44739682-f03c-86a1-84ed-7e124f73d8ba"
     - stage: horo
-      stageUuid: "168f1042-f2bb-8ece-8f12-9bfce9140b76"
+      stageUuid: "cb06ba7d-f28c-8b28-8f34-ea531683a242"
     - stage: seal
-      stageUuid: "f3d79b11-df6e-89d7-a622-b2b0395e3088"
+      stageUuid: "4e1fb9e4-cbcf-84bf-92f9-2c159b1f9f88"
     - stage: uuid
-      stageUuid: "265b7d1a-eb75-824f-9051-be5dc84cbae7"
+      stageUuid: "8f1e1f2b-b2dd-84f8-8289-65ebe664e53f"
 version: 2
 ---
 # pharmacology

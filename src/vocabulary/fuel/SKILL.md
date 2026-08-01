@@ -1,83 +1,35 @@
 ---
 name: fuel
 description: "Use when reasoning about fuel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/fuel
-coordinate: fuel · 1/base · 7de7ab65
-contentUuid: "c471e14c-c8a0-5d24-9e6d-52a73ee3af21"
-diamondUuid: "f075027b-36f8-87c2-ab64-6175ad69fc0e"
-uuid: "7de7ab65-691c-8702-a8d0-41d43a22ada4"
+atomPath: "vocabulary/fuel"
+coordinate: "vocabulary/fuel · 1/base · b2354738"
+contentUuid: "6f20210b-6e9a-539a-acd1-fda2566197c7"
+diamondUuid: "a17225f2-9548-814c-a818-61f3387a5df4"
+uuid: "b2354738-e4c9-88e0-b3af-fc6de57215c0"
 horo: 1
-bonds:
-  in:
-    - capacity
-    - collapse
-    - consumption
-    - efficiency
-    - law
-    - merge
-    - sti
-    - type
-  out:
-    - capacity
-    - collapse
-    - consumption
-    - efficiency
-    - law
-    - merge
-    - sti
-    - type
 typography:
-  partition: fuel
+  partition: vocabulary
   bondDegree: 26
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - capacity
-    - collapse
-    - consumption
-    - efficiency
-    - law
-    - merge
-    - sti
-    - type
-  matrix:
-    - capacity
-    - collapse
-    - consumption
-    - efficiency
-    - law
-    - merge
-    - sti
-    - type
-  backlinks:
-    - capacity
-    - collapse
-    - consumption
-    - efficiency
-    - law
-    - merge
-    - sti
-    - type
 signatures:
-  computationUuid: "84f38652-3082-8411-a938-568cffb75e21"
+  computationUuid: "c53de719-4623-88bd-9383-c1b8ed420efc"
   stages:
     - stage: path
-      stageUuid: "e69c9d06-b88c-8d01-bed9-cf42eb293760"
+      stageUuid: "4d3a1232-cf7e-8a6b-8efa-c2c6e546764c"
     - stage: trinity
-      stageUuid: "fc2e7e8f-e258-8af1-924f-dffe29d20326"
+      stageUuid: "120a3f94-7d4a-88b9-aa95-3273480ea816"
     - stage: boundary
-      stageUuid: "392d9941-3558-8ade-a5fe-5c3f562d6881"
+      stageUuid: "ffb5cd8a-6626-83cb-8e9b-7792d7359862"
     - stage: links
-      stageUuid: "a1d09ff2-6b1b-8133-89bf-204359050a3a"
+      stageUuid: "5888045e-7a6d-84ee-86f5-c62ec9c53e4f"
     - stage: horo
-      stageUuid: "ece1689d-59a9-84d0-8db0-fb03aaab5fe4"
+      stageUuid: "d3611e56-5179-8c9f-bc19-02cf4543d7f3"
     - stage: seal
-      stageUuid: "5ea22493-4b6e-8e15-9cd7-695d2e10b5b4"
+      stageUuid: "4de8162b-4109-88ca-a5d7-486ac2cea2b4"
     - stage: uuid
-      stageUuid: "df2238c6-569e-8bfa-949a-2f800a0845f9"
+      stageUuid: "61cab977-97b6-8744-aaa0-772b4488c1e6"
 version: 2
 ---
 # fuel

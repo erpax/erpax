@@ -2,77 +2,18 @@
 name: stack
 description: "Use when managing call frames LIFO under the machine — executable stack nested under [[computer]]; distinct from top-level @/stack deployment palindrome."
 atomPath: "computer/stack"
-coordinate: "computer/stack · 1/base · d1762213"
-contentUuid: "c815bfa1-b25f-525a-a3ea-e8fcf5bc682f"
-diamondUuid: "ad918e6f-88af-8274-bf15-40d4dfb3ce22"
-uuid: "d1762213-b447-853c-8792-33c6bd6b8a36"
+coordinate: "computer/stack · 1/base · cab5a322"
+contentUuid: "32ece538-318a-5fef-9aa4-9756416fc9cb"
+diamondUuid: "b092ca95-b18a-8b6a-969d-bc10286577a1"
+uuid: "cab5a322-4e1a-8e07-9a7b-45e1f3c4984b"
 horo: 1
-bonds:
-  in:
-    - computer
-    - db
-    - deploy
-    - device
-    - entropy
-    - fold
-    - law
-    - merge
-    - payload
-    - pi
-    - torus
-    - uuid
-    - vitepress
-  out:
-    - db
-    - deploy
-    - device
-    - entropy
-    - fold
-    - law
-    - merge
-    - payload
-    - pi
-    - torus
-    - uuid
-    - vitepress
 typography:
   partition: computer
   bondDegree: 38
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - computer
-    - law
-  matrix:
-    - db
-    - deploy
-    - device
-    - entropy
-    - fold
-    - law
-    - merge
-    - payload
-    - pi
-    - torus
-    - uuid
-    - vitepress
-  backlinks:
-    - db
-    - deploy
-    - device
-    - entropy
-    - fold
-    - law
-    - merge
-    - payload
-    - pi
-    - torus
-    - uuid
-    - vitepress
 signatures:
-  computationUuid: "02d60ef4-0b39-849b-983d-314e38a93ce8"
+  computationUuid: "43803d01-fdaf-8434-ad51-28e276b75e84"
   stages:
     - stage: path
       stageUuid: "2e8ce108-e261-83ed-bda5-59958710ef73"
@@ -83,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c0766739-7a79-89eb-a5db-6479bdc79dff"
     - stage: horo
-      stageUuid: "4d105060-985b-8d90-8ee5-fd1d759c0862"
+      stageUuid: "45e004b2-ace8-8bce-98a4-a34778a03179"
     - stage: seal
       stageUuid: "86fe91bb-8699-892c-9852-46a0132c517f"
     - stage: uuid
-      stageUuid: "d18cd544-f68c-836c-bd7a-3e90ce6e7368"
+      stageUuid: "6c7bfa2f-93e6-8a87-a403-9ea9fac65cfa"
 version: 2
 ---
 # computer/stack — LIFO call stack

@@ -2,170 +2,23 @@
 name: stream
 description: "Use when events must move as one continuous tamper-proof current rather than discrete steps — turning the event bus into a typed AsyncIterable, windowing it (tumbling/sliding/session), composing blocks stream-to-stream, and verifying causal Lamport order plus the streamUuid hash-chain."
 atomPath: stream
-coordinate: stream · 7/descent · 2de735a0
-contentUuid: "4e3521f6-31a4-5d0c-9a30-93ddb8124124"
-diamondUuid: "f37edfd0-a54d-8c33-991e-a8767b7cf0d4"
-uuid: "2de735a0-ea50-8687-8a3a-87a251af7150"
-horo: 7
-bonds:
-  in:
-    - akashic
-    - blockchain
-    - breath
-    - cost
-    - digit
-    - distribution
-    - duality
-    - entropy
-    - event
-    - flow
-    - fractal
-    - generate
-    - holographic
-    - horo
-    - identity
-    - integrity
-    - log
-    - merge
-    - number
-    - pi
-    - proof
-    - realtime
-    - seal
-    - sequence
-    - snapshot
-    - standard
-    - sync
-    - thought
-    - uuid
-  out:
-    - akashic
-    - blockchain
-    - breath
-    - cost
-    - digit
-    - distribution
-    - duality
-    - entropy
-    - event
-    - flow
-    - fractal
-    - generate
-    - holographic
-    - horo
-    - identity
-    - integrity
-    - log
-    - merge
-    - number
-    - pi
-    - proof
-    - realtime
-    - seal
-    - sequence
-    - snapshot
-    - standard
-    - sync
-    - thought
-    - uuid
+coordinate: "stream · 2/share · ed964b9a"
+contentUuid: "f165ac75-048b-5d08-92d9-ec2b731b3997"
+diamondUuid: "7783d2a1-d1f9-8880-a03a-78ca92e5e2e8"
+uuid: "ed964b9a-6210-8e12-ab67-288f336dd9dd"
+horo: 2
 typography:
   partition: stream
   bondDegree: 88
-  neighbors: []
 standards:
-  - "ISO 19011:2018 §6.4.6 (every stream window audit-trailed)"
   - "ISO/IEC 25010:2023 §5.2 performance — throughput"
+  - "ISO/IEC 25010:2023 §5.2 performance — throughput`"
   - "Lamport 1978 — distributed-system causal ordering"
-  - ReactiveX / W3C Streams API (AsyncIterable surface)
+  - "ReactiveX / W3C Streams API (AsyncIterable surface)"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - blockchain
-    - breath
-    - cost
-    - distribution
-    - duality
-    - entropy
-    - event
-    - flow
-    - fractal
-    - generate
-    - holographic
-    - horo
-    - identity
-    - integrity
-    - merge
-    - proof
-    - realtime
-    - seal
-    - sequence
-    - snapshot
-    - standard
-    - sync
-    - uuid
-  matrix:
-    - akashic
-    - blockchain
-    - breath
-    - cost
-    - digit
-    - distribution
-    - duality
-    - entropy
-    - event
-    - flow
-    - fractal
-    - generate
-    - holographic
-    - horo
-    - identity
-    - integrity
-    - log
-    - merge
-    - number
-    - pi
-    - proof
-    - realtime
-    - seal
-    - sequence
-    - snapshot
-    - standard
-    - sync
-    - thought
-    - uuid
-  backlinks:
-    - akashic
-    - blockchain
-    - breath
-    - cost
-    - digit
-    - distribution
-    - duality
-    - entropy
-    - event
-    - flow
-    - fractal
-    - generate
-    - holographic
-    - horo
-    - identity
-    - integrity
-    - log
-    - merge
-    - number
-    - pi
-    - proof
-    - realtime
-    - seal
-    - sequence
-    - snapshot
-    - standard
-    - sync
-    - thought
-    - uuid
 signatures:
-  computationUuid: "5b563618-1772-87c8-bd45-dc3f4c40c4ac"
+  computationUuid: "94c6b5ea-79f5-8734-abd9-b628d0e240ce"
   stages:
     - stage: path
       stageUuid: "51d134f1-3abd-8c47-9170-1321d632d4a4"
@@ -176,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "2e395970-a8a8-86ba-ab3e-ef62dc6cd545"
     - stage: horo
-      stageUuid: "51a3be7c-01e9-8e7f-b461-bc1caabf0d7f"
+      stageUuid: "cc5072e9-d49c-87fc-8068-2f9286b1b00a"
     - stage: seal
-      stageUuid: "c342d8d6-199a-8b00-acb2-c5c86894d203"
+      stageUuid: "d488909d-306a-8ff0-8467-13acf6de2810"
     - stage: uuid
-      stageUuid: "f61c4a18-93de-89a9-a597-bafbab503761"
+      stageUuid: "8054839b-bc0c-8aba-a895-ccfac7130a40"
 version: 2
 ---
 # streams — the quantum, continuous dual of discrete events

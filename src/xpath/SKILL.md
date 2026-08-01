@@ -1,38 +1,20 @@
 ---
 name: xpath
-description: "Use when reasoning about xpath — An XPath, e.g. of a SpeakableSpecification or WebPageElement. In the latter case, multiple matches within a page can constitute a single conceptual \\\"Web page element\\\"."
+description: "Use when reasoning about xpath — An XPath, e.g. of a SpeakableSpecification or WebPageElement. In the latter case, multiple matches within a page can constitute a single conceptual \\\\\\\"Web page element\\\\\\\"."
 atomPath: xpath
-coordinate: xpath · 2/share · bc02fc59
-contentUuid: "a865b08a-c06f-5a43-a443-5a3bfd8316aa"
-diamondUuid: "cb14bd87-ce0e-8600-9156-84ca7a4d1e38"
-uuid: "bc02fc59-4387-8428-adca-d71eefbe45ea"
-horo: 2
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+coordinate: "xpath · 5/round · fa1446e3"
+contentUuid: "c1300857-3f84-59f5-aa0a-f9620ee01171"
+diamondUuid: "d3501ac6-ff3b-8126-874b-98262900b184"
+uuid: "fa1446e3-1641-8b28-88b0-bac299f4881d"
+horo: 5
 typography:
   partition: xpath
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "6782e80a-89ab-8b2c-84e4-59b8a5f2f7fe"
+  computationUuid: "0cd73dc4-652c-801b-90e8-1c9dfb80c8ad"
   stages:
     - stage: path
       stageUuid: "489da6f5-adff-8762-ad1a-c2e63a7294ca"
@@ -43,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bf2ddef5-0503-8655-b4ad-a44318d1ea3d"
     - stage: horo
-      stageUuid: "c41f4697-e759-8c06-8cf7-aebccf5c03b5"
+      stageUuid: "86997539-5c05-81ce-beda-343f1a628057"
     - stage: seal
-      stageUuid: "70eadf8e-8d2f-8709-a4ce-7a45f174d2fa"
+      stageUuid: "82050cf9-c2d3-8819-b8d1-b1339779f0c7"
     - stage: uuid
-      stageUuid: "c181a2d0-7771-8f35-b3ef-04d4294631da"
+      stageUuid: "e8c51d53-f78d-8278-871c-b24086a0add2"
 version: 2
 ---
 # xpath

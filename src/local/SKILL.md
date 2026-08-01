@@ -3,67 +3,15 @@ name: local
 description: "Use when reasoning about local — Use before fetching anything — a remote read returns a rendering, a local read returns bytes. Measured four times in one session: a web fetch runs a small model over a page and returns its prose, which was then quoted as verbatim and used to contradict a human, while a local clone sat on disk; the free AI lanes returned 402 and 405 while the local seal book answered at tokens 0; every corpus frontier computed locally in one pass; sixteen defects caught by local gates and none by anything remote. localFirst resolves to the local copy whenever it exists, and a remote read whose local counterpart is present is named as a downgrade."
 atomPath: local
 coordinate: "message/local · 1/base · dc80c276"
-contentUuid: "f2afb98b-5f54-52f5-ae39-25a925ef727b"
+contentUuid: "b3004699-e004-5741-b886-4c2e59eb235d"
 diamondUuid: "5910cab9-b265-87e3-8b1c-442be826b70f"
 uuid: "dc80c276-4751-8e40-9d5b-4ae2492911fd"
 horo: 1
-bonds:
-  in:
-    - business
-    - confirm
-    - gate
-    - law
-    - message
-    - quantum
-    - send
-    - superposition
-    - transport
-  out:
-    - business
-    - confirm
-    - gate
-    - law
-    - message
-    - quantum
-    - send
-    - superposition
-    - transport
 typography:
   partition: local
-  bondDegree: 41
-  neighbors:
-    - agent
-    - diamond
-    - hallucination
-    - purity
+  bondDegree: 44
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agent
-    - grounded
-    - law
-    - quantum
-  matrix:
-    - business
-    - confirm
-    - gate
-    - law
-    - message
-    - quantum
-    - send
-    - superposition
-    - transport
-  backlinks:
-    - business
-    - confirm
-    - gate
-    - law
-    - message
-    - quantum
-    - send
-    - superposition
-    - transport
 signatures:
   computationUuid: "7d054015-4044-8370-863e-f0bed87e8450"
   stages:

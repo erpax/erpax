@@ -1,71 +1,34 @@
 ---
 name: interview
 description: "Use when conducting or documenting a recorded conversation for research, hiring, or feedback — structured interviews, recorded sessions, interview notes, transcripts, insights extracted."
-atomPath: vocabulary/interview
-coordinate: interview · 8/crest · 880988ad
-contentUuid: "a678c99e-25f5-5dc0-a9f3-ec005c7c0a37"
-diamondUuid: "b9d8683e-b415-8113-9c33-091fbeca1f02"
-uuid: "880988ad-702c-88e3-a1eb-b6677ea08c9b"
-horo: 8
-bonds:
-  in:
-    - activities
-    - comment
-    - feedback
-    - pipelines
-    - research
-    - time
-  out:
-    - activities
-    - comment
-    - feedback
-    - pipelines
-    - research
-    - time
+atomPath: "vocabulary/interview"
+coordinate: "vocabulary/interview · 7/descent · dc0c8830"
+contentUuid: "5008d2da-41a6-5b6d-a447-fafe42586fec"
+diamondUuid: "1c8e5509-f2ff-8d5b-9e8d-26f0b71b7dd4"
+uuid: "dc0c8830-5516-8f90-bb53-66a626c33b20"
+horo: 7
 typography:
-  partition: interview
+  partition: vocabulary
   bondDegree: 18
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - activities
-    - comment
-    - pipelines
-    - research
-    - time
-  matrix:
-    - activities
-    - comment
-    - feedback
-    - pipelines
-    - research
-    - time
-  backlinks:
-    - activities
-    - comment
-    - feedback
-    - pipelines
-    - research
-    - time
 signatures:
-  computationUuid: "ffa9d177-2007-8a87-bf3a-c0137139a374"
+  computationUuid: "9def6533-2b22-8226-a60f-7369c1ef64be"
   stages:
     - stage: path
-      stageUuid: "ad8c1029-43b2-841e-b17d-d71af3411696"
+      stageUuid: "55ab7ba8-47a9-8d7c-b575-15a9083ac546"
     - stage: trinity
-      stageUuid: "33f90de7-3003-8156-ae2a-354ee73406b2"
+      stageUuid: "b3008858-1b44-8bab-ae89-b594290e04bf"
     - stage: boundary
-      stageUuid: "87269cc8-acb8-8ae1-8829-61a14728c0d8"
+      stageUuid: "818d25ad-9ddc-8c3c-9c9f-21e8660301c2"
     - stage: links
-      stageUuid: "1f3be583-3a1d-8db6-9d11-e7fcd3ad67cc"
+      stageUuid: "96f10876-d032-8a1a-8663-e050a41e2e83"
     - stage: horo
-      stageUuid: "ed239d4a-05a4-87a2-bd30-8bfc74355c59"
+      stageUuid: "e07860a9-a929-82ba-9840-11507cfa1e28"
     - stage: seal
-      stageUuid: "c823c54c-a99d-8684-ab7d-87808f5ba279"
+      stageUuid: "b1c0c37a-7a19-8606-80e6-43e41b5712ed"
     - stage: uuid
-      stageUuid: "b6c10c24-845f-825e-bbff-28db9d769119"
+      stageUuid: "0f90c711-b16a-8660-bcbb-c19854ed8f4e"
 version: 2
 ---
 # interview

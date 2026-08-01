@@ -2,51 +2,19 @@
 name: resources
 description: "Use when cataloguing or querying reservable assets — rooms, vehicles, equipment, beds, machinery, parking, co-working desks, time slots — across hospitality, fleet, facility management or field-service; rate ladders, availability windows, yield management, GL/tax linkage. The agnostic resource-booking master — pairs with bookings."
 atomPath: "bookable/resources"
-coordinate: "bookable/resources · 1/base · ce5385c5"
-contentUuid: "e97f2fa5-80f4-55b4-a75a-2b362f9e03f4"
-diamondUuid: "58788faa-e42d-87b0-869b-706f31bb3e7c"
-uuid: "ce5385c5-344a-8e2b-b215-829c9de369ac"
-horo: 1
-bonds:
-  in:
-    - accounting
-    - bookings
-    - commerce
-    - currency
-    - identity
-    - law
-    - proof
-    - requests
-    - schedule
-  out:
-    - accounting
-    - bookings
-    - commerce
-    - currency
-    - identity
-    - law
-    - proof
-    - requests
-    - schedule
+coordinate: "bookable/resources · 7/descent · c1f1e491"
+contentUuid: "2242b42b-c631-5d99-8143-d8f671b8569f"
+diamondUuid: "fc8b76e3-a2cd-8c3f-bd20-c4943a34574b"
+uuid: "c1f1e491-9315-818b-ac15-7191e07755b4"
+horo: 7
 typography:
   partition: bookable
   bondDegree: 29
-  neighbors: []
 standards:
   - "COSO-ERM-2017"
-  - "EU-2014/55"
-  - "EU-2017/1132"
-  - "EU-2017/828"
-  - "EU-2018/1673"
-  - "EU-2018/1725"
-  - "EU-2018/302"
-  - "EU-2018/389-SCA-RTS"
-  - "EU-2018/843"
-  - "EU-2018/957"
   - "EU-537/2014"
   - "EU-910/2014"
   - "EU-Taxonomy-2020/852"
-  - "ILO-C100"
   - "ISO-18513:2021 tourism-services-vocabulary (when kind=hotel_room)"
   - "ISO-18513:2021 tourism-services-vocabulary (when kind=hotel_room)`"
   - "ISO-3166-1"
@@ -67,37 +35,8 @@ standards:
   - "US-CTA-2021"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - bookings
-    - commerce
-    - currency
-    - identity
-    - law
-    - proof
-  matrix:
-    - accounting
-    - bookings
-    - commerce
-    - currency
-    - identity
-    - law
-    - proof
-    - requests
-    - schedule
-  backlinks:
-    - accounting
-    - bookings
-    - commerce
-    - currency
-    - identity
-    - law
-    - proof
-    - requests
-    - schedule
 signatures:
-  computationUuid: "92fe5f04-9b2d-87cb-80c2-f546441c32a8"
+  computationUuid: "e99b190f-d6c6-8acf-ad32-c43665301ea0"
   stages:
     - stage: path
       stageUuid: "f77a0aee-62e8-8424-bbc2-50584a8581f8"
@@ -108,11 +47,11 @@ signatures:
     - stage: links
       stageUuid: "653f04e6-f340-8b45-92d9-1d0b91b2231a"
     - stage: horo
-      stageUuid: "1977a811-b9a9-88c9-b7f0-472c6a321867"
+      stageUuid: "b8494402-deb7-8590-8fa8-ee2eaddcec98"
     - stage: seal
       stageUuid: "6b3a345e-3bb1-8a14-951f-f8e3d62d9855"
     - stage: uuid
-      stageUuid: "328b4534-97d7-88ff-8a9b-182f685a5e41"
+      stageUuid: "ac49ed6f-cdf3-8a42-bd91-f22ed77cb4e6"
 version: 2
 ---
 # bookable-resources

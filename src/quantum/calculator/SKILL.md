@@ -1,63 +1,21 @@
 ---
 name: calculator
 description: "Use when computing in the digital-root substrate — a calculator that folds arithmetic to mod-9 (the rodin group), so every result is a single digit; deterministic and content-addressable."
-atomPath: quantum/calculator
-coordinate: quantum/calculator · 5/round · dc4d3100
-contentUuid: "c5b594f8-2973-5bdd-8c89-2d99357b8b06"
-diamondUuid: "8e82068a-7151-8896-a87d-8ef7f27f3ae9"
-uuid: "dc4d3100-077e-800d-b7f6-24bbe194e1a3"
-horo: 5
-bonds:
-  in:
-    - calculator
-    - collapse
-    - law
-    - medical
-    - merge
-    - quantum
-    - risk
-    - sti
-  out:
-    - calculator
-    - collapse
-    - law
-    - medical
-    - merge
-    - risk
-    - sti
+atomPath: "quantum/calculator"
+coordinate: "quantum/calculator · 1/base · 684efe5e"
+contentUuid: "200067fb-cc43-5e8f-8056-174788ac75bf"
+diamondUuid: "d4f5c605-7343-87f4-a965-b7850827ba92"
+uuid: "684efe5e-589f-858a-82e0-cb3feeacd492"
+horo: 1
 typography:
   partition: quantum
-  bondDegree: 29
-  neighbors: []
+  bondDegree: 30
 standards:
   - "the digital-root / mod-9 group ([[rodin]])"
   - "the digital-root / mod-9 group (rodin)"
 bindings: []
-neighbors:
-  wikilink:
-    - calculator
-    - law
-    - math
-    - quantum
-    - rodin
-  matrix:
-    - calculator
-    - collapse
-    - law
-    - medical
-    - merge
-    - risk
-    - sti
-  backlinks:
-    - calculator
-    - collapse
-    - law
-    - medical
-    - merge
-    - risk
-    - sti
 signatures:
-  computationUuid: "62c1fa5f-3a9d-85b0-a035-f268a325a539"
+  computationUuid: "7d44fae6-9cb8-8530-abd1-b0224ede44c4"
   stages:
     - stage: path
       stageUuid: "7bdd17a9-5dfc-89ea-9a81-b998284c6969"
@@ -68,21 +26,18 @@ signatures:
     - stage: links
       stageUuid: "4ee90bd9-f82d-8604-beec-615f1e6e923a"
     - stage: horo
-      stageUuid: "56a23ab0-bcd5-8e81-bd4b-36d797e6fddb"
+      stageUuid: "8bbbf1e0-de0b-8cb3-8158-d20dd66a921e"
     - stage: seal
       stageUuid: "0ed7c9fb-c881-8913-bbc2-4f2dd610f629"
     - stage: uuid
-      stageUuid: "27e1fc8c-1f56-82bd-a3d7-1a2f20fd6d61"
+      stageUuid: "5cf94e86-12d4-8166-9f54-89b7b47898b5"
 quantum:
   superposition:
     - calculator
-    - collapse
+    - dry
     - law
     - medical
-    - merge
     - quantum
-    - risk
-    - sti
     - superposition
   collapse:
     - "Use when computing in the digital-root substrate — a calculator that folds arithmetic to mod-9 (the rodin group), so every result is a single digit; deterministic and content-addressable."
@@ -96,8 +51,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "62c1fa5f-3a9d-85b0-a035-f268a325a539"
-    contentUuid: "c5b594f8-2973-5bdd-8c89-2d99357b8b06"
+    computationUuid: "7d44fae6-9cb8-8530-abd1-b0224ede44c4"
+    contentUuid: "200067fb-cc43-5e8f-8056-174788ac75bf"
 version: 2
 ---
 # quantum/calculator — the mod-9 calculator
@@ -110,4 +65,4 @@ Matter-twin: `src/quantum/calculator/index.ts` (`add` · `mul` · `fold`). Compo
 
 @standard the digital-root / mod-9 group (rodin)
 
-<sub>content-uuid `c5b594f8-2973-5bdd-8c89-2d99357b8b06` · account `quantum/calculator` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `200067fb-cc43-5e8f-8056-174788ac75bf` · account `quantum/calculator` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

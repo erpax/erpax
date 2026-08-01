@@ -1,123 +1,35 @@
 ---
 name: rating
 description: "Use when reasoning about rating — A rating is an evaluation on a numeric scale, such as 1 to 5 stars."
-atomPath: vocabulary/rating
-coordinate: rating · 5/round · f0522ad5
-contentUuid: "15314e29-9732-53fa-83f6-e49c2e5528fd"
-diamondUuid: "6afeac0b-a1af-8d13-ba43-9a580f2f7017"
-uuid: "f0522ad5-5be2-883f-80ba-eefcd2b43b59"
-horo: 5
-bonds:
-  in:
-    - aggregate
-    - best
-    - certification
-    - content
-    - count
-    - employer
-    - endorsement
-    - enumeration
-    - explanation
-    - law
-    - manipulation
-    - media
-    - review
-    - star
-    - value
-    - worst
-  out:
-    - aggregate
-    - best
-    - certification
-    - content
-    - count
-    - employer
-    - endorsement
-    - enumeration
-    - explanation
-    - law
-    - manipulation
-    - media
-    - review
-    - star
-    - value
-    - worst
+atomPath: "vocabulary/rating"
+coordinate: "vocabulary/rating · 2/share · 054c0ad9"
+contentUuid: "66464458-fe8a-5ca0-8c71-7b93ef0170b9"
+diamondUuid: "1c325eb9-a041-8b1b-8500-e931c241a1f0"
+uuid: "054c0ad9-2087-8232-a831-6d62372bcc00"
+horo: 2
 typography:
-  partition: rating
-  bondDegree: 60
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 62
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - aggregate
-    - best
-    - certification
-    - content
-    - count
-    - employer
-    - endorsement
-    - enumeration
-    - explanation
-    - law
-    - manipulation
-    - media
-    - review
-    - star
-    - value
-    - worst
-  matrix:
-    - aggregate
-    - best
-    - certification
-    - content
-    - count
-    - employer
-    - endorsement
-    - enumeration
-    - explanation
-    - law
-    - manipulation
-    - media
-    - review
-    - star
-    - value
-    - worst
-  backlinks:
-    - aggregate
-    - best
-    - certification
-    - content
-    - count
-    - employer
-    - endorsement
-    - enumeration
-    - explanation
-    - law
-    - manipulation
-    - media
-    - review
-    - star
-    - value
-    - worst
 signatures:
-  computationUuid: "3d12e242-36f8-87d4-990d-4bd262b2f860"
+  computationUuid: "ddd00f32-6987-8ba7-816c-e2e4fcc9a8d6"
   stages:
     - stage: path
-      stageUuid: "d00fcf9a-d2a9-84d1-8dc9-e80c2778ae6c"
+      stageUuid: "b3d84782-633d-8a13-9780-3df73756f0d0"
     - stage: trinity
-      stageUuid: "dd888d69-4f17-870f-b098-3585d0bb35e2"
+      stageUuid: "a72c57a2-e362-8fcb-a406-e097449cd108"
     - stage: boundary
-      stageUuid: "c8acd6bc-fc57-8a9b-b67d-47e18e117a33"
+      stageUuid: "dfa72329-4732-8914-a8b0-8fbcacd1c8ec"
     - stage: links
-      stageUuid: "44cf1fda-5c59-8ed1-ae21-4e37c64f13fa"
+      stageUuid: "c392cae8-b93a-8fd7-bb69-98700a67bba5"
     - stage: horo
-      stageUuid: "6e68d644-a029-8399-8117-ee938fd677f8"
+      stageUuid: "ed8550fc-534b-8343-a1af-c011e0e22d52"
     - stage: seal
-      stageUuid: "229b2876-3e26-8888-8db8-c063bd321368"
+      stageUuid: "094d5c6b-7af7-856a-bc8a-66fd69a35911"
     - stage: uuid
-      stageUuid: "b73bc4f6-7979-80f7-84ea-a400c8cbfa06"
+      stageUuid: "8716f1af-c0a8-8804-b478-215a42c89ee2"
 version: 2
 ---
 # rating

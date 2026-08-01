@@ -2,56 +2,59 @@
  * convention/complete — the TRINITY-COMPLETENESS convention as a computed, self-measuring atom.
  *
  * THE LAW: an atom is the trinity {SKILL.md, index.ts, test.ts} — the antimatter (SKILL.md),
- * the matter (index.ts), and the proof (test.ts), told three times and rendered once ([[trinity]]).
- * This atom does not RE-IMPLEMENT the corpus walk; it COMPOSES the canonical one and reports a
- * single live coverage over the real tree:
+ * the matter (index.ts), and the proof (test.ts) ([[trinity]]). This atom reports one coverage:
  *
  *   coverage = complete / total
- *     total    = walkSkills('src').length            (@/aura — every atom that has a SKILL.md)
+ *     total    = atoms (a committed SKILL.md) in the SEALED tree
  *     complete = those whose dir ALSO carries index.ts AND test.ts (the matter-twin + its proof)
  *
- * Pure math, no default: total > 0 by architecture (the corpus is non-empty — many atoms carry a
- * SKILL.md), and complete is a subset count, so 0 ≤ complete ≤ total and the ratio is in [0,1] by
- * construction — no clamp, no fallback. coverage → 1 ⟺ every SKILL.md atom is a full trinity ⟺
- * zero matter-gap ⟺ infinitely-expanding tamper-[[cost]] ([[law]]). A pure-skill atom (a bare
- * schema.org component word with no matter-twin) legitimately lacks index.ts/test.ts and is the
- * only thing that pulls coverage below 1.
+ * REGROUNDED ([[grounded]]): existence is read from the SEALED path index (git HEAD, SHA-addressed)
+ * via [[grounded]] `sealedPaths` — ONE query, reused — never `existsSync` over the mutable
+ * `process.cwd()` tree. So the completeness coverage is priced on sealed content: a trinity that is
+ * not committed does not count, which is the honest state (uncommitted matter is not sealed matter).
  *
- *   tsx src/convention/complete/index.ts   # prints total / complete / coverage from the live tree
+ * Pure math, no default: total > 0 by architecture (the corpus is non-empty), complete is a subset
+ * count, so coverage ∈ [0,1] by construction. coverage → 1 ⟺ every SKILL.md atom is a full trinity.
  *
- * Matter-twin: ../../aura (the one corpus walk — walkSkills — this convention measures over) ·
- *   ../../trinity (the doc-scale three-told-once law this convention enforces on disk).
+ *   tsx src/convention/complete/index.ts   # prints total / complete / coverage from the sealed tree
+ *
  * @standard schema.org — the type vocabulary, collided to single words
- * @see @/aura (walkSkills) · @/convention/dry (the sibling self-measuring convention) · @/trinity · ./SKILL.md
+ * @see @/grounded (sealed primitives) · @/convention/dry · @/trinity · ./SKILL.md
  */
-import { existsSync } from 'node:fs'
 import { dirname, join } from 'node:path'
-import { walkSkills } from '@/aura'
+
+import { sealedPaths } from '@/grounded'
 
 const SRC = 'src'
 
-/** Every atom that has a SKILL.md — the corpus, via the ONE canonical walk (no duplicated walk). */
-export function total(root = SRC): number {
-  return walkSkills(root).length
+/** Committed SKILL.md atom directories in the SEALED tree. */
+function sealedAtomDirs(): string[] {
+  const dirs: string[] = []
+  for (const p of sealedPaths()) if (p.startsWith(SRC + '/') && p.endsWith('/SKILL.md')) dirs.push(dirname(p))
+  return dirs
+}
+
+/** Every atom that has a SKILL.md in the sealed tree. */
+export function total(): number {
+  return sealedAtomDirs().length
 }
 
 /** A SKILL.md atom is COMPLETE iff its dir also carries the matter-twin (index.ts) and its proof (test.ts). */
-export const isComplete = (skillPath: string): boolean =>
-  existsSync(join(dirname(skillPath), 'index.ts')) && existsSync(join(dirname(skillPath), 'test.ts'))
-
-/** The atoms that are full trinities — SKILL.md ∧ index.ts ∧ test.ts. */
-export function complete(root = SRC): number {
-  return walkSkills(root).filter(isComplete).length
+export const isComplete = (skillPath: string): boolean => {
+  const dir = dirname(skillPath)
+  return sealedPaths().has(join(dir, 'index.ts')) && sealedPaths().has(join(dir, 'test.ts'))
 }
 
-/**
- * Live trinity-completeness coverage over the real tree: complete / total, in [0,1] by
- * construction (0 ≤ complete ≤ total, total > 0). 1 ⟺ every SKILL.md atom is a full
- * {SKILL.md, index.ts, test.ts} trinity. Pure over the same tree — no default, no clock.
- */
-export function coverage(root = SRC): number {
-  const skills = walkSkills(root)
-  return skills.filter(isComplete).length / skills.length
+/** The atoms that are full trinities — SKILL.md ∧ index.ts ∧ test.ts (sealed). */
+export function complete(): number {
+  return sealedAtomDirs().filter((d) => isComplete(join(d, 'SKILL.md'))).length
+}
+
+/** Sealed trinity-completeness coverage: complete / total ∈ [0,1]; 1 ⟺ every SKILL.md atom is a full trinity. */
+export function coverage(): number {
+  const atoms = sealedAtomDirs()
+  if (atoms.length === 0) return 1
+  return atoms.filter((d) => isComplete(join(d, 'SKILL.md'))).length / atoms.length
 }
 
 if (import.meta.url === 'file://' + process.argv[1]) {

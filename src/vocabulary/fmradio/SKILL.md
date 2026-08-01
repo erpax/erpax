@@ -1,63 +1,35 @@
 ---
 name: fmradio
 description: "Use when reasoning about fmradio as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/fmradio
-coordinate: fmradio · 2/share · 56e13ebe
-contentUuid: "c5d92bbe-227a-5c78-9888-98e111a30c4c"
-diamondUuid: "a5c2640e-230a-8c33-8628-55f7bf8abe01"
-uuid: "56e13ebe-4c52-8840-8025-d122e113c4e6"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/fmradio"
+coordinate: "vocabulary/fmradio · 1/base · 490e5bb2"
+contentUuid: "12d075bb-693c-53ea-8cc9-3df4c0b898da"
+diamondUuid: "b3b69e85-7aeb-87dd-99bb-42ef26cdc22a"
+uuid: "490e5bb2-1818-8ad7-a7d7-9468b0616f55"
+horo: 1
 typography:
-  partition: fmradio
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "5b149f25-4ed3-849d-8c8a-c5ece3f05575"
+  computationUuid: "30b753a0-b615-8290-a1cd-4eb2b43a010d"
   stages:
     - stage: path
-      stageUuid: "71dfbed7-1160-863a-9650-96f87fdd9584"
+      stageUuid: "60bfd056-301f-866d-9402-1455485ed72a"
     - stage: trinity
-      stageUuid: "64bbba94-ee82-873a-9f75-f5409c790d45"
+      stageUuid: "d7e99fe6-6d75-8373-822b-2000e91eeac0"
     - stage: boundary
-      stageUuid: "2c5abdd3-175a-8fc7-821b-854b6ca22223"
+      stageUuid: "514842d3-a4e3-8b0a-a960-f1c0e32bb3d7"
     - stage: links
-      stageUuid: "c0f178bd-122f-8104-8092-2dfdc448f596"
+      stageUuid: "b78b64c0-9f42-8f1b-a0b1-1601f19abdef"
     - stage: horo
-      stageUuid: "04e64e5c-3670-8c19-9ecf-65ce190fa737"
+      stageUuid: "cbefabc2-99db-816a-b8ee-449dd238d423"
     - stage: seal
-      stageUuid: "445eccd0-a057-8c2d-8801-4d22fab29e5b"
+      stageUuid: "4be2bf11-2010-87e6-ab7b-1da6311b26bb"
     - stage: uuid
-      stageUuid: "f615d688-9897-89f7-968d-09bb73741f98"
+      stageUuid: "fd784677-d1b8-8a4d-a578-89fc321ff390"
 version: 2
 ---
 # fmradio

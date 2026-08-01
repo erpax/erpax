@@ -1,68 +1,35 @@
 ---
 name: domiciled
 description: "Use when reasoning about domiciled as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/domiciled
-coordinate: domiciled · 1/base · 7901246d
-contentUuid: "88d8faa4-288e-58c8-a6a8-bf3ebcf14ce2"
-diamondUuid: "724c93a0-529a-8275-9ee0-faa13c0015c2"
-uuid: "7901246d-cbbf-8e66-9ee3-ae256bf137e8"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - mortgage
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - mortgage
-    - sti
+atomPath: "vocabulary/domiciled"
+coordinate: "vocabulary/domiciled · 5/round · 44c38257"
+contentUuid: "0fc0364a-a45c-5d55-9b88-f48266d8c4ec"
+diamondUuid: "8cad7e7a-a6cd-807a-988a-14accabc5a49"
+uuid: "44c38257-4d58-8724-b15c-069cb80cef6f"
+horo: 5
 typography:
-  partition: domiciled
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - mortgage
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - mortgage
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - mortgage
-    - sti
 signatures:
-  computationUuid: "c75abbb7-a9ea-8ce2-8980-fc2e1b735bc2"
+  computationUuid: "6ed671f1-fd9e-838f-9773-b53bd7ebfbc8"
   stages:
     - stage: path
-      stageUuid: "2d96ab2f-9918-83e4-82a5-3434b2af256f"
+      stageUuid: "2a86a0ee-5162-8b54-b493-52263b6e3f8d"
     - stage: trinity
-      stageUuid: "f60b694b-cacc-8d2d-a869-342a2b34dcae"
+      stageUuid: "3c786aa0-5f46-89c1-a983-c41e2e3ad8bf"
     - stage: boundary
-      stageUuid: "e31e25b5-0ac0-8429-ac1f-756733d487b6"
+      stageUuid: "fe3bf64c-2a3f-8711-be6f-3f3497b801c6"
     - stage: links
-      stageUuid: "df699fb3-cc15-8eb1-ac12-24b2ae349cea"
+      stageUuid: "bd7e8472-4fd0-80b3-804a-662827e944e8"
     - stage: horo
-      stageUuid: "24b29921-bbbe-8e14-b1e2-fd564f0e82b9"
+      stageUuid: "54d95cee-69f3-83ed-9038-f19fde53315e"
     - stage: seal
-      stageUuid: "a257d802-eaeb-8069-937e-6cd88b294cc9"
+      stageUuid: "0db0d4af-bc09-8f5e-b362-ac7f6e2cbae0"
     - stage: uuid
-      stageUuid: "4a77d685-2d4d-8a7d-8245-6a4070ad3d70"
+      stageUuid: "0cd8e188-280e-891b-b098-c11d8b11ec30"
 version: 2
 ---
 # domiciled

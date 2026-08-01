@@ -2,173 +2,19 @@
 name: method
 description: "Use when reasoning about exported symbols as method-diamonds — every method name has a path of diamonds (the atom chain from corpus root to its index.ts barrel, plus the symbol at the leaf); compute methodPath/scanMethodPaths for addresses and boundary uuids; schema.org 'method' vocabulary is the collided homonym."
 atomPath: method
-coordinate: "method · 5/round · 9fa14842"
-contentUuid: "82928f85-86d6-55d5-9a5c-939ceb828e02"
-diamondUuid: "019c370a-3e52-87cc-97e8-02e4866a929c"
-uuid: "9fa14842-1e1a-87f2-8cee-75dcb074b7b4"
-horo: 5
-bonds:
-  in:
-    - accepted
-    - applies
-    - atom
-    - available
-    - boundary
-    - collapse
-    - cooking
-    - delivery
-    - diamond
-    - digit
-    - enum
-    - enumeration
-    - exported
-    - fractal
-    - harmony
-    - has
-    - horo
-    - http
-    - identity
-    - import
-    - law
-    - measurement
-    - merge
-    - name
-    - path
-    - return
-    - rodin
-    - sequence
-    - sti
-    - transmission
-    - uuid
-  out:
-    - accepted
-    - applies
-    - atom
-    - available
-    - boundary
-    - collapse
-    - cooking
-    - delivery
-    - diamond
-    - digit
-    - enum
-    - enumeration
-    - exported
-    - fractal
-    - harmony
-    - has
-    - horo
-    - http
-    - identity
-    - import
-    - law
-    - measurement
-    - merge
-    - name
-    - path
-    - return
-    - rodin
-    - sequence
-    - sti
-    - transmission
-    - uuid
+coordinate: "method · 1/base · df1e0383"
+contentUuid: "20f21958-ec6e-55ab-9990-2e4fc318507b"
+diamondUuid: "e9871a07-d8cb-8104-a35b-9062658b1fbe"
+uuid: "df1e0383-a676-8c63-becc-e818d668ba12"
+horo: 1
 typography:
   partition: method
   bondDegree: 98
-  neighbors:
-    - diamond
-    - "quantum/boundary"
-    - "tamper/import"
 standards:
   - "schema.org — method vocabulary (collided homonym); ISO/IEC 25010:2023 §5.5 testability — pure path functions regression-locked"
 bindings: []
-neighbors:
-  wikilink:
-    - atom
-    - boundary
-    - collapse
-    - diamond
-    - digit
-    - exported
-    - fractal
-    - harmony
-    - horo
-    - identity
-    - import
-    - law
-    - merge
-    - name
-    - path
-    - rodin
-    - sequence
-    - sti
-    - uuid
-  matrix:
-    - accepted
-    - applies
-    - atom
-    - available
-    - boundary
-    - collapse
-    - cooking
-    - delivery
-    - diamond
-    - digit
-    - enum
-    - enumeration
-    - exported
-    - fractal
-    - harmony
-    - has
-    - horo
-    - http
-    - identity
-    - import
-    - law
-    - measurement
-    - merge
-    - name
-    - path
-    - return
-    - rodin
-    - sequence
-    - sti
-    - transmission
-    - uuid
-  backlinks:
-    - accepted
-    - applies
-    - atom
-    - available
-    - boundary
-    - collapse
-    - cooking
-    - delivery
-    - diamond
-    - digit
-    - enum
-    - enumeration
-    - exported
-    - fractal
-    - harmony
-    - has
-    - horo
-    - http
-    - identity
-    - import
-    - law
-    - measurement
-    - merge
-    - name
-    - path
-    - return
-    - rodin
-    - sequence
-    - sti
-    - transmission
-    - uuid
 signatures:
-  computationUuid: "b7bf60a8-0091-8493-859a-06a795923913"
+  computationUuid: "130fb6a6-e498-832c-b5c1-c29eba6a3286"
   stages:
     - stage: path
       stageUuid: "5283a66e-0757-869d-a9c8-238cd5dae366"
@@ -179,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d11f530e-be04-8b88-a5ad-4f5371ed8c7e"
     - stage: horo
-      stageUuid: "361aeb56-d33c-8392-afd4-1ed4fc44b354"
+      stageUuid: "e383c746-b068-8f1e-92c3-4764fc1c8321"
     - stage: seal
       stageUuid: "8232d1bf-73a8-86a2-8585-2b94a20cbd71"
     - stage: uuid
-      stageUuid: "8856e3fc-c049-8795-974d-a806af268bc6"
+      stageUuid: "251881c5-15b6-8160-a219-d63b45478c74"
 version: 2
 ---
 # method — every method name has a path of diamonds

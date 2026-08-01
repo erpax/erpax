@@ -1,8 +1,36 @@
 ---
 name: load
 description: "Use when asking the only question no other gate asks — does the app actually LOAD? Boots payload.config for real and asserts every collection registers. It currently FAILS, and that is correct: erpax does not boot in any loader, and the test harness has been swallowing it."
+atomPath: "run/load"
+coordinate: "run/load · 2/share · cf607799"
+contentUuid: "d09d251f-1f9b-5cb8-b89e-a717cc8850eb"
+diamondUuid: "8b31462a-db6b-8240-9466-37b1766dacb9"
+uuid: "cf607799-1096-8218-b75e-ef691cf02213"
+horo: 2
+typography:
+  partition: run
+  bondDegree: 14
+standards: []
+bindings: []
+signatures:
+  computationUuid: "3d5b631b-be5f-86eb-b500-aac8d880d14c"
+  stages:
+    - stage: path
+      stageUuid: "fd577f39-69b9-8231-9d1e-c1239cb43131"
+    - stage: trinity
+      stageUuid: "e414325b-eb26-8f8d-a57a-765d0b42a7cb"
+    - stage: boundary
+      stageUuid: "3d045f76-e9a8-84da-891e-305c6962eded"
+    - stage: links
+      stageUuid: "5968c4a6-0f5a-86bf-9d1b-f1a38a3a0a15"
+    - stage: horo
+      stageUuid: "1bdc4005-3799-85e3-83b9-3164e5a7d27b"
+    - stage: seal
+      stageUuid: "c8fb7810-f3fa-8d46-b75f-458258834e8e"
+    - stage: uuid
+      stageUuid: "2c8f45a3-8bed-8f28-844f-5d1688a72e15"
+version: 2
 ---
-
 # load — does the app run at all
 
 > **RESOLVED 2026-07-16 — erpax BOOTS.** `tsx src/run/load/index.ts` → `load — OK · 231 collections`. The choke point was `agents/mcp/tool-defs → collections` (a static import of 210 configs to read slug strings); sourcing the slugs from the running `req.payload` instead cut the edge, changed the init order, and the config loads from every coordinate tried. The history below is kept because it is the map of what it took — and because the SCC is STILL 225 files: **entangled ≠ fatal**, the boundary this proved.

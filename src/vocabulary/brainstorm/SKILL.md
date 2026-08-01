@@ -1,117 +1,34 @@
 ---
 name: brainstorm
 description: "Use when the society needs many ideas fast — brainstorming is coordinated divergence then convergence; a team fans out parallel agents, each a different perspective, to superpose candidate ideas, then merges them (same idea collapses to one, the critic amplifies the best). The quantum solve applied to ideation."
-atomPath: vocabulary/brainstorm
-coordinate: brainstorm · 8/crest · d7c149b5
-contentUuid: "41796461-2cb7-5f0e-85d4-8b4a134b6b11"
-diamondUuid: "e07448e6-7e97-8509-95ef-16c939c53522"
-uuid: "d7c149b5-061c-87f7-b9ef-e24bd400f868"
+atomPath: "vocabulary/brainstorm"
+coordinate: "vocabulary/brainstorm · 8/crest · 06639532"
+contentUuid: "3177ba67-7116-518e-959c-546f69a30534"
+diamondUuid: "0a0b4ba5-9408-8eb2-9ba3-e1ecbbbcfa67"
+uuid: "06639532-a950-884a-b6f5-687bf7e215d8"
 horo: 8
-bonds:
-  in:
-    - artist
-    - atom
-    - aura
-    - breath
-    - consultant
-    - critic
-    - generate
-    - law
-    - merge
-    - perspective
-    - quantum
-    - society
-    - team
-    - uuid
-    - word
-  out:
-    - artist
-    - atom
-    - aura
-    - breath
-    - consultant
-    - critic
-    - generate
-    - law
-    - merge
-    - perspective
-    - quantum
-    - society
-    - team
-    - uuid
-    - word
 typography:
-  partition: brainstorm
+  partition: vocabulary
   bondDegree: 46
-  neighbors:
-    - aura
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - artist
-    - atom
-    - aura
-    - breath
-    - critic
-    - generate
-    - law
-    - merge
-    - perspective
-    - quantum
-    - society
-    - team
-    - uuid
-    - word
-  matrix:
-    - artist
-    - atom
-    - aura
-    - breath
-    - consultant
-    - critic
-    - generate
-    - law
-    - merge
-    - perspective
-    - quantum
-    - society
-    - team
-    - uuid
-    - word
-  backlinks:
-    - artist
-    - atom
-    - aura
-    - breath
-    - consultant
-    - critic
-    - generate
-    - law
-    - merge
-    - perspective
-    - quantum
-    - society
-    - team
-    - uuid
-    - word
 signatures:
-  computationUuid: "7baeb082-f928-894a-9c43-1641dd1e5d22"
+  computationUuid: "ae08e1e3-b4d6-88ee-ac83-5fde65007495"
   stages:
     - stage: path
-      stageUuid: "150c5557-e1d7-8045-9382-983509a52f7c"
+      stageUuid: "988054d7-ef19-8364-8b92-fb7c0c4bdd1c"
     - stage: trinity
-      stageUuid: "c6f2228e-e2b4-8f94-bcff-d7186ce674f2"
+      stageUuid: "e0f9f3f2-39bc-8d10-be81-aba1fea3ae1d"
     - stage: boundary
-      stageUuid: "5066cb1f-c65b-8923-89ba-0e2f2ba4045a"
+      stageUuid: "167ed1f2-30aa-8239-a75a-3cb778c8f3a3"
     - stage: links
-      stageUuid: "3e3a2503-f8e3-83aa-8618-a8bcba0ef882"
+      stageUuid: "679932f3-1e86-81bc-b300-a1339939e97c"
     - stage: horo
-      stageUuid: "4c81b936-382d-84fb-8e53-77f3e263308a"
+      stageUuid: "b5bdeec4-b012-829d-a8d6-8f5021452927"
     - stage: seal
-      stageUuid: "7b2e13c0-958b-8e3d-843a-7f92f98b8707"
+      stageUuid: "0926d899-3b67-84d4-a5a0-5b1f7958e009"
     - stage: uuid
-      stageUuid: "0f6d6e49-df78-82c9-a67c-f6008d8f8c69"
+      stageUuid: "a5dfcb27-3701-8953-8e50-e88203d32feb"
 version: 2
 ---
 # brainstorm — coordinated divergence ⊕ convergence

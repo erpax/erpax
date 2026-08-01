@@ -1,136 +1,19 @@
 ---
 name: snapshot
 description: "Use when finding and developing digital quantum snapshots — any stateful thing has a snapshot (the collapse of its state at a moment), and its quantum twin is the content-addressed, immutable, append-only chain that nests layer after layer. The skill that finds a domain's snapshots and develops their twins."
-atomPath: quantum/snapshot
-coordinate: quantum/snapshot · 5/round · 1a31df7b
-contentUuid: "96250bf1-bb25-5a86-8a71-30865f4f637e"
-diamondUuid: "b24a6501-b19d-80f5-b502-d485db8d1029"
-uuid: "1a31df7b-6ab9-82c3-af7b-43e936b63bb5"
+atomPath: "quantum/snapshot"
+coordinate: "quantum/snapshot · 5/round · 1caf4107"
+contentUuid: "8b119425-3319-513a-abbf-95e5c3f0ace0"
+diamondUuid: "0225a77d-fa9f-8227-90a6-bdc4eaee1c2c"
+uuid: "1caf4107-06b5-88e0-8f92-9fdf256314de"
 horo: 5
-bonds:
-  in:
-    - audio
-    - biometric
-    - collapse
-    - deploy
-    - device
-    - emr
-    - folded
-    - fs
-    - github
-    - image
-    - law
-    - literature
-    - memory
-    - merge
-    - number
-    - object
-    - quantum
-    - readings
-    - snapshot
-    - sti
-    - stream
-    - sync
-    - uuid
-    - video
-  out:
-    - audio
-    - biometric
-    - collapse
-    - deploy
-    - device
-    - emr
-    - folded
-    - fs
-    - github
-    - image
-    - law
-    - literature
-    - memory
-    - merge
-    - number
-    - object
-    - readings
-    - snapshot
-    - sti
-    - stream
-    - sync
-    - uuid
-    - video
 typography:
   partition: quantum
-  bondDegree: 92
-  neighbors: []
+  bondDegree: 94
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - atom
-    - emr
-    - file
-    - finality
-    - fs
-    - law
-    - love
-    - merge
-    - reality
-    - record
-    - reverse
-    - snapshot
-    - trinity
-    - uuid
-    - versions
-  matrix:
-    - audio
-    - biometric
-    - collapse
-    - deploy
-    - device
-    - emr
-    - folded
-    - fs
-    - github
-    - image
-    - law
-    - literature
-    - memory
-    - merge
-    - number
-    - object
-    - readings
-    - snapshot
-    - sti
-    - stream
-    - sync
-    - uuid
-    - video
-  backlinks:
-    - audio
-    - biometric
-    - collapse
-    - deploy
-    - device
-    - emr
-    - folded
-    - fs
-    - github
-    - image
-    - law
-    - literature
-    - memory
-    - merge
-    - number
-    - object
-    - readings
-    - snapshot
-    - sti
-    - stream
-    - sync
-    - uuid
-    - video
 signatures:
-  computationUuid: "1afcb455-8bf5-8b35-96fc-0881c528de05"
+  computationUuid: "d501f9ed-5ee9-8566-a5a2-72e1670e6c5c"
   stages:
     - stage: path
       stageUuid: "c27ce020-93f5-845a-9d3c-9d73201a1a86"
@@ -139,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "05a59006-66d7-8bc0-87e5-601b1d8f866a"
     - stage: links
-      stageUuid: "6eb17dbb-25f8-85e3-8627-583095386d24"
+      stageUuid: "205c0710-1c3e-8924-ac77-d13149488f96"
     - stage: horo
-      stageUuid: "0a842447-22eb-825d-b1de-479c01b56f22"
+      stageUuid: "b617611d-8fec-897f-8928-ae0ef3365f93"
     - stage: seal
       stageUuid: "22faa2dc-db4d-82c5-8b26-066d3267d0b4"
     - stage: uuid
-      stageUuid: "6a3691b0-a4d4-80f7-9bb7-4089f64150e3"
+      stageUuid: "66389f6d-d2d8-8703-a2a4-f2ead6745597"
 quantum:
   superposition:
     - audio
@@ -176,8 +59,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "1afcb455-8bf5-8b35-96fc-0881c528de05"
-    contentUuid: "96250bf1-bb25-5a86-8a71-30865f4f637e"
+    computationUuid: "d501f9ed-5ee9-8566-a5a2-72e1670e6c5c"
+    contentUuid: "8b119425-3319-513a-abbf-95e5c3f0ace0"
 version: 2
 ---
 # quantum/snapshot — layer after layer
@@ -196,4 +79,4 @@ Snapshots **nest, layer after layer** (fractal): a filesystem snapshot ([[quantu
 
 **Law — [[law]]: a snapshot collapses a system's state at one moment, but its twin keeps the whole superposition — every captured state is content-uuid'd, immutable, and append-only, so identical states merge to one and the chain nests layer after layer without bound. The invariant is reconstructibility: any past layer can be rebuilt from the chain and nothing is ever lost; that round-trip is the gate.**
 
-<sub>content-uuid `96250bf1-bb25-5a86-8a71-30865f4f637e` · account `quantum/snapshot` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `8b119425-3319-513a-abbf-95e5c3f0ace0` · account `quantum/snapshot` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

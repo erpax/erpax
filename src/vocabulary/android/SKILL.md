@@ -1,63 +1,35 @@
 ---
 name: android
 description: "Use when reasoning about android as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/android
-coordinate: android · 4/weave · 7918bf5d
-contentUuid: "598ec088-55c1-5b10-a0af-cca68360872d"
-diamondUuid: "124cdada-5e87-8e79-8a6c-6108963f97f0"
-uuid: "7918bf5d-bc9a-8623-a5f6-9cb3a611f752"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/android"
+coordinate: "vocabulary/android · 5/round · a405772a"
+contentUuid: "d3bbcce6-70a4-55d6-b11d-ff6bbd55aaad"
+diamondUuid: "c2ee3989-70e0-85ed-9daa-ec1b43920e10"
+uuid: "a405772a-3a5b-8726-a0fc-86a856aa41be"
+horo: 5
 typography:
-  partition: android
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "635a3abd-5fe6-8875-b0b7-397e47caa059"
+  computationUuid: "c8f60ca9-72b8-812e-8f69-f2e884691454"
   stages:
     - stage: path
-      stageUuid: "1196d2ba-38c3-8a98-b71c-de5e03e07b65"
+      stageUuid: "f5640369-071d-8e69-be9d-19415337ab07"
     - stage: trinity
-      stageUuid: "40982007-f5a5-8483-a465-cd17c3749990"
+      stageUuid: "7ea3b930-200d-864a-9db4-0495a1f0128a"
     - stage: boundary
-      stageUuid: "4a6f5fc7-b746-851d-a668-de1ec7ed7a57"
+      stageUuid: "d1d7d5db-6d09-8f81-913b-56a85c90abff"
     - stage: links
-      stageUuid: "3946ede3-50a9-8c38-af59-e6b729e25492"
+      stageUuid: "6a682f20-338e-819d-ae12-1ef748d7b101"
     - stage: horo
-      stageUuid: "6698aa1b-d8c5-8477-ac8f-3deae19aa321"
+      stageUuid: "c4524659-efdd-8b53-8d59-2fbfe72bf603"
     - stage: seal
-      stageUuid: "81a49584-5157-8277-9fc1-a8420469504c"
+      stageUuid: "8c0ea010-5d92-8375-b6df-048e9ee396ff"
     - stage: uuid
-      stageUuid: "80607450-35fd-8968-aaf8-ac452d299f7a"
+      stageUuid: "a7624d4b-20f2-87ad-bc75-f1a0afbcd307"
 version: 2
 ---
 # android

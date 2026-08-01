@@ -2,138 +2,20 @@
 name: element
 description: "Use when reasoning about composition and stability through the chemical-elements matrix — everything is made of atoms, and the periodic table adds a chemistry to the logic: each atom has a VALENCE (electrons it shares to fill its shell), stability is the OCTET (a full outer shell — the noble gases), and atoms BOND to reach it. The new perspective: the erpax corpus is a MOLECULE — an atom's valence is its open links, and the corpus is stable exactly when aura gap = 0 (all shells full)."
 atomPath: element
-coordinate: "element · 5/round · f37f2cba"
-contentUuid: "d6a46ac6-2c4f-5c5a-8f0a-4d5c457a7042"
-diamondUuid: "09d37071-1240-8ae2-a5fb-c15034b14938"
-uuid: "f37f2cba-dd1a-80fa-a543-48cdef810021"
-horo: 5
-bonds:
-  in:
-    - aggregate
-    - all
-    - aura
-    - data
-    - dx
-    - feed
-    - fractal
-    - generate
-    - horo
-    - identity
-    - item
-    - law
-    - list
-    - logic
-    - merge
-    - navigation
-    - page
-    - part
-    - rodin
-    - science
-    - sequence
-    - site
-    - web
-    - whole
-  out:
-    - aggregate
-    - all
-    - aura
-    - data
-    - dx
-    - feed
-    - fractal
-    - generate
-    - horo
-    - identity
-    - item
-    - law
-    - list
-    - logic
-    - merge
-    - navigation
-    - page
-    - part
-    - rodin
-    - science
-    - sequence
-    - site
-    - web
-    - whole
+coordinate: "element · 2/share · 8b116748"
+contentUuid: "1c238a63-b9df-53a7-9a2e-ad51b777ab93"
+diamondUuid: "23bdb54a-99d6-823b-9dbd-92d27fb1951f"
+uuid: "8b116748-04c5-803e-bfc5-4af11ecfbda6"
+horo: 2
 typography:
   partition: element
   bondDegree: 74
-  neighbors:
-    - aura
 standards:
   - "IUPAC periodic table — periods, groups, main-group valence"
   - Lewis octet rule (duet for period 1) — stability = a full outer shell
 bindings: []
-neighbors:
-  wikilink:
-    - all
-    - aura
-    - fractal
-    - generate
-    - horo
-    - identity
-    - law
-    - logic
-    - merge
-    - part
-    - rodin
-    - sequence
-    - whole
-  matrix:
-    - aggregate
-    - all
-    - aura
-    - data
-    - dx
-    - feed
-    - fractal
-    - generate
-    - horo
-    - identity
-    - item
-    - law
-    - list
-    - logic
-    - merge
-    - navigation
-    - page
-    - part
-    - rodin
-    - science
-    - sequence
-    - site
-    - web
-    - whole
-  backlinks:
-    - aggregate
-    - all
-    - aura
-    - data
-    - dx
-    - feed
-    - fractal
-    - generate
-    - horo
-    - identity
-    - item
-    - law
-    - list
-    - logic
-    - merge
-    - navigation
-    - page
-    - part
-    - rodin
-    - science
-    - sequence
-    - site
-    - web
-    - whole
 signatures:
-  computationUuid: "0a748356-d831-856d-aa99-2a8bcf94a244"
+  computationUuid: "58102146-4f56-8759-b396-f50d733ce055"
   stages:
     - stage: path
       stageUuid: "c7b1e524-2727-8656-a6ac-10e671c569bd"
@@ -144,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "f69333e5-0f24-841d-bb4d-32057cdb2750"
     - stage: horo
-      stageUuid: "ee221448-223c-84ee-839b-4a8719cb6905"
+      stageUuid: "97720f42-6025-803f-80b5-55a7298d0669"
     - stage: seal
       stageUuid: "a62028a3-9a7c-8fdd-845a-959440dc626f"
     - stage: uuid
-      stageUuid: "889bcf73-2362-82ab-a8fb-ee6d6d83060c"
+      stageUuid: "a7be3a46-ce42-84f6-87d9-d9ecfb2dd08b"
 version: 2
 ---
 # element — the periodic matrix as a logic of composition (the corpus is a molecule)

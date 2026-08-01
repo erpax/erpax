@@ -1,73 +1,35 @@
 ---
 name: catalog
 description: Use when reasoning about catalog — A data catalog which contains this dataset.
-atomPath: vocabulary/catalog
-coordinate: catalog · 4/weave · aaa5dd39
-contentUuid: "fa02772e-9458-5ffc-9c5d-a1bec8f4dc4b"
-diamondUuid: "a783f39c-183e-81d4-802e-73cfb871219a"
-uuid: "aaa5dd39-ad85-81e4-be38-c6cd00f0df2c"
-horo: 4
-bonds:
-  in:
-    - data
-    - has
-    - included
-    - law
-    - number
-    - offer
-  out:
-    - data
-    - has
-    - included
-    - law
-    - number
-    - offer
+atomPath: "vocabulary/catalog"
+coordinate: "vocabulary/catalog · 1/base · a8dfb8a5"
+contentUuid: "d36c4427-dfdb-5cd3-a044-5c9c79011717"
+diamondUuid: "304d040b-822c-81cf-9dac-30dd6d8271eb"
+uuid: "a8dfb8a5-bc0c-806a-8403-a7c75d2a658d"
+horo: 1
 typography:
-  partition: catalog
+  partition: vocabulary
   bondDegree: 21
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - data
-    - has
-    - included
-    - law
-    - number
-    - offer
-  matrix:
-    - data
-    - has
-    - included
-    - law
-    - number
-    - offer
-  backlinks:
-    - data
-    - has
-    - included
-    - law
-    - number
-    - offer
 signatures:
-  computationUuid: "177a39ac-b2aa-8106-91be-86cd716377ed"
+  computationUuid: "506444a8-d20a-8446-8935-b29d3ffcc9f1"
   stages:
     - stage: path
-      stageUuid: "0c1a604e-30b3-82d2-9a05-6612462fc1eb"
+      stageUuid: "26639d9b-6d37-827d-9f05-d490ca4fae95"
     - stage: trinity
-      stageUuid: "e8958688-4df3-8222-afe8-c5cd309f8585"
+      stageUuid: "89d34842-033e-83d1-96bb-c56cdf90f897"
     - stage: boundary
-      stageUuid: "989dd328-fe28-8ced-803f-d980158a09b6"
+      stageUuid: "868ab87d-3dca-8589-898c-8e2e09f6854a"
     - stage: links
-      stageUuid: "6bb8dc83-54d6-8349-a6ec-481c64e1c1d5"
+      stageUuid: "31079ad8-f78b-8800-b14f-b6eb1c3f4656"
     - stage: horo
-      stageUuid: "ca1137be-f6db-8f58-bf47-43d7a35fb1ab"
+      stageUuid: "a324eeb8-f7a4-8420-9312-9e9b8ee8054d"
     - stage: seal
-      stageUuid: "05f5b183-5f9a-809e-973a-9c0b1243ff0f"
+      stageUuid: "b8e92af7-90be-8297-b731-5ba0b652ae61"
     - stage: uuid
-      stageUuid: "db30dc62-56cb-82e1-bc5f-62f60a17ccdb"
+      stageUuid: "93469edd-bec2-8a0a-a356-efa234b000a1"
 version: 2
 ---
 # catalog

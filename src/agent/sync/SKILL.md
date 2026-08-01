@@ -2,44 +2,15 @@
 name: sync
 description: "Use when synchronizing real-time events across agents in a tenant — pub/sub on content-uuid events, idempotent consumption, and a federation-safe room protocol so every agent sees every peer's work the instant it happens."
 atomPath: "agent/sync"
-coordinate: "agent/sync · 4/weave · a69c30da"
-contentUuid: "7b815fc7-df21-5de4-8fef-2e2b5e484924"
-diamondUuid: "d7cb7261-8376-808d-833f-d98a2221c1bc"
-uuid: "a69c30da-87d4-8594-903a-6d85c2b16887"
-horo: 4
-bonds:
-  in:
-    - agent
-    - duality
-    - fractal
-    - holographic
-    - identity
-    - law
-    - memory
-    - merge
-    - standard
-    - stream
-    - sync
-  out:
-    - agent
-    - duality
-    - fractal
-    - holographic
-    - identity
-    - law
-    - memory
-    - merge
-    - standard
-    - stream
-    - sync
+coordinate: "agent/sync · 2/share · 7f6f7bac"
+contentUuid: "5b061d7a-eb0c-5173-b362-ee3e5bcc04f9"
+diamondUuid: "c0885627-92a0-8cb0-a0c0-c28fafe3b556"
+uuid: "7f6f7bac-0a05-84f4-a584-e01c2a5ce642"
+horo: 2
 typography:
   partition: agent
-  bondDegree: 57
-  neighbors:
-    - hallucination
-    - purity
+  bondDegree: 55
 standards:
-  - "ILO-C001"
   - "ISO-27001"
   - "ISO/IEC-27001:2022"
   - "RFC 9562 §5.8 content-uuid event-identity (idempotency key)"
@@ -56,41 +27,8 @@ standards:
   - "W3C-ActivityPub"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - duality
-    - fractal
-    - holographic
-    - identity
-    - law
-    - merge
-    - standard
-  matrix:
-    - agent
-    - duality
-    - fractal
-    - holographic
-    - identity
-    - law
-    - memory
-    - merge
-    - standard
-    - stream
-    - sync
-  backlinks:
-    - agent
-    - duality
-    - fractal
-    - holographic
-    - identity
-    - law
-    - memory
-    - merge
-    - standard
-    - stream
-    - sync
 signatures:
-  computationUuid: "581103e5-bff2-86a1-a72b-58ac14a861ea"
+  computationUuid: "bec5e73d-c0cc-860d-be56-3164ebb983a7"
   stages:
     - stage: path
       stageUuid: "c91a7dfa-6b1d-868a-aa90-fd6a59e2b176"
@@ -101,11 +39,11 @@ signatures:
     - stage: links
       stageUuid: "3f334104-da41-8028-bdee-d36e51f400b9"
     - stage: horo
-      stageUuid: "7626d136-1148-8832-9094-b9f15e5cdfb5"
+      stageUuid: "2d6897b6-a2fd-820d-b4c4-778400b24602"
     - stage: seal
       stageUuid: "634a806c-c86b-847d-a81e-bcb549d90fb1"
     - stage: uuid
-      stageUuid: "bf1a7787-4eb8-8527-b5ba-11fd2cb91d72"
+      stageUuid: "656186f8-1aa3-8bc2-bcc0-08a9db149aba"
 version: 2
 ---
 # agent-sync

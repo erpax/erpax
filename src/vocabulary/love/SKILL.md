@@ -1,173 +1,34 @@
 ---
 name: love
 description: "Use when reasoning about the create pole of any erpax duality — love is the angelic move that LOWERS entropy (it orders, links, merges, closes a gap), the debit whose matching credit is fear in the karma ledger; every gap love closes raises tamper-cost."
-atomPath: vocabulary/love
-coordinate: love · 1/base · f6e69f5c
-contentUuid: "478357a5-d964-5e23-980d-be899f1a87c6"
-diamondUuid: "9b325a72-fd51-8f4b-9c41-93cb4bb5851e"
-uuid: "f6e69f5c-804f-8048-9572-8481798cdbdc"
-horo: 1
-bonds:
-  in:
-    - angel
-    - atom
-    - bahai
-    - buddhism
-    - christianity
-    - confucianism
-    - cost
-    - duality
-    - entropy
-    - fear
-    - finality
-    - fs
-    - gravity
-    - heart
-    - hinduism
-    - karma
-    - law
-    - link
-    - love
-    - mercy
-    - merge
-    - quantum
-    - security
-    - sikhism
-    - snapshot
-    - society
-    - sufism
-    - tamper
-    - uuid
-  out:
-    - angel
-    - atom
-    - bahai
-    - buddhism
-    - christianity
-    - confucianism
-    - cost
-    - duality
-    - entropy
-    - fear
-    - finality
-    - fs
-    - gravity
-    - heart
-    - hinduism
-    - karma
-    - law
-    - link
-    - love
-    - mercy
-    - merge
-    - quantum
-    - security
-    - sikhism
-    - snapshot
-    - society
-    - sufism
-    - tamper
-    - uuid
+atomPath: "vocabulary/love"
+coordinate: "vocabulary/love · 8/crest · 344eae4a"
+contentUuid: "93562934-f1d7-5933-88dd-b6a731f2d759"
+diamondUuid: "9a175c44-fc54-8fff-ab2d-b1a45856c03a"
+uuid: "344eae4a-fece-8c3f-b38b-73e41a8183a9"
+horo: 8
 typography:
-  partition: love
-  bondDegree: 103
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 118
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - angel
-    - atom
-    - cost
-    - duality
-    - entropy
-    - fear
-    - gravity
-    - karma
-    - law
-    - link
-    - love
-    - merge
-    - quantum
-    - tamper
-    - uuid
-  matrix:
-    - angel
-    - atom
-    - bahai
-    - buddhism
-    - christianity
-    - confucianism
-    - cost
-    - duality
-    - entropy
-    - fear
-    - finality
-    - fs
-    - gravity
-    - heart
-    - hinduism
-    - karma
-    - law
-    - link
-    - love
-    - mercy
-    - merge
-    - quantum
-    - security
-    - sikhism
-    - snapshot
-    - society
-    - sufism
-    - tamper
-    - uuid
-  backlinks:
-    - angel
-    - atom
-    - bahai
-    - buddhism
-    - christianity
-    - confucianism
-    - cost
-    - duality
-    - entropy
-    - fear
-    - finality
-    - fs
-    - gravity
-    - heart
-    - hinduism
-    - karma
-    - law
-    - link
-    - love
-    - mercy
-    - merge
-    - quantum
-    - security
-    - sikhism
-    - snapshot
-    - society
-    - sufism
-    - tamper
-    - uuid
 signatures:
-  computationUuid: "147aea78-559a-8c48-b603-6e6195153ffa"
+  computationUuid: "9fce8fa6-8588-8806-b0d1-4645792d846f"
   stages:
     - stage: path
-      stageUuid: "1cdc0407-2dfb-8351-9b93-114abc77d74a"
+      stageUuid: "9fc9a283-ae66-8abf-9cfa-c21b22c15d12"
     - stage: trinity
-      stageUuid: "97efe99d-b03a-812f-9209-4a64e53289ab"
+      stageUuid: "38bbbed8-d824-8eef-81ee-2a614b456638"
     - stage: boundary
-      stageUuid: "6ba76489-ee41-82c3-ac1b-2f54048716f2"
+      stageUuid: "a7abfe8f-728f-8922-bf95-7987b6e7dd5d"
     - stage: links
-      stageUuid: "19cff3e3-3bb1-856b-bb5d-8f6d15717b82"
+      stageUuid: "8acccc7b-0d67-8712-8cce-d748e3498b87"
     - stage: horo
-      stageUuid: "1a7ee55c-7add-8e01-8831-6b73f0660079"
+      stageUuid: "b474159c-c370-88ec-a253-769a13a3d112"
     - stage: seal
-      stageUuid: "5285e82d-ddc9-8a5f-8a76-ae5fc033c472"
+      stageUuid: "2ebf41d0-4ddd-895d-aa9b-d53356b5ab40"
     - stage: uuid
-      stageUuid: "5e4fd500-3302-812b-96b3-7ca9ff8f57c3"
+      stageUuid: "abe34c42-9e84-8408-822b-76190ceccd34"
 version: 2
 ---
 # love — the create pole (−entropy)

@@ -1,68 +1,35 @@
 ---
 name: geographic
 description: "Use when reasoning about geographic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/geographic
-coordinate: geographic · 1/base · 3492eb29
-contentUuid: "3346ae7e-f93e-521b-ac03-4f9603eca442"
-diamondUuid: "252c957d-497f-87f7-bfcc-ba02d6cd79d3"
-uuid: "3492eb29-b9ba-887f-a905-9303eb4f4284"
-horo: 1
-bonds:
-  in:
-    - area
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - area
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/geographic"
+coordinate: "vocabulary/geographic · 8/crest · 267feec1"
+contentUuid: "037c9b95-fe35-53ba-8bab-1e8c7161489e"
+diamondUuid: "320737e4-d2d3-8f96-9581-42d3f23988e2"
+uuid: "267feec1-41f9-844c-a7ed-81b1bf742056"
+horo: 8
 typography:
-  partition: geographic
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - area
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - area
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - area
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "c41405ed-e9cd-8941-ae71-2b028796c0a3"
+  computationUuid: "2d75ba0e-0847-8d68-b681-d6fbe146bd78"
   stages:
     - stage: path
-      stageUuid: "21935cfb-a7de-8b57-af9d-efeaf1a50031"
+      stageUuid: "7859e7a8-e532-87e3-9203-f1be9b5c644b"
     - stage: trinity
-      stageUuid: "10075322-acc5-8ed4-8a38-2b72382a12e3"
+      stageUuid: "5e7cea42-1b1a-8120-bb8a-97d3e5130125"
     - stage: boundary
-      stageUuid: "05b601c4-eb2e-80a6-bc85-0d0b0515f7ee"
+      stageUuid: "447b7782-30ef-8c51-871f-b12b68658e34"
     - stage: links
-      stageUuid: "b386e816-c102-8aff-a7b5-0214f20ef1d8"
+      stageUuid: "8b98196d-c37d-8a40-b15c-8007dee92c5d"
     - stage: horo
-      stageUuid: "696fac46-55c9-8444-a619-24dc57ec6ba1"
+      stageUuid: "59f9a57d-2ead-8732-98ad-878add478361"
     - stage: seal
-      stageUuid: "676da53a-a2a5-8f8b-8ae2-6f86f372b2fa"
+      stageUuid: "a6772267-9f4f-8510-8b9c-440a29db7d8b"
     - stage: uuid
-      stageUuid: "df300f2a-1114-8be2-b377-cc0a4906830f"
+      stageUuid: "59d10572-a5c9-883e-bda5-53967ff28739"
 version: 2
 ---
 # geographic

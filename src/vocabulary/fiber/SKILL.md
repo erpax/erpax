@@ -1,68 +1,35 @@
 ---
 name: fiber
 description: "Use when reasoning about fiber as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/fiber
-coordinate: fiber · 4/weave · efd5d946
-contentUuid: "c645a312-2d64-56d0-a5ae-21b61f087353"
-diamondUuid: "f2603227-7aca-854a-b640-3b935bdd17b7"
-uuid: "efd5d946-d3a6-8a03-b5d5-efb42d9fe822"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - content
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - content
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/fiber"
+coordinate: "vocabulary/fiber · 7/descent · d19c7109"
+contentUuid: "3cb6f6b2-a42f-5689-b70e-5e389d63e863"
+diamondUuid: "fb9ea460-a13e-8136-9256-ea25fc8f6f79"
+uuid: "d19c7109-92a1-8034-809e-00ed884be943"
+horo: 7
 typography:
-  partition: fiber
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - content
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - content
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - content
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "c69faf3f-e5db-8a3f-bb23-8b838f91d3ee"
+  computationUuid: "8802279e-ad90-82f2-a51a-cecf9c8addd9"
   stages:
     - stage: path
-      stageUuid: "8fada4b2-4649-866b-b9eb-ed2e19f4bc4c"
+      stageUuid: "36092bc7-ce67-8eee-a0ad-4988d44b7e7a"
     - stage: trinity
-      stageUuid: "00ebfd9a-7abd-8bb5-8ae6-588bfce503c8"
+      stageUuid: "6eeb6968-53b2-8d6f-b8eb-9b31ed7ef5c6"
     - stage: boundary
-      stageUuid: "4c3ed824-8807-8e66-b6da-03fd43f0f573"
+      stageUuid: "36bdf0fb-de4a-84c4-8c23-25886dd8af80"
     - stage: links
-      stageUuid: "63bfb76d-d672-8fe5-80ca-e9249a4d52d2"
+      stageUuid: "be047877-e4da-88ed-b53f-62a722b47011"
     - stage: horo
-      stageUuid: "b388c420-8b53-8ea7-b257-02c17c2dca13"
+      stageUuid: "03ab3e4a-ce53-8301-a273-47a79ec19ff6"
     - stage: seal
-      stageUuid: "271f396f-41fd-8dc8-9ff9-3a916320533c"
+      stageUuid: "bac7ad67-0cf0-82a6-8c45-d3545489058a"
     - stage: uuid
-      stageUuid: "b93ecd43-f43f-8136-9275-e74d2bd08dd6"
+      stageUuid: "00cb9bde-8e31-8b1d-963f-05553992ee7a"
 version: 2
 ---
 # fiber

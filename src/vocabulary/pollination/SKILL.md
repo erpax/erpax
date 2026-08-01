@@ -1,100 +1,34 @@
 ---
 name: pollination
 description: "Use when fruit set depends on pollen transfer — pollination by insects (managed honeybees/bumblebees, wild pollinators), wind, or hand, required by fruiting crops (cucurbits, tomatoes, peppers) to set marketable fruit. A yield prerequisite for fruit/seed crops and an ecosystem service the farm must protect or provide."
-atomPath: vocabulary/pollination
-coordinate: pollination · 7/descent · c039da05
-contentUuid: "a6b14760-6612-5bb8-8114-4df6e08f0186"
-diamondUuid: "0fcda914-0ff3-8fe6-8790-5e275c880420"
-uuid: "c039da05-3e3a-8488-b39a-a4053f24de61"
-horo: 7
-bonds:
-  in:
-    - agriculture
-    - apiculture
-    - crop
-    - dormancy
-    - harvest
-    - law
-    - maturity
-    - planting
-    - scouting
-    - seed
-    - tunnel
-    - yield
-  out:
-    - agriculture
-    - apiculture
-    - crop
-    - dormancy
-    - harvest
-    - law
-    - maturity
-    - planting
-    - scouting
-    - seed
-    - tunnel
-    - yield
+atomPath: "vocabulary/pollination"
+coordinate: "vocabulary/pollination · 1/base · 12dd1b68"
+contentUuid: "2553c62d-14f3-5601-813d-2687e71aef68"
+diamondUuid: "049b9ddf-e18d-8200-b73a-37dbb210f79e"
+uuid: "12dd1b68-f529-864f-986b-4f47fa4ac789"
+horo: 1
 typography:
-  partition: pollination
+  partition: vocabulary
   bondDegree: 37
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - crop
-    - harvest
-    - law
-    - maturity
-    - planting
-    - scouting
-    - seed
-    - tunnel
-    - yield
-  matrix:
-    - agriculture
-    - apiculture
-    - crop
-    - dormancy
-    - harvest
-    - law
-    - maturity
-    - planting
-    - scouting
-    - seed
-    - tunnel
-    - yield
-  backlinks:
-    - agriculture
-    - apiculture
-    - crop
-    - dormancy
-    - harvest
-    - law
-    - maturity
-    - planting
-    - scouting
-    - seed
-    - tunnel
-    - yield
 signatures:
-  computationUuid: "cea61f48-743d-8b79-95d2-146e71a5a3bd"
+  computationUuid: "e7c4ec4b-fc7d-8ad1-99fc-64e71153fb6a"
   stages:
     - stage: path
-      stageUuid: "e9450fd1-a125-808d-a416-fb5042fbf71f"
+      stageUuid: "b1e5603e-3121-8cf6-a5e4-fd84d447c465"
     - stage: trinity
-      stageUuid: "2a1f4f2e-cb86-87d4-b89f-b65780231660"
+      stageUuid: "0b39b8dd-cb97-827b-98af-19a3446dc656"
     - stage: boundary
-      stageUuid: "3cda1da2-5bc5-896b-9529-393f30bb2642"
+      stageUuid: "f262c42d-32a6-878f-9d9c-e206bb1d518d"
     - stage: links
-      stageUuid: "773f8b79-c5a4-808a-a9f9-796507a360b5"
+      stageUuid: "2ac15b03-6f2c-82d9-befa-f2da02e4978b"
     - stage: horo
-      stageUuid: "b855a934-f5b6-80f6-9be7-c69c1d4071dc"
+      stageUuid: "6d6f2e01-c480-8c37-94c1-800aa35478a9"
     - stage: seal
-      stageUuid: "5586ecec-7f69-88b2-8c50-909193293e54"
+      stageUuid: "1c768141-7bb4-85bb-b2d9-3a16412c542e"
     - stage: uuid
-      stageUuid: "e4d2722e-87f3-8413-95e6-b6c54990655e"
+      stageUuid: "5cccb28a-2741-8627-8d61-7a55ee0ce6ad"
 version: 2
 ---
 # pollination — pollen transfer that sets the fruit

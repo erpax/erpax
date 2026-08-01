@@ -2,37 +2,19 @@
 name: resort
 description: "Use when reasoning about resort — A resort is a place used for relaxation or recreation, attracting visitors for holidays or vacations. Resorts are places, towns or sometimes commercial establishments operated by a"
 atomPath: resort
-coordinate: resort · 5/round · 40a4e644
-contentUuid: "784050d5-c222-5472-8025-dcc28b327a78"
-diamondUuid: "6806e409-e7da-8bc5-afde-91b652bb8f31"
-uuid: "40a4e644-ce67-8349-be71-55d819536b19"
-horo: 5
-bonds:
-  in:
-    - law
-    - ski
-  out:
-    - law
-    - ski
+coordinate: "resort · 4/weave · ad551ba3"
+contentUuid: "34a9cd9b-a185-511b-899c-3312d54aa7fe"
+diamondUuid: "2cbe2900-93fe-8255-be93-102f1d14a1cd"
+uuid: "ad551ba3-72f6-8c63-a013-731b85fc2fa4"
+horo: 4
 typography:
   partition: resort
   bondDegree: 7
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - ski
-  matrix:
-    - law
-    - ski
-  backlinks:
-    - law
-    - ski
 signatures:
-  computationUuid: "e6dbad9d-7b8b-86a3-a3fd-276184502e1d"
+  computationUuid: "ea7324e3-9bb5-8024-a7a6-f65ab25ff3b1"
   stages:
     - stage: path
       stageUuid: "3602d89e-f746-8c6e-86ea-325d08d4176d"
@@ -43,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dd5a6707-8638-8b9a-9fc7-c865ffa2604d"
     - stage: horo
-      stageUuid: "67e2c9f2-fd0e-8761-89e0-79fcde0687bc"
+      stageUuid: "aa2697ad-77b1-8e28-9be1-117cbbfa62d0"
     - stage: seal
-      stageUuid: "ab8d7eae-b974-8a0e-9064-c135cf088a57"
+      stageUuid: "1a9a05b9-2648-830d-882f-87e7592024c5"
     - stage: uuid
-      stageUuid: "0a09ce2a-00bc-813d-83b4-719d4b63fd2a"
+      stageUuid: "f6152e1e-9481-8279-a04d-537325db0652"
 version: 2
 ---
 # resort

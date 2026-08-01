@@ -1,117 +1,34 @@
 ---
 name: empirical
 description: "Use when a claim is grounded in observed data rather than assumed — the rate an @invariant holds at across real rows, a modal value or lifecycle DERIVED not invented, the measured distribution a model is fitted to. The agnostic restatement of provenance — name the origin generically as [[source]], dissolve the row-level specifics into the [[akashic]] DB, and keep only the universal form in code. anonymise is the core of agnostic architecture and DRY naming."
-atomPath: vocabulary/empirical
-coordinate: empirical · 4/weave · 8eb88416
-contentUuid: "c63b52a7-02d7-5db4-9bf3-9b1ed5ed0b3c"
-diamondUuid: "6de8a8e6-2dfb-8572-b81b-7bb563fa2251"
-uuid: "8eb88416-0a64-80ef-87fe-dc6c21e9e64c"
+atomPath: "vocabulary/empirical"
+coordinate: "vocabulary/empirical · 4/weave · 5f7ddb0b"
+contentUuid: "49f71346-49f2-5714-8d9c-93433d292cd7"
+diamondUuid: "b844a2a4-6a99-8138-ac08-950234386f5f"
+uuid: "5f7ddb0b-5dd7-8f6d-b2d9-e8a7dbf7c444"
 horo: 4
-bonds:
-  in:
-    - akashic
-    - audit
-    - baseline
-    - derive
-    - ingest
-    - lineage
-    - manufacturing
-    - measure
-    - merge
-    - outlier
-    - port
-    - sampling
-    - seed
-    - source
-    - zeropoint
-  out:
-    - akashic
-    - audit
-    - baseline
-    - derive
-    - ingest
-    - lineage
-    - manufacturing
-    - measure
-    - merge
-    - outlier
-    - port
-    - sampling
-    - seed
-    - source
-    - zeropoint
 typography:
-  partition: empirical
+  partition: vocabulary
   bondDegree: 46
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - audit
-    - baseline
-    - derive
-    - ingest
-    - lineage
-    - manufacturing
-    - measure
-    - merge
-    - outlier
-    - port
-    - sampling
-    - seed
-    - source
-    - zeropoint
-  matrix:
-    - akashic
-    - audit
-    - baseline
-    - derive
-    - ingest
-    - lineage
-    - manufacturing
-    - measure
-    - merge
-    - outlier
-    - port
-    - sampling
-    - seed
-    - source
-    - zeropoint
-  backlinks:
-    - akashic
-    - audit
-    - baseline
-    - derive
-    - ingest
-    - lineage
-    - manufacturing
-    - measure
-    - merge
-    - outlier
-    - port
-    - sampling
-    - seed
-    - source
-    - zeropoint
 signatures:
-  computationUuid: "24047525-6f6a-8d93-adef-aeb38a7cf80e"
+  computationUuid: "a539ef38-19ae-8ba9-a51f-2ba1fe778f38"
   stages:
     - stage: path
-      stageUuid: "11671e80-2859-89e3-a045-33a49ca0b53c"
+      stageUuid: "96533b46-fe27-860d-b20d-bf6c1d68ac50"
     - stage: trinity
-      stageUuid: "3f658a82-682f-8d38-b14b-919c92b89da3"
+      stageUuid: "dd14d057-d8c2-81bc-8108-e127ef5064fb"
     - stage: boundary
-      stageUuid: "6f0f1ea7-8a05-8ae4-b5bb-62cf50c1c983"
+      stageUuid: "4602fbb6-0467-8b9b-8f47-43b6f94c67cc"
     - stage: links
-      stageUuid: "9da06a0f-1713-890c-9d48-412fa8eb9857"
+      stageUuid: "3cb48605-2cee-82fb-a28b-1f82c32c4a28"
     - stage: horo
-      stageUuid: "1c92dd3e-52d4-85dd-ab3e-cc9824d8f522"
+      stageUuid: "677de384-2317-8326-801e-e7c06fce41f3"
     - stage: seal
-      stageUuid: "50599234-53e6-829f-b567-e908c99415b9"
+      stageUuid: "784c99fa-cda2-819b-8c78-44c394db7c9e"
     - stage: uuid
-      stageUuid: "9ce6acf5-0dd7-8032-a46c-fc1b3be7664e"
+      stageUuid: "a0ca3a1c-5750-88ae-b134-9fbc82789ad6"
 version: 2
 ---
 # empirical — derived from the data, not invented

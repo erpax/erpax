@@ -1,88 +1,35 @@
 ---
 name: adult
 description: "Use when reasoning about adult as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/adult
-coordinate: adult · 4/weave · 4da3ae26
-contentUuid: "baa3135b-322d-5262-8a44-2c88ff9a8f78"
-diamondUuid: "95b8ab31-7208-8c6b-8071-194bc87a2d3d"
-uuid: "4da3ae26-149e-8b6e-9da3-6c8af5a12d98"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - consideration
-    - entertainment
-    - enumeration
-    - has
-    - law
-    - merge
-    - oriented
-    - sti
-  out:
-    - collapse
-    - consideration
-    - entertainment
-    - enumeration
-    - has
-    - law
-    - merge
-    - oriented
-    - sti
+atomPath: "vocabulary/adult"
+coordinate: "vocabulary/adult · 7/descent · 9964937a"
+contentUuid: "3e7cc6fa-6496-506f-8267-578bb5ee7ef4"
+diamondUuid: "28ca8fa7-42cc-8e3d-b6d3-6876f8be2dfc"
+uuid: "9964937a-fd54-800e-9a06-a57b4795c6a5"
+horo: 7
 typography:
-  partition: adult
-  bondDegree: 32
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 34
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - consideration
-    - entertainment
-    - enumeration
-    - has
-    - law
-    - merge
-    - oriented
-    - sti
-  matrix:
-    - collapse
-    - consideration
-    - entertainment
-    - enumeration
-    - has
-    - law
-    - merge
-    - oriented
-    - sti
-  backlinks:
-    - collapse
-    - consideration
-    - entertainment
-    - enumeration
-    - has
-    - law
-    - merge
-    - oriented
-    - sti
 signatures:
-  computationUuid: "2c68bd90-8064-8231-931a-a33c267e1ce8"
+  computationUuid: "89bab166-b8cc-8596-b798-204c41891371"
   stages:
     - stage: path
-      stageUuid: "bff4e6df-b686-8653-830f-95a1b2fa51fd"
+      stageUuid: "647100ed-6c7b-89df-8209-7c63d0565d78"
     - stage: trinity
-      stageUuid: "b37c65ef-15b4-81d9-8d55-b4a808a11dc9"
+      stageUuid: "4bb74201-43c8-84ab-81ed-c81b8d8375c8"
     - stage: boundary
-      stageUuid: "1fee88d9-82db-88ea-8ba4-2e31413a8003"
+      stageUuid: "9ed858f0-b889-816c-af98-2f9f4e84c412"
     - stage: links
-      stageUuid: "b3e91f4f-3566-8f3d-ad68-b29d7d004f9f"
+      stageUuid: "01e3b544-19ef-8a4c-ad64-0039eef38d46"
     - stage: horo
-      stageUuid: "b9597d87-a2d1-85f9-a3a4-40d82a96cca3"
+      stageUuid: "3cbb16dd-2f81-80bb-b742-ed72ca06b00d"
     - stage: seal
-      stageUuid: "6103a0d5-f287-8478-8f15-f4a5a50a932a"
+      stageUuid: "b2e6a365-2d4c-8615-bfbd-2d4005608ac4"
     - stage: uuid
-      stageUuid: "e0f5ab0d-586a-83eb-ba5c-07d70bf74aef"
+      stageUuid: "51411bf3-d1ce-8718-89bd-0b3d2d8508be"
 version: 2
 ---
 # adult

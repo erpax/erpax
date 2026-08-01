@@ -1,58 +1,35 @@
 ---
 name: locksmith
 description: Use when reasoning about locksmith — A locksmith.
-atomPath: vocabulary/locksmith
-coordinate: locksmith · 2/share · a177d314
-contentUuid: "f0d39d05-c4d7-53a7-9606-4055ae0cc5b9"
-diamondUuid: "0b651f54-4c00-827c-9be0-ccb8e2d54d94"
-uuid: "a177d314-886d-8ec9-970c-b4bc3c2df26a"
-horo: 2
-bonds:
-  in:
-    - law
-    - place
-    - thing
-  out:
-    - law
-    - place
-    - thing
+atomPath: "vocabulary/locksmith"
+coordinate: "vocabulary/locksmith · 4/weave · 2b1592ca"
+contentUuid: "3919e3b5-5184-5157-894f-6bce52dc127c"
+diamondUuid: "7006cffe-0598-8fe5-9600-716fc7369382"
+uuid: "2b1592ca-3907-8771-a8af-df74a7714799"
+horo: 4
 typography:
-  partition: locksmith
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - place
-    - thing
-  matrix:
-    - law
-    - place
-    - thing
-  backlinks:
-    - law
-    - place
-    - thing
 signatures:
-  computationUuid: "55758acf-c7ed-84ba-a957-f6dfcfe54c3a"
+  computationUuid: "5a6bb71e-9fde-81b9-8515-612bfaec56fe"
   stages:
     - stage: path
-      stageUuid: "0528c5a1-da02-8dea-9de6-210fbeffd5a8"
+      stageUuid: "f4785273-91bd-826b-a612-f12343aef215"
     - stage: trinity
-      stageUuid: "d0b1ac03-516f-8869-b08f-7fc9b8445b56"
+      stageUuid: "2a8a5781-f1b6-87a5-9df1-6181bdf01531"
     - stage: boundary
-      stageUuid: "0a644c3e-206e-85c1-929a-5974a3eb4218"
+      stageUuid: "6ade7fac-8ff1-8ab1-961e-19ffe2068eea"
     - stage: links
-      stageUuid: "4f0f26ba-574b-81e2-9c42-99b44b97df36"
+      stageUuid: "a5cea578-0771-8d64-bad0-de6d266a3724"
     - stage: horo
-      stageUuid: "7a99541c-9576-83ca-a868-498580135f61"
+      stageUuid: "3af59f1c-c01b-825d-b57a-4800ed44b6f8"
     - stage: seal
-      stageUuid: "b5348e33-4d14-8928-984f-d54320e9205d"
+      stageUuid: "6b1bddaa-afbd-82f4-bfaa-ad0b7a836517"
     - stage: uuid
-      stageUuid: "0be75034-6179-8ca7-9016-0fa113dc001e"
+      stageUuid: "2a7eb0f3-54d4-8203-a6b0-538d8913fcde"
 version: 2
 ---
 # locksmith

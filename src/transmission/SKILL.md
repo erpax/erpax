@@ -2,57 +2,19 @@
 name: transmission
 description: "Use when reasoning about transmission as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: transmission
-coordinate: transmission · 5/round · ccfec395
-contentUuid: "c2363b71-c0fd-5d91-bf44-96d85cb20703"
-diamondUuid: "66ada92b-80a4-81a2-880d-3ba9fd42399d"
-uuid: "ccfec395-a329-885f-9bdd-9d082ecf8c12"
+coordinate: "transmission · 5/round · 674fed48"
+contentUuid: "4c434e16-9f07-564a-9d4e-7af21ca5401b"
+diamondUuid: "9749e3da-22c5-8aa5-afa2-39d0dd29aa99"
+uuid: "674fed48-2772-821d-9538-d2abc066e3a5"
 horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - method
-    - sti
-    - vehicle
-  out:
-    - collapse
-    - law
-    - merge
-    - method
-    - sti
-    - vehicle
 typography:
   partition: transmission
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - method
-    - sti
-    - vehicle
-  matrix:
-    - collapse
-    - law
-    - merge
-    - method
-    - sti
-    - vehicle
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - method
-    - sti
-    - vehicle
 signatures:
-  computationUuid: "1bc170cc-4796-81d4-b161-abe1cae610d3"
+  computationUuid: "e920e4b0-c2fa-8dd5-bb44-8f46077eea65"
   stages:
     - stage: path
       stageUuid: "bfb4839c-06fc-87a3-b045-286d76c8b106"
@@ -63,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "19482bfe-3ef6-8204-b16f-4a40204b8b8e"
     - stage: horo
-      stageUuid: "93711350-122f-8753-94e5-b0c0afd0deca"
+      stageUuid: "98442a46-03fb-81e4-a64e-00c5f4747f0f"
     - stage: seal
-      stageUuid: "b44e5135-d492-8b1d-a95a-102e9f2a0ec4"
+      stageUuid: "dd2f585f-c42a-8c98-aed7-c7e71e4bd114"
     - stage: uuid
-      stageUuid: "9b5176a6-f1eb-8c50-a417-c43061e30335"
+      stageUuid: "443ac95a-fa85-8195-89fc-508402471b99"
 version: 2
 ---
 # transmission

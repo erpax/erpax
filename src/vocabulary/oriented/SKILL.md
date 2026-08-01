@@ -1,73 +1,35 @@
 ---
 name: oriented
 description: "Use when reasoning about oriented as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/oriented
-coordinate: oriented · 8/crest · 879f9a2c
-contentUuid: "9f562e08-9979-5c32-b5dc-a0bb123a581d"
-diamondUuid: "52f4902b-6561-8daf-98bd-b06f3a8addbf"
-uuid: "879f9a2c-8e28-8777-80f4-b297b40eb0f2"
-horo: 8
-bonds:
-  in:
-    - adult
-    - collapse
-    - enumeration
-    - law
-    - merge
-    - sti
-  out:
-    - adult
-    - collapse
-    - enumeration
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/oriented"
+coordinate: "vocabulary/oriented · 5/round · 5a81b762"
+contentUuid: "b0ac7fd3-bc54-5d81-bed8-649b66bcb390"
+diamondUuid: "2b7ea9a2-dfc5-8bd6-8401-969fdd08a29d"
+uuid: "5a81b762-95d7-8ee8-bf1a-30b0d7600574"
+horo: 5
 typography:
-  partition: oriented
-  bondDegree: 20
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 22
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - adult
-    - collapse
-    - enumeration
-    - law
-    - merge
-    - sti
-  matrix:
-    - adult
-    - collapse
-    - enumeration
-    - law
-    - merge
-    - sti
-  backlinks:
-    - adult
-    - collapse
-    - enumeration
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "6cc4af03-d0f1-8e08-9f6a-a2a170688b73"
+  computationUuid: "d7ad89e7-e70d-869d-b2cd-0c9e89aa809a"
   stages:
     - stage: path
-      stageUuid: "407ee752-1544-8740-99d2-94a031c72cf0"
+      stageUuid: "22e9e029-7a51-85c7-a331-6731185808b8"
     - stage: trinity
-      stageUuid: "a4d5edd4-465a-8fc3-a8d3-9a75c9afa723"
+      stageUuid: "4b834fbb-6325-8154-acc1-03233f3477c5"
     - stage: boundary
-      stageUuid: "069abf45-7cfa-8ce7-ab5d-090a115fc6d2"
+      stageUuid: "f853f813-7d10-8316-ac8b-3f15ffbcc556"
     - stage: links
-      stageUuid: "4fcaa25a-87f8-843b-9626-45deeb52a70d"
+      stageUuid: "4e21cba5-2725-8ebd-933b-6ba0a260a5b7"
     - stage: horo
-      stageUuid: "afa8c2a3-73a0-83be-bd2c-31269b5f6d45"
+      stageUuid: "3ccd699f-89a9-8c79-a0a8-19d9126d6378"
     - stage: seal
-      stageUuid: "e95d8898-3f7b-8569-92ed-0f9ddd9661b2"
+      stageUuid: "54557e6e-b61b-8ea1-b6bd-e4d7ef4f40fa"
     - stage: uuid
-      stageUuid: "db4d5056-ce8f-8ec6-b92e-054c8bb2edc8"
+      stageUuid: "730d2814-a7f1-81d9-b33d-1da4edaaa1b3"
 version: 2
 ---
 # oriented

@@ -1,73 +1,35 @@
 ---
 name: healthcare
 description: "Use when reasoning about healthcare as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/healthcare
-coordinate: healthcare · 4/weave · 36357040
-contentUuid: "642ddcd0-0911-587d-9738-d5e2b4489284"
-diamondUuid: "1f45ca0a-ff96-8388-bc71-db4b8ead7c8e"
-uuid: "36357040-3797-8473-a387-57da2abc6ce3"
+atomPath: "vocabulary/healthcare"
+coordinate: "vocabulary/healthcare · 4/weave · f5794561"
+contentUuid: "6de4fd1b-f76c-500f-b854-ed9dc6ff47c9"
+diamondUuid: "78e414cf-8fe4-8ac1-8932-c08c1c636c0d"
+uuid: "f5794561-02f5-8aa5-80c3-774dd5a9860f"
 horo: 4
-bonds:
-  in:
-    - collapse
-    - data
-    - law
-    - merge
-    - reporting
-    - sti
-  out:
-    - collapse
-    - data
-    - law
-    - merge
-    - reporting
-    - sti
 typography:
-  partition: healthcare
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - data
-    - law
-    - merge
-    - reporting
-    - sti
-  matrix:
-    - collapse
-    - data
-    - law
-    - merge
-    - reporting
-    - sti
-  backlinks:
-    - collapse
-    - data
-    - law
-    - merge
-    - reporting
-    - sti
 signatures:
-  computationUuid: "5b6e682a-ab9f-8237-9096-dd8a4084ade8"
+  computationUuid: "2212f693-59a2-8ef2-934e-b842b2c51bce"
   stages:
     - stage: path
-      stageUuid: "a9b4fd8b-ee83-81da-b1fe-7c5868c9da15"
+      stageUuid: "c691a610-ae32-8d0a-887c-f7a00934c35a"
     - stage: trinity
-      stageUuid: "503f2d3a-da61-8696-b5d8-fe09f58c5d8e"
+      stageUuid: "4a233a67-2465-840c-bcac-573f5e494a58"
     - stage: boundary
-      stageUuid: "5766738e-5df2-82e3-ba0c-37b86420eeef"
+      stageUuid: "2956d162-59fc-8f98-a6a6-2a817f491d1d"
     - stage: links
-      stageUuid: "4fe2bd27-32b8-8fb6-9114-d187fa1563ea"
+      stageUuid: "cd3c9f24-4873-8afb-8fc3-934401f11f22"
     - stage: horo
-      stageUuid: "ccae0dec-f844-8465-8515-d6bdaec640c1"
+      stageUuid: "b91e4ddf-9ffc-882d-8f3f-94fead4fcca4"
     - stage: seal
-      stageUuid: "cec43e5c-68d5-8f7d-af77-a5db5c2856a5"
+      stageUuid: "eb75bdd1-ae1f-8761-9c8d-f06b0e6fcb82"
     - stage: uuid
-      stageUuid: "2a2202bf-ee04-87c1-9e00-91336aa8b487"
+      stageUuid: "b5ac29c8-1a66-8e6e-b903-9b442e75ed25"
 version: 2
 ---
 # healthcare

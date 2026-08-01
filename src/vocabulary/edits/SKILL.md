@@ -1,63 +1,35 @@
 ---
 name: edits
 description: "Use when reasoning about edits as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/edits
-coordinate: edits · 5/round · 4da5c8cb
-contentUuid: "cc3f209b-44b1-56ae-8be7-8b7d95668283"
-diamondUuid: "fc68b2cf-592d-84f5-8fa9-3a315951b7e5"
-uuid: "4da5c8cb-1ca8-8703-a66c-f9770dd0f69b"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/edits"
+coordinate: "vocabulary/edits · 4/weave · 6fba8a1d"
+contentUuid: "70a3b2b9-0aca-502b-989c-4c093efe56c7"
+diamondUuid: "19e1b281-fa26-8011-abc0-f72666915f2d"
+uuid: "6fba8a1d-bb02-8c41-8eac-0167641422e4"
+horo: 4
 typography:
-  partition: edits
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "656b4817-8e58-82f1-92db-7b72f0ac7a57"
+  computationUuid: "8bfb5841-3530-885f-b8f9-184ba5a994d9"
   stages:
     - stage: path
-      stageUuid: "e6460375-5a01-8297-83c9-10461ffa3076"
+      stageUuid: "6bdaa1d5-5b24-89fe-849f-3de24e7d2af1"
     - stage: trinity
-      stageUuid: "5d78df44-2c62-8787-86e8-3d2060e144a0"
+      stageUuid: "fdf63b3e-008c-8ba4-92d5-10499b72364a"
     - stage: boundary
-      stageUuid: "0ba96eac-e536-896e-b3aa-58932d653c98"
+      stageUuid: "fbc12773-0d6a-85f2-97ae-1819915e9603"
     - stage: links
-      stageUuid: "c7f02202-8521-8eff-b08b-3edf02ef0a4b"
+      stageUuid: "16d70485-8ed4-87ff-abc5-d67dbbcb5608"
     - stage: horo
-      stageUuid: "1ea4f8b8-ac5c-8818-8aa5-a05ff3de4517"
+      stageUuid: "a250c00c-4a2a-8a58-b2a8-f616b38b994c"
     - stage: seal
-      stageUuid: "c5bec525-3395-86d9-955c-8b0bb33e6383"
+      stageUuid: "cb81a5cb-4c75-8995-bf1b-0b194c4331ee"
     - stage: uuid
-      stageUuid: "687c645d-ab35-8a89-b2ed-7ed273a19edc"
+      stageUuid: "8a978a56-c4cd-85e3-b09a-4dc2a276f420"
 version: 2
 ---
 # edits

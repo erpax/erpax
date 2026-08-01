@@ -1,58 +1,35 @@
 ---
 name: borrower
 description: Use when reasoning about borrower — A sub property of participant. The person that borrows the object being lent.
-atomPath: vocabulary/borrower
-coordinate: borrower · 7/descent · 6a33fee8
-contentUuid: "3b874b76-1c73-5cf4-9ab8-0b6b0f0fced8"
-diamondUuid: "b523ae1b-c8d6-8d0a-9f32-079c19745be0"
-uuid: "6a33fee8-c975-864d-8c75-44c571aa76b1"
+atomPath: "vocabulary/borrower"
+coordinate: "vocabulary/borrower · 7/descent · 68b49d76"
+contentUuid: "49b40d29-3422-58bb-a263-6c6ad721a0e4"
+diamondUuid: "2ad597c9-846d-8d19-9886-3ab30c16ac15"
+uuid: "68b49d76-7d65-8f91-a71b-4f785f665c25"
 horo: 7
-bonds:
-  in:
-    - law
-    - person
-    - thing
-  out:
-    - law
-    - person
-    - thing
 typography:
-  partition: borrower
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - person
-    - thing
-  matrix:
-    - law
-    - person
-    - thing
-  backlinks:
-    - law
-    - person
-    - thing
 signatures:
-  computationUuid: "1fb6a3e3-6556-8c94-8c8c-141e4137a16f"
+  computationUuid: "e490e186-afeb-851f-b8bf-5e4aac963d0b"
   stages:
     - stage: path
-      stageUuid: "9350cce8-e8c0-867b-8cda-103dd6c9b32d"
+      stageUuid: "5995e588-9127-8818-985d-dbed66dee9b1"
     - stage: trinity
-      stageUuid: "26346f55-cc13-8986-857e-971f15e9fb07"
+      stageUuid: "c914ddde-bc4f-89be-919d-ebaf20f89043"
     - stage: boundary
-      stageUuid: "0f1330e6-9192-8d3a-ae25-5532cd1c43bd"
+      stageUuid: "68dad4ae-55d8-845e-9129-46de48284ef1"
     - stage: links
-      stageUuid: "00a919d7-bddc-8ad8-a90d-58f129720c65"
+      stageUuid: "0ade55d2-b2fd-86e8-9a4b-0a2be66ce9c2"
     - stage: horo
-      stageUuid: "2dc1fa5d-552f-8a19-909a-3081b337c843"
+      stageUuid: "59d9b0f3-ad5f-8435-a8cf-ff9ed847ef50"
     - stage: seal
-      stageUuid: "77be7a63-63bc-8d93-a731-b756dcd26662"
+      stageUuid: "db057219-7a59-81e9-810e-46e3fb1fb5f9"
     - stage: uuid
-      stageUuid: "fc90b5b3-b15b-817e-b28d-faf8fb103651"
+      stageUuid: "c458505d-79ef-8525-be02-18fa6e42a1eb"
 version: 2
 ---
 # borrower

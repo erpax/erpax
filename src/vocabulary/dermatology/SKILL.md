@@ -1,63 +1,35 @@
 ---
 name: dermatology
 description: "Use when reasoning about dermatology as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/dermatology
-coordinate: dermatology · 2/share · f275c719
-contentUuid: "b91d28eb-8180-5717-bf27-5c8d658a600e"
-diamondUuid: "5eb6ba1a-fce2-89d3-bbf4-3c1cb9dade6e"
-uuid: "f275c719-1d3b-8000-9b2c-3e9375018030"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/dermatology"
+coordinate: "vocabulary/dermatology · 1/base · 6dc9cb1c"
+contentUuid: "ceab14b1-c768-543d-aaa6-e017e6b2ce28"
+diamondUuid: "5f81da7d-3ee3-8547-b45f-96c8c2b6e5f3"
+uuid: "6dc9cb1c-24ac-846a-946f-64e46cedf9ca"
+horo: 1
 typography:
-  partition: dermatology
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "2595064f-83de-8432-a05f-8b64845a267c"
+  computationUuid: "77cdbfde-e5b9-8e4d-acaf-9db997b91774"
   stages:
     - stage: path
-      stageUuid: "a30918df-bc32-8bc4-b32e-0838aaa44171"
+      stageUuid: "018aae52-50b4-8fa1-8e49-7e861026b7ea"
     - stage: trinity
-      stageUuid: "e12410bd-dbda-8e53-80a4-0f9bda3128a2"
+      stageUuid: "32b460c2-de40-8e4b-9ec2-815b9b0ed178"
     - stage: boundary
-      stageUuid: "42502d01-8378-8a98-bb4e-6f39915b10c9"
+      stageUuid: "9e0fa766-f5af-8e67-864c-43b76da20a1c"
     - stage: links
-      stageUuid: "a614e584-7f0f-8776-8b32-ad38f1904e77"
+      stageUuid: "d0e5aa94-5da8-8998-84c1-620d8789c3a7"
     - stage: horo
-      stageUuid: "06bd47a8-848d-8cf7-880f-e9946afd0ec9"
+      stageUuid: "9dcba0c3-b582-8ed8-8586-33e8d2dd3d9f"
     - stage: seal
-      stageUuid: "5e167844-30e4-8ab5-9cb5-5a255a1f4a51"
+      stageUuid: "ef749d4e-53a7-8447-bcc1-6eed16531a85"
     - stage: uuid
-      stageUuid: "fcf6379f-306b-83b2-8d28-0541b0ae6e05"
+      stageUuid: "afed7988-2506-80fa-b304-151d40814e2b"
 version: 2
 ---
 # dermatology

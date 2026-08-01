@@ -1,72 +1,35 @@
 ---
 name: fallback
 description: "Use when reasoning about fallback as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/fallback
-coordinate: fallback · 8/crest · 4a4fe1e5
-contentUuid: "52861d47-426d-507f-8171-df96811a47e9"
-diamondUuid: "6f950ca5-2e9f-8d7f-bf6e-3d23788c0349"
-uuid: "4a4fe1e5-3b1b-82b6-8da0-64f18203a21d"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - science
-    - sti
-    - unlabelled
-  out:
-    - collapse
-    - law
-    - merge
-    - science
-    - sti
-    - unlabelled
+atomPath: "vocabulary/fallback"
+coordinate: "vocabulary/fallback · 7/descent · 21531b19"
+contentUuid: "5d6d4d74-963f-5d74-b00d-ca603f79469b"
+diamondUuid: "0b5d4778-0954-840e-bb3e-546fdaf14089"
+uuid: "21531b19-7e80-8f93-83bb-a25e00b8ac1e"
+horo: 7
 typography:
-  partition: fallback
-  bondDegree: 26
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 24
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - unlabelled
-  matrix:
-    - collapse
-    - law
-    - merge
-    - science
-    - sti
-    - unlabelled
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - science
-    - sti
-    - unlabelled
 signatures:
-  computationUuid: "d573dd3b-b47b-8959-8248-eb1737706b16"
+  computationUuid: "0e528cb1-e0b8-8dd7-a43f-89426700e95a"
   stages:
     - stage: path
-      stageUuid: "6d644257-21ac-8e76-9a17-4d5b5dcf3037"
+      stageUuid: "6f88c06a-b29c-8584-a6b6-30b78dc49942"
     - stage: trinity
-      stageUuid: "3aec9777-8b5c-8b6a-bc37-4ec7d629e3b1"
+      stageUuid: "f9e03cb9-9ff9-8fb1-8e5b-007d36edebf2"
     - stage: boundary
-      stageUuid: "180c19d3-cc8c-8b4f-9867-e2f48cb32c38"
+      stageUuid: "dcc523f2-20af-8dad-a906-34847aae2581"
     - stage: links
-      stageUuid: "be06b1b6-e2c4-8341-8351-e28456d71b93"
+      stageUuid: "81a32db7-b3de-812c-b244-60a064f23dea"
     - stage: horo
-      stageUuid: "45a4be25-df2e-8405-a05e-982292211486"
+      stageUuid: "bceeb5b4-165b-8e5d-976d-c927856d0363"
     - stage: seal
-      stageUuid: "3276dd6e-2314-82ce-9270-a59ec104cbc4"
+      stageUuid: "97fcec75-b9db-8740-a40a-0fb24d73907b"
     - stage: uuid
-      stageUuid: "23f80d1f-d67d-8186-8fa0-2db6af095c7e"
+      stageUuid: "bd398f03-5a11-8afa-8543-657a088bd360"
 version: 2
 ---
 # fallback

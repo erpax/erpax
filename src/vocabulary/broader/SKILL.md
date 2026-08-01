@@ -1,63 +1,35 @@
 ---
 name: broader
 description: "Use when reasoning about broader as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/broader
-coordinate: broader · 1/base · d31410fc
-contentUuid: "e87d6f3c-ea69-5ad0-b492-45b00fdee8c9"
-diamondUuid: "be9745e7-fee2-83b9-b206-b1f9be9231e3"
-uuid: "d31410fc-4552-850d-9fab-3265462d0e7c"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/broader"
+coordinate: "vocabulary/broader · 4/weave · ad95fc08"
+contentUuid: "2c37a0bc-bd2d-5f00-ab39-e9cc226760cf"
+diamondUuid: "d5a93195-31e6-8885-8267-e68814329c20"
+uuid: "ad95fc08-4361-8782-8a3a-858153ad25fa"
+horo: 4
 typography:
-  partition: broader
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "18a20b4a-47be-8edf-aaac-9f5ac498bccd"
+  computationUuid: "7ecb73bc-b939-8880-bf65-bc7e22bd438a"
   stages:
     - stage: path
-      stageUuid: "8b401b8c-896a-870e-a18d-5023eb3b8eaf"
+      stageUuid: "45f6dc3d-041e-863d-bd0d-b2ea34fac16e"
     - stage: trinity
-      stageUuid: "acee424a-a8dd-8cda-95d9-5f3e910393ba"
+      stageUuid: "bda83a33-2361-8729-8cd6-cec829bd326e"
     - stage: boundary
-      stageUuid: "0473ffaf-280b-8a58-ae05-feb0dde63b43"
+      stageUuid: "8a154399-074a-8fe3-a293-ac99b14ff6a4"
     - stage: links
-      stageUuid: "0a09b5e9-9eb5-894d-a542-b9b2036fa3e0"
+      stageUuid: "e4d28214-d957-8995-a1c4-a42e6097cfc3"
     - stage: horo
-      stageUuid: "1257823d-bff6-8b97-a975-5af2ffe70d55"
+      stageUuid: "295e99f2-55f5-850b-b0ec-cb81e2a9d661"
     - stage: seal
-      stageUuid: "6c399076-c9c7-804a-9f50-7bedc7e43577"
+      stageUuid: "9e67f674-d125-803e-a56b-437693b191b3"
     - stage: uuid
-      stageUuid: "fcc4ddd9-8c49-87c0-9797-da2b8f35a678"
+      stageUuid: "b140ab74-d4d2-8289-bc44-b322d5b9168e"
 version: 2
 ---
 # broader

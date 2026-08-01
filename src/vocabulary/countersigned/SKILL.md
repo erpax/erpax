@@ -1,68 +1,35 @@
 ---
 name: countersigned
 description: "Use when reasoning about countersigned as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/countersigned
-coordinate: countersigned · 4/weave · 0296f3ea
-contentUuid: "638a96a5-bdce-5919-84ea-c5865b17459e"
-diamondUuid: "eac48752-fed4-8f46-95fa-6b7e27f91d68"
-uuid: "0296f3ea-7708-8a63-9bf5-4222ee807e5d"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
+atomPath: "vocabulary/countersigned"
+coordinate: "vocabulary/countersigned · 8/crest · 40413a1c"
+contentUuid: "8b07939f-7748-5cd7-9cfd-2bfd46e4e644"
+diamondUuid: "63bcb729-d67f-88e6-a640-597339a3cda6"
+uuid: "40413a1c-8079-8480-ba0e-f38941340ad8"
+horo: 8
 typography:
-  partition: countersigned
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
 signatures:
-  computationUuid: "dde18bfd-9c14-8e78-9f45-27865ab94375"
+  computationUuid: "19e67edc-fea0-877c-83a9-bcaf7041ff63"
   stages:
     - stage: path
-      stageUuid: "cf687c99-8403-87f4-8d8e-5f1df1d19e6e"
+      stageUuid: "e67ad2db-baa4-80c4-b3bb-b1060debd02d"
     - stage: trinity
-      stageUuid: "a940cf52-6da8-8ed8-a49c-1118e5bcb973"
+      stageUuid: "12a41e2b-d22f-8b4f-839a-4d3f17fc60d1"
     - stage: boundary
-      stageUuid: "86593031-711e-81a1-9e58-9e7ea53b6826"
+      stageUuid: "0f97890c-2312-8a11-bb08-e5026fb98bb7"
     - stage: links
-      stageUuid: "de358475-513b-82fa-9b5d-2f29554b8338"
+      stageUuid: "fb3115c8-87cf-89fe-8ebd-7567d8cf4a57"
     - stage: horo
-      stageUuid: "a4e485ea-76a8-83c7-a3a0-536bd98103f5"
+      stageUuid: "f91d65b2-ace0-86a7-b1e7-86cccb0aeb25"
     - stage: seal
-      stageUuid: "fd56783c-5983-8b49-8241-2c810c10e5f3"
+      stageUuid: "2fa5a03d-2551-8c24-ac94-dd634d3cdb81"
     - stage: uuid
-      stageUuid: "b1fe68cd-4076-88d2-9060-e8e90c400de1"
+      stageUuid: "8ec699b4-6fcf-8110-91c3-d89641414cce"
 version: 2
 ---
 # countersigned

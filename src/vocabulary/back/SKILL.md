@@ -1,68 +1,35 @@
 ---
 name: back
 description: "Use when reasoning about back as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/back
-coordinate: back · 1/base · e6724378
-contentUuid: "2dd173e1-a8b1-5be9-815f-3b032d5bb5e2"
-diamondUuid: "5299f68c-a6da-8855-88b3-701d70a66154"
-uuid: "e6724378-eeca-8b0b-a92e-2ebbf9d984c5"
-horo: 1
-bonds:
-  in:
-    - cash
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - cash
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/back"
+coordinate: "vocabulary/back · 8/crest · 3f7d6b59"
+contentUuid: "0a9d21e1-7fab-5c79-a719-b5c118a322ec"
+diamondUuid: "f1e8ee20-d948-8967-8a57-f3938e3eac9b"
+uuid: "3f7d6b59-83ee-8cc8-8760-f539d0f1edcd"
+horo: 8
 typography:
-  partition: back
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - cash
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - cash
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - cash
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "113c363b-204b-8aee-8130-1f97451603bb"
+  computationUuid: "43aa90d2-ea26-865a-bedd-e49fd34a1216"
   stages:
     - stage: path
-      stageUuid: "743b234c-9a49-824f-b125-2abdc6b291bb"
+      stageUuid: "e16892af-f3c6-8e84-b37e-2d651fb27a28"
     - stage: trinity
-      stageUuid: "b71a7a7a-986f-8d53-84de-90d886482847"
+      stageUuid: "bd635e5d-687c-82f1-9b0a-aa6d75fc6239"
     - stage: boundary
-      stageUuid: "2fa3e351-df6d-8a59-bed8-4f13d670c468"
+      stageUuid: "8e2e87b7-6f84-8c2d-8e18-adf9339061f4"
     - stage: links
-      stageUuid: "df10a587-915b-8519-87b3-67ca15fa02ee"
+      stageUuid: "5909fa2c-c10f-8298-9f39-16d961881bfc"
     - stage: horo
-      stageUuid: "89654080-4400-8120-9d23-8f7728a0d27c"
+      stageUuid: "614b3674-8990-8f44-9432-8dff3d82c94d"
     - stage: seal
-      stageUuid: "70ebef97-15a1-83db-93cf-fe5b92057b1e"
+      stageUuid: "7b28ce51-3bbb-82af-ae00-fb6ac65437ef"
     - stage: uuid
-      stageUuid: "06eb35d7-ce19-88bb-86bf-cfe709301a6a"
+      stageUuid: "958e91ca-1a44-83da-9cb3-f9239406a410"
 version: 2
 ---
 # back

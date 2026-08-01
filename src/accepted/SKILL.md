@@ -2,73 +2,20 @@
 name: accepted
 description: "Use when reasoning about accepted as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: accepted
-coordinate: "accepted · 7/descent · a9341be2"
-contentUuid: "15a010b1-b17a-5b13-a248-f596cd4c02d3"
-diamondUuid: "f43d3d99-dd24-8770-a915-e9941a3ef14d"
-uuid: "a9341be2-4f1d-82c7-a221-dbadbf485aeb"
-horo: 7
-bonds:
-  in:
-    - answer
-    - collapse
-    - currencies
-    - law
-    - merge
-    - method
-    - offer
-    - payment
-    - sti
-  out:
-    - answer
-    - collapse
-    - currencies
-    - law
-    - merge
-    - method
-    - offer
-    - payment
-    - sti
+coordinate: "accepted · 5/round · 288a7723"
+contentUuid: "3738012a-bdcf-5f32-9bee-8d43ddccdffc"
+diamondUuid: "d012a9f2-3c2c-8584-9554-18966ab7492e"
+uuid: "288a7723-ad6b-8470-a97c-988cee234267"
+horo: 5
 typography:
   partition: accepted
   bondDegree: 30
-  neighbors: []
 standards:
   - schema.org
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - answer
-    - collapse
-    - currencies
-    - law
-    - merge
-    - method
-    - offer
-    - payment
-    - sti
-  matrix:
-    - answer
-    - collapse
-    - currencies
-    - law
-    - merge
-    - method
-    - offer
-    - payment
-    - sti
-  backlinks:
-    - answer
-    - collapse
-    - currencies
-    - law
-    - merge
-    - method
-    - offer
-    - payment
-    - sti
 signatures:
-  computationUuid: "cab5817e-d051-8468-9989-c011c1c915ca"
+  computationUuid: "0dc46143-8042-83df-9d33-0b69e44e9070"
   stages:
     - stage: path
       stageUuid: "22fb4cf8-f86e-8087-a8e8-f018bc10bd08"
@@ -79,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "f909769d-608d-837e-80be-594ad8305568"
     - stage: horo
-      stageUuid: "13225052-c9cc-8e83-9d9f-3149a5a9849b"
+      stageUuid: "6801303e-6f44-830c-b373-e4ea9e0ed8e3"
     - stage: seal
       stageUuid: "6c81897a-0b5b-8226-8693-7ea3e96813da"
     - stage: uuid
-      stageUuid: "0357a688-fc15-8e30-a2d6-3d2fa3dca5b9"
+      stageUuid: "13d97b1f-ee52-871d-8b6e-c9251685f5e5"
 version: 2
 ---
 # accepted

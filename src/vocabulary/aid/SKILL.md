@@ -1,73 +1,35 @@
 ---
 name: aid
 description: "Use when reasoning about aid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/aid
-coordinate: aid · 4/weave · ff05db43
-contentUuid: "065d8237-19bc-5bef-9878-5a4d2e82d7f4"
-diamondUuid: "b3874a02-09b0-8577-a213-e9359841c55d"
-uuid: "ff05db43-b3f3-8bfd-91e7-8da3651a9c1f"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - eligible
-    - financial
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - eligible
-    - financial
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/aid"
+coordinate: "vocabulary/aid · 2/share · f9008676"
+contentUuid: "10720d2d-3b4c-5b5b-a903-07bd3fa5d390"
+diamondUuid: "87397ca0-fcab-8485-a35f-d6c6217dbedd"
+uuid: "f9008676-287e-8fbd-884a-96456ad38a3e"
+horo: 2
 typography:
-  partition: aid
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - eligible
-    - financial
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - eligible
-    - financial
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - eligible
-    - financial
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "7a3b8b10-4be1-8c19-a63c-f994c5a7585d"
+  computationUuid: "34576244-40de-8858-9d8b-14143330ead0"
   stages:
     - stage: path
-      stageUuid: "f559309e-35d9-8eed-8d1a-2cfcd49c494e"
+      stageUuid: "4169cf09-d76d-8055-b79c-90a9c44346a7"
     - stage: trinity
-      stageUuid: "b538c639-79b8-89f7-9457-5e069c54f476"
+      stageUuid: "51e1324b-c163-8c33-8999-4a29547a2274"
     - stage: boundary
-      stageUuid: "059a486e-6005-8ab5-b8a1-e450705bca78"
+      stageUuid: "c98e1c06-6027-8a63-9c61-7e7dfda458f1"
     - stage: links
-      stageUuid: "b0063b6e-d879-8ce8-8f84-3d5cc2e2ee61"
+      stageUuid: "f1ec262d-7276-8613-9c74-e4a7f97a8d14"
     - stage: horo
-      stageUuid: "c4ebb704-940d-8350-a889-45ec55d44c09"
+      stageUuid: "bec62fcd-e9a7-827f-b936-8a8dab2674cd"
     - stage: seal
-      stageUuid: "fe047c3c-6494-8be1-a808-82f2963cb144"
+      stageUuid: "342d4d18-2ded-8510-aab7-a26effc3184e"
     - stage: uuid
-      stageUuid: "75561d2f-ac74-8b27-9992-9a7a5891551c"
+      stageUuid: "b32a38f9-c1b3-8541-8a86-c580d016d0bd"
 version: 2
 ---
 # aid

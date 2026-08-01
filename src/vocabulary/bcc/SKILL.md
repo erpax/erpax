@@ -1,68 +1,35 @@
 ---
 name: bcc
 description: "Use when reasoning about bcc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/bcc
-coordinate: bcc · 4/weave · 27623e54
-contentUuid: "9592fa52-bf4c-5afd-9ee1-acb2d6d4298e"
-diamondUuid: "221d21d1-f3ff-849a-9b59-38295cab3890"
-uuid: "27623e54-dda0-8454-99b8-ba2b66833663"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - recipient
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - recipient
-    - sti
+atomPath: "vocabulary/bcc"
+coordinate: "vocabulary/bcc · 1/base · 01b98091"
+contentUuid: "dc7a221c-7fb9-5394-9235-45c72eacca9b"
+diamondUuid: "a0b8fbdb-3b61-80aa-adeb-6d8dd7633f7a"
+uuid: "01b98091-17a4-8285-a29b-daaefb903c57"
+horo: 1
 typography:
-  partition: bcc
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - recipient
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - recipient
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - recipient
-    - sti
 signatures:
-  computationUuid: "33b1420f-a2a4-8524-9bb4-c20c479ae3fd"
+  computationUuid: "a0e9493b-644e-8d45-a6ba-8773f8412307"
   stages:
     - stage: path
-      stageUuid: "931f9fa2-7b3a-8cfe-a102-7137598c9558"
+      stageUuid: "ebfdc6b9-ed1d-8830-a595-dca01b6e44a3"
     - stage: trinity
-      stageUuid: "be2c62e5-b8c2-88b5-afa0-400590b8f324"
+      stageUuid: "38adf37b-0007-809b-99f0-b6d2818ababb"
     - stage: boundary
-      stageUuid: "09392e96-4c16-8644-9d29-cb8d6f70872b"
+      stageUuid: "8e8eeeca-347e-8b48-bd1c-3714ff336987"
     - stage: links
-      stageUuid: "b0257382-ca0b-8b45-8027-b0b6b52d69fc"
+      stageUuid: "6034c847-9ed1-8979-a51d-1038e587c27d"
     - stage: horo
-      stageUuid: "926ef279-1afe-8e59-a1ff-5f3974327639"
+      stageUuid: "7ab5e627-7364-80a0-9f3a-af4a2a754953"
     - stage: seal
-      stageUuid: "e1e8b614-91f7-8355-b272-e834328e5454"
+      stageUuid: "73d4bff7-e87e-8b4c-8b3e-57c47b828b45"
     - stage: uuid
-      stageUuid: "5fa594d5-a048-8415-80ad-11c6977de7b8"
+      stageUuid: "69bd3811-cd49-8fa5-94ba-24dec303183f"
 version: 2
 ---
 # bcc

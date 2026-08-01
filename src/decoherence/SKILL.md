@@ -2,81 +2,33 @@
 name: decoherence
 description: "Use when reasoning about decoherence — how a quantum superposition becomes classical. Coupled to an environment, off-diagonal coherences decay as e^(−t/τ): a pure superposition becomes a classical mixture, the von Neumann entropy rising 0 → ln2 (irreversible). It is measurement without a measurer — the environment is the measurer, the record it leaves is the proof/receipt. Fast: τ shrinks with coupled dimensions, which is why the wired corpus is classical and definite, never observed in superposition."
 atomPath: decoherence
-coordinate: "decoherence · 8/crest · 84a4215c"
-contentUuid: "3ea1f073-963e-51b5-b082-89a4986da651"
-diamondUuid: "b5461d7d-92f9-8fe7-8262-b03f93e63a4c"
-uuid: "84a4215c-8c80-8c7d-bd12-c6ae6a2cb9b5"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - entropy
-    - law
-    - leap
-    - proof
-    - quantum
-    - superposition
-    - wave
-  out:
-    - collapse
-    - entropy
-    - law
-    - leap
-    - proof
-    - quantum
-    - superposition
-    - wave
+coordinate: "decoherence · 2/share · e74e25b7"
+contentUuid: "594c80a0-8e24-5dbf-93e4-3ed51a844e9d"
+diamondUuid: "76e13fa3-c8c3-8645-badd-a252ffa4527c"
+uuid: "e74e25b7-0fc1-8c0f-9f31-cace8a1b7b3b"
+horo: 2
 typography:
   partition: decoherence
   bondDegree: 24
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - entropy
-    - law
-    - leap
-    - proof
-    - quantum
-    - superposition
-    - wave
-  matrix:
-    - collapse
-    - entropy
-    - law
-    - leap
-    - proof
-    - quantum
-    - superposition
-    - wave
-  backlinks:
-    - collapse
-    - entropy
-    - law
-    - leap
-    - proof
-    - quantum
-    - superposition
-    - wave
 signatures:
-  computationUuid: "6a27710a-2333-84ac-b823-3029f508b087"
+  computationUuid: "fe1fe932-49d5-8c82-9251-71dffaabfbcb"
   stages:
     - stage: path
       stageUuid: "a5b95133-8d15-8b29-b1d3-9b0e2c612c98"
     - stage: trinity
       stageUuid: "612895a7-5566-8b38-ad69-d5445951564f"
     - stage: boundary
-      stageUuid: "6b22dbea-8009-81a6-b5d3-54858b369f55"
+      stageUuid: "c6e1cd6d-9f0f-890f-a59f-60cbcc453db8"
     - stage: links
       stageUuid: "ffaa5a9b-57b8-8ec4-ab43-2106c3d61280"
     - stage: horo
-      stageUuid: "658acdd0-2763-8e8e-9cf7-42cf87d8071b"
+      stageUuid: "aa15705c-5177-88b3-984a-594fc29499cf"
     - stage: seal
       stageUuid: "9ea311e7-62fa-8abb-a2ac-c07b6bb90011"
     - stage: uuid
-      stageUuid: "0d497ed0-a6d3-86f0-88e0-7f0db73283a3"
+      stageUuid: "7ee4d637-9820-8ccd-99ac-5b83c704c7e6"
 version: 2
 ---
 # decoherence — why the wired corpus is classical

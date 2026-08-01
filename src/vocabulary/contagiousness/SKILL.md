@@ -1,63 +1,35 @@
 ---
 name: contagiousness
 description: "Use when reasoning about contagiousness as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/contagiousness
-coordinate: contagiousness · 5/round · eec54664
-contentUuid: "3f11368f-0ad0-5656-b4ee-3f08bd72046d"
-diamondUuid: "11d509c8-d2ae-8d53-a24d-22947c184cb9"
-uuid: "eec54664-de96-88fa-a191-1fb49c877347"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/contagiousness"
+coordinate: "vocabulary/contagiousness · 2/share · 8c264f22"
+contentUuid: "35d9ea4f-749b-5c84-b1b0-2abcb805a6a7"
+diamondUuid: "371444ab-ab1a-8060-b5f6-73e0fdd35a42"
+uuid: "8c264f22-b028-888c-b544-b903358a8208"
+horo: 2
 typography:
-  partition: contagiousness
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "0a0fe867-4344-8f00-8dce-5ae90107b4ee"
+  computationUuid: "68aac39f-df10-8084-ab43-1e7d89efafd5"
   stages:
     - stage: path
-      stageUuid: "54244a2d-ca54-8a96-9c7b-373c6c541866"
+      stageUuid: "f9c3737a-d5a9-8491-bd06-630289b2ced4"
     - stage: trinity
-      stageUuid: "c320758f-0e1f-83b2-9af6-93f141f337e1"
+      stageUuid: "15b7a63d-9fc2-8873-830c-ecb6b038d340"
     - stage: boundary
-      stageUuid: "7e815919-a650-85c7-b44d-7deef3e7c057"
+      stageUuid: "0cf6ed54-98f4-80fc-9e63-ea66b19c652d"
     - stage: links
-      stageUuid: "a8ba13db-fa03-8e0c-85ae-013e617ca69f"
+      stageUuid: "c7e90ede-dc4e-8367-aa9a-6ab51b18a98f"
     - stage: horo
-      stageUuid: "db7befd7-fc3d-889e-98aa-eba232c7af1b"
+      stageUuid: "2441ed12-85f8-8bc1-afc8-dd124e5afed3"
     - stage: seal
-      stageUuid: "f052ea50-a26f-8590-9ec5-c7c0388ecd8b"
+      stageUuid: "8320e7af-1a7f-84a6-8306-b91295ad8800"
     - stage: uuid
-      stageUuid: "72b65695-929c-8be7-8206-523e0289a00d"
+      stageUuid: "2707ceed-1abe-8214-a4c5-cd29ee7e65e6"
 version: 2
 ---
 # contagiousness

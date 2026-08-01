@@ -1,80 +1,35 @@
 ---
 name: device
-description: Use when reasoning about device — Device required to run the application. Used in cases where a specific make/model is required to run the application.
-atomPath: vocabulary/device
-coordinate: device · 1/base · c2fa4002
-contentUuid: "a8717f1b-b2b6-5a75-b225-d6f95dc27f87"
-diamondUuid: "032cf445-1b04-8ed0-8589-82ddf8fad752"
-uuid: "c2fa4002-80eb-8550-af38-462d5385acf4"
-horo: 1
-bonds:
-  in:
-    - available
-    - biometric
-    - device
-    - law
-    - medical
-    - purpose
-    - stack
-    - uses
-  out:
-    - available
-    - biometric
-    - device
-    - law
-    - medical
-    - purpose
-    - stack
-    - uses
+description: "Use when reasoning about device — Device required to run the application. Used in cases where a specific make/model is required to run the application."
+atomPath: "vocabulary/device"
+coordinate: "vocabulary/device · 2/share · f5e03d54"
+contentUuid: "bd8c1a93-5337-51a4-988b-fb7dca6da931"
+diamondUuid: "53fc51d5-5e8a-87a7-835f-4155366d99c9"
+uuid: "f5e03d54-6437-8367-be6c-e2525f108ccd"
+horo: 2
 typography:
-  partition: device
-  bondDegree: 40
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 97
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - available
-    - law
-    - medical
-    - purpose
-    - uses
-  matrix:
-    - available
-    - biometric
-    - device
-    - law
-    - medical
-    - purpose
-    - stack
-    - uses
-  backlinks:
-    - available
-    - biometric
-    - device
-    - law
-    - medical
-    - purpose
-    - stack
-    - uses
 signatures:
-  computationUuid: "b1c89147-bc4a-839a-b354-a00c546201d9"
+  computationUuid: "3ffef6e3-99dc-8183-85da-f11fcc9bb647"
   stages:
     - stage: path
-      stageUuid: "83664980-cbbe-8554-9227-831869cd26e1"
+      stageUuid: "c7efee4b-fc3b-8ded-afae-9b7942f938f5"
     - stage: trinity
-      stageUuid: "7c80f656-4d4c-8563-8032-9b8b3a88d05e"
+      stageUuid: "84b288a9-e1df-8b7f-b7eb-cb1f403934f3"
     - stage: boundary
-      stageUuid: "a5ba9e8b-1d2b-8e88-baaa-244d17c0a188"
+      stageUuid: "3a5ed1a2-5a9b-8994-833f-9c98ddce29e3"
     - stage: links
-      stageUuid: "41a7504c-7145-872f-82ce-5af89a5d99f4"
+      stageUuid: "b977f0f3-5abf-88c2-b203-ac2182cc5d41"
     - stage: horo
-      stageUuid: "a9ab09c9-03a3-8d8e-8241-1b04d61a71fa"
+      stageUuid: "0ff53653-3e26-88b8-a17e-ea64e6f374b7"
     - stage: seal
-      stageUuid: "081d33fd-0661-84e1-97bc-199a2402b23b"
+      stageUuid: "2c2c5cf8-21b7-8bad-aa7f-cf6860adc379"
     - stage: uuid
-      stageUuid: "417ea6f6-faf4-821e-aac4-1893dd761737"
+      stageUuid: "4609a6d8-710d-8591-ae22-537af4915b9c"
 version: 2
 ---
 # device

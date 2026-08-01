@@ -1,73 +1,35 @@
 ---
 name: monoisotopic
 description: "Use when reasoning about monoisotopic — A schema.org component word, collided out of schema.org compounds — fused from monoisotopicMolecularWeight (sti · collapse · merge)."
-atomPath: vocabulary/monoisotopic
-coordinate: monoisotopic · 8/crest · b4770e10
-contentUuid: "f22c67c1-c58e-53ea-b76f-f740aa137d09"
-diamondUuid: "39b1920a-ffb5-8414-89ff-e15a131cc40e"
-uuid: "b4770e10-5526-8210-bf98-f7fd52e6e282"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - molecular
-    - sti
-    - weight
-  out:
-    - collapse
-    - law
-    - merge
-    - molecular
-    - sti
-    - weight
+atomPath: "vocabulary/monoisotopic"
+coordinate: "vocabulary/monoisotopic · 7/descent · a13e4519"
+contentUuid: "0ba8c091-74b9-5965-9209-32ba2ee76752"
+diamondUuid: "5815c6a0-b60c-8f99-8ef7-0539747a8d8c"
+uuid: "a13e4519-84bb-8adc-8d6d-a12ed4739b51"
+horo: 7
 typography:
-  partition: monoisotopic
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - molecular
-    - sti
-    - weight
-  matrix:
-    - collapse
-    - law
-    - merge
-    - molecular
-    - sti
-    - weight
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - molecular
-    - sti
-    - weight
 signatures:
-  computationUuid: "4ff3895a-0d18-82cb-bdf4-8664ef0f1d60"
+  computationUuid: "9c9b9b66-3486-8ae0-be14-27fea598a5d0"
   stages:
     - stage: path
-      stageUuid: "7383f81e-4d41-857b-bd66-028278d97e79"
+      stageUuid: "d01b25fd-8599-890b-8277-5e6b29191a64"
     - stage: trinity
-      stageUuid: "7b01a49a-464f-8f5d-9e60-c0553d7f0573"
+      stageUuid: "1c491261-9c03-88f7-801a-3b360b8cf491"
     - stage: boundary
-      stageUuid: "2e05b788-b0e3-8464-b371-23d01e5e1490"
+      stageUuid: "81e271c7-fced-8287-a020-8c188f439824"
     - stage: links
-      stageUuid: "44500ba8-7eb7-8b10-b40d-3a61dee436a9"
+      stageUuid: "37ffdfd8-a8c5-8e2c-808f-b76454f6d2ac"
     - stage: horo
-      stageUuid: "ad417879-5818-8427-a27b-d47787cd2349"
+      stageUuid: "4257b80c-53bb-8137-9b6c-57027d519300"
     - stage: seal
-      stageUuid: "bc40c5fd-e240-8417-ab1f-11e0d6b12af2"
+      stageUuid: "8ddbbf38-aaf5-8e9a-a1a6-1db95148c219"
     - stage: uuid
-      stageUuid: "f503753c-62f8-8a6a-9033-e6aa9201c920"
+      stageUuid: "9514f534-bf7b-8681-a5db-938419408abd"
 version: 2
 ---
 # monoisotopic

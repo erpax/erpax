@@ -1,133 +1,34 @@
 ---
 name: orphism
 description: "Use when reading Orphism as a diamond of invariant atoms — the Greek mystery tradition of the divine soul fallen into the body, bound to the wheel of births, purified to escape and return to the source; Orpheus' music charming even death. Strip the prefix and the soul collapses to self, the wheel to the cycle, the ascent to the return to zeropoint."
-atomPath: vocabulary/orphism
-coordinate: orphism · 1/base · 6a7d9bad
-contentUuid: "b811b437-11e8-5806-9e80-8a79f633c2c7"
-diamondUuid: "a1d97379-4400-862b-a782-80691db9463b"
-uuid: "6a7d9bad-8428-8644-b4bb-c882be141ebc"
-horo: 1
-bonds:
-  in:
-    - archangel
-    - cycle
-    - death
-    - diamond
-    - harmony
-    - identity
-    - law
-    - music
-    - profane
-    - religion
-    - return
-    - sacred
-    - self
-    - society
-    - translator
-    - uuid
-    - wheel
-    - zeropoint
-  out:
-    - archangel
-    - cycle
-    - death
-    - diamond
-    - harmony
-    - identity
-    - law
-    - music
-    - profane
-    - religion
-    - return
-    - sacred
-    - self
-    - society
-    - translator
-    - uuid
-    - wheel
-    - zeropoint
+atomPath: "vocabulary/orphism"
+coordinate: "vocabulary/orphism · 5/round · a6bcf965"
+contentUuid: "e4efa1ad-38d5-57dc-9a6a-37d1f4dfdd62"
+diamondUuid: "68b010ef-8d41-80c5-a2c0-377819438a1a"
+uuid: "a6bcf965-45a6-8562-98ec-7d39a57acfdb"
+horo: 5
 typography:
-  partition: orphism
+  partition: vocabulary
   bondDegree: 56
-  neighbors:
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - archangel
-    - cycle
-    - death
-    - diamond
-    - harmony
-    - identity
-    - law
-    - music
-    - profane
-    - religion
-    - return
-    - sacred
-    - self
-    - society
-    - translator
-    - uuid
-    - wheel
-    - zeropoint
-  matrix:
-    - archangel
-    - cycle
-    - death
-    - diamond
-    - harmony
-    - identity
-    - law
-    - music
-    - profane
-    - religion
-    - return
-    - sacred
-    - self
-    - society
-    - translator
-    - uuid
-    - wheel
-    - zeropoint
-  backlinks:
-    - archangel
-    - cycle
-    - death
-    - diamond
-    - harmony
-    - identity
-    - law
-    - music
-    - profane
-    - religion
-    - return
-    - sacred
-    - self
-    - society
-    - translator
-    - uuid
-    - wheel
-    - zeropoint
 signatures:
-  computationUuid: "3d0d58be-4a7c-8898-8a8e-c3e596a2ba7c"
+  computationUuid: "8707f27b-cf11-8761-b435-4d4fc1cc2587"
   stages:
     - stage: path
-      stageUuid: "4b60d6b9-bb39-8082-bea0-1688ebeae312"
+      stageUuid: "7f4d4d06-286b-8304-945c-9c8f4d6377cc"
     - stage: trinity
-      stageUuid: "2da6cd89-49b8-87e9-8e97-9fe80354889f"
+      stageUuid: "8e08302c-e84b-8f20-963e-bb5a7d391c7d"
     - stage: boundary
-      stageUuid: "e0d32e4c-d964-8fbd-8100-25668dedd86d"
+      stageUuid: "2ce19e6f-42be-8dd5-9230-8459a9d4f9c7"
     - stage: links
-      stageUuid: "a233b6f1-e33d-8a69-802c-2ce428401b31"
+      stageUuid: "04aee189-3b4f-8d55-ac5c-1e1cccf596d0"
     - stage: horo
-      stageUuid: "5125fabf-8c08-8719-848e-000cd4eaaba5"
+      stageUuid: "9610cb5b-980a-8483-9b9e-adac6aa6afd1"
     - stage: seal
-      stageUuid: "a4c771f9-296f-88d7-8cc9-6ec9347e22a2"
+      stageUuid: "b1bdbb85-d3a6-8393-8312-cbfa58ffecaf"
     - stage: uuid
-      stageUuid: "29b2dd8e-7c89-8e15-bf1e-848667a242ea"
+      stageUuid: "06ccc013-cbb5-8cc5-92e4-fa25b78e12ce"
 version: 2
 ---
 # orphism — the divine soul on the wheel; music that charms death

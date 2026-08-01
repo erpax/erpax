@@ -1,68 +1,35 @@
 ---
 name: holding
 description: "Use when reasoning about holding as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/holding
-coordinate: holding · 5/round · 7f85198b
-contentUuid: "cb9b4897-60cb-5409-9470-4a3121ec1557"
-diamondUuid: "324b4d9d-de24-8bff-b865-9809c4585bf2"
-uuid: "7f85198b-2930-8b96-942c-c14facca2c9d"
-horo: 5
-bonds:
-  in:
-    - archive
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - archive
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/holding"
+coordinate: "vocabulary/holding · 1/base · 8c58843b"
+contentUuid: "73eff317-dfe2-59f5-8c56-fa85957d4b71"
+diamondUuid: "53c2e9f2-87f9-8f1f-b3c4-96315dba952b"
+uuid: "8c58843b-0501-8083-8906-e6b8a104a6fc"
+horo: 1
 typography:
-  partition: holding
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - archive
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - archive
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - archive
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "05b80b3c-d503-86fb-aca4-2343fddb5b19"
+  computationUuid: "316e92fd-9813-8b54-943f-0047f7bb806e"
   stages:
     - stage: path
-      stageUuid: "73869431-3943-8ccd-b5b4-1926ba1ec6e1"
+      stageUuid: "daeb1c81-7401-8347-91c2-d0147af285ae"
     - stage: trinity
-      stageUuid: "07e070b1-70d4-8eb1-9678-b7253c8f4376"
+      stageUuid: "a0e636ac-4f31-8a19-b4ed-aeae51903421"
     - stage: boundary
-      stageUuid: "5799e72c-0b1f-813f-8fe3-2bdf214f1e39"
+      stageUuid: "3b92a902-0c21-8742-9422-c44ac703763b"
     - stage: links
-      stageUuid: "811a9e58-df3a-8cbc-af68-84d2ea283969"
+      stageUuid: "f5bd90da-7b4c-8cf8-bf34-4c40d76bd832"
     - stage: horo
-      stageUuid: "70782904-a7b4-86ba-8852-d9de0a4c6b4f"
+      stageUuid: "350a8a9a-09be-8ed5-8b05-982076a8f493"
     - stage: seal
-      stageUuid: "29427d09-319b-8708-ba0a-901aafcadc22"
+      stageUuid: "7344af47-32b0-821b-9209-4fde9148886c"
     - stage: uuid
-      stageUuid: "e217d818-794e-8402-9f07-dec2d64f47f3"
+      stageUuid: "6e5ee147-e985-8f91-9459-f50dce29852a"
 version: 2
 ---
 # holding

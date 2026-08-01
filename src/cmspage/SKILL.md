@@ -2,80 +2,45 @@
 name: cmspage
 description: "Use when creating or managing CMS pages — hero blocks, content blocks, forms, SEO meta — with per-tenant unique slugs, versioned drafts, breadcrumb hierarchy, and i18n routing. The Payload CMS page collection."
 atomPath: cmspage
-coordinate: pages · 4/weave · 17b4d21c
-contentUuid: "134d8aa8-5395-5400-abbe-82dd5fdaab70"
-diamondUuid: "1f0bf859-9845-8e92-995b-37e882209b23"
-uuid: "17b4d21c-7e0c-8a14-ad65-4feb5af106c2"
-horo: 4
-bonds:
-  in:
-    - access
-    - admin
-    - all
-    - identity
-    - queries
-    - versions
-  out:
-    - access
-    - admin
-    - all
-    - identity
-    - queries
-    - versions
+coordinate: "cmspage · 5/round · 8123b17d"
+contentUuid: "66a69587-54d0-522d-808d-2df496b31a4e"
+diamondUuid: "a4a30f6c-96ef-8529-b59b-6231bdddb1ad"
+uuid: "8123b17d-094e-8b22-976b-f02ed9a999fe"
+horo: 5
 typography:
-  partition: pages
-  bondDegree: 0
-  neighbors: []
+  partition: cmspage
+  bondDegree: 18
 standards:
   - "3986 uri slug-to-url"
+  - "BCP-47"
   - "BCP-47 language-tag i18n-routing"
   - "ECMA-402"
   - "ECMA-402 internationalization-api"
-  - "ILO-C111"
   - "NIST-INCITS-359-2012"
   - "UBL-2.1"
   - W3C HTML5 Living Standard
+  - "W3C HTML5 Living Standard`"
   - "WCAG-2.1 level-AA accessibility"
   - schema.org WebPage
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - admin
-    - identity
-    - queries
-    - versions
-  matrix:
-    - access
-    - admin
-    - all
-    - identity
-    - queries
-    - versions
-  backlinks:
-    - access
-    - admin
-    - all
-    - identity
-    - queries
-    - versions
 signatures:
-  computationUuid: "8de27af2-1c8c-8918-ad1f-a1c62b19488b"
+  computationUuid: "7acdbf60-0857-81f4-ade0-dbea92961ef2"
   stages:
     - stage: path
-      stageUuid: "89d0c0ce-a2eb-8388-8c14-d7435aee05ee"
+      stageUuid: "92bc216a-c0cb-8198-8fd5-bad8486018cd"
     - stage: trinity
-      stageUuid: "ea697047-de90-8f82-a0c0-f807f71ba849"
+      stageUuid: "b74f7f9c-e52f-8708-ba89-1ae616ae0b7c"
     - stage: boundary
-      stageUuid: "8a5af68b-6ea3-8c78-a0e6-668bcd04e000"
+      stageUuid: "7404fb60-bb51-8496-911c-8fc22f54d296"
     - stage: links
-      stageUuid: "f3d7304f-2da2-8467-af84-24efbb972f86"
+      stageUuid: "7de51d3e-208f-8086-b014-43a61b50fbd5"
     - stage: horo
-      stageUuid: "1530d8ff-a4d2-8238-8a56-3ef216f63a97"
+      stageUuid: "f0eeeda8-2dd4-8df4-a51f-bc228c354ce7"
     - stage: seal
-      stageUuid: "39faed2a-0c52-891c-b969-5e63150ab018"
+      stageUuid: "513d1eda-4757-8047-8dc6-8cb82e2851f4"
     - stage: uuid
-      stageUuid: "63f8c8b4-2400-8247-b463-2c33fc509016"
+      stageUuid: "fc28d148-2a5c-8b8d-bb9e-faf70bb09a28"
 version: 2
 ---
 # pages

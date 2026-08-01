@@ -1,62 +1,34 @@
 ---
 name: attestation
 description: Use when modelling one attestation — the singular model of the attestations collection (the plural store); a signed assertion that a statement or record is true.
-atomPath: vocabulary/attestation
-coordinate: attestation · 2/share · f5d12072
-contentUuid: "7bcbe732-a404-5bd8-aed5-f7298bbce924"
-diamondUuid: "23bedcf9-388f-84e0-9da7-6f8b9e0ced11"
-uuid: "f5d12072-9176-8555-bfb0-1e81f210ec54"
+atomPath: "vocabulary/attestation"
+coordinate: "vocabulary/attestation · 2/share · 8de8635f"
+contentUuid: "9eedb545-74e6-54b2-91a6-dcdcfceb1ca6"
+diamondUuid: "ff8fefd7-aead-88cd-a437-76e47f9718ab"
+uuid: "8de8635f-6dc0-8f5e-baeb-e959a9f87ff3"
 horo: 2
-bonds:
-  in:
-    - attestations
-    - audit
-    - balance
-    - law
-  out:
-    - attestations
-    - audit
-    - balance
-    - law
 typography:
-  partition: attestation
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - attestations
-    - audit
-    - balance
-    - law
-  matrix:
-    - attestations
-    - audit
-    - balance
-    - law
-  backlinks:
-    - attestations
-    - audit
-    - balance
-    - law
 signatures:
-  computationUuid: "ba7e89fd-1beb-878a-a287-b7888743c8f2"
+  computationUuid: "2f384618-b08e-8d49-ac4e-6f75b23df650"
   stages:
     - stage: path
-      stageUuid: "c8290fe5-7bdf-8cb7-9c8d-cf765a2d366e"
+      stageUuid: "b032fdd8-80c2-8d5d-b53c-41a21cd251d3"
     - stage: trinity
-      stageUuid: "889fd982-3c61-8b8c-81aa-ad650d0b56e6"
+      stageUuid: "b56ebdf9-2042-8e8b-a62b-526e3edad819"
     - stage: boundary
-      stageUuid: "fc30b8e8-1b63-8a61-b0ac-6324988f96f9"
+      stageUuid: "8deccfb5-a420-82a3-bce4-85f178299056"
     - stage: links
-      stageUuid: "fb4129e0-69de-86f5-940e-3dfb5c61f5d6"
+      stageUuid: "bbe1c3fe-33d2-8885-a5de-97c57f1f4469"
     - stage: horo
-      stageUuid: "1d03dd25-e681-80cc-84fe-c909884b5b45"
+      stageUuid: "5369b9ed-fadd-845e-b2ad-1d07bf6256ab"
     - stage: seal
-      stageUuid: "f205f8d9-c481-8111-aade-c503dbf2db5f"
+      stageUuid: "a5b4ea78-b58d-891d-baef-b976f99f5c63"
     - stage: uuid
-      stageUuid: "b1463da8-49cc-8a4e-b7bd-1628620c6544"
+      stageUuid: "89f991d0-53bb-8f3b-9a82-93d967d46be8"
 version: 2
 ---
 # attestation — the model of one [[attestations]] row

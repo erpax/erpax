@@ -1,53 +1,35 @@
 ---
 name: plumber
 description: Use when reasoning about plumber — A plumbing service.
-atomPath: vocabulary/plumber
-coordinate: plumber · 7/descent · 77fbf7d7
-contentUuid: "58f79a54-8682-5a3d-bf12-968a00ba9c89"
-diamondUuid: "c6fb314f-e98d-8501-a2af-537a9d0ef85d"
-uuid: "77fbf7d7-4cf8-868b-a7ea-f3b023eecfef"
-horo: 7
-bonds:
-  in:
-    - law
-    - organization
-  out:
-    - law
-    - organization
+atomPath: "vocabulary/plumber"
+coordinate: "vocabulary/plumber · 1/base · 7f21ef3c"
+contentUuid: "d1932d0d-740e-5310-b020-138b27fcf7ad"
+diamondUuid: "ebda99a1-d856-81b3-89cf-2db8a24fd4f6"
+uuid: "7f21ef3c-b229-8223-9b3c-1dc9fbf232a7"
+horo: 1
 typography:
-  partition: plumber
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - organization
-  matrix:
-    - law
-    - organization
-  backlinks:
-    - law
-    - organization
 signatures:
-  computationUuid: "d07e6c98-ced9-80e2-8952-21db842aedb0"
+  computationUuid: "6f59a3c0-c9f0-80a4-862a-f040aefc33bf"
   stages:
     - stage: path
-      stageUuid: "4e6920e8-48f4-8b29-b2db-1fc16d4428ba"
+      stageUuid: "52823950-ac28-830d-b7e6-fb2e8d2091d1"
     - stage: trinity
-      stageUuid: "90711b70-93a1-8afb-bd05-76cad81e465b"
+      stageUuid: "7d612b12-2e44-80f0-87d8-36704269ddc6"
     - stage: boundary
-      stageUuid: "b7b9d4d7-7711-81d2-8591-a33559a1dcb0"
+      stageUuid: "85c77433-2a20-8b82-bb06-6d6d8ac1e2fd"
     - stage: links
-      stageUuid: "28c993c7-2b8b-8a06-8e35-d3759d4bf3dc"
+      stageUuid: "bd99a3a8-6e81-814c-9761-e3087e48981e"
     - stage: horo
-      stageUuid: "88e9282c-19a8-8e28-a85c-16823082ce72"
+      stageUuid: "8b64efab-2410-86e7-ac16-e46abfecb933"
     - stage: seal
-      stageUuid: "d5ca4c25-475b-8f36-ae60-84145c57c11d"
+      stageUuid: "6632920f-6aba-8df7-bcf2-2cc8ec8b9608"
     - stage: uuid
-      stageUuid: "025f36ac-00bf-841f-8d70-cc1764c3fcc3"
+      stageUuid: "75cc2515-cdc7-8d9e-aac7-2c9869c78ac7"
 version: 2
 ---
 # plumber

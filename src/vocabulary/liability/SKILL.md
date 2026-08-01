@@ -1,96 +1,34 @@
 ---
 name: liability
 description: "Use when a contract limits, excludes, or caps damages/liability — type (contractual, tort, consequential, indirect, punitive), exclusion, cap amount/percentage/formula, surviving clauses, statutory override."
-atomPath: vocabulary/liability
-coordinate: liability · 4/weave · 44e41425
-contentUuid: "d037bfa2-bec9-5fda-a9e8-8ea1c54d0a56"
-diamondUuid: "f567ec12-a6c1-8785-bd5a-9a433d619698"
-uuid: "44e41425-393b-8935-a765-b16d1bac1c4a"
-horo: 4
-bonds:
-  in:
-    - contracts
-    - disputeresolution
-    - equity
-    - indemnity
-    - law
-    - matter
-    - provision
-    - provisions
-    - readme
-    - remediation
-    - termination
-    - warranty
-  out:
-    - contracts
-    - disputeresolution
-    - equity
-    - indemnity
-    - law
-    - matter
-    - provision
-    - provisions
-    - readme
-    - remediation
-    - termination
-    - warranty
+atomPath: "vocabulary/liability"
+coordinate: "vocabulary/liability · 8/crest · bd50712a"
+contentUuid: "89c81222-f05b-57f0-9861-38e557d357eb"
+diamondUuid: "c0e072e6-ea61-8e42-b2ce-2b83552dd34d"
+uuid: "bd50712a-45de-89e9-b29f-0901dd6d4388"
+horo: 8
 typography:
-  partition: liability
+  partition: vocabulary
   bondDegree: 38
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - contracts
-    - indemnity
-    - law
-    - matter
-    - provisions
-    - warranty
-  matrix:
-    - contracts
-    - disputeresolution
-    - equity
-    - indemnity
-    - law
-    - matter
-    - provision
-    - provisions
-    - readme
-    - remediation
-    - termination
-    - warranty
-  backlinks:
-    - contracts
-    - disputeresolution
-    - equity
-    - indemnity
-    - law
-    - matter
-    - provision
-    - provisions
-    - readme
-    - remediation
-    - termination
-    - warranty
 signatures:
-  computationUuid: "c619281d-2f5e-805e-a30e-4a125980d798"
+  computationUuid: "c6fd2ad2-ff6f-8dd8-b786-5551ce0cf3a1"
   stages:
     - stage: path
-      stageUuid: "80105a2b-8f51-869c-b4a3-8b80060d6bed"
+      stageUuid: "2c1f50f0-53cb-8797-9a65-c2683302929b"
     - stage: trinity
-      stageUuid: "c77764a0-0809-8c64-9287-67c11a7c23dd"
+      stageUuid: "69c1864f-1446-8e07-9e26-23fdf8e07687"
     - stage: boundary
-      stageUuid: "f11a6803-c0c3-8475-8333-aab489ce7b00"
+      stageUuid: "80588200-0705-8fc4-be37-dc4b79e41664"
     - stage: links
-      stageUuid: "d431f8bc-dfc7-8200-a505-3344258ac715"
+      stageUuid: "1a917f63-07bf-89bc-a5d7-213e23bc35dd"
     - stage: horo
-      stageUuid: "fb54bec2-b971-883c-a0c9-63689c5ce334"
+      stageUuid: "5ec8303d-741e-8a3e-a46d-418c9e1b98fb"
     - stage: seal
-      stageUuid: "6c8b4917-a686-8c88-92dc-8bef75f25703"
+      stageUuid: "7d5e6651-7550-8555-a403-40597410b527"
     - stage: uuid
-      stageUuid: "988e0c92-17b5-863a-9627-3b6e2ebb7318"
+      stageUuid: "08d48747-ec78-8b16-9528-4b2be00bfed4"
 version: 2
 ---
 # liability

@@ -2,68 +2,22 @@
 name: receipts
 description: "Use when issuing, querying, or auditing Наредба Н-18 fiscal receipts — касови бонове and e-receipts (alternative regime) — carrying УНП, fiscal-QR payload, VAT breakdown per tax group, and payment type; tamper-evident via content-uuid audit chain; never deleted. The Н-18 fiscal receipt collection."
 atomPath: receipts
-coordinate: receipts · 8/crest · 4f1c9dc2
-contentUuid: "8b164cfe-17fb-5c51-af85-fd11c4476486"
-diamondUuid: "ca7c044f-f0df-82c5-90d4-402229f2c202"
-uuid: "4f1c9dc2-36b4-8cda-9f4d-3eb847199673"
+coordinate: "receipts · 8/crest · e46105e5"
+contentUuid: "4ce754b1-4800-5f1f-9324-63ca9bf80156"
+diamondUuid: "7b44c926-a7aa-8516-912b-955b17c2796d"
+uuid: "e46105e5-981d-8f20-bd9e-15c33ddde827"
 horo: 8
-bonds:
-  in:
-    - accounting
-    - collections
-    - fields
-    - law
-    - proof
-    - sales
-    - supto
-    - versions
-  out:
-    - accounting
-    - collections
-    - fields
-    - law
-    - proof
-    - sales
-    - supto
-    - versions
 typography:
   partition: receipts
   bondDegree: 34
-  neighbors: []
 standards:
   - "BG Наредба-Н-18 §СУПТО касов-бон · §алтернативен-режим e-receipt"
-  - "ISO-19011:2018 audit-trail"
+  - "ISO-19011`"
+  - "ISO/IEC-27001:2022`"
   - "Naredba-N-18"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - collections
-    - fields
-    - law
-    - proof
-    - supto
-    - versions
-  matrix:
-    - accounting
-    - collections
-    - fields
-    - law
-    - proof
-    - sales
-    - supto
-    - versions
-  backlinks:
-    - accounting
-    - collections
-    - fields
-    - law
-    - proof
-    - sales
-    - supto
-    - versions
 signatures:
-  computationUuid: "ca415024-2176-831f-820c-38db0fe86e77"
+  computationUuid: "5c0e98ae-504d-86b6-af95-c25fe6a6fd65"
   stages:
     - stage: path
       stageUuid: "a48f65c4-e5f4-82c9-951d-9be7fc45f151"
@@ -74,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "9af7bd39-4a09-8c55-9a08-e1f9872eb774"
     - stage: horo
-      stageUuid: "cb33cdae-b1d6-88cb-afcf-291db7b249c3"
+      stageUuid: "ec5e3169-0fee-85f1-adbf-7e629093eae6"
     - stage: seal
-      stageUuid: "d3753e1e-9f22-8c32-83de-d7ea9c660648"
+      stageUuid: "f43e4860-056e-8829-a385-7d5841a42563"
     - stage: uuid
-      stageUuid: "8ddbc94f-d450-8445-b17c-a21d92296833"
+      stageUuid: "f614d925-cbea-88d1-a18f-01ad00c12892"
 version: 2
 ---
 # receipts

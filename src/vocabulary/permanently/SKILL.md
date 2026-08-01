@@ -1,63 +1,35 @@
 ---
 name: permanently
 description: "Use when reasoning about permanently as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/permanently
-coordinate: permanently · 4/weave · e5e117f3
-contentUuid: "dbe05a64-5072-5284-8538-dd1380bff800"
-diamondUuid: "82384a8f-26e0-8101-84be-7a4651529ece"
-uuid: "e5e117f3-d97d-8883-8436-d6e4f2a9331f"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/permanently"
+coordinate: "vocabulary/permanently · 7/descent · 9e24637c"
+contentUuid: "9db9a862-641a-5416-99d9-2520e270f26e"
+diamondUuid: "fee6d63d-1bfd-8d07-af76-6d6d721dbb10"
+uuid: "9e24637c-a64a-8ffd-9db8-278b2b96a79a"
+horo: 7
 typography:
-  partition: permanently
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "2ea6a2bc-2895-8dbc-b3e5-88686172765e"
+  computationUuid: "74c0efc8-78f6-8595-b653-6b7cf839ebce"
   stages:
     - stage: path
-      stageUuid: "363b9174-5b5f-8d66-a0ab-c9359479c56f"
+      stageUuid: "5cd0cc1e-3554-897d-8d47-07247bde82fc"
     - stage: trinity
-      stageUuid: "80498d17-4be2-8581-9a4d-5e11dcea3b02"
+      stageUuid: "41f8dd26-e3e3-8d66-9d04-ff3ae68304ea"
     - stage: boundary
-      stageUuid: "02368a8a-5f4e-8649-8dd8-de0735ff93e9"
+      stageUuid: "6597c6f9-36a2-8602-a6e9-194fd6a308fa"
     - stage: links
-      stageUuid: "73301e86-d7c5-8a8c-906e-491db630944d"
+      stageUuid: "0705ee21-16b7-830e-910c-cdb6b743dca2"
     - stage: horo
-      stageUuid: "e7ecdfcb-26a8-8480-904e-e31d1fb53d64"
+      stageUuid: "45415d37-7635-80d5-9578-0af6145df376"
     - stage: seal
-      stageUuid: "34fd2ab6-194e-8df1-bcf9-b2884fd9a638"
+      stageUuid: "010a13f6-32d9-83fa-bde8-e88c32792dc6"
     - stage: uuid
-      stageUuid: "61e5680c-b5f5-85cf-af56-a461fdebba99"
+      stageUuid: "e4d310f9-5602-8245-81b6-1f593a95a85f"
 version: 2
 ---
 # permanently

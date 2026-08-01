@@ -1,72 +1,35 @@
 ---
 name: estimates
 description: "Use when reasoning about estimates as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/estimates
-coordinate: estimates · 5/round · cdc534ac
-contentUuid: "326293d3-199d-516c-9b2f-a4de698c4666"
-diamondUuid: "b188a436-6621-8457-9c82-57f3b8fabc7a"
-uuid: "cdc534ac-edd9-8e1e-a9e2-f657e275ce86"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - estimate
-    - law
-    - merge
-    - risk
-    - sti
-  out:
-    - collapse
-    - estimate
-    - law
-    - merge
-    - risk
-    - sti
+atomPath: "vocabulary/estimates"
+coordinate: "vocabulary/estimates · 4/weave · fc2a20be"
+contentUuid: "6a524a6b-850d-56a8-b00c-c2adedb5b885"
+diamondUuid: "d810ca4d-b44d-826f-9580-ad75b701e1ea"
+uuid: "fc2a20be-e19c-83ec-a464-321c298536d0"
+horo: 4
 typography:
-  partition: estimates
+  partition: vocabulary
   bondDegree: 18
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - risk
-    - sti
-  matrix:
-    - collapse
-    - estimate
-    - law
-    - merge
-    - risk
-    - sti
-  backlinks:
-    - collapse
-    - estimate
-    - law
-    - merge
-    - risk
-    - sti
 signatures:
-  computationUuid: "5d796760-55ca-8219-813e-eedd39bc65be"
+  computationUuid: "192de002-5e27-8c1e-a1ae-261987354dac"
   stages:
     - stage: path
-      stageUuid: "471fb61c-e86f-8131-8d98-ff9aa8f60b5a"
+      stageUuid: "f1ca974c-717e-898a-8f69-70f816d52e27"
     - stage: trinity
-      stageUuid: "65e7eaac-e55e-8d4c-9c3d-d3b9a56e6b1c"
+      stageUuid: "e71a7b49-e698-8eff-a2bd-3dcd456e41b2"
     - stage: boundary
-      stageUuid: "835e4e42-f1be-829c-bf74-971bb9b88686"
+      stageUuid: "9e24c265-abe0-8cad-a4cd-b3aaeeafaa87"
     - stage: links
-      stageUuid: "366e61fa-d5e0-8dda-aee3-ac6a031b8333"
+      stageUuid: "befc0542-e348-83f9-b76e-a8627ad3ecfb"
     - stage: horo
-      stageUuid: "18d42e9e-8308-8fdc-8be0-d2f9d2c1f4c8"
+      stageUuid: "85e9976e-5f1a-8a42-a617-7508a476a66d"
     - stage: seal
-      stageUuid: "f376457c-e25f-815d-a22d-b7d753ae0137"
+      stageUuid: "a6b1225b-3bad-88d6-8344-392659deb955"
     - stage: uuid
-      stageUuid: "cf62971b-cca1-8556-91af-0aa90661ccb3"
+      stageUuid: "884fdd93-9ff9-871e-8958-1111c7063b9a"
 version: 2
 ---
 # estimates

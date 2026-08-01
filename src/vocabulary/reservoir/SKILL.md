@@ -1,53 +1,35 @@
 ---
 name: reservoir
 description: "Use when reasoning about reservoir — A reservoir of water, typically an artificially created lake, like the Lake Kariba reservoir."
-atomPath: vocabulary/reservoir
-coordinate: reservoir · 8/crest · b3cb657c
-contentUuid: "610a53e2-a650-50b1-927f-35cf4e13d3d4"
-diamondUuid: "73d919ce-2255-836d-81eb-789e02db58c8"
-uuid: "b3cb657c-9749-8ba4-a249-56460bc700e6"
-horo: 8
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/reservoir"
+coordinate: "vocabulary/reservoir · 4/weave · 7c4336b1"
+contentUuid: "f35ac149-c195-5e23-867f-149f7f4fedd7"
+diamondUuid: "9770711b-b632-8eed-bcc3-6efd78335df5"
+uuid: "7c4336b1-0efc-88ef-b1ae-66165c2c1a48"
+horo: 4
 typography:
-  partition: reservoir
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "c9dfc0ff-d294-835c-ae6b-8408716106be"
+  computationUuid: "fcc59e57-d381-8cc4-bae8-dfcb62f8f565"
   stages:
     - stage: path
-      stageUuid: "e81d485b-2fab-8e88-b086-94f127bdebbf"
+      stageUuid: "a312316e-cf75-8d54-a5d4-a1b700f59699"
     - stage: trinity
-      stageUuid: "defc40a8-4ed5-832e-9096-82fa2636e9fb"
+      stageUuid: "a1b5b4e7-3e75-89c5-b60b-6aa1ea4dc76c"
     - stage: boundary
-      stageUuid: "9d73a101-8de3-8521-9998-510395cef821"
+      stageUuid: "15aee11e-44c6-883e-927c-32dfbf70b8b9"
     - stage: links
-      stageUuid: "d8330c4a-3565-8f4a-bb32-dff11b341095"
+      stageUuid: "25b1a166-b103-837f-8e07-99719a0aed24"
     - stage: horo
-      stageUuid: "86bd6ed8-f2f7-85eb-b63b-439ce1a9ced8"
+      stageUuid: "212a59a3-bfbf-8cc4-a559-60228c3aa8b6"
     - stage: seal
-      stageUuid: "88c069db-c1c5-81bc-8a5c-4361810794b4"
+      stageUuid: "c4c512e6-1c1a-8d81-9ca7-721e12ee852a"
     - stage: uuid
-      stageUuid: "6b3f7d3c-d632-89dc-be59-0aa75bb25dc7"
+      stageUuid: "0f56969a-27f5-82f7-bfe9-b9bf877e3812"
 version: 2
 ---
 # reservoir

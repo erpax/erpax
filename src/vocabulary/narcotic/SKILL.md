@@ -1,63 +1,35 @@
 ---
 name: narcotic
 description: "Use when reasoning about narcotic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/narcotic
-coordinate: narcotic · 4/weave · 3db4cf48
-contentUuid: "188d4c9a-9661-5573-83a4-338d9962e65a"
-diamondUuid: "8677091b-1a4b-8612-934c-022c9363c5df"
-uuid: "3db4cf48-2d42-8da7-97ac-980e6955d2be"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/narcotic"
+coordinate: "vocabulary/narcotic · 5/round · e551c2af"
+contentUuid: "3dbca69f-a87d-577f-b5e3-3f99e3fc8bd2"
+diamondUuid: "df33a711-c8ea-82dc-9100-cbc0f38c76c4"
+uuid: "e551c2af-7d82-8380-9e92-74ed52b95ebc"
+horo: 5
 typography:
-  partition: narcotic
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "78440f84-4094-8b75-9dd0-c1c59d80705c"
+  computationUuid: "ac1cea10-21a3-84be-9098-56d22d1f0ea3"
   stages:
     - stage: path
-      stageUuid: "3bed67cd-22ef-8b2f-858a-5c903aa7f055"
+      stageUuid: "912fffb8-43d1-86cd-822e-7103a5935cb4"
     - stage: trinity
-      stageUuid: "ac97a7d5-b6a2-812e-bb6a-db0a86bd51b9"
+      stageUuid: "2bc65811-e934-801b-b691-6b61a378e621"
     - stage: boundary
-      stageUuid: "37ba2a74-fa04-855f-b60d-9d459c0e07bc"
+      stageUuid: "e431f270-ab69-8f71-b56b-f5046410f8d2"
     - stage: links
-      stageUuid: "b4ad0cfd-dc6c-8109-8f73-ed42bc8b3b50"
+      stageUuid: "f7b6fffb-8808-8a22-876e-3a30317a02ba"
     - stage: horo
-      stageUuid: "39f221bd-2a9a-82eb-89e8-c983b3bc3925"
+      stageUuid: "590e9646-6c6f-8db7-839c-ac8a6e324a38"
     - stage: seal
-      stageUuid: "a523786c-ffc7-89a3-b5dc-a8554802f824"
+      stageUuid: "389e3a61-1915-8716-836a-1748dc737e94"
     - stage: uuid
-      stageUuid: "7d88cce9-ac5a-8a5d-8e26-f1da641d0ff6"
+      stageUuid: "7c598faf-4b80-8734-9bef-9dee86b43149"
 version: 2
 ---
 # narcotic

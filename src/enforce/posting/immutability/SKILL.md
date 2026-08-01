@@ -2,47 +2,18 @@
 name: immutability
 description: "Use when reasoning about whether a posted GL posting can be altered — the beforeChange hook that seals a row once postedDate is set, allowing an admin edit only with a documented override. Read this before assuming postings are immutable: the hook is correct, tested, and attached to NO collection, and gl-postings lacks the override fields it requires."
 atomPath: "enforce/posting/immutability"
-coordinate: "enforce/posting/immutability · 2/share · 93d1b829"
-contentUuid: "e670db65-3d11-5da5-bb3f-7f17979801a1"
-diamondUuid: "f372a584-b10e-8af8-9668-57614fca23f7"
-uuid: "93d1b829-c3c2-8280-a69f-bf8dc05fdfe4"
-horo: 2
-bonds:
-  in:
-    - hooks
-    - law
-    - merge
-    - posting
-    - rules
-  out:
-    - hooks
-    - law
-    - merge
-    - rules
+coordinate: "enforce/posting/immutability · 5/round · dfdc0e97"
+contentUuid: "1e2d352f-d179-5b01-8226-d343a9f2dd70"
+diamondUuid: "0fe35e62-e524-8ff0-85f5-8e9644166d6f"
+uuid: "dfdc0e97-876c-8bd0-8649-551600256d57"
+horo: 5
 typography:
   partition: enforce
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - hooks
-    - law
-    - merge
-    - rules
-  matrix:
-    - hooks
-    - law
-    - merge
-    - rules
-  backlinks:
-    - hooks
-    - law
-    - merge
-    - rules
 signatures:
-  computationUuid: "deb7c834-a047-8c2e-a30e-bf95373735c6"
+  computationUuid: "15a65d2c-ccdd-88f8-85a4-bd19c338c662"
   stages:
     - stage: path
       stageUuid: "5c27898d-870f-8413-b4a1-cefb393a0de5"
@@ -53,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "6e96b91e-84a6-8193-98f5-12d5873352b7"
     - stage: horo
-      stageUuid: "17747673-2f29-83d0-9ea4-78df9cb368df"
+      stageUuid: "b22e3295-4b6c-89fe-a15c-9d2a9b7a3ae9"
     - stage: seal
       stageUuid: "e0eed64e-cd94-85b2-be39-9ba4a2eac4b5"
     - stage: uuid
-      stageUuid: "bd95b69e-30ae-83d3-b169-5bf77491dc14"
+      stageUuid: "5b365b7e-9b1b-8297-a4a5-bc048234f2cd"
 version: 2
 ---
 # immutability — the control is written, tested, and guards nothing

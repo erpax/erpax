@@ -1,63 +1,35 @@
 ---
 name: recruiting
 description: "Use when reasoning about recruiting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/recruiting
-coordinate: recruiting · 4/weave · 60837a2b
-contentUuid: "d1b00de6-b96a-5bdd-affc-7f59ace39a10"
-diamondUuid: "186aa4bc-1259-815e-bacd-a1023550f52e"
-uuid: "60837a2b-5d25-84b0-b418-42bc5a04ab87"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/recruiting"
+coordinate: "vocabulary/recruiting · 7/descent · 0e42dd70"
+contentUuid: "8a225e69-e0e2-5e31-8381-e4dbe1d5f5c7"
+diamondUuid: "8d270db5-4548-8392-a92e-6a2e4705322d"
+uuid: "0e42dd70-aad6-8c96-b727-c32b4ae125dd"
+horo: 7
 typography:
-  partition: recruiting
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "8288f25a-162f-8359-abeb-faac4917b12a"
+  computationUuid: "94a30897-a3cc-8822-bf90-1db657e6513d"
   stages:
     - stage: path
-      stageUuid: "6837df79-f6d9-8635-a274-915fa5705296"
+      stageUuid: "c27cb3b5-0738-84e3-ae29-974236d4cc5a"
     - stage: trinity
-      stageUuid: "cf17768c-cec2-86cb-bcb2-e483aeb631c4"
+      stageUuid: "3c9b19ac-92dc-83f4-8a78-c5347a333551"
     - stage: boundary
-      stageUuid: "bcc59437-cf46-846c-a312-b9170bcfb728"
+      stageUuid: "1522d442-5aed-8340-9b19-261c00e00eb2"
     - stage: links
-      stageUuid: "6baa1894-ab54-8600-b4e4-83ee8f84b6de"
+      stageUuid: "455155f7-2714-83a8-b24a-ceec6e55ee62"
     - stage: horo
-      stageUuid: "86e8b049-b0e5-8cac-bdfe-9aa8178f44f2"
+      stageUuid: "cf450311-7fbd-813e-b9fd-809c7accb98e"
     - stage: seal
-      stageUuid: "50eef25f-7c5a-8f33-8939-e858353c53b2"
+      stageUuid: "aa4ffcb6-cbe1-8717-ac01-d6d14e8427a3"
     - stage: uuid
-      stageUuid: "64a8c1b2-9b22-849b-be45-ea36e3f1500d"
+      stageUuid: "50ad4d7d-a47b-82a6-8f5d-c88f432bfced"
 version: 2
 ---
 # recruiting

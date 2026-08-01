@@ -2,96 +2,20 @@
 name: convention
 description: "Use when reasoning about the corpus's conventions as a layer — each convention is a check-atom with a live coverage(); the collider composes them into one tamper-cost, infinite only when every convention is computed clean (zero entropy)."
 atomPath: convention
-coordinate: "convention · 7/descent · e21e67d2"
-contentUuid: "2144ba05-2ccf-5f3d-8771-27fb5fda9a36"
-diamondUuid: "ea15c9c7-f971-82b1-a382-07b6acc91497"
-uuid: "e21e67d2-6a22-8dad-9ee2-36340ad31aec"
-horo: 7
-bonds:
-  in:
-    - boundary
-    - collider
-    - dry
-    - export
-    - folder
-    - guardian
-    - import
-    - law
-    - lawful
-    - link
-    - named
-    - purity
-    - rules
-    - sealed
-    - tamper
-  out:
-    - boundary
-    - collider
-    - dry
-    - export
-    - folder
-    - guardian
-    - import
-    - law
-    - lawful
-    - link
-    - named
-    - purity
-    - rules
-    - sealed
-    - tamper
+coordinate: "convention · 1/base · 0814b852"
+contentUuid: "affd5ac0-f907-5522-8ff2-42e0c40b7a74"
+diamondUuid: "50a74d50-0393-8c6f-938d-2880da4fc8cf"
+uuid: "0814b852-7a26-8dd9-86ab-3a832affd2e9"
+horo: 1
 typography:
   partition: convention
-  bondDegree: 45
-  neighbors: []
+  bondDegree: 50
 standards:
   - "UBL-2.1"
   - "each convention is computed-not-hardcoded; the collider product (zero entropy ⟺ ∞)"
 bindings: []
-neighbors:
-  wikilink:
-    - collider
-    - dry
-    - law
-    - lawful
-    - link
-    - named
-    - sealed
-    - tamper
-  matrix:
-    - boundary
-    - collider
-    - dry
-    - export
-    - folder
-    - guardian
-    - import
-    - law
-    - lawful
-    - link
-    - named
-    - purity
-    - rules
-    - sealed
-    - tamper
-  backlinks:
-    - boundary
-    - collider
-    - dry
-    - export
-    - folder
-    - guardian
-    - import
-    - law
-    - lawful
-    - link
-    - named
-    - purity
-    - rules
-    - sealed
-    - tamper
 signatures:
-  computationUuid: "234c947d-3a24-85a1-b54f-66eaacacd092"
+  computationUuid: "0df33b80-7eb4-89fe-9cd6-8effd7305ecf"
   stages:
     - stage: path
       stageUuid: "48c3e91b-9781-81dc-93c6-1ecf52313477"
@@ -102,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "39d9560a-b0ce-84e0-a848-acb969ff494b"
     - stage: horo
-      stageUuid: "a504a548-dd05-80e1-a292-1dfac5c6cf75"
+      stageUuid: "03635961-fff8-8344-9792-b53ebae3902e"
     - stage: seal
       stageUuid: "94d8b8e7-8102-8814-a492-29667c6caaaa"
     - stage: uuid
-      stageUuid: "d0a8c92c-2b9e-8e51-9964-96ba6e354af6"
+      stageUuid: "562b1773-dc93-8850-8aba-00bdc3ad757e"
 version: 2
 ---
 # convention — the corpus's laws, each a measured check

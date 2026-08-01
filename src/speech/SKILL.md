@@ -2,82 +2,35 @@
 name: speech
 description: "Use when speech must be computed from sealed coordinates — pitch · phonemes · duration derived from content-uuid · horo · path; never hand-authored audio text. User alias: speach."
 atomPath: speech
-coordinate: speech · 5/round · cd5cdd5e
-contentUuid: "247ae546-7cf0-5ac7-a1b7-dc9b96446aeb"
-diamondUuid: "bc987197-b124-8110-a05a-ad00e61a572d"
-uuid: "cd5cdd5e-6243-8a39-82af-f5cd7fa6ff22"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - markup
-    - merge
-    - signal
-    - speach
-    - sti
-    - text
-    - writing
-    - vitepress
-  out:
-    - collapse
-    - law
-    - markup
-    - merge
-    - signal
-    - speach
-    - sti
-    - text
-    - writing
-    - vitepress
+coordinate: "speech · 4/weave · 2a7d313e"
+contentUuid: "bb3d044a-4ebf-59f9-9481-fd40a95486d2"
+diamondUuid: "f55170a0-35fb-80fc-bf9f-b6be48a760eb"
+uuid: "2a7d313e-3c5d-8f88-9777-615011e4ce26"
+horo: 4
 typography:
   partition: speech
-  bondDegree: 23
-  neighbors: []
+  bondDegree: 33
 standards:
+  - "ISO-16:1975 a432-tuning-reference (pitch); value from position"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - markup
-    - merge
-    - sti
-    - text
-  matrix:
-    - collapse
-    - law
-    - markup
-    - merge
-    - sti
-    - text
-    - vitepress
-  backlinks:
-    - collapse
-    - law
-    - markup
-    - merge
-    - sti
-    - text
-    - vitepress
 signatures:
-  computationUuid: "3ac32f91-1d06-81a8-9bd0-802d7023361b"
+  computationUuid: "b14a7bba-8a8b-8659-ac2d-54a0a6d4e68e"
   stages:
     - stage: path
       stageUuid: "45be4a08-8f4d-8e1f-82ee-05803966a144"
     - stage: trinity
-      stageUuid: "29a18a43-f971-8512-a328-990610a5a816"
+      stageUuid: "a1d8777f-acaf-8fbc-8c36-77c5975df245"
     - stage: boundary
-      stageUuid: "89e2de07-5d4c-8d97-9ce3-9eb98824b7a6"
+      stageUuid: "545352db-58ed-8af2-ae19-c1381b41f9c0"
     - stage: links
-      stageUuid: "5f73b48d-b648-8d73-8c7d-d13d8f75e323"
+      stageUuid: "988367dc-c022-887d-a8d6-39f9c1268d0d"
     - stage: horo
-      stageUuid: "bb99610a-b4ce-81d3-8c2e-2c071cf33778"
+      stageUuid: "d051d82a-e534-85e3-9e42-ca74b9070760"
     - stage: seal
-      stageUuid: "f322a9b9-772f-8549-94a0-d3979df1f4a9"
+      stageUuid: "68bc7b80-f73d-8555-a53d-f02d07f5108d"
     - stage: uuid
-      stageUuid: "9c1d36a6-3591-8cb1-a1b4-96d2585c0bdb"
+      stageUuid: "7c168319-49f5-801a-8d1f-f227794d48e8"
 version: 2
 ---
 # speech

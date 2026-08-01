@@ -2,45 +2,14 @@
 name: measurements
 description: "Use when measuring or disclosing fair value of assets and liabilities — financial instruments, investment property, biological assets, share-based payments, PPA items — capturing IFRS 13 Level-1/2/3 hierarchy, valuation technique, unobservable inputs, and P&L / OCI recognition route. The IFRS 13 fair-value measurement register."
 atomPath: "fair/value/measurements"
-coordinate: "fair/value/measurements · 7/descent · ca5c5f59"
-contentUuid: "b659ecc5-1bde-5bb2-9a18-93f59d4a14b5"
-diamondUuid: "00a12ad0-9156-8839-9748-671512acc988"
-uuid: "ca5c5f59-559b-8a45-8487-3426197b9b2d"
-horo: 7
-bonds:
-  in:
-    - accounting
-    - assets
-    - attestations
-    - classifications
-    - combinations
-    - contracts
-    - goodwill
-    - hedge
-    - law
-    - party
-    - properties
-    - standard
-    - transaction
-    - value
-  out:
-    - accounting
-    - assets
-    - attestations
-    - classifications
-    - combinations
-    - contracts
-    - goodwill
-    - hedge
-    - law
-    - party
-    - properties
-    - standard
-    - transaction
+coordinate: "fair/value/measurements · 8/crest · 3ed1945e"
+contentUuid: "dd865752-fd23-5be2-8ddd-dd0492e87c57"
+diamondUuid: "185d5bc4-e01a-80ce-b505-79795a006ba3"
+uuid: "3ed1945e-bdee-8d3d-b6ad-48ba1ad2e995"
+horo: 8
 typography:
   partition: fair
-  bondDegree: 40
-  neighbors: []
+  bondDegree: 34
 standards:
   - "IFRS IFRS-13 §72 fair-value-hierarchy-three-levels"
   - "IFRS IFRS-13 §72 fair-value-hierarchy-three-levels`"
@@ -64,45 +33,8 @@ standards:
   - "US-GAAP ASC-820 fair-value-measurement"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - assets
-    - attestations
-    - law
-    - party
-    - standard
-    - transaction
-  matrix:
-    - accounting
-    - assets
-    - attestations
-    - classifications
-    - combinations
-    - contracts
-    - goodwill
-    - hedge
-    - law
-    - party
-    - properties
-    - standard
-    - transaction
-  backlinks:
-    - accounting
-    - assets
-    - attestations
-    - classifications
-    - combinations
-    - contracts
-    - goodwill
-    - hedge
-    - law
-    - party
-    - properties
-    - standard
-    - transaction
 signatures:
-  computationUuid: "2a26e33a-c4a5-8ab6-88b9-27fce54441e2"
+  computationUuid: "19f26482-4a5d-8067-8682-a833e6fe1655"
   stages:
     - stage: path
       stageUuid: "a61e8171-9ef5-85ac-96cd-0eae28125f3a"
@@ -113,11 +45,11 @@ signatures:
     - stage: links
       stageUuid: "60f2264b-4461-87a7-bd1c-8eee5d5a2c55"
     - stage: horo
-      stageUuid: "c5fe52ae-6cff-8761-a5f0-6bee247a65cd"
+      stageUuid: "082452d4-1df3-8bb3-9a90-f3b2b47200e6"
     - stage: seal
       stageUuid: "e9b257be-591b-8407-ab7e-ea551aeebbce"
     - stage: uuid
-      stageUuid: "f9c29eeb-8de5-8a72-91e4-8c44aec2bb95"
+      stageUuid: "ad60daf7-9bb9-85d1-bb34-378d887e63be"
 version: 2
 ---
 # fair-value-measurements

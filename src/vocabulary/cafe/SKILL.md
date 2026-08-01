@@ -1,78 +1,35 @@
 ---
 name: cafe
 description: "Use when reasoning about cafe as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/cafe
-coordinate: cafe · 1/base · 1204946a
-contentUuid: "83aae7ac-6dba-5142-a7a3-228ceec6a072"
-diamondUuid: "0f7daf76-1b22-8868-b039-afd2e039ccf7"
-uuid: "1204946a-895b-87a9-864b-d8f1008c4d67"
-horo: 1
-bonds:
-  in:
-    - coffee
-    - collapse
-    - internet
-    - law
-    - merge
-    - shop
-    - sti
-  out:
-    - coffee
-    - collapse
-    - internet
-    - law
-    - merge
-    - shop
-    - sti
+atomPath: "vocabulary/cafe"
+coordinate: "vocabulary/cafe · 4/weave · 106a0522"
+contentUuid: "5aa60472-7cee-5cbb-b4d7-53ce0eff2c27"
+diamondUuid: "ffbc3654-c203-879f-9bd9-900d054fe2fd"
+uuid: "106a0522-5610-89ce-8329-526ccf47bce6"
+horo: 4
 typography:
-  partition: cafe
+  partition: vocabulary
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - coffee
-    - collapse
-    - internet
-    - law
-    - merge
-    - shop
-    - sti
-  matrix:
-    - coffee
-    - collapse
-    - internet
-    - law
-    - merge
-    - shop
-    - sti
-  backlinks:
-    - coffee
-    - collapse
-    - internet
-    - law
-    - merge
-    - shop
-    - sti
 signatures:
-  computationUuid: "ddd8a425-149b-89a0-8833-34ed38962b24"
+  computationUuid: "f31d4e96-68d1-8cb4-a2a3-9aa0fe9a98a9"
   stages:
     - stage: path
-      stageUuid: "3b70626e-5392-8eac-b927-53c9686ecdb2"
+      stageUuid: "7f54ce6f-9238-8abc-8a61-abd9239731b7"
     - stage: trinity
-      stageUuid: "c131efef-3412-8bdd-979c-b3ff4605349e"
+      stageUuid: "f63f2a82-4da0-8b66-8685-5ee4f5dc633c"
     - stage: boundary
-      stageUuid: "3d0aff69-83cc-8186-bf3b-341367d9f2ed"
+      stageUuid: "6df50077-60a9-85ae-a017-6186f10761dd"
     - stage: links
-      stageUuid: "c3a75d62-682b-825f-b683-dc2701c1077b"
+      stageUuid: "08893992-51fa-8ace-815b-906594f72acf"
     - stage: horo
-      stageUuid: "a667cde0-dee8-83f1-9b51-a3ac6703faef"
+      stageUuid: "3c9033f4-3a21-85a8-8216-6476243a849b"
     - stage: seal
-      stageUuid: "44f97b36-9786-868e-b8a8-e03fb93ecec7"
+      stageUuid: "e766908c-eacc-8cbe-90ab-6e9c84d3f152"
     - stage: uuid
-      stageUuid: "43d7ef05-854f-8249-897e-37b05901788a"
+      stageUuid: "b631b741-3bb3-8ec5-b116-39767cc85f4d"
 version: 2
 ---
 # cafe

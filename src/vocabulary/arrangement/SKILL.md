@@ -1,68 +1,35 @@
 ---
 name: arrangement
 description: "Use when reasoning about arrangement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/arrangement
-coordinate: arrangement · 1/base · c2c00f35
-contentUuid: "f4fb8ae4-bc84-577b-82d8-41307a5b3963"
-diamondUuid: "bd26a549-c714-8776-8de9-cdd31536021d"
-uuid: "c2c00f35-704e-88a4-a61b-2f7dc81357cb"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - music
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - music
-    - sti
+atomPath: "vocabulary/arrangement"
+coordinate: "vocabulary/arrangement · 8/crest · a517014a"
+contentUuid: "00b76d22-ce09-593e-8f92-3b2a5d8426db"
+diamondUuid: "ac057089-2373-8efd-9e75-87b4b7985b94"
+uuid: "a517014a-d238-8590-95df-a140617a2011"
+horo: 8
 typography:
-  partition: arrangement
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - music
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - music
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - music
-    - sti
 signatures:
-  computationUuid: "4021411c-c9af-85df-91aa-d424adabc6ff"
+  computationUuid: "85b12b64-9dff-8b71-be88-8ac408829f8d"
   stages:
     - stage: path
-      stageUuid: "72961ff7-808e-8877-912d-53515f1c75b9"
+      stageUuid: "07e44418-0d57-88e9-91d9-980cb8d0b080"
     - stage: trinity
-      stageUuid: "25aba2f4-cbba-81e9-aabc-a749040e845b"
+      stageUuid: "bd3c8813-e92e-86d9-b67c-a05a7999d87a"
     - stage: boundary
-      stageUuid: "4dee29a1-de6f-8d96-8073-f2845da38797"
+      stageUuid: "aee31260-707f-860a-a579-bf889c6af921"
     - stage: links
-      stageUuid: "f467f018-52b8-815f-9ecc-5c0bff6a8241"
+      stageUuid: "9b4a6886-7e4c-8e22-9e6a-da85235d9360"
     - stage: horo
-      stageUuid: "a3acc2ba-4ecb-8ef8-8ff2-37d18e1bb9aa"
+      stageUuid: "f9150619-57b4-811b-ba07-e814d64ecb3a"
     - stage: seal
-      stageUuid: "eb8cce9c-fc5f-8d81-820f-64d0516d5ffb"
+      stageUuid: "94829930-45a8-8d00-9469-86487f1a4208"
     - stage: uuid
-      stageUuid: "5ca51a62-334d-8ead-b54f-86ba4d4694b7"
+      stageUuid: "83dd38a5-303f-83ac-94d9-65e75e99dc5d"
 version: 2
 ---
 # arrangement

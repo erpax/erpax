@@ -1,63 +1,35 @@
 ---
 name: conventional
 description: "Use when reasoning about conventional as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/conventional
-coordinate: conventional · 2/share · 782cd28c
-contentUuid: "ea1834c0-3c9b-5059-972d-98149133e122"
-diamondUuid: "a51b69cf-b086-8b11-9ee3-4c46c3942a01"
-uuid: "782cd28c-a929-83d8-8b96-2c3da520a609"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/conventional"
+coordinate: "vocabulary/conventional · 5/round · e66a513d"
+contentUuid: "baf88e73-c8f4-568a-a18a-e97d85810da0"
+diamondUuid: "d8abcb9b-81d2-81b7-a006-9d1d22048f34"
+uuid: "e66a513d-a9cb-8927-92fd-85595cdc3206"
+horo: 5
 typography:
-  partition: conventional
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "17fdf9c8-0d7e-83b5-9399-0fe4932ba72d"
+  computationUuid: "2c1843d8-d7f3-8d50-91db-f230ab5e86eb"
   stages:
     - stage: path
-      stageUuid: "eedb9616-fe9d-8a1b-acb3-d4599b232d28"
+      stageUuid: "9e249f8e-7f6d-8719-b6e6-e5d113cf7a1e"
     - stage: trinity
-      stageUuid: "01447299-2f29-84b3-b296-6d6933011b0a"
+      stageUuid: "b5fa0b0b-c4ab-8d8a-a21b-6d06badc38d0"
     - stage: boundary
-      stageUuid: "349053d5-27d4-89c9-8636-e2b92326c430"
+      stageUuid: "e7a75379-1842-8e57-ae54-0a2d8ac367ee"
     - stage: links
-      stageUuid: "4d198cff-844e-8420-8e08-e2d28b831fb5"
+      stageUuid: "6836b516-aebe-88cb-bf70-49fede5e87cb"
     - stage: horo
-      stageUuid: "92c6d700-b20e-8ab9-aee3-cfbefcb27d3e"
+      stageUuid: "87a35330-6441-8acc-9619-5f175aba908c"
     - stage: seal
-      stageUuid: "5026c9a8-7b48-87c0-9fb3-a41ec1f382fd"
+      stageUuid: "bac11f9a-2fae-8a0e-9e1d-99d86995610b"
     - stage: uuid
-      stageUuid: "8af3e293-5fbd-8525-968b-fa50ea828792"
+      stageUuid: "d076180f-6040-8c0b-8efc-73f592b22038"
 version: 2
 ---
 # conventional

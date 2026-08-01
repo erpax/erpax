@@ -1,68 +1,35 @@
 ---
 name: endorse
 description: "Use when reasoning about endorse as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/endorse
-coordinate: endorse · 4/weave · 9a334fe6
-contentUuid: "586353bc-c09e-5a13-9982-e95060030ba0"
-diamondUuid: "afe12d1a-f9c9-8cf9-8c2b-2b4c86b74fc5"
-uuid: "9a334fe6-4117-8a90-bfa3-8069438a3474"
-horo: 4
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/endorse"
+coordinate: "vocabulary/endorse · 8/crest · b6b168e1"
+contentUuid: "e787bc57-369b-5e5d-aa36-6fc8bf25caee"
+diamondUuid: "237ec2ca-b27a-8e69-9bf4-3d42fa6b635a"
+uuid: "b6b168e1-550a-8c57-954a-814c2d87076a"
+horo: 8
 typography:
-  partition: endorse
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "801603d1-e006-8080-9ea5-d991da496733"
+  computationUuid: "92802f38-1b09-8bac-8f4d-3f51cfe2c613"
   stages:
     - stage: path
-      stageUuid: "ea946f81-7535-8eb9-b965-4af156d4a63c"
+      stageUuid: "e0df94dd-0cdd-8538-bacb-dc9f5c3f693b"
     - stage: trinity
-      stageUuid: "51da28b2-22c7-81ab-90ec-19c63ea4c2d5"
+      stageUuid: "d14ef63c-f50e-851a-98c5-edfc9da6a767"
     - stage: boundary
-      stageUuid: "20eac026-7422-835e-8e5e-2a244efc8c11"
+      stageUuid: "fc1fc732-f3c6-8e12-84e7-6f8568b96ccf"
     - stage: links
-      stageUuid: "2ecfda0b-0aff-8d95-8357-b3f514475e56"
+      stageUuid: "8a862f23-6bb2-84d3-821f-a4461288769d"
     - stage: horo
-      stageUuid: "a7556455-7509-845d-836c-a2cd3c3ca3d6"
+      stageUuid: "d6db0b79-62ea-87fd-b9cf-c4706e4c3d71"
     - stage: seal
-      stageUuid: "31403908-3594-8092-b856-c3425fe7b930"
+      stageUuid: "e43176c7-1103-8e86-a94d-a0890f4ea671"
     - stage: uuid
-      stageUuid: "414e258f-9d23-8eca-9bd0-2f1f9d63aa4f"
+      stageUuid: "9c6cb257-548c-8ac6-be8f-26c8a3d074e4"
 version: 2
 ---
 # endorse

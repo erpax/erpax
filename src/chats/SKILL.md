@@ -2,26 +2,14 @@
 name: chats
 description: "Use when reasoning about the agent-society room native to Payload — the per-tenant content-addressed event bus where each row is an ErpaxEvent envelope an agent published; the queryable, auditable akashic chat history that replaces the external chat.erpax.com Durable Object. Distinct from messages (user-to-user mail). The agent-bus collection."
 atomPath: chats
-coordinate: "chats · 8/crest · d3df03c8"
-contentUuid: "5dcb5755-2e8c-594f-8f6a-17d693df42ae"
-diamondUuid: "6dc498a5-32cb-8d4c-8661-8e5ad1f155fa"
-uuid: "d3df03c8-ee61-8b8a-85de-5f1295e58135"
-horo: 8
-bonds:
-  in:
-    - content
-    - law
-    - thing
-    - uuid
-  out:
-    - content
-    - law
-    - thing
-    - uuid
+coordinate: "chats · 5/round · d468bf24"
+contentUuid: "9b2448fc-10f5-5516-815c-b56b657f076e"
+diamondUuid: "5a2cc1b6-45ed-8c21-8e5a-663c57f52b1a"
+uuid: "d468bf24-9d01-85a5-8ae9-df983adddbf6"
+horo: 5
 typography:
   partition: chats
-  bondDegree: 12
-  neighbors: []
+  bondDegree: 4
 standards:
   - "ISO-27001"
   - "ISO-27001 A.5.23 cloud-service-tenant-isolation (room per tenant)"
@@ -35,24 +23,8 @@ standards:
   - "W3C-ActivityPub"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - content
-    - law
-    - thing
-    - uuid
-  matrix:
-    - content
-    - law
-    - thing
-    - uuid
-  backlinks:
-    - content
-    - law
-    - thing
-    - uuid
 signatures:
-  computationUuid: "6ee01067-465a-802a-bafc-5e0f9bb00bbc"
+  computationUuid: "207b8aa5-a364-89cf-8c29-28a4c82bd6d4"
   stages:
     - stage: path
       stageUuid: "edda5832-20f2-824b-872d-a9901d545e16"
@@ -61,13 +33,13 @@ signatures:
     - stage: boundary
       stageUuid: "a9dd6e18-5131-85f1-8eed-48d94bf4b701"
     - stage: links
-      stageUuid: "b8409385-df35-8cc9-9182-4391a2f1fd4e"
+      stageUuid: "dce6d499-3110-8c72-9282-94056a77fa6f"
     - stage: horo
-      stageUuid: "8273302f-bc6b-8478-a491-877b5918d892"
+      stageUuid: "c07aeb38-bf7f-8fca-8000-fcf15926fbfc"
     - stage: seal
       stageUuid: "9abbdb64-e077-839d-a9a0-90668d99ed36"
     - stage: uuid
-      stageUuid: "0558b411-ea38-8176-b1c5-ae89b508e9b1"
+      stageUuid: "80358606-1f50-80ba-94f3-013effe4c8c3"
 version: 2
 ---
 # chat

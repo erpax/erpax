@@ -1,133 +1,34 @@
 ---
 name: queries
 description: "Use when building or debugging Payload queries — where filters/operators, sort, pagination, depth, select, populating relationships, joins, or query presets across Local/REST/GraphQL."
-atomPath: vocabulary/queries
-coordinate: queries · 2/share · 46b115ae
-contentUuid: "53e2fd8a-31f6-5f6e-a693-6f40b62b1bb4"
-diamondUuid: "ed7fe2da-5161-85ea-977c-2d62bff7a206"
-uuid: "46b115ae-fb6e-8766-87d9-c2b982aff38e"
-horo: 2
-bonds:
-  in:
-    - accounting
-    - aggregation
-    - api
-    - cache
-    - cardinality
-    - commerce
-    - crest
-    - dimension
-    - fields
-    - flow
-    - localize
-    - manufacturing
-    - metadata
-    - nullability
-    - optimize
-    - pages
-    - port
-    - reconcile
-    - redirects
-    - search
-    - tag
-    - transaction
-  out:
-    - accounting
-    - aggregation
-    - api
-    - cache
-    - cardinality
-    - commerce
-    - crest
-    - dimension
-    - fields
-    - flow
-    - localize
-    - manufacturing
-    - metadata
-    - nullability
-    - optimize
-    - pages
-    - port
-    - reconcile
-    - redirects
-    - search
-    - tag
-    - transaction
+atomPath: "vocabulary/queries"
+coordinate: "vocabulary/queries · 5/round · e24dcda9"
+contentUuid: "3bac3bde-a2ec-5d9f-a60c-99e4003496f5"
+diamondUuid: "bb2e4011-903b-86eb-8166-81253036d0e3"
+uuid: "e24dcda9-3415-8408-bd9a-6a6c6da099a4"
+horo: 5
 typography:
-  partition: queries
-  bondDegree: 68
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 64
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - api
-    - fields
-    - optimize
-  matrix:
-    - accounting
-    - aggregation
-    - api
-    - cache
-    - cardinality
-    - commerce
-    - crest
-    - dimension
-    - fields
-    - flow
-    - localize
-    - manufacturing
-    - metadata
-    - nullability
-    - optimize
-    - pages
-    - port
-    - reconcile
-    - redirects
-    - search
-    - tag
-    - transaction
-  backlinks:
-    - accounting
-    - aggregation
-    - api
-    - cache
-    - cardinality
-    - commerce
-    - crest
-    - dimension
-    - fields
-    - flow
-    - localize
-    - manufacturing
-    - metadata
-    - nullability
-    - optimize
-    - pages
-    - port
-    - reconcile
-    - redirects
-    - search
-    - tag
-    - transaction
 signatures:
-  computationUuid: "61ef2742-e166-891d-a197-aed8b88455ac"
+  computationUuid: "579ffb4b-641c-8533-bf49-ea15d39591cb"
   stages:
     - stage: path
-      stageUuid: "fb5cb446-9fbc-8dd9-a1ad-9f3a1eb660bc"
+      stageUuid: "5e3ee5fa-b2af-8e4c-bc87-826d1374b1fd"
     - stage: trinity
-      stageUuid: "795c1432-64f7-8abb-a2d4-89cdda8373e7"
+      stageUuid: "044eabc5-859c-8ec3-b3d8-ea7c39c92d79"
     - stage: boundary
-      stageUuid: "c65c5286-8f9d-8292-a1f5-2e9bc33855c1"
+      stageUuid: "802ab1a3-c4fa-8c93-99ed-e070c178e573"
     - stage: links
-      stageUuid: "4c0df52d-2761-8aa6-a0e1-43cb99f987f4"
+      stageUuid: "642823ff-db32-8c46-b560-38b220e69117"
     - stage: horo
-      stageUuid: "c5255473-a184-87b5-aebf-46073b5b428c"
+      stageUuid: "ff29cb95-c7aa-805f-a17e-fed9f41a8816"
     - stage: seal
-      stageUuid: "e7759264-2ad0-893d-9cb5-3b8f76b76eb2"
+      stageUuid: "781033ba-4405-8833-80ed-965d337097a5"
     - stage: uuid
-      stageUuid: "17b9d902-9053-8854-b863-464594b20984"
+      stageUuid: "79f66717-116e-8ca9-b1c3-5aac085577ef"
 version: 2
 ---
 # queries — Payload query syntax (position 8 of the material cycle)

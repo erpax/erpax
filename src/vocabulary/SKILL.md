@@ -2,101 +2,44 @@
 name: vocabulary
 description: "Use when checking that every word in the corpus comes from the shared standards-grounded vocabulary — the dictionary, schema.org, standard codes, and established domain terms. Whatever the language, words are written only from this one scheme; an ungrounded word is entropy, and the audit computes its zero-entropy solution."
 atomPath: vocabulary
-coordinate: vocabulary · 1/base · 2ec0c3ee
-contentUuid: "a2c0e7ba-0753-511e-b70e-9ed7fc22ea33"
-diamondUuid: "69c93502-7288-83c4-90c2-4112511a6845"
-uuid: "2ec0c3ee-0045-8b90-a5a1-37a4551f277d"
-horo: 1
-bonds:
-  in:
-    - atom
-    - collapse
-    - concatenate
-    - entropy
-    - matrix
-    - merge
-    - standards
-    - tamper
-    - trinity
-    - unavoidable
-    - vocabulary
-    - word
-  out:
-    - atom
-    - collapse
-    - concatenate
-    - entropy
-    - matrix
-    - merge
-    - standards
-    - tamper
-    - trinity
-    - unavoidable
-    - vocabulary
-    - word
+coordinate: "vocabulary · 2/share · 293da894"
+contentUuid: "ddedccba-c10f-5a6a-beba-668419a8684b"
+diamondUuid: "8d0893f2-e35c-8a1e-8f85-5c23b8cfe611"
+uuid: "293da894-71bd-8481-b226-e79bc480cf41"
+horo: 2
 typography:
   partition: vocabulary
-  bondDegree: 44
-  neighbors: []
+  bondDegree: 0
 standards:
+  - ESCO
+  - "EU-VAT-Implementing-Reg-282/2011"
+  - "IAS-41"
+  - "IFRS-15"
   - "ISO 25964 / SKOS — a controlled vocabulary: terms from one shared scheme"
-  - "computed over the live uuid-matrix atoms against ./words.ts; never hand-asserted"
+  - "ISO 25964 / SKOS — a controlled vocabulary: terms from one shared scheme`"
+  - NACE
+  - "RFC-4122"
+  - SFIA
+  - "UN-CEFACT"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - atom
-    - collapse
-    - entropy
-    - matrix
-    - merge
-    - standards
-    - tamper
-    - trinity
-    - unavoidable
-    - word
-  matrix:
-    - atom
-    - collapse
-    - concatenate
-    - entropy
-    - matrix
-    - merge
-    - standards
-    - tamper
-    - trinity
-    - unavoidable
-    - vocabulary
-    - word
-  backlinks:
-    - atom
-    - collapse
-    - concatenate
-    - entropy
-    - matrix
-    - merge
-    - standards
-    - tamper
-    - trinity
-    - unavoidable
-    - vocabulary
-    - word
 signatures:
-  computationUuid: "e76908ca-800c-80fc-8d9b-244ded8f985d"
+  computationUuid: "c5a208ae-db90-8cff-b225-5f2069195ed9"
   stages:
     - stage: path
       stageUuid: "f0b18baa-02eb-8261-9d44-76631e7d803a"
     - stage: trinity
       stageUuid: "b8d89f6a-cf5e-8f71-a5ae-59d02c09d946"
     - stage: boundary
-      stageUuid: "e5c9a21a-a41f-8a3e-8a82-133e53e37b0c"
+      stageUuid: "e146a8c7-e5f4-88e6-99a5-caecaef3598f"
     - stage: links
       stageUuid: "10d0c2b3-2ee1-87ff-aaca-e0b41f10aeaa"
     - stage: horo
-      stageUuid: "c587656c-6bfe-800d-8a8d-18db2106abac"
+      stageUuid: "4f78d3b4-d396-8bcc-b7c8-da95e089b233"
     - stage: seal
       stageUuid: "7f01fe90-e934-8219-b5fc-92ea056994e8"
     - stage: uuid
-      stageUuid: "c337e4c9-8980-813b-87bc-c4d49745921c"
+      stageUuid: "1b1b0df5-5785-82ae-8ede-c8dd16169008"
 version: 2
 ---
 # vocabulary — words only from the shared scheme

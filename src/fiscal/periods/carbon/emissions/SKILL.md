@@ -2,40 +2,20 @@
 name: emissions
 description: "Use when recording or auditing GHG emissions — Scope 1 direct, Scope 2 purchased energy, Scope 3 value-chain (15 sub-categories); computing tCO2e via activity-data × emission-factor; third-party ISAE 3410 verification; substantiating ESRS E1 §44-50 disclosure totals or EU CBAM filings. The GHG emission event register."
 atomPath: "fiscal/periods/carbon/emissions"
-coordinate: "fiscal/periods/carbon/emissions · 8/crest · e35f41e8"
-contentUuid: "fc0dca9d-a994-572a-866a-a16b15fa7bc1"
-diamondUuid: "26719ac0-53ef-8688-bd98-43a210a3f493"
-uuid: "e35f41e8-0bdd-8a25-9ad8-b44e01a06828"
-horo: 8
-bonds:
-  in:
-    - accounting
-    - attestations
-    - carbon
-    - co
-    - disclosures
-    - law
-    - proof
-    - standard
-  out:
-    - accounting
-    - attestations
-    - co
-    - disclosures
-    - law
-    - proof
-    - standard
+coordinate: "fiscal/periods/carbon/emissions · 4/weave · 614f1867"
+contentUuid: "2b830c0c-becd-5b3d-b6f9-528413f2a943"
+diamondUuid: "312e7e53-066c-8243-8530-de2356a88d85"
+uuid: "614f1867-d30c-8c4a-8717-69d64f48eb4f"
+horo: 4
 typography:
   partition: fiscal
   bondDegree: 22
-  neighbors: []
 standards:
   - EU CBAM Carbon Border Adjustment Mechanism (when applicable)
   - "EU ESRS E1 AR-25 location-vs-market-based"
   - "EU ESRS E1 §44-50 ghg-emissions-disclosure"
   - "EU SFDR PAI 1 ghg-emissions"
   - "EU Taxonomy DNSH climate-mitigation"
-  - "EU-2011/83"
   - "EU-ESRS"
   - "EU-VAT-Implementing-Reg-282/2011"
   - GHG Protocol Corporate Standard (revised 2015)
@@ -50,32 +30,8 @@ standards:
   - "ISO-14064-1"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - attestations
-    - disclosures
-    - law
-    - proof
-    - standard
-  matrix:
-    - accounting
-    - attestations
-    - co
-    - disclosures
-    - law
-    - proof
-    - standard
-  backlinks:
-    - accounting
-    - attestations
-    - co
-    - disclosures
-    - law
-    - proof
-    - standard
 signatures:
-  computationUuid: "b4fb7272-ee2e-8193-88e2-c0061139ab1b"
+  computationUuid: "7ae1c978-20ae-8348-9498-f3fbb317f816"
   stages:
     - stage: path
       stageUuid: "e8de1031-e28a-8497-b72f-151bcf47c09f"
@@ -86,11 +42,11 @@ signatures:
     - stage: links
       stageUuid: "6f9384b9-a559-8a9e-a724-12e3f24e1b79"
     - stage: horo
-      stageUuid: "a139b374-43eb-8e58-a04c-2ae78221ef5c"
+      stageUuid: "d9a22202-4484-89a5-9a32-b3680373df60"
     - stage: seal
       stageUuid: "296ad0d4-9eac-8303-adba-49660f568ace"
     - stage: uuid
-      stageUuid: "b6796c7e-9240-8c01-be47-f4a1c99e2d3b"
+      stageUuid: "59655b1b-c35a-81e1-8fe5-f627d137f976"
 version: 2
 ---
 # carbon-emissions

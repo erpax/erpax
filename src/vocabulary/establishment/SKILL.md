@@ -1,78 +1,35 @@
 ---
 name: establishment
 description: "Use when reasoning about establishment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/establishment
-coordinate: establishment · 8/crest · df52b893
-contentUuid: "fa356fa7-9103-5f77-920c-22ddfdd9333e"
-diamondUuid: "06f25ef8-b10c-8db5-aa71-7abd9057a1e0"
-uuid: "df52b893-f6ca-89d7-91ae-2d4719ea54c3"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - defence
-    - food
-    - law
-    - merge
-    - reservation
-    - sti
-  out:
-    - collapse
-    - defence
-    - food
-    - law
-    - merge
-    - reservation
-    - sti
+atomPath: "vocabulary/establishment"
+coordinate: "vocabulary/establishment · 2/share · ec6582be"
+contentUuid: "02410d32-8a53-5f76-9c5e-e44e22d8769f"
+diamondUuid: "f3d1e75b-f957-8ad0-ae44-8d26692dc39a"
+uuid: "ec6582be-4fd3-8e81-8218-84a359373c9e"
+horo: 2
 typography:
-  partition: establishment
+  partition: vocabulary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - defence
-    - food
-    - law
-    - merge
-    - reservation
-    - sti
-  matrix:
-    - collapse
-    - defence
-    - food
-    - law
-    - merge
-    - reservation
-    - sti
-  backlinks:
-    - collapse
-    - defence
-    - food
-    - law
-    - merge
-    - reservation
-    - sti
 signatures:
-  computationUuid: "35e2f3af-9245-8a10-98e1-d1e8de690273"
+  computationUuid: "858edc34-aa43-862d-b89c-195a4af4abd2"
   stages:
     - stage: path
-      stageUuid: "9d062e1f-3880-8e0c-8e46-3374b6c8ae56"
+      stageUuid: "641d5564-dac1-8d5e-b8e2-e95b5a5c880f"
     - stage: trinity
-      stageUuid: "23afedb3-79a3-8c68-8b13-baa09fe35975"
+      stageUuid: "cd61d446-3eb3-8b9c-9412-bb3bc1e8eead"
     - stage: boundary
-      stageUuid: "70cb4a58-e7ff-8d3c-b650-d6a81b40ec93"
+      stageUuid: "9adc4f4f-8936-867b-8f17-edcac159c7eb"
     - stage: links
-      stageUuid: "9035d865-520a-8963-9f6d-3357abc59e9d"
+      stageUuid: "52193da2-1ceb-8bf4-9a7e-f99a09bdb71d"
     - stage: horo
-      stageUuid: "728d7ca5-e5b6-85f9-9e4c-f04ec3c8d59b"
+      stageUuid: "9a6bc1b5-dec9-8b1a-b74e-91e32f53deef"
     - stage: seal
-      stageUuid: "27e36e32-e23a-8028-8fd4-18291bedef08"
+      stageUuid: "8949a4bb-73b8-8441-aa9d-1cc57bd74038"
     - stage: uuid
-      stageUuid: "e05c2378-fa9b-839c-9602-e7ea248da7cd"
+      stageUuid: "557dcf1d-36a7-822a-a303-15c017863bdf"
 version: 2
 ---
 # establishment

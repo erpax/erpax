@@ -1,83 +1,35 @@
 ---
 name: prescription
 description: "Use when reasoning about prescription as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/prescription
-coordinate: prescription · 2/share · 4baa443d
-contentUuid: "257ba3d9-d027-54dd-8e2e-680f931acfdd"
-diamondUuid: "70b178b7-7833-89e1-903c-a9b1452200e5"
-uuid: "4baa443d-e188-866d-aa6b-ebbee6e1f2fc"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - drug
-    - law
-    - mail
-    - merge
-    - offers
-    - status
-    - sti
-  out:
-    - collapse
-    - drug
-    - law
-    - mail
-    - merge
-    - offers
-    - status
-    - sti
+atomPath: "vocabulary/prescription"
+coordinate: "vocabulary/prescription · 5/round · 18452181"
+contentUuid: "54544f12-e585-5cf1-b38b-9466fe879b38"
+diamondUuid: "5bedf311-51c9-8385-a875-5afae6aeaa11"
+uuid: "18452181-93e8-8f4c-9f78-022a06bb3088"
+horo: 5
 typography:
-  partition: prescription
-  bondDegree: 27
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 30
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - drug
-    - law
-    - mail
-    - merge
-    - offers
-    - status
-    - sti
-  matrix:
-    - collapse
-    - drug
-    - law
-    - mail
-    - merge
-    - offers
-    - status
-    - sti
-  backlinks:
-    - collapse
-    - drug
-    - law
-    - mail
-    - merge
-    - offers
-    - status
-    - sti
 signatures:
-  computationUuid: "2d2e97f2-386c-829f-87a9-a78f44eb47f1"
+  computationUuid: "a2a6433a-8ec2-8091-87b9-6d1f1651c865"
   stages:
     - stage: path
-      stageUuid: "3bb89ad3-5aab-865d-babb-72164723a293"
+      stageUuid: "d4740959-f4f9-8d49-ad43-5302338f6ea4"
     - stage: trinity
-      stageUuid: "fd19c81d-6a86-8788-b92e-fd066410faac"
+      stageUuid: "2dc085b7-3fb5-83bd-9dcc-078aefff7129"
     - stage: boundary
-      stageUuid: "fcdd9a69-0913-8c9f-b2cb-6301c2b9d53d"
+      stageUuid: "8b53d370-b8e1-8d81-9406-f6da53621731"
     - stage: links
-      stageUuid: "f47e9b2f-7d97-87d4-90e0-de7a80ed5b1a"
+      stageUuid: "c0d724d0-17d0-8f16-8386-cf7809f1f979"
     - stage: horo
-      stageUuid: "84cefc88-7848-8276-94e2-012725c7b52e"
+      stageUuid: "a03df704-d8df-8917-b874-358fc2245349"
     - stage: seal
-      stageUuid: "5f52b371-736e-81ec-9501-82cae399cd57"
+      stageUuid: "d594928f-7efe-8f1d-a98d-6d86924b02e2"
     - stage: uuid
-      stageUuid: "dbd2bbf1-b809-8379-bb5a-602ba036799a"
+      stageUuid: "3861b3ff-472f-8e40-bf32-6ae456355fb0"
 version: 2
 ---
 # prescription

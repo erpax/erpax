@@ -1,68 +1,35 @@
 ---
 name: increases
 description: "Use when reasoning about increases as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/increases
-coordinate: increases · 1/base · 2653b98e
-contentUuid: "952174bd-0f3e-56ac-80ff-30974a5bd920"
-diamondUuid: "f2a4775a-93ab-8833-a235-087495bb7074"
-uuid: "2653b98e-f177-88fa-b997-9b91aa39817c"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - risk
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - risk
-    - sti
+atomPath: "vocabulary/increases"
+coordinate: "vocabulary/increases · 4/weave · f7021879"
+contentUuid: "873a8fa1-8e45-5198-b1fc-0675d526d0d9"
+diamondUuid: "d7357773-7120-80d8-ba87-a93202b5b1ec"
+uuid: "f7021879-ac73-821c-aeb1-260d0f043ce6"
+horo: 4
 typography:
-  partition: increases
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - risk
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - risk
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - risk
-    - sti
 signatures:
-  computationUuid: "156ad421-ad42-884a-8518-6807cbc2b874"
+  computationUuid: "7f21ae32-61d8-86fb-9d2f-49c35be3b861"
   stages:
     - stage: path
-      stageUuid: "7a46214c-7ff4-8373-989d-dbdc72ed9b0c"
+      stageUuid: "5862f9bc-e7bc-826a-825a-d8ac6b80a3ab"
     - stage: trinity
-      stageUuid: "565e3225-080c-8600-aec7-4b3e15f3abd0"
+      stageUuid: "b6cfb207-7924-8c3f-9073-28298dc45a45"
     - stage: boundary
-      stageUuid: "b9d660cd-1505-81e8-9dab-f47eefb80f28"
+      stageUuid: "7cb36f53-018b-8ad6-9877-d1432124d913"
     - stage: links
-      stageUuid: "512806a6-3211-8c21-be47-68fde4e4ec61"
+      stageUuid: "e9f2720f-a9c7-8b5d-90a4-34f3278a8f55"
     - stage: horo
-      stageUuid: "23a98364-0ee3-859a-bc32-f2d531186fb7"
+      stageUuid: "bc3c0f1b-1ed6-81fe-afc7-4bcacfe3ce36"
     - stage: seal
-      stageUuid: "4e4607a8-d838-8b14-8c98-0ebf9779118f"
+      stageUuid: "01b205aa-ccd4-8225-90e2-8f455d04dfcd"
     - stage: uuid
-      stageUuid: "3404b261-ed3a-861c-9c69-924af1fa5583"
+      stageUuid: "f9cc267b-d11a-8e81-a11e-ba69a27d47dd"
 version: 2
 ---
 # increases

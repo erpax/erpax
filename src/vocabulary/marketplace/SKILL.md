@@ -1,68 +1,35 @@
 ---
 name: marketplace
 description: "Use when reasoning about marketplace as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/marketplace
-coordinate: marketplace · 7/descent · 7dfe48c4
-contentUuid: "3f32a385-301f-5322-8f4b-c20033f86503"
-diamondUuid: "aa847194-014e-83eb-90f1-a01cfd573a3e"
-uuid: "7dfe48c4-279c-8a2d-8570-c764071cbccc"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - online
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - online
-    - sti
+atomPath: "vocabulary/marketplace"
+coordinate: "vocabulary/marketplace · 1/base · e6efa2d8"
+contentUuid: "116bb4fe-b436-5470-a819-cdee4421c620"
+diamondUuid: "61651bc8-ccc7-87c9-bc45-e53b27ce4187"
+uuid: "e6efa2d8-3994-8a63-a6af-0ef4654f1b35"
+horo: 1
 typography:
-  partition: marketplace
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - online
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - online
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - online
-    - sti
 signatures:
-  computationUuid: "a140e40a-b2ac-8f3c-90d2-ee8c9934fa3c"
+  computationUuid: "1a49b654-be65-82c1-abab-a36d98a4967c"
   stages:
     - stage: path
-      stageUuid: "e71b3798-149b-83d4-b922-f38b69713615"
+      stageUuid: "0f30cc69-3678-80fb-9582-6031cced3909"
     - stage: trinity
-      stageUuid: "22ac4718-0841-845a-b49a-ad7522d7bad4"
+      stageUuid: "d3a9314f-b63b-8a11-b5f2-54b6244de404"
     - stage: boundary
-      stageUuid: "7955eaa3-bc03-8480-93fe-f1ac7ace8c69"
+      stageUuid: "c9063232-44aa-87c7-a365-db5f0dbb9454"
     - stage: links
-      stageUuid: "0f9d8ed8-366d-8c27-b56c-c0a5531ecfd8"
+      stageUuid: "d5599c56-f2ae-8b11-90d5-c2d750d25508"
     - stage: horo
-      stageUuid: "e56ab018-d826-8666-a21c-9a2183321c41"
+      stageUuid: "f602773a-7116-879a-81c6-38cdf013dbfd"
     - stage: seal
-      stageUuid: "9d9d0fff-6ab0-87a2-8fd1-669b46f2c35b"
+      stageUuid: "8bd8c94d-c955-84d9-b428-28d6ae7cf77b"
     - stage: uuid
-      stageUuid: "ef193275-31e0-85fd-a200-1decb75cb772"
+      stageUuid: "836d8dfd-f4d5-82db-b7a2-1b660654eb61"
 version: 2
 ---
 # marketplace

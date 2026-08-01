@@ -1,68 +1,35 @@
 ---
 name: direct
 description: "Use when reasoning about direct as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/direct
-coordinate: direct · 2/share · 633cd24c
-contentUuid: "f785e034-3fbc-5361-bfa8-bbd952f5649f"
-diamondUuid: "9fd030b3-d35d-8d9a-bcf1-069e4f3cb85c"
-uuid: "633cd24c-d33f-8a9f-a164-de3ccf8ca059"
-horo: 2
-bonds:
-  in:
-    - apply
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - apply
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/direct"
+coordinate: "vocabulary/direct · 5/round · 145af108"
+contentUuid: "1b4a8c19-45ca-5b15-bfc0-8d49d20a17f9"
+diamondUuid: "30ed00fe-b9be-8d3f-8fd6-4d95661e0ea4"
+uuid: "145af108-d545-8d5a-971b-e6ea0ddaafb3"
+horo: 5
 typography:
-  partition: direct
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - apply
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - apply
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - apply
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "488556de-43de-8eca-aad7-0c9245d6812f"
+  computationUuid: "c0204ac8-fb59-8c0b-b952-32186fd468df"
   stages:
     - stage: path
-      stageUuid: "e6cc8ba3-c722-85e8-8b81-91650c92cb66"
+      stageUuid: "3ce4b265-d6a3-81c8-8234-0294b9d1152e"
     - stage: trinity
-      stageUuid: "76b44bc0-9a60-8acb-b3b7-bdae7a5bd955"
+      stageUuid: "48c8bbfb-db49-8e8c-aefe-1a7dfbdb4377"
     - stage: boundary
-      stageUuid: "647e73bd-bbc4-89eb-b277-478ea8691935"
+      stageUuid: "2ffb3ade-ae21-8185-8f4c-06b2f6608c67"
     - stage: links
-      stageUuid: "5b7c0f0f-e373-86ec-99d3-15a9544e382c"
+      stageUuid: "1c7beb7a-a486-8946-bfa5-4b451bf5bb2d"
     - stage: horo
-      stageUuid: "3e263cbb-cae4-88af-84ac-58c25c043bd9"
+      stageUuid: "2f499d56-a3c3-8733-9477-627b9bd3b318"
     - stage: seal
-      stageUuid: "da985b2a-b874-8055-9c19-4eeef9ed49d3"
+      stageUuid: "6f67e209-0ddc-86ab-8442-290727bc27d8"
     - stage: uuid
-      stageUuid: "82bf93cd-1159-876f-a295-264cdd6fba61"
+      stageUuid: "76639386-6e91-8ed7-9153-f0d97320b4d0"
 version: 2
 ---
 # direct

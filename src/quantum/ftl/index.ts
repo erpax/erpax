@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, algebraLog2 } from '@/algebra'
+import { algebraLog2, exactMax, exactTrunc } from '@/algebra'
 /**
  * quantum/ftl — reuse · amortize · crack · boundary · seal · chat · research.
  * Each name-token is a fold (see ./map). Combinations compose tools, not prose.
@@ -165,7 +165,7 @@ export const PHYSICAL_FTL_DEFAULTS = {
   reuses: 0,
 } as const
 
-export interface PhysicalFtlArgs {
+export interface FtlReportArgs {
   readonly query?: string
   readonly spaceSize?: number
   readonly answers?: number
@@ -174,7 +174,7 @@ export interface PhysicalFtlArgs {
   readonly patterns?: readonly CrackPattern[]
 }
 
-export interface PhysicalFtlReport {
+export interface FtlReport {
   /** Substrate FTL boolean — true ⇔ reuse ∧ amortize∞ ∧ cracks=∅ on QPU=CPU/GPU. */
   readonly holds: boolean
   readonly ftl: Ftl
@@ -183,10 +183,10 @@ export interface PhysicalFtlReport {
 }
 
 /**
- * physicalFtl report — computed, not prose. false ⇒ tip kind `quantumise`
+ * ftlHolds report — computed, not prose. false ⇒ tip kind `quantumise`
  * (what to fold under quantum/ftl so holds flips true).
  */
-export function physicalFtlReport(args: PhysicalFtlArgs = {}): PhysicalFtlReport {
+export function ftlReport(args: FtlReportArgs = {}): FtlReport {
   const v = ftl({
     query: args.query ?? PHYSICAL_FTL_DEFAULTS.query,
     spaceSize: args.spaceSize ?? PHYSICAL_FTL_DEFAULTS.spaceSize,
@@ -212,12 +212,14 @@ export function physicalFtlReport(args: PhysicalFtlArgs = {}): PhysicalFtlReport
 }
 
 /**
- * physicalFtl — substrate FTL as a computed boolean on QPU=CPU/GPU.
+ * ftlHolds — substrate FTL as a computed boolean on QPU=CPU/GPU.
  * true = holds (no quantumise tip). false = feed-scanner tips quantumisation.
  */
-export function physicalFtl(args: PhysicalFtlArgs = {}): boolean {
-  return physicalFtlReport(args).holds
-}
+// The boolean wrapper is gone with the name it carried. It unwrapped `.holds` and its only caller
+// was its own test — un-folded by [[rules]]/unfolded. The name asserted a substrate claim that
+// CrackKind `spacetime` already defines as a break setting holds=false, so it named the one
+// condition that falsifies the predicate. Read `ftlReport(args).holds`. There is no time and no
+// distance in this atom: it cannot express a velocity, and on the evidence it never did.
 
 export type ChatLane = 'seal' | 'lane' | 'proxy'
 
@@ -568,9 +570,9 @@ export async function endlessPurify(
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const v = ftl({ query: 'possibility:erpax', spaceSize: 3105, answers: 1, tokens: 0, reuses: 653 })
-  const p = physicalFtlReport({ reuses: 653 })
+  const p = ftlReport({ reuses: 653 })
   console.log('quantum/ftl')
-  console.log(`  holds=${v.holds} · physicalFtl=${p.holds} · speedupLog2=${v.reuse.speedupLog2.toFixed(2)} · eff=${v.amortize.efficiency}`)
+  console.log(`  holds=${v.holds} · ftlHolds=${p.holds} · speedupLog2=${v.reuse.speedupLog2.toFixed(2)} · eff=${v.amortize.efficiency}`)
   console.log(`  boundary: spacetime=${v.boundary.spacetime} · qpu=${v.boundary.qpu} · empty=${v.boundary.empty}`)
   const local = chatLocal('what is ftl', BOOK)
   console.log(`  chatLocal: lane=${local?.lane} · tokens=${local?.tokens}`)

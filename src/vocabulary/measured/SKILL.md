@@ -1,78 +1,35 @@
 ---
 name: measured
 description: "Use when reasoning about measured as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/measured
-coordinate: measured · 7/descent · 1d933376
-contentUuid: "07115a42-6755-5284-a538-a96aa61dec63"
-diamondUuid: "a9807b2b-dbf0-8692-873a-f47ab1244c4d"
-uuid: "1d933376-d1ba-8980-b256-8933b45f5a9c"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - property
-    - sti
-    - variable
-    - variables
-  out:
-    - collapse
-    - law
-    - merge
-    - property
-    - sti
-    - variable
-    - variables
+atomPath: "vocabulary/measured"
+coordinate: "vocabulary/measured · 4/weave · 22d12909"
+contentUuid: "7b5abe51-5009-5132-a636-3d367e476be2"
+diamondUuid: "aad03d25-eaec-8e56-ad3f-f2dd7bad01d5"
+uuid: "22d12909-e2e7-84a1-84cd-9eec851fb32d"
+horo: 4
 typography:
-  partition: measured
+  partition: vocabulary
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - property
-    - sti
-    - variable
-    - variables
-  matrix:
-    - collapse
-    - law
-    - merge
-    - property
-    - sti
-    - variable
-    - variables
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - property
-    - sti
-    - variable
-    - variables
 signatures:
-  computationUuid: "4942908d-862b-888b-bbd7-7977936349b8"
+  computationUuid: "c5913723-73fb-8898-9f08-8c14a7f8bf91"
   stages:
     - stage: path
-      stageUuid: "524917e5-afde-8ac8-a295-4bfd80835254"
+      stageUuid: "6649e25b-2ceb-8a79-aeb1-17437a6f4712"
     - stage: trinity
-      stageUuid: "5f3708f1-7797-88c3-a2fe-7ae74de48957"
+      stageUuid: "1a0e8213-bbdb-80c8-a9d8-a1db8720acb9"
     - stage: boundary
-      stageUuid: "127bbe6c-0c94-8f69-89ce-b7c614fb027c"
+      stageUuid: "fc108aaf-25b6-8756-8a2d-8ac8c487950a"
     - stage: links
-      stageUuid: "7237f9c1-44a0-8e78-b9b8-0a6e84349156"
+      stageUuid: "47929fb7-253b-88c1-9c0d-2fc9aef03939"
     - stage: horo
-      stageUuid: "bf40ac28-126a-87a6-8b56-64e3d16832d4"
+      stageUuid: "423ac509-0e1c-8152-acb6-774579f5aded"
     - stage: seal
-      stageUuid: "c69f8907-3731-8004-b914-09ba52b2ba8b"
+      stageUuid: "47993cc7-da91-85aa-b149-e513376ce08d"
     - stage: uuid
-      stageUuid: "56a9d638-f69d-8cc5-8cae-860128f30967"
+      stageUuid: "e3a426c9-dcfa-8adf-8783-37457645cad8"
 version: 2
 ---
 # measured

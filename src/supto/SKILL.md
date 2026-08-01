@@ -2,123 +2,18 @@
 name: supto
 description: "Use when reasoning about supto — СУПТО (*Софтуер за управление на продажбите в търговски обекти* — sales-management software for commercial outlets), regulated by **Наредба Н-18** and the НАП registry, is — struct"
 atomPath: supto
-coordinate: supto · 8/crest · eb296802
-contentUuid: "9479231c-74d8-5bd3-a877-b839a1c32e9b"
-diamondUuid: "322591bb-7855-8162-be29-42f67ec22f89"
-uuid: "eb296802-49db-8b1a-9e52-80a0cfbf4961"
-horo: 8
-bonds:
-  in:
-    - access
-    - accounting
-    - bindings
-    - corruption
-    - devices
-    - duality
-    - event
-    - hooks
-    - identity
-    - jobs
-    - law
-    - lineage
-    - number
-    - receipts
-    - reverse
-    - standard
-    - sti
-    - submissions
-    - tax
-    - uuid
-  out:
-    - access
-    - accounting
-    - bindings
-    - corruption
-    - devices
-    - duality
-    - event
-    - hooks
-    - identity
-    - jobs
-    - law
-    - lineage
-    - number
-    - receipts
-    - reverse
-    - standard
-    - sti
-    - submissions
-    - tax
-    - uuid
+coordinate: "supto · 7/descent · 3bc3c157"
+contentUuid: "fecbfa19-cc6c-5712-89c5-f9b466f30fbe"
+diamondUuid: "dd2e028b-0eac-89ec-a64b-b50ebeab289f"
+uuid: "3bc3c157-0dfb-899b-b22b-2a8c4a2cd8a3"
+horo: 7
 typography:
   partition: supto
-  bondDegree: 62
-  neighbors: []
+  bondDegree: 65
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - accounting
-    - bindings
-    - devices
-    - duality
-    - event
-    - hooks
-    - identity
-    - jobs
-    - law
-    - number
-    - reverse
-    - standard
-    - sti
-    - submissions
-    - tax
-    - uuid
-  matrix:
-    - access
-    - accounting
-    - bindings
-    - corruption
-    - devices
-    - duality
-    - event
-    - hooks
-    - identity
-    - jobs
-    - law
-    - lineage
-    - number
-    - receipts
-    - reverse
-    - standard
-    - sti
-    - submissions
-    - tax
-    - uuid
-  backlinks:
-    - access
-    - accounting
-    - bindings
-    - corruption
-    - devices
-    - duality
-    - event
-    - hooks
-    - identity
-    - jobs
-    - law
-    - lineage
-    - number
-    - receipts
-    - reverse
-    - standard
-    - sti
-    - submissions
-    - tax
-    - uuid
 signatures:
-  computationUuid: "fbba193b-5edf-8cb8-a4c4-7bb1b51de65c"
+  computationUuid: "c7602c53-58e6-89db-89da-b1de037dbe4d"
   stages:
     - stage: path
       stageUuid: "c1caa05d-8260-8f05-a39c-810de0d29926"
@@ -129,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "93b2df3d-7f3e-8f2e-b0e1-2f044e149272"
     - stage: horo
-      stageUuid: "c61dc154-dc88-82ed-ad15-5bb8d5de1132"
+      stageUuid: "9d963c91-f94b-8eae-8889-4a87593e1bc4"
     - stage: seal
-      stageUuid: "1d31b401-0e7d-8770-9897-811b0244330f"
+      stageUuid: "5ca8a64b-8f64-89fb-9e6e-82ac282688c6"
     - stage: uuid
-      stageUuid: "896ec796-6e4e-877e-b9de-36c11dcd3f99"
+      stageUuid: "3a733555-4f1c-8a08-b02d-2a349ebf9940"
 version: 2
 ---
 # supto — Наредба Н-18 / СУПТО, mapped onto the content-uuid model

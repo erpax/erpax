@@ -1,82 +1,35 @@
 ---
 name: node
 description: "Use when reasoning about node as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/node
-coordinate: node · 5/round · 5c162999
-contentUuid: "c75a7055-1b06-5378-b1cc-2493400dcd1f"
-diamondUuid: "562fc53a-08e3-8d8d-b58f-2d9eca8606fc"
-uuid: "5c162999-942a-82c0-9c06-9a4210cabc53"
+atomPath: "vocabulary/node"
+coordinate: "vocabulary/node · 5/round · dfdff923"
+contentUuid: "2bcf7469-0aa1-588c-afb3-5713bc6db75d"
+diamondUuid: "c2177686-0500-8931-89f5-8abefdb000ba"
+uuid: "dfdff923-be80-8e87-bc79-9929269d2be7"
 horo: 5
-bonds:
-  in:
-    - collapse
-    - constraint
-    - graph
-    - law
-    - merge
-    - quantity
-    - sti
-    - type
-  out:
-    - collapse
-    - constraint
-    - graph
-    - law
-    - merge
-    - quantity
-    - sti
-    - type
 typography:
-  partition: node
+  partition: vocabulary
   bondDegree: 25
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - constraint
-    - law
-    - merge
-    - quantity
-    - sti
-    - type
-  matrix:
-    - collapse
-    - constraint
-    - graph
-    - law
-    - merge
-    - quantity
-    - sti
-    - type
-  backlinks:
-    - collapse
-    - constraint
-    - graph
-    - law
-    - merge
-    - quantity
-    - sti
-    - type
 signatures:
-  computationUuid: "043cfb33-3670-80c2-a0e6-a9bc0049c9fe"
+  computationUuid: "19907abf-98aa-8816-99d4-526b25c776ed"
   stages:
     - stage: path
-      stageUuid: "51eacd97-cd3d-8a75-9a70-3d5123d123e3"
+      stageUuid: "bd8158e6-5819-84cd-8643-97fbe22c1f99"
     - stage: trinity
-      stageUuid: "62cbcc22-78f3-8c1d-9973-10066879050c"
+      stageUuid: "c056f6b1-abda-84b3-9e35-cef3e71237d9"
     - stage: boundary
-      stageUuid: "bcb2d1b8-f5a6-87e6-b633-58f0707a0a4d"
+      stageUuid: "3c083a82-0926-8cf0-9b11-dfd7aa07db49"
     - stage: links
-      stageUuid: "217baacf-5a67-860d-a560-9f51e5a884d3"
+      stageUuid: "34233ee7-0262-8672-941f-b5714270642d"
     - stage: horo
-      stageUuid: "c7f6788f-744b-8495-8a07-9dc95a323f45"
+      stageUuid: "eaa815f3-3b4e-89a2-83cf-c293bc4e5f70"
     - stage: seal
-      stageUuid: "d3ac1e8f-3ea3-88e8-933f-7397317b7816"
+      stageUuid: "d1de8a97-4c2a-8bfd-9fb6-53efb32f64e1"
     - stage: uuid
-      stageUuid: "41fc8cc2-f8ad-8265-a9e6-c64d95c26661"
+      stageUuid: "c2c893a0-36d4-87d4-83cd-47ab7dd10190"
 version: 2
 ---
 # node

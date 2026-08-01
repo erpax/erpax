@@ -1,104 +1,34 @@
 ---
 name: postharvest
 description: "Use when handling produce between harvest and sale — the cooling→washing→curing→grading→packing→storage chain that preserves quality: remove field heat fast (precool), wash, cure storage crops, then hold in the cold chain. Postharvest does not improve quality — it only slows the loss; the gap between gross and marketable yield (shrink) is lost here."
-atomPath: vocabulary/postharvest
-coordinate: postharvest · 4/weave · c9bb2fe4
-contentUuid: "e5398127-fa16-500f-ac02-5e9f9cca6c78"
-diamondUuid: "806c4904-1e21-871f-b1b9-b7a04bfd1405"
-uuid: "c9bb2fe4-6abc-8720-b260-43ec0bea1deb"
-horo: 4
-bonds:
-  in:
-    - agriculture
-    - aquaculture
-    - assets
-    - commerce
-    - fodder
-    - grade
-    - harvest
-    - items
-    - law
-    - lineage
-    - measure
-    - packs
-    - yield
-  out:
-    - agriculture
-    - aquaculture
-    - assets
-    - commerce
-    - fodder
-    - grade
-    - harvest
-    - items
-    - law
-    - lineage
-    - measure
-    - packs
-    - yield
+atomPath: "vocabulary/postharvest"
+coordinate: "vocabulary/postharvest · 8/crest · 2e147a07"
+contentUuid: "4f82130c-241d-568f-9554-1a73be8dbe5d"
+diamondUuid: "db8e2225-8f3a-808c-b10a-ca2fc68632a9"
+uuid: "2e147a07-3e49-8209-a538-cd4a0d55b9d1"
+horo: 8
 typography:
-  partition: postharvest
+  partition: vocabulary
   bondDegree: 41
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - assets
-    - commerce
-    - grade
-    - harvest
-    - items
-    - law
-    - measure
-    - packs
-    - yield
-  matrix:
-    - agriculture
-    - aquaculture
-    - assets
-    - commerce
-    - fodder
-    - grade
-    - harvest
-    - items
-    - law
-    - lineage
-    - measure
-    - packs
-    - yield
-  backlinks:
-    - agriculture
-    - aquaculture
-    - assets
-    - commerce
-    - fodder
-    - grade
-    - harvest
-    - items
-    - law
-    - lineage
-    - measure
-    - packs
-    - yield
 signatures:
-  computationUuid: "67a58e7a-24ef-87f9-9ead-0c8a23842f04"
+  computationUuid: "a8793f4a-b8ca-85c3-bfe7-a93b4ec15df9"
   stages:
     - stage: path
-      stageUuid: "68912036-0301-827f-a57c-32d7452ff694"
+      stageUuid: "b09f283a-1c92-8fb0-9ce0-1c8e85c45b7b"
     - stage: trinity
-      stageUuid: "c9a0867f-4fc9-8c00-83b2-9344186ccf7f"
+      stageUuid: "2550dc0e-b7d9-8024-9575-6ff2d42a42f0"
     - stage: boundary
-      stageUuid: "565d6070-93d8-8e08-9322-705b2de32405"
+      stageUuid: "1d820980-fb14-8a58-bcd5-98f54d358d66"
     - stage: links
-      stageUuid: "5ea985b3-e11a-8f05-b0a3-b7cd07b97637"
+      stageUuid: "529803cb-f02e-867f-9b4b-90b5db0bec8f"
     - stage: horo
-      stageUuid: "e9b01db0-c3b9-8f5d-94f2-2755d3df8bae"
+      stageUuid: "6b1e59af-bbe4-84b3-a281-e5ff0e85c0cb"
     - stage: seal
-      stageUuid: "72bb9745-f8db-8755-ab22-fbc4a80774e9"
+      stageUuid: "ed79993e-13d0-8487-9767-dbbb70d265af"
     - stage: uuid
-      stageUuid: "e5755343-ab0d-8aff-bb41-3a3b35f2d774"
+      stageUuid: "249a0770-00ed-8450-bcc3-74338b985358"
 version: 2
 ---
 # postharvest — handling produce between harvest and sale

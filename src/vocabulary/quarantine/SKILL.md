@@ -1,68 +1,35 @@
 ---
 name: quarantine
 description: "Use when reasoning about quarantine as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/quarantine
-coordinate: quarantine · 1/base · a4a7ea04
-contentUuid: "eadc83d0-d78e-5e97-889b-90ef3820ce99"
-diamondUuid: "c81ddd2f-f8af-8318-a6ea-ff18af39f695"
-uuid: "a4a7ea04-29de-8a9b-b135-e9a4952fafd3"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - guidelines
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - guidelines
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/quarantine"
+coordinate: "vocabulary/quarantine · 4/weave · 65a49ef8"
+contentUuid: "0d5e15f4-fb96-50e8-8c3c-2363341b5dee"
+diamondUuid: "ac8f89ed-1ffd-8487-91a0-031840680e52"
+uuid: "65a49ef8-4e2e-8b85-955b-dd6e78ae89e7"
+horo: 4
 typography:
-  partition: quarantine
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - guidelines
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - guidelines
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - guidelines
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "48113610-7101-82a4-bb5e-5e9be4fc35b3"
+  computationUuid: "658a327a-a872-8bca-9f3b-ce9fdd8f70db"
   stages:
     - stage: path
-      stageUuid: "dc878a17-7681-8515-9ad3-796a73924d97"
+      stageUuid: "27691eb4-7790-8327-8518-68a4eb8fff85"
     - stage: trinity
-      stageUuid: "06fc81c1-21a9-82a0-8ffd-1a763ef32e8c"
+      stageUuid: "cd83b402-bb5c-80e1-9df7-8ff979b224b6"
     - stage: boundary
-      stageUuid: "9cd87d79-3e29-82e0-8997-a4e60a2f9adc"
+      stageUuid: "4132b40d-f577-8b7a-8443-7142b8f3a4c8"
     - stage: links
-      stageUuid: "d2d8851e-0902-8bb6-acfe-c51cf2bb5b57"
+      stageUuid: "eedcb2c2-190a-823b-b187-4c01de47e813"
     - stage: horo
-      stageUuid: "2db217ff-4cdb-8ccd-98ee-38be8906e56e"
+      stageUuid: "3c0393a5-9e72-8cb4-963e-0dc49d8e1a68"
     - stage: seal
-      stageUuid: "74230bd6-2c4a-8892-9944-9cac877977a6"
+      stageUuid: "beadd4d3-a20d-8389-bdec-fb727247ad4f"
     - stage: uuid
-      stageUuid: "31396051-8044-860e-b43b-1fb1f65827f6"
+      stageUuid: "aeada60d-b252-8b6f-9d9c-8f6755630491"
 version: 2
 ---
 # quarantine

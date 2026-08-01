@@ -2,35 +2,14 @@
 name: requests
 description: "Use when managing employee leave — annual vacation, sick, parental, TOIL, bereavement — approval workflow, entitlement balance decrement, IAS-19 accrual feed, and multi-jurisdiction minimum-leave compliance (EU WTD, US FMLA, BG Labour Code). The employee leave-request register."
 atomPath: "employees/leave/requests"
-coordinate: "employees/leave/requests · 8/crest · 46f40ae1"
-contentUuid: "ba919e5c-7ddb-5eac-9c6d-e63d5bf8f181"
-diamondUuid: "94c71d2e-20fe-82cd-bdf5-f81f4ae389dc"
-uuid: "46f40ae1-c44b-879d-873b-a3acea90d416"
-horo: 8
-bonds:
-  in:
-    - assets
-    - law
-    - leave
-    - orders
-    - properties
-    - request
-    - resources
-    - spaces
-    - users
-  out:
-    - assets
-    - law
-    - orders
-    - properties
-    - request
-    - resources
-    - spaces
-    - users
+coordinate: "employees/leave/requests · 1/base · 525b0cec"
+contentUuid: "99541d6b-ace2-52ab-bdde-3db1fb34ce63"
+diamondUuid: "11c3a441-316b-8557-9b7c-53e9ae1bcfbe"
+uuid: "525b0cec-47ab-8f20-b00f-a337ac5c16b7"
+horo: 1
 typography:
   partition: employees
   bondDegree: 37
-  neighbors: []
 standards:
   - "BG Labour Code Art.155-176"
   - "BG-Labour-Code"
@@ -47,34 +26,8 @@ standards:
   - "US-GAAP ASC-710-10-25 compensated-absences"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - identity
-    - law
-    - proof
-    - standard
-    - transaction
-  matrix:
-    - assets
-    - law
-    - orders
-    - properties
-    - request
-    - resources
-    - spaces
-    - users
-  backlinks:
-    - assets
-    - law
-    - orders
-    - properties
-    - request
-    - resources
-    - spaces
-    - users
 signatures:
-  computationUuid: "3f51d237-e6d5-8a91-84af-6c52a1608326"
+  computationUuid: "e42bbfdb-95b2-82dd-9e65-45961a10672c"
   stages:
     - stage: path
       stageUuid: "3dc04419-a2dc-821f-904c-c83e478dff54"
@@ -83,13 +36,13 @@ signatures:
     - stage: boundary
       stageUuid: "30b429c3-5659-8526-b6e3-f4377a803393"
     - stage: links
-      stageUuid: "93c5c8e5-cfe1-874f-b6b0-68db2062ab8f"
+      stageUuid: "e412a273-b316-8424-9e1d-0cda24512e74"
     - stage: horo
-      stageUuid: "c6ce0a1c-e3e8-8e2b-93b0-df3d8e095812"
+      stageUuid: "2235a44f-9beb-8e5b-a2d0-febeb24988b5"
     - stage: seal
       stageUuid: "277cfb7e-153e-86d2-bfcd-e76ff9fb1d58"
     - stage: uuid
-      stageUuid: "9a8764bd-e16b-81b7-ba38-13fb4087cb5d"
+      stageUuid: "fcff0083-65e2-8cc6-872f-ac4a10492c32"
 version: 2
 ---
 # leave-requests

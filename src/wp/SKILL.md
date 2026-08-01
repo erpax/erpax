@@ -2,77 +2,19 @@
 name: wp
 description: "Use when reasoning about wp as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: wp
-coordinate: wp · 7/descent · a195ef12
-contentUuid: "83b88ee1-359a-5785-b710-e9fc7564d116"
-diamondUuid: "f072921a-018d-8af4-9f0a-965baae5beed"
-uuid: "a195ef12-b167-8801-8e40-7a76ac9242bc"
-horo: 7
-bonds:
-  in:
-    - ad
-    - bar
-    - block
-    - collapse
-    - footer
-    - header
-    - law
-    - merge
-    - side
-    - sti
-  out:
-    - ad
-    - bar
-    - block
-    - collapse
-    - footer
-    - header
-    - law
-    - merge
-    - side
-    - sti
+coordinate: "wp · 5/round · 47073b7c"
+contentUuid: "0ef27f6b-fb0b-5ec1-8d09-e67cbe32d554"
+diamondUuid: "46bc6409-fba4-8a9e-bdae-09d330773d15"
+uuid: "47073b7c-fcfe-8d4c-b310-71696c05d261"
+horo: 5
 typography:
   partition: wp
   bondDegree: 36
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - ad
-    - bar
-    - block
-    - collapse
-    - footer
-    - header
-    - law
-    - merge
-    - side
-    - sti
-  matrix:
-    - ad
-    - bar
-    - block
-    - collapse
-    - footer
-    - header
-    - law
-    - merge
-    - side
-    - sti
-  backlinks:
-    - ad
-    - bar
-    - block
-    - collapse
-    - footer
-    - header
-    - law
-    - merge
-    - side
-    - sti
 signatures:
-  computationUuid: "46ab3aa9-3fc4-83d5-be88-3bdc6dda0b3c"
+  computationUuid: "93d43bbd-dff5-80d2-9efe-311ce5e2fa8f"
   stages:
     - stage: path
       stageUuid: "da56ea1c-eb88-8f91-a26e-8099a0bcd6cd"
@@ -83,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f23dbc45-2956-857b-9c5f-eec35d81cac1"
     - stage: horo
-      stageUuid: "19d969e5-376f-86d4-b626-0f304f80b4f5"
+      stageUuid: "dc06e610-9492-8acf-9e97-f636fd0fd970"
     - stage: seal
-      stageUuid: "fc366593-cff6-852f-825c-38f117f580f1"
+      stageUuid: "3477c91d-46ad-8017-99c3-08373d74b408"
     - stage: uuid
-      stageUuid: "2baedf40-c0e6-8fd6-89a7-7b316ee2f6ee"
+      stageUuid: "47b02ef3-6415-8095-bcda-82f8a70c2e64"
 version: 2
 ---
 # wp

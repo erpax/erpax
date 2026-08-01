@@ -1,58 +1,35 @@
 ---
 name: motorcycle
 description: "Use when reasoning about motorcycle — A motorcycle or motorbike is a single-track, two-wheeled motor vehicle."
-atomPath: vocabulary/motorcycle
-coordinate: motorcycle · 7/descent · e855cb5d
-contentUuid: "1b6402e0-6cd3-5dec-822b-0f14d5cdd6ba"
-diamondUuid: "feeef390-55e6-8876-a35d-a09d8c6f3bc3"
-uuid: "e855cb5d-b575-8549-9daf-e82f6ab8d943"
-horo: 7
-bonds:
-  in:
-    - dealer
-    - law
-    - repair
-  out:
-    - dealer
-    - law
-    - repair
+atomPath: "vocabulary/motorcycle"
+coordinate: "vocabulary/motorcycle · 5/round · ef68c499"
+contentUuid: "f455bc3d-11ac-5e28-8a72-1d58a8b25093"
+diamondUuid: "16985414-7e76-8e17-822e-ff3b5fbc896a"
+uuid: "ef68c499-93e9-8db5-948f-e69633932d25"
+horo: 5
 typography:
-  partition: motorcycle
+  partition: vocabulary
   bondDegree: 11
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - dealer
-    - law
-    - repair
-  matrix:
-    - dealer
-    - law
-    - repair
-  backlinks:
-    - dealer
-    - law
-    - repair
 signatures:
-  computationUuid: "c9cbc442-ca7e-852e-a67e-b891b2766aeb"
+  computationUuid: "d65edeec-be70-8347-aa2a-dfaa8c30e500"
   stages:
     - stage: path
-      stageUuid: "bcbb2e4f-9845-88c8-86c4-90a7963b2ecf"
+      stageUuid: "78a653ed-9db3-8b96-8d3e-929fd290eada"
     - stage: trinity
-      stageUuid: "d16c530a-70fe-8223-b71b-732c1b60acc6"
+      stageUuid: "a9d0c2bb-39c0-8da0-9283-482c365136c0"
     - stage: boundary
-      stageUuid: "98955786-5092-8cdf-8c14-59cb469d02c4"
+      stageUuid: "edb67017-ee60-85c2-b281-4bf6391e7230"
     - stage: links
-      stageUuid: "946d5bab-c7f4-84a5-84aa-a2267b9f2971"
+      stageUuid: "8879ed74-b58a-8dc1-a26c-5c10e9817825"
     - stage: horo
-      stageUuid: "7a4652d6-c22d-8f09-b42e-b4f7cd133312"
+      stageUuid: "6c82a56d-77e0-8dd6-8448-55f588ec19b0"
     - stage: seal
-      stageUuid: "7b434f61-6ba8-821b-a0cd-0db7ee43b063"
+      stageUuid: "5a361f56-2387-83d5-a15b-168d66399913"
     - stage: uuid
-      stageUuid: "79c0cbf3-032f-8e29-83a2-1d24cecbb921"
+      stageUuid: "276406d8-ade3-83f3-ba62-2102da4711d4"
 version: 2
 ---
 # motorcycle

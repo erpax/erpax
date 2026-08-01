@@ -1,68 +1,35 @@
 ---
 name: geospatial
 description: "Use when reasoning about geospatial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/geospatial
-coordinate: geospatial · 2/share · 68cb5f9a
-contentUuid: "82e12cbb-b9aa-5552-a2fa-75a1ec8f7923"
-diamondUuid: "4ae1cc6b-1de5-8d6f-ae05-e529151b2c91"
-uuid: "68cb5f9a-5071-8499-a0fe-b26c87638443"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - geometry
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - geometry
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/geospatial"
+coordinate: "vocabulary/geospatial · 7/descent · 59a0fa58"
+contentUuid: "f321a135-62bb-5b27-8a21-0657504f8d80"
+diamondUuid: "376167d5-04b9-835f-87af-97bda31af609"
+uuid: "59a0fa58-88e9-8782-ac3e-78861f7d7172"
+horo: 7
 typography:
-  partition: geospatial
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - geometry
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - geometry
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - geometry
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "eaf96cf2-1664-8f67-9a90-8edde161cd49"
+  computationUuid: "3e8d0625-4497-8aae-a278-f4aeecda4f08"
   stages:
     - stage: path
-      stageUuid: "d9962f62-d321-81ac-811c-c2118c770a1c"
+      stageUuid: "e8f8c039-9217-8dd8-b0a6-28242d7369df"
     - stage: trinity
-      stageUuid: "7c9fc205-134c-8e3e-b3b7-296613cff4cc"
+      stageUuid: "da2b2f61-1c2d-80ec-9ed4-87f2f897415c"
     - stage: boundary
-      stageUuid: "9a6ba823-48a1-8a0b-9aa6-a5f27d6c29ea"
+      stageUuid: "b1f29670-2301-8a51-a657-eb323a0312bd"
     - stage: links
-      stageUuid: "21e4bc34-3071-8a96-a4d5-78672892fdc8"
+      stageUuid: "8f5284df-cff7-8c23-be75-86c9bccad071"
     - stage: horo
-      stageUuid: "5d1568a4-ef16-8320-b4fd-2b08bbf941a8"
+      stageUuid: "f8820c34-be5d-8864-ac6c-68f4b441ea33"
     - stage: seal
-      stageUuid: "4b569989-e961-8d00-a067-e8288184b248"
+      stageUuid: "62e59401-b6c4-82d1-bea4-4ab179dc5ed4"
     - stage: uuid
-      stageUuid: "5f6611de-23d6-81f0-9b69-97320427f67d"
+      stageUuid: "16431bae-4a3f-8203-b1d6-7be11e58877d"
 version: 2
 ---
 # geospatial

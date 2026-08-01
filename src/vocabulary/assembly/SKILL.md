@@ -1,58 +1,35 @@
 ---
 name: assembly
 description: "Use when reasoning about assembly — Library file name, e.g., mscorlib.dll, system.web.dll."
-atomPath: vocabulary/assembly
-coordinate: assembly · 8/crest · f1fa6ef2
-contentUuid: "a5d347cf-1b98-5135-ba74-5418842c6b5c"
-diamondUuid: "af22101d-c627-897e-865e-3706cb91fccb"
-uuid: "f1fa6ef2-ce3b-8999-97d8-67769d437c9f"
-horo: 8
-bonds:
-  in:
-    - country
-    - law
-    - version
-  out:
-    - country
-    - law
-    - version
+atomPath: "vocabulary/assembly"
+coordinate: "vocabulary/assembly · 2/share · 604e499f"
+contentUuid: "013b3475-1a94-59e9-965b-8130e9a984d7"
+diamondUuid: "829ea0b8-b9f3-8e11-bdba-90c80689e2de"
+uuid: "604e499f-6b48-875f-96b8-322f7876a7ea"
+horo: 2
 typography:
-  partition: assembly
+  partition: vocabulary
   bondDegree: 10
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - country
-    - law
-    - version
-  matrix:
-    - country
-    - law
-    - version
-  backlinks:
-    - country
-    - law
-    - version
 signatures:
-  computationUuid: "8fe460d8-7140-8315-b34d-fcbbcb109ebe"
+  computationUuid: "0c25652a-d6b4-85d6-a054-58a193b14a03"
   stages:
     - stage: path
-      stageUuid: "5e2c1d2e-ae83-8780-9c0d-cce2dd4af93f"
+      stageUuid: "1bc9e508-f092-8741-8461-b3a8973899b1"
     - stage: trinity
-      stageUuid: "9e2e0586-02c3-8bed-85fd-a916274ec713"
+      stageUuid: "2ee210ec-8158-8df6-9a36-e6364e1c0e72"
     - stage: boundary
-      stageUuid: "e63aaa93-0ccb-8b9a-88e9-158fa6d94f72"
+      stageUuid: "17d9f27d-8dc3-8ce1-81b9-1a0ff5f1c163"
     - stage: links
-      stageUuid: "2e95c3d5-dff8-8f4c-80ea-ad53bc38e5fb"
+      stageUuid: "8e6c34db-ee7d-8687-bfcf-82054ca2d9b7"
     - stage: horo
-      stageUuid: "4ed40824-4aec-8543-8da9-67d81f2f07fa"
+      stageUuid: "559fc3d4-8c23-896a-9522-bc6fa67a78b8"
     - stage: seal
-      stageUuid: "e556f3b8-4a7a-824d-ac73-9181e6eb54a1"
+      stageUuid: "54de9bb8-8ae0-8c6d-8712-1aac80718d0d"
     - stage: uuid
-      stageUuid: "58539b4b-f5f0-83e2-9127-96f5c4e4a45b"
+      stageUuid: "5b106e32-8f23-8e62-9bc6-29a0b3bd8170"
 version: 2
 ---
 # assembly

@@ -1,103 +1,35 @@
 ---
 name: chem
 description: "Use when reasoning about chem as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/chem
-coordinate: chem · 4/weave · 8fb72c20
-contentUuid: "741d2e37-bf58-5c1a-bd82-4d0c3f7decb6"
-diamondUuid: "211be93e-7719-84da-9633-098532c6957d"
-uuid: "8fb72c20-b3f6-879f-bd19-e7b5deeb2a00"
-horo: 4
-bonds:
-  in:
-    - bio
-    - collapse
-    - encoded
-    - encodes
-    - entity
-    - has
-    - interaction
-    - law
-    - merge
-    - part
-    - similarity
-    - sti
-  out:
-    - bio
-    - collapse
-    - encoded
-    - encodes
-    - entity
-    - has
-    - interaction
-    - law
-    - merge
-    - part
-    - similarity
-    - sti
+atomPath: "vocabulary/chem"
+coordinate: "vocabulary/chem · 7/descent · 4839e6e0"
+contentUuid: "96697e33-de7f-57e9-a023-bc87bbe020f6"
+diamondUuid: "7337458f-2505-8c24-a104-d5d0307ed6c1"
+uuid: "4839e6e0-7c6c-8508-99fc-dd5cc646b214"
+horo: 7
 typography:
-  partition: chem
+  partition: vocabulary
   bondDegree: 43
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - bio
-    - collapse
-    - encoded
-    - encodes
-    - entity
-    - has
-    - interaction
-    - law
-    - merge
-    - part
-    - similarity
-    - sti
-  matrix:
-    - bio
-    - collapse
-    - encoded
-    - encodes
-    - entity
-    - has
-    - interaction
-    - law
-    - merge
-    - part
-    - similarity
-    - sti
-  backlinks:
-    - bio
-    - collapse
-    - encoded
-    - encodes
-    - entity
-    - has
-    - interaction
-    - law
-    - merge
-    - part
-    - similarity
-    - sti
 signatures:
-  computationUuid: "ccd264dd-f3b8-8b6e-8550-969ed0caef04"
+  computationUuid: "53face2a-36dc-8d3e-958d-65c9c1663658"
   stages:
     - stage: path
-      stageUuid: "38e5bea5-c6ca-8492-ac14-6442a99ec29a"
+      stageUuid: "3ef56192-601c-887b-b3b5-0aa45c229159"
     - stage: trinity
-      stageUuid: "fb3c180d-8dca-89c5-a5ed-7b861043c31e"
+      stageUuid: "b3692683-99a3-8aa0-bca0-7f5c3b24a0ac"
     - stage: boundary
-      stageUuid: "aff1c464-d837-8801-865c-0462a43b7596"
+      stageUuid: "cc4b8db8-3f2b-8106-ac1e-31f3691b4c85"
     - stage: links
-      stageUuid: "f06414b0-e04c-857e-8d12-47d5c45456e7"
+      stageUuid: "17cd905b-d871-8efe-945a-0c6bef619ff5"
     - stage: horo
-      stageUuid: "7c8506d4-7626-85e0-b70c-f3902abe1f76"
+      stageUuid: "a4bd359b-ee07-8cda-ad75-2e5d2d109fa7"
     - stage: seal
-      stageUuid: "c42e03a2-c442-8752-83dd-a360dacf9ab9"
+      stageUuid: "69beca1c-0561-8e9a-b095-b5194183a748"
     - stage: uuid
-      stageUuid: "5bc867b3-825b-8fec-a842-1139d00a7b5b"
+      stageUuid: "38956980-9a6e-8d59-af3d-feccf948f783"
 version: 2
 ---
 # chem

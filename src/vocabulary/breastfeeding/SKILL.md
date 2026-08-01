@@ -1,68 +1,35 @@
 ---
 name: breastfeeding
 description: "Use when reasoning about breastfeeding as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/breastfeeding
-coordinate: breastfeeding · 1/base · e90e78c6
-contentUuid: "c045ef98-53b0-538d-8016-d96ed1ea7140"
-diamondUuid: "4a37f6c6-c800-8ed3-88e1-e935c05c0444"
-uuid: "e90e78c6-af10-8d4d-b40e-43fda2acd88c"
+atomPath: "vocabulary/breastfeeding"
+coordinate: "vocabulary/breastfeeding · 1/base · 470c9f34"
+contentUuid: "df8abb17-62d6-5254-a4f2-1cbab20747dc"
+diamondUuid: "c35f8b56-52eb-8ecc-bfdd-fa41ae6f0589"
+uuid: "470c9f34-c6d2-8959-87d9-498d05432076"
 horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - warning
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - warning
 typography:
-  partition: breastfeeding
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - warning
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - warning
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - warning
 signatures:
-  computationUuid: "f188d5f2-8e0c-8c56-bbce-5e10a027f830"
+  computationUuid: "1dd489b4-1da7-8aae-aa43-f522c5389fba"
   stages:
     - stage: path
-      stageUuid: "86b200e4-c3e8-8fd6-ac61-53883c771490"
+      stageUuid: "9c4c1634-4986-81c4-a4e0-97a6df77faa7"
     - stage: trinity
-      stageUuid: "57ac5cc9-58e8-8930-8af6-34396efda455"
+      stageUuid: "d87313b5-9ff2-8dd4-a6e3-8f2b90dce34a"
     - stage: boundary
-      stageUuid: "aacf649e-8251-8719-809b-384e52722b5d"
+      stageUuid: "c73b28a7-f309-8b8d-aeb7-51ddf0280661"
     - stage: links
-      stageUuid: "dddec126-3076-848b-9d23-15b46f1ad040"
+      stageUuid: "a94ea80b-6f53-8b71-8002-fe3af544706f"
     - stage: horo
-      stageUuid: "acac938b-ddc9-8958-a00e-1137dda3ecd4"
+      stageUuid: "43b85325-9e4d-824c-b706-b0152ec735d3"
     - stage: seal
-      stageUuid: "002efb4d-93b0-8dfd-82e1-e050ae908f4f"
+      stageUuid: "0c1bb8ec-1c26-8fbc-a67e-2d70ccafdede"
     - stage: uuid
-      stageUuid: "154f4269-bda2-800e-982d-dac61badc953"
+      stageUuid: "fb45d8c5-94f8-827d-888c-f936acac94fd"
 version: 2
 ---
 # breastfeeding

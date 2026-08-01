@@ -1,87 +1,34 @@
 ---
 name: lichen
 description: "Use when one 'organism' is really a committee — a lichen is a fungus plus a photosynthetic partner (and often a yeast) living as a single composite body, the textbook case that the INDIVIDUAL is a question, not a given. Symbiosis incarnate; the natural twin of erpax's actor-merge (one identity, many partners)."
-atomPath: vocabulary/lichen
-coordinate: lichen · 7/descent · a5fdbd23
-contentUuid: "1f95fa26-bcc6-5dc6-b223-b6b172b4b1af"
-diamondUuid: "e4cf63e5-5acc-8f81-a42e-d4a08d71bb00"
-uuid: "a5fdbd23-8466-85ea-9c91-79623d8317ae"
-horo: 7
-bonds:
-  in:
-    - diversity
-    - ecosystem
-    - identity
-    - law
-    - merge
-    - mycelium
-    - self
-    - symbiosis
-    - whole
-  out:
-    - diversity
-    - ecosystem
-    - identity
-    - law
-    - merge
-    - mycelium
-    - self
-    - symbiosis
-    - whole
+atomPath: "vocabulary/lichen"
+coordinate: "vocabulary/lichen · 2/share · 873431eb"
+contentUuid: "ce14d733-4384-5341-aca3-e4cf05ee8de3"
+diamondUuid: "ebd43b9c-d422-8589-b54b-75020852e365"
+uuid: "873431eb-2f73-83f8-bac3-59606188d094"
+horo: 2
 typography:
-  partition: lichen
+  partition: vocabulary
   bondDegree: 28
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - diversity
-    - ecosystem
-    - identity
-    - law
-    - merge
-    - mycelium
-    - self
-    - symbiosis
-    - whole
-  matrix:
-    - diversity
-    - ecosystem
-    - identity
-    - law
-    - merge
-    - mycelium
-    - self
-    - symbiosis
-    - whole
-  backlinks:
-    - diversity
-    - ecosystem
-    - identity
-    - law
-    - merge
-    - mycelium
-    - self
-    - symbiosis
-    - whole
 signatures:
-  computationUuid: "cde80dd1-8e38-878d-b0a3-f789817a710e"
+  computationUuid: "a802395f-2cff-8ac7-8c9f-a7f1c9930bc2"
   stages:
     - stage: path
-      stageUuid: "aa11b30c-249b-837f-ba11-42c9a18f97ad"
+      stageUuid: "ab13c8df-d487-852f-adc4-944f2ad7ebe4"
     - stage: trinity
-      stageUuid: "839ce5a8-0cda-8b1f-b5bb-91b53243dc20"
+      stageUuid: "9e9e175b-81b3-8268-a353-e6000c31573f"
     - stage: boundary
-      stageUuid: "75e8f7fe-2d2b-8954-a648-f1bbbb9adfb7"
+      stageUuid: "3b14aa6e-d37f-8130-9c8a-20ddcf336381"
     - stage: links
-      stageUuid: "a9dc89f8-fc43-8dc2-99d5-f51e97ffa633"
+      stageUuid: "fb6617d6-7561-8532-9cef-1b1d6c5ecb23"
     - stage: horo
-      stageUuid: "ab627735-f7d6-8c6f-b4da-2f5bc42586d6"
+      stageUuid: "6fcb7de4-ef6c-816a-9baf-77345f29f6e5"
     - stage: seal
-      stageUuid: "bb732a04-0d2f-89bb-ab19-ac962f8312c9"
+      stageUuid: "1b845606-f20d-85df-b7e4-68ea6be0431c"
     - stage: uuid
-      stageUuid: "bae097b4-1592-8440-9b5c-21c29e96d845"
+      stageUuid: "291cf431-5645-8486-b252-1a26358577cc"
 version: 2
 ---
 # lichen — the composite individual (the question of the one and the many)

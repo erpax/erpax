@@ -1,62 +1,34 @@
 ---
 name: mapping
 description: Use when modelling one mapping — the singular model of the mappings collection (the plural store); a correspondence from one set of values to another.
-atomPath: vocabulary/mapping
-coordinate: mapping · 5/round · 6ae3eeeb
-contentUuid: "f5f4c30a-94fd-5f26-af11-000af29f2d97"
-diamondUuid: "5a2f4ade-77cc-8768-9ad8-fccc2ba58428"
-uuid: "6ae3eeeb-48b6-853e-a78b-fb83333af635"
-horo: 5
-bonds:
-  in:
-    - balance
-    - law
-    - mappings
-    - reference
-  out:
-    - balance
-    - law
-    - mappings
-    - reference
+atomPath: "vocabulary/mapping"
+coordinate: "vocabulary/mapping · 7/descent · f33d48b4"
+contentUuid: "4b2fb234-0f47-52b6-a5c4-f82e132942bf"
+diamondUuid: "1b1a44a9-6045-8c33-840e-37303994c2e9"
+uuid: "f33d48b4-5391-8d0c-831b-6bc5dcc662b1"
+horo: 7
 typography:
-  partition: mapping
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - law
-    - mappings
-    - reference
-  matrix:
-    - balance
-    - law
-    - mappings
-    - reference
-  backlinks:
-    - balance
-    - law
-    - mappings
-    - reference
 signatures:
-  computationUuid: "f309d1fb-89b5-844d-a271-8f87c110b30e"
+  computationUuid: "b0447cd3-7903-8c11-9035-7fe20283a10f"
   stages:
     - stage: path
-      stageUuid: "ec9c875a-7d73-8203-a28a-6dc6317ce071"
+      stageUuid: "b7d60609-07f9-87c7-838d-e5dbada6be07"
     - stage: trinity
-      stageUuid: "8986c423-4e1e-82fa-93e7-4d23ad2c4e8f"
+      stageUuid: "fc8fcbdc-3546-8d37-82a6-a9a55bc267c6"
     - stage: boundary
-      stageUuid: "0877bc1f-f018-8cbc-b374-511f98533398"
+      stageUuid: "27d2b5d0-798c-87a5-bd68-8ce0d36347ab"
     - stage: links
-      stageUuid: "32bad989-7974-8e10-a23a-91ed2ee4423a"
+      stageUuid: "ffbce504-20a7-8bf8-a778-838ad27ea349"
     - stage: horo
-      stageUuid: "ce7dfb5a-646a-8ea1-9c05-9359afd74c24"
+      stageUuid: "339cb41d-03ee-8384-898d-f362c3f76948"
     - stage: seal
-      stageUuid: "52c00382-8748-8094-9ad7-18847e077e2b"
+      stageUuid: "a4a49117-9487-8448-a0a9-825c52ba7300"
     - stage: uuid
-      stageUuid: "fc324b17-367b-8091-bd71-fda03a5dfab9"
+      stageUuid: "a51b0208-2460-8c40-ad97-c8ba1cde62d2"
 version: 2
 ---
 # mapping — the model of one [[mappings]] row

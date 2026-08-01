@@ -2,172 +2,45 @@
 name: testing
 description: "Use when writing or debugging erpax's own tests — discovering the live config to assert against, seeding isolated fixtures by level (unit/integration/e2e), transactional cleanup, parallel runners, or snapshot/restore — the society's self-test infrastructure that validates the running app against its own generated schema."
 atomPath: testing
-coordinate: testing · 4/weave · 7a0a3ca0
-contentUuid: "1cb32787-18b1-5efa-9086-6c347398c300"
-diamondUuid: "1b6946eb-eccb-85c6-b2c5-543cd8910622"
-uuid: "7a0a3ca0-8ba4-8381-a737-ce6d3479dcbf"
-horo: 4
-bonds:
-  in:
-    - akashic
-    - aura
-    - collapse
-    - collections
-    - config
-    - consistency
-    - coverage
-    - covid
-    - entropy
-    - facility
-    - fractal
-    - gate
-    - harmony
-    - identity
-    - law
-    - merge
-    - proof
-    - quantum
-    - schema
-    - security
-    - seed
-    - society
-    - spec
-    - test
-    - vitepress
-  out:
-    - akashic
-    - aura
-    - collapse
-    - collections
-    - config
-    - consistency
-    - coverage
-    - covid
-    - entropy
-    - facility
-    - fractal
-    - gate
-    - harmony
-    - identity
-    - law
-    - merge
-    - proof
-    - quantum
-    - schema
-    - security
-    - seed
-    - society
-    - spec
-    - test
-    - vitepress
+coordinate: "testing · 2/share · 634c6a0c"
+contentUuid: "94a1a741-ef21-50bc-85ec-ef3c7e93312e"
+diamondUuid: "45f9e2d1-20ae-862c-b2bc-b844d5dcb17e"
+uuid: "634c6a0c-3b0e-8f6e-a891-a0f141be735c"
+horo: 2
 typography:
   partition: testing
   bondDegree: 0
-  neighbors: []
 standards:
   - "8259 json"
-  - "ISO-19011:2018 audit-trail seed-cleanup"
   - "ISO/IEC-29119"
   - "ISO/IEC-29119:2022 software-testing"
+  - "ISO/IEC-29119:2022 software-testing`"
   - "ISO/IEC/IEEE-29119"
   - "ISO/IEC/IEEE-29119-3:2021 test-documentation"
+  - "ISO/IEC/IEEE-29119-3:2021 test-documentation`"
   - "ISO/IEC/IEEE-29119-4:2021 test-techniques"
+  - "ISO/IEC/IEEE-29119-4:2021 test-techniques`"
   - "JSON-Schema"
   - "JSON-Schema 2020-12 schema-validation"
-  - "US-CTA-2021"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - aura
-    - collapse
-    - collections
-    - config
-    - consistency
-    - coverage
-    - entropy
-    - fractal
-    - gate
-    - harmony
-    - identity
-    - law
-    - merge
-    - proof
-    - quantum
-    - schema
-    - security
-    - seed
-    - society
-    - spec
-  matrix:
-    - akashic
-    - aura
-    - collapse
-    - collections
-    - config
-    - consistency
-    - coverage
-    - covid
-    - entropy
-    - facility
-    - fractal
-    - gate
-    - harmony
-    - identity
-    - law
-    - merge
-    - proof
-    - quantum
-    - schema
-    - security
-    - seed
-    - society
-    - spec
-    - test
-    - vitepress
-  backlinks:
-    - akashic
-    - aura
-    - collapse
-    - collections
-    - config
-    - consistency
-    - coverage
-    - covid
-    - entropy
-    - facility
-    - fractal
-    - gate
-    - harmony
-    - identity
-    - law
-    - merge
-    - proof
-    - quantum
-    - schema
-    - security
-    - seed
-    - society
-    - spec
-    - test
-    - vitepress
 signatures:
-  computationUuid: "679da97e-6d85-8fa6-9ee7-789cf2ab039f"
+  computationUuid: "3226fb46-60ba-82d8-92ac-440d6c22d3c9"
   stages:
     - stage: path
       stageUuid: "b045970f-6ba3-8082-a1a6-e3d6082d4602"
     - stage: trinity
       stageUuid: "c9efd1f9-a194-8ac1-bda6-4d4b267e14a0"
     - stage: boundary
-      stageUuid: "b9c662b9-98e7-810e-982b-6b53567327f8"
+      stageUuid: "35f81b66-95af-830d-8238-d7ec27d175c3"
     - stage: links
       stageUuid: "78968b17-e4f4-899c-be75-8cf00a5fd301"
     - stage: horo
-      stageUuid: "0cb6b6bd-db62-835a-a366-bed352b5020e"
+      stageUuid: "6832c1eb-17ad-878e-82e2-04c5a228301d"
     - stage: seal
       stageUuid: "ff2d207a-6082-8cf5-9511-6dc4f60c2753"
     - stage: uuid
-      stageUuid: "e952b657-9ec3-809e-8df2-a6ac0d33d840"
+      stageUuid: "582d2159-54cf-8ba0-be00-66a0ebc243a1"
 version: 2
 ---
 # testing — the society proving itself against its own schema

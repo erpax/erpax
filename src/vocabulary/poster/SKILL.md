@@ -1,53 +1,35 @@
 ---
 name: poster
 description: "Use when reasoning about poster — A large, usually printed placard, bill, or announcement, often illustrated, that is posted to advertise or publicize something."
-atomPath: vocabulary/poster
-coordinate: poster · 7/descent · 30117e18
-contentUuid: "a949a507-58dc-5487-98c0-7170882521e4"
-diamondUuid: "f77757a0-b7b0-8183-be5f-8d2509f18fc6"
-uuid: "30117e18-1964-87a5-a216-1f905efed2df"
+atomPath: "vocabulary/poster"
+coordinate: "vocabulary/poster · 7/descent · eff1888a"
+contentUuid: "96899019-122e-53e0-b4e5-3c5f7ec09fb2"
+diamondUuid: "338cd6b4-f1a2-83b0-a65d-48b161219cd2"
+uuid: "eff1888a-aee2-82f4-bfa5-ca932f38cb03"
 horo: 7
-bonds:
-  in:
-    - creative
-    - law
-  out:
-    - creative
-    - law
 typography:
-  partition: poster
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - creative
-    - law
-  matrix:
-    - creative
-    - law
-  backlinks:
-    - creative
-    - law
 signatures:
-  computationUuid: "6e0b24ec-8846-83fc-8162-6aad8a9073c0"
+  computationUuid: "71b1f801-fe8e-872e-8451-68f7e5c4435f"
   stages:
     - stage: path
-      stageUuid: "c977818f-cc1d-8179-ab19-def5e4a7b887"
+      stageUuid: "8c671fe5-9df8-83e3-8cdc-df09291959c4"
     - stage: trinity
-      stageUuid: "4a1758e6-bfd8-8d66-9def-e0e5ded0eec9"
+      stageUuid: "641f6459-55cc-8572-8f69-638c9d2ea714"
     - stage: boundary
-      stageUuid: "637a57c7-c202-8fa0-a303-49b40d31ceff"
+      stageUuid: "c6baca8c-1602-8a47-8f6d-5c37926e5c1b"
     - stage: links
-      stageUuid: "abebaae4-251e-816f-8619-1338b31cea80"
+      stageUuid: "fc39250d-dce4-8c5a-8d6c-dac75ca87c1f"
     - stage: horo
-      stageUuid: "125aa1d2-53bc-8d35-9949-6ad97a5774e3"
+      stageUuid: "6a2150c3-9463-8063-81f0-d8f2b685ef3f"
     - stage: seal
-      stageUuid: "505ec2a9-ac82-8e5d-81c8-bee64178c717"
+      stageUuid: "27ca4c2b-d4cf-8cb3-bbe3-b935e6e21eb2"
     - stage: uuid
-      stageUuid: "afda29ef-7560-86a8-8027-6704ee4bb1c9"
+      stageUuid: "b58b540f-a21e-8cbf-926e-7d5cb9ab30be"
 version: 2
 ---
 # poster

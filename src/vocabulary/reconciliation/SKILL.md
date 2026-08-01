@@ -1,62 +1,34 @@
 ---
 name: reconciliation
 description: Use when modelling one reconciliation — the singular model of the reconciliations collection (the plural store); the matching of two records to confirm they agree.
-atomPath: vocabulary/reconciliation
-coordinate: reconciliation · 4/weave · f0d502ee
-contentUuid: "58358a81-7aa5-5faf-864b-1b8ceec58d46"
-diamondUuid: "e507cca2-e607-8900-b86a-6f16fbbf08aa"
-uuid: "f0d502ee-ae76-8f3d-a86c-1684181365b7"
-horo: 4
-bonds:
-  in:
-    - accounting
-    - balance
-    - law
-    - reconciliations
-  out:
-    - accounting
-    - balance
-    - law
-    - reconciliations
+atomPath: "vocabulary/reconciliation"
+coordinate: "vocabulary/reconciliation · 2/share · c193e950"
+contentUuid: "609734dd-0f9c-5ead-bf3d-7fa7865fd5f0"
+diamondUuid: "11ca018c-acfb-8a85-8141-ed98fe456afd"
+uuid: "c193e950-f62d-826a-8dee-8a86ca6213ad"
+horo: 2
 typography:
-  partition: reconciliation
-  bondDegree: 17
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 15
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - balance
-    - law
-    - reconciliations
-  matrix:
-    - accounting
-    - balance
-    - law
-    - reconciliations
-  backlinks:
-    - accounting
-    - balance
-    - law
-    - reconciliations
 signatures:
-  computationUuid: "95223e29-de06-86b6-a25c-344106ca107e"
+  computationUuid: "5f13ee85-ea06-8efd-a610-462d95438ff5"
   stages:
     - stage: path
-      stageUuid: "bdb8eb41-0a82-85d5-86e7-b99711ba9090"
+      stageUuid: "bd7d93f0-33fb-85cb-8394-0ea57d31c4c1"
     - stage: trinity
-      stageUuid: "eb9710f9-87b0-8997-877d-c4d9f070645c"
+      stageUuid: "5643e776-20a6-820f-ac87-8dd9ce559be4"
     - stage: boundary
-      stageUuid: "c11b509c-3c94-8320-8df9-f1e6ca50fc2e"
+      stageUuid: "961c8e2a-319b-86f5-b100-3002f66c06a5"
     - stage: links
-      stageUuid: "d50d37ff-8e92-84bc-aa9a-1ed1fcf995d4"
+      stageUuid: "e73bfe23-1e75-8f99-962d-634cab2d2c88"
     - stage: horo
-      stageUuid: "267a80fb-1762-8f07-8362-acf7cb04b510"
+      stageUuid: "af79ec88-482e-89bb-b9ee-e01aa1315862"
     - stage: seal
-      stageUuid: "d7dda75e-18a9-83ef-9312-51c47c180641"
+      stageUuid: "18806c41-edd5-89a1-85b9-ff439e78885e"
     - stage: uuid
-      stageUuid: "63e3daa3-376a-802b-b2bb-7686c226acfd"
+      stageUuid: "9b3187fc-a0fe-84b3-a821-1e64d614d23b"
 version: 2
 ---
 # reconciliation — the model of one [[reconciliations]] row

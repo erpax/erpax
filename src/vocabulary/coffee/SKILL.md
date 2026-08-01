@@ -1,73 +1,35 @@
 ---
 name: coffee
 description: "Use when reasoning about coffee as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/coffee
-coordinate: coffee · 4/weave · f04327d1
-contentUuid: "38f2c6a0-5ad1-5c85-a7eb-dd944d0de083"
-diamondUuid: "e9de9998-a94c-8f4f-b5d6-615cbd28d325"
-uuid: "f04327d1-5154-833b-9216-a3c1e65140e3"
-horo: 4
-bonds:
-  in:
-    - cafe
-    - collapse
-    - law
-    - merge
-    - shop
-    - sti
-  out:
-    - cafe
-    - collapse
-    - law
-    - merge
-    - shop
-    - sti
+atomPath: "vocabulary/coffee"
+coordinate: "vocabulary/coffee · 5/round · e5418786"
+contentUuid: "3e10ecbe-4242-553a-ba17-e148827989bd"
+diamondUuid: "febfb3fe-c1af-8eb4-9185-c3aef2129803"
+uuid: "e5418786-2902-8057-aadc-dc3e638f53a7"
+horo: 5
 typography:
-  partition: coffee
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - cafe
-    - collapse
-    - law
-    - merge
-    - shop
-    - sti
-  matrix:
-    - cafe
-    - collapse
-    - law
-    - merge
-    - shop
-    - sti
-  backlinks:
-    - cafe
-    - collapse
-    - law
-    - merge
-    - shop
-    - sti
 signatures:
-  computationUuid: "98e78860-9b34-8c92-a86f-e519d981259e"
+  computationUuid: "2cd2f727-f0cc-809e-8614-261b8ea72f35"
   stages:
     - stage: path
-      stageUuid: "d5a247df-6df8-88fc-b777-d90aa7cc7982"
+      stageUuid: "c298277f-d3ac-8200-b465-8feadc88255f"
     - stage: trinity
-      stageUuid: "ced85784-4e06-8f6d-885f-75c08e580697"
+      stageUuid: "027fe0e5-326e-8bdf-b350-77c52370da30"
     - stage: boundary
-      stageUuid: "f5e19d48-67b8-82c6-b061-7d559bd0b16c"
+      stageUuid: "0f744d1e-1c70-81a2-9575-61719786c519"
     - stage: links
-      stageUuid: "a6cb932b-5053-86e0-8d47-e42eabd270ab"
+      stageUuid: "a3003370-3752-8644-a5d0-3b949dff1d74"
     - stage: horo
-      stageUuid: "de0ed04d-9932-8b9c-9610-fb8e6d7c0f3f"
+      stageUuid: "3a2983a4-c418-8c12-bd81-2932f91ae22b"
     - stage: seal
-      stageUuid: "bb519b65-fd63-88e6-bcbe-ec94ac8560f4"
+      stageUuid: "107cfd02-2b64-8fa0-bd8c-cd24986104e9"
     - stage: uuid
-      stageUuid: "824b5a35-2b4e-88a8-ba78-09da8176d3f5"
+      stageUuid: "a65fd6c7-8bb6-89e0-bba1-4e0d024f8d93"
 version: 2
 ---
 # coffee

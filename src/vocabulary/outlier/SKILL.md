@@ -1,69 +1,34 @@
 ---
 name: outlier
 description: "Use when detecting or handling statistical anomalies — outlier detection methods (z-score, IQR, isolation-forest), treatment (trim, robust stats, flag, investigate), impact on metrics and reporting."
-atomPath: vocabulary/outlier
-coordinate: outlier · 2/share · 8a7572e8
-contentUuid: "76b5808a-ced7-5834-90c3-39b155ffa73f"
-diamondUuid: "c1042a8d-042f-8533-9af0-5d78c8b899c4"
-uuid: "8a7572e8-a34a-8864-af82-83fd37b2d4c1"
-horo: 2
-bonds:
-  in:
-    - aggregation
-    - calculate
-    - empirical
-    - metric
-    - sampling
-    - trend
-  out:
-    - aggregation
-    - calculate
-    - empirical
-    - metric
-    - sampling
-    - trend
+atomPath: "vocabulary/outlier"
+coordinate: "vocabulary/outlier · 4/weave · 2dcfb761"
+contentUuid: "567c05ac-9201-5ee4-afe2-15c6fae5cfe8"
+diamondUuid: "7cb8650b-cd7f-8b1e-b561-ef0547c204b7"
+uuid: "2dcfb761-63a0-81a4-b8e8-1c5d33bb46bf"
+horo: 4
 typography:
-  partition: outlier
+  partition: vocabulary
   bondDegree: 18
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - calculate
-    - metric
-    - sampling
-  matrix:
-    - aggregation
-    - calculate
-    - empirical
-    - metric
-    - sampling
-    - trend
-  backlinks:
-    - aggregation
-    - calculate
-    - empirical
-    - metric
-    - sampling
-    - trend
 signatures:
-  computationUuid: "e513b3fe-7a02-8253-923a-66ab63562668"
+  computationUuid: "c3580389-f3e7-8b1c-b470-92a99d75fb52"
   stages:
     - stage: path
-      stageUuid: "82e1c06a-0f5f-8e3c-8332-518f1672cc73"
+      stageUuid: "07b94342-5531-8b68-800a-ef35fa99e1b6"
     - stage: trinity
-      stageUuid: "4136124f-41c2-85a7-93ea-235752946f40"
+      stageUuid: "790106cb-9da5-8a4a-9bb0-0deca509954b"
     - stage: boundary
-      stageUuid: "681adcd6-e65f-895f-9493-2c66edad5558"
+      stageUuid: "0d9a88af-653b-8faf-8b84-f78e18cc00f0"
     - stage: links
-      stageUuid: "ed505fe6-d198-854a-8f44-0a2f32df713b"
+      stageUuid: "337a2b77-4759-8a85-87fb-030ada7be9c1"
     - stage: horo
-      stageUuid: "ed7f30a1-2a6f-8f95-b3cd-7e09f172d345"
+      stageUuid: "a5642fb0-ac6d-814a-b36c-218941de9814"
     - stage: seal
-      stageUuid: "513dbea2-0cc3-864a-a58b-e0b901d26a41"
+      stageUuid: "53989b41-60c2-879e-aadc-c8934cea8976"
     - stage: uuid
-      stageUuid: "2539830d-abdd-8f2f-93c4-ec4bf619fa54"
+      stageUuid: "1b4b05b3-4fd7-8314-8533-7121cee623b0"
 version: 2
 ---
 # outlier

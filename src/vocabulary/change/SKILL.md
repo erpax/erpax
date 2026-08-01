@@ -1,62 +1,34 @@
 ---
 name: change
 description: Use when modelling one change — the singular model of the changes collection (the plural store); a recorded modification to a controlled record or system.
-atomPath: vocabulary/change
-coordinate: change · 7/descent · c81942a6
-contentUuid: "ef619d31-e8f4-5d39-893d-dfdad7a58fb1"
-diamondUuid: "df140aae-b679-82c9-9014-509b65380f93"
-uuid: "c81942a6-6af4-8913-af1b-0ce8aced2aee"
-horo: 7
-bonds:
-  in:
-    - audit
-    - balance
-    - changes
-    - law
-  out:
-    - audit
-    - balance
-    - changes
-    - law
+atomPath: "vocabulary/change"
+coordinate: "vocabulary/change · 1/base · e1e39b65"
+contentUuid: "c83aa435-7638-5c8f-847e-7db973be49ef"
+diamondUuid: "740c8ecc-b12f-8cd9-acf2-2379d8e68e70"
+uuid: "e1e39b65-15a4-8b15-928b-9b14745edbaa"
+horo: 1
 typography:
-  partition: change
-  bondDegree: 15
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 18
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - audit
-    - balance
-    - changes
-    - law
-  matrix:
-    - audit
-    - balance
-    - changes
-    - law
-  backlinks:
-    - audit
-    - balance
-    - changes
-    - law
 signatures:
-  computationUuid: "3d82be25-1a9a-8068-bea0-95fc8101e96f"
+  computationUuid: "39a5242e-9709-87f6-a061-d5db9b3f9c14"
   stages:
     - stage: path
-      stageUuid: "59b5e6b1-5fa1-8324-b07a-639319dd581d"
+      stageUuid: "7eeed6c4-3816-8ff2-b840-fd341cc9c5f0"
     - stage: trinity
-      stageUuid: "952cf063-a9b3-8e01-a51b-cd396ce30405"
+      stageUuid: "96d1d6b2-fce2-8b8a-8247-8d035c8f5b71"
     - stage: boundary
-      stageUuid: "c1ee35d4-4946-8bde-ac9b-ea54dac0603d"
+      stageUuid: "6a0fc7ae-c246-8101-9e63-c5f5182f6c84"
     - stage: links
-      stageUuid: "dbad1e54-6503-8c0d-9d82-f09b24b3121c"
+      stageUuid: "5500eb80-7b18-863d-aa56-8d0f5dd5fefb"
     - stage: horo
-      stageUuid: "f525d7c9-4787-845b-b656-530b2ddd8228"
+      stageUuid: "bc9da1b1-d813-8e76-83b6-308644fa644a"
     - stage: seal
-      stageUuid: "bb7c4158-b79e-8803-a667-13c321dc32a7"
+      stageUuid: "d733b6c8-9b4f-872d-872b-6fa92085ce3e"
     - stage: uuid
-      stageUuid: "0454be19-ae28-8898-80f6-d173b50d3910"
+      stageUuid: "ac6f396e-4f40-8444-992c-de56be5f6f53"
 version: 2
 ---
 # change — the model of one [[changes]] row

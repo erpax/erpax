@@ -1,63 +1,35 @@
 ---
 name: husky
 description: "Use when reasoning about husky as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/husky
-coordinate: husky · 4/weave · d2036800
-contentUuid: "0fc9db5d-ce15-5f99-9646-2a66cd5a8665"
-diamondUuid: "2129b9f5-43d0-8b74-8c44-ca34fdd4ac1e"
-uuid: "d2036800-0d25-8905-9676-a0db2a6cee6c"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/husky"
+coordinate: "vocabulary/husky · 8/crest · 90d02a51"
+contentUuid: "5dc8e75a-2373-5ca4-adfd-ccadd4e8abf7"
+diamondUuid: "a8b22fea-e7c5-8f13-923f-f0470ab41569"
+uuid: "90d02a51-895b-8bf9-b756-aee3bcb2245a"
+horo: 8
 typography:
-  partition: husky
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "72baed97-0374-86c2-a522-53e1110097c2"
+  computationUuid: "1f0677cf-00bf-820c-90fc-675099aa14a6"
   stages:
     - stage: path
-      stageUuid: "350ab937-2b83-8ff5-9929-a69565a94c81"
+      stageUuid: "1bb33fd7-0a9a-8657-97d3-8560f122c40c"
     - stage: trinity
-      stageUuid: "a86b5374-0fe0-8184-a605-4403fad36a5d"
+      stageUuid: "dde8738b-0b5e-8b36-9641-01e5287549c4"
     - stage: boundary
-      stageUuid: "cbe9b04e-609e-89f2-bbf3-2d68594ce910"
+      stageUuid: "064c9152-ca04-84c8-a1ae-fd54aa34d5fa"
     - stage: links
-      stageUuid: "a0838544-c304-8183-82c6-90b67e440bb3"
+      stageUuid: "31697f6e-eadc-8624-a1f2-4cc1575b7725"
     - stage: horo
-      stageUuid: "ce71f25c-3834-8146-818a-bceb95384290"
+      stageUuid: "175f617b-23cf-8ace-bf41-b9a20be93f8d"
     - stage: seal
-      stageUuid: "eb2da763-9229-8574-a389-5715e3979dd8"
+      stageUuid: "fb6494a5-4ecd-8619-a49f-21d979308776"
     - stage: uuid
-      stageUuid: "21984351-4fae-8a9d-8cd0-7ed0948b8164"
+      stageUuid: "fe5ccfe6-5403-87d1-ac59-ca94bc51277e"
 version: 2
 ---
 # husky

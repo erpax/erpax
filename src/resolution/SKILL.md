@@ -2,59 +2,18 @@
 name: resolution
 description: "Use when closing or resolving a ticket, issue, or complaint — root-cause analysis, solution implementation, confirmation, closure. The endpoint of a support lifecycle."
 atomPath: resolution
-coordinate: resolution · 5/round · 3259dcef
-contentUuid: "4cd6bbb2-7d6a-5f1d-81da-dffd4818c885"
-diamondUuid: "be7b919a-c16f-8813-be2e-6fd3c99885ce"
-uuid: "3259dcef-5409-8d98-a2ea-784fc6510235"
+coordinate: "resolution · 5/round · 75c28677"
+contentUuid: "becc0e2a-034f-5ca1-8f0e-d4be7a18b058"
+diamondUuid: "abfa935c-5f8f-8b3f-9fc6-ec04f7d45391"
+uuid: "75c28677-c459-8e69-9db5-c471e65091f9"
 horo: 5
-bonds:
-  in:
-    - comment
-    - escalation
-    - incident
-    - instances
-    - sla
-    - status
-    - ticket
-  out:
-    - comment
-    - escalation
-    - incident
-    - instances
-    - sla
-    - status
-    - ticket
 typography:
   partition: resolution
   bondDegree: 22
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - comment
-    - escalation
-    - instances
-    - status
-    - ticket
-  matrix:
-    - comment
-    - escalation
-    - incident
-    - instances
-    - sla
-    - status
-    - ticket
-  backlinks:
-    - comment
-    - escalation
-    - incident
-    - instances
-    - sla
-    - status
-    - ticket
 signatures:
-  computationUuid: "e2cf4c36-22df-8698-b64f-919397479329"
+  computationUuid: "0742f0ad-cf0c-82be-b230-c634cc7a5d37"
   stages:
     - stage: path
       stageUuid: "a02c98ef-dd68-86d9-8f00-fdfc91d09f7b"
@@ -65,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2ce3b04a-9653-88bf-9d6f-f92b9747dc87"
     - stage: horo
-      stageUuid: "78613c00-57b7-8336-8f3b-bf9d5013a094"
+      stageUuid: "c0bd1028-be34-8418-8598-f27595a35ca9"
     - stage: seal
-      stageUuid: "a9331a22-dd3e-8843-85c3-d9a155864f19"
+      stageUuid: "0a2e9b61-18fa-85cc-9318-5b726fc23b5e"
     - stage: uuid
-      stageUuid: "1d331d79-e16a-8837-8975-ff0f306d7e9a"
+      stageUuid: "c82d0c8e-399c-88aa-a691-29404959bcca"
 version: 2
 ---
 # resolution

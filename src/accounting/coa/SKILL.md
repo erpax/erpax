@@ -2,51 +2,18 @@
 name: coa
 description: "Use when reasoning about accounting/coa — chart of accounts — path IS the account code; accountCodeOf folds atom paths to GL codes."
 atomPath: "accounting/coa"
-coordinate: "accounting/coa · 8/crest · 97103b5e"
-contentUuid: "a13ca410-504d-5ba3-bf18-e384abce956b"
-diamondUuid: "5de1d2aa-570d-8f90-b5a6-76cee05e4646"
-uuid: "97103b5e-757d-8649-8f81-04a89da24489"
-horo: 8
-bonds:
-  in:
-    - accounting
-    - balance
-    - debit
-    - law
-    - path
-  out:
-    - accounting
-    - balance
-    - debit
-    - law
-    - path
+coordinate: "accounting/coa · 1/base · dc158eef"
+contentUuid: "dc33cf5a-8744-513b-b2ae-49c66570026c"
+diamondUuid: "ba650bd8-ed5c-846d-a3bf-10bc7af9fbe7"
+uuid: "dc158eef-ea68-8b32-bc14-70bc999b6e79"
+horo: 1
 typography:
   partition: accounting
   bondDegree: 15
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - balance
-    - debit
-    - law
-    - path
-  matrix:
-    - accounting
-    - balance
-    - debit
-    - law
-    - path
-  backlinks:
-    - accounting
-    - balance
-    - debit
-    - law
-    - path
 signatures:
-  computationUuid: "b22bedc3-6273-8113-98bf-9289fc0b2fe3"
+  computationUuid: "ded5e66b-343d-86bf-a0c9-f64b7b9309af"
   stages:
     - stage: path
       stageUuid: "22979483-1855-8add-a7e4-09cabb74cf08"
@@ -57,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "8ab360ef-8457-88ee-b0bc-301d07724cd1"
     - stage: horo
-      stageUuid: "81edd3e3-fe44-8834-b677-0eed5ed92d83"
+      stageUuid: "05d195a5-198e-8f32-8014-1a42116f0870"
     - stage: seal
       stageUuid: "4dfd667b-cc8a-8066-91a4-5729749c508a"
     - stage: uuid
-      stageUuid: "462a0c19-9057-83b9-bd34-a214482c765c"
+      stageUuid: "8f54c6e0-afae-8d5f-890e-7c5a202d3a1c"
 version: 2
 ---
 # accounting/coa

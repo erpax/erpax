@@ -2,118 +2,39 @@
 name: position
 description: "Use when defining job positions, the rate ladder, or government/society role structure. Each position is a rung on the harmonic ladder; its job description is computed; its conditions are content-addressed on the uuid chain (blockchain); government and society share one ladder."
 atomPath: position
-coordinate: position · 8/crest · 99443006
-contentUuid: "6d1f4006-fe80-5967-b2c1-a6a0e3c3bb33"
-diamondUuid: "d567b6cf-f67b-814a-a2ac-1f9ee6023154"
-uuid: "99443006-f627-8c43-8f9a-cfa09bd3b820"
-horo: 8
-bonds:
-  in:
-    - allocation
-    - collections
-    - duality
-    - fractal
-    - hooks
-    - identity
-    - law
-    - merge
-    - named
-    - numbered
-    - responsibility
-    - self
-    - standard
-    - steering
-    - sufficient
-  out:
-    - allocation
-    - collections
-    - duality
-    - fractal
-    - hooks
-    - identity
-    - law
-    - merge
-    - named
-    - numbered
-    - responsibility
-    - self
-    - standard
-    - steering
-    - sufficient
+coordinate: "position · 2/share · e67eb7b0"
+contentUuid: "4b9334c5-3aa1-52c3-9083-2284dbe03a2f"
+diamondUuid: "3ea9b99a-18b3-8d5b-aec7-f65048d98a3e"
+uuid: "e67eb7b0-ad78-8e44-8ea2-2f0f9dd1f9f4"
+horo: 2
 typography:
   partition: position
-  bondDegree: 45
-  neighbors: []
+  bondDegree: 42
 standards:
   - ESCO
   - "ESCO / ISCO-08 occupational classification"
-  - "ISO 19011:2018 §6.4.6 — conditions are content-addressed, tamper-evident"
+  - "ISO-19011`"
   - SFIA
   - "SFIA 8 responsibility-levels (1..7) — the job-type / autonomy axis"
   - "UN COFOG (Classification of the Functions of Government) — the `function` code"
 bindings: []
-neighbors:
-  wikilink:
-    - allocation
-    - collections
-    - duality
-    - fractal
-    - hooks
-    - identity
-    - law
-    - merge
-    - self
-    - standard
-    - sufficient
-  matrix:
-    - allocation
-    - collections
-    - duality
-    - fractal
-    - hooks
-    - identity
-    - law
-    - merge
-    - named
-    - numbered
-    - responsibility
-    - self
-    - standard
-    - steering
-    - sufficient
-  backlinks:
-    - allocation
-    - collections
-    - duality
-    - fractal
-    - hooks
-    - identity
-    - law
-    - merge
-    - named
-    - numbered
-    - responsibility
-    - self
-    - standard
-    - steering
-    - sufficient
 signatures:
-  computationUuid: "2200a6ff-cf14-8b36-95b6-55fa62ca8f99"
+  computationUuid: "b7c2925c-3640-8cc1-b56e-3309572cf564"
   stages:
     - stage: path
       stageUuid: "a83cbf2d-83e1-8233-a8fb-88f785b66b9f"
     - stage: trinity
       stageUuid: "4dc850dd-9b02-8973-bc68-8859f122dd7e"
     - stage: boundary
-      stageUuid: "e9fa8237-7d40-8ab7-9492-f6849de89239"
+      stageUuid: "1fca314c-b970-83f3-be2a-fbda3f68415e"
     - stage: links
       stageUuid: "45e1d1a1-1750-827a-a65a-796ecaa6c366"
     - stage: horo
-      stageUuid: "d569958e-4b08-82cb-b90f-a853a211cc3a"
+      stageUuid: "ecd9443a-efca-8d1e-b2dc-2e070ffa6555"
     - stage: seal
-      stageUuid: "c934d697-3e40-8c18-be5d-da95956d6464"
+      stageUuid: "8fb4e8d2-01a7-8ca5-9e88-310a0b0234a7"
     - stage: uuid
-      stageUuid: "0bcc9105-af51-8487-8380-b3b7f08e99d9"
+      stageUuid: "d4467787-a624-8d23-80c5-19bd5c41f6e0"
 version: 2
 ---
 # positions — the harmonic ladder, filled, where government and society are one

@@ -1,63 +1,35 @@
 ---
 name: referenced
 description: "Use when reasoning about referenced as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/referenced
-coordinate: referenced · 5/round · 6dd61e58
-contentUuid: "52c3a6da-1b17-5be2-b361-bdfa08d98a19"
-diamondUuid: "e6edc5d0-1e5b-8835-b346-136c8df78e67"
-uuid: "6dd61e58-54a5-8822-bf78-6c13d9c18320"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/referenced"
+coordinate: "vocabulary/referenced · 7/descent · 55363c34"
+contentUuid: "7d57058a-410a-5b7d-8b73-3437c7fc3316"
+diamondUuid: "d8537ee8-3faa-8a06-a298-6533f301cf63"
+uuid: "55363c34-5b7d-8477-87ad-9dae33fbaaad"
+horo: 7
 typography:
-  partition: referenced
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "eea5457d-ebf6-8044-a2ba-cce61dbd21b2"
+  computationUuid: "fea170b1-44cb-8e03-b610-15596cd761a3"
   stages:
     - stage: path
-      stageUuid: "9797d3b8-d0f9-8fd4-8b02-14c8251eded4"
+      stageUuid: "21600572-979c-8070-937d-d69d39dffcc7"
     - stage: trinity
-      stageUuid: "c2c3cc07-79a6-8295-bc41-b46977af8dbc"
+      stageUuid: "ae6da865-7bfd-8b66-b3c7-0e378cc92897"
     - stage: boundary
-      stageUuid: "1bc40c6e-46f8-802a-ba3d-7774e32d0015"
+      stageUuid: "9d8060d4-573e-8abd-b504-f67d01edcea4"
     - stage: links
-      stageUuid: "10533cb0-8235-8458-97dd-cb3bf79ca5a5"
+      stageUuid: "0c5a578f-5cde-8656-a0fb-940bcf5cfa68"
     - stage: horo
-      stageUuid: "bb5f0c8d-256b-886e-ab28-720602461bea"
+      stageUuid: "0975935e-e113-812d-84e1-949241375ba8"
     - stage: seal
-      stageUuid: "dae797d3-1c06-86d1-aaca-801967e81c4f"
+      stageUuid: "fc66bc13-856a-85ce-b615-639832aba7b1"
     - stage: uuid
-      stageUuid: "47f0955b-77bf-82e2-b939-099e81ca80a0"
+      stageUuid: "55ef1b4b-a8fb-8680-a29a-e6482a4d331b"
 version: 2
 ---
 # referenced

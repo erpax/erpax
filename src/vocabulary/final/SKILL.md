@@ -1,63 +1,35 @@
 ---
 name: final
 description: "Use when reasoning about final as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/final
-coordinate: final · 2/share · a99d5b3b
-contentUuid: "38ff3328-a69f-5984-afc4-afc37601a506"
-diamondUuid: "c00b4c2a-3026-88be-a59a-c34664287b85"
-uuid: "a99d5b3b-46e0-80c8-8430-d09b7b99bb75"
+atomPath: "vocabulary/final"
+coordinate: "vocabulary/final · 2/share · feb2ac54"
+contentUuid: "4e89f3af-556a-5f29-8c74-b4452403cddf"
+diamondUuid: "e20f437a-084f-8cb4-a471-fbb34a445350"
+uuid: "feb2ac54-4573-8475-a016-52c6871678d3"
 horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: final
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "447fc123-3642-8b91-a6ab-7c1ce3c5a206"
+  computationUuid: "caec072a-04be-8142-ae79-41f6eb4f3e5e"
   stages:
     - stage: path
-      stageUuid: "c18f6356-6c86-8842-89b8-0c09c55949f7"
+      stageUuid: "fb236ac2-3939-81ae-94c6-b02391ba4990"
     - stage: trinity
-      stageUuid: "b2109d0f-fa6c-8386-a666-033e055ae972"
+      stageUuid: "ae43dcda-4842-8782-afb2-4ad4fc2e5833"
     - stage: boundary
-      stageUuid: "fcf1b685-8049-882b-9584-ea4a8b2cdaa7"
+      stageUuid: "c15972d7-cb37-8299-9de6-9e6703de54a2"
     - stage: links
-      stageUuid: "1623c3b3-463e-854c-889f-9b2cade77552"
+      stageUuid: "70a55580-49eb-8f2e-8622-455b89b792ea"
     - stage: horo
-      stageUuid: "554eb5fb-b975-8e74-9bfe-302a1f16fb0a"
+      stageUuid: "84042d66-0b68-8b13-8b05-f5e297d93908"
     - stage: seal
-      stageUuid: "a53c1126-6c29-87c3-aa9c-e615215e40bd"
+      stageUuid: "b8a1a2f4-1237-819c-a26d-08f873e8244d"
     - stage: uuid
-      stageUuid: "782b8402-0a37-87bb-b5bd-9e66d8effca2"
+      stageUuid: "46c8bc66-04b8-8a62-979e-f3dd9dc7c0f3"
 version: 2
 ---
 # final

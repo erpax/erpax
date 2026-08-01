@@ -1,68 +1,35 @@
 ---
 name: clinical
 description: "Use when reasoning about clinical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/clinical
-coordinate: clinical · 8/crest · 20804f45
-contentUuid: "586255a1-ed5c-50b5-9792-218b4e55f7b5"
-diamondUuid: "8f8e1b35-2c13-8124-94af-6b258f04bbd4"
-uuid: "20804f45-b9ec-835b-a72b-5e88e04b7124"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - pharmacology
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - pharmacology
-    - sti
+atomPath: "vocabulary/clinical"
+coordinate: "vocabulary/clinical · 5/round · 6c0933f1"
+contentUuid: "f1d448b3-26b5-5c13-9fa4-091188de0132"
+diamondUuid: "26be1510-4b97-824e-addb-087b2f012145"
+uuid: "6c0933f1-a250-8de5-85b7-07ceda53c7f1"
+horo: 5
 typography:
-  partition: clinical
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - pharmacology
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - pharmacology
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - pharmacology
-    - sti
 signatures:
-  computationUuid: "1762e53c-8520-88eb-8c62-830999344f5f"
+  computationUuid: "874933a8-1d92-871e-90df-154a7bb1c8da"
   stages:
     - stage: path
-      stageUuid: "2ae976ba-2746-83ac-882b-0a626912d2d4"
+      stageUuid: "41fce1b1-da2e-88cc-86b5-d995263a528e"
     - stage: trinity
-      stageUuid: "710fd5d6-274d-863a-82a0-3510d4ed08f6"
+      stageUuid: "231daef5-d385-8a3e-b0a0-c1512e703579"
     - stage: boundary
-      stageUuid: "2be867d0-19f9-88af-a6eb-41ffceb805dd"
+      stageUuid: "7c994960-0ab0-8342-86ef-a27b6f912f30"
     - stage: links
-      stageUuid: "e6aafd0b-2d9c-8750-9701-ff208382d6b8"
+      stageUuid: "756f2149-d348-8f31-ab6f-2dc1af4a404d"
     - stage: horo
-      stageUuid: "07ef129e-bbfa-83e5-a5fa-0ed1d6b42c1e"
+      stageUuid: "c2cc12fd-9eb4-8ee1-a739-21cfdc5fdc00"
     - stage: seal
-      stageUuid: "321c90f8-280b-84bf-bb95-7411c9ebe42f"
+      stageUuid: "7fad3405-1e19-8fd7-83d4-79b2fadbd750"
     - stage: uuid
-      stageUuid: "83d7d137-8961-8ce1-838f-b9d4f17c6414"
+      stageUuid: "eb20ec8c-2fbb-8748-ac6c-8cb648358d43"
 version: 2
 ---
 # clinical

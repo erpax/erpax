@@ -1,53 +1,35 @@
 ---
 name: depth
 description: Use when reasoning about depth — The depth of the item.
-atomPath: vocabulary/depth
-coordinate: depth · 1/base · 8f0182af
-contentUuid: "ac5cf8c2-94e2-573b-9539-069a93e1efa0"
-diamondUuid: "ca4d016f-e20b-859e-bfc2-519c350221ef"
-uuid: "8f0182af-74e7-8a06-b152-753ddcf3ec54"
-horo: 1
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/depth"
+coordinate: "vocabulary/depth · 4/weave · 4743e0b4"
+contentUuid: "76fbdbbe-eef3-58bc-83dd-3d89246a8e8b"
+diamondUuid: "e78ff60f-91b0-878f-893d-b34b085b0e3d"
+uuid: "4743e0b4-5da1-8cbf-b1ae-b851d9992530"
+horo: 4
 typography:
-  partition: depth
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "fbc630da-36cf-8f85-8fc2-c07aa281b73c"
+  computationUuid: "8d453736-deb6-8a45-999e-9a33edffcf07"
   stages:
     - stage: path
-      stageUuid: "6121cebd-6f35-850e-b04f-e7e6a3b298fc"
+      stageUuid: "e54b5650-62eb-8827-b960-c27636551ead"
     - stage: trinity
-      stageUuid: "52c05675-820e-8bd2-ada1-f9a1013ba7c7"
+      stageUuid: "28619f67-52bf-8c0d-bd36-4bc17f40de84"
     - stage: boundary
-      stageUuid: "6f70891f-44ff-8bb5-aa9c-5954f74e87d0"
+      stageUuid: "d65b0eda-360f-8bbf-8bb8-bd8f1ad91aee"
     - stage: links
-      stageUuid: "78106d51-b735-89ff-a43f-f2ea37c1c932"
+      stageUuid: "f172c2cd-e92e-8385-816d-6194e5a40d18"
     - stage: horo
-      stageUuid: "c03c4f71-1679-8f79-a773-d1b58ecdefa7"
+      stageUuid: "194506c3-1f39-8837-b4b4-f3c73f766078"
     - stage: seal
-      stageUuid: "00672e09-591b-869c-afc6-2f874ce31f2e"
+      stageUuid: "893c29c7-86f8-8fda-bd5b-be659e463da5"
     - stage: uuid
-      stageUuid: "340b7a89-5e14-89b4-91bd-4e902590c73b"
+      stageUuid: "7e8c8e70-36e4-8852-a503-c10de19994de"
 version: 2
 ---
 # depth

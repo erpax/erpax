@@ -1,68 +1,35 @@
 ---
 name: pub
 description: "Use when reasoning about pub as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/pub
-coordinate: pub · 1/base · 22d84526
-contentUuid: "d71f51be-34fb-53b2-acd3-f69b471ff592"
-diamondUuid: "fff10b20-aa00-81f8-ba05-f0391c576f67"
-uuid: "22d84526-6721-86b5-9759-19cd6e405b6b"
+atomPath: "vocabulary/pub"
+coordinate: "vocabulary/pub · 1/base · 8278eaae"
+contentUuid: "fbd6be2c-685b-5be2-9777-eb11d512e989"
+diamondUuid: "d9580ea0-d678-8aaa-8bbe-d37b999ba665"
+uuid: "8278eaae-0d4c-883c-9fdf-7accf5a8b24a"
 horo: 1
-bonds:
-  in:
-    - bar
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - bar
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: pub
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - bar
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - bar
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - bar
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "0ea8ffa4-9ec3-891e-9e4c-dab3cdd773ec"
+  computationUuid: "8ae6ec9b-53d4-83fd-b22a-a537e96060e4"
   stages:
     - stage: path
-      stageUuid: "cb88cfbb-4f45-8827-8162-948a83065165"
+      stageUuid: "824fb4c4-ebc2-8187-8fd7-6e10249dbcd3"
     - stage: trinity
-      stageUuid: "cad85994-d13f-83f0-85be-b27b59ee17d7"
+      stageUuid: "5aa6be1e-2122-8580-b400-51d9bcebe8f9"
     - stage: boundary
-      stageUuid: "734d27f4-3594-8626-a613-3861cba2c0b6"
+      stageUuid: "5c7c9396-f5a8-8a32-8f67-d3416bd71407"
     - stage: links
-      stageUuid: "33825831-e757-8998-9479-8c9500d666ef"
+      stageUuid: "8a382a88-810e-87c6-94e4-5a4e7dbddc0e"
     - stage: horo
-      stageUuid: "8e45bcca-1af1-8b30-8d4b-549ae39b8e69"
+      stageUuid: "ea167993-e788-8da1-a2b5-9255a3a97cea"
     - stage: seal
-      stageUuid: "ab194ca6-2a1c-8319-9b19-f5391d7eb39d"
+      stageUuid: "e9e50f36-500b-8523-9653-457f4e37075a"
     - stage: uuid
-      stageUuid: "e8b214ef-a9ea-8b5d-bbb1-1841a9533ae4"
+      stageUuid: "ac479009-3322-85f6-93e1-270da7b8ee4e"
 version: 2
 ---
 # pub

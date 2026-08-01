@@ -1,58 +1,35 @@
 ---
 name: aquarium
 description: Use when reasoning about aquarium — Aquarium.
-atomPath: vocabulary/aquarium
-coordinate: aquarium · 2/share · 11769595
-contentUuid: "54817832-706f-569f-a771-10b01031830d"
-diamondUuid: "5cf5648a-0196-8036-bc5d-bd20c5b8873f"
-uuid: "11769595-6b79-8ade-8f16-fcaaab7eac6c"
-horo: 2
-bonds:
-  in:
-    - law
-    - place
-    - thing
-  out:
-    - law
-    - place
-    - thing
+atomPath: "vocabulary/aquarium"
+coordinate: "vocabulary/aquarium · 4/weave · b6026a5c"
+contentUuid: "b383e24f-96eb-5200-9dc8-4c022c55867a"
+diamondUuid: "538064f3-4e0a-855c-a49e-154b583e78f8"
+uuid: "b6026a5c-f89b-88a8-87fc-ee172ca3c137"
+horo: 4
 typography:
-  partition: aquarium
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - place
-    - thing
-  matrix:
-    - law
-    - place
-    - thing
-  backlinks:
-    - law
-    - place
-    - thing
 signatures:
-  computationUuid: "7c8280b5-cc39-8ee5-9e82-dc36675ae2c7"
+  computationUuid: "ae21fe31-3d2f-8b06-91a8-a66f13a8f3f6"
   stages:
     - stage: path
-      stageUuid: "1caac404-27a3-8779-ba87-1c4d97f6ed31"
+      stageUuid: "03dceee0-dc7c-8e50-bc13-14ec3b263b49"
     - stage: trinity
-      stageUuid: "03761ff5-c2b5-8990-b4a1-40c8da0c4538"
+      stageUuid: "4c62d428-0a75-8924-8ee1-1e28a3bdced5"
     - stage: boundary
-      stageUuid: "2b97f62e-dc55-8310-ad70-a51e4ed0d2d8"
+      stageUuid: "b2accde1-029a-850e-8c8e-fab16e1883fb"
     - stage: links
-      stageUuid: "02e609da-1c30-8fd1-94eb-48761ba1e163"
+      stageUuid: "4c9582b0-e667-89f3-a0e7-e6f444d05e93"
     - stage: horo
-      stageUuid: "daee4cb0-e7b7-8256-bb63-fdf6dcecf62e"
+      stageUuid: "5cc04105-3d88-8274-ab0b-96da3d3fc821"
     - stage: seal
-      stageUuid: "e2fc390e-0249-8bf5-bbcb-1ad2a2394252"
+      stageUuid: "f48db640-8b32-81c1-855f-35320a8e0dbd"
     - stage: uuid
-      stageUuid: "53e066ab-b32a-8d97-8a11-cc92808c1c78"
+      stageUuid: "ddf8cfdd-a0fd-844f-b9ed-3ade4b65c3cf"
 version: 2
 ---
 # aquarium

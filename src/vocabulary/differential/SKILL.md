@@ -1,68 +1,35 @@
 ---
 name: differential
 description: "Use when reasoning about differential — A schema.org component word, collided out of schema.org compounds — fused from differentialDiagnosis (sti · collapse · merge)."
-atomPath: vocabulary/differential
-coordinate: differential · 8/crest · b5fc7d30
-contentUuid: "b763c70f-e203-5ac6-86f5-4f20e51964ff"
-diamondUuid: "d8be8030-786c-8e65-9773-a68a3f8af91b"
-uuid: "b5fc7d30-cd28-8109-96b8-2782620f0345"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - diagnosis
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - diagnosis
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/differential"
+coordinate: "vocabulary/differential · 2/share · 27a24ad8"
+contentUuid: "eaae911a-53f1-50ad-95b1-7a67e11ca0b6"
+diamondUuid: "47f77c86-25c7-8042-ad3d-baeeee809189"
+uuid: "27a24ad8-6ce0-821b-b1de-c9e8fb038bca"
+horo: 2
 typography:
-  partition: differential
-  bondDegree: 16
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 18
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - diagnosis
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - diagnosis
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - diagnosis
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "84e44ab7-42e2-8471-8328-c79635280bd7"
+  computationUuid: "ffef6ce5-450a-8bac-b046-ee09410f872d"
   stages:
     - stage: path
-      stageUuid: "544cafad-e981-8ad1-b7f4-4a3babf9458a"
+      stageUuid: "9503062c-1563-8b6d-817e-de05a6a58394"
     - stage: trinity
-      stageUuid: "9524c6a6-bc67-899b-ac77-a35dc34777e4"
+      stageUuid: "9db29d69-a725-8c09-803d-45535cd2197a"
     - stage: boundary
-      stageUuid: "731b1170-10c1-88f0-8b33-6820cb03e6a7"
+      stageUuid: "bb8bfe30-a592-8676-a560-2c61b6fc92e7"
     - stage: links
-      stageUuid: "985236fb-6c77-88f4-b4e6-4c871d40abbc"
+      stageUuid: "d7c03922-5047-87ac-a1bd-6f32b9a17ecd"
     - stage: horo
-      stageUuid: "a9e576ed-3b39-892f-9cf8-a1ebeec43dc7"
+      stageUuid: "213b18bb-f44c-8613-83f0-37cb675874df"
     - stage: seal
-      stageUuid: "3e23e3b1-5307-89f4-bd0f-2021ef502254"
+      stageUuid: "4bf8c789-7a4f-8bc0-a9c7-9dff7003965c"
     - stage: uuid
-      stageUuid: "e21d2b5d-f545-8bcf-8af4-200244bc9791"
+      stageUuid: "c8343d35-c978-80a7-858a-d0dd3938b290"
 version: 2
 ---
 # differential

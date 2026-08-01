@@ -2,142 +2,18 @@
 name: device
 description: "Use when reasoning about clinical hardware — the medical device registry where analog physiology collapses at the edge into lawful readings, LOINC-mapped observations, and EMR analog replay."
 atomPath: "medical/device"
-coordinate: "medical/device · 2/share · 7a09f80a"
-contentUuid: "5426af03-a959-56c0-96bc-5998f8a01824"
-diamondUuid: "e94cdf0e-f48c-8bfa-9853-0e654e65042b"
-uuid: "7a09f80a-ffef-874f-be37-6fbaef82d500"
-horo: 2
-bonds:
-  in:
-    - analog
-    - anesthesia
-    - available
-    - bed
-    - biometric
-    - cassette
-    - device
-    - emr
-    - health
-    - imaging
-    - law
-    - medical
-    - merge
-    - monitor
-    - mri
-    - pet
-    - purpose
-    - readings
-    - stack
-    - ultrasound
-    - uses
-    - vital
-    - watch
-    - xray
-  out:
-    - analog
-    - anesthesia
-    - available
-    - bed
-    - biometric
-    - cassette
-    - device
-    - emr
-    - health
-    - imaging
-    - law
-    - medical
-    - merge
-    - monitor
-    - mri
-    - pet
-    - purpose
-    - readings
-    - stack
-    - ultrasound
-    - uses
-    - vital
-    - watch
-    - xray
+coordinate: "medical/device · 1/base · 19c488c8"
+contentUuid: "5469e3b5-83e9-54dc-ac7c-535f102732c3"
+diamondUuid: "16da984b-bfbc-8ca6-8967-43409bd7fad1"
+uuid: "19c488c8-3caa-8827-9660-da6e2b0af20b"
+horo: 1
 typography:
   partition: medical
   bondDegree: 97
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - analog
-    - anesthesia
-    - bed
-    - biometric
-    - cassette
-    - device
-    - emr
-    - health
-    - imaging
-    - law
-    - medical
-    - merge
-    - monitor
-    - mri
-    - pet
-    - readings
-    - ultrasound
-    - vital
-    - watch
-    - xray
-  matrix:
-    - analog
-    - anesthesia
-    - available
-    - bed
-    - biometric
-    - cassette
-    - device
-    - emr
-    - health
-    - imaging
-    - law
-    - medical
-    - merge
-    - monitor
-    - mri
-    - pet
-    - purpose
-    - readings
-    - stack
-    - ultrasound
-    - uses
-    - vital
-    - watch
-    - xray
-  backlinks:
-    - analog
-    - anesthesia
-    - available
-    - bed
-    - biometric
-    - cassette
-    - device
-    - emr
-    - health
-    - imaging
-    - law
-    - medical
-    - merge
-    - monitor
-    - mri
-    - pet
-    - purpose
-    - readings
-    - stack
-    - ultrasound
-    - uses
-    - vital
-    - watch
-    - xray
 signatures:
-  computationUuid: "810bc9fe-5e0d-8720-b272-dcc19ffd48dd"
+  computationUuid: "39f4a85d-0322-883f-9d4d-25bb4528a39d"
   stages:
     - stage: path
       stageUuid: "9d518572-ca2a-82b1-9799-fd3a5ebde98d"
@@ -146,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "12606c43-912c-8d88-bd6d-e4c79c26a043"
     - stage: links
-      stageUuid: "02a446a5-27ad-89c3-b877-d637b5ff647e"
+      stageUuid: "616fcf3f-bcd4-80f5-9d8b-6ded3725ed14"
     - stage: horo
-      stageUuid: "bea2a12d-baf7-847b-9618-e6b8bcc2c6cc"
+      stageUuid: "bc51fad8-de56-8543-9fc5-5f543c4e22b6"
     - stage: seal
       stageUuid: "bf5a17b3-b747-8b89-847d-822bb7814f65"
     - stage: uuid
-      stageUuid: "2dcc34d3-b83c-8dfa-a3c7-37aadad67a74"
+      stageUuid: "941e6de5-ff60-8606-8a41-451e82af584f"
 version: 2
 ---
 # medical/device — clinical hardware registry

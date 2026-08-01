@@ -1,68 +1,35 @@
 ---
 name: clincal
 description: "Use when reasoning about clincal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/clincal
-coordinate: clincal · 8/crest · 63db1d4b
-contentUuid: "60858c6d-6b40-57f4-9edc-3e9d71e82cf1"
-diamondUuid: "46a2976c-499f-8984-a380-fd8d892cee6d"
-uuid: "63db1d4b-0212-85af-b4e5-cbf4b4e47eef"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - pharmacology
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - pharmacology
-    - sti
+atomPath: "vocabulary/clincal"
+coordinate: "vocabulary/clincal · 4/weave · a28e618f"
+contentUuid: "b9d68a7c-af83-5de8-8620-c405ab8b117c"
+diamondUuid: "b737645b-4299-856a-b6e1-1aa374a9f110"
+uuid: "a28e618f-137d-8522-9f5f-bbeff2f1660c"
+horo: 4
 typography:
-  partition: clincal
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - pharmacology
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - pharmacology
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - pharmacology
-    - sti
 signatures:
-  computationUuid: "9716213b-bfb2-839a-9838-77e38a978a90"
+  computationUuid: "30b8a823-eae1-8735-bd2d-5d7c3a86274c"
   stages:
     - stage: path
-      stageUuid: "eceaaaf5-cb76-8263-8867-07d57bef1429"
+      stageUuid: "911d8e8e-f9c3-872e-9527-841b7a62a7ed"
     - stage: trinity
-      stageUuid: "5027c172-fa66-8233-b81a-e35b4825a14c"
+      stageUuid: "7b9940ce-f1c6-8f19-af5b-9aaa10b20a64"
     - stage: boundary
-      stageUuid: "f8cc9713-c485-8ca7-a5c7-fe29a55271e2"
+      stageUuid: "fb415122-7f9a-8c4b-bf79-62488d5b93b6"
     - stage: links
-      stageUuid: "337b3267-5c43-8f27-a1eb-7cecc0cb8fd7"
+      stageUuid: "bc216452-664d-8045-a4c4-85d9849a0837"
     - stage: horo
-      stageUuid: "e593bb32-67a3-856f-91c5-7894bc5ec09c"
+      stageUuid: "9264a8c0-1244-8ffc-ac8c-7e670dab94fd"
     - stage: seal
-      stageUuid: "8c522f21-f099-8d2b-b7b0-d3296ecc9208"
+      stageUuid: "31c2ba1f-ccca-8a84-a374-1f7f793b4b2a"
     - stage: uuid
-      stageUuid: "7f34f50c-4ee5-894e-b07b-ef70dc297d7f"
+      stageUuid: "6d2b46f1-e77d-858d-9900-f2ee3430714b"
 version: 2
 ---
 # clincal

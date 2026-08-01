@@ -2,30 +2,14 @@
 name: files
 description: "Use when documenting intercompany transfer pricing per OECD BEPS Action 13 — Master File, Local File, and Country-by-Country Report per jurisdiction per fiscal year — TP method, CbCR aggregates, Pillar Two applicability, filing deadlines and status. The BEPS Action 13 TP documentation register."
 atomPath: "legal/entities/transfer/pricing/files"
-coordinate: "legal/entities/transfer/pricing/files · 7/descent · a6c87b4d"
-contentUuid: "e7b6f6fe-dfd6-5c22-9231-e7a85c18e4ae"
-diamondUuid: "0977aaec-66fc-83ad-bd64-3230fb31d209"
-uuid: "a6c87b4d-15f2-8fe0-883f-13c77168f31f"
-horo: 7
-bonds:
-  in:
-    - accounting
-    - entities
-    - identity
-    - proof
-    - standard
-    - transaction
-  out:
-    - accounting
-    - entities
-    - identity
-    - proof
-    - standard
-    - transaction
+coordinate: "legal/entities/transfer/pricing/files · 1/base · af825536"
+contentUuid: "c37e1c55-f98b-5df9-a6e0-992a9e3fc230"
+diamondUuid: "d70580bd-2761-8d44-bcfc-1f3ddaa76865"
+uuid: "af825536-ba9b-8211-929f-52f807331b46"
+horo: 1
 typography:
   partition: legal
   bondDegree: 18
-  neighbors: []
 standards:
   - "EU 2016/881 administrative-cooperation-tax"
   - "EU DAC-4 country-by-country-reporting"
@@ -38,29 +22,8 @@ standards:
   - "OECD TPG 2022 transfer-pricing-guidelines"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - identity
-    - proof
-    - standard
-    - transaction
-  matrix:
-    - accounting
-    - entities
-    - identity
-    - proof
-    - standard
-    - transaction
-  backlinks:
-    - accounting
-    - entities
-    - identity
-    - proof
-    - standard
-    - transaction
 signatures:
-  computationUuid: "750bfeaf-5585-8a60-84c8-a10ef309e703"
+  computationUuid: "be3ee4fa-c8d6-8e6e-96da-5439562b1afe"
   stages:
     - stage: path
       stageUuid: "56b105eb-b9db-83ca-86e1-6d6b4038f9bc"
@@ -71,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "6d42e2cb-64c3-8ce0-92f9-7a63cfba443b"
     - stage: horo
-      stageUuid: "5ac6bc6b-738f-83aa-a15e-1496f999c2d0"
+      stageUuid: "b5ab61be-b0cd-85d9-8835-5ff537dcf650"
     - stage: seal
       stageUuid: "7334f663-3215-8e0e-8982-e3a326d600e4"
     - stage: uuid
-      stageUuid: "3e8c7c71-f720-8b03-91ec-0652832e8ece"
+      stageUuid: "73979f57-acb8-81c4-9de0-d19df077d298"
 version: 2
 ---
 # transfer-pricing-files

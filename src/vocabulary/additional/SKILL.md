@@ -1,93 +1,35 @@
 ---
 name: additional
 description: "Use when reasoning about additional as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/additional
-coordinate: additional · 7/descent · 85f826cc
-contentUuid: "e6198c02-78b0-584a-88ba-e67d1a93624f"
-diamondUuid: "9641e905-8f7a-801e-b24d-d2b8b5b73981"
-uuid: "85f826cc-6c52-804e-abf8-67c93924aabd"
+atomPath: "vocabulary/additional"
+coordinate: "vocabulary/additional · 7/descent · 5771ff86"
+contentUuid: "a5118835-e1c8-5746-aaa5-c58f4ebb4636"
+diamondUuid: "581eda3d-21d1-8b4a-b9be-717fe7b602a1"
+uuid: "5771ff86-67e3-8dd8-8278-5e3a694af4bd"
 horo: 7
-bonds:
-  in:
-    - collapse
-    - guests
-    - law
-    - merge
-    - name
-    - number
-    - property
-    - sti
-    - type
-    - variable
-  out:
-    - collapse
-    - guests
-    - law
-    - merge
-    - name
-    - number
-    - property
-    - sti
-    - type
-    - variable
 typography:
-  partition: additional
+  partition: vocabulary
   bondDegree: 33
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - guests
-    - law
-    - merge
-    - name
-    - number
-    - property
-    - sti
-    - type
-    - variable
-  matrix:
-    - collapse
-    - guests
-    - law
-    - merge
-    - name
-    - number
-    - property
-    - sti
-    - type
-    - variable
-  backlinks:
-    - collapse
-    - guests
-    - law
-    - merge
-    - name
-    - number
-    - property
-    - sti
-    - type
-    - variable
 signatures:
-  computationUuid: "c0c5ed2f-ddd6-8373-a9ef-f59b40a89fa8"
+  computationUuid: "49f5f873-9836-8e96-a2b9-72a8d9ffbaec"
   stages:
     - stage: path
-      stageUuid: "d4216064-4b32-89df-9faf-cd0713ba9ee6"
+      stageUuid: "64e38eba-1b54-892f-863c-a6105f7033b7"
     - stage: trinity
-      stageUuid: "b2950120-f219-88d1-976e-340634e50ed1"
+      stageUuid: "d5e245e2-5a9a-8979-b44e-c8bae87a6bda"
     - stage: boundary
-      stageUuid: "0e62af09-74ba-84ca-a18d-9e440605e7c2"
+      stageUuid: "990ae675-b5c8-8824-b45c-ae61eaf31afa"
     - stage: links
-      stageUuid: "bd7ac700-74bd-81ab-aeed-9010f85e7330"
+      stageUuid: "a60240d2-d99b-85c9-b139-90f98228c31f"
     - stage: horo
-      stageUuid: "965e20f1-3fa6-812d-b48f-f130a835f408"
+      stageUuid: "fb4eba23-3599-89d8-81e8-1dc6a8618b06"
     - stage: seal
-      stageUuid: "e25d8d23-9d59-86ae-96ff-542d52fbe41a"
+      stageUuid: "a098450c-f0bc-8cf3-88ba-9ebf61840127"
     - stage: uuid
-      stageUuid: "71a73c7f-a52c-8c89-9692-3487a20bbbd2"
+      stageUuid: "ea80f05d-42d0-8c78-b21e-3ccef1e729d3"
 version: 2
 ---
 # additional

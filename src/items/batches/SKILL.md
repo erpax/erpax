@@ -2,35 +2,16 @@
 name: batches
 description: "Use when creating or tracing a lot/batch of material or product — GS1 AI(10) lot number, manufacture/expiry dates, quality status, parentBatches genealogy for EU 178/2002 one-step-back recall, pharma/automotive traceability. The batches collection."
 atomPath: "items/batches"
-coordinate: "items/batches · 8/crest · 07da66a6"
-contentUuid: "29390216-44d0-5112-9751-3575dc9767ee"
-diamondUuid: "cd7f561a-011b-863d-8e95-4c2ccb1c1834"
-uuid: "07da66a6-a183-86ee-914b-b6b1e2677886"
-horo: 8
-bonds:
-  in:
-    - accounting
-    - collections
-    - fields
-    - inspections
-    - items
-    - law
-    - standard
-  out:
-    - accounting
-    - collections
-    - fields
-    - inspections
-    - items
-    - law
-    - standard
+coordinate: "items/batches · 1/base · 8ff81859"
+contentUuid: "2095f0ae-f7fb-5327-a752-0bd6031ffe57"
+diamondUuid: "20e387ad-15dd-8988-9a7a-0ef3fc494736"
+uuid: "8ff81859-068f-86a0-a987-03579454a091"
+horo: 1
 typography:
   partition: items
   bondDegree: 21
-  neighbors: []
 standards:
   - "EU Regulation 178/2002 Art 18 one-step-back-one-step-forward"
-  - "EU-2005/29"
   - "FDA 21 CFR 211.122 211.130 pharma-lot-control"
   - "GS1 General Specifications AI(10) batch/lot AI(17) expiry AI(11) production-date"
   - "IATF 16949:2016 §8.5.2.1 automotive-traceability"
@@ -45,32 +26,8 @@ standards:
   - "SOX §404 internal-controls traceability-control TOM-TRACE-01"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - collections
-    - fields
-    - inspections
-    - law
-    - standard
-  matrix:
-    - accounting
-    - collections
-    - fields
-    - inspections
-    - items
-    - law
-    - standard
-  backlinks:
-    - accounting
-    - collections
-    - fields
-    - inspections
-    - items
-    - law
-    - standard
 signatures:
-  computationUuid: "2b34cc7a-bd41-8857-8cda-bad1647a1345"
+  computationUuid: "d3fa57d4-911e-8a6d-a40d-35aebcd2f745"
   stages:
     - stage: path
       stageUuid: "aefe3c34-f084-86b3-ad32-498d7d774cbb"
@@ -81,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "c3d6a8a3-bfd3-865c-a91f-81e7620b1a9a"
     - stage: horo
-      stageUuid: "9d52cfed-7172-8e94-b1b3-e1961b164db4"
+      stageUuid: "f58737de-4598-8cda-bad9-06c8380f7294"
     - stage: seal
       stageUuid: "88ca933f-041e-8dd1-aaae-15e03c9dc0c3"
     - stage: uuid
-      stageUuid: "a914a750-5e34-853f-acba-d43370bac45c"
+      stageUuid: "3f633132-2a51-8093-a5a4-12e17bf4cac1"
 version: 2
 ---
 # batches

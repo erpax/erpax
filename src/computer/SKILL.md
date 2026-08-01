@@ -2,129 +2,19 @@
 name: computer
 description: "Use when reasoning about computer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: computer
-coordinate: "computer · 1/base · 84e44c87"
-contentUuid: "5a930dfc-f238-5602-81c0-8a5ef309723c"
-diamondUuid: "0a2b7c03-aafd-8e59-92de-12f5235ad74f"
-uuid: "84e44c87-5d68-8a8c-9b2f-c25c6c002b9d"
-horo: 1
-bonds:
-  in:
-    - algorithm
-    - collapse
-    - complexity
-    - component
-    - finite
-    - folder
-    - graph
-    - hardware
-    - language
-    - law
-    - memory
-    - merge
-    - network
-    - processor
-    - quantum
-    - queue
-    - screen
-    - software
-    - stack
-    - sti
-    - storage
-    - store
-  out:
-    - algorithm
-    - collapse
-    - complexity
-    - component
-    - finite
-    - folder
-    - graph
-    - hardware
-    - language
-    - law
-    - memory
-    - merge
-    - network
-    - processor
-    - quantum
-    - queue
-    - screen
-    - software
-    - stack
-    - sti
-    - storage
-    - store
+coordinate: "computer · 8/crest · 6fa3dcee"
+contentUuid: "7f4d535a-4919-521c-8197-8f8622936626"
+diamondUuid: "607df6ee-07a8-89f4-afae-004bbb61e13a"
+uuid: "6fa3dcee-c7f8-8f0a-9435-a205d17fe623"
+horo: 8
 typography:
   partition: computer
   bondDegree: 98
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - component
-    - hardware
-    - language
-    - law
-    - memory
-    - merge
-    - network
-    - processor
-    - screen
-    - software
-    - sti
-    - storage
-    - store
-  matrix:
-    - algorithm
-    - collapse
-    - complexity
-    - component
-    - finite
-    - folder
-    - graph
-    - hardware
-    - language
-    - law
-    - memory
-    - merge
-    - network
-    - processor
-    - quantum
-    - queue
-    - screen
-    - software
-    - stack
-    - sti
-    - storage
-    - store
-  backlinks:
-    - algorithm
-    - collapse
-    - complexity
-    - component
-    - finite
-    - folder
-    - graph
-    - hardware
-    - language
-    - law
-    - memory
-    - merge
-    - network
-    - processor
-    - quantum
-    - queue
-    - screen
-    - software
-    - stack
-    - sti
-    - storage
-    - store
 signatures:
-  computationUuid: "35cc9505-2e81-8a07-87b6-1328660b1475"
+  computationUuid: "281b47d0-f920-8e33-aa1d-c361463872e1"
   stages:
     - stage: path
       stageUuid: "99b5b1e3-04ec-8a6c-9e05-ce3772b23a0c"
@@ -135,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9c17304a-cae2-82f4-9068-21f6aab04831"
     - stage: horo
-      stageUuid: "9bdc9891-b390-825b-b7e9-036ae4f919bb"
+      stageUuid: "01b6711c-0072-81d2-b6ff-29ef4a9e3375"
     - stage: seal
       stageUuid: "ee2541f7-c8d9-8680-8067-b36807c6a489"
     - stage: uuid
-      stageUuid: "47818781-4997-8a27-9357-77e0a9d76ada"
+      stageUuid: "340559c9-70f2-89fd-9ea1-4454c76b1667"
 version: 2
 ---
 # computer — the machine and its parts

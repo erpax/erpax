@@ -1,73 +1,35 @@
 ---
 name: modulation
 description: "Use when reasoning about modulation — A schema.org component word, collided out of schema.org compounds — fused from broadcastSignalModulation (sti · collapse · merge)."
-atomPath: vocabulary/modulation
-coordinate: modulation · 5/round · e0fe0eb4
-contentUuid: "21eeccc4-1d8e-51fc-9b3d-6df6a8e4990e"
-diamondUuid: "46a199ad-bbdc-801f-ad0c-7ee2cd46db50"
-uuid: "e0fe0eb4-c75e-8c94-941c-828d4cf40e2f"
-horo: 5
-bonds:
-  in:
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - signal
-    - sti
-  out:
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - signal
-    - sti
+atomPath: "vocabulary/modulation"
+coordinate: "vocabulary/modulation · 2/share · 5ab81e92"
+contentUuid: "c7e0e063-3315-5320-98fa-1c5fa951a48b"
+diamondUuid: "f21ad084-145e-87b4-9f8f-3f9c77ade483"
+uuid: "5ab81e92-eb70-87fb-8d9f-61da7b7ec351"
+horo: 2
 typography:
-  partition: modulation
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - signal
-    - sti
-  matrix:
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - signal
-    - sti
-  backlinks:
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - signal
-    - sti
 signatures:
-  computationUuid: "ebe3cf1a-51af-83a8-8893-a6bf318f8a5b"
+  computationUuid: "91e000cc-ad1f-84a4-8f22-7ba21e0503ab"
   stages:
     - stage: path
-      stageUuid: "73a6d58c-fdaa-8051-be16-670bd718b260"
+      stageUuid: "48e0eccf-87b6-8e4b-b5a3-c325cd7c318c"
     - stage: trinity
-      stageUuid: "9537dade-19a8-80e5-b8f9-c982beac8a6c"
+      stageUuid: "e1d555c2-bab8-89ce-9ce1-10d1f7366cd2"
     - stage: boundary
-      stageUuid: "2b8ac2ca-1550-8646-ad1e-e7c23d34dc5a"
+      stageUuid: "8366ca74-db75-86a4-8d6e-3b113b7bffeb"
     - stage: links
-      stageUuid: "03966597-90ce-8100-92eb-cf89b158c27f"
+      stageUuid: "590ff206-e20a-860f-84f0-96a4cf780007"
     - stage: horo
-      stageUuid: "bb6a7984-1acb-8abd-8da1-37bebb788506"
+      stageUuid: "bfd82121-9a20-80ff-984c-d23632d0efa4"
     - stage: seal
-      stageUuid: "ade94ad5-5d5c-8e62-b624-65ca284cf5a9"
+      stageUuid: "62b765c1-d415-82bb-b9e5-18d534ad0218"
     - stage: uuid
-      stageUuid: "f3cfeb56-64e3-8ec8-82b8-63fc279a4375"
+      stageUuid: "405689ce-eb91-8abe-91a3-d30fc301e7aa"
 version: 2
 ---
 # modulation

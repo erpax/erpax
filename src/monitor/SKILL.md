@@ -2,74 +2,18 @@
 name: monitor
 description: "Use when reasoning about patient monitor — hospital bedside vitals facet; pivot to @/medical/device registry. Also: realtime corpus violation monitor via @/monitor/violations (all gate axes, path-account bonded)."
 atomPath: monitor
-coordinate: "monitor · 7/descent · 142bfaa4"
-contentUuid: "041e1ee4-f598-5507-b1cd-74fdb5234a0a"
-diamondUuid: "0886dd4a-f2e8-8eab-af6b-c7ff274ada6c"
-uuid: "142bfaa4-5b49-8325-b1bc-82a48843e0e9"
-horo: 7
-bonds:
-  in:
-    - accounting
-    - device
-    - emr
-    - inventory
-    - law
-    - medical
-    - merge
-    - readings
-    - violations
-    - vital
-  out:
-    - accounting
-    - device
-    - emr
-    - inventory
-    - law
-    - medical
-    - merge
-    - readings
-    - violations
-    - vital
+coordinate: "monitor · 5/round · b8edc55a"
+contentUuid: "bd5ab54f-a0a5-5c10-962c-f018e9731f8f"
+diamondUuid: "3912d898-695b-882d-b3fd-360e5ae52bd9"
+uuid: "b8edc55a-d524-88d6-b45d-3eb943e1d846"
+horo: 5
 typography:
   partition: monitor
   bondDegree: 31
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - device
-    - emr
-    - law
-    - medical
-    - merge
-    - readings
-    - vital
-  matrix:
-    - accounting
-    - device
-    - emr
-    - inventory
-    - law
-    - medical
-    - merge
-    - readings
-    - violations
-    - vital
-  backlinks:
-    - accounting
-    - device
-    - emr
-    - inventory
-    - law
-    - medical
-    - merge
-    - readings
-    - violations
-    - vital
 signatures:
-  computationUuid: "cb83aa4a-3b06-8ff8-b796-1a3e29713d50"
+  computationUuid: "9a560e5b-2f45-8309-bed5-d0357cc8ebc0"
   stages:
     - stage: path
       stageUuid: "48a30b3f-d283-8031-b938-a9ed3d5bbb7e"
@@ -80,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "094be6c4-3ac0-84ce-867b-e8553bb5f7bd"
     - stage: horo
-      stageUuid: "ff1b804e-6ca6-8f37-93a0-eb55efc8535e"
+      stageUuid: "35fad474-bda8-8ccf-8749-d78899531ae0"
     - stage: seal
       stageUuid: "79116894-663f-85ce-944f-df4db398ed7b"
     - stage: uuid
-      stageUuid: "3d7968da-fa90-8f71-a69d-bd38c8743a4b"
+      stageUuid: "2bb5806c-1c62-8cc1-a0ac-b88d0d43a624"
 version: 2
 ---
 # monitor — patient bedside monitor facet

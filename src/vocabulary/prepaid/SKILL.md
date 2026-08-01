@@ -1,86 +1,34 @@
 ---
 name: prepaid
 description: "Use when reasoning about prepaid — Use for advance payments for future services or goods (insurance premiums, rent, subscriptions) — an asset that is drawn down to expense over the benefit period"
-atomPath: vocabulary/prepaid
-coordinate: prepaid · 8/crest · 361ebda9
-contentUuid: "91ab0dbe-9c1f-5c3e-a155-b6a9de2dac7c"
-diamondUuid: "4c1b4fb9-842b-83d2-825c-e61a25c7722b"
-uuid: "361ebda9-11b7-8f4d-a97b-0d3f719fbda6"
-horo: 8
-bonds:
-  in:
-    - accrual
-    - assets
-    - deferral
-    - deferredrevenue
-    - entries
-    - journals
-    - law
-    - recognition
-    - share
-  out:
-    - accrual
-    - assets
-    - deferral
-    - deferredrevenue
-    - entries
-    - journals
-    - law
-    - recognition
-    - share
+atomPath: "vocabulary/prepaid"
+coordinate: "vocabulary/prepaid · 1/base · b8a14db4"
+contentUuid: "0348f386-1854-5760-8532-06b647317a77"
+diamondUuid: "5d039275-3ccd-812b-bc93-f271adb8ceca"
+uuid: "b8a14db4-a1d4-829c-afda-a79649f77633"
+horo: 1
 typography:
-  partition: prepaid
+  partition: vocabulary
   bondDegree: 28
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accrual
-    - assets
-    - deferral
-    - deferredrevenue
-    - entries
-    - journals
-    - law
-    - recognition
-  matrix:
-    - accrual
-    - assets
-    - deferral
-    - deferredrevenue
-    - entries
-    - journals
-    - law
-    - recognition
-    - share
-  backlinks:
-    - accrual
-    - assets
-    - deferral
-    - deferredrevenue
-    - entries
-    - journals
-    - law
-    - recognition
-    - share
 signatures:
-  computationUuid: "569b305b-a6c8-8bc3-80f1-559a2fec95d5"
+  computationUuid: "1b950f5b-7f74-8e65-9e2e-ca4b6fa4ebc5"
   stages:
     - stage: path
-      stageUuid: "afafb7b3-7ece-8988-9a8e-5d219f41c36c"
+      stageUuid: "8b909b3a-bc7f-8339-8155-7a1f50eb7b8a"
     - stage: trinity
-      stageUuid: "4fc8a0e4-26ff-87b5-9b4a-75c7289bed65"
+      stageUuid: "217db4a7-b2a4-8a61-b0e4-d192f390563c"
     - stage: boundary
-      stageUuid: "ddb51d1f-0f2e-8a85-934f-9f79f99bdd38"
+      stageUuid: "288e3564-6328-84ed-b049-3bfec01aa2b4"
     - stage: links
-      stageUuid: "9dc8ed41-6217-833a-b544-54dcede4076f"
+      stageUuid: "aedf76c3-1015-82a3-b4e3-8ce0b4a3af1d"
     - stage: horo
-      stageUuid: "73e94346-ffdd-8371-97e8-35238fdb02d4"
+      stageUuid: "781b771c-f752-8516-80e7-db6413bca785"
     - stage: seal
-      stageUuid: "6ab0ddd7-44d6-82d5-af23-dbda35df8507"
+      stageUuid: "40ce7841-07e4-83c0-ad26-0b3ade21fa82"
     - stage: uuid
-      stageUuid: "20b009ca-c15d-86c5-aa0b-e7783c0c5552"
+      stageUuid: "13ec94eb-3375-80c5-8ef7-473f9798bd92"
 version: 2
 ---
 # prepaid

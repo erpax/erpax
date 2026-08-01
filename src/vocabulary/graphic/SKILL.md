@@ -1,63 +1,35 @@
 ---
 name: graphic
 description: "Use when reasoning about graphic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/graphic
-coordinate: graphic · 1/base · 9044c071
-contentUuid: "0256f6f0-213e-5475-b189-c2ef815eaf87"
-diamondUuid: "275fd14d-fe1c-8e21-ac00-3be585dc0da1"
-uuid: "9044c071-cb1e-8d11-93d6-efd5ee732a74"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/graphic"
+coordinate: "vocabulary/graphic · 4/weave · fbb6440a"
+contentUuid: "e84969da-33e0-55ea-b0fd-5e056480b4f4"
+diamondUuid: "ec6bcad3-ee00-859a-b9db-e1fb842b9399"
+uuid: "fbb6440a-9bb1-80e0-a1a4-cd5b14e8e464"
+horo: 4
 typography:
-  partition: graphic
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "c7f12fc9-bdf7-89c6-a992-0e86b90964e7"
+  computationUuid: "e4e744d0-e023-8c6e-b123-481753c45c10"
   stages:
     - stage: path
-      stageUuid: "d0f4ed54-4dcb-8f3c-8d5c-dbcbacab4ddf"
+      stageUuid: "3e267c55-5db6-825c-ac90-8b8274e7d5b9"
     - stage: trinity
-      stageUuid: "52d4cad1-7a07-813e-8e97-e4f28f083ac3"
+      stageUuid: "fd93f2f1-bcd1-8714-9dac-041a985f85dd"
     - stage: boundary
-      stageUuid: "b5a22172-5e67-8cbb-bdf8-20ce70c1e242"
+      stageUuid: "d7bfa298-b2fd-8598-8718-0305ae37174d"
     - stage: links
-      stageUuid: "e25b93b4-03a2-83f2-932f-818e94a80d09"
+      stageUuid: "384e9349-61e3-8aa9-b87b-dcc4973399b4"
     - stage: horo
-      stageUuid: "16b57167-c3d4-881c-865b-2a682c0dc74a"
+      stageUuid: "3a3cdd09-321a-85f5-9ad2-8dc3b0ed49bd"
     - stage: seal
-      stageUuid: "f66e2583-44c9-8bd3-865b-6c79ad545352"
+      stageUuid: "f1571ac5-55f7-8031-9b4b-c83312b34f38"
     - stage: uuid
-      stageUuid: "73e9e82b-79cd-867b-bc2f-b27a53ccfd05"
+      stageUuid: "7b9e32bd-0c6b-8a77-bc7e-8cab5b77bc6b"
 version: 2
 ---
 # graphic

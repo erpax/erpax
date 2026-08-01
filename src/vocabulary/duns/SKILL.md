@@ -1,53 +1,35 @@
 ---
 name: duns
 description: "Use when reasoning about duns — The Dun & Bradstreet DUNS number for identifying an organization or business person."
-atomPath: vocabulary/duns
-coordinate: duns · 4/weave · 18d07f85
-contentUuid: "10c3f13f-87fe-5f41-aa50-0051718e1d41"
-diamondUuid: "625f4a0c-2096-819a-b86b-8023da756f04"
-uuid: "18d07f85-2a0c-8056-b684-bc6b159ecf11"
-horo: 4
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/duns"
+coordinate: "vocabulary/duns · 2/share · 3f69af67"
+contentUuid: "36306387-8294-5576-9ebe-4d1b0035ca43"
+diamondUuid: "60ff8de0-4de6-8869-bbf5-d77e86de4b5d"
+uuid: "3f69af67-1009-88c3-be37-8db8514b38a9"
+horo: 2
 typography:
-  partition: duns
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "5e0fdb17-bd45-8718-87df-911d27f472c0"
+  computationUuid: "89ed8dd6-6637-8f3d-a2b8-f41c110fa1a5"
   stages:
     - stage: path
-      stageUuid: "4f9d839d-8755-8d35-8ceb-d729bf240dc7"
+      stageUuid: "7bf7d040-20fa-8529-8167-e78a203e49be"
     - stage: trinity
-      stageUuid: "ff4a892b-2233-83bb-a43b-6a9449c61a91"
+      stageUuid: "8e21dea1-6b4e-8388-9ddd-99275c1a1b61"
     - stage: boundary
-      stageUuid: "7d49f4cf-61ef-826c-9a16-cb6bcce96900"
+      stageUuid: "1b1e7222-89ff-84c2-b208-cdf730cead7c"
     - stage: links
-      stageUuid: "29408157-ad6c-898b-bd11-113980d0b2c0"
+      stageUuid: "6f5e81ec-af15-86f4-9d8d-3136845109ac"
     - stage: horo
-      stageUuid: "0999a352-99ae-85b5-9f98-6cefa2c5827a"
+      stageUuid: "3daed52e-89d4-8c12-bdf0-8d41b4376f91"
     - stage: seal
-      stageUuid: "9c7f1162-0c96-8e68-909b-f0cb30cc38b2"
+      stageUuid: "5f66dd61-0d3c-8803-9765-df21ffa4807a"
     - stage: uuid
-      stageUuid: "89563a7b-5398-878b-bf11-ea14d3d8a986"
+      stageUuid: "6ceb1498-3105-8619-9c20-6c87687faa24"
 version: 2
 ---
 # duns

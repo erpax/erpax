@@ -1,76 +1,35 @@
 ---
 name: radiation
 description: "Use when reasoning about radiation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/radiation
-coordinate: radiation · 2/share · a9cdad17
-contentUuid: "181f721a-8e41-5f4d-b9fb-058db9971024"
-diamondUuid: "814f9647-5aa6-8d6d-84f0-9cf47b6a9873"
-uuid: "a9cdad17-4892-862c-a7cf-f24941d702aa"
-horo: 2
-bonds:
-  in:
-    - biomagnetism
-    - biophoton
-    - collapse
-    - law
-    - merge
-    - sti
-    - therapy
-  out:
-    - biomagnetism
-    - biophoton
-    - collapse
-    - law
-    - merge
-    - sti
-    - therapy
+atomPath: "vocabulary/radiation"
+coordinate: "vocabulary/radiation · 1/base · f0c6bd1d"
+contentUuid: "e9d7e2b3-aedd-5761-bfec-54445ee5a00c"
+diamondUuid: "771c069d-fa59-840e-8184-a50ea040fdb9"
+uuid: "f0c6bd1d-ac26-8af3-9e1d-4e8b7859bdd5"
+horo: 1
 typography:
-  partition: radiation
+  partition: vocabulary
   bondDegree: 22
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - therapy
-  matrix:
-    - biomagnetism
-    - biophoton
-    - collapse
-    - law
-    - merge
-    - sti
-    - therapy
-  backlinks:
-    - biomagnetism
-    - biophoton
-    - collapse
-    - law
-    - merge
-    - sti
-    - therapy
 signatures:
-  computationUuid: "34d38e6f-b62d-8fef-87fd-7b12bc4ec924"
+  computationUuid: "382c5f0a-4f95-848f-bf78-d16b7ff89d24"
   stages:
     - stage: path
-      stageUuid: "96032243-f6c7-876e-96f7-3286c087b829"
+      stageUuid: "769607b0-c756-876e-a298-9acc40868a47"
     - stage: trinity
-      stageUuid: "20761661-0756-869e-b048-ae767cb0720b"
+      stageUuid: "edb98284-8d71-8669-999c-26e59e6c79df"
     - stage: boundary
-      stageUuid: "29339a27-3fa4-8385-8b21-d8777a5e1223"
+      stageUuid: "0e5f7e89-f039-8cb3-8afd-66fcfba7c96c"
     - stage: links
-      stageUuid: "c7921e9a-be4a-8e7e-95a8-2c3565150786"
+      stageUuid: "41f3b5fd-78c6-8371-817f-26f18eb81c9d"
     - stage: horo
-      stageUuid: "58916bac-57ff-853e-8193-7dac168cca29"
+      stageUuid: "388dfad3-7535-82f5-9bb0-1e859614482f"
     - stage: seal
-      stageUuid: "762653b0-f9c9-8be3-915b-8c673e72d086"
+      stageUuid: "5f877b11-93b0-825d-994e-e62333609363"
     - stage: uuid
-      stageUuid: "809fd57f-a61a-8a41-b6e0-85a24b41ea3e"
+      stageUuid: "2a9168b0-5557-87f5-b54f-c6af10c75429"
 version: 2
 ---
 # radiation

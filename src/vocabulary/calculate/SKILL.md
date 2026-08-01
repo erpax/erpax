@@ -1,131 +1,34 @@
 ---
 name: calculate
 description: "Use when reasoning about calculate — is the computation atom: ceccec/erpax's ~25 are **form-objects** (ActiveModel, ) — validate inputs → compute a standards-cited formula → format; **no persistence, no collection**."
-atomPath: vocabulary/calculate
-coordinate: calculate · 2/share · 7e1d1e69
-contentUuid: "81c7b05f-8abb-5cc0-acf4-fdd257b9f194"
-diamondUuid: "8299e6f4-28af-8e86-9be2-fccf4d20eb0f"
-uuid: "7e1d1e69-3f63-8431-87cd-0519b3877cb4"
-horo: 2
-bonds:
-  in:
-    - accounting
-    - aggregation
-    - amortize
-    - api
-    - baseline
-    - correlation
-    - currency
-    - depreciate
-    - distribution
-    - ebitda
-    - law
-    - leases
-    - measure
-    - nullability
-    - outlier
-    - port
-    - rate
-    - sampling
-    - total
-    - value
-  out:
-    - accounting
-    - aggregation
-    - amortize
-    - api
-    - baseline
-    - correlation
-    - currency
-    - depreciate
-    - distribution
-    - ebitda
-    - law
-    - leases
-    - measure
-    - nullability
-    - outlier
-    - port
-    - rate
-    - sampling
-    - total
-    - value
+atomPath: "vocabulary/calculate"
+coordinate: "vocabulary/calculate · 8/crest · 44069227"
+contentUuid: "9dfd2821-c81e-5bc6-b5ea-ad09867b9e27"
+diamondUuid: "e2b1a6e4-bb5c-8e7d-b508-2de767618c0a"
+uuid: "44069227-c392-857a-9e20-fc3d698a84b8"
+horo: 8
 typography:
-  partition: calculate
+  partition: vocabulary
   bondDegree: 64
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - amortize
-    - api
-    - currency
-    - depreciate
-    - ebitda
-    - law
-    - measure
-    - port
-  matrix:
-    - accounting
-    - aggregation
-    - amortize
-    - api
-    - baseline
-    - correlation
-    - currency
-    - depreciate
-    - distribution
-    - ebitda
-    - law
-    - leases
-    - measure
-    - nullability
-    - outlier
-    - port
-    - rate
-    - sampling
-    - total
-    - value
-  backlinks:
-    - accounting
-    - aggregation
-    - amortize
-    - api
-    - baseline
-    - correlation
-    - currency
-    - depreciate
-    - distribution
-    - ebitda
-    - law
-    - leases
-    - measure
-    - nullability
-    - outlier
-    - port
-    - rate
-    - sampling
-    - total
-    - value
 signatures:
-  computationUuid: "a5941d08-8740-8b88-a7f9-3d0a2954c51a"
+  computationUuid: "21819334-4503-8b76-8489-98371224bc41"
   stages:
     - stage: path
-      stageUuid: "9bab970b-808a-84ca-85ab-cc4e8f7bf5b3"
+      stageUuid: "aec199a3-7cd7-837a-9cc2-a7fd58d2c123"
     - stage: trinity
-      stageUuid: "e8d4fc3d-b72e-81d0-b61e-872885e26469"
+      stageUuid: "4dda365a-c1c1-88fa-a134-3bc212d97770"
     - stage: boundary
-      stageUuid: "8fdb2a56-d16b-8d4c-b71c-84ec788e0c6a"
+      stageUuid: "9c21aa05-5911-85ab-b40e-9fb87aa798d2"
     - stage: links
-      stageUuid: "f5375d96-161b-8d08-b90c-91d35b3ce98e"
+      stageUuid: "c9b27d1c-40b4-8cf1-9dde-4d334879e780"
     - stage: horo
-      stageUuid: "48b4eadb-2bea-8d12-a5e0-0c233f914a4e"
+      stageUuid: "fa940fbf-c820-830b-8549-1521e00fa583"
     - stage: seal
-      stageUuid: "1125bd51-de8f-8758-a452-a2ad8a2766fc"
+      stageUuid: "fd6c8643-9fd9-81b3-8890-efdec4bde55e"
     - stage: uuid
-      stageUuid: "8a170564-2c7a-8711-b6ad-af268fd0ac87"
+      stageUuid: "55ece371-c67a-8376-afd8-e19399e7b403"
 version: 2
 ---
 # calculate — pure compute (matter copies verbatim), no persistence

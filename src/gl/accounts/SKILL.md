@@ -2,39 +2,16 @@
 name: accounts
 description: "Use when maintaining the Chart of Accounts — creating or deactivating GL accounts, assigning accountType (asset/liability/equity/revenue/expense/gain-loss), tagging canonical roles (cash, ar, ap, revenue, IFRS-16 lease accounts) for the gl-account-resolver, tracking balances, and auditing account changes. The SAF-T §2 chart-of-accounts node."
 atomPath: "gl/accounts"
-coordinate: "gl/accounts · 8/crest · 6ab62a98"
-contentUuid: "fbd29d2f-7d06-5ba8-9eb5-687074ee137a"
-diamondUuid: "1ffa7775-11e2-8b63-b7fe-262b0f05610b"
-uuid: "6ab62a98-3a43-8129-b212-4011273ca21a"
-horo: 8
-bonds:
-  in:
-    - access
-    - accounting
-    - auth
-    - escrow
-    - hooks
-    - identity
-    - party
-    - reconciliations
-    - runs
-  out:
-    - access
-    - accounting
-    - auth
-    - escrow
-    - hooks
-    - identity
-    - party
-    - reconciliations
-    - runs
+coordinate: "gl/accounts · 4/weave · 803c33da"
+contentUuid: "8b9fea40-51e6-5850-97e7-602c13aee160"
+diamondUuid: "66e3092e-9cc7-8671-a0ae-dad92302801c"
+uuid: "803c33da-f2c8-838d-b179-adc662e843a5"
+horo: 4
 typography:
   partition: gl
   bondDegree: 0
-  neighbors: []
 standards:
   - "IFRS IAS-1 presentation-of-financial-statements"
-  - "ISO-13616-1"
   - "ISO-3166-2"
   - "ISO-4217:2015 currency-codes account-currency"
   - "ISO-4217:2015 currency-codes account-currency`"
@@ -46,37 +23,8 @@ standards:
   - "W3C-PROV-O"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - accounting
-    - identity
-    - law
-    - proof
-    - standard
-    - transaction
-  matrix:
-    - access
-    - accounting
-    - auth
-    - escrow
-    - hooks
-    - identity
-    - party
-    - reconciliations
-    - runs
-  backlinks:
-    - access
-    - accounting
-    - auth
-    - escrow
-    - hooks
-    - identity
-    - party
-    - reconciliations
-    - runs
 signatures:
-  computationUuid: "6c14c580-c411-8135-b1f1-6fcd0023f11d"
+  computationUuid: "249b492f-dec0-82f1-9050-512ac63da1b0"
   stages:
     - stage: path
       stageUuid: "7e314456-172a-833b-b65a-622e1b2c9fdd"
@@ -87,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "59b67049-d5e8-85d7-b83e-466ce45a4141"
     - stage: horo
-      stageUuid: "003a61f5-135f-852f-b13a-cca7810b4c60"
+      stageUuid: "a7587e3d-6b2a-8336-b195-5005d1d87aac"
     - stage: seal
       stageUuid: "b050fb19-2afc-8106-aefa-e3b6157620fe"
     - stage: uuid
-      stageUuid: "7825ba28-bfd3-8d83-b6a3-ddd7193b82f7"
+      stageUuid: "0107de0f-f63c-8740-8d3d-67400ba69edc"
 version: 2
 ---
 # gl-accounts

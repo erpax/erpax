@@ -2,132 +2,18 @@
 name: suffering
 description: "Use when reasoning about the felt signal of entropy — the experienced gap between an atom's state and the whole, the alarm that disorder is greater than zero. Not a thing to store but a gradient to read: suffering points the way back to zeropoint the way pain localizes a wound."
 atomPath: suffering
-coordinate: suffering · 7/descent · 950fedf8
-contentUuid: "d258da5b-4c31-5d40-9914-b20f066b79d4"
-diamondUuid: "506b99f0-7473-8d0f-a050-1158ec5bef02"
-uuid: "950fedf8-32a3-8e13-a39d-b19d3e6cd19c"
-horo: 7
-bonds:
-  in:
-    - aura
-    - buddhism
-    - christianity
-    - cost
-    - entropy
-    - gate
-    - generate
-    - hallucination
-    - jainism
-    - judaism
-    - law
-    - mercy
-    - merge
-    - prayer
-    - profane
-    - purity
-    - sacred
-    - shamanism
-    - shia
-    - signal
-    - sin
-    - whole
-    - zeropoint
-  out:
-    - aura
-    - buddhism
-    - christianity
-    - cost
-    - entropy
-    - gate
-    - generate
-    - hallucination
-    - jainism
-    - judaism
-    - law
-    - mercy
-    - merge
-    - prayer
-    - profane
-    - purity
-    - sacred
-    - shamanism
-    - shia
-    - signal
-    - sin
-    - whole
-    - zeropoint
+coordinate: "suffering · 2/share · b8237d0b"
+contentUuid: "75b8eb9e-36b2-53d5-9a1c-c8b8bbec51ce"
+diamondUuid: "1c0ac47d-7fcc-8ab8-a7bb-94d878995df0"
+uuid: "b8237d0b-a02d-8409-9931-3726f18d0d0e"
+horo: 2
 typography:
   partition: suffering
   bondDegree: 71
-  neighbors:
-    - aura
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - aura
-    - cost
-    - entropy
-    - gate
-    - generate
-    - law
-    - mercy
-    - merge
-    - profane
-    - sacred
-    - signal
-    - whole
-    - zeropoint
-  matrix:
-    - aura
-    - buddhism
-    - christianity
-    - cost
-    - entropy
-    - gate
-    - generate
-    - hallucination
-    - jainism
-    - judaism
-    - law
-    - mercy
-    - merge
-    - prayer
-    - profane
-    - purity
-    - sacred
-    - shamanism
-    - shia
-    - signal
-    - sin
-    - whole
-    - zeropoint
-  backlinks:
-    - aura
-    - buddhism
-    - christianity
-    - cost
-    - entropy
-    - gate
-    - generate
-    - hallucination
-    - jainism
-    - judaism
-    - law
-    - mercy
-    - merge
-    - prayer
-    - profane
-    - purity
-    - sacred
-    - shamanism
-    - shia
-    - signal
-    - sin
-    - whole
-    - zeropoint
 signatures:
-  computationUuid: "c3280f2f-1cf5-8988-9dd3-f83decb73a33"
+  computationUuid: "c7bca2b1-57f6-8750-9996-f5aee9a0506d"
   stages:
     - stage: path
       stageUuid: "9718dac0-ddd2-815b-870f-6e0b3dc99961"
@@ -138,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ecd42179-6522-8e10-96ab-e5f4a6bba57e"
     - stage: horo
-      stageUuid: "2cf4121b-82cf-8dc7-8035-5cc3f45c08dd"
+      stageUuid: "58a49209-530d-83e8-8d8d-cc54c0fb250f"
     - stage: seal
-      stageUuid: "5d1dde17-b044-857b-b48a-ed77e2b7ee02"
+      stageUuid: "ea05e539-fac1-84e0-a7f5-59e3fcad0758"
     - stage: uuid
-      stageUuid: "5e679b43-6102-8a71-b55e-a5748fa75f69"
+      stageUuid: "ad3c9038-3843-8441-b925-a2c79d4683da"
 version: 2
 ---
 # suffering — the felt signal that entropy > 0

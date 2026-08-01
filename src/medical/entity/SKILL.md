@@ -2,99 +2,19 @@
 name: entity
 description: "Use when reasoning about entity as a medical facet of [[medical]] — vocabulary pivot to @/entity; nested not duplicated."
 atomPath: "medical/entity"
-coordinate: "medical/entity · 2/share · a3d15485"
-contentUuid: "a64734ab-cda8-58ca-b737-1586e9929c30"
-diamondUuid: "b55c477f-7fe3-8e75-9725-139b6b3ecd8a"
-uuid: "a3d15485-94c0-888a-a145-f3037a852d14"
+coordinate: "medical/entity · 2/share · 4a648d06"
+contentUuid: "339a543c-6d71-56c2-ac46-af89392adf42"
+diamondUuid: "8120b4de-8343-8045-a7d7-bd44e3b9d125"
+uuid: "4a648d06-e4c4-8e5c-a6f0-aee91fb09903"
 horo: 2
-bonds:
-  in:
-    - bio
-    - business
-    - chem
-    - collapse
-    - encoded
-    - encodes
-    - entity
-    - has
-    - law
-    - main
-    - medical
-    - merge
-    - molecular
-    - page
-    - part
-    - sti
-    - type
-  out:
-    - bio
-    - business
-    - chem
-    - collapse
-    - encoded
-    - encodes
-    - entity
-    - has
-    - law
-    - main
-    - medical
-    - merge
-    - molecular
-    - page
-    - part
-    - sti
-    - type
 typography:
   partition: medical
   bondDegree: 65
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - entity
-    - law
-    - medical
-    - merge
-  matrix:
-    - bio
-    - business
-    - chem
-    - collapse
-    - encoded
-    - encodes
-    - entity
-    - has
-    - law
-    - main
-    - medical
-    - merge
-    - molecular
-    - page
-    - part
-    - sti
-    - type
-  backlinks:
-    - bio
-    - business
-    - chem
-    - collapse
-    - encoded
-    - encodes
-    - entity
-    - has
-    - law
-    - main
-    - medical
-    - merge
-    - molecular
-    - page
-    - part
-    - sti
-    - type
 signatures:
-  computationUuid: "123c7a01-140d-8425-99de-671521964fb9"
+  computationUuid: "15df12b4-01db-8912-bc4b-2eb38eeb74b1"
   stages:
     - stage: path
       stageUuid: "1bf0d1e3-8d05-8afd-87e2-688015149c82"
@@ -105,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8ce50b0d-e2d0-800f-82b5-4e0470214dbe"
     - stage: horo
-      stageUuid: "83f80a9f-4032-8595-8e5a-9c499ef8f2f0"
+      stageUuid: "d60f3882-44df-88a5-a0ee-a496dee6ca11"
     - stage: seal
       stageUuid: "6a25af79-1a8e-8098-aafe-ffcf3af1bd83"
     - stage: uuid
-      stageUuid: "17f7820a-4686-8815-90cf-2a7c98745fc5"
+      stageUuid: "3ab02365-da9e-83f9-8641-befaa354fc59"
 version: 2
 ---
 # medical/entity — medical facet

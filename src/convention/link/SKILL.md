@@ -2,204 +2,21 @@
 name: link
 description: "Use when one atom references another in prose — every wikilink must resolve to a real atom, no dead wires; coverage = resolving / total over the live corpus map."
 atomPath: "convention/link"
-coordinate: "convention/link · 8/crest · 016c8124"
-contentUuid: "25c3426e-9c85-5913-9a5c-faf91e949686"
-diamondUuid: "16512ade-fd8f-8ceb-835d-d09309629a8b"
-uuid: "016c8124-b604-8307-99ce-9b37f41a840c"
-horo: 8
-bonds:
-  in:
-    - analog
-    - aura
-    - collapse
-    - convention
-    - dashboard
-    - digital
-    - fear
-    - forge
-    - fusion
-    - generate
-    - graph
-    - gravity
-    - gs
-    - has
-    - heart
-    - interference
-    - law
-    - link
-    - love
-    - media
-    - merchant
-    - merge
-    - original
-    - product
-    - purity
-    - reciprocal
-    - regeneration
-    - related
-    - relationship
-    - religion
-    - return
-    - reveal
-    - role
-    - self
-    - settings
-    - shipping
-    - significant
-    - sti
-    - superdense
-    - triggered
-    - typography
-  out:
-    - analog
-    - aura
-    - collapse
-    - convention
-    - dashboard
-    - digital
-    - fear
-    - forge
-    - fusion
-    - generate
-    - graph
-    - gravity
-    - gs
-    - has
-    - heart
-    - interference
-    - law
-    - link
-    - love
-    - media
-    - merchant
-    - merge
-    - original
-    - product
-    - purity
-    - reciprocal
-    - regeneration
-    - related
-    - relationship
-    - religion
-    - return
-    - reveal
-    - role
-    - self
-    - settings
-    - shipping
-    - significant
-    - sti
-    - superdense
-    - triggered
-    - typography
+coordinate: "convention/link · 2/share · daf55e6e"
+contentUuid: "569714b0-89a4-5a00-bab6-7fa47c0fe90b"
+diamondUuid: "c041b737-5c86-8dbe-8a82-ee9d48d4e446"
+uuid: "daf55e6e-0a7f-80be-9989-5b9e21afe9b9"
+horo: 2
 typography:
   partition: convention
-  bondDegree: 154
-  neighbors:
-    - aura
+  bondDegree: 148
 standards:
   - "CommonMark / Obsidian `[[wikilink]]` syntax — resolved by normalized leaf word"
   - "CommonMark / Obsidian double-bracket wikilink syntax — resolved by normalized leaf word against the shared corpus map"
   - "UBL-2.1"
 bindings: []
-neighbors:
-  wikilink:
-    - aura
-    - balance
-    - entropy
-    - fractal
-    - harmony
-    - law
-    - link
-    - search
-    - tamper
-    - uuid
-  matrix:
-    - analog
-    - aura
-    - collapse
-    - convention
-    - dashboard
-    - digital
-    - fear
-    - forge
-    - fusion
-    - generate
-    - graph
-    - gravity
-    - gs
-    - has
-    - heart
-    - interference
-    - law
-    - link
-    - love
-    - media
-    - merchant
-    - merge
-    - original
-    - product
-    - purity
-    - reciprocal
-    - regeneration
-    - related
-    - relationship
-    - religion
-    - return
-    - reveal
-    - role
-    - self
-    - settings
-    - shipping
-    - significant
-    - sti
-    - superdense
-    - triggered
-    - typography
-  backlinks:
-    - analog
-    - aura
-    - collapse
-    - convention
-    - dashboard
-    - digital
-    - fear
-    - forge
-    - fusion
-    - generate
-    - graph
-    - gravity
-    - gs
-    - has
-    - heart
-    - interference
-    - law
-    - link
-    - love
-    - media
-    - merchant
-    - merge
-    - original
-    - product
-    - purity
-    - reciprocal
-    - regeneration
-    - related
-    - relationship
-    - religion
-    - return
-    - reveal
-    - role
-    - self
-    - settings
-    - shipping
-    - significant
-    - sti
-    - superdense
-    - triggered
-    - typography
 signatures:
-  computationUuid: "38d26c0f-706c-8276-964b-6bf670593140"
+  computationUuid: "97e84d49-421a-8bb0-9fad-b3e4a8041dc7"
   stages:
     - stage: path
       stageUuid: "4f12721d-341e-8779-9d0a-cf8212509727"
@@ -210,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "c4664dd3-6406-81a3-8588-f559e923e520"
     - stage: horo
-      stageUuid: "3298e13f-f0c3-83ab-a6ac-d9ca7b14cd81"
+      stageUuid: "b9472c74-000d-85be-a68c-93499381b9ec"
     - stage: seal
       stageUuid: "7cf09e63-2371-8497-97e1-66a2be400971"
     - stage: uuid
-      stageUuid: "ef7e562f-faf9-8d0a-b1c4-c896aec44022"
+      stageUuid: "6db7c554-4a1d-8a79-8939-2338acaafc3c"
 version: 2
 ---
 # convention/link — every [[link]] resolves

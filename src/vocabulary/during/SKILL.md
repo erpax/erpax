@@ -1,68 +1,35 @@
 ---
 name: during
 description: "Use when reasoning about during — A schema.org component word, collided out of schema.org compounds — fused from duringMedia (sti · collapse · merge)."
-atomPath: vocabulary/during
-coordinate: during · 2/share · 80949279
-contentUuid: "dc005c05-e4d7-53fd-8927-07a634c48c67"
-diamondUuid: "b72392ba-1209-8222-9e20-35cb155e257b"
-uuid: "80949279-64bc-8e2c-9e1f-4f392b50d8c0"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - media
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - media
-    - merge
-    - sti
+atomPath: "vocabulary/during"
+coordinate: "vocabulary/during · 4/weave · 6849c92c"
+contentUuid: "4f14a7df-549e-506a-a8ae-04a596a7fa7c"
+diamondUuid: "4d5fc451-6f2f-8038-8845-97ee92d33493"
+uuid: "6849c92c-f728-8671-a106-3fa51671642a"
+horo: 4
 typography:
-  partition: during
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - media
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - media
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - media
-    - merge
-    - sti
 signatures:
-  computationUuid: "f134f8d1-8ff1-868d-b595-4b63a477f59e"
+  computationUuid: "5503f647-b981-8ade-b7d0-7fdf0a4f9889"
   stages:
     - stage: path
-      stageUuid: "038264a9-846a-8b25-8f01-ec8a89b1edcb"
+      stageUuid: "46e63273-2746-88cd-b404-f459f7e80963"
     - stage: trinity
-      stageUuid: "741c6ebc-bd1f-8fd9-a257-8726d6356745"
+      stageUuid: "a1d49572-807e-868c-890e-867792f1af0e"
     - stage: boundary
-      stageUuid: "34fcf090-189d-81f1-b8e4-50b18fe39955"
+      stageUuid: "d9c78829-567d-85bb-a908-5b2546935557"
     - stage: links
-      stageUuid: "9a75bbfc-8e44-8bbc-8b90-9995d9d22920"
+      stageUuid: "62c36220-d62b-8333-a031-fe6704969c4c"
     - stage: horo
-      stageUuid: "0e5fd92f-d907-8854-a0be-aac82f7c75dd"
+      stageUuid: "0db52ef8-ca0d-8625-b00f-380d3aec3829"
     - stage: seal
-      stageUuid: "46a50892-1b95-8cfb-a3bc-c52a6ec2090a"
+      stageUuid: "c9ac3501-fda8-8bd6-abe9-cd5a9057cb69"
     - stage: uuid
-      stageUuid: "a767c3ff-351a-86e3-8c25-d5e708e2f03c"
+      stageUuid: "b5f9fc6a-d4bc-88c1-a50e-809ba7b216d9"
 version: 2
 ---
 # during

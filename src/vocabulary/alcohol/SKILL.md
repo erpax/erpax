@@ -1,68 +1,35 @@
 ---
 name: alcohol
 description: "Use when reasoning about alcohol as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/alcohol
-coordinate: alcohol · 8/crest · 39aed405
-contentUuid: "5cbfa730-1578-520c-b542-8188b092215f"
-diamondUuid: "ae33443b-ab58-8154-9982-ef6e8a4c4bd4"
-uuid: "39aed405-71aa-821c-9958-5987fc1f1927"
+atomPath: "vocabulary/alcohol"
+coordinate: "vocabulary/alcohol · 8/crest · 13a84367"
+contentUuid: "74b51cc3-167c-5775-b27c-587748ec84a3"
+diamondUuid: "84c59744-ff02-8223-9330-7b3d5f4e0c42"
+uuid: "13a84367-1297-8002-ad7b-53062dddd303"
 horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - warning
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - warning
 typography:
-  partition: alcohol
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - warning
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - warning
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - warning
 signatures:
-  computationUuid: "bff8faa1-adf1-8988-8ae3-421e68dd4de9"
+  computationUuid: "ca7f7ad3-ff09-8b4b-81ce-fd2fae4f8ee1"
   stages:
     - stage: path
-      stageUuid: "ab068a86-b35a-87a3-8236-9dcb5fcd6a5f"
+      stageUuid: "3619e9e1-9d3c-89ea-80f1-5d3042cea3af"
     - stage: trinity
-      stageUuid: "13889ffa-2375-8e00-b4f2-db69df13cec0"
+      stageUuid: "a5ad928c-bfdf-8b07-a5bb-822025fd1229"
     - stage: boundary
-      stageUuid: "9eff9d9c-7c02-8d61-924b-691c78266304"
+      stageUuid: "0e9d5f7a-3a34-8e66-ade7-bd8d25800d17"
     - stage: links
-      stageUuid: "4ec355ea-72c3-8e97-8255-e406a34a8df8"
+      stageUuid: "91b96680-541d-84f8-b662-2e4ae71d9b6d"
     - stage: horo
-      stageUuid: "f4039e3d-e111-80c9-a54e-160e5ca5ccfc"
+      stageUuid: "337676b2-e200-82e2-b5ef-21c2ef2af25f"
     - stage: seal
-      stageUuid: "9899f146-cd92-83d1-9734-9bbe14c1b67f"
+      stageUuid: "07a537d1-3dbb-8588-9d9e-03d0bab5916c"
     - stage: uuid
-      stageUuid: "fd9e9611-fb20-8c4d-a2bb-814c9bbe4ec8"
+      stageUuid: "09d302fa-c31c-827c-b448-5bbfdec56fb4"
 version: 2
 ---
 # alcohol

@@ -1,68 +1,35 @@
 ---
 name: alternate
 description: "Use when reasoning about alternate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/alternate
-coordinate: alternate · 7/descent · 43cb2a7b
-contentUuid: "fae0a44e-9c84-5a66-95c7-44234334579e"
-diamondUuid: "5a7a68ca-2577-8568-8b16-878c6bc8282d"
-uuid: "43cb2a7b-f4ca-8a71-9273-418182ab5973"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - name
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - name
-    - sti
+atomPath: "vocabulary/alternate"
+coordinate: "vocabulary/alternate · 2/share · 63522956"
+contentUuid: "f946ceed-3e32-5e8b-bbc3-20c39b4f84d1"
+diamondUuid: "2327f12d-0785-821b-a655-e717e85d8313"
+uuid: "63522956-b966-8194-9adc-e38010744f5b"
+horo: 2
 typography:
-  partition: alternate
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - name
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - name
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - name
-    - sti
 signatures:
-  computationUuid: "a6e928d6-0893-86dd-8ce6-d02ed593d3cb"
+  computationUuid: "6240caf1-56c9-84f6-b8fc-a3120cfed2bd"
   stages:
     - stage: path
-      stageUuid: "d5ce9e1e-fab2-8008-8579-3aedffa9f2ef"
+      stageUuid: "c2720e3b-263d-85ef-8a26-f77b0b359204"
     - stage: trinity
-      stageUuid: "49160fea-f51f-82d0-93cc-9f0c4132f95f"
+      stageUuid: "eb1f034c-79c1-834c-b7c4-a2327cb8ef11"
     - stage: boundary
-      stageUuid: "4757abc9-2a64-86f0-853e-86507ae2c96d"
+      stageUuid: "e2320851-413f-8695-a982-6c5d67c6127d"
     - stage: links
-      stageUuid: "b0521ef5-f71e-8da7-ad6e-5a57f292e7e2"
+      stageUuid: "359882c5-bf9e-8a79-b5dd-495d703b8e0e"
     - stage: horo
-      stageUuid: "33c542c9-63ef-8b79-a366-b2af9cea1bde"
+      stageUuid: "599a439c-754a-8f9c-847a-c301aa1b16b1"
     - stage: seal
-      stageUuid: "d2b8bad8-0d95-8d15-8a37-7d0d26c00832"
+      stageUuid: "fe29e8d5-e1b0-80e0-87ff-197a572cd335"
     - stage: uuid
-      stageUuid: "23750abf-a2d4-8161-b77a-8255d9da3ff2"
+      stageUuid: "9c3efbdb-72cf-8fde-a9b3-d7313253a753"
 version: 2
 ---
 # alternate

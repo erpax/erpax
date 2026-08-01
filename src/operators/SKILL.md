@@ -2,39 +2,22 @@
 name: operators
 description: "Use when managing СУПТО operators — assigning or decommissioning the 4-digit codes that form the second segment of every УНП — mapped to a user; audit trail preserved on decommission. The Наредба Н-18 operator register."
 atomPath: operators
-coordinate: "operators · 5/round · ebf9e93a"
-contentUuid: "596f1cd6-456b-520c-9b96-5f6fc47851fd"
-diamondUuid: "d488800d-7d2b-8742-b7d6-fde8bfed1b12"
-uuid: "ebf9e93a-50da-8237-bbc5-bd9d1c2b1b37"
-horo: 5
-bonds:
-  in:
-    - devices
-    - law
-  out:
-    - devices
-    - law
+coordinate: "operators · 7/descent · f7583bf1"
+contentUuid: "bcf9e2ae-a64b-5691-85c0-2e1705a07864"
+diamondUuid: "0661cd7e-9422-8655-b6aa-b8be76de4542"
+uuid: "f7583bf1-44e3-8abc-9f4e-456e26ba157f"
+horo: 7
 typography:
   partition: operators
   bondDegree: 6
-  neighbors: []
 standards:
   - "BG Наредба-Н-18 §СУПТО operator-nomenclature"
   - "ISO-19011`"
   - "ISO/IEC-27001:2022`"
   - "Naredba-N-18"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-  matrix:
-    - devices
-    - law
-  backlinks:
-    - devices
-    - law
 signatures:
-  computationUuid: "2a7fb7a8-3d95-8710-ad4b-0548d1a5f8db"
+  computationUuid: "9043c72d-fe3f-8337-b686-6ebf95095166"
   stages:
     - stage: path
       stageUuid: "2b246e21-62ae-8145-913c-cdc09e404602"
@@ -45,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "6bd65276-e955-8df2-87be-17d9afe083e2"
     - stage: horo
-      stageUuid: "77a13dde-b676-8fd9-b2d2-847da53fde09"
+      stageUuid: "d24f4bf3-cba8-888c-8e2a-309697219271"
     - stage: seal
       stageUuid: "690de730-8413-838f-8262-ba59948dda8f"
     - stage: uuid
-      stageUuid: "438e104a-06f9-8353-8026-c9376911344a"
+      stageUuid: "7ec6289e-7b64-879c-afd2-f6bf9c5deda5"
 version: 2
 ---
 # operators

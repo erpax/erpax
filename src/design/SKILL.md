@@ -2,113 +2,19 @@
 name: design
 description: "Use when defining the visual and interaction form of an experience — wireframes, prototypes, design reviews, design systems, accessibility, user research insights applied to form."
 atomPath: design
-coordinate: "design · 5/round · b3b15465"
-contentUuid: "4106035f-7c0a-5b48-a6ae-210fc4898a52"
-diamondUuid: "3739290f-e148-81ce-9432-99f47fcd61e9"
-uuid: "b3b15465-d392-805a-b6ab-8656cedd6d96"
-horo: 5
-bonds:
-  in:
-    - accessibility
-    - atom
-    - color
-    - component
-    - components
-    - css
-    - law
-    - medical
-    - observational
-    - pixel
-    - research
-    - standard
-    - study
-    - theme
-    - token
-    - trial
-    - ui
-    - uncertainty
-    - uuid
-  out:
-    - accessibility
-    - atom
-    - color
-    - component
-    - components
-    - css
-    - law
-    - medical
-    - observational
-    - pixel
-    - research
-    - standard
-    - study
-    - theme
-    - token
-    - trial
-    - ui
-    - uncertainty
-    - uuid
+coordinate: "design · 7/descent · 86a6b228"
+contentUuid: "3427d474-a976-56d2-85de-6f42da237b56"
+diamondUuid: "669d4759-bcc8-8847-9274-062092a8237b"
+uuid: "86a6b228-e2a8-8997-a573-e71901693f85"
+horo: 7
 typography:
   partition: design
   bondDegree: 60
-  neighbors: []
 standards:
   - "the analog aura — colour as a projection of one content-uuid (digit → A432 spectrum)"
 bindings: []
-neighbors:
-  wikilink:
-    - accessibility
-    - atom
-    - color
-    - component
-    - law
-    - pixel
-    - research
-    - standard
-    - theme
-    - uuid
-  matrix:
-    - accessibility
-    - atom
-    - color
-    - component
-    - components
-    - css
-    - law
-    - medical
-    - observational
-    - pixel
-    - research
-    - standard
-    - study
-    - theme
-    - token
-    - trial
-    - ui
-    - uncertainty
-    - uuid
-  backlinks:
-    - accessibility
-    - atom
-    - color
-    - component
-    - components
-    - css
-    - law
-    - medical
-    - observational
-    - pixel
-    - research
-    - standard
-    - study
-    - theme
-    - token
-    - trial
-    - ui
-    - uncertainty
-    - uuid
 signatures:
-  computationUuid: "faba1ab3-ec5e-8820-9b9c-68aae25f2c57"
+  computationUuid: "cdd3fdc4-a84a-813c-95b3-84617d6cda00"
   stages:
     - stage: path
       stageUuid: "62cc72ba-9cae-8220-9ff9-2651c1b2a207"
@@ -119,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bba72066-651c-878a-a767-40a7a319d91d"
     - stage: horo
-      stageUuid: "cbf5a842-d8da-8b5d-82b5-687ea5f5eee2"
+      stageUuid: "adb8dd1b-f075-8bbc-9f4a-57e517227e6d"
     - stage: seal
       stageUuid: "73ec4986-5c4f-887f-91a8-9634a27080c6"
     - stage: uuid
-      stageUuid: "10f01cb5-656b-8742-8d9f-9ee61f991036"
+      stageUuid: "3707c235-ef15-8123-9cdd-b8ed5ad0e73a"
 version: 2
 ---
 # design

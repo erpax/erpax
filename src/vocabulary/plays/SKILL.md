@@ -1,68 +1,35 @@
 ---
 name: plays
 description: "Use when reasoning about plays as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/plays
-coordinate: plays · 5/round · ba1c8f99
-contentUuid: "328f9729-bf10-5acf-9d9b-e83232cb309b"
-diamondUuid: "8bea7792-4d08-8544-bc20-ecbcfbb2ac3b"
-uuid: "ba1c8f99-fc93-8533-9902-f21440d9a220"
+atomPath: "vocabulary/plays"
+coordinate: "vocabulary/plays · 5/round · 00e503c0"
+contentUuid: "b2394993-13c7-5cb2-a01e-85ace204fa62"
+diamondUuid: "f0b5fff1-dddd-8f55-875c-8097b7fcd803"
+uuid: "00e503c0-a21e-8347-b1f0-cf56dbedc13c"
 horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - user
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - user
 typography:
-  partition: plays
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - user
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - user
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - user
 signatures:
-  computationUuid: "f32fec03-f1a5-8708-aa8f-b07b5a4df5ac"
+  computationUuid: "0720ecff-6614-8358-a4ac-5a104b0e4c44"
   stages:
     - stage: path
-      stageUuid: "b7d48156-df73-8e79-b445-22e1d4cce41f"
+      stageUuid: "83ef8b54-cc24-8d10-ab3b-7e329bd224e2"
     - stage: trinity
-      stageUuid: "947148c6-3559-84e6-8fb1-d3ba35204955"
+      stageUuid: "c0b00c9a-4893-8233-a1ec-d3500a547dab"
     - stage: boundary
-      stageUuid: "02eae7a5-6132-80f7-bb99-aecee93d31e7"
+      stageUuid: "7e40bfa8-6edd-8c53-b7d7-5c2ef8f74167"
     - stage: links
-      stageUuid: "2d57dcc0-3e4f-8dfb-8e90-c490da874fbd"
+      stageUuid: "b9aaf2ab-4607-8238-a1dd-dc32c998fa7c"
     - stage: horo
-      stageUuid: "1ad74001-664b-85a9-849b-cd8d802ac257"
+      stageUuid: "2e89c560-4d22-8dda-ba17-2b176e056fc2"
     - stage: seal
-      stageUuid: "a3263e60-8e3e-880b-af77-478251829f2e"
+      stageUuid: "79f1de0f-e0a6-80fb-8cb6-2b05ddd3e4bb"
     - stage: uuid
-      stageUuid: "4bce9376-6049-899a-b8e4-6634fb91e5c7"
+      stageUuid: "814232b4-0cad-823d-adc7-5048dc619cee"
 version: 2
 ---
 # plays

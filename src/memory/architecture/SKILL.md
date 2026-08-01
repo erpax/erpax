@@ -2,115 +2,18 @@
 name: architecture
 description: "Use when operational memory must be understood as the architecture lattice itself — NOT a side store. The diamond graph, uuid/matrix bindings, typography partitions, folder SKILL statements, architecture-invariants, and sealed git tree ARE what the system remembers; session blobs sanitize to architecture content and verify against the live-tree facet."
 atomPath: "memory/architecture"
-coordinate: "memory/architecture · 4/weave · bfda7d5f"
-contentUuid: "25e7f49f-8d0f-5594-992d-69fedb59377b"
-diamondUuid: "c9418075-1848-8837-8c37-dd33271af3a3"
-uuid: "bfda7d5f-65b0-89f6-be29-af3fc7af6ebe"
-horo: 4
-bonds:
-  in:
-    - akashic
-    - chat
-    - diamond
-    - horo
-    - industry
-    - input
-    - integrity
-    - invariant
-    - law
-    - matrix
-    - memories
-    - memory
-    - merge
-    - seal
-    - self
-    - session
-    - thought
-    - typography
-  out:
-    - akashic
-    - chat
-    - diamond
-    - horo
-    - industry
-    - input
-    - integrity
-    - invariant
-    - law
-    - matrix
-    - memories
-    - memory
-    - merge
-    - seal
-    - self
-    - session
-    - thought
-    - typography
+coordinate: "memory/architecture · 5/round · 5609b477"
+contentUuid: "fc83e810-54bc-5034-b90f-55034a67884a"
+diamondUuid: "e850b905-66ac-8a92-8a37-dba097b19dac"
+uuid: "5609b477-055f-8e2b-899a-6373aef5e569"
+horo: 5
 typography:
   partition: memory
-  bondDegree: 65
-  neighbors:
-    - diamond
+  bondDegree: 63
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - chat
-    - diamond
-    - horo
-    - integrity
-    - invariant
-    - law
-    - matrix
-    - memories
-    - memory
-    - merge
-    - seal
-    - self
-    - session
-    - thought
-    - typography
-  matrix:
-    - akashic
-    - chat
-    - diamond
-    - horo
-    - industry
-    - input
-    - integrity
-    - invariant
-    - law
-    - matrix
-    - memories
-    - memory
-    - merge
-    - seal
-    - self
-    - session
-    - thought
-    - typography
-  backlinks:
-    - akashic
-    - chat
-    - diamond
-    - horo
-    - industry
-    - input
-    - integrity
-    - invariant
-    - law
-    - matrix
-    - memories
-    - memory
-    - merge
-    - seal
-    - self
-    - session
-    - thought
-    - typography
 signatures:
-  computationUuid: "fa9117ae-a964-890e-9e6e-3cbe2aa1e2e1"
+  computationUuid: "30910a90-f2bc-8551-8763-8f277321b4b1"
   stages:
     - stage: path
       stageUuid: "8f069e56-fb54-8a40-a584-9f30450616f7"
@@ -121,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "cf7b6fb4-d006-8ba2-8b81-341646b1629a"
     - stage: horo
-      stageUuid: "b9e43103-04d0-8a71-9c85-7cfe89442225"
+      stageUuid: "c9f2cf4a-f410-801b-a247-0a63ca787797"
     - stage: seal
       stageUuid: "7ae51871-f487-88a2-aeef-aeb807f81130"
     - stage: uuid
-      stageUuid: "b22dbbc3-9527-8953-888a-7d9c840488a8"
+      stageUuid: "39c1dbd2-2060-8137-b3dd-7e7f991ac581"
 version: 2
 ---
 # memory/architecture — operational memory IS the lattice

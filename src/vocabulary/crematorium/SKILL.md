@@ -1,53 +1,35 @@
 ---
 name: crematorium
 description: Use when reasoning about crematorium — A crematorium.
-atomPath: vocabulary/crematorium
-coordinate: crematorium · 5/round · b8990c6a
-contentUuid: "dce57761-5361-508c-b93b-5076f0e9dfa8"
-diamondUuid: "a1c79c77-b37b-82c2-acdd-89ab28866ac3"
-uuid: "b8990c6a-60fd-8e78-a888-2aea0440d930"
-horo: 5
-bonds:
-  in:
-    - law
-    - place
-  out:
-    - law
-    - place
+atomPath: "vocabulary/crematorium"
+coordinate: "vocabulary/crematorium · 7/descent · fdce285f"
+contentUuid: "27b39a57-bca9-5006-a644-48cbfbffcc56"
+diamondUuid: "f005102f-4272-8451-9b20-77257fb80abc"
+uuid: "fdce285f-97fe-81b6-8a1c-fe4551906026"
+horo: 7
 typography:
-  partition: crematorium
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - place
-  matrix:
-    - law
-    - place
-  backlinks:
-    - law
-    - place
 signatures:
-  computationUuid: "031559e2-845f-8b9e-a7cb-f839b7324142"
+  computationUuid: "47df6380-0b13-8090-a0d1-bb441a140f3a"
   stages:
     - stage: path
-      stageUuid: "d189d215-c3ad-8fd2-a143-bb7e93e555f5"
+      stageUuid: "dd9dd905-54d7-8489-870a-14ce4ab70d63"
     - stage: trinity
-      stageUuid: "0ce5b81c-65a6-8019-9a7f-c9739d1cf0ca"
+      stageUuid: "bfee8a97-8325-8e52-a2b3-446d72013777"
     - stage: boundary
-      stageUuid: "f6f57e54-2aa2-8e19-932b-c58397a66458"
+      stageUuid: "5fd1fbdc-ac87-883b-be46-0fd116f310a2"
     - stage: links
-      stageUuid: "cd896864-dbbb-8e14-8f5b-433e1d419738"
+      stageUuid: "31b78aec-1cc6-8018-8be7-5a39c462f9fc"
     - stage: horo
-      stageUuid: "ed2ca4c2-9755-8f03-b281-5207f5f8c096"
+      stageUuid: "c21156a7-dda0-8e9a-b8ab-60d15a0907d5"
     - stage: seal
-      stageUuid: "1a6b4695-6798-8894-bb03-13de030e9f3e"
+      stageUuid: "a0c52b30-f3a0-8af9-85b7-175c86955de6"
     - stage: uuid
-      stageUuid: "3b486e1e-4c39-8408-b3c9-d28907a97811"
+      stageUuid: "4508af6c-58f1-8fbd-afdf-6dd0bba90e5f"
 version: 2
 ---
 # crematorium

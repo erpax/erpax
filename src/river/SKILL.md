@@ -2,57 +2,19 @@
 name: river
 description: "Use when reasoning about river as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: river
-coordinate: river · 5/round · 46d23317
-contentUuid: "0b3eb6af-fd40-5351-ae37-3e1acd51fc2b"
-diamondUuid: "b03184d0-60eb-8c49-bcb5-fc550dede1ec"
-uuid: "46d23317-c08a-8ce3-b570-954ccf1f796f"
+coordinate: "river · 5/round · 8409fd81"
+contentUuid: "5537685f-224f-5912-988d-9d61fa2ca042"
+diamondUuid: "d0c6106b-5889-8bb7-b29f-4bd3da2a20c7"
+uuid: "8409fd81-2055-8d50-ad76-e5cba82a27b0"
 horo: 5
-bonds:
-  in:
-    - body
-    - collapse
-    - law
-    - merge
-    - sti
-    - water
-  out:
-    - body
-    - collapse
-    - law
-    - merge
-    - sti
-    - water
 typography:
   partition: river
-  bondDegree: 19
-  neighbors: []
+  bondDegree: 26
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - body
-    - collapse
-    - law
-    - merge
-    - sti
-    - water
-  matrix:
-    - body
-    - collapse
-    - law
-    - merge
-    - sti
-    - water
-  backlinks:
-    - body
-    - collapse
-    - law
-    - merge
-    - sti
-    - water
 signatures:
-  computationUuid: "d55bb254-7131-8f4e-8ec5-f7d9f5f2a1a2"
+  computationUuid: "3551b006-a834-85b9-a467-dcb1ca695cfb"
   stages:
     - stage: path
       stageUuid: "5e382a52-644e-8372-956f-f82379cb678d"
@@ -63,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bede0014-b67d-8e55-a2db-4af8fccbf42c"
     - stage: horo
-      stageUuid: "7eb27260-dcbd-80ae-939b-0c0ff8e2554b"
+      stageUuid: "c4b6843a-aecc-814a-af83-01ddcf98b52c"
     - stage: seal
-      stageUuid: "02031c6a-8b54-8d55-8da9-7df0692cdd41"
+      stageUuid: "ec29584b-b9f3-8542-abfd-e52c473f0603"
     - stage: uuid
-      stageUuid: "224a33b0-022f-88c3-ba6b-d2f166b1c685"
+      stageUuid: "4cdfabec-7823-87dc-ab9a-3ced62e185cd"
 version: 2
 ---
 # river

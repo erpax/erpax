@@ -1,68 +1,35 @@
 ---
 name: childrens
 description: "Use when reasoning about childrens as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/childrens
-coordinate: childrens · 8/crest · 1b726f15
-contentUuid: "04ea13ad-de77-551d-b2bc-9c629935e831"
-diamondUuid: "0731fa41-963e-8e98-aa67-7cc6b53b450a"
-uuid: "1b726f15-cef0-8728-a656-9b84c4152427"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/childrens"
+coordinate: "vocabulary/childrens · 1/base · 67529cc9"
+contentUuid: "0419a8ea-58f0-551c-98d3-4c650617dc41"
+diamondUuid: "e9eb5c67-7ddf-8421-b22d-3820b2358250"
+uuid: "67529cc9-790a-88fc-9ecf-93afcb25c60a"
+horo: 1
 typography:
-  partition: childrens
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "692b224b-5f8a-82bb-abab-41fba713cf86"
+  computationUuid: "66ea8474-188b-8605-9e4e-2b8cdced1bc7"
   stages:
     - stage: path
-      stageUuid: "2b067dcd-d401-81e1-8e4f-d3b61f1d1c6c"
+      stageUuid: "37dd3f86-31e7-89fb-bc8f-0fb86d4ca55d"
     - stage: trinity
-      stageUuid: "eb8ed629-805c-84c8-bbf9-d41f02ee7eda"
+      stageUuid: "27150514-b021-8971-a87c-d4e55f74e592"
     - stage: boundary
-      stageUuid: "be7a7d26-6938-85aa-bfc4-6b33366a4b05"
+      stageUuid: "b25b434f-ee05-8da7-b29b-ed8e48d7b0d9"
     - stage: links
-      stageUuid: "f47c51da-daf3-82e7-aecd-6e1c92a86bc3"
+      stageUuid: "4b3204a2-e345-8d80-8875-b9ab74f01e78"
     - stage: horo
-      stageUuid: "a85856e9-feb2-8e1f-aff5-42fea658b8ea"
+      stageUuid: "55ea2964-3aea-8c54-a74b-4755a9337e03"
     - stage: seal
-      stageUuid: "ce0b444a-dd4a-83f1-9154-a668bcc3ed74"
+      stageUuid: "feb8a64b-93aa-8d62-b2b6-d2b59812084d"
     - stage: uuid
-      stageUuid: "de5c6131-d48f-8452-b360-3501fbcd2769"
+      stageUuid: "e263e5a8-9b01-8fa3-834d-27fa437f80be"
 version: 2
 ---
 # childrens

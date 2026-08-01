@@ -1,112 +1,34 @@
 ---
 name: grazing
 description: "Use when livestock consume standing forage in place — grazing on pasture/rangeland, the rotational/managed/adaptive (AMP) move through paddocks (short impact, long recovery), stocking rate and carrying capacity in animal-unit-months. The range-management activity; its rotation reuses the crop rotation atom."
-atomPath: vocabulary/grazing
-coordinate: grazing · 2/share · 19575fd9
-contentUuid: "2c34034b-8eb2-5a1b-a393-d2f9f8486ef0"
-diamondUuid: "d5192004-75fd-81af-944a-1f2b9b8f11fd"
-uuid: "19575fd9-f338-8697-a46d-a3004b5df68d"
+atomPath: "vocabulary/grazing"
+coordinate: "vocabulary/grazing · 2/share · 6ec1b47c"
+contentUuid: "f62cabb5-5e36-5ed8-9128-b9851cf4dee3"
+diamondUuid: "cb910a87-a0de-8117-8c83-c8099f6a2279"
+uuid: "6ec1b47c-4344-8c67-8ffb-31c99f6ddbcf"
 horo: 2
-bonds:
-  in:
-    - capacity
-    - fertility
-    - flow
-    - fodder
-    - herd
-    - law
-    - leases
-    - livestock
-    - manure
-    - measure
-    - pasture
-    - rotation
-    - soil
-    - throughput
-  out:
-    - capacity
-    - fertility
-    - flow
-    - fodder
-    - herd
-    - law
-    - leases
-    - livestock
-    - manure
-    - measure
-    - pasture
-    - rotation
-    - soil
-    - throughput
 typography:
-  partition: grazing
+  partition: vocabulary
   bondDegree: 47
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - capacity
-    - fertility
-    - flow
-    - fodder
-    - herd
-    - law
-    - leases
-    - livestock
-    - manure
-    - measure
-    - pasture
-    - rotation
-    - soil
-    - throughput
-  matrix:
-    - capacity
-    - fertility
-    - flow
-    - fodder
-    - herd
-    - law
-    - leases
-    - livestock
-    - manure
-    - measure
-    - pasture
-    - rotation
-    - soil
-    - throughput
-  backlinks:
-    - capacity
-    - fertility
-    - flow
-    - fodder
-    - herd
-    - law
-    - leases
-    - livestock
-    - manure
-    - measure
-    - pasture
-    - rotation
-    - soil
-    - throughput
 signatures:
-  computationUuid: "b928d72f-dad1-8b4f-8fe1-d311087fe034"
+  computationUuid: "ea877651-caa8-8d2d-b9c5-72c782702141"
   stages:
     - stage: path
-      stageUuid: "6f385ad1-e02a-822a-84ca-6edc1264c103"
+      stageUuid: "e6d88b7e-ded7-8e8a-9326-6f346b6f5ead"
     - stage: trinity
-      stageUuid: "928b0eaa-7bb2-83c8-ac3e-0ded53dcb5f6"
+      stageUuid: "32059256-305e-89e5-90fe-dabb6db70f9f"
     - stage: boundary
-      stageUuid: "a47392a8-eb37-844f-9379-47f4168e8592"
+      stageUuid: "18ec84e7-0a46-82d1-b4d3-b72602c302bf"
     - stage: links
-      stageUuid: "c9c6ce2d-e609-833c-9529-4c75f972562f"
+      stageUuid: "9b9950e3-760c-8b96-9b48-8b4c671b1a4d"
     - stage: horo
-      stageUuid: "40f96731-711a-80a3-bab3-466fbc1e74b9"
+      stageUuid: "c22c7a61-8842-8ea1-a88f-b650ed98d8ad"
     - stage: seal
-      stageUuid: "873ff206-e3d6-86eb-8d35-c6a9f46a3d8c"
+      stageUuid: "025988ba-abdb-842c-aaac-61f649bb586a"
     - stage: uuid
-      stageUuid: "ab02e8a1-3f5c-8c04-a0f8-d083c8427dec"
+      stageUuid: "623415f7-6bf2-84ee-ba66-59393594c929"
 version: 2
 ---
 # grazing — livestock eating standing forage in place

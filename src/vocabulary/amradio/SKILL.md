@@ -1,63 +1,35 @@
 ---
 name: amradio
 description: "Use when reasoning about amradio as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/amradio
-coordinate: amradio · 2/share · 9189a6bc
-contentUuid: "f91314fd-6f52-5af0-88b3-754eb08c5829"
-diamondUuid: "47d3de53-0f56-84ac-ab4d-977c9e49264a"
-uuid: "9189a6bc-822b-84fa-80cc-c418cac2b0da"
+atomPath: "vocabulary/amradio"
+coordinate: "vocabulary/amradio · 2/share · 92b7b199"
+contentUuid: "67469570-1416-53c9-827a-24bac0ab07f9"
+diamondUuid: "4001e051-c7b1-834a-9449-f10b42c4a0ff"
+uuid: "92b7b199-6f7b-89e0-bf6e-a46418c41aae"
 horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: amradio
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "5238eb7b-dbfc-822a-8c8d-74b4aaeffb24"
+  computationUuid: "887422ce-69dd-806c-bb1f-1f9f425c2d2d"
   stages:
     - stage: path
-      stageUuid: "d8a629af-c591-8eec-a7e1-17ac16af635a"
+      stageUuid: "1b89437e-531a-854f-b39d-f547d51a688f"
     - stage: trinity
-      stageUuid: "add86230-f17c-8f0a-896c-e9d3eb716e00"
+      stageUuid: "83b0f15a-5062-8f5e-b18e-98151bbde583"
     - stage: boundary
-      stageUuid: "b6ba9dd2-a384-8e5b-b3db-5417d297bad5"
+      stageUuid: "7514b27e-6c2a-8023-8ebd-05d8c75e0db3"
     - stage: links
-      stageUuid: "22665d65-5b20-85a9-b191-7be7e482cefd"
+      stageUuid: "62280686-2e1a-8ee2-8370-b255948c980f"
     - stage: horo
-      stageUuid: "f533441a-a05c-8ec0-8c96-325c81e2cabb"
+      stageUuid: "15fc71bf-d137-89e1-bc0d-a6029fb84fa5"
     - stage: seal
-      stageUuid: "2c7f4ce9-0926-8021-b920-e239053668ab"
+      stageUuid: "ddc0c2cb-e90c-8c83-bf3e-5a9c7b3dcdd6"
     - stage: uuid
-      stageUuid: "d95dc997-01c2-8a88-b6f8-135798c9d8bb"
+      stageUuid: "ffc49ca0-9e7b-8dae-a4ff-0ac92128be7c"
 version: 2
 ---
 # amradio

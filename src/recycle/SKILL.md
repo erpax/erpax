@@ -2,91 +2,18 @@
 name: recycle
 description: "Use when reasoning about the corpus's digital waste — the orphan grains (atoms bound to nothing) that are disconnected thoughts, the unreported gap; recycle reconnects them to a genuine relative or returns them to the void, and never fabricates a link."
 atomPath: recycle
-coordinate: recycle · 5/round · 7d325575
-contentUuid: "32b7ff87-02b5-52cb-a21f-f5c704ae50df"
-diamondUuid: "3a3cdcc9-0d68-8fb8-9dcc-90ec11e5c903"
-uuid: "7d325575-2681-86e4-8128-b8d791d8cc36"
-horo: 5
-bonds:
-  in:
-    - balance
-    - coherence
-    - entropy
-    - heart
-    - law
-    - merge
-    - person
-    - place
-    - quantum
-    - thing
-    - void
-    - writing
-    - zeropoint
-  out:
-    - balance
-    - coherence
-    - entropy
-    - heart
-    - law
-    - merge
-    - person
-    - place
-    - quantum
-    - thing
-    - void
-    - writing
-    - zeropoint
+coordinate: "recycle · 8/crest · c6166567"
+contentUuid: "26ae3b27-c41a-590e-8a2d-b546921c8745"
+diamondUuid: "0381e79a-9fc4-872c-a372-3caa8f88ea0b"
+uuid: "c6166567-e638-8a7a-a16d-d1d79ecf45ef"
+horo: 8
 typography:
   partition: recycle
   bondDegree: 42
-  neighbors: []
-standards:
-  - waste computed from entropy.orphans on the live matrix; recycling never fabricates a link
+standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - coherence
-    - entropy
-    - heart
-    - law
-    - merge
-    - person
-    - place
-    - quantum
-    - thing
-    - void
-    - zeropoint
-  matrix:
-    - balance
-    - coherence
-    - entropy
-    - heart
-    - law
-    - merge
-    - person
-    - place
-    - quantum
-    - thing
-    - void
-    - writing
-    - zeropoint
-  backlinks:
-    - balance
-    - coherence
-    - entropy
-    - heart
-    - law
-    - merge
-    - person
-    - place
-    - quantum
-    - thing
-    - void
-    - writing
-    - zeropoint
 signatures:
-  computationUuid: "a391e5d2-a486-8ab1-af83-3dbf40fee0f3"
+  computationUuid: "d939c5de-be66-801e-8b37-b738995a06a7"
   stages:
     - stage: path
       stageUuid: "8cb7dfdf-998b-8663-b9e7-29b591954eee"
@@ -97,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f701fbd6-27cc-8f92-b585-28e9374ad8b8"
     - stage: horo
-      stageUuid: "2b994aac-979b-8776-8942-b6e49a578e3f"
+      stageUuid: "ad707136-63da-8c2f-a1f8-a9c2fd603c69"
     - stage: seal
-      stageUuid: "5bea361f-f5c9-8340-8332-74b0b7f28157"
+      stageUuid: "ecaacf7b-17bf-8156-b10e-c3601dee42ba"
     - stage: uuid
-      stageUuid: "dc1d99ca-ff24-8c16-ac97-8f4e4eb9f4ba"
+      stageUuid: "944ea06d-3928-80b3-af08-72dca2090fdf"
 version: 2
 ---
 # recycle — quantum recycle the digital waste

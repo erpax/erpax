@@ -1,168 +1,35 @@
 ---
 name: creative
 description: "Use when reasoning about creative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/creative
-coordinate: creative · 2/share · c78bd623
-contentUuid: "c6f03b29-f1a0-52d7-a117-2275690fe2a8"
-diamondUuid: "4620691e-9af5-8134-8044-d3ec2e4d990f"
-uuid: "c78bd623-a6b2-8cb0-bcc8-2230e5a8b918"
+atomPath: "vocabulary/creative"
+coordinate: "vocabulary/creative · 2/share · abfe8e69"
+contentUuid: "46c19f92-fffe-51dd-bb0e-d2583c61013e"
+diamondUuid: "c76328f4-ad9a-85b6-a99f-82f4b28faa93"
+uuid: "abfe8e69-9910-8706-a564-2b70bde52807"
 horo: 2
-bonds:
-  in:
-    - abridged
-    - abstract
-    - archived
-    - artform
-    - atlas
-    - audiobook
-    - backstory
-    - barcode
-    - chapter
-    - citation
-    - collapse
-    - diagram
-    - encodes
-    - isbn
-    - issn
-    - law
-    - logo
-    - merge
-    - pagination
-    - painting
-    - periodical
-    - photo
-    - photos
-    - poster
-    - season
-    - series
-    - status
-    - sti
-    - work
-  out:
-    - abridged
-    - abstract
-    - archived
-    - artform
-    - atlas
-    - audiobook
-    - backstory
-    - barcode
-    - chapter
-    - citation
-    - collapse
-    - diagram
-    - encodes
-    - isbn
-    - issn
-    - law
-    - logo
-    - merge
-    - pagination
-    - painting
-    - periodical
-    - photo
-    - photos
-    - poster
-    - season
-    - series
-    - status
-    - sti
-    - work
 typography:
-  partition: creative
+  partition: vocabulary
   bondDegree: 90
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - encodes
-    - law
-    - merge
-    - season
-    - series
-    - status
-    - sti
-    - work
-  matrix:
-    - abridged
-    - abstract
-    - archived
-    - artform
-    - atlas
-    - audiobook
-    - backstory
-    - barcode
-    - chapter
-    - citation
-    - collapse
-    - diagram
-    - encodes
-    - isbn
-    - issn
-    - law
-    - logo
-    - merge
-    - pagination
-    - painting
-    - periodical
-    - photo
-    - photos
-    - poster
-    - season
-    - series
-    - status
-    - sti
-    - work
-  backlinks:
-    - abridged
-    - abstract
-    - archived
-    - artform
-    - atlas
-    - audiobook
-    - backstory
-    - barcode
-    - chapter
-    - citation
-    - collapse
-    - diagram
-    - encodes
-    - isbn
-    - issn
-    - law
-    - logo
-    - merge
-    - pagination
-    - painting
-    - periodical
-    - photo
-    - photos
-    - poster
-    - season
-    - series
-    - status
-    - sti
-    - work
 signatures:
-  computationUuid: "515b37d9-064e-859c-a874-a2f49e774a66"
+  computationUuid: "fe7f28a2-d45e-8025-a261-e4c141acfa7d"
   stages:
     - stage: path
-      stageUuid: "e5caa783-c747-8019-a77e-1ffcd92d8fc2"
+      stageUuid: "83085a0e-770c-83fe-bb73-c2a787199a32"
     - stage: trinity
-      stageUuid: "1371efc3-1b44-86cb-9654-69997dd19cb2"
+      stageUuid: "9ecd28ac-45ff-8b2a-98b7-6a3c1bad9cd1"
     - stage: boundary
-      stageUuid: "fd32342b-eed2-804e-83c1-d592e74b8128"
+      stageUuid: "63c40a0e-e836-866e-a9f6-726fa77a1639"
     - stage: links
-      stageUuid: "8fbefb96-5ff8-81bd-928a-a040c2fc6c7a"
+      stageUuid: "e1a0b46c-bd85-8120-aed6-e2e09cecd53e"
     - stage: horo
-      stageUuid: "fd6f1bb6-5fc8-854c-90a6-21b286dc77dd"
+      stageUuid: "3611ccd5-3ca0-8942-9a7d-156f8a332d30"
     - stage: seal
-      stageUuid: "c2417ea0-99fd-8d48-8490-b19206353a81"
+      stageUuid: "b6ffde41-8dc0-87de-98be-438a1745b160"
     - stage: uuid
-      stageUuid: "32c42a64-1b68-80a4-8aee-b48cbaeeaeb6"
+      stageUuid: "9e1c38d6-4825-8177-ab04-47cd888035c6"
 version: 2
 ---
 # creative

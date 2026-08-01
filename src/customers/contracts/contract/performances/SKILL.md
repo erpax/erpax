@@ -2,41 +2,14 @@
 name: performances
 description: "Use when tracking performance milestones and control-transfer events that gate revenue recognition — planned vs. actual completion dates, over-time or point-in-time determination per IFRS-15 §31-35, acceptance criteria, and associated invoice link. The milestone control-transfer collection."
 atomPath: "customers/contracts/contract/performances"
-coordinate: "customers/contracts/contract/performances · 2/share · d3b2c789"
-contentUuid: "40d903e4-2758-579b-93bf-9908a444d32f"
-diamondUuid: "b7f0781f-538f-840c-94b9-4f21efba3e6a"
-uuid: "d3b2c789-64c6-8017-afac-2dc94b553d7d"
+coordinate: "customers/contracts/contract/performances · 2/share · 73c93a46"
+contentUuid: "add56900-7c4b-5c58-a9b0-15aebabf113a"
+diamondUuid: "6bb534d1-c479-8ae5-b5f6-392a97bed560"
+uuid: "73c93a46-6c59-8c8e-a957-0887679c469c"
 horo: 2
-bonds:
-  in:
-    - accounting
-    - contract
-    - contracts
-    - deferral
-    - deferredrevenue
-    - invoices
-    - law
-    - obligations
-    - proof
-    - recognition
-    - standard
-    - transaction
-  out:
-    - accounting
-    - contracts
-    - deferral
-    - deferredrevenue
-    - invoices
-    - law
-    - obligations
-    - proof
-    - recognition
-    - standard
-    - transaction
 typography:
   partition: customers
   bondDegree: 33
-  neighbors: []
 standards:
   - "ASC-606"
   - "IAS-1"
@@ -59,41 +32,8 @@ standards:
   - "US-GAAP ASC-606-10-25-27 transfer-of-control"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - invoices
-    - law
-    - obligations
-    - proof
-    - standard
-    - transaction
-  matrix:
-    - accounting
-    - contracts
-    - deferral
-    - deferredrevenue
-    - invoices
-    - law
-    - obligations
-    - proof
-    - recognition
-    - standard
-    - transaction
-  backlinks:
-    - accounting
-    - contracts
-    - deferral
-    - deferredrevenue
-    - invoices
-    - law
-    - obligations
-    - proof
-    - recognition
-    - standard
-    - transaction
 signatures:
-  computationUuid: "bfc45118-2380-81d6-bf31-047917159718"
+  computationUuid: "04fe1cd9-d114-8d9f-a2f9-04d31ec60dcb"
   stages:
     - stage: path
       stageUuid: "cb42c745-6dbc-87f3-aac0-82979dadd14c"
@@ -104,11 +44,11 @@ signatures:
     - stage: links
       stageUuid: "e3fa67ff-7cce-8031-a1a9-5f62cab2ed35"
     - stage: horo
-      stageUuid: "d7c5740d-12e1-8585-8118-d4d14e85c18a"
+      stageUuid: "321b746c-ec8b-8d4a-b2c7-90f36d713b25"
     - stage: seal
       stageUuid: "0f31a180-1b87-878a-b48c-0d791e459c3d"
     - stage: uuid
-      stageUuid: "ad236f61-3c84-8f05-8ed8-a816acade4b3"
+      stageUuid: "7d33a7c9-a2db-84a3-9dba-cff52aebcc50"
 version: 2
 ---
 # contract-performance

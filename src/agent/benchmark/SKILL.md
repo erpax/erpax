@@ -3,31 +3,13 @@ name: benchmark
 description: "Use when measuring an AI model on real work rather than on problems whose answers are already known — the published standard behind agent/receipt. Three axes with their boundaries travelling beside them: precision (claims that held / claims made), efficiency (delivered / delivered+rework), and security as an INCIDENT COUNT that is never softened into a ratio. A row exists only for a model actually run on this corpus; nothing is inferred from a model card, a parameter count or a reputation, and a dirty security record never outranks a clean one."
 atomPath: "agent/benchmark"
 coordinate: "agent/benchmark"
-contentUuid: "94341c08-8122-540c-ba03-93770c259c2c"
+contentUuid: "c8a97c7a-4b87-57c6-b430-144f7ec4fab2"
 diamondUuid: "6123d060-7af8-8781-a50f-5982c8cab18d"
-bonds:
-  in:
-    - agent
-  out: []
 typography:
   partition: agent
   bondDegree: 9
-  neighbors:
-    - agent
-    - diamond
-    - hallucination
-    - purity
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agent
-    - constitution
-    - law
-    - local
-    - rules
-  matrix: []
-  backlinks: []
 signatures:
   computationUuid: "56ad82f5-78e6-8344-8621-0693696c795e"
   stages:

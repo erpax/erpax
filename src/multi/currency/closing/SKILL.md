@@ -2,23 +2,14 @@
 name: closing
 description: "Use when implementing or referencing Multi-Currency Closing Standard."
 atomPath: "multi/currency/closing"
-coordinate: "multi/currency/closing · 7/descent · a3fe5250"
-contentUuid: "f348088d-1801-53ac-83ee-f0604b172161"
-diamondUuid: "df3bf7a6-7b46-8fb4-8140-a82cc85d1396"
-uuid: "a3fe5250-53b0-8f15-983c-ca2bb6f7c222"
-horo: 7
-bonds:
-  in:
-    - checker
-    - currency
-    - law
-  out:
-    - checker
-    - law
+coordinate: "multi/currency/closing · 2/share · 6411be0b"
+contentUuid: "8a6214cb-1724-5126-a01b-2c2519db8fd4"
+diamondUuid: "29d3ad8c-6508-8864-822c-1992dd9a552f"
+uuid: "6411be0b-1a97-81b9-926c-0cc7c950564c"
+horo: 2
 typography:
   partition: multi
-  bondDegree: 8
-  neighbors: []
+  bondDegree: 6
 standards:
   - "EU-2016/679"
   - "GDPR:2016/679 Art. 32 Security of processing"
@@ -39,17 +30,8 @@ standards:
   - "XBRL-GL General Ledger (multi-currency)"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-  matrix:
-    - checker
-    - law
-  backlinks:
-    - checker
-    - law
 signatures:
-  computationUuid: "fd260fa1-01dd-8d9b-a366-69b942eeeb2d"
+  computationUuid: "dd688402-39bd-8a79-aebf-cd50bd048ce4"
   stages:
     - stage: path
       stageUuid: "ee296f9c-14ae-88ee-b819-bc23bebfb1f0"
@@ -58,13 +40,13 @@ signatures:
     - stage: boundary
       stageUuid: "2c85414f-ae80-8278-bf29-b7dfd9b631e5"
     - stage: links
-      stageUuid: "30df3af0-a1a0-89ff-84b6-af7314a98975"
+      stageUuid: "051bb4dc-36bc-8126-b782-da28c3f200c6"
     - stage: horo
-      stageUuid: "67532478-734c-8898-bde9-d3b4af30a269"
+      stageUuid: "f39050a1-61f2-8fa9-afe6-e30d554fe0f2"
     - stage: seal
       stageUuid: "f3e26392-4109-8e84-ab19-f0edfaa5b97b"
     - stage: uuid
-      stageUuid: "e2438af4-badf-8529-97df-235a5b865c4d"
+      stageUuid: "48c846d6-2c5f-8eb4-8c43-d65af845db88"
 version: 2
 ---
 # Multi-Currency Closing Standard

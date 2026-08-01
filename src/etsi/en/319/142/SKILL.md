@@ -2,25 +2,19 @@
 name: "142"
 description: "Use when implementing or referencing `src/standards/etsi-en-319-142/`."
 atomPath: "etsi/en/319/142"
-coordinate: "etsi/en/319/142 · 2/share · 082c7f90"
-contentUuid: "782c68d2-c587-5720-a2ff-88f69399d786"
-diamondUuid: "7edd7512-51c2-808d-bac5-f955325fb93d"
-uuid: "082c7f90-a54e-88b5-93fc-1d8ef44ac3ab"
+coordinate: "etsi/en/319/142 · 2/share · 21cd5c64"
+contentUuid: "ba560b51-5985-5fcd-b15c-953b69166cd2"
+diamondUuid: "8d844620-e586-84f2-89e6-3863515be4c5"
+uuid: "21cd5c64-83f6-8ba7-a30b-63e9fbfe4948"
 horo: 2
-bonds:
-  in:
-    - readme
-  out: []
 typography:
   partition: etsi
   bondDegree: 0
-  neighbors: []
 standards:
   - "ETSI-EN-319-142"
   - "ETSI-EN-319-142-1 v1.1.1 pades-baseline-profile"
   - "ETSI-EN-319-142-1 v1.1.1 pades-baseline-profile`"
   - "EU 910/2014 eidas qualified-electronic-signature"
-  - "EU-2000/31"
   - "EU-765/2008"
   - "ISO-32000"
   - "ISO-32000-1:2008 §12.8 pdf-signature-dictionary"
@@ -28,12 +22,8 @@ standards:
   - "RFC-5652"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink: []
-  matrix: []
-  backlinks: []
 signatures:
-  computationUuid: "e8594785-ef0f-87e5-82a8-116941973df9"
+  computationUuid: "76c68ca8-95e5-85e9-90ae-693531eb9fdf"
   stages:
     - stage: path
       stageUuid: "53b585ee-4028-8dd8-be66-7258253bcddf"
@@ -44,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "4a3346d1-d774-8030-b03d-38926fadaac0"
     - stage: horo
-      stageUuid: "ee9b42a0-3e22-874e-8c5e-6edf16aa8808"
+      stageUuid: "818e1a52-2882-8a33-9fa7-bf31306be3cd"
     - stage: seal
       stageUuid: "aa66a1f5-b3c3-820e-92c9-b0504b220a6e"
     - stage: uuid
-      stageUuid: "d5aa9734-57d0-8961-a024-a05f065caf12"
+      stageUuid: "f6a33f95-3004-8dd3-905b-3212b2fed956"
 version: 2
 ---
 # `src/standards/etsi-en-319-142/`

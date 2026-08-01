@@ -1,68 +1,35 @@
 ---
 name: generically
 description: "Use when reasoning about generically as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/generically
-coordinate: generically · 1/base · 4c82911d
-contentUuid: "c01dbd0d-9206-59f8-9621-f7e56f685d42"
-diamondUuid: "df1de238-79c1-8790-963c-68cd14f8232b"
-uuid: "4c82911d-610e-8df2-9393-3a93103b5cce"
-horo: 1
-bonds:
-  in:
-    - available
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - available
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/generically"
+coordinate: "vocabulary/generically · 8/crest · 55d963eb"
+contentUuid: "7cf37164-025d-592a-96cd-94fa3b2a433b"
+diamondUuid: "50fb9db7-f086-8b54-b1d0-9e415edaf041"
+uuid: "55d963eb-fcc5-843f-a8d8-303fa6f23ba1"
+horo: 8
 typography:
-  partition: generically
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - available
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - available
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - available
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "07f79260-7251-802f-ba4c-55f464f30726"
+  computationUuid: "f13eb420-559d-8d5f-8c80-c77a20bd3619"
   stages:
     - stage: path
-      stageUuid: "8f85ca95-17ea-8148-8e7f-7522dfb6d9f1"
+      stageUuid: "458c6f0a-4ea2-8578-8acf-f0b548120831"
     - stage: trinity
-      stageUuid: "130bc0eb-892c-807d-bd9b-fc8a8a31beac"
+      stageUuid: "5f42a5a5-6555-8de3-9443-24a0b01bea2f"
     - stage: boundary
-      stageUuid: "51a84d56-11b5-83f8-a600-daf9b935792d"
+      stageUuid: "9e028f81-5e7f-8eb8-8eb2-6e70d65360da"
     - stage: links
-      stageUuid: "839d6e1d-b848-8640-9038-43d3bf8abe14"
+      stageUuid: "ad0c9ad0-da04-8dc8-90f4-820416d6ec1a"
     - stage: horo
-      stageUuid: "36816164-42b6-80f2-92d6-6b9ad316cee4"
+      stageUuid: "bf04b003-3217-8cb0-9393-3dbfdfefc356"
     - stage: seal
-      stageUuid: "4c4c863e-eb6e-84c0-b333-2dded65626e3"
+      stageUuid: "627a7a02-091b-8f26-bcc3-e964ce17b4cc"
     - stage: uuid
-      stageUuid: "b5f27fbb-6557-8bb2-9eb3-5b62ea1ec285"
+      stageUuid: "4ff8a808-df64-89ca-8f21-6bbe21fbe7fa"
 version: 2
 ---
 # generically

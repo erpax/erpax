@@ -1,139 +1,34 @@
 ---
 name: justice
 description: "Use when managing judicial/law-enforcement operations — case management, court proceedings, legal evidence, offence/violation records, or police/prosecution coordination in public order (COFOG 03 sub-function)."
-atomPath: vocabulary/justice
-coordinate: justice · 7/descent · a4c4c1cc
-contentUuid: "47cbce88-7515-57f2-8439-ec130268c5fb"
-diamondUuid: "75855144-b931-8058-8c03-305c8c3ad268"
-uuid: "a4c4c1cc-43f5-89fe-845b-9baf0f0dff90"
+atomPath: "vocabulary/justice"
+coordinate: "vocabulary/justice · 7/descent · e91bc215"
+contentUuid: "056084a7-e696-5ad0-907c-fcc4d406cd6d"
+diamondUuid: "e00d4099-17e2-8517-a7fb-4437722ec6df"
+uuid: "e91bc215-6b51-8ec1-af0d-5d72670e86ee"
 horo: 7
-bonds:
-  in:
-    - access
-    - accounting
-    - bahai
-    - case
-    - cases
-    - collections
-    - confucianism
-    - duality
-    - fields
-    - fractal
-    - holographic
-    - hooks
-    - identity
-    - judaism
-    - law
-    - merge
-    - shia
-    - sikhism
-    - standard
-    - transaction
-    - zoroastrianism
-  out:
-    - access
-    - accounting
-    - bahai
-    - case
-    - cases
-    - collections
-    - confucianism
-    - duality
-    - fields
-    - fractal
-    - holographic
-    - hooks
-    - identity
-    - judaism
-    - law
-    - merge
-    - shia
-    - sikhism
-    - standard
-    - transaction
-    - zoroastrianism
 typography:
-  partition: justice
-  bondDegree: 0
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 64
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - accounting
-    - collections
-    - duality
-    - fields
-    - fractal
-    - holographic
-    - hooks
-    - identity
-    - law
-    - merge
-    - standard
-    - transaction
-  matrix:
-    - access
-    - accounting
-    - bahai
-    - case
-    - cases
-    - collections
-    - confucianism
-    - duality
-    - fields
-    - fractal
-    - holographic
-    - hooks
-    - identity
-    - judaism
-    - law
-    - merge
-    - shia
-    - sikhism
-    - standard
-    - transaction
-    - zoroastrianism
-  backlinks:
-    - access
-    - accounting
-    - bahai
-    - case
-    - cases
-    - collections
-    - confucianism
-    - duality
-    - fields
-    - fractal
-    - holographic
-    - hooks
-    - identity
-    - judaism
-    - law
-    - merge
-    - shia
-    - sikhism
-    - standard
-    - transaction
-    - zoroastrianism
 signatures:
-  computationUuid: "4128fb6c-068f-8f07-b053-c324137f83d6"
+  computationUuid: "beb9447b-fedd-813c-95ea-8a9e2fcdd2f9"
   stages:
     - stage: path
-      stageUuid: "f429db21-4413-89a7-882d-ba72eee2c72d"
+      stageUuid: "7b22f61a-19fa-82ee-862f-5bda40ff9020"
     - stage: trinity
-      stageUuid: "a76b25c8-a067-8e89-bf6a-a2a1174243c8"
+      stageUuid: "c7e28f3a-0a2d-8638-b1b1-509cf1271aae"
     - stage: boundary
-      stageUuid: "f44fa669-b860-89a6-8009-27e3e021a864"
+      stageUuid: "0a5a32ca-a54b-81e4-9e64-14fb492d219f"
     - stage: links
-      stageUuid: "7c87e3ab-8f81-82cf-bcd9-44e9a5eae497"
+      stageUuid: "1ef9aa1e-4c60-8af8-974a-11ba4fe13074"
     - stage: horo
-      stageUuid: "76f8b92f-7b70-813b-98e7-32740c5cdb83"
+      stageUuid: "33e7b76a-322c-8bce-9897-568beb6d323f"
     - stage: seal
-      stageUuid: "675b9c0b-0985-81bf-86e8-89cdc696a8a9"
+      stageUuid: "a2697d0d-ba9d-89a8-9f87-eda51f577636"
     - stage: uuid
-      stageUuid: "821d2fc9-3c9d-8086-a56e-ae1e46a65639"
+      stageUuid: "e879f805-5315-876f-b2a9-02f7f7edf86b"
 version: 2
 ---
 # justice

@@ -1,113 +1,34 @@
 ---
 name: cycle
 description: Use when modelling one cycle — the singular model of the cycles collection (the plural store); one recurrence of a repeating process or period.
-atomPath: vocabulary/cycle
-coordinate: cycle · 7/descent · b6b2df14
-contentUuid: "ee6506d1-86d9-5b89-a725-7b6cb702b376"
-diamondUuid: "b46e10f4-55a1-8a53-aae9-18b228f0b102"
-uuid: "b6b2df14-f172-88d8-9f5d-db66b9cc8169"
-horo: 7
-bonds:
-  in:
-    - animism
-    - balance
-    - buddhism
-    - catholicism
-    - confucianism
-    - cycles
-    - hinduism
-    - islam
-    - judaism
-    - orphism
-    - paganism
-    - ritual
-    - shamanism
-    - shinto
-    - sikhism
-    - taoism
-    - time
-  out:
-    - animism
-    - balance
-    - buddhism
-    - catholicism
-    - confucianism
-    - cycles
-    - hinduism
-    - islam
-    - judaism
-    - orphism
-    - paganism
-    - ritual
-    - shamanism
-    - shinto
-    - sikhism
-    - taoism
-    - time
+atomPath: "vocabulary/cycle"
+coordinate: "vocabulary/cycle · 1/base · 6fa60652"
+contentUuid: "014c726f-6c23-5bab-98aa-29238c484420"
+diamondUuid: "2f748080-43b3-8ed7-866b-eda7322c1c0b"
+uuid: "6fa60652-9240-83e2-8261-39492c066152"
+horo: 1
 typography:
-  partition: cycle
-  bondDegree: 51
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 54
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - cycles
-    - time
-  matrix:
-    - animism
-    - balance
-    - buddhism
-    - catholicism
-    - confucianism
-    - cycles
-    - hinduism
-    - islam
-    - judaism
-    - orphism
-    - paganism
-    - ritual
-    - shamanism
-    - shinto
-    - sikhism
-    - taoism
-    - time
-  backlinks:
-    - animism
-    - balance
-    - buddhism
-    - catholicism
-    - confucianism
-    - cycles
-    - hinduism
-    - islam
-    - judaism
-    - orphism
-    - paganism
-    - ritual
-    - shamanism
-    - shinto
-    - sikhism
-    - taoism
-    - time
 signatures:
-  computationUuid: "1e971aab-ae81-87ce-b098-efefa5878ab1"
+  computationUuid: "f8852845-8919-8851-897a-396e2a6c1d52"
   stages:
     - stage: path
-      stageUuid: "ce120e49-9568-863d-b535-862f802726b8"
+      stageUuid: "d5e4bc14-e7c2-883a-a307-0c1f482fd733"
     - stage: trinity
-      stageUuid: "f73350ef-611a-8fa8-a554-3754d8488438"
+      stageUuid: "7c14bb2d-ec05-8673-8787-0e49393b55c8"
     - stage: boundary
-      stageUuid: "17b047b8-187b-8379-a4ab-cc1f4fb3e00a"
+      stageUuid: "0021a152-b713-8e68-b9e6-7938e64f3287"
     - stage: links
-      stageUuid: "bfbbf567-c246-878e-b5d1-d8cf24be621f"
+      stageUuid: "5c4aae47-8d13-8b0f-bea8-16bc7fc1607a"
     - stage: horo
-      stageUuid: "8449de38-4b1a-80b0-9f9d-001b495d308d"
+      stageUuid: "1724c2d6-034d-86bf-8402-9ad3e536af1c"
     - stage: seal
-      stageUuid: "e7fff082-c798-8d00-9bdf-d93f44692a0b"
+      stageUuid: "62309c21-9950-8aa0-8a38-d32c991f6234"
     - stage: uuid
-      stageUuid: "54edd283-5c89-81fe-a6a3-6582ddb9cc06"
+      stageUuid: "a0966caa-ab56-8ff0-83e0-d27fe9fa58b3"
 version: 2
 ---
 # cycle — the model of one [[cycles]] row

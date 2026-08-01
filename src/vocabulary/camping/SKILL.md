@@ -1,68 +1,35 @@
 ---
 name: camping
 description: "Use when reasoning about camping as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/camping
-coordinate: camping · 7/descent · b27f0ef2
-contentUuid: "dceafee3-082a-55d5-abc1-dcc82b3edd69"
-diamondUuid: "28e96ed5-b2c9-8bce-9e04-f79571b6ca0f"
-uuid: "b27f0ef2-93bf-84ff-86d8-2dc0084e2251"
+atomPath: "vocabulary/camping"
+coordinate: "vocabulary/camping · 7/descent · 0d553a62"
+contentUuid: "836e3c50-8546-5390-88f2-6cf8661cda60"
+diamondUuid: "2bd2db32-1bc3-86f1-8d8a-8e56e9611677"
+uuid: "0d553a62-da3c-851f-81f2-9dca825d855e"
 horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - pitch
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - pitch
-    - sti
 typography:
-  partition: camping
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - pitch
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - pitch
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - pitch
-    - sti
 signatures:
-  computationUuid: "82d8ef6f-5acc-8d1c-9f3c-bcbf89dbbf46"
+  computationUuid: "3681d730-c96a-8770-a7d0-b76d0ba4fa98"
   stages:
     - stage: path
-      stageUuid: "7e3d7968-5369-831f-8480-220c0f15a40a"
+      stageUuid: "aad68ed4-14a2-89cc-ae44-6bdaef70f420"
     - stage: trinity
-      stageUuid: "5ef95c27-8493-811c-9f3c-263f9b96112b"
+      stageUuid: "f84a80cd-e268-830a-9d1a-8c2fe42ee79b"
     - stage: boundary
-      stageUuid: "b350396b-06e9-8a17-a43c-070cac75022a"
+      stageUuid: "01a42a34-392f-8bf1-98cd-0971aa29b5e1"
     - stage: links
-      stageUuid: "b356299b-973c-881b-9d5d-7ff2140f5437"
+      stageUuid: "60cc2011-aaab-8a42-8e5f-b4ee8aefd737"
     - stage: horo
-      stageUuid: "be368ef7-ecf4-8dcd-869b-99fa54894373"
+      stageUuid: "297522bc-2f9c-84fd-bc82-f63398e1bbbe"
     - stage: seal
-      stageUuid: "83d1790e-0432-8ec2-8041-0d9d1701beaf"
+      stageUuid: "580146ef-49d9-8d19-8e7c-1be3aa401068"
     - stage: uuid
-      stageUuid: "12481be7-6054-88e0-a2fb-e11f36b7cb60"
+      stageUuid: "c068ae8a-7a16-8847-86d0-83b4059b20a5"
 version: 2
 ---
 # camping

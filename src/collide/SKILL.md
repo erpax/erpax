@@ -2,102 +2,19 @@
 name: collide
 description: "Use when folding two atoms into one — collide is the deferred INHALE of development, the DRY collapse that merges the expansion back toward one and so lowers entropy; it DEFINES the fold collide(a,b) = merge two into one but is applied LATER, never during the exhale."
 atomPath: collide
-coordinate: "collide · 1/base · 8b7c6fcc"
-contentUuid: "95d837f8-63e9-5843-9961-7c01247a3436"
-diamondUuid: "2c733daf-2a72-8d46-b668-1de3d03b8302"
-uuid: "8b7c6fcc-84f3-80d1-9493-8925c501734c"
-horo: 1
-bonds:
-  in:
-    - breath
-    - collapse
-    - development
-    - dry
-    - duality
-    - entropy
-    - gravity
-    - horo
-    - law
-    - mass
-    - matrix
-    - merge
-    - one
-    - trinity
-    - uuid
-  out:
-    - breath
-    - collapse
-    - development
-    - dry
-    - duality
-    - entropy
-    - gravity
-    - horo
-    - law
-    - mass
-    - matrix
-    - merge
-    - one
-    - trinity
-    - uuid
+coordinate: "collide · 2/share · 8af77ec2"
+contentUuid: "9bb38308-9ffb-5ecb-beb4-c5421cc3f2ca"
+diamondUuid: "4cf99cb3-c30a-8121-bcb0-2644e7d08fb8"
+uuid: "8af77ec2-aaf8-8464-8972-4088ea479371"
+horo: 2
 typography:
   partition: collide
   bondDegree: 45
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - breath
-    - collapse
-    - development
-    - dry
-    - duality
-    - entropy
-    - gravity
-    - horo
-    - law
-    - mass
-    - matrix
-    - merge
-    - one
-    - trinity
-    - uuid
-  matrix:
-    - breath
-    - collapse
-    - development
-    - dry
-    - duality
-    - entropy
-    - gravity
-    - horo
-    - law
-    - mass
-    - matrix
-    - merge
-    - one
-    - trinity
-    - uuid
-  backlinks:
-    - breath
-    - collapse
-    - development
-    - dry
-    - duality
-    - entropy
-    - gravity
-    - horo
-    - law
-    - mass
-    - matrix
-    - merge
-    - one
-    - trinity
-    - uuid
 signatures:
-  computationUuid: "b0d4b4ed-5d1b-8a7a-8aef-27d8c0834653"
+  computationUuid: "8ed45fda-bafd-8d02-8044-6ff680cf1f6c"
   stages:
     - stage: path
       stageUuid: "ff111fa8-69b3-82fd-bdf1-1fbbb3aae960"
@@ -108,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3b604740-f985-8b39-9b18-b7346b0f64d4"
     - stage: horo
-      stageUuid: "605caca1-9ec5-8005-b5e7-59e32e625155"
+      stageUuid: "a05b8d22-0eb9-8595-8bbf-26247aa5ef65"
     - stage: seal
       stageUuid: "b5ddab43-b5a6-86d9-9c10-6066eb0753f1"
     - stage: uuid
-      stageUuid: "aa622797-3695-8416-adab-c130ce68624b"
+      stageUuid: "1d84caed-7a42-8baa-a359-ee2b025c8fb5"
 version: 2
 ---
 # collide — the inhale of development, deferred (fold two into one)

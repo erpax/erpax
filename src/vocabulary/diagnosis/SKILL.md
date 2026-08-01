@@ -1,57 +1,35 @@
 ---
 name: diagnosis
 description: Use when reasoning about diagnosis — One or more alternative conditions considered in the differential diagnosis process as output of a diagnosis process.
-atomPath: vocabulary/diagnosis
-coordinate: diagnosis · 7/descent · 8350e56e
-contentUuid: "21619cbb-9456-5b77-b9f4-817fe2bb3c7f"
-diamondUuid: "42ffa217-12b3-89b2-984f-17f40161a3e5"
-uuid: "8350e56e-b083-8f1f-bfa4-c72040049ecf"
-horo: 7
-bonds:
-  in:
-    - differential
-    - emr
-    - law
-  out:
-    - differential
-    - emr
-    - law
+atomPath: "vocabulary/diagnosis"
+coordinate: "vocabulary/diagnosis · 2/share · 125c985a"
+contentUuid: "380d0a4f-5be5-51a4-ac17-87ce04fa34bd"
+diamondUuid: "0eeb2880-c980-8a76-8482-7d0678d18b4f"
+uuid: "125c985a-0604-821e-9dce-e0a3054df669"
+horo: 2
 typography:
-  partition: diagnosis
-  bondDegree: 10
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 21
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - differential
-    - law
-  matrix:
-    - differential
-    - emr
-    - law
-  backlinks:
-    - differential
-    - emr
-    - law
 signatures:
-  computationUuid: "d3ccf2a8-41f9-8da6-8315-2f5c8c3143bd"
+  computationUuid: "20cbd5b0-4c47-8a5b-b3b0-fb7db25f3520"
   stages:
     - stage: path
-      stageUuid: "b839d649-ded6-8df6-a07c-5ace9ff011a3"
+      stageUuid: "2a5d8e97-f594-8d90-8a8d-8861736ad8b6"
     - stage: trinity
-      stageUuid: "4d2b1867-0c5b-88b5-bb6e-0dc7d7ea8f3d"
+      stageUuid: "50fc322b-0723-8e2f-adf8-c08081238189"
     - stage: boundary
-      stageUuid: "c816061a-1697-8cd6-a3e7-a4a388a7e972"
+      stageUuid: "ab583ba5-7b1b-8f50-a196-adfd2b8822f2"
     - stage: links
-      stageUuid: "e409ac78-0388-8ab7-92a1-449d9b9b5b5c"
+      stageUuid: "f3c005e7-80cb-89b7-a539-4d000740e6b4"
     - stage: horo
-      stageUuid: "88cb4718-3192-85f3-b051-6b39e5bf82b0"
+      stageUuid: "964a9e0e-21e0-8803-83c9-67e91df45897"
     - stage: seal
-      stageUuid: "62843c7f-b396-8bef-9247-a3d26db3bf85"
+      stageUuid: "d9d545b3-d40a-8109-8826-5b20f0bccf8c"
     - stage: uuid
-      stageUuid: "ee17f3f7-246d-8940-b1c3-0774bb9485af"
+      stageUuid: "604d3b6e-eb0f-82f4-a569-d18a0816868a"
 version: 2
 ---
 # diagnosis

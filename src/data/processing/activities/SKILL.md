@@ -2,53 +2,14 @@
 name: activities
 description: "Use when maintaining the GDPR Art.30 Records of Processing Activities (RoPA) — documenting each processing activity's purpose, lawful basis, data categories, retention period, third-country transfer safeguards, and scheduling annual DPO reviews. The controller/processor RoPA register."
 atomPath: "data/processing/activities"
-coordinate: "data/processing/activities · 5/round · 069f1260"
-contentUuid: "cc2a0316-b22d-5504-ab1d-2c4aa0b9d520"
-diamondUuid: "e99f3178-0232-838e-8b05-6b14db72541a"
-uuid: "069f1260-a6ff-855c-bcad-d6a85301e702"
-horo: 5
-bonds:
-  in:
-    - attribution
-    - customers
-    - engagement
-    - escalation
-    - interview
-    - law
-    - leads
-    - leadscore
-    - opportunities
-    - processing
-    - prospect
-    - queue
-    - retention
-    - sentiment
-    - sla
-    - ticket
-    - users
-    - vendors
-  out:
-    - attribution
-    - customers
-    - engagement
-    - escalation
-    - interview
-    - law
-    - leads
-    - leadscore
-    - opportunities
-    - prospect
-    - queue
-    - retention
-    - sentiment
-    - sla
-    - ticket
-    - users
-    - vendors
+coordinate: "data/processing/activities · 2/share · 1cc85a5b"
+contentUuid: "2c3310e8-ae84-5de9-a829-504970ce52ac"
+diamondUuid: "d8f0fa1e-2bca-8b7a-a874-deab6dd0ce7a"
+uuid: "1cc85a5b-39cd-8c22-a717-c67112ce1f02"
+horo: 2
 typography:
   partition: data
   bondDegree: 58
-  neighbors: []
 standards:
   - "GDPR Art.30(1) records-controller"
   - "GDPR Art.30(2) records-processor"
@@ -58,50 +19,8 @@ standards:
   - "ISO-8601-1:2019 date-time review-due-at`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - fields
-    - hooks
-    - records
-  matrix:
-    - attribution
-    - customers
-    - engagement
-    - escalation
-    - interview
-    - law
-    - leads
-    - leadscore
-    - opportunities
-    - prospect
-    - queue
-    - retention
-    - sentiment
-    - sla
-    - ticket
-    - users
-    - vendors
-  backlinks:
-    - attribution
-    - customers
-    - engagement
-    - escalation
-    - interview
-    - law
-    - leads
-    - leadscore
-    - opportunities
-    - prospect
-    - queue
-    - retention
-    - sentiment
-    - sla
-    - ticket
-    - users
-    - vendors
 signatures:
-  computationUuid: "1f76e213-1a66-838b-a116-69dd7389b47e"
+  computationUuid: "2110628c-e3c5-8154-83c0-177af420bc2d"
   stages:
     - stage: path
       stageUuid: "8d4664f9-fc2c-82c5-a13f-a40d9e25a966"
@@ -112,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "1cad9f42-8fc6-808a-a253-3a353b836f7b"
     - stage: horo
-      stageUuid: "0a3d6d68-f29d-8177-97b9-485f1249d1e7"
+      stageUuid: "770d90a6-cb0d-8357-a289-5e4ef3a8ca9f"
     - stage: seal
       stageUuid: "94db3aa7-55aa-8ac5-a9e7-11accdd3822d"
     - stage: uuid
-      stageUuid: "7d70fce8-2177-8eef-a4c9-fe670498c640"
+      stageUuid: "397f6230-d16b-82ea-babd-f9e2270016b6"
 version: 2
 ---
 # data-processing-activities

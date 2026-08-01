@@ -2,45 +2,14 @@
 name: classifications
 description: "Use when classifying a non-current asset, disposal group, or discontinued operation as held-for-sale under IFRS 5 §6 — triggers §15 remeasurement to lower of carrying amount and fair-value-less-costs-to-sell, depreciation suspended, separate balance-sheet presentation, gain/loss on disposal. The held-for-sale-classifications IFRS 5 event collection."
 atomPath: "held/for/sale/classifications"
-coordinate: "held/for/sale/classifications · 2/share · e808b9b4"
-contentUuid: "1b78a464-3a72-5110-86ac-f2a0920f14a6"
-diamondUuid: "52356ba9-ac82-8204-9931-224905ac0c12"
-uuid: "e808b9b4-0925-8adf-8812-7b61320ed302"
-horo: 2
-bonds:
-  in:
-    - accounting
-    - assets
-    - balance
-    - classification
-    - close
-    - combinations
-    - entries
-    - entry
-    - horo
-    - law
-    - measurements
-    - properties
-    - sale
-    - standard
-  out:
-    - accounting
-    - assets
-    - balance
-    - classification
-    - close
-    - combinations
-    - entries
-    - entry
-    - horo
-    - law
-    - measurements
-    - properties
-    - standard
+coordinate: "held/for/sale/classifications · 5/round · af85dd9f"
+contentUuid: "332ef792-1dd0-5fbd-9e7f-a95a84cb0a97"
+diamondUuid: "08a35f68-afd1-8a90-96eb-6072d7315599"
+uuid: "af85dd9f-1eae-8776-aece-c68e09f761d9"
+horo: 5
 typography:
   partition: held
-  bondDegree: 40
-  neighbors: []
+  bondDegree: 18
 standards:
   - "IFRS IFRS-13 fair-value-input-hierarchy"
   - "IFRS IFRS-13 fair-value-input-hierarchy`"
@@ -64,50 +33,8 @@ standards:
   - "US-GAAP ASC-360-10 long-lived-assets-held-for-sale"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - assets
-    - balance
-    - close
-    - combinations
-    - entries
-    - entry
-    - horo
-    - law
-    - measurements
-    - properties
-    - standard
-  matrix:
-    - accounting
-    - assets
-    - balance
-    - classification
-    - close
-    - combinations
-    - entries
-    - entry
-    - horo
-    - law
-    - measurements
-    - properties
-    - standard
-  backlinks:
-    - accounting
-    - assets
-    - balance
-    - classification
-    - close
-    - combinations
-    - entries
-    - entry
-    - horo
-    - law
-    - measurements
-    - properties
-    - standard
 signatures:
-  computationUuid: "e0c8021d-f0d6-8b7f-bc2a-eed9c269ac96"
+  computationUuid: "91dbe8f2-0d31-83b7-9849-622bc67e60c1"
   stages:
     - stage: path
       stageUuid: "1b0570b4-f274-852d-9e14-b7abf8d5f56f"
@@ -116,13 +43,13 @@ signatures:
     - stage: boundary
       stageUuid: "f89db9ae-d689-890e-843e-ba290e74b5c3"
     - stage: links
-      stageUuid: "e6ab29a7-a182-8e86-a98f-293006aebcfe"
+      stageUuid: "7868b550-2219-821d-afaa-858a883439f9"
     - stage: horo
-      stageUuid: "2eebb82d-4ae5-83d0-8bef-bb2fda7d9c93"
+      stageUuid: "8b633f84-a3bf-86d2-ab1d-f168d4043905"
     - stage: seal
       stageUuid: "45323345-85b7-8528-84de-71bb6249f3d5"
     - stage: uuid
-      stageUuid: "fad59aee-9aa2-8a7f-9785-fea0ddcd2d78"
+      stageUuid: "b47b3adc-197b-85b5-8dd6-2b2a94504393"
 version: 2
 ---
 # held-for-sale-classifications

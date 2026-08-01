@@ -2,134 +2,36 @@
 name: competition
 description: "Use when reasoning about how erpax skills EVOLVE — agents compete in commits, the fastest CORRECT solution (gate-verified) wins the lead, losers re-approach to beat it, optimising to infinity, at every scale. The selective-pressure dual of contribution; and because each competitor independently re-derives and content-addresses the canonical answer, competition AMPLIFIES tamper cost — performance pressure turned into security."
 atomPath: competition
-coordinate: "competition · 1/base · 179092e2"
-contentUuid: "e0298faf-1767-59cb-8dd3-703f1c447a56"
-diamondUuid: "2202f918-8469-81ae-8595-5c6e370ad436"
-uuid: "179092e2-4991-8360-a50d-93873122206d"
-horo: 1
-bonds:
-  in:
-    - claim
-    - classroom
-    - contribution
-    - cost
-    - decide
-    - decompression
-    - education
-    - fractal
-    - history
-    - identity
-    - law
-    - logic
-    - merge
-    - network
-    - peace
-    - proof
-    - routing
-    - self
-    - society
-    - zeropoint
-  out:
-    - claim
-    - classroom
-    - contribution
-    - cost
-    - decide
-    - decompression
-    - education
-    - fractal
-    - history
-    - identity
-    - law
-    - logic
-    - merge
-    - network
-    - peace
-    - proof
-    - routing
-    - self
-    - society
-    - zeropoint
+coordinate: "competition · 8/crest · 6117dbb5"
+contentUuid: "ebf676ea-1c92-5b44-b8b2-cf7760af61e6"
+diamondUuid: "07635308-aa71-80b9-880e-9d7d0207ab3f"
+uuid: "6117dbb5-ea32-87da-a13a-1508696c49b8"
+horo: 8
 typography:
   partition: competition
-  bondDegree: 60
-  neighbors: []
+  bondDegree: 46
 standards:
   - "ISO/IEC 25010:2023 §5.2 performance-efficiency (fastest-correct selection)"
   - "ISO/IEC 25010:2023 §5.2 performance-efficiency (fastest-correct selection)`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - contribution
-    - decompression
-    - fractal
-    - history
-    - identity
-    - law
-    - merge
-    - proof
-    - self
-    - society
-  matrix:
-    - claim
-    - classroom
-    - contribution
-    - cost
-    - decide
-    - decompression
-    - education
-    - fractal
-    - history
-    - identity
-    - law
-    - logic
-    - merge
-    - network
-    - peace
-    - proof
-    - routing
-    - self
-    - society
-    - zeropoint
-  backlinks:
-    - claim
-    - classroom
-    - contribution
-    - cost
-    - decide
-    - decompression
-    - education
-    - fractal
-    - history
-    - identity
-    - law
-    - logic
-    - merge
-    - network
-    - peace
-    - proof
-    - routing
-    - self
-    - society
-    - zeropoint
 signatures:
-  computationUuid: "adee84c7-9536-8592-8878-5616b3355e1f"
+  computationUuid: "c214de45-ac47-80b2-b47b-3604c880039e"
   stages:
     - stage: path
       stageUuid: "fa6c9ca3-e81f-8762-85d6-675365bb307e"
     - stage: trinity
       stageUuid: "84a9b260-0dc7-82c7-b065-c958942dee18"
     - stage: boundary
-      stageUuid: "b95c4ff9-f549-8212-b294-ae0058bb30cc"
+      stageUuid: "818f9784-0e06-8895-bd69-15c0148b0e04"
     - stage: links
-      stageUuid: "e27e41bb-1005-8c37-bc27-dea38ef3aa46"
+      stageUuid: "9229fab4-acf6-84b4-9ae9-852c78344859"
     - stage: horo
-      stageUuid: "39dc385d-36bf-842a-815d-03802e368517"
+      stageUuid: "eb2d852d-f7fc-8f5b-b4da-6888380a7df0"
     - stage: seal
       stageUuid: "21331975-8dfb-8b5d-afaf-048593c7812b"
     - stage: uuid
-      stageUuid: "bcebcaea-577e-8e80-bb39-6b37860a8b80"
+      stageUuid: "35612741-e662-89af-880b-54632dbdedd7"
 version: 2
 ---
 # competition — skills evolve by competing (fastest correct wins, optimise to ∞)

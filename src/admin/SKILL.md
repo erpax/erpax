@@ -2,86 +2,23 @@
 name: admin
 description: "Use when configuring the Payload Admin Panel or building custom admin React components — list/edit views, custom field/cell components, importMap, useField/useForm hooks, nav grouping, dashboards, or admin appearance."
 atomPath: admin
-coordinate: "admin · 7/descent · 63eba8f8"
-contentUuid: "336567bb-a9a8-50fa-ab1d-792cb864ad9f"
-diamondUuid: "7be85be2-cbd3-8cdb-9f3d-b8dfa717dd60"
-uuid: "63eba8f8-0cbb-8327-951e-97d42039451b"
-horo: 7
-bonds:
-  in:
-    - access
-    - auth
-    - components
-    - hooks
-    - law
-    - optimize
-    - pages
-    - port
-    - round
-    - search
-    - spec
-    - tag
-  out:
-    - access
-    - auth
-    - components
-    - hooks
-    - law
-    - optimize
-    - pages
-    - port
-    - round
-    - search
-    - spec
-    - tag
+coordinate: "admin · 4/weave · 52fd64ac"
+contentUuid: "55de3026-6bce-5262-aab2-c86a7dd6f484"
+diamondUuid: "70d7d144-67e3-8ce8-81f3-8106b2130f9e"
+uuid: "52fd64ac-5bb7-8a83-96b5-43793266ce99"
+horo: 4
 typography:
   partition: admin
   bondDegree: 0
-  neighbors: []
 standards:
   - "ECMA-262"
-  - "EU-2024/1183"
-  - "EU-2024/1620"
-  - "EU-2024/1624"
   - "EU-CSDDD-2024/1760"
   - "EU-Taxonomy-2020/852"
   - "ISO-3166-1"
   - "W3C-WAI-ARIA-1.2"
 bindings: []
-neighbors:
-  wikilink:
-    - auth
-    - hooks
-    - law
-    - optimize
-  matrix:
-    - access
-    - auth
-    - components
-    - hooks
-    - law
-    - optimize
-    - pages
-    - port
-    - round
-    - search
-    - spec
-    - tag
-  backlinks:
-    - access
-    - auth
-    - components
-    - hooks
-    - law
-    - optimize
-    - pages
-    - port
-    - round
-    - search
-    - spec
-    - tag
 signatures:
-  computationUuid: "e5d3357b-ea33-8271-9b6a-9656c4f0d7ed"
+  computationUuid: "8453893a-91a6-83b9-9082-9ed2e04f47d6"
   stages:
     - stage: path
       stageUuid: "b7196707-0f09-8c5d-8864-49c583aa4eca"
@@ -92,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "5560dc16-93b3-8368-a58f-de5d0bb8deb4"
     - stage: horo
-      stageUuid: "3fcf7b86-9bf2-8bd3-b672-a016516d9170"
+      stageUuid: "99ada20a-1d3f-8a06-8d44-67b3669e34e4"
     - stage: seal
       stageUuid: "b250497a-b378-8f84-817b-0c79bbb7797c"
     - stage: uuid
-      stageUuid: "b811680c-c63f-81c2-b37f-0e6ad54227af"
+      stageUuid: "ef991cb4-a577-8349-a481-962e1187b010"
 version: 2
 ---
 # admin — the Admin Panel & custom components (position 5 of the material cycle)

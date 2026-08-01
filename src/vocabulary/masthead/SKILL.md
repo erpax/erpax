@@ -1,53 +1,35 @@
 ---
 name: masthead
 description: "Use when reasoning about masthead — For a NewsMediaOrganization, a link to the masthead page or a page listing top editorial management."
-atomPath: vocabulary/masthead
-coordinate: masthead · 8/crest · 52e84741
-contentUuid: "5a9945ab-7f93-5326-aa48-efc4920dc28c"
-diamondUuid: "e81cb994-dc71-8090-b0a0-8d20cedf8242"
-uuid: "52e84741-8405-83a4-8ecd-5db9b9ffec5e"
-horo: 8
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/masthead"
+coordinate: "vocabulary/masthead · 1/base · 0ead6545"
+contentUuid: "8c4dea64-8e2b-55d3-a659-490569df44e8"
+diamondUuid: "66a1e893-aefe-8b7a-870a-2382652a47ec"
+uuid: "0ead6545-e252-840e-b7f0-a9391e7a8810"
+horo: 1
 typography:
-  partition: masthead
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "04cd21e0-51a7-888a-bb9c-92f1c92dd8a8"
+  computationUuid: "a6e73446-da0a-8031-827e-886d730fba18"
   stages:
     - stage: path
-      stageUuid: "d1a4eeba-b99f-83cb-aed2-b743ceea522b"
+      stageUuid: "e1daf2df-62ec-86fd-8e4c-ada9e918da46"
     - stage: trinity
-      stageUuid: "6da50759-f3bc-8ba3-9b61-4c6a7a98e8fe"
+      stageUuid: "dc1fb721-d99d-8423-9d49-920168fdc991"
     - stage: boundary
-      stageUuid: "d14c3c5c-189d-8c18-bc50-6b3e217abae0"
+      stageUuid: "f162eb72-4b18-8b8d-9709-6ee26ed58e6d"
     - stage: links
-      stageUuid: "8fa0d4c8-b9de-8f0a-a1e5-e554b9205050"
+      stageUuid: "bcbc9b62-de34-84ba-9958-8461616732e5"
     - stage: horo
-      stageUuid: "323dce46-a42b-8d1b-921f-6b56807c3fb1"
+      stageUuid: "b8362a60-234a-88a4-b221-59f3f4db1344"
     - stage: seal
-      stageUuid: "366e1b16-de5b-8131-915f-0ab444f588da"
+      stageUuid: "4e951b40-59c7-83d5-b01e-99fcedb88e3b"
     - stage: uuid
-      stageUuid: "60571ece-785b-86b2-be1a-74d4b69d8fd6"
+      stageUuid: "41dace81-1a37-8ace-8716-388a335ec7a0"
 version: 2
 ---
 # masthead

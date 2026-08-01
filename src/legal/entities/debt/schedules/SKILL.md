@@ -2,62 +2,21 @@
 name: schedules
 description: "Use when managing or reporting a legal entity's debt instruments — bank term/revolving loans, bonds, finance and operating leases, convertible notes, covenant tracking, repayment schedules, and IFRS-9 current/non-current classification per IFRS-9 / IAS-1 / ASC-470. The debt-instrument register collection."
 atomPath: "legal/entities/debt/schedules"
-coordinate: "legal/entities/debt/schedules · 7/descent · 2b019837"
-contentUuid: "f8094b1e-3291-5dbf-948e-34547636969a"
-diamondUuid: "810d20f4-e561-8e61-9b2a-ffa9e756b7ab"
-uuid: "2b019837-e70a-847e-bd2b-3e3c222865e1"
+coordinate: "legal/entities/debt/schedules · 7/descent · 09c424a8"
+contentUuid: "5e1af5c1-385e-55ea-8aa6-ad5349518cf4"
+diamondUuid: "20f9b4e9-9222-88f3-808c-076b0c0e774f"
+uuid: "09c424a8-eb4f-8507-8962-e98b5055d003"
 horo: 7
-bonds:
-  in:
-    - accounting
-    - assets
-    - balance
-    - identity
-    - intangible
-    - proof
-    - standard
-    - transaction
-  out:
-    - accounting
-    - assets
-    - balance
-    - identity
-    - intangible
-    - proof
-    - standard
-    - transaction
 typography:
   partition: legal
   bondDegree: 26
-  neighbors: []
 standards:
   - "IAS-1 current-non-current-classification"
   - "IFRS-9 financial-instruments"
   - "US-GAAP ASC-470 debt"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-  matrix:
-    - accounting
-    - assets
-    - balance
-    - identity
-    - intangible
-    - proof
-    - standard
-    - transaction
-  backlinks:
-    - accounting
-    - assets
-    - balance
-    - identity
-    - intangible
-    - proof
-    - standard
-    - transaction
 signatures:
-  computationUuid: "1a035424-5261-8a23-8f78-37db0de8f002"
+  computationUuid: "4a1ed6d5-07f8-8474-8a60-b5acd68df014"
   stages:
     - stage: path
       stageUuid: "b855236d-e0f1-8721-90f1-153d0ad07a59"
@@ -68,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "7116d031-c359-8a0b-9491-d57d1a96feea"
     - stage: horo
-      stageUuid: "9f05aacf-1821-84c0-822a-166847069be5"
+      stageUuid: "328ac2bb-c96c-8426-830f-96886ab7e065"
     - stage: seal
       stageUuid: "d44606cf-6458-8188-b52a-4d1b05ad3efa"
     - stage: uuid
-      stageUuid: "8cf240a4-5891-88d8-938e-72bb58573abc"
+      stageUuid: "75c5deb1-31aa-8280-a221-b947b867ff4d"
 version: 2
 ---
 # debt-schedule

@@ -2,57 +2,36 @@
 name: surface
 description: "Use when declaring or auditing the whole cryptographic surface an atom exposes — the judgment guard that makes a silently omitted surface fail the build: every reachable surface (root-signing · channel-keying · storage-at-rest · re-exchange) must be registered sealed (naming the standard AND the test) or open (naming the gap AND the owner), a channel sealed without FIPS 203 ML-KEM is channel-unsealed because harvest-now-decrypt-later reads the transport not the root, and a root sealed by anything but FIPS 205 SLH-DSA or FIPS 204 ML-DSA is root-unsealed because Shor breaks a classical root outright."
 atomPath: "anchor/surface"
-coordinate: "anchor/surface · 8/crest · 50793678"
-contentUuid: "8faabcab-2289-5ff3-a546-457b9a84b99f"
-diamondUuid: "3318b901-80f9-8149-b42e-ebe7bd1bdaa6"
-uuid: "50793678-2e17-8fa9-b8f8-49afbd8276f8"
+coordinate: "anchor/surface · 8/crest · f1ebeb19"
+contentUuid: "455e4416-f7a2-5155-b607-2e6cf9abf18b"
+diamondUuid: "8cf59fb2-9776-8df8-abb3-51f08b5a3c0d"
+uuid: "f1ebeb19-51b2-8919-bba2-06c25cc85322"
 horo: 8
-bonds:
-  in:
-    - anchor
-    - artwork
-    - law
-  out:
-    - artwork
-    - law
 typography:
   partition: anchor
   bondDegree: 14
-  neighbors: []
 standards:
   - "FIPS 203 (ML-KEM) — key establishment; mandatory on every channel that exchanges state"
   - "FIPS 204 (ML-DSA) — lattice signature, a distinct assumption from the digest"
   - "FIPS 205 (SLH-DSA) — hash-based signature; the primary root, no new assumption"
 bindings: []
-neighbors:
-  wikilink:
-    - anchor
-    - constitution
-    - law
-    - rules
-  matrix:
-    - artwork
-    - law
-  backlinks:
-    - artwork
-    - law
 signatures:
-  computationUuid: "f445d42f-9e31-8b13-b2db-810ca99ea610"
+  computationUuid: "7508104c-de7b-8a94-bba4-f1f5f803d883"
   stages:
     - stage: path
       stageUuid: "7445b50e-7694-8eac-8c5e-8b0c465ea9b9"
     - stage: trinity
       stageUuid: "9f20c0dd-e858-8762-bfd8-a2ee3f03d5f3"
     - stage: boundary
-      stageUuid: "0ba4c6d3-0bc7-8aba-8955-c44dfee220b2"
+      stageUuid: "87c23806-b12d-8389-8e62-513c8bb9adc1"
     - stage: links
       stageUuid: "9b106329-658c-8365-a69b-067ef1bd9a3e"
     - stage: horo
-      stageUuid: "10ab9942-d9c0-852e-8c4e-567e7d77e18a"
+      stageUuid: "ad553bd5-8139-8669-a588-2e5be0ad7d81"
     - stage: seal
       stageUuid: "1c3458f6-d0c0-8582-a603-8d5d13a63045"
     - stage: uuid
-      stageUuid: "dacf7ace-0441-839d-8356-5e10824d07c0"
+      stageUuid: "3f8016a3-7e04-88d0-b48e-ffcf422595ed"
 version: 2
 ---
 # anchor/surface — a surface you did not declare is a surface you dismissed

@@ -1,68 +1,35 @@
 ---
 name: natural
 description: "Use when reasoning about natural as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/natural
-coordinate: natural · 4/weave · d7a4edc4
-contentUuid: "2adffa6c-5e85-51fa-a268-3229eee4a790"
-diamondUuid: "98b0c26a-ba34-8d2e-8204-b718fb96b4be"
-uuid: "d7a4edc4-c529-888d-af3e-d013ddd92528"
+atomPath: "vocabulary/natural"
+coordinate: "vocabulary/natural · 4/weave · 465c1f40"
+contentUuid: "51382cb2-875c-5701-a2c4-a5ee07301d1c"
+diamondUuid: "5538d905-216e-8676-85c7-28ba2a4af860"
+uuid: "465c1f40-f90d-82b1-99e9-711a06332cfe"
 horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - progression
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - progression
-    - sti
 typography:
-  partition: natural
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - progression
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - progression
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - progression
-    - sti
 signatures:
-  computationUuid: "104f8cca-4f0f-8510-9805-e10c50a7c1a2"
+  computationUuid: "42ec7184-9728-8f5f-a19b-a93246108c9d"
   stages:
     - stage: path
-      stageUuid: "85d2e910-39d5-88fb-a18f-e866c113dbce"
+      stageUuid: "555068bf-4716-8354-9ed5-db8de6b6ab8c"
     - stage: trinity
-      stageUuid: "58f0e4ee-383e-8881-99a8-11f212625f4e"
+      stageUuid: "02238ae6-c663-8374-95d4-597630525f70"
     - stage: boundary
-      stageUuid: "bced8a11-5847-8b59-82a6-7f8316ac1128"
+      stageUuid: "e7bf23e8-7d36-8206-8a41-e44a341f208f"
     - stage: links
-      stageUuid: "d8d44170-f0a7-8c58-b3be-baec157fc31d"
+      stageUuid: "914a32e6-7807-8664-ac60-893b23067400"
     - stage: horo
-      stageUuid: "e7ed5fb6-6367-816d-aa4c-054576714df6"
+      stageUuid: "7cd1aafd-04be-8b98-964b-4a29f2abcc0c"
     - stage: seal
-      stageUuid: "9874d519-48fd-81ed-a615-7e12cb24b575"
+      stageUuid: "988697d8-7904-81af-8b75-9230ae06dbea"
     - stage: uuid
-      stageUuid: "a2c61e8d-ec81-83ba-a920-9249b5414f04"
+      stageUuid: "40520472-766d-8d11-a02a-552bb07c0a7a"
 version: 2
 ---
 # natural

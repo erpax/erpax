@@ -1,53 +1,35 @@
 ---
 name: closes
 description: Use when reasoning about closes — The closing hour of the place or service on the given day(s) of the week.
-atomPath: vocabulary/closes
-coordinate: closes · 5/round · d7375b80
-contentUuid: "551d58a3-b8d1-5377-8609-534b6db6ea32"
-diamondUuid: "3051a128-c46f-830c-beb5-86416ea2c28b"
-uuid: "d7375b80-1433-8908-901f-04a303ed345e"
-horo: 5
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/closes"
+coordinate: "vocabulary/closes · 4/weave · 11a03afd"
+contentUuid: "59676d06-bc21-5763-9c64-a1c214630451"
+diamondUuid: "1e0f7f89-01bb-8f6a-bd9f-b89552d117b6"
+uuid: "11a03afd-18a2-8b7b-9b5b-856309ca72ed"
+horo: 4
 typography:
-  partition: closes
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "cdbc21e3-2572-8dff-a53d-5e2441ba63d1"
+  computationUuid: "914dec8b-0221-88da-b513-070835dfb9d3"
   stages:
     - stage: path
-      stageUuid: "98c4cc7d-1337-8700-9798-770bc50e01d9"
+      stageUuid: "c7f4288e-b868-823a-885e-15f6d29024b1"
     - stage: trinity
-      stageUuid: "be3806cb-8d14-87af-b9c7-a26d18205076"
+      stageUuid: "42c385f9-23dc-8a57-98dd-40543ca8c4f8"
     - stage: boundary
-      stageUuid: "bc972c34-8c77-8760-8f26-ef46e4243d93"
+      stageUuid: "297d11b0-cff6-8695-9bf5-85cf493081e5"
     - stage: links
-      stageUuid: "286e3d91-d8b2-8881-abb8-6012c76d9dc0"
+      stageUuid: "b1d36279-13ee-8d5b-b734-163b651c86e6"
     - stage: horo
-      stageUuid: "cf4e3b63-a402-8bda-803b-8262a2b37621"
+      stageUuid: "52ff88ff-1798-82b1-90dd-6eb88d138968"
     - stage: seal
-      stageUuid: "9ff60f4b-7cb0-81ea-bcd1-1aaf4084caf4"
+      stageUuid: "a4c9ed3f-ebac-8682-b8c0-2512853296cf"
     - stage: uuid
-      stageUuid: "6897be1e-1911-8ce7-b196-94f08a47d188"
+      stageUuid: "1ec2ce23-967b-8fdf-8e60-e554132a08a6"
 version: 2
 ---
 # closes

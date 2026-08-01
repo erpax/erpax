@@ -1,58 +1,35 @@
 ---
 name: knows
 description: "Use when reasoning about knows — The most generic bi-directional social/work relation."
-atomPath: vocabulary/knows
-coordinate: knows · 4/weave · 9fbb7f66
-contentUuid: "ee73a880-7233-5cd9-bb2c-876aa999ba69"
-diamondUuid: "ec694178-1082-8091-9039-e0e360b5ed03"
-uuid: "9fbb7f66-95e4-8456-9041-281f7892c923"
-horo: 4
-bonds:
-  in:
-    - about
-    - language
-    - law
-  out:
-    - about
-    - language
-    - law
+atomPath: "vocabulary/knows"
+coordinate: "vocabulary/knows · 7/descent · 1dd2331b"
+contentUuid: "f7dc8975-ec89-5c6a-91ce-55fb64168775"
+diamondUuid: "94d41a86-34f6-8a2d-b794-a2a2fe4114cd"
+uuid: "1dd2331b-939d-831f-9ed9-23d6b2535713"
+horo: 7
 typography:
-  partition: knows
-  bondDegree: 11
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 13
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - about
-    - language
-    - law
-  matrix:
-    - about
-    - language
-    - law
-  backlinks:
-    - about
-    - language
-    - law
 signatures:
-  computationUuid: "fd975c8e-aae9-8ba9-8476-87e83bd85f53"
+  computationUuid: "db23baf5-8591-89ef-a4ac-4693595f926b"
   stages:
     - stage: path
-      stageUuid: "db4023de-bb9b-855a-aafb-b4177ca5ebab"
+      stageUuid: "fe8dd2ec-4498-8898-a207-b514d2f5d00c"
     - stage: trinity
-      stageUuid: "44ea5bbf-0e1b-8408-808e-eb88b474730f"
+      stageUuid: "61caae60-7f6b-88bb-937d-a27593148004"
     - stage: boundary
-      stageUuid: "65ff95f2-63bc-84ba-ba1c-ce4dbc530eaa"
+      stageUuid: "b4c339ea-8b56-8fe5-9a23-6909ca0837b6"
     - stage: links
-      stageUuid: "0dff58c0-6e3a-812e-a1ce-a3e13c08e34e"
+      stageUuid: "63593712-0ebd-817d-bce7-493d4581f931"
     - stage: horo
-      stageUuid: "7e2a50ff-9a87-8c2c-beb7-800279c6f4a2"
+      stageUuid: "56843db3-762c-8c0a-9648-fe7cad3f14f1"
     - stage: seal
-      stageUuid: "acd2f48f-7804-80e2-b25a-506300e0202e"
+      stageUuid: "df69b2b1-7d04-8f62-8ec5-623b5bb65983"
     - stage: uuid
-      stageUuid: "404ee94f-062e-89d6-baf5-7e0631f71d45"
+      stageUuid: "1e4addaa-aa37-86db-a26c-b76761b38013"
 version: 2
 ---
 # knows

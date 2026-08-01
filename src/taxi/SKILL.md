@@ -2,47 +2,19 @@
 name: taxi
 description: Use when reasoning about taxi — A taxi.
 atomPath: taxi
-coordinate: taxi · 5/round · e86daaa8
-contentUuid: "6fd3110e-a9f2-5a88-b03a-baf685304084"
-diamondUuid: "cafd2bd0-bdab-830e-af1b-16d4b04d3bc3"
-uuid: "e86daaa8-4210-8349-9a77-27bbdca0c027"
-horo: 5
-bonds:
-  in:
-    - law
-    - reservation
-    - service
-    - stand
-  out:
-    - law
-    - reservation
-    - service
-    - stand
+coordinate: "taxi · 8/crest · 20534669"
+contentUuid: "d22ff0f0-f97c-565a-a26d-9326cc823adb"
+diamondUuid: "25c2fe60-17b2-8f9d-aa23-70b31737d2a9"
+uuid: "20534669-b112-8b94-8055-e2492850620d"
+horo: 8
 typography:
   partition: taxi
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - reservation
-    - service
-    - stand
-  matrix:
-    - law
-    - reservation
-    - service
-    - stand
-  backlinks:
-    - law
-    - reservation
-    - service
-    - stand
 signatures:
-  computationUuid: "06ea5add-f3c3-834d-80e5-9a624c2a3c9e"
+  computationUuid: "1424acc5-bce7-8c97-af8d-5e978425ed2c"
   stages:
     - stage: path
       stageUuid: "0b6859ba-c863-85a3-a928-d435b60181d1"
@@ -53,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4b8faf1b-c79a-8407-8f6b-60ca58b03140"
     - stage: horo
-      stageUuid: "ef4302cf-1f01-833b-8eb1-e1d146d7197f"
+      stageUuid: "7f2c1c34-9811-8453-a347-619c896d9dd4"
     - stage: seal
-      stageUuid: "701557cf-060c-8fce-80f5-7a5f0164c95c"
+      stageUuid: "49184ea4-f4af-8a82-b4f8-70c2b274cccf"
     - stage: uuid
-      stageUuid: "6b5ea42f-d300-8215-a0a7-aa4bc85353ee"
+      stageUuid: "6eca849b-dcfe-89f5-99ad-78f0547fcc78"
 version: 2
 ---
 # taxi

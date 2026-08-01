@@ -2,35 +2,14 @@
 name: phases
 description: "Use when modeling a routing step — one sort-ordered position in a lot's phase chain that crosses to the work-phases catalog, carrying per-step time and unit counters with derived (never stored) state."
 atomPath: "lot/work/phases"
-coordinate: "lot/work/phases · 5/round · d30bea4e"
-contentUuid: "e8e90d3b-b61e-5934-8c6f-1b8ec2160e8b"
-diamondUuid: "19b31fcf-b2d9-8897-ad6b-afe200249ddc"
-uuid: "d30bea4e-c1c8-8eb8-b84b-8da0b2459801"
-horo: 5
-bonds:
-  in:
-    - accounting
-    - balance
-    - coordinate
-    - law
-    - lots
-    - merge
-    - operations
-    - phases
-    - work
-  out:
-    - accounting
-    - balance
-    - coordinate
-    - law
-    - lots
-    - merge
-    - operations
-    - phases
+coordinate: "lot/work/phases · 2/share · bc1494f2"
+contentUuid: "e4f31c00-ba04-5bfc-b861-0a2a73d9c55a"
+diamondUuid: "a1b9da2b-be07-8ca9-9cbe-0959564f1967"
+uuid: "bc1494f2-9a62-8d11-85c2-deac9f9da199"
+horo: 2
 typography:
   partition: lot
   bondDegree: 36
-  neighbors: []
 standards:
   - "ISA-95"
   - "ISA-95:2013 / IEC-62264-1 §B.4 process-segment routing-step"
@@ -40,36 +19,8 @@ standards:
   - "SOX §404 internal-controls production-control"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - coordinate
-    - law
-    - lots
-    - merge
-    - phases
-    - sequence
-    - variants
-  matrix:
-    - accounting
-    - balance
-    - coordinate
-    - law
-    - lots
-    - merge
-    - operations
-    - phases
-  backlinks:
-    - accounting
-    - balance
-    - coordinate
-    - law
-    - lots
-    - merge
-    - operations
-    - phases
 signatures:
-  computationUuid: "45d4f0e3-1711-8e6f-97b9-325bcf78b02d"
+  computationUuid: "f901d204-3816-8684-84c4-09d2305ad419"
   stages:
     - stage: path
       stageUuid: "f0779abd-e603-888b-a27c-9443eb0e36cf"
@@ -78,13 +29,13 @@ signatures:
     - stage: boundary
       stageUuid: "8bd5bbaa-a9f3-836d-ac50-d1f267c68e27"
     - stage: links
-      stageUuid: "c65f1ddb-f47e-85d4-b387-294137df57b2"
+      stageUuid: "89010aca-3be4-8338-953d-c7acf0f3e2d2"
     - stage: horo
-      stageUuid: "4da8db19-80f6-8063-bc95-5d2f765e6aee"
+      stageUuid: "d2fcccfb-c538-8bf4-8d69-d72488f3b1ee"
     - stage: seal
       stageUuid: "7664e4d8-0478-8685-b4d9-a5e2e1471643"
     - stage: uuid
-      stageUuid: "d483dc4f-0c97-8ec7-aeb2-4babb6169af9"
+      stageUuid: "813bcb9a-7ac4-8b20-a85b-9bb40a5edbcf"
 version: 2
 ---
 # lot/work/phases — the routing step (the sort-ordered cross to the catalog)

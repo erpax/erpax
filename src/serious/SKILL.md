@@ -2,57 +2,19 @@
 name: serious
 description: "Use when reasoning about serious as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: serious
-coordinate: serious · 1/base · 7225b1b1
-contentUuid: "996cc392-7537-5650-8270-e2abcd6ff00e"
-diamondUuid: "9895aae8-1849-84a9-a9a6-2fbe4ae735b9"
-uuid: "7225b1b1-655e-8c21-91d0-304b08e0b9a0"
-horo: 1
-bonds:
-  in:
-    - adverse
-    - collapse
-    - law
-    - merge
-    - outcome
-    - sti
-  out:
-    - adverse
-    - collapse
-    - law
-    - merge
-    - outcome
-    - sti
+coordinate: "serious · 8/crest · 7626128c"
+contentUuid: "ba57d5b2-a611-547b-a2e7-8de7b25c272e"
+diamondUuid: "f7caf6b3-783c-87e9-a330-972346dfcd44"
+uuid: "7626128c-0386-8408-9027-8750e5da88f3"
+horo: 8
 typography:
   partition: serious
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - adverse
-    - collapse
-    - law
-    - merge
-    - outcome
-    - sti
-  matrix:
-    - adverse
-    - collapse
-    - law
-    - merge
-    - outcome
-    - sti
-  backlinks:
-    - adverse
-    - collapse
-    - law
-    - merge
-    - outcome
-    - sti
 signatures:
-  computationUuid: "eb8180e1-d4d8-84a9-8ea4-3709797bef58"
+  computationUuid: "b5b6253b-74ea-8c6c-8749-2fe23c65f189"
   stages:
     - stage: path
       stageUuid: "171fc3cb-ca3d-8b36-8ed0-0943ecceca67"
@@ -63,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d518f379-edfe-8e17-b02c-d9fd27eefb88"
     - stage: horo
-      stageUuid: "c3c0a241-1cd7-8142-93b3-dc23783f401b"
+      stageUuid: "3499ac73-d86a-8d85-b2f0-a91f2a02e6eb"
     - stage: seal
-      stageUuid: "22008362-4660-896f-9412-25111df6ce60"
+      stageUuid: "429f7733-96d6-8147-9832-fc3582e08d48"
     - stage: uuid
-      stageUuid: "a3e4ff5f-4b55-89dd-9704-9ce0cb08e341"
+      stageUuid: "2a9025c0-243a-840f-aa30-b6c54937bdd3"
 version: 2
 ---
 # serious

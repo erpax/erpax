@@ -1,68 +1,35 @@
 ---
 name: best
 description: "Use when reasoning about best as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/best
-coordinate: best · 1/base · 6c59ea22
-contentUuid: "54996817-1a13-5726-b54a-7db1e41cc1de"
-diamondUuid: "e420e595-6cde-8e06-a2fc-2e950cfb574e"
-uuid: "6c59ea22-be73-83ad-acb5-3d1391162d3f"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - rating
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - rating
-    - sti
+atomPath: "vocabulary/best"
+coordinate: "vocabulary/best · 7/descent · 4c2635fa"
+contentUuid: "41d56ecb-c1a1-5742-92ae-8f264b8b36ec"
+diamondUuid: "23564c0d-d6dd-8443-9f99-b6572043ed95"
+uuid: "4c2635fa-2e0a-8fec-a2a7-ffb25a5a9907"
+horo: 7
 typography:
-  partition: best
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - rating
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - rating
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - rating
-    - sti
 signatures:
-  computationUuid: "f9e42dd8-25f0-8656-be2c-de682fa5cdcc"
+  computationUuid: "066b15a8-f1fa-867b-a142-ef7bae05cef4"
   stages:
     - stage: path
-      stageUuid: "d7cbbf9f-1823-83bd-b8e2-bd999ecc3fda"
+      stageUuid: "1ef7ac10-1e9f-8f0b-aeb4-9cac5c359310"
     - stage: trinity
-      stageUuid: "cd2b151d-b6ba-8dae-b96c-be6f738cc358"
+      stageUuid: "4b1aaa44-e2d2-8d46-9efb-69e0e50e0f3a"
     - stage: boundary
-      stageUuid: "9335a04f-667c-8b40-86c6-4070eeac0533"
+      stageUuid: "60df61ac-9e1a-89bf-9105-00b1758c9136"
     - stage: links
-      stageUuid: "7d12355b-15ac-84f5-996d-942d8e7050b6"
+      stageUuid: "6917a26b-c6a4-80ed-8701-c856bf295bc8"
     - stage: horo
-      stageUuid: "6d7a21e7-5761-8078-bc03-a2955341ff86"
+      stageUuid: "115440cc-9fe7-8533-b26c-df1540394dd5"
     - stage: seal
-      stageUuid: "c5ed5397-bd37-873e-9411-68d2996e9097"
+      stageUuid: "d84b64c7-57a9-8189-94e3-1b2ac5d20d41"
     - stage: uuid
-      stageUuid: "19b37337-5231-8836-89b7-4a65822f593c"
+      stageUuid: "854092e3-d9c5-8a89-a596-6da9d704d716"
 version: 2
 ---
 # best

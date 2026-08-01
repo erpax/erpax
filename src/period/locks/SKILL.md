@@ -1,48 +1,24 @@
 ---
 name: locks
 description: "Use when closing or locking accounting periods — monthly, quarterly, annual — to prevent new postings; allows reversals and prior-period adjustments; tracks who closed the period and when. The period-close gate collection."
-atomPath: period/locks
-coordinate: period/locks · 7/descent · 40816439
-contentUuid: "966313c4-8688-53e0-b220-92d74ed9aaef"
-diamondUuid: "92c36ac1-5183-8926-8ea4-d91902f72d7c"
-uuid: "40816439-29ba-8087-9ecf-f65422c00778"
-horo: 7
-bonds:
-  in:
-    - accounting
-    - law
-    - lock
-    - period
-  out:
-    - accounting
-    - law
-    - lock
-    - period
+atomPath: "period/locks"
+coordinate: "period/locks · 4/weave · 597ecbb7"
+contentUuid: "df733ecf-9dd6-528d-8e0b-d2bf57f39dda"
+diamondUuid: "aabd0b03-9e02-8519-856d-4310f6a3698b"
+uuid: "597ecbb7-7bf4-83f5-b4f9-46ae44d18874"
+horo: 4
 typography:
   partition: period
   bondDegree: 12
-  neighbors: []
 standards:
   - "IFRS IAS-1 reporting-period"
   - "ISO-8601-1:2019 locked-at"
+  - "ISO-8601-1:2019 locked-at`"
   - "SOX §404 period-close-integrity"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - period
-  matrix:
-    - accounting
-    - law
-    - lock
-    - period
-  backlinks:
-    - accounting
-    - law
-    - lock
-    - period
 signatures:
-  computationUuid: "74dd2c0c-adc7-8585-acdc-07a06fd78cdc"
+  computationUuid: "17bbe05f-01ee-8f0d-ac74-0c538ec301ba"
   stages:
     - stage: path
       stageUuid: "cc1e9d80-676b-8778-8069-f436d1fe284c"
@@ -53,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "b6768726-1f07-8c78-86d0-8ae3fe4a7b14"
     - stage: horo
-      stageUuid: "56b18157-f643-8460-9cf7-a5793ba4a68e"
+      stageUuid: "3d28c202-29c9-826e-92d8-d1950f64d18c"
     - stage: seal
       stageUuid: "15d25a2e-525c-8d97-b59a-e37528f39a80"
     - stage: uuid
-      stageUuid: "41874b27-d82b-8cf6-a23a-07eeb5834a18"
+      stageUuid: "7da4c09d-c2f2-8a74-95c8-e7fef3323486"
 version: 2
 ---
 # period-locks

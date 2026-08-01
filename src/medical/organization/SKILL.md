@@ -2,127 +2,19 @@
 name: organization
 description: "Use when reasoning about organization as a medical facet of [[medical]] — vocabulary pivot to @/organization; nested not duplicated."
 atomPath: "medical/organization"
-coordinate: "medical/organization · 5/round · 35a07798"
-contentUuid: "999364a2-c831-5083-8419-18ee1560de6f"
-diamondUuid: "996a371a-6fbf-84e5-965b-3cd868f6d125"
-uuid: "35a07798-27d0-8831-81ae-a8f0f15c62c5"
-horo: 5
-bonds:
-  in:
-    - archive
-    - authenticator
-    - brand
-    - broadcaster
-    - consortium
-    - cooperative
-    - corporation
-    - educational
-    - government
-    - hiring
-    - hosting
-    - isic
-    - law
-    - medical
-    - merge
-    - news
-    - organization
-    - parent
-    - plumber
-    - rescue
-    - role
-    - sports
-    - sub
-    - tenant
-  out:
-    - archive
-    - authenticator
-    - brand
-    - broadcaster
-    - consortium
-    - cooperative
-    - corporation
-    - educational
-    - government
-    - hiring
-    - hosting
-    - isic
-    - law
-    - medical
-    - merge
-    - news
-    - organization
-    - parent
-    - plumber
-    - rescue
-    - role
-    - sports
-    - sub
-    - tenant
+coordinate: "medical/organization · 7/descent · 35472ba4"
+contentUuid: "d8417fa6-7b68-5d41-9738-8584651f1aa5"
+diamondUuid: "42fefd01-3ec1-8ca0-882d-0bf35aad7842"
+uuid: "35472ba4-1663-8094-97bc-2f04a583be68"
+horo: 7
 typography:
   partition: medical
   bondDegree: 91
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - medical
-    - merge
-    - organization
-  matrix:
-    - archive
-    - authenticator
-    - brand
-    - broadcaster
-    - consortium
-    - cooperative
-    - corporation
-    - educational
-    - government
-    - hiring
-    - hosting
-    - isic
-    - law
-    - medical
-    - merge
-    - news
-    - organization
-    - parent
-    - plumber
-    - rescue
-    - role
-    - sports
-    - sub
-    - tenant
-  backlinks:
-    - archive
-    - authenticator
-    - brand
-    - broadcaster
-    - consortium
-    - cooperative
-    - corporation
-    - educational
-    - government
-    - hiring
-    - hosting
-    - isic
-    - law
-    - medical
-    - merge
-    - news
-    - organization
-    - parent
-    - plumber
-    - rescue
-    - role
-    - sports
-    - sub
-    - tenant
 signatures:
-  computationUuid: "de99c7b6-6cc5-8520-8553-ce154c1d1a43"
+  computationUuid: "5a615252-24db-8448-9857-5f86aaeb0833"
   stages:
     - stage: path
       stageUuid: "aab288b8-79b7-8453-a8fb-c3b41aaf8ffe"
@@ -133,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "faa49fc6-bcc5-8bf0-ad22-6758bf9828b3"
     - stage: horo
-      stageUuid: "4b519bfa-ec96-89fb-aa20-5885e88ee6c8"
+      stageUuid: "02bc7734-2eb3-8ddb-81e5-9666231dba56"
     - stage: seal
       stageUuid: "2b803227-d924-8a2d-affd-f0c83e81297c"
     - stage: uuid
-      stageUuid: "e62fc6a2-b6b2-8cd6-bb4c-8d1e05e5f9c2"
+      stageUuid: "a53ebad0-80f9-8a35-923c-99a934fc498a"
 version: 2
 ---
 # medical/organization — medical facet

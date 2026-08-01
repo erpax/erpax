@@ -1,38 +1,20 @@
 ---
 name: varies
-description: "Use when reasoning about varies — Indicates the property or properties by which the variants in a ProductGroup vary, e.g. their size, color etc. Schema.org properties can be referenced by their short name e.g. \\\"col"
+description: "Use when reasoning about varies — Indicates the property or properties by which the variants in a ProductGroup vary, e.g. their size, color etc. Schema.org properties can be referenced by their short name e.g. \\\\\\\"col"
 atomPath: varies
-coordinate: varies · 8/crest · f512123b
-contentUuid: "39c47651-dd16-5947-8141-19550ee662fe"
-diamondUuid: "77ec4260-31fc-8a2c-914c-924dd864c382"
-uuid: "f512123b-81e8-82a1-8457-7fdaa82f48f8"
-horo: 8
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+coordinate: "varies · 7/descent · 4f0890a2"
+contentUuid: "735825e4-355e-56c0-802d-2769da00df72"
+diamondUuid: "9cc84a61-59ab-825d-919d-6bf8b64540d1"
+uuid: "4f0890a2-168c-8e99-9b43-ca4c73b01102"
+horo: 7
 typography:
   partition: varies
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "b59f4b42-d0e8-83fa-9454-791cb4a622b6"
+  computationUuid: "a59225ba-c001-8455-8b59-9833f6dc4271"
   stages:
     - stage: path
       stageUuid: "7f5987d1-e7a2-8e5a-b1b9-75953171201c"
@@ -43,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "664ee253-84d2-8495-a378-17fa7c43eeaa"
     - stage: horo
-      stageUuid: "9ff3a6ba-bd20-8c57-8cec-9724d7a80d4c"
+      stageUuid: "b8efdc71-566b-843d-9d9c-858d1293052f"
     - stage: seal
-      stageUuid: "e5a6b006-0349-8920-ae43-7a3f402cf602"
+      stageUuid: "3c2ae57e-4975-8236-a55e-a7b623ef5225"
     - stage: uuid
-      stageUuid: "43e37851-e746-8030-bb1c-251dfbec21f3"
+      stageUuid: "22829f7a-9866-8590-80d6-3c31dceb921a"
 version: 2
 ---
 # varies

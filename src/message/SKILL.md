@@ -2,133 +2,21 @@
 name: message
 description: "Use when reasoning about the uuid AS the message — decode identity · OID · colour · sound out of the 128 bits alone, no payload. Completes localize.decodeIdentity (colour) with the missing sound channel (the note the uuid sounds, A432). To send is to send the uuid; to receive is to decode it. Matter-twin message/index.ts."
 atomPath: message
-coordinate: "message · 5/round · 1715cb5b"
-contentUuid: "959945d2-48bc-533f-bfd7-cb44aef530dd"
-diamondUuid: "ba61b002-c49a-8198-8015-2a43c8653d13"
-uuid: "1715cb5b-d1df-89b6-80c3-20a244b77151"
-horo: 5
-bonds:
-  in:
-    - attachment
-    - chat
-    - collect
-    - communication
-    - cost
-    - email
-    - harmony
-    - holographic
-    - identity
-    - llm
-    - local
-    - localize
-    - memo
-    - merge
-    - oid
-    - one
-    - signal
-    - standard
-    - teleportation
-    - topography
-    - translate
-    - translation
-    - uuid
-  out:
-    - attachment
-    - chat
-    - collect
-    - communication
-    - cost
-    - email
-    - harmony
-    - holographic
-    - identity
-    - llm
-    - local
-    - localize
-    - memo
-    - merge
-    - oid
-    - one
-    - signal
-    - standard
-    - teleportation
-    - topography
-    - translate
-    - translation
-    - uuid
+coordinate: "message · 1/base · 2079ec79"
+contentUuid: "d3db8fcd-ca3f-5fbf-bc9e-122306193ddf"
+diamondUuid: "9480f5a4-3d2d-852d-a067-48232227d525"
+uuid: "2079ec79-7af4-88bd-a645-7f84ce9d0591"
+horo: 1
 typography:
   partition: message
-  bondDegree: 83
-  neighbors: []
+  bondDegree: 63
 standards:
   - RFC 9562 §5.8 (the structured uuid carries the message)
   - "RFC 9562 §5.8 (the structured uuid carries the message)`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - chat
-    - cost
-    - harmony
-    - holographic
-    - identity
-    - localize
-    - merge
-    - oid
-    - one
-    - signal
-    - standard
-    - uuid
-  matrix:
-    - attachment
-    - chat
-    - collect
-    - communication
-    - cost
-    - email
-    - harmony
-    - holographic
-    - identity
-    - llm
-    - local
-    - localize
-    - memo
-    - merge
-    - oid
-    - one
-    - signal
-    - standard
-    - teleportation
-    - topography
-    - translate
-    - translation
-    - uuid
-  backlinks:
-    - attachment
-    - chat
-    - collect
-    - communication
-    - cost
-    - email
-    - harmony
-    - holographic
-    - identity
-    - llm
-    - local
-    - localize
-    - memo
-    - merge
-    - oid
-    - one
-    - signal
-    - standard
-    - teleportation
-    - topography
-    - translate
-    - translation
-    - uuid
 signatures:
-  computationUuid: "67a0fffd-5615-8cee-a61a-282dc9678e0c"
+  computationUuid: "0c39734d-6db2-88bd-a3e5-4343aad289ff"
   stages:
     - stage: path
       stageUuid: "c14742f0-dca2-8497-aa08-328b9fc736b3"
@@ -137,13 +25,13 @@ signatures:
     - stage: boundary
       stageUuid: "4e6d9bcc-3b2e-8b47-8096-f6b36b659da1"
     - stage: links
-      stageUuid: "db66be01-8376-851a-98e3-07ab0eaf029e"
+      stageUuid: "57c2ea4f-516a-8b9e-a3e6-dc28522d06dc"
     - stage: horo
-      stageUuid: "aabdfe4b-8abd-8d82-947a-a1d543577f00"
+      stageUuid: "97b3feea-96f6-88bc-a070-9418009d0908"
     - stage: seal
       stageUuid: "b12cc4a5-c4fc-8fb1-af5f-d761b6a563cc"
     - stage: uuid
-      stageUuid: "92fc892e-06c6-8a6a-96d4-8e55923354f8"
+      stageUuid: "9aeeaa41-f6d3-869f-ac4c-88d4449b1486"
 version: 2
 ---
 # message — the uuid is the message itself

@@ -2,49 +2,22 @@
 name: integration
 description: "Use when calling any external HTTP API — the outbound face of the one api atom, where a vendor is DATA (base URL, declared auth style, published limits with their source, credentials) and the machinery is shared: a continuous-refill token bucket over every published limit at once so a burst queues rather than drops, credentials that fail closed naming every missing variable, errors that propagate as IntegrationError with the vendor named, and a reuse fold that measures the same IntegrationFtl for every vendor — safe methods only, because deduping a write would drop it."
 atomPath: "api/integration"
-coordinate: "api/integration"
-contentUuid: "3fd6082e-60e4-5e1f-9dda-146638a37c51"
-diamondUuid: "8f468862-9267-875e-9cda-7aeea34fa9b8"
-uuid: "8bf016d4-2307-8ddc-9572-1fab64fa0d58"
-horo: 1
-bonds:
-  in:
-    - api
-    - law
-    - period
-  out:
-    - law
-    - period
+coordinate: "api/integration · 2/share · a9196d12"
+contentUuid: "7167d22a-c4ba-58d2-a817-caedf591e59d"
+diamondUuid: "81f51906-2da0-8582-8dde-4047613afb43"
+uuid: "a9196d12-404e-8258-9a36-af3ddb9bb59d"
+horo: 2
 typography:
   partition: api
-  bondDegree: 16
-  neighbors:
-    - diamond
-    - hallucination
-    - purity
+  bondDegree: 23
 standards:
   - "ISO/IEC 25010:2023 §5.7.2 fault-tolerance — a rate-limited burst queues; it does not drop"
   - "RFC 6749 §1.4 bearer-credential — the token is the whole authority, env-only"
   - "RFC 9110 §9 http-semantics (methods, status classes, safe/idempotent)"
   - "RFC-6749"
 bindings: []
-neighbors:
-  wikilink:
-    - api
-    - constitution
-    - convention
-    - law
-    - perspective
-    - quantum
-    - trello
-  matrix:
-    - law
-    - period
-  backlinks:
-    - law
-    - period
 signatures:
-  computationUuid: "273aee4b-2a06-8028-91d7-3503cc3a8b18"
+  computationUuid: "9f0874e1-ec76-89fe-9f89-1e4eb60050e4"
   stages:
     - stage: path
       stageUuid: "20410d15-2737-8a23-a46e-5e03071ce4b1"
@@ -55,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "d1b3c5ad-6ef8-8254-8099-1d0a730b3213"
     - stage: horo
-      stageUuid: "35e825cc-6565-8998-9ae0-916b1d47a5e6"
+      stageUuid: "206cf3f6-e84c-89e4-8b0a-1ee5fddbe782"
     - stage: seal
-      stageUuid: "f422d8c9-e34f-8da2-8e17-93bfefa72b20"
+      stageUuid: "21c56160-399d-85a2-8f66-c828d7028c67"
     - stage: uuid
-      stageUuid: "a741c15a-7474-8781-ae37-e88fc4b47782"
+      stageUuid: "37441495-dc89-823f-b040-e3f309c08160"
 version: 2
 ---
 # api/integration — the outbound face, where the vendor dissolves into data

@@ -1,137 +1,35 @@
 ---
 name: article
 description: "Use when reasoning about article — An article, such as a news article or piece of investigative report. Newspapers and magazines have articles of many different types and this is intended to cover them all. See also"
-atomPath: vocabulary/article
-coordinate: article · 8/crest · d808ced0
-contentUuid: "5730d0ab-c350-5699-a477-6acb91a82b2f"
-diamondUuid: "17d06da5-e37f-8d74-8b98-cbd16c7ca53e"
-uuid: "d808ced0-2d6a-8898-94aa-1c24393d8335"
-horo: 8
-bonds:
-  in:
-    - advertiser
-    - analysis
-    - ask
-    - associated
-    - background
-    - body
-    - byline
-    - content
-    - law
-    - medical
-    - news
-    - opinion
-    - public
-    - reportage
-    - review
-    - satirical
-    - scholarly
-    - section
-    - tech
-  out:
-    - advertiser
-    - analysis
-    - ask
-    - associated
-    - background
-    - body
-    - byline
-    - content
-    - law
-    - medical
-    - news
-    - opinion
-    - public
-    - reportage
-    - review
-    - satirical
-    - scholarly
-    - section
-    - tech
+atomPath: "vocabulary/article"
+coordinate: "vocabulary/article · 1/base · b80444fb"
+contentUuid: "cdda3f47-a4bf-55dd-aeb7-273d726aec17"
+diamondUuid: "e28a43f7-0577-88bf-91a4-f7475faeb42b"
+uuid: "b80444fb-da8c-8875-9fb8-3731c8920ced"
+horo: 1
 typography:
-  partition: article
-  bondDegree: 73
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 80
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - advertiser
-    - analysis
-    - ask
-    - associated
-    - background
-    - body
-    - content
-    - law
-    - medical
-    - news
-    - opinion
-    - public
-    - reportage
-    - review
-    - satirical
-    - scholarly
-    - section
-    - tech
-  matrix:
-    - advertiser
-    - analysis
-    - ask
-    - associated
-    - background
-    - body
-    - byline
-    - content
-    - law
-    - medical
-    - news
-    - opinion
-    - public
-    - reportage
-    - review
-    - satirical
-    - scholarly
-    - section
-    - tech
-  backlinks:
-    - advertiser
-    - analysis
-    - ask
-    - associated
-    - background
-    - body
-    - byline
-    - content
-    - law
-    - medical
-    - news
-    - opinion
-    - public
-    - reportage
-    - review
-    - satirical
-    - scholarly
-    - section
-    - tech
 signatures:
-  computationUuid: "9938d603-0c47-8685-a792-9a8ef03f7acb"
+  computationUuid: "09d90823-e8e5-8efb-8bfa-f9a47217fb0a"
   stages:
     - stage: path
-      stageUuid: "5d354ea0-f9ae-8349-a77e-f17378d1fca7"
+      stageUuid: "003a2876-6646-839f-a039-04c1fd30c578"
     - stage: trinity
-      stageUuid: "31af9c68-a88d-8f89-b138-f6546baf18b8"
+      stageUuid: "81387528-70b2-8886-9e64-6981d00b8fa1"
     - stage: boundary
-      stageUuid: "f62cad34-3ec3-8291-ae42-563d15289666"
+      stageUuid: "c55c22c2-bfb0-80a9-bb8f-8a6c012958c3"
     - stage: links
-      stageUuid: "ebd33ca6-6554-864a-9561-078c818c52c0"
+      stageUuid: "ce588149-31d6-85da-afd1-d06234ee90df"
     - stage: horo
-      stageUuid: "675d3cf5-9f2c-8f05-99b6-d7a4d0f681f5"
+      stageUuid: "79f5f5cd-bcba-8c9c-ae76-bf5d382b18da"
     - stage: seal
-      stageUuid: "8c2770c8-3b2d-8324-9989-8caac2e9fb1a"
+      stageUuid: "445f266a-b9d2-82ee-88a9-0ec197474695"
     - stage: uuid
-      stageUuid: "cee54983-4dfb-8f48-825d-5740559a671b"
+      stageUuid: "042ea152-172e-8642-bf6f-42e71e74a4cf"
 version: 2
 ---
 # article

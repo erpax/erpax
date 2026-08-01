@@ -1,68 +1,35 @@
 ---
 name: registration
 description: "Use when reasoning about registration as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/registration
-coordinate: registration · 7/descent · 6c4da9f5
-contentUuid: "b5ff2c99-bb4a-5ab1-bdd8-3dfb625708d7"
-diamondUuid: "8989aab5-046c-8339-9b37-29aabd6863b3"
-uuid: "6c4da9f5-9816-80f1-a859-a0f8245adcf5"
+atomPath: "vocabulary/registration"
+coordinate: "vocabulary/registration · 7/descent · e04cffce"
+contentUuid: "179d27d5-09c1-5e75-852c-488936c20cb9"
+diamondUuid: "849f6514-a30e-88c7-981b-4b57b2e71d12"
+uuid: "e04cffce-0eb6-8714-bfbe-1244433acc28"
 horo: 7
-bonds:
-  in:
-    - collapse
-    - company
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - company
-    - law
-    - merge
-    - sti
 typography:
-  partition: registration
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - company
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - company
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - company
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "c073944f-1de7-8eda-9a13-eca6c1b4eac9"
+  computationUuid: "ff970716-38ab-8456-8e25-2ccc896b3bcf"
   stages:
     - stage: path
-      stageUuid: "6412bfb3-741e-88af-a39c-131ed0cca786"
+      stageUuid: "12eb64d5-25de-89e3-b21a-05609f909d7b"
     - stage: trinity
-      stageUuid: "2f62fc31-dfcd-8a34-98bf-92ceabd8f259"
+      stageUuid: "b6d593ed-7df6-8abd-a0ae-d1173117d71e"
     - stage: boundary
-      stageUuid: "ce3ef46c-b318-82e0-b1c8-888e6a5c8099"
+      stageUuid: "a8fea607-a929-81f3-a2c4-43791312f0dc"
     - stage: links
-      stageUuid: "891d1050-d0d1-859b-8c12-66823488df50"
+      stageUuid: "905acbd5-b644-89aa-b9da-a6439ff61881"
     - stage: horo
-      stageUuid: "7b6df48a-142e-8b58-bdec-43c3061cf133"
+      stageUuid: "1bd404f6-691b-815a-9048-2334b5de7ecd"
     - stage: seal
-      stageUuid: "9cdd4c3c-f57f-8f8c-a88e-9666aebf2499"
+      stageUuid: "066e0908-dbe2-8bc0-9a23-eb89bc629ca9"
     - stage: uuid
-      stageUuid: "1287128b-d392-8f03-a0da-aeaed8813a42"
+      stageUuid: "b9ab2838-299c-87be-a534-14830993b10e"
 version: 2
 ---
 # registration

@@ -1,68 +1,35 @@
 ---
 name: lineup
 description: "Use when reasoning about lineup as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/lineup
-coordinate: lineup · 1/base · 455bdcb4
-contentUuid: "6b7339c4-f77f-51e0-b984-1cdae2961d44"
-diamondUuid: "be525c8f-7c79-8617-a07c-e98ad44ec839"
-uuid: "455bdcb4-0e29-8a9e-861c-0753ade37e69"
-horo: 1
-bonds:
-  in:
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/lineup"
+coordinate: "vocabulary/lineup · 7/descent · 743df7a1"
+contentUuid: "243ee942-d7bf-5c55-8164-2ca58986f39f"
+diamondUuid: "758c86fc-99dc-8d71-b9f3-328c06fd6413"
+uuid: "743df7a1-048c-8e18-8863-e2fd328de7d3"
+horo: 7
 typography:
-  partition: lineup
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "a4b5c9f1-f18f-8de9-9cbb-96c97d2c7353"
+  computationUuid: "777bc078-ab28-8fb1-8697-a66b8078c3e6"
   stages:
     - stage: path
-      stageUuid: "ce2f29d1-fc4c-8421-9b8e-3b3fe32c4bd6"
+      stageUuid: "ba2f8dad-b120-812d-972f-a4b9f96ebe77"
     - stage: trinity
-      stageUuid: "3d5a404b-96db-80a0-b559-0bad391b1d9d"
+      stageUuid: "9b63a9f0-e83f-8768-b5db-ebead4c11529"
     - stage: boundary
-      stageUuid: "13c5151d-bd52-8a31-9a80-56f0b5dc66db"
+      stageUuid: "57fe653c-96e0-8dfc-a674-917a9491b22b"
     - stage: links
-      stageUuid: "5f3b3761-e3b6-87c0-964a-d1fce67b832e"
+      stageUuid: "cf33b90d-131a-8fdd-a3c8-502ff6ecbd4a"
     - stage: horo
-      stageUuid: "09cb4bf8-21dc-8448-bb51-76b53ea5b78a"
+      stageUuid: "ee0cbe15-a02c-8bfd-b579-2fcc5f43b904"
     - stage: seal
-      stageUuid: "478abf2f-71cc-8c0a-89b5-62ab9a2bc0df"
+      stageUuid: "6e489417-2263-8885-a06f-f0c67c64662d"
     - stage: uuid
-      stageUuid: "6293bbc9-ede9-81e1-9a77-0188087bb1e0"
+      stageUuid: "ff967300-cb54-80b8-8fb0-df0fec6cbcc5"
 version: 2
 ---
 # lineup

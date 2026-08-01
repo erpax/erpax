@@ -2,230 +2,24 @@
 name: commerce
 description: "Use when designing or porting the erpax commerce/trade domain to Payload — parties under many roles (seller/buyer/agent/supplier/consignee/carrier), the cart→quote→order→invoice→note document chain, payments/allocations/refunds, subscriptions & metered usage, inventory/stock movement, packing & shipment, dunning/credit terms. The transactional-flow `@erpax/commerce` twin (sequence 4·8)."
 atomPath: commerce
-coordinate: "commerce · 2/share · 2fe6d5cf"
-contentUuid: "1f3b9dc2-6fea-5a9f-a766-885b0edc5d1c"
-diamondUuid: "769cb1c2-e046-8ba0-8bf9-c823ee403da6"
-uuid: "2fe6d5cf-1e92-8cb7-8ae8-ab0d17a3f756"
-horo: 2
-bonds:
-  in:
-    - accounting
-    - agriculture
-    - amount
-    - api
-    - atom
-    - choice
-    - collapse
-    - crop
-    - currency
-    - domain
-    - dunning
-    - ecommerce
-    - education
-    - endpoints
-    - fields
-    - flow
-    - give
-    - harvest
-    - hooks
-    - identity
-    - law
-    - manufacturing
-    - market
-    - measure
-    - methods
-    - movements
-    - number
-    - party
-    - payment
-    - pickup
-    - plans
-    - plugins
-    - port
-    - postharvest
-    - queries
-    - reconcile
-    - records
-    - resources
-    - sequence
-    - spec
-    - tag
-    - tags
-    - trading
-    - variant
-  out:
-    - accounting
-    - agriculture
-    - amount
-    - api
-    - atom
-    - choice
-    - collapse
-    - crop
-    - currency
-    - domain
-    - dunning
-    - ecommerce
-    - education
-    - endpoints
-    - fields
-    - flow
-    - give
-    - harvest
-    - hooks
-    - identity
-    - law
-    - manufacturing
-    - market
-    - measure
-    - methods
-    - movements
-    - number
-    - party
-    - payment
-    - pickup
-    - plans
-    - plugins
-    - port
-    - postharvest
-    - queries
-    - reconcile
-    - records
-    - resources
-    - sequence
-    - spec
-    - tag
-    - tags
-    - trading
-    - variant
+coordinate: "commerce · 1/base · 5a270404"
+contentUuid: "998d1991-7c89-5fb4-af59-9f1c09f2a7fd"
+diamondUuid: "49069789-622e-81b5-bcef-71ed1f72aee2"
+uuid: "5a270404-997b-822f-89a9-b55ad584a800"
+horo: 1
 typography:
   partition: commerce
-  bondDegree: 138
-  neighbors: []
+  bondDegree: 112
 standards:
   - "Cloudflare Workers API (deployments + durable-object namespaces)"
-  - "EU-2024/1183"
-  - "EU-2024/1620"
-  - "EU-2024/1624"
-  - "EU-CSDDD-2024/1760"
   - "Stripe API v2024-10-28-acacia"
   - W3C Verifiable Credentials Data Model 2.0 (subscription receipts)
   - "W3C Verifiable Credentials Data Model 2.0 (subscription receipts)`"
   - "W3C-VC-2.0"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - currency
-    - dunning
-    - fields
-    - hooks
-    - identity
-    - law
-    - manufacturing
-    - measure
-    - methods
-    - movements
-    - party
-    - payment
-    - plugins
-    - port
-    - queries
-    - sequence
-    - tags
-  matrix:
-    - accounting
-    - agriculture
-    - amount
-    - api
-    - atom
-    - choice
-    - collapse
-    - crop
-    - currency
-    - domain
-    - dunning
-    - ecommerce
-    - education
-    - endpoints
-    - fields
-    - flow
-    - give
-    - harvest
-    - hooks
-    - identity
-    - law
-    - manufacturing
-    - market
-    - measure
-    - methods
-    - movements
-    - number
-    - party
-    - payment
-    - pickup
-    - plans
-    - plugins
-    - port
-    - postharvest
-    - queries
-    - reconcile
-    - records
-    - resources
-    - sequence
-    - spec
-    - tag
-    - tags
-    - trading
-    - variant
-  backlinks:
-    - accounting
-    - agriculture
-    - amount
-    - api
-    - atom
-    - choice
-    - collapse
-    - crop
-    - currency
-    - domain
-    - dunning
-    - ecommerce
-    - education
-    - endpoints
-    - fields
-    - flow
-    - give
-    - harvest
-    - hooks
-    - identity
-    - law
-    - manufacturing
-    - market
-    - measure
-    - methods
-    - movements
-    - number
-    - party
-    - payment
-    - pickup
-    - plans
-    - plugins
-    - port
-    - postharvest
-    - queries
-    - reconcile
-    - records
-    - resources
-    - sequence
-    - spec
-    - tag
-    - tags
-    - trading
-    - variant
 signatures:
-  computationUuid: "98cd044e-d6b4-89d7-b120-3a29cd91b00a"
+  computationUuid: "7386644c-ccc2-86da-811c-1b9b620d3d10"
   stages:
     - stage: path
       stageUuid: "eefc9b09-1e71-8151-a18f-4a4dd3a90971"
@@ -234,13 +28,13 @@ signatures:
     - stage: boundary
       stageUuid: "4e7c555b-76b2-8ae9-8acd-37fe0d6aa7dd"
     - stage: links
-      stageUuid: "0d7d9807-5562-81e6-bf28-25342dec37a5"
+      stageUuid: "dd4b3941-94dc-8047-a56f-99c0afc7d994"
     - stage: horo
-      stageUuid: "c62cc74f-630c-87a1-bb54-1d6cb8026cfb"
+      stageUuid: "d22dda8c-05f9-8aab-be3d-ed017fcd277e"
     - stage: seal
       stageUuid: "08b5e11f-2892-8355-a41e-c87291686fa2"
     - stage: uuid
-      stageUuid: "ba3bf572-a5e4-8580-b0f4-d4bff3598640"
+      stageUuid: "1d3da05d-66c4-8103-a4b4-bf8f0bbbbcf9"
 version: 2
 ---
 # commerce — the transactional-flow plugin (one party, infinite roles)

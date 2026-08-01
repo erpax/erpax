@@ -2,74 +2,16 @@
 name: reactor
 description: "Use when reading the fusion reactor — the engine that fuses atoms into the one matrix, composed over gravity (force), entropy (fuel), and the quantum laws; zero entropy implies infinite mass and infinite tamper cost."
 atomPath: "fusion/reactor"
-coordinate: "fusion/reactor · 8/crest · 16a59644"
-contentUuid: "79ebca63-e139-542e-99da-736c2a7735eb"
+coordinate: "fusion/reactor · 4/weave · f0280d39"
+contentUuid: "b9454693-8a8b-5158-9a60-d09c2e0e3841"
 diamondUuid: "e4bc47a4-4762-8cdf-9a59-d31bfe17ed16"
-uuid: "16a59644-e033-8a15-96cd-c5d3a15f220d"
-horo: 8
-bonds:
-  in:
-    - cost
-    - dry
-    - entropy
-    - fusion
-    - gravity
-    - law
-    - matrix
-    - quantum
-    - singularity
-    - tamper
-  out:
-    - cost
-    - dry
-    - entropy
-    - fusion
-    - gravity
-    - law
-    - matrix
-    - quantum
-    - singularity
-    - tamper
+uuid: "f0280d39-f1f1-8200-88ea-733ed57dc3ae"
+horo: 4
 typography:
   partition: fusion
   bondDegree: 31
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - cost
-    - dry
-    - entropy
-    - fusion
-    - gravity
-    - law
-    - matrix
-    - quantum
-    - singularity
-    - tamper
-  matrix:
-    - cost
-    - dry
-    - entropy
-    - fusion
-    - gravity
-    - law
-    - matrix
-    - quantum
-    - singularity
-    - tamper
-  backlinks:
-    - cost
-    - dry
-    - entropy
-    - fusion
-    - gravity
-    - law
-    - matrix
-    - quantum
-    - singularity
-    - tamper
 signatures:
   computationUuid: "9ea01400-86f2-88d7-99d6-499ea17f11e9"
   stages:

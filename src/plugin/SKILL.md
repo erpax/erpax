@@ -2,84 +2,20 @@
 name: plugin
 description: "Use when modelling one plugin — the singular model of the plugins collection (the plural store); a self-contained module that extends the platform. AND when naming the host-extension deployment face of a [[diamond]] — Payload plugins, Cursor hooks, VitePress plugins, MCP extensions."
 atomPath: plugin
-coordinate: plugin · 2/share · cd0df911
-contentUuid: "99985eba-58b5-51fb-a904-2f7da982fd5c"
-diamondUuid: "3bd878db-0ed2-80e9-a701-c3096e5fe428"
-uuid: "cd0df911-c364-819b-9851-af856bab763b"
-horo: 2
-bonds:
-  in:
-    - balance
-    - diamond
-    - hooks
-    - law
-    - payload
-    - platform
-    - plugin
-    - plugins
-    - pwa
-    - vitepress
-    - worker
-  out:
-    - balance
-    - diamond
-    - hooks
-    - law
-    - payload
-    - platform
-    - plugin
-    - plugins
-    - pwa
-    - vitepress
-    - worker
+coordinate: "plugin · 4/weave · 4a0f52d1"
+contentUuid: "cb29c734-0430-57bf-b0b8-53c1e0455a95"
+diamondUuid: "210402cc-18cb-84dc-b724-29a908525b87"
+uuid: "4a0f52d1-c16c-8f3f-8c57-ceb4ca777baa"
+horo: 4
 typography:
   partition: plugin
-  bondDegree: 38
-  neighbors:
-    - diamond
+  bondDegree: 43
 standards:
   - "W3C-JSON-LD-1.1"
 bindings:
-  - services/WORKER_SELF_REFERENCE
-neighbors:
-  wikilink:
-    - balance
-    - diamond
-    - hooks
-    - law
-    - payload
-    - platform
-    - plugin
-    - plugins
-    - pwa
-    - vitepress
-    - worker
-  matrix:
-    - balance
-    - diamond
-    - hooks
-    - law
-    - payload
-    - platform
-    - plugin
-    - plugins
-    - pwa
-    - vitepress
-    - worker
-  backlinks:
-    - balance
-    - diamond
-    - hooks
-    - law
-    - payload
-    - platform
-    - plugin
-    - plugins
-    - pwa
-    - vitepress
-    - worker
+  - "services/WORKER_SELF_REFERENCE"
 signatures:
-  computationUuid: "ac96cc6c-3d08-8887-b412-360ee30cfa7a"
+  computationUuid: "a3eb3773-169c-8368-aff7-c10a8831f505"
   stages:
     - stage: path
       stageUuid: "6759ee9d-26e8-8a92-8233-cd3bf0079ee4"
@@ -90,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "b4b06795-c089-8207-bcc4-564080b9de30"
     - stage: horo
-      stageUuid: "593d4a10-2c2a-84d4-8d4f-f7f90f9538a0"
+      stageUuid: "aaf97c98-f8d8-82e8-bca5-f6d25a181f2d"
     - stage: seal
-      stageUuid: "051b408f-be54-898a-854e-322f375707a1"
+      stageUuid: "43b86f87-1106-8e2a-a706-dd1cf130f989"
     - stage: uuid
-      stageUuid: "89679a95-f6fe-8b4c-8f7d-73d629c90a8d"
+      stageUuid: "2d7ce4be-37a6-84e3-a79e-a077102ea051"
 version: 2
 ---
 # plugin — the model of one [[plugins]] row

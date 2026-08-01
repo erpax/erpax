@@ -2,62 +2,19 @@
 name: suffix
 description: "Use when reasoning about suffix as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: suffix
-coordinate: suffix · 4/weave · bc1bdf12
-contentUuid: "a58289b5-b33a-523e-88f9-151db9bf3ee9"
-diamondUuid: "07424558-1970-8425-83c0-f2bfadb1bcf1"
-uuid: "bc1bdf12-4ddb-8218-a273-b5b78ca5c997"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - honorific
-    - law
-    - merge
-    - stage
-    - sti
-    - sub
-  out:
-    - collapse
-    - honorific
-    - law
-    - merge
-    - stage
-    - sti
-    - sub
+coordinate: "suffix · 5/round · 87f3a4d4"
+contentUuid: "0b41d385-761a-5847-a7bc-bacd2279571a"
+diamondUuid: "6c645b47-09ca-80cb-9271-1247917be473"
+uuid: "87f3a4d4-45fb-8b16-8cc7-75b0a96c0b1c"
+horo: 5
 typography:
   partition: suffix
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - honorific
-    - law
-    - merge
-    - stage
-    - sti
-    - sub
-  matrix:
-    - collapse
-    - honorific
-    - law
-    - merge
-    - stage
-    - sti
-    - sub
-  backlinks:
-    - collapse
-    - honorific
-    - law
-    - merge
-    - stage
-    - sti
-    - sub
 signatures:
-  computationUuid: "9d00de78-55a6-859a-b4e2-8dae50070071"
+  computationUuid: "5e259951-4bb3-86f5-9589-8e56edb7f7dc"
   stages:
     - stage: path
       stageUuid: "5faa18e3-fd55-8634-9804-a8a8265f9ce2"
@@ -68,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "95c0f57d-ee93-8c8f-97bd-5c7db6117cfa"
     - stage: horo
-      stageUuid: "f9c0889d-6cf7-8f1f-81a6-355a0003a5d7"
+      stageUuid: "7b97e3ca-ab94-88e3-b71a-5738d6438cc1"
     - stage: seal
-      stageUuid: "86574269-7219-843a-a1ba-702ba5faaccf"
+      stageUuid: "aea4b38f-20fd-80aa-9a1c-a844ad35294f"
     - stage: uuid
-      stageUuid: "c5f91139-bd1e-812a-9221-affe0d9e9e6a"
+      stageUuid: "4993408c-7aba-86b4-8613-b5dc2f12e5d2"
 version: 2
 ---
 # suffix

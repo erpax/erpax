@@ -2,45 +2,16 @@
 name: submissions
 description: "Use when building, submitting, or auditing Bulgarian Наредба Н-18 Приложение-38 standardised sales-audit files to НАП — period, self-checking header (count + control sum), submission status, НАП response, and the XML; never-deletable compliance trail. The BG fiscal-audit-file submission log."
 atomPath: "audit/submissions"
-coordinate: "audit/submissions · 7/descent · 949b782a"
-contentUuid: "9727273b-fd56-5483-bead-c179ba8a2d86"
-diamondUuid: "a8b80668-8802-866d-b90c-adf5b7531596"
-uuid: "949b782a-36d1-8b75-b390-ba7922d9c392"
-horo: 7
-bonds:
-  in:
-    - access
-    - accounting
-    - audit
-    - auth
-    - fields
-    - hooks
-    - identity
-    - proof
-    - submission
-    - supto
-  out:
-    - access
-    - accounting
-    - auth
-    - fields
-    - hooks
-    - identity
-    - proof
-    - submission
-    - supto
+coordinate: "audit/submissions · 5/round · 063f5962"
+contentUuid: "7b422535-1f05-5e35-87b7-cc4e22fe9819"
+diamondUuid: "47f79b32-6b0f-8def-87ae-93d2dfe43f91"
+uuid: "063f5962-1920-819d-8bfa-1f74322fdfc8"
+horo: 5
 typography:
   partition: audit
   bondDegree: 27
-  neighbors: []
 standards:
   - "BG Наредба-Н-18 §Приложение-38 audit-file-submission-log"
-  - "EU-2022/1925"
-  - "EU-2022/2065"
-  - "EU-2022/2554"
-  - "EU-2022/2555"
-  - "EU-2022/868"
-  - "ILO-C001"
   - "ISO-19011"
   - "ISO-19011`"
   - "ISO-27001"
@@ -49,37 +20,8 @@ standards:
   - "Naredba-N-18"
   - "SOX §404 internal-controls"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - accounting
-    - auth
-    - fields
-    - hooks
-    - identity
-    - proof
-  matrix:
-    - access
-    - accounting
-    - auth
-    - fields
-    - hooks
-    - identity
-    - proof
-    - submission
-    - supto
-  backlinks:
-    - access
-    - accounting
-    - auth
-    - fields
-    - hooks
-    - identity
-    - proof
-    - submission
-    - supto
 signatures:
-  computationUuid: "f90b2215-5adb-821f-bd1a-9fc812fd77fa"
+  computationUuid: "377b613d-43c1-8f55-aec0-6b0f173f6402"
   stages:
     - stage: path
       stageUuid: "c41e6e01-f5ea-87c8-a1a3-680732a14cbd"
@@ -90,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "f56cb43b-d0fe-8c87-8a37-e0b6635a5fbf"
     - stage: horo
-      stageUuid: "9676bc43-8a1b-879b-83bf-b23c2f91ad2c"
+      stageUuid: "f8f066fa-a675-8542-acea-ebd2606e9d2f"
     - stage: seal
       stageUuid: "66a610d5-fc38-8115-979f-9e7abda4df95"
     - stage: uuid
-      stageUuid: "e7fc1781-e843-804c-936a-b94929791667"
+      stageUuid: "ffe5a7cd-19eb-858f-bacc-5c58134e6da1"
 version: 2
 ---
 # audit-submissions

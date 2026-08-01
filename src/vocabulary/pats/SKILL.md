@@ -1,98 +1,35 @@
 ---
 name: pats
 description: "Use when reasoning about pats as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/pats
-coordinate: pats · 8/crest · 51742ef3
-contentUuid: "ef73272f-4159-5c96-b8cd-2980bae99c19"
-diamondUuid: "9285384d-09d8-81d9-87a1-549b8e122700"
-uuid: "51742ef3-c89a-87bd-b560-5a67942d67d7"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - cvd
-    - ho
-    - hosp
-    - law
-    - mech
-    - merge
-    - num
-    - overflow
-    - sti
-    - vent
-  out:
-    - collapse
-    - cvd
-    - ho
-    - hosp
-    - law
-    - mech
-    - merge
-    - num
-    - overflow
-    - sti
-    - vent
+atomPath: "vocabulary/pats"
+coordinate: "vocabulary/pats · 4/weave · 183d5cf4"
+contentUuid: "4fe9758c-3444-5d9c-a9e9-1ff5b09d9200"
+diamondUuid: "7b6899fe-6eae-839b-b6f6-51d2d4090bbf"
+uuid: "183d5cf4-119d-8bf0-9ef2-fb1222be74f5"
+horo: 4
 typography:
-  partition: pats
+  partition: vocabulary
   bondDegree: 40
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - cvd
-    - ho
-    - hosp
-    - law
-    - mech
-    - merge
-    - num
-    - overflow
-    - sti
-    - vent
-  matrix:
-    - collapse
-    - cvd
-    - ho
-    - hosp
-    - law
-    - mech
-    - merge
-    - num
-    - overflow
-    - sti
-    - vent
-  backlinks:
-    - collapse
-    - cvd
-    - ho
-    - hosp
-    - law
-    - mech
-    - merge
-    - num
-    - overflow
-    - sti
-    - vent
 signatures:
-  computationUuid: "bafffd5f-9a1f-899a-aa21-ec68d8ecaaec"
+  computationUuid: "d25dd953-a54e-8e53-a9b5-ee00e6955cae"
   stages:
     - stage: path
-      stageUuid: "78da8331-a420-87f8-9f9f-15da0d9a2ef5"
+      stageUuid: "d5892f1f-6324-8f31-af57-12fa9fd0e580"
     - stage: trinity
-      stageUuid: "d0035c7c-d07f-8b7b-a120-944702780499"
+      stageUuid: "c4f0328d-17c6-86b3-a5fd-67804d01d00d"
     - stage: boundary
-      stageUuid: "f28c4a4a-75ad-8d64-829d-9a0922f1d379"
+      stageUuid: "1e143dc7-6a9e-81d7-a80d-c42b6ebfb694"
     - stage: links
-      stageUuid: "62fa452d-946e-82f9-b27c-86a4d1300ada"
+      stageUuid: "dc6e6754-a229-8b0c-8f5f-3ed86501144e"
     - stage: horo
-      stageUuid: "ce48f851-a99d-811f-964a-ca1980b783e0"
+      stageUuid: "8e702608-80a6-8b0a-b308-58b8ee388534"
     - stage: seal
-      stageUuid: "811d29c9-38d8-885a-ab86-f086ccc5ad14"
+      stageUuid: "f0a33f62-884b-8eb6-ae9e-c6f2e2d9617f"
     - stage: uuid
-      stageUuid: "d08849dc-01b9-8b15-885e-9e611cf86cfe"
+      stageUuid: "863f23c5-2a51-8962-a0be-88e69a1fa7b2"
 version: 2
 ---
 # pats

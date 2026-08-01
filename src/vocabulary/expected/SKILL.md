@@ -1,78 +1,35 @@
 ---
 name: expected
 description: "Use when reasoning about expected as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/expected
-coordinate: expected · 1/base · 9745e0c6
-contentUuid: "ef164857-1ab4-5888-8a3f-fc00502cb054"
-diamondUuid: "6c089f7c-81d2-80bf-8f29-d16669a64d22"
-uuid: "9745e0c6-e602-84ce-bfd4-2a85fc1134cd"
-horo: 1
-bonds:
-  in:
-    - arrival
-    - collapse
-    - law
-    - merge
-    - prognosis
-    - sti
-    - until
-  out:
-    - arrival
-    - collapse
-    - law
-    - merge
-    - prognosis
-    - sti
-    - until
+atomPath: "vocabulary/expected"
+coordinate: "vocabulary/expected · 4/weave · 57dd4482"
+contentUuid: "b15ad4a9-d9a8-55f8-8458-f1d59b23737d"
+diamondUuid: "1f200005-4819-8e78-8253-e8c196e52292"
+uuid: "57dd4482-a1ea-8ee4-ae7c-1025cada2634"
+horo: 4
 typography:
-  partition: expected
+  partition: vocabulary
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - arrival
-    - collapse
-    - law
-    - merge
-    - prognosis
-    - sti
-    - until
-  matrix:
-    - arrival
-    - collapse
-    - law
-    - merge
-    - prognosis
-    - sti
-    - until
-  backlinks:
-    - arrival
-    - collapse
-    - law
-    - merge
-    - prognosis
-    - sti
-    - until
 signatures:
-  computationUuid: "9ce3178b-6a32-864f-8d56-e63683468f18"
+  computationUuid: "dac8eb91-f03a-8b88-8517-380704b93c77"
   stages:
     - stage: path
-      stageUuid: "9d229625-4a25-8793-b959-bb23731771bb"
+      stageUuid: "69ba5147-ebe0-8c6c-960f-88d55c39c693"
     - stage: trinity
-      stageUuid: "2f685ee1-3abd-8f98-a7dc-9a2369485604"
+      stageUuid: "ebf4839a-6a92-8014-8f8f-dbf1f17661dc"
     - stage: boundary
-      stageUuid: "4693d693-5ecb-84e4-a184-9de4bdd5e936"
+      stageUuid: "c62ac168-a7eb-867d-8a8a-cb2570e0ecd5"
     - stage: links
-      stageUuid: "1fb595cc-b558-89ac-8149-695b3bda5aca"
+      stageUuid: "3197f5a0-e725-8599-ae99-e450cf62f8dc"
     - stage: horo
-      stageUuid: "6a337cef-530e-84c5-a62b-0e58dd69cbe3"
+      stageUuid: "f3d15600-4940-8bca-8858-ad480d8bcf9a"
     - stage: seal
-      stageUuid: "e8271803-03eb-816f-a277-4bf27e0bdddf"
+      stageUuid: "b82be86a-5211-8a3e-88fa-09bf47ecd6cb"
     - stage: uuid
-      stageUuid: "d7e6ce92-ba4d-854f-8a4c-38d5ca087d4b"
+      stageUuid: "8f426d39-a555-8705-bfee-7125e3bb287b"
 version: 2
 ---
 # expected

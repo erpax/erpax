@@ -3,29 +3,13 @@ name: orientation
 description: "Use when judging whether a front page ORIENTS a reader or only counts itself — eight criteria derived from a working sibling portal (identity in the first screen, a first runnable command, a census, the sequence, its inversion, a usable quantum invocation, the open-problem position, and stated limits), each citing the feature it came from so the bar can be argued with rather than taken on taste; the score is computed from the text and assertOrients is a ratchet run upward, so a front page may not orient less than it does today."
 atomPath: "readme/orientation"
 coordinate: "readme/orientation"
-contentUuid: "f04c02dc-e4ba-5871-b9b0-e3e21bb5006d"
+contentUuid: "74a2daf6-6f86-5d37-9168-34a764f64d25"
 diamondUuid: "dbf992b7-876a-80ff-893c-1ff276abb2b9"
-bonds:
-  in:
-    - readme
-  out: []
 typography:
   partition: readme
   bondDegree: 7
-  neighbors:
-    - diamond
-    - hallucination
-    - purity
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - constitution
-    - law
-    - readme
-    - rules
-  matrix: []
-  backlinks: []
 signatures:
   computationUuid: "ef95d9b4-e2f5-83d2-bbf1-7d60b3eebe33"
   stages:

@@ -1,73 +1,35 @@
 ---
 name: offset
 description: "Use when reasoning about offset as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/offset
-coordinate: offset · 7/descent · cbc10456
-contentUuid: "54d67979-6f80-5f45-8aca-532869883b2d"
-diamondUuid: "3576f598-df91-8ec2-ad4a-0222248a3b09"
-uuid: "cbc10456-db9a-8431-94a8-62088cbf84ad"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - end
-    - law
-    - merge
-    - start
-    - sti
-  out:
-    - collapse
-    - end
-    - law
-    - merge
-    - start
-    - sti
+atomPath: "vocabulary/offset"
+coordinate: "vocabulary/offset · 4/weave · 5220504a"
+contentUuid: "0da26ab1-7d17-54a6-90b2-e3d0b93867a0"
+diamondUuid: "e3428993-a36b-882a-9d5f-f5125a3f1af5"
+uuid: "5220504a-971d-8f53-8edb-a91407362071"
+horo: 4
 typography:
-  partition: offset
+  partition: vocabulary
   bondDegree: 18
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - end
-    - law
-    - merge
-    - start
-    - sti
-  matrix:
-    - collapse
-    - end
-    - law
-    - merge
-    - start
-    - sti
-  backlinks:
-    - collapse
-    - end
-    - law
-    - merge
-    - start
-    - sti
 signatures:
-  computationUuid: "d7c752ff-39da-8f4f-9aee-85eefdebcb30"
+  computationUuid: "547793fe-e93c-8eb6-97d8-6cd18630e912"
   stages:
     - stage: path
-      stageUuid: "ea9c7e2d-340b-8aec-981e-0c679b2a81a3"
+      stageUuid: "a7954ff4-3267-897c-b276-13f1ff8b53cb"
     - stage: trinity
-      stageUuid: "46d803b0-485d-81e5-8f14-90822e8f6571"
+      stageUuid: "1e8be366-6114-83a7-8155-448a557af3cd"
     - stage: boundary
-      stageUuid: "9b9ad401-7d0b-8aaf-854d-1db79146db41"
+      stageUuid: "cba9d2ea-4058-8735-9338-37b5dc3ffa47"
     - stage: links
-      stageUuid: "d8f75784-a4a9-8391-b5dd-e9e36f79ac69"
+      stageUuid: "f353db9d-56fd-8443-b128-3f8c87255403"
     - stage: horo
-      stageUuid: "5a3ab5d3-063a-8253-a1f9-fb673a56de3b"
+      stageUuid: "6db8c74b-b230-86f6-bdbf-993401241f2f"
     - stage: seal
-      stageUuid: "c1155eda-f4f2-80df-8d16-6a9333228db0"
+      stageUuid: "5d1e4bce-4127-8e40-b0b3-cf416ab7cc44"
     - stage: uuid
-      stageUuid: "a9cde26d-07b0-8e4c-91ec-76cd4d92e9e2"
+      stageUuid: "5bf99a29-d2b3-86ef-afbb-e2c7bf9585c3"
 version: 2
 ---
 # offset

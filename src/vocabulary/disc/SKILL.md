@@ -1,63 +1,35 @@
 ---
 name: disc
 description: "Use when reasoning about disc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/disc
-coordinate: disc · 1/base · e267f301
-contentUuid: "dd425a00-51d0-5427-bf58-52b74e64d3ba"
-diamondUuid: "f9f16be2-7def-8d9c-9570-8da60af848ee"
-uuid: "e267f301-3014-85f5-87c0-8096816fefab"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/disc"
+coordinate: "vocabulary/disc · 7/descent · 719052ae"
+contentUuid: "c920004b-78e0-5d1b-9afc-8bfab84b1d2c"
+diamondUuid: "cbb1e2e7-89b7-887e-bcb6-63651a4ea610"
+uuid: "719052ae-9233-8638-9476-e9105e10943b"
+horo: 7
 typography:
-  partition: disc
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "d20403cd-cc6a-8770-9956-71ced4eab076"
+  computationUuid: "0342ab73-96d7-84f9-8d3e-3ef731b693c5"
   stages:
     - stage: path
-      stageUuid: "da17041e-c1b2-8a97-90ce-8e081cae593d"
+      stageUuid: "63880641-a381-86ec-a375-2714ffc26d6e"
     - stage: trinity
-      stageUuid: "53c2abb4-7db2-8f96-93f1-2a7c49afd14c"
+      stageUuid: "41899cba-ac76-8fa2-986f-3c7d95ec8d06"
     - stage: boundary
-      stageUuid: "53629c86-3380-8dfe-bef8-12741885df69"
+      stageUuid: "caec59f8-289f-862a-b80d-45a8d36e4270"
     - stage: links
-      stageUuid: "bb225336-0157-8263-b2e7-f123351a9b17"
+      stageUuid: "e4284ed2-34b7-8697-abad-a7c025052d02"
     - stage: horo
-      stageUuid: "7ba0822a-4a5a-8738-b0c5-f64f54928193"
+      stageUuid: "08710bda-120d-8268-8acd-55445dc48e6c"
     - stage: seal
-      stageUuid: "0ef6161e-aac4-88de-ac10-e7992a6cc7ff"
+      stageUuid: "463bfcd0-aea8-8958-9685-ada93ca6bc5c"
     - stage: uuid
-      stageUuid: "9d65e470-15de-8918-af9e-3fa94702192a"
+      stageUuid: "569ff126-368b-8bf3-aa55-fdb25c2a3b62"
 version: 2
 ---
 # disc

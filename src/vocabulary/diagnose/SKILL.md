@@ -1,68 +1,35 @@
 ---
 name: diagnose
 description: "Use when reasoning about diagnose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/diagnose
-coordinate: diagnose · 4/weave · 2c36e977
-contentUuid: "f13207d0-86aa-52a4-b0ea-95d20a8cc867"
-diamondUuid: "85e918e1-8c23-86a1-a2b2-faadb76beec7"
-uuid: "2c36e977-a511-872c-9aed-6272ba45b413"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - used
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - used
+atomPath: "vocabulary/diagnose"
+coordinate: "vocabulary/diagnose · 2/share · 2fea05d4"
+contentUuid: "d2de70ae-7eb1-5547-9f35-5c50fb0918d9"
+diamondUuid: "1458e89e-5f95-8a98-9eae-81714a5defa0"
+uuid: "2fea05d4-06f6-8538-9bf6-5471f3335c58"
+horo: 2
 typography:
-  partition: diagnose
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - used
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - used
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - used
 signatures:
-  computationUuid: "3b693f8b-ce50-8196-a4a8-ae22063beba4"
+  computationUuid: "70b5dd19-1dd0-8ba0-af9d-5ce2946f0811"
   stages:
     - stage: path
-      stageUuid: "123583cf-836f-8c5b-bb4f-12bafd3a10df"
+      stageUuid: "3836105e-392b-8e94-825d-8c5c0f58d276"
     - stage: trinity
-      stageUuid: "0d850ea0-5374-894c-93f3-f46e7f7ed977"
+      stageUuid: "1bc16d1b-7e79-8750-863f-b68f04e92d7c"
     - stage: boundary
-      stageUuid: "7dbced9b-94a0-88a4-9460-eb7ee7c4993d"
+      stageUuid: "372dbf80-9f93-83c7-a4e1-8c2860e53153"
     - stage: links
-      stageUuid: "474e9330-5404-8305-9074-a9ecff1bdb22"
+      stageUuid: "a6c125c7-809b-8874-807f-e2c883fde31d"
     - stage: horo
-      stageUuid: "79308982-0c19-810d-a487-cdb567934614"
+      stageUuid: "f69c4c9c-d3e1-8cb7-81dd-03fc32a150f8"
     - stage: seal
-      stageUuid: "85ea3026-0e88-8dd2-bf76-f6d0aaffba53"
+      stageUuid: "46151ce6-8ea9-87b4-8c88-9dcc90ccd1ca"
     - stage: uuid
-      stageUuid: "0fb003d5-d088-89ff-9675-251d1dfbb8d2"
+      stageUuid: "a80386ad-9e45-8155-ba4a-1c46ff0a0a0b"
 version: 2
 ---
 # diagnose

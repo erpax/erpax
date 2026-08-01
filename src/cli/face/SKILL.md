@@ -2,8 +2,33 @@
 name: face
 description: "Use when a command must exist without anyone remembering to register it — the CLI surface derived from the tree instead of transcribed into a table. An atom is a command exactly when its index.ts carries a CLI guard, and that is read from the grammar so a guard quoted in a comment or a string cannot masquerade as one. Descriptions come from each atom's own SKILL.md, an unambiguous leaf resolves like a search hit, and an ambiguous one is refused with its candidates named. Explicit registry entries always win."
 atomPath: "cli/face"
+coordinate: "cli/face"
+contentUuid: "eb35a88d-dd53-533e-b843-181c0d9eddaa"
+diamondUuid: "7a669f73-90b0-82ff-9e86-60170b79f7a2"
+typography:
+  partition: cli
+  bondDegree: 7
+standards: []
+bindings: []
+signatures:
+  computationUuid: "7fdf3ae6-b85b-82bd-a705-cd60c9cecbc0"
+  stages:
+    - stage: path
+      stageUuid: "b3463d12-6525-8128-8065-673a0195498c"
+    - stage: trinity
+      stageUuid: "38f15167-366d-8322-89b8-361fcce5bfe7"
+    - stage: boundary
+      stageUuid: "0d38ec7f-aa75-8183-a582-c6ed15d27779"
+    - stage: links
+      stageUuid: "5b0016c5-4ecd-85f1-b73b-d72fc79fe283"
+    - stage: horo
+      stageUuid: "f79ef80f-a09b-8277-8ffc-db0a3e635e5b"
+    - stage: seal
+      stageUuid: "0a01b42b-200d-8ab5-a792-196911098ab4"
+    - stage: uuid
+      stageUuid: "13a81a8f-8fab-81f4-b634-fb3f68f2bc9d"
+version: 2
 ---
-
 # cli/face — a face you must remember to declare is a face that will be missing
 
 The registry was a hand-written map: one entry per command, added by whoever remembered. That is bounded work at ten atoms and unbounded at three thousand — and it **fails silently**, because an unregistered atom is simply not there.

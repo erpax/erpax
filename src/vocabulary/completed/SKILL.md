@@ -1,63 +1,35 @@
 ---
 name: completed
 description: "Use when reasoning about completed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/completed
-coordinate: completed · 5/round · 3c37a3d4
-contentUuid: "2ba14ee5-eb49-5fc0-8b9b-6fc125e16ff8"
-diamondUuid: "f2950190-89c4-8e86-be24-68146421cae5"
-uuid: "3c37a3d4-e645-8472-96fa-4928ace2fc2d"
+atomPath: "vocabulary/completed"
+coordinate: "vocabulary/completed · 5/round · d4e09fa0"
+contentUuid: "ea9b23b6-1b01-5a4e-be49-04102834315f"
+diamondUuid: "1af8a6c4-d3e6-8552-ad11-54699d919f16"
+uuid: "d4e09fa0-cef6-89a5-8249-99b9aae97464"
 horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: completed
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "bb7ff36d-a07f-8265-aa6c-28b5ce5c749d"
+  computationUuid: "44f1e25b-1977-8019-a57f-312413953c18"
   stages:
     - stage: path
-      stageUuid: "6881cb3f-416c-8745-b1b3-7115b6235351"
+      stageUuid: "6a911231-e969-86b9-aad1-585ee9b50665"
     - stage: trinity
-      stageUuid: "e2ff641f-b8dd-8fb9-8bf5-677a3229a330"
+      stageUuid: "720c2d06-dcbd-8417-8609-35d1dba80759"
     - stage: boundary
-      stageUuid: "65ba7936-b519-8b7e-aed1-8dcac64f50da"
+      stageUuid: "40bcb145-e744-8d77-a9b7-1ca4ddb4df68"
     - stage: links
-      stageUuid: "b5a437e0-7f37-8a3a-936f-fb24418bfab8"
+      stageUuid: "6543fee5-8933-8860-aff4-d6a705d0a73b"
     - stage: horo
-      stageUuid: "db1ac9ff-c359-8917-b7d6-ebb3848a8536"
+      stageUuid: "f53c79e1-0ed4-88eb-8ff1-6dd35f27fb4c"
     - stage: seal
-      stageUuid: "52feb583-5190-85c9-99ad-4824a0d6225a"
+      stageUuid: "1d4997df-dadd-8af3-a399-cc6a807aac6e"
     - stage: uuid
-      stageUuid: "7ca9e931-e830-88cd-8a43-0fa67ddb8c86"
+      stageUuid: "6ab84b73-e525-830e-8ffd-99e943f4e2c1"
 version: 2
 ---
 # completed

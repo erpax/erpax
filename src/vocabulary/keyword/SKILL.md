@@ -1,66 +1,34 @@
 ---
 name: keyword
 description: Use when modelling one keyword — the singular model of the keywords collection (the plural store); a salient term used to index or retrieve content.
-atomPath: vocabulary/keyword
-coordinate: keyword · 1/base · b4214de5
-contentUuid: "569266a3-9cf2-5a17-b039-afe6916cd2b2"
-diamondUuid: "21382fa8-0742-8d86-8479-574e4b4a0627"
-uuid: "b4214de5-b46f-80af-bb9e-dd3f320153b0"
-horo: 1
-bonds:
-  in:
-    - balance
-    - content
-    - keywords
-    - law
-    - optimization
-  out:
-    - balance
-    - content
-    - keywords
-    - law
-    - optimization
+atomPath: "vocabulary/keyword"
+coordinate: "vocabulary/keyword · 7/descent · 0707bbad"
+contentUuid: "193d0285-cacd-59a5-8201-ee670133f4c7"
+diamondUuid: "41a13a87-684f-8c8f-9f70-65f4457e9eeb"
+uuid: "0707bbad-3136-8658-b1f9-89666b97ba80"
+horo: 7
 typography:
-  partition: keyword
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - content
-    - keywords
-    - law
-  matrix:
-    - balance
-    - content
-    - keywords
-    - law
-    - optimization
-  backlinks:
-    - balance
-    - content
-    - keywords
-    - law
-    - optimization
 signatures:
-  computationUuid: "4b729a88-dcac-898a-b94f-c4642d64c45d"
+  computationUuid: "1905b50c-127f-870a-a095-65b0c56dec1d"
   stages:
     - stage: path
-      stageUuid: "fc69d62e-a30d-8def-b21d-ba9c6fd9372d"
+      stageUuid: "cc4ba76e-ac4a-86c6-bf89-f92d013a0f73"
     - stage: trinity
-      stageUuid: "ce610a36-c3aa-8d13-8a0f-2f358679a4bf"
+      stageUuid: "2df70bb4-39c1-8352-b9f6-e3060fa1edda"
     - stage: boundary
-      stageUuid: "d8145aff-d561-878f-a208-05858e87f2e9"
+      stageUuid: "cbfdc8df-0f5b-8f4b-892e-6167fc409070"
     - stage: links
-      stageUuid: "f47ea02a-fd50-802f-984a-8b54f5425614"
+      stageUuid: "0b1e23fb-e8a9-84b3-bba8-c90f67f53c44"
     - stage: horo
-      stageUuid: "4896d5c5-330b-8828-b994-0ae7fc8c215f"
+      stageUuid: "5454ac77-a04a-8c03-9587-76e33112cdef"
     - stage: seal
-      stageUuid: "8242cd2c-b3e8-8584-ad30-90c5ff9e8e53"
+      stageUuid: "769f0ec4-20c6-8dda-857c-9aa228eecce0"
     - stage: uuid
-      stageUuid: "8bb38a55-4187-82d9-8e87-16a1d7a7ffe3"
+      stageUuid: "6de4fed6-b8b6-85e0-b050-0cff53a7976e"
 version: 2
 ---
 # keyword — the model of one [[keywords]] row

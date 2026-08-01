@@ -2,111 +2,19 @@
 name: energy
 description: "Use when reasoning about energy — Properties that take Energy as values are of the form '&lt;Number&gt; &lt;Energy unit of measure&gt;'."
 atomPath: energy
-coordinate: "energy · 2/share · ff177de8"
-contentUuid: "0ebf4f4b-7340-5c7c-a5c0-744e022ebfc2"
-diamondUuid: "a32c6bca-3bf2-8059-8234-116bcd2536df"
-uuid: "ff177de8-8e14-8fd3-b273-059a5df348f6"
-horo: 2
-bonds:
-  in:
-    - category
-    - conservation
-    - consumption
-    - details
-    - efficiency
-    - enumeration
-    - eu
-    - hamiltonian
-    - has
-    - law
-    - max
-    - min
-    - photon
-    - scale
-    - science
-    - star
-    - taichi
-    - temperature
-  out:
-    - category
-    - conservation
-    - consumption
-    - details
-    - efficiency
-    - enumeration
-    - eu
-    - hamiltonian
-    - has
-    - law
-    - max
-    - min
-    - photon
-    - scale
-    - science
-    - star
-    - taichi
-    - temperature
+coordinate: "energy · 7/descent · bfe7b171"
+contentUuid: "ed87451e-b479-5d4f-839a-1d9697335fe4"
+diamondUuid: "ed816179-32e7-8912-b318-3398843e10b4"
+uuid: "bfe7b171-3281-822f-b486-075004f2cd82"
+horo: 7
 typography:
   partition: energy
   bondDegree: 67
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - category
-    - consumption
-    - details
-    - efficiency
-    - enumeration
-    - eu
-    - has
-    - law
-    - max
-    - min
-    - scale
-    - star
-  matrix:
-    - category
-    - conservation
-    - consumption
-    - details
-    - efficiency
-    - enumeration
-    - eu
-    - hamiltonian
-    - has
-    - law
-    - max
-    - min
-    - photon
-    - scale
-    - science
-    - star
-    - taichi
-    - temperature
-  backlinks:
-    - category
-    - conservation
-    - consumption
-    - details
-    - efficiency
-    - enumeration
-    - eu
-    - hamiltonian
-    - has
-    - law
-    - max
-    - min
-    - photon
-    - scale
-    - science
-    - star
-    - taichi
-    - temperature
 signatures:
-  computationUuid: "948a982f-fc9f-8e64-a7ea-b88acb2987b1"
+  computationUuid: "dd29acee-d681-81e9-b017-b12d7cecdfcb"
   stages:
     - stage: path
       stageUuid: "0ce98992-3572-8ba8-b572-63bc01ddd69d"
@@ -117,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "aeee91f1-94e8-83c7-9b5c-359f0caa1fc6"
     - stage: horo
-      stageUuid: "b0f40b90-19dc-8d5e-9ea2-07423e311a5b"
+      stageUuid: "b79abe7a-5012-883c-93d2-1019cda0367e"
     - stage: seal
       stageUuid: "e1b14f1b-f0a5-88b3-a221-68915859f827"
     - stage: uuid
-      stageUuid: "3960b677-f013-87cd-b9cf-286c7de379c6"
+      stageUuid: "ad82c418-579c-8920-8086-0d6e66451204"
 version: 2
 ---
 # energy

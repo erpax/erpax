@@ -1,63 +1,35 @@
 ---
 name: declined
 description: "Use when reasoning about declined as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/declined
-coordinate: declined · 2/share · 8ff5f9a2
-contentUuid: "49292570-bef2-5829-a3c3-f3614f8bc3d3"
-diamondUuid: "7a5e03fe-ba37-832f-8b85-ec20790d29ef"
-uuid: "8ff5f9a2-1607-8988-9e08-e7fbcd03091b"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/declined"
+coordinate: "vocabulary/declined · 5/round · afff73ed"
+contentUuid: "5262bdc4-2ad0-5380-83d9-bbe74408f351"
+diamondUuid: "a0538f62-1b68-8213-a653-a25d19667511"
+uuid: "afff73ed-6af8-81a9-b6bc-2c860592272f"
+horo: 5
 typography:
-  partition: declined
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "d710ceaa-64c3-8e6f-82c7-adde5d562b9a"
+  computationUuid: "790ee35c-1152-8c71-a5ca-54e3205e3ce2"
   stages:
     - stage: path
-      stageUuid: "e1b4a6db-0f7b-8793-8a77-60450d4ce9ed"
+      stageUuid: "a6adf58d-bc9d-861b-905a-88f66b015718"
     - stage: trinity
-      stageUuid: "121c7608-9b1a-8cb2-9714-8b09dbc036c8"
+      stageUuid: "3cfa92a2-a94b-8d25-aebc-614576fc283b"
     - stage: boundary
-      stageUuid: "aad86b13-4a73-85ab-a468-7b70f0b01eed"
+      stageUuid: "d7b85471-e309-875c-90d5-ac82dabbdc33"
     - stage: links
-      stageUuid: "893315ae-d661-8186-8a28-dd5ed496aedd"
+      stageUuid: "ba126083-5bb5-8c7c-9840-83ab8ddc6f4a"
     - stage: horo
-      stageUuid: "304820cb-7910-8239-91a0-e4cbaacd7430"
+      stageUuid: "199fc786-85c2-83e0-8a63-12617f27ea0a"
     - stage: seal
-      stageUuid: "240072a0-51d6-8360-9735-64ae02f6d4a5"
+      stageUuid: "5031b365-9ca0-87fc-8058-fd414ec33ca0"
     - stage: uuid
-      stageUuid: "e46612d5-241a-80a3-8b50-bfefac8036ea"
+      stageUuid: "72e7f035-bb4a-8cee-85a1-a2c7dcfa70a4"
 version: 2
 ---
 # declined

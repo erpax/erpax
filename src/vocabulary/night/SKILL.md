@@ -1,68 +1,35 @@
 ---
 name: night
 description: "Use when reasoning about night as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/night
-coordinate: night · 2/share · 46d3ceef
-contentUuid: "59fcd94e-cf19-52ed-bd85-7bb9af882173"
-diamondUuid: "83fe418d-7d49-876f-81f3-bc0f2342bc76"
-uuid: "46d3ceef-9539-8113-9208-08e00a36e2e1"
-horo: 2
-bonds:
-  in:
-    - club
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - club
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/night"
+coordinate: "vocabulary/night · 4/weave · a20138d3"
+contentUuid: "cf0acc44-5d6b-5074-8d44-cffac971c6e4"
+diamondUuid: "85a11da0-e86b-83c7-a308-0207fdb31499"
+uuid: "a20138d3-24fb-858b-9160-62e9f9547a9e"
+horo: 4
 typography:
-  partition: night
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - club
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - club
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - club
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "25524397-5032-8b47-8bd9-295bd068e02f"
+  computationUuid: "8bcbb93a-0cfa-8ff6-b474-92936f7c0e3a"
   stages:
     - stage: path
-      stageUuid: "0d674fc0-7dfa-8f8b-98bf-7343d5c5a2e4"
+      stageUuid: "5914c1b8-5d34-8920-a30e-0cafb94139e3"
     - stage: trinity
-      stageUuid: "b54e59f4-b12e-8e0d-ad44-de1953076bc5"
+      stageUuid: "835ce8dd-064a-8c02-a01e-c4de29e2c25d"
     - stage: boundary
-      stageUuid: "3420d11d-6831-8235-b06e-cdc81872b045"
+      stageUuid: "47c97bf3-db28-8591-9c8b-e364c02de006"
     - stage: links
-      stageUuid: "dba65f75-9765-8ffd-8441-e8bb4520cec5"
+      stageUuid: "82db3743-3ff6-898d-96ad-b484e1a9ce8f"
     - stage: horo
-      stageUuid: "c7db11a4-d1dc-8cef-830b-053d9f8d7a9b"
+      stageUuid: "7e527a0e-d8ce-8afb-9c5d-67f538a7b4bb"
     - stage: seal
-      stageUuid: "51f307ae-eba9-80a2-a588-66bbe31ff69b"
+      stageUuid: "703ee6a2-db4f-8416-8bdf-a7075353dee5"
     - stage: uuid
-      stageUuid: "67984db1-cdcb-84d1-8310-78e26f9909dc"
+      stageUuid: "f4798675-dee4-8dd4-b8b1-a77bd17828e9"
 version: 2
 ---
 # night

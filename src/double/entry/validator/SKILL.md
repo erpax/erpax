@@ -2,64 +2,35 @@
 name: validator
 description: "Use when posting or reviewing a journal entry — the double-entry gate: every entry has two sides and the sides agree. Enforces a balance tolerance, one side per posting, non-negative amounts; warns (never refuses) on account polarity, because contra-accounts legitimately invert. Read this before trusting the word tolerance: the bound is absolute over float amounts, so the same one-cent gap posts at 50 and is refused at 100."
 atomPath: "double/entry/validator"
-coordinate: "double/entry/validator · 7/descent · 7ff057c3"
-contentUuid: "0b8bdc1a-9c2c-5f15-b3d3-291f61a035f3"
-diamondUuid: "73e58b63-05db-8288-88db-e976c7f713d4"
-uuid: "7ff057c3-3808-8df2-9813-d278aae6a36a"
+coordinate: "double/entry/validator · 7/descent · dcb6adc4"
+contentUuid: "249a6b16-acb9-504d-aae6-68546ce99729"
+diamondUuid: "3e81dc9f-2608-8b63-9493-c0000dd0bff0"
+uuid: "dcb6adc4-d8cb-83a8-a90c-a211190ddbdc"
 horo: 7
-bonds:
-  in:
-    - double
-    - entry
-    - law
-    - rules
-    - think
-  out:
-    - double
-    - law
-    - rules
-    - think
 typography:
   partition: double
   bondDegree: 12
-  neighbors: []
 standards:
   - IAS 1 — an entry balances
   - "IAS-1"
 bindings: []
-neighbors:
-  wikilink:
-    - double
-    - law
-    - rules
-    - think
-  matrix:
-    - double
-    - law
-    - rules
-    - think
-  backlinks:
-    - double
-    - law
-    - rules
-    - think
 signatures:
-  computationUuid: "4403f47b-e035-827c-a174-48d1fc050e74"
+  computationUuid: "7bbfc870-7e5b-8b61-b0ad-316404a05b98"
   stages:
     - stage: path
       stageUuid: "0f4994e7-8e25-80bd-beea-7607c25e1e4c"
     - stage: trinity
       stageUuid: "8b5982de-d6bf-8893-bda7-c64b821acb35"
     - stage: boundary
-      stageUuid: "b49ab6c4-c7c8-84fc-bdfa-6d473c3e6d13"
+      stageUuid: "ba2f4058-667f-8308-8167-8fcd0fef4606"
     - stage: links
       stageUuid: "7487e523-3c18-83f9-9b88-82f8cc307a65"
     - stage: horo
-      stageUuid: "bd2791fe-2b8e-85a5-be2a-2ca1d4938eda"
+      stageUuid: "1459ba2a-80b2-8c9a-9825-d7afce83c14d"
     - stage: seal
       stageUuid: "ae7ff6c4-6c44-8436-a9b9-e51e3dcbc91b"
     - stage: uuid
-      stageUuid: "ef960140-c09b-8117-b8aa-b0235bd1c816"
+      stageUuid: "4d16f26e-9370-84c0-801a-1fafe5f1f374"
 version: 2
 ---
 # validator — the law an ERP exists to guarantee

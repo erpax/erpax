@@ -2,6 +2,7 @@
  * quantum/status — CLI surface for superposition pending paths and bond reciprocity.
  *
  *   pnpm erpax quantum status
+ *   tsx src/quantum/status/index.ts
  */
 import { formatQuantumStatus, quantumStatus } from '@/quantum/context'
 

@@ -1,98 +1,35 @@
 ---
 name: nonprofit
 description: "Use when reasoning about nonprofit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/nonprofit
-coordinate: nonprofit · 1/base · 8193750f
-contentUuid: "d856ecf4-7088-5396-bc8a-5802d057fe29"
-diamondUuid: "7dbde58f-047f-802e-99a6-edf315a64b11"
-uuid: "8193750f-d57f-8d7e-8cb2-0c83a5db14e2"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - de
-    - it
-    - law
-    - merge
-    - nl
-    - status
-    - sti
-    - type
-    - uk
-    - us
-  out:
-    - collapse
-    - de
-    - it
-    - law
-    - merge
-    - nl
-    - status
-    - sti
-    - type
-    - uk
-    - us
+atomPath: "vocabulary/nonprofit"
+coordinate: "vocabulary/nonprofit · 2/share · ed5c944b"
+contentUuid: "00dd0668-781a-56a1-a0c0-6c4b07f69a9c"
+diamondUuid: "30f48291-7a38-8ed6-9362-5262cb3ccb55"
+uuid: "ed5c944b-7e32-8518-a046-a58bfc6e34fa"
+horo: 2
 typography:
-  partition: nonprofit
+  partition: vocabulary
   bondDegree: 38
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - de
-    - it
-    - law
-    - merge
-    - nl
-    - status
-    - sti
-    - type
-    - uk
-    - us
-  matrix:
-    - collapse
-    - de
-    - it
-    - law
-    - merge
-    - nl
-    - status
-    - sti
-    - type
-    - uk
-    - us
-  backlinks:
-    - collapse
-    - de
-    - it
-    - law
-    - merge
-    - nl
-    - status
-    - sti
-    - type
-    - uk
-    - us
 signatures:
-  computationUuid: "955c42c5-5223-8d94-b9f0-e2dc3a262863"
+  computationUuid: "e59b4d1f-27d2-8397-be9c-2b94a72017a0"
   stages:
     - stage: path
-      stageUuid: "7053bfd8-2358-8128-b9cd-d537f7a9c536"
+      stageUuid: "5a2688ba-db35-85eb-9b0a-d7dd978e2b0c"
     - stage: trinity
-      stageUuid: "85afe64b-91f0-8d10-8a36-956a9e74efd7"
+      stageUuid: "ff95b891-8771-8b94-a7dc-29fee1715709"
     - stage: boundary
-      stageUuid: "56f21052-7c5e-8235-b752-0d48305db359"
+      stageUuid: "3dab53a7-325f-8ffe-b03c-082e8b3f804b"
     - stage: links
-      stageUuid: "36f20acf-a52b-8a6c-bf1e-dd91903daa66"
+      stageUuid: "de24f2c8-e18e-8e83-a06c-75e5cb095328"
     - stage: horo
-      stageUuid: "4b2b9ba0-2074-82b6-94f8-46bf7d867ad0"
+      stageUuid: "e7897bba-fb6b-8131-83aa-223912198221"
     - stage: seal
-      stageUuid: "79906f9b-7be7-83fb-aba2-d0e57bfbc41e"
+      stageUuid: "0c95d148-56e1-84a5-9dd4-f96aed898933"
     - stage: uuid
-      stageUuid: "c389af08-b24c-8cba-8470-0629caf16473"
+      stageUuid: "ec5a8c55-5577-8289-9539-6ef7eb5f8faf"
 version: 2
 ---
 # nonprofit

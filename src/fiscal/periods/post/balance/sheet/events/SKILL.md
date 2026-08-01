@@ -2,43 +2,14 @@
 name: events
 description: "Use when capturing events between the reporting date and FS-authorisation date — classifying them as adjusting (IAS 10 §8 — book) or non-adjusting (§10 — disclose); assessing going-concern impact; linking booked journal entries; meeting §21 disclosure requirements. The IAS 10 subsequent-events register."
 atomPath: "fiscal/periods/post/balance/sheet/events"
-coordinate: "fiscal/periods/post/balance/sheet/events · 4/weave · 83e5eefc"
-contentUuid: "5f757b5b-82f5-578b-8003-4aced6effe45"
-diamondUuid: "06beda44-6370-8ad6-b087-16eddfc1ac98"
-uuid: "83e5eefc-ed73-8dfd-9fd8-68396636ee5c"
-horo: 4
-bonds:
-  in:
-    - auditright
-    - horo
-    - identity
-    - incident
-    - instances
-    - lineage
-    - materiality
-    - observability
-    - party
-    - proof
-    - sheet
-    - standard
-    - sub
-  out:
-    - auditright
-    - horo
-    - identity
-    - incident
-    - instances
-    - lineage
-    - materiality
-    - observability
-    - party
-    - proof
-    - standard
-    - sub
+coordinate: "fiscal/periods/post/balance/sheet/events · 7/descent · e70222f4"
+contentUuid: "35b22e25-b960-5d8b-821c-47a522ae948a"
+diamondUuid: "5cb6a086-433a-8d3f-93f0-2a65163e8f76"
+uuid: "e70222f4-9e4d-8bac-b5c6-b94462af5731"
+horo: 7
 typography:
   partition: fiscal
   bondDegree: 54
-  neighbors: []
 standards:
   - "IFRS IAS-10 §10 non-adjusting-events-disclose"
   - "IFRS IAS-10 §10 non-adjusting-events-disclose`"
@@ -57,40 +28,8 @@ standards:
   - "SOX §404 internal-controls TOM-CL-03"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - currency
-    - entries
-    - law
-    - periods
-  matrix:
-    - auditright
-    - horo
-    - identity
-    - incident
-    - instances
-    - lineage
-    - materiality
-    - observability
-    - party
-    - proof
-    - standard
-    - sub
-  backlinks:
-    - auditright
-    - horo
-    - identity
-    - incident
-    - instances
-    - lineage
-    - materiality
-    - observability
-    - party
-    - proof
-    - standard
-    - sub
 signatures:
-  computationUuid: "b5b1e198-8ade-8a68-b544-a3cb5961d4da"
+  computationUuid: "99493877-6b34-8b3d-9ca3-ae99c922f5ef"
   stages:
     - stage: path
       stageUuid: "964d4449-27a0-8d89-b610-89182a6308d7"
@@ -101,11 +40,11 @@ signatures:
     - stage: links
       stageUuid: "65a749e6-e55d-83a8-a836-ade198ea369c"
     - stage: horo
-      stageUuid: "ccd8488f-10cf-8fe7-803c-1419a9c0b00e"
+      stageUuid: "c995cfa4-6a5f-8fb1-bbbb-209537e61389"
     - stage: seal
       stageUuid: "681d3668-84ad-8b00-9cdf-9cb2ebd7e95e"
     - stage: uuid
-      stageUuid: "93f23419-0f83-84ff-b5ce-115ff0cdfa27"
+      stageUuid: "b962bcff-144e-8fdf-ad44-cbe652b9e0eb"
 version: 2
 ---
 # post-balance-sheet-events

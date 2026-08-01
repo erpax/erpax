@@ -2,65 +2,18 @@
 name: variance
 description: "Use when reasoning about variance — Use for analyzing variance between planned (budget/standard) and actual results — budget variance, volume/efficiency/price splits in standard costing, and management-defined perfor"
 atomPath: variance
-coordinate: variance · 2/share · a58b6d21
-contentUuid: "339f7672-7a35-5c57-bb57-2eeefccf63a8"
-diamondUuid: "3d240c67-0370-86ce-9646-666f32148a31"
-uuid: "a58b6d21-379f-8e88-ac54-9c701a0ba955"
-horo: 2
-bonds:
-  in:
-    - budgetvariance
-    - cost
-    - decide
-    - deduction
-    - law
-    - plannings
-    - statements
-    - variances
-  out:
-    - budgetvariance
-    - cost
-    - decide
-    - deduction
-    - law
-    - plannings
-    - statements
-    - variances
+coordinate: "variance · 1/base · 5815e565"
+contentUuid: "6cecd337-80ef-57e7-b70d-2b94d5b5aec9"
+diamondUuid: "82ac5d2b-c791-872d-be12-c6a9ff76e29c"
+uuid: "5815e565-2f70-8a7c-a862-fa8560ae4023"
+horo: 1
 typography:
   partition: variance
   bondDegree: 25
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - budgetvariance
-    - cost
-    - decide
-    - law
-    - plannings
-    - statements
-    - variances
-  matrix:
-    - budgetvariance
-    - cost
-    - decide
-    - deduction
-    - law
-    - plannings
-    - statements
-    - variances
-  backlinks:
-    - budgetvariance
-    - cost
-    - decide
-    - deduction
-    - law
-    - plannings
-    - statements
-    - variances
 signatures:
-  computationUuid: "f46a32fb-94e8-811a-b8cc-e8a43aa69c46"
+  computationUuid: "7548260d-6b7e-8d2c-b726-b7a16593f1be"
   stages:
     - stage: path
       stageUuid: "aa628208-4853-8a9e-b904-aa05fa325790"
@@ -71,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "072b9828-4903-8aeb-bdd8-5964490a8082"
     - stage: horo
-      stageUuid: "856fe295-9510-8c23-b3bd-3472f339391d"
+      stageUuid: "34afd1ab-bec2-823b-ad03-3b428fe9c337"
     - stage: seal
-      stageUuid: "7f00e308-af13-8173-a96b-164d43e16d19"
+      stageUuid: "1f7164c4-3bdf-8734-b7bb-d3ac490880d4"
     - stage: uuid
-      stageUuid: "9dda9225-5e7b-830c-a696-0365475e2d16"
+      stageUuid: "be3bbbce-df95-883f-be3c-53b65e067de0"
 version: 2
 ---
 # variance

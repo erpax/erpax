@@ -2,61 +2,19 @@
 name: reset
 description: "Use when reasoning about reset as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: reset
-coordinate: reset · 7/descent · 7f55586f
-contentUuid: "12b8821d-8883-5265-9698-a1fa64c12e4b"
-diamondUuid: "b22bf0f1-3e66-837e-b75c-a0cffbcbaa0c"
-uuid: "7f55586f-2c06-8743-ab2b-596edea02f47"
+coordinate: "reset · 7/descent · 279fe350"
+contentUuid: "f74aa8b9-98ea-54f2-b879-3441a34ccbc3"
+diamondUuid: "d7e36168-8274-8de9-8caa-a61a5fd43f69"
+uuid: "279fe350-b4b8-8072-95ad-c0fae0a39d1b"
 horo: 7
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - password
-    - research
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - password
-    - research
-    - sti
 typography:
   partition: reset
   bondDegree: 22
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - password
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - password
-    - research
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - password
-    - research
-    - sti
 signatures:
-  computationUuid: "4fa229b5-4a8c-8761-8ff0-e062c8eada6c"
+  computationUuid: "eee4501d-bf3f-89f5-8ad1-6eea21ef1af3"
   stages:
     - stage: path
       stageUuid: "15bd348c-6fc9-8a91-a991-458266a84747"
@@ -67,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5bdfc19e-ce8d-8e9d-9882-cd2c9c3e805a"
     - stage: horo
-      stageUuid: "48fc1c04-585c-8017-a439-7d7006d66353"
+      stageUuid: "0ef37a20-bc0c-8f2c-929f-ae0bf146f1b6"
     - stage: seal
-      stageUuid: "91e982b9-47e3-8d53-bbba-f36999aa2002"
+      stageUuid: "21330a0e-c8c3-8b5b-81fa-b4caf0959515"
     - stage: uuid
-      stageUuid: "e0eae4e5-ec0c-827a-b70b-249795cc3e93"
+      stageUuid: "edcd08ea-c7be-882c-9eb3-226d517fe984"
 version: 2
 ---
 # reset

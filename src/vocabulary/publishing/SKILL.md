@@ -1,68 +1,35 @@
 ---
 name: publishing
 description: "Use when reasoning about publishing — A schema.org component word, collided out of schema.org compounds — fused from publishingPrinciples (sti · collapse · merge)."
-atomPath: vocabulary/publishing
-coordinate: publishing · 5/round · 959a7ef2
-contentUuid: "d213dcb8-65e6-50cb-985a-2fac3eb54d45"
-diamondUuid: "69c9e4d7-9b7e-8aac-a823-3f57e78c92f0"
-uuid: "959a7ef2-32f7-85fc-b93a-3ab218df050f"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - principles
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - principles
-    - sti
+atomPath: "vocabulary/publishing"
+coordinate: "vocabulary/publishing · 1/base · e8393e26"
+contentUuid: "ffd94f0d-f801-5227-8c96-c012d2c37b95"
+diamondUuid: "9e2463b1-5d38-83fa-8c01-95cddd31db83"
+uuid: "e8393e26-77c7-8391-98ce-161d12d2004e"
+horo: 1
 typography:
-  partition: publishing
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - principles
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - principles
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - principles
-    - sti
 signatures:
-  computationUuid: "cf18bee8-7275-806a-bce3-85bb07214d7c"
+  computationUuid: "63a84367-2a1a-8046-858c-048ab7848435"
   stages:
     - stage: path
-      stageUuid: "36d432d0-308d-8bb7-bd5f-c6758f5e470e"
+      stageUuid: "183a9c8d-26cf-8a75-8dde-6bc07cb62ba9"
     - stage: trinity
-      stageUuid: "a778b2bb-72a6-82e5-b33f-13983c6b62f5"
+      stageUuid: "722fd627-d889-8130-a693-d09d0b8eda1a"
     - stage: boundary
-      stageUuid: "e8fa1a4a-dc69-8780-8ecf-20658be19516"
+      stageUuid: "36fa8bf5-2218-8764-b74a-b073c7afe982"
     - stage: links
-      stageUuid: "2981d892-fe9b-8ba0-98ba-dae8d0b4e280"
+      stageUuid: "38af017e-0139-8d83-9ff0-af7b645376f8"
     - stage: horo
-      stageUuid: "f690ae64-979a-8ca4-a035-ad8f99702c15"
+      stageUuid: "8263e338-5656-8df6-a303-dc6a766eab63"
     - stage: seal
-      stageUuid: "cd37fba7-bac9-8c77-baae-2171103ce8f5"
+      stageUuid: "c92d4c32-6dd2-82ac-92ba-b4069d98259a"
     - stage: uuid
-      stageUuid: "22fcbbcd-622a-8e7c-bf72-7d39f2976ea8"
+      stageUuid: "dc610fd4-8f34-8f08-9f1e-8e7c09d2a7e1"
 version: 2
 ---
 # publishing

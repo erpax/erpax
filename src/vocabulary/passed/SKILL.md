@@ -1,68 +1,35 @@
 ---
 name: passed
 description: "Use when reasoning about passed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/passed
-coordinate: passed · 7/descent · 2b76956d
-contentUuid: "b8932c8b-aadc-5be2-9124-a4f8303f3a19"
-diamondUuid: "608c0c3e-e6e4-8e27-ad58-97c1d2972bd5"
-uuid: "2b76956d-cff7-8d22-8b4d-0402ff4f85cd"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
+atomPath: "vocabulary/passed"
+coordinate: "vocabulary/passed · 5/round · b9a870b4"
+contentUuid: "83650fd2-e519-56a8-9bdc-81871fb53b13"
+diamondUuid: "69fe17fc-df7a-8ad5-bb2c-14acbbc0362f"
+uuid: "b9a870b4-8cf4-87a4-83bf-754129244492"
+horo: 5
 typography:
-  partition: passed
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
 signatures:
-  computationUuid: "34049812-439e-8b0c-8367-b042afefcdb2"
+  computationUuid: "82f39f74-8f21-8a94-821b-9dce9599e731"
   stages:
     - stage: path
-      stageUuid: "93c49317-305e-8491-881e-367ef6b8e70e"
+      stageUuid: "a3da81cf-69f7-89b1-8f27-b5e3663d9bb7"
     - stage: trinity
-      stageUuid: "ae0f7f3c-c39e-8a60-b768-0833ba96febd"
+      stageUuid: "5b3c5fa6-d43d-8611-887b-c62b27e0592c"
     - stage: boundary
-      stageUuid: "d8cf6ef4-c501-849c-9b84-d8f64cff1b12"
+      stageUuid: "6dc8a132-ad1c-899a-8bea-b656facf80bf"
     - stage: links
-      stageUuid: "33e59323-c964-8fae-adac-4749df83ee5b"
+      stageUuid: "3b36fe14-e076-8509-a434-22a30ec22ef3"
     - stage: horo
-      stageUuid: "a46331b0-8338-8b87-a835-b2362fca23ec"
+      stageUuid: "2680592d-0a5b-8ddf-ae60-29cc7b01d04a"
     - stage: seal
-      stageUuid: "e26ee0b5-f346-8162-b1ab-a463b813235c"
+      stageUuid: "39999356-0361-8ece-bc9c-8d682dc0bc76"
     - stage: uuid
-      stageUuid: "4a7d3e96-c127-8444-9cf5-652b53493e4a"
+      stageUuid: "2d4ced5d-0995-855e-b030-b0b929069ace"
 version: 2
 ---
 # passed

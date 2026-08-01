@@ -1,62 +1,34 @@
 ---
 name: obligation
 description: Use when modelling one obligation — the singular model of the obligations collection (the plural store); a duty to transfer value or perform under an arrangement.
-atomPath: vocabulary/obligation
-coordinate: obligation · 2/share · a22d8a86
-contentUuid: "0031e701-35ee-5391-a605-8208f66ca402"
-diamondUuid: "2f2f7cb4-d499-84ba-ac01-377b866508ab"
-uuid: "a22d8a86-23b8-8c36-94d2-4cdbdc2c9dc3"
-horo: 2
-bonds:
-  in:
-    - accounting
-    - balance
-    - law
-    - obligations
-  out:
-    - accounting
-    - balance
-    - law
-    - obligations
+atomPath: "vocabulary/obligation"
+coordinate: "vocabulary/obligation · 1/base · 046eea64"
+contentUuid: "2eea4cc4-75a3-54e1-9591-cf9fde2306be"
+diamondUuid: "b28fd1f6-805a-8048-808d-6f239934060a"
+uuid: "046eea64-fcdb-8090-8b56-5969e03e4e96"
+horo: 1
 typography:
-  partition: obligation
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - balance
-    - law
-    - obligations
-  matrix:
-    - accounting
-    - balance
-    - law
-    - obligations
-  backlinks:
-    - accounting
-    - balance
-    - law
-    - obligations
 signatures:
-  computationUuid: "bd9158d3-9781-8267-89a7-b755144edf43"
+  computationUuid: "f9d962b2-ba33-8ceb-bfbe-731cec09b405"
   stages:
     - stage: path
-      stageUuid: "066e4b87-f53e-8c5a-abac-f89d4f7ed519"
+      stageUuid: "a9159e97-1131-8a9b-b2c3-4ec129ef935e"
     - stage: trinity
-      stageUuid: "de550886-bff5-8d56-808a-e377fda59dc3"
+      stageUuid: "16c58448-7a3d-8c4f-a99a-3b6fdffad645"
     - stage: boundary
-      stageUuid: "1ff8f665-19dd-8918-8f87-7d42294bb61b"
+      stageUuid: "dcf1d46c-0616-86a2-b2e8-0880d8ac35a5"
     - stage: links
-      stageUuid: "389e5342-d46d-8b4f-bec7-d5069d5a8260"
+      stageUuid: "d1601856-7249-836a-b8b9-1fe7c89c9b65"
     - stage: horo
-      stageUuid: "1fcb44e3-de5f-84f4-ba15-089e18ad652c"
+      stageUuid: "68af3b44-54fb-8eb9-98a8-467ed3a15f07"
     - stage: seal
-      stageUuid: "92d76fbb-a228-84ed-ac37-f0f708a6d17e"
+      stageUuid: "95131ffd-e2ed-8970-83e9-43b45f343fe7"
     - stage: uuid
-      stageUuid: "84f5e3e0-c51c-81bb-bae2-c3735db58262"
+      stageUuid: "37a5c5f9-252f-879b-ad32-5dadc7787b6e"
 version: 2
 ---
 # obligation — the model of one [[obligations]] row

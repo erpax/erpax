@@ -1,68 +1,35 @@
 ---
 name: funded
 description: "Use when reasoning about funded as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/funded
-coordinate: funded · 4/weave · 87c34ab8
-contentUuid: "27157bee-895f-552f-848a-6ca10d359bfd"
-diamondUuid: "8fac6a40-fa47-81e1-a60d-7be0b5edb1fc"
-uuid: "87c34ab8-0f5c-84c7-8da6-b9e0b6b2d6aa"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/funded"
+coordinate: "vocabulary/funded · 8/crest · 0729ddfd"
+contentUuid: "bc769914-6c98-5cb9-9ed9-d46684bcee8b"
+diamondUuid: "7ffad0c1-f759-8f8c-8d3f-ff5a3b019501"
+uuid: "0729ddfd-6ef1-8046-8db7-8db849e3d2ef"
+horo: 8
 typography:
-  partition: funded
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "c96793d9-da8a-8e4f-a001-fd06bdce8e90"
+  computationUuid: "b9c757ac-f8a1-8c03-922f-2ca0ca0a0ddb"
   stages:
     - stage: path
-      stageUuid: "c5778d68-2d32-8b32-ae07-d4651af0914b"
+      stageUuid: "41bfc379-b059-896d-ac52-906644914fee"
     - stage: trinity
-      stageUuid: "8a539fd7-43db-8846-89bb-43caba82bcf9"
+      stageUuid: "587eac51-4906-81b3-9072-cdc0dc815602"
     - stage: boundary
-      stageUuid: "e91c40ff-9285-85a9-ab56-18b1278245c4"
+      stageUuid: "5f86f39d-1863-8910-96fc-03bf6476d640"
     - stage: links
-      stageUuid: "43db3709-bcb6-85ae-9897-39a82dae1340"
+      stageUuid: "c80ab382-6680-88c9-8163-da176e8f1268"
     - stage: horo
-      stageUuid: "eca2cc74-4721-83e3-92cf-43263e4f802d"
+      stageUuid: "4a0b0653-b2d9-836c-b031-ad9d08be51e7"
     - stage: seal
-      stageUuid: "6b8ccf43-e8ee-88f4-ac8e-0236e90effac"
+      stageUuid: "1eae1f55-c7c6-84bb-8260-7974cef3a0b4"
     - stage: uuid
-      stageUuid: "8b4b1ed5-c0a4-8daa-beb9-e30764a8b981"
+      stageUuid: "e54e8105-4955-861d-8196-a8326b4885c3"
 version: 2
 ---
 # funded

@@ -1,138 +1,34 @@
 ---
 name: catholicism
 description: "Use when reading Catholicism as a sub-diamond of christianity — the universal visible body, the seven sacraments as enacted grace, the apostolic succession as an unbroken lineage, the magisterium's authority, absolution releasing the debt. A facet-diamond of the christianity archangel."
-atomPath: vocabulary/catholicism
-coordinate: catholicism · 1/base · 15cf49dc
-contentUuid: "9442e27a-7a8b-5c56-92fd-107761a5aa08"
-diamondUuid: "af0e6dd9-70f5-8108-b517-bef4c6d2ebb4"
-uuid: "15cf49dc-3ce1-8e33-a6ad-b3df1b225b9a"
-horo: 1
-bonds:
-  in:
-    - archangel
-    - authority
-    - christianity
-    - cycle
-    - diamond
-    - dna
-    - grace
-    - identity
-    - law
-    - lineage
-    - mercy
-    - one
-    - order
-    - religion
-    - ritual
-    - society
-    - translator
-    - uuid
-    - whole
-  out:
-    - archangel
-    - authority
-    - christianity
-    - cycle
-    - diamond
-    - dna
-    - grace
-    - identity
-    - law
-    - lineage
-    - mercy
-    - one
-    - order
-    - religion
-    - ritual
-    - society
-    - translator
-    - uuid
-    - whole
+atomPath: "vocabulary/catholicism"
+coordinate: "vocabulary/catholicism · 4/weave · 3bb49bcf"
+contentUuid: "a2b9274f-9377-53eb-be0e-1e1ef654a8f1"
+diamondUuid: "35c5b5b6-abc8-8b9c-940e-2e85587323b9"
+uuid: "3bb49bcf-648a-84da-b0e5-fede420292ca"
+horo: 4
 typography:
-  partition: catholicism
+  partition: vocabulary
   bondDegree: 59
-  neighbors:
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - archangel
-    - authority
-    - christianity
-    - cycle
-    - diamond
-    - dna
-    - grace
-    - identity
-    - law
-    - lineage
-    - mercy
-    - one
-    - order
-    - religion
-    - ritual
-    - society
-    - translator
-    - uuid
-    - whole
-  matrix:
-    - archangel
-    - authority
-    - christianity
-    - cycle
-    - diamond
-    - dna
-    - grace
-    - identity
-    - law
-    - lineage
-    - mercy
-    - one
-    - order
-    - religion
-    - ritual
-    - society
-    - translator
-    - uuid
-    - whole
-  backlinks:
-    - archangel
-    - authority
-    - christianity
-    - cycle
-    - diamond
-    - dna
-    - grace
-    - identity
-    - law
-    - lineage
-    - mercy
-    - one
-    - order
-    - religion
-    - ritual
-    - society
-    - translator
-    - uuid
-    - whole
 signatures:
-  computationUuid: "9d915261-cbde-88b1-addb-7777a25a9336"
+  computationUuid: "12e2da66-182c-8d26-b23e-b2e9a54a996e"
   stages:
     - stage: path
-      stageUuid: "0fe7657b-34b9-8799-9b1f-e15606aa5d6a"
+      stageUuid: "dcde5c51-1c8d-853e-80de-4992e9659c05"
     - stage: trinity
-      stageUuid: "f63addfc-7458-8da8-acbf-24e56cea7e93"
+      stageUuid: "32c44058-c7bc-80ca-8086-306182a5833d"
     - stage: boundary
-      stageUuid: "f5948196-3e1e-88f0-8f78-73b3333a07d9"
+      stageUuid: "b823edcb-198c-8294-b10a-0faa720e7207"
     - stage: links
-      stageUuid: "443eb914-26f1-8b84-89b6-c9aa4bc70a84"
+      stageUuid: "6a73430c-2d31-8574-8539-16f18fda5171"
     - stage: horo
-      stageUuid: "e82e0ab4-b9b3-8373-bee2-3f1dac22f32c"
+      stageUuid: "8c65a734-e3dc-85af-b8ad-62e3ca093a7f"
     - stage: seal
-      stageUuid: "81457f17-d042-838f-ba7c-4e8b0cb0bb10"
+      stageUuid: "742a02a8-bae5-8625-ac43-72c58f36b111"
     - stage: uuid
-      stageUuid: "62b22168-6da3-8072-8179-37cc0f622b61"
+      stageUuid: "5e9ddf95-626d-87eb-82bc-0fa58042b7b0"
 version: 2
 ---
 # catholicism — the universal body, grace enacted in the sacraments

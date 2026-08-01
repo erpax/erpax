@@ -1,68 +1,35 @@
 ---
 name: axles
 description: "Use when reasoning about axles as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/axles
-coordinate: axles · 7/descent · 84506ad6
-contentUuid: "412350c3-92c2-5d26-8594-3f982ada5e95"
-diamondUuid: "9cfdfc4f-347f-85af-9721-667a785ade60"
-uuid: "84506ad6-971c-83ef-9843-aee1dfb0b733"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
+atomPath: "vocabulary/axles"
+coordinate: "vocabulary/axles · 2/share · 5da7f489"
+contentUuid: "7ad087e7-39b4-5dc8-b5f2-16908e4b2477"
+diamondUuid: "045661cc-1e9c-80bc-bb5e-9ce9298580ba"
+uuid: "5da7f489-1fce-8369-aa24-88a6d669b0fe"
+horo: 2
 typography:
-  partition: axles
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
 signatures:
-  computationUuid: "f6dd0833-ea4d-8190-b308-f72e29c3e00a"
+  computationUuid: "dd6896ba-bdf3-8af0-a625-af1f6977c3f5"
   stages:
     - stage: path
-      stageUuid: "0b0bd0d1-7bbc-8ee5-b423-f8d29383260c"
+      stageUuid: "078a2dc8-f5c6-8b93-85d5-caabccbb2aea"
     - stage: trinity
-      stageUuid: "184db021-3b72-8d97-9162-287323985305"
+      stageUuid: "2e0e56fb-ec64-8003-a86a-ce3b7a53d92c"
     - stage: boundary
-      stageUuid: "22593aa0-55b3-8136-8840-ac9415ab9a80"
+      stageUuid: "d2907c37-b7da-8542-8c78-7a8f0deae7a0"
     - stage: links
-      stageUuid: "06ad28a1-5f67-8ce9-8b90-e3e871da3aee"
+      stageUuid: "caa644c6-fe1d-8a20-960d-7eb504eec700"
     - stage: horo
-      stageUuid: "9372d73b-e9a4-8575-9aa9-da7f1918868d"
+      stageUuid: "d18d763d-8038-8a99-a9b2-87caded134f4"
     - stage: seal
-      stageUuid: "75200adb-8f5b-8894-aaf3-45f1ddd0df97"
+      stageUuid: "34f8bb5b-6292-840b-aae8-02596b11bc86"
     - stage: uuid
-      stageUuid: "80a8a963-2dad-876d-891e-8aa635e3da4e"
+      stageUuid: "80274ab3-1661-8158-935b-f168ceedf469"
 version: 2
 ---
 # axles

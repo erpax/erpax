@@ -2,62 +2,19 @@
 name: weight
 description: Use when reasoning about weight — The weight of the product or person.
 atomPath: weight
-coordinate: weight · 5/round · 5ac24982
-contentUuid: "2fcbac51-8943-5b25-87da-cdd6d5967358"
-diamondUuid: "1634772a-639d-8eae-b897-f7a378722280"
-uuid: "5ac24982-b1dd-8e86-a6cb-9175bffc61bb"
-horo: 5
-bonds:
-  in:
-    - law
-    - molecular
-    - monoisotopic
-    - percentage
-    - tongue
-    - total
-    - trailer
-  out:
-    - law
-    - molecular
-    - monoisotopic
-    - percentage
-    - tongue
-    - total
-    - trailer
+coordinate: "weight · 2/share · 99abd2b7"
+contentUuid: "10043210-c4ec-562b-aa76-81b4ab2990fa"
+diamondUuid: "c84b14f9-3ed1-836c-b9d6-cc3938fb1375"
+uuid: "99abd2b7-d4f1-8424-862b-3952f5f5b669"
+horo: 2
 typography:
   partition: weight
   bondDegree: 26
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - molecular
-    - monoisotopic
-    - percentage
-    - tongue
-    - total
-    - trailer
-  matrix:
-    - law
-    - molecular
-    - monoisotopic
-    - percentage
-    - tongue
-    - total
-    - trailer
-  backlinks:
-    - law
-    - molecular
-    - monoisotopic
-    - percentage
-    - tongue
-    - total
-    - trailer
 signatures:
-  computationUuid: "e0d0cd43-3611-8659-9891-e02254b61660"
+  computationUuid: "11870f97-ad5e-8120-8215-368b1437847a"
   stages:
     - stage: path
       stageUuid: "6a548358-b669-810f-b945-a7f5a00c6644"
@@ -68,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ffc632c0-29db-88e1-bcd8-046e98cee59c"
     - stage: horo
-      stageUuid: "43c5e533-49a6-80f7-97eb-3158ae0ad40b"
+      stageUuid: "d0e30676-1d78-8d75-aaa0-75353c1264d3"
     - stage: seal
-      stageUuid: "b0431ee8-041c-823e-afdb-5ee8e4de9e69"
+      stageUuid: "f59a28a8-c348-8e63-bcdf-f7652b14989e"
     - stage: uuid
-      stageUuid: "eb15bb64-7f8b-809f-a678-f0b2975c48bc"
+      stageUuid: "da7b4ab2-42af-83f2-82e7-920d679890a8"
 version: 2
 ---
 # weight

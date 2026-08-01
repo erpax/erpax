@@ -2,76 +2,19 @@
 name: wallet
 description: "Use when holding value — a balance under an owner identity; double-entry and content-addressed, so the wallet state is tamper-evident and every move balances."
 atomPath: wallet
-coordinate: wallet · 5/round · 7af63f85
-contentUuid: "a978eb19-694a-5314-8993-67f55579169e"
-diamondUuid: "661d27c5-3f00-847d-94cd-0ecb730b83b4"
-uuid: "7af63f85-2913-8929-af88-f6964ee91d64"
-horo: 5
-bonds:
-  in:
-    - account
-    - balance
-    - cost
-    - entry
-    - identity
-    - law
-    - money
-    - quantum
-    - uuid
-    - wallet
-  out:
-    - account
-    - balance
-    - cost
-    - entry
-    - identity
-    - law
-    - money
-    - quantum
-    - uuid
-    - wallet
+coordinate: "wallet · 2/share · a8532ef5"
+contentUuid: "797b8776-04a0-55de-8055-c8129e7b1a30"
+diamondUuid: "01ece1bb-c783-8902-a370-094e8a1eef79"
+uuid: "a8532ef5-3ae9-8397-9528-b712e487ba65"
+horo: 2
 typography:
   partition: wallet
   bondDegree: 37
-  neighbors: []
 standards:
   - "double-entry ([[entry]]); content-addressed state ([[uuid]])"
 bindings: []
-neighbors:
-  wikilink:
-    - account
-    - balance
-    - cost
-    - entry
-    - identity
-    - law
-    - money
-    - quantum
-    - uuid
-  matrix:
-    - account
-    - balance
-    - cost
-    - entry
-    - identity
-    - law
-    - money
-    - quantum
-    - uuid
-    - wallet
-  backlinks:
-    - account
-    - balance
-    - cost
-    - entry
-    - identity
-    - law
-    - money
-    - quantum
-    - uuid
-    - wallet
 signatures:
-  computationUuid: "5706e784-2832-82b5-875f-ed06c2fb5249"
+  computationUuid: "1f979e75-e643-876f-9766-eac78ca9a858"
   stages:
     - stage: path
       stageUuid: "d002acff-9010-8d8b-ac94-fc5c9bc24276"
@@ -82,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4a9ef9b7-8e5a-8fd6-8858-491913af9189"
     - stage: horo
-      stageUuid: "1441ab9f-e2aa-880e-a2e2-c78b281e07ba"
+      stageUuid: "c0011bb3-dadf-83cd-82fb-863b778eb675"
     - stage: seal
-      stageUuid: "85d12d57-7d09-8443-9e39-378d511cdaa0"
+      stageUuid: "4f93e8ec-4060-8fba-a09c-5e6544393434"
     - stage: uuid
-      stageUuid: "699ed1d3-8990-8ee4-8557-8f02d72c64a4"
+      stageUuid: "8a0ff858-12f7-8a27-a177-1728745b3220"
 version: 2
 ---
 # wallet — holds value

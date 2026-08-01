@@ -2,53 +2,14 @@
 name: entities
 description: "Use when registering subsidiaries, associates, joint ventures or the group head for consolidation — legal name, LEI, registration number, functional/presentation currency, ownership %, consolidation method, and reporting framework. The IFRS-10 §B86 entity master distinct from DB tenants."
 atomPath: "legal/entities"
-coordinate: "legal/entities · 2/share · fb62fec5"
-contentUuid: "c8319868-5465-5acb-be15-a8ccb98f1e7d"
-diamondUuid: "662c010d-f62a-8157-9b4a-7de528d7a793"
-uuid: "fb62fec5-a7f1-8b4c-8358-010770f05da8"
-horo: 2
-bonds:
-  in:
-    - calendars
-    - certifications
-    - checklists
-    - combinations
-    - committees
-    - consolidations
-    - deadlines
-    - files
-    - functions
-    - icfrs
-    - legal
-    - owners
-    - registers
-    - reportings
-    - reports
-    - schedules
-    - taxexempt
-    - transactions
-  out:
-    - calendars
-    - certifications
-    - checklists
-    - combinations
-    - committees
-    - consolidations
-    - deadlines
-    - files
-    - functions
-    - icfrs
-    - owners
-    - registers
-    - reportings
-    - reports
-    - schedules
-    - taxexempt
-    - transactions
+coordinate: "legal/entities · 5/round · b26da3ae"
+contentUuid: "d2054b16-051c-55b5-8c12-cb33b3173d95"
+diamondUuid: "eff6cc70-21a9-88da-a0f5-ee3a2bb81613"
+uuid: "b26da3ae-cd43-861e-9371-14e3c956b3e4"
+horo: 5
 typography:
   partition: legal
   bondDegree: 0
-  neighbors: []
 standards:
   - "COSO-2013"
   - "EU DAC-6 reportable-cross-border-arrangements"
@@ -61,7 +22,6 @@ standards:
   - "IFRS IFRS-12 §10 §11 §B4-B6 disclosure-of-interests-in-other-entities"
   - "IFRS IFRS-18 §9 §10 presentation-and-disclosure (effective 2027-01 — entity-level taxonomy)"
   - "IFRS-3"
-  - "ILO-C100"
   - "ISO-17442-1"
   - "ISO-17442-1:2020 lei legal-entity-identifier"
   - "ISO-17442-1:2020 lei legal-entity-identifier`"
@@ -84,61 +44,8 @@ standards:
   - XBRL
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - calendars
-    - certifications
-    - checklists
-    - committees
-    - consolidations
-    - deadlines
-    - files
-    - functions
-    - icfrs
-    - owners
-    - registers
-    - reportings
-    - reports
-    - schedules
-    - transactions
-  matrix:
-    - calendars
-    - certifications
-    - checklists
-    - combinations
-    - committees
-    - consolidations
-    - deadlines
-    - files
-    - functions
-    - icfrs
-    - owners
-    - registers
-    - reportings
-    - reports
-    - schedules
-    - taxexempt
-    - transactions
-  backlinks:
-    - calendars
-    - certifications
-    - checklists
-    - combinations
-    - committees
-    - consolidations
-    - deadlines
-    - files
-    - functions
-    - icfrs
-    - owners
-    - registers
-    - reportings
-    - reports
-    - schedules
-    - taxexempt
-    - transactions
 signatures:
-  computationUuid: "73fe03aa-782b-835b-a79b-33084895d0fc"
+  computationUuid: "8114e013-c023-8c0d-bed7-11d9ecdaa57a"
   stages:
     - stage: path
       stageUuid: "071d9fef-2614-8839-9d03-543a4b7a547d"
@@ -149,11 +56,11 @@ signatures:
     - stage: links
       stageUuid: "03ed07a5-c813-8a30-a488-77547cc827ea"
     - stage: horo
-      stageUuid: "f0a2cb32-49d4-85d4-b611-65d8856dda75"
+      stageUuid: "5e2c66af-d4b5-8006-b81d-2fe91f313a63"
     - stage: seal
       stageUuid: "5294efa2-399a-885c-a8fb-750e5df934a2"
     - stage: uuid
-      stageUuid: "48227f96-cc01-8d88-9227-aa7bd53ffa79"
+      stageUuid: "d948ecbc-90f9-800d-8437-b6ad2f6ba17c"
 version: 2
 ---
 # legal-entities

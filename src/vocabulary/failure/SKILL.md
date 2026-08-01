@@ -1,57 +1,34 @@
 ---
 name: failure
 description: Use when modelling one failure — the singular model of the failures collection (the plural store); a recorded instance of something not meeting its requirement.
-atomPath: vocabulary/failure
-coordinate: failure · 8/crest · 8d0f31cd
-contentUuid: "e78257f1-90b5-587c-bca6-deb446406308"
-diamondUuid: "b5f34cbe-c425-8739-bfb3-e588ad952bf9"
-uuid: "8d0f31cd-bba4-87d4-8d6c-e6b64a9c4769"
+atomPath: "vocabulary/failure"
+coordinate: "vocabulary/failure · 8/crest · f249969d"
+contentUuid: "a5f15f37-171a-5712-afc9-fd4062c4eb02"
+diamondUuid: "32c11e6f-d236-8366-9fa8-f489c20d669a"
+uuid: "f249969d-803f-890b-837b-5f666fe10a6f"
 horo: 8
-bonds:
-  in:
-    - balance
-    - failures
-    - quality
-  out:
-    - balance
-    - failures
-    - quality
 typography:
-  partition: failure
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - failures
-    - quality
-  matrix:
-    - balance
-    - failures
-    - quality
-  backlinks:
-    - balance
-    - failures
-    - quality
 signatures:
-  computationUuid: "e5de48a1-4dcd-82b2-b6e6-b74c560992c1"
+  computationUuid: "8371b0d0-a246-81f3-8246-c95f0c456ff7"
   stages:
     - stage: path
-      stageUuid: "f2691e09-0d29-8b4e-af77-11d1949917de"
+      stageUuid: "5f7a6a51-efa1-86c3-bf0a-57335d3c32d5"
     - stage: trinity
-      stageUuid: "80caf8ee-5613-896c-8c1b-81cc716966cc"
+      stageUuid: "f4b1f5b0-14cb-8550-becd-b9bed47a8201"
     - stage: boundary
-      stageUuid: "2a46d9c9-5973-8ae7-8bf0-b66e5507246e"
+      stageUuid: "4e2f2071-fcdd-8751-b295-4f00d028e8ca"
     - stage: links
-      stageUuid: "ee7a9525-2736-878f-a77e-0c5cb027fe88"
+      stageUuid: "9fcabef0-002c-8bf1-b28e-eec3755e306c"
     - stage: horo
-      stageUuid: "6395d389-8914-8ead-b755-24f3b259bd8f"
+      stageUuid: "87090bd3-20c1-8517-bc69-e9b5d8d6141a"
     - stage: seal
-      stageUuid: "8d0b2ec9-20bd-8ff2-882e-f833b20ce6cd"
+      stageUuid: "8ed44fbe-0b0c-88a3-9fbc-5dd1e4f5ae90"
     - stage: uuid
-      stageUuid: "6854fe29-0cbe-8fe0-bdbd-cfb5967d5ac9"
+      stageUuid: "2d6c7768-9d69-8283-afb8-412a9dc83c40"
 version: 2
 ---
 # failure — the model of one [[failures]] row

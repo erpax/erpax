@@ -1,63 +1,35 @@
 ---
 name: gtin13
 description: "Use when reasoning about gtin13 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/gtin13
-coordinate: gtin13 · 4/weave · b6c04860
-contentUuid: "71499f77-f156-5ba5-9c32-2a9f7e2188fe"
-diamondUuid: "59d1cc9a-9744-870e-8989-b07c1811e6b9"
-uuid: "b6c04860-1bb7-8bc8-af65-249e42c3e66e"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/gtin13"
+coordinate: "vocabulary/gtin13 · 7/descent · ff351a4c"
+contentUuid: "bebe2092-e38c-5ec4-9351-98cd75ee8966"
+diamondUuid: "9f34c647-c9c7-8950-ae0e-4fc1a431c5e1"
+uuid: "ff351a4c-9aaa-8cc2-af7b-15a376495dae"
+horo: 7
 typography:
-  partition: gtin13
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "3d3bc11e-73f6-8e6f-8caa-b95b4351c9c0"
+  computationUuid: "af58a8d0-9ec6-886f-971e-cc21c0ba6944"
   stages:
     - stage: path
-      stageUuid: "a5c90c78-3075-8963-8c33-9c823832dc5b"
+      stageUuid: "c87c9b8c-be80-88a1-8c14-0f6b5a8eb0bb"
     - stage: trinity
-      stageUuid: "09b301ae-ec23-81d4-b1ca-6d2dcd06421d"
+      stageUuid: "cd7d2062-551d-8df1-841c-2185981231e5"
     - stage: boundary
-      stageUuid: "696a3cec-d73b-8c9b-84b5-66b97a1662a9"
+      stageUuid: "59efed27-b43c-894b-88ea-6098d01619f9"
     - stage: links
-      stageUuid: "73fedc07-08cd-866b-9ecc-991ba14df3c9"
+      stageUuid: "9e31eef8-bd77-84bb-8a72-0a4ee2338f65"
     - stage: horo
-      stageUuid: "79d4dd09-f9c1-8625-b66a-7eeed7bcd1a0"
+      stageUuid: "746e5f59-bf1a-8869-9701-fa4eaaacef1b"
     - stage: seal
-      stageUuid: "a7cc32a3-8843-83ab-a558-c907f1ffacc0"
+      stageUuid: "cf108311-f0bf-8b3f-9597-c4e7275f1a95"
     - stage: uuid
-      stageUuid: "ee8afa93-48d6-8d65-a27f-d26a91f256d2"
+      stageUuid: "7828055b-01ed-8096-8c1d-8be61444f2ef"
 version: 2
 ---
 # gtin13

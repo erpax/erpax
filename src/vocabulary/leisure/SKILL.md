@@ -1,63 +1,35 @@
 ---
 name: leisure
 description: "Use when reasoning about leisure as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/leisure
-coordinate: leisure · 8/crest · 7bb2be58
-contentUuid: "ca133014-0a39-5053-b179-f752a36882db"
-diamondUuid: "b8c9950c-cb71-84da-9c05-c24899515dbe"
-uuid: "7bb2be58-370e-8f93-a73e-b63439246588"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/leisure"
+coordinate: "vocabulary/leisure · 4/weave · 784e4101"
+contentUuid: "b1fa2029-4adc-5494-aec0-a64559a663ad"
+diamondUuid: "b6a7f0a4-5e3c-8f91-a48d-dc19b1f08fb3"
+uuid: "784e4101-f558-81e5-862f-65a8835592e3"
+horo: 4
 typography:
-  partition: leisure
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "dc9f37f9-fe41-8d09-952d-dfea16bf36b8"
+  computationUuid: "44c60f5f-09a4-88ff-81d6-48884f5001c5"
   stages:
     - stage: path
-      stageUuid: "2a528acd-4c0d-82e7-bf65-fb6a35d84696"
+      stageUuid: "c53782ab-fca2-8367-9e77-dfcc625b4619"
     - stage: trinity
-      stageUuid: "95de4e5f-043c-895f-8d28-f952481269c6"
+      stageUuid: "e54821eb-faf7-8124-b92b-12732ceb8a58"
     - stage: boundary
-      stageUuid: "b3bf818a-aa89-8ac7-b2e4-8c2c1689f0ec"
+      stageUuid: "3abd621e-645c-8873-89ce-21dd7623b115"
     - stage: links
-      stageUuid: "9f3dbcae-cb2f-8627-8621-dd7b656236df"
+      stageUuid: "e55b3291-c3f3-8880-a74a-8eb3f856cd0f"
     - stage: horo
-      stageUuid: "54b8b992-14c4-82fe-a676-1e1cce234c99"
+      stageUuid: "922bb43a-0eb6-87fb-ae87-3897cb93122e"
     - stage: seal
-      stageUuid: "a768987e-e606-8c45-8143-f3c482ef365b"
+      stageUuid: "bf3566eb-c9fe-850b-9962-87619f1eda27"
     - stage: uuid
-      stageUuid: "99c78919-0c3f-8d3f-bb98-98fb1b853090"
+      stageUuid: "97fce0b1-27f2-8813-b437-85da14414e71"
 version: 2
 ---
 # leisure

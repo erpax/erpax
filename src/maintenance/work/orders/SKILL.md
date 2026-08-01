@@ -2,63 +2,19 @@
 name: orders
 description: "Use when executing FM work — corrective/preventive/predictive maintenance, statutory inspections, refurbishments — tracking parts issued, labour hours, vendor cost, IAS-16 capex/opex classification, permit-to-work, failure codes, and GL journal-entry on completion. The CMMS work-order execution register per ISO 55000."
 atomPath: "maintenance/work/orders"
-coordinate: "maintenance/work/orders · 1/base · 5dc57e06"
-contentUuid: "48ed8817-4ee2-5a8d-8ea7-e69773fb30f3"
-diamondUuid: "50c1eeab-e15c-87c8-a17a-99d7e81b595a"
-uuid: "5dc57e06-a9dc-803b-bf93-8c1b91a56530"
-horo: 1
-bonds:
-  in:
-    - accounting
-    - allocation
-    - duality
-    - fractal
-    - hooks
-    - horo
-    - law
-    - materials
-    - orders
-    - packs
-    - party
-    - receipts
-    - routings
-    - runs
-    - shift
-    - shifts
-    - standard
-    - utility
-    - variances
-    - work
-  out:
-    - accounting
-    - allocation
-    - duality
-    - fractal
-    - hooks
-    - horo
-    - law
-    - materials
-    - orders
-    - packs
-    - party
-    - receipts
-    - routings
-    - runs
-    - shift
-    - shifts
-    - standard
-    - utility
-    - variances
+coordinate: "maintenance/work/orders · 7/descent · 569ddacf"
+contentUuid: "85ca7347-4e42-5cc4-a536-003da0c3f75d"
+diamondUuid: "720516ef-fb8b-8814-85e2-189b9d19ebb7"
+uuid: "569ddacf-5dc1-84ed-928d-6435b8b73ece"
+horo: 7
 typography:
   partition: maintenance
   bondDegree: 96
-  neighbors: []
 standards:
   - "EN-13306:2017 maintenance-terminology"
   - "EN-13306:2017 maintenance-terminology`"
   - "IFRS IAS-16 §12 §13 capitalisable-vs-expense routine-maintenance"
   - "IFRS IAS-2 §10 cost-of-purchase materials-issued"
-  - "ILO-C100"
   - "ISO-14224:2016 reliability-and-maintenance-data"
   - "ISO-14224:2016 reliability-and-maintenance-data`"
   - "ISO-41001"
@@ -75,58 +31,8 @@ standards:
   - "US-GAAP ASC-360 ppe-maintenance"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - assets
-    - entries
-    - entry
-    - inspections
-    - law
-    - movements
-    - properties
-    - requests
-  matrix:
-    - accounting
-    - allocation
-    - duality
-    - fractal
-    - hooks
-    - horo
-    - law
-    - materials
-    - orders
-    - packs
-    - party
-    - receipts
-    - routings
-    - runs
-    - shift
-    - shifts
-    - standard
-    - utility
-    - variances
-  backlinks:
-    - accounting
-    - allocation
-    - duality
-    - fractal
-    - hooks
-    - horo
-    - law
-    - materials
-    - orders
-    - packs
-    - party
-    - receipts
-    - routings
-    - runs
-    - shift
-    - shifts
-    - standard
-    - utility
-    - variances
 signatures:
-  computationUuid: "fd546e9a-e33a-8014-945f-f78163e44b69"
+  computationUuid: "1ed84fa5-e709-8d52-a522-81c0773d948e"
   stages:
     - stage: path
       stageUuid: "c6a956bb-34cd-84a7-b807-39badf6e89da"
@@ -137,11 +43,11 @@ signatures:
     - stage: links
       stageUuid: "afa49f3d-cc19-8e84-99cd-a1f133da0d11"
     - stage: horo
-      stageUuid: "d28b4bda-1d9b-871f-8cc4-d0cdadcf6415"
+      stageUuid: "11dba495-dad9-81f3-b3cb-3a749ca1823e"
     - stage: seal
       stageUuid: "fd8140a2-dc6f-82f2-ae3f-e9d01a693246"
     - stage: uuid
-      stageUuid: "7ec66084-8300-8eec-a030-2bd7166b9d65"
+      stageUuid: "be988fe5-f202-8984-8b9c-45d748e57289"
 version: 2
 ---
 # maintenance-work-orders

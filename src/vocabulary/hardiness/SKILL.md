@@ -1,91 +1,34 @@
 ---
 name: hardiness
 description: "Use when classifying a crop by cold tolerance — hardiness ranks crops hardy / half-hardy / tender / very-tender by the frost they survive, and the USDA hardiness zone places a site by its average annual minimum temperature. The biological cold-tolerance trait (the crop's) paired with the zone (the place's); together they decide what can overwinter or be planted when."
-atomPath: vocabulary/hardiness
-coordinate: hardiness · 8/crest · 8419fd86
-contentUuid: "724bf621-b8bf-56af-b471-7b375e6c68b6"
-diamondUuid: "1e0772c5-e11e-8023-8d0e-c7ad69655b82"
-uuid: "8419fd86-84cc-8a41-aa6e-dedbfba62b37"
-horo: 8
-bonds:
-  in:
-    - agriculture
-    - crop
-    - frost
-    - harvest
-    - law
-    - planting
-    - season
-    - taxonomy
-    - tunnel
-    - variant
-  out:
-    - agriculture
-    - crop
-    - frost
-    - harvest
-    - law
-    - planting
-    - season
-    - taxonomy
-    - tunnel
-    - variant
+atomPath: "vocabulary/hardiness"
+coordinate: "vocabulary/hardiness · 4/weave · 863361fc"
+contentUuid: "8f20d197-40b1-55cf-b3e1-3ef42ab4501b"
+diamondUuid: "7fea1e1b-faf2-8f53-8e4d-73c217b3627e"
+uuid: "863361fc-2654-8207-905d-c31a7d568428"
+horo: 4
 typography:
-  partition: hardiness
+  partition: vocabulary
   bondDegree: 33
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - crop
-    - frost
-    - harvest
-    - law
-    - planting
-    - season
-    - taxonomy
-    - tunnel
-  matrix:
-    - agriculture
-    - crop
-    - frost
-    - harvest
-    - law
-    - planting
-    - season
-    - taxonomy
-    - tunnel
-    - variant
-  backlinks:
-    - agriculture
-    - crop
-    - frost
-    - harvest
-    - law
-    - planting
-    - season
-    - taxonomy
-    - tunnel
-    - variant
 signatures:
-  computationUuid: "8b4966ae-263b-8871-a5dc-c77c19b0af1c"
+  computationUuid: "503d9b4d-4a98-8546-ae7e-fe7e6f83200d"
   stages:
     - stage: path
-      stageUuid: "7678ce2b-7949-850c-b01d-c0381abf706c"
+      stageUuid: "77188061-1509-86b2-8b4a-836badf239c2"
     - stage: trinity
-      stageUuid: "4ae6c198-8cba-8517-8082-192e663da027"
+      stageUuid: "06ee37d4-a7b8-8a42-a43f-b240f61e63db"
     - stage: boundary
-      stageUuid: "89108720-c183-82d8-aed0-9e2a7de93ccf"
+      stageUuid: "3e529d00-3b54-81d7-849c-b670d3799952"
     - stage: links
-      stageUuid: "6699fa62-3494-8986-bd57-c0a46991ee1b"
+      stageUuid: "244a5297-a927-8ccc-9413-e256e8b6f3b3"
     - stage: horo
-      stageUuid: "aee4972b-9d4f-868d-90f3-ab0968907467"
+      stageUuid: "68823cef-7e8a-8c16-88f4-060b92ca28d9"
     - stage: seal
-      stageUuid: "02482e14-cad3-8d17-b126-090363b8a73c"
+      stageUuid: "9fa4b81c-b269-8061-9291-abd7a0a3740e"
     - stage: uuid
-      stageUuid: "bf46aff4-3fc2-8c18-948d-f04a6bad2f56"
+      stageUuid: "e2131bc0-5334-8df3-b56f-bd5c35087536"
 version: 2
 ---
 # hardiness — the crop's cold tolerance (and the site's zone)

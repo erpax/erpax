@@ -1,53 +1,35 @@
 ---
 name: ngo
 description: "Use when reasoning about ngo — Organization: Non-governmental Organization."
-atomPath: vocabulary/ngo
-coordinate: ngo · 8/crest · 75649c63
-contentUuid: "181e235e-431e-5e56-ad33-bd095ce7acc3"
-diamondUuid: "ffe92292-7b78-862d-88ef-059f24f590bf"
-uuid: "75649c63-2d4c-8317-9e24-18d5b55afdcb"
-horo: 8
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/ngo"
+coordinate: "vocabulary/ngo · 1/base · 84b4b1cf"
+contentUuid: "94aaf839-7ab9-583d-992d-1b1cd585b443"
+diamondUuid: "3bf227e9-2627-8ac4-b6e7-e89fd38db1fd"
+uuid: "84b4b1cf-4d3e-8a9b-8f35-f9322e8db4b6"
+horo: 1
 typography:
-  partition: ngo
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "1730b96b-d73a-8a20-be4a-6b7c46e38d6b"
+  computationUuid: "557e670e-31d8-8f49-bd2b-6eb00b2162b6"
   stages:
     - stage: path
-      stageUuid: "070afbe9-4abb-8aed-8215-54eedc60c6a0"
+      stageUuid: "1b3505bd-37c1-810b-bf28-fa78ce249d30"
     - stage: trinity
-      stageUuid: "80d20329-e24b-8822-a4de-949f0f882d55"
+      stageUuid: "cfc7e97c-8c41-8c19-8eaa-4054b93f92dd"
     - stage: boundary
-      stageUuid: "6b108ca0-7adf-8db1-a10c-7002aed97d24"
+      stageUuid: "de2f8841-e640-8424-9528-d1da4198bf8f"
     - stage: links
-      stageUuid: "fba82488-08ff-860c-a17e-668509ab7029"
+      stageUuid: "911d86e2-a77e-89a5-8ef6-b9a7edbf7af3"
     - stage: horo
-      stageUuid: "06b96670-10f3-87e1-a1d4-210341d0becf"
+      stageUuid: "e9feab32-da9d-8de9-bd31-74bd1ada3d51"
     - stage: seal
-      stageUuid: "9a49a52f-6d9f-8e50-bb2e-301310aa2f44"
+      stageUuid: "5415493a-02df-8d28-bad2-7ad0de6c6ae7"
     - stage: uuid
-      stageUuid: "206485bb-93ba-8edf-91eb-f2866e494a79"
+      stageUuid: "23c51df8-5d16-8151-af59-4db58128b612"
 version: 2
 ---
 # ngo

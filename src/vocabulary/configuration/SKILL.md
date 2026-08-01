@@ -1,83 +1,35 @@
 ---
 name: configuration
 description: "Use when reasoning about configuration as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/configuration
-coordinate: configuration · 2/share · 3d039f23
-contentUuid: "b7ec58b6-c056-52a6-abc7-116d95df3c3e"
-diamondUuid: "7dc0c319-1460-837d-8f4a-d9a1035f2ad5"
-uuid: "3d039f23-2e1e-8213-90ae-a58aea972d3f"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - drive
-    - law
-    - merge
-    - sti
-    - value
-    - vehicle
-    - wheel
-  out:
-    - collapse
-    - drive
-    - law
-    - merge
-    - sti
-    - value
-    - vehicle
-    - wheel
+atomPath: "vocabulary/configuration"
+coordinate: "vocabulary/configuration · 7/descent · bdb63780"
+contentUuid: "9a624244-4d25-5993-b5c3-620bd2754e20"
+diamondUuid: "45f6ee7b-21fa-81a2-8aa0-b59a04405540"
+uuid: "bdb63780-2b2b-877a-9e39-fefa1e3407e7"
+horo: 7
 typography:
-  partition: configuration
+  partition: vocabulary
   bondDegree: 27
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - drive
-    - law
-    - merge
-    - sti
-    - value
-    - vehicle
-    - wheel
-  matrix:
-    - collapse
-    - drive
-    - law
-    - merge
-    - sti
-    - value
-    - vehicle
-    - wheel
-  backlinks:
-    - collapse
-    - drive
-    - law
-    - merge
-    - sti
-    - value
-    - vehicle
-    - wheel
 signatures:
-  computationUuid: "64318553-96fb-8e64-bcdf-aeed46a9c561"
+  computationUuid: "0587d15b-b81e-8eac-af1e-7b9da63f8cb6"
   stages:
     - stage: path
-      stageUuid: "dacac9a4-432d-80bd-b8e3-79ac8fc84585"
+      stageUuid: "10b59e61-d544-870c-860e-6f3633dac25d"
     - stage: trinity
-      stageUuid: "3aeace98-e969-86a0-8710-4bd0f60671d1"
+      stageUuid: "abba763b-fa0e-8805-b7bf-bbe13cd9a1f5"
     - stage: boundary
-      stageUuid: "95e1736f-c000-8b66-947e-d3452e00102c"
+      stageUuid: "d0314a5a-b5f8-8a6c-990b-1465f186254a"
     - stage: links
-      stageUuid: "fae5ebdf-ac57-85a6-8bac-de030b42f362"
+      stageUuid: "d7e183da-a14b-80ce-84e7-d4c832f7fbf3"
     - stage: horo
-      stageUuid: "5f7af0e4-b39f-8704-a912-2cc18d20f3c5"
+      stageUuid: "d27045f1-bd0e-8930-9775-8a0e500d6f16"
     - stage: seal
-      stageUuid: "bc1dedd1-2524-80ad-a809-5cb3b980966c"
+      stageUuid: "84506729-2da5-85f4-85f1-ccb3c55435f3"
     - stage: uuid
-      stageUuid: "6662733c-c70c-8d36-83d7-c3fad4800ff2"
+      stageUuid: "8ab05435-4650-8183-9cb5-898a6a79ac9d"
 version: 2
 ---
 # configuration

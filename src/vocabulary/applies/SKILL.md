@@ -1,83 +1,35 @@
 ---
 name: applies
 description: "Use when reasoning about applies as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/applies
-coordinate: applies · 1/base · 4a30e745
-contentUuid: "d8ebbed2-8980-5b9e-8abb-58403beb59f3"
-diamondUuid: "e83f2829-da69-8144-8d76-c38cbe7a062f"
-uuid: "4a30e745-924f-865a-854b-08364100900c"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - delivery
-    - law
-    - legislation
-    - merge
-    - method
-    - payment
-    - sti
-  out:
-    - collapse
-    - delivery
-    - law
-    - legislation
-    - merge
-    - method
-    - payment
-    - sti
+atomPath: "vocabulary/applies"
+coordinate: "vocabulary/applies · 4/weave · dd19ee41"
+contentUuid: "6c93653b-9cad-5240-9c73-7530c1344ad6"
+diamondUuid: "2a090906-0627-8d26-950d-cd0fefa115c7"
+uuid: "dd19ee41-6ab8-8c45-b068-1f7e68e6ff94"
+horo: 4
 typography:
-  partition: applies
+  partition: vocabulary
   bondDegree: 25
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - delivery
-    - law
-    - legislation
-    - merge
-    - method
-    - payment
-    - sti
-  matrix:
-    - collapse
-    - delivery
-    - law
-    - legislation
-    - merge
-    - method
-    - payment
-    - sti
-  backlinks:
-    - collapse
-    - delivery
-    - law
-    - legislation
-    - merge
-    - method
-    - payment
-    - sti
 signatures:
-  computationUuid: "d59150fe-64ef-899e-be22-6a34926f2b73"
+  computationUuid: "f7a52df8-b19a-87be-80d3-0c6828cb1a37"
   stages:
     - stage: path
-      stageUuid: "b33fef7a-f221-829b-918d-5de4a70c1038"
+      stageUuid: "57bcbf39-0267-8f52-8db1-381fbfadb10f"
     - stage: trinity
-      stageUuid: "acd8df60-3e6e-8a82-8ac9-7ec1955fab4c"
+      stageUuid: "345de3b3-aea1-8581-8081-863a3de36b85"
     - stage: boundary
-      stageUuid: "55e6e9d8-53a4-8af1-a0f9-3101f8826e44"
+      stageUuid: "dc6f87f1-c862-86ad-b559-96afe466171f"
     - stage: links
-      stageUuid: "4dfb1e82-bf58-8961-bf05-9ecd2f5e7be1"
+      stageUuid: "4eb4c916-625d-8c3d-b2f5-cce84b838880"
     - stage: horo
-      stageUuid: "b4dc9ad0-6447-8f2c-a6ba-856b1cffc165"
+      stageUuid: "4b5f98c5-2981-8800-a204-653c8b0f8a24"
     - stage: seal
-      stageUuid: "00356a22-fda7-8c28-bd0b-7724aa6fe6f1"
+      stageUuid: "2570f791-ae28-84a8-87e6-024dfe2902a4"
     - stage: uuid
-      stageUuid: "6e365a0a-cc47-8d9a-b445-ac4753031b94"
+      stageUuid: "4e5ecaed-1d8b-8df1-a15e-b131a916e15c"
 version: 2
 ---
 # applies

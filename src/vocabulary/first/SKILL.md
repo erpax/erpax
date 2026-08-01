@@ -1,88 +1,35 @@
 ---
 name: first
 description: "Use when reasoning about first as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/first
-coordinate: first · 4/weave · ff19aab9
-contentUuid: "8fa03f90-f038-53ac-a474-b3867ac4f382"
-diamondUuid: "e9ca83ee-866d-83e7-ba47-13b26782b6d4"
-uuid: "ff19aab9-d3de-8ab4-94d5-715b6d6a57bf"
-horo: 4
-bonds:
-  in:
-    - appearance
-    - collapse
-    - date
-    - law
-    - merge
-    - performance
-    - registered
-    - sti
-    - vehicle
-  out:
-    - appearance
-    - collapse
-    - date
-    - law
-    - merge
-    - performance
-    - registered
-    - sti
-    - vehicle
+atomPath: "vocabulary/first"
+coordinate: "vocabulary/first · 1/base · b75a2e95"
+contentUuid: "73afcdcb-98d1-5e24-8be7-3f1cabce22ac"
+diamondUuid: "85bc07e7-9ccf-868a-9229-84614fe726bd"
+uuid: "b75a2e95-3aad-86c9-914a-b287115ba8e4"
+horo: 1
 typography:
-  partition: first
-  bondDegree: 31
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 33
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - appearance
-    - collapse
-    - date
-    - law
-    - merge
-    - performance
-    - registered
-    - sti
-    - vehicle
-  matrix:
-    - appearance
-    - collapse
-    - date
-    - law
-    - merge
-    - performance
-    - registered
-    - sti
-    - vehicle
-  backlinks:
-    - appearance
-    - collapse
-    - date
-    - law
-    - merge
-    - performance
-    - registered
-    - sti
-    - vehicle
 signatures:
-  computationUuid: "a657f78c-f4a1-835e-9eed-ad78fdaa3021"
+  computationUuid: "66e558f0-fee2-845a-b5dd-20782bb21780"
   stages:
     - stage: path
-      stageUuid: "cd5eb5ff-e60b-833c-9345-3eacbe185547"
+      stageUuid: "ae8408d7-dd6d-8a6c-b447-7ead58e712ef"
     - stage: trinity
-      stageUuid: "a6889231-1d23-8564-b178-44f4c207dbc6"
+      stageUuid: "d0c66e6a-0ba8-8449-b0c9-a95d831760d3"
     - stage: boundary
-      stageUuid: "83822cfb-65a8-8e8c-8a96-e89e75bda31a"
+      stageUuid: "f5dea144-62eb-8e80-a327-e483456cff5d"
     - stage: links
-      stageUuid: "ac8202cb-7cf6-8cca-9477-22624f58364d"
+      stageUuid: "d7c6fef4-8f01-8292-9d8c-ff23b38a00a9"
     - stage: horo
-      stageUuid: "69da7154-f2b9-8b5d-8f6e-7a13385b724a"
+      stageUuid: "814a7b09-da63-8fdf-b95e-6a1f7721641b"
     - stage: seal
-      stageUuid: "547bae10-8972-82ea-ad3d-0d15e4b24f12"
+      stageUuid: "197604b4-e61c-8d5f-a167-81cdb5f3c4b5"
     - stage: uuid
-      stageUuid: "db21a181-80e6-89cb-933d-fe6091493635"
+      stageUuid: "62b08424-3470-8cc3-90ec-16ee2a462bca"
 version: 2
 ---
 # first

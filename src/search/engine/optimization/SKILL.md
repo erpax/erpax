@@ -1,54 +1,20 @@
 ---
 name: optimization
 description: "Use when making erpax discoverable — search engine optimization (SEO); the canonical keyword and GitHub-topic strategy plus an on-page relevance scorer that the README and npm package draw from."
-atomPath: search/engine/optimization
-coordinate: search/engine/optimization · 4/weave · b6239a26
-contentUuid: "31c65ebf-ebe3-5172-b51a-ff694d319f39"
-diamondUuid: "92e0717a-cb39-888f-946f-68d36c2b487a"
-uuid: "b6239a26-5b87-88b7-bb31-f65d1acf7a14"
-horo: 4
-bonds:
-  in:
-    - discover
-    - engine
-    - keyword
-    - keywords
-    - rank
-    - search
-  out:
-    - discover
-    - keyword
-    - keywords
-    - rank
-    - search
+atomPath: "search/engine/optimization"
+coordinate: "search/engine/optimization · 7/descent · 5f50cca7"
+contentUuid: "44c938ac-1244-58ee-b93a-d0220bf56032"
+diamondUuid: "50089538-39ae-8b06-a8e4-a75d67f59dd0"
+uuid: "5f50cca7-3b03-8076-bd08-d21a6ad931bb"
+horo: 7
 typography:
   partition: search
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org + Open Graph discoverability; on-page keyword coverage"
 bindings: []
-neighbors:
-  wikilink:
-    - discover
-    - keyword
-    - keywords
-    - rank
-    - search
-  matrix:
-    - discover
-    - keyword
-    - keywords
-    - rank
-    - search
-  backlinks:
-    - discover
-    - keyword
-    - keywords
-    - rank
-    - search
 signatures:
-  computationUuid: "9da9ea0d-55c0-8f69-8719-4da54e6e901f"
+  computationUuid: "0aa3d145-4c1d-87c3-bcaa-7064fd9631b0"
   stages:
     - stage: path
       stageUuid: "8a5a6a4c-8367-87c4-86ec-99be94514db8"
@@ -59,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fa63c35c-125c-88b0-ac77-3c523c444a60"
     - stage: horo
-      stageUuid: "f6e9a270-7b33-8825-887f-9dbc02d75249"
+      stageUuid: "67a2d981-1757-8f3d-a31b-e2843b4cdff9"
     - stage: seal
-      stageUuid: "a1f39b6d-2ed3-8662-92f5-6e2172c245eb"
+      stageUuid: "dc173685-2dfc-8cff-9d2b-5bdf2f881784"
     - stage: uuid
-      stageUuid: "155eec69-5326-846e-a698-a4b984ba9b51"
+      stageUuid: "a0275226-2265-8124-95ca-048b07b4df2e"
 version: 2
 ---
 # search/engine/optimization — SEO

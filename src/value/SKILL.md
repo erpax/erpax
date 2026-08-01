@@ -2,172 +2,18 @@
 name: value
 description: "Use when a field carries a numeric or quantified substance — quantity value (paired with unit), exchange rate value, percentage, index. Generic numeric container; pairs with unit (measure), currency, or rate context to form money/quantity/rate."
 atomPath: value
-coordinate: value · 1/base · c2e0b55c
-contentUuid: "abf5169b-11c2-5e69-8b7c-29f358f387c4"
-diamondUuid: "58fb6fa3-5315-8778-8320-c8fa59c28975"
-uuid: "c2e0b55c-4643-8fce-aeaf-dc0878823d59"
+coordinate: "value · 1/base · a09e7f02"
+contentUuid: "a23a28bb-ac92-5854-a512-aa6a08075536"
+diamondUuid: "0da6ad2c-1bb8-8450-ba4a-b027da8bb700"
+uuid: "a09e7f02-8e1c-8123-bc39-fd3fddebc38f"
 horo: 1
-bonds:
-  in:
-    - added
-    - broadcast
-    - calculate
-    - configuration
-    - currency
-    - default
-    - dose
-    - drive
-    - enterprisebudget
-    - fields
-    - frequency
-    - included
-    - law
-    - legal
-    - length
-    - level
-    - max
-    - measure
-    - min
-    - order
-    - pattern
-    - property
-    - qualitative
-    - quantitative
-    - rate
-    - rating
-    - readonly
-    - reference
-    - required
-    - specification
-    - steering
-    - step
-    - strength
-    - structured
-    - wheel
-  out:
-    - added
-    - broadcast
-    - calculate
-    - configuration
-    - currency
-    - default
-    - dose
-    - drive
-    - enterprisebudget
-    - fields
-    - frequency
-    - included
-    - law
-    - legal
-    - length
-    - level
-    - max
-    - measure
-    - min
-    - order
-    - pattern
-    - property
-    - qualitative
-    - quantitative
-    - rate
-    - rating
-    - readonly
-    - reference
-    - required
-    - specification
-    - steering
-    - step
-    - strength
-    - structured
-    - wheel
 typography:
   partition: value
-  bondDegree: 107
-  neighbors: []
+  bondDegree: 101
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - calculate
-    - currency
-    - fields
-    - law
-    - measure
-    - rate
-  matrix:
-    - added
-    - broadcast
-    - calculate
-    - configuration
-    - currency
-    - default
-    - dose
-    - drive
-    - enterprisebudget
-    - fields
-    - frequency
-    - included
-    - law
-    - legal
-    - length
-    - level
-    - max
-    - measure
-    - min
-    - order
-    - pattern
-    - property
-    - qualitative
-    - quantitative
-    - rate
-    - rating
-    - readonly
-    - reference
-    - required
-    - specification
-    - steering
-    - step
-    - strength
-    - structured
-    - wheel
-  backlinks:
-    - added
-    - broadcast
-    - calculate
-    - configuration
-    - currency
-    - default
-    - dose
-    - drive
-    - enterprisebudget
-    - fields
-    - frequency
-    - included
-    - law
-    - legal
-    - length
-    - level
-    - max
-    - measure
-    - min
-    - order
-    - pattern
-    - property
-    - qualitative
-    - quantitative
-    - rate
-    - rating
-    - readonly
-    - reference
-    - required
-    - specification
-    - steering
-    - step
-    - strength
-    - structured
-    - wheel
 signatures:
-  computationUuid: "bbad39cb-9caa-8c3d-8958-4ed9e92d9fd3"
+  computationUuid: "84565f4c-8046-88cf-bada-48e6f2f3567f"
   stages:
     - stage: path
       stageUuid: "9a6fc29d-5fba-8680-adef-93f09d9dc585"
@@ -178,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "18a621e4-1a14-8044-b87c-a78d816a0524"
     - stage: horo
-      stageUuid: "1b4c09fc-b1bf-8bf4-9dbf-ca643bd212ce"
+      stageUuid: "71975665-18bc-8429-ad2f-a6e1de7755d4"
     - stage: seal
-      stageUuid: "73cf312d-c5f5-8ac8-b4a8-9516be2e5069"
+      stageUuid: "bce157f2-a12f-8445-ab00-0dbef1d33094"
     - stage: uuid
-      stageUuid: "34cbd67a-d241-824f-989f-2ecaad73e39d"
+      stageUuid: "da28d530-6862-850f-bbee-0609ed6c8f95"
 version: 2
 ---
 # value

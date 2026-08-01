@@ -2,39 +2,14 @@
 name: payments
 description: "Use when recording or auditing cash received or sent against an invoice — AR/AP GL posting, ISO-20022 pain/pacs message types, IBAN/BIC, period-lock guard, cash-flow classification (IAS-7 / ASC-230). The payments collection."
 atomPath: "invoices/payments"
-coordinate: "invoices/payments · 1/base · d4a8195d"
-contentUuid: "0b9de259-80d8-5283-af90-cababd7181c9"
-diamondUuid: "c99b5212-8976-836f-acac-1f51cf37c3b7"
-uuid: "d4a8195d-6673-8dea-82c4-3de785f8b46b"
-horo: 1
-bonds:
-  in:
-    - accounting
-    - allocations
-    - dunning
-    - escrow
-    - identity
-    - invoices
-    - law
-    - loan
-    - proof
-    - standard
-    - transaction
-  out:
-    - accounting
-    - allocations
-    - dunning
-    - escrow
-    - identity
-    - law
-    - loan
-    - proof
-    - standard
-    - transaction
+coordinate: "invoices/payments · 7/descent · 496eaa36"
+contentUuid: "c0917f66-85a4-5385-a715-60b27cf878fc"
+diamondUuid: "af155637-886d-8f14-89b6-8b5ea5c36fad"
+uuid: "496eaa36-eb3f-8a1d-8333-7307d8776023"
+horo: 7
 typography:
   partition: invoices
   bondDegree: 0
-  neighbors: []
 standards:
   - "IFRS IAS-7 statement-of-cash-flows"
   - "ISO-13616-1:2020 iban"
@@ -56,39 +31,8 @@ standards:
   - "US-GAAP ASC-230 statement-of-cash-flows"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - allocations
-    - identity
-    - law
-    - proof
-    - standard
-    - transaction
-  matrix:
-    - accounting
-    - allocations
-    - dunning
-    - escrow
-    - identity
-    - law
-    - loan
-    - proof
-    - standard
-    - transaction
-  backlinks:
-    - accounting
-    - allocations
-    - dunning
-    - escrow
-    - identity
-    - law
-    - loan
-    - proof
-    - standard
-    - transaction
 signatures:
-  computationUuid: "3d3eb817-0fef-8097-a005-120ab43baf9b"
+  computationUuid: "e7340f68-ac5e-811a-8152-0b1c82afe34e"
   stages:
     - stage: path
       stageUuid: "88ef4de9-3e18-8ada-8375-bab76c5205dc"
@@ -99,11 +43,11 @@ signatures:
     - stage: links
       stageUuid: "7eed6bf4-5b4b-84d1-b951-0d8bb04a0472"
     - stage: horo
-      stageUuid: "13a12a23-0937-8eec-bfc3-1fa640e29c9f"
+      stageUuid: "9c23e759-9211-871f-b2b3-9cca2c9ae8e7"
     - stage: seal
       stageUuid: "f9e293b2-0402-89a3-a40c-4501558054fd"
     - stage: uuid
-      stageUuid: "69f2c0df-8cc6-8d54-b5bd-c3aa9fdf828e"
+      stageUuid: "a4714ec6-08ed-86c5-b1f2-33f3669f2f09"
 version: 2
 ---
 # payments

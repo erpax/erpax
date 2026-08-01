@@ -1,53 +1,35 @@
 ---
 name: preparation
 description: Use when reasoning about preparation — Typical preparation that a patient must undergo before having the procedure performed.
-atomPath: vocabulary/preparation
-coordinate: preparation · 1/base · c6fb575d
-contentUuid: "a8b20ee1-57a3-5297-bd74-fbd8f698be36"
-diamondUuid: "785eba2a-aaf5-8c1d-8ce6-3326c8a1103f"
-uuid: "c6fb575d-811d-887a-8844-cfacb82ab8da"
-horo: 1
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/preparation"
+coordinate: "vocabulary/preparation · 7/descent · 2dcdf536"
+contentUuid: "91a1ddfd-125a-564e-b93d-1489526858e5"
+diamondUuid: "f357d4de-1a91-818d-9bdf-1940e15bc0da"
+uuid: "2dcdf536-f589-8c91-937b-75da6a081fd2"
+horo: 7
 typography:
-  partition: preparation
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "a04409e7-416a-880b-8426-cc1d9d56db16"
+  computationUuid: "ee908b76-e565-847b-9749-2972a2487005"
   stages:
     - stage: path
-      stageUuid: "5e73afd7-05c0-879b-8bf3-7dece3b49258"
+      stageUuid: "dbc3a8f8-0bf1-8dd2-b3fe-8c2f2463040e"
     - stage: trinity
-      stageUuid: "a6d0bbb5-7c5f-844a-93c8-2a1e3c2ae103"
+      stageUuid: "51d22eaa-6045-8565-9ec9-72592e55ab83"
     - stage: boundary
-      stageUuid: "6c4c8b70-a39a-8c3f-9919-eb17f0c1be92"
+      stageUuid: "4baa45ef-26e5-8db2-9593-0f6386eedb05"
     - stage: links
-      stageUuid: "91a3bf2b-dbb0-8cd0-b8d9-3065c54f1d19"
+      stageUuid: "c6e4b98b-9440-8bc7-8e1a-eb2b04ca1149"
     - stage: horo
-      stageUuid: "4143c432-8a81-8a5f-a0b6-baf0f7af4a95"
+      stageUuid: "3d9202ec-b725-8db6-875f-cfc54d556c7f"
     - stage: seal
-      stageUuid: "de8e02a8-10f5-877c-9c00-4c643d711d31"
+      stageUuid: "0f67aa6f-85e9-8010-97ff-9491e8d56539"
     - stage: uuid
-      stageUuid: "1e6c664f-10f4-8098-b469-96eeeb939ac4"
+      stageUuid: "88ef853c-f878-8c4d-9f81-dda645875037"
 version: 2
 ---
 # preparation

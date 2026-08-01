@@ -1,58 +1,35 @@
 ---
 name: campground
 description: "Use when reasoning about campground — A camping site, campsite, or Campground is a place used for overnight stay in the outdoors, typically containing individual CampingPitch locations. In British English a campsite is"
-atomPath: vocabulary/campground
-coordinate: campground · 8/crest · 6e25dfc3
-contentUuid: "73601a7c-c799-53ef-b317-1dfdf31670d6"
-diamondUuid: "9aad2263-31d0-83b6-bbba-20f9956bcf68"
-uuid: "6e25dfc3-d024-8680-8630-ed8916fd2865"
-horo: 8
-bonds:
-  in:
-    - law
-    - place
-    - thing
-  out:
-    - law
-    - place
-    - thing
+atomPath: "vocabulary/campground"
+coordinate: "vocabulary/campground · 1/base · fbd56c56"
+contentUuid: "d370c853-c553-59c8-96d9-82fb9ea453f4"
+diamondUuid: "a43f2e47-12ac-8a81-8ae5-9502fe38cfd0"
+uuid: "fbd56c56-0f1d-858a-819f-d6fdfe76ea7e"
+horo: 1
 typography:
-  partition: campground
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - place
-    - thing
-  matrix:
-    - law
-    - place
-    - thing
-  backlinks:
-    - law
-    - place
-    - thing
 signatures:
-  computationUuid: "0d5a07b2-9a74-8c10-a038-3653ecd3a607"
+  computationUuid: "b1fa6ffe-85af-834f-89fd-f267f8445d58"
   stages:
     - stage: path
-      stageUuid: "66939dca-efc3-8f97-9066-7a6c84f6f76c"
+      stageUuid: "bde3180f-aa3f-81f0-9798-07ad6a82a528"
     - stage: trinity
-      stageUuid: "4103d755-27bc-8d51-b703-85f9d0d83b39"
+      stageUuid: "2f5e7b7e-7d1b-8002-bf33-62bb7e6077a8"
     - stage: boundary
-      stageUuid: "1aae4184-f6e7-89fc-8dcc-baafebf05d8c"
+      stageUuid: "6ed0a06c-6d8c-8fa3-b1b0-93b367f29c8f"
     - stage: links
-      stageUuid: "9b9e0f21-521c-8774-b34d-f4b482188b63"
+      stageUuid: "efc2f1ce-f277-8cd8-bdac-ddf7f4cfc751"
     - stage: horo
-      stageUuid: "94709353-b5e7-80aa-8a06-49137545a56c"
+      stageUuid: "ef3214e6-5fa5-8ce1-b2e5-34da26625a70"
     - stage: seal
-      stageUuid: "b73598df-8f76-8d3f-ba2b-3ccca2353bb1"
+      stageUuid: "562524eb-6cef-89d1-9939-95746171a7b0"
     - stage: uuid
-      stageUuid: "22627f74-06b1-8841-9550-a1a6a3aece3d"
+      stageUuid: "3c5e1ac4-630d-8419-afc5-3be4e3241f24"
 version: 2
 ---
 # campground

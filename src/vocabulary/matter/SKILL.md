@@ -1,244 +1,34 @@
 ---
 name: matter
 description: "Use when reasoning about matter — Strip the prefix *legal* and a **matter** is the universal professional-services engagement: a party (the client) retains the firm to do work, the work is staffed by positions and"
-atomPath: vocabulary/matter
-coordinate: matter · 2/share · 0e8c22fc
-contentUuid: "bb39cbe5-7be7-50ea-b2b4-649b9d8a9ca3"
-diamondUuid: "8a706a43-5073-84a4-89f3-c9c44e30a5c4"
-uuid: "0e8c22fc-6ff6-8341-a925-cba03f89ff1e"
-horo: 2
-bonds:
-  in:
-    - access
-    - akashic
-    - allocation
-    - amendment
-    - assignment
-    - auditright
-    - balance
-    - begin
-    - clause
-    - close
-    - compass
-    - confidentiality
-    - conflict
-    - consent
-    - dataprotection
-    - digit
-    - dimension
-    - disputeresolution
-    - entry
-    - forcemajeure
-    - fs
-    - governinglaw
-    - holographic
-    - horo
-    - identity
-    - indemnity
-    - jurisdiction
-    - law
-    - liability
-    - license
-    - localize
-    - party
-    - positions
-    - privilege
-    - proof
-    - remediation
-    - restriction
-    - society
-    - standard
-    - termination
-    - transaction
-    - trust
-    - twinned
-    - utilities
-    - warranty
-  out:
-    - access
-    - akashic
-    - allocation
-    - amendment
-    - assignment
-    - auditright
-    - balance
-    - begin
-    - clause
-    - close
-    - compass
-    - confidentiality
-    - conflict
-    - consent
-    - dataprotection
-    - digit
-    - dimension
-    - disputeresolution
-    - entry
-    - forcemajeure
-    - fs
-    - governinglaw
-    - holographic
-    - horo
-    - identity
-    - indemnity
-    - jurisdiction
-    - law
-    - liability
-    - license
-    - localize
-    - party
-    - positions
-    - privilege
-    - proof
-    - remediation
-    - restriction
-    - society
-    - standard
-    - termination
-    - transaction
-    - trust
-    - twinned
-    - utilities
-    - warranty
+atomPath: "vocabulary/matter"
+coordinate: "vocabulary/matter · 4/weave · a8d8b6fd"
+contentUuid: "e7a8368b-4c32-546d-a0ed-5d84d0344eef"
+diamondUuid: "4ae0ecde-0478-8aa3-81fe-b7c632074b3a"
+uuid: "a8d8b6fd-891c-82ec-bbf2-df7038dfb166"
+horo: 4
 typography:
-  partition: matter
+  partition: vocabulary
   bondDegree: 138
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - akashic
-    - allocation
-    - balance
-    - begin
-    - close
-    - compass
-    - conflict
-    - dimension
-    - entry
-    - holographic
-    - horo
-    - identity
-    - localize
-    - party
-    - positions
-    - privilege
-    - proof
-    - society
-    - standard
-    - transaction
-    - trust
-  matrix:
-    - access
-    - akashic
-    - allocation
-    - amendment
-    - assignment
-    - auditright
-    - balance
-    - begin
-    - clause
-    - close
-    - compass
-    - confidentiality
-    - conflict
-    - consent
-    - dataprotection
-    - digit
-    - dimension
-    - disputeresolution
-    - entry
-    - forcemajeure
-    - fs
-    - governinglaw
-    - holographic
-    - horo
-    - identity
-    - indemnity
-    - jurisdiction
-    - law
-    - liability
-    - license
-    - localize
-    - party
-    - positions
-    - privilege
-    - proof
-    - remediation
-    - restriction
-    - society
-    - standard
-    - termination
-    - transaction
-    - trust
-    - twinned
-    - utilities
-    - warranty
-  backlinks:
-    - access
-    - akashic
-    - allocation
-    - amendment
-    - assignment
-    - auditright
-    - balance
-    - begin
-    - clause
-    - close
-    - compass
-    - confidentiality
-    - conflict
-    - consent
-    - dataprotection
-    - digit
-    - dimension
-    - disputeresolution
-    - entry
-    - forcemajeure
-    - fs
-    - governinglaw
-    - holographic
-    - horo
-    - identity
-    - indemnity
-    - jurisdiction
-    - law
-    - liability
-    - license
-    - localize
-    - party
-    - positions
-    - privilege
-    - proof
-    - remediation
-    - restriction
-    - society
-    - standard
-    - termination
-    - transaction
-    - trust
-    - twinned
-    - utilities
-    - warranty
 signatures:
-  computationUuid: "e5ada872-aa48-87dd-8ca1-9f64f4e98af8"
+  computationUuid: "ffa48e8c-762b-8071-a8a8-e324ddfc6a54"
   stages:
     - stage: path
-      stageUuid: "0b419253-0c62-8b3e-9e24-895168d4301a"
+      stageUuid: "8ddc625d-d6e0-8202-af98-b9aa6635ecf5"
     - stage: trinity
-      stageUuid: "63ef5170-76e2-83d1-8b32-07b00996330d"
+      stageUuid: "d7efa86d-ff7e-87fd-87b7-3a796366048e"
     - stage: boundary
-      stageUuid: "f0ed8ef8-d28c-8941-bc62-84897b066fc3"
+      stageUuid: "55a521f9-f50a-8134-8571-ae3340cfb63e"
     - stage: links
-      stageUuid: "6f0d1c93-c830-8be1-8cb6-a0b43586c950"
+      stageUuid: "59d770d9-d6fc-8401-92b5-424920b24e34"
     - stage: horo
-      stageUuid: "afcb46e6-65bb-8771-88ca-ca975831e673"
+      stageUuid: "5191c5bd-5cc1-8fc3-a58d-510fb3e779b3"
     - stage: seal
-      stageUuid: "95c1a125-7090-8567-a578-122cc4d57b45"
+      stageUuid: "199f1d3d-e080-8f76-a798-0230703da038"
     - stage: uuid
-      stageUuid: "8acc81c3-4482-8ed5-b1ef-3e6bc7248dda"
+      stageUuid: "c1770072-cf39-8ae1-b96f-6b626309c759"
 version: 2
 ---
 # matter — the engagement (a case is a project is a transaction-chain)

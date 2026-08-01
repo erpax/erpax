@@ -1,68 +1,35 @@
 ---
 name: buy
 description: "Use when reasoning about buy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/buy
-coordinate: buy · 8/crest · 31b01e4a
-contentUuid: "9dd409f1-9a30-50ab-bd0b-b4796862acd2"
-diamondUuid: "01c9a2bc-5814-84b8-b02c-fdba1636f474"
-uuid: "31b01e4a-bc44-8558-938e-6c5c4e74cad0"
-horo: 8
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/buy"
+coordinate: "vocabulary/buy · 1/base · 43a1daba"
+contentUuid: "d87c9960-4ba9-50b5-9a32-caf40a6613e1"
+diamondUuid: "fed898ae-5a88-8eac-9af4-102cd778a1d0"
+uuid: "43a1daba-4cf7-8c8a-954e-1263a27246e1"
+horo: 1
 typography:
-  partition: buy
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "cd2dc25e-eb79-8590-b4a5-3d0abd7e2255"
+  computationUuid: "a914069f-f170-8522-ad04-47c91203955c"
   stages:
     - stage: path
-      stageUuid: "886556de-8052-87d6-a073-90037ace6774"
+      stageUuid: "08334df3-3f1b-8732-a464-c4c100d32f3e"
     - stage: trinity
-      stageUuid: "514eb8fe-0b51-8b48-8244-5a08b8dd28dc"
+      stageUuid: "33580b42-cd9a-8de0-a4b7-26456475b354"
     - stage: boundary
-      stageUuid: "1134535b-5398-86f4-9f03-4a8d10fff8ca"
+      stageUuid: "5122cd01-03a7-8b22-8aa1-6930a21bf378"
     - stage: links
-      stageUuid: "17d3e5cf-ddaf-8548-891e-aa7a0e89297d"
+      stageUuid: "e53892ad-a201-8fb9-af89-83710601a429"
     - stage: horo
-      stageUuid: "d5d3ef00-f554-8c8d-818b-992388bff41c"
+      stageUuid: "fe348621-7912-8d3b-adfd-a12364362923"
     - stage: seal
-      stageUuid: "6c030fbc-550e-8aff-94b3-f24c17636606"
+      stageUuid: "d5aadc47-6e07-86af-a97c-a6c5ab1dc915"
     - stage: uuid
-      stageUuid: "1d6a0261-2037-89c8-bb6b-3e2f93962d15"
+      stageUuid: "e48705d5-4d1d-86d3-b116-4023b282d749"
 version: 2
 ---
 # buy

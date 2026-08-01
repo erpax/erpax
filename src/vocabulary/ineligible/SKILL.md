@@ -1,68 +1,35 @@
 ---
 name: ineligible
 description: "Use when reasoning about ineligible as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/ineligible
-coordinate: ineligible · 1/base · c188d7e3
-contentUuid: "0b582bd7-fb72-5fb0-9717-b44e1f92c4a7"
-diamondUuid: "cb8b1d39-99ea-8b61-8f45-fe9954cdb4d0"
-uuid: "c188d7e3-357b-83fb-b450-7d304e297b30"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - region
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - region
-    - sti
+atomPath: "vocabulary/ineligible"
+coordinate: "vocabulary/ineligible · 2/share · edfe64cf"
+contentUuid: "fefdd33b-7f56-597c-9e4f-6c4a451c9f25"
+diamondUuid: "0e1cf4a2-730a-85ef-be30-27d6c001c2b5"
+uuid: "edfe64cf-9f63-839e-b8d3-bc6121fdab09"
+horo: 2
 typography:
-  partition: ineligible
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - region
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - region
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - region
-    - sti
 signatures:
-  computationUuid: "4de57708-234d-8700-b506-1d1cac84a462"
+  computationUuid: "b9e68a52-8c76-899f-834e-15a19cbe9053"
   stages:
     - stage: path
-      stageUuid: "cade55ee-5abf-82f2-8e0f-2e61802e490c"
+      stageUuid: "a312f4d2-6173-84b9-9102-79958c0c8fa3"
     - stage: trinity
-      stageUuid: "2d251801-4538-8702-8508-91bc74780c3b"
+      stageUuid: "5335c8db-720e-8174-9462-97ad5950047f"
     - stage: boundary
-      stageUuid: "3bceaf35-806b-8285-bead-8a5edf45b9ff"
+      stageUuid: "72eba655-0e00-8ef4-8a2e-e44d91961d9a"
     - stage: links
-      stageUuid: "21cab777-a95b-88f4-8ca2-4d58f4b3de94"
+      stageUuid: "dca34abb-85a5-88fb-99f6-03ad7a6fef2c"
     - stage: horo
-      stageUuid: "3d72ffcb-af1f-8b08-a44f-dfeb32174696"
+      stageUuid: "6300c8ed-4d4d-858b-8faf-d36462cef495"
     - stage: seal
-      stageUuid: "6fe97642-9e69-86a3-aed9-a2a5128cf09d"
+      stageUuid: "0225f9c4-b935-8f08-9f53-f35fd4a25784"
     - stage: uuid
-      stageUuid: "b85cf373-6481-8621-a25c-da3d6ffe263a"
+      stageUuid: "078b74a2-ef8f-80db-b8ec-66de08a18009"
 version: 2
 ---
 # ineligible

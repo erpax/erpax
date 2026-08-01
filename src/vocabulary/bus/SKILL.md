@@ -1,108 +1,35 @@
 ---
 name: bus
 description: "Use when reasoning about bus as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/bus
-coordinate: bus · 4/weave · b3eedd02
-contentUuid: "4d21fd44-a47b-502e-81e0-61fc347b4cb9"
-diamondUuid: "ba760fb3-7197-8727-8d73-fa4fc1e843ab"
-uuid: "b3eedd02-be2e-8ae3-b25c-dfdbf47ea4fb"
-horo: 4
-bonds:
-  in:
-    - arrival
-    - coach
-    - collapse
-    - departure
-    - law
-    - merge
-    - name
-    - number
-    - reservation
-    - station
-    - sti
-    - stop
-    - trip
-  out:
-    - arrival
-    - coach
-    - collapse
-    - departure
-    - law
-    - merge
-    - name
-    - number
-    - reservation
-    - station
-    - sti
-    - stop
-    - trip
+atomPath: "vocabulary/bus"
+coordinate: "vocabulary/bus · 2/share · 4634f83f"
+contentUuid: "5a1701e3-f8a4-5784-9282-6691b418a5ae"
+diamondUuid: "450025f9-0acf-8bc5-a1df-90174ad48168"
+uuid: "4634f83f-d42c-8613-8686-b2c21786c258"
+horo: 2
 typography:
-  partition: bus
+  partition: vocabulary
   bondDegree: 46
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - arrival
-    - coach
-    - collapse
-    - departure
-    - law
-    - merge
-    - name
-    - number
-    - reservation
-    - station
-    - sti
-    - stop
-    - trip
-  matrix:
-    - arrival
-    - coach
-    - collapse
-    - departure
-    - law
-    - merge
-    - name
-    - number
-    - reservation
-    - station
-    - sti
-    - stop
-    - trip
-  backlinks:
-    - arrival
-    - coach
-    - collapse
-    - departure
-    - law
-    - merge
-    - name
-    - number
-    - reservation
-    - station
-    - sti
-    - stop
-    - trip
 signatures:
-  computationUuid: "f6ef353e-2b76-81dd-8f3e-99a6dad26198"
+  computationUuid: "2ccb6fba-e7d8-80f6-877b-eaefb5b408ff"
   stages:
     - stage: path
-      stageUuid: "1636c5b9-8a76-8674-96db-d33018ea164e"
+      stageUuid: "cc0df8f2-721b-8ad4-bbd3-7bee09bb5080"
     - stage: trinity
-      stageUuid: "b91972e3-d33f-8809-8d5a-bd2c57c1e328"
+      stageUuid: "c03b6df7-774b-82bd-84a8-5f74f3fccb52"
     - stage: boundary
-      stageUuid: "eb1df60c-40ff-89e5-9baf-c93fab1fff6d"
+      stageUuid: "7a254437-9eaf-8454-9bb3-4cf73ab87a84"
     - stage: links
-      stageUuid: "fd14763e-3c8b-8329-bdf1-deb5eb079c9d"
+      stageUuid: "bb6d7576-1003-86e2-a119-613039ed3937"
     - stage: horo
-      stageUuid: "b93c9ad2-d867-8df7-948f-2d1565eea12a"
+      stageUuid: "f472a38b-e076-8cae-911c-0be94b3cfc17"
     - stage: seal
-      stageUuid: "e25ddf52-df9e-8acd-aa30-8ea35f4dd665"
+      stageUuid: "78e77cb1-9202-8343-b93a-c6e2480001da"
     - stage: uuid
-      stageUuid: "b2d1915a-ce3f-8ac1-9b7f-9984365f05da"
+      stageUuid: "56247ce2-8517-896c-9953-f63f15d730f2"
 version: 2
 ---
 # bus

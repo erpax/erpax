@@ -2,129 +2,28 @@
 name: tax
 description: "Use when a value bears VAT/GST/sales/withholding tax — a rate on a taxable base, UN/CEFACT 5305 category codes, EN-16931 VAT breakdown, inclusive/exclusive pricing, exemption, reverse-charge, the tax point. The TaxConcern; tax is a cascade-resolved rate on a base, one engine feeding receipt+total+SAF-T, never a baked literal."
 atomPath: tax
-coordinate: tax · 8/crest · 2aea441c
-contentUuid: "d7cfb3af-0949-5e2a-a8db-d33424b20e10"
-diamondUuid: "5fda79b1-59c0-84a2-8b5f-9fcdad44851e"
-uuid: "2aea441c-9d78-8109-bd76-10d9ca252a69"
-horo: 8
-bonds:
-  in:
-    - accounting
-    - added
-    - calculations
-    - currency
-    - customers
-    - deduction
-    - ecommerce
-    - fields
-    - id
-    - identity
-    - included
-    - items
-    - law
-    - lines
-    - party
-    - rate
-    - standard
-    - supto
-    - taxexempt
-    - transaction
-    - versions
-  out:
-    - accounting
-    - added
-    - calculations
-    - currency
-    - customers
-    - deduction
-    - ecommerce
-    - fields
-    - id
-    - identity
-    - included
-    - items
-    - law
-    - lines
-    - party
-    - rate
-    - standard
-    - supto
-    - taxexempt
-    - transaction
-    - versions
+coordinate: "tax · 1/base · aad60228"
+contentUuid: "498f3425-9a37-541b-95f6-f050e7edcb86"
+diamondUuid: "385daa23-8cf3-8203-9f71-3e5f999df08c"
+uuid: "aad60228-38b5-80d5-9e2d-7ed825c02773"
+horo: 1
 typography:
   partition: tax
   bondDegree: 0
-  neighbors: []
 standards:
   - BEPS
+  - "EN-16931`"
   - "IAS-12"
   - "IFRS-16"
+  - "ISO-20022`"
   - "ISO-3166-2"
   - "OECD-Pillar-Two"
   - "OECD-Transfer-Pricing"
   - "UN-CEFACT"
-  - "US-CTA-2021"
   - "US-GAAP"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - currency
-    - fields
-    - identity
-    - law
-    - party
-    - rate
-    - standard
-    - supto
-    - versions
-  matrix:
-    - accounting
-    - added
-    - calculations
-    - currency
-    - customers
-    - deduction
-    - ecommerce
-    - fields
-    - id
-    - identity
-    - included
-    - items
-    - law
-    - lines
-    - party
-    - rate
-    - standard
-    - supto
-    - taxexempt
-    - transaction
-    - versions
-  backlinks:
-    - accounting
-    - added
-    - calculations
-    - currency
-    - customers
-    - deduction
-    - ecommerce
-    - fields
-    - id
-    - identity
-    - included
-    - items
-    - law
-    - lines
-    - party
-    - rate
-    - standard
-    - supto
-    - taxexempt
-    - transaction
-    - versions
 signatures:
-  computationUuid: "17d04744-2341-89b2-b2f2-22bc42a9b292"
+  computationUuid: "963b226f-0cee-89fb-bb26-cf26ab765628"
   stages:
     - stage: path
       stageUuid: "e08a6457-43c3-8a62-946c-60d67ee39f11"
@@ -135,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "d4aaed23-d89d-8b99-9020-0e2eca19faf9"
     - stage: horo
-      stageUuid: "46dce517-2e97-8060-8039-3f30312e75c4"
+      stageUuid: "635f4204-9f82-8584-aa3f-d9abab921905"
     - stage: seal
       stageUuid: "4382795d-df9a-83f5-983b-947549204a10"
     - stage: uuid
-      stageUuid: "e00a4c71-0de8-89bb-9801-89199a420a76"
+      stageUuid: "b2053690-737b-801f-b2fa-f6721e4c74cf"
 version: 2
 ---
 # tax — a levy is a rate on a taxable base, categorized by a standard code

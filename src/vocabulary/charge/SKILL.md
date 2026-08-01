@@ -1,78 +1,35 @@
 ---
 name: charge
 description: "Use when reasoning about charge as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/charge
-coordinate: charge · 4/weave · 1ce2ffdd
-contentUuid: "15c8c9a4-2950-5514-86ff-76b54de546f7"
-diamondUuid: "66f2ceae-5434-8a77-a806-d1d35f714b02"
-uuid: "1ce2ffdd-302a-8cb5-8d5e-b570b8914682"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - delivery
-    - law
-    - merge
-    - payment
-    - specification
-    - sti
-  out:
-    - collapse
-    - delivery
-    - law
-    - merge
-    - payment
-    - specification
-    - sti
+atomPath: "vocabulary/charge"
+coordinate: "vocabulary/charge · 1/base · 49cbbf0d"
+contentUuid: "546a342a-c90f-54da-b6eb-ec490cf257fc"
+diamondUuid: "3c9308b9-bfb7-8d8e-aa77-687b2e37d6b7"
+uuid: "49cbbf0d-94aa-83f0-8f0b-9a1cef7b6b7e"
+horo: 1
 typography:
-  partition: charge
+  partition: vocabulary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - delivery
-    - law
-    - merge
-    - payment
-    - specification
-    - sti
-  matrix:
-    - collapse
-    - delivery
-    - law
-    - merge
-    - payment
-    - specification
-    - sti
-  backlinks:
-    - collapse
-    - delivery
-    - law
-    - merge
-    - payment
-    - specification
-    - sti
 signatures:
-  computationUuid: "3854ec09-347d-826a-bd32-81013cd674f9"
+  computationUuid: "36e2f47a-d99c-84a0-bb1f-0032acff0eec"
   stages:
     - stage: path
-      stageUuid: "6c0c4716-43ea-8925-beaf-a2c28699d858"
+      stageUuid: "57ab9dde-3fbd-88c1-815c-14ac10968652"
     - stage: trinity
-      stageUuid: "0f53a81d-4cca-849c-8a1a-b4a8bf40d860"
+      stageUuid: "f01d17c3-fa63-8409-bd70-f52af3c6c376"
     - stage: boundary
-      stageUuid: "5c18def2-980d-88d4-b646-fe3e9cf6d530"
+      stageUuid: "d2796ea8-5bb9-8862-bbb0-81c70e2410e3"
     - stage: links
-      stageUuid: "8f5ff316-61da-814c-b4bb-d0f16b62c361"
+      stageUuid: "0585ea03-d8a8-8068-865f-93feef77f521"
     - stage: horo
-      stageUuid: "9a555066-277f-82ec-813d-1630a1e1e8c4"
+      stageUuid: "feb08bb1-327f-8932-b1fd-31e32d4b3bbf"
     - stage: seal
-      stageUuid: "4ca8dfc7-e8af-8b44-bb50-92624c4696a3"
+      stageUuid: "fa255200-d672-8499-a1cf-6ae4c0fdeb63"
     - stage: uuid
-      stageUuid: "5971819d-fbdb-893b-8671-17c6b256ddb4"
+      stageUuid: "59027556-84cb-845c-aae6-3a29caaa69de"
 version: 2
 ---
 # charge

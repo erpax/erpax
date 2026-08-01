@@ -2,38 +2,16 @@
 name: bookings
 description: "Use when recording or querying reservation events — hotel check-in/out, vehicle rental, equipment hire, meeting-room holds, field-service slots — against a bookable-resource; IFRS-15 over-time / point-in-time revenue recognition, cancellation policy, deposit, invoice linkage, multi-channel (direct/OTA/GDS). The canonical reservation primitive."
 atomPath: "bookable/resources/bookings"
-coordinate: "bookable/resources/bookings · 8/crest · e20e7873"
-contentUuid: "cd0b2bd2-f9d7-5605-81d3-816c7d77b60d"
-diamondUuid: "54774567-5629-87d3-8831-b9678e05d9b6"
-uuid: "e20e7873-4c3a-8f47-bee4-e71e0d0deab3"
-horo: 8
-bonds:
-  in:
-    - accounting
-    - customers
-    - employees
-    - entries
-    - invoices
-    - law
-    - resources
-    - schedule
-  out:
-    - accounting
-    - customers
-    - employees
-    - entries
-    - invoices
-    - law
-    - resources
-    - schedule
+coordinate: "bookable/resources/bookings · 2/share · 20076ed2"
+contentUuid: "a2335975-e4a0-5557-8276-24811fdf6f4f"
+diamondUuid: "3a95c217-ace2-8386-b630-86086b98e9d1"
+uuid: "20076ed2-24f7-85e2-8f50-3f04e4527bc5"
+horo: 2
 typography:
   partition: bookable
   bondDegree: 26
-  neighbors: []
 standards:
   - "COSO-ERM-2017"
-  - "EU-2017/1132"
-  - "EU-2017/828"
   - "GDPR Art.6(1)(b) lawful-basis-contract guest-data"
   - "HTNG-2017 hotel-technology-next-generation"
   - "IFRS IFRS-15 §35 over-time-recognition (multi-night stay)"
@@ -54,35 +32,8 @@ standards:
   - "rfc-5545 icalendar-rrule recurring-bookings`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - customers
-    - employees
-    - entries
-    - invoices
-    - law
-    - resources
-  matrix:
-    - accounting
-    - customers
-    - employees
-    - entries
-    - invoices
-    - law
-    - resources
-    - schedule
-  backlinks:
-    - accounting
-    - customers
-    - employees
-    - entries
-    - invoices
-    - law
-    - resources
-    - schedule
 signatures:
-  computationUuid: "5e9e302c-ef39-8446-90dd-e2b9638b0e22"
+  computationUuid: "81e5bf35-22f4-8b8a-a95f-0430a58c0c75"
   stages:
     - stage: path
       stageUuid: "6405ba5a-73fd-84c1-ac74-c283390d3803"
@@ -93,11 +44,11 @@ signatures:
     - stage: links
       stageUuid: "6aebc6e6-cb9d-8ffe-afac-dcbe690a58dc"
     - stage: horo
-      stageUuid: "da4f9cc3-670a-8b84-a9a2-47474db6a026"
+      stageUuid: "3262b8a5-3de7-8d1f-9cb3-259d9c9636e0"
     - stage: seal
       stageUuid: "e8318bfb-c6b2-883a-bc4e-13718f0a7ba9"
     - stage: uuid
-      stageUuid: "e42d5162-54c7-8932-86d9-293d08bd81b0"
+      stageUuid: "34ecd2cf-b2c0-8f7d-8cb3-5cbbcf03e4d4"
 version: 2
 ---
 # bookings

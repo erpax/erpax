@@ -2,207 +2,19 @@
 name: wave
 description: "Use when describing a batch of features added in one development breath before they are collided — a wave rides the horo sequence, raising entropy first so the later collide can DRY it back to the dense core."
 atomPath: wave
-coordinate: "wave · 7/descent · debefc5a"
-contentUuid: "12319ce9-ec77-5047-acf7-b293911bc1cd"
-diamondUuid: "c5b2a927-fac0-8559-82f9-ac7cea454867"
-uuid: "debefc5a-ef19-8e2e-8a75-3c7e9982c0a2"
-horo: 7
-bonds:
-  in:
-    - agent
-    - apply
-    - audit
-    - barrier
-    - body
-    - breath
-    - chat
-    - collapse
-    - comms
-    - confirm
-    - cost
-    - decoherence
-    - development
-    - duality
-    - entropy
-    - feature
-    - flow
-    - horo
-    - interference
-    - law
-    - leap
-    - lung
-    - matrix
-    - merge
-    - photon
-    - quantum
-    - realtime
-    - receipt
-    - research
-    - sequence
-    - spectrum
-    - superposition
-    - taichi
-    - tamper
-    - team
-    - trinity
-    - uncertainty
-    - uuid
-  out:
-    - agent
-    - apply
-    - audit
-    - barrier
-    - body
-    - breath
-    - chat
-    - collapse
-    - comms
-    - confirm
-    - cost
-    - decoherence
-    - development
-    - duality
-    - entropy
-    - feature
-    - flow
-    - horo
-    - interference
-    - law
-    - leap
-    - lung
-    - matrix
-    - merge
-    - photon
-    - quantum
-    - realtime
-    - receipt
-    - research
-    - sequence
-    - spectrum
-    - superposition
-    - taichi
-    - tamper
-    - team
-    - trinity
-    - uncertainty
-    - uuid
+coordinate: "wave · 4/weave · 65c5ae1a"
+contentUuid: "51ebbc60-a886-5076-98b9-bcc03c01cc4d"
+diamondUuid: "6808fbf3-f268-8268-9ad8-9e7e70f3f937"
+uuid: "65c5ae1a-a14c-82d4-b738-8c53a6c6d138"
+horo: 4
 typography:
   partition: wave
   bondDegree: 130
-  neighbors:
-    - agent
-    - "analytics/max-tamper-cost"
-    - aura
-    - diamond
-    - hallucination
-    - purity
 standards:
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring"
 bindings: []
-neighbors:
-  wikilink:
-    - agent
-    - apply
-    - breath
-    - chat
-    - collapse
-    - comms
-    - confirm
-    - development
-    - duality
-    - entropy
-    - feature
-    - flow
-    - horo
-    - law
-    - matrix
-    - merge
-    - realtime
-    - receipt
-    - sequence
-    - team
-    - trinity
-    - uuid
-  matrix:
-    - agent
-    - apply
-    - audit
-    - barrier
-    - body
-    - breath
-    - chat
-    - collapse
-    - comms
-    - confirm
-    - cost
-    - decoherence
-    - development
-    - duality
-    - entropy
-    - feature
-    - flow
-    - horo
-    - interference
-    - law
-    - leap
-    - lung
-    - matrix
-    - merge
-    - photon
-    - quantum
-    - realtime
-    - receipt
-    - research
-    - sequence
-    - spectrum
-    - superposition
-    - taichi
-    - tamper
-    - team
-    - trinity
-    - uncertainty
-    - uuid
-  backlinks:
-    - agent
-    - apply
-    - audit
-    - barrier
-    - body
-    - breath
-    - chat
-    - collapse
-    - comms
-    - confirm
-    - cost
-    - decoherence
-    - development
-    - duality
-    - entropy
-    - feature
-    - flow
-    - horo
-    - interference
-    - law
-    - leap
-    - lung
-    - matrix
-    - merge
-    - photon
-    - quantum
-    - realtime
-    - receipt
-    - research
-    - sequence
-    - spectrum
-    - superposition
-    - taichi
-    - tamper
-    - team
-    - trinity
-    - uncertainty
-    - uuid
 signatures:
-  computationUuid: "9f98a781-fa12-89fd-920c-7f3fbe7bdc32"
+  computationUuid: "c8e8735e-d233-8b0e-a9d4-46a097e7bee0"
   stages:
     - stage: path
       stageUuid: "5844e4f3-8340-8b53-9573-4376c6b7f565"
@@ -213,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a7c8e844-549e-8876-bf35-f6f5168f5a1e"
     - stage: horo
-      stageUuid: "99d8ea08-a570-8692-a6cf-20e22d7136b8"
+      stageUuid: "2149f5e5-9c25-81fd-8f40-0b6d9a3db02c"
     - stage: seal
       stageUuid: "41997baf-90c7-8aee-b981-1bd22340a1dd"
     - stage: uuid
-      stageUuid: "0c594073-227b-8ec6-964a-8bd5c48d0636"
+      stageUuid: "105ba0db-d7d7-8e64-b12a-8855403476eb"
 version: 2
 ---
 # wave — one breath of features, added then collided

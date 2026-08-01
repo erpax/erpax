@@ -1,189 +1,34 @@
 ---
 name: history
 description: "Use when reasoning about git history as the akashic record's time axis — a content-addressed Merkle DAG of commits the agents read as a knowledge source AND another independent tamper-evidence level (forging the past = rewriting every commit on every clone). Wired in, it increases tamper cost and costs nothing to keep."
-atomPath: vocabulary/history
-coordinate: history · 8/crest · 729c60e0
-contentUuid: "8ab943f5-2376-574d-8ade-1ad683df99c6"
-diamondUuid: "1cbb8345-a74d-87a9-b468-46dac5fe283e"
-uuid: "729c60e0-e3bf-89f1-8157-6e8906dd2271"
-horo: 8
-bonds:
-  in:
-    - akashic
-    - anchor
-    - angel
-    - begin
-    - cases
-    - chat
-    - coil
-    - competition
-    - contribution
-    - cost
-    - end
-    - fractal
-    - identity
-    - law
-    - lineage
-    - merge
-    - patent
-    - peace
-    - power
-    - profane
-    - projection
-    - proof
-    - receipt
-    - research
-    - sacred
-    - science
-    - self
-    - sequence
-    - shred
-    - society
-    - standard
-    - sufficient
-    - voting
-  out:
-    - akashic
-    - anchor
-    - angel
-    - begin
-    - cases
-    - chat
-    - coil
-    - competition
-    - contribution
-    - cost
-    - end
-    - fractal
-    - identity
-    - law
-    - lineage
-    - merge
-    - patent
-    - peace
-    - power
-    - profane
-    - projection
-    - proof
-    - receipt
-    - research
-    - sacred
-    - science
-    - self
-    - sequence
-    - shred
-    - society
-    - standard
-    - sufficient
-    - voting
+atomPath: "vocabulary/history"
+coordinate: "vocabulary/history · 1/base · 9c82e983"
+contentUuid: "996c97af-1135-5241-9662-78f3a6f8680f"
+diamondUuid: "f9ba9a06-45d8-8000-ab4e-bdef6aabb6a8"
+uuid: "9c82e983-10e7-80fe-8b1b-78a06696e508"
+horo: 1
 typography:
-  partition: history
-  bondDegree: 102
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 100
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - begin
-    - chat
-    - coil
-    - cost
-    - end
-    - fractal
-    - identity
-    - law
-    - merge
-    - proof
-    - self
-    - sequence
-    - society
-    - standard
-  matrix:
-    - akashic
-    - anchor
-    - angel
-    - begin
-    - cases
-    - chat
-    - coil
-    - competition
-    - contribution
-    - cost
-    - end
-    - fractal
-    - identity
-    - law
-    - lineage
-    - merge
-    - patent
-    - peace
-    - power
-    - profane
-    - projection
-    - proof
-    - receipt
-    - research
-    - sacred
-    - science
-    - self
-    - sequence
-    - shred
-    - society
-    - standard
-    - sufficient
-    - voting
-  backlinks:
-    - akashic
-    - anchor
-    - angel
-    - begin
-    - cases
-    - chat
-    - coil
-    - competition
-    - contribution
-    - cost
-    - end
-    - fractal
-    - identity
-    - law
-    - lineage
-    - merge
-    - patent
-    - peace
-    - power
-    - profane
-    - projection
-    - proof
-    - receipt
-    - research
-    - sacred
-    - science
-    - self
-    - sequence
-    - shred
-    - society
-    - standard
-    - sufficient
-    - voting
 signatures:
-  computationUuid: "a910ca8c-18d1-8bc5-9e8a-d395e5f995b8"
+  computationUuid: "e394a27c-6df5-83c6-999b-3d5b8cb27fed"
   stages:
     - stage: path
-      stageUuid: "14979057-0950-8de9-b05d-a7868bb8ce96"
+      stageUuid: "7a56b746-a6c8-8c6f-9541-ffd9adaa1bf2"
     - stage: trinity
-      stageUuid: "c9843bf4-fbd3-8c8d-891e-b8ba08c6a032"
+      stageUuid: "a8ff91c7-7f17-8bfc-b7d4-2dd25d9c98ae"
     - stage: boundary
-      stageUuid: "6d5f935b-94f1-81dd-94eb-93c28c7f1368"
+      stageUuid: "55fcff75-8ea2-8570-afd5-d93e4acdc4b5"
     - stage: links
-      stageUuid: "832704a0-75e5-8466-aae7-611256e98163"
+      stageUuid: "9eb11879-1f96-87c3-94e4-7b576578e0e7"
     - stage: horo
-      stageUuid: "a2ad6d80-8fbe-811e-978e-379de2ddefb5"
+      stageUuid: "bd9c9019-d58e-845a-94e7-d279b1c3ad12"
     - stage: seal
-      stageUuid: "bbdf9bc5-ff95-8525-beec-2510d17996ef"
+      stageUuid: "3589ef65-c525-898e-b08e-948624e8e989"
     - stage: uuid
-      stageUuid: "3899c8c8-5f97-828a-acc1-1528ec362a7b"
+      stageUuid: "2c8afac0-193d-8010-80b5-4f74eedcd8c5"
 version: 2
 ---
 # history — the content-addressed timeline

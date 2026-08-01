@@ -2,28 +2,14 @@
 name: reports
 description: "Use when submitting or tracking statutory filings — 10-K/20-F, 10-Q, SOX attestations, annual compliance reports — per legal entity per jurisdiction — filing status, due dates, regulator feedback, and linked audit findings. The regulatory-filing register."
 atomPath: "legal/entities/regulatory/reports"
-coordinate: "legal/entities/regulatory/reports · 8/crest · c466ff24"
-contentUuid: "c0d16ab8-9ae4-5cb4-beef-c52318f214e1"
-diamondUuid: "1e47892c-d16a-8927-ba26-a62d85f9ac7f"
-uuid: "c466ff24-6cba-86c2-a73a-855fdac96155"
-horo: 8
-bonds:
-  in:
-    - accounting
-    - balance
-    - debit
-    - law
-    - path
-  out:
-    - accounting
-    - balance
-    - debit
-    - law
-    - path
+coordinate: "legal/entities/regulatory/reports · 5/round · ea63c8fb"
+contentUuid: "a7813f33-3008-5d44-9b21-833a5b6cf968"
+diamondUuid: "2c652548-fa82-8f72-a990-cfdb037e092c"
+uuid: "ea63c8fb-6d16-8798-8336-8d78cf5013e5"
+horo: 5
 typography:
   partition: legal
   bondDegree: 28
-  neighbors: []
 standards:
   - "SAF-T"
   - "SAF-T OECD standard-audit-file-tax"
@@ -31,22 +17,8 @@ standards:
   - "XBRL business-reporting"
   - "local-regulatory-filing"
 bindings: []
-neighbors:
-  wikilink: []
-  matrix:
-    - accounting
-    - balance
-    - debit
-    - law
-    - path
-  backlinks:
-    - accounting
-    - balance
-    - debit
-    - law
-    - path
 signatures:
-  computationUuid: "2efcbca0-285c-833a-b74e-1595a1236885"
+  computationUuid: "5cc06074-83d6-8ecc-adcc-5ab9a3582390"
   stages:
     - stage: path
       stageUuid: "763d0e92-636c-8473-bf9f-47178fee4ad5"
@@ -57,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "6eccfbb3-f25c-825e-a1c4-b2d315daaaf6"
     - stage: horo
-      stageUuid: "c29b76a0-5d99-880d-8754-8828c9b54baa"
+      stageUuid: "12bc5783-bd72-85db-b589-e823e94b14c1"
     - stage: seal
       stageUuid: "485f02ef-b0d4-8724-a33a-89669e61e556"
     - stage: uuid
-      stageUuid: "f297c5df-fec1-843b-9685-77ec15690623"
+      stageUuid: "1e69ad8c-57b0-8778-9b29-82594ee5bdc5"
 version: 2
 ---
 # regulatory-reports

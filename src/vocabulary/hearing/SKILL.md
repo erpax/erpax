@@ -1,63 +1,35 @@
 ---
 name: hearing
 description: "Use when reasoning about hearing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/hearing
-coordinate: hearing · 7/descent · 2e5a0495
-contentUuid: "d7f16a93-3403-5190-8b97-4730f1f539cf"
-diamondUuid: "781bc4a2-43d4-802e-b301-28cd27301054"
-uuid: "2e5a0495-2f33-8db4-ae7e-fb8dcacf8128"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/hearing"
+coordinate: "vocabulary/hearing · 5/round · 978f5a12"
+contentUuid: "0fd66e5f-156f-5f34-a3b6-f9ff348660e4"
+diamondUuid: "9bad4926-9fee-8cbd-90c0-1c493b3fbfa5"
+uuid: "978f5a12-c63b-8d55-a15f-d4b290866767"
+horo: 5
 typography:
-  partition: hearing
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "d596d686-1e74-8eea-bd49-b62a77e86813"
+  computationUuid: "376b6339-d600-8b41-9932-3ad8f7b015b9"
   stages:
     - stage: path
-      stageUuid: "60c7cb5f-71e4-803e-ba00-69ba9f062ca0"
+      stageUuid: "d2a3e294-86e8-8cb0-86cc-16c118af1f24"
     - stage: trinity
-      stageUuid: "bfc74662-6477-8ebb-859f-068aade5ca7a"
+      stageUuid: "083cd56b-358f-8d15-bc1e-3ed8cb3d99a9"
     - stage: boundary
-      stageUuid: "bd59dd38-6341-8da2-b1fd-e477fd8627fc"
+      stageUuid: "115ca4d4-367b-85fa-9e00-9c9d0954f288"
     - stage: links
-      stageUuid: "2627e708-8651-8d62-99f4-c361fc818bfc"
+      stageUuid: "9a79c7f4-9e03-830f-8b67-0a2687f39460"
     - stage: horo
-      stageUuid: "3f5e7da1-c96b-8ac0-a90b-ad6d5cc4263b"
+      stageUuid: "b1bb0379-45a6-869a-95f3-1a7c0be4d196"
     - stage: seal
-      stageUuid: "0e26f67e-4607-88c6-9b63-d257eeeaf432"
+      stageUuid: "f046cdd4-fdee-80af-a6cc-055307624fec"
     - stage: uuid
-      stageUuid: "a00f9c80-245b-8899-8094-e6b971e0af74"
+      stageUuid: "266521e0-c620-8f20-b172-521414b331f6"
 version: 2
 ---
 # hearing

@@ -2,52 +2,19 @@
 name: worst
 description: "Use when reasoning about worst as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: worst
-coordinate: worst · 5/round · 46b2ba37
-contentUuid: "df110e98-b680-51bf-a8a0-e87449a9926f"
-diamondUuid: "5fd84b09-2711-86d6-b839-96b13c43dad0"
-uuid: "46b2ba37-a11e-8515-922f-2601f65b4488"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - rating
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - rating
-    - sti
+coordinate: "worst · 4/weave · 0c56936d"
+contentUuid: "34e47987-af07-58d6-8035-829fe3a0c9d3"
+diamondUuid: "2f0d2dcc-337a-8991-8127-8ffad53b55c5"
+uuid: "0c56936d-e25b-8fd7-8685-1976d96dd465"
+horo: 4
 typography:
   partition: worst
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - rating
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - rating
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - rating
-    - sti
 signatures:
-  computationUuid: "275d6bd7-8a8d-8373-ab09-922d7b8be6fc"
+  computationUuid: "4f32d4cb-543c-887b-832d-dd5799853fd3"
   stages:
     - stage: path
       stageUuid: "e3ea6f04-6fbe-8f13-92f2-cb68710b4ba2"
@@ -58,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "afd7a91c-72c9-88be-8a45-8d1688108b58"
     - stage: horo
-      stageUuid: "13d308b6-3820-8f98-aac5-41d53d26eb3e"
+      stageUuid: "f83818bd-164c-8e79-b1ef-506585fa4107"
     - stage: seal
-      stageUuid: "a0ad5781-88c4-8d1c-9b24-969c46255a2f"
+      stageUuid: "6b736b26-4d96-8459-9227-057c0e798687"
     - stage: uuid
-      stageUuid: "3ce920cc-a058-8903-a26e-5b8b53cbe8bf"
+      stageUuid: "7cbc2062-0425-8637-b55e-cc29e6f466a2"
 version: 2
 ---
 # worst

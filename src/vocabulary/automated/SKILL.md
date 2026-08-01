@@ -1,68 +1,35 @@
 ---
 name: automated
 description: "Use when reasoning about automated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/automated
-coordinate: automated · 7/descent · 6e9d782d
-contentUuid: "eb869fba-100f-51be-ab00-db683aafcd8f"
-diamondUuid: "2956ba39-c6ee-8671-9ea5-0e43fe893fc3"
-uuid: "6e9d782d-d9c1-87bc-9bbd-bdba1adb0a2b"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - teller
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - teller
+atomPath: "vocabulary/automated"
+coordinate: "vocabulary/automated · 4/weave · deae4a05"
+contentUuid: "1352887e-6377-5093-89f8-4ab3bc4acaf6"
+diamondUuid: "2ff4d686-2b3e-80d2-8bb5-566e9f2fdfa2"
+uuid: "deae4a05-0b70-821b-aa71-0ae419fb4981"
+horo: 4
 typography:
-  partition: automated
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - teller
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - teller
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - teller
 signatures:
-  computationUuid: "9e8e03d5-eb06-867d-8219-bedc6e95cb55"
+  computationUuid: "7d9e966a-214f-870c-8c27-5ef6f18c2018"
   stages:
     - stage: path
-      stageUuid: "8a9283bd-3c55-8e53-9bd5-a15711da7d2e"
+      stageUuid: "21799834-9854-8f6c-a202-ee7519119999"
     - stage: trinity
-      stageUuid: "17e043a4-eb8f-8f96-8fca-b6bac90ac3d5"
+      stageUuid: "6b77202c-9b54-8eca-aa56-ebf872846953"
     - stage: boundary
-      stageUuid: "dc43be49-e3b6-8aec-a3b3-5ae2ea3ed057"
+      stageUuid: "9256833a-1890-870a-9f90-c6381c3bf14b"
     - stage: links
-      stageUuid: "f0e871e0-9a5a-818e-8731-5ef8b2301063"
+      stageUuid: "c39a96c6-7c6c-86e2-b5e9-1d3652e6b314"
     - stage: horo
-      stageUuid: "e3905f64-1039-8ac7-a152-3ef0ab53ddc9"
+      stageUuid: "fdc03702-3c7b-8566-944d-e01f5a3f5c70"
     - stage: seal
-      stageUuid: "d29ab174-5698-8066-88c7-a71a7cefc5a9"
+      stageUuid: "99883753-5415-82fe-bc9d-beec2c42192e"
     - stage: uuid
-      stageUuid: "54349243-6094-8f97-8a08-3151221e8192"
+      stageUuid: "9c1a5e24-6de4-8f9b-aba9-8939700d4af9"
 version: 2
 ---
 # automated

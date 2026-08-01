@@ -1,76 +1,19 @@
 ---
 name: crest
-description: "Use when reasoning about the peak position of the horo state ring — digit 8, \\\\\\\"the ascent peaks\\\\\\\", the high step where a flow is fully built and architectures merge (packed, assembled, ready). Top of the ascent arc; nested under horo."
+description: "Use when reasoning about the peak position of the horo state ring — digit 8, \\\\\\\\\\\\\\\"the ascent peaks\\\\\\\\\\\\\\\", the high step where a flow is fully built and architectures merge (packed, assembled, ready). Top of the ascent arc; nested under horo."
 atomPath: "horo/crest"
-coordinate: "horo/crest · 5/round · 29d057ad"
-contentUuid: "0a3e45b8-ff51-5f23-bcf0-c6df396cf4be"
-diamondUuid: "838505ef-7542-8bad-9b0d-b1255b4053f2"
-uuid: "29d057ad-03f7-837c-91d7-384aa54f059a"
-horo: 5
-bonds:
-  in:
-    - coil
-    - descent
-    - horo
-    - law
-    - merge
-    - notes
-    - queries
-    - sequence
-    - tags
-    - weave
-  out:
-    - coil
-    - descent
-    - horo
-    - law
-    - merge
-    - notes
-    - queries
-    - sequence
-    - tags
-    - weave
+coordinate: "horo/crest · 7/descent · 7786e903"
+contentUuid: "39f32d0d-641f-5a7d-9318-c6a2f010a2dc"
+diamondUuid: "22891f67-bb68-8315-b6a6-787ea30f6756"
+uuid: "7786e903-4e7f-82e7-99a5-a73068749bd5"
+horo: 7
 typography:
   partition: horo
   bondDegree: 33
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - coil
-    - descent
-    - horo
-    - law
-    - merge
-    - queries
-    - sequence
-    - tags
-    - weave
-  matrix:
-    - coil
-    - descent
-    - horo
-    - law
-    - merge
-    - notes
-    - queries
-    - sequence
-    - tags
-    - weave
-  backlinks:
-    - coil
-    - descent
-    - horo
-    - law
-    - merge
-    - notes
-    - queries
-    - sequence
-    - tags
-    - weave
 signatures:
-  computationUuid: "29584770-be05-8207-8ee7-3bb62dd2b632"
+  computationUuid: "1075bf2c-1513-8c5a-8a2d-17cc5c559564"
   stages:
     - stage: path
       stageUuid: "4dfa50ec-9113-8c3e-a35b-2a0dabd85cc8"
@@ -81,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7e3026b7-e106-8a7b-9d44-6ade2921f4aa"
     - stage: horo
-      stageUuid: "e324935a-2749-8c0c-bbc2-1bbe6d1d0ddb"
+      stageUuid: "71af50bf-ef5a-8330-90b7-b13f9d2c9b95"
     - stage: seal
       stageUuid: "36f55682-f7be-871a-9c7a-d8076ac4d699"
     - stage: uuid
-      stageUuid: "799af309-f785-881b-bbc6-77163e39d73f"
+      stageUuid: "59b808f5-89b0-8e23-bfff-24a7f79ca2d2"
 version: 2
 ---
 # crest — horo position 8 (the ascent peaks)

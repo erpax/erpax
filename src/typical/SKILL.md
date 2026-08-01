@@ -2,72 +2,19 @@
 name: typical
 description: "Use when reasoning about typical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: typical
-coordinate: typical · 7/descent · 59ddbf3c
-contentUuid: "b287661f-fb1f-55f1-9f4e-8f47b9291dac"
-diamondUuid: "353ab17e-1ec6-8a98-b4a5-b6495371af84"
-uuid: "59ddbf3c-1644-896d-a9cb-27d399bf0049"
-horo: 7
-bonds:
-  in:
-    - age
-    - collapse
-    - credits
-    - law
-    - merge
-    - range
-    - sti
-    - term
-    - test
-  out:
-    - age
-    - collapse
-    - credits
-    - law
-    - merge
-    - range
-    - sti
-    - term
-    - test
+coordinate: "typical · 5/round · 7d886258"
+contentUuid: "45fa267c-3f8b-523c-b329-c692d2cb8ed8"
+diamondUuid: "5d35ec4e-db6d-83d4-b39e-78e409b8bff6"
+uuid: "7d886258-16d1-83cf-bcf6-a0cb1b393745"
+horo: 5
 typography:
   partition: typical
   bondDegree: 31
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - age
-    - collapse
-    - credits
-    - law
-    - merge
-    - range
-    - sti
-    - term
-    - test
-  matrix:
-    - age
-    - collapse
-    - credits
-    - law
-    - merge
-    - range
-    - sti
-    - term
-    - test
-  backlinks:
-    - age
-    - collapse
-    - credits
-    - law
-    - merge
-    - range
-    - sti
-    - term
-    - test
 signatures:
-  computationUuid: "63ee2e14-f879-8e1b-bea0-ba40382db138"
+  computationUuid: "a2619655-be6d-8ff8-9673-0538a42986ad"
   stages:
     - stage: path
       stageUuid: "9e6d783b-2f38-8a05-862f-bdebe37f78b4"
@@ -78,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1f8432fd-cf16-8e17-a34b-61140a4e1deb"
     - stage: horo
-      stageUuid: "d1a001ab-a6f1-8e32-b523-158f930b9a20"
+      stageUuid: "962fa313-bf78-88b6-9f29-3bcdf5c13be1"
     - stage: seal
-      stageUuid: "6cdfd77f-d3d5-8daf-9e04-c58114ffbe16"
+      stageUuid: "3b1731b0-1609-84af-bfc3-d600278070dd"
     - stage: uuid
-      stageUuid: "65160773-e162-8dc7-b1bb-4bac26c05a7a"
+      stageUuid: "31a4c2cd-a6c4-84b4-82d6-a5f9cd760eae"
 version: 2
 ---
 # typical

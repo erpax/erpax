@@ -2,78 +2,21 @@
 name: post
 description: "Use when reasoning about post as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: post
-coordinate: post · 5/round · c831806a
-contentUuid: "2b600686-c86a-5929-bbe0-ae9bd0be4f70"
-diamondUuid: "46bf13c9-c3dd-88ed-91cb-5ef3657a3c54"
-uuid: "c831806a-4722-8e93-a2fb-c303ce980d84"
-horo: 5
-bonds:
-  in:
-    - blog
-    - box
-    - collapse
-    - law
-    - merge
-    - number
-    - office
-    - op
-    - sti
-    - tweet
-  out:
-    - blog
-    - box
-    - collapse
-    - law
-    - merge
-    - number
-    - office
-    - op
-    - sti
-    - tweet
+coordinate: "post · 2/share · b020ebb1"
+contentUuid: "570e9b0b-e702-5482-9bb9-e04daef20981"
+diamondUuid: "c2dfadb8-d6f6-83a9-b98d-e3ff2fa6d5c2"
+uuid: "b020ebb1-0636-853d-a740-9d9a057e9fb9"
+horo: 2
 typography:
   partition: post
   bondDegree: 0
-  neighbors: []
 standards:
   - "IAS-1"
   - "IAS-34"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - blog
-    - box
-    - collapse
-    - law
-    - merge
-    - number
-    - office
-    - op
-    - sti
-  matrix:
-    - blog
-    - box
-    - collapse
-    - law
-    - merge
-    - number
-    - office
-    - op
-    - sti
-    - tweet
-  backlinks:
-    - blog
-    - box
-    - collapse
-    - law
-    - merge
-    - number
-    - office
-    - op
-    - sti
-    - tweet
 signatures:
-  computationUuid: "ba2ed13c-788a-82de-9897-e719d632fc4a"
+  computationUuid: "ad233233-fc43-8726-a4d3-0ddad2136ecf"
   stages:
     - stage: path
       stageUuid: "68b46ccf-8e11-8ada-988c-7cda11c1155c"
@@ -84,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "b8124bba-3cc0-8b56-8f8d-5d808d501800"
     - stage: horo
-      stageUuid: "31cc21b2-cd45-86cb-a4fd-7a1b39498e80"
+      stageUuid: "8a40588d-51b9-81b9-ab7f-f915728b766c"
     - stage: seal
       stageUuid: "832107e2-80a3-8efc-a913-d563a6acc080"
     - stage: uuid
-      stageUuid: "a6bfc3eb-d6ba-829b-b68b-d12034f1110b"
+      stageUuid: "ecc4afe7-8f5e-8bd1-91ee-781a798e9d8e"
 version: 2
 ---
 # post

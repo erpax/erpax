@@ -1,78 +1,35 @@
 ---
 name: boarding
 description: "Use when reasoning about boarding as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/boarding
-coordinate: boarding · 5/round · 023088b7
-contentUuid: "ee685e15-e5dd-5453-ae04-36698173264f"
-diamondUuid: "9ee0005e-cfb9-84b1-85a0-5b03b63a79e7"
-uuid: "023088b7-0dbf-855c-b36f-2f33622de072"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - group
-    - law
-    - merge
-    - policy
-    - sti
-    - type
-  out:
-    - collapse
-    - group
-    - law
-    - merge
-    - policy
-    - sti
-    - type
+atomPath: "vocabulary/boarding"
+coordinate: "vocabulary/boarding · 8/crest · 59a1404b"
+contentUuid: "73a0b731-15c7-596d-9674-3dd633ea9f5d"
+diamondUuid: "88ccefcc-2ff9-84a1-b6da-f67455bff313"
+uuid: "59a1404b-d551-8a2c-a2d4-f1cb1f2d49df"
+horo: 8
 typography:
-  partition: boarding
-  bondDegree: 23
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 25
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - group
-    - law
-    - merge
-    - policy
-    - sti
-    - type
-  matrix:
-    - collapse
-    - group
-    - law
-    - merge
-    - policy
-    - sti
-    - type
-  backlinks:
-    - collapse
-    - group
-    - law
-    - merge
-    - policy
-    - sti
-    - type
 signatures:
-  computationUuid: "ecbb7e0d-54b8-840a-863c-0833af70e341"
+  computationUuid: "43d5dfe5-8584-889f-8d1a-cb865fb91f49"
   stages:
     - stage: path
-      stageUuid: "73777c15-458e-83cd-afca-d4f2d6119b1d"
+      stageUuid: "07a04cb9-92d6-8283-89bb-cc25f9d73d61"
     - stage: trinity
-      stageUuid: "972fdb52-a7f0-8892-b79d-409768d0de29"
+      stageUuid: "6081063f-1955-83c7-8f61-4a3d3b840489"
     - stage: boundary
-      stageUuid: "89e96dfb-ecba-8436-902b-bca29799229d"
+      stageUuid: "87dd71db-2c8b-82f7-b68e-50d18f3029fd"
     - stage: links
-      stageUuid: "067329e9-978f-8ade-8c68-9bf8784c542c"
+      stageUuid: "7218411a-db33-8adb-9be2-80e211f3f198"
     - stage: horo
-      stageUuid: "49a82c53-a271-8c08-98c1-a4e91ce01efe"
+      stageUuid: "5cfa372e-5f7e-85ec-a1f6-ae3d20f89621"
     - stage: seal
-      stageUuid: "c6f56b7b-4781-8051-b33e-9bf26a5a1477"
+      stageUuid: "ef9091c9-5852-825a-9f50-0d19bf647080"
     - stage: uuid
-      stageUuid: "ed977ee5-e8d0-8796-8786-4a2a625a880f"
+      stageUuid: "7fcc9706-a9c5-8e45-8ec8-01b65f5cb1e3"
 version: 2
 ---
 # boarding

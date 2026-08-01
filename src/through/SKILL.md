@@ -2,82 +2,19 @@
 name: through
 description: "Use when reasoning about through as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: through
-coordinate: through · 7/descent · 191287bc
-contentUuid: "7ffc7dc5-4416-51cb-86bc-f1d58a42fc57"
-diamondUuid: "f583192a-bbd5-84ec-9c3f-e8dc282fe49c"
-uuid: "191287bc-8b91-8044-9f04-56984b5762ed"
-horo: 7
-bonds:
-  in:
-    - available
-    - collapse
-    - drive
-    - has
-    - issued
-    - law
-    - merge
-    - owned
-    - service
-    - sti
-    - valid
-  out:
-    - available
-    - collapse
-    - drive
-    - has
-    - issued
-    - law
-    - merge
-    - owned
-    - service
-    - sti
-    - valid
+coordinate: "through · 8/crest · 42d62de7"
+contentUuid: "0424dd86-c2be-5a86-99bb-095593a77ed1"
+diamondUuid: "fc448c62-18bf-8162-b2a2-251109154457"
+uuid: "42d62de7-6f3a-8342-8d03-0d4708203b8c"
+horo: 8
 typography:
   partition: through
   bondDegree: 40
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - available
-    - collapse
-    - drive
-    - has
-    - issued
-    - law
-    - merge
-    - owned
-    - service
-    - sti
-    - valid
-  matrix:
-    - available
-    - collapse
-    - drive
-    - has
-    - issued
-    - law
-    - merge
-    - owned
-    - service
-    - sti
-    - valid
-  backlinks:
-    - available
-    - collapse
-    - drive
-    - has
-    - issued
-    - law
-    - merge
-    - owned
-    - service
-    - sti
-    - valid
 signatures:
-  computationUuid: "d98085ec-fc66-8a3e-aae1-d398d344b930"
+  computationUuid: "0a7a3ee5-a20c-8284-881a-29ac7b121b47"
   stages:
     - stage: path
       stageUuid: "474077ca-f403-8a69-8a6b-14f06fc427e4"
@@ -88,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "814f6b8d-8cc6-8019-bbcd-48884a75d57f"
     - stage: horo
-      stageUuid: "da94ec64-5be7-805a-8887-00e0e84ff9e3"
+      stageUuid: "dbfca683-72aa-8a56-8c99-f9f48186a11a"
     - stage: seal
-      stageUuid: "92e48970-5543-8cee-91cf-df25fbdf1bc3"
+      stageUuid: "8e2773ef-c993-83f0-9329-e00bd322c66b"
     - stage: uuid
-      stageUuid: "be898061-e454-89da-baf8-498da0380bca"
+      stageUuid: "d47d45c1-e6e8-8d2f-8088-09b2b2e11778"
 version: 2
 ---
 # through

@@ -1,63 +1,35 @@
 ---
 name: applied
 description: "Use when reasoning about applied as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/applied
-coordinate: applied · 5/round · c9d3c9bc
-contentUuid: "701bd012-f32e-5be7-a876-f2bd0b8fe0f4"
-diamondUuid: "157b48c6-82ba-8e15-9ef3-aacd08fbe69b"
-uuid: "c9d3c9bc-05b3-8499-821e-503436dffd25"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/applied"
+coordinate: "vocabulary/applied · 4/weave · 8951df5d"
+contentUuid: "53b1f277-816b-510c-a34d-371e3a237d58"
+diamondUuid: "bc2e7acb-0d84-8144-a140-0d39b56cd391"
+uuid: "8951df5d-d90e-86bd-8b8c-29a0370adbb2"
+horo: 4
 typography:
-  partition: applied
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "e77d4b74-d792-8c8d-a44d-68ca23491daa"
+  computationUuid: "3f3c996c-c904-859f-8798-7ca63ccbc5e0"
   stages:
     - stage: path
-      stageUuid: "433a56c7-42aa-86c5-91ef-5d37767cc867"
+      stageUuid: "d16374c6-d795-8503-93b7-24373ba5b129"
     - stage: trinity
-      stageUuid: "c7b62814-fedf-86a4-8364-b4d9cf41be24"
+      stageUuid: "aeb6621d-08b9-882e-8f0f-18db4ee50d97"
     - stage: boundary
-      stageUuid: "8814a730-6f4c-89bc-8c96-cbb4c32c4c95"
+      stageUuid: "69ab5148-1fa2-8100-857b-5494743af020"
     - stage: links
-      stageUuid: "02a81618-2e80-864c-9725-f7790ebcda1d"
+      stageUuid: "c2598d05-5434-865b-bef5-085c9e4f2550"
     - stage: horo
-      stageUuid: "0ec5a8e9-b4cf-85d6-9430-15536b026a7e"
+      stageUuid: "d159f6c6-6abc-8987-90d9-780beb6d63e7"
     - stage: seal
-      stageUuid: "b869c8d2-7f1b-81a9-b789-d9ad4cdbe429"
+      stageUuid: "e2fe96b7-8d27-83c4-80b4-bf71639c9f6a"
     - stage: uuid
-      stageUuid: "eef05e5c-cf3e-85b5-bf65-1d0eb9376f88"
+      stageUuid: "beae2c91-9df1-8717-bb99-3487fb93241a"
 version: 2
 ---
 # applied

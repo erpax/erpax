@@ -1,73 +1,35 @@
 ---
 name: care
 description: "Use when reasoning about care as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/care
-coordinate: care · 8/crest · 7adbfc85
-contentUuid: "ec13e0bd-dfa2-56bc-87e0-63991d5bd038"
-diamondUuid: "a57c7cf5-b8bb-837d-9c93-1875f40106f9"
-uuid: "7adbfc85-776e-8ec3-a6dc-a73706f05891"
-horo: 8
-bonds:
-  in:
-    - child
-    - collapse
-    - law
-    - merge
-    - sti
-    - veterinary
-  out:
-    - child
-    - collapse
-    - law
-    - merge
-    - sti
-    - veterinary
+atomPath: "vocabulary/care"
+coordinate: "vocabulary/care · 2/share · 59750823"
+contentUuid: "34979466-77ca-5013-a933-204a94acdccd"
+diamondUuid: "a3c8ed46-638f-8aa8-ad7a-ffd77dde4d55"
+uuid: "59750823-d5f9-8bec-907b-6f8ab3bf16a1"
+horo: 2
 typography:
-  partition: care
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - child
-    - collapse
-    - law
-    - merge
-    - sti
-    - veterinary
-  matrix:
-    - child
-    - collapse
-    - law
-    - merge
-    - sti
-    - veterinary
-  backlinks:
-    - child
-    - collapse
-    - law
-    - merge
-    - sti
-    - veterinary
 signatures:
-  computationUuid: "53a3e148-ebc6-8e36-a4cb-1b489a7c4d4f"
+  computationUuid: "b7111178-a029-80d3-85bd-0e45a7c78619"
   stages:
     - stage: path
-      stageUuid: "25454173-f7a6-856f-8cf9-86c17a0308e9"
+      stageUuid: "7384da91-1b77-8b22-8d61-8fc44548ee79"
     - stage: trinity
-      stageUuid: "6157dc36-c4d1-83a7-8fcd-0671f8a1525c"
+      stageUuid: "d1bcf4d9-0ae8-8add-a2db-54f0bc30e592"
     - stage: boundary
-      stageUuid: "d54e3e13-db66-8253-9568-c4a07213d27b"
+      stageUuid: "76149087-ae07-82c8-b108-9e33527b1cc2"
     - stage: links
-      stageUuid: "635c6574-4276-8bfb-9930-4545c5c72e2e"
+      stageUuid: "7a36146f-5fd4-82fe-88c2-dcc84e5c7662"
     - stage: horo
-      stageUuid: "077714c8-4475-8ec5-a564-dd35fcd21604"
+      stageUuid: "1b952840-5e8f-8c47-aab6-90b73d1d9f57"
     - stage: seal
-      stageUuid: "768dccc3-c846-87b2-80dc-6233db1eb900"
+      stageUuid: "2d5f12c3-03c5-8242-bb6d-0ab0a5f61371"
     - stage: uuid
-      stageUuid: "c29cd05b-f70a-8808-94cf-f5c1e6bd7635"
+      stageUuid: "8e9a4ed3-b0ae-83df-95f1-916361a5d75b"
 version: 2
 ---
 # care

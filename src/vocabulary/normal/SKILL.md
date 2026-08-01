@@ -1,68 +1,35 @@
 ---
 name: normal
 description: "Use when reasoning about normal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/normal
-coordinate: normal · 8/crest · 6b44e371
-contentUuid: "12501b91-ab09-5a4e-9721-15c613a7a201"
-diamondUuid: "23705192-12e1-8758-a8a4-293758a5a3b2"
-uuid: "6b44e371-05e7-8ebe-bbab-629ee7b5f525"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - range
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - range
-    - sti
+atomPath: "vocabulary/normal"
+coordinate: "vocabulary/normal · 2/share · f667367c"
+contentUuid: "8f21c9ca-299a-54e5-b955-8c327670d431"
+diamondUuid: "ff8dc25f-7263-8891-8101-aa829d15a67a"
+uuid: "f667367c-8074-891f-a2fe-8905727fe499"
+horo: 2
 typography:
-  partition: normal
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - range
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - range
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - range
-    - sti
 signatures:
-  computationUuid: "14c538bb-b2f7-8ce6-adda-99071db1427f"
+  computationUuid: "de6f72da-d275-8573-bb87-e206603a8e1a"
   stages:
     - stage: path
-      stageUuid: "c899c18f-4f75-8454-abb2-fbbc340c5464"
+      stageUuid: "17439b20-95b3-8273-bcce-c9a2e815b2d8"
     - stage: trinity
-      stageUuid: "ee7ab4fa-7f0f-8e06-b054-74fb8f1ea3c1"
+      stageUuid: "af2b8d66-3488-8446-9ea4-87c8446fd7e0"
     - stage: boundary
-      stageUuid: "e91229cb-4738-8d45-b040-97b323615bad"
+      stageUuid: "eb91b444-90c7-8c09-9be8-d4c42e46540f"
     - stage: links
-      stageUuid: "cbf26f58-b2df-8344-beae-55d610a115c3"
+      stageUuid: "f587017a-3fbd-8211-9814-f10acf242011"
     - stage: horo
-      stageUuid: "e08b1de0-4851-8b4c-9be3-ead6937fe932"
+      stageUuid: "58843532-1dca-8e1a-ad65-4bb26fa9bdf3"
     - stage: seal
-      stageUuid: "27938efb-53d6-8c01-bb03-9af68adf1569"
+      stageUuid: "1051c826-a2c3-8cab-8927-4ce77077cb62"
     - stage: uuid
-      stageUuid: "95968bdd-c6e1-8696-8dc1-ecf8c9cc6cbc"
+      stageUuid: "c5bf45df-9b96-81a7-9fcb-d54404b8720b"
 version: 2
 ---
 # normal

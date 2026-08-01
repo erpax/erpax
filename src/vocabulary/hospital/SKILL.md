@@ -1,53 +1,35 @@
 ---
 name: hospital
 description: Use when reasoning about hospital — A hospital.
-atomPath: vocabulary/hospital
-coordinate: hospital · 8/crest · 941ca4ec
-contentUuid: "8a28a08b-6b8f-5837-8709-e0f37ef6a657"
-diamondUuid: "c4684f90-19c7-8d79-8a1a-80f486774369"
-uuid: "941ca4ec-f933-89dd-831c-b04179d5035a"
-horo: 8
-bonds:
-  in:
-    - affiliation
-    - law
-  out:
-    - affiliation
-    - law
+atomPath: "vocabulary/hospital"
+coordinate: "vocabulary/hospital · 2/share · 0919b58a"
+contentUuid: "f9a89c0a-6fb4-53ef-a046-5ea2b0064b56"
+diamondUuid: "8694bf9d-0484-8980-a775-9203bf2184b6"
+uuid: "0919b58a-084d-8258-a402-a87d58fe9341"
+horo: 2
 typography:
-  partition: hospital
-  bondDegree: 7
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 18
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - affiliation
-    - law
-  matrix:
-    - affiliation
-    - law
-  backlinks:
-    - affiliation
-    - law
 signatures:
-  computationUuid: "4e567502-7d8c-8cb7-81a1-3404ecfcc0ea"
+  computationUuid: "79919e85-0134-8c58-941e-ddcd1e0dc0eb"
   stages:
     - stage: path
-      stageUuid: "1f4b6063-9523-8d32-8de9-1d53c95ca3e3"
+      stageUuid: "fac45346-f79c-8894-a365-66936a11e7a5"
     - stage: trinity
-      stageUuid: "c77430e8-461b-85af-ac60-25fe5c9e2ca5"
+      stageUuid: "a10d9316-544b-8136-a023-1914573a9208"
     - stage: boundary
-      stageUuid: "db28fc70-608c-837d-84aa-a03c8a1be211"
+      stageUuid: "3486a20f-69eb-8195-af39-4a13cef09717"
     - stage: links
-      stageUuid: "ae0b7a9c-46d3-8151-a76f-fd46804bdfc0"
+      stageUuid: "6195f7dc-a773-8d5d-abaa-3711c5f9e56e"
     - stage: horo
-      stageUuid: "ed076d7e-15a8-8a57-b4db-4b3c0381ced0"
+      stageUuid: "bfe3a315-0a94-8124-b1db-69e4bfcd8830"
     - stage: seal
-      stageUuid: "23ada21c-52e8-8727-a4ec-7a244a4dae69"
+      stageUuid: "1d2d23bf-4ad7-82d8-8952-ce48afe89325"
     - stage: uuid
-      stageUuid: "d7ee285a-0ffc-8d54-a9e3-38f9cb03001c"
+      stageUuid: "46fe47f1-5337-8a26-bc3e-2055e3ff79a2"
 version: 2
 ---
 # hospital

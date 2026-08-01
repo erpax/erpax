@@ -1,63 +1,35 @@
 ---
 name: parasite
 description: "Use when reasoning about parasite as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/parasite
-coordinate: parasite · 2/share · f1b4dd63
-contentUuid: "86a07bc0-21f8-5ee8-8d67-a7ee1915a290"
-diamondUuid: "5f9e47c4-5ab0-89e9-bd7a-c1a0f4b44e4f"
-uuid: "f1b4dd63-7a4b-88c4-aa2f-82023fea18c5"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/parasite"
+coordinate: "vocabulary/parasite · 1/base · 460270a6"
+contentUuid: "1111b917-5c80-5526-966b-701690a24f1c"
+diamondUuid: "005fce86-888d-871d-aaeb-a9697d497f38"
+uuid: "460270a6-36fb-8a1c-90aa-101eb2d2bcd9"
+horo: 1
 typography:
-  partition: parasite
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "2a833a43-0390-8b4b-8782-bd96c3ff81a7"
+  computationUuid: "76a86e31-e4c9-8dcf-8f89-4bb08792e27d"
   stages:
     - stage: path
-      stageUuid: "bdb34731-b977-82e4-a33f-770d72526a39"
+      stageUuid: "703c34a8-87e4-8ad7-93a6-4bfabf8f9c74"
     - stage: trinity
-      stageUuid: "3f722bd9-7082-879c-9d91-833fdd791abf"
+      stageUuid: "6ef262ad-4301-8ac3-b132-e4e9839ba219"
     - stage: boundary
-      stageUuid: "73aa6d29-90bc-88df-aa8e-c49ca9f13d11"
+      stageUuid: "78e6a568-0021-8bdc-a696-e0a9122f9dc0"
     - stage: links
-      stageUuid: "1d127192-4ca9-8099-b5dc-1febe4895e11"
+      stageUuid: "6174087f-847d-85ad-8f5c-b9d43428aaef"
     - stage: horo
-      stageUuid: "99ea0f39-3156-8b58-ad4c-ca11fda13ed5"
+      stageUuid: "4cbc868b-8e5e-8cf2-8a9d-0f1f1e987853"
     - stage: seal
-      stageUuid: "d77ab6e2-b159-8219-8dfb-533aae5b3c23"
+      stageUuid: "a8b092db-7afe-8518-a743-6902c0ca81ef"
     - stage: uuid
-      stageUuid: "0e3727f4-f3f0-87e5-a00b-47423d4dc089"
+      stageUuid: "e93130e8-9991-8a9d-8520-0386d81ea5f5"
 version: 2
 ---
 # parasite

@@ -1,78 +1,35 @@
 ---
 name: procedure
 description: "Use when reasoning about procedure — A description of the procedure involved in setting up, using, and/or installing the device."
-atomPath: vocabulary/procedure
-coordinate: procedure · 7/descent · 34d30db2
-contentUuid: "00580865-ade1-51e0-85b9-f887b4ce8a19"
-diamondUuid: "2628e000-ead0-8cae-ae9a-2714be4cd441"
-uuid: "34d30db2-9bcb-8bbd-b401-b53708092426"
-horo: 7
-bonds:
-  in:
-    - diagnostic
-    - law
-    - medical
-    - palliative
-    - surgical
-    - therapeutic
-    - type
-  out:
-    - diagnostic
-    - law
-    - medical
-    - palliative
-    - surgical
-    - therapeutic
-    - type
+atomPath: "vocabulary/procedure"
+coordinate: "vocabulary/procedure · 4/weave · 6ba0925d"
+contentUuid: "f0f0e34b-a37a-5b3d-ae5a-2390d5b04e1d"
+diamondUuid: "c62b0b07-9c0e-8f56-ad2c-9ee970ae4a7a"
+uuid: "6ba0925d-6faa-8da9-a148-735fb2c0b3e5"
+horo: 4
 typography:
-  partition: procedure
-  bondDegree: 26
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 33
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - diagnostic
-    - law
-    - medical
-    - palliative
-    - surgical
-    - therapeutic
-    - type
-  matrix:
-    - diagnostic
-    - law
-    - medical
-    - palliative
-    - surgical
-    - therapeutic
-    - type
-  backlinks:
-    - diagnostic
-    - law
-    - medical
-    - palliative
-    - surgical
-    - therapeutic
-    - type
 signatures:
-  computationUuid: "d272b233-7b10-8e6f-96f6-48ee51e311f4"
+  computationUuid: "d3f5e8ee-c9e5-89ff-b1c2-9e57d14f2ae5"
   stages:
     - stage: path
-      stageUuid: "ca4d8afc-c9b4-8ee4-814b-eed67dbc08dd"
+      stageUuid: "aed9f7ab-da53-8b0f-9c20-1e3d1835dd68"
     - stage: trinity
-      stageUuid: "ab671413-e934-8d71-a357-d317f10ac2a1"
+      stageUuid: "ced6ea58-187e-87a2-bb17-412a5937e483"
     - stage: boundary
-      stageUuid: "0ec2de41-6b3b-87f5-affb-054959c66cab"
+      stageUuid: "b7962293-028c-8dc6-89e4-eee87a079344"
     - stage: links
-      stageUuid: "1e4ac1d0-67f2-8da4-9641-3e49e6f79748"
+      stageUuid: "d57fe9f2-2d47-80ee-b98c-a9383af69e09"
     - stage: horo
-      stageUuid: "1fa03582-f73b-8d97-81de-5ea04a16f476"
+      stageUuid: "353d7a0e-dd79-8b10-afaa-53a45fa9dbde"
     - stage: seal
-      stageUuid: "ec48db94-acf3-8610-9d38-f09c1ebd09fa"
+      stageUuid: "ece8a017-7144-8491-81c1-307746b832f9"
     - stage: uuid
-      stageUuid: "38d83e3b-a0c1-8a3b-9f6c-22b9f0985bf1"
+      stageUuid: "8d57b64f-4d80-84e4-886f-13a6c344345d"
 version: 2
 ---
 # procedure

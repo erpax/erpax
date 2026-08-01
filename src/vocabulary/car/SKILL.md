@@ -1,68 +1,35 @@
 ---
 name: car
 description: "Use when reasoning about car — A car is a wheeled, self-powered motor vehicle used for transportation."
-atomPath: vocabulary/car
-coordinate: car · 7/descent · c2551b9f
-contentUuid: "fbdc715c-4768-5458-a479-9a3d86e36f08"
-diamondUuid: "0ebf480b-621c-8f35-abb5-5cd01b5eccf2"
-uuid: "c2551b9f-c148-848c-b14d-be7b05962dd7"
-horo: 7
-bonds:
-  in:
-    - law
-    - rental
-    - reservation
-    - type
-    - usage
-  out:
-    - law
-    - rental
-    - reservation
-    - type
-    - usage
+atomPath: "vocabulary/car"
+coordinate: "vocabulary/car · 5/round · 64ce1765"
+contentUuid: "a0e530ec-8ad3-5f4c-a581-46321dddb463"
+diamondUuid: "336d0379-d968-8d2a-83aa-c720f1b1a1f9"
+uuid: "64ce1765-e034-8258-b33d-6534376aa0bf"
+horo: 5
 typography:
-  partition: car
+  partition: vocabulary
   bondDegree: 18
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - rental
-    - reservation
-    - type
-    - usage
-  matrix:
-    - law
-    - rental
-    - reservation
-    - type
-    - usage
-  backlinks:
-    - law
-    - rental
-    - reservation
-    - type
-    - usage
 signatures:
-  computationUuid: "155c2c64-7e60-8035-bef8-35a382031d62"
+  computationUuid: "5addb95f-9d2c-8671-9192-d46189e8df03"
   stages:
     - stage: path
-      stageUuid: "60afadb9-303c-89b8-ade0-69b96435bb62"
+      stageUuid: "8d01196a-3fde-8e83-955b-063a92c17b17"
     - stage: trinity
-      stageUuid: "72ebe74c-24fa-8ed9-9ffc-ee573e709432"
+      stageUuid: "d30ff87c-efde-8c1c-9e0c-e6e46f127c96"
     - stage: boundary
-      stageUuid: "30a24534-fb25-802d-9489-8741d413f69c"
+      stageUuid: "499d2dcf-f66c-8cb1-a353-eb06b373c48a"
     - stage: links
-      stageUuid: "6e7bd188-f1e8-8b2a-8318-9a0eaafd86e2"
+      stageUuid: "5fe4463b-2aab-8c6a-8fd9-66c0a078a885"
     - stage: horo
-      stageUuid: "04fa2b1d-05bb-812b-807f-1d68861d338f"
+      stageUuid: "a1f77bd6-dc4a-8dab-bc57-63b68eb1a4a7"
     - stage: seal
-      stageUuid: "7d234c1a-fde0-80be-83f0-dbfe82251b80"
+      stageUuid: "f445668c-5ece-8809-a1a6-55eb99e55815"
     - stage: uuid
-      stageUuid: "3ac95e78-17bb-8f55-b030-1cfdd0654330"
+      stageUuid: "e1d0ff84-bd56-83ed-8497-fa73babf1f6a"
 version: 2
 ---
 # car

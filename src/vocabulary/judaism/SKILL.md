@@ -1,187 +1,34 @@
 ---
 name: judaism
 description: "Use when reading Judaism as a diamond of invariant atoms — the covenant between a people and the One, the law given and argued, the name too holy to speak, mercy and justice held together, sin cured by turning back. Strip the Hebrew prefix and brit, torah, chesed, tzedek, teshuvah collapse to covenant, law, mercy, justice, return — one content-uuid each."
-atomPath: vocabulary/judaism
-coordinate: judaism · 1/base · 9f57848f
-contentUuid: "ea545b21-cd45-5d9d-af93-b35bce309e73"
-diamondUuid: "abb685b0-6b4c-8b7b-8e09-5af3cc1f088a"
-uuid: "9f57848f-d1f0-8258-8433-9bbd6b269258"
-horo: 1
-bonds:
-  in:
-    - archangel
-    - breath
-    - covenant
-    - cycle
-    - diamond
-    - fast
-    - fractal
-    - harmony
-    - identity
-    - justice
-    - kabbalah
-    - law
-    - mercy
-    - merge
-    - name
-    - one
-    - prayer
-    - religion
-    - return
-    - ritual
-    - self
-    - sin
-    - society
-    - suffering
-    - translator
-    - uuid
-    - void
-    - whole
-    - word
-  out:
-    - archangel
-    - breath
-    - covenant
-    - cycle
-    - diamond
-    - fast
-    - fractal
-    - harmony
-    - identity
-    - justice
-    - kabbalah
-    - law
-    - mercy
-    - merge
-    - name
-    - one
-    - prayer
-    - religion
-    - return
-    - ritual
-    - self
-    - sin
-    - society
-    - suffering
-    - translator
-    - uuid
-    - void
-    - whole
-    - word
+atomPath: "vocabulary/judaism"
+coordinate: "vocabulary/judaism · 5/round · b79510bc"
+contentUuid: "585b5bfc-ef1b-507d-8e0a-4a4c738b5885"
+diamondUuid: "b2e0ae45-6e2a-8a04-85e7-b401d3674a97"
+uuid: "b79510bc-4b06-83b8-9424-e9d88f5b035d"
+horo: 5
 typography:
-  partition: judaism
+  partition: vocabulary
   bondDegree: 89
-  neighbors:
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - archangel
-    - breath
-    - covenant
-    - cycle
-    - diamond
-    - fast
-    - fractal
-    - harmony
-    - identity
-    - justice
-    - law
-    - mercy
-    - merge
-    - name
-    - one
-    - prayer
-    - religion
-    - return
-    - ritual
-    - self
-    - sin
-    - society
-    - suffering
-    - translator
-    - uuid
-    - void
-    - whole
-    - word
-  matrix:
-    - archangel
-    - breath
-    - covenant
-    - cycle
-    - diamond
-    - fast
-    - fractal
-    - harmony
-    - identity
-    - justice
-    - kabbalah
-    - law
-    - mercy
-    - merge
-    - name
-    - one
-    - prayer
-    - religion
-    - return
-    - ritual
-    - self
-    - sin
-    - society
-    - suffering
-    - translator
-    - uuid
-    - void
-    - whole
-    - word
-  backlinks:
-    - archangel
-    - breath
-    - covenant
-    - cycle
-    - diamond
-    - fast
-    - fractal
-    - harmony
-    - identity
-    - justice
-    - kabbalah
-    - law
-    - mercy
-    - merge
-    - name
-    - one
-    - prayer
-    - religion
-    - return
-    - ritual
-    - self
-    - sin
-    - society
-    - suffering
-    - translator
-    - uuid
-    - void
-    - whole
-    - word
 signatures:
-  computationUuid: "b6251433-9daa-85d8-b0f6-4c0aeae8a5eb"
+  computationUuid: "c3cfdbb0-8a16-837a-8cfe-9f8dab23ee37"
   stages:
     - stage: path
-      stageUuid: "e00c67f6-4292-8e53-b8c5-fe2f4e63354a"
+      stageUuid: "a94a6fb0-b041-8140-88d6-56fb594606b1"
     - stage: trinity
-      stageUuid: "8bfa8cea-0733-85c3-b35e-18e12abaffb1"
+      stageUuid: "e5fe7375-0861-82cf-9e00-8c9a739f0555"
     - stage: boundary
-      stageUuid: "6d37a453-14b6-8d45-8293-5c075f42c0f9"
+      stageUuid: "8344066e-925d-85c8-b03b-cd86ae3a5120"
     - stage: links
-      stageUuid: "f520e3db-1c9c-8382-ad31-d09ad3f9d924"
+      stageUuid: "1bd34d75-d1d0-8355-b54c-9c31d039b31e"
     - stage: horo
-      stageUuid: "9b89e1f0-9925-82d3-b2a9-06fc48954e95"
+      stageUuid: "51c31851-ee47-8360-aacc-639c3a57e963"
     - stage: seal
-      stageUuid: "95022cb6-caa8-8889-bcb1-c0c76ab06ed3"
+      stageUuid: "bd170de0-cab2-898d-84ea-000c0a484c27"
     - stage: uuid
-      stageUuid: "c99971fb-6885-8279-a727-3bd74d3003c2"
+      stageUuid: "49d766b1-6e04-82a3-b465-a20a60e48203"
 version: 2
 ---
 # judaism — the covenant of the One, the law given and remembered

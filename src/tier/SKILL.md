@@ -2,97 +2,19 @@
 name: tier
 description: Use when reasoning about tier — The member program this tier is a part of.
 atomPath: tier
-coordinate: tier · 5/round · 90fb9ab7
-contentUuid: "993cfdb3-b3fa-5bc6-a8f7-1836b611717c"
-diamondUuid: "b96fdb1d-5053-8558-b4ea-670457b4fc28"
-uuid: "90fb9ab7-7a1b-84cb-82e1-5d11cdb368c8"
+coordinate: "tier · 5/round · 93fdf669"
+contentUuid: "bcece6d2-764c-5c5b-ba16-c06db1d963ef"
+diamondUuid: "f39c84e1-1137-8d7b-8b79-b959021503aa"
+uuid: "93fdf669-7596-88bf-a038-66987e4782b9"
 horo: 5
-bonds:
-  in:
-    - benefit
-    - broadcast
-    - drug
-    - enumeration
-    - has
-    - health
-    - law
-    - member
-    - network
-    - plan
-    - program
-    - requirement
-    - service
-    - valid
-  out:
-    - benefit
-    - broadcast
-    - drug
-    - enumeration
-    - has
-    - health
-    - law
-    - member
-    - network
-    - plan
-    - program
-    - requirement
-    - service
-    - valid
 typography:
   partition: tier
-  bondDegree: 52
-  neighbors: []
+  bondDegree: 56
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - benefit
-    - broadcast
-    - drug
-    - enumeration
-    - has
-    - health
-    - law
-    - member
-    - network
-    - plan
-    - program
-    - requirement
-    - service
-    - valid
-  matrix:
-    - benefit
-    - broadcast
-    - drug
-    - enumeration
-    - has
-    - health
-    - law
-    - member
-    - network
-    - plan
-    - program
-    - requirement
-    - service
-    - valid
-  backlinks:
-    - benefit
-    - broadcast
-    - drug
-    - enumeration
-    - has
-    - health
-    - law
-    - member
-    - network
-    - plan
-    - program
-    - requirement
-    - service
-    - valid
 signatures:
-  computationUuid: "abb86726-8283-8d20-a8ab-4fb6cecd0dee"
+  computationUuid: "40011576-bf8f-8cf8-98b0-cbb4d172fb7a"
   stages:
     - stage: path
       stageUuid: "8560fb88-c7ed-8cc9-adfa-6de727fbbcb3"
@@ -103,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "43005f41-83df-8978-8917-c1de1df27a41"
     - stage: horo
-      stageUuid: "6a7a4670-8473-892b-baf6-ec3fd6ff2391"
+      stageUuid: "9fb2b83a-8852-8ea3-a730-67719af1b1c2"
     - stage: seal
-      stageUuid: "3eed88bb-8c7d-8cd4-abfb-bb28d1d3e1d1"
+      stageUuid: "2aa1bd37-2d24-89e6-bb64-fda569183dd9"
     - stage: uuid
-      stageUuid: "62bf8bb7-b3b6-885f-b32d-f5d145686ccf"
+      stageUuid: "2d21b1f4-cc5c-868a-80f7-e0bac4f466f0"
 version: 2
 ---
 # tier

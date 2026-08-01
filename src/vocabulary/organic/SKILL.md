@@ -1,134 +1,34 @@
 ---
 name: organic
 description: "Use when produce carries a certified-organic claim — the labeling status under USDA NOP (7 CFR 205) and EU 2018/848: the National List of allowed/prohibited substances, excluded methods (GMO/irradiation/sewage sludge banned), the 36-month transition, and the organic system plan verified by an accredited certifier. A standards-backed status the product carries through the chain."
-atomPath: vocabulary/organic
-coordinate: organic · 8/crest · 41d143cb
-contentUuid: "d417e734-8ccd-5bae-8898-f057f6b87ab0"
-diamondUuid: "63d0e50d-90f9-884d-8129-308646747d0c"
-uuid: "41d143cb-3499-82ae-b2d0-b39248dffac4"
-horo: 8
-bonds:
-  in:
-    - agriculture
-    - audit
-    - certification
-    - compost
-    - conversion
-    - covercrop
-    - crop
-    - integrity
-    - law
-    - lineage
-    - lots
-    - period
-    - permaculture
-    - proof
-    - regeneration
-    - rotation
-    - seed
-    - standard
-    - standards
-  out:
-    - agriculture
-    - audit
-    - certification
-    - compost
-    - conversion
-    - covercrop
-    - crop
-    - integrity
-    - law
-    - lineage
-    - lots
-    - period
-    - permaculture
-    - proof
-    - regeneration
-    - rotation
-    - seed
-    - standard
-    - standards
+atomPath: "vocabulary/organic"
+coordinate: "vocabulary/organic · 7/descent · addd0133"
+contentUuid: "deca6af6-0a28-5e4f-abdb-150d5ab06544"
+diamondUuid: "8fc587a0-24a8-8e98-b8e8-54a6ab361318"
+uuid: "addd0133-d2ff-8b6e-824c-3c785be1cb8d"
+horo: 7
 typography:
-  partition: organic
+  partition: vocabulary
   bondDegree: 60
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - audit
-    - certification
-    - compost
-    - conversion
-    - covercrop
-    - crop
-    - integrity
-    - law
-    - lineage
-    - lots
-    - period
-    - proof
-    - rotation
-    - standard
-    - standards
-  matrix:
-    - agriculture
-    - audit
-    - certification
-    - compost
-    - conversion
-    - covercrop
-    - crop
-    - integrity
-    - law
-    - lineage
-    - lots
-    - period
-    - permaculture
-    - proof
-    - regeneration
-    - rotation
-    - seed
-    - standard
-    - standards
-  backlinks:
-    - agriculture
-    - audit
-    - certification
-    - compost
-    - conversion
-    - covercrop
-    - crop
-    - integrity
-    - law
-    - lineage
-    - lots
-    - period
-    - permaculture
-    - proof
-    - regeneration
-    - rotation
-    - seed
-    - standard
-    - standards
 signatures:
-  computationUuid: "8f206ebc-0e7a-8f93-9c0a-d6da8da749f7"
+  computationUuid: "0a5e66a0-08f3-877f-a74a-12f2ac53b024"
   stages:
     - stage: path
-      stageUuid: "f75439b8-e0b8-86a4-9f65-0d02cca55411"
+      stageUuid: "ac1e8962-16e6-8418-935e-0db7b03b4cda"
     - stage: trinity
-      stageUuid: "5babfe28-f5af-81fd-b1f6-546b4acf4867"
+      stageUuid: "e8467582-9797-89ba-9f94-bb3c08792007"
     - stage: boundary
-      stageUuid: "58768266-bc31-88b9-82e6-b4d75d6f6a34"
+      stageUuid: "242c09a1-2027-8f64-9f7e-42b18d737af0"
     - stage: links
-      stageUuid: "e6405be3-d943-82c4-88c0-dbc9a31d5976"
+      stageUuid: "f91cfd5a-5eab-8a81-b286-6ae826ccb236"
     - stage: horo
-      stageUuid: "a66f48ea-a3b1-852a-8d24-0b9aa0a312af"
+      stageUuid: "e035f37b-9583-8d36-8c84-c9f89cef410d"
     - stage: seal
-      stageUuid: "21b71e74-8b87-8baf-9ea3-b9cbfe227e59"
+      stageUuid: "10d9d0c1-b502-8048-b5ac-e02ac6b30b7e"
     - stage: uuid
-      stageUuid: "0cf8191c-b5ff-8add-96ea-172a3a61d9c1"
+      stageUuid: "f8a0468a-a4bb-8370-9c28-4c85c9787aa1"
 version: 2
 ---
 # organic — the certified production status the produce carries

@@ -1,78 +1,35 @@
 ---
 name: manipulation
 description: "Use when reasoning about manipulation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/manipulation
-coordinate: manipulation · 2/share · ef338785
-contentUuid: "89bfc973-4baf-5942-9f06-2508956c300f"
-diamondUuid: "6bd88735-d979-86e8-a49a-5f8ef4ef8978"
-uuid: "ef338785-bed6-843e-8401-db8541c6d4bd"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - enumeration
-    - law
-    - media
-    - merge
-    - rating
-    - sti
-  out:
-    - collapse
-    - enumeration
-    - law
-    - media
-    - merge
-    - rating
-    - sti
+atomPath: "vocabulary/manipulation"
+coordinate: "vocabulary/manipulation · 5/round · 205fabe6"
+contentUuid: "43bf7537-0fc1-551a-a0d1-66d5db87fe70"
+diamondUuid: "bffbc6f7-a1e4-8743-9225-49670f9cc657"
+uuid: "205fabe6-eaa6-80c8-b2b6-20c9327afa0e"
+horo: 5
 typography:
-  partition: manipulation
-  bondDegree: 23
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 25
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - enumeration
-    - law
-    - media
-    - merge
-    - rating
-    - sti
-  matrix:
-    - collapse
-    - enumeration
-    - law
-    - media
-    - merge
-    - rating
-    - sti
-  backlinks:
-    - collapse
-    - enumeration
-    - law
-    - media
-    - merge
-    - rating
-    - sti
 signatures:
-  computationUuid: "005fdc4d-ef74-865d-9aa5-2302d148a953"
+  computationUuid: "8526de64-f2b4-8ef4-b426-3fe3c86c746b"
   stages:
     - stage: path
-      stageUuid: "0ce0be0e-1cff-8995-b3aa-e93a7a972d21"
+      stageUuid: "2a0eb6d7-612f-8af8-81fc-ef11ca0fab64"
     - stage: trinity
-      stageUuid: "58bb95b1-3a6f-86fa-9c50-76d272a43ff9"
+      stageUuid: "57ffd8bc-958b-8118-ba43-cac1660b2dd3"
     - stage: boundary
-      stageUuid: "6ade4fac-7a05-8a6a-9272-83d4448ce689"
+      stageUuid: "541885ca-9ef5-8399-8687-100c1266abee"
     - stage: links
-      stageUuid: "e65b8bfc-4e12-8839-b2c7-df2ffa7dfdbe"
+      stageUuid: "e0a156e1-0a58-8f3f-b211-73d97c957ca7"
     - stage: horo
-      stageUuid: "4d5aa507-a4f9-8bb0-a39e-f4a5beabd826"
+      stageUuid: "88c38147-fed7-8fac-8a47-8b1a63d8e44e"
     - stage: seal
-      stageUuid: "f0123d94-b82e-8a94-b8cc-63873d2b6f59"
+      stageUuid: "100e0209-5315-8023-907e-7b043a3bc713"
     - stage: uuid
-      stageUuid: "04874228-978a-827d-9141-2dbb025e2037"
+      stageUuid: "31bdf4a1-1d15-8801-82d9-9f2c5cf8513b"
 version: 2
 ---
 # manipulation

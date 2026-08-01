@@ -1,58 +1,35 @@
 ---
 name: contributor
 description: Use when reasoning about contributor — A secondary contributor to the CreativeWork or Event.
-atomPath: vocabulary/contributor
-coordinate: contributor · 1/base · d6184013
-contentUuid: "819a94ce-95ed-504f-8d6d-8943fa2c533c"
-diamondUuid: "682de259-9ab1-8e88-b976-0c086dc531f3"
-uuid: "d6184013-ee21-8ad5-bb93-9b3abca809dd"
-horo: 1
-bonds:
-  in:
-    - law
-    - person
-    - thing
-  out:
-    - law
-    - person
-    - thing
+atomPath: "vocabulary/contributor"
+coordinate: "vocabulary/contributor · 4/weave · e20c56dc"
+contentUuid: "d3b53498-9397-5d20-abd1-63fbaa4021e7"
+diamondUuid: "9ff59c2f-835c-89cd-bbf4-bbf2a6a5cded"
+uuid: "e20c56dc-bd27-868c-9b45-ea877fdaca6c"
+horo: 4
 typography:
-  partition: contributor
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - person
-    - thing
-  matrix:
-    - law
-    - person
-    - thing
-  backlinks:
-    - law
-    - person
-    - thing
 signatures:
-  computationUuid: "63534310-8942-81f1-9215-4881f16b906e"
+  computationUuid: "5543677d-c84d-893c-aa87-de7e5ecacf11"
   stages:
     - stage: path
-      stageUuid: "5fa86ce1-4c0f-8095-86b8-ca3f83960251"
+      stageUuid: "5198be71-c0d4-8183-a8d6-6a8bf03c0fd9"
     - stage: trinity
-      stageUuid: "ceba4a67-9142-8775-8d2d-10f6da7ee17a"
+      stageUuid: "6aa15081-9fcb-8b3b-9bc5-39ee9706093a"
     - stage: boundary
-      stageUuid: "cff589c1-cf65-856d-bb99-be191426cbb6"
+      stageUuid: "18044705-d847-828a-ad19-9493998fb119"
     - stage: links
-      stageUuid: "9e18d9a6-3e20-8cf0-b281-37a3e2cd5ba7"
+      stageUuid: "ed0f76b7-52fb-8260-be87-6d3c3017d54e"
     - stage: horo
-      stageUuid: "12127463-a0bc-8ec6-be18-aa1bcd081c8d"
+      stageUuid: "7b36ea54-7242-812a-a1a1-a4c96e1ab10b"
     - stage: seal
-      stageUuid: "4533dcf2-97a4-8570-ad4a-f88200e9d3d8"
+      stageUuid: "f9292608-1727-87e2-b3a8-efc55afc7b35"
     - stage: uuid
-      stageUuid: "5dfb7248-22e5-84d9-ad71-1ff15ab64ebf"
+      stageUuid: "7ab80612-7fd9-8d81-9264-ee321c93b16e"
 version: 2
 ---
 # contributor

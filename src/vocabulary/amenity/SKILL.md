@@ -1,68 +1,35 @@
 ---
 name: amenity
 description: "Use when reasoning about amenity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/amenity
-coordinate: amenity · 7/descent · 66a0aa8a
-contentUuid: "fe114b93-b4ea-5181-89d4-644b929b4cbb"
-diamondUuid: "658b1199-9fe0-8766-a661-37863ad0002c"
-uuid: "66a0aa8a-c6b8-8ec3-992a-14a120cd32f2"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - feature
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - feature
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/amenity"
+coordinate: "vocabulary/amenity · 1/base · 121c7d32"
+contentUuid: "f2ce038c-5782-557b-8ec2-d79438d6c0e7"
+diamondUuid: "8e3f87fa-ff50-830d-98ef-3808afd687c4"
+uuid: "121c7d32-1f70-8547-859f-ffec699f0cbf"
+horo: 1
 typography:
-  partition: amenity
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - feature
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - feature
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - feature
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "298ce525-a90c-8d50-8e88-5e4a3acb2aca"
+  computationUuid: "c3bd9d63-ca95-8488-baba-84daee11064b"
   stages:
     - stage: path
-      stageUuid: "14c13a04-2736-8362-852e-706786390850"
+      stageUuid: "2b4992d2-082f-8b74-a550-199488d257c8"
     - stage: trinity
-      stageUuid: "a341603c-0eb2-8978-9c90-f458024f9ae9"
+      stageUuid: "3ee0cd9b-625a-831e-ab52-8bfafde21e0b"
     - stage: boundary
-      stageUuid: "431d6d95-6d71-81f8-98d1-8813f3648a2e"
+      stageUuid: "fe84fcc2-57f8-882c-8465-fa9a3c434cde"
     - stage: links
-      stageUuid: "12101078-c5cc-8d86-ad4d-32c9fffaf684"
+      stageUuid: "ca23ed49-a560-8bb0-aa87-36fd7dc9b5b8"
     - stage: horo
-      stageUuid: "3c89fa75-396b-8209-a33e-13213fff6723"
+      stageUuid: "d443a57f-6869-821b-9026-d8b6fc6edd06"
     - stage: seal
-      stageUuid: "617c1f96-7728-8be7-abed-947a39ab4464"
+      stageUuid: "b1d6ac3e-070d-896c-85f1-512b55c6a684"
     - stage: uuid
-      stageUuid: "83f83b1b-2f67-8957-b6d9-f96b5e7d18ac"
+      stageUuid: "daddec64-3a2c-856e-becb-bc80b5fadcad"
 version: 2
 ---
 # amenity

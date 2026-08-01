@@ -2,62 +2,21 @@
 name: scope
 description: "Use when reasoning about scope as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: scope
-coordinate: scope · 8/crest · fdca7d20
-contentUuid: "224814ae-07d9-5426-93e2-c49d51309358"
-diamondUuid: "762b8332-a86f-8af5-87ae-602ec87cee62"
-uuid: "fdca7d20-f1d9-8961-98a4-e2575726997e"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - published
-    - sti
-    - tenant
-    - warranty
-  out:
-    - collapse
-    - law
-    - merge
-    - published
-    - sti
-    - tenant
-    - warranty
+coordinate: "scope · 2/share · 772d527a"
+contentUuid: "a0f0dca4-4ba0-5523-9bee-66ee098881c0"
+diamondUuid: "803408c2-807d-8b3a-ae20-aa4081575987"
+uuid: "772d527a-0858-89a0-8365-b1d003436e63"
+horo: 2
 typography:
   partition: scope
   bondDegree: 22
-  neighbors: []
 standards:
   - "ISO/IEC-29119"
   - "SOC-2 CC6.1 logical-access-controls"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - warranty
-  matrix:
-    - collapse
-    - law
-    - merge
-    - published
-    - sti
-    - tenant
-    - warranty
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - published
-    - sti
-    - tenant
-    - warranty
 signatures:
-  computationUuid: "1a271c30-f9d0-8c13-982a-2040da545d6c"
+  computationUuid: "1301cb93-0d15-8770-888f-67b320ae9ad7"
   stages:
     - stage: path
       stageUuid: "6a1efb00-f77e-8d55-a22c-daf1a59f8456"
@@ -68,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "eb31b0ca-c355-8784-a6e5-ffacc193e689"
     - stage: horo
-      stageUuid: "16d7d827-1b85-80d1-bf98-2e966af76188"
+      stageUuid: "1ebd2369-093a-8d91-b1fb-ac7d510804f5"
     - stage: seal
-      stageUuid: "f393e751-7193-8172-ab76-59bc57647968"
+      stageUuid: "e7d11dbc-d4e7-8f21-9395-71b79973ebe5"
     - stage: uuid
-      stageUuid: "10c6a2af-9718-8647-8c70-3451631fba6d"
+      stageUuid: "e2794c31-caeb-88f4-a979-c36082d48b15"
 version: 2
 ---
 # scope

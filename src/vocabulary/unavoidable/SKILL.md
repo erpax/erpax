@@ -1,168 +1,34 @@
 ---
 name: unavoidable
 description: "Use when hardening erpax toward infinite tamper-cost — why every security lever must be gate-FORCED (a stray fails, exit 2), never merely advisory. The cost is the minimum across dimensions, so the weakest avoidable gap is the cheapest forgery; only the unavoidable raises the floor."
-atomPath: vocabulary/unavoidable
-coordinate: unavoidable · 8/crest · 879c2ca5
-contentUuid: "89164a4a-7739-5b1d-9add-bc516e7297ab"
-diamondUuid: "4ced1a9a-9f82-8189-8941-65c19809af4b"
-uuid: "879c2ca5-abea-80bf-9138-22d9152f395c"
+atomPath: "vocabulary/unavoidable"
+coordinate: "vocabulary/unavoidable · 8/crest · e3541de8"
+contentUuid: "37dc4794-d814-5edf-9b9d-85dcdf12bd25"
+diamondUuid: "83bba773-11e4-8750-bef7-5618de31a4ec"
+uuid: "e3541de8-f22a-8e95-bd72-751ed914c9ec"
 horo: 8
-bonds:
-  in:
-    - agent
-    - analytics
-    - anchor
-    - append
-    - atom
-    - aura
-    - balance
-    - bottleneck
-    - collections
-    - conservation
-    - coordinate
-    - cost
-    - entropy
-    - entry
-    - gate
-    - identity
-    - law
-    - merge
-    - payload
-    - proof
-    - purity
-    - trinity
-    - uuid
-    - vitepress
-    - vocabulary
-  out:
-    - agent
-    - analytics
-    - anchor
-    - append
-    - atom
-    - aura
-    - balance
-    - bottleneck
-    - collections
-    - conservation
-    - coordinate
-    - cost
-    - entropy
-    - entry
-    - gate
-    - identity
-    - law
-    - merge
-    - payload
-    - proof
-    - purity
-    - trinity
-    - uuid
-    - vitepress
-    - vocabulary
 typography:
-  partition: unavoidable
+  partition: vocabulary
   bondDegree: 78
-  neighbors:
-    - agent
-    - analytics
-    - aura
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agent
-    - analytics
-    - anchor
-    - append
-    - atom
-    - aura
-    - balance
-    - bottleneck
-    - collections
-    - conservation
-    - coordinate
-    - cost
-    - entropy
-    - entry
-    - gate
-    - identity
-    - law
-    - merge
-    - payload
-    - proof
-    - trinity
-    - uuid
-    - vitepress
-  matrix:
-    - agent
-    - analytics
-    - anchor
-    - append
-    - atom
-    - aura
-    - balance
-    - bottleneck
-    - collections
-    - conservation
-    - coordinate
-    - cost
-    - entropy
-    - entry
-    - gate
-    - identity
-    - law
-    - merge
-    - payload
-    - proof
-    - purity
-    - trinity
-    - uuid
-    - vitepress
-    - vocabulary
-  backlinks:
-    - agent
-    - analytics
-    - anchor
-    - append
-    - atom
-    - aura
-    - balance
-    - bottleneck
-    - collections
-    - conservation
-    - coordinate
-    - cost
-    - entropy
-    - entry
-    - gate
-    - identity
-    - law
-    - merge
-    - payload
-    - proof
-    - purity
-    - trinity
-    - uuid
-    - vitepress
-    - vocabulary
 signatures:
-  computationUuid: "82d604c3-d69b-8109-a48d-09935a93637a"
+  computationUuid: "9b781dcc-e7db-820f-9f5b-b2fc9db699d9"
   stages:
     - stage: path
-      stageUuid: "07c1c3f2-ccf0-8632-98fa-7c64f6d95110"
+      stageUuid: "4cd21f86-acd9-8b1b-ab4e-a3aed890b06f"
     - stage: trinity
-      stageUuid: "d83fac27-aa84-862a-b294-64d3639fd84c"
+      stageUuid: "43f46222-c63f-88d7-8f64-63f32a664c08"
     - stage: boundary
-      stageUuid: "75784a1c-53ab-8da6-8a60-0b734facaf90"
+      stageUuid: "caf3ad55-c479-8394-9d67-d054bdf6f5fb"
     - stage: links
-      stageUuid: "4e68adc6-31da-8e7d-9faf-73fdd2cd94f0"
+      stageUuid: "3554cbf8-bb95-8751-b33b-2f11c963c6d2"
     - stage: horo
-      stageUuid: "021c7da7-2783-8508-986b-4b6c2920feae"
+      stageUuid: "97d81016-3ec4-84ed-a16c-bf744beffe7b"
     - stage: seal
-      stageUuid: "42f8de56-4a54-8a54-b3b2-7bad28373ed4"
+      stageUuid: "f372553c-7420-8d78-b512-c5e7aab816a9"
     - stage: uuid
-      stageUuid: "c8c0ea6a-1ea8-80eb-bc10-85f78acd9994"
+      stageUuid: "c950a572-7a3e-8336-ad01-5a8cbfbf31c4"
 version: 2
 ---
 # unavoidable — every lever forced, because the cost is the minimum

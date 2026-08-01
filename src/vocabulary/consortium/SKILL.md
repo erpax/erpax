@@ -1,58 +1,35 @@
 ---
 name: consortium
 description: Use when reasoning about consortium — A Consortium is a membership Organization whose members are typically Organizations.
-atomPath: vocabulary/consortium
-coordinate: consortium · 5/round · a0f4c019
-contentUuid: "02046555-22ac-5952-b8db-37cb18d1d913"
-diamondUuid: "a161b8b8-42a9-8c53-9b58-81fc2082667e"
-uuid: "a0f4c019-f2bc-82b9-9e3b-3bae33977128"
-horo: 5
-bonds:
-  in:
-    - law
-    - organization
-    - thing
-  out:
-    - law
-    - organization
-    - thing
+atomPath: "vocabulary/consortium"
+coordinate: "vocabulary/consortium · 2/share · 95307431"
+contentUuid: "6b3a3ddd-3c68-578b-bd06-6e0a67e7ef04"
+diamondUuid: "3705dddd-49fe-845d-8cf9-a842e317f63c"
+uuid: "95307431-fb1b-85d0-a2c6-ededf61bee27"
+horo: 2
 typography:
-  partition: consortium
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - organization
-    - thing
-  matrix:
-    - law
-    - organization
-    - thing
-  backlinks:
-    - law
-    - organization
-    - thing
 signatures:
-  computationUuid: "7f92f98d-d4e3-83c2-8700-aa871819be6d"
+  computationUuid: "8dd44da5-12d8-812d-b5dc-b8f6e741a9f3"
   stages:
     - stage: path
-      stageUuid: "e3272dcf-e71b-83e6-b053-4542811a67b3"
+      stageUuid: "a03c99d8-a214-8029-a6ae-a430ec1d681b"
     - stage: trinity
-      stageUuid: "c618bbad-fff1-819e-8bfb-83a2066bb0fa"
+      stageUuid: "7a3fbd6c-6097-8d7c-b8ca-290e599b65bf"
     - stage: boundary
-      stageUuid: "48bb520a-feb7-820c-9a36-4e332de6de48"
+      stageUuid: "1c1a6c43-8366-861d-bc43-5a69373225ff"
     - stage: links
-      stageUuid: "2774ad21-d304-8ee4-a68e-c091e6d8fdd6"
+      stageUuid: "6bae9bd0-5e7c-8ba3-9050-6e818e5b094e"
     - stage: horo
-      stageUuid: "f9b74dd4-ca83-8f47-aa86-ba65480e53f7"
+      stageUuid: "c82d9433-414e-87e9-ba0b-d0b8e44fca68"
     - stage: seal
-      stageUuid: "8e012d25-a60c-82e6-a611-e9623b4ac17a"
+      stageUuid: "d0a590f5-b7f6-8623-8d0a-24f3267836ec"
     - stage: uuid
-      stageUuid: "66b282c1-c29b-8aa0-93f3-8bc36eb1c3fc"
+      stageUuid: "42e9b53e-dc92-8c39-be70-7dad515ea8e2"
 version: 2
 ---
 # consortium

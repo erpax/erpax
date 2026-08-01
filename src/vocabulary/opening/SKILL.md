@@ -1,78 +1,35 @@
 ---
 name: opening
 description: "Use when reasoning about opening as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/opening
-coordinate: opening · 8/crest · 2e29754c
-contentUuid: "9bd848a2-b455-514e-bb5f-c8228f143a74"
-diamondUuid: "d3bb75ba-e716-8c59-8677-deaca83979ad"
-uuid: "2e29754c-a5b0-8c95-80b1-99b19db5266e"
+atomPath: "vocabulary/opening"
+coordinate: "vocabulary/opening · 8/crest · 358e3f41"
+contentUuid: "c9638a9b-ddf3-5483-8974-6454e9beadff"
+diamondUuid: "323cd690-3211-86fc-871a-8c61a81eecde"
+uuid: "358e3f41-da84-887f-a445-e7c83facfd27"
 horo: 8
-bonds:
-  in:
-    - collapse
-    - hours
-    - law
-    - merge
-    - special
-    - specification
-    - sti
-  out:
-    - collapse
-    - hours
-    - law
-    - merge
-    - special
-    - specification
-    - sti
 typography:
-  partition: opening
+  partition: vocabulary
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - hours
-    - law
-    - merge
-    - special
-    - specification
-    - sti
-  matrix:
-    - collapse
-    - hours
-    - law
-    - merge
-    - special
-    - specification
-    - sti
-  backlinks:
-    - collapse
-    - hours
-    - law
-    - merge
-    - special
-    - specification
-    - sti
 signatures:
-  computationUuid: "81c9c2ff-ea29-864d-8495-fa96e9a52f0d"
+  computationUuid: "2412bffc-3a1c-8097-ae61-d38d07f21ec0"
   stages:
     - stage: path
-      stageUuid: "eb6f9fbd-4794-8361-9cb6-bf2ef5e1999b"
+      stageUuid: "a15e44bf-5a9e-8665-9bde-2e5a4ce5da23"
     - stage: trinity
-      stageUuid: "7bdcc2fe-e076-8800-a1fc-9ba38aaf2895"
+      stageUuid: "cf2a2f1b-1c77-8c49-b93b-88cb1bb0299a"
     - stage: boundary
-      stageUuid: "2cd7c980-fbfe-84c8-88ae-ffe79a4ff191"
+      stageUuid: "faf740e4-b81e-8b82-9bc2-5102c8ba2540"
     - stage: links
-      stageUuid: "ce8cb49c-9a69-85cb-8e04-1c1473724b1e"
+      stageUuid: "d4488148-27c2-8d81-9bf1-1bf9702bcdd5"
     - stage: horo
-      stageUuid: "f658e04e-15f1-83b1-b9d8-d4eb9613804c"
+      stageUuid: "14650621-d5c9-8bfe-b4dc-4118bdb377e2"
     - stage: seal
-      stageUuid: "a61a9b9e-44f6-8a2e-bfee-49534b8cb406"
+      stageUuid: "caea842e-92bf-80ba-859e-51727f0b418d"
     - stage: uuid
-      stageUuid: "9b83b740-6cac-8a38-bcae-e5356b037cc2"
+      stageUuid: "4aba096a-5771-88b2-ae83-2bb4a342c8de"
 version: 2
 ---
 # opening

@@ -2,29 +2,14 @@
 name: metadata
 description: "Use when managing localized or tenant-overridden descriptions for erpax.* MCP tools — per-locale description overlays, tool area grouping, enabled/disabled toggles, documentation URLs, and orphan detection. The localized MCP tool metadata register."
 atomPath: "mcp/tool/metadata"
-coordinate: "mcp/tool/metadata · 4/weave · 32b8361b"
-contentUuid: "02ac5a04-45c8-5572-9c95-ed1092bccbb4"
-diamondUuid: "d2baac9b-fc50-83ee-a44f-673875af61ce"
-uuid: "32b8361b-f0de-8d43-9270-5d8d9bbad87a"
-horo: 4
-bonds:
-  in:
-    - config
-    - fields
-    - identity
-    - queries
-    - tags
-    - tool
-  out:
-    - config
-    - fields
-    - identity
-    - queries
-    - tags
+coordinate: "mcp/tool/metadata · 7/descent · bb7b0975"
+contentUuid: "fab56fa6-1211-56c2-bec6-19f239c9fa60"
+diamondUuid: "573c046f-d765-8d54-a96a-886fec05d2f6"
+uuid: "bb7b0975-0cb3-8ec8-8f64-12e0ea4f7e49"
+horo: 7
 typography:
   partition: mcp
   bondDegree: 20
-  neighbors: []
 standards:
   - "BCP-47"
   - "BCP-47 language tags"
@@ -38,25 +23,8 @@ standards:
   - "W3C-HTTP-Content-Language"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - fields
-    - identity
-  matrix:
-    - config
-    - fields
-    - identity
-    - queries
-    - tags
-  backlinks:
-    - config
-    - fields
-    - identity
-    - queries
-    - tags
 signatures:
-  computationUuid: "27bfd5df-33bc-8264-b58e-29f985c35c36"
+  computationUuid: "5a23326d-a413-81a5-959a-26ff8246b772"
   stages:
     - stage: path
       stageUuid: "f1e2ccc7-d5b9-8141-9193-d7fd8e455fe9"
@@ -67,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "15c5817f-0b30-8524-9962-a31c61e76c84"
     - stage: horo
-      stageUuid: "f466a885-c8dd-886b-9d1f-be3a89c6b992"
+      stageUuid: "9544b315-4701-8c21-95ec-71c3c206597c"
     - stage: seal
       stageUuid: "7210b5de-e752-8594-8966-f290384de931"
     - stage: uuid
-      stageUuid: "b3ce0ccc-c874-84e3-bde0-739df5e5ca65"
+      stageUuid: "782d6109-f753-899f-aa4a-b31a6aacad75"
 version: 2
 ---
 # mcp-tool-metadata

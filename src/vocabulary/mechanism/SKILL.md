@@ -1,68 +1,35 @@
 ---
 name: mechanism
 description: "Use when reasoning about mechanism as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/mechanism
-coordinate: mechanism · 1/base · 06f20a7b
-contentUuid: "bd80ac3d-1eae-5550-bc4d-24a8432da60b"
-diamondUuid: "2d2085f0-7260-82a5-81dc-58b6f5fecdce"
-uuid: "06f20a7b-ec74-837c-9214-3766f257c93d"
+atomPath: "vocabulary/mechanism"
+coordinate: "vocabulary/mechanism · 1/base · c3399abe"
+contentUuid: "287b5a12-4b8a-52d3-b3b3-de7081393f8c"
+diamondUuid: "e1fae93e-ff87-8538-ae1c-414eaf83c760"
+uuid: "c3399abe-c3e6-89d4-a957-9c3fea837204"
 horo: 1
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: mechanism
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "b5439d9f-df49-8c6a-9329-355d65eb5028"
+  computationUuid: "6186c17b-66c5-846d-961e-d0aa0c184deb"
   stages:
     - stage: path
-      stageUuid: "cbda2c7b-21f8-848b-8d07-b126cd896948"
+      stageUuid: "40bee92e-b920-8ec7-8941-3e50192f76d8"
     - stage: trinity
-      stageUuid: "80211dcc-0223-850b-94c8-72523ce81b97"
+      stageUuid: "d8d5c4d4-be3e-858e-8102-aaee0c5225ad"
     - stage: boundary
-      stageUuid: "99166371-256a-89ba-9859-f7500e26b32f"
+      stageUuid: "98e2ea71-aae4-8131-a220-a558955417a2"
     - stage: links
-      stageUuid: "7724c2a1-dce6-8c79-8427-d598c860c765"
+      stageUuid: "c296d151-f73f-8485-a086-84040a10ce4a"
     - stage: horo
-      stageUuid: "1a65b51c-c496-8ebb-8ac9-fc4c1446989a"
+      stageUuid: "3a302c7d-6d2b-885e-9dc0-2c21bb229f78"
     - stage: seal
-      stageUuid: "9822e456-b6b0-8cee-8ced-13a568ac59e4"
+      stageUuid: "dc3e5007-5ebe-8fa6-8f52-849d8d7e261d"
     - stage: uuid
-      stageUuid: "c0e05da7-7c9a-80cf-a83e-cdf406ab7750"
+      stageUuid: "294582e5-1e0c-8744-9458-d7555c7d36eb"
 version: 2
 ---
 # mechanism

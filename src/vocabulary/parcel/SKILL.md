@@ -1,68 +1,35 @@
 ---
 name: parcel
 description: "Use when reasoning about parcel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/parcel
-coordinate: parcel · 1/base · a4f87ad5
-contentUuid: "b39f92ac-ae13-5222-9da9-305eb573b16d"
-diamondUuid: "d2cc40f2-0011-82a4-9138-64bf8ac7e21c"
-uuid: "a4f87ad5-220e-8c41-8701-cf92a4677e5c"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - delivery
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - delivery
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/parcel"
+coordinate: "vocabulary/parcel · 8/crest · ad16bed9"
+contentUuid: "a7c54834-f123-582e-91bf-28c6f24aabaa"
+diamondUuid: "d582626a-f4cb-80d0-a225-6b9aac297d92"
+uuid: "ad16bed9-66d9-8be9-918d-a7baa4abaeca"
+horo: 8
 typography:
-  partition: parcel
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - delivery
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - delivery
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - delivery
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "8e28d8f3-ef45-8dc0-9bd8-2ec7f0ed3a45"
+  computationUuid: "bd556235-19c6-8905-a57f-5cb8d3922ca8"
   stages:
     - stage: path
-      stageUuid: "2473909d-676d-8d44-90b7-d0f23dd6f788"
+      stageUuid: "ae7c26f5-3d5b-8d3f-ae68-fe971b1c089c"
     - stage: trinity
-      stageUuid: "95a04885-d7be-88a9-b12b-8139e5496799"
+      stageUuid: "106cf4d2-ba66-8d61-9dc0-d1ab10fc9afa"
     - stage: boundary
-      stageUuid: "e77764ca-cbc8-8767-b947-85e9384048dc"
+      stageUuid: "59793f40-0420-8cbe-8f60-1241889a07e0"
     - stage: links
-      stageUuid: "8eb05392-2665-8fc9-a0e6-cac0c174f334"
+      stageUuid: "4d42bcd6-1580-8923-a67b-3b15624a6f8d"
     - stage: horo
-      stageUuid: "3b5aff7e-7f4d-8576-9d65-296b05a36953"
+      stageUuid: "88a19b3e-1a8c-857c-bc7d-c979fa5b0bce"
     - stage: seal
-      stageUuid: "96c6fd1d-0f3c-8c24-8d47-af4c16bc1226"
+      stageUuid: "b0c2f2e4-d2e8-8958-aeaf-db547e8075d7"
     - stage: uuid
-      stageUuid: "7166c7ec-18ad-8e5d-88cb-530e73bb8e8a"
+      stageUuid: "8ae53958-02e6-8772-994d-765c5718ca6d"
 version: 2
 ---
 # parcel

@@ -2,112 +2,20 @@
 name: text
 description: "Use when parsing or persisting prose — text decomposes into word ⊕ digit tokens, each a content-addressed diamond; parse walks text, save folds tokens into a typography-style root without one-folder-per-word sprawl."
 atomPath: text
-coordinate: text · 8/crest · 8b9105a1
-contentUuid: "a654b20a-48a4-532b-86df-a2b563ad2ee0"
-diamondUuid: "049165a4-277e-87a6-ae42-28b837e0adea"
-uuid: "8b9105a1-303a-82a5-ba4f-23f78b52ceda"
+coordinate: "text · 8/crest · 1d4ad06d"
+contentUuid: "710a0167-d1aa-56ce-a37e-bd23c5bfa015"
+diamondUuid: "c4f67267-74ad-8f82-8f40-259acb827258"
+uuid: "1d4ad06d-a1b9-83db-8af6-a58d9789e14e"
 horo: 8
-bonds:
-  in:
-    - atom
-    - boundary
-    - caption
-    - credit
-    - diamond
-    - digit
-    - digital
-    - document
-    - embedded
-    - law
-    - markup
-    - object
-    - phonetic
-    - pronounceable
-    - speech
-    - typography
-    - unit
-    - word
-  out:
-    - atom
-    - boundary
-    - caption
-    - credit
-    - diamond
-    - digit
-    - digital
-    - document
-    - embedded
-    - law
-    - markup
-    - object
-    - phonetic
-    - pronounceable
-    - speech
-    - typography
-    - unit
-    - word
 typography:
   partition: text
   bondDegree: 62
-  neighbors:
-    - diamond
-    - quantum/boundary
 standards:
   - "RFC 8785 JCS + RFC 9562 §5.8 content-uuid"
+  - "RFC-8785"
 bindings: []
-neighbors:
-  wikilink:
-    - atom
-    - boundary
-    - diamond
-    - digit
-    - document
-    - law
-    - markup
-    - pronounceable
-    - speech
-    - typography
-    - word
-  matrix:
-    - atom
-    - boundary
-    - caption
-    - credit
-    - diamond
-    - digit
-    - digital
-    - document
-    - embedded
-    - law
-    - markup
-    - object
-    - phonetic
-    - pronounceable
-    - speech
-    - typography
-    - unit
-    - word
-  backlinks:
-    - atom
-    - boundary
-    - caption
-    - credit
-    - diamond
-    - digit
-    - digital
-    - document
-    - embedded
-    - law
-    - markup
-    - object
-    - phonetic
-    - pronounceable
-    - speech
-    - typography
-    - unit
-    - word
 signatures:
-  computationUuid: "b52fbc3c-ca17-83dc-bc51-e70ce2943478"
+  computationUuid: "71c0025b-0064-85ad-9bcd-51d684f99a45"
   stages:
     - stage: path
       stageUuid: "5929976f-0e1a-839c-b523-c18068d40fc2"
@@ -118,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "205d247b-8eef-8d14-b20b-df06f8c7a983"
     - stage: horo
-      stageUuid: "c28ed301-5e9c-8a82-aab4-298dc5de1258"
+      stageUuid: "df19726a-f96d-86eb-8cc7-1f045cf5c6f1"
     - stage: seal
-      stageUuid: "c4fee420-0643-8d26-9251-2ec4efa2e33e"
+      stageUuid: "8ce9b919-77fe-8068-9447-588efebdafbb"
     - stage: uuid
-      stageUuid: "acf9bde1-f3db-817c-9ae1-ead35daf137d"
+      stageUuid: "8984aed0-8b63-848d-8c86-e81fabee1802"
 version: 2
 ---
 # text — words ⊕ digits

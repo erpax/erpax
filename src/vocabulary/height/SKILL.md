@@ -1,53 +1,35 @@
 ---
 name: height
 description: Use when reasoning about height — The height of the item.
-atomPath: vocabulary/height
-coordinate: height · 2/share · 23cdd9af
-contentUuid: "d4a28de7-2e4f-5418-853b-00015cdd0ead"
-diamondUuid: "9dc6369e-bc28-8c9f-8954-e597958c97b8"
-uuid: "23cdd9af-510d-8dff-b120-b48fa37aa2fc"
-horo: 2
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/height"
+coordinate: "vocabulary/height · 1/base · a4c70174"
+contentUuid: "ad1ebca4-b59d-588f-8234-c2a81af793e0"
+diamondUuid: "f1117f31-5f76-8f4c-a7b4-7900a3118202"
+uuid: "a4c70174-de79-8fb1-845d-c1fe2b57c962"
+horo: 1
 typography:
-  partition: height
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "fbe651c8-f675-87df-bacd-da7dcf7ecd98"
+  computationUuid: "4b47df18-c731-8e70-91d7-93deed37af76"
   stages:
     - stage: path
-      stageUuid: "7afc95a1-7eeb-8219-b38e-6828b1ac3a2e"
+      stageUuid: "aafbc442-b6f7-834a-ade4-bdb549a8bfe8"
     - stage: trinity
-      stageUuid: "d80ddc63-57b8-8c08-b230-42367e4b37a4"
+      stageUuid: "a68b4327-e2d9-871b-a49b-a6908a303484"
     - stage: boundary
-      stageUuid: "8526e2a6-ffdb-84ab-be61-fb3e966d7ee8"
+      stageUuid: "767f6a41-36c9-83fd-8861-bdc5a30eb19b"
     - stage: links
-      stageUuid: "36f70afc-055d-8668-ae07-29aed13ef3fb"
+      stageUuid: "d5118f3e-974a-8caa-812c-b79f188a2e99"
     - stage: horo
-      stageUuid: "df725024-997e-80c6-848a-80ae87ad1700"
+      stageUuid: "b3205bf8-2f5d-8c48-8469-ce441a580c31"
     - stage: seal
-      stageUuid: "4544332a-3c7d-8369-83bf-191eb50c7da1"
+      stageUuid: "ea4843e4-694f-8b91-9760-993fad015c5d"
     - stage: uuid
-      stageUuid: "214dddd0-6a2e-8917-b247-54958fda027a"
+      stageUuid: "44c9b828-e648-87c2-9ccf-89055047a1fc"
 version: 2
 ---
 # height

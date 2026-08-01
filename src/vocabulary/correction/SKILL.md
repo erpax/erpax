@@ -1,53 +1,35 @@
 ---
 name: correction
 description: "Use when reasoning about correction — Indicates a correction to a CreativeWork, either via a CorrectionComment, textually or in another document."
-atomPath: vocabulary/correction
-coordinate: correction · 2/share · b810ac47
-contentUuid: "6d501741-56ef-54c2-8541-dcab0886bd55"
-diamondUuid: "0a41145a-ce8a-8053-9977-cc6048a85f30"
-uuid: "b810ac47-f6ae-8292-9ad3-74b7a8cfa891"
-horo: 2
-bonds:
-  in:
-    - comment
-    - law
-  out:
-    - comment
-    - law
+atomPath: "vocabulary/correction"
+coordinate: "vocabulary/correction · 8/crest · 2ea5a6ae"
+contentUuid: "9c779c68-139d-59cc-b8fc-02c86c25d0c9"
+diamondUuid: "66972947-4682-8572-8d78-92578411cceb"
+uuid: "2ea5a6ae-760c-864b-b0a6-cab31d9f0101"
+horo: 8
 typography:
-  partition: correction
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - comment
-    - law
-  matrix:
-    - comment
-    - law
-  backlinks:
-    - comment
-    - law
 signatures:
-  computationUuid: "a306ca24-3530-82ef-bc9d-e161a6c9eca6"
+  computationUuid: "5c93fc6a-2739-8f45-bff3-8864a7c9b36e"
   stages:
     - stage: path
-      stageUuid: "b14f18c3-75d3-8e12-bbae-d087ce14cf5c"
+      stageUuid: "66bf0da3-91ee-81a9-9641-31262807e83a"
     - stage: trinity
-      stageUuid: "cae08d6c-5593-8544-a934-185f51e62101"
+      stageUuid: "fe0a8864-1385-8b07-afa6-e229be7a36ca"
     - stage: boundary
-      stageUuid: "b3817619-1293-8590-812e-a439a5cdaf89"
+      stageUuid: "636e111d-b38a-8ffc-a9d4-d3ef2d9134ce"
     - stage: links
-      stageUuid: "cc0201a3-88f7-8ef9-b198-09c68a9edfe2"
+      stageUuid: "a5d02c29-03d2-8c07-8cf8-a6464a1b997f"
     - stage: horo
-      stageUuid: "be11bf88-b41a-8068-880e-692b97612d88"
+      stageUuid: "90126cca-490d-8962-82cd-831471c15e1e"
     - stage: seal
-      stageUuid: "a5338526-f4da-8998-9400-558d1bf09d3d"
+      stageUuid: "e85e75f6-45c2-839f-863f-c6ecdee6c874"
     - stage: uuid
-      stageUuid: "91474527-0361-8808-88d3-561df11b65bf"
+      stageUuid: "05df2caa-67d6-853a-8a79-e819391e1061"
 version: 2
 ---
 # correction

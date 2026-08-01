@@ -2,132 +2,34 @@
 name: realtime
 description: "Use when modeling live delivery of events — an append-only log plus a per-subscriber cursor, where the live tail is everything after the cursor; the pull-side semantics over a stream."
 atomPath: realtime
-coordinate: realtime · 5/round · 23b77817
-contentUuid: "d79cc54b-2408-52d6-8904-3e85f84505ee"
-diamondUuid: "1cfae3db-a163-8697-977f-8222d245366c"
-uuid: "23b77817-e4f3-8482-8196-0d8340de6df1"
+coordinate: "realtime · 5/round · fcfeea4c"
+contentUuid: "55ab0bbd-bc42-5b1a-a0fd-3f2d5894d1f2"
+diamondUuid: "d90b1fde-0c51-82ff-8fd4-07ad656e6fb0"
+uuid: "fcfeea4c-7658-8002-a85e-05862e34cfd9"
 horo: 5
-bonds:
-  in:
-    - access
-    - chat
-    - comms
-    - event
-    - live
-    - log
-    - memory
-    - number
-    - pi
-    - quantum
-    - receipt
-    - religion
-    - sequence
-    - stream
-    - team
-    - topography
-    - trading
-    - translator
-    - uuid
-    - wave
-  out:
-    - access
-    - chat
-    - comms
-    - event
-    - live
-    - log
-    - memory
-    - number
-    - pi
-    - quantum
-    - receipt
-    - religion
-    - sequence
-    - stream
-    - team
-    - topography
-    - trading
-    - translator
-    - uuid
-    - wave
 typography:
   partition: realtime
-  bondDegree: 66
-  neighbors: []
+  bondDegree: 74
 standards:
   - "append-only log + cursor (the pull-based realtime model)"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - chat
-    - comms
-    - event
-    - live
-    - receipt
-    - sequence
-    - stream
-    - team
-    - translator
-  matrix:
-    - access
-    - chat
-    - comms
-    - event
-    - live
-    - log
-    - memory
-    - number
-    - pi
-    - quantum
-    - receipt
-    - religion
-    - sequence
-    - stream
-    - team
-    - topography
-    - trading
-    - translator
-    - uuid
-    - wave
-  backlinks:
-    - access
-    - chat
-    - comms
-    - event
-    - live
-    - log
-    - memory
-    - number
-    - pi
-    - quantum
-    - receipt
-    - religion
-    - sequence
-    - stream
-    - team
-    - topography
-    - trading
-    - translator
-    - uuid
-    - wave
 signatures:
-  computationUuid: "4612edc6-8a3c-8941-8634-872f96ea7f7f"
+  computationUuid: "f7010e76-6f6c-8be1-b7fd-20cbfd9cbe99"
   stages:
     - stage: path
       stageUuid: "3a6f25d1-e0df-8b72-92dd-b5c707d6935a"
     - stage: trinity
       stageUuid: "6d59d6cf-03cd-8c00-8faf-786fe8f944a9"
     - stage: boundary
-      stageUuid: "84660dca-cbb7-8f48-a43a-92d952677f61"
+      stageUuid: "e1709677-5883-852d-89c7-e64ec1561c41"
     - stage: links
       stageUuid: "a2579ebf-7f36-848d-9ac1-e16b670a2f7c"
     - stage: horo
-      stageUuid: "146ab988-1085-8fe7-adec-ae6a284e211d"
+      stageUuid: "012e3d23-4b1e-8e00-92ea-a91456f2dfce"
     - stage: seal
-      stageUuid: "ba6a231e-ef33-88c5-905f-6d737747b050"
+      stageUuid: "5dd1fb97-0bf3-8837-9f58-69e9eef0b4f3"
     - stage: uuid
-      stageUuid: "d778966f-785c-8fe3-9f9d-d37d5164bcc2"
+      stageUuid: "93558e4b-6ca3-8345-bbc7-134ecaa2b57c"
 version: 2
 ---
 # realtime — the live tail

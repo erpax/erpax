@@ -1,53 +1,35 @@
 ---
 name: parents
 description: Use when reasoning about parents — A parents of the person.
-atomPath: vocabulary/parents
-coordinate: parents · 8/crest · 58ad1679
-contentUuid: "d9c7f04c-5407-55a7-bb72-ba34d9f80646"
-diamondUuid: "45179b48-2c2e-80cf-bb90-cc179ea0d18e"
-uuid: "58ad1679-6b56-8e17-a399-1a329830cfb6"
+atomPath: "vocabulary/parents"
+coordinate: "vocabulary/parents · 8/crest · 47fb81a0"
+contentUuid: "5d58efe1-e37c-5717-ba63-47d4d1cb26d3"
+diamondUuid: "c47000be-20a8-8025-a5d3-9cb8691f4bfc"
+uuid: "47fb81a0-983e-895d-88e3-218703c0f05e"
 horo: 8
-bonds:
-  in:
-    - law
-    - person
-  out:
-    - law
-    - person
 typography:
-  partition: parents
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - person
-  matrix:
-    - law
-    - person
-  backlinks:
-    - law
-    - person
 signatures:
-  computationUuid: "3407bf35-8338-8338-8e4b-98417d0b6902"
+  computationUuid: "4bb9e0cb-833d-8d24-82c2-f374ad1a20c8"
   stages:
     - stage: path
-      stageUuid: "2163b64c-69b7-824c-90b8-589d7d201ad0"
+      stageUuid: "78f62e3a-c354-8c5d-ae8b-8ea949b56de8"
     - stage: trinity
-      stageUuid: "a1e30a0c-d7ef-8414-bf7a-019060380d8b"
+      stageUuid: "3d3abd89-9a6c-8edc-9a61-56e5b52b0086"
     - stage: boundary
-      stageUuid: "641fc854-94a2-8a3b-82bf-ae26ce16aa6d"
+      stageUuid: "347b2c04-c70c-85f3-9e64-68f1566c2743"
     - stage: links
-      stageUuid: "2d5b2ed0-7023-84f6-80b4-a8beb249d619"
+      stageUuid: "2c758713-8b1f-8e68-aaeb-fd0377306568"
     - stage: horo
-      stageUuid: "c26e6a72-c5a1-898a-9876-9e765ed42f07"
+      stageUuid: "e0bdeea3-925a-8a81-937c-922349c5addd"
     - stage: seal
-      stageUuid: "f3405ffb-a303-8a44-852f-72ce9f40f0dd"
+      stageUuid: "bf58b853-c822-8be3-8b29-a550ede04433"
     - stage: uuid
-      stageUuid: "bb2a5c08-9f00-873e-a542-65b16942ce8a"
+      stageUuid: "5878b4a9-4776-812a-b77d-5814b0f48c6f"
 version: 2
 ---
 # parents

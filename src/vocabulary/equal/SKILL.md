@@ -1,63 +1,35 @@
 ---
 name: equal
 description: Use when reasoning about equal — This ordering relation for qualitative values indicates that the subject is equal to the object.
-atomPath: vocabulary/equal
-coordinate: equal · 8/crest · 2198e72b
-contentUuid: "f4870b36-3eff-5584-ba99-4749e09a2fa6"
-diamondUuid: "dd1e9660-ea4a-8711-81bf-265985fc516a"
-uuid: "2198e72b-05f7-8679-b3d5-1ff241191852"
-horo: 8
-bonds:
-  in:
-    - greater
-    - law
-    - lesser
-    - non
-  out:
-    - greater
-    - law
-    - lesser
-    - non
+atomPath: "vocabulary/equal"
+coordinate: "vocabulary/equal · 7/descent · 42e6bd95"
+contentUuid: "bf863875-040d-56de-a177-b515b3c03e19"
+diamondUuid: "67fd0a70-64f1-8f84-9bda-3b9ba4c8c91a"
+uuid: "42e6bd95-3f3e-8941-9abc-c6f02ff2a022"
+horo: 7
 typography:
-  partition: equal
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - greater
-    - law
-    - lesser
-    - non
-  matrix:
-    - greater
-    - law
-    - lesser
-    - non
-  backlinks:
-    - greater
-    - law
-    - lesser
-    - non
 signatures:
-  computationUuid: "afb51248-3143-8f89-9e53-a462ec6355b5"
+  computationUuid: "5079d42d-0009-8cb0-be49-92787eb18c4c"
   stages:
     - stage: path
-      stageUuid: "e0a314d4-2356-864d-a975-7b9aba00010e"
+      stageUuid: "ef7f8356-89c4-8d50-b697-b0a1cb65e5c8"
     - stage: trinity
-      stageUuid: "e5af2325-3048-8e99-b043-09eb5ef3f95c"
+      stageUuid: "e8df892d-b652-8084-8562-62f4c45d90f2"
     - stage: boundary
-      stageUuid: "be9e32f2-3003-806d-acb7-a248cd698990"
+      stageUuid: "45e06349-53d8-85b9-9cdf-9e57f891a515"
     - stage: links
-      stageUuid: "9d8cec5f-3cde-8689-b191-e3678b2ccf54"
+      stageUuid: "8067c372-ef25-870e-b587-d1c48be01f98"
     - stage: horo
-      stageUuid: "9a446cbb-f188-8f7b-b993-6354e50b633b"
+      stageUuid: "f302ac50-b2a2-82d5-9939-a49c91810503"
     - stage: seal
-      stageUuid: "6f89fa35-3a78-844a-9288-b60fc6a2779a"
+      stageUuid: "3e100a09-6b5b-8f4d-82bd-89e548f3d688"
     - stage: uuid
-      stageUuid: "93f48b7d-da9c-898b-abbd-c6e67efdbb80"
+      stageUuid: "e42b00eb-5f54-8900-922b-3556bd627a53"
 version: 2
 ---
 # equal

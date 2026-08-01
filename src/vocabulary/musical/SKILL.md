@@ -1,68 +1,35 @@
 ---
 name: musical
 description: "Use when reasoning about musical — A schema.org component word, collided out of schema.org compounds — fused from musicalKey (sti · collapse · merge)."
-atomPath: vocabulary/musical
-coordinate: musical · 4/weave · 72cd358d
-contentUuid: "36d3ff0a-5dc7-5513-a793-d567be4ee569"
-diamondUuid: "e049a5a6-10db-85b4-a971-dd3c99ab011e"
-uuid: "72cd358d-9be3-8567-b058-14c9eb154961"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - key
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - key
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/musical"
+coordinate: "vocabulary/musical · 7/descent · b7f8cbdd"
+contentUuid: "7189cbb6-1b34-5477-940d-287035f161c2"
+diamondUuid: "50a41ec0-0fce-8ad5-ada7-99e2d9ddc40e"
+uuid: "b7f8cbdd-3569-83b3-b422-c1ec7bd5a224"
+horo: 7
 typography:
-  partition: musical
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - key
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - key
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - key
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "1b42d1d7-a412-82c4-b167-0d6e39c57149"
+  computationUuid: "df4027c2-3cc1-8e6b-afe5-c5d913442a8e"
   stages:
     - stage: path
-      stageUuid: "1bd16dbe-5197-8fd4-8b20-3f78fa56e232"
+      stageUuid: "310bfebf-d529-8b46-baf9-0739b74b04d2"
     - stage: trinity
-      stageUuid: "f6a029e6-3050-8c12-876a-1bdc757668e1"
+      stageUuid: "3b094b30-d002-8261-8708-fb4dc165fb22"
     - stage: boundary
-      stageUuid: "eb18174d-c2f4-8ada-8d85-66d8b1c6b917"
+      stageUuid: "d12a332c-a301-8d08-aca2-5a6e367514bf"
     - stage: links
-      stageUuid: "95518874-90f9-8678-a7b5-6a8e82b90db5"
+      stageUuid: "c8711a0c-c297-80ec-81e8-68d0e6c2df88"
     - stage: horo
-      stageUuid: "d8782c0d-ca08-8b59-a5f6-b923a3d13de5"
+      stageUuid: "2b92b1a9-8e97-8f9b-9c6e-f32334a38b58"
     - stage: seal
-      stageUuid: "635f2281-565c-8edc-9a44-790065187e3d"
+      stageUuid: "3ee33267-0c5d-857e-8713-44ff63f073da"
     - stage: uuid
-      stageUuid: "215a9a4c-39fe-8dc7-94a3-b27c83ea039b"
+      stageUuid: "665a865a-8477-8b52-8fb1-cedf9258a5dc"
 version: 2
 ---
 # musical

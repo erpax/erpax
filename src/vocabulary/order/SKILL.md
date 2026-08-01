@@ -1,142 +1,35 @@
 ---
 name: order
 description: "Use when reasoning about order — An order is a confirmation of a transaction (a receipt), which can contain multiple line items, each represented by an Offer that has been accepted by the customer."
-atomPath: vocabulary/order
-coordinate: order · 5/round · a8ed97a7
-contentUuid: "481f32bf-5291-58f9-bb79-ff7d6ecf5459"
-diamondUuid: "bbd0c83e-2ad8-8e56-aedb-9475cccf7ed5"
-uuid: "a8ed97a7-af08-8cf7-b3ec-69fbe90eecfe"
-horo: 5
-bonds:
-  in:
-    - action
-    - archangel
-    - architect
-    - catholicism
-    - confucianism
-    - date
-    - delivery
-    - item
-    - law
-    - list
-    - number
-    - part
-    - percentage
-    - pre
-    - quantity
-    - references
-    - ritual
-    - status
-    - type
-    - value
-    - zoroastrianism
-  out:
-    - action
-    - archangel
-    - architect
-    - catholicism
-    - confucianism
-    - date
-    - delivery
-    - item
-    - law
-    - list
-    - number
-    - part
-    - percentage
-    - pre
-    - quantity
-    - references
-    - ritual
-    - status
-    - type
-    - value
-    - zoroastrianism
+atomPath: "vocabulary/order"
+coordinate: "vocabulary/order · 1/base · 6af7a811"
+contentUuid: "2bf21c38-11b9-51a5-8aa5-e85d20e9e014"
+diamondUuid: "e06ca532-00ca-8dc5-ba2c-c06fef26701a"
+uuid: "6af7a811-cdc2-8cae-8d2a-874f84b848ac"
+horo: 1
 typography:
-  partition: order
+  partition: vocabulary
   bondDegree: 70
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - date
-    - delivery
-    - item
-    - law
-    - list
-    - number
-    - part
-    - percentage
-    - pre
-    - quantity
-    - references
-    - status
-    - type
-    - value
-  matrix:
-    - action
-    - archangel
-    - architect
-    - catholicism
-    - confucianism
-    - date
-    - delivery
-    - item
-    - law
-    - list
-    - number
-    - part
-    - percentage
-    - pre
-    - quantity
-    - references
-    - ritual
-    - status
-    - type
-    - value
-    - zoroastrianism
-  backlinks:
-    - action
-    - archangel
-    - architect
-    - catholicism
-    - confucianism
-    - date
-    - delivery
-    - item
-    - law
-    - list
-    - number
-    - part
-    - percentage
-    - pre
-    - quantity
-    - references
-    - ritual
-    - status
-    - type
-    - value
-    - zoroastrianism
 signatures:
-  computationUuid: "1165f02e-3f70-8e41-a661-ac0fb5f72996"
+  computationUuid: "8713d2f7-67d9-8907-b549-e63f3b7132ff"
   stages:
     - stage: path
-      stageUuid: "7a9da869-5dae-8f19-b067-42bc19a7ab43"
+      stageUuid: "44c06513-31df-865b-b240-a887d80a95c2"
     - stage: trinity
-      stageUuid: "11228d2d-c03c-8b84-ae96-66ec589f1a9e"
+      stageUuid: "8a60eaea-7bea-8f6d-9f6f-9017a3dac3ad"
     - stage: boundary
-      stageUuid: "bc50b75b-989d-83f6-9a16-a7294b6feaf5"
+      stageUuid: "6790d8ee-cfd9-81d0-86d3-8a7272fab07e"
     - stage: links
-      stageUuid: "63e8cd74-9094-81b9-b896-097bbfb6c8aa"
+      stageUuid: "59c0f551-a936-85eb-bbfc-e89820c1c98f"
     - stage: horo
-      stageUuid: "08022a90-3689-880b-8792-058053c74e87"
+      stageUuid: "3d7ee240-8046-86e6-9f1e-587484272603"
     - stage: seal
-      stageUuid: "bce2e48d-9d9f-8889-83d1-950ec5d23a57"
+      stageUuid: "871fa972-80fe-8673-9f8a-6c78a7436079"
     - stage: uuid
-      stageUuid: "0b548a9d-74fc-8cca-929b-1cc6cfc02357"
+      stageUuid: "e595bbe9-9673-88e8-9dae-bf2f44ea252f"
 version: 2
 ---
 # order

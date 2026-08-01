@@ -1,68 +1,35 @@
 ---
 name: operator
 description: "Use when reasoning about operator as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/operator
-coordinate: operator · 8/crest · 10e6a9dd
-contentUuid: "b04325d2-0cce-5c62-9db0-6d1325c99b34"
-diamondUuid: "77def7cd-d5b6-890d-82ce-d06566ef19e1"
-uuid: "10e6a9dd-06b7-8885-a90f-b8115731755f"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - service
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - service
-    - sti
+atomPath: "vocabulary/operator"
+coordinate: "vocabulary/operator · 7/descent · e8cf6e13"
+contentUuid: "ce62c1a1-1ec3-5e1d-8524-135989993208"
+diamondUuid: "3160e2a1-596b-8b32-8d65-98eb9f129c80"
+uuid: "e8cf6e13-fbcf-87f7-adec-a1f32b0ea6bc"
+horo: 7
 typography:
-  partition: operator
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - service
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - service
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - service
-    - sti
 signatures:
-  computationUuid: "76eccafb-a33c-821c-9f87-410d2da91df6"
+  computationUuid: "82e5fd62-a7fe-8733-ad1a-3333f367ebbf"
   stages:
     - stage: path
-      stageUuid: "46b94d3b-1f11-89d8-acce-5b6756829267"
+      stageUuid: "6eb5de60-e0c7-8cfe-8237-112f0b118795"
     - stage: trinity
-      stageUuid: "feca524a-67e6-86f4-828a-a75c4e504625"
+      stageUuid: "0777b39e-28f4-840a-8b91-ca1f4665fa7c"
     - stage: boundary
-      stageUuid: "8bb7e89c-e802-87a0-99a4-05465e48d34f"
+      stageUuid: "753b8c1e-a634-8e7a-9c7d-88e4e416ce49"
     - stage: links
-      stageUuid: "e09c1ecd-06c5-8daa-a8ce-c35d270e071c"
+      stageUuid: "7cb91c03-cdc9-84ec-a99f-113695a73c5b"
     - stage: horo
-      stageUuid: "90eae78b-cb31-85e3-9ddb-88d410a88a5b"
+      stageUuid: "dea3cdc0-39cc-8f01-b6ca-462aadf8b638"
     - stage: seal
-      stageUuid: "e09b10a8-8c39-8733-b99c-1b6e19fd6c82"
+      stageUuid: "d4c95e7d-4ce1-8edc-8fa6-8c15aa87dc82"
     - stage: uuid
-      stageUuid: "e3f498e8-fc93-845a-ad15-0039c97076bd"
+      stageUuid: "e88ef4e4-afca-8300-856c-f2f97fcf8e4e"
 version: 2
 ---
 # operator

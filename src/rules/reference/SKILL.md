@@ -1,8 +1,43 @@
 ---
 name: reference
 description: "Use when the statute→code trace must resolve — the gate that a `src/…` path cited in prose or comments actually exists. The corpus fails closed on dead atom links but left dead FILE-PATH pointers ungated, and they rotted: the Наредба Н-18 law pointed at a standards path long after the matter moved. A citation that leads nowhere is unreviewable (ISO-19011 §6.4), so a legally usable ERP cannot have one. Zero tolerance on the statutory surface; a down-only ratchet elsewhere. Run: tsx src/rules/reference/index.ts"
+atomPath: "rules/reference"
+coordinate: "rules/reference · 4/weave · 6d2e66f1"
+contentUuid: "68608906-17bc-5f80-861c-6d80e40c56b8"
+diamondUuid: "8c49980b-4055-8143-905a-37b23d7a92d6"
+uuid: "6d2e66f1-2d6a-8f23-9a00-607dc77de367"
+horo: 4
+typography:
+  partition: rules
+  bondDegree: 81
+standards:
+  - "BG |Наредба|СУПТО|ЗДДС|ЗСч/.test(text)"
+  - "BG Наредба-Н-18 §СУПТО — the software must be documented and inspectable"
+  - "BG`, Наредба, СУПТО, ЗДДС, ЗСч). Legal auditability is not something you ratchet"
+  - "ISO-19011:2018 §6.4 audit-evidence — the citation must lead to the evidence"
+  - "Naredba-N-18"
+  - ZDDS
+  - "ZDDS — BG Value Added Tax Act; statute→code traces for fiscal citations fail closed here (not prose-only under rules/)"
+bindings: []
+signatures:
+  computationUuid: "b6ebf5aa-3960-8e74-ba1d-470490cf1b48"
+  stages:
+    - stage: path
+      stageUuid: "86832b64-e6a5-86a1-ace5-29376412f4d1"
+    - stage: trinity
+      stageUuid: "92ddad11-d1d1-8301-9156-66b5f80c49a7"
+    - stage: boundary
+      stageUuid: "9fa2a92f-1bd3-86bd-9746-06d82bc15295"
+    - stage: links
+      stageUuid: "fc98578e-f12a-85ad-90d2-1b6dcd4188ef"
+    - stage: horo
+      stageUuid: "381fcde7-70d7-8a80-81e4-bff1c11dcf5f"
+    - stage: seal
+      stageUuid: "ac1e0d49-543a-8fa9-a0d7-82885f0e7986"
+    - stage: uuid
+      stageUuid: "3e1c7491-4c75-8312-a683-edb5d1e56529"
+version: 2
 ---
-
 # reference — the citation must lead to the evidence
 
 The corpus already fails closed on a dead atom link ([[confirm]]). A dead **file-path** reference was ungated — and it rotted. [[supto]] stated the Наредба Н-18 law and pointed at a `standards/` path; the matter had moved under the naredba atom in the folder-law restructuring, and **ten files** kept the stale pointer. Anyone tracing the statute to its implementation followed a 404.

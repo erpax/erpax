@@ -1,124 +1,34 @@
 ---
 name: id
 description: "Use when reasoning about identity — the machine-address of an entity, content-addressed (content-uuid) or tenant-local (sequential). Never conflate with name (human label) or number (document handle). The id is what federates and merges."
-atomPath: vocabulary/id
-coordinate: id · 5/round · e527b163
-contentUuid: "c4a05035-be98-599e-b460-8df0e3255886"
-diamondUuid: "f4d77079-aed4-8c69-beb6-d60a8264174a"
-uuid: "e527b163-046c-8d5b-9265-c77e9e62a352"
-horo: 5
-bonds:
-  in:
-    - animal
-    - broadcast
-    - channel
-    - cvd
-    - database
-    - facility
-    - group
-    - id
-    - identity
-    - law
-    - merge
-    - number
-    - plan
-    - product
-    - property
-    - reservation
-    - uses
-    - uuid
-    - vat
-  out:
-    - animal
-    - broadcast
-    - channel
-    - cvd
-    - database
-    - facility
-    - group
-    - id
-    - identity
-    - law
-    - merge
-    - number
-    - plan
-    - product
-    - property
-    - reservation
-    - uses
-    - uuid
-    - vat
+atomPath: "vocabulary/id"
+coordinate: "vocabulary/id · 7/descent · aa4e1f75"
+contentUuid: "2f18f14b-cc34-5330-93ac-e03aa5e2000c"
+diamondUuid: "0fe20f6e-6108-8266-a40a-569b7bed116e"
+uuid: "aa4e1f75-aaa0-8358-94a3-56eba65dc610"
+horo: 7
 typography:
-  partition: id
-  bondDegree: 61
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 56
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - database
-    - identity
-    - law
-    - merge
-    - number
-    - uuid
-  matrix:
-    - animal
-    - broadcast
-    - channel
-    - cvd
-    - database
-    - facility
-    - group
-    - id
-    - identity
-    - law
-    - merge
-    - number
-    - plan
-    - product
-    - property
-    - reservation
-    - uses
-    - uuid
-    - vat
-  backlinks:
-    - animal
-    - broadcast
-    - channel
-    - cvd
-    - database
-    - facility
-    - group
-    - id
-    - identity
-    - law
-    - merge
-    - number
-    - plan
-    - product
-    - property
-    - reservation
-    - uses
-    - uuid
-    - vat
 signatures:
-  computationUuid: "0e972876-4958-826a-aa64-3fe2fe9c2f39"
+  computationUuid: "06845c4e-e331-89f1-890a-aa528a78bed6"
   stages:
     - stage: path
-      stageUuid: "3057ff8c-7587-84ed-825b-91ec42bb5b68"
+      stageUuid: "d3b1951e-947c-83f9-997a-69cd26498875"
     - stage: trinity
-      stageUuid: "b5b392d6-b209-8844-8eb5-62e2b174ed13"
+      stageUuid: "80ce25a0-cf18-81ac-b5d0-ec85874b33ee"
     - stage: boundary
-      stageUuid: "d8dd2172-d1c0-8e23-948f-d41787aacd1e"
+      stageUuid: "3ca9e3c8-7c0e-8744-bec0-e9b34176f0c1"
     - stage: links
-      stageUuid: "7458d8b8-93da-891d-b670-720797d9d86e"
+      stageUuid: "1ada9aac-e1ef-897d-b830-eb87728a42c3"
     - stage: horo
-      stageUuid: "366659e9-926c-8234-8b35-ab70b24d8b40"
+      stageUuid: "2921111c-51d9-8a96-8cfd-416ac1c2b35d"
     - stage: seal
-      stageUuid: "0a98bc56-fefd-80b1-8520-3dc1302ba3e6"
+      stageUuid: "d860f4b5-9754-834f-8c7a-dd55fd064a06"
     - stage: uuid
-      stageUuid: "b71dc5a2-a6c2-89ea-a284-bf81e086eda2"
+      stageUuid: "ed269c1a-f924-8a4a-a6e6-d292fd58088f"
 version: 2
 ---
 # id

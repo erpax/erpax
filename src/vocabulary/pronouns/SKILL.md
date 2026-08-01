@@ -1,57 +1,35 @@
 ---
 name: pronouns
 description: Use when reasoning about pronouns — A short string listing or describing pronouns for a person. Typically the person concerned is the best authority as pronouns are a critical part of personal identity and expression
-atomPath: vocabulary/pronouns
-coordinate: pronouns · 7/descent · 1633e2e9
-contentUuid: "0f1dc97f-7014-5b56-863e-de127ab130a2"
-diamondUuid: "873968e8-9bf4-8811-a0d4-f118e9914dc2"
-uuid: "1633e2e9-ec39-8e38-b38e-2b1aeba94b08"
-horo: 7
-bonds:
-  in:
-    - law
-    - pronoun
-    - thing
-  out:
-    - law
-    - pronoun
-    - thing
+atomPath: "vocabulary/pronouns"
+coordinate: "vocabulary/pronouns · 5/round · 67444eb6"
+contentUuid: "698b679a-35a4-5cdb-9d07-2e650e291244"
+diamondUuid: "92a8fb31-c29b-8f14-8a85-a7e319ea197f"
+uuid: "67444eb6-d8aa-8927-aed4-740419e581eb"
+horo: 5
 typography:
-  partition: pronouns
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - pronoun
-    - thing
-  backlinks:
-    - law
-    - pronoun
-    - thing
 signatures:
-  computationUuid: "8b5902e2-9f19-861b-8bfb-ca1a73ac2a74"
+  computationUuid: "f3c21926-a35a-80a6-8c28-49a45524c2f6"
   stages:
     - stage: path
-      stageUuid: "9458b4e2-0d0e-84c6-9ca6-16ea7fc4fb33"
+      stageUuid: "342b6a28-b424-8c50-8278-3c2e66fb9e22"
     - stage: trinity
-      stageUuid: "52a0ec11-e1ef-8094-a7e3-c695b2c67c3c"
+      stageUuid: "6ae9fe2a-b51a-8f27-86bf-8860918a6614"
     - stage: boundary
-      stageUuid: "b6bd88f5-9825-8450-be56-96fe58a12b25"
+      stageUuid: "c5cbecb4-75c6-84bd-97b3-d707369bf9a1"
     - stage: links
-      stageUuid: "c8c99e5f-68d6-832e-aea3-b5ae99a53e81"
+      stageUuid: "2c35f728-b6da-8712-abab-5cc8f0c565fd"
     - stage: horo
-      stageUuid: "881bb9b8-f9fd-8448-b154-f3c52f54811a"
+      stageUuid: "c8d70752-340d-8f04-b8ca-0298e8c0f53a"
     - stage: seal
-      stageUuid: "c12d978a-9a58-8515-a191-b54205d35207"
+      stageUuid: "b6c6a5db-25cf-8f19-b325-60f312cdb644"
     - stage: uuid
-      stageUuid: "8b67714f-a80f-8baa-833d-f6c56cc66061"
+      stageUuid: "5beae3f7-f102-8bdd-9e2f-133f0df55209"
 version: 2
 ---
 # pronouns

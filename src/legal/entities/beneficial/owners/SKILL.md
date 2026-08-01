@@ -2,34 +2,14 @@
 name: owners
 description: "Use when registering ultimate beneficial owners of a legal entity — direct/indirect ownership percent, control type, PEP status, KYC check link, and AMLD-5/CTA-required identification. The AML/Corporate-Transparency-Act UBO register."
 atomPath: "legal/entities/beneficial/owners"
-coordinate: "legal/entities/beneficial/owners · 2/share · 6dfabcb6"
-contentUuid: "2296d6da-7c22-5238-8636-fb888d305eaf"
-diamondUuid: "1f43424f-0988-827a-94cc-4a1aa97797a3"
-uuid: "6dfabcb6-128a-81b2-8c49-f1a99371f842"
-horo: 2
-bonds:
-  in:
-    - accounting
-    - auth
-    - entities
-    - identity
-    - law
-    - previous
-    - proof
-    - standard
-  out:
-    - accounting
-    - auth
-    - entities
-    - identity
-    - law
-    - previous
-    - proof
-    - standard
+coordinate: "legal/entities/beneficial/owners · 1/base · 96f98374"
+contentUuid: "6c577da3-42c6-52ec-9238-388f3717f01e"
+diamondUuid: "811d7cb0-e4f0-8445-9184-9e6a85df3eaf"
+uuid: "96f98374-e9d6-8070-bc51-4421d5b80270"
+horo: 1
 typography:
   partition: legal
   bondDegree: 24
-  neighbors: []
 standards:
   - "EU-AMLD-5 Directive-2018/843 ubo-register"
   - "FATF-Recommendation-24 transparency-of-legal-persons"
@@ -39,34 +19,8 @@ standards:
   - "US-CTA Corporate-Transparency-Act-2021 beneficial-ownership"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - auth
-    - identity
-    - law
-    - proof
-    - standard
-  matrix:
-    - accounting
-    - auth
-    - entities
-    - identity
-    - law
-    - previous
-    - proof
-    - standard
-  backlinks:
-    - accounting
-    - auth
-    - entities
-    - identity
-    - law
-    - previous
-    - proof
-    - standard
 signatures:
-  computationUuid: "d105b9d1-50bb-812b-a05f-61c165e809f8"
+  computationUuid: "624803ce-0f52-89cb-96fb-6b58ebded1c8"
   stages:
     - stage: path
       stageUuid: "046d4b8f-713f-8dd0-acb3-0d78854211d4"
@@ -77,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "995e00a5-2198-8bb7-9893-6259d70fee68"
     - stage: horo
-      stageUuid: "758ae4cf-8a77-84b1-8cc1-4bb9ae43ef1b"
+      stageUuid: "605a29c6-b16f-843e-a7f1-6c66799c2cb8"
     - stage: seal
       stageUuid: "fc402a99-a20c-830c-bb58-783fdcbb271f"
     - stage: uuid
-      stageUuid: "7d682502-c9c9-8585-973b-57d883f0b4cf"
+      stageUuid: "6ba0a997-ea11-81cf-824e-c68179142b07"
 version: 2
 ---
 # beneficial-owners

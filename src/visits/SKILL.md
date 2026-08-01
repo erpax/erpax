@@ -2,61 +2,19 @@
 name: visits
 description: "Use when reasoning about visits as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: visits
-coordinate: visits · 4/weave · c500fa62
-contentUuid: "67326bc0-9bef-52e5-9015-565cf3852b2d"
-diamondUuid: "61c4498d-4551-89f2-bd8b-6f8f0fde88ef"
-uuid: "c500fa62-c4a6-8a37-8a6f-e50b2e8b5824"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
-    - user
-    - visit
-  out:
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
-    - user
-    - visit
+coordinate: "visits · 2/share · 8d605e16"
+contentUuid: "d67ed159-1ee7-5d70-8713-59a0e7491d18"
+diamondUuid: "bde92101-6a03-87fb-b7fb-e03926f39e18"
+uuid: "8d605e16-fac8-8a14-b580-4746704f1621"
+horo: 2
 typography:
   partition: visits
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
-    - user
-  matrix:
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
-    - user
-    - visit
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
-    - user
-    - visit
 signatures:
-  computationUuid: "fc000ae2-dd99-8713-af1b-3f0f404f34bc"
+  computationUuid: "006b5b9f-c12d-8bce-9b9f-7d3e76f508ff"
   stages:
     - stage: path
       stageUuid: "20f337b6-9081-8878-8079-17ed61234989"
@@ -67,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "58482f6f-faf9-8dfe-ab18-9103c2a98a7f"
     - stage: horo
-      stageUuid: "497e12a0-d0f7-86f2-b5c8-9e250f4034c6"
+      stageUuid: "6c81e56c-3ad0-8f9c-9e45-ebb30804e0fb"
     - stage: seal
-      stageUuid: "73fd8f23-c925-84a4-9050-8d30ea1cc3d9"
+      stageUuid: "b2e51738-08a3-840e-8c31-8cb86a531c6c"
     - stage: uuid
-      stageUuid: "bedf2eb2-afe4-898d-8078-6f025f1e0115"
+      stageUuid: "7bf1914d-2674-8d55-b183-5bab28b98566"
 version: 2
 ---
 # visits

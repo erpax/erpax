@@ -1,84 +1,35 @@
 ---
 name: fire
 description: "Use when reasoning about fire as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/fire
-coordinate: fire · 4/weave · f902830b
-contentUuid: "af5ba6c7-a2c1-50f6-a64f-96df7c2ade95"
-diamondUuid: "d2fa6f18-5ed1-8cb5-8b4d-38524afa8a7c"
-uuid: "f902830b-6b9d-84b8-be3b-e7ed6192e18e"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - hinduism
-    - law
-    - merge
-    - paganism
-    - ritual
-    - station
-    - sti
-    - zoroastrianism
-  out:
-    - collapse
-    - hinduism
-    - law
-    - merge
-    - paganism
-    - ritual
-    - station
-    - sti
-    - zoroastrianism
+atomPath: "vocabulary/fire"
+coordinate: "vocabulary/fire · 8/crest · 86340abb"
+contentUuid: "eaf2c310-2b20-587f-a5d4-17725a36a002"
+diamondUuid: "acaadda7-2978-89aa-8ed6-bc4f35669370"
+uuid: "86340abb-e8ac-8c9e-9fd4-1cd942aa7600"
+horo: 8
 typography:
-  partition: fire
+  partition: vocabulary
   bondDegree: 28
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - station
-    - sti
-  matrix:
-    - collapse
-    - hinduism
-    - law
-    - merge
-    - paganism
-    - ritual
-    - station
-    - sti
-    - zoroastrianism
-  backlinks:
-    - collapse
-    - hinduism
-    - law
-    - merge
-    - paganism
-    - ritual
-    - station
-    - sti
-    - zoroastrianism
 signatures:
-  computationUuid: "d79baf24-d0a0-8aa2-a47c-c8fe69197538"
+  computationUuid: "568e9836-1da8-8248-a6af-504c66770823"
   stages:
     - stage: path
-      stageUuid: "91d0f995-3857-86f4-bcff-751ccf0d0b9b"
+      stageUuid: "43a518e2-1c4a-83ba-84dc-af22a6b94c0c"
     - stage: trinity
-      stageUuid: "a29ac4b8-9671-86f6-a595-881cf48a4f8b"
+      stageUuid: "01405130-6eb3-84d7-a39f-ca57250ecc12"
     - stage: boundary
-      stageUuid: "bb7b1517-9f99-8709-b3ff-a74ea96d417f"
+      stageUuid: "446a9821-a1a0-8dbf-b9d6-f0bf7fb1ab17"
     - stage: links
-      stageUuid: "7c5e0c7b-fded-868c-ac7c-0c2700ed3d09"
+      stageUuid: "6e91f14f-3bde-8767-8e67-759a3f61d6a5"
     - stage: horo
-      stageUuid: "bcbd3882-ae1f-8769-9c11-0de67ceaf36c"
+      stageUuid: "44ea56c9-37bf-834b-a30f-292178548947"
     - stage: seal
-      stageUuid: "ad662a0f-8c87-842b-be54-c347561cd0a2"
+      stageUuid: "330295e2-6669-8f39-bbcb-50ea9b1af3d0"
     - stage: uuid
-      stageUuid: "30e9ed7f-c28b-8e51-8b45-806e83f4852c"
+      stageUuid: "2cdc2640-ed24-887d-935d-7cca7e00f6c1"
 version: 2
 ---
 # fire

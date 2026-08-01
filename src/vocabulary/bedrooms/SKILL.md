@@ -1,68 +1,35 @@
 ---
 name: bedrooms
 description: "Use when reasoning about bedrooms as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/bedrooms
-coordinate: bedrooms · 5/round · c6ab01c3
-contentUuid: "b8a29757-e26c-5296-8304-3db374955517"
-diamondUuid: "9ccc8661-d027-8150-a788-b953f2f8973d"
-uuid: "c6ab01c3-d73f-8cec-8f23-417ffe3e841a"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
+atomPath: "vocabulary/bedrooms"
+coordinate: "vocabulary/bedrooms · 8/crest · 5ace9cc7"
+contentUuid: "3fabf7ab-b3eb-55ce-932c-a0b1d29ac734"
+diamondUuid: "d9aef3ce-f94f-87e7-add4-acfe71ddbd02"
+uuid: "5ace9cc7-be43-8afe-bfe3-189ae23e27cc"
+horo: 8
 typography:
-  partition: bedrooms
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
 signatures:
-  computationUuid: "d683359b-a029-8a86-94ef-b087f463b1f3"
+  computationUuid: "1a33512f-6023-89ae-a8f7-ee58214a7fd4"
   stages:
     - stage: path
-      stageUuid: "ff3d379e-541e-8d1e-beb2-817e40782db6"
+      stageUuid: "a424ac0f-334c-83e5-8203-13a4f32535f9"
     - stage: trinity
-      stageUuid: "02496bae-c5a7-8ae1-9cdc-428b77280960"
+      stageUuid: "adfe4ecd-39e4-8672-9daf-3c141b25ba5d"
     - stage: boundary
-      stageUuid: "bbf10755-add1-8213-a3fa-7a80ca260d77"
+      stageUuid: "abf142ae-7d64-88d0-8c2f-8d6500abd421"
     - stage: links
-      stageUuid: "de184011-d1ff-8422-a2b7-43f744029f01"
+      stageUuid: "77537656-83fa-8007-89f1-655811eb5652"
     - stage: horo
-      stageUuid: "1d18ede7-2260-85dd-997d-45b69a0f0191"
+      stageUuid: "ca159a13-7b13-8d89-b347-ede3be91a79d"
     - stage: seal
-      stageUuid: "6d022bfa-a9fd-8bf7-82d4-b8d7e824c970"
+      stageUuid: "b66e5806-8202-8649-8c89-f47260201df2"
     - stage: uuid
-      stageUuid: "5af28825-fe05-80f1-b0ef-64402a538804"
+      stageUuid: "9aa286d9-e89e-8e3d-ac59-067af5b7517a"
 version: 2
 ---
 # bedrooms

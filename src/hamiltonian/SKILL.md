@@ -2,91 +2,19 @@
 name: hamiltonian
 description: "Use when reasoning about the Hamiltonian — the energy operator whose eigenvalues are the seven horo energy-rungs (Eₙ = h·νₙ) and whose action advances time, |ψ(t)⟩ = e^(−iHt/ħ)|ψ(0)⟩. It is the generator: the eigenstates are the rungs a leap jumps between, the spectrum is the gaps, and the phase it winds drives the breath. The expectation ⟨H⟩ = Σ|cₙ|²·Eₙ is the average energy of a superposition, conserved under evolution."
 atomPath: hamiltonian
-coordinate: "hamiltonian · 4/weave · 0b343aae"
-contentUuid: "0fd86a56-d8fc-568f-818b-e0098e10dab6"
-diamondUuid: "1724d475-fb99-8d1e-a3a6-0db803116798"
-uuid: "0b343aae-f9b2-810b-bb48-db1464b48ac6"
-horo: 4
-bonds:
-  in:
-    - breath
-    - energy
-    - horo
-    - law
-    - leap
-    - metatron
-    - photon
-    - quantum
-    - rodin
-    - signal
-    - spectrum
-    - superposition
-    - temperature
-  out:
-    - breath
-    - energy
-    - horo
-    - law
-    - leap
-    - metatron
-    - photon
-    - quantum
-    - rodin
-    - signal
-    - spectrum
-    - superposition
-    - temperature
+coordinate: "hamiltonian · 7/descent · e86ca3a4"
+contentUuid: "0f7475e1-8e96-5865-ae48-0f3669cc3f82"
+diamondUuid: "decd1651-5f8b-8a47-9419-a9f521e3fcb2"
+uuid: "e86ca3a4-0735-80f1-b8a9-81fe6f721df6"
+horo: 7
 typography:
   partition: hamiltonian
   bondDegree: 39
-  neighbors: []
 standards:
   - "CODATA-2018 ħ, h (via ../photon); Schrödinger time evolution e^(−iHt/ħ)"
 bindings: []
-neighbors:
-  wikilink:
-    - breath
-    - energy
-    - horo
-    - law
-    - leap
-    - metatron
-    - photon
-    - quantum
-    - rodin
-    - signal
-    - spectrum
-    - superposition
-  matrix:
-    - breath
-    - energy
-    - horo
-    - law
-    - leap
-    - metatron
-    - photon
-    - quantum
-    - rodin
-    - signal
-    - spectrum
-    - superposition
-    - temperature
-  backlinks:
-    - breath
-    - energy
-    - horo
-    - law
-    - leap
-    - metatron
-    - photon
-    - quantum
-    - rodin
-    - signal
-    - spectrum
-    - superposition
-    - temperature
 signatures:
-  computationUuid: "43351945-aab2-811a-9fc0-72cf2fcf15d0"
+  computationUuid: "c1c294a3-0e99-89d7-9f27-83a65e799048"
   stages:
     - stage: path
       stageUuid: "c47d8da9-36a8-8f30-9cfc-8fee1c70461a"
@@ -97,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7ed8abdc-09cb-8ed7-b619-0dd5f8b5d164"
     - stage: horo
-      stageUuid: "fa959e0a-0ac4-8290-8ca6-a2abbb4e0e3d"
+      stageUuid: "e11a025e-4edc-8385-89e7-61612d5942b9"
     - stage: seal
       stageUuid: "ac0a20f1-bd94-8d80-a47d-b7ec2fda5ea0"
     - stage: uuid
-      stageUuid: "34ec8baf-f8d2-87aa-b93a-9db09e9ce8e4"
+      stageUuid: "7b850db1-a21a-88aa-a113-e0cc16bcced3"
 version: 2
 ---
 # hamiltonian — the generator behind the leap

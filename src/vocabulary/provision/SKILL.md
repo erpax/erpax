@@ -1,86 +1,34 @@
 ---
 name: provision
 description: "Use when recognizing a liability for a present obligation (legal or constructive) from a past event, where outflow is probable and measurable — mandatory disclosure under IAS-37"
-atomPath: vocabulary/provision
-coordinate: provision · 8/crest · 5641df1a
-contentUuid: "7aa09d76-c3b7-543c-b7cc-f0f5eef0bb52"
-diamondUuid: "afe6f62e-0132-8540-8382-a5e3380b76b2"
-uuid: "5641df1a-ebfd-8ce4-a830-6949ca8c98c7"
-horo: 8
-bonds:
-  in:
-    - accrual
-    - balance
-    - checklists
-    - contingencies
-    - disclosure
-    - entries
-    - escrow
-    - law
-    - liability
-  out:
-    - accrual
-    - balance
-    - checklists
-    - contingencies
-    - disclosure
-    - entries
-    - escrow
-    - law
-    - liability
+atomPath: "vocabulary/provision"
+coordinate: "vocabulary/provision · 1/base · a9fd5a10"
+contentUuid: "339e2504-98a4-5237-a76e-88801815c5b6"
+diamondUuid: "7a28ebce-6799-80a6-9c66-4718ddd34e91"
+uuid: "a9fd5a10-71a3-810d-a91d-481b796a7bf3"
+horo: 1
 typography:
-  partition: provision
+  partition: vocabulary
   bondDegree: 27
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accrual
-    - balance
-    - checklists
-    - contingencies
-    - disclosure
-    - entries
-    - law
-    - liability
-  matrix:
-    - accrual
-    - balance
-    - checklists
-    - contingencies
-    - disclosure
-    - entries
-    - escrow
-    - law
-    - liability
-  backlinks:
-    - accrual
-    - balance
-    - checklists
-    - contingencies
-    - disclosure
-    - entries
-    - escrow
-    - law
-    - liability
 signatures:
-  computationUuid: "626eccde-91e3-857e-8fd5-9f154b58f877"
+  computationUuid: "65613bbd-225c-8ee9-8a03-1339b92080ed"
   stages:
     - stage: path
-      stageUuid: "83fabbe8-1d84-83d7-9319-c697cf0ca84d"
+      stageUuid: "df55e55b-c7c6-8f64-9cff-55c2e82ab697"
     - stage: trinity
-      stageUuid: "5a1f6178-4997-8efc-9e6f-9fac3966f722"
+      stageUuid: "afa53946-4795-8698-bb3d-d97890037047"
     - stage: boundary
-      stageUuid: "b7581f2e-ceed-87c8-90fc-1e98077f1e00"
+      stageUuid: "d8eb43bc-7f66-822f-82df-fa852809c785"
     - stage: links
-      stageUuid: "4fe9cb56-80cc-8ce8-8a7f-0daf4a59fe34"
+      stageUuid: "bb77cdff-d639-8332-a834-40300b5aa24d"
     - stage: horo
-      stageUuid: "36637008-7419-82c1-83f7-8503d6211313"
+      stageUuid: "187f923e-0bf3-86fd-b95f-d84447c42ac8"
     - stage: seal
-      stageUuid: "d7b20b7e-4ebe-8a1e-9ab7-879af9538b20"
+      stageUuid: "447c3e80-abf6-8524-a7a5-79993bad8180"
     - stage: uuid
-      stageUuid: "e3e105c8-dbd5-8610-a3f2-973ceaeb1eda"
+      stageUuid: "b156db37-14d6-8a12-be2d-4e12275f17ac"
 version: 2
 ---
 # provision

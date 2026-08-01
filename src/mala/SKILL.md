@@ -2,82 +2,35 @@
 name: mala
 description: "Use when reasoning about the 108-step round — the next math after the dualities reach 100% coverage; 108 = 1¹·2²·3³ = 9×12 = 2²·3³ with digital root 9 (the rodin axis), and the dualities walk it as steps toward a full round."
 atomPath: mala
-coordinate: "mala · 4/weave · 7bf59b55"
-contentUuid: "1598c4d3-0b24-53cb-bfc2-58be0b0d2ca4"
-diamondUuid: "4b326d11-454c-85f1-8df2-6ee2062a0c9e"
-uuid: "7bf59b55-ecdb-88f1-afcc-e6f2a475df03"
-horo: 4
-bonds:
-  in:
-    - chakra
-    - digit
-    - duality
-    - fold
-    - law
-    - rodin
-    - sequence
-    - step
-  out:
-    - chakra
-    - digit
-    - duality
-    - fold
-    - law
-    - rodin
-    - sequence
-    - step
+coordinate: "mala · 1/base · 74946362"
+contentUuid: "12d1208b-62ca-56b7-b7aa-c80209490a4f"
+diamondUuid: "55c1eb13-0ae8-8ac5-806b-37d72aae2087"
+uuid: "74946362-96e9-8fdd-9997-17357e8fb4ed"
+horo: 1
 typography:
   partition: mala
   bondDegree: 24
-  neighbors: []
 standards:
   - "CoE-108+"
   - "the base-10 digital root (the rodin reduction); 108 = 1¹·2²·3³ (computed identity)"
 bindings: []
-neighbors:
-  wikilink:
-    - chakra
-    - digit
-    - duality
-    - law
-    - rodin
-    - sequence
-    - step
-  matrix:
-    - chakra
-    - digit
-    - duality
-    - fold
-    - law
-    - rodin
-    - sequence
-    - step
-  backlinks:
-    - chakra
-    - digit
-    - duality
-    - fold
-    - law
-    - rodin
-    - sequence
-    - step
 signatures:
-  computationUuid: "6cb54d70-9561-8f22-a983-d6fb94e0f4e4"
+  computationUuid: "c907ab52-c077-8edf-a1cf-847cf2d9e1bb"
   stages:
     - stage: path
       stageUuid: "5d1972a3-9d5a-88db-8bca-4eca8af07ca3"
     - stage: trinity
       stageUuid: "47e1fcb5-3ce8-8adc-b294-9f5a59495b34"
     - stage: boundary
-      stageUuid: "0c651ee3-bdc4-85b2-9304-d70b3d102d91"
+      stageUuid: "03a4d40a-f7a6-8006-bf9b-0a0f54792d0d"
     - stage: links
       stageUuid: "7ef61150-2711-8eae-9770-693e53049f64"
     - stage: horo
-      stageUuid: "e9ef0856-9c71-8456-ad8d-02c00155a04c"
+      stageUuid: "c4a39cd5-8ba4-81a6-afc2-1b453be1850e"
     - stage: seal
       stageUuid: "6b231a5c-9ee4-8905-a8a3-7a9c84c1c97c"
     - stage: uuid
-      stageUuid: "fcd551d0-4410-87d8-bf61-bdc7d4f79dd8"
+      stageUuid: "9bbee4e2-06aa-856a-98bd-d31dd80e6373"
 version: 2
 ---
 # mala — the 108-step round (the next math)

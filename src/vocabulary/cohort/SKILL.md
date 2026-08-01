@@ -1,107 +1,34 @@
 ---
 name: cohort
 description: "Use when analyzing or tracking groups of customers/users/items by shared trait — acquisition cohort, product cohort, geographic cohort. The segmentation for lifecycle or comparative analysis."
-atomPath: vocabulary/cohort
-coordinate: cohort · 2/share · ab0ae9af
-contentUuid: "a499267d-a4d3-5c84-869d-1a0197a9fd38"
-diamondUuid: "e2873a36-1f02-8166-a271-a9f2f976095c"
-uuid: "ab0ae9af-7a07-86eb-bbbd-f93482427eed"
-horo: 2
-bonds:
-  in:
-    - age
-    - aggregation
-    - breed
-    - career
-    - churn
-    - crisis
-    - diffusion
-    - habit
-    - herd
-    - measure
-    - network
-    - schedule
-    - segment
-    - segments
-    - wellbeing
-  out:
-    - age
-    - aggregation
-    - breed
-    - career
-    - churn
-    - crisis
-    - diffusion
-    - habit
-    - herd
-    - measure
-    - network
-    - schedule
-    - segment
-    - segments
-    - wellbeing
+atomPath: "vocabulary/cohort"
+coordinate: "vocabulary/cohort · 8/crest · 560b6747"
+contentUuid: "7604038f-83f6-54ad-ad07-2c5bf3b80d84"
+diamondUuid: "31a7af5e-a136-8ca5-9288-81445a58fd52"
+uuid: "560b6747-16b8-8cec-a745-3fd4c260c8c3"
+horo: 8
 typography:
-  partition: cohort
+  partition: vocabulary
   bondDegree: 45
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - aggregation
-    - measure
-    - schedule
-    - segment
-    - segments
-  matrix:
-    - age
-    - aggregation
-    - breed
-    - career
-    - churn
-    - crisis
-    - diffusion
-    - habit
-    - herd
-    - measure
-    - network
-    - schedule
-    - segment
-    - segments
-    - wellbeing
-  backlinks:
-    - age
-    - aggregation
-    - breed
-    - career
-    - churn
-    - crisis
-    - diffusion
-    - habit
-    - herd
-    - measure
-    - network
-    - schedule
-    - segment
-    - segments
-    - wellbeing
 signatures:
-  computationUuid: "8da76a28-92ad-8317-8f98-189b8f1ccd69"
+  computationUuid: "08a1fc79-a4da-816e-9072-0ddf6463ed3a"
   stages:
     - stage: path
-      stageUuid: "fa2283dd-c046-8f03-9637-d28af8943600"
+      stageUuid: "27c2a227-593b-8b1a-9617-f326741c15f2"
     - stage: trinity
-      stageUuid: "1b3b30d1-7560-824e-909d-37c0fc0ce580"
+      stageUuid: "97525865-376d-8420-9a8a-b21b13361b9d"
     - stage: boundary
-      stageUuid: "7c5b0024-562d-8665-8514-564cabb57d05"
+      stageUuid: "49fb0fb1-3480-8642-a221-205ec7ff1ef5"
     - stage: links
-      stageUuid: "c97d8358-1013-88fb-96f9-948ddec01767"
+      stageUuid: "85f5f76d-767e-8573-a527-e4d14c223950"
     - stage: horo
-      stageUuid: "d6bedfb5-f946-845f-a31e-68448755da2f"
+      stageUuid: "91bc6de2-13f6-8ab5-9a8d-750f1e9b3c66"
     - stage: seal
-      stageUuid: "960ac015-877f-81f7-9eca-6cf782b0b902"
+      stageUuid: "c4876191-f2f8-894c-9c0f-aaf1688017f6"
     - stage: uuid
-      stageUuid: "f5605c8b-bf5e-88ac-a7ff-7011ea205db3"
+      stageUuid: "718ad4cf-c582-86b6-ba70-6019a2a09076"
 version: 2
 ---
 # cohort

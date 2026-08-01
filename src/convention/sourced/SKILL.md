@@ -2,24 +2,14 @@
 name: sourced
 description: "Use when an atom is written or reviewed — the convention is that every atom cites the external standard it realises with an @standard marker (in its SKILL.md or its sibling index.ts), never grounding itself in nothing but itself; this atom measures the corpus's live sourcing as coverage = sourced / total over the real tree."
 atomPath: "convention/sourced"
-coordinate: "convention/sourced · 5/round · d0d5f7ee"
-contentUuid: "7b2c2323-8db5-57d9-ac5c-f90f47e4a8b4"
-diamondUuid: "ffcdc0de-3958-8375-a605-50fdedc20be1"
-uuid: "d0d5f7ee-5b24-80b5-a840-3cea4f3822aa"
-horo: 5
-bonds:
-  in:
-    - convention
-    - law
-    - thing
-  out:
-    - law
-    - thing
+coordinate: "convention/sourced · 7/descent · e6faa407"
+contentUuid: "02aa38e9-5d21-51b0-87eb-7dc80ae34c4d"
+diamondUuid: "e5a0084e-8804-8da0-8fe9-551ba112ca99"
+uuid: "e6faa407-65b8-8970-8887-635ae733c88b"
+horo: 7
 typography:
   partition: convention
   bondDegree: 12
-  neighbors:
-    - aura
 standards:
   - "<id> …` line names the external standard it"
   - "<id> …` line names the external standard it realises — schema.org, an ISO/IEC code, a W3C spec, a national regulation. The marker may live in the `SKILL.md` body or in the sibling `index.ts` JSDoc; both are the atom's public face. It states one rule and computes its own compliance, and it does not re-implement the corpus walk or the SKILL reader — it"
@@ -28,36 +18,23 @@ standards:
   - "marker (in its SKILL.md or its sibling index.ts), never grounding itself in nothing but itself; this atom measures the corpus's live sourcing as coverage = sourced / total over the real tree.\""
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - aura
-    - cost
-    - honest
-    - law
-    - standards
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "cc9ffd95-5099-8b43-9a9a-71d6c99d03e5"
+  computationUuid: "5bc214a1-a200-8cd8-bb31-9b7ac30391df"
   stages:
     - stage: path
       stageUuid: "85fdf454-21fb-83b0-a747-be6ab8a21e49"
     - stage: trinity
       stageUuid: "34fbea2d-f12f-8545-a643-42f70c5f3c0e"
     - stage: boundary
-      stageUuid: "7075dfbd-11da-810e-9222-142e29bc1c14"
+      stageUuid: "f4fea36d-5999-87e1-8c86-a8f60c9d6883"
     - stage: links
       stageUuid: "7f63a4b2-b25d-87c8-a6d4-46da07600773"
     - stage: horo
-      stageUuid: "ecfc1eb3-50cd-8d43-b06e-d5e964c9eb19"
+      stageUuid: "a58ae1f3-8067-8a79-9ab0-f485baa38b68"
     - stage: seal
       stageUuid: "ad3a3655-3fa7-8ee3-9806-3ee22e2e410c"
     - stage: uuid
-      stageUuid: "c9d0bed7-61ab-88fa-86a2-3efe27e9dc16"
+      stageUuid: "c2d837de-02f2-89c5-8a1c-7ffb77670360"
 version: 2
 ---
 # convention/sourced — every atom cites its @standard

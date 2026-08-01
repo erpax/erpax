@@ -1,73 +1,35 @@
 ---
 name: performed
 description: "Use when reasoning about performed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/performed
-coordinate: performed · 1/base · 72ce8b30
-contentUuid: "2e607dc1-d255-563e-b6d2-d7aa70c5c96a"
-diamondUuid: "f224ca0e-5d5f-89a2-99e8-11a0c583d3cb"
-uuid: "72ce8b30-3872-8e47-8c3b-67edf48b8187"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - how
-    - law
-    - merge
-    - sti
-    - work
-  out:
-    - collapse
-    - how
-    - law
-    - merge
-    - sti
-    - work
+atomPath: "vocabulary/performed"
+coordinate: "vocabulary/performed · 8/crest · 2abb9037"
+contentUuid: "6f27e6f2-686f-567a-8030-da7fb093e185"
+diamondUuid: "0cf1da9d-0130-80ee-9f89-c257bc2a16b2"
+uuid: "2abb9037-a318-899d-a82e-c0640260f1a3"
+horo: 8
 typography:
-  partition: performed
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - how
-    - law
-    - merge
-    - sti
-    - work
-  matrix:
-    - collapse
-    - how
-    - law
-    - merge
-    - sti
-    - work
-  backlinks:
-    - collapse
-    - how
-    - law
-    - merge
-    - sti
-    - work
 signatures:
-  computationUuid: "591a39d8-b5f4-83f8-b4ed-765985e0f3d7"
+  computationUuid: "50de38fd-bca1-8c37-b360-b8fc7a923d28"
   stages:
     - stage: path
-      stageUuid: "6187b089-a272-8de7-b8c7-5c62c8e30d13"
+      stageUuid: "75b9ab22-d505-8991-88c5-02bf13f671d3"
     - stage: trinity
-      stageUuid: "9d35871f-ab14-8954-81cb-988d759e4200"
+      stageUuid: "583ce8af-0dfa-8aa1-9ca6-b98cc46f98f7"
     - stage: boundary
-      stageUuid: "89a293e3-2a95-87a4-a358-f1b823f597cc"
+      stageUuid: "71466ac4-b6a1-85fc-85bb-083dbc4df7dd"
     - stage: links
-      stageUuid: "270111b0-5127-8d5b-9f51-ab01787be104"
+      stageUuid: "e1a34810-b447-8ff0-96d2-bfde750a6f42"
     - stage: horo
-      stageUuid: "d67dddfc-ad08-850d-829f-7309a0d2270c"
+      stageUuid: "9f7a66a4-3a22-8eda-a8ce-52d5209972ee"
     - stage: seal
-      stageUuid: "2baea820-9c4c-878d-93da-9afcd07a437b"
+      stageUuid: "038e0a7a-b5f7-8b51-9640-9df82a633d3e"
     - stage: uuid
-      stageUuid: "281d6970-309a-8f08-aa5e-f9fd183cd096"
+      stageUuid: "5abf15f3-08e2-8d2a-b2e3-c970ececf609"
 version: 2
 ---
 # performed

@@ -2,97 +2,19 @@
 name: web
 description: "Use when reasoning about web as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: web
-coordinate: web · 8/crest · d929539e
-contentUuid: "61c8647c-fbcb-5f37-9c64-c8cd3205e20a"
-diamondUuid: "1d645c93-3bce-8020-afa1-f3930c4677e3"
-uuid: "d929539e-ecde-8c21-b585-08255eb05642"
-horo: 8
-bonds:
-  in:
-    - api
-    - application
-    - checkin
-    - collapse
-    - content
-    - element
-    - feed
-    - law
-    - medical
-    - merge
-    - page
-    - site
-    - sti
-    - time
-  out:
-    - api
-    - application
-    - checkin
-    - collapse
-    - content
-    - element
-    - feed
-    - law
-    - medical
-    - merge
-    - page
-    - site
-    - sti
-    - time
+coordinate: "web · 4/weave · c8383ecd"
+contentUuid: "e6525b7a-6166-566d-bafa-9a0787c19166"
+diamondUuid: "71855bd3-e2f3-8eaa-9cae-afd3b009cdbd"
+uuid: "c8383ecd-1967-8fc9-880f-9d762863ae5c"
+horo: 4
 typography:
   partition: web
-  bondDegree: 48
-  neighbors: []
+  bondDegree: 55
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - api
-    - application
-    - checkin
-    - collapse
-    - content
-    - element
-    - feed
-    - law
-    - medical
-    - merge
-    - page
-    - site
-    - sti
-    - time
-  matrix:
-    - api
-    - application
-    - checkin
-    - collapse
-    - content
-    - element
-    - feed
-    - law
-    - medical
-    - merge
-    - page
-    - site
-    - sti
-    - time
-  backlinks:
-    - api
-    - application
-    - checkin
-    - collapse
-    - content
-    - element
-    - feed
-    - law
-    - medical
-    - merge
-    - page
-    - site
-    - sti
-    - time
 signatures:
-  computationUuid: "b8961f25-1e7f-8c11-8bfa-ead29017cd91"
+  computationUuid: "0537e16e-0007-8b7b-85b8-65919dbb0e63"
   stages:
     - stage: path
       stageUuid: "6afee319-b136-8dc1-9e72-b3c62055441f"
@@ -103,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fcd44a42-a200-86d4-9c00-d309f8bb178b"
     - stage: horo
-      stageUuid: "fb57deaa-8d0a-80a1-ad1c-d92509ff8a7e"
+      stageUuid: "40e73f76-3cd2-8460-a258-2776a982b370"
     - stage: seal
-      stageUuid: "655962cb-bf3b-8ace-b95a-711564f4cb02"
+      stageUuid: "f5232d4f-9151-8443-aac8-610335c18746"
     - stage: uuid
-      stageUuid: "484a0953-22f5-896b-a336-b0add02503c8"
+      stageUuid: "57de676c-74c7-88e2-8cef-8f1cc1e5e370"
 version: 2
 ---
 # web

@@ -2,118 +2,22 @@
 name: sustainability
 description: "Use when asking whether a system can ENDURE — it is sustainable iff it draws down no stock faster than that stock regenerates (throughput ≤ carrying capacity) and its material loop closes, so each cycle adds zero NET entropy. Nature does it as a sun-driven dissipative structure — matter cycles, energy flows one-way and degrades. In erpax, zero-net-entropy-per-cycle IS sustainability; the borrowed anchor is the sun."
 atomPath: sustainability
-coordinate: sustainability · 7/descent · ddd3cd79
-contentUuid: "7692ef65-3553-5e69-9dda-0b0eeb5c3a0b"
-diamondUuid: "189e2154-eb84-8680-801c-8c3286af2af5"
-uuid: "ddd3cd79-398d-80ca-8d24-d872abcbdb1e"
-horo: 7
-bonds:
-  in:
-    - anchor
-    - balance
-    - biomass
-    - capacity
-    - compost
-    - conservation
-    - decentralization
-    - diversity
-    - ecosystem
-    - emission
-    - entropy
-    - entry
-    - law
-    - proof
-    - soil
-    - symbiosis
-    - tamper
-    - whole
-  out:
-    - anchor
-    - balance
-    - biomass
-    - capacity
-    - compost
-    - conservation
-    - decentralization
-    - diversity
-    - ecosystem
-    - emission
-    - entropy
-    - entry
-    - law
-    - proof
-    - soil
-    - symbiosis
-    - tamper
-    - whole
+coordinate: "sustainability · 4/weave · 41628dbd"
+contentUuid: "ccd86e93-de9f-51d0-ab7f-863853baeb4b"
+diamondUuid: "6fedf37a-2ebd-82e8-95ba-c54c5f152d8f"
+uuid: "41628dbd-2563-8f25-9328-40ebcfb694fc"
+horo: 4
 typography:
   partition: sustainability
-  bondDegree: 59
-  neighbors: []
+  bondDegree: 57
 standards:
   - "Brundtland Report, Our Common Future (1987) — canonical sustainability definition"
   - "Prigogine dissipative structures (Nobel Chemistry, 1977) — order by dissipation"
   - Second Law of Thermodynamics — local order requires entropy export
-  - Verhulst logistic growth (1838) — carrying capacity K; dN/dt = r·N·(1 − N/K)
-  - "computed, never hand-asserted"
+  - "Verhulst logistic growth (1838) — carrying capacity K; dN/dt = r·N·(1 − N/K)"
 bindings: []
-neighbors:
-  wikilink:
-    - anchor
-    - balance
-    - capacity
-    - compost
-    - conservation
-    - decentralization
-    - diversity
-    - ecosystem
-    - entropy
-    - entry
-    - law
-    - proof
-    - soil
-    - tamper
-    - whole
-  matrix:
-    - anchor
-    - balance
-    - biomass
-    - capacity
-    - compost
-    - conservation
-    - decentralization
-    - diversity
-    - ecosystem
-    - emission
-    - entropy
-    - entry
-    - law
-    - proof
-    - soil
-    - symbiosis
-    - tamper
-    - whole
-  backlinks:
-    - anchor
-    - balance
-    - biomass
-    - capacity
-    - compost
-    - conservation
-    - decentralization
-    - diversity
-    - ecosystem
-    - emission
-    - entropy
-    - entry
-    - law
-    - proof
-    - soil
-    - symbiosis
-    - tamper
-    - whole
 signatures:
-  computationUuid: "cc555431-a4a9-8756-a6b4-20860c422c2f"
+  computationUuid: "ee2604ef-7182-8ea3-ba09-dccaf0e0e911"
   stages:
     - stage: path
       stageUuid: "7cd3828b-98c7-8439-94d5-f70532b839dd"
@@ -124,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "866e2423-9478-8bf4-b251-37b84fe17594"
     - stage: horo
-      stageUuid: "4d1fcdbd-5263-85ed-ae1b-959080067ecc"
+      stageUuid: "c9216e5b-9dd0-85fb-b96b-e6095e07def8"
     - stage: seal
-      stageUuid: "221a1154-d599-810c-861a-ca06ad9991d1"
+      stageUuid: "9a12eb0d-1887-8c17-ae65-432337d86945"
     - stage: uuid
-      stageUuid: "d44617a9-a4d7-848c-a503-66a3a5b8a2f6"
+      stageUuid: "d0007ae5-de27-8021-a238-3e5f2e0a8fa5"
 version: 2
 ---
 # sustainability — endures because each cycle nets zero (the closed loop)

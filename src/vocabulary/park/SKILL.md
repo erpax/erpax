@@ -1,58 +1,35 @@
 ---
 name: park
 description: Use when reasoning about park — A park.
-atomPath: vocabulary/park
-coordinate: park · 7/descent · 4604fbb7
-contentUuid: "a5b58ba7-bba0-5853-816e-8dbe1403edb4"
-diamondUuid: "f80ed4ce-0756-83bf-93dd-f54a5be1b5e8"
-uuid: "4604fbb7-064b-8011-81e7-c428c67fdf10"
+atomPath: "vocabulary/park"
+coordinate: "vocabulary/park · 7/descent · acd87909"
+contentUuid: "708e940a-9006-56d6-a818-c2e445ceef35"
+diamondUuid: "b1a2e9f0-c663-8df2-ad03-2765cab931c1"
+uuid: "acd87909-19fe-8923-8a62-00fbbd85914f"
 horo: 7
-bonds:
-  in:
-    - amusement
-    - law
-    - rv
-  out:
-    - amusement
-    - law
-    - rv
 typography:
-  partition: park
+  partition: vocabulary
   bondDegree: 11
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - amusement
-    - law
-    - rv
-  matrix:
-    - amusement
-    - law
-    - rv
-  backlinks:
-    - amusement
-    - law
-    - rv
 signatures:
-  computationUuid: "3ca67f56-4a78-8955-ad6e-15c1db9507cc"
+  computationUuid: "389e5c6d-88be-8b16-b549-66390b84b488"
   stages:
     - stage: path
-      stageUuid: "3866558c-e45b-84b3-acbf-144aac8c8aae"
+      stageUuid: "601bd229-2367-8570-90d0-d04d4743d865"
     - stage: trinity
-      stageUuid: "a38c669d-1069-8769-ad72-6b9f99d873ec"
+      stageUuid: "733d09bf-6ca2-856c-b678-ba0e8a848c7e"
     - stage: boundary
-      stageUuid: "7e554549-e4d6-81e8-ad72-208351a05770"
+      stageUuid: "3b2a5a9a-7af2-8127-9ea7-29f07b2e7db8"
     - stage: links
-      stageUuid: "e8e399a5-df97-840a-ad73-17d0aa0665cc"
+      stageUuid: "0912f389-74e7-8879-a9b5-4bab25e07ee3"
     - stage: horo
-      stageUuid: "8adfa71b-d3f5-8256-807e-0bac66daeaf0"
+      stageUuid: "707b8d61-c367-80c3-89ad-b304188343ca"
     - stage: seal
-      stageUuid: "94d93285-b774-8a82-b15b-7342a9365ff2"
+      stageUuid: "e3a0359a-6fe3-86e3-bb57-4c2416a74cf1"
     - stage: uuid
-      stageUuid: "a8d14bbb-bb18-8f89-8d10-5d49048c28af"
+      stageUuid: "c637a197-553e-8c6d-9ace-3fea448a5b5f"
 version: 2
 ---
 # park

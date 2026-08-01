@@ -1,86 +1,29 @@
 ---
 name: inventories
 description: "Use when tracking per-SKU on-hand inventory balance at a consignee location — shipments in, sales out, returns, cycle-count reconciliation, IAS-2 §6 balance-sheet ownership retained by consignor, valuation method, and GL account mapping. The consignment per-SKU running-balance collection."
-atomPath: warehouse/locations/consignment/arrangements/consignment/inventories
-coordinate: warehouse/locations/consignment/arrangements/consignment/inventories · 4/weave · 6a75b5b8
-contentUuid: "9dcb414b-429d-502e-a3f9-3c24c8aec354"
-diamondUuid: "026dc662-a674-8e92-abf8-f8f826217ddc"
-uuid: "6a75b5b8-212a-800a-a181-f4ba4889e973"
-horo: 4
-bonds:
-  in:
-    - accounting
-    - arrangements
-    - balance
-    - consignment
-    - identity
-    - law
-    - movements
-    - proof
-    - sales
-    - standard
-    - transaction
-  out:
-    - accounting
-    - arrangements
-    - balance
-    - identity
-    - law
-    - movements
-    - proof
-    - sales
-    - standard
-    - transaction
+atomPath: "warehouse/locations/consignment/arrangements/consignment/inventories"
+coordinate: "warehouse/locations/consignment/arrangements/consignment/inventories · 8/crest · 8bc4257b"
+contentUuid: "08d2336b-8d9f-5deb-97db-2a22a501a30e"
+diamondUuid: "c73980c1-855a-8d34-bd55-f71b2c888f96"
+uuid: "8bc4257b-16ac-83fa-87e6-43375e27460d"
+horo: 8
 typography:
   partition: warehouse
   bondDegree: 32
-  neighbors: []
 standards:
   - "IFRS IAS-2 §6 inventories-held-at-other-location"
   - "IFRS IFRS-15 §B77-B78 consignment-arrangements"
-  - "ISO-19011:2018 audit-trail consignment-on-hand-evidence"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time as-of-date"
+  - "ISO-8601-1:2019 date-time as-of-date`"
   - "SOX §404 internal-controls inventory-segregation TOM-INV-03"
   - "US-GAAP ASC-330 inventory-location-tracked"
   - "US-GAAP ASC-606-10-55-79 consignment-indicators"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - arrangements
-    - balance
-    - identity
-    - law
-    - movements
-    - proof
-    - sales
-    - standard
-    - transaction
-  matrix:
-    - accounting
-    - arrangements
-    - balance
-    - identity
-    - law
-    - movements
-    - proof
-    - sales
-    - standard
-    - transaction
-  backlinks:
-    - accounting
-    - arrangements
-    - balance
-    - identity
-    - law
-    - movements
-    - proof
-    - sales
-    - standard
-    - transaction
 signatures:
-  computationUuid: "6ec0c7e0-5e22-87c8-884a-0d7def20d2d4"
+  computationUuid: "5d5ae8c5-7711-8f0b-ae88-579ff8f08545"
   stages:
     - stage: path
       stageUuid: "68d8a9b7-112c-8daa-b4d8-8fcf66151625"
@@ -91,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "f527bdb7-8286-8844-be69-b5c234cd391e"
     - stage: horo
-      stageUuid: "e502ac1a-57dd-8d2d-a56a-9eef13bb27f9"
+      stageUuid: "0aee40e5-ec86-88db-9115-4e0f6bbe5261"
     - stage: seal
       stageUuid: "3e475b3c-5740-808e-8070-9c31ac16f091"
     - stage: uuid
-      stageUuid: "58cc15de-1139-8fb4-bc39-5ee4ab5a4518"
+      stageUuid: "322b8c71-b8b0-816d-b388-f5b5447a037e"
 version: 2
 ---
 # consignment-inventory

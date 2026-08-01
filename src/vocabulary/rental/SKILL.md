@@ -1,93 +1,35 @@
 ---
 name: rental
 description: "Use when reasoning about rental as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/rental
-coordinate: rental · 5/round · d4606857
-contentUuid: "5657360e-80c7-574e-9e04-15d820da7de1"
-diamondUuid: "1ff17094-e783-8c5d-aa26-5d3bec758082"
-uuid: "d4606857-ff84-89c2-9f50-e600ecfa0590"
-horo: 5
-bonds:
-  in:
-    - auto
-    - car
-    - collapse
-    - law
-    - merge
-    - movie
-    - reservation
-    - sti
-    - store
-    - vacation
-  out:
-    - auto
-    - car
-    - collapse
-    - law
-    - merge
-    - movie
-    - reservation
-    - sti
-    - store
-    - vacation
+atomPath: "vocabulary/rental"
+coordinate: "vocabulary/rental · 4/weave · f3530878"
+contentUuid: "c881e3ca-7ed9-58dd-8b84-c26f31805fce"
+diamondUuid: "a983fb91-61d5-8435-824e-9e114e4f5093"
+uuid: "f3530878-5a2a-8988-999c-6e03c6653240"
+horo: 4
 typography:
-  partition: rental
+  partition: vocabulary
   bondDegree: 36
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - auto
-    - car
-    - collapse
-    - law
-    - merge
-    - movie
-    - reservation
-    - sti
-    - store
-    - vacation
-  matrix:
-    - auto
-    - car
-    - collapse
-    - law
-    - merge
-    - movie
-    - reservation
-    - sti
-    - store
-    - vacation
-  backlinks:
-    - auto
-    - car
-    - collapse
-    - law
-    - merge
-    - movie
-    - reservation
-    - sti
-    - store
-    - vacation
 signatures:
-  computationUuid: "cbd7d596-1cc5-8a67-a19e-8ffcc1e24ab3"
+  computationUuid: "f5240969-6054-8ee8-a831-9d617a3e5a17"
   stages:
     - stage: path
-      stageUuid: "3be14a69-d727-866f-a0ce-883791154c3c"
+      stageUuid: "e5defb05-86e8-852d-9e56-738c50cd9aba"
     - stage: trinity
-      stageUuid: "c9725612-e222-8314-8b96-66507ba1c76d"
+      stageUuid: "5970b4b3-fbcc-89f0-8cc4-801988c69e80"
     - stage: boundary
-      stageUuid: "b27d4a5d-866d-8fcc-8f86-0b743245598e"
+      stageUuid: "be86ddd1-c317-86c5-a892-516b874328e1"
     - stage: links
-      stageUuid: "b37c3821-9792-8063-a865-6fe9670c2840"
+      stageUuid: "49adfc08-d1d1-85a1-bbd8-0be4bcd61c21"
     - stage: horo
-      stageUuid: "9cb0bde2-814c-886b-8a33-05a7550dff80"
+      stageUuid: "cbda8b66-4091-8ed3-ad3d-ecc685222748"
     - stage: seal
-      stageUuid: "2d4e93cd-c29d-800e-a5cc-35616627759a"
+      stageUuid: "07a35f89-7b4d-8c00-bfb1-44a9fedb0e76"
     - stage: uuid
-      stageUuid: "392b9cdf-69d6-85b6-a415-26942b3fa7ce"
+      stageUuid: "285a2a9c-3ead-8c38-977a-49e7bd7f8ed5"
 version: 2
 ---
 # rental

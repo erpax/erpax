@@ -1,117 +1,19 @@
 ---
 name: vibration
 description: "Use when reasoning about touch/haptics from sequence position in erpax — the third A432 render channel that completes colour (cmyk) + sound (notes) into the sight·sound·touch sensory trinity. A horo position decodes to a haptic pulse (a sub-audible A432 sub-harmonic); the body's own measurable vibration (physiological tremor, ballistocardiographic micro-motion) is the analog twin. Nested under rodin."
-atomPath: rodin/vibration
-coordinate: rodin/vibration · 4/weave · 76c0fa59
-contentUuid: "19ff60f2-febd-57c8-98f0-823f48e7629a"
-diamondUuid: "9cf95039-cc7e-80da-8079-16dd278ac82f"
-uuid: "76c0fa59-8af7-8fa5-ac45-4b7f06df365e"
+atomPath: "rodin/vibration"
+coordinate: "rodin/vibration · 4/weave · 4d093022"
+contentUuid: "b5562b23-0466-5337-814b-93f8cc2cf54e"
+diamondUuid: "f48b76b3-bc68-8e33-8c94-de6f2c912af3"
+uuid: "4d093022-b646-82d3-8ab8-655153eb05ca"
 horo: 4
-bonds:
-  in:
-    - analog
-    - aura
-    - biofield
-    - biomagnetism
-    - biophoton
-    - breath
-    - chakra
-    - cmyk
-    - cost
-    - coverage
-    - duality
-    - horo
-    - notes
-    - rodin
-    - sensory
-    - signal
-    - tamper
-    - trinity
-  out:
-    - analog
-    - aura
-    - biofield
-    - biomagnetism
-    - biophoton
-    - breath
-    - chakra
-    - cmyk
-    - cost
-    - coverage
-    - duality
-    - horo
-    - notes
-    - rodin
-    - sensory
-    - signal
-    - tamper
-    - trinity
 typography:
   partition: rodin
-  bondDegree: 60
-  neighbors:
-    - aura
+  bondDegree: 63
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - analog
-    - aura
-    - biofield
-    - biomagnetism
-    - biophoton
-    - breath
-    - cmyk
-    - cost
-    - coverage
-    - duality
-    - horo
-    - notes
-    - rodin
-    - sensory
-    - signal
-    - tamper
-    - trinity
-  matrix:
-    - analog
-    - aura
-    - biofield
-    - biomagnetism
-    - biophoton
-    - breath
-    - chakra
-    - cmyk
-    - cost
-    - coverage
-    - duality
-    - horo
-    - notes
-    - rodin
-    - sensory
-    - signal
-    - tamper
-    - trinity
-  backlinks:
-    - analog
-    - aura
-    - biofield
-    - biomagnetism
-    - biophoton
-    - breath
-    - chakra
-    - cmyk
-    - cost
-    - coverage
-    - duality
-    - horo
-    - notes
-    - rodin
-    - sensory
-    - signal
-    - tamper
-    - trinity
 signatures:
-  computationUuid: "70018a92-7d0c-8fe1-b522-e90dc91e4fee"
+  computationUuid: "81b0387b-8c08-83e6-b203-52855894f1ba"
   stages:
     - stage: path
       stageUuid: "a4d13e2f-0fa2-85ad-8d1f-c23807896b65"
@@ -122,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9124d69f-66c7-8760-ba96-8036e6bb7819"
     - stage: horo
-      stageUuid: "147f10ad-eb3e-8b0e-8246-69e1fa92dcd2"
+      stageUuid: "0394b990-5656-898c-9828-32641b35c77a"
     - stage: seal
-      stageUuid: "da90d59f-3dba-828c-93bf-22f514bd8a74"
+      stageUuid: "1a03e9b6-addd-8be5-bc02-e1c28eed2d81"
     - stage: uuid
-      stageUuid: "d7837bdf-f87a-8ca0-ad64-e36d7e560839"
+      stageUuid: "9c9f895b-bf57-8185-8d2a-a7ce4805983e"
 version: 2
 ---
 # vibration — touch from position (completes the sensory trinity)

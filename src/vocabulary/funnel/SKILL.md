@@ -1,77 +1,34 @@
 ---
 name: funnel
 description: "Use when measuring conversion rates across pipeline stages — lead-to-qualified, qualified-to-opportunity, opportunity-to-order metrics; funnel width/velocity per stage."
-atomPath: vocabulary/funnel
-coordinate: funnel · 4/weave · 420f4d8c
-contentUuid: "fb361a04-50f0-5794-8645-d1d42a917eb7"
-diamondUuid: "09ef0f40-617c-82df-ae79-bafc02858f05"
-uuid: "420f4d8c-06bc-81d4-9e06-745584fe8eac"
-horo: 4
-bonds:
-  in:
-    - conversion
-    - forecast
-    - law
-    - leads
-    - opportunities
-    - orders
-    - pipeline
-  out:
-    - conversion
-    - forecast
-    - law
-    - leads
-    - opportunities
-    - orders
-    - pipeline
+atomPath: "vocabulary/funnel"
+coordinate: "vocabulary/funnel · 5/round · b1021494"
+contentUuid: "1420188a-ba41-5744-b0e8-dfe2fa1018c7"
+diamondUuid: "e609dbda-5f2c-8058-8f52-a5687a23b8dc"
+uuid: "b1021494-3982-87c1-a00e-6a7cdf5b93d2"
+horo: 5
 typography:
-  partition: funnel
-  bondDegree: 22
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 24
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - conversion
-    - forecast
-    - law
-    - leads
-    - opportunities
-    - orders
-    - pipeline
-  matrix:
-    - conversion
-    - forecast
-    - law
-    - leads
-    - opportunities
-    - orders
-    - pipeline
-  backlinks:
-    - conversion
-    - forecast
-    - law
-    - leads
-    - opportunities
-    - orders
-    - pipeline
 signatures:
-  computationUuid: "396de33b-e4cf-8624-98b1-f74e64cb3896"
+  computationUuid: "729d2318-94d4-88e6-9aa5-33ff17d5f56f"
   stages:
     - stage: path
-      stageUuid: "f55ab12e-b2be-88e6-9000-fa1899dbacf4"
+      stageUuid: "31efe69a-affb-858d-a6b1-91e2705748d8"
     - stage: trinity
-      stageUuid: "a7a01010-f70e-886e-ac00-abfc69cdbb2d"
+      stageUuid: "51614def-3e36-8d9d-8351-a777a4753623"
     - stage: boundary
-      stageUuid: "0c5add4a-fd97-899d-81d7-958fcff9cd97"
+      stageUuid: "cdd68c43-aff4-88bb-94f3-87d52e012c21"
     - stage: links
-      stageUuid: "598b351f-6ac9-8c08-a045-d8e924a92726"
+      stageUuid: "0a9daaf2-e87a-864f-bf74-c29f0195a28c"
     - stage: horo
-      stageUuid: "013a0008-930b-83f8-aecf-d14b7eae4d8d"
+      stageUuid: "4a3e7194-a6e6-8d39-86d1-ecfd41350ef5"
     - stage: seal
-      stageUuid: "4907488a-d585-876e-a932-abee0bd6b587"
+      stageUuid: "74f9c1fa-37fb-8506-98e9-88fa0f7ba4e2"
     - stage: uuid
-      stageUuid: "3925fe43-9a5e-8576-83c3-19c20eb1e050"
+      stageUuid: "62ed0fba-c1ab-8e9f-8cd1-6c8f0d48a9fd"
 version: 2
 ---
 # funnel

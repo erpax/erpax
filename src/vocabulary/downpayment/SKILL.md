@@ -1,63 +1,35 @@
 ---
 name: downpayment
 description: "Use when reasoning about downpayment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/downpayment
-coordinate: downpayment · 1/base · aaa44c41
-contentUuid: "3296b2ae-db5d-56ac-8812-d85acb262f9e"
-diamondUuid: "96c36a12-abf2-8af4-8f98-1d801bcffdbd"
-uuid: "aaa44c41-d6e3-81b8-be2d-ddc72c973681"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/downpayment"
+coordinate: "vocabulary/downpayment · 7/descent · e72a488a"
+contentUuid: "87630d67-fead-563d-b582-3eed97d9ed42"
+diamondUuid: "cfd6dcfb-2bfb-824a-9d3b-1d03cdd06a7c"
+uuid: "e72a488a-7eb8-875f-a70b-feb5dfa5ad69"
+horo: 7
 typography:
-  partition: downpayment
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "fe918ab1-1bba-800d-b46a-9f5f8bd453b3"
+  computationUuid: "f2167b4e-d8ad-8228-a0ab-8f2db147b333"
   stages:
     - stage: path
-      stageUuid: "85cb1c16-9c02-8bf7-8c6d-31b9678fefe3"
+      stageUuid: "448d779d-941a-8be6-a4d4-68db132c270e"
     - stage: trinity
-      stageUuid: "053383fa-e978-8bf1-8807-9dbc351ec9af"
+      stageUuid: "dfd7be2a-5944-8f02-bcd2-170a81e62ab7"
     - stage: boundary
-      stageUuid: "8fa7201d-bcaf-845e-af44-6e59ecc97629"
+      stageUuid: "a8bc5c9c-d1b0-88ac-9460-357e7dea0361"
     - stage: links
-      stageUuid: "570b110d-1700-800c-a093-0f9588d8df2f"
+      stageUuid: "10dcf5fa-5bc2-804e-956f-53065b9b6693"
     - stage: horo
-      stageUuid: "dc2beffc-9855-864f-af59-fca4db0f26eb"
+      stageUuid: "dba367d5-4a95-8154-9bc1-e155473ed20b"
     - stage: seal
-      stageUuid: "e53d2a14-b485-8171-9bc0-007da78db155"
+      stageUuid: "970a1c4c-5e46-8390-985c-89c09af2a1a3"
     - stage: uuid
-      stageUuid: "9fc39ccf-e766-8fd5-8871-b90904546946"
+      stageUuid: "294c1ce1-b5cc-836e-b662-40ee077b14b7"
 version: 2
 ---
 # downpayment

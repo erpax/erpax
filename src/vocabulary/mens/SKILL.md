@@ -1,73 +1,35 @@
 ---
 name: mens
 description: "Use when reasoning about mens as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/mens
-coordinate: mens · 7/descent · dd880c61
-contentUuid: "b0560e25-a24f-5f3c-8655-c11bf64d0de3"
-diamondUuid: "d8f5afe7-19b4-835b-b8db-1bcd0c2bb54a"
-uuid: "dd880c61-79b4-8381-9d55-1f7b086c9c8b"
-horo: 7
-bonds:
-  in:
-    - clothing
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  out:
-    - clothing
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
+atomPath: "vocabulary/mens"
+coordinate: "vocabulary/mens · 5/round · ef8c4a1d"
+contentUuid: "027d25a7-eaa4-5900-82d0-fcf01ca9a536"
+diamondUuid: "8daac62f-a58e-84ec-a0e9-584e6f206feb"
+uuid: "ef8c4a1d-d206-8e09-a819-345f9ad81f8f"
+horo: 5
 typography:
-  partition: mens
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - clothing
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  matrix:
-    - clothing
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  backlinks:
-    - clothing
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
 signatures:
-  computationUuid: "f8b0c4e5-36ff-8de1-8697-4f6d97b76fdc"
+  computationUuid: "45321fe9-1761-8364-9431-c93b443b4395"
   stages:
     - stage: path
-      stageUuid: "73f65204-94c5-8787-9668-9a607a7a1e2e"
+      stageUuid: "c6530d7b-c41c-8862-ac9e-cad3fbd6d879"
     - stage: trinity
-      stageUuid: "a27061f9-19d7-8383-a288-e47851ee8bc7"
+      stageUuid: "16178e73-3644-8a24-a038-e64c1b63fdaa"
     - stage: boundary
-      stageUuid: "6e21defd-7625-8005-b295-9818625042b4"
+      stageUuid: "aef04879-bfdb-88b7-903c-9e5fd9bc047f"
     - stage: links
-      stageUuid: "1f776a04-d069-87d6-acb2-b749631cd205"
+      stageUuid: "e12788ff-4448-8a3b-898e-62887fc7a678"
     - stage: horo
-      stageUuid: "fa6e1a15-c40e-87a1-a5f9-8ddbfe0c14db"
+      stageUuid: "63cbbf05-d7ce-83ce-ac54-7a1b6310adf6"
     - stage: seal
-      stageUuid: "f03b6a08-aca0-896b-b895-b18a7198529b"
+      stageUuid: "c663eddf-e7f9-855c-86aa-9b9a592f86b8"
     - stage: uuid
-      stageUuid: "338f269f-21ea-86f7-96ac-ea1f61042e46"
+      stageUuid: "4536134d-6dcd-8e9a-8ee6-b75642e18765"
 version: 2
 ---
 # mens

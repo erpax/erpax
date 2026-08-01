@@ -2,83 +2,17 @@
 name: color
 description: "Use when reading the heart chakra's colour — green, the A432-anchored colour of coherence and of a passing test (a whole aura); the heart's facet of the spectrum."
 atomPath: "heart/color"
-coordinate: "heart/color · 1/base · 258b602c"
-contentUuid: "3a20e52e-8af6-5133-a098-cecb338e7eae"
+coordinate: "heart/color · 2/share · 99bbe37f"
+contentUuid: "6c64bfef-cd7b-5e55-86f0-a4d15745162a"
 diamondUuid: "4721c2ce-6da1-8e62-85a9-d2d60578ed9a"
-uuid: "258b602c-7fb4-8657-bea2-35e0d59d1c1f"
-horo: 1
-bonds:
-  in:
-    - chart
-    - color
-    - design
-    - heart
-    - hooks
-    - image
-    - interior
-    - law
-    - photon
-    - pixel
-    - render
-    - swatch
-    - vehicle
-  out:
-    - chart
-    - color
-    - design
-    - heart
-    - hooks
-    - image
-    - interior
-    - law
-    - photon
-    - pixel
-    - render
-    - swatch
-    - vehicle
+uuid: "99bbe37f-30fe-8a8b-b106-d04c445550d4"
+horo: 2
 typography:
   partition: heart
   bondDegree: 51
-  neighbors: []
 standards:
   - A432 tuning; Anahata (4th chakra) = green
 bindings: []
-neighbors:
-  wikilink:
-    - chakra
-    - coherence
-    - color
-    - heart
-    - law
-    - test
-  matrix:
-    - chart
-    - color
-    - design
-    - heart
-    - hooks
-    - image
-    - interior
-    - law
-    - photon
-    - pixel
-    - render
-    - swatch
-    - vehicle
-  backlinks:
-    - chart
-    - color
-    - design
-    - heart
-    - hooks
-    - image
-    - interior
-    - law
-    - photon
-    - pixel
-    - render
-    - swatch
-    - vehicle
 signatures:
   computationUuid: "2197a1d2-1478-8954-8a5a-6991bb00c38d"
   stages:

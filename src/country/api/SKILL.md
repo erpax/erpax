@@ -2,82 +2,21 @@
 name: api
 description: "Use when reasoning about the official per-country authority API catalogue — tax authorities, business registries, e-invoicing portals, VAT/VIES, payroll, sanctions, and central-bank FX; public metadata only, credentials in tenant sandbox."
 atomPath: "country/api"
-coordinate: "country/api · 4/weave · 44e20053"
-contentUuid: "317887af-bb55-5bcb-91c8-128d39636d11"
-diamondUuid: "514bc5fc-549d-8f1b-9f5e-ee35a7ac1005"
-uuid: "44e20053-9d2a-8209-9e1a-66aab9b4eaf8"
-horo: 4
-bonds:
-  in:
-    - access
-    - calculate
-    - client
-    - country
-    - descent
-    - dev
-    - dimension
-    - endpoint
-    - endpoints
-    - fs
-    - github
-    - harden
-    - integrity
-    - law
-    - mcp
-    - path
-    - payload
-    - port
-    - quantum
-    - queries
-    - redirects
-    - reference
-    - spec
-    - url
-    - uuid
-    - web
-    - workspace
-  out:
-    - access
-    - calculate
-    - client
-    - descent
-    - dev
-    - dimension
-    - endpoint
-    - endpoints
-    - fs
-    - github
-    - harden
-    - integrity
-    - law
-    - mcp
-    - path
-    - payload
-    - port
-    - quantum
-    - queries
-    - redirects
-    - reference
-    - spec
-    - url
-    - uuid
-    - web
-    - workspace
+coordinate: "country/api · 8/crest · 6f6b4c8e"
+contentUuid: "d101492a-a9c8-548f-a6a4-5a1c2726eef7"
+diamondUuid: "90ade07c-4010-81cd-8e6f-d5aafa700889"
+uuid: "6f6b4c8e-e965-816f-88f4-5c6302c54e9b"
+horo: 8
 typography:
   partition: country
-  bondDegree: 96
-  neighbors: []
+  bondDegree: 98
 standards:
   - "AMLD-5 ubo-registry-access"
   - "Berlin-Group-PSD2"
   - "COSO-ERM-2017"
   - "EN-16931"
   - "EU 2014/55 b2g-e-invoicing portals"
-  - "EU-2002/58"
-  - "EU-2017/1132"
-  - "EU-2017/828"
   - "IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates"
-  - "ISO-20022"
   - "ISO-20022 financial-messages cross-references"
   - "ISO-20022 financial-messages cross-references`"
   - "ISO-3166-1"
@@ -92,68 +31,8 @@ standards:
   - "SDMX 2.1 statistical-data-and-metadata-exchange"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - country
-    - law
-    - standards
-    - trading
-  matrix:
-    - access
-    - calculate
-    - client
-    - descent
-    - dev
-    - dimension
-    - endpoint
-    - endpoints
-    - fs
-    - github
-    - harden
-    - integrity
-    - law
-    - mcp
-    - path
-    - payload
-    - port
-    - quantum
-    - queries
-    - redirects
-    - reference
-    - spec
-    - url
-    - uuid
-    - web
-    - workspace
-  backlinks:
-    - access
-    - calculate
-    - client
-    - descent
-    - dev
-    - dimension
-    - endpoint
-    - endpoints
-    - fs
-    - github
-    - harden
-    - integrity
-    - law
-    - mcp
-    - path
-    - payload
-    - port
-    - quantum
-    - queries
-    - redirects
-    - reference
-    - spec
-    - url
-    - uuid
-    - web
-    - workspace
 signatures:
-  computationUuid: "bf89304b-51e5-8528-a9ef-29515186cd6d"
+  computationUuid: "dc78ff84-5c15-8f93-a2d3-5ccfa3cadcfc"
   stages:
     - stage: path
       stageUuid: "5bfb2135-1d9c-822f-bc66-b6156d6dee52"
@@ -164,11 +43,11 @@ signatures:
     - stage: links
       stageUuid: "5766e3e9-cb79-865e-a452-7711d00d2d8d"
     - stage: horo
-      stageUuid: "25b631bb-abfd-8c7c-a5c2-617fb3c1ebf8"
+      stageUuid: "a8495ea8-f111-8e9b-9a1d-43e5ce599521"
     - stage: seal
       stageUuid: "5c6e5472-2cca-81fd-9793-580c3254f166"
     - stage: uuid
-      stageUuid: "37ebd0c7-cb9c-841b-806a-b42476b48f95"
+      stageUuid: "1a84c366-29fd-8bb9-a4e5-155df0bdeb65"
 version: 2
 ---
 # api — official per-country authority API catalogue

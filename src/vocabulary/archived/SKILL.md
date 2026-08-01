@@ -1,58 +1,35 @@
 ---
 name: archived
 description: "Use when reasoning about archived — Indicates a page or other link involved in archival of a CreativeWork. In the case of MediaReview, the items in a MediaReviewItem may often become inaccessible, but be archived by"
-atomPath: vocabulary/archived
-coordinate: archived · 8/crest · 05e1aea3
-contentUuid: "68849a4c-3b98-5dbf-870e-16db5f3b8587"
-diamondUuid: "c8e84369-91df-8424-b197-866e59322b62"
-uuid: "05e1aea3-8710-8799-9b31-c33c40d34c5f"
-horo: 8
-bonds:
-  in:
-    - creative
-    - law
-    - thing
-  out:
-    - creative
-    - law
-    - thing
+atomPath: "vocabulary/archived"
+coordinate: "vocabulary/archived · 5/round · 1733011e"
+contentUuid: "50af1818-1961-57c3-bd8e-812c4be3d65a"
+diamondUuid: "41734ff3-1b3c-8473-9dc3-e21277ad9b6b"
+uuid: "1733011e-1942-809b-a16c-b121ef5e8d67"
+horo: 5
 typography:
-  partition: archived
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - creative
-    - law
-    - thing
-  matrix:
-    - creative
-    - law
-    - thing
-  backlinks:
-    - creative
-    - law
-    - thing
 signatures:
-  computationUuid: "7e196907-8a6e-82f9-ba6c-fb4c9a2ac9ab"
+  computationUuid: "d65d85b0-8341-8b04-8b25-a8651998a57a"
   stages:
     - stage: path
-      stageUuid: "67d115a8-d0d0-8873-bbba-75a180e5e218"
+      stageUuid: "b8288949-f7f5-866b-8ab1-c9c9057a4047"
     - stage: trinity
-      stageUuid: "65ebec05-6680-8e3a-8681-a1fe4c32595c"
+      stageUuid: "4e746f67-c060-8c4b-9b80-7bee645fbade"
     - stage: boundary
-      stageUuid: "bac84a39-a41e-8391-888a-a24d2c473738"
+      stageUuid: "41779b4a-ed4c-8815-9575-fba7b139f1d2"
     - stage: links
-      stageUuid: "f9abff5e-ac26-807f-a4e9-da4fd082580e"
+      stageUuid: "72b42d68-edd1-88fa-add5-3efb5626df00"
     - stage: horo
-      stageUuid: "9515c8e8-e156-8be4-a17d-efb29d10fdfd"
+      stageUuid: "6b8ed5c5-2b47-8c25-95d9-951d7210faa6"
     - stage: seal
-      stageUuid: "3e3f8835-df6d-8c14-8f35-0b44c29fed87"
+      stageUuid: "1d466fa4-7a6d-8fd3-bc70-f8959f9fbc81"
     - stage: uuid
-      stageUuid: "8b73fbb8-d43e-8ddd-862b-268208cc4f12"
+      stageUuid: "0a5f9b8c-9c4e-8eb6-8a54-d5adb8c4e71e"
 version: 2
 ---
 # archived

@@ -1,58 +1,35 @@
 ---
 name: branch
 description: Use when reasoning about branch — The branches that delineate from the nerve bundle. Not to be confused with branchOf.
-atomPath: vocabulary/branch
-coordinate: branch · 8/crest · 98a1decf
-contentUuid: "879458b2-145d-57df-a752-6c6536e79d0e"
-diamondUuid: "d5b23fab-7c27-85bc-a271-8887b5b299d1"
-uuid: "98a1decf-54a5-89c6-96aa-8d62a93c29c8"
-horo: 8
-bonds:
-  in:
-    - arterial
-    - code
-    - law
-  out:
-    - arterial
-    - code
-    - law
+atomPath: "vocabulary/branch"
+coordinate: "vocabulary/branch · 7/descent · cfe86a6e"
+contentUuid: "955a004f-da7f-58db-98a8-a383520f9f96"
+diamondUuid: "46877964-d520-8ab4-b431-4fe11477a2a5"
+uuid: "cfe86a6e-179c-80c0-813e-5785204b7e0c"
+horo: 7
 typography:
-  partition: branch
+  partition: vocabulary
   bondDegree: 10
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - arterial
-    - code
-    - law
-  matrix:
-    - arterial
-    - code
-    - law
-  backlinks:
-    - arterial
-    - code
-    - law
 signatures:
-  computationUuid: "411c21bd-ed5e-8719-a9e5-25cb887cbd3c"
+  computationUuid: "3ae4498a-1b2d-805b-95cf-119fd6d183f9"
   stages:
     - stage: path
-      stageUuid: "79a35f26-eec9-81a4-9e74-f253c7b66556"
+      stageUuid: "2ff80099-dde3-88f3-92b4-818af4278066"
     - stage: trinity
-      stageUuid: "c706db6d-2d60-8a37-9928-d9fd7b1f88cf"
+      stageUuid: "80439db6-cd66-8e37-942e-0e9d93c2e9a7"
     - stage: boundary
-      stageUuid: "325b5507-3657-8820-aa92-45bce76294f9"
+      stageUuid: "718d09f3-01d2-8d5e-b916-10c0f7ff0057"
     - stage: links
-      stageUuid: "0a966cb9-4193-8a96-9877-eef09741b6d4"
+      stageUuid: "ee146e30-39f8-818d-9f27-bef2cc33ffa3"
     - stage: horo
-      stageUuid: "9a00e94d-2368-87ff-9cdf-ebd1f97c8860"
+      stageUuid: "b3f391fc-ba4d-816b-9ea4-6abf4c2605de"
     - stage: seal
-      stageUuid: "6f70c98d-17ba-878f-aecb-05381ba21501"
+      stageUuid: "7815afef-5914-8549-abe6-84c30cac095b"
     - stage: uuid
-      stageUuid: "be4fe76d-0c4a-80c9-bbb9-c968ed0ce60f"
+      stageUuid: "5ec36f58-b88d-8216-a758-4ed9f13a5f8e"
 version: 2
 ---
 # branch

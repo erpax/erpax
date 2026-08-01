@@ -1,81 +1,35 @@
 ---
 name: record
 description: "Use when reasoning about record as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/record
-coordinate: record · 1/base · 20f9c533
-contentUuid: "ca6c6709-3c6d-5bc0-86f5-2fec859425cc"
-diamondUuid: "fdd211e5-056e-8e1d-bcaa-83ae2fe47f07"
-uuid: "20f9c533-c18b-8cd8-bcd6-ae1ea5b2ec10"
-horo: 1
-bonds:
-  in:
-    - cdcpmd
-    - collapse
-    - emr
-    - label
-    - law
-    - merge
-    - snapshot
-    - sti
-  out:
-    - cdcpmd
-    - collapse
-    - emr
-    - label
-    - law
-    - merge
-    - snapshot
-    - sti
+atomPath: "vocabulary/record"
+coordinate: "vocabulary/record · 4/weave · fb4befae"
+contentUuid: "7220a249-879a-5132-b78a-dc8cfbef14d8"
+diamondUuid: "9ab6f6f6-1216-81a7-b106-f47da4353749"
+uuid: "fb4befae-59d6-80e2-b6de-fa5eaef5ff0a"
+horo: 4
 typography:
-  partition: record
+  partition: vocabulary
   bondDegree: 26
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - cdcpmd
-    - collapse
-    - label
-    - law
-    - merge
-    - sti
-  matrix:
-    - cdcpmd
-    - collapse
-    - emr
-    - label
-    - law
-    - merge
-    - snapshot
-    - sti
-  backlinks:
-    - cdcpmd
-    - collapse
-    - emr
-    - label
-    - law
-    - merge
-    - snapshot
-    - sti
 signatures:
-  computationUuid: "6b2d53af-7f22-80fc-8157-dd2ac18264db"
+  computationUuid: "588688a2-74f7-8624-ac11-37a99ce7e1c9"
   stages:
     - stage: path
-      stageUuid: "531eea39-8db2-8827-b342-3576c42959e5"
+      stageUuid: "2c77cccf-dae4-8ed4-a56d-a6cb5023cbee"
     - stage: trinity
-      stageUuid: "1a9bb81e-84d0-8fd0-b531-e92a5209455f"
+      stageUuid: "c9ef62a3-a909-8c5a-9032-79aab1d8ed22"
     - stage: boundary
-      stageUuid: "eb3e51b9-64f6-85bc-a0ab-ae2126b2e64b"
+      stageUuid: "2e8b53a3-933d-8429-8381-1ff5af61c838"
     - stage: links
-      stageUuid: "015e1108-219a-8ea2-8195-ad92a8985c67"
+      stageUuid: "665164df-c293-80af-b778-bd8847d036d3"
     - stage: horo
-      stageUuid: "b212dc15-8eb7-8f74-bd9f-4934467970fa"
+      stageUuid: "7ee136a0-0765-8890-90ef-510d915fe385"
     - stage: seal
-      stageUuid: "50692bb5-984d-8780-9a02-f4523ab01965"
+      stageUuid: "dbbf80bd-8b39-82a5-9d3f-1ba0fec6ff49"
     - stage: uuid
-      stageUuid: "f22eed09-eb07-8dbb-9dac-2264dfe88106"
+      stageUuid: "88d73a6e-67b8-8b84-9bbb-28a829f32856"
 version: 2
 ---
 # record

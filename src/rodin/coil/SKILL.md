@@ -1,205 +1,22 @@
 ---
 name: coil
 description: "Use when reasoning about the doubling circuit 1·2·4·8·7·5 (×2 mod 9) that winds the rodin axis — why state/sequence positions sit in THAT order, digital-root closure, the ×10 octave lift vs +1 close→open. Nested under rodin → the coil of the vortex."
-atomPath: rodin/coil
-coordinate: rodin/coil · 2/share · 9b0bb068
-contentUuid: "7151b572-c1be-5162-a560-5732295ecb90"
-diamondUuid: "46be2647-5834-8432-b897-edc39a7c2ec5"
-uuid: "9b0bb068-2f21-8f1d-a492-e1aba31164db"
-horo: 2
-bonds:
-  in:
-    - access
-    - auth
-    - axis
-    - balance
-    - base
-    - begin
-    - close
-    - cmyk
-    - coordinate
-    - crest
-    - decompression
-    - descent
-    - duality
-    - end
-    - fractal
-    - generate
-    - history
-    - hooks
-    - horo
-    - matrix
-    - merge
-    - octave
-    - one
-    - phase
-    - polarity
-    - prayer
-    - reference
-    - reverse
-    - rodin
-    - round
-    - self
-    - sequence
-    - share
-    - signal
-    - similar
-    - society
-    - torus
-    - unity
-    - weave
-    - whole
-  out:
-    - access
-    - auth
-    - axis
-    - balance
-    - base
-    - begin
-    - close
-    - cmyk
-    - coordinate
-    - crest
-    - decompression
-    - descent
-    - duality
-    - end
-    - fractal
-    - generate
-    - history
-    - hooks
-    - horo
-    - matrix
-    - merge
-    - octave
-    - one
-    - phase
-    - polarity
-    - prayer
-    - reference
-    - reverse
-    - rodin
-    - round
-    - self
-    - sequence
-    - share
-    - signal
-    - similar
-    - society
-    - torus
-    - unity
-    - weave
-    - whole
+atomPath: "rodin/coil"
+coordinate: "rodin/coil · 5/round · 3c95ade6"
+contentUuid: "0ed9b924-62ca-5387-85c0-e25c9c47e409"
+diamondUuid: "70beb40b-1fe1-8c05-b560-dc0c2c6deb91"
+uuid: "3c95ade6-0de4-85f3-b5a6-768030747f4c"
+horo: 5
 typography:
   partition: rodin
-  bondDegree: 129
-  neighbors: []
+  bondDegree: 132
 standards:
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)"
-  - "every residue computed on (ℤ/9ℤ) via @/horo, never hand-asserted"
+  - "RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - auth
-    - axis
-    - balance
-    - begin
-    - close
-    - duality
-    - end
-    - fractal
-    - hooks
-    - horo
-    - polarity
-    - rodin
-    - self
-    - sequence
-    - society
-  matrix:
-    - access
-    - auth
-    - axis
-    - balance
-    - base
-    - begin
-    - close
-    - cmyk
-    - coordinate
-    - crest
-    - decompression
-    - descent
-    - duality
-    - end
-    - fractal
-    - generate
-    - history
-    - hooks
-    - horo
-    - matrix
-    - merge
-    - octave
-    - one
-    - phase
-    - polarity
-    - prayer
-    - reference
-    - reverse
-    - rodin
-    - round
-    - self
-    - sequence
-    - share
-    - signal
-    - similar
-    - society
-    - torus
-    - unity
-    - weave
-    - whole
-  backlinks:
-    - access
-    - auth
-    - axis
-    - balance
-    - base
-    - begin
-    - close
-    - cmyk
-    - coordinate
-    - crest
-    - decompression
-    - descent
-    - duality
-    - end
-    - fractal
-    - generate
-    - history
-    - hooks
-    - horo
-    - matrix
-    - merge
-    - octave
-    - one
-    - phase
-    - polarity
-    - prayer
-    - reference
-    - reverse
-    - rodin
-    - round
-    - self
-    - sequence
-    - share
-    - signal
-    - similar
-    - society
-    - torus
-    - unity
-    - weave
-    - whole
 signatures:
-  computationUuid: "e8a20deb-b3c9-8505-9c48-e7817ef07f32"
+  computationUuid: "0430f214-72ab-88fd-ac3c-7a39b6011f2a"
   stages:
     - stage: path
       stageUuid: "6109ef06-9686-832f-a0a2-3baa645fb9c2"
@@ -210,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "a87244dd-41c2-8299-8509-fbc5bc92574f"
     - stage: horo
-      stageUuid: "0271c228-7484-8661-baa3-e1ae133b326c"
+      stageUuid: "5a9cb31d-d530-85f6-86ed-2aa079a38352"
     - stage: seal
-      stageUuid: "ba76717f-e7ee-83e2-ad6f-ad7310d0cd3c"
+      stageUuid: "03cff53b-5dfc-8c4d-a0cc-9e4fb0535618"
     - stage: uuid
-      stageUuid: "fa2fbe31-428c-8d90-bdb5-9ddf0484fe09"
+      stageUuid: "8f0365d8-fcd9-8db5-be4e-b0be2fb611df"
 version: 2
 ---
 # coil — the doubling helix (1·2·4·8·7·5, ×2 mod 9)

@@ -1,163 +1,35 @@
 ---
 name: broadcast
 description: "Use when reasoning about broadcast as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/broadcast
-coordinate: broadcast · 2/share · d78dbc23
-contentUuid: "c5bcc6e7-f1ca-5fb3-9581-0fea34b34bf3"
-diamondUuid: "72332e16-b16c-8f29-8b4a-dda8d57cfd73"
-uuid: "d78dbc23-9bf3-8a57-98c1-886c5eb907f6"
-horo: 2
-bonds:
-  in:
-    - affiliate
-    - channel
-    - collapse
-    - display
-    - event
-    - frequency
-    - has
-    - id
-    - law
-    - lineup
-    - live
-    - merge
-    - modulation
-    - name
-    - provides
-    - radio
-    - service
-    - signal
-    - specification
-    - sti
-    - sub
-    - tier
-    - timezone
-    - value
-  out:
-    - affiliate
-    - channel
-    - collapse
-    - display
-    - event
-    - frequency
-    - has
-    - id
-    - law
-    - lineup
-    - live
-    - merge
-    - modulation
-    - name
-    - provides
-    - radio
-    - service
-    - signal
-    - specification
-    - sti
-    - sub
-    - tier
-    - timezone
-    - value
+atomPath: "vocabulary/broadcast"
+coordinate: "vocabulary/broadcast · 1/base · 40a7fd10"
+contentUuid: "32c17e66-ebe3-51aa-9bcc-0c1e1c2d7d9b"
+diamondUuid: "dd2dc96a-a25f-8414-8279-5c77f4565d8b"
+uuid: "40a7fd10-b8ba-8721-8004-fca9807ab227"
+horo: 1
 typography:
-  partition: broadcast
+  partition: vocabulary
   bondDegree: 87
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - affiliate
-    - channel
-    - collapse
-    - display
-    - event
-    - frequency
-    - has
-    - id
-    - law
-    - lineup
-    - live
-    - merge
-    - modulation
-    - name
-    - provides
-    - radio
-    - service
-    - signal
-    - specification
-    - sti
-    - sub
-    - tier
-    - timezone
-    - value
-  matrix:
-    - affiliate
-    - channel
-    - collapse
-    - display
-    - event
-    - frequency
-    - has
-    - id
-    - law
-    - lineup
-    - live
-    - merge
-    - modulation
-    - name
-    - provides
-    - radio
-    - service
-    - signal
-    - specification
-    - sti
-    - sub
-    - tier
-    - timezone
-    - value
-  backlinks:
-    - affiliate
-    - channel
-    - collapse
-    - display
-    - event
-    - frequency
-    - has
-    - id
-    - law
-    - lineup
-    - live
-    - merge
-    - modulation
-    - name
-    - provides
-    - radio
-    - service
-    - signal
-    - specification
-    - sti
-    - sub
-    - tier
-    - timezone
-    - value
 signatures:
-  computationUuid: "b7af7c52-c1e9-8594-815b-6a8d335faaa4"
+  computationUuid: "5ecb8a0a-5ecc-8ac9-9b37-537ddd021b2c"
   stages:
     - stage: path
-      stageUuid: "004cf9d2-b5a6-81d9-9b77-5f331ee2085e"
+      stageUuid: "dda0b8c3-d9a8-8e61-a9eb-07379adebd30"
     - stage: trinity
-      stageUuid: "c8f042dd-e838-8fd0-b5b1-aec9935dfb33"
+      stageUuid: "a2100782-50f5-8628-aea0-bd5e6677211a"
     - stage: boundary
-      stageUuid: "1413b8f3-6fd5-8a0c-95f7-b54fbf121d64"
+      stageUuid: "56c74b9a-5e89-8e35-b55e-b7d970f4c335"
     - stage: links
-      stageUuid: "362e0b60-d85c-8c16-b248-3978d34a557a"
+      stageUuid: "3e8fd0ff-5ab1-81a6-ae20-1db2d1359a1f"
     - stage: horo
-      stageUuid: "eb235ca2-1bba-8f02-9e3c-b9d55b7cec8b"
+      stageUuid: "f24f0f0b-59ae-8777-9007-05e5d4376bc3"
     - stage: seal
-      stageUuid: "ec3db390-8320-8ffe-884e-a09ba8ecc9e9"
+      stageUuid: "983246ec-da4c-836d-aaa1-648faa120f8a"
     - stage: uuid
-      stageUuid: "8cff82cf-5f23-8a88-b720-cd8ed9450d62"
+      stageUuid: "0c935531-835f-8d28-87e5-b7a146e116bc"
 version: 2
 ---
 # broadcast

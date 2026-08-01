@@ -1,53 +1,35 @@
 ---
 name: editor
 description: Use when reasoning about editor — Specifies the Person who edited the CreativeWork.
-atomPath: vocabulary/editor
-coordinate: editor · 4/weave · 6e7c605b
-contentUuid: "4ca81e17-bc67-5717-820e-65caae2652ea"
-diamondUuid: "f807ac42-15c9-8c59-8ce3-35c42e2328b2"
-uuid: "6e7c605b-003b-8676-9269-e9e550febf6c"
-horo: 4
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/editor"
+coordinate: "vocabulary/editor · 5/round · e83624e6"
+contentUuid: "458f5188-def3-53f5-bfcf-d4223f4973da"
+diamondUuid: "5c90841e-cb58-8e10-b4f8-8fa1bf667e71"
+uuid: "e83624e6-6364-8770-aa54-9ca1e1f5994b"
+horo: 5
 typography:
-  partition: editor
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "be79fbb0-bd65-8093-8bd4-e09d45078646"
+  computationUuid: "80251d1a-c1c5-889b-80c8-05e2b45b41ea"
   stages:
     - stage: path
-      stageUuid: "0dd8bf1a-9b0f-8104-95b8-c54cba10f7d8"
+      stageUuid: "b3e7b48b-5c00-81f3-bf07-f82ba359be4a"
     - stage: trinity
-      stageUuid: "89e0845e-602f-81e2-bb16-bc6e814a2872"
+      stageUuid: "a0096cc1-3b50-83ab-b643-367e1463fabd"
     - stage: boundary
-      stageUuid: "6def0f93-51a6-8353-9d55-69cc4cb34ee6"
+      stageUuid: "85657e0e-2031-839a-8c61-d91f871779a3"
     - stage: links
-      stageUuid: "1e21bba7-8798-8fb3-a108-3082fa177a92"
+      stageUuid: "94247e47-854e-8702-8282-fe792c230a68"
     - stage: horo
-      stageUuid: "a4a6d6e8-813e-8c2b-b60d-0dc122916c9f"
+      stageUuid: "acc9ded6-452d-8d12-803c-06005bd396ce"
     - stage: seal
-      stageUuid: "a2f0a1c6-8adf-8878-8bb8-a4808b6ae0e5"
+      stageUuid: "f6774baa-eb26-8b49-9199-437939f093df"
     - stage: uuid
-      stageUuid: "dea45c18-4cc4-8211-ab19-777f0a7e57d5"
+      stageUuid: "452266b4-3cd8-8a55-93f0-bf7c60493b51"
 version: 2
 ---
 # editor

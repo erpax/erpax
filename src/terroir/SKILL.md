@@ -2,81 +2,18 @@
 name: terroir
 description: "Use when the place gives the produce its character and price — terroir: the area-specific soil, climate, topography, and practice that make a product distinctive (OIV). Expressed legally as the appellation / AVA / PDO (a certification over a delimited territory); the perennial/viticulture twin of provenance and a land-value premium."
 atomPath: terroir
-coordinate: terroir · 8/crest · a79a02d6
-contentUuid: "b31f2519-61b3-592c-9d47-d1bdf20abf68"
-diamondUuid: "2af1a34a-d3b7-8aad-a368-96c87db14380"
-uuid: "a79a02d6-2af4-8ef7-b8b6-1d6108df32d6"
-horo: 8
-bonds:
-  in:
-    - certification
-    - crop
-    - degreeday
-    - dormancy
-    - frost
-    - impairment
-    - law
-    - lineage
-    - perennial
-    - soil
-    - territory
-  out:
-    - certification
-    - crop
-    - degreeday
-    - dormancy
-    - frost
-    - impairment
-    - law
-    - lineage
-    - perennial
-    - soil
-    - territory
+coordinate: "terroir · 1/base · 5608a3ca"
+contentUuid: "56e19be0-b0d6-5e95-8c95-306adde61fae"
+diamondUuid: "4b8a1649-c274-8779-ac72-9c5b34fe7bfa"
+uuid: "5608a3ca-32f1-8a86-9fb0-1b1a02f60b0b"
+horo: 1
 typography:
   partition: terroir
   bondDegree: 35
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - certification
-    - crop
-    - degreeday
-    - dormancy
-    - frost
-    - impairment
-    - law
-    - lineage
-    - perennial
-    - soil
-    - territory
-  matrix:
-    - certification
-    - crop
-    - degreeday
-    - dormancy
-    - frost
-    - impairment
-    - law
-    - lineage
-    - perennial
-    - soil
-    - territory
-  backlinks:
-    - certification
-    - crop
-    - degreeday
-    - dormancy
-    - frost
-    - impairment
-    - law
-    - lineage
-    - perennial
-    - soil
-    - territory
 signatures:
-  computationUuid: "f0310af4-9a06-8c22-9422-a30588b1f49b"
+  computationUuid: "384c0478-3caa-846f-8487-60ef6d5680b6"
   stages:
     - stage: path
       stageUuid: "9e4302b3-ac23-87ba-b45a-5b1167f1be18"
@@ -87,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "379a8b0e-a0eb-8152-98af-088b974b9217"
     - stage: horo
-      stageUuid: "561cab78-819d-84eb-86ab-4128ae73440d"
+      stageUuid: "0a2cb8b7-bcb0-86bb-80af-315ca865d0af"
     - stage: seal
-      stageUuid: "81e89a5f-b210-8607-92e1-bb03a297de48"
+      stageUuid: "4b54dde3-53a1-8cac-bdd3-1c2fab4a5426"
     - stage: uuid
-      stageUuid: "9be3c684-81d3-8bc2-8788-76486e2d5189"
+      stageUuid: "51758837-23d5-8438-aa3f-32de711a8bc4"
 version: 2
 ---
 # terroir — the place-as-value: where land gives produce its character

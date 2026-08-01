@@ -1,53 +1,35 @@
 ---
 name: periodical
 description: "Use when reasoning about periodical — A publication in any medium issued in successive parts bearing numerical or chronological designations and intended to continue indefinitely, such as a magazine, scholarly journal,"
-atomPath: vocabulary/periodical
-coordinate: periodical · 1/base · d9ceaea2
-contentUuid: "b5f893b8-178c-5ddf-b4c6-ce3f88de5400"
-diamondUuid: "27bd3df3-5f4a-8752-b47f-4f498901c3ba"
-uuid: "d9ceaea2-e240-8bfb-b939-4c86ad6938e5"
+atomPath: "vocabulary/periodical"
+coordinate: "vocabulary/periodical · 1/base · d0d400be"
+contentUuid: "8f0b4517-b7a5-5352-be05-da6821bc912e"
+diamondUuid: "596b6486-8073-81a7-9288-478311d82e8b"
+uuid: "d0d400be-842c-865c-b1d3-f591eb38e5c0"
 horo: 1
-bonds:
-  in:
-    - creative
-    - law
-  out:
-    - creative
-    - law
 typography:
-  partition: periodical
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - creative
-    - law
-  matrix:
-    - creative
-    - law
-  backlinks:
-    - creative
-    - law
 signatures:
-  computationUuid: "980b37bc-b7c0-8a2c-b8da-f7f52970d02b"
+  computationUuid: "341617c4-389e-81b6-a8ce-8755ab801709"
   stages:
     - stage: path
-      stageUuid: "938f2970-473f-84b0-9d7a-5a0c80916d38"
+      stageUuid: "286409c7-8414-8eec-a4d5-afc43ee2f88d"
     - stage: trinity
-      stageUuid: "66078a86-8158-8c3c-8b5c-48ca5ffdaa85"
+      stageUuid: "1590277f-6a11-8d7e-b1b0-83da57550447"
     - stage: boundary
-      stageUuid: "4220473a-3e41-8510-a1c2-18431202317d"
+      stageUuid: "27ae828b-0f29-88a7-9d0e-baea071cea60"
     - stage: links
-      stageUuid: "c82a95ef-3f7f-8c9b-92de-ebcf96732f02"
+      stageUuid: "18b086c5-70b9-8961-b634-bccde3f6d440"
     - stage: horo
-      stageUuid: "364b69de-699b-8c56-a0aa-3bbe221460b7"
+      stageUuid: "7e2c1d5c-92ea-822d-8c6a-5eaee23709d0"
     - stage: seal
-      stageUuid: "f7540ad5-cccc-843d-9055-923d83a97298"
+      stageUuid: "df948910-e7e6-8d71-b09e-da8070cf31c9"
     - stage: uuid
-      stageUuid: "6729d8f3-f5ac-8c9c-9eab-defa7d3e2e05"
+      stageUuid: "00c97c4a-2653-88f8-b57f-03954d6066bb"
 version: 2
 ---
 # periodical

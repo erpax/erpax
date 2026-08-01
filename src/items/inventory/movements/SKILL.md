@@ -2,39 +2,14 @@
 name: movements
 description: "Use when tracking any stock quantity change — receipts, sales/issues, production consumption, transfers, returns, cycle-count adjustments, write-offs, or opening balances — with from/to warehouse locations and GL hook for COGS/variance posting. The append-only stock ledger per IAS-2 cost-flow assumption."
 atomPath: "items/inventory/movements"
-coordinate: "items/inventory/movements · 5/round · 4c4e64f7"
-contentUuid: "643cde00-cc67-5994-81cb-262fa0e12dec"
-diamondUuid: "5f58fae3-6f82-86e6-aab7-a773531dc00f"
-uuid: "4c4e64f7-585b-87c2-81c7-62f2cb890f85"
-horo: 5
-bonds:
-  in:
-    - accounting
-    - balance
-    - commerce
-    - inventories
-    - inventory
-    - items
-    - law
-    - locations
-    - movement
-    - orders
-    - transaction
-  out:
-    - accounting
-    - balance
-    - commerce
-    - inventories
-    - items
-    - law
-    - locations
-    - movement
-    - orders
-    - transaction
+coordinate: "items/inventory/movements · 1/base · 7c8df8f9"
+contentUuid: "0a5d5da1-2b0a-58f2-a820-afbd453d7745"
+diamondUuid: "8c149ce6-1ec4-80f8-91e0-44e686f4b3fb"
+uuid: "7c8df8f9-f95a-828f-96a7-768fd5378016"
+horo: 1
 typography:
   partition: items
   bondDegree: 0
-  neighbors: []
 standards:
   - "IFRS IAS-2 §10 §36 inventories cost-formulas"
   - "IFRS IAS-2 §25 cost-formulas"
@@ -48,38 +23,8 @@ standards:
   - "US-GAAP ASC-606 cogs-recognition"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - balance
-    - items
-    - law
-    - locations
-    - transaction
-  matrix:
-    - accounting
-    - balance
-    - commerce
-    - inventories
-    - items
-    - law
-    - locations
-    - movement
-    - orders
-    - transaction
-  backlinks:
-    - accounting
-    - balance
-    - commerce
-    - inventories
-    - items
-    - law
-    - locations
-    - movement
-    - orders
-    - transaction
 signatures:
-  computationUuid: "024ab086-1953-85f2-ae16-b18750c57bca"
+  computationUuid: "d4dd3e63-ce10-8744-bf7d-3380d7c91307"
   stages:
     - stage: path
       stageUuid: "9d9b856b-a92d-8cb8-8238-a6c274078938"
@@ -90,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "d0b3c040-bb58-8c01-846b-10ef355df92b"
     - stage: horo
-      stageUuid: "7e98e18e-cb15-8a71-9520-1c52b8359383"
+      stageUuid: "5dcf8490-bbb2-8dfa-b03d-80a6c7ccf853"
     - stage: seal
       stageUuid: "af6eec69-3941-8be1-af17-cc9607733e93"
     - stage: uuid
-      stageUuid: "e68037f4-1bba-89c9-9490-498d4149a906"
+      stageUuid: "b09169cc-744a-8fda-9f5e-9fa848f17b2b"
 version: 2
 ---
 # inventory-movements

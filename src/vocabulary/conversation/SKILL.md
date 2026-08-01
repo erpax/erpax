@@ -1,57 +1,35 @@
 ---
 name: conversation
 description: Use when reasoning about conversation — One or more messages between organizations or people on a particular topic. Individual messages can be linked to the conversation with isPartOf or hasPart properties.
-atomPath: vocabulary/conversation
-coordinate: conversation · 8/crest · fcd279e1
-contentUuid: "f538a30e-1f58-5837-bf4d-381a2463a42c"
-diamondUuid: "fd4e8f7d-b218-8ea1-a2c3-7f8484c071cd"
-uuid: "fcd279e1-877d-8d6b-88d5-03b7b5a15892"
-horo: 8
-bonds:
-  in:
-    - law
-    - thing
-    - utterance
-  out:
-    - law
-    - thing
-    - utterance
+atomPath: "vocabulary/conversation"
+coordinate: "vocabulary/conversation · 7/descent · a491452c"
+contentUuid: "4cb80cc2-8755-5ac3-a0cc-0c95b1ca9995"
+diamondUuid: "e1bd711a-77fe-8ed1-bc33-05af12215f27"
+uuid: "a491452c-f5a3-8e3d-b2d9-573af077d153"
+horo: 7
 typography:
-  partition: conversation
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-    - utterance
-  backlinks:
-    - law
-    - thing
-    - utterance
 signatures:
-  computationUuid: "3594bec6-dade-8b6d-a528-5385aa2563fa"
+  computationUuid: "bad64c87-7099-8988-b73b-d4d0e43f4f60"
   stages:
     - stage: path
-      stageUuid: "ba7099b2-e709-85dc-8d9f-edcc90acca18"
+      stageUuid: "d240f4f9-b6b1-830c-8858-3a040af52448"
     - stage: trinity
-      stageUuid: "ad343e9e-6d9c-8fb9-91f9-790e7fe07d98"
+      stageUuid: "8af0f653-75c5-8364-a105-c46ba232d3f2"
     - stage: boundary
-      stageUuid: "6206d11e-5606-8ff4-a0c4-ced14c511560"
+      stageUuid: "ecea6fc7-0a14-8b1e-94c6-c1920f371ec6"
     - stage: links
-      stageUuid: "2efecc0e-414f-8276-990e-85918332bad6"
+      stageUuid: "3b17224d-3d7c-853f-90ba-72a37ddc3e5f"
     - stage: horo
-      stageUuid: "57ce55f2-34fc-8fe6-9d82-b7b5f6f465ae"
+      stageUuid: "6243d38d-1ba6-875a-bdb0-051b57954760"
     - stage: seal
-      stageUuid: "7cad448c-a648-8669-ae91-c43f33787990"
+      stageUuid: "6a6af37d-d1a3-8f61-845f-ba3938842506"
     - stage: uuid
-      stageUuid: "a7fecf3d-8df6-898d-b617-6c97c2529ad5"
+      stageUuid: "6d1705f4-7427-8125-883e-12cc2779ed4f"
 version: 2
 ---
 # conversation

@@ -2,87 +2,19 @@
 name: government
 description: "Use when reasoning about government as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: government
-coordinate: "government · 8/crest · 777e9a69"
-contentUuid: "a498976c-6efa-5c97-bc05-9c9a8baa07fb"
-diamondUuid: "a8ee5a8d-0d1a-84dc-bbaf-6480543a2406"
-uuid: "777e9a69-b335-86bb-a2cf-aa45d0495671"
+coordinate: "government · 8/crest · be7586bb"
+contentUuid: "dd453611-b51e-528e-ae40-a73cc2a7b98b"
+diamondUuid: "a462709a-1357-8165-9152-462ea6b63c2a"
+uuid: "be7586bb-0287-8fd3-9c5c-f2ed36913ac0"
 horo: 8
-bonds:
-  in:
-    - benefits
-    - building
-    - collapse
-    - info
-    - law
-    - merge
-    - office
-    - organization
-    - permit
-    - service
-    - sti
-    - type
-  out:
-    - benefits
-    - building
-    - collapse
-    - info
-    - law
-    - merge
-    - office
-    - organization
-    - permit
-    - service
-    - sti
-    - type
 typography:
   partition: government
   bondDegree: 45
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - benefits
-    - building
-    - collapse
-    - info
-    - law
-    - merge
-    - office
-    - organization
-    - permit
-    - service
-    - sti
-    - type
-  matrix:
-    - benefits
-    - building
-    - collapse
-    - info
-    - law
-    - merge
-    - office
-    - organization
-    - permit
-    - service
-    - sti
-    - type
-  backlinks:
-    - benefits
-    - building
-    - collapse
-    - info
-    - law
-    - merge
-    - office
-    - organization
-    - permit
-    - service
-    - sti
-    - type
 signatures:
-  computationUuid: "25aa700d-77c1-85d1-9b06-694451d9a261"
+  computationUuid: "798b6191-19b4-8071-aab9-f13c0758a17c"
   stages:
     - stage: path
       stageUuid: "f740c9d2-b0ef-8efa-b433-25d1f29f4a39"
@@ -93,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "56112917-4392-8cd3-91ff-821348acd702"
     - stage: horo
-      stageUuid: "4e97f1dc-6622-839f-b06d-6f58e0e44d86"
+      stageUuid: "d96b9233-a59f-8bbc-938c-5c2756568d4f"
     - stage: seal
       stageUuid: "d82a57c7-ca4f-8111-9299-cf2015be4cd4"
     - stage: uuid
-      stageUuid: "5ef1f19f-c7e4-8a2d-ba35-a5f649fe41b2"
+      stageUuid: "039a2d18-900a-83af-8e85-75bd2851aa7d"
 version: 2
 ---
 # government

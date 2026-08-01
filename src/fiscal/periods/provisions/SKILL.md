@@ -2,33 +2,14 @@
 name: provisions
 description: "Use when recognising or measuring uncertain liabilities — warranty, restructuring, onerous contracts, environmental remediation, decommissioning/ARO, litigation; tracking best-estimate vs discounted amount, reimbursement recovery, movement history (additions/reversals/unwinds), and §85 disclosure text. The IAS-37 provision register."
 atomPath: "fiscal/periods/provisions"
-coordinate: "fiscal/periods/provisions · 2/share · 026982e2"
-contentUuid: "3377d31c-7740-54aa-b7c3-ba826f5f9321"
-diamondUuid: "8d0dc773-5358-867f-b972-3d0816e81bae"
-uuid: "026982e2-5201-82fd-89df-d4f0cc25c3b0"
-horo: 2
-bonds:
-  in:
-    - accounting
-    - contingencies
-    - findings
-    - grants
-    - law
-    - liability
-    - periods
-    - transaction
-  out:
-    - accounting
-    - contingencies
-    - findings
-    - grants
-    - law
-    - liability
-    - transaction
+coordinate: "fiscal/periods/provisions · 5/round · 8421d105"
+contentUuid: "c7b54945-1481-59d4-8332-7b095f5e06a6"
+diamondUuid: "f2731c42-0d38-8f3b-9c1d-024b3710a01f"
+uuid: "8421d105-52e8-8dde-b08d-611004608784"
+horo: 5
 typography:
   partition: fiscal
   bondDegree: 22
-  neighbors: []
 standards:
   - "IFRS IAS-37 §14 recognition-of-provisions"
   - "IFRS IAS-37 §36 §37 §39 measurement-best-estimate"
@@ -43,31 +24,8 @@ standards:
   - "US-GAAP ASC-450-20-25 loss-contingencies"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - contingencies
-    - findings
-    - law
-    - transaction
-  matrix:
-    - accounting
-    - contingencies
-    - findings
-    - grants
-    - law
-    - liability
-    - transaction
-  backlinks:
-    - accounting
-    - contingencies
-    - findings
-    - grants
-    - law
-    - liability
-    - transaction
 signatures:
-  computationUuid: "7de39c30-a70f-80c0-967a-e70df38cd796"
+  computationUuid: "00e5162b-6bc2-8bc1-a2ff-cf26355cb910"
   stages:
     - stage: path
       stageUuid: "f2aac0b4-6e02-8568-8500-cb93b2c469a2"
@@ -78,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "8e04cf04-80a8-84c9-b786-82c82119f96a"
     - stage: horo
-      stageUuid: "733302b1-a965-86eb-b203-7ecdc689947e"
+      stageUuid: "ff7fe841-b768-84c9-9380-020eb0349d52"
     - stage: seal
       stageUuid: "8f7090c4-3197-8f3a-9239-5f7be130c51f"
     - stage: uuid
-      stageUuid: "2d579b71-8acf-8f3b-bd01-e89dcd147928"
+      stageUuid: "6cc39a02-ab3a-8a93-8af8-a5fc8a0a1d1a"
 version: 2
 ---
 # provisions

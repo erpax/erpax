@@ -1,63 +1,35 @@
 ---
 name: eye
 description: "Use when reasoning about eye as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/eye
-coordinate: eye · 7/descent · b2039cc3
-contentUuid: "e8ccb351-e975-5df2-8f3e-66cf5f01c446"
-diamondUuid: "62c768f4-7b39-8f35-b4c6-3e3e31bd0a80"
-uuid: "b2039cc3-82d0-8de7-8180-3b778374cfc9"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/eye"
+coordinate: "vocabulary/eye · 1/base · e8fbc9f9"
+contentUuid: "01690450-187e-5c0f-8ef7-62a710df2e04"
+diamondUuid: "e8e76deb-6cae-847e-aa49-e07646400ab6"
+uuid: "e8fbc9f9-f6e2-82a7-935f-5b6ffbb11f83"
+horo: 1
 typography:
-  partition: eye
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "80bddd05-beb3-8de6-bd38-8977db552bb8"
+  computationUuid: "241c0c4f-a149-80cd-918b-4d671410aac3"
   stages:
     - stage: path
-      stageUuid: "c6b7e817-1ff3-8539-a3e4-9ffa4a28fee5"
+      stageUuid: "56c9624c-8ae3-81b0-9841-3329a406dc3c"
     - stage: trinity
-      stageUuid: "c0aa78da-c427-8426-80a4-67ffb3205dc5"
+      stageUuid: "ddc8efcd-547b-8e6a-b35e-c740f3a3c83b"
     - stage: boundary
-      stageUuid: "6831aed9-d782-8832-8731-cea10878576a"
+      stageUuid: "19de108e-124b-83bc-89e7-1f257626e477"
     - stage: links
-      stageUuid: "1ef82491-513e-841d-8ff1-5ead3d6a9e25"
+      stageUuid: "f8c5369a-7f89-8a38-a0f2-3664f0b97f7e"
     - stage: horo
-      stageUuid: "d77c605d-3e7f-8350-8f06-5d7ba0c2e915"
+      stageUuid: "c4696944-c952-8611-89a1-2917fd2c4a1d"
     - stage: seal
-      stageUuid: "427d3a81-c789-8f9c-b1e4-d2be22c5ca39"
+      stageUuid: "5a891a19-5f34-8fff-97e9-1b7303c15d4e"
     - stage: uuid
-      stageUuid: "56a5908d-957f-8e80-8c73-2c61964ad246"
+      stageUuid: "5c2d33fb-0979-891f-9891-903654bb2dc5"
 version: 2
 ---
 # eye

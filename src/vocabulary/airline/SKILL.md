@@ -1,58 +1,35 @@
 ---
 name: airline
 description: Use when reasoning about airline — An organization that provides flights for passengers.
-atomPath: vocabulary/airline
-coordinate: airline · 4/weave · 1a5d2e11
-contentUuid: "9554722e-9271-5eec-9e37-bdcdb21aeabb"
-diamondUuid: "2f175ada-7b6f-87b6-81db-582e4cbea176"
-uuid: "1a5d2e11-efb2-82b4-8ecc-1f5628397de8"
-horo: 4
-bonds:
-  in:
-    - law
-    - thing
-    - transport
-  out:
-    - law
-    - thing
-    - transport
+atomPath: "vocabulary/airline"
+coordinate: "vocabulary/airline · 7/descent · 05fa8f02"
+contentUuid: "e4db9147-c31b-566f-b1b1-12137c663d7f"
+diamondUuid: "6162ee84-9d7a-81d1-aa04-d15e44c96484"
+uuid: "05fa8f02-dd41-8ca8-921e-17167a12b348"
+horo: 7
 typography:
-  partition: airline
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-    - transport
-  matrix:
-    - law
-    - thing
-    - transport
-  backlinks:
-    - law
-    - thing
-    - transport
 signatures:
-  computationUuid: "6993aca1-78bc-8120-bc49-996ae95b90c8"
+  computationUuid: "cbc56ec6-ee6f-8512-9307-50170c8d3772"
   stages:
     - stage: path
-      stageUuid: "0603d149-fec3-80cf-8011-8c9927e18e8e"
+      stageUuid: "5a503883-275c-8bcb-9cf3-0ce9083b5603"
     - stage: trinity
-      stageUuid: "c2e0d6da-992a-8993-92c5-fecb31ae72a3"
+      stageUuid: "9a5b232b-3ed9-89e8-b3b5-862741ae313e"
     - stage: boundary
-      stageUuid: "c94f602b-b747-8f16-ba31-405dfc59e846"
+      stageUuid: "b64efb4a-7f46-8fd9-bca9-d56768445437"
     - stage: links
-      stageUuid: "54b745f7-8535-84bd-8820-057a08ebe484"
+      stageUuid: "bb743314-6c18-8324-91ab-f2b3be7bad60"
     - stage: horo
-      stageUuid: "41491db2-6834-8622-bea3-f09bb55c415f"
+      stageUuid: "8c6fcc9d-05e5-8cc9-a905-df8b428c5c0b"
     - stage: seal
-      stageUuid: "4bb690ce-86cb-847e-90ca-5966cfff3f17"
+      stageUuid: "e594e48c-b60c-89f1-be92-815c69563740"
     - stage: uuid
-      stageUuid: "9051fb64-9a9a-8e39-b6b2-c966ef86ea5e"
+      stageUuid: "f9984a9e-01e8-815b-bccf-0eb7cb5824f0"
 version: 2
 ---
 # airline

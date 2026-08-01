@@ -2,52 +2,19 @@
 name: tattoo
 description: "Use when reasoning about tattoo as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: tattoo
-coordinate: tattoo · 2/share · 7e7e92aa
-contentUuid: "15ae3140-d188-5eaa-84b9-3fdb3cf74a20"
-diamondUuid: "7a551d73-1bf1-8ba9-b835-d3d1ace34006"
-uuid: "7e7e92aa-7c1e-81d3-ade5-81ee467c86f8"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - parlor
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - parlor
-    - sti
+coordinate: "tattoo · 5/round · 7c5f4d5a"
+contentUuid: "c3159aed-c3b0-52f5-9a24-89736442f2a4"
+diamondUuid: "e2992e6c-f596-8249-9b2d-38aaf2cf4006"
+uuid: "7c5f4d5a-a3b3-8104-9cfb-eb6f99707450"
+horo: 5
 typography:
   partition: tattoo
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - parlor
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - parlor
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - parlor
-    - sti
 signatures:
-  computationUuid: "c543723e-79c6-8124-9c24-92774be6699d"
+  computationUuid: "bc60d455-edac-8715-a095-2fa8092b1cae"
   stages:
     - stage: path
       stageUuid: "0d70c3c4-e547-8a6b-bfc1-614834df8233"
@@ -58,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bd75e0ac-b5d8-87dc-b6b9-67b6311f8e8f"
     - stage: horo
-      stageUuid: "0a862335-4632-8572-a6b1-92de1adaa8d6"
+      stageUuid: "9c209e11-fe7a-82fe-81b4-95b994f1dbd8"
     - stage: seal
-      stageUuid: "155d7df9-6dfb-8822-b4a9-6df7d8d9c695"
+      stageUuid: "f319cb80-3dd6-84c8-ae25-dda8eee6613c"
     - stage: uuid
-      stageUuid: "a003b757-4435-808b-b97c-c92a9d363d78"
+      stageUuid: "97d5075d-159c-8bb4-899f-d4cf15983389"
 version: 2
 ---
 # tattoo

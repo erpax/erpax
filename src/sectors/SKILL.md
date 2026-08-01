@@ -2,59 +2,19 @@
 name: sectors
 description: "Use when taxonomising any part of society — SNA institutional sectors, ISIC economic activities, COFOG government functions, ICNPO civil society, SDG outcomes. The one societal coordinate system every party, connection, transaction and tenant references."
 atomPath: sectors
-coordinate: sectors · 1/base · 20f7c52f
-contentUuid: "6899cef3-1a99-51b5-a1ba-8d20af31e8dd"
-diamondUuid: "34c48c39-5531-8dda-a113-42476d95c726"
-uuid: "20f7c52f-24f3-8817-b4a9-575f94636cbb"
-horo: 1
-bonds:
-  in:
-    - access
-    - accounting
-    - collections
-    - defence
-    - duality
-    - event
-    - fields
-    - fractal
-    - health
-    - holographic
-    - hooks
-    - identity
-    - law
-    - merge
-    - sector
-    - standard
-    - transaction
-    - whole
-  out:
-    - access
-    - accounting
-    - collections
-    - defence
-    - duality
-    - event
-    - fields
-    - fractal
-    - health
-    - holographic
-    - hooks
-    - identity
-    - law
-    - merge
-    - sector
-    - standard
-    - transaction
-    - whole
+coordinate: "sectors · 2/share · 0ec5c248"
+contentUuid: "7c26e2a0-0186-53aa-99d4-0a1e2d80f49a"
+diamondUuid: "af0ba8f2-702e-8e94-99f1-729713881b59"
+uuid: "0ec5c248-b4d9-8833-99d1-d3b426a7f979"
+horo: 2
 typography:
   partition: sectors
   bondDegree: 56
-  neighbors: []
 standards:
   - "EU NACE Rev.2 economic-activities"
   - "EU-765/2008"
   - "ISO 3166-1:2020 country-codes (geographic level)"
-  - "ISO-19011:2018 audit-trail transparent-societal-ledger"
+  - "ISO 3166-1:2020 country-codes (geographic level)`"
   - NACE
   - "UN 2030-Agenda Sustainable-Development-Goals (17 goals — society's outcomes)"
   - "UN COFOG classification-of-the-functions-of-government (10 divisions)"
@@ -62,66 +22,10 @@ standards:
   - "UN ISIC Rev.4 international-standard-industrial-classification (economic activity)"
   - "UN SNA-2008 institutional-sectors (S.11/S.12 corporations · S.13 government · S.14 households · S.15 NPISH)"
   - "UN/Johns-Hopkins ICNPO international-classification-of-non-profit-organizations (civil society)"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - accounting
-    - collections
-    - defence
-    - duality
-    - event
-    - fields
-    - fractal
-    - health
-    - holographic
-    - hooks
-    - identity
-    - law
-    - merge
-    - standard
-    - transaction
-    - whole
-  matrix:
-    - access
-    - accounting
-    - collections
-    - defence
-    - duality
-    - event
-    - fields
-    - fractal
-    - health
-    - holographic
-    - hooks
-    - identity
-    - law
-    - merge
-    - sector
-    - standard
-    - transaction
-    - whole
-  backlinks:
-    - access
-    - accounting
-    - collections
-    - defence
-    - duality
-    - event
-    - fields
-    - fractal
-    - health
-    - holographic
-    - hooks
-    - identity
-    - law
-    - merge
-    - sector
-    - standard
-    - transaction
-    - whole
 signatures:
-  computationUuid: "6b779aaa-679f-84df-a7ef-795e187f1f6f"
+  computationUuid: "7e9e1669-393c-8efc-a3ca-0c1e323c51be"
   stages:
     - stage: path
       stageUuid: "ed7b4491-7f56-863a-854d-13c7c3e87730"
@@ -132,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "86ececfe-1ee2-8044-aa73-78161e48830b"
     - stage: horo
-      stageUuid: "2952bfa0-05a2-85f2-bce8-4f9ee9a8b584"
+      stageUuid: "f29b749b-3405-868e-a264-a4251521f607"
     - stage: seal
-      stageUuid: "e468c297-be3f-8bd0-92c6-c7e7a115ed76"
+      stageUuid: "f53d982b-75d3-8b19-83d2-b8198b6ee6a4"
     - stage: uuid
-      stageUuid: "c980a1d8-7e51-87d2-abfb-2e82111fceaa"
+      stageUuid: "032595af-49f5-8eb3-af81-4b01f8b642b0"
 version: 2
 ---
 # sectors

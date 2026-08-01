@@ -1,68 +1,35 @@
 ---
 name: iata
 description: "Use when reasoning about iata as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/iata
-coordinate: iata · 4/weave · 2b89df3e
-contentUuid: "83494e61-3cff-5a1e-9883-1725a185ec47"
-diamondUuid: "362066cd-b963-8372-9679-1bcf7e2f0042"
-uuid: "2b89df3e-a76a-804a-91eb-fcbbb51129e6"
+atomPath: "vocabulary/iata"
+coordinate: "vocabulary/iata · 4/weave · 29147557"
+contentUuid: "b7d546c8-c5ef-58f1-bbb9-2942af745a44"
+diamondUuid: "bb14cb98-7756-8efc-b891-d219e9c3fd3c"
+uuid: "29147557-f69a-857e-9e4d-658cdd5e90e7"
 horo: 4
-bonds:
-  in:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: iata
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "d110ea9c-ea6b-8976-8815-6608f4f1c641"
+  computationUuid: "704fa383-c13a-8ebb-8d46-80ce4781d1db"
   stages:
     - stage: path
-      stageUuid: "938a964a-a1b7-80ec-b387-7f259769c537"
+      stageUuid: "047e7e82-f845-8b54-9555-e1705829c545"
     - stage: trinity
-      stageUuid: "24b40f3a-178e-801f-80ec-59c37c9cffcf"
+      stageUuid: "5c3117d4-d4b8-87b0-8e0b-5c63e0dce0e1"
     - stage: boundary
-      stageUuid: "eb8c9b9c-ffd0-8f3a-ada4-202e3a5d5e88"
+      stageUuid: "6ee60e58-4a84-8cb5-b049-ad18842cf2c8"
     - stage: links
-      stageUuid: "0fcdc49e-8330-83fa-a937-a0e75e6eb0ba"
+      stageUuid: "42e5d602-d62b-8edb-8935-80bc1cf0ccaf"
     - stage: horo
-      stageUuid: "71e84d2c-195d-8f8f-8523-348388518131"
+      stageUuid: "0c90e8b2-1481-8b7d-be4a-373a568f6817"
     - stage: seal
-      stageUuid: "f8ff75f9-fa9a-861c-83ed-0b2910bedc4c"
+      stageUuid: "0f814cf7-6400-8402-9bcd-92b0c3c4b25c"
     - stage: uuid
-      stageUuid: "fbf042e6-98fb-825a-beef-99d40f59df87"
+      stageUuid: "0af76f53-ea71-8916-be94-8d62af0a5c79"
 version: 2
 ---
 # iata

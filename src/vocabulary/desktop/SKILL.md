@@ -1,63 +1,35 @@
 ---
 name: desktop
 description: "Use when reasoning about desktop as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/desktop
-coordinate: desktop · 2/share · 7e46fc11
-contentUuid: "ec2eb46d-9a38-5b73-87d2-1cbcbdb0d4d5"
-diamondUuid: "f84bb478-92c0-87d3-8381-0e77119f9a55"
-uuid: "7e46fc11-bedd-8ae5-83ce-75b1c8f8bd52"
+atomPath: "vocabulary/desktop"
+coordinate: "vocabulary/desktop · 2/share · e3dce338"
+contentUuid: "082eeabb-209a-50ea-9dea-63873d573782"
+diamondUuid: "8e4d3e2b-373f-8651-a33f-bc2157f84cea"
+uuid: "e3dce338-0381-867d-ad63-4d60dfb6c181"
 horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: desktop
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "eab4acb9-d9d7-896d-b57a-1276b4622a67"
+  computationUuid: "9b0052e6-4980-8604-a308-dc3990b07937"
   stages:
     - stage: path
-      stageUuid: "b54f3598-93cc-8bcb-8ae7-fbf112bdec21"
+      stageUuid: "b8c3a486-b2ae-83f3-870f-a308a00d7c5e"
     - stage: trinity
-      stageUuid: "259ef3ea-b2da-853f-a18a-e2252ec67315"
+      stageUuid: "1cdfb749-eac8-8f86-be82-2f0517450b75"
     - stage: boundary
-      stageUuid: "cd1caf19-c9a3-88c5-b972-0ed8a69547d5"
+      stageUuid: "cd9a8d98-e8bb-834d-8cd8-e61817fb16e7"
     - stage: links
-      stageUuid: "8771e64e-98e3-8465-bfbd-1546c248fe6d"
+      stageUuid: "e44314cb-daf7-8188-89e3-09fea9de4ea6"
     - stage: horo
-      stageUuid: "d95b3f6b-5830-835d-aa80-53a2c2dc9755"
+      stageUuid: "b11afcf6-b9e9-8955-b7bc-2b09fd8d34a0"
     - stage: seal
-      stageUuid: "c6193f79-03ec-8b3a-85a4-29de048f7a2d"
+      stageUuid: "208e5d3b-9e15-864b-b7e6-98192ae78c73"
     - stage: uuid
-      stageUuid: "e9e14263-d956-8cfb-be69-0cf6296bad1a"
+      stageUuid: "bd6386db-8a42-8f45-9c72-54689d10f4d5"
 version: 2
 ---
 # desktop

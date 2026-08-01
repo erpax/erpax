@@ -1,73 +1,35 @@
 ---
 name: early
 description: "Use when reasoning about early as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/early
-coordinate: early · 8/crest · ee379dfa
-contentUuid: "d264de7f-4665-58ff-a900-d5f2cd4a4aa2"
-diamondUuid: "aa5e052f-b830-8720-b206-5eb9d2b4c8b3"
-uuid: "ee379dfa-016f-8fae-b706-edbb3791ddc0"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - penalty
-    - prepayment
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - penalty
-    - prepayment
-    - sti
+atomPath: "vocabulary/early"
+coordinate: "vocabulary/early · 1/base · b00c304d"
+contentUuid: "fe9781d8-ec91-5689-a3e9-36a62fb138b1"
+diamondUuid: "bfdcddac-4a2a-8294-b1c0-edf7902003ef"
+uuid: "b00c304d-874b-89ec-aa74-463d8c427100"
+horo: 1
 typography:
-  partition: early
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - penalty
-    - prepayment
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - penalty
-    - prepayment
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - penalty
-    - prepayment
-    - sti
 signatures:
-  computationUuid: "49fd42d2-1558-84b1-9ab9-f5d97559c634"
+  computationUuid: "589d0f47-45f0-8366-824c-51b4e140d859"
   stages:
     - stage: path
-      stageUuid: "aafab1ce-57bb-8f63-95cf-ef5cb29aeee7"
+      stageUuid: "3a5ce1e0-c0fd-8441-bbc8-77c9d96b1162"
     - stage: trinity
-      stageUuid: "5533ae9d-23d0-8553-8024-98263019930a"
+      stageUuid: "d9cbf657-b0ce-8bd2-bba0-1e764c450f6c"
     - stage: boundary
-      stageUuid: "a3e9f32b-7c51-8703-a444-2455c7893cae"
+      stageUuid: "05ac3dff-e24a-8458-be65-d7ffe649467f"
     - stage: links
-      stageUuid: "f36b212c-6a81-83f7-9a8b-174472076d55"
+      stageUuid: "7a5530d2-c03d-8799-bd39-11d7037de087"
     - stage: horo
-      stageUuid: "bedf60be-7715-80d1-9cec-a3193941fef6"
+      stageUuid: "6e9f9226-e8e9-8a14-861a-886c908648f0"
     - stage: seal
-      stageUuid: "ce770866-76b5-8ad7-b17a-b49f05399921"
+      stageUuid: "c55f94af-6497-8d72-8b17-4e8ed1ad6f24"
     - stage: uuid
-      stageUuid: "d5a4e8f3-98ef-8acf-ad0e-561eb5012f6a"
+      stageUuid: "4b61a8a2-ddb2-87fc-8f3b-7745d1df7673"
 version: 2
 ---
 # early

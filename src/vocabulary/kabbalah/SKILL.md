@@ -1,128 +1,34 @@
 ---
 name: kabbalah
 description: "Use when reading Kabbalah as a sub-diamond of judaism — the mystical tradition of ein-sof (the limitless void), the sefirot as a structured lattice of divine emanation, the divine names, and tikkun (the repair that merges the broken vessels back toward the whole). A facet-diamond of the judaism archangel. Strip the Hebrew prefix and ein-sof collapses to void."
-atomPath: vocabulary/kabbalah
-coordinate: kabbalah · 7/descent · 8e0b467f
-contentUuid: "247bc845-e78a-593e-8bc0-bffe43f5ee04"
-diamondUuid: "818a3a03-4c4d-8d52-b8e8-189888c2a1d2"
-uuid: "8e0b467f-55fe-84ed-9027-dd622600bf45"
-horo: 7
-bonds:
-  in:
-    - archangel
-    - diamond
-    - identity
-    - judaism
-    - law
-    - matrix
-    - merge
-    - name
-    - religion
-    - sacred
-    - self
-    - society
-    - translator
-    - uuid
-    - void
-    - whole
-    - word
-  out:
-    - archangel
-    - diamond
-    - identity
-    - judaism
-    - law
-    - matrix
-    - merge
-    - name
-    - religion
-    - sacred
-    - self
-    - society
-    - translator
-    - uuid
-    - void
-    - whole
-    - word
+atomPath: "vocabulary/kabbalah"
+coordinate: "vocabulary/kabbalah · 4/weave · 6c93369b"
+contentUuid: "13a6f5f0-122e-50d0-ac63-3756fcdb545d"
+diamondUuid: "f76105ee-6e72-865c-b77a-ac2a11d09bc2"
+uuid: "6c93369b-113d-8769-bd55-783443b43cc3"
+horo: 4
 typography:
-  partition: kabbalah
+  partition: vocabulary
   bondDegree: 53
-  neighbors:
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - archangel
-    - diamond
-    - identity
-    - judaism
-    - law
-    - matrix
-    - merge
-    - name
-    - religion
-    - sacred
-    - self
-    - society
-    - translator
-    - uuid
-    - void
-    - whole
-    - word
-  matrix:
-    - archangel
-    - diamond
-    - identity
-    - judaism
-    - law
-    - matrix
-    - merge
-    - name
-    - religion
-    - sacred
-    - self
-    - society
-    - translator
-    - uuid
-    - void
-    - whole
-    - word
-  backlinks:
-    - archangel
-    - diamond
-    - identity
-    - judaism
-    - law
-    - matrix
-    - merge
-    - name
-    - religion
-    - sacred
-    - self
-    - society
-    - translator
-    - uuid
-    - void
-    - whole
-    - word
 signatures:
-  computationUuid: "b592d5de-33bc-898e-9730-a27a8db54d93"
+  computationUuid: "db19ade4-098a-8e3d-a8b1-ebe3932cc02b"
   stages:
     - stage: path
-      stageUuid: "cb7c9a0e-8448-85e0-8474-6cb234c2da9f"
+      stageUuid: "1b734531-e9d0-8d80-8983-86ac33d7db1f"
     - stage: trinity
-      stageUuid: "d3931506-d5c2-8f6e-bef0-8534da19f021"
+      stageUuid: "0755f144-a11d-8512-bfa6-407efc749832"
     - stage: boundary
-      stageUuid: "1ac19068-87c5-8155-b416-33032bcb8442"
+      stageUuid: "810bd825-1c65-8b18-9909-bd4e88a21fc0"
     - stage: links
-      stageUuid: "b7fca7a2-3f4b-80c9-89c7-5a15b96d87d7"
+      stageUuid: "2aa6c9ce-4f0a-8a3a-b0c0-89fe5ea502ff"
     - stage: horo
-      stageUuid: "119656a0-41bd-8a2b-860e-53d28fdf6df0"
+      stageUuid: "26a4dc9d-d704-8c12-ac3a-a1b5d5eb93ab"
     - stage: seal
-      stageUuid: "1abd0f03-f79e-8fdb-8c5c-aec5bae6ca42"
+      stageUuid: "c27429d1-23bf-8627-a291-e92d32cc1514"
     - stage: uuid
-      stageUuid: "7f482fd7-ae6f-8fa1-bae8-0c027a947df6"
+      stageUuid: "109dd773-162c-8b81-86ef-4272541697f0"
 version: 2
 ---
 # kabbalah — the limitless void; the lattice of names, the world repaired

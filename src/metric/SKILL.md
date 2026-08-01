@@ -2,101 +2,16 @@
 name: metric
 description: "Use when the metrics need to be quantum too — quantomize holds the corpus's classical readings (session, gravity, leftover, the gravity pools) AT ONCE in one coherent superposition, folded to a single address, coherent iff no instrument disagrees with itself. Quantum here is the superposition overlay (not quantum metrology); coherence is agreement between instruments, never truth."
 atomPath: metric
-coordinate: "metric · 7/descent · 8b31cf15"
-contentUuid: "2c85e60b-77f6-5651-afce-132cc1c6a26f"
+coordinate: "metric · 4/weave · 78147747"
+contentUuid: "4fe10ca7-1be3-5430-ad6f-2d62b7a478ef"
 diamondUuid: "583aee68-bee1-8663-854f-aa49a8eabf22"
-uuid: "8b31cf15-f946-8725-9e30-59dff8fdcf85"
-horo: 7
-bonds:
-  in:
-    - attrition
-    - breed
-    - distribution
-    - gravity
-    - kpi
-    - law
-    - leftover
-    - merge
-    - observability
-    - outlier
-    - quantum
-    - rosetta
-    - rules
-    - sampling
-    - session
-    - think
-    - trend
-  out:
-    - attrition
-    - breed
-    - distribution
-    - gravity
-    - kpi
-    - law
-    - leftover
-    - merge
-    - observability
-    - outlier
-    - quantum
-    - rosetta
-    - rules
-    - sampling
-    - session
-    - think
-    - trend
+uuid: "78147747-8cbf-8ed3-9a93-9b2f6b021eda"
+horo: 4
 typography:
   partition: metric
   bondDegree: 56
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - gravity
-    - law
-    - leftover
-    - merge
-    - quantum
-    - rosetta
-    - rules
-    - session
-    - think
-  matrix:
-    - attrition
-    - breed
-    - distribution
-    - gravity
-    - kpi
-    - law
-    - leftover
-    - merge
-    - observability
-    - outlier
-    - quantum
-    - rosetta
-    - rules
-    - sampling
-    - session
-    - think
-    - trend
-  backlinks:
-    - attrition
-    - breed
-    - distribution
-    - gravity
-    - kpi
-    - law
-    - leftover
-    - merge
-    - observability
-    - outlier
-    - quantum
-    - rosetta
-    - rules
-    - sampling
-    - session
-    - think
-    - trend
 signatures:
   computationUuid: "e6fc957e-3121-8bc6-ba54-a5053843114e"
   stages:

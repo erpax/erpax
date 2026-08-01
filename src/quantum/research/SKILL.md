@@ -1,154 +1,20 @@
 ---
 name: research
 description: "Use when pricing research on the quantum scale — a research run consumes resources (agents × tokens) and produces value (entropy reduced), so it is a billable expense whose worth is the disorder it closes; worthwhile only when it reduces more entropy than it costs."
-atomPath: quantum/research
-coordinate: quantum/research · 1/base · c5bf4627
-contentUuid: "77e31522-7f18-5219-8005-30f9631f48be"
-diamondUuid: "806a9f54-c88a-8fe7-ac6c-36f26325a855"
-uuid: "c5bf4627-9075-8e77-abe8-fd5dec0cd254"
-horo: 1
-bonds:
-  in:
-    - accounting
-    - akashic
-    - anchor
-    - angel
-    - breath
-    - civilization
-    - collapse
-    - consultant
-    - consulting
-    - design
-    - development
-    - drone
-    - feedback
-    - history
-    - interview
-    - law
-    - literature
-    - localize
-    - merge
-    - oid
-    - organization
-    - profane
-    - project
-    - proof
-    - quantum
-    - research
-    - sacred
-    - science
-    - uuid
-    - zeropoint
-  out:
-    - accounting
-    - akashic
-    - anchor
-    - angel
-    - breath
-    - civilization
-    - collapse
-    - consultant
-    - consulting
-    - design
-    - development
-    - drone
-    - feedback
-    - history
-    - interview
-    - law
-    - literature
-    - localize
-    - merge
-    - oid
-    - organization
-    - profane
-    - project
-    - proof
-    - research
-    - sacred
-    - science
-    - uuid
-    - zeropoint
+atomPath: "quantum/research"
+coordinate: "quantum/research · 8/crest · 452b62cb"
+contentUuid: "668483fc-6ee2-5c12-a9fc-2a713af49c49"
+diamondUuid: "3d32328b-1988-8e39-819f-319bc01dadb0"
+uuid: "452b62cb-53eb-880b-ba92-f08a5ace9bdc"
+horo: 8
 typography:
   partition: quantum
-  bondDegree: 149
-  neighbors:
-    - agent
+  bondDegree: 158
 standards:
   - "double-entry (the research run as a balanced expense ⊕ value posting)"
 bindings: []
-neighbors:
-  wikilink:
-    - agent
-    - balance
-    - cost
-    - entropy
-    - entry
-    - expense
-    - law
-    - research
-  matrix:
-    - accounting
-    - akashic
-    - anchor
-    - angel
-    - breath
-    - civilization
-    - collapse
-    - consultant
-    - consulting
-    - design
-    - development
-    - drone
-    - feedback
-    - history
-    - interview
-    - law
-    - literature
-    - localize
-    - merge
-    - oid
-    - organization
-    - profane
-    - project
-    - proof
-    - research
-    - sacred
-    - science
-    - uuid
-    - zeropoint
-  backlinks:
-    - accounting
-    - akashic
-    - anchor
-    - angel
-    - breath
-    - civilization
-    - collapse
-    - consultant
-    - consulting
-    - design
-    - development
-    - drone
-    - feedback
-    - history
-    - interview
-    - law
-    - literature
-    - localize
-    - merge
-    - oid
-    - organization
-    - profane
-    - project
-    - proof
-    - research
-    - sacred
-    - science
-    - uuid
-    - zeropoint
 signatures:
-  computationUuid: "89d1ee8d-7565-8e82-96cb-c0f4f85d5a78"
+  computationUuid: "a9d3be40-0ce8-8059-ac30-6dce7b0b1b63"
   stages:
     - stage: path
       stageUuid: "ba55283e-0402-8b68-a921-9daf2fbc6ba6"
@@ -159,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "32e858a2-cc08-8b39-bddf-97f63ac2ad67"
     - stage: horo
-      stageUuid: "336d616a-ae71-89dc-8989-175d0284cbf0"
+      stageUuid: "e04ad095-4b7b-8e08-9cb3-0edf627ed756"
     - stage: seal
       stageUuid: "ad4211d7-8199-8e85-b2bb-74fad42f7c01"
     - stage: uuid
-      stageUuid: "70590bf2-42af-8ced-8a2f-1a3b00b877be"
+      stageUuid: "66eb11be-e1fb-862e-ab4b-e2d2d16bde78"
 quantum:
   superposition:
     - accounting
@@ -188,8 +54,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "89d1ee8d-7565-8e82-96cb-c0f4f85d5a78"
-    contentUuid: "77e31522-7f18-5219-8005-30f9631f48be"
+    computationUuid: "a9d3be40-0ce8-8059-ac30-6dce7b0b1b63"
+    contentUuid: "668483fc-6ee2-5c12-a9fc-2a713af49c49"
 version: 2
 ---
 # quantum/research — research, priced
@@ -207,4 +73,4 @@ Matter-twin: `src/quantum/research/index.ts` (`researchCost` · `researchExpense
 @audit cost = agents × tokens (the run's real spend); value = entropy reduced; the ledger balances, never asserted
 @standard double-entry (the research run as a balanced expense ⊕ value posting)
 
-<sub>content-uuid `77e31522-7f18-5219-8005-30f9631f48be` · account `quantum/research` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `668483fc-6ee2-5c12-a9fc-2a713af49c49` · account `quantum/research` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -1,81 +1,34 @@
 ---
 name: dunning
 description: "Use when automating payment retry and collections — dunning-cycles exist but dunning as the parent concept (policy, rule, retry schedule, messaging) does not."
-atomPath: vocabulary/dunning
-coordinate: dunning · 1/base · 20c1c04e
-contentUuid: "ba7d458b-1f30-5950-8bd5-4156e975d1a4"
-diamondUuid: "5d256f6b-999c-88f8-bc14-3db676dd9a3a"
-uuid: "20c1c04e-b13f-8625-8ac6-fdca89d5f4d3"
-horo: 1
-bonds:
-  in:
-    - accounting
-    - commerce
-    - customers
-    - cycles
-    - invoices
-    - law
-    - payments
-    - transaction
-  out:
-    - accounting
-    - commerce
-    - customers
-    - cycles
-    - invoices
-    - law
-    - payments
-    - transaction
+atomPath: "vocabulary/dunning"
+coordinate: "vocabulary/dunning · 8/crest · 3982e135"
+contentUuid: "c10dc68f-a178-5e5f-8835-59daae7bde74"
+diamondUuid: "10464a15-2b66-8096-979b-86fa883ba57d"
+uuid: "3982e135-a9e1-840d-856a-8be553f41f26"
+horo: 8
 typography:
-  partition: dunning
-  bondDegree: 24
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 22
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - customers
-    - cycles
-    - invoices
-    - law
-    - payments
-    - transaction
-  matrix:
-    - accounting
-    - commerce
-    - customers
-    - cycles
-    - invoices
-    - law
-    - payments
-    - transaction
-  backlinks:
-    - accounting
-    - commerce
-    - customers
-    - cycles
-    - invoices
-    - law
-    - payments
-    - transaction
 signatures:
-  computationUuid: "976ef68b-d78c-8b1d-8741-1dee5082ed82"
+  computationUuid: "2bb73d83-eb22-8181-9b8e-da3bf069a6eb"
   stages:
     - stage: path
-      stageUuid: "bbf10449-0728-87b0-8ee2-6666ece60bd2"
+      stageUuid: "978bb3b8-3746-810f-8853-48c0473145c7"
     - stage: trinity
-      stageUuid: "a02c657c-780b-8c5c-9597-0f9dcaf52a61"
+      stageUuid: "aa5c0cf4-3edd-85cb-be26-d37a6f27cc3b"
     - stage: boundary
-      stageUuid: "5b69b55a-1d8f-8235-b73d-146e5f6be996"
+      stageUuid: "0be8d7e3-7829-8af9-a7ea-cbc974ca0435"
     - stage: links
-      stageUuid: "4183b76c-dc63-8b55-bf80-2e62556833c4"
+      stageUuid: "8aa0f33c-c0bb-8f1b-a06e-014b1712cc61"
     - stage: horo
-      stageUuid: "2e1a5312-e72a-8e0c-8bf5-1b4ff772f74b"
+      stageUuid: "16bbbf71-c8b5-8eb0-8469-4f77961e8470"
     - stage: seal
-      stageUuid: "596fcea8-cb97-86b0-829e-7a18291b37a1"
+      stageUuid: "8c069e67-55e3-8ef5-9fb2-324756e90bf3"
     - stage: uuid
-      stageUuid: "66d6a5f0-9a60-8b89-b6a4-8c6ba5a5bb52"
+      stageUuid: "f6bfbddb-27df-8c94-80b3-ff30e9803f52"
 version: 2
 ---
 # dunning

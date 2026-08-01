@@ -1,68 +1,35 @@
 ---
 name: psychological
 description: "Use when reasoning about psychological — A schema.org component word, collided out of schema.org compounds — fused from PsychologicalTreatment (sti · collapse · merge)."
-atomPath: vocabulary/psychological
-coordinate: psychological · 4/weave · 3a757384
-contentUuid: "3ff3c198-f9db-52a9-8fc3-27ef888d06d8"
-diamondUuid: "6f439c5b-608a-8716-87f2-af8623c7328b"
-uuid: "3a757384-8063-8896-854f-9f0503d41e4e"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - treatment
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - treatment
+atomPath: "vocabulary/psychological"
+coordinate: "vocabulary/psychological · 8/crest · d8f45e89"
+contentUuid: "bd64ef0c-2e76-5f66-a787-91e566c4a28a"
+diamondUuid: "3bf10c19-d8d1-8fdf-ac96-d713edec5168"
+uuid: "d8f45e89-58e1-81fe-949f-f6603da20afe"
+horo: 8
 typography:
-  partition: psychological
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - treatment
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - treatment
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - treatment
 signatures:
-  computationUuid: "f150543b-e6ab-81cf-955d-069a4b411126"
+  computationUuid: "1be87966-4166-853e-b20e-2f737a6edd6d"
   stages:
     - stage: path
-      stageUuid: "b84a6993-80d0-8195-911f-04ce5d19ead2"
+      stageUuid: "4ee43783-284b-899f-87b6-6e91cc15a53e"
     - stage: trinity
-      stageUuid: "932bac1e-e822-85b8-9181-145c014ce268"
+      stageUuid: "0253b886-28a9-8653-8d85-3e635a143a40"
     - stage: boundary
-      stageUuid: "00047cae-beba-8feb-94d7-32aa52003cbd"
+      stageUuid: "c019a118-d8ab-82cd-a10f-633f7de3f42a"
     - stage: links
-      stageUuid: "46db329f-b7ec-8bf7-b263-bdac2bf2e6d1"
+      stageUuid: "7539ce94-799e-8256-91f6-a40fd032a455"
     - stage: horo
-      stageUuid: "67579e93-39ca-8269-bf81-2e73aaaae2f7"
+      stageUuid: "4fa84f6b-5726-844f-909b-ee0fc34fdf42"
     - stage: seal
-      stageUuid: "f69b6056-50a6-8b46-9d15-28d856d5d4bb"
+      stageUuid: "8d05d865-45e5-88a7-ad31-3c0d49b74a6a"
     - stage: uuid
-      stageUuid: "3e9f40a4-204e-8c33-8cf1-68062f3a1715"
+      stageUuid: "4e310684-8c78-8c2e-ad8f-809c3f79b595"
 version: 2
 ---
 # psychological

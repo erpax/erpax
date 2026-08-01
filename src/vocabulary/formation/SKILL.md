@@ -1,63 +1,35 @@
 ---
 name: formation
 description: "Use when reasoning about formation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/formation
-coordinate: formation · 2/share · 5c331418
-contentUuid: "1449469f-3688-51dd-838e-77e55aa03a97"
-diamondUuid: "5ab18417-0ed6-8553-9e5b-3defa1bdff52"
-uuid: "5c331418-609e-8ba4-8e95-cda74b19aede"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/formation"
+coordinate: "vocabulary/formation · 5/round · 1590cf6c"
+contentUuid: "6db13b42-7c0a-5e18-97a4-4acf95098f61"
+diamondUuid: "a694ff69-cee6-8a36-8709-f97b43557672"
+uuid: "1590cf6c-2e0b-826c-85b4-e6aff20f715c"
+horo: 5
 typography:
-  partition: formation
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "d632467a-5ce1-88c9-8093-ac1733758fa2"
+  computationUuid: "93ce5b9a-513f-8050-baab-09b4db8e1347"
   stages:
     - stage: path
-      stageUuid: "7223b5b9-8864-84b4-ab85-c34ebe3fde73"
+      stageUuid: "c9b3bff2-eb03-8a25-bad8-d6e2aec3c38b"
     - stage: trinity
-      stageUuid: "19da4e15-5553-8723-bd01-0ca98e14886a"
+      stageUuid: "ec3d9d3f-e425-83f3-89bf-1264c58261a3"
     - stage: boundary
-      stageUuid: "4b9d5ea2-7889-8724-8fab-e7f0f85ddb98"
+      stageUuid: "cd1b8436-6b08-89e6-bc81-a1f90032d357"
     - stage: links
-      stageUuid: "a6a10f80-569e-8928-94f3-4a77f71bbae1"
+      stageUuid: "55398e45-4ced-8230-888f-e779e27d4e4d"
     - stage: horo
-      stageUuid: "a74ec58a-74af-8922-bb47-57f9b4f1c5a4"
+      stageUuid: "cb037af8-a5ca-883b-8324-33d17be97d68"
     - stage: seal
-      stageUuid: "b3f0cd89-8610-805b-a92a-0ee390912a67"
+      stageUuid: "45701537-9d1f-8c4b-9e80-b3487ea2b4f2"
     - stage: uuid
-      stageUuid: "a0b7dbd9-15f5-811e-96d7-e08080822dae"
+      stageUuid: "66006876-1630-8a96-a801-93665ab6fde6"
 version: 2
 ---
 # formation

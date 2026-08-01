@@ -2,57 +2,19 @@
 name: tested
 description: "Use when reasoning about tested as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: tested
-coordinate: tested · 7/descent · f7597848
-contentUuid: "e496fa93-709b-5890-ba60-5650ca0c5d6b"
-diamondUuid: "c317233e-7c03-8ea8-b4bb-526b2a002c03"
-uuid: "f7597848-95c7-8b59-a60c-022ce6d9a835"
+coordinate: "tested · 7/descent · 856df8f9"
+contentUuid: "2b4b04aa-479d-5274-8960-44f31d000ece"
+diamondUuid: "5bf9a398-d300-8383-922e-8f27ec47bada"
+uuid: "856df8f9-1d38-8f93-8f71-c435e86c4267"
 horo: 7
-bonds:
-  in:
-    - collapse
-    - getting
-    - info
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - getting
-    - info
-    - law
-    - merge
-    - sti
 typography:
   partition: tested
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - getting
-    - info
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - getting
-    - info
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - getting
-    - info
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "6283ab9c-32ce-82f2-8f4a-8ef365a9430c"
+  computationUuid: "767af988-c00d-86ad-802e-c35efd78f0c9"
   stages:
     - stage: path
       stageUuid: "9361ec5a-8ca1-8ec5-8cf6-f718d1b3d4c4"
@@ -63,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f72390ab-cbff-83ee-a428-594820a99bab"
     - stage: horo
-      stageUuid: "833b9624-392b-8f08-8489-abc217b117d3"
+      stageUuid: "42948d18-018b-8c6f-b4b6-46049acd91a2"
     - stage: seal
-      stageUuid: "e65c95c9-099c-8f33-88cc-7d780d3301f0"
+      stageUuid: "3ee3b026-2f8c-8226-a25f-b54f0a662e28"
     - stage: uuid
-      stageUuid: "9395cce9-0223-81e3-a7be-a12c7e0cf15a"
+      stageUuid: "136aebb3-f58d-80c7-a70e-97ec66e0d1df"
 version: 2
 ---
 # tested

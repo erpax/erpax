@@ -1,83 +1,35 @@
 ---
 name: occ
 description: "Use when reasoning about occ as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/occ
-coordinate: occ · 5/round · 9c1ee081
-contentUuid: "3a063613-5ddc-5f0e-85bd-7d4895c57dc3"
-diamondUuid: "e8a6f6d8-a5ac-8c52-8cd1-0d44d24d70ca"
-uuid: "9c1ee081-f6eb-8b73-8990-e3b6cbe23282"
-horo: 5
-bonds:
-  in:
-    - beds
-    - collapse
-    - cvd
-    - icu
-    - law
-    - merge
-    - num
-    - sti
-  out:
-    - beds
-    - collapse
-    - cvd
-    - icu
-    - law
-    - merge
-    - num
-    - sti
+atomPath: "vocabulary/occ"
+coordinate: "vocabulary/occ · 7/descent · ec482112"
+contentUuid: "e5f3c8aa-6992-53ed-ab90-6e895110c7e4"
+diamondUuid: "afc902ca-9aa9-846f-97a1-b93bb75b547e"
+uuid: "ec482112-f860-826f-b267-f3db4699eb97"
+horo: 7
 typography:
-  partition: occ
+  partition: vocabulary
   bondDegree: 28
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - beds
-    - collapse
-    - cvd
-    - icu
-    - law
-    - merge
-    - num
-    - sti
-  matrix:
-    - beds
-    - collapse
-    - cvd
-    - icu
-    - law
-    - merge
-    - num
-    - sti
-  backlinks:
-    - beds
-    - collapse
-    - cvd
-    - icu
-    - law
-    - merge
-    - num
-    - sti
 signatures:
-  computationUuid: "b2289575-04a1-8956-9c83-d33e15a2276d"
+  computationUuid: "3b4c8c54-a00d-8e6e-ae01-a713bb85cd3f"
   stages:
     - stage: path
-      stageUuid: "9f9e9fae-dcb4-8c99-9dc4-8d8013680649"
+      stageUuid: "7470d195-dd25-80ba-924b-670ca0020526"
     - stage: trinity
-      stageUuid: "bd3c8219-311c-8ffc-b2f7-e61d0f6a03a0"
+      stageUuid: "45166ad7-5eab-87c8-aca3-494eead622f8"
     - stage: boundary
-      stageUuid: "e42e4d14-ed2a-8845-a81e-e123e60362ee"
+      stageUuid: "cf081308-cf50-82f7-882c-fdd438be7bf7"
     - stage: links
-      stageUuid: "3ca270d6-0601-8e31-aeb5-7d3d3a414ffc"
+      stageUuid: "19c857a9-ac2c-8fc9-9148-68ee6abfe6f7"
     - stage: horo
-      stageUuid: "dc569050-aedc-83a0-80d3-efb7ec69cc42"
+      stageUuid: "3c4d25bd-919e-8a84-87ab-5800420af01e"
     - stage: seal
-      stageUuid: "4ee2d746-c841-866f-91e6-e8856098d06f"
+      stageUuid: "0c99d0d9-9945-8f97-8f82-599d583729fc"
     - stage: uuid
-      stageUuid: "3a2bb812-1881-832d-9435-0c32459cafc8"
+      stageUuid: "880e8ae1-f36b-8845-98b9-43d1257597e3"
 version: 2
 ---
 # occ

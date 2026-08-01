@@ -2,31 +2,14 @@
 name: projects
 description: "Use when tracking a customer-facing deliverable under IFRS-15 §35 over-time recognition — accumulating costs (labour via time-entries, materials via purchase-orders), measuring cost-to-cost or milestone progress, managing budget vs EAC, and closing WIP to revenue per the contract's recognition method. The IFRS-15 project anchor collection."
 atomPath: "customers/projects"
-coordinate: "customers/projects · 7/descent · 633b95a8"
-contentUuid: "4fb74f7f-01c0-54ec-b3f0-3c12a225259f"
-diamondUuid: "cf438703-45b9-84a5-8b52-4ce0a69de348"
-uuid: "633b95a8-1f16-86e9-961e-112cd5a803d4"
-horo: 7
-bonds:
-  in:
-    - customers
-    - law
-    - milestones
-    - reports
-    - roadmap
-    - snapshots
-    - tasks
-  out:
-    - law
-    - milestones
-    - reports
-    - roadmap
-    - snapshots
-    - tasks
+coordinate: "customers/projects · 5/round · d838864c"
+contentUuid: "63ade7d9-658d-5880-9e79-cbbbf5e0c0ea"
+diamondUuid: "4bf07dcf-89e0-8248-831f-c6d91ba50cfa"
+uuid: "d838864c-b4ec-858f-8da1-8f2b173788d3"
+horo: 5
 typography:
   partition: customers
   bondDegree: 0
-  neighbors: []
 standards:
   - "IFRS IAS-1 §125 estimation-uncertainty (project budgets)"
   - "IFRS IFRS-15 §126 milestone-billing"
@@ -40,28 +23,8 @@ standards:
   - "US-GAAP ASC-606-10-25-27 over-time-criteria"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - milestones
-    - snapshots
-    - tasks
-  matrix:
-    - law
-    - milestones
-    - reports
-    - roadmap
-    - snapshots
-    - tasks
-  backlinks:
-    - law
-    - milestones
-    - reports
-    - roadmap
-    - snapshots
-    - tasks
 signatures:
-  computationUuid: "5f8a9982-3e71-85c6-88f3-e22054f20020"
+  computationUuid: "71527306-20e8-85dc-854d-2c4b8f55962c"
   stages:
     - stage: path
       stageUuid: "5d5ee3e0-c0be-8ea3-b60d-a627bc1643bf"
@@ -72,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "1aa8cd02-d30d-84f8-8c1e-e3555174548b"
     - stage: horo
-      stageUuid: "16a9400c-1a15-8983-b7ae-82ec7ee7a7c1"
+      stageUuid: "d01d755b-47b7-896a-ad24-62aa1d4a2b59"
     - stage: seal
       stageUuid: "055cf2b0-6922-8dc2-b7b7-9596ed21afc5"
     - stage: uuid
-      stageUuid: "405e3aeb-4abe-8292-95af-6b0311e830e4"
+      stageUuid: "0dff2d37-e390-8ed2-a8ad-a025c3ba3226"
 version: 2
 ---
 # projects

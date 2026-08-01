@@ -1,58 +1,35 @@
 ---
 name: casino
 description: Use when reasoning about casino — A casino.
-atomPath: vocabulary/casino
-coordinate: casino · 4/weave · 10213814
-contentUuid: "ba672334-da37-54a6-84b1-074d13f892f7"
-diamondUuid: "85d9c2a0-cf1a-8ec9-a815-14c7c42e27e1"
-uuid: "10213814-8718-8420-96c0-5996905fe6be"
-horo: 4
-bonds:
-  in:
-    - law
-    - place
-    - thing
-  out:
-    - law
-    - place
-    - thing
+atomPath: "vocabulary/casino"
+coordinate: "vocabulary/casino · 8/crest · 82a6de29"
+contentUuid: "840e64eb-5e80-5915-9cf0-346573efabb8"
+diamondUuid: "26dc1813-a816-88c8-9c88-d62e502940cd"
+uuid: "82a6de29-7eff-8d12-a5ac-6e60c6631ce8"
+horo: 8
 typography:
-  partition: casino
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - place
-    - thing
-  matrix:
-    - law
-    - place
-    - thing
-  backlinks:
-    - law
-    - place
-    - thing
 signatures:
-  computationUuid: "44414919-87aa-8023-9cd8-715feb6f275d"
+  computationUuid: "76183fde-317c-8a9d-ab03-ba782b41b264"
   stages:
     - stage: path
-      stageUuid: "d53d40d1-094a-849a-bba9-c835f03372fb"
+      stageUuid: "e1c70dd8-77b0-8c55-af3b-1b110be52271"
     - stage: trinity
-      stageUuid: "641cab73-43ca-825f-86dd-8f763f656b1c"
+      stageUuid: "05c6803c-01bd-8814-bf39-0aeb08d1601b"
     - stage: boundary
-      stageUuid: "e0b278cf-07c6-8423-bc78-ed39d5083eea"
+      stageUuid: "60b5b34a-9cac-8da1-bd89-557e10b3105f"
     - stage: links
-      stageUuid: "822acb5c-e449-85ee-8d00-02d7aa43ff8a"
+      stageUuid: "c7aa3b79-26b1-8b43-9d76-daad4eeb9f10"
     - stage: horo
-      stageUuid: "cff2695a-45c7-843a-8b43-8368b0b94393"
+      stageUuid: "a90373e0-7206-8c71-b1d5-4bb9bb298932"
     - stage: seal
-      stageUuid: "ab0cf908-41b2-84a7-8d90-d6d3230765f1"
+      stageUuid: "4c7dcf5a-2409-87e1-a53a-b69b938484f5"
     - stage: uuid
-      stageUuid: "62801eca-ac95-8e75-a6d9-11fa24fb7737"
+      stageUuid: "1affa4dc-d5ee-8724-931b-33a5d74866c1"
 version: 2
 ---
 # casino

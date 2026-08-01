@@ -1,36 +1,23 @@
 ---
 name: hs
 description: Use when implementing or referencing WCO Harmonised System.
-atomPath: wco/hs
-coordinate: wco/hs · 2/share · 446cb578
-contentUuid: "e2404819-4d7a-538b-8a26-de421ea70857"
-diamondUuid: "64f4a376-c55a-88f6-8603-19c309dca67e"
-uuid: "446cb578-f5a6-8f5b-ae63-10cbf175a54e"
+atomPath: "wco/hs"
+coordinate: "wco/hs · 2/share · 33048c0b"
+contentUuid: "932fe35c-a8b7-5fa1-be9f-dd7e3bb07e05"
+diamondUuid: "86b5a515-7385-8276-9dee-cfa71a7a9beb"
+uuid: "33048c0b-8535-82cb-90ba-839e5cc286a9"
 horo: 2
-bonds:
-  in:
-    - law
-  out:
-    - law
 typography:
   partition: wco
   bondDegree: 3
-  neighbors: []
 standards:
-  - EU CN Code (Combined Nomenclature) Regulation (EEC) 2658/87
+  - "EU CN Code (Combined Nomenclature) Regulation (EEC) 2658/87"
   - US HTS (Harmonized Tariff Schedule)
   - "WCO Harmonised System Convention (effective 1988, latest revision 2022)"
   - "WCO-HS"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-  matrix:
-    - law
-  backlinks:
-    - law
 signatures:
-  computationUuid: "a0ad4e15-460e-8f92-be2c-4edbe6ccf464"
+  computationUuid: "7153fab8-9fb6-82e5-9826-7e1ed10f9309"
   stages:
     - stage: path
       stageUuid: "cf6a70dd-3bb8-8899-8c7e-73cbdd921d82"
@@ -41,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "e90a926d-0fc4-8592-8b2f-b227c85fcd80"
     - stage: horo
-      stageUuid: "5213cc5a-6525-873d-807a-19ff602ae234"
+      stageUuid: "f1265ce9-c52e-85a5-ac2f-fbe12c9dad0a"
     - stage: seal
       stageUuid: "0adaf606-99f5-84f7-8c47-9921814ae910"
     - stage: uuid
-      stageUuid: "bb12b6fb-2fa8-8c4f-aec1-25c34fddf33a"
+      stageUuid: "bbdd6374-0cf6-8482-8857-48b135c5b416"
 version: 2
 ---
 # WCO Harmonised System

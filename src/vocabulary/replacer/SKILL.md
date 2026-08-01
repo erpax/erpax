@@ -1,53 +1,35 @@
 ---
 name: replacer
 description: Use when reasoning about replacer — A sub property of object. The object that replaces.
-atomPath: vocabulary/replacer
-coordinate: replacer · 2/share · aadb4144
-contentUuid: "c20a8613-5db7-5a18-864e-7c681e26e15a"
-diamondUuid: "dd562e9e-0757-85a9-bc01-b551b148ee33"
-uuid: "aadb4144-fb11-8136-9ac8-3ede30192166"
-horo: 2
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/replacer"
+coordinate: "vocabulary/replacer · 4/weave · c620223c"
+contentUuid: "5afb9268-73ca-55d0-82cb-34316ae5ca3e"
+diamondUuid: "af6f9918-5ea1-80eb-aef9-f0add72df8e3"
+uuid: "c620223c-9b33-8ba6-9719-b656ebfddb08"
+horo: 4
 typography:
-  partition: replacer
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "4079d56b-8012-853b-aa8e-de9ac1a1379e"
+  computationUuid: "76a89da9-cc72-8932-b4fd-e1c4099a1ef3"
   stages:
     - stage: path
-      stageUuid: "c414ec99-74ee-8eca-9f1e-35ec33a19cce"
+      stageUuid: "74a74891-eaa7-8d50-8df2-45b0837ea21d"
     - stage: trinity
-      stageUuid: "d9a60b94-4a82-8435-acc2-cdf358261d40"
+      stageUuid: "e08ab1f3-a6d9-8d0d-a191-c47142c698b9"
     - stage: boundary
-      stageUuid: "302b65bc-4de8-8dad-bb0a-9a1ea40cc62d"
+      stageUuid: "22ff7724-9bf6-87cb-a92f-928f255350b7"
     - stage: links
-      stageUuid: "4e2bfa1b-8227-8229-8a3e-f5c4fa5090e6"
+      stageUuid: "5310844b-68ad-884a-8eca-49000671818b"
     - stage: horo
-      stageUuid: "ec3a6f47-98db-8bd0-b919-9f8dab401d3e"
+      stageUuid: "1a24e469-53b4-8e25-9896-8f76718ff356"
     - stage: seal
-      stageUuid: "af6aebbb-e5d0-8b41-aa7c-d662884df064"
+      stageUuid: "a2bf0524-df54-8a22-85c1-8d1a25d6eb71"
     - stage: uuid
-      stageUuid: "48047b37-97a1-81b3-8885-3bce755c25c6"
+      stageUuid: "aa833dd9-1c81-84a5-a94e-af80b82326cd"
 version: 2
 ---
 # replacer

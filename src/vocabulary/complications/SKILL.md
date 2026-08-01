@@ -1,63 +1,35 @@
 ---
 name: complications
 description: "Use when reasoning about complications as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/complications
-coordinate: complications · 8/crest · c19a5028
-contentUuid: "036ebec7-2efc-589a-8df6-e1c325f61405"
-diamondUuid: "2538f7c4-868c-80ef-8fe7-97014f685a5a"
-uuid: "c19a5028-9db7-8fa3-a353-05ab449d0823"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/complications"
+coordinate: "vocabulary/complications · 2/share · 5be9562e"
+contentUuid: "b83a6d37-79cf-5b9c-bfe1-2332e8644913"
+diamondUuid: "5b9469cf-5863-80f4-90db-25be13a6fbf5"
+uuid: "5be9562e-0d51-8e1f-b787-314a503b3048"
+horo: 2
 typography:
-  partition: complications
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "66cf68f0-53eb-8f77-9749-16a91fcf3f4b"
+  computationUuid: "a1f1c76f-e582-86b2-b12a-6a5cc465104d"
   stages:
     - stage: path
-      stageUuid: "23c84f3f-5cf1-8726-9a4f-786af959f100"
+      stageUuid: "5cabee49-ad7d-88f8-af52-76b7ae57b01e"
     - stage: trinity
-      stageUuid: "2af93079-4eb2-8ab1-9645-d1db2b6b6891"
+      stageUuid: "73d70e88-b48b-8438-85c5-940938c918e5"
     - stage: boundary
-      stageUuid: "22b43272-f25b-8843-b8fc-6f1bfacd516c"
+      stageUuid: "3c57974e-075f-846d-a3f1-437cbbaead60"
     - stage: links
-      stageUuid: "20aa3469-b9d9-8bd6-b428-dfb8073cc5eb"
+      stageUuid: "f0a933e0-ac12-8aad-87df-42c434291eeb"
     - stage: horo
-      stageUuid: "91898442-68f4-89fd-baa3-b4ee10085d16"
+      stageUuid: "f792338f-a092-8c40-8166-1364c32b74b2"
     - stage: seal
-      stageUuid: "3d122aae-8168-8c53-9cce-033f3a9d1f2d"
+      stageUuid: "949cf8a4-a741-8735-ba49-beb0fa25ee3a"
     - stage: uuid
-      stageUuid: "684c4427-0596-8d0e-b902-1745dac38d1e"
+      stageUuid: "913660ec-7a1d-8b27-9956-cb13c318728f"
 version: 2
 ---
 # complications

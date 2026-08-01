@@ -1,113 +1,35 @@
 ---
 name: max
 description: "Use when reasoning about max as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/max
-coordinate: max · 1/base · a196d7fd
-contentUuid: "b171b3c6-1753-5838-b869-cbdc3a1c4d8f"
-diamondUuid: "e39b7dfa-6d6a-8944-bbc0-f3ae8a1f53b1"
-uuid: "a196d7fd-1b2c-8e9d-a5fc-9a3ad31ff4d0"
-horo: 1
-bonds:
-  in:
-    - age
-    - child
-    - collapse
-    - efficiency
-    - energy
-    - law
-    - length
-    - merge
-    - price
-    - required
-    - scale
-    - sti
-    - suggested
-    - value
-  out:
-    - age
-    - child
-    - collapse
-    - efficiency
-    - energy
-    - law
-    - length
-    - merge
-    - price
-    - required
-    - scale
-    - sti
-    - suggested
-    - value
+atomPath: "vocabulary/max"
+coordinate: "vocabulary/max · 7/descent · 51cd8da5"
+contentUuid: "89f8c124-ca58-5c17-a476-383c7011ee5e"
+diamondUuid: "60dda884-d2fe-8dfe-bc07-357f24cc437f"
+uuid: "51cd8da5-f89c-8d5d-87b1-3dc2a90446f4"
+horo: 7
 typography:
-  partition: max
+  partition: vocabulary
   bondDegree: 50
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - age
-    - child
-    - collapse
-    - efficiency
-    - energy
-    - law
-    - length
-    - merge
-    - price
-    - required
-    - scale
-    - sti
-    - suggested
-    - value
-  matrix:
-    - age
-    - child
-    - collapse
-    - efficiency
-    - energy
-    - law
-    - length
-    - merge
-    - price
-    - required
-    - scale
-    - sti
-    - suggested
-    - value
-  backlinks:
-    - age
-    - child
-    - collapse
-    - efficiency
-    - energy
-    - law
-    - length
-    - merge
-    - price
-    - required
-    - scale
-    - sti
-    - suggested
-    - value
 signatures:
-  computationUuid: "238e2321-04f6-895b-b3fa-f15d2af733b9"
+  computationUuid: "8954a20b-5a6c-8467-9190-cd2f51cbd2b7"
   stages:
     - stage: path
-      stageUuid: "03c98adc-9966-89c6-bb10-4cf6123db5c8"
+      stageUuid: "cce08b68-2314-8948-8c7a-89761ff4a2c4"
     - stage: trinity
-      stageUuid: "ada4bd83-c51b-85ea-a9a4-ce8571901ba2"
+      stageUuid: "fef2c85b-77c9-81ba-ae01-dbe3dd99f48e"
     - stage: boundary
-      stageUuid: "ec9a99bf-bdbc-84bf-a7d0-26c4d1e6e00c"
+      stageUuid: "84afce64-983d-86ee-b1da-568f05fc81cd"
     - stage: links
-      stageUuid: "9c04012c-291d-8c16-8ca7-a45ea2c41d80"
+      stageUuid: "b317ad3c-339a-8e44-8a8c-1f1d68159690"
     - stage: horo
-      stageUuid: "4ee8be10-a90e-8f47-bdc6-af71bb48f2dc"
+      stageUuid: "e620c4f9-42a5-8f28-986f-77807b408d5d"
     - stage: seal
-      stageUuid: "3597d420-6745-8cb5-bb10-5b22e45baac5"
+      stageUuid: "899397bc-965b-8eba-84fd-782fea88a1a4"
     - stage: uuid
-      stageUuid: "7376e08a-36c4-81a1-9e3e-9a076b600f25"
+      stageUuid: "c7fc48f7-ca1a-8e55-b397-7be0f1d3249e"
 version: 2
 ---
 # max

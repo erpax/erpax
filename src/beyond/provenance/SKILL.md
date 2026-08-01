@@ -2,54 +2,21 @@
 name: provenance
 description: "Use when a value's history of CAUSE must be recoverable, not just its history of CHANGE — causal provenance (W3C PROV), recording WHY each [[audit]] leaf exists (which upstream leaves caused it) so the full causal ancestry of any number can be walked back."
 atomPath: "beyond/provenance"
-coordinate: "beyond/provenance · 2/share · 84bbca42"
-contentUuid: "356e3146-c979-5e50-8e09-8dbbeb414567"
-diamondUuid: "0bd90179-47d1-82e2-8274-cf22983fd5d8"
-uuid: "84bbca42-9120-8cbd-9a28-9581f6b932bb"
-horo: 2
-bonds:
-  in:
-    - audit
-    - beyond
-    - cause
-    - integrity
-    - law
-  out:
-    - audit
-    - beyond
-    - cause
-    - integrity
-    - law
+coordinate: "beyond/provenance · 8/crest · a990eaed"
+contentUuid: "6b834908-fa90-57d3-8372-868fa54c3dec"
+diamondUuid: "e235b7cc-d9bb-82dd-8a36-66dec77c0aab"
+uuid: "a990eaed-f484-89be-9090-58d3f139b623"
+horo: 8
 typography:
   partition: beyond
   bondDegree: 15
-  neighbors: []
 standards:
   - "W3C PROV-DM (Provenance Data Model)"
   - "W3C PROV-O (PROV Ontology — RDF)"
   - "W3C-PROV-O"
 bindings: []
-neighbors:
-  wikilink:
-    - audit
-    - beyond
-    - cause
-    - integrity
-    - law
-  matrix:
-    - audit
-    - beyond
-    - cause
-    - integrity
-    - law
-  backlinks:
-    - audit
-    - beyond
-    - cause
-    - integrity
-    - law
 signatures:
-  computationUuid: "a685e833-684c-8593-b668-0ae6acaee2f6"
+  computationUuid: "a0374088-ecd9-81a7-beeb-7b384065c1ae"
   stages:
     - stage: path
       stageUuid: "fcff7381-cddc-8e9b-aa4c-a1a1d3219805"
@@ -60,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "73d039b0-796b-8b9c-be11-fd591853f8bb"
     - stage: horo
-      stageUuid: "49254287-288e-8cfb-be2c-57955efc43bf"
+      stageUuid: "daa7a178-9a8c-897e-8456-ce61b3e7e248"
     - stage: seal
       stageUuid: "98cfbd89-3335-8efc-bed9-39d8fb28bb55"
     - stage: uuid
-      stageUuid: "777d29df-c8f5-8b6f-a71e-261fa6ab7722"
+      stageUuid: "8a4b8327-5079-8ba6-a366-b0bb2cb700c0"
 version: 2
 ---
 # beyond/provenance — causal provenance (the WHY behind every value)

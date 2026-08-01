@@ -1,87 +1,34 @@
 ---
 name: budgetvariance
 description: "Use when reasoning about budgetvariance — Use for analyzing variance between budgeted and actual amounts in a period — favorable/unfavorable cost variance, quantity/price splits, drivers of performance against plan"
-atomPath: vocabulary/budgetvariance
-coordinate: budgetvariance · 8/crest · 2622eb1a
-contentUuid: "a3e561af-3ff1-5468-81d5-13e4ac154966"
-diamondUuid: "c3a486dd-0fdf-8e86-9f81-4992337851d8"
-uuid: "2622eb1a-aba5-806a-9a34-787823c6a6e5"
-horo: 8
-bonds:
-  in:
-    - accounting
-    - centers
-    - decide
-    - forecast
-    - law
-    - plannings
-    - statements
-    - transaction
-    - variance
-  out:
-    - accounting
-    - centers
-    - decide
-    - forecast
-    - law
-    - plannings
-    - statements
-    - transaction
-    - variance
+atomPath: "vocabulary/budgetvariance"
+coordinate: "vocabulary/budgetvariance · 4/weave · 69f6690e"
+contentUuid: "62a994b3-ab80-5b7a-b9c3-4cd0be79d152"
+diamondUuid: "974643e0-8266-85af-b122-de5a07536fde"
+uuid: "69f6690e-32a6-8245-bb2e-172b9c7563d8"
+horo: 4
 typography:
-  partition: budgetvariance
+  partition: vocabulary
   bondDegree: 28
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - centers
-    - decide
-    - forecast
-    - law
-    - plannings
-    - statements
-    - transaction
-    - variance
-  matrix:
-    - accounting
-    - centers
-    - decide
-    - forecast
-    - law
-    - plannings
-    - statements
-    - transaction
-    - variance
-  backlinks:
-    - accounting
-    - centers
-    - decide
-    - forecast
-    - law
-    - plannings
-    - statements
-    - transaction
-    - variance
 signatures:
-  computationUuid: "f1a88d07-64d0-81d7-b1fb-d4395e8260c6"
+  computationUuid: "ce1f4e8d-f284-8f5c-adeb-a84bbf7fd776"
   stages:
     - stage: path
-      stageUuid: "40d100bb-99a7-83fe-940e-c411716947af"
+      stageUuid: "9305e59b-15ba-8128-bcad-194bcfb483d1"
     - stage: trinity
-      stageUuid: "a001f0e8-3c25-86e3-afbd-797fc1b5a4b2"
+      stageUuid: "49e4d624-493c-80d4-986a-7cfe127f47fb"
     - stage: boundary
-      stageUuid: "91eeeec9-07fe-8274-8177-36c055b7386b"
+      stageUuid: "3bdab1b2-16f6-8fe8-b238-c69e978059bd"
     - stage: links
-      stageUuid: "64818de6-2b42-8ebe-bbbd-2d43610c92ae"
+      stageUuid: "f1722d1d-a567-8a2d-afc4-2793785291b0"
     - stage: horo
-      stageUuid: "d27e3aee-6a3b-81b4-9df2-66fe025f9b68"
+      stageUuid: "e10689ab-4ee8-874f-abcb-22f6f4b1abf2"
     - stage: seal
-      stageUuid: "e270a545-0c54-8067-a990-da833e28fa47"
+      stageUuid: "09a19f5b-2e42-8ee7-8c04-bd0132f9fba2"
     - stage: uuid
-      stageUuid: "e88114f6-b0cd-8264-b41b-64afac0adfb2"
+      stageUuid: "3b9d28f7-4820-822f-8034-9a7d346affee"
 version: 2
 ---
 # budgetvariance

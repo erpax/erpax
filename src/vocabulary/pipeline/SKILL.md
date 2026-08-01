@@ -1,75 +1,34 @@
 ---
 name: pipeline
 description: "Use when tracking the progression of deals through sales stages — lead → qualified → proposal → negotiation → won/lost. The sales funnel state at each stage with value, probability, and close date."
-atomPath: vocabulary/pipeline
-coordinate: pipeline · 5/round · a8e348d6
-contentUuid: "966f1f09-9588-5466-9311-160b8481380d"
-diamondUuid: "37ccf87b-e7b5-8955-b006-255050ff1a52"
-uuid: "a8e348d6-38d9-891a-b1f6-e7496e132a30"
-horo: 5
-bonds:
-  in:
-    - forecast
-    - funnel
-    - law
-    - leads
-    - opportunities
-    - orders
-    - positions
-  out:
-    - forecast
-    - funnel
-    - law
-    - leads
-    - opportunities
-    - orders
-    - positions
+atomPath: "vocabulary/pipeline"
+coordinate: "vocabulary/pipeline · 7/descent · 8d6b9db4"
+contentUuid: "dd90ffca-4ccc-52d8-beb6-c4b2925edfe0"
+diamondUuid: "59cb85ee-65c3-8171-af68-23ea9000b07e"
+uuid: "8d6b9db4-65d0-862f-a0d8-15491a7a33ea"
+horo: 7
 typography:
-  partition: pipeline
+  partition: vocabulary
   bondDegree: 22
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - forecast
-    - law
-    - leads
-    - opportunities
-    - orders
-  matrix:
-    - forecast
-    - funnel
-    - law
-    - leads
-    - opportunities
-    - orders
-    - positions
-  backlinks:
-    - forecast
-    - funnel
-    - law
-    - leads
-    - opportunities
-    - orders
-    - positions
 signatures:
-  computationUuid: "92a8b7f1-7878-8d66-9343-6b758ca4b3b5"
+  computationUuid: "7aaac50b-7b3d-8b90-a2e4-b794d156c223"
   stages:
     - stage: path
-      stageUuid: "6c2033a3-8760-84e2-b65a-76be612deeb1"
+      stageUuid: "d12cfc50-071b-8ace-959f-0f00786fab60"
     - stage: trinity
-      stageUuid: "a864fe2d-7239-8da7-b105-3ed34bb4aab1"
+      stageUuid: "e54aacaf-760a-8b17-a9c4-a5c8c0204cae"
     - stage: boundary
-      stageUuid: "372a60bb-e46a-8616-b347-6e6efae8745f"
+      stageUuid: "e100b0f7-e47e-8a4b-91de-a55934c1dabb"
     - stage: links
-      stageUuid: "2ddeac49-a6b5-8040-864c-b145320c2dc1"
+      stageUuid: "c3984f88-4a56-8f76-8e90-9e6bcfd254eb"
     - stage: horo
-      stageUuid: "d5a4889c-5b68-81eb-90d7-5c93579287cd"
+      stageUuid: "e6e338af-adc1-8710-b1fa-2e9f8d4507ea"
     - stage: seal
-      stageUuid: "076c5a0a-0501-864e-b048-9a67f84e86b8"
+      stageUuid: "be9928d3-c6a2-850a-a871-1f6ed59ab39d"
     - stage: uuid
-      stageUuid: "a578e49d-5ba1-8e5d-aa66-147e4e21de3f"
+      stageUuid: "0c4e3f80-8e88-8029-92d7-51351051fa82"
 version: 2
 ---
 # pipeline

@@ -1,53 +1,35 @@
 ---
 name: opens
 description: Use when reasoning about opens — The opening hour of the place or service on the given day(s) of the week.
-atomPath: vocabulary/opens
-coordinate: opens · 7/descent · 77428e8d
-contentUuid: "2c4f8ce7-b8b5-573c-9a2c-3b4c6b1397c3"
-diamondUuid: "dacda502-5b0e-8695-bf63-9923dc717eb5"
-uuid: "77428e8d-06eb-8c4e-aaee-4eb9c6e1e336"
-horo: 7
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/opens"
+coordinate: "vocabulary/opens · 1/base · 3d570e8b"
+contentUuid: "308281a0-7130-5d27-ac26-ffe1844530a5"
+diamondUuid: "8de2b9c6-4167-898f-9522-50834fe79f74"
+uuid: "3d570e8b-d88b-8d54-8eb9-d4e3980981b5"
+horo: 1
 typography:
-  partition: opens
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "61187ec4-8762-8ffd-94d9-1401a4ecc576"
+  computationUuid: "6fa7c144-cd9d-8ec4-97b6-66fca3c0bcdf"
   stages:
     - stage: path
-      stageUuid: "3c893233-7e5d-8181-b4fe-431b3a9ecd92"
+      stageUuid: "16f93b56-240b-83b4-a839-8f5e20ec51b5"
     - stage: trinity
-      stageUuid: "4b62278e-1303-8d9e-bebf-f79380fbd2ff"
+      stageUuid: "418305d4-0ffe-81a6-8806-679d1179cd6d"
     - stage: boundary
-      stageUuid: "c9968a28-5e66-87b0-a76e-67685b0ef7da"
+      stageUuid: "6ce10fd7-131c-883e-9571-71a5f2eeedaa"
     - stage: links
-      stageUuid: "9c092e06-abde-81b5-9b78-0b01b5014697"
+      stageUuid: "84b0e877-ac0a-8392-9ba5-b252c33955de"
     - stage: horo
-      stageUuid: "377dec71-0c1f-8895-83d9-d7195e7e6602"
+      stageUuid: "eb593ab7-3f43-83fd-bfe1-fbaca591b6a6"
     - stage: seal
-      stageUuid: "f551f0c5-a791-8ab2-8703-69cc00a3f0ec"
+      stageUuid: "8b3361b4-2731-8bdf-9f0b-b38e3250bdd3"
     - stage: uuid
-      stageUuid: "2302b7b3-671a-8cbd-9456-20f1922c8b12"
+      stageUuid: "e87c92d9-88b2-8d05-aa8a-7310d6137122"
 version: 2
 ---
 # opens

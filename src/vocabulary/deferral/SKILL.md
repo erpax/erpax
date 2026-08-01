@@ -1,93 +1,34 @@
 ---
 name: deferral
 description: "Use when deferring the recognition of revenue or expense to future periods pending contract performance, delivery, or time passage — the dual of accrual and core to IFRS-15 revenue recognition"
-atomPath: vocabulary/deferral
-coordinate: deferral · 5/round · 69aefc5b
-contentUuid: "6374d04f-de78-5832-9ed3-696e0a7034e0"
-diamondUuid: "e8fc0233-7072-8875-a131-a3635247261e"
-uuid: "69aefc5b-80bf-8a53-a8fc-590d32a620dd"
-horo: 5
-bonds:
-  in:
-    - accrual
-    - adjustments
-    - agriculture
-    - deferredrevenue
-    - entries
-    - journals
-    - law
-    - performances
-    - prepaid
-    - recognition
-    - share
-  out:
-    - accrual
-    - adjustments
-    - agriculture
-    - deferredrevenue
-    - entries
-    - journals
-    - law
-    - performances
-    - prepaid
-    - recognition
-    - share
+atomPath: "vocabulary/deferral"
+coordinate: "vocabulary/deferral · 4/weave · 55777798"
+contentUuid: "ee3b5ca1-a0a5-59ad-b744-72a2a229e317"
+diamondUuid: "248f0a8b-2208-8329-a295-860472b994aa"
+uuid: "55777798-24e2-8735-83c4-012cdd424ad8"
+horo: 4
 typography:
-  partition: deferral
+  partition: vocabulary
   bondDegree: 34
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accrual
-    - adjustments
-    - entries
-    - journals
-    - law
-    - performances
-    - prepaid
-  matrix:
-    - accrual
-    - adjustments
-    - agriculture
-    - deferredrevenue
-    - entries
-    - journals
-    - law
-    - performances
-    - prepaid
-    - recognition
-    - share
-  backlinks:
-    - accrual
-    - adjustments
-    - agriculture
-    - deferredrevenue
-    - entries
-    - journals
-    - law
-    - performances
-    - prepaid
-    - recognition
-    - share
 signatures:
-  computationUuid: "316e85c1-1ed5-810a-a017-5140d0f8da33"
+  computationUuid: "d9538bfc-2f96-8809-9290-1a9f9f6ec91e"
   stages:
     - stage: path
-      stageUuid: "008b4283-3899-89f7-8512-c2ae4f1faf8d"
+      stageUuid: "3b884f11-a29d-8269-9bd9-53480c0eb586"
     - stage: trinity
-      stageUuid: "b0a6e18d-fd68-8f6d-a0cd-cdaf05647ef5"
+      stageUuid: "eef3d14e-7db5-8941-b878-4ca34d2dace6"
     - stage: boundary
-      stageUuid: "60fcc47a-3a51-8842-a9bb-862b8e839830"
+      stageUuid: "c91e3a36-853b-8e68-8417-d2fb2f721b2f"
     - stage: links
-      stageUuid: "0e75ea18-2b2d-8027-8e8e-da25969acc23"
+      stageUuid: "90e9c7ee-1fb2-8b38-b2fd-27f46d9cf7ac"
     - stage: horo
-      stageUuid: "0cc8b2f7-ab6f-8ffb-9927-fa74613b14e6"
+      stageUuid: "390b9281-4e5e-8963-9473-f016d59c3366"
     - stage: seal
-      stageUuid: "293ca488-bdf2-8f77-80a7-abc3366f91e8"
+      stageUuid: "b4a7032d-153d-86a0-90f6-e63db5e8fd38"
     - stage: uuid
-      stageUuid: "0acf0e79-2479-8de3-af22-8242f863f731"
+      stageUuid: "75e93c9f-44e5-8ac8-bcbb-0c3a3214d82e"
 version: 2
 ---
 # deferral

@@ -1,72 +1,35 @@
 ---
 name: pay
 description: "Use when reasoning about pay as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/pay
-coordinate: pay · 8/crest · 3c8e82a3
-contentUuid: "db37a001-ab94-551f-9c99-20d9c8d499d1"
-diamondUuid: "b93cefa5-851e-8c23-8d55-d73db31a1684"
-uuid: "3c8e82a3-ac3d-899d-bf87-821afeca3a4f"
-horo: 8
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - shift
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - shift
-    - sti
+atomPath: "vocabulary/pay"
+coordinate: "vocabulary/pay · 1/base · 4afbfc7c"
+contentUuid: "7080d93f-1e10-5d80-ac1c-931a1a086d0a"
+diamondUuid: "79a9e2db-d286-895c-9dc9-e79f893e5f1b"
+uuid: "4afbfc7c-1903-8715-abce-d65bb4801f7a"
+horo: 1
 typography:
-  partition: pay
+  partition: vocabulary
   bondDegree: 18
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - shift
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - shift
-    - sti
 signatures:
-  computationUuid: "91224edd-2967-8cab-9be8-ad8716dfe161"
+  computationUuid: "d3a1bb1e-804b-8f64-b1c0-03f7611544a5"
   stages:
     - stage: path
-      stageUuid: "0c6ac86b-6361-8fb7-968e-59d3830fd95b"
+      stageUuid: "7684a989-4430-805d-ad91-ff6b64caae2f"
     - stage: trinity
-      stageUuid: "2a419497-6b6f-8674-9095-ca4e030bfd86"
+      stageUuid: "f1a96841-a706-8247-a3bd-8f4f009a1960"
     - stage: boundary
-      stageUuid: "c063bf50-7098-827d-af8e-28be361c334b"
+      stageUuid: "0193880a-e425-8dea-a3ee-da4230befcea"
     - stage: links
-      stageUuid: "3c1e3c88-ac9a-8690-b713-ade2eca535d5"
+      stageUuid: "a4558db8-998d-84ef-8652-b7b9c55ad9d9"
     - stage: horo
-      stageUuid: "ac9aafae-d0da-8fe2-a888-c5a6927e81b5"
+      stageUuid: "f57b5f58-e94a-8121-9ed0-573e7b9fec9f"
     - stage: seal
-      stageUuid: "2bd7377c-7a91-8dd0-8a9a-13e529af11c8"
+      stageUuid: "98580a2a-8a96-80a8-aab6-3615c9eb6ae3"
     - stage: uuid
-      stageUuid: "9cb405dc-7b0f-88b1-8640-fbfd9d568bde"
+      stageUuid: "8fd4837e-30fa-8940-ad01-22d6f14b9991"
 version: 2
 ---
 # pay

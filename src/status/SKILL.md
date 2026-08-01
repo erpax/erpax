@@ -2,155 +2,18 @@
 name: status
 description: "Use when tracking a document's or entity's state — draft, approved, rejected, closed, pending, active, inactive. A select field carrying workflow-state enums. Drives UI rendering (e.g., locked periods are closed; draft documents are mutable). Common default: 'draft'."
 atomPath: status
-coordinate: status · 2/share · 1d1c6362
-contentUuid: "5babc774-0d23-54f5-a098-1d4cdacfbe89"
-diamondUuid: "1675207b-32a2-821f-9c29-f956c044f72e"
-uuid: "1d1c6362-2129-8b73-bfd1-743f413aba3d"
-horo: 2
-bonds:
-  in:
-    - action
-    - active
-    - age
-    - approved
-    - attrition
-    - career
-    - creative
-    - delivery
-    - diffusion
-    - drug
-    - enumeration
-    - escalation
-    - fields
-    - force
-    - game
-    - incentive
-    - item
-    - legal
-    - market
-    - medical
-    - nonprofit
-    - order
-    - passenger
-    - prescription
-    - queue
-    - reason
-    - reservation
-    - resolution
-    - server
-    - study
-    - ticket
-    - work
-  out:
-    - action
-    - active
-    - age
-    - approved
-    - attrition
-    - career
-    - creative
-    - delivery
-    - diffusion
-    - drug
-    - enumeration
-    - escalation
-    - fields
-    - force
-    - game
-    - incentive
-    - item
-    - legal
-    - market
-    - medical
-    - nonprofit
-    - order
-    - passenger
-    - prescription
-    - queue
-    - reason
-    - reservation
-    - resolution
-    - server
-    - study
-    - ticket
-    - work
+coordinate: "status · 4/weave · e37fbb13"
+contentUuid: "8e6d296d-406b-5f5e-924c-8b0193711cdf"
+diamondUuid: "9f5b1b41-2833-8d2e-ac9d-c95cb4b480e3"
+uuid: "e37fbb13-28d6-8706-9ce5-9c883fa1d04a"
+horo: 4
 typography:
   partition: status
-  bondDegree: 96
-  neighbors: []
+  bondDegree: 107
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - fields
-  matrix:
-    - action
-    - active
-    - age
-    - approved
-    - attrition
-    - career
-    - creative
-    - delivery
-    - diffusion
-    - drug
-    - enumeration
-    - escalation
-    - fields
-    - force
-    - game
-    - incentive
-    - item
-    - legal
-    - market
-    - medical
-    - nonprofit
-    - order
-    - passenger
-    - prescription
-    - queue
-    - reason
-    - reservation
-    - resolution
-    - server
-    - study
-    - ticket
-    - work
-  backlinks:
-    - action
-    - active
-    - age
-    - approved
-    - attrition
-    - career
-    - creative
-    - delivery
-    - diffusion
-    - drug
-    - enumeration
-    - escalation
-    - fields
-    - force
-    - game
-    - incentive
-    - item
-    - legal
-    - market
-    - medical
-    - nonprofit
-    - order
-    - passenger
-    - prescription
-    - queue
-    - reason
-    - reservation
-    - resolution
-    - server
-    - study
-    - ticket
-    - work
 signatures:
-  computationUuid: "aa11a23b-a236-8c98-9f4e-85cde1483588"
+  computationUuid: "e1c392c0-6b32-827c-a945-7e73307b5d63"
   stages:
     - stage: path
       stageUuid: "49a1e297-a7e1-8e23-ba3f-17ea6ee99175"
@@ -161,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9224b7a9-ec4b-84cc-adc7-7097009dfc2f"
     - stage: horo
-      stageUuid: "9e499f2d-6ff5-84d4-847b-f6ec3cb026b0"
+      stageUuid: "1cb8c9f4-8253-82bf-a73d-d079d469b283"
     - stage: seal
-      stageUuid: "befe7dc4-0236-8565-809b-a59bd629efb6"
+      stageUuid: "f262d609-dcbd-8cea-901e-0d2e8208c09b"
     - stage: uuid
-      stageUuid: "2c982bcb-645e-84a8-a885-c811c115ae7d"
+      stageUuid: "604928f8-2148-8c49-9e74-fe70681b05c0"
 version: 2
 ---
 # status

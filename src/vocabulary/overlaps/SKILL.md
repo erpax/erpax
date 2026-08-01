@@ -1,68 +1,35 @@
 ---
 name: overlaps
 description: "Use when reasoning about overlaps as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/overlaps
-coordinate: overlaps · 4/weave · 175e43a7
-contentUuid: "aad57f54-c8a5-5f54-87dc-7ffbdf8886ce"
-diamondUuid: "82e8c840-c8ab-8c44-9332-12d784a5d958"
-uuid: "175e43a7-949b-8cee-9dcd-8e939f8ec9cd"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/overlaps"
+coordinate: "vocabulary/overlaps · 1/base · 6f7af301"
+contentUuid: "8ddb6600-a021-5816-98ec-02ea3f43a8a1"
+diamondUuid: "dca9530e-0c04-8cb9-b719-0f19700a7774"
+uuid: "6f7af301-cb04-87d2-a2e8-6ac597c073a8"
+horo: 1
 typography:
-  partition: overlaps
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "e7a09ab8-2b68-87ff-b216-8682923c02d3"
+  computationUuid: "7e308bb7-2ac1-8c10-ad53-dc1f799eb31f"
   stages:
     - stage: path
-      stageUuid: "742a15ba-c975-8c07-9390-0e6f907cf7d7"
+      stageUuid: "4ca352e7-10f7-8715-97f7-87c4ee6ce49d"
     - stage: trinity
-      stageUuid: "32a71243-2819-8dee-ae7f-a90640ed9877"
+      stageUuid: "21177495-e3bc-8a6a-b7c8-04eb80e3611c"
     - stage: boundary
-      stageUuid: "792d666b-371b-88eb-a050-ba453d6f97e9"
+      stageUuid: "a9622a0a-5d3e-845b-ae8d-134f88b2f751"
     - stage: links
-      stageUuid: "60c4233c-2d35-825b-b75e-dbd8b3abc344"
+      stageUuid: "05f214af-4a51-8cda-86b7-5781eb17728b"
     - stage: horo
-      stageUuid: "4f8d7470-606d-8925-bfc6-9420b7bac1e3"
+      stageUuid: "6f5cb93c-7a60-8f14-9914-b98b7edcffb4"
     - stage: seal
-      stageUuid: "e3c5b297-6512-8eff-aa0d-d85780326b95"
+      stageUuid: "6aa4a482-79ef-8c02-8bd3-ad9180d11841"
     - stage: uuid
-      stageUuid: "ecfca1c7-977f-8738-806c-cbe9df673c71"
+      stageUuid: "4cdb224a-29ae-822c-af64-9222ee277f81"
 version: 2
 ---
 # overlaps

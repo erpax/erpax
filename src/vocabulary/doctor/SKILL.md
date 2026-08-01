@@ -1,63 +1,35 @@
 ---
 name: doctor
 description: "Use when reasoning about doctor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/doctor
-coordinate: doctor · 4/weave · c4f267bc
-contentUuid: "4a177d23-8818-5f87-8141-cbef24db3214"
-diamondUuid: "0fcbf79f-464a-8f09-9c05-8f0d56d0a139"
-uuid: "c4f267bc-1e41-8254-8dd7-adca24a4b47f"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/doctor"
+coordinate: "vocabulary/doctor · 5/round · 664065d5"
+contentUuid: "22dfecaf-8882-5360-8109-23564a5b2593"
+diamondUuid: "15dc9354-7a9a-80fa-9fa4-e04ee7baf243"
+uuid: "664065d5-cbb5-8851-96cb-d5445d2c0bfe"
+horo: 5
 typography:
-  partition: doctor
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "b61c614b-632e-8ce8-9fc8-648085e373b6"
+  computationUuid: "dc66e205-8d38-8869-aa39-22389aba8bec"
   stages:
     - stage: path
-      stageUuid: "c3044f8d-7447-82c9-b563-6d827e829faf"
+      stageUuid: "ed9eda27-29de-8c41-8e3d-87dc2531d788"
     - stage: trinity
-      stageUuid: "5fa88f3a-57b9-826b-8620-4c2ceb34a7b9"
+      stageUuid: "260a3ca2-bc13-8591-ad3c-7af7c715c851"
     - stage: boundary
-      stageUuid: "8e0d1d11-df98-8e37-aedb-000dfb5072a7"
+      stageUuid: "2c35902d-d50a-8f66-b814-b7802cea1c2d"
     - stage: links
-      stageUuid: "3cf87275-2b10-89b9-8f4c-862e4a5d1506"
+      stageUuid: "39cb6367-01ae-87e2-a5c9-d9ed70972da4"
     - stage: horo
-      stageUuid: "49042d0b-feb8-8740-920d-eacc66fa1109"
+      stageUuid: "88e9095b-702d-8677-85ac-3fbeba0239b1"
     - stage: seal
-      stageUuid: "cc24ce25-7a3f-8990-87d4-9612eba0b00f"
+      stageUuid: "04e296ee-e334-8739-a341-7ad8f0f913b9"
     - stage: uuid
-      stageUuid: "c20b7d14-58ed-8e32-a8b1-407afedfd6db"
+      stageUuid: "65a33b4a-d70e-882e-96e7-19390c5a7ed8"
 version: 2
 ---
 # doctor

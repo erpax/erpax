@@ -1,80 +1,34 @@
 ---
 name: replication
 description: "Use when data must exist in multiple places — read replicas, primary-replica sync, replication lag, replication filtering, point-in-time recovery from replicas, federation/multi-tenant replication semantics."
-atomPath: vocabulary/replication
-coordinate: replication · 5/round · 16220ed9
-contentUuid: "35e637bd-8962-54ec-a1e4-80c522400a63"
-diamondUuid: "c5bbd5b3-128c-8c7e-98b0-b00fa4343474"
-uuid: "16220ed9-df60-82c4-ab75-8f922459f627"
+atomPath: "vocabulary/replication"
+coordinate: "vocabulary/replication · 5/round · 23a4b5a9"
+contentUuid: "1b12fa4b-01c2-5fe6-873b-34da5daf6264"
+diamondUuid: "4516f1ac-60b5-8be5-83ec-be6b46b4d680"
+uuid: "23a4b5a9-2e01-8b85-86df-e83cd2872697"
 horo: 5
-bonds:
-  in:
-    - cloning
-    - consistency
-    - cost
-    - database
-    - federation
-    - identity
-    - law
-    - merge
-  out:
-    - cloning
-    - consistency
-    - cost
-    - database
-    - federation
-    - identity
-    - law
-    - merge
 typography:
-  partition: replication
-  bondDegree: 24
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 22
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - consistency
-    - database
-    - federation
-    - identity
-    - law
-    - merge
-  matrix:
-    - cloning
-    - consistency
-    - cost
-    - database
-    - federation
-    - identity
-    - law
-    - merge
-  backlinks:
-    - cloning
-    - consistency
-    - cost
-    - database
-    - federation
-    - identity
-    - law
-    - merge
 signatures:
-  computationUuid: "9247df09-97c8-8292-9c29-c418fb603dcb"
+  computationUuid: "ab31fed5-ad9d-8339-8976-da2936392ee0"
   stages:
     - stage: path
-      stageUuid: "00db9843-87e4-80c9-a246-711dfe594323"
+      stageUuid: "66aeccf9-cfd7-8881-8c87-1c9a7df9ed06"
     - stage: trinity
-      stageUuid: "3ee983c8-104f-8444-9881-c3671db43981"
+      stageUuid: "fdc53930-f827-82ce-a411-7973500aa691"
     - stage: boundary
-      stageUuid: "8eb12595-b49e-8e0c-826b-dde074bc750e"
+      stageUuid: "281db13c-8d34-8b91-a2a0-77676634350d"
     - stage: links
-      stageUuid: "9cf49319-645a-8b88-9755-a9284cbab1b7"
+      stageUuid: "ee6c5ba7-83d1-8a19-a562-2f06cc7d3a01"
     - stage: horo
-      stageUuid: "d2e92cfd-2d7e-888a-ae0c-8b587b0b0daa"
+      stageUuid: "ce3d1ebe-cd9e-857c-b1c1-dcab0bedf000"
     - stage: seal
-      stageUuid: "77236f5e-19b2-8182-86f8-15fa803da3a5"
+      stageUuid: "9246cbe2-7177-8aaa-982a-06fe83c3f5bc"
     - stage: uuid
-      stageUuid: "0953c701-560c-8a84-86bb-7177d0f8b250"
+      stageUuid: "e749318a-6906-87b9-bee9-6ffc875d86a2"
 version: 2
 ---
 # replication

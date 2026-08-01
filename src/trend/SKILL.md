@@ -2,71 +2,18 @@
 name: trend
 description: "Use when tracking metric evolution, forecasting, or detecting patterns over time — moving averages, velocity, burndown, growth curves. The temporal analysis dimension."
 atomPath: trend
-coordinate: trend · 7/descent · 440bec61
-contentUuid: "5c9d39cd-50f3-5990-9495-c30db959c439"
-diamondUuid: "32bc7ebf-fb7e-8485-a318-fd266df40054"
-uuid: "440bec61-70de-8b11-9808-e9fbcc2bc47f"
+coordinate: "trend · 7/descent · 3f6c4a65"
+contentUuid: "72e65bf7-6d78-5592-8b51-1ce6b578994e"
+diamondUuid: "0c45c934-7e18-8248-bd84-2fe6e39b416b"
+uuid: "3f6c4a65-c30b-85bb-bd5b-b5e9c16dde44"
 horo: 7
-bonds:
-  in:
-    - awareness
-    - diffusion
-    - friction
-    - habit
-    - law
-    - market
-    - measure
-    - metric
-    - outlier
-    - schedule
-  out:
-    - awareness
-    - diffusion
-    - friction
-    - habit
-    - law
-    - market
-    - measure
-    - metric
-    - outlier
-    - schedule
 typography:
   partition: trend
   bondDegree: 30
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - measure
-    - metric
-    - outlier
-    - schedule
-  matrix:
-    - awareness
-    - diffusion
-    - friction
-    - habit
-    - law
-    - market
-    - measure
-    - metric
-    - outlier
-    - schedule
-  backlinks:
-    - awareness
-    - diffusion
-    - friction
-    - habit
-    - law
-    - market
-    - measure
-    - metric
-    - outlier
-    - schedule
 signatures:
-  computationUuid: "1d8260f5-01f3-8a17-a037-aed52bed56c2"
+  computationUuid: "7a923f9a-b676-8852-8d96-59622c8b1817"
   stages:
     - stage: path
       stageUuid: "4a01ca74-5c50-8740-b312-01ef4f4dba70"
@@ -77,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "1463288a-c5d8-8b98-acec-a20289dcebff"
     - stage: horo
-      stageUuid: "e9ed3bd3-bffc-83d7-aa36-612c16b1f002"
+      stageUuid: "4ac3808b-fd14-8bb9-be96-ea3b970a0986"
     - stage: seal
-      stageUuid: "458ce020-4d51-82ed-bf4f-f6c8533bb3a0"
+      stageUuid: "8b851da9-b905-8166-b718-0f21778d4d61"
     - stage: uuid
-      stageUuid: "9ad442a2-139b-8653-aaf4-ad06cb2c8240"
+      stageUuid: "cb9836b6-5c7d-8173-ab83-8902732db4b1"
 version: 2
 ---
 # trend

@@ -2,62 +2,19 @@
 name: site
 description: "Use when reasoning about site as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: site
-coordinate: site · 5/round · 5e6bf532
-contentUuid: "41ecc35b-b19f-5056-8618-7ad6304702aa"
-diamondUuid: "ea038f77-ec0d-8d34-9dc5-eed0ec720b99"
-uuid: "5e6bf532-8de8-86cc-90ab-8eb3a2c1b2cb"
+coordinate: "site · 5/round · be98e4cd"
+contentUuid: "f5dc40d7-710a-5f94-ac3b-27b4f0834256"
+diamondUuid: "ab2e6733-d77b-80ee-9494-1f32c98ab9c1"
+uuid: "be98e4cd-02b6-8159-84b8-cca12d1cb58f"
 horo: 5
-bonds:
-  in:
-    - collapse
-    - element
-    - law
-    - merge
-    - navigation
-    - sti
-    - web
-  out:
-    - collapse
-    - element
-    - law
-    - merge
-    - navigation
-    - sti
-    - web
 typography:
   partition: site
   bondDegree: 0
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - element
-    - law
-    - merge
-    - navigation
-    - sti
-    - web
-  matrix:
-    - collapse
-    - element
-    - law
-    - merge
-    - navigation
-    - sti
-    - web
-  backlinks:
-    - collapse
-    - element
-    - law
-    - merge
-    - navigation
-    - sti
-    - web
 signatures:
-  computationUuid: "17e13b07-904e-893c-9759-4b0108d71303"
+  computationUuid: "1c1ed37d-5789-85b0-9e3a-274ab41ebb34"
   stages:
     - stage: path
       stageUuid: "bec8b150-cb7a-888f-bbbe-8be44a1b14b8"
@@ -68,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8b8b3d34-8679-8575-8a7b-7cdb26f9df94"
     - stage: horo
-      stageUuid: "fa60965c-7aac-8423-930b-01916d672f2d"
+      stageUuid: "07445b45-4297-8c4c-800b-7577fb61d40c"
     - stage: seal
       stageUuid: "1034a1e8-7a24-8ffd-b7cc-54a1013db80c"
     - stage: uuid
-      stageUuid: "55a19b98-7199-8702-a367-273e44a4fa87"
+      stageUuid: "c064995e-9e58-8df1-89f3-96594bd894bb"
 version: 2
 ---
 # site

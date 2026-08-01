@@ -1,73 +1,35 @@
 ---
 name: diagnostic
 description: "Use when reasoning about diagnostic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/diagnostic
-coordinate: diagnostic · 2/share · dc379497
-contentUuid: "113d52f8-4d8e-52ad-b800-26d5c1d93bb7"
-diamondUuid: "34ac721a-9ed4-8118-ab8b-d32c2d79597d"
-uuid: "dc379497-6429-8538-ae6b-e26e20b9c0c3"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - lab
-    - law
-    - merge
-    - procedure
-    - sti
-  out:
-    - collapse
-    - lab
-    - law
-    - merge
-    - procedure
-    - sti
+atomPath: "vocabulary/diagnostic"
+coordinate: "vocabulary/diagnostic · 1/base · c76f9b6c"
+contentUuid: "b09a0549-f334-5bba-9d4a-aea6c1b63dd2"
+diamondUuid: "0462f3e2-6b73-823c-8d8c-ee6c4cd48e2f"
+uuid: "c76f9b6c-bf3b-8552-bfbd-d10e0dd59cf5"
+horo: 1
 typography:
-  partition: diagnostic
-  bondDegree: 20
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 22
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - lab
-    - law
-    - merge
-    - procedure
-    - sti
-  matrix:
-    - collapse
-    - lab
-    - law
-    - merge
-    - procedure
-    - sti
-  backlinks:
-    - collapse
-    - lab
-    - law
-    - merge
-    - procedure
-    - sti
 signatures:
-  computationUuid: "cd3de784-fcb6-8ac3-8295-ee203f255265"
+  computationUuid: "bd8bb04e-9801-8c23-aeac-8ee7a326fa0d"
   stages:
     - stage: path
-      stageUuid: "b0f1da19-2dbe-8cbc-80b7-3cf37bf2a6a9"
+      stageUuid: "052f72b8-02d1-87b2-bbcc-3ccb5426d47b"
     - stage: trinity
-      stageUuid: "b5e6a015-c366-89aa-84d7-4ef20787d04f"
+      stageUuid: "f46d702e-9d2a-86f5-b923-20cab29f7298"
     - stage: boundary
-      stageUuid: "81d8dd51-a414-8806-b517-41a9ad15d628"
+      stageUuid: "235d0685-1bef-880e-a342-122d954be5ee"
     - stage: links
-      stageUuid: "bf282d02-a3f4-8116-b878-696a76cdda66"
+      stageUuid: "b5bad774-3573-8246-af76-462f7c156046"
     - stage: horo
-      stageUuid: "a6b9feb8-eb5d-89ea-9d64-04aa3bacd526"
+      stageUuid: "828ffdd3-470d-8dcd-87e6-bc922c2a3e87"
     - stage: seal
-      stageUuid: "9d7664d6-b64e-8455-8ba2-ad9a7456334d"
+      stageUuid: "ca78d1cd-70a9-8606-85c4-752046fdb8e5"
     - stage: uuid
-      stageUuid: "c384a4e8-fa59-8696-8151-1b13718e41e0"
+      stageUuid: "4da2eea4-f161-8ec8-adb9-d6bb2e0bc65f"
 version: 2
 ---
 # diagnostic

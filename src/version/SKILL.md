@@ -2,94 +2,34 @@
 name: version
 description: "Use when reasoning about erpax's version — it is CONTENT-ADDRESSED and skill-based, a function of the corpus aura (the hash over every atom's content-uuid), so the same skills produce the same version on every clone; automatic tags follow the corpus, and drift or forgery between a tag and the code is caught. The git tag that cannot lie about what it contains."
 atomPath: version
-coordinate: version · 4/weave · cdbd891b
-contentUuid: "48cb80ee-18d9-5cc9-982a-19a03bd79983"
-diamondUuid: "728f03d0-3efd-8469-a036-24ce1d250c3c"
-uuid: "cdbd891b-9142-813c-bb69-36d645fde75b"
-horo: 4
-bonds:
-  in:
-    - assembly
-    - aura
-    - cropplan
-    - identity
-    - merge
-    - projection
-    - proof
-    - seed
-    - self
-    - sequence
-    - software
-  out:
-    - assembly
-    - aura
-    - cropplan
-    - identity
-    - merge
-    - projection
-    - proof
-    - seed
-    - self
-    - sequence
-    - software
+coordinate: "version · 8/crest · 075b137b"
+contentUuid: "930b47e6-60ab-5842-a822-37c324e27776"
+diamondUuid: "a2fd367a-cab2-8cd4-a8c6-fb72960d1c36"
+uuid: "075b137b-b33c-8ccb-b7d1-b475fab6476b"
+horo: 8
 typography:
   partition: version
   bondDegree: 34
-  neighbors:
-    - aura
 standards:
   - "SemVer 2.0.0 — `MAJOR.MINOR.PATCH+<build-metadata>` (the corpus-uuid is build metadata)"
-  - "the version is derived, not declared — re-derivable from SKILL_INDEX on any clone"
 bindings: []
-neighbors:
-  wikilink:
-    - aura
-    - identity
-    - merge
-    - proof
-    - self
-    - sequence
-  matrix:
-    - assembly
-    - aura
-    - cropplan
-    - identity
-    - merge
-    - projection
-    - proof
-    - seed
-    - self
-    - sequence
-    - software
-  backlinks:
-    - assembly
-    - aura
-    - cropplan
-    - identity
-    - merge
-    - projection
-    - proof
-    - seed
-    - self
-    - sequence
-    - software
 signatures:
-  computationUuid: "0fbffcf2-020d-893d-aea6-b892438059be"
+  computationUuid: "a1fc82e4-35af-851d-b06e-447be2ab503f"
   stages:
     - stage: path
       stageUuid: "9c83e18c-d9d6-8b68-9b89-c50efd44da71"
     - stage: trinity
       stageUuid: "4cc40897-8325-855b-8382-30143c0acc62"
     - stage: boundary
-      stageUuid: "793655a2-adc5-890a-bc11-0a56be16c2da"
+      stageUuid: "55831aae-146b-8b89-a7e0-69082226017b"
     - stage: links
       stageUuid: "936bc092-ba94-8973-8f2c-6fcf3f464d2d"
     - stage: horo
-      stageUuid: "8434ba6c-6aa7-80b7-9f3c-f39d81e12402"
+      stageUuid: "28fa7da3-d17c-8472-b4d8-b43d6c2bfb87"
     - stage: seal
-      stageUuid: "f1a1b33e-71f3-8dea-887b-a55497051886"
+      stageUuid: "ecef50cc-ea68-89e0-a27b-ebeefed02324"
     - stage: uuid
-      stageUuid: "e4d13ae2-b216-866a-9fd8-c45b9391b262"
+      stageUuid: "9408fcea-2be5-8ed9-82c1-36e87b825fe7"
 version: 2
 ---
 # version — the corpus-derived, content-addressed version

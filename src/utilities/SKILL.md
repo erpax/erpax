@@ -2,66 +2,18 @@
 name: utilities
 description: "Use when you need a pure helper, a Payload/Next/tenant glue function, or an admin React hook and it does NOT implement a standard's algorithm — the non-standards helper layer that may cite standards but never implements them."
 atomPath: utilities
-coordinate: utilities · 8/crest · 0a22b9b9
-contentUuid: "b222698c-12c9-5907-8822-c828b1d5b895"
-diamondUuid: "ca63afb2-f53d-8930-a9f9-33ae15d1dfea"
-uuid: "0a22b9b9-d564-88a5-afd9-eff40bf6f1f8"
-horo: 8
-bonds:
-  in:
-    - all
-    - collapse
-    - config
-    - identity
-    - matter
-    - proof
-    - society
-    - standard
-  out:
-    - all
-    - collapse
-    - config
-    - identity
-    - matter
-    - proof
-    - society
-    - standard
+coordinate: "utilities · 4/weave · 985bf4a3"
+contentUuid: "d0a01b2e-a6cc-5ad3-9c5e-e9ce11051fdb"
+diamondUuid: "807bc50f-3017-8499-8c5f-a2281ff9d34a"
+uuid: "985bf4a3-39b7-8aae-ad17-55cbb7922079"
+horo: 4
 typography:
   partition: utilities
   bondDegree: 24
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - all
-    - collapse
-    - config
-    - identity
-    - matter
-    - proof
-    - society
-    - standard
-  matrix:
-    - all
-    - collapse
-    - config
-    - identity
-    - matter
-    - proof
-    - society
-    - standard
-  backlinks:
-    - all
-    - collapse
-    - config
-    - identity
-    - matter
-    - proof
-    - society
-    - standard
 signatures:
-  computationUuid: "b182292a-f772-8073-a191-6917ad1eaf66"
+  computationUuid: "3a356905-67bb-896a-9f50-21acb69c5d63"
   stages:
     - stage: path
       stageUuid: "85499cae-a3de-8d06-b5da-dd72ad73e566"
@@ -72,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e2a07171-8001-84f1-aae8-08ac2468999e"
     - stage: horo
-      stageUuid: "7dae4a51-6d2f-86b8-923f-c082a17bea60"
+      stageUuid: "54a67fb7-5323-839f-bf91-1fffd5ca5d49"
     - stage: seal
-      stageUuid: "0a3a531c-cdc9-87ca-acd0-478defe44a16"
+      stageUuid: "8494d340-b08e-88ac-82ae-be3460d548d4"
     - stage: uuid
-      stageUuid: "837dc796-9e2a-8aaa-9c0f-a9c9c50062bd"
+      stageUuid: "f5ed29fe-82a9-8408-ba0a-760a37e53850"
 version: 2
 ---
 # utilities — the non-standards helper layer (domain glue, not vendor-spec)

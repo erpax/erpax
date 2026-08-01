@@ -1,53 +1,35 @@
 ---
 name: producer
 description: "Use when reasoning about producer — The person or organization who produced the work (e.g. music album, movie, TV/radio series etc.)."
-atomPath: vocabulary/producer
-coordinate: producer · 2/share · c151db21
-contentUuid: "7e98e163-09c6-5bd8-869a-860b90a942a0"
-diamondUuid: "d0c8ccc7-2dad-8941-a4a9-299809b6a808"
-uuid: "c151db21-b274-87cd-ac5c-5b8f70a5465a"
-horo: 2
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/producer"
+coordinate: "vocabulary/producer · 5/round · dca31cb7"
+contentUuid: "346a6103-ee1c-5fc7-bb34-f106342fd496"
+diamondUuid: "0d14750c-ae5a-83b6-a19c-8cb41b05f72c"
+uuid: "dca31cb7-2bb2-8c95-aa90-20b95bd1d3d3"
+horo: 5
 typography:
-  partition: producer
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "b9144281-5545-8f94-9592-d4b27d36c638"
+  computationUuid: "30ae80ea-666d-8c1a-a8a1-f087fb39df90"
   stages:
     - stage: path
-      stageUuid: "fb303a72-a13a-87be-95dd-e68b4163990d"
+      stageUuid: "c4851fd4-9f6f-8a4c-a570-ba4e8c084f75"
     - stage: trinity
-      stageUuid: "dbbfa65a-c9f4-8b88-997d-52b72bd3b56e"
+      stageUuid: "5638327b-d501-84ca-b301-16e5e36a5632"
     - stage: boundary
-      stageUuid: "7ccec92a-245c-8efd-8811-c02737ecf7df"
+      stageUuid: "e7a55f48-dc70-8461-9f83-bd7a6f7b34e0"
     - stage: links
-      stageUuid: "ca4da13a-cd8d-8cd5-92d9-cb32701e3ae1"
+      stageUuid: "d4cbead3-19c3-8839-9e4f-c77ccb0fe6ce"
     - stage: horo
-      stageUuid: "a9c824ba-f94b-870e-a581-b5d1515a9bf0"
+      stageUuid: "d94b2dca-a0f5-8295-8a95-79c8e90d4ce7"
     - stage: seal
-      stageUuid: "6fe53c43-24d8-8edb-9a6f-6bd8edc758d0"
+      stageUuid: "fb99a935-1a8f-8784-9d3b-f27731fd70c5"
     - stage: uuid
-      stageUuid: "c8990b42-5d93-8924-8d25-6f6daea44bac"
+      stageUuid: "3e513542-5ee6-8165-b096-3a4d073a8c4f"
 version: 2
 ---
 # producer

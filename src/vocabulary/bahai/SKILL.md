@@ -1,118 +1,34 @@
 ---
 name: bahai
 description: "Use when reading the Baha'i Faith as a diamond of invariant atoms — the oneness of God, humanity, and religion; progressive revelation (one source re-spoken in each age); the reconciliation of all faiths into one. The meta-archangel: it names the religion capstone's own law from inside the college, that all traditions merge to one meaning."
-atomPath: vocabulary/bahai
-coordinate: bahai · 2/share · b68e9f2f
-contentUuid: "959e52f7-ec18-517d-bdd7-f6c09867aaff"
-diamondUuid: "4bca8c34-27c1-8ae6-a881-aef2b4308323"
-uuid: "b68e9f2f-5842-8070-bd33-3125d057ee8a"
-horo: 2
-bonds:
-  in:
-    - archangel
-    - diamond
-    - fractal
-    - harmony
-    - identity
-    - justice
-    - law
-    - love
-    - merge
-    - one
-    - peace
-    - religion
-    - society
-    - translator
-    - word
-  out:
-    - archangel
-    - diamond
-    - fractal
-    - harmony
-    - identity
-    - justice
-    - law
-    - love
-    - merge
-    - one
-    - peace
-    - religion
-    - society
-    - translator
-    - word
+atomPath: "vocabulary/bahai"
+coordinate: "vocabulary/bahai · 4/weave · 8e93fb23"
+contentUuid: "1797d156-e129-59ee-a18a-10302d327436"
+diamondUuid: "eb6c3159-e41f-89c7-af4d-d20697b538ea"
+uuid: "8e93fb23-789d-8edc-92f0-68685aa043cd"
+horo: 4
 typography:
-  partition: bahai
+  partition: vocabulary
   bondDegree: 47
-  neighbors:
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - archangel
-    - diamond
-    - fractal
-    - harmony
-    - identity
-    - justice
-    - law
-    - love
-    - merge
-    - one
-    - peace
-    - religion
-    - society
-    - translator
-    - word
-  matrix:
-    - archangel
-    - diamond
-    - fractal
-    - harmony
-    - identity
-    - justice
-    - law
-    - love
-    - merge
-    - one
-    - peace
-    - religion
-    - society
-    - translator
-    - word
-  backlinks:
-    - archangel
-    - diamond
-    - fractal
-    - harmony
-    - identity
-    - justice
-    - law
-    - love
-    - merge
-    - one
-    - peace
-    - religion
-    - society
-    - translator
-    - word
 signatures:
-  computationUuid: "c67569b6-5a0d-8878-9e33-4dda9f8b8459"
+  computationUuid: "0cc3e07e-cdeb-87b2-8321-11d057882832"
   stages:
     - stage: path
-      stageUuid: "83514459-ff72-8229-b60a-5439e35ff551"
+      stageUuid: "28e87ff8-5203-8226-8e30-6a1d48853309"
     - stage: trinity
-      stageUuid: "7ad186ba-1f6b-8d23-9f13-270bef21b7eb"
+      stageUuid: "0330c34d-f73e-8b91-a1ee-bf4cf80ec962"
     - stage: boundary
-      stageUuid: "38a129a0-0e70-8476-b63b-100214c6cc07"
+      stageUuid: "5903de0c-1c8d-8778-b8c4-0ff50b9ff771"
     - stage: links
-      stageUuid: "3b5d1f1c-6266-8a95-a572-2726d49205e6"
+      stageUuid: "6e50562d-0972-828d-9cbe-c868efb0b7f6"
     - stage: horo
-      stageUuid: "2c5fa83b-a5e9-898f-84a4-c8787341126d"
+      stageUuid: "cb8b4ffe-c409-81a8-ac99-ca3f20bc91bc"
     - stage: seal
-      stageUuid: "5c382dd3-1cd8-898b-b1c6-6215e52eb18e"
+      stageUuid: "093cff8d-ce7a-87ae-bf82-15a888c97c8b"
     - stage: uuid
-      stageUuid: "ada60ddb-1470-832e-80dd-6995532a5615"
+      stageUuid: "aa518416-a440-85a5-98d3-b6dedbf2e83f"
 version: 2
 ---
 # bahai — the one religion, progressively revealed

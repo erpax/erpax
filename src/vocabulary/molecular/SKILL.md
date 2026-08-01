@@ -1,93 +1,35 @@
 ---
 name: molecular
 description: "Use when reasoning about molecular as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/molecular
-coordinate: molecular · 7/descent · 2bbd1239
-contentUuid: "e9185f18-17b2-58fc-8329-5efa43be6998"
-diamondUuid: "1c7c9096-7148-8980-83d4-2c18bb20d79e"
-uuid: "2bbd1239-4a2a-8a1d-8b24-914a747647d7"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - entity
-    - formula
-    - function
-    - has
-    - law
-    - merge
-    - monoisotopic
-    - sti
-    - weight
-  out:
-    - collapse
-    - entity
-    - formula
-    - function
-    - has
-    - law
-    - merge
-    - monoisotopic
-    - sti
-    - weight
+atomPath: "vocabulary/molecular"
+coordinate: "vocabulary/molecular · 1/base · ecd01f86"
+contentUuid: "4afad792-3088-5178-9dee-2cd4464f042e"
+diamondUuid: "49c13200-e4a8-8358-a785-b3283083b36b"
+uuid: "ecd01f86-963f-8ae7-8625-3b58262b9783"
+horo: 1
 typography:
-  partition: molecular
+  partition: vocabulary
   bondDegree: 35
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - entity
-    - formula
-    - function
-    - has
-    - law
-    - merge
-    - monoisotopic
-    - sti
-    - weight
-  matrix:
-    - collapse
-    - entity
-    - formula
-    - function
-    - has
-    - law
-    - merge
-    - monoisotopic
-    - sti
-    - weight
-  backlinks:
-    - collapse
-    - entity
-    - formula
-    - function
-    - has
-    - law
-    - merge
-    - monoisotopic
-    - sti
-    - weight
 signatures:
-  computationUuid: "d1a5dd0d-a7a1-8ff8-a7ee-229124a996f8"
+  computationUuid: "643eca9a-d7ce-832b-8204-3b6abea7f65c"
   stages:
     - stage: path
-      stageUuid: "703ca462-df03-87df-8d00-58a08799ff79"
+      stageUuid: "e75c6a68-6cab-82e2-82ea-26a535d0ea0d"
     - stage: trinity
-      stageUuid: "f8d8582d-76ff-8477-918a-ec21b64842aa"
+      stageUuid: "e203830b-de28-8387-8415-1e94085c802b"
     - stage: boundary
-      stageUuid: "6654ffc6-8af5-8f59-b9e3-426cabac6d11"
+      stageUuid: "18431654-a363-8d2f-bd80-3b2ce4c3c7cd"
     - stage: links
-      stageUuid: "c68e712c-2cd3-834d-9cf3-3035e62f9fb8"
+      stageUuid: "3c11a75e-2f09-8db7-a211-e3db69dd10a7"
     - stage: horo
-      stageUuid: "decdabde-8188-8a00-84d1-0bffccc0f469"
+      stageUuid: "879fd6ae-87fb-8081-984f-9591b83f2097"
     - stage: seal
-      stageUuid: "4ebf63b0-3def-8b88-9dac-34ac80f869b5"
+      stageUuid: "11a812f4-dfd8-8edb-b5e6-02d34ec1f653"
     - stage: uuid
-      stageUuid: "0349dcfd-436b-8122-8fc1-3c64c50cf425"
+      stageUuid: "b6419e2c-2321-88fc-b416-083e8b168859"
 version: 2
 ---
 # molecular

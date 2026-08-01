@@ -1,76 +1,34 @@
 ---
 name: quota
 description: "Use when setting or tracking rep/team/territory sales targets — period quota, attainment %, variance to goal; often linked to compensation."
-atomPath: vocabulary/quota
-coordinate: quota · 5/round · 9dc32bc0
-contentUuid: "6a781d66-e8d1-5797-bfca-7a5c2dc82549"
-diamondUuid: "58195f52-cd02-8983-ab18-b0ca70f5b088"
-uuid: "9dc32bc0-c0fc-837e-ac37-e15d11781f38"
-horo: 5
-bonds:
-  in:
-    - commissions
-    - employees
-    - forecast
-    - grade
-    - law
-    - periods
-    - territory
-  out:
-    - commissions
-    - employees
-    - forecast
-    - grade
-    - law
-    - periods
-    - territory
+atomPath: "vocabulary/quota"
+coordinate: "vocabulary/quota · 4/weave · e562cdda"
+contentUuid: "daf3e258-6930-53dc-98ce-731514f00a40"
+diamondUuid: "0dd00325-681d-894e-987e-37c13c63ffb5"
+uuid: "e562cdda-7de4-839f-9bbe-4b6a6d2226b6"
+horo: 4
 typography:
-  partition: quota
+  partition: vocabulary
   bondDegree: 22
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - commissions
-    - employees
-    - forecast
-    - law
-    - periods
-    - territory
-  matrix:
-    - commissions
-    - employees
-    - forecast
-    - grade
-    - law
-    - periods
-    - territory
-  backlinks:
-    - commissions
-    - employees
-    - forecast
-    - grade
-    - law
-    - periods
-    - territory
 signatures:
-  computationUuid: "64984c80-f77a-8c14-8c08-c85764e3f618"
+  computationUuid: "498d46dc-ca59-838e-8088-ca9ab9b8b76f"
   stages:
     - stage: path
-      stageUuid: "c6950aa9-bb9e-8aed-b364-9d19a0cef7b3"
+      stageUuid: "6c194ebf-5ac8-8917-9753-dc14ca1902e4"
     - stage: trinity
-      stageUuid: "5347d44e-4256-890f-886c-47044d5f8f29"
+      stageUuid: "93017793-decd-88b0-ad6f-427f09f52eb3"
     - stage: boundary
-      stageUuid: "bad5afe8-226f-8a68-a007-b3c7499065d9"
+      stageUuid: "c6f863fa-95c4-820e-929f-ea1204e5a3f9"
     - stage: links
-      stageUuid: "604e41cb-5e4e-85ea-884e-7e3578161ed6"
+      stageUuid: "2315f0ce-a3ef-8ebc-ac97-205c8b078db2"
     - stage: horo
-      stageUuid: "e48f0d5e-1c59-8613-a086-4d0a0f49ab29"
+      stageUuid: "c27dc164-e1af-8a38-8c10-3024798da1c0"
     - stage: seal
-      stageUuid: "fddea473-5ecf-8c6f-971e-9d8a6ed6ecc9"
+      stageUuid: "57f1070e-5ddc-8639-b79a-fd84017d3109"
     - stage: uuid
-      stageUuid: "4880d4dc-8334-8ddd-b232-f1c800fedd3b"
+      stageUuid: "2fe39c1c-68ed-8a87-bd9a-5cf4a6830ecb"
 version: 2
 ---
 # quota

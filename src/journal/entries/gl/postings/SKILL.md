@@ -2,32 +2,14 @@
 name: postings
 description: "Use when writing or querying individual debit/credit lines against a journal entry — source type (invoice/bill/payment/adjustment/revaluation), source date, GL account, amount, currency, and ISO-8601 posted-date auto-set on status → posted. The atomic GL line-item that enforces balanced-entry and SOX posting-timestamp requirements."
 atomPath: "journal/entries/gl/postings"
-coordinate: "journal/entries/gl/postings · 1/base · 18c183a2"
-contentUuid: "b0df7d28-9dbf-506d-aa84-84c0a223f874"
-diamondUuid: "9eac1b1c-b1ca-87ea-b4fe-e26fc1f2dd45"
-uuid: "18c183a2-b0a0-829a-b874-328af03f7754"
-horo: 1
-bonds:
-  in:
-    - accounting
-    - horo
-    - identity
-    - law
-    - proof
-    - standard
-    - transaction
-  out:
-    - accounting
-    - horo
-    - identity
-    - law
-    - proof
-    - standard
-    - transaction
+coordinate: "journal/entries/gl/postings · 8/crest · 45652237"
+contentUuid: "83b1eaae-e4ef-5aa0-b05f-6160de59342d"
+diamondUuid: "d9fbb0fd-78d1-8119-bf8f-7186dfa936fd"
+uuid: "45652237-349d-8d41-8e03-92ce86a38ae9"
+horo: 8
 typography:
   partition: journal
   bondDegree: 27
-  neighbors: []
 standards:
   - "IFRS IAS-1 presentation-of-financial-statements"
   - "ISO-8601-1:2019 date-time posted-date"
@@ -36,33 +18,8 @@ standards:
   - "SOX §404 internal-controls"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - horo
-    - identity
-    - law
-    - proof
-    - standard
-    - transaction
-  matrix:
-    - accounting
-    - horo
-    - identity
-    - law
-    - proof
-    - standard
-    - transaction
-  backlinks:
-    - accounting
-    - horo
-    - identity
-    - law
-    - proof
-    - standard
-    - transaction
 signatures:
-  computationUuid: "7060960d-3d84-813c-a7c7-9825d9dee237"
+  computationUuid: "1f15d14b-c993-8842-a00d-21723e921442"
   stages:
     - stage: path
       stageUuid: "998d8052-9cfd-8254-8b5a-7d7c88b8c706"
@@ -73,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "6ab9cac1-927f-8427-a632-d376e252d74f"
     - stage: horo
-      stageUuid: "d3419ba9-fb9d-82c8-bae4-c488317829bf"
+      stageUuid: "373c602d-986c-898a-9dd8-06d66a6047b5"
     - stage: seal
       stageUuid: "aabefbf6-f7cc-888f-a0ed-baedfca6fbb8"
     - stage: uuid
-      stageUuid: "096c03b8-3e63-821e-92cf-b87514fa88c2"
+      stageUuid: "6d5d8b19-c63b-821d-90c3-8dea1516b552"
 version: 2
 ---
 # gl-postings

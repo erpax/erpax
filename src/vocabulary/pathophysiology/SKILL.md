@@ -1,53 +1,35 @@
 ---
 name: pathophysiology
 description: "Use when reasoning about pathophysiology — Changes in the normal mechanical, physical, and biochemical functions that are associated with this activity or condition."
-atomPath: vocabulary/pathophysiology
-coordinate: pathophysiology · 7/descent · daf2cb9e
-contentUuid: "e6c958ef-ef53-590d-8251-4f8f899f4289"
-diamondUuid: "1200ec3d-6e18-8aea-8851-79c75bbcba28"
-uuid: "daf2cb9e-68ee-8536-baaf-75b594c9fdd5"
-horo: 7
-bonds:
-  in:
-    - associated
-    - law
-  out:
-    - associated
-    - law
+atomPath: "vocabulary/pathophysiology"
+coordinate: "vocabulary/pathophysiology · 8/crest · e8acd1c0"
+contentUuid: "ff648f6f-3010-586e-8180-5438d4d74395"
+diamondUuid: "2a6a0107-682f-8ede-bb65-69369129d535"
+uuid: "e8acd1c0-2c3f-8e8d-8274-c80ac359a563"
+horo: 8
 typography:
-  partition: pathophysiology
+  partition: vocabulary
   bondDegree: 7
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - associated
-    - law
-  matrix:
-    - associated
-    - law
-  backlinks:
-    - associated
-    - law
 signatures:
-  computationUuid: "d85cf928-d58d-849e-821e-3f4ea16fbe3e"
+  computationUuid: "3e5b7650-8828-8204-9770-5846b0f9e156"
   stages:
     - stage: path
-      stageUuid: "72d5b514-fa48-8ca2-9e01-9489f88053f5"
+      stageUuid: "aababcac-e8dc-857a-b14c-7ade5a61347d"
     - stage: trinity
-      stageUuid: "9262b10f-14e8-8dcd-927d-ca244e628922"
+      stageUuid: "f8f55436-47a2-8b9a-af5c-97e499c32cc4"
     - stage: boundary
-      stageUuid: "8a801b1d-84a0-80ba-a3fe-29b968f53e80"
+      stageUuid: "d0f6c8b5-e36a-8db8-9dbe-c2df7b5e0555"
     - stage: links
-      stageUuid: "c8a04e90-a491-8acd-900c-f2488434ad27"
+      stageUuid: "e2214ce6-54e9-8408-a5bc-15ad2985e448"
     - stage: horo
-      stageUuid: "89190231-7ea7-8dea-af3f-58ec78de6f30"
+      stageUuid: "d262259b-f646-8f31-af78-b88ba420d37c"
     - stage: seal
-      stageUuid: "352e0c64-4708-8d43-8112-e8381399fc5f"
+      stageUuid: "62a3eeaf-2d0a-8920-b5be-2f4665168e91"
     - stage: uuid
-      stageUuid: "5af7010f-8c89-8ee3-b0bd-8d284d8fb4c5"
+      stageUuid: "a0bbf1a2-3b2d-8423-91f9-df03a21439de"
 version: 2
 ---
 # pathophysiology

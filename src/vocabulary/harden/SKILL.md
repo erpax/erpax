@@ -1,88 +1,34 @@
 ---
 name: harden
 description: "Use when hardening a Payload app against abuse/DoS or preparing for production security review — setting query-depth/complexity limits, login lockout, GraphQL exposure, CORS/CSRF, or securing upload collections."
-atomPath: vocabulary/harden
-coordinate: harden · 2/share · 0fe2bf79
-contentUuid: "5656198a-9860-50d9-9c02-a2c9bfeec925"
-diamondUuid: "2ddd6c84-5872-899f-9eb8-7cbe8078e20b"
-uuid: "0fe2bf79-df2c-8aca-816c-d0ab9281876b"
-horo: 2
-bonds:
-  in:
-    - access
-    - api
-    - auth
-    - beyond
-    - bindings
-    - config
-    - deploy
-    - engineering
-    - optimize
-    - upload
-  out:
-    - access
-    - api
-    - auth
-    - beyond
-    - bindings
-    - config
-    - deploy
-    - engineering
-    - optimize
-    - upload
+atomPath: "vocabulary/harden"
+coordinate: "vocabulary/harden · 8/crest · 4405b6bb"
+contentUuid: "d99560e7-f563-5fae-ace3-d27fcf5411e4"
+diamondUuid: "17943618-9452-81af-8f7e-26549e604513"
+uuid: "4405b6bb-4c04-8f07-be1d-732be1f5be82"
+horo: 8
 typography:
-  partition: harden
-  bondDegree: 35
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 33
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - auth
-    - config
-    - deploy
-    - optimize
-    - upload
-  matrix:
-    - access
-    - api
-    - auth
-    - beyond
-    - bindings
-    - config
-    - deploy
-    - engineering
-    - optimize
-    - upload
-  backlinks:
-    - access
-    - api
-    - auth
-    - beyond
-    - bindings
-    - config
-    - deploy
-    - engineering
-    - optimize
-    - upload
 signatures:
-  computationUuid: "da71dc89-d910-8f48-931f-6b4a55d94eb5"
+  computationUuid: "9f559d86-6ac4-8040-b609-ab966cb5a9c5"
   stages:
     - stage: path
-      stageUuid: "e86df1dc-fdbe-8d7a-b4b8-2c9beff23aab"
+      stageUuid: "3f142df3-78d8-8c74-9b20-b552667b4a9e"
     - stage: trinity
-      stageUuid: "0e5c634b-8324-808a-a92c-c0397925c3ab"
+      stageUuid: "e81887bd-3631-8ba4-b31a-423920af46f2"
     - stage: boundary
-      stageUuid: "7f733562-c1bd-8062-8a11-06a2773c3842"
+      stageUuid: "adee61d0-e17d-852d-acee-b14dcc098163"
     - stage: links
-      stageUuid: "24e0bee5-d713-8e67-b8a6-29c92f62d34b"
+      stageUuid: "485e568a-f49d-863e-a2c8-b27538d15d6f"
     - stage: horo
-      stageUuid: "43505f0f-1d7f-82ac-989f-3e78bbe36e8e"
+      stageUuid: "0e29118d-8146-868f-9005-ca9288541c60"
     - stage: seal
-      stageUuid: "30115ef3-ba7f-8733-b3ea-a8eb4045f769"
+      stageUuid: "bc80adaf-2ba9-80b1-a6d1-ce47e44898f8"
     - stage: uuid
-      stageUuid: "2883c1b1-6a87-85b6-96a6-49ae22f6e0dc"
+      stageUuid: "cf82c11b-2b5a-8691-a815-7d84ab402158"
 version: 2
 ---
 # harden — Payload anti-abuse & security config

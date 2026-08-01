@@ -1,73 +1,35 @@
 ---
 name: completion
 description: "Use when reasoning about completion as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/completion
-coordinate: completion · 1/base · 4eec8bbc
-contentUuid: "704b239a-822a-5237-a8d5-1896c727e068"
-diamondUuid: "c272ed98-05b4-8d84-948f-615bfa24932b"
-uuid: "4eec8bbc-b746-8b92-8abd-818e10e4b28d"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - salary
-    - sti
-    - upon
-  out:
-    - collapse
-    - law
-    - merge
-    - salary
-    - sti
-    - upon
+atomPath: "vocabulary/completion"
+coordinate: "vocabulary/completion · 2/share · 1c6cdc46"
+contentUuid: "82230566-525c-506e-a167-7badc12d7e2e"
+diamondUuid: "bbe8c83b-06b5-81c0-af79-eba3b61589eb"
+uuid: "1c6cdc46-4ba1-8b2b-a2e5-27c7abf61180"
+horo: 2
 typography:
-  partition: completion
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - salary
-    - sti
-    - upon
-  matrix:
-    - collapse
-    - law
-    - merge
-    - salary
-    - sti
-    - upon
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - salary
-    - sti
-    - upon
 signatures:
-  computationUuid: "3d92e67b-fa1d-8c38-ab61-c58565f046d5"
+  computationUuid: "b4d2fb6c-e5f5-87ec-9ef6-f0b91529f3bc"
   stages:
     - stage: path
-      stageUuid: "f87d3780-7374-8e86-a733-8f5777963acd"
+      stageUuid: "06808d01-763d-84dd-8101-7c7f1072d512"
     - stage: trinity
-      stageUuid: "864b1292-b147-8324-b9a4-9d674341abf4"
+      stageUuid: "eda84eec-f542-841b-a229-bbd6e6fe1905"
     - stage: boundary
-      stageUuid: "39b5654e-89a3-81d2-9e4d-26cd57fd7223"
+      stageUuid: "fca89826-ab31-897f-b3c3-9efaae38b757"
     - stage: links
-      stageUuid: "e57db096-dbd2-84de-8e75-85d139d8025f"
+      stageUuid: "ef7fb950-bc1b-82c6-a084-1dae1ea45eb5"
     - stage: horo
-      stageUuid: "3568fd37-7926-8fa8-a317-44fe5bbcae1a"
+      stageUuid: "8b8fa8e8-3254-8351-8fdd-1e3beee23738"
     - stage: seal
-      stageUuid: "d901d46b-7124-8d7f-96d2-e76d6db2e7b7"
+      stageUuid: "048e6343-ea7a-8992-bc7c-b766357b538a"
     - stage: uuid
-      stageUuid: "e27a5128-6805-80d0-9178-3284fc07098a"
+      stageUuid: "46fb3fcd-86d3-865a-a7e9-2b0e732783c2"
 version: 2
 ---
 # completion

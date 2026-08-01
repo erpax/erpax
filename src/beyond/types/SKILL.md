@@ -2,62 +2,17 @@
 name: types
 description: "Use when you need the shared type vocabulary for the next-horizon conservation primitives (Laws 11-20+22) — causal provenance, deterministic replay, tenant-isolation proof, bitemporal coordinates, cost and carbon metrics, post-quantum signatures, self-explainability, reversible inverse-effects, and AI-decision provenance — what no current standard fully demands yet every regulator will within five years."
 atomPath: "beyond/types"
-coordinate: "beyond/types · 5/round · e6fd5efc"
-contentUuid: "33eb4080-a380-53a6-b45c-2706b43e9823"
-diamondUuid: "917411d1-af47-8e51-a745-915f3ebe8c79"
-uuid: "e6fd5efc-05cc-8e1f-9bd2-65f312580c1f"
+coordinate: "beyond/types · 5/round · 4caa69ac"
+contentUuid: "9d30864c-d2ee-538c-891a-de68672e0b0f"
+diamondUuid: "910dcb60-157b-8be4-bcfb-c49fba23b18a"
+uuid: "4caa69ac-561b-8955-bf6c-0903ed7270fb"
 horo: 5
-bonds:
-  in:
-    - beyond
-    - chat
-    - collapse
-    - config
-    - decompression
-    - examples
-    - gate
-    - law
-    - optimize
-    - payload
-    - recover
-    - schema
-    - society
-    - sti
-    - test
-    - torus
-    - trinity
-    - types
-    - vitepress
-  out:
-    - chat
-    - collapse
-    - config
-    - decompression
-    - examples
-    - gate
-    - law
-    - optimize
-    - payload
-    - recover
-    - schema
-    - society
-    - sti
-    - test
-    - torus
-    - trinity
-    - types
-    - vitepress
 typography:
   partition: beyond
   bondDegree: 66
-  neighbors:
-    - agent
 standards:
   - ESRS E1 (climate change disclosures — gCO2e per activity)
   - "EU AI Act 2024/1689 (Annex IV — technical documentation)"
-  - "EU-2024/1183"
-  - "EU-2024/1620"
-  - "EU-2024/1624"
   - "EU-AI-Act"
   - "EU-CSDDD-2024/1760"
   - "EU-ESRS"
@@ -76,52 +31,8 @@ standards:
   - "XBRL inline-XBRL (machine-explainability of financial values)"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - agent
-    - audit
-    - beyond
-    - law
-  matrix:
-    - chat
-    - collapse
-    - config
-    - decompression
-    - examples
-    - gate
-    - law
-    - optimize
-    - payload
-    - recover
-    - schema
-    - society
-    - sti
-    - test
-    - torus
-    - trinity
-    - types
-    - vitepress
-  backlinks:
-    - chat
-    - collapse
-    - config
-    - decompression
-    - examples
-    - gate
-    - law
-    - optimize
-    - payload
-    - recover
-    - schema
-    - society
-    - sti
-    - test
-    - torus
-    - trinity
-    - types
-    - vitepress
 signatures:
-  computationUuid: "8de6aaa2-6a38-83d3-bfb9-198a99753b4b"
+  computationUuid: "7c286c3d-0a1e-88b9-9bd3-68a037a7b132"
   stages:
     - stage: path
       stageUuid: "9ff56465-1a02-8cc2-ab50-4c860c468098"
@@ -132,11 +43,11 @@ signatures:
     - stage: links
       stageUuid: "2bb91e74-9495-85da-989e-f5637b25639d"
     - stage: horo
-      stageUuid: "ed796be7-eecf-800f-895b-f272ecf90d4b"
+      stageUuid: "4c396e26-5193-8c34-9662-80f690a39bcb"
     - stage: seal
       stageUuid: "0de5ce42-778c-8676-80d8-4a13990588fb"
     - stage: uuid
-      stageUuid: "2ca84492-8688-8781-8c12-836414d75e4b"
+      stageUuid: "1d7b890a-4f52-8b72-9a9d-3b3110342682"
 version: 2
 ---
 # beyond/types — beyond-current-standards type vocabulary

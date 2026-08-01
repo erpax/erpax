@@ -1,80 +1,34 @@
 ---
 name: "data-protection"
 description: "Use when a contract or processing agreement specifies data-protection obligations — processor/controller roles, permitted uses, security measures (encryption, access controls, breach notification), DPA terms."
-atomPath: vocabulary/data-protection
-coordinate: "data-protection · 4/weave · 11c34328"
-contentUuid: "31984b7c-4f51-5fa7-9732-447b7672b444"
-diamondUuid: "6d4c4df3-f724-80cf-be36-28b6ddb4425c"
-uuid: "11c34328-346f-80a7-9c38-ddac64c97e59"
-horo: 4
-bonds:
-  in:
-    - activities
-    - biometric
-    - consent
-    - contracts
-    - law
-    - matter
-    - records
-    - sanitization
-  out:
-    - activities
-    - biometric
-    - consent
-    - contracts
-    - law
-    - matter
-    - records
-    - sanitization
+atomPath: "vocabulary/data-protection"
+coordinate: "vocabulary/data-protection · 8/crest · b11ff191"
+contentUuid: "8a2607f0-0bfd-513d-8238-63d8a054f8b3"
+diamondUuid: "4ad09054-dd7f-830f-8564-a15827547e30"
+uuid: "b11ff191-a667-8381-95f6-b6fdc1c01cbb"
+horo: 8
 typography:
-  partition: "data-protection"
+  partition: vocabulary
   bondDegree: 24
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - activities
-    - consent
-    - contracts
-    - law
-    - matter
-    - records
-  matrix:
-    - activities
-    - biometric
-    - consent
-    - contracts
-    - law
-    - matter
-    - records
-    - sanitization
-  backlinks:
-    - activities
-    - biometric
-    - consent
-    - contracts
-    - law
-    - matter
-    - records
-    - sanitization
 signatures:
-  computationUuid: "d2366220-6262-8d8b-9785-b30f3966100b"
+  computationUuid: "c1b97a39-cadf-8845-8e99-ead36941e1a6"
   stages:
     - stage: path
-      stageUuid: "449fdc8c-601c-8ea9-b071-f126fc01fa70"
+      stageUuid: "a8c99a63-7a65-8f38-9029-05ef33f46fa3"
     - stage: trinity
-      stageUuid: "0244910f-5336-8b42-b7a1-4eecff4a438d"
+      stageUuid: "e115dc30-3cfd-89d7-b703-fa40c3d47698"
     - stage: boundary
-      stageUuid: "3e679d78-5edc-8e15-926b-6b2d2cd2fabf"
+      stageUuid: "a0e914a8-097d-878c-96d8-11c10b0264c7"
     - stage: links
-      stageUuid: "c6339492-30d4-828f-a402-47944db50767"
+      stageUuid: "9caf6661-f55e-8adc-b92f-6fdd423154ed"
     - stage: horo
-      stageUuid: "8b4885a1-242d-88f5-94d1-6405e30ed67e"
+      stageUuid: "04cf57e4-5f4b-873e-9e09-a56c364533b4"
     - stage: seal
-      stageUuid: "e630790c-51bb-822c-a403-38b3d7e35d23"
+      stageUuid: "5b9955b7-3213-8c64-a5fa-31d70d63adc0"
     - stage: uuid
-      stageUuid: "4cb472c0-f919-8c70-a4ff-aab7c975e48e"
+      stageUuid: "fc2ec80e-9693-8ce7-b701-042a5a412ed6"
 version: 2
 ---
 # data-protection

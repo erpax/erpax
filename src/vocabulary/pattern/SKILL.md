@@ -1,57 +1,35 @@
 ---
 name: pattern
 description: "Use when reasoning about pattern — A pattern that something has, for example 'polka dot', 'striped', 'Canadian flag'. Values are typically expressed as text, although links to controlled value schemes are also suppo"
-atomPath: vocabulary/pattern
-coordinate: pattern · 5/round · 548f5676
-contentUuid: "6010c02f-280b-56b6-90b5-61310ede1601"
-diamondUuid: "8e3a6a04-f373-845c-bdd4-f10b0fe486cf"
-uuid: "548f5676-b02f-8d70-a3fa-88d89d8d0e0d"
-horo: 5
-bonds:
-  in:
-    - law
-    - reveal
-    - value
-  out:
-    - law
-    - reveal
-    - value
+atomPath: "vocabulary/pattern"
+coordinate: "vocabulary/pattern · 1/base · 88ed768a"
+contentUuid: "082504b5-6f19-53b4-9c37-559952fcc06d"
+diamondUuid: "b07c1d47-d07a-81b9-8436-29acd0b8b63b"
+uuid: "88ed768a-fa8b-8b80-b5ce-4fed71b691da"
+horo: 1
 typography:
-  partition: pattern
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - value
-  matrix:
-    - law
-    - reveal
-    - value
-  backlinks:
-    - law
-    - reveal
-    - value
 signatures:
-  computationUuid: "f3828830-1a40-8487-a528-127643e6fa93"
+  computationUuid: "3c5a6cb8-33cd-897c-991a-695597efb951"
   stages:
     - stage: path
-      stageUuid: "c0564ae1-fbef-8d67-a750-5b943dd842d8"
+      stageUuid: "9cf6c51d-3be1-8a2f-a66f-dbbddfc8bc83"
     - stage: trinity
-      stageUuid: "6518692c-8805-8952-be65-fb92ed582c5a"
+      stageUuid: "0f677cbb-7b35-867e-863a-073ed18661db"
     - stage: boundary
-      stageUuid: "c061388f-74d9-8108-bafe-af8143eef7e0"
+      stageUuid: "34860f1f-4abd-86c3-a463-f104802ef409"
     - stage: links
-      stageUuid: "87223909-a0e2-8318-a5d4-aa6a69c868d0"
+      stageUuid: "caf2816a-c013-837d-a888-bec9871d4902"
     - stage: horo
-      stageUuid: "08599a63-755b-843c-bfeb-d1292437f8e9"
+      stageUuid: "162355e4-f6cd-8580-8139-94bb91d1f455"
     - stage: seal
-      stageUuid: "76e88487-a292-8c57-9e7f-66df083f6c98"
+      stageUuid: "42e61ff9-dc2a-8e2c-b59d-f0f7809007ce"
     - stage: uuid
-      stageUuid: "b5a4cab3-9856-84aa-b252-f022eeea0b96"
+      stageUuid: "e420065d-91c1-81b8-b78a-4eabab35ea6f"
 version: 2
 ---
 # pattern

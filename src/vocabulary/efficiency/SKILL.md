@@ -1,117 +1,35 @@
 ---
 name: efficiency
 description: "Use when reasoning about efficiency as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/efficiency
-coordinate: efficiency · 7/descent · 23042834
-contentUuid: "4e7ef7c6-b126-5abc-a473-40d6660665d8"
-diamondUuid: "2da1ce17-adcc-8e50-a0db-6112cac34975"
-uuid: "23042834-8579-8f3d-a0e1-248726d173ab"
-horo: 7
-bonds:
-  in:
-    - category
-    - collapse
-    - energy
-    - enumeration
-    - eu
-    - fuel
-    - has
-    - law
-    - max
-    - merge
-    - min
-    - scale
-    - shift
-    - star
-    - sti
-  out:
-    - category
-    - collapse
-    - energy
-    - enumeration
-    - eu
-    - fuel
-    - has
-    - law
-    - max
-    - merge
-    - min
-    - scale
-    - shift
-    - star
-    - sti
+atomPath: "vocabulary/efficiency"
+coordinate: "vocabulary/efficiency · 2/share · 9ed5f832"
+contentUuid: "12264de8-74e2-5092-889e-85a7e4f99eb8"
+diamondUuid: "7dee3124-c097-83e9-ac82-03346caa1a26"
+uuid: "9ed5f832-cd40-8087-a9f4-8ad11303ee0c"
+horo: 2
 typography:
-  partition: efficiency
-  bondDegree: 55
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 60
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - category
-    - collapse
-    - energy
-    - enumeration
-    - eu
-    - fuel
-    - has
-    - law
-    - max
-    - merge
-    - min
-    - scale
-    - star
-    - sti
-  matrix:
-    - category
-    - collapse
-    - energy
-    - enumeration
-    - eu
-    - fuel
-    - has
-    - law
-    - max
-    - merge
-    - min
-    - scale
-    - shift
-    - star
-    - sti
-  backlinks:
-    - category
-    - collapse
-    - energy
-    - enumeration
-    - eu
-    - fuel
-    - has
-    - law
-    - max
-    - merge
-    - min
-    - scale
-    - shift
-    - star
-    - sti
 signatures:
-  computationUuid: "05db9d99-4a49-8fab-8fec-e84ed598a21f"
+  computationUuid: "bce92395-3ff3-8427-96b9-37ebb995417d"
   stages:
     - stage: path
-      stageUuid: "e92e303c-010a-832b-976b-1a9446400088"
+      stageUuid: "bada7275-8061-8f4e-a6d7-228eee47f24e"
     - stage: trinity
-      stageUuid: "bf8d7209-b220-8529-9079-9d6b719d6ab9"
+      stageUuid: "a652afb0-ea88-824b-9f6d-32080502d9de"
     - stage: boundary
-      stageUuid: "54cf277b-33be-8c99-9c47-0d90fc428aa1"
+      stageUuid: "88183e2e-658d-85bc-afda-3909409620f6"
     - stage: links
-      stageUuid: "6acaf681-1061-848a-b7df-a37e36af8c76"
+      stageUuid: "822392f5-733d-8b6b-a2be-0db940f1dfc9"
     - stage: horo
-      stageUuid: "5cd2ecfd-fe45-8d25-9a3d-8cc2cda478d6"
+      stageUuid: "5c6c9e14-0738-83ab-ad35-6208bbe107ee"
     - stage: seal
-      stageUuid: "c2b38c45-dca7-84b2-9e5b-6decfbb9435b"
+      stageUuid: "01d75b2b-6d72-8436-940f-0d638434ab34"
     - stage: uuid
-      stageUuid: "c295b446-0bf6-8f18-a11d-be3560dbdb79"
+      stageUuid: "ce6aad75-ca29-8b80-a46b-916d7be07cd5"
 version: 2
 ---
 # efficiency

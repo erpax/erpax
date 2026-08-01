@@ -2,62 +2,19 @@
 name: summary
 description: "Use when reasoning about summary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: summary
-coordinate: summary · 2/share · 310fc304
-contentUuid: "fbf09e64-4c10-5f28-a1de-7443afcb1a61"
-diamondUuid: "02a7242a-277d-8e8c-89eb-1b9ecf68244b"
-uuid: "310fc304-2c5d-82a7-9b9d-0591f8edf70c"
-horo: 2
-bonds:
-  in:
-    - accessibility
-    - benefits
-    - collapse
-    - law
-    - merge
-    - sti
-    - url
-  out:
-    - accessibility
-    - benefits
-    - collapse
-    - law
-    - merge
-    - sti
-    - url
+coordinate: "summary · 8/crest · 5c400c41"
+contentUuid: "208d082e-ebab-53f5-8b5b-8e9d8dedbabd"
+diamondUuid: "4fed8dd8-595a-872b-bda6-b5373cb17f15"
+uuid: "5c400c41-aa5c-85c6-b570-8d1ef37d6d60"
+horo: 8
 typography:
   partition: summary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - accessibility
-    - benefits
-    - collapse
-    - law
-    - merge
-    - sti
-    - url
-  matrix:
-    - accessibility
-    - benefits
-    - collapse
-    - law
-    - merge
-    - sti
-    - url
-  backlinks:
-    - accessibility
-    - benefits
-    - collapse
-    - law
-    - merge
-    - sti
-    - url
 signatures:
-  computationUuid: "946c2b0a-ef75-838a-9a24-1679cb578e32"
+  computationUuid: "ce843d5f-4330-85e3-b881-e2532d4e66d0"
   stages:
     - stage: path
       stageUuid: "c6089862-f271-8211-9e9e-00a2773975ba"
@@ -68,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a3a878cb-bee5-8db0-b86a-d7bbc950d0fc"
     - stage: horo
-      stageUuid: "73f37fe5-aa2f-8d29-8d81-c59ca50ba8f6"
+      stageUuid: "0c15b320-1b8d-83ec-865d-ef136628fdba"
     - stage: seal
-      stageUuid: "3d93b6de-1371-8a7c-9ec0-6e5aa8dec2ec"
+      stageUuid: "91c63d8d-ab05-857c-979d-bfb1a38b3be1"
     - stage: uuid
-      stageUuid: "d119e06b-50b8-898f-bfa9-54b5a4f65a20"
+      stageUuid: "4bdb6814-b803-84a1-814f-b58ed76dab1c"
 version: 2
 ---
 # summary

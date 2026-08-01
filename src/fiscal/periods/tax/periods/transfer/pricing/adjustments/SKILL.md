@@ -2,59 +2,22 @@
 name: adjustments
 description: "Use when documenting intercompany transfer-pricing adjustments — selecting the OECD method (CUP, cost-plus, resale, profit-split, TNMM), recording original vs arm's-length amounts, attaching contemporaneous documentation, and tracking approval through documented → validated → approved → posted. The OECD BEPS-compliant TP adjustment node."
 atomPath: "fiscal/periods/tax/periods/transfer/pricing/adjustments"
-coordinate: "fiscal/periods/tax/periods/transfer/pricing/adjustments · 7/descent · e4b5db03"
-contentUuid: "e1690e3c-9abd-52b2-857b-09acd50a381d"
-diamondUuid: "d8419d03-4887-899e-bdc0-ddaf037abab3"
-uuid: "e4b5db03-70bc-89fd-9ea5-e5a8ee69543e"
-horo: 7
-bonds:
-  in:
-    - accounting
-    - adjustment
-    - entries
-    - horo
-    - law
-    - proof
-    - standard
-  out:
-    - accounting
-    - adjustment
-    - entries
-    - horo
-    - law
-    - proof
-    - standard
+coordinate: "fiscal/periods/tax/periods/transfer/pricing/adjustments · 4/weave · f26bfd4c"
+contentUuid: "5bed1c6f-375e-5d48-8236-c1314ad3a3f9"
+diamondUuid: "c82c8e8b-1c77-840b-b878-f9c3affd1e1a"
+uuid: "f26bfd4c-8b88-863b-9d8b-ad6ee732dc5c"
+horo: 4
 typography:
   partition: fiscal
   bondDegree: 41
-  neighbors: []
 standards:
   - "OECD BEPS Action-13 country-by-country"
   - "OECD Transfer-Pricing-Guidelines-2022"
   - "OECD-Transfer-Pricing"
   - "US IRC §482 arms-length"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-  matrix:
-    - accounting
-    - adjustment
-    - entries
-    - horo
-    - law
-    - proof
-    - standard
-  backlinks:
-    - accounting
-    - adjustment
-    - entries
-    - horo
-    - law
-    - proof
-    - standard
 signatures:
-  computationUuid: "467659fd-9ef7-8a5a-aaf1-7f7f335583ce"
+  computationUuid: "dd392a08-f7b4-87b6-995f-c0707054fbca"
   stages:
     - stage: path
       stageUuid: "e13d5020-8aa5-87c6-95b2-0b452326015a"
@@ -65,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "78669f5e-4c72-8567-a998-440b262b78d7"
     - stage: horo
-      stageUuid: "146a9e87-25d8-85e5-bd4e-2c77e4d4c652"
+      stageUuid: "21631e38-7a45-85af-a10f-8f28997b3f0b"
     - stage: seal
       stageUuid: "c82c2d5e-1639-8cc6-ab9c-fc90112ba29a"
     - stage: uuid
-      stageUuid: "8d7891b0-eba6-8d90-a085-fbbcff11440e"
+      stageUuid: "47ff6ec2-e9d3-88f4-a86c-f578536e782c"
 version: 2
 ---
 # transfer-pricing-adjustments

@@ -2,34 +2,14 @@
 name: sales
 description: "Use when fiscalizing revenue under Наредба Н-18 СУПТО — each sale receives an immutable gapless УНП, is frozen on close (no delete — corrections via сторно reversals), emits sale:closed event with content-uuid tamper-proof hash, covering orders, subscriptions, invoices and POS. The СУПТО sale register."
 atomPath: "fiscal/devices/sales"
-coordinate: "fiscal/devices/sales · 1/base · f59c09e3"
-contentUuid: "8c6c66fc-8849-56ef-88de-b01041ac5b77"
-diamondUuid: "31375be7-3a7b-83a6-8884-e0597d437db1"
-uuid: "f59c09e3-7b7f-8150-95ac-e6d259b79106"
-horo: 1
-bonds:
-  in:
-    - access
-    - accounting
-    - commission
-    - devices
-    - law
-    - opportunity
-    - receipts
-    - standard
-  out:
-    - access
-    - accounting
-    - commission
-    - devices
-    - law
-    - opportunity
-    - receipts
-    - standard
+coordinate: "fiscal/devices/sales · 7/descent · 70a33bdf"
+contentUuid: "80f4c5e0-12e9-5e92-98e8-82f094e423f1"
+diamondUuid: "3518b589-f3c0-852d-a55d-4d8b4c6e3921"
+uuid: "70a33bdf-3cdf-8505-b743-18e64fb23e15"
+horo: 7
 typography:
   partition: fiscal
   bondDegree: 37
-  neighbors: []
 standards:
   - "BG Наредба-Н-18 §СУПТО sale-register · УНП · no-delete · сторно"
   - "IFRS IFRS-15 revenue-from-contracts-with-customers"
@@ -41,33 +21,8 @@ standards:
   - "SOX §404 internal-controls"
   - "US-GAAP ASC-606 revenue-from-contracts-with-customers"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - accounting
-    - law
-    - receipts
-    - standard
-  matrix:
-    - access
-    - accounting
-    - commission
-    - devices
-    - law
-    - opportunity
-    - receipts
-    - standard
-  backlinks:
-    - access
-    - accounting
-    - commission
-    - devices
-    - law
-    - opportunity
-    - receipts
-    - standard
 signatures:
-  computationUuid: "4169e945-8b10-81f7-961d-f5f0d7f3ac6c"
+  computationUuid: "7f82dad3-db3c-882e-a736-55b4f33ed571"
   stages:
     - stage: path
       stageUuid: "41422dd4-5c4d-89cb-9fdb-4a2486ee7d1f"
@@ -78,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "2f2ea5c8-ce39-8223-9cfc-7f5dfccd5ba2"
     - stage: horo
-      stageUuid: "dd61c968-f0d4-85f1-9b85-bc737656589e"
+      stageUuid: "e615b17a-2d21-8c3d-90fd-2632dd233a23"
     - stage: seal
       stageUuid: "b05e8bac-090b-88e6-8fce-5765ee8ccc42"
     - stage: uuid
-      stageUuid: "1ffc168a-9491-870b-8bbb-7b19125fddf1"
+      stageUuid: "04b97cfe-095e-8b06-adfb-97d89deb1dba"
 version: 2
 ---
 # sales

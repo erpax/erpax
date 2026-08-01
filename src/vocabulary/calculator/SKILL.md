@@ -1,77 +1,35 @@
 ---
 name: calculator
 description: "Use when reasoning about calculator as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/calculator
-coordinate: calculator · 1/base · c1a730aa
-contentUuid: "c11ffb33-7c72-51ee-9169-57b3e2ae25b4"
-diamondUuid: "e41d23bb-c0ef-810a-8b4f-12b849dc49d6"
-uuid: "c1a730aa-34b8-8a3b-a9ec-154ec551d021"
-horo: 1
-bonds:
-  in:
-    - calculator
-    - collapse
-    - law
-    - medical
-    - merge
-    - risk
-    - sti
-  out:
-    - calculator
-    - collapse
-    - law
-    - medical
-    - merge
-    - risk
-    - sti
+atomPath: "vocabulary/calculator"
+coordinate: "vocabulary/calculator · 7/descent · 5d573e27"
+contentUuid: "bd76bafb-5758-5a9b-816c-2e9cf16c52a6"
+diamondUuid: "bfba1497-a662-8289-8400-cbb9b236e6f6"
+uuid: "5d573e27-d862-8cbb-b35c-767d1d44e299"
+horo: 7
 typography:
-  partition: calculator
-  bondDegree: 29
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 30
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - medical
-    - merge
-    - risk
-    - sti
-  matrix:
-    - calculator
-    - collapse
-    - law
-    - medical
-    - merge
-    - risk
-    - sti
-  backlinks:
-    - calculator
-    - collapse
-    - law
-    - medical
-    - merge
-    - risk
-    - sti
 signatures:
-  computationUuid: "b3ebff06-6eff-8bd7-a331-7b08af8a62f7"
+  computationUuid: "a17c2c54-0a8a-88f4-bef3-d0c68cf2904c"
   stages:
     - stage: path
-      stageUuid: "9691c134-7fc1-8e2a-86cf-8a97d7ebd9a7"
+      stageUuid: "f00b4bf2-d69a-89af-a358-f33f5141ed28"
     - stage: trinity
-      stageUuid: "f81d84b5-4a4a-88fc-b83e-9464cea13709"
+      stageUuid: "e95fbc43-3e43-8a44-a6ff-d6b078a1fb79"
     - stage: boundary
-      stageUuid: "2f792995-3284-8ef3-818c-b6b8385f4b09"
+      stageUuid: "dde19078-4308-8be0-bfe8-92c54de36a78"
     - stage: links
-      stageUuid: "a31a42fd-2147-8bf5-8abb-e2eab337b5b8"
+      stageUuid: "8b76c998-6e4e-8e5f-81e0-bda3b3ecdfea"
     - stage: horo
-      stageUuid: "4d2a022f-4d2e-8c12-b964-055061e70b4a"
+      stageUuid: "1301f47c-9903-8fdb-983a-d268a7488473"
     - stage: seal
-      stageUuid: "66c0425a-af91-8878-9bcb-a16a7509ca34"
+      stageUuid: "1a93c7ba-6787-8e7d-ae9b-e907ba02bdc3"
     - stage: uuid
-      stageUuid: "906df898-feef-84f5-8fbd-4b16d207c709"
+      stageUuid: "6178595a-7d5d-807a-840f-5af5af238acd"
 version: 2
 ---
 # calculator

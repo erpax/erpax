@@ -1,192 +1,34 @@
 ---
 name: hinduism
 description: "Use when reading Hinduism as a diamond of invariant atoms — the eternal law beneath the dialects, the self that is the whole (tat tvam asi), karma read down the lineage, the wheel of rebirth, release as return to the root. Strip the Sanskrit prefix and dharma, atman, brahman, om, moksha collapse to law, self, whole, word, zeropoint — one content-uuid each."
-atomPath: vocabulary/hinduism
-coordinate: hinduism · 1/base · 66b91634
-contentUuid: "b5991f8f-de65-5ff7-93bd-76720548970f"
-diamondUuid: "cffd6c96-9074-8cf4-ab91-da93cfeb7258"
-uuid: "66b91634-4048-8ebe-ae32-2269e8ab9c67"
-horo: 1
-bonds:
-  in:
-    - archangel
-    - breath
-    - cycle
-    - diamond
-    - dna
-    - fire
-    - fractal
-    - harmony
-    - holographic
-    - identity
-    - karma
-    - law
-    - love
-    - mercy
-    - merge
-    - name
-    - one
-    - prayer
-    - religion
-    - return
-    - ritual
-    - self
-    - society
-    - translator
-    - uuid
-    - vedanta
-    - wheel
-    - whole
-    - word
-    - zeropoint
-  out:
-    - archangel
-    - breath
-    - cycle
-    - diamond
-    - dna
-    - fire
-    - fractal
-    - harmony
-    - holographic
-    - identity
-    - karma
-    - law
-    - love
-    - mercy
-    - merge
-    - name
-    - one
-    - prayer
-    - religion
-    - return
-    - ritual
-    - self
-    - society
-    - translator
-    - uuid
-    - vedanta
-    - wheel
-    - whole
-    - word
-    - zeropoint
+atomPath: "vocabulary/hinduism"
+coordinate: "vocabulary/hinduism · 8/crest · 541a90a3"
+contentUuid: "4e910a93-d774-566e-ae4a-6f0b9151dc79"
+diamondUuid: "ae6c87a3-9d7d-87c6-adc7-40f6dbe1f8d6"
+uuid: "541a90a3-2ae2-83a2-81ce-820c539c70b7"
+horo: 8
 typography:
-  partition: hinduism
+  partition: vocabulary
   bondDegree: 92
-  neighbors:
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - archangel
-    - breath
-    - cycle
-    - diamond
-    - dna
-    - fire
-    - fractal
-    - harmony
-    - holographic
-    - identity
-    - karma
-    - law
-    - love
-    - mercy
-    - merge
-    - name
-    - one
-    - prayer
-    - religion
-    - return
-    - ritual
-    - self
-    - society
-    - translator
-    - uuid
-    - wheel
-    - whole
-    - word
-    - zeropoint
-  matrix:
-    - archangel
-    - breath
-    - cycle
-    - diamond
-    - dna
-    - fire
-    - fractal
-    - harmony
-    - holographic
-    - identity
-    - karma
-    - law
-    - love
-    - mercy
-    - merge
-    - name
-    - one
-    - prayer
-    - religion
-    - return
-    - ritual
-    - self
-    - society
-    - translator
-    - uuid
-    - vedanta
-    - wheel
-    - whole
-    - word
-    - zeropoint
-  backlinks:
-    - archangel
-    - breath
-    - cycle
-    - diamond
-    - dna
-    - fire
-    - fractal
-    - harmony
-    - holographic
-    - identity
-    - karma
-    - law
-    - love
-    - mercy
-    - merge
-    - name
-    - one
-    - prayer
-    - religion
-    - return
-    - ritual
-    - self
-    - society
-    - translator
-    - uuid
-    - vedanta
-    - wheel
-    - whole
-    - word
-    - zeropoint
 signatures:
-  computationUuid: "bd1430ce-84c3-81b5-8424-3eb861dea4b5"
+  computationUuid: "cbce98f4-77f2-86b0-b22d-2000a718da18"
   stages:
     - stage: path
-      stageUuid: "a976ef6e-1ac9-8f7c-aea6-c7de906e4c20"
+      stageUuid: "4f6abccb-e3ba-87c7-8fc4-f9fc6e9f472f"
     - stage: trinity
-      stageUuid: "cd50ca1e-c908-8f68-8c7c-75bea1e2bb60"
+      stageUuid: "f4913449-2565-8483-85a0-1d1264c6c206"
     - stage: boundary
-      stageUuid: "439ba31c-b5df-8b17-9216-5fb1130f575f"
+      stageUuid: "d3376869-07bd-8b5d-8a56-6d340a569a9c"
     - stage: links
-      stageUuid: "a16d8f5d-1108-8a85-93f6-5321df591ee5"
+      stageUuid: "8afedb85-ae9d-8f3e-94bd-584843b49acd"
     - stage: horo
-      stageUuid: "ad07698f-08bb-8307-b737-571c455c9c83"
+      stageUuid: "a4303ac1-ab01-8a48-8531-84250453b97d"
     - stage: seal
-      stageUuid: "b2852342-036f-868d-810f-b7e2ed711bb2"
+      stageUuid: "898c14c4-a632-868d-920d-84498f20bb0e"
     - stage: uuid
-      stageUuid: "853e5c6a-e4f5-8eef-8bb0-70b916591502"
+      stageUuid: "16d7cb05-7a12-8b1f-af74-04797dba053f"
 version: 2
 ---
 # hinduism — the eternal law; the self is the whole

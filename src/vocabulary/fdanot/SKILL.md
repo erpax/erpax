@@ -1,63 +1,35 @@
 ---
 name: fdanot
 description: "Use when reasoning about fdanot as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/fdanot
-coordinate: fdanot · 8/crest · 39f29096
-contentUuid: "ef04b9a2-4a85-5e5a-bbac-4aaed0d761da"
-diamondUuid: "68d3c7ba-df8e-8d2e-aa11-494b81c8b4a3"
-uuid: "39f29096-687b-8ad6-b71b-3c51bd651a96"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/fdanot"
+coordinate: "vocabulary/fdanot · 2/share · 33cee601"
+contentUuid: "6b92ac99-9f80-53a4-a48a-3cbc8cf12cc4"
+diamondUuid: "53a2d7d0-e9e1-8165-bae7-65621421258b"
+uuid: "33cee601-19ee-8b82-af60-a676663ddad3"
+horo: 2
 typography:
-  partition: fdanot
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "3e190254-672a-8d0e-b950-8204e16f5c2b"
+  computationUuid: "44e0d887-03d8-86c9-8258-3de3ad0aea3f"
   stages:
     - stage: path
-      stageUuid: "64429a6b-5776-87a4-8aba-5ddc4d6eea11"
+      stageUuid: "89fa5cab-1ccb-8818-8acb-81cf2d95f992"
     - stage: trinity
-      stageUuid: "54a447d2-99cd-891b-a826-88dc7df3d3cf"
+      stageUuid: "323f1563-cae3-8cd1-aac8-ed73cdae2bef"
     - stage: boundary
-      stageUuid: "e199323b-e17e-8193-8bdd-f87624fb820f"
+      stageUuid: "555f0bea-bcac-81e5-9a9f-a813c0b369e6"
     - stage: links
-      stageUuid: "afd387ce-0154-8196-bbe9-29af87e77ede"
+      stageUuid: "20054bd7-fc39-8ff0-9044-2fdd2e2b6df4"
     - stage: horo
-      stageUuid: "c6549c2e-eb91-80a5-9605-b4a111315f1e"
+      stageUuid: "a4ebf80b-3c14-888d-8b4e-64349ed56039"
     - stage: seal
-      stageUuid: "52413737-8846-8e4b-95ab-7151799887fd"
+      stageUuid: "73692b98-94ac-89cb-a0d6-3a626e518f3a"
     - stage: uuid
-      stageUuid: "17f33518-572f-8b97-a887-d96e2ab97565"
+      stageUuid: "5450f042-9516-8d6a-bb57-50fecba66a7d"
 version: 2
 ---
 # fdanot

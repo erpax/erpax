@@ -2,62 +2,19 @@
 name: salon
 description: "Use when reasoning about salon as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: salon
-coordinate: salon · 7/descent · a8b3ac98
-contentUuid: "0a0f701a-d0eb-570e-b4f2-ca2e97ef164f"
-diamondUuid: "1fd411dd-a38c-88e9-8d38-f24935f71aa4"
-uuid: "a8b3ac98-b767-8b36-8d45-87353c4c9555"
-horo: 7
-bonds:
-  in:
-    - beauty
-    - collapse
-    - hair
-    - law
-    - merge
-    - nail
-    - sti
-  out:
-    - beauty
-    - collapse
-    - hair
-    - law
-    - merge
-    - nail
-    - sti
+coordinate: "salon · 8/crest · 58788aa0"
+contentUuid: "c3a70e72-259a-5a22-81e7-2aa6a83fdf6e"
+diamondUuid: "2a951aca-f799-8d27-a1a9-e3e19dcc098c"
+uuid: "58788aa0-5198-8cd1-9eee-130ee1ef0c02"
+horo: 8
 typography:
   partition: salon
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - beauty
-    - collapse
-    - hair
-    - law
-    - merge
-    - nail
-    - sti
-  matrix:
-    - beauty
-    - collapse
-    - hair
-    - law
-    - merge
-    - nail
-    - sti
-  backlinks:
-    - beauty
-    - collapse
-    - hair
-    - law
-    - merge
-    - nail
-    - sti
 signatures:
-  computationUuid: "65e9804a-bf6e-8103-a4f9-78954d4fa431"
+  computationUuid: "fb709a74-75e7-877c-9ce0-08145659d2e7"
   stages:
     - stage: path
       stageUuid: "1e3fe668-1a78-8ea5-83c5-e7fc953bdc68"
@@ -68,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "db909ca8-8a6c-87bc-81c2-ce0027eff055"
     - stage: horo
-      stageUuid: "9b4b96e5-600a-8cd7-ad53-25058cc3205a"
+      stageUuid: "8c250fc0-f6fa-8837-9518-c29c533bf91f"
     - stage: seal
-      stageUuid: "1e85abed-8a0f-8346-84ab-5a35511b917a"
+      stageUuid: "9d09dd6d-5357-8e77-85e3-365fa676e6bd"
     - stage: uuid
-      stageUuid: "b7a99c5d-32e5-80a5-a8a6-c53ab399f9f8"
+      stageUuid: "75a36760-3418-8840-86d0-dbbbbf74afce"
 version: 2
 ---
 # salon

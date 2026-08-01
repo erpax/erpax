@@ -1,113 +1,19 @@
 ---
 name: reference
 description: "Use when verifying erpax observes ITSELF — the platform's own genome must yield ≥1 collection, chain, agent, and standard, the erpax-platform role, and the meta agents (Conservation Law 23, checkErpaxObservesItself). The self reaching into its own root; the genome is the debit, the observation the credit."
-atomPath: self/reference
-coordinate: self/reference · 5/round · 673edd25
-contentUuid: "eccd1848-4082-566b-a414-193569124f91"
-diamondUuid: "17f79209-62cb-83cb-8adb-b24b045d9b80"
-uuid: "673edd25-11e8-8ae4-a911-07fa6547bc0c"
-horo: 5
-bonds:
-  in:
-    - api
-    - collapse
-    - content
-    - definition
-    - dependency
-    - law
-    - mapping
-    - merge
-    - practice
-    - prayer
-    - quantity
-    - reference
-    - self
-    - sti
-    - time
-    - value
-  out:
-    - api
-    - collapse
-    - content
-    - definition
-    - dependency
-    - law
-    - mapping
-    - merge
-    - practice
-    - prayer
-    - quantity
-    - reference
-    - sti
-    - time
-    - value
+atomPath: "self/reference"
+coordinate: "self/reference · 4/weave · afda93de"
+contentUuid: "fecedf9b-9418-57e1-8407-8639beab48ed"
+diamondUuid: "dc48401b-2038-8435-80a4-d66ea0a1bca6"
+uuid: "afda93de-b096-8e58-af4c-164bc042f08e"
+horo: 4
 typography:
   partition: self
-  bondDegree: 77
-  neighbors:
-    - agent
-    - diamond
+  bondDegree: 81
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agent
-    - akashic
-    - cloning
-    - coil
-    - diamond
-    - fs
-    - gate
-    - generate
-    - github
-    - holographic
-    - identity
-    - law
-    - mcp
-    - part
-    - reference
-    - role
-    - seal
-    - self
-    - society
-    - standards
-    - thought
-    - uuid
-    - whole
-  matrix:
-    - api
-    - collapse
-    - content
-    - definition
-    - dependency
-    - law
-    - mapping
-    - merge
-    - practice
-    - prayer
-    - quantity
-    - reference
-    - sti
-    - time
-    - value
-  backlinks:
-    - api
-    - collapse
-    - content
-    - definition
-    - dependency
-    - law
-    - mapping
-    - merge
-    - practice
-    - prayer
-    - quantity
-    - reference
-    - sti
-    - time
-    - value
 signatures:
-  computationUuid: "98284e1d-2f43-87a8-858c-b320dc0c5a1b"
+  computationUuid: "57b51847-14f0-8a94-82e3-4234b2e4f93c"
   stages:
     - stage: path
       stageUuid: "3523af6a-31aa-87ac-829c-f19895b8c94b"
@@ -118,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f89c44be-ae7a-8da7-8fd9-a7b327358cf4"
     - stage: horo
-      stageUuid: "a1bcdfe5-5623-895b-94da-f0b58f5d5db7"
+      stageUuid: "015ae1da-1eb1-82de-a6ff-ce6e14c751da"
     - stage: seal
-      stageUuid: "88aeaa0c-81aa-8bc7-b46a-ab182e32d679"
+      stageUuid: "eafabeb1-af05-88cb-9735-a0b53b02ff13"
     - stage: uuid
-      stageUuid: "a66d2bb8-f897-8488-9dfb-a165f2a64cd8"
+      stageUuid: "ae2c2f37-e708-80e9-b05f-f75112b285b0"
 version: 2
 ---
 # self-reference — the self observes itself (under [[self]])

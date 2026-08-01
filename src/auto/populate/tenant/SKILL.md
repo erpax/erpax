@@ -2,56 +2,19 @@
 name: tenant
 description: "Use when auto-populating the multi-tenant tenant field from the request user before validation — a beforeValidate hook that copies req.user.tenants[0].tenant onto the incoming data for tenant isolation."
 atomPath: "auto/populate/tenant"
-coordinate: "auto/populate/tenant · 2/share · 65597364"
-contentUuid: "626e7ed9-b882-569f-ac1d-f2a7bdc0ef97"
-diamondUuid: "8357ad2d-7375-8d63-8d83-e74cc2a00a95"
-uuid: "65597364-6af4-86a1-a5b4-cb29b301f573"
+coordinate: "auto/populate/tenant · 2/share · f7787efa"
+contentUuid: "a5049b15-06a8-5bbd-9998-ef8b11321b94"
+diamondUuid: "cf593392-7921-83ac-af3a-c1d07b7fb7d7"
+uuid: "f7787efa-95fb-8254-b376-738894346a88"
 horo: 2
-bonds:
-  in:
-    - balance
-    - law
-    - organization
-    - research
-    - tenant
-    - tenants
-  out:
-    - balance
-    - law
-    - organization
-    - research
-    - tenant
-    - tenants
 typography:
   partition: auto
   bondDegree: 30
-  neighbors: []
 standards:
   - "SOC-2 CC4.1 monitoring-and-evaluation"
 bindings: []
-neighbors:
-  wikilink:
-    - auto
-    - hooks
-    - law
-    - tenant
-    - user
-  matrix:
-    - balance
-    - law
-    - organization
-    - research
-    - tenant
-    - tenants
-  backlinks:
-    - balance
-    - law
-    - organization
-    - research
-    - tenant
-    - tenants
 signatures:
-  computationUuid: "dfa64bc6-f2b8-8257-8698-162ce430b1fa"
+  computationUuid: "4dafba48-ca12-8542-8912-656ee9f38e3f"
   stages:
     - stage: path
       stageUuid: "50ef0294-610a-853e-99dc-12b2938cc581"
@@ -62,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2ed099af-ac70-8709-961c-7978f11d8617"
     - stage: horo
-      stageUuid: "f6f26c66-e187-85ff-8bc0-74a631416d67"
+      stageUuid: "db6394e5-bd5f-8143-beed-f9d596dffbec"
     - stage: seal
       stageUuid: "38ae8a87-9312-83d9-b316-aa86479d8d23"
     - stage: uuid
-      stageUuid: "d94282fc-7168-8e53-b43e-749bd51e5179"
+      stageUuid: "e0174d2b-a91f-81e3-a732-2608a3112c21"
 version: 2
 ---
 # auto/populate/tenant — tenant isolation from the request user

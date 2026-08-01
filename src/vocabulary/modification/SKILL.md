@@ -1,68 +1,35 @@
 ---
 name: modification
 description: "Use when reasoning about modification as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/modification
-coordinate: modification · 4/weave · ba70eca0
-contentUuid: "2439619f-aab5-5404-b78d-e3132c6e9478"
-diamondUuid: "a2cb210f-9a69-84f9-bbac-cb4b8121ff30"
-uuid: "ba70eca0-26b2-8ccb-a686-a1b99540f428"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - lifestyle
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - lifestyle
-    - merge
-    - sti
+atomPath: "vocabulary/modification"
+coordinate: "vocabulary/modification · 2/share · e49248df"
+contentUuid: "7ef18cb2-111d-5601-9b58-e5e62a8845c2"
+diamondUuid: "973784dd-71af-8124-92b9-cc0afcbb7e6b"
+uuid: "e49248df-f9b2-8144-ae1c-c327c6c3b9b8"
+horo: 2
 typography:
-  partition: modification
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - lifestyle
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - lifestyle
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - lifestyle
-    - merge
-    - sti
 signatures:
-  computationUuid: "de4fc573-64e0-83c2-a030-1d393b350d02"
+  computationUuid: "bccc90ba-0236-8004-bdf6-ffb9247df832"
   stages:
     - stage: path
-      stageUuid: "04ecb4e9-be17-8ad0-8c6d-8f2763241fb4"
+      stageUuid: "569f2745-e72f-8fca-b8a2-d8dedb06b2c6"
     - stage: trinity
-      stageUuid: "a343dcfe-c90f-8644-8baa-d7d30439fb78"
+      stageUuid: "b9068244-f260-8b64-abc2-72b96761fb1e"
     - stage: boundary
-      stageUuid: "1622b86f-1e61-8bea-807a-b023c45266c0"
+      stageUuid: "5000f0af-6ef5-87f3-a794-0d4144df8238"
     - stage: links
-      stageUuid: "7747362a-51bf-84bd-bb78-b52e659c5fd2"
+      stageUuid: "31478bbb-cece-81e8-b607-0c9f713a8902"
     - stage: horo
-      stageUuid: "e1ac08dd-3a4d-88ad-85ca-243f11046ef8"
+      stageUuid: "12187c9b-eacb-84cb-96c7-ce60cb6cef21"
     - stage: seal
-      stageUuid: "39008a80-02fe-82de-a2c0-a3d63504c138"
+      stageUuid: "215c853e-e12b-8201-8f33-6498d630bbfa"
     - stage: uuid
-      stageUuid: "fd266feb-748d-8fbb-afa1-f078f1447eee"
+      stageUuid: "59770362-838d-8d5a-9167-a4fd0304a24b"
 version: 2
 ---
 # modification

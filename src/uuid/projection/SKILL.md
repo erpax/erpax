@@ -1,94 +1,23 @@
 ---
 name: projection
 description: "Use when content, search, locale, version, or CSS colour must agree about what a record IS — they all DRY-derive from ONE content projection through the content-uuid. The uuid singularity realised: project(record) returns identity (uuid), searchable text (multi-search), and a deterministic colour (CSS) from the same bytes; per-locale content gives the per-locale uuid, and a version is the uuid in time."
-atomPath: uuid/projection
-coordinate: uuid/projection · 5/round · 29ca3cd8
-contentUuid: "b9609aa2-c9d5-5e69-977e-700ab4e57748"
-diamondUuid: "82ffd132-0743-8cc1-8c33-71fc01533bce"
-uuid: "29ca3cd8-842e-8baf-a5d9-50baa818592d"
-horo: 5
-bonds:
-  in:
-    - anchor
-    - beyond
-    - cost
-    - entry
-    - give
-    - identity
-    - law
-    - localize
-    - merge
-    - proof
-    - take
-    - torus
-    - uuid
-    - zeropoint
-  out:
-    - anchor
-    - beyond
-    - cost
-    - entry
-    - give
-    - identity
-    - law
-    - localize
-    - merge
-    - proof
-    - take
-    - torus
-    - uuid
-    - zeropoint
+atomPath: "uuid/projection"
+coordinate: "uuid/projection · 1/base · 3e1d15b4"
+contentUuid: "0f1b6ea0-0bf2-56ff-9317-7bfe6f09acea"
+diamondUuid: "1f83c4f2-3b09-8aca-a50b-c4fb455e53da"
+uuid: "3e1d15b4-4ccc-86e3-bb0c-cea8b6fbc4af"
+horo: 1
 typography:
   partition: uuid
   bondDegree: 53
-  neighbors: []
 standards:
   - CSS Color 4 hsl() (the colour facet)
   - "RFC 9562 §5.8 content-addressed uuidv8 (the identity the facets hang on)"
+  - "RFC 9562 §5.8 content-addressed uuidv8 (the identity the facets hang on)`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - all
-    - history
-    - holographic
-    - identity
-    - law
-    - localize
-    - merge
-    - uuid
-    - version
-  matrix:
-    - anchor
-    - beyond
-    - cost
-    - entry
-    - give
-    - identity
-    - law
-    - localize
-    - merge
-    - proof
-    - take
-    - torus
-    - uuid
-    - zeropoint
-  backlinks:
-    - anchor
-    - beyond
-    - cost
-    - entry
-    - give
-    - identity
-    - law
-    - localize
-    - merge
-    - proof
-    - take
-    - torus
-    - uuid
-    - zeropoint
 signatures:
-  computationUuid: "626cbb66-d4e4-872f-b901-954e1dd35e73"
+  computationUuid: "b040e18d-b25f-83c4-9654-b661774f5a0b"
   stages:
     - stage: path
       stageUuid: "ab1a67b6-5f8b-8120-b6d8-f2186cc21de3"
@@ -99,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "0a9b733b-5d09-8f39-ac71-bc3eda121248"
     - stage: horo
-      stageUuid: "35dd9763-80dc-860d-88c6-27e1fa7f64c8"
+      stageUuid: "7e27cf1a-cd2b-8fc3-814a-ecf9f6c6bbe5"
     - stage: seal
       stageUuid: "74695118-3d4e-8a33-aae7-c857b38f5081"
     - stage: uuid
-      stageUuid: "817b1037-2aa5-8298-b31f-012115c2d572"
+      stageUuid: "0c5fbcfa-bc9f-821c-b558-4ef917c4f11a"
 version: 2
 ---
 # projection — the uuid singularity (content → uuid → search · locale · version · css)

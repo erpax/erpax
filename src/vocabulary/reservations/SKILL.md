@@ -1,68 +1,35 @@
 ---
 name: reservations
 description: "Use when reasoning about reservations as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/reservations
-coordinate: reservations · 8/crest · f7eeed81
-contentUuid: "7dad103b-1968-5694-908a-7338a24f759d"
-diamondUuid: "8e6fa9f9-9f14-8fa0-9757-6ece67d0dba1"
-uuid: "f7eeed81-ca2f-8500-aec5-143e0d42a769"
-horo: 8
-bonds:
-  in:
-    - accepts
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - accepts
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/reservations"
+coordinate: "vocabulary/reservations · 5/round · d4ba1993"
+contentUuid: "092b6ab7-8d24-5baa-a051-43d21fc3b5a8"
+diamondUuid: "cb0b506a-7c91-87dd-ab91-12ac2e446852"
+uuid: "d4ba1993-135f-8175-9ed8-3b0fd72830b2"
+horo: 5
 typography:
-  partition: reservations
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - accepts
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - accepts
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - accepts
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "e5b2452c-2771-8959-b49e-e1e345d9f314"
+  computationUuid: "c9fe2075-fdff-8f92-a48b-c8261e02cc91"
   stages:
     - stage: path
-      stageUuid: "be98626d-972a-811f-937a-ad89ca84f2f9"
+      stageUuid: "bdd33c34-4cb4-8a73-8c0c-4ff73e0355ae"
     - stage: trinity
-      stageUuid: "bd6039a5-05b4-848b-b704-3ddbf0022e2a"
+      stageUuid: "7a459d2c-f084-8f48-87eb-d694430f08a5"
     - stage: boundary
-      stageUuid: "471af4b4-5b91-8e9d-b00c-c86cfd1b2c7d"
+      stageUuid: "00090124-8b5a-8baa-bd39-45a0c21f22a6"
     - stage: links
-      stageUuid: "539d0337-1f73-8506-a1b0-cefd6b213ffc"
+      stageUuid: "f618e240-8218-859c-a4cc-95c8d3418e51"
     - stage: horo
-      stageUuid: "aefe8702-7073-8758-82b7-5cb9ca1c6d2a"
+      stageUuid: "b2899196-b538-88b4-aafc-783ad92d3f86"
     - stage: seal
-      stageUuid: "6c01b2c2-f456-80cc-bcac-9f9aeb5c7ffc"
+      stageUuid: "272d13cd-c5a7-87bd-84f5-546ef10a92b7"
     - stage: uuid
-      stageUuid: "cdb270ea-c9e8-8a87-8f21-2ac12bc71a5a"
+      stageUuid: "92cde468-74ee-8c88-bb8a-d8ea8f254f1f"
 version: 2
 ---
 # reservations

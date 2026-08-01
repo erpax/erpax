@@ -1,107 +1,34 @@
 ---
 name: pasture
 description: "Use when modelling the managed forage land livestock graze — pasture (improved/tame forage) and rangeland (native), divided into paddocks for rotational grazing. The grazing land-unit; the livestock counterpart of a crop field, its productivity a fertility/capacity measure."
-atomPath: vocabulary/pasture
-coordinate: pasture · 8/crest · 2a9ac8a7
-contentUuid: "77cbe2f7-3f9e-5727-9686-dd0dfbacfbc9"
-diamondUuid: "e81e2656-0ca3-8dbb-aa40-edf244c4c693"
-uuid: "2a9ac8a7-0ccb-858f-873d-dc24aac0fceb"
-horo: 8
-bonds:
-  in:
-    - allocation
-    - bottleneck
-    - capacity
-    - crop
-    - fertility
-    - grazing
-    - herd
-    - law
-    - leases
-    - livestock
-    - manure
-    - rotation
-    - season
-  out:
-    - allocation
-    - bottleneck
-    - capacity
-    - crop
-    - fertility
-    - grazing
-    - herd
-    - law
-    - leases
-    - livestock
-    - manure
-    - rotation
-    - season
+atomPath: "vocabulary/pasture"
+coordinate: "vocabulary/pasture · 5/round · 0d9a5ee1"
+contentUuid: "3047a26f-db18-5d5e-8648-8630dd55a1f0"
+diamondUuid: "cbd81dab-aea9-8f03-b877-4eec848d1ab8"
+uuid: "0d9a5ee1-19d5-8aca-8a15-e81f5cc7da80"
+horo: 5
 typography:
-  partition: pasture
+  partition: vocabulary
   bondDegree: 42
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - allocation
-    - bottleneck
-    - capacity
-    - crop
-    - fertility
-    - grazing
-    - herd
-    - law
-    - leases
-    - livestock
-    - manure
-    - rotation
-    - season
-  matrix:
-    - allocation
-    - bottleneck
-    - capacity
-    - crop
-    - fertility
-    - grazing
-    - herd
-    - law
-    - leases
-    - livestock
-    - manure
-    - rotation
-    - season
-  backlinks:
-    - allocation
-    - bottleneck
-    - capacity
-    - crop
-    - fertility
-    - grazing
-    - herd
-    - law
-    - leases
-    - livestock
-    - manure
-    - rotation
-    - season
 signatures:
-  computationUuid: "420132f5-cf35-8a8f-babe-bfcf89e03106"
+  computationUuid: "84cfe091-5e7c-8299-976d-549e6b247ee8"
   stages:
     - stage: path
-      stageUuid: "26ff3bff-b9bf-8f4e-92c0-af8b61813e36"
+      stageUuid: "881865bd-2ccf-8151-8ef0-e067d0668a2c"
     - stage: trinity
-      stageUuid: "56796e0a-2515-8d63-8479-2e2c0c3eaa6c"
+      stageUuid: "16807694-5f83-8c9f-8469-ab5d59e780c6"
     - stage: boundary
-      stageUuid: "5675207c-91c0-8f1d-a833-b39a7ac86bb0"
+      stageUuid: "5ad28d56-c13b-8345-8fc2-40da57583509"
     - stage: links
-      stageUuid: "984cb19b-700e-8ca3-811d-5607b5033876"
+      stageUuid: "3b141022-61b3-8ac8-9855-c5581e22b189"
     - stage: horo
-      stageUuid: "1fd1589e-c4e5-825f-9cb7-3c9a7a0a4c95"
+      stageUuid: "fa1f6790-2c9a-8e35-9bf3-3b11b92dca09"
     - stage: seal
-      stageUuid: "78a78f1e-c4a4-8c97-bba9-85458ed90ddf"
+      stageUuid: "705ad057-2470-8f4f-a1cf-b33da6babb3b"
     - stage: uuid
-      stageUuid: "cab70238-182d-8274-8305-99532cee9c9e"
+      stageUuid: "a0d5ca1f-f4ed-8a73-b940-7b8b46fe64fc"
 version: 2
 ---
 # pasture — the managed forage land livestock graze

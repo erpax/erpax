@@ -1,78 +1,35 @@
 ---
 name: mandate
 description: "Use when reasoning about mandate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/mandate
-coordinate: mandate · 5/round · 1ed748f9
-contentUuid: "a632450c-d5e9-5705-a663-0b9a288f038b"
-diamondUuid: "900dc0e5-cef2-84f1-8777-5643cf1d8112"
-uuid: "1ed748f9-841b-86b4-881d-96f67eab636d"
+atomPath: "vocabulary/mandate"
+coordinate: "vocabulary/mandate · 5/round · d01e234a"
+contentUuid: "571397e5-56c8-5ba3-a77f-5f69f437501d"
+diamondUuid: "214662e4-8e4d-8015-b9f9-711cf5bcf0fb"
+uuid: "d01e234a-21c2-8605-975b-e0bddc0a9081"
 horo: 5
-bonds:
-  in:
-    - amount
-    - collapse
-    - law
-    - loan
-    - merge
-    - mortgage
-    - sti
-  out:
-    - amount
-    - collapse
-    - law
-    - loan
-    - merge
-    - mortgage
-    - sti
 typography:
-  partition: mandate
+  partition: vocabulary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - amount
-    - collapse
-    - law
-    - loan
-    - merge
-    - mortgage
-    - sti
-  matrix:
-    - amount
-    - collapse
-    - law
-    - loan
-    - merge
-    - mortgage
-    - sti
-  backlinks:
-    - amount
-    - collapse
-    - law
-    - loan
-    - merge
-    - mortgage
-    - sti
 signatures:
-  computationUuid: "73e066be-830f-8637-8f90-96a107b145c2"
+  computationUuid: "b95fa1e1-8eb5-8044-9415-9909787f0faa"
   stages:
     - stage: path
-      stageUuid: "2ca88d81-c49d-8ef0-9b5e-7faff9e148df"
+      stageUuid: "86515b3b-29e1-87c2-92bc-400df98614c7"
     - stage: trinity
-      stageUuid: "e2897617-2d92-8790-b553-81dd45728016"
+      stageUuid: "23a7b728-ba24-81eb-98f9-96929ba9e407"
     - stage: boundary
-      stageUuid: "689f7e4d-bdd9-84e8-88d2-e50d4d98dcd8"
+      stageUuid: "7c0b917c-3b1c-8415-9157-b0cf9d9cf410"
     - stage: links
-      stageUuid: "2c8209d0-6287-8083-9340-daa2d353d8b1"
+      stageUuid: "d955b9be-1e23-8fe9-a2ce-6be7087765bb"
     - stage: horo
-      stageUuid: "5df073cc-a9a8-845e-b0d7-e1a541cb837b"
+      stageUuid: "3d55e030-5836-8ca1-8d80-0101c30af02a"
     - stage: seal
-      stageUuid: "7fb403bb-70a7-85a7-b7a1-5447dd5a3411"
+      stageUuid: "c9bc6a28-0b11-8c81-b239-88e6c09c3af2"
     - stage: uuid
-      stageUuid: "ca33b8f0-ae07-88ad-ae65-1dfbf938b61b"
+      stageUuid: "15a6b390-13dc-8e79-aced-80bfd5c9d214"
 version: 2
 ---
 # mandate

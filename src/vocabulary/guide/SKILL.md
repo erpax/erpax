@@ -1,53 +1,35 @@
 ---
 name: guide
 description: "Use when reasoning about guide — Guide is a page or article that recommends specific products or services, or aspects of a thing for a user to consider. A Guide may represent a Buying Guide and detail aspects of p"
-atomPath: vocabulary/guide
-coordinate: guide · 4/weave · 9eb16c08
-contentUuid: "af07c2db-9986-5e8f-aae0-b44387f3778d"
-diamondUuid: "bb3d4b14-94f6-8001-89e9-fb9ed47dd799"
-uuid: "9eb16c08-d22e-83cb-8aa8-bfa70e380930"
+atomPath: "vocabulary/guide"
+coordinate: "vocabulary/guide · 4/weave · f8ef7858"
+contentUuid: "73de3b12-350d-51a9-989e-029124939337"
+diamondUuid: "e6631805-ec58-86c6-ae72-3fb55fbb5bb7"
+uuid: "f8ef7858-4e95-820f-b396-04bb180699b6"
 horo: 4
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
 typography:
-  partition: guide
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "491e6996-1151-863e-bcca-ac79d0fe7d03"
+  computationUuid: "6995cbff-99d3-85c1-bfa4-cbd7ce56e828"
   stages:
     - stage: path
-      stageUuid: "159e1496-f492-8ef1-b295-db5b5e5f3535"
+      stageUuid: "0d40bb44-9793-8a02-b113-2b632d3196ab"
     - stage: trinity
-      stageUuid: "f8dd0211-9155-86ee-a337-3655bade0a63"
+      stageUuid: "2efa3cc0-a11f-895a-a487-0fd927fe19ee"
     - stage: boundary
-      stageUuid: "f077175c-8fc2-8e10-9098-f3421141adcc"
+      stageUuid: "a837f244-128d-889e-95ab-06ecd48e4c07"
     - stage: links
-      stageUuid: "f765bf7f-72f4-8403-86bd-5fd25864efda"
+      stageUuid: "b22412ef-933b-82a5-99dc-0c288cf16780"
     - stage: horo
-      stageUuid: "d83c9ff5-813a-8e09-a8d3-89b5837f4214"
+      stageUuid: "d7b0a2c3-1169-89fd-9448-09ab00f188e3"
     - stage: seal
-      stageUuid: "9d78c65f-f489-820c-ad14-dd744d24d107"
+      stageUuid: "efdc7786-4136-8538-9fe5-d1b35386a52a"
     - stage: uuid
-      stageUuid: "b56eee12-9e02-8d91-853e-e066d635d8b7"
+      stageUuid: "e42179de-3b14-8553-bbae-1ee6800aa69d"
 version: 2
 ---
 # guide

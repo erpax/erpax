@@ -1,99 +1,35 @@
 ---
 name: math
 description: "Use when reasoning about math as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/math
-coordinate: math · 8/crest · 700c7282
-contentUuid: "ba9587da-dc3d-583f-9127-8f6331c79dac"
-diamondUuid: "154e6b84-2a4c-87c8-a6b6-ac78b4a8dbaf"
-uuid: "700c7282-0c03-8a92-b4be-1157946aee3e"
-horo: 8
-bonds:
-  in:
-    - action
-    - calculation
-    - calculator
-    - collapse
-    - expression
-    - law
-    - math
-    - merge
-    - science
-    - solve
-    - solver
-    - sti
-  out:
-    - action
-    - calculation
-    - calculator
-    - collapse
-    - expression
-    - law
-    - math
-    - merge
-    - science
-    - solve
-    - solver
-    - sti
+atomPath: "vocabulary/math"
+coordinate: "vocabulary/math · 7/descent · 8e8e275e"
+contentUuid: "416df714-7401-57c9-b75b-953c0802a6ec"
+diamondUuid: "01b198b6-20fe-8a4e-a9aa-18f22dc3934a"
+uuid: "8e8e275e-a399-8cba-8097-fcecd855fccd"
+horo: 7
 typography:
-  partition: math
-  bondDegree: 55
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 75
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - expression
-    - law
-    - merge
-    - solve
-    - solver
-    - sti
-  matrix:
-    - action
-    - calculation
-    - calculator
-    - collapse
-    - expression
-    - law
-    - math
-    - merge
-    - science
-    - solve
-    - solver
-    - sti
-  backlinks:
-    - action
-    - calculation
-    - calculator
-    - collapse
-    - expression
-    - law
-    - math
-    - merge
-    - science
-    - solve
-    - solver
-    - sti
 signatures:
-  computationUuid: "c115edd4-e1cb-89f6-8de6-14ee8fdbf4b1"
+  computationUuid: "a5b8dc3e-36f0-842a-9820-54f40c8a23ec"
   stages:
     - stage: path
-      stageUuid: "0478b1d1-397b-84b0-aed7-d8e0174fa787"
+      stageUuid: "821782d0-5944-8e1a-a01a-66ce4b6bb187"
     - stage: trinity
-      stageUuid: "50658af8-2ead-81db-a5c4-901e97bfe627"
+      stageUuid: "94bfc21b-2dde-828d-99fa-fe1943b344db"
     - stage: boundary
-      stageUuid: "49ca3c68-5913-8a0f-a2fa-3ddb8a582dea"
+      stageUuid: "70baaec9-d1a6-8578-b972-361bcc42dfa7"
     - stage: links
-      stageUuid: "f974a68d-5fb8-8520-8347-b1bc1463b75a"
+      stageUuid: "195ee980-e498-8adc-8f7a-44c93aaaf419"
     - stage: horo
-      stageUuid: "37031846-b2b0-8f2c-b9a0-a412e5eca3f2"
+      stageUuid: "7a0d1a12-7050-81af-98d4-66973c147e4b"
     - stage: seal
-      stageUuid: "0d2ed069-ed86-82a2-911d-6b5ef44945a7"
+      stageUuid: "4781b264-ad6f-8d3e-84ad-f4b3d55f0b6d"
     - stage: uuid
-      stageUuid: "1e8bc190-1b92-828a-ad89-8a2553f4bb1e"
+      stageUuid: "f9b665ee-5034-8576-93a3-2e77d48c0d80"
 version: 2
 ---
 # math

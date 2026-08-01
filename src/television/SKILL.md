@@ -2,57 +2,19 @@
 name: television
 description: "Use when reasoning about television as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: television
-coordinate: television · 5/round · 717e79bb
-contentUuid: "0e9b8c55-ab14-5b88-a4f7-f8f857c73ca5"
-diamondUuid: "ff347a9b-6694-8525-8f3a-7c5d66bbd981"
-uuid: "717e79bb-a1b2-8eb3-bf22-e9675cd81dc6"
+coordinate: "television · 5/round · 3ae40bbf"
+contentUuid: "835123e4-2c1d-5ea1-81e6-88c947f42ecf"
+diamondUuid: "fed9891b-b793-8a4f-a83b-a2a4770b4c9a"
+uuid: "3ae40bbf-5a57-8d14-a85a-30da85ad4883"
 horo: 5
-bonds:
-  in:
-    - channel
-    - collapse
-    - law
-    - merge
-    - station
-    - sti
-  out:
-    - channel
-    - collapse
-    - law
-    - merge
-    - station
-    - sti
 typography:
   partition: television
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - channel
-    - collapse
-    - law
-    - merge
-    - station
-    - sti
-  matrix:
-    - channel
-    - collapse
-    - law
-    - merge
-    - station
-    - sti
-  backlinks:
-    - channel
-    - collapse
-    - law
-    - merge
-    - station
-    - sti
 signatures:
-  computationUuid: "88d96470-5f1e-8e74-8d88-f930840f7c6e"
+  computationUuid: "3bcfc462-4206-80fe-9481-28123a26b1ba"
   stages:
     - stage: path
       stageUuid: "6c124fc7-ff3a-8dbf-8b53-8e2c845e61d3"
@@ -63,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e0ab6558-3342-8314-a264-e4d8e59f3012"
     - stage: horo
-      stageUuid: "f5fdc22c-e827-8e5e-aafe-af75a728c0c4"
+      stageUuid: "e154387d-f901-854b-af29-88e780386458"
     - stage: seal
-      stageUuid: "d9970709-e752-8447-91c2-6505b1d95d89"
+      stageUuid: "3f8fa4a0-8466-810c-9484-00c8f175c3b9"
     - stage: uuid
-      stageUuid: "a2147046-1dec-89bd-8ce0-16efdd73bbcb"
+      stageUuid: "33535861-8956-8546-9c0a-dfe6161fd8b1"
 version: 2
 ---
 # television

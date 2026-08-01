@@ -1,73 +1,35 @@
 ---
 name: annual
 description: "Use when reasoning about annual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/annual
-coordinate: annual · 2/share · 5b5b8f08
-contentUuid: "a5a990e2-59b8-55e2-a68e-c384dda6f830"
-diamondUuid: "29043ef5-8070-8d67-8737-2d69c105000e"
-uuid: "5b5b8f08-52db-8224-ab0e-8d0998417a3f"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - percentage
-    - rate
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - percentage
-    - rate
-    - sti
+atomPath: "vocabulary/annual"
+coordinate: "vocabulary/annual · 1/base · 13db5e3d"
+contentUuid: "a66ce23a-635a-58ec-83c2-e2fb5bdde290"
+diamondUuid: "5e4e55db-9c97-8634-bfbd-75b1cce5db6b"
+uuid: "13db5e3d-c20f-8c27-8e8d-7fc279249b8b"
+horo: 1
 typography:
-  partition: annual
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - percentage
-    - rate
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - percentage
-    - rate
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - percentage
-    - rate
-    - sti
 signatures:
-  computationUuid: "33f2b3dd-d84f-865b-88b6-ba296a528ae3"
+  computationUuid: "c537873b-ad76-812f-8479-478a09353865"
   stages:
     - stage: path
-      stageUuid: "07ce49fa-aea7-89bf-98b2-9c51499ec829"
+      stageUuid: "2c309cef-5461-8bee-841a-2ac53ec6ffe8"
     - stage: trinity
-      stageUuid: "2254ee07-9f8c-8c97-82ae-0a155b5c5b62"
+      stageUuid: "a4010cfc-cc2c-8557-9be2-eb1dae693f71"
     - stage: boundary
-      stageUuid: "ba30dcff-22fb-88f7-93bd-298db4f70373"
+      stageUuid: "25f6d07e-8750-8824-a95d-92cc9e4f50eb"
     - stage: links
-      stageUuid: "610d0f66-a84b-8081-98f1-faeb22a1a606"
+      stageUuid: "9b344838-05da-84ac-bb74-3039ec46ad87"
     - stage: horo
-      stageUuid: "58b7713d-5ba5-8246-a0f5-6374d1d9d518"
+      stageUuid: "fc8e22cd-859a-829f-b421-b63d2ba99d20"
     - stage: seal
-      stageUuid: "f01c679f-9350-8081-8ad0-b054a728d2ec"
+      stageUuid: "5542e9f1-e19c-8605-90a6-f6c8c0985306"
     - stage: uuid
-      stageUuid: "737e0103-721a-835c-9516-58ec97d7a53d"
+      stageUuid: "fe0164ef-07fe-84ce-90c0-6f7ad17713f3"
 version: 2
 ---
 # annual

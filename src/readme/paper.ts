@@ -85,6 +85,20 @@ const sectionOf = (body: string, heading: string): string => {
   return out.join('\n').trim()
 }
 
+/**
+ * The atom's own LIMITATIONS — the `## Honest boundary` section or the `**Honest boundary.**`
+ * paragraph each SKILL writes to state what its claim does NOT prove. A white paper is incomplete
+ * without limitations; this extracts the ones the corpus already sealed (94 atoms carry one), so the
+ * merged paper can ship every result beside its own caveat — the reader never has to read source to
+ * learn what a stat does not establish.
+ */
+export const boundaryOf = (body: string): string => {
+  const section = sectionOf(body, 'Honest boundary')
+  if (section) return section
+  const m = body.match(/\*\*Honest boundary\.?\*\*\s*([\s\S]+?)(?:\n\n|\*\*Law\s+—)/)
+  return m?.[1]?.replace(/\s+/g, ' ').trim() ?? ''
+}
+
 const firstParagraph = (body: string): string => {
   const stripped = body
     .replace(/```[\s\S]*?```/g, ' ')

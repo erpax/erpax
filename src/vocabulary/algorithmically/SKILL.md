@@ -1,63 +1,35 @@
 ---
 name: algorithmically
 description: "Use when reasoning about algorithmically as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/algorithmically
-coordinate: algorithmically · 4/weave · 98523f9e
-contentUuid: "1831244b-b51e-50ad-a5c7-cbae268b9309"
-diamondUuid: "5762d234-f45a-8e95-bf73-8a7eff380e85"
-uuid: "98523f9e-13eb-8f7d-b8ac-26e4f3183bdb"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/algorithmically"
+coordinate: "vocabulary/algorithmically · 7/descent · d2fa5b04"
+contentUuid: "3be6dfac-bb12-5269-b381-a8b018701c15"
+diamondUuid: "3ab4caaa-a0d6-8a6e-b058-6dff3fffde26"
+uuid: "d2fa5b04-d701-8ce0-bdbe-8dcc1b685442"
+horo: 7
 typography:
-  partition: algorithmically
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "17d5c2d9-cfc6-82c0-993f-2ec3114cb982"
+  computationUuid: "ff51c0d3-4e9c-89df-a96f-100b654a6a99"
   stages:
     - stage: path
-      stageUuid: "c9754831-2ae4-88dd-b39b-73c1c79c2bf8"
+      stageUuid: "df5277db-8742-8a96-942c-bf0bc1a11872"
     - stage: trinity
-      stageUuid: "77d0f42f-4bcb-87f1-8384-3684b2f89618"
+      stageUuid: "da5ffad9-32f3-8ceb-a941-14c6f95ebe89"
     - stage: boundary
-      stageUuid: "4f4dd462-250f-8d5c-9071-47eecba48cf7"
+      stageUuid: "080b847c-d738-8e15-8f0f-97b0ce94a15d"
     - stage: links
-      stageUuid: "ce60c400-2fa2-82a1-ab93-9caf2c2f3978"
+      stageUuid: "bc9229fe-4a44-85ac-84da-c1d583059f0b"
     - stage: horo
-      stageUuid: "d48f3070-a2ed-8e1a-93d2-f8ec4d30656c"
+      stageUuid: "e9dbd185-5aa0-89ed-9775-c9c23e4a3d84"
     - stage: seal
-      stageUuid: "d8dfe38a-48b0-8c0b-bb57-6f2a7ebbb4df"
+      stageUuid: "f3bbe8fd-828b-8d9d-8ec7-c5e4042a0f30"
     - stage: uuid
-      stageUuid: "3a83ccde-600a-8ff8-a8c0-ddcd01228224"
+      stageUuid: "a9a3e986-e61c-86d3-8fdf-0d71c4e97fe9"
 version: 2
 ---
 # algorithmically

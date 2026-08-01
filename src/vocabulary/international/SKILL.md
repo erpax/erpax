@@ -1,63 +1,35 @@
 ---
 name: international
 description: "Use when reasoning about international as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/international
-coordinate: international · 4/weave · 725f6610
-contentUuid: "8f18d208-825d-536b-9984-014872f2a489"
-diamondUuid: "5968283b-a907-8447-9faa-bd7fb6d5c7f3"
-uuid: "725f6610-bd61-86e2-9565-0191942231be"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/international"
+coordinate: "vocabulary/international · 7/descent · 4a32d664"
+contentUuid: "ab94b312-5e7e-5131-9891-bc36e0bb4d3b"
+diamondUuid: "3271ea21-5651-800e-ada8-470a014fd326"
+uuid: "4a32d664-6860-8976-a18f-5ca5f9ac148f"
+horo: 7
 typography:
-  partition: international
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "fe12491a-53a9-852d-8e60-252dec66bff5"
+  computationUuid: "889602de-e9c0-80f0-8c7a-51a26f63901f"
   stages:
     - stage: path
-      stageUuid: "3155031a-cf41-8c2e-ae99-f039435257b0"
+      stageUuid: "254904f8-4c3a-85b8-9d04-663719652cab"
     - stage: trinity
-      stageUuid: "b46528b0-ddb4-8506-808f-5c6a5d66e229"
+      stageUuid: "50018152-4abc-8da5-9187-067727044fbe"
     - stage: boundary
-      stageUuid: "68ea5fdf-0a8b-8b3c-a604-757272ca9ec4"
+      stageUuid: "ab0b86d9-f66d-84d1-b871-89450e98fad9"
     - stage: links
-      stageUuid: "35167e09-9395-823b-add4-d8efa1269ed8"
+      stageUuid: "180b53f5-7198-89b1-a90f-6a641318299f"
     - stage: horo
-      stageUuid: "2f638e96-32f3-835e-b561-cb57c75640b6"
+      stageUuid: "30135709-aefe-892f-8da2-af850aa59111"
     - stage: seal
-      stageUuid: "0cef2e7d-9dcc-82af-ba82-c827c4c27581"
+      stageUuid: "d2fcd38e-0e20-8eb9-ab64-22dafd57f6d6"
     - stage: uuid
-      stageUuid: "dc6400e1-593d-83df-8dd1-ade2f165e7fb"
+      stageUuid: "11ad54b5-873b-8aeb-93ed-9b023152d37d"
 version: 2
 ---
 # international

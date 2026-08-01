@@ -1,68 +1,35 @@
 ---
 name: renegotiable
 description: "Use when reasoning about renegotiable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/renegotiable
-coordinate: renegotiable · 7/descent · ad42665b
-contentUuid: "e6dcd2af-1d5c-54e3-9a4a-e21ffaa348a1"
-diamondUuid: "4bf324fc-5f2d-886f-be6d-cfb68eee5d5f"
-uuid: "ad42665b-122a-8d2a-82dc-4c167eb2d859"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - loan
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - loan
-    - merge
-    - sti
+atomPath: "vocabulary/renegotiable"
+coordinate: "vocabulary/renegotiable · 1/base · bd831c21"
+contentUuid: "c8e834aa-8aff-5193-8442-9e53ef3aab45"
+diamondUuid: "4d119ff5-15e4-8cbc-813d-c44f0f18201e"
+uuid: "bd831c21-37b1-8a6b-8310-f51547c3771e"
+horo: 1
 typography:
-  partition: renegotiable
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - loan
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - loan
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - loan
-    - merge
-    - sti
 signatures:
-  computationUuid: "f2c94c65-4a7a-84e5-ba6b-734c49e9beb4"
+  computationUuid: "6a0b2eee-fcd1-8216-a291-93619a26ce59"
   stages:
     - stage: path
-      stageUuid: "f438c981-7694-87e0-8fa4-9e8f024f5889"
+      stageUuid: "7e3094d1-8232-82cb-a131-a3bb69dce007"
     - stage: trinity
-      stageUuid: "238ba46b-d4d2-82de-9a16-44c401b95ea7"
+      stageUuid: "7529f93f-9532-8e71-9241-04f83be5f9a8"
     - stage: boundary
-      stageUuid: "d0426ba9-a840-8506-b51c-342483dd896f"
+      stageUuid: "78f0e960-591d-8c10-a079-58bb34c9a8b1"
     - stage: links
-      stageUuid: "5843c04d-49cb-85d4-b7dc-b9be7956861e"
+      stageUuid: "d319d44e-6d76-8907-98d8-8699d72b02f0"
     - stage: horo
-      stageUuid: "5062cc4b-5eef-8b10-80f0-233d7b6f079d"
+      stageUuid: "11146be3-3f36-840e-bd34-3a60cdc18371"
     - stage: seal
-      stageUuid: "cf58dc6f-da9b-8d48-9133-fa7a285dbefd"
+      stageUuid: "515cf099-f90f-8856-a0f5-d2108095bc84"
     - stage: uuid
-      stageUuid: "f8573998-fd51-8ae7-b252-28c7b8683759"
+      stageUuid: "d9b8cbdf-4688-86db-aa01-7b122834eb8d"
 version: 2
 ---
 # renegotiable

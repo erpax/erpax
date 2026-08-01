@@ -2,37 +2,14 @@
 name: quotes
 description: "Use when creating or approving pre-contract proposals — line-item pricing, issuer/approver SoD enforcement, sending to customer, accepting, and converting to a sales order. No GL impact until accepted. The IFRS-15 §10 contract-origination collection."
 atomPath: "customers/quotes"
-coordinate: "customers/quotes · 4/weave · 6290381c"
-contentUuid: "3b0de976-5aae-5cc2-924d-ca858538c41e"
-diamondUuid: "fba285eb-29e7-8069-b4d6-19d68f7c333a"
-uuid: "6290381c-4db3-8249-be52-e7875549e807"
-horo: 4
-bonds:
-  in:
-    - accounting
-    - collections
-    - customers
-    - discount
-    - fields
-    - identity
-    - law
-    - orders
-    - standard
-    - transaction
-  out:
-    - accounting
-    - collections
-    - discount
-    - fields
-    - identity
-    - law
-    - orders
-    - standard
-    - transaction
+coordinate: "customers/quotes · 5/round · 845451de"
+contentUuid: "b6bb5805-f1d7-5688-a3c6-4a2bd24289f3"
+diamondUuid: "1360fef0-2cee-808d-be15-cfa2791ccd02"
+uuid: "845451de-eb02-8540-be3c-149aad5082ed"
+horo: 5
 typography:
   partition: customers
   bondDegree: 33
-  neighbors: []
 standards:
   - "IFRS IFRS-15 §10 contract-with-customer"
   - "ISO-4217:2015 currency-codes"
@@ -43,37 +20,8 @@ standards:
   - "US-GAAP ASC-606-10-25 contract-existence"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - collections
-    - fields
-    - identity
-    - law
-    - standard
-    - transaction
-  matrix:
-    - accounting
-    - collections
-    - discount
-    - fields
-    - identity
-    - law
-    - orders
-    - standard
-    - transaction
-  backlinks:
-    - accounting
-    - collections
-    - discount
-    - fields
-    - identity
-    - law
-    - orders
-    - standard
-    - transaction
 signatures:
-  computationUuid: "361dbd4a-f171-8009-bab3-d762f4f30f40"
+  computationUuid: "3db355e8-9c10-8f81-9ce7-80c876edb34f"
   stages:
     - stage: path
       stageUuid: "a83bba08-3b7a-8b01-9360-ec5673842853"
@@ -84,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "49b01b43-f544-871b-932b-6fcb3738881c"
     - stage: horo
-      stageUuid: "bdf831b6-5d15-8283-b5eb-19b1deeb06ef"
+      stageUuid: "87286b19-aefd-80f6-9646-625fdcb7148f"
     - stage: seal
       stageUuid: "2610e8d6-fe72-8918-a9f7-e9997a7f2939"
     - stage: uuid
-      stageUuid: "fba7a9f6-1c03-80a2-9905-65360e6ae549"
+      stageUuid: "841842d1-bc6a-81db-b2db-fc1cc05431e0"
 version: 2
 ---
 # quotes

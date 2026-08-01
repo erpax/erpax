@@ -1,53 +1,35 @@
 ---
 name: affected
 description: "Use when reasoning about affected — Drugs that affect the test's results."
-atomPath: vocabulary/affected
-coordinate: affected · 4/weave · 3356d30b
-contentUuid: "f07a271c-0060-549b-afb0-d1a2dd4679f6"
-diamondUuid: "36bb49cc-96db-847d-a58c-ffe4ff7782e1"
-uuid: "3356d30b-c66d-836a-87e2-2d5a41b7a259"
-horo: 4
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/affected"
+coordinate: "vocabulary/affected · 1/base · 170a0c71"
+contentUuid: "ee2a1779-d7f4-5fba-afe4-71a84fdbaab3"
+diamondUuid: "54e97be9-8418-879b-a24b-57a76cec481d"
+uuid: "170a0c71-c94d-8682-b8c7-91797eab5b69"
+horo: 1
 typography:
-  partition: affected
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "4f179134-3b35-8a64-8579-b1c018552b78"
+  computationUuid: "a9564bbb-7e65-8005-89ad-e4e8eed9b1f0"
   stages:
     - stage: path
-      stageUuid: "dd6b5b47-1c09-816d-afde-3ec6f9ad0e12"
+      stageUuid: "ebe59757-9758-8a54-a13b-a61ad824a9b8"
     - stage: trinity
-      stageUuid: "0428331b-d2ce-828f-bbf8-b103b0e47459"
+      stageUuid: "ff728764-f079-8af5-8365-a5b52fed2615"
     - stage: boundary
-      stageUuid: "fc4384e6-e004-83de-bdff-108b63c9e671"
+      stageUuid: "ab143c67-02fb-8504-bd26-722c2293edce"
     - stage: links
-      stageUuid: "cd27e4a8-c0fd-821c-a776-e545ae0da083"
+      stageUuid: "f4c1254d-0423-84ab-b7d8-84126026f919"
     - stage: horo
-      stageUuid: "a234230f-6c28-82d0-a823-d58945f5f7d8"
+      stageUuid: "8aa534c1-2248-836a-8516-765079f2d0ff"
     - stage: seal
-      stageUuid: "9f28c97c-53d8-8c39-be58-1721432fcc31"
+      stageUuid: "aab15184-e50c-8c31-951b-a07ef2b95277"
     - stage: uuid
-      stageUuid: "ec4b37d9-54d6-8596-b5e3-ac4e3b524b78"
+      stageUuid: "b35e14ea-a68b-853a-afa3-c129c43ac9d3"
 version: 2
 ---
 # affected

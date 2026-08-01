@@ -1,58 +1,35 @@
 ---
 name: colleagues
 description: "Use when reasoning about colleagues — The person's colleagues — see colleague (the singular). A dimension of one relation: colleagues is the collection, colleague the unit; the text lives once, in colleague."
-atomPath: vocabulary/colleagues
-coordinate: colleagues · 2/share · 6fdc5374
-contentUuid: "a069da49-3a0d-5d5a-b9c3-29a9de1d224e"
-diamondUuid: "c4834a2a-a77b-8503-947d-82cbe5cdae8b"
-uuid: "6fdc5374-1c5a-8602-b7ed-19121a332700"
-horo: 2
-bonds:
-  in:
-    - colleague
-    - dimension
-    - law
-  out:
-    - colleague
-    - dimension
-    - law
+atomPath: "vocabulary/colleagues"
+coordinate: "vocabulary/colleagues · 5/round · 6acc6ba4"
+contentUuid: "c5f1e694-f639-5bbd-b099-5a7c370acb6d"
+diamondUuid: "1046d057-e061-8a28-86cb-69a15c472445"
+uuid: "6acc6ba4-e002-8c7e-80e0-0c3dc48dd983"
+horo: 5
 typography:
-  partition: colleagues
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - colleague
-    - dimension
-    - law
-  matrix:
-    - colleague
-    - dimension
-    - law
-  backlinks:
-    - colleague
-    - dimension
-    - law
 signatures:
-  computationUuid: "11ce7720-95d7-84f5-bff5-c06523442e5c"
+  computationUuid: "143a7fbf-75f4-8459-ad70-79fb1025d67a"
   stages:
     - stage: path
-      stageUuid: "3da332cd-5960-8aed-bcad-fcab8b387097"
+      stageUuid: "0f567557-37b8-8109-9c54-c04cfc855ec2"
     - stage: trinity
-      stageUuid: "3fd5d446-e091-8755-b380-7120e225c44f"
+      stageUuid: "f92e17b0-6a47-85c7-9d76-270a7cfd6f37"
     - stage: boundary
-      stageUuid: "b69b249a-3488-8a38-9473-01857bd24739"
+      stageUuid: "1325e410-1b1f-8a63-9c30-18909a545d51"
     - stage: links
-      stageUuid: "7b4976c2-e8a9-8dd5-a652-3c037805a7fb"
+      stageUuid: "de479746-91b2-8503-93f5-29c1d680863a"
     - stage: horo
-      stageUuid: "715db189-b611-8099-8e36-ca1cd10b92b5"
+      stageUuid: "5faa935a-c2a9-8533-a0ee-e3f2e10f097e"
     - stage: seal
-      stageUuid: "4ae62938-a14d-83e8-b7d4-e53bfbd8c755"
+      stageUuid: "a16cb75c-2929-881b-958f-8bd4e9a98a39"
     - stage: uuid
-      stageUuid: "1c7303f1-e5b3-859f-8061-6334ef1f9a63"
+      stageUuid: "042720c3-e8a2-8808-ac9d-c0af5a0db028"
 version: 2
 ---
 # colleagues

@@ -1,62 +1,34 @@
 ---
 name: landmark
 description: Use when modelling one landmark — the singular model of the landmarks collection (the plural store); a notable place used as a point of reference.
-atomPath: vocabulary/landmark
-coordinate: landmark · 1/base · 7a65d7fc
-contentUuid: "1e58b646-b220-508e-ae6c-d38585587a92"
-diamondUuid: "76ec45af-f9f5-8002-8046-c0edf6f1aff2"
-uuid: "7a65d7fc-d670-8cb7-8fb9-c3b4399efd1c"
-horo: 1
-bonds:
-  in:
-    - balance
-    - landmarks
-    - law
-    - location
-  out:
-    - balance
-    - landmarks
-    - law
-    - location
+atomPath: "vocabulary/landmark"
+coordinate: "vocabulary/landmark · 5/round · 0cbb646e"
+contentUuid: "ba72f3a3-9dc5-5cf6-acd9-75cab9b61afd"
+diamondUuid: "1ec981e6-209f-8b72-9a9c-9b05d836f0a1"
+uuid: "0cbb646e-c9de-8b7a-9fb9-61c6a3ebaa45"
+horo: 5
 typography:
-  partition: landmark
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - landmarks
-    - law
-    - location
-  matrix:
-    - balance
-    - landmarks
-    - law
-    - location
-  backlinks:
-    - balance
-    - landmarks
-    - law
-    - location
 signatures:
-  computationUuid: "9d002da3-4e10-882b-b548-e076f2e94be0"
+  computationUuid: "80565d5d-63d6-81ed-aa5f-bab9da1e730c"
   stages:
     - stage: path
-      stageUuid: "8d36aa63-bee5-8aa4-ac85-c6539dbfbf89"
+      stageUuid: "d477a858-76c5-8ee0-b1f2-3d278d0eeb60"
     - stage: trinity
-      stageUuid: "c2fcd76e-9a72-8a84-912d-ad9d79899ba7"
+      stageUuid: "40604fd8-5165-827b-b16a-7bd2ff94fc69"
     - stage: boundary
-      stageUuid: "87ebf6a3-1798-8be6-b672-76991b343d5e"
+      stageUuid: "5a85107a-3764-8573-bbef-7c53cd466d59"
     - stage: links
-      stageUuid: "ef5528cf-93fa-8f2e-84d6-52646cdb8de4"
+      stageUuid: "b8973d63-a2f9-8ad5-8122-c521bdf9f277"
     - stage: horo
-      stageUuid: "f70105fc-ff9f-8466-85cc-17a9ae11dfce"
+      stageUuid: "0fe65107-c47b-8676-8cdc-ec71e88bbadb"
     - stage: seal
-      stageUuid: "584c44a7-d8f1-8e92-8a90-849257a50642"
+      stageUuid: "9a921f25-e908-8dc6-bf3e-95d6f03eb5c4"
     - stage: uuid
-      stageUuid: "f5b9c250-8a1b-8fd6-b771-3ea50a0dd19b"
+      stageUuid: "39cb7d1c-76c1-876f-9d35-5dbf779c2ddb"
 version: 2
 ---
 # landmark — the model of one [[landmarks]] row

@@ -1,68 +1,35 @@
 ---
 name: quote
 description: "Use when reasoning about quote as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/quote
-coordinate: quote · 2/share · 82faf6f5
-contentUuid: "1db7ef0e-16b5-5d1a-8380-aab44478f619"
-diamondUuid: "598d48f9-c5fb-8b9b-8ae6-1801d5917778"
-uuid: "82faf6f5-3296-820b-bba6-aa3f58c6a796"
-horo: 2
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/quote"
+coordinate: "vocabulary/quote · 4/weave · a6ac6111"
+contentUuid: "dd2462db-a307-58c1-8668-6b4f11f17bed"
+diamondUuid: "b146485d-4736-85da-a4a5-5a20b8c6fc2e"
+uuid: "a6ac6111-fdfd-8758-9e03-a13c293dc0a1"
+horo: 4
 typography:
-  partition: quote
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "ca70a205-fb27-8b04-bfe9-e73a45b9ed08"
+  computationUuid: "ad84008a-00d1-8d29-96c3-f2221b526628"
   stages:
     - stage: path
-      stageUuid: "7261b272-8197-896f-a281-d582e3925aa5"
+      stageUuid: "ba5da0aa-82d9-8612-befd-5ac10d3566c2"
     - stage: trinity
-      stageUuid: "1c4b5198-5c87-8d78-8565-d74724faec67"
+      stageUuid: "ca4df26e-afc3-86ac-bd35-4dfa91ca141f"
     - stage: boundary
-      stageUuid: "079b73d7-4f70-8445-8b33-576a20b42a2b"
+      stageUuid: "5c038beb-1996-804f-b3fa-8ea9c2660c9b"
     - stage: links
-      stageUuid: "420af2bc-ab04-8e31-b417-2e73a29ba69d"
+      stageUuid: "63e382d5-1d7d-8f44-a199-e2167db4ae58"
     - stage: horo
-      stageUuid: "12c5f3d0-3ca2-8dbd-88b0-82745057fd4e"
+      stageUuid: "89ab312b-5288-81df-9f64-ca1697a27fa4"
     - stage: seal
-      stageUuid: "f865abe1-ce7c-8650-a0e9-9f2547940c37"
+      stageUuid: "7581fb16-a47e-8df2-96bd-e9a7409b9846"
     - stage: uuid
-      stageUuid: "3739b712-6a6a-8c55-88fd-957434874629"
+      stageUuid: "9beda029-68a6-8d2c-8f1b-d22fb2cd93c5"
 version: 2
 ---
 # quote

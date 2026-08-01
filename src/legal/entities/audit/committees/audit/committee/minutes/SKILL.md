@@ -2,40 +2,22 @@
 name: minutes
 description: "Use when capturing formal audit committee meeting records — agenda, attendees, discussion summary, key decisions, action items with due dates, auditor observations, compliance matters, and the approved minutes document. The SOX §301 committee-records evidence collection."
 atomPath: "legal/entities/audit/committees/audit/committee/minutes"
-coordinate: "legal/entities/audit/committees/audit/committee/minutes · 7/descent · b18af5dd"
-contentUuid: "cbdaa1a4-e687-5f5d-a8db-0a220bbeb8bd"
-diamondUuid: "3727d3a6-9a1b-84dc-b793-4dd4a5b53af0"
-uuid: "b18af5dd-b643-8c1b-92c2-d9fba8b11989"
-horo: 7
-bonds:
-  in:
-    - actions
-    - committee
-    - committees
-  out:
-    - actions
-    - committees
+coordinate: "legal/entities/audit/committees/audit/committee/minutes · 8/crest · 60a503ad"
+contentUuid: "f3449113-8b15-5dec-aa13-81f4e3631717"
+diamondUuid: "56943735-70ab-853e-903d-efcf0866845c"
+uuid: "60a503ad-1afd-8715-8341-7d284e06f8b2"
+horo: 8
 typography:
   partition: legal
   bondDegree: 6
-  neighbors: []
 standards:
   - "ISO-8601-1:2019 meeting-date"
   - "ISO-8601-1:2019 meeting-date`"
   - "SOX §301 audit-committee-records"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - actions
-  matrix:
-    - actions
-    - committees
-  backlinks:
-    - actions
-    - committees
 signatures:
-  computationUuid: "a3fb3d56-020f-81c5-a884-e23281ac2f3c"
+  computationUuid: "8a7de5e3-6d14-8a12-bb94-5ad1bdad7a8c"
   stages:
     - stage: path
       stageUuid: "2dcc24ba-d36e-89ac-ac1d-52c1a9ddce7f"
@@ -46,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "718b344a-616a-8b7f-bfbe-970fadde8efc"
     - stage: horo
-      stageUuid: "18f8447d-935c-852f-9242-b25516e681a3"
+      stageUuid: "ae3194ee-786b-8246-925f-1b333921d917"
     - stage: seal
       stageUuid: "ef407894-7f90-83ba-a7c2-c01cbfe55747"
     - stage: uuid
-      stageUuid: "9bc61e9d-6448-84fa-8bc4-f28358a61013"
+      stageUuid: "8cdf28a8-f6ba-8447-9ffa-284ddf4b81c1"
 version: 2
 ---
 # audit-committee-minutes

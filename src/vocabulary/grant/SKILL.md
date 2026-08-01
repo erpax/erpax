@@ -1,53 +1,35 @@
 ---
 name: grant
 description: "Use when reasoning about grant — A grant, typically financial or otherwise quantifiable, of resources. Typically a funder sponsors some MonetaryAmount to an Organization or Person, sometimes not necessarily via a"
-atomPath: vocabulary/grant
-coordinate: grant · 2/share · 28e323a9
-contentUuid: "47befc14-d776-5b9b-8405-177b7995b17d"
-diamondUuid: "2a35106e-90af-8771-a048-55319b42f688"
-uuid: "28e323a9-96db-855b-ad7d-339d00e31fe7"
+atomPath: "vocabulary/grant"
+coordinate: "vocabulary/grant · 2/share · 86c02adc"
+contentUuid: "921b3e6c-e7ab-50b1-bb58-987b76c8151e"
+diamondUuid: "12ab7235-d57b-8443-b65d-4f1bdde7b7d6"
+uuid: "86c02adc-1696-82f7-a55c-39c6ac40476d"
 horo: 2
-bonds:
-  in:
-    - law
-    - monetary
-  out:
-    - law
-    - monetary
 typography:
-  partition: grant
+  partition: vocabulary
   bondDegree: 7
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - monetary
-  matrix:
-    - law
-    - monetary
-  backlinks:
-    - law
-    - monetary
 signatures:
-  computationUuid: "bdcdb8a6-f214-8a4b-9ac9-e01d551e5390"
+  computationUuid: "e6c0a766-b0cb-8691-bbee-06356e9aa4d5"
   stages:
     - stage: path
-      stageUuid: "02b8e72e-b98e-8065-a5e5-03ce64195e68"
+      stageUuid: "fe9beede-c886-8523-99ea-2b7a851ba1b8"
     - stage: trinity
-      stageUuid: "a63e3cb1-af78-8a58-a44a-d12b4e77908d"
+      stageUuid: "b995cc86-e694-86fd-89bf-89236ed3d140"
     - stage: boundary
-      stageUuid: "12f8a8f0-2987-8fdc-b2aa-485a821ed6f8"
+      stageUuid: "5e6a9517-5544-8543-81eb-6b51a1b0b3d2"
     - stage: links
-      stageUuid: "aa2cd719-8609-8cf0-a879-5e9abedfcf8b"
+      stageUuid: "035f5d21-cf43-85cc-92f0-78be1dfe7fcf"
     - stage: horo
-      stageUuid: "64346235-3154-8151-a95c-0a6154cf503b"
+      stageUuid: "5368fddc-0c97-85ef-9fea-55e51625f476"
     - stage: seal
-      stageUuid: "82412f98-60a1-8c4d-a017-db1b67f466dc"
+      stageUuid: "b54327d6-e740-8c5d-be8f-0ec312eb4e24"
     - stage: uuid
-      stageUuid: "0f3513c2-8f8d-89af-a691-efb81a72c85c"
+      stageUuid: "728fbd17-1d69-82ed-8e45-e024ca4c7a06"
 version: 2
 ---
 # grant

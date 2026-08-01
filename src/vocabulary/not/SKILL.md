@@ -1,83 +1,35 @@
 ---
 name: not
 description: "Use when reasoning about not as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/not
-coordinate: not · 5/round · a2de410c
-contentUuid: "67c1164e-ba53-5c60-b57c-a7028afa276d"
-diamondUuid: "2734aa8b-85ad-8225-a442-1f19291e407e"
-uuid: "a2de410c-0707-8dcc-be13-9ee0df230b71"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - countries
-    - does
-    - law
-    - merge
-    - ship
-    - sti
-    - supported
-  out:
-    - collapse
-    - countries
-    - does
-    - law
-    - merge
-    - ship
-    - sti
-    - supported
+atomPath: "vocabulary/not"
+coordinate: "vocabulary/not · 1/base · 1f3ebc23"
+contentUuid: "ce55f893-e39a-52ff-a737-6ccbd98da83f"
+diamondUuid: "adbcb4b1-70c3-8e26-9cf0-1e956907a498"
+uuid: "1f3ebc23-a950-80e7-9255-62d94e6f011a"
+horo: 1
 typography:
-  partition: not
+  partition: vocabulary
   bondDegree: 28
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - countries
-    - does
-    - law
-    - merge
-    - ship
-    - sti
-    - supported
-  matrix:
-    - collapse
-    - countries
-    - does
-    - law
-    - merge
-    - ship
-    - sti
-    - supported
-  backlinks:
-    - collapse
-    - countries
-    - does
-    - law
-    - merge
-    - ship
-    - sti
-    - supported
 signatures:
-  computationUuid: "41fae889-586f-8865-8680-20a8ff52ed40"
+  computationUuid: "c581f8f7-18cb-8317-a940-ae38d36c9612"
   stages:
     - stage: path
-      stageUuid: "b138045a-7558-8d86-aa92-893c9fc088b1"
+      stageUuid: "e702204e-f9de-88c5-901a-35495b7ff7e1"
     - stage: trinity
-      stageUuid: "786ae2af-8783-842c-81cc-6ab5cc9754f5"
+      stageUuid: "dc3708d7-1396-84c2-867c-724b7befd465"
     - stage: boundary
-      stageUuid: "0db20654-57a5-8e8d-92cc-d12b5f4e8146"
+      stageUuid: "cf0a651a-0275-8151-ab72-d64b1625f0eb"
     - stage: links
-      stageUuid: "20c0b3ad-1886-876d-aca8-67bef66630ae"
+      stageUuid: "3eb2779b-b7cf-8751-86d7-287aca0506c3"
     - stage: horo
-      stageUuid: "3e3798e7-39b4-8230-a4a0-b05678672592"
+      stageUuid: "ec62aa0b-72e6-8371-9d7a-097e48ee32af"
     - stage: seal
-      stageUuid: "7b520490-73f0-8bc2-92a4-fcfd158f9311"
+      stageUuid: "b96ac413-e424-8a1a-bc59-5890753f9b70"
     - stage: uuid
-      stageUuid: "8a3e68c4-b032-8709-8cbe-6f698636ca46"
+      stageUuid: "8d83e6e5-07d5-8770-985d-5681b39044c3"
 version: 2
 ---
 # not

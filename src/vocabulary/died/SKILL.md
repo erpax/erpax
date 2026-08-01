@@ -1,73 +1,35 @@
 ---
 name: died
 description: "Use when reasoning about died as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/died
-coordinate: died · 4/weave · 2f7c1479
-contentUuid: "65ad38b7-34d5-5235-9f34-908fea142229"
-diamondUuid: "5c50c053-3cbe-8c41-a052-5d55735089fc"
-uuid: "2f7c1479-7761-8c84-a409-08c6ac39bd19"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - cvd
-    - law
-    - merge
-    - num
-    - sti
-  out:
-    - collapse
-    - cvd
-    - law
-    - merge
-    - num
-    - sti
+atomPath: "vocabulary/died"
+coordinate: "vocabulary/died · 2/share · 8c510efb"
+contentUuid: "2bd73f63-0edc-51cc-b55b-1446ddfba404"
+diamondUuid: "fbd3690a-ac59-8398-a6f0-c6aa5c1072c4"
+uuid: "8c510efb-8f2a-8853-ab50-7e5d0816aef3"
+horo: 2
 typography:
-  partition: died
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - cvd
-    - law
-    - merge
-    - num
-    - sti
-  matrix:
-    - collapse
-    - cvd
-    - law
-    - merge
-    - num
-    - sti
-  backlinks:
-    - collapse
-    - cvd
-    - law
-    - merge
-    - num
-    - sti
 signatures:
-  computationUuid: "d333d126-9de0-872d-b27e-95a2e56486a7"
+  computationUuid: "edda86ac-a34f-85b2-9146-6c2c75323b56"
   stages:
     - stage: path
-      stageUuid: "9c48ecaf-38ed-8bc1-949e-720ffd560b90"
+      stageUuid: "8d98285c-aed0-83d4-99ad-1785a5923c5b"
     - stage: trinity
-      stageUuid: "ee499ff3-b120-8250-abdf-c23017a234c9"
+      stageUuid: "576a0bbb-11b3-886f-8ca7-34d086febefb"
     - stage: boundary
-      stageUuid: "18f78a42-59d6-8a92-a497-74cc1e0d7576"
+      stageUuid: "1345a865-b665-835e-97d5-507256f624b0"
     - stage: links
-      stageUuid: "c3328966-1224-8448-9edf-29a3134dd175"
+      stageUuid: "aa65671e-d5ae-84fc-b196-22f0c02d6163"
     - stage: horo
-      stageUuid: "be72cbd1-37af-88c0-95c7-62d66fa2258c"
+      stageUuid: "dea1fa64-fc11-8249-b114-37aa9cc49d3e"
     - stage: seal
-      stageUuid: "d4cab3d3-38f4-81c9-819a-a2978ee0b3f2"
+      stageUuid: "e1ba30b4-eb7b-85ea-b5f9-dd00e99fab9e"
     - stage: uuid
-      stageUuid: "fc129740-d4a4-806a-83d4-1eabb5f274b2"
+      stageUuid: "1aee1d6d-0c84-8da3-9596-78c4fb43fb4f"
 version: 2
 ---
 # died

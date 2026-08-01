@@ -1,53 +1,35 @@
 ---
 name: city
 description: Use when reasoning about city — A city or town.
-atomPath: vocabulary/city
-coordinate: city · 1/base · f9da58c7
-contentUuid: "0ea2e040-e2d0-55fd-869e-209a6a515d75"
-diamondUuid: "dbdee4ce-3c30-82c8-9bce-bc889cd55f69"
-uuid: "f9da58c7-ead8-8645-8aab-23e9a2216cef"
-horo: 1
-bonds:
-  in:
-    - hall
-    - law
-  out:
-    - hall
-    - law
+atomPath: "vocabulary/city"
+coordinate: "vocabulary/city · 2/share · 71895541"
+contentUuid: "6d989454-3bba-56c0-8d97-0bd24f778edd"
+diamondUuid: "f0348639-c019-83f6-9b23-55d8eab957bf"
+uuid: "71895541-707a-80e7-b293-efb478cd5982"
+horo: 2
 typography:
-  partition: city
+  partition: vocabulary
   bondDegree: 7
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - hall
-    - law
-  matrix:
-    - hall
-    - law
-  backlinks:
-    - hall
-    - law
 signatures:
-  computationUuid: "2b972629-f18f-8f49-af50-89f6e019bfef"
+  computationUuid: "f1387c8b-4a8a-86eb-8362-ddf3dd69c50e"
   stages:
     - stage: path
-      stageUuid: "f3abb22d-dfee-894a-bcb4-3427ff8cde51"
+      stageUuid: "92723464-f309-8aa2-bb28-20b4b434f05a"
     - stage: trinity
-      stageUuid: "668bfa98-6808-8f80-b55e-b446e4d321f5"
+      stageUuid: "d23b47fd-8187-8946-8b85-9b75003244ce"
     - stage: boundary
-      stageUuid: "cb83ea59-a6eb-854f-8555-fe47e5ef7bd1"
+      stageUuid: "03267d8f-cc05-8b55-bc39-06afcff334ee"
     - stage: links
-      stageUuid: "d9c7ffd0-661a-8430-8a19-458862f87e80"
+      stageUuid: "add3b6af-e095-868d-b32c-d59141288c0d"
     - stage: horo
-      stageUuid: "1f2c6562-3595-898d-9421-fe840e4e745d"
+      stageUuid: "7fc6e5af-e3c6-8172-a647-8eabe18374d5"
     - stage: seal
-      stageUuid: "2633de2c-7111-8e22-800b-fa38d6464fb8"
+      stageUuid: "86f19cf5-0222-8812-b1fd-29ec16a18603"
     - stage: uuid
-      stageUuid: "adcbbb8c-0214-8e4a-aa22-d431a2c23f3f"
+      stageUuid: "c46fb421-47bd-8f05-8fb1-23768e630577"
 version: 2
 ---
 # city

@@ -1,74 +1,34 @@
 ---
 name: dissolve
 description: "Use when collapsing prefixed units into the single-word matrix — drop the grouping prefix, split camelCase/hyphen names into nested single-word folders, apply singular-model/plural-collection, remap @/ imports, rewire barrels, merge same-word collisions as accountable collections. The deterministic mover; the matter is index.mjs."
-atomPath: refactor/dissolve
-coordinate: refactor/dissolve · 5/round · 7a426b31
-contentUuid: "756611ee-2d95-55e9-ae78-91cb1feac659"
-diamondUuid: "21df7bf1-77cd-8be6-94c8-44db788a3ef4"
-uuid: "7a426b31-d122-8924-be4f-081d155b9db0"
-horo: 5
-bonds:
-  in:
-    - accounting
-    - identity
-    - invariant
-    - merge
-    - normalize
-    - refactor
-    - sequence
-  out:
-    - accounting
-    - identity
-    - invariant
-    - merge
-    - normalize
-    - refactor
-    - sequence
+atomPath: "vocabulary/refactor/dissolve"
+coordinate: "vocabulary/refactor/dissolve · 2/share · 3952dded"
+contentUuid: "ab01a5fb-6559-564d-91fa-97c3f5dd6f6f"
+diamondUuid: "1cd81495-46e7-89b2-8d51-5e8bca290304"
+uuid: "3952dded-fc76-8fb0-8051-cb751270939f"
+horo: 2
 typography:
-  partition: refactor
-  bondDegree: 0
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 20
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - identity
-    - merge
-    - normalize
-    - sequence
-  matrix:
-    - accounting
-    - identity
-    - invariant
-    - merge
-    - normalize
-    - refactor
-    - sequence
-  backlinks:
-    - accounting
-    - identity
-    - invariant
-    - merge
-    - normalize
-    - refactor
-    - sequence
 signatures:
-  computationUuid: "39be85c6-1252-8713-8903-84e903b92f01"
+  computationUuid: "a97a4d57-53de-807b-bbf8-093fe2c793db"
   stages:
     - stage: path
-      stageUuid: "2ed85c27-00e6-871e-98e5-ba801d9dae48"
+      stageUuid: "75e15ee6-0876-8db9-9f0e-365e7db2329f"
     - stage: trinity
-      stageUuid: "d8e80bce-c5b9-86c1-90a0-cad6c9372f96"
+      stageUuid: "b08d0216-3bb4-87e3-8172-cb5a1ea3be83"
     - stage: boundary
-      stageUuid: "5cbb8d8f-51bc-82bf-904e-f70e6f00dab4"
+      stageUuid: "d0016565-004a-8ad6-b297-37a82d2972ff"
     - stage: links
-      stageUuid: "cfa6bd95-a909-87e2-9a7f-a83a243ebb14"
+      stageUuid: "c06605ec-dd24-8620-8e86-67afcee0d3f4"
     - stage: horo
-      stageUuid: "9e5f44c9-e06f-84b6-99ac-a6dcd6b9c0f0"
+      stageUuid: "c971d8ba-7bef-8fc2-a468-85e8c114a090"
     - stage: seal
-      stageUuid: "01906cd5-1725-8dcb-b4b6-0a89fe2b67e2"
+      stageUuid: "c8f94a7f-097d-86b9-ace2-1bc1db3f8ec8"
     - stage: uuid
-      stageUuid: "e2b2b146-77f7-851d-8746-c2838cfbd231"
+      stageUuid: "6b1707c7-e8c6-83ed-b843-0cfd18eeb518"
 version: 2
 ---
 # dissolve — collapse prefixes into the single-word matrix

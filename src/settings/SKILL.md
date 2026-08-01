@@ -2,72 +2,19 @@
 name: settings
 description: "Use when reasoning about settings — A schema.org component word, collided out of schema.org compounds — fused from DeliveryTimeSettings · ShippingRateSettings · shippingSettingsLink (sti · collapse · merge)."
 atomPath: settings
-coordinate: settings · 8/crest · f0e47f73
-contentUuid: "85beaa41-546b-5bf7-be21-bc65a4b30656"
-diamondUuid: "c5363d4a-9faa-8d75-8521-129f51fe6041"
-uuid: "f0e47f73-3079-8ebc-963a-f0a83c89a20f"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - delivery
-    - law
-    - link
-    - merge
-    - rate
-    - shipping
-    - sti
-    - time
-  out:
-    - collapse
-    - delivery
-    - law
-    - link
-    - merge
-    - rate
-    - shipping
-    - sti
-    - time
+coordinate: "settings · 1/base · 2cb5256e"
+contentUuid: "59d1ed29-e7d7-5e5a-ab11-e933d31119ed"
+diamondUuid: "bde40f87-c8cc-886d-bf18-928e2d55bf61"
+uuid: "2cb5256e-4fe7-8ab1-ad1e-98a1bb405a5a"
+horo: 1
 typography:
   partition: settings
   bondDegree: 30
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - delivery
-    - law
-    - link
-    - merge
-    - rate
-    - shipping
-    - sti
-    - time
-  matrix:
-    - collapse
-    - delivery
-    - law
-    - link
-    - merge
-    - rate
-    - shipping
-    - sti
-    - time
-  backlinks:
-    - collapse
-    - delivery
-    - law
-    - link
-    - merge
-    - rate
-    - shipping
-    - sti
-    - time
 signatures:
-  computationUuid: "bc1bbcb3-3535-8bbe-87ac-7d3e0ba8c6ac"
+  computationUuid: "ed0483fc-0018-8325-bad5-c9063e260a18"
   stages:
     - stage: path
       stageUuid: "8e505a45-34fe-8ec3-8437-8405f83e565b"
@@ -78,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "74f2b6d4-9e1f-8469-bf14-c7ecd5309579"
     - stage: horo
-      stageUuid: "f3d2bea3-7904-89f8-be4d-656d97cbdd7d"
+      stageUuid: "2342010c-13c2-827d-89cb-9f969767d06d"
     - stage: seal
-      stageUuid: "acbaf65f-2e0d-826c-9580-fa1b2ecd0efc"
+      stageUuid: "895a5f47-709d-8af4-902f-421cab430de0"
     - stage: uuid
-      stageUuid: "77f12ade-4195-8061-ad7a-52ba1b98e95e"
+      stageUuid: "3e44408a-5bc8-8ec1-a086-293f25d9aa72"
 version: 2
 ---
 # settings

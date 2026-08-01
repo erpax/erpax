@@ -1,68 +1,35 @@
 ---
 name: alley
 description: "Use when reasoning about alley as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/alley
-coordinate: alley · 4/weave · 0fc32ca2
-contentUuid: "50d0ba76-0992-5f61-95cd-b8410ff726f9"
-diamondUuid: "c2e674ff-6fde-8884-9ab9-b2654b1ec967"
-uuid: "0fc32ca2-5075-87f8-9e55-7e77c63e83ad"
-horo: 4
-bonds:
-  in:
-    - bowling
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - bowling
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/alley"
+coordinate: "vocabulary/alley · 7/descent · a180101e"
+contentUuid: "fc613fec-8d27-5807-939a-c81c498a39c7"
+diamondUuid: "a37acdd6-a629-8ac1-a5f1-7113951bba5c"
+uuid: "a180101e-8861-80f6-91d4-da6e5203165e"
+horo: 7
 typography:
-  partition: alley
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - bowling
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - bowling
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - bowling
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "79bc4cdb-0776-851b-9ed5-8f465f4b70cb"
+  computationUuid: "994da59f-5b15-87b4-a85a-2d1924cefda7"
   stages:
     - stage: path
-      stageUuid: "ba7005b9-b633-82b4-bb8c-a9382cb179f1"
+      stageUuid: "8b819090-1c0c-8f16-889e-82dcb99ab8c4"
     - stage: trinity
-      stageUuid: "2de141da-4777-840d-a00d-26dc6dd0c3c5"
+      stageUuid: "a5183b74-af88-80c3-acd1-5c0c9d92f4e6"
     - stage: boundary
-      stageUuid: "92ee1b90-bbf4-8f75-8bc7-d4815bf8b19c"
+      stageUuid: "f74e4dca-1a4c-8724-9ca2-6ad7b848199f"
     - stage: links
-      stageUuid: "999b4e99-37ca-8100-9676-b344768d4032"
+      stageUuid: "7ed1b7b8-67ce-8984-83fd-0af77b4c0b01"
     - stage: horo
-      stageUuid: "bf483b23-071a-8025-80b6-a6065db609cb"
+      stageUuid: "f95d0b8c-dc4f-822f-97e1-a739b390dd05"
     - stage: seal
-      stageUuid: "ad7891ed-d835-8220-9276-347f2cf26fa0"
+      stageUuid: "d6147dfb-8656-8c21-b7e9-dbed1184491b"
     - stage: uuid
-      stageUuid: "dd38ae0f-caf9-888b-8490-4a11c77d08e2"
+      stageUuid: "6196e9fa-e98f-8de1-8915-565c77d893b5"
 version: 2
 ---
 # alley

@@ -2,78 +2,19 @@
 name: utility
 description: "Use when dividing by anything that could be zero — pick the policy by what the zero MEANS (throw for money, collapse to 0 for an undefined ratio, coerce to 1 for an unset divisor) so ∞ or NaN never enters an account."
 atomPath: utility
-coordinate: utility · 8/crest · bad0e333
-contentUuid: "baf4c8ee-2e08-5ac7-a000-4c16a05cf80b"
-diamondUuid: "3c7e6291-349a-8a62-a8c8-ef34f2e7985a"
-uuid: "bad0e333-a64b-885b-9d69-9193df4ac121"
-horo: 8
-bonds:
-  in:
-    - accounting
-    - allocation
-    - balance
-    - decompression
-    - dimension
-    - law
-    - number
-    - orders
-    - peace
-    - torus
-    - zeropoint
-  out:
-    - accounting
-    - allocation
-    - balance
-    - decompression
-    - dimension
-    - law
-    - number
-    - orders
-    - peace
-    - torus
-    - zeropoint
+coordinate: "utility · 7/descent · a1956976"
+contentUuid: "34e9f073-fc6c-5c6f-80a9-25e6c0f10e97"
+diamondUuid: "621e7969-bcf4-8690-b075-99f136f3d9b3"
+uuid: "a1956976-6cda-8835-9cb1-6dbed5e38402"
+horo: 7
 typography:
   partition: utility
   bondDegree: 34
-  neighbors: []
 standards:
   - "IEEE-754"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - allocation
-    - balance
-    - law
-    - number
-    - orders
-    - zeropoint
-  matrix:
-    - accounting
-    - allocation
-    - balance
-    - decompression
-    - dimension
-    - law
-    - number
-    - orders
-    - peace
-    - torus
-    - zeropoint
-  backlinks:
-    - accounting
-    - allocation
-    - balance
-    - decompression
-    - dimension
-    - law
-    - number
-    - orders
-    - peace
-    - torus
-    - zeropoint
 signatures:
-  computationUuid: "19ad84e6-9202-81e3-91ce-4b2f63f410b3"
+  computationUuid: "6f38478d-157d-8e99-b79e-d83198f0b9b9"
   stages:
     - stage: path
       stageUuid: "3bd7aaa3-8111-88cb-a65d-18ce8b4fe6ba"
@@ -84,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2fc1f84a-a345-8352-9056-1745bc6f7680"
     - stage: horo
-      stageUuid: "d5a1f8e1-d6d7-8f01-9565-a9e09998e16e"
+      stageUuid: "475ee561-cc86-8e8d-beda-9e7eb684de28"
     - stage: seal
-      stageUuid: "fe6041f7-550d-8393-8e06-a43f7f649aeb"
+      stageUuid: "1ba2fdce-af5f-8292-b3ea-afe1aa151de9"
     - stage: uuid
-      stageUuid: "abbe928a-d12e-8e39-9919-e463cad9f6c2"
+      stageUuid: "df53518d-744c-8c7f-9b3c-ac982f71b3bc"
 version: 2
 ---
 # utility — the operational guard organ (no naked zero)

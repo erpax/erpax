@@ -1,58 +1,35 @@
 ---
 name: landform
 description: "Use when reasoning about landform — A landform or physical feature. Landform elements include mountains, plains, lakes, rivers, seascape and oceanic waterbody interface features such as bays, peninsulas, seas and so"
-atomPath: vocabulary/landform
-coordinate: landform · 2/share · c74ae7f4
-contentUuid: "979b688c-9887-5965-9d61-8cbec5a231df"
-diamondUuid: "7da932ee-a5bb-8be4-9dfe-6cbea52c50fc"
-uuid: "c74ae7f4-26ec-8aec-a08c-acb9c39bfe6e"
-horo: 2
-bonds:
-  in:
-    - law
-    - place
-    - thing
-  out:
-    - law
-    - place
-    - thing
+atomPath: "vocabulary/landform"
+coordinate: "vocabulary/landform · 4/weave · 9a22b51d"
+contentUuid: "102da27c-da64-55f3-b64c-bc0d5155e69b"
+diamondUuid: "fea70113-9e40-8f01-92ed-f9efbcdc6963"
+uuid: "9a22b51d-6aee-81ab-a12f-7dc8dab7978f"
+horo: 4
 typography:
-  partition: landform
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - place
-    - thing
-  matrix:
-    - law
-    - place
-    - thing
-  backlinks:
-    - law
-    - place
-    - thing
 signatures:
-  computationUuid: "d4ce69a8-24b1-80e5-b780-daf306393df2"
+  computationUuid: "c1d054ce-2134-86b0-876c-b27d529af350"
   stages:
     - stage: path
-      stageUuid: "49732dcf-1122-8e09-9cbf-2afbf3ed0e27"
+      stageUuid: "c53a4183-6841-8245-a235-2d68b5b4d994"
     - stage: trinity
-      stageUuid: "ef0286a5-65bf-812f-b539-d8db12807381"
+      stageUuid: "c031a106-cae8-8f70-8d87-ed3698180665"
     - stage: boundary
-      stageUuid: "a9398e01-b734-8468-bc29-1b752b8014e9"
+      stageUuid: "0db57666-fc56-8d65-8941-be06b7f9d65c"
     - stage: links
-      stageUuid: "88ce917f-b46d-8a74-8520-74e6a55954f3"
+      stageUuid: "fa8bdf29-9526-8bfc-9070-36e4d342f64f"
     - stage: horo
-      stageUuid: "fc909ae7-4289-8ce9-b390-b256878f699b"
+      stageUuid: "dda6625d-e7a6-8fc6-adc8-26eb592187d5"
     - stage: seal
-      stageUuid: "1972b512-d850-8415-a063-30c0b0db26b9"
+      stageUuid: "91d16066-00df-8573-b2db-68c4a30849d1"
     - stage: uuid
-      stageUuid: "0ee74cdf-b04c-8f67-8fbe-efce917347ae"
+      stageUuid: "d8d9c89c-aed5-8317-87cf-b28e9454bc86"
 version: 2
 ---
 # landform

@@ -1,63 +1,35 @@
 ---
 name: obstetric
 description: "Use when reasoning about obstetric as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/obstetric
-coordinate: obstetric · 2/share · 20e87656
-contentUuid: "986746b3-d3be-5be7-86c9-c0ba4071de65"
-diamondUuid: "ca622e2f-c7cd-8f29-9997-46a941e526bc"
-uuid: "20e87656-da2b-8b34-af24-733c68efe8e2"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/obstetric"
+coordinate: "vocabulary/obstetric · 1/base · 433414df"
+contentUuid: "d25eea18-a1c8-570a-b0ab-fa8de725fd0e"
+diamondUuid: "db1f538f-8b8e-8af0-aec0-e3a2a16ddf77"
+uuid: "433414df-db50-8803-8327-55f2dcad4298"
+horo: 1
 typography:
-  partition: obstetric
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "24d767db-d1ff-8688-a1cd-2612dd9a4a6b"
+  computationUuid: "57ff8eeb-4fc4-8358-9db7-ee791af2963a"
   stages:
     - stage: path
-      stageUuid: "fa8329ed-7f6f-8b4a-9790-b75beb81690d"
+      stageUuid: "384987fe-ac72-86e7-aada-9c85e66eaa5a"
     - stage: trinity
-      stageUuid: "3da1e484-2136-88f0-ba91-56ae00d4e8c3"
+      stageUuid: "e0d5995b-7def-8b95-ba15-f6febb961172"
     - stage: boundary
-      stageUuid: "132adaa8-e2bc-8e80-8f52-457f9a8558de"
+      stageUuid: "301ae74b-2b15-8de3-9f60-d455d418723b"
     - stage: links
-      stageUuid: "b44bce7c-568c-8955-a640-95c8479ca1ad"
+      stageUuid: "55c1529c-e79c-8fa9-ab56-fb838155f442"
     - stage: horo
-      stageUuid: "548adf78-96a2-88d1-9461-65bfbe544eda"
+      stageUuid: "3f582193-cb92-81de-84cc-92d73ab82b9b"
     - stage: seal
-      stageUuid: "0cc08eb6-b10e-826b-8d70-2a7813b2a722"
+      stageUuid: "55d82353-7e70-817e-b067-57bb4885e904"
     - stage: uuid
-      stageUuid: "088b6232-cfb2-8a26-8346-5ece64621dca"
+      stageUuid: "1742a540-b557-8e94-90cb-89218061d452"
 version: 2
 ---
 # obstetric

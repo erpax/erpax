@@ -1,78 +1,34 @@
 ---
 name: maxtampercost
 description: "Use when reasoning about max tamper-cost — the weakest-link minimum across all dimensions; alias for analytics/max-tamper-cost lever vocabulary."
-atomPath: vocabulary/maxtampercost
-coordinate: maxtampercost · 4/weave · 7c7f02b8
-contentUuid: "4059e564-07ca-59a4-a9f1-1b77a495a45d"
-diamondUuid: "67538806-67ff-8d07-a835-3ae9a58e9153"
-uuid: "7c7f02b8-65f5-8a40-8d4f-32c61a48ef96"
-horo: 4
-bonds:
-  in:
-    - analytics
-    - cost
-    - law
-    - maxtampercost
-    - purity
-    - tamper
-  out:
-    - analytics
-    - cost
-    - law
-    - maxtampercost
-    - purity
-    - tamper
+atomPath: "vocabulary/maxtampercost"
+coordinate: "vocabulary/maxtampercost · 2/share · a37ab31d"
+contentUuid: "2dc53c07-1cfe-5024-8b9b-0176533970a8"
+diamondUuid: "71256206-8ede-8955-a153-79dde30ee1c1"
+uuid: "a37ab31d-dd8e-8d43-8af9-38cb64074d3f"
+horo: 2
 typography:
-  partition: maxtampercost
-  bondDegree: 28
-  neighbors:
-    - analytics
-    - "analytics/max-tamper-cost"
-    - aura
-    - diamond
-    - hallucination
-    - purity
+  partition: vocabulary
+  bondDegree: 27
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - analytics
-    - cost
-    - law
-    - maxtampercost
-    - purity
-    - tamper
-  matrix:
-    - analytics
-    - cost
-    - law
-    - maxtampercost
-    - purity
-    - tamper
-  backlinks:
-    - analytics
-    - cost
-    - law
-    - maxtampercost
-    - purity
-    - tamper
 signatures:
-  computationUuid: "499cddf2-4529-849d-9585-ed625285a89c"
+  computationUuid: "9a6fedef-0ff7-8a93-b9c4-9d3358c009ed"
   stages:
     - stage: path
-      stageUuid: "50548a76-deaf-8acc-8f07-3aa0c9396a65"
+      stageUuid: "3572019e-6a5c-8a2d-8da2-7f14d46385dd"
     - stage: trinity
-      stageUuid: "788b635f-eb46-850e-8a30-db3057e209b0"
+      stageUuid: "c63d8023-bf0c-87f5-a7c4-e6f05ffe82b8"
     - stage: boundary
-      stageUuid: "ef15ac0c-300b-8e7a-bf0d-5d970a657cff"
+      stageUuid: "4f1bdbbf-e308-8366-8387-174795a5f496"
     - stage: links
-      stageUuid: "c0299024-4be7-8868-9df3-6ba5a7ba3096"
+      stageUuid: "06979e60-9fed-83bb-b635-27c92909b5f8"
     - stage: horo
-      stageUuid: "061590c2-1817-8998-aac5-fa52bcd2f081"
+      stageUuid: "eff9a390-228f-84ed-809c-78ef224589e3"
     - stage: seal
-      stageUuid: "9292fe60-8e9e-8325-816b-17c6e79a0623"
+      stageUuid: "9367c233-0756-8050-8e31-0ffc74938fe3"
     - stage: uuid
-      stageUuid: "770c56ea-68e8-8f71-a729-671fa624f455"
+      stageUuid: "29440773-a8f0-8e72-adeb-22c713d43d18"
 version: 2
 ---
 # maxtampercost

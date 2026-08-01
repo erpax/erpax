@@ -1,78 +1,35 @@
 ---
 name: interior
 description: "Use when reasoning about interior as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/interior
-coordinate: interior · 7/descent · 493a906b
-contentUuid: "66a21573-560d-594c-8d8c-ef423dee97f4"
-diamondUuid: "a7e1bb10-2762-845a-8395-00fa654c27fa"
-uuid: "493a906b-72f5-8fb1-a0dd-7782549ce162"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - color
-    - law
-    - merge
-    - sti
-    - type
-    - vehicle
-  out:
-    - collapse
-    - color
-    - law
-    - merge
-    - sti
-    - type
-    - vehicle
+atomPath: "vocabulary/interior"
+coordinate: "vocabulary/interior · 2/share · 6fd3ff52"
+contentUuid: "53351ba2-4cb9-5d4f-b7c9-6009a2bd8d1b"
+diamondUuid: "da46b086-a128-8c6b-a259-156aae859e96"
+uuid: "6fd3ff52-859d-83ee-95fd-6908bccc864e"
+horo: 2
 typography:
-  partition: interior
+  partition: vocabulary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - color
-    - law
-    - merge
-    - sti
-    - type
-    - vehicle
-  matrix:
-    - collapse
-    - color
-    - law
-    - merge
-    - sti
-    - type
-    - vehicle
-  backlinks:
-    - collapse
-    - color
-    - law
-    - merge
-    - sti
-    - type
-    - vehicle
 signatures:
-  computationUuid: "24ed6a0a-d812-8437-8827-2c0b916f6e95"
+  computationUuid: "1feafdd8-188b-821d-b916-93a9dfdeb1de"
   stages:
     - stage: path
-      stageUuid: "e73fc0fd-390e-8330-8ca3-a3e6cb6fa8af"
+      stageUuid: "23015430-9f59-8553-94af-14a26134c86d"
     - stage: trinity
-      stageUuid: "bb629c44-8010-86a2-91b5-3d268e1f1391"
+      stageUuid: "09605929-ad73-8135-b313-1f337192d590"
     - stage: boundary
-      stageUuid: "6390b52f-629a-8acd-b204-856369772bfe"
+      stageUuid: "c5ed7a89-fd5e-8c33-9b5f-382b602b6b40"
     - stage: links
-      stageUuid: "c46d25a5-1592-89a5-a8b4-f09d600b180b"
+      stageUuid: "cb0d7f72-b375-8b43-92cf-9461378560c9"
     - stage: horo
-      stageUuid: "25ceb8b6-8cf5-800b-adc0-29354ed7fec2"
+      stageUuid: "f46c4bbe-cf86-883c-af6a-55099cde83f8"
     - stage: seal
-      stageUuid: "38865a9d-47a0-8e60-a268-32f02c5d37f8"
+      stageUuid: "d12d29af-9811-8577-9cb4-f6a932a4abd1"
     - stage: uuid
-      stageUuid: "7e44eb57-c781-8f85-9ad9-34e0dd5d559a"
+      stageUuid: "9d748fa8-2788-854a-9dcd-27d095aa9f22"
 version: 2
 ---
 # interior

@@ -2,22 +2,14 @@
 name: frameworks
 description: "Use when registering or browsing the reference library of compliance frameworks — IFRS, SOX, GDPR, ISO-27001, COSO, tax, ESG, banking — with code, category, issuing body, effective date, and official resource URL; super-admin-only writes, tenant-read. The read-only compliance-framework master that ComplianceRequirements link to."
 atomPath: "compliance/frameworks"
-coordinate: "compliance/frameworks · 7/descent · 959d28b0"
-contentUuid: "167d574b-308b-548d-a436-c6fcad810471"
-diamondUuid: "cc8987c0-f8f1-8593-ae41-3674f2ff4a5f"
-uuid: "959d28b0-0957-8b44-9c77-5abaa2325880"
-horo: 7
-bonds:
-  in:
-    - requirements
-    - standard
-  out:
-    - requirements
-    - standard
+coordinate: "compliance/frameworks · 8/crest · 1dd70e90"
+contentUuid: "fa46bafe-5525-54a8-bcb8-3fe2c4e08433"
+diamondUuid: "466331b9-1d1a-8eea-ae95-a2ed942ee3bd"
+uuid: "1dd70e90-5578-8da8-aa0c-689e31ad6128"
+horo: 8
 typography:
   partition: compliance
   bondDegree: 0
-  neighbors: []
 standards:
   - "COSO-2013"
   - "COSO-2013 internal-control-integrated-framework"
@@ -27,17 +19,8 @@ standards:
   - "US-CTA-2021"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - requirements
-  matrix:
-    - requirements
-    - standard
-  backlinks:
-    - requirements
-    - standard
 signatures:
-  computationUuid: "225a34af-0152-8f20-a577-1d8f3ccf05b1"
+  computationUuid: "5bb29dfe-103d-8b67-b524-4eee7c5a39af"
   stages:
     - stage: path
       stageUuid: "52125b33-5e80-8de4-84b6-244511383a6f"
@@ -48,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "5af70cb3-e051-8ffb-932b-b6010fd888c2"
     - stage: horo
-      stageUuid: "9fd70ffe-7ed7-803a-9829-f55cf998eacb"
+      stageUuid: "edd6fa04-4f27-8d05-9b68-7b23dd71a5aa"
     - stage: seal
       stageUuid: "895746e9-e7fa-8a41-ba9f-2cf92387a576"
     - stage: uuid
-      stageUuid: "abf85d4b-c83e-896c-a241-494b2ffc65c8"
+      stageUuid: "ec6ea614-6a29-869a-9322-0073a3bb8201"
 version: 2
 ---
 # compliance-frameworks

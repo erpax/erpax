@@ -1,78 +1,35 @@
 ---
 name: pregnancy
 description: "Use when reasoning about pregnancy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/pregnancy
-coordinate: pregnancy · 2/share · 89211f14
-contentUuid: "a44f9391-9d06-579e-957d-4e93555afb6b"
-diamondUuid: "e96d2e18-bead-840d-b476-289d907a6423"
-uuid: "89211f14-96c3-8a4f-b7c2-e2ed1467e542"
-horo: 2
-bonds:
-  in:
-    - category
-    - collapse
-    - drug
-    - law
-    - merge
-    - sti
-    - warning
-  out:
-    - category
-    - collapse
-    - drug
-    - law
-    - merge
-    - sti
-    - warning
+atomPath: "vocabulary/pregnancy"
+coordinate: "vocabulary/pregnancy · 4/weave · a6e2b84b"
+contentUuid: "b21236ac-14ee-5da2-a41a-a754988574ba"
+diamondUuid: "5d46afad-8ca5-8bca-aae8-64105f533345"
+uuid: "a6e2b84b-4f8d-8b6f-a220-d520f73450eb"
+horo: 4
 typography:
-  partition: pregnancy
-  bondDegree: 24
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 26
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - category
-    - collapse
-    - drug
-    - law
-    - merge
-    - sti
-    - warning
-  matrix:
-    - category
-    - collapse
-    - drug
-    - law
-    - merge
-    - sti
-    - warning
-  backlinks:
-    - category
-    - collapse
-    - drug
-    - law
-    - merge
-    - sti
-    - warning
 signatures:
-  computationUuid: "b18cda41-4ed2-85f7-be37-00397e3c17ce"
+  computationUuid: "aecfe4ad-757b-8f93-8b01-6e9f23df8085"
   stages:
     - stage: path
-      stageUuid: "3845fe18-0b61-84ef-911c-a9f90723b67b"
+      stageUuid: "3469e18c-9150-8632-ab7f-37d068297842"
     - stage: trinity
-      stageUuid: "dc2cbc1f-0f0a-8058-9d07-106ecf2ea14a"
+      stageUuid: "aaa24cfb-10de-8a8f-8709-d856a23386e7"
     - stage: boundary
-      stageUuid: "f2d3bb10-8fab-8e5a-94eb-ddfaa1e9e0d4"
+      stageUuid: "97fb354d-7f8e-8f1f-adae-47421d367ffd"
     - stage: links
-      stageUuid: "6e85410f-4dae-8712-a456-4ff4f49685dd"
+      stageUuid: "2e8118b1-369d-8ea9-b71b-266e7d9c9550"
     - stage: horo
-      stageUuid: "cab00577-62f0-80b4-bfcb-b9c9aeeea0cc"
+      stageUuid: "23d38653-e89e-8cf0-8f68-1d82ea85096b"
     - stage: seal
-      stageUuid: "df46603c-5f08-8de8-ba31-b3e1c3167384"
+      stageUuid: "60636cfc-0a39-8ec2-88b3-5ef88db1a22c"
     - stage: uuid
-      stageUuid: "345678a7-d86e-8d13-a670-59f560a16153"
+      stageUuid: "36668b13-f435-8c4d-a4c6-5f15c76afdf8"
 version: 2
 ---
 # pregnancy

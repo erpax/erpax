@@ -2,35 +2,14 @@
 name: receipts
 description: "Use when confirming vendor goods arrival — receipt number, purchase order link, received-at date, line quantities, and GL accrual (debit inventory/credit AP) per IAS-2 §10, with revenue timing deferred to the FOB point per IFRS-15 §38-42. The second leg of the SOX three-way match that separates inventory accrual from revenue recognition."
 atomPath: "items/purchase/orders/goods/receipts"
-coordinate: "items/purchase/orders/goods/receipts · 8/crest · 4690034c"
-contentUuid: "43250960-891e-581b-9314-f6cd163c9263"
-diamondUuid: "d092b40e-8c22-811e-8a08-7435095517df"
-uuid: "4690034c-ff8b-8b22-bd2f-5a7dc038d153"
-horo: 8
-bonds:
-  in:
-    - accounting
-    - collections
-    - fields
-    - goods
-    - law
-    - proof
-    - sales
-    - supto
-    - versions
-  out:
-    - accounting
-    - collections
-    - fields
-    - law
-    - proof
-    - sales
-    - supto
-    - versions
+coordinate: "items/purchase/orders/goods/receipts · 4/weave · 7842be73"
+contentUuid: "3c357879-12e0-5996-8bfd-1622a7a7b80d"
+diamondUuid: "5498dd0a-ece7-8c74-8bc2-1d87f676e93d"
+uuid: "7842be73-9c67-8b14-8eac-61c39b86a94b"
+horo: 4
 typography:
   partition: items
   bondDegree: 34
-  neighbors: []
 standards:
   - "EN-16931:2017 §BG-13 delivery-information"
   - "EN-16931:2017 §BG-13 delivery-information`"
@@ -42,29 +21,8 @@ standards:
   - "US-GAAP ASC-330 inventory at-cost"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-  matrix:
-    - accounting
-    - collections
-    - fields
-    - law
-    - proof
-    - sales
-    - supto
-    - versions
-  backlinks:
-    - accounting
-    - collections
-    - fields
-    - law
-    - proof
-    - sales
-    - supto
-    - versions
 signatures:
-  computationUuid: "de907b03-3a9d-85f4-b617-fe8c46924f0d"
+  computationUuid: "eb4d7839-31b3-8ed8-b2a5-ce9ac2cabb0f"
   stages:
     - stage: path
       stageUuid: "0dab4d6c-f8c4-8dd3-873e-4fa630c0ad97"
@@ -75,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "77d4caf5-883c-891a-abdb-8f533d764c5f"
     - stage: horo
-      stageUuid: "058603d9-1fb0-8fa0-8f3f-c6f263e29bf6"
+      stageUuid: "11293913-18b9-8bdd-afaa-e74f15affd9b"
     - stage: seal
       stageUuid: "ba660399-fbfd-8d9d-bbe8-2f44cff5e4be"
     - stage: uuid
-      stageUuid: "6983e527-b101-84df-bfc9-77678f13b42e"
+      stageUuid: "72e46c52-6e70-82c4-ba69-4b9fdfa4067d"
 version: 2
 ---
 # goods-receipts

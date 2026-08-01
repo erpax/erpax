@@ -1,68 +1,35 @@
 ---
 name: embed
 description: "Use when reasoning about embed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/embed
-coordinate: embed · 2/share · b3b49cd2
-contentUuid: "1e62f123-5897-5424-96f2-ed8b1d1dedee"
-diamondUuid: "666f3c64-723b-828d-bb36-67014fc8ae18"
-uuid: "b3b49cd2-b809-881e-a96a-fe68941deb6e"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - url
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - url
+atomPath: "vocabulary/embed"
+coordinate: "vocabulary/embed · 8/crest · 11788dfa"
+contentUuid: "b3a09547-81d1-568a-bb12-c5576459a979"
+diamondUuid: "beb346ab-2958-8332-8c5d-0ffc869d69a4"
+uuid: "11788dfa-5167-8b8f-ae48-6dcedc4c1ce0"
+horo: 8
 typography:
-  partition: embed
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - url
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - url
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - url
 signatures:
-  computationUuid: "ed914410-ea39-8542-b2bc-64e1add3bae0"
+  computationUuid: "80736d80-5259-863b-a4e5-dcdad82c42d6"
   stages:
     - stage: path
-      stageUuid: "5fad98f9-efd9-83ae-a840-871053ed53c3"
+      stageUuid: "eac56252-b720-8d38-bd81-26dc51c466ae"
     - stage: trinity
-      stageUuid: "ab061998-db8d-8831-ad87-6838a387db73"
+      stageUuid: "1d95e79d-6f4f-8421-8043-ee448a3967a5"
     - stage: boundary
-      stageUuid: "4f96e4b4-9d60-857c-b999-e47013dabc70"
+      stageUuid: "6a22d1a3-c6b5-84a2-8439-6072ccecb8d3"
     - stage: links
-      stageUuid: "c661b2e3-410e-82c3-8f2d-31b1f1fa0b79"
+      stageUuid: "3ddab6f3-9c32-8bc7-9f0e-44316f82a974"
     - stage: horo
-      stageUuid: "d1d19b2c-6410-88da-96e6-3037c32e9b4f"
+      stageUuid: "d354a398-c673-8acf-be95-125dc0013d58"
     - stage: seal
-      stageUuid: "21d45679-ebe1-8ea6-b19e-7a8097095a3a"
+      stageUuid: "2dccbae6-61af-8667-923b-45d4de428938"
     - stage: uuid
-      stageUuid: "68b89454-c6f8-88ff-8644-c499751d7eb7"
+      stageUuid: "74aca2b4-20cb-83fb-b851-0b6bbd07ee7a"
 version: 2
 ---
 # embed

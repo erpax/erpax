@@ -1,53 +1,35 @@
 ---
 name: follows
 description: "Use when reasoning about follows — The most generic uni-directional social relation."
-atomPath: vocabulary/follows
-coordinate: follows · 5/round · fa6e4baa
-contentUuid: "96afdfc3-8bac-5c13-88c9-3d70c973a0ae"
-diamondUuid: "676e805d-c659-853b-a998-63e7c1a02a68"
-uuid: "fa6e4baa-9251-8890-b9d4-cd2149a31fa9"
-horo: 5
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/follows"
+coordinate: "vocabulary/follows · 8/crest · 9a9316f0"
+contentUuid: "c22fca88-6b21-5531-ac2f-939ca23878aa"
+diamondUuid: "2f8065ee-fa67-8709-90f6-a61ea58b992f"
+uuid: "9a9316f0-c917-808a-83e9-673f2f68b36a"
+horo: 8
 typography:
-  partition: follows
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "5999690d-1586-8e95-a1e4-1657a7daeb42"
+  computationUuid: "a719ec79-3203-8dee-b43e-59bfd9fe909e"
   stages:
     - stage: path
-      stageUuid: "0572bad4-65b7-80dd-8e1d-d0b93a18a829"
+      stageUuid: "031589f2-7490-8f3c-931d-5002863c13b9"
     - stage: trinity
-      stageUuid: "260c490b-9ae7-87d5-916b-d4ebcbc3e9bf"
+      stageUuid: "2095d900-8375-8f54-94dc-70105bf68fd5"
     - stage: boundary
-      stageUuid: "e770f1ee-7fea-8f9a-ada7-8d7aed8415e0"
+      stageUuid: "2ff0c4b3-ca71-8daf-be83-0681dd3e217e"
     - stage: links
-      stageUuid: "1aa74d1a-f159-85ab-a990-1ad10e85c3e4"
+      stageUuid: "30d15a66-840a-8bf1-b290-433c64a88069"
     - stage: horo
-      stageUuid: "9725242a-96d4-824f-aa0d-5cc145702372"
+      stageUuid: "81323fbd-723d-8280-a62b-4b0be2f5c757"
     - stage: seal
-      stageUuid: "8952d787-0ee0-896e-a9cb-82bb1c1af0d2"
+      stageUuid: "2a6de567-3c1e-894d-92ec-385329ff7f19"
     - stage: uuid
-      stageUuid: "e1853bc8-5009-862a-885c-4ec4ba34a455"
+      stageUuid: "f454cdbb-e1d2-8186-bb36-36b169f6c1de"
 version: 2
 ---
 # follows

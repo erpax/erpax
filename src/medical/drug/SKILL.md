@@ -2,95 +2,19 @@
 name: drug
 description: "Use when reasoning about drug as a medical facet of [[medical]] — vocabulary pivot to @/drug; nested not duplicated."
 atomPath: "medical/drug"
-coordinate: "medical/drug · 5/round · 6a9edae6"
-contentUuid: "1557a367-cb75-57e2-90a8-99d3f62d8f95"
-diamondUuid: "a87cf95d-e94f-87b6-8f6e-a95af51e8f6a"
-uuid: "6a9edae6-ba5a-8cd5-ba24-fe48c6e67414"
+coordinate: "medical/drug · 5/round · 11ebf802"
+contentUuid: "6f6763d3-b18e-5dd3-abb9-54da0fa6e5f5"
+diamondUuid: "e24083f2-28c2-84e4-ba12-5e3d6a57b00a"
+uuid: "11ebf802-82b7-87c2-84d3-77b2e9b08957"
 horo: 5
-bonds:
-  in:
-    - category
-    - class
-    - drug
-    - interacting
-    - law
-    - legal
-    - medical
-    - merge
-    - option
-    - plan
-    - pregnancy
-    - prescription
-    - related
-    - strength
-    - tier
-    - unit
-  out:
-    - category
-    - class
-    - drug
-    - interacting
-    - law
-    - legal
-    - medical
-    - merge
-    - option
-    - plan
-    - pregnancy
-    - prescription
-    - related
-    - strength
-    - tier
-    - unit
 typography:
   partition: medical
   bondDegree: 65
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - drug
-    - law
-    - medical
-    - merge
-  matrix:
-    - category
-    - class
-    - drug
-    - interacting
-    - law
-    - legal
-    - medical
-    - merge
-    - option
-    - plan
-    - pregnancy
-    - prescription
-    - related
-    - strength
-    - tier
-    - unit
-  backlinks:
-    - category
-    - class
-    - drug
-    - interacting
-    - law
-    - legal
-    - medical
-    - merge
-    - option
-    - plan
-    - pregnancy
-    - prescription
-    - related
-    - strength
-    - tier
-    - unit
 signatures:
-  computationUuid: "b56c6aab-6c8f-8b7a-bbf2-0ea62d4772cd"
+  computationUuid: "ddee7612-f147-8ab0-88c7-99f543ba7fdf"
   stages:
     - stage: path
       stageUuid: "f345f8f7-f60e-815f-a6cc-e93cf4b5ca6f"
@@ -101,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a2223e89-33aa-87e0-a0ea-1e82fc081b90"
     - stage: horo
-      stageUuid: "9a9d37d7-16ae-80c5-8e73-fa742f2830c5"
+      stageUuid: "9dc05567-2609-8a30-b73c-cbc441c59803"
     - stage: seal
       stageUuid: "7a1136af-b860-8e97-abd1-181cb88dac67"
     - stage: uuid
-      stageUuid: "92ae82da-2339-87f8-a07d-3c98cc044015"
+      stageUuid: "789f681c-b334-8b13-9f5e-1f6426bc85a9"
 version: 2
 ---
 # medical/drug — medical facet

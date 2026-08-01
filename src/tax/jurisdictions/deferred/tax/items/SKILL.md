@@ -1,171 +1,38 @@
 ---
 name: items
 description: "Use when originating or reversing IAS-12 deferred-tax positions — deductible/taxable temporary differences, tax-loss/credit carry-forwards, realisation probability, expected reversal date, substantively-enacted rate measurement and linking to the journal-entry booking. The IAS-12 deferred-tax register collection."
-atomPath: tax/jurisdictions/deferred/tax/items
-coordinate: tax/jurisdictions/deferred/tax/items · 4/weave · f3b6cef2
-contentUuid: "c4c9433f-3e30-59c9-a88d-73b137d37eb7"
-diamondUuid: "2efde30c-969b-8262-9599-2328a4a81aea"
-uuid: "f3b6cef2-4b08-8ea3-b366-082e9a235d68"
-horo: 4
-bonds:
-  in:
-    - agriculture
-    - apiculture
-    - aquaculture
-    - batches
-    - biomass
-    - bundle
-    - crop
-    - cropplan
-    - currency
-    - declarations
-    - forestry
-    - harvest
-    - inspections
-    - lactation
-    - law
-    - lines
-    - livestock
-    - materials
-    - measure
-    - merge
-    - movements
-    - num
-    - orders
-    - packages
-    - packs
-    - postharvest
-    - quotes
-    - seed
-    - share
-    - tax
-    - upsell
-    - variant
-  out:
-    - agriculture
-    - apiculture
-    - aquaculture
-    - batches
-    - biomass
-    - bundle
-    - crop
-    - cropplan
-    - currency
-    - declarations
-    - forestry
-    - harvest
-    - inspections
-    - lactation
-    - law
-    - lines
-    - livestock
-    - materials
-    - measure
-    - merge
-    - movements
-    - num
-    - orders
-    - packages
-    - packs
-    - postharvest
-    - quotes
-    - seed
-    - share
-    - upsell
-    - variant
+atomPath: "tax/jurisdictions/deferred/tax/items"
+coordinate: "tax/jurisdictions/deferred/tax/items · 7/descent · 1becbdb8"
+contentUuid: "5606e7d2-eae9-5059-a14e-7d53cb6472ba"
+diamondUuid: "003a6d7b-c43e-8595-85a0-ce36c2a34dc4"
+uuid: "1becbdb8-b15e-89dd-a458-ca0389eeb980"
+horo: 7
 typography:
   partition: tax
-  bondDegree: 116
-  neighbors: []
+  bondDegree: 112
 standards:
   - "IAS-12"
   - "IFRS IAS-12 §15-§68 income-taxes"
+  - "IFRS IAS-12 §15-§68 income-taxes`"
   - "IFRS IAS-12 §29 deductible-temporary-differences"
+  - "IFRS IAS-12 §29 deductible-temporary-differences`"
   - "IFRS IAS-12 §34 deferred-tax-asset-recognition"
+  - "IFRS IAS-12 §34 deferred-tax-asset-recognition`"
   - "IFRS IAS-12 §47 measurement-using-substantively-enacted-rate"
+  - "IFRS IAS-12 §47 measurement-using-substantively-enacted-rate`"
   - "IFRS IAS-12 §74 offsetting-deferred-tax-assets-and-liabilities"
-  - "ISO 19011:2018 §6.4.6 audit-evidence-deferred-tax"
+  - "IFRS IAS-12 §74 offsetting-deferred-tax-assets-and-liabilities`"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time origination-reversal"
+  - "ISO-8601-1:2019 date-time origination-reversal`"
   - "SOX §404 internal-controls TOM-TAX-02"
   - "US-GAAP"
   - "US-GAAP ASC-740 income-taxes"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - currency
-    - identity
-    - proof
-    - standard
-    - tax
-    - transaction
-  matrix:
-    - agriculture
-    - apiculture
-    - aquaculture
-    - batches
-    - biomass
-    - bundle
-    - crop
-    - cropplan
-    - currency
-    - declarations
-    - forestry
-    - harvest
-    - inspections
-    - lactation
-    - law
-    - lines
-    - livestock
-    - materials
-    - measure
-    - merge
-    - movements
-    - num
-    - orders
-    - packages
-    - packs
-    - postharvest
-    - quotes
-    - seed
-    - share
-    - upsell
-    - variant
-  backlinks:
-    - agriculture
-    - apiculture
-    - aquaculture
-    - batches
-    - biomass
-    - bundle
-    - crop
-    - cropplan
-    - currency
-    - declarations
-    - forestry
-    - harvest
-    - inspections
-    - lactation
-    - law
-    - lines
-    - livestock
-    - materials
-    - measure
-    - merge
-    - movements
-    - num
-    - orders
-    - packages
-    - packs
-    - postharvest
-    - quotes
-    - seed
-    - share
-    - upsell
-    - variant
 signatures:
-  computationUuid: "0ddfb55c-9f37-8f50-a581-222456579157"
+  computationUuid: "0e5f11d0-4409-8fa5-b5ff-ac6e5239f5b9"
   stages:
     - stage: path
       stageUuid: "6cd6203d-96b1-8e18-b1fd-220149c4343a"
@@ -176,11 +43,11 @@ signatures:
     - stage: links
       stageUuid: "ff78e8da-ca00-8897-97a4-72a10b82fc98"
     - stage: horo
-      stageUuid: "7e22c70a-0c0e-8485-a311-62b833347247"
+      stageUuid: "c5e5f113-739c-84a6-853b-0db1453e2642"
     - stage: seal
       stageUuid: "40ea48fa-ea26-8af4-9173-2384ceef4f40"
     - stage: uuid
-      stageUuid: "2b9d19f3-4510-84d8-9278-bde858c8f77c"
+      stageUuid: "4d4a44ad-6b96-8adc-acfb-fd681ef7e2f8"
 version: 2
 ---
 # deferred-tax-items

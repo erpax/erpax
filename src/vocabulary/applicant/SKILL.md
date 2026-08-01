@@ -1,73 +1,35 @@
 ---
 name: applicant
 description: "Use when reasoning about applicant as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/applicant
-coordinate: applicant · 8/crest · 0f687455
-contentUuid: "fe8e9878-37fe-5716-8fd7-23f77814f3d9"
-diamondUuid: "e7588a37-36fc-8be1-941e-abc4d11745bf"
-uuid: "0f687455-9feb-8e93-8b48-34144cee9059"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - location
-    - merge
-    - requirements
-    - sti
-  out:
-    - collapse
-    - law
-    - location
-    - merge
-    - requirements
-    - sti
+atomPath: "vocabulary/applicant"
+coordinate: "vocabulary/applicant · 2/share · 04558af8"
+contentUuid: "9266cac3-2a5e-50cd-95e2-cebd1c75158f"
+diamondUuid: "da496c19-1dbd-88bd-aa97-29ebafe13944"
+uuid: "04558af8-fed6-82db-9b68-d5047d54a723"
+horo: 2
 typography:
-  partition: applicant
-  bondDegree: 19
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 21
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - location
-    - merge
-    - requirements
-    - sti
-  matrix:
-    - collapse
-    - law
-    - location
-    - merge
-    - requirements
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - location
-    - merge
-    - requirements
-    - sti
 signatures:
-  computationUuid: "e0a1a262-4306-8a3b-8f8d-336e6ed45380"
+  computationUuid: "6a37d74b-4af4-80ec-b2f4-2e715359a43e"
   stages:
     - stage: path
-      stageUuid: "1477641e-14b0-8721-87c7-567d7684c01b"
+      stageUuid: "f60c61e2-2262-8de6-9ed5-73868d0a0e97"
     - stage: trinity
-      stageUuid: "9372b85f-2e4c-81d5-85e2-3beb81125668"
+      stageUuid: "bef3903b-9405-83c1-a5cb-89dcd813bbfe"
     - stage: boundary
-      stageUuid: "0d3016c2-11a8-8668-a3c1-14f9a1e729bd"
+      stageUuid: "5b33f922-df8f-88f5-8b3f-270cb07c9ad7"
     - stage: links
-      stageUuid: "c910bbbc-d138-80fb-ae72-5a3e1db4af12"
+      stageUuid: "486f7645-9c8b-8dd8-b1e2-d08f142cb361"
     - stage: horo
-      stageUuid: "c920b88b-0d4d-8960-a362-2d873c2bfa4a"
+      stageUuid: "6a3e2ec6-03a6-84d3-a5dc-f933c3b18696"
     - stage: seal
-      stageUuid: "0b8bf061-11ab-85eb-8539-62b593736a22"
+      stageUuid: "7baa5108-3635-8a01-a10b-a466864e8fdf"
     - stage: uuid
-      stageUuid: "80eb30bb-9602-8316-be3e-8cde7a2d3dde"
+      stageUuid: "92634462-1209-8cb1-960b-25b9c2bcec6f"
 version: 2
 ---
 # applicant

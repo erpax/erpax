@@ -2,56 +2,14 @@
 name: federation
 description: "Use when designing inter-tenant content exchange, activity distribution, or federation protocols following ActivityPub / W3C Activity Streams — content-addressed row exchange between erpax tenants with independent peer verification, trust boundaries, and content-delivery semantics."
 atomPath: federation
-coordinate: "federation · 1/base · 28f33688"
-contentUuid: "79e8c77e-3f3a-5ac5-b0dc-efacece84df0"
-diamondUuid: "74776eff-3972-8129-a189-19bdd3ba2e09"
-uuid: "28f33688-3c77-8c2f-afae-7c5b89925fa9"
+coordinate: "federation · 1/base · c253007a"
+contentUuid: "4b0da414-81d6-58de-8607-76440dc8a8a4"
+diamondUuid: "e149d707-2bfa-8ef5-9b86-e7394e6e24e2"
+uuid: "c253007a-b91c-8385-970a-027ae732723a"
 horo: 1
-bonds:
-  in:
-    - access
-    - decentralization
-    - duality
-    - ecosystem
-    - event
-    - exchange
-    - fractal
-    - holographic
-    - hooks
-    - identity
-    - ingest
-    - law
-    - lineage
-    - merge
-    - replication
-    - sequence
-    - standard
-    - uuid
-    - workspace
-  out:
-    - access
-    - decentralization
-    - duality
-    - ecosystem
-    - event
-    - exchange
-    - fractal
-    - holographic
-    - hooks
-    - identity
-    - ingest
-    - law
-    - lineage
-    - merge
-    - replication
-    - sequence
-    - standard
-    - uuid
-    - workspace
 typography:
   partition: federation
   bondDegree: 57
-  neighbors: []
 standards:
   - W3C Activity Streams 2.0 + ActivityPub + LDN
   - "W3C Activity Streams 2.0 + ActivityPub + LDN`"
@@ -61,62 +19,8 @@ standards:
   - "W3C-VC-2.0"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - duality
-    - event
-    - fractal
-    - holographic
-    - hooks
-    - identity
-    - law
-    - merge
-    - sequence
-    - standard
-    - uuid
-  matrix:
-    - access
-    - decentralization
-    - duality
-    - ecosystem
-    - event
-    - exchange
-    - fractal
-    - holographic
-    - hooks
-    - identity
-    - ingest
-    - law
-    - lineage
-    - merge
-    - replication
-    - sequence
-    - standard
-    - uuid
-    - workspace
-  backlinks:
-    - access
-    - decentralization
-    - duality
-    - ecosystem
-    - event
-    - exchange
-    - fractal
-    - holographic
-    - hooks
-    - identity
-    - ingest
-    - law
-    - lineage
-    - merge
-    - replication
-    - sequence
-    - standard
-    - uuid
-    - workspace
 signatures:
-  computationUuid: "2a937a94-d6a1-8b67-b6ac-047943e4205c"
+  computationUuid: "9a7f2064-b776-8f00-bed5-9fc6023f5cb6"
   stages:
     - stage: path
       stageUuid: "7f9947bd-55cd-81c7-b4fe-3a1431596330"
@@ -127,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "73c3b056-6c5d-856b-be2e-f199cb01267b"
     - stage: horo
-      stageUuid: "96f895f5-5a5c-8a8d-9447-5df74163356a"
+      stageUuid: "4f87362b-352d-81ea-9166-b3cc0a3c4194"
     - stage: seal
       stageUuid: "2fe15827-bba1-882c-be1c-7cd6235582fe"
     - stage: uuid
-      stageUuid: "fd31b549-33bb-8743-b7ce-5ce777dfbceb"
+      stageUuid: "671daff0-76cc-8987-862d-1a6680afc6dd"
 version: 2
 ---
 # federation

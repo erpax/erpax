@@ -2,40 +2,30 @@
 name: shares
 description: "Use when granting, checking, or revoking uuid-based RBAC access (Law 59) — share bindings (granteeUuid, accessRole, targetUuid) per tenant over content-uuid-addressed resources; the access-control source of truth checkShare reads at read time, with each grant/revoke attested by a chain-linked audit leaf. Revocation is a soft flag, never a delete. The uuid-share RBAC binding collection."
 atomPath: shares
-coordinate: shares · 7/descent · 71d3583a
-contentUuid: "3822ca1c-0cf3-537e-98fd-508f572b3165"
-diamondUuid: "93a6f736-c656-8187-9bd0-e99c95d19c55"
-uuid: "71d3583a-3812-851d-b54e-897c33ff52a6"
-horo: 7
-bonds:
-  in:
-    - law
-  out:
-    - law
+coordinate: "shares · 1/base · eac6113c"
+contentUuid: "fd99f745-7c29-5386-b0df-7917008f6e8a"
+diamondUuid: "115c2850-69ff-8758-974e-6e49ee8563f8"
+uuid: "eac6113c-2e7f-878f-825a-cf0916e39938"
+horo: 1
 typography:
   partition: shares
   bondDegree: 9
-  neighbors: []
 standards:
-  - "Conservation Law 59 uuid-based-sharing-with-rbac"
   - "GDPR Article 32(1)(b) ongoing-confidentiality"
   - "ISO/IEC 27001 Annex A.9.2.3 privileged-access-rights"
+  - "ISO/IEC 27001 Annex A.9.2.3 privileged-access-rights`"
   - "ISO/IEC 27001 Annex A.9.4.1 information-access-restriction"
+  - "ISO/IEC 27001 Annex A.9.4.1 information-access-restriction`"
   - "NIST SP 800-162 §3 attribute-based-access-control"
+  - "NIST SP 800-162 §3 attribute-based-access-control`"
   - "NIST-SP-800-162"
   - "SOX §404 access-controls audit-evidenced-via-chain"
   - eIDAS
   - "eIDAS §3 sealed-grants (sign/admin)"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-  matrix:
-    - law
-  backlinks:
-    - law
 signatures:
-  computationUuid: "078f960a-edc8-8a04-92f1-b1b64d1a212e"
+  computationUuid: "92d5f5dd-e099-8a1b-b006-56495b679fa8"
   stages:
     - stage: path
       stageUuid: "ec32f3ed-127b-8f0a-bf2f-5e9b6a630ce6"
@@ -46,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "a6e592bb-5be1-857c-b0e9-e17d2dbd22fe"
     - stage: horo
-      stageUuid: "9aad4642-4cc9-880e-8904-6a6045efb7a5"
+      stageUuid: "31fa8eb2-4e70-812a-a396-45d72ae18706"
     - stage: seal
-      stageUuid: "20953764-3741-8daf-9c17-480226ec388f"
+      stageUuid: "023fe6c2-9d77-8671-86c6-b544648ede27"
     - stage: uuid
-      stageUuid: "898e154f-d355-887a-a857-2a58fae82673"
+      stageUuid: "30c3706e-970d-8bee-913e-787bc21b724e"
 version: 2
 ---
 # shares

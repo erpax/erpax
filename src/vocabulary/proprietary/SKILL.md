@@ -1,58 +1,35 @@
 ---
 name: proprietary
 description: "Use when reasoning about proprietary — True if this item's name is a proprietary/brand name (vs. generic name)."
-atomPath: vocabulary/proprietary
-coordinate: proprietary · 7/descent · 15fe710c
-contentUuid: "2d0012a4-4a32-59e0-9f78-c3fe339bff3b"
-diamondUuid: "504db7c0-a236-8675-98b3-6d9bab231f9f"
-uuid: "15fe710c-ff17-8b97-8d4d-a67d7fbbc80b"
-horo: 7
-bonds:
-  in:
-    - law
-    - name
-    - non
-  out:
-    - law
-    - name
-    - non
+atomPath: "vocabulary/proprietary"
+coordinate: "vocabulary/proprietary · 4/weave · 620c7028"
+contentUuid: "cd09ec57-4541-5a75-b321-f00618231195"
+diamondUuid: "0388db1b-005a-8380-8e1e-858ec012e20a"
+uuid: "620c7028-476a-8020-92d2-2eeabe174440"
+horo: 4
 typography:
-  partition: proprietary
+  partition: vocabulary
   bondDegree: 10
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - name
-    - non
-  matrix:
-    - law
-    - name
-    - non
-  backlinks:
-    - law
-    - name
-    - non
 signatures:
-  computationUuid: "35efda17-28ff-8282-ba7d-dead92481a32"
+  computationUuid: "3ac21dec-49be-80fe-aa16-9c17be5c1e4d"
   stages:
     - stage: path
-      stageUuid: "c585f387-de05-8af7-a43c-b92dc144aafc"
+      stageUuid: "0d174b91-5fd3-8e3d-b7b3-e9d4e0b549eb"
     - stage: trinity
-      stageUuid: "a31c1a2f-0af7-8144-9085-6c8e5007a3be"
+      stageUuid: "3b09b69e-3d1f-8c2a-9def-69334f379581"
     - stage: boundary
-      stageUuid: "1a7372b0-dce4-84c2-bba7-d77d3b1fb42f"
+      stageUuid: "d08d5283-0731-8475-861b-d2b4e5cf6f3b"
     - stage: links
-      stageUuid: "9ac79554-c22c-8f0d-84d7-945a7ae860c8"
+      stageUuid: "2f5fa9ad-f6bb-88a3-a85d-c4ae4f9bee0e"
     - stage: horo
-      stageUuid: "0235617f-8ebc-805a-8d20-f453ac6c3b10"
+      stageUuid: "b5d5a1fc-6e77-809f-a5dd-a3f13427ca91"
     - stage: seal
-      stageUuid: "99ebbedf-79fb-84c8-8580-04b160b91c4c"
+      stageUuid: "9cc1eab3-6447-8a25-9a40-77ce92db6433"
     - stage: uuid
-      stageUuid: "25fdf015-69c4-8748-be45-648251473aa4"
+      stageUuid: "0a16589f-9d75-89af-bb1f-2aa832923e59"
 version: 2
 ---
 # proprietary

@@ -1,68 +1,35 @@
 ---
 name: authenticate
 description: "Use when reasoning about authenticate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/authenticate
-coordinate: authenticate · 2/share · 3d7094d2
-contentUuid: "eedcfac5-2fc9-5c8b-81b5-fe7b395a6647"
-diamondUuid: "29cd1ad1-70fc-8a4a-9c48-a6e3466a5070"
-uuid: "3d7094d2-a4e0-89c4-a4c7-3b9ab5c5dd5e"
-horo: 2
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/authenticate"
+coordinate: "vocabulary/authenticate · 8/crest · d8ccefc9"
+contentUuid: "e7791249-5ebe-5330-92c8-08faf257d1b8"
+diamondUuid: "bdc66047-1471-86c5-8a75-fb84ce846220"
+uuid: "d8ccefc9-ebdc-8618-8884-2b1b77e78bf7"
+horo: 8
 typography:
-  partition: authenticate
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "a73144ed-b307-8fcc-a0a0-bd17e6ce6130"
+  computationUuid: "c5599417-8d4d-8856-b46b-6bf769ef9111"
   stages:
     - stage: path
-      stageUuid: "dc8af776-18a4-8f4d-8edb-38c666ddb428"
+      stageUuid: "32f2bdb5-a576-8ef4-a261-ec65c6b560f2"
     - stage: trinity
-      stageUuid: "6825fe36-0d9c-84af-8fb3-11f14e22684b"
+      stageUuid: "f238e6bc-2bce-8c30-a2c9-a0eb7356264f"
     - stage: boundary
-      stageUuid: "3bf7d4c9-983e-80af-b874-4b46234b2fef"
+      stageUuid: "38c8dde4-1917-8260-8a32-e5e514f05730"
     - stage: links
-      stageUuid: "6e6ea392-35c3-80f1-8e99-17ca21a08d2d"
+      stageUuid: "b33e4bbf-2b54-8f84-acbb-a884908748ee"
     - stage: horo
-      stageUuid: "f6f47e13-7c6b-8f19-8989-dfe972b40c1d"
+      stageUuid: "ed8b131b-8ef9-8a6d-bac8-1583fc2c9d0e"
     - stage: seal
-      stageUuid: "1086e331-076c-8846-bf81-5c0be9579820"
+      stageUuid: "eb6b40d9-af28-8c79-83ad-37728f271371"
     - stage: uuid
-      stageUuid: "65f51296-db84-882c-b25f-d588b56978ef"
+      stageUuid: "2bea1424-3049-8b50-88b7-3bf3cae16071"
 version: 2
 ---
 # authenticate

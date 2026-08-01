@@ -2,61 +2,19 @@
 name: mirror
 description: "Use when reasoning about a path read both ways — left→right and right→left are different paths (different words, different folders) yet carry the same value, because the path's digital root (the sum of its word-digits) is direction-invariant; the horo as path, max value the same on both sides for words and digits."
 atomPath: mirror
-coordinate: "mirror · 1/base · 46bbc970"
-contentUuid: "54dc518a-91a5-56cb-b263-ebed4d813d6a"
-diamondUuid: "319e5705-e27d-8c9d-8a39-73ebb25763dd"
-uuid: "46bbc970-171e-88cd-b734-2c9a5235ade3"
-horo: 1
-bonds:
-  in:
-    - digit
-    - duality
-    - hermeticism
-    - horo
-    - law
-    - name
-    - uuid
-  out:
-    - digit
-    - duality
-    - hermeticism
-    - horo
-    - law
-    - name
-    - uuid
+coordinate: "mirror · 5/round · 0f4de1a9"
+contentUuid: "04f1ac55-f5e5-5bf4-9f6a-4278bc1966a5"
+diamondUuid: "e0ade1f5-82f5-8d29-bc54-6405a580c13e"
+uuid: "0f4de1a9-3195-896f-8cf0-9e8d9f583601"
+horo: 5
 typography:
   partition: mirror
   bondDegree: 21
-  neighbors: []
 standards:
   - "the base-10 digital root (direction-invariant) · the horo ring read both ways · duality (L→R ⊕ R→L)"
 bindings: []
-neighbors:
-  wikilink:
-    - digit
-    - duality
-    - horo
-    - law
-    - name
-    - uuid
-  matrix:
-    - digit
-    - duality
-    - hermeticism
-    - horo
-    - law
-    - name
-    - uuid
-  backlinks:
-    - digit
-    - duality
-    - hermeticism
-    - horo
-    - law
-    - name
-    - uuid
 signatures:
-  computationUuid: "1b795178-e453-81b0-a389-f1e9cafc9d0a"
+  computationUuid: "bb424f46-32bf-815b-9a3e-3f9e318d1e79"
   stages:
     - stage: path
       stageUuid: "118a50eb-1181-8e39-9b4b-700432693b80"
@@ -67,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d097c10e-40e0-8c8c-a2aa-ea7676117d59"
     - stage: horo
-      stageUuid: "ba2c7641-1280-8da5-8784-8fb3515e7c45"
+      stageUuid: "2660203d-df21-8da0-83cf-219de1888d70"
     - stage: seal
       stageUuid: "aa318b33-852c-86c6-9d24-257728952137"
     - stage: uuid
-      stageUuid: "887c7267-fb09-89cb-92bd-c25f71b078c5"
+      stageUuid: "6a8957df-1e17-820f-a2c8-2901b9eb704e"
 version: 2
 ---
 # mirror — the horo as path read both ways

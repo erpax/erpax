@@ -1,38 +1,20 @@
 ---
 name: temporal
-description: "Use when reasoning about temporal — The \\\"temporal\\\" property can be used in cases where more specific properties (e.g. temporalCoverage, dateCreated, dateModified, datePublished) are not known to be appropriate."
+description: "Use when reasoning about temporal — The \\\\\\\"temporal\\\\\\\" property can be used in cases where more specific properties (e.g. temporalCoverage, dateCreated, dateModified, datePublished) are not known to be appropriate."
 atomPath: temporal
-coordinate: temporal · 2/share · ca0b9ace
-contentUuid: "4e972911-9b58-5bff-9c19-2f1775caeacb"
-diamondUuid: "e838edf4-f025-8d8c-9589-d23b4d75d11e"
-uuid: "ca0b9ace-85ec-86a5-b39d-a915ff5432d1"
-horo: 2
-bonds:
-  in:
-    - coverage
-    - law
-  out:
-    - coverage
-    - law
+coordinate: "temporal · 4/weave · 91f5aca3"
+contentUuid: "c5c0f4de-2a15-59ad-a280-9c461f0d1bec"
+diamondUuid: "fe3e7783-bfe1-865c-8aaf-1f511a5b2b23"
+uuid: "91f5aca3-1d3b-8026-866c-e31afb1b9abe"
+horo: 4
 typography:
   partition: temporal
-  bondDegree: 7
-  neighbors: []
+  bondDegree: 9
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - coverage
-    - law
-  matrix:
-    - coverage
-    - law
-  backlinks:
-    - coverage
-    - law
 signatures:
-  computationUuid: "925d9de1-0e06-8c10-84ee-817ca5b6a470"
+  computationUuid: "aae23847-aa77-88ed-b55d-3a9ac24a8864"
   stages:
     - stage: path
       stageUuid: "88d847b6-35fd-8a65-925e-ff5ce5002724"
@@ -43,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4345481b-0e97-8c42-85bb-0cad4f9ee57e"
     - stage: horo
-      stageUuid: "64294c53-8efa-8f78-b058-c111fcbe8a69"
+      stageUuid: "a9521024-f66d-8a78-ac8d-d9e717655fdf"
     - stage: seal
-      stageUuid: "c7ac08ca-4440-8271-adf5-5c8429139fdd"
+      stageUuid: "cbb60f94-fa84-83c1-a24c-74d3f7d6ffba"
     - stage: uuid
-      stageUuid: "142227d8-dd6a-897b-b725-3f5b225c65be"
+      stageUuid: "97119a33-41dd-8d83-bf78-8d5223a6c94a"
 version: 2
 ---
 # temporal

@@ -1,114 +1,34 @@
 ---
 name: irrigation
 description: "Use when water is supplied to a crop on a managed schedule — drip/trickle vs overhead application, fertigation (fertilizer through the line), and evapotranspiration-based scheduling (the water budget). Irrigation credits the soil-water reservoir that evapotranspiration debits; schedule it like a checkbook — replace the deficit before the crop hits stress."
-atomPath: vocabulary/irrigation
-coordinate: irrigation · 7/descent · 4e9d7759
-contentUuid: "01d6086e-1c03-5a1c-8aea-62b1b31cbc55"
-diamondUuid: "6e281881-d237-8855-8511-46ebe8c0bb1d"
-uuid: "4e9d7759-b6fd-8559-a6ad-65f95c4c8055"
-horo: 7
-bonds:
-  in:
-    - agriculture
-    - balance
-    - capacity
-    - crop
-    - evapotranspiration
-    - fertility
-    - law
-    - moisture
-    - mulch
-    - permaculture
-    - rate
-    - salinity
-    - schedule
-    - soil
-    - transplant
-  out:
-    - agriculture
-    - balance
-    - capacity
-    - crop
-    - evapotranspiration
-    - fertility
-    - law
-    - moisture
-    - mulch
-    - permaculture
-    - rate
-    - salinity
-    - schedule
-    - soil
-    - transplant
+atomPath: "vocabulary/irrigation"
+coordinate: "vocabulary/irrigation · 1/base · 374cf760"
+contentUuid: "8334d75b-9daa-5b93-9d47-4c1a69c4de52"
+diamondUuid: "ab20b043-503b-8905-9904-2a120ff947b4"
+uuid: "374cf760-5cec-8a6a-ab2b-a2a7622f3579"
+horo: 1
 typography:
-  partition: irrigation
+  partition: vocabulary
   bondDegree: 50
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - balance
-    - capacity
-    - crop
-    - evapotranspiration
-    - fertility
-    - law
-    - moisture
-    - mulch
-    - rate
-    - schedule
-    - soil
-  matrix:
-    - agriculture
-    - balance
-    - capacity
-    - crop
-    - evapotranspiration
-    - fertility
-    - law
-    - moisture
-    - mulch
-    - permaculture
-    - rate
-    - salinity
-    - schedule
-    - soil
-    - transplant
-  backlinks:
-    - agriculture
-    - balance
-    - capacity
-    - crop
-    - evapotranspiration
-    - fertility
-    - law
-    - moisture
-    - mulch
-    - permaculture
-    - rate
-    - salinity
-    - schedule
-    - soil
-    - transplant
 signatures:
-  computationUuid: "b360af39-2779-8f4c-b250-cecc3ff7fbb3"
+  computationUuid: "b9e4e20a-939c-88b0-b29d-5503cce58907"
   stages:
     - stage: path
-      stageUuid: "7dac7752-6f42-84c8-a1a9-23df10785baa"
+      stageUuid: "3c76b43d-6b4d-8646-91e0-43e933818f97"
     - stage: trinity
-      stageUuid: "b1f2249a-d288-8027-b015-06dddd9ed901"
+      stageUuid: "187014c4-28f1-895a-95b7-96bef73d1ba0"
     - stage: boundary
-      stageUuid: "731e40c8-2b41-8cb8-8c8f-28a51a96b3f3"
+      stageUuid: "bcf65ade-e13d-8079-b8d3-c7f028c51e51"
     - stage: links
-      stageUuid: "2182561f-887b-8c55-b397-dfcbcfe00499"
+      stageUuid: "b90e42aa-f125-8707-9492-ed74b9dd6474"
     - stage: horo
-      stageUuid: "246cf8ff-88ff-8986-af45-b5c2d3de7cbd"
+      stageUuid: "beaf602f-b642-81a2-a6ab-51899e9d149d"
     - stage: seal
-      stageUuid: "5e075b86-3666-8e8e-91ec-4dfc006b3f18"
+      stageUuid: "b7aa3672-c46f-8f8c-b5f7-d564fd36978c"
     - stage: uuid
-      stageUuid: "b45fe346-fdff-8553-a3f6-b0e038c63671"
+      stageUuid: "63936e71-a344-869f-9e39-d318fa03b8b5"
 version: 2
 ---
 # irrigation — supplying water on a managed schedule

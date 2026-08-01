@@ -2,30 +2,14 @@
 name: gaps
 description: "Use when identifying, tracking or remediating compliance deficiencies — missing controls, design deficiencies, operating gaps, documentation gaps — against a requirement; severity, status lifecycle (identified → in-remediation → closed), root cause, risk exposure, target closure date, audit trail. The per-tenant gap and deficiency register."
 atomPath: "compliance/frameworks/compliance/requirements/compliance/gaps"
-coordinate: "compliance/frameworks/compliance/requirements/compliance/gaps · 2/share · 300a0cb7"
-contentUuid: "e6c3f87b-77db-5f41-9837-8ec7e9dd026b"
-diamondUuid: "184a2856-331f-887f-b630-578eb67c9e4e"
-uuid: "300a0cb7-808b-80e5-9ddf-b2570b5a5725"
-horo: 2
-bonds:
-  in:
-    - coincidence
-    - law
-    - rules
-    - seeing
-    - theorem
-    - think
-  out:
-    - coincidence
-    - law
-    - rules
-    - seeing
-    - theorem
-    - think
+coordinate: "compliance/frameworks/compliance/requirements/compliance/gaps · 5/round · 1f1a7142"
+contentUuid: "ab8f41ef-76d6-573e-88b5-a0d905491943"
+diamondUuid: "6c9a1643-70c2-8bd6-a470-e9e6523e0646"
+uuid: "1f1a7142-4390-8521-8254-f8dc1aca65d9"
+horo: 5
 typography:
   partition: compliance
   bondDegree: 19
-  neighbors: []
 standards:
   - "ISO-37301"
   - "ISO-37301:2021 compliance-management"
@@ -34,24 +18,8 @@ standards:
   - "US-CTA-2021"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink: []
-  matrix:
-    - coincidence
-    - law
-    - rules
-    - seeing
-    - theorem
-    - think
-  backlinks:
-    - coincidence
-    - law
-    - rules
-    - seeing
-    - theorem
-    - think
 signatures:
-  computationUuid: "736666be-2c9c-8078-8f1d-7d9ee55c1fb2"
+  computationUuid: "552b9c06-9344-8e23-a438-b5191972fc87"
   stages:
     - stage: path
       stageUuid: "79c246eb-57f4-8cff-afe3-e3b539110840"
@@ -62,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "d381a5a3-e35f-86ff-8ed5-295ee2b1a856"
     - stage: horo
-      stageUuid: "f56971fe-1d64-8322-933a-95ca7ab87530"
+      stageUuid: "cbc114a9-30a8-8eb6-a9ff-9604bfc1df09"
     - stage: seal
       stageUuid: "aea2f889-e3d6-8ad2-a6ad-3f925bece28b"
     - stage: uuid
-      stageUuid: "573548bf-c2ba-80aa-9060-37af148c812e"
+      stageUuid: "24106e73-5d4f-8a75-8e73-f71e947854a9"
 version: 2
 ---
 # compliance-gaps

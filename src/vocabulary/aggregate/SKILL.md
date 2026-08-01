@@ -1,83 +1,35 @@
 ---
 name: aggregate
 description: "Use when reasoning about aggregate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/aggregate
-coordinate: aggregate · 5/round · cd84fc00
-contentUuid: "d289f2bb-9ff8-5914-882f-d043aab4d28b"
-diamondUuid: "6a6eda1d-505c-8a6b-a5ac-ad3939f198cc"
-uuid: "cd84fc00-094e-849a-a202-cd458fc7311a"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - element
-    - employer
-    - law
-    - merge
-    - offer
-    - rating
-    - sti
-  out:
-    - collapse
-    - element
-    - employer
-    - law
-    - merge
-    - offer
-    - rating
-    - sti
+atomPath: "vocabulary/aggregate"
+coordinate: "vocabulary/aggregate · 2/share · 82df661f"
+contentUuid: "df39025a-893b-5f1e-acd1-33671bd4bc4b"
+diamondUuid: "8d6630af-8795-8278-bf23-8e8e5bcb2483"
+uuid: "82df661f-6846-8aff-a2f0-bce6418a63ee"
+horo: 2
 typography:
-  partition: aggregate
+  partition: vocabulary
   bondDegree: 27
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - element
-    - employer
-    - law
-    - merge
-    - offer
-    - rating
-    - sti
-  matrix:
-    - collapse
-    - element
-    - employer
-    - law
-    - merge
-    - offer
-    - rating
-    - sti
-  backlinks:
-    - collapse
-    - element
-    - employer
-    - law
-    - merge
-    - offer
-    - rating
-    - sti
 signatures:
-  computationUuid: "9ab846ce-a62a-802f-affa-aadb795cd1d2"
+  computationUuid: "cae86215-49e3-8984-a3c0-65bc7d41bdb3"
   stages:
     - stage: path
-      stageUuid: "f1695532-e8b1-8f39-98cf-39038601c923"
+      stageUuid: "dc41a996-98f5-881c-a5df-19411a927fba"
     - stage: trinity
-      stageUuid: "bb777f0d-b60a-8058-8198-fb2169815046"
+      stageUuid: "67f6c8b0-daab-85f1-b384-9d6fd7763ac8"
     - stage: boundary
-      stageUuid: "8e581227-ed57-831f-9365-0601dff5fcc5"
+      stageUuid: "fb1a7303-c6b6-887a-8470-611b7ee09c2f"
     - stage: links
-      stageUuid: "f5d5a025-b816-8682-80a2-6a02fe3eea2d"
+      stageUuid: "537623e2-c1b0-8ee5-8684-191f5730683d"
     - stage: horo
-      stageUuid: "7505c59d-c578-8f3b-916f-fa768628d3c8"
+      stageUuid: "5568936d-d39f-82f0-84f7-30dfb9e5da5c"
     - stage: seal
-      stageUuid: "e7b2a6d6-0c95-8d61-8fa7-2d672680cbc1"
+      stageUuid: "cdf399f2-927f-8cc1-8d44-4ce199a0dbae"
     - stage: uuid
-      stageUuid: "daf7a43c-9e10-8c0d-bdfb-2f5fe79a7c33"
+      stageUuid: "96c4d5b6-724b-82e4-9c4d-1698eb5e5098"
 version: 2
 ---
 # aggregate

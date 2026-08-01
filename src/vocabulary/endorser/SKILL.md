@@ -1,62 +1,34 @@
 ---
 name: endorser
 description: Use when modelling one endorser — the singular model of the endorsers collection (the plural store); a party who signs over or backs an instrument.
-atomPath: vocabulary/endorser
-coordinate: endorser · 4/weave · 8d507edd
-contentUuid: "bcd2336b-6274-5c54-afc2-4b82bc1cdbaa"
-diamondUuid: "04f53f72-e960-81b6-9108-8df833f49933"
-uuid: "8d507edd-84b5-8226-862a-0f9069a50bf5"
-horo: 4
-bonds:
-  in:
-    - balance
-    - endorsement
-    - endorsers
-    - law
-  out:
-    - balance
-    - endorsement
-    - endorsers
-    - law
+atomPath: "vocabulary/endorser"
+coordinate: "vocabulary/endorser · 1/base · 8c8f63aa"
+contentUuid: "5958d92f-8922-5eea-b3ab-052293931159"
+diamondUuid: "7c876591-afb8-8fc3-833b-d82464608a2b"
+uuid: "8c8f63aa-2bbe-88a8-aa97-012017f294e2"
+horo: 1
 typography:
-  partition: endorser
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - endorsement
-    - endorsers
-    - law
-  matrix:
-    - balance
-    - endorsement
-    - endorsers
-    - law
-  backlinks:
-    - balance
-    - endorsement
-    - endorsers
-    - law
 signatures:
-  computationUuid: "f78df16f-0f21-89c7-aff5-22e78210d267"
+  computationUuid: "72bfd16e-9039-802e-99c2-64a05c6b103d"
   stages:
     - stage: path
-      stageUuid: "f6e2a3db-d4ba-8ab5-bd56-fab1d2e82144"
+      stageUuid: "3c200640-d218-8bc2-b4f7-bd5199a80862"
     - stage: trinity
-      stageUuid: "02c28734-20f4-89fb-81e0-9f93cde2ba63"
+      stageUuid: "dc2defcd-19a1-8a41-b110-e040626a677f"
     - stage: boundary
-      stageUuid: "9680ac25-e111-834b-ada9-91748e0743d7"
+      stageUuid: "a7b7058d-3282-8c85-9c8b-762ad95614a2"
     - stage: links
-      stageUuid: "d7f55158-c11a-8e1a-b1a2-4a8515a1c1fe"
+      stageUuid: "d5a3c320-1873-89b9-9537-7b9694cf57ae"
     - stage: horo
-      stageUuid: "fbf5e868-179f-87bd-b48f-15a82a23b3ac"
+      stageUuid: "66eb6987-67d3-800c-a926-5a130373df39"
     - stage: seal
-      stageUuid: "744526cf-3ff9-8d85-ad48-25d350390598"
+      stageUuid: "ff21268d-d4b1-8cbb-9401-da7426770d70"
     - stage: uuid
-      stageUuid: "0831b09d-9eb9-87b0-a52e-75c642162a70"
+      stageUuid: "7c2e4b75-46e4-8505-890d-462536ce4d0e"
 version: 2
 ---
 # endorser — the model of one [[endorsers]] row

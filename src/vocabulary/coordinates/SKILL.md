@@ -1,68 +1,35 @@
 ---
 name: coordinates
 description: "Use when reasoning about coordinates as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/coordinates
-coordinate: coordinates · 4/weave · 7cdcb5bc
-contentUuid: "730639bd-e126-5e82-863e-6436c6c1d65a"
-diamondUuid: "9f803219-5613-8c07-8378-0d78320cd767"
-uuid: "7cdcb5bc-acd7-88b2-81ee-da2372f079f7"
+atomPath: "vocabulary/coordinates"
+coordinate: "vocabulary/coordinates · 4/weave · 0224215d"
+contentUuid: "18207466-3c28-5e25-afa4-a10138f38913"
+diamondUuid: "e2ac789a-15a5-8f46-b852-c602a79251a0"
+uuid: "0224215d-ad91-887e-b234-e23a9be2c08b"
 horo: 4
-bonds:
-  in:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
 typography:
-  partition: coordinates
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "9ce4a2f1-0849-8bd1-94df-72ae030f999f"
+  computationUuid: "b33f2a18-1c51-88c2-8c56-79460ffb6d95"
   stages:
     - stage: path
-      stageUuid: "e7d87cec-2aa5-8906-abd2-921edaa566ca"
+      stageUuid: "82c59abe-8f27-828d-9abb-fc3fa969cd52"
     - stage: trinity
-      stageUuid: "6fae5581-f3ca-89c8-a2c7-ace56ac3e835"
+      stageUuid: "dfc41fba-aa68-8b85-a1e1-b7d90b0d783c"
     - stage: boundary
-      stageUuid: "a761abde-08c0-8ced-9e1b-7e668be22537"
+      stageUuid: "52dfba3d-5f63-82f1-8a36-7f250f5adb03"
     - stage: links
-      stageUuid: "228f089b-a54d-816c-804b-3be1406f557d"
+      stageUuid: "290ca34d-b905-88bb-81e7-ce0347529d1e"
     - stage: horo
-      stageUuid: "445e386d-efb1-81c0-a1a6-f8676f70243c"
+      stageUuid: "42f60296-2a82-8a3b-8d21-1c8bf00f40f8"
     - stage: seal
-      stageUuid: "4c515c79-a39f-8d1a-a580-0d940b34c3af"
+      stageUuid: "a25df75a-753c-8c71-9bdb-9b17c8f01952"
     - stage: uuid
-      stageUuid: "2c21ad27-0480-8525-8ebf-00cb3c10c85f"
+      stageUuid: "47650243-e240-8d05-a4a1-38362b25f19c"
 version: 2
 ---
 # coordinates

@@ -1,58 +1,35 @@
 ---
 name: barcode
 description: "Use when reasoning about barcode — An image of a visual machine-readable code such as a barcode or QR code."
-atomPath: vocabulary/barcode
-coordinate: barcode · 7/descent · 11c56a52
-contentUuid: "10a1b121-a8b9-5bee-9b7a-790cef1484ae"
-diamondUuid: "bd8dd3f1-33a8-8e1f-84d2-bbac9ae8dbcd"
-uuid: "11c56a52-c1ae-8927-9d60-d2ae80dfcbfa"
-horo: 7
-bonds:
-  in:
-    - creative
-    - law
-    - thing
-  out:
-    - creative
-    - law
-    - thing
+atomPath: "vocabulary/barcode"
+coordinate: "vocabulary/barcode · 4/weave · 7f88faf6"
+contentUuid: "4a60190e-6b7b-58be-9b03-f416804db46f"
+diamondUuid: "9dbd36ab-f26d-8b61-b937-074198c45983"
+uuid: "7f88faf6-b5a4-8e90-a19c-4780eac068b6"
+horo: 4
 typography:
-  partition: barcode
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - creative
-    - law
-    - thing
-  matrix:
-    - creative
-    - law
-    - thing
-  backlinks:
-    - creative
-    - law
-    - thing
 signatures:
-  computationUuid: "94c6b55e-25c9-8727-b390-45d458132f20"
+  computationUuid: "d41b23c6-6c05-8012-988c-22cc4c2a0610"
   stages:
     - stage: path
-      stageUuid: "44b758fb-1dfa-86af-999d-80cb64650889"
+      stageUuid: "33170fd3-79f1-86f8-a81a-c9e5f9ea6159"
     - stage: trinity
-      stageUuid: "d98c8ab7-c0e1-8761-a548-c997a33194e0"
+      stageUuid: "39f69dfa-968c-8254-b7a8-3bbf819a6112"
     - stage: boundary
-      stageUuid: "1dc6bf2b-99c5-8233-9c00-b423c87b7a9e"
+      stageUuid: "e926a9b0-3015-867d-8a6b-a8acd1db053b"
     - stage: links
-      stageUuid: "bfc85e30-7b3a-8022-8a7f-0ef8d3c94f8e"
+      stageUuid: "0e28a6a3-67d2-88d1-b643-e43c5375b10b"
     - stage: horo
-      stageUuid: "aee45043-41d7-84b1-ab5f-2a16c9e96b83"
+      stageUuid: "db9b3958-2ad5-8ae6-bd80-3cadf9b80005"
     - stage: seal
-      stageUuid: "3c12b9d7-2db2-848d-9a74-8f6de3565309"
+      stageUuid: "b7dd92d7-2537-826b-a9a0-e0c70d5adba1"
     - stage: uuid
-      stageUuid: "1e961ec2-6a10-87ec-b187-0f15f0bcfda3"
+      stageUuid: "86d0fc82-28c2-8c09-b4d0-9bebfe307164"
 version: 2
 ---
 # barcode

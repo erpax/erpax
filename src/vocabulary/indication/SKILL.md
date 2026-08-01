@@ -1,83 +1,35 @@
 ---
 name: indication
 description: "Use when reasoning about indication as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/indication
-coordinate: indication · 5/round · 671c1d71
-contentUuid: "5ee28184-de77-5f92-977f-cd889e9341b5"
-diamondUuid: "a99797c0-641b-85b4-a2b8-a658fca97dc2"
-uuid: "671c1d71-b18b-8b77-9ee4-dee7d635b684"
-horo: 5
-bonds:
-  in:
-    - approved
-    - collapse
-    - law
-    - medical
-    - merge
-    - prevention
-    - sti
-    - treatment
-  out:
-    - approved
-    - collapse
-    - law
-    - medical
-    - merge
-    - prevention
-    - sti
-    - treatment
+atomPath: "vocabulary/indication"
+coordinate: "vocabulary/indication · 2/share · 082b9ab2"
+contentUuid: "93a13059-861b-5c97-a589-98e06db060da"
+diamondUuid: "9bb12320-6a30-8e37-a554-d6b3c8de3ca8"
+uuid: "082b9ab2-e77d-85f2-a1eb-993956e24a61"
+horo: 2
 typography:
-  partition: indication
-  bondDegree: 27
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 28
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - approved
-    - collapse
-    - law
-    - medical
-    - merge
-    - prevention
-    - sti
-    - treatment
-  matrix:
-    - approved
-    - collapse
-    - law
-    - medical
-    - merge
-    - prevention
-    - sti
-    - treatment
-  backlinks:
-    - approved
-    - collapse
-    - law
-    - medical
-    - merge
-    - prevention
-    - sti
-    - treatment
 signatures:
-  computationUuid: "2e8ab78c-d021-8253-9f6e-71e246307c0b"
+  computationUuid: "d64144e9-eb92-807c-b707-779693477daa"
   stages:
     - stage: path
-      stageUuid: "8728a4ab-3374-84aa-9187-5885991355da"
+      stageUuid: "699f8444-b73c-82ab-8296-154f842c08b9"
     - stage: trinity
-      stageUuid: "d7451c93-8261-8906-8197-4b144c4c1d3b"
+      stageUuid: "c42b200b-3e9d-8762-82ad-a723877f2e0f"
     - stage: boundary
-      stageUuid: "ba0bece2-9cc3-8869-b6c7-280837983a1b"
+      stageUuid: "abaa4444-50be-823b-abd1-d3f25a253d50"
     - stage: links
-      stageUuid: "414e4c2a-7fc3-8f4b-b506-a7b48bbadfa1"
+      stageUuid: "c581b863-3256-8bd8-a555-92d6d548e71a"
     - stage: horo
-      stageUuid: "c9aa4c41-3e58-8474-811d-a2805270a753"
+      stageUuid: "f9f6d7c3-a964-8323-a918-9b81793d20b5"
     - stage: seal
-      stageUuid: "94c8bddd-b852-8847-8896-109f5c5adefa"
+      stageUuid: "d803f88c-1482-8a26-b4de-043b50a998bd"
     - stage: uuid
-      stageUuid: "a49c27d2-ef08-8046-b9e2-365f4e718a52"
+      stageUuid: "6aa6d77f-636b-8841-82c4-73a7515c287d"
 version: 2
 ---
 # indication

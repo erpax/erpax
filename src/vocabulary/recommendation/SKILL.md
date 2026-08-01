@@ -1,63 +1,35 @@
 ---
 name: recommendation
 description: "Use when reasoning about recommendation — Recommendation is a type of Review that suggests or proposes something as the best option or best course of action. Recommendations may be for products or services, or other concre"
-atomPath: vocabulary/recommendation
-coordinate: recommendation · 4/weave · 261e4bb5
-contentUuid: "f988f366-3098-5878-8e38-dec8828d7000"
-diamondUuid: "3d74a88d-3825-8214-9d9d-e759ede49f8b"
-uuid: "261e4bb5-bf01-88b8-9780-eb9e789d35a2"
+atomPath: "vocabulary/recommendation"
+coordinate: "vocabulary/recommendation · 4/weave · 20c5f0fb"
+contentUuid: "f46de280-89c7-5efd-aff6-02d2850d5946"
+diamondUuid: "48be8497-3d9f-8992-a860-2e4c258f9098"
+uuid: "20c5f0fb-5807-8957-954f-62475a9b96c1"
 horo: 4
-bonds:
-  in:
-    - guideline
-    - law
-    - medical
-    - strength
-  out:
-    - guideline
-    - law
-    - medical
-    - strength
 typography:
-  partition: recommendation
-  bondDegree: 15
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 24
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - guideline
-    - law
-    - medical
-    - strength
-  matrix:
-    - guideline
-    - law
-    - medical
-    - strength
-  backlinks:
-    - guideline
-    - law
-    - medical
-    - strength
 signatures:
-  computationUuid: "356d0ed7-5eba-8f26-a73a-e6e32ba39114"
+  computationUuid: "fc773df9-0eba-8c3c-a2a1-089af1e2b7d8"
   stages:
     - stage: path
-      stageUuid: "fc9918ca-f9a1-8bd3-9f7a-ec18d9b8f5da"
+      stageUuid: "c1f10e29-270e-86b6-91ba-7da76d1bba6f"
     - stage: trinity
-      stageUuid: "98c1f02f-4ab5-862b-9057-feb1beddeaa0"
+      stageUuid: "b455f790-23a8-8607-be62-adaaa9cb503f"
     - stage: boundary
-      stageUuid: "7c81cefa-037e-8821-9ae2-3b4ea00c23a2"
+      stageUuid: "db54f90f-3618-8138-94ce-a12bee6e98c7"
     - stage: links
-      stageUuid: "f9fc432c-535f-8f91-9876-aa194da586e3"
+      stageUuid: "24a1ede4-1a43-81b8-8d22-1dd03ad13370"
     - stage: horo
-      stageUuid: "faaff660-ccf5-8c78-b89a-8a892ea536a7"
+      stageUuid: "c0db0352-c3ff-812b-8359-196273324935"
     - stage: seal
-      stageUuid: "0e5c69cf-2916-8951-8dfe-8c8906c19c0c"
+      stageUuid: "0bcdc3f6-7aef-85e4-abfe-eb2485087f57"
     - stage: uuid
-      stageUuid: "5221b680-f189-8f22-8330-9823bda24906"
+      stageUuid: "0379d8e2-b91d-8734-8192-79fb372e4401"
 version: 2
 ---
 # recommendation

@@ -1,76 +1,19 @@
 ---
 name: app
 description: "Use when reasoning about erpax as a device of apps — every atom IS a quantum app (a content-uuid identity, entangled links, collapsible by merge); the proof is that every matrix node carries a content-uuid."
-atomPath: quantum/app
-coordinate: quantum/app · 2/share · be27e01b
-contentUuid: "c678d55a-c23d-5493-8bde-bf12d64ec65f"
-diamondUuid: "02f8bf1e-1f2f-843b-aeec-9ab3af507715"
-uuid: "be27e01b-9eb0-86ce-beb6-eb414859754b"
+atomPath: "quantum/app"
+coordinate: "quantum/app · 2/share · 9d5b733f"
+contentUuid: "d9a34f11-4f5f-55c9-8898-7181f160dc5d"
+diamondUuid: "533d16a4-0128-8d08-9e53-fe7124a91046"
+uuid: "9d5b733f-fd94-8d7e-b7f7-0b97a34195d4"
 horo: 2
-bonds:
-  in:
-    - app
-    - atom
-    - entanglement
-    - law
-    - links
-    - matrix
-    - merge
-    - pwa
-    - quantum
-    - uuid
-  out:
-    - app
-    - atom
-    - entanglement
-    - law
-    - links
-    - matrix
-    - merge
-    - pwa
-    - quantum
-    - uuid
 typography:
   partition: quantum
   bondDegree: 31
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - app
-    - atom
-    - entanglement
-    - law
-    - links
-    - matrix
-    - merge
-    - quantum
-    - uuid
-  matrix:
-    - app
-    - atom
-    - entanglement
-    - law
-    - links
-    - matrix
-    - merge
-    - pwa
-    - quantum
-    - uuid
-  backlinks:
-    - app
-    - atom
-    - entanglement
-    - law
-    - links
-    - matrix
-    - merge
-    - pwa
-    - quantum
-    - uuid
 signatures:
-  computationUuid: "265dd9b0-af6e-8a20-80c8-ab1c4cdfca0f"
+  computationUuid: "4bbd637b-7f18-8ee2-9a40-f5fe9817c72a"
   stages:
     - stage: path
       stageUuid: "fe18c04e-1781-8b29-bfcf-bea2dca36be0"
@@ -81,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3362d579-cf88-8fdb-842b-b74f4a1657a2"
     - stage: horo
-      stageUuid: "5c0b515b-91ad-8d58-8596-6e1159c99659"
+      stageUuid: "5ce592c5-d82b-887e-94a5-c7d4d7198e9c"
     - stage: seal
       stageUuid: "61e4a2f7-3410-8022-87db-3d8a18be1f5e"
     - stage: uuid
-      stageUuid: "faaac449-b36c-86f1-9437-f8b55d861b4d"
+      stageUuid: "6620c566-1b16-8947-9443-a6111b1a46ba"
 quantum:
   superposition:
     - app
@@ -109,8 +52,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "265dd9b0-af6e-8a20-80c8-ab1c4cdfca0f"
-    contentUuid: "c678d55a-c23d-5493-8bde-bf12d64ec65f"
+    computationUuid: "4bbd637b-7f18-8ee2-9a40-f5fe9817c72a"
+    contentUuid: "d9a34f11-4f5f-55c9-8898-7181f160dc5d"
 version: 2
 ---
 # quantum/app — every atom is a quantum app
@@ -130,4 +73,4 @@ Matter-twin: `src/quantum/app/index.ts` (`isQuantumApp` · `quantumApps` · `eve
 
 @audit the proof is computed over the live matrix, never hand-asserted
 
-<sub>content-uuid `c678d55a-c23d-5493-8bde-bf12d64ec65f` · account `quantum/app` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `d9a34f11-4f5f-55c9-8898-7181f160dc5d` · account `quantum/app` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -1,58 +1,35 @@
 ---
 name: brand
 description: "Use when reasoning about brand — A brand is a name used by an organization or business person for labeling a product, product group, or similar."
-atomPath: vocabulary/brand
-coordinate: brand · 4/weave · 0b372f8b
-contentUuid: "c0f64a9c-e882-51b6-a6e2-e0ebbe7b6205"
-diamondUuid: "6697d3d7-dec5-8641-9d47-eb1d0dc1ad9a"
-uuid: "0b372f8b-5b1d-8b89-84d5-dd3123b2fc20"
-horo: 4
-bonds:
-  in:
-    - law
-    - organization
-    - thing
-  out:
-    - law
-    - organization
-    - thing
+atomPath: "vocabulary/brand"
+coordinate: "vocabulary/brand · 7/descent · c631f9bb"
+contentUuid: "d46a7ba1-7473-5881-8457-92042f40d244"
+diamondUuid: "40b90be5-3851-847b-a01e-da74f341f14d"
+uuid: "c631f9bb-f7ac-80f4-b7e4-2fe8115b3b85"
+horo: 7
 typography:
-  partition: brand
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - organization
-    - thing
-  matrix:
-    - law
-    - organization
-    - thing
-  backlinks:
-    - law
-    - organization
-    - thing
 signatures:
-  computationUuid: "0f26bf7a-c036-8da0-97bc-0b2c01d353ff"
+  computationUuid: "90df577b-2bdf-8fa5-a649-7f225969c94e"
   stages:
     - stage: path
-      stageUuid: "b7a72748-5dc7-8ef7-8d8e-030a46eb8fbb"
+      stageUuid: "dfd5089b-d44d-8d4e-8bb3-cc051cd64e61"
     - stage: trinity
-      stageUuid: "702112c3-8605-8727-88c5-4fc74afb0537"
+      stageUuid: "0d10e3fd-05ec-8d5e-ac43-4cd7e1941989"
     - stage: boundary
-      stageUuid: "ba791922-b5eb-8f97-a16f-e499d54db5de"
+      stageUuid: "90e406fe-b8ef-80bc-ba64-5f22774dcf76"
     - stage: links
-      stageUuid: "9da1d590-70e0-85d5-b598-4dbda0c05cac"
+      stageUuid: "a1770fa5-93ad-8b84-a678-283b81e06cf4"
     - stage: horo
-      stageUuid: "be0c71dc-a82e-8e14-abd8-92f42fc8f390"
+      stageUuid: "5a7cd180-1983-8de9-966b-a00bf1acf2f5"
     - stage: seal
-      stageUuid: "dc60788b-867f-892b-8ece-ac751e7bb602"
+      stageUuid: "8c5bfebb-0682-8801-b713-528e1451a529"
     - stage: uuid
-      stageUuid: "9832b68b-bdb0-8ddc-b614-22cad7a9ed95"
+      stageUuid: "36f5abf6-68de-8a0b-84a3-258916b03996"
 version: 2
 ---
 # brand

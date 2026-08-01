@@ -2,52 +2,23 @@
 name: bitemporal
 description: "Use when querying a row AS OF two clocks at once — system-time (when the value was recorded) crossed with valid-time (when it was true in the world) — under SQL:2011 temporal tables; isHistoricalQuery gates whether a request looks back in time, asOf is the pending temporal-table read."
 atomPath: "beyond/bitemporal"
-coordinate: "beyond/bitemporal · 5/round · a3aa2f46"
-contentUuid: "7537b932-dd8e-53f0-abe6-29fe50d14d1a"
-diamondUuid: "42a623d3-1023-83a9-a205-e527963b5732"
-uuid: "a3aa2f46-42e0-8c02-a984-5449c59ce230"
+coordinate: "beyond/bitemporal · 5/round · d2027c5b"
+contentUuid: "72c3c09a-5628-5e24-b4fa-a2f8322af667"
+diamondUuid: "bcae7e4a-8e36-8a66-a7a8-ce5f5ceeae6b"
+uuid: "d2027c5b-13a6-87df-8df6-acfe7646bd47"
 horo: 5
-bonds:
-  in:
-    - beyond
-    - law
-    - standard
-    - trinity
-  out:
-    - beyond
-    - law
-    - standard
-    - trinity
 typography:
   partition: beyond
-  bondDegree: 12
-  neighbors: []
+  bondDegree: 4
 standards:
-  - "EU-2011/83"
   - "EU-VAT-Implementing-Reg-282/2011"
   - "ISO/IEC 9075-2:2016 §4.15.10 temporal-tables"
   - "ISO/IEC 9075-2:2016 §4.15.10 temporal-tables`"
   - "SQL:2011 system-versioned + application-time tables"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - beyond
-    - law
-    - standard
-    - trinity
-  matrix:
-    - beyond
-    - law
-    - standard
-    - trinity
-  backlinks:
-    - beyond
-    - law
-    - standard
-    - trinity
 signatures:
-  computationUuid: "1bb798ea-e44a-80cb-ba47-87d08b42ccde"
+  computationUuid: "30c09399-f7cd-8c21-a89c-40408b285472"
   stages:
     - stage: path
       stageUuid: "68aab473-1f63-8b01-99d8-e34fdc65196b"
@@ -56,13 +27,13 @@ signatures:
     - stage: boundary
       stageUuid: "02b24e32-bc65-8e91-ab44-8d80a801dd31"
     - stage: links
-      stageUuid: "b52544a7-365f-8161-9fdb-eb761918ba6d"
+      stageUuid: "9ee4bc4b-df41-8c17-8d9e-adea88ba2d6c"
     - stage: horo
-      stageUuid: "fddb430e-264a-8699-b5ce-0e9bc68ccbd8"
+      stageUuid: "5ac90096-e8e6-85a5-8248-7426ee384349"
     - stage: seal
       stageUuid: "89bcc5aa-acde-83dd-8e8e-7abd68a58923"
     - stage: uuid
-      stageUuid: "d1e1f2c6-d9c0-8df8-b369-05fd3414ef17"
+      stageUuid: "f3665892-5b4e-8609-a6d0-c9a5443cc1a9"
 version: 2
 ---
 # beyond/bitemporal — bitemporal queries (system-time × valid-time)

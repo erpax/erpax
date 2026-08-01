@@ -1,63 +1,35 @@
 ---
 name: ayurvedic
 description: "Use when reasoning about ayurvedic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/ayurvedic
-coordinate: ayurvedic · 4/weave · 6ddb539d
-contentUuid: "e9f242d3-dec9-52c5-bdd0-16c49f7aafec"
-diamondUuid: "0700c632-acaa-8b2b-a047-2bdab4fe1f73"
-uuid: "6ddb539d-b011-84ed-8f18-bc15ffd3c68e"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/ayurvedic"
+coordinate: "vocabulary/ayurvedic · 1/base · d5644a0a"
+contentUuid: "d188c8c7-2418-58d6-8f22-501a05fdba2a"
+diamondUuid: "7aeb6965-1b50-8eac-865d-aa97ead7e1ed"
+uuid: "d5644a0a-6cb5-88c7-bc67-3c7c3b91705a"
+horo: 1
 typography:
-  partition: ayurvedic
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "e2719604-4e76-894a-852c-6fb1fa912424"
+  computationUuid: "0af14ff2-1bbb-8525-ac15-c6ecd79ad935"
   stages:
     - stage: path
-      stageUuid: "7a397f4b-e505-8394-ba05-a8f9f7b9b58e"
+      stageUuid: "95bb3992-3d49-826b-a466-599559b6d3fd"
     - stage: trinity
-      stageUuid: "da625643-65e5-8b2f-80c5-d2cb4e81c285"
+      stageUuid: "5c75a94e-b3a0-8bd1-bbde-a5883b71d172"
     - stage: boundary
-      stageUuid: "899de390-7af7-86a6-9b26-86efc0a89ae6"
+      stageUuid: "14cfcceb-98c0-854f-858d-f120a466d481"
     - stage: links
-      stageUuid: "93cba5a6-f4a0-8f03-a82f-a332ac7ec5a0"
+      stageUuid: "d98f392f-cf26-83c1-95fc-3220825d1ad3"
     - stage: horo
-      stageUuid: "a5c6feec-1da8-82bc-9121-f3838d4c1686"
+      stageUuid: "ac452e38-3fe2-893c-b91f-c9ef2d1c2c29"
     - stage: seal
-      stageUuid: "fe1f45d8-e747-8659-ae98-9084ab586c7b"
+      stageUuid: "1c492110-e082-8683-aafa-0c24b3d69f07"
     - stage: uuid
-      stageUuid: "1b14ff2b-c997-8cb4-90a7-bf01e8e9fe18"
+      stageUuid: "3caee501-e67d-8c43-a9cb-a060fce8e9b9"
 version: 2
 ---
 # ayurvedic

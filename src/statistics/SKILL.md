@@ -2,57 +2,19 @@
 name: statistics
 description: "Use when reasoning about statistics — A schema.org component word, collided out of schema.org compounds — fused from diseaseSpreadStatistics (sti · collapse · merge)."
 atomPath: statistics
-coordinate: statistics · 4/weave · 9722d5cf
-contentUuid: "e6b87b01-090d-5040-9a76-1470ac1fcf8d"
-diamondUuid: "007e9c50-1766-8dcc-aec2-819eec53cff9"
-uuid: "9722d5cf-0c3c-8e73-b4f8-7899c65af0a7"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - disease
-    - law
-    - merge
-    - spread
-    - sti
-  out:
-    - collapse
-    - disease
-    - law
-    - merge
-    - spread
-    - sti
+coordinate: "statistics · 5/round · f5295405"
+contentUuid: "321b0520-04f3-5a23-b429-79fda376df73"
+diamondUuid: "dc76e5f6-e6b1-8d18-9043-57472ac70917"
+uuid: "f5295405-d38f-8e2c-be87-359d02362435"
+horo: 5
 typography:
   partition: statistics
-  bondDegree: 20
-  neighbors: []
+  bondDegree: 22
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - disease
-    - law
-    - merge
-    - spread
-    - sti
-  matrix:
-    - collapse
-    - disease
-    - law
-    - merge
-    - spread
-    - sti
-  backlinks:
-    - collapse
-    - disease
-    - law
-    - merge
-    - spread
-    - sti
 signatures:
-  computationUuid: "f783cd73-5947-81c0-840d-95d0742017b1"
+  computationUuid: "94fef889-f674-835f-b363-c2b143d0d2a5"
   stages:
     - stage: path
       stageUuid: "e2d5087b-03db-84e3-8831-983846bc277b"
@@ -63,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3e5a29c4-d8b6-8a8f-a60b-86b93e121c84"
     - stage: horo
-      stageUuid: "4e7bbe88-02d6-8ad6-8af3-1c995bb3003b"
+      stageUuid: "d2bd18d9-b8a5-84cd-88f8-efae0d0358ec"
     - stage: seal
-      stageUuid: "85816270-1fc2-845b-8857-82af720612c2"
+      stageUuid: "49442ddf-8736-82a6-b219-50962f1122c7"
     - stage: uuid
-      stageUuid: "d59d82e6-2c84-818e-acd5-d522142e1320"
+      stageUuid: "7d6f70cc-c194-82f1-a8a9-3dca305f621f"
 version: 2
 ---
 # statistics

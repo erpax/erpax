@@ -1,77 +1,35 @@
 ---
 name: language
 description: "Use when reasoning about language — Natural languages such as Spanish, Tamil, Hindi, English, etc. Formal language code tags expressed in BCP 47 can be used via the alternateName property. The Language type previousl"
-atomPath: vocabulary/language
-coordinate: language · 8/crest · 3f08de77
-contentUuid: "47874e09-3052-55b0-8695-c2dbe86292da"
-diamondUuid: "298ce334-dbe7-81d1-8586-d6955abdccce"
-uuid: "3f08de77-6df9-8146-977c-1dca4431c2b9"
-horo: 8
-bonds:
-  in:
-    - available
-    - computer
-    - knows
-    - law
-    - programming
-    - subtitle
-    - translator
-  out:
-    - available
-    - computer
-    - knows
-    - law
-    - programming
-    - subtitle
-    - translator
+atomPath: "vocabulary/language"
+coordinate: "vocabulary/language · 4/weave · 39b98d18"
+contentUuid: "d0deb39b-ae0b-54b0-9a1c-dc3c23e09987"
+diamondUuid: "4c62b034-604a-8ba3-b85b-25f5bf7163bd"
+uuid: "39b98d18-dfcc-8c0e-afce-67ba1baa2ddc"
+horo: 4
 typography:
-  partition: language
-  bondDegree: 26
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 35
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - available
-    - computer
-    - knows
-    - law
-    - programming
-    - subtitle
-  matrix:
-    - available
-    - computer
-    - knows
-    - law
-    - programming
-    - subtitle
-    - translator
-  backlinks:
-    - available
-    - computer
-    - knows
-    - law
-    - programming
-    - subtitle
-    - translator
 signatures:
-  computationUuid: "2091ab90-c028-8364-83c4-a091d74c4944"
+  computationUuid: "fbcd4a42-6bd8-830e-b94f-951aa504bed7"
   stages:
     - stage: path
-      stageUuid: "2fcc941e-6ac9-8f8e-9266-9da59843dad5"
+      stageUuid: "b8d8de5e-0042-82d0-ae6e-3f68e4e47888"
     - stage: trinity
-      stageUuid: "7f81855c-924c-8777-9db3-811ce217c34a"
+      stageUuid: "9208db1b-0bf0-8669-b948-8044899c81cf"
     - stage: boundary
-      stageUuid: "0081a2a6-07d4-877e-be93-9da77043def2"
+      stageUuid: "f757dd34-f7cb-8fa5-b869-a1132e6fb324"
     - stage: links
-      stageUuid: "f3315011-f6d3-8ce8-8616-9a539e0619d2"
+      stageUuid: "684ae30b-f216-86d2-a6a8-6020964a9b41"
     - stage: horo
-      stageUuid: "d01373d4-6a92-8e53-aa28-9fff2f7e05fd"
+      stageUuid: "cca3d93d-0321-8a25-94d2-491c8022061f"
     - stage: seal
-      stageUuid: "5de7959a-0664-86b1-9d93-325b2e9f5496"
+      stageUuid: "d77f611d-cc6b-823e-88c1-8a34ac9055c9"
     - stage: uuid
-      stageUuid: "a7282dce-29f0-84d7-8668-2b7eb8b63d01"
+      stageUuid: "d4e0a76a-dbf1-83a0-8817-ff1d23ed86fe"
 version: 2
 ---
 # language

@@ -2,32 +2,14 @@
 name: oauth
 description: "Use when acquiring or refreshing an external OAuth 2.0 token — the credential lifecycle (acquire → use → expire → refresh) and scope/least-privilege check, encoded as pure policy. The token-endpoint HTTP is a runtime boundary; the lifecycle logic is native and tested. One atom serves every external API (Google Workspace, country-apis…), with secrets resolved per-tenant via the credential broker — never in the registry."
 atomPath: oauth
-coordinate: "oauth · 2/share · 5edb310b"
-contentUuid: "b3eb818b-e209-5874-84b3-6b006223239f"
-diamondUuid: "6df178be-6dd5-8f21-a01a-959bec8ea034"
-uuid: "5edb310b-bb1a-8f1c-9753-9be877ec8d83"
-horo: 2
-bonds:
-  in:
-    - access
-    - identity
-    - ingest
-    - law
-    - sandbox
-    - self
-    - workspace
-  out:
-    - access
-    - identity
-    - ingest
-    - law
-    - sandbox
-    - self
-    - workspace
+coordinate: "oauth · 4/weave · fbdf93c8"
+contentUuid: "95a09007-7a5c-5fc8-a2d7-0808e7081636"
+diamondUuid: "5eb69d12-9393-8ad4-9bf2-c1feb7187840"
+uuid: "fbdf93c8-8ce6-81bc-821a-5be0f0fc6009"
+horo: 4
 typography:
   partition: oauth
   bondDegree: 21
-  neighbors: []
 standards:
   - "IETF RFC 6749 OAuth 2.0 (grant types, token lifecycle)"
   - IETF RFC 6750 Bearer token usage
@@ -36,32 +18,8 @@ standards:
   - "RFC-6750"
   - "RFC-6750`"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - identity
-    - law
-    - sandbox
-    - self
-    - workspace
-  matrix:
-    - access
-    - identity
-    - ingest
-    - law
-    - sandbox
-    - self
-    - workspace
-  backlinks:
-    - access
-    - identity
-    - ingest
-    - law
-    - sandbox
-    - self
-    - workspace
 signatures:
-  computationUuid: "880a8c2c-e6eb-89e9-95bd-7956000afe72"
+  computationUuid: "5b4b88e9-e58b-8f57-9711-4a608329d7b0"
   stages:
     - stage: path
       stageUuid: "d07fbf41-c23b-8f0d-a2d7-62625618a7f3"
@@ -72,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "0cb2eee2-19df-8e3b-9355-47f2fef8b615"
     - stage: horo
-      stageUuid: "7acdfcc3-98ad-8309-99b7-f579e4acce2b"
+      stageUuid: "99f51460-d891-8c38-852c-549dab69b5c3"
     - stage: seal
       stageUuid: "a4603486-5c74-8e5b-9b76-ca6b7c897db2"
     - stage: uuid
-      stageUuid: "246b527c-a11c-83af-a9a6-44b315611d23"
+      stageUuid: "6b68b59a-31bc-8698-a505-d8f5b6a22525"
 version: 2
 ---
 # oauth — the external-credential lifecycle (acquire · refresh · scope), one atom

@@ -1,79 +1,35 @@
 ---
 name: estate
 description: "Use when reasoning about estate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/estate
-coordinate: estate · 4/weave · 9db5edd6
-contentUuid: "a5efd164-0168-5e19-9863-12730ca04baf"
-diamondUuid: "687cd35f-7402-8706-8505-072128011c29"
-uuid: "9db5edd6-facf-8009-841f-5c70badf60d5"
-horo: 4
-bonds:
-  in:
-    - agent
-    - collapse
-    - law
-    - listing
-    - merge
-    - real
-    - sti
-  out:
-    - agent
-    - collapse
-    - law
-    - listing
-    - merge
-    - real
-    - sti
+atomPath: "vocabulary/estate"
+coordinate: "vocabulary/estate · 8/crest · 37c9afc4"
+contentUuid: "193b5fc0-cf06-5885-94d2-4ea0f6420c47"
+diamondUuid: "4f2020d1-510a-871d-94b2-22651ce4b749"
+uuid: "37c9afc4-284a-8d19-b248-ba050030f4eb"
+horo: 8
 typography:
-  partition: estate
+  partition: vocabulary
   bondDegree: 24
-  neighbors:
-    - agent
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - agent
-    - collapse
-    - law
-    - listing
-    - merge
-    - real
-    - sti
-  matrix:
-    - agent
-    - collapse
-    - law
-    - listing
-    - merge
-    - real
-    - sti
-  backlinks:
-    - agent
-    - collapse
-    - law
-    - listing
-    - merge
-    - real
-    - sti
 signatures:
-  computationUuid: "c920a9da-4601-8643-a3d9-721e0da70a27"
+  computationUuid: "25698f4d-3322-8152-aab2-1572df594d02"
   stages:
     - stage: path
-      stageUuid: "4e3aa168-d772-8fa4-b405-0e2f610935f9"
+      stageUuid: "3bbd5759-ec1b-8747-b959-14c99ae88076"
     - stage: trinity
-      stageUuid: "27ba2dd8-72b8-8f60-873f-3022f20fed94"
+      stageUuid: "5d206e07-39f0-80a6-a1f4-013afd862a0e"
     - stage: boundary
-      stageUuid: "d440c47d-f74b-82dd-8d87-3f00f8562cc6"
+      stageUuid: "6e511847-c2bb-84c9-af37-115ddb8270b7"
     - stage: links
-      stageUuid: "6848327c-1c2b-89eb-bf70-a78c6d65a250"
+      stageUuid: "865310c5-17ed-8c92-b0b8-040ecf1d304b"
     - stage: horo
-      stageUuid: "51ac6e12-bdc5-8566-b840-e470306908fc"
+      stageUuid: "6603dcf0-4155-8485-8a30-3b05555f2cec"
     - stage: seal
-      stageUuid: "5c2fed6f-6146-8903-8580-945d3ad241d0"
+      stageUuid: "452342e2-65c5-86bc-8d19-30fe7869491c"
     - stage: uuid
-      stageUuid: "601801cc-d9ab-843d-967b-f6859be23ecc"
+      stageUuid: "a291c51f-0758-81b8-99e0-bf48f2350b60"
 version: 2
 ---
 # estate

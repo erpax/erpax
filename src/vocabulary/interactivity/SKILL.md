@@ -1,68 +1,35 @@
 ---
 name: interactivity
 description: "Use when reasoning about interactivity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/interactivity
-coordinate: interactivity · 8/crest · afdc300a
-contentUuid: "2b153a41-2bb6-57ed-a047-c7f51df9b5a2"
-diamondUuid: "cd5623b7-7e09-8dfb-8860-a308d79ae52e"
-uuid: "afdc300a-4d8f-826d-a44a-5a470cbf5bae"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - type
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - type
+atomPath: "vocabulary/interactivity"
+coordinate: "vocabulary/interactivity · 7/descent · 2c8e81c3"
+contentUuid: "35b34b74-2bd4-5a10-9232-a23d53aaae26"
+diamondUuid: "03988a0f-e658-8ff9-a7af-6e0bb1ae82d2"
+uuid: "2c8e81c3-7de6-8474-bc5c-5d3b6600f667"
+horo: 7
 typography:
-  partition: interactivity
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - type
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - type
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - type
 signatures:
-  computationUuid: "d8cd7f1b-89e6-8b49-bdb9-1f645e83545f"
+  computationUuid: "fde1be13-75cb-86e1-ac01-86d644ba451b"
   stages:
     - stage: path
-      stageUuid: "2d2ae3e0-1566-8c00-aef1-0a13be2263b6"
+      stageUuid: "cac7f08b-6253-8b6b-88b5-323f622a8938"
     - stage: trinity
-      stageUuid: "ce248c7b-7100-8af7-93a7-107d4f961c23"
+      stageUuid: "48e4cf57-ae3b-8afe-96f8-25f606439e84"
     - stage: boundary
-      stageUuid: "a272bac3-caf7-85f6-9c00-fbba3a92b0e2"
+      stageUuid: "4ac3aa72-b043-8640-b722-2f7ef9de468b"
     - stage: links
-      stageUuid: "94d315cf-a562-8a7a-b113-a22f10725b2e"
+      stageUuid: "fab38c2c-58fb-8e4f-9db0-49839c35ad06"
     - stage: horo
-      stageUuid: "9ed004a8-e281-8d42-b645-271cb42871c1"
+      stageUuid: "2767dd8b-5c96-85aa-ad3a-78c175df962f"
     - stage: seal
-      stageUuid: "3e20a7f8-4638-8c20-b776-664c9397095a"
+      stageUuid: "61dd983b-5071-8f66-bac5-5a00e0f6032d"
     - stage: uuid
-      stageUuid: "40ca19f9-dcbb-8693-a3ea-95bdf6c1e80b"
+      stageUuid: "8eb77cf8-1d18-8853-bb49-31b8b837f426"
 version: 2
 ---
 # interactivity

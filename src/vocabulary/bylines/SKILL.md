@@ -1,77 +1,35 @@
 ---
 name: bylines
 description: "Use when reasoning about bylines as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/bylines
-coordinate: bylines · 2/share · 963e64de
-contentUuid: "ba2c9ca7-c795-5a0d-a00d-b442902105f2"
-diamondUuid: "f6adbc8f-4045-8aba-9071-7bd77d311eb6"
-uuid: "963e64de-a41f-8a9b-aa30-1b40db08475e"
-horo: 2
-bonds:
-  in:
-    - byline
-    - collapse
-    - law
-    - merge
-    - no
-    - policy
-    - sti
-  out:
-    - byline
-    - collapse
-    - law
-    - merge
-    - no
-    - policy
-    - sti
+atomPath: "vocabulary/bylines"
+coordinate: "vocabulary/bylines · 8/crest · 5e0060c9"
+contentUuid: "3933fe2e-573f-59d2-b331-ef64277e8058"
+diamondUuid: "26b101e0-6a3e-89da-8e21-64e599ab162d"
+uuid: "5e0060c9-c825-8613-99c1-a13343a0db84"
+horo: 8
 typography:
-  partition: bylines
+  partition: vocabulary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - no
-    - policy
-    - sti
-  matrix:
-    - byline
-    - collapse
-    - law
-    - merge
-    - no
-    - policy
-    - sti
-  backlinks:
-    - byline
-    - collapse
-    - law
-    - merge
-    - no
-    - policy
-    - sti
 signatures:
-  computationUuid: "e5c0591a-c29e-8e59-843d-da19c0684f14"
+  computationUuid: "dddf8d63-7bd7-8d6c-85c9-47796477ad68"
   stages:
     - stage: path
-      stageUuid: "cce4c276-91cc-8d2d-946e-2bd2cf93523c"
+      stageUuid: "b5f5cd55-ff66-83bb-8e84-c69fba74c14d"
     - stage: trinity
-      stageUuid: "25d4aff8-92f0-880f-83b6-52b144656f9f"
+      stageUuid: "c8691a64-60ea-858e-b227-5e2c0bcfceaa"
     - stage: boundary
-      stageUuid: "7eccebd7-0c57-826a-ac16-8a1362171f27"
+      stageUuid: "64ef119d-2d75-83f7-bf50-a5bd4209e663"
     - stage: links
-      stageUuid: "f23c1f08-5659-8854-8699-1db655538bec"
+      stageUuid: "cb1289a5-f562-8cc0-838f-493741802d2f"
     - stage: horo
-      stageUuid: "f60af44b-5ac9-8fda-aa64-f689c00847aa"
+      stageUuid: "518a361f-4bfb-8071-bbe1-c5adc9f9b084"
     - stage: seal
-      stageUuid: "905750d1-f727-8e66-9ae0-26303dd1fe3e"
+      stageUuid: "dd013508-c6f1-88b6-8463-f237594409d6"
     - stage: uuid
-      stageUuid: "aa655dcf-8fcf-84e6-913f-2995bc88d29b"
+      stageUuid: "4b19d68d-11c5-87ad-9802-4395a3290d26"
 version: 2
 ---
 # bylines

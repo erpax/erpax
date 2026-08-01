@@ -1,114 +1,26 @@
 ---
 name: llm
 description: "Use when a uuid must expand back into an LLM prompt — the inhale of the breath, decoding identity plus the wired color+sound frame plus the corpus neighbourhood straight out of the 128 bits; the uuid IS the prompt, self-decoding, no payload."
-atomPath: uuid/llm
-coordinate: uuid/llm · 2/share · eb6a0291
-contentUuid: "1662df10-b307-5849-adfe-d8080f329332"
-diamondUuid: "56ac9317-2697-8c25-9c4e-93871054d784"
-uuid: "eb6a0291-38bd-8db5-a85a-996d8a23c6f5"
-horo: 2
-bonds:
-  in:
-    - angel
-    - breath
-    - chat
-    - cost
-    - entry
-    - law
-    - limit
-    - llm
-    - matrix
-    - merge
-    - message
-    - observe
-    - projection
-    - proof
-    - self
-    - signal
-    - train
-    - uuid
-  out:
-    - angel
-    - breath
-    - chat
-    - cost
-    - entry
-    - law
-    - limit
-    - llm
-    - matrix
-    - merge
-    - message
-    - observe
-    - projection
-    - proof
-    - self
-    - signal
-    - train
-    - uuid
+atomPath: "uuid/llm"
+coordinate: "uuid/llm · 1/base · 0efb72f5"
+contentUuid: "4d22bd73-8272-5803-9fe3-bfcf94a45562"
+diamondUuid: "06db450d-1cd0-80b5-bc4e-a59285e198a3"
+uuid: "0efb72f5-05bb-8b8b-8fc1-03f6a36c8ab4"
+horo: 1
 typography:
   partition: uuid
-  bondDegree: 67
-  neighbors: []
+  bondDegree: 68
 standards:
-  - Conservation Law 61 (uuid carries its own features) · 62 (coverage)
   - "ISO-16:1975 a432 (the signal anchor — color+sound from position)"
+  - "ISO-16:1975 a432 (the signal anchor — color+sound from position)`"
   - "ITU-T X.667 (uuid ↔ 2.25 OID, via localize)"
   - "ITU-T-X667"
   - "RFC 9562 §5.8 (uuidv8 structured content-uuid — the decode source)"
+  - "RFC 9562 §5.8 (uuidv8 structured content-uuid — the decode source)`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - breath
-    - entry
-    - holographic
-    - identity
-    - llm
-    - localize
-    - matrix
-    - oid
-    - signal
-    - uuid
-  matrix:
-    - angel
-    - breath
-    - chat
-    - cost
-    - entry
-    - law
-    - limit
-    - llm
-    - matrix
-    - merge
-    - message
-    - observe
-    - projection
-    - proof
-    - self
-    - signal
-    - train
-    - uuid
-  backlinks:
-    - angel
-    - breath
-    - chat
-    - cost
-    - entry
-    - law
-    - limit
-    - llm
-    - matrix
-    - merge
-    - message
-    - observe
-    - projection
-    - proof
-    - self
-    - signal
-    - train
-    - uuid
 signatures:
-  computationUuid: "9b7df0d0-d98e-8c08-9a9c-56fbf17d65d7"
+  computationUuid: "d1aab3b5-a374-8eb2-a16d-41ef7b261cd9"
   stages:
     - stage: path
       stageUuid: "3306117f-5959-818c-879b-07997b414fc3"
@@ -119,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "6755e222-b024-8769-9485-722ecf10c062"
     - stage: horo
-      stageUuid: "11d471f8-9ad4-8b35-83b2-b94e25184037"
+      stageUuid: "f5a24ad1-2c9c-8c74-9296-5c3c80fa52b9"
     - stage: seal
       stageUuid: "89955dd4-8e57-8406-89eb-3687bc844efc"
     - stage: uuid
-      stageUuid: "8f13619e-f3e1-8505-b732-c8399aa4fc06"
+      stageUuid: "5a3dd89f-d810-82fd-9475-42404e7bf801"
 version: 2
 ---
 # uuid/llm — the INHALE: a uuid IS the prompt

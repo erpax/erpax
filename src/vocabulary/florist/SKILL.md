@@ -1,53 +1,35 @@
 ---
 name: florist
 description: Use when reasoning about florist — A florist.
-atomPath: vocabulary/florist
-coordinate: florist · 8/crest · 99b347a7
-contentUuid: "9bbb01ae-eea4-55ba-bba5-50ddf2f5a4a3"
-diamondUuid: "c10be451-8862-8681-a4d6-12b1e9ded334"
-uuid: "99b347a7-e101-8623-b610-5a2d61e32d94"
-horo: 8
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/florist"
+coordinate: "vocabulary/florist · 4/weave · 8f0b0ee9"
+contentUuid: "119930b5-1c99-5002-a799-be7a61c75a0b"
+diamondUuid: "8547a4a1-d87b-8d1b-b0fb-545b621879de"
+uuid: "8f0b0ee9-c19b-8c9a-b6ce-dc7fc5de428b"
+horo: 4
 typography:
-  partition: florist
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "7bda1d51-1a1f-89a4-a3a9-5d749e25bc1d"
+  computationUuid: "069040ef-634d-8266-8c2d-59769b9d58b6"
   stages:
     - stage: path
-      stageUuid: "07ae987b-06ff-8c3d-a20f-203fe505b509"
+      stageUuid: "62592897-456e-8c6e-8d22-614fe56465ad"
     - stage: trinity
-      stageUuid: "7548edc0-f226-86db-a9ef-7dcf78ac2009"
+      stageUuid: "d561e47c-cfb9-8b44-a9dd-d3c843d14cc1"
     - stage: boundary
-      stageUuid: "bb0b8985-fd95-8640-90f5-ae9f773419da"
+      stageUuid: "b0abc031-f274-80d5-92cf-2dd80649076b"
     - stage: links
-      stageUuid: "e7cfde22-4728-8364-ba40-22b78847e32b"
+      stageUuid: "7e342044-e445-8504-bcdd-f9774fdf1257"
     - stage: horo
-      stageUuid: "ae444910-ec56-891d-80d2-d8aa50016404"
+      stageUuid: "c0e4d081-9775-8724-8e3a-a6c9e8c2ea7a"
     - stage: seal
-      stageUuid: "b44e5f12-b67b-891c-8714-cf8b7617138f"
+      stageUuid: "e36d3902-4e0b-8d03-bd5b-93f9f2fc2972"
     - stage: uuid
-      stageUuid: "eb7bf27f-95df-8e09-a72e-53edf4bb82f7"
+      stageUuid: "97b2645f-8232-8821-bb5a-6822ac7a91a4"
 version: 2
 ---
 # florist

@@ -2,73 +2,14 @@
 name: contracts
 description: "Use when recognising or measuring insurance contract groups under IFRS 17 — GMM (building blocks — future cash flows, risk adjustment, CSM), PAA (short coverage), or VFA (direct participation); annual cohort grouping, profitability tiers, reinsurance link, loss-component, and disclosure (§93). The insurance-contracts IFRS 17 register."
 atomPath: "insurance/contracts"
-coordinate: "insurance/contracts · 7/descent · c65023c0"
-contentUuid: "c5b0573b-684a-5cbb-9e99-8e130811b82c"
-diamondUuid: "6943afa4-7d53-8d3e-ac1d-17d725ce56fe"
-uuid: "c65023c0-a421-8172-8e9c-a48b931309d7"
-horo: 7
-bonds:
-  in:
-    - amendment
-    - amendments
-    - assignment
-    - auditright
-    - clause
-    - confidentiality
-    - consent
-    - contract
-    - dataprotection
-    - deferredrevenue
-    - disputeresolution
-    - forcemajeure
-    - governinglaw
-    - indemnity
-    - insurance
-    - jurisdiction
-    - law
-    - liability
-    - license
-    - obligations
-    - orders
-    - performances
-    - remediation
-    - restriction
-    - revenue
-    - signatures
-    - termination
-    - warranty
-  out:
-    - amendment
-    - amendments
-    - assignment
-    - auditright
-    - clause
-    - confidentiality
-    - consent
-    - contract
-    - dataprotection
-    - deferredrevenue
-    - disputeresolution
-    - forcemajeure
-    - governinglaw
-    - indemnity
-    - jurisdiction
-    - law
-    - liability
-    - license
-    - obligations
-    - orders
-    - performances
-    - remediation
-    - restriction
-    - revenue
-    - signatures
-    - termination
-    - warranty
+coordinate: "insurance/contracts · 4/weave · 28b575d8"
+contentUuid: "4525104c-4a88-52ba-9099-6eeb404cd41c"
+diamondUuid: "944b60b7-a988-8141-8dac-5916d03212fa"
+uuid: "28b575d8-473b-81a5-a422-3e429eefa3a0"
+horo: 4
 typography:
   partition: insurance
   bondDegree: 97
-  neighbors: []
 standards:
   - "IFRS IFRS-13 fair-value-input-hierarchy"
   - "IFRS IFRS-13 fair-value-input-hierarchy`"
@@ -86,7 +27,6 @@ standards:
   - "IFRS IFRS-17 §B100 variable-fee-approach`"
   - "IFRS-13"
   - "IFRS-17"
-  - "ILO-C100"
   - "ISO-4217:2015 currency-codes"
   - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time"
@@ -95,71 +35,8 @@ standards:
   - "Solvency II / IAIS ICS — actuarial reserving link"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - entry
-    - measurements
-    - proof
-    - transaction
-  matrix:
-    - amendment
-    - amendments
-    - assignment
-    - auditright
-    - clause
-    - confidentiality
-    - consent
-    - contract
-    - dataprotection
-    - deferredrevenue
-    - disputeresolution
-    - forcemajeure
-    - governinglaw
-    - indemnity
-    - jurisdiction
-    - law
-    - liability
-    - license
-    - obligations
-    - orders
-    - performances
-    - remediation
-    - restriction
-    - revenue
-    - signatures
-    - termination
-    - warranty
-  backlinks:
-    - amendment
-    - amendments
-    - assignment
-    - auditright
-    - clause
-    - confidentiality
-    - consent
-    - contract
-    - dataprotection
-    - deferredrevenue
-    - disputeresolution
-    - forcemajeure
-    - governinglaw
-    - indemnity
-    - jurisdiction
-    - law
-    - liability
-    - license
-    - obligations
-    - orders
-    - performances
-    - remediation
-    - restriction
-    - revenue
-    - signatures
-    - termination
-    - warranty
 signatures:
-  computationUuid: "92f7084c-364f-85be-84f7-3cea6199dcb3"
+  computationUuid: "e2188f24-5495-824e-ac23-75c5e481a10b"
   stages:
     - stage: path
       stageUuid: "ce0a3bec-a16d-8df9-b3be-9ae3bf5945c6"
@@ -168,13 +45,13 @@ signatures:
     - stage: boundary
       stageUuid: "d056388d-2ff7-8fb7-aef2-5f032e08b989"
     - stage: links
-      stageUuid: "7b2adee9-5a49-891a-9737-1b0ee14ec3be"
+      stageUuid: "a7e1e5d3-7bee-871e-93c2-ed4c81dc9699"
     - stage: horo
-      stageUuid: "babb7f2d-2dca-88a6-89ab-b26906b1249b"
+      stageUuid: "9b5ee82a-64f1-801e-b896-5817e006146d"
     - stage: seal
       stageUuid: "9e4e4d15-01e5-8147-b28d-624f07c9aaec"
     - stage: uuid
-      stageUuid: "faed50cb-375f-8b9d-a172-df8565f63c1b"
+      stageUuid: "01d50c75-d1e6-8729-81da-236fb501e7e6"
 version: 2
 ---
 # insurance-contracts

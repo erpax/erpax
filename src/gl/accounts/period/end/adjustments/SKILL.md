@@ -2,33 +2,14 @@
 name: adjustments
 description: "Use when posting or reviewing period-end adjusting entries — depreciation, interest accrual, salary accrual, deferred income, allowance — with segregation-of-duties approval and automatic GL posting on status change. The period-end-adjustments accrual collection."
 atomPath: "gl/accounts/period/end/adjustments"
-coordinate: "gl/accounts/period/end/adjustments · 1/base · 3749344c"
-contentUuid: "6b623819-1602-59b5-a994-f90736bd5c14"
-diamondUuid: "020a4a93-59e3-84be-af3b-267d58f9781d"
-uuid: "3749344c-512d-85c4-92d0-eaae8f74d652"
+coordinate: "gl/accounts/period/end/adjustments · 1/base · 5ba99bb3"
+contentUuid: "fb16fd78-becf-591c-ab31-21cc64913d11"
+diamondUuid: "47b62ba5-3aea-8453-baf4-8a84f21f6903"
+uuid: "5ba99bb3-aee9-8689-b22e-f1d48ca73ef4"
 horo: 1
-bonds:
-  in:
-    - accounting
-    - adjustment
-    - end
-    - entries
-    - horo
-    - law
-    - proof
-    - standard
-  out:
-    - accounting
-    - adjustment
-    - entries
-    - horo
-    - law
-    - proof
-    - standard
 typography:
   partition: gl
   bondDegree: 0
-  neighbors: []
 standards:
   - "IFRS IAS-1 presentation-of-financial-statements"
   - "IFRS IAS-8 accounting-policies-changes-and-errors"
@@ -38,30 +19,8 @@ standards:
   - "US-GAAP ASC-250 accounting-changes-and-error-corrections"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - accounts
-    - entries
-    - law
-  matrix:
-    - accounting
-    - adjustment
-    - entries
-    - horo
-    - law
-    - proof
-    - standard
-  backlinks:
-    - accounting
-    - adjustment
-    - entries
-    - horo
-    - law
-    - proof
-    - standard
 signatures:
-  computationUuid: "fcbcf351-7491-8c20-8d99-7bd9960eae53"
+  computationUuid: "7575553c-f7ae-89bb-a7a4-a34705f6612e"
   stages:
     - stage: path
       stageUuid: "85d4671a-1d9c-8734-80e6-f340dbb31d53"
@@ -72,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "339d4042-9243-88d4-8f46-fe23a36a3ae1"
     - stage: horo
-      stageUuid: "d11f5ec9-eb92-8115-8c4b-9b0e6077b69f"
+      stageUuid: "3a999683-c12c-89b7-9384-0ace6b44ec65"
     - stage: seal
       stageUuid: "6ec68967-5307-8fa5-ae43-92ff6f95e25b"
     - stage: uuid
-      stageUuid: "19a33d70-b941-8b1a-a173-98478879292f"
+      stageUuid: "b405b034-f3e3-8006-8680-c6b70801a16f"
 version: 2
 ---
 # period-end-adjustments

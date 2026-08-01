@@ -1,68 +1,35 @@
 ---
 name: pronounceable
 description: "Use when reasoning about pronounceable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/pronounceable
-coordinate: pronounceable · 8/crest · d72de474
-contentUuid: "c1a95579-f25b-574a-9aea-7165da51f847"
-diamondUuid: "ba1e0e42-026e-80d5-87d0-33ca462a2eed"
-uuid: "d72de474-6f0c-86bd-8b4a-c20c937c5847"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - text
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - text
+atomPath: "vocabulary/pronounceable"
+coordinate: "vocabulary/pronounceable · 4/weave · 65db67f5"
+contentUuid: "f98c4b15-1aa2-50c8-be64-316c097e451b"
+diamondUuid: "b3583d22-19bb-8c5e-8c9f-5e55e3b71a0a"
+uuid: "65db67f5-8d61-854a-99c4-c76579e48190"
+horo: 4
 typography:
-  partition: pronounceable
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - text
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - text
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - text
 signatures:
-  computationUuid: "d042cbb6-5456-84ea-b763-eeec12444350"
+  computationUuid: "b31a2456-230b-8e61-89e4-14bd31242d4c"
   stages:
     - stage: path
-      stageUuid: "88d4d396-379a-81e1-b80c-5263c055e4ef"
+      stageUuid: "f0bc31e4-405c-8415-9aec-44db4bd2ad73"
     - stage: trinity
-      stageUuid: "69cde83b-1133-8cf7-9bcb-ed7629907a49"
+      stageUuid: "19c839ba-995f-8338-a3d0-8250167608d1"
     - stage: boundary
-      stageUuid: "cbf1b48e-5403-8999-a640-e04069749205"
+      stageUuid: "31711cef-5049-8302-87dd-eb2f2d08cc27"
     - stage: links
-      stageUuid: "c1903227-4908-8cd6-b8bf-6c31eb65a7d3"
+      stageUuid: "3bd63c4b-88f7-83e9-bd7b-dbbe244c3375"
     - stage: horo
-      stageUuid: "07c540c4-080b-80f0-9a45-ffbeea03f41b"
+      stageUuid: "ef1e8c69-e6cc-838c-ad9c-cd08a4b9d495"
     - stage: seal
-      stageUuid: "2f76d236-d3a7-84de-9c83-94053aedc61b"
+      stageUuid: "4923f45a-3fac-8574-939d-298aa59976ab"
     - stage: uuid
-      stageUuid: "408df63f-23f6-86f2-8d44-dcf9e5120532"
+      stageUuid: "96b9bef2-59be-897f-a44f-cd76f6212810"
 version: 2
 ---
 # pronounceable

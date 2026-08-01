@@ -1,68 +1,35 @@
 ---
 name: phonetic
 description: "Use when reasoning about phonetic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/phonetic
-coordinate: phonetic · 4/weave · b4bdfba6
-contentUuid: "5f2d8835-420f-516e-9cbb-b0113dbea3cf"
-diamondUuid: "b7473155-762d-8eca-b73c-167780483fe3"
-uuid: "b4bdfba6-8bfa-8ba6-aded-0e46bd3ab5cc"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - text
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - text
+atomPath: "vocabulary/phonetic"
+coordinate: "vocabulary/phonetic · 1/base · 7d985874"
+contentUuid: "719cff42-c649-5bfb-a4d5-6a27bf86a077"
+diamondUuid: "2bd3d512-2f6a-8c23-8f8c-0f8f75bece1f"
+uuid: "7d985874-367a-84ae-bc33-1fba59bace0e"
+horo: 1
 typography:
-  partition: phonetic
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - text
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - text
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - text
 signatures:
-  computationUuid: "1cd14a48-1614-81f9-8bc4-7d61d4392265"
+  computationUuid: "240f5e02-7a6c-81db-90dd-c0adbaf2bfa1"
   stages:
     - stage: path
-      stageUuid: "ebb4d4bb-4850-8777-9cdd-d49cbbcc60be"
+      stageUuid: "3dafe48d-0afa-8004-adcf-0b322522ec86"
     - stage: trinity
-      stageUuid: "08b7e3e4-40a9-8cf6-86df-1838ab142a89"
+      stageUuid: "5379da97-962a-828b-9bfd-8da2721adbda"
     - stage: boundary
-      stageUuid: "74a1389c-b507-8cc5-a25b-1928624318c8"
+      stageUuid: "9d300b6d-3f08-8513-a62f-099bbb85c3c7"
     - stage: links
-      stageUuid: "8acb6556-bf50-8886-8909-6b51d33fa590"
+      stageUuid: "1d020af8-49e6-8a57-85bb-40979f94eb61"
     - stage: horo
-      stageUuid: "0f1bfe8f-f592-83fd-908b-575331933028"
+      stageUuid: "8952d6aa-d611-81b0-85c5-c683f0b08b4d"
     - stage: seal
-      stageUuid: "9be815ee-bd91-8f97-ae49-29bb1ee2869a"
+      stageUuid: "2190be39-cacc-849e-bf55-5b86eaad13c5"
     - stage: uuid
-      stageUuid: "76f9d8cc-ab7d-8b7b-ae38-bdad18ba8aa3"
+      stageUuid: "1bba9dbb-daba-85f8-8c1d-b6652e68ce27"
 version: 2
 ---
 # phonetic

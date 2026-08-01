@@ -1,68 +1,35 @@
 ---
 name: area
 description: Use when reasoning about area — The area within which users can expect to reach the broadcast service.
-atomPath: vocabulary/area
-coordinate: area · 4/weave · 9e4a21cf
-contentUuid: "734265a9-b918-5cbf-9f17-65ca1271ceff"
-diamondUuid: "3099a6c5-6844-8309-bc70-8b5edf67b906"
-uuid: "9e4a21cf-8c5e-865f-8c82-5c1108865137"
-horo: 4
-bonds:
-  in:
-    - administrative
-    - geographic
-    - law
-    - served
-    - service
-  out:
-    - administrative
-    - geographic
-    - law
-    - served
-    - service
+atomPath: "vocabulary/area"
+coordinate: "vocabulary/area · 5/round · f7d819a6"
+contentUuid: "1806ca4d-e267-56d7-b423-757868c86ecf"
+diamondUuid: "5e85b0a8-3eb2-81ee-9a01-2fc3682d2d2c"
+uuid: "f7d819a6-4a4a-8a3f-ae5a-40c50aa4932e"
+horo: 5
 typography:
-  partition: area
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - administrative
-    - geographic
-    - law
-    - served
-    - service
-  matrix:
-    - administrative
-    - geographic
-    - law
-    - served
-    - service
-  backlinks:
-    - administrative
-    - geographic
-    - law
-    - served
-    - service
 signatures:
-  computationUuid: "313ce93d-b2ff-8bec-9a44-a649b63d7550"
+  computationUuid: "1e89b187-ded8-8c86-b7e2-63fa043fd6e2"
   stages:
     - stage: path
-      stageUuid: "f77e1914-3bc2-8298-9e05-e0b22dd2a8a5"
+      stageUuid: "78e10b62-5ed3-8284-99c2-d68275458db0"
     - stage: trinity
-      stageUuid: "2d7f781a-1170-8519-9a2f-0cdd3df5a930"
+      stageUuid: "cc7be656-de2f-849f-927c-1dadb8a2f543"
     - stage: boundary
-      stageUuid: "9f81cf08-eccf-80f6-9537-26b96b7778fc"
+      stageUuid: "bb63fb16-1924-8de2-943f-0d65cb93c0ac"
     - stage: links
-      stageUuid: "f98b298b-01f6-8a3c-9b0e-df8fd4ad4898"
+      stageUuid: "68b98ec7-d3ad-8ffe-8b2d-c507a7584669"
     - stage: horo
-      stageUuid: "6a6c5dc9-528b-8cd3-8098-9480c989842b"
+      stageUuid: "ebf07073-cfae-8fb7-bd4f-6c00c0913f7b"
     - stage: seal
-      stageUuid: "b823f8f5-dceb-8b2d-aa5f-47dcd2f40b12"
+      stageUuid: "e0cba803-938b-8670-8c29-12d82a234f93"
     - stage: uuid
-      stageUuid: "22494af0-66a6-84c9-9063-3dd530d9243d"
+      stageUuid: "2dcb3fe3-7fb0-8ed7-9b58-599865ec251f"
 version: 2
 ---
 # area

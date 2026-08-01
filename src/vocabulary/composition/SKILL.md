@@ -1,87 +1,35 @@
 ---
 name: composition
 description: "Use when reasoning about composition as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/composition
-coordinate: composition · 4/weave · a50dd1b7
-contentUuid: "eb060a66-4370-5974-91df-581bc2c68894"
-diamondUuid: "95317c6d-5088-836f-89ef-326523433781"
-uuid: "a50dd1b7-a85d-8230-8855-cbd9d569edfb"
-horo: 4
-bonds:
-  in:
-    - architect
-    - chemical
-    - collapse
-    - form
-    - included
-    - law
-    - merge
-    - music
-    - sti
-  out:
-    - architect
-    - chemical
-    - collapse
-    - form
-    - included
-    - law
-    - merge
-    - music
-    - sti
+atomPath: "vocabulary/composition"
+coordinate: "vocabulary/composition · 7/descent · a940febf"
+contentUuid: "2590353e-46a8-58bf-b100-b049fe6f7b17"
+diamondUuid: "b9890019-368d-889c-a8e9-259c4936bcc8"
+uuid: "a940febf-0cc7-882b-896b-6936e0ab94f6"
+horo: 7
 typography:
-  partition: composition
+  partition: vocabulary
   bondDegree: 31
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - chemical
-    - collapse
-    - form
-    - included
-    - law
-    - merge
-    - music
-    - sti
-  matrix:
-    - architect
-    - chemical
-    - collapse
-    - form
-    - included
-    - law
-    - merge
-    - music
-    - sti
-  backlinks:
-    - architect
-    - chemical
-    - collapse
-    - form
-    - included
-    - law
-    - merge
-    - music
-    - sti
 signatures:
-  computationUuid: "15576a2c-f9dc-8e89-8417-7e24e4a4126b"
+  computationUuid: "5a887df6-0ce1-8308-99e8-ed294da86bef"
   stages:
     - stage: path
-      stageUuid: "9926c0bc-a58e-8d56-ac04-a34280768657"
+      stageUuid: "3a6c2f18-d89d-8e1c-a8d4-9d1ed0c58eec"
     - stage: trinity
-      stageUuid: "81bc4c55-a9e3-8137-90bd-c32720cfd1eb"
+      stageUuid: "6ab69af0-29d9-865c-9315-1541b6e44d3d"
     - stage: boundary
-      stageUuid: "07e3dba5-961e-8683-a79a-1b831f197b96"
+      stageUuid: "896c4075-61f5-8c18-9b07-89d021d5c337"
     - stage: links
-      stageUuid: "d6cf25b9-ec3f-88e6-8018-173c24b2fee4"
+      stageUuid: "9fac40c9-1df2-8b73-acf1-b5dce80969ff"
     - stage: horo
-      stageUuid: "bd80cf24-f1cb-85fc-9503-601315b0c5d1"
+      stageUuid: "f42e3f0d-bdf6-8f32-9b5d-81c08a9baad7"
     - stage: seal
-      stageUuid: "a454a2b9-5693-86dc-a428-a87d1445e7aa"
+      stageUuid: "c31841af-06fc-85eb-abc9-68eb0658a5a8"
     - stage: uuid
-      stageUuid: "e3a8ae07-4518-803f-9226-a15eef72a0c0"
+      stageUuid: "3502dbed-603f-8a9c-97e1-54a2ad908340"
 version: 2
 ---
 # composition

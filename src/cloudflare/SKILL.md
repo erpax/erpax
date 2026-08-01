@@ -2,66 +2,14 @@
 name: cloudflare
 description: "Use when touching Cloudflare — Workers AI first-class, uuid-sealed credentials, binding diamonds for every Wrangler section, path-merge on the 7th surface, mediated binding access fail-closed."
 atomPath: cloudflare
-coordinate: "cloudflare · 5/round · ec065d45"
-contentUuid: "14b2d13c-9909-5fef-9cda-f1591fa293b7"
-diamondUuid: "c14b6759-6219-8912-b413-d73c4ad3c1bf"
-uuid: "ec065d45-2979-8402-bff1-b959bcea131e"
-horo: 5
-bonds:
-  in:
-    - access
-    - agent
-    - ai
-    - audit
-    - capacity
-    - confirm
-    - cost
-    - deploy
-    - diamond
-    - innovation
-    - law
-    - path
-    - quantum
-    - secret
-    - serverless
-    - superposition
-    - uuid
-    - worker
-  out:
-    - access
-    - agent
-    - ai
-    - audit
-    - capacity
-    - confirm
-    - cost
-    - deploy
-    - diamond
-    - innovation
-    - law
-    - path
-    - quantum
-    - secret
-    - serverless
-    - superposition
-    - uuid
-    - worker
+coordinate: "cloudflare · 2/share · 6521053a"
+contentUuid: "a0f36e85-ef35-5ff5-9f78-bd503748e3e2"
+diamondUuid: "483df4f0-af1c-828e-9152-f47817d12ea0"
+uuid: "6521053a-c513-8e9a-936f-60cc1bc5926e"
+horo: 2
 typography:
   partition: cloudflare
   bondDegree: 74
-  neighbors:
-    - agent
-    - ai
-    - capacity
-    - cost
-    - deploy
-    - diamond
-    - innovation
-    - path
-    - quantum
-    - secret
-    - serverless
-    - worker
 standards:
   - Cloudflare Workers Runtime API
   - "CoE-108+"
@@ -105,62 +53,8 @@ bindings:
   - "services/WORKER_SELF_REFERENCE"
   - "triggers/CRON"
   - "vectorize/VECTORIZE_DOCS"
-neighbors:
-  wikilink:
-    - access
-    - agent
-    - ai
-    - audit
-    - confirm
-    - diamond
-    - innovation
-    - law
-    - path
-    - secret
-    - serverless
-    - superposition
-    - uuid
-    - worker
-  matrix:
-    - access
-    - agent
-    - ai
-    - audit
-    - capacity
-    - confirm
-    - cost
-    - deploy
-    - diamond
-    - innovation
-    - law
-    - path
-    - quantum
-    - secret
-    - serverless
-    - superposition
-    - uuid
-    - worker
-  backlinks:
-    - access
-    - agent
-    - ai
-    - audit
-    - capacity
-    - confirm
-    - cost
-    - deploy
-    - diamond
-    - innovation
-    - law
-    - path
-    - quantum
-    - secret
-    - serverless
-    - superposition
-    - uuid
-    - worker
 signatures:
-  computationUuid: "5d78d069-77f8-8b36-8391-13e51096dcfe"
+  computationUuid: "0a71a192-f001-8bc6-be09-6f7fae624e2f"
   stages:
     - stage: path
       stageUuid: "81a381ca-7840-8180-802d-be5f6b8f3f62"
@@ -171,11 +65,11 @@ signatures:
     - stage: links
       stageUuid: "7e8c83d7-1374-8d72-928f-af85aa194e9e"
     - stage: horo
-      stageUuid: "d4d4afe3-c5bb-87a8-b034-e37718e6b5e7"
+      stageUuid: "281d1491-befa-85c1-b0af-2c696a53b85b"
     - stage: seal
       stageUuid: "92cdc9de-1534-8664-b999-3db6eb5e8535"
     - stage: uuid
-      stageUuid: "3df944fb-7fa7-8da8-9e72-224479d18a22"
+      stageUuid: "668f6006-3a89-8c9a-b3b5-042e39b42b46"
 version: 2
 ---
 # cloudflare — mediated edge, every binding a diamond (AI-first)

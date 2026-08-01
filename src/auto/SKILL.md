@@ -2,111 +2,21 @@
 name: auto
 description: "Use when reasoning about auto as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: auto
-coordinate: "auto · 5/round · e30d95b8"
-contentUuid: "94676f82-0a06-5722-b3ab-fad686922fb7"
-diamondUuid: "79f57d7e-cab2-80c4-99fb-15ee10b7e1bc"
-uuid: "e30d95b8-0b31-8d65-86d3-682ca6e9ffdd"
-horo: 5
-bonds:
-  in:
-    - auto
-    - body
-    - by
-    - collapse
-    - dealer
-    - law
-    - merge
-    - parts
-    - rental
-    - repair
-    - shop
-    - sti
-    - store
-    - tenant
-    - timestamp
-    - wash
-  out:
-    - auto
-    - body
-    - by
-    - collapse
-    - dealer
-    - law
-    - merge
-    - parts
-    - rental
-    - repair
-    - shop
-    - sti
-    - store
-    - tenant
-    - timestamp
-    - wash
+coordinate: "auto · 8/crest · fcad2c8f"
+contentUuid: "98509aac-6fb4-520c-aed2-b10f0d32591d"
+diamondUuid: "8764795a-4b3a-8dd9-b258-87ca814ea995"
+uuid: "fcad2c8f-4139-8996-90bf-1f51402a018a"
+horo: 8
 typography:
   partition: auto
   bondDegree: 0
-  neighbors: []
 standards:
-  - "EU-2019/1150"
-  - "EU-2019/1152"
-  - "EU-2019/1937"
-  - "EU-2019/2161"
-  - "EU-2019/770"
-  - "EU-2019/771"
   - "EU-Intrastat-Reg-2019/2152"
   - "ISO-8601-1"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - body
-    - collapse
-    - dealer
-    - law
-    - merge
-    - parts
-    - rental
-    - repair
-    - shop
-    - sti
-    - store
-    - wash
-  matrix:
-    - auto
-    - body
-    - by
-    - collapse
-    - dealer
-    - law
-    - merge
-    - parts
-    - rental
-    - repair
-    - shop
-    - sti
-    - store
-    - tenant
-    - timestamp
-    - wash
-  backlinks:
-    - auto
-    - body
-    - by
-    - collapse
-    - dealer
-    - law
-    - merge
-    - parts
-    - rental
-    - repair
-    - shop
-    - sti
-    - store
-    - tenant
-    - timestamp
-    - wash
 signatures:
-  computationUuid: "22e155f9-880c-894d-b231-51f3da0340c6"
+  computationUuid: "820ab6d8-d9b6-802b-8299-dc663a7d9048"
   stages:
     - stage: path
       stageUuid: "a13d9345-25ea-8563-9b86-f77001c4f408"
@@ -117,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "f583b79a-9615-861c-80ee-c2f8f880c130"
     - stage: horo
-      stageUuid: "4edbb4d2-c102-8bc0-83e5-b62993fd8939"
+      stageUuid: "04458ca0-38db-8f5e-a066-daae4c8762f8"
     - stage: seal
       stageUuid: "5c4d5e04-1ca3-8894-b37b-ad61471598bf"
     - stage: uuid
-      stageUuid: "75b263dd-156d-8b8e-bfb3-c7adb3faebfa"
+      stageUuid: "702adee6-b4da-843b-845a-c75bfb6e2788"
 version: 2
 ---
 # auto

@@ -1,63 +1,35 @@
 ---
 name: dangerous
 description: "Use when reasoning about dangerous as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/dangerous
-coordinate: dangerous · 1/base · 9b3ae6c8
-contentUuid: "d57f3374-9de5-525f-9610-f1bd0c7afbef"
-diamondUuid: "ec28fb95-e406-8bb1-b7d0-b1c5e04ecc2e"
-uuid: "9b3ae6c8-b3a7-8566-9abc-bf9f919f777f"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/dangerous"
+coordinate: "vocabulary/dangerous · 4/weave · 774e11e8"
+contentUuid: "f5dd6b4b-fd62-57fc-8860-0c2d84491f2c"
+diamondUuid: "a6855ea3-ba62-8294-84bb-0b1c723bf004"
+uuid: "774e11e8-331c-8d4f-9aa8-adff523d9b33"
+horo: 4
 typography:
-  partition: dangerous
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "4a95d6b5-4709-8b77-99aa-573fe119ddea"
+  computationUuid: "49f801e8-bb7f-8209-816a-433b05dd4b63"
   stages:
     - stage: path
-      stageUuid: "354704a2-b3b9-85e4-b80f-23e0eeaa1685"
+      stageUuid: "22edeff3-5859-8f75-b710-fb6ae5b192e2"
     - stage: trinity
-      stageUuid: "140a1ea4-1629-8b68-8f5e-ebd849517585"
+      stageUuid: "f16b876a-8e22-8cf0-8a1f-68d458e43309"
     - stage: boundary
-      stageUuid: "6b68dd53-7be8-8066-a66e-db73800cda4c"
+      stageUuid: "62a1866e-c61f-8e08-a9da-9d5921e441a1"
     - stage: links
-      stageUuid: "8e1dd837-cbfb-8b3f-a46e-16197711267b"
+      stageUuid: "09ed3d72-a10b-80d6-8388-3dc341d29653"
     - stage: horo
-      stageUuid: "496e5f15-d330-8676-a86c-821109ef2030"
+      stageUuid: "03475632-9a9f-8954-85cf-94b259cd9f45"
     - stage: seal
-      stageUuid: "64a9295b-e902-80b0-b926-cafcbcefbfcf"
+      stageUuid: "22a862c6-ab28-8ba0-b9b3-f60224763a7e"
     - stage: uuid
-      stageUuid: "38058d62-d330-80a0-8007-15acc527dd35"
+      stageUuid: "4583a14b-c0d3-89ac-9079-e64d274d811b"
 version: 2
 ---
 # dangerous

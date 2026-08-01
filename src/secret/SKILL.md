@@ -2,68 +2,26 @@
 name: secret
 description: "Use when sealing Payload CMS secrets at rest or unsealing them at boot — encrypt under AES-256-GCM with the content-uuid in AAD; decrypt only when the presented uuid matches the expected content identity (fail-closed)."
 atomPath: secret
-coordinate: secret · 2/share · 2d237c54
-contentUuid: "ddb1a136-79d3-5b9f-9ab9-a82f0c3148dc"
-diamondUuid: "a329b3df-fa51-8e11-95c5-6c3363dbb74c"
-uuid: "2d237c54-837a-881a-bb99-f6464bb048e3"
-horo: 2
-bonds:
-  in:
-    - "38"
-    - ai
-    - cloudflare
-    - config
-    - deploy
-    - innovation
-    - integrity
-    - seal
-  out:
-    - "38"
-    - ai
-    - cloudflare
-    - config
-    - deploy
-    - innovation
-    - integrity
-    - seal
+coordinate: "secret · 7/descent · f55a9431"
+contentUuid: "961551cc-9d30-5cd4-8bb5-af8f5e4c0521"
+diamondUuid: "7d66b001-bea3-86dc-b9e0-9dfcee926bb4"
+uuid: "f55a9431-39dd-85de-9d50-9e34064113f0"
+horo: 7
 typography:
   partition: secret
   bondDegree: 28
-  neighbors:
-    - ai
-    - cloudflare
-    - innovation
 standards:
   - "NIST SP 800-38D AES-GCM"
+  - "NIST SP 800-38D AES-GCM`"
+  - "NIST-SP-800-38D"
   - RFC 5869 HKDF
+  - "RFC 5869 HKDF — extract-and-expand key derivation"
+  - "RFC 5869 HKDF`"
+  - "RFC 9562 §5.8 — content-address as the derivation salt"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - "38"
-    - config
-    - deploy
-    - integrity
-    - seal
-  matrix:
-    - "38"
-    - ai
-    - cloudflare
-    - config
-    - deploy
-    - innovation
-    - integrity
-    - seal
-  backlinks:
-    - "38"
-    - ai
-    - cloudflare
-    - config
-    - deploy
-    - innovation
-    - integrity
-    - seal
 signatures:
-  computationUuid: "3757508d-ad3b-86bd-952d-77a81bddbc13"
+  computationUuid: "473761d6-c482-8d06-95df-05271f2103aa"
   stages:
     - stage: path
       stageUuid: "69df74c1-cc11-8dc3-bb61-9c55f22fe829"
@@ -74,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "a0b9bf89-aaea-8c03-b543-6e61a49dae52"
     - stage: horo
-      stageUuid: "57a1b14f-67d1-8e3c-a101-ad20fed12b15"
+      stageUuid: "fcc0492a-dc2f-8227-885d-514ae14771fd"
     - stage: seal
-      stageUuid: "48f71197-9b4b-8171-8256-02c061cba23b"
+      stageUuid: "a1e7e5e6-b628-8c5a-b3ea-21251d58227c"
     - stage: uuid
-      stageUuid: "9fedb7fa-9851-8469-8e56-25675b491c3a"
+      stageUuid: "1779e2eb-e0da-8dff-968d-78e77a7617fb"
 version: 2
 ---
 # secret — sealed at rest; decrypt iff uuid proves identity

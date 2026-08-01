@@ -1,68 +1,35 @@
 ---
 name: clinic
 description: "Use when reasoning about clinic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/clinic
-coordinate: clinic · 4/weave · d10b580f
-contentUuid: "5806a6f7-40b7-5c0d-8886-46177ce67528"
-diamondUuid: "93d6ae60-413b-8482-a3b8-167492411002"
-uuid: "d10b580f-dc34-850f-ba21-9b49f2c3405d"
+atomPath: "vocabulary/clinic"
+coordinate: "vocabulary/clinic · 4/weave · 933a2688"
+contentUuid: "926aeae1-14bd-52ec-9ed3-579790336096"
+diamondUuid: "840f74f2-5f50-8afc-9779-00efb7c82a50"
+uuid: "933a2688-1e04-81e8-801d-6ea55d301c97"
 horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - medical
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - medical
-    - merge
-    - sti
 typography:
-  partition: clinic
-  bondDegree: 16
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 19
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - medical
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - medical
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - medical
-    - merge
-    - sti
 signatures:
-  computationUuid: "a706a30f-bf74-8618-9b42-055ea77779fc"
+  computationUuid: "a2540358-6b47-843a-b52b-87c13bcae67a"
   stages:
     - stage: path
-      stageUuid: "3cd554ef-0e41-8409-9d16-86d79eab98de"
+      stageUuid: "d2eaaaf4-4bd3-8cc6-8263-3ad3cc377a06"
     - stage: trinity
-      stageUuid: "e609a55d-0ee8-8543-a0c3-423ff2d9959d"
+      stageUuid: "e82aa6b6-14be-8d7a-b61b-568dc6d55edd"
     - stage: boundary
-      stageUuid: "b3855038-e636-8690-a102-a190f743bd75"
+      stageUuid: "1a6998f5-7534-8bcb-b31c-bd683a9d7e63"
     - stage: links
-      stageUuid: "2b4a4804-b015-8fc3-88fd-6419bf4ed494"
+      stageUuid: "ecd86d9a-2050-80f4-8efd-458f9d9c9e87"
     - stage: horo
-      stageUuid: "db27c7f1-72b5-8998-acb3-b2d32c911843"
+      stageUuid: "e0f2dba4-9b3b-86de-8442-7d8c141568d0"
     - stage: seal
-      stageUuid: "7ece86ab-2295-8934-9c05-a854edae8614"
+      stageUuid: "b6f69bd5-7241-8d09-9413-54f964ead455"
     - stage: uuid
-      stageUuid: "cae5ec58-bf6e-82f7-8012-cce406e83543"
+      stageUuid: "30692aa5-e524-80b2-8f61-fcdd980d1dd7"
 version: 2
 ---
 # clinic

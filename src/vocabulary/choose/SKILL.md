@@ -1,68 +1,35 @@
 ---
 name: choose
 description: "Use when reasoning about choose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/choose
-coordinate: choose · 5/round · 2ec95461
-contentUuid: "c98a0333-3be1-563c-9f86-0298cb046eb9"
-diamondUuid: "7f22af2f-3cce-8e93-a87d-77eb257fdc25"
-uuid: "2ec95461-6c52-8652-b3df-d2e11fe576d4"
-horo: 5
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/choose"
+coordinate: "vocabulary/choose · 8/crest · bab62d60"
+contentUuid: "02164675-7844-5748-abc7-5238565081a1"
+diamondUuid: "e76c175d-b3da-8b76-93bd-6c548cb21d0b"
+uuid: "bab62d60-831e-8c43-8ad9-d93a69f0a5c8"
+horo: 8
 typography:
-  partition: choose
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "45b411d1-2457-8b50-b946-bc845610127e"
+  computationUuid: "94ac393f-5cbc-8e79-b2d5-c55d59261cb6"
   stages:
     - stage: path
-      stageUuid: "29b5a42b-1a47-8846-b97e-f5534e660012"
+      stageUuid: "306bff6a-c85d-85eb-b662-6407276ff731"
     - stage: trinity
-      stageUuid: "79f496b2-b910-8261-b39a-ef310d3647d3"
+      stageUuid: "c32350b2-aef2-8b38-ac36-86fa211b83f5"
     - stage: boundary
-      stageUuid: "bd2c4e36-8602-8b03-b65a-80f5c3627ec9"
+      stageUuid: "5d6ac318-2818-8986-a41a-9c496b8a9405"
     - stage: links
-      stageUuid: "9e741fdc-c778-8783-bf50-2a1ad006ba56"
+      stageUuid: "947c874c-775f-8176-9a7c-43d58a95c4dd"
     - stage: horo
-      stageUuid: "c4442d7f-1d07-827c-9d4c-50919bfa8555"
+      stageUuid: "bb6ec283-05ff-8356-8c3e-875086d9e9ad"
     - stage: seal
-      stageUuid: "f448214c-8abe-8335-a2d9-dbc700467c1f"
+      stageUuid: "4e0f34a8-59e2-852e-bb23-044dc2f6bd2b"
     - stage: uuid
-      stageUuid: "45a92db2-7565-88a1-96c3-aeea6ae602c7"
+      stageUuid: "b8888521-24f5-876a-b301-8153c3462c6e"
 version: 2
 ---
 # choose

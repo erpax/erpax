@@ -1,68 +1,35 @@
 ---
 name: publication
 description: Use when reasoning about publication — A publication event associated with the item.
-atomPath: vocabulary/publication
-coordinate: publication · 5/round · 47aef252
-contentUuid: "c2e602f4-7d4b-5716-b316-7905a34d91ed"
-diamondUuid: "d6e018c9-4ddc-8a45-b7e4-225e0fc9f5cb"
-uuid: "47aef252-96b7-802d-b671-ac26f74759d0"
-horo: 5
-bonds:
-  in:
-    - event
-    - issue
-    - law
-    - type
-    - volume
-  out:
-    - event
-    - issue
-    - law
-    - type
-    - volume
+atomPath: "vocabulary/publication"
+coordinate: "vocabulary/publication · 8/crest · 685437cd"
+contentUuid: "d0fc680a-8e54-5f42-893d-11709fbd8bf1"
+diamondUuid: "f2369b15-4c73-811c-a566-32e04108d60f"
+uuid: "685437cd-28a5-8f4b-b3e5-84a41d868bee"
+horo: 8
 typography:
-  partition: publication
+  partition: vocabulary
   bondDegree: 17
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - event
-    - issue
-    - law
-    - type
-    - volume
-  matrix:
-    - event
-    - issue
-    - law
-    - type
-    - volume
-  backlinks:
-    - event
-    - issue
-    - law
-    - type
-    - volume
 signatures:
-  computationUuid: "56d440ba-50f5-8cf8-8f45-6bf673de6238"
+  computationUuid: "b8bcc0d0-ff86-854f-a253-43b4ce8d5444"
   stages:
     - stage: path
-      stageUuid: "60c56c9f-fa36-8992-add7-10a1ff717478"
+      stageUuid: "504352a9-6049-8418-9d04-de44048e1ef0"
     - stage: trinity
-      stageUuid: "84486ed2-ce0e-83c4-a907-3adb103ba746"
+      stageUuid: "d5fe73b7-088a-82a3-ac6e-d039d2ac03d7"
     - stage: boundary
-      stageUuid: "ce19adb0-a12d-8e85-804e-abe9b3c6b213"
+      stageUuid: "0f3c6af9-a3ec-897c-9edc-511d79002566"
     - stage: links
-      stageUuid: "ccfc3bc7-29ed-8dfa-a35a-a59b4a50cd6b"
+      stageUuid: "7c4b012e-b06a-85de-a975-6117d7af8413"
     - stage: horo
-      stageUuid: "5584baa6-f4fc-879d-9296-08702412d8f4"
+      stageUuid: "6d3fe2d3-7af0-877b-aeb3-06959ac63a98"
     - stage: seal
-      stageUuid: "79a1c924-663f-8e5f-bfbd-c449a729e46c"
+      stageUuid: "e76448e1-84f0-8d6a-871c-c92337640a07"
     - stage: uuid
-      stageUuid: "76202232-7bbc-8b49-bd44-fbcffafcb7b5"
+      stageUuid: "829d938e-5114-84a5-a6d7-7dd05fa49f33"
 version: 2
 ---
 # publication

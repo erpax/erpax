@@ -1,53 +1,35 @@
 ---
 name: calories
 description: Use when reasoning about calories — The number of calories.
-atomPath: vocabulary/calories
-coordinate: calories · 7/descent · 923be2c3
-contentUuid: "1abd9bc4-4434-5db1-8e3a-8227da2c93ea"
-diamondUuid: "aaddaa0f-a243-8b32-b6ae-73de3d00ec05"
-uuid: "923be2c3-5737-8d11-8d3c-26c4e4dc6067"
-horo: 7
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/calories"
+coordinate: "vocabulary/calories · 8/crest · 5e0b7d40"
+contentUuid: "8416b02f-6315-582a-a1eb-8c56becbca87"
+diamondUuid: "8362798b-c9db-81ff-80ba-b71e79a4dcd0"
+uuid: "5e0b7d40-7dbc-8fce-85c0-7dc182fe89af"
+horo: 8
 typography:
-  partition: calories
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "7a35a672-c5ef-8fd9-b068-b49c97b534dd"
+  computationUuid: "66f23992-d42c-85df-9310-7a41b4b5a95f"
   stages:
     - stage: path
-      stageUuid: "1f82c698-99dd-8054-a472-08d5810577be"
+      stageUuid: "d3b8288c-5e27-8522-a45b-cd515681bf2a"
     - stage: trinity
-      stageUuid: "4a4c916c-daf6-89a7-9edc-ac9121b7391f"
+      stageUuid: "12c3f2d0-da71-85a8-ac6f-d618a6610104"
     - stage: boundary
-      stageUuid: "75ef140d-d8bc-8ea9-b649-7e437adda44a"
+      stageUuid: "966217de-985f-8279-bf24-36b4d4671ad3"
     - stage: links
-      stageUuid: "cf8194e6-788c-801e-b502-1f619f937a51"
+      stageUuid: "e2edc0f9-6cce-8882-9ef5-5434a8df5a92"
     - stage: horo
-      stageUuid: "73cb631e-4962-8e4d-9c1c-26b009f4ecba"
+      stageUuid: "42233e2e-9498-8ca2-a5f9-23684347fcf1"
     - stage: seal
-      stageUuid: "96147380-093b-8f3b-9aa2-fbe2352b7ce3"
+      stageUuid: "34084315-bfb3-852c-ab96-dd363adf161c"
     - stage: uuid
-      stageUuid: "abe80b1d-43ce-82ec-8915-8a86f1a17579"
+      stageUuid: "0929ca67-9572-80b5-93e4-4138489dc703"
 version: 2
 ---
 # calories

@@ -1,68 +1,35 @@
 ---
 name: odometer
 description: "Use when reasoning about odometer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/odometer
-coordinate: odometer · 2/share · a345d5b8
-contentUuid: "c8c8fffb-97cc-597f-a055-91f5a6fcb91c"
-diamondUuid: "14dfc1dc-e22c-8369-bbcd-747fec71742b"
-uuid: "a345d5b8-0450-8f4d-b07c-5434bcb5b50e"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - mileage
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - mileage
-    - sti
+atomPath: "vocabulary/odometer"
+coordinate: "vocabulary/odometer · 8/crest · e920111a"
+contentUuid: "e5fff27c-2603-5f1a-9cd8-d709b20729f4"
+diamondUuid: "6ce77f57-0f34-8536-beaa-be79f0f72a6a"
+uuid: "e920111a-e0e8-8a46-a704-72213efab3d0"
+horo: 8
 typography:
-  partition: odometer
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - mileage
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - mileage
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - mileage
-    - sti
 signatures:
-  computationUuid: "b495912f-472c-867b-a35f-08243d21d502"
+  computationUuid: "674d87e1-5f55-85b7-aad0-637be1f614df"
   stages:
     - stage: path
-      stageUuid: "6b3f05c0-dbb6-8fd6-8ce4-0feea05da24c"
+      stageUuid: "2ffd7569-d8d8-8fa8-9d5a-90b7be99e33c"
     - stage: trinity
-      stageUuid: "ac19ef38-8720-818f-836c-2084450a0a20"
+      stageUuid: "9244bdcd-e355-8abc-9514-e7312aa87f40"
     - stage: boundary
-      stageUuid: "1e0e98a6-cfa2-8c36-95f0-4114abc59c9d"
+      stageUuid: "3585b054-468f-8e21-91e6-5ab6bcc46769"
     - stage: links
-      stageUuid: "bad707bc-6517-8827-b285-2d76af76335c"
+      stageUuid: "9ec211da-e22e-877b-bdbf-2f0b636cc1c6"
     - stage: horo
-      stageUuid: "08dc8404-f6af-8d9c-9f96-fd6dd60052bf"
+      stageUuid: "265aef64-0b1e-84c3-b957-cf9e54baa279"
     - stage: seal
-      stageUuid: "6f1eb1b5-889f-81dc-84a9-88332dccefac"
+      stageUuid: "c6e36d6f-d9f5-8cd7-adda-471faab47623"
     - stage: uuid
-      stageUuid: "3d66cb69-f75f-82db-8455-6662b53a167e"
+      stageUuid: "2409aa38-5586-851e-b7cd-61fc79930132"
 version: 2
 ---
 # odometer

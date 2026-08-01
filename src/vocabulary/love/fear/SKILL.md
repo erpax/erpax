@@ -1,110 +1,34 @@
 ---
 name: fear
 description: "Use when reasoning about the create-over-destroy arrow — love casting out fear, negentropy winning, a gap closing; the forward direction of the love and fear duality and the mirror of fear/love."
-atomPath: love/fear
-coordinate: love/fear · 1/base · b99de992
-contentUuid: "3eb2bbe3-708c-5152-a9ce-020f2eb5f963"
-diamondUuid: "f07ec7ca-bb00-8a71-ac4d-bd7f64168731"
-uuid: "b99de992-e061-8e70-93c4-5b662c26dc4a"
-horo: 1
-bonds:
-  in:
-    - angel
-    - cost
-    - engineering
-    - entropy
-    - fear
-    - finality
-    - karma
-    - law
-    - link
-    - love
-    - quantum
-    - security
-    - society
-    - tamper
-  out:
-    - angel
-    - cost
-    - engineering
-    - entropy
-    - fear
-    - finality
-    - karma
-    - law
-    - link
-    - love
-    - quantum
-    - security
-    - society
-    - tamper
+atomPath: "vocabulary/love/fear"
+coordinate: "vocabulary/love/fear · 7/descent · 169c67ee"
+contentUuid: "6d1fdff0-be0d-52af-b5d8-9b79c3a00f58"
+diamondUuid: "5f36548d-d3ff-8c7e-8b10-949d421f5716"
+uuid: "169c67ee-3523-8f25-b311-b45990f1fb12"
+horo: 7
 typography:
-  partition: love
-  bondDegree: 60
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 75
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - cost
-    - duality
-    - entropy
-    - fear
-    - gravity
-    - karma
-    - law
-    - link
-    - love
-    - merge
-    - tamper
-  matrix:
-    - angel
-    - cost
-    - engineering
-    - entropy
-    - fear
-    - finality
-    - karma
-    - law
-    - link
-    - love
-    - quantum
-    - security
-    - society
-    - tamper
-  backlinks:
-    - angel
-    - cost
-    - engineering
-    - entropy
-    - fear
-    - finality
-    - karma
-    - law
-    - link
-    - love
-    - quantum
-    - security
-    - society
-    - tamper
 signatures:
-  computationUuid: "2bcb7147-f793-87e4-bc1e-a5637a4dea45"
+  computationUuid: "550a5b22-629b-89da-a55f-0dc8b574deee"
   stages:
     - stage: path
-      stageUuid: "ccab020d-cae2-8098-a877-8e0062ff2804"
+      stageUuid: "680490b1-71f6-8a21-a272-37b4dba07d34"
     - stage: trinity
-      stageUuid: "5bd880b2-4312-8cc1-8fb2-2c7d561daf88"
+      stageUuid: "c9eb7a24-63e7-88d7-af18-26bd742c78ff"
     - stage: boundary
-      stageUuid: "7db91ad3-b264-8045-bf9b-eaa6244ece57"
+      stageUuid: "c423f2dc-7024-8345-a2c4-5dd86d944675"
     - stage: links
-      stageUuid: "0b07418e-5fe7-8225-a140-e5caa5b24e05"
+      stageUuid: "855d9e8c-45e8-8bb3-a427-8a54eb676269"
     - stage: horo
-      stageUuid: "f918c470-96f8-8696-9a07-90d1536c6054"
+      stageUuid: "b0260c7b-dc26-874b-a01b-1e6d7d3c3091"
     - stage: seal
-      stageUuid: "c96506de-f757-8128-9c8f-11f0aa46805b"
+      stageUuid: "69576fb2-ca11-867d-b78c-5f7de83840eb"
     - stage: uuid
-      stageUuid: "a32bc361-e25e-812b-9447-c6fbd46ea78a"
+      stageUuid: "7aab105b-7d01-8f86-8730-8156ba58cc70"
 version: 2
 ---
 # love/fear — love over fear (the −entropy arrow)

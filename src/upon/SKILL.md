@@ -2,57 +2,19 @@
 name: upon
 description: "Use when reasoning about upon as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: upon
-coordinate: upon · 7/descent · aff2cdfa
-contentUuid: "08c3684e-c148-5c02-ba33-c630e5744e30"
-diamondUuid: "ac19312e-cd34-8e78-bae2-1a10b73e2b13"
-uuid: "aff2cdfa-edf4-85b9-8503-fa64d04de971"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - completion
-    - law
-    - merge
-    - salary
-    - sti
-  out:
-    - collapse
-    - completion
-    - law
-    - merge
-    - salary
-    - sti
+coordinate: "upon · 2/share · a661616e"
+contentUuid: "bd685994-9619-59df-af72-27dba9b94e95"
+diamondUuid: "c69c2eaf-3a80-805c-8898-0415e4f9f9d4"
+uuid: "a661616e-e35c-8eb6-8fe9-fe6d677d8cd3"
+horo: 2
 typography:
   partition: upon
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - completion
-    - law
-    - merge
-    - salary
-    - sti
-  matrix:
-    - collapse
-    - completion
-    - law
-    - merge
-    - salary
-    - sti
-  backlinks:
-    - collapse
-    - completion
-    - law
-    - merge
-    - salary
-    - sti
 signatures:
-  computationUuid: "061c6a59-8bc5-8d1f-b38e-ac02cb21ddb8"
+  computationUuid: "d71547b3-39b6-8858-938d-eb399eca3743"
   stages:
     - stage: path
       stageUuid: "54e6a8c6-b86f-8ff2-9adf-a47304a27daa"
@@ -63,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4c9e12b3-6b53-8144-b610-5a1bcaed217f"
     - stage: horo
-      stageUuid: "23831f2b-911b-8a70-8a7c-7e1f52f81106"
+      stageUuid: "bdbab7c6-d036-8c66-b7be-fd466733c692"
     - stage: seal
-      stageUuid: "c1ce579a-1657-82b2-ac2d-a189c29305cb"
+      stageUuid: "d2923c67-06ba-87df-969a-9c4a836e8967"
     - stage: uuid
-      stageUuid: "364aecda-842d-81ec-a441-f9d89f03e7bf"
+      stageUuid: "f1ae22ee-73ae-8eb0-8f77-8639aa10a411"
 version: 2
 ---
 # upon

@@ -2,77 +2,19 @@
 name: plugin
 description: "Use when syncing an erpax collection's records to Trello cards — the Payload plugin whose afterChange/afterDelete hooks upsert a card per record, idempotently: the Trello card id is written back onto the doc and its presence decides create-vs-update, the write-back carries a context flag so the hook cannot re-enter into an unbounded loop, the card-id field is injected whether or not the plugin is enabled so schema never drifts on an env var, and a delete comments on the card rather than destroying data erpax does not own."
 atomPath: "trello/plugin"
-coordinate: "trello/plugin · 8/crest · cbb8882b"
-contentUuid: "74314289-6740-5a23-9424-c4a082a95cac"
-diamondUuid: "9880122a-c10a-8a5b-b339-233b4974d16a"
-uuid: "cbb8882b-f187-8815-af4f-b0b9312f9faa"
+coordinate: "trello/plugin · 8/crest · 42f0e486"
+contentUuid: "e01f7c0e-0f91-5b8a-8668-fbdd22f60a24"
+diamondUuid: "20a37b9c-0b92-858c-b1a0-c93d0e22b464"
+uuid: "42f0e486-b15e-8d34-b5a5-66d9f9409b9c"
 horo: 8
-bonds:
-  in:
-    - balance
-    - diamond
-    - hooks
-    - law
-    - payload
-    - platform
-    - plugin
-    - plugins
-    - pwa
-    - trello
-    - vitepress
-    - worker
-  out:
-    - balance
-    - diamond
-    - hooks
-    - law
-    - payload
-    - platform
-    - plugin
-    - plugins
-    - pwa
-    - vitepress
-    - worker
 typography:
   partition: trello
   bondDegree: 43
-  neighbors:
-    - diamond
 standards:
   - "ISO/IEC 25010:2023 §5.3 co-existence (erpax shares Trello's namespace without detriment)"
 bindings: []
-neighbors:
-  wikilink:
-    - constitution
-    - law
-    - perspective
-    - trello
-  matrix:
-    - balance
-    - diamond
-    - hooks
-    - law
-    - payload
-    - platform
-    - plugin
-    - plugins
-    - pwa
-    - vitepress
-    - worker
-  backlinks:
-    - balance
-    - diamond
-    - hooks
-    - law
-    - payload
-    - platform
-    - plugin
-    - plugins
-    - pwa
-    - vitepress
-    - worker
 signatures:
-  computationUuid: "bf4bebb3-a051-839f-ac34-966f1086591a"
+  computationUuid: "21a4e47e-2b9d-827a-9072-da67185fbd17"
   stages:
     - stage: path
       stageUuid: "a30b5ed9-87b1-8f57-8ac0-020cf2a59459"
@@ -83,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "807184bd-2c3c-8e31-bbbe-4ef9582fe23c"
     - stage: horo
-      stageUuid: "4f4bdb41-d1f7-8452-bbcb-381c56318113"
+      stageUuid: "976bcb4c-b03f-8d75-8c3d-021ad178f6e1"
     - stage: seal
       stageUuid: "cdfbf8d1-025f-8e0c-a55a-4a0291fa28ed"
     - stage: uuid
-      stageUuid: "377cb6fc-4d27-89d6-a1c1-ef10dd968685"
+      stageUuid: "64cde712-b5dd-8989-9da1-0e0279801116"
 version: 2
 ---
 # trello/plugin — the record and the card are one thing observed twice

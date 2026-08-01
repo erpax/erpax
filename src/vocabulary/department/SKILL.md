@@ -1,53 +1,35 @@
 ---
 name: department
 description: "Use when reasoning about department — A relationship between an organization and a department of that organization, also described as an organization (allowing different urls, logos, opening hours). For example: a stor"
-atomPath: vocabulary/department
-coordinate: department · 4/weave · e606eac8
-contentUuid: "235004a5-2876-5c98-845f-774f6dbe4c5d"
-diamondUuid: "6e41b093-e5de-85c6-969e-cb6aa94db455"
-uuid: "e606eac8-0b3d-8b3b-b5a2-35c5d7c654ae"
+atomPath: "vocabulary/department"
+coordinate: "vocabulary/department · 4/weave · 6cb30a91"
+contentUuid: "0086aade-cf2c-51a7-a403-5829bccf8aab"
+diamondUuid: "519a5966-37c9-8201-acea-55f6158e4b4b"
+uuid: "6cb30a91-2bb3-8a34-92a1-13c7ef6bd679"
 horo: 4
-bonds:
-  in:
-    - law
-    - store
-  out:
-    - law
-    - store
 typography:
-  partition: department
+  partition: vocabulary
   bondDegree: 7
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - store
-  matrix:
-    - law
-    - store
-  backlinks:
-    - law
-    - store
 signatures:
-  computationUuid: "ed01f990-63af-8c8e-a0db-462d22f726e6"
+  computationUuid: "68b5bf15-18f0-890c-9232-3546397c71bc"
   stages:
     - stage: path
-      stageUuid: "699874f9-1273-8e7c-a014-650a54bd255c"
+      stageUuid: "f79e96d2-b5f1-81c3-8bc5-bb17bd9fa405"
     - stage: trinity
-      stageUuid: "b94acf7f-ab43-897b-a175-7fc8eb1f5638"
+      stageUuid: "868ebbb5-7287-8300-a25f-2becdf521ada"
     - stage: boundary
-      stageUuid: "a194ec82-bf69-85e9-9e47-3c332639ccff"
+      stageUuid: "54b1c69a-2bc0-8711-bf34-9a9ef4e80011"
     - stage: links
-      stageUuid: "fbb34811-4e98-8c8e-972a-257770baa8e5"
+      stageUuid: "55bde30d-dd42-8ecc-b9eb-b27175e722a8"
     - stage: horo
-      stageUuid: "56047174-cb25-8b50-81a2-bc8b6fa81480"
+      stageUuid: "5319078d-542b-8840-9bb3-5cafadb7300c"
     - stage: seal
-      stageUuid: "f31eb8f5-d4e7-801b-9caa-1222a1edfeff"
+      stageUuid: "e8692c3e-25ff-8fd0-8a07-fe5a7982ed53"
     - stage: uuid
-      stageUuid: "4a47ef0f-ad50-85af-aea7-ff94fb4a2707"
+      stageUuid: "af688877-3a07-8370-8aa7-368fbc501d33"
 version: 2
 ---
 # department

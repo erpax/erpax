@@ -1,63 +1,35 @@
 ---
 name: delivered
 description: "Use when reasoning about delivered as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/delivered
-coordinate: delivered · 8/crest · d9ee8f70
-contentUuid: "195da03d-36a9-51c1-8dd2-eae775ce84f6"
-diamondUuid: "86228409-5993-8bc9-9fed-9f1bbafed338"
-uuid: "d9ee8f70-a5f9-8e05-ba48-776c5f90baf6"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/delivered"
+coordinate: "vocabulary/delivered · 5/round · b2716df0"
+contentUuid: "a9778ad6-4d42-5db3-a8cf-b719edb21270"
+diamondUuid: "a23a9c5b-69a4-86db-a93d-9bd2b5953e67"
+uuid: "b2716df0-2adb-846d-8451-beb98e13299b"
+horo: 5
 typography:
-  partition: delivered
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "aecf8eb8-d37c-864b-ba5b-461b19fb27a3"
+  computationUuid: "a44c63c9-2f4c-8c2d-b8f8-ba051b0cbadb"
   stages:
     - stage: path
-      stageUuid: "8a310d98-95cb-80ed-ae9e-0f6444b0efa0"
+      stageUuid: "79353ecc-7be0-81de-9938-785f75472538"
     - stage: trinity
-      stageUuid: "d29dbe41-06f7-8148-89c2-121e50e4610d"
+      stageUuid: "23131d48-8f57-8794-90ef-912c30f1d6ed"
     - stage: boundary
-      stageUuid: "511e08ff-bf84-86bc-8a40-ce8704dc52ad"
+      stageUuid: "f0c68925-d4ee-833d-b15b-c6565e32007f"
     - stage: links
-      stageUuid: "7e0588d5-ee07-811a-ba39-4a615297bc0b"
+      stageUuid: "118c6da7-f15e-8e42-8bfd-730dbdfc6f1c"
     - stage: horo
-      stageUuid: "d21c1839-ec9b-858a-aee6-fbf765b48a1d"
+      stageUuid: "3c01e73a-7ab1-8236-9bcc-2e87d346c731"
     - stage: seal
-      stageUuid: "d745d884-daa3-8591-8a49-6aa02d81d105"
+      stageUuid: "a8391728-daa4-8ddb-ac12-2874272daa19"
     - stage: uuid
-      stageUuid: "fb1cc155-373d-820c-8c4e-ab9e565d4435"
+      stageUuid: "be5342d9-6250-8810-9f7a-ef5a1d0b34a2"
 version: 2
 ---
 # delivered

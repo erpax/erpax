@@ -1,164 +1,34 @@
 ---
 name: planting
 description: "Use when output is spread across the season by staggered sequential sowings — succession planting: number of plantings (sowings) and number of harvests (pickings) are the two scheduling levers that replace one glut with a continuous supply. The interval between sowings ≈ one planting's picking window; total seasonal row-length divides evenly across the plantings to size each sowing and its seed order."
-atomPath: vocabulary/planting
-coordinate: planting · 2/share · d69dc6b0
-contentUuid: "44586dd2-383a-5536-b23c-10328ad1d54d"
-diamondUuid: "777b31ec-a41a-859f-a95d-e7d2bc75935f"
-uuid: "d69dc6b0-2a95-8670-a17d-96a53f8e8f6c"
-horo: 2
-bonds:
-  in:
-    - agriculture
-    - breath
-    - crop
-    - cropplan
-    - degreeday
-    - fertility
-    - frost
-    - give
-    - hardiness
-    - harvest
-    - law
-    - market
-    - maturity
-    - pollination
-    - propagation
-    - rotation
-    - schedule
-    - season
-    - seed
-    - sequence
-    - share
-    - spacing
-    - take
-    - tillage
-    - transplant
-    - yield
-  out:
-    - agriculture
-    - breath
-    - crop
-    - cropplan
-    - degreeday
-    - fertility
-    - frost
-    - give
-    - hardiness
-    - harvest
-    - law
-    - market
-    - maturity
-    - pollination
-    - propagation
-    - rotation
-    - schedule
-    - season
-    - seed
-    - sequence
-    - share
-    - spacing
-    - take
-    - tillage
-    - transplant
-    - yield
+atomPath: "vocabulary/planting"
+coordinate: "vocabulary/planting · 7/descent · 797c55a4"
+contentUuid: "c6c47d57-6d90-55ec-bdd6-5a450ea4b656"
+diamondUuid: "f675894e-6989-87e4-b14a-8bdf47a906a6"
+uuid: "797c55a4-d541-8e85-a00b-c600d2a3ce07"
+horo: 7
 typography:
-  partition: planting
-  bondDegree: 87
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 89
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - breath
-    - crop
-    - cropplan
-    - give
-    - harvest
-    - law
-    - market
-    - propagation
-    - rotation
-    - schedule
-    - season
-    - sequence
-    - share
-    - spacing
-    - take
-    - transplant
-    - yield
-  matrix:
-    - agriculture
-    - breath
-    - crop
-    - cropplan
-    - degreeday
-    - fertility
-    - frost
-    - give
-    - hardiness
-    - harvest
-    - law
-    - market
-    - maturity
-    - pollination
-    - propagation
-    - rotation
-    - schedule
-    - season
-    - seed
-    - sequence
-    - share
-    - spacing
-    - take
-    - tillage
-    - transplant
-    - yield
-  backlinks:
-    - agriculture
-    - breath
-    - crop
-    - cropplan
-    - degreeday
-    - fertility
-    - frost
-    - give
-    - hardiness
-    - harvest
-    - law
-    - market
-    - maturity
-    - pollination
-    - propagation
-    - rotation
-    - schedule
-    - season
-    - seed
-    - sequence
-    - share
-    - spacing
-    - take
-    - tillage
-    - transplant
-    - yield
 signatures:
-  computationUuid: "060ce794-6b23-8771-a161-976803379081"
+  computationUuid: "d0f0dc9b-7cbb-8161-90c7-d5fb435b4250"
   stages:
     - stage: path
-      stageUuid: "b2696ba8-4b60-85e8-b4d9-6731f023b378"
+      stageUuid: "a120ede5-9667-811c-ba9c-85e71b53b495"
     - stage: trinity
-      stageUuid: "ff991df2-0b81-839b-8d13-a84638eeeb72"
+      stageUuid: "6b47dd77-7b76-80ae-9c57-d00d912734ce"
     - stage: boundary
-      stageUuid: "7b7a7bd8-3759-8ebb-ae0d-ad0308f2c0ae"
+      stageUuid: "1bd779fd-a6a1-8421-9bc2-168c90dbd50f"
     - stage: links
-      stageUuid: "268013d5-ddeb-89ab-ad82-a703c4bc6d4b"
+      stageUuid: "e4fb5a9b-a1b9-8e7f-a1c8-d6deab4258d3"
     - stage: horo
-      stageUuid: "0216cfb9-7fef-89b8-99a5-d5505cb2ecfb"
+      stageUuid: "a95d0e09-92bf-86ea-b8a7-5c52a91c0a12"
     - stage: seal
-      stageUuid: "e398420b-1a64-8749-be5e-f14120ff68e8"
+      stageUuid: "c1ac52c1-d218-8101-b18c-d17f6795b5d5"
     - stage: uuid
-      stageUuid: "a65f0033-f18d-8d06-a888-9503dbff961d"
+      stageUuid: "c4bde884-e41f-820d-8b5d-3446e43fc0a4"
 version: 2
 ---
 # planting — a sowing instance; successions that spread the harvest

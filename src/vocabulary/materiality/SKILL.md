@@ -1,76 +1,34 @@
 ---
 name: materiality
 description: "Use when assessing the qualitative and quantitative thresholds for disclosure, adjustment, or audit scope — the audit and reporting gate that distinguishes significant from immaterial items"
-atomPath: vocabulary/materiality
-coordinate: materiality · 4/weave · 400f4da9
-contentUuid: "6aadfb5a-d08a-5241-8af2-52c8b163bed3"
-diamondUuid: "65b7ead5-be7e-8a8d-8bc5-2c7b992b64a0"
-uuid: "400f4da9-00b4-80ed-bf13-4c0ece47b22d"
-horo: 4
-bonds:
-  in:
-    - checklists
-    - decide
-    - disclosure
-    - events
-    - findings
-    - law
-    - statements
-  out:
-    - checklists
-    - decide
-    - disclosure
-    - events
-    - findings
-    - law
-    - statements
+atomPath: "vocabulary/materiality"
+coordinate: "vocabulary/materiality · 2/share · 7ab25c38"
+contentUuid: "c3f92533-3b11-55fd-9ad8-0aa46decf653"
+diamondUuid: "d5d33120-0093-8e39-ae47-895f19fdf8bf"
+uuid: "7ab25c38-c9f3-852f-ab20-0769329d5da8"
+horo: 2
 typography:
-  partition: materiality
+  partition: vocabulary
   bondDegree: 21
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - checklists
-    - decide
-    - events
-    - findings
-    - law
-    - statements
-  matrix:
-    - checklists
-    - decide
-    - disclosure
-    - events
-    - findings
-    - law
-    - statements
-  backlinks:
-    - checklists
-    - decide
-    - disclosure
-    - events
-    - findings
-    - law
-    - statements
 signatures:
-  computationUuid: "950e8477-8bd4-8f88-88c5-78312138af26"
+  computationUuid: "c94d3b76-b317-83ab-aabd-117d806c23d5"
   stages:
     - stage: path
-      stageUuid: "a8b28a8c-0387-8833-a9e1-b5fc97378aca"
+      stageUuid: "20c07bba-2a5b-816e-a94b-4dcb74a5648d"
     - stage: trinity
-      stageUuid: "06952655-02aa-8504-8d03-33e344b6e6c7"
+      stageUuid: "8edfe93f-757b-8026-9962-d008161ade76"
     - stage: boundary
-      stageUuid: "6f4d9e71-581b-852f-be3e-872909d1077a"
+      stageUuid: "b0d1964e-a378-845d-a3b4-00808d90dad5"
     - stage: links
-      stageUuid: "637b75b8-306d-8d21-9579-b8e5e51d6ff4"
+      stageUuid: "6a7dc6b6-5cf3-897d-adde-73e42c61af36"
     - stage: horo
-      stageUuid: "c60968e7-3b00-85d7-9801-c3bfe4f9e0da"
+      stageUuid: "5dc915c1-542b-892b-8787-9501b18f9f16"
     - stage: seal
-      stageUuid: "d98556db-9e22-82cb-8576-bbc9b54f50de"
+      stageUuid: "f5e27e86-4bbd-8bbb-aa39-6f51c1dfb215"
     - stage: uuid
-      stageUuid: "c6ac3bc4-e7c0-8087-a35b-eea675aabe33"
+      stageUuid: "476d053d-e5c5-80e9-b5e6-3456dc87d2e0"
 version: 2
 ---
 # materiality

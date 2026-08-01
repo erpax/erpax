@@ -2,111 +2,19 @@
 name: article
 description: "Use when reasoning about article as a medical facet of [[medical]] — vocabulary pivot to @/article; nested not duplicated."
 atomPath: "medical/article"
-coordinate: "medical/article · 8/crest · f74ce5f3"
-contentUuid: "83b3f9ab-c639-54e6-9bb0-306fd154aba8"
-diamondUuid: "e7d6a71c-ffff-8b64-8d76-2f637d0146a7"
-uuid: "f74ce5f3-6b09-8b28-8e9e-654a5cf8bbbf"
-horo: 8
-bonds:
-  in:
-    - advertiser
-    - analysis
-    - article
-    - ask
-    - associated
-    - background
-    - byline
-    - content
-    - law
-    - medical
-    - merge
-    - news
-    - opinion
-    - public
-    - reportage
-    - review
-    - satirical
-    - scholarly
-    - section
-    - tech
-  out:
-    - advertiser
-    - analysis
-    - article
-    - ask
-    - associated
-    - background
-    - byline
-    - content
-    - law
-    - medical
-    - merge
-    - news
-    - opinion
-    - public
-    - reportage
-    - review
-    - satirical
-    - scholarly
-    - section
-    - tech
+coordinate: "medical/article · 2/share · 7736be0b"
+contentUuid: "1c42f796-7de4-5ecb-863a-fba36c61916c"
+diamondUuid: "680381e5-3723-8fc7-9d5f-24a4ac933d05"
+uuid: "7736be0b-b6c2-8514-b56e-0d6b4e61f2e8"
+horo: 2
 typography:
   partition: medical
   bondDegree: 80
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - article
-    - law
-    - medical
-    - merge
-  matrix:
-    - advertiser
-    - analysis
-    - article
-    - ask
-    - associated
-    - background
-    - byline
-    - content
-    - law
-    - medical
-    - merge
-    - news
-    - opinion
-    - public
-    - reportage
-    - review
-    - satirical
-    - scholarly
-    - section
-    - tech
-  backlinks:
-    - advertiser
-    - analysis
-    - article
-    - ask
-    - associated
-    - background
-    - byline
-    - content
-    - law
-    - medical
-    - merge
-    - news
-    - opinion
-    - public
-    - reportage
-    - review
-    - satirical
-    - scholarly
-    - section
-    - tech
 signatures:
-  computationUuid: "b781f20b-a76e-8715-aef1-e6a602df8a08"
+  computationUuid: "c9330e6a-161f-83d4-8e8c-067075158bee"
   stages:
     - stage: path
       stageUuid: "bbc6b468-5c74-83da-84a5-b4a415de9767"
@@ -117,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "516cca59-9c04-8f38-b818-c0ce95630641"
     - stage: horo
-      stageUuid: "3dfb2349-6031-8fee-b4eb-6bb4e9d435e5"
+      stageUuid: "78b4def1-0be7-8d8a-a8c8-afe8784e4120"
     - stage: seal
       stageUuid: "747f41c7-f034-88f1-8638-ebd1a2f25159"
     - stage: uuid
-      stageUuid: "cce65030-3706-85fa-ae37-753db59eb0aa"
+      stageUuid: "dd2f7bd7-d166-8d20-b05a-5bd92df0d7ac"
 version: 2
 ---
 # medical/article — medical facet

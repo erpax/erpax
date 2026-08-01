@@ -1,169 +1,34 @@
 ---
 name: all
-description: "Use when reasoning about totality or universality in erpax — \\\"anything is X\\\" (accountable/taggable), polymorphic relationTo:[...all], the identity element that defines the empty case. The universal root of totality."
-atomPath: vocabulary/all
-coordinate: all · 5/round · 2857eeef
-contentUuid: "291fcde7-be73-5e1b-a84f-185e453dfd18"
-diamondUuid: "4038ff56-12da-8b98-81a0-ad546192d334"
-uuid: "2857eeef-42c6-82ca-854b-fd4043bcacfd"
-horo: 5
-bonds:
-  in:
-    - access
-    - accounting
-    - akashic
-    - begin
-    - chat
-    - collapse
-    - comment
-    - dimension
-    - duality
-    - element
-    - entry
-    - identity
-    - law
-    - manufacturing
-    - merge
-    - one
-    - pages
-    - plugins
-    - projection
-    - signal
-    - standard
-    - sti
-    - sufficient
-    - tags
-    - torus
-    - utilities
-    - uuid
-    - whole
-  out:
-    - access
-    - accounting
-    - akashic
-    - begin
-    - chat
-    - collapse
-    - comment
-    - dimension
-    - duality
-    - element
-    - entry
-    - identity
-    - law
-    - manufacturing
-    - merge
-    - one
-    - pages
-    - plugins
-    - projection
-    - signal
-    - standard
-    - sti
-    - sufficient
-    - tags
-    - torus
-    - utilities
-    - uuid
-    - whole
+description: "Use when reasoning about totality or universality in erpax — \\\\\\\"anything is X\\\\\\\" (accountable/taggable), polymorphic relationTo:[...all], the identity element that defines the empty case. The universal root of totality."
+atomPath: "vocabulary/all"
+coordinate: "vocabulary/all · 7/descent · 1225301c"
+contentUuid: "4a11085f-f251-5508-bddf-f1bfb3fef1a1"
+diamondUuid: "40d40a21-d232-8031-b6d5-cbc9c9e31944"
+uuid: "1225301c-6b6c-8529-beee-92137f155013"
+horo: 7
 typography:
-  partition: all
-  bondDegree: 87
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 89
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - collapse
-    - comment
-    - dimension
-    - identity
-    - law
-    - merge
-    - one
-    - pages
-    - plugins
-    - standard
-    - sti
-    - sufficient
-    - tags
-    - uuid
-  matrix:
-    - access
-    - accounting
-    - akashic
-    - begin
-    - chat
-    - collapse
-    - comment
-    - dimension
-    - duality
-    - element
-    - entry
-    - identity
-    - law
-    - manufacturing
-    - merge
-    - one
-    - pages
-    - plugins
-    - projection
-    - signal
-    - standard
-    - sti
-    - sufficient
-    - tags
-    - torus
-    - utilities
-    - uuid
-    - whole
-  backlinks:
-    - access
-    - accounting
-    - akashic
-    - begin
-    - chat
-    - collapse
-    - comment
-    - dimension
-    - duality
-    - element
-    - entry
-    - identity
-    - law
-    - manufacturing
-    - merge
-    - one
-    - pages
-    - plugins
-    - projection
-    - signal
-    - standard
-    - sti
-    - sufficient
-    - tags
-    - torus
-    - utilities
-    - uuid
-    - whole
 signatures:
-  computationUuid: "e4e6fb83-814b-8a3c-9129-096efb62b330"
+  computationUuid: "b8624397-9105-8ea7-948a-744c5a6bf757"
   stages:
     - stage: path
-      stageUuid: "5596c1f1-22f5-8d3a-83d6-5222f67cd2f7"
+      stageUuid: "4933a9d8-b552-80de-9a67-3beb1bbdd2ff"
     - stage: trinity
-      stageUuid: "158ba8bf-be22-8183-b99d-23381914d6d8"
+      stageUuid: "a1afa0df-90c5-89d3-918f-adbc05045928"
     - stage: boundary
-      stageUuid: "6051745a-6dcf-8cac-9677-fa25086c33d6"
+      stageUuid: "12f2066c-40ce-8a03-a069-6a8493b696fe"
     - stage: links
-      stageUuid: "b64badd6-f5f9-898d-95d2-e478951c792d"
+      stageUuid: "3453fb6b-7492-8be0-b528-dd08270581eb"
     - stage: horo
-      stageUuid: "8714f141-4a66-880d-85e3-63cb296790c3"
+      stageUuid: "01350aed-0434-84fe-b916-303ef0ffdd56"
     - stage: seal
-      stageUuid: "eca35088-039f-87e6-a4b6-997466bdc4f7"
+      stageUuid: "8a4e6bb8-d252-8495-bb0f-2c4012abab2e"
     - stage: uuid
-      stageUuid: "9711adad-31ad-8b20-bbea-5b12028b353f"
+      stageUuid: "56602782-6c77-8b9b-b215-90b91da8b178"
 version: 2
 ---
 # all — totality ("anything is X", every case defined)

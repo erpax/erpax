@@ -1,63 +1,35 @@
 ---
 name: anbi
 description: "Use when reasoning about anbi as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/anbi
-coordinate: anbi · 7/descent · 36a3d703
-contentUuid: "0712243e-6663-501a-95ce-34a47afef84c"
-diamondUuid: "31bd025e-a8c7-877f-b1d9-cffd29eeead2"
-uuid: "36a3d703-4c5c-8150-b920-d64cea037a6c"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/anbi"
+coordinate: "vocabulary/anbi · 1/base · 21c5cfd7"
+contentUuid: "090dc1fd-9f81-5473-bb01-683422c269a6"
+diamondUuid: "a6b3d84f-8d04-80e4-bc1e-fa7490bee9c5"
+uuid: "21c5cfd7-01d9-8515-8d15-83c4641970fe"
+horo: 1
 typography:
-  partition: anbi
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "cf86b59f-3e6e-807f-bde8-3a61b2fd48fc"
+  computationUuid: "03341a76-c5e3-861b-b761-3e240fd0dc46"
   stages:
     - stage: path
-      stageUuid: "b19707c4-b90a-8f2c-937a-b2a9c8887bc9"
+      stageUuid: "7279f555-33bd-8929-ad96-3d97da958b3d"
     - stage: trinity
-      stageUuid: "9ace1c98-73ce-8b39-b21c-5b065b8f567b"
+      stageUuid: "b56d98a2-f5e6-8079-9126-c528279d96c7"
     - stage: boundary
-      stageUuid: "842e847b-ccd7-8526-8e0a-fcc639bebb9f"
+      stageUuid: "9a369143-6e66-8669-9e17-8b0fa8594b11"
     - stage: links
-      stageUuid: "41327880-925e-80fa-9b04-4831c2c5bd51"
+      stageUuid: "6d2e677b-e2d3-83cf-9969-fa75383b1082"
     - stage: horo
-      stageUuid: "2bc8f75d-2d52-8b8a-855f-8060fde25594"
+      stageUuid: "acdd0c11-39b9-8b1d-89b9-e28aa27ba094"
     - stage: seal
-      stageUuid: "ee9c7463-5b77-8527-b9d4-1611abbe6c3d"
+      stageUuid: "a8104983-74bf-8db5-833c-6285bcbe8251"
     - stage: uuid
-      stageUuid: "21678252-d6c1-88f5-9ea4-64c623338904"
+      stageUuid: "f3069fd1-4380-84fb-ae46-d23835cc9d83"
 version: 2
 ---
 # anbi

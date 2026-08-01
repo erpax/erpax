@@ -2,47 +2,19 @@
 name: conditional
 description: "Use when a claim holds only under an unproven hypothesis — given(H).proves(Y) folds the unprovable into a PROVEN implication H ⇒ Y, keeping H disclosed. The honest complement to rules/refutable: an unfalsifiable assertion is a lie; an unprovable hypothesis, named, proves another thing. Run: tsx src/conditional/index.ts"
 atomPath: conditional
-coordinate: "conditional · 5/round · 55aec386"
-contentUuid: "c064c9a8-5461-5f59-99aa-ac8bd302dc50"
-diamondUuid: "2acf2ffd-ec99-8921-bdc2-fae5f552d1f7"
-uuid: "55aec386-917f-8634-ad0e-0853b2f45d9e"
-horo: 5
-bonds:
-  in:
-    - law
-    - merge
-    - rules
-    - tamper
-  out:
-    - law
-    - merge
-    - rules
-    - tamper
+coordinate: "conditional · 8/crest · 04792485"
+contentUuid: "b246f1ed-0ff3-5d7c-ac23-0d7524ee51d9"
+diamondUuid: "38db10a8-6846-81f8-a2d8-d47baa5f9413"
+uuid: "04792485-c8a0-8faf-970b-41ecc22fbb6c"
+horo: 8
 typography:
   partition: conditional
   bondDegree: 12
-  neighbors: []
 standards:
   - "ISO-19011:2018 §6.4 — evidence: a conditional finding names its condition"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - merge
-    - rules
-    - tamper
-  matrix:
-    - law
-    - merge
-    - rules
-    - tamper
-  backlinks:
-    - law
-    - merge
-    - rules
-    - tamper
 signatures:
-  computationUuid: "f80e4568-0b8b-81d7-9cc1-6de0932e810a"
+  computationUuid: "0798c07e-0b9f-80d5-97f9-c1746188f4e3"
   stages:
     - stage: path
       stageUuid: "8b7b8198-9ca7-89dd-815d-59b01c507829"
@@ -53,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c8476fbb-3d6e-8b73-b8d5-5ede48bc1df7"
     - stage: horo
-      stageUuid: "af0b113b-ead8-822b-9695-fde6965e0d41"
+      stageUuid: "3980cd35-b76c-8bf6-b7e9-21cf391e7aef"
     - stage: seal
       stageUuid: "64df3fbc-d675-83ff-a1f4-48f9a6ba764f"
     - stage: uuid
-      stageUuid: "1e968b1c-7ed6-8bc7-b21d-12b4e6dc0e79"
+      stageUuid: "bf0c703a-8a1d-8344-8928-9ecc8c10176d"
 version: 2
 ---
 # conditional — anything unprovable, folded, may prove another thing

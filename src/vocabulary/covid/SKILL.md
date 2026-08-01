@@ -1,73 +1,35 @@
 ---
 name: covid
 description: "Use when reasoning about covid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/covid
-coordinate: covid · 7/descent · 8d907adf
-contentUuid: "5ade6f7d-6e22-5037-9c32-9c71e1342063"
-diamondUuid: "9abbe05a-471f-89a3-b3e4-aa603319b18b"
-uuid: "8d907adf-0847-8689-8f96-224840cd5f4f"
+atomPath: "vocabulary/covid"
+coordinate: "vocabulary/covid · 7/descent · c1ac45a7"
+contentUuid: "e1bc07bc-e325-5bdc-82d5-eb131c03d07b"
+diamondUuid: "d983393a-3076-8046-a4ea-62dc0804ee8e"
+uuid: "c1ac45a7-83b1-87c6-b24f-78af4d9b4d91"
 horo: 7
-bonds:
-  in:
-    - collapse
-    - facility
-    - law
-    - merge
-    - sti
-    - testing
-  out:
-    - collapse
-    - facility
-    - law
-    - merge
-    - sti
-    - testing
 typography:
-  partition: covid
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - facility
-    - law
-    - merge
-    - sti
-    - testing
-  matrix:
-    - collapse
-    - facility
-    - law
-    - merge
-    - sti
-    - testing
-  backlinks:
-    - collapse
-    - facility
-    - law
-    - merge
-    - sti
-    - testing
 signatures:
-  computationUuid: "47c87399-cd5b-812b-a101-f32b18d17f87"
+  computationUuid: "7a878328-8907-83b3-9e6c-a9a6fc7e248d"
   stages:
     - stage: path
-      stageUuid: "c7f7a8f5-7ba8-87b2-87d5-5abf4bdef62e"
+      stageUuid: "15c784bf-6341-80dc-a3bd-a54a441514e6"
     - stage: trinity
-      stageUuid: "5b1a5702-5b9f-8bcb-b949-627f94380a22"
+      stageUuid: "855dac07-1b88-8ac8-9d42-941c4e03fb16"
     - stage: boundary
-      stageUuid: "7a0c5f2d-6c67-8d67-8bf5-d77b12b7a1a5"
+      stageUuid: "d608216a-f233-804a-b4b2-9fd904742220"
     - stage: links
-      stageUuid: "bfd7e420-c520-8a77-b25a-21ae43b450ae"
+      stageUuid: "47c2d47d-3580-8507-a2c4-fe01672b3dac"
     - stage: horo
-      stageUuid: "226c4df3-c3b7-8dce-92d1-ec8c5612128d"
+      stageUuid: "f9d89efe-3d74-80cf-9662-3427c5651ff6"
     - stage: seal
-      stageUuid: "28d5c393-c467-8697-b120-f13e4f08a118"
+      stageUuid: "31ef75a0-8ae6-86db-b1d9-e6afe5e680d5"
     - stage: uuid
-      stageUuid: "019ed66b-c499-8839-b5f5-05a197c13d33"
+      stageUuid: "eefbad2d-985b-8055-98b4-bb19ac55e10e"
 version: 2
 ---
 # covid

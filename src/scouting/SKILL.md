@@ -2,91 +2,18 @@
 name: scouting
 description: "Use when monitoring fields for pest, disease, and crop status — scouting is the systematic field-walk that drives integrated pest management (IPM): observe, identify, count against an economic threshold, then act (cultural/biological/mechanical/chemical) only when damage cost exceeds control cost. The monitoring backbone; turns pest control from calendar-spray into measured decision."
 atomPath: scouting
-coordinate: scouting · 7/descent · a77216ab
-contentUuid: "13bff85e-ec1c-5faf-8a14-b21eb12de8b1"
-diamondUuid: "016617c2-edc9-8106-87ba-dae8b4616928"
-uuid: "a77216ab-4e1b-80e3-97de-eb08e4c25f5b"
-horo: 7
-bonds:
-  in:
-    - agriculture
-    - cost
-    - crop
-    - cultivation
-    - drone
-    - limit
-    - measure
-    - mortality
-    - mulch
-    - pollination
-    - pruning
-    - risk
-    - trellis
-    - workflow
-  out:
-    - agriculture
-    - cost
-    - crop
-    - cultivation
-    - drone
-    - limit
-    - measure
-    - mortality
-    - mulch
-    - pollination
-    - pruning
-    - risk
-    - trellis
-    - workflow
+coordinate: "scouting · 8/crest · f2165393"
+contentUuid: "66d02dda-91ee-5694-854a-b2ce32323c90"
+diamondUuid: "419e5c3e-3853-86a8-81dc-32502146e04a"
+uuid: "f2165393-d441-8a0c-9ab4-3994e3399d22"
+horo: 8
 typography:
   partition: scouting
-  bondDegree: 43
-  neighbors: []
+  bondDegree: 41
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - cost
-    - crop
-    - cultivation
-    - limit
-    - measure
-    - mulch
-    - risk
-    - workflow
-  matrix:
-    - agriculture
-    - cost
-    - crop
-    - cultivation
-    - drone
-    - limit
-    - measure
-    - mortality
-    - mulch
-    - pollination
-    - pruning
-    - risk
-    - trellis
-    - workflow
-  backlinks:
-    - agriculture
-    - cost
-    - crop
-    - cultivation
-    - drone
-    - limit
-    - measure
-    - mortality
-    - mulch
-    - pollination
-    - pruning
-    - risk
-    - trellis
-    - workflow
 signatures:
-  computationUuid: "4bba95b7-075f-8a4a-8834-a23d0cff2749"
+  computationUuid: "4b34d8ac-0642-8793-99e2-99b5d3548685"
   stages:
     - stage: path
       stageUuid: "dd7c8be9-890c-86fa-b0b2-820afafc6e68"
@@ -97,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "27723213-79c3-82b7-98e2-94f32a4a8dd4"
     - stage: horo
-      stageUuid: "d2afea6c-b7fb-863b-adf0-9321c01fe2eb"
+      stageUuid: "2b16d972-e59b-80e9-970c-081bc21811cc"
     - stage: seal
-      stageUuid: "837dede3-ad6c-831c-ad50-4b7bbb65d3cf"
+      stageUuid: "1bef4d79-bce6-8993-8b24-77f532b2f705"
     - stage: uuid
-      stageUuid: "6bf57e12-342d-85bc-af96-16d1962cc69f"
+      stageUuid: "1ad906f2-8a41-8a96-84c7-85cb98a896ec"
 version: 2
 ---
 # scouting — monitoring fields to drive the pest decision

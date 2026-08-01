@@ -1,62 +1,34 @@
 ---
 name: prerequisite
 description: Use when modelling one prerequisite — the singular model of the prerequisites collection (the plural store); a condition that must hold before something may proceed.
-atomPath: vocabulary/prerequisite
-coordinate: prerequisite · 5/round · e7fc9b15
-contentUuid: "8c5e984e-ad9a-5eaa-871d-55b59535a3e5"
-diamondUuid: "63dadba2-199f-81bc-bbea-c6acb8a5e21a"
-uuid: "e7fc9b15-a000-8e5c-b736-a37c3290b77f"
-horo: 5
-bonds:
-  in:
-    - balance
-    - law
-    - prerequisites
-    - requirement
-  out:
-    - balance
-    - law
-    - prerequisites
-    - requirement
+atomPath: "vocabulary/prerequisite"
+coordinate: "vocabulary/prerequisite · 7/descent · d1c96e2a"
+contentUuid: "c29f28a2-c2e9-5fcb-a0b5-5e9135e7f12e"
+diamondUuid: "789d9c04-0c3f-80e0-b313-234dfdaf72e2"
+uuid: "d1c96e2a-e12f-89ac-8e51-a8b56c2d9c5c"
+horo: 7
 typography:
-  partition: prerequisite
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - law
-    - prerequisites
-    - requirement
-  matrix:
-    - balance
-    - law
-    - prerequisites
-    - requirement
-  backlinks:
-    - balance
-    - law
-    - prerequisites
-    - requirement
 signatures:
-  computationUuid: "e6c69c58-f185-81e2-9425-009207d59d1c"
+  computationUuid: "fc17229d-57b1-8e40-b3c6-912eb2efa024"
   stages:
     - stage: path
-      stageUuid: "59443a61-a7b3-8198-83f8-3e690bd481fd"
+      stageUuid: "6883f3e0-2d73-86bb-acde-daccb09fe071"
     - stage: trinity
-      stageUuid: "f84eb736-21d6-8195-aca2-0b486c40c3f3"
+      stageUuid: "29d0701d-e9ca-87ed-8c97-b08a186086ef"
     - stage: boundary
-      stageUuid: "aece453d-55dc-81ea-ac6f-e2f7f875b809"
+      stageUuid: "76a0dd6a-bd44-8391-8174-5543a3f0db37"
     - stage: links
-      stageUuid: "07e37f92-28f6-8a8d-ac62-8a8305d4557f"
+      stageUuid: "77d6cca6-4c21-86a5-b202-d61fca1ec179"
     - stage: horo
-      stageUuid: "a33b7b56-9562-88c2-a1af-7f6cfd842865"
+      stageUuid: "5b06cbd5-a616-8bce-aa23-e5284b0d7584"
     - stage: seal
-      stageUuid: "6eb7f66b-b879-8a82-b07d-7ead1a69465b"
+      stageUuid: "eaa422f2-6129-82ff-98f6-01f10f41ef62"
     - stage: uuid
-      stageUuid: "50a5bc41-22c4-8094-af3c-f2ae4cace91d"
+      stageUuid: "84736c53-556e-80cd-bf07-fdf4e586393d"
 version: 2
 ---
 # prerequisite — the model of one [[prerequisites]] row

@@ -1,73 +1,35 @@
 ---
 name: exam
 description: "Use when reasoning about exam as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/exam
-coordinate: exam · 4/weave · 563ee78f
-contentUuid: "3d949376-eb2e-50c6-a077-22b27944ebbc"
-diamondUuid: "31ed4154-9a57-8665-8092-85dd21f087e8"
-uuid: "563ee78f-42fb-8db5-9c49-1f4ac7ef63c4"
+atomPath: "vocabulary/exam"
+coordinate: "vocabulary/exam · 4/weave · 6c02ae9b"
+contentUuid: "02f7f686-3c13-5c3e-9868-eb7597f6d367"
+diamondUuid: "cbc9b89c-1294-829e-ab55-7e125122294c"
+uuid: "6c02ae9b-2d7d-82f0-b8d7-fea7532046e8"
 horo: 4
-bonds:
-  in:
-    - collapse
-    - identifying
-    - law
-    - merge
-    - physical
-    - sti
-  out:
-    - collapse
-    - identifying
-    - law
-    - merge
-    - physical
-    - sti
 typography:
-  partition: exam
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - identifying
-    - law
-    - merge
-    - physical
-    - sti
-  matrix:
-    - collapse
-    - identifying
-    - law
-    - merge
-    - physical
-    - sti
-  backlinks:
-    - collapse
-    - identifying
-    - law
-    - merge
-    - physical
-    - sti
 signatures:
-  computationUuid: "9cbc15a4-9cae-842c-b840-121dcbfb192c"
+  computationUuid: "e1e1d85f-f9ed-8b1f-b547-7469ce0d1050"
   stages:
     - stage: path
-      stageUuid: "296a32d9-514d-82de-b6ec-7590b5db8ac9"
+      stageUuid: "0190e7c3-daca-877c-b7ac-ad101b5afc7c"
     - stage: trinity
-      stageUuid: "9ef57d05-24ed-8942-905d-17e50a64de2a"
+      stageUuid: "14310284-730a-8fa6-b70c-34529e7e1fcc"
     - stage: boundary
-      stageUuid: "3f465635-7a9d-8d5a-a1af-49f79f4e68cd"
+      stageUuid: "1964c936-3ecc-879d-a3c2-401735c1522c"
     - stage: links
-      stageUuid: "e1b03df6-423c-861b-9315-4a96b2c7d294"
+      stageUuid: "295cee2f-fbac-8f36-bc13-89f311dd881c"
     - stage: horo
-      stageUuid: "57dde39c-d5ad-8543-b664-c319be73bb77"
+      stageUuid: "5f559d63-b6bd-81ad-8911-b1e560cb05a6"
     - stage: seal
-      stageUuid: "3635eade-cd42-89a0-a755-818e7d8294ff"
+      stageUuid: "43a9d0ce-7729-88ea-a436-695b6e4f3990"
     - stage: uuid
-      stageUuid: "0f81a605-9eed-83ed-a4da-b3b627e90c44"
+      stageUuid: "de0f4fb6-5a70-88f6-b053-2f8bd65a1281"
 version: 2
 ---
 # exam

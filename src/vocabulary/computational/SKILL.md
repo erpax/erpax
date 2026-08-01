@@ -1,63 +1,35 @@
 ---
 name: computational
 description: "Use when reasoning about computational as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/computational
-coordinate: computational · 5/round · a833aeb4
-contentUuid: "b5bd41d8-6075-5227-bce8-7058ae8b6e2e"
-diamondUuid: "8462eb0b-e2e9-8098-b5fd-1a900b80d410"
-uuid: "a833aeb4-0d29-8a91-970a-c6c8e8fa0f01"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/computational"
+coordinate: "vocabulary/computational · 1/base · 54b18a48"
+contentUuid: "4ff46713-001b-5bea-bb85-1c0e5989690e"
+diamondUuid: "c95f2cf7-1c9d-837d-89bc-551ef324ad15"
+uuid: "54b18a48-f0d4-8200-9f8b-d07576f46c0e"
+horo: 1
 typography:
-  partition: computational
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "6c596d09-1c09-8642-8399-13ea383a7484"
+  computationUuid: "2539ff12-a35b-8415-ae3e-856ad4184055"
   stages:
     - stage: path
-      stageUuid: "7e36981f-89f1-8e50-82ed-5c37d11e09e3"
+      stageUuid: "757aeb0d-645b-8723-91ea-41326baf345c"
     - stage: trinity
-      stageUuid: "3b772644-393d-8213-911f-08533aa96c0f"
+      stageUuid: "a29f4739-9840-8ffa-b443-2bc9ee1a1831"
     - stage: boundary
-      stageUuid: "94acbd73-6138-8286-9b0b-982a3b02bdaa"
+      stageUuid: "d72585e1-04ab-88eb-aa6c-ac918f3f3893"
     - stage: links
-      stageUuid: "5e8b2d19-2918-8157-a2dc-4398b931b106"
+      stageUuid: "3e4b29e1-9390-81a7-ac73-5ebf12b2a242"
     - stage: horo
-      stageUuid: "67652eb3-4001-8bab-8a3a-4a30ff74b732"
+      stageUuid: "cae32e8b-879a-846d-a1d3-6b6301b88f1c"
     - stage: seal
-      stageUuid: "c4479024-ccf1-8075-a2ca-e7b71ca84f74"
+      stageUuid: "be8cfdb2-eabc-876d-a838-09d16d35de24"
     - stage: uuid
-      stageUuid: "5cc7b0ad-ef96-8ccf-9fa3-039425d090f5"
+      stageUuid: "83657dcc-08cb-8c9d-b0b7-8f90c5ea0ebc"
 version: 2
 ---
 # computational

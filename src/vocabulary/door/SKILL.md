@@ -1,68 +1,35 @@
 ---
 name: door
 description: "Use when reasoning about door as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/door
-coordinate: door · 5/round · 6db0e11f
-contentUuid: "c24701a9-0ffc-51ee-b8ca-8dffb8aa6f04"
-diamondUuid: "d9bd476a-b860-891e-bc49-d3eb4339f8f0"
-uuid: "6db0e11f-ee46-8995-bc9d-36f543c942d6"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - time
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - time
+atomPath: "vocabulary/door"
+coordinate: "vocabulary/door · 2/share · ef55aad5"
+contentUuid: "952463eb-7d89-53a9-a6e6-3a677386ffa4"
+diamondUuid: "2890c527-2b7e-83b0-a81e-866cf5b32ff9"
+uuid: "ef55aad5-1267-84df-a132-e7e2a5009fca"
+horo: 2
 typography:
-  partition: door
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - time
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - time
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - time
 signatures:
-  computationUuid: "eee5096d-3210-80e8-b7ba-f9bba04948a0"
+  computationUuid: "ce1b80c9-5993-8e06-8865-468f3fc43767"
   stages:
     - stage: path
-      stageUuid: "a4350b2c-d3d6-8422-bc68-0f6b03798b8c"
+      stageUuid: "b7acecad-89b9-806b-ae4e-b22dfe54be42"
     - stage: trinity
-      stageUuid: "26affe12-f6ab-8955-a4cb-d4c465a8c119"
+      stageUuid: "84bcb7fa-8d94-8f9f-b865-7af585dfab67"
     - stage: boundary
-      stageUuid: "fe664898-b279-813d-9566-bd124469d7c8"
+      stageUuid: "848d3442-2730-8a80-b40b-eb8e4ee0a79b"
     - stage: links
-      stageUuid: "665f2914-feeb-8688-a23a-6dbf10b6198a"
+      stageUuid: "89f7732f-7b3d-8e54-b0a8-7fe5d779da15"
     - stage: horo
-      stageUuid: "d9b5ee99-5782-8e35-b923-0cf25f5d6833"
+      stageUuid: "116928d4-401e-8083-9474-962912ba2780"
     - stage: seal
-      stageUuid: "41b4e30c-a10a-89ca-9178-9d9266b73c06"
+      stageUuid: "9437731c-e155-86f1-b409-1d470dc78c58"
     - stage: uuid
-      stageUuid: "3fd8737c-69b8-8e87-8167-661612f4a1e1"
+      stageUuid: "1445cfec-c08b-8a03-86d5-4bbc049830cc"
 version: 2
 ---
 # door

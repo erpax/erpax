@@ -2,28 +2,14 @@
 name: checks
 description: "Use when performing AML / CDD screening on a customer, vendor, beneficial owner, or signatory — SDD/CDD/EDD level, identity documents, sanctions screening (OFAC/EU/UN), PEP check, risk rating, and FATF Recommendation 10 audit evidence. The AML customer-due-diligence collection."
 atomPath: "customers/kyc/checks"
-coordinate: "customers/kyc/checks · 2/share · 22be3af2"
-contentUuid: "1615519d-0155-5dcd-bc7d-85fc1d0cf1d1"
-diamondUuid: "6404cc5e-bc17-8893-899c-2d7a071287cd"
-uuid: "22be3af2-3af7-8647-92d8-6f10dd8474c7"
-horo: 2
-bonds:
-  in:
-    - identity
-    - law
-    - party
-    - proof
-    - standard
-  out:
-    - identity
-    - law
-    - party
-    - proof
-    - standard
+coordinate: "customers/kyc/checks · 1/base · 212e8848"
+contentUuid: "00d0c39e-2693-5bea-b889-6320f3b6310e"
+diamondUuid: "5501f691-9326-8dd0-a5df-e2204c13d27a"
+uuid: "212e8848-56ba-8144-9ed3-aa8073380d91"
+horo: 1
 typography:
   partition: customers
   bondDegree: 15
-  neighbors: []
 standards:
   - "EU-AMLD-6 Directive-2018/1673 anti-money-laundering"
   - "EU-Regulation-2015/847 wire-transfers"
@@ -33,27 +19,8 @@ standards:
   - "USA-PATRIOT-Act §326 customer-identification-program"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - identity
-    - law
-    - party
-    - proof
-    - standard
-  matrix:
-    - identity
-    - law
-    - party
-    - proof
-    - standard
-  backlinks:
-    - identity
-    - law
-    - party
-    - proof
-    - standard
 signatures:
-  computationUuid: "9d03e89a-0c7b-8f37-b854-0c5c81dae571"
+  computationUuid: "85fbf4ba-35a9-8d0a-8d59-5b409210ecf9"
   stages:
     - stage: path
       stageUuid: "423de8ab-f987-829c-9d4c-7b985d4e39d0"
@@ -64,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "b8999206-541f-83f6-bd21-98eea84521a5"
     - stage: horo
-      stageUuid: "bb2ababb-cfe8-8fd9-972f-d70cbed4eaec"
+      stageUuid: "b59d211a-810b-82ac-9743-60511d0cf929"
     - stage: seal
       stageUuid: "b7b5f3cc-402a-8e30-9f2a-638b3d56a416"
     - stage: uuid
-      stageUuid: "46db05b6-ae73-8ae4-b760-3b3e70bd7a1d"
+      stageUuid: "1d82f60e-1013-884d-9042-1c76783814b2"
 version: 2
 ---
 # kyc-checks

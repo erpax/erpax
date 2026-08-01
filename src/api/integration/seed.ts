@@ -270,6 +270,100 @@ export const ZENODO: IntegrationSpec = {
   limitsSource: 'https://developers.zenodo.org/#rate-limiting — 60/min unauthenticated',
 }
 
+/**
+ * schema.org — the vocabulary the naming law draws on. **Keyless**, JSON-LD contexts over HTTPS.
+ *
+ * Measured, not assumed: `schema.org` carries **1,986 citations** in the catalogue — the most-cited
+ * vocabulary in the corpus — and had no lane. Atom names are supposed to come from harmonized
+ * standards vocabulary, and the generator that would derive a name FROM schema.org does not exist,
+ * so every name is currently a human choice checked against nothing.
+ */
+export const SCHEMAORG: IntegrationSpec = {
+  vendor: 'schemaorg',
+  baseUrl: 'https://schema.org',
+  auth: 'header',
+  credentials: [],
+  limits: [{ scope: 'ip', capacity: 5, windowMs: 1_000 }],
+  limitsSource: 'https://schema.org/docs/developers.html — static JSON-LD/CSV releases, no documented limit',
+}
+
+/**
+ * ECB — euro foreign-exchange REFERENCE rates. **Keyless**, daily XML.
+ *
+ * `ISO-4217` carries 308 citations and `multi/currency/service` exists, so the loop is real. The
+ * boundary is in the name: these are REFERENCE rates published once each working day around 16:00
+ * CET, not tradeable quotes. There is no rate on a weekend or a TARGET holiday, and a booking that
+ * silently reuses Friday's rate for Sunday has invented a price — which is a restatement risk, not
+ * a rounding one.
+ */
+export const ECB: IntegrationSpec = {
+  vendor: 'ecb',
+  baseUrl: 'https://www.ecb.europa.eu/stats/eurofxref',
+  auth: 'header',
+  credentials: [],
+  limits: [{ scope: 'ip', capacity: 2, windowMs: 1_000 }],
+  limitsSource: 'https://www.ecb.europa.eu/stats/policy_and_exchange_rates — daily reference rates, no key',
+}
+
+/**
+ * VIES — EU VAT number validation. **Keyless.**
+ *
+ * ЗДДС is cited and `naredba/n/18` exists, so validating a counterparty VAT id is in scope. Two
+ * honest limits, both of which bite in accounting: VIES is a FEDERATION of member-state registries,
+ * so an outage in one state returns unavailable rather than invalid — treating that as invalid
+ * would reject a lawful trader — and a `valid: true` says the number is registered, never that the
+ * counterparty is the entity presenting it.
+ */
+export const VIES: IntegrationSpec = {
+  vendor: 'vies',
+  baseUrl: 'https://ec.europa.eu/taxation_customs/vies/rest-api',
+  auth: 'header',
+  credentials: [],
+  limits: [{ scope: 'ip', capacity: 1, windowMs: 1_000 }],
+  limitsSource: 'https://ec.europa.eu/taxation_customs/vies — per-member-state availability, fair use',
+}
+
+/**
+ * OSV.dev — open-source vulnerability data. **Keyless**, and aimed at a number seen today.
+ *
+ * Every push in this session printed the same line: **61 vulnerabilities on the default branch (1
+ * critical, 29 high, 25 moderate, 6 low)**. Nothing in the corpus reads them, so the count is
+ * carried by GitHub's UI and by nobody's gate. OSV is queryable by package and version, which makes
+ * that number computable here rather than reported at us.
+ *
+ * It reports what is KNOWN to be vulnerable — silence is absence of a published advisory, never
+ * evidence of safety.
+ */
+export const OSV: IntegrationSpec = {
+  vendor: 'osv',
+  baseUrl: 'https://api.osv.dev/v1',
+  auth: 'header',
+  credentials: [],
+  limits: [{ scope: 'ip', capacity: 25, windowMs: 1_000 }],
+  limitsSource: 'https://google.github.io/osv.dev/api/ — public API, no key',
+}
+
+/**
+ * GLEIF — the global Legal Entity Identifier index. **Keyless.**
+ *
+ * Wired alongside `ISO-17442`, which was added to the registry in the same change: the standard was
+ * absent, and dropping the lane for want of a row would have had the registry bound the corpus
+ * instead of growing to meet it.
+ *
+ * An LEI answers *which legal entity is this counterparty*, globally and unambiguously — the
+ * question a VAT id answers only inside the EU and only for the registered number. The honest limit
+ * is that an LEI is SELF-REPORTED then validated: `LAPSED` means the entity stopped renewing, not
+ * that it ceased to exist, and treating lapsed as invalid would reject live trading partners.
+ */
+export const GLEIF: IntegrationSpec = {
+  vendor: 'gleif',
+  baseUrl: 'https://api.gleif.org/api/v1',
+  auth: 'header',
+  credentials: [],
+  limits: [{ scope: 'ip', capacity: 60, windowMs: 60_000 }],
+  limitsSource: 'https://www.gleif.org/en/lei-data/gleif-api — public API, no key; 60/min courtesy bound',
+}
+
 export const KEYLESS_RESEARCH: readonly IntegrationSpec[] = [
   CROSSREF,
   OPENALEX,
@@ -284,4 +378,9 @@ export const KEYLESS_RESEARCH: readonly IntegrationSpec[] = [
   WORLDBANK,
   EUROSTAT,
   ZENODO,
+  SCHEMAORG,
+  ECB,
+  VIES,
+  OSV,
+  GLEIF,
 ]

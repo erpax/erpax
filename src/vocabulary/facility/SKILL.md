@@ -1,93 +1,35 @@
 ---
 name: facility
 description: "Use when reasoning about facility as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/facility
-coordinate: facility · 4/weave · 3af8f23f
-contentUuid: "3e93c5ce-68ce-5a36-8016-e0681f8f4666"
-diamondUuid: "ae48fbad-a19d-8a8c-a24f-3602ad6e67f3"
-uuid: "3af8f23f-b255-8ee0-9058-a9d03ddac0d0"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - county
-    - covid
-    - cvd
-    - id
-    - law
-    - merge
-    - parking
-    - sti
-    - testing
-  out:
-    - collapse
-    - county
-    - covid
-    - cvd
-    - id
-    - law
-    - merge
-    - parking
-    - sti
-    - testing
+atomPath: "vocabulary/facility"
+coordinate: "vocabulary/facility · 8/crest · 06fef883"
+contentUuid: "a8d747c0-4225-5db2-adba-6c5575fa811f"
+diamondUuid: "98d11cd9-490b-87de-b5e8-5161b00e4eec"
+uuid: "06fef883-144c-83f5-b97d-3e831153e52e"
+horo: 8
 typography:
-  partition: facility
+  partition: vocabulary
   bondDegree: 34
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - county
-    - covid
-    - cvd
-    - id
-    - law
-    - merge
-    - parking
-    - sti
-    - testing
-  matrix:
-    - collapse
-    - county
-    - covid
-    - cvd
-    - id
-    - law
-    - merge
-    - parking
-    - sti
-    - testing
-  backlinks:
-    - collapse
-    - county
-    - covid
-    - cvd
-    - id
-    - law
-    - merge
-    - parking
-    - sti
-    - testing
 signatures:
-  computationUuid: "6afc21af-832b-8476-9778-0654a10c7b60"
+  computationUuid: "dba5fc45-71db-8bdc-9e44-08361f980daf"
   stages:
     - stage: path
-      stageUuid: "78ef32d5-01b6-8ff6-b86b-16f94cadf36f"
+      stageUuid: "e041b618-c5ec-83f0-beea-cf74b49330f4"
     - stage: trinity
-      stageUuid: "3bc57edf-36ce-891c-82ec-b193e592328b"
+      stageUuid: "331eefef-d0a9-8461-9e7c-5c5c5ba8a48e"
     - stage: boundary
-      stageUuid: "721455ea-e059-8df0-bf31-7aa74b44b104"
+      stageUuid: "f865e5c6-845c-8773-805d-f1c603a089d0"
     - stage: links
-      stageUuid: "8ae5523c-7374-8d93-8af4-aa98dc8a8a73"
+      stageUuid: "aed95525-a82a-8884-a4ea-e722fd90bd73"
     - stage: horo
-      stageUuid: "deac524a-67a1-81fe-9c83-09b660df7e6d"
+      stageUuid: "48cfd585-6168-8932-b3df-d61683418603"
     - stage: seal
-      stageUuid: "6950e393-44d2-8e15-a497-d7376373529c"
+      stageUuid: "258b968f-bca3-8d2a-9de8-5d41eebad0ba"
     - stage: uuid
-      stageUuid: "bad2e88f-0bce-8f78-ad28-7b66a4f3a85a"
+      stageUuid: "523b4b35-2253-8b7c-901f-4db425b310b4"
 version: 2
 ---
 # facility

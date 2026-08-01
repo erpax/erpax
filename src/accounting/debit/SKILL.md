@@ -2,46 +2,14 @@
 name: debit
 description: "Use when reasoning about accounting/debit — debit/credit logic — double-entry validation and journal lines."
 atomPath: "accounting/debit"
-coordinate: "accounting/debit · 7/descent · 2dedd7bd"
-contentUuid: "3d9ab6d5-1e3c-5bd4-90c5-18c14a07c44e"
-diamondUuid: "23305f77-ef55-87b8-b015-e039e148804b"
-uuid: "2dedd7bd-5bd4-87a7-9b2b-40560454f164"
+coordinate: "accounting/debit · 7/descent · c723296d"
+contentUuid: "a917c59e-a340-5535-b62c-1bfb69a50736"
+diamondUuid: "71ea4e7f-8ad3-8855-89c9-67acd5d7133c"
+uuid: "c723296d-be25-86f6-8031-9ba9cd114d73"
 horo: 7
-bonds:
-  in:
-    - accounting
-    - analysis
-    - balance
-    - coa
-    - corpus
-    - debit
-    - law
-    - ledger
-    - margin
-    - mercy
-    - money
-    - path
-    - readme
-    - reports
-  out:
-    - accounting
-    - analysis
-    - balance
-    - coa
-    - corpus
-    - debit
-    - law
-    - ledger
-    - margin
-    - mercy
-    - money
-    - path
-    - readme
-    - reports
 typography:
   partition: accounting
-  bondDegree: 47
-  neighbors: []
+  bondDegree: 45
 standards:
   - "IFRS Conceptual-Framework recognition-derecognition"
   - "IFRS IAS-1 presentation-of-financial-statements"
@@ -49,60 +17,23 @@ standards:
   - "US-GAAP ASC-105 generally-accepted-accounting-principles"
   - "US-GAAP ASC-810 consolidation"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - balance
-    - debit
-    - law
-    - path
-  matrix:
-    - accounting
-    - analysis
-    - balance
-    - coa
-    - corpus
-    - debit
-    - law
-    - ledger
-    - margin
-    - mercy
-    - money
-    - path
-    - readme
-    - reports
-  backlinks:
-    - accounting
-    - analysis
-    - balance
-    - coa
-    - corpus
-    - debit
-    - law
-    - ledger
-    - margin
-    - mercy
-    - money
-    - path
-    - readme
-    - reports
 signatures:
-  computationUuid: "fc6ca67b-9167-824a-bcdf-f1039a2b3b5b"
+  computationUuid: "73a3e917-aece-80b8-ba8a-62ed14ef1777"
   stages:
     - stage: path
       stageUuid: "c1db6504-7cdb-8828-a61c-7e57ba59ff08"
     - stage: trinity
       stageUuid: "e7a48095-593b-84fe-99c7-c1ef5c8c56fd"
     - stage: boundary
-      stageUuid: "5572e861-83ad-85cb-b766-50d2905ac474"
+      stageUuid: "e7431af6-e38b-8420-a27c-cfb317aa4fa9"
     - stage: links
       stageUuid: "25357c22-ef71-89cc-b8dc-a54a81b63394"
     - stage: horo
-      stageUuid: "5080d189-9673-8c16-9fec-5cd5f5ec9673"
+      stageUuid: "4bd95b50-9d86-8f0e-bf8d-66f5770a3a74"
     - stage: seal
       stageUuid: "ef19d0db-3b7f-894a-8ccf-48c074dd3596"
     - stage: uuid
-      stageUuid: "d0c675b6-373a-88ac-93e7-81ba89ccaa2c"
+      stageUuid: "3a218822-1d67-8d78-9ca7-3d9578ea3c07"
 version: 2
 ---
 # accounting/debit

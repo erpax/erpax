@@ -1,78 +1,35 @@
 ---
 name: benefit
 description: "Use when reasoning about benefit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/benefit
-coordinate: benefit · 5/round · 4ec2bf7e
-contentUuid: "87531cb3-d874-573d-b32e-78e820091ce2"
-diamondUuid: "099ef136-0e3a-82a0-be9e-e6b463679575"
-uuid: "4ec2bf7e-ef75-83dd-9f3c-6cd320904b61"
+atomPath: "vocabulary/benefit"
+coordinate: "vocabulary/benefit · 5/round · 0c4bdc27"
+contentUuid: "0cd4d04b-900a-5fba-9b62-0b2af7995c21"
+diamondUuid: "268951bf-1399-8188-919a-ebd39122cf0d"
+uuid: "0c4bdc27-1a4f-8fff-a9f4-27c97e2a7710"
 horo: 5
-bonds:
-  in:
-    - collapse
-    - enumeration
-    - has
-    - law
-    - merge
-    - sti
-    - tier
-  out:
-    - collapse
-    - enumeration
-    - has
-    - law
-    - merge
-    - sti
-    - tier
 typography:
-  partition: benefit
+  partition: vocabulary
   bondDegree: 22
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - enumeration
-    - has
-    - law
-    - merge
-    - sti
-    - tier
-  matrix:
-    - collapse
-    - enumeration
-    - has
-    - law
-    - merge
-    - sti
-    - tier
-  backlinks:
-    - collapse
-    - enumeration
-    - has
-    - law
-    - merge
-    - sti
-    - tier
 signatures:
-  computationUuid: "c4e56b66-7f04-8d4e-bb52-5e98f8e9ef00"
+  computationUuid: "3f21243b-61d4-8650-99cc-c9e63ec089fc"
   stages:
     - stage: path
-      stageUuid: "c5ff2a92-c845-8f94-9104-31b5b6c3e28a"
+      stageUuid: "a8d54c69-a4d8-8192-bc56-f2960a9a78af"
     - stage: trinity
-      stageUuid: "91fd254a-130e-8261-98f2-5eeda95acb0b"
+      stageUuid: "029ce28a-4ddc-8a4d-b73c-39b27aca8b1c"
     - stage: boundary
-      stageUuid: "56106679-a836-879e-b828-e051acc8b785"
+      stageUuid: "1491eabf-ac42-8ff3-85e0-cf43a467f314"
     - stage: links
-      stageUuid: "9695f32e-2b65-87dc-8c81-ce2900d0318b"
+      stageUuid: "2f7d24bc-f8d5-8fc5-abb6-df4fe71afc2d"
     - stage: horo
-      stageUuid: "2f953880-bb7f-8b4d-aa00-a0bb2756ec92"
+      stageUuid: "621b5c2e-9625-8f15-a248-56b83ae4afc5"
     - stage: seal
-      stageUuid: "05e5e6bb-6d0b-813d-b32f-dc570c22a1af"
+      stageUuid: "928614f9-9515-82e1-b9fc-d0576c05f6df"
     - stage: uuid
-      stageUuid: "c349bc4a-56c2-81cc-9dab-37c2357e5b60"
+      stageUuid: "be4c8fb4-e729-8c1e-8c3e-fa64a3173ef6"
 version: 2
 ---
 # benefit

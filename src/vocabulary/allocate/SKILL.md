@@ -1,68 +1,35 @@
 ---
 name: allocate
 description: "Use when reasoning about allocate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/allocate
-coordinate: allocate · 7/descent · 20fa47c0
-contentUuid: "6a8d1561-149f-516c-9af5-8d9aa0bf953d"
-diamondUuid: "0b9d53f4-4133-8275-8be8-89965510680d"
-uuid: "20fa47c0-d027-8f6a-b5c5-5449e06390c1"
-horo: 7
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/allocate"
+coordinate: "vocabulary/allocate · 8/crest · 83377588"
+contentUuid: "8fb6f6f1-8d73-5234-aeba-62735a8873ad"
+diamondUuid: "c7162644-5bd2-8372-bacd-eaaa41791946"
+uuid: "83377588-b9cc-81ef-934c-c13c116d7958"
+horo: 8
 typography:
-  partition: allocate
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "6fb5d3d2-31f2-8d25-a8e2-6cd700175f9c"
+  computationUuid: "92acf31e-1ead-8a04-88ee-63d580524476"
   stages:
     - stage: path
-      stageUuid: "0bbeae1c-efb7-8cbb-99a4-be2e8ab231dc"
+      stageUuid: "9b2f0b3a-ed94-8b7a-b99d-ab89e1cdf8e6"
     - stage: trinity
-      stageUuid: "226dc238-4233-81cc-85a9-e066fb0088d1"
+      stageUuid: "80be4bf2-66d7-8517-adec-62f660007d31"
     - stage: boundary
-      stageUuid: "194b744b-98fc-89d6-9437-3b48c8f534d9"
+      stageUuid: "861c7b04-6a5b-8197-9e64-7a9d74d05bdb"
     - stage: links
-      stageUuid: "14396441-f3b5-8a93-be76-6d99f3a2434f"
+      stageUuid: "6f8be033-3781-824a-820a-b826085e3740"
     - stage: horo
-      stageUuid: "6966c885-f00d-8859-afa4-f3d968983a1e"
+      stageUuid: "4bcb241e-37eb-861a-9274-9502f66d86c7"
     - stage: seal
-      stageUuid: "1320df32-221b-8b18-8674-d7347d866146"
+      stageUuid: "6e40deb2-e9c3-85d9-a988-f75707c15dfe"
     - stage: uuid
-      stageUuid: "a8124f2d-f2b0-86c6-85da-a128ae7249c6"
+      stageUuid: "c8c9aea4-4449-808d-b2b2-a66b46df1d31"
 version: 2
 ---
 # allocate

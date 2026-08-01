@@ -2,48 +2,16 @@
 name: address
 description: Use when reasoning about address — Physical address of the item.
 atomPath: address
-coordinate: "address · 5/round · 69f97fc1"
-contentUuid: "bc929c47-f86a-530b-8455-69ef54c7668f"
-diamondUuid: "98e450ef-ccde-89aa-8373-1485e0db1497"
-uuid: "69f97fc1-a8df-8ece-a70e-f81a4bc457c5"
-horo: 5
-bonds:
-  in:
-    - billing
-    - country
-    - delivery
-    - extended
-    - law
-    - legal
-    - locality
-    - origin
-    - postal
-    - region
-    - service
-    - street
-    - validation
-  out:
-    - billing
-    - country
-    - delivery
-    - extended
-    - law
-    - legal
-    - locality
-    - origin
-    - postal
-    - region
-    - service
-    - street
-    - validation
+coordinate: "address · 8/crest · f39a2e14"
+contentUuid: "8aec9dcb-46fa-5a0d-8735-362ddfada4a5"
+diamondUuid: "5dc49ce3-24f0-8d21-8848-cabfb270a339"
+uuid: "f39a2e14-b824-87e9-acca-96373d2e26ee"
+horo: 8
 typography:
   partition: address
   bondDegree: 50
-  neighbors: []
 standards:
   - "COSO-ERM-2017"
-  - "EU-2017/1132"
-  - "EU-2017/828"
   - "EU-Taxonomy-2020/852"
   - "ISO-19160-4"
   - "ISO-3166-1"
@@ -51,50 +19,8 @@ standards:
   - schema.org
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - billing
-    - country
-    - delivery
-    - extended
-    - law
-    - legal
-    - locality
-    - origin
-    - postal
-    - region
-    - service
-    - street
-  matrix:
-    - billing
-    - country
-    - delivery
-    - extended
-    - law
-    - legal
-    - locality
-    - origin
-    - postal
-    - region
-    - service
-    - street
-    - validation
-  backlinks:
-    - billing
-    - country
-    - delivery
-    - extended
-    - law
-    - legal
-    - locality
-    - origin
-    - postal
-    - region
-    - service
-    - street
-    - validation
 signatures:
-  computationUuid: "bb387715-23db-8baf-a84e-695bfec01cf0"
+  computationUuid: "4c45be8d-cd33-8df5-a79e-ffd9de16bb7c"
   stages:
     - stage: path
       stageUuid: "51c72db3-5231-882c-abd3-5c06874b9a72"
@@ -105,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "bf70b2b6-8b38-8735-8dcb-2963a21fe3a7"
     - stage: horo
-      stageUuid: "037dedf0-2de2-8542-996a-437cb43839f1"
+      stageUuid: "30039a31-85a5-8dbd-aa5a-b909c8335e52"
     - stage: seal
       stageUuid: "405199e1-be11-8ded-b269-b7b0c784b888"
     - stage: uuid
-      stageUuid: "a5054288-7603-833c-a55e-d29679ab2d0d"
+      stageUuid: "9adc1ba1-fd9c-862d-a38a-0bd49d33af81"
 version: 2
 ---
 # address

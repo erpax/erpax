@@ -1,236 +1,34 @@
 ---
 name: rate
 description: "Use when a value is a ratio of two dimensions pinned at a point in time — exchange rate, VAT/tax rate, interest rate, unit price (currency per quantity), wage (currency per hour), throughput/capacity (quantity per hour), run-time-per-unit. The RateConcern; a rate is value-per-unit, pinned at a point; blanks route to the no-op identity (cascade-resolved), never a magic literal."
-atomPath: vocabulary/rate
-coordinate: rate · 7/descent · 7bc674ce
-contentUuid: "f01c54fd-12b2-52bd-b203-6a1367848611"
-diamondUuid: "03fb2aee-de00-865d-ab64-620c9249cdad"
-uuid: "7bc674ce-2174-8a20-a639-6d51976cf713"
-horo: 7
-bonds:
-  in:
-    - agriculture
-    - allocation
-    - annual
-    - aquaculture
-    - biomass
-    - calculate
-    - capacity
-    - coinsurance
-    - compensation
-    - conversion
-    - crop
-    - currency
-    - current
-    - discount
-    - duality
-    - evapotranspiration
-    - fertility
-    - fields
-    - fodder
-    - grade
-    - hooks
-    - identity
-    - interest
-    - irrigation
-    - kpi
-    - law
-    - manufacturing
-    - measure
-    - mortality
-    - number
-    - percentage
-    - plan
-    - rates
-    - science
-    - settings
-    - shipping
-    - specification
-    - spread
-    - standard
-    - tax
-    - throughput
-    - transaction
-    - value
-    - versions
-    - yield
-  out:
-    - agriculture
-    - allocation
-    - annual
-    - aquaculture
-    - biomass
-    - calculate
-    - capacity
-    - coinsurance
-    - compensation
-    - conversion
-    - crop
-    - currency
-    - current
-    - discount
-    - duality
-    - evapotranspiration
-    - fertility
-    - fields
-    - fodder
-    - grade
-    - hooks
-    - identity
-    - interest
-    - irrigation
-    - kpi
-    - law
-    - manufacturing
-    - measure
-    - mortality
-    - number
-    - percentage
-    - plan
-    - rates
-    - science
-    - settings
-    - shipping
-    - specification
-    - spread
-    - standard
-    - tax
-    - throughput
-    - transaction
-    - value
-    - versions
-    - yield
+atomPath: "vocabulary/rate"
+coordinate: "vocabulary/rate · 2/share · d8c00e3e"
+contentUuid: "fa948ecd-b280-5f2d-a892-9be015a3b015"
+diamondUuid: "d220991d-4be6-86c2-98cf-1210ca20f61e"
+uuid: "d8c00e3e-6a89-8fff-86e9-ab1a4cbb37be"
+horo: 2
 typography:
-  partition: rate
-  bondDegree: 139
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 135
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - calculate
-    - currency
-    - duality
-    - fields
-    - hooks
-    - identity
-    - law
-    - manufacturing
-    - measure
-    - number
-    - rates
-    - standard
-    - value
-    - versions
-  matrix:
-    - agriculture
-    - allocation
-    - annual
-    - aquaculture
-    - biomass
-    - calculate
-    - capacity
-    - coinsurance
-    - compensation
-    - conversion
-    - crop
-    - currency
-    - current
-    - discount
-    - duality
-    - evapotranspiration
-    - fertility
-    - fields
-    - fodder
-    - grade
-    - hooks
-    - identity
-    - interest
-    - irrigation
-    - kpi
-    - law
-    - manufacturing
-    - measure
-    - mortality
-    - number
-    - percentage
-    - plan
-    - rates
-    - science
-    - settings
-    - shipping
-    - specification
-    - spread
-    - standard
-    - tax
-    - throughput
-    - transaction
-    - value
-    - versions
-    - yield
-  backlinks:
-    - agriculture
-    - allocation
-    - annual
-    - aquaculture
-    - biomass
-    - calculate
-    - capacity
-    - coinsurance
-    - compensation
-    - conversion
-    - crop
-    - currency
-    - current
-    - discount
-    - duality
-    - evapotranspiration
-    - fertility
-    - fields
-    - fodder
-    - grade
-    - hooks
-    - identity
-    - interest
-    - irrigation
-    - kpi
-    - law
-    - manufacturing
-    - measure
-    - mortality
-    - number
-    - percentage
-    - plan
-    - rates
-    - science
-    - settings
-    - shipping
-    - specification
-    - spread
-    - standard
-    - tax
-    - throughput
-    - transaction
-    - value
-    - versions
-    - yield
 signatures:
-  computationUuid: "092c4fdd-b841-8363-a70d-8ff4ce3dad69"
+  computationUuid: "655de72c-bfd2-82b5-8c67-3f9a06cbc299"
   stages:
     - stage: path
-      stageUuid: "91b18bf9-db92-8680-8ad1-d083b1dca453"
+      stageUuid: "1af333b5-5c66-8c5c-bfcd-9a049f406852"
     - stage: trinity
-      stageUuid: "ba74c5a2-c811-8c45-8c10-7ba82f8b4f3d"
+      stageUuid: "5b7bb722-1ba5-89de-b6f5-fa77535a2290"
     - stage: boundary
-      stageUuid: "a7688189-11e9-8f43-b239-61664a302697"
+      stageUuid: "4ca90706-d2d4-89d4-aab5-762fe4b96032"
     - stage: links
-      stageUuid: "5c6ecf92-9c9d-8cc0-a513-1f7d99e5a6f4"
+      stageUuid: "a18fb429-02b5-8bbb-902d-ff5fb18bf4c4"
     - stage: horo
-      stageUuid: "599cc6c0-a4f1-8bb8-a531-7cf91e767571"
+      stageUuid: "4a218f65-dd56-8c27-830c-a9c70c4c5e03"
     - stage: seal
-      stageUuid: "0557a1ff-5e8d-89f2-bb1b-600c85a639e2"
+      stageUuid: "5546fddf-0d5d-8565-a969-0043dfed22fb"
     - stage: uuid
-      stageUuid: "020a63e3-be3c-8641-8882-f48aafb9838c"
+      stageUuid: "d179cc3f-657c-81ea-b726-02696d3521fe"
 version: 2
 ---
 # rate — a value per unit, pinned at a point in time

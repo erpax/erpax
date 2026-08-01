@@ -1,8 +1,37 @@
 ---
 name: theorem
 description: "Use when the question is whether to trust a claim — including the user's, including the agent's. A claim is warranted only by REDUCING to composed base theorems; authority (who said it) is never a step, a cycle is a claim proven by itself, a missing ground is fiction. All is theorem of theorems, and it bottoms out at a base the graph cannot prove — assumed, stated in the open."
+atomPath: theorem
+coordinate: "theorem · 1/base · 45877ebf"
+contentUuid: "25f5d3de-09d6-53d8-9020-7560aec89d76"
+diamondUuid: "0fe01dde-bcce-8558-b512-1d9f358d6652"
+uuid: "45877ebf-2495-89e2-979a-824b79edcbaa"
+horo: 1
+typography:
+  partition: theorem
+  bondDegree: 72
+standards:
+  - · ISO · a named
+bindings: []
+signatures:
+  computationUuid: "06b96975-c57d-8419-bdb5-5bb43e973dc7"
+  stages:
+    - stage: path
+      stageUuid: "f8550006-a6e3-8eac-8726-47987e033262"
+    - stage: trinity
+      stageUuid: "f66ed597-cb52-8e22-b502-6e2e56c8679a"
+    - stage: boundary
+      stageUuid: "99dfdbd0-9298-85a0-8587-636c4ab0ca40"
+    - stage: links
+      stageUuid: "fbee5133-0675-8fb5-a462-5a37cec4e9a2"
+    - stage: horo
+      stageUuid: "b567ab37-7388-8a54-aa84-07865d6d7ef9"
+    - stage: seal
+      stageUuid: "49e48c0c-edbb-8a36-88e6-e21073b042d6"
+    - stage: uuid
+      stageUuid: "52e0f964-07a8-8bda-950c-902fc9201137"
+version: 2
 ---
-
 # theorem — all is theorem of theorems; authority is never a step
 
 *"How do you know I am right? Maybe I am mistaken."* — I do not know it, and I never took it on your word.

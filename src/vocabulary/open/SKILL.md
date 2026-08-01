@@ -1,113 +1,34 @@
 ---
 name: open
 description: "Use when reasoning about the permitting boundary state in erpax — fiscal period open (postable), draft editable, session/stream open. The universal root of the open state; dual of close."
-atomPath: vocabulary/open
-coordinate: open · 5/round · 15170f1f
-contentUuid: "3dc04c85-102a-589d-a419-6fd5aeb9a27d"
-diamondUuid: "5a031943-91a4-85b6-b390-fa1584bf26f3"
-uuid: "15170f1f-a4df-85c7-b89c-9524a6502760"
-horo: 5
-bonds:
-  in:
-    - accounting
-    - atom
-    - base
-    - begin
-    - close
-    - decompression
-    - defence
-    - duality
-    - education
-    - flow
-    - identity
-    - law
-    - shred
-    - versions
-    - whole
-    - workflow
-  out:
-    - accounting
-    - atom
-    - base
-    - begin
-    - close
-    - decompression
-    - defence
-    - duality
-    - education
-    - flow
-    - identity
-    - law
-    - shred
-    - versions
-    - whole
-    - workflow
+atomPath: "vocabulary/open"
+coordinate: "vocabulary/open · 7/descent · dff32531"
+contentUuid: "5416358f-746e-530c-aeb8-f2c184a653cd"
+diamondUuid: "a9416c7c-d742-8a35-88f1-822de6e63b01"
+uuid: "dff32531-49af-842c-9f6a-06ebd98e39f8"
+horo: 7
 typography:
-  partition: open
+  partition: vocabulary
   bondDegree: 49
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - begin
-    - close
-    - flow
-    - identity
-    - law
-    - versions
-  matrix:
-    - accounting
-    - atom
-    - base
-    - begin
-    - close
-    - decompression
-    - defence
-    - duality
-    - education
-    - flow
-    - identity
-    - law
-    - shred
-    - versions
-    - whole
-    - workflow
-  backlinks:
-    - accounting
-    - atom
-    - base
-    - begin
-    - close
-    - decompression
-    - defence
-    - duality
-    - education
-    - flow
-    - identity
-    - law
-    - shred
-    - versions
-    - whole
-    - workflow
 signatures:
-  computationUuid: "e7af388e-8991-8d5a-b907-9c256ea4a5fb"
+  computationUuid: "657ffa03-6fb4-8275-90c7-f3af22bb6002"
   stages:
     - stage: path
-      stageUuid: "7bc13519-daad-8c61-b601-88e9482cee3c"
+      stageUuid: "cb73fce8-1334-85f7-a5b1-db384780704b"
     - stage: trinity
-      stageUuid: "6b18f44c-0e61-8022-b6f5-00a923de2f2a"
+      stageUuid: "3fd2b421-dbf0-8f29-ac4e-40d11b7627f8"
     - stage: boundary
-      stageUuid: "e748ca7f-11d1-82b7-a3a5-48fe85abeccb"
+      stageUuid: "acba2b75-b70b-8b83-9b55-601d25a3ebf5"
     - stage: links
-      stageUuid: "8203dd67-8643-8ca5-b58d-9f6f2a49b8ab"
+      stageUuid: "db4fa748-ae60-8180-bcf1-2573301c28f4"
     - stage: horo
-      stageUuid: "8014c058-f78c-8776-b6d7-fe39b6487e43"
+      stageUuid: "fd21ca2d-dca4-8dba-9d4b-30f86626233a"
     - stage: seal
-      stageUuid: "b9583b91-bfc0-82d1-8f65-238c97f8f53e"
+      stageUuid: "2edfd041-a99a-8b46-827d-683e679f762a"
     - stage: uuid
-      stageUuid: "06b697eb-d330-8794-b89b-66ec4ae4be9a"
+      stageUuid: "1d6c766e-7bc9-82d3-8b50-d9c697f17a75"
 version: 2
 ---
 # open — the permitting state (postable · editable)

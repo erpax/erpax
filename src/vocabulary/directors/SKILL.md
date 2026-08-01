@@ -1,53 +1,35 @@
 ---
 name: directors
 description: "Use when reasoning about directors — A director of e.g. TV, radio, movie, video games etc. content. Directors can be associated with individual items or with a series, episode, clip."
-atomPath: vocabulary/directors
-coordinate: directors · 4/weave · 44fc322b
-contentUuid: "7ace464e-bfb0-5dd5-a381-8a3cfef35348"
-diamondUuid: "dfbab723-d43d-8c39-a3a7-8a36231f3949"
-uuid: "44fc322b-39b2-8c17-9095-1858af51c2ee"
+atomPath: "vocabulary/directors"
+coordinate: "vocabulary/directors · 4/weave · 8c28d106"
+contentUuid: "a36a9ce6-69e0-55a2-b015-29c8c81f0311"
+diamondUuid: "e9e61ae1-2016-8c97-b9d0-df176ba92566"
+uuid: "8c28d106-8dcc-8f1d-8be3-ff8743bf2969"
 horo: 4
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
 typography:
-  partition: directors
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "ae3382d9-e314-8072-922d-98f4b69017e4"
+  computationUuid: "6d07fe39-fd34-886f-ba7a-7a708b9c06eb"
   stages:
     - stage: path
-      stageUuid: "c447ae73-a7a8-8dee-aca2-ba1e45bed139"
+      stageUuid: "79ef0427-7cc9-81e9-a2ec-5e094558d653"
     - stage: trinity
-      stageUuid: "add1ccb6-c91a-8c81-b115-9b2315898903"
+      stageUuid: "4ff8848f-bb1b-8d8e-b5e1-234b8fa09b24"
     - stage: boundary
-      stageUuid: "0a02f776-e79c-837a-9e45-af752d05c341"
+      stageUuid: "509b9e6f-328f-87a6-9b79-1f96f2ee4e87"
     - stage: links
-      stageUuid: "d32b0222-64b0-8574-b8f1-9ee363e82764"
+      stageUuid: "498c4d16-385c-84c9-8801-83d4a808fcaa"
     - stage: horo
-      stageUuid: "42110dfd-a705-8e7c-962b-35bed168427c"
+      stageUuid: "d0705c55-e048-8859-87ec-fe2daa3ac3f1"
     - stage: seal
-      stageUuid: "db71a00e-c2d8-8e8b-ac22-4a5142564d8f"
+      stageUuid: "a58d234c-e3fe-827c-b837-a239f11057fa"
     - stage: uuid
-      stageUuid: "d94dea1e-ee4f-8eac-8337-86a8e09a332f"
+      stageUuid: "8a35a079-15d4-8c89-9a30-af72ca228045"
 version: 2
 ---
 # directors

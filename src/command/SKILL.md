@@ -2,107 +2,19 @@
 name: command
 description: "Use when classifying or executing the imperative-verb role of an autonomous workflow — the atom a loop runs as a step's command, paired with a question gate and a computed answer; the C-set of corpus verbs."
 atomPath: command
-coordinate: "command · 2/share · 5b28fc6f"
-contentUuid: "a9867306-40a8-5019-9590-cc4694384499"
-diamondUuid: "426931a8-5b15-866d-bee6-ff33d9848b03"
-uuid: "5b28fc6f-b832-8f1f-ab72-fedc19fbd955"
-horo: 2
-bonds:
-  in:
-    - answer
-    - collapse
-    - concatenate
-    - dry
-    - generate
-    - law
-    - merge
-    - migrate
-    - question
-    - relocate
-    - self
-    - sequence
-    - society
-    - step
-    - train
-    - workflow
-  out:
-    - answer
-    - collapse
-    - concatenate
-    - dry
-    - generate
-    - law
-    - merge
-    - migrate
-    - question
-    - relocate
-    - self
-    - sequence
-    - society
-    - step
-    - train
-    - workflow
+coordinate: "command · 5/round · f7450ff3"
+contentUuid: "9da720f6-29ec-5b22-82b0-9ed0b321288c"
+diamondUuid: "f4f45e02-cb6e-85d6-9d35-5ed5cc20ac34"
+uuid: "f7450ff3-be44-860f-8a1d-1fec33c8db22"
+horo: 5
 typography:
   partition: command
   bondDegree: 59
-  neighbors: []
 standards:
   - "schema.org Action — the imperative move (here, the workflow step's verb)"
 bindings: []
-neighbors:
-  wikilink:
-    - answer
-    - collapse
-    - concatenate
-    - dry
-    - generate
-    - law
-    - merge
-    - migrate
-    - question
-    - relocate
-    - self
-    - sequence
-    - society
-    - step
-    - train
-    - workflow
-  matrix:
-    - answer
-    - collapse
-    - concatenate
-    - dry
-    - generate
-    - law
-    - merge
-    - migrate
-    - question
-    - relocate
-    - self
-    - sequence
-    - society
-    - step
-    - train
-    - workflow
-  backlinks:
-    - answer
-    - collapse
-    - concatenate
-    - dry
-    - generate
-    - law
-    - merge
-    - migrate
-    - question
-    - relocate
-    - self
-    - sequence
-    - society
-    - step
-    - train
-    - workflow
 signatures:
-  computationUuid: "2deedd2b-d986-8a01-a33f-45978f2babc8"
+  computationUuid: "e40b1178-f260-89a8-86f0-6ff2b4c1a3aa"
   stages:
     - stage: path
       stageUuid: "86b7c25f-ffa4-82bb-87d5-ef2bece45476"
@@ -113,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0e41bc50-7a1e-817e-a6c2-34cb8b78e58f"
     - stage: horo
-      stageUuid: "3377e63c-f7f2-8f69-84f5-7312b998699f"
+      stageUuid: "281f5e63-1c28-8e51-a772-9de3329d9b79"
     - stage: seal
       stageUuid: "a9791b38-3e93-82ad-bba5-f68e835de0e1"
     - stage: uuid
-      stageUuid: "f3b84f54-fda8-86c8-8441-d81ead697218"
+      stageUuid: "f7b6e346-f22a-8402-ae8d-4abd24fa7461"
 version: 2
 ---
 # command — the imperative verb an autonomous workflow executes

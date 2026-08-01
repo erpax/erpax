@@ -1,88 +1,35 @@
 ---
 name: boat
 description: "Use when reasoning about boat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/boat
-coordinate: boat · 4/weave · 2a27eda3
-contentUuid: "63acfd7d-8715-5445-8d18-174b76324531"
-diamondUuid: "fa51c8a6-01ca-8121-9107-fbd53e51a05b"
-uuid: "2a27eda3-5571-8472-8538-0366a99f0fa2"
-horo: 4
-bonds:
-  in:
-    - arrival
-    - collapse
-    - departure
-    - law
-    - merge
-    - reservation
-    - sti
-    - terminal
-    - trip
-  out:
-    - arrival
-    - collapse
-    - departure
-    - law
-    - merge
-    - reservation
-    - sti
-    - terminal
-    - trip
+atomPath: "vocabulary/boat"
+coordinate: "vocabulary/boat · 5/round · b0542698"
+contentUuid: "bf0b80bb-e1ef-5842-aa21-2b9b5560a187"
+diamondUuid: "1a890d8d-7dd4-8cbe-98f0-bffb2b3d532c"
+uuid: "b0542698-ad8c-83cb-b218-00fde463bf35"
+horo: 5
 typography:
-  partition: boat
+  partition: vocabulary
   bondDegree: 32
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - arrival
-    - collapse
-    - departure
-    - law
-    - merge
-    - reservation
-    - sti
-    - terminal
-    - trip
-  matrix:
-    - arrival
-    - collapse
-    - departure
-    - law
-    - merge
-    - reservation
-    - sti
-    - terminal
-    - trip
-  backlinks:
-    - arrival
-    - collapse
-    - departure
-    - law
-    - merge
-    - reservation
-    - sti
-    - terminal
-    - trip
 signatures:
-  computationUuid: "e4cbfa3e-2c71-8314-8155-a3aab6fbbfaa"
+  computationUuid: "8f350b05-26fc-8658-a90b-4280c85ed3d0"
   stages:
     - stage: path
-      stageUuid: "a48f8d8d-a0c9-8aca-840d-636d24cfb9bc"
+      stageUuid: "1f93f544-9761-86dd-8293-38ef5dcc857f"
     - stage: trinity
-      stageUuid: "f7f11ae1-b3e0-8a44-ba76-c068386c8ded"
+      stageUuid: "49ecbd15-3339-849f-bfef-a9b9e77bbadc"
     - stage: boundary
-      stageUuid: "135c860f-a78a-86f5-b633-c7543b237ce4"
+      stageUuid: "0e44032b-5b07-85aa-9a70-0bd62d5e96cb"
     - stage: links
-      stageUuid: "bea17459-c192-8c6c-8b11-8bdd20c1299c"
+      stageUuid: "d09f2b38-3d4b-8a6c-a57d-75798ee5dbbd"
     - stage: horo
-      stageUuid: "09a7bc51-6be8-8f23-a075-550535876c6b"
+      stageUuid: "162ea2f1-c101-88b3-a58e-79607f574aa0"
     - stage: seal
-      stageUuid: "f0f4f7b1-4799-8f88-8ba0-ced259871a14"
+      stageUuid: "7aa26b78-9d6b-8564-89fb-446f08038ad9"
     - stage: uuid
-      stageUuid: "75cb0252-7b42-872c-a832-ae982358b8f9"
+      stageUuid: "a2e3c4cf-4001-8f8c-997a-59b40f59dddf"
 version: 2
 ---
 # boat

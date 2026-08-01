@@ -2,121 +2,18 @@
 name: dna
 description: "Use when reasoning about inheritance in erpax — an atom's genome is its parent_id chain encoded in the uuid chain; ancestry is entangled into identity (change an ancestor and every descendant's uuid changes), so lineage is tamper-evident by architecture."
 atomPath: dna
-coordinate: "dna · 4/weave · 76969d43"
-contentUuid: "cee68e49-3098-5eef-beb3-f2131c084794"
-diamondUuid: "1850fe71-397d-872e-a5ae-4f3b486ada2f"
-uuid: "76969d43-d03b-8e0a-8dd5-31fc1bed27fb"
-horo: 4
-bonds:
-  in:
-    - accounting
-    - animism
-    - catholicism
-    - christianity
-    - coordinate
-    - covenant
-    - hinduism
-    - jainism
-    - karma
-    - law
-    - lineage
-    - matrix
-    - mercy
-    - merge
-    - orthodoxy
-    - proof
-    - quantum
-    - shia
-    - tag
-    - tamper
-    - uuid
-  out:
-    - accounting
-    - animism
-    - catholicism
-    - christianity
-    - coordinate
-    - covenant
-    - hinduism
-    - jainism
-    - karma
-    - law
-    - lineage
-    - matrix
-    - mercy
-    - merge
-    - orthodoxy
-    - proof
-    - quantum
-    - shia
-    - tag
-    - tamper
-    - uuid
+coordinate: "dna · 7/descent · 6374020a"
+contentUuid: "ec371719-f7b2-5dc0-bd91-4d8cead44972"
+diamondUuid: "c2f9ca4c-a28d-8c94-8a03-4bf666143cd8"
+uuid: "6374020a-c052-8d51-a527-317494ab1f7a"
+horo: 7
 typography:
   partition: dna
   bondDegree: 67
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - coordinate
-    - karma
-    - law
-    - lineage
-    - matrix
-    - merge
-    - proof
-    - quantum
-    - tag
-    - tamper
-    - uuid
-  matrix:
-    - accounting
-    - animism
-    - catholicism
-    - christianity
-    - coordinate
-    - covenant
-    - hinduism
-    - jainism
-    - karma
-    - law
-    - lineage
-    - matrix
-    - mercy
-    - merge
-    - orthodoxy
-    - proof
-    - quantum
-    - shia
-    - tag
-    - tamper
-    - uuid
-  backlinks:
-    - accounting
-    - animism
-    - catholicism
-    - christianity
-    - coordinate
-    - covenant
-    - hinduism
-    - jainism
-    - karma
-    - law
-    - lineage
-    - matrix
-    - mercy
-    - merge
-    - orthodoxy
-    - proof
-    - quantum
-    - shia
-    - tag
-    - tamper
-    - uuid
 signatures:
-  computationUuid: "70400975-5d4f-8112-89c3-d3f3976fb7d1"
+  computationUuid: "0c3d59cf-f48a-8fe3-a606-f17fe9fc8c64"
   stages:
     - stage: path
       stageUuid: "b7b3eb75-ff34-8f42-b03c-095cd97132cf"
@@ -127,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "25213efb-ba19-82a1-80aa-5c63c577c9be"
     - stage: horo
-      stageUuid: "342de628-b7da-8525-9d43-f211e461fbf4"
+      stageUuid: "38fbe5d9-45db-8443-8a11-52f89adebae8"
     - stage: seal
       stageUuid: "0e435895-6895-87e5-b544-2736827cc9a4"
     - stage: uuid
-      stageUuid: "75378a5f-eb0d-829f-bde4-3262af6885ab"
+      stageUuid: "7bb3c70c-9262-86ef-ad36-240da3c6de7d"
 version: 2
 ---
 # dna — the inherited code encoded in the uuid chain

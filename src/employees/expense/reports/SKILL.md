@@ -2,29 +2,14 @@
 name: reports
 description: "Use when submitting, approving or auditing employee expense claims — per-diem, mileage, airfare, hotel, receipts, multi-step approval chain, reimbursement via payroll or AP — with GL coding, FX conversion, policy-compliance flags and SOX §404 four-eyes enforcement. The employee expense-claim collection."
 atomPath: "employees/expense/reports"
-coordinate: "employees/expense/reports · 4/weave · f47589d8"
-contentUuid: "97c071d0-6ecc-5d79-bcc4-63bbf47415fc"
-diamondUuid: "a5aba60c-1774-833e-8677-78cc70758207"
-uuid: "f47589d8-a610-8251-bc6f-bb515b783730"
-horo: 4
-bonds:
-  in:
-    - accounting
-    - balance
-    - debit
-    - expense
-    - law
-    - path
-  out:
-    - accounting
-    - balance
-    - debit
-    - law
-    - path
+coordinate: "employees/expense/reports · 5/round · e82e6b24"
+contentUuid: "e9545c14-b27f-5ed1-b450-ff031d72da40"
+diamondUuid: "aca9843c-7621-8bbd-b40b-4b5768026e4e"
+uuid: "e82e6b24-4955-8bcf-b64e-2e7d36709d30"
+horo: 5
 typography:
   partition: employees
   bondDegree: 28
-  neighbors: []
 standards:
   - "GDPR Art.5 PII receipt-images"
   - "IFRS IAS-19 employee-benefits"
@@ -36,29 +21,8 @@ standards:
   - "SOX §404 internal-controls four-eyes"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - identity
-    - law
-    - projects
-    - proof
-    - standard
-    - transaction
-  matrix:
-    - accounting
-    - balance
-    - debit
-    - law
-    - path
-  backlinks:
-    - accounting
-    - balance
-    - debit
-    - law
-    - path
 signatures:
-  computationUuid: "fca32db6-4de2-85f7-a803-e4670e6a8fce"
+  computationUuid: "5bd669a5-771d-8f77-b6ec-90d2314d7bb9"
   stages:
     - stage: path
       stageUuid: "403f2ee9-d470-8577-b33a-d3122cc50e6c"
@@ -69,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "fecec840-64b4-8347-9416-8487f4720f4b"
     - stage: horo
-      stageUuid: "587b5b97-1e75-8566-ad68-8b9e0a20b9a5"
+      stageUuid: "3cd062a4-1338-83a1-b82a-a8cea5efcdd8"
     - stage: seal
       stageUuid: "df5ad4cd-b7c3-81ec-9236-07c88fafff88"
     - stage: uuid
-      stageUuid: "66cdc35b-f5c7-8a12-a342-52d9c9d8897b"
+      stageUuid: "a3c3f8cd-556a-80de-aef8-11548be3d520"
 version: 2
 ---
 # expense-reports

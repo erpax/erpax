@@ -1,63 +1,35 @@
 ---
 name: bound
 description: "Use when reasoning about bound as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/bound
-coordinate: bound · 2/share · 1eb03041
-contentUuid: "c944e93a-e757-512e-8d3b-18a806c2569d"
-diamondUuid: "ce484686-dd29-8620-bdd5-aa7baa1390cc"
-uuid: "1eb03041-0299-86e9-85b9-d934eb4d9a81"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/bound"
+coordinate: "vocabulary/bound · 1/base · 12e5546d"
+contentUuid: "cffdce41-81df-5bc1-bdbb-3b77f7284f8a"
+diamondUuid: "5693a1c0-3b70-8c19-9d9c-d83311309e28"
+uuid: "12e5546d-f3d3-8084-adf4-7d1d9fe5fcef"
+horo: 1
 typography:
-  partition: bound
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "0b7d605c-52ef-801d-b72a-66765a5a3742"
+  computationUuid: "26fe259c-a85e-8081-bba0-31cce193a224"
   stages:
     - stage: path
-      stageUuid: "24e2ea20-45a2-86aa-9ead-9dde92d54bd7"
+      stageUuid: "3335f09a-707f-845d-a95b-cefb7a8da9fb"
     - stage: trinity
-      stageUuid: "6c0ed5c5-5649-88c3-a9cd-1fc70ed8d2dc"
+      stageUuid: "1aaf6e15-5256-89c3-92da-27ca0d9586bf"
     - stage: boundary
-      stageUuid: "2bfc7c12-5403-82c1-b1b7-901de264504f"
+      stageUuid: "587cf9cb-c8b0-86f1-92ea-34f44e8991e5"
     - stage: links
-      stageUuid: "5affad10-c665-847e-84d6-ebaa1e3ac370"
+      stageUuid: "88e08401-1369-8883-9095-70000af63bfc"
     - stage: horo
-      stageUuid: "b865e1ed-2b60-819c-b83a-cf7dc7af730b"
+      stageUuid: "f37c1a49-3f70-8f8c-9ac7-182437d9d5a6"
     - stage: seal
-      stageUuid: "9cf6b460-be18-8d7b-a3d7-b69a28a4733a"
+      stageUuid: "a6309777-d599-8952-afdc-83955414ec99"
     - stage: uuid
-      stageUuid: "fa19ef21-601a-86c8-8116-56069c898f15"
+      stageUuid: "d89e9005-fe91-8b7d-97f9-da19acdc2274"
 version: 2
 ---
 # bound

@@ -1,90 +1,34 @@
 ---
 name: frost
 description: "Use when the freeze event bounds the growing season — the last spring frost and first fall frost define the frost-free period that caps which crops are feasible; frost dates are probabilistic (per-station, at a confidence level), not fixed calendar dates. The hard bound of the season; the event tunnels and hardiness buffer against."
-atomPath: vocabulary/frost
-coordinate: frost · 4/weave · 6a388bab
-contentUuid: "accf8e2b-0c3b-597b-957e-2309f95e627c"
-diamondUuid: "18e79f2d-a2c9-8b0a-8b8a-27415306bf83"
-uuid: "6a388bab-00d8-82f5-914d-63f4a31417be"
-horo: 4
-bonds:
-  in:
-    - agriculture
-    - crop
-    - degreeday
-    - dormancy
-    - hardiness
-    - law
-    - planting
-    - season
-    - terroir
-    - tunnel
-  out:
-    - agriculture
-    - crop
-    - degreeday
-    - dormancy
-    - hardiness
-    - law
-    - planting
-    - season
-    - terroir
-    - tunnel
+atomPath: "vocabulary/frost"
+coordinate: "vocabulary/frost · 1/base · 45f3e656"
+contentUuid: "c320c171-447f-51f5-8f6c-c1a84d339ded"
+diamondUuid: "0b742fb0-5d9e-80e6-bece-26b09e42427e"
+uuid: "45f3e656-1f80-8334-a67a-2573f9113b3b"
+horo: 1
 typography:
-  partition: frost
+  partition: vocabulary
   bondDegree: 34
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - crop
-    - degreeday
-    - hardiness
-    - law
-    - planting
-    - season
-    - tunnel
-  matrix:
-    - agriculture
-    - crop
-    - degreeday
-    - dormancy
-    - hardiness
-    - law
-    - planting
-    - season
-    - terroir
-    - tunnel
-  backlinks:
-    - agriculture
-    - crop
-    - degreeday
-    - dormancy
-    - hardiness
-    - law
-    - planting
-    - season
-    - terroir
-    - tunnel
 signatures:
-  computationUuid: "2e0c50b8-d3be-80e9-9476-cc3a7d022a44"
+  computationUuid: "766d4cf3-02ae-83a2-b625-6a4cd3909a44"
   stages:
     - stage: path
-      stageUuid: "c12a504f-0d2f-813f-b619-e1e33f741bc7"
+      stageUuid: "f2af83be-c68a-801c-a835-7d156a328033"
     - stage: trinity
-      stageUuid: "2639e3e1-9fef-87cc-b1a7-c26bc0dcb371"
+      stageUuid: "e3788c73-c103-8fad-8c31-c99d6f2f597f"
     - stage: boundary
-      stageUuid: "4740883c-cdc6-8d93-b93b-a5e535ed3e21"
+      stageUuid: "7692201c-7c10-868f-a986-417f92a1aede"
     - stage: links
-      stageUuid: "f1716a1d-3462-889d-9c1e-195ebb343061"
+      stageUuid: "ad226b6b-5031-8efc-aa3d-c93ad63b2ebb"
     - stage: horo
-      stageUuid: "6d6b4421-65c2-8c1f-b54e-8da2762a9723"
+      stageUuid: "1fe400f4-df0c-8312-a7f5-65be3407f344"
     - stage: seal
-      stageUuid: "cc9d291b-9871-86d1-89c9-4cfab7243e4e"
+      stageUuid: "d99af9e3-b54d-8e58-b211-56b6e12acab5"
     - stage: uuid
-      stageUuid: "85ca71cb-d691-81a8-969b-a5d0e738aab5"
+      stageUuid: "898ff082-a218-8b48-875b-0f8571c06870"
 version: 2
 ---
 # frost — the freeze event that bounds the season

@@ -2,49 +2,20 @@
 name: shallow
 description: "Use when reasoning about import discipline — an import must reach an atom's index (the one public door), not a deep internal file past the seal; this names the convention, measures the corpus's live shallowness, and is enforced by the import lint (a ratchet on the non-index count, so shallowness can only get tighter)."
 atomPath: "convention/shallow"
-coordinate: "convention/shallow · 8/crest · c5043be6"
-contentUuid: "c88b41db-f6dd-58b3-abb5-b8818d3fb18e"
-diamondUuid: "dc934192-ae35-8e9a-a0dc-6bff8cce6260"
-uuid: "c5043be6-cae5-895f-b750-fb742834ac14"
-horo: 8
-bonds:
-  in:
-    - convention
-    - cost
-    - exported
-    - law
-    - tamper
-  out:
-    - cost
-    - exported
-    - law
-    - tamper
+coordinate: "convention/shallow · 4/weave · 77d9db81"
+contentUuid: "c6fa37c5-50dd-5846-be22-c3a717d89da2"
+diamondUuid: "06d8307c-6986-80a0-a076-78b1c2f486c4"
+uuid: "77d9db81-3b80-89e3-b4d5-f3f665296e39"
+horo: 4
 typography:
   partition: convention
   bondDegree: 14
-  neighbors: []
 standards:
   - "UBL-2.1"
   - "the import graph is the config — the public face is index.ts only (shallow, never deep)"
 bindings: []
-neighbors:
-  wikilink:
-    - cost
-    - exported
-    - law
-    - tamper
-  matrix:
-    - cost
-    - exported
-    - law
-    - tamper
-  backlinks:
-    - cost
-    - exported
-    - law
-    - tamper
 signatures:
-  computationUuid: "bc10942d-f1c9-8bc4-8700-407ef2a41baf"
+  computationUuid: "9199c08c-075a-8219-b776-4bd1dd7af7be"
   stages:
     - stage: path
       stageUuid: "b809a38c-8b5b-873a-be5f-a515d158c88e"
@@ -55,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "bcb3fcdf-7716-89c4-92b2-825adfb60837"
     - stage: horo
-      stageUuid: "ce67244d-ec34-896a-95f0-22c03c7e7532"
+      stageUuid: "59b19251-1a5d-873e-bc8f-92868a4d0607"
     - stage: seal
       stageUuid: "2f5156ef-115f-8824-b7bc-f6b8d4ecbccc"
     - stage: uuid
-      stageUuid: "3cc89082-85f8-84d4-8926-bf82381e0f2a"
+      stageUuid: "371397d9-df3d-861f-981b-0d4eba64ed69"
 version: 2
 ---
 # convention/shallow — import the index, not a deep file

@@ -1,63 +1,35 @@
 ---
 name: extra
 description: "Use when reasoning about extra as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/extra
-coordinate: extra · 7/descent · e028224b
-contentUuid: "5db54841-8b25-5ddd-aa6b-79646b616ed0"
-diamondUuid: "204e6207-3162-855d-8dc0-121974a396f9"
-uuid: "e028224b-b8f6-841f-a5dd-9287d0eca0a7"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/extra"
+coordinate: "vocabulary/extra · 2/share · 6cdcc386"
+contentUuid: "3ca845e2-3dc0-5fd2-b0a5-3a4ae4bfcab4"
+diamondUuid: "7b487f0b-f001-8168-af9b-626e35f62ee2"
+uuid: "6cdcc386-196f-800f-b724-553fc87a40ee"
+horo: 2
 typography:
-  partition: extra
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "4ac20db0-2203-8e38-9353-cbdb403b5c51"
+  computationUuid: "e569862c-807d-80e0-b7cf-48a1a754a532"
   stages:
     - stage: path
-      stageUuid: "4f05abb1-7249-8629-995d-adf5592f4ab4"
+      stageUuid: "9c313f1b-c0ea-8cda-bcdf-0a0fa4da4892"
     - stage: trinity
-      stageUuid: "2f0273b7-f5e1-8d50-9f5c-9c7a77334b1f"
+      stageUuid: "487ce242-92ec-81c6-918c-c23c891766c0"
     - stage: boundary
-      stageUuid: "db766f55-9e49-88b3-a228-0b0f6a390a54"
+      stageUuid: "28885ef7-ed71-8c7c-9327-9a5287d7efe1"
     - stage: links
-      stageUuid: "c38dd8f4-cdf4-8487-aca3-c709f0e7aec9"
+      stageUuid: "f3f4edef-141d-8c96-a528-cb171b538445"
     - stage: horo
-      stageUuid: "d6fbbde7-b480-8ecb-85ae-277da891b806"
+      stageUuid: "4dc71fdf-5fbc-8592-a2d1-07f8971f0b86"
     - stage: seal
-      stageUuid: "a1c0d190-9510-826d-8348-59237b1f4ef8"
+      stageUuid: "770f4259-4088-8310-afef-7061f46169f4"
     - stage: uuid
-      stageUuid: "211b98db-bd6c-8d37-97b6-b0f2bf90a603"
+      stageUuid: "02de2947-e27a-82e3-b3bb-8d31c086b519"
 version: 2
 ---
 # extra

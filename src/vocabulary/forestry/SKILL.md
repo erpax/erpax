@@ -1,122 +1,34 @@
 ---
 name: forestry
 description: "Use when managing standing timber's biological transformation for produce — trees grown in stands as IAS-41 biological assets (standing biomass at fair value; the land separate), on a rotation set by mean annual increment, tended by silviculture (thinning/regeneration), felled to merchantable volume. Carbon stock is the cross-cutting ESG output; FSC/PEFC certification with chain-of-custody."
-atomPath: vocabulary/forestry
-coordinate: forestry · 2/share · ea86b31c
-contentUuid: "7e785594-2a61-5f68-a804-b6dda75b53f1"
-diamondUuid: "b98cd3aa-150c-8f0f-9248-e1dd7fceec09"
-uuid: "ea86b31c-af75-84f5-b3e0-3585406bdfe4"
-horo: 2
-bonds:
-  in:
-    - agriculture
-    - aquaculture
-    - assets
-    - biomass
-    - certification
-    - cultivation
-    - fertility
-    - forecast
-    - harvest
-    - items
-    - lineage
-    - mortality
-    - propagation
-    - rotation
-    - tenure
-    - yield
-  out:
-    - agriculture
-    - aquaculture
-    - assets
-    - biomass
-    - certification
-    - cultivation
-    - fertility
-    - forecast
-    - harvest
-    - items
-    - lineage
-    - mortality
-    - propagation
-    - rotation
-    - tenure
-    - yield
+atomPath: "vocabulary/forestry"
+coordinate: "vocabulary/forestry · 5/round · 43b06128"
+contentUuid: "c7f59244-2acd-5bbc-b86f-8faab1fe953e"
+diamondUuid: "d39b5302-a059-86f0-a9ba-ea2aad034b1b"
+uuid: "43b06128-d686-8a4e-acd1-bd727b746bad"
+horo: 5
 typography:
-  partition: forestry
-  bondDegree: 51
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 53
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - aquaculture
-    - assets
-    - biomass
-    - certification
-    - cultivation
-    - fertility
-    - forecast
-    - harvest
-    - items
-    - lineage
-    - mortality
-    - propagation
-    - rotation
-    - tenure
-    - yield
-  matrix:
-    - agriculture
-    - aquaculture
-    - assets
-    - biomass
-    - certification
-    - cultivation
-    - fertility
-    - forecast
-    - harvest
-    - items
-    - lineage
-    - mortality
-    - propagation
-    - rotation
-    - tenure
-    - yield
-  backlinks:
-    - agriculture
-    - aquaculture
-    - assets
-    - biomass
-    - certification
-    - cultivation
-    - fertility
-    - forecast
-    - harvest
-    - items
-    - lineage
-    - mortality
-    - propagation
-    - rotation
-    - tenure
-    - yield
 signatures:
-  computationUuid: "4dcfbc39-d61c-8182-9400-1d0b78022b34"
+  computationUuid: "aede3118-a988-83b4-80e3-e42310794cde"
   stages:
     - stage: path
-      stageUuid: "938f9d3c-9215-86b0-80a4-b9342c50aad2"
+      stageUuid: "a9b1e194-24b4-8616-9c0c-de4256b7ed7e"
     - stage: trinity
-      stageUuid: "cc67d5c6-6a16-8d28-9ea3-ca2710546175"
+      stageUuid: "a20d1b9d-3e75-8b5e-b13a-f517764778c6"
     - stage: boundary
-      stageUuid: "73e5e9dc-2192-8138-a6d2-e5980a4d9c95"
+      stageUuid: "44545656-c1f7-889d-a56a-a59d69fc55b5"
     - stage: links
-      stageUuid: "10b3487d-3914-86b6-9d3a-96f77e0349a8"
+      stageUuid: "7a049120-1cb5-8826-8912-2fc26c7fb243"
     - stage: horo
-      stageUuid: "c4e92bb9-06d4-81e5-bb6d-15b2e6e759f4"
+      stageUuid: "c4affe0d-fac9-8713-abbd-2a560dfbe4ba"
     - stage: seal
-      stageUuid: "56d0ac6f-ec6f-8e06-b5f8-11d2f846e691"
+      stageUuid: "eeaa96b4-4e61-8e6d-9b47-b177a54e7671"
     - stage: uuid
-      stageUuid: "fa439bba-e79e-84ce-b934-3e6a3b829f02"
+      stageUuid: "f4c744ab-401b-83a5-9952-c4665e965908"
 version: 2
 ---
 # forestry — managing standing timber for produce (and carbon)

@@ -1,53 +1,35 @@
 ---
 name: incentives
 description: Use when reasoning about incentives — Description of bonus and commission compensation aspects of the job.
-atomPath: vocabulary/incentives
-coordinate: incentives · 5/round · 29c86a43
-contentUuid: "03ac098f-ff8f-56e0-bbc0-db27755492b7"
-diamondUuid: "fd46256c-4f02-8527-b10a-992246c45f03"
-uuid: "29c86a43-16c6-8d87-a5b8-1ca4871170de"
-horo: 5
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/incentives"
+coordinate: "vocabulary/incentives · 2/share · 0e442cb3"
+contentUuid: "e48251f3-9ad0-5072-94ae-fcc9f0a4c8f0"
+diamondUuid: "f890af0c-c826-8290-8297-bc49b03bbb20"
+uuid: "0e442cb3-70a8-8d86-825e-6e6675ba6d1b"
+horo: 2
 typography:
-  partition: incentives
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "b0188868-a647-8cb0-b7f4-05bbede79d8b"
+  computationUuid: "95cbfc62-bd79-848b-9f68-0d6ffb6079e1"
   stages:
     - stage: path
-      stageUuid: "02b425a9-ba9d-879d-b90e-0873b8fdce55"
+      stageUuid: "ec9ca1c6-cd8e-8e26-afa8-babdba767fea"
     - stage: trinity
-      stageUuid: "38d99e25-602a-898c-8387-1558758d91ab"
+      stageUuid: "51a5361b-07a9-8a3e-b170-4495f81732e9"
     - stage: boundary
-      stageUuid: "c98bb205-976b-82c9-90d2-25f927ace342"
+      stageUuid: "758d6bf4-a772-8b63-b464-3d1d16b8ed53"
     - stage: links
-      stageUuid: "c64e62d4-3e5a-8524-bbca-6b7d61b5a8d5"
+      stageUuid: "9b01310e-e8ce-8f4b-be8b-f3c2833abd72"
     - stage: horo
-      stageUuid: "3541a447-bb0b-8840-ae27-4e50612c2fce"
+      stageUuid: "c0a5b765-3dc5-8e64-b815-e5761db68ce3"
     - stage: seal
-      stageUuid: "1a3be0f5-b2bb-8fe0-b488-02e0ed0e7362"
+      stageUuid: "ea6b192e-9c5e-8d19-8b3f-4dec164670da"
     - stage: uuid
-      stageUuid: "d33d2e98-16f1-8bd9-b5b7-4d632446a1b8"
+      stageUuid: "2a446ee3-d25a-8049-b2b7-9c8bcb2de2a2"
 version: 2
 ---
 # incentives

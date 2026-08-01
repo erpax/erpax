@@ -1,63 +1,35 @@
 ---
 name: deregistered
 description: "Use when reasoning about deregistered as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/deregistered
-coordinate: deregistered · 7/descent · aed3e11b
-contentUuid: "928feb6b-c971-5bed-8169-3d6f20b21fdc"
-diamondUuid: "15d3e8eb-09dd-8931-8ca1-40eea065a002"
-uuid: "aed3e11b-7852-83dc-9a23-38e705f19de3"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/deregistered"
+coordinate: "vocabulary/deregistered · 5/round · ebf5f9fe"
+contentUuid: "58fb0cfd-1430-5160-855e-01c7e182e002"
+diamondUuid: "a59e3d46-a950-8b99-8625-8d3b9ecb57c4"
+uuid: "ebf5f9fe-c62f-895e-aa07-bb4c0e5c16b4"
+horo: 5
 typography:
-  partition: deregistered
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "652b91b2-9eb5-8f23-9c62-a1a8ff8d2fc7"
+  computationUuid: "916afa74-a8fc-8b83-a206-4d5ae434e1c9"
   stages:
     - stage: path
-      stageUuid: "db7d3ff1-bf7d-82c4-81cf-cba0b1b2f8e5"
+      stageUuid: "e28fdd18-393b-8383-ae67-cdadc7556633"
     - stage: trinity
-      stageUuid: "620db2a9-d2c3-8ca4-bf8c-368a1fe6fc92"
+      stageUuid: "68104277-d62c-8b31-9ed2-6973fd1fa2fc"
     - stage: boundary
-      stageUuid: "45fa96b3-cec4-818c-bc74-8545c40b9c89"
+      stageUuid: "86171b10-d902-8de9-adbe-cf993d827822"
     - stage: links
-      stageUuid: "61cb8600-0266-8581-a757-d1dd4b1301a5"
+      stageUuid: "d7bffdfc-09dc-8397-b191-85d2b7c0f6b3"
     - stage: horo
-      stageUuid: "75a6604a-c59d-8ddd-9f9f-df9ef63a227e"
+      stageUuid: "bf94f2db-d4f7-839f-9f2d-6bfd376fc977"
     - stage: seal
-      stageUuid: "c60ff5ce-6bd6-856d-81b8-ad91114b81fc"
+      stageUuid: "4d5ce195-22bb-8143-af97-a7f6cab13161"
     - stage: uuid
-      stageUuid: "810b48f9-a873-8e53-9a25-948a13a954c6"
+      stageUuid: "fc8b1c93-72ab-815e-8fc9-0b7f8f6dd774"
 version: 2
 ---
 # deregistered

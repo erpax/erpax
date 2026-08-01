@@ -1,72 +1,34 @@
 ---
 name: prospect
 description: "Use when early-stage contact hasn't yet qualified as a lead — prospect→lead→opportunity progression in CRM. A party in discovery/research phase before qualification."
-atomPath: vocabulary/prospect
-coordinate: prospect · 4/weave · 12f7192e
-contentUuid: "b089c8f5-dd3f-589b-bc84-e3f4086f08c9"
-diamondUuid: "bf95700f-7aeb-860a-860c-40c734c9e6ce"
-uuid: "12f7192e-6e5d-826c-81ff-04ad40787420"
+atomPath: "vocabulary/prospect"
+coordinate: "vocabulary/prospect · 4/weave · e4861c70"
+contentUuid: "b2120356-c286-5736-a2db-1402e73a6744"
+diamondUuid: "95ce0cb9-4e1a-8967-8ce0-4da83b69d9cb"
+uuid: "e4861c70-2dbf-89e3-aa2a-d675494d7a9b"
 horo: 4
-bonds:
-  in:
-    - activities
-    - customers
-    - law
-    - leads
-    - leadscore
-    - opportunities
-  out:
-    - activities
-    - customers
-    - law
-    - leads
-    - leadscore
-    - opportunities
 typography:
-  partition: prospect
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - activities
-    - customers
-    - law
-    - leads
-    - leadscore
-    - opportunities
-  matrix:
-    - activities
-    - customers
-    - law
-    - leads
-    - leadscore
-    - opportunities
-  backlinks:
-    - activities
-    - customers
-    - law
-    - leads
-    - leadscore
-    - opportunities
 signatures:
-  computationUuid: "1c8997b0-5253-8ea7-804f-ed76ab2e687f"
+  computationUuid: "0cce29dc-38fc-8d22-bbf4-928e1c3c5991"
   stages:
     - stage: path
-      stageUuid: "ba2b6da0-ede8-8048-9338-9259bc4845a9"
+      stageUuid: "d7c963b9-e1b5-8338-af08-837fd582ea2d"
     - stage: trinity
-      stageUuid: "ceaa2522-a622-809d-bb88-4e8afa647735"
+      stageUuid: "fdfb7ba0-a4da-87db-892c-5902cd0a715b"
     - stage: boundary
-      stageUuid: "9c2b1e4f-313f-8295-8851-fea3bfbb0559"
+      stageUuid: "84f86f57-49b6-8b74-bf8a-c110262a1d69"
     - stage: links
-      stageUuid: "8f137ebe-cc90-8145-9a38-a88d13cd0d61"
+      stageUuid: "8709dea5-42d4-84f1-ac2d-f0e90a010ebb"
     - stage: horo
-      stageUuid: "b218d72d-1b87-8630-aeb3-b0941438dc39"
+      stageUuid: "635246f6-07f5-8948-ac86-8d11f736c364"
     - stage: seal
-      stageUuid: "526b3f5f-88bc-8fdf-bb89-2ec1b125f494"
+      stageUuid: "2af28ff4-a667-828a-9e64-ef6ec18633cd"
     - stage: uuid
-      stageUuid: "6b096ed7-169a-83ea-8873-ef5f9b3b5c9e"
+      stageUuid: "bb6750ca-ba75-81c6-8b2a-463bbecb7248"
 version: 2
 ---
 # prospect

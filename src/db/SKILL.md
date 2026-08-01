@@ -2,72 +2,19 @@
 name: db
 description: "Use when reasoning about the store — the stack's outside-infinity end where the request folds to rest; content-addressed (the key IS the content's uuid, no assigned id), append-only, dense zero-entropy core with infinite tamper-cost, deduping by the merge law."
 atomPath: db
-coordinate: "db · 1/base · dd8e5069"
-contentUuid: "227012aa-fbcc-5068-8aa8-359865a9e4e7"
-diamondUuid: "973ca1b8-e939-8bac-8c5c-a57f180277f8"
-uuid: "dd8e5069-5f8e-8ad7-9ff6-34bc98374e86"
-horo: 1
-bonds:
-  in:
-    - akashic
-    - entropy
-    - fold
-    - karma
-    - law
-    - merge
-    - stack
-    - train
-    - uuid
-  out:
-    - akashic
-    - entropy
-    - fold
-    - karma
-    - law
-    - merge
-    - stack
-    - train
-    - uuid
+coordinate: "db · 5/round · 6cda6794"
+contentUuid: "2b5cffe2-c5ea-585c-80af-24b5f3b6f9f5"
+diamondUuid: "011809f9-883a-8717-b325-6ee2eac6de46"
+uuid: "6cda6794-d964-878d-b75b-b07eb605668e"
+horo: 5
 typography:
   partition: db
   bondDegree: 27
-  neighbors: []
 standards:
   - "content-addressed storage (RFC 9562 §5.8 UUIDv8) · append-only (the akashic record)"
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - entropy
-    - fold
-    - karma
-    - law
-    - merge
-    - stack
-    - train
-    - uuid
-  matrix:
-    - akashic
-    - entropy
-    - fold
-    - karma
-    - law
-    - merge
-    - stack
-    - train
-    - uuid
-  backlinks:
-    - akashic
-    - entropy
-    - fold
-    - karma
-    - law
-    - merge
-    - stack
-    - train
-    - uuid
 signatures:
-  computationUuid: "adf6de13-3f71-8afd-8723-fc88ce18ec48"
+  computationUuid: "3448aee4-1243-8676-93d1-b7854cbda93f"
   stages:
     - stage: path
       stageUuid: "6bcf193d-6449-8182-a415-705c75ed4739"
@@ -78,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f6faac58-122e-88cc-8990-d1e201d1e4e7"
     - stage: horo
-      stageUuid: "caa7e713-6866-8a7e-98de-6d3dae9435cd"
+      stageUuid: "1053f823-ce47-8236-a14e-256ff8bf27c4"
     - stage: seal
       stageUuid: "d54757e6-4a64-87c0-93c4-37e2ba702649"
     - stage: uuid
-      stageUuid: "e09bc259-bb77-803a-a883-75ddcdddfae5"
+      stageUuid: "39188a97-2ef9-82b3-aebc-97e4d71c5e2a"
 version: 2
 ---
 # db — the store, the fold's outside-∞ end

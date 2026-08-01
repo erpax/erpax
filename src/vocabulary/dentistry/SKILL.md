@@ -1,63 +1,35 @@
 ---
 name: dentistry
 description: "Use when reasoning about dentistry as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/dentistry
-coordinate: dentistry · 8/crest · a62df4c4
-contentUuid: "e3b92342-2b30-5911-9f6c-c87ce4669574"
-diamondUuid: "486ea0a0-8659-825e-9116-409e1daa75cd"
-uuid: "a62df4c4-3fc5-88e9-983b-21428b7ddd40"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/dentistry"
+coordinate: "vocabulary/dentistry · 1/base · 36b2edf5"
+contentUuid: "c60d4888-e552-54a7-ab44-a0457cefd82d"
+diamondUuid: "07958102-65a1-81de-bd2a-65bfb011c118"
+uuid: "36b2edf5-7671-85c3-bb91-0d7f2cdd75cf"
+horo: 1
 typography:
-  partition: dentistry
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "dbff51c8-a27a-827f-b6e3-cf33e575769e"
+  computationUuid: "2c45343a-d08d-86ae-bd03-97066adaac01"
   stages:
     - stage: path
-      stageUuid: "db4887fc-9552-88a5-b2fb-911218a8b61f"
+      stageUuid: "22acffe7-2649-83e2-919c-1b1a30d7aade"
     - stage: trinity
-      stageUuid: "880ad0c0-c75b-8731-9e37-6635679b92be"
+      stageUuid: "dea2362d-e509-85a6-be41-111010db8bb5"
     - stage: boundary
-      stageUuid: "1bbdce60-e7d6-8e49-aba8-4fa6c7dacbfd"
+      stageUuid: "a3819d34-f0a7-8097-b7af-6c592f218601"
     - stage: links
-      stageUuid: "2b6067d8-55cf-853e-93ba-b4a43818e9c2"
+      stageUuid: "bafb2585-6c85-822d-9dbd-5a50e536b903"
     - stage: horo
-      stageUuid: "f6235517-2834-8498-b183-56f58c1f68d3"
+      stageUuid: "77c5fd84-3e41-8c32-877e-e65ba1e56246"
     - stage: seal
-      stageUuid: "24fd0b4c-a116-891e-a16a-6c4d3d2202fd"
+      stageUuid: "a5a5cea3-1854-8c69-8ac9-eaf2a10e9f90"
     - stage: uuid
-      stageUuid: "15ac2676-9a4e-8885-b19b-4a2eb425b5fd"
+      stageUuid: "0751e63f-c615-8474-a5de-6a841ce6df29"
 version: 2
 ---
 # dentistry

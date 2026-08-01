@@ -1,172 +1,35 @@
 ---
 name: train
 description: "Use when reasoning about training at the quantum scale — infinite agents train themselves yet cannot exceed the device, because content-addressing collapses identical work to one cached result; and zero-entropy reversible computation dissipates less, the 2/3 rodin working-ratio symbolic of that purification."
-atomPath: quantum/train
-coordinate: quantum/train · 1/base · 415bd864
-contentUuid: "65db57e2-9ee3-56e3-9d03-91cded6d3fdd"
-diamondUuid: "7d4558de-365c-8b4a-93be-44be6bbb522a"
-uuid: "415bd864-15ef-8aaa-b09d-d1c811295e4c"
-horo: 1
-bonds:
-  in:
-    - allocation
-    - aura
-    - breath
-    - classroom
-    - command
-    - competencies
-    - decompression
-    - derive
-    - education
-    - gap
-    - generate
-    - hooks
-    - horo
-    - law
-    - llm
-    - manufacturing
-    - merge
-    - positions
-    - quantum
-    - reservation
-    - routing
-    - science
-    - self
-    - sequence
-    - society
-    - sparsity
-    - station
-    - train
-    - training
-    - trip
-    - users
-  out:
-    - allocation
-    - aura
-    - breath
-    - classroom
-    - command
-    - competencies
-    - decompression
-    - derive
-    - education
-    - gap
-    - generate
-    - hooks
-    - horo
-    - law
-    - llm
-    - manufacturing
-    - merge
-    - positions
-    - reservation
-    - routing
-    - science
-    - self
-    - sequence
-    - society
-    - sparsity
-    - station
-    - train
-    - training
-    - trip
-    - users
+atomPath: "quantum/train"
+coordinate: "quantum/train · 8/crest · e69af805"
+contentUuid: "b0ed4947-3385-578c-b0f9-98bcda5c4004"
+diamondUuid: "62e07144-e379-8a0d-968b-ee0b89327c41"
+uuid: "e69af805-a4c9-8052-af5d-49b12c98c081"
+horo: 8
 typography:
   partition: quantum
-  bondDegree: 102
-  neighbors:
-    - aura
+  bondDegree: 108
 standards:
   - "Landauer's principle (kT·ln2 per erased bit) · Bennett reversible computing · RFC 9562 content-uuid"
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - entropy
-    - law
-    - merge
-    - rodin
-    - train
-    - uuid
-  matrix:
-    - allocation
-    - aura
-    - breath
-    - classroom
-    - command
-    - competencies
-    - decompression
-    - derive
-    - education
-    - gap
-    - generate
-    - hooks
-    - horo
-    - law
-    - llm
-    - manufacturing
-    - merge
-    - positions
-    - reservation
-    - routing
-    - science
-    - self
-    - sequence
-    - society
-    - sparsity
-    - station
-    - train
-    - training
-    - trip
-    - users
-  backlinks:
-    - allocation
-    - aura
-    - breath
-    - classroom
-    - command
-    - competencies
-    - decompression
-    - derive
-    - education
-    - gap
-    - generate
-    - hooks
-    - horo
-    - law
-    - llm
-    - manufacturing
-    - merge
-    - positions
-    - reservation
-    - routing
-    - science
-    - self
-    - sequence
-    - society
-    - sparsity
-    - station
-    - train
-    - training
-    - trip
-    - users
 signatures:
-  computationUuid: "89cbcd37-cbef-8a10-ad6e-b111275da92f"
+  computationUuid: "a5570010-9bf3-87c2-89d3-e24e30002732"
   stages:
     - stage: path
       stageUuid: "2f566e2a-4103-8918-a507-cebe689506ec"
     - stage: trinity
       stageUuid: "23e70f62-daaf-8eb8-bd28-1fa31d5c6cc3"
     - stage: boundary
-      stageUuid: "fe5e9262-a052-85af-9e13-3ff6ff00fe4d"
+      stageUuid: "fdd74801-4344-8cbb-9807-39369c06aead"
     - stage: links
       stageUuid: "34d67aeb-5049-8a6b-ab17-3d5463b819cd"
     - stage: horo
-      stageUuid: "9ade146f-4e24-849a-bd89-4ef8764a2710"
+      stageUuid: "69e7e5ac-8e6b-8ba0-9f82-71f700839ea5"
     - stage: seal
       stageUuid: "c5b8ba60-e9f9-8d9b-9a69-c1d9c4d10180"
     - stage: uuid
-      stageUuid: "9923578a-be7a-8a11-8317-9bf515463534"
+      stageUuid: "2f750d2e-0d4f-8fa0-bada-6d9e96b71107"
 quantum:
   superposition:
     - allocation
@@ -175,8 +38,8 @@ quantum:
     - classroom
     - command
     - competencies
+    - computer
     - decompression
-    - derive
     - superposition
   collapse:
     - "Landauer's principle (kT·ln2 per erased bit) · Bennett reversible computing · RFC 9562 content-uuid"
@@ -191,8 +54,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "89cbcd37-cbef-8a10-ad6e-b111275da92f"
-    contentUuid: "65db57e2-9ee3-56e3-9d03-91cded6d3fdd"
+    computationUuid: "a5570010-9bf3-87c2-89d3-e24e30002732"
+    contentUuid: "b0ed4947-3385-578c-b0f9-98bcda5c4004"
 version: 2
 ---
 # quantum/train — infinite agents, bounded device
@@ -218,4 +81,4 @@ Matter-twin: `src/quantum/train/index.ts` (`deviceCost` · `exceedsDevice` · `r
 @audit the agent-count bound is the merge/cache law (computed); the 2/3 is the rodin ratio, marked symbolic
 @standard Landauer's principle (kT·ln2 per erased bit) · Bennett reversible computing · RFC 9562 content-uuid
 
-<sub>content-uuid `65db57e2-9ee3-56e3-9d03-91cded6d3fdd` · account `quantum/train` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `b0ed4947-3385-578c-b0f9-98bcda5c4004` · account `quantum/train` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

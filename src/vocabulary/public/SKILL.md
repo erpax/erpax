@@ -1,122 +1,35 @@
 ---
 name: public
 description: "Use when reasoning about public as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/public
-coordinate: public · 4/weave · 2023c843
-contentUuid: "53244ef6-f37a-5701-a048-65ccde030d06"
-diamondUuid: "993ada3c-5bc2-833b-9a84-e861c2ebfd2e"
-uuid: "2023c843-ef75-8118-a7b2-b14dae48c246"
+atomPath: "vocabulary/public"
+coordinate: "vocabulary/public · 4/weave · 5c585e8f"
+contentUuid: "3ed0837d-c8a7-5a38-8d8c-ba45b8503c0d"
+diamondUuid: "3e98671c-7bf5-86f2-81e5-0f9d738d6e4a"
+uuid: "5c585e8f-8941-89c0-9668-5dfdbdeda412"
 horo: 4
-bonds:
-  in:
-    - access
-    - article
-    - ask
-    - closures
-    - collapse
-    - diamond
-    - info
-    - law
-    - merge
-    - news
-    - pool
-    - pwa
-    - sti
-    - swimming
-    - toilet
-    - transport
-  out:
-    - access
-    - article
-    - ask
-    - closures
-    - collapse
-    - diamond
-    - info
-    - law
-    - merge
-    - news
-    - pool
-    - pwa
-    - sti
-    - swimming
-    - toilet
-    - transport
 typography:
-  partition: public
-  bondDegree: 57
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 61
 standards:
   - "schema.org — the type vocabulary, collided to single words"
-bindings:
-  - assets/ASSETS
-neighbors:
-  wikilink:
-    - access
-    - article
-    - ask
-    - closures
-    - collapse
-    - info
-    - law
-    - merge
-    - news
-    - pool
-    - sti
-    - swimming
-    - toilet
-    - transport
-  matrix:
-    - access
-    - article
-    - ask
-    - closures
-    - collapse
-    - diamond
-    - info
-    - law
-    - merge
-    - news
-    - pool
-    - pwa
-    - sti
-    - swimming
-    - toilet
-    - transport
-  backlinks:
-    - access
-    - article
-    - ask
-    - closures
-    - collapse
-    - diamond
-    - info
-    - law
-    - merge
-    - news
-    - pool
-    - pwa
-    - sti
-    - swimming
-    - toilet
-    - transport
+bindings: []
 signatures:
-  computationUuid: "e400abde-bfeb-87aa-a21c-df6bed42dda4"
+  computationUuid: "5f71b19c-b04b-821b-9a46-1b2294513bc7"
   stages:
     - stage: path
-      stageUuid: "205672f0-e997-8039-81da-2b624bbd997d"
+      stageUuid: "f77a11de-e5e3-8568-8c3f-a4f80cfaff67"
     - stage: trinity
-      stageUuid: "0e087d1b-6ff2-8e06-a450-2c15180a0320"
+      stageUuid: "39861f3a-0ae3-8301-9b56-86a39e6ed93b"
     - stage: boundary
-      stageUuid: "278aebc7-3c78-8655-a10a-237eb753fef0"
+      stageUuid: "5492005e-ce56-8055-8361-9484f1f09dda"
     - stage: links
-      stageUuid: "557cafcd-8ac7-86ba-bcf6-1a2659b429df"
+      stageUuid: "efb16b7d-d2d6-81bc-ab40-3d9a757e0b81"
     - stage: horo
-      stageUuid: "c0d5afd5-49c7-86f2-9abc-d03e36d51890"
+      stageUuid: "0e5b291f-d3e8-8033-9e2a-f13ce75c8d06"
     - stage: seal
-      stageUuid: "bc9c475b-a165-8179-8590-b7e43494b329"
+      stageUuid: "f1e1e077-a63d-84e2-985e-e83b457057d1"
     - stage: uuid
-      stageUuid: "d0fc3555-cd19-85fc-891e-5a4f217b3c3a"
+      stageUuid: "eb15730c-2f1f-8b30-8dc3-22efe3379d15"
 version: 2
 ---
 # public

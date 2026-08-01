@@ -1,68 +1,35 @@
 ---
 name: after
 description: "Use when reasoning about after as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/after
-coordinate: after · 1/base · a395bc2a
-contentUuid: "acfb6858-c3e5-589c-b646-1b827ae5840f"
-diamondUuid: "d65ac170-a261-82e2-a53d-e928053f43e1"
-uuid: "a395bc2a-1e3f-867d-bf78-a158e41a0ede"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - media
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - media
-    - merge
-    - sti
+atomPath: "vocabulary/after"
+coordinate: "vocabulary/after · 5/round · 8308bbd7"
+contentUuid: "3967d226-5aad-5570-b73d-2b9802efe79e"
+diamondUuid: "6e3cd8a2-9eeb-8cd8-b5f6-dad3109eb6f2"
+uuid: "8308bbd7-a0cd-8ee0-b670-62b6dffb5dac"
+horo: 5
 typography:
-  partition: after
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - media
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - media
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - media
-    - merge
-    - sti
 signatures:
-  computationUuid: "82b406bd-06a9-814d-b0e4-388fc3c79f41"
+  computationUuid: "6dc37331-fef1-88e1-bc69-1433dcef36a6"
   stages:
     - stage: path
-      stageUuid: "83a711b5-b12c-84d8-9287-3a63e29cd930"
+      stageUuid: "e3755286-12bf-8328-8772-6f6b53e7075f"
     - stage: trinity
-      stageUuid: "e9a5565d-c6f5-8d0d-b231-a04a9c9acb0c"
+      stageUuid: "e4668daf-acba-82a0-9327-750b5b1c113f"
     - stage: boundary
-      stageUuid: "09dc8577-1e11-8d64-a51d-5cc366cf7412"
+      stageUuid: "f21a4797-edc6-8b06-a022-0adec2c99c0f"
     - stage: links
-      stageUuid: "5fccd024-b801-81f9-8db9-432316d48973"
+      stageUuid: "c8b21bec-ac80-82e8-a204-5585ede30c8b"
     - stage: horo
-      stageUuid: "881bf4f3-0778-8afd-8bec-f3c28cca142f"
+      stageUuid: "54b8bc87-8919-8a94-8683-28e16b683781"
     - stage: seal
-      stageUuid: "bc760e17-2d5f-894f-8310-ac146ee542a4"
+      stageUuid: "57d32a43-d5b1-8bb5-b89a-435475ad7ae9"
     - stage: uuid
-      stageUuid: "8a533a75-fc68-8e54-a007-9f49e7a90029"
+      stageUuid: "054766a0-89f0-8f9e-bee6-62eb6fab9dd6"
 version: 2
 ---
 # after

@@ -1,73 +1,35 @@
 ---
 name: meets
 description: "Use when reasoning about meets as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/meets
-coordinate: meets · 2/share · c856fa01
-contentUuid: "3b15e58f-2b51-529e-81d0-485aa7a1f35d"
-diamondUuid: "0c364130-8787-8b2c-9989-1d1c7fcfb9f4"
-uuid: "c856fa01-bd4d-8974-ab1c-f09f3c7bdbb1"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - emission
-    - law
-    - merge
-    - standard
-    - sti
-  out:
-    - collapse
-    - emission
-    - law
-    - merge
-    - standard
-    - sti
+atomPath: "vocabulary/meets"
+coordinate: "vocabulary/meets · 7/descent · 675610ec"
+contentUuid: "788a4355-2ed9-51e0-b1b3-87e4ad3c0e39"
+diamondUuid: "344e818c-63dc-8d70-8fb9-d265dfd93c02"
+uuid: "675610ec-c7bf-859c-8ee4-4a789d9f26a8"
+horo: 7
 typography:
-  partition: meets
+  partition: vocabulary
   bondDegree: 18
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - emission
-    - law
-    - merge
-    - standard
-    - sti
-  matrix:
-    - collapse
-    - emission
-    - law
-    - merge
-    - standard
-    - sti
-  backlinks:
-    - collapse
-    - emission
-    - law
-    - merge
-    - standard
-    - sti
 signatures:
-  computationUuid: "66347f67-2c2b-89e7-8377-7e14f6ead5bb"
+  computationUuid: "0e078822-b9bc-8daf-936b-c23fd3537c9b"
   stages:
     - stage: path
-      stageUuid: "d22dd14c-a746-8d25-98ee-3eda6c1ad754"
+      stageUuid: "ada75b38-55cc-8f4e-b1e9-3be734593676"
     - stage: trinity
-      stageUuid: "576397b3-7f5e-8f7e-af49-1d8da279aeae"
+      stageUuid: "9cf3de68-7709-80d5-af7d-a45378059d12"
     - stage: boundary
-      stageUuid: "3b567858-5a53-892b-bc7f-a9e6fdba27f5"
+      stageUuid: "c88ada0e-34cd-88fd-831f-4c7071b5ba66"
     - stage: links
-      stageUuid: "aed2cc57-6ae8-86f7-ae8e-ebddd13c6367"
+      stageUuid: "e5545e2d-7989-8778-8281-b493a3465caa"
     - stage: horo
-      stageUuid: "7fd534d4-589d-8e72-81cd-00b61e2060d3"
+      stageUuid: "b2ef71c2-dee3-88a2-8278-3defd3295853"
     - stage: seal
-      stageUuid: "5b014e43-ff0d-80a9-a35f-4f666e894eb0"
+      stageUuid: "ddee1f72-be57-8ce8-9f0a-08b19c1c6bbe"
     - stage: uuid
-      stageUuid: "4716e771-5dd4-848f-9849-deeb2d735101"
+      stageUuid: "e5659ce4-adaf-8b46-86a0-c4ad0da864bb"
 version: 2
 ---
 # meets

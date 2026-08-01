@@ -2,25 +2,15 @@
 name: export
 description: "Use when reasoning about export — **Law — law: barrel re-export at ; trinity sealed for import purity.**"
 atomPath: export
-coordinate: "export · 7/descent · 9e6aff02"
-contentUuid: "fb1853d2-8bfb-5f87-a9c3-19a4c46d911a"
-diamondUuid: "cc820208-8204-8947-bd16-39d2e6560c05"
-uuid: "9e6aff02-de1e-892a-9180-f7d967991db8"
-horo: 7
-bonds:
-  in:
-    - law
-  out:
-    - law
+coordinate: "export · 5/round · 8036750e"
+contentUuid: "5197b6f0-970b-5828-bf52-906d339bbafb"
+diamondUuid: "ed5cbcc5-287a-8657-a34a-9ddbd6666511"
+uuid: "8036750e-555e-8b1f-b245-085ed5ce54e1"
+horo: 5
 typography:
   partition: export
   bondDegree: 12
-  neighbors:
-    - "quantum/boundary"
 standards:
-  - "EN-16931"
-  - "EU-2011/83"
-  - "EU-2014/55"
   - "EU-537/2014"
   - "EU-910/2014"
   - "EU-VAT-Implementing-Reg-282/2011"
@@ -31,15 +21,8 @@ standards:
   - "SAF-T"
   - "UBL-2.1"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-  matrix:
-    - law
-  backlinks:
-    - law
 signatures:
-  computationUuid: "e6a18d0c-cbfb-844c-a900-aff0df6655db"
+  computationUuid: "b10bbeca-961c-808d-90f4-7bf133a9212e"
   stages:
     - stage: path
       stageUuid: "176593bd-77ff-86f8-9041-dde4a8769734"
@@ -50,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "dc5fc203-e4a0-8384-9e5d-ab7773cdfbd0"
     - stage: horo
-      stageUuid: "fa29f82c-47ae-8fd3-a158-3f58707cfebd"
+      stageUuid: "acc65d0d-a503-895c-945c-d17d6e95cafb"
     - stage: seal
       stageUuid: "c58ed18d-8ff1-8e88-9581-9ad72050ca56"
     - stage: uuid
-      stageUuid: "4e718740-fa00-86f6-8ae4-ee28ecd984ec"
+      stageUuid: "111a49b5-dda4-8ae3-969f-12fc08d886ff"
 version: 2
 ---
 # export

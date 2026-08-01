@@ -1,68 +1,35 @@
 ---
 name: readonly
 description: "Use when reasoning about readonly — A schema.org component word, collided out of schema.org compounds — fused from readonlyValue (sti · collapse · merge)."
-atomPath: vocabulary/readonly
-coordinate: readonly · 7/descent · 2be78081
-contentUuid: "38872b76-cf07-5f6d-989e-69048839334c"
-diamondUuid: "bde45cac-6b0a-8dc9-9e2b-679a1fd56ef0"
-uuid: "2be78081-9107-8189-8f0d-ec136bb50bd9"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - value
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - value
+atomPath: "vocabulary/readonly"
+coordinate: "vocabulary/readonly · 2/share · 7d9cd822"
+contentUuid: "6c56a768-59af-5b0e-8b34-0089b6a4b7eb"
+diamondUuid: "2f4973df-920c-8ea5-985a-2981b0c1489f"
+uuid: "7d9cd822-e264-8975-a8fa-49939d3910fe"
+horo: 2
 typography:
-  partition: readonly
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - value
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - value
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - value
 signatures:
-  computationUuid: "5ed18d10-ac19-806b-a575-258348d3eb01"
+  computationUuid: "43662c5b-c640-8be1-99db-896509196a5b"
   stages:
     - stage: path
-      stageUuid: "9d911fe4-4e6f-8382-8f59-06757385f7ad"
+      stageUuid: "773a4649-dbd0-87e9-a596-8d1f38d7a43d"
     - stage: trinity
-      stageUuid: "26262545-6a2c-88b0-b980-983b1fa7715a"
+      stageUuid: "f8e09072-5f75-8110-8242-be2503eae780"
     - stage: boundary
-      stageUuid: "77a1954a-832f-805a-949a-b73552df898e"
+      stageUuid: "dc0334ee-acd5-88d5-952f-761bea8a1d48"
     - stage: links
-      stageUuid: "bee7ff2d-e708-8d0f-ae62-dc4e7527affe"
+      stageUuid: "9bb629d4-742e-8930-81f5-a2241b4a8b60"
     - stage: horo
-      stageUuid: "9dab5cab-9eed-8a12-a6bc-1acfc59c4149"
+      stageUuid: "ef36aaae-6c31-8e94-ad55-5b06152fd003"
     - stage: seal
-      stageUuid: "3cc0bcb7-d1ac-8042-af7b-a2eae9825e97"
+      stageUuid: "87f316ff-7f58-86ca-bfb9-6fa59a01472f"
     - stage: uuid
-      stageUuid: "68fa8ae6-3872-8ef8-ae8a-09cdfec94051"
+      stageUuid: "e372f405-9fb9-88e3-82e9-192a478ea34e"
 version: 2
 ---
 # readonly

@@ -1,67 +1,34 @@
 ---
 name: request
 description: Use when modelling one request — the singular model of the requests collection (the plural store); a submitted ask for an action or resource.
-atomPath: vocabulary/request
-coordinate: request · 1/base · f2eb4d44
-contentUuid: "4be12b71-6a0c-5938-873c-02b9939c7305"
-diamondUuid: "d8b3b3e9-9686-88c9-8a41-73c397e68ca1"
-uuid: "f2eb4d44-81eb-8ebb-a799-ee1067056700"
-horo: 1
-bonds:
-  in:
-    - balance
-    - law
-    - request
-    - requests
-    - workflow
-  out:
-    - balance
-    - law
-    - request
-    - requests
-    - workflow
+atomPath: "vocabulary/request"
+coordinate: "vocabulary/request · 5/round · f11f0b76"
+contentUuid: "37fec439-b69a-5b3e-91ea-0094dc238672"
+diamondUuid: "3100400f-33c6-82db-b5a3-85af508fa5fd"
+uuid: "f11f0b76-54ff-8505-84af-ef16fce0824d"
+horo: 5
 typography:
-  partition: request
-  bondDegree: 32
-  neighbors:
-    - agent
+  partition: vocabulary
+  bondDegree: 24
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - law
-    - requests
-    - workflow
-  matrix:
-    - balance
-    - law
-    - request
-    - requests
-    - workflow
-  backlinks:
-    - balance
-    - law
-    - request
-    - requests
-    - workflow
 signatures:
-  computationUuid: "0c07218a-a479-8e5b-91a3-b474cef5fcdd"
+  computationUuid: "a300fce1-e018-8a62-9703-d93d09a76323"
   stages:
     - stage: path
-      stageUuid: "1ee5a515-476b-84b7-b1e7-9ea7f5e9de3a"
+      stageUuid: "793b9a88-e7ac-8386-b23c-e905a0d4708c"
     - stage: trinity
-      stageUuid: "2dfa6fc7-7279-83bb-b32f-329a0e54292d"
+      stageUuid: "cc848789-3b15-8265-b1a2-339cc4574c0a"
     - stage: boundary
-      stageUuid: "357be5a0-8f06-8ab6-87af-2f08b331d313"
+      stageUuid: "5289f2be-e7dc-8a4a-9e20-9ad065a17cfa"
     - stage: links
-      stageUuid: "c3de9dba-eb63-868c-9f60-e0c92f26046a"
+      stageUuid: "84a4694a-324f-8bcc-bf6e-8c79dd336837"
     - stage: horo
-      stageUuid: "0a703474-0331-84a2-9fc4-2a5728afea0d"
+      stageUuid: "29176d33-7e11-8d08-b7a1-e88acc26b8ef"
     - stage: seal
-      stageUuid: "2d89b565-2c16-8d41-837d-3547d85a9487"
+      stageUuid: "e6a22f23-74c1-8c76-84bf-8946d932a762"
     - stage: uuid
-      stageUuid: "03b029c1-2909-84a1-81b7-8db76a6002d0"
+      stageUuid: "56f55640-36df-8214-928b-46513ebacc7f"
 version: 2
 ---
 # request — the model of one [[requests]] row

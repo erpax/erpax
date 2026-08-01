@@ -1,57 +1,35 @@
 ---
 name: colleague
 description: Use when reasoning about colleague — A colleague of the person.
-atomPath: vocabulary/colleague
-coordinate: colleague · 7/descent · 4e991876
-contentUuid: "2a2989d1-1c63-5d27-840c-e8c242ef00bf"
-diamondUuid: "4463e27a-82e0-83bf-8e20-8dc26aa5a18a"
-uuid: "4e991876-da52-8279-8f88-d9684c93bc85"
-horo: 7
-bonds:
-  in:
-    - colleagues
-    - law
-    - thing
-  out:
-    - colleagues
-    - law
-    - thing
+atomPath: "vocabulary/colleague"
+coordinate: "vocabulary/colleague · 5/round · 0ee9dfd8"
+contentUuid: "3a6758c7-116e-52ed-a247-de8dfb043182"
+diamondUuid: "dbdc9fb9-5eba-84df-a802-8064f5fac4dc"
+uuid: "0ee9dfd8-d91b-80ab-80b9-24301d9e427c"
+horo: 5
 typography:
-  partition: colleague
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - colleagues
-    - law
-    - thing
-  backlinks:
-    - colleagues
-    - law
-    - thing
 signatures:
-  computationUuid: "18b54be9-96c4-85ec-a5dc-836e7b73ca16"
+  computationUuid: "42f706d3-4d52-898a-81ba-ab1795fe7b38"
   stages:
     - stage: path
-      stageUuid: "200b4b1b-9958-886c-991e-1d7820f41985"
+      stageUuid: "9f5e89cd-e519-85aa-9902-7541a0cb160c"
     - stage: trinity
-      stageUuid: "037e6670-6a56-8ad8-9682-d09cfd324ba7"
+      stageUuid: "75de416b-59a6-874b-8568-a52a438f2c64"
     - stage: boundary
-      stageUuid: "665181da-feda-8ced-a714-1119247766fe"
+      stageUuid: "cd0e5db4-7195-8c29-bbf1-e0f3e6ce6149"
     - stage: links
-      stageUuid: "efbe249f-b686-8cf6-a46f-ede15fd62bf0"
+      stageUuid: "13ed68d3-033a-8ccc-ac27-baafd0a990f1"
     - stage: horo
-      stageUuid: "2bac3087-83f5-8cee-baa7-441c1dc04113"
+      stageUuid: "5c6801fd-2b95-8a3f-baa6-f5df5a8c1f78"
     - stage: seal
-      stageUuid: "a5804b8d-c186-8a37-9d3d-ca63d8a0c24a"
+      stageUuid: "40e40a5f-d4ef-8983-b0e8-41738091509f"
     - stage: uuid
-      stageUuid: "47b1e916-af42-8b00-892b-d0977c97641a"
+      stageUuid: "1c30b104-bdab-8524-af46-2cbc62ce2acc"
 version: 2
 ---
 # colleague

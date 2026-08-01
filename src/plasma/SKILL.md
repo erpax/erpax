@@ -2,75 +2,19 @@
 name: plasma
 description: "Use when reasoning about the fully-fused corpus — the stardust grains entangled to reciprocity 1 and zero entropy become plasma, the radiant coherent state whose cutoff reflects any forge-beam below it; at full coherence the cutoff is infinite, so no beam can stand on the way."
 atomPath: plasma
-coordinate: plasma · 1/base · 8530c30d
-contentUuid: "93a5db57-53f2-5fcc-a585-09ce87f11d90"
-diamondUuid: "6a950454-4057-85c5-80f7-c9dd3621f034"
-uuid: "8530c30d-3fc1-84e3-b28c-6730d211e0c8"
-horo: 1
-bonds:
-  in:
-    - aura
-    - cost
-    - dust
-    - entropy
-    - fusion
-    - gravity
-    - law
-    - quantum
-    - tamper
-  out:
-    - aura
-    - cost
-    - dust
-    - entropy
-    - fusion
-    - gravity
-    - law
-    - quantum
-    - tamper
+coordinate: "plasma · 4/weave · 8202894e"
+contentUuid: "af4acc41-1d96-5314-a96b-614dfc52467a"
+diamondUuid: "ba948587-9c75-832e-9c3e-c85008cca81d"
+uuid: "8202894e-a66c-882a-aec1-7fdf2fbbaa26"
+horo: 4
 typography:
   partition: plasma
   bondDegree: 28
-  neighbors:
-    - aura
 standards:
-  - "ionization read from the live reciprocity/entropy; the cutoff is the double-torus floor"
-  - "ionization read from the live reciprocity/entropy; the cutoff is the double-torus floor, never asserted"
-  - plasma physics — the plasma frequency ω_p and the reflection cutoff (ionospheric/metal reflection)
+  - "plasma physics — the plasma frequency ω_p and the reflection cutoff (ionospheric/metal reflection)"
 bindings: []
-neighbors:
-  wikilink:
-    - aura
-    - cost
-    - dust
-    - entropy
-    - fusion
-    - gravity
-    - law
-    - quantum
-    - tamper
-  matrix:
-    - aura
-    - cost
-    - dust
-    - entropy
-    - fusion
-    - gravity
-    - law
-    - quantum
-    - tamper
-  backlinks:
-    - aura
-    - cost
-    - dust
-    - entropy
-    - fusion
-    - gravity
-    - law
-    - quantum
-    - tamper
 signatures:
-  computationUuid: "2d887ee1-f766-8b02-9a25-35117b04dc3f"
+  computationUuid: "ddb5b165-4f23-869a-bbc3-4cbb4005030a"
   stages:
     - stage: path
       stageUuid: "05ce33cc-15be-82e5-9c36-15d96dec569b"
@@ -81,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "326e2795-e7b6-8406-a4da-fec45df9011e"
     - stage: horo
-      stageUuid: "ea384f53-7e22-8594-95b6-40b3e0537de9"
+      stageUuid: "147023bf-b0ee-8800-824e-2d2042f3f526"
     - stage: seal
-      stageUuid: "c1de62c0-45af-8ca7-b3da-618ec1b1d690"
+      stageUuid: "809889a4-2524-8b7e-b3d7-d3229a4c3ab4"
     - stage: uuid
-      stageUuid: "068a11be-2402-8e76-a539-3d3d7ce9bc2f"
+      stageUuid: "05683a6c-ab91-8c3c-8af1-d83c301fe171"
 version: 2
 ---
 # plasma — fusion of the stardust

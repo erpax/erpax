@@ -1,63 +1,35 @@
 ---
 name: msrp
 description: "Use when reasoning about msrp as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/msrp
-coordinate: msrp · 2/share · e739077b
-contentUuid: "76a01049-2574-5045-acc8-a54fc0853862"
-diamondUuid: "c0b53caa-0613-839f-8a70-8bffddb17112"
-uuid: "e739077b-d3c6-8df7-ac7d-b4f59454af45"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/msrp"
+coordinate: "vocabulary/msrp · 8/crest · 78a93acd"
+contentUuid: "c20937b4-fac7-5500-8da5-fdffcf854bfd"
+diamondUuid: "67ca83ee-c85e-878c-a438-e78fc69961b5"
+uuid: "78a93acd-a753-83a5-a968-68e213271751"
+horo: 8
 typography:
-  partition: msrp
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "32d370d9-8a7d-8323-909c-097f4580e066"
+  computationUuid: "73e96e5c-43a0-8ef5-bda1-63167b2199b0"
   stages:
     - stage: path
-      stageUuid: "49694f03-e7f8-86cf-81c0-2773fae847af"
+      stageUuid: "8b6add41-7af4-875e-a1ab-303d26177738"
     - stage: trinity
-      stageUuid: "359af9e5-2a81-83f4-8335-e129895362db"
+      stageUuid: "54bc09a5-e22e-857f-adaf-d122f9bb6513"
     - stage: boundary
-      stageUuid: "cb005f1b-bc0a-8ae9-9c24-ce1f97a24cba"
+      stageUuid: "652d949e-0438-80a7-87b3-40ebc555edac"
     - stage: links
-      stageUuid: "3b9c5231-a7dd-8316-bc3b-140fb259a665"
+      stageUuid: "7bcdbe31-4973-85c7-9280-cfdc5760a772"
     - stage: horo
-      stageUuid: "2fced433-f2fe-82e7-a6d8-b1a8552b30d4"
+      stageUuid: "c8745dd6-baef-8b85-a1d7-80dbae692bdb"
     - stage: seal
-      stageUuid: "e5c65930-8e15-863f-ab67-7467f851994c"
+      stageUuid: "f4c0193f-9ae6-8b78-b24e-6b00085908e3"
     - stage: uuid
-      stageUuid: "6ea28299-63f3-896f-b832-bf295e51c2cc"
+      stageUuid: "4b912f27-cab0-83fe-8c54-cbfd945d013e"
 version: 2
 ---
 # msrp

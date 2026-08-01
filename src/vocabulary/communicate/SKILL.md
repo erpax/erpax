@@ -1,68 +1,35 @@
 ---
 name: communicate
 description: "Use when reasoning about communicate — A schema.org component word, collided out of schema.org compounds — fused from CommunicateAction (sti · collapse · merge)."
-atomPath: vocabulary/communicate
-coordinate: communicate · 4/weave · a231969e
-contentUuid: "9792a5ce-e76c-5515-a7f8-7da8021b640b"
-diamondUuid: "0a1b93c9-5fd3-8e4d-b405-93ad8a22791e"
-uuid: "a231969e-17cc-8e68-bd7a-6ab7a0f5298e"
-horo: 4
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/communicate"
+coordinate: "vocabulary/communicate · 8/crest · 5ddb202a"
+contentUuid: "58b9ea7f-a891-5645-8d7a-50792a8f5013"
+diamondUuid: "1812ba1f-4a0a-8752-aab7-b062ec2815b4"
+uuid: "5ddb202a-e47e-8799-9882-43371ae8cf3e"
+horo: 8
 typography:
-  partition: communicate
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "662aa379-a7c6-8e2d-9406-c913912449ac"
+  computationUuid: "2234b2ab-c098-8410-968d-b8140dfc649b"
   stages:
     - stage: path
-      stageUuid: "46e33d35-6a75-8b46-824e-e6917bdb5b93"
+      stageUuid: "9a8fa74b-c8bc-8d8a-b557-1ecbc7b8df9e"
     - stage: trinity
-      stageUuid: "b4ffcaec-1b2a-82aa-b5c3-26cc22fa5bcc"
+      stageUuid: "d0579af2-81bb-8e46-8d35-867e1d76cd2f"
     - stage: boundary
-      stageUuid: "52131e45-0c0a-8099-9e99-6d5bf20971cd"
+      stageUuid: "7b2399bc-ba0e-83e9-a46a-b03ec679b2e9"
     - stage: links
-      stageUuid: "94b1b4d0-1716-8cc1-9ab4-18eed1e5e32c"
+      stageUuid: "d3537924-65d8-8e88-a19b-d6cae6ca958c"
     - stage: horo
-      stageUuid: "6a73e589-f373-85cd-b897-21ee90601ec1"
+      stageUuid: "47ccfc43-a94f-82a5-a68c-fcab902fd1ab"
     - stage: seal
-      stageUuid: "be0305a4-348a-8a47-a9b7-ab30591122ce"
+      stageUuid: "3af6585f-d478-8c3d-9506-2f0549d7232a"
     - stage: uuid
-      stageUuid: "b3082250-9f05-8b8e-9c68-53c038efda77"
+      stageUuid: "a1b9e3fd-50bd-8c7f-b74c-b71c977dc2ae"
 version: 2
 ---
 # communicate

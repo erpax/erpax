@@ -1,74 +1,35 @@
 ---
 name: accessory
 description: "Use when reasoning about accessory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/accessory
-coordinate: accessory · 2/share · 97f08b73
-contentUuid: "248b7ce2-474b-5714-a961-2e9cf44abdac"
-diamondUuid: "c5f7e6cc-d2c9-85d2-a915-6c90690da244"
-uuid: "97f08b73-fd11-8811-9dc8-a0f42de4ccc5"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - part
-    - spare
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - part
-    - spare
-    - sti
+atomPath: "vocabulary/accessory"
+coordinate: "vocabulary/accessory · 8/crest · fec996aa"
+contentUuid: "4776596f-9656-541b-800b-055aa50e0a7d"
+diamondUuid: "5213b281-8145-8e0a-8c90-831f254f2f55"
+uuid: "fec996aa-498d-8393-ba7b-53337795ed1a"
+horo: 8
 typography:
-  partition: accessory
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
-  - schema.org
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - part
-    - spare
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - part
-    - spare
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - part
-    - spare
-    - sti
 signatures:
-  computationUuid: "e3a53879-c476-80bb-baa4-cecc0cfea9c1"
+  computationUuid: "ff650193-9c5b-8878-b95e-c6a800d20c99"
   stages:
     - stage: path
-      stageUuid: "8fce6777-366a-8054-9d59-4271a7ccc16d"
+      stageUuid: "a925899e-37e9-8cc6-9fbd-34d60d1f1990"
     - stage: trinity
-      stageUuid: "f904f4bb-64d8-8b09-80ef-50406a2647be"
+      stageUuid: "2fc7f291-490a-8c76-8e91-25c123e41107"
     - stage: boundary
-      stageUuid: "65102ed4-3ecd-8ea2-86f7-49f4b7724c00"
+      stageUuid: "759a401a-5839-8e33-ad1b-9f6c9901ef05"
     - stage: links
-      stageUuid: "427510ff-2e80-8397-9f24-2b3668b730c0"
+      stageUuid: "63dfbee9-2f04-8a72-9159-0c3b5656855d"
     - stage: horo
-      stageUuid: "08ab7348-7683-8b57-8a7a-cfdd4a5494da"
+      stageUuid: "53671b13-5dee-8e74-82d7-aab51c7a6388"
     - stage: seal
-      stageUuid: "f38f2e32-ea64-842f-95cd-1cfaf5d47818"
+      stageUuid: "7e5628d9-e97a-8c4f-bba2-23651274218f"
     - stage: uuid
-      stageUuid: "36579ce0-f203-8794-8998-295d5b0796ae"
+      stageUuid: "7779d725-139e-8608-bdc7-7f5316e65559"
 version: 2
 ---
 # accessory

@@ -1,58 +1,35 @@
 ---
 name: brewery
 description: Use when reasoning about brewery — Brewery.
-atomPath: vocabulary/brewery
-coordinate: brewery · 1/base · 9089d843
-contentUuid: "1f5114db-659a-585f-b6e5-3cb12381386e"
-diamondUuid: "0d26605f-6619-8c10-aab9-eb4cb212966e"
-uuid: "9089d843-fa42-8932-a2ef-b71e71db6a1d"
-horo: 1
-bonds:
-  in:
-    - law
-    - place
-    - thing
-  out:
-    - law
-    - place
-    - thing
+atomPath: "vocabulary/brewery"
+coordinate: "vocabulary/brewery · 5/round · e494a6a6"
+contentUuid: "ff6a912a-89e7-50a6-9569-d9806612c846"
+diamondUuid: "8a8562bd-8573-80a3-87b7-30643b19b580"
+uuid: "e494a6a6-7198-86d9-a798-8ebec4b1b928"
+horo: 5
 typography:
-  partition: brewery
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - place
-    - thing
-  matrix:
-    - law
-    - place
-    - thing
-  backlinks:
-    - law
-    - place
-    - thing
 signatures:
-  computationUuid: "605a22e0-fb15-87a1-b7ae-efce577e160f"
+  computationUuid: "2bd64a10-bdb5-84bc-8ee8-38200e3063c9"
   stages:
     - stage: path
-      stageUuid: "7ee5b2dd-3ad1-8bf9-8e2f-2fb2929c14a2"
+      stageUuid: "a6d8bc48-f39d-829e-97f2-1e087729e6db"
     - stage: trinity
-      stageUuid: "93534154-1eaa-832a-918a-b0ac918f3d5f"
+      stageUuid: "d2fb3ed3-f1ee-8fe8-a607-3deee7890e05"
     - stage: boundary
-      stageUuid: "4ff54e70-57b4-8657-ada8-be2eb2f757d0"
+      stageUuid: "ad888227-0ec0-8f8b-9b37-d6f9d53be70c"
     - stage: links
-      stageUuid: "8138ea72-79da-800d-9f29-da72d837bd93"
+      stageUuid: "51529da6-520b-82d6-b71a-028c28eefeb3"
     - stage: horo
-      stageUuid: "276c8752-f0bf-8670-824a-61f48e68fea9"
+      stageUuid: "19c7c166-1007-8718-b005-a0cfc32070b1"
     - stage: seal
-      stageUuid: "5bce7c45-3a9b-8e9f-87b6-f7f3d726fa04"
+      stageUuid: "bc3a9295-cbf2-8a9c-82de-f92718e6bff6"
     - stage: uuid
-      stageUuid: "0301f362-49b1-8862-ad19-0b8d51d752c7"
+      stageUuid: "a5e668e2-5d3a-8e62-8e9f-001cc52e5adc"
 version: 2
 ---
 # brewery

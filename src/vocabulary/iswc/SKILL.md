@@ -1,68 +1,35 @@
 ---
 name: iswc
 description: "Use when reasoning about iswc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/iswc
-coordinate: iswc · 7/descent · eeb621de
-contentUuid: "cf4a2e93-6978-568f-ab3b-e549d1b6a69f"
-diamondUuid: "b4eeae1d-5127-8722-9713-c59dc0cf55bb"
-uuid: "eeb621de-fb7f-8d9a-9e3e-f05a6b0d8666"
-horo: 7
-bonds:
-  in:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/iswc"
+coordinate: "vocabulary/iswc · 8/crest · adf59595"
+contentUuid: "5767f2a2-894f-5223-90f9-942c247ce5a8"
+diamondUuid: "dec37975-5d44-8cb9-9982-54e891981d4d"
+uuid: "adf59595-fad7-8aa4-9724-7e4c321dce4e"
+horo: 8
 typography:
-  partition: iswc
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "f067a4df-1d46-82d3-bb04-6127baa791ed"
+  computationUuid: "59b0716d-8479-8dd3-8837-ff2ac324fdf7"
   stages:
     - stage: path
-      stageUuid: "4fcecd48-398a-8502-85b7-6599da9de162"
+      stageUuid: "8757510d-0148-8854-9a99-ee91ac8205f3"
     - stage: trinity
-      stageUuid: "1c654e27-9d2f-8c91-9da9-95778e627466"
+      stageUuid: "c5b2bc04-8cbd-87ea-b5cd-0bdce8fddbed"
     - stage: boundary
-      stageUuid: "bcb4cc7c-eb53-8179-8447-14a555d308eb"
+      stageUuid: "6a5ce512-c791-8ffe-bb84-6f4d6f584db3"
     - stage: links
-      stageUuid: "255a1a5b-cb33-8d9e-a1a9-7f197a0da7b3"
+      stageUuid: "f9d0ae40-e88a-8786-92f6-8d1aed96cc38"
     - stage: horo
-      stageUuid: "cc4d6a0e-2deb-8d51-8ab4-3d19df137dec"
+      stageUuid: "7d6fc99c-1d5e-8cc1-af1b-0bf8cb5f3832"
     - stage: seal
-      stageUuid: "e7824570-6fdd-88fd-b2dc-f479bb6cce4f"
+      stageUuid: "93bb99db-62ea-8054-8f63-6d0ddfdb23e5"
     - stage: uuid
-      stageUuid: "b31e3c3c-73fc-8da6-9eec-f85f60819bf4"
+      stageUuid: "d149927d-f0ec-87d1-94b7-59eb89585afd"
 version: 2
 ---
 # iswc

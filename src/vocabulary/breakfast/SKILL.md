@@ -1,68 +1,35 @@
 ---
 name: breakfast
 description: "Use when reasoning about breakfast as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/breakfast
-coordinate: breakfast · 8/crest · f0bda643
-contentUuid: "fb751c8d-e4e4-5d2e-8635-e818a7a44ee6"
-diamondUuid: "af79816b-0690-8b61-bb21-0a42274348e7"
-uuid: "f0bda643-ac01-83b5-8785-00a04425bd2a"
-horo: 8
-bonds:
-  in:
-    - bed
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - bed
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/breakfast"
+coordinate: "vocabulary/breakfast · 5/round · d44062b4"
+contentUuid: "1efe6e02-3ad4-587b-bace-502535fbfb2f"
+diamondUuid: "9672a8a8-35a3-8c7f-b85a-f9428a424378"
+uuid: "d44062b4-df14-850a-a37b-35deff8a6a75"
+horo: 5
 typography:
-  partition: breakfast
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - bed
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - bed
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - bed
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "57fbb2dd-ef9c-80b4-951f-0a9401a90f67"
+  computationUuid: "5644551c-51cf-8ce9-85d1-4daad3e04c26"
   stages:
     - stage: path
-      stageUuid: "03974cb9-d4fa-8f3c-9374-b67004052199"
+      stageUuid: "ad69de83-1ead-809b-9a86-1d6f23000983"
     - stage: trinity
-      stageUuid: "76748766-505c-8126-b1ed-75bb4886a1c1"
+      stageUuid: "ccac641c-bac6-88d9-8167-6d4b6562cd1c"
     - stage: boundary
-      stageUuid: "b6c0b8db-2b01-8aef-8d22-925526ea7c83"
+      stageUuid: "568b3594-c09b-8f4e-ba0b-2c538bf9792e"
     - stage: links
-      stageUuid: "ee39367d-b38e-8d41-9ce1-6b8e097d7b1f"
+      stageUuid: "9d17bb45-401b-8c73-9f0d-25265d5bd60c"
     - stage: horo
-      stageUuid: "064f79e3-2a29-87d4-975e-2c0813596f5b"
+      stageUuid: "46c0e2c5-490e-8e9c-9001-75c238ec8209"
     - stage: seal
-      stageUuid: "6cd7b23b-e97c-8e5a-80eb-692c16f6347d"
+      stageUuid: "7d73cc49-8331-84ff-855d-8180497c0dcc"
     - stage: uuid
-      stageUuid: "737c0a4f-92b9-8c41-8f39-80ed6c944e21"
+      stageUuid: "6465e24c-14b9-84a3-890b-f7f5d507aae0"
 version: 2
 ---
 # breakfast

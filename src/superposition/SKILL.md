@@ -2,112 +2,33 @@
 name: superposition
 description: "Use when reasoning about superposition — the state before measurement is a weighted combination of all seven horo eigenstates at once (|ψ⟩ = Σ cₙ|n⟩), with Σ|cₙ|² = 1 (the Born rule), which is double-entry balance closing at unity. It is accept-always then normalise-into-harmony; measurement is the collapse that picks one eigenstate with probability |cₙ|² — the leap to a definite level. A basis state collapses to itself."
 atomPath: superposition
-coordinate: superposition · 8/crest · af10aaba
-contentUuid: "74bc7fb1-5e58-51ec-99d0-de0155558d77"
-diamondUuid: "5077fcd7-721d-8a51-bda3-dc2f9100e1cf"
-uuid: "af10aaba-60c8-8cad-9eec-32774d461da6"
+coordinate: "superposition · 8/crest · 0223340a"
+contentUuid: "2793b7d3-c7e1-5936-8c6c-763c05a70eac"
+diamondUuid: "eb5d9771-58f7-813a-8294-c31b04f309c1"
+uuid: "0223340a-3f94-8302-9396-a30b560b5931"
 horo: 8
-bonds:
-  in:
-    - accept
-    - balance
-    - cloudflare
-    - collapse
-    - decoherence
-    - hamiltonian
-    - harmony
-    - horo
-    - interference
-    - law
-    - leap
-    - level
-    - quantum
-    - serverless
-    - wave
-  out:
-    - accept
-    - balance
-    - cloudflare
-    - collapse
-    - decoherence
-    - hamiltonian
-    - harmony
-    - horo
-    - interference
-    - law
-    - leap
-    - level
-    - quantum
-    - serverless
-    - wave
 typography:
   partition: superposition
-  bondDegree: 49
-  neighbors: []
-standards:
-  - "probabilities are |cₙ|² normalised to sum 1; collapse is the cumulative inverse-CDF"
+  bondDegree: 52
+standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accept
-    - balance
-    - collapse
-    - harmony
-    - horo
-    - law
-    - leap
-    - level
-    - quantum
-    - wave
-  matrix:
-    - accept
-    - balance
-    - cloudflare
-    - collapse
-    - decoherence
-    - hamiltonian
-    - harmony
-    - horo
-    - interference
-    - law
-    - leap
-    - level
-    - quantum
-    - serverless
-    - wave
-  backlinks:
-    - accept
-    - balance
-    - cloudflare
-    - collapse
-    - decoherence
-    - hamiltonian
-    - harmony
-    - horo
-    - interference
-    - law
-    - leap
-    - level
-    - quantum
-    - serverless
-    - wave
 signatures:
-  computationUuid: "4e73120f-0513-8e96-b611-53422c7fd1fd"
+  computationUuid: "3b5fe359-402f-8383-bc90-d47c751e4224"
   stages:
     - stage: path
       stageUuid: "30253034-9cfe-8652-86a6-ca2539474ec5"
     - stage: trinity
       stageUuid: "b24c7b68-bd04-8d95-8cd2-ff82141a6e24"
     - stage: boundary
-      stageUuid: "d51bf5f2-aec3-8348-becb-5baadb3ce2a9"
+      stageUuid: "77034142-f833-8d88-a053-0fd8e08e6e26"
     - stage: links
       stageUuid: "208f80f9-5b33-8c3c-a0bd-c5d1cad2e548"
     - stage: horo
-      stageUuid: "ab799adc-d7e8-80ac-ae8c-df78df9c23b0"
+      stageUuid: "721e3420-5230-8d08-9f0e-56e2d9ee177a"
     - stage: seal
-      stageUuid: "38e2c462-fe0a-8eb0-b5bc-ba0542e4379a"
+      stageUuid: "8de2a909-449d-8ea9-9a7d-1c5a18602224"
     - stage: uuid
-      stageUuid: "9a5b3c38-db41-8c05-9273-1b25671116b6"
+      stageUuid: "66ee477d-47c6-8e8a-819a-23dd7f50c5f4"
 version: 2
 ---
 # superposition — accept all states, then collapse to one

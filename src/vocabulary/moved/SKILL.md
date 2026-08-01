@@ -1,63 +1,35 @@
 ---
 name: moved
 description: "Use when reasoning about moved as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/moved
-coordinate: moved · 2/share · ef9a8a48
-contentUuid: "4b8fab41-d2fe-5868-90aa-bd13b9b6e910"
-diamondUuid: "90373241-4989-8fb8-93a2-47b5333f4dc9"
-uuid: "ef9a8a48-1a00-888e-ac52-82c428425d91"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/moved"
+coordinate: "vocabulary/moved · 4/weave · 258b94b7"
+contentUuid: "cf4f73d2-b144-5c2e-85a8-e9e82b623bcd"
+diamondUuid: "df259e70-8021-8ce1-8064-1439cf0dbd50"
+uuid: "258b94b7-2e8e-8bb8-9a86-a658323d57e6"
+horo: 4
 typography:
-  partition: moved
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "8b8340c7-4fb1-8f48-9eff-6ce366b55213"
+  computationUuid: "94b2bb26-748a-8f2e-a97f-26e901d26d0d"
   stages:
     - stage: path
-      stageUuid: "07f68b9e-c197-8348-9dd8-4904b71a5be4"
+      stageUuid: "a37920c7-b3e2-8e46-a9b8-c139bbe1d97a"
     - stage: trinity
-      stageUuid: "8fb05b11-abb2-83ab-8076-253de5de825f"
+      stageUuid: "8a69ee0f-120c-88d5-b311-eb92e5791c54"
     - stage: boundary
-      stageUuid: "292a5e7d-ecf6-84b0-ae1e-b8f0a87fcdb9"
+      stageUuid: "940120b8-9538-8bf4-8ecf-5bf9292595f9"
     - stage: links
-      stageUuid: "af8b02dc-61ed-8a05-976e-4445f6fab2e8"
+      stageUuid: "d63deb92-fdbf-8735-b86d-b250a4b671ea"
     - stage: horo
-      stageUuid: "ef0b37d1-e1d8-8431-b022-5201168dad8b"
+      stageUuid: "8da00a9e-159e-8c20-969f-bcddebd6eaa6"
     - stage: seal
-      stageUuid: "90467f29-b559-821f-85d7-9e05368bde48"
+      stageUuid: "065685f3-c3db-8106-81be-cb77bdc1afd4"
     - stage: uuid
-      stageUuid: "38068424-7265-813e-8980-872d25c7d8ae"
+      stageUuid: "aabbef49-19eb-86fa-b023-4594dbbf8b04"
 version: 2
 ---
 # moved

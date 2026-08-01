@@ -2,217 +2,19 @@
 name: specification
 description: "Use when reasoning about specification as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: specification
-coordinate: specification · 7/descent · f8a1379c
-contentUuid: "11970fe6-a93a-512a-a407-795b2a39b8ca"
-diamondUuid: "9f242127-0182-8d1b-8277-105cc59ef1ec"
-uuid: "f8a1379c-a9f6-8771-8c4e-8801d001219e"
+coordinate: "specification · 7/descent · c372bfbe"
+contentUuid: "98d9e56c-a028-57a1-b24d-fe93951125ab"
+diamondUuid: "503b5416-2684-854f-99a1-28a4b4bd3b66"
+uuid: "c372bfbe-da9d-8f03-99f9-731eadb33edc"
 horo: 7
-bonds:
-  in:
-    - access
-    - action
-    - broadcast
-    - charge
-    - code
-    - collapse
-    - commissions
-    - compound
-    - cost
-    - dated
-    - delivery
-    - engine
-    - exchange
-    - feature
-    - fees
-    - frequency
-    - health
-    - hours
-    - law
-    - location
-    - merge
-    - money
-    - opening
-    - payment
-    - plan
-    - postal
-    - price
-    - property
-    - range
-    - rate
-    - repayment
-    - sharing
-    - size
-    - speakable
-    - special
-    - sti
-    - unit
-    - value
-  out:
-    - access
-    - action
-    - broadcast
-    - charge
-    - code
-    - collapse
-    - commissions
-    - compound
-    - cost
-    - dated
-    - delivery
-    - engine
-    - exchange
-    - feature
-    - fees
-    - frequency
-    - health
-    - hours
-    - law
-    - location
-    - merge
-    - money
-    - opening
-    - payment
-    - plan
-    - postal
-    - price
-    - property
-    - range
-    - rate
-    - repayment
-    - sharing
-    - size
-    - speakable
-    - special
-    - sti
-    - unit
-    - value
 typography:
   partition: specification
-  bondDegree: 138
-  neighbors: []
+  bondDegree: 140
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - action
-    - broadcast
-    - charge
-    - code
-    - collapse
-    - commissions
-    - compound
-    - cost
-    - dated
-    - delivery
-    - engine
-    - exchange
-    - feature
-    - fees
-    - frequency
-    - health
-    - hours
-    - law
-    - location
-    - merge
-    - money
-    - opening
-    - payment
-    - plan
-    - postal
-    - price
-    - property
-    - range
-    - rate
-    - repayment
-    - sharing
-    - size
-    - speakable
-    - special
-    - sti
-    - unit
-    - value
-  matrix:
-    - access
-    - action
-    - broadcast
-    - charge
-    - code
-    - collapse
-    - commissions
-    - compound
-    - cost
-    - dated
-    - delivery
-    - engine
-    - exchange
-    - feature
-    - fees
-    - frequency
-    - health
-    - hours
-    - law
-    - location
-    - merge
-    - money
-    - opening
-    - payment
-    - plan
-    - postal
-    - price
-    - property
-    - range
-    - rate
-    - repayment
-    - sharing
-    - size
-    - speakable
-    - special
-    - sti
-    - unit
-    - value
-  backlinks:
-    - access
-    - action
-    - broadcast
-    - charge
-    - code
-    - collapse
-    - commissions
-    - compound
-    - cost
-    - dated
-    - delivery
-    - engine
-    - exchange
-    - feature
-    - fees
-    - frequency
-    - health
-    - hours
-    - law
-    - location
-    - merge
-    - money
-    - opening
-    - payment
-    - plan
-    - postal
-    - price
-    - property
-    - range
-    - rate
-    - repayment
-    - sharing
-    - size
-    - speakable
-    - special
-    - sti
-    - unit
-    - value
 signatures:
-  computationUuid: "2572c1ab-b90f-86c7-9408-da6a1b8cb6a2"
+  computationUuid: "8a724d29-78ae-81f3-a87b-0a457cee3e88"
   stages:
     - stage: path
       stageUuid: "2ed28284-0dd4-819e-8a6e-a2ad5a56fe15"
@@ -223,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2dbeda3f-8d0d-87ea-85a8-29ac75537df7"
     - stage: horo
-      stageUuid: "abf7d62a-2581-86d4-9bbd-1ffc9da2425d"
+      stageUuid: "eecd020d-a42e-8c63-86f9-e9e52b88d88a"
     - stage: seal
-      stageUuid: "af172ced-2d7d-8fda-a175-a6aee2b69b22"
+      stageUuid: "052322e5-04d4-88b9-87e3-f6957c05af8d"
     - stage: uuid
-      stageUuid: "e7413740-ac63-81e1-b02c-4159f047e258"
+      stageUuid: "070999bf-82ff-8901-be50-2a238ef7b6ef"
 version: 2
 ---
 # specification

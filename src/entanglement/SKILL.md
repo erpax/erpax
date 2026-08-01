@@ -2,149 +2,20 @@
 name: entanglement
 description: "Use when reasoning about the link field that couples atoms — the directed edges as a symmetric, monogamous binding (reciprocity, no-cloning); the graph that the ER=EPR reading turns into geometry (mass = entanglement)."
 atomPath: entanglement
-coordinate: "entanglement · 1/base · 262042d0"
-contentUuid: "a91ab332-a9b0-5223-bf89-a1c667839b91"
-diamondUuid: "9b75abf6-2ba1-8e9b-8bf6-adaf6e1f4126"
-uuid: "262042d0-e09b-8a81-b204-6fb1b167b604"
-horo: 1
-bonds:
-  in:
-    - app
-    - aura
-    - boundary
-    - cloning
-    - communication
-    - development
-    - dust
-    - entanglement
-    - export
-    - graph
-    - gravity
-    - import
-    - karma
-    - key
-    - law
-    - links
-    - matrix
-    - merge
-    - particle
-    - quantum
-    - reciprocal
-    - research
-    - serverless
-    - singularity
-    - superdense
-    - teleportation
-    - translator
-    - typography
-  out:
-    - app
-    - aura
-    - boundary
-    - cloning
-    - communication
-    - development
-    - dust
-    - entanglement
-    - export
-    - graph
-    - gravity
-    - import
-    - karma
-    - key
-    - law
-    - links
-    - matrix
-    - merge
-    - particle
-    - quantum
-    - reciprocal
-    - research
-    - serverless
-    - singularity
-    - superdense
-    - teleportation
-    - translator
-    - typography
+coordinate: "entanglement · 2/share · 025498b6"
+contentUuid: "84698e1f-d1b9-5d4d-b65b-0ba5e5880583"
+diamondUuid: "c603e8b7-abf7-889a-901d-e0d25e3cbf29"
+uuid: "025498b6-7ed6-861f-88e1-a1cec06d5cd9"
+horo: 2
 typography:
   partition: entanglement
   bondDegree: 107
-  neighbors: []
 standards:
   - "ER=EPR — Maldacena & Susskind, \"Cool horizons for entangled black holes\" (2013)"
   - "ER=EPR — Maldacena & Susskind, \"Cool horizons for entangled black holes\" (2013); monogamy — Coffman–Kundu–Wootters, PRA 61 052306 (2000)"
-  - "EU-2000/31"
 bindings: []
-neighbors:
-  wikilink:
-    - cloning
-    - gravity
-    - law
-    - links
-    - matrix
-    - merge
-    - quantum
-    - singularity
-  matrix:
-    - app
-    - aura
-    - boundary
-    - cloning
-    - communication
-    - development
-    - dust
-    - entanglement
-    - export
-    - graph
-    - gravity
-    - import
-    - karma
-    - key
-    - law
-    - links
-    - matrix
-    - merge
-    - particle
-    - quantum
-    - reciprocal
-    - research
-    - serverless
-    - singularity
-    - superdense
-    - teleportation
-    - translator
-    - typography
-  backlinks:
-    - app
-    - aura
-    - boundary
-    - cloning
-    - communication
-    - development
-    - dust
-    - entanglement
-    - export
-    - graph
-    - gravity
-    - import
-    - karma
-    - key
-    - law
-    - links
-    - matrix
-    - merge
-    - particle
-    - quantum
-    - reciprocal
-    - research
-    - serverless
-    - singularity
-    - superdense
-    - teleportation
-    - translator
-    - typography
 signatures:
-  computationUuid: "2e23ec19-3f21-8d05-9fea-2cd27ab666bd"
+  computationUuid: "e313a0ac-49f4-8877-9f39-9a7d7b6e2746"
   stages:
     - stage: path
       stageUuid: "66a2c6a2-51f6-8609-9510-ed305e4f5f99"
@@ -155,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "47421384-e146-8505-b17d-ec521153eb5b"
     - stage: horo
-      stageUuid: "d33363be-322b-86d1-be11-9c1c9865a42d"
+      stageUuid: "b904d00c-393c-815e-a2b4-855ddfd8da4a"
     - stage: seal
       stageUuid: "b3132f38-3202-8a3d-948f-20c999354e3f"
     - stage: uuid
-      stageUuid: "9e716e22-76be-8ccf-bf38-5e1549e8412b"
+      stageUuid: "a0df8354-3488-8c42-ba72-8f2b739b9fc5"
 version: 2
 ---
 # entanglement — the link field that couples the atoms

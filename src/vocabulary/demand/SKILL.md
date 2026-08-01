@@ -1,53 +1,35 @@
 ---
 name: demand
 description: "Use when reasoning about demand — A demand entity represents the public, not necessarily binding, not necessarily exclusive, announcement by an organization or person to seek a certain type of goods or services. Fo"
-atomPath: vocabulary/demand
-coordinate: demand · 4/weave · 82d9ab76
-contentUuid: "c9eb0a02-02f9-5ded-98ef-e49c10c14992"
-diamondUuid: "d0cbb646-54e6-8229-9bbd-1921a48881ad"
-uuid: "82d9ab76-adf9-88e7-a8a4-7f33ba7d2e0e"
-horo: 4
-bonds:
-  in:
-    - event
-    - law
-  out:
-    - event
-    - law
+atomPath: "vocabulary/demand"
+coordinate: "vocabulary/demand · 7/descent · 5ff27ed6"
+contentUuid: "35f4cedb-6cf8-5a79-804e-1b92b7cf96b5"
+diamondUuid: "633f8d26-4b8e-83e0-b6bd-c02362969382"
+uuid: "5ff27ed6-6c9f-8de6-8b2f-ee75461ff32a"
+horo: 7
 typography:
-  partition: demand
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - event
-    - law
-  matrix:
-    - event
-    - law
-  backlinks:
-    - event
-    - law
 signatures:
-  computationUuid: "496314f5-05d4-8eff-a724-7725ebd9a5e6"
+  computationUuid: "bd375f90-f532-81ca-9c5e-f9fa7ef0c546"
   stages:
     - stage: path
-      stageUuid: "4f01f455-40c4-88e0-8c43-5b657f0c1646"
+      stageUuid: "f6650339-3056-8b35-99ee-6a4246cc8ae2"
     - stage: trinity
-      stageUuid: "149016ee-fbe4-8957-95d3-4b06d9377de8"
+      stageUuid: "1205019e-11fa-8511-b2b6-18f828833e6a"
     - stage: boundary
-      stageUuid: "453b5ab4-346e-8415-9dcf-118c175ce755"
+      stageUuid: "da113fdd-4b69-8705-8bd6-e2f0cff429c5"
     - stage: links
-      stageUuid: "d66259e3-7517-8dc0-9d43-3676f8a095f1"
+      stageUuid: "7f7511a7-40de-8195-a53c-91d942dd7e43"
     - stage: horo
-      stageUuid: "cf1c5167-d6ea-8b29-ab83-f85f256b6e10"
+      stageUuid: "1de34f82-bab2-8efc-b5c9-3fe0441bb0ec"
     - stage: seal
-      stageUuid: "b8cca987-1c99-8345-9679-d2cf9663090f"
+      stageUuid: "ecbd5e23-4135-8dcc-a2ff-a75c65dc938c"
     - stage: uuid
-      stageUuid: "cb17a6b4-cba0-8f92-84ed-4837755d63b2"
+      stageUuid: "52e7a222-14bf-842a-a70a-c139ba99e413"
 version: 2
 ---
 # demand

@@ -2,52 +2,19 @@
 name: surgical
 description: "Use when reasoning about surgical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: surgical
-coordinate: surgical · 2/share · 4b5b3ac2
-contentUuid: "bce0d961-e6e3-5c34-a7d5-0a55ad79b8cb"
-diamondUuid: "0895db55-5e3d-86a5-99a8-987b4a22ff34"
-uuid: "4b5b3ac2-22d2-8bee-9e77-39ef92c89c2f"
+coordinate: "surgical · 2/share · 5efb64bf"
+contentUuid: "20bb6728-b30a-55d7-a63e-557ba3d642f9"
+diamondUuid: "eab9c5d1-b9df-8165-adb6-6250feaea8ee"
+uuid: "5efb64bf-f623-8eed-87ed-13f52ca748e4"
 horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - procedure
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - procedure
-    - sti
 typography:
   partition: surgical
-  bondDegree: 16
-  neighbors: []
+  bondDegree: 18
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - procedure
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - procedure
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - procedure
-    - sti
 signatures:
-  computationUuid: "b56ed56d-6c31-82d5-853b-327ce9c62647"
+  computationUuid: "5d4462c7-6c17-8257-8702-13d46bb81b32"
   stages:
     - stage: path
       stageUuid: "063cd183-ce5c-8b12-b22c-716f20e7bae6"
@@ -58,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7033c33f-caac-8037-b675-10d92e358163"
     - stage: horo
-      stageUuid: "522f042b-5720-8174-9f81-992253ea7647"
+      stageUuid: "c994cc99-cf73-826c-8917-ee51a6f3ca34"
     - stage: seal
-      stageUuid: "999e2e7a-7d1c-8b7e-97b1-21f2fc068948"
+      stageUuid: "1316abbb-04ea-8c24-8103-1a9b5f2897a7"
     - stage: uuid
-      stageUuid: "9f087740-740b-8cbf-893c-3010abfc5f1c"
+      stageUuid: "6e8e753f-25c6-8b4a-afc2-85481aae39b1"
 version: 2
 ---
 # surgical

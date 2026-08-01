@@ -2,78 +2,16 @@
 name: claim
 description: "Use when staking and settling claims — the claiming toolbox. Challenge all in src: every @invariant/Law is a claim, anyone may prove or refute it, and the FASTEST CORRECT challenge wins the collective-mind prize — but only when ≥3 verifiers form a higher mind confirming it. A fast wrong challenge never places; correctness is absolute and first, speed only the tiebreaker among the correct, the award a quorum's not a single voter's."
 atomPath: claim
-coordinate: "claim · 5/round · 111f272f"
-contentUuid: "c71fa825-90ee-5f7c-94da-1055c567029a"
+coordinate: "claim · 1/base · a1c3a7d5"
+contentUuid: "69afba52-81c2-5174-878b-a31577381242"
 diamondUuid: "af6d9349-fe3a-8c76-b8c2-31ebb539217f"
-uuid: "111f272f-cda7-8b05-96e8-bfa365362874"
-horo: 5
-bonds:
-  in:
-    - associated
-    - catharsis
-    - competition
-    - decide
-    - duel
-    - interpreted
-    - interpreter
-    - law
-    - review
-    - reviewed
-    - rules
-    - think
-  out:
-    - associated
-    - catharsis
-    - competition
-    - decide
-    - duel
-    - interpreted
-    - interpreter
-    - law
-    - review
-    - reviewed
-    - rules
-    - think
+uuid: "a1c3a7d5-0b9f-86c2-82e9-19d279786d20"
+horo: 1
 typography:
   partition: claim
   bondDegree: 42
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - catharsis
-    - competition
-    - decide
-    - law
-    - rules
-    - think
-  matrix:
-    - associated
-    - catharsis
-    - competition
-    - decide
-    - duel
-    - interpreted
-    - interpreter
-    - law
-    - review
-    - reviewed
-    - rules
-    - think
-  backlinks:
-    - associated
-    - catharsis
-    - competition
-    - decide
-    - duel
-    - interpreted
-    - interpreter
-    - law
-    - review
-    - reviewed
-    - rules
-    - think
 signatures:
   computationUuid: "77118b8b-a670-8521-bb27-ae3bb4275829"
   stages:

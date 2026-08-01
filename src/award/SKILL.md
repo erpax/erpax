@@ -2,37 +2,19 @@
 name: award
 description: Use when reasoning about award — An award won by or for this item.
 atomPath: award
-coordinate: "award · 2/share · 6d3cab10"
-contentUuid: "80598c28-7876-567a-aae8-30937488811b"
-diamondUuid: "2d7757ae-d594-8907-8001-8c4156af2fe8"
-uuid: "6d3cab10-314c-8c42-ab61-dc9f5a73a159"
+coordinate: "award · 2/share · 4d653048"
+contentUuid: "56b82913-f101-5f3a-8d54-44c33ddaa0b0"
+diamondUuid: "2312dec5-4ec4-8fd8-ad53-1065bcf8f2e1"
+uuid: "4d653048-b554-8b51-8840-712fa6e16f6c"
 horo: 2
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
 typography:
   partition: award
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "6f357f3f-61c4-8cfe-b014-d6c734af389f"
+  computationUuid: "ddb62281-4d09-8615-9421-9e66949d0972"
   stages:
     - stage: path
       stageUuid: "bb78049e-e281-82fb-985c-2aaecbd2c7dd"
@@ -43,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "58ba36e5-e6b4-8893-b4f4-f17b884cf7c1"
     - stage: horo
-      stageUuid: "c213ddbb-396a-80de-87fc-3c56b5de2f97"
+      stageUuid: "9fe5d249-0ca2-8c9f-9211-450891832068"
     - stage: seal
       stageUuid: "76fee2b0-ce33-8a9e-a794-525d2be01770"
     - stage: uuid
-      stageUuid: "06d637ec-c0c8-8c8b-81bf-43b52431e328"
+      stageUuid: "a5c37054-73ab-8ce6-98c6-919440c1f878"
 version: 2
 ---
 # award

@@ -2,117 +2,34 @@
 name: singularity
 description: "Use when reasoning about the gravity well where the corpus collapses to one center — the maximally-entangled atom as a trapped surface, the double-torus closing to infinite tamper cost (the event horizon), perfect DRY."
 atomPath: singularity
-coordinate: singularity · 7/descent · e735865b
-contentUuid: "3bf648bf-6979-5f8e-bf2f-16c2a5ced9b9"
-diamondUuid: "3eba09d1-03e0-80b0-a7c2-b22275536dca"
-uuid: "e735865b-d885-80c6-941f-62417dc1bf51"
-horo: 7
-bonds:
-  in:
-    - aura
-    - collapse
-    - cost
-    - development
-    - dry
-    - entanglement
-    - fusion
-    - gravity
-    - law
-    - math
-    - matrix
-    - merge
-    - quantum
-    - reactor
-    - vocabulary
-    - void
-  out:
-    - aura
-    - collapse
-    - cost
-    - development
-    - dry
-    - entanglement
-    - fusion
-    - gravity
-    - law
-    - math
-    - matrix
-    - merge
-    - quantum
-    - reactor
-    - vocabulary
-    - void
+coordinate: "singularity · 1/base · d690d1eb"
+contentUuid: "d61b0efd-9b9d-569e-b7cb-1534ca03a4af"
+diamondUuid: "9ab0018d-5f80-88f8-9209-f2f088994033"
+uuid: "d690d1eb-cf9c-8259-b607-e3e416be8668"
+horo: 1
 typography:
   partition: singularity
   bondDegree: 58
-  neighbors: []
 standards:
   - "Penrose, \"Gravitational Collapse and Space-Time Singularities,\" PRL 14 57 (1965)"
-  - "composed from the live matrix mass + the double-torus cost; never hand-asserted"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - cost
-    - dry
-    - entanglement
-    - fusion
-    - gravity
-    - law
-    - matrix
-    - merge
-    - quantum
-  matrix:
-    - aura
-    - collapse
-    - cost
-    - development
-    - dry
-    - entanglement
-    - fusion
-    - gravity
-    - law
-    - math
-    - matrix
-    - merge
-    - quantum
-    - reactor
-    - vocabulary
-    - void
-  backlinks:
-    - aura
-    - collapse
-    - cost
-    - development
-    - dry
-    - entanglement
-    - fusion
-    - gravity
-    - law
-    - math
-    - matrix
-    - merge
-    - quantum
-    - reactor
-    - vocabulary
-    - void
 signatures:
-  computationUuid: "c8fc21d0-c3aa-8d32-9bef-1c7c885961eb"
+  computationUuid: "3c33180a-678b-81fc-85de-de6662d346b9"
   stages:
     - stage: path
       stageUuid: "15dd967c-3d2c-8ab8-a5a9-32544a4d00cb"
     - stage: trinity
       stageUuid: "4e59ff38-cd93-8686-bad1-9e2c0119ceed"
     - stage: boundary
-      stageUuid: "ddeae7bc-5ef4-853b-a457-590d6abaead4"
+      stageUuid: "cb7bf5c1-4829-8b4e-8d69-9769f45ed8a7"
     - stage: links
       stageUuid: "3aa4f7bd-18e1-8150-83e0-e8fb0578477e"
     - stage: horo
-      stageUuid: "6de7c3e7-5008-8794-988f-ec367db69126"
+      stageUuid: "02208a69-ba57-8cd2-b329-2b89a9cb69eb"
     - stage: seal
-      stageUuid: "2d7238ce-b6f8-816f-9053-4a0957a52891"
+      stageUuid: "813c6f62-fd60-8f4a-820b-4342d43050f2"
     - stage: uuid
-      stageUuid: "0bf2b99f-ab7e-8e58-8174-1a71c59918f6"
+      stageUuid: "0c6924b7-edb9-8476-a0de-4ba4965c7232"
 version: 2
 ---
 # singularity — the one center the corpus collapses toward

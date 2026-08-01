@@ -2,81 +2,20 @@
 name: shift
 description: "Use when modeling a span of worked time — the per-actor-day labour unit a work order's produced minutes roll up into, and the authority it reads efficiency and wage back down from. The singular of the work-shifts aggregate."
 atomPath: shift
-coordinate: shift · 2/share · 2ea0a3ad
-contentUuid: "2214ae4a-a7fb-56e4-a136-544321209ddf"
-diamondUuid: "af6813cb-2b81-86b3-8850-fa0481b4bd17"
-uuid: "2ea0a3ad-97ee-802a-867a-42ed9bac7224"
-horo: 2
-bonds:
-  in:
-    - accounting
-    - attendance
-    - centers
-    - efficiency
-    - employee
-    - horo
-    - law
-    - orders
-    - pay
-    - shifts
-    - time
-  out:
-    - accounting
-    - attendance
-    - centers
-    - efficiency
-    - employee
-    - horo
-    - law
-    - orders
-    - pay
-    - shifts
-    - time
+coordinate: "shift · 5/round · cc2e1a7f"
+contentUuid: "72c3218f-80fb-56cb-af88-1ffc1316c4b5"
+diamondUuid: "9a4387a4-6a67-8d9f-a2fc-96d2d178833b"
+uuid: "cc2e1a7f-1943-8fff-9194-e74c20adc9da"
+horo: 5
 typography:
   partition: shift
   bondDegree: 34
-  neighbors: []
-standards: []
+standards:
+  - "ISO-22400-2"
+  - "ISO-22400-2`"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - attendance
-    - centers
-    - efficiency
-    - employee
-    - horo
-    - law
-    - orders
-    - pay
-    - shifts
-    - time
-  matrix:
-    - accounting
-    - attendance
-    - centers
-    - efficiency
-    - employee
-    - horo
-    - law
-    - orders
-    - pay
-    - shifts
-    - time
-  backlinks:
-    - accounting
-    - attendance
-    - centers
-    - efficiency
-    - employee
-    - horo
-    - law
-    - orders
-    - pay
-    - shifts
-    - time
 signatures:
-  computationUuid: "4e9d26eb-748c-80cb-bc21-f76f2dffc524"
+  computationUuid: "af75827f-1b35-8d4f-88a2-e37531924768"
   stages:
     - stage: path
       stageUuid: "46782318-acdc-83f6-99bb-f59e51d66ef5"
@@ -87,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "e1e50b69-04cd-844d-bdcd-96424ab9a27d"
     - stage: horo
-      stageUuid: "4503e1c2-830a-8303-8886-678b0569fb6a"
+      stageUuid: "6c8d592c-90bf-8946-9969-f6901b3c7dde"
     - stage: seal
-      stageUuid: "05da6bc4-4829-87c9-ba44-2b819b4aa13a"
+      stageUuid: "03d0e843-1973-8528-bfd3-afdbcf0fccaf"
     - stage: uuid
-      stageUuid: "4637e9ea-c1a4-80d9-b103-aa1de276ebcc"
+      stageUuid: "7874de4c-51bb-8766-9107-edd430d7f1ea"
 version: 2
 ---
 # shift

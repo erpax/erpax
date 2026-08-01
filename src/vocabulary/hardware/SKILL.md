@@ -1,76 +1,35 @@
 ---
 name: hardware
 description: "Use when reasoning about hardware as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/hardware
-coordinate: hardware · 4/weave · 4460b13c
-contentUuid: "781cb466-057c-5c27-9658-305d96b6a213"
-diamondUuid: "ec5d55df-7693-8f41-9b61-ff8ff2b88d8b"
-uuid: "4460b13c-820f-819a-a574-d28a1fc9274f"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - computer
-    - hardware
-    - law
-    - merge
-    - sti
-    - store
-  out:
-    - collapse
-    - computer
-    - hardware
-    - law
-    - merge
-    - sti
-    - store
+atomPath: "vocabulary/hardware"
+coordinate: "vocabulary/hardware · 2/share · 1f696b0a"
+contentUuid: "c73a898c-abc7-5430-be87-cbcce90c849c"
+diamondUuid: "17280cef-92ac-809b-abee-78aa52f37ce4"
+uuid: "1f696b0a-b4e0-831c-8e1c-5ddfea186001"
+horo: 2
 typography:
-  partition: hardware
-  bondDegree: 25
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 20
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  matrix:
-    - collapse
-    - computer
-    - hardware
-    - law
-    - merge
-    - sti
-    - store
-  backlinks:
-    - collapse
-    - computer
-    - hardware
-    - law
-    - merge
-    - sti
-    - store
 signatures:
-  computationUuid: "0f6b2679-7163-874a-9917-4ccbe097e56d"
+  computationUuid: "ae273376-8e86-8715-baea-531e1d9f307f"
   stages:
     - stage: path
-      stageUuid: "27ecbe35-19d1-8b31-b012-7651a0555746"
+      stageUuid: "0d67308f-18fb-847d-a852-53ff2abea2f4"
     - stage: trinity
-      stageUuid: "87cc7703-c728-8502-b378-cb0b7e4ad2a5"
+      stageUuid: "50560efe-de43-8a4a-811e-f63b6bb752ca"
     - stage: boundary
-      stageUuid: "26ab68ae-4a9c-88b0-b143-ca4ea99e4696"
+      stageUuid: "1898e648-1dfe-8b7f-9743-887506d3ec87"
     - stage: links
-      stageUuid: "793bb7f2-0f92-8ed4-8a87-7ff04b5689c5"
+      stageUuid: "1c510051-74b1-8253-814a-a44e00d16926"
     - stage: horo
-      stageUuid: "6762539d-66f6-8647-bfd0-e41343c94356"
+      stageUuid: "4689eed1-8990-8fb8-b23c-3d1658bb0d15"
     - stage: seal
-      stageUuid: "03c4b96d-5a9f-8d20-989b-431338c257a6"
+      stageUuid: "acf2df10-3a76-887f-b7e6-4e9f791d5601"
     - stage: uuid
-      stageUuid: "bc4d2969-1e6e-896a-8773-a754b6f1ec93"
+      stageUuid: "52986e33-8016-8464-95fb-46589e253c97"
 version: 2
 ---
 # hardware

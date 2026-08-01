@@ -2,43 +2,14 @@
 name: centers
 description: "Use when tagging JE lines with a secondary analytical dimension for segment/departmental P&L — regions, countries, business units, departments, teams, projects, profit centers, cost pools with allocation rules — hierarchical via parent; IFRS-8 / ASC-280 segment reporting without polluting the chart of accounts. The canonical cost-center dimension master."
 atomPath: "cost/centers"
-coordinate: "cost/centers · 2/share · 388e1279"
-contentUuid: "7158081b-0b4e-5539-a5e9-690c079d1ce9"
-diamondUuid: "688b561a-2405-870a-aa1c-6d17bcf606c1"
-uuid: "388e1279-998a-8c56-97fe-43240fcc604c"
-horo: 2
-bonds:
-  in:
-    - access
-    - accounting
-    - budgetvariance
-    - cost
-    - fields
-    - hooks
-    - identity
-    - journals
-    - law
-    - positions
-    - proof
-    - runs
-    - segment
-  out:
-    - access
-    - accounting
-    - budgetvariance
-    - fields
-    - hooks
-    - identity
-    - journals
-    - law
-    - positions
-    - proof
-    - runs
-    - segment
+coordinate: "cost/centers · 7/descent · cc53e34b"
+contentUuid: "c5877a14-7205-5cc7-a8f0-ed196abedf38"
+diamondUuid: "1c36f0c9-2d3b-8747-8348-97daeae313e5"
+uuid: "cc53e34b-861c-8dc8-ac12-d9c6757a5919"
+horo: 7
 typography:
   partition: cost
   bondDegree: 0
-  neighbors: []
 standards:
   - "IFRS IAS-1 §99 statement-of-comprehensive-income"
   - "IFRS IFRS-8 operating-segments"
@@ -51,44 +22,8 @@ standards:
   - "US-GAAP ASC-280 segment-reporting"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - accounting
-    - fields
-    - hooks
-    - identity
-    - law
-    - positions
-    - proof
-  matrix:
-    - access
-    - accounting
-    - budgetvariance
-    - fields
-    - hooks
-    - identity
-    - journals
-    - law
-    - positions
-    - proof
-    - runs
-    - segment
-  backlinks:
-    - access
-    - accounting
-    - budgetvariance
-    - fields
-    - hooks
-    - identity
-    - journals
-    - law
-    - positions
-    - proof
-    - runs
-    - segment
 signatures:
-  computationUuid: "a89c4fdb-b0d1-818d-8aaa-3ca027b0187e"
+  computationUuid: "8439d8e5-4dc7-879a-8c24-9dbc3a0ad9aa"
   stages:
     - stage: path
       stageUuid: "4e92b35a-d309-88ba-8cd6-2f9f169a7ff6"
@@ -99,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "9882e617-4c2f-8ec3-9c4f-bce70e95c6bb"
     - stage: horo
-      stageUuid: "5fd0d81b-e9fd-8e5b-95d3-ede1e2dae4f2"
+      stageUuid: "effb08e0-7d73-8b33-96d0-60e73f76d0e6"
     - stage: seal
       stageUuid: "0df70517-a153-8442-bc15-c1297815be2a"
     - stage: uuid
-      stageUuid: "46822ed4-f993-8db2-a04a-e940c72d74c3"
+      stageUuid: "da46a705-e795-810d-bfbe-d46d6829dfac"
 version: 2
 ---
 # cost-centers

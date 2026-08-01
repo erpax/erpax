@@ -2,71 +2,19 @@
 name: audience
 description: "Use when reasoning about audience as a medical facet of [[medical]] — vocabulary pivot to @/audience; nested not duplicated."
 atomPath: "medical/audience"
-coordinate: "medical/audience · 2/share · 1ad5f4a5"
-contentUuid: "fead5fe5-0784-5b00-8d50-cac63b54c442"
-diamondUuid: "a79e8382-86d4-8d33-909d-4c593e1aa59d"
-uuid: "1ad5f4a5-8b01-8137-b548-79efa1d40c2f"
-horo: 2
-bonds:
-  in:
-    - audience
-    - business
-    - educational
-    - law
-    - medical
-    - merge
-    - parent
-    - people
-    - permit
-    - service
-  out:
-    - audience
-    - business
-    - educational
-    - law
-    - medical
-    - merge
-    - parent
-    - people
-    - permit
-    - service
+coordinate: "medical/audience · 8/crest · f5c8b045"
+contentUuid: "fcf949fc-1b23-5f14-8810-b97a9e6c0dba"
+diamondUuid: "b229117e-adff-8d3a-ad4b-79fd27db8889"
+uuid: "f5c8b045-bb03-8df1-9da5-679152040d82"
+horo: 8
 typography:
   partition: medical
   bondDegree: 45
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - audience
-    - law
-    - medical
-    - merge
-  matrix:
-    - audience
-    - business
-    - educational
-    - law
-    - medical
-    - merge
-    - parent
-    - people
-    - permit
-    - service
-  backlinks:
-    - audience
-    - business
-    - educational
-    - law
-    - medical
-    - merge
-    - parent
-    - people
-    - permit
-    - service
 signatures:
-  computationUuid: "3f4b43c3-eee6-81ca-a614-125ec3a10bb1"
+  computationUuid: "58bd3b5f-90e6-8a57-9812-cf851822b88a"
   stages:
     - stage: path
       stageUuid: "ea9df2a5-a1c3-83d5-835c-0a374c1b131d"
@@ -77,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "faf36e6f-e3f7-8588-ac03-17fda2f194d0"
     - stage: horo
-      stageUuid: "c7bba5ea-79d2-8d1d-a18c-a86c9c01cfde"
+      stageUuid: "bdb5b3ba-14f8-82e6-858a-26fa6e966d50"
     - stage: seal
       stageUuid: "245fac7a-0e8b-8de7-be8b-c18ef6a596bd"
     - stage: uuid
-      stageUuid: "58614328-1398-88ad-a28a-b35303e58e4d"
+      stageUuid: "94449a0b-4b95-88f8-9c89-4df9c000cc43"
 version: 2
 ---
 # medical/audience — medical facet

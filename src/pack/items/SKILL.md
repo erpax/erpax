@@ -2,81 +2,14 @@
 name: items
 description: "Use when modeling a pack line — the units of one produced lot-variant packed into one carton; header-primary with an optional option breakdown whose double-entry holds when supplied. Evolved from 200,993 rows of etrima pack_items."
 atomPath: "pack/items"
-coordinate: "pack/items · 4/weave · f0478c92"
-contentUuid: "4acb0a9c-538d-5beb-91da-8098a817746a"
-diamondUuid: "b67d675b-f2fa-8b90-8ad3-c366e3f09f91"
-uuid: "f0478c92-9544-8b71-b965-ec432f039de4"
-horo: 4
-bonds:
-  in:
-    - agriculture
-    - apiculture
-    - aquaculture
-    - batches
-    - biomass
-    - bundle
-    - crop
-    - cropplan
-    - currency
-    - declarations
-    - forestry
-    - harvest
-    - inspections
-    - lactation
-    - law
-    - lines
-    - livestock
-    - materials
-    - measure
-    - merge
-    - movements
-    - num
-    - orders
-    - pack
-    - packages
-    - packs
-    - postharvest
-    - quotes
-    - seed
-    - share
-    - upsell
-    - variant
-  out:
-    - agriculture
-    - apiculture
-    - aquaculture
-    - batches
-    - biomass
-    - bundle
-    - crop
-    - cropplan
-    - currency
-    - declarations
-    - forestry
-    - harvest
-    - inspections
-    - lactation
-    - law
-    - lines
-    - livestock
-    - materials
-    - measure
-    - merge
-    - movements
-    - num
-    - orders
-    - packages
-    - packs
-    - postharvest
-    - quotes
-    - seed
-    - share
-    - upsell
-    - variant
+coordinate: "pack/items · 5/round · edde93b2"
+contentUuid: "64e4dcda-1380-56cf-adc0-4bf92d5b7cbd"
+diamondUuid: "dd7ebdf6-9494-869a-995c-e263fee53939"
+uuid: "edde93b2-3b42-8e0e-be3e-e976f4b89261"
+horo: 5
 typography:
   partition: pack
-  bondDegree: 116
-  neighbors: []
+  bondDegree: 112
 standards:
   - "IFRS IAS-2 §10 finished-goods at dispatch"
   - "ISA-95"
@@ -85,96 +18,23 @@ standards:
   - "UN-CEFACT"
   - "UN/CEFACT Rec20 mass (gram) per-unit"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - balance
-    - coordinate
-    - fields
-    - law
-    - packs
-    - variants
-  matrix:
-    - agriculture
-    - apiculture
-    - aquaculture
-    - batches
-    - biomass
-    - bundle
-    - crop
-    - cropplan
-    - currency
-    - declarations
-    - forestry
-    - harvest
-    - inspections
-    - lactation
-    - law
-    - lines
-    - livestock
-    - materials
-    - measure
-    - merge
-    - movements
-    - num
-    - orders
-    - packages
-    - packs
-    - postharvest
-    - quotes
-    - seed
-    - share
-    - upsell
-    - variant
-  backlinks:
-    - agriculture
-    - apiculture
-    - aquaculture
-    - batches
-    - biomass
-    - bundle
-    - crop
-    - cropplan
-    - currency
-    - declarations
-    - forestry
-    - harvest
-    - inspections
-    - lactation
-    - law
-    - lines
-    - livestock
-    - materials
-    - measure
-    - merge
-    - movements
-    - num
-    - orders
-    - packages
-    - packs
-    - postharvest
-    - quotes
-    - seed
-    - share
-    - upsell
-    - variant
 signatures:
-  computationUuid: "3dc44b99-9779-86f6-8c6a-754857b4ac5a"
+  computationUuid: "373c2dbc-b9f3-8548-beb4-0e0dc815dd94"
   stages:
     - stage: path
       stageUuid: "2d61d636-2b0d-8b4f-8144-c1aba7d389c3"
     - stage: trinity
       stageUuid: "28cfe5f8-cced-8893-9a24-07e003ee4541"
     - stage: boundary
-      stageUuid: "33dfa343-3097-88b6-9313-a081cdc95e45"
+      stageUuid: "21938666-87f9-846b-b06a-e86d3fd05237"
     - stage: links
       stageUuid: "7bb8dd91-2a33-8d04-b306-a854bd2376c7"
     - stage: horo
-      stageUuid: "98115367-7400-877b-a337-80ddac130159"
+      stageUuid: "de98c97d-a86c-8e31-aa15-56fb638b43af"
     - stage: seal
       stageUuid: "3a93a549-a764-85bc-be3f-cd3d1e70751b"
     - stage: uuid
-      stageUuid: "23e886a3-d112-85bf-91d7-2fc5ed628be4"
+      stageUuid: "2b31493b-ad1b-8d11-89cf-5f514bd0acb5"
 version: 2
 ---
 # pack/items — the pack line

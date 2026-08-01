@@ -1,73 +1,35 @@
 ---
 name: listing
 description: "Use when reasoning about listing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/listing
-coordinate: listing · 2/share · 5e255728
-contentUuid: "37249cb1-dc57-5e58-b817-55b6ed66a53f"
-diamondUuid: "076e9228-15f8-8ecb-9766-320ac916362f"
-uuid: "5e255728-5b8b-8329-871a-5f588c259c6e"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - estate
-    - law
-    - merge
-    - real
-    - sti
-  out:
-    - collapse
-    - estate
-    - law
-    - merge
-    - real
-    - sti
+atomPath: "vocabulary/listing"
+coordinate: "vocabulary/listing · 8/crest · f409bb83"
+contentUuid: "50e65a03-8ee5-5364-ad43-03752eddeb9a"
+diamondUuid: "ddc80b5f-ed35-87ef-abc0-f8b698263329"
+uuid: "f409bb83-9146-8392-97a8-f82726cb2170"
+horo: 8
 typography:
-  partition: listing
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - estate
-    - law
-    - merge
-    - real
-    - sti
-  matrix:
-    - collapse
-    - estate
-    - law
-    - merge
-    - real
-    - sti
-  backlinks:
-    - collapse
-    - estate
-    - law
-    - merge
-    - real
-    - sti
 signatures:
-  computationUuid: "58094a1a-e562-8824-a359-954ee8035099"
+  computationUuid: "0dbdb92c-1943-8378-8a71-8977594f90ab"
   stages:
     - stage: path
-      stageUuid: "a6442766-1f43-8267-a8b8-6591a4a52087"
+      stageUuid: "bbac6bf6-e30c-8912-8f69-489565e33542"
     - stage: trinity
-      stageUuid: "e3fdd9b3-a4be-83a5-b8d4-2bb9cb334b2a"
+      stageUuid: "5a98302c-2f07-86b6-9c8a-572417afb205"
     - stage: boundary
-      stageUuid: "0801f896-5c05-8239-b032-991deb7834d9"
+      stageUuid: "a69af62f-0767-8629-91bf-2d536c662a6d"
     - stage: links
-      stageUuid: "cd44ea43-7134-8472-aec9-d37697974c1b"
+      stageUuid: "f87e6c9d-d547-888a-8d6a-2d301124ce3e"
     - stage: horo
-      stageUuid: "46ebbc8c-9f62-8b22-9f65-c84644a36aa1"
+      stageUuid: "b0b5d708-7b56-8b50-81f6-21f6dd56b5d7"
     - stage: seal
-      stageUuid: "5ef8af1d-b46c-86ad-a5a0-1bd24e0dcf7c"
+      stageUuid: "9a23bb92-b2dc-8d4f-8d18-981e8576abf9"
     - stage: uuid
-      stageUuid: "b240c97e-0d7a-8344-8342-93cb866586c2"
+      stageUuid: "858e8386-5c6b-88fc-9129-6eeff6832aa0"
 version: 2
 ---
 # listing

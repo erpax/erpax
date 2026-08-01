@@ -1,88 +1,35 @@
 ---
 name: duration
 description: "Use when reasoning about duration — Quantity: Duration (use ISO 8601 duration format)."
-atomPath: vocabulary/duration
-coordinate: duration · 8/crest · df742747
-contentUuid: "2d1782eb-4f0d-5b35-8da7-63376827e744"
-diamondUuid: "79940517-4838-8be2-959d-c051fcb34fd7"
-uuid: "df742747-64d4-8762-bdb8-9b2c45759891"
-horo: 8
-bonds:
-  in:
-    - activity
-    - billing
-    - eligible
-    - estimated
-    - flight
-    - job
-    - law
-    - term
-    - warranty
-  out:
-    - activity
-    - billing
-    - eligible
-    - estimated
-    - flight
-    - job
-    - law
-    - term
-    - warranty
+atomPath: "vocabulary/duration"
+coordinate: "vocabulary/duration · 5/round · 501adc63"
+contentUuid: "68d5857d-84b3-578c-bf53-4350f85f9246"
+diamondUuid: "b0b4e08e-d34d-8a7f-8fbf-01298128d5a4"
+uuid: "501adc63-27f8-8132-abc6-7752eb1dc12b"
+horo: 5
 typography:
-  partition: duration
+  partition: vocabulary
   bondDegree: 34
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - activity
-    - billing
-    - eligible
-    - estimated
-    - flight
-    - job
-    - law
-    - term
-    - warranty
-  matrix:
-    - activity
-    - billing
-    - eligible
-    - estimated
-    - flight
-    - job
-    - law
-    - term
-    - warranty
-  backlinks:
-    - activity
-    - billing
-    - eligible
-    - estimated
-    - flight
-    - job
-    - law
-    - term
-    - warranty
 signatures:
-  computationUuid: "05a7ddf9-2555-89b2-ad8f-9e09d6c3d4cf"
+  computationUuid: "c033bef5-0a3b-8323-8c22-d2bf1f9f1d2b"
   stages:
     - stage: path
-      stageUuid: "69eec713-57be-8af8-8046-869c8ad4e25e"
+      stageUuid: "06d97574-f538-8280-8ac2-f5264c4a9a70"
     - stage: trinity
-      stageUuid: "68c08dbb-ac5c-8b37-a7e7-511fa32c7137"
+      stageUuid: "2ecc6d9a-d77b-8745-8be0-8514345d2c0b"
     - stage: boundary
-      stageUuid: "0b60d862-721b-82bb-a587-bff6ea757d91"
+      stageUuid: "c4b39f76-e63f-856f-ae83-b2ee60da3226"
     - stage: links
-      stageUuid: "4f550c5d-3a6d-888b-8575-6eaecd18d225"
+      stageUuid: "e02f7e6e-753d-8533-b12c-55985c7e961e"
     - stage: horo
-      stageUuid: "e4cd5575-9869-88d6-b88a-2b1ab7398409"
+      stageUuid: "db755375-efa7-8615-9102-a0ca898350b1"
     - stage: seal
-      stageUuid: "a7d1e045-0ceb-8bb5-abd4-c0ac44fbd929"
+      stageUuid: "06f20f4c-9e88-80e9-b547-41cb4be99070"
     - stage: uuid
-      stageUuid: "0d5457fd-a64e-85b2-ab87-5c0ec0bf9416"
+      stageUuid: "807c8ba5-1390-8f68-a71a-c30386fa144f"
 version: 2
 ---
 # duration

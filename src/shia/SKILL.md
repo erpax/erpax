@@ -2,117 +2,18 @@
 name: shia
 description: "Use when reading Shia Islam as a sub-diamond of islam — guidance descending through the lineage of the Prophet's house (the imamate), justice as a root principle, the witnessed suffering of Karbala, and the awaited return of the hidden one. A facet-diamond of the islam archangel."
 atomPath: shia
-coordinate: shia · 5/round · 5d5ae512
-contentUuid: "da9b5a4c-1c4b-5467-9750-d8889f73588a"
-diamondUuid: "edd7c148-0fc2-8ae1-ae98-1069cbfbf577"
-uuid: "5d5ae512-2eb1-8e02-918f-b13a75274fb2"
-horo: 5
-bonds:
-  in:
-    - archangel
-    - diamond
-    - dna
-    - identity
-    - islam
-    - justice
-    - law
-    - lineage
-    - mercy
-    - one
-    - prayer
-    - religion
-    - return
-    - society
-    - suffering
-    - translator
-    - uuid
-    - zeropoint
-  out:
-    - archangel
-    - diamond
-    - dna
-    - identity
-    - islam
-    - justice
-    - law
-    - lineage
-    - mercy
-    - one
-    - prayer
-    - religion
-    - return
-    - society
-    - suffering
-    - translator
-    - uuid
-    - zeropoint
+coordinate: "shia · 8/crest · ac8adb7d"
+contentUuid: "34a7490a-ff23-5949-86fd-3f08a780565d"
+diamondUuid: "2db4eda3-3c32-81ce-bbc0-bbd4aaeb0ae0"
+uuid: "ac8adb7d-f3f3-8305-ba3f-1643ffa5a56c"
+horo: 8
 typography:
   partition: shia
   bondDegree: 56
-  neighbors:
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - archangel
-    - diamond
-    - dna
-    - identity
-    - islam
-    - justice
-    - law
-    - lineage
-    - mercy
-    - one
-    - prayer
-    - religion
-    - return
-    - society
-    - suffering
-    - translator
-    - uuid
-    - zeropoint
-  matrix:
-    - archangel
-    - diamond
-    - dna
-    - identity
-    - islam
-    - justice
-    - law
-    - lineage
-    - mercy
-    - one
-    - prayer
-    - religion
-    - return
-    - society
-    - suffering
-    - translator
-    - uuid
-    - zeropoint
-  backlinks:
-    - archangel
-    - diamond
-    - dna
-    - identity
-    - islam
-    - justice
-    - law
-    - lineage
-    - mercy
-    - one
-    - prayer
-    - religion
-    - return
-    - society
-    - suffering
-    - translator
-    - uuid
-    - zeropoint
 signatures:
-  computationUuid: "eb4395c8-0f76-831f-9b20-0cdb23f0c65c"
+  computationUuid: "adb6e5a9-b7f6-8741-9484-6ff4752c0698"
   stages:
     - stage: path
       stageUuid: "f0eb40fe-dd6b-8464-8e1c-b584e205d485"
@@ -123,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e7c3a93f-f483-80c6-aeac-e1db3351590c"
     - stage: horo
-      stageUuid: "8e6e8c4e-558c-8eda-93a6-df2aaf11aea2"
+      stageUuid: "e62b4d9f-5a36-8986-b8f0-9445d653d313"
     - stage: seal
-      stageUuid: "d334f5fd-24f2-8b92-b7b1-fa7e4d3b0f4c"
+      stageUuid: "99ed0f64-5bf1-86b2-a40e-47c0f6d9a028"
     - stage: uuid
-      stageUuid: "cf86f20e-d85b-885d-8b21-52b87a1c8721"
+      stageUuid: "d7bdcf94-64df-80e8-a343-62e0651633cd"
 version: 2
 ---
 # shia — guidance through the lineage; the witnessed suffering, the awaited return

@@ -1,73 +1,35 @@
 ---
 name: honorific
 description: "Use when reasoning about honorific as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/honorific
-coordinate: honorific · 2/share · ecafdb22
-contentUuid: "9ae6b022-2bd4-58ac-a6e4-0f4e65a3a437"
-diamondUuid: "fe1f62dc-8c5a-876e-bacb-9c2936c132d0"
-uuid: "ecafdb22-9279-8806-a112-70ee074ba794"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - prefix
-    - sti
-    - suffix
-  out:
-    - collapse
-    - law
-    - merge
-    - prefix
-    - sti
-    - suffix
+atomPath: "vocabulary/honorific"
+coordinate: "vocabulary/honorific · 5/round · 15cdeb73"
+contentUuid: "31d8b634-25a9-5afd-872d-8e04cd5dbb08"
+diamondUuid: "b8f0ba12-662a-8518-b4c4-7fd3567463dc"
+uuid: "15cdeb73-e222-8ff7-9c0e-04fd4bcbba48"
+horo: 5
 typography:
-  partition: honorific
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - prefix
-    - sti
-    - suffix
-  matrix:
-    - collapse
-    - law
-    - merge
-    - prefix
-    - sti
-    - suffix
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - prefix
-    - sti
-    - suffix
 signatures:
-  computationUuid: "46bf3f7d-2fd9-8c9d-8054-3c1f0b3ef6a1"
+  computationUuid: "317711e3-44ae-8213-9080-04f84cb9c133"
   stages:
     - stage: path
-      stageUuid: "8f5ba472-6346-81da-9dd0-626a8f23af43"
+      stageUuid: "c58ed0b9-9cbe-8e17-90a5-188807c9a0aa"
     - stage: trinity
-      stageUuid: "a0907448-995b-8aff-9a22-1930ae9a55c0"
+      stageUuid: "cc1bc088-9e06-82ff-8954-48d580a78188"
     - stage: boundary
-      stageUuid: "72e49ad4-f803-8e71-8261-378d6de96d82"
+      stageUuid: "d27109da-246a-87ea-8111-9ad109993c88"
     - stage: links
-      stageUuid: "425bb666-bc83-8177-840e-df76c818494e"
+      stageUuid: "1608ae06-9593-86c5-a93d-19f4304a92e5"
     - stage: horo
-      stageUuid: "fb14a954-3912-8832-8c7c-0e12ac783b64"
+      stageUuid: "0ba24ff8-fd78-83a4-9a42-fae81322ad22"
     - stage: seal
-      stageUuid: "b3d7f58b-6b1b-877c-9b2f-c7d373962eee"
+      stageUuid: "60d83ebc-7cad-8cf4-b6e2-aea0d96b626a"
     - stage: uuid
-      stageUuid: "719ae079-7c19-80b5-bf6b-13339fe37faa"
+      stageUuid: "5ba4dc0a-02ae-8b42-ade4-e705e348b9a4"
 version: 2
 ---
 # honorific

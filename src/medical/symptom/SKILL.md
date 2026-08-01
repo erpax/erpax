@@ -2,59 +2,19 @@
 name: symptom
 description: "Use when reasoning about symptom as a medical facet of [[medical]] — vocabulary pivot to @/symptom; nested not duplicated."
 atomPath: "medical/symptom"
-coordinate: "medical/symptom · 5/round · 000e3717"
-contentUuid: "6807c32c-210c-5b1c-b180-eea082c93a08"
-diamondUuid: "1a8d1288-a87e-8726-8c44-790da755b094"
-uuid: "000e3717-6e07-8be4-8942-07eb6eeae2d0"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - medical
-    - merge
-    - sign
-    - sti
-    - symptom
-  out:
-    - collapse
-    - law
-    - medical
-    - merge
-    - sign
-    - sti
-    - symptom
+coordinate: "medical/symptom · 4/weave · 7812f158"
+contentUuid: "b0d108a1-ed51-58c7-9182-2c799451d701"
+diamondUuid: "c50ab541-5e69-8b57-a694-91b82f4b6a61"
+uuid: "7812f158-2c2b-8a62-b7a4-353a9e913b0c"
+horo: 4
 typography:
   partition: medical
   bondDegree: 27
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - medical
-    - merge
-    - symptom
-  matrix:
-    - collapse
-    - law
-    - medical
-    - merge
-    - sign
-    - sti
-    - symptom
-  backlinks:
-    - collapse
-    - law
-    - medical
-    - merge
-    - sign
-    - sti
-    - symptom
 signatures:
-  computationUuid: "755b5447-b6b6-8a48-9ce7-22ac268f8dbe"
+  computationUuid: "1c39831a-b463-8a34-9378-f3fd1c5f39fd"
   stages:
     - stage: path
       stageUuid: "2fc75234-0a83-80c6-8790-144a1951efbf"
@@ -65,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "53920f5d-01fc-867a-a35c-e21aafcf4f50"
     - stage: horo
-      stageUuid: "c2640640-f5af-8f6e-96e4-cf95fc06ddab"
+      stageUuid: "c4a21de2-5a34-8705-be2c-5577d74f91fa"
     - stage: seal
       stageUuid: "f63d42f5-ab41-80c1-b2fd-1e1b87587fc6"
     - stage: uuid
-      stageUuid: "803e91d4-9573-8f07-a64b-ca2111cb60dd"
+      stageUuid: "056782bb-663e-8554-92d7-e0afa5e8ca03"
 version: 2
 ---
 # medical/symptom — medical facet

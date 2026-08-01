@@ -1,168 +1,34 @@
 ---
 name: conversion
 description: "Use when a measured thing is re-expressed on another basis through a rate — unit conversion (kg↔g, acre↔decare), currency conversion (USD↔BGN↔EUR), and funnel-stage conversion (lead→deal) are one atom: a change of basis via a rate, pinned at a point, that conserves substance and accounts by double-entry. Automatic, never the spreadsheet's hand-typed 2.00 лв text that breaks the arithmetic."
-atomPath: vocabulary/conversion
-coordinate: conversion · 8/crest · 670658d7
-contentUuid: "d8dd7964-d181-54e9-8d88-cfba20fc2298"
-diamondUuid: "6f6c83e0-5dad-839c-b542-d6547d59d43c"
-uuid: "670658d7-5f84-8c82-be66-f4f7579f0702"
-horo: 8
-bonds:
-  in:
-    - accounting
-    - agriculture
-    - amount
-    - aquaculture
-    - attribution
-    - balance
-    - crop
-    - currency
-    - dimension
-    - entry
-    - fertility
-    - fodder
-    - friction
-    - funnel
-    - give
-    - hooks
-    - identity
-    - law
-    - localize
-    - measure
-    - orders
-    - organic
-    - rate
-    - service
-    - take
-    - versions
-    - yield
-  out:
-    - accounting
-    - agriculture
-    - amount
-    - aquaculture
-    - attribution
-    - balance
-    - crop
-    - currency
-    - dimension
-    - entry
-    - fertility
-    - fodder
-    - friction
-    - funnel
-    - give
-    - hooks
-    - identity
-    - law
-    - localize
-    - measure
-    - orders
-    - organic
-    - rate
-    - service
-    - take
-    - versions
-    - yield
+atomPath: "vocabulary/conversion"
+coordinate: "vocabulary/conversion · 7/descent · 74bee098"
+contentUuid: "6af64b52-abb3-513d-a2b7-103daaedf9ba"
+diamondUuid: "6605c621-6a09-8c77-ab7d-76c868dcbde9"
+uuid: "74bee098-20ba-86d8-a439-b7cec2b25143"
+horo: 7
 typography:
-  partition: conversion
-  bondDegree: 83
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 81
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - amount
-    - attribution
-    - balance
-    - currency
-    - dimension
-    - entry
-    - funnel
-    - give
-    - hooks
-    - identity
-    - law
-    - localize
-    - measure
-    - orders
-    - rate
-    - take
-    - versions
-  matrix:
-    - accounting
-    - agriculture
-    - amount
-    - aquaculture
-    - attribution
-    - balance
-    - crop
-    - currency
-    - dimension
-    - entry
-    - fertility
-    - fodder
-    - friction
-    - funnel
-    - give
-    - hooks
-    - identity
-    - law
-    - localize
-    - measure
-    - orders
-    - organic
-    - rate
-    - service
-    - take
-    - versions
-    - yield
-  backlinks:
-    - accounting
-    - agriculture
-    - amount
-    - aquaculture
-    - attribution
-    - balance
-    - crop
-    - currency
-    - dimension
-    - entry
-    - fertility
-    - fodder
-    - friction
-    - funnel
-    - give
-    - hooks
-    - identity
-    - law
-    - localize
-    - measure
-    - orders
-    - organic
-    - rate
-    - service
-    - take
-    - versions
-    - yield
 signatures:
-  computationUuid: "9854b0fd-6a36-8ac4-9b20-29164741061c"
+  computationUuid: "b36b0ce7-1fd2-8855-b2d6-72e191bf8c39"
   stages:
     - stage: path
-      stageUuid: "8153fff8-d5cb-8cc9-a069-a48cabc4f404"
+      stageUuid: "959c2df7-b6c4-8982-b04a-d48b9c0272a9"
     - stage: trinity
-      stageUuid: "f98ee95e-2bf4-8a89-b48c-d008550de4e1"
+      stageUuid: "28018b41-67df-8965-8a85-0cf463fd2e92"
     - stage: boundary
-      stageUuid: "8fde0d14-480b-8b26-9c85-5cbd8b7a9bce"
+      stageUuid: "afd45b98-3fd4-8fa9-84bd-9df8efa4234b"
     - stage: links
-      stageUuid: "5ad986f9-6a06-857f-9215-731792fb3ef1"
+      stageUuid: "ab280a77-ec3b-8077-8eb9-a37ef301ba79"
     - stage: horo
-      stageUuid: "9dd77bf7-c9c7-8106-bf1d-a3c4a2f51df9"
+      stageUuid: "bea8ec9a-1630-88a1-8f36-08113c428b7c"
     - stage: seal
-      stageUuid: "238282ff-992e-8d36-b328-d20f4c3785a9"
+      stageUuid: "af1a30e1-89c5-873b-ac3f-a106b3a94109"
     - stage: uuid
-      stageUuid: "63941812-414d-8096-9cad-5eaceabdd191"
+      stageUuid: "278de78a-03e1-8ae8-b9a1-5e2abfa3bd44"
 version: 2
 ---
 # conversion — re-expressing a quantity on another basis, automatically and accounted

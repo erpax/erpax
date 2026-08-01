@@ -1,96 +1,34 @@
 ---
 name: pickup
 description: "Use when a buyer collects pre-ordered goods at a point rather than having them delivered — the CSA pickup/drop site, on-farm pickup, host-site/neighborhood pod, and the generic click-and-collect (BOPIS) locker. A collection node in distribution: the seller aggregates to a point, the buyer covers the last mile — lower cost than home delivery, at the buyer's travel friction."
-atomPath: vocabulary/pickup
-coordinate: pickup · 2/share · 85236415
-contentUuid: "16165b50-165d-54ff-b74e-9bd6b386d12e"
-diamondUuid: "32d8b09f-9e5b-8b82-95b0-26fbe866c51b"
-uuid: "85236415-f6ff-8911-ac1b-85dafc72d5be"
-horo: 2
-bonds:
-  in:
-    - agriculture
-    - carriers
-    - commerce
-    - cost
-    - distribution
-    - friction
-    - location
-    - market
-    - packs
-    - retention
-    - share
-  out:
-    - agriculture
-    - carriers
-    - commerce
-    - cost
-    - distribution
-    - friction
-    - location
-    - market
-    - packs
-    - retention
-    - share
+atomPath: "vocabulary/pickup"
+coordinate: "vocabulary/pickup · 1/base · ae8e1bf6"
+contentUuid: "4dc185d2-aad9-5006-ba7e-4c9b1e42b58d"
+diamondUuid: "650981dd-1db0-8960-b886-5e1edf1da486"
+uuid: "ae8e1bf6-53aa-821b-8c56-2d6dbaa7bd8f"
+horo: 1
 typography:
-  partition: pickup
+  partition: vocabulary
   bondDegree: 35
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - carriers
-    - commerce
-    - cost
-    - distribution
-    - friction
-    - market
-    - packs
-    - retention
-    - share
-  matrix:
-    - agriculture
-    - carriers
-    - commerce
-    - cost
-    - distribution
-    - friction
-    - location
-    - market
-    - packs
-    - retention
-    - share
-  backlinks:
-    - agriculture
-    - carriers
-    - commerce
-    - cost
-    - distribution
-    - friction
-    - location
-    - market
-    - packs
-    - retention
-    - share
 signatures:
-  computationUuid: "4d55e0d7-acd5-8474-bfdb-035553b5900f"
+  computationUuid: "a01704ce-9868-8a50-b32f-fc31cc047441"
   stages:
     - stage: path
-      stageUuid: "989dfc0e-88ce-806e-8add-d6c251b74f36"
+      stageUuid: "582d591b-3881-8437-9356-806234339c23"
     - stage: trinity
-      stageUuid: "a8ce6fad-5b35-8d43-af88-2ce8f6a1d6f6"
+      stageUuid: "fa133d81-e373-8753-b0c0-1a512a8ffe05"
     - stage: boundary
-      stageUuid: "2f61ccda-7e38-89dc-af83-08c4348de8ac"
+      stageUuid: "412cddac-2f96-8459-aca5-48ac00cf9889"
     - stage: links
-      stageUuid: "dd573a6a-bb0b-81d8-bd3b-b01cc9a6f267"
+      stageUuid: "bd43c8d7-a2e4-8254-8a6d-92782bb263c9"
     - stage: horo
-      stageUuid: "d90dab62-98fa-8b20-9ddb-f1e41feef5c1"
+      stageUuid: "3485402c-ae9f-807c-bb61-6f9fb86a7801"
     - stage: seal
-      stageUuid: "0a386b2c-2b6d-8665-bbe4-3a037925d941"
+      stageUuid: "db645e40-c79b-85b8-942e-6a1231173ed1"
     - stage: uuid
-      stageUuid: "c9fb2998-ada6-8132-b0d9-5021ea7b7612"
+      stageUuid: "e0b78d64-c2a4-8a8d-bca3-ca905bc6b456"
 version: 2
 ---
 # pickup — the buyer-collection point in distribution

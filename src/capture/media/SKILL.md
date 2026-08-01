@@ -2,84 +2,15 @@
 name: media
 description: "Use when turning Playwright test artifacts into Media records — screenshots and videos are uploaded to the Media collection and each video gets a WebVTT subtitle track built from its test step titles, so marketing pages can embed live, captioned evidence of documented capabilities."
 atomPath: "capture/media"
-coordinate: "capture/media · 4/weave · 5e60252d"
-contentUuid: "10a5370c-093f-5e55-83f7-16737d7311eb"
-diamondUuid: "710fede2-2cf1-817d-9ced-9f5dc1fe068b"
-uuid: "5e60252d-004f-8e94-943a-149887872c91"
-horo: 4
-bonds:
-  in:
-    - access
-    - after
-    - appearance
-    - associated
-    - authenticity
-    - before
-    - capture
-    - category
-    - context
-    - during
-    - enumeration
-    - gallery
-    - hooks
-    - item
-    - law
-    - lexical
-    - link
-    - manipulation
-    - media
-    - news
-    - object
-    - organization
-    - original
-    - posting
-    - posts
-    - rating
-    - review
-    - social
-    - subscription
-    - upload
-  out:
-    - access
-    - after
-    - appearance
-    - associated
-    - authenticity
-    - before
-    - category
-    - context
-    - during
-    - enumeration
-    - gallery
-    - hooks
-    - item
-    - law
-    - lexical
-    - link
-    - manipulation
-    - media
-    - news
-    - object
-    - organization
-    - original
-    - posting
-    - posts
-    - rating
-    - review
-    - social
-    - subscription
-    - upload
+coordinate: "capture/media · 5/round · fa0d4f20"
+contentUuid: "5c3fce55-2f3d-58ce-af75-3ffc33ba7b69"
+diamondUuid: "be23415d-e9ff-85a3-b357-baee8f88a2ba"
+uuid: "fa0d4f20-7792-83c0-8dad-ad417e5f0d93"
+horo: 5
 typography:
   partition: capture
-  bondDegree: 90
-  neighbors: []
+  bondDegree: 88
 standards:
-  - "EU-2018/1673"
-  - "EU-2018/1725"
-  - "EU-2018/302"
-  - "EU-2018/389-SCA-RTS"
-  - "EU-2018/843"
-  - "EU-2018/957"
   - "ISO 19011:2018 audit-trail test-evidence"
   - "ISO 19011:2018 audit-trail test-evidence`"
   - "ISO/IEC 14496-30 timed-text-formats"
@@ -92,88 +23,23 @@ standards:
   - "WCAG-2.1 §1.2.5 audio-description-prerecorded"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - audit
-    - law
-    - media
-  matrix:
-    - access
-    - after
-    - appearance
-    - associated
-    - authenticity
-    - before
-    - category
-    - context
-    - during
-    - enumeration
-    - gallery
-    - hooks
-    - item
-    - law
-    - lexical
-    - link
-    - manipulation
-    - media
-    - news
-    - object
-    - organization
-    - original
-    - posting
-    - posts
-    - rating
-    - review
-    - social
-    - subscription
-    - upload
-  backlinks:
-    - access
-    - after
-    - appearance
-    - associated
-    - authenticity
-    - before
-    - category
-    - context
-    - during
-    - enumeration
-    - gallery
-    - hooks
-    - item
-    - law
-    - lexical
-    - link
-    - manipulation
-    - media
-    - news
-    - object
-    - organization
-    - original
-    - posting
-    - posts
-    - rating
-    - review
-    - social
-    - subscription
-    - upload
 signatures:
-  computationUuid: "e2ed81fa-3e09-8158-9ba7-5312a353d017"
+  computationUuid: "0cbc1759-f81b-8f9e-892d-8746896a3a56"
   stages:
     - stage: path
       stageUuid: "265f8640-7dbd-8b19-836b-fdeee6b00254"
     - stage: trinity
       stageUuid: "8faaf704-5ff2-884f-9a87-787a717d8576"
     - stage: boundary
-      stageUuid: "99e0769b-2c8f-8bda-90d2-7a46f95ad667"
+      stageUuid: "05fee23d-ade4-83dd-a542-eddc24b4e6f0"
     - stage: links
       stageUuid: "f09f9534-5e38-81b6-823c-769935bf9c7e"
     - stage: horo
-      stageUuid: "7b186a02-fbac-8d7f-91d8-9f53a9463bf7"
+      stageUuid: "39cd746a-e6a6-8f17-b867-7212982a6711"
     - stage: seal
       stageUuid: "092177d6-3cf9-83a8-ac08-d5489e56d441"
     - stage: uuid
-      stageUuid: "c9001c32-a16d-8f91-b6d8-a1356029fde8"
+      stageUuid: "549bf09d-099f-8c3c-8709-2f738e4f4af9"
 version: 2
 ---
 # capture/media — test artifacts into [[media]]

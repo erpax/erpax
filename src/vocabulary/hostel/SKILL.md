@@ -1,53 +1,35 @@
 ---
 name: hostel
 description: "Use when reasoning about hostel — A hostel - cheap accommodation, often in shared dormitories. See also the dedicated document on the use of schema.org for marking up hotels and other forms of accommodations."
-atomPath: vocabulary/hostel
-coordinate: hostel · 8/crest · ebb731f1
-contentUuid: "9eefabb3-0831-534d-aac2-c5b0734f894d"
-diamondUuid: "d41d84cb-bad2-805a-a95c-fa614fceb523"
-uuid: "ebb731f1-f986-8a10-a78c-ea1e0bd2f393"
+atomPath: "vocabulary/hostel"
+coordinate: "vocabulary/hostel · 8/crest · d5316d1b"
+contentUuid: "26b2e0e4-9651-5d4f-8537-3aa11a8e109d"
+diamondUuid: "b023d5dd-d269-8d45-a407-e00d4f1619ea"
+uuid: "d5316d1b-93b1-830a-ac22-a3a048ee4166"
 horo: 8
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
 typography:
-  partition: hostel
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "41eb2976-d2b8-8e16-8041-47c82d4ccf61"
+  computationUuid: "28cc109b-a2c2-8fc3-9a3d-ef5556d1defb"
   stages:
     - stage: path
-      stageUuid: "dd774f18-d953-86ab-86dc-57391a4e12f1"
+      stageUuid: "829f7070-51a6-8aa3-941a-8b9954888bb3"
     - stage: trinity
-      stageUuid: "5ba017ed-7a09-8120-8d80-769a1c016285"
+      stageUuid: "bcb8afc6-ad2e-8f90-8d26-2e17643b8864"
     - stage: boundary
-      stageUuid: "01e41e80-47ad-8009-86eb-5197573f7914"
+      stageUuid: "44a666f9-c9a3-8c64-a11a-0ff36e0824ff"
     - stage: links
-      stageUuid: "fbd6eb98-d33d-8f77-b6bd-96802b173c0f"
+      stageUuid: "08cc7683-f871-8010-82a7-2bf80280031e"
     - stage: horo
-      stageUuid: "b592a6ff-135e-89ad-987c-227f9602bb94"
+      stageUuid: "6700a9d8-7b1c-8276-b782-75b8e599b0f4"
     - stage: seal
-      stageUuid: "e5d02f8d-372a-8814-adbf-00d06f6c42d0"
+      stageUuid: "f41707a2-b3bc-8b45-838e-4f940ac6b469"
     - stage: uuid
-      stageUuid: "ef967f8f-683c-85fb-900f-3aefb0b8645c"
+      stageUuid: "c1a3ebb1-7051-8700-a518-03153cec1fd4"
 version: 2
 ---
 # hostel

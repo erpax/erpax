@@ -1,73 +1,35 @@
 ---
 name: representative
 description: "Use when reasoning about representative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/representative
-coordinate: representative · 8/crest · c4d63065
-contentUuid: "a1cec133-71c2-5c44-a2b0-b4616ea464aa"
-diamondUuid: "1ca183c6-febc-818a-8ac0-38cacc55d7b4"
-uuid: "c4d63065-c287-8cbf-ae3c-a0b53e9a15d8"
+atomPath: "vocabulary/representative"
+coordinate: "vocabulary/representative · 8/crest · 610bbb81"
+contentUuid: "d6e3b0b2-a7a8-5d8c-becc-21fcbd30e09e"
+diamondUuid: "3b70cd8d-770b-83db-bf36-88032b4741f5"
+uuid: "610bbb81-edad-8510-bf53-0115e28de380"
 horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - legal
-    - merge
-    - page
-    - sti
-  out:
-    - collapse
-    - law
-    - legal
-    - merge
-    - page
-    - sti
 typography:
-  partition: representative
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - legal
-    - merge
-    - page
-    - sti
-  matrix:
-    - collapse
-    - law
-    - legal
-    - merge
-    - page
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - legal
-    - merge
-    - page
-    - sti
 signatures:
-  computationUuid: "9ea4d8f4-1e6d-8db5-965f-5a90bcef2e39"
+  computationUuid: "88bd2dfe-757f-8544-940c-8a13b15375b1"
   stages:
     - stage: path
-      stageUuid: "4bc5b537-5d2a-8c67-a70e-ac397c16cfcb"
+      stageUuid: "265c41c9-a1cb-8239-9661-1f6b746fe6bc"
     - stage: trinity
-      stageUuid: "2547e45b-ca42-8f38-9e04-560ac3d5ea50"
+      stageUuid: "89ae04a9-23cc-8bd2-b20f-a296516b997c"
     - stage: boundary
-      stageUuid: "4261dcc6-9d5e-83aa-ab92-ae3203ae6867"
+      stageUuid: "9877b9c8-c826-8214-b43a-151e5951806f"
     - stage: links
-      stageUuid: "96aaa645-f0b4-85b0-bf6f-37344c3ea79b"
+      stageUuid: "e0f74448-1735-86d1-b5b7-a981a9493715"
     - stage: horo
-      stageUuid: "16fb315f-b545-87ed-8d35-2e5af113abff"
+      stageUuid: "c2f702f3-003c-8072-af3f-51afec95bb06"
     - stage: seal
-      stageUuid: "b5133ad9-fba3-804e-aedb-61fc6e1cf237"
+      stageUuid: "a0f6841d-e401-88a4-aab6-5dd4209833f4"
     - stage: uuid
-      stageUuid: "b056267b-921a-8db8-8e1d-214a2e335c15"
+      stageUuid: "72cb1a63-7e4c-893c-a2a4-ee76c581b386"
 version: 2
 ---
 # representative

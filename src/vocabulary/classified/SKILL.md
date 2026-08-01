@@ -1,63 +1,35 @@
 ---
 name: classified
 description: "Use when reasoning about classified as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/classified
-coordinate: classified · 5/round · 05ef455c
-contentUuid: "3ed988a3-3497-5783-a6df-8727adb079eb"
-diamondUuid: "0a910283-9cd4-8cbe-b68b-9c10a6933cd8"
-uuid: "05ef455c-e17c-8cd5-a3d8-fdbe43cd8f25"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/classified"
+coordinate: "vocabulary/classified · 7/descent · 76f0a0fb"
+contentUuid: "4ab13241-0a46-5a35-b212-319e7ece17bd"
+diamondUuid: "a81db5be-fbe5-827c-a333-54f17e36b129"
+uuid: "76f0a0fb-b762-8d81-9c2a-7f19ee7b97c0"
+horo: 7
 typography:
-  partition: classified
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "f7b8b07c-1256-8f67-9bcb-601eb1abac6b"
+  computationUuid: "124df5fb-dc34-8ac1-958d-b520409056cf"
   stages:
     - stage: path
-      stageUuid: "3912c557-2f36-8c50-9a9a-2bf927b4ed87"
+      stageUuid: "131a5fad-ea1f-85e7-8365-da7daaad7f1c"
     - stage: trinity
-      stageUuid: "30596c02-187d-81f7-bd3c-d7371ce8ae57"
+      stageUuid: "ad2f8a0f-27cc-8d77-baed-09f455b26d5b"
     - stage: boundary
-      stageUuid: "e80f11a6-1286-85eb-9eda-04fbb8c3b982"
+      stageUuid: "0fb0e68c-21ba-8392-b44c-8107fda7f963"
     - stage: links
-      stageUuid: "3d359506-8752-8743-8fe1-37d76c0ac44d"
+      stageUuid: "483e4584-63b8-8192-9cca-b3d9d339e697"
     - stage: horo
-      stageUuid: "21c1a75b-893e-89e8-b625-5a2ff5a5c825"
+      stageUuid: "2bef855d-8ff4-8286-97d7-72141a9d04ae"
     - stage: seal
-      stageUuid: "675ac197-93d0-8209-ac9f-2e0e13fffe7e"
+      stageUuid: "6130604d-4ae0-8146-8ada-c047cb7e8af4"
     - stage: uuid
-      stageUuid: "d8bfb199-7306-8960-ad5a-74fa6e72b21f"
+      stageUuid: "5cd0c7fb-2e69-8b4f-9119-d794f91ced03"
 version: 2
 ---
 # classified

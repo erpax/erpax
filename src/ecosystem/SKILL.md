@@ -2,146 +2,22 @@
 name: ecosystem
 description: "Use when sustainability and decentralisation must be seen as ONE — a food web is a coordinator-free network (decentralised) that wastes nothing (sustainable) for the SAME reason: local agents posting balanced metabolic exchanges, every output another's input, so global conservation and global order both emerge from local balance. erpax IS an ecosystem; nature is the empirical proof of the law."
 atomPath: ecosystem
-coordinate: "ecosystem · 4/weave · e0ca1c1a"
-contentUuid: "2ba78e30-4180-5098-b9c1-7e3417cf6294"
-diamondUuid: "e9ee24f8-c7a5-8fd7-b957-bd19aa3f352a"
-uuid: "e0ca1c1a-6245-8c00-88f7-127fbc67b5db"
+coordinate: "ecosystem · 4/weave · 01ed1d6c"
+contentUuid: "dc1364bc-0249-51f0-8854-0821a2e6195f"
+diamondUuid: "6ac756a2-fcd4-810a-be9a-9fee6b74ea11"
+uuid: "01ed1d6c-b595-8514-a62c-8555ea99b538"
 horo: 4
-bonds:
-  in:
-    - agent
-    - agriculture
-    - balance
-    - biomass
-    - compost
-    - conservation
-    - decentralization
-    - diversity
-    - emission
-    - entropy
-    - entry
-    - federation
-    - fractal
-    - gate
-    - law
-    - lichen
-    - merge
-    - mycelium
-    - network
-    - society
-    - soil
-    - sustainability
-    - symbiosis
-    - whole
-  out:
-    - agent
-    - agriculture
-    - balance
-    - biomass
-    - compost
-    - conservation
-    - decentralization
-    - diversity
-    - emission
-    - entropy
-    - entry
-    - federation
-    - fractal
-    - gate
-    - law
-    - lichen
-    - merge
-    - mycelium
-    - network
-    - society
-    - soil
-    - sustainability
-    - symbiosis
-    - whole
 typography:
   partition: ecosystem
   bondDegree: 83
-  neighbors:
-    - agent
 standards:
   - "EU-1958"
   - "Elton (1958) vs May, Will a Large Complex System be Stable? (1972) — diversity–stability debate"
   - "Lindeman, The Trophic-Dynamic Aspect of Ecology (1942) — ~10% energy per level"
   - "Tansley (1935) — coined \"ecosystem\": organisms plus environment as one system"
 bindings: []
-neighbors:
-  wikilink:
-    - agent
-    - balance
-    - biomass
-    - compost
-    - conservation
-    - decentralization
-    - diversity
-    - entropy
-    - entry
-    - federation
-    - fractal
-    - gate
-    - law
-    - merge
-    - network
-    - society
-    - soil
-    - sustainability
-    - whole
-  matrix:
-    - agent
-    - agriculture
-    - balance
-    - biomass
-    - compost
-    - conservation
-    - decentralization
-    - diversity
-    - emission
-    - entropy
-    - entry
-    - federation
-    - fractal
-    - gate
-    - law
-    - lichen
-    - merge
-    - mycelium
-    - network
-    - society
-    - soil
-    - sustainability
-    - symbiosis
-    - whole
-  backlinks:
-    - agent
-    - agriculture
-    - balance
-    - biomass
-    - compost
-    - conservation
-    - decentralization
-    - diversity
-    - emission
-    - entropy
-    - entry
-    - federation
-    - fractal
-    - gate
-    - law
-    - lichen
-    - merge
-    - mycelium
-    - network
-    - society
-    - soil
-    - sustainability
-    - symbiosis
-    - whole
 signatures:
-  computationUuid: "94031a83-232e-851c-853b-0de057672939"
+  computationUuid: "0f581f31-3823-865c-b491-30dc5185c80c"
   stages:
     - stage: path
       stageUuid: "a45bd5cc-b586-84b5-9859-e0f78950a89c"
@@ -152,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "0e692a18-8740-86e7-94a2-9616ed3d40c2"
     - stage: horo
-      stageUuid: "82edb353-3ad3-8c40-aead-2fd4004ef91f"
+      stageUuid: "1a56909a-3adc-8c5b-ad98-fc074141be69"
     - stage: seal
       stageUuid: "fea007df-fa7d-8066-880a-129771a399a6"
     - stage: uuid
-      stageUuid: "9c0f6379-bca0-8b4e-9d16-2ae73b018de8"
+      stageUuid: "b01db982-0e92-852c-9f26-f2013379681e"
 version: 2
 ---
 # ecosystem — where decentralization and sustainability are one phenomenon

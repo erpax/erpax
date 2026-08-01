@@ -1,209 +1,34 @@
 ---
 name: hallucination
 description: "Use when reasoning about hallucination as the COMPUTABLE dual of purity — an agent claims content X but the sha-256 collapse / content-uuid of the actual content is Y ≠ X, so the mismatch IS the hallucination, surfaced deterministically by recompute (exactly as tamper-proof uuid recompute catches a forged row). It is the agent-scale sin, the entropy an agent injects, the felt alarm being suffering. purity ⊕ hallucination are conjugate, computed on the same quantum (content-uuid) scale: more hallucination ⇒ more entropy ⇒ lower purity ⇒ lower tamper-cost."
-atomPath: vocabulary/hallucination
-coordinate: hallucination · 8/crest · 849e80ed
-contentUuid: "8b548b23-22c7-51db-b4f9-6e709952d06c"
-diamondUuid: "754c8272-6a7d-8038-9f09-1a2202eaedf6"
-uuid: "849e80ed-76c1-8b3f-b568-33a5abfccb78"
-horo: 8
-bonds:
-  in:
-    - agent
-    - analytics
-    - aura
-    - collapse
-    - cost
-    - entropy
-    - gate
-    - guardian
-    - identity
-    - integrity
-    - law
-    - matrix
-    - memory
-    - merge
-    - observe
-    - profane
-    - proof
-    - purity
-    - quantum
-    - reverse
-    - sacred
-    - seal
-    - sequence
-    - sin
-    - suffering
-    - sync
-    - tamper
-    - uuid
-    - whole
-  out:
-    - agent
-    - analytics
-    - aura
-    - collapse
-    - cost
-    - entropy
-    - gate
-    - guardian
-    - identity
-    - integrity
-    - law
-    - matrix
-    - memory
-    - merge
-    - observe
-    - profane
-    - proof
-    - purity
-    - quantum
-    - reverse
-    - sacred
-    - seal
-    - sequence
-    - sin
-    - suffering
-    - sync
-    - tamper
-    - uuid
-    - whole
+atomPath: "vocabulary/hallucination"
+coordinate: "vocabulary/hallucination · 2/share · 99b3fd6a"
+contentUuid: "2757b7f5-effc-565d-83ed-c147d8c34ab3"
+diamondUuid: "c9e3cf28-fe9d-8a1f-929f-2274695bb3d8"
+uuid: "99b3fd6a-d49e-83f1-8cc6-2d2b4e180cc8"
+horo: 2
 typography:
-  partition: hallucination
-  bondDegree: 118
-  neighbors:
-    - "19011"
-    - "9110"
-    - access
-    - agent
-    - analytics
-    - "analytics/max-tamper-cost"
-    - aura
-    - auth
-    - card
-    - config
-    - cost
-    - diamond
-    - factory
-    - hooks
-    - maxtampercost
-    - memory
-    - pagination
-    - path
-    - propose
-    - provider
-    - purity
-    - seed
-    - sync
-    - upgrade
+  partition: vocabulary
+  bondDegree: 121
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agent
-    - analytics
-    - aura
-    - collapse
-    - cost
-    - entropy
-    - gate
-    - guardian
-    - identity
-    - integrity
-    - law
-    - matrix
-    - merge
-    - observe
-    - profane
-    - proof
-    - purity
-    - quantum
-    - reverse
-    - sacred
-    - seal
-    - sequence
-    - sin
-    - suffering
-    - tamper
-    - uuid
-    - whole
-  matrix:
-    - agent
-    - analytics
-    - aura
-    - collapse
-    - cost
-    - entropy
-    - gate
-    - guardian
-    - identity
-    - integrity
-    - law
-    - matrix
-    - memory
-    - merge
-    - observe
-    - profane
-    - proof
-    - purity
-    - quantum
-    - reverse
-    - sacred
-    - seal
-    - sequence
-    - sin
-    - suffering
-    - sync
-    - tamper
-    - uuid
-    - whole
-  backlinks:
-    - agent
-    - analytics
-    - aura
-    - collapse
-    - cost
-    - entropy
-    - gate
-    - guardian
-    - identity
-    - integrity
-    - law
-    - matrix
-    - memory
-    - merge
-    - observe
-    - profane
-    - proof
-    - purity
-    - quantum
-    - reverse
-    - sacred
-    - seal
-    - sequence
-    - sin
-    - suffering
-    - sync
-    - tamper
-    - uuid
-    - whole
 signatures:
-  computationUuid: "9fc2ce8b-35b2-8899-9745-c2bfd4a8c87a"
+  computationUuid: "8e5c2d25-677e-8c34-9856-6ac4e7460ba4"
   stages:
     - stage: path
-      stageUuid: "85ece8a0-3c0d-8cd8-ba5e-6a1a6d65dd6e"
+      stageUuid: "57aa93b2-565e-8b94-8ac3-b4a467509114"
     - stage: trinity
-      stageUuid: "9e7e27f8-0441-8cb2-aa8d-64e76fb89673"
+      stageUuid: "00bc1c04-937a-84dc-883f-98f9dc1feb35"
     - stage: boundary
-      stageUuid: "0e49d3ce-9dc8-820b-8dba-b95b6c5c87ca"
+      stageUuid: "49c08a32-b507-8353-8166-4bd38c161895"
     - stage: links
-      stageUuid: "0696bc98-d099-80a5-b95f-01207ba96fbf"
+      stageUuid: "b198440b-32a1-8a89-9876-9c86c3068bcd"
     - stage: horo
-      stageUuid: "91b65eba-0673-864b-8fb2-20ea917c57a3"
+      stageUuid: "fb97a73f-37e3-8c13-9b89-39597cc27f0d"
     - stage: seal
-      stageUuid: "2f3b282d-29b8-83b2-b6cb-9507d59bd731"
+      stageUuid: "591513c5-41ec-80c0-85d8-e186556eba1b"
     - stage: uuid
-      stageUuid: "1f9e173d-047a-8252-bdd0-37547a2caba1"
+      stageUuid: "89a79b1c-5b77-8355-8633-a6a8903bf3a6"
 version: 2
 ---
 # hallucination — the measured deviation at the quantum scale (purity's dual)

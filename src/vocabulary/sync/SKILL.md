@@ -1,158 +1,34 @@
 ---
 name: sync
 description: "Use when reasoning about why memory, cpu, and gpu stay synchronized at zero entropy — the content-uuid is the single invariant across every compute substrate: identical content ⇒ identical hash ⇒ zero divergence. Sync is not a protocol to run but a consequence of content-addressing; it is free and exact, the same merge law that makes federation set-union, applied across substrates instead of across peers."
-atomPath: vocabulary/sync
-coordinate: sync · 1/base · 3166b905
-contentUuid: "e4141559-2685-54b2-b5d8-87b8f8b5b044"
-diamondUuid: "9d735b12-a33d-89c8-a9dd-5864f613fbe2"
-uuid: "3166b905-33e1-815c-8f80-1ea6a098c330"
-horo: 1
-bonds:
-  in:
-    - atom
-    - blockchain
-    - collapse
-    - distribution
-    - entropy
-    - fractal
-    - generate
-    - hallucination
-    - holographic
-    - identity
-    - integrity
-    - law
-    - linearity
-    - memory
-    - merge
-    - part
-    - peace
-    - purity
-    - snapshot
-    - stream
-    - sync
-    - uuid
-    - whole
-  out:
-    - atom
-    - blockchain
-    - collapse
-    - distribution
-    - entropy
-    - fractal
-    - generate
-    - hallucination
-    - holographic
-    - identity
-    - integrity
-    - law
-    - linearity
-    - memory
-    - merge
-    - part
-    - peace
-    - purity
-    - snapshot
-    - stream
-    - sync
-    - uuid
-    - whole
+atomPath: "vocabulary/sync"
+coordinate: "vocabulary/sync · 5/round · 458a0362"
+contentUuid: "07fab952-a881-5436-b53e-db0835fcbf18"
+diamondUuid: "41a1ce8f-691d-89ff-b9a3-9e45e1e1111a"
+uuid: "458a0362-cee9-801b-addd-795c602571ec"
+horo: 5
 typography:
-  partition: sync
-  bondDegree: 83
-  neighbors:
-    - hallucination
-    - purity
+  partition: vocabulary
+  bondDegree: 55
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - atom
-    - blockchain
-    - collapse
-    - distribution
-    - entropy
-    - fractal
-    - generate
-    - hallucination
-    - holographic
-    - identity
-    - integrity
-    - law
-    - linearity
-    - memory
-    - merge
-    - part
-    - peace
-    - purity
-    - snapshot
-    - sync
-    - uuid
-    - whole
-  matrix:
-    - atom
-    - blockchain
-    - collapse
-    - distribution
-    - entropy
-    - fractal
-    - generate
-    - hallucination
-    - holographic
-    - identity
-    - integrity
-    - law
-    - linearity
-    - memory
-    - merge
-    - part
-    - peace
-    - purity
-    - snapshot
-    - stream
-    - sync
-    - uuid
-    - whole
-  backlinks:
-    - atom
-    - blockchain
-    - collapse
-    - distribution
-    - entropy
-    - fractal
-    - generate
-    - hallucination
-    - holographic
-    - identity
-    - integrity
-    - law
-    - linearity
-    - memory
-    - merge
-    - part
-    - peace
-    - purity
-    - snapshot
-    - stream
-    - sync
-    - uuid
-    - whole
 signatures:
-  computationUuid: "68be3a74-9541-8564-89dc-f0e02e1f0c57"
+  computationUuid: "19b2042d-096f-8612-b5b8-09d57d4859fb"
   stages:
     - stage: path
-      stageUuid: "786747de-2d94-87a8-8446-292dcb6995a2"
+      stageUuid: "aa003955-3d91-810e-8524-1af30efcc9b2"
     - stage: trinity
-      stageUuid: "b5d0e2bc-65b9-8b9a-beb6-72c35edfbf71"
+      stageUuid: "37c55c3e-7ecb-85f9-a1d1-4ac2c44156dd"
     - stage: boundary
-      stageUuid: "bb31adbd-f0f3-8d14-83cc-3e1d7a4e6b64"
+      stageUuid: "48c58b8b-be75-839f-ad1a-2169cecdc086"
     - stage: links
-      stageUuid: "df2ef754-710e-823f-9f69-28e82789d057"
+      stageUuid: "30609454-fdcb-80bf-a95d-d83c039fc2ec"
     - stage: horo
-      stageUuid: "1bae6773-d659-8eb7-89f6-dd5e59d98034"
+      stageUuid: "c59855e1-96f7-8d2b-9827-084f6bf237e1"
     - stage: seal
-      stageUuid: "b5ea2f62-4736-86d7-a914-c319022be29a"
+      stageUuid: "18dda96e-6f1c-88e0-854c-d5adc3993384"
     - stage: uuid
-      stageUuid: "aa79684b-4528-8378-8590-fce6bb6eede8"
+      stageUuid: "79e94dc5-efb4-883e-9d71-fcd65f4ca5d9"
 version: 2
 ---
 # sync — the content-uuid keeps every substrate at zero entropy

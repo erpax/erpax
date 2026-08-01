@@ -2,32 +2,14 @@
 name: declarations
 description: "Use when filing export or import customs declarations for a cross-border shipment — recording HS-coded line items, declared values, duty and import VAT, INCOTERMS, country of origin, and tracking MRN issuance through to customs release. The EU UCC / WCO structured customs-declaration collection."
 atomPath: "customers/sales/orders/shipments/customs/declarations"
-coordinate: "customers/sales/orders/shipments/customs/declarations · 4/weave · deef7756"
-contentUuid: "67ade0d5-bb1a-53b6-86d6-ed3ea3093278"
-diamondUuid: "dd4e1f4c-8bbf-8672-99cf-5fdf5886b48a"
-uuid: "deef7756-b560-8bb6-aaa7-4a6e769e9e2d"
-horo: 4
-bonds:
-  in:
-    - access
-    - declaration
-    - fields
-    - hooks
-    - items
-    - law
-    - shipments
-  out:
-    - access
-    - declaration
-    - fields
-    - hooks
-    - items
-    - law
-    - shipments
+coordinate: "customers/sales/orders/shipments/customs/declarations · 7/descent · efb1e5a6"
+contentUuid: "e817f3b3-a68f-52ae-8c8c-2b477852c5f3"
+diamondUuid: "1188676d-3f7a-8b93-95f3-776e6dff5149"
+uuid: "efb1e5a6-11c5-8c53-b155-edf39574a35e"
+horo: 7
 typography:
   partition: customers
-  bondDegree: 22
-  neighbors: []
+  bondDegree: 14
 standards:
   - "EU UCC Regulation 952/2013 union-customs-code"
   - "EU UCC §6 customs-declaration"
@@ -44,32 +26,8 @@ standards:
   - "WCO-HS"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - fields
-    - hooks
-    - items
-    - law
-    - shipments
-  matrix:
-    - access
-    - declaration
-    - fields
-    - hooks
-    - items
-    - law
-    - shipments
-  backlinks:
-    - access
-    - declaration
-    - fields
-    - hooks
-    - items
-    - law
-    - shipments
 signatures:
-  computationUuid: "a64eae0c-492d-8456-a014-e8c4649d3b0d"
+  computationUuid: "7806875c-b0c7-8020-ac44-b7b2f6bf4585"
   stages:
     - stage: path
       stageUuid: "f4aaf92f-e8f6-837f-9176-90853296d68d"
@@ -78,13 +36,13 @@ signatures:
     - stage: boundary
       stageUuid: "b161df1e-ad44-88f0-9c53-2791d9294c42"
     - stage: links
-      stageUuid: "071d22f5-8496-85a1-aef2-e633df9adeee"
+      stageUuid: "0b62e0ea-7e80-800f-a573-7f83ae158ce5"
     - stage: horo
-      stageUuid: "af07753f-5baf-87af-8789-3afb52369e29"
+      stageUuid: "0c28fef4-e001-86f7-a977-e7e83f96870f"
     - stage: seal
       stageUuid: "a0e29fa5-94ed-834e-ae8c-6de1a9f3b023"
     - stage: uuid
-      stageUuid: "74d44d6b-1d69-8f0d-a55e-0caa41a620a1"
+      stageUuid: "1451677b-4bb5-85a0-99ea-e4e2d31c450a"
 version: 2
 ---
 # customs-declarations

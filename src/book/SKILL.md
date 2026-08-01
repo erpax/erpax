@@ -2,57 +2,19 @@
 name: book
 description: Use when reasoning about book — A book.
 atomPath: book
-coordinate: "book · 5/round · beec1de2"
-contentUuid: "38630e8c-cbd2-501b-8f09-880e11a5bfad"
-diamondUuid: "0b15441c-d664-878c-81c1-e4f5d1d04aee"
-uuid: "beec1de2-1385-8d39-b9d3-79da8ca6b66d"
+coordinate: "book · 5/round · 60ab2a95"
+contentUuid: "c2b7f394-7b51-5219-bcb2-08aa4104ff3d"
+diamondUuid: "abfdc78a-4d97-84ee-9f95-fd8814aab878"
+uuid: "60ab2a95-604b-8fe6-a5e4-3bb4c1814e29"
 horo: 5
-bonds:
-  in:
-    - edition
-    - format
-    - law
-    - series
-    - store
-    - type
-  out:
-    - edition
-    - format
-    - law
-    - series
-    - store
-    - type
 typography:
   partition: book
   bondDegree: 0
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - edition
-    - format
-    - law
-    - series
-    - store
-    - type
-  matrix:
-    - edition
-    - format
-    - law
-    - series
-    - store
-    - type
-  backlinks:
-    - edition
-    - format
-    - law
-    - series
-    - store
-    - type
 signatures:
-  computationUuid: "d239bf35-3e76-8dea-821d-d8226c3851cd"
+  computationUuid: "e4b430f1-abf1-8f28-a448-5aac76845f8c"
   stages:
     - stage: path
       stageUuid: "ae27e4e6-79cc-8222-a2f3-42fa9b1e6fb3"
@@ -63,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2a1a4bdf-1b6c-8da5-990b-ff69aa5ef53e"
     - stage: horo
-      stageUuid: "faeff25a-35be-8cd7-bb53-f519f423d933"
+      stageUuid: "cdfe4791-a859-8600-8b65-70893bd65635"
     - stage: seal
       stageUuid: "2195f13d-9c03-8a7e-910c-9f8f35a96526"
     - stage: uuid
-      stageUuid: "e7218f5a-85ea-8468-8bbb-9744efd05c5d"
+      stageUuid: "405e15ff-a20e-8c4b-9003-720c2fef379f"
 version: 2
 ---
 # book

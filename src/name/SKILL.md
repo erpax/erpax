@@ -2,209 +2,19 @@
 name: name
 description: "Use when identifying an entity with a human-readable label — customer name, product name, account name, journal name. Text identifier for humans; machine identity is via content-uuid. Never a duplicate field per naming convention (one name per entity scope)."
 atomPath: name
-coordinate: "name · 2/share · bfcf9aba"
-contentUuid: "5a8f9873-a707-59b2-a839-3766ae84910f"
-diamondUuid: "caecde50-e45a-8a40-a4d3-548b20acb82f"
-uuid: "bfcf9aba-ff27-8789-9556-14496837ab5b"
+coordinate: "name · 2/share · 969fb796"
+contentUuid: "3df1032b-340e-584c-ad1c-f642989a2c1b"
+diamondUuid: "9fdc2ae7-7399-8ebf-b496-d09f0b7129ad"
+uuid: "969fb796-0030-817a-acdc-43b7095d8a14"
 horo: 2
-bonds:
-  in:
-    - additional
-    - alternate
-    - animism
-    - atom
-    - broadcast
-    - bus
-    - character
-    - command
-    - config
-    - confucianism
-    - default
-    - diamond
-    - display
-    - executable
-    - fields
-    - fold
-    - given
-    - hermeticism
-    - hinduism
-    - identity
-    - islam
-    - iupac
-    - judaism
-    - kabbalah
-    - law
-    - legal
-    - library
-    - method
-    - mirror
-    - non
-    - paganism
-    - path
-    - prayer
-    - program
-    - proprietary
-    - role
-    - seo
-    - shamanism
-    - shinto
-    - sikhism
-    - sufism
-    - target
-    - typography
-    - uuid
-  out:
-    - additional
-    - alternate
-    - animism
-    - atom
-    - broadcast
-    - bus
-    - character
-    - command
-    - config
-    - confucianism
-    - default
-    - diamond
-    - display
-    - executable
-    - fields
-    - fold
-    - given
-    - hermeticism
-    - hinduism
-    - identity
-    - islam
-    - iupac
-    - judaism
-    - kabbalah
-    - law
-    - legal
-    - library
-    - method
-    - mirror
-    - non
-    - paganism
-    - path
-    - prayer
-    - program
-    - proprietary
-    - role
-    - seo
-    - shamanism
-    - shinto
-    - sikhism
-    - sufism
-    - target
-    - typography
-    - uuid
 typography:
   partition: name
-  bondDegree: 132
-  neighbors: []
+  bondDegree: 120
 standards:
   - "EN-16931`"
 bindings: []
-neighbors:
-  wikilink:
-    - fields
-    - fold
-    - identity
-    - law
-    - path
-    - uuid
-  matrix:
-    - additional
-    - alternate
-    - animism
-    - atom
-    - broadcast
-    - bus
-    - character
-    - command
-    - config
-    - confucianism
-    - default
-    - diamond
-    - display
-    - executable
-    - fields
-    - fold
-    - given
-    - hermeticism
-    - hinduism
-    - identity
-    - islam
-    - iupac
-    - judaism
-    - kabbalah
-    - law
-    - legal
-    - library
-    - method
-    - mirror
-    - non
-    - paganism
-    - path
-    - prayer
-    - program
-    - proprietary
-    - role
-    - seo
-    - shamanism
-    - shinto
-    - sikhism
-    - sufism
-    - target
-    - typography
-    - uuid
-  backlinks:
-    - additional
-    - alternate
-    - animism
-    - atom
-    - broadcast
-    - bus
-    - character
-    - command
-    - config
-    - confucianism
-    - default
-    - diamond
-    - display
-    - executable
-    - fields
-    - fold
-    - given
-    - hermeticism
-    - hinduism
-    - identity
-    - islam
-    - iupac
-    - judaism
-    - kabbalah
-    - law
-    - legal
-    - library
-    - method
-    - mirror
-    - non
-    - paganism
-    - path
-    - prayer
-    - program
-    - proprietary
-    - role
-    - seo
-    - shamanism
-    - shinto
-    - sikhism
-    - sufism
-    - target
-    - typography
-    - uuid
 signatures:
-  computationUuid: "ea28c921-aa4f-82ab-a6a2-95c6000d09fa"
+  computationUuid: "a152f213-bcd1-87a2-9085-dc5db7ebf778"
   stages:
     - stage: path
       stageUuid: "dae99ed6-4f92-8101-b9e1-a3f5b37efae8"
@@ -213,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "506b575a-e8ad-8ff3-b8ad-f1fbe824fab4"
     - stage: links
-      stageUuid: "a7c70dbb-673b-81b8-b407-07025001dc1e"
+      stageUuid: "82e9cc83-b6f9-8622-a1f5-c11a9d26791a"
     - stage: horo
-      stageUuid: "20766c6d-8b0e-80be-8138-0efaa3d99f9b"
+      stageUuid: "e63a728c-721e-8118-93c5-8b26e6751c82"
     - stage: seal
       stageUuid: "85abac57-56d6-8da1-b924-9b81580c76e4"
     - stage: uuid
-      stageUuid: "50ddf2ad-a4e9-83a3-9bd8-268aa0b22dce"
+      stageUuid: "bc90085b-495a-8894-8f7c-c9a4eeef6de9"
 version: 2
 ---
 # name

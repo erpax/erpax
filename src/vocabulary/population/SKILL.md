@@ -1,90 +1,35 @@
 ---
 name: population
 description: "Use when reasoning about population as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/population
-coordinate: population · 7/descent · c5be5c3e
-contentUuid: "bb7b7866-79cd-58d6-99fc-0851be0591cd"
-diamondUuid: "2a6b02a5-21b4-827c-a5ad-6bcc6e0d2e4e"
-uuid: "c5be5c3e-49ad-8f97-b14a-e6a1f8fb0755"
-horo: 7
-bonds:
-  in:
-    - archangel
-    - architect
-    - collapse
-    - diamond
-    - law
-    - merge
-    - statistical
-    - sti
-    - target
-    - type
-  out:
-    - archangel
-    - architect
-    - collapse
-    - diamond
-    - law
-    - merge
-    - statistical
-    - sti
-    - target
-    - type
+atomPath: "vocabulary/population"
+coordinate: "vocabulary/population · 8/crest · d62ae73d"
+contentUuid: "fa0afb81-665d-5605-93fe-56bba64428a2"
+diamondUuid: "c604f0c5-dca7-8a60-b77d-24f58177d430"
+uuid: "d62ae73d-1a2d-8db3-bf4b-fd8f3bd92b03"
+horo: 8
 typography:
-  partition: population
+  partition: vocabulary
   bondDegree: 32
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - statistical
-    - sti
-    - target
-    - type
-  matrix:
-    - archangel
-    - architect
-    - collapse
-    - diamond
-    - law
-    - merge
-    - statistical
-    - sti
-    - target
-    - type
-  backlinks:
-    - archangel
-    - architect
-    - collapse
-    - diamond
-    - law
-    - merge
-    - statistical
-    - sti
-    - target
-    - type
 signatures:
-  computationUuid: "6ccf07b1-4078-8d46-8ff3-29a14d810be4"
+  computationUuid: "8fb0d982-e418-87ac-be8e-ca23c71de502"
   stages:
     - stage: path
-      stageUuid: "f65ed014-693d-8adc-989a-1dcac0ba194d"
+      stageUuid: "9a4ea642-0edf-8d21-812b-7037935b97ee"
     - stage: trinity
-      stageUuid: "f1baa115-4d09-858d-9b91-4877faa31a2a"
+      stageUuid: "a43cb3e1-13e5-8c8f-ac5f-f7d8e58611c1"
     - stage: boundary
-      stageUuid: "cc66cf84-4551-8c94-be86-d4f6e9662072"
+      stageUuid: "51dfe361-5dad-840e-bc25-fad7d707a933"
     - stage: links
-      stageUuid: "62c9f838-d99d-8c7c-a7bc-81d42c0dc3b9"
+      stageUuid: "38417162-faa8-86a3-9f29-f2bb26b2587b"
     - stage: horo
-      stageUuid: "3e12537b-6dbc-820b-9009-2c27b94b32df"
+      stageUuid: "7ca73193-a97a-819a-bc1a-fc2b73d13885"
     - stage: seal
-      stageUuid: "c27cdb72-0ff5-8ea5-85c8-5761eecd8f51"
+      stageUuid: "1eaf9573-cfcb-8d14-8e0b-641ab8aad55c"
     - stage: uuid
-      stageUuid: "8f28ea27-dca0-8582-927e-46d10bb22d63"
+      stageUuid: "7a1b7dd6-2ff7-8ff1-a597-4f709e47882b"
 version: 2
 ---
 # population

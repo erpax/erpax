@@ -2,63 +2,19 @@
 name: study
 description: "Use when reasoning about study as a medical facet of [[medical]] — vocabulary pivot to @/study; nested not duplicated."
 atomPath: "medical/study"
-coordinate: "medical/study · 8/crest · a31e65e3"
-contentUuid: "ec01cda7-564a-5b9e-bd52-50fa168c73ee"
-diamondUuid: "dda2144c-d8bd-890f-a555-a582c98a675f"
-uuid: "a31e65e3-ced4-8fc8-8a76-4708d4527db5"
-horo: 8
-bonds:
-  in:
-    - design
-    - law
-    - location
-    - medical
-    - observational
-    - status
-    - study
-    - subject
-  out:
-    - design
-    - law
-    - location
-    - medical
-    - observational
-    - status
-    - study
-    - subject
+coordinate: "medical/study · 4/weave · dcbb91aa"
+contentUuid: "46941626-4854-5cb1-8cbf-299924d94f01"
+diamondUuid: "6932afa2-d3f0-8883-afba-e08bdaaea871"
+uuid: "dcbb91aa-d284-82ab-9a13-97c0ff4ec17f"
+horo: 4
 typography:
   partition: medical
   bondDegree: 36
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - medical
-    - merge
-    - study
-  matrix:
-    - design
-    - law
-    - location
-    - medical
-    - observational
-    - status
-    - study
-    - subject
-  backlinks:
-    - design
-    - law
-    - location
-    - medical
-    - observational
-    - status
-    - study
-    - subject
 signatures:
-  computationUuid: "d6945712-f803-8126-9317-4d5101f723c6"
+  computationUuid: "c2d4d7ec-685e-8760-aac1-70c12dc3e98e"
   stages:
     - stage: path
       stageUuid: "83002b36-8858-8b17-bf15-f9abc7f86134"
@@ -69,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "65bd2646-3fd3-83f1-8314-d9dfe504c4bc"
     - stage: horo
-      stageUuid: "d858aeae-c33b-8218-8132-76d9c62c0fff"
+      stageUuid: "97ecc361-d728-835e-a6c9-05c885d2e261"
     - stage: seal
       stageUuid: "038e8ae4-abed-8ef0-bcef-7dc51fd1905d"
     - stage: uuid
-      stageUuid: "f3ebae68-ee2d-8e52-b239-4fdcf7d84b3d"
+      stageUuid: "8a9c21f5-0b49-8ca9-ac75-a37235113631"
 version: 2
 ---
 # medical/study — medical facet

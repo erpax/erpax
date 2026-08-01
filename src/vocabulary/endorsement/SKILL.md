@@ -1,72 +1,35 @@
 ---
 name: endorsement
 description: "Use when reasoning about endorsement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/endorsement
-coordinate: endorsement · 1/base · 4b61e4b2
-contentUuid: "5375c4ac-511c-5d1b-be0f-31e69f3e23f7"
-diamondUuid: "f44ea1c8-3366-86a3-b36b-8a593df52646"
-uuid: "4b61e4b2-136f-836e-b9a3-177ccb8a8c91"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - endorser
-    - law
-    - merge
-    - rating
-    - sti
-  out:
-    - collapse
-    - endorser
-    - law
-    - merge
-    - rating
-    - sti
+atomPath: "vocabulary/endorsement"
+coordinate: "vocabulary/endorsement · 5/round · dd58650f"
+contentUuid: "825f64fe-944a-5473-9cfa-19b2b744d6b5"
+diamondUuid: "4a0831dc-aec4-8b91-8d22-370c86fe4ff7"
+uuid: "dd58650f-0be7-8809-b870-edc387e37217"
+horo: 5
 typography:
-  partition: endorsement
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - rating
-    - sti
-  matrix:
-    - collapse
-    - endorser
-    - law
-    - merge
-    - rating
-    - sti
-  backlinks:
-    - collapse
-    - endorser
-    - law
-    - merge
-    - rating
-    - sti
 signatures:
-  computationUuid: "895d3c92-b6bd-8aea-a07b-cb47ded71dc0"
+  computationUuid: "0114aae7-93a5-812f-9279-e851d7c39d12"
   stages:
     - stage: path
-      stageUuid: "71e5151f-f7ef-85c1-9d6f-2c8fa5cde64f"
+      stageUuid: "2c6534d3-23b1-8c72-98c4-1d0f14b88e14"
     - stage: trinity
-      stageUuid: "cfc51120-9b7d-8bd3-ad1d-9d096ade9947"
+      stageUuid: "57daea3a-8680-876a-837b-6071a5620565"
     - stage: boundary
-      stageUuid: "0dbc92be-c463-8025-b2d1-d82f7cde5cbc"
+      stageUuid: "5599588b-06d2-8f8a-977c-7e93dbe534dd"
     - stage: links
-      stageUuid: "7eb54cf9-8b5e-8c3b-84ef-0eb4246a0086"
+      stageUuid: "a65f549c-67aa-8ae8-83cc-3b0428a1af65"
     - stage: horo
-      stageUuid: "776157c4-ce3a-8800-913d-5aea2e3e1f19"
+      stageUuid: "4ee6dc18-c567-8e9e-87b1-b7dbf53af3a7"
     - stage: seal
-      stageUuid: "a6f0a918-fdc1-8e69-9ef1-4467ddadf8ff"
+      stageUuid: "44938f5b-cd4b-8968-9a30-ba0c511af9c6"
     - stage: uuid
-      stageUuid: "9e8025ba-78d0-89af-8fdb-9f94b98f97e7"
+      stageUuid: "bac9f4b3-f8a3-8ab4-895b-495ff2cf64bb"
 version: 2
 ---
 # endorsement

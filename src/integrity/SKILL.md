@@ -2,94 +2,15 @@
 name: integrity
 description: "Use when verifying that a row's CURRENT bytes are the ones committed — content-uuid as a tamper detector (recompute ≠ stored ⇒ flagged), and the same canonical hash extended into signature, envelope encryption, and reference resolution."
 atomPath: integrity
-coordinate: "integrity · 4/weave · 370a27f2"
-contentUuid: "e32beebc-e6d7-5602-855c-29a7b73856bd"
-diamondUuid: "ec47577d-441d-801b-a7d7-cdecd287af76"
-uuid: "370a27f2-231f-8325-8224-2ba7b8dbf83f"
-horo: 4
-bonds:
-  in:
-    - akashic
-    - anchoring
-    - api
-    - architecture
-    - archival
-    - boundary
-    - certification
-    - confirm
-    - contribution
-    - cost
-    - duality
-    - fallback
-    - fractal
-    - hallucination
-    - hooks
-    - horo
-    - identity
-    - law
-    - merge
-    - organic
-    - path
-    - payload
-    - power
-    - pqc
-    - proof
-    - provenance
-    - purity
-    - refactor
-    - replay
-    - seal
-    - secret
-    - society
-    - standard
-    - stream
-    - sync
-    - upgrade
-    - zeropoint
-  out:
-    - akashic
-    - anchoring
-    - api
-    - architecture
-    - archival
-    - boundary
-    - certification
-    - confirm
-    - contribution
-    - cost
-    - duality
-    - fallback
-    - fractal
-    - hallucination
-    - hooks
-    - horo
-    - identity
-    - law
-    - merge
-    - organic
-    - path
-    - payload
-    - power
-    - pqc
-    - proof
-    - provenance
-    - purity
-    - refactor
-    - replay
-    - seal
-    - secret
-    - society
-    - standard
-    - stream
-    - sync
-    - upgrade
-    - zeropoint
+coordinate: "integrity · 1/base · 8aa78048"
+contentUuid: "902734bb-43f3-57d0-8c45-b8f851bc4f1d"
+diamondUuid: "0237ee3a-c3f8-8c38-b41f-2de4832d33ff"
+uuid: "8aa78048-67c9-8896-908b-f2b2336cc443"
+horo: 1
 typography:
   partition: integrity
-  bondDegree: 114
-  neighbors: []
+  bondDegree: 112
 standards:
-  - "EU-2014/55"
   - "EU-2016/679"
   - "EU-537/2014"
   - "EU-910/2014"
@@ -113,99 +34,8 @@ bindings:
   - "durable_objects/JOB_LOCK"
   - "durable_objects/RATE_LIMITER"
   - "durable_objects/TENANT_QUOTA"
-neighbors:
-  wikilink:
-    - akashic
-    - cost
-    - duality
-    - fractal
-    - hooks
-    - identity
-    - law
-    - merge
-    - payload
-    - proof
-    - society
-    - standard
-    - zeropoint
-  matrix:
-    - akashic
-    - anchoring
-    - api
-    - architecture
-    - archival
-    - boundary
-    - certification
-    - confirm
-    - contribution
-    - cost
-    - duality
-    - fallback
-    - fractal
-    - hallucination
-    - hooks
-    - horo
-    - identity
-    - law
-    - merge
-    - organic
-    - path
-    - payload
-    - power
-    - pqc
-    - proof
-    - provenance
-    - purity
-    - refactor
-    - replay
-    - seal
-    - secret
-    - society
-    - standard
-    - stream
-    - sync
-    - upgrade
-    - zeropoint
-  backlinks:
-    - akashic
-    - anchoring
-    - api
-    - architecture
-    - archival
-    - boundary
-    - certification
-    - confirm
-    - contribution
-    - cost
-    - duality
-    - fallback
-    - fractal
-    - hallucination
-    - hooks
-    - horo
-    - identity
-    - law
-    - merge
-    - organic
-    - path
-    - payload
-    - power
-    - pqc
-    - proof
-    - provenance
-    - purity
-    - refactor
-    - replay
-    - seal
-    - secret
-    - society
-    - standard
-    - stream
-    - sync
-    - upgrade
-    - zeropoint
 signatures:
-  computationUuid: "54d4f7a0-c236-8273-ba11-f3080205cbf8"
+  computationUuid: "cd6c4e86-eb6d-8f2e-bbd8-5cb05b277697"
   stages:
     - stage: path
       stageUuid: "d31b91cc-db18-84dd-8dcf-af4ca97c1b81"
@@ -216,11 +46,11 @@ signatures:
     - stage: links
       stageUuid: "21a6b652-eed2-8c1f-b00b-a0e48b8cfc51"
     - stage: horo
-      stageUuid: "928fc98b-127d-86b3-a79e-a243e1a6efc0"
+      stageUuid: "ae8fc686-5a3b-8409-afd5-0e7d4ab90436"
     - stage: seal
       stageUuid: "b79ede1e-8141-8956-ab9d-c4576b43bfc3"
     - stage: uuid
-      stageUuid: "0756d89f-b22a-8492-91e8-ea2e0180e4e8"
+      stageUuid: "559dc387-2c71-88a4-b095-73cd09816ba3"
 version: 2
 ---
 # integrity — the uuid is the witness; the bytes cannot lie

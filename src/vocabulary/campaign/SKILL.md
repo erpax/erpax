@@ -1,64 +1,34 @@
 ---
 name: campaign
 description: "Use when coordinating multi-channel marketing initiatives — campaign definition, channels, targeting, messaging, schedule, budget, ROI tracking."
-atomPath: vocabulary/campaign
-coordinate: campaign · 7/descent · 3d7062c2
-contentUuid: "a58e8069-5065-51bc-a0a4-b985b755476a"
-diamondUuid: "c8aaa33b-7792-8ad4-a2fd-b10eecf1202e"
-uuid: "3d7062c2-85e8-8ff2-b66b-fa00eece3bbd"
-horo: 7
-bonds:
-  in:
-    - attribution
-    - law
-    - leads
-    - retention
-    - upsell
-  out:
-    - attribution
-    - law
-    - leads
-    - retention
-    - upsell
+atomPath: "vocabulary/campaign"
+coordinate: "vocabulary/campaign · 1/base · 14d9da59"
+contentUuid: "ffd2115b-a415-5057-a016-408fb3e95881"
+diamondUuid: "4864344e-969c-8430-830b-9086843412e5"
+uuid: "14d9da59-73e2-8b17-ace4-90f00823e503"
+horo: 1
 typography:
-  partition: campaign
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - leads
-  matrix:
-    - attribution
-    - law
-    - leads
-    - retention
-    - upsell
-  backlinks:
-    - attribution
-    - law
-    - leads
-    - retention
-    - upsell
 signatures:
-  computationUuid: "739cb6ba-0377-8a6f-8888-b805c30c3493"
+  computationUuid: "d71d4784-c2ea-8f9c-90eb-4c2bc89dd38b"
   stages:
     - stage: path
-      stageUuid: "3aceb151-05bf-8a15-a191-bee4bdc1e2e1"
+      stageUuid: "ceb2de2d-32ef-8ff5-a31a-2068745e8cde"
     - stage: trinity
-      stageUuid: "5a1f85e7-3667-8dca-88c1-61f0c953f1b2"
+      stageUuid: "04c3c742-60a9-8ee6-af5b-ebf6c56ad791"
     - stage: boundary
-      stageUuid: "1957e41e-8766-8df8-8e00-e98a61158ff8"
+      stageUuid: "41d60bef-e99a-811c-a688-e16bc6495bd8"
     - stage: links
-      stageUuid: "f4f786c5-7e94-8101-b7d3-3c39c755fbeb"
+      stageUuid: "3baefb38-52fe-8026-93c5-864911e53d06"
     - stage: horo
-      stageUuid: "3e42d21b-5131-82b5-b80c-deafdd1c2611"
+      stageUuid: "3c8b429c-d6c4-81d2-a2c6-0d5f6f26c23a"
     - stage: seal
-      stageUuid: "e149af5a-2310-8c89-80bd-375599aefaca"
+      stageUuid: "7f1a9a82-5c67-8d5c-ad7c-3f3af405f41b"
     - stage: uuid
-      stageUuid: "56f2cb8f-4368-857c-8c20-ef8fc46b6c2d"
+      stageUuid: "6a907f5e-7634-83e0-afb4-3e5149e2f330"
 version: 2
 ---
 # campaign

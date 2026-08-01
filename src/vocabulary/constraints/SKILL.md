@@ -1,68 +1,35 @@
 ---
 name: constraints
 description: "Use when reasoning about constraints as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/constraints
-coordinate: constraints · 5/round · 2ba6830d
-contentUuid: "72509c5b-e086-525c-8966-6f881f8eacd5"
-diamondUuid: "80232685-2fd1-84e2-89c6-92ca36e5b836"
-uuid: "2ba6830d-aee8-8fd1-92ba-d9b50d108c77"
+atomPath: "vocabulary/constraints"
+coordinate: "vocabulary/constraints · 5/round · 0d94b6de"
+contentUuid: "030cf99a-3bca-560a-afa7-db4625a7a79b"
+diamondUuid: "b166a808-43f2-86aa-aa1d-89a12910b457"
+uuid: "0d94b6de-d62e-852d-9a46-950dc01686e0"
 horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - num
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - num
-    - sti
 typography:
-  partition: constraints
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - num
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - num
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - num
-    - sti
 signatures:
-  computationUuid: "26f210c5-6f4d-8601-8fcf-72b801b44172"
+  computationUuid: "c998d237-26ba-83ca-a25e-7fdef355595b"
   stages:
     - stage: path
-      stageUuid: "eb014609-7697-823f-949d-22a603da4b79"
+      stageUuid: "4c24160f-29a4-873c-98cf-57f8138fcb35"
     - stage: trinity
-      stageUuid: "fbe724df-7922-8c28-b33b-a99cba7030c3"
+      stageUuid: "31884f75-eb41-8817-a004-c072a63e0e3d"
     - stage: boundary
-      stageUuid: "25032af1-a297-8ea5-ab4a-788b8748b891"
+      stageUuid: "e8216387-e51f-8898-a04d-71e6161cd893"
     - stage: links
-      stageUuid: "5865077a-2b6c-820c-9ae8-2b1e4c56edf1"
+      stageUuid: "267007f2-5681-8b95-95a0-d915418ebe9d"
     - stage: horo
-      stageUuid: "b9d68692-fd6b-8d03-95ee-e03c07514e98"
+      stageUuid: "fb94d5f4-55fc-85fd-a2dd-73587557a9c7"
     - stage: seal
-      stageUuid: "9cdfe191-3fb4-8af8-b811-9ff74dad62d1"
+      stageUuid: "e7508998-f6ed-8199-b6df-3fdb99dbe5a6"
     - stage: uuid
-      stageUuid: "0c6a6674-ed2f-82ae-bb7a-39a236033790"
+      stageUuid: "bbf9eeb9-0403-8652-8a57-54f8d37dfa6b"
 version: 2
 ---
 # constraints

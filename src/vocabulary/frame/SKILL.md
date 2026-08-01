@@ -1,73 +1,35 @@
 ---
 name: frame
 description: "Use when reasoning about frame as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/frame
-coordinate: frame · 4/weave · 73e4ee07
-contentUuid: "d85a6677-88be-55d4-8ec5-179294693b4d"
-diamondUuid: "a0fdaa86-ab20-8b8e-9698-a0a0ac4f40cd"
-uuid: "73e4ee07-2106-84e2-993e-1374ba532010"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - size
-    - sti
-    - video
-  out:
-    - collapse
-    - law
-    - merge
-    - size
-    - sti
-    - video
+atomPath: "vocabulary/frame"
+coordinate: "vocabulary/frame · 7/descent · 4a179706"
+contentUuid: "20757b9c-ce9c-509a-94c4-5bc564252e71"
+diamondUuid: "b8e2754c-8d0a-8a0d-acd6-f8584d01f0b0"
+uuid: "4a179706-fed0-86e3-958f-4a58a9e6beda"
+horo: 7
 typography:
-  partition: frame
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - size
-    - sti
-    - video
-  matrix:
-    - collapse
-    - law
-    - merge
-    - size
-    - sti
-    - video
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - size
-    - sti
-    - video
 signatures:
-  computationUuid: "e827d0fb-8a67-8845-9a5a-728684e7e228"
+  computationUuid: "f58018fc-6007-8e5c-a34e-a9b1c1f53bad"
   stages:
     - stage: path
-      stageUuid: "57ae5acc-fc47-8cd1-8592-9734f68a575c"
+      stageUuid: "0953e618-ea8a-84a1-8ec1-881ebf7fd168"
     - stage: trinity
-      stageUuid: "570811c9-8f46-8587-b33c-74a3f2bea596"
+      stageUuid: "2e59ca07-5389-8042-b7ac-7eebf5dd9c9d"
     - stage: boundary
-      stageUuid: "bcdc00f6-bff7-853d-845b-bde26a0b8c35"
+      stageUuid: "d447dd0a-8cc2-8af0-a360-6d46a2bf969d"
     - stage: links
-      stageUuid: "c1d8a331-b231-838b-ade7-7d768f320133"
+      stageUuid: "68c5668c-e898-89f9-b137-3ffc491b660d"
     - stage: horo
-      stageUuid: "a99e38ff-4fa8-84d5-8b88-26627f431880"
+      stageUuid: "eecb6977-683e-8f13-898f-e1e0efdd3825"
     - stage: seal
-      stageUuid: "7fa9464b-03e3-8162-85ea-1d828eebb212"
+      stageUuid: "166aee6b-834c-83c8-b171-c1344265b69a"
     - stage: uuid
-      stageUuid: "0992b384-0ecc-8f1b-9691-50cea6daf5c5"
+      stageUuid: "98660221-bbaa-89bc-bde5-726abfc4a3b5"
 version: 2
 ---
 # frame

@@ -2,87 +2,19 @@
 name: term
 description: "Use when reasoning about term as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: term
-coordinate: term · 1/base · 36a55d09
-contentUuid: "6bd41984-46db-5ea8-bca0-1b1318b64a92"
-diamondUuid: "0bb28005-4c94-8b8d-8ed5-b3638f859715"
-uuid: "36a55d09-67b4-8bbc-adc9-78d5794f4de3"
-horo: 1
-bonds:
-  in:
-    - code
-    - collapse
-    - credits
-    - defined
-    - duration
-    - has
-    - law
-    - loan
-    - merge
-    - set
-    - sti
-    - typical
-  out:
-    - code
-    - collapse
-    - credits
-    - defined
-    - duration
-    - has
-    - law
-    - loan
-    - merge
-    - set
-    - sti
-    - typical
+coordinate: "term · 7/descent · 5364faa5"
+contentUuid: "972a9503-a054-515f-88f1-daa1cd98dc5a"
+diamondUuid: "4dfd455b-9f30-810c-b7c6-ccb2ee27fcfa"
+uuid: "5364faa5-5814-8e40-93c8-c07a8218c69b"
+horo: 7
 typography:
   partition: term
   bondDegree: 43
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - code
-    - collapse
-    - credits
-    - defined
-    - duration
-    - has
-    - law
-    - loan
-    - merge
-    - set
-    - sti
-    - typical
-  matrix:
-    - code
-    - collapse
-    - credits
-    - defined
-    - duration
-    - has
-    - law
-    - loan
-    - merge
-    - set
-    - sti
-    - typical
-  backlinks:
-    - code
-    - collapse
-    - credits
-    - defined
-    - duration
-    - has
-    - law
-    - loan
-    - merge
-    - set
-    - sti
-    - typical
 signatures:
-  computationUuid: "c03bed0d-e10f-8967-9b09-15a91305b93e"
+  computationUuid: "3d8a0510-e842-8843-9a83-c2315bbf4e72"
   stages:
     - stage: path
       stageUuid: "c8a0b759-5578-8de4-94cc-737fe916849a"
@@ -93,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7319488f-6103-8d99-b987-acbeafcbd0f6"
     - stage: horo
-      stageUuid: "641bd51c-0a88-8a67-b53c-e52a93b91011"
+      stageUuid: "a415cc32-251d-8a96-9845-8d4e3dd8c259"
     - stage: seal
-      stageUuid: "dd8c9181-009b-89a8-a0f6-d079da719185"
+      stageUuid: "7bd1382e-3d7b-864a-a366-ef832567b75a"
     - stage: uuid
-      stageUuid: "efff931c-59a2-891f-a870-23dd4a64881b"
+      stageUuid: "b48136ab-b978-8e1d-816b-e1a480b56623"
 version: 2
 ---
 # term

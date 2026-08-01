@@ -2,39 +2,14 @@
 name: tasks
 description: "Use when decomposing a project into WBS elements — assigning tasks, posting time-entries and material costs against a specific task code, computing per-task cost-to-cost % complete that rolls up to project-level IFRS-15 §35 recognition. The hierarchical work-breakdown collection under a project."
 atomPath: "customers/projects/project/tasks"
-coordinate: "customers/projects/project/tasks · 4/weave · 9251ae05"
-contentUuid: "4828ede4-1429-5f23-9bc8-c180839d41a5"
-diamondUuid: "f6b5b302-a375-867e-bac6-c19886b86b3e"
-uuid: "9251ae05-400a-84ed-a4c9-32cef076ec56"
-horo: 4
-bonds:
-  in:
-    - accounting
-    - backlog
-    - identity
-    - law
-    - project
-    - projects
-    - proof
-    - roadmap
-    - standard
-    - task
-    - transaction
-  out:
-    - accounting
-    - backlog
-    - identity
-    - law
-    - projects
-    - proof
-    - roadmap
-    - standard
-    - task
-    - transaction
+coordinate: "customers/projects/project/tasks · 7/descent · de700af0"
+contentUuid: "b5ab1349-7ec4-51c7-b36d-2ddff59bea07"
+diamondUuid: "ec384a41-5168-80f6-89ec-1a0c7acc7347"
+uuid: "de700af0-997b-83d1-9c69-60d079f53c69"
+horo: 7
 typography:
   partition: customers
-  bondDegree: 30
-  neighbors: []
+  bondDegree: 20
 standards:
   - "IFRS IFRS-15 §35 over-time-recognition"
   - "IFRS IFRS-15 §B18 cost-to-cost"
@@ -42,38 +17,8 @@ standards:
   - "ISO-8601-1:2019 date-time`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - identity
-    - law
-    - proof
-    - standard
-    - transaction
-  matrix:
-    - accounting
-    - backlog
-    - identity
-    - law
-    - projects
-    - proof
-    - roadmap
-    - standard
-    - task
-    - transaction
-  backlinks:
-    - accounting
-    - backlog
-    - identity
-    - law
-    - projects
-    - proof
-    - roadmap
-    - standard
-    - task
-    - transaction
 signatures:
-  computationUuid: "ce7d4456-4afd-837a-8874-e5ba94110055"
+  computationUuid: "f861713f-0580-88c6-be77-69ccc3692a8b"
   stages:
     - stage: path
       stageUuid: "a57cdb53-1b7d-81af-a372-2690819ffcd8"
@@ -82,13 +27,13 @@ signatures:
     - stage: boundary
       stageUuid: "c09c932d-8b48-820d-aab6-b5961d11eb7c"
     - stage: links
-      stageUuid: "25ec2227-8b1f-81cb-a63a-1f308f0cb1a0"
+      stageUuid: "124fb871-33df-8351-80fd-0dc1cc10c465"
     - stage: horo
-      stageUuid: "156aa628-c9a7-89e4-be7d-33a1723483f6"
+      stageUuid: "e56b78fa-a43a-8ebd-9c7f-1c7ef58d9b14"
     - stage: seal
       stageUuid: "82274d5a-73a9-8296-8ea8-f10b74ff350a"
     - stage: uuid
-      stageUuid: "b8d41645-259c-84b5-91e7-fd882219f253"
+      stageUuid: "b1880fbd-4d02-87e4-862f-ae9c2132afc6"
 version: 2
 ---
 # project-tasks

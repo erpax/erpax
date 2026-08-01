@@ -1,111 +1,37 @@
 ---
 name: perspective
-description: "Use when the SAME content-uuid node must read differently per party — a transfer is give for the payer and take for the payee, a supplier edge is \\\"my customer\\\" from the other end, an invoice is AR for the seller and AP for the buyer. The point-of-view projection."
+description: "Use when the SAME content-uuid node must read differently per party — a transfer is give for the payer and take for the payee, a supplier edge is \\\\\\\"my customer\\\\\\\" from the other end, an invoice is AR for the seller and AP for the buyer. The point-of-view projection."
 atomPath: perspective
-coordinate: perspective · 4/weave · aaca668f
-contentUuid: "0eaed05e-5af5-527c-8ac0-41d485461cc5"
-diamondUuid: "d24f6d59-db65-815b-b177-07f3ae24d4c6"
-uuid: "aaca668f-ae71-8684-bc53-bfb17293eba9"
+coordinate: "perspective · 4/weave · 66720159"
+contentUuid: "edecd533-de4d-5274-890f-c4a7d3306427"
+diamondUuid: "62ec8bed-1419-8ed3-a51a-6e2a8f48e33b"
+uuid: "66720159-f69b-8da2-857a-9f99dab2b08b"
 horo: 4
-bonds:
-  in:
-    - accounting
-    - balance
-    - brainstorm
-    - connections
-    - corruption
-    - duality
-    - entry
-    - fields
-    - flow
-    - give
-    - identity
-    - law
-    - merge
-    - take
-  out:
-    - accounting
-    - balance
-    - brainstorm
-    - connections
-    - corruption
-    - duality
-    - entry
-    - fields
-    - flow
-    - give
-    - identity
-    - law
-    - merge
-    - take
 typography:
   partition: perspective
-  bondDegree: 42
-  neighbors: []
+  bondDegree: 60
 standards:
   - "ISO 20022 party-role-perspective (debtor/creditor are one transfer)"
+  - "ISO 20022 party-role-perspective (debtor/creditor are one transfer)`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - balance
-    - connections
-    - corruption
-    - duality
-    - fields
-    - flow
-    - give
-    - identity
-    - law
-    - merge
-    - take
-  matrix:
-    - accounting
-    - balance
-    - brainstorm
-    - connections
-    - corruption
-    - duality
-    - entry
-    - fields
-    - flow
-    - give
-    - identity
-    - law
-    - merge
-    - take
-  backlinks:
-    - accounting
-    - balance
-    - brainstorm
-    - connections
-    - corruption
-    - duality
-    - entry
-    - fields
-    - flow
-    - give
-    - identity
-    - law
-    - merge
-    - take
 signatures:
-  computationUuid: "05887b73-13ff-8a0b-a07a-a7c1447016cd"
+  computationUuid: "88877fe0-bf84-8565-a819-4d06a15efefb"
   stages:
     - stage: path
       stageUuid: "47043968-a748-879d-a82c-692c8f9fa7f6"
     - stage: trinity
       stageUuid: "d4f23436-791f-8b64-849f-1c3dfdedf620"
     - stage: boundary
-      stageUuid: "63cd6c10-0c07-8aa9-be3f-eeca20dcc9da"
+      stageUuid: "027f72f7-7895-8c50-ab28-2faad928a41e"
     - stage: links
       stageUuid: "ec6dbe83-2341-89a6-9329-0240439e21a6"
     - stage: horo
-      stageUuid: "4ae13f91-47c3-8271-9c8c-813c2f51f0b2"
+      stageUuid: "108781e2-4cb0-8f49-9a51-d6b450c5cb6f"
     - stage: seal
-      stageUuid: "096df152-b696-8778-af40-c0a660881c1d"
+      stageUuid: "06fe005b-da97-8e4d-933a-1cafaf819730"
     - stage: uuid
-      stageUuid: "371bb55a-35ba-80df-9e86-6e0a121f9e8a"
+      stageUuid: "3bf442f0-f927-8ed3-b662-e6ae35371918"
 version: 2
 ---
 # perspective — switch the point of view (derived, never stored)

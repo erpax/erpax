@@ -1,78 +1,35 @@
 ---
 name: chemical
 description: "Use when reasoning about chemical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/chemical
-coordinate: chemical · 4/weave · 716b93eb
-contentUuid: "aaf01e91-acc7-5b58-8104-692872919d98"
-diamondUuid: "9433cfac-a807-8b90-8df5-8a3eaa84a55b"
-uuid: "716b93eb-d3f4-87e5-9c56-85170cf4af14"
+atomPath: "vocabulary/chemical"
+coordinate: "vocabulary/chemical · 4/weave · 1e435f80"
+contentUuid: "9da36902-f512-5006-a226-b55c4fd31f17"
+diamondUuid: "bee43859-ad64-8301-a74b-76914d8a0373"
+uuid: "1e435f80-456a-8ece-ab27-b7434c489435"
 horo: 4
-bonds:
-  in:
-    - collapse
-    - composition
-    - law
-    - merge
-    - role
-    - sti
-    - substance
-  out:
-    - collapse
-    - composition
-    - law
-    - merge
-    - role
-    - sti
-    - substance
 typography:
-  partition: chemical
+  partition: vocabulary
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - composition
-    - law
-    - merge
-    - role
-    - sti
-    - substance
-  matrix:
-    - collapse
-    - composition
-    - law
-    - merge
-    - role
-    - sti
-    - substance
-  backlinks:
-    - collapse
-    - composition
-    - law
-    - merge
-    - role
-    - sti
-    - substance
 signatures:
-  computationUuid: "c407ab50-3fa0-87e0-b07f-7997332733de"
+  computationUuid: "d3d0792d-7142-8feb-9631-d2ff25a7ff4e"
   stages:
     - stage: path
-      stageUuid: "6ac8ccb6-d654-80f1-a6cf-f2bb91e74f91"
+      stageUuid: "ee6961be-9072-8c2a-aa94-b9746553ced4"
     - stage: trinity
-      stageUuid: "e5db206e-18ed-84f6-bb67-bf56872dd9a9"
+      stageUuid: "8a8d2ee3-e39a-8dd0-86be-b4981c811aa9"
     - stage: boundary
-      stageUuid: "42cecbcf-0208-8e35-adec-a37d07413762"
+      stageUuid: "2608331a-9723-8e20-9093-a989d3252647"
     - stage: links
-      stageUuid: "34ed48d5-b7c1-813c-9020-5ea83f12f89c"
+      stageUuid: "edae54d6-0581-82c7-8863-e3b3c9868bc6"
     - stage: horo
-      stageUuid: "e294d3e6-03fd-8eb4-8a19-89d9574012af"
+      stageUuid: "815327b8-2339-8ac7-83a9-7c9a8d4d19d4"
     - stage: seal
-      stageUuid: "e8f86fab-aa1c-8645-821a-4ccfbcfc2656"
+      stageUuid: "f1aab4fe-12e7-81f6-9792-9482c3752031"
     - stage: uuid
-      stageUuid: "3207156f-1455-8ee8-b130-0a8a94673852"
+      stageUuid: "857dc1f0-c44e-82c5-88e3-cd97b17c4d4e"
 version: 2
 ---
 # chemical

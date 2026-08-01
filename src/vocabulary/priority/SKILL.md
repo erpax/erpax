@@ -1,69 +1,34 @@
 ---
 name: priority
 description: "Use when assigning work urgency or escalation level — P1/P2/P3/P4, Blocker/Critical/High/Medium/Low, SLA breach risk. The relative weight field."
-atomPath: vocabulary/priority
-coordinate: priority · 1/base · 9741efc7
-contentUuid: "7da601a0-5e7b-5c74-a108-9506cbabd1a9"
-diamondUuid: "a31e40a8-bc5a-8f3a-a66f-9456ffc45011"
-uuid: "9741efc7-2f3b-8ee1-9fdd-b6cfd9e095d6"
-horo: 1
-bonds:
-  in:
-    - backlog
-    - definitions
-    - law
-    - passenger
-    - queue
-    - sla
-  out:
-    - backlog
-    - definitions
-    - law
-    - passenger
-    - queue
-    - sla
+atomPath: "vocabulary/priority"
+coordinate: "vocabulary/priority · 7/descent · e26b6a3f"
+contentUuid: "7b80f00a-19b1-5cf5-bf2a-aecb67c664d1"
+diamondUuid: "11c1a673-80ee-804b-b3f6-a5299738c0d9"
+uuid: "e26b6a3f-b7cc-822e-83f9-78070e9bbbd4"
+horo: 7
 typography:
-  partition: priority
+  partition: vocabulary
   bondDegree: 18
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - definitions
-    - law
-    - sla
-  matrix:
-    - backlog
-    - definitions
-    - law
-    - passenger
-    - queue
-    - sla
-  backlinks:
-    - backlog
-    - definitions
-    - law
-    - passenger
-    - queue
-    - sla
 signatures:
-  computationUuid: "44d1a138-33fd-8c63-ab66-0c664a9a22c1"
+  computationUuid: "a2b746de-ffce-8d47-a3d6-3974a12e59b2"
   stages:
     - stage: path
-      stageUuid: "fb802e09-01ef-85b3-ab98-6c12d5a229db"
+      stageUuid: "17fc4bef-3c2a-8779-89a2-008b55da246e"
     - stage: trinity
-      stageUuid: "0935edf1-f503-8c0e-bc2f-72d10e687006"
+      stageUuid: "1b8fb75c-6e62-8901-9d5a-6a684da6a30e"
     - stage: boundary
-      stageUuid: "740d20a9-f104-8b75-8df5-49fb91287be0"
+      stageUuid: "c0ee5401-aea6-8862-8908-785ed19e02b4"
     - stage: links
-      stageUuid: "6d2843e6-f640-8630-b6b2-729ea3d89c30"
+      stageUuid: "45bd5668-c438-89bf-8069-ca5b29c5d7ff"
     - stage: horo
-      stageUuid: "05ab34b2-f078-843e-86ed-d5196bb19751"
+      stageUuid: "b9db0065-2270-87a0-8131-c5a1cd110ff9"
     - stage: seal
-      stageUuid: "90d797a9-9802-8e4c-a91c-4f0ff407af81"
+      stageUuid: "d4d1bdb2-e537-87dc-9ee8-173f583c47ce"
     - stage: uuid
-      stageUuid: "a5ae465b-73db-8b5c-9733-5f437ee1b964"
+      stageUuid: "8a177edd-9a27-8370-994f-d2690ff6dcce"
 version: 2
 ---
 # priority

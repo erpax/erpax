@@ -1,68 +1,35 @@
 ---
 name: interest
 description: "Use when reasoning about interest as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/interest
-coordinate: interest · 5/round · 971b5bc6
-contentUuid: "8db95ec4-29aa-5eab-8750-d817f711ba78"
-diamondUuid: "84515ce6-22c0-8776-b86b-07b4cb65a423"
-uuid: "971b5bc6-8d68-861d-944f-64c18d9d8f29"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - rate
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - rate
-    - sti
+atomPath: "vocabulary/interest"
+coordinate: "vocabulary/interest · 7/descent · baf26dfc"
+contentUuid: "8290856e-8e44-583d-84d2-940054c48b86"
+diamondUuid: "a76994ae-ee7b-85ed-aba8-d76866e3e9d7"
+uuid: "baf26dfc-8e6f-890f-9971-38b35f62ae06"
+horo: 7
 typography:
-  partition: interest
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - rate
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - rate
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - rate
-    - sti
 signatures:
-  computationUuid: "52e5d987-ade8-856c-a558-8fb1618629b9"
+  computationUuid: "3d491ded-f306-866e-91e5-c6d9fd8435f1"
   stages:
     - stage: path
-      stageUuid: "95e3dacf-71c3-8bb0-8b26-e48a25cc7dd0"
+      stageUuid: "78219fcd-ca58-822c-913f-47f897ce1efe"
     - stage: trinity
-      stageUuid: "7ac2b285-0ada-8105-9e4d-9481b135abe1"
+      stageUuid: "60a74daa-544d-8673-ae4e-ddfbdacaedac"
     - stage: boundary
-      stageUuid: "b8dfa4ca-29b7-88f8-a152-14a2be091899"
+      stageUuid: "c6efa0fa-71fd-8d62-a96b-7e2e40cbebb6"
     - stage: links
-      stageUuid: "28337f0e-9ca1-89ed-8618-8cd4cbd7f6e5"
+      stageUuid: "d21882ab-8e11-830a-bd97-36b07530fcb9"
     - stage: horo
-      stageUuid: "06882567-46e1-8a8d-b88a-1822d140d4e8"
+      stageUuid: "4c4eb4e6-6936-8f6a-946f-c1e5a9ddb459"
     - stage: seal
-      stageUuid: "6093ae1d-d7c2-8c31-9afd-c85437a20b45"
+      stageUuid: "5b1cb4b1-87cc-819a-a502-ab4aa0616b4d"
     - stage: uuid
-      stageUuid: "e59ce3ab-140f-8283-b62e-7e796e642467"
+      stageUuid: "2738b578-aed2-822b-af3d-d9a9c7fc25c2"
 version: 2
 ---
 # interest

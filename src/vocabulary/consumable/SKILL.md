@@ -1,58 +1,35 @@
 ---
 name: consumable
 description: Use when reasoning about consumable — A pointer to another product (or multiple products) for which this product is a consumable.
-atomPath: vocabulary/consumable
-coordinate: consumable · 8/crest · e136ffcb
-contentUuid: "01a966ef-7a0c-5c2a-b609-7c4f37c333c7"
-diamondUuid: "2c053fae-e2da-8731-a44a-a5bf7b80ed1c"
-uuid: "e136ffcb-9fa2-8c84-a553-4b8d617fbdc4"
-horo: 8
-bonds:
-  in:
-    - law
-    - product
-    - thing
-  out:
-    - law
-    - product
-    - thing
+atomPath: "vocabulary/consumable"
+coordinate: "vocabulary/consumable · 7/descent · 92ba7f85"
+contentUuid: "aef4cd5b-60e4-5c8d-a4d7-247d92c603e0"
+diamondUuid: "a8a31318-dd7d-8683-a6a0-58a17766729b"
+uuid: "92ba7f85-469b-8f34-960a-e9a6d5ea282e"
+horo: 7
 typography:
-  partition: consumable
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - product
-    - thing
-  matrix:
-    - law
-    - product
-    - thing
-  backlinks:
-    - law
-    - product
-    - thing
 signatures:
-  computationUuid: "6f519b5e-80d0-814c-b33b-50f55ef65363"
+  computationUuid: "f2d513f3-7a35-836f-a575-e42eb035efb4"
   stages:
     - stage: path
-      stageUuid: "6fde68c7-c342-8454-9e32-7444f5d91cf8"
+      stageUuid: "f0f5aac7-e2ca-8f7a-9f5b-e9a7861761d2"
     - stage: trinity
-      stageUuid: "456c94fe-e45b-8c93-8c56-41c95b0c969d"
+      stageUuid: "d41b24ce-872e-83c9-9b7f-4d3fc3b48ad9"
     - stage: boundary
-      stageUuid: "04c52677-6c84-829e-bdf8-21b68812585e"
+      stageUuid: "f8719eb7-007f-8f9a-85b3-a41c8da56a16"
     - stage: links
-      stageUuid: "71e92676-c109-8de2-a555-d5af7f413035"
+      stageUuid: "f54c55ce-4f1f-83b2-98b1-a67a0bf55511"
     - stage: horo
-      stageUuid: "59a1e327-fe30-8c27-883b-212e496a228f"
+      stageUuid: "60a93114-1755-8beb-b14b-6b4fd1e953ae"
     - stage: seal
-      stageUuid: "ef2ae296-99ea-8415-8834-d54b0f4f7099"
+      stageUuid: "0df27b21-004b-8d47-8552-b667434cee9a"
     - stage: uuid
-      stageUuid: "7925540d-a357-8c7d-a8c5-624923284372"
+      stageUuid: "56636379-f854-8630-813f-e3b9147aaab8"
 version: 2
 ---
 # consumable

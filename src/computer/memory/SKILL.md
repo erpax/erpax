@@ -2,101 +2,19 @@
 name: memory
 description: "Use when reasoning about memory as a part of [[computer]] — pivot to canonical @/memory/quantum; nested not duplicated."
 atomPath: "computer/memory"
-coordinate: "computer/memory · 2/share · 591ed1db"
-contentUuid: "765bfdc8-641a-5e59-8b72-700e35ff1916"
-diamondUuid: "1cc61a2c-b5e5-8820-b525-39fd29497248"
-uuid: "591ed1db-ad50-84fd-a887-73066ca836cc"
-horo: 2
-bonds:
-  in:
-    - akashic
-    - anchor
-    - architecture
-    - collapse
-    - computer
-    - diamond
-    - law
-    - memory
-    - merge
-    - quantum
-    - requirements
-    - seal
-    - session
-    - sti
-    - sync
-    - thought
-    - uuid
-  out:
-    - akashic
-    - anchor
-    - architecture
-    - collapse
-    - computer
-    - diamond
-    - law
-    - memory
-    - merge
-    - quantum
-    - requirements
-    - seal
-    - session
-    - sti
-    - sync
-    - thought
-    - uuid
+coordinate: "computer/memory · 7/descent · e431a8a0"
+contentUuid: "d35a7536-1e85-58b1-9bc4-842c89f2e317"
+diamondUuid: "0e49cfb4-a190-8097-8968-927b3d2ce11d"
+uuid: "e431a8a0-e745-84d5-a92a-b788d372cb66"
+horo: 7
 typography:
   partition: computer
   bondDegree: 96
-  neighbors:
-    - diamond
-    - hallucination
-    - purity
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - computer
-    - law
-    - memory
-  matrix:
-    - akashic
-    - anchor
-    - architecture
-    - collapse
-    - computer
-    - diamond
-    - law
-    - memory
-    - merge
-    - quantum
-    - requirements
-    - seal
-    - session
-    - sti
-    - sync
-    - thought
-    - uuid
-  backlinks:
-    - akashic
-    - anchor
-    - architecture
-    - collapse
-    - computer
-    - diamond
-    - law
-    - memory
-    - merge
-    - quantum
-    - requirements
-    - seal
-    - session
-    - sti
-    - sync
-    - thought
-    - uuid
 signatures:
-  computationUuid: "a0c3199d-d6d4-8a68-9b3d-f9f8bb0b4507"
+  computationUuid: "5a452607-57a3-8507-a390-173b162e71db"
   stages:
     - stage: path
       stageUuid: "3285e7a3-7afc-883c-b040-91e6202537e8"
@@ -107,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3419648d-e303-86ef-be3f-717fa2ebcb62"
     - stage: horo
-      stageUuid: "45f52909-198a-8422-be1c-83fee4ba0c16"
+      stageUuid: "3740cb86-4d5c-8316-8efb-a283faf14454"
     - stage: seal
       stageUuid: "5e53a1d1-cf42-8321-bb55-a014c99fa08b"
     - stage: uuid
-      stageUuid: "df0c38fc-26d0-8fd8-b519-14b09fc71024"
+      stageUuid: "09d35d57-a1fd-807e-8918-444a2708c0e5"
 version: 2
 ---
 # computer/memory — holds working state

@@ -2,74 +2,21 @@
 name: billing
 description: "Use when reasoning about billing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: billing
-coordinate: "billing · 5/round · 6196f874"
-contentUuid: "7a9a8dd2-2779-5d9a-8e30-ce81ee312da1"
-diamondUuid: "f2a50c86-4f0b-8861-a1f3-5e0cdd928cc0"
-uuid: "6196f874-4aa8-8cba-8639-e1cde60b9763"
-horo: 5
-bonds:
-  in:
-    - address
-    - collapse
-    - duration
-    - increment
-    - law
-    - merge
-    - period
-    - start
-    - sti
-  out:
-    - address
-    - collapse
-    - duration
-    - increment
-    - law
-    - merge
-    - period
-    - start
-    - sti
+coordinate: "billing · 7/descent · a8f6fc80"
+contentUuid: "6ca461f7-11cf-5e24-86d0-7289aa0ee178"
+diamondUuid: "c63f14b9-2d2e-82fe-9ae3-20c739d69189"
+uuid: "a8f6fc80-f0b9-81b1-b961-3c621fb93d6c"
+horo: 7
 typography:
   partition: billing
   bondDegree: 30
-  neighbors: []
 standards:
   - "ISO/IEC-29119"
   - "PCI-DSS"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - address
-    - collapse
-    - duration
-    - increment
-    - law
-    - merge
-    - period
-    - start
-    - sti
-  matrix:
-    - address
-    - collapse
-    - duration
-    - increment
-    - law
-    - merge
-    - period
-    - start
-    - sti
-  backlinks:
-    - address
-    - collapse
-    - duration
-    - increment
-    - law
-    - merge
-    - period
-    - start
-    - sti
 signatures:
-  computationUuid: "57b8f5ee-d663-8be7-898e-ac5f2041b81f"
+  computationUuid: "7d733b3b-bfc4-820e-b2f5-95ce4f93ff66"
   stages:
     - stage: path
       stageUuid: "8052b17b-559b-88a1-bf7f-0acf523781ef"
@@ -80,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "0f3a34c3-2e00-8d4b-a6b0-ae27f4848591"
     - stage: horo
-      stageUuid: "40b301e0-3eb8-8f4e-a62e-ff3c158fa739"
+      stageUuid: "7bd59856-83ed-835d-911a-d82832a06ad4"
     - stage: seal
       stageUuid: "0b571f3e-80f6-8ee6-aa17-91fb516af0f5"
     - stage: uuid
-      stageUuid: "5c288b1b-4d4b-8346-89ef-bb8bdffc5189"
+      stageUuid: "fee67f44-74e6-8f20-ad5d-fbbe41a7764f"
 version: 2
 ---
 # billing

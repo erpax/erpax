@@ -1,68 +1,35 @@
 ---
 name: recourse
 description: "Use when reasoning about recourse as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/recourse
-coordinate: recourse · 8/crest · 114c89e0
-contentUuid: "47e9c1c7-b099-563b-8eb3-1c6a65566271"
-diamondUuid: "5ac54a7b-4814-8d27-8f16-bde850b227b8"
-uuid: "114c89e0-12c0-850a-b2ba-1607e7c4a604"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - loan
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - loan
-    - merge
-    - sti
+atomPath: "vocabulary/recourse"
+coordinate: "vocabulary/recourse · 1/base · c085c1df"
+contentUuid: "f4f3aeaf-3bbd-53af-b638-9be614ad4425"
+diamondUuid: "732aae39-1a50-8ff9-b942-571a9ae30b9c"
+uuid: "c085c1df-6d28-82b1-8abe-1628699f9849"
+horo: 1
 typography:
-  partition: recourse
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - loan
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - loan
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - loan
-    - merge
-    - sti
 signatures:
-  computationUuid: "a6ac71d9-c538-8912-bb03-c6ed14c55fb7"
+  computationUuid: "ea0e3ef3-3620-8745-9f7c-5a05268c3fdc"
   stages:
     - stage: path
-      stageUuid: "facdf978-210f-86ca-b0eb-ee9692264a87"
+      stageUuid: "04701fc0-536d-8f2d-a8ae-708dafbd9cb2"
     - stage: trinity
-      stageUuid: "add374e7-012b-848b-8300-8c4f701007f1"
+      stageUuid: "1312e4b2-9c36-8780-a1ca-c2fbe95b4770"
     - stage: boundary
-      stageUuid: "0c590466-03d8-86f0-8d99-5847bf5b3430"
+      stageUuid: "bbb8486f-f4a7-8da1-aad9-092884e6f2ed"
     - stage: links
-      stageUuid: "3eaef740-9c49-8969-9d62-d56c7b2bd22d"
+      stageUuid: "6f2f2c4d-de4b-8716-8120-e626f177f4be"
     - stage: horo
-      stageUuid: "e564a81b-faf1-8c90-9a07-09beca28925f"
+      stageUuid: "a6172521-8407-8ee7-8b39-2592d0131977"
     - stage: seal
-      stageUuid: "008bfa7b-a6df-8fcb-8ee0-0aedc507d840"
+      stageUuid: "935c620b-3a00-8fe2-a5f5-407a84f80e89"
     - stage: uuid
-      stageUuid: "fd35ce0c-28bf-8229-8f49-42ff7875c6c8"
+      stageUuid: "57cde919-151c-8084-996b-79c26cf06018"
 version: 2
 ---
 # recourse

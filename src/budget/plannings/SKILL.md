@@ -2,34 +2,14 @@
 name: plannings
 description: "Use when creating or approving period-budgets by department or cost-center — monthly, quarterly, annual — with GL line items, period-lock enforcement, segregation-of-duties on approval, and fiscal-year comparisons; IAS-1/IAS-8/ASC-270 financial presentation. The budget approval and planning register."
 atomPath: "budget/plannings"
-coordinate: "budget/plannings · 8/crest · a171bec2"
-contentUuid: "61c1c7d2-2d58-5b73-868d-bf29e90307ad"
-diamondUuid: "b713bae9-2aab-850e-9578-4602defe7847"
-uuid: "a171bec2-f87f-80d0-bdfc-579c0e271c83"
+coordinate: "budget/plannings · 8/crest · 0e9f2d56"
+contentUuid: "468b3316-b238-5a04-aa2b-8f04c3f92e4a"
+diamondUuid: "8be9feb1-2e2e-82f8-92a3-8d7e5fbd6a8a"
+uuid: "0e9f2d56-f814-805f-b1c4-68d3f51b6cf6"
 horo: 8
-bonds:
-  in:
-    - accounting
-    - budgetvariance
-    - identity
-    - law
-    - planning
-    - proof
-    - standard
-    - variance
-  out:
-    - accounting
-    - budgetvariance
-    - identity
-    - law
-    - planning
-    - proof
-    - standard
-    - variance
 typography:
   partition: budget
   bondDegree: 25
-  neighbors: []
 standards:
   - "IFRS IAS-1 presentation-of-financial-statements"
   - "IFRS IAS-8 accounting-policies-changes-and-errors"
@@ -41,33 +21,8 @@ standards:
   - "US-GAAP ASC-270 interim-reporting"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - identity
-    - law
-    - proof
-    - standard
-  matrix:
-    - accounting
-    - budgetvariance
-    - identity
-    - law
-    - planning
-    - proof
-    - standard
-    - variance
-  backlinks:
-    - accounting
-    - budgetvariance
-    - identity
-    - law
-    - planning
-    - proof
-    - standard
-    - variance
 signatures:
-  computationUuid: "dab6fefa-673f-8e3d-b5d4-de106d03ad80"
+  computationUuid: "9cfb42c9-7c9f-838a-a279-f2dc3651ae17"
   stages:
     - stage: path
       stageUuid: "71d3b8b3-6d52-862e-9672-5e1e69bc72a0"
@@ -78,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "07cfe24c-f671-8aed-bc32-0a1f5c14b0c6"
     - stage: horo
-      stageUuid: "cce3f77f-9197-854b-b651-4fd6fe792bd9"
+      stageUuid: "0d29e932-cffe-8c46-9751-6834d9e4823f"
     - stage: seal
       stageUuid: "27094773-9500-8f10-b216-8585885f7436"
     - stage: uuid
-      stageUuid: "bfeac829-3d81-8463-a0bf-638a45e6ddc9"
+      stageUuid: "8187ea98-29de-897a-a6ac-e1b7f4486819"
 version: 2
 ---
 # budget-planning

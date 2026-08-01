@@ -2,38 +2,14 @@
 name: commitments
 description: "Use when authorizing and tracking pre-contract spending commitments — SOX §302 authorization matrix, spending-authority validation, budget reservation (reserved/committed/spent/available), segregation-of-duties enforcement, PO or contract linkage, and Bulgaria ZKOD notarization. The commitment-ledger collection."
 atomPath: commitments
-coordinate: "commitments · 7/descent · 3d81535e"
-contentUuid: "f5d89470-6422-5c05-8cf2-aa67a81eac70"
-diamondUuid: "ff735476-34ea-8c06-8a48-897f97c0f07a"
-uuid: "3d81535e-a718-8295-b02d-e315f207dd76"
-horo: 7
-bonds:
-  in:
-    - accounting
-    - collections
-    - commitment
-    - identity
-    - law
-    - orders
-    - proof
-    - special
-    - standard
-    - transaction
-  out:
-    - accounting
-    - collections
-    - commitment
-    - identity
-    - law
-    - orders
-    - proof
-    - special
-    - standard
-    - transaction
+coordinate: "commitments · 4/weave · b2f4017c"
+contentUuid: "5365cdbe-0247-515b-b964-4094532eaa12"
+diamondUuid: "95ae8976-fa7e-87b8-bbe7-b6d8c060cae5"
+uuid: "b2f4017c-7a95-87ba-8c53-312850d42972"
+horo: 4
 typography:
   partition: commitments
   bondDegree: 0
-  neighbors: []
 standards:
   - "COSO Internal-Control-Integrated-Framework 2013 authorization"
   - "GDPR Art.6(1)(b) lawful-basis-contract-processing"
@@ -54,40 +30,8 @@ standards:
   - "SOX §404 internal-controls spending-authority`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - collections
-    - identity
-    - law
-    - orders
-    - proof
-    - standard
-    - transaction
-  matrix:
-    - accounting
-    - collections
-    - commitment
-    - identity
-    - law
-    - orders
-    - proof
-    - special
-    - standard
-    - transaction
-  backlinks:
-    - accounting
-    - collections
-    - commitment
-    - identity
-    - law
-    - orders
-    - proof
-    - special
-    - standard
-    - transaction
 signatures:
-  computationUuid: "fc5d9d81-ae49-87ba-91ba-c02c27434fd8"
+  computationUuid: "01885adb-4db0-8dfa-8045-788d720dbd5c"
   stages:
     - stage: path
       stageUuid: "6b454458-5665-8fda-a6ae-b53b3ef171db"
@@ -98,11 +42,11 @@ signatures:
     - stage: links
       stageUuid: "2c6db537-bfc3-814b-8a5a-88a457198bdc"
     - stage: horo
-      stageUuid: "010de89d-a714-8c64-b071-9b13ac258b3d"
+      stageUuid: "f856d2dd-ed3d-8783-8d0c-6505ea5ba113"
     - stage: seal
       stageUuid: "402aecac-2306-82ae-b9b3-e1acec77cd17"
     - stage: uuid
-      stageUuid: "5f3c3f60-4010-8312-a70b-71f9526f8aa9"
+      stageUuid: "1c6c5831-f702-8b23-a19e-a545476377bf"
 version: 2
 ---
 # commitments

@@ -1,68 +1,35 @@
 ---
 name: arena
 description: "Use when reasoning about arena as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/arena
-coordinate: arena · 2/share · 39222579
-contentUuid: "11634f1a-f883-58bc-a7b2-db2f0e017101"
-diamondUuid: "c177c3e2-dcf7-83ff-a332-adcf5536f45e"
-uuid: "39222579-66fc-8530-8b6b-57014d00ba30"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - stadium
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - stadium
-    - sti
+atomPath: "vocabulary/arena"
+coordinate: "vocabulary/arena · 4/weave · 746b9814"
+contentUuid: "c4fc0c04-af69-5d08-9b98-a2f3e518e503"
+diamondUuid: "ad2084dc-e3eb-8a3a-b6a3-620f846c5240"
+uuid: "746b9814-17ad-8ffa-91cc-eea2c12e37a5"
+horo: 4
 typography:
-  partition: arena
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - stadium
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - stadium
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - stadium
-    - sti
 signatures:
-  computationUuid: "8a9f6c36-c66e-8f6a-b18b-0d3b8dc8532f"
+  computationUuid: "6891122d-749d-8cc1-b67f-4276dadc7d1f"
   stages:
     - stage: path
-      stageUuid: "b943f6f7-599b-83a4-9da2-4546e5b91b77"
+      stageUuid: "3f7ca00a-6fd6-81cb-bffd-79c51f23222e"
     - stage: trinity
-      stageUuid: "09d31299-735d-8320-a005-e29bd7fe8f03"
+      stageUuid: "1e4e2462-2d62-8a67-b767-0f8148ca343b"
     - stage: boundary
-      stageUuid: "a925b74d-3197-84af-86cb-03abeb22ed66"
+      stageUuid: "e97cec25-fb99-8ec0-880e-737ccb879efa"
     - stage: links
-      stageUuid: "9070f3ee-0ab9-84d1-8bf6-bfaf67b7dfd4"
+      stageUuid: "6699a17d-cbc3-854c-a0b0-b73d3cf0ec75"
     - stage: horo
-      stageUuid: "dd5eea5b-9f85-8ba2-a6c9-1850486aad0a"
+      stageUuid: "b95f0079-2ca9-8a50-9af4-2c6b314c641b"
     - stage: seal
-      stageUuid: "93459fbe-2810-8e33-ae15-7d4f53b14eb4"
+      stageUuid: "a776c33d-dc0c-87b0-bbce-2a8788c38a8e"
     - stage: uuid
-      stageUuid: "4e684758-07b2-82f3-b42c-b7ac02a9926f"
+      stageUuid: "458995ba-d1f8-8c72-8581-3e7a1d5a8aa5"
 version: 2
 ---
 # arena

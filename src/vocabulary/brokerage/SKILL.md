@@ -1,68 +1,35 @@
 ---
 name: brokerage
 description: "Use when reasoning about brokerage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/brokerage
-coordinate: brokerage · 4/weave · 2c1d56c4
-contentUuid: "3aa5c2ed-65f4-56e3-bc1c-92712cf6f4a9"
-diamondUuid: "78c3e574-bb1b-80b9-adf6-f67b86f707e9"
-uuid: "2c1d56c4-96f1-8304-997c-64add4c053d6"
-horo: 4
-bonds:
-  in:
-    - account
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - account
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/brokerage"
+coordinate: "vocabulary/brokerage · 8/crest · d3601ab1"
+contentUuid: "e188c4fa-0950-5e28-a542-7d29bfc5263b"
+diamondUuid: "5ea45708-7f32-8223-97ba-377965bc27f7"
+uuid: "d3601ab1-8199-88f6-8297-d4487e54f331"
+horo: 8
 typography:
-  partition: brokerage
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - account
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - account
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - account
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "2144b781-aad2-8a21-a959-0698ea56c778"
+  computationUuid: "5d073c12-0d20-88d0-addb-0214fde05def"
   stages:
     - stage: path
-      stageUuid: "1628d88a-8f2c-878d-b08e-15e77871567a"
+      stageUuid: "d98709a3-2f44-8429-ac5b-06a47e18e7d2"
     - stage: trinity
-      stageUuid: "b38aa1d0-6a46-8a72-aa04-cfa5147b40b5"
+      stageUuid: "2c5a635a-dae1-8eff-a782-be391d0e08ad"
     - stage: boundary
-      stageUuid: "ecb007d3-bc84-85f3-ae36-67f8e069cf65"
+      stageUuid: "73afd724-3a72-8c3b-8ec6-f3dfcb94c387"
     - stage: links
-      stageUuid: "2944564c-43ce-8d1e-8350-3b47a462dee2"
+      stageUuid: "b774bd5c-2b81-8610-8010-df6910ae97fb"
     - stage: horo
-      stageUuid: "bafb4437-71a4-8c4c-b666-4d028d84fc5a"
+      stageUuid: "03556c4b-e5ef-8aca-9ac6-e8a7a8a62cee"
     - stage: seal
-      stageUuid: "8699ae1a-032e-8244-95fc-bf3ab570c88f"
+      stageUuid: "3e781b4d-f3e0-837c-86a2-9c3fea2a9d08"
     - stage: uuid
-      stageUuid: "a3527848-8447-8d45-be27-eb8226bbbb18"
+      stageUuid: "be3a9b5d-d417-8109-9c1c-bad3ef704936"
 version: 2
 ---
 # brokerage

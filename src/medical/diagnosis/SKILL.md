@@ -2,55 +2,19 @@
 name: diagnosis
 description: "Use when reasoning about diagnosis as a medical facet of [[medical]] — vocabulary pivot to @/diagnosis; nested not duplicated."
 atomPath: "medical/diagnosis"
-coordinate: "medical/diagnosis · 8/crest · 4b6e8a81"
-contentUuid: "87c0265a-aa36-5964-b524-398d9b73fa77"
-diamondUuid: "c04abc3a-f530-8c95-8617-d2255fd55ebf"
-uuid: "4b6e8a81-c7c3-8d2b-b076-90550f03d117"
-horo: 8
-bonds:
-  in:
-    - diagnosis
-    - differential
-    - emr
-    - law
-    - medical
-    - merge
-  out:
-    - diagnosis
-    - differential
-    - emr
-    - law
-    - medical
-    - merge
+coordinate: "medical/diagnosis · 2/share · de5fc1ac"
+contentUuid: "cd61ec5c-ecd3-5c08-becc-0ce173a7b6a0"
+diamondUuid: "adcb6651-5217-8f10-8956-3277b23ae8ec"
+uuid: "de5fc1ac-dd2d-89ab-8e9b-a5c071371d48"
+horo: 2
 typography:
   partition: medical
   bondDegree: 21
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - diagnosis
-    - law
-    - medical
-    - merge
-  matrix:
-    - diagnosis
-    - differential
-    - emr
-    - law
-    - medical
-    - merge
-  backlinks:
-    - diagnosis
-    - differential
-    - emr
-    - law
-    - medical
-    - merge
 signatures:
-  computationUuid: "74d05161-d03f-8c1a-a7e2-23fd4945f9d8"
+  computationUuid: "5cee41ef-29b2-821d-8a84-12f24c5fcafd"
   stages:
     - stage: path
       stageUuid: "06b6f80c-c801-8672-9f2a-dec06fc4705f"
@@ -61,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c7943904-47a4-83f5-a8e7-1fb7d468f0dd"
     - stage: horo
-      stageUuid: "a9822ca2-4104-838d-bc3c-a2bbc8fb5a7f"
+      stageUuid: "f3b956d8-9cbe-8533-b2a3-a9ab0c5c89b0"
     - stage: seal
       stageUuid: "cf849de8-d234-8ccd-aa2d-9998510a120d"
     - stage: uuid
-      stageUuid: "8a77ccbb-be53-804f-a9f1-4410d563fb38"
+      stageUuid: "3e8c9d70-3028-89f4-96ba-dd3a0e25775b"
 version: 2
 ---
 # medical/diagnosis — medical facet

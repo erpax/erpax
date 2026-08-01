@@ -2,76 +2,35 @@
 name: artery
 description: "Use when reasoning about erpax's outbound vessel — the Windkessel organ. The artery carries value away from the heart, its elastic wall storing systolic volume and recoiling in diastole to smooth pulsatile output into steady peripheral flow: the cache/buffer in flesh. Three properties (Windkessel smoothing · elastic recoil · conserved mass balance) are computed and mapped — a structural isomorphism — onto erpax."
 atomPath: artery
-coordinate: "artery · 2/share · 58b421bd"
-contentUuid: "1eeec51f-40f4-5a60-8386-4ac3d96a2d56"
-diamondUuid: "a0e7f5b7-872c-88f5-a555-179b34eace84"
-uuid: "58b421bd-ff72-8be2-91ae-1ebbdd878118"
-horo: 2
-bonds:
-  in:
-    - artery
-    - body
-    - cache
-    - conservation
-    - heart
-    - law
-    - vein
-  out:
-    - artery
-    - body
-    - cache
-    - conservation
-    - heart
-    - law
-    - vein
+coordinate: "artery · 7/descent · 34ee73ce"
+contentUuid: "606c36ae-8ac1-5777-8716-928a71a3e29e"
+diamondUuid: "908be60b-2572-83e9-bb1d-e2e96639554b"
+uuid: "34ee73ce-1810-8549-a5cf-d0fbeaba5dcb"
+horo: 7
 typography:
   partition: artery
   bondDegree: 26
-  neighbors: []
 standards:
   - "Frank's Windkessel model — aortic elastic storage smooths cardiac output; arterial pressure ≈120/80 mmHg"
   - "Frank's Windkessel model; aortic elastic storage smooths cardiac output"
 bindings: []
-neighbors:
-  wikilink:
-    - cache
-    - conservation
-    - heart
-    - law
-    - vein
-  matrix:
-    - artery
-    - body
-    - cache
-    - conservation
-    - heart
-    - law
-    - vein
-  backlinks:
-    - artery
-    - body
-    - cache
-    - conservation
-    - heart
-    - law
-    - vein
 signatures:
-  computationUuid: "79795bd1-1ff0-8484-9c3c-9073ed444eaa"
+  computationUuid: "b61b2e80-381d-8b8f-9569-4f1169e1747d"
   stages:
     - stage: path
       stageUuid: "bb25bd6b-a438-873d-8574-72e2b8171b2e"
     - stage: trinity
       stageUuid: "e5a76d60-50e0-8644-881e-003dd2e82eac"
     - stage: boundary
-      stageUuid: "5af9d5f2-e38e-83cb-9862-e9f9fa0513c8"
+      stageUuid: "e87ba419-4d88-843d-9fd9-3462dcc7f2be"
     - stage: links
       stageUuid: "a6225074-0316-8293-bb5f-7dff3a4d819e"
     - stage: horo
-      stageUuid: "d2ff95e1-62c1-8245-ac3e-2b0944acef5d"
+      stageUuid: "42d70604-2ce0-8634-92ca-e154e346d500"
     - stage: seal
       stageUuid: "7218e814-3113-8169-b0c2-4308cb893515"
     - stage: uuid
-      stageUuid: "69f0e715-d83f-8bb4-b713-5529a71e216d"
+      stageUuid: "fbb1f417-ead0-8fec-85f8-6a540df776fc"
 version: 2
 ---
 # artery — the Windkessel (the elastic buffer)

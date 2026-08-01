@@ -1,134 +1,24 @@
 ---
 name: test
 description: "Use when proving or tightening the unbreakable-matrix gate — the test that pulls all entropy as food for agents and leaves purity for the skills, so no agent can record uncollidable data or break the content-uuid matrix."
-atomPath: schema/test
-coordinate: schema/test · 4/weave · 812c4931
-contentUuid: "f60a2a21-2e1d-5c3c-82e6-76f14a8be48f"
-diamondUuid: "612f11bd-45f0-8a12-aab7-87a002244893"
-uuid: "812c4931-7afa-850f-89ff-667deee8551d"
-horo: 4
-bonds:
-  in:
-    - aura
-    - available
-    - blood
-    - collapse
-    - color
-    - diamond
-    - folder
-    - heart
-    - hooks
-    - identifying
-    - imaging
-    - law
-    - medical
-    - merge
-    - names
-    - panel
-    - pathology
-    - pwa
-    - schema
-    - sti
-    - sub
-    - typical
-  out:
-    - aura
-    - available
-    - blood
-    - collapse
-    - color
-    - diamond
-    - folder
-    - heart
-    - hooks
-    - identifying
-    - imaging
-    - law
-    - medical
-    - merge
-    - names
-    - panel
-    - pathology
-    - pwa
-    - sti
-    - sub
-    - typical
+atomPath: "schema/test"
+coordinate: "schema/test · 5/round · 5d70ea16"
+contentUuid: "866a7def-b650-50ce-9543-b64d44d8b1ab"
+diamondUuid: "5f4328f1-a42e-81ec-93a9-6ccc5ba3e6e5"
+uuid: "5d70ea16-d803-85da-8091-6787e8b05a2f"
+horo: 5
 typography:
   partition: schema
-  bondDegree: 90
-  neighbors:
-    - aura
+  bondDegree: 100
 standards:
-  - "ISO 19011:2018 §6.5 (audit-evidence integrity)"
   - "ISO/IEC 25010:2023 quality-model (integrity, modularity)"
+  - "ISO/IEC 25010:2023 quality-model (integrity, modularity)`"
   - "RFC 9562 §5.8 (uuidv8 content-uuid) — the collision unit"
+  - "RFC 9562 §5.8 (uuidv8 content-uuid) — the collision unit`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - aura
-    - confirm
-    - dimension
-    - dissolution
-    - dry
-    - gate
-    - generate
-    - holographic
-    - merge
-    - one
-    - schema
-    - seed
-    - society
-    - tamper
-    - team
-    - testing
-    - trinity
-    - types
-  matrix:
-    - aura
-    - available
-    - blood
-    - collapse
-    - color
-    - diamond
-    - folder
-    - heart
-    - hooks
-    - identifying
-    - imaging
-    - law
-    - medical
-    - merge
-    - names
-    - panel
-    - pathology
-    - pwa
-    - sti
-    - sub
-    - typical
-  backlinks:
-    - aura
-    - available
-    - blood
-    - collapse
-    - color
-    - diamond
-    - folder
-    - heart
-    - hooks
-    - identifying
-    - imaging
-    - law
-    - medical
-    - merge
-    - names
-    - panel
-    - pathology
-    - pwa
-    - sti
-    - sub
-    - typical
 signatures:
-  computationUuid: "eb9f6903-aaeb-8e2a-8353-02eec5bb8931"
+  computationUuid: "8b94fb64-15b3-829f-b7ae-042387ac9daa"
   stages:
     - stage: path
       stageUuid: "de8fb821-5ac3-8d57-87ca-b2ce615750f0"
@@ -139,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "0956328f-f695-87eb-9e0c-cae8ad328ddd"
     - stage: horo
-      stageUuid: "02f5bc1c-0a8c-81a4-8d41-21a0d3f9b78d"
+      stageUuid: "acbaeb4d-57b2-8fd6-aceb-f701d13badc8"
     - stage: seal
-      stageUuid: "5110282c-5b0b-8d50-85fb-765a33175457"
+      stageUuid: "debba1ce-9817-8b93-b249-524d61e12067"
     - stage: uuid
-      stageUuid: "7181824b-19ef-895d-b662-1daba7bca74b"
+      stageUuid: "d8abaa25-00ed-84c5-9968-59da8332beaa"
 version: 2
 ---
 # test — the gate that makes the matrix unbreakable

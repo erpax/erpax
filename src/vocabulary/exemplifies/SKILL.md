@@ -1,63 +1,35 @@
 ---
 name: exemplifies
 description: "Use when reasoning about exemplifies as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/exemplifies
-coordinate: exemplifies · 1/base · bf79863c
-contentUuid: "550443b8-d9ce-5ca8-8241-5087f7f9d7a4"
-diamondUuid: "0314da54-7e5d-835c-8e4b-cbd2d7b2fb70"
-uuid: "bf79863c-837d-87a2-aef8-926beeeeead0"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/exemplifies"
+coordinate: "vocabulary/exemplifies · 8/crest · 7734d598"
+contentUuid: "8ccfaadf-3679-5e07-9fa4-a65fe8a55b4f"
+diamondUuid: "906b5e20-fb63-860c-890d-2c9c523d6f39"
+uuid: "7734d598-6afd-8447-8493-c4a151cabddd"
+horo: 8
 typography:
-  partition: exemplifies
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "613dda11-528c-836e-955e-ba57278bccad"
+  computationUuid: "dc8b1a64-6c39-8078-82f4-5a6b250207c6"
   stages:
     - stage: path
-      stageUuid: "5a86842d-b616-8f45-89dd-dd2895c822df"
+      stageUuid: "a469bc08-7d33-8582-9f45-317e4f8be044"
     - stage: trinity
-      stageUuid: "82f2ec13-8db5-85fd-8de3-ea63e81cb818"
+      stageUuid: "512a97e7-761f-8627-8760-f47ab2f5de74"
     - stage: boundary
-      stageUuid: "2c01172d-0a5f-8fca-920f-8af4688972d5"
+      stageUuid: "6a03f4ac-8ce7-839e-be08-8d55ce7ca934"
     - stage: links
-      stageUuid: "9ea542ad-8ec9-8839-a9b9-bdeeb69c4d1d"
+      stageUuid: "620ecff4-1841-8f21-a74c-24b4e156d482"
     - stage: horo
-      stageUuid: "897424dc-445b-8c6c-896f-ca72884ce4af"
+      stageUuid: "4d4230b4-fe96-8252-9406-8a264ccee096"
     - stage: seal
-      stageUuid: "3a445de7-3583-8eb5-b772-b622ec1083fc"
+      stageUuid: "72e3fde5-de20-8c72-a27f-8f4e7442c5a4"
     - stage: uuid
-      stageUuid: "adafaa95-c076-860f-817d-92dddc569027"
+      stageUuid: "ffae894a-b90e-8d91-8d64-83f861f845e4"
 version: 2
 ---
 # exemplifies

@@ -1,68 +1,35 @@
 ---
 name: recognizing
 description: "Use when reasoning about recognizing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/recognizing
-coordinate: recognizing · 5/round · 45f890e6
-contentUuid: "06bd87fc-d35c-53f7-8af2-b8201f1b645a"
-diamondUuid: "202fda12-e037-8ed0-98a5-7df51bd7eeac"
-uuid: "45f890e6-4358-8481-a890-89b1b9b3232d"
-horo: 5
-bonds:
-  in:
-    - authority
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - authority
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/recognizing"
+coordinate: "vocabulary/recognizing · 4/weave · d5c41924"
+contentUuid: "02a666bb-6731-530f-9c1a-e8d1a2964664"
+diamondUuid: "ec79c250-8291-855f-a54b-404219052a6d"
+uuid: "d5c41924-5ae3-88c8-bd71-2de4dc990265"
+horo: 4
 typography:
-  partition: recognizing
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - authority
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - authority
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - authority
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "fad77ee6-e712-88e0-8364-4707ad73b8cc"
+  computationUuid: "b1046606-1fe8-8c6f-a8dc-8141ea24e7b5"
   stages:
     - stage: path
-      stageUuid: "c36eb9bb-c046-8727-8db8-265714599722"
+      stageUuid: "5272387e-7bad-8d4f-8001-5cb1e96a8eeb"
     - stage: trinity
-      stageUuid: "0a06f91e-392c-8f82-8777-a0f4db6c051e"
+      stageUuid: "ecaa3dd9-a521-863c-a38e-4dfe39086203"
     - stage: boundary
-      stageUuid: "79c8a6e6-7945-8823-97d9-f781ac4e73b2"
+      stageUuid: "ea9beaf9-55e5-8620-8730-42ee80d1da3d"
     - stage: links
-      stageUuid: "e74fc000-53dc-8385-b6b0-ed374930480e"
+      stageUuid: "dd9cdb63-b517-8817-895e-aee44d658231"
     - stage: horo
-      stageUuid: "2e3ef494-3049-8310-bc7f-f1aaa256b8f2"
+      stageUuid: "ff2aa1b4-fc6e-8bfe-a123-4f634652a10e"
     - stage: seal
-      stageUuid: "2f95e282-5906-8fe2-9b01-f5e6a31d1a8b"
+      stageUuid: "95dc40fc-c787-8a7e-9c22-26daa7fd0ed1"
     - stage: uuid
-      stageUuid: "a8bb9ee0-1dad-8bbe-b9f0-e5efb30100c4"
+      stageUuid: "344e53b1-2c80-8e35-8711-372aa538973c"
 version: 2
 ---
 # recognizing

@@ -1,63 +1,35 @@
 ---
 name: certified
 description: "Use when reasoning about certified as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/certified
-coordinate: certified · 8/crest · 6535e4ae
-contentUuid: "cd621cf8-8509-5a4f-97f4-e706ec576457"
-diamondUuid: "6af19060-a5fe-8d8e-8a75-f462650cb8d2"
-uuid: "6535e4ae-fc65-879c-8dc2-221888ac54d0"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/certified"
+coordinate: "vocabulary/certified · 4/weave · 2af4c3d6"
+contentUuid: "807719fa-72d3-5975-9cab-b0102885ded8"
+diamondUuid: "6ef03b93-2882-8684-a295-ad73867472b2"
+uuid: "2af4c3d6-0f43-8bf3-b864-f596ecca0c48"
+horo: 4
 typography:
-  partition: certified
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "471b6aa1-d007-84f0-ade7-6a165bd6e039"
+  computationUuid: "64ec7be6-a908-890d-9d68-818c8c28f543"
   stages:
     - stage: path
-      stageUuid: "f6a80231-79bf-810c-a760-39cc396b7217"
+      stageUuid: "f7eb83ac-1d8d-819e-9b85-78f3b8904b73"
     - stage: trinity
-      stageUuid: "b5fc1007-96b9-8d86-a49f-1a183d8bcfea"
+      stageUuid: "25b63044-650d-809c-80b5-f5661c560bb7"
     - stage: boundary
-      stageUuid: "f6f37335-c9ab-8cc3-9572-60ed5a6effa0"
+      stageUuid: "3b3b9ce2-ac3d-8434-91a4-73a8b2aa1124"
     - stage: links
-      stageUuid: "b8781a35-ab55-86a0-af90-1ffd58b76dbf"
+      stageUuid: "71db59a4-aa03-8840-b5b0-0168478bfc55"
     - stage: horo
-      stageUuid: "867bf22a-e5bf-8d20-aa39-bcb0ef6e22e1"
+      stageUuid: "f0680ca5-8176-81ef-80f6-09c256e73e23"
     - stage: seal
-      stageUuid: "9841445e-9115-8700-8d71-093198211c07"
+      stageUuid: "cae78fd3-8532-87f2-975a-9a7ffd0b7c71"
     - stage: uuid
-      stageUuid: "9e9652eb-ddf5-8af9-b8cd-d958a4525e62"
+      stageUuid: "bf0cae65-f028-80a2-8d75-0d9f2e880d88"
 version: 2
 ---
 # certified

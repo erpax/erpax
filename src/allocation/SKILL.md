@@ -2,82 +2,14 @@
 name: allocation
 description: "Use when defining how value/pay is distributed among contributors — reward for work, splitting a fixed pot, mechanism design. Reward is a pure function of verified time leveraged; the rate scale is harmonic; the pot is conserved."
 atomPath: allocation
-coordinate: "allocation · 5/round · 65195748"
-contentUuid: "da33755b-bfab-5856-b364-899b4fcb73a7"
-diamondUuid: "c24d7646-23ba-881a-b6cf-2ec1f17ec355"
-uuid: "65195748-d98e-8b94-b136-e705ea2c49bc"
-horo: 5
-bonds:
-  in:
-    - age
-    - agriculture
-    - balance
-    - baseline
-    - bottleneck
-    - career
-    - compensation
-    - contracts
-    - cropplan
-    - decompression
-    - duality
-    - generate
-    - hooks
-    - identity
-    - law
-    - manufacturing
-    - matter
-    - merge
-    - orders
-    - pasture
-    - position
-    - positions
-    - rate
-    - rotation
-    - self
-    - sparsity
-    - standard
-    - sufficient
-    - train
-    - trust
-    - utility
-    - wellbeing
-  out:
-    - age
-    - agriculture
-    - balance
-    - baseline
-    - bottleneck
-    - career
-    - compensation
-    - contracts
-    - cropplan
-    - decompression
-    - duality
-    - generate
-    - hooks
-    - identity
-    - law
-    - manufacturing
-    - matter
-    - merge
-    - orders
-    - pasture
-    - position
-    - positions
-    - rate
-    - rotation
-    - self
-    - sparsity
-    - standard
-    - sufficient
-    - train
-    - trust
-    - utility
-    - wellbeing
+coordinate: "allocation · 7/descent · 8ab971ae"
+contentUuid: "f14a3033-bd6e-578e-9110-4cd0d48075ef"
+diamondUuid: "70fa9ced-f1b7-85cd-803a-a798532a64f5"
+uuid: "8ab971ae-00b3-898e-b060-45b32af2cce8"
+horo: 7
 typography:
   partition: allocation
-  bondDegree: 96
-  neighbors: []
+  bondDegree: 74
 standards:
   - ESCO
   - "ESCO / ISCO-08 competency framework (skill level)"
@@ -87,104 +19,23 @@ standards:
   - SFIA
   - "SFIA 8 responsibility-levels (1..7) — job-type categorisation"
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - bottleneck
-    - duality
-    - generate
-    - hooks
-    - identity
-    - law
-    - merge
-    - positions
-    - rate
-    - self
-    - standard
-    - sufficient
-  matrix:
-    - age
-    - agriculture
-    - balance
-    - baseline
-    - bottleneck
-    - career
-    - compensation
-    - contracts
-    - cropplan
-    - decompression
-    - duality
-    - generate
-    - hooks
-    - identity
-    - law
-    - manufacturing
-    - matter
-    - merge
-    - orders
-    - pasture
-    - position
-    - positions
-    - rate
-    - rotation
-    - self
-    - sparsity
-    - standard
-    - sufficient
-    - train
-    - trust
-    - utility
-    - wellbeing
-  backlinks:
-    - age
-    - agriculture
-    - balance
-    - baseline
-    - bottleneck
-    - career
-    - compensation
-    - contracts
-    - cropplan
-    - decompression
-    - duality
-    - generate
-    - hooks
-    - identity
-    - law
-    - manufacturing
-    - matter
-    - merge
-    - orders
-    - pasture
-    - position
-    - positions
-    - rate
-    - rotation
-    - self
-    - sparsity
-    - standard
-    - sufficient
-    - train
-    - trust
-    - utility
-    - wellbeing
 signatures:
-  computationUuid: "7b1d57df-2421-8542-b74e-d3d05781fd4d"
+  computationUuid: "5ebe0486-d3b3-85f6-9ab5-296414c03840"
   stages:
     - stage: path
       stageUuid: "a8d4fa01-9e09-8419-9189-556f00da4903"
     - stage: trinity
       stageUuid: "d524c894-e9cc-80d8-a835-ebbae3079456"
     - stage: boundary
-      stageUuid: "530bde4e-1c78-8d6f-a7a0-4b7125fac2d4"
+      stageUuid: "23a4365f-cfdf-89e5-9969-a67fa4bffe1b"
     - stage: links
-      stageUuid: "682c70e8-eb00-863c-bfae-b57b8acce8c5"
+      stageUuid: "3f72eea7-d3c8-8f09-82c8-ca87bf06dd20"
     - stage: horo
-      stageUuid: "4a255499-0a7c-8360-bfde-f6a884bbd3e3"
+      stageUuid: "5d330fef-4554-849e-aaf3-fbc0ddc5cd31"
     - stage: seal
       stageUuid: "5eb8fbae-151e-81e9-89a8-9ce6cce8ccb5"
     - stage: uuid
-      stageUuid: "aee9f700-456b-87f2-8ccd-adc4d55252ea"
+      stageUuid: "b93ce621-453e-8745-8524-0dd0a446c91a"
 version: 2
 ---
 # allocation — who gets what, for what, as math

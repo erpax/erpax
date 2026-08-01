@@ -1,63 +1,35 @@
 ---
 name: gynecologic
 description: "Use when reasoning about gynecologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/gynecologic
-coordinate: gynecologic · 8/crest · 78e083bc
-contentUuid: "97c9c65c-d2a2-5bf0-b2fe-c85034308597"
-diamondUuid: "d4b6c982-ba6f-8857-b950-ee0d0858eae0"
-uuid: "78e083bc-d171-8ff6-b40d-92208199f3c7"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/gynecologic"
+coordinate: "vocabulary/gynecologic · 1/base · a039404e"
+contentUuid: "00679a4d-5c44-59ba-b169-86fc61329f99"
+diamondUuid: "b3534235-7339-8eeb-8c67-9b8b90a3eef6"
+uuid: "a039404e-f091-8a1c-909e-f7c2ca800c7b"
+horo: 1
 typography:
-  partition: gynecologic
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "165c0b44-785e-853c-a4a9-d6c268f2ed99"
+  computationUuid: "e59ed56f-f6aa-8448-b26c-a81caabdc723"
   stages:
     - stage: path
-      stageUuid: "fd41233c-4f72-845d-bb15-283c4b447d7e"
+      stageUuid: "83d31f14-dd25-86ea-ae11-77c5d33b09ee"
     - stage: trinity
-      stageUuid: "180311d5-f88d-8df9-96cc-d4ce970379ce"
+      stageUuid: "407c5baa-c19a-8905-8e66-2bfbecc47183"
     - stage: boundary
-      stageUuid: "a03fbf67-20c3-872e-9f69-450a05c8c4f0"
+      stageUuid: "6aede5df-fa3c-8354-bc87-4a29fc46a726"
     - stage: links
-      stageUuid: "3a5c34a8-2bdc-849c-8034-a599e8d543a6"
+      stageUuid: "7311f30c-5571-8487-a0d4-ec8691c3e2ee"
     - stage: horo
-      stageUuid: "950541cd-f1db-87aa-bb84-2001d824f901"
+      stageUuid: "44f970bb-033b-8e3d-bb07-574240986491"
     - stage: seal
-      stageUuid: "e771b3bf-9d3c-8d25-acc2-402da19fedb8"
+      stageUuid: "f5c2e922-fb5e-84e2-9aac-d250d52e938f"
     - stage: uuid
-      stageUuid: "a96ce82c-51c4-8705-ba3b-7bb9839a6078"
+      stageUuid: "cc089c77-6eb3-8d74-8620-66330fe27de0"
 version: 2
 ---
 # gynecologic

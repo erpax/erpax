@@ -2,62 +2,19 @@
 name: baked
 description: "Use when reasoning about build-time projections of the corpus — any artifact fully derivable from src (the 71MB skills.index for the fs-less Cloudflare Worker, the docs tree) is gitignored and regenerated deterministically at build, never committed, because a stored derivable is duplicated state that can drift from its source; the tree is the one truth and each bundle a content-uuid projection of it, so a committed copy is stored entropy that lowers tamper-cost."
 atomPath: "convention/baked"
-coordinate: "convention/baked · 1/base · 43bf40e3"
-contentUuid: "b3eab0e7-ab72-5d7e-ad27-7357c009ba28"
-diamondUuid: "4641de89-9928-8a0a-b4a5-54a08be181c4"
-uuid: "43bf40e3-3038-8cf5-94e3-a3388986085d"
-horo: 1
-bonds:
-  in:
-    - agent
-    - akashic
-    - convention
-    - cost
-    - fresh
-    - law
-    - skill
-    - tamper
-  out:
-    - agent
-    - akashic
-    - cost
-    - fresh
-    - law
-    - skill
-    - tamper
+coordinate: "convention/baked · 8/crest · 97919a72"
+contentUuid: "6c30634a-f6e5-5f14-a3f6-c1f77f4ec258"
+diamondUuid: "a092a12d-ad6b-8e1d-ae45-6065d2fa9f0c"
+uuid: "97919a72-359e-8e60-b4d3-c5a7239640a4"
+horo: 8
 typography:
   partition: convention
-  bondDegree: 22
-  neighbors: []
+  bondDegree: 20
 standards:
   - one source of truth — a committed derivable is duplicated state that can drift
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - cost
-    - fresh
-    - law
-    - skill
-    - tamper
-  matrix:
-    - agent
-    - akashic
-    - cost
-    - fresh
-    - law
-    - skill
-    - tamper
-  backlinks:
-    - agent
-    - akashic
-    - cost
-    - fresh
-    - law
-    - skill
-    - tamper
 signatures:
-  computationUuid: "e9aa22a5-67ff-8ad8-b471-bbdc511e446f"
+  computationUuid: "40dd31d4-af2f-8362-960e-b1f04ee93846"
   stages:
     - stage: path
       stageUuid: "8db66e94-b952-8139-813f-5fbe931215b7"
@@ -68,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6b3b890c-f80b-806e-a646-3ef26c689261"
     - stage: horo
-      stageUuid: "1ef0443e-75b5-884d-9724-2502eabd8762"
+      stageUuid: "20603c92-7c1e-82da-8085-34746e51caae"
     - stage: seal
       stageUuid: "dad2f737-b056-8f49-9b06-f69749c11353"
     - stage: uuid
-      stageUuid: "378d1acf-3578-895a-8d53-fa55e12a6a0b"
+      stageUuid: "a60bd3b6-66de-8bf5-b91c-76bb4836b769"
 version: 2
 ---
 # convention/baked — derivable artifacts are regenerated at build, never committed

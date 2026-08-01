@@ -2,55 +2,22 @@
 name: held
 description: "Use when reasoning about held as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: held
-coordinate: "held · 8/crest · a9285c36"
-contentUuid: "06a456f6-3f8a-5640-b0e4-d6e1c19bec97"
-diamondUuid: "a5635461-725c-8076-b120-b863d75f2eca"
-uuid: "a9285c36-d410-80fe-a35a-906334a8a7ab"
-horo: 8
-bonds:
-  in:
-    - archive
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - archive
-    - collapse
-    - law
-    - merge
-    - sti
+coordinate: "held · 4/weave · 3ea89668"
+contentUuid: "2739af8e-acc8-52a4-a19f-4cb9992143ff"
+diamondUuid: "44a74216-3885-8c35-970a-c2871937364a"
+uuid: "3ea89668-f12c-8ca7-94f8-6d3fcf6b3e34"
+horo: 4
 typography:
   partition: held
   bondDegree: 0
-  neighbors: []
 standards:
   - "IFRS-13"
   - "IFRS-5"
   - "US-GAAP"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - archive
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - archive
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - archive
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "807fed64-d7d7-8f23-9a48-6fc08e7304ec"
+  computationUuid: "0970e435-cd82-8288-996c-073039d1d2fa"
   stages:
     - stage: path
       stageUuid: "8589aba4-6303-86de-b225-bc344a81d470"
@@ -61,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "1767ce65-55ce-8ba9-ac7b-0a4e7f99d6bc"
     - stage: horo
-      stageUuid: "3a46ef58-96a9-8820-8448-966555ab8966"
+      stageUuid: "40078ad3-59a6-8b91-acc3-a6cd49a0f5d7"
     - stage: seal
       stageUuid: "3f5adbec-5bdb-8b6a-a003-63339df77302"
     - stage: uuid
-      stageUuid: "1f18badc-b843-8be4-ad8d-8f6a0c10695b"
+      stageUuid: "08d43e05-825c-817a-b8ca-86292b812388"
 version: 2
 ---
 # held

@@ -1,213 +1,34 @@
 ---
 name: give
 description: "Use when reasoning about the outflow side of an exchange in erpax — credit, units-out, grant, send, post-out. The universal root of giving; dual of take, equilibrium is balance."
-atomPath: vocabulary/give
-coordinate: give · 4/weave · 1853baa8
-contentUuid: "fef83a36-aac6-5f2e-8c20-10891abcf273"
-diamondUuid: "5e34889e-6b8b-87f7-8dc0-c87955b94c71"
-uuid: "1853baa8-cf72-8fe2-9132-51ca88da387b"
-horo: 4
-bonds:
-  in:
-    - access
-    - accounting
-    - angel
-    - atom
-    - balance
-    - breath
-    - chat
-    - civilization
-    - close
-    - cmyk
-    - commerce
-    - contribution
-    - conversion
-    - decompression
-    - descent
-    - dimension
-    - duality
-    - entry
-    - exchange
-    - flow
-    - give
-    - grace
-    - identity
-    - law
-    - localize
-    - mycorrhizae
-    - perspective
-    - planting
-    - polarity
-    - projection
-    - proof
-    - reverse
-    - runs
-    - symbiosis
-    - take
-    - team
-    - torus
-    - transaction
-    - trinity
-    - whole
-  out:
-    - access
-    - accounting
-    - angel
-    - atom
-    - balance
-    - breath
-    - chat
-    - civilization
-    - close
-    - cmyk
-    - commerce
-    - contribution
-    - conversion
-    - decompression
-    - descent
-    - dimension
-    - duality
-    - entry
-    - exchange
-    - flow
-    - give
-    - grace
-    - identity
-    - law
-    - localize
-    - mycorrhizae
-    - perspective
-    - planting
-    - polarity
-    - projection
-    - proof
-    - reverse
-    - runs
-    - symbiosis
-    - take
-    - team
-    - torus
-    - transaction
-    - trinity
-    - whole
+atomPath: "vocabulary/give"
+coordinate: "vocabulary/give · 1/base · 48986b00"
+contentUuid: "2769660f-e23d-5f52-ba7d-4dbebac3f9ad"
+diamondUuid: "df53e15c-df20-8d7c-93c8-4a82b927914c"
+uuid: "48986b00-4890-8d66-9e88-9a30e6edf623"
+horo: 1
 typography:
-  partition: give
-  bondDegree: 127
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 125
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - angel
-    - balance
-    - close
-    - commerce
-    - flow
-    - give
-    - grace
-    - identity
-    - law
-    - take
-  matrix:
-    - access
-    - accounting
-    - angel
-    - atom
-    - balance
-    - breath
-    - chat
-    - civilization
-    - close
-    - cmyk
-    - commerce
-    - contribution
-    - conversion
-    - decompression
-    - descent
-    - dimension
-    - duality
-    - entry
-    - exchange
-    - flow
-    - give
-    - grace
-    - identity
-    - law
-    - localize
-    - mycorrhizae
-    - perspective
-    - planting
-    - polarity
-    - projection
-    - proof
-    - reverse
-    - runs
-    - symbiosis
-    - take
-    - team
-    - torus
-    - transaction
-    - trinity
-    - whole
-  backlinks:
-    - access
-    - accounting
-    - angel
-    - atom
-    - balance
-    - breath
-    - chat
-    - civilization
-    - close
-    - cmyk
-    - commerce
-    - contribution
-    - conversion
-    - decompression
-    - descent
-    - dimension
-    - duality
-    - entry
-    - exchange
-    - flow
-    - give
-    - grace
-    - identity
-    - law
-    - localize
-    - mycorrhizae
-    - perspective
-    - planting
-    - polarity
-    - projection
-    - proof
-    - reverse
-    - runs
-    - symbiosis
-    - take
-    - team
-    - torus
-    - transaction
-    - trinity
-    - whole
 signatures:
-  computationUuid: "0ebe38bc-af30-8bf8-8a13-3948ae6402f8"
+  computationUuid: "9f3c26d4-3953-8861-aada-8955c6989f3e"
   stages:
     - stage: path
-      stageUuid: "21c1bfe9-13b4-8e42-bdf2-745ec42253e9"
+      stageUuid: "ace510d9-2a85-86f7-9d13-9f6437a96b72"
     - stage: trinity
-      stageUuid: "739a5db0-d409-8ef8-b56d-79f2b33317dd"
+      stageUuid: "4685bec8-e88f-8bf7-9a4d-145d0823df03"
     - stage: boundary
-      stageUuid: "d5b2fa48-8416-8d7f-b5aa-f43a29f68371"
+      stageUuid: "86eab99f-fb19-8386-8dc8-28f2500e3f73"
     - stage: links
-      stageUuid: "dcd65bc7-c72f-84ce-ac2a-de865d526a32"
+      stageUuid: "ae2aa6e1-b061-854e-96e8-b994fd062231"
     - stage: horo
-      stageUuid: "d699e28b-4e18-8330-b0af-ded9fe337f70"
+      stageUuid: "41c47251-a739-8018-bf00-d20c4e965b65"
     - stage: seal
-      stageUuid: "37761728-cb2c-863c-8f01-909d7009644e"
+      stageUuid: "eb3380d1-cf35-83c4-a71e-6758915a2d26"
     - stage: uuid
-      stageUuid: "7ea91d35-e821-8bc5-804d-c5d7ddd5bc83"
+      stageUuid: "4f69292b-f4da-88c4-87a4-bead1f8fd407"
 version: 2
 ---
 # give

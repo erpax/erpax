@@ -1,73 +1,35 @@
 ---
 name: getting
 description: "Use when reasoning about getting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/getting
-coordinate: getting · 7/descent · c198821a
-contentUuid: "83c0e332-4203-5a0f-a9c1-b81c35e35d94"
-diamondUuid: "f6c92900-c15a-8907-a2da-c0a8fbb5d2c0"
-uuid: "c198821a-4922-831f-9292-fedffa5ae80b"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - info
-    - law
-    - merge
-    - sti
-    - tested
-  out:
-    - collapse
-    - info
-    - law
-    - merge
-    - sti
-    - tested
+atomPath: "vocabulary/getting"
+coordinate: "vocabulary/getting · 8/crest · 2752936d"
+contentUuid: "80116216-0d13-572a-b66b-e410e2dafe75"
+diamondUuid: "f3522235-c9ce-8b19-8d97-941760d87812"
+uuid: "2752936d-8736-8dbc-a4f8-4984dcd7ca1a"
+horo: 8
 typography:
-  partition: getting
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - info
-    - law
-    - merge
-    - sti
-    - tested
-  matrix:
-    - collapse
-    - info
-    - law
-    - merge
-    - sti
-    - tested
-  backlinks:
-    - collapse
-    - info
-    - law
-    - merge
-    - sti
-    - tested
 signatures:
-  computationUuid: "7949305e-ded9-8262-9c75-3c61c31bb221"
+  computationUuid: "81a632a8-0f6b-8a7c-9226-81605d912e86"
   stages:
     - stage: path
-      stageUuid: "e9c1e466-5a50-8241-9925-79ab31757e57"
+      stageUuid: "e69a191f-b49c-8c65-bafa-52b0a861d4c8"
     - stage: trinity
-      stageUuid: "483290a1-f9c6-8d14-942b-69cd5b01ec90"
+      stageUuid: "af01a720-ecbd-823f-8199-9d5a0382c493"
     - stage: boundary
-      stageUuid: "beefb66e-53a5-8004-b1c4-b05eb69cf3ab"
+      stageUuid: "dd0f0870-14c6-8cbe-858a-98e987b89be2"
     - stage: links
-      stageUuid: "a90946a8-3b50-8be6-9c1c-b694e68b6c15"
+      stageUuid: "5053b4cd-6330-87a1-9f73-55c5158f6112"
     - stage: horo
-      stageUuid: "0fa43292-c04c-8c6b-950e-304d3fcdc48b"
+      stageUuid: "95f6314b-fc33-884f-a476-e737f99a6b69"
     - stage: seal
-      stageUuid: "65192f8b-542d-8a46-a14d-a3f56902a34f"
+      stageUuid: "2c53f105-c6d5-8030-a241-97c2cd03c43b"
     - stage: uuid
-      stageUuid: "395e301c-9332-8e8f-89b4-997cc8137380"
+      stageUuid: "852f11df-5c71-8e5a-a9e3-998ae23822f9"
 version: 2
 ---
 # getting

@@ -1,63 +1,35 @@
 ---
 name: library
 description: Use when reasoning about library — A library.
-atomPath: vocabulary/library
-coordinate: library · 7/descent · bcbddcdd
-contentUuid: "29b10c7a-9eeb-5edd-8797-6e5ad71e20a6"
-diamondUuid: "8e62c0bc-ffcf-8449-81ca-0cd011e204f4"
-uuid: "bcbddcdd-d3ee-8d66-92f3-baf2c40140fe"
-horo: 7
-bonds:
-  in:
-    - executable
-    - law
-    - name
-    - system
-  out:
-    - executable
-    - law
-    - name
-    - system
+atomPath: "vocabulary/library"
+coordinate: "vocabulary/library · 8/crest · 947a59d3"
+contentUuid: "66dffb9f-bb5c-5aaf-b5da-872a43611d35"
+diamondUuid: "6b18b251-20e7-8092-9af2-70b426b09d85"
+uuid: "947a59d3-2447-8522-a59b-bb7cd635b7dc"
+horo: 8
 typography:
-  partition: library
+  partition: vocabulary
   bondDegree: 14
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - executable
-    - law
-    - name
-    - system
-  matrix:
-    - executable
-    - law
-    - name
-    - system
-  backlinks:
-    - executable
-    - law
-    - name
-    - system
 signatures:
-  computationUuid: "e2242bb9-4729-86c1-bc3f-6a678789669a"
+  computationUuid: "591ae0d1-d31a-8ad9-bb76-0742c2078785"
   stages:
     - stage: path
-      stageUuid: "ae3601b1-828b-8691-9ecc-22f1752bf6a8"
+      stageUuid: "7080741c-e820-8964-8e0b-069d1e3e5018"
     - stage: trinity
-      stageUuid: "1aae7b39-25e1-8d68-99df-5c24a1c51ab8"
+      stageUuid: "4c3cc5a6-50b6-8258-8b6c-6c17498a9b81"
     - stage: boundary
-      stageUuid: "e8b2fd5d-53d7-8a32-be68-c3c6d7ab3cb7"
+      stageUuid: "caa3da96-fbba-8c18-a8bd-0bf60f45fb2e"
     - stage: links
-      stageUuid: "d6b3d63e-2535-8d1e-bf2f-9eee890e0dbc"
+      stageUuid: "dc0081b3-5286-8964-a9d2-3d4f743ca07c"
     - stage: horo
-      stageUuid: "56112e9d-4422-801e-82db-8d74adb5594b"
+      stageUuid: "e8f47a4a-b5ff-8c41-a01b-2784f05e07ed"
     - stage: seal
-      stageUuid: "38d59f6c-c060-89a4-99d0-481348fc8f97"
+      stageUuid: "f3ff73e9-fb6d-80b3-9600-6d115e4f4c9f"
     - stage: uuid
-      stageUuid: "53b293b2-0abf-89c5-8906-bc3707602182"
+      stageUuid: "139a2dea-9992-87c5-98a6-ed6a3d586ccb"
 version: 2
 ---
 # library

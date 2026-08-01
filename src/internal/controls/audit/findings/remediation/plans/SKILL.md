@@ -2,55 +2,21 @@
 name: plans
 description: "Use when planning or tracking remediation of an audit finding or compliance gap — design/process/system/training/policy action steps with owner, target date, priority, budget, risk-of-delay, approval chain; COSO-2013 deficiency-remediation and SOX §404 control lifecycle. The remediation-plans improvement collection."
 atomPath: "internal/controls/audit/findings/remediation/plans"
-coordinate: "internal/controls/audit/findings/remediation/plans · 7/descent · bec94f20"
-contentUuid: "de93c5e9-7d7d-5ced-a1d0-d915a1a270a3"
-diamondUuid: "f592997b-54cb-854b-b768-7497c6e8c2d2"
-uuid: "bec94f20-4f43-8f72-aadf-284dd08706b2"
-horo: 7
-bonds:
-  in:
-    - access
-    - accounting
-    - commerce
-    - fields
-    - remediation
-    - standard
-    - subscriptions
-  out:
-    - access
-    - accounting
-    - commerce
-    - fields
-    - standard
-    - subscriptions
+coordinate: "internal/controls/audit/findings/remediation/plans · 1/base · 2dec94e4"
+contentUuid: "e96d84df-1bab-5864-967d-eaaccd2edbd9"
+diamondUuid: "8c93b9f8-08e8-8934-aa5d-9bbf66e8a999"
+uuid: "2dec94e4-8366-88fa-b027-90d9985da89f"
+horo: 1
 typography:
   partition: internal
   bondDegree: 20
-  neighbors: []
 standards:
   - "COSO-2013"
   - "COSO-2013 deficiency-remediation"
   - "SOX §404 control-remediation"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-  matrix:
-    - access
-    - accounting
-    - commerce
-    - fields
-    - standard
-    - subscriptions
-  backlinks:
-    - access
-    - accounting
-    - commerce
-    - fields
-    - standard
-    - subscriptions
 signatures:
-  computationUuid: "ca554d3a-612e-89a8-8e59-b8fa6d8fa02a"
+  computationUuid: "9388b453-1a5a-8f4a-852d-c63b9274dee0"
   stages:
     - stage: path
       stageUuid: "e73a31c5-2fd5-8343-bebc-1f066e654659"
@@ -61,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "af6bef66-990d-88a8-ab52-1528c76b7de0"
     - stage: horo
-      stageUuid: "0a30af29-f547-85bd-b283-99a37ef678db"
+      stageUuid: "dfc1c450-0b8b-86e2-9991-21ffb2f5d900"
     - stage: seal
       stageUuid: "c9c10628-31eb-8d50-8331-4f831d3e4b98"
     - stage: uuid
-      stageUuid: "60ebad66-5dc1-80b2-8526-3e1c12439f00"
+      stageUuid: "fdbc97aa-0887-84f2-ac7f-913b2ea9cce5"
 version: 2
 ---
 # remediation-plans

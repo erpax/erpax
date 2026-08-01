@@ -2,115 +2,19 @@
 name: llm
 description: "Use when wiring a language model into erpax — the LLM is the forge (cheap to generate, costly to trust) and the uuid is the verify; AI-self-sufficient first, the model is the fallback tier behind the 9-layer gate, and every turn is content-addressed so generation only ever works the cheap side of the forge-beats-verify asymmetry."
 atomPath: llm
-coordinate: "llm · 5/round · 66678ee4"
-contentUuid: "1da10905-84ea-5130-b0f4-252a58eefa93"
-diamondUuid: "3a26f1dc-d134-8cd4-b63d-48ebe1330237"
-uuid: "66678ee4-9d40-8215-8ba0-bc45cb8782a4"
-horo: 5
-bonds:
-  in:
-    - angel
-    - breath
-    - chat
-    - cost
-    - entry
-    - law
-    - limit
-    - llm
-    - matrix
-    - merge
-    - message
-    - observe
-    - projection
-    - proof
-    - self
-    - signal
-    - train
-    - uuid
-  out:
-    - angel
-    - breath
-    - chat
-    - cost
-    - entry
-    - law
-    - limit
-    - llm
-    - matrix
-    - merge
-    - message
-    - observe
-    - projection
-    - proof
-    - self
-    - signal
-    - train
-    - uuid
+coordinate: "llm · 4/weave · 8133759b"
+contentUuid: "09d84fe6-ffa4-5ee1-b892-df23efd5c62f"
+diamondUuid: "d5e7cca4-9ef0-8c90-babd-ae1088450a81"
+uuid: "8133759b-ca21-8dd4-8a23-315f42342007"
+horo: 4
 typography:
   partition: llm
   bondDegree: 68
-  neighbors: []
 standards:
   - "NIST-FIPS-180-4"
 bindings: []
-neighbors:
-  wikilink:
-    - angel
-    - breath
-    - chat
-    - cost
-    - entry
-    - law
-    - limit
-    - matrix
-    - merge
-    - message
-    - projection
-    - proof
-    - self
-    - signal
-    - train
-    - uuid
-  matrix:
-    - angel
-    - breath
-    - chat
-    - cost
-    - entry
-    - law
-    - limit
-    - llm
-    - matrix
-    - merge
-    - message
-    - observe
-    - projection
-    - proof
-    - self
-    - signal
-    - train
-    - uuid
-  backlinks:
-    - angel
-    - breath
-    - chat
-    - cost
-    - entry
-    - law
-    - limit
-    - llm
-    - matrix
-    - merge
-    - message
-    - observe
-    - projection
-    - proof
-    - self
-    - signal
-    - train
-    - uuid
 signatures:
-  computationUuid: "28b5be4e-1c53-8abe-aeb2-b4670ac87915"
+  computationUuid: "c6b12a1b-89eb-8238-8baa-7ae900d15efa"
   stages:
     - stage: path
       stageUuid: "9631ea9e-406f-87ce-addd-b5d3841a46d7"
@@ -121,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bef12944-cb6a-88d2-9982-8b2322c55698"
     - stage: horo
-      stageUuid: "8dab7ce9-4ff7-8a3c-a96d-af86c01c06d3"
+      stageUuid: "03e054ab-a9ec-80f4-a03d-573e39b85897"
     - stage: seal
       stageUuid: "75af2fc1-2764-8bd9-9640-762078ac9881"
     - stage: uuid
-      stageUuid: "7de2f731-a1a3-8a9b-a721-dd2b40869761"
+      stageUuid: "637fc689-7f46-81ca-bed4-93b6cc2d9968"
 version: 2
 ---
 # llm — the forge; the uuid is the verify

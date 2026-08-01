@@ -2,69 +2,34 @@
 name: honest
 description: "Use when a SKILL.md reaches for a metaphysical figure of speech — the convention is that such a phrase is named as convention or folklore, never stated as a bare fact; this atom measures the corpus's live honesty as coverage = honest / total over the real tree."
 atomPath: "convention/honest"
-coordinate: "convention/honest · 8/crest · e3f54738"
-contentUuid: "8cea5dcd-12f9-529b-afdf-455f74dcf201"
-diamondUuid: "5123c758-fdfc-8443-af02-a8e4dd084756"
-uuid: "e3f54738-cc97-8721-8dbc-a31dc217153c"
-horo: 8
-bonds:
-  in:
-    - aura
-    - complete
-    - convention
-    - cost
-    - law
-    - rodin
-  out:
-    - aura
-    - complete
-    - cost
-    - law
-    - rodin
+coordinate: "convention/honest · 1/base · 2ae57c2e"
+contentUuid: "faf8093f-00d5-5f81-a796-2ede8ed70f89"
+diamondUuid: "7c7a471a-9aff-8896-9d05-3ceb5eb1abd7"
+uuid: "2ae57c2e-b18f-883e-9991-efe928cc1a47"
+horo: 1
 typography:
   partition: convention
   bondDegree: 17
-  neighbors:
-    - aura
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - aura
-    - complete
-    - cost
-    - law
-    - rodin
-  matrix:
-    - aura
-    - complete
-    - cost
-    - law
-    - rodin
-  backlinks:
-    - aura
-    - complete
-    - cost
-    - law
-    - rodin
 signatures:
-  computationUuid: "5e105992-a090-8fef-b4a8-3fb00e35e0bc"
+  computationUuid: "74c12eec-4da2-882b-851b-a5c30624c19f"
   stages:
     - stage: path
       stageUuid: "b3666abf-9a41-821b-8f99-b181b12095b8"
     - stage: trinity
       stageUuid: "f8011eb1-d2cd-8bed-b201-f855d24830fd"
     - stage: boundary
-      stageUuid: "a4052fe0-a689-83b7-a06d-718e5dac97e7"
+      stageUuid: "7af4374e-6209-811a-b0d4-682d5bb637de"
     - stage: links
       stageUuid: "e0375d1e-be2c-8cab-8066-3a084f7332a5"
     - stage: horo
-      stageUuid: "ce8cefc9-70d5-8ad4-84b1-df591403e20f"
+      stageUuid: "8ee27ae3-36c8-8182-b6cd-5f7ceca3f501"
     - stage: seal
       stageUuid: "66e3ac44-c821-8d57-bb39-429b66f8a3aa"
     - stage: uuid
-      stageUuid: "fe17af7a-850b-815c-972e-74a5664612c3"
+      stageUuid: "3cf67ab3-38ba-86fd-8cd3-0020f426b614"
 version: 2
 ---
 # convention/honest — metaphysics is named as convention, never asserted as fact

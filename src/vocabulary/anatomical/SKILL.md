@@ -1,73 +1,35 @@
 ---
 name: anatomical
 description: "Use when reasoning about anatomical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/anatomical
-coordinate: anatomical · 1/base · c00f1f31
-contentUuid: "13330be9-f7fd-5598-b89d-6a1874cd1eba"
-diamondUuid: "0f6228ef-4273-8825-ae0b-56e92b98f4c1"
-uuid: "c00f1f31-aee4-85f3-bfec-a2d6649d16af"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - structure
-    - system
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - structure
-    - system
+atomPath: "vocabulary/anatomical"
+coordinate: "vocabulary/anatomical · 4/weave · e9933d69"
+contentUuid: "7ac90f82-2d11-5146-84e2-c0fbf23cd703"
+diamondUuid: "f531eea3-6fba-887d-93f4-5a5420e810d4"
+uuid: "e9933d69-3c43-836c-8ea8-74ed2f77118c"
+horo: 4
 typography:
-  partition: anatomical
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - structure
-    - system
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - structure
-    - system
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - structure
-    - system
 signatures:
-  computationUuid: "6b375606-6baa-8950-a677-d42fa632b0f6"
+  computationUuid: "414dc5ff-869e-8fef-9b07-5db9d29461b8"
   stages:
     - stage: path
-      stageUuid: "1e874842-8d11-8ac9-ad51-2012a4d82977"
+      stageUuid: "3913a65a-0c16-8203-bc08-05f1da5c1f2d"
     - stage: trinity
-      stageUuid: "18914a99-d9ff-843a-bf2a-f10461232c55"
+      stageUuid: "eb430043-9c3c-886c-9a79-209e242352f3"
     - stage: boundary
-      stageUuid: "413d4a02-f09f-837e-a217-b04542405831"
+      stageUuid: "421df504-19c1-8844-9090-a0745ea8a8d9"
     - stage: links
-      stageUuid: "c899f3d7-fe67-83d2-9503-717d8f946772"
+      stageUuid: "81bc1e8f-7dfc-8956-9a81-a8423c95179e"
     - stage: horo
-      stageUuid: "38658c71-26f9-8ee5-9e7d-a7b200a1899c"
+      stageUuid: "42f39a04-23ef-8503-8b12-972867ec266a"
     - stage: seal
-      stageUuid: "244b9beb-cc46-873d-b47d-5d7f457d57ad"
+      stageUuid: "c0003658-3edd-801f-8f6a-80cc96f35f92"
     - stage: uuid
-      stageUuid: "3b1d042a-1c3e-8f1f-9c94-975d11a85cb3"
+      stageUuid: "6e1b8c1a-1d23-86a1-ab1e-ae7ad0d1884b"
 version: 2
 ---
 # anatomical

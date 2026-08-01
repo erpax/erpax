@@ -1,72 +1,34 @@
 ---
 name: attrition
 description: "Use when measuring workforce loss — headcount change, turnover rate, voluntary/involuntary separation, retention metrics. The observed flow of people leaving vs staying."
-atomPath: vocabulary/attrition
-coordinate: attrition · 4/weave · 6d7d607f
-contentUuid: "d4186c94-d3d5-5950-a87f-3dfee821013c"
-diamondUuid: "7b6b2a15-e5dd-8f09-8f7c-88a243a529de"
-uuid: "6d7d607f-637f-808b-bb00-2cf7785865d1"
-horo: 4
-bonds:
-  in:
-    - employees
-    - metric
-    - satisfaction
-    - status
-    - tenure
-    - time
-  out:
-    - employees
-    - metric
-    - satisfaction
-    - status
-    - tenure
-    - time
+atomPath: "vocabulary/attrition"
+coordinate: "vocabulary/attrition · 1/base · c8e3e871"
+contentUuid: "eac95393-dc92-581b-93bc-551c458a45dd"
+diamondUuid: "813005a3-5cf4-814c-96b8-7bc756448cc5"
+uuid: "c8e3e871-b690-868f-9f9b-bf501c05b13e"
+horo: 1
 typography:
-  partition: attrition
+  partition: vocabulary
   bondDegree: 18
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - employees
-    - metric
-    - satisfaction
-    - status
-    - tenure
-    - time
-  matrix:
-    - employees
-    - metric
-    - satisfaction
-    - status
-    - tenure
-    - time
-  backlinks:
-    - employees
-    - metric
-    - satisfaction
-    - status
-    - tenure
-    - time
 signatures:
-  computationUuid: "6e9589f1-79ad-8fb8-a872-dbe59cd9ec17"
+  computationUuid: "d5b3750b-2140-816d-b80c-698b14137dc8"
   stages:
     - stage: path
-      stageUuid: "eff64236-1955-83f1-bddc-0493e2e34e61"
+      stageUuid: "043e78fe-d2a7-8afc-8852-b44fa098364e"
     - stage: trinity
-      stageUuid: "5f626968-f8d4-80a0-b198-5b4e76473aef"
+      stageUuid: "4ca1f69f-8dbf-88ab-9a07-4c3549469780"
     - stage: boundary
-      stageUuid: "a5b34a17-f25d-80b3-9a66-35a2315e6bba"
+      stageUuid: "e7879b47-4803-80d5-803c-b75d1b3106a3"
     - stage: links
-      stageUuid: "283f7862-4a13-8f6b-83ad-b3d991f7cca3"
+      stageUuid: "b5637890-fd61-8b00-8237-a032ced11f80"
     - stage: horo
-      stageUuid: "16be9524-fb1d-8405-bf0b-c1d81b749db1"
+      stageUuid: "6d26be7f-dc51-8e29-9f2c-fb6ba880502d"
     - stage: seal
-      stageUuid: "a0b53c9d-b9d4-89ef-b587-0b8258c70dac"
+      stageUuid: "19a945f6-61bf-8bd1-bd91-553ce6628341"
     - stage: uuid
-      stageUuid: "ae93d7f7-2c99-89ec-961d-b19b3505198a"
+      stageUuid: "5268ef17-395e-8718-8e45-0bbe641f2f2d"
 version: 2
 ---
 # attrition

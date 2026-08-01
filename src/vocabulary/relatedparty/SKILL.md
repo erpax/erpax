@@ -1,57 +1,34 @@
 ---
 name: relatedparty
 description: "Use when identifying and accounting for related-party transactions (subsidiaries, associates, joint ventures, key management); mandatory disclosure and transaction separation under IFRS-24"
-atomPath: vocabulary/relatedparty
-coordinate: relatedparty · 4/weave · 116831c9
-contentUuid: "898b8e44-e77f-5227-9e24-a187a2a7ea9e"
-diamondUuid: "aeab8185-9a25-8b34-b760-2f1a147195ba"
-uuid: "116831c9-9913-8998-a3ca-5633ccea137d"
-horo: 4
-bonds:
-  in:
-    - checklists
-    - consolidations
-    - transactions
-  out:
-    - checklists
-    - consolidations
-    - transactions
+atomPath: "vocabulary/relatedparty"
+coordinate: "vocabulary/relatedparty · 1/base · 0ad872f5"
+contentUuid: "1b79d40c-b22f-5df0-8502-1c0123875938"
+diamondUuid: "3c934beb-44e2-85e0-94ba-da5c9802ec1b"
+uuid: "0ad872f5-8b31-8b23-8e0a-1d99dea7bc44"
+horo: 1
 typography:
-  partition: relatedparty
+  partition: vocabulary
   bondDegree: 11
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - checklists
-    - consolidations
-    - transactions
-  matrix:
-    - checklists
-    - consolidations
-    - transactions
-  backlinks:
-    - checklists
-    - consolidations
-    - transactions
 signatures:
-  computationUuid: "9e46e763-5347-8a46-b624-a703bef9ccae"
+  computationUuid: "59f1fd9c-dbec-8bf0-8f4d-a4f02cc12858"
   stages:
     - stage: path
-      stageUuid: "91decf30-95fb-81aa-b2b9-ec5589961cab"
+      stageUuid: "593666a6-6f90-8548-a3cb-6ee7cbe2fffe"
     - stage: trinity
-      stageUuid: "f8577c89-658a-82e1-8d21-3fffc972fbc8"
+      stageUuid: "f5b28284-aa7b-8ad8-8699-1a23f2f403db"
     - stage: boundary
-      stageUuid: "70f0ff95-fe73-8731-ae83-98350be5aaec"
+      stageUuid: "acf65091-9a29-83a8-bc39-df0b888bb9fa"
     - stage: links
-      stageUuid: "10fa2e0b-1379-87ab-acad-2de37f431c25"
+      stageUuid: "f7e5ff14-95d2-8b42-b188-8264e2f02eef"
     - stage: horo
-      stageUuid: "5e76c729-4e56-8900-8f64-d7151925f938"
+      stageUuid: "a0d1c6de-5f1d-81a5-96ef-01383cc9ca7c"
     - stage: seal
-      stageUuid: "58c8503d-ba19-8c6f-b0ba-d2a4d64ab8c0"
+      stageUuid: "91d1d139-8dad-86cc-82e3-1b17a7e28b88"
     - stage: uuid
-      stageUuid: "ba327092-53b9-8694-ba92-ecc17e7773f1"
+      stageUuid: "bb97e29d-56f4-8960-9887-28e4fef50510"
 version: 2
 ---
 # relatedparty

@@ -1,93 +1,35 @@
 ---
 name: condition
 description: "Use when reasoning about condition as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/condition
-coordinate: condition · 7/descent · 7bcfe59e
-contentUuid: "187dceb4-2df7-59ec-b465-aa8f3d543810"
-diamondUuid: "2924f033-2484-8e48-89e4-9a2e12007617"
-uuid: "7bcfe59e-4293-8714-a956-1b1e4c88190e"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - health
-    - item
-    - law
-    - medical
-    - merge
-    - offer
-    - related
-    - stage
-    - sti
-  out:
-    - collapse
-    - health
-    - item
-    - law
-    - medical
-    - merge
-    - offer
-    - related
-    - stage
-    - sti
+atomPath: "vocabulary/condition"
+coordinate: "vocabulary/condition · 4/weave · e0174221"
+contentUuid: "049a50e4-7d99-5b46-8c8b-c08a08d6a0d7"
+diamondUuid: "6fe4031e-e208-8e51-a046-74243729fffd"
+uuid: "e0174221-b81b-83ac-885d-4fae798bf4e8"
+horo: 4
 typography:
-  partition: condition
-  bondDegree: 35
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 36
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - health
-    - item
-    - law
-    - medical
-    - merge
-    - offer
-    - related
-    - stage
-    - sti
-  matrix:
-    - collapse
-    - health
-    - item
-    - law
-    - medical
-    - merge
-    - offer
-    - related
-    - stage
-    - sti
-  backlinks:
-    - collapse
-    - health
-    - item
-    - law
-    - medical
-    - merge
-    - offer
-    - related
-    - stage
-    - sti
 signatures:
-  computationUuid: "5f513e6b-9648-8726-ad73-6b19945705ce"
+  computationUuid: "c854fee6-6468-885b-89d9-a0d22da129d6"
   stages:
     - stage: path
-      stageUuid: "3c876066-aefe-8276-8845-f51bf3ef1307"
+      stageUuid: "e8c00146-93b4-8652-aec1-f749e70eec8a"
     - stage: trinity
-      stageUuid: "b28573c9-f85b-8cfb-b511-89ce19663eee"
+      stageUuid: "aaf3330c-9283-8f2c-89bb-8011a7ab0520"
     - stage: boundary
-      stageUuid: "e04e620f-ff87-8066-9b06-bf8587e10424"
+      stageUuid: "0d2c739d-405f-8fbe-985a-21396ae2a2f8"
     - stage: links
-      stageUuid: "2e68f00c-98d6-8a6e-a90c-ff76a1e998a9"
+      stageUuid: "12f33b53-2ef1-846f-a043-d641dbdb8218"
     - stage: horo
-      stageUuid: "24001168-e40e-81e7-b834-3e2e4b0ba57a"
+      stageUuid: "5a695522-150a-8857-b4ea-3db79818fec7"
     - stage: seal
-      stageUuid: "5eb4b5ab-02ba-8221-8edf-42cd921966ea"
+      stageUuid: "acb2212b-4196-86a6-b369-66bf864c79a3"
     - stage: uuid
-      stageUuid: "e73ae96a-3201-8694-903b-476b01ff7ac8"
+      stageUuid: "20583cb3-0b4f-8608-8fcf-67384dcb97af"
 version: 2
 ---
 # condition

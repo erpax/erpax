@@ -1,68 +1,35 @@
 ---
 name: life
 description: "Use when reasoning about life as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/life
-coordinate: life · 2/share · 6ce8132c
-contentUuid: "aec7a5f4-40a0-5d3a-b934-369544f2a3d5"
-diamondUuid: "f5d8d1c1-55ab-853f-b0b9-c404f83b4dd6"
-uuid: "6ce8132c-59c4-8847-becc-980e6a07608f"
+atomPath: "vocabulary/life"
+coordinate: "vocabulary/life · 2/share · 7f28d039"
+contentUuid: "6fbd430e-d3e5-5491-a486-a7e3b82a7bfa"
+diamondUuid: "6fdb9ec6-0d2e-8f4b-94bf-abdd53f77ca2"
+uuid: "7f28d039-7791-8f1d-b275-091b761f2097"
 horo: 2
-bonds:
-  in:
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
 typography:
-  partition: life
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "9d0376bd-e945-8000-a742-afe9b410db2a"
+  computationUuid: "a30520d6-c3ed-84ef-bc96-331363f6cc2d"
   stages:
     - stage: path
-      stageUuid: "ed61913a-2a5f-8131-a6bf-651dc5bcaa90"
+      stageUuid: "8c6d7c96-fdfe-8209-95a5-0e2b67550052"
     - stage: trinity
-      stageUuid: "d8750570-f589-884b-9469-502c34154285"
+      stageUuid: "ef92a9cb-6879-84fa-aa46-de5d5e986aaa"
     - stage: boundary
-      stageUuid: "38b0bf25-29ba-82bf-8369-91699d22e3d2"
+      stageUuid: "49ae2e7a-6e28-886b-b9ba-099c07808e79"
     - stage: links
-      stageUuid: "2c5fbf59-d251-802c-aa80-a818b7967c2d"
+      stageUuid: "0c88eb10-9b77-877a-a978-989c23b550c3"
     - stage: horo
-      stageUuid: "91dbef16-831a-81db-96a6-3372d091bde1"
+      stageUuid: "08ee3510-b8e8-85ef-9c04-26467e0acf34"
     - stage: seal
-      stageUuid: "ec5a319d-2f80-8cf7-a10d-da2a94b91a23"
+      stageUuid: "dc4542c2-164e-831f-ae7f-f2794d56e844"
     - stage: uuid
-      stageUuid: "33d63631-61d7-8647-9f7a-c68c0656a636"
+      stageUuid: "44ef158e-d2b2-83d5-9c4f-f1f1a0b1e4e4"
 version: 2
 ---
 # life

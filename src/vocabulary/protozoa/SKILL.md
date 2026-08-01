@@ -1,63 +1,35 @@
 ---
 name: protozoa
 description: "Use when reasoning about protozoa as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/protozoa
-coordinate: protozoa · 2/share · 8df34567
-contentUuid: "03189c04-dc63-5925-ad29-f2e5178e0613"
-diamondUuid: "1aa3c167-1ac9-8bf8-8566-c2206f45ff1c"
-uuid: "8df34567-2e97-882b-a0b1-e6afa3c77f8e"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/protozoa"
+coordinate: "vocabulary/protozoa · 1/base · 54d5095b"
+contentUuid: "71b688c4-8266-57ca-876a-db8f01bd2aa5"
+diamondUuid: "882edf80-54d7-88b4-8096-8c7435680a67"
+uuid: "54d5095b-f445-8735-8e04-7a5d2672a7fc"
+horo: 1
 typography:
-  partition: protozoa
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "ae0c76a7-c023-8292-93a6-090cbf1dd86c"
+  computationUuid: "2a002172-43e7-8c89-9eca-8d97b25f3747"
   stages:
     - stage: path
-      stageUuid: "77fb475c-4889-86fe-8e32-045e2a3a9ba0"
+      stageUuid: "4dbeac77-1452-8fd4-9d75-d2586cb32d3f"
     - stage: trinity
-      stageUuid: "6e7f2ff7-9ca7-8ccf-b743-a7ad878f902d"
+      stageUuid: "d6d6df99-1d80-8e32-a600-b46770519416"
     - stage: boundary
-      stageUuid: "21d3ca38-5f32-87d1-adef-7ebb564321e9"
+      stageUuid: "51dc5841-4bdc-8faf-9f09-ccc6de7f736f"
     - stage: links
-      stageUuid: "2ea4d85d-799c-8801-946c-d98df672faae"
+      stageUuid: "eb85db5f-e0b6-8749-853d-9efb11f7bc01"
     - stage: horo
-      stageUuid: "49497e4a-e649-8f91-8741-ae077dd220f7"
+      stageUuid: "a0db54ab-56da-802f-b98c-8575ac1a1bb2"
     - stage: seal
-      stageUuid: "eea989ef-adcc-8af2-a90b-f107992c375b"
+      stageUuid: "4a8c7d79-07b6-8a92-a77b-ed0b23835889"
     - stage: uuid
-      stageUuid: "a71bfd06-5af0-836d-a4d7-5c04038a6f8a"
+      stageUuid: "16abff8a-efa3-80f6-8ae9-40de8a16dd3b"
 version: 2
 ---
 # protozoa

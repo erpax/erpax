@@ -1,68 +1,35 @@
 ---
 name: extended
 description: "Use when reasoning about extended as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/extended
-coordinate: extended · 2/share · 1c558281
-contentUuid: "0b558905-9e9d-5fd2-9d8a-7ddeaa10b77b"
-diamondUuid: "22309e50-56f3-893d-98b8-b1978c0ca77d"
-uuid: "1c558281-ff54-834d-8b9b-febd9ad71210"
+atomPath: "vocabulary/extended"
+coordinate: "vocabulary/extended · 2/share · 14c0f9e6"
+contentUuid: "e26dac17-42b4-527e-ad1b-7aff0bad2b6c"
+diamondUuid: "4ffbaf45-d352-8131-bf46-33705e3b4159"
+uuid: "14c0f9e6-4f63-818a-9f88-170702a6d79b"
 horo: 2
-bonds:
-  in:
-    - address
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - address
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: extended
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - address
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - address
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - address
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "c2e7ccf9-23f3-837c-ae51-2043c4a1fa8d"
+  computationUuid: "8f4170bc-7d72-8782-966b-84031216a256"
   stages:
     - stage: path
-      stageUuid: "7fed9648-bf0b-8b58-83c8-30e4310ce3d8"
+      stageUuid: "a76e4352-651c-89ec-abb0-aded35d64c2c"
     - stage: trinity
-      stageUuid: "34305c81-5673-840a-9cd7-79bada1cd0ed"
+      stageUuid: "d029a905-23a5-8101-9dae-8e756575ec43"
     - stage: boundary
-      stageUuid: "7de332a1-c18e-8b70-a0a1-6eaa01ad2821"
+      stageUuid: "30399d84-e044-8923-90bb-f02be5479c5d"
     - stage: links
-      stageUuid: "db024569-51a5-8f4f-8dab-08da25432776"
+      stageUuid: "18632ee9-a299-82cf-9225-53467419c410"
     - stage: horo
-      stageUuid: "e5579a2f-9f80-854a-ae56-25468a75ac9a"
+      stageUuid: "23c71d42-261e-8a34-85fa-0b39f5bfa5ac"
     - stage: seal
-      stageUuid: "df0ba68a-a6a5-8f25-91ee-896fc0c2715e"
+      stageUuid: "ec90f29a-e644-8906-abc9-4398c955fbaa"
     - stage: uuid
-      stageUuid: "75747a7e-0f03-8398-b8e4-61cc5a587ac4"
+      stageUuid: "4d67b512-3efc-80b0-bee9-210b53647f24"
 version: 2
 ---
 # extended

@@ -1,64 +1,35 @@
 ---
 name: about
 description: Use when reasoning about about — The subject matter of an object.
-atomPath: vocabulary/about
-coordinate: about · 1/base · 44afd19c
-contentUuid: "0c5d1398-7c0e-5b8e-ac62-6ebf33c15e9f"
-diamondUuid: "2b33ba96-98e5-83b3-b410-2f5cddaa56e4"
-uuid: "44afd19c-f2ba-832c-b8bb-d19e1da5ceb7"
+atomPath: "vocabulary/about"
+coordinate: "vocabulary/about · 1/base · b367c2cf"
+contentUuid: "4de3c93b-5802-5534-b2ed-4322eda31c40"
+diamondUuid: "ded5850f-0c0f-8a22-b94e-e58d76762bee"
+uuid: "b367c2cf-a57e-828d-a838-f8334f402e9b"
 horo: 1
-bonds:
-  in:
-    - knows
-    - law
-    - observation
-    - page
-  out:
-    - knows
-    - law
-    - observation
-    - page
 typography:
-  partition: about
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
-  - schema.org
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - knows
-    - law
-    - observation
-    - page
-  matrix:
-    - knows
-    - law
-    - observation
-    - page
-  backlinks:
-    - knows
-    - law
-    - observation
-    - page
 signatures:
-  computationUuid: "a3bbfb36-ecc5-814a-9d6a-5ab3af78a417"
+  computationUuid: "67f38de1-aa37-87f6-8229-3174053d17e1"
   stages:
     - stage: path
-      stageUuid: "c4a11bc9-01c7-8794-a906-3b1197ce14d0"
+      stageUuid: "ace9d78e-adcc-8d6c-b5a5-ee348fa48f57"
     - stage: trinity
-      stageUuid: "bc492caa-3af1-8b6c-9a5b-165bd2bd1ac7"
+      stageUuid: "b378267a-43f4-83bb-aa4d-9ba078ee78ca"
     - stage: boundary
-      stageUuid: "17af2771-e6b8-8b2a-8cef-097d0e139d68"
+      stageUuid: "44e17efc-a9eb-805d-bb37-904092bd5bfd"
     - stage: links
-      stageUuid: "39dc31be-3b6f-83d2-8750-53349c13d13b"
+      stageUuid: "9880220a-211a-84df-898a-49d3fef535ce"
     - stage: horo
-      stageUuid: "bd1997b0-934e-8228-a88a-7f233805baaf"
+      stageUuid: "097a115a-6862-8755-91e6-6458bc448a6c"
     - stage: seal
-      stageUuid: "6c3a9e6a-f4f6-87bb-96fc-2dc1aeb8e55a"
+      stageUuid: "66336b63-1c36-823f-8203-a97eda965f20"
     - stage: uuid
-      stageUuid: "eca3efef-4141-8d74-be7b-393d02fe8037"
+      stageUuid: "b362e272-4e71-8bfd-aa46-41a17583e89c"
 version: 2
 ---
 # about

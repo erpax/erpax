@@ -1,73 +1,35 @@
 ---
 name: opinion
 description: "Use when reasoning about opinion as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/opinion
-coordinate: opinion · 8/crest · c3511406
-contentUuid: "7a266d25-4458-5f56-9ccd-e219ef5cf407"
-diamondUuid: "ad260ce5-3804-8237-afa5-5b668c7297bc"
-uuid: "c3511406-baff-8d99-b972-c843f2e52edf"
+atomPath: "vocabulary/opinion"
+coordinate: "vocabulary/opinion · 8/crest · fd9b7445"
+contentUuid: "8b5218e3-f8c0-50da-8637-7c758c532c69"
+diamondUuid: "0cbb36e9-6b79-8670-94f6-7253f7ce64de"
+uuid: "fd9b7445-791b-81eb-ab33-9fd0e4900865"
 horo: 8
-bonds:
-  in:
-    - article
-    - collapse
-    - law
-    - merge
-    - news
-    - sti
-  out:
-    - article
-    - collapse
-    - law
-    - merge
-    - news
-    - sti
 typography:
-  partition: opinion
-  bondDegree: 20
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 22
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - article
-    - collapse
-    - law
-    - merge
-    - news
-    - sti
-  matrix:
-    - article
-    - collapse
-    - law
-    - merge
-    - news
-    - sti
-  backlinks:
-    - article
-    - collapse
-    - law
-    - merge
-    - news
-    - sti
 signatures:
-  computationUuid: "4cb50e58-3895-8945-9fb9-f06d81b20ebf"
+  computationUuid: "c0458d8e-f439-8840-87a6-9371e9f5cc2b"
   stages:
     - stage: path
-      stageUuid: "1b46cffa-2c80-8b6f-a1a0-d6529fdd0d5f"
+      stageUuid: "9b29b3e9-9895-8df6-b31b-8d2bd17a4f4d"
     - stage: trinity
-      stageUuid: "0243089b-afc8-80e6-b5e3-32f4187abe6d"
+      stageUuid: "72d9f85e-834f-8414-8b5e-67f109e399b8"
     - stage: boundary
-      stageUuid: "696d114b-87d7-814a-80de-63eb549486c4"
+      stageUuid: "c41910fb-7e9e-8bbf-9e02-e95351eebe0f"
     - stage: links
-      stageUuid: "e0440971-cb2a-8b4d-bee7-b7c853b34f98"
+      stageUuid: "8258af35-e2b8-8c4c-a068-24304f67cf15"
     - stage: horo
-      stageUuid: "57d4c328-911d-8df4-87af-3691c5c16491"
+      stageUuid: "a82daf4a-439c-8724-b81c-8e1ba59b245e"
     - stage: seal
-      stageUuid: "e3009bd3-f244-8b96-9cb3-253c240d0092"
+      stageUuid: "c0133054-a290-8968-b226-462100376328"
     - stage: uuid
-      stageUuid: "24697ede-6cce-856c-af15-6cbb7682299a"
+      stageUuid: "97a6d9ab-bc49-8ad8-ab05-f5e7585d7f7c"
 version: 2
 ---
 # opinion

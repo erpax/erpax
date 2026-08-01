@@ -1,76 +1,35 @@
 ---
 name: processor
 description: "Use when reasoning about processor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/processor
-coordinate: processor · 7/descent · dc004c46
-contentUuid: "661bdaec-2544-5bce-96d1-bb6d9bcaa109"
-diamondUuid: "474531ed-85ff-8f18-b43d-bf9e2e07125e"
-uuid: "dc004c46-3934-85fd-84b9-67a3888a9ce6"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - computer
-    - law
-    - merge
-    - processor
-    - requirements
-    - sti
-  out:
-    - collapse
-    - computer
-    - law
-    - merge
-    - processor
-    - requirements
-    - sti
+atomPath: "vocabulary/processor"
+coordinate: "vocabulary/processor · 8/crest · 926025e7"
+contentUuid: "32bccaed-467e-54e6-a563-04c70564f660"
+diamondUuid: "9b139d0b-2fec-8b0d-b5b9-fc6ca44268ac"
+uuid: "926025e7-7a96-81da-aea7-9f5365fb3108"
+horo: 8
 typography:
-  partition: processor
-  bondDegree: 24
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 20
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - requirements
-    - sti
-  matrix:
-    - collapse
-    - computer
-    - law
-    - merge
-    - processor
-    - requirements
-    - sti
-  backlinks:
-    - collapse
-    - computer
-    - law
-    - merge
-    - processor
-    - requirements
-    - sti
 signatures:
-  computationUuid: "5769f1c9-824d-8386-9208-1f9658fb9959"
+  computationUuid: "85cc5861-c2c2-8d04-92ba-de63ee5fad1b"
   stages:
     - stage: path
-      stageUuid: "617ae71b-f389-8353-af77-b0f9813af87a"
+      stageUuid: "87fdd880-2eb1-8cfd-b491-9549e8c6d018"
     - stage: trinity
-      stageUuid: "42039e55-4867-8485-96fb-381f79b8564d"
+      stageUuid: "7892ce93-2cb1-81f7-b453-2fda6d3b172d"
     - stage: boundary
-      stageUuid: "158bf71b-ca22-8d11-b1f6-200b0b8f5094"
+      stageUuid: "9a629c2c-bbf8-8f03-a292-990a36ed745b"
     - stage: links
-      stageUuid: "59c91c1e-988b-89ce-95ad-23d48005f6d6"
+      stageUuid: "06b99dca-eb9c-80e8-86f9-e5abdad4ba22"
     - stage: horo
-      stageUuid: "64a1b11d-a809-8c4c-90c0-34c957f3a01d"
+      stageUuid: "86d82f58-e64b-89af-8476-def5e5be1d81"
     - stage: seal
-      stageUuid: "37cc5465-a23a-832c-a652-d76dfa2a17a7"
+      stageUuid: "a3de0cee-8c42-8c7f-a7e8-6dd24ba969d8"
     - stage: uuid
-      stageUuid: "04af36e7-7577-8c12-9535-a1738bd2f290"
+      stageUuid: "7ec67e21-d080-893f-927a-bff97215310f"
 version: 2
 ---
 # processor

@@ -1,68 +1,35 @@
 ---
 name: grocery
 description: "Use when reasoning about grocery as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/grocery
-coordinate: grocery · 4/weave · 3b83f7ff
-contentUuid: "77060174-83d7-5025-8e4f-f93855f08fc7"
-diamondUuid: "d47809cd-4bcd-8467-8717-0589cd02a5c2"
-uuid: "3b83f7ff-be74-8ec3-acdf-99658b6c2691"
+atomPath: "vocabulary/grocery"
+coordinate: "vocabulary/grocery · 4/weave · f0f8329a"
+contentUuid: "328ecba4-0267-5867-afe0-7412864b7ea8"
+diamondUuid: "b2ecff59-0cf0-897d-921d-ce13a24d0d4b"
+uuid: "f0f8329a-690e-8baa-841b-d7e0b7a9c6ce"
 horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
 typography:
-  partition: grocery
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
 signatures:
-  computationUuid: "6314329c-bd35-89df-81b1-7ba28e83d98b"
+  computationUuid: "150011ff-79a9-8508-b30f-a76235bd738a"
   stages:
     - stage: path
-      stageUuid: "a7b37d41-0953-8cb5-9cdd-60d60d51842b"
+      stageUuid: "65b59090-12e6-806d-b893-4f4bc5cb21d3"
     - stage: trinity
-      stageUuid: "ced2fe25-3b1a-8fc8-821e-b42540bc566c"
+      stageUuid: "e68052d9-7386-8e8c-b4ff-e6cb37bbcda3"
     - stage: boundary
-      stageUuid: "3009e309-d81d-81e1-957f-2494e53d86d2"
+      stageUuid: "9fb9eb66-2032-81eb-b02a-4dd6267aad1e"
     - stage: links
-      stageUuid: "14e6797f-8b65-88de-8a64-10d41f23c142"
+      stageUuid: "cb39cbea-bae5-84dc-9acc-6232dcd11a4d"
     - stage: horo
-      stageUuid: "6effd796-0a39-8e3e-832b-78eba8aa6382"
+      stageUuid: "26569627-b5d0-82bc-abad-b2fc7f7e1ec6"
     - stage: seal
-      stageUuid: "a81cd0c8-18b9-8155-8d7f-e92564c2e9de"
+      stageUuid: "a64701b0-edc3-8943-831f-a400e7360803"
     - stage: uuid
-      stageUuid: "f2c67963-3e69-8764-bb13-e795646f9949"
+      stageUuid: "0a5ef631-85c1-8496-8f2b-87b83aa26d0b"
 version: 2
 ---
 # grocery

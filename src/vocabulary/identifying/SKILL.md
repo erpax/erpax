@@ -1,73 +1,35 @@
 ---
 name: identifying
 description: "Use when reasoning about identifying as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/identifying
-coordinate: identifying · 2/share · 5f590672
-contentUuid: "111a7381-656b-5290-bc88-b9d7ca2ef16f"
-diamondUuid: "5c339dcd-d053-86a2-97a4-2a87b3f7a7ff"
-uuid: "5f590672-e5e6-855c-a719-998bb18534f9"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - exam
-    - law
-    - merge
-    - sti
-    - test
-  out:
-    - collapse
-    - exam
-    - law
-    - merge
-    - sti
-    - test
+atomPath: "vocabulary/identifying"
+coordinate: "vocabulary/identifying · 4/weave · d1b14467"
+contentUuid: "dda4ac32-7f88-5f12-94df-0538083ab273"
+diamondUuid: "b6e0dd6c-08db-8bb2-b755-5bb5ff69fa04"
+uuid: "d1b14467-94fa-8cf9-802f-00ec73ca44d6"
+horo: 4
 typography:
-  partition: identifying
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - exam
-    - law
-    - merge
-    - sti
-    - test
-  matrix:
-    - collapse
-    - exam
-    - law
-    - merge
-    - sti
-    - test
-  backlinks:
-    - collapse
-    - exam
-    - law
-    - merge
-    - sti
-    - test
 signatures:
-  computationUuid: "4aed77b6-02dd-8378-b59f-aa98dd80920e"
+  computationUuid: "06f65abd-1b59-83de-a95e-29cdf22bbc2b"
   stages:
     - stage: path
-      stageUuid: "c6e8d625-5d0c-84f0-b41b-1010af838c41"
+      stageUuid: "98a3adc9-0d52-8f49-948e-034688cd8281"
     - stage: trinity
-      stageUuid: "88f33c66-be99-84fd-873b-e3355cb1c7d9"
+      stageUuid: "1fb4542c-0a00-81f8-a60e-85c0c6285dfb"
     - stage: boundary
-      stageUuid: "27d86ba1-2b6b-8939-8b53-c1f7c29a5780"
+      stageUuid: "f5bc3a8c-c80c-832c-b0bb-2d0903079c8b"
     - stage: links
-      stageUuid: "79a9b6cf-48b3-8ab4-924b-284c87b7abcb"
+      stageUuid: "03c6a4d7-b6d3-8436-a4bf-065e03850d56"
     - stage: horo
-      stageUuid: "429d5a17-6e7e-8176-87f3-03f21a45adb0"
+      stageUuid: "9d0383ac-6d6f-822d-ad46-96e145fa5e04"
     - stage: seal
-      stageUuid: "5ad01dec-c6eb-8ecc-bd07-9a248fd63a51"
+      stageUuid: "74065de1-0b17-8f03-bde8-fbe1c149aa8a"
     - stage: uuid
-      stageUuid: "124d6ee3-8b49-873b-a0f7-32ed1556ba25"
+      stageUuid: "7633390d-eabd-8d4b-b6f9-2a1b2f59336f"
 version: 2
 ---
 # identifying

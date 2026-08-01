@@ -1,57 +1,34 @@
 ---
 name: principle
 description: Use when modelling one principle — the singular model of the principles collection (the plural store); a foundational rule that governs conduct or design.
-atomPath: vocabulary/principle
-coordinate: principle · 8/crest · b648639f
-contentUuid: "cd3e4bf6-ca4f-5f5a-9d8e-085f44451359"
-diamondUuid: "c41ef1ee-7f4e-86e8-8185-fa7a03ab172d"
-uuid: "b648639f-93fb-89d8-a3b8-eed5eb11ba84"
+atomPath: "vocabulary/principle"
+coordinate: "vocabulary/principle · 8/crest · 417e42cc"
+contentUuid: "a2fdd0d4-533f-58c4-818e-c05d0747dca2"
+diamondUuid: "fbb6e46f-3f73-839a-834c-2e49cb03658c"
+uuid: "417e42cc-5d17-8a30-bb3c-70b2ec947f2e"
 horo: 8
-bonds:
-  in:
-    - balance
-    - governance
-    - principles
-  out:
-    - balance
-    - governance
-    - principles
 typography:
-  partition: principle
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - governance
-    - principles
-  matrix:
-    - balance
-    - governance
-    - principles
-  backlinks:
-    - balance
-    - governance
-    - principles
 signatures:
-  computationUuid: "2bdb17a4-b9fa-8a44-8770-2a247b15f96d"
+  computationUuid: "5da46f4c-644e-82ae-aa2d-0d9323b34e3a"
   stages:
     - stage: path
-      stageUuid: "5ba6998f-1890-8454-92f9-0156cf623882"
+      stageUuid: "899a2ae5-92c3-82e3-b834-87af87bb40cd"
     - stage: trinity
-      stageUuid: "1bbc0f80-fb02-853f-a26e-5178645dc089"
+      stageUuid: "52db8d56-3d1b-88fd-a566-cf7632a90b57"
     - stage: boundary
-      stageUuid: "90c8960e-da8d-83c9-9aa8-3ddb66090ba3"
+      stageUuid: "72609702-3aee-8e55-88dc-2de53ea64f3a"
     - stage: links
-      stageUuid: "f04ce76d-b518-8f11-a7e8-678cda76a29b"
+      stageUuid: "586479ae-fefc-8b1b-8dcc-2becceb767d1"
     - stage: horo
-      stageUuid: "658c4993-48ac-8ecc-8736-0ec6fef83d33"
+      stageUuid: "8862db14-95be-8791-a147-b559fbe58e01"
     - stage: seal
-      stageUuid: "171b8e30-6b89-8ac9-8292-2253c655a2de"
+      stageUuid: "76d70d4d-720a-8cd1-8dc3-c1ab05d87ba3"
     - stage: uuid
-      stageUuid: "dbc06152-197a-8727-958f-eed9157e1a7e"
+      stageUuid: "76a61a63-14b8-8550-87cd-f695cf3ee32d"
 version: 2
 ---
 # principle — the model of one [[principles]] row

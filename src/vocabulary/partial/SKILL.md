@@ -1,73 +1,35 @@
 ---
 name: partial
 description: "Use when reasoning about partial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/partial
-coordinate: partial · 1/base · b64a1f44
-contentUuid: "ceb157d9-cfb5-5301-89fa-b59789e1f328"
-diamondUuid: "88e93b63-187c-8334-9ecf-3223a22d9a74"
-uuid: "b64a1f44-c526-86ea-8a38-6a63c37acf2d"
-horo: 1
-bonds:
-  in:
-    - bathrooms
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
-  out:
-    - bathrooms
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
+atomPath: "vocabulary/partial"
+coordinate: "vocabulary/partial · 4/weave · 478f10c3"
+contentUuid: "d4a8ece2-69fd-5fae-b0a1-a16680fb62dd"
+diamondUuid: "a3b23e2d-b6f6-86fe-aba1-4d25adf549ee"
+uuid: "478f10c3-e4ed-8adc-925d-678cece19da2"
+horo: 4
 typography:
-  partition: partial
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - bathrooms
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
-  matrix:
-    - bathrooms
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
-  backlinks:
-    - bathrooms
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
 signatures:
-  computationUuid: "945c72c6-5537-8c27-a2e7-267a7c9b079b"
+  computationUuid: "5db4dbac-2ec8-80af-a661-a57198de637c"
   stages:
     - stage: path
-      stageUuid: "def44a47-7556-8b95-9377-97d698138171"
+      stageUuid: "d9ec9ffa-58eb-8224-b045-56d7d2cd611a"
     - stage: trinity
-      stageUuid: "722d196c-6066-8f2d-b07b-ce7803312e6f"
+      stageUuid: "7250181e-e7de-8a1f-b520-a11e9f0a0524"
     - stage: boundary
-      stageUuid: "7900dd2e-a435-8858-b680-f6580ed95994"
+      stageUuid: "4f57c22d-078d-8e8b-8f0a-28014bd71c9c"
     - stage: links
-      stageUuid: "5d6553aa-cce5-8228-b789-803c78d098a4"
+      stageUuid: "9f820c57-7acd-8f31-9771-14bf1473876c"
     - stage: horo
-      stageUuid: "7e5b9937-fcf3-868d-b33f-72a041d3a53a"
+      stageUuid: "62c9ef06-23d6-88a0-a787-c65efe9900d1"
     - stage: seal
-      stageUuid: "54ce7e44-39ac-889b-a356-a432b879fa8d"
+      stageUuid: "aa20f763-686f-8814-8e95-59c9bce6893e"
     - stage: uuid
-      stageUuid: "28c15ee1-a87f-8034-aeda-d1ddbf0fa3a9"
+      stageUuid: "9e03c478-8272-806e-9ec1-939d27579f6c"
 version: 2
 ---
 # partial

@@ -1,78 +1,35 @@
 ---
 name: pre
 description: "Use when reasoning about pre as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/pre
-coordinate: pre · 1/base · 03c36c2f
-contentUuid: "604a40fc-837b-5035-b73c-9aacc81021f4"
-diamondUuid: "c4d982c3-4305-869e-9fe7-7c4f24f35177"
-uuid: "03c36c2f-3a46-8767-b117-f67734dcb61a"
-horo: 1
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - op
-    - order
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - op
-    - order
-    - sti
+atomPath: "vocabulary/pre"
+coordinate: "vocabulary/pre · 7/descent · 5cb9214c"
+contentUuid: "a2ad5fd8-e6ad-5618-93ff-8e6abe4f2a6d"
+diamondUuid: "505ca8ab-e5a6-8e2f-936e-db30880e1c55"
+uuid: "5cb9214c-4a6b-8b51-8e5c-b1d132a92a64"
+horo: 7
 typography:
-  partition: pre
-  bondDegree: 23
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 25
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - op
-    - order
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - op
-    - order
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - op
-    - order
-    - sti
 signatures:
-  computationUuid: "e7c7d053-1d8e-8fc6-9e56-128ba58b86b4"
+  computationUuid: "10925b93-dd96-88d9-94bc-8edbb183bb2e"
   stages:
     - stage: path
-      stageUuid: "80bdbda8-2e2b-88a9-bb56-5896fe3b9c6e"
+      stageUuid: "beec8f9c-dcd3-8a12-a8f8-84c1012c5b6d"
     - stage: trinity
-      stageUuid: "6a6b0e5a-9aa8-8815-82ca-5d82f82ea9b4"
+      stageUuid: "4753744d-4a0e-87c8-a5fb-73c33ef02e5a"
     - stage: boundary
-      stageUuid: "4a8ac90c-a5ca-85db-8cc4-097d39a2362a"
+      stageUuid: "0e6b041a-7efd-8a77-a103-adb178ddd268"
     - stage: links
-      stageUuid: "750eeb3e-6f61-8171-b9fe-ad1698d9733a"
+      stageUuid: "8bd69ee1-a4e2-896a-93c1-1f3b59fe2eed"
     - stage: horo
-      stageUuid: "607fa4be-b242-8760-8740-356ba27418a4"
+      stageUuid: "ec4fcb74-0609-8ac4-a701-50c45a1b8fae"
     - stage: seal
-      stageUuid: "3ca926b9-5ea2-8973-9efe-b761bc214907"
+      stageUuid: "9acbc4db-9e8b-84fc-9771-860fd2ebe75f"
     - stage: uuid
-      stageUuid: "e4b7a82e-2d2c-830c-9f98-93d0cd142569"
+      stageUuid: "9f8af856-394b-815d-b3c2-bc25559ccb72"
 version: 2
 ---
 # pre

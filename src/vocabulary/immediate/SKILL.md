@@ -1,73 +1,35 @@
 ---
 name: immediate
 description: "Use when reasoning about immediate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/immediate
-coordinate: immediate · 7/descent · dfbb2ea1
-contentUuid: "997dc8b0-577f-547b-b623-d404c8e37730"
-diamondUuid: "b5a909b3-1011-83aa-ab9d-c7ba28464126"
-uuid: "dfbb2ea1-0d89-8a05-aa0c-b89d7e638f39"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - job
-    - law
-    - merge
-    - start
-    - sti
-  out:
-    - collapse
-    - job
-    - law
-    - merge
-    - start
-    - sti
+atomPath: "vocabulary/immediate"
+coordinate: "vocabulary/immediate · 5/round · f24575fc"
+contentUuid: "444f72c6-5159-5014-816b-e73d600a23f1"
+diamondUuid: "fad713c5-63d5-815a-b798-649076ed3f0d"
+uuid: "f24575fc-ea14-85fb-8f39-ce25f392b86b"
+horo: 5
 typography:
-  partition: immediate
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - job
-    - law
-    - merge
-    - start
-    - sti
-  matrix:
-    - collapse
-    - job
-    - law
-    - merge
-    - start
-    - sti
-  backlinks:
-    - collapse
-    - job
-    - law
-    - merge
-    - start
-    - sti
 signatures:
-  computationUuid: "5d4cf3ac-307f-864f-a607-f54ab8dd267f"
+  computationUuid: "b96ffb26-4c0c-87f4-b547-94b2d10535c1"
   stages:
     - stage: path
-      stageUuid: "4328c52e-6779-889f-b963-3e856bf04e65"
+      stageUuid: "342d243d-83aa-86a8-98e1-3ae6a265d91c"
     - stage: trinity
-      stageUuid: "5fb9ceab-d00b-878d-9864-25170834c26d"
+      stageUuid: "2bbc0a0e-ca5a-816f-91b9-23d269fa72a6"
     - stage: boundary
-      stageUuid: "f2b35730-a274-8494-91f3-fc9b73d720fc"
+      stageUuid: "2a2ccab5-ea0f-8c09-a580-a24eb1b53eda"
     - stage: links
-      stageUuid: "09be5678-b78a-8d34-be3c-50af9c347dbb"
+      stageUuid: "036aebcc-5ebf-8c54-82b9-308c1fd76b6f"
     - stage: horo
-      stageUuid: "64a17dc0-890d-8c46-88d2-eed07103b0a4"
+      stageUuid: "b872b833-f491-8b42-a090-1de14a225538"
     - stage: seal
-      stageUuid: "1f517175-679c-88a4-a857-a036ecd7306b"
+      stageUuid: "8deb579b-2e3d-887b-af17-303c884cbd58"
     - stage: uuid
-      stageUuid: "1a550add-85ce-8ecb-a2f9-7ef6c845a2df"
+      stageUuid: "b48756ec-4914-889d-805e-eb111f99d068"
 version: 2
 ---
 # immediate

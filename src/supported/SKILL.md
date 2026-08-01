@@ -2,62 +2,19 @@
 name: supported
 description: "Use when reasoning about supported as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: supported
-coordinate: supported · 1/base · 3847f494
-contentUuid: "aa66ee02-cdd8-5549-b19d-0aec27ffbda4"
-diamondUuid: "0eefa697-b913-8be8-a05c-000438119fe5"
-uuid: "3847f494-f063-8c56-a669-da4b72bfdc77"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - countries
-    - law
-    - merge
-    - not
-    - product
-    - sti
-  out:
-    - collapse
-    - countries
-    - law
-    - merge
-    - not
-    - product
-    - sti
+coordinate: "supported · 2/share · 71af943a"
+contentUuid: "32059f7b-3f75-52dd-bcf9-b5bb2304ffd1"
+diamondUuid: "4517849c-f1dc-8bb2-9785-4f66ff7aa899"
+uuid: "71af943a-1a75-82cc-beec-1f11760f1a65"
+horo: 2
 typography:
   partition: supported
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - countries
-    - law
-    - merge
-    - not
-    - product
-    - sti
-  matrix:
-    - collapse
-    - countries
-    - law
-    - merge
-    - not
-    - product
-    - sti
-  backlinks:
-    - collapse
-    - countries
-    - law
-    - merge
-    - not
-    - product
-    - sti
 signatures:
-  computationUuid: "31227189-809c-8a67-9c7c-579bb79261ed"
+  computationUuid: "eb9c03a0-445b-8d3d-9d52-827322a06a71"
   stages:
     - stage: path
       stageUuid: "cc59f964-8cbc-8987-b34c-2a4fb0439978"
@@ -68,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d31cd8d0-57d2-8954-92fe-85c6d1dbc1d4"
     - stage: horo
-      stageUuid: "2c55fe80-1a27-8eca-8bc7-490559b1419a"
+      stageUuid: "d0d62b51-479c-881b-bd48-cf1167ee19ae"
     - stage: seal
-      stageUuid: "789a513b-af62-8362-b4b4-2df4355173db"
+      stageUuid: "414871a8-d15d-81fc-af4d-4aa1761c1aee"
     - stage: uuid
-      stageUuid: "b4e52293-c19c-8146-916f-98aca4768fc1"
+      stageUuid: "cf40c2aa-14ad-8fbc-b513-e7e95229a436"
 version: 2
 ---
 # supported

@@ -1,63 +1,35 @@
 ---
 name: failed
 description: "Use when reasoning about failed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/failed
-coordinate: failed · 4/weave · 8b0c957c
-contentUuid: "13c1cde7-7acc-54d2-ae1e-04634b726ec2"
-diamondUuid: "4e3c6a97-45b4-837e-9b8e-e25816d0d44f"
-uuid: "8b0c957c-edab-8253-bd9e-e268c1978820"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/failed"
+coordinate: "vocabulary/failed · 1/base · 70f8008c"
+contentUuid: "cec9f08e-5a63-5c2c-8e29-081045049e66"
+diamondUuid: "b58a087d-bf12-86cd-a58a-a8d7d2c50c97"
+uuid: "70f8008c-fbf7-8ec0-9663-00848ed00904"
+horo: 1
 typography:
-  partition: failed
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "fa4bb607-d827-8c40-8519-016b3e0e7a50"
+  computationUuid: "12ba5274-7990-846d-a8aa-30edc6997a1a"
   stages:
     - stage: path
-      stageUuid: "c0faa960-3799-8406-8cc2-3ddaf4a08009"
+      stageUuid: "20778995-3336-83a7-b32d-e35cbec9490d"
     - stage: trinity
-      stageUuid: "855bbaab-9ec6-8b12-ba8e-b8276431bab0"
+      stageUuid: "6c66f4c5-c3b6-8074-9265-3972743b3c51"
     - stage: boundary
-      stageUuid: "c88a8437-a8b2-8110-8882-8e4b18eb1b03"
+      stageUuid: "621f0026-bfec-8eb5-bdf5-161f1304ae14"
     - stage: links
-      stageUuid: "d0b149ca-62f4-8844-a71e-0ce146defbfd"
+      stageUuid: "47f3faa2-c92d-8f5c-8cdb-2d475c54c7c3"
     - stage: horo
-      stageUuid: "5fd0ca60-a65f-83c5-a3a2-2d71d1e824a8"
+      stageUuid: "80fe866f-8583-8d5c-a770-8a9b95c2b2a7"
     - stage: seal
-      stageUuid: "11ed8edd-36a2-88ff-b765-eca76edf956b"
+      stageUuid: "6d5eb2bd-211a-8e6a-91ce-14e7ce64bca6"
     - stage: uuid
-      stageUuid: "cd3ddb82-b18e-8477-b33a-52e6c93dde16"
+      stageUuid: "4ebf4f9d-e11e-81a3-a3c9-e992e82c8ac2"
 version: 2
 ---
 # failed

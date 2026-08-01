@@ -1,58 +1,35 @@
 ---
 name: author
 description: Use when reasoning about author — The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent t
-atomPath: vocabulary/author
-coordinate: author · 4/weave · 6f5bb80e
-contentUuid: "85b6796d-77c6-5299-8ff3-06781ffead94"
-diamondUuid: "60fde6bb-516b-8820-9a14-c6543ecd88e4"
-uuid: "6f5bb80e-d211-8181-95ae-4ff8f470bac7"
-horo: 4
-bonds:
-  in:
-    - law
-    - person
-    - thing
-  out:
-    - law
-    - person
-    - thing
+atomPath: "vocabulary/author"
+coordinate: "vocabulary/author · 7/descent · 7cdbc7c4"
+contentUuid: "89378d5b-25d4-582f-96bc-abf6f260d01c"
+diamondUuid: "dc39ec40-4b72-85d0-8ea0-81aeb559d777"
+uuid: "7cdbc7c4-9fab-8c82-a19c-2b1c26fe210b"
+horo: 7
 typography:
-  partition: author
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - person
-    - thing
-  matrix:
-    - law
-    - person
-    - thing
-  backlinks:
-    - law
-    - person
-    - thing
 signatures:
-  computationUuid: "5fcc040b-d57a-8bf9-ba4a-13101de90656"
+  computationUuid: "a2b463aa-29b2-8940-a318-8a414468d1b8"
   stages:
     - stage: path
-      stageUuid: "98d0f12d-02a7-8b67-8998-d8f1cb8317b8"
+      stageUuid: "cd55c32c-8dc1-8896-bbac-3d7c8c4b9739"
     - stage: trinity
-      stageUuid: "879cfb86-dde0-8409-8e3f-fdf77d9e304a"
+      stageUuid: "76082999-4a33-86f8-8eab-21cbe11a52f5"
     - stage: boundary
-      stageUuid: "1d23aa9e-c1fd-8249-bf22-267155f8c4a4"
+      stageUuid: "2283b34e-9bd6-898b-968a-0a08cddd218b"
     - stage: links
-      stageUuid: "56f357a3-66ba-8700-99af-af6a249a6382"
+      stageUuid: "28ea3582-b35c-8b01-a148-81b042dc57a5"
     - stage: horo
-      stageUuid: "a8e2a4f5-79fd-8b52-a14a-73a896c902fd"
+      stageUuid: "323daa28-6884-889d-bf08-b06bf7a25c68"
     - stage: seal
-      stageUuid: "d1956c8f-819a-8486-9303-66d50f89feaa"
+      stageUuid: "87a89b29-074d-83d2-932c-2ad599101231"
     - stage: uuid
-      stageUuid: "e1d1023b-c6f1-83e2-98b9-638be8f369a7"
+      stageUuid: "ae3369ce-8765-840b-a8b8-81b35b7408b2"
 version: 2
 ---
 # author

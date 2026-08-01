@@ -1,63 +1,35 @@
 ---
 name: cup
 description: "Use when reasoning about cup as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/cup
-coordinate: cup · 5/round · 82eed428
-contentUuid: "2de717ee-c5b4-5d73-b969-e7ad614d7e25"
-diamondUuid: "41409cbe-c0b4-88b3-85b2-f761b32ccb75"
-uuid: "82eed428-91bb-8688-b87e-90456136bd14"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/cup"
+coordinate: "vocabulary/cup · 2/share · 478b0ed1"
+contentUuid: "e4c8d665-eef5-5cdd-85da-52cf5a0b990e"
+diamondUuid: "10051186-bc1b-848b-ac66-f35a9d26ce5b"
+uuid: "478b0ed1-74ff-8198-84ad-02d8ca55b15f"
+horo: 2
 typography:
-  partition: cup
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "3e21a549-978f-8e9c-a38e-541bfe3e031f"
+  computationUuid: "f9d657a7-6d8c-84ed-b1cf-3af2d351d5fb"
   stages:
     - stage: path
-      stageUuid: "d7a263d7-d4d3-83d1-913b-c505b3ad39c3"
+      stageUuid: "4d3db7a9-5f6b-8806-97d7-fc38522df500"
     - stage: trinity
-      stageUuid: "bcaf71fb-50bb-8aa3-bf1a-5731e034f126"
+      stageUuid: "d4741a2e-d50c-8d1f-93cd-871ef8f1d5e1"
     - stage: boundary
-      stageUuid: "44c04a35-c337-8a8c-bd82-726f9b7b87cb"
+      stageUuid: "dc2e03d0-2b26-8edb-8cd6-3f3cb16b2dd7"
     - stage: links
-      stageUuid: "4c213b2f-acd4-8033-94e8-6276cccbadac"
+      stageUuid: "7671ec8b-3c8b-8114-81e9-b5f3658005bb"
     - stage: horo
-      stageUuid: "6a21e1c8-c864-83e5-b99b-90a8406858ee"
+      stageUuid: "ba479d1b-5477-838b-96c1-e3c1368e6dcd"
     - stage: seal
-      stageUuid: "cb4214a0-d2f3-8e81-98dc-7615d938a977"
+      stageUuid: "22f841f8-4352-8136-a033-c81b76a17d6b"
     - stage: uuid
-      stageUuid: "3473a02c-089e-8f44-b281-bc725bd27e5a"
+      stageUuid: "c71c0a57-2fc6-88f4-abd4-6a9c75f5f399"
 version: 2
 ---
 # cup

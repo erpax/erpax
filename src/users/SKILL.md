@@ -2,50 +2,14 @@
 name: users
 description: "Use when managing authenticated actors — employees, agents, customers, authors — their cross-tenant roles, held competencies, per-user locale/display config, email login, and access credentials. The typeless universal actor and identity root."
 atomPath: users
-coordinate: users · 4/weave · 185bb242
-contentUuid: "f8f4cac8-4b2c-5589-8501-67bec6375457"
-diamondUuid: "5a4a32d7-5f55-8562-a684-6e047938bee7"
-uuid: "185bb242-add5-8b8f-ac60-8fbf99ff9d7c"
-horo: 4
-bonds:
-  in:
-    - access
-    - activities
-    - agent
-    - auth
-    - config
-    - fields
-    - identity
-    - instances
-    - law
-    - posts
-    - queue
-    - requests
-    - roles
-    - suggestions
-    - ticket
-    - train
-  out:
-    - access
-    - activities
-    - agent
-    - auth
-    - config
-    - fields
-    - identity
-    - instances
-    - law
-    - posts
-    - queue
-    - requests
-    - roles
-    - suggestions
-    - ticket
-    - train
+coordinate: "users · 8/crest · 7a816fdb"
+contentUuid: "d4789d7d-b3c7-5d10-a321-e9bcadfd0c8c"
+diamondUuid: "63623024-0607-84fa-8d4e-f4db91cf6fb6"
+uuid: "7a816fdb-229f-86fa-b860-3b98adcb1f0b"
+horo: 8
 typography:
   partition: users
-  bondDegree: 0
-  neighbors: []
+  bondDegree: 47
 standards:
   - "5321 smtp envelope"
   - "5322 internet-message-format email"
@@ -57,55 +21,16 @@ standards:
   - "GDPR Art.12 transparent-information user-language-of-choice"
   - "GDPR Art.32 security-of-processing"
   - "GDPR Art.6(1)(b) lawful-basis-contract"
-  - "ISO-19011:2018 audit-trail user-config-change"
+  - "ISO-19011`"
+  - "ISO-27002"
+  - "ISO/IEC-27001:2022`"
+  - "ISO/IEC-27002:2022"
+  - "ISO/IEC-27002:2022`"
   - "OWASP-ASVS"
   - "SOC-2 CC6.1 logical-access-controls"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - auth
-    - config
-    - fields
-    - identity
-    - law
-    - train
-  matrix:
-    - access
-    - activities
-    - agent
-    - auth
-    - config
-    - fields
-    - identity
-    - instances
-    - law
-    - posts
-    - queue
-    - requests
-    - roles
-    - suggestions
-    - ticket
-    - train
-  backlinks:
-    - access
-    - activities
-    - agent
-    - auth
-    - config
-    - fields
-    - identity
-    - instances
-    - law
-    - posts
-    - queue
-    - requests
-    - roles
-    - suggestions
-    - ticket
-    - train
 signatures:
-  computationUuid: "4238e516-7d86-8e0e-8e58-bf5613573062"
+  computationUuid: "b16b0d59-5235-85f3-9c7a-f4c24777c3bc"
   stages:
     - stage: path
       stageUuid: "12589957-b73f-8bcb-b034-a2e3043d5eef"
@@ -116,11 +41,11 @@ signatures:
     - stage: links
       stageUuid: "9504a884-7be9-816c-a2e7-0fc6c1be1a58"
     - stage: horo
-      stageUuid: "180661ea-433d-8a58-ae5a-1a307afdde9e"
+      stageUuid: "3bc202f2-0bf5-839d-8818-fa79c7131657"
     - stage: seal
-      stageUuid: "3e07c4c8-a34d-8094-a596-b3918eda3310"
+      stageUuid: "af36f393-0108-8314-85ab-0d24fd9ca813"
     - stage: uuid
-      stageUuid: "f22fac31-6385-8df3-a6a9-a6c98151084e"
+      stageUuid: "99fff05f-3aa1-89bf-ab73-767dae99cb5f"
 version: 2
 ---
 # users

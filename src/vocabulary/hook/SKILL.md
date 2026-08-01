@@ -1,62 +1,34 @@
 ---
 name: hook
 description: Use when modelling one hook — the singular model of the hooks collection (the plural store); a lifecycle gateway where logic runs on a record event.
-atomPath: vocabulary/hook
-coordinate: hook · 4/weave · 45c4bba0
-contentUuid: "35039865-e723-516a-8de0-38c8dd4e8f11"
-diamondUuid: "b5918b39-537f-8357-80bd-f1180c6841ec"
-uuid: "45c4bba0-0e68-888a-b610-fd146e93d816"
-horo: 4
-bonds:
-  in:
-    - balance
-    - event
-    - hooks
-    - law
-  out:
-    - balance
-    - event
-    - hooks
-    - law
+atomPath: "vocabulary/hook"
+coordinate: "vocabulary/hook · 1/base · b02eac54"
+contentUuid: "618ecbdc-a773-5eb3-93a1-0cfb205dac0f"
+diamondUuid: "b78d136d-7777-858d-a40a-f9e35a1454f0"
+uuid: "b02eac54-b849-832b-b8d7-52c5080e8fa2"
+horo: 1
 typography:
-  partition: hook
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - event
-    - hooks
-    - law
-  matrix:
-    - balance
-    - event
-    - hooks
-    - law
-  backlinks:
-    - balance
-    - event
-    - hooks
-    - law
 signatures:
-  computationUuid: "586f0a33-5b17-8e90-91f4-e6cadf5f5e92"
+  computationUuid: "ea018df0-305d-879b-a0b3-6d4b0c1747e6"
   stages:
     - stage: path
-      stageUuid: "fa9625f4-d8ce-886f-a0bf-627e5fab748a"
+      stageUuid: "4664f217-4485-874f-885e-5f75d5089e1f"
     - stage: trinity
-      stageUuid: "897a75a6-4a78-8194-90ca-c3f4806482a2"
+      stageUuid: "1df4e9f3-90fa-8dd8-b88d-1216554b24d4"
     - stage: boundary
-      stageUuid: "6ae30910-d294-8c88-b68a-d528c4203fa1"
+      stageUuid: "39718cca-8ac8-8abd-8eae-3cef59b7eb09"
     - stage: links
-      stageUuid: "d4818e0d-a12d-8142-a5b2-d90976cd7b91"
+      stageUuid: "c8effbd0-ba42-8c7f-a3ea-d339b276a63f"
     - stage: horo
-      stageUuid: "e11091ab-c875-8443-afd9-20aa2ff93967"
+      stageUuid: "e9350bb8-8453-811a-9a9f-41d31b4a0f05"
     - stage: seal
-      stageUuid: "df13f931-0601-8214-af3d-a832844f9a73"
+      stageUuid: "6b251414-7e46-8b83-8e47-a2b0ac9a68c5"
     - stage: uuid
-      stageUuid: "40cc27e3-9b83-8f1f-b59c-47d2d2e6c87f"
+      stageUuid: "4dc51630-ab3d-8e0f-bbf4-58e3c9305deb"
 version: 2
 ---
 # hook — the model of one [[hooks]] row

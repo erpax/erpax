@@ -1,63 +1,35 @@
 ---
 name: diabetic
 description: "Use when reasoning about diabetic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/diabetic
-coordinate: diabetic · 7/descent · 941bb276
-contentUuid: "1c7d6b61-cfcb-58e4-8ccc-8b078af6c766"
-diamondUuid: "84a7c564-45b7-87f5-bc72-c26b2339f970"
-uuid: "941bb276-8f6b-827d-b2b2-ea728ee4d6ec"
+atomPath: "vocabulary/diabetic"
+coordinate: "vocabulary/diabetic · 7/descent · 5ce4ef0e"
+contentUuid: "dad22aaa-af55-5744-8054-f5b0d61d8673"
+diamondUuid: "293eef90-5d01-8171-8eda-decdf22ec6a0"
+uuid: "5ce4ef0e-3ab7-8ab0-8c82-ce461e4b6271"
 horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: diabetic
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "d343102c-0ee3-8c7e-988f-2aa4d64b0b17"
+  computationUuid: "40cdfb1f-e16d-8e74-8ab4-394fb39ec80b"
   stages:
     - stage: path
-      stageUuid: "c6170a47-093a-8201-be7a-7304edc107c7"
+      stageUuid: "6a590e60-2fcd-8a31-a20e-feb79ebcb500"
     - stage: trinity
-      stageUuid: "ec2b0372-441b-8805-af5f-3f49f52ffeaa"
+      stageUuid: "3501a054-76f1-8c66-9d82-5eac2655700b"
     - stage: boundary
-      stageUuid: "04e6f71d-53b4-8ed3-9a15-0593afcf4e5d"
+      stageUuid: "0bf88c3b-f47d-8d9b-8ac0-b437f49e0f81"
     - stage: links
-      stageUuid: "4656ace5-3e52-8632-8191-727bab922111"
+      stageUuid: "e5506dfc-dd83-8c22-b9de-22327847eef8"
     - stage: horo
-      stageUuid: "ce745fad-2f0a-8181-863f-7e6fda25f077"
+      stageUuid: "f661b865-3c4e-806d-bcf5-05ae8867cc52"
     - stage: seal
-      stageUuid: "ba99912e-5ba6-864f-bf9d-1504ee4e47cc"
+      stageUuid: "35056e63-ce0b-885a-af9d-f6753eaaefd6"
     - stage: uuid
-      stageUuid: "27250b26-45b4-8379-9fdd-87de23f5bd55"
+      stageUuid: "5b7a5ba6-a0b3-8970-80d4-00fd9cf2f2f2"
 version: 2
 ---
 # diabetic

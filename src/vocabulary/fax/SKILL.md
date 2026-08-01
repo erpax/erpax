@@ -1,68 +1,35 @@
 ---
 name: fax
 description: "Use when reasoning about fax as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/fax
-coordinate: fax · 7/descent · 848280a8
-contentUuid: "5158884d-c137-5f6e-be2c-1706abce9fdb"
-diamondUuid: "b3233141-1f14-8282-a263-24773acd45b9"
-uuid: "848280a8-ed42-8a97-b842-1d742e1282b3"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
+atomPath: "vocabulary/fax"
+coordinate: "vocabulary/fax · 4/weave · d63e35c1"
+contentUuid: "ada0ab10-9e69-5ee9-ace1-bdae0491b3ac"
+diamondUuid: "d33d5b4d-cec0-86a2-8ff3-e1932be54299"
+uuid: "d63e35c1-54ab-8ee1-9e4b-3bc1aa92ff10"
+horo: 4
 typography:
-  partition: fax
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
 signatures:
-  computationUuid: "1501a660-6847-8def-b274-d9c7a759790b"
+  computationUuid: "b2beca47-1566-87d5-8560-1535bafbd79a"
   stages:
     - stage: path
-      stageUuid: "9c4cfa9b-3ac0-8348-8bba-1c4aef7edac1"
+      stageUuid: "f53e2188-3b6a-83cc-b32c-69a6d0f9e3c9"
     - stage: trinity
-      stageUuid: "dc98ac3a-1427-82cb-8c3b-c8bbc5169279"
+      stageUuid: "7b18abff-aa3a-86f5-8ca5-a0639336aa08"
     - stage: boundary
-      stageUuid: "d56236ce-b05a-8e86-894b-c58205cd7daf"
+      stageUuid: "6248de91-d74a-8dce-8682-7058486836a4"
     - stage: links
-      stageUuid: "489d3638-1a1f-85c6-854b-98eb1d2f2caf"
+      stageUuid: "1e88a112-5eb5-8f5d-b045-6759a0c689a9"
     - stage: horo
-      stageUuid: "1de07288-a1f9-89f0-b268-75392357b855"
+      stageUuid: "48f148ce-bae8-8432-a2a8-3492c24b1808"
     - stage: seal
-      stageUuid: "7c59ec94-90b5-8dda-8f89-57916a55363c"
+      stageUuid: "32d0ba03-bc02-81da-a476-e95cf63a7e6c"
     - stage: uuid
-      stageUuid: "be79127b-2eca-8ab7-b4c7-4f85a1710deb"
+      stageUuid: "76e082f2-7437-8895-bf8c-6e31c8e39a33"
 version: 2
 ---
 # fax

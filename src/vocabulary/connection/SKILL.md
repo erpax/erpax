@@ -1,62 +1,34 @@
 ---
 name: connection
 description: Use when modelling one connection — the singular model of the connections collection (the plural store); one edge in the universal relationship graph between two actors.
-atomPath: vocabulary/connection
-coordinate: connection · 7/descent · 0c395c07
-contentUuid: "d61149ae-36f1-5a11-9c77-a524b42f784c"
-diamondUuid: "8dd4484f-9abf-8f53-9c92-7796ae616cfc"
-uuid: "0c395c07-90e0-841a-8ade-0847e974baa6"
-horo: 7
-bonds:
-  in:
-    - balance
-    - connections
-    - law
-    - network
-  out:
-    - balance
-    - connections
-    - law
-    - network
+atomPath: "vocabulary/connection"
+coordinate: "vocabulary/connection · 4/weave · b2306329"
+contentUuid: "f81ea691-7ec0-5442-afcf-f45e80cd4886"
+diamondUuid: "9f2d4cf4-0c54-8ce4-85a0-e4e43ee08cc6"
+uuid: "b2306329-f6e8-8a7f-a5d7-8e08b845691b"
+horo: 4
 typography:
-  partition: connection
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - connections
-    - law
-    - network
-  matrix:
-    - balance
-    - connections
-    - law
-    - network
-  backlinks:
-    - balance
-    - connections
-    - law
-    - network
 signatures:
-  computationUuid: "a6c44017-311d-8026-b0db-b5dba9fdd296"
+  computationUuid: "fecc21d5-8a11-8d90-b5ee-9c0d58f90e13"
   stages:
     - stage: path
-      stageUuid: "84bdc323-ea2a-81bc-8fbf-086dc8608ece"
+      stageUuid: "fc6e0ecf-71a2-8228-874f-604e3b2bc1d5"
     - stage: trinity
-      stageUuid: "11940775-3f9e-85b4-827b-d7acfbf3bc32"
+      stageUuid: "2bf31e52-7d4c-8023-9e0e-33867f23e1a7"
     - stage: boundary
-      stageUuid: "45a8a25e-ab26-8ccc-a23e-b7d69703b331"
+      stageUuid: "bb431e57-eaac-89cf-98c8-5222226bd485"
     - stage: links
-      stageUuid: "22687a9b-3edf-8689-a2aa-d360851ceb24"
+      stageUuid: "74422ae6-63e1-8689-aed2-24b51e310e3e"
     - stage: horo
-      stageUuid: "75af0023-721b-810a-a638-cd6b57202773"
+      stageUuid: "4cf9d57f-d6f1-8dd1-95d3-fcbe8019c5de"
     - stage: seal
-      stageUuid: "f918fa43-2560-8933-8599-0ca155525f72"
+      stageUuid: "feb093f4-2d2a-8c9d-81ef-bf995c66f41a"
     - stage: uuid
-      stageUuid: "012e246e-95cf-89ec-b2e8-8baed9198791"
+      stageUuid: "f5da2423-cfa7-8017-b9ee-6002c1672650"
 version: 2
 ---
 # connection — the model of one [[connections]] row

@@ -2,117 +2,18 @@
 name: war
 description: "Use when the society turns warfare tactics to peace — reconnaissance, the OODA loop, coordinated formations, and defense-in-depth applied to building harmony and driving entropy to zero, never to destruction."
 atomPath: war
-coordinate: war · 7/descent · 724bda27
-contentUuid: "8b9560f2-1c60-5b1a-b3ac-ae94f17cb520"
-diamondUuid: "6a1a2d07-6e40-802e-9972-735f272d639b"
-uuid: "724bda27-26e9-8bc5-be23-5948faa8efb6"
-horo: 7
-bonds:
-  in:
-    - angel
-    - aura
-    - breath
-    - defence
-    - drone
-    - duality
-    - entropy
-    - gate
-    - harmony
-    - law
-    - matrix
-    - merge
-    - peace
-    - sequence
-    - society
-    - tamper
-    - team
-    - trinity
-  out:
-    - angel
-    - aura
-    - breath
-    - defence
-    - drone
-    - duality
-    - entropy
-    - gate
-    - harmony
-    - law
-    - matrix
-    - merge
-    - peace
-    - sequence
-    - society
-    - tamper
-    - team
-    - trinity
+coordinate: "war · 8/crest · 9a79a335"
+contentUuid: "1b372552-9baa-56b0-8102-592e22a430a8"
+diamondUuid: "55cae96b-68f5-871e-af5e-17b5d11be232"
+uuid: "9a79a335-842a-84d7-8a8a-4be04db55a12"
+horo: 8
 typography:
   partition: war
   bondDegree: 57
-  neighbors:
-    - aura
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - angel
-    - aura
-    - breath
-    - defence
-    - drone
-    - duality
-    - entropy
-    - gate
-    - harmony
-    - law
-    - matrix
-    - merge
-    - peace
-    - sequence
-    - society
-    - tamper
-    - team
-    - trinity
-  matrix:
-    - angel
-    - aura
-    - breath
-    - defence
-    - drone
-    - duality
-    - entropy
-    - gate
-    - harmony
-    - law
-    - matrix
-    - merge
-    - peace
-    - sequence
-    - society
-    - tamper
-    - team
-    - trinity
-  backlinks:
-    - angel
-    - aura
-    - breath
-    - defence
-    - drone
-    - duality
-    - entropy
-    - gate
-    - harmony
-    - law
-    - matrix
-    - merge
-    - peace
-    - sequence
-    - society
-    - tamper
-    - team
-    - trinity
 signatures:
-  computationUuid: "81a2cf25-1469-8e11-bab1-81e34d74c728"
+  computationUuid: "84284a0f-f8d0-8a7d-bb52-116c0cfda2d9"
   stages:
     - stage: path
       stageUuid: "df5217a4-d25b-8dee-bc87-ddfac1199745"
@@ -123,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "025e3b75-232a-8e2e-9753-0b25e536ffb9"
     - stage: horo
-      stageUuid: "ce97b198-64d1-8a38-bcc1-d2483a0f5da9"
+      stageUuid: "3a027ebe-3b52-83d7-9409-3e8b2fcd3570"
     - stage: seal
-      stageUuid: "e415ccf6-b54e-845f-8e58-6c1ff62c2861"
+      stageUuid: "bac8a572-9e0c-8149-af55-e6b94857adaf"
     - stage: uuid
-      stageUuid: "579eabbf-0e5e-8a08-8ab1-120a69f7bd63"
+      stageUuid: "2dfa0f15-4fc5-8c56-9398-3a38da81af72"
 version: 2
 ---
 # war — the tactics of war, turned to peace

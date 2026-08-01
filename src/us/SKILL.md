@@ -2,62 +2,19 @@
 name: us
 description: "Use when reasoning about us as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: us
-coordinate: us · 4/weave · 4f0cbdac
-contentUuid: "b59f8908-5234-5e14-8a23-2dd33c7f1e78"
-diamondUuid: "351ac504-7137-8128-bfc0-3f6639b77bab"
-uuid: "4f0cbdac-551e-8ae3-b3b6-098116f4844b"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - nonprofit
-    - npi
-    - sti
-    - type
-  out:
-    - collapse
-    - law
-    - merge
-    - nonprofit
-    - npi
-    - sti
-    - type
+coordinate: "us · 1/base · 4d569ef0"
+contentUuid: "1ca9577b-5140-5754-ac14-f1107365500a"
+diamondUuid: "16144592-a670-82e0-825c-a2267e848e1f"
+uuid: "4d569ef0-8f23-86a4-9f1e-416502b475df"
+horo: 1
 typography:
   partition: us
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - nonprofit
-    - npi
-    - sti
-    - type
-  matrix:
-    - collapse
-    - law
-    - merge
-    - nonprofit
-    - npi
-    - sti
-    - type
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - nonprofit
-    - npi
-    - sti
-    - type
 signatures:
-  computationUuid: "7d419347-5d75-8b3e-b66a-347ecc0fdfc8"
+  computationUuid: "7fd15607-cf2a-8671-b605-3d0db4fc49aa"
   stages:
     - stage: path
       stageUuid: "490872a6-1240-88d1-aab3-1d4a8a33dc7a"
@@ -68,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9512b787-e25a-8812-b488-537bc52ee808"
     - stage: horo
-      stageUuid: "a408cc9c-4b49-8234-b028-08ad5132f090"
+      stageUuid: "833e76b8-f54f-85b9-acb9-ec64e06bddd2"
     - stage: seal
-      stageUuid: "8e1705e6-f4f9-86a7-9009-d8b9f6321c5f"
+      stageUuid: "9f271807-38f5-89b2-816f-e5cbd60b4299"
     - stage: uuid
-      stageUuid: "1f5e340f-00c9-8ea6-9d18-c67e3535cf82"
+      stageUuid: "da964787-1343-8607-80ac-822ce87cb743"
 version: 2
 ---
 # us

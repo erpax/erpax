@@ -1,88 +1,35 @@
 ---
 name: lodging
 description: "Use when reasoning about lodging as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/lodging
-coordinate: lodging · 4/weave · f80f10c9
-contentUuid: "39b5806c-2e59-5616-ae90-f13c9eed1a05"
-diamondUuid: "b6c0b19c-f508-8faf-b8ca-8763b7dc3ca3"
-uuid: "f80f10c9-1a07-8d33-b3f6-2f17050fc0f0"
-horo: 4
-bonds:
-  in:
-    - business
-    - collapse
-    - description
-    - law
-    - merge
-    - reservation
-    - sti
-    - type
-    - unit
-  out:
-    - business
-    - collapse
-    - description
-    - law
-    - merge
-    - reservation
-    - sti
-    - type
-    - unit
+atomPath: "vocabulary/lodging"
+coordinate: "vocabulary/lodging · 7/descent · 1c736bee"
+contentUuid: "b1f9a6ad-5165-5f70-ad84-f7cd57d784d4"
+diamondUuid: "2cb65a88-4981-80b5-b9ba-b226bca71dd6"
+uuid: "1c736bee-a883-83ed-a1a2-18eb41d7c4d7"
+horo: 7
 typography:
-  partition: lodging
+  partition: vocabulary
   bondDegree: 30
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - business
-    - collapse
-    - description
-    - law
-    - merge
-    - reservation
-    - sti
-    - type
-    - unit
-  matrix:
-    - business
-    - collapse
-    - description
-    - law
-    - merge
-    - reservation
-    - sti
-    - type
-    - unit
-  backlinks:
-    - business
-    - collapse
-    - description
-    - law
-    - merge
-    - reservation
-    - sti
-    - type
-    - unit
 signatures:
-  computationUuid: "4f70ff01-2dfe-8a66-99e2-ae5008b7b1ee"
+  computationUuid: "95df6b2c-2ab4-80b3-8bb2-53692bef6f72"
   stages:
     - stage: path
-      stageUuid: "8b657d26-8e81-84c3-8843-7fb197f94c73"
+      stageUuid: "1844960b-810d-89a1-825d-8efdba18535d"
     - stage: trinity
-      stageUuid: "0d73b2ca-5953-81c7-bace-ddc1e22f751e"
+      stageUuid: "887f5c53-0028-840b-bc10-3fb7b616bc9d"
     - stage: boundary
-      stageUuid: "7225af6f-c717-8006-9b8e-eef021daa39b"
+      stageUuid: "c03f5702-842a-891a-acdf-af609168442f"
     - stage: links
-      stageUuid: "5c246714-5a0b-8e83-920c-28666c22ffbf"
+      stageUuid: "f172d2fb-7c77-8e67-b207-209701d6ddb5"
     - stage: horo
-      stageUuid: "4d21fb91-b7c6-890a-828c-648be5ff1a1d"
+      stageUuid: "049f7f86-8894-8892-936d-78a8b570bd07"
     - stage: seal
-      stageUuid: "f0639e9a-33c8-8181-8ae2-d54e328d0209"
+      stageUuid: "c8bcdb7c-9014-8079-ae76-c549be027af8"
     - stage: uuid
-      stageUuid: "e4faacc2-4e1b-8e68-9aee-3e394b34d482"
+      stageUuid: "b6e583ac-3b04-843a-a694-ad9ac22ddf72"
 version: 2
 ---
 # lodging

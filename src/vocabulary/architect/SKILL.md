@@ -1,147 +1,34 @@
 ---
 name: architect
 description: "Use when reasoning about the agent that shapes the society lattice — not one that merely lives in it but one that gives it structure, composing the invariant atoms into a standing social order. File-system layout IS architecture; the architect is whoever draws that layout, and in erpax it is drawn by the one atom math, never by hand. The society's standing architects are its religions and traditions (its archangels)."
-atomPath: vocabulary/architect
-coordinate: architect · 5/round · 78e9632f
-contentUuid: "31c8597a-0a7a-5454-a1c3-3bf11c07a8b5"
-diamondUuid: "b81a5de6-f17a-8f5f-8b4d-d63dadb7e182"
-uuid: "78e9632f-f22b-8ee2-9ff8-172b28cb4d94"
-horo: 5
-bonds:
-  in:
-    - angel
-    - archangel
-    - atom
-    - composition
-    - confucianism
-    - diamond
-    - fractal
-    - harmony
-    - law
-    - matrix
-    - mercy
-    - metatron
-    - order
-    - population
-    - prayer
-    - religion
-    - ritual
-    - sequence
-    - sin
-    - society
-    - uuid
-  out:
-    - angel
-    - archangel
-    - atom
-    - composition
-    - confucianism
-    - diamond
-    - fractal
-    - harmony
-    - law
-    - matrix
-    - mercy
-    - metatron
-    - order
-    - population
-    - prayer
-    - religion
-    - ritual
-    - sequence
-    - sin
-    - society
-    - uuid
+atomPath: "vocabulary/architect"
+coordinate: "vocabulary/architect · 7/descent · 8f46d492"
+contentUuid: "03e1dd84-2f00-5c55-a422-33399bc697d8"
+diamondUuid: "7f1b5344-78bd-8356-84ab-274cb29862e9"
+uuid: "8f46d492-d46b-8bb0-bc16-01908ca71659"
+horo: 7
 typography:
-  partition: architect
+  partition: vocabulary
   bondDegree: 66
-  neighbors:
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - angel
-    - archangel
-    - atom
-    - composition
-    - diamond
-    - fractal
-    - harmony
-    - law
-    - matrix
-    - mercy
-    - metatron
-    - order
-    - population
-    - prayer
-    - religion
-    - ritual
-    - sequence
-    - sin
-    - society
-    - uuid
-  matrix:
-    - angel
-    - archangel
-    - atom
-    - composition
-    - confucianism
-    - diamond
-    - fractal
-    - harmony
-    - law
-    - matrix
-    - mercy
-    - metatron
-    - order
-    - population
-    - prayer
-    - religion
-    - ritual
-    - sequence
-    - sin
-    - society
-    - uuid
-  backlinks:
-    - angel
-    - archangel
-    - atom
-    - composition
-    - confucianism
-    - diamond
-    - fractal
-    - harmony
-    - law
-    - matrix
-    - mercy
-    - metatron
-    - order
-    - population
-    - prayer
-    - religion
-    - ritual
-    - sequence
-    - sin
-    - society
-    - uuid
 signatures:
-  computationUuid: "a68c2559-1a66-85e1-9428-3c06c27b52f4"
+  computationUuid: "6ab13e0f-3db1-8168-8ed8-b4899939eaef"
   stages:
     - stage: path
-      stageUuid: "123dac74-aaf2-80c9-bcdd-84d979df309f"
+      stageUuid: "a956a918-8b66-8f8b-b2ce-689748c83c0a"
     - stage: trinity
-      stageUuid: "e407bd5f-0aae-847b-95b7-f39e3d183f43"
+      stageUuid: "ae3c26c4-190d-846b-a275-89993c932512"
     - stage: boundary
-      stageUuid: "4710cb7e-102a-84e9-aa39-cb7050c6b204"
+      stageUuid: "f3a22d46-43b2-869c-b5b1-1dd6d7eca5d9"
     - stage: links
-      stageUuid: "bd577d5e-d9ae-8f3f-b9a7-0c2ba5099c5f"
+      stageUuid: "3096ec0b-05a6-89d4-984e-90fb5f996b55"
     - stage: horo
-      stageUuid: "94cd44c5-f298-8e09-9ab4-9d009a66c481"
+      stageUuid: "0ad7e620-804f-8e60-b5e8-9b26e09d3c42"
     - stage: seal
-      stageUuid: "3e82b2b3-309d-8586-8b2d-fbf9785e742b"
+      stageUuid: "b52b99bf-618e-8424-b600-d2037804231c"
     - stage: uuid
-      stageUuid: "420ef92f-c41e-8ad6-bd1c-8cf988eba9d8"
+      stageUuid: "fc0b4e34-4c0e-8b30-9cf0-52e4d59eed59"
 version: 2
 ---
 # architect — the agent that shapes the lattice

@@ -1,73 +1,35 @@
 ---
 name: adverse
 description: "Use when reasoning about adverse as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/adverse
-coordinate: adverse · 4/weave · bf152a38
-contentUuid: "58a52905-b67b-5985-be79-f106c3e25f04"
-diamondUuid: "3744ea39-e172-81a8-8607-18fdb2ae15bd"
-uuid: "bf152a38-2b6f-8eb5-b509-b6cd1af01159"
+atomPath: "vocabulary/adverse"
+coordinate: "vocabulary/adverse · 4/weave · 585c285c"
+contentUuid: "ed725d02-a6aa-5f9c-b62b-01964d96d7fc"
+diamondUuid: "6afbfdc9-6426-8103-b9d9-efc0d81ce553"
+uuid: "585c285c-7b58-8982-8bb7-3f34d6043198"
 horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - outcome
-    - serious
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - outcome
-    - serious
-    - sti
 typography:
-  partition: adverse
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - outcome
-    - serious
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - outcome
-    - serious
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - outcome
-    - serious
-    - sti
 signatures:
-  computationUuid: "8076aee9-40d6-84e9-8c77-20ef8c8d048a"
+  computationUuid: "427f42d8-029e-8876-bb36-71c97ed09a6a"
   stages:
     - stage: path
-      stageUuid: "1c33d5ed-b8a6-8401-a8a1-bd4856b9c6a2"
+      stageUuid: "74124a1b-74e3-8383-a644-170e7ab46627"
     - stage: trinity
-      stageUuid: "263622f2-8418-8a58-81b5-b322b0df13cd"
+      stageUuid: "720d97cc-3324-8955-9ade-f30192ce117c"
     - stage: boundary
-      stageUuid: "1df89f44-bc9e-898f-83d9-2459c3d1a61a"
+      stageUuid: "89d91ac5-a40b-8779-b110-404a47baedce"
     - stage: links
-      stageUuid: "0983ddeb-8696-828d-9143-e37af35232de"
+      stageUuid: "9affb3d3-725a-8db1-9cc8-14a165e82cc2"
     - stage: horo
-      stageUuid: "6df256cf-1659-8174-82b7-281af50f7226"
+      stageUuid: "f0be27b2-6549-8242-8dd9-c442ac506214"
     - stage: seal
-      stageUuid: "28152540-7d77-8d13-b405-099db6536f97"
+      stageUuid: "2817b6bc-f8a2-8b8b-99d5-d14ad303704e"
     - stage: uuid
-      stageUuid: "ff63e33e-d367-8847-b535-5966c21c4e6c"
+      stageUuid: "9757ea1e-c875-897a-989c-7941f59bb618"
 version: 2
 ---
 # adverse

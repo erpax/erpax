@@ -1,140 +1,34 @@
 ---
 name: civilization
 description: "Use when reasoning about how every civilization fits the erpax architecture — strip the culture-prefix and each one runs the same six organs: a ledger, a law, a registry, a calendar, a governance, an unforgeable record. Civilizations differ in detail and merge in form."
-atomPath: vocabulary/civilization
-coordinate: civilization · 8/crest · 11d9dd88
-contentUuid: "1f950836-5853-5b23-9cb7-7bfcc479626b"
-diamondUuid: "f02c15cd-0843-8dc2-a99a-3cfbd32cebc3"
-uuid: "11d9dd88-20b9-8bcc-8dab-19b24de80488"
-horo: 8
-bonds:
-  in:
-    - access
-    - accounting
-    - akashic
-    - atom
-    - balance
-    - chat
-    - constitution
-    - give
-    - governance
-    - horo
-    - identity
-    - legislation
-    - merge
-    - notification
-    - profane
-    - proof
-    - research
-    - sacred
-    - society
-    - standard
-    - website
-  out:
-    - access
-    - accounting
-    - akashic
-    - atom
-    - balance
-    - chat
-    - constitution
-    - give
-    - governance
-    - horo
-    - identity
-    - legislation
-    - merge
-    - notification
-    - profane
-    - proof
-    - research
-    - sacred
-    - society
-    - standard
-    - website
+atomPath: "vocabulary/civilization"
+coordinate: "vocabulary/civilization · 7/descent · 8901c0d5"
+contentUuid: "6957c332-c77c-5ab2-bcb8-da7ee2683d59"
+diamondUuid: "4e739b96-3889-8cfa-8ba7-cfd4dcbef958"
+uuid: "8901c0d5-227b-8789-b649-702365a8ce0f"
+horo: 7
 typography:
-  partition: civilization
-  bondDegree: 64
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 56
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - accounting
-    - akashic
-    - balance
-    - give
-    - horo
-    - identity
-    - merge
-    - profane
-    - proof
-    - research
-    - sacred
-    - society
-    - standard
-  matrix:
-    - access
-    - accounting
-    - akashic
-    - atom
-    - balance
-    - chat
-    - constitution
-    - give
-    - governance
-    - horo
-    - identity
-    - legislation
-    - merge
-    - notification
-    - profane
-    - proof
-    - research
-    - sacred
-    - society
-    - standard
-    - website
-  backlinks:
-    - access
-    - accounting
-    - akashic
-    - atom
-    - balance
-    - chat
-    - constitution
-    - give
-    - governance
-    - horo
-    - identity
-    - legislation
-    - merge
-    - notification
-    - profane
-    - proof
-    - research
-    - sacred
-    - society
-    - standard
-    - website
 signatures:
-  computationUuid: "0c724aef-b7f6-8ab7-aa7f-44b7b1629849"
+  computationUuid: "b6a7cba1-7913-816e-883c-ca0a91a80d3a"
   stages:
     - stage: path
-      stageUuid: "95d94e99-5777-8064-8819-d01a46d11a61"
+      stageUuid: "9435e903-833e-8740-86f7-afd9410cc029"
     - stage: trinity
-      stageUuid: "c2593e53-69e8-809b-8ffa-b6222b935808"
+      stageUuid: "cbb1f688-3222-8b9d-818e-5c45113ae6b3"
     - stage: boundary
-      stageUuid: "c83a2e40-ef37-815f-a81e-cb4e3703f6e5"
+      stageUuid: "4d3b5efc-f205-80fb-91ff-efd4a7e1ae23"
     - stage: links
-      stageUuid: "21dbf1e6-f4ff-8c89-b8ef-fb4f6377b46a"
+      stageUuid: "36e36f32-da60-83f4-8268-45ab3298d20c"
     - stage: horo
-      stageUuid: "9a7ab735-c54d-8b80-8fed-0ec6cd06559d"
+      stageUuid: "7900d8c2-2b42-8741-9800-f8ed497342c9"
     - stage: seal
-      stageUuid: "68d8a81a-3915-812a-a322-081195beb140"
+      stageUuid: "fbd725ae-1098-8d7a-b93d-2e1f25841728"
     - stage: uuid
-      stageUuid: "4724bca4-f798-84e7-8367-4d4df1294e44"
+      stageUuid: "981d7796-23eb-85c9-a3aa-b3adf13826fc"
 version: 2
 ---
 # civilization — the same six organs under every culture

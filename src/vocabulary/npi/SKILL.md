@@ -1,68 +1,35 @@
 ---
 name: npi
 description: "Use when reasoning about npi as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/npi
-coordinate: npi · 5/round · 4b590163
-contentUuid: "6ce97127-1e89-5c9b-bb80-dc1ecac55d92"
-diamondUuid: "81187821-12d7-829b-8436-f09214993d16"
-uuid: "4b590163-c9f2-875f-bef0-ef289e9b8e4c"
+atomPath: "vocabulary/npi"
+coordinate: "vocabulary/npi · 5/round · 2b9f122b"
+contentUuid: "d6d8964b-774d-5966-b385-beaf12a28465"
+diamondUuid: "c1e4f221-b1e3-8b58-9273-5d47f81a8895"
+uuid: "2b9f122b-a68f-89cb-97f1-a43b89076698"
 horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - us
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - us
 typography:
-  partition: npi
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - us
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - us
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - us
 signatures:
-  computationUuid: "368264f3-6f92-8c62-8d57-da6bde37e289"
+  computationUuid: "255835e5-f7b2-8ec5-9970-e8a7ffcb26bd"
   stages:
     - stage: path
-      stageUuid: "07aab6ec-52d5-88d4-a975-2ab471073475"
+      stageUuid: "6409cf3e-3022-8dcc-ab27-bfd926c13725"
     - stage: trinity
-      stageUuid: "075a006a-1a77-8363-8b2a-a9c7a88a6379"
+      stageUuid: "71906727-856c-8820-9804-7583ca54d62b"
     - stage: boundary
-      stageUuid: "85249644-9b0d-8d27-8b6b-44cc8ee2314b"
+      stageUuid: "edb2a8ab-308d-83c9-91b7-1737e01c9ce5"
     - stage: links
-      stageUuid: "e3daecaa-8595-8a06-bfe7-34904cc646c0"
+      stageUuid: "ad17fc4c-0f0f-872d-b60c-f0d36f3ef5f0"
     - stage: horo
-      stageUuid: "e2c85e96-50b3-8531-81b0-e2549e1781f6"
+      stageUuid: "a14d4f53-1a47-8f37-bf84-62ad8b44af46"
     - stage: seal
-      stageUuid: "c5224e79-b713-8faa-9eba-64331fe19618"
+      stageUuid: "c2c71e9b-8c9f-8b2c-93cf-e927f4257522"
     - stage: uuid
-      stageUuid: "32549b81-7199-8e85-b1f5-d73529bac9ec"
+      stageUuid: "03315019-9e85-85df-843b-5e5386e084ee"
 version: 2
 ---
 # npi

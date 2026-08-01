@@ -3,125 +3,15 @@ name: axis
 description: "Use when reasoning about the 3·6·9 control plane of the rodin vortex — three coils 120° out of phase (COIL_A/B/C) that the doubling helix winds around; the governing triad (access/hooks/auth) the flow never lands on. Nested under rodin."
 atomPath: "rodin/axis"
 coordinate: "rodin/axis · 7/descent · 0a0983cb"
-contentUuid: "ea89e7aa-d821-57c1-ad23-1fbe51d7afdf"
+contentUuid: "9e543280-e625-5b4a-8585-31a27541f9d3"
 diamondUuid: "5c7e3828-6e1c-89a9-999e-67cc06cf3d1b"
 uuid: "0a0983cb-2f4b-8e81-aae9-852257227cab"
 horo: 7
-bonds:
-  in:
-    - access
-    - analog
-    - aura
-    - auth
-    - close
-    - cmyk
-    - coil
-    - config
-    - decompression
-    - duality
-    - hooks
-    - horo
-    - identity
-    - metatron
-    - phase
-    - polarity
-    - rodin
-    - sequence
-    - signal
-    - team
-    - torus
-    - unity
-  out:
-    - access
-    - analog
-    - aura
-    - auth
-    - close
-    - cmyk
-    - coil
-    - config
-    - decompression
-    - duality
-    - hooks
-    - horo
-    - identity
-    - metatron
-    - phase
-    - polarity
-    - rodin
-    - sequence
-    - signal
-    - team
-    - torus
-    - unity
 typography:
   partition: rodin
   bondDegree: 71
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - auth
-    - close
-    - cmyk
-    - coil
-    - config
-    - duality
-    - hooks
-    - horo
-    - identity
-    - polarity
-    - rodin
-    - sequence
-    - unity
-  matrix:
-    - access
-    - analog
-    - aura
-    - auth
-    - close
-    - cmyk
-    - coil
-    - config
-    - decompression
-    - duality
-    - hooks
-    - horo
-    - identity
-    - metatron
-    - phase
-    - polarity
-    - rodin
-    - sequence
-    - signal
-    - team
-    - torus
-    - unity
-  backlinks:
-    - access
-    - analog
-    - aura
-    - auth
-    - close
-    - cmyk
-    - coil
-    - config
-    - decompression
-    - duality
-    - hooks
-    - horo
-    - identity
-    - metatron
-    - phase
-    - polarity
-    - rodin
-    - sequence
-    - signal
-    - team
-    - torus
-    - unity
 signatures:
   computationUuid: "eb30de67-0e85-8757-81f3-6a72f979393c"
   stages:

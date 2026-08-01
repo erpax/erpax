@@ -2,129 +2,34 @@
 name: photon
 description: "Use when reasoning about the photon — the indivisible quantum a leap emits or absorbs, its energy locked to its frequency by Planck's relation E = hν (massless, so E = pc). In erpax the photon IS the multi-modal uuid-message (colour + sound rendered from one frequency, downstream of the content-uuid); Planck's h is the quantum of action that makes the world discrete and is the source of every leap."
 atomPath: photon
-coordinate: photon · 7/descent · 1839d6ef
-contentUuid: "7e8164d1-1633-50e2-8f5d-f1620ca7e9d3"
-diamondUuid: "5aa2f3da-f004-8543-a780-271f3a2ebc0e"
-uuid: "1839d6ef-3c60-8c9b-9ab4-99a097866d66"
-horo: 7
-bonds:
-  in:
-    - barrier
-    - chakra
-    - color
-    - energy
-    - frequency
-    - hamiltonian
-    - harmony
-    - interference
-    - law
-    - leap
-    - level
-    - particle
-    - quantum
-    - signal
-    - spectrum
-    - uncertainty
-    - uuid
-    - wave
-  out:
-    - barrier
-    - chakra
-    - color
-    - energy
-    - frequency
-    - hamiltonian
-    - harmony
-    - interference
-    - law
-    - leap
-    - level
-    - particle
-    - quantum
-    - signal
-    - spectrum
-    - uncertainty
-    - uuid
-    - wave
+coordinate: "photon · 1/base · 4027ef33"
+contentUuid: "7c58de2a-334e-5661-b06f-14f882ea7f0c"
+diamondUuid: "44acd341-c16a-8cf1-a675-fc6c48f74210"
+uuid: "4027ef33-80d0-8139-9627-face832f19df"
+horo: 1
 typography:
   partition: photon
   bondDegree: 56
-  neighbors: []
 standards:
   - "SI-2019 / CODATA-2018 exact defining constants: h, c"
-  - energy/momentum/wavelength computed from h and c; the colour+sound render from the position math
 bindings: []
-neighbors:
-  wikilink:
-    - chakra
-    - color
-    - energy
-    - frequency
-    - harmony
-    - law
-    - leap
-    - level
-    - particle
-    - quantum
-    - signal
-    - spectrum
-    - uuid
-    - wave
-  matrix:
-    - barrier
-    - chakra
-    - color
-    - energy
-    - frequency
-    - hamiltonian
-    - harmony
-    - interference
-    - law
-    - leap
-    - level
-    - particle
-    - quantum
-    - signal
-    - spectrum
-    - uncertainty
-    - uuid
-    - wave
-  backlinks:
-    - barrier
-    - chakra
-    - color
-    - energy
-    - frequency
-    - hamiltonian
-    - harmony
-    - interference
-    - law
-    - leap
-    - level
-    - particle
-    - quantum
-    - signal
-    - spectrum
-    - uncertainty
-    - uuid
-    - wave
 signatures:
-  computationUuid: "1e07a21b-b095-86eb-898c-d4d224271a80"
+  computationUuid: "9824af18-e7ac-802c-a24d-5e277202c535"
   stages:
     - stage: path
       stageUuid: "fc53e78d-a00c-8447-a248-bb766162566c"
     - stage: trinity
       stageUuid: "5bbde9c9-385d-878e-8163-a3a00c155b02"
     - stage: boundary
-      stageUuid: "eee25c07-ee27-82e5-80a4-6b04522ae752"
+      stageUuid: "e6e97b6d-65fa-8243-ada9-e0df1e61ffc2"
     - stage: links
       stageUuid: "c711550f-8426-87ef-8186-bfecd2b85995"
     - stage: horo
-      stageUuid: "ef51e32b-087a-8dba-8a9f-87d928d0f6de"
+      stageUuid: "87285372-ab79-8f57-8676-4942375fd395"
     - stage: seal
-      stageUuid: "df383644-4dd0-8f49-b9a6-7c5e74a17e11"
+      stageUuid: "ab016a18-d094-89b3-a36c-4544552e241a"
     - stage: uuid
-      stageUuid: "dd8b0d12-fe85-8b21-8606-194fbdf33712"
+      stageUuid: "8d23722f-c7a5-85c1-a144-9bc2c4dc8ad5"
 version: 2
 ---
 # photon — the quantum a leap emits

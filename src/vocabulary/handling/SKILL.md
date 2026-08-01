@@ -1,68 +1,35 @@
 ---
 name: handling
 description: "Use when reasoning about handling as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/handling
-coordinate: handling · 8/crest · f3f9e2d4
-contentUuid: "bdc11c58-459d-554a-ab98-d2f67491b2f2"
-diamondUuid: "92f6144b-0bad-83b3-9f4b-423c5c0ba721"
-uuid: "f3f9e2d4-e0d6-85f6-8016-5abf6e19be1a"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - time
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - time
+atomPath: "vocabulary/handling"
+coordinate: "vocabulary/handling · 2/share · af2ed708"
+contentUuid: "0655f775-17e0-5962-abff-58a25db047d2"
+diamondUuid: "64cc6088-3d57-8d0c-92db-2a3ada01e0a0"
+uuid: "af2ed708-7481-89b0-b176-27a27704ce46"
+horo: 2
 typography:
-  partition: handling
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - time
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - time
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - time
 signatures:
-  computationUuid: "74d78696-5953-85dc-83c9-fe0878d21ad0"
+  computationUuid: "a95a15e8-13e1-8443-8aee-416fb3fb88a0"
   stages:
     - stage: path
-      stageUuid: "b261f45c-326a-8518-a455-3867b5bc02ec"
+      stageUuid: "b96c05b6-7306-8df2-bdda-598b1cede60e"
     - stage: trinity
-      stageUuid: "89826566-5c12-8250-a8a4-8a6144fdfc32"
+      stageUuid: "ef949729-10ff-89cc-98d4-1cee3d2c619e"
     - stage: boundary
-      stageUuid: "71dab2aa-a7d4-8e54-97d7-12f4e66a9785"
+      stageUuid: "5faa128f-d9b3-8c58-90fd-e87dbc962545"
     - stage: links
-      stageUuid: "87f31fd1-588f-8300-9bc4-d7a290a8f52a"
+      stageUuid: "4db1b154-5195-8c0e-8108-ddf6787b8942"
     - stage: horo
-      stageUuid: "b7a2751e-211f-8df6-8e3b-9e8759502e9d"
+      stageUuid: "7f528ea7-cec5-8660-851a-430571c31b84"
     - stage: seal
-      stageUuid: "d5ff8bc5-3ecf-8e37-aeda-929b411cb1f0"
+      stageUuid: "866e9eef-74d9-8fac-ac25-c07aa6fe7b67"
     - stage: uuid
-      stageUuid: "6f0986b8-6e41-87e5-8e39-e9f2d1534ac8"
+      stageUuid: "68d91b9d-064d-8c19-88b5-17ccb7acfb8b"
 version: 2
 ---
 # handling

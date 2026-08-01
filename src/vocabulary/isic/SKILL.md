@@ -1,58 +1,35 @@
 ---
 name: isic
 description: "Use when reasoning about isic — The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place."
-atomPath: vocabulary/isic
-coordinate: isic · 5/round · 9e491f20
-contentUuid: "93fc52fb-1a32-597d-9113-0e21b19176b3"
-diamondUuid: "47ab1c3d-2673-8dde-a3de-b296521692f5"
-uuid: "9e491f20-d9ef-8dc8-adc9-9a1c3792aa51"
-horo: 5
-bonds:
-  in:
-    - law
-    - organization
-    - thing
-  out:
-    - law
-    - organization
-    - thing
+atomPath: "vocabulary/isic"
+coordinate: "vocabulary/isic · 2/share · 71f5204c"
+contentUuid: "a43272f4-7128-5d8d-81e0-82c30a73b288"
+diamondUuid: "4e957b8c-2965-8494-a3a7-2ef76348fd65"
+uuid: "71f5204c-5c0d-8629-a0b6-ff7da1c39697"
+horo: 2
 typography:
-  partition: isic
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - organization
-    - thing
-  matrix:
-    - law
-    - organization
-    - thing
-  backlinks:
-    - law
-    - organization
-    - thing
 signatures:
-  computationUuid: "b7fadf35-aea0-83c9-af2f-26995dc5b29c"
+  computationUuid: "7a54c897-6b4f-86d0-bdac-210af5810ceb"
   stages:
     - stage: path
-      stageUuid: "00c28c76-a4b9-878e-a1e7-b3dfeb43db47"
+      stageUuid: "5d634438-0b74-859f-9e62-fb954d4328e0"
     - stage: trinity
-      stageUuid: "680546b2-d498-8191-8b05-97ada49c5c7b"
+      stageUuid: "ee001050-1c1e-8701-8656-44fccaaab63d"
     - stage: boundary
-      stageUuid: "0a51946d-24a1-8ed9-a265-efba7e2724ec"
+      stageUuid: "7f9e137b-0a0f-8596-80d3-9f2e2a5a1801"
     - stage: links
-      stageUuid: "390329d5-47cc-88ca-b96d-e075f912b92e"
+      stageUuid: "1c5dab8b-fd99-8555-b399-52838d6025b0"
     - stage: horo
-      stageUuid: "6d960e45-9b14-8eaf-8428-d980199da8ee"
+      stageUuid: "38cd4a4f-caaa-8518-9622-b9020de2514b"
     - stage: seal
-      stageUuid: "24b6e9a2-4700-8ba3-9df5-ed8bb2bec050"
+      stageUuid: "8ffb859c-c2d7-8f2b-bce3-b8707ad11774"
     - stage: uuid
-      stageUuid: "739d4dd8-53cc-8756-b9db-1b95b04b3a91"
+      stageUuid: "7bcbd116-ffe5-80b5-b340-f43afe0f5cd4"
 version: 2
 ---
 # isic

@@ -2,68 +2,19 @@
 name: reciprocal
 description: "Use when checking whether the corpus stays symmetrically entangled — the computed convention that every directed edge is reciprocated, measured live as coverage = reciprocal / total over the real uuid-matrix."
 atomPath: "convention/reciprocal"
-coordinate: "convention/reciprocal · 4/weave · e292a473"
-contentUuid: "f6f644ad-dbca-5a82-b99a-47a4f54a0f0e"
-diamondUuid: "dca159d0-0022-8b06-8b02-57f4d1af9b33"
-uuid: "e292a473-56d8-8608-a43a-ad11731b7bb4"
-horo: 4
-bonds:
-  in:
-    - convention
-    - cost
-    - entanglement
-    - entropy
-    - gravity
-    - law
-    - link
-    - merge
-    - uuid
-  out:
-    - cost
-    - entanglement
-    - entropy
-    - gravity
-    - law
-    - link
-    - merge
-    - uuid
+coordinate: "convention/reciprocal · 7/descent · bbf7f5fe"
+contentUuid: "454d69fe-0403-513c-a604-f3e41dfa6acc"
+diamondUuid: "06ae1705-dc95-8a4a-8738-aad8c197e5ed"
+uuid: "bbf7f5fe-3c3e-873e-b671-72199e893cb1"
+horo: 7
 typography:
   partition: convention
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - cost
-    - entanglement
-    - entropy
-    - gravity
-    - law
-    - link
-    - merge
-    - uuid
-  matrix:
-    - cost
-    - entanglement
-    - entropy
-    - gravity
-    - law
-    - link
-    - merge
-    - uuid
-  backlinks:
-    - cost
-    - entanglement
-    - entropy
-    - gravity
-    - law
-    - link
-    - merge
-    - uuid
 signatures:
-  computationUuid: "fa4863e9-b5c8-8ad8-9f5d-a28af50ec42b"
+  computationUuid: "a4aa49bb-7856-8ff2-aa39-b74b3c15fe24"
   stages:
     - stage: path
       stageUuid: "a02cd22c-756b-889f-81e6-f1eee32f6dc2"
@@ -74,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "66c09ab0-f99a-8672-95ad-d15e48262d40"
     - stage: horo
-      stageUuid: "b37c7de8-6987-8584-b02f-930694976dd4"
+      stageUuid: "d8bf3fe4-2b64-8fbd-8672-73bf5535a1a4"
     - stage: seal
       stageUuid: "8b2d7d83-d61f-88f7-a44a-88cda25373d5"
     - stage: uuid
-      stageUuid: "1bfc6d3c-2a35-8ac4-a681-de97e2cf7ba2"
+      stageUuid: "e2270a24-d49a-8492-af32-9a7cfeda92a4"
 version: 2
 ---
 # convention/reciprocal — every directed edge is reciprocated (symmetric entanglement)

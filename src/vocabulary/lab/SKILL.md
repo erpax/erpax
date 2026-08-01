@@ -1,68 +1,35 @@
 ---
 name: lab
 description: "Use when reasoning about lab as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/lab
-coordinate: lab · 7/descent · 4a1db148
-contentUuid: "b24827f7-600b-5e13-baef-467bcfcc4c19"
-diamondUuid: "0e254471-c658-8596-9556-4026efc85962"
-uuid: "4a1db148-d9d5-8cf7-b6b1-30bff653c96b"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - diagnostic
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - diagnostic
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/lab"
+coordinate: "vocabulary/lab · 5/round · 7be70f51"
+contentUuid: "48180fe5-3086-5c56-9c5e-60b4bdf24b7d"
+diamondUuid: "b507eb1e-8855-819c-a5eb-08bf0b7a8031"
+uuid: "7be70f51-90f3-8ab9-b0f8-23fdf8ea8bc8"
+horo: 5
 typography:
-  partition: lab
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - diagnostic
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - diagnostic
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - diagnostic
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "140b8175-5722-81bc-b16a-9fe4880805e6"
+  computationUuid: "5d945f3a-dc8e-8a02-8cf4-90ec830b29da"
   stages:
     - stage: path
-      stageUuid: "36009ae8-ce29-8993-9da9-cf5589a033c7"
+      stageUuid: "2f5f0d97-7284-8676-aa82-68a2bdebe0ea"
     - stage: trinity
-      stageUuid: "f9b7e29c-39f7-8092-b16c-f9d06ce0bae9"
+      stageUuid: "33777f7f-2d92-84b4-b0da-030ecc44bfda"
     - stage: boundary
-      stageUuid: "5584689f-233f-89a9-a2ec-bbff2157861a"
+      stageUuid: "d5fd8418-d730-8b64-b781-dcdedbe93ab5"
     - stage: links
-      stageUuid: "bad5f0d2-6de0-8578-baa6-621c67e60a2f"
+      stageUuid: "149dbff9-b3b9-8c3e-9f96-27b3eaa28f08"
     - stage: horo
-      stageUuid: "3588089d-a14f-8bd6-9988-45b46f48277b"
+      stageUuid: "bb0c0c54-7900-8a08-93c5-48111c07d0ea"
     - stage: seal
-      stageUuid: "26be0557-ac1b-875c-9143-acf2252888f9"
+      stageUuid: "5525a652-ba1c-8f5d-8cc9-a81dac9e8a2d"
     - stage: uuid
-      stageUuid: "89fe79af-4201-8aab-bf58-709556a5eb6f"
+      stageUuid: "cd876c3f-0051-863a-893e-9842fb0b8764"
 version: 2
 ---
 # lab

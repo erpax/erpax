@@ -1,58 +1,35 @@
 ---
 name: backstory
 description: "Use when reasoning about backstory — For an Article, typically a NewsArticle, the backstory property provides a textual summary giving a brief explanation of why and how an article was created. In a journalistic setti"
-atomPath: vocabulary/backstory
-coordinate: backstory · 5/round · d2f45170
-contentUuid: "7b4dd253-efa5-570a-bf52-df792e49d944"
-diamondUuid: "ca7970d8-43c3-838b-be58-202b5185c4e4"
-uuid: "d2f45170-f543-86fa-aadd-ab18bb0ae196"
+atomPath: "vocabulary/backstory"
+coordinate: "vocabulary/backstory · 5/round · fb63d3bf"
+contentUuid: "da94a6d0-b9d3-59c5-863b-c99645bf8a80"
+diamondUuid: "7a454fc2-6f77-8960-95c6-ff04765ec8bb"
+uuid: "fb63d3bf-f127-8c12-bd1f-a2b3a7029d28"
 horo: 5
-bonds:
-  in:
-    - creative
-    - law
-    - thing
-  out:
-    - creative
-    - law
-    - thing
 typography:
-  partition: backstory
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - creative
-    - law
-    - thing
-  matrix:
-    - creative
-    - law
-    - thing
-  backlinks:
-    - creative
-    - law
-    - thing
 signatures:
-  computationUuid: "f5e49289-0a7c-8d52-b2ca-bcd78307dbc5"
+  computationUuid: "eddfb14c-337d-85a7-83ab-1818b455b70b"
   stages:
     - stage: path
-      stageUuid: "9edff431-3d71-8e10-9a2e-f097b9b5dafe"
+      stageUuid: "d0daaccd-afad-86c3-9b19-14c0ce077710"
     - stage: trinity
-      stageUuid: "44b8f1c4-2dd0-872b-9b3a-f87a44633303"
+      stageUuid: "0f29dbc3-3e7f-8f92-b880-1c9270a6a566"
     - stage: boundary
-      stageUuid: "c1409224-9f4d-81d5-a774-56abadaee24b"
+      stageUuid: "1c131069-be64-8e50-8d04-18f938dbf6ba"
     - stage: links
-      stageUuid: "42892c82-0fd9-85ca-81ee-54f155de5686"
+      stageUuid: "f650fb14-78ca-8112-a76a-7bea6c8d6816"
     - stage: horo
-      stageUuid: "dfcedcf6-b1d2-8096-89d4-279ea319fb26"
+      stageUuid: "ffcd9a67-e6ef-8a81-a535-8a696e4d2fda"
     - stage: seal
-      stageUuid: "dc036689-f8ab-8f09-8f8e-a97dc0cf7265"
+      stageUuid: "1c1aa764-eede-83e1-80f5-069b6ca6b844"
     - stage: uuid
-      stageUuid: "7129910e-e23c-8b95-a512-0eaebcc6cd26"
+      stageUuid: "ccc25fdd-2910-81b0-8d7b-2e71ce249c94"
 version: 2
 ---
 # backstory

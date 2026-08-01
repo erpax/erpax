@@ -2,87 +2,19 @@
 name: video
 description: Use when reasoning about video — An embedded video object.
 atomPath: video
-coordinate: video · 5/round · 5c098d54
-contentUuid: "6578b1c4-2ea0-5a41-9740-fc8036a69e0e"
-diamondUuid: "6e4586c2-5ad6-8704-97b0-0c526ee26e23"
-uuid: "5c098d54-724e-8639-8136-c38ad01c278f"
+coordinate: "video · 5/round · 68f365ec"
+contentUuid: "ebdf60a2-4859-5181-87e0-8161258672eb"
+diamondUuid: "d475fb25-269a-8f6c-afc8-105f89ce951a"
+uuid: "68f365ec-0132-8447-becd-0b113836b785"
 horo: 5
-bonds:
-  in:
-    - clip
-    - format
-    - frame
-    - gallery
-    - game
-    - law
-    - music
-    - object
-    - quality
-    - series
-    - size
-    - snapshot
-  out:
-    - clip
-    - format
-    - frame
-    - gallery
-    - game
-    - law
-    - music
-    - object
-    - quality
-    - series
-    - size
-    - snapshot
 typography:
   partition: video
   bondDegree: 47
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - clip
-    - format
-    - frame
-    - gallery
-    - game
-    - law
-    - music
-    - object
-    - quality
-    - series
-    - size
-    - snapshot
-  matrix:
-    - clip
-    - format
-    - frame
-    - gallery
-    - game
-    - law
-    - music
-    - object
-    - quality
-    - series
-    - size
-    - snapshot
-  backlinks:
-    - clip
-    - format
-    - frame
-    - gallery
-    - game
-    - law
-    - music
-    - object
-    - quality
-    - series
-    - size
-    - snapshot
 signatures:
-  computationUuid: "2c1dd6f4-f2fa-89db-bbed-5107c2c3b04c"
+  computationUuid: "60148e84-b00a-8e11-b3b5-305651d3e1c7"
   stages:
     - stage: path
       stageUuid: "1fd7914b-f70c-8dc1-a3cd-678803e5a1c1"
@@ -93,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ea7c12e7-fa6f-8c3e-a64a-8b3d95d80fd8"
     - stage: horo
-      stageUuid: "5060cd16-44df-8a6a-91f3-c9c55443c4ff"
+      stageUuid: "55865257-c607-8063-aa18-8647452e6bf3"
     - stage: seal
-      stageUuid: "21d26415-ac58-8119-924c-f880de432971"
+      stageUuid: "f242a238-7a9c-8eec-bd3e-ab6e18f3f923"
     - stage: uuid
-      stageUuid: "9524458e-4da4-81bc-949d-300b72aa35f0"
+      stageUuid: "50730a41-4b80-82f2-81aa-7cf689bce562"
 version: 2
 ---
 # video

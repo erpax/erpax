@@ -2,66 +2,19 @@
 name: sql
 description: "Use when modelling a SQL query as pure data — a SELECT AST with a deterministic canonical stringifier, so equivalent queries normalize identically and the quantum facet hashes them to one content-uuid."
 atomPath: sql
-coordinate: sql · 8/crest · 629e18de
-contentUuid: "48fcd1ed-9709-5226-b7e5-39b92cfee049"
-diamondUuid: "854a5be5-d7d5-8310-a6ec-5ddf49d421d5"
-uuid: "629e18de-c7c5-8de6-8f5b-894e56de0d52"
-horo: 8
-bonds:
-  in:
-    - column
-    - law
-    - merge
-    - quantum
-    - query
-    - sql
-    - table
-    - uuid
-  out:
-    - column
-    - law
-    - merge
-    - quantum
-    - query
-    - sql
-    - table
-    - uuid
+coordinate: "sql · 1/base · d47735eb"
+contentUuid: "c6bd1e7a-6969-54bd-aa5e-749ac20ade1c"
+diamondUuid: "b626d3f2-4155-8bbc-909a-e5618d2e1dc5"
+uuid: "d47735eb-75ca-8b5f-af43-1a6dcdb6f8c6"
+horo: 1
 typography:
   partition: sql
   bondDegree: 29
-  neighbors: []
 standards:
   - SQL SELECT (a minimal subset); deterministic canonicalisation
 bindings: []
-neighbors:
-  wikilink:
-    - column
-    - law
-    - merge
-    - quantum
-    - query
-    - table
-    - uuid
-  matrix:
-    - column
-    - law
-    - merge
-    - quantum
-    - query
-    - sql
-    - table
-    - uuid
-  backlinks:
-    - column
-    - law
-    - merge
-    - quantum
-    - query
-    - sql
-    - table
-    - uuid
 signatures:
-  computationUuid: "03077dcf-7bef-8a5e-9f2a-be4097c84aa3"
+  computationUuid: "db50472d-0f15-88d8-aa92-1788c67f6e39"
   stages:
     - stage: path
       stageUuid: "325b429f-b4ab-8912-823a-340384338177"
@@ -72,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4f7d7bf1-e823-809c-8339-be43b04eb071"
     - stage: horo
-      stageUuid: "acc5bb5f-158c-804b-8422-cecc391a5066"
+      stageUuid: "63748d6f-581a-84b2-a4b1-9792e2b37b71"
     - stage: seal
-      stageUuid: "16e5bdcb-a882-8dac-91e5-6bda3cd72e77"
+      stageUuid: "d8262761-27cd-89a8-b20e-f345f60a2222"
     - stage: uuid
-      stageUuid: "00c5efc5-96d0-8db3-bf12-8e55d42078d8"
+      stageUuid: "1b3ce326-fdac-87ef-880d-f71f0b1324be"
 version: 2
 ---
 # sql — a query as canonical data

@@ -1,73 +1,35 @@
 ---
 name: fm
 description: "Use when reasoning about fm as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/fm
-coordinate: fm · 1/base · 2904859c
-contentUuid: "fe1a3849-159c-5840-a9a1-28890dbb9bde"
-diamondUuid: "d843048c-bb12-8aaa-8965-2b441c3d2772"
-uuid: "2904859c-0d85-8237-9952-21c8d8208b22"
-horo: 1
-bonds:
-  in:
-    - channel
-    - collapse
-    - law
-    - merge
-    - radio
-    - sti
-  out:
-    - channel
-    - collapse
-    - law
-    - merge
-    - radio
-    - sti
+atomPath: "vocabulary/fm"
+coordinate: "vocabulary/fm · 2/share · 9186c6fe"
+contentUuid: "8e468fd0-e6a4-5410-9308-982c8fd8abd5"
+diamondUuid: "2f19bbba-e448-8411-9758-22414f646373"
+uuid: "9186c6fe-9e64-864b-8f95-990e353bbd77"
+horo: 2
 typography:
-  partition: fm
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - channel
-    - collapse
-    - law
-    - merge
-    - radio
-    - sti
-  matrix:
-    - channel
-    - collapse
-    - law
-    - merge
-    - radio
-    - sti
-  backlinks:
-    - channel
-    - collapse
-    - law
-    - merge
-    - radio
-    - sti
 signatures:
-  computationUuid: "858e5324-559a-81ac-abe5-e8d028c8a8e6"
+  computationUuid: "440580f9-a0e0-8cf0-9100-9f4f1247e254"
   stages:
     - stage: path
-      stageUuid: "abd571f4-3595-8853-ad29-9f5a63691363"
+      stageUuid: "437887be-6833-83c8-9d5a-b0588b851d5d"
     - stage: trinity
-      stageUuid: "c97bea67-b45d-8508-add9-7de16ccbf186"
+      stageUuid: "cbde64db-68d6-8fdb-a5cb-6983f8e91a96"
     - stage: boundary
-      stageUuid: "b4776769-8bf9-8d66-8073-0c5ec6867e25"
+      stageUuid: "4ea4aab3-8d4c-82d7-9d71-a8c12c1b359c"
     - stage: links
-      stageUuid: "03c22473-a152-862d-9c01-98f29f1346af"
+      stageUuid: "2bcca785-c71d-8ca0-b3c2-c906e1050041"
     - stage: horo
-      stageUuid: "e12817a4-346e-80c3-b4f3-8eefcdc818d4"
+      stageUuid: "deca260f-1ca7-8187-9e07-cfb0387b69ef"
     - stage: seal
-      stageUuid: "cb3fae04-24e0-838b-8e94-6afc291b7a37"
+      stageUuid: "c915748e-7cd5-8040-978e-e709bcf4c92b"
     - stage: uuid
-      stageUuid: "f36098f1-5d73-8381-9fb9-fe1a0809cead"
+      stageUuid: "4ca316cb-9ae2-89cd-9d31-4e02c27e8dbe"
 version: 2
 ---
 # fm

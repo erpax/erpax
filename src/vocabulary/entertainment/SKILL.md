@@ -1,73 +1,35 @@
 ---
 name: entertainment
 description: "Use when reasoning about entertainment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/entertainment
-coordinate: entertainment · 5/round · 6a3fd559
-contentUuid: "cc702082-bc1c-5b9a-91bb-b3b795d44816"
-diamondUuid: "f614ac79-cef6-879a-902c-61ec77f09085"
-uuid: "6a3fd559-3584-89fb-9d40-cd4083290837"
-horo: 5
-bonds:
-  in:
-    - adult
-    - business
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - adult
-    - business
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/entertainment"
+coordinate: "vocabulary/entertainment · 8/crest · ce43ea68"
+contentUuid: "ec026168-63da-5e2f-89aa-59efc3103f73"
+diamondUuid: "3356f76c-796a-85f9-b4dd-2732832142e9"
+uuid: "ce43ea68-8931-86bf-99e3-f4fbc63800bc"
+horo: 8
 typography:
-  partition: entertainment
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - adult
-    - business
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - adult
-    - business
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - adult
-    - business
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "100aae8d-3b3d-8199-a195-c7558a9533d3"
+  computationUuid: "3e6141a6-f0a4-857a-a905-6ddd69354c36"
   stages:
     - stage: path
-      stageUuid: "1c6a48d7-e663-82e1-a8b7-d3f31ebba5ff"
+      stageUuid: "8d346090-10b6-8d79-b377-b0a8cb2ca8cb"
     - stage: trinity
-      stageUuid: "4ea4da01-1659-8704-8ba4-19e6bf503f34"
+      stageUuid: "e78e633f-6192-8f94-9071-51c6c0473c74"
     - stage: boundary
-      stageUuid: "7586d1f2-d2bc-8e22-a687-22b3a2cb3524"
+      stageUuid: "731b0506-66d0-88df-95ad-3facd2683f89"
     - stage: links
-      stageUuid: "984c1eef-178b-86a7-aad8-80ddf3239763"
+      stageUuid: "048a1da4-5917-8d75-8e1a-9a0a29dea052"
     - stage: horo
-      stageUuid: "9e0122ea-89a6-8b72-8f49-b098fb41e7e7"
+      stageUuid: "3eafccc7-e090-8c8c-a29c-822cde598f7f"
     - stage: seal
-      stageUuid: "a8cd714e-2ec1-89b7-9ad2-cf162aacbd3e"
+      stageUuid: "877a046d-6c61-8a0f-9ba0-f855e8627848"
     - stage: uuid
-      stageUuid: "958b7e32-65a6-83b5-9546-3eb7fcdd93c8"
+      stageUuid: "00fc0655-9458-883d-88e5-893c922694b4"
 version: 2
 ---
 # entertainment

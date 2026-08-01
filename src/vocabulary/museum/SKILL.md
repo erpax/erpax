@@ -1,53 +1,35 @@
 ---
 name: museum
 description: Use when reasoning about museum — A museum.
-atomPath: vocabulary/museum
-coordinate: museum · 4/weave · 63c0e30b
-contentUuid: "a0c78ec4-dd4b-5a77-9b80-0758d69b4abe"
-diamondUuid: "94ea12da-d73f-8c35-b9d0-561f4795ea05"
-uuid: "63c0e30b-f4f3-8016-b3d7-608e76d1b8d5"
-horo: 4
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/museum"
+coordinate: "vocabulary/museum · 8/crest · 65fe8a0b"
+contentUuid: "31c1408c-6c44-5609-a186-5665a8dd67a5"
+diamondUuid: "71acd913-e61e-8aa9-aa7a-d80157b96829"
+uuid: "65fe8a0b-eb1d-8737-8d16-b28693d7c4ac"
+horo: 8
 typography:
-  partition: museum
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "6b60f67b-fd66-86c4-b068-870089aedfc6"
+  computationUuid: "e8d5f126-0ab0-89bd-90c5-239a25963fd1"
   stages:
     - stage: path
-      stageUuid: "52ea05b9-4e64-8810-9dd8-05ec8316809d"
+      stageUuid: "9504c1ab-d36a-884e-bb0a-2c92fcf72c54"
     - stage: trinity
-      stageUuid: "895670f4-2495-858a-a660-62bc212a1531"
+      stageUuid: "4bbbda44-5d8e-84b0-8d2a-e418382db388"
     - stage: boundary
-      stageUuid: "2bcb5386-dfb1-82be-af48-2b741d0e0211"
+      stageUuid: "be2c335b-725c-8d2f-a3a5-008e0db2dd6e"
     - stage: links
-      stageUuid: "43fa38f4-242e-8026-b896-59c66a3f3cc0"
+      stageUuid: "8884db47-cd05-889e-a376-731eb3a0212e"
     - stage: horo
-      stageUuid: "24fd60c1-a8a6-84e3-87ca-fe7190a7548e"
+      stageUuid: "a7ed164d-1fb1-89b0-8da9-3529b06c9116"
     - stage: seal
-      stageUuid: "6ba97cac-7007-8fa7-9ffa-c9e74eee6715"
+      stageUuid: "a1b325e6-fbea-80c4-b4a3-f17be310076d"
     - stage: uuid
-      stageUuid: "aea1a1dd-da07-821d-8888-67ade87d4810"
+      stageUuid: "ba0cf4e7-a236-8333-9c16-e593bf44fb9a"
 version: 2
 ---
 # museum

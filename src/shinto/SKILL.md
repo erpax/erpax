@@ -2,137 +2,18 @@
 name: shinto
 description: "Use when reading Shinto as a diamond of invariant atoms — the way of the kami, the sacred dwelling in every place and thing, purity restored by washing, the rite renewed on the turning cycle. Strip the Japanese prefix and kami, matsuri, harae collapse to sacred, ritual, the profane cleansed — one content-uuid each."
 atomPath: shinto
-coordinate: shinto · 2/share · 16e6bc20
-contentUuid: "5e17971f-df0e-543b-ae9f-265d092db1c1"
-diamondUuid: "bb5804f6-8303-8cde-9c8a-2287c617b199"
-uuid: "16e6bc20-e793-835d-9d95-c40b0de44fce"
-horo: 2
-bonds:
-  in:
-    - archangel
-    - atom
-    - cycle
-    - diamond
-    - fractal
-    - generate
-    - gift
-    - holographic
-    - identity
-    - law
-    - name
-    - part
-    - profane
-    - religion
-    - ritual
-    - sacred
-    - society
-    - translator
-    - uuid
-    - water
-    - whole
-    - zeropoint
-  out:
-    - archangel
-    - atom
-    - cycle
-    - diamond
-    - fractal
-    - generate
-    - gift
-    - holographic
-    - identity
-    - law
-    - name
-    - part
-    - profane
-    - religion
-    - ritual
-    - sacred
-    - society
-    - translator
-    - uuid
-    - water
-    - whole
-    - zeropoint
+coordinate: "shinto · 5/round · 472e2494"
+contentUuid: "67769ed5-5667-5d17-8fc1-e7339726db1e"
+diamondUuid: "da10b13d-afb3-8458-9d59-b1ad539d8427"
+uuid: "472e2494-ff6d-85bd-afad-45097a3e845e"
+horo: 5
 typography:
   partition: shinto
   bondDegree: 68
-  neighbors:
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - archangel
-    - atom
-    - cycle
-    - diamond
-    - fractal
-    - generate
-    - gift
-    - holographic
-    - identity
-    - law
-    - name
-    - part
-    - profane
-    - religion
-    - ritual
-    - sacred
-    - society
-    - translator
-    - uuid
-    - water
-    - whole
-    - zeropoint
-  matrix:
-    - archangel
-    - atom
-    - cycle
-    - diamond
-    - fractal
-    - generate
-    - gift
-    - holographic
-    - identity
-    - law
-    - name
-    - part
-    - profane
-    - religion
-    - ritual
-    - sacred
-    - society
-    - translator
-    - uuid
-    - water
-    - whole
-    - zeropoint
-  backlinks:
-    - archangel
-    - atom
-    - cycle
-    - diamond
-    - fractal
-    - generate
-    - gift
-    - holographic
-    - identity
-    - law
-    - name
-    - part
-    - profane
-    - religion
-    - ritual
-    - sacred
-    - society
-    - translator
-    - uuid
-    - water
-    - whole
-    - zeropoint
 signatures:
-  computationUuid: "69e55b09-6f81-8ab9-a9c3-f0ed48eb4275"
+  computationUuid: "99396abc-09ba-81cc-9f35-185f53f782af"
   stages:
     - stage: path
       stageUuid: "53a40a22-3a09-8606-818c-022f1468b23f"
@@ -143,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "41db587c-998a-8c23-bbca-5698979fb7d1"
     - stage: horo
-      stageUuid: "0cb52223-6411-86c3-90c2-896735f6b55e"
+      stageUuid: "0dcf6d02-2f51-8e6b-8d09-ff9626894472"
     - stage: seal
-      stageUuid: "503cd004-5fe7-811c-a79c-6712b3c56ec3"
+      stageUuid: "7e29e5d9-28cb-89c1-8037-04505a9de42f"
     - stage: uuid
-      stageUuid: "6715aee0-b263-8ebc-a39a-d68d6e20047e"
+      stageUuid: "dde28be1-9ea8-8ccc-8ad1-72840a299833"
 version: 2
 ---
 # shinto — the way of the kami; the sacred in every place

@@ -1,68 +1,35 @@
 ---
 name: away
 description: "Use when reasoning about away as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/away
-coordinate: away · 2/share · e3d481b1
-contentUuid: "1b70f2f1-fdd2-5a83-a72e-54c6e48c83a6"
-diamondUuid: "761e55e9-c82c-82ec-886f-d97616a76236"
-uuid: "e3d481b1-c30e-8f14-af33-567e7349e905"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - team
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - team
+atomPath: "vocabulary/away"
+coordinate: "vocabulary/away · 8/crest · e2ce54bc"
+contentUuid: "37246d41-4a5e-513b-8c9e-859899ac94b1"
+diamondUuid: "253e7477-fb5a-8822-b8a0-08b4b2d10b68"
+uuid: "e2ce54bc-8c73-8039-9754-3045b4578755"
+horo: 8
 typography:
-  partition: away
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - team
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - team
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - team
 signatures:
-  computationUuid: "e41c5d39-29d0-8fa6-b433-56025ca8626c"
+  computationUuid: "3da67ef3-8742-837e-ad47-5cc1bc3e19c6"
   stages:
     - stage: path
-      stageUuid: "9a01754e-6fb5-886b-b860-890877f940a2"
+      stageUuid: "28be7622-aa14-85b0-ae45-8537e4346496"
     - stage: trinity
-      stageUuid: "8eb445d3-6720-8fe4-a18c-41b75558d46a"
+      stageUuid: "fb83f707-feca-8666-a399-7fa5236fa3d1"
     - stage: boundary
-      stageUuid: "a278bc83-17e1-8603-af20-55a68bb7a18b"
+      stageUuid: "f24bd54a-ec4d-80c3-a0ef-62632616b5ec"
     - stage: links
-      stageUuid: "1dff503c-53ce-8405-a3f3-725f873443ba"
+      stageUuid: "b4e30ef7-9a9d-8d1a-b161-4fe4a679e9d2"
     - stage: horo
-      stageUuid: "e01d64b6-36bb-8bec-b39c-158abbe25db9"
+      stageUuid: "435470f2-85c9-8b90-b925-73abacd345cc"
     - stage: seal
-      stageUuid: "f537d823-6352-8f89-8300-d1ab132d4151"
+      stageUuid: "865ddd9d-e916-8c5f-bb8d-23ead4e3733d"
     - stage: uuid
-      stageUuid: "808334f5-d334-8952-97db-9faced137a91"
+      stageUuid: "edefbb3d-90be-8fc4-b8ed-88bf042731ad"
 version: 2
 ---
 # away

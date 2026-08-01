@@ -1,68 +1,35 @@
 ---
 name: income
 description: "Use when reasoning about income as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/income
-coordinate: income · 8/crest · 7f6e40e9
-contentUuid: "fc98eea3-c497-5ecb-887b-e1b13bd3c2ff"
-diamondUuid: "2746234b-4c60-8c3c-89ff-182d2f72cd49"
-uuid: "7f6e40e9-5db3-81ac-aef8-4b1cd9918ca7"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - limit
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - limit
-    - merge
-    - sti
+atomPath: "vocabulary/income"
+coordinate: "vocabulary/income · 7/descent · 7518ad70"
+contentUuid: "d3cb26c4-bb98-5c9d-9e66-8bf7713b82dc"
+diamondUuid: "ddda6762-a8dc-86c1-b108-0996093046ca"
+uuid: "7518ad70-6ec1-8210-bb11-f0f6b81ce4d5"
+horo: 7
 typography:
-  partition: income
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - limit
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - limit
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - limit
-    - merge
-    - sti
 signatures:
-  computationUuid: "eb5a6f70-c925-8c26-8b37-58b74aba371d"
+  computationUuid: "06e24b75-a7bf-8763-aed9-cb0c86b3b681"
   stages:
     - stage: path
-      stageUuid: "d6baf299-ef19-8003-96e3-06d5f8737cd3"
+      stageUuid: "7d66230d-c0bc-8614-9f5b-0f5eedc069c2"
     - stage: trinity
-      stageUuid: "a8e0567b-2072-8d2b-85cc-09c5c02879d2"
+      stageUuid: "c97fc3e5-1eb7-8416-a7ab-ad540e7ad8c1"
     - stage: boundary
-      stageUuid: "4304fbf0-99d9-8c8d-bcb8-891c455960f4"
+      stageUuid: "9b496bd8-c453-8d62-af75-43a39829b029"
     - stage: links
-      stageUuid: "ca188cdd-4893-8e22-aa1f-c171d7917e8e"
+      stageUuid: "e1f5e2d3-a7ef-88ce-93e2-aaa2adf81874"
     - stage: horo
-      stageUuid: "f501f7ba-1372-8d3e-82b2-41c8eef5cf91"
+      stageUuid: "d7242374-1380-83a8-b109-9e656ca6e48f"
     - stage: seal
-      stageUuid: "7f72e257-13a7-8be7-8d1e-930af0722cbd"
+      stageUuid: "ed42b508-0073-8fe7-a8c9-408ad81d42bc"
     - stage: uuid
-      stageUuid: "09c8c64d-5c59-8ac0-be7d-722ef0138383"
+      stageUuid: "527792a4-0096-8b64-af4f-ecff808e0a9b"
 version: 2
 ---
 # income

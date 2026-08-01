@@ -1,83 +1,35 @@
 ---
 name: center
 description: "Use when reasoning about center as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/center
-coordinate: center · 4/weave · e4bf2f29
-contentUuid: "ab1de72e-9c95-51cc-8469-36c48564652f"
-diamondUuid: "aaeb7ad1-fd00-8739-9404-a04f3c6e680c"
-uuid: "e4bf2f29-c3cb-89e8-a5e7-bb56f40961d9"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - information
-    - law
-    - merge
-    - recycling
-    - shopping
-    - sti
-    - tourist
-  out:
-    - collapse
-    - information
-    - law
-    - merge
-    - recycling
-    - shopping
-    - sti
-    - tourist
+atomPath: "vocabulary/center"
+coordinate: "vocabulary/center · 1/base · 06e42592"
+contentUuid: "5e8bf9e3-bc0e-5463-a171-4cabd238a69e"
+diamondUuid: "3758c83e-915e-8769-a7b3-62781efa76b0"
+uuid: "06e42592-c650-8d8e-bde3-a355a8a8103a"
+horo: 1
 typography:
-  partition: center
+  partition: vocabulary
   bondDegree: 28
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - information
-    - law
-    - merge
-    - recycling
-    - shopping
-    - sti
-    - tourist
-  matrix:
-    - collapse
-    - information
-    - law
-    - merge
-    - recycling
-    - shopping
-    - sti
-    - tourist
-  backlinks:
-    - collapse
-    - information
-    - law
-    - merge
-    - recycling
-    - shopping
-    - sti
-    - tourist
 signatures:
-  computationUuid: "224e79f8-0c69-823d-9007-93f364625f26"
+  computationUuid: "a78cf471-eb69-84a3-8dd6-60be80055b95"
   stages:
     - stage: path
-      stageUuid: "c073ec2c-1c59-8114-a2c0-ba0b0a9b90ef"
+      stageUuid: "52c085e8-58be-8306-b2a2-0fcee8102559"
     - stage: trinity
-      stageUuid: "f77c2b3b-6270-8532-a91d-968e268babfa"
+      stageUuid: "79ea4aa0-f97f-803e-9ea4-1afa99cba215"
     - stage: boundary
-      stageUuid: "9b7ec3af-9c52-8b17-b754-6e1cdb2d6823"
+      stageUuid: "fa498117-be2e-8289-b01d-b7a105973aca"
     - stage: links
-      stageUuid: "5ae5fb1f-cedd-8599-866e-578128441b87"
+      stageUuid: "59e1110d-4201-8480-b3c8-db4f4890da12"
     - stage: horo
-      stageUuid: "09762457-aa43-8204-893f-809024741712"
+      stageUuid: "e5f57da6-d258-8409-89d0-ec4a82a8ff44"
     - stage: seal
-      stageUuid: "e193cfe3-6928-82f8-96b6-a126746f1355"
+      stageUuid: "dd53fe08-30b8-8e0f-9cf5-87b7f3c0298f"
     - stage: uuid
-      stageUuid: "8d69bea0-9fb6-884f-a839-8c9db3e192e3"
+      stageUuid: "bc6f6065-dbc0-862b-b6dc-a2b969af2b81"
 version: 2
 ---
 # center

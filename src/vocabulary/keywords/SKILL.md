@@ -1,61 +1,35 @@
 ---
 name: keywords
 description: "Use when reasoning about keywords — Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property."
-atomPath: vocabulary/keywords
-coordinate: keywords · 1/base · 30de5937
-contentUuid: "624c085d-54be-585a-8812-fdf6f6e53466"
-diamondUuid: "3a0ac532-201a-8c18-9b21-cec3874cdd28"
-uuid: "30de5937-029c-80b4-a2f1-7823696d5446"
+atomPath: "vocabulary/keywords"
+coordinate: "vocabulary/keywords · 1/base · 3eb1bec3"
+contentUuid: "b4deaf47-a5c4-5cfc-97ec-2f31886c0e55"
+diamondUuid: "a3dd0bc3-473c-8699-ad55-7ce1d22cd6ea"
+uuid: "3eb1bec3-1baa-8f5f-997d-b38bd992e086"
 horo: 1
-bonds:
-  in:
-    - keyword
-    - law
-    - optimization
-    - thing
-  out:
-    - keyword
-    - law
-    - optimization
-    - thing
 typography:
-  partition: keywords
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - keyword
-    - law
-    - optimization
-    - thing
-  backlinks:
-    - keyword
-    - law
-    - optimization
-    - thing
 signatures:
-  computationUuid: "9e783d47-f2c0-8d95-bfd1-1eb6eefc325d"
+  computationUuid: "42b0af6d-ea45-8094-ac84-22143df12a3c"
   stages:
     - stage: path
-      stageUuid: "80b92aa4-44cf-8493-b0b1-11005fa7e0dc"
+      stageUuid: "9c039be6-5dd5-8fcf-ab4c-48e8316b33f0"
     - stage: trinity
-      stageUuid: "1d49e2cb-7a9c-867b-91a4-14612b003c05"
+      stageUuid: "7c39c408-139c-8756-8fa2-57a9ae3a49cb"
     - stage: boundary
-      stageUuid: "b8e251d3-419c-8e17-8a13-5f65d1a5ca7f"
+      stageUuid: "5a0d446e-c819-8343-9d1a-78a6085d0a37"
     - stage: links
-      stageUuid: "97608d38-cf1f-867f-bb30-babde23a9bb1"
+      stageUuid: "4e38072a-ae5b-850d-8f2c-7462ba9fef4b"
     - stage: horo
-      stageUuid: "c95a4100-0361-82e6-98b3-71fe2c6aa28a"
+      stageUuid: "f741f8d3-9573-8332-ac3f-668cab534ea9"
     - stage: seal
-      stageUuid: "ae5c2d30-2612-8f03-8526-b5127a86ac71"
+      stageUuid: "64f204db-85fa-8df3-9103-6e6b99747776"
     - stage: uuid
-      stageUuid: "6816c43a-2efd-8ea6-8d3e-9501772bd661"
+      stageUuid: "8a679c0b-7a73-81cd-9325-5810b14d2d29"
 version: 2
 ---
 # keywords

@@ -2,58 +2,18 @@
 name: row
 description: "Use when a seed must stay addressable — the entanglement continued one scale down, from atom into seed: a seed row is content-addressed by its canonical key-order-independent bytes and folded with its atom's uuid, so the same content yields the same uuid in every corpus (federation is set-union, re-seeding is idempotent by construction rather than by a remembered upsert), a re-parented or tampered row is caught because its uuid must recompute, and rows are DERIVED from the atom's own exports — never a re-typed constant that forks the truth on the next edit."
 atomPath: "seed/row"
-coordinate: "seed/row"
-contentUuid: "5234f1c0-f044-5401-9c78-4d62bbe647a5"
-diamondUuid: "2920c326-2be6-80a3-ad2b-84d386ba21cf"
-uuid: "36ce468a-e344-821b-87e8-098e7c1ee176"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - seat
-    - seed
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - seat
-    - sti
+coordinate: "seed/row · 2/share · f95a6b93"
+contentUuid: "7b9c97d5-2b2a-56c2-b129-f439f84039aa"
+diamondUuid: "904f723d-58e0-8fbc-95f3-966ef2fdc5dd"
+uuid: "f95a6b93-22e0-86d3-8eaf-99c5a016e111"
+horo: 2
 typography:
   partition: seed
-  bondDegree: 29
-  neighbors:
-    - diamond
-    - hallucination
-    - purity
+  bondDegree: 26
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - constitution
-    - law
-    - matrix
-    - merge
-    - millennium
-    - seed
-    - surface
-    - trello
-  matrix:
-    - collapse
-    - law
-    - merge
-    - seat
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - seat
-    - sti
 signatures:
-  computationUuid: "fcd6c1e1-6341-8eb9-883e-9d88d37fab23"
+  computationUuid: "07b85321-5eef-8d47-afd1-ab87cdfe8a92"
   stages:
     - stage: path
       stageUuid: "0a1db11d-3295-87bd-832a-a155e0a41710"
@@ -64,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "dd8dd87f-dee1-8a99-882b-eb73cbf548f7"
     - stage: horo
-      stageUuid: "5d7039a6-3b65-8a8f-8df7-e4e015118e22"
+      stageUuid: "2da4387e-278c-8ccd-bf96-8f6ee141d4ad"
     - stage: seal
-      stageUuid: "4ed590cd-9865-817e-a302-6f02c99a1cf7"
+      stageUuid: "2df6c1c0-e3e8-8bd5-aae5-27c1dfa0d4d9"
     - stage: uuid
-      stageUuid: "4f3d7bff-c531-8f25-a761-897ad232c101"
+      stageUuid: "61c8c385-cdf8-838d-9cd0-a70f25e08b74"
 version: 2
 ---
 # seed/row — the entanglement continued one scale down

@@ -1,88 +1,35 @@
 ---
 name: child
 description: "Use when reasoning about child as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/child
-coordinate: child · 7/descent · e1e5434c
-contentUuid: "39747a17-907b-5ed3-9e2a-993e8cde4164"
-diamondUuid: "bbd6aa1b-3fe9-8f38-97b9-102acd36e2ba"
-uuid: "e1e5434c-29b7-8092-9c88-0a1d58c0e060"
-horo: 7
-bonds:
-  in:
-    - age
-    - care
-    - collapse
-    - law
-    - max
-    - merge
-    - min
-    - sti
-    - taxon
-  out:
-    - age
-    - care
-    - collapse
-    - law
-    - max
-    - merge
-    - min
-    - sti
-    - taxon
+atomPath: "vocabulary/child"
+coordinate: "vocabulary/child · 4/weave · 2dc7d86a"
+contentUuid: "c5b3b524-cda5-5d4e-a7f8-8f15f48cbdbd"
+diamondUuid: "b3975f0c-8680-8d90-8213-ffcdb3e9dd73"
+uuid: "2dc7d86a-77c3-8d38-b990-6bcf1498cc84"
+horo: 4
 typography:
-  partition: child
+  partition: vocabulary
   bondDegree: 31
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - age
-    - care
-    - collapse
-    - law
-    - max
-    - merge
-    - min
-    - sti
-    - taxon
-  matrix:
-    - age
-    - care
-    - collapse
-    - law
-    - max
-    - merge
-    - min
-    - sti
-    - taxon
-  backlinks:
-    - age
-    - care
-    - collapse
-    - law
-    - max
-    - merge
-    - min
-    - sti
-    - taxon
 signatures:
-  computationUuid: "3a02d811-3e5e-8c66-b342-dc6918da5b84"
+  computationUuid: "27528aa5-01c7-898c-b269-3418330008c4"
   stages:
     - stage: path
-      stageUuid: "b91ed87f-de6e-842b-bc5e-c1bb8ae5883c"
+      stageUuid: "1bcbf712-998a-862e-b3c4-7388cca38847"
     - stage: trinity
-      stageUuid: "64a4dd66-52b8-8987-b53c-016035a1fd37"
+      stageUuid: "f2c057da-0497-8747-a00c-5247a49a1788"
     - stage: boundary
-      stageUuid: "f763a1be-dc19-8a32-8f03-2f4fbaded504"
+      stageUuid: "ed5d99f2-10b2-829d-bf1a-8ea022d38453"
     - stage: links
-      stageUuid: "2d1cff3f-5c1d-8491-8656-7a78804ac973"
+      stageUuid: "0a605469-77f4-881e-910a-90ead73534ba"
     - stage: horo
-      stageUuid: "22e6a5f2-60d7-809b-815d-2f73ab71e8c5"
+      stageUuid: "7fd937c9-85cf-860a-9682-ee5da3083d68"
     - stage: seal
-      stageUuid: "545d7011-c1d7-88d1-b3f7-9829a796b9e6"
+      stageUuid: "1b069d75-6b69-89c9-81f7-1b2de436b0f3"
     - stage: uuid
-      stageUuid: "13d2270f-9610-8211-835c-d065712fa782"
+      stageUuid: "4e390103-d0e0-895d-9d05-6a412913d999"
 version: 2
 ---
 # child

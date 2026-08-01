@@ -2,58 +2,19 @@
 name: screen
 description: "Use when reasoning about screen as a part of [[computer]] — vocabulary pivot to @/screen; nested not duplicated."
 atomPath: "computer/screen"
-coordinate: "computer/screen · 1/base · 5717ead4"
-contentUuid: "588af23f-459b-519f-97b3-c73c5311f92a"
-diamondUuid: "74bf050b-e04b-8411-9df0-815357eea03c"
-uuid: "5717ead4-af15-86da-a488-27c0a389e21d"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - computer
-    - count
-    - law
-    - merge
-    - screen
-    - sti
-  out:
-    - collapse
-    - computer
-    - count
-    - law
-    - merge
-    - screen
-    - sti
+coordinate: "computer/screen · 4/weave · be604c55"
+contentUuid: "0cc54c21-523c-53d2-8753-2db57ecd5910"
+diamondUuid: "17ea6d1c-e842-80c8-8ae6-a46241e96dbd"
+uuid: "be604c55-6d32-80c7-8611-780ae2837338"
+horo: 4
 typography:
   partition: computer
   bondDegree: 25
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - computer
-    - law
-    - screen
-  matrix:
-    - collapse
-    - computer
-    - count
-    - law
-    - merge
-    - screen
-    - sti
-  backlinks:
-    - collapse
-    - computer
-    - count
-    - law
-    - merge
-    - screen
-    - sti
 signatures:
-  computationUuid: "9e76d9cf-d407-8af4-bcc6-ebaef58407bb"
+  computationUuid: "d76b5e67-cbd2-8a47-bfcc-4d99e98711c4"
   stages:
     - stage: path
       stageUuid: "523e9070-98fa-8929-8dbd-b24c4a23411d"
@@ -64,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2bab9033-a808-8981-b3b4-b68db3b98c87"
     - stage: horo
-      stageUuid: "7ec75722-16b2-82e4-b91c-7257da5e8659"
+      stageUuid: "ed599230-048b-8e92-a3ed-fee7057fb86e"
     - stage: seal
       stageUuid: "773331e5-6907-8663-86f8-f71991286740"
     - stage: uuid
-      stageUuid: "5724119f-704b-85c5-b784-03e4fad9e27e"
+      stageUuid: "2e7a45ba-9cfe-8d33-b89b-667ee88492b7"
 version: 2
 ---
 # computer/screen — renders output

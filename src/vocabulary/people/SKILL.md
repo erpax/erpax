@@ -1,68 +1,35 @@
 ---
 name: people
 description: "Use when reasoning about people as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/people
-coordinate: people · 2/share · ec2594ba
-contentUuid: "415dcb36-83d0-5046-acb7-5a50dcd8428d"
-diamondUuid: "a9f2ae79-3610-819a-8d87-7c35f86b5657"
-uuid: "ec2594ba-47a7-884c-a9fd-94ad905be56b"
-horo: 2
-bonds:
-  in:
-    - audience
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - audience
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/people"
+coordinate: "vocabulary/people · 1/base · 1b27b5f4"
+contentUuid: "b1b6edbc-2d49-576b-b6ae-d0ad6c25485f"
+diamondUuid: "f2deac30-1c77-8329-a88b-834ae48a7817"
+uuid: "1b27b5f4-6a37-8fdb-bde7-3442297ef102"
+horo: 1
 typography:
-  partition: people
-  bondDegree: 16
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 18
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - audience
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - audience
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - audience
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "f0a48d11-daef-85b6-9353-b931a1facfeb"
+  computationUuid: "4c5669ca-cd80-81fe-bd8d-53a711dae0a8"
   stages:
     - stage: path
-      stageUuid: "2a315f13-cce2-8ce5-aa07-ac8c37e40205"
+      stageUuid: "c13b7ae4-e30e-8d46-9265-f8bbfae5d69d"
     - stage: trinity
-      stageUuid: "2895b857-aca4-8d9a-8568-6247e6b47b54"
+      stageUuid: "f8590870-e974-8a5e-a495-ca30ed6ee065"
     - stage: boundary
-      stageUuid: "97fbad5b-d0ce-8c3a-af53-0edaf54b0790"
+      stageUuid: "9886d253-939f-88df-b8de-edd5f517ea05"
     - stage: links
-      stageUuid: "5f6084cd-11c6-898c-9ef1-3aed72240cfb"
+      stageUuid: "a7818d21-6399-8727-8c3f-a67dd2bd0f69"
     - stage: horo
-      stageUuid: "6a8ddafa-b4aa-843b-9546-b0a8bd83e018"
+      stageUuid: "bd772d3a-7f64-8cb7-b2d1-a6b065b4c832"
     - stage: seal
-      stageUuid: "e8ee9093-8442-86b2-b2e1-fc5cbc3b782a"
+      stageUuid: "6ea6668e-4726-8cee-903f-dbd27bd726d9"
     - stage: uuid
-      stageUuid: "506ed2d9-45a9-8529-8953-5dadaa4bde1e"
+      stageUuid: "011a2015-e51d-8c3e-b5c2-7c36c5a038cc"
 version: 2
 ---
 # people

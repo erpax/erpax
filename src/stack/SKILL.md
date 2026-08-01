@@ -2,87 +2,19 @@
 name: stack
 description: "Use when reasoning about the full stack as one content-uuid-wired round-trip — device, vitepress, payload, db, and back — a palindrome (both sides of every hop encoded) that folds to a new state; the travel from the expansion-infinity to the fold-infinity, on the line of pi."
 atomPath: stack
-coordinate: stack · 7/descent · 82bf4240
-contentUuid: "37ee7fb4-4785-56ab-ad82-6724f6ecd4e6"
-diamondUuid: "3ba56986-d2ad-8298-ae78-91a50e117955"
-uuid: "82bf4240-3980-8c56-94f5-e0583cc20aff"
+coordinate: "stack · 7/descent · a4b58545"
+contentUuid: "37f9964f-c4dc-59c2-a820-305658a97366"
+diamondUuid: "e9c7defd-92d7-8bb0-9ce2-e286aae905e1"
+uuid: "a4b58545-a929-8cc3-a283-e45e54b8b736"
 horo: 7
-bonds:
-  in:
-    - db
-    - deploy
-    - device
-    - entropy
-    - fold
-    - law
-    - merge
-    - payload
-    - pi
-    - torus
-    - uuid
-    - vitepress
-  out:
-    - db
-    - deploy
-    - device
-    - entropy
-    - fold
-    - law
-    - merge
-    - payload
-    - pi
-    - torus
-    - uuid
-    - vitepress
 typography:
   partition: stack
-  bondDegree: 36
-  neighbors: []
+  bondDegree: 38
 standards:
   - "double-entry (the round-trip balances) · content-addressed state (RFC 9562 §5.8) · the torus (two infinities, one surface)"
-  - "the path is a verified palindrome; the new state is the input folded through every hop, computed"
-  - "the path is a verified palindrome; the new state is the input folded through every hop, computed not asserted"
 bindings: []
-neighbors:
-  wikilink:
-    - device
-    - entropy
-    - fold
-    - law
-    - merge
-    - payload
-    - pi
-    - torus
-    - uuid
-    - vitepress
-  matrix:
-    - db
-    - deploy
-    - device
-    - entropy
-    - fold
-    - law
-    - merge
-    - payload
-    - pi
-    - torus
-    - uuid
-    - vitepress
-  backlinks:
-    - db
-    - deploy
-    - device
-    - entropy
-    - fold
-    - law
-    - merge
-    - payload
-    - pi
-    - torus
-    - uuid
-    - vitepress
 signatures:
-  computationUuid: "f2efd92e-a5b2-8511-80c9-41752154f4e2"
+  computationUuid: "47df669c-09bb-8593-a886-3a3a6ea5f871"
   stages:
     - stage: path
       stageUuid: "ee08ef22-22bb-80d4-a660-6476faa02e25"
@@ -93,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7987a1a4-7bc9-8e0c-bcb8-eac26e01e597"
     - stage: horo
-      stageUuid: "01c1c389-039a-8f6e-b5dc-50e02b59f542"
+      stageUuid: "41a8d2dd-58f2-894b-bc98-59bd1b1187fc"
     - stage: seal
-      stageUuid: "2df6fe7c-7713-8593-abed-2e90b855f4f5"
+      stageUuid: "046ad0ab-0ae4-8d73-8596-15ba233c3cb3"
     - stage: uuid
-      stageUuid: "cb526bc0-79d4-82e8-9d77-24381812f431"
+      stageUuid: "d2d3649c-4570-8490-a8b4-0360ec4212c1"
 version: 2
 ---
 # stack — device ↔ vitepress ↔ payload ↔ db, both ways, wired in uuid

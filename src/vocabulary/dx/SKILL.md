@@ -1,68 +1,35 @@
 ---
 name: dx
 description: "Use when reasoning about dx as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/dx
-coordinate: dx · 7/descent · a79ff522
-contentUuid: "c70f6870-d9b5-5976-90ff-07a55a145b04"
-diamondUuid: "1fd17340-63fe-88c8-bcb2-5cf67c9bd8fd"
-uuid: "a79ff522-4380-861d-9ce3-8ad12a7c54bf"
+atomPath: "vocabulary/dx"
+coordinate: "vocabulary/dx · 7/descent · dc95bea7"
+contentUuid: "ff663b04-ed00-5486-a545-07b468228b4c"
+diamondUuid: "7cf6f2b8-ceb8-83a9-b059-47726f0378c7"
+uuid: "dc95bea7-c188-85fc-97d9-d5096a241e64"
 horo: 7
-bonds:
-  in:
-    - collapse
-    - element
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - element
-    - law
-    - merge
-    - sti
 typography:
-  partition: dx
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - element
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - element
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - element
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "fa97d2f8-aba8-89d4-bc76-6b1f00d3b797"
+  computationUuid: "6aaa5394-69fe-8f9b-874d-bb6fac5497ad"
   stages:
     - stage: path
-      stageUuid: "d5a70338-a25a-8a90-b413-16ade3eec02c"
+      stageUuid: "046022d7-cd08-868f-883b-1598edde3d6b"
     - stage: trinity
-      stageUuid: "21eff971-cf3c-8ea9-919d-140f84ea6abf"
+      stageUuid: "1887f903-13d0-8041-a626-25b4b26c62ac"
     - stage: boundary
-      stageUuid: "87941754-f3c7-8039-89e6-c6d45e9bf84f"
+      stageUuid: "9f0a183d-2c8d-8989-a99f-db7aa2d16632"
     - stage: links
-      stageUuid: "d0651b24-3f14-84b5-ac67-5e91bf5f78af"
+      stageUuid: "814a0bad-13b8-8702-ac3d-ff1d722c26e8"
     - stage: horo
-      stageUuid: "9106db48-9a8c-8c28-872d-359a84c5f8b7"
+      stageUuid: "a841ce45-ed8e-8e85-8c11-8279728dde59"
     - stage: seal
-      stageUuid: "aa4ae9b4-0cc4-8b06-8e3a-a4d95bc54d4c"
+      stageUuid: "16daca06-c1c6-8ba8-b977-613fd00a203b"
     - stage: uuid
-      stageUuid: "56fe4d21-38d2-876d-bc5f-2c9db23c2349"
+      stageUuid: "ab661859-bd54-8baf-b945-c3b81232ef36"
 version: 2
 ---
 # dx

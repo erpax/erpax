@@ -1,83 +1,35 @@
 ---
 name: estimated
 description: "Use when reasoning about estimated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/estimated
-coordinate: estimated · 4/weave · 19920b03
-contentUuid: "0e3e2006-b431-5fe9-b3bf-e5dae44717a8"
-diamondUuid: "6efd1706-9958-8ea0-aaf3-04c1af25a97f"
-uuid: "19920b03-2257-8c7e-8bf5-18c9e1c1f8e7"
+atomPath: "vocabulary/estimated"
+coordinate: "vocabulary/estimated · 4/weave · 0e30ee08"
+contentUuid: "eccea376-ad5d-5e0c-80e3-8c5070054ce0"
+diamondUuid: "b4bc81a7-18a5-8e3c-a9e1-cff59533dfc6"
+uuid: "0e30ee08-5731-85c8-af66-8e7188ccf50a"
 horo: 4
-bonds:
-  in:
-    - collapse
-    - cost
-    - duration
-    - flight
-    - law
-    - merge
-    - salary
-    - sti
-  out:
-    - collapse
-    - cost
-    - duration
-    - flight
-    - law
-    - merge
-    - salary
-    - sti
 typography:
-  partition: estimated
+  partition: vocabulary
   bondDegree: 27
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - cost
-    - duration
-    - flight
-    - law
-    - merge
-    - salary
-    - sti
-  matrix:
-    - collapse
-    - cost
-    - duration
-    - flight
-    - law
-    - merge
-    - salary
-    - sti
-  backlinks:
-    - collapse
-    - cost
-    - duration
-    - flight
-    - law
-    - merge
-    - salary
-    - sti
 signatures:
-  computationUuid: "4cf82651-0e65-8d5a-bc2c-0ad380b2e51c"
+  computationUuid: "cde721ce-a4e4-8252-8b78-1f784592ecc8"
   stages:
     - stage: path
-      stageUuid: "ecd31962-d7d7-85dd-ab71-2404f503998e"
+      stageUuid: "d573d827-f2c2-8a0e-a117-1315d14d63c7"
     - stage: trinity
-      stageUuid: "0d73169d-f9a2-83c7-a6b2-fbb1a914f3f6"
+      stageUuid: "a769b549-94ea-8726-9632-b47d0126f8f3"
     - stage: boundary
-      stageUuid: "d216cd72-6e6e-84e3-b3ed-d5c3345767c0"
+      stageUuid: "0ed2d99c-6f78-89b8-a47d-9772fdbd55f6"
     - stage: links
-      stageUuid: "8310d1f1-c428-81c2-8c45-d379af2236c7"
+      stageUuid: "65703031-707c-80c8-b56d-687e6b7fe199"
     - stage: horo
-      stageUuid: "66856335-4be1-8580-8c9c-c6fa2b0a5d2a"
+      stageUuid: "4b5c6a5c-5dfa-8481-8f31-882def0e8ce2"
     - stage: seal
-      stageUuid: "2cd0a06e-cfd1-813c-ae78-5f00322281f1"
+      stageUuid: "e978ec39-d8a1-8bb5-8b8b-714fe8563086"
     - stage: uuid
-      stageUuid: "b071e7e9-f5f1-80d9-ab89-62199d938d19"
+      stageUuid: "83580019-4172-8f49-8213-0e8c756eb810"
 version: 2
 ---
 # estimated

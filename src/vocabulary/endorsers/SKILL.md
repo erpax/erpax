@@ -1,57 +1,35 @@
 ---
 name: endorsers
 description: Use when reasoning about endorsers — People or organizations that endorse the plan.
-atomPath: vocabulary/endorsers
-coordinate: endorsers · 8/crest · 1461222d
-contentUuid: "8182d2dd-9023-546b-829a-2ec931a56a49"
-diamondUuid: "79841c1a-eec6-80a7-91d3-b5d9cbc83eaa"
-uuid: "1461222d-b29b-8ddc-bc7e-36215ecb25a0"
-horo: 8
-bonds:
-  in:
-    - endorser
-    - law
-    - thing
-  out:
-    - endorser
-    - law
-    - thing
+atomPath: "vocabulary/endorsers"
+coordinate: "vocabulary/endorsers · 7/descent · 7482fe36"
+contentUuid: "f9423b97-1e4b-57a0-9a00-b633c8b71a44"
+diamondUuid: "9253cf9f-fc42-8420-93ec-ae75ffbcdea6"
+uuid: "7482fe36-52ef-8cfb-82d3-d6370c2da863"
+horo: 7
 typography:
-  partition: endorsers
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - endorser
-    - law
-    - thing
-  backlinks:
-    - endorser
-    - law
-    - thing
 signatures:
-  computationUuid: "97e9afe1-bc08-88e8-a3d3-7978bf2b4b30"
+  computationUuid: "0e24df8b-b839-841f-ba3e-453573fa3e00"
   stages:
     - stage: path
-      stageUuid: "f8e8e858-1217-8dce-95d4-7e24f7c5079f"
+      stageUuid: "911fade2-8f0d-81a1-af3c-0720ca078a60"
     - stage: trinity
-      stageUuid: "c3e33189-ee07-89a8-b246-f11a70509fcf"
+      stageUuid: "5ca1bfe1-6423-870f-bb07-11e0f7544470"
     - stage: boundary
-      stageUuid: "493874c0-df61-837b-9432-c3e3540b7186"
+      stageUuid: "61ae2b25-9128-8e7d-b2a3-cf769cf92614"
     - stage: links
-      stageUuid: "7263ac6d-e2d4-8b16-bd00-ca4cc78cd696"
+      stageUuid: "34edeeec-7521-8fce-9c59-61baa1a70067"
     - stage: horo
-      stageUuid: "c557d1ab-5967-8685-9005-82c013749d57"
+      stageUuid: "ac95fb94-5261-86ad-a141-bbcbc66e70a0"
     - stage: seal
-      stageUuid: "54970263-d847-8161-a8ef-596bf12569d5"
+      stageUuid: "69d1bad3-71d1-8def-b050-7efd633f1217"
     - stage: uuid
-      stageUuid: "11af7d4c-f3eb-8cd6-a832-043e784014c0"
+      stageUuid: "b66c4652-9eb5-8775-97d6-7aeec0352ec5"
 version: 2
 ---
 # endorsers

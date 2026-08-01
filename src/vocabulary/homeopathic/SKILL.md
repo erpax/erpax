@@ -1,63 +1,35 @@
 ---
 name: homeopathic
 description: "Use when reasoning about homeopathic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/homeopathic
-coordinate: homeopathic · 7/descent · a4e73cd8
-contentUuid: "6648eb3b-a32f-558e-86d8-70c0be415ab8"
-diamondUuid: "1cf8bd44-05db-8cd5-a72b-0fb3884801ec"
-uuid: "a4e73cd8-8646-8168-9ebb-81a93dc3991c"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/homeopathic"
+coordinate: "vocabulary/homeopathic · 2/share · 4023a8a9"
+contentUuid: "0fe7841d-ce52-50ca-a1ad-850375d2ade1"
+diamondUuid: "5da0bad0-4a97-8fa8-b8d8-3f08adf0c5d0"
+uuid: "4023a8a9-e843-83fe-9cbe-5ea61c638bcd"
+horo: 2
 typography:
-  partition: homeopathic
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "0c4f6e3f-a9a5-8947-90ac-6311babaeb9f"
+  computationUuid: "582e869d-9d13-8a98-9eb2-8f25071e7776"
   stages:
     - stage: path
-      stageUuid: "6df3bdd0-a7a9-87f1-8851-5c2915bd313f"
+      stageUuid: "1a52bfa6-5cec-8711-800e-1b74eb4e4381"
     - stage: trinity
-      stageUuid: "e5d2074a-f586-8872-b484-7deca2383801"
+      stageUuid: "077e9f5e-97bb-8ddb-b2ae-6a68ce673050"
     - stage: boundary
-      stageUuid: "f8e00f63-5903-8c9a-a62c-48213fdc31cf"
+      stageUuid: "eaeeb894-d319-8e5b-ab38-ad18738669a7"
     - stage: links
-      stageUuid: "f6af76f4-d580-8eae-8f42-d765bdb3c262"
+      stageUuid: "d006c43e-bc5e-87c4-a146-ce8cfa94d7df"
     - stage: horo
-      stageUuid: "9dfe2d98-a055-8b71-9385-48d991e1b017"
+      stageUuid: "3637a2df-c4ee-8284-b258-52d58f353465"
     - stage: seal
-      stageUuid: "978a198a-32ed-842b-a1bb-a97597a23f8d"
+      stageUuid: "3d93fc5f-5458-83b4-afee-bddc012e5a8e"
     - stage: uuid
-      stageUuid: "48088b52-eec8-8940-9bbe-c3fc4a2f1540"
+      stageUuid: "4591fdef-0bad-8d32-b10a-7edc69f5397d"
 version: 2
 ---
 # homeopathic

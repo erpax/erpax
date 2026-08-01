@@ -2,77 +2,19 @@
 name: use
 description: "Use when reasoning about use as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: use
-coordinate: use · 8/crest · 12bf2fb5
-contentUuid: "0775a774-6881-502d-bc3d-da238db427ff"
-diamondUuid: "990d58b0-1056-8ea3-8926-cd0d2a541414"
-uuid: "12bf2fb5-5141-8228-aa04-28f8e39ee3d2"
+coordinate: "use · 8/crest · 3339457f"
+contentUuid: "71145b4a-d2e6-5b4e-9216-c2cc1a39aa57"
+diamondUuid: "0c35da07-1a5a-8ace-a60e-8c323d71777a"
+uuid: "3339457f-e3ce-80f0-a223-97969c3e9dd7"
 horo: 8
-bonds:
-  in:
-    - action
-    - collapse
-    - cvd
-    - educational
-    - law
-    - merge
-    - num
-    - potential
-    - sti
-    - vent
-  out:
-    - action
-    - collapse
-    - cvd
-    - educational
-    - law
-    - merge
-    - num
-    - potential
-    - sti
-    - vent
 typography:
   partition: use
   bondDegree: 0
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - cvd
-    - educational
-    - law
-    - merge
-    - num
-    - potential
-    - sti
-    - vent
-  matrix:
-    - action
-    - collapse
-    - cvd
-    - educational
-    - law
-    - merge
-    - num
-    - potential
-    - sti
-    - vent
-  backlinks:
-    - action
-    - collapse
-    - cvd
-    - educational
-    - law
-    - merge
-    - num
-    - potential
-    - sti
-    - vent
 signatures:
-  computationUuid: "75f3c713-7b3b-8962-a5a3-d2d0e52b506b"
+  computationUuid: "269e8a7a-58c4-8317-910f-00a29bc48270"
   stages:
     - stage: path
       stageUuid: "7802f7ef-0f67-862f-bfbb-1cd09109cd45"
@@ -83,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0e2d4655-01e0-8782-b87b-78b75b108948"
     - stage: horo
-      stageUuid: "eaa16803-ec58-8298-a910-062a73177fce"
+      stageUuid: "8dfbd9c4-202f-8bda-948b-c287e06b1664"
     - stage: seal
       stageUuid: "d22e38be-f60c-8bce-aed9-d065157f5b2f"
     - stage: uuid
-      stageUuid: "4aef9c5c-c09f-8cac-8d30-10adec76193a"
+      stageUuid: "78bdd86b-f9c0-8199-8d2c-687f9a86fc1e"
 version: 2
 ---
 # use

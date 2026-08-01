@@ -1,67 +1,34 @@
 ---
 name: idempotency
 description: "Use when operations must be safely replayed — idempotent keys, deduplication within a replay window, exactly-once semantics, retry-safe operations, side-effect tracking, idempotency contracts in APIs."
-atomPath: vocabulary/idempotency
-coordinate: idempotency · 4/weave · 22082397
-contentUuid: "493b458e-53e9-57ff-abda-54280281da22"
-diamondUuid: "c65a9715-12e7-8127-b4fb-7af8fd12715e"
-uuid: "22082397-9c24-89d8-8afb-7d7a8a9ec8d7"
-horo: 4
-bonds:
-  in:
-    - deduplication
-    - ingest
-    - jobs
-    - reconcile
-    - transaction
-  out:
-    - deduplication
-    - ingest
-    - jobs
-    - reconcile
-    - transaction
+atomPath: "vocabulary/idempotency"
+coordinate: "vocabulary/idempotency · 5/round · 9cc503ab"
+contentUuid: "6879868d-ae20-5b9b-8307-937f109329ee"
+diamondUuid: "f6e9749d-1d06-80de-972c-cc300fb4b68f"
+uuid: "9cc503ab-f957-878f-9791-46e174dc779e"
+horo: 5
 typography:
-  partition: idempotency
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - deduplication
-    - ingest
-    - jobs
-    - reconcile
-    - transaction
-  matrix:
-    - deduplication
-    - ingest
-    - jobs
-    - reconcile
-    - transaction
-  backlinks:
-    - deduplication
-    - ingest
-    - jobs
-    - reconcile
-    - transaction
 signatures:
-  computationUuid: "4edf28c3-a498-8c0a-bce8-61dc1b7c3024"
+  computationUuid: "2f4b7bfd-2e47-89b7-b446-31242b402048"
   stages:
     - stage: path
-      stageUuid: "2726e430-4e9a-8373-b079-eb71792b6576"
+      stageUuid: "dff8cc28-9ebf-83eb-92e7-c85fa5e8dc4a"
     - stage: trinity
-      stageUuid: "70cf6bba-fd73-81a0-aa7a-5f526a6da7e4"
+      stageUuid: "7a8a2fd6-43e1-883f-9d34-8c1674195898"
     - stage: boundary
-      stageUuid: "43b2cb5b-1873-8e16-bc1a-22bb7db09984"
+      stageUuid: "f75c529d-e9ce-8cb4-888b-8c18dc4b2d28"
     - stage: links
-      stageUuid: "db52a1bc-1a33-8ac5-9183-c5f72c97dcd5"
+      stageUuid: "19f3aa75-4b04-8e39-b9fb-18a1589e8251"
     - stage: horo
-      stageUuid: "09fd255c-ed6c-8424-97e3-7d88206c04b5"
+      stageUuid: "c783dfa4-e6f7-85e2-91fa-eca2f1659c3b"
     - stage: seal
-      stageUuid: "e4f16f6f-d233-87ed-a727-912b87753b23"
+      stageUuid: "a74fe9d4-ec75-8133-b96a-b6572d6a3b2b"
     - stage: uuid
-      stageUuid: "667e10fd-5499-894d-bdf3-48caa37394eb"
+      stageUuid: "13c08940-f893-8d31-8e5b-a124e024c679"
 version: 2
 ---
 # idempotency

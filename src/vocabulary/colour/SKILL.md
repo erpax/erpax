@@ -1,63 +1,35 @@
 ---
 name: colour
 description: "Use when reasoning about colour as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/colour
-coordinate: colour · 8/crest · 2a6026ce
-contentUuid: "59f5746d-636a-5db1-b46c-8b50efea8b1b"
-diamondUuid: "ece77c66-a58e-8782-8158-6e8f3bde5c7a"
-uuid: "2a6026ce-5ae5-8265-8467-d24c74ba50fa"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/colour"
+coordinate: "vocabulary/colour · 1/base · 7af6686c"
+contentUuid: "51bb387e-e9c9-5e16-aeb8-719241c0c9f6"
+diamondUuid: "c90c0084-556c-8091-a6c6-efeb66d7bd50"
+uuid: "7af6686c-8b7e-80b1-87cc-5a4e5b308155"
+horo: 1
 typography:
-  partition: colour
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "5bfdd62a-bc50-8525-82bd-49f322df4320"
+  computationUuid: "6db3252e-a702-8a45-9ce6-fb6f3ec7d0c1"
   stages:
     - stage: path
-      stageUuid: "1d5d7d90-b8f1-89eb-83e8-e0e27e97a3ab"
+      stageUuid: "433e7e93-0bfd-8b10-a80a-b9f6dba3ca6b"
     - stage: trinity
-      stageUuid: "cc7e5000-4ef3-8f69-b9db-a6695a2ac382"
+      stageUuid: "7e46fde3-c659-828c-aec1-4a21e937bd64"
     - stage: boundary
-      stageUuid: "d21e28c5-2849-8631-9f6b-eebc754a64db"
+      stageUuid: "c9146b40-64db-8149-a8e5-eef17c4f4285"
     - stage: links
-      stageUuid: "009f0d4d-613e-82a8-9b99-598c15c6d5f9"
+      stageUuid: "4703346c-bcd2-806d-88f1-1ba0435983d2"
     - stage: horo
-      stageUuid: "3a12b98c-1e2f-8d1a-b833-735f867446ad"
+      stageUuid: "21be563e-b8a8-887f-b5c2-daea676ebf39"
     - stage: seal
-      stageUuid: "270c2d7b-421c-8164-9242-47a497d13cf4"
+      stageUuid: "cc500da7-81bf-82b0-a9fe-5d6de317bbc3"
     - stage: uuid
-      stageUuid: "62272a08-1658-8f77-a836-b0db751b986c"
+      stageUuid: "28c2d1f6-08d3-8451-9dba-1dd270dde3cd"
 version: 2
 ---
 # colour

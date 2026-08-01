@@ -1,83 +1,35 @@
 ---
 name: mortgage
 description: "Use when reasoning about mortgage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/mortgage
-coordinate: mortgage · 1/base · df4b2bf6
-contentUuid: "12f93e0c-7251-5991-b857-7f23dbedd21c"
-diamondUuid: "92a14310-69c9-8a8a-8bc5-30df1312318f"
-uuid: "df4b2bf6-4b84-8a3a-9c6c-fc15cc0e900d"
-horo: 1
-bonds:
-  in:
-    - amount
-    - collapse
-    - domiciled
-    - law
-    - loan
-    - mandate
-    - merge
-    - sti
-  out:
-    - amount
-    - collapse
-    - domiciled
-    - law
-    - loan
-    - mandate
-    - merge
-    - sti
+atomPath: "vocabulary/mortgage"
+coordinate: "vocabulary/mortgage · 2/share · 7e110526"
+contentUuid: "cbf6709a-f875-572a-9e8c-cf2c01557d3b"
+diamondUuid: "1874a903-7021-8b97-ad2a-850745df2fec"
+uuid: "7e110526-422c-8eee-acd2-69a8904adc80"
+horo: 2
 typography:
-  partition: mortgage
+  partition: vocabulary
   bondDegree: 27
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - amount
-    - collapse
-    - domiciled
-    - law
-    - loan
-    - mandate
-    - merge
-    - sti
-  matrix:
-    - amount
-    - collapse
-    - domiciled
-    - law
-    - loan
-    - mandate
-    - merge
-    - sti
-  backlinks:
-    - amount
-    - collapse
-    - domiciled
-    - law
-    - loan
-    - mandate
-    - merge
-    - sti
 signatures:
-  computationUuid: "7de2f936-8922-8429-9d67-f25dc6b14291"
+  computationUuid: "65c84bec-9852-86ee-ba3c-aa0d6e7a49e4"
   stages:
     - stage: path
-      stageUuid: "eb1b5a1e-197c-8ccb-a0d7-1f747d4fd83b"
+      stageUuid: "a59462cc-c9b0-86d2-a219-9a6e3ae121eb"
     - stage: trinity
-      stageUuid: "dbd3a81a-b7ca-8e47-ae63-6399fa0b09bf"
+      stageUuid: "1fd39eca-d973-820a-98df-366839c42a14"
     - stage: boundary
-      stageUuid: "5f67718d-ab3e-8d92-a723-7ac6d5e005d9"
+      stageUuid: "dba7a5b6-e252-804d-b717-59d9cf4dd86f"
     - stage: links
-      stageUuid: "5d4c50dc-9964-8bfb-ba5d-b89941e4ec1c"
+      stageUuid: "0ed7581a-cd20-880b-a656-b5449e7bae1d"
     - stage: horo
-      stageUuid: "93520287-0cff-8c3b-91e5-3543532e9bc0"
+      stageUuid: "3831171d-ec00-8b7a-9ed1-734791ee730b"
     - stage: seal
-      stageUuid: "a53d91b3-f800-81a4-a9f3-cdee84cb4d26"
+      stageUuid: "3b389987-374c-8f60-bcf8-afd44983cb6b"
     - stage: uuid
-      stageUuid: "cc4cc837-8722-8a45-95c4-a749fe44dd1d"
+      stageUuid: "29e6ac53-8250-81fa-884a-e91b8fd19361"
 version: 2
 ---
 # mortgage

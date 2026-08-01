@@ -1,66 +1,19 @@
 ---
 name: engine
 description: "Use when querying the corpus — the search engine that resolves a query to matching atoms, ranked by closeness; a pure read over the live matrix node set."
-atomPath: search/engine
-coordinate: search/engine · 4/weave · 4cf91a0b
-contentUuid: "191adf79-ff18-5fff-8cc8-5b2ca85a7a4f"
-diamondUuid: "5eb74ac2-1ebc-86d6-96d8-bbbdd16d7bba"
-uuid: "4cf91a0b-3085-848f-b1f8-8b72c4830483"
-horo: 4
-bonds:
-  in:
-    - displacement
-    - find
-    - matrix
-    - query
-    - rank
-    - search
-    - specification
-    - vehicle
-  out:
-    - displacement
-    - find
-    - matrix
-    - query
-    - rank
-    - search
-    - specification
-    - vehicle
+atomPath: "search/engine"
+coordinate: "search/engine · 8/crest · f5f5baab"
+contentUuid: "a6555490-9f64-5d4d-a50c-bd5bb62c1fae"
+diamondUuid: "6e4a244f-10a0-868f-a8fb-74f5f0188d5c"
+uuid: "f5f5baab-dcaa-84e9-a4eb-fc9000c3d5b4"
+horo: 8
 typography:
   partition: search
   bondDegree: 35
-  neighbors:
-    - aura
-standards:
-  - "pure over the live matrix node set; never hand-asserted"
+standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - find
-    - matrix
-    - query
-    - rank
-    - search
-  matrix:
-    - displacement
-    - find
-    - matrix
-    - query
-    - rank
-    - search
-    - specification
-    - vehicle
-  backlinks:
-    - displacement
-    - find
-    - matrix
-    - query
-    - rank
-    - search
-    - specification
-    - vehicle
 signatures:
-  computationUuid: "3e7b7196-16c2-8b2e-8b0f-4d5bd7636c29"
+  computationUuid: "28c688a4-a950-8c19-9853-b701f18d14a3"
   stages:
     - stage: path
       stageUuid: "2de9ae2c-9dd8-8d0f-a8ed-ad73b6e37434"
@@ -71,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d94683f9-3c95-8be4-aa39-cddb6b46504c"
     - stage: horo
-      stageUuid: "74a0d5a1-fa7b-897a-a083-e56db4d02665"
+      stageUuid: "7f26eed5-ae9d-8d92-804c-7061f6b9f763"
     - stage: seal
-      stageUuid: "3eb02201-a8bc-8fe9-a9aa-140321351c7f"
+      stageUuid: "d8aab1ae-d677-8012-9b4e-d5d9fb607eb5"
     - stage: uuid
-      stageUuid: "cd9050d2-b2b0-8d19-98d1-4d66c569b3f5"
+      stageUuid: "6f34ad44-219a-8734-a2f5-a9215957713a"
 version: 2
 ---
 # search/engine — query the corpus, ranked

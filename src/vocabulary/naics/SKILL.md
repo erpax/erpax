@@ -1,53 +1,35 @@
 ---
 name: naics
 description: Use when reasoning about naics — The North American Industry Classification System (NAICS) code for a particular organization or business person.
-atomPath: vocabulary/naics
-coordinate: naics · 1/base · 688fdb61
-contentUuid: "934ced05-0915-59f9-b15a-d4478419285b"
-diamondUuid: "5eed56a0-0e25-8dc9-acca-47667426adc4"
-uuid: "688fdb61-2e92-86ba-9787-91e946ce2944"
-horo: 1
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/naics"
+coordinate: "vocabulary/naics · 5/round · fcd9aef1"
+contentUuid: "8ac02e5a-51da-52eb-8d63-4d6467b7e80f"
+diamondUuid: "d137f88f-88e0-8087-b2a5-0819ad5bcfbe"
+uuid: "fcd9aef1-ee93-8c57-95be-bc87aab1b0a8"
+horo: 5
 typography:
-  partition: naics
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "59bb4c3b-16f3-8398-b79e-901bc3acbdea"
+  computationUuid: "dbee3d30-173f-8e14-8701-ee92c1f8a66e"
   stages:
     - stage: path
-      stageUuid: "5b8c4181-e200-85eb-8f86-87215dd69aa5"
+      stageUuid: "25b46f15-f74e-8b0f-bbca-f5d6a35e1585"
     - stage: trinity
-      stageUuid: "87ecc3ad-1583-8d6c-b9b4-82d4664b21ef"
+      stageUuid: "363d790a-2b2a-8b1b-8678-65a0e39132fe"
     - stage: boundary
-      stageUuid: "a2057a6d-41b2-851c-8c22-22324dbffe0f"
+      stageUuid: "d0de6b57-8ada-82e8-830c-e53edd767f36"
     - stage: links
-      stageUuid: "114ca066-6110-8386-aca5-299c6541ec41"
+      stageUuid: "f4c4f287-b19f-8fc4-be8e-c130370f89e3"
     - stage: horo
-      stageUuid: "4f5aa073-c854-889d-8c84-3680f6a6b7d5"
+      stageUuid: "0e94139b-2881-8a1b-8787-5ce2675e5e3a"
     - stage: seal
-      stageUuid: "d2515e6e-6be5-8b74-8109-80c7b18e8563"
+      stageUuid: "7092ff7c-0daf-8eea-8ca6-16b068038317"
     - stage: uuid
-      stageUuid: "874752b0-cf05-8a80-9c94-576ce6cd5138"
+      stageUuid: "108c263c-647c-8c55-b1fc-b0ff795d5d69"
 version: 2
 ---
 # naics

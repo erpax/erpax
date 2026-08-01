@@ -2,121 +2,18 @@
 name: wellbeing
 description: "Use when measuring or reasoning about quality of life — качество на живот — the emergent outcome of a society, a composite over sociological dimensions (material · health · social · psychological · environmental). Like a market it is capped by its weakest dimension, but unlike a pure product it is partly compensatory with non-compensatory capability floors below which no surplus elsewhere restores the whole. The dependent variable erpax exists to raise; read capabilities, not income."
 atomPath: wellbeing
-coordinate: wellbeing · 1/base · 71bd89bf
-contentUuid: "aacd51c1-ad82-5c8b-8f93-f11d5b58d3c4"
-diamondUuid: "5f308f37-726d-8fa7-b00c-9d10f0d51047"
-uuid: "71bd89bf-44d7-8839-a9e8-053cd68200fa"
-horo: 1
-bonds:
-  in:
-    - age
-    - aggregation
-    - allocation
-    - angel
-    - balance
-    - bottleneck
-    - career
-    - cohort
-    - crisis
-    - decompression
-    - dimension
-    - duality
-    - entry
-    - health
-    - law
-    - market
-    - measure
-    - society
-    - time
-  out:
-    - age
-    - aggregation
-    - allocation
-    - angel
-    - balance
-    - bottleneck
-    - career
-    - cohort
-    - crisis
-    - decompression
-    - dimension
-    - duality
-    - entry
-    - health
-    - law
-    - market
-    - measure
-    - society
-    - time
+coordinate: "wellbeing · 2/share · f0bc647c"
+contentUuid: "0144406e-39fe-585b-8f6a-14e23c85d123"
+diamondUuid: "c2c0b9a1-2286-8761-bec8-15e5a370e131"
+uuid: "f0bc647c-b864-86f2-b6c1-c1324360d2b0"
+horo: 2
 typography:
   partition: wellbeing
-  bondDegree: 60
-  neighbors: []
+  bondDegree: 63
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - age
-    - aggregation
-    - allocation
-    - angel
-    - balance
-    - bottleneck
-    - career
-    - cohort
-    - crisis
-    - decompression
-    - dimension
-    - duality
-    - entry
-    - health
-    - law
-    - market
-    - measure
-    - society
-    - time
-  matrix:
-    - age
-    - aggregation
-    - allocation
-    - angel
-    - balance
-    - bottleneck
-    - career
-    - cohort
-    - crisis
-    - decompression
-    - dimension
-    - duality
-    - entry
-    - health
-    - law
-    - market
-    - measure
-    - society
-    - time
-  backlinks:
-    - age
-    - aggregation
-    - allocation
-    - angel
-    - balance
-    - bottleneck
-    - career
-    - cohort
-    - crisis
-    - decompression
-    - dimension
-    - duality
-    - entry
-    - health
-    - law
-    - market
-    - measure
-    - society
-    - time
 signatures:
-  computationUuid: "047f334b-2e12-8f38-86cc-dc8bc225c959"
+  computationUuid: "3353f5f8-a246-8506-a464-bbd1a80cea96"
   stages:
     - stage: path
       stageUuid: "1a4fbb65-5179-8888-b2f3-d8fbc8e8efb1"
@@ -127,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "250e5381-e561-823e-8cc9-6a80fa3aefe3"
     - stage: horo
-      stageUuid: "c6d00914-ec14-8299-9b99-92afaea06d8b"
+      stageUuid: "3c8a87b3-d827-8612-879c-3bad411a0378"
     - stage: seal
-      stageUuid: "0f3e252b-ee92-8ce7-a1e7-af1610f6792c"
+      stageUuid: "e809905b-5892-80e5-b130-1724b12af84d"
     - stage: uuid
-      stageUuid: "c3f0ef7d-fb50-894f-a489-23719ec242c7"
+      stageUuid: "3cd4a310-a353-8aea-b563-c2c28139fed4"
 version: 2
 ---
 # wellbeing — quality of life, the composite a society is measured by (качество на живот)

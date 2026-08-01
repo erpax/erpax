@@ -1,75 +1,34 @@
 ---
 name: indemnity
 description: "Use when one party agrees to compensate another for loss/liability arising from specified events — indemnifier, indemnitee, indemnified party, trigger (third-party claims, breach, negligence), scope, caps, procedure."
-atomPath: vocabulary/indemnity
-coordinate: indemnity · 2/share · df76c678
-contentUuid: "b48aac87-d717-5f25-bf35-33d741fa91a7"
-diamondUuid: "c582f56f-cc8b-83ab-aa03-ecfad4217c2d"
-uuid: "df76c678-b331-88d1-bde2-9f2c2e83d5d7"
-horo: 2
-bonds:
-  in:
-    - contracts
-    - law
-    - liability
-    - matter
-    - registers
-    - remediation
-    - warranty
-  out:
-    - contracts
-    - law
-    - liability
-    - matter
-    - registers
-    - remediation
-    - warranty
+atomPath: "vocabulary/indemnity"
+coordinate: "vocabulary/indemnity · 8/crest · 0b99ff3e"
+contentUuid: "f4d559e9-a739-5ee4-82c8-93768a9628a0"
+diamondUuid: "609d3f80-295e-8405-a9b9-f857581c68c5"
+uuid: "0b99ff3e-bb63-8f84-80f9-9da7145cabc5"
+horo: 8
 typography:
-  partition: indemnity
+  partition: vocabulary
   bondDegree: 22
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - contracts
-    - law
-    - liability
-    - matter
-    - registers
-  matrix:
-    - contracts
-    - law
-    - liability
-    - matter
-    - registers
-    - remediation
-    - warranty
-  backlinks:
-    - contracts
-    - law
-    - liability
-    - matter
-    - registers
-    - remediation
-    - warranty
 signatures:
-  computationUuid: "643f8315-93a9-8007-8d06-36b811de9489"
+  computationUuid: "9e5609fe-90f0-8f3d-8b43-3b420aeb3d6d"
   stages:
     - stage: path
-      stageUuid: "e2fbd5e3-1638-86e7-aabb-d125ac9f54cb"
+      stageUuid: "0209187a-63d0-8558-8b01-7ff96252448f"
     - stage: trinity
-      stageUuid: "ade7e294-3adb-8e5b-b987-1a3c1749b2f0"
+      stageUuid: "50c0d5f4-eab8-85dc-b7d6-90f78c6b36d2"
     - stage: boundary
-      stageUuid: "3177f6ed-35fd-8876-8a20-23b320bb1b9f"
+      stageUuid: "78c7629a-cf2a-801a-903b-4f7f57db7036"
     - stage: links
-      stageUuid: "8390f88d-0271-8ad2-bdbb-4acaeb51a920"
+      stageUuid: "c982f55f-ddff-8409-b9aa-ef66a541c5f8"
     - stage: horo
-      stageUuid: "7cac8832-b278-8f92-a93c-ea7501a74a56"
+      stageUuid: "ebe70011-c955-8fc6-b559-9e5a3091a23c"
     - stage: seal
-      stageUuid: "96be2664-9ed2-8713-a830-0730c39c1ba5"
+      stageUuid: "dfd3a3dd-6ad4-807b-9163-4123ab527dae"
     - stage: uuid
-      stageUuid: "4bcd3364-88ac-81bf-83bf-b89ee7e54cc1"
+      stageUuid: "07cad039-6638-8a4e-81e1-8619002f6599"
 version: 2
 ---
 # indemnity

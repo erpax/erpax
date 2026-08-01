@@ -2,80 +2,14 @@
 name: auth
 description: "Use when enabling or configuring Payload authentication on a collection — login/logout, JWT/cookies, API keys, email verification, password reset, login lockout, token expiration, or admin-panel user accounts."
 atomPath: auth
-coordinate: "auth · 3/3 · f8e7de5f"
-contentUuid: "bb993672-5927-5d63-97bf-b32376dd8f44"
-diamondUuid: "bf1c7542-2db4-8c1e-9bc7-504e39000ea4"
-uuid: "f8e7de5f-2e3e-82e3-9e5b-39b9729dad99"
-horo: 3
-bonds:
-  in:
-    - access
-    - accounts
-    - admin
-    - agent
-    - atom
-    - authenticated
-    - axis
-    - biometric
-    - coil
-    - collections
-    - config
-    - cross
-    - domain
-    - events
-    - harden
-    - hooks
-    - horo
-    - identity
-    - law
-    - limit
-    - mcp
-    - messages
-    - obligations
-    - owners
-    - proof
-    - published
-    - rodin
-    - skills
-    - submissions
-    - trinity
-    - users
-  out:
-    - access
-    - accounts
-    - admin
-    - agent
-    - atom
-    - authenticated
-    - axis
-    - biometric
-    - coil
-    - collections
-    - config
-    - cross
-    - domain
-    - events
-    - harden
-    - hooks
-    - horo
-    - identity
-    - law
-    - limit
-    - mcp
-    - messages
-    - obligations
-    - owners
-    - proof
-    - published
-    - rodin
-    - skills
-    - submissions
-    - trinity
-    - users
+coordinate: "auth · 9/unity · 2e8e98bc"
+contentUuid: "2b6ba845-e0c5-5572-8018-cd14fbcfc742"
+diamondUuid: "3fe7e821-aa1b-81b7-9b2a-33b786f9ba64"
+uuid: "2e8e98bc-3386-81fb-9886-6af83ee38a11"
+horo: 9
 typography:
   partition: auth
-  bondDegree: 97
-  neighbors: []
+  bondDegree: 93
 standards:
   - "NIST INCITS-359-2012 rbac object-scoped-role-assignment"
   - "NIST INCITS-359-2012 role-based-access-control"
@@ -87,85 +21,8 @@ standards:
   - "OWASP-ASVS V4 access-control"
   - "SOC-2 CC6.1 logical-access-controls"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - config
-    - domain
-    - events
-    - harden
-    - hooks
-    - identity
-    - law
-    - limit
-    - proof
-    - users
-  matrix:
-    - access
-    - accounts
-    - admin
-    - agent
-    - atom
-    - authenticated
-    - axis
-    - biometric
-    - coil
-    - collections
-    - config
-    - cross
-    - domain
-    - events
-    - harden
-    - hooks
-    - horo
-    - identity
-    - law
-    - limit
-    - mcp
-    - messages
-    - obligations
-    - owners
-    - proof
-    - published
-    - rodin
-    - skills
-    - submissions
-    - trinity
-    - users
-  backlinks:
-    - access
-    - accounts
-    - admin
-    - agent
-    - atom
-    - authenticated
-    - axis
-    - biometric
-    - coil
-    - collections
-    - config
-    - cross
-    - domain
-    - events
-    - harden
-    - hooks
-    - horo
-    - identity
-    - law
-    - limit
-    - mcp
-    - messages
-    - obligations
-    - owners
-    - proof
-    - published
-    - rodin
-    - skills
-    - submissions
-    - trinity
-    - users
 signatures:
-  computationUuid: "f7ff607c-3f33-80db-892e-39b693c68e3c"
+  computationUuid: "ca6018c9-7a12-8ce7-bd25-5146ba8533b6"
   stages:
     - stage: path
       stageUuid: "b7524e53-dec3-83e8-aabc-a84f5ebd1222"
@@ -176,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "e2230da0-7d68-83ab-97f6-404745395947"
     - stage: horo
-      stageUuid: "525bca55-40e0-8b67-b010-a089d5fcdd84"
+      stageUuid: "e2a717cf-28cf-8a60-866f-6266c149991b"
     - stage: seal
       stageUuid: "59b92b17-6478-81f2-ba2f-db85cafe564c"
     - stage: uuid
-      stageUuid: "6e0bb746-d381-88d8-ab3e-b2c038545a9f"
+      stageUuid: "24925e6f-1582-815e-b07d-d75552ba6bc3"
 version: 2
 ---
 # auth — Payload authentication (position 9, the control triad)

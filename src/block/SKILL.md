@@ -2,65 +2,19 @@
 name: block
 description: "Use when reasoning about block as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: block
-coordinate: "block · 5/round · 0435f8b4"
-contentUuid: "24bc2068-96b0-557f-b69f-faf3123754f1"
-diamondUuid: "15486898-2332-8553-b3ed-84a6381c84ed"
-uuid: "0435f8b4-9521-81e2-8f1b-1cb04b3fd6db"
-horo: 5
-bonds:
-  in:
-    - ad
-    - collapse
-    - diamond
-    - law
-    - merge
-    - primitive
-    - sti
-    - wp
-  out:
-    - ad
-    - collapse
-    - diamond
-    - law
-    - merge
-    - primitive
-    - sti
-    - wp
+coordinate: "block · 8/crest · 27e68647"
+contentUuid: "07ee8cc6-dd8b-52d4-8b96-1b857406f7e7"
+diamondUuid: "fa9695eb-da48-8b63-a381-b44abc909c8b"
+uuid: "27e68647-bb0d-834c-9bca-4b747288d147"
+horo: 8
 typography:
   partition: block
   bondDegree: 26
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - ad
-    - collapse
-    - law
-    - merge
-    - sti
-    - wp
-  matrix:
-    - ad
-    - collapse
-    - diamond
-    - law
-    - merge
-    - primitive
-    - sti
-    - wp
-  backlinks:
-    - ad
-    - collapse
-    - diamond
-    - law
-    - merge
-    - primitive
-    - sti
-    - wp
 signatures:
-  computationUuid: "6aef5c93-0e00-84c7-8a7d-edfa1676c366"
+  computationUuid: "b6a43187-5be5-8747-bcec-034494ab965f"
   stages:
     - stage: path
       stageUuid: "e581da96-cb31-82b1-bcfb-2ddebcec694d"
@@ -71,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "216219ce-4417-8b9b-87b4-622539c678fc"
     - stage: horo
-      stageUuid: "f322f9c9-e6f8-8f84-aecb-bc6a23629fbc"
+      stageUuid: "3a8cebc4-71a5-80e6-8abb-feea5cb45b20"
     - stage: seal
       stageUuid: "bd3b709b-952e-804a-92a0-35e9c1535bde"
     - stage: uuid
-      stageUuid: "40e9687a-141e-8e1f-84e6-df3042b8dc1f"
+      stageUuid: "66eaa1b3-24de-8ca5-bc37-ac20c025ce37"
 version: 2
 ---
 # block

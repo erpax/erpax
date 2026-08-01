@@ -1,57 +1,34 @@
 ---
 name: dependency
 description: Use when modelling one dependency — the singular model of the dependencies collection (the plural store); a relationship where one item requires another.
-atomPath: vocabulary/dependency
-coordinate: dependency · 5/round · 39296e30
-contentUuid: "aa382ff3-a037-5e2a-a4a2-c8373666526d"
-diamondUuid: "413b6c14-6ef1-86a4-aa18-a5b3dc1496dd"
-uuid: "39296e30-bccb-826a-ad9d-3ea33936b674"
-horo: 5
-bonds:
-  in:
-    - balance
-    - dependencies
-    - reference
-  out:
-    - balance
-    - dependencies
-    - reference
+atomPath: "vocabulary/dependency"
+coordinate: "vocabulary/dependency · 8/crest · 3e682b2f"
+contentUuid: "9f799fd8-a93c-526b-91fb-b9ca537f0a40"
+diamondUuid: "b186b733-9ebc-8195-a29e-912b3a8875e2"
+uuid: "3e682b2f-1895-8319-b3a6-4eb2a80b5cfa"
+horo: 8
 typography:
-  partition: dependency
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - dependencies
-    - reference
-  matrix:
-    - balance
-    - dependencies
-    - reference
-  backlinks:
-    - balance
-    - dependencies
-    - reference
 signatures:
-  computationUuid: "99ed0073-6d9e-8e5c-aa8a-4b2524a06069"
+  computationUuid: "d784b9ce-2160-8f25-982b-88d6101dbeb2"
   stages:
     - stage: path
-      stageUuid: "87356aee-803a-8b3f-94de-2a86faae394a"
+      stageUuid: "71d86961-3b1d-8fb5-82a1-604bc7b9ab04"
     - stage: trinity
-      stageUuid: "ab6bf504-9cb3-8116-86ea-6673a389ccda"
+      stageUuid: "e1a8b981-9dd9-8634-9b03-cabe5e43d88a"
     - stage: boundary
-      stageUuid: "2c2d0ddf-0fbe-8b15-84a1-59402528c710"
+      stageUuid: "7e938999-938d-80c1-b749-bf33fb85d769"
     - stage: links
-      stageUuid: "55c1fd1a-3ed6-81cb-b46d-f3c3da0a01ee"
+      stageUuid: "28ad68bb-f8a8-89f4-8896-4483397e053d"
     - stage: horo
-      stageUuid: "d0a34dae-b694-8288-89fd-26fc103fb4b4"
+      stageUuid: "0b2840a8-1241-84f8-b798-f58b8ac0d627"
     - stage: seal
-      stageUuid: "8a880a9b-ee76-8e60-bea7-62a2ef27f80d"
+      stageUuid: "22c733a7-f0b1-8afc-831a-78b1a8dd0496"
     - stage: uuid
-      stageUuid: "ad2a45b2-21a3-8588-97af-75cebab4caa3"
+      stageUuid: "f51055b3-20bb-88f2-8aaa-eb5eb0e8e5b8"
 version: 2
 ---
 # dependency — the model of one [[dependencies]] row

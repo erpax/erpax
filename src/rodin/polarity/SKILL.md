@@ -3,75 +3,15 @@ name: polarity
 description: "Use when reasoning about the two directions of the rodin doubling cycle — 3 and 6 are the polarity boundaries: forward helix (×2, cyan, outbound/give) ↔ reverse helix (×5, magenta, inbound/take). The mirror pair the coil winds between. Nested under rodin."
 atomPath: "rodin/polarity"
 coordinate: "rodin/polarity · 4/weave · dab45768"
-contentUuid: "cb1ac35f-f01b-51f9-ad95-b62e5e5ae0ba"
+contentUuid: "39b3fd2a-bb5f-5a19-ad06-8540795dbe52"
 diamondUuid: "e7576f90-4590-89da-b95f-4c60bd7afc7e"
 uuid: "dab45768-5d0a-8b27-b2a3-c59eb7484ae7"
 horo: 4
-bonds:
-  in:
-    - axis
-    - balance
-    - breath
-    - cmyk
-    - coil
-    - decompression
-    - duality
-    - give
-    - rodin
-    - signal
-    - take
-  out:
-    - axis
-    - balance
-    - breath
-    - cmyk
-    - coil
-    - decompression
-    - duality
-    - give
-    - rodin
-    - signal
-    - take
 typography:
   partition: rodin
   bondDegree: 38
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - axis
-    - balance
-    - cmyk
-    - coil
-    - duality
-    - give
-    - rodin
-    - take
-  matrix:
-    - axis
-    - balance
-    - breath
-    - cmyk
-    - coil
-    - decompression
-    - duality
-    - give
-    - rodin
-    - signal
-    - take
-  backlinks:
-    - axis
-    - balance
-    - breath
-    - cmyk
-    - coil
-    - decompression
-    - duality
-    - give
-    - rodin
-    - signal
-    - take
 signatures:
   computationUuid: "b8d01079-ad1f-8da0-b619-aaf521539354"
   stages:

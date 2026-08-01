@@ -2,35 +2,14 @@
 name: receipts
 description: "Use when receiving finished goods from an internal manufacturing work order into inventory — absorbed cost (material/labour/overhead), lot/serial tracking, target warehouse, and IAS-2 §10 cost-of-conversion booking. The produced-inventory receipt record — distinct from vendor goods receipts."
 atomPath: "items/bills/of/materials/work/orders/production/receipts"
-coordinate: "items/bills/of/materials/work/orders/production/receipts · 1/base · 55b3923d"
-contentUuid: "23ecf702-cb91-56ba-844f-b733bc71cadf"
-diamondUuid: "71b19735-2a67-8680-ab73-16c52b78f113"
-uuid: "55b3923d-7e20-820e-b7db-5843349a82b0"
-horo: 1
-bonds:
-  in:
-    - accounting
-    - collections
-    - fields
-    - law
-    - production
-    - proof
-    - sales
-    - supto
-    - versions
-  out:
-    - accounting
-    - collections
-    - fields
-    - law
-    - proof
-    - sales
-    - supto
-    - versions
+coordinate: "items/bills/of/materials/work/orders/production/receipts · 5/round · 2aad1449"
+contentUuid: "ad083cc5-0dfe-5caa-b993-628eb3f0164a"
+diamondUuid: "ac48cd8e-be6b-8669-969c-97d213c94d67"
+uuid: "2aad1449-8a23-8eb9-85c9-64f81b3ab048"
+horo: 5
 typography:
   partition: items
   bondDegree: 34
-  neighbors: []
 standards:
   - "IFRS IAS-2 §10 §12 cost-of-conversion"
   - "ISA-95"
@@ -41,36 +20,8 @@ standards:
   - "US-GAAP ASC-330-10-30 inventory-cost"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - horo
-    - identity
-    - law
-    - orders
-    - proof
-    - standard
-    - transaction
-  matrix:
-    - accounting
-    - collections
-    - fields
-    - law
-    - proof
-    - sales
-    - supto
-    - versions
-  backlinks:
-    - accounting
-    - collections
-    - fields
-    - law
-    - proof
-    - sales
-    - supto
-    - versions
 signatures:
-  computationUuid: "3d4f1966-c1aa-8c26-8812-96e39b84e0d4"
+  computationUuid: "d4304a4b-8fc5-828e-b847-f8518dfbff5a"
   stages:
     - stage: path
       stageUuid: "5fa42070-58ce-8159-98f4-a9baf7f592ad"
@@ -81,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "cae361e1-7abf-866e-8fd2-c54cf65e4034"
     - stage: horo
-      stageUuid: "42051686-c9a1-8432-b7a0-c625caf9f129"
+      stageUuid: "2157acf7-e1cc-8ae8-94b5-cb33683bb04d"
     - stage: seal
       stageUuid: "04bb44d3-fe71-89aa-aea0-b37a8f78e755"
     - stage: uuid
-      stageUuid: "01832430-147d-8db8-856e-8f162140bc00"
+      stageUuid: "6a8729d9-78d1-896a-a1a0-40109d8b2f1c"
 version: 2
 ---
 # production-receipts

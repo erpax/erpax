@@ -2,47 +2,15 @@
 name: runs
 description: "Use when processing, auditing, or posting a periodic payroll batch — aggregates approved TimeEntries, computes gross-to-net deductions and employer-side accruals, posts IAS-19/ASC-710 journal entries, emits a pain.001 disbursement file; SOX §404 four-eyes (preparer ≠ authoriser), GDPR-classified personal data. The payroll-run collection."
 atomPath: "bank/accounts/payroll/runs"
-coordinate: "bank/accounts/payroll/runs · 5/round · 6d1c5b7c"
-contentUuid: "5e93d996-e697-5c86-8dde-124f95c33295"
-diamondUuid: "65c4f733-4365-8e93-b885-388940c38efb"
-uuid: "6d1c5b7c-553c-8c3a-ae06-d3140db8230b"
-horo: 5
-bonds:
-  in:
-    - accounting
-    - accounts
-    - mandates
-    - proof
-    - runs
-    - standard
-    - transaction
-  out:
-    - accounting
-    - accounts
-    - mandates
-    - proof
-    - runs
-    - standard
-    - transaction
+coordinate: "bank/accounts/payroll/runs · 1/base · 66bdbc38"
+contentUuid: "2164c28d-aa30-5ee3-b479-11f7421ef9bc"
+diamondUuid: "4dbcafe0-7a73-8034-815f-16356b769203"
+uuid: "66bdbc38-6cba-8a02-a441-4397f16f5c2a"
+horo: 1
 typography:
   partition: bank
   bondDegree: 0
-  neighbors: []
 standards:
-  - "EU-2002/58"
-  - "EU-2015/847"
-  - "EU-2015/849"
-  - "EU-2019/1150"
-  - "EU-2019/1152"
-  - "EU-2019/1937"
-  - "EU-2019/2161"
-  - "EU-2019/770"
-  - "EU-2019/771"
-  - "EU-2022/1925"
-  - "EU-2022/2065"
-  - "EU-2022/2554"
-  - "EU-2022/2555"
-  - "EU-2022/868"
   - "EU-Intrastat-Reg-2019/2152"
   - "EU-Taxonomy-2020/852"
   - "GDPR Art.30 records-of-processing-activities"
@@ -71,42 +39,8 @@ standards:
   - "US-GAAP ASC-715 compensation-retirement-benefits"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - adjustments
-    - balance
-    - centers
-    - close
-    - employees
-    - entries
-    - entry
-    - give
-    - horo
-    - identity
-    - party
-    - privilege
-    - proof
-    - runs
-    - transaction
-  matrix:
-    - accounting
-    - accounts
-    - mandates
-    - proof
-    - runs
-    - standard
-    - transaction
-  backlinks:
-    - accounting
-    - accounts
-    - mandates
-    - proof
-    - runs
-    - standard
-    - transaction
 signatures:
-  computationUuid: "5dc9e6f5-a321-8f1a-8bc4-2f39eb56ea22"
+  computationUuid: "24c1d0a2-c0a0-861e-bc2b-5252049e2048"
   stages:
     - stage: path
       stageUuid: "e00cdde0-106c-8683-98dd-e7a809314746"
@@ -115,13 +49,13 @@ signatures:
     - stage: boundary
       stageUuid: "a946f220-84a7-87f8-bbab-6129dd56d4cc"
     - stage: links
-      stageUuid: "dc485665-41d9-8d5c-a6f4-57fd5be60fe6"
+      stageUuid: "e65d3a74-f07b-85eb-b577-77f53726efe4"
     - stage: horo
-      stageUuid: "4f116aee-2f40-86a9-aefc-ae31308dd48f"
+      stageUuid: "f57aed79-79e0-8b3b-873e-99194181e1dd"
     - stage: seal
       stageUuid: "74143566-4348-8b45-a1d7-072cfcf61520"
     - stage: uuid
-      stageUuid: "b00cd22e-4194-8210-9551-e2684d894887"
+      stageUuid: "d1aa7a72-8778-84b6-9749-091d1537b6dd"
 version: 2
 ---
 # payroll-runs

@@ -1,53 +1,35 @@
 ---
 name: diagram
-description: Use when reasoning about diagram — An image containing a diagram that illustrates the structure and/or its component substructures and/or connections with other structures.
-atomPath: vocabulary/diagram
-coordinate: diagram · 7/descent · bf5ff598
-contentUuid: "94ce95e8-5a12-595b-acfd-c2cc28a0ff46"
-diamondUuid: "7e7e66d8-9090-8224-8ba8-246ecb295ca2"
-uuid: "bf5ff598-df68-8195-8c35-93243df50bc9"
-horo: 7
-bonds:
-  in:
-    - creative
-    - law
-  out:
-    - creative
-    - law
+description: "Use when reasoning about diagram — An image containing a diagram that illustrates the structure and/or its component substructures and/or connections with other structures."
+atomPath: "vocabulary/diagram"
+coordinate: "vocabulary/diagram · 5/round · 70b9f9ca"
+contentUuid: "f6e886e3-ec35-5c46-834e-d7f0f5b904e4"
+diamondUuid: "c1bde3d7-ec7a-80ed-ad10-ec87cc27828d"
+uuid: "70b9f9ca-c7b9-86d8-80a5-763d75fcda38"
+horo: 5
 typography:
-  partition: diagram
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - creative
-    - law
-  matrix:
-    - creative
-    - law
-  backlinks:
-    - creative
-    - law
 signatures:
-  computationUuid: "1993f4c1-9beb-8fc0-be19-4ef46e946854"
+  computationUuid: "479b93c8-5f5a-8635-a99b-44fd2f7edacf"
   stages:
     - stage: path
-      stageUuid: "a3437a6c-869a-84fe-b571-0b23482708e2"
+      stageUuid: "8936e535-debc-8de6-a000-1742da2304b6"
     - stage: trinity
-      stageUuid: "64d77c19-e9fe-8263-b432-c8176e1d0978"
+      stageUuid: "564e1b99-87fd-8d27-a61c-7e7d5ebf6740"
     - stage: boundary
-      stageUuid: "ae74267a-61b4-8de4-bdb4-3fbb7aa98451"
+      stageUuid: "a533024c-1d67-8f63-bd53-df74bd268776"
     - stage: links
-      stageUuid: "aaaf01ac-8121-8659-8b4e-a6f98c07ae1a"
+      stageUuid: "77ddeac1-31f9-8088-8ce7-1dc0a0687657"
     - stage: horo
-      stageUuid: "c9cbfb80-4274-8f78-9e22-c2c638d453b6"
+      stageUuid: "456423bc-05f6-87de-88ec-66c4a05a02a0"
     - stage: seal
-      stageUuid: "fba73c18-1ddf-8e1a-9a86-39511e38e7a7"
+      stageUuid: "3f32bb59-9eb0-818f-9944-d9fb9ea0b074"
     - stage: uuid
-      stageUuid: "62ad743e-8500-8fca-ab85-3a020bed7699"
+      stageUuid: "c100d9bb-deed-8f06-a6d3-a5b6282594c5"
 version: 2
 ---
 # diagram

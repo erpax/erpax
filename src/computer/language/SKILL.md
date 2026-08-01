@@ -2,67 +2,19 @@
 name: language
 description: "Use when reasoning about language as a hardware facet of [[computer]] — vocabulary pivot to @/language; nested not duplicated."
 atomPath: "computer/language"
-coordinate: "computer/language · 2/share · e005ea65"
-contentUuid: "9c0cff94-ea7c-54d0-be26-f39e31407250"
-diamondUuid: "20e91ea9-5f0c-88c1-bb08-3f22dca59c9d"
-uuid: "e005ea65-0248-83a1-8129-0bed17b584e1"
-horo: 2
-bonds:
-  in:
-    - available
-    - computer
-    - knows
-    - language
-    - law
-    - merge
-    - programming
-    - subtitle
-    - translator
-  out:
-    - available
-    - computer
-    - knows
-    - language
-    - law
-    - merge
-    - programming
-    - subtitle
-    - translator
+coordinate: "computer/language · 5/round · 3e2e274a"
+contentUuid: "596eb0fa-d200-5b0c-8f0e-682f8e9d5a0b"
+diamondUuid: "2ff1a24e-1dc0-842f-9935-441c8a12eb64"
+uuid: "3e2e274a-676e-8acf-a9ad-02821e86db0d"
+horo: 5
 typography:
   partition: computer
   bondDegree: 35
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - computer
-    - language
-    - law
-    - merge
-  matrix:
-    - available
-    - computer
-    - knows
-    - language
-    - law
-    - merge
-    - programming
-    - subtitle
-    - translator
-  backlinks:
-    - available
-    - computer
-    - knows
-    - language
-    - law
-    - merge
-    - programming
-    - subtitle
-    - translator
 signatures:
-  computationUuid: "d0d299a9-1a02-8525-9b55-8d00b3ae0dcb"
+  computationUuid: "2383d9ec-fd9e-8df0-8c93-71f5a560852c"
   stages:
     - stage: path
       stageUuid: "5016144a-3b8d-873d-ad67-7615c5ca2a4c"
@@ -73,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "43d5fb8a-e8a3-8739-a828-5e970f11ffb0"
     - stage: horo
-      stageUuid: "00bc3e0f-43f3-845e-89e6-1a8cc7216d2d"
+      stageUuid: "36e293a4-40e9-82d5-b7af-d633a402c515"
     - stage: seal
       stageUuid: "25c83719-04b1-84da-bf16-7564d4357334"
     - stage: uuid
-      stageUuid: "dbd4ce3f-3bd4-8c4d-bb72-f516d4e2d74a"
+      stageUuid: "be307452-fe53-85de-ba4d-eaed51ed5f55"
 version: 2
 ---
 # computer/language — hardware facet

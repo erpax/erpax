@@ -1,68 +1,35 @@
 ---
 name: bike
 description: "Use when reasoning about bike as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/bike
-coordinate: bike · 2/share · ddd69e70
-contentUuid: "e5c07c46-8858-5c9b-a000-ef9fe4765b63"
-diamondUuid: "734c3e67-474e-8161-a472-ec3558e661ef"
-uuid: "ddd69e70-f023-8fef-8acd-313930a1f5f4"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
+atomPath: "vocabulary/bike"
+coordinate: "vocabulary/bike · 5/round · 8596dc1c"
+contentUuid: "3b44dea5-09b4-5b2a-be38-b64cc39436b5"
+diamondUuid: "32becd5c-ae7e-8c01-998e-e136fd3a33a4"
+uuid: "8596dc1c-471b-8ab7-9e51-e048153c5e8b"
+horo: 5
 typography:
-  partition: bike
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
 signatures:
-  computationUuid: "3f9a2b5c-689a-827f-bb1c-bcdb1206c4cd"
+  computationUuid: "11a4408b-a5e5-87fe-a88d-813177244956"
   stages:
     - stage: path
-      stageUuid: "0da43fcd-75fd-8722-8bc7-6e7b656aaddd"
+      stageUuid: "6503d226-a17d-8f6f-8b98-27062ea48348"
     - stage: trinity
-      stageUuid: "348d88f0-f0e6-86a4-8156-4f579b47bee2"
+      stageUuid: "701ab8c0-be86-8278-bb5d-fe6a9ea29a1e"
     - stage: boundary
-      stageUuid: "21381551-0842-8724-93fc-9995bd947a4a"
+      stageUuid: "6e8e8deb-1f5e-8b3c-b70e-a0eb5f1e96eb"
     - stage: links
-      stageUuid: "9cdcbc44-c2a3-842e-bab9-75e3f75ae175"
+      stageUuid: "79e7deb7-1eb0-8fc3-b730-ffed1da444c1"
     - stage: horo
-      stageUuid: "512bb270-94fb-8408-ad9d-cba830a2a8c3"
+      stageUuid: "e9c1c9bf-481d-88c3-bb7f-48f791ef15eb"
     - stage: seal
-      stageUuid: "58973119-bbb5-8783-b611-bdc21c51532a"
+      stageUuid: "3920d2ac-9a15-808d-8dd4-9fb0bc6418fc"
     - stage: uuid
-      stageUuid: "46d93fc9-7194-8ea4-8a10-417411be36a7"
+      stageUuid: "b6908f01-0300-86f3-8c08-d2027d4f6f57"
 version: 2
 ---
 # bike

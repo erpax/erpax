@@ -1,78 +1,35 @@
 ---
 name: release
 description: Use when reasoning about release — The album this is a release of.
-atomPath: vocabulary/release
-coordinate: release · 5/round · ac76b3f1
-contentUuid: "7d231c24-978d-54c6-adc3-f64b62bf91ca"
-diamondUuid: "977a5956-1ba9-8cc0-97eb-6ce97b26af8d"
-uuid: "ac76b3f1-21da-81c7-a03e-9b20d369d4c5"
-horo: 5
-bonds:
-  in:
-    - album
-    - date
-    - format
-    - law
-    - music
-    - notes
-    - type
-  out:
-    - album
-    - date
-    - format
-    - law
-    - music
-    - notes
-    - type
+atomPath: "vocabulary/release"
+coordinate: "vocabulary/release · 2/share · bf117c09"
+contentUuid: "94fcf7c7-8c24-53f2-9093-aba03d0e2abb"
+diamondUuid: "e4b3a907-3957-81b6-b2a9-faa662178e48"
+uuid: "bf117c09-63f3-8be3-9a7d-8b57b1c775d8"
+horo: 2
 typography:
-  partition: release
+  partition: vocabulary
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - album
-    - date
-    - format
-    - law
-    - music
-    - notes
-    - type
-  matrix:
-    - album
-    - date
-    - format
-    - law
-    - music
-    - notes
-    - type
-  backlinks:
-    - album
-    - date
-    - format
-    - law
-    - music
-    - notes
-    - type
 signatures:
-  computationUuid: "7b72a694-2775-8d1e-bd36-a07e4efead0b"
+  computationUuid: "39720db6-f382-8801-90a6-adc7ac66b64a"
   stages:
     - stage: path
-      stageUuid: "53c972eb-9f21-8a04-b4d3-f51134f74ea4"
+      stageUuid: "2033dadb-1a54-8230-b1c5-e6da7aa95c2f"
     - stage: trinity
-      stageUuid: "cd6ee91e-7069-8caa-b41e-a141861f12e4"
+      stageUuid: "7caf739e-694f-89e8-9d8e-3e3b78dd6fc2"
     - stage: boundary
-      stageUuid: "4792d871-f31a-83d7-ad6e-bfc8fdef3e78"
+      stageUuid: "95c5a045-aa48-80a1-be30-c37adb5a4274"
     - stage: links
-      stageUuid: "be034a73-1864-8663-906f-564d282ea02d"
+      stageUuid: "242fb924-ae66-8814-b9f3-17e232e8638b"
     - stage: horo
-      stageUuid: "617951d8-68f9-8ced-8b34-f0b1a1b9df9d"
+      stageUuid: "9fbffb00-5846-83b7-a967-b03b8314a9b6"
     - stage: seal
-      stageUuid: "d0d01255-6489-8fa8-8e9d-6359702005bb"
+      stageUuid: "02253cec-e12f-8237-ab75-b7d7e94f45f6"
     - stage: uuid
-      stageUuid: "1bf5ccac-15b7-8817-aef7-eba430d901f6"
+      stageUuid: "d0606106-fa84-83ae-820f-86263f53e996"
 version: 2
 ---
 # release

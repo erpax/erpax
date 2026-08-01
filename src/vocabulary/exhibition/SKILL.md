@@ -1,68 +1,35 @@
 ---
 name: exhibition
 description: "Use when reasoning about exhibition as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/exhibition
-coordinate: exhibition · 4/weave · a2fad522
-contentUuid: "a8acc3d1-dc34-56f1-b2d7-c70fd40b596b"
-diamondUuid: "d223b5fa-010b-847c-9023-3906f09821c0"
-uuid: "a2fad522-a45c-8b01-a1af-7e72905aeedd"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/exhibition"
+coordinate: "vocabulary/exhibition · 8/crest · e0a17be5"
+contentUuid: "305ec3f6-57dc-5dcf-8d4f-11bae8f85635"
+diamondUuid: "4e81f11a-7080-84ee-8f13-f049de8cc3b5"
+uuid: "e0a17be5-5037-8645-b120-aafa1acc8059"
+horo: 8
 typography:
-  partition: exhibition
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "54a0db37-815f-8074-bbad-5b7e0f093ea5"
+  computationUuid: "0fcf9fe1-e96d-8817-b45a-901a99839fad"
   stages:
     - stage: path
-      stageUuid: "1746d4eb-4654-88c2-ab2b-26ebb6ae39cd"
+      stageUuid: "e6e59958-3f07-8ea0-a5e2-387647fad2b2"
     - stage: trinity
-      stageUuid: "fff3f4c7-35d1-80dc-b373-20c51f1d89fc"
+      stageUuid: "7950e88a-d37b-8c24-a5ec-d7dcb9ae9cf9"
     - stage: boundary
-      stageUuid: "9aca6861-d2b0-8160-90de-dc6475969f97"
+      stageUuid: "2b27b147-57cd-883c-97bd-1a3d27c6cb4f"
     - stage: links
-      stageUuid: "e900f06c-c5e0-8c87-906e-24b244a9025f"
+      stageUuid: "726ee3c7-79b0-85e1-99d9-439c415d5301"
     - stage: horo
-      stageUuid: "0a95e35c-19ca-8bc2-a2ee-7ae081d92263"
+      stageUuid: "cad7077e-8dbb-83fb-8d92-face65683445"
     - stage: seal
-      stageUuid: "a81f1dbb-a0cc-8acf-9549-fac08f976c45"
+      stageUuid: "07a72fd3-b748-8afb-872b-e0951b3239b7"
     - stage: uuid
-      stageUuid: "5886567a-9a4a-8b95-b37b-f502efc03e7a"
+      stageUuid: "2d731892-3b5d-8868-b134-ec430ba29e1a"
 version: 2
 ---
 # exhibition

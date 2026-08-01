@@ -1,68 +1,35 @@
 ---
 name: middle
 description: "Use when reasoning about middle as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/middle
-coordinate: middle · 7/descent · ad08631d
-contentUuid: "8006fb75-237f-5a27-a452-60f83c3ba5c1"
-diamondUuid: "b2889cec-e5a8-87c1-afde-264aba24fa29"
-uuid: "ad08631d-807c-8e6d-aa56-b7b764735eaf"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - school
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - school
-    - sti
+atomPath: "vocabulary/middle"
+coordinate: "vocabulary/middle · 4/weave · 43afdd6b"
+contentUuid: "cb475665-dd32-5200-94f7-56dbf3ff2dcc"
+diamondUuid: "b980ec8e-8e47-84fb-9dc1-ce11646363e5"
+uuid: "43afdd6b-a22b-88ae-9795-d24fadc63897"
+horo: 4
 typography:
-  partition: middle
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - school
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - school
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - school
-    - sti
 signatures:
-  computationUuid: "c2ccd762-c24e-88e0-a2ec-1e0a8cb3fec0"
+  computationUuid: "7ca080d4-74a3-80d9-8d79-674bbf414e8a"
   stages:
     - stage: path
-      stageUuid: "247f8cf6-57b5-8ef9-b8d5-b8f733d4e4c6"
+      stageUuid: "7fd36690-bca6-86a5-9f33-48d54b787e5f"
     - stage: trinity
-      stageUuid: "f2548d85-d252-8739-a186-17a1efc2ff11"
+      stageUuid: "7cbe39e5-6a9e-84f8-90c5-a17df3097f3c"
     - stage: boundary
-      stageUuid: "b9961d1e-c2f0-823e-9f6f-6707b4da7813"
+      stageUuid: "ba545a71-d10e-8158-97b3-8a857c912f5c"
     - stage: links
-      stageUuid: "4246b9d3-4d70-8dcc-9860-b00bd8344ad5"
+      stageUuid: "c603be47-6376-85d4-86e8-44992cc4a4cd"
     - stage: horo
-      stageUuid: "e3b72eda-1bc1-8bcd-888f-8886793da48a"
+      stageUuid: "56c4ba96-2d92-8c2f-80a4-51b6dedd0a97"
     - stage: seal
-      stageUuid: "af65ff04-73b1-8281-b5e6-5615e4921819"
+      stageUuid: "6b5402cd-6414-8d1b-9051-ecf367e6deb0"
     - stage: uuid
-      stageUuid: "50255d84-858a-800b-9943-85d1c4e2eb4e"
+      stageUuid: "8dd23623-7af5-8cf5-bce0-65bbfda2f332"
 version: 2
 ---
 # middle

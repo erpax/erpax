@@ -1,68 +1,35 @@
 ---
 name: medicine
 description: "Use when reasoning about medicine as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/medicine
-coordinate: medicine · 5/round · 59728f22
-contentUuid: "079565ac-e8ae-540b-b93a-24b972c389d8"
-diamondUuid: "5a3d133d-66c2-8b9c-a12b-05afc67686f2"
-uuid: "59728f22-4535-8379-80a1-d81743975cc9"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - system
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - system
+atomPath: "vocabulary/medicine"
+coordinate: "vocabulary/medicine · 1/base · e98b64b1"
+contentUuid: "8d425608-7ddd-5368-9b1f-f0120549e08b"
+diamondUuid: "d0cd21a5-70ef-8df8-a933-b76078becf87"
+uuid: "e98b64b1-5b98-85bb-975a-ea323b0e4c94"
+horo: 1
 typography:
-  partition: medicine
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - system
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - system
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - system
 signatures:
-  computationUuid: "0662e825-9872-8724-bb7f-5d8151356bf0"
+  computationUuid: "15e7a62d-b61e-82eb-9613-0b3f21581e61"
   stages:
     - stage: path
-      stageUuid: "d8e7ea79-59e7-89ec-af44-e60fcac0d96e"
+      stageUuid: "5a6a0212-5043-8159-a172-448bbfd0d7f1"
     - stage: trinity
-      stageUuid: "f7a017c9-6bc1-8cbf-8a8c-5764c774ba9a"
+      stageUuid: "126fc820-25e1-8c40-9107-e1ceb72ff6a1"
     - stage: boundary
-      stageUuid: "606a9dbe-6211-8cd2-a1aa-882add548580"
+      stageUuid: "070f9f29-b492-8d2a-a1c8-b30b9238a191"
     - stage: links
-      stageUuid: "866f491e-e86e-8949-af4e-9999a545e249"
+      stageUuid: "92b52091-dce6-8490-b627-9c52eea05420"
     - stage: horo
-      stageUuid: "b946cf87-85e0-8fc3-9c78-b2a209127d1b"
+      stageUuid: "d70eb5a5-1879-818c-bc19-75891cbb974c"
     - stage: seal
-      stageUuid: "d4c68a47-0672-837f-b9cf-d1046435deb6"
+      stageUuid: "320b7ed3-6521-8d7b-92cc-6c6ca49cbb9c"
     - stage: uuid
-      stageUuid: "096c866b-9d3f-8d1b-aee7-ba6dd3fe42b5"
+      stageUuid: "b6ebdb90-b43c-8a51-9220-0ac69071749b"
 version: 2
 ---
 # medicine

@@ -1,57 +1,35 @@
 ---
 name: mentions
 description: "Use when reasoning about mentions — Indicates that the CreativeWork contains a reference to, but is not necessarily about a concept."
-atomPath: vocabulary/mentions
-coordinate: mentions · 7/descent · 7e53ba62
-contentUuid: "c3a071f8-7360-5943-b2c7-be56efe830ee"
-diamondUuid: "2823779b-cbf8-8145-bf66-291fd3fd5d10"
-uuid: "7e53ba62-4b68-8f70-98c5-909f2cb8ff8a"
-horo: 7
-bonds:
-  in:
-    - law
-    - mention
-    - thing
-  out:
-    - law
-    - mention
-    - thing
+atomPath: "vocabulary/mentions"
+coordinate: "vocabulary/mentions · 4/weave · bd553beb"
+contentUuid: "006f4d2c-b129-5fba-b383-412f8a3ec36d"
+diamondUuid: "2e1bea74-2163-8f40-af5c-da68015cfe4b"
+uuid: "bd553beb-3691-8721-9979-097e7faa064d"
+horo: 4
 typography:
-  partition: mentions
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - mention
-    - thing
-  backlinks:
-    - law
-    - mention
-    - thing
 signatures:
-  computationUuid: "55782803-07e8-8956-93da-57f5180e9240"
+  computationUuid: "b27b1f3d-2cdb-8512-bebe-3c6ac35eb687"
   stages:
     - stage: path
-      stageUuid: "90835f32-92b9-8229-aec6-062267299436"
+      stageUuid: "14e9f0d5-80ee-873b-961e-5c0406ff7b6f"
     - stage: trinity
-      stageUuid: "862e2099-67f5-86f3-a360-033b5809fc19"
+      stageUuid: "57401bfa-d299-8efd-93df-83a3a66e2be9"
     - stage: boundary
-      stageUuid: "beb709c6-4b7b-805f-898e-bd8c37c33051"
+      stageUuid: "c303163e-3afc-86c8-aacc-951b76794dd0"
     - stage: links
-      stageUuid: "a92b3555-1576-8b57-a077-6cd7c285d413"
+      stageUuid: "bfd0bbe2-5c81-897a-b772-964be6719cf5"
     - stage: horo
-      stageUuid: "9f43b8ae-b085-88f1-acd0-da5f08498d51"
+      stageUuid: "542829b8-802c-8eaa-9c69-001b701db0fe"
     - stage: seal
-      stageUuid: "6b411adb-5123-832b-8f27-d2a3dcedb85b"
+      stageUuid: "d89e9f48-a520-80c9-a22d-fd8ea71a4608"
     - stage: uuid
-      stageUuid: "c6f2262a-9416-81a5-a382-f185e44ae41a"
+      stageUuid: "cabfb4e5-420b-8c16-affd-1f8429d04626"
 version: 2
 ---
 # mentions

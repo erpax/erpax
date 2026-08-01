@@ -77,7 +77,7 @@ export const API = {
  * Longer keys first when applying.
  *
  * Sense split agents must not confuse:
- *   - `physicalFtl()` (parent) computes substrate FTL boolean on QPU=CPU/GPU — not prose.
+ *   - `ftlReport().holds` (parent) computes substrate FTL boolean on QPU=CPU/GPU — not prose.
  *   - CrackKind `spacetime` = relativistic break (breaks holds) — compute via `ftl`/`boundary`.
  *   - `qpuRequired` / `claimsQpu` → CrackKind `qpu` (exotic-device claim — breaks holds;
  *     the host QPU is CPU/GPU, so requiring another device is the crack).
@@ -124,8 +124,8 @@ export const RENAME = {
 
 /**
  * Prose syllables that never map to a Token fold — scan fuel.
- * `physicalFtl` is the computing API on the parent (not a RENAME alias).
- * `quantumise` is tip kind when physicalFtl()===false — not an identifier syllable here.
+ * `ftlHolds` is the computing API on the parent (not a RENAME alias).
+ * `quantumise` is tip kind when ftlReport().holds===false — not an identifier syllable here.
  */
 export const PROSE = [
   'honest',

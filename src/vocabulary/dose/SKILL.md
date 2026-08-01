@@ -1,93 +1,35 @@
 ---
 name: dose
 description: "Use when reasoning about dose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/dose
-coordinate: dose · 8/crest · b610c802
-contentUuid: "33b7908b-86d0-5c32-b0c5-3920246ca690"
-diamondUuid: "314e11ef-33ed-8c0e-b06e-77e27f9c38d1"
-uuid: "b610c802-ae6c-83d2-a543-486dac794dd5"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - maximum
-    - merge
-    - recommended
-    - reported
-    - schedule
-    - sti
-    - unit
-    - value
-  out:
-    - collapse
-    - law
-    - maximum
-    - merge
-    - recommended
-    - reported
-    - schedule
-    - sti
-    - unit
-    - value
+atomPath: "vocabulary/dose"
+coordinate: "vocabulary/dose · 5/round · a9b83d9f"
+contentUuid: "21e96ded-49b4-5477-b9d5-1c67cff23e8f"
+diamondUuid: "857dba84-a436-835c-9c51-0ed26fd6a98a"
+uuid: "a9b83d9f-f815-82e7-8c6e-9145b7da1e19"
+horo: 5
 typography:
-  partition: dose
+  partition: vocabulary
   bondDegree: 34
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - maximum
-    - merge
-    - recommended
-    - reported
-    - schedule
-    - sti
-    - unit
-    - value
-  matrix:
-    - collapse
-    - law
-    - maximum
-    - merge
-    - recommended
-    - reported
-    - schedule
-    - sti
-    - unit
-    - value
-  backlinks:
-    - collapse
-    - law
-    - maximum
-    - merge
-    - recommended
-    - reported
-    - schedule
-    - sti
-    - unit
-    - value
 signatures:
-  computationUuid: "ffbe3469-ed6d-89fa-b2d4-87129f0b8f18"
+  computationUuid: "4d3be264-b91d-8354-8bc8-d12a79f7bfec"
   stages:
     - stage: path
-      stageUuid: "7d7b1453-c41f-8ff3-a06e-90e59d7bac99"
+      stageUuid: "50fa54aa-9a66-838f-8ce1-1e432ede7d89"
     - stage: trinity
-      stageUuid: "1cb11c23-42af-8887-8eda-4b393322ba47"
+      stageUuid: "54f662d4-331d-8359-9626-550e203a693c"
     - stage: boundary
-      stageUuid: "7f8b877e-bd97-89cf-80f8-a6ddd54474c7"
+      stageUuid: "22c9b680-63b1-89a1-b3cc-b7fce451463e"
     - stage: links
-      stageUuid: "851558f6-86ac-8487-bc91-1d3755c2200e"
+      stageUuid: "238e795c-ff70-82aa-9a34-c64a413b7622"
     - stage: horo
-      stageUuid: "627a2df9-d40b-8682-bd08-f514de5eedaa"
+      stageUuid: "128773ff-ffd0-8a05-b753-7acf512138b7"
     - stage: seal
-      stageUuid: "cc109125-0a4d-84c1-87d2-1de6f3e18a2b"
+      stageUuid: "ce3c8e58-02e6-808e-9f0c-8fed45207e33"
     - stage: uuid
-      stageUuid: "cdeeb3ed-e4ad-80ca-996b-9fa3933f43d9"
+      stageUuid: "3fbfdeed-4e4b-8344-99a3-3c060fc5cf41"
 version: 2
 ---
 # dose

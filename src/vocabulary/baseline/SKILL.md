@@ -1,107 +1,34 @@
 ---
 name: baseline
 description: "Use when reasoning about baseline — A **baseline** is the real-data INPUT a model fits to — for example an efficiency distribution measured across observed shifts. It is the **data, not the calibration**: the calibra"
-atomPath: vocabulary/baseline
-coordinate: baseline · 8/crest · 156cb177
-contentUuid: "23bf7416-536a-51a1-b575-f1eed7833876"
-diamondUuid: "9d765c83-ab5d-81d6-93b8-674c46fa128f"
-uuid: "156cb177-8811-8ac3-88ed-214ff5fb0b38"
-horo: 8
-bonds:
-  in:
-    - akashic
-    - allocation
-    - calculate
-    - decompression
-    - derive
-    - empirical
-    - horo
-    - lineage
-    - manufacturing
-    - measure
-    - rodin
-    - sampling
-    - source
-  out:
-    - akashic
-    - allocation
-    - calculate
-    - decompression
-    - derive
-    - empirical
-    - horo
-    - lineage
-    - manufacturing
-    - measure
-    - rodin
-    - sampling
-    - source
+atomPath: "vocabulary/baseline"
+coordinate: "vocabulary/baseline · 2/share · 9fcb0178"
+contentUuid: "aa29d227-30fb-55d5-8be7-f57223eae361"
+diamondUuid: "a44e30c0-5afc-8cec-8172-0fb6f2692bf2"
+uuid: "9fcb0178-a93b-8df4-8fa1-3fe0b0fb0d52"
+horo: 2
 typography:
-  partition: baseline
+  partition: vocabulary
   bondDegree: 40
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - allocation
-    - calculate
-    - decompression
-    - derive
-    - empirical
-    - horo
-    - lineage
-    - manufacturing
-    - measure
-    - rodin
-    - sampling
-    - source
-  matrix:
-    - akashic
-    - allocation
-    - calculate
-    - decompression
-    - derive
-    - empirical
-    - horo
-    - lineage
-    - manufacturing
-    - measure
-    - rodin
-    - sampling
-    - source
-  backlinks:
-    - akashic
-    - allocation
-    - calculate
-    - decompression
-    - derive
-    - empirical
-    - horo
-    - lineage
-    - manufacturing
-    - measure
-    - rodin
-    - sampling
-    - source
 signatures:
-  computationUuid: "c6642f3f-61d0-8cc2-8308-8fd0e9f4a1e3"
+  computationUuid: "9e974ee8-df1d-87ae-b017-3fdb0eac3cbb"
   stages:
     - stage: path
-      stageUuid: "e91d0ccc-bcb4-82cd-92a1-91579a4c5808"
+      stageUuid: "ba4f60de-fff5-8bba-bf7b-a91573b10ca4"
     - stage: trinity
-      stageUuid: "3f438d6e-766f-83c3-87f4-278bb8a893a0"
+      stageUuid: "ec3bfc40-769c-838c-a083-af4dae76515b"
     - stage: boundary
-      stageUuid: "b2d82659-0b2f-80d3-8097-f516bece40e7"
+      stageUuid: "b886a231-6688-8da3-a18d-ef79384cc1c3"
     - stage: links
-      stageUuid: "d91ca300-536b-8cef-964d-a6407f3ff441"
+      stageUuid: "651e4b8e-5d02-8ebe-868e-322e21b7c59a"
     - stage: horo
-      stageUuid: "794d4b62-fb7b-8f81-ab09-f87378b4966d"
+      stageUuid: "2eab81a3-9296-8f87-93f7-3f7fbfbd00bd"
     - stage: seal
-      stageUuid: "61c44c64-4c7b-86bd-a492-067119cf6b57"
+      stageUuid: "258bbb79-8b39-847c-8535-b798825e0084"
     - stage: uuid
-      stageUuid: "daf99409-e978-8f6f-b7f6-f03494ac2239"
+      stageUuid: "843ddef4-d7f6-8063-a0eb-72087c388e95"
 version: 2
 ---
 # baseline — the measured reference a calibration is computed from

@@ -1,114 +1,19 @@
 ---
 name: emr
 description: "Use when reasoning about the electronic medical record as a quantum snapshot chain — a patient's health state captured as content-addressed, immutable, append-only encounters and observations, nesting layer after layer, never erased so the full history stays reversible and tamper-evident."
-atomPath: quantum/emr
-coordinate: quantum/emr · 1/base · c22b875a
-contentUuid: "1761e028-ced0-5135-8f50-514d7a0898d5"
-diamondUuid: "368f6322-08e9-8dba-a04b-1c85115eb3a4"
-uuid: "c22b875a-c14f-8451-a808-1ceac3bfb7f8"
-horo: 1
-bonds:
-  in:
-    - akashic
-    - analog
-    - biometric
-    - device
-    - diagnosis
-    - finality
-    - health
-    - law
-    - monitor
-    - observation
-    - patient
-    - quantum
-    - readings
-    - record
-    - reverse
-    - snapshot
-    - tamper
-    - uuid
-    - vital
-  out:
-    - akashic
-    - analog
-    - biometric
-    - device
-    - diagnosis
-    - finality
-    - health
-    - law
-    - monitor
-    - observation
-    - patient
-    - readings
-    - record
-    - reverse
-    - snapshot
-    - tamper
-    - uuid
-    - vital
+atomPath: "quantum/emr"
+coordinate: "quantum/emr · 2/share · fdea25ac"
+contentUuid: "d9930ed5-fe93-5313-8bd2-6a2942e34273"
+diamondUuid: "ec042bdb-ecd2-8393-bdc8-3567bc09332c"
+uuid: "fdea25ac-fc3e-8f8c-9bc6-ea33c2aa989e"
+horo: 2
 typography:
   partition: quantum
   bondDegree: 60
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - analog
-    - diagnosis
-    - finality
-    - health
-    - law
-    - observation
-    - patient
-    - record
-    - reverse
-    - snapshot
-    - tamper
-    - uuid
-    - vital
-  matrix:
-    - akashic
-    - analog
-    - biometric
-    - device
-    - diagnosis
-    - finality
-    - health
-    - law
-    - monitor
-    - observation
-    - patient
-    - readings
-    - record
-    - reverse
-    - snapshot
-    - tamper
-    - uuid
-    - vital
-  backlinks:
-    - akashic
-    - analog
-    - biometric
-    - device
-    - diagnosis
-    - finality
-    - health
-    - law
-    - monitor
-    - observation
-    - patient
-    - readings
-    - record
-    - reverse
-    - snapshot
-    - tamper
-    - uuid
-    - vital
 signatures:
-  computationUuid: "0244f505-ca0d-8a71-976a-8854e91ee61c"
+  computationUuid: "4b387efc-5917-821d-8ebb-a429aca29b05"
   stages:
     - stage: path
       stageUuid: "ec99e960-190c-8ced-a8a5-5b79cc1f7f0b"
@@ -117,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "83bae5f7-1363-8021-bd75-974003af46f7"
     - stage: links
-      stageUuid: "cd2643b8-830f-872f-bc15-ce402a7c81fc"
+      stageUuid: "0336ccc4-fb6f-875a-a8c4-91081b0ea10a"
     - stage: horo
-      stageUuid: "311dfbe2-4a46-81a5-aa12-84cb31b94d75"
+      stageUuid: "b6bfbfbd-4c08-82d9-a2d6-07d95b8de44c"
     - stage: seal
       stageUuid: "c4596230-70d3-8c75-a5a2-332349f60434"
     - stage: uuid
-      stageUuid: "c59c8884-3e44-8297-9789-fbe026f0644b"
+      stageUuid: "8e6f0e5c-a9c3-8e5c-960d-9ff98631b666"
 quantum:
   superposition:
     - akashic
@@ -155,8 +60,8 @@ quantum:
     canonicalRecord: true
     analogResults: true
     speechResults: false
-    computationUuid: "0244f505-ca0d-8a71-976a-8854e91ee61c"
-    contentUuid: "1761e028-ced0-5135-8f50-514d7a0898d5"
+    computationUuid: "4b387efc-5917-821d-8ebb-a429aca29b05"
+    contentUuid: "d9930ed5-fe93-5313-8bd2-6a2942e34273"
 version: 2
 ---
 # quantum/emr — the health-state snapshot chain
@@ -171,4 +76,4 @@ The layers nest: the [[record]] is a snapshot of encounters, each a snapshot of 
 
 @see [[patient]] · [[health]] · [[observation]] · [[vital]] · [[analog]] · [[record]] · [[snapshot]] · [[uuid]] · [[finality]] · [[akashic]]
 
-<sub>content-uuid `1761e028-ced0-5135-8f50-514d7a0898d5` · account `quantum/emr` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `d9930ed5-fe93-5313-8bd2-6a2942e34273` · account `quantum/emr` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

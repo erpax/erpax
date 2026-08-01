@@ -1,58 +1,35 @@
 ---
 name: canal
 description: "Use when reasoning about canal — A canal, like the Panama Canal."
-atomPath: vocabulary/canal
-coordinate: canal · 7/descent · bd838331
-contentUuid: "b404c80f-886b-563d-9a55-d8dfddd13306"
-diamondUuid: "ad11ec4d-a299-84f4-9b6f-cf69dbfa2849"
-uuid: "bd838331-54ea-80d6-b31a-2eb3389a2d31"
-horo: 7
-bonds:
-  in:
-    - law
-    - place
-    - thing
-  out:
-    - law
-    - place
-    - thing
+atomPath: "vocabulary/canal"
+coordinate: "vocabulary/canal · 8/crest · e352e324"
+contentUuid: "f8d29252-b536-501d-b230-88292ecf5e47"
+diamondUuid: "732a8273-1f29-82db-93e1-d6331ad7ee18"
+uuid: "e352e324-32f2-8168-b542-bef37c8735c8"
+horo: 8
 typography:
-  partition: canal
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - place
-    - thing
-  matrix:
-    - law
-    - place
-    - thing
-  backlinks:
-    - law
-    - place
-    - thing
 signatures:
-  computationUuid: "6fc3a369-67b5-8831-8b32-c66a6cdd0611"
+  computationUuid: "718ea6f2-4fe9-8afa-be2d-14a52e2439ad"
   stages:
     - stage: path
-      stageUuid: "e62374c3-103f-8fe3-a6bc-7f69b7854c4d"
+      stageUuid: "07972cfa-bd58-8987-8b91-82d147ddb8cb"
     - stage: trinity
-      stageUuid: "ff7d20ae-c53c-8a81-81ff-1f6e3f333347"
+      stageUuid: "13919f4f-d59a-838f-a64e-ea2323e1308b"
     - stage: boundary
-      stageUuid: "70eea843-8b90-8709-9d04-135195becc0d"
+      stageUuid: "efdfc55a-6f1e-8c04-9385-ad8a0974dd6c"
     - stage: links
-      stageUuid: "3238a07c-9d88-8379-9856-29cdaf7fb94b"
+      stageUuid: "48a33840-33b8-805e-a5f9-347e09b41b4a"
     - stage: horo
-      stageUuid: "3289a85f-6435-8867-9ff7-27add5117c72"
+      stageUuid: "24c9da2f-63cd-811f-b19d-df104d8adb99"
     - stage: seal
-      stageUuid: "dbdca5e0-e181-85e7-89ca-c09093785d1c"
+      stageUuid: "d7acafbf-68d0-850a-953a-8cc493ab24ff"
     - stage: uuid
-      stageUuid: "3cf06e1a-0775-84f1-87a6-79508db8978b"
+      stageUuid: "aad8735b-3028-8d60-8ab0-b3c6cc969571"
 version: 2
 ---
 # canal

@@ -1,63 +1,35 @@
 ---
 name: male
 description: "Use when reasoning about male as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/male
-coordinate: male · 8/crest · c4c7c6e5
-contentUuid: "502ea755-3a0d-5897-945b-903eb3b3b91f"
-diamondUuid: "8767a344-a968-8216-88fa-4659be7bf5ff"
-uuid: "c4c7c6e5-fc4c-8327-8066-70a0e74cfefe"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/male"
+coordinate: "vocabulary/male · 7/descent · 03f13092"
+contentUuid: "c4d1298a-89ca-561a-8950-1ef373ae9338"
+diamondUuid: "7472f72c-8c21-8bd6-bedb-f8049bd811af"
+uuid: "03f13092-f673-8423-9380-a84d2b617de9"
+horo: 7
 typography:
-  partition: male
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "818398e4-3927-8309-8209-ea3e1cce6028"
+  computationUuid: "308f3b10-9b6c-82dc-9545-7fc465fdccca"
   stages:
     - stage: path
-      stageUuid: "96065293-ecdf-8d76-ab83-5b551a1cca9f"
+      stageUuid: "0b549d86-409c-8538-bf95-567ee859c06c"
     - stage: trinity
-      stageUuid: "7cc32359-4095-8c8c-90ea-aa56305ec76e"
+      stageUuid: "3d2ca2d7-6aa0-84f7-817a-7e979a358eee"
     - stage: boundary
-      stageUuid: "2c04e29e-ca9e-847c-8ce5-fa169fe2243d"
+      stageUuid: "6e2b4901-6dea-8127-a178-f3d5ccdec9d6"
     - stage: links
-      stageUuid: "44f34fa7-5b5c-8291-b242-cd450628113c"
+      stageUuid: "20ba7c19-053c-8468-b27f-8512a1ac1977"
     - stage: horo
-      stageUuid: "fd06f302-6404-8aa2-b132-d534c7c52a8f"
+      stageUuid: "9c6d9f40-c264-88d7-b1ce-aa512a84dbae"
     - stage: seal
-      stageUuid: "1aedea92-cd2a-8cb5-8385-0603aceb2d7c"
+      stageUuid: "718f2512-7825-8936-9c93-bf37ac0a8efa"
     - stage: uuid
-      stageUuid: "eb97f666-8460-8e78-9506-3fcae4ee438a"
+      stageUuid: "f13a5b2a-499f-80d2-a40f-4d419db94c34"
 version: 2
 ---
 # male

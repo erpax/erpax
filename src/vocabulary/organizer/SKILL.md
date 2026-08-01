@@ -1,53 +1,35 @@
 ---
 name: organizer
 description: Use when reasoning about organizer — An organizer of an Event.
-atomPath: vocabulary/organizer
-coordinate: organizer · 1/base · 33a9b20a
-contentUuid: "07d699c1-2798-5418-bf2d-91d33e9c484d"
-diamondUuid: "3c37da58-f223-8a0c-9ed7-96047757e515"
-uuid: "33a9b20a-e5f2-8893-95d3-28443d01d9c5"
-horo: 1
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/organizer"
+coordinate: "vocabulary/organizer · 7/descent · 89ff8b56"
+contentUuid: "69a587f2-3cee-502c-b0a2-367b90ae83cd"
+diamondUuid: "34d248fc-3206-8270-a556-4b5ac5082168"
+uuid: "89ff8b56-1519-8951-8267-540c1405a1fc"
+horo: 7
 typography:
-  partition: organizer
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "990d6627-fd4d-8a7e-8601-5bead8cdaa79"
+  computationUuid: "94f8784a-4fea-8c05-8b3f-364adfb43be3"
   stages:
     - stage: path
-      stageUuid: "9c665a94-13c2-8dc2-8669-4f543139abb8"
+      stageUuid: "15ea795d-f1c9-89d4-8190-7341fe1cc95b"
     - stage: trinity
-      stageUuid: "0500812a-30ab-812e-8066-fdade2a6c9f3"
+      stageUuid: "c69b428f-82f8-8be6-9af7-8750fd5dd754"
     - stage: boundary
-      stageUuid: "52bfa044-d2fc-8180-8078-ad85978fa511"
+      stageUuid: "3132d278-b80e-8e4c-84d9-6b00824b039d"
     - stage: links
-      stageUuid: "1ecf2a45-ac53-8450-8668-2f8105f2da44"
+      stageUuid: "506904df-29ce-86b0-b899-74b8233b16df"
     - stage: horo
-      stageUuid: "e395eaeb-b808-8fe8-8547-19e51c9ab512"
+      stageUuid: "48c482b2-8cad-8690-9bcc-7498567eabf8"
     - stage: seal
-      stageUuid: "de26f93c-4825-8d87-b128-d140ccf35da9"
+      stageUuid: "e24525b0-afe1-8f2b-8dbf-d8e9f6be9707"
     - stage: uuid
-      stageUuid: "74b7ccf7-fa76-82c2-8ff9-616211143455"
+      stageUuid: "d642a90e-a6ba-8589-9dd7-0a1fdc7a5bed"
 version: 2
 ---
 # organizer

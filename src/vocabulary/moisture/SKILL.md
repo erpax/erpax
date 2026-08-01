@@ -1,105 +1,34 @@
 ---
 name: moisture
 description: "Use when modelling soil water as a managed reservoir — the plant-available water held between field capacity (after drainage) and the permanent wilting point, the slice irrigation refills and evapotranspiration drains. A capacity reservoir on the water axis, the twin of the soil's nutrient budget."
-atomPath: vocabulary/moisture
-coordinate: moisture · 5/round · 1a5376fe
-contentUuid: "f355e028-d6f6-5594-b3df-d9ef4923a6f9"
-diamondUuid: "d3b476d2-0a68-82a0-a9dd-39505440ae19"
-uuid: "1a5376fe-4c4c-8769-b3e8-e10cb5d2c26b"
-horo: 5
-bonds:
-  in:
-    - agriculture
-    - balance
-    - capacity
-    - evapotranspiration
-    - fertility
-    - irrigation
-    - law
-    - mulch
-    - mycorrhizae
-    - salinity
-    - schedule
-    - soil
-    - tillage
-  out:
-    - agriculture
-    - balance
-    - capacity
-    - evapotranspiration
-    - fertility
-    - irrigation
-    - law
-    - mulch
-    - mycorrhizae
-    - salinity
-    - schedule
-    - soil
-    - tillage
+atomPath: "vocabulary/moisture"
+coordinate: "vocabulary/moisture · 1/base · 80844c31"
+contentUuid: "ba324881-1692-587a-8247-455e8f993c29"
+diamondUuid: "3696e02d-fe22-8357-8bd4-05ddab02e402"
+uuid: "80844c31-6f95-8d93-9e9e-0c2970ecaf4d"
+horo: 1
 typography:
-  partition: moisture
+  partition: vocabulary
   bondDegree: 43
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - balance
-    - capacity
-    - evapotranspiration
-    - fertility
-    - irrigation
-    - law
-    - mulch
-    - schedule
-    - soil
-    - tillage
-  matrix:
-    - agriculture
-    - balance
-    - capacity
-    - evapotranspiration
-    - fertility
-    - irrigation
-    - law
-    - mulch
-    - mycorrhizae
-    - salinity
-    - schedule
-    - soil
-    - tillage
-  backlinks:
-    - agriculture
-    - balance
-    - capacity
-    - evapotranspiration
-    - fertility
-    - irrigation
-    - law
-    - mulch
-    - mycorrhizae
-    - salinity
-    - schedule
-    - soil
-    - tillage
 signatures:
-  computationUuid: "ee4a2f81-7cfe-811d-8dcf-e213cff044f4"
+  computationUuid: "eb2f8fd1-5c6f-885b-92b8-b3d524f43e50"
   stages:
     - stage: path
-      stageUuid: "89ac1aaf-f32b-8ae8-89e7-82ee355663ac"
+      stageUuid: "15f7f7fc-2d17-8ba2-8f8c-e128d0144663"
     - stage: trinity
-      stageUuid: "8dfc94f8-8e0b-87a5-8748-48f2e7a8161f"
+      stageUuid: "2b684a30-6b7b-89f9-a97f-4282d0709466"
     - stage: boundary
-      stageUuid: "d9ebbc0c-6a48-8dbc-b16e-1439d79e223c"
+      stageUuid: "46441f3c-68f4-8aeb-a580-e09e8adfc629"
     - stage: links
-      stageUuid: "84075f70-dd9f-8e8f-8701-45d2da843aa1"
+      stageUuid: "a36af703-96f0-841d-802d-d05061d07418"
     - stage: horo
-      stageUuid: "98f1dc5d-1068-8358-a876-8851f396311a"
+      stageUuid: "948d7f03-13d6-81f1-8a96-3f82a4294b02"
     - stage: seal
-      stageUuid: "c7ba25f7-35de-871f-a7e6-e2fb3e2b4390"
+      stageUuid: "7fe08d26-996d-8e41-aa3b-910d156bb49d"
     - stage: uuid
-      stageUuid: "e1d0b418-5df3-8196-8931-7a8778eebde3"
+      stageUuid: "3eace41d-477a-8335-924a-692240bc2141"
 version: 2
 ---
 # moisture — soil water held as a plant-available reservoir

@@ -1,63 +1,35 @@
 ---
 name: anaerobic
 description: "Use when reasoning about anaerobic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/anaerobic
-coordinate: anaerobic · 4/weave · a41c2339
-contentUuid: "323ced5f-74aa-55ce-a2cb-cab75498ef3d"
-diamondUuid: "336c9370-7e64-8043-9470-02277678c747"
-uuid: "a41c2339-8b00-8832-96fe-ec2f58765472"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/anaerobic"
+coordinate: "vocabulary/anaerobic · 7/descent · a8b006ee"
+contentUuid: "cb865562-a8bd-56b7-b18b-2e7678123eec"
+diamondUuid: "48d6eac3-5e3e-873a-be32-8084bdf7de0a"
+uuid: "a8b006ee-e2a6-89ea-a4b6-683d905916e9"
+horo: 7
 typography:
-  partition: anaerobic
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "e26c7545-3b23-8c9f-a801-7c1a2cacc40f"
+  computationUuid: "ab4b04e3-2994-8fe1-8395-18c209f78d5e"
   stages:
     - stage: path
-      stageUuid: "3d148295-c447-8239-af1e-35990c314b7c"
+      stageUuid: "fea340a5-046b-8f32-8dcd-d11e16410a3f"
     - stage: trinity
-      stageUuid: "305a1359-2900-82e2-8b99-4e2eb79e14e6"
+      stageUuid: "bf849ab4-c019-8e04-b7c0-34c7943681f8"
     - stage: boundary
-      stageUuid: "bcc0b930-77f0-8ff1-beb5-7b343e9f97f2"
+      stageUuid: "eda2df01-e04d-8ccc-bc27-2d63782debd0"
     - stage: links
-      stageUuid: "35241197-11c1-84b6-b703-6561a4285cc9"
+      stageUuid: "5ced36a9-0865-848a-90e2-1b8c7dc12d4c"
     - stage: horo
-      stageUuid: "74954da1-72f8-893c-aaa3-740d97afd614"
+      stageUuid: "6463eac3-3774-8942-a8a1-34a6a63d432e"
     - stage: seal
-      stageUuid: "f769a36a-49ae-89d2-bf8b-c236277238c3"
+      stageUuid: "07aaead4-176d-85fa-8074-efc18566a6eb"
     - stage: uuid
-      stageUuid: "120ac2a9-f9db-8b6c-bd42-3cbf9864590f"
+      stageUuid: "caaff181-e6a8-89e6-8020-271ab70af9e8"
 version: 2
 ---
 # anaerobic

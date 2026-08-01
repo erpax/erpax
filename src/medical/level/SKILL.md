@@ -2,83 +2,19 @@
 name: level
 description: "Use when reasoning about level as a medical facet of [[medical]] — vocabulary pivot to @/level; nested not duplicated."
 atomPath: "medical/level"
-coordinate: "medical/level · 2/share · 1442c978"
-contentUuid: "eb32ec5f-dbba-5362-b7c6-b6f43b7cda1f"
-diamondUuid: "f43b9773-f595-859e-ab3b-bdab518b8da4"
-uuid: "1442c978-44d3-8c85-94e5-dabf9c86f939"
-horo: 2
-bonds:
-  in:
-    - educational
-    - evidence
-    - floor
-    - inventory
-    - law
-    - leap
-    - legal
-    - level
-    - medical
-    - merge
-    - photon
-    - proficiency
-    - superposition
-  out:
-    - educational
-    - evidence
-    - floor
-    - inventory
-    - law
-    - leap
-    - legal
-    - level
-    - medical
-    - merge
-    - photon
-    - proficiency
-    - superposition
+coordinate: "medical/level · 1/base · 3a4b4e28"
+contentUuid: "f4c97661-60de-540d-8d56-fdc7d7fafdc3"
+diamondUuid: "178414fd-7866-81fd-b161-a116fe1734d5"
+uuid: "3a4b4e28-55e7-83d2-b6a3-845138e1ae7d"
+horo: 1
 typography:
   partition: medical
   bondDegree: 53
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - level
-    - medical
-    - merge
-  matrix:
-    - educational
-    - evidence
-    - floor
-    - inventory
-    - law
-    - leap
-    - legal
-    - level
-    - medical
-    - merge
-    - photon
-    - proficiency
-    - superposition
-  backlinks:
-    - educational
-    - evidence
-    - floor
-    - inventory
-    - law
-    - leap
-    - legal
-    - level
-    - medical
-    - merge
-    - photon
-    - proficiency
-    - superposition
 signatures:
-  computationUuid: "32aa65b9-9305-89bb-836f-e8a1c494e17a"
+  computationUuid: "31f04618-ca14-8a30-8051-0368fa6efe2d"
   stages:
     - stage: path
       stageUuid: "d010e107-5a04-886d-83b7-3c4aea2c0973"
@@ -89,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1f9a7303-3855-85a3-9d02-5cccf980a5b5"
     - stage: horo
-      stageUuid: "8315eb54-4e2b-81cb-b0ac-ee60b3c271a7"
+      stageUuid: "c7d0c93c-15c0-87a8-925a-7f9e61ff5239"
     - stage: seal
       stageUuid: "27a0646d-cf06-8711-9a7b-153abaf42a20"
     - stage: uuid
-      stageUuid: "3a42bc2b-4bcf-888f-a085-fdda5ccb57c3"
+      stageUuid: "bfcac23c-7013-87ee-88de-5eb1c7d40c42"
 version: 2
 ---
 # medical/level — medical facet

@@ -1,83 +1,35 @@
 ---
 name: icu
 description: "Use when reasoning about icu as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/icu
-coordinate: icu · 8/crest · 30574874
-contentUuid: "6cbb1938-c9b0-5626-8eb7-0bf59c563e57"
-diamondUuid: "75c39288-900d-8184-b804-fb4292fd3191"
-uuid: "30574874-a4d2-8c03-a845-83d949118862"
-horo: 8
-bonds:
-  in:
-    - beds
-    - collapse
-    - cvd
-    - law
-    - merge
-    - num
-    - occ
-    - sti
-  out:
-    - beds
-    - collapse
-    - cvd
-    - law
-    - merge
-    - num
-    - occ
-    - sti
+atomPath: "vocabulary/icu"
+coordinate: "vocabulary/icu · 4/weave · 90527bc0"
+contentUuid: "74dffb7a-3c60-5064-9592-156bf4d19330"
+diamondUuid: "f0f65f18-5b73-83ec-aba1-ecba9475300d"
+uuid: "90527bc0-aa89-866d-88b0-545d405b77e6"
+horo: 4
 typography:
-  partition: icu
+  partition: vocabulary
   bondDegree: 28
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - beds
-    - collapse
-    - cvd
-    - law
-    - merge
-    - num
-    - occ
-    - sti
-  matrix:
-    - beds
-    - collapse
-    - cvd
-    - law
-    - merge
-    - num
-    - occ
-    - sti
-  backlinks:
-    - beds
-    - collapse
-    - cvd
-    - law
-    - merge
-    - num
-    - occ
-    - sti
 signatures:
-  computationUuid: "97fe80f0-480b-804b-966f-d3d99bf915e6"
+  computationUuid: "30eed497-ddfc-83e3-88b4-e67066581811"
   stages:
     - stage: path
-      stageUuid: "b266c01c-574a-8e62-aa03-555aeb935076"
+      stageUuid: "2f766ecf-b665-8d51-82fd-74335406377f"
     - stage: trinity
-      stageUuid: "21f7a54e-8417-8aab-aba3-5628d6a699ed"
+      stageUuid: "86eaf964-2b01-811c-9210-a2ed5a3510ce"
     - stage: boundary
-      stageUuid: "d524c841-27a5-8be3-968e-6f906d35bfb2"
+      stageUuid: "50c4594b-eae5-81fa-ad5e-66f39a2d2ecc"
     - stage: links
-      stageUuid: "818e2d86-3cb6-8ba8-a6e6-318fa1bb437d"
+      stageUuid: "9228dcd6-f4e8-8619-b1b5-660a5ede1a01"
     - stage: horo
-      stageUuid: "dd5581cc-285e-830f-853a-0b730f82f427"
+      stageUuid: "9af2068e-3dcc-8de7-b50a-ef78327590f8"
     - stage: seal
-      stageUuid: "95beda32-1eaa-814a-ab74-d5231146163c"
+      stageUuid: "0b6e887c-1792-82c3-a89e-24c2c4fb6598"
     - stage: uuid
-      stageUuid: "20e20dcb-351a-80c7-98d6-9829217ce783"
+      stageUuid: "4ff25f50-26a1-85a2-b48f-b3268bf6e60d"
 version: 2
 ---
 # icu

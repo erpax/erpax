@@ -1,78 +1,35 @@
 ---
 name: context
 description: "Use when reasoning about context as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/context
-coordinate: context · 4/weave · 392c7a76
-contentUuid: "7cee001c-b30c-50d1-909c-4de1e648988d"
-diamondUuid: "1fbacc43-0d52-8798-aa23-b3e3e194154e"
-uuid: "392c7a76-8455-8489-88e3-b382aadd68cc"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - description
-    - law
-    - media
-    - merge
-    - original
-    - sti
-  out:
-    - collapse
-    - description
-    - law
-    - media
-    - merge
-    - original
-    - sti
+atomPath: "vocabulary/context"
+coordinate: "vocabulary/context · 8/crest · 33a8ab66"
+contentUuid: "5c35bb28-9772-5dd4-aea5-ff50e32eff9a"
+diamondUuid: "e60ce669-766e-81d0-8821-714ba225f438"
+uuid: "33a8ab66-0c8c-8fed-813f-24220e7eb02d"
+horo: 8
 typography:
-  partition: context
-  bondDegree: 24
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 12
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - description
-    - law
-    - media
-    - merge
-    - original
-    - sti
-  matrix:
-    - collapse
-    - description
-    - law
-    - media
-    - merge
-    - original
-    - sti
-  backlinks:
-    - collapse
-    - description
-    - law
-    - media
-    - merge
-    - original
-    - sti
 signatures:
-  computationUuid: "6e2024c4-21fe-8cb4-8bdd-99c06d1c038e"
+  computationUuid: "6333db47-d65e-8221-959d-b0c9e497a2b0"
   stages:
     - stage: path
-      stageUuid: "60485ec2-3529-8372-b510-3fcea6541a25"
+      stageUuid: "5ac95a3f-9abc-8b93-880a-0531964e33fa"
     - stage: trinity
-      stageUuid: "691e4c91-399b-812d-a125-4538623b0fed"
+      stageUuid: "374a9683-329c-8dc5-b965-63945be6b96f"
     - stage: boundary
-      stageUuid: "48902971-0886-85b0-8afb-d4da1409a38a"
+      stageUuid: "ed23f767-94d2-8a86-8be7-4774196a5ddf"
     - stage: links
-      stageUuid: "17d97e96-48fc-8d86-bc02-e11216b930c9"
+      stageUuid: "0001dce1-48ca-867d-b348-c3e4b2d9658b"
     - stage: horo
-      stageUuid: "2e84f1f6-df4b-8e20-8219-50a830c17f21"
+      stageUuid: "f43f10c7-d7e2-868a-8c0f-6df1666f1c84"
     - stage: seal
-      stageUuid: "25867be3-7693-89b9-8c0b-ba25d9fb160f"
+      stageUuid: "f86bb67b-1772-8879-9d5c-2a4719df7112"
     - stage: uuid
-      stageUuid: "006c8b6e-8636-87b9-aea2-beaceed50141"
+      stageUuid: "2ebc32ce-babb-8e39-9d4c-ccfa08f4106a"
 version: 2
 ---
 # context

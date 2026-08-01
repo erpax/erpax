@@ -2,96 +2,19 @@
 name: data
 description: "Use when reasoning about data — Data associated with the event, like for instance a log message."
 atomPath: data
-coordinate: "data · 1/base · 9f925b8b"
-contentUuid: "828d11af-6811-5c1b-8140-017ed940e34a"
-diamondUuid: "ee55575f-bbfe-89ad-b2fb-8caf83b27aa1"
-uuid: "9f925b8b-5e35-8934-af52-d9a67eda32a5"
+coordinate: "data · 1/base · 6cdb4267"
+contentUuid: "b5c640d8-a7df-5197-bc4c-c514e3adfaf3"
+diamondUuid: "95f80977-c54b-87fc-804b-be1adc36ddca"
+uuid: "6cdb4267-05b5-8409-9fa1-ef0cc5a25ec1"
 horo: 1
-bonds:
-  in:
-    - catalog
-    - chart
-    - complete
-    - download
-    - element
-    - exif
-    - feed
-    - healthcare
-    - included
-    - item
-    - law
-    - reporting
-    - supporting
-    - type
-  out:
-    - catalog
-    - chart
-    - complete
-    - download
-    - element
-    - exif
-    - feed
-    - healthcare
-    - included
-    - item
-    - law
-    - reporting
-    - supporting
-    - type
 typography:
   partition: data
   bondDegree: 0
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - catalog
-    - complete
-    - download
-    - element
-    - exif
-    - feed
-    - healthcare
-    - included
-    - item
-    - law
-    - reporting
-    - supporting
-    - type
-  matrix:
-    - catalog
-    - chart
-    - complete
-    - download
-    - element
-    - exif
-    - feed
-    - healthcare
-    - included
-    - item
-    - law
-    - reporting
-    - supporting
-    - type
-  backlinks:
-    - catalog
-    - chart
-    - complete
-    - download
-    - element
-    - exif
-    - feed
-    - healthcare
-    - included
-    - item
-    - law
-    - reporting
-    - supporting
-    - type
 signatures:
-  computationUuid: "0dd52ce9-f8d6-8bac-b24c-e498bb8df16c"
+  computationUuid: "b70d847d-1d95-8730-a87f-c54c8b51c18a"
   stages:
     - stage: path
       stageUuid: "f80a32fc-bb02-8350-bc78-1bf4fafdf349"
@@ -102,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "110600f7-fb1c-8c96-89ed-676602fb39cb"
     - stage: horo
-      stageUuid: "09b94afb-c609-8fa4-bdea-1268ba9175d8"
+      stageUuid: "4e03d43f-9a41-8608-a57c-1b4ffd146bd7"
     - stage: seal
       stageUuid: "74351e44-f0bb-8526-90a2-1fe7f7729f7c"
     - stage: uuid
-      stageUuid: "18241568-6076-8971-ae4d-64d5d55ab8ff"
+      stageUuid: "e2b4817e-61eb-84e3-bdd2-9160d1a93ce0"
 version: 2
 ---
 # data

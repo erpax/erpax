@@ -1,78 +1,35 @@
 ---
 name: fact
 description: "Use when reasoning about fact as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/fact
-coordinate: fact · 1/base · a1048821
-contentUuid: "9407fb4b-55ae-50b4-a46a-e4dbf8ddbba8"
-diamondUuid: "7143ebe2-f9f5-8b4e-9fc2-c70de2dbc7f0"
-uuid: "a1048821-a95e-8cf2-8f07-7b034d4a5743"
-horo: 1
-bonds:
-  in:
-    - checking
-    - collapse
-    - law
-    - merge
-    - policy
-    - sti
-    - verification
-  out:
-    - checking
-    - collapse
-    - law
-    - merge
-    - policy
-    - sti
-    - verification
+atomPath: "vocabulary/fact"
+coordinate: "vocabulary/fact · 5/round · d8d4f307"
+contentUuid: "b78209fd-fcad-5381-beb6-4efef17b8168"
+diamondUuid: "a8c82a17-8f52-85cf-aa4d-9c09328eaa8f"
+uuid: "d8d4f307-49a3-8b53-b740-f1ca4be6edfd"
+horo: 5
 typography:
-  partition: fact
+  partition: vocabulary
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - checking
-    - collapse
-    - law
-    - merge
-    - policy
-    - sti
-    - verification
-  matrix:
-    - checking
-    - collapse
-    - law
-    - merge
-    - policy
-    - sti
-    - verification
-  backlinks:
-    - checking
-    - collapse
-    - law
-    - merge
-    - policy
-    - sti
-    - verification
 signatures:
-  computationUuid: "00199607-488c-87cb-80bf-646264ba84be"
+  computationUuid: "5b52cc60-c4f9-871c-b72a-7480cc2cf9c2"
   stages:
     - stage: path
-      stageUuid: "18fd52da-4660-8d64-a230-4ae6af76f716"
+      stageUuid: "428f1d95-f2e4-8038-b8f8-28c1f1cd56da"
     - stage: trinity
-      stageUuid: "03864ca2-b371-8393-8b46-efe32ed79fda"
+      stageUuid: "7359bdbd-e1a3-81c0-9887-b2db9d52b880"
     - stage: boundary
-      stageUuid: "9ca41823-f2a0-8164-bd71-708a4f778d2f"
+      stageUuid: "1a2d629c-9240-8013-972f-c89a1f235f11"
     - stage: links
-      stageUuid: "ad926c9b-81ea-811f-97b8-bacfc252f11d"
+      stageUuid: "30554583-ba41-88fb-8574-72fb535ca56d"
     - stage: horo
-      stageUuid: "06402e5a-e102-8945-a9fc-4748fd3f7b3b"
+      stageUuid: "53a071fa-cc7a-8549-9894-ae93eca499d3"
     - stage: seal
-      stageUuid: "599d98bb-7b21-8998-a061-90abc7e651cc"
+      stageUuid: "3dfa84c6-0a7d-8fb3-9316-f0337de421cb"
     - stage: uuid
-      stageUuid: "34fab36e-a4bd-8250-be64-78b32dcb8277"
+      stageUuid: "37de3b33-4d59-8eb0-b8f6-15bf75d99456"
 version: 2
 ---
 # fact

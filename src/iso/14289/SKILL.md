@@ -2,24 +2,15 @@
 name: "14289"
 description: "Use when implementing or referencing `src/standards/iso-14289/`."
 atomPath: "iso/14289"
-coordinate: "iso/14289 · 2/share · b0934f2e"
-contentUuid: "6653e0d7-eee6-5fc7-be96-e8be25dae504"
-diamondUuid: "f9c357bb-c80b-8b83-b6cf-75755e6caa3e"
-uuid: "b0934f2e-f633-85c7-9912-da919d88009b"
-horo: 2
-bonds:
-  in:
-    - iso
-  out: []
+coordinate: "iso/14289 · 4/weave · 3b1cbd09"
+contentUuid: "8cd7e277-33f4-546d-beb7-af0d441b8d34"
+diamondUuid: "e1a43bd1-7839-8baf-987c-53531b2354c7"
+uuid: "3b1cbd09-1e1c-8995-afd6-b20ea3e8a4e7"
+horo: 4
 typography:
   partition: iso
   bondDegree: 0
-  neighbors: []
 standards:
-  - "EU-2014/55"
-  - "EU-2024/1183"
-  - "EU-2024/1620"
-  - "EU-2024/1624"
   - "EU-537/2014"
   - "EU-910/2014"
   - "EU-CSDDD-2024/1760"
@@ -31,12 +22,8 @@ standards:
   - "WCAG-2.1"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink: []
-  matrix: []
-  backlinks: []
 signatures:
-  computationUuid: "e5b853a6-8454-80cc-a225-43980cf9d04c"
+  computationUuid: "97f097cf-0160-8edf-a0c0-ef11cbe6d4d9"
   stages:
     - stage: path
       stageUuid: "ade7180e-e88a-8375-b539-315c4eced8fc"
@@ -47,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "82ab4f54-73f0-8fa8-9bdd-cecd50e7c25f"
     - stage: horo
-      stageUuid: "df152bdd-ea51-8389-b85a-ab9ef183a91c"
+      stageUuid: "1c0953bc-7344-848a-a236-455414d358a1"
     - stage: seal
       stageUuid: "0c11a6df-473e-8078-8eb2-ab4f9d8eb416"
     - stage: uuid
-      stageUuid: "9c8ab792-857f-8e09-af34-89b11032babd"
+      stageUuid: "bb016b28-826f-83d1-b989-f5ed07aaa288"
 version: 2
 ---
 # `src/standards/iso-14289/`

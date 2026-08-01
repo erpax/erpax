@@ -2,38 +2,14 @@
 name: contingencies
 description: "Use when disclosing off-balance-sheet obligations in financial statement notes — capex commitments, purchase obligations, litigation, guarantees, performance bonds, tax disputes, insurance recoveries — with IAS-37 likelihood ladder and reclassification-to-provision workflow; IAS-37 §86-92 / ASC-440 / ASC-450 disclosure. The structured notes-disclosure register distinct from recognised provisions."
 atomPath: "commitments/and/contingencies"
-coordinate: "commitments/and/contingencies · 2/share · d3124f3c"
-contentUuid: "3e24aa95-6ac8-522a-b6a0-0952f860a7d2"
-diamondUuid: "ccc92481-5e24-83f4-9908-daf2f43a6be5"
-uuid: "d3124f3c-7f4e-8f4d-b19b-b8f0e6d1938c"
-horo: 2
-bonds:
-  in:
-    - accounting
-    - contingency
-    - escrow
-    - identity
-    - law
-    - proof
-    - provision
-    - provisions
-    - standard
-    - transaction
-  out:
-    - accounting
-    - contingency
-    - escrow
-    - identity
-    - law
-    - proof
-    - provision
-    - provisions
-    - standard
-    - transaction
+coordinate: "commitments/and/contingencies · 8/crest · 13e66d01"
+contentUuid: "f2c63d6b-18ae-59ff-ba26-8b8b93e4b67d"
+diamondUuid: "648fea04-6721-8912-8e17-300c250c7f71"
+uuid: "13e66d01-7674-8641-bb3c-bd6f3a0a6d41"
+horo: 8
 typography:
   partition: commitments
   bondDegree: 31
-  neighbors: []
 standards:
   - "IFRS IAS-1 §112(c) other-disclosures"
   - "IFRS IAS-37 §10 contingent-liability-definition"
@@ -49,39 +25,8 @@ standards:
   - "US-GAAP ASC-450-20-50 loss-contingency-disclosure"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - identity
-    - law
-    - proof
-    - provisions
-    - standard
-    - transaction
-  matrix:
-    - accounting
-    - contingency
-    - escrow
-    - identity
-    - law
-    - proof
-    - provision
-    - provisions
-    - standard
-    - transaction
-  backlinks:
-    - accounting
-    - contingency
-    - escrow
-    - identity
-    - law
-    - proof
-    - provision
-    - provisions
-    - standard
-    - transaction
 signatures:
-  computationUuid: "24c15157-07ae-8c35-8d54-9bb9ad684a03"
+  computationUuid: "96995f29-c3d1-833b-ae24-99427ce725a4"
   stages:
     - stage: path
       stageUuid: "364be235-3d55-8a1a-8ce7-0d0931e13720"
@@ -92,11 +37,11 @@ signatures:
     - stage: links
       stageUuid: "74b1942d-bbb2-8903-bce4-1e014af4329b"
     - stage: horo
-      stageUuid: "6670fc71-0e11-88b3-a7df-f6d95e608389"
+      stageUuid: "dbe162e6-4d89-81ff-a360-94b14bf35d90"
     - stage: seal
       stageUuid: "3b9143ef-9e29-8e1d-94c5-ab71081921c7"
     - stage: uuid
-      stageUuid: "d25ced66-cfd7-8ea2-b27b-67072fe6b8c7"
+      stageUuid: "ff9ee86f-b18d-8f83-9b12-5dc0567d4c57"
 version: 2
 ---
 # commitments-and-contingencies

@@ -1,63 +1,35 @@
 ---
 name: ascending
 description: "Use when reasoning about ascending as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/ascending
-coordinate: ascending · 1/base · cf734af4
-contentUuid: "45bb6660-f074-5daa-bc5b-e425fb72bcce"
-diamondUuid: "75ed22bf-a38e-8cd1-b765-e3eabbf3587b"
-uuid: "cf734af4-ddf5-8fba-8758-733113d5ded0"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/ascending"
+coordinate: "vocabulary/ascending · 4/weave · 4d67510d"
+contentUuid: "9dd4bb6f-6e15-54bb-b087-a82807b8af97"
+diamondUuid: "55be21ca-ec14-8f72-b07c-1f7eac1d236b"
+uuid: "4d67510d-1f53-836e-aed9-646b224b60b8"
+horo: 4
 typography:
-  partition: ascending
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "63163b85-8428-89dd-a4c4-fc2b095d2e3b"
+  computationUuid: "e6b0f810-bd9a-804f-bb1c-f30198cc3c50"
   stages:
     - stage: path
-      stageUuid: "3667880f-d654-8fcf-8af1-dd6308b50084"
+      stageUuid: "4c8b0608-2e92-87e2-953c-15d5d1cf85f1"
     - stage: trinity
-      stageUuid: "15437c15-3026-8246-b2a7-7a0f3d6cde30"
+      stageUuid: "39135b6f-f286-828b-b6ce-0c40fe30cf1d"
     - stage: boundary
-      stageUuid: "e1bb5e1e-3e41-8389-8762-cc40792d391e"
+      stageUuid: "a1413acb-8288-8006-94a8-35acd1145a84"
     - stage: links
-      stageUuid: "ee606c2b-ac2f-8351-8626-af320d1f818f"
+      stageUuid: "3ba00e30-2009-8c55-a617-3b67da995ee2"
     - stage: horo
-      stageUuid: "a907ffb9-9cd7-8753-9955-1fe2b0901986"
+      stageUuid: "0d4f3f46-8e45-83bf-8b39-d074ee51767b"
     - stage: seal
-      stageUuid: "7a599432-a132-8929-842f-25a26426f9ea"
+      stageUuid: "51935bc7-f0f7-8604-a7a9-26c262856340"
     - stage: uuid
-      stageUuid: "27c41058-4316-856a-9346-757aa9db9f15"
+      stageUuid: "fb6adaee-4462-8e96-8e81-86d9e4b2010f"
 version: 2
 ---
 # ascending

@@ -1,78 +1,35 @@
 ---
 name: hosp
 description: "Use when reasoning about hosp as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/hosp
-coordinate: hosp · 1/base · f7c50bbf
-contentUuid: "5cccf57b-88f6-5aa3-952a-9943e8472d30"
-diamondUuid: "942cd37a-9bc7-8e1a-af48-aba55a95a252"
-uuid: "f7c50bbf-6eb4-8d3e-ab80-05382edad2c7"
+atomPath: "vocabulary/hosp"
+coordinate: "vocabulary/hosp · 1/base · c2d41a60"
+contentUuid: "56f24ede-f0bf-5459-a89c-4ac54e579645"
+diamondUuid: "6cdc985a-adde-8a61-9d6e-f1311f62e14b"
+uuid: "c2d41a60-ebd7-855a-a6f1-9f60b8b62c31"
 horo: 1
-bonds:
-  in:
-    - collapse
-    - cvd
-    - law
-    - merge
-    - num
-    - pats
-    - sti
-  out:
-    - collapse
-    - cvd
-    - law
-    - merge
-    - num
-    - pats
-    - sti
 typography:
-  partition: hosp
+  partition: vocabulary
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - cvd
-    - law
-    - merge
-    - num
-    - pats
-    - sti
-  matrix:
-    - collapse
-    - cvd
-    - law
-    - merge
-    - num
-    - pats
-    - sti
-  backlinks:
-    - collapse
-    - cvd
-    - law
-    - merge
-    - num
-    - pats
-    - sti
 signatures:
-  computationUuid: "d932ce6b-43ab-8123-970d-7241998e8bed"
+  computationUuid: "42c381e7-d565-8ed6-9b63-a2f3d17b334b"
   stages:
     - stage: path
-      stageUuid: "b6326c9e-d8a2-8657-ba65-e8e79b7114d7"
+      stageUuid: "1f0504bf-512b-8527-84b2-628787bcf22c"
     - stage: trinity
-      stageUuid: "17464b51-3240-8eec-a5d5-41a95254f895"
+      stageUuid: "73ea7e92-2b32-86a2-8bfa-acdf129fb8de"
     - stage: boundary
-      stageUuid: "d5c755ac-ad97-8303-8b27-c7d64a669653"
+      stageUuid: "bcc259a4-de15-8080-b5b4-7980a7596651"
     - stage: links
-      stageUuid: "e734a94d-4843-889c-9794-96d103397600"
+      stageUuid: "189d469b-2745-854c-b902-bd2f5dae37cb"
     - stage: horo
-      stageUuid: "446eb14e-fb8d-8ea1-bdfa-eb23e7c529d6"
+      stageUuid: "158d9c40-e261-804b-8915-cd1d57ca6634"
     - stage: seal
-      stageUuid: "06d0c939-199f-813d-9de2-7826e25d01e2"
+      stageUuid: "23fbc8cc-24b8-82b1-b0e6-50ed55dfba81"
     - stage: uuid
-      stageUuid: "97dd3d52-6344-81e0-9114-58f9c08334dd"
+      stageUuid: "30fd4dee-27c3-8666-824c-0a07372c120a"
 version: 2
 ---
 # hosp

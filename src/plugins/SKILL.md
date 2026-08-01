@@ -2,158 +2,22 @@
 name: plugins
 description: "Use when building, configuring, or extracting a Payload plugin — a function that receives the config and returns a modified config, adding collections/globals/fields/hooks/endpoints. Relevant when packaging erpax (or a domain) as a publishable @erpax/* plugin."
 atomPath: plugins
-coordinate: plugins · 7/descent · d61a9a2e
-contentUuid: "ceb7bc99-fe5c-52ed-8ed6-18ea03f5ceb9"
-diamondUuid: "4eb15328-5407-85a2-a76c-fb3c41c91dac"
-uuid: "d61a9a2e-27e1-8577-ac10-938884491723"
-horo: 7
-bonds:
-  in:
-    - accounting
-    - all
-    - bindings
-    - chat
-    - collapse
-    - collections
-    - comment
-    - commerce
-    - config
-    - domain
-    - ecommerce
-    - fractal
-    - identity
-    - law
-    - manufacturing
-    - mcp
-    - merge
-    - one
-    - part
-    - party
-    - plugin
-    - port
-    - redirects
-    - research
-    - scopes
-    - sequence
-    - skills
-    - tag
-    - torus
-    - whole
-  out:
-    - accounting
-    - all
-    - bindings
-    - chat
-    - collapse
-    - collections
-    - comment
-    - commerce
-    - config
-    - domain
-    - ecommerce
-    - fractal
-    - identity
-    - law
-    - manufacturing
-    - mcp
-    - merge
-    - one
-    - part
-    - party
-    - plugin
-    - port
-    - redirects
-    - research
-    - scopes
-    - sequence
-    - skills
-    - tag
-    - torus
-    - whole
+coordinate: "plugins · 8/crest · 16b75b9b"
+contentUuid: "a8251e67-c500-5ccc-a14f-aa1fe38d7fe1"
+diamondUuid: "27a97dc5-c57e-852d-a857-ff179167c381"
+uuid: "16b75b9b-6713-8f64-ba50-ea5cc83ccfe4"
+horo: 8
 typography:
   partition: plugins
   bondDegree: 0
-  neighbors: []
 standards:
   - "ISO-27002"
   - "ISO/IEC-27002:2022"
   - "NIST-SP-800-162"
   - "RFC-4122"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - collections
-    - config
-    - fractal
-    - identity
-    - law
-    - merge
-    - sequence
-  matrix:
-    - accounting
-    - all
-    - bindings
-    - chat
-    - collapse
-    - collections
-    - comment
-    - commerce
-    - config
-    - domain
-    - ecommerce
-    - fractal
-    - identity
-    - law
-    - manufacturing
-    - mcp
-    - merge
-    - one
-    - part
-    - party
-    - plugin
-    - port
-    - redirects
-    - research
-    - scopes
-    - sequence
-    - skills
-    - tag
-    - torus
-    - whole
-  backlinks:
-    - accounting
-    - all
-    - bindings
-    - chat
-    - collapse
-    - collections
-    - comment
-    - commerce
-    - config
-    - domain
-    - ecommerce
-    - fractal
-    - identity
-    - law
-    - manufacturing
-    - mcp
-    - merge
-    - one
-    - part
-    - party
-    - plugin
-    - port
-    - redirects
-    - research
-    - scopes
-    - sequence
-    - skills
-    - tag
-    - torus
-    - whole
 signatures:
-  computationUuid: "3293210e-1bf8-8474-960c-818143dc1772"
+  computationUuid: "7c508203-122b-8549-b220-39ecfc8d6220"
   stages:
     - stage: path
       stageUuid: "36f5dd4b-cef3-821c-8b1d-d3102c7119df"
@@ -164,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "5b1fb269-5afa-8e3b-b4ed-1d15fcde949b"
     - stage: horo
-      stageUuid: "eeaf1014-0f61-8e2a-952e-92491cf4bb6f"
+      stageUuid: "13924c60-e8ec-80d2-b76d-55038e8caff9"
     - stage: seal
       stageUuid: "ec57a8cc-6211-8937-b2c6-cab3fb9d1e68"
     - stage: uuid
-      stageUuid: "30c1fc88-fc97-8fe1-8588-ac5fd58de166"
+      stageUuid: "8f906e83-e927-8872-bbfe-a0584a4a58c5"
 version: 2
 ---
 # plugins — Payload plugins (config in → config out)

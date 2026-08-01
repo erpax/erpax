@@ -3,30 +3,13 @@ name: reduction
 description: "Use when constructing a Clay attempt rather than asserting one — the tools between theorem's reduce verdict and duel's door: proposeReduction measures a candidate against the graph WITHOUT editing it, reductionFrontier names the exact links still ungrounded (the fix list reduce only implied), problemFrontiers gives all seven as work items, jointReduction builds the 'solved at once' claim and reports that its frontier is all seven because no reduction between any two is known, and roundFromReduction bridges a FULLY GROUNDED reduction into a duel round — nothing here can set corpusSolves, which stays the literal false."
 atomPath: "millennium/reduction"
 coordinate: "millennium/reduction"
-contentUuid: "1d01d91f-c208-5cb7-911f-d2fc6e6426f9"
+contentUuid: "88ed3f87-f5e0-52cc-b406-0b432dc03e53"
 diamondUuid: "30fa7d77-1e50-8907-9a76-9c9ce2e4902b"
-bonds:
-  in:
-    - millennium
-  out: []
 typography:
   partition: millennium
   bondDegree: 8
-  neighbors:
-    - diamond
-    - hallucination
-    - purity
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - constitution
-    - duel
-    - law
-    - millennium
-    - theorem
-  matrix: []
-  backlinks: []
 signatures:
   computationUuid: "ac4d7a36-525d-8572-916e-6267b0885eb6"
   stages:

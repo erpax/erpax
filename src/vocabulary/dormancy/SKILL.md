@@ -1,102 +1,34 @@
 ---
 name: dormancy
 description: "Use when modelling the winter rest of a deciduous perennial — dormancy, the cold-requiring quiescent period; a cultivar must accumulate its chilling requirement (chill hours) before bud-break and a crop. The gate of the perennial's recurring season; where frost risk, pruning, and alternate bearing live."
-atomPath: vocabulary/dormancy
-coordinate: dormancy · 2/share · 54728fb2
-contentUuid: "4081bf0f-d8a2-57e6-a234-fd80766e12d3"
-diamondUuid: "112ad58a-de15-8f13-91a8-c87db26fd8f3"
-uuid: "54728fb2-bf51-82e2-bee8-2df9def44dd3"
-horo: 2
-bonds:
-  in:
-    - crop
-    - degreeday
-    - frost
-    - harvest
-    - law
-    - maturity
-    - perennial
-    - pollination
-    - pruning
-    - risk
-    - season
-    - terroir
-  out:
-    - crop
-    - degreeday
-    - frost
-    - harvest
-    - law
-    - maturity
-    - perennial
-    - pollination
-    - pruning
-    - risk
-    - season
-    - terroir
+atomPath: "vocabulary/dormancy"
+coordinate: "vocabulary/dormancy · 1/base · 54e3887c"
+contentUuid: "f6bc8e98-cdaa-5d5f-a2a9-dc3b0a13c2b2"
+diamondUuid: "d6556075-402b-8369-831f-7bd123884b9f"
+uuid: "54e3887c-9aac-8d9d-8fe6-1263ced94ab6"
+horo: 1
 typography:
-  partition: dormancy
+  partition: vocabulary
   bondDegree: 38
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - crop
-    - degreeday
-    - frost
-    - harvest
-    - law
-    - maturity
-    - perennial
-    - pollination
-    - pruning
-    - risk
-    - season
-    - terroir
-  matrix:
-    - crop
-    - degreeday
-    - frost
-    - harvest
-    - law
-    - maturity
-    - perennial
-    - pollination
-    - pruning
-    - risk
-    - season
-    - terroir
-  backlinks:
-    - crop
-    - degreeday
-    - frost
-    - harvest
-    - law
-    - maturity
-    - perennial
-    - pollination
-    - pruning
-    - risk
-    - season
-    - terroir
 signatures:
-  computationUuid: "b00a20ec-ab7d-8719-b571-0db2ff29e0bc"
+  computationUuid: "61464f08-ffb1-81d8-ba63-314645dd0cfc"
   stages:
     - stage: path
-      stageUuid: "c1e8d9cc-3c23-8f78-856b-ac553c0771ca"
+      stageUuid: "01a7cd46-1070-8703-8fab-0e057cb129bf"
     - stage: trinity
-      stageUuid: "db17dcdd-82d6-80bb-b5c7-97f63bd7dc8f"
+      stageUuid: "e1b94af5-af85-88b1-85eb-f2d24bb2cedf"
     - stage: boundary
-      stageUuid: "93983a6b-d17e-87df-8d8e-98d543e0cf44"
+      stageUuid: "1e310d6e-af00-8148-930c-2c4061f6d4b9"
     - stage: links
-      stageUuid: "1a729af5-d725-8ee2-a989-fd5c03c46dc9"
+      stageUuid: "679d73a3-dfa2-8638-a2d6-910bf83660a4"
     - stage: horo
-      stageUuid: "d898a3db-7be7-8a3b-b1d5-5f20c71e5a56"
+      stageUuid: "c6e46594-e0c4-8b40-9881-f67e01c11604"
     - stage: seal
-      stageUuid: "0fc794af-c346-8e99-a276-d6266e726319"
+      stageUuid: "9930c5eb-b14e-8e67-8253-7c1fba2a0c65"
     - stage: uuid
-      stageUuid: "fa2d8f0c-0667-879f-b11a-cd40a689c255"
+      stageUuid: "ddc6b8a9-b5d8-8b47-8515-aab6aeca1885"
 version: 2
 ---
 # dormancy — the winter rest that gates the perennial's next crop

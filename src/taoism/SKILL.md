@@ -2,137 +2,18 @@
 name: taoism
 description: "Use when reading Taoism as a diamond of invariant atoms — the way that cannot be named, yin-yang as the duality held, acting in accord (wu wei), returning as the motion of the Tao, qi the vital breath. Strip the Chinese prefix and tao, qi, wu wei, fan collapse to void, breath, harmony, return — one content-uuid each."
 atomPath: taoism
-coordinate: taoism · 2/share · ab4c6ee0
-contentUuid: "6c9f77ff-a8aa-5fec-9b04-77034ec96c8d"
-diamondUuid: "2fb1ea60-654a-883e-9482-86344aee82b1"
-uuid: "ab4c6ee0-5d15-84cc-bf36-24a8232425ed"
-horo: 2
-bonds:
-  in:
-    - archangel
-    - balance
-    - breath
-    - cycle
-    - diamond
-    - duality
-    - fractal
-    - harmony
-    - identity
-    - law
-    - merge
-    - peace
-    - religion
-    - return
-    - self
-    - society
-    - translator
-    - uuid
-    - void
-    - water
-    - whole
-    - word
-  out:
-    - archangel
-    - balance
-    - breath
-    - cycle
-    - diamond
-    - duality
-    - fractal
-    - harmony
-    - identity
-    - law
-    - merge
-    - peace
-    - religion
-    - return
-    - self
-    - society
-    - translator
-    - uuid
-    - void
-    - water
-    - whole
-    - word
+coordinate: "taoism · 4/weave · 7aa1669c"
+contentUuid: "1d8911b5-f4ed-596a-8b69-923a96fd7e19"
+diamondUuid: "15b6a1de-7f6a-8dba-b5bd-848dbfa56b69"
+uuid: "7aa1669c-a30a-897e-b360-3c75e8418218"
+horo: 4
 typography:
   partition: taoism
   bondDegree: 68
-  neighbors:
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - archangel
-    - balance
-    - breath
-    - cycle
-    - diamond
-    - duality
-    - fractal
-    - harmony
-    - identity
-    - law
-    - merge
-    - peace
-    - religion
-    - return
-    - self
-    - society
-    - translator
-    - uuid
-    - void
-    - water
-    - whole
-    - word
-  matrix:
-    - archangel
-    - balance
-    - breath
-    - cycle
-    - diamond
-    - duality
-    - fractal
-    - harmony
-    - identity
-    - law
-    - merge
-    - peace
-    - religion
-    - return
-    - self
-    - society
-    - translator
-    - uuid
-    - void
-    - water
-    - whole
-    - word
-  backlinks:
-    - archangel
-    - balance
-    - breath
-    - cycle
-    - diamond
-    - duality
-    - fractal
-    - harmony
-    - identity
-    - law
-    - merge
-    - peace
-    - religion
-    - return
-    - self
-    - society
-    - translator
-    - uuid
-    - void
-    - water
-    - whole
-    - word
 signatures:
-  computationUuid: "689369e0-a5cd-8887-8cc2-f1e0e37fcecb"
+  computationUuid: "999afbe9-0dd2-8a77-9154-1941ec98bed3"
   stages:
     - stage: path
       stageUuid: "3c94525d-4fc6-8bb4-805b-4a3bf874c283"
@@ -143,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "dad24db8-62f3-806d-b436-4e7ee0ace0c8"
     - stage: horo
-      stageUuid: "12ab255b-f23d-8f96-8102-dcbee6df4903"
+      stageUuid: "f838b7cd-fe60-8c95-a7e5-8e02f4877117"
     - stage: seal
-      stageUuid: "1d1fbe5a-17b3-896f-a2d0-3dc5a9f741e5"
+      stageUuid: "06444e11-03ca-8603-a268-f32c91b45a88"
     - stage: uuid
-      stageUuid: "c6669c76-f036-8acb-89b8-84d6961a2594"
+      stageUuid: "da752324-c573-83a5-b0f5-a50d26845217"
 version: 2
 ---
 # taoism — the way that cannot be named; return to the root

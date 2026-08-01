@@ -2,105 +2,18 @@
 name: github
 description: "Use when reasoning about the git remote as a read API onto the corpus — the same one-word atom tree the filesystem and the mcp gateway expose, served over https (raw paths, the contents API, git clone). The third face of the one corpus; a snapshot, never a separate source."
 atomPath: github
-coordinate: "github · 5/round · 83c70fe3"
-contentUuid: "bcd271cc-45db-5629-915b-d54c8eaec82c"
-diamondUuid: "4d6470ce-c410-861c-bcca-aa28c22c72ef"
-uuid: "83c70fe3-4227-81fb-8a53-b25cf3b8c96d"
-horo: 5
-bonds:
-  in:
-    - api
-    - atom
-    - dimension
-    - fs
-    - generate
-    - identity
-    - law
-    - mcp
-    - merge
-    - path
-    - payload
-    - proof
-    - reference
-    - snapshot
-    - url
-    - uuid
-  out:
-    - api
-    - atom
-    - dimension
-    - fs
-    - generate
-    - identity
-    - law
-    - mcp
-    - merge
-    - path
-    - payload
-    - proof
-    - reference
-    - snapshot
-    - url
-    - uuid
+coordinate: "github · 1/base · 1c9ec28e"
+contentUuid: "583d411d-95f8-505c-a259-7ae67e5aad95"
+diamondUuid: "7d64e228-5ad3-8a5e-8536-b94aa27a1425"
+uuid: "1c9ec28e-1b2a-8b2f-9b66-a28c0000eee2"
+horo: 1
 typography:
   partition: github
   bondDegree: 57
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - api
-    - atom
-    - dimension
-    - fs
-    - generate
-    - identity
-    - law
-    - mcp
-    - merge
-    - path
-    - payload
-    - proof
-    - snapshot
-    - url
-    - uuid
-  matrix:
-    - api
-    - atom
-    - dimension
-    - fs
-    - generate
-    - identity
-    - law
-    - mcp
-    - merge
-    - path
-    - payload
-    - proof
-    - reference
-    - snapshot
-    - url
-    - uuid
-  backlinks:
-    - api
-    - atom
-    - dimension
-    - fs
-    - generate
-    - identity
-    - law
-    - mcp
-    - merge
-    - path
-    - payload
-    - proof
-    - reference
-    - snapshot
-    - url
-    - uuid
 signatures:
-  computationUuid: "be112519-d377-8168-b742-7ae20f3f94b7"
+  computationUuid: "5a6a13bb-8496-8d43-b853-2f7d1c39c510"
   stages:
     - stage: path
       stageUuid: "82ee52db-93b6-803c-9cfc-8228a7c6a397"
@@ -111,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "abb396f8-f532-88a1-b665-684edafa180e"
     - stage: horo
-      stageUuid: "96802c5f-019d-80b2-939f-61d514a1a9d1"
+      stageUuid: "debf8203-2344-8b98-93d0-c646049f84d1"
     - stage: seal
       stageUuid: "c2d35af5-91b0-802a-ae1b-91fc60c40b96"
     - stage: uuid
-      stageUuid: "81f6c491-6189-8aff-8cf0-a8583166265f"
+      stageUuid: "ed8a40ec-fba3-832a-9105-7083d0a507e9"
 version: 2
 ---
 # github — the repository as a read API

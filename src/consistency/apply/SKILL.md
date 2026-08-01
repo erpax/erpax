@@ -2,41 +2,14 @@
 name: apply
 description: "Use when running the deterministic, idempotent consistency transforms that close code-consistency gaps (chain producer backfill, emits upgrade, e2e + shadcn scaffolds, localized flags) — the appliers the `erpax.consistency.applyAll` MCP tool and the ConsistencyAgent cron dispatch to."
 atomPath: "consistency/apply"
-coordinate: "consistency/apply · 2/share · b39a6158"
-contentUuid: "7171750b-d691-5ba0-8470-7914f0c37bba"
-diamondUuid: "10842a47-381b-86f2-abe6-5438b8b6c31c"
-uuid: "b39a6158-c1dc-8cf0-b061-f8ed95aa0a1b"
+coordinate: "consistency/apply · 2/share · bcdb631c"
+contentUuid: "fb4cd7c9-454e-51e1-819e-ba5f97ad2ae5"
+diamondUuid: "f986679c-0fd7-841a-9e52-10dad174300d"
+uuid: "bcdb631c-2144-88e8-98df-12893965b438"
 horo: 2
-bonds:
-  in:
-    - action
-    - apply
-    - automate
-    - collapse
-    - consistency
-    - direct
-    - law
-    - merge
-    - rules
-    - sti
-    - violations
-    - wave
-  out:
-    - action
-    - apply
-    - automate
-    - collapse
-    - direct
-    - law
-    - merge
-    - rules
-    - sti
-    - violations
-    - wave
 typography:
   partition: consistency
   bondDegree: 39
-  neighbors: []
 standards:
   - "ISO/IEC 25010:2023 §5.1 functional-completeness"
   - "ISO/IEC 25010:2023 §5.7 modifiability — single deterministic path"
@@ -44,37 +17,8 @@ standards:
   - "W3C-WAI-ARIA-1.2 accessibility-landmarks"
   - "WCAG-2.1-AA contrast text-spacing"
 bindings: []
-neighbors:
-  wikilink:
-    - apply
-    - consistency
-    - law
-  matrix:
-    - action
-    - apply
-    - automate
-    - collapse
-    - direct
-    - law
-    - merge
-    - rules
-    - sti
-    - violations
-    - wave
-  backlinks:
-    - action
-    - apply
-    - automate
-    - collapse
-    - direct
-    - law
-    - merge
-    - rules
-    - sti
-    - violations
-    - wave
 signatures:
-  computationUuid: "5a0a05df-1aeb-863f-a30a-906d919ce580"
+  computationUuid: "d1c491b1-bd78-8882-956f-240f3716e2e3"
   stages:
     - stage: path
       stageUuid: "687fe7d3-a4dc-818f-b682-c0e0f5fc553a"
@@ -85,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "08a8b179-fe37-80d6-834f-e3e7fea990be"
     - stage: horo
-      stageUuid: "b02800da-1d38-865a-acdf-aa8b4ad7d1fe"
+      stageUuid: "bc4e0631-94d1-8088-b762-2c6e40625395"
     - stage: seal
       stageUuid: "67f93012-a553-85bd-97a7-5e1c9cabc351"
     - stage: uuid
-      stageUuid: "ed3274ea-7f8b-89b2-932b-14b604ebf5e4"
+      stageUuid: "e0c4485e-fc4c-8dfc-a945-8c80ca464fef"
 version: 2
 ---
 # consistency/apply — the deterministic gap-closing transforms

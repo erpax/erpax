@@ -1,68 +1,35 @@
 ---
 name: inform
 description: "Use when reasoning about inform — A schema.org component word, collided out of schema.org compounds — fused from InformAction (sti · collapse · merge)."
-atomPath: vocabulary/inform
-coordinate: inform · 2/share · ac2a8ba9
-contentUuid: "7e99c213-9506-58d3-b228-5b07ea00f11e"
-diamondUuid: "f893d327-bbc5-8a81-8ea7-ce6191d373f3"
-uuid: "ac2a8ba9-d56b-8410-a244-824822461db4"
-horo: 2
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/inform"
+coordinate: "vocabulary/inform · 7/descent · 9d1b7c8c"
+contentUuid: "a6375ac4-078a-5bd0-ae34-1936d27440e1"
+diamondUuid: "61d0aa6c-023f-8d62-b9f9-97cd9db93e20"
+uuid: "9d1b7c8c-f8e4-83a7-bd8c-6d04ba50b88c"
+horo: 7
 typography:
-  partition: inform
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "9b046aa8-3d8b-8bf8-b807-4a9c0d6f5416"
+  computationUuid: "82dc2451-87e0-862e-acd8-f13cc4315b1d"
   stages:
     - stage: path
-      stageUuid: "f57a8098-1240-875b-b2e1-731b9c4602b0"
+      stageUuid: "16b2e8a9-0a0b-8641-977d-2be4611a9069"
     - stage: trinity
-      stageUuid: "ac49a807-4c1a-8167-9ec9-55ea2235de27"
+      stageUuid: "cb065a42-2a22-8678-8785-d7f1617c781d"
     - stage: boundary
-      stageUuid: "308ba428-9ab5-89a1-9d29-b31a7f0858f8"
+      stageUuid: "edee8ae6-a632-8c48-ba16-ac5f138c5ddb"
     - stage: links
-      stageUuid: "895c196c-8834-8b9a-9671-14dfc85d1aa6"
+      stageUuid: "cd5299e9-c995-8a40-a81a-0d05a2bb0f59"
     - stage: horo
-      stageUuid: "a0dd522d-39df-87f0-9f87-424cd42b3ef1"
+      stageUuid: "1a532520-faad-8834-acf1-27f67042eeb8"
     - stage: seal
-      stageUuid: "d15f6407-53f7-8b98-a8fc-48e13820dca7"
+      stageUuid: "9efe7c2d-cb00-892e-b605-064a5399dcde"
     - stage: uuid
-      stageUuid: "2a957787-2af1-8fce-814b-cf9714ddb416"
+      stageUuid: "316eb114-67a5-8b40-99e1-430f47dafb11"
 version: 2
 ---
 # inform

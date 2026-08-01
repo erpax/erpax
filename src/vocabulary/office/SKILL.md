@@ -1,98 +1,35 @@
 ---
 name: office
 description: "Use when reasoning about office as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/office
-coordinate: office · 2/share · d5ca4f73
-contentUuid: "609fe6d3-686a-54ff-8124-03dcf675b6d0"
-diamondUuid: "3a096c33-82f3-8487-ad36-76b69db33a01"
-uuid: "d5ca4f73-8722-884f-95ce-5683d00705f4"
-horo: 2
-bonds:
-  in:
-    - box
-    - collapse
-    - equipment
-    - government
-    - law
-    - merge
-    - number
-    - physicians
-    - post
-    - sti
-    - store
-  out:
-    - box
-    - collapse
-    - equipment
-    - government
-    - law
-    - merge
-    - number
-    - physicians
-    - post
-    - sti
-    - store
+atomPath: "vocabulary/office"
+coordinate: "vocabulary/office · 8/crest · 72963f94"
+contentUuid: "7638707d-d0b0-5671-ac96-be202524121b"
+diamondUuid: "7dd32138-baf8-8ebf-b08d-b389da33a18e"
+uuid: "72963f94-4794-8f2c-af43-bfc45f2a9234"
+horo: 8
 typography:
-  partition: office
+  partition: vocabulary
   bondDegree: 39
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - box
-    - collapse
-    - equipment
-    - government
-    - law
-    - merge
-    - number
-    - physicians
-    - post
-    - sti
-    - store
-  matrix:
-    - box
-    - collapse
-    - equipment
-    - government
-    - law
-    - merge
-    - number
-    - physicians
-    - post
-    - sti
-    - store
-  backlinks:
-    - box
-    - collapse
-    - equipment
-    - government
-    - law
-    - merge
-    - number
-    - physicians
-    - post
-    - sti
-    - store
 signatures:
-  computationUuid: "91fe2db4-2074-8f06-aede-c7a0752f8e28"
+  computationUuid: "a03b4ad9-1ef1-8d40-82eb-c764762f6deb"
   stages:
     - stage: path
-      stageUuid: "cc2e32aa-17c2-8253-af27-6ce68557b683"
+      stageUuid: "8c23400f-d944-89b2-a64d-24eb196f7032"
     - stage: trinity
-      stageUuid: "afc06649-1c2e-817e-92d3-4b5d93115da0"
+      stageUuid: "f0047ff7-5176-8ad9-80fb-13a7f60b9a2b"
     - stage: boundary
-      stageUuid: "9fdbb4a7-6281-88af-8902-1bbf637c057e"
+      stageUuid: "84548ca2-c741-8fde-bef1-c30640a78348"
     - stage: links
-      stageUuid: "0697feee-26ce-8b12-a983-5af47c1eebf3"
+      stageUuid: "0a97a325-9794-87b0-bf8d-166a1a0c8e50"
     - stage: horo
-      stageUuid: "fb9b811b-f265-845a-bcb9-a74f71d19b98"
+      stageUuid: "da1dd9ff-09f4-8861-bd7d-88703a00f813"
     - stage: seal
-      stageUuid: "5aa42f56-fd92-84bc-8a3e-86c0ba8ae4a5"
+      stageUuid: "4a993d2a-a8e2-80eb-96ae-51e07f701253"
     - stage: uuid
-      stageUuid: "bb3c5676-c3a9-8576-999c-e6d4d50497ce"
+      stageUuid: "32b9e77d-68d6-81c2-b45d-d59e6fe89db4"
 version: 2
 ---
 # office

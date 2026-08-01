@@ -1,105 +1,34 @@
 ---
 name: biofield
 description: "Use when separating a CLAIMED aura from a measured one — 'biofield' is the umbrella term (coined at a 1992 NIH meeting) for a putative energy field around the body; it is not established science, its own proponents concede it is controversial, and controlled tests (Rosa's therapeutic-touch study, the JREF $1M challenge) found no detection above chance. The honest contrast: a claim with no measurable signal — the opposite of erpax's gapless, Merkle-proven analog aura."
-atomPath: vocabulary/biofield
-coordinate: biofield · 7/descent · 003148e4
-contentUuid: "25988cdf-9a42-5838-a1ef-738ee16548ed"
-diamondUuid: "ca3332de-80f3-8b5b-b90d-30aa6539138f"
-uuid: "003148e4-bd99-8ac1-992d-6503a5238c56"
-horo: 7
-bonds:
-  in:
-    - analog
-    - aura
-    - biomagnetism
-    - biometric
-    - biophoton
-    - coherence
-    - device
-    - fractal
-    - law
-    - measure
-    - proof
-    - tamper
-    - vibration
-  out:
-    - analog
-    - aura
-    - biomagnetism
-    - biometric
-    - biophoton
-    - coherence
-    - device
-    - fractal
-    - law
-    - measure
-    - proof
-    - tamper
-    - vibration
+atomPath: "vocabulary/biofield"
+coordinate: "vocabulary/biofield · 2/share · 5eae1565"
+contentUuid: "6f5bca61-5c47-58d2-835d-2103c4a8df82"
+diamondUuid: "217749df-2279-80db-9b98-75f5b57e86c5"
+uuid: "5eae1565-348e-84a2-88de-9f3f2b41d7fe"
+horo: 2
 typography:
-  partition: biofield
+  partition: vocabulary
   bondDegree: 45
-  neighbors:
-    - aura
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - analog
-    - aura
-    - biomagnetism
-    - biophoton
-    - coherence
-    - fractal
-    - law
-    - measure
-    - proof
-    - tamper
-  matrix:
-    - analog
-    - aura
-    - biomagnetism
-    - biometric
-    - biophoton
-    - coherence
-    - device
-    - fractal
-    - law
-    - measure
-    - proof
-    - tamper
-    - vibration
-  backlinks:
-    - analog
-    - aura
-    - biomagnetism
-    - biometric
-    - biophoton
-    - coherence
-    - device
-    - fractal
-    - law
-    - measure
-    - proof
-    - tamper
-    - vibration
 signatures:
-  computationUuid: "5e901456-8cd3-8764-bc3c-6952b914a66a"
+  computationUuid: "062aad9b-1d24-842a-8668-bd9a9348e971"
   stages:
     - stage: path
-      stageUuid: "779ec396-48d0-894d-bd47-383de7225794"
+      stageUuid: "27d9f16a-ff51-82bb-8962-4da9dd462697"
     - stage: trinity
-      stageUuid: "76b40ae8-75a6-85ff-bf6b-bbb2fc2bff80"
+      stageUuid: "d785a638-a38c-8fbb-a2c3-36240e78bf21"
     - stage: boundary
-      stageUuid: "17e514df-bd38-8957-9686-1e00dd5fa34c"
+      stageUuid: "623c55f0-79a3-821f-8d75-d4cb0311f86e"
     - stage: links
-      stageUuid: "87b2b7d6-d97a-88ea-9bae-fd1a279f50c9"
+      stageUuid: "239e3dc1-218b-867d-a449-14d1cec0eb35"
     - stage: horo
-      stageUuid: "0bc21f3f-8fd0-8a53-9557-70148dfe755f"
+      stageUuid: "6d8e63a5-f5b1-8128-85ae-f35ed14ce2b4"
     - stage: seal
-      stageUuid: "d2897de6-8625-8b17-9ce7-fa3889cb2d57"
+      stageUuid: "74ddc7e7-5125-8a97-a749-acca91b2c251"
     - stage: uuid
-      stageUuid: "15bb38c4-d4ef-8995-a019-4b11b5895c86"
+      stageUuid: "7ba954e3-2f35-898f-a0f0-fc34bba75004"
 version: 2
 ---
 # biofield — the claimed aura that measures nothing (the honesty atom)

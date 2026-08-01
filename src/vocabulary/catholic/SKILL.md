@@ -1,68 +1,35 @@
 ---
 name: catholic
 description: "Use when reasoning about catholic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/catholic
-coordinate: catholic · 8/crest · a92baee9
-contentUuid: "a6453395-181a-5245-90d6-68b46b119249"
-diamondUuid: "d281c1fe-3d2b-868a-8305-3b44cc47a42e"
-uuid: "a92baee9-850a-8d65-a057-d41212c924a3"
+atomPath: "vocabulary/catholic"
+coordinate: "vocabulary/catholic · 8/crest · f8a662c4"
+contentUuid: "bbf53607-824b-5106-909b-9861b90f4d2f"
+diamondUuid: "235a972d-7387-8e03-bdb7-98a456a31361"
+uuid: "f8a662c4-8b58-8379-911a-a27d7eb1a055"
 horo: 8
-bonds:
-  in:
-    - church
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - church
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: catholic
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - church
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - church
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - church
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "b5bd6c59-f989-8091-a1e4-f4a44a0cb88f"
+  computationUuid: "c2eb8afa-b065-8018-8bdd-af7fbfe7edbd"
   stages:
     - stage: path
-      stageUuid: "8ddef9cd-1c52-8eef-8f06-86ee4ed682fe"
+      stageUuid: "fb9ea674-4507-8fa0-a0e6-b2f642d791b5"
     - stage: trinity
-      stageUuid: "d84846a9-a840-80a8-a7e0-5f1dabc2105d"
+      stageUuid: "85ac023d-021e-81f8-a27b-faea3f5df862"
     - stage: boundary
-      stageUuid: "8b8689bd-70e3-877b-9104-29cfb2fab58f"
+      stageUuid: "270bf00c-884b-8cd9-9ffd-dbbdb5cb6c2c"
     - stage: links
-      stageUuid: "6554de9c-3a23-83c8-b18d-3e9ff8f934a6"
+      stageUuid: "586671ad-4567-87b6-944d-5b422ad429a7"
     - stage: horo
-      stageUuid: "0a4bb17a-6971-8b66-a271-abf783c29226"
+      stageUuid: "8fb2bd5a-80b9-8eb2-b89f-8dda2bf91c00"
     - stage: seal
-      stageUuid: "5d44acd0-c4a5-8bd9-bd8f-aa0bb75f1f2f"
+      stageUuid: "184c1ef5-2140-8a79-ba9b-70e5d8b7e19b"
     - stage: uuid
-      stageUuid: "5e884f04-0768-8e58-9174-57e3e8d57ff0"
+      stageUuid: "36fafd65-37d8-8840-bef7-700a57fd9e76"
 version: 2
 ---
 # catholic

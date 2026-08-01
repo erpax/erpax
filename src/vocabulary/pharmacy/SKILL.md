@@ -1,63 +1,35 @@
 ---
 name: pharmacy
 description: Use when reasoning about pharmacy — A pharmacy or drugstore.
-atomPath: vocabulary/pharmacy
-coordinate: pharmacy · 1/base · ea9c2ad1
-contentUuid: "df82e4c0-30f8-50d9-b5cf-5c2cdba708be"
-diamondUuid: "18acdf38-22e4-89d9-b72e-a3691a05ecf2"
-uuid: "ea9c2ad1-ba0c-8108-801d-86643f251035"
-horo: 1
-bonds:
-  in:
-    - category
-    - health
-    - law
-    - plan
-  out:
-    - category
-    - health
-    - law
-    - plan
+atomPath: "vocabulary/pharmacy"
+coordinate: "vocabulary/pharmacy · 5/round · 302e7506"
+contentUuid: "65623b73-6fcd-5085-b888-2450cdb1de8c"
+diamondUuid: "1d8d593d-a9b4-8df4-b926-fddc267a7ea2"
+uuid: "302e7506-4a05-842e-9f90-3a52c2b4f2b0"
+horo: 5
 typography:
-  partition: pharmacy
+  partition: vocabulary
   bondDegree: 14
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - category
-    - health
-    - law
-    - plan
-  matrix:
-    - category
-    - health
-    - law
-    - plan
-  backlinks:
-    - category
-    - health
-    - law
-    - plan
 signatures:
-  computationUuid: "0e26a79a-333e-864b-84d4-8b272ce0e901"
+  computationUuid: "6a5a4e05-c0cc-8e52-8090-04fac8fe6f8a"
   stages:
     - stage: path
-      stageUuid: "58d58319-b552-832c-b5ba-3c8ed01c5481"
+      stageUuid: "cd74ab72-eb6b-8b31-bbcd-f1ea8af1d5c3"
     - stage: trinity
-      stageUuid: "217da6c1-0102-8868-8588-70ced09c09b6"
+      stageUuid: "ae15a88f-bc6e-8352-8f06-c01bd4ce21ff"
     - stage: boundary
-      stageUuid: "af78301d-b2d7-8d2f-95c4-fa047e90e6f5"
+      stageUuid: "b92ff754-4cfe-897c-89ed-3a63e77d1c95"
     - stage: links
-      stageUuid: "fcd85f49-28dd-84e9-b961-4c8881c6b85c"
+      stageUuid: "9e90da72-192e-8295-8594-58d467f1ea8e"
     - stage: horo
-      stageUuid: "84198a42-2e90-80c4-8a56-7b5d7d9b8e1c"
+      stageUuid: "57ac0488-a49b-8553-a6cd-c931466135ad"
     - stage: seal
-      stageUuid: "4741e4d1-3ada-8703-9ce6-bbeb255270c0"
+      stageUuid: "aec58ce7-9345-8945-9ad6-5d791d7d1375"
     - stage: uuid
-      stageUuid: "af85120f-ebae-8ed9-9574-79692a42180f"
+      stageUuid: "3e1e502a-2288-89cc-ad28-06130570ad7b"
 version: 2
 ---
 # pharmacy

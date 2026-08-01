@@ -1,58 +1,35 @@
 ---
 name: attendees
 description: Use when reasoning about attendees — A person attending the event.
-atomPath: vocabulary/attendees
-coordinate: attendees · 2/share · d4439e75
-contentUuid: "d47937f8-828e-5112-a8cb-50be73eb5475"
-diamondUuid: "f251c1e2-92ff-879e-97fd-4904999d0e66"
-uuid: "d4439e75-201d-8cd9-962e-b98c0ee2712d"
-horo: 2
-bonds:
-  in:
-    - law
-    - person
-    - thing
-  out:
-    - law
-    - person
-    - thing
+atomPath: "vocabulary/attendees"
+coordinate: "vocabulary/attendees · 1/base · 4db80db1"
+contentUuid: "1a5d5f65-54b7-5052-b755-7e21e659c1cb"
+diamondUuid: "2a4b9a7d-1e09-89ae-883d-167bb283cadd"
+uuid: "4db80db1-864e-89c6-8205-26a96b59640e"
+horo: 1
 typography:
-  partition: attendees
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - person
-    - thing
-  matrix:
-    - law
-    - person
-    - thing
-  backlinks:
-    - law
-    - person
-    - thing
 signatures:
-  computationUuid: "24df2bab-698a-8fb7-a236-9e21a80a0649"
+  computationUuid: "42554978-7cbe-87c3-ab56-b07f0f3e99cd"
   stages:
     - stage: path
-      stageUuid: "b54636ec-f54f-8a09-af57-f714b156c42c"
+      stageUuid: "06b5a03b-9737-852f-99e4-9f9ab9b2e32e"
     - stage: trinity
-      stageUuid: "c24c9b2e-70e4-86a0-81e2-9d9af09f7a9d"
+      stageUuid: "1794e192-ec1d-800a-9c52-0e0af42cc95b"
     - stage: boundary
-      stageUuid: "8b59290e-19a6-8fd6-b68e-dd58a2c5b0d2"
+      stageUuid: "078aecae-8fcb-863c-8fd2-078d76739f25"
     - stage: links
-      stageUuid: "850acc4b-e35b-866f-bfe9-6c00c301b311"
+      stageUuid: "f2fd5317-b97a-87b4-9e32-93e34f226fc3"
     - stage: horo
-      stageUuid: "f5ed1fd8-d346-89f6-a76c-81259b7b2eba"
+      stageUuid: "c57565fc-7236-80b4-9d8e-499df235bbed"
     - stage: seal
-      stageUuid: "bd8ea53d-1713-8bf7-9857-3af75ad774ab"
+      stageUuid: "b3e21f99-4fb4-89dd-96fa-72f62822dd65"
     - stage: uuid
-      stageUuid: "3ad2169a-0166-8f26-82fa-be1295cc2b8f"
+      stageUuid: "d1be048b-3edf-8bb1-babe-6776ada4c746"
 version: 2
 ---
 # attendees

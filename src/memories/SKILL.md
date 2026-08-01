@@ -2,45 +2,14 @@
 name: memories
 description: "Use when persisting MCP tool results or agent state across restarts — a Payload substrate that projects rows INTO the architecture lattice by content-uuid (Law 8), NOT operational memory itself. Operational memory IS the lattice ([[memory/architecture]]); this collection is durable working-set spill keyed by (ownerType, ownerId, kind, key)."
 atomPath: memories
-coordinate: "memories · 7/descent · a995f451"
-contentUuid: "b954ebf7-06d1-5df6-9f4d-93a66a38a4b0"
-diamondUuid: "8d8d0f09-1206-8473-88b7-f48b889d9a64"
-uuid: "a995f451-e3f0-8c02-a718-56642569c6bd"
-horo: 7
-bonds:
-  in:
-    - accounting
-    - akashic
-    - architecture
-    - diamond
-    - fields
-    - law
-    - mcp
-    - merge
-    - proof
-    - session
-    - standard
-    - transaction
-    - uuid
-  out:
-    - accounting
-    - akashic
-    - architecture
-    - diamond
-    - fields
-    - law
-    - mcp
-    - merge
-    - proof
-    - session
-    - standard
-    - transaction
-    - uuid
+coordinate: "memories · 8/crest · bcb33b95"
+contentUuid: "a548f680-321e-51c4-a05d-53033f58a95f"
+diamondUuid: "31be1258-2103-81af-98c9-a93c0979ff73"
+uuid: "bcb33b95-79e9-8634-8431-e30e8559a10f"
+horo: 8
 typography:
   partition: memories
   bondDegree: 43
-  neighbors:
-    - diamond
 standards:
   - "ISO 19011:2018 §6.4.6 audit-evidence (memory history audit-trailed)"
   - "ISO 19011:2018 §6.4.6 audit-evidence (memory history audit-trailed)`"
@@ -52,50 +21,8 @@ standards:
   - "W3C-JSON-LD-1.1"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - akashic
-    - architecture
-    - diamond
-    - fields
-    - law
-    - merge
-    - proof
-    - session
-    - standard
-    - transaction
-    - uuid
-  matrix:
-    - accounting
-    - akashic
-    - architecture
-    - diamond
-    - fields
-    - law
-    - mcp
-    - merge
-    - proof
-    - session
-    - standard
-    - transaction
-    - uuid
-  backlinks:
-    - accounting
-    - akashic
-    - architecture
-    - diamond
-    - fields
-    - law
-    - mcp
-    - merge
-    - proof
-    - session
-    - standard
-    - transaction
-    - uuid
 signatures:
-  computationUuid: "5b8abe14-3580-8c6d-8e11-b86f283350c2"
+  computationUuid: "44e57c8a-ae63-8a56-bf5e-c5ca902a293a"
   stages:
     - stage: path
       stageUuid: "3b11dd23-97ee-8f8a-8b73-84908b45483f"
@@ -106,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "1a06d511-99a4-8314-bb6b-3e4c50b2a7a6"
     - stage: horo
-      stageUuid: "612d61c5-9bbc-891c-8e9f-fea1c67d3295"
+      stageUuid: "3d13caa9-a662-86af-a19b-1eec1dd3f8d9"
     - stage: seal
       stageUuid: "9ec5b0d7-ac80-8380-a02d-223420724341"
     - stage: uuid
-      stageUuid: "8f64a805-aa6b-8d80-bf0c-463d6cae5348"
+      stageUuid: "2707005a-6e5a-8b20-a609-8e590a6c523e"
 version: 2
 ---
 # memories

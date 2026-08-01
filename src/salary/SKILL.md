@@ -2,77 +2,19 @@
 name: salary
 description: "Use when reasoning about salary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: salary
-coordinate: salary · 8/crest · 647d19a1
-contentUuid: "7888a975-df1d-5ae6-ba9b-572120a52847"
-diamondUuid: "2d92331b-441f-82ad-81b7-dfb3bc65f8ca"
-uuid: "647d19a1-3ca4-85db-8961-c0da678f1f03"
-horo: 8
-bonds:
-  in:
-    - base
-    - collapse
-    - completion
-    - currency
-    - estimated
-    - law
-    - merge
-    - sti
-    - training
-    - upon
-  out:
-    - base
-    - collapse
-    - completion
-    - currency
-    - estimated
-    - law
-    - merge
-    - sti
-    - training
-    - upon
+coordinate: "salary · 7/descent · 0f30fbed"
+contentUuid: "a04d269d-1a5e-5fd4-8f7d-3f94469eaddb"
+diamondUuid: "726958ba-acb2-85d6-b2ad-98d463f553db"
+uuid: "0f30fbed-694a-8d3d-a03c-d368764e677a"
+horo: 7
 typography:
   partition: salary
   bondDegree: 33
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - base
-    - collapse
-    - completion
-    - currency
-    - estimated
-    - law
-    - merge
-    - sti
-    - training
-    - upon
-  matrix:
-    - base
-    - collapse
-    - completion
-    - currency
-    - estimated
-    - law
-    - merge
-    - sti
-    - training
-    - upon
-  backlinks:
-    - base
-    - collapse
-    - completion
-    - currency
-    - estimated
-    - law
-    - merge
-    - sti
-    - training
-    - upon
 signatures:
-  computationUuid: "07292321-ea40-8002-b679-06087f3fff6f"
+  computationUuid: "3e8caaf6-52fc-80f1-8237-06e0b524cb05"
   stages:
     - stage: path
       stageUuid: "2c489882-11ab-88c5-b990-ba94ba45fe46"
@@ -83,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cb7aa72b-bc99-8d42-b55f-7f00485bb9d1"
     - stage: horo
-      stageUuid: "e78f4542-e3df-87b1-9445-da011734acb7"
+      stageUuid: "c779811b-b670-8838-bbce-e20f09b35501"
     - stage: seal
-      stageUuid: "9566d7b0-0582-8e5c-9d5d-7a1cd0c14a07"
+      stageUuid: "e94ab42d-bf9d-80e1-9a8c-ed7b5d6cd2b8"
     - stage: uuid
-      stageUuid: "6737b5f2-e53f-8819-b0e2-b89fa9af1f02"
+      stageUuid: "3198ca65-b10e-8d6e-9a8b-d76f5c21a1ec"
 version: 2
 ---
 # salary

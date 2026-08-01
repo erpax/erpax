@@ -1,138 +1,42 @@
 ---
 name: orders
 description: "Use when booking shop-floor production — the per-phase per-worker execution leaf with an options array, derived double-entry totals, a derived horo lifecycle, the forward conveyor between routing phases, and the piece-rate wage; evolved from 2.05M rows of the etrima work_orders ledger."
-atomPath: work/orders
-coordinate: work/orders · 4/weave · d1b101cc
-contentUuid: "7b8a28bd-32f6-543e-99f2-807d3b2ea9a1"
-diamondUuid: "e99af20a-84e3-8f57-9d73-f0b1be774242"
-uuid: "d1b101cc-9464-834d-bebc-d365453472d0"
-horo: 4
-bonds:
-  in:
-    - accounting
-    - allocation
-    - duality
-    - fractal
-    - hooks
-    - horo
-    - law
-    - materials
-    - orders
-    - packs
-    - party
-    - receipts
-    - routings
-    - runs
-    - shift
-    - shifts
-    - standard
-    - utility
-    - variances
-    - work
-  out:
-    - accounting
-    - allocation
-    - duality
-    - fractal
-    - hooks
-    - horo
-    - law
-    - materials
-    - orders
-    - packs
-    - party
-    - receipts
-    - routings
-    - runs
-    - shift
-    - shifts
-    - standard
-    - utility
-    - variances
+atomPath: "work/orders"
+coordinate: "work/orders · 7/descent · 82f9e9bb"
+contentUuid: "75788ad3-c534-520c-b78c-b1667720bebe"
+diamondUuid: "3fea2544-30c4-8fb4-8709-e16486869beb"
+uuid: "82f9e9bb-9d7f-8a5c-bc92-ed038b8916f9"
+horo: 7
 typography:
   partition: work
   bondDegree: 96
-  neighbors: []
 standards:
   - "IFRS IAS-19 §11 short-term-employee-benefits piece-rate"
   - "IFRS IAS-2 §10 §12 cost-of-conversion (the piece-rate wage = direct labour)"
   - "ISA-95"
   - "ISA-95:2013 §B.5 production-operations-management work-order-execution"
-  - "ISO-19011:2018 audit-trail production-execution"
   - "ISO-8601-1:2019 date-time started·completed·estimated"
-  - "ISO/IEC-29119"
+  - "ISO-8601-1:2019 date-time started·completed·estimated`"
   - "SOX §404 internal-controls production-control TOM-PROD-01"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - allocation
-    - duality
-    - fractal
-    - hooks
-    - horo
-    - law
-    - orders
-    - party
-    - shifts
-    - standard
-  matrix:
-    - accounting
-    - allocation
-    - duality
-    - fractal
-    - hooks
-    - horo
-    - law
-    - materials
-    - orders
-    - packs
-    - party
-    - receipts
-    - routings
-    - runs
-    - shift
-    - shifts
-    - standard
-    - utility
-    - variances
-  backlinks:
-    - accounting
-    - allocation
-    - duality
-    - fractal
-    - hooks
-    - horo
-    - law
-    - materials
-    - orders
-    - packs
-    - party
-    - receipts
-    - routings
-    - runs
-    - shift
-    - shifts
-    - standard
-    - utility
-    - variances
 signatures:
-  computationUuid: "a6a629b4-94a6-8419-8c97-e20fae34868f"
+  computationUuid: "a17ef847-772f-86ce-b8e2-8cdf4917712e"
   stages:
     - stage: path
       stageUuid: "e8875264-a571-8b60-aa3b-db8856a5a8c6"
     - stage: trinity
       stageUuid: "e382e574-0af9-8c5a-bbda-a3dfd0fda14c"
     - stage: boundary
-      stageUuid: "18d9a84d-977e-8d96-b985-38b7f06d9dbe"
+      stageUuid: "7d03b36f-6a42-8078-8680-e1f8db7b49fa"
     - stage: links
       stageUuid: "8cf50482-b4bc-8d71-b02d-f06c231527eb"
     - stage: horo
-      stageUuid: "061df4e2-6f57-827c-8f52-ecfa8cb9359f"
+      stageUuid: "2f0bcc3d-c9c0-8552-803c-75cc04e1ab14"
     - stage: seal
-      stageUuid: "73abfdd2-9daa-836a-b9e8-00af5a6f1d8c"
+      stageUuid: "35dd18e8-55e7-8642-b892-3c98ce797fc9"
     - stage: uuid
-      stageUuid: "17c737ed-8d64-815b-bf44-2c98c1fc3e07"
+      stageUuid: "7f34c1a6-db6a-86fc-9935-00745b15d3ca"
 version: 2
 ---
 # Workorders

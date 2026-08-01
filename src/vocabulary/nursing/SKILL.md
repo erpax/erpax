@@ -1,63 +1,35 @@
 ---
 name: nursing
 description: "Use when reasoning about nursing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/nursing
-coordinate: nursing · 1/base · 2c2b9e32
-contentUuid: "3f15b731-2308-51b7-81db-db8770629895"
-diamondUuid: "7a58a0c3-633f-827d-9b2c-afecededbd83"
-uuid: "2c2b9e32-8526-8191-9ce8-92a9b799b6d3"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/nursing"
+coordinate: "vocabulary/nursing · 4/weave · b3f77507"
+contentUuid: "e5765897-fff8-5992-8057-25d6c6a136ab"
+diamondUuid: "b7102ac8-dc3f-89c7-b935-defd1441e0a6"
+uuid: "b3f77507-d2a7-83a2-a2b3-403d9f43406c"
+horo: 4
 typography:
-  partition: nursing
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "38ae3a0c-a073-8cd3-a213-f8c6ebc1e2a6"
+  computationUuid: "b05d82f8-cde4-8954-a3ab-804e5d78b6be"
   stages:
     - stage: path
-      stageUuid: "2fbe61d8-17f6-87cc-b53b-cec2d7569dd0"
+      stageUuid: "a4754f84-eb89-8f0a-b1ea-2bb803855d47"
     - stage: trinity
-      stageUuid: "dc7737e7-4299-8be7-a994-348116dc7bf4"
+      stageUuid: "61577149-1612-8ffe-b883-2157e44f516f"
     - stage: boundary
-      stageUuid: "c72661ae-3bb7-8d5a-bb11-9e712013cd21"
+      stageUuid: "c2abd843-7bc5-8a72-b88e-3a2b7a9263ae"
     - stage: links
-      stageUuid: "90cb6e45-3862-89b5-b001-1be33bad9154"
+      stageUuid: "73abb282-54f0-8047-ab3a-3b1717642a9b"
     - stage: horo
-      stageUuid: "3945b370-3ac7-89e3-91a8-af17f2dd5aac"
+      stageUuid: "f1c433e8-7649-8498-a044-17bbd6b58433"
     - stage: seal
-      stageUuid: "159f8a07-5f73-8668-9994-bb9ae7a270ed"
+      stageUuid: "f05ba47a-063e-88e9-ba2e-cfb9d72ec571"
     - stage: uuid
-      stageUuid: "d8fbc087-dbd4-8294-958f-3e98be5e6a6e"
+      stageUuid: "0b499a62-b720-883b-9d52-772f8fd87d04"
 version: 2
 ---
 # nursing

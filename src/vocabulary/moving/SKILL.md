@@ -1,68 +1,35 @@
 ---
 name: moving
 description: "Use when reasoning about moving as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/moving
-coordinate: moving · 8/crest · c61cb440
-contentUuid: "4d4daf54-8ab1-5dd9-b884-5f66e98417de"
-diamondUuid: "3ee555bb-4e89-8f05-bdaf-ebd34cb001f1"
-uuid: "c61cb440-32c0-880d-9e1e-610dbf9b8ee4"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - company
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - company
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/moving"
+coordinate: "vocabulary/moving · 1/base · 94d6e4bd"
+contentUuid: "ea9ec7c7-0aa9-5d50-ae9e-f7d71c1ae2b8"
+diamondUuid: "0995a96a-c87e-8fa0-bc83-d9439fa4e5b8"
+uuid: "94d6e4bd-c221-8ac7-9eba-fa300783b875"
+horo: 1
 typography:
-  partition: moving
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - company
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - company
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - company
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "7b5b107b-9355-8842-877b-8b4dffc8b302"
+  computationUuid: "832b87d7-8726-82a6-8ca4-0e8461f680dc"
   stages:
     - stage: path
-      stageUuid: "dddb3ce7-0679-882a-8b22-cd9bfb3c1aa3"
+      stageUuid: "f1bced41-a274-8386-9eda-2126558f14c3"
     - stage: trinity
-      stageUuid: "8985f77d-b772-8210-a567-01191e3a14a7"
+      stageUuid: "e4af6b11-6046-8e7b-9dd3-2c2581f4b7e1"
     - stage: boundary
-      stageUuid: "ed436032-d9ae-856d-bf10-b81159f84eb6"
+      stageUuid: "6d60c486-b5b9-8211-9ab6-5844ecca5d26"
     - stage: links
-      stageUuid: "9257b06d-b263-8391-b938-91cd136516f5"
+      stageUuid: "5cf08f97-94aa-84fb-9523-47dfc257481b"
     - stage: horo
-      stageUuid: "b15bc810-f545-8aaa-bbda-96c93a278886"
+      stageUuid: "defead55-f216-86ef-a15c-93327e2b3194"
     - stage: seal
-      stageUuid: "70a78b2d-6d32-8f3e-a5ae-7d81a5a03ae8"
+      stageUuid: "e3288bb8-9c3f-8c68-b867-56c2c3cd3f8a"
     - stage: uuid
-      stageUuid: "33993635-82a0-8287-b147-876c69e5f6de"
+      stageUuid: "0f9c5f9a-06f3-8107-8778-ac2bef6c7ab9"
 version: 2
 ---
 # moving

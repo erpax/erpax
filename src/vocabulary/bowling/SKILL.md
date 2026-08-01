@@ -1,68 +1,35 @@
 ---
 name: bowling
 description: "Use when reasoning about bowling as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/bowling
-coordinate: bowling · 2/share · 5ad0b360
-contentUuid: "82dd32bf-ec5a-5d62-a9d0-2f6d7cd65836"
-diamondUuid: "0add39a5-5574-8be0-b3db-9640fc6351b2"
-uuid: "5ad0b360-b37a-8f36-8d84-b9db8b83a934"
+atomPath: "vocabulary/bowling"
+coordinate: "vocabulary/bowling · 2/share · c7b28fee"
+contentUuid: "f67dde47-7ecb-5868-b5e0-ce77e2913767"
+diamondUuid: "eff50e32-7d81-850b-b503-a33b3e8a3b42"
+uuid: "c7b28fee-64fe-8ae6-a45e-b4759db33b79"
 horo: 2
-bonds:
-  in:
-    - alley
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - alley
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: bowling
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - alley
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - alley
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - alley
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "9ca9aaf1-5c87-80a7-8de4-8549fe60603f"
+  computationUuid: "e3aa4cb0-84ff-80a3-bbdd-3720213e658e"
   stages:
     - stage: path
-      stageUuid: "3d804303-4929-8e29-91d5-7bf986490ca0"
+      stageUuid: "0f4bf8fd-1d94-8098-9eae-dc9d2c8c9e06"
     - stage: trinity
-      stageUuid: "0abb3b37-fa49-8f5f-a235-f1ed109a4b9d"
+      stageUuid: "18f6b5aa-9132-8955-9054-314ba8cce298"
     - stage: boundary
-      stageUuid: "b65d9abf-b610-86f5-bd3f-ca2e20071e0e"
+      stageUuid: "599a1b4e-6a24-8759-a44f-c3c07272adfd"
     - stage: links
-      stageUuid: "d56f4286-349e-8576-806e-49021922e369"
+      stageUuid: "cf7215c9-e799-8434-9432-8ef2587aa466"
     - stage: horo
-      stageUuid: "979d743b-f164-8a12-94f5-b2bb9362d1e4"
+      stageUuid: "57b1a8c0-a782-8dda-911e-1fb193100ffb"
     - stage: seal
-      stageUuid: "1703a869-9873-8f97-9c15-f453d6cb1b70"
+      stageUuid: "088a62ba-7aad-82ee-b134-f43ad9b23c88"
     - stage: uuid
-      stageUuid: "ea043814-cff8-8f25-94af-6b644c81e079"
+      stageUuid: "f26b7019-ebd2-8d4b-b54d-86e6a5f5d8da"
 version: 2
 ---
 # bowling

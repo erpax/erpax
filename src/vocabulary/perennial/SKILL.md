@@ -1,122 +1,34 @@
 ---
 name: perennial
 description: "Use when a crop lives and bears across many years — the multi-year woody crop (orchard, vineyard, cane): established once, ramping over years, bearing for decades, then renewed. Its productive plant is a depreciating fixed asset (IAS-16 bearer plant); only its growing produce is IAS-41. The antonym of the annual crop — renewal replaces rotation, yield ramps rather than resets."
-atomPath: vocabulary/perennial
-coordinate: perennial · 7/descent · ebdfb09e
-contentUuid: "3890cbb6-f4a6-5959-89f7-5ec405d73272"
-diamondUuid: "1b2186b8-1aee-8d45-b34f-a94903d15bc1"
-uuid: "ebdfb09e-b2ec-8271-b9b9-825d8ccb2887"
-horo: 7
-bonds:
-  in:
-    - agriculture
-    - assets
-    - crop
-    - dormancy
-    - graft
-    - harvest
-    - impairment
-    - law
-    - maturity
-    - rootstock
-    - rotation
-    - scion
-    - season
-    - spacing
-    - terroir
-    - yield
-  out:
-    - agriculture
-    - assets
-    - crop
-    - dormancy
-    - graft
-    - harvest
-    - impairment
-    - law
-    - maturity
-    - rootstock
-    - rotation
-    - scion
-    - season
-    - spacing
-    - terroir
-    - yield
+atomPath: "vocabulary/perennial"
+coordinate: "vocabulary/perennial · 2/share · 9e242395"
+contentUuid: "c4557bcb-4de5-56b4-afb4-aa5072ea974d"
+diamondUuid: "65ce604c-7009-8898-90c8-6b9c88c36dd1"
+uuid: "9e242395-a1ca-855b-a82e-d2c39aed8f73"
+horo: 2
 typography:
-  partition: perennial
+  partition: vocabulary
   bondDegree: 54
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - assets
-    - crop
-    - dormancy
-    - graft
-    - harvest
-    - impairment
-    - law
-    - maturity
-    - rootstock
-    - rotation
-    - scion
-    - season
-    - spacing
-    - terroir
-    - yield
-  matrix:
-    - agriculture
-    - assets
-    - crop
-    - dormancy
-    - graft
-    - harvest
-    - impairment
-    - law
-    - maturity
-    - rootstock
-    - rotation
-    - scion
-    - season
-    - spacing
-    - terroir
-    - yield
-  backlinks:
-    - agriculture
-    - assets
-    - crop
-    - dormancy
-    - graft
-    - harvest
-    - impairment
-    - law
-    - maturity
-    - rootstock
-    - rotation
-    - scion
-    - season
-    - spacing
-    - terroir
-    - yield
 signatures:
-  computationUuid: "bcf24c0c-fbee-8009-b9a5-b3362092ad3a"
+  computationUuid: "21eacba4-55e9-847f-b46c-27bd56712089"
   stages:
     - stage: path
-      stageUuid: "23616887-f8f6-84fc-86d1-65b0817c57bb"
+      stageUuid: "2daff38d-966d-8414-9192-1e540ef80e95"
     - stage: trinity
-      stageUuid: "b8bd8280-432b-8074-98ff-336cb4501600"
+      stageUuid: "aa2875c3-5bb1-85f2-bf75-ce4c7cc7dd87"
     - stage: boundary
-      stageUuid: "0be92b19-0e04-887f-8278-52dbb80372a6"
+      stageUuid: "836072e4-9058-85cd-aae8-f6439074475f"
     - stage: links
-      stageUuid: "631494ee-183a-8e4c-aecd-28bbfccd6efc"
+      stageUuid: "e72db1fd-aea5-8a2d-b78c-2b4be88308cd"
     - stage: horo
-      stageUuid: "1b23fd29-0a8a-8f9a-b091-adada6ba9170"
+      stageUuid: "8a3f8a9e-7df7-8ac2-b755-171dede2a3f1"
     - stage: seal
-      stageUuid: "76c89906-55e3-869a-9277-431b5c48ca16"
+      stageUuid: "12481dc0-0dc0-8c93-987c-6ba2bd14ad42"
     - stage: uuid
-      stageUuid: "c3496bf0-ce38-8f66-8fbc-de39296694b8"
+      stageUuid: "442f568a-2d8a-838e-83a7-a858776157c7"
 version: 2
 ---
 # perennial — a crop that lives and bears across many years

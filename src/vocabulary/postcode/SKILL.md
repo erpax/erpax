@@ -1,63 +1,35 @@
 ---
 name: postcode
 description: "Use when reasoning about postcode as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/postcode
-coordinate: postcode · 2/share · 67fb2b43
-contentUuid: "28197140-5bf7-53d7-a8f9-d9fc344b5d6e"
-diamondUuid: "ec39f7a9-3b6d-83fd-a13c-2c31bca0ee6f"
-uuid: "67fb2b43-199c-831b-8300-21e729e5b970"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/postcode"
+coordinate: "vocabulary/postcode · 7/descent · c5974e05"
+contentUuid: "13f4c6ae-74a2-5d2e-8bdd-d78754f86659"
+diamondUuid: "fe5f3190-16ec-8660-ba01-aed39dff98fe"
+uuid: "c5974e05-486c-85c5-a931-875c86833ef1"
+horo: 7
 typography:
-  partition: postcode
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "52a7ad96-72f3-818a-a1d8-ec3a572e5c2c"
+  computationUuid: "5236d484-7417-88a4-b949-5e641a1f4a96"
   stages:
     - stage: path
-      stageUuid: "f92d7611-4425-843e-ab18-b4c7c88ff44d"
+      stageUuid: "3e594012-13cc-8974-b547-c39d1b4d57f8"
     - stage: trinity
-      stageUuid: "84ea380a-80ca-8d09-b825-0c9ff3ee80b3"
+      stageUuid: "35e79ad5-aeda-81fe-88e7-dd573f1f5d8e"
     - stage: boundary
-      stageUuid: "f3769875-8709-8933-ad6a-522860aa90d9"
+      stageUuid: "f7402ac5-f277-810e-887e-96f3f4bdf0ef"
     - stage: links
-      stageUuid: "ea473ea9-89f9-8f11-8be0-5635ca2d1016"
+      stageUuid: "a791d79c-71bb-83b5-9965-accf30d79c23"
     - stage: horo
-      stageUuid: "a9c2f7db-8de3-8b5a-9443-0dc669fddf97"
+      stageUuid: "2cc4225c-e038-84ad-bf7b-39d72aeb9ad1"
     - stage: seal
-      stageUuid: "95decc7b-0565-830e-a1c9-e2ec5952df87"
+      stageUuid: "a3cbe4bb-f016-8f30-814a-3747f2d1dc73"
     - stage: uuid
-      stageUuid: "3b8d4b99-542f-8d8f-bd51-160de6b547bc"
+      stageUuid: "1830455c-13cb-8d0f-81f5-73b7206ffe5e"
 version: 2
 ---
 # postcode

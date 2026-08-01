@@ -1,8 +1,37 @@
 ---
 name: invisible
 description: "Use when matter lives at a path that cannot be addressed — a folder whose name is not one lowercase word has no lawful path, so no content-uuid, so no matrix node, so the fold never deduplicates it. This is NOT the alphanumeric-name axis restated: that counts NAMES and reads as cosmetic; this counts MATTER the corpus cannot see, which is where a second implementation grows unnoticed. Run: tsx src/rules/invisible/index.ts"
+atomPath: "rules/invisible"
+coordinate: "rules/invisible · 1/base · 8398607f"
+contentUuid: "6c2f8750-40da-501b-ac69-19204b447aed"
+diamondUuid: "51b0a975-3c40-80e7-b5f6-0545c066a46b"
+uuid: "8398607f-5a59-8537-a8a2-8a009e170e1e"
+horo: 1
+typography:
+  partition: rules
+  bondDegree: 15
+standards:
+  - "ISO/IEC 25010:2023 §5.6 maintainability — one source, addressable"
+bindings: []
+signatures:
+  computationUuid: "e603add6-2721-850e-91c3-5f0eba140eec"
+  stages:
+    - stage: path
+      stageUuid: "ecc36d2f-56e5-8528-b84d-22b7535d918d"
+    - stage: trinity
+      stageUuid: "1dd38642-5349-84f6-87f5-ff3f9c9a0aae"
+    - stage: boundary
+      stageUuid: "5e34bc02-ad46-8f41-b806-9cb3499c05c7"
+    - stage: links
+      stageUuid: "1ddf1daa-6e28-877d-ab8b-3f4af2d89603"
+    - stage: horo
+      stageUuid: "b5074d39-666c-8ac2-a39c-82ae2ac711a7"
+    - stage: seal
+      stageUuid: "20544ce3-8c16-86e6-95d2-585e70847def"
+    - stage: uuid
+      stageUuid: "59fea7c3-3d49-8570-a73f-facce573d43f"
+version: 2
 ---
-
 # invisible — if the path does not match the name, the quantum breaks
 
 The path **is** the account code ([[path]]), and the content-uuid folds from it. A folder named with a dot cannot be addressed: **no lawful path ⇒ no uuid ⇒ no node in the [[matrix]] ⇒ the dedup never runs over it.** Verified: the matrix holds **0** dotted paths. Whatever lives there is outside the corpus, and the fold's whole guarantee — same content, same id, merged — simply does not apply.

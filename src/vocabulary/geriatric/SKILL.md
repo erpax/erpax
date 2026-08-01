@@ -1,63 +1,35 @@
 ---
 name: geriatric
 description: "Use when reasoning about geriatric as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/geriatric
-coordinate: geriatric · 4/weave · 45bfdcc9
-contentUuid: "c5fae665-ec19-5509-8c6d-8464b263a53d"
-diamondUuid: "7ecf9b81-f57f-8479-bfb3-7b86f09feea3"
-uuid: "45bfdcc9-7e14-8e52-9d50-2d0c2adad433"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/geriatric"
+coordinate: "vocabulary/geriatric · 8/crest · 404d8ad1"
+contentUuid: "2bce2c6a-eb9a-58b8-9c7e-2617edcb800e"
+diamondUuid: "09c52b4c-6660-8c64-a2bf-93a6eb6bbf46"
+uuid: "404d8ad1-1a54-82cc-a738-fbda21af4d9e"
+horo: 8
 typography:
-  partition: geriatric
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "5b772c45-c98f-8b8d-ba62-4d8446394cc9"
+  computationUuid: "ca47b51e-e564-823b-9c01-989f6d31e938"
   stages:
     - stage: path
-      stageUuid: "f41d5258-ba31-8335-9cb5-0391ff978b85"
+      stageUuid: "349eba44-6988-8684-946c-b67812292e9b"
     - stage: trinity
-      stageUuid: "51ce8288-8d43-8d75-88cb-7d0c2db67f58"
+      stageUuid: "8dbd08f5-d9e8-88c3-8078-825bdc689795"
     - stage: boundary
-      stageUuid: "ac4e6861-d5f8-829f-9e4d-ae96207690f8"
+      stageUuid: "fb6ed5e7-fd3f-8f9e-8526-e19bfd13715f"
     - stage: links
-      stageUuid: "57f2d0ad-c6e8-8aac-80f6-58baabd2a148"
+      stageUuid: "def31726-83d6-87ec-b12a-927d3cee16d6"
     - stage: horo
-      stageUuid: "c172ee1a-32ac-89ca-8380-2facb038e7d8"
+      stageUuid: "691e8510-13e7-89c5-b939-1c0aa4488931"
     - stage: seal
-      stageUuid: "e77ba289-a232-8e91-bddb-9c7e662953f4"
+      stageUuid: "e6daed67-c046-8be9-b6a5-7ff5bce0276e"
     - stage: uuid
-      stageUuid: "204eafe5-4e69-88c0-bbb7-39cb5012cc89"
+      stageUuid: "1d1965d2-3e60-8112-b3a9-dcdde49f1d8f"
 version: 2
 ---
 # geriatric

@@ -1,164 +1,35 @@
 ---
 name: organization
 description: "Use when reasoning about organization — An organization such as a school, NGO, corporation, club, etc."
-atomPath: vocabulary/organization
-coordinate: organization · 8/crest · 7f59437f
-contentUuid: "422e23f7-a13e-50c2-9145-ea3951b22056"
-diamondUuid: "814db210-cd50-8908-a15d-0c8ad85f860f"
-uuid: "7f59437f-bd95-8908-a819-a114c0d39619"
+atomPath: "vocabulary/organization"
+coordinate: "vocabulary/organization · 8/crest · 684685bd"
+contentUuid: "c9d96e2f-cff2-5629-aeed-42bcce06ecc0"
+diamondUuid: "8850aef5-419c-8080-845c-dae274eb60eb"
+uuid: "684685bd-f8d8-808c-ad69-084282ae53ac"
 horo: 8
-bonds:
-  in:
-    - archive
-    - authenticator
-    - brand
-    - broadcaster
-    - consortium
-    - cooperative
-    - corporation
-    - educational
-    - government
-    - hiring
-    - hosting
-    - isic
-    - law
-    - media
-    - medical
-    - news
-    - parent
-    - plumber
-    - rescue
-    - research
-    - role
-    - search
-    - source
-    - sports
-    - sub
-    - tenant
-  out:
-    - archive
-    - authenticator
-    - brand
-    - broadcaster
-    - consortium
-    - cooperative
-    - corporation
-    - educational
-    - government
-    - hiring
-    - hosting
-    - isic
-    - law
-    - media
-    - medical
-    - news
-    - parent
-    - plumber
-    - rescue
-    - research
-    - role
-    - search
-    - source
-    - sports
-    - sub
-    - tenant
 typography:
-  partition: organization
-  bondDegree: 90
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 91
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - archive
-    - educational
-    - government
-    - hiring
-    - hosting
-    - law
-    - media
-    - medical
-    - news
-    - parent
-    - rescue
-    - research
-    - role
-    - search
-    - source
-    - sports
-    - sub
-  matrix:
-    - archive
-    - authenticator
-    - brand
-    - broadcaster
-    - consortium
-    - cooperative
-    - corporation
-    - educational
-    - government
-    - hiring
-    - hosting
-    - isic
-    - law
-    - media
-    - medical
-    - news
-    - parent
-    - plumber
-    - rescue
-    - research
-    - role
-    - search
-    - source
-    - sports
-    - sub
-    - tenant
-  backlinks:
-    - archive
-    - authenticator
-    - brand
-    - broadcaster
-    - consortium
-    - cooperative
-    - corporation
-    - educational
-    - government
-    - hiring
-    - hosting
-    - isic
-    - law
-    - media
-    - medical
-    - news
-    - parent
-    - plumber
-    - rescue
-    - research
-    - role
-    - search
-    - source
-    - sports
-    - sub
-    - tenant
 signatures:
-  computationUuid: "32709575-fd34-88a3-9c06-2c76d499e07a"
+  computationUuid: "2c8ff68a-7452-80bb-8c49-73923a40933d"
   stages:
     - stage: path
-      stageUuid: "15922ff5-3b8f-8b03-a511-9bbf1af2c3a3"
+      stageUuid: "e63dae20-c8df-84e5-ab25-da81d0c49e83"
     - stage: trinity
-      stageUuid: "3e7b5232-d6ef-8518-9359-6920c96a2c3a"
+      stageUuid: "14c243c5-6ad7-82ac-9030-275bfed14db2"
     - stage: boundary
-      stageUuid: "4680ff9e-a31f-8ef5-a7c3-130a0103d7cf"
+      stageUuid: "459f2ea5-ac5b-872c-832e-3001eae0d653"
     - stage: links
-      stageUuid: "17b83ace-496b-8ba6-8ddb-47d2f2a0301e"
+      stageUuid: "76dad1da-8929-8404-a507-5a97c7a4c4a1"
     - stage: horo
-      stageUuid: "a682b3a7-5015-89e1-875f-370d81f39aa3"
+      stageUuid: "08447aa5-5220-8fba-acb1-8e4d4ea9adbc"
     - stage: seal
-      stageUuid: "1c855a80-8fb3-803f-bb0c-3102d14b5600"
+      stageUuid: "1a6a540c-b365-89fd-a0da-2281f8586990"
     - stage: uuid
-      stageUuid: "e59ba987-3e1e-88df-84cf-a671d5ba846b"
+      stageUuid: "c39104e5-c0d2-8dd9-99e2-842278e5432b"
 version: 2
 ---
 # organization

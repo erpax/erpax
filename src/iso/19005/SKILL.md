@@ -2,25 +2,15 @@
 name: "19005"
 description: "Use when implementing or referencing `src/standards/iso-19005/`."
 atomPath: "iso/19005"
-coordinate: "iso/19005 · 2/share · 43ee3fbc"
-contentUuid: "04819d76-c2be-5cbf-a575-29073deadc66"
-diamondUuid: "2375d4a7-bbef-8632-aa89-94e4d9615ad0"
-uuid: "43ee3fbc-bcda-84b3-8696-91cdd725983c"
-horo: 2
-bonds:
-  in:
-    - iso
-    - law
-  out:
-    - law
+coordinate: "iso/19005 · 5/round · f45ade33"
+contentUuid: "6395e218-747e-5d2e-9b3c-5769bcbaacf9"
+diamondUuid: "7169c69b-b990-8d49-835a-7b5cc4ce09dd"
+uuid: "f45ade33-6fb3-890b-b9cf-623adff59032"
+horo: 5
 typography:
   partition: iso
-  bondDegree: 3
-  neighbors: []
+  bondDegree: 1
 standards:
-  - "EU-2000/31"
-  - "EU-2005/29"
-  - "EU-2011/83"
   - "EU-765/2008"
   - "EU-VAT-Implementing-Reg-282/2011"
   - "ISO-19005"
@@ -33,15 +23,8 @@ standards:
   - "ISO-32000"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-  matrix:
-    - law
-  backlinks:
-    - law
 signatures:
-  computationUuid: "838bc805-8b25-8d09-8570-81a6fc3a7a18"
+  computationUuid: "1791cc5d-5996-87df-9f51-3b1287597386"
   stages:
     - stage: path
       stageUuid: "fb414b43-c139-8f06-ac28-e9853f0eb463"
@@ -50,13 +33,13 @@ signatures:
     - stage: boundary
       stageUuid: "df70448e-0a49-85db-bbf6-24b305948752"
     - stage: links
-      stageUuid: "1efb4b11-1850-8308-9481-518cdad5c109"
+      stageUuid: "004b5792-5863-837e-8ced-a8c3395162dc"
     - stage: horo
-      stageUuid: "d8dad345-8cfc-8b62-b169-2d64b6290c48"
+      stageUuid: "4d5db45a-7c69-8bc7-9163-1055f956850e"
     - stage: seal
       stageUuid: "fd34bf22-2239-8b25-b082-5d9d7696cb83"
     - stage: uuid
-      stageUuid: "547f6e89-8720-849f-9626-2194b32fa359"
+      stageUuid: "c7584b92-d967-894c-8292-f219c429cdc6"
 version: 2
 ---
 # `src/standards/iso-19005/`

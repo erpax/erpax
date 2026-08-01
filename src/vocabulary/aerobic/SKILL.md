@@ -1,63 +1,35 @@
 ---
 name: aerobic
 description: "Use when reasoning about aerobic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/aerobic
-coordinate: aerobic · 1/base · e0994730
-contentUuid: "2ecab5ec-ed93-5f8c-b733-96fb2923bc6e"
-diamondUuid: "9c2e7717-e328-803c-ae77-2852baad6832"
-uuid: "e0994730-4389-860f-a44f-248fe0a4cf00"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/aerobic"
+coordinate: "vocabulary/aerobic · 7/descent · 3b06407d"
+contentUuid: "f7e36849-741f-5067-a4eb-1bc9e888ae94"
+diamondUuid: "8c89f12f-41b7-840e-8630-f6ac71a1b027"
+uuid: "3b06407d-c5d0-892a-958d-ce0ef8a41e44"
+horo: 7
 typography:
-  partition: aerobic
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "5571edcc-2d2f-84d9-ac96-3c46813bfcb9"
+  computationUuid: "aa2bc2c2-c549-8b78-8867-724ebf20a51e"
   stages:
     - stage: path
-      stageUuid: "846d58e2-e417-84c6-a853-e0855eb31a7b"
+      stageUuid: "2fe56e50-b620-87f5-a46e-1c4b12beb983"
     - stage: trinity
-      stageUuid: "099a439b-2923-8608-90f0-e9cc38243b64"
+      stageUuid: "3457c676-b3b0-8b0b-b112-3c2c581460c6"
     - stage: boundary
-      stageUuid: "334f64c3-329c-8cec-9a1a-2c3b248f5274"
+      stageUuid: "b0744e48-3c75-8d1d-8014-52d0b667430e"
     - stage: links
-      stageUuid: "75a3fbf8-d586-88ad-897a-32bf362a81ec"
+      stageUuid: "b333b9aa-cf26-89af-862a-68adbf9eac65"
     - stage: horo
-      stageUuid: "f48fbbc1-1c5d-802b-a900-f2b3ec4aedd6"
+      stageUuid: "c8bd8661-5f24-83d1-8082-48893048f12a"
     - stage: seal
-      stageUuid: "9f2069b6-d5e3-84b2-825d-8c18840c46ce"
+      stageUuid: "a63ddda2-3a9a-862f-a2d6-ab94a5a28356"
     - stage: uuid
-      stageUuid: "9df08972-d84e-8b1f-ab21-5e77ddd54c15"
+      stageUuid: "e1051d4f-9177-8a6f-bd43-a11f3bf24fe2"
 version: 2
 ---
 # aerobic

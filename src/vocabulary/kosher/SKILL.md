@@ -1,63 +1,35 @@
 ---
 name: kosher
 description: "Use when reasoning about kosher as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/kosher
-coordinate: kosher · 8/crest · 355ffee4
-contentUuid: "0e0150ff-7d03-52f9-9da3-d8e8b7506e7d"
-diamondUuid: "5dd2b786-0525-8d47-b587-092ed8ef35f8"
-uuid: "355ffee4-3e7f-8b12-b3d5-aac0d91cdc1c"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/kosher"
+coordinate: "vocabulary/kosher · 5/round · 81c87692"
+contentUuid: "a807b806-234f-5b24-80ce-8249acca2214"
+diamondUuid: "8b55cb1a-c333-8a53-873f-c953e38bc770"
+uuid: "81c87692-52bb-831e-af20-e0c0dca51e50"
+horo: 5
 typography:
-  partition: kosher
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "5f25c6e6-f53d-8c8e-89f1-000d19fa50c3"
+  computationUuid: "1eca8cb3-dc1c-8d4b-8f35-50eda61c028f"
   stages:
     - stage: path
-      stageUuid: "eb83d65c-7097-8e15-8189-fc335981a1e1"
+      stageUuid: "e454efb3-1c4c-8611-93aa-5155586bf968"
     - stage: trinity
-      stageUuid: "c5dca2a1-0677-8b69-9604-be0db5f369f9"
+      stageUuid: "0cb742cd-3dd1-8df2-b380-dd39fe58b198"
     - stage: boundary
-      stageUuid: "ef739ba6-3bff-818b-9cf9-8922653c2afa"
+      stageUuid: "0fd1b0ba-98e0-8421-af88-36d1ab19c780"
     - stage: links
-      stageUuid: "2ee38505-5036-832f-889d-e495661bbe1c"
+      stageUuid: "b913bc7e-a439-810a-a1e1-ad59a1b22749"
     - stage: horo
-      stageUuid: "8a5a0c62-fb6c-8df7-a907-aef4b0c8ce3c"
+      stageUuid: "56d406a8-10c1-8d74-9cfc-33c0e6d0c85a"
     - stage: seal
-      stageUuid: "1b9c0d6b-7fb3-8af3-a18a-2d38431be58d"
+      stageUuid: "56554b2a-2702-8f48-87fd-2a2ca0c7f82f"
     - stage: uuid
-      stageUuid: "56284304-f1ad-8a83-8a76-037dff1dadac"
+      stageUuid: "761d59ef-f8ee-8504-b5dd-eea8cecf7bc0"
 version: 2
 ---
 # kosher

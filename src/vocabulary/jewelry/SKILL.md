@@ -1,68 +1,35 @@
 ---
 name: jewelry
 description: "Use when reasoning about jewelry as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/jewelry
-coordinate: jewelry · 7/descent · a148312f
-contentUuid: "94ae455b-fa0b-59bf-8a79-9c994844fd04"
-diamondUuid: "922cc236-399f-8756-929b-da44a180b026"
-uuid: "a148312f-5623-81b9-8c8f-488d17758e76"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
+atomPath: "vocabulary/jewelry"
+coordinate: "vocabulary/jewelry · 1/base · 9531354e"
+contentUuid: "633121ba-5df2-557d-b2c7-9e99527e997c"
+diamondUuid: "98d75404-097d-8221-9c14-4df36a00c36d"
+uuid: "9531354e-8c7b-8b45-8638-231de7c09c7d"
+horo: 1
 typography:
-  partition: jewelry
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
 signatures:
-  computationUuid: "80f872a3-0e87-84af-b558-7f9a6fae9239"
+  computationUuid: "f9aa0bf7-f29e-8f7f-8c55-e0270528a9fc"
   stages:
     - stage: path
-      stageUuid: "dde452d5-a4f4-8393-bcbe-d821a76dfe0f"
+      stageUuid: "5e96e785-0a2b-81d4-b2c6-0cac23d04029"
     - stage: trinity
-      stageUuid: "6c39d188-4f34-890a-b3c0-2e1387c38dda"
+      stageUuid: "417d1cec-a02c-8461-8c01-2e98ef8f0053"
     - stage: boundary
-      stageUuid: "2bc95575-c0e6-8f2f-b52a-abaa722154eb"
+      stageUuid: "87bc7bf8-e9f0-811c-a42f-2d19a5ec90fa"
     - stage: links
-      stageUuid: "c107206a-d037-8762-9841-8ee67f6765ef"
+      stageUuid: "b7ae38c7-4d80-8813-9efd-83c0719cf399"
     - stage: horo
-      stageUuid: "2862365d-30b0-855c-addf-02f27b1a1365"
+      stageUuid: "2a8fca51-0b7f-8919-92f4-a51e8095b6a3"
     - stage: seal
-      stageUuid: "56d93ecf-1664-8df7-a68f-f5ad69d56ec3"
+      stageUuid: "24691f82-7808-8df7-b5a9-a9d5f1ae368a"
     - stage: uuid
-      stageUuid: "42f659d1-1fdf-854d-a9bc-8c9922b8d0bd"
+      stageUuid: "c925c5fb-459d-8b91-b3e8-714322361d16"
 version: 2
 ---
 # jewelry

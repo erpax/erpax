@@ -1,68 +1,35 @@
 ---
 name: pathology
 description: "Use when reasoning about pathology as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/pathology
-coordinate: pathology · 7/descent · e2624769
-contentUuid: "b5cd97e8-dec8-5845-8b2c-35bd184b5a63"
-diamondUuid: "d6c31023-e931-8130-8cd4-1077617272f7"
-uuid: "e2624769-7cc2-8457-a233-0f549a903f6a"
+atomPath: "vocabulary/pathology"
+coordinate: "vocabulary/pathology · 7/descent · 77cc9396"
+contentUuid: "728fb667-79df-5ef8-a4c3-560f83ef772c"
+diamondUuid: "cf74a5b0-efca-89b5-a36a-d091e962059c"
+uuid: "77cc9396-a876-83a2-a3aa-cd87c0b929fc"
 horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - test
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - test
 typography:
-  partition: pathology
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - test
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - test
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - test
 signatures:
-  computationUuid: "ef3c853e-60d2-8ad1-a834-d67fc496695a"
+  computationUuid: "f5db20fd-b580-8e2b-aae4-5ca749fb620d"
   stages:
     - stage: path
-      stageUuid: "f8a88148-734d-8e06-9ce5-495ca31b4360"
+      stageUuid: "f68e2da5-971f-84e1-985e-cc9a97a7c7d0"
     - stage: trinity
-      stageUuid: "1a517eeb-d952-8bf8-9511-1dcb9577876c"
+      stageUuid: "fa9190ca-b987-8da4-bead-5dac9ace4dec"
     - stage: boundary
-      stageUuid: "c5493f7d-0efb-88ff-aeb0-23677ca0ef72"
+      stageUuid: "e38e899c-7eab-80dd-8107-4b3d3191f5e3"
     - stage: links
-      stageUuid: "709d9752-1b36-8203-9ceb-d7d5137c539f"
+      stageUuid: "1cc98bf5-dca8-8169-a2a2-dd7c36511107"
     - stage: horo
-      stageUuid: "b7250168-1278-8983-8949-4899766dc5e8"
+      stageUuid: "32176244-06d7-88ba-9f08-64f2f346c97e"
     - stage: seal
-      stageUuid: "2a42f055-4d2d-8575-914c-b801171fb9ba"
+      stageUuid: "84522f84-62d7-8bd0-b64a-dc692678b3f3"
     - stage: uuid
-      stageUuid: "7caf4b30-2081-804f-bd2c-ac8897e1d06d"
+      stageUuid: "636aec9b-87bc-8445-95bc-e2539689aabe"
 version: 2
 ---
 # pathology

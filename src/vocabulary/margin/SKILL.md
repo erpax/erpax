@@ -1,68 +1,35 @@
 ---
 name: margin
 description: "Use when reasoning about margin as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/margin
-coordinate: margin · 7/descent · a5adee7b
-contentUuid: "5b72ad37-27a1-53c8-b620-6f0e25e5b2cc"
-diamondUuid: "196c7904-0718-8cf8-b445-0ad9243f9ead"
-uuid: "a5adee7b-6799-808a-8842-98ced5a06b47"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - error
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - error
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/margin"
+coordinate: "vocabulary/margin · 1/base · 40fe9a46"
+contentUuid: "2be83c1c-4261-5ef6-99c0-cd3d308e1f98"
+diamondUuid: "93619acc-cf2b-8127-9c84-a4b427f38d11"
+uuid: "40fe9a46-d5ee-860d-a499-1ef90f9a1eed"
+horo: 1
 typography:
-  partition: margin
-  bondDegree: 16
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 23
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - error
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - error
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - error
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "0555edb4-8759-873d-8ac1-239094bbfaef"
+  computationUuid: "2e48794f-25a9-8954-a513-b9e4da81f8bb"
   stages:
     - stage: path
-      stageUuid: "40a6fe2d-3b8c-8fc8-b9b4-fe1e10c007de"
+      stageUuid: "9a2f0128-c83c-803b-94b2-f5e8aa393cab"
     - stage: trinity
-      stageUuid: "1264c6bf-2722-8ed2-a33b-e13512b26d6d"
+      stageUuid: "683e73c3-e091-8ca8-b89a-828cb7c22856"
     - stage: boundary
-      stageUuid: "d3a6c36b-49e2-84a3-8dac-b39aa97c6596"
+      stageUuid: "8d637ada-b171-8213-bf41-d50734fc2208"
     - stage: links
-      stageUuid: "e2b55ed0-f061-82f4-9725-d3219a86561c"
+      stageUuid: "83a31396-7440-8d99-b10a-cdb364f17b74"
     - stage: horo
-      stageUuid: "40bc3468-2f40-817b-b817-7da1eaaa2614"
+      stageUuid: "f86215fc-4e4c-86fc-9470-74cb8a297f39"
     - stage: seal
-      stageUuid: "6f65ebb9-572b-8ecd-8a8f-f06cbcfb8493"
+      stageUuid: "0c466d79-0fa4-8dd0-9d13-3e0776b49002"
     - stage: uuid
-      stageUuid: "2b224c92-d3de-8e63-b7a3-3aff42bcc2af"
+      stageUuid: "56d11b6c-c0f0-8682-a304-4012e52c050d"
 version: 2
 ---
 # margin

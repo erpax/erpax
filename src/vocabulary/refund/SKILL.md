@@ -1,73 +1,35 @@
 ---
 name: refund
 description: "Use when reasoning about refund as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/refund
-coordinate: refund · 2/share · ea364385
-contentUuid: "01df2b4c-66e6-5e7e-a47d-24be4105976d"
-diamondUuid: "36c3b018-4730-8e01-a0c7-f3e88043e2df"
-uuid: "ea364385-789f-8abd-9c82-96db77cf24f2"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - enumeration
-    - law
-    - merge
-    - sti
-    - type
-  out:
-    - collapse
-    - enumeration
-    - law
-    - merge
-    - sti
-    - type
+atomPath: "vocabulary/refund"
+coordinate: "vocabulary/refund · 5/round · 73403c14"
+contentUuid: "5d4d7326-e6fe-5df8-b12a-d1b1af820e49"
+diamondUuid: "dc21e608-67b5-868c-aa4d-8946a13cad3f"
+uuid: "73403c14-b633-8a06-852d-3859fd56b7b4"
+horo: 5
 typography:
-  partition: refund
-  bondDegree: 19
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 21
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - enumeration
-    - law
-    - merge
-    - sti
-    - type
-  matrix:
-    - collapse
-    - enumeration
-    - law
-    - merge
-    - sti
-    - type
-  backlinks:
-    - collapse
-    - enumeration
-    - law
-    - merge
-    - sti
-    - type
 signatures:
-  computationUuid: "8e959232-a76c-8bd8-b6ac-997d148401e0"
+  computationUuid: "ba2da72b-2018-8da6-aa28-4e319e822bd0"
   stages:
     - stage: path
-      stageUuid: "0f6c481e-0263-899b-8199-5d936cb4ff9c"
+      stageUuid: "5cf38c0a-d025-8890-83b5-63b697ab9037"
     - stage: trinity
-      stageUuid: "68e688b0-8a7f-8aac-bbc0-66182257cc4c"
+      stageUuid: "e2c1c49d-a558-831c-b83a-51a62c764acc"
     - stage: boundary
-      stageUuid: "513933be-28f7-83f6-a904-9d25262ec359"
+      stageUuid: "322f9170-e2e1-8ac0-be39-34410d51467a"
     - stage: links
-      stageUuid: "043cad11-5cf3-835f-a6ec-0aeb0d4daf1f"
+      stageUuid: "3739b9ef-4413-8943-a8a0-d8c23c77b956"
     - stage: horo
-      stageUuid: "c21a6a41-0310-857e-8666-468d83ddbdbf"
+      stageUuid: "d8ea5451-2c80-81ca-b5c0-721f8f090798"
     - stage: seal
-      stageUuid: "32d52fa9-cce5-8e38-bbae-cfce37baf842"
+      stageUuid: "d94c67c5-3d22-88d7-9dc5-b8c50aa44c22"
     - stage: uuid
-      stageUuid: "de8d9ef8-49e1-8915-99a8-b4197bdf6c9b"
+      stageUuid: "183d7e09-c9f1-8e2c-9975-b473cee200b7"
 version: 2
 ---
 # refund

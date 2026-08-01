@@ -2,62 +2,19 @@
 name: seating
 description: "Use when reasoning about seating as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: seating
-coordinate: seating · 1/base · 45bb8267
-contentUuid: "36e8dc13-fd80-5939-831f-d83b723d2127"
-diamondUuid: "ff5f6ead-fe34-820f-8f03-f6b2b6d08888"
-uuid: "45bb8267-357c-8b58-950b-dfabee7f5850"
-horo: 1
-bonds:
-  in:
-    - capacity
-    - collapse
-    - law
-    - merge
-    - sti
-    - type
-    - vehicle
-  out:
-    - capacity
-    - collapse
-    - law
-    - merge
-    - sti
-    - type
-    - vehicle
+coordinate: "seating · 8/crest · 5a70bb2f"
+contentUuid: "6969f740-86f3-5348-a702-affcf198bcbf"
+diamondUuid: "0943a284-884d-8943-8976-0b9415ba9ae7"
+uuid: "5a70bb2f-b965-878e-95c7-a78107db131d"
+horo: 8
 typography:
   partition: seating
   bondDegree: 22
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - capacity
-    - collapse
-    - law
-    - merge
-    - sti
-    - type
-    - vehicle
-  matrix:
-    - capacity
-    - collapse
-    - law
-    - merge
-    - sti
-    - type
-    - vehicle
-  backlinks:
-    - capacity
-    - collapse
-    - law
-    - merge
-    - sti
-    - type
-    - vehicle
 signatures:
-  computationUuid: "a48f7110-2929-8537-9f07-1210f05e1073"
+  computationUuid: "36cb8acb-eaaa-8a52-aae9-9f0123e030c5"
   stages:
     - stage: path
       stageUuid: "04642440-16a1-8e23-b94b-629be81bf1bb"
@@ -68,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5e3b2b8b-442e-8cdc-9801-874202be7bcf"
     - stage: horo
-      stageUuid: "ca948a07-845a-8ced-a115-b020ffc50499"
+      stageUuid: "d0984410-d0fc-8fa5-86e9-cde3cf88eabf"
     - stage: seal
-      stageUuid: "bff44085-1bda-8a33-b7b5-a66c364d3b8c"
+      stageUuid: "e151609e-8f5b-8caf-9522-f725d0ff2930"
     - stage: uuid
-      stageUuid: "cb4fb4ed-ad5e-8453-90cc-58d2bbead5a3"
+      stageUuid: "3fe48036-d7ec-8584-9241-7badd12f0dfc"
 version: 2
 ---
 # seating

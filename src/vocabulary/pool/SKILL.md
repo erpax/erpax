@@ -1,73 +1,35 @@
 ---
 name: pool
 description: "Use when reasoning about pool as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/pool
-coordinate: pool · 5/round · 3f32fff8
-contentUuid: "c65e638c-e683-574c-82df-5a361f4cf8f4"
-diamondUuid: "5df8eb76-65d7-89b3-b167-10462ddc8018"
-uuid: "3f32fff8-3f18-84b7-a237-16304bc3756b"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - public
-    - sti
-    - swimming
-  out:
-    - collapse
-    - law
-    - merge
-    - public
-    - sti
-    - swimming
+atomPath: "vocabulary/pool"
+coordinate: "vocabulary/pool · 8/crest · ed12b359"
+contentUuid: "65a0fb89-ce4d-5aff-861b-ec07eefcb426"
+diamondUuid: "8ee456b7-213b-8fa5-aa4b-699b64a13c24"
+uuid: "ed12b359-55e7-880f-9f83-90a077430768"
+horo: 8
 typography:
-  partition: pool
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - public
-    - sti
-    - swimming
-  matrix:
-    - collapse
-    - law
-    - merge
-    - public
-    - sti
-    - swimming
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - public
-    - sti
-    - swimming
 signatures:
-  computationUuid: "b2889be3-136d-8ea3-8a72-86629a998f7c"
+  computationUuid: "9ce0c10c-d885-8e00-877b-2341e483d02d"
   stages:
     - stage: path
-      stageUuid: "b7ed9c54-9d33-89c2-8990-b8a08100c70b"
+      stageUuid: "46db701b-9a63-8ef7-8d34-7feebe90b4af"
     - stage: trinity
-      stageUuid: "95fedf03-66fd-8f42-b767-109c720b7231"
+      stageUuid: "9f58bae9-3919-8820-a9f0-8063d2354cbe"
     - stage: boundary
-      stageUuid: "5daa9680-5818-8234-b46a-e4329280c539"
+      stageUuid: "b0a24b41-3a69-8945-aace-c5c805b48a62"
     - stage: links
-      stageUuid: "dc07aa76-f4d8-8d07-9171-bc4e1e498ff0"
+      stageUuid: "3dd68385-1a38-8991-9801-433f4b90051c"
     - stage: horo
-      stageUuid: "3fbb8df0-94fa-8001-a86e-7e7b2502f7d3"
+      stageUuid: "994f90ff-2e0a-8f23-abe6-94721bb21247"
     - stage: seal
-      stageUuid: "9d48ae4b-52d9-821f-abe2-ed05b001ce8e"
+      stageUuid: "3e5842ca-28df-83af-8c5b-c6d0f18c0cb3"
     - stage: uuid
-      stageUuid: "021f6069-18a8-853d-aded-70039d697f6d"
+      stageUuid: "ada574ee-f3fe-804c-b16c-38380ed7bae7"
 version: 2
 ---
 # pool

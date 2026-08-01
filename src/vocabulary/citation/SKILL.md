@@ -1,58 +1,35 @@
 ---
 name: citation
 description: "Use when reasoning about citation — A citation or reference to another creative work, such as another publication, web page, scholarly article, etc."
-atomPath: vocabulary/citation
-coordinate: citation · 5/round · 41fe9b9f
-contentUuid: "1941fe3c-9e6f-5946-b709-ae27ceb6029a"
-diamondUuid: "263e0b72-142d-896e-a7d5-a6c253b53dc0"
-uuid: "41fe9b9f-8f64-8f00-adb2-c46284c63aa1"
-horo: 5
-bonds:
-  in:
-    - creative
-    - law
-    - thing
-  out:
-    - creative
-    - law
-    - thing
+atomPath: "vocabulary/citation"
+coordinate: "vocabulary/citation · 8/crest · 4ffb155a"
+contentUuid: "34b30049-c94d-575f-b865-2822b907dbab"
+diamondUuid: "294a16d8-7510-84a3-b7c6-3094e3801000"
+uuid: "4ffb155a-cb4c-89b8-a8c0-d8f343f28a36"
+horo: 8
 typography:
-  partition: citation
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - creative
-    - law
-    - thing
-  matrix:
-    - creative
-    - law
-    - thing
-  backlinks:
-    - creative
-    - law
-    - thing
 signatures:
-  computationUuid: "1bfb0555-9070-8ab9-8262-446a16416549"
+  computationUuid: "2a2c0aab-fe6e-8a7e-a41c-2b6b2ef53d59"
   stages:
     - stage: path
-      stageUuid: "31d90618-2781-81ea-b9c4-5b68d0fb1f44"
+      stageUuid: "fad45c2c-96ac-82da-aa1f-c7c37af22c70"
     - stage: trinity
-      stageUuid: "4ab1c4e0-23f8-83de-9985-62fcdcc99a95"
+      stageUuid: "b922faa9-4fdb-8794-9ef6-7f59cdd174b4"
     - stage: boundary
-      stageUuid: "7ea1349d-f745-8bbc-a540-192d9986bb38"
+      stageUuid: "07d514f6-d4a7-8cbe-b829-d6da19d74c47"
     - stage: links
-      stageUuid: "99648a15-7dbf-8eac-b287-ab6e47e00f19"
+      stageUuid: "fc9082a5-15a0-8ee7-a702-12c2d5910ed3"
     - stage: horo
-      stageUuid: "161b0ee7-8b7f-849c-ae1c-206d6b121b04"
+      stageUuid: "6010c47a-987b-88c5-9d93-c829a9ef3cd7"
     - stage: seal
-      stageUuid: "8f6cc1a8-1b15-8416-89a1-2c2d4b74a56e"
+      stageUuid: "fb9104ba-624c-8327-8ffb-7d062504a137"
     - stage: uuid
-      stageUuid: "b0938cae-ea15-8089-8045-c4b7c9704d98"
+      stageUuid: "4a6a621e-8a8d-8cc6-aef0-488db9f74096"
 version: 2
 ---
 # citation

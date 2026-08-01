@@ -1,53 +1,35 @@
 ---
 name: boolean
 description: "Use when reasoning about boolean — Boolean: True or False."
-atomPath: vocabulary/boolean
-coordinate: boolean · 5/round · d24eb0c0
-contentUuid: "1edd42c1-e34d-5d43-af33-954e181d2617"
-diamondUuid: "e6cef1a0-342e-8502-94dd-f366ff111773"
-uuid: "d24eb0c0-8d7b-8dde-a339-8cbf5b53490c"
-horo: 5
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/boolean"
+coordinate: "vocabulary/boolean · 1/base · abc81dff"
+contentUuid: "394acc89-d74a-5574-9184-fe8bab9d9473"
+diamondUuid: "bbb4eec7-2172-8858-ba1f-dca312899007"
+uuid: "abc81dff-03fd-8287-b7c6-17e95283b333"
+horo: 1
 typography:
-  partition: boolean
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "a1c7168c-e95a-8965-beb9-314cc160da50"
+  computationUuid: "edf67254-8159-81e1-8c0c-4331b7406f36"
   stages:
     - stage: path
-      stageUuid: "5d20368f-d68d-8bb1-a9ce-a0f358415e3a"
+      stageUuid: "a6af2483-4cd9-86d1-89b7-f8511d629ad7"
     - stage: trinity
-      stageUuid: "da2eab1e-991a-82bd-9db6-353b167b4638"
+      stageUuid: "fab7f062-276a-86a4-a9df-bcaaeb0f0d97"
     - stage: boundary
-      stageUuid: "19f1b06c-5d5d-8862-9d5a-08d5a5040ff0"
+      stageUuid: "da5589f9-4a8b-82af-9254-2155a1407933"
     - stage: links
-      stageUuid: "d83c7454-be26-8860-959c-82ca9bfe019a"
+      stageUuid: "cb839cab-c616-85f5-a9ee-fce6254ebd25"
     - stage: horo
-      stageUuid: "f9a01297-a3c1-8be9-b35e-ba5bb4e562fc"
+      stageUuid: "a051173f-59e1-891e-8714-ccc2bdc81180"
     - stage: seal
-      stageUuid: "72b0f254-d818-898f-a2dc-743c09d2b167"
+      stageUuid: "4b783cdc-b316-8d34-9663-6c4d3d0fa481"
     - stage: uuid
-      stageUuid: "0c7087b1-cb32-8dec-9624-d0f5cae40a7a"
+      stageUuid: "c031b41b-65ff-8399-92b9-baefbb2082f2"
 version: 2
 ---
 # boolean

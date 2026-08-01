@@ -1,57 +1,34 @@
 ---
 name: field
 description: Use when modelling one field — the singular model of the fields collection (the plural store); one typed attribute of a record schema.
-atomPath: vocabulary/field
-coordinate: field · 4/weave · 357e27c9
-contentUuid: "01bbc474-6de7-5c39-94d7-6480263f1f5e"
-diamondUuid: "a45af76a-2d56-81f5-a768-ee690120adcd"
-uuid: "357e27c9-0ba1-839e-8e4d-8a6f7ff4e348"
-horo: 4
-bonds:
-  in:
-    - balance
-    - fields
-    - schema
-  out:
-    - balance
-    - fields
-    - schema
+atomPath: "vocabulary/field"
+coordinate: "vocabulary/field · 5/round · 43cf8e07"
+contentUuid: "9185ea90-8729-54da-9052-3a55a55b927c"
+diamondUuid: "09127a0d-d179-800f-93ee-6136c6d1b8a4"
+uuid: "43cf8e07-829c-8aa2-aa00-e04bfb18f23e"
+horo: 5
 typography:
-  partition: field
-  bondDegree: 15
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 21
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - fields
-    - schema
-  matrix:
-    - balance
-    - fields
-    - schema
-  backlinks:
-    - balance
-    - fields
-    - schema
 signatures:
-  computationUuid: "1e05c28d-18c8-8498-8465-4eaa17471eef"
+  computationUuid: "5f580b01-26fa-8865-92da-dfbfe83c210a"
   stages:
     - stage: path
-      stageUuid: "34e19f8d-d527-8b60-a73b-a179118d4e36"
+      stageUuid: "75793b96-5c0a-8cd6-8115-2d0a05841216"
     - stage: trinity
-      stageUuid: "7b24b40c-8cc1-8b2b-bc49-be233d23f0b3"
+      stageUuid: "dd2e6fd1-3085-870a-88a8-8c966d41814b"
     - stage: boundary
-      stageUuid: "3667d5af-9ff1-8ea8-846d-7395ec131992"
+      stageUuid: "31ee353a-7465-8f55-a2ee-f3da2147f939"
     - stage: links
-      stageUuid: "f187654d-43f7-8179-8b70-b705a4314b5e"
+      stageUuid: "562bf265-921f-8849-8e9c-f5e7994748dc"
     - stage: horo
-      stageUuid: "48582712-8229-844d-bd3e-e0185c985fdb"
+      stageUuid: "0b5f656e-7a8d-8f4d-b366-56d3b032ea95"
     - stage: seal
-      stageUuid: "940856ac-8014-8e8e-b7e0-4f5010a00c47"
+      stageUuid: "07114752-6e85-8f1e-a697-ea1726123020"
     - stage: uuid
-      stageUuid: "031c755e-bb9c-85ce-878b-6e1ace1119ee"
+      stageUuid: "d4f4b687-2bb0-89c7-9427-c34f3ba65058"
 version: 2
 ---
 # field — the model of one [[fields]] row

@@ -2,71 +2,19 @@
 name: live
 description: "Use when reasoning about live as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: live
-coordinate: "live · 4/weave · 70e54776"
-contentUuid: "e8bbbf12-4489-52a1-a100-8321b8cc4964"
-diamondUuid: "621c5f93-fd76-80c2-9b8e-033fdd2aa4d7"
-uuid: "70e54776-b916-87f0-b80f-579642b5f421"
-horo: 4
-bonds:
-  in:
-    - blog
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - posting
-    - realtime
-    - sti
-    - update
-  out:
-    - blog
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - posting
-    - realtime
-    - sti
-    - update
+coordinate: "live · 8/crest · 260fd5be"
+contentUuid: "d0a794c4-2f63-5d64-bee5-8f4671a3e5fc"
+diamondUuid: "53196fb7-5ada-8df0-80cf-d94980bc9acd"
+uuid: "260fd5be-b270-8af3-b413-48a82b56aeea"
+horo: 8
 typography:
   partition: live
   bondDegree: 0
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - blog
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - posting
-    - sti
-    - update
-  matrix:
-    - blog
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - posting
-    - realtime
-    - sti
-    - update
-  backlinks:
-    - blog
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - posting
-    - realtime
-    - sti
-    - update
 signatures:
-  computationUuid: "a46c5e88-9e79-8825-8a31-ba29bafd5f05"
+  computationUuid: "f5387ed7-ebaa-8c49-ac07-196bfdf4ee12"
   stages:
     - stage: path
       stageUuid: "24ade51b-1490-8efd-be01-2d5b44a254c9"
@@ -77,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "517bcf4d-bd91-82eb-aeb0-ef7f1a055e80"
     - stage: horo
-      stageUuid: "667616c4-b6c7-84be-bd8a-a10392b82167"
+      stageUuid: "58ecd0db-adb1-8b80-bcbf-594d1f19f399"
     - stage: seal
       stageUuid: "9ed19630-8f1c-8530-885f-2ee46274abc8"
     - stage: uuid
-      stageUuid: "697d86c7-919a-8c72-809f-a375899a67a6"
+      stageUuid: "a0903a10-ab49-849a-8ab0-ac1502971899"
 version: 2
 ---
 # live

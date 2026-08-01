@@ -2,27 +2,14 @@
 name: modifications
 description: "Use when recording a lease modification — classify as separate-lease (§44) or not-separate (§45/§46 partial/full termination), capture pre/post terms, and compute liability remeasurement + ROU adjustment. The IFRS-16 §44-46 modification register."
 atomPath: "leases/lease/modifications"
-coordinate: "leases/lease/modifications · 4/weave · 2b0a5f23"
-contentUuid: "6393fb7e-03f1-5cab-8353-527d96324897"
-diamondUuid: "28366434-0e90-85b4-9abb-f7891e30bd3b"
-uuid: "2b0a5f23-5171-83ab-9f33-117a905eabd1"
+coordinate: "leases/lease/modifications · 4/weave · ca7ebd50"
+contentUuid: "1be4e921-6c17-5152-a96a-d99a1e191be9"
+diamondUuid: "a4522deb-d3a4-8ba0-838b-ca2d8ed80694"
+uuid: "ca7ebd50-ea4c-8b43-83b0-a72459171f5a"
 horo: 4
-bonds:
-  in:
-    - accounting
-    - entries
-    - lease
-    - leases
-    - postings
-  out:
-    - accounting
-    - entries
-    - leases
-    - postings
 typography:
   partition: leases
   bondDegree: 13
-  neighbors: []
 standards:
   - "IFRS IFRS-16 §44 separate-lease-criterion"
   - "IFRS IFRS-16 §45 not-separate-lease-modification"
@@ -37,24 +24,8 @@ standards:
   - "US-GAAP ASC-842-10-25-8 lease-modification-classification"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - entries
-    - leases
-    - postings
-  matrix:
-    - accounting
-    - entries
-    - leases
-    - postings
-  backlinks:
-    - accounting
-    - entries
-    - leases
-    - postings
 signatures:
-  computationUuid: "e29ff277-59f2-8bda-965b-6f2f8bde2de2"
+  computationUuid: "e1d16f29-49b2-88b9-8211-d732ce592d30"
   stages:
     - stage: path
       stageUuid: "387d6002-6c26-87de-975b-a8c131c33f94"
@@ -65,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "0dbc3a2b-f709-86c7-abd8-6223b3ba9db9"
     - stage: horo
-      stageUuid: "64f68094-57a3-80d8-b6fc-f82cbce7db29"
+      stageUuid: "79a5858a-a59d-8d35-bab9-0702aa8992c6"
     - stage: seal
       stageUuid: "55e2106c-237a-843c-a3b9-d4468f302d64"
     - stage: uuid
-      stageUuid: "6b82456d-8b83-83b7-99d9-4eaca2a7a8c4"
+      stageUuid: "142dfb12-e43f-8cfa-a130-e21427bc8239"
 version: 2
 ---
 # lease-modifications

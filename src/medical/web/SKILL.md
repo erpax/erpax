@@ -2,91 +2,19 @@
 name: web
 description: "Use when reasoning about web as a medical facet of [[medical]] — vocabulary pivot to @/web; nested not duplicated."
 atomPath: "medical/web"
-coordinate: "medical/web · 1/base · fdb51db4"
-contentUuid: "147b265c-ca19-5883-93a4-02269070a11b"
-diamondUuid: "576de8af-38ef-8364-bd6e-56f70567758b"
-uuid: "fdb51db4-172f-8cab-b274-073375868cdb"
-horo: 1
-bonds:
-  in:
-    - api
-    - application
-    - checkin
-    - collapse
-    - content
-    - element
-    - feed
-    - law
-    - medical
-    - merge
-    - page
-    - site
-    - sti
-    - time
-    - web
-  out:
-    - api
-    - application
-    - checkin
-    - collapse
-    - content
-    - element
-    - feed
-    - law
-    - medical
-    - merge
-    - page
-    - site
-    - sti
-    - time
-    - web
+coordinate: "medical/web · 7/descent · a0357319"
+contentUuid: "6f537d2b-1b59-52c1-a839-c883a09ec3d9"
+diamondUuid: "ccff53b1-78f5-8f44-9078-1060a2824238"
+uuid: "a0357319-cd98-80fd-97e2-42bd831eaf5d"
+horo: 7
 typography:
   partition: medical
   bondDegree: 55
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - medical
-    - merge
-    - web
-  matrix:
-    - api
-    - application
-    - checkin
-    - collapse
-    - content
-    - element
-    - feed
-    - law
-    - medical
-    - merge
-    - page
-    - site
-    - sti
-    - time
-    - web
-  backlinks:
-    - api
-    - application
-    - checkin
-    - collapse
-    - content
-    - element
-    - feed
-    - law
-    - medical
-    - merge
-    - page
-    - site
-    - sti
-    - time
-    - web
 signatures:
-  computationUuid: "2f8707e6-af20-8dc9-b3ea-25040d9141f1"
+  computationUuid: "55ae392c-fa50-8bae-b848-ab0a2f3e62d2"
   stages:
     - stage: path
       stageUuid: "a38e47af-2c06-80ca-ac7b-9ba5ce91f203"
@@ -97,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ea102f52-1093-8678-a489-f379325b6ff9"
     - stage: horo
-      stageUuid: "1f27cf15-49e9-8a25-8bd1-ee0e54a57dc8"
+      stageUuid: "65500ad8-ffc4-8182-a3b6-0f17473e1ea5"
     - stage: seal
       stageUuid: "cb359883-0de5-858d-99d0-ba2e170e2425"
     - stage: uuid
-      stageUuid: "ddaa263d-fc29-8893-8523-9e9520595a1f"
+      stageUuid: "4cfd7bda-3798-86f7-a076-5176a3ead64e"
 version: 2
 ---
 # medical/web — medical facet

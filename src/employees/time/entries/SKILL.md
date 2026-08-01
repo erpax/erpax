@@ -2,81 +2,14 @@
 name: entries
 description: "Use when logging daily employee work time — regular hours, overtime, night shifts, PTO, sick and parental leave — with kind-based GL allocation, billable-rate project costing, approval workflow, and payroll-run linkage for IAS-19 variable pay. The daily time-entry collection."
 atomPath: "employees/time/entries"
-coordinate: "employees/time/entries · 8/crest · 685d51c4"
-contentUuid: "185859d5-7411-516a-835a-c0c32b575e32"
-diamondUuid: "a81cac0b-874d-87cc-a666-16d970831e12"
-uuid: "685d51c4-f2cb-8e2d-baed-2823616f446d"
-horo: 8
-bonds:
-  in:
-    - accounting
-    - accrual
-    - adjustments
-    - assets
-    - bookings
-    - classifications
-    - combinations
-    - cycles
-    - deduction
-    - deferral
-    - deferredrevenue
-    - elimination
-    - eliminations
-    - events
-    - harvest
-    - identity
-    - journals
-    - law
-    - modifications
-    - orders
-    - postings
-    - prepaid
-    - proof
-    - provision
-    - recognition
-    - reconciliations
-    - refunds
-    - runs
-    - sales
-    - standard
-    - time
-    - transactions
-  out:
-    - accounting
-    - accrual
-    - adjustments
-    - assets
-    - bookings
-    - classifications
-    - combinations
-    - cycles
-    - deduction
-    - deferral
-    - deferredrevenue
-    - elimination
-    - eliminations
-    - events
-    - harvest
-    - identity
-    - journals
-    - law
-    - modifications
-    - orders
-    - postings
-    - prepaid
-    - proof
-    - provision
-    - recognition
-    - reconciliations
-    - refunds
-    - runs
-    - sales
-    - standard
-    - transactions
+coordinate: "employees/time/entries · 4/weave · d78b726a"
+contentUuid: "77b4596e-9b81-5fdf-9228-afbbd2307dc4"
+diamondUuid: "e984a0bc-0783-8f4c-af85-11a2275970c4"
+uuid: "d78b726a-4e3a-8981-b0ad-32ac768947af"
+horo: 4
 typography:
   partition: employees
-  bondDegree: 113
-  neighbors: []
+  bondDegree: 107
 standards:
   - "GDPR Art.6(1)(b) lawful-basis-contract"
   - "IFRS IAS-19 employee-benefits short-term"
@@ -89,81 +22,8 @@ standards:
   - "US-GAAP ASC-710 compensation-general"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - horo
-    - identity
-    - law
-    - proof
-    - standard
-    - transaction
-  matrix:
-    - accounting
-    - accrual
-    - adjustments
-    - assets
-    - bookings
-    - classifications
-    - combinations
-    - cycles
-    - deduction
-    - deferral
-    - deferredrevenue
-    - elimination
-    - eliminations
-    - events
-    - harvest
-    - identity
-    - journals
-    - law
-    - modifications
-    - orders
-    - postings
-    - prepaid
-    - proof
-    - provision
-    - recognition
-    - reconciliations
-    - refunds
-    - runs
-    - sales
-    - standard
-    - transactions
-  backlinks:
-    - accounting
-    - accrual
-    - adjustments
-    - assets
-    - bookings
-    - classifications
-    - combinations
-    - cycles
-    - deduction
-    - deferral
-    - deferredrevenue
-    - elimination
-    - eliminations
-    - events
-    - harvest
-    - identity
-    - journals
-    - law
-    - modifications
-    - orders
-    - postings
-    - prepaid
-    - proof
-    - provision
-    - recognition
-    - reconciliations
-    - refunds
-    - runs
-    - sales
-    - standard
-    - transactions
 signatures:
-  computationUuid: "56ca2d38-1ef5-822c-96fd-f00548031c4d"
+  computationUuid: "22fd6d95-e616-86d7-826d-986644b0a001"
   stages:
     - stage: path
       stageUuid: "1b92ceef-4dfe-8d92-a351-672b766c8203"
@@ -174,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "f00b89f2-9089-8ef9-924c-04afbc163542"
     - stage: horo
-      stageUuid: "85b085b2-ae88-8356-9d6b-d4ca5daeadad"
+      stageUuid: "8f420419-63c0-8442-b9de-152238d6fee5"
     - stage: seal
       stageUuid: "7c708ada-c129-830e-85f8-59de4f192e14"
     - stage: uuid
-      stageUuid: "be18422e-bf86-8127-866b-f65ac4fa6ab4"
+      stageUuid: "891984e7-7100-810b-921d-f54799eac7e9"
 version: 2
 ---
 # time-entries

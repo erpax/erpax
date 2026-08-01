@@ -1,78 +1,35 @@
 ---
 name: goods
 description: "Use when reasoning about goods as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/goods
-coordinate: goods · 5/round · cf5e1049
-contentUuid: "4c40dec8-624f-5de1-a110-28f82078e85e"
-diamondUuid: "f4748d73-d6a5-8e3d-8881-f95630c29bf5"
-uuid: "cf5e1049-2183-84cd-bc6c-cc41a87ea645"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - home
-    - law
-    - merge
-    - sporting
-    - sti
-    - store
-  out:
-    - collapse
-    - home
-    - law
-    - merge
-    - sporting
-    - sti
-    - store
+atomPath: "vocabulary/goods"
+coordinate: "vocabulary/goods · 2/share · 906c0f88"
+contentUuid: "343bf8f4-db41-5622-9b3e-616eb8c8e5da"
+diamondUuid: "da100951-6542-8e1b-859d-a73f9a4fe237"
+uuid: "906c0f88-b12b-8c8f-abc9-7c9fb685e526"
+horo: 2
 typography:
-  partition: goods
+  partition: vocabulary
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - home
-    - law
-    - merge
-    - sporting
-    - sti
-    - store
-  matrix:
-    - collapse
-    - home
-    - law
-    - merge
-    - sporting
-    - sti
-    - store
-  backlinks:
-    - collapse
-    - home
-    - law
-    - merge
-    - sporting
-    - sti
-    - store
 signatures:
-  computationUuid: "d8468d33-93cb-8220-a0bf-c4564140ebfe"
+  computationUuid: "471b5cf2-dfe1-875f-a593-5d649cad30e6"
   stages:
     - stage: path
-      stageUuid: "5b7ea029-5396-8f90-b153-83c840e94c94"
+      stageUuid: "21fff675-b221-815b-b1e0-4328156a53cc"
     - stage: trinity
-      stageUuid: "c17d2eca-bbcd-8933-b9fd-12c486cc79b7"
+      stageUuid: "ef0fcd7e-3bce-8bbb-9ae7-46ab313513c1"
     - stage: boundary
-      stageUuid: "58a0a244-1c81-89bf-9d42-2ed9ef3aa0a9"
+      stageUuid: "722c6fc2-ec1c-8ed7-b2cc-2cd12fd25699"
     - stage: links
-      stageUuid: "ce217a9c-7170-8b32-b13d-ba16b27785df"
+      stageUuid: "3825ab0b-d34f-8d12-9647-a48dec376114"
     - stage: horo
-      stageUuid: "6df13335-a6e6-87ee-affa-c051ad26ca51"
+      stageUuid: "dddd4a71-8ef1-8e41-87f6-87e542aafe36"
     - stage: seal
-      stageUuid: "691b74b7-5140-8d99-8462-a126870f510a"
+      stageUuid: "e50f6e97-e337-8bdb-8809-8dbbc07a8812"
     - stage: uuid
-      stageUuid: "28db2bfe-d36e-8b37-b53c-6c1eeba08196"
+      stageUuid: "3a1c9a96-af3a-83ec-b140-731d2b5421a1"
 version: 2
 ---
 # goods

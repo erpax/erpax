@@ -2,70 +2,21 @@
 name: insurance
 description: "Use when reasoning about insurance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: insurance
-coordinate: "insurance · 4/weave · 0788f930"
-contentUuid: "0f2ab44a-f639-530e-8166-b3bae9dd8fdd"
-diamondUuid: "eacd4c46-348d-8ef4-b1f3-4a7e38b38e1f"
-uuid: "0788f930-66a3-88a2-bf3b-f3702314abe8"
+coordinate: "insurance · 4/weave · 527b4a02"
+contentUuid: "7772654b-c381-51d8-8a20-c717962435a9"
+diamondUuid: "c3ded634-6a8b-88f2-bdf3-adc7c2ddbeba"
+uuid: "527b4a02-9b6f-8a28-80c2-8bc1cd7cc9d3"
 horo: 4
-bonds:
-  in:
-    - agency
-    - collapse
-    - health
-    - included
-    - law
-    - merge
-    - plan
-    - sti
-  out:
-    - agency
-    - collapse
-    - health
-    - included
-    - law
-    - merge
-    - plan
-    - sti
 typography:
   partition: insurance
   bondDegree: 27
-  neighbors: []
 standards:
   - "IFRS-13"
   - "IFRS-17"
-  - "ILO-C100"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - agency
-    - collapse
-    - health
-    - included
-    - law
-    - merge
-    - plan
-    - sti
-  matrix:
-    - agency
-    - collapse
-    - health
-    - included
-    - law
-    - merge
-    - plan
-    - sti
-  backlinks:
-    - agency
-    - collapse
-    - health
-    - included
-    - law
-    - merge
-    - plan
-    - sti
 signatures:
-  computationUuid: "1642ac39-6f29-8caf-8285-527fe49628bb"
+  computationUuid: "c8e20ab1-8795-88ec-bd0d-c54bc087332b"
   stages:
     - stage: path
       stageUuid: "74bd54f6-6cd9-85dc-a711-372d13a5136e"
@@ -76,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "ee4f2a9e-bc9e-8895-a05e-0c4c2accdf80"
     - stage: horo
-      stageUuid: "f856d57d-463f-8aa3-9e85-baea46db9dcb"
+      stageUuid: "161990ba-1b68-8f1d-857d-f99b8a9f9e6d"
     - stage: seal
       stageUuid: "86b33dd0-5f10-85aa-8179-290ec6f30095"
     - stage: uuid
-      stageUuid: "4abf64f3-a7f3-8609-a700-1ced600cf24b"
+      stageUuid: "d67418c2-ea46-8afd-af1f-941c8d53b9a9"
 version: 2
 ---
 # insurance

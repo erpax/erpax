@@ -1,166 +1,34 @@
 ---
 name: finality
 description: "Use when reasoning about whether a collapsed state can be undone — finality is the conjugate of speed, the master axis the payment rails revealed; reversible holds a superposition with a compensating path (love), final posts one tamper-anchored entry whose only recourse is a governance judgment (fear)."
-atomPath: vocabulary/finality
-coordinate: finality · 4/weave · 67471bbe
-contentUuid: "12b3e0e3-f360-5f82-aff4-630339a3947a"
-diamondUuid: "1f77bebb-5fbf-8f71-a933-fb65731cf309"
-uuid: "67471bbe-7129-8ece-ad87-cd0494854338"
-horo: 4
-bonds:
-  in:
-    - anchor
-    - balance
-    - biometric
-    - cost
-    - deploy
-    - device
-    - emr
-    - engineering
-    - entropy
-    - entry
-    - fear
-    - fs
-    - governance
-    - gravity
-    - law
-    - love
-    - merge
-    - number
-    - pi
-    - reality
-    - request
-    - reverse
-    - sanitization
-    - snapshot
-    - speed
-    - tamper
-    - uuid
-  out:
-    - anchor
-    - balance
-    - biometric
-    - cost
-    - deploy
-    - device
-    - emr
-    - engineering
-    - entropy
-    - entry
-    - fear
-    - fs
-    - governance
-    - gravity
-    - law
-    - love
-    - merge
-    - number
-    - pi
-    - reality
-    - request
-    - reverse
-    - sanitization
-    - snapshot
-    - speed
-    - tamper
-    - uuid
+atomPath: "vocabulary/finality"
+coordinate: "vocabulary/finality · 7/descent · 7732a85d"
+contentUuid: "fa4343fc-0958-5221-80ec-5c7d7940b7f1"
+diamondUuid: "82db287b-2c3c-8118-aa7f-f8cd3bfd6130"
+uuid: "7732a85d-efdc-8632-8563-ff7916fab4d3"
+horo: 7
 typography:
-  partition: finality
+  partition: vocabulary
   bondDegree: 84
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - anchor
-    - balance
-    - cost
-    - entropy
-    - entry
-    - fear
-    - governance
-    - gravity
-    - law
-    - love
-    - merge
-    - reality
-    - reverse
-    - speed
-    - tamper
-    - uuid
-  matrix:
-    - anchor
-    - balance
-    - biometric
-    - cost
-    - deploy
-    - device
-    - emr
-    - engineering
-    - entropy
-    - entry
-    - fear
-    - fs
-    - governance
-    - gravity
-    - law
-    - love
-    - merge
-    - number
-    - pi
-    - reality
-    - request
-    - reverse
-    - sanitization
-    - snapshot
-    - speed
-    - tamper
-    - uuid
-  backlinks:
-    - anchor
-    - balance
-    - biometric
-    - cost
-    - deploy
-    - device
-    - emr
-    - engineering
-    - entropy
-    - entry
-    - fear
-    - fs
-    - governance
-    - gravity
-    - law
-    - love
-    - merge
-    - number
-    - pi
-    - reality
-    - request
-    - reverse
-    - sanitization
-    - snapshot
-    - speed
-    - tamper
-    - uuid
 signatures:
-  computationUuid: "a531512e-156f-8fee-bec5-d5f4a9856391"
+  computationUuid: "465c2ad0-2609-8a04-a572-8c5672012641"
   stages:
     - stage: path
-      stageUuid: "96a7361a-4ddf-8eaa-9c1b-53b4626225d4"
+      stageUuid: "91670349-4b94-8bcb-9319-5083d67bdcaa"
     - stage: trinity
-      stageUuid: "9e676371-c132-8487-bc9e-fe3ad134d0a0"
+      stageUuid: "8d0ce746-bd39-8615-a713-7655dc0c391b"
     - stage: boundary
-      stageUuid: "b80558b6-7bc0-8a06-9218-532f92afdc66"
+      stageUuid: "c8c14b38-34fc-8f60-b3d6-90fc9bb7bf7a"
     - stage: links
-      stageUuid: "0a4bed79-cc23-8b1b-8636-967284f0a4f3"
+      stageUuid: "f8203ca4-15ba-839d-b5db-81f2b45ecf11"
     - stage: horo
-      stageUuid: "cdf6cba0-dad5-8d5f-b8ac-41a82708b777"
+      stageUuid: "11a8e7b0-d4d4-88fc-bdad-19ad6c027979"
     - stage: seal
-      stageUuid: "ce8fda16-8432-8b00-bcce-d773cb6b11a1"
+      stageUuid: "a4300f2c-b620-87cb-9f9d-fe63e7c3a6e9"
     - stage: uuid
-      stageUuid: "592b9550-8b2f-89a5-83b4-32f92f28037f"
+      stageUuid: "f132f251-460c-8707-8adc-23b601d04459"
 version: 2
 ---
 # finality — the conjugate of speed (recourse from collapse)

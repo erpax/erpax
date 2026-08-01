@@ -1,63 +1,35 @@
 ---
 name: inseam
 description: "Use when reasoning about inseam as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/inseam
-coordinate: inseam · 5/round · 07ec956c
-contentUuid: "3c815813-c9b8-57c6-8f2b-a5156cbbf6e1"
-diamondUuid: "d33b8712-1b61-8549-a31f-5cee1cba999b"
-uuid: "07ec956c-84f5-8496-9995-95015356748f"
+atomPath: "vocabulary/inseam"
+coordinate: "vocabulary/inseam · 5/round · 1df07f85"
+contentUuid: "89cd434d-3ac3-54f0-b915-5da5fba1fca1"
+diamondUuid: "19a7de21-32f8-81c7-829f-304a628a6025"
+uuid: "1df07f85-1270-8c17-a5df-f589eee8e704"
 horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: inseam
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "1c767eda-9895-89ce-8480-5e7f993963d2"
+  computationUuid: "b0860bc8-a4cc-8a08-8adf-9b699012222e"
   stages:
     - stage: path
-      stageUuid: "88909dcf-2072-8617-8003-f4d9646da08d"
+      stageUuid: "9db7770b-5f69-821a-af8d-cd865ee09b33"
     - stage: trinity
-      stageUuid: "0401e34e-d2f2-8d15-b6e0-2807fb3225e7"
+      stageUuid: "1f0e854e-ffa3-862a-bff3-03ce3b6bdaec"
     - stage: boundary
-      stageUuid: "94bfcfe8-8ec8-8fd2-9ef6-06f5080bdce3"
+      stageUuid: "d2529e1c-6192-887c-9fea-ae4f550b6785"
     - stage: links
-      stageUuid: "8d7c5db2-e1a8-84c3-8827-88e76d969c28"
+      stageUuid: "b2a691e8-a9d9-81ce-a0e2-b8280a022f14"
     - stage: horo
-      stageUuid: "197717a3-8f81-8a04-bd90-c62a4af68f77"
+      stageUuid: "834277e4-b63b-87bb-898e-c311869124e8"
     - stage: seal
-      stageUuid: "1d522240-2eb0-8c35-8833-0d7869c792b5"
+      stageUuid: "db5947e4-5bfc-8fd2-9f18-b2e9ab01a0b7"
     - stage: uuid
-      stageUuid: "d8d392f1-6b16-8716-8544-202680e88712"
+      stageUuid: "228dd23e-b695-8fd0-83e9-931a94fa4a10"
 version: 2
 ---
 # inseam

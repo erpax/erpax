@@ -2,39 +2,14 @@
 name: periods
 description: "Use when managing the tax-period workflow per jurisdiction — aligning tax filing deadlines with fiscal periods, documenting transfer-pricing adjustment counts, tracking readiness (pending-closing → adjustment-posted → tax-closed), and maintaining a tamper-proof audit chain for tax-authority compliance. The per-jurisdiction tax-period workflow node."
 atomPath: "fiscal/periods/tax/periods"
-coordinate: "fiscal/periods/tax/periods · 2/share · f5c660c2"
-contentUuid: "a7fd4722-741d-58de-bc96-ee81396c9353"
-diamondUuid: "56b6246c-42c2-8bdb-ad3b-dce1cb9b6e36"
-uuid: "f5c660c2-f220-8b6a-936f-b2e45cc8ed5e"
+coordinate: "fiscal/periods/tax/periods · 2/share · 37a18412"
+contentUuid: "a139b0a0-6f30-539c-8076-632360089622"
+diamondUuid: "81fbcc12-f55b-8d85-8e37-707b0ac742a2"
+uuid: "37a18412-51b5-88d7-a273-35b1b2ae09aa"
 horo: 2
-bonds:
-  in:
-    - accounting
-    - accrual
-    - adjustments
-    - events
-    - law
-    - periods
-    - quota
-    - share
-    - shares
-    - snapshots
-    - tax
-  out:
-    - accounting
-    - accrual
-    - adjustments
-    - events
-    - law
-    - periods
-    - quota
-    - share
-    - shares
-    - snapshots
 typography:
   partition: fiscal
   bondDegree: 0
-  neighbors: []
 standards:
   - "ISO-8601-1:2019 period-dates"
   - "ISO-8601-1:2019 period-dates`"
@@ -44,34 +19,8 @@ standards:
   - "SAF-T OECD reporting-period"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - periods
-  matrix:
-    - accounting
-    - accrual
-    - adjustments
-    - events
-    - law
-    - periods
-    - quota
-    - share
-    - shares
-    - snapshots
-  backlinks:
-    - accounting
-    - accrual
-    - adjustments
-    - events
-    - law
-    - periods
-    - quota
-    - share
-    - shares
-    - snapshots
 signatures:
-  computationUuid: "ef74f754-9510-83a0-882a-68322c14a036"
+  computationUuid: "e9fc9d1d-e05c-8ca7-b253-0356f8216936"
   stages:
     - stage: path
       stageUuid: "1f065327-e346-86c8-838a-83be125eb5fc"
@@ -82,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "40693600-f29d-86b6-a592-683b1d030126"
     - stage: horo
-      stageUuid: "97597466-f22b-833b-8e7a-621495da9b92"
+      stageUuid: "de4b61a3-3dfc-80f7-895e-fa34b236572c"
     - stage: seal
       stageUuid: "89401540-14bb-85b7-88eb-2f7ebb7d3a7f"
     - stage: uuid
-      stageUuid: "13da3fe7-fbac-864b-8a9e-295ca9b647f4"
+      stageUuid: "4b78e320-8057-841e-b374-8f08e1b5d618"
 version: 2
 ---
 # tax-periods

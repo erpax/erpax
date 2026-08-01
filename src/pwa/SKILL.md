@@ -2,122 +2,34 @@
 name: pwa
 description: "Use when the offline web surface must stay trustworthy — service-worker cache keys, background-sync queue durability, manifest integrity, push dedup; every Progressive Web App pain point collapsed to a content-uuid problem."
 atomPath: pwa
-coordinate: pwa · 2/share · 5aad04e4
-contentUuid: "7055f457-4b65-5c3e-bd20-baae376101e6"
-diamondUuid: "3461e682-2a5e-894a-a488-abf3a48bb389"
-uuid: "5aad04e4-48c0-8b2d-ad32-acb6becc18d3"
-horo: 2
-bonds:
-  in:
-    - cache
-    - cost
-    - diamond
-    - duality
-    - fractal
-    - identity
-    - law
-    - merge
-    - plugin
-    - proof
-    - public
-    - pwa
-    - queue
-    - sequence
-    - standard
-    - uuid
-    - worker
-  out:
-    - cache
-    - cost
-    - diamond
-    - duality
-    - fractal
-    - identity
-    - law
-    - merge
-    - plugin
-    - proof
-    - public
-    - pwa
-    - queue
-    - sequence
-    - standard
-    - uuid
-    - worker
+coordinate: "pwa · 7/descent · f06264c4"
+contentUuid: "aa87c248-41da-5f8b-a50b-c382c42f52cd"
+diamondUuid: "a5286074-706c-8dbf-b7d1-54bcd630816a"
+uuid: "f06264c4-ce74-87f7-8bc6-7221afa99f01"
+horo: 7
 typography:
   partition: pwa
   bondDegree: 65
-  neighbors:
-    - diamond
 standards:
-  - "ISO 19011:2018 §6.4.6 (PWA cache + queue audit-trailed)"
   - RFC 9562 §5.8 + RFC 8785 (uuid composition)
+  - "RFC 9562 §5.8 + RFC 8785 (uuid composition)`"
   - "RFC-8785"
   - W3C Cache API + W3C IndexedDB 3.0 + W3C OPFS
+  - "W3C Cache API + W3C IndexedDB 3.0 + W3C OPFS`"
   - W3C Push API + W3C Notifications API
+  - "W3C Push API + W3C Notifications API`"
   - "W3C Service Workers (W3C-SW)"
+  - "W3C Service Workers (W3C-SW)`"
   - "W3C Web App Manifest (W3C-WAM)"
+  - "W3C Web App Manifest (W3C-WAM)`"
+  - "— the instrument reads SKILL.md) -->"
 bindings:
-  - assets/ASSETS
-  - browser/BROWSER
-  - images/IMAGES
-  - r2_buckets/R2
-neighbors:
-  wikilink:
-    - cache
-    - cost
-    - diamond
-    - duality
-    - fractal
-    - identity
-    - law
-    - merge
-    - plugin
-    - proof
-    - public
-    - queue
-    - sequence
-    - standard
-    - uuid
-    - worker
-  matrix:
-    - cache
-    - cost
-    - diamond
-    - duality
-    - fractal
-    - identity
-    - law
-    - merge
-    - plugin
-    - proof
-    - public
-    - pwa
-    - queue
-    - sequence
-    - standard
-    - uuid
-    - worker
-  backlinks:
-    - cache
-    - cost
-    - diamond
-    - duality
-    - fractal
-    - identity
-    - law
-    - merge
-    - plugin
-    - proof
-    - public
-    - pwa
-    - queue
-    - sequence
-    - standard
-    - uuid
-    - worker
+  - "assets/ASSETS"
+  - "browser/BROWSER"
+  - "images/IMAGES"
+  - "r2_buckets/R2"
 signatures:
-  computationUuid: "bc4c9be5-3ea5-83cf-847d-2ccac5aa03ff"
+  computationUuid: "6fe0b0ff-1ab0-8df6-be6f-4ef5ab375d64"
   stages:
     - stage: path
       stageUuid: "676397c4-de7a-80f0-a0ed-b7ebbf44bd01"
@@ -128,11 +40,11 @@ signatures:
     - stage: links
       stageUuid: "3ebf72d4-ca43-84f7-bbf1-614f5dde77db"
     - stage: horo
-      stageUuid: "ec0684b5-48a4-8b91-9412-2c804e12454a"
+      stageUuid: "cf50c0e7-5996-8d2e-8a43-8bd6e332275c"
     - stage: seal
-      stageUuid: "68ac116d-6d83-8268-bcc8-835584db53a4"
+      stageUuid: "5bbab41d-c2cb-8eab-b456-5c2d964fe8c9"
     - stage: uuid
-      stageUuid: "1b1748a7-00b8-8f20-b1cd-4ae30e665221"
+      stageUuid: "cbb0d6cd-5707-8de0-bb3c-d98d6716d385"
 version: 2
 ---
 # pwa — every offline pain point collapses to a content-uuid

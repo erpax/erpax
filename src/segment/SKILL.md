@@ -2,75 +2,18 @@
 name: segment
 description: "Use when identifying and reporting operating segments per IFRS-8 — revenue/expense/asset/liability grouping for disclosure and management reporting; distinct from cost-center dimension"
 atomPath: segment
-coordinate: segment · 2/share · 6a3f2b62
-contentUuid: "85691261-9ead-5e34-a617-70aff757da89"
-diamondUuid: "b451ec50-7141-8993-9b0c-296225bf2512"
-uuid: "6a3f2b62-51ba-8774-9880-62e4449bd6ec"
+coordinate: "segment · 2/share · af431415"
+contentUuid: "7efac2d2-d49a-5b5c-8523-4fd0111e4929"
+diamondUuid: "ed92dd44-1766-82f4-8ee1-4c2884c21684"
+uuid: "af431415-9a70-8841-93b3-b7a477c1f7ad"
 horo: 2
-bonds:
-  in:
-    - awareness
-    - centers
-    - cohort
-    - diffusion
-    - dimension
-    - law
-    - leadscore
-    - reportings
-    - retention
-    - statements
-    - upsell
-  out:
-    - awareness
-    - centers
-    - cohort
-    - diffusion
-    - dimension
-    - law
-    - leadscore
-    - reportings
-    - retention
-    - statements
-    - upsell
 typography:
   partition: segment
   bondDegree: 33
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - centers
-    - dimension
-    - law
-    - reportings
-    - statements
-  matrix:
-    - awareness
-    - centers
-    - cohort
-    - diffusion
-    - dimension
-    - law
-    - leadscore
-    - reportings
-    - retention
-    - statements
-    - upsell
-  backlinks:
-    - awareness
-    - centers
-    - cohort
-    - diffusion
-    - dimension
-    - law
-    - leadscore
-    - reportings
-    - retention
-    - statements
-    - upsell
 signatures:
-  computationUuid: "916eb418-a4ae-884e-9935-225fa47af306"
+  computationUuid: "2c4a1ec2-ebaf-8fa6-a1af-d14a7a55b155"
   stages:
     - stage: path
       stageUuid: "5fe44f3b-679a-8478-b2f1-f818def80af0"
@@ -81,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c711f04b-5046-8486-8a68-e0b7288733e7"
     - stage: horo
-      stageUuid: "ba23a203-720c-82af-b307-bce80cd080f9"
+      stageUuid: "165e0f81-cd5a-8eb1-8a2f-64996b0b5324"
     - stage: seal
-      stageUuid: "7d808221-a5b8-844a-9b51-66a200cbf2a8"
+      stageUuid: "d516b4f6-8cc4-8118-8e7f-b978af04a2a1"
     - stage: uuid
-      stageUuid: "113d92b0-e5fb-8a03-886a-4f5c06cec9bd"
+      stageUuid: "66e361a5-e16b-8fa0-8cb5-eb1a46981d9e"
 version: 2
 ---
 # segment

@@ -2,76 +2,19 @@
 name: graph
 description: "Use when modeling a directed graph of nodes and edges — neighbors and breadth-first reachability over an edge list; the shape of the corpus itself, atoms as nodes and links as edges."
 atomPath: graph
-coordinate: "graph · 1/base · 34b7e55d"
-contentUuid: "3e48a7d5-7071-55e8-bafd-ae2f5640192d"
-diamondUuid: "4eddd081-d0e7-8c09-8a34-84e0f55f5534"
-uuid: "34b7e55d-8187-8ff4-aa79-00ea586ea51c"
-horo: 1
-bonds:
-  in:
-    - atom
-    - entanglement
-    - graph
-    - law
-    - link
-    - links
-    - matrix
-    - merge
-    - node
-    - quantum
-  out:
-    - atom
-    - entanglement
-    - graph
-    - law
-    - link
-    - links
-    - matrix
-    - merge
-    - node
-    - quantum
+coordinate: "graph · 2/share · e4a306e0"
+contentUuid: "195c7cba-ce78-59b3-98f4-27f01dd7cd63"
+diamondUuid: "aa5cc4bd-a81f-8614-9d96-43f494733b6e"
+uuid: "e4a306e0-662c-8a90-9702-46d3222b4681"
+horo: 2
 typography:
   partition: graph
   bondDegree: 36
-  neighbors: []
 standards:
   - "directed graph (nodes + edges), breadth-first reachability"
 bindings: []
-neighbors:
-  wikilink:
-    - atom
-    - entanglement
-    - law
-    - link
-    - links
-    - matrix
-    - merge
-    - node
-    - quantum
-  matrix:
-    - atom
-    - entanglement
-    - graph
-    - law
-    - link
-    - links
-    - matrix
-    - merge
-    - node
-    - quantum
-  backlinks:
-    - atom
-    - entanglement
-    - graph
-    - law
-    - link
-    - links
-    - matrix
-    - merge
-    - node
-    - quantum
 signatures:
-  computationUuid: "fcf53d54-0f8d-8bf0-b597-15b1baf0f76a"
+  computationUuid: "95c3f612-f060-8c3f-a570-3ddf20552d16"
   stages:
     - stage: path
       stageUuid: "ab1058b9-2637-8838-af3b-b7feacc34c17"
@@ -82,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "27a611f2-bd84-8c6a-9c00-ed373492741d"
     - stage: horo
-      stageUuid: "1ebe7ac9-388f-8890-b449-b2e49ed262c2"
+      stageUuid: "e0e0b971-0b13-8d30-9081-7daef174f3d9"
     - stage: seal
       stageUuid: "d150bff1-de31-8132-9a63-e6f530a0bd27"
     - stage: uuid
-      stageUuid: "52b5d6a8-2d1e-8c69-964c-864235e85cf5"
+      stageUuid: "87aea7c8-8a19-8e68-87cc-bfc3ce75be6d"
 version: 2
 ---
 # graph — nodes and edges

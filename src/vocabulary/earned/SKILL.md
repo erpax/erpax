@@ -1,73 +1,35 @@
 ---
 name: earned
 description: "Use when reasoning about earned — A schema.org component word, collided out of schema.org compounds — fused from membershipPointsEarned (sti · collapse · merge)."
-atomPath: vocabulary/earned
-coordinate: earned · 7/descent · c27a5acf
-contentUuid: "64ebad96-286f-5023-b2ab-eb6feda0399a"
-diamondUuid: "bbb02db3-9e5b-83ee-9d20-d811c174e802"
-uuid: "c27a5acf-9660-84f2-8b25-efcdd1ab24c9"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - membership
-    - merge
-    - points
-    - sti
-  out:
-    - collapse
-    - law
-    - membership
-    - merge
-    - points
-    - sti
+atomPath: "vocabulary/earned"
+coordinate: "vocabulary/earned · 2/share · 13459371"
+contentUuid: "91d3d7b7-58b1-52ae-87d0-2b32c878dbc8"
+diamondUuid: "2687f99a-8986-8268-b649-a6d80bd70455"
+uuid: "13459371-bc7f-88af-a5f1-e17986042bce"
+horo: 2
 typography:
-  partition: earned
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - membership
-    - merge
-    - points
-    - sti
-  matrix:
-    - collapse
-    - law
-    - membership
-    - merge
-    - points
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - membership
-    - merge
-    - points
-    - sti
 signatures:
-  computationUuid: "eb0586db-fb67-835b-be2e-b2e4bfc58223"
+  computationUuid: "0105d630-ad7c-84f5-b426-3a0c634b300f"
   stages:
     - stage: path
-      stageUuid: "03404266-f3ba-8e5e-8c38-c8b033c88e69"
+      stageUuid: "a33bd7ed-bb66-86a7-863a-9b1b9c00daab"
     - stage: trinity
-      stageUuid: "7e7d4d10-a79e-8d80-b01f-a56884a522ec"
+      stageUuid: "9e15f04b-7bd0-835a-b5a2-055fece60b7e"
     - stage: boundary
-      stageUuid: "153d0efe-49a6-8f41-a5d3-a75566d42f34"
+      stageUuid: "3a5967d3-b3b8-8bd5-b500-4e8d9c8a9165"
     - stage: links
-      stageUuid: "9be6f0dd-cd7d-8994-8e10-28b0faacd8dc"
+      stageUuid: "7ded780e-2112-880f-bf7a-536c2d92ea20"
     - stage: horo
-      stageUuid: "fb3dfd00-9371-87eb-977e-3bf0f23f8e2f"
+      stageUuid: "70060ddc-cb2b-8890-bcde-301245d2a147"
     - stage: seal
-      stageUuid: "308f6783-2e9d-847a-83e1-1e882ec3035e"
+      stageUuid: "3030c7f4-7873-8ad4-92ac-29fdc5d6dae5"
     - stage: uuid
-      stageUuid: "c49c3d23-e22b-8382-859d-b8e2dea11eaa"
+      stageUuid: "9ab3d5d9-1c91-8a13-929f-1f708d252664"
 version: 2
 ---
 # earned

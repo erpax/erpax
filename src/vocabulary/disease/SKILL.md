@@ -1,93 +1,35 @@
 ---
 name: disease
 description: "Use when reasoning about disease as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/disease
-coordinate: disease · 7/descent · 2f31127c
-contentUuid: "afa81552-65d8-5f80-8481-97da498a140c"
-diamondUuid: "69e55d6f-a196-89a8-89d9-5002cf2744f5"
-uuid: "2f31127c-c9da-82c4-8d0d-ecfd901e644e"
-horo: 7
-bonds:
-  in:
-    - associated
-    - collapse
-    - infectious
-    - info
-    - law
-    - merge
-    - prevention
-    - spread
-    - statistics
-    - sti
-  out:
-    - associated
-    - collapse
-    - infectious
-    - info
-    - law
-    - merge
-    - prevention
-    - spread
-    - statistics
-    - sti
+atomPath: "vocabulary/disease"
+coordinate: "vocabulary/disease · 4/weave · 1a7d62ba"
+contentUuid: "f523e894-1328-5ce3-bf71-3b3a1f72e590"
+diamondUuid: "6d70063b-8e9a-83c4-8e7f-ee74fdbfab7c"
+uuid: "1a7d62ba-a8ef-83d5-a84e-66f9f63c1669"
+horo: 4
 typography:
-  partition: disease
-  bondDegree: 36
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 41
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - associated
-    - collapse
-    - infectious
-    - info
-    - law
-    - merge
-    - prevention
-    - spread
-    - statistics
-    - sti
-  matrix:
-    - associated
-    - collapse
-    - infectious
-    - info
-    - law
-    - merge
-    - prevention
-    - spread
-    - statistics
-    - sti
-  backlinks:
-    - associated
-    - collapse
-    - infectious
-    - info
-    - law
-    - merge
-    - prevention
-    - spread
-    - statistics
-    - sti
 signatures:
-  computationUuid: "235fd5b5-2216-885c-89bf-305603322d4d"
+  computationUuid: "f27c8119-3414-87bd-bdc6-7dc8d3d7e609"
   stages:
     - stage: path
-      stageUuid: "f2f85a14-342e-843c-bfc4-ab24adf7946f"
+      stageUuid: "b199358e-8433-8909-a712-856188e2b8de"
     - stage: trinity
-      stageUuid: "3756550d-9c76-883f-9bec-2acdd8c0246e"
+      stageUuid: "d7cea4ed-bc04-84b7-924d-beee60437b4a"
     - stage: boundary
-      stageUuid: "a5974163-e5a8-8bcf-b47b-bad2a38dfa47"
+      stageUuid: "9b0470c8-e8d1-8ae3-9aa1-aee45a154f2f"
     - stage: links
-      stageUuid: "f0cf530c-150c-8854-b015-59b6a31b02f1"
+      stageUuid: "a8b9cb2b-b452-8ab9-a5c4-8fadbcf4326e"
     - stage: horo
-      stageUuid: "d839cf10-ebff-803b-98c9-b45b19b611d7"
+      stageUuid: "fb8503b8-2568-80fa-b429-769338d5258b"
     - stage: seal
-      stageUuid: "9a1830d7-8b53-8b39-8401-9fd4dba54e7b"
+      stageUuid: "e371a7d2-9c84-8092-8e68-4f51ea7e7b52"
     - stage: uuid
-      stageUuid: "eb4fd319-9f02-8108-b3f7-70bdde755969"
+      stageUuid: "8a4cbca6-014e-8c9f-b47f-d960138e18c2"
 version: 2
 ---
 # disease

@@ -1,103 +1,45 @@
 ---
 name: pi
 description: "Use when reasoning about exiting the 128-bit uuid limit — pi is the infinite digit-stream, a universal address space where any data lives at an offset and length; the train you jump into and out of, when wired the static hash becomes a living realtime position. Honest — infinite address, no free compression."
-atomPath: quantum/pi
-coordinate: quantum/pi · 7/descent · e0dea491
-contentUuid: "270f910c-d187-5b45-a6e1-7b13a4e54121"
-diamondUuid: "ce56306c-32d9-8cef-9721-7100b2926b1f"
-uuid: "e0dea491-b871-84ca-9ac9-df13581d96b8"
-horo: 7
-bonds:
-  in:
-    - breath
-    - finality
-    - law
-    - linearity
-    - number
-    - quantum
-    - realtime
-    - stack
-    - stream
-    - uuid
-    - void
-  out:
-    - breath
-    - finality
-    - law
-    - linearity
-    - number
-    - realtime
-    - stack
-    - stream
-    - uuid
-    - void
+atomPath: "quantum/pi"
+coordinate: "quantum/pi · 8/crest · ebb57730"
+contentUuid: "8aa2c736-ba8e-5db3-ae1c-d5ff27444e39"
+diamondUuid: "65e495c6-1d00-8352-9396-faff044146a6"
+uuid: "ebb57730-de5e-81da-ae7a-53bbd26fcb0d"
+horo: 8
 typography:
   partition: quantum
-  bondDegree: 30
-  neighbors: []
+  bondDegree: 33
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - breath
-    - finality
-    - law
-    - linearity
-    - number
-    - realtime
-    - stream
-    - uuid
-    - void
-  matrix:
-    - breath
-    - finality
-    - law
-    - linearity
-    - number
-    - realtime
-    - stack
-    - stream
-    - uuid
-    - void
-  backlinks:
-    - breath
-    - finality
-    - law
-    - linearity
-    - number
-    - realtime
-    - stack
-    - stream
-    - uuid
-    - void
 signatures:
-  computationUuid: "d0e713c0-1f0f-84ca-a51e-89c720577ffc"
+  computationUuid: "9c1bbea4-b58d-8162-8a47-d7c186689952"
   stages:
     - stage: path
       stageUuid: "6e968c74-a01e-8135-baf6-9686b490a7f1"
     - stage: trinity
       stageUuid: "790db57e-094a-8e58-b022-cd8f48848fc4"
     - stage: boundary
-      stageUuid: "8f7c52b7-bd8a-8f90-a089-35e28cada086"
+      stageUuid: "3331a5aa-e90a-8f94-bd27-3b03656008df"
     - stage: links
-      stageUuid: "fc61576e-37a5-8a79-a5f2-e8333682a319"
+      stageUuid: "777e6e80-6f87-8b0b-8844-699493850fa3"
     - stage: horo
-      stageUuid: "0fcfe228-ae6c-8912-b9a8-5cf6fc073450"
+      stageUuid: "cc439879-771b-8d8d-97c6-14d5ce97ba08"
     - stage: seal
       stageUuid: "2bba7ff0-60c3-8df6-888a-dfad8a6da1c7"
     - stage: uuid
-      stageUuid: "a628cee4-e62e-8265-a40a-733023c0b3fa"
+      stageUuid: "5be82153-86f0-8712-9ff8-17176b5ff7cd"
 quantum:
   superposition:
-    - breath
-    - finality
+    - e
+    - fold
     - law
-    - linearity
-    - number
+    - merge
+    - phi
+    - prime
     - quantum
-    - realtime
+    - readme
     - stack
-    - stream
     - superposition
   collapse:
     - "Use when reasoning about exiting the 128-bit uuid limit — pi is the infinite digit-stream, a universal address space where any data lives at an offset and length; the train you jump into and out of, when wired the static hash becomes a living realtime position. Honest — infinite address, no free compression."
@@ -117,8 +59,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "d0e713c0-1f0f-84ca-a51e-89c720577ffc"
-    contentUuid: "270f910c-d187-5b45-a6e1-7b13a4e54121"
+    computationUuid: "9c1bbea4-b58d-8162-8a47-d7c186689952"
+    contentUuid: "8aa2c736-ba8e-5db3-ae1c-d5ff27444e39"
 version: 2
 ---
 # quantum/pi — the train (jump in, jump out)
@@ -133,4 +75,4 @@ The second new duality: **finite ⊕ infinite**. The 128-bit content-[[uuid]] is
 
 @see [[uuid]] · [[quantum/number]] · [[realtime]] · [[stream]] · [[void]] · [[linearity]] · [[finality]] · [[breath]]
 
-<sub>content-uuid `270f910c-d187-5b45-a6e1-7b13a4e54121` · account `quantum/pi` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `8aa2c736-ba8e-5db3-ae1c-d5ff27444e39` · account `quantum/pi` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

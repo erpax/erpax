@@ -1,68 +1,35 @@
 ---
 name: layout
 description: "Use when reasoning about layout as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/layout
-coordinate: layout · 8/crest · 70c2a7ed
-contentUuid: "cf4bbdf6-142c-5872-af0e-2c526d2b57f5"
-diamondUuid: "c4baa633-ed4e-8a1f-8fd5-f8d73a15f7a1"
-uuid: "70c2a7ed-693c-8b21-89dc-18af65bf087a"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - image
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - image
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/layout"
+coordinate: "vocabulary/layout · 2/share · d64085ed"
+contentUuid: "dac1ed15-ccb0-5852-832b-7e7d107849ec"
+diamondUuid: "5cf0bdda-d939-835c-ac58-1437fbd64b3f"
+uuid: "d64085ed-fa82-8a5b-a16a-07387fcc1ee1"
+horo: 2
 typography:
-  partition: layout
-  bondDegree: 16
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 18
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - image
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - image
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - image
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "2db57e53-ead5-8cdc-a8dd-50dee0900784"
+  computationUuid: "72b3f58a-15c2-8ae1-9235-7fbde26f8629"
   stages:
     - stage: path
-      stageUuid: "a4db69d2-5e42-871b-9eb0-11d9b7317a49"
+      stageUuid: "69682502-cdda-8e41-b858-2c7df23d54b1"
     - stage: trinity
-      stageUuid: "18d13eab-8bcd-8487-9599-122027155b7e"
+      stageUuid: "12530aba-6d21-88c8-a9b7-edf8ea73633c"
     - stage: boundary
-      stageUuid: "b717f83c-d669-8cbc-8c8e-8a511628c90e"
+      stageUuid: "aaeef320-a061-8eb0-885d-01e08aff4d34"
     - stage: links
-      stageUuid: "3b779ef5-98b5-87b0-bde6-313fd9126093"
+      stageUuid: "291a5d87-c2a1-89c0-8206-6f50a4995fc3"
     - stage: horo
-      stageUuid: "adc7a1fe-2d72-8c54-86e6-c7ec1393c297"
+      stageUuid: "9e0c399b-f5d7-80fd-9565-ff930c87665a"
     - stage: seal
-      stageUuid: "1a243cd5-8916-869d-9f5c-9d46c4a5f56f"
+      stageUuid: "dc5d9f75-0db8-82ad-95fc-0a3a115d4eb2"
     - stage: uuid
-      stageUuid: "9145fc20-d1da-8225-913b-b6ffa9ffe0b7"
+      stageUuid: "8dbdd839-051a-8c51-9a0b-fb73d84a3509"
 version: 2
 ---
 # layout

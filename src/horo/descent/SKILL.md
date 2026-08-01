@@ -1,76 +1,19 @@
 ---
 name: descent
-description: "Use when reasoning about the fifth position of the horo state ring — digit 7, \\\\\\\"the wave returns\\\\\\\", the binding step where a built flow begins its return (shipped, dispatched, posted out). First of the descent/return arc; nested under horo."
+description: "Use when reasoning about the fifth position of the horo state ring — digit 7, \\\\\\\\\\\\\\\"the wave returns\\\\\\\\\\\\\\\", the binding step where a built flow begins its return (shipped, dispatched, posted out). First of the descent/return arc; nested under horo."
 atomPath: "horo/descent"
-coordinate: "horo/descent · 5/round · fe90826d"
-contentUuid: "e4ef3b9e-e4c8-5cdf-820c-3799ebb53df8"
-diamondUuid: "9519bd76-4ee2-8b65-b65b-18ea545cee1d"
-uuid: "fe90826d-e85a-85e5-b8ea-4096c1c8b56a"
+coordinate: "horo/descent · 5/round · 7c566d6c"
+contentUuid: "e7e5dcfb-52ad-58fa-8d03-1129f7dcdf1d"
+diamondUuid: "00337b34-c783-8d69-bd80-d5dd672c4451"
+uuid: "7c566d6c-c037-8625-8dca-f0a358452c37"
 horo: 5
-bonds:
-  in:
-    - api
-    - coil
-    - crest
-    - flow
-    - give
-    - horo
-    - law
-    - notes
-    - round
-    - sequence
-  out:
-    - api
-    - coil
-    - crest
-    - flow
-    - give
-    - horo
-    - law
-    - notes
-    - round
-    - sequence
 typography:
   partition: horo
   bondDegree: 33
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - api
-    - coil
-    - crest
-    - flow
-    - give
-    - horo
-    - law
-    - round
-    - sequence
-  matrix:
-    - api
-    - coil
-    - crest
-    - flow
-    - give
-    - horo
-    - law
-    - notes
-    - round
-    - sequence
-  backlinks:
-    - api
-    - coil
-    - crest
-    - flow
-    - give
-    - horo
-    - law
-    - notes
-    - round
-    - sequence
 signatures:
-  computationUuid: "c8b97ab6-2b6b-8caa-8ea9-b20a300fd00f"
+  computationUuid: "7a0be476-850c-85f3-a79a-89d283ac957a"
   stages:
     - stage: path
       stageUuid: "71735d43-da26-84d2-a316-79df793ceb0d"
@@ -81,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "45f3aa04-881d-8001-8fca-0798214875bd"
     - stage: horo
-      stageUuid: "9f040ee1-1cbd-876e-8040-a2b875010bd1"
+      stageUuid: "6aab705c-5edf-8d8b-a769-c503580da5b5"
     - stage: seal
       stageUuid: "4332538a-cffb-89f4-beb8-4955ffac574a"
     - stage: uuid
-      stageUuid: "12556c39-e39a-855d-9562-fc880e9986b4"
+      stageUuid: "0bcff1d6-c1e5-8702-90ce-a8c01e0efa37"
 version: 2
 ---
 # descent — horo position 7 (the wave returns)

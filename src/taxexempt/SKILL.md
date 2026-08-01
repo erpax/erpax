@@ -2,60 +2,18 @@
 name: taxexempt
 description: "Use when reasoning about taxexempt — Use for non-taxable income or entities exempt from income tax — requires jurisdiction-specific exemption testing and disclosure; affects deferred-tax calculation"
 atomPath: taxexempt
-coordinate: taxexempt · 5/round · 1a3c620e
-contentUuid: "43ad3a83-d20e-5db6-9c07-8fc9608baf5f"
-diamondUuid: "1aee7621-8625-8d58-81aa-42b50c90d7d5"
-uuid: "1a3c620e-5a26-8b6e-8da4-f6fee1357e63"
-horo: 5
-bonds:
-  in:
-    - calculations
-    - deduction
-    - disclosure
-    - entities
-    - items
-    - standard
-    - tax
-  out:
-    - calculations
-    - deduction
-    - disclosure
-    - entities
-    - items
-    - standard
-    - tax
+coordinate: "taxexempt · 4/weave · 1fe8126f"
+contentUuid: "2809b775-24fa-516a-a60c-3991b903e078"
+diamondUuid: "e0e35a0c-afab-8591-8d23-1080f58ef7c9"
+uuid: "1fe8126f-07b0-86fa-b878-e60f8bdc5437"
+horo: 4
 typography:
   partition: taxexempt
   bondDegree: 22
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - calculations
-    - disclosure
-    - entities
-    - items
-    - standard
-    - tax
-  matrix:
-    - calculations
-    - deduction
-    - disclosure
-    - entities
-    - items
-    - standard
-    - tax
-  backlinks:
-    - calculations
-    - deduction
-    - disclosure
-    - entities
-    - items
-    - standard
-    - tax
 signatures:
-  computationUuid: "9dc241b9-f4d3-8de4-a1e8-42c29b9a76f7"
+  computationUuid: "97f14f21-2a3a-8f01-b201-9bd6edacc644"
   stages:
     - stage: path
       stageUuid: "33b05baf-d69b-8843-85ba-0090ba5a3411"
@@ -66,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a17751d7-fbb3-8af2-b76e-4e61352bd5ef"
     - stage: horo
-      stageUuid: "4eab5230-a426-8f4f-b993-ebbfcc9863c9"
+      stageUuid: "3cf8eab7-dd34-875b-b58d-76858525e8be"
     - stage: seal
-      stageUuid: "83bf78ec-1651-8f5e-aa88-831e58167ca6"
+      stageUuid: "519cb7df-e33b-8ae7-80b8-cbd2a7bc7696"
     - stage: uuid
-      stageUuid: "8ab96c02-3191-82e4-b93c-6cec9d20076e"
+      stageUuid: "213f89aa-4a8b-80d1-9d02-b2e053f44f01"
 version: 2
 ---
 # taxexempt

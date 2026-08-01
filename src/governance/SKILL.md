@@ -2,54 +2,14 @@
 name: governance
 description: "Use when the polity decides — tallying ballots into a binding verdict, setting quorum and threshold, or proving the count is unstuffable; the judgment a formal system cannot generate for itself, supplied from outside by the society."
 atomPath: governance
-coordinate: "governance · 5/round · 4a14bc37"
-contentUuid: "855f591e-06fa-531a-ba25-93ae14c8cbee"
-diamondUuid: "a7c56828-08a7-876c-ab99-6c1b1d7b5d57"
-uuid: "4a14bc37-1603-8ff3-b0ba-9361c52723cc"
-horo: 5
-bonds:
-  in:
-    - balance
-    - certification
-    - civilization
-    - committee
-    - constitution
-    - corruption
-    - finality
-    - identity
-    - law
-    - legislation
-    - merge
-    - principle
-    - proof
-    - rule
-    - separation
-    - sequence
-    - society
-    - voting
-  out:
-    - balance
-    - certification
-    - civilization
-    - committee
-    - constitution
-    - corruption
-    - finality
-    - identity
-    - law
-    - legislation
-    - merge
-    - principle
-    - proof
-    - rule
-    - separation
-    - sequence
-    - society
-    - voting
+coordinate: "governance · 4/weave · e58ccfa1"
+contentUuid: "77c1aea3-c581-5d59-8ef1-7a9929ecc557"
+diamondUuid: "aa433540-8b22-8ac8-8a62-511d0083b39c"
+uuid: "e58ccfa1-a3d1-8023-97d6-175c6dfd3d53"
+horo: 4
 typography:
   partition: governance
-  bondDegree: 59
-  neighbors: []
+  bondDegree: 37
 standards:
   - "ISO 37000:2021 governance-of-organizations"
   - "ISO 37000:2021 governance-of-organizations`"
@@ -58,59 +18,8 @@ standards:
   - "one-person-one-vote (Venice Commission Code of Good Practice in Electoral Matters)"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - civilization
-    - constitution
-    - corruption
-    - identity
-    - law
-    - legislation
-    - merge
-    - proof
-    - sequence
-    - society
-  matrix:
-    - balance
-    - certification
-    - civilization
-    - committee
-    - constitution
-    - corruption
-    - finality
-    - identity
-    - law
-    - legislation
-    - merge
-    - principle
-    - proof
-    - rule
-    - separation
-    - sequence
-    - society
-    - voting
-  backlinks:
-    - balance
-    - certification
-    - civilization
-    - committee
-    - constitution
-    - corruption
-    - finality
-    - identity
-    - law
-    - legislation
-    - merge
-    - principle
-    - proof
-    - rule
-    - separation
-    - sequence
-    - society
-    - voting
 signatures:
-  computationUuid: "668e1c50-bcc6-8be2-b857-fa4baf856b2b"
+  computationUuid: "7af538ac-2ba0-8415-8286-73888019859a"
   stages:
     - stage: path
       stageUuid: "3444f1ec-f1af-8162-bb01-239926cf030a"
@@ -119,13 +28,13 @@ signatures:
     - stage: boundary
       stageUuid: "3dda70b7-fcb8-8dbd-8752-09e002ca969b"
     - stage: links
-      stageUuid: "9cdd0828-d945-8e55-bf7b-0016695adfa8"
+      stageUuid: "16599d68-749b-82fa-8ed6-102c454fd5f0"
     - stage: horo
-      stageUuid: "af8d7105-c12c-8218-a1d9-4b3322af79fd"
+      stageUuid: "bb2c4568-ad53-84dd-8f53-b064e952de77"
     - stage: seal
       stageUuid: "36139b2e-f84f-8ad7-983e-7116defc7efe"
     - stage: uuid
-      stageUuid: "49ad0ff1-a9d5-8851-973a-f872e301ecb8"
+      stageUuid: "ab5d0bfd-c3dd-880c-8fac-0823751627f9"
 version: 2
 ---
 # governance — the society manages erpax, the half that closes the circle

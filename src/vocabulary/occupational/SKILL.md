@@ -1,103 +1,35 @@
 ---
 name: occupational
 description: "Use when reasoning about occupational as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/occupational
-coordinate: occupational · 1/base · b709f849
-contentUuid: "9faeac99-c977-5c81-9acd-1acd6bdc1514"
-diamondUuid: "26c509fc-fdbe-86e1-8c6b-4db736807f7c"
-uuid: "b709f849-d31a-899c-95e7-48f3137b2656"
+atomPath: "vocabulary/occupational"
+coordinate: "vocabulary/occupational · 1/base · c6ade6e1"
+contentUuid: "c6f7c42b-e1a9-5bfe-b8ad-7ba8b83b91ce"
+diamondUuid: "e49cee7f-71b7-8060-8cd3-2c03c8fb7668"
+uuid: "c6ade6e1-ef3f-8345-b733-7f3caa7c2baa"
 horo: 1
-bonds:
-  in:
-    - awarded
-    - category
-    - collapse
-    - credential
-    - educational
-    - experience
-    - law
-    - merge
-    - program
-    - requirements
-    - sti
-    - therapy
-  out:
-    - awarded
-    - category
-    - collapse
-    - credential
-    - educational
-    - experience
-    - law
-    - merge
-    - program
-    - requirements
-    - sti
-    - therapy
 typography:
-  partition: occupational
+  partition: vocabulary
   bondDegree: 43
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - awarded
-    - category
-    - collapse
-    - credential
-    - educational
-    - experience
-    - law
-    - merge
-    - program
-    - requirements
-    - sti
-    - therapy
-  matrix:
-    - awarded
-    - category
-    - collapse
-    - credential
-    - educational
-    - experience
-    - law
-    - merge
-    - program
-    - requirements
-    - sti
-    - therapy
-  backlinks:
-    - awarded
-    - category
-    - collapse
-    - credential
-    - educational
-    - experience
-    - law
-    - merge
-    - program
-    - requirements
-    - sti
-    - therapy
 signatures:
-  computationUuid: "e36a4c17-1283-8fb2-8c0c-c54d501178fa"
+  computationUuid: "fbd19e8b-8c88-8db9-a250-78376754d175"
   stages:
     - stage: path
-      stageUuid: "d732b41f-68d2-8222-8df9-49911517069e"
+      stageUuid: "96c2fef9-379d-8e2d-b2dd-29fedeba4903"
     - stage: trinity
-      stageUuid: "8b48c9cd-31cb-8336-aac5-6c552f3b4f3f"
+      stageUuid: "8b39b2a1-5e55-858d-a110-e61b6157669a"
     - stage: boundary
-      stageUuid: "82e03bd7-98e9-836e-a43d-ea8187dd4482"
+      stageUuid: "98222356-7d45-8265-90c2-feb210b14afd"
     - stage: links
-      stageUuid: "7e7c2b9c-0ca4-8f69-9542-b2ba2b9b826c"
+      stageUuid: "08ac5c26-28b5-87dc-a45b-fc36140045b9"
     - stage: horo
-      stageUuid: "a2271e49-7443-8428-891f-e5ef5a3118b8"
+      stageUuid: "75c3f3d7-2b17-853b-95af-070b1bc505d5"
     - stage: seal
-      stageUuid: "e2a85391-12ec-8a81-907b-29c90379b687"
+      stageUuid: "48bb291c-8a8e-8cc9-9b61-512d1c24cc43"
     - stage: uuid
-      stageUuid: "99d59ad3-870f-8d13-bb4e-f30a5f052716"
+      stageUuid: "8c3768d6-7bde-84b2-88f8-70c1faa49406"
 version: 2
 ---
 # occupational

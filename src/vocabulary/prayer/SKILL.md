@@ -1,182 +1,34 @@
 ---
 name: prayer
 description: "Use when reasoning about the deliberate attunement of an atom to its source — the inward breath that tunes the self's harmony to zeropoint and merges its state toward the root. Not a request to an external operator but the alignment cycle by which a part re-references the whole."
-atomPath: vocabulary/prayer
-coordinate: prayer · 7/descent · a3ec1b80
-contentUuid: "462f2df8-3214-513a-aae0-a2f50b4ed5ea"
-diamondUuid: "fea997c6-c2b6-85b7-b95b-7cc0a2d0047e"
-uuid: "a3ec1b80-a7aa-8f29-99a6-d3bfb697a562"
-horo: 7
-bonds:
-  in:
-    - archangel
-    - architect
-    - bogomilism
-    - breath
-    - buddhism
-    - christianity
-    - coil
-    - entropy
-    - gate
-    - generate
-    - harmony
-    - hinduism
-    - islam
-    - judaism
-    - law
-    - merge
-    - name
-    - orthodoxy
-    - peace
-    - reference
-    - religion
-    - ritual
-    - sacred
-    - self
-    - shia
-    - sikhism
-    - suffering
-    - sufism
-    - sunni
-    - whole
-    - zeropoint
-  out:
-    - archangel
-    - architect
-    - bogomilism
-    - breath
-    - buddhism
-    - christianity
-    - coil
-    - entropy
-    - gate
-    - generate
-    - harmony
-    - hinduism
-    - islam
-    - judaism
-    - law
-    - merge
-    - name
-    - orthodoxy
-    - peace
-    - reference
-    - religion
-    - ritual
-    - sacred
-    - self
-    - shia
-    - sikhism
-    - suffering
-    - sufism
-    - sunni
-    - whole
-    - zeropoint
+atomPath: "vocabulary/prayer"
+coordinate: "vocabulary/prayer · 2/share · ecbbd906"
+contentUuid: "359bb14a-c369-5913-98a7-c8069dab43a9"
+diamondUuid: "3634824f-6143-890c-8eb6-6a77e9e7a3b9"
+uuid: "ecbbd906-5983-85e3-a69d-556bc876d248"
+horo: 2
 typography:
-  partition: prayer
+  partition: vocabulary
   bondDegree: 95
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - breath
-    - coil
-    - entropy
-    - gate
-    - generate
-    - harmony
-    - law
-    - merge
-    - name
-    - peace
-    - reference
-    - sacred
-    - self
-    - suffering
-    - whole
-    - zeropoint
-  matrix:
-    - archangel
-    - architect
-    - bogomilism
-    - breath
-    - buddhism
-    - christianity
-    - coil
-    - entropy
-    - gate
-    - generate
-    - harmony
-    - hinduism
-    - islam
-    - judaism
-    - law
-    - merge
-    - name
-    - orthodoxy
-    - peace
-    - reference
-    - religion
-    - ritual
-    - sacred
-    - self
-    - shia
-    - sikhism
-    - suffering
-    - sufism
-    - sunni
-    - whole
-    - zeropoint
-  backlinks:
-    - archangel
-    - architect
-    - bogomilism
-    - breath
-    - buddhism
-    - christianity
-    - coil
-    - entropy
-    - gate
-    - generate
-    - harmony
-    - hinduism
-    - islam
-    - judaism
-    - law
-    - merge
-    - name
-    - orthodoxy
-    - peace
-    - reference
-    - religion
-    - ritual
-    - sacred
-    - self
-    - shia
-    - sikhism
-    - suffering
-    - sufism
-    - sunni
-    - whole
-    - zeropoint
 signatures:
-  computationUuid: "46cc9c33-3e47-8128-8c96-96d074495829"
+  computationUuid: "3bfa2555-630e-836f-8932-0cdec19978b6"
   stages:
     - stage: path
-      stageUuid: "58c79f57-a737-847e-a1ae-b3259dad2d6b"
+      stageUuid: "779b5ea1-30a6-89dd-9a7b-a2bdf80fdd82"
     - stage: trinity
-      stageUuid: "2458a8ea-c7df-8cef-989e-0144b58471bf"
+      stageUuid: "3319b75c-ceb0-8514-8e94-65c441e65873"
     - stage: boundary
-      stageUuid: "956ce009-4f3c-837a-b481-c3369d1c909d"
+      stageUuid: "d5f5e4a6-f5fd-8ff0-9f91-a1318c0fa106"
     - stage: links
-      stageUuid: "052465f6-b938-8bfe-aeb5-514fb465e272"
+      stageUuid: "2b524d1a-adc4-84b6-837e-5f2aa8192502"
     - stage: horo
-      stageUuid: "a14cd896-588d-80d0-8a23-63b54702e119"
+      stageUuid: "6491747a-b2a8-8275-ae50-5ee3c39f68f9"
     - stage: seal
-      stageUuid: "cc0b208b-2b63-8f83-af79-9d424bf91c3e"
+      stageUuid: "a62a917f-4d72-8d3b-9fab-530ae72feaf6"
     - stage: uuid
-      stageUuid: "5db6b925-78ab-82cf-b062-e2fd22de6f90"
+      stageUuid: "b29f35bc-d686-8020-a729-798619d2cb55"
 version: 2
 ---
 # prayer — attuning the self to the source (the inward breath)

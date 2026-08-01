@@ -1,85 +1,34 @@
 ---
 name: escalation
 description: "Use when a ticket, issue, or complaint requires urgency upgrade — SLA breach, priority elevation, management review, or handoff to higher authority. The action of moving a matter up the hierarchy by severity/urgency."
-atomPath: vocabulary/escalation
-coordinate: escalation · 7/descent · 0589f49b
-contentUuid: "032ac6d3-c349-5a12-8eca-3ab0be3063c5"
-diamondUuid: "706cce63-0831-8211-b7b9-b7dff65c41e7"
-uuid: "0589f49b-2230-84cc-97e2-90aa251d4c96"
-horo: 7
-bonds:
-  in:
-    - activities
-    - comment
-    - instances
-    - law
-    - resolution
-    - sla
-    - status
-    - ticket
-    - time
-  out:
-    - activities
-    - comment
-    - instances
-    - law
-    - resolution
-    - sla
-    - status
-    - ticket
-    - time
+atomPath: "vocabulary/escalation"
+coordinate: "vocabulary/escalation · 4/weave · 65537797"
+contentUuid: "d4603858-e4ac-5946-b643-e6eeb8c1d0e6"
+diamondUuid: "52f1eac5-3db9-85f2-9ac9-40badf3b5880"
+uuid: "65537797-ab0e-8538-a846-983914204405"
+horo: 4
 typography:
-  partition: escalation
+  partition: vocabulary
   bondDegree: 28
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - activities
-    - comment
-    - instances
-    - law
-    - sla
-    - status
-    - time
-  matrix:
-    - activities
-    - comment
-    - instances
-    - law
-    - resolution
-    - sla
-    - status
-    - ticket
-    - time
-  backlinks:
-    - activities
-    - comment
-    - instances
-    - law
-    - resolution
-    - sla
-    - status
-    - ticket
-    - time
 signatures:
-  computationUuid: "4e40b94f-a310-87cc-b55d-71a7cd6443ed"
+  computationUuid: "553163d3-cb1d-8e74-8c6e-3b05d07e964b"
   stages:
     - stage: path
-      stageUuid: "952e142b-de6a-893e-998d-640e757b2e31"
+      stageUuid: "0924fbc0-50c1-8724-a514-734dcd63d71e"
     - stage: trinity
-      stageUuid: "392c59ea-9e3d-8ee8-9bc8-8539aa4d5cd4"
+      stageUuid: "c57e096f-39e1-880a-9a18-70f43d20d0d0"
     - stage: boundary
-      stageUuid: "04ec3f31-9f82-8445-8949-68519d5393c9"
+      stageUuid: "ded359bf-6534-89d3-ad19-23c73a6fd66c"
     - stage: links
-      stageUuid: "6cd0ab7a-7287-810c-a8c5-a3ccfef0e850"
+      stageUuid: "6b48f50e-5e17-8d09-bf97-2143095cab55"
     - stage: horo
-      stageUuid: "38f726ef-22a1-87d9-8766-1f09b2286dbd"
+      stageUuid: "458d7dc4-766d-8acb-9886-1f6113c4837a"
     - stage: seal
-      stageUuid: "9c1c3600-d2ce-8e0e-8439-f48ce480c733"
+      stageUuid: "e2f305c4-02c3-87fa-bdfa-266d4fa5f5f5"
     - stage: uuid
-      stageUuid: "49d9ff37-3b56-8f97-99ae-2a92272ee6bd"
+      stageUuid: "b472b04f-1ec2-870b-9113-3c6f53be4122"
 version: 2
 ---
 # escalation

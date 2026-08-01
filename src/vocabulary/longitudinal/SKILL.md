@@ -1,63 +1,35 @@
 ---
 name: longitudinal
 description: "Use when reasoning about longitudinal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/longitudinal
-coordinate: longitudinal · 1/base · 826a1b06
-contentUuid: "057e1dc1-8242-5e97-8af4-1bc84e0d79ce"
-diamondUuid: "6ce46ac5-9a8e-8013-995f-4773cd6d4018"
-uuid: "826a1b06-b21d-83f2-b87c-ad7d49077552"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/longitudinal"
+coordinate: "vocabulary/longitudinal · 2/share · cf19822b"
+contentUuid: "1931d7eb-c101-5061-8a29-3ea332879b53"
+diamondUuid: "45367eba-f84e-8f3c-8407-4e103b38d7fd"
+uuid: "cf19822b-e6c4-8838-b243-1c3d65c871f6"
+horo: 2
 typography:
-  partition: longitudinal
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "62cac7e6-3864-81c9-98ef-735ba2ee044a"
+  computationUuid: "fa2e2451-6375-8162-b20e-086392f02b9f"
   stages:
     - stage: path
-      stageUuid: "3c4417b9-80a1-84d7-af05-6033a4b9b534"
+      stageUuid: "e79c2123-243b-86ab-93cd-f757786619ec"
     - stage: trinity
-      stageUuid: "412ef14f-ddc3-8e84-b063-b8091eb2da77"
+      stageUuid: "a0065b13-aff5-8e4e-9e5e-dcac87f00cfd"
     - stage: boundary
-      stageUuid: "c38505b4-23aa-829f-8b5e-b8cc649597f5"
+      stageUuid: "d92f7e95-05a6-8dea-99fa-ff061f10ccdb"
     - stage: links
-      stageUuid: "c775c76e-1448-8010-9619-d0461040671c"
+      stageUuid: "80556195-57ff-87cb-a6c2-45ce277a8580"
     - stage: horo
-      stageUuid: "e862291c-f1be-88a7-9f3a-df5c33535528"
+      stageUuid: "8d1a80cf-fcbc-8317-a0eb-9752180be402"
     - stage: seal
-      stageUuid: "27fcadb8-a199-83e7-9018-564fba7ffc96"
+      stageUuid: "4982382b-b6c0-8d7a-aa91-11c352fde960"
     - stage: uuid
-      stageUuid: "dc0c9556-7218-86d4-b4de-129c40735fae"
+      stageUuid: "70130e25-9d4d-8728-9ac9-0ac13de4f6ae"
 version: 2
 ---
 # longitudinal

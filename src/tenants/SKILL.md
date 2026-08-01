@@ -2,34 +2,14 @@
 name: tenants
 description: "Use when creating or scoping a tenant — the GDPR-controller boundary for all access, localization cascade (BCP-47/ECMA-402), accounting framework (IFRS/GAAP/fiscal-year), reporting currency (ISO 4217), and integration secrets (Stripe, Resend, MCP). The multi-tenant root entity and access-scope boundary."
 atomPath: tenants
-coordinate: tenants · 5/round · ca9ff8fd
-contentUuid: "02fcbda7-fdfd-59c8-8769-1f06de044804"
-diamondUuid: "2c2c2077-08c3-8acc-9d7e-be5062cb3ba3"
-uuid: "ca9ff8fd-b0f1-86d0-bb20-9113c8bf5b75"
-horo: 5
-bonds:
-  in:
-    - agent
-    - coordinate
-    - domain
-    - identity
-    - memos
-    - proof
-    - tenant
-    - transactions
-  out:
-    - agent
-    - coordinate
-    - domain
-    - identity
-    - memos
-    - proof
-    - tenant
-    - transactions
+coordinate: "tenants · 4/weave · c4763653"
+contentUuid: "329c2eca-01b7-5ab3-92d7-87e778f2f35b"
+diamondUuid: "4d35452c-c70b-8ae9-adf9-12082d5e2a9a"
+uuid: "c4763653-aa24-8aa5-a4ee-143a05d6b13e"
+horo: 4
 typography:
   partition: tenants
-  bondDegree: 0
-  neighbors: []
+  bondDegree: 23
 standards:
   - "BCP-47 language-tag default-locale"
   - "BCP-47 language-tag localization.defaultLocale"
@@ -40,38 +20,20 @@ standards:
   - "IFRS IAS-1 presentation-of-financial-statements per-tenant-framework"
   - "ISO-17442-1"
   - "ISO-17442-1:2020 lei legal-entity-identifier"
-  - "ISO-19011:2018 audit-trail config-change"
+  - "ISO-17442-1:2020 lei legal-entity-identifier`"
   - "ISO-3166-1:2020 country-codes alpha-2"
   - "ISO-3166-1:2020 country-codes alpha-2 identity.country"
+  - "ISO-3166-1:2020 country-codes alpha-2 identity.country`"
+  - "ISO-3166-1:2020 country-codes alpha-2`"
   - "ISO-4217:2015 currency-codes alphabetic currency.reportingCurrency"
+  - "ISO-4217:2015 currency-codes alphabetic currency.reportingCurrency`"
   - "ISO-4217:2015 currency-codes default-currency"
+  - "ISO-4217:2015 currency-codes default-currency`"
   - "SOC-2 CC6.1 logical-access-controls"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - domain
-    - identity
-    - proof
-  matrix:
-    - agent
-    - coordinate
-    - domain
-    - identity
-    - memos
-    - proof
-    - tenant
-    - transactions
-  backlinks:
-    - agent
-    - coordinate
-    - domain
-    - identity
-    - memos
-    - proof
-    - tenant
-    - transactions
 signatures:
-  computationUuid: "01dd683e-3c5a-846c-af0f-575590159a51"
+  computationUuid: "11f549e4-ad16-8021-9972-1fd849e56053"
   stages:
     - stage: path
       stageUuid: "33e043c3-b509-89ba-a9b8-5d950475af94"
@@ -82,11 +44,11 @@ signatures:
     - stage: links
       stageUuid: "7320a1d0-eb4d-8c1f-98d8-906ef700a45c"
     - stage: horo
-      stageUuid: "367efea7-1aa6-8ea7-b5db-62ceee1fd94a"
+      stageUuid: "9c4657de-6b11-8cc4-9be4-81080c86a10a"
     - stage: seal
-      stageUuid: "3c3ae493-5fb3-874c-ae7e-2c88bbb4cbb6"
+      stageUuid: "f876a76d-ebcc-8b4d-af1e-988d265a722b"
     - stage: uuid
-      stageUuid: "00316104-cc99-8305-9ecf-7baa9dd48c2b"
+      stageUuid: "f6dcb007-46ed-826d-9d81-75ded79d205f"
 version: 2
 ---
 # tenants

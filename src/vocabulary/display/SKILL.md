@@ -1,78 +1,35 @@
 ---
 name: display
 description: "Use when reasoning about display as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/display
-coordinate: display · 4/weave · eb93f27a
-contentUuid: "3ad5259c-ee34-561d-be7b-852dbafea837"
-diamondUuid: "e0e98323-1ee9-84a6-97a0-fcb7e1f9abde"
-uuid: "eb93f27a-8be4-814f-ae33-99fbfb8157ff"
-horo: 4
-bonds:
-  in:
-    - broadcast
-    - collapse
-    - law
-    - location
-    - merge
-    - name
-    - sti
-  out:
-    - broadcast
-    - collapse
-    - law
-    - location
-    - merge
-    - name
-    - sti
+atomPath: "vocabulary/display"
+coordinate: "vocabulary/display · 2/share · 844c2f42"
+contentUuid: "9570d361-4639-5586-b90e-9853e203452f"
+diamondUuid: "e4cda350-bcb9-8a78-8a97-7f2d5ddd145c"
+uuid: "844c2f42-9d08-8116-9b36-35199acb8c7a"
+horo: 2
 typography:
-  partition: display
-  bondDegree: 23
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 25
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - broadcast
-    - collapse
-    - law
-    - location
-    - merge
-    - name
-    - sti
-  matrix:
-    - broadcast
-    - collapse
-    - law
-    - location
-    - merge
-    - name
-    - sti
-  backlinks:
-    - broadcast
-    - collapse
-    - law
-    - location
-    - merge
-    - name
-    - sti
 signatures:
-  computationUuid: "53e7f78c-14d0-8b44-aa08-5aa7eca1ce6b"
+  computationUuid: "dfc0c319-98ac-8b3a-8735-fd030d379f79"
   stages:
     - stage: path
-      stageUuid: "c75a919c-94b7-8cd6-9d22-358580c76323"
+      stageUuid: "dd2a4b4d-b001-887f-94dd-c8424c955808"
     - stage: trinity
-      stageUuid: "1fefec2b-3859-8418-ac4d-888b271835d7"
+      stageUuid: "93736491-b211-812b-9c7d-7cfdb5fbe152"
     - stage: boundary
-      stageUuid: "eb5ea232-97c2-8e7d-a4d5-2f82521b99a5"
+      stageUuid: "0724405e-35af-8296-a1e3-fa39d026a880"
     - stage: links
-      stageUuid: "ba26b371-4169-810f-9efa-375e36739e45"
+      stageUuid: "fb39459f-0bf8-8973-9532-bba0a4e1d695"
     - stage: horo
-      stageUuid: "5da3e57b-c850-8c2f-8555-40fb40ac51da"
+      stageUuid: "408bc73e-1141-8c10-8c98-17887182177a"
     - stage: seal
-      stageUuid: "0eff41a0-24ce-8467-acfa-77b98c34893c"
+      stageUuid: "95f2d1d4-b1d9-8dfd-b825-87705035ff4b"
     - stage: uuid
-      stageUuid: "dd772179-8730-8106-bb16-d903acee3f33"
+      stageUuid: "5463f0a1-8295-8bc6-8adb-4bddf19a848d"
 version: 2
 ---
 # display

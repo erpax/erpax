@@ -1,62 +1,34 @@
 ---
 name: classification
 description: Use when modelling one classification — the singular model of the classifications collection (the plural store); the assignment of a thing to a category within a scheme.
-atomPath: vocabulary/classification
-coordinate: classification · 1/base · 96fca173
-contentUuid: "d8b2594a-48e3-5c5f-909a-6e8fdbea2741"
-diamondUuid: "4ff6c1d1-6f52-8425-9ff2-6aac6424651f"
-uuid: "96fca173-5e36-8060-abdc-863476c960ac"
-horo: 1
-bonds:
-  in:
-    - balance
-    - classifications
-    - law
-    - taxonomy
-  out:
-    - balance
-    - classifications
-    - law
-    - taxonomy
+atomPath: "vocabulary/classification"
+coordinate: "vocabulary/classification · 7/descent · e0c2a5c3"
+contentUuid: "c915d9a0-d31a-5524-943c-d35a87f06c58"
+diamondUuid: "f48c73dc-c4ba-888e-a8a1-1b7b8cb76373"
+uuid: "e0c2a5c3-bf47-87eb-91a8-05394aec8871"
+horo: 7
 typography:
-  partition: classification
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - classifications
-    - law
-    - taxonomy
-  matrix:
-    - balance
-    - classifications
-    - law
-    - taxonomy
-  backlinks:
-    - balance
-    - classifications
-    - law
-    - taxonomy
 signatures:
-  computationUuid: "d766b5d0-8133-85b1-94c1-c743d2aaf67e"
+  computationUuid: "b56a78ac-6626-8f9f-b394-c91f24e78491"
   stages:
     - stage: path
-      stageUuid: "e724cc46-e264-8e94-8ae9-45f71f2a3f99"
+      stageUuid: "691a7e21-2ea4-8817-bcd6-17872b9aa6e5"
     - stage: trinity
-      stageUuid: "cb0571a7-de71-8ac4-b7a4-b8e47c7d873b"
+      stageUuid: "f786e82b-37c5-8b79-a79f-429a4a207fa0"
     - stage: boundary
-      stageUuid: "da972ddc-0577-8d54-bfa6-fb83e09e21f8"
+      stageUuid: "39512899-7c24-8117-a3d7-bac1edf7e6fd"
     - stage: links
-      stageUuid: "09dff5a4-d457-827f-b657-80e7e601ecf0"
+      stageUuid: "8be8fe6b-24b1-80a5-8712-25edfe819d8e"
     - stage: horo
-      stageUuid: "81c37d4a-71b5-8227-bae9-98aed6c5967c"
+      stageUuid: "34cfdd29-be0a-8fcc-80c9-4dc7b0096f8b"
     - stage: seal
-      stageUuid: "d7cc2b89-e52b-8f19-a490-fe512b7392e0"
+      stageUuid: "2ba080a2-d6b3-81a4-b4fb-488587a769b3"
     - stage: uuid
-      stageUuid: "d9e0e90d-eb4c-8b91-8a7f-48a7295625fb"
+      stageUuid: "4bdf0a0d-eeb7-8664-b9fd-47718fdf5ea6"
 version: 2
 ---
 # classification — the model of one [[classifications]] row

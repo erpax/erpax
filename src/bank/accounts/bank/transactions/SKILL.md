@@ -2,56 +2,15 @@
 name: transactions
 description: "Use when matching, querying, or auditing individual ISO 20022 camt.053 bank-statement lines — each line is a first-class row with externalId, bookingDate, valueDate, amount, creditDebitIndicator, currency, booking status, bank transaction code, counterparty IBAN/BIC, remittance info, and matchStatus against journal entries. The per-line reconciliation-evidence collection."
 atomPath: "bank/accounts/bank/transactions"
-coordinate: "bank/accounts/bank/transactions · 1/base · 3f875ced"
-contentUuid: "ace59fe2-dcf9-57d5-b52d-6a3666400836"
-diamondUuid: "f9bd08c3-ecf1-8644-a104-44fbf331de69"
-uuid: "3f875ced-3fcf-8a1d-97a5-545163c4d086"
-horo: 1
-bonds:
-  in:
-    - accounting
-    - bank
-    - entries
-    - fractal
-    - hedge
-    - horo
-    - law
-    - proof
-    - rates
-    - standard
-    - transaction
-    - trinity
-  out:
-    - accounting
-    - entries
-    - fractal
-    - hedge
-    - horo
-    - law
-    - proof
-    - rates
-    - standard
-    - transaction
-    - trinity
+coordinate: "bank/accounts/bank/transactions · 4/weave · 026541a4"
+contentUuid: "7f19290b-bb76-58ad-9f33-c550fdeb95ee"
+diamondUuid: "a9faa906-4fe3-8c92-a3c9-72c45067817f"
+uuid: "026541a4-84ef-86e5-88ed-fe1e1d756c71"
+horo: 4
 typography:
   partition: bank
   bondDegree: 54
-  neighbors: []
 standards:
-  - "EU-2002/58"
-  - "EU-2015/847"
-  - "EU-2015/849"
-  - "EU-2019/1150"
-  - "EU-2019/1152"
-  - "EU-2019/1937"
-  - "EU-2019/2161"
-  - "EU-2019/770"
-  - "EU-2019/771"
-  - "EU-2022/1925"
-  - "EU-2022/2065"
-  - "EU-2022/2554"
-  - "EU-2022/2555"
-  - "EU-2022/868"
   - "EU-Intrastat-Reg-2019/2152"
   - "EU-Taxonomy-2020/852"
   - "IFRS IAS-7 statement-of-cash-flows"
@@ -88,40 +47,8 @@ standards:
   - "US-GAAP ASC-230 cash-flows"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - identity
-    - party
-    - proof
-    - standard
-    - transaction
-  matrix:
-    - accounting
-    - entries
-    - fractal
-    - hedge
-    - horo
-    - law
-    - proof
-    - rates
-    - standard
-    - transaction
-    - trinity
-  backlinks:
-    - accounting
-    - entries
-    - fractal
-    - hedge
-    - horo
-    - law
-    - proof
-    - rates
-    - standard
-    - transaction
-    - trinity
 signatures:
-  computationUuid: "514de969-abcc-87cf-9bc3-dd54bd6ccc9e"
+  computationUuid: "76bb300e-8747-8db0-b5ac-d1b8ee115341"
   stages:
     - stage: path
       stageUuid: "9bc72c7d-c011-87de-9ab1-8199c303678f"
@@ -132,11 +59,11 @@ signatures:
     - stage: links
       stageUuid: "3aec9d04-56f1-8b47-95dd-dd1dcc4349b6"
     - stage: horo
-      stageUuid: "eebdb9a3-52ab-8b49-8bba-a31801856e81"
+      stageUuid: "eebcd013-db21-8916-8bd2-e86b87325b71"
     - stage: seal
       stageUuid: "b723adb2-6ded-8e95-aef0-6ca2dfe75fed"
     - stage: uuid
-      stageUuid: "fff83da9-ab39-804f-9620-824437d87eda"
+      stageUuid: "13d33eb6-85f8-81a6-9c0f-24d03190f689"
 version: 2
 ---
 # bank-transactions

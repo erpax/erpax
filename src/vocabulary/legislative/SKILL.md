@@ -1,68 +1,35 @@
 ---
 name: legislative
 description: "Use when reasoning about legislative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/legislative
-coordinate: legislative · 4/weave · c52a5580
-contentUuid: "34db5f60-4b2e-578d-9f75-c104ba737f65"
-diamondUuid: "de8491ef-0d50-8d38-b923-6bba0e584e76"
-uuid: "c52a5580-10ca-8b31-b619-9c40ab23e2fd"
-horo: 4
-bonds:
-  in:
-    - building
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - building
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/legislative"
+coordinate: "vocabulary/legislative · 2/share · e0af744e"
+contentUuid: "e8fe7813-b010-5e73-8abb-691e0f33c39a"
+diamondUuid: "5929866a-a544-82d5-abd7-f4d3b8c9201c"
+uuid: "e0af744e-ebd4-8b5e-bcad-a34396f2be81"
+horo: 2
 typography:
-  partition: legislative
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - building
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - building
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - building
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "cf535e8d-7402-87e2-9d98-9d3557b5afeb"
+  computationUuid: "3be18284-fdb9-8a82-a0d9-1f15cad21edc"
   stages:
     - stage: path
-      stageUuid: "aaa8f206-ac79-8a45-b6bd-6d1dc7e6bfbd"
+      stageUuid: "8bf05d8e-baa8-80bc-a0ef-52bab32bf5d6"
     - stage: trinity
-      stageUuid: "b032d71e-ca85-84f7-b7c1-dba2c71c03eb"
+      stageUuid: "d02c1ffd-1de3-8c2c-a903-4e3025aab7c5"
     - stage: boundary
-      stageUuid: "0651bd13-7670-8cde-a029-460f2e971613"
+      stageUuid: "bc116a58-d623-8b24-adc2-2d6dd58dc30d"
     - stage: links
-      stageUuid: "4fac7648-dae9-8ab5-9edc-d13e67750097"
+      stageUuid: "5702af05-f732-830a-9174-bce93e95d856"
     - stage: horo
-      stageUuid: "85eed441-2449-840d-8c11-fcf8578f66b1"
+      stageUuid: "b7b4fec1-2889-81a8-98a6-f49133d4dd7c"
     - stage: seal
-      stageUuid: "e49714ef-b479-862c-86f2-145b4b81e5e7"
+      stageUuid: "df4da5e2-6a69-8948-bab1-980ed4b68eef"
     - stage: uuid
-      stageUuid: "2d116aa0-231c-803a-b47a-5be8b2a7f30e"
+      stageUuid: "27a62136-80de-8fff-b04b-867d13defb40"
 version: 2
 ---
 # legislative

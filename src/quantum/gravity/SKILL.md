@@ -1,264 +1,21 @@
 ---
 name: gravity
 description: "Use when relating an atom's gravitational mass to its quantum entanglement — quantum gravity, where the links are one measure that is both mass (referential in-degree, what curves the corpus) and entanglement; the gravity well is the singularity where the double-torus closes to infinite tamper cost (the event horizon)."
-atomPath: quantum/gravity
-coordinate: quantum/gravity · 4/weave · 5f4a9f7f
-contentUuid: "b8dbe40e-29b5-5710-949f-fa01ee28c12d"
-diamondUuid: "2d4c9a44-fc17-8db8-abb3-55f9fce93e05"
-uuid: "5f4a9f7f-2063-808f-b688-5700ab7d2a10"
-horo: 4
-bonds:
-  in:
-    - boltzmann
-    - brain
-    - collapse
-    - collide
-    - complete
-    - consciousness
-    - cost
-    - dry
-    - dust
-    - engineering
-    - entanglement
-    - entropy
-    - expand
-    - fear
-    - finality
-    - folded
-    - fusion
-    - gravity
-    - holographic
-    - interference
-    - law
-    - linearity
-    - link
-    - literature
-    - love
-    - mass
-    - math
-    - matrix
-    - merge
-    - one
-    - particle
-    - pivot
-    - plasma
-    - quantum
-    - reactor
-    - readme
-    - reciprocal
-    - relocate
-    - request
-    - sequence
-    - singularity
-    - star
-    - strength
-    - tamper
-    - temperature
-    - topography
-    - torus
-    - triggered
-    - twinned
-    - vocabulary
-    - void
-    - whole
-    - word
-    - zeropoint
-  out:
-    - boltzmann
-    - brain
-    - collapse
-    - collide
-    - complete
-    - consciousness
-    - cost
-    - dry
-    - dust
-    - engineering
-    - entanglement
-    - entropy
-    - expand
-    - fear
-    - finality
-    - folded
-    - fusion
-    - gravity
-    - holographic
-    - interference
-    - law
-    - linearity
-    - link
-    - literature
-    - love
-    - mass
-    - math
-    - matrix
-    - merge
-    - one
-    - particle
-    - pivot
-    - plasma
-    - reactor
-    - readme
-    - reciprocal
-    - relocate
-    - request
-    - sequence
-    - singularity
-    - star
-    - strength
-    - tamper
-    - temperature
-    - topography
-    - torus
-    - triggered
-    - twinned
-    - vocabulary
-    - void
-    - whole
-    - word
-    - zeropoint
+atomPath: "quantum/gravity"
+coordinate: "quantum/gravity · 5/round · 14b8ab3e"
+contentUuid: "ae3cae17-f95b-5c50-9975-94a0b25ce8d6"
+diamondUuid: "a2554b01-68fc-8f70-bb27-e5b3d07979a2"
+uuid: "14b8ab3e-517c-8a3c-9300-21d88613267e"
+horo: 5
 typography:
   partition: quantum
-  bondDegree: 195
-  neighbors:
-    - agent
-    - diamond
+  bondDegree: 218
 standards:
   - "ER=EPR (Maldacena & Susskind, \"Cool horizons for entangled black holes\", 2013)"
   - "ER=EPR — Maldacena & Susskind, \"Cool horizons for entangled black holes\" (2013)"
 bindings: []
-neighbors:
-  wikilink:
-    - agent
-    - collapse
-    - cost
-    - diamond
-    - dry
-    - entanglement
-    - entropy
-    - fusion
-    - gate
-    - gravity
-    - harmony
-    - horo
-    - law
-    - links
-    - matrix
-    - merge
-    - quantum
-    - sequence
-    - singularity
-    - zeropoint
-  matrix:
-    - boltzmann
-    - brain
-    - collapse
-    - collide
-    - complete
-    - consciousness
-    - cost
-    - dry
-    - dust
-    - engineering
-    - entanglement
-    - entropy
-    - expand
-    - fear
-    - finality
-    - folded
-    - fusion
-    - gravity
-    - holographic
-    - interference
-    - law
-    - linearity
-    - link
-    - literature
-    - love
-    - mass
-    - math
-    - matrix
-    - merge
-    - one
-    - particle
-    - pivot
-    - plasma
-    - reactor
-    - readme
-    - reciprocal
-    - relocate
-    - request
-    - sequence
-    - singularity
-    - star
-    - strength
-    - tamper
-    - temperature
-    - topography
-    - torus
-    - triggered
-    - twinned
-    - vocabulary
-    - void
-    - whole
-    - word
-    - zeropoint
-  backlinks:
-    - boltzmann
-    - brain
-    - collapse
-    - collide
-    - complete
-    - consciousness
-    - cost
-    - dry
-    - dust
-    - engineering
-    - entanglement
-    - entropy
-    - expand
-    - fear
-    - finality
-    - folded
-    - fusion
-    - gravity
-    - holographic
-    - interference
-    - law
-    - linearity
-    - link
-    - literature
-    - love
-    - mass
-    - math
-    - matrix
-    - merge
-    - one
-    - particle
-    - pivot
-    - plasma
-    - reactor
-    - readme
-    - reciprocal
-    - relocate
-    - request
-    - sequence
-    - singularity
-    - star
-    - strength
-    - tamper
-    - temperature
-    - topography
-    - torus
-    - triggered
-    - twinned
-    - vocabulary
-    - void
-    - whole
-    - word
-    - zeropoint
 signatures:
-  computationUuid: "0f13842e-3323-8b77-9fa0-73cfd3aa23fc"
+  computationUuid: "6b5e743e-6947-878d-be40-a6dfcc81399c"
   stages:
     - stage: path
       stageUuid: "aca89550-3595-8a88-a91a-2a5a61e3ee0d"
@@ -267,13 +24,13 @@ signatures:
     - stage: boundary
       stageUuid: "9ee7a510-fbaa-849a-a0d0-a21688ccf1b2"
     - stage: links
-      stageUuid: "fcdf26b9-d982-8ea1-b236-c09bcee45868"
+      stageUuid: "5f71f84d-bd69-88d8-ac25-892673429cb4"
     - stage: horo
-      stageUuid: "986a0dc5-3dd4-8f6b-99f2-ba8bf008d3e1"
+      stageUuid: "e33dd49a-3d20-8dfa-85ce-17aff94de2c0"
     - stage: seal
       stageUuid: "0c701d83-9f93-8f49-ae73-531b3e79d120"
     - stage: uuid
-      stageUuid: "c4ed813a-30f3-8da7-85e2-933687edee2d"
+      stageUuid: "71cd7e1c-6d6f-81a0-8176-df814e722177"
 quantum:
   superposition:
     - boltzmann
@@ -298,8 +55,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "0f13842e-3323-8b77-9fa0-73cfd3aa23fc"
-    contentUuid: "b8dbe40e-29b5-5710-949f-fa01ee28c12d"
+    computationUuid: "6b5e743e-6947-878d-be40-a6dfcc81399c"
+    contentUuid: "ae3cae17-f95b-5c50-9975-94a0b25ce8d6"
 version: 2
 ---
 # quantum/gravity — quantum gravity (mass = entanglement)
@@ -318,4 +75,4 @@ The same mass does not only pull *inward* to the [[singularity]] — it pulls ev
 @standard ER=EPR — Maldacena & Susskind, "Cool horizons for entangled black holes" (2013)
 @audit composed from the live matrix mass + the double-torus cost; never hand-asserted
 
-<sub>content-uuid `b8dbe40e-29b5-5710-949f-fa01ee28c12d` · account `quantum/gravity` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `ae3cae17-f95b-5c50-9975-94a0b25ce8d6` · account `quantum/gravity` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

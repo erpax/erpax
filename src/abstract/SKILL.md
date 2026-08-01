@@ -2,43 +2,20 @@
 name: abstract
 description: Use when reasoning about abstract — An abstract is a short description that summarizes a CreativeWork.
 atomPath: abstract
-coordinate: "abstract · 4/weave · ba44d764"
-contentUuid: "fc313127-d76c-5be3-9ccb-de818a96fec0"
-diamondUuid: "f00f5156-b1c7-89aa-8110-4e1e404aefa1"
-uuid: "ba44d764-0e4c-8841-bef4-ceca1058952d"
-horo: 4
-bonds:
-  in:
-    - creative
-    - law
-    - thing
-  out:
-    - creative
-    - law
-    - thing
+coordinate: "abstract · 5/round · b0f0d72c"
+contentUuid: "a400975b-bdf1-5ff7-b51f-ec26a1b9ed33"
+diamondUuid: "a2431a62-6125-8c85-b166-e882e9ec4d92"
+uuid: "b0f0d72c-9966-8875-9b11-59cd027e8290"
+horo: 5
 typography:
   partition: abstract
   bondDegree: 9
-  neighbors: []
 standards:
   - schema.org
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - creative
-    - law
-    - thing
-  matrix:
-    - creative
-    - law
-    - thing
-  backlinks:
-    - creative
-    - law
-    - thing
 signatures:
-  computationUuid: "61efc84c-4860-8077-bbf3-307afa51ccfb"
+  computationUuid: "27e824b1-8e4f-83ae-934b-5492256d171a"
   stages:
     - stage: path
       stageUuid: "54f8a493-16c4-8dbd-af0a-0749f8978900"
@@ -49,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "30884635-1086-82de-860f-615fa87706fe"
     - stage: horo
-      stageUuid: "cad59d6d-2427-83b6-ba1c-61aedd4a65c4"
+      stageUuid: "1f0ece41-ce7f-82fd-b3e5-d1d4f6d767cb"
     - stage: seal
       stageUuid: "8bb30fd2-3efb-8bfa-a548-5e6c0cf5a975"
     - stage: uuid
-      stageUuid: "e96a1673-ebae-8947-b0ec-495d0656a746"
+      stageUuid: "926e7150-2305-8e39-aa3a-1e1b5197b964"
 version: 2
 ---
 # abstract

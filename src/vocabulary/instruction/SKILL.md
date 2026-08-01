@@ -1,62 +1,34 @@
 ---
 name: instruction
 description: Use when modelling one instruction — the singular model of the instructions collection (the plural store); a directive step to be carried out.
-atomPath: vocabulary/instruction
-coordinate: instruction · 2/share · 7d247484
-contentUuid: "8d31a8e3-792e-5916-9fae-a05a3813414f"
-diamondUuid: "e0ab8f6e-41ad-886f-bfb2-00f451233343"
-uuid: "7d247484-190f-8cca-8cb4-a0e37c1d3000"
-horo: 2
-bonds:
-  in:
-    - balance
-    - document
-    - instructions
-    - law
-  out:
-    - balance
-    - document
-    - instructions
-    - law
+atomPath: "vocabulary/instruction"
+coordinate: "vocabulary/instruction · 4/weave · e66f473e"
+contentUuid: "ee9c2e8b-8553-5e14-9bfe-280a987978bd"
+diamondUuid: "ca0dd844-a803-8a77-b26c-7bad39e49b81"
+uuid: "e66f473e-074f-8c62-8b62-b17d6eb99662"
+horo: 4
 typography:
-  partition: instruction
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - document
-    - instructions
-    - law
-  matrix:
-    - balance
-    - document
-    - instructions
-    - law
-  backlinks:
-    - balance
-    - document
-    - instructions
-    - law
 signatures:
-  computationUuid: "6c05f038-0969-878b-8aee-63f9eba55c8d"
+  computationUuid: "99a45953-72f4-835f-bdc0-b7b78d4f0742"
   stages:
     - stage: path
-      stageUuid: "d8c8840f-6fee-8f31-83b6-0642cd976d5f"
+      stageUuid: "76cf25d1-df7b-8e3e-9799-ac12632acf18"
     - stage: trinity
-      stageUuid: "916aecc7-1f9f-8a75-a8e3-1f23271cd268"
+      stageUuid: "b2f93ae3-0027-85a2-aabc-234daa25c657"
     - stage: boundary
-      stageUuid: "dd2ce5bd-12a2-8ab1-861f-bb507570d460"
+      stageUuid: "7a39b4c1-d084-8b78-b037-05674d4fa5b5"
     - stage: links
-      stageUuid: "372053e7-6004-8396-b474-f24702d2b126"
+      stageUuid: "fe53fa0a-1117-84d6-a7b2-6a624fe80f45"
     - stage: horo
-      stageUuid: "17db607c-db17-8f29-b61a-05b0970cf3d9"
+      stageUuid: "6b443433-3956-8b51-a81f-c3c142d10bd5"
     - stage: seal
-      stageUuid: "55b4b08b-8319-88a7-b02a-ccda5443c921"
+      stageUuid: "ad9ddba2-ff6e-8276-8bcb-98a7db7197af"
     - stage: uuid
-      stageUuid: "2eafd4ec-8704-8348-a99b-679cd225945d"
+      stageUuid: "8e15c2ba-86cf-85e3-81a0-7fb3d0a9f49a"
 version: 2
 ---
 # instruction — the model of one [[instructions]] row

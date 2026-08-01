@@ -2,49 +2,22 @@
 name: timestamp
 description: "Use when stamping a status-transition timestamp (postedAt, approvedAt, reconciledAt, authorizedAt) onto a configurable field the first time a condition fires — a beforeChange hook factory emitting canonical UTC ISO-8601."
 atomPath: "auto/set/timestamp"
-coordinate: "auto/set/timestamp · 8/crest · 3dd9511a"
-contentUuid: "6e8901f0-387e-5614-b275-109ec2c3bccb"
-diamondUuid: "c29483cc-fdd8-8706-ad84-513050eda34e"
-uuid: "3dd9511a-e03b-8551-90ce-43f2271cc1b0"
+coordinate: "auto/set/timestamp · 8/crest · 040fddcc"
+contentUuid: "666d07a6-bc43-5ed7-b2b9-e6e57a88e610"
+diamondUuid: "9846713c-ce19-8904-b95e-d5462d1ad554"
+uuid: "040fddcc-ce47-8ddb-a72c-0fc8ec8a0072"
 horo: 8
-bonds:
-  in:
-    - law
-    - set
-    - thing
-  out:
-    - law
-    - thing
 typography:
   partition: auto
   bondDegree: 10
-  neighbors: []
 standards:
-  - "EU-2019/1150"
-  - "EU-2019/1152"
-  - "EU-2019/1937"
-  - "EU-2019/2161"
-  - "EU-2019/770"
-  - "EU-2019/771"
   - "EU-Intrastat-Reg-2019/2152"
   - "ISO-8601-1"
   - "ISO-8601-1:2019 date-time utc-canonical"
   - "SOX §404 internal-controls verifiable-event-time"
 bindings: []
-neighbors:
-  wikilink:
-    - audit
-    - auto
-    - hooks
-    - law
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "ae2fb9d0-6083-8505-97d7-b57033efcdca"
+  computationUuid: "8294fefd-3232-86c9-b95c-bccb95701501"
   stages:
     - stage: path
       stageUuid: "75418288-873f-8a23-9c69-bb50e4dab801"
@@ -55,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "adc90156-b6da-82c4-b398-1b38337990b4"
     - stage: horo
-      stageUuid: "100d83d9-22a9-820d-b889-4456ed5862df"
+      stageUuid: "4a2a561d-8ece-8203-947b-cbdcacbdbd9f"
     - stage: seal
       stageUuid: "c3bf02a3-f31d-8ccf-816b-6b3aa7bcc308"
     - stage: uuid
-      stageUuid: "f85301be-aaba-8335-8fea-2039053ae1a2"
+      stageUuid: "83d28032-1b81-8d9c-b49c-3699eb38b56e"
 version: 2
 ---
 # auto/set/timestamp — verifiable event time on transition

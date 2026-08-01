@@ -2,143 +2,21 @@
 name: api
 description: "Use when calling Payload data operations — Local API (payload.find/create/update/delete), REST endpoints, or GraphQL — or deciding which to use, passing depth/select/where/overrideAccess, or running ops inside hooks/server components."
 atomPath: api
-coordinate: "api · 8/crest · 95edf517"
-contentUuid: "f6835ab0-ef12-511e-a53a-26f86877ea26"
-diamondUuid: "54d774dd-800b-861f-aadc-a20c579a7163"
-uuid: "95edf517-5398-8971-b85b-f2e1f8839b72"
-horo: 8
-bonds:
-  in:
-    - access
-    - calculate
-    - descent
-    - dev
-    - dimension
-    - endpoint
-    - endpoints
-    - fs
-    - github
-    - harden
-    - integrity
-    - law
-    - mcp
-    - path
-    - payload
-    - port
-    - quantum
-    - queries
-    - redirects
-    - reference
-    - spec
-    - url
-    - uuid
-    - web
-    - workspace
-  out:
-    - access
-    - calculate
-    - descent
-    - dev
-    - dimension
-    - endpoint
-    - endpoints
-    - fs
-    - github
-    - harden
-    - integrity
-    - law
-    - mcp
-    - path
-    - payload
-    - port
-    - quantum
-    - queries
-    - redirects
-    - reference
-    - spec
-    - url
-    - uuid
-    - web
-    - workspace
+coordinate: "api · 1/base · fbd80150"
+contentUuid: "2df8401c-2fbe-5fc6-99b3-091343b1e98e"
+diamondUuid: "412ba6bc-9543-88c2-9d7c-14a5d72efcbd"
+uuid: "fbd80150-37a1-883e-acbf-61fe731543d7"
+horo: 1
 typography:
   partition: api
   bondDegree: 0
-  neighbors: []
 standards:
   - "EU-Taxonomy-2020/852"
   - "ISO-19011"
   - "RFC-6749"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - dimension
-    - fs
-    - github
-    - harden
-    - integrity
-    - law
-    - mcp
-    - path
-    - payload
-    - quantum
-    - queries
-    - url
-    - uuid
-  matrix:
-    - access
-    - calculate
-    - descent
-    - dev
-    - dimension
-    - endpoint
-    - endpoints
-    - fs
-    - github
-    - harden
-    - integrity
-    - law
-    - mcp
-    - path
-    - payload
-    - port
-    - quantum
-    - queries
-    - redirects
-    - reference
-    - spec
-    - url
-    - uuid
-    - web
-    - workspace
-  backlinks:
-    - access
-    - calculate
-    - descent
-    - dev
-    - dimension
-    - endpoint
-    - endpoints
-    - fs
-    - github
-    - harden
-    - integrity
-    - law
-    - mcp
-    - path
-    - payload
-    - port
-    - quantum
-    - queries
-    - redirects
-    - reference
-    - spec
-    - url
-    - uuid
-    - web
-    - workspace
 signatures:
-  computationUuid: "2e225ed9-272b-8812-b49e-5e4e321fa13d"
+  computationUuid: "353ffa07-15db-8859-8379-99ba6b38c588"
   stages:
     - stage: path
       stageUuid: "6ab3d6d5-bcae-8dbf-b4ce-e6a3e6f05d97"
@@ -149,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "d9cd4e19-c697-8184-af0b-847ae0b1ade0"
     - stage: horo
-      stageUuid: "fcaaf670-e7c9-8699-a672-1d88a3db4c1e"
+      stageUuid: "02fef560-c7e7-8027-b7c6-1d1674695864"
     - stage: seal
       stageUuid: "f5055290-b736-883f-8c67-99adcd93f8b0"
     - stage: uuid
-      stageUuid: "9fbb74ba-a8d4-8c21-89e5-7ceb2c895692"
+      stageUuid: "f3b840d9-19c2-8b86-baa6-4de40a03a7db"
 version: 2
 ---
 # api — Local / REST / GraphQL (position 7 of the material cycle)

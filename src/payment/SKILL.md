@@ -2,135 +2,19 @@
 name: payment
 description: "Use when modeling a cash inflow/outflow — payment received from customer, payment to vendor, expense reimbursement, salary payment. A transaction linking a GL account (cash), amount, date, and counterparty. Part of the accounting/commerce cycle."
 atomPath: payment
-coordinate: payment · 7/descent · f940fc93
-contentUuid: "255f9a94-1f00-5f41-846f-6908c6a07599"
-diamondUuid: "c903dd8e-4326-8f4d-8141-085598f6a2db"
-uuid: "f940fc93-6501-8579-8a82-2592014ef614"
-horo: 7
-bonds:
-  in:
-    - accepted
-    - accounting
-    - amount
-    - api
-    - applies
-    - card
-    - charge
-    - commerce
-    - contactless
-    - currency
-    - date
-    - down
-    - due
-    - frequency
-    - law
-    - loan
-    - minimum
-    - quantum
-    - run
-    - scheduled
-    - service
-    - specification
-    - trading
-    - transaction
-    - url
-  out:
-    - accepted
-    - accounting
-    - amount
-    - api
-    - applies
-    - card
-    - charge
-    - commerce
-    - contactless
-    - currency
-    - date
-    - down
-    - due
-    - frequency
-    - law
-    - loan
-    - minimum
-    - quantum
-    - run
-    - scheduled
-    - service
-    - specification
-    - trading
-    - transaction
-    - url
+coordinate: "payment · 2/share · 714cbaf9"
+contentUuid: "00d0cedd-df63-531c-9977-3e232b927957"
+diamondUuid: "8b29de72-b999-8084-a9e9-9caac109c8e6"
+uuid: "714cbaf9-d758-85b6-b35a-82210bb53e95"
+horo: 2
 typography:
   partition: payment
   bondDegree: 77
-  neighbors: []
 standards:
-  - "ISO-9362"
   - "NIST-SP-800-38D"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - amount
-    - commerce
-    - currency
-    - date
-    - law
-    - transaction
-  matrix:
-    - accepted
-    - accounting
-    - amount
-    - api
-    - applies
-    - card
-    - charge
-    - commerce
-    - contactless
-    - currency
-    - date
-    - down
-    - due
-    - frequency
-    - law
-    - loan
-    - minimum
-    - quantum
-    - run
-    - scheduled
-    - service
-    - specification
-    - trading
-    - transaction
-    - url
-  backlinks:
-    - accepted
-    - accounting
-    - amount
-    - api
-    - applies
-    - card
-    - charge
-    - commerce
-    - contactless
-    - currency
-    - date
-    - down
-    - due
-    - frequency
-    - law
-    - loan
-    - minimum
-    - quantum
-    - run
-    - scheduled
-    - service
-    - specification
-    - trading
-    - transaction
-    - url
 signatures:
-  computationUuid: "c86488b7-d653-81fd-818b-6523723e4f5e"
+  computationUuid: "bf411a58-da23-84b5-9bc1-c312f1245048"
   stages:
     - stage: path
       stageUuid: "fce1c4ca-2d13-8596-ab81-de229be75d71"
@@ -141,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "907f79ce-678e-8fbb-a427-8f7b5453c20e"
     - stage: horo
-      stageUuid: "ba4312a5-daa4-8eeb-99d8-5a60e02c89a6"
+      stageUuid: "465ce6ab-51d7-882b-9b9c-1d080f6095dd"
     - stage: seal
-      stageUuid: "75b5462c-cd45-88f4-8807-534ccbe848cd"
+      stageUuid: "de11b79b-23b5-81ac-8e05-797a10e6b5a8"
     - stage: uuid
-      stageUuid: "7a555f04-80c2-89ff-bb86-93f1fd17b776"
+      stageUuid: "ae0f4de7-e999-83a3-82b0-cfcf8ad49059"
 version: 2
 ---
 # payment

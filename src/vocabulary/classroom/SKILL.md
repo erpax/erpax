@@ -1,124 +1,34 @@
 ---
 name: classroom
 description: "Use when modelling a multi-agent learning session — a team of agents in pedagogical roles (teacher delivers, peer debates, examiner gates, debater brings viewpoints) teaches a competency to a learner (human or agent — the actor-merge). The examiner IS the gate, the debate IS competition (viewpoints → harmonic-first → decide), the learner acquires the competency's skillRoute. Generative friction, not passive delivery; the learner owns their record (sovereign, content-addressed)."
-atomPath: vocabulary/classroom
-coordinate: classroom · 4/weave · 5fba7100
-contentUuid: "6627b698-56b6-5143-a017-84d797dabc93"
-diamondUuid: "1ba7513d-d48c-84de-9329-c84bca6e0302"
-uuid: "5fba7100-e3f2-8bfd-bbc3-ec1c4fa9e9f2"
-horo: 4
-bonds:
-  in:
-    - breath
-    - chat
-    - competition
-    - decide
-    - derive
-    - education
-    - holographic
-    - law
-    - merge
-    - proof
-    - roles
-    - science
-    - self
-    - society
-    - team
-    - train
-    - training
-  out:
-    - breath
-    - chat
-    - competition
-    - decide
-    - derive
-    - education
-    - holographic
-    - law
-    - merge
-    - proof
-    - roles
-    - science
-    - self
-    - society
-    - team
-    - train
-    - training
+atomPath: "vocabulary/classroom"
+coordinate: "vocabulary/classroom · 2/share · 2d1c83ec"
+contentUuid: "c6a101b6-13c7-5ff3-9f66-a1a3820656ea"
+diamondUuid: "f954eede-46f3-8192-9659-59cde1d1e318"
+uuid: "2d1c83ec-cd23-8d46-8bb8-a9c91ecc2c2f"
+horo: 2
 typography:
-  partition: classroom
+  partition: vocabulary
   bondDegree: 51
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - breath
-    - chat
-    - competition
-    - decide
-    - derive
-    - education
-    - holographic
-    - law
-    - merge
-    - proof
-    - self
-    - society
-    - team
-    - train
-  matrix:
-    - breath
-    - chat
-    - competition
-    - decide
-    - derive
-    - education
-    - holographic
-    - law
-    - merge
-    - proof
-    - roles
-    - science
-    - self
-    - society
-    - team
-    - train
-    - training
-  backlinks:
-    - breath
-    - chat
-    - competition
-    - decide
-    - derive
-    - education
-    - holographic
-    - law
-    - merge
-    - proof
-    - roles
-    - science
-    - self
-    - society
-    - team
-    - train
-    - training
 signatures:
-  computationUuid: "92f8719b-dfe3-847f-9e2e-9638ab0f4b61"
+  computationUuid: "69d75ab7-7e92-8add-9999-093e78d80c91"
   stages:
     - stage: path
-      stageUuid: "2bf2d3f1-bbcf-8f02-b940-397d29beafd7"
+      stageUuid: "77a18f36-3e64-88d8-9c8a-e45315f34c3c"
     - stage: trinity
-      stageUuid: "adb62db4-817f-8d6b-a7b8-f874293f74d4"
+      stageUuid: "5eef6030-1b14-8805-ae9c-afec28c8d40a"
     - stage: boundary
-      stageUuid: "252362cc-a956-8fb9-b18b-259db610dace"
+      stageUuid: "72cd7814-fdda-86bd-a5cd-e23027f4ada2"
     - stage: links
-      stageUuid: "afb35e17-f216-8829-8492-42a3f829bf93"
+      stageUuid: "c0acd919-265e-8baa-a193-3d6de304208a"
     - stage: horo
-      stageUuid: "933b7e73-cdb6-878b-9aec-b436d8c0230c"
+      stageUuid: "2ffc4db4-2cdd-8fad-87d0-1b1cbc3e2119"
     - stage: seal
-      stageUuid: "fe36d610-c6d3-8cef-a9e6-343d926fcb18"
+      stageUuid: "c3c572a5-b2b2-8d94-bb65-b1821a31ce91"
     - stage: uuid
-      stageUuid: "6b9e4ae9-916b-8616-a71c-e1b9f15de9d8"
+      stageUuid: "6d5c3e9e-b159-8589-a1ae-f18807f08362"
 version: 2
 ---
 # classroom — a team of agents teaching, generative friction not delivery

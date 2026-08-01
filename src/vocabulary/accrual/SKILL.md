@@ -1,95 +1,34 @@
 ---
 name: accrual
 description: "Use when recognizing revenue or expense in the period incurred, earned, or obligated, regardless of payment timing — the foundation of accrual-basis accounting and the IFRS/GAAP reporting standard"
-atomPath: vocabulary/accrual
-coordinate: accrual · 5/round · 24a734d2
-contentUuid: "de3e833c-370c-5f5e-924a-8d9262a0f123"
-diamondUuid: "4730bdac-cebd-8cae-9afa-ac71a2bd9c60"
-uuid: "24a734d2-65f6-8521-8a08-551a8c04e14b"
-horo: 5
-bonds:
-  in:
-    - adjustments
-    - balance
-    - deduction
-    - deferral
-    - deferredrevenue
-    - entries
-    - journals
-    - periods
-    - prepaid
-    - provision
-    - recognition
-    - tenure
-  out:
-    - adjustments
-    - balance
-    - deduction
-    - deferral
-    - deferredrevenue
-    - entries
-    - journals
-    - periods
-    - prepaid
-    - provision
-    - recognition
-    - tenure
+atomPath: "vocabulary/accrual"
+coordinate: "vocabulary/accrual · 1/base · 5eada8d9"
+contentUuid: "60d80660-cfcb-52ae-8363-9470ae043afe"
+diamondUuid: "4a5150e0-2212-8df1-95c2-5bbbfe2822cd"
+uuid: "5eada8d9-11a3-884e-9821-43e38511aadb"
+horo: 1
 typography:
-  partition: accrual
+  partition: vocabulary
   bondDegree: 36
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - adjustments
-    - balance
-    - entries
-    - journals
-    - periods
-  matrix:
-    - adjustments
-    - balance
-    - deduction
-    - deferral
-    - deferredrevenue
-    - entries
-    - journals
-    - periods
-    - prepaid
-    - provision
-    - recognition
-    - tenure
-  backlinks:
-    - adjustments
-    - balance
-    - deduction
-    - deferral
-    - deferredrevenue
-    - entries
-    - journals
-    - periods
-    - prepaid
-    - provision
-    - recognition
-    - tenure
 signatures:
-  computationUuid: "d8f4ee1a-ad44-8c38-b6d0-fb27f5a3d5e9"
+  computationUuid: "ea57f171-91ee-8816-80b0-9567c0a2c9e4"
   stages:
     - stage: path
-      stageUuid: "a8d62968-9600-8684-88c5-24c49eab1a3d"
+      stageUuid: "e00c3106-e18e-8526-a94b-81dc1d110083"
     - stage: trinity
-      stageUuid: "d912dcd7-3281-8a9c-bf2a-01c41d7bb99c"
+      stageUuid: "1c622fab-7a2c-847a-888f-9ebfe622cdb9"
     - stage: boundary
-      stageUuid: "bf50ab53-2e7b-8831-8250-64fcc36eac3f"
+      stageUuid: "b5cbef32-da21-8975-9915-a008aecdc0b3"
     - stage: links
-      stageUuid: "fb721ac4-3917-8d6d-a3eb-eeb3518fcdd1"
+      stageUuid: "bcef482f-f536-867c-bd50-57b648d67f39"
     - stage: horo
-      stageUuid: "48ee8664-d6c2-8a78-af63-903543ab88c1"
+      stageUuid: "f436113c-edc7-89ff-ac35-a1722a667e5c"
     - stage: seal
-      stageUuid: "d6e8afcc-0706-88fb-a4e3-3f2a8f729f5b"
+      stageUuid: "c628863a-9a31-860a-b84e-ef9846dec96e"
     - stage: uuid
-      stageUuid: "64669a79-7215-8737-ab53-faef91ab5885"
+      stageUuid: "8ee56d9f-b43f-8bc1-add5-b6e925a847e4"
 version: 2
 ---
 # accrual

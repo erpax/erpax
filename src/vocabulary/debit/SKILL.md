@@ -1,71 +1,35 @@
 ---
 name: debit
 description: "Use when reasoning about debit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/debit
-coordinate: debit · 8/crest · c3ef2bd3
-contentUuid: "5eca75c9-e99f-509e-9468-c2da324e1271"
-diamondUuid: "c55b40b4-1088-8294-b0b0-f9514aba387f"
-uuid: "c3ef2bd3-e34b-890d-b150-501937fcfc60"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - mercy
-    - merge
-    - readme
-    - sti
-  out:
-    - collapse
-    - law
-    - mercy
-    - merge
-    - readme
-    - sti
+atomPath: "vocabulary/debit"
+coordinate: "vocabulary/debit · 4/weave · f5a4691a"
+contentUuid: "05f74323-ace8-5341-933a-df97d014d797"
+diamondUuid: "651cfc38-794a-8257-9bbb-9680e50eb2c9"
+uuid: "f5a4691a-25af-8490-a6e5-f66323d94846"
+horo: 4
 typography:
-  partition: debit
-  bondDegree: 18
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 45
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - mercy
-    - merge
-    - readme
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - mercy
-    - merge
-    - readme
-    - sti
 signatures:
-  computationUuid: "57f9ac6a-c222-83a9-87fa-428d37a7643b"
+  computationUuid: "660d7b98-50e2-8a1e-bc96-10794b1c5bc9"
   stages:
     - stage: path
-      stageUuid: "e3a34e81-19b8-807c-9117-42edc11db79f"
+      stageUuid: "43151d5f-5f35-838e-b9cf-3e715a873e3f"
     - stage: trinity
-      stageUuid: "aacaad52-90fe-85a7-9566-f97d8a0a9f51"
+      stageUuid: "4b318243-072d-891c-a221-4eaf09f5c3b4"
     - stage: boundary
-      stageUuid: "6bf0651f-a855-819e-82fa-43640cfd2adc"
+      stageUuid: "ca69f24a-aaa7-8efd-a37f-f2b8b4e4cf19"
     - stage: links
-      stageUuid: "e7ad522c-9301-831f-8bca-0082926bec18"
+      stageUuid: "2e899679-704e-819b-9260-a54eca487ed3"
     - stage: horo
-      stageUuid: "faea02f3-75d8-8539-aa3c-a9d3cb4abb8a"
+      stageUuid: "f5b5bdae-f413-8d3e-bb15-e98fec7cef20"
     - stage: seal
-      stageUuid: "7e73b6a4-8d19-8d47-a925-bc462aa1373c"
+      stageUuid: "9b8e339a-b0eb-8577-9c46-31250faaf670"
     - stage: uuid
-      stageUuid: "7e56b12e-d39a-8068-9c96-06f482f40681"
+      stageUuid: "7564a197-9303-8cff-8fd5-ac58e6ec9c3c"
 version: 2
 ---
 # debit

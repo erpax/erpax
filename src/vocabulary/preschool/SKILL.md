@@ -1,53 +1,35 @@
 ---
 name: preschool
 description: Use when reasoning about preschool — A preschool.
-atomPath: vocabulary/preschool
-coordinate: preschool · 8/crest · ee96bf3e
-contentUuid: "d13a3a8a-860b-5155-9efb-21fef3e32ed4"
-diamondUuid: "c379c154-a2ef-838b-89b9-e5ec125c9c10"
-uuid: "ee96bf3e-fde8-830a-bfa4-80a90412ca02"
+atomPath: "vocabulary/preschool"
+coordinate: "vocabulary/preschool · 8/crest · c06a5c9f"
+contentUuid: "7fa40fc8-c35b-5116-9171-c2c5c9435892"
+diamondUuid: "53c05636-9609-87b7-849f-6984e835eeb8"
+uuid: "c06a5c9f-c2ad-82e9-a414-6c45eae27e75"
 horo: 8
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
 typography:
-  partition: preschool
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "2b24c599-2c48-8f01-b73b-30ac92028fa8"
+  computationUuid: "e6454614-3742-871a-abfe-cd2b5a68b31f"
   stages:
     - stage: path
-      stageUuid: "ae1c59e7-016b-8378-93a2-f2a7da8354d0"
+      stageUuid: "0d1984ce-d3d0-8e6d-98d3-75e683a9f7a9"
     - stage: trinity
-      stageUuid: "48fce520-0356-89f0-a302-24ed09a20759"
+      stageUuid: "96c435b8-90a5-86e6-8d73-9adea37fc4ed"
     - stage: boundary
-      stageUuid: "1c8ef289-3b97-872c-9684-819006b752bb"
+      stageUuid: "c117f673-e5f6-8788-a390-d9fde1a36576"
     - stage: links
-      stageUuid: "f91382be-0a79-8187-ad79-06ec3a6012f1"
+      stageUuid: "64bda070-af33-8ab6-be3c-2f7a1db2cd39"
     - stage: horo
-      stageUuid: "7bcdcd6f-9970-8ee0-9a7e-f3ce30ea203a"
+      stageUuid: "5abdaf52-6aff-8350-9b80-e2b7fabc1d26"
     - stage: seal
-      stageUuid: "c39f8b64-4831-8b30-9221-4739dea6e6bb"
+      stageUuid: "c51a1159-d8e1-85a4-88f6-b2af1c02ee34"
     - stage: uuid
-      stageUuid: "3282541d-82f3-8324-bf0d-8471b990c17b"
+      stageUuid: "d1aba36a-13dc-8d58-9272-0529dcd6d509"
 version: 2
 ---
 # preschool

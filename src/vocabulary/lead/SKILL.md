@@ -1,73 +1,35 @@
 ---
 name: lead
 description: "Use when reasoning about lead as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/lead
-coordinate: lead · 5/round · f7a140a5
-contentUuid: "90ccb1a2-c393-5c01-b76c-e7ad144e47cd"
-diamondUuid: "84c17689-1c7f-8907-bfdf-0347f0a465f6"
-uuid: "f7a140a5-d434-8592-acab-d7113ae2539d"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - delivery
-    - law
-    - merge
-    - sti
-    - time
-  out:
-    - collapse
-    - delivery
-    - law
-    - merge
-    - sti
-    - time
+atomPath: "vocabulary/lead"
+coordinate: "vocabulary/lead · 7/descent · 39cd84b6"
+contentUuid: "93c78909-7457-5dc9-885d-d4be1693a684"
+diamondUuid: "25fff6aa-b731-827d-8706-7ac5c047d247"
+uuid: "39cd84b6-8d3d-8f11-98a8-ceaf97904064"
+horo: 7
 typography:
-  partition: lead
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - delivery
-    - law
-    - merge
-    - sti
-    - time
-  matrix:
-    - collapse
-    - delivery
-    - law
-    - merge
-    - sti
-    - time
-  backlinks:
-    - collapse
-    - delivery
-    - law
-    - merge
-    - sti
-    - time
 signatures:
-  computationUuid: "3cb50d6e-338b-8b58-84ec-2c7aa31556aa"
+  computationUuid: "cda74bdd-da3a-820c-bc88-3bac8402a21d"
   stages:
     - stage: path
-      stageUuid: "28540fa0-374d-81a3-8c5c-0f387bcee787"
+      stageUuid: "72e38e25-5078-830e-92ed-41643ab6c7e3"
     - stage: trinity
-      stageUuid: "465304cb-d01b-8646-8a2a-1900029362c0"
+      stageUuid: "e12851b2-b9c7-8884-a37d-3661e6667c13"
     - stage: boundary
-      stageUuid: "101c29c1-a1ad-85c3-b6b7-2cbb03ca26ee"
+      stageUuid: "0b06a48f-734f-8bb6-85b3-64f98fd31541"
     - stage: links
-      stageUuid: "8976434e-c300-850f-a0ba-265c589deb96"
+      stageUuid: "259de7a6-bda3-8156-bad2-b51e3f14b606"
     - stage: horo
-      stageUuid: "e3eedd13-f2b2-8265-a001-20aeb602a40e"
+      stageUuid: "e1e08f63-1411-8490-aaa1-731073d54796"
     - stage: seal
-      stageUuid: "5d3a3300-a18f-8031-b921-04f760815abe"
+      stageUuid: "619f9e2b-fca4-886a-bc29-3d2f08cb3f22"
     - stage: uuid
-      stageUuid: "890b7925-146c-8078-9ffa-4fe9297f6849"
+      stageUuid: "be34b9a4-09a7-8678-b066-b6a41f0b14bd"
 version: 2
 ---
 # lead

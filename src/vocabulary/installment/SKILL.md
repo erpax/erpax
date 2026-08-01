@@ -1,63 +1,35 @@
 ---
 name: installment
 description: "Use when reasoning about installment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/installment
-coordinate: installment · 5/round · d9f3e779
-contentUuid: "2eca9a78-02dc-523e-a045-91a74e465d72"
-diamondUuid: "a1f63297-3a36-8e51-a634-5ac828937939"
-uuid: "d9f3e779-011b-85d3-be5d-2c492d2fb9a6"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/installment"
+coordinate: "vocabulary/installment · 8/crest · 924df88e"
+contentUuid: "d7908512-49cc-5af9-ad92-80344e79391d"
+diamondUuid: "9646ee68-f55d-8be6-a7c9-3a66e3535ea8"
+uuid: "924df88e-7d9f-881c-a17f-ce4c56340f9d"
+horo: 8
 typography:
-  partition: installment
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "25104d6e-1f7f-894e-8fbc-81aacbaf0385"
+  computationUuid: "6d0c6e5f-6422-8db4-91f5-a7e823e5002b"
   stages:
     - stage: path
-      stageUuid: "97dbb713-d011-81a9-9cf7-fbb58e4b02d2"
+      stageUuid: "8b82ee30-4714-86c3-a303-15482d29f213"
     - stage: trinity
-      stageUuid: "53fd1e77-4af1-8dab-8851-608ebdfc9600"
+      stageUuid: "d1e7aa49-1ed9-8f2c-9fc2-58c1f07c3312"
     - stage: boundary
-      stageUuid: "32cdb78d-296d-8ab9-bf6e-a7b09dfe1b47"
+      stageUuid: "e6a51c47-5786-8b28-8173-c727ba7ef81e"
     - stage: links
-      stageUuid: "f5fa5c48-523c-8240-90da-2c836a43b7cf"
+      stageUuid: "eb37234f-66c9-89fc-ba6c-2f2429135b62"
     - stage: horo
-      stageUuid: "27089443-fdbe-8268-ae03-a07ef6f3ffb2"
+      stageUuid: "1b2013dc-53b8-88f9-b812-5b8eda5934e8"
     - stage: seal
-      stageUuid: "f48ddd3c-3339-879b-91ea-d8133b78ea02"
+      stageUuid: "da6eeec4-6ef2-8e21-aaba-2cb5dbd6212b"
     - stage: uuid
-      stageUuid: "79721a33-b62c-8fb3-9746-9812eab4b167"
+      stageUuid: "a68820ce-fdb1-87df-a528-1762a218f8cd"
 version: 2
 ---
 # installment

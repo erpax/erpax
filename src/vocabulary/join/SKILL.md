@@ -1,68 +1,35 @@
 ---
 name: join
 description: "Use when reasoning about join as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/join
-coordinate: join · 5/round · c383d6bb
-contentUuid: "9c8b75c7-b983-56a9-b308-cd4c64ce6f1d"
-diamondUuid: "78896dcd-ad05-857c-ae4b-79736e1ec2ca"
-uuid: "c383d6bb-55a6-84f9-9eaf-f44bf8291a6d"
-horo: 5
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/join"
+coordinate: "vocabulary/join · 1/base · 3eb04b0b"
+contentUuid: "cd4bde1b-52c4-58fe-a7ff-9e3196986798"
+diamondUuid: "12d70fc0-6a27-889d-910b-e38265972532"
+uuid: "3eb04b0b-0bb4-8e85-bb86-ae013fe0ea6b"
+horo: 1
 typography:
-  partition: join
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "c2be156f-14ec-8295-8450-645739869c6b"
+  computationUuid: "f9438972-68cb-86c0-858f-06057c345864"
   stages:
     - stage: path
-      stageUuid: "56dddad4-c3bf-8177-9edd-cdd539a2b055"
+      stageUuid: "1d2692e8-48d6-8c7e-9c2c-e6784df86adc"
     - stage: trinity
-      stageUuid: "3ee05d9d-bc39-8d5a-bbab-edc05c0491f9"
+      stageUuid: "1296211d-a23d-80b6-b578-56a2bf92fd3a"
     - stage: boundary
-      stageUuid: "bac66342-3600-822f-a78d-dbf3fd73fa34"
+      stageUuid: "49e641f0-73a8-8e37-9acc-0b01b4adc0a3"
     - stage: links
-      stageUuid: "f8b8f1b8-9734-8895-b5ee-5637f85314e5"
+      stageUuid: "3401564c-4004-8162-bcec-263b414e6681"
     - stage: horo
-      stageUuid: "6e64cb9f-0940-8d88-b06b-b4c9a4f032a2"
+      stageUuid: "7d4feb7d-3843-8902-af46-ea70dd417275"
     - stage: seal
-      stageUuid: "df82629a-e463-8bc6-82f8-c30454bdcf05"
+      stageUuid: "6f2f7530-c3a9-81c3-b594-bba3072c9792"
     - stage: uuid
-      stageUuid: "2fc156af-5afb-84ec-bbcf-bb48da16197c"
+      stageUuid: "23862ec1-d6af-8ad7-a701-0963bb516e7e"
 version: 2
 ---
 # join

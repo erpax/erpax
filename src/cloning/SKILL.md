@@ -2,52 +2,14 @@
 name: cloning
 description: "Use when the platform reproduces itself — collecting its own structural genome, publishing it as a verifiable federation envelope, and booting a bit-identical instance from that bundle alone; mitosis as federation, gated by content-uuid recompute."
 atomPath: cloning
-coordinate: "cloning · 7/descent · 9b10929d"
-contentUuid: "bad8189a-d352-5226-8269-c7a7ed5dc180"
-diamondUuid: "3fd4ae3c-a874-8feb-9e17-f37639a1f65a"
-uuid: "9b10929d-e037-893c-afb7-b64438f0a612"
-horo: 7
-bonds:
-  in:
-    - anchor
-    - communication
-    - entanglement
-    - fractal
-    - holographic
-    - identity
-    - key
-    - law
-    - lineage
-    - merge
-    - proof
-    - reference
-    - replication
-    - self
-    - sequence
-    - society
-    - uuid
-  out:
-    - anchor
-    - communication
-    - entanglement
-    - fractal
-    - holographic
-    - identity
-    - key
-    - law
-    - lineage
-    - merge
-    - proof
-    - reference
-    - replication
-    - self
-    - sequence
-    - society
-    - uuid
+coordinate: "cloning · 2/share · 960a5269"
+contentUuid: "d9604bd1-4c00-571b-bc3c-f93c144126c9"
+diamondUuid: "75aae495-ad06-81c1-945f-6767b3eeb622"
+uuid: "960a5269-c294-883e-b17c-3cb0c03a5b5a"
+horo: 2
 typography:
   partition: cloning
-  bondDegree: 54
-  neighbors: []
+  bondDegree: 38
 standards:
   - "RFC-8785"
   - W3C Verifiable Credentials Data Model 2.0
@@ -56,59 +18,8 @@ standards:
   - "W3C-VC-2.0"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - anchor
-    - fractal
-    - holographic
-    - identity
-    - law
-    - lineage
-    - merge
-    - proof
-    - replication
-    - self
-    - sequence
-    - society
-    - uuid
-  matrix:
-    - anchor
-    - communication
-    - entanglement
-    - fractal
-    - holographic
-    - identity
-    - key
-    - law
-    - lineage
-    - merge
-    - proof
-    - reference
-    - replication
-    - self
-    - sequence
-    - society
-    - uuid
-  backlinks:
-    - anchor
-    - communication
-    - entanglement
-    - fractal
-    - holographic
-    - identity
-    - key
-    - law
-    - lineage
-    - merge
-    - proof
-    - reference
-    - replication
-    - self
-    - sequence
-    - society
-    - uuid
 signatures:
-  computationUuid: "6931d2f6-8b13-878c-8217-181ee12ec063"
+  computationUuid: "1378991b-a4a9-86fe-98af-49d59f013bd8"
   stages:
     - stage: path
       stageUuid: "8a1be77c-0b0b-8bb9-95c2-e018b105819b"
@@ -117,13 +28,13 @@ signatures:
     - stage: boundary
       stageUuid: "1f480012-203c-883f-a23e-432f431ccd01"
     - stage: links
-      stageUuid: "d8778ca5-f5ce-8d7e-a383-b2da1c2537f8"
+      stageUuid: "b027c77b-e49d-82de-8615-2bbfa31deeb9"
     - stage: horo
-      stageUuid: "3ff5650c-1485-80d0-a3f6-de8427c373f6"
+      stageUuid: "fbf17f4a-1426-8fcc-837c-ddd0860b3ec6"
     - stage: seal
       stageUuid: "29d08a4c-2338-8f57-aa24-efca5435b2f9"
     - stage: uuid
-      stageUuid: "1b90cd85-f7f6-8050-a1ad-112dc55a0bec"
+      stageUuid: "628bf080-e69a-88ae-ae54-f7b8918e7447"
 version: 2
 ---
 # cloning — the platform reproduces itself, bit-identical by construction

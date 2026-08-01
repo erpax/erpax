@@ -1,71 +1,19 @@
 ---
 name: device
 description: "Use when reasoning about a device as a measurement instrument — the boundary where the continuous analog world collapses into discrete digital snapshots; capture on the edge, compute pure, every reading a content-addressed measurement in the snapshot chain."
-atomPath: quantum/device
-coordinate: quantum/device · 4/weave · c336d3c4
-contentUuid: "3b4d6a02-251d-53a8-aab3-4b96a17b0db6"
-diamondUuid: "c0e409f1-184f-8e99-b42c-baa27d434b7b"
-uuid: "c336d3c4-8f6c-86f7-8ccc-88d327b0e206"
-horo: 4
-bonds:
-  in:
-    - available
-    - biometric
-    - device
-    - law
-    - medical
-    - purpose
-    - quantum
-    - stack
-    - uses
-  out:
-    - available
-    - biometric
-    - device
-    - law
-    - medical
-    - purpose
-    - stack
-    - uses
+atomPath: "quantum/device"
+coordinate: "quantum/device · 8/crest · a91918b9"
+contentUuid: "947e67c0-5d56-5ce5-8a23-5aba6ae19d13"
+diamondUuid: "7787c11f-7549-8e84-b966-e96234a8c55d"
+uuid: "a91918b9-1f5d-83ad-b272-b8b777c3d1f6"
+horo: 8
 typography:
   partition: quantum
-  bondDegree: 65
-  neighbors: []
+  bondDegree: 97
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - analog
-    - biofield
-    - biometric
-    - coherence
-    - device
-    - finality
-    - law
-    - measurement
-    - reality
-    - sensory
-    - snapshot
-  matrix:
-    - available
-    - biometric
-    - device
-    - law
-    - medical
-    - purpose
-    - stack
-    - uses
-  backlinks:
-    - available
-    - biometric
-    - device
-    - law
-    - medical
-    - purpose
-    - stack
-    - uses
 signatures:
-  computationUuid: "72210b94-8fe9-8b13-84a6-3c53d798cc58"
+  computationUuid: "c92647e6-241e-8244-86ba-21ba20739cc9"
   stages:
     - stage: path
       stageUuid: "225454fc-327d-859d-bf56-45cec052be2b"
@@ -74,24 +22,23 @@ signatures:
     - stage: boundary
       stageUuid: "2fbe82b3-9c40-8b5c-a38a-6372d928e6a8"
     - stage: links
-      stageUuid: "9c5dce20-b961-8d72-a15b-82c1649fb8df"
+      stageUuid: "c75add25-7639-8fd0-945e-284d26f9babd"
     - stage: horo
-      stageUuid: "0597e2a9-cc6f-8e68-8305-ddf3dd02b4b6"
+      stageUuid: "e0f5032c-7a90-82f1-a976-853d005fe090"
     - stage: seal
       stageUuid: "cbd3726a-b32c-851f-9de4-8b730f12369a"
     - stage: uuid
-      stageUuid: "5fccb924-d4fa-8e36-b334-09a7076603f6"
+      stageUuid: "79000126-d8da-8ab7-a691-3eac952c86b2"
 quantum:
   superposition:
+    - analog
+    - anesthesia
     - available
+    - bed
     - biometric
+    - cassette
     - device
-    - law
-    - medical
-    - purpose
-    - quantum
-    - stack
-    - uses
+    - emr
     - superposition
   collapse:
     - "Use when reasoning about a device as a measurement instrument — the boundary where the continuous analog world collapses into discrete digital snapshots; capture on the edge, compute pure, every reading a content-addressed measurement in the snapshot chain."
@@ -112,8 +59,8 @@ quantum:
     canonicalRecord: true
     analogResults: true
     speechResults: false
-    computationUuid: "72210b94-8fe9-8b13-84a6-3c53d798cc58"
-    contentUuid: "3b4d6a02-251d-53a8-aab3-4b96a17b0db6"
+    computationUuid: "c92647e6-241e-8244-86ba-21ba20739cc9"
+    contentUuid: "947e67c0-5d56-5ce5-8a23-5aba6ae19d13"
 version: 2
 ---
 # quantum/device — the measurement instrument
@@ -128,4 +75,4 @@ Edge law: **capture on the device, compute pure on the Worker** — `getUserMedi
 
 @see [[device]] · [[measurement]] · [[reality]] · [[analog]] · [[sensory]] · [[snapshot]] · [[biometric]] · [[coherence]] · [[finality]]
 
-<sub>content-uuid `3b4d6a02-251d-53a8-aab3-4b96a17b0db6` · account `quantum/device` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `947e67c0-5d56-5ce5-8a23-5aba6ae19d13` · account `quantum/device` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

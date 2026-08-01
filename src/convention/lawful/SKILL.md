@@ -2,79 +2,19 @@
 name: lawful
 description: "Use when checking whether every atom is accountable — the computed convention that each SKILL.md states its own **Law (the invariant), measured live as coverage = lawful / total over the real corpus tree."
 atomPath: "convention/lawful"
-coordinate: "convention/lawful · 5/round · 7f27f037"
-contentUuid: "93532f01-13ef-5f98-b918-0cf2b81138e1"
-diamondUuid: "c404cd3a-88cd-87f1-9a76-f5470a3b63a1"
-uuid: "7f27f037-905c-8c32-a476-be7b514ce5ab"
+coordinate: "convention/lawful · 5/round · e82bf3f1"
+contentUuid: "5c45901d-4c94-5710-b5d8-7d5c1edf4d93"
+diamondUuid: "39060038-5a58-823a-9387-17ec86761cfb"
+uuid: "e82bf3f1-0b60-816f-bd2e-6b4d9e319d72"
 horo: 5
-bonds:
-  in:
-    - akashic
-    - collapse
-    - convention
-    - cost
-    - dry
-    - fronted
-    - import
-    - law
-    - merge
-    - named
-    - twinned
-  out:
-    - akashic
-    - collapse
-    - convention
-    - cost
-    - dry
-    - fronted
-    - import
-    - law
-    - merge
-    - named
-    - twinned
 typography:
   partition: convention
   bondDegree: 34
-  neighbors:
-    - "tamper/import"
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - collapse
-    - cost
-    - dry
-    - import
-    - law
-    - merge
-  matrix:
-    - akashic
-    - collapse
-    - convention
-    - cost
-    - dry
-    - fronted
-    - import
-    - law
-    - merge
-    - named
-    - twinned
-  backlinks:
-    - akashic
-    - collapse
-    - convention
-    - cost
-    - dry
-    - fronted
-    - import
-    - law
-    - merge
-    - named
-    - twinned
 signatures:
-  computationUuid: "022555f1-251c-8804-9173-6e4dc5ddab84"
+  computationUuid: "3d5c774d-d2cf-81a2-b747-d91619ee2c59"
   stages:
     - stage: path
       stageUuid: "25037c3e-b998-8eb2-bb18-657119de0d9d"
@@ -85,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7c37a422-781a-8982-abb0-dffb02c7b74e"
     - stage: horo
-      stageUuid: "d5c5510e-5270-862d-803e-ff505c443c29"
+      stageUuid: "7d033270-643a-8afc-91e0-0ca9298fe1d6"
     - stage: seal
       stageUuid: "0c265969-1b21-8725-a20b-7a4867437662"
     - stage: uuid
-      stageUuid: "8d8ae536-3493-8b84-9526-019bcb32f93d"
+      stageUuid: "70180a5d-eebb-882d-8177-95d05f3f7036"
 version: 2
 ---
 # convention/lawful — every SKILL.md states its **Law (the invariant)

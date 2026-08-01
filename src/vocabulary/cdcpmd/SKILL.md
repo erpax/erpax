@@ -1,68 +1,35 @@
 ---
 name: cdcpmd
 description: "Use when reasoning about cdcpmd as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/cdcpmd
-coordinate: cdcpmd · 2/share · ad79eb94
-contentUuid: "47e1e0b1-060b-5ab9-816a-fc4871365b91"
-diamondUuid: "89dfb4db-5c8c-8d51-b2b6-cf397152e436"
-uuid: "ad79eb94-e8be-8f5a-8c90-51d986fade73"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - record
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - record
-    - sti
+atomPath: "vocabulary/cdcpmd"
+coordinate: "vocabulary/cdcpmd · 7/descent · 830db5be"
+contentUuid: "8f2048ec-acdc-53cd-b8a4-db070c596444"
+diamondUuid: "b64a7763-9b1b-876e-a326-604080c28a73"
+uuid: "830db5be-169f-8b9c-acfe-ab6f3026f502"
+horo: 7
 typography:
-  partition: cdcpmd
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - record
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - record
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - record
-    - sti
 signatures:
-  computationUuid: "a94f0b42-08f1-8c70-a12e-67bc8f8d8482"
+  computationUuid: "602804d9-909e-860b-9d9e-9a78ffdc085d"
   stages:
     - stage: path
-      stageUuid: "54541f02-d865-812d-9117-72ec98bffc3c"
+      stageUuid: "86c1fc9f-636b-8d39-9ebd-3762d2efcbdd"
     - stage: trinity
-      stageUuid: "e7214100-91c1-86d1-93a9-0ac4395caaa5"
+      stageUuid: "72fde5e4-1ed8-853e-a287-d63af7ada1b4"
     - stage: boundary
-      stageUuid: "b9920847-3a2e-8daa-8508-3e7650b147f1"
+      stageUuid: "cf3b14b9-91ef-8c90-857f-bca04c5a0821"
     - stage: links
-      stageUuid: "aec11a9f-3408-8e06-ba18-168a5e81284f"
+      stageUuid: "cfc7225e-3ce6-89bc-a60b-7997ff82f8a9"
     - stage: horo
-      stageUuid: "cb0eafc4-94c5-8480-ac8f-bbc2f56f7313"
+      stageUuid: "f266d4f4-5e68-8704-98df-dd45c9bbd908"
     - stage: seal
-      stageUuid: "225546e6-66c8-8a9c-b6b7-b8800324928f"
+      stageUuid: "8ab98e4c-2a43-88fb-9fbe-8deddde1784b"
     - stage: uuid
-      stageUuid: "f8867c39-81ac-8a5f-8aeb-1b825f210ae1"
+      stageUuid: "88d1df9a-0e16-8951-9c7a-e5de7b82a84c"
 version: 2
 ---
 # cdcpmd

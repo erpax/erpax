@@ -1,68 +1,35 @@
 ---
 name: continuation
 description: "Use when reasoning about continuation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/continuation
-coordinate: continuation · 5/round · 8997272f
-contentUuid: "8dc2942c-546d-57c2-8a7d-b9b3e06ffb28"
-diamondUuid: "c6b4c8f0-9222-8829-97ca-42f0c2f3c15d"
-uuid: "8997272f-8929-8a50-9e2a-1b850deadbe9"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - toc
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - toc
+atomPath: "vocabulary/continuation"
+coordinate: "vocabulary/continuation · 4/weave · 7a50a071"
+contentUuid: "df80ff09-25f6-5f70-a5f3-b43f4955b623"
+diamondUuid: "d4d7ec20-85dd-89ba-a1df-598877fff6f0"
+uuid: "7a50a071-03d1-88c1-b845-7f0d1d935cd1"
+horo: 4
 typography:
-  partition: continuation
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - toc
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - toc
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - toc
 signatures:
-  computationUuid: "4861f459-b8a7-8048-a879-0ea1ef49c34c"
+  computationUuid: "21722d80-9079-88e0-8af9-492eebdca899"
   stages:
     - stage: path
-      stageUuid: "2d08b4b0-133f-8294-8d76-cfa471ebb4f1"
+      stageUuid: "5f8c7b5e-9bb3-8dbe-a922-0a1e8f78bb83"
     - stage: trinity
-      stageUuid: "e203d31c-cc0c-8178-9a84-c58b59a3b097"
+      stageUuid: "d65d46b0-4d02-8e2d-8467-6aa28a9b8755"
     - stage: boundary
-      stageUuid: "5ba58259-4e50-8314-9da4-dba0cf83a6a5"
+      stageUuid: "05f7e7cc-a735-8074-b28b-3823e5c254fd"
     - stage: links
-      stageUuid: "bb932f58-c4ae-8c85-9c77-12328ae268d7"
+      stageUuid: "5be2b95a-d5b2-89b0-98da-b93c3ef687a2"
     - stage: horo
-      stageUuid: "14a062fb-3ee5-86a1-b63a-ddc302075593"
+      stageUuid: "4bf8fbb2-b8f7-873d-8dbf-fdc6eaba14e6"
     - stage: seal
-      stageUuid: "5380e21c-844b-8a1e-9b8a-9728297ef9f1"
+      stageUuid: "ee27ca25-8828-888f-821f-49229c804782"
     - stage: uuid
-      stageUuid: "276e0b28-e31c-8a99-b3a5-3d1a1583b354"
+      stageUuid: "2b928eae-1f3f-8497-ac74-20514fcc51f5"
 version: 2
 ---
 # continuation

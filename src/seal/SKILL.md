@@ -2,193 +2,37 @@
 name: seal
 description: "Use when reasoning about the whole-corpus green verdict — a seal is the cross of every guardian; it is SEALED only when all guardians hold, fails closed on an empty set, and is exactly what the auto-commit/push waves gate on. The state in which the tree may be saved, committed, and pushed."
 atomPath: seal
-coordinate: seal · 8/crest · 19a6e79a
-contentUuid: "1c34ed8a-c186-5659-8546-e42c0152ed4b"
-diamondUuid: "78c043a1-0a83-825a-b4f1-3f3233fd658e"
-uuid: "19a6e79a-4941-8436-ad95-1156a3d8bfac"
-horo: 8
-bonds:
-  in:
-    - architecture
-    - blockchain
-    - breath
-    - comms
-    - confirm
-    - cost
-    - covenant
-    - css
-    - diamond
-    - folder
-    - gate
-    - guardian
-    - hallucination
-    - identity
-    - industry
-    - innovation
-    - law
-    - memory
-    - merge
-    - payload
-    - pivot
-    - primitive
-    - purity
-    - quantum
-    - readme
-    - reference
-    - ritual
-    - secret
-    - session
-    - society
-    - stream
-    - thought
-    - typography
-    - uuid
-  out:
-    - architecture
-    - blockchain
-    - breath
-    - comms
-    - confirm
-    - cost
-    - covenant
-    - css
-    - diamond
-    - folder
-    - gate
-    - guardian
-    - hallucination
-    - identity
-    - industry
-    - innovation
-    - law
-    - memory
-    - merge
-    - payload
-    - pivot
-    - primitive
-    - purity
-    - quantum
-    - readme
-    - reference
-    - ritual
-    - secret
-    - session
-    - society
-    - stream
-    - thought
-    - typography
-    - uuid
+coordinate: "seal · 5/round · 6ee0e3fa"
+contentUuid: "b9a75c4a-05e1-5f58-b3f6-33148da9ea23"
+diamondUuid: "02a75fcf-25c1-8593-a78f-36c2d4d48014"
+uuid: "6ee0e3fa-9ec0-8afc-b425-8be9224c880d"
+horo: 5
 typography:
   partition: seal
-  bondDegree: 117
-  neighbors:
-    - purity
+  bondDegree: 142
 standards:
-  - / signature lines when form is present.
+  - "/ signature lines when form is present."
   - "ISO/IEC 25010:2023 §5.5 testability — the decision is a pure function"
+  - "ISO/IEC 25010:2023 §5.5 testability — the decision is a pure function`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - blockchain
-    - breath
-    - confirm
-    - cost
-    - gate
-    - guardian
-    - identity
-    - law
-    - merge
-    - payload
-    - purity
-    - thought
-    - uuid
-  matrix:
-    - architecture
-    - blockchain
-    - breath
-    - comms
-    - confirm
-    - cost
-    - covenant
-    - css
-    - diamond
-    - folder
-    - gate
-    - guardian
-    - hallucination
-    - identity
-    - industry
-    - innovation
-    - law
-    - memory
-    - merge
-    - payload
-    - pivot
-    - primitive
-    - purity
-    - quantum
-    - readme
-    - reference
-    - ritual
-    - secret
-    - session
-    - society
-    - stream
-    - thought
-    - typography
-    - uuid
-  backlinks:
-    - architecture
-    - blockchain
-    - breath
-    - comms
-    - confirm
-    - cost
-    - covenant
-    - css
-    - diamond
-    - folder
-    - gate
-    - guardian
-    - hallucination
-    - identity
-    - industry
-    - innovation
-    - law
-    - memory
-    - merge
-    - payload
-    - pivot
-    - primitive
-    - purity
-    - quantum
-    - readme
-    - reference
-    - ritual
-    - secret
-    - session
-    - society
-    - stream
-    - thought
-    - typography
-    - uuid
 signatures:
-  computationUuid: "3d13e1fc-b769-8c19-8443-f8b887e36f9a"
+  computationUuid: "4892ce8c-62cc-8144-a0e5-6fb7f8f1500e"
   stages:
     - stage: path
       stageUuid: "f6907831-0fbf-8948-8dd4-ea9b45f73e4e"
     - stage: trinity
       stageUuid: "d2dbd1a3-abfd-8bc1-b9f3-1e4ffb6c24fd"
     - stage: boundary
-      stageUuid: "9bf1f414-fd0f-8091-945b-485cb1739ea7"
+      stageUuid: "79c2f918-f554-8565-a203-de366349f376"
     - stage: links
-      stageUuid: "9738f1bf-6c2e-8442-a2c7-c930b448a70c"
+      stageUuid: "37dee7ba-f002-8c01-8508-5e9e04cfc31d"
     - stage: horo
-      stageUuid: "9b97d59b-2ca9-89af-a516-ce31ac6e67ce"
+      stageUuid: "6352de34-2111-8182-8458-396cc004b599"
     - stage: seal
-      stageUuid: "217885d7-8a8e-8c3c-8717-e7c26af31afa"
+      stageUuid: "56658faa-27d4-8d85-af5e-acf270d33643"
     - stage: uuid
-      stageUuid: "880faa2e-eb59-8682-a535-f10e3c0e6518"
+      stageUuid: "157fd907-0c84-84bb-8578-b7b58f6c8f39"
 version: 2
 ---
 # seal — all guardians hold, or it is not sealed

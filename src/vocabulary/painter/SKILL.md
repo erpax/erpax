@@ -1,68 +1,35 @@
 ---
 name: painter
 description: "Use when reasoning about painter — A schema.org component word, collided out of schema.org compounds — fused from HousePainter (sti · collapse · merge)."
-atomPath: vocabulary/painter
-coordinate: painter · 8/crest · dd51444f
-contentUuid: "80d51016-1973-52a5-bc4d-78890209ca02"
-diamondUuid: "15160f58-e43f-8670-b68c-61b54246e968"
-uuid: "dd51444f-060f-80d7-ae75-8cb25029afaf"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - house
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - house
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/painter"
+coordinate: "vocabulary/painter · 4/weave · 2c0ac76a"
+contentUuid: "0eeb018f-e2eb-5174-89ca-addf36f3b5fc"
+diamondUuid: "bce5ba12-d5ab-8344-b5a4-fa1a71801e9b"
+uuid: "2c0ac76a-689d-8f16-b0ff-b981052c3e83"
+horo: 4
 typography:
-  partition: painter
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - house
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - house
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - house
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "5e57d970-8d60-8023-a18a-c78388fa283f"
+  computationUuid: "442bebb9-c74e-83f6-ac38-f425884cb9e2"
   stages:
     - stage: path
-      stageUuid: "44d00be4-3120-8e4b-9582-66298b142009"
+      stageUuid: "9ea617d7-29e9-8035-b3e0-77ea2d0d6fae"
     - stage: trinity
-      stageUuid: "fba98376-da5c-88c3-b648-49efd34e9b93"
+      stageUuid: "05adc5e4-3e16-8795-bc60-66f54661faef"
     - stage: boundary
-      stageUuid: "d9209d05-f981-8e75-b75b-7e87cc824855"
+      stageUuid: "8637b95d-d666-82dc-9e19-ea4d10c294fe"
     - stage: links
-      stageUuid: "1aaf7e04-3d16-83f3-b26f-ef043060f251"
+      stageUuid: "414c5b90-80d8-8f44-8bcb-7bf561d0ee0d"
     - stage: horo
-      stageUuid: "7f8ac496-9f1a-8f08-b54f-db560129be09"
+      stageUuid: "7a261f2e-c8d7-88d3-814d-3f84c67e77ad"
     - stage: seal
-      stageUuid: "f587f48c-47fd-879f-bb31-a5f341f7f31c"
+      stageUuid: "748bfe52-3ead-83ce-8aaf-842e60cc53eb"
     - stage: uuid
-      stageUuid: "eb321421-c094-8936-a5d4-f5d6a103a124"
+      stageUuid: "d5b8b46d-18b7-820c-b714-4e2985184796"
 version: 2
 ---
 # painter

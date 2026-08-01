@@ -1,53 +1,35 @@
 ---
 name: quiz
 description: "Use when reasoning about quiz — Quiz: A test of knowledge, skills and abilities."
-atomPath: vocabulary/quiz
-coordinate: quiz · 4/weave · 0c29412c
-contentUuid: "72acee58-6309-5f47-a090-e6fcf5789dd0"
-diamondUuid: "6160fbd5-0141-8441-896b-16de1a86a585"
-uuid: "0c29412c-e92d-8b73-9b7a-cf59d77ebc5a"
-horo: 4
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/quiz"
+coordinate: "vocabulary/quiz · 7/descent · 297eb81c"
+contentUuid: "3cb3a89a-0a12-5f5c-9d19-a58602765a25"
+diamondUuid: "ddd8c2dd-2b8f-8acc-a8f9-2437c6543cf5"
+uuid: "297eb81c-1839-85fd-9825-692a6beb8cfe"
+horo: 7
 typography:
-  partition: quiz
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "09f9a85d-1f61-8d4d-907c-25166e138bd8"
+  computationUuid: "4f80a23b-3239-8b47-a4dc-8d89a4712296"
   stages:
     - stage: path
-      stageUuid: "9ebd10b1-7a44-80ea-8d59-36b0fa925734"
+      stageUuid: "107c09ab-128d-85e1-9294-16e3a1526fc6"
     - stage: trinity
-      stageUuid: "ab13ef7c-9ada-8bed-88d3-6bd2be3c9a17"
+      stageUuid: "ed34b3e2-66b2-8670-a104-7887d0bad9ef"
     - stage: boundary
-      stageUuid: "b43a3072-545d-8616-a6ce-2c8fd133ef2a"
+      stageUuid: "2526f8b7-703d-8944-99de-833fdbda52eb"
     - stage: links
-      stageUuid: "584499b5-2cae-8c7e-b192-1b5e15e05848"
+      stageUuid: "691f5417-9e73-8d96-90d3-a1f111b77654"
     - stage: horo
-      stageUuid: "45a00d4b-6e21-8f13-b4b6-a38c297f9e76"
+      stageUuid: "940a7817-2b86-8489-994e-3179d18d2ecd"
     - stage: seal
-      stageUuid: "471f76a8-3a37-8537-b25f-8d26b60eedde"
+      stageUuid: "a5a9397c-8eae-887c-87c9-f9601d32c16f"
     - stage: uuid
-      stageUuid: "27c70348-c9d4-8c7f-ab77-187ccb5aac9f"
+      stageUuid: "3bb9a84d-12eb-891e-90d9-bcbc595645da"
 version: 2
 ---
 # quiz

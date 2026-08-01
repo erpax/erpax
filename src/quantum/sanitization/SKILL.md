@@ -1,103 +1,19 @@
 ---
 name: sanitization
 description: "Use when cleaning data at a boundary — input, output, or disposal — in the content-addressed model where nothing mutates in place; accept untrusted input but collapse it through the gate, redact by projecting a sanitized view (no spoon for the unauthorized), and purge by crypto-shredding to the void."
-atomPath: quantum/sanitization
-coordinate: quantum/sanitization · 1/base · d5f1900c
-contentUuid: "174a14c5-2eef-5a3a-8f90-ec4213cd1ede"
-diamondUuid: "a34b1da1-7182-8c6e-be6b-4394adf18269"
-uuid: "d5f1900c-70b1-82cf-8dc4-abd3f043966c"
-horo: 1
-bonds:
-  in:
-    - accept
-    - access
-    - biometric
-    - collapse
-    - dataprotection
-    - finality
-    - law
-    - merge
-    - proof
-    - quantum
-    - receipt
-    - sandbox
-    - shred
-    - tamper
-    - uuid
-    - void
-  out:
-    - accept
-    - access
-    - biometric
-    - collapse
-    - dataprotection
-    - finality
-    - law
-    - merge
-    - proof
-    - receipt
-    - sandbox
-    - shred
-    - tamper
-    - uuid
-    - void
+atomPath: "quantum/sanitization"
+coordinate: "quantum/sanitization · 4/weave · 5dd0d5e2"
+contentUuid: "63bcba55-0318-577a-868b-30f9a594f2f1"
+diamondUuid: "a9442242-e011-816f-8f61-d3a498cd9bfd"
+uuid: "5dd0d5e2-922d-8cd5-a463-f1eed29849d3"
+horo: 4
 typography:
   partition: quantum
   bondDegree: 45
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accept
-    - access
-    - biometric
-    - collapse
-    - dataprotection
-    - finality
-    - law
-    - merge
-    - proof
-    - receipt
-    - sandbox
-    - shred
-    - tamper
-    - uuid
-    - void
-  matrix:
-    - accept
-    - access
-    - biometric
-    - collapse
-    - dataprotection
-    - finality
-    - law
-    - merge
-    - proof
-    - receipt
-    - sandbox
-    - shred
-    - tamper
-    - uuid
-    - void
-  backlinks:
-    - accept
-    - access
-    - biometric
-    - collapse
-    - dataprotection
-    - finality
-    - law
-    - merge
-    - proof
-    - receipt
-    - sandbox
-    - shred
-    - tamper
-    - uuid
-    - void
 signatures:
-  computationUuid: "87b5bbae-5cbc-8e0e-bce2-f034cd954100"
+  computationUuid: "30576a51-eed7-839f-8c28-bf8ba7e61a33"
   stages:
     - stage: path
       stageUuid: "cd37ecbb-4ee1-817f-a7a8-e4a5ada8f20b"
@@ -106,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "91809071-9ef3-8a29-8e92-88ebae94527c"
     - stage: links
-      stageUuid: "8443bfec-5307-8be0-86f2-0632633f09c7"
+      stageUuid: "09e36627-5a0c-85e7-9a86-2d4dae8462ee"
     - stage: horo
-      stageUuid: "94b002e3-de14-8a41-bc12-3a82b1a8e1fd"
+      stageUuid: "437d27a3-00af-8007-a2e9-f96645d2318c"
     - stage: seal
       stageUuid: "419aa895-a0c0-8bee-8e79-56077b93618a"
     - stage: uuid
-      stageUuid: "28d6058e-4175-88c1-b287-9ec2284ae1c4"
+      stageUuid: "f59aebe5-fe2f-8588-aa8f-9f76d7c307b1"
 quantum:
   superposition:
     - accept
@@ -142,8 +58,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "87b5bbae-5cbc-8e0e-bce2-f034cd954100"
-    contentUuid: "174a14c5-2eef-5a3a-8f90-ec4213cd1ede"
+    computationUuid: "30576a51-eed7-839f-8c28-bf8ba7e61a33"
+    contentUuid: "63bcba55-0318-577a-868b-30f9a594f2f1"
 version: 2
 ---
 # quantum/sanitization — clean at the boundary, three ways
@@ -160,4 +76,4 @@ Sanitization is **not [[tamper]]** — it is authorized, content-addressed, and 
 
 **Law — [[law]]: sanitization never mutates in place — it collapses through the gate. Dirty input cannot act until it resolves clean; the unauthorized reader gets a redacted projection while the content-addressed original stays whole; and the only true erasure is shredding the key into the void. Because every scrub emits a receipt, removing data is itself provable — sanitization is authorized and audited, never a silent edit (it is not tamper).**
 
-<sub>content-uuid `174a14c5-2eef-5a3a-8f90-ec4213cd1ede` · account `quantum/sanitization` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `63bcba55-0318-577a-868b-30f9a594f2f1` · account `quantum/sanitization` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -1,68 +1,35 @@
 ---
 name: prepend
 description: "Use when reasoning about prepend as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/prepend
-coordinate: prepend · 7/descent · 7bc7cc5c
-contentUuid: "acd732fc-f7be-5f35-adfb-6091e5af3707"
-diamondUuid: "b36f71bf-377c-8d9c-a447-35c10f200740"
-uuid: "7bc7cc5c-410a-8fb6-8538-f459c402237f"
-horo: 7
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/prepend"
+coordinate: "vocabulary/prepend · 4/weave · c1d6f5bb"
+contentUuid: "8a1d1f55-5aeb-5661-ae76-4965590280f9"
+diamondUuid: "3e3d3586-b78a-8bed-845e-bf30431e6cae"
+uuid: "c1d6f5bb-e0e9-865e-b723-8ff8e94547d0"
+horo: 4
 typography:
-  partition: prepend
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "6d27ad34-e302-82e4-a125-d07f8e79319f"
+  computationUuid: "fb3a01e9-9c6e-8b3a-a91c-def1927bacfd"
   stages:
     - stage: path
-      stageUuid: "e3856c73-e541-8060-b370-e3cbda0c9212"
+      stageUuid: "a8131e89-3b0f-85fa-9376-d45c2473b07b"
     - stage: trinity
-      stageUuid: "3675ef14-db1d-8050-baca-af36bbd2fd34"
+      stageUuid: "cf3b8754-089b-8a9d-92b6-b162a263fc86"
     - stage: boundary
-      stageUuid: "0938e99c-31d0-8f09-8ecd-736cefd437a8"
+      stageUuid: "72e91a5a-b5d9-81c4-bbff-8b3d8eb0984a"
     - stage: links
-      stageUuid: "4ef0badd-6426-8178-b2db-7b1a0a731762"
+      stageUuid: "10744e29-f28c-8d43-8001-65f5e3ceff0d"
     - stage: horo
-      stageUuid: "e257ed6a-3d20-8454-b8f1-8081052870de"
+      stageUuid: "c1aef152-aa4b-849d-921f-0541638bd490"
     - stage: seal
-      stageUuid: "ba2cd57d-d326-8df4-8fb1-51b229d6cc79"
+      stageUuid: "71917b2f-f79f-8fd5-9087-00b18c038ab4"
     - stage: uuid
-      stageUuid: "ca36b7a7-d07f-8f90-bb4b-7ace9b34ea5e"
+      stageUuid: "77b32a73-c9f1-8f68-be2f-cdb380ae62b7"
 version: 2
 ---
 # prepend

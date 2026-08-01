@@ -1,92 +1,35 @@
 ---
 name: form
 description: "Use when reasoning about form as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/form
-coordinate: form · 4/weave · 8d6704aa
-contentUuid: "44be0734-164c-53a0-90dc-7a7ec391702f"
-diamondUuid: "e5d41fd7-31f4-8706-80d6-45e63e121d21"
-uuid: "8d6704aa-56b0-88e8-9cda-e99b6217b661"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - composition
-    - dosage
-    - law
-    - loan
-    - merge
-    - music
-    - repayment
-    - sti
-    - typography
-  out:
-    - collapse
-    - composition
-    - dosage
-    - law
-    - loan
-    - merge
-    - music
-    - repayment
-    - sti
-    - typography
+atomPath: "vocabulary/form"
+coordinate: "vocabulary/form · 2/share · 448f6f6d"
+contentUuid: "1554e7ef-b2e4-5471-9a3c-41bff2e7a176"
+diamondUuid: "bdc91a84-36e5-856b-bcd1-66ddb0c88dcf"
+uuid: "448f6f6d-b7a6-8274-a4f7-23906fb0485a"
+horo: 2
 typography:
-  partition: form
+  partition: vocabulary
   bondDegree: 35
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - composition
-    - dosage
-    - law
-    - loan
-    - merge
-    - music
-    - repayment
-    - sti
-  matrix:
-    - collapse
-    - composition
-    - dosage
-    - law
-    - loan
-    - merge
-    - music
-    - repayment
-    - sti
-    - typography
-  backlinks:
-    - collapse
-    - composition
-    - dosage
-    - law
-    - loan
-    - merge
-    - music
-    - repayment
-    - sti
-    - typography
 signatures:
-  computationUuid: "5dc3b3cd-b2c7-8da0-ad06-4578f3f52a04"
+  computationUuid: "e58234ba-fb28-86de-893b-bb9de0121bc8"
   stages:
     - stage: path
-      stageUuid: "8ec24d40-97bb-8d14-bfee-ea86aef6137e"
+      stageUuid: "755c0c90-8bd4-82a8-abbb-077052de50bc"
     - stage: trinity
-      stageUuid: "58a12b89-f53d-80f4-8599-fb67c40f667d"
+      stageUuid: "e00e1cb6-1e26-8327-b893-2f1cb18fd7ac"
     - stage: boundary
-      stageUuid: "65dbbeb7-d3b2-83f6-b60d-f3c999eda85f"
+      stageUuid: "989d3497-848a-828a-8865-e2ae5bfedf30"
     - stage: links
-      stageUuid: "b56d2d66-217e-8397-bfa9-982310c94daf"
+      stageUuid: "630741bf-b43d-85cd-b30f-ba0ad671b40a"
     - stage: horo
-      stageUuid: "1c5416fd-6236-8397-97c4-5d265bfedfc0"
+      stageUuid: "0df410ab-e8da-8c18-a963-715e63c912c1"
     - stage: seal
-      stageUuid: "f59dff90-6cf4-8a0a-897b-a7b6fe9e9961"
+      stageUuid: "1b9be207-6019-8ba8-8ba8-4b5422592049"
     - stage: uuid
-      stageUuid: "6eeae3a6-2cc1-8228-aa46-f0efcfcac510"
+      stageUuid: "9b81f9d7-1af4-8516-b136-6ef447fdba42"
 version: 2
 ---
 # form

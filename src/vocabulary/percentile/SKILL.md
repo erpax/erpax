@@ -1,53 +1,35 @@
 ---
 name: percentile
 description: Use when reasoning about percentile — The 10th percentile value.
-atomPath: vocabulary/percentile
-coordinate: percentile · 7/descent · cec5b725
-contentUuid: "5c4caac4-5dc1-55a5-a9a6-5e0680dce243"
-diamondUuid: "0a270221-0fad-8d4e-a26f-a8d842a5a9cc"
-uuid: "cec5b725-51bd-8e1e-9c23-cfcd24a0a884"
-horo: 7
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/percentile"
+coordinate: "vocabulary/percentile · 1/base · 5f42682b"
+contentUuid: "d32fa0ac-6bee-5b53-9c3a-56077ec68546"
+diamondUuid: "65063b51-3fbf-8a62-a82e-3d6cd0881744"
+uuid: "5f42682b-9f3b-8c85-be9f-3eaa789ea303"
+horo: 1
 typography:
-  partition: percentile
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "8430e62e-b72d-899a-ae67-dc8f6fa3374b"
+  computationUuid: "37d06e26-c6fd-804b-92c3-f2791e9c692b"
   stages:
     - stage: path
-      stageUuid: "e39f5df5-cd1a-8c58-b156-0dde0a8c57d1"
+      stageUuid: "5bc5cdab-955e-867e-a990-023c81113ac5"
     - stage: trinity
-      stageUuid: "6bdaef71-6c59-8462-b859-c6b959727fd3"
+      stageUuid: "6e12f286-35f2-8b8e-9c36-8ccfb9a2ee36"
     - stage: boundary
-      stageUuid: "9f4944bf-5acd-8e39-a8b4-2d147f3e0687"
+      stageUuid: "0b915fe7-ff03-803f-aaa2-a17f3ee9a376"
     - stage: links
-      stageUuid: "c00023fe-fada-8759-817b-4ab6bbd3fb55"
+      stageUuid: "adc0a53d-4f97-8807-8d58-110e8fec8759"
     - stage: horo
-      stageUuid: "bfc56868-167f-8d0a-ba22-7ba009113475"
+      stageUuid: "f8e70f96-cfce-8a0f-99ef-64ec567c4634"
     - stage: seal
-      stageUuid: "ddfe87b5-6bce-8505-87be-c4336685487e"
+      stageUuid: "e0447d01-10ad-8e3a-a797-ec39a77220a1"
     - stage: uuid
-      stageUuid: "3a4c3f19-d398-8a93-bf83-a8089fcef19d"
+      stageUuid: "eccaa8b5-30c9-8ef3-a890-578eb783cf3b"
 version: 2
 ---
 # percentile

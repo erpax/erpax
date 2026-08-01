@@ -1,68 +1,35 @@
 ---
 name: lend
 description: "Use when reasoning about lend as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/lend
-coordinate: lend · 2/share · 3ff71b90
-contentUuid: "0f649ca1-6ce5-5121-a2a6-135bad816c85"
-diamondUuid: "81282dc7-0e0f-883c-9f73-3d88ec877c3f"
-uuid: "3ff71b90-4c75-851b-999f-9326264e4c02"
-horo: 2
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/lend"
+coordinate: "vocabulary/lend · 8/crest · 0991ae43"
+contentUuid: "e5e19810-c84c-5320-8810-f3a1a7ae4de9"
+diamondUuid: "fbc35487-60c3-8ecd-b653-1a36f9e5c37d"
+uuid: "0991ae43-6772-8033-aae8-5d21d1383db6"
+horo: 8
 typography:
-  partition: lend
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "bfd904e9-63fa-8ffa-8f20-93da622cafcc"
+  computationUuid: "599ba54f-7925-875c-b95f-5d97bc6672e7"
   stages:
     - stage: path
-      stageUuid: "9fe5ddcd-1787-8d52-8983-33f9e06e5928"
+      stageUuid: "a71122d0-8fdc-8c31-99de-43936197522f"
     - stage: trinity
-      stageUuid: "15f0c30f-9b11-812c-a04a-f095d4ef5600"
+      stageUuid: "c0e19472-3f39-8bcc-a67e-2adcfdbc6637"
     - stage: boundary
-      stageUuid: "2608f32f-2e9d-8866-b967-39caffd97712"
+      stageUuid: "ac3647ab-fcdc-8576-b228-d9cc1e77149b"
     - stage: links
-      stageUuid: "221abdfe-2ebb-8416-937f-b9766b66bdf7"
+      stageUuid: "8bba36be-d40d-8a06-a875-c6f499c48b08"
     - stage: horo
-      stageUuid: "b052bdaf-23e8-8199-b559-2d0543cd1b09"
+      stageUuid: "3ef66f19-3cfd-8af3-a094-7dd067f6c747"
     - stage: seal
-      stageUuid: "d76e46c0-601e-8f8b-a4a5-3414202457ef"
+      stageUuid: "5066352b-b187-8d05-8430-4a91b14fa5bd"
     - stage: uuid
-      stageUuid: "c4c5adea-8f6e-8042-b34a-52f1465fcd62"
+      stageUuid: "08e63dc7-37ea-8c4f-a536-0ffdf9d5df43"
 version: 2
 ---
 # lend

@@ -2,109 +2,20 @@
 name: blockchain
 description: "Use when reasoning about erpax AS a blockchain — the computed proof that it is one. A content-addressed, Merkle-folded, tamper-evident, externally anchored ledger whose security is QUANTUM, not proof-of-work: the double-torus drives forge-cost to ∞ at coverage 1 while verify stays O(N). Six properties, each computed on the live matrix; the conjunction is the proof."
 atomPath: blockchain
-coordinate: "blockchain · 1/base · 597a2670"
-contentUuid: "1175d9b8-ecfa-5378-9cbe-85e4f6835f10"
-diamondUuid: "e0410346-b1a6-8c46-b0f3-5cce89ef00ae"
-uuid: "597a2670-06e8-8405-9bfb-7721f9068924"
-horo: 1
-bonds:
-  in:
-    - accounting
-    - anchor
-    - balance
-    - conservation
-    - cost
-    - coverage
-    - cross
-    - identity
-    - law
-    - matrix
-    - proof
-    - quantum
-    - seal
-    - stream
-    - sync
-    - typography
-    - uuid
-  out:
-    - accounting
-    - anchor
-    - balance
-    - conservation
-    - cost
-    - coverage
-    - cross
-    - identity
-    - law
-    - matrix
-    - proof
-    - quantum
-    - seal
-    - stream
-    - sync
-    - typography
-    - uuid
+coordinate: "blockchain · 2/share · 9b67ac3b"
+contentUuid: "517e163e-5206-57a2-a3ec-f1d4166568e5"
+diamondUuid: "30d1d564-d278-84a4-a3c9-6ae870844e12"
+uuid: "9b67ac3b-af66-85cd-90fc-4a0ec19fc9da"
+horo: 2
 typography:
   partition: blockchain
   bondDegree: 52
-  neighbors: []
 standards:
   - "RFC 9562 §5.8 content-uuid · Bitcoin genesis block (the external anchor)"
   - "RFC-9562"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - anchor
-    - balance
-    - conservation
-    - cost
-    - coverage
-    - cross
-    - identity
-    - law
-    - matrix
-    - proof
-    - quantum
-    - uuid
-  matrix:
-    - accounting
-    - anchor
-    - balance
-    - conservation
-    - cost
-    - coverage
-    - cross
-    - identity
-    - law
-    - matrix
-    - proof
-    - quantum
-    - seal
-    - stream
-    - sync
-    - typography
-    - uuid
-  backlinks:
-    - accounting
-    - anchor
-    - balance
-    - conservation
-    - cost
-    - coverage
-    - cross
-    - identity
-    - law
-    - matrix
-    - proof
-    - quantum
-    - seal
-    - stream
-    - sync
-    - typography
-    - uuid
 signatures:
-  computationUuid: "067c32c4-122a-8ce5-b081-3cf4907c2693"
+  computationUuid: "32a0353a-0d2c-8fb0-bea8-0121c5efb419"
   stages:
     - stage: path
       stageUuid: "54bbc9ce-c1aa-8ea4-9f05-b7c0c84fcc4a"
@@ -115,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "db070c4e-3315-8eca-b0f0-85ecf45cf7ae"
     - stage: horo
-      stageUuid: "6717528a-9774-863d-8f79-89a06e414556"
+      stageUuid: "f4c08e14-cb76-889c-bc39-649833c5e9ac"
     - stage: seal
       stageUuid: "9bab9b68-d178-88dc-b203-5d2fad7ec40a"
     - stage: uuid
-      stageUuid: "4d0594a6-3596-8d04-b9a5-fe410a050fb1"
+      stageUuid: "20467779-8a67-812d-a8c8-e2c44ef6bd7d"
 version: 2
 ---
 # blockchain — the computed proof that erpax IS the quantum blockchain

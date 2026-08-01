@@ -2,77 +2,19 @@
 name: therapy
 description: "Use when reasoning about therapy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: therapy
-coordinate: therapy · 2/share · aa8946e7
-contentUuid: "0f8f7462-878d-5b30-bdbb-364c7055a7c5"
-diamondUuid: "3a9c0f26-4d07-8161-86aa-588d6b592abf"
-uuid: "aa8946e7-d7bc-87d2-9b65-f832dcebee8c"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - duplicate
-    - law
-    - medical
-    - merge
-    - occupational
-    - physical
-    - radiation
-    - related
-    - sti
-  out:
-    - collapse
-    - duplicate
-    - law
-    - medical
-    - merge
-    - occupational
-    - physical
-    - radiation
-    - related
-    - sti
+coordinate: "therapy · 4/weave · 3ad90632"
+contentUuid: "dc37de4e-d1ea-5780-aad3-d89a7e8f030a"
+diamondUuid: "3a7a9a08-b178-8cf0-ab88-d9c7941fd80b"
+uuid: "3ad90632-e804-8eb9-99da-062787124671"
+horo: 4
 typography:
   partition: therapy
-  bondDegree: 36
-  neighbors: []
+  bondDegree: 43
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - duplicate
-    - law
-    - medical
-    - merge
-    - occupational
-    - physical
-    - radiation
-    - related
-    - sti
-  matrix:
-    - collapse
-    - duplicate
-    - law
-    - medical
-    - merge
-    - occupational
-    - physical
-    - radiation
-    - related
-    - sti
-  backlinks:
-    - collapse
-    - duplicate
-    - law
-    - medical
-    - merge
-    - occupational
-    - physical
-    - radiation
-    - related
-    - sti
 signatures:
-  computationUuid: "18801baa-0049-807e-ba49-589723369e0c"
+  computationUuid: "3e722a61-411d-8703-8409-d7e3822cc916"
   stages:
     - stage: path
       stageUuid: "50ca536f-6117-87e3-a359-8f6b318dfe7b"
@@ -83,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "40cb20bd-a801-87a5-be21-f7d60bbb2d58"
     - stage: horo
-      stageUuid: "0b367051-c1ee-8ae8-9031-c3964e2cfd84"
+      stageUuid: "c00744b7-522c-80f9-9c33-fa505685c4e1"
     - stage: seal
-      stageUuid: "0fcadede-c9cb-8e3d-8ca7-88d39e72c513"
+      stageUuid: "35958f5d-c11f-882b-8180-375ba924cc83"
     - stage: uuid
-      stageUuid: "968f19eb-9340-891e-a783-ccdb1554e8d7"
+      stageUuid: "5fc798b5-9a86-8b42-9e65-934a83994f11"
 version: 2
 ---
 # therapy

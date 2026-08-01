@@ -1,58 +1,35 @@
 ---
 name: month
 description: "Use when reasoning about month — Defines the month(s) of the year on which a recurring Event takes place. Specified as an Integer between 1-12. January is 1."
-atomPath: vocabulary/month
-coordinate: month · 2/share · 7e4b6d6c
-contentUuid: "0e936d2d-5675-55c6-a759-0b7383d637b0"
-diamondUuid: "612a9140-a496-87d8-a2ee-969ee28bfa83"
-uuid: "7e4b6d6c-27bd-8ab7-8b59-93a592df7e57"
-horo: 2
-bonds:
-  in:
-    - day
-    - law
-    - week
-  out:
-    - day
-    - law
-    - week
+atomPath: "vocabulary/month"
+coordinate: "vocabulary/month · 8/crest · b264c46c"
+contentUuid: "df0109cf-4d12-558b-8304-897476dc0b82"
+diamondUuid: "16b739fb-1df3-8cae-984f-d849ca2e0d96"
+uuid: "b264c46c-856d-8982-b44c-9b1984b027d9"
+horo: 8
 typography:
-  partition: month
+  partition: vocabulary
   bondDegree: 11
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - day
-    - law
-    - week
-  matrix:
-    - day
-    - law
-    - week
-  backlinks:
-    - day
-    - law
-    - week
 signatures:
-  computationUuid: "e20543ff-f326-856e-834b-d52e37102d5f"
+  computationUuid: "fc26a420-924f-81ad-968c-f52cc4a2dd78"
   stages:
     - stage: path
-      stageUuid: "c867356b-4355-818b-a2ed-9ca5fc3be5d8"
+      stageUuid: "58cb79ad-0815-85ab-9bed-2772c05a205e"
     - stage: trinity
-      stageUuid: "ccef4291-6f28-8f17-bcf0-348f64812580"
+      stageUuid: "5270be95-e6a8-8c79-9e24-ab1edccea73d"
     - stage: boundary
-      stageUuid: "9c65e656-cf25-8315-b8f4-e467983c5c30"
+      stageUuid: "6d6f22ed-0f0f-81cf-b1d2-3fc6c25703c0"
     - stage: links
-      stageUuid: "8839f5e8-8418-8c77-816f-4c7a4826843c"
+      stageUuid: "f659fdc9-9010-85d0-b959-18cf9314e52c"
     - stage: horo
-      stageUuid: "9488fbb2-34d1-8624-a940-12284f26bcf9"
+      stageUuid: "7ee89f1f-47c4-831e-bc25-99a61e5f20a3"
     - stage: seal
-      stageUuid: "f73484fc-97e4-88df-a0cb-f4758246c2c4"
+      stageUuid: "2e24c828-f5a6-84d9-af89-e33702fc39e3"
     - stage: uuid
-      stageUuid: "eff028df-9777-82e6-bf66-e95a379c0afa"
+      stageUuid: "5e599105-9ed5-8aed-b6ae-eacd04f3eb48"
 version: 2
 ---
 # month

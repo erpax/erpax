@@ -2,62 +2,19 @@
 name: interactive
 description: "Use when reasoning about the collapse of collections into interactive trinities — a collection is a node, the trinity tells it three ways (matter, antimatter, backend) and renders it once; interactive adds the live fourth face (the render), so every collection is seen and acted on, not only read."
 atomPath: interactive
-coordinate: "interactive · 4/weave · 942887a9"
-contentUuid: "8bbef085-a130-50a1-9f4d-95edc36591fc"
-diamondUuid: "e20c2b83-83ee-88fb-b941-10ca06f165f2"
-uuid: "942887a9-259c-8592-9caa-c65b8db9acdf"
+coordinate: "interactive · 4/weave · 502a393b"
+contentUuid: "af6f140b-06ab-57a9-a5e5-2d954e6fec4b"
+diamondUuid: "d4e54035-9924-8e9a-8005-de4e96800ce1"
+uuid: "502a393b-5b0c-8494-870e-0c2c6d72e7f0"
 horo: 4
-bonds:
-  in:
-    - atom
-    - collection
-    - component
-    - law
-    - pixel
-    - render
-    - trinity
-  out:
-    - atom
-    - collection
-    - component
-    - law
-    - pixel
-    - render
-    - trinity
 typography:
   partition: interactive
   bondDegree: 21
-  neighbors: []
 standards:
   - "the trinity (one node, three sources, one page) extended by the render (the fourth, live face)"
 bindings: []
-neighbors:
-  wikilink:
-    - atom
-    - collection
-    - component
-    - law
-    - pixel
-    - render
-    - trinity
-  matrix:
-    - atom
-    - collection
-    - component
-    - law
-    - pixel
-    - render
-    - trinity
-  backlinks:
-    - atom
-    - collection
-    - component
-    - law
-    - pixel
-    - render
-    - trinity
 signatures:
-  computationUuid: "951be9c5-7015-8e4a-a484-e6e91d5b1227"
+  computationUuid: "a4d69c8f-34f4-86e1-a758-9da96f79b169"
   stages:
     - stage: path
       stageUuid: "9581d773-c763-85a2-a158-f500278b94a0"
@@ -68,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "34faae01-fe54-8752-872c-284dcf1e9683"
     - stage: horo
-      stageUuid: "cfdb43a4-2251-8e64-b13a-7ef3267b059f"
+      stageUuid: "c45aaedc-391e-8fee-9dd7-1d421fc747d3"
     - stage: seal
       stageUuid: "16b2264d-ce46-87ea-a921-8e39b2dfde16"
     - stage: uuid
-      stageUuid: "f7895050-7939-8db1-87a7-b72156023319"
+      stageUuid: "001d5c0c-4e1a-8898-8195-599073617d47"
 version: 2
 ---
 # interactive — the collections folded into interactive trinities

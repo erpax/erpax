@@ -1,117 +1,36 @@
 ---
 name: tag
-description: "Use when modelling variation, categorization, or cross-domain links in erpax WITHOUT new collections or deep nesting — the polymorphic multi-context tag system (acts_as_taggable_on port). One collection presented infinitely by filtering (context, tag); tag/tagging collections, the taggable plugin, tagged_with→where mapping, tag clouds, ownership, relatedness, and tag-lists that link multiverses. \\\"Anything is taggable.\\\""
-atomPath: vocabulary/tag
-coordinate: tag · 8/crest · 1b566ff6
-contentUuid: "7b4dec37-c620-58f1-83b5-a06c038b2f57"
-diamondUuid: "009f2b89-1ed0-8811-b7d2-e4a9e24bc4f9"
-uuid: "1b566ff6-52bb-83f6-a40a-1e63f4055ed7"
-horo: 8
-bonds:
-  in:
-    - accounting
-    - admin
-    - commerce
-    - database
-    - dna
-    - hooks
-    - identity
-    - karma
-    - manufacturing
-    - merge
-    - plugins
-    - queries
-    - sequence
-    - tagging
-    - taggings
-  out:
-    - accounting
-    - admin
-    - commerce
-    - database
-    - dna
-    - hooks
-    - identity
-    - karma
-    - manufacturing
-    - merge
-    - plugins
-    - queries
-    - sequence
-    - tagging
-    - taggings
+description: "Use when modelling variation, categorization, or cross-domain links in erpax WITHOUT new collections or deep nesting — the polymorphic multi-context tag system (acts_as_taggable_on port). One collection presented infinitely by filtering (context, tag); tag/tagging collections, the taggable plugin, tagged_with→where mapping, tag clouds, ownership, relatedness, and tag-lists that link multiverses. \\\\\\\"Anything is taggable.\\\\\\\""
+atomPath: "vocabulary/tag"
+coordinate: "vocabulary/tag · 2/share · b061f296"
+contentUuid: "e1d546fa-5758-5f64-94f7-09cef0aad7a7"
+diamondUuid: "d8430e82-6e13-8441-b90a-1c4b25c2caa2"
+uuid: "b061f296-7ee9-854e-a4f9-cfe1eafadee3"
+horo: 2
 typography:
-  partition: tag
-  bondDegree: 0
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 49
 standards:
-  - "EU-2011/83"
   - "EU-VAT-Implementing-Reg-282/2011"
   - "RFC-4122"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - admin
-    - commerce
-    - database
-    - hooks
-    - identity
-    - manufacturing
-    - merge
-    - plugins
-    - queries
-    - sequence
-    - taggings
-  matrix:
-    - accounting
-    - admin
-    - commerce
-    - database
-    - dna
-    - hooks
-    - identity
-    - karma
-    - manufacturing
-    - merge
-    - plugins
-    - queries
-    - sequence
-    - tagging
-    - taggings
-  backlinks:
-    - accounting
-    - admin
-    - commerce
-    - database
-    - dna
-    - hooks
-    - identity
-    - karma
-    - manufacturing
-    - merge
-    - plugins
-    - queries
-    - sequence
-    - tagging
-    - taggings
 signatures:
-  computationUuid: "f1a9084b-1c3e-876d-ab6c-dc991541c6ce"
+  computationUuid: "c0d54941-b659-812c-bc34-05add4cd9e65"
   stages:
     - stage: path
-      stageUuid: "ba97207b-9567-8fdb-abd6-6b2a7816103c"
+      stageUuid: "ae1f1de6-fc42-8529-99e7-e5273728afea"
     - stage: trinity
-      stageUuid: "1216f550-4ee9-8efc-9aed-f333f41400c5"
+      stageUuid: "a9ba11e4-a842-8294-bde0-76ff027f32d3"
     - stage: boundary
-      stageUuid: "9fdc03aa-5049-89ee-afca-a93dc31a0c58"
+      stageUuid: "8589df79-981f-8b5f-8247-03b0368cc842"
     - stage: links
-      stageUuid: "6ebb09fc-cbcd-87b2-baeb-78ade91cc19f"
+      stageUuid: "87de044c-6949-85a4-8daa-c023743a6478"
     - stage: horo
-      stageUuid: "f9660d07-720f-8225-9432-9c4e938f5e49"
+      stageUuid: "037e43d2-b380-8332-ad77-dca141ff5211"
     - stage: seal
-      stageUuid: "3e4a5bb6-7748-8c24-bbb8-09a74650d7d3"
+      stageUuid: "137aae1f-e00e-8361-be96-0edb480a7354"
     - stage: uuid
-      stageUuid: "f5f204a0-3dda-8cd4-9c41-e6aaa55b2cd4"
+      stageUuid: "99671edc-44e4-8f23-8ec1-ac7ecd5ad2de"
 version: 2
 ---
 # tags — anything is taggable (less collections, more features)

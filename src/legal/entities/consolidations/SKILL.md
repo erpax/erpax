@@ -2,55 +2,21 @@
 name: consolidations
 description: "Use when running or auditing a multi-entity group consolidation — entity closure readiness, intercompany balance reconciliation, elimination entry preparation, and consolidation workflow per IFRS-10 / IAS-27 / ASC-810. The group-consolidation process collection."
 atomPath: "legal/entities/consolidations"
-coordinate: "legal/entities/consolidations · 2/share · 98276571"
-contentUuid: "f72e164c-0f27-50a4-ba37-5c2e01fd1ec0"
-diamondUuid: "e7cf5402-7dfd-845c-9210-e9ea863ab9be"
-uuid: "98276571-3b96-8d04-baf7-16c509f75af8"
-horo: 2
-bonds:
-  in:
-    - consolidation
-    - elimination
-    - entities
-    - goodwill
-    - law
-    - relatedparty
-  out:
-    - consolidation
-    - elimination
-    - entities
-    - goodwill
-    - law
-    - relatedparty
+coordinate: "legal/entities/consolidations · 4/weave · 19fecc14"
+contentUuid: "1ba7e565-293d-5efb-ae42-5078b20c6ded"
+diamondUuid: "12c076aa-5de1-8e31-a777-d6dd1db59bb9"
+uuid: "19fecc14-ee26-8f9f-868c-bafaf41dfa4c"
+horo: 4
 typography:
   partition: legal
   bondDegree: 0
-  neighbors: []
 standards:
   - "IAS-27 separate-financial-statements"
   - "IFRS-10 consolidated-financial-statements"
   - "US-GAAP ASC-810 consolidation"
 bindings: []
-neighbors:
-  wikilink:
-    - entities
-    - law
-  matrix:
-    - consolidation
-    - elimination
-    - entities
-    - goodwill
-    - law
-    - relatedparty
-  backlinks:
-    - consolidation
-    - elimination
-    - entities
-    - goodwill
-    - law
-    - relatedparty
 signatures:
-  computationUuid: "4ac64d64-272c-81ae-8902-b361d3096684"
+  computationUuid: "5ffca0dc-dabf-85e7-b70e-b72698087139"
   stages:
     - stage: path
       stageUuid: "981322d4-a858-86a3-8e3b-8912515070e7"
@@ -61,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "11896191-723c-837c-90db-46de117ce476"
     - stage: horo
-      stageUuid: "d7b786e1-ed68-8a45-bc00-684188da7b81"
+      stageUuid: "7757062c-ba24-862d-82fb-7c1139da386c"
     - stage: seal
       stageUuid: "00f0dbe9-7cf2-8b20-9f39-defe45db3774"
     - stage: uuid
-      stageUuid: "2af709c7-248a-8583-b56d-1c644e9d64b3"
+      stageUuid: "5f597aea-b9f9-8366-bf6c-31590f4adf4a"
 version: 2
 ---
 # consolidations

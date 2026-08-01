@@ -1,159 +1,34 @@
 ---
 name: livestock
 description: "Use when modelling animals raised for produce — the non-crop living-production domain: a herd of animals (cattle/sheep/swine/poultry) measured as biological assets (IAS-41), yielding milk/meat/wool/eggs at harvest, fed on grazed pasture or fodder, bred and health-managed. The animal twin of crop; agriculture's other half."
-atomPath: vocabulary/livestock
-coordinate: livestock · 7/descent · f5c79fe9
-contentUuid: "158c0b51-273c-5f37-9de2-8b6e792e29d7"
-diamondUuid: "d17a1427-3756-800e-974a-3696a53d435d"
-uuid: "f5c79fe9-2c24-83d7-8fc0-da7028f53705"
-horo: 7
-bonds:
-  in:
-    - agriculture
-    - animal
-    - apiculture
-    - aquaculture
-    - assets
-    - biomass
-    - breed
-    - crop
-    - fertility
-    - fodder
-    - grazing
-    - harvest
-    - health
-    - herd
-    - items
-    - lactation
-    - law
-    - lineage
-    - manure
-    - mortality
-    - pasture
-    - share
-    - soil
-    - withdrawal
-  out:
-    - agriculture
-    - animal
-    - apiculture
-    - aquaculture
-    - assets
-    - biomass
-    - breed
-    - crop
-    - fertility
-    - fodder
-    - grazing
-    - harvest
-    - health
-    - herd
-    - items
-    - lactation
-    - law
-    - lineage
-    - manure
-    - mortality
-    - pasture
-    - share
-    - soil
-    - withdrawal
+atomPath: "vocabulary/livestock"
+coordinate: "vocabulary/livestock · 4/weave · 6ec32b82"
+contentUuid: "ef7572bd-a684-5388-903d-4f195aefd58d"
+diamondUuid: "20fb34d1-cd01-8c20-8264-c4ab6c2b4591"
+uuid: "6ec32b82-b7c1-8d5e-b7ab-39dbd5c13d0c"
+horo: 4
 typography:
-  partition: livestock
+  partition: vocabulary
   bondDegree: 83
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - animal
-    - assets
-    - breed
-    - crop
-    - fertility
-    - fodder
-    - grazing
-    - harvest
-    - health
-    - herd
-    - items
-    - lactation
-    - law
-    - lineage
-    - manure
-    - mortality
-    - pasture
-    - share
-    - soil
-    - withdrawal
-  matrix:
-    - agriculture
-    - animal
-    - apiculture
-    - aquaculture
-    - assets
-    - biomass
-    - breed
-    - crop
-    - fertility
-    - fodder
-    - grazing
-    - harvest
-    - health
-    - herd
-    - items
-    - lactation
-    - law
-    - lineage
-    - manure
-    - mortality
-    - pasture
-    - share
-    - soil
-    - withdrawal
-  backlinks:
-    - agriculture
-    - animal
-    - apiculture
-    - aquaculture
-    - assets
-    - biomass
-    - breed
-    - crop
-    - fertility
-    - fodder
-    - grazing
-    - harvest
-    - health
-    - herd
-    - items
-    - lactation
-    - law
-    - lineage
-    - manure
-    - mortality
-    - pasture
-    - share
-    - soil
-    - withdrawal
 signatures:
-  computationUuid: "a71f2e67-0bc7-8d80-a555-535e654b179b"
+  computationUuid: "e3d8deff-63c8-88f8-944b-bba38c3d3127"
   stages:
     - stage: path
-      stageUuid: "4a7f6997-ea32-8d46-9fe5-e1983e501704"
+      stageUuid: "4fd6b01d-e6d5-8d2b-8fe5-a218107a31ec"
     - stage: trinity
-      stageUuid: "19566a2b-f747-81c0-a9e1-d77c9295f24e"
+      stageUuid: "d4f6f156-34b7-8eec-bd7b-2795ed018d00"
     - stage: boundary
-      stageUuid: "8b0f4d17-17da-86fb-b36c-57f230cddb9f"
+      stageUuid: "4e6c018f-4562-890f-ac90-93c8f43876a3"
     - stage: links
-      stageUuid: "9d9c5d9b-601f-8198-ad1a-1685398d02d9"
+      stageUuid: "26de9eb7-b18b-840a-9f63-1a07d43947b9"
     - stage: horo
-      stageUuid: "3f2ffcf7-e812-8175-9385-4eeaeb6622d7"
+      stageUuid: "d492e9c8-476c-813c-b67f-a28c833baef6"
     - stage: seal
-      stageUuid: "3db2db03-3f1c-84bb-b830-45152b954ffc"
+      stageUuid: "516b80cf-b218-85a3-ae37-c72ec31f7b9b"
     - stage: uuid
-      stageUuid: "8369876a-6863-8aef-aa1e-22fd52ad7242"
+      stageUuid: "3cce491f-8efb-8d2a-a860-ddf5353ce119"
 version: 2
 ---
 # livestock — animals raised for produce; the non-crop living-production domain

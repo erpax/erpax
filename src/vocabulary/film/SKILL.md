@@ -1,68 +1,35 @@
 ---
 name: film
 description: "Use when reasoning about film as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/film
-coordinate: film · 5/round · 5b89c01f
-contentUuid: "41445bea-0cb7-5240-b0e6-685083105a61"
-diamondUuid: "54022c02-3f41-8cfb-8027-0c3aea7095ed"
-uuid: "5b89c01f-e0fa-8f67-8d67-dd12ed9b7730"
-horo: 5
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/film"
+coordinate: "vocabulary/film · 2/share · 03e9b612"
+contentUuid: "feb54c9d-88c1-5a6d-83bd-232cdd219a36"
+diamondUuid: "722ed5f4-1d05-805f-afa3-519cd9332929"
+uuid: "03e9b612-77fb-8b94-9de8-1b26b98a4944"
+horo: 2
 typography:
-  partition: film
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "55302ef2-84bb-8f42-9ceb-039cbb1d6052"
+  computationUuid: "9dd6a258-5bb5-8876-a5b1-1a5cb715f98b"
   stages:
     - stage: path
-      stageUuid: "f901178c-a63c-8cd2-a297-fdee8a987f89"
+      stageUuid: "769d5e81-725a-8aed-a7eb-41b2651ce7ff"
     - stage: trinity
-      stageUuid: "a4f46a4d-1a6c-8015-b7f9-e6aa26779173"
+      stageUuid: "a5cd9183-5877-8814-89cb-5787dbac0a98"
     - stage: boundary
-      stageUuid: "d09dddbc-e3f9-89bf-abc5-0d39f3df41ac"
+      stageUuid: "5364affe-e51d-8b4b-a6bb-3d30f4feaf6e"
     - stage: links
-      stageUuid: "82c0f040-4a8d-80af-a02d-85ff2c616a73"
+      stageUuid: "2631b531-eab7-85b7-92e7-6f86b48ec747"
     - stage: horo
-      stageUuid: "8b37028c-34d7-8a96-86d9-b5aa08748e3e"
+      stageUuid: "a6afc52d-dc38-8586-a0af-cd3cf86ba5dd"
     - stage: seal
-      stageUuid: "ecc5113b-c969-886a-8cd8-6c2c32b625d8"
+      stageUuid: "4b8f443d-e69b-837c-97ca-d10568293532"
     - stage: uuid
-      stageUuid: "eb854f77-615c-8ff2-87db-a8bfdfeb22c0"
+      stageUuid: "883b1b48-fcdd-88a1-824e-5ceaea91dd1c"
 version: 2
 ---
 # film

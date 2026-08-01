@@ -1,63 +1,35 @@
 ---
 name: limited
 description: "Use when reasoning about limited as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/limited
-coordinate: limited · 2/share · 1530d275
-contentUuid: "818a5c12-6844-5723-a706-dbed299c5ffe"
-diamondUuid: "4087bffd-7591-8393-af78-4579cd59b02c"
-uuid: "1530d275-639b-8a9d-8a8c-b8f136aa44b3"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/limited"
+coordinate: "vocabulary/limited · 8/crest · dfa4cbdd"
+contentUuid: "246a9955-1624-579c-b3ae-99bf416fef98"
+diamondUuid: "b9dedd85-b3eb-8de7-9ce9-4931b78b2afb"
+uuid: "dfa4cbdd-e49c-8b4b-a1f1-30e041fd71f9"
+horo: 8
 typography:
-  partition: limited
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "94a9dee4-6166-894e-b820-7ec5f983d4ff"
+  computationUuid: "3fd81a52-5249-8b64-9e8a-f3fac0014dc6"
   stages:
     - stage: path
-      stageUuid: "37c12a0e-7193-8152-bd0b-0e4644400e0d"
+      stageUuid: "d6e07f33-9731-86fd-9902-e572236d006f"
     - stage: trinity
-      stageUuid: "dd5b0ced-2bc0-8d52-9bd2-6885820ee358"
+      stageUuid: "e6da8914-ddaf-8640-9097-9da563628835"
     - stage: boundary
-      stageUuid: "acb7895e-6022-8077-ba08-982a25048eae"
+      stageUuid: "21882d77-72a6-8a4f-8d9f-52cfb2297a65"
     - stage: links
-      stageUuid: "4788fb00-dffa-84e7-b5f0-05c31b33f0d1"
+      stageUuid: "c57d5c77-0239-8486-a2bd-9418d6060dff"
     - stage: horo
-      stageUuid: "2e7fc700-55e4-801c-8276-75609219c9f2"
+      stageUuid: "161ff1bc-c11b-8973-a537-c221cd1e590b"
     - stage: seal
-      stageUuid: "43b0a919-97df-873f-9dc7-bb04be39364d"
+      stageUuid: "7d481a18-dffb-8af1-b299-43a5431d32d8"
     - stage: uuid
-      stageUuid: "17f163aa-d48c-8e76-aff9-858bc6a2a383"
+      stageUuid: "54125a1d-d064-8ef1-9800-319ee5d71906"
 version: 2
 ---
 # limited

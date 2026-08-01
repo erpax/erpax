@@ -1,63 +1,35 @@
 ---
 name: fdacategory
 description: "Use when reasoning about fdacategory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/fdacategory
-coordinate: fdacategory · 7/descent · 53e92275
-contentUuid: "c030675a-44c2-50c2-8a11-a12f52e44c77"
-diamondUuid: "9f3da1aa-bf23-87ea-b0c4-5bfc2d6ba2d1"
-uuid: "53e92275-9e67-8bb7-9597-1deefd10ed7d"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/fdacategory"
+coordinate: "vocabulary/fdacategory · 8/crest · 846b4f47"
+contentUuid: "651116a8-77a7-56a2-88ce-1134b5c0fc38"
+diamondUuid: "f5a13f2a-81eb-89b3-a866-a15a83763909"
+uuid: "846b4f47-c7c6-8e8a-93bd-f4b723ab039b"
+horo: 8
 typography:
-  partition: fdacategory
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "596fc7f8-1f42-8a2d-b7c7-c82737a48dda"
+  computationUuid: "e47cef34-5761-8de5-836a-a4c28398e6b6"
   stages:
     - stage: path
-      stageUuid: "abb2cbc7-5a7e-8478-8f2a-34f9b474ea37"
+      stageUuid: "a8a6c847-003f-8b5e-aec8-63c49cce0bdd"
     - stage: trinity
-      stageUuid: "d62aa6e3-d008-80bb-9ded-bee954d0919a"
+      stageUuid: "44ba9620-c23d-8294-acf9-383b9b611fb4"
     - stage: boundary
-      stageUuid: "7b438cc6-d950-8832-8028-37eee06063cb"
+      stageUuid: "a9a6338d-7f2a-81cd-a26e-ffea93294a4c"
     - stage: links
-      stageUuid: "d27e7c3e-bc0a-8ec2-b18f-77adfa48cbb0"
+      stageUuid: "1f1ed38d-76a9-8c84-baff-61060ef7d196"
     - stage: horo
-      stageUuid: "8cec50c1-38e5-827d-a0e8-483f7032b5ba"
+      stageUuid: "d77edcad-be92-8bc8-bc74-b0b4a31a9b7c"
     - stage: seal
-      stageUuid: "0fe33399-d637-8b65-8ba6-a672829ca3c7"
+      stageUuid: "e02f4c61-ebc2-88af-bcb6-8c8b4e69027c"
     - stage: uuid
-      stageUuid: "3f41ffae-64d3-8fcd-a011-d409029253d4"
+      stageUuid: "36b6dec0-8c88-822e-a18c-4b7d50674592"
 version: 2
 ---
 # fdacategory

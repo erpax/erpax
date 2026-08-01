@@ -2,127 +2,18 @@
 name: rotation
 description: "Use when planning the multi-year non-repetition of a crop family in the same ground — crop rotation breaks pest/disease cycles and balances nutrient draw by never returning a family to a bed sooner than ~3–4 years. The rule/constraint over the planting sequence (distinct from the bare sequence): grouped by botanical family, alternating heavy feeders, legumes, and roots."
 atomPath: rotation
-coordinate: rotation · 8/crest · 7d45de67
-contentUuid: "6c18def3-6a37-5dd5-9a22-2cb120496c72"
-diamondUuid: "94c35283-8bb9-8e23-9d0f-3831d928ba01"
-uuid: "7d45de67-0611-8d32-ac2d-6822f132f442"
-horo: 8
-bonds:
-  in:
-    - agriculture
-    - allocation
-    - balance
-    - capacity
-    - covercrop
-    - crop
-    - cropplan
-    - family
-    - fertility
-    - forestry
-    - grazing
-    - herd
-    - law
-    - organic
-    - pasture
-    - perennial
-    - permaculture
-    - planting
-    - season
-    - sequence
-    - soil
-    - taxonomy
-  out:
-    - agriculture
-    - allocation
-    - balance
-    - capacity
-    - covercrop
-    - crop
-    - cropplan
-    - family
-    - fertility
-    - forestry
-    - grazing
-    - herd
-    - law
-    - organic
-    - pasture
-    - perennial
-    - permaculture
-    - planting
-    - season
-    - sequence
-    - soil
-    - taxonomy
+coordinate: "rotation · 7/descent · 7c29082a"
+contentUuid: "0e8f6319-ffef-5ed9-9532-02ca491ba847"
+diamondUuid: "9b8e1b93-6bfc-85d8-aca4-eb588d676d09"
+uuid: "7c29082a-27f8-89ac-bbe8-a85fdcd425b8"
+horo: 7
 typography:
   partition: rotation
   bondDegree: 70
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - allocation
-    - balance
-    - capacity
-    - covercrop
-    - crop
-    - family
-    - fertility
-    - law
-    - planting
-    - season
-    - sequence
-    - soil
-  matrix:
-    - agriculture
-    - allocation
-    - balance
-    - capacity
-    - covercrop
-    - crop
-    - cropplan
-    - family
-    - fertility
-    - forestry
-    - grazing
-    - herd
-    - law
-    - organic
-    - pasture
-    - perennial
-    - permaculture
-    - planting
-    - season
-    - sequence
-    - soil
-    - taxonomy
-  backlinks:
-    - agriculture
-    - allocation
-    - balance
-    - capacity
-    - covercrop
-    - crop
-    - cropplan
-    - family
-    - fertility
-    - forestry
-    - grazing
-    - herd
-    - law
-    - organic
-    - pasture
-    - perennial
-    - permaculture
-    - planting
-    - season
-    - sequence
-    - soil
-    - taxonomy
 signatures:
-  computationUuid: "b2233277-43df-8b5e-8705-4a6ead1c904f"
+  computationUuid: "77ea0633-5951-8c55-b9ab-ac254994298b"
   stages:
     - stage: path
       stageUuid: "d64a2026-51c1-89d4-9ee7-e3848de8ceb9"
@@ -133,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3433989b-d196-8ea9-8f9c-19dcb8be7d6f"
     - stage: horo
-      stageUuid: "2aa63dea-cdea-800d-9ec7-4634c2c1d86c"
+      stageUuid: "b77b31be-a555-8545-a452-2c2bfd53c422"
     - stage: seal
-      stageUuid: "fb4f68a3-5989-8497-99b8-f5110de19be0"
+      stageUuid: "b2f93fae-e86c-8b30-95b5-879039594c64"
     - stage: uuid
-      stageUuid: "64de2c49-00c2-8823-b964-f3b0cc6d29df"
+      stageUuid: "69d02eda-a471-8309-9142-1840a77f4e88"
 version: 2
 ---
 # rotation — the multi-year non-repeat of a crop family in one bed

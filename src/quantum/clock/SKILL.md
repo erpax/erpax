@@ -2,8 +2,55 @@
 name: clock
 description: "Use when order must be provable — one clock replacing 621 scattered time reads, where each tick folds (prev ⊕ content) so reordering or editing history breaks every later address. Supplies the interval dimension quantum/ftl lacks. Logical order, not seconds. Run: tsx src/quantum/clock/index.ts"
 atomPath: "quantum/clock"
+coordinate: "quantum/clock · 5/round · 75e088e6"
+contentUuid: "e38ab821-86af-5d6c-8998-da7f8a5cdaf1"
+diamondUuid: "68765fd7-2ba5-8cdb-a936-3e63e7f1a369"
+uuid: "75e088e6-e2c0-81e3-a0c8-a0a193eb71fc"
+horo: 5
+typography:
+  partition: quantum
+  bondDegree: 15
+standards: []
+bindings: []
+signatures:
+  computationUuid: "c947ce98-87ad-85cc-abee-6ef0b187b809"
+  stages:
+    - stage: path
+      stageUuid: "32c191c3-d988-8664-8287-526b72ca0f95"
+    - stage: trinity
+      stageUuid: "51fbee2d-47d9-89a9-a117-0e0921e74016"
+    - stage: boundary
+      stageUuid: "be3f741e-b15a-8489-b8f0-910378762f12"
+    - stage: links
+      stageUuid: "de023f2f-e7b0-88bb-9a44-ca8093a59109"
+    - stage: horo
+      stageUuid: "945f5684-8f00-8f6e-afd4-73dc6fbcd6ce"
+    - stage: seal
+      stageUuid: "b6bc0d6b-e10f-8ccd-9a8f-b14cce6af22e"
+    - stage: uuid
+      stageUuid: "4c8f6543-2be1-886d-a89b-47477c648f50"
+quantum:
+  superposition:
+    - integrity
+    - law
+    - merge
+    - quantum
+    - rules
+    - superposition
+  collapse:
+    - "Use when order must be provable — one clock replacing 621 scattered time reads, where each tick folds (prev ⊕ content) so reordering or editing history breaks every later address. Supplies the interval dimension quantum/ftl lacks. Logical order, not seconds. Run: tsx src/quantum/clock/index.ts"
+    - "order is content, not a timestamp. A tick folds its parent, so history that was edited cannot reproduce its own addresses — and a \"when\" that nothing can contradict is a claim, not a measurement."
+  seal:
+    sandbox: false
+    receipt: false
+    pathFollow: true
+    canonicalRecord: true
+    analogResults: false
+    speechResults: false
+    computationUuid: "c947ce98-87ad-85cc-abee-6ef0b187b809"
+    contentUuid: "e38ab821-86af-5d6c-8998-da7f8a5cdaf1"
+version: 2
 ---
-
 # clock — a tick that seals its own order
 
 erpax reads time in **621 places** and had no clock: 518 `new Date()`, 77 `Date.now`, 11 `performance.now`, 15 `mtime`. No two agree on what *now* means, none can be frozen for a test, and every one of them records a claim about **when** that nothing can afterwards contradict — an unrefutable assertion, written 621 times ([[rules]]/refutable).
@@ -37,3 +84,5 @@ What FTL genuinely needs is an **interval**, and `since()` supplies it in the on
 - **ISO/IEC 25010:2023 §5.5** — analysability: an ordered, reproducible event history.
 
 Composes: [[merge]] · [[integrity]] · [[quantum]]/ftl · [[quantum]]/coalesce · [[law]].
+
+<sub>content-uuid `e38ab821-86af-5d6c-8998-da7f8a5cdaf1` · account `quantum/clock` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

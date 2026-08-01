@@ -1,58 +1,35 @@
 ---
 name: itinerary
 description: Use when reasoning about itinerary — Destination(s) ( Place ) that make up a trip. For a trip where destination order is important use ItemList to specify that order (see examples).
-atomPath: vocabulary/itinerary
-coordinate: itinerary · 8/crest · bf8c6b59
-contentUuid: "0b8f5822-ff05-5169-a020-71e65843b6fd"
-diamondUuid: "95ad0b11-40b5-896c-b36b-e311942fb7cd"
-uuid: "bf8c6b59-8565-8f85-af8b-2e9c4b76e0a9"
-horo: 8
-bonds:
-  in:
-    - law
-    - place
-    - thing
-  out:
-    - law
-    - place
-    - thing
+atomPath: "vocabulary/itinerary"
+coordinate: "vocabulary/itinerary · 1/base · 4c850ed6"
+contentUuid: "e5839c31-0d87-5459-9a95-c495a8e29e5f"
+diamondUuid: "f2267707-65af-8fb6-b49a-8300ab7f47fa"
+uuid: "4c850ed6-2ae4-897f-8220-1ce07f6301b0"
+horo: 1
 typography:
-  partition: itinerary
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - place
-    - thing
-  matrix:
-    - law
-    - place
-    - thing
-  backlinks:
-    - law
-    - place
-    - thing
 signatures:
-  computationUuid: "3e6a061e-5573-8f25-972d-44f8ce6cf605"
+  computationUuid: "1692b463-8f05-82e2-b65d-697e50f97296"
   stages:
     - stage: path
-      stageUuid: "a6a5e6d1-db59-8c37-9038-0cb7e5de4e33"
+      stageUuid: "bb905f89-a006-8489-ac27-2df1ef014112"
     - stage: trinity
-      stageUuid: "c96b6a50-9c66-8606-a376-b5dcbed36a93"
+      stageUuid: "69d59eea-73fa-82ee-8d54-877b16950a6a"
     - stage: boundary
-      stageUuid: "b6dff490-d5f1-8f29-a7a2-f700419bc4dd"
+      stageUuid: "1ed193ee-a983-8a07-9f6d-23bf30220797"
     - stage: links
-      stageUuid: "3baebfec-cc2f-82e3-aa4b-9ab6f7dbeb51"
+      stageUuid: "52e2a946-e02f-8e17-a9b7-c1f2d6a3934e"
     - stage: horo
-      stageUuid: "2baf1b3d-b65e-863e-a15b-dd010710c52f"
+      stageUuid: "74a44eda-4fe1-8cd5-ac4f-96dd7cafd961"
     - stage: seal
-      stageUuid: "d135bf3b-9848-8352-b109-b2f499c436fa"
+      stageUuid: "08052b53-45b6-8ffe-b7c4-c626157dd2d8"
     - stage: uuid
-      stageUuid: "07f128e8-fa20-84b7-89de-7e9bc6cc2ab7"
+      stageUuid: "575fef6b-9583-84cb-a067-0ced38beee88"
 version: 2
 ---
 # itinerary

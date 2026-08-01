@@ -2,47 +2,14 @@
 name: statements
 description: "Use when generating, certifying, and publishing financial statements — trial balance, balance sheet, income statement, cash flow, equity — under IAS-1 / IFRS-18 (2027+) with SOX §302 preparer-vs-certifier segregation, financial ratios, and multi-format export. The period-end financial-statement collection."
 atomPath: "financial/statements"
-coordinate: "financial/statements · 2/share · 6f29b818"
-contentUuid: "b1ddc9e6-5cde-56d3-8142-7c0d3e962c61"
-diamondUuid: "8b9dbef6-a76c-81d3-ac91-412edc701f47"
-uuid: "6f29b818-0fed-89d6-9437-58b8d48c9e75"
-horo: 2
-bonds:
-  in:
-    - accounting
-    - balance
-    - budgetvariance
-    - disclosure
-    - financial
-    - hedge
-    - horo
-    - identity
-    - law
-    - materiality
-    - proof
-    - segment
-    - standard
-    - transaction
-    - variance
-  out:
-    - accounting
-    - balance
-    - budgetvariance
-    - disclosure
-    - hedge
-    - horo
-    - identity
-    - law
-    - materiality
-    - proof
-    - segment
-    - standard
-    - transaction
-    - variance
+coordinate: "financial/statements · 1/base · 82eaee2d"
+contentUuid: "c31c2e52-dd70-52d9-aa9e-63c0a1dbee15"
+diamondUuid: "055287d5-2113-86bc-939e-87f1ee8f0759"
+uuid: "82eaee2d-a0bf-84fa-a7ff-9744ab3f3f40"
+horo: 1
 typography:
   partition: financial
   bondDegree: 53
-  neighbors: []
 standards:
   - "BCP-47"
   - "BCP-47 language-tag"
@@ -61,48 +28,8 @@ standards:
   - "W3C-PROV-O"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - balance
-    - horo
-    - identity
-    - law
-    - proof
-    - standard
-    - transaction
-  matrix:
-    - accounting
-    - balance
-    - budgetvariance
-    - disclosure
-    - hedge
-    - horo
-    - identity
-    - law
-    - materiality
-    - proof
-    - segment
-    - standard
-    - transaction
-    - variance
-  backlinks:
-    - accounting
-    - balance
-    - budgetvariance
-    - disclosure
-    - hedge
-    - horo
-    - identity
-    - law
-    - materiality
-    - proof
-    - segment
-    - standard
-    - transaction
-    - variance
 signatures:
-  computationUuid: "ba1717c4-2c43-89c8-9bd6-56a2051ce078"
+  computationUuid: "f369c3a5-0a08-8363-b1a4-fce20eead13c"
   stages:
     - stage: path
       stageUuid: "a34a2754-da29-8f74-ad0e-2df260a2a760"
@@ -113,11 +40,11 @@ signatures:
     - stage: links
       stageUuid: "6925f5ca-c1df-8a3b-b16b-3d8abdd46759"
     - stage: horo
-      stageUuid: "298f80d8-53bd-8f22-903c-4b5b66c8d1f7"
+      stageUuid: "1e6c38db-488f-8d21-ac01-fce69b11ffd5"
     - stage: seal
       stageUuid: "bcf9a2d7-1ece-8100-bb56-4eacf0ef45b6"
     - stage: uuid
-      stageUuid: "3feff1a4-3e90-8fed-9430-11bab33c5043"
+      stageUuid: "99a722d9-1fa9-8f75-aa12-bab1b10e1717"
 version: 2
 ---
 # financial-statements

@@ -2,36 +2,15 @@
 name: requests
 description: "Use when an occupant, operator, or sensor raises an FM service ticket — corrective, preventive, predictive, compliance, safety, or move request — against a property, space, or fixed asset; SLA priority, triage, promotion to a work order. The IWMS/CMMS service-request intake register per ISO 41001 §8.1."
 atomPath: "maintenance/requests"
-coordinate: "maintenance/requests · 4/weave · 676af693"
-contentUuid: "d9583cec-4c7a-5be6-9c36-cbb3ad26a00e"
-diamondUuid: "1e1ba544-baaf-8b51-bc4a-ceb5f85f7ba7"
-uuid: "676af693-8ff8-89fc-86f7-b7691cbb54b8"
+coordinate: "maintenance/requests · 4/weave · ae463bcf"
+contentUuid: "1a32ac9e-3b54-5f43-8f98-58295632082f"
+diamondUuid: "aa116191-e27a-88c0-9f47-d9def4228eed"
+uuid: "ae463bcf-f82c-801b-8949-ae2b66c3f70c"
 horo: 4
-bonds:
-  in:
-    - assets
-    - law
-    - orders
-    - properties
-    - request
-    - resources
-    - spaces
-    - users
-  out:
-    - assets
-    - law
-    - orders
-    - properties
-    - request
-    - resources
-    - spaces
-    - users
 typography:
   partition: maintenance
   bondDegree: 37
-  neighbors: []
 standards:
-  - "ILO-C100"
   - "ISO-41001"
   - "ISO-41001:2018 §8.1 facility-management operational-control"
   - "ISO-41001:2018 §8.1 facility-management operational-control`"
@@ -45,35 +24,8 @@ standards:
   - "SOX §404 internal-controls fm-service-delivery"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - assets
-    - law
-    - orders
-    - properties
-    - resources
-    - spaces
-    - users
-  matrix:
-    - assets
-    - law
-    - orders
-    - properties
-    - request
-    - resources
-    - spaces
-    - users
-  backlinks:
-    - assets
-    - law
-    - orders
-    - properties
-    - request
-    - resources
-    - spaces
-    - users
 signatures:
-  computationUuid: "4b31ee1f-980b-8f84-887e-fc688e36359e"
+  computationUuid: "1621ca39-9a25-81f2-91ec-8a8e7c498ff7"
   stages:
     - stage: path
       stageUuid: "3e2a2352-6111-8acd-bc92-da0ce002cc25"
@@ -84,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "36f13c9d-1e61-814b-b286-3eb804f6464d"
     - stage: horo
-      stageUuid: "7992b984-22ec-8e8b-acc9-2381e6935e92"
+      stageUuid: "29fd51f8-f771-8bdf-a812-33b87ba102be"
     - stage: seal
       stageUuid: "fb7d93a3-cfc7-8590-93d5-ad300983803c"
     - stage: uuid
-      stageUuid: "0252060d-fdd4-81fd-8c7f-efd73ecd0c49"
+      stageUuid: "a5f26479-9ff9-8f01-9d07-f5aa09959f3e"
 version: 2
 ---
 # maintenance-requests

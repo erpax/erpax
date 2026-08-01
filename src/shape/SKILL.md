@@ -2,52 +2,19 @@
 name: shape
 description: "Use when reasoning about shape as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: shape
-coordinate: shape · 2/share · 237af1f3
-contentUuid: "f45d1591-cd99-5953-b4e4-93a5a9934844"
-diamondUuid: "7e89e983-d0f3-8899-9546-e91ba3b23f51"
-uuid: "237af1f3-0a35-8731-84dd-166b935f4a9d"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
+coordinate: "shape · 5/round · e867b49f"
+contentUuid: "e37be1f6-e913-5e0b-9203-fd6a6126b6a7"
+diamondUuid: "52b68ca8-d717-8f38-8753-b86fc69fd3c2"
+uuid: "e867b49f-991f-83af-93e3-55aeac6464f8"
+horo: 5
 typography:
   partition: shape
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "eeb6dbeb-aa92-8e85-ab77-9949f62534db"
+  computationUuid: "346bdf73-2e67-8228-9abc-d36f952b50fa"
   stages:
     - stage: path
       stageUuid: "c80d442f-63c5-8225-9b60-accd497fa3c0"
@@ -58,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f78c2621-dece-85d7-b6b0-adc1d411d8c0"
     - stage: horo
-      stageUuid: "55896fc8-a949-8797-83c5-511433bed3e4"
+      stageUuid: "98baa213-7b52-827f-bc17-7ecb3066cbda"
     - stage: seal
-      stageUuid: "fecc0b40-4542-8057-96f2-e737ef3dcaac"
+      stageUuid: "2f405711-3e0c-8cb3-ba52-186a202ab79b"
     - stage: uuid
-      stageUuid: "46de0f7f-2ea9-89c6-9ba8-5b73b5026dd7"
+      stageUuid: "9c0d4a57-cd62-842e-96cc-9d8d9bb08fc7"
 version: 2
 ---
 # shape

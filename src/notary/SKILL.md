@@ -2,48 +2,16 @@
 name: notary
 description: "Use when a fact must be given public faith — recorded in a bound chronological register, timestamped, sealed tamper-evident, and made presumptively authentic. The legal notarial act modelled on erpax primitives: the seal is a content-uuid, the protocol is an append-only hash-chain, authenticity is an inclusion proof; the honest boundary is that real legal force needs a commissioned notary or an eIDAS/RFC-3161 trust service."
 atomPath: notary
-coordinate: "notary · 4/weave · 01640541"
-contentUuid: "20737f10-8239-594c-bc25-c001eaf7cc12"
+coordinate: "notary · 8/crest · 714f2fc7"
+contentUuid: "ac0ba40c-1d36-580c-a2d3-ebbca0e23d8b"
 diamondUuid: "ae377c16-9a59-8978-ab33-2dcf4c019d5c"
-uuid: "01640541-951f-8a21-b527-cea997a7bca1"
-horo: 4
-bonds:
-  in:
-    - accounting
-    - cadastre
-    - check
-    - fold
-    - globe
-    - law
-    - merge
-    - pyramid
-    - qtsp
-    - registry
-    - rosetta
-    - sanctions
-    - seal
-    - uuid
-  out:
-    - accounting
-    - cadastre
-    - check
-    - fold
-    - globe
-    - law
-    - merge
-    - pyramid
-    - qtsp
-    - registry
-    - rosetta
-    - sanctions
-    - seal
-    - uuid
+uuid: "714f2fc7-907c-8489-ba44-c8c8dee0d432"
+horo: 8
 typography:
   partition: notary
   bondDegree: 44
-  neighbors: []
 standards:
-  - "EU-2006/43"
+  - "EU-2018/843"
   - "EU-VAT-Directive"
   - "Hague Apostille Convention (1961) — cross-border authentication of public documents"
   - "RFC 3161 — Time-Stamp Protocol (TSP): trusted timestamping, the cryptographic notary"
@@ -51,44 +19,6 @@ standards:
   - eIDAS
   - "eIDAS — Regulation (EU) No 910/2014 — qualified electronic signatures, seals, timestamps"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - fold
-    - law
-    - merge
-    - seal
-    - uuid
-  matrix:
-    - accounting
-    - cadastre
-    - check
-    - fold
-    - globe
-    - law
-    - merge
-    - pyramid
-    - qtsp
-    - registry
-    - rosetta
-    - sanctions
-    - seal
-    - uuid
-  backlinks:
-    - accounting
-    - cadastre
-    - check
-    - fold
-    - globe
-    - law
-    - merge
-    - pyramid
-    - qtsp
-    - registry
-    - rosetta
-    - sanctions
-    - seal
-    - uuid
 signatures:
   computationUuid: "681e107a-e8c2-8127-8434-691b3d6d44dc"
   stages:

@@ -1,68 +1,35 @@
 ---
 name: political
 description: "Use when reasoning about political as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/political
-coordinate: political · 8/crest · fb7292c7
-contentUuid: "3c5496fe-dac7-526c-bf4c-66b4508eda6c"
-diamondUuid: "3496e9b9-42b4-82a8-857c-e9e8c5ec688e"
-uuid: "fb7292c7-e17b-8ada-b3c7-2a6c950c5eaa"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - party
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - party
-    - sti
+atomPath: "vocabulary/political"
+coordinate: "vocabulary/political · 5/round · 2b77ca03"
+contentUuid: "4e99b46d-16c2-5700-89e4-cdecce008fdd"
+diamondUuid: "a1e21bf2-548c-87f3-89ed-34b1f890ab75"
+uuid: "2b77ca03-a245-854e-9906-3e55c0eecfe9"
+horo: 5
 typography:
-  partition: political
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - party
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - party
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - party
-    - sti
 signatures:
-  computationUuid: "0af2a11d-a259-8da6-ac10-01ae9e517724"
+  computationUuid: "c6811223-037d-8ef8-ac65-cc4cc56f0033"
   stages:
     - stage: path
-      stageUuid: "7f184a6f-0036-89b4-95a4-fe00327e935b"
+      stageUuid: "874880c0-de6d-87ed-abc3-6c07c526620b"
     - stage: trinity
-      stageUuid: "92dd68aa-8c26-8431-a6b7-5134a3d24c90"
+      stageUuid: "bf5799e3-f285-860f-8337-403334324c5b"
     - stage: boundary
-      stageUuid: "63dc94b0-3940-8fd4-b40a-955633d4a899"
+      stageUuid: "1f902214-d06c-8388-89b1-85b54946855f"
     - stage: links
-      stageUuid: "b05b838b-aa9a-846e-a53b-efeb4c3c1744"
+      stageUuid: "3c13b55e-d0ef-8b4e-a744-ed04d01cd2ed"
     - stage: horo
-      stageUuid: "a8cf85dc-7f44-8c5c-9433-a1033806c635"
+      stageUuid: "9907d414-c5ec-8d31-b4d7-90fbfe38c199"
     - stage: seal
-      stageUuid: "ab9364a1-ef56-8d17-a9bb-a89019e8f275"
+      stageUuid: "f422a6ff-c9ea-83b7-ad52-da70d2cbb9a6"
     - stage: uuid
-      stageUuid: "2a26df4e-3c73-8f94-85f8-6f9163dde204"
+      stageUuid: "6797970b-e81c-87e8-acf9-ebd2c77d7975"
 version: 2
 ---
 # political

@@ -1,73 +1,35 @@
 ---
 name: rescue
 description: "Use when reasoning about rescue as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/rescue
-coordinate: rescue · 2/share · 863deb9c
-contentUuid: "b8e84c4a-3e07-5d95-b739-6b2ec014f0b2"
-diamondUuid: "d7be6ebf-dd7e-8797-9e92-1c6d05ce3fff"
-uuid: "863deb9c-c5a4-885a-9b81-df3338f7b380"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - organization
-    - search
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - organization
-    - search
-    - sti
+atomPath: "vocabulary/rescue"
+coordinate: "vocabulary/rescue · 8/crest · 3497ae5f"
+contentUuid: "f944668e-fe52-58bf-8803-a6329bc5c691"
+diamondUuid: "48d40b16-bf4b-863c-a1d4-0ac16a198513"
+uuid: "3497ae5f-1dc4-8822-a2a2-9f659f5b77a3"
+horo: 8
 typography:
-  partition: rescue
-  bondDegree: 19
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 21
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - organization
-    - search
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - organization
-    - search
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - organization
-    - search
-    - sti
 signatures:
-  computationUuid: "c80ad38d-8614-8495-b091-0c79fb66bcfd"
+  computationUuid: "e94f0e30-1030-8e91-9caa-7a6df5c4d9b8"
   stages:
     - stage: path
-      stageUuid: "7c831c05-d023-810a-b8da-0c506c34563c"
+      stageUuid: "c074c454-f3c8-8692-a0f7-4a08e202f18f"
     - stage: trinity
-      stageUuid: "a344836d-e108-8d6f-896e-9cd321a85acf"
+      stageUuid: "c33e6cba-16da-8ddb-a4e8-f579d7ff507a"
     - stage: boundary
-      stageUuid: "4f7627a4-ed89-86ea-8bc6-d28ce5b5eb10"
+      stageUuid: "39cf57af-8f6a-8895-aeef-d4933ae9d83e"
     - stage: links
-      stageUuid: "7a0a07ed-f8cb-887d-976a-cb846b23ae7c"
+      stageUuid: "18cc7e7b-8a9a-8208-8af3-a8ddc584edda"
     - stage: horo
-      stageUuid: "dd75bf4b-7ff0-829b-be45-d0008d365b2a"
+      stageUuid: "adffca2d-d409-8270-b98f-2f8247d73ab5"
     - stage: seal
-      stageUuid: "ee9d76f0-6117-8a94-b9d8-196267e9ff32"
+      stageUuid: "9faf2b6c-ff50-8df6-8314-ed6836316bf1"
     - stage: uuid
-      stageUuid: "41250705-4ea4-8590-ae5b-c54e57a61a1f"
+      stageUuid: "aed3b854-5ea8-8d93-9147-43820ab2fd58"
 version: 2
 ---
 # rescue

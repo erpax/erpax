@@ -1,84 +1,20 @@
 ---
 name: communication
 description: "Use when reasoning about communication on the quantum level — a message is a content-uuid (no-cloning, so a forged message has a different uuid), the channel is entanglement, and a received message is intact iff its uuid matches the original."
-atomPath: quantum/communication
-coordinate: quantum/communication · 1/base · a949f245
-contentUuid: "802adcba-8a9c-59cb-a8c0-a6eb447c1b83"
-diamondUuid: "ae707f01-9970-8eec-9aa2-2f366710b116"
-uuid: "a949f245-7d72-8d8d-b2f8-86571eb17735"
-horo: 1
-bonds:
-  in:
-    - channel
-    - chat
-    - communication
-    - key
-    - law
-    - merge
-    - message
-    - quantum
-    - send
-    - superdense
-    - teleportation
-    - uuid
-  out:
-    - channel
-    - chat
-    - communication
-    - key
-    - law
-    - merge
-    - message
-    - quantum
-    - send
-    - superdense
-    - teleportation
-    - uuid
+atomPath: "quantum/communication"
+coordinate: "quantum/communication · 4/weave · bd88313c"
+contentUuid: "217c33ba-00a6-584b-b2d9-55636d1b4c43"
+diamondUuid: "fea9a557-bf04-87db-8230-56afe7b9ea44"
+uuid: "bd88313c-ce6e-8ffc-9e0d-6feb2d7e2b2e"
+horo: 4
 typography:
   partition: quantum
-  bondDegree: 60
-  neighbors:
-    - agent
+  bondDegree: 58
 standards:
   - "no-cloning (Wootters–Zurek 1982); RFC 9562 §5.8 content-uuid"
 bindings: []
-neighbors:
-  wikilink:
-    - cloning
-    - communication
-    - entanglement
-    - law
-    - message
-    - quantum
-    - uuid
-  matrix:
-    - channel
-    - chat
-    - communication
-    - key
-    - law
-    - merge
-    - message
-    - quantum
-    - send
-    - superdense
-    - teleportation
-    - uuid
-  backlinks:
-    - channel
-    - chat
-    - communication
-    - key
-    - law
-    - merge
-    - message
-    - quantum
-    - send
-    - superdense
-    - teleportation
-    - uuid
 signatures:
-  computationUuid: "606393da-c894-8ebb-91c3-f6bfd5e0fc1c"
+  computationUuid: "5bdd8fd1-b59e-8140-9440-4f55f0d17fe3"
   stages:
     - stage: path
       stageUuid: "4fbb8785-7def-8c9c-8c5c-a1673ef47f67"
@@ -89,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bf34309c-824c-855c-a14a-145614754384"
     - stage: horo
-      stageUuid: "00e86191-a8f2-88e2-85f3-1ab4cabd5ba3"
+      stageUuid: "cf228fcc-e9e1-8031-ba11-3ad9b499936f"
     - stage: seal
       stageUuid: "eefb7b25-f62d-802a-99c5-e6a60a7722ed"
     - stage: uuid
-      stageUuid: "e6e6bd4e-78ad-85b3-a882-b906e2a8b6d2"
+      stageUuid: "e0e8339a-a606-82dc-b615-54e90216f900"
 quantum:
   superposition:
     - channel
@@ -117,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "606393da-c894-8ebb-91c3-f6bfd5e0fc1c"
-    contentUuid: "802adcba-8a9c-59cb-a8c0-a6eb447c1b83"
+    computationUuid: "5bdd8fd1-b59e-8140-9440-4f55f0d17fe3"
+    contentUuid: "217c33ba-00a6-584b-b2d9-55636d1b4c43"
 version: 2
 ---
 # quantum/communication — no-cloning + tamper-evidence
@@ -131,4 +67,4 @@ Matter-twin: `src/quantum/communication/index.ts` (`intact` · `noCloningHolds`)
 
 @standard no-cloning (Wootters–Zurek 1982); RFC 9562 §5.8 content-uuid
 
-<sub>content-uuid `802adcba-8a9c-59cb-a8c0-a6eb447c1b83` · account `quantum/communication` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `217c33ba-00a6-584b-b2d9-55636d1b4c43` · account `quantum/communication` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

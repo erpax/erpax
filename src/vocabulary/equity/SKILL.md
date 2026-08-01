@@ -1,72 +1,34 @@
 ---
 name: equity
 description: "Use when reasoning about equity in double-entry accounting — the owners' residual claim after liabilities; the credit side that pairs with asset debits in the accounting equation."
-atomPath: vocabulary/equity
-coordinate: equity · 7/descent · 2af57abb
-contentUuid: "76bb709a-519d-5d2f-ab0b-d5ec2004d509"
-diamondUuid: "4cc85692-dc0f-8b50-aa9a-79b50aa73e62"
-uuid: "2af57abb-19ee-81e6-9f5c-072d50b6077a"
-horo: 7
-bonds:
-  in:
-    - accounting
-    - balance
-    - conservation
-    - entry
-    - law
-    - liability
-  out:
-    - accounting
-    - balance
-    - conservation
-    - entry
-    - law
-    - liability
+atomPath: "vocabulary/equity"
+coordinate: "vocabulary/equity · 1/base · 06d00ec5"
+contentUuid: "dac35d44-749c-5629-863c-a20d584f4374"
+diamondUuid: "e310f1fc-90de-8bb2-ba63-08055057263c"
+uuid: "06d00ec5-a3f0-8a99-b2be-f5ad837a0b21"
+horo: 1
 typography:
-  partition: equity
+  partition: vocabulary
   bondDegree: 18
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - balance
-    - conservation
-    - entry
-    - law
-    - liability
-  matrix:
-    - accounting
-    - balance
-    - conservation
-    - entry
-    - law
-    - liability
-  backlinks:
-    - accounting
-    - balance
-    - conservation
-    - entry
-    - law
-    - liability
 signatures:
-  computationUuid: "0d06f64a-c24b-83c6-a174-564bb825dcb0"
+  computationUuid: "3990322b-6b36-8b44-a42e-8ca3f949f395"
   stages:
     - stage: path
-      stageUuid: "e605c3ad-407f-8878-a47b-0e6d638a8e5b"
+      stageUuid: "36a892c9-fa6a-802d-80e6-e7f4e256143d"
     - stage: trinity
-      stageUuid: "1bba705d-0031-8fe0-bd6f-9f9f1a3bbb2c"
+      stageUuid: "14c1165f-e204-8e79-8dd6-0d9e6863f04b"
     - stage: boundary
-      stageUuid: "5a082aab-5811-8078-9412-2372388d773e"
+      stageUuid: "594b8b27-629c-833e-bb7a-58843ce32b87"
     - stage: links
-      stageUuid: "0e43559e-07d8-8805-9e5b-30fb552545d7"
+      stageUuid: "a9cc1ac3-ae90-8a22-9cee-af5db60e5749"
     - stage: horo
-      stageUuid: "170be6b6-7f2c-8517-a8f0-c1a3f13585c8"
+      stageUuid: "16baea08-579d-8f30-8771-38768614afcc"
     - stage: seal
-      stageUuid: "921568fb-dda8-8c3a-af3a-a41601963cc9"
+      stageUuid: "29c7d5af-b68f-8531-8fcc-40fada6086e3"
     - stage: uuid
-      stageUuid: "9939ffff-db47-81ab-9a92-7d14ff9219b6"
+      stageUuid: "73eb6ac5-6a7a-8398-9dd7-c8035974e5d3"
 version: 2
 ---
 # equity

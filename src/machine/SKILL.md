@@ -2,70 +2,34 @@
 name: machine
 description: "Use when modelling shop-floor equipment mined from the upstream source of truth (etrima, 20 years of garment manufacturing) — the machine node of the production-traceability spine. Every machine carries a three-rate spread (pay ≤ cost ≤ price per hour) that is double-entry economics on the floor: machineRate decomposes a machine-hour into revenue = cost + margin and cost = pay + overhead. A machine runs a work/phase for a lot variant during a shift; fields are the real etrima columns, never invented."
 atomPath: machine
-coordinate: "machine · 2/share · f0af7ccf"
-contentUuid: "828797a9-b7ba-5131-86ae-51c6bcddbe81"
-diamondUuid: "91671b87-61d6-817f-8301-18f4b6c6e13d"
-uuid: "f0af7ccf-5907-8d83-b0c2-93d6f5f46c0d"
+coordinate: "machine · 2/share · 50deb6c8"
+contentUuid: "38c3992a-011a-51c9-a50d-a182bea53750"
+diamondUuid: "7d304572-dd42-8f3d-b08e-4ea1d0420b9b"
+uuid: "50deb6c8-f2ea-8999-8ab7-bb333bc50e8c"
 horo: 2
-bonds:
-  in:
-    - accounting
-    - contracts
-    - law
-    - lots
-    - port
-    - work
-  out:
-    - accounting
-    - contracts
-    - law
-    - lots
-    - port
-    - work
 typography:
   partition: machine
   bondDegree: 18
-  neighbors: []
 standards:
   - "mined from etrima (Rails source-of-truth) · the machine rate spread as double-entry"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - law
-    - lots
-    - work
-  matrix:
-    - accounting
-    - contracts
-    - law
-    - lots
-    - port
-    - work
-  backlinks:
-    - accounting
-    - contracts
-    - law
-    - lots
-    - port
-    - work
 signatures:
-  computationUuid: "910c96a7-c1a2-8d07-9ce6-c7b654a14964"
+  computationUuid: "9d7765ec-2d66-853b-9659-53d101e7cb28"
   stages:
     - stage: path
       stageUuid: "ee1ac092-ea90-8ee0-be23-a48b5d927d1d"
     - stage: trinity
       stageUuid: "c13fa082-138c-86f4-b71a-e0b9c3e90241"
     - stage: boundary
-      stageUuid: "a4a44ecc-6d2a-8e5b-9732-28c56c54d0cd"
+      stageUuid: "0ba4f5da-7880-8ae4-9098-d8ee6eb8ba3f"
     - stage: links
       stageUuid: "58de7a37-bb34-8486-8340-e18bf594c02e"
     - stage: horo
-      stageUuid: "854df84b-fe62-8e21-9d0e-da45530037ee"
+      stageUuid: "3291f28b-fb5f-8c0a-b687-9695a7c27b84"
     - stage: seal
       stageUuid: "1e89d487-806b-8232-9825-099d3c3e4ae8"
     - stage: uuid
-      stageUuid: "201d7db1-6a8e-85b4-b443-31d811b77b5d"
+      stageUuid: "63428309-302f-8dbe-a9da-64194b0968bd"
 version: 2
 ---
 # machine — the equipment node, mined from upstream

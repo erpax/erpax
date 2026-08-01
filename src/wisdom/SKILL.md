@@ -2,97 +2,18 @@
 name: wisdom
 description: "Use when reasoning about holding the law instead of the list — seeing the one pattern that generates the many cases, so a part reconstructs the whole. Distinct from truth (a verified fact) and knowledge (stored facts): wisdom is the holographic compression that lets you regenerate the facts rather than store them."
 atomPath: wisdom
-coordinate: wisdom · 7/descent · 6730614c
-contentUuid: "1960b6a3-39f0-52f9-84a2-88bd63dd917b"
-diamondUuid: "9c5f950b-3bef-833d-8068-a561046b2b92"
-uuid: "6730614c-82a3-8ad2-ad92-c7a6d66c8e15"
-horo: 7
-bonds:
-  in:
-    - akashic
-    - confucianism
-    - generate
-    - gnosticism
-    - harmony
-    - holographic
-    - jainism
-    - law
-    - manichaeism
-    - part
-    - sacred
-    - sequence
-    - standard
-    - truth
-    - whole
-  out:
-    - akashic
-    - confucianism
-    - generate
-    - gnosticism
-    - harmony
-    - holographic
-    - jainism
-    - law
-    - manichaeism
-    - part
-    - sacred
-    - sequence
-    - standard
-    - truth
-    - whole
+coordinate: "wisdom · 1/base · 8a96b984"
+contentUuid: "13e08ef0-9af1-5d89-8392-590450267be5"
+diamondUuid: "22af5515-9dd5-82ba-8c55-fff41724575e"
+uuid: "8a96b984-9d05-86ae-b051-542db63b5a98"
+horo: 1
 typography:
   partition: wisdom
   bondDegree: 45
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - generate
-    - harmony
-    - holographic
-    - law
-    - part
-    - sacred
-    - sequence
-    - standard
-    - truth
-    - whole
-  matrix:
-    - akashic
-    - confucianism
-    - generate
-    - gnosticism
-    - harmony
-    - holographic
-    - jainism
-    - law
-    - manichaeism
-    - part
-    - sacred
-    - sequence
-    - standard
-    - truth
-    - whole
-  backlinks:
-    - akashic
-    - confucianism
-    - generate
-    - gnosticism
-    - harmony
-    - holographic
-    - jainism
-    - law
-    - manichaeism
-    - part
-    - sacred
-    - sequence
-    - standard
-    - truth
-    - whole
 signatures:
-  computationUuid: "7cf9530c-4e71-8e39-851d-d1bd1a8773f0"
+  computationUuid: "0a6bec59-5654-8cf5-a71c-c93c102e0c7c"
   stages:
     - stage: path
       stageUuid: "c16b8982-7ec4-8606-a12c-cddb03a4b17e"
@@ -103,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "45a21516-d4b8-84f0-a46d-fcc75988d907"
     - stage: horo
-      stageUuid: "e0c663bd-b5c8-8880-b7c2-3ca54a98d2db"
+      stageUuid: "f5a2e2f0-2fce-8056-bb95-81ac8e3779e1"
     - stage: seal
-      stageUuid: "5c298ae4-28ff-8082-9f96-50e15259c1d0"
+      stageUuid: "9066ab37-d694-8428-a4c3-1a7a9aafafc8"
     - stage: uuid
-      stageUuid: "ff3443c0-f770-89d3-9522-264fcd7d4309"
+      stageUuid: "c947dcfd-24fd-86d6-b928-0085ccb177f9"
 version: 2
 ---
 # wisdom — hold the law, not the list (the pattern that regenerates the cases)

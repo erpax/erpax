@@ -1,62 +1,34 @@
 ---
 name: committee
 description: Use when modelling one committee — the singular model of the committees collection (the plural store); a constituted group with delegated authority over a domain.
-atomPath: vocabulary/committee
-coordinate: committee · 5/round · 2109e484
-contentUuid: "378d179c-6130-5dfd-94d6-65c3e49c86a0"
-diamondUuid: "debd6576-2da5-815c-af00-6cc66bb2b620"
-uuid: "2109e484-b4ca-8699-9fcc-ca8cceae1cfb"
-horo: 5
-bonds:
-  in:
-    - balance
-    - committees
-    - governance
-    - law
-  out:
-    - balance
-    - committees
-    - governance
-    - law
+atomPath: "vocabulary/committee"
+coordinate: "vocabulary/committee · 1/base · eff9f818"
+contentUuid: "8fc0495a-5ad9-523e-bdfc-debc7200863b"
+diamondUuid: "e30219cb-6e85-8164-8c7e-a27749b98c48"
+uuid: "eff9f818-e743-8e67-b238-b1b482bf918e"
+horo: 1
 typography:
-  partition: committee
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - committees
-    - governance
-    - law
-  matrix:
-    - balance
-    - committees
-    - governance
-    - law
-  backlinks:
-    - balance
-    - committees
-    - governance
-    - law
 signatures:
-  computationUuid: "e5075f54-9c01-8ebf-855b-0cd3a67bcdb7"
+  computationUuid: "8979576d-f951-8886-a921-9a925a269de1"
   stages:
     - stage: path
-      stageUuid: "7cf28df3-587c-8ac9-9d5c-af64af5dc0a4"
+      stageUuid: "59cafb9c-41fe-8c69-afeb-eb6351f9b177"
     - stage: trinity
-      stageUuid: "a581c148-0318-8fae-87c5-40e2c2d3dff2"
+      stageUuid: "01a799d3-8270-8937-8f9d-ed1fba63c90b"
     - stage: boundary
-      stageUuid: "0f9bcf9f-9029-8c9e-9608-3efa168dae06"
+      stageUuid: "2b4cee18-34c8-82ac-a171-c7263f0fa780"
     - stage: links
-      stageUuid: "db3ce946-7660-8711-912b-23f60bfa261b"
+      stageUuid: "07dc63df-f655-81f0-9e10-6f1901013598"
     - stage: horo
-      stageUuid: "2e204f22-d6ee-8b19-9538-7e6880dc5c8e"
+      stageUuid: "c8133390-992a-86b7-bb30-72fd93617c53"
     - stage: seal
-      stageUuid: "1402500e-13d2-8647-8291-af1380610637"
+      stageUuid: "63ffa924-b691-84a3-9bb9-85aa0bc0c4f7"
     - stage: uuid
-      stageUuid: "49b21ce7-e182-8403-a065-ce1060886615"
+      stageUuid: "73156c47-212f-8f30-9252-863fbc691a0e"
 version: 2
 ---
 # committee — the model of one [[committees]] row

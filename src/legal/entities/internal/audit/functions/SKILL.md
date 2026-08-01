@@ -2,43 +2,20 @@
 name: functions
 description: "Use when establishing or governing an internal audit department — charter management, CAE reporting line, audit committee linkage, annual audit plan, resource budgeting, and IIA IPPF/COSO alignment per IIA IPPF / ISO-19011 / SOX §404. The internal-audit-function governance collection."
 atomPath: "legal/entities/internal/audit/functions"
-coordinate: "legal/entities/internal/audit/functions · 2/share · 0a46419a"
-contentUuid: "6d19204f-3e13-5c37-bbdb-91f0432419da"
-diamondUuid: "8bf3a166-a5ff-842a-8051-e8ac73e267ed"
-uuid: "0a46419a-0f19-8356-aaeb-8c24315f8092"
-horo: 2
-bonds:
-  in:
-    - audit
-    - entities
-    - findings
-    - law
-  out:
-    - entities
-    - findings
-    - law
+coordinate: "legal/entities/internal/audit/functions · 5/round · 5ea0900d"
+contentUuid: "4afc90c5-442a-524b-bb00-e9513fbe6660"
+diamondUuid: "668cbbed-8b5c-8a4a-bef8-29ce53f428ed"
+uuid: "5ea0900d-ae4d-8279-ac40-9ed2630b75bb"
+horo: 5
 typography:
   partition: legal
   bondDegree: 9
-  neighbors: []
 standards:
   - "IIA IPPF international-professional-practices-framework"
   - "SOX §404 internal-controls"
 bindings: []
-neighbors:
-  wikilink:
-    - findings
-    - law
-  matrix:
-    - entities
-    - findings
-    - law
-  backlinks:
-    - entities
-    - findings
-    - law
 signatures:
-  computationUuid: "2d47e3d3-4142-8950-91ea-1e06261359f4"
+  computationUuid: "d110ab0b-1460-8167-8c29-1189dc5ef575"
   stages:
     - stage: path
       stageUuid: "c0578220-f575-8cb2-a5e6-27166c67a53a"
@@ -49,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "b74519fa-53f1-83fe-89be-8d5656564b8c"
     - stage: horo
-      stageUuid: "e96b6924-1de8-80fb-ac19-b1f211ed5368"
+      stageUuid: "44297b80-badb-8999-952d-075ac82cae9e"
     - stage: seal
       stageUuid: "05a0c87c-3dde-8b9f-af9f-8006de7e40f8"
     - stage: uuid
-      stageUuid: "0b2cb985-2ed3-8d34-8383-747bb9203bed"
+      stageUuid: "583e1e29-4264-893f-b1d0-a680882b4fd1"
 version: 2
 ---
 # internal-audit-function

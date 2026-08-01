@@ -1,208 +1,35 @@
 ---
 name: content
 description: "Use when reasoning about content as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/content
-coordinate: content · 5/round · c85ef0e5
-contentUuid: "c2f3ca15-1235-5a54-ab42-531a7758eeca"
-diamondUuid: "e38d8a82-84de-86aa-94d5-9a32b41d1879"
-uuid: "c85ef0e5-7776-80ce-a64b-3a0b54ccdde4"
+atomPath: "vocabulary/content"
+coordinate: "vocabulary/content · 5/round · f3609d70"
+contentUuid: "5c2bf774-e4ed-561f-810f-471a08642ac2"
+diamondUuid: "cfccfa30-2ed9-8296-8786-aa384077bc3f"
+uuid: "f3609d70-5b63-81f6-a974-f44ae0776f97"
 horo: 5
-bonds:
-  in:
-    - advertiser
-    - archival
-    - article
-    - carbohydrate
-    - chats
-    - cholesterol
-    - collapse
-    - dateline
-    - fat
-    - fiber
-    - health
-    - keyword
-    - law
-    - location
-    - main
-    - mention
-    - merge
-    - page
-    - protein
-    - rating
-    - reference
-    - saturated
-    - shared
-    - size
-    - sodium
-    - sti
-    - sugar
-    - time
-    - topic
-    - trans
-    - type
-    - unsaturated
-    - url
-    - web
-  out:
-    - advertiser
-    - archival
-    - article
-    - carbohydrate
-    - chats
-    - cholesterol
-    - collapse
-    - dateline
-    - fat
-    - fiber
-    - health
-    - keyword
-    - law
-    - location
-    - main
-    - mention
-    - merge
-    - page
-    - protein
-    - rating
-    - reference
-    - saturated
-    - shared
-    - size
-    - sodium
-    - sti
-    - sugar
-    - time
-    - topic
-    - trans
-    - type
-    - unsaturated
-    - url
-    - web
 typography:
-  partition: content
-  bondDegree: 123
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 125
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - advertiser
-    - article
-    - carbohydrate
-    - cholesterol
-    - collapse
-    - fat
-    - fiber
-    - health
-    - law
-    - location
-    - main
-    - merge
-    - page
-    - protein
-    - rating
-    - reference
-    - saturated
-    - shared
-    - size
-    - sodium
-    - sti
-    - sugar
-    - time
-    - topic
-    - trans
-    - type
-    - unsaturated
-    - url
-    - web
-  matrix:
-    - advertiser
-    - archival
-    - article
-    - carbohydrate
-    - chats
-    - cholesterol
-    - collapse
-    - dateline
-    - fat
-    - fiber
-    - health
-    - keyword
-    - law
-    - location
-    - main
-    - mention
-    - merge
-    - page
-    - protein
-    - rating
-    - reference
-    - saturated
-    - shared
-    - size
-    - sodium
-    - sti
-    - sugar
-    - time
-    - topic
-    - trans
-    - type
-    - unsaturated
-    - url
-    - web
-  backlinks:
-    - advertiser
-    - archival
-    - article
-    - carbohydrate
-    - chats
-    - cholesterol
-    - collapse
-    - dateline
-    - fat
-    - fiber
-    - health
-    - keyword
-    - law
-    - location
-    - main
-    - mention
-    - merge
-    - page
-    - protein
-    - rating
-    - reference
-    - saturated
-    - shared
-    - size
-    - sodium
-    - sti
-    - sugar
-    - time
-    - topic
-    - trans
-    - type
-    - unsaturated
-    - url
-    - web
 signatures:
-  computationUuid: "be9e8440-7b49-8a56-b4b6-a479d2955a12"
+  computationUuid: "a3740eae-f496-8f2e-96a1-6423ad960785"
   stages:
     - stage: path
-      stageUuid: "637336bd-5ed4-88c0-a41a-9b241bd4a4d5"
+      stageUuid: "7b90703c-99bd-83f7-aaef-02610e29607b"
     - stage: trinity
-      stageUuid: "166433ba-4cb6-8fb9-8a94-55a1d584cf57"
+      stageUuid: "e9ca0bc9-aae4-8d07-ab17-32f8120cacfb"
     - stage: boundary
-      stageUuid: "6ce8ac79-cd23-8a47-af7f-65d31aca66f5"
+      stageUuid: "be597e78-beb2-8fcf-83ab-0ee48dd937d9"
     - stage: links
-      stageUuid: "1c220796-65ac-8a82-a6e7-db7bc80dbbe9"
+      stageUuid: "7fffcabe-dbab-81bd-8cf3-3e75d34b2087"
     - stage: horo
-      stageUuid: "5c2fc9f5-63ce-8ad3-9f26-d906acd732b8"
+      stageUuid: "a36083e2-c998-83a0-9166-f9b3644cd35c"
     - stage: seal
-      stageUuid: "339d3bc5-8e6f-81c7-aef5-9d1a5d492ea5"
+      stageUuid: "2dd1338b-6a5f-879e-81bd-4842cc16ebba"
     - stage: uuid
-      stageUuid: "ae1355b8-ddb3-8de5-9bdb-abd220d88e7a"
+      stageUuid: "2bdb637b-d1ba-8c52-89e0-b11bc9b14b3a"
 version: 2
 ---
 # content

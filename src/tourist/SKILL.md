@@ -2,77 +2,19 @@
 name: tourist
 description: "Use when reasoning about tourist as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: tourist
-coordinate: tourist · 2/share · 380c5653
-contentUuid: "df5a7b7d-4667-5138-a9ec-c5667aabdbb1"
-diamondUuid: "1efd2b90-1b4b-81aa-884e-4e226e141d07"
-uuid: "380c5653-37ab-81a6-ae26-d925f4813cba"
-horo: 2
-bonds:
-  in:
-    - attraction
-    - center
-    - collapse
-    - destination
-    - information
-    - law
-    - merge
-    - sti
-    - trip
-    - type
-  out:
-    - attraction
-    - center
-    - collapse
-    - destination
-    - information
-    - law
-    - merge
-    - sti
-    - trip
-    - type
+coordinate: "tourist · 4/weave · 1c4b673f"
+contentUuid: "4eb096f2-4aea-5e2c-abb2-d3f4ac460603"
+diamondUuid: "0ad22de8-e257-86a6-a476-20f51fc30980"
+uuid: "1c4b673f-1d39-8d2f-aa61-827f7336cd73"
+horo: 4
 typography:
   partition: tourist
   bondDegree: 35
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - attraction
-    - center
-    - collapse
-    - destination
-    - information
-    - law
-    - merge
-    - sti
-    - trip
-    - type
-  matrix:
-    - attraction
-    - center
-    - collapse
-    - destination
-    - information
-    - law
-    - merge
-    - sti
-    - trip
-    - type
-  backlinks:
-    - attraction
-    - center
-    - collapse
-    - destination
-    - information
-    - law
-    - merge
-    - sti
-    - trip
-    - type
 signatures:
-  computationUuid: "74b430ee-2c37-8feb-b9c6-351a884c6323"
+  computationUuid: "655654b3-8927-80ee-967c-81914dcf3a9b"
   stages:
     - stage: path
       stageUuid: "564255e9-a158-8c4c-b542-5870c84dee42"
@@ -83,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0d37fcfa-fb9d-8357-b978-c319e8967052"
     - stage: horo
-      stageUuid: "6b1bb60b-dbe4-8707-8bd5-47e2c32091c6"
+      stageUuid: "15311d28-561e-85f2-b4ac-fb8790dc3bc1"
     - stage: seal
-      stageUuid: "766f5c2f-8d03-85f9-8979-32abf3fcaa05"
+      stageUuid: "958dd49b-bea2-8359-95f7-2e440a0355ff"
     - stage: uuid
-      stageUuid: "f63e1013-f0f7-8867-98d4-957ab9f1e1a3"
+      stageUuid: "bb5640df-edc7-80d1-824b-355e094bfd02"
 version: 2
 ---
 # tourist

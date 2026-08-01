@@ -1,179 +1,34 @@
 ---
 name: digit
 description: "Use when storing numeric or realtime data the way words are stored — one folder per digit (0-9), crosslinked exactly like the word atoms; the numeric corpus is the twin of the word corpus, the word and digit duality, and a stream of digits is realtime data addressed by position."
-atomPath: quantum/digit
-coordinate: quantum/digit · 2/share · 8a9b061a
-contentUuid: "0d448381-a8c3-52e8-a11f-10b3f907e7d2"
-diamondUuid: "5ed07b97-166f-84dc-8fae-07b12d88c7e1"
-uuid: "8a9b061a-6520-8812-89a0-797a5944e9a9"
+atomPath: "quantum/digit"
+coordinate: "quantum/digit · 2/share · 387093c5"
+contentUuid: "0bc71d86-6b01-57d9-895c-2fc823eaece2"
+diamondUuid: "73a2246b-5e0e-8b1b-adac-b23df27694c5"
+uuid: "387093c5-939a-84e0-906d-dd381d1fc01e"
 horo: 2
-bonds:
-  in:
-    - atom
-    - aura
-    - consciousness
-    - cost
-    - default
-    - diamond
-    - digit
-    - horo
-    - law
-    - linearity
-    - live
-    - mala
-    - math
-    - merge
-    - method
-    - mirror
-    - number
-    - particle
-    - pixel
-    - proof
-    - quantum
-    - religion
-    - render
-    - sequence
-    - strength
-    - tamper
-    - text
-    - trinity
-    - typography
-    - uuid
-    - word
-  out:
-    - atom
-    - aura
-    - consciousness
-    - cost
-    - default
-    - diamond
-    - digit
-    - horo
-    - law
-    - linearity
-    - live
-    - mala
-    - math
-    - merge
-    - method
-    - mirror
-    - number
-    - particle
-    - pixel
-    - proof
-    - quantum
-    - religion
-    - render
-    - sequence
-    - strength
-    - tamper
-    - text
-    - trinity
-    - typography
-    - uuid
-    - word
 typography:
   partition: quantum
-  bondDegree: 113
-  neighbors:
-    - aura
-    - diamond
+  bondDegree: 116
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - analog
-    - digit
-    - law
-    - links
-    - matrix
-    - matter
-    - number
-    - sequence
-    - stream
-    - uuid
-    - word
-  matrix:
-    - atom
-    - aura
-    - consciousness
-    - cost
-    - default
-    - diamond
-    - digit
-    - horo
-    - law
-    - linearity
-    - live
-    - mala
-    - math
-    - merge
-    - method
-    - mirror
-    - number
-    - particle
-    - pixel
-    - proof
-    - quantum
-    - religion
-    - render
-    - sequence
-    - strength
-    - tamper
-    - text
-    - trinity
-    - typography
-    - uuid
-    - word
-  backlinks:
-    - atom
-    - aura
-    - consciousness
-    - cost
-    - default
-    - diamond
-    - digit
-    - horo
-    - law
-    - linearity
-    - live
-    - mala
-    - math
-    - merge
-    - method
-    - mirror
-    - number
-    - particle
-    - pixel
-    - proof
-    - quantum
-    - religion
-    - render
-    - sequence
-    - strength
-    - tamper
-    - text
-    - trinity
-    - typography
-    - uuid
-    - word
 signatures:
-  computationUuid: "363aaaad-8a8e-8fd1-b758-6ec66bbea013"
+  computationUuid: "72290445-2238-8584-a6e3-8c8ac7398610"
   stages:
     - stage: path
       stageUuid: "f06c9941-f2ab-8c8a-9812-f185dbe1b169"
     - stage: trinity
       stageUuid: "27452077-ca14-8e71-b02c-480bdc91d9b2"
     - stage: boundary
-      stageUuid: "bcc960c9-2727-834e-bcc5-1e1d5722a2fa"
+      stageUuid: "b4e43f8d-caed-86f7-8cf0-738d3c9c3460"
     - stage: links
-      stageUuid: "3833dce9-e851-8d6d-a09c-2a728b8137da"
+      stageUuid: "affbe1c0-2ea2-8512-a11b-47146a5602ad"
     - stage: horo
-      stageUuid: "8578398c-9d71-86fc-9ed9-b27dee9c4f9f"
+      stageUuid: "8adf7bcd-15fe-82d2-8631-b61cf0ca92b8"
     - stage: seal
       stageUuid: "b476b9c2-1da7-898f-9e44-daa502db1bf4"
     - stage: uuid
-      stageUuid: "b2035d19-6987-8786-ae12-24912edfdbea"
+      stageUuid: "a331b034-d7a4-89a8-b542-8a18e78e6382"
 quantum:
   superposition:
     - atom
@@ -203,8 +58,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "363aaaad-8a8e-8fd1-b758-6ec66bbea013"
-    contentUuid: "0d448381-a8c3-52e8-a11f-10b3f907e7d2"
+    computationUuid: "72290445-2238-8584-a6e3-8c8ac7398610"
+    contentUuid: "0bc71d86-6b01-57d9-895c-2fc823eaece2"
 version: 2
 ---
 # quantum/digit — the digit corpus (word ⊕ digit)
@@ -217,4 +72,4 @@ Where a [[word]] is discrete and named, a digit is continuous and counted — th
 
 @see [[digit]] · [[word]] · [[quantum/number]] · [[sequence]] · [[stream]] · [[uuid]] · [[matrix]] · [[analog]]
 
-<sub>content-uuid `0d448381-a8c3-52e8-a11f-10b3f907e7d2` · account `quantum/digit` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `0bc71d86-6b01-57d9-895c-2fc823eaece2` · account `quantum/digit` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

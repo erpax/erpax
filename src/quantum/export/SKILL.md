@@ -1,41 +1,20 @@
 ---
 name: export
 description: "Use when reasoning about quantum computed export — each file's public facet (index.ts symbols, SKILL atom name) derived from source, content-addressed; the producer dual of quantum import."
-atomPath: quantum/export
-coordinate: quantum/export · 7/descent · df7e40f1
-contentUuid: "bc939934-990b-582c-b207-83d82468eedb"
-diamondUuid: "df26c949-b3cd-8ada-8f16-27e0a093a216"
-uuid: "df7e40f1-dbe2-8842-bdc2-8a5868426f93"
-horo: 7
-bonds:
-  in:
-    - law
-    - quantum
-  out:
-    - law
+atomPath: "quantum/export"
+coordinate: "quantum/export · 1/base · bee6db07"
+contentUuid: "459f267e-11c3-53c6-b8a0-84580416919d"
+diamondUuid: "7718c77f-3529-8302-b46a-ae964d96b094"
+uuid: "bee6db07-c9dc-8b64-9bda-aa897e2b807b"
+horo: 1
 typography:
   partition: quantum
   bondDegree: 12
-  neighbors:
-    - quantum/boundary
 standards:
   - "an atom's only public code-face is index.ts"
 bindings: []
-neighbors:
-  wikilink:
-    - boundary
-    - convention
-    - duality
-    - entanglement
-    - exported
-    - law
-    - tamper
-  matrix:
-    - law
-  backlinks:
-    - law
 signatures:
-  computationUuid: "fa2249da-2cf7-872a-ba86-da27e1c7dfb2"
+  computationUuid: "0aa435da-d4a9-8b41-bb56-12d671a06b5b"
   stages:
     - stage: path
       stageUuid: "dc07680b-0eb6-8c39-a896-fe69cdfa6db4"
@@ -46,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "be8902dc-f15e-8192-a350-3e69d8d83e2c"
     - stage: horo
-      stageUuid: "663c5aa1-f43d-846c-9580-db31104c5f14"
+      stageUuid: "6203ed2c-bfc3-8031-818d-262687b0c4b0"
     - stage: seal
       stageUuid: "3bf68295-0002-88a6-af26-a464f6020ba0"
     - stage: uuid
-      stageUuid: "806e941d-624f-8b19-ac81-3d6c09991e56"
+      stageUuid: "c030ffc6-07a7-819e-92be-b5fe08193f9d"
 quantum:
   superposition:
     - law
@@ -59,7 +38,7 @@ quantum:
   collapse:
     - "Use when reasoning about quantum computed export — each file's public facet (index.ts symbols, SKILL atom name) derived from source, content-addressed; the producer dual of quantum import."
     - "an atom's only public code-face is index.ts"
-    - export set = parseTsExports / skillExportName — computed live
+    - "export set = parseTsExports / skillExportName — computed live"
     - "quantum computed export — the public facet is algorithmically derived from source and content-addressed; every cross-atom symbol must be reachable from the atom's index barrel."
   seal:
     sandbox: false
@@ -68,8 +47,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "fa2249da-2cf7-872a-ba86-da27e1c7dfb2"
-    contentUuid: "bc939934-990b-582c-b207-83d82468eedb"
+    computationUuid: "0aa435da-d4a9-8b41-bb56-12d671a06b5b"
+    contentUuid: "459f267e-11c3-53c6-b8a0-84580416919d"
 version: 2
 ---
 # quantum/export — quantum **computed** export
@@ -87,4 +66,4 @@ Composes [[quantum/boundary]] · [[convention]]/exported · [[tamper]]/import ·
 @audit export set = parseTsExports / skillExportName — computed live
 @standard an atom's only public code-face is index.ts
 
-<sub>content-uuid `bc939934-990b-582c-b207-83d82468eedb` · account `quantum/export` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `459f267e-11c3-53c6-b8a0-84580416919d` · account `quantum/export` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -2,83 +2,19 @@
 name: total
 description: "Use when summing a dimension — line total, invoice total, account total, cumulative amount. A computed or captured aggregate; often read-only (computed from detail lines or GL balance). Carries amount + currency."
 atomPath: total
-coordinate: total · 1/base · 4f034740
-contentUuid: "5a6ded9f-8556-5592-b05f-8e9fb7e1e9cc"
-diamondUuid: "6bceb5be-19a0-87e4-b93b-7d1dc3d56d69"
-uuid: "4f034740-4642-853e-94bf-3757169822bf"
-horo: 1
-bonds:
-  in:
-    - amount
-    - bathrooms
-    - calculate
-    - currency
-    - due
-    - enrollment
-    - fields
-    - historical
-    - job
-    - measure
-    - openings
-    - price
-    - weight
-  out:
-    - amount
-    - bathrooms
-    - calculate
-    - currency
-    - due
-    - enrollment
-    - fields
-    - historical
-    - job
-    - measure
-    - openings
-    - price
-    - weight
+coordinate: "total · 5/round · 0c6146bb"
+contentUuid: "e8c8605a-445b-5191-a44b-d5ac51fa613f"
+diamondUuid: "771f07ef-a68b-8fcb-8002-7be2b7a7362c"
+uuid: "0c6146bb-073e-8920-9e5c-0c6c8d637f4a"
+horo: 5
 typography:
   partition: total
   bondDegree: 39
-  neighbors: []
-standards: []
+standards:
+  - "ISO-4217`"
 bindings: []
-neighbors:
-  wikilink:
-    - amount
-    - calculate
-    - currency
-    - fields
-    - measure
-  matrix:
-    - amount
-    - bathrooms
-    - calculate
-    - currency
-    - due
-    - enrollment
-    - fields
-    - historical
-    - job
-    - measure
-    - openings
-    - price
-    - weight
-  backlinks:
-    - amount
-    - bathrooms
-    - calculate
-    - currency
-    - due
-    - enrollment
-    - fields
-    - historical
-    - job
-    - measure
-    - openings
-    - price
-    - weight
 signatures:
-  computationUuid: "fcb69f9a-a775-813c-91ec-057d678bdf64"
+  computationUuid: "d79aacef-6a70-8088-a24b-29d71e195031"
   stages:
     - stage: path
       stageUuid: "d479f207-d9e1-8a56-89c1-808cfe9600c8"
@@ -89,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1d223002-1c91-8246-a8c4-5550d841b582"
     - stage: horo
-      stageUuid: "10be906d-8449-8dd3-a97c-b1c49ffde2cf"
+      stageUuid: "b27d4a2d-44f9-88b4-be1f-80992614143b"
     - stage: seal
-      stageUuid: "204dfe07-235e-8d2c-b450-870f875b7c6a"
+      stageUuid: "8e20ba61-e635-8474-af6f-f98d9d8d1a87"
     - stage: uuid
-      stageUuid: "4f067ff6-98fe-80f4-9191-fcf992d2e101"
+      stageUuid: "0927b0c9-3877-8ade-9de6-b193eba0f26e"
 version: 2
 ---
 # total

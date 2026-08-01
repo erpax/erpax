@@ -1,62 +1,26 @@
 ---
 name: plans
 description: "Use when defining or displaying the SaaS pricing-plan catalog — plan names, slugs, monthly/yearly prices, Stripe product/price IDs, feature-limit JSON, billing cycle, sort order. The super-admin-maintained plan catalog collection; public read, mutations locked to super-admin."
-atomPath: subscription/plans
-coordinate: subscription/plans · 5/round · b3e45b42
-contentUuid: "ad545797-1882-54a7-b4e7-23d6666c4954"
-diamondUuid: "ef63a50b-b7f4-82ea-8d24-4ae3220e4642"
-uuid: "b3e45b42-babb-8193-b6ed-2fe38fb6079b"
-horo: 5
-bonds:
-  in:
-    - access
-    - accounting
-    - commerce
-    - fields
-    - standard
-    - subscription
-    - subscriptions
-  out:
-    - access
-    - accounting
-    - commerce
-    - fields
-    - standard
-    - subscriptions
+atomPath: "subscription/plans"
+coordinate: "subscription/plans · 8/crest · d7c317a1"
+contentUuid: "7afe6668-98e7-5b82-b99c-82a5ccc96dd0"
+diamondUuid: "5edc5a6b-d27d-8f8f-b644-a0cf8234ff5b"
+uuid: "d7c317a1-e592-82c0-8cfa-64abb7ded06c"
+horo: 8
 typography:
   partition: subscription
   bondDegree: 0
-  neighbors: []
 standards:
   - "IFRS IFRS-15 revenue-from-contracts-with-customers performance-obligation"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "NIST-SP-800-38D"
   - "SOX §404 internal-controls"
   - "US-GAAP ASC-606 revenue-from-contracts-with-customers"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - accounting
-    - commerce
-    - fields
-    - standard
-  matrix:
-    - access
-    - accounting
-    - commerce
-    - fields
-    - standard
-    - subscriptions
-  backlinks:
-    - access
-    - accounting
-    - commerce
-    - fields
-    - standard
-    - subscriptions
 signatures:
-  computationUuid: "87be1520-64e6-8fbe-a1b4-2e7828493213"
+  computationUuid: "cbbafcc7-0f9b-8336-a697-ae45c2bafe0a"
   stages:
     - stage: path
       stageUuid: "0a27e08f-44d1-8b6a-8887-be59f488e5a5"
@@ -67,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "5eab1604-a334-87b4-b168-5eba49707068"
     - stage: horo
-      stageUuid: "f5bd273a-da46-8af7-9514-f97e52622cab"
+      stageUuid: "6995beaf-b2f3-8f95-a38a-9eebb8dff067"
     - stage: seal
       stageUuid: "0aeb1f21-7999-8ca0-b6de-4089d0261c27"
     - stage: uuid
-      stageUuid: "f519ba42-28a5-8897-b670-d6bed6b2fbf2"
+      stageUuid: "9b61d404-f041-8ead-bf78-1a3a0385a1e5"
 version: 2
 ---
 # subscription-plans

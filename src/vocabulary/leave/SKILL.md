@@ -1,68 +1,35 @@
 ---
 name: leave
 description: "Use when reasoning about leave as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/leave
-coordinate: leave · 2/share · a39326e2
-contentUuid: "f211cd8f-e38a-5afd-bc50-c1f595b0502c"
-diamondUuid: "f69f096b-c077-84fc-979e-e6b44b51cdeb"
-uuid: "a39326e2-138a-82ed-8f4f-3a2612574a6e"
-horo: 2
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/leave"
+coordinate: "vocabulary/leave · 1/base · 38b16622"
+contentUuid: "a6bb611b-5899-5c17-9f66-14fd0ce3a983"
+diamondUuid: "18b181c2-1357-8e59-b760-7df94cb9d89c"
+uuid: "38b16622-5b78-8b1b-afe8-f8924f193d76"
+horo: 1
 typography:
-  partition: leave
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "f998820c-4035-8178-a982-65a7574ab283"
+  computationUuid: "086af13f-776d-8861-aadc-18e57051f361"
   stages:
     - stage: path
-      stageUuid: "c4656b5b-0d86-88d8-b148-a7cdfb4e5e2c"
+      stageUuid: "aac45d2e-e2f1-899d-ae45-369cea9b2794"
     - stage: trinity
-      stageUuid: "0d8534aa-74ed-89a6-b0a3-d50fbf29e630"
+      stageUuid: "0363110a-77c4-8a07-8370-187b4e88821b"
     - stage: boundary
-      stageUuid: "5122e9ff-d914-8d27-8325-8c08815620e7"
+      stageUuid: "2be853ed-79a3-8350-b0b6-8f8ed43de844"
     - stage: links
-      stageUuid: "b9cc5a4a-aa4e-8d00-b4d6-5e6cedf40f06"
+      stageUuid: "ab8af46c-e786-88fa-99e0-4bc5001a43fb"
     - stage: horo
-      stageUuid: "37859be5-67ae-8ae1-8139-e9f4a1db4fff"
+      stageUuid: "62f221d9-b2a9-8503-905c-26d21864e1d8"
     - stage: seal
-      stageUuid: "d3c59621-209a-81f7-bc9d-436a65ae9e2b"
+      stageUuid: "4c6254d7-ff99-8eeb-b623-5fc0800d2b1c"
     - stage: uuid
-      stageUuid: "ed1beca2-63c9-892a-8228-9cbdef928e3f"
+      stageUuid: "3b906db0-bbeb-802c-874f-a37f73f395ff"
 version: 2
 ---
 # leave

@@ -2,40 +2,24 @@
 name: "16931"
 description: Use when implementing or referencing EN 16931 — Electronic invoicing (semantic data model).
 atomPath: "en/16931"
-coordinate: "en/16931 · 5/round · 782dd7cb"
-contentUuid: "a49c6cb3-a551-55a4-bdaf-45db77c736fa"
-diamondUuid: "a504efe7-2e4c-80bb-8cff-92fc95341a60"
-uuid: "782dd7cb-2644-8c85-85c2-41af9ab7124d"
+coordinate: "en/16931 · 5/round · 24a1bbb2"
+contentUuid: "8e613830-4334-53cd-b01f-baa95f73ddff"
+diamondUuid: "29cf17ea-da25-82b7-bee5-fd5728de3b84"
+uuid: "24a1bbb2-b92e-806d-ad79-fea6d597de27"
 horo: 5
-bonds:
-  in:
-    - law
-  out:
-    - law
 typography:
   partition: en
   bondDegree: 3
-  neighbors: []
 standards:
   - "COSO-ERM-2017"
   - "EN-16931"
   - "EN-16931:2017+A1:2019 semantic-model-electronic-invoice"
   - "EN-16931:2017` should grep to a single home that owns the types. Before this module, three places defined overlapping shapes:"
   - "EN-16931` citation greps to, so the invoice shape is defined once and referenced, never re-defined."
-  - "EU-2017/1132"
-  - "EU-2017/828"
-  - "ILO-C100"
   - "UN-CEFACT"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-  matrix:
-    - law
-  backlinks:
-    - law
 signatures:
-  computationUuid: "6772d029-a99b-85fa-b15d-77393fc1ad5f"
+  computationUuid: "7475942f-6b4e-810c-bf9e-fb8e31c1ab1b"
   stages:
     - stage: path
       stageUuid: "8db2dcf7-0c25-8170-89c7-57ffa1d5d653"
@@ -46,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "4b148aeb-8d93-8611-a060-2829b39b1f78"
     - stage: horo
-      stageUuid: "8050ea43-894c-8759-9607-280c748b0b1b"
+      stageUuid: "dcb68bc9-e5c2-819d-ba7f-20cf08abbac9"
     - stage: seal
       stageUuid: "294263d9-f017-84b6-b99d-14e20dccc2fc"
     - stage: uuid
-      stageUuid: "602f66c3-96d1-8411-8959-a373af2b9d90"
+      stageUuid: "2a468ab8-55c0-823c-a9f2-2c7fbd26fdd0"
 version: 2
 ---
 # EN 16931 — Electronic invoicing (semantic data model)

@@ -1,68 +1,35 @@
 ---
 name: deleted
 description: "Use when reasoning about deleted as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/deleted
-coordinate: deleted · 5/round · d47ca753
-contentUuid: "05d76c03-aa62-5b41-803e-e8ef60ea198f"
-diamondUuid: "7f277635-e379-8dfb-b999-0561fb6e6f08"
-uuid: "d47ca753-5daa-8dbf-8b11-e2f86c655f92"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - date
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - date
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/deleted"
+coordinate: "vocabulary/deleted · 1/base · 67de5049"
+contentUuid: "42ef948b-d1c4-5711-8009-95eba25e7dcf"
+diamondUuid: "f42ba1e9-361b-84de-98ac-5083fd1fadd9"
+uuid: "67de5049-48a8-83f4-8315-e537d5bf6710"
+horo: 1
 typography:
-  partition: deleted
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - date
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - date
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - date
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "28d749cc-63db-8dd2-878d-1c43f61d2b54"
+  computationUuid: "3943b4d9-c393-80c8-9619-ad697f4002c0"
   stages:
     - stage: path
-      stageUuid: "2d6cdd69-9810-8896-a0cb-f0e9c634e258"
+      stageUuid: "f1a2c386-e4c5-8c2d-81c6-b342f6930dce"
     - stage: trinity
-      stageUuid: "0be85574-dc60-89eb-b2b3-d55a47fdebe4"
+      stageUuid: "ea67de98-84fe-83a6-a18d-7bc27f59c7ee"
     - stage: boundary
-      stageUuid: "c0be6552-3739-8d59-961a-37b8650da97e"
+      stageUuid: "5e423c4a-96ae-8da8-9326-1115548bfc13"
     - stage: links
-      stageUuid: "2153f97c-f77f-8cb4-88c8-fbccfffc67cb"
+      stageUuid: "b26ac58f-c3f7-823b-a51a-8f1454f37166"
     - stage: horo
-      stageUuid: "257f8145-a952-85af-9efc-a6bc0317732b"
+      stageUuid: "2a16dc29-3ff6-8b89-ae1a-87664a23db67"
     - stage: seal
-      stageUuid: "757519c0-6c81-895e-b584-4430ff12a13c"
+      stageUuid: "5ca8ebc4-2e69-86ed-9709-f4527db256dc"
     - stage: uuid
-      stageUuid: "b60ee25d-05a7-8e91-8c71-67b686aadd11"
+      stageUuid: "79503d60-60bd-8ef8-8f27-b0273f60baf7"
 version: 2
 ---
 # deleted

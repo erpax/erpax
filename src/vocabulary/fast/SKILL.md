@@ -1,89 +1,35 @@
 ---
 name: fast
 description: "Use when reasoning about fast as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/fast
-coordinate: fast · 2/share · 95d7fa08
-contentUuid: "78cf83c6-829f-599a-b3f7-99fd7c6bc403"
-diamondUuid: "2d2fa861-8bd0-8c1f-8012-c7453349f831"
-uuid: "95d7fa08-788b-8ea5-8e7f-a83d28e7e46c"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - food
-    - islam
-    - jainism
-    - judaism
-    - law
-    - merge
-    - restaurant
-    - ritual
-    - sti
-  out:
-    - collapse
-    - food
-    - islam
-    - jainism
-    - judaism
-    - law
-    - merge
-    - restaurant
-    - ritual
-    - sti
+atomPath: "vocabulary/fast"
+coordinate: "vocabulary/fast · 4/weave · 22915484"
+contentUuid: "9d819877-b9ff-538b-9fb8-5bc28485e971"
+diamondUuid: "d8c067ec-f03c-890f-a65e-b97119d3bf0b"
+uuid: "22915484-18fe-8567-b717-7953af07968b"
+horo: 4
 typography:
-  partition: fast
+  partition: vocabulary
   bondDegree: 32
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - food
-    - law
-    - merge
-    - restaurant
-    - sti
-  matrix:
-    - collapse
-    - food
-    - islam
-    - jainism
-    - judaism
-    - law
-    - merge
-    - restaurant
-    - ritual
-    - sti
-  backlinks:
-    - collapse
-    - food
-    - islam
-    - jainism
-    - judaism
-    - law
-    - merge
-    - restaurant
-    - ritual
-    - sti
 signatures:
-  computationUuid: "97ec51b6-5ba1-8beb-8d6e-978dbc2a8c63"
+  computationUuid: "4156cdc7-2b96-80c3-af4e-6a097adf28aa"
   stages:
     - stage: path
-      stageUuid: "90f21269-4aad-80a3-ac59-68ba9d81ca86"
+      stageUuid: "d0fa67ed-b6c6-839b-8a59-bfa6ca050def"
     - stage: trinity
-      stageUuid: "b9439a1e-5f5f-8fd0-865c-406e8c16f099"
+      stageUuid: "157cec82-1a57-8a4f-9924-2a8e4bb33205"
     - stage: boundary
-      stageUuid: "01493c5a-d006-8402-88a1-7cc12646a835"
+      stageUuid: "64c9d8b4-2bdd-81fb-adc2-22272819d12f"
     - stage: links
-      stageUuid: "e3360804-42fb-8e06-91a0-12534384ad9c"
+      stageUuid: "013b44ca-9bd0-813e-8784-2368f6f8f35b"
     - stage: horo
-      stageUuid: "b6aea3c3-5c50-8c0e-a4ae-04e77ee408bd"
+      stageUuid: "6b1135fa-be4a-806d-9ce9-821ef80b5c99"
     - stage: seal
-      stageUuid: "3b9fad07-c3ee-8b02-a3e6-8873389abde2"
+      stageUuid: "603c5e8c-4255-8f9d-acb7-00a78b8b8596"
     - stage: uuid
-      stageUuid: "248cf5d9-2578-86bb-8a95-ca8c88b1fdae"
+      stageUuid: "18830f88-4eb9-8001-bde8-6eb852815c77"
 version: 2
 ---
 # fast

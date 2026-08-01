@@ -1,68 +1,35 @@
 ---
 name: authorize
 description: "Use when reasoning about authorize as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/authorize
-coordinate: authorize · 1/base · ff846603
-contentUuid: "774a4e4c-553d-5d39-a56b-95fd0bd06fda"
-diamondUuid: "c275391f-38c3-84e5-9431-65c88fd36d04"
-uuid: "ff846603-b908-8067-9c18-57dea948c8c8"
-horo: 1
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/authorize"
+coordinate: "vocabulary/authorize · 8/crest · e7d2c51c"
+contentUuid: "e0199675-e801-55e2-820e-c14da4721582"
+diamondUuid: "589cdbcf-7776-89c3-a590-d939e936f5eb"
+uuid: "e7d2c51c-87e6-8853-a6ed-820e0a9f9500"
+horo: 8
 typography:
-  partition: authorize
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "588c20a4-b452-8a4c-88e8-1c52ba843bd5"
+  computationUuid: "4982608a-6ce2-8ad8-8f87-d16ec81501e0"
   stages:
     - stage: path
-      stageUuid: "ad971739-1393-8b5e-a71b-b3c370df6217"
+      stageUuid: "3865092e-66b2-8663-a3d0-88633f598beb"
     - stage: trinity
-      stageUuid: "15af1919-4a10-877e-a6cc-cf09e1663b74"
+      stageUuid: "350aa7e7-b774-81a5-8c00-8c6af0f1e726"
     - stage: boundary
-      stageUuid: "4e97b502-cdfe-8a17-8816-09085c9a0c5d"
+      stageUuid: "3fdbbb84-21b4-8384-9282-c97f1198bd30"
     - stage: links
-      stageUuid: "94c757f3-9bfb-85a5-a708-fb43ef4274d5"
+      stageUuid: "18f567d7-58e4-8e05-9606-d794b32f1baa"
     - stage: horo
-      stageUuid: "47911edf-0ef9-8023-bb38-ace842476da9"
+      stageUuid: "6c7d03a6-0e41-8ed4-a23c-ebc8a2442d24"
     - stage: seal
-      stageUuid: "7f5ea834-411e-8735-93ef-30ff550efe1f"
+      stageUuid: "3ad185b5-72d3-8cda-ac5f-c1612c4bd029"
     - stage: uuid
-      stageUuid: "1989ef96-5a46-87fc-880f-caec5d491363"
+      stageUuid: "16c5f647-9945-8686-807d-7ba3cc0be286"
 version: 2
 ---
 # authorize

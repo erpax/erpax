@@ -1,73 +1,35 @@
 ---
 name: nl
 description: "Use when reasoning about nl as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/nl
-coordinate: nl · 2/share · 08014724
-contentUuid: "a916dec9-d950-5d96-86c8-cdf42366705e"
-diamondUuid: "9c74b9b8-01b2-8c03-820a-5164289744e8"
-uuid: "08014724-040f-8ece-9cc1-e22b538aeac5"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - nonprofit
-    - sti
-    - type
-  out:
-    - collapse
-    - law
-    - merge
-    - nonprofit
-    - sti
-    - type
+atomPath: "vocabulary/nl"
+coordinate: "vocabulary/nl · 5/round · 3cc8f15c"
+contentUuid: "50738f69-fb68-5e88-9fa3-c4b544cd16ab"
+diamondUuid: "f9f05920-6b66-8c9c-b4df-8b770c82c4ac"
+uuid: "3cc8f15c-aa32-8a4d-b0fb-18694b2b9c25"
+horo: 5
 typography:
-  partition: nl
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - nonprofit
-    - sti
-    - type
-  matrix:
-    - collapse
-    - law
-    - merge
-    - nonprofit
-    - sti
-    - type
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - nonprofit
-    - sti
-    - type
 signatures:
-  computationUuid: "2b1c18c1-42fe-851b-90d1-cb728399ade6"
+  computationUuid: "eea9420c-add9-8303-8085-db6a77d98519"
   stages:
     - stage: path
-      stageUuid: "482b7c83-7002-8ee8-bdb1-fcc3b15a118d"
+      stageUuid: "467a9bc1-a150-8a08-8f54-ff11743ac54a"
     - stage: trinity
-      stageUuid: "c804f2b9-6ce5-8a43-b502-73a1ca6bde29"
+      stageUuid: "825c54ec-e00d-832e-b464-8fc73791b89d"
     - stage: boundary
-      stageUuid: "197795b3-eed5-85b4-ac36-ea3671d05e74"
+      stageUuid: "e15a49dd-94c5-816c-8032-25680e73c9d1"
     - stage: links
-      stageUuid: "5986992e-f71f-8b10-a9e2-b4555aae8772"
+      stageUuid: "a2db8ce1-4f87-8693-bd65-1ba2938ce82a"
     - stage: horo
-      stageUuid: "2cf04b6f-9553-8358-9245-aea23db5cb53"
+      stageUuid: "3dab4395-77d1-8bc9-acce-cb74d2a3a94b"
     - stage: seal
-      stageUuid: "8fb0f3bf-1cad-82a2-b688-cdd916a06eed"
+      stageUuid: "a3da1b40-1b66-8adf-a405-26d6cdbc97ac"
     - stage: uuid
-      stageUuid: "3eaada6d-1b7d-8262-b13f-8796b014d81b"
+      stageUuid: "4d6ab01b-cfa7-834e-a5a7-3264fbc5f886"
 version: 2
 ---
 # nl

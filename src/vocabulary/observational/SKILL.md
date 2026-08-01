@@ -1,78 +1,35 @@
 ---
 name: observational
 description: "Use when reasoning about observational as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/observational
-coordinate: observational · 4/weave · 2a7694a0
-contentUuid: "b79ddb80-d646-51b9-a8fc-0143ec3e29ea"
-diamondUuid: "8fe45378-df90-8b83-b578-0d71755b3ed7"
-uuid: "2a7694a0-7393-85c2-88bc-92007d78376b"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - design
-    - law
-    - medical
-    - merge
-    - sti
-    - study
-  out:
-    - collapse
-    - design
-    - law
-    - medical
-    - merge
-    - sti
-    - study
+atomPath: "vocabulary/observational"
+coordinate: "vocabulary/observational · 8/crest · 70b9337d"
+contentUuid: "e0b5e369-a871-51f6-81f4-1edd61a88a10"
+diamondUuid: "2f67e6e5-88f8-89a1-9a33-1054b7229435"
+uuid: "70b9337d-938e-8bc9-8375-2ca16d606caf"
+horo: 8
 typography:
-  partition: observational
-  bondDegree: 23
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 24
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - design
-    - law
-    - medical
-    - merge
-    - sti
-    - study
-  matrix:
-    - collapse
-    - design
-    - law
-    - medical
-    - merge
-    - sti
-    - study
-  backlinks:
-    - collapse
-    - design
-    - law
-    - medical
-    - merge
-    - sti
-    - study
 signatures:
-  computationUuid: "16478a5d-6653-8bd1-8bd3-dfeb4cd3488b"
+  computationUuid: "839600a9-04be-8d2f-9b40-3602844ee6d0"
   stages:
     - stage: path
-      stageUuid: "13b028e6-3b3b-8941-b365-5b4d93a84b53"
+      stageUuid: "2a974c22-caa0-8356-8f6e-39bba7626c9f"
     - stage: trinity
-      stageUuid: "bf6eecf5-3a45-843f-876b-5f160e4053d6"
+      stageUuid: "dc73f18c-a036-849a-bca6-48af16d5f994"
     - stage: boundary
-      stageUuid: "7ebf620b-6647-8199-ada5-df8492a9cad1"
+      stageUuid: "098d9a6f-a95f-8eea-b373-6c166fb2528e"
     - stage: links
-      stageUuid: "637788c0-847a-8691-9577-ff309de4afc0"
+      stageUuid: "f734c821-bd59-8ebd-9bbe-3b5d47375f8c"
     - stage: horo
-      stageUuid: "42e26517-5dad-870e-bf11-06c43b3b56ac"
+      stageUuid: "37962f85-a6c1-8b63-b5e8-912b9a4b9721"
     - stage: seal
-      stageUuid: "8a03713e-39e8-8fc6-b6e0-e98fd885bd5f"
+      stageUuid: "b9b84278-024f-8977-bfb1-37a7930f06b5"
     - stage: uuid
-      stageUuid: "d6c2f601-4a9a-89eb-a2e6-7212cdeb48b7"
+      stageUuid: "50ecfc42-d1c4-8a97-933b-a3a9b99b216e"
 version: 2
 ---
 # observational

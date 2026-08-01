@@ -1,73 +1,35 @@
 ---
 name: buildings
 description: "Use when reasoning about buildings as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/buildings
-coordinate: buildings · 7/descent · 5fe7e81f
-contentUuid: "3776d92c-4146-5102-bed5-3748da823c2c"
-diamondUuid: "e211e724-509a-82bd-bf38-23398a09e717"
-uuid: "5fe7e81f-bb82-8cc2-b3f5-81b399e65bea"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - historical
-    - landmarks
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - historical
-    - landmarks
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/buildings"
+coordinate: "vocabulary/buildings · 2/share · 579cad96"
+contentUuid: "bf214928-e771-591c-a51f-7654c5fa1138"
+diamondUuid: "e0ce22d8-4f98-85c3-8664-4cd833956274"
+uuid: "579cad96-a0a3-814e-90e6-fa8097018108"
+horo: 2
 typography:
-  partition: buildings
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - historical
-    - landmarks
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - historical
-    - landmarks
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - historical
-    - landmarks
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "0a1d278c-6723-8668-ae3a-05e3280f0375"
+  computationUuid: "a7b24252-8717-841e-8753-22d0238ced5f"
   stages:
     - stage: path
-      stageUuid: "512d6d53-56a5-81b3-b899-d24e5fc1dac4"
+      stageUuid: "95cf61e3-f1eb-8201-a04e-f827fc865d51"
     - stage: trinity
-      stageUuid: "3e2e484c-6565-80e2-a81f-7106f8f3d4fd"
+      stageUuid: "098f6c24-268d-86ad-b428-fe9330ca7c35"
     - stage: boundary
-      stageUuid: "acce9a0f-95ce-8d2a-8363-baa712d8ca69"
+      stageUuid: "8c480cf3-9b1d-8aba-aafd-3dbad5fe8fa3"
     - stage: links
-      stageUuid: "0c48b9d0-8cc9-8c82-b02f-58a87799121e"
+      stageUuid: "08c990ff-920f-822a-83c1-362e3732d2f9"
     - stage: horo
-      stageUuid: "27eb79ba-1768-8e33-af89-c0796d78b124"
+      stageUuid: "794a8ca6-cda5-8d72-b9d3-176123cda1ec"
     - stage: seal
-      stageUuid: "a1834cfd-a15a-83ea-91d2-8aa3e9bec5e0"
+      stageUuid: "f0313da5-3d1b-83fd-a2ea-d047350b5e4c"
     - stage: uuid
-      stageUuid: "db38ce24-7433-8574-a61d-5f70dd849e5a"
+      stageUuid: "9b35291d-c82a-8923-b52b-afdadc2ef810"
 version: 2
 ---
 # buildings

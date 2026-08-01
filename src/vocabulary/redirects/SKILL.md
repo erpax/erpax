@@ -1,81 +1,34 @@
 ---
 name: redirects
-description: "Use when a moved/renamed URL must resolve to its new target (301/302) — the official @payloadcms/plugin-redirects `redirects` collection + the SSR PayloadRedirects resolver. Read before wiring URL redirection, or when a `'redirects'` slug is \\\"not assignable to CollectionSlug\\\" (the plugin isn't registered)."
-atomPath: vocabulary/redirects
-coordinate: redirects · 4/weave · 1cb57197
-contentUuid: "c839d566-70f7-510d-af80-0129ae21ed7d"
-diamondUuid: "187a4279-3b65-89b9-b961-1e1b2d87c635"
-uuid: "1cb57197-9490-8174-b278-c4af32b50e2e"
-horo: 4
-bonds:
-  in:
-    - api
-    - cache
-    - config
-    - identity
-    - plugins
-    - queries
-    - redirect
-    - search
-  out:
-    - api
-    - cache
-    - config
-    - identity
-    - plugins
-    - queries
-    - redirect
-    - search
+description: "Use when a moved/renamed URL must resolve to its new target (301/302) — the official @payloadcms/plugin-redirects `redirects` collection + the SSR PayloadRedirects resolver. Read before wiring URL redirection, or when a `'redirects'` slug is \\\\\\\"not assignable to CollectionSlug\\\\\\\" (the plugin isn't registered)."
+atomPath: "vocabulary/redirects"
+coordinate: "vocabulary/redirects · 5/round · ba07635b"
+contentUuid: "9e08030e-680f-57ff-bfd2-f51152db7d25"
+diamondUuid: "078101e3-b273-8b85-861f-e1d2ad817369"
+uuid: "ba07635b-9fd5-8b44-8b95-2a3a42d49aa1"
+horo: 5
 typography:
-  partition: redirects
+  partition: vocabulary
   bondDegree: 25
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - api
-    - cache
-    - config
-    - identity
-    - plugins
-    - queries
-    - search
-  matrix:
-    - api
-    - cache
-    - config
-    - identity
-    - plugins
-    - queries
-    - redirect
-    - search
-  backlinks:
-    - api
-    - cache
-    - config
-    - identity
-    - plugins
-    - queries
-    - redirect
-    - search
 signatures:
-  computationUuid: "95762a94-28ca-8cc3-a74c-6847ee6b4a32"
+  computationUuid: "0f50df82-b817-8227-9ccf-286467374883"
   stages:
     - stage: path
-      stageUuid: "41fe6026-a957-8ec8-b7a4-7b7b75dbe1a0"
+      stageUuid: "09dff122-1b3e-8a44-8ca0-5926ea8b5edb"
     - stage: trinity
-      stageUuid: "b92bd708-00f9-8947-a47c-3be771179003"
+      stageUuid: "baa58977-58bf-83e4-8371-c5acfe601238"
     - stage: boundary
-      stageUuid: "bf4e4a91-cd7c-8f13-a23d-97465852ceac"
+      stageUuid: "eee34137-9835-824d-a54a-dd787ce6f411"
     - stage: links
-      stageUuid: "cce13a6c-4d1b-85c3-a569-61ff3bf9b0e5"
+      stageUuid: "7bd96612-10ca-8583-986d-17d1356696c3"
     - stage: horo
-      stageUuid: "ec4e438c-a340-89c9-908c-026be10dab24"
+      stageUuid: "72cec1a6-cfce-8e23-8a6f-c79cd85e3b4e"
     - stage: seal
-      stageUuid: "53a6ccfe-d822-8611-b86b-e10fb31be4ee"
+      stageUuid: "c20b931c-5acc-81ee-a90f-4804dcb8acd4"
     - stage: uuid
-      stageUuid: "47b8bc40-005c-89f7-9851-b7cb72f832b9"
+      stageUuid: "986af6ca-02af-8e75-978b-66047f06e903"
 version: 2
 ---
 # redirects — URL moved-permanently/found (RFC 9110 §15.4), an official plugin

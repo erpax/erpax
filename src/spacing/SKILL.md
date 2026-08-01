@@ -2,88 +2,18 @@
 name: spacing
 description: "Use when plant geometry sets density and yield — in-row × between-row spacing and rows-per-bed determine plants per area (plants/acre = rows ÷ in-row-spacing ÷ bed-center × 43,560), which sets seed/transplant counts and, with per-plant yield, total yield. Tighter is not linearly more: beyond an optimum, plants compete and per-plant size falls."
 atomPath: spacing
-coordinate: spacing · 7/descent · b37a5175
-contentUuid: "121b55d8-d0dd-5819-a8e9-e754740a3207"
-diamondUuid: "0b6edd47-6d64-8ad1-8c62-b84492eefb9e"
-uuid: "b37a5175-b00e-8f53-86a4-209761171f6b"
-horo: 7
-bonds:
-  in:
-    - agriculture
-    - bottleneck
-    - crop
-    - cultivation
-    - law
-    - measure
-    - perennial
-    - planting
-    - propagation
-    - rootstock
-    - seed
-    - transplant
-    - yield
-  out:
-    - agriculture
-    - bottleneck
-    - crop
-    - cultivation
-    - law
-    - measure
-    - perennial
-    - planting
-    - propagation
-    - rootstock
-    - seed
-    - transplant
-    - yield
+coordinate: "spacing · 8/crest · 2271825f"
+contentUuid: "3d082005-05c2-569e-862c-c02dd23b45ea"
+diamondUuid: "594822b8-18d7-80d0-b52f-34d7d874592c"
+uuid: "2271825f-3a0f-81ec-a7a3-e028fe83fde5"
+horo: 8
 typography:
   partition: spacing
   bondDegree: 42
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - bottleneck
-    - crop
-    - cultivation
-    - law
-    - measure
-    - planting
-    - seed
-    - transplant
-    - yield
-  matrix:
-    - agriculture
-    - bottleneck
-    - crop
-    - cultivation
-    - law
-    - measure
-    - perennial
-    - planting
-    - propagation
-    - rootstock
-    - seed
-    - transplant
-    - yield
-  backlinks:
-    - agriculture
-    - bottleneck
-    - crop
-    - cultivation
-    - law
-    - measure
-    - perennial
-    - planting
-    - propagation
-    - rootstock
-    - seed
-    - transplant
-    - yield
 signatures:
-  computationUuid: "a5aaac69-733a-8c54-9f99-4c9c133ac7f6"
+  computationUuid: "39f65bab-abda-85ec-9bac-77178c2a713c"
   stages:
     - stage: path
       stageUuid: "9107f483-3d39-8418-9cd7-12b9c7d9a6db"
@@ -94,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7bdeba80-0814-8baa-abd5-0f3149453108"
     - stage: horo
-      stageUuid: "96fe4799-61fc-85f9-ae2c-13ef70e88088"
+      stageUuid: "c7f6017c-141d-88a8-8307-08403fcf4540"
     - stage: seal
-      stageUuid: "a9f67add-d132-8784-9aa8-e59000067d2f"
+      stageUuid: "2ec627dd-5e83-8c1f-bccc-2b796fefade1"
     - stage: uuid
-      stageUuid: "36ccfec8-8823-8cc4-92fa-1de199dc624e"
+      stageUuid: "2ffb0262-cf28-8eac-960e-101dacd16860"
 version: 2
 ---
 # spacing — plant geometry that sets density and yield

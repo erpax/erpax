@@ -1,68 +1,35 @@
 ---
 name: gas
 description: "Use when reasoning about gas as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/gas
-coordinate: gas · 8/crest · 26fd4a74
-contentUuid: "55c36ff2-81f8-5f51-b4e8-6a45c55ac18d"
-diamondUuid: "612d5634-c9d2-87fb-aa11-c6724ffa1813"
-uuid: "26fd4a74-88ca-80bc-af81-515518ab58cb"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - station
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - station
-    - sti
+atomPath: "vocabulary/gas"
+coordinate: "vocabulary/gas · 7/descent · d9add839"
+contentUuid: "82376c6e-6719-56a6-b0f9-4df8925d2f4e"
+diamondUuid: "89b91431-2ea8-89a4-a13e-c514f124f694"
+uuid: "d9add839-d71a-8d09-98a5-45ffcaabf91b"
+horo: 7
 typography:
-  partition: gas
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - station
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - station
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - station
-    - sti
 signatures:
-  computationUuid: "43b6956a-cf1b-8cc8-80bd-b44ce7fd8508"
+  computationUuid: "d3ea1d2d-7e97-8d4e-b5f6-641b3dd85585"
   stages:
     - stage: path
-      stageUuid: "5d62b7f8-944d-8c16-aa50-cc92c91b3797"
+      stageUuid: "826867d4-d321-8d87-ab87-9e611bb2118a"
     - stage: trinity
-      stageUuid: "5d17ed4f-5af8-8dbc-a61c-aebffe2a4c69"
+      stageUuid: "ba78b92a-4fdd-83c1-a103-a0a0d737407d"
     - stage: boundary
-      stageUuid: "30484c88-a42d-81f7-b389-3ab62d8adcb3"
+      stageUuid: "dcaedd25-5c55-8535-8dff-c450a56e4096"
     - stage: links
-      stageUuid: "bfc50f2b-7f0a-8bab-a4a1-3e3e3c0afecb"
+      stageUuid: "d55083ab-eb36-83bc-adb1-2ee33a7d6f88"
     - stage: horo
-      stageUuid: "74126c36-f9b8-8dc9-b42f-8b0534f853ce"
+      stageUuid: "e3863b7f-2fb0-8110-b2ad-053fcd759349"
     - stage: seal
-      stageUuid: "e376bd73-3350-838a-88a4-661f2e8aba4a"
+      stageUuid: "3a55870d-1d77-8bc6-a2d9-f7333c6024f3"
     - stage: uuid
-      stageUuid: "2e07890f-cba6-867b-a1b2-1c14348e8e3a"
+      stageUuid: "e6bdbcdb-1928-8f8c-b311-ee5e80ebbf4a"
 version: 2
 ---
 # gas

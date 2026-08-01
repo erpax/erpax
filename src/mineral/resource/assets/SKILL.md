@@ -2,85 +2,14 @@
 name: assets
 description: "Use when registering or reporting IFRS 6 exploration & evaluation assets — wells, mines, concessions, quarries — capitalised under the §8 cost or revaluation policy, reclassified to PPE/intangibles once commercial viability is demonstrated (§17), or impaired (§18–22). The IFRS 6 E&E asset register."
 atomPath: "mineral/resource/assets"
-coordinate: "mineral/resource/assets · 7/descent · 4c480fa1"
-contentUuid: "01c5be81-8a85-5ae2-951d-5b2c461091ae"
-diamondUuid: "19fb5cc9-5564-817c-bc55-fb82a472c5ab"
-uuid: "4c480fa1-8b72-8673-b225-24a1f6c89630"
-horo: 7
-bonds:
-  in:
-    - access
-    - accounting
-    - agriculture
-    - animal
-    - apiculture
-    - aquaculture
-    - asset
-    - balance
-    - biomass
-    - breed
-    - collections
-    - crop
-    - entries
-    - fertility
-    - fields
-    - forestry
-    - fractal
-    - graft
-    - harvest
-    - herd
-    - hooks
-    - identity
-    - impairment
-    - lactation
-    - law
-    - livestock
-    - measurements
-    - merge
-    - mortality
-    - perennial
-    - postharvest
-    - resource
-    - rootstock
-    - soil
-  out:
-    - access
-    - accounting
-    - agriculture
-    - animal
-    - apiculture
-    - aquaculture
-    - asset
-    - balance
-    - biomass
-    - breed
-    - collections
-    - crop
-    - entries
-    - fertility
-    - fields
-    - forestry
-    - fractal
-    - graft
-    - harvest
-    - herd
-    - hooks
-    - identity
-    - impairment
-    - lactation
-    - law
-    - livestock
-    - measurements
-    - merge
-    - mortality
-    - perennial
-    - postharvest
-    - rootstock
-    - soil
+coordinate: "mineral/resource/assets · 8/crest · ad5f5ccb"
+contentUuid: "ad0a19a8-0d6c-5f43-abd1-9c29095dfe1b"
+diamondUuid: "c8107ab4-cde9-8992-85ca-f7b521169666"
+uuid: "ad5f5ccb-09cd-843d-a965-98e146a4cfbd"
+horo: 8
 typography:
   partition: mineral
-  bondDegree: 120
-  neighbors: []
+  bondDegree: 96
 standards:
   - "IFRS IFRS-6 §17 reclassification-to-PPE-or-intangibles"
   - "IFRS IFRS-6 §17 reclassification-to-PPE-or-intangibles`"
@@ -100,84 +29,8 @@ standards:
   - "SOX §404 internal-controls"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - assets
-    - collections
-    - fields
-    - hooks
-    - standard
-  matrix:
-    - access
-    - accounting
-    - agriculture
-    - animal
-    - apiculture
-    - aquaculture
-    - asset
-    - balance
-    - biomass
-    - breed
-    - collections
-    - crop
-    - entries
-    - fertility
-    - fields
-    - forestry
-    - fractal
-    - graft
-    - harvest
-    - herd
-    - hooks
-    - identity
-    - impairment
-    - lactation
-    - law
-    - livestock
-    - measurements
-    - merge
-    - mortality
-    - perennial
-    - postharvest
-    - rootstock
-    - soil
-  backlinks:
-    - access
-    - accounting
-    - agriculture
-    - animal
-    - apiculture
-    - aquaculture
-    - asset
-    - balance
-    - biomass
-    - breed
-    - collections
-    - crop
-    - entries
-    - fertility
-    - fields
-    - forestry
-    - fractal
-    - graft
-    - harvest
-    - herd
-    - hooks
-    - identity
-    - impairment
-    - lactation
-    - law
-    - livestock
-    - measurements
-    - merge
-    - mortality
-    - perennial
-    - postharvest
-    - rootstock
-    - soil
 signatures:
-  computationUuid: "2d46b6e2-99b1-8f44-849e-32fb51ad5668"
+  computationUuid: "91a9a88f-9981-88f7-98d8-5baf7177e9e9"
   stages:
     - stage: path
       stageUuid: "fd5c6279-1e92-8804-8300-95d37940c381"
@@ -188,11 +41,11 @@ signatures:
     - stage: links
       stageUuid: "fffd72cd-8318-8d44-8d42-b7c16851668d"
     - stage: horo
-      stageUuid: "1e67edd6-a560-80fc-b71a-f8d2314dad0d"
+      stageUuid: "1cfcf64f-8232-82f9-a203-4bd43f4734dc"
     - stage: seal
       stageUuid: "6a0cfa3f-f8bf-8463-a8ec-932b13f644cd"
     - stage: uuid
-      stageUuid: "904127d7-9a34-8004-9b35-2709b6c57815"
+      stageUuid: "7442cbdb-fd8b-8c32-8a8f-15582a56bf95"
 version: 2
 ---
 # mineral-resource-assets

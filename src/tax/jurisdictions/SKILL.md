@@ -1,52 +1,33 @@
 ---
 name: jurisdictions
 description: "Use when setting up or querying tax authority master data — jurisdiction code, country/region/level (national to supranational), VAT registration number and dates, filing frequency and due day, filing currency. The per-tenant tax-authority master collection referenced by tax codes, calculations and returns."
-atomPath: tax/jurisdictions
-coordinate: tax/jurisdictions · 7/descent · 954307b7
-contentUuid: "dcbd83ae-743e-54cf-ab69-a4a272405ab5"
-diamondUuid: "a58ffda7-0994-84eb-9206-dbba0514332a"
-uuid: "954307b7-c273-8726-8f98-9fc70c89015f"
-horo: 7
-bonds:
-  in:
-    - codes
-    - items
-    - returns
-    - tax
-  out:
-    - codes
-    - items
-    - returns
+atomPath: "tax/jurisdictions"
+coordinate: "tax/jurisdictions · 5/round · cf5e5de9"
+contentUuid: "5aedc356-f621-51c5-bc73-dffaf408dd94"
+diamondUuid: "68ef83cf-04d8-80ee-9fcb-f22dd4b8d73f"
+uuid: "cf5e5de9-5226-80bb-b286-965db82ce8e8"
+horo: 5
 typography:
   partition: tax
   bondDegree: 0
-  neighbors: []
 standards:
   - "EN-16931:2017 §BG-23 vat-breakdown"
+  - "EN-16931:2017 §BG-23 vat-breakdown`"
   - "IAS-12"
   - "ISO-3166-1:2020 country-codes alpha-2"
+  - "ISO-3166-1:2020 country-codes alpha-2`"
   - "ISO-3166-2"
   - "ISO-3166-2:2020 subdivision-codes"
+  - "ISO-3166-2:2020 subdivision-codes`"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "OECD SAF-T jurisdiction-codes"
   - "UN-CEFACT"
   - "US-GAAP"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - codes
-    - items
-    - returns
-  matrix:
-    - codes
-    - items
-    - returns
-  backlinks:
-    - codes
-    - items
-    - returns
 signatures:
-  computationUuid: "c5e8dec2-7d37-8788-865d-20233caa97f3"
+  computationUuid: "49782376-bb5c-8ec3-9b5a-f548e7b0dff0"
   stages:
     - stage: path
       stageUuid: "615009fd-1ff2-8e0a-9667-4ad384c694d1"
@@ -57,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "c218d658-a066-8666-94d4-c1211cf9f4bb"
     - stage: horo
-      stageUuid: "b5eb5a2e-99f4-8c2d-b31e-4a3e881ce887"
+      stageUuid: "2fef9632-da7a-8d53-9da1-bcfe47af06a4"
     - stage: seal
       stageUuid: "e1378cf1-3619-8dcd-9f58-dcc58f540d56"
     - stage: uuid
-      stageUuid: "51c89823-3751-8c67-9401-6b53aeef7440"
+      stageUuid: "12570d9b-d9ab-86ef-8402-da2eb9170200"
 version: 2
 ---
 # tax-jurisdictions

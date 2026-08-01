@@ -2,84 +2,18 @@
 name: tunnel
 description: "Use when a structure or cover extends the growing season — the family from floating row cover → low tunnel → caterpillar tunnel → high tunnel/hoophouse → greenhouse, scaled by size, that buffers frost and adds weeks at each end of the season. Season extension as built capacity; the structure that widens the climate window land×season otherwise caps."
 atomPath: tunnel
-coordinate: tunnel · 7/descent · a134e5ba
-contentUuid: "5ecb257d-e37e-554a-b54a-bc7e87ae3b41"
-diamondUuid: "f20d235a-dcb5-8988-b429-54b20c28a5d3"
-uuid: "a134e5ba-b4dd-8881-9717-ab29f152e336"
-horo: 7
-bonds:
-  in:
-    - agriculture
-    - bottleneck
-    - capacity
-    - cost
-    - frost
-    - hardiness
-    - harvest
-    - maturity
-    - pollination
-    - propagation
-    - season
-    - trellis
-  out:
-    - agriculture
-    - bottleneck
-    - capacity
-    - cost
-    - frost
-    - hardiness
-    - harvest
-    - maturity
-    - pollination
-    - propagation
-    - season
-    - trellis
+coordinate: "tunnel · 5/round · 6c317267"
+contentUuid: "90d8499b-7762-53da-958f-528856cb3914"
+diamondUuid: "01adc7e3-ca78-8d7f-b127-13f62c824769"
+uuid: "6c317267-9442-8109-b614-8f9974d8c76e"
+horo: 5
 typography:
   partition: tunnel
   bondDegree: 39
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - bottleneck
-    - capacity
-    - cost
-    - frost
-    - hardiness
-    - harvest
-    - maturity
-    - propagation
-    - season
-  matrix:
-    - agriculture
-    - bottleneck
-    - capacity
-    - cost
-    - frost
-    - hardiness
-    - harvest
-    - maturity
-    - pollination
-    - propagation
-    - season
-    - trellis
-  backlinks:
-    - agriculture
-    - bottleneck
-    - capacity
-    - cost
-    - frost
-    - hardiness
-    - harvest
-    - maturity
-    - pollination
-    - propagation
-    - season
-    - trellis
 signatures:
-  computationUuid: "f40c98c4-0a7e-8b1c-b3ee-085513f2971e"
+  computationUuid: "ab00c28d-a8f0-8a6b-b180-861ce6f1a47c"
   stages:
     - stage: path
       stageUuid: "d575e056-2168-83cd-81b5-a1bbffcec1a5"
@@ -90,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "620d7655-5fce-84a5-8ca4-59bfb5620570"
     - stage: horo
-      stageUuid: "e8714ece-899e-8efd-a738-f2f0443c958c"
+      stageUuid: "a2043407-7686-88f4-b654-63e84dedd5b5"
     - stage: seal
-      stageUuid: "03946c1e-ef1c-8362-87dc-27bc46423c2c"
+      stageUuid: "ea973962-bcc9-8aca-b1ee-799f20c6963d"
     - stage: uuid
-      stageUuid: "15e8e333-853e-8950-a825-b7efaffe620c"
+      stageUuid: "421507c5-d7a0-85a1-97bc-23ae86d37d38"
 version: 2
 ---
 # tunnel — the structure that extends the season

@@ -2,102 +2,18 @@
 name: topography
 description: "Use when mapping the shape of the corpus and rendering it as text — topography reads the terrain (gravity wells, link ridges, the aura field) and auto-generates prose from the quantum streams (uuid, digit, realtime event flows), so the map writes itself from the territory's own streams."
 atomPath: topography
-coordinate: topography · 1/base · fbe5a0c6
-contentUuid: "5dfa6831-f700-5cdf-b336-c8c0f2ace4b0"
-diamondUuid: "f41ed9b4-ed46-8a8f-bb71-ff5cc7bd6e00"
-uuid: "fbe5a0c6-0eff-8e6d-aaca-f3bb37009821"
-horo: 1
-bonds:
-  in:
-    - aura
-    - digit
-    - generate
-    - generator
-    - gravity
-    - links
-    - mass
-    - matrix
-    - message
-    - realtime
-    - standards
-    - translation
-    - trinity
-    - uuid
-    - word
-  out:
-    - aura
-    - digit
-    - generate
-    - generator
-    - gravity
-    - links
-    - mass
-    - matrix
-    - message
-    - realtime
-    - standards
-    - translation
-    - trinity
-    - uuid
-    - word
+coordinate: "topography · 5/round · 51797c10"
+contentUuid: "f7d7847b-f213-549e-a690-4b155061e75b"
+diamondUuid: "a8c686e4-7ff5-8d47-9eba-f0e887156e62"
+uuid: "51797c10-6acc-87fc-9bc8-fb98be35c4cd"
+horo: 5
 typography:
   partition: topography
   bondDegree: 46
-  neighbors:
-    - aura
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - aura
-    - digit
-    - generate
-    - generator
-    - gravity
-    - links
-    - mass
-    - matrix
-    - message
-    - realtime
-    - standards
-    - translation
-    - trinity
-    - uuid
-    - word
-  matrix:
-    - aura
-    - digit
-    - generate
-    - generator
-    - gravity
-    - links
-    - mass
-    - matrix
-    - message
-    - realtime
-    - standards
-    - translation
-    - trinity
-    - uuid
-    - word
-  backlinks:
-    - aura
-    - digit
-    - generate
-    - generator
-    - gravity
-    - links
-    - mass
-    - matrix
-    - message
-    - realtime
-    - standards
-    - translation
-    - trinity
-    - uuid
-    - word
 signatures:
-  computationUuid: "9f20b900-d018-81a6-a550-e1dedfdfe7ec"
+  computationUuid: "7aec3d1a-7fa1-8019-8467-1bca1400a677"
   stages:
     - stage: path
       stageUuid: "c0f30ead-c26c-87cc-95bf-763c9cd8c522"
@@ -108,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "47a3efa4-ba2e-8eb5-bb1b-f31a4add5676"
     - stage: horo
-      stageUuid: "f767224c-9590-8972-a1eb-69ecfae434cf"
+      stageUuid: "6f84a73c-8087-82ca-a035-006cb628e5cd"
     - stage: seal
-      stageUuid: "8e3eb37c-714d-8e78-a53d-d5683bcf9a4d"
+      stageUuid: "93bf8f19-061c-805e-b5c1-5647270bbf4c"
     - stage: uuid
-      stageUuid: "6ec0be95-4082-8a11-a474-c1d10c724210"
+      stageUuid: "343925ee-0c21-8cea-a44e-1136cd8845ae"
 version: 2
 ---
 # topography — the corpus maps and narrates itself

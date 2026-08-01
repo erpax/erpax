@@ -2,77 +2,20 @@
 name: feature
 description: "Use when reasoning about feature as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: feature
-coordinate: "feature · 8/crest · e5199af1"
-contentUuid: "da22f8d7-2faf-5112-8635-6839e2054e76"
-diamondUuid: "a4a6a219-01cb-8fe3-a962-04059cbd70f1"
-uuid: "e5199af1-40d4-821a-9ff6-0d1452e8f258"
-horo: 8
-bonds:
-  in:
-    - accessibility
-    - amenity
-    - collapse
-    - law
-    - list
-    - location
-    - merge
-    - specification
-    - sti
-    - wave
-  out:
-    - accessibility
-    - amenity
-    - collapse
-    - law
-    - list
-    - location
-    - merge
-    - specification
-    - sti
-    - wave
+coordinate: "feature · 5/round · 979c85a2"
+contentUuid: "6ae7f779-0625-545d-a476-52f2a89519e6"
+diamondUuid: "768d16a6-96b9-811a-9358-780b759f1da3"
+uuid: "979c85a2-4997-835a-9c12-26321b021b44"
+horo: 5
 typography:
   partition: feature
   bondDegree: 0
-  neighbors: []
 standards:
   - "NIST-INCITS-359-2012"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - accessibility
-    - amenity
-    - collapse
-    - law
-    - list
-    - location
-    - merge
-    - specification
-    - sti
-  matrix:
-    - accessibility
-    - amenity
-    - collapse
-    - law
-    - list
-    - location
-    - merge
-    - specification
-    - sti
-    - wave
-  backlinks:
-    - accessibility
-    - amenity
-    - collapse
-    - law
-    - list
-    - location
-    - merge
-    - specification
-    - sti
-    - wave
 signatures:
-  computationUuid: "c769ff22-8c0d-87b1-adf6-a27cf8b21503"
+  computationUuid: "d119bfaa-e756-82c3-9d8f-6d24b4d8a904"
   stages:
     - stage: path
       stageUuid: "e5533c3e-aa27-8730-a690-c10fbb1f212f"
@@ -83,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "2b26e0bf-a286-8b8e-844f-096498589b30"
     - stage: horo
-      stageUuid: "d6f6962e-bac1-8ee3-a6dd-795507369125"
+      stageUuid: "9b31478d-ea34-85d1-8ee1-fd3db724f01e"
     - stage: seal
       stageUuid: "a6eb43e2-6c66-809e-b41d-6d1d99b51033"
     - stage: uuid
-      stageUuid: "afd430dd-3785-87bf-aeb3-3ac32de1defc"
+      stageUuid: "39169616-5833-8c03-92a5-0c672347bdb4"
 version: 2
 ---
 # feature

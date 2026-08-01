@@ -1,131 +1,34 @@
 ---
 name: herd
 description: "Use when a managed group of animals is the unit of aggregation — the herd (cattle/swine), flock (sheep/poultry), drove or mob; one production and accounting unit holding many animals. The livestock twin of lots/cohort: animals grouped, moved, grazed, and measured together."
-atomPath: vocabulary/herd
-coordinate: herd · 7/descent · 1b458d0b
-contentUuid: "8683f80a-dc28-5516-ad7f-05ef95dd3733"
-diamondUuid: "ecdd18f2-e849-8518-bb54-04141c085917"
-uuid: "1b458d0b-8beb-8830-a831-cbc2858862d7"
+atomPath: "vocabulary/herd"
+coordinate: "vocabulary/herd · 7/descent · 36861297"
+contentUuid: "2bcb163b-fe41-5fca-9545-bc6230fd31b5"
+diamondUuid: "4b271409-a0d4-8314-8012-bbfbb3298ec8"
+uuid: "36861297-a947-8526-bfe4-e007518a2360"
 horo: 7
-bonds:
-  in:
-    - animal
-    - assets
-    - biomass
-    - breed
-    - capacity
-    - cohort
-    - fodder
-    - grazing
-    - law
-    - livestock
-    - lots
-    - measure
-    - mortality
-    - part
-    - pasture
-    - rotation
-    - whole
-    - yield
-  out:
-    - animal
-    - assets
-    - biomass
-    - breed
-    - capacity
-    - cohort
-    - fodder
-    - grazing
-    - law
-    - livestock
-    - lots
-    - measure
-    - mortality
-    - part
-    - pasture
-    - rotation
-    - whole
-    - yield
 typography:
-  partition: herd
-  bondDegree: 59
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 57
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - animal
-    - assets
-    - breed
-    - capacity
-    - cohort
-    - fodder
-    - grazing
-    - law
-    - livestock
-    - lots
-    - measure
-    - mortality
-    - part
-    - pasture
-    - rotation
-    - whole
-    - yield
-  matrix:
-    - animal
-    - assets
-    - biomass
-    - breed
-    - capacity
-    - cohort
-    - fodder
-    - grazing
-    - law
-    - livestock
-    - lots
-    - measure
-    - mortality
-    - part
-    - pasture
-    - rotation
-    - whole
-    - yield
-  backlinks:
-    - animal
-    - assets
-    - biomass
-    - breed
-    - capacity
-    - cohort
-    - fodder
-    - grazing
-    - law
-    - livestock
-    - lots
-    - measure
-    - mortality
-    - part
-    - pasture
-    - rotation
-    - whole
-    - yield
 signatures:
-  computationUuid: "c3e7957f-0660-8d50-bf9e-15a1bc2ccbce"
+  computationUuid: "b352f6ef-835e-81ef-bb50-a7d1dfe20127"
   stages:
     - stage: path
-      stageUuid: "cb78687f-1f03-81af-a9e5-825b9cf5279f"
+      stageUuid: "c0f4fc0f-201f-85eb-a459-a531ab6b9960"
     - stage: trinity
-      stageUuid: "10a822f5-a069-8eea-abf9-567de497284f"
+      stageUuid: "447c4c7d-bf7c-8fbb-bdd0-3ca72040680d"
     - stage: boundary
-      stageUuid: "a7dafd37-60f1-8244-8adc-013ea04f69bc"
+      stageUuid: "44382b55-f98f-8dba-966e-5b9c0d67be63"
     - stage: links
-      stageUuid: "be40e1d2-08fb-898f-baaa-eccf6079c35d"
+      stageUuid: "084026f7-0447-8259-8098-ed179cc4883a"
     - stage: horo
-      stageUuid: "2fe07171-179c-8ac1-ad82-e3543a82cc51"
+      stageUuid: "01a578a2-bbf7-85fd-9449-5d14b9c3d5cd"
     - stage: seal
-      stageUuid: "13751ec7-360f-8f7c-9bb0-78ddd65081ee"
+      stageUuid: "91d45eb3-32a2-84f1-8f18-ae49ed8a44a5"
     - stage: uuid
-      stageUuid: "d775f60c-27f4-8edb-a206-312fab5c4c23"
+      stageUuid: "24bbb431-93b3-839b-a849-08fa492a7e41"
 version: 2
 ---
 # herd — the managed animal group; the livestock unit of aggregation

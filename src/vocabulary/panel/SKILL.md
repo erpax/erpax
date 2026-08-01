@@ -1,73 +1,35 @@
 ---
 name: panel
 description: "Use when reasoning about panel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/panel
-coordinate: panel · 1/base · 3cb52cd4
-contentUuid: "bb3669d2-e7cb-56cb-9484-69b1f999b15f"
-diamondUuid: "6a9209de-675e-8e8d-b16e-3238d39596ec"
-uuid: "3cb52cd4-b3f6-86b4-b6cf-195ddd7b52b1"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - medical
-    - merge
-    - sti
-    - test
-  out:
-    - collapse
-    - law
-    - medical
-    - merge
-    - sti
-    - test
+atomPath: "vocabulary/panel"
+coordinate: "vocabulary/panel · 5/round · d743b8aa"
+contentUuid: "1e491c0a-1847-5776-864f-d45c4bd88d9b"
+diamondUuid: "3098c199-e2ec-85e8-bdc8-155acf6c7dcd"
+uuid: "d743b8aa-8e49-8ae9-a204-df81710c411f"
+horo: 5
 typography:
-  partition: panel
-  bondDegree: 20
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 23
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - medical
-    - merge
-    - sti
-    - test
-  matrix:
-    - collapse
-    - law
-    - medical
-    - merge
-    - sti
-    - test
-  backlinks:
-    - collapse
-    - law
-    - medical
-    - merge
-    - sti
-    - test
 signatures:
-  computationUuid: "36131bc8-0d21-8874-8243-8d36b4aa8e7b"
+  computationUuid: "a09b5c12-dffc-88de-818d-a3c51639b6d0"
   stages:
     - stage: path
-      stageUuid: "23171b81-7a62-8dc7-b1e2-89b4507afb9d"
+      stageUuid: "2b5fa2c1-62d4-8a91-a561-cae0bf8aeaff"
     - stage: trinity
-      stageUuid: "16730af8-0557-803c-ad2e-3b61a0279eeb"
+      stageUuid: "42cf4ee0-0d2e-87e0-8a5d-81f27748b583"
     - stage: boundary
-      stageUuid: "ecd50fae-52f4-8da3-be93-eeed2211dd0c"
+      stageUuid: "49161582-f7c2-80c1-9819-61730d41e852"
     - stage: links
-      stageUuid: "412737d0-92e0-882b-8d8d-f354301a29be"
+      stageUuid: "224082b7-b66b-87fa-97fe-c12f966fcc77"
     - stage: horo
-      stageUuid: "5329af43-8c84-8a1a-aa4b-4d9b3dcf8692"
+      stageUuid: "ce8211e8-115c-85f2-aa5a-5691e18ab840"
     - stage: seal
-      stageUuid: "d966c110-a02b-8bd9-a701-e3f31450e72e"
+      stageUuid: "cda29e02-bf72-86be-bc3a-629a2cbd0937"
     - stage: uuid
-      stageUuid: "bf5bd1c2-056d-88de-99cf-dcf54579e3bb"
+      stageUuid: "b21e1f98-68e8-82ae-9536-019375b29ead"
 version: 2
 ---
 # panel

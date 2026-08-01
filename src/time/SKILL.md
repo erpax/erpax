@@ -2,213 +2,18 @@
 name: time
 description: "Use when tracking hours/minutes — labor hours, shift duration, production runtime per unit, throughput per time unit. A duration (number + time unit HUR/H87 code) or clock time. Pairs with rate (wage per hour, throughput per hour) in manufacturing/labor."
 atomPath: time
-coordinate: time · 8/crest · effc0b45
-contentUuid: "b3c10911-dce9-52dd-8bd8-77f6abebc92b"
-diamondUuid: "1c872fd2-6441-8294-9f36-48aabd2c09db"
-uuid: "effc0b45-8d0d-8453-8f81-240b6f0e8738"
-horo: 8
-bonds:
-  in:
-    - acceleration
-    - age
-    - arrival
-    - attrition
-    - booking
-    - career
-    - checkin
-    - checkout
-    - complete
-    - content
-    - cook
-    - coverage
-    - crisis
-    - cutoff
-    - cycle
-    - dataset
-    - day
-    - delivery
-    - departure
-    - door
-    - dropoff
-    - escalation
-    - fields
-    - handling
-    - interval
-    - interview
-    - label
-    - lead
-    - manufacturing
-    - measure
-    - modified
-    - perform
-    - prep
-    - processing
-    - reference
-    - required
-    - scheduled
-    - season
-    - settings
-    - shift
-    - shipping
-    - tenure
-    - training
-    - transit
-    - web
-    - wellbeing
-  out:
-    - acceleration
-    - age
-    - arrival
-    - attrition
-    - booking
-    - career
-    - checkin
-    - checkout
-    - complete
-    - content
-    - cook
-    - coverage
-    - crisis
-    - cutoff
-    - cycle
-    - dataset
-    - day
-    - delivery
-    - departure
-    - door
-    - dropoff
-    - escalation
-    - fields
-    - handling
-    - interval
-    - interview
-    - label
-    - lead
-    - manufacturing
-    - measure
-    - modified
-    - perform
-    - prep
-    - processing
-    - reference
-    - required
-    - scheduled
-    - season
-    - settings
-    - shift
-    - shipping
-    - tenure
-    - training
-    - transit
-    - web
-    - wellbeing
+coordinate: "time · 4/weave · 168a721c"
+contentUuid: "e568c4e6-7516-5569-9617-ada7065ea932"
+diamondUuid: "19d8e3bd-7009-853d-9ed8-8f7a610c0d08"
+uuid: "168a721c-96a1-8d2c-a584-e1b5de3e71e4"
+horo: 4
 typography:
   partition: time
   bondDegree: 138
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - fields
-    - manufacturing
-    - measure
-  matrix:
-    - acceleration
-    - age
-    - arrival
-    - attrition
-    - booking
-    - career
-    - checkin
-    - checkout
-    - complete
-    - content
-    - cook
-    - coverage
-    - crisis
-    - cutoff
-    - cycle
-    - dataset
-    - day
-    - delivery
-    - departure
-    - door
-    - dropoff
-    - escalation
-    - fields
-    - handling
-    - interval
-    - interview
-    - label
-    - lead
-    - manufacturing
-    - measure
-    - modified
-    - perform
-    - prep
-    - processing
-    - reference
-    - required
-    - scheduled
-    - season
-    - settings
-    - shift
-    - shipping
-    - tenure
-    - training
-    - transit
-    - web
-    - wellbeing
-  backlinks:
-    - acceleration
-    - age
-    - arrival
-    - attrition
-    - booking
-    - career
-    - checkin
-    - checkout
-    - complete
-    - content
-    - cook
-    - coverage
-    - crisis
-    - cutoff
-    - cycle
-    - dataset
-    - day
-    - delivery
-    - departure
-    - door
-    - dropoff
-    - escalation
-    - fields
-    - handling
-    - interval
-    - interview
-    - label
-    - lead
-    - manufacturing
-    - measure
-    - modified
-    - perform
-    - prep
-    - processing
-    - reference
-    - required
-    - scheduled
-    - season
-    - settings
-    - shift
-    - shipping
-    - tenure
-    - training
-    - transit
-    - web
-    - wellbeing
 signatures:
-  computationUuid: "dab03eeb-adcb-812e-996c-cfc7233b11a3"
+  computationUuid: "2fb6decd-5dfc-8b7e-9eba-1a77964a84d3"
   stages:
     - stage: path
       stageUuid: "123be2fd-7985-8dab-9840-092763531f5a"
@@ -219,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0c32868e-08ca-8c52-a8d5-bbecb2997710"
     - stage: horo
-      stageUuid: "b38a5a8e-614d-8e78-89bb-b6bba60df74d"
+      stageUuid: "654057a4-8266-80d4-b9d3-7ce1976cf7c1"
     - stage: seal
-      stageUuid: "83eed289-9654-845b-98ca-6078260a989b"
+      stageUuid: "7bcf8dbd-7c7a-8a6a-a164-e50f95de6ba3"
     - stage: uuid
-      stageUuid: "858925a9-c5f9-834a-baa9-3b711f05ad25"
+      stageUuid: "a1b8cbe0-86b3-8789-8724-8c39c1358352"
 version: 2
 ---
 # time

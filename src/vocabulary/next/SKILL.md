@@ -1,68 +1,35 @@
 ---
 name: next
 description: "Use when reasoning about next as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/next
-coordinate: next · 7/descent · 4b6da5d1
-contentUuid: "5eb32a73-0a53-59de-a26d-e18ca19c747e"
-diamondUuid: "38fee0d7-8100-88bf-941b-b7cc29207b2d"
-uuid: "4b6da5d1-233c-806c-8ae7-d5ee58fae508"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/next"
+coordinate: "vocabulary/next · 2/share · 5d268ca0"
+contentUuid: "81ca6ec8-ff48-5a87-b067-f7d70064c5bf"
+diamondUuid: "0c96d34f-9d84-8eaf-a063-a65a1b1d4b1b"
+uuid: "5d268ca0-1459-8256-8b0a-1d899342d01b"
+horo: 2
 typography:
-  partition: next
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "61d1030d-a67c-8250-b86d-6d0d5f471d21"
+  computationUuid: "251d5ece-a89d-85b2-81c8-620c91e030a2"
   stages:
     - stage: path
-      stageUuid: "102d87d3-0f0f-801f-9d1b-14b329d20028"
+      stageUuid: "26e50cf4-f9ff-8383-a12c-90a90fc067e8"
     - stage: trinity
-      stageUuid: "78354df7-f9eb-8616-83de-b0dcd92cbe11"
+      stageUuid: "94a3eae2-b7b1-868e-b143-6a4baab83dd6"
     - stage: boundary
-      stageUuid: "9f212a7c-b664-8641-942b-22f1c0b54c6d"
+      stageUuid: "2d8e7cc6-9323-8707-9788-14637ed61b48"
     - stage: links
-      stageUuid: "29de2a2d-6fb6-8075-9e03-8fd5d2e27c3a"
+      stageUuid: "8e269c33-af89-8b1a-ab9e-1095386eb89e"
     - stage: horo
-      stageUuid: "11c73da2-924a-8e03-8945-e7cdc1e17a4c"
+      stageUuid: "1a48dff0-a2f2-8dd4-8514-581bed0ed48c"
     - stage: seal
-      stageUuid: "98de2331-6bc0-89a4-9aed-5837a1cb2d05"
+      stageUuid: "b8c963a6-d7c0-8623-883c-a15d6d7af4c3"
     - stage: uuid
-      stageUuid: "a125e84a-e3e0-854a-8b04-5bd0af39bad7"
+      stageUuid: "b4810342-43b2-8445-9b24-c04f8e41af3c"
 version: 2
 ---
 # next

@@ -1,68 +1,35 @@
 ---
 name: administration
 description: "Use when reasoning about administration as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/administration
-coordinate: administration · 4/weave · 864ebbed
-contentUuid: "4f35138b-d7ff-5932-aadd-96b2b2959509"
-diamondUuid: "a3faac72-ecd2-81a9-acfc-43ca29fdbeb2"
-uuid: "864ebbed-72bd-86b3-9655-15eaf3d322d6"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - route
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - route
-    - sti
+atomPath: "vocabulary/administration"
+coordinate: "vocabulary/administration · 5/round · bcbcedae"
+contentUuid: "d185eaae-57a1-5d1c-8967-10574df2d455"
+diamondUuid: "dfa2d9ea-4b07-8580-9959-3da4587865f3"
+uuid: "bcbcedae-97b3-874d-9051-522fae8b13fc"
+horo: 5
 typography:
-  partition: administration
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - route
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - route
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - route
-    - sti
 signatures:
-  computationUuid: "36e76781-c0b3-88fa-918a-6ff12cade087"
+  computationUuid: "455f923b-c8fb-8493-821f-8817d1368e67"
   stages:
     - stage: path
-      stageUuid: "d5fb138a-d410-89fb-aa9b-d2a33bbeb80f"
+      stageUuid: "3bff007d-bbb7-846f-951b-1c9bf065599f"
     - stage: trinity
-      stageUuid: "eb330eea-8064-875c-ac38-62fa42ca0f9f"
+      stageUuid: "3048c31d-2bc8-8089-9798-fffb072d1c99"
     - stage: boundary
-      stageUuid: "5cda6c5a-58cd-8d79-9203-f3d44b1b2a6e"
+      stageUuid: "90f3774c-d62a-8a1c-bdab-93de03aa436e"
     - stage: links
-      stageUuid: "1b735080-6574-824b-9203-ff2eaff13761"
+      stageUuid: "b665c656-c39c-8a1e-8252-4e0cf9ae37e6"
     - stage: horo
-      stageUuid: "01d7c248-1fc7-80f5-946b-1cc1440fa1dc"
+      stageUuid: "69459c2d-8e77-8c31-9aad-4f1bf1a7b45f"
     - stage: seal
-      stageUuid: "bb766224-6290-8555-9ccd-4f4c0cc76bdb"
+      stageUuid: "4eae0978-5254-823f-b06b-33ebe26e6340"
     - stage: uuid
-      stageUuid: "c7f93ad9-c963-8162-907e-978eab13635d"
+      stageUuid: "814b7158-5bf8-841a-8396-7fbfbefb257c"
 version: 2
 ---
 # administration

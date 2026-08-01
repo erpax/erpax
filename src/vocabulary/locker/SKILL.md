@@ -1,63 +1,35 @@
 ---
 name: locker
 description: "Use when reasoning about locker as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/locker
-coordinate: locker · 4/weave · 9e952f1b
-contentUuid: "c3a5cd6f-947c-57bb-919c-eca5795fca8d"
-diamondUuid: "8e7a050f-9cda-8d8e-955b-7de2055aff39"
-uuid: "9e952f1b-5af4-8d19-bf7a-d8a09e8765a2"
+atomPath: "vocabulary/locker"
+coordinate: "vocabulary/locker · 4/weave · 3d8c66d6"
+contentUuid: "f9ea0dc9-9f54-5945-b27a-2f456664bea3"
+diamondUuid: "3eacba6e-fba8-821c-8760-316ccd7d66b0"
+uuid: "3d8c66d6-a18a-812d-b857-1d4c9c39b1b8"
 horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: locker
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "c8bfecb8-cce1-8f18-a87f-cc981a744f13"
+  computationUuid: "d55c238f-0ff0-820a-a096-f980dd93575d"
   stages:
     - stage: path
-      stageUuid: "4b032e64-cce7-8d37-b320-268fca73d6ee"
+      stageUuid: "e9b15b51-9714-82ae-ae76-541a9b93d05a"
     - stage: trinity
-      stageUuid: "0af451b0-a648-827d-a3d9-f0c2767aab17"
+      stageUuid: "613352af-9acd-8d3e-b789-8c33df7c26fc"
     - stage: boundary
-      stageUuid: "a386860a-ef73-8e7b-aa67-50831b70c2ba"
+      stageUuid: "b50b24da-bee9-8a4b-aacb-71cca075a5c0"
     - stage: links
-      stageUuid: "9f1345c6-e945-8eed-acc7-d7988f0ef401"
+      stageUuid: "93d24591-5411-88b1-a02a-b024fe6181a6"
     - stage: horo
-      stageUuid: "f7b0e3ad-2da5-87b3-9cf5-c1ec9b0f12c2"
+      stageUuid: "3c1b97e8-be8f-872d-a228-4bac1afb666c"
     - stage: seal
-      stageUuid: "cac39d9d-8fec-84e7-9526-269c3fec6b74"
+      stageUuid: "48ced0d1-48c9-8a8a-b381-ee519e5139af"
     - stage: uuid
-      stageUuid: "f4f62f82-07e5-81d1-b5de-5c9e01f8d3b1"
+      stageUuid: "621ccb5c-4310-8d0e-a8f3-39496361db19"
 version: 2
 ---
 # locker

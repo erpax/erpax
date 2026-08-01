@@ -1,80 +1,34 @@
 ---
 name: innovation
 description: "Use when reasoning about innovation — **Innovation is driven by tested and proven ideas.** A new wire (Cloudflare AI bindings, path surfaces, seal gates) must:"
-atomPath: vocabulary/innovation
-coordinate: innovation · 8/crest · 80b3ccd2
-contentUuid: "e3b672b7-725b-5920-a11b-3a2fa3c54314"
-diamondUuid: "81d9a04b-6182-8727-bc54-4554a5bb98c2"
-uuid: "80b3ccd2-e200-8922-8718-02bd7b477e0f"
-horo: 8
-bonds:
-  in:
-    - ai
-    - cloudflare
-    - confirm
-    - diamond
-    - law
-    - seal
-    - secret
-  out:
-    - ai
-    - cloudflare
-    - confirm
-    - diamond
-    - law
-    - seal
-    - secret
+atomPath: "vocabulary/innovation"
+coordinate: "vocabulary/innovation · 4/weave · 008bc00a"
+contentUuid: "4d963455-3a5b-5378-9eb7-7ca64d086ef6"
+diamondUuid: "dc45e17e-6288-8994-bc8e-f298e3a13fdc"
+uuid: "008bc00a-6e84-8928-b64b-31b0633af7ae"
+horo: 4
 typography:
-  partition: innovation
+  partition: vocabulary
   bondDegree: 26
-  neighbors:
-    - cloudflare
-    - diamond
-    - secret
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - ai
-    - cloudflare
-    - confirm
-    - diamond
-    - law
-    - seal
-    - secret
-  matrix:
-    - ai
-    - cloudflare
-    - confirm
-    - diamond
-    - law
-    - seal
-    - secret
-  backlinks:
-    - ai
-    - cloudflare
-    - confirm
-    - diamond
-    - law
-    - seal
-    - secret
 signatures:
-  computationUuid: "3a07aa52-7ced-8603-8b1e-7ddaeb438507"
+  computationUuid: "561eb98a-9c8b-8b54-8bab-f2a244e21e93"
   stages:
     - stage: path
-      stageUuid: "5e410f7f-730b-8b71-a71e-8d28ba51eeee"
+      stageUuid: "1f887b8b-7d0f-8f10-af27-1b4f8ad9cad1"
     - stage: trinity
-      stageUuid: "0e2ee812-eb9a-85c0-b31b-f8e6e2cc8689"
+      stageUuid: "dba4d8e3-e530-890d-9b86-7e3ae7d16fe6"
     - stage: boundary
-      stageUuid: "abe48642-ad21-8f23-ad42-d203dbefe4e0"
+      stageUuid: "0eb9161c-d402-84bd-9fec-e23dda48f91f"
     - stage: links
-      stageUuid: "bad47e8d-2769-8cba-a875-706ec9eb6d1d"
+      stageUuid: "b295210e-68d8-837f-a90d-534ef989f31c"
     - stage: horo
-      stageUuid: "27b79868-3841-8096-8340-bdfed451de8e"
+      stageUuid: "f4a95d6e-01f9-8ede-a4a9-a5d420cc636a"
     - stage: seal
-      stageUuid: "16242053-f07c-8615-a86c-a86452328239"
+      stageUuid: "b9e4b6ce-c52f-843a-9fe0-0219096f0d1d"
     - stage: uuid
-      stageUuid: "d60a9bb2-bb12-8e25-97f8-31f4448578d2"
+      stageUuid: "505997d2-14b5-8e2e-8cdc-615ff45f9961"
 version: 2
 ---
 # innovation — tested ideas, not untested cleverness

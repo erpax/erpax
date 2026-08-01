@@ -2,62 +2,19 @@
 name: used
 description: "Use when reasoning about used as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: used
-coordinate: used · 7/descent · b806fef6
-contentUuid: "626eb759-4ae2-56de-8c41-4f83c0fe150b"
-diamondUuid: "89257810-4279-8fc4-8c6d-b97dec8328e3"
-uuid: "b806fef6-77d5-80ea-8031-3d218b6fa63f"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - diagnose
-    - law
-    - membership
-    - merge
-    - program
-    - sti
-  out:
-    - collapse
-    - diagnose
-    - law
-    - membership
-    - merge
-    - program
-    - sti
+coordinate: "used · 8/crest · fea28318"
+contentUuid: "ff69525b-7d33-5df3-a2ad-28ec32508644"
+diamondUuid: "8248739e-2501-8a53-bc6e-f20124429d46"
+uuid: "fea28318-854e-8cc6-b63d-1dd35ea51900"
+horo: 8
 typography:
   partition: used
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - diagnose
-    - law
-    - membership
-    - merge
-    - program
-    - sti
-  matrix:
-    - collapse
-    - diagnose
-    - law
-    - membership
-    - merge
-    - program
-    - sti
-  backlinks:
-    - collapse
-    - diagnose
-    - law
-    - membership
-    - merge
-    - program
-    - sti
 signatures:
-  computationUuid: "fedda7e8-17b9-8ead-9e59-b37443f41f3d"
+  computationUuid: "595729ec-3e2e-8124-ae3e-6596da3b432e"
   stages:
     - stage: path
       stageUuid: "6a99a763-a2ce-8323-a777-085b680e8d5c"
@@ -68,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d474c363-0e9f-8ca8-95ae-840da650a1f8"
     - stage: horo
-      stageUuid: "f001a3e5-3db3-88d4-8191-490fe8e9566a"
+      stageUuid: "3b50e935-848c-826b-b7e4-8deb7b3958f3"
     - stage: seal
-      stageUuid: "1fba0fb9-98eb-8800-a1af-10289e3030e0"
+      stageUuid: "4c3feb51-3841-8162-9b20-adfe7f9d086b"
     - stage: uuid
-      stageUuid: "ed4eacf6-3e84-81e8-b130-22b2bdfcbe0d"
+      stageUuid: "14b30f60-0cde-8bf9-86a9-c1db124af77a"
 version: 2
 ---
 # used

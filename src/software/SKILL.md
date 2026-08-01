@@ -2,90 +2,19 @@
 name: software
 description: "Use when reasoning about software as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: software
-coordinate: software · 7/descent · e26861d1
-contentUuid: "bc48088d-85f9-50db-98ab-29e499670f83"
-diamondUuid: "7e2dde51-1372-8ed1-917d-3a2dc94fd70a"
-uuid: "e26861d1-2b73-8f0b-8b2e-b146e26a400a"
-horo: 7
-bonds:
-  in:
-    - add
-    - application
-    - code
-    - collapse
-    - computer
-    - help
-    - law
-    - merge
-    - requirements
-    - software
-    - source
-    - sti
-    - version
-  out:
-    - add
-    - application
-    - code
-    - collapse
-    - computer
-    - help
-    - law
-    - merge
-    - requirements
-    - software
-    - source
-    - sti
-    - version
+coordinate: "software · 4/weave · d82aa547"
+contentUuid: "7eb1b249-0825-5620-97e5-e4fa239b828e"
+diamondUuid: "1076b22a-7e41-81d9-a8a8-c317405150fc"
+uuid: "d82aa547-22f2-8c86-aeb3-5eadedf97371"
+horo: 4
 typography:
   partition: software
   bondDegree: 45
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - add
-    - application
-    - code
-    - collapse
-    - help
-    - law
-    - merge
-    - requirements
-    - source
-    - sti
-    - version
-  matrix:
-    - add
-    - application
-    - code
-    - collapse
-    - computer
-    - help
-    - law
-    - merge
-    - requirements
-    - software
-    - source
-    - sti
-    - version
-  backlinks:
-    - add
-    - application
-    - code
-    - collapse
-    - computer
-    - help
-    - law
-    - merge
-    - requirements
-    - software
-    - source
-    - sti
-    - version
 signatures:
-  computationUuid: "0e62ca11-038d-8328-914d-d86e791ea7a0"
+  computationUuid: "bfb6d48a-8db5-8f9b-8401-160d0e9c7f3c"
   stages:
     - stage: path
       stageUuid: "6bd4331c-fb9f-8358-90b6-9c6ada96612c"
@@ -96,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7fc42d11-5b1d-8f3b-9616-4bfca1266e35"
     - stage: horo
-      stageUuid: "47828afd-c5dc-89b4-b4ca-c80e403b9cc0"
+      stageUuid: "e2890629-e16b-8283-a028-691fe6a368ff"
     - stage: seal
-      stageUuid: "e1d025ca-ed18-8a83-89a7-5c0b9bf7ddc5"
+      stageUuid: "fc08a761-70a9-87ec-a258-02fc21795b87"
     - stage: uuid
-      stageUuid: "096250b3-045f-8947-9dda-3470b88ffbe0"
+      stageUuid: "477e2b85-5707-88c1-bfcb-a6a712745458"
 version: 2
 ---
 # software

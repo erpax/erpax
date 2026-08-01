@@ -1,58 +1,35 @@
 ---
 name: recipient
 description: Use when reasoning about recipient — A sub property of participant. The participant who is at the receiving end of the action.
-atomPath: vocabulary/recipient
-coordinate: recipient · 1/base · 1d6be868
-contentUuid: "58c0f254-78f3-57c4-8dae-8a21f8455690"
-diamondUuid: "4fcf214e-4b16-81c3-a95e-8350874d5e75"
-uuid: "1d6be868-1656-89cb-b60c-5ff5231a0c7b"
-horo: 1
-bonds:
-  in:
-    - bcc
-    - cc
-    - law
-  out:
-    - bcc
-    - cc
-    - law
+atomPath: "vocabulary/recipient"
+coordinate: "vocabulary/recipient · 2/share · 8c497ef9"
+contentUuid: "973cc777-8ae7-502d-9346-1745b2d11f45"
+diamondUuid: "a763a406-bbc0-85c2-99e7-1cffbabead81"
+uuid: "8c497ef9-fb50-8c3d-9d8a-19fb3a2d28c3"
+horo: 2
 typography:
-  partition: recipient
+  partition: vocabulary
   bondDegree: 11
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - bcc
-    - cc
-    - law
-  matrix:
-    - bcc
-    - cc
-    - law
-  backlinks:
-    - bcc
-    - cc
-    - law
 signatures:
-  computationUuid: "9d9c7993-4323-89b8-8735-6a6902a742c9"
+  computationUuid: "3b96893f-d141-8c50-8aba-988fb4d07352"
   stages:
     - stage: path
-      stageUuid: "94d01bae-fd2d-8c6f-aad7-689946a808fc"
+      stageUuid: "426c7d0b-0740-8122-a086-31ddbd845945"
     - stage: trinity
-      stageUuid: "4d1041ab-7633-8541-bcd9-34cd4c7cd888"
+      stageUuid: "62e7b602-d652-883b-ab4d-b418c4eba5c0"
     - stage: boundary
-      stageUuid: "7a910da6-7fe0-843d-8020-b15f90a47622"
+      stageUuid: "07230138-3c80-8101-93b6-cd9e6007ec44"
     - stage: links
-      stageUuid: "63e1b2aa-16ca-88c0-be98-94d8983f9498"
+      stageUuid: "2beb4a9d-761f-821e-a50f-fd98774db858"
     - stage: horo
-      stageUuid: "447ff1ee-0e70-8c91-a2a8-da392f740d5c"
+      stageUuid: "2bb4687f-fde8-8de6-b7be-217c7e000a5b"
     - stage: seal
-      stageUuid: "a7ead3b9-ad2d-8ab8-875f-71b810e00d3a"
+      stageUuid: "f9c7b970-aad8-8595-9915-2b6aaa3bf5a4"
     - stage: uuid
-      stageUuid: "fca2a7e6-d2d5-857e-8e5e-324dc3cfa085"
+      stageUuid: "e89f4d26-737c-820a-8eec-77fbf563d9e5"
 version: 2
 ---
 # recipient

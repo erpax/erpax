@@ -2,58 +2,19 @@
 name: ui
 description: "Use when reasoning about the trained UI agent — it renders any atom to its UI (the sensory render + the page) from the atom's content-uuid, trained by the rendering teams on the whole rendering layer, covering the whole corpus because every atom has a UI."
 atomPath: "agent/ui"
-coordinate: "agent/ui · 1/base · 11bcba68"
-contentUuid: "5ad33e97-f7fd-5ab0-b14e-5ffcc61db003"
-diamondUuid: "06b721dd-7d96-8d67-933c-239749922087"
-uuid: "11bcba68-cd3f-8573-b3c6-bc39d0e01481"
+coordinate: "agent/ui · 1/base · 4b43cca1"
+contentUuid: "d65beb5e-c437-51b8-9534-eb47d3ba25f5"
+diamondUuid: "efea8643-f9c1-83bc-b378-f21a3bc3f4ba"
+uuid: "4b43cca1-7db3-84da-bbe1-999d2b367ab8"
 horo: 1
-bonds:
-  in:
-    - agent
-    - css
-    - dimension
-    - law
-    - quantum
-    - ui
-  out:
-    - css
-    - dimension
-    - law
-    - quantum
-    - ui
 typography:
   partition: agent
   bondDegree: 27
-  neighbors:
-    - aura
 standards:
   - "the analog aura — every UI colour/sound is a projection of one content-uuid"
 bindings: []
-neighbors:
-  wikilink:
-    - atom
-    - aura
-    - component
-    - design
-    - law
-    - pixel
-    - render
-    - uuid
-    - vitepress
-  matrix:
-    - css
-    - dimension
-    - law
-    - quantum
-    - ui
-  backlinks:
-    - css
-    - dimension
-    - law
-    - quantum
-    - ui
 signatures:
-  computationUuid: "3d62a68a-f9a6-8a77-aa5b-aeaaafd347dc"
+  computationUuid: "9ed0c2cc-4abe-8d31-8866-2745f42a2efa"
   stages:
     - stage: path
       stageUuid: "a438d570-7343-8048-9778-b26c4b0e2bee"
@@ -64,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fa8ebbd4-46b3-8979-be69-5eb3413c8440"
     - stage: horo
-      stageUuid: "994de9d8-3742-8b7d-bacf-73e5360fd116"
+      stageUuid: "bb781361-853a-8cc1-970d-3c09d3077cbd"
     - stage: seal
       stageUuid: "f8c2bc00-af50-87c6-81aa-45385db65403"
     - stage: uuid
-      stageUuid: "bd1b206d-fa1f-8782-9bd8-591fd924398d"
+      stageUuid: "3fa4fbb8-f333-88c1-b42c-f1f6fdae003d"
 version: 2
 ---
 # agent/ui — the trained UI agent

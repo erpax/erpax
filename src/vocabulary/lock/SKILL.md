@@ -1,62 +1,34 @@
 ---
 name: lock
 description: Use when modelling one lock — the singular model of the locks collection (the plural store); a hold that prevents change to a record or resource.
-atomPath: vocabulary/lock
-coordinate: lock · 5/round · 52e322ef
-contentUuid: "1e2d7f6b-3c4e-5ae3-b3a1-94d58b4b2856"
-diamondUuid: "84b1e28e-ba4a-875f-9722-8e0748d34b4c"
-uuid: "52e322ef-a32a-8a83-bc0f-8dde558ffc6f"
-horo: 5
-bonds:
-  in:
-    - access
-    - balance
-    - law
-    - locks
-  out:
-    - access
-    - balance
-    - law
-    - locks
+atomPath: "vocabulary/lock"
+coordinate: "vocabulary/lock · 7/descent · f3938a23"
+contentUuid: "c130c8ea-d412-5fc9-8637-2a5f4816f882"
+diamondUuid: "e011c636-e1c0-8c7b-8db5-60282c175790"
+uuid: "f3938a23-161e-869c-af12-e6074772b216"
+horo: 7
 typography:
-  partition: lock
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - balance
-    - law
-    - locks
-  matrix:
-    - access
-    - balance
-    - law
-    - locks
-  backlinks:
-    - access
-    - balance
-    - law
-    - locks
 signatures:
-  computationUuid: "cec7c036-4eb0-89d8-892d-8189deec27d3"
+  computationUuid: "d9049499-81e2-8825-8a8a-2091937ba5ee"
   stages:
     - stage: path
-      stageUuid: "aee7d48f-33e1-8677-8d6d-31099f041b04"
+      stageUuid: "3b412416-b859-8c6b-ab5b-735f334fd8ca"
     - stage: trinity
-      stageUuid: "699e68fd-fd48-88cc-8720-10c21f05b88f"
+      stageUuid: "eeb843cc-c13f-8ce6-a845-21519b3235a6"
     - stage: boundary
-      stageUuid: "93f2cc3a-0486-8a37-a780-3fae03002d08"
+      stageUuid: "b088ed28-e221-82c3-8a46-3bdceed72ebc"
     - stage: links
-      stageUuid: "0c939142-7756-8b3e-9b96-4445314f9199"
+      stageUuid: "0960d7a5-c34c-8c5a-a30e-ef3acbdabe11"
     - stage: horo
-      stageUuid: "2e38a3ae-bf8e-8e37-ac74-5e00e86d3c3e"
+      stageUuid: "7cae4d56-3d65-8afa-ab02-ca4ad3db5af3"
     - stage: seal
-      stageUuid: "d3761dcd-b687-80a1-a8cb-217d9d0a7dc6"
+      stageUuid: "87c68f8a-26ad-8fed-918f-a04272f38112"
     - stage: uuid
-      stageUuid: "e6048569-ecd7-82d5-9f12-0b0cf0d4597f"
+      stageUuid: "a2c18e0d-64f7-8982-adec-790993ff1424"
 version: 2
 ---
 # lock — the model of one [[locks]] row

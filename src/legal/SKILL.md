@@ -2,58 +2,19 @@
 name: legal
 description: "Use when reasoning about legal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: legal
-coordinate: "legal · 7/descent · a724e39f"
-contentUuid: "da9eda6f-1e52-5bee-8d69-ba72067985f2"
-diamondUuid: "b29f8b6a-1c0a-86c8-850d-70d1c6c12690"
-uuid: "a724e39f-965c-8d6a-b494-b76a12e0ae89"
-horo: 7
-bonds:
-  in:
-    - address
-    - collapse
-    - commitment
-    - contract
-    - declaration
-    - drug
-    - force
-    - law
-    - legislation
-    - level
-    - merge
-    - name
-    - representative
-    - service
-    - status
-    - sti
-    - value
-  out:
-    - address
-    - collapse
-    - commitment
-    - contract
-    - declaration
-    - drug
-    - force
-    - law
-    - legislation
-    - level
-    - merge
-    - name
-    - representative
-    - service
-    - status
-    - sti
-    - value
+coordinate: "legal · 4/weave · 3d58079f"
+contentUuid: "7c36bf21-1574-5639-81ec-ba9c55486fdb"
+diamondUuid: "556d6e93-933b-8fa9-9970-c00dfc000ec4"
+uuid: "3d58079f-3473-875f-afb9-c96da2811f2c"
+horo: 4
 typography:
   partition: legal
   bondDegree: 61
-  neighbors: []
 standards:
   - "COSO-2013"
   - "EU-2016/679"
   - "IAS-34"
   - "IFRS-3"
-  - "ILO-C100"
   - "ISO-17442-1"
   - "ISO-37000"
   - "ISO-37301"
@@ -65,60 +26,8 @@ standards:
   - XBRL
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - address
-    - collapse
-    - drug
-    - force
-    - law
-    - legislation
-    - level
-    - merge
-    - name
-    - representative
-    - service
-    - status
-    - sti
-    - value
-  matrix:
-    - address
-    - collapse
-    - commitment
-    - contract
-    - declaration
-    - drug
-    - force
-    - law
-    - legislation
-    - level
-    - merge
-    - name
-    - representative
-    - service
-    - status
-    - sti
-    - value
-  backlinks:
-    - address
-    - collapse
-    - commitment
-    - contract
-    - declaration
-    - drug
-    - force
-    - law
-    - legislation
-    - level
-    - merge
-    - name
-    - representative
-    - service
-    - status
-    - sti
-    - value
 signatures:
-  computationUuid: "ed843a96-9c16-8834-9f59-8b93877db49b"
+  computationUuid: "5aa78dbd-deba-8e35-865b-e078cde81f47"
   stages:
     - stage: path
       stageUuid: "20ebfd09-46f1-8376-8574-19d519ee4743"
@@ -129,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "c6e89726-068d-8a3f-8cb7-9729446df324"
     - stage: horo
-      stageUuid: "a5e6946c-a3fc-8e35-8367-1067b2d4ef93"
+      stageUuid: "aef744bd-4b83-8458-bb1e-687c7757a8c9"
     - stage: seal
       stageUuid: "c3c8518c-744b-807f-852f-b436c91dfe33"
     - stage: uuid
-      stageUuid: "815e5725-a83b-80c1-bc08-71560fda9d8b"
+      stageUuid: "7b6fbc58-327c-847e-89f2-babc134bbe1f"
 version: 2
 ---
 # legal

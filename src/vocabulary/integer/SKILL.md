@@ -1,53 +1,35 @@
 ---
 name: integer
 description: "Use when reasoning about integer — Data type: Integer."
-atomPath: vocabulary/integer
-coordinate: integer · 8/crest · a332cfba
-contentUuid: "17e0c76f-89ec-56d3-9bd0-df96f3161e68"
-diamondUuid: "171c22e7-7591-8fe3-92fc-e29a246b7897"
-uuid: "a332cfba-2e56-87af-b7c3-f45586d13bcc"
-horo: 8
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/integer"
+coordinate: "vocabulary/integer · 4/weave · e287f2bf"
+contentUuid: "3d935291-83f2-59da-8e11-1be93fdba2f5"
+diamondUuid: "3fea0370-c5b8-8b72-a0f6-8d51ac45e6f9"
+uuid: "e287f2bf-e469-8165-972d-49d46ae9680d"
+horo: 4
 typography:
-  partition: integer
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "59ba28ca-62db-8108-ba26-d051f4375b88"
+  computationUuid: "4500268c-25a9-853a-862e-35653e40d28f"
   stages:
     - stage: path
-      stageUuid: "c447e5ee-392e-8f69-bbcb-287a1a6f3d39"
+      stageUuid: "6904e04e-5c19-8d5e-8b8e-646ee4104e62"
     - stage: trinity
-      stageUuid: "71fb5634-bce9-8d37-a55e-57a213aa9d01"
+      stageUuid: "8b411ff9-ebb8-8a71-9b41-8f480ca05a14"
     - stage: boundary
-      stageUuid: "315f2a75-206d-80b2-b8b1-514033c38592"
+      stageUuid: "34741ae2-b7d3-8ef5-815d-7161d95a09ce"
     - stage: links
-      stageUuid: "d7d9a1f1-3314-8fbc-89a0-543dc2665597"
+      stageUuid: "c0d80480-663d-85e4-8f29-4efa9725f0c2"
     - stage: horo
-      stageUuid: "9cb7ac1c-46f5-87c7-9dfd-5a87c8af761b"
+      stageUuid: "f3b96484-cd15-8d12-b130-8ab1071dc67e"
     - stage: seal
-      stageUuid: "7df2bf47-30cc-8c62-b78f-3f4318159d6c"
+      stageUuid: "e6ff92f0-c577-8416-adcf-cc1db7827b22"
     - stage: uuid
-      stageUuid: "ef1835b3-6f01-8f0e-898c-b98be242a851"
+      stageUuid: "f7b3f881-8a11-8836-9600-f51bd4f307b7"
 version: 2
 ---
 # integer

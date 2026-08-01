@@ -2,65 +2,19 @@
 name: invariant
 description: "Use when enforcing the architecture laws in code — the executable checks (single-word atoms, no prefixes, every file payload⊕vitepress or junk, locality, the ≥2-cross balance, the naming matrix) that are the matter-twin of the gate."
 atomPath: "architecture/invariant"
-coordinate: "architecture/invariant · 7/descent · de4e65d2"
-contentUuid: "42becfb4-e011-5715-ac84-bcfbf9ff9569"
-diamondUuid: "75b9f15d-f51f-8409-9f3e-dab549fac940"
-uuid: "de4e65d2-01f9-839f-96ee-ed0e178b169a"
-horo: 7
-bonds:
-  in:
-    - architecture
-    - aura
-    - balance
-    - coordinate
-    - diamond
-    - dissolve
-    - gate
-    - identity
-    - merge
-    - payload
-    - sequence
-    - standard
-    - vitepress
-  out:
-    - architecture
-    - aura
-    - balance
-    - coordinate
-    - diamond
-    - dissolve
-    - gate
-    - identity
-    - merge
-    - payload
-    - sequence
-    - standard
-    - vitepress
+coordinate: "architecture/invariant · 5/round · ff6696f7"
+contentUuid: "b0c22be8-1883-5c7e-b479-c0ef055b0820"
+diamondUuid: "cf5216e9-a289-89a4-8f06-47735f9e3aa3"
+uuid: "ff6696f7-0ecf-88f7-95cc-4f322b269cf4"
+horo: 5
 typography:
   partition: architecture
-  bondDegree: 44
-  neighbors:
-    - aura
-    - diamond
+  bondDegree: 24
 standards:
   - "BCP-47"
   - "COSO-ERM-2017"
   - "EN-16931"
-  - "EU-2017/1132"
-  - "EU-2017/828"
-  - "EU-2018/1673"
-  - "EU-2018/1725"
-  - "EU-2018/302"
-  - "EU-2018/389-SCA-RTS"
-  - "EU-2018/843"
-  - "EU-2018/957"
-  - "EU-2022/1925"
-  - "EU-2022/2065"
-  - "EU-2022/2554"
-  - "EU-2022/2555"
-  - "EU-2022/868"
   - "EU-765/2008"
-  - "ILO-C001"
   - "ISO-19011"
   - "ISO-27001"
   - "ISO-27002"
@@ -80,51 +34,8 @@ standards:
   - "W3C-JSON-LD-1.1"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - architecture
-    - aura
-    - balance
-    - coordinate
-    - diamond
-    - dissolve
-    - gate
-    - identity
-    - merge
-    - payload
-    - sequence
-    - standard
-    - vitepress
-  matrix:
-    - architecture
-    - aura
-    - balance
-    - coordinate
-    - diamond
-    - dissolve
-    - gate
-    - identity
-    - merge
-    - payload
-    - sequence
-    - standard
-    - vitepress
-  backlinks:
-    - architecture
-    - aura
-    - balance
-    - coordinate
-    - diamond
-    - dissolve
-    - gate
-    - identity
-    - merge
-    - payload
-    - sequence
-    - standard
-    - vitepress
 signatures:
-  computationUuid: "1f93258f-39ae-8a34-8103-2627bf5add30"
+  computationUuid: "ae81589b-53d3-82d7-b7f6-5057ba03083f"
   stages:
     - stage: path
       stageUuid: "6e3a3b2e-4d9c-8bfd-8918-645115fc9912"
@@ -133,13 +44,13 @@ signatures:
     - stage: boundary
       stageUuid: "3de53cc8-1836-8e74-a8aa-585a23a7e171"
     - stage: links
-      stageUuid: "3badd720-b4ab-8995-83b3-91b6c454e19a"
+      stageUuid: "32e4c258-985d-88da-b3fa-0eaea5cfa70c"
     - stage: horo
-      stageUuid: "9aad28df-c9cc-8da1-9126-c1c08dfbe869"
+      stageUuid: "42ca6433-055b-87a5-aff0-06182b43260e"
     - stage: seal
       stageUuid: "6f0e277e-1f54-84be-b31e-883e193a3f0e"
     - stage: uuid
-      stageUuid: "532edef1-73c0-825b-895f-1e2130ed0195"
+      stageUuid: "4d97a928-1e72-8268-af95-62a03488383a"
 version: 2
 ---
 # invariant — the architecture, enforced

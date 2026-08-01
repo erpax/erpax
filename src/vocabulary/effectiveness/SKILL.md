@@ -1,63 +1,35 @@
 ---
 name: effectiveness
 description: "Use when reasoning about effectiveness as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/effectiveness
-coordinate: effectiveness · 5/round · 11463e67
-contentUuid: "5503a2c8-1d06-5078-8ae8-972828c91453"
-diamondUuid: "8aa70402-d61c-8109-89aa-124c6c4bb4d9"
-uuid: "11463e67-4483-8d17-a853-c5252921ac2d"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/effectiveness"
+coordinate: "vocabulary/effectiveness · 4/weave · 414939d5"
+contentUuid: "c20728bb-63d7-5055-ab18-5f5ba20e118c"
+diamondUuid: "2a8ccf13-fead-8b56-8585-b8db5a0ad6c1"
+uuid: "414939d5-9a89-8b65-a36a-b6040dd1bb59"
+horo: 4
 typography:
-  partition: effectiveness
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "edf6cbd6-496d-8c2f-adb9-bbcf5b4418d9"
+  computationUuid: "6381ba93-2499-8833-bbad-8fda4f96b164"
   stages:
     - stage: path
-      stageUuid: "a81f2cab-b445-8f2d-ba8b-57467fce37dd"
+      stageUuid: "ea9256a5-a503-8b03-908a-1f60927a9dea"
     - stage: trinity
-      stageUuid: "cc3232f5-354c-8ddf-a082-ae8681e2e173"
+      stageUuid: "67ffb3c3-6815-872e-b7c9-583a982e4675"
     - stage: boundary
-      stageUuid: "93b61ffa-a56d-894d-adc5-56e1e0967fd8"
+      stageUuid: "1f8a9b88-4bc1-8950-a0e1-401695ae2be0"
     - stage: links
-      stageUuid: "df41a28b-ec19-87b2-9085-c737db600865"
+      stageUuid: "b95600e8-c209-87f0-98f1-1e09928d2cc9"
     - stage: horo
-      stageUuid: "4d82eac8-9a47-83f4-b27c-9a7fdbb8db4b"
+      stageUuid: "1602e177-d4b0-8b72-bac0-334618d734a9"
     - stage: seal
-      stageUuid: "3644e2a2-81f9-8546-b14b-0a318de23d00"
+      stageUuid: "cda06951-d0e5-8578-9e4c-b51672229281"
     - stage: uuid
-      stageUuid: "f15ea103-cce9-8d84-8252-7e70afe96d9d"
+      stageUuid: "b53a1f68-5a1e-8a88-9461-4df17692f559"
 version: 2
 ---
 # effectiveness

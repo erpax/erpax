@@ -2,87 +2,19 @@
 name: ingest
 description: "Use when pulling external records into the mesh idempotently — each record is content-addressed (a uuid), so re-fetching unchanged data is a no-op and only new or changed records are upserted. planIngest splits a batch into upsert vs skip against the already-seen uuids, deduping within the batch too. The fetch and the DB write are runtime boundaries; the idempotency plan is native and tested. Serves the Google Workspace sync and any external source."
 atomPath: ingest
-coordinate: "ingest · 5/round · aa73be6b"
-contentUuid: "d227c305-9572-5484-9119-dc676ee48ddc"
-diamondUuid: "c926ef40-8fd5-8da0-808c-3a672554fc3e"
-uuid: "aa73be6b-1755-87e8-8dba-3e54c6bff03c"
-horo: 5
-bonds:
-  in:
-    - batch
-    - deduplication
-    - empirical
-    - federation
-    - flow
-    - idempotency
-    - identity
-    - law
-    - lineage
-    - merge
-    - oauth
-    - self
-    - workspace
-  out:
-    - batch
-    - deduplication
-    - empirical
-    - federation
-    - flow
-    - idempotency
-    - identity
-    - law
-    - lineage
-    - merge
-    - oauth
-    - self
-    - workspace
+coordinate: "ingest · 7/descent · ce759d79"
+contentUuid: "2caab395-434b-591b-ab08-7f9c6e4b97f2"
+diamondUuid: "2c900565-30f1-8655-87c2-c185af28652a"
+uuid: "ce759d79-d469-8aa0-a01c-86615bb18b80"
+horo: 7
 typography:
   partition: ingest
   bondDegree: 40
-  neighbors: []
 standards:
   - "idempotent upsert by content-address (re-runnable, no cursor needed)"
 bindings: []
-neighbors:
-  wikilink:
-    - federation
-    - flow
-    - identity
-    - law
-    - merge
-    - oauth
-    - self
-    - workspace
-  matrix:
-    - batch
-    - deduplication
-    - empirical
-    - federation
-    - flow
-    - idempotency
-    - identity
-    - law
-    - lineage
-    - merge
-    - oauth
-    - self
-    - workspace
-  backlinks:
-    - batch
-    - deduplication
-    - empirical
-    - federation
-    - flow
-    - idempotency
-    - identity
-    - law
-    - lineage
-    - merge
-    - oauth
-    - self
-    - workspace
 signatures:
-  computationUuid: "0b5cc537-2ec6-855c-a17b-7d9179da478b"
+  computationUuid: "6f916816-a1da-8148-96d8-56effb993496"
   stages:
     - stage: path
       stageUuid: "94b52b4d-9c52-8546-a22e-719a78a015e7"
@@ -93,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8f2de1f1-f119-8a74-a3b2-11050edba2d0"
     - stage: horo
-      stageUuid: "dd733c48-bc8b-890e-9323-f2e450025e74"
+      stageUuid: "327b7054-4353-8cc9-9edb-967d499dd4fa"
     - stage: seal
       stageUuid: "8595da88-2979-8540-8aae-229af871b5fd"
     - stage: uuid
-      stageUuid: "cc50cd2d-b627-8b89-87de-c0e22ec73edb"
+      stageUuid: "05b73288-ead0-82cb-af8e-75d065b04209"
 version: 2
 ---
 # ingest — idempotent, content-addressed ingest (re-fetch is a no-op)

@@ -2,57 +2,19 @@
 name: venue
 description: "Use when reasoning about venue as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: venue
-coordinate: venue · 4/weave · 347b8f88
-contentUuid: "9200c490-3c80-5f82-a99d-f8fade1fd00b"
-diamondUuid: "1ec98146-107a-83da-a2aa-cbea5d488f61"
-uuid: "347b8f88-dced-855e-846c-5eecc07f1e7b"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - event
-    - law
-    - merge
-    - music
-    - sti
-  out:
-    - collapse
-    - event
-    - law
-    - merge
-    - music
-    - sti
+coordinate: "venue · 8/crest · c4bb1398"
+contentUuid: "7baa1c04-a6f9-52a7-ab3f-02f982d9b87a"
+diamondUuid: "8c96205e-94cf-8bfb-abf8-7a356df7b10d"
+uuid: "c4bb1398-b5af-82a8-96b2-41bd02f3c296"
+horo: 8
 typography:
   partition: venue
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - event
-    - law
-    - merge
-    - music
-    - sti
-  matrix:
-    - collapse
-    - event
-    - law
-    - merge
-    - music
-    - sti
-  backlinks:
-    - collapse
-    - event
-    - law
-    - merge
-    - music
-    - sti
 signatures:
-  computationUuid: "f01f9ab6-9dcd-803b-a830-0cd7f05bd68e"
+  computationUuid: "7bba47cc-cb0a-885d-b27d-37cae47d28b3"
   stages:
     - stage: path
       stageUuid: "99ca9373-35d4-8820-8f5f-1f9485748eae"
@@ -63,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "efb8fd0c-52f8-8b79-bab1-8fd5c5ca8e76"
     - stage: horo
-      stageUuid: "369b2352-e0f8-896e-b751-3790e47390c8"
+      stageUuid: "719531d0-8442-8f92-93e7-055b4bdc3e70"
     - stage: seal
-      stageUuid: "86ca3329-6753-84d6-b33d-9079ca835f06"
+      stageUuid: "3793cdbd-7db8-8ea6-801d-387401a67216"
     - stage: uuid
-      stageUuid: "cdd5ff0c-9d90-8751-a506-89095bf8375e"
+      stageUuid: "ef0c5823-97ad-84db-8084-b6efbe6f643c"
 version: 2
 ---
 # venue

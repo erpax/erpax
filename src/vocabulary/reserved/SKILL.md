@@ -1,68 +1,35 @@
 ---
 name: reserved
 description: "Use when reasoning about reserved as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/reserved
-coordinate: reserved · 4/weave · 4a754349
-contentUuid: "eefd96d1-424b-59b1-ba6d-ba671fc0bc79"
-diamondUuid: "49e81c48-d2a1-8761-99e8-edd513d29bc7"
-uuid: "4a754349-041b-80cd-b4ff-45ed6e9a2cb2"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - ticket
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - ticket
+atomPath: "vocabulary/reserved"
+coordinate: "vocabulary/reserved · 7/descent · 09af7a18"
+contentUuid: "21d84965-8587-5fbe-92f8-7e1307a7b55f"
+diamondUuid: "ae39d0ce-1daf-8288-949e-88a3ce270a8e"
+uuid: "09af7a18-fca3-87da-ab58-e5fde4289558"
+horo: 7
 typography:
-  partition: reserved
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - ticket
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - ticket
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - ticket
 signatures:
-  computationUuid: "492e253b-982e-886b-919f-7f65a63a6a69"
+  computationUuid: "e6b8dd0d-b24c-8b55-95b9-e4cce46b0ff3"
   stages:
     - stage: path
-      stageUuid: "922e41d5-3b23-8fb3-b2fc-4a2f847f36c4"
+      stageUuid: "a2a273f9-1c56-8a3e-b5a3-2d9285ec3b8c"
     - stage: trinity
-      stageUuid: "5f281bf9-4f34-83ef-ad1d-0cded2a8f48a"
+      stageUuid: "e37d5cbd-0406-8d40-9526-d2ad3cf7fd72"
     - stage: boundary
-      stageUuid: "d462486f-be8e-83d4-88b3-adfdf8ab87be"
+      stageUuid: "96e9e95a-0923-84a5-97c2-edf34047f586"
     - stage: links
-      stageUuid: "5ee5167c-937c-846d-a279-8266c327f26e"
+      stageUuid: "cbbec043-9302-8f10-8667-62c6d8c9b694"
     - stage: horo
-      stageUuid: "28977cc0-20fa-8f16-913f-7c0d8d1b39d9"
+      stageUuid: "7ac974e1-c1dc-83d1-a7cc-44a2864a4dfb"
     - stage: seal
-      stageUuid: "b0853b51-616a-8a52-97c4-d76a7b3f2cad"
+      stageUuid: "b06752f8-b307-86c6-9b59-e253bdad2b7e"
     - stage: uuid
-      stageUuid: "c26648bf-00a8-85e4-8caa-51fcd3f7e633"
+      stageUuid: "0d61ee44-bfaa-86ef-a915-1c9b514f0818"
 version: 2
 ---
 # reserved

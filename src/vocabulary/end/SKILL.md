@@ -1,156 +1,34 @@
 ---
 name: end
 description: "Use when reasoning about completion in erpax — period end, lifecycle seal, the wave's return to a new 0. The universal root of completion; dual of begin (and identical to it one dimension up)."
-atomPath: vocabulary/end
-coordinate: end · 8/crest · 23fd7ba9
-contentUuid: "1c617020-f771-5350-b4ce-59e6cab235e2"
-diamondUuid: "115194e0-c540-8a72-9545-bda68ea4811f"
-uuid: "23fd7ba9-eebc-8500-86ba-7e563e8d669d"
-horo: 8
-bonds:
-  in:
-    - accounting
-    - atom
-    - begin
-    - close
-    - coil
-    - coverage
-    - decompression
-    - duality
-    - flow
-    - history
-    - identity
-    - merge
-    - offset
-    - page
-    - postal
-    - sequence
-    - shred
-    - start
-    - torus
-    - trinity
-    - unity
-    - uuid
-    - versions
-    - whole
-    - workflow
-    - zeropoint
-  out:
-    - accounting
-    - atom
-    - begin
-    - close
-    - coil
-    - coverage
-    - decompression
-    - duality
-    - flow
-    - history
-    - identity
-    - merge
-    - offset
-    - page
-    - postal
-    - sequence
-    - shred
-    - start
-    - torus
-    - trinity
-    - unity
-    - uuid
-    - versions
-    - whole
-    - workflow
-    - zeropoint
+atomPath: "vocabulary/end"
+coordinate: "vocabulary/end · 7/descent · 8732cab3"
+contentUuid: "5b6c9eee-c69f-5046-ab5c-960fd8a61364"
+diamondUuid: "787d19fc-4c6b-8a22-9294-3dbcfc689fcd"
+uuid: "8732cab3-8971-82ff-b411-4143e25343a8"
+horo: 7
 typography:
-  partition: end
+  partition: vocabulary
   bondDegree: 82
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - begin
-    - close
-    - flow
-    - identity
-    - merge
-    - sequence
-    - torus
-    - versions
-    - zeropoint
-  matrix:
-    - accounting
-    - atom
-    - begin
-    - close
-    - coil
-    - coverage
-    - decompression
-    - duality
-    - flow
-    - history
-    - identity
-    - merge
-    - offset
-    - page
-    - postal
-    - sequence
-    - shred
-    - start
-    - torus
-    - trinity
-    - unity
-    - uuid
-    - versions
-    - whole
-    - workflow
-    - zeropoint
-  backlinks:
-    - accounting
-    - atom
-    - begin
-    - close
-    - coil
-    - coverage
-    - decompression
-    - duality
-    - flow
-    - history
-    - identity
-    - merge
-    - offset
-    - page
-    - postal
-    - sequence
-    - shred
-    - start
-    - torus
-    - trinity
-    - unity
-    - uuid
-    - versions
-    - whole
-    - workflow
-    - zeropoint
 signatures:
-  computationUuid: "b62f3f6f-861a-8c87-aa4c-7fb40c73adfc"
+  computationUuid: "c598a159-9123-8c9a-a5e7-e93c4d86e40f"
   stages:
     - stage: path
-      stageUuid: "637036fe-4ef8-8ca4-9f73-92700897acdb"
+      stageUuid: "95f4db8a-9c43-86de-8c60-d02dadcf693a"
     - stage: trinity
-      stageUuid: "721dd01a-1845-80e1-8c2c-8d736f3761a8"
+      stageUuid: "ffd2a2ae-4418-8b5b-b0a7-a4278a3a12e3"
     - stage: boundary
-      stageUuid: "ba51bb60-c1ee-8ed1-95ba-7d0eaec2a4cd"
+      stageUuid: "03d7ced5-3748-8018-bd39-66ab1b6d8efc"
     - stage: links
-      stageUuid: "10e761cd-467c-820e-a987-89cac60afb41"
+      stageUuid: "79f10085-0986-8b1f-9b43-301e7c82b329"
     - stage: horo
-      stageUuid: "e050ed8d-8e97-89fb-8959-88d41cbcebd0"
+      stageUuid: "ef3f2c94-20ad-8243-aa9c-54da31228384"
     - stage: seal
-      stageUuid: "23ba4924-2a90-815c-a7f0-e66b6250eabd"
+      stageUuid: "d8500bbc-5b2e-81f5-b764-bf6a89676e7a"
     - stage: uuid
-      stageUuid: "c6c93610-9e41-8c14-8879-a9c1c99e3754"
+      stageUuid: "f00de609-53ca-8c57-b78b-8021abdbf113"
 version: 2
 ---
 # end — the terminus (which is a new beginning)

@@ -1,73 +1,35 @@
 ---
 name: comedy
 description: "Use when reasoning about comedy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/comedy
-coordinate: comedy · 1/base · 62595bbc
-contentUuid: "cb61a736-5838-5d8d-b5d8-2069bafb39b6"
-diamondUuid: "371e5c40-f891-8bad-b98c-7199dc779d11"
-uuid: "62595bbc-b65c-8be2-9c7e-bbb369509012"
+atomPath: "vocabulary/comedy"
+coordinate: "vocabulary/comedy · 1/base · f051c48d"
+contentUuid: "3f9dd940-3569-579b-ae41-bc4289222222"
+diamondUuid: "7ffae517-fb73-8371-bb95-5db80fc3951d"
+uuid: "f051c48d-bc1a-8d78-af39-ec3358b1d827"
 horo: 1
-bonds:
-  in:
-    - club
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
-  out:
-    - club
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
 typography:
-  partition: comedy
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - club
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
-  matrix:
-    - club
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
-  backlinks:
-    - club
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "e908f208-8292-8ab4-b61c-909ca745d18d"
+  computationUuid: "9cdd0d47-3d09-83a8-a5c7-4747f1888a7b"
   stages:
     - stage: path
-      stageUuid: "1a5dbaee-5c5a-8821-ac7a-24fb7d299b96"
+      stageUuid: "04a33691-62ce-83a6-8503-a728bdbdc503"
     - stage: trinity
-      stageUuid: "e6115703-b48d-8937-82a8-fe464996890d"
+      stageUuid: "b0778186-d249-8a77-a026-da2494c506d5"
     - stage: boundary
-      stageUuid: "06bcf725-8e4a-8252-95d3-33aa330d7df7"
+      stageUuid: "6edade23-8b5b-8d3d-9a08-894cf69b78a7"
     - stage: links
-      stageUuid: "0b1c997e-cf81-8c44-8363-16dde301b554"
+      stageUuid: "c35bdf75-b645-875c-97ba-2d4c78a6439c"
     - stage: horo
-      stageUuid: "cd353e7d-7932-8ca7-8cca-d339ececc083"
+      stageUuid: "490d3e0c-bf14-828f-bc2c-132e56db1956"
     - stage: seal
-      stageUuid: "a74ee8bd-c00e-8644-b809-aa6587e7c732"
+      stageUuid: "5d90eee7-f490-8577-b530-9e5a0a08592e"
     - stage: uuid
-      stageUuid: "d93bd595-10af-8469-a4b8-5819c553bbcb"
+      stageUuid: "3ed0184c-d101-8a8c-9232-45fb0148303a"
 version: 2
 ---
 # comedy

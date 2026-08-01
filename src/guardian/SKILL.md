@@ -2,104 +2,21 @@
 name: guardian
 description: "Use when reasoning about a single immune-cell of the corpus — a guardian watches exactly ONE violation axis against its own committed baseline with a fail-closed ratchet, so a rise on its axis reddens the gate on its own and can never be masked by a fix on another axis. Many guardians cross into one seal."
 atomPath: guardian
-coordinate: "guardian · 2/share · 80386aaa"
-contentUuid: "5061a7dc-9bd4-5af8-8e08-8a183de497c1"
-diamondUuid: "3d52df04-d7d9-80e2-84dd-063ee4f188f0"
-uuid: "80386aaa-31f1-8c03-b990-59d968d6e358"
+coordinate: "guardian · 2/share · 9bd85c5b"
+contentUuid: "4508ab32-2400-5560-af66-0681a65bd312"
+diamondUuid: "4c54702d-b2a7-8cc3-8490-4415b9818c27"
+uuid: "9bd85c5b-06ba-8469-a2fe-8609612feb4e"
 horo: 2
-bonds:
-  in:
-    - convention
-    - cost
-    - decide
-    - diamond
-    - gate
-    - hallucination
-    - identity
-    - law
-    - proof
-    - publish
-    - rules
-    - seal
-    - session
-    - sin
-    - thought
-    - typography
-    - worker
-  out:
-    - convention
-    - cost
-    - decide
-    - diamond
-    - gate
-    - hallucination
-    - identity
-    - law
-    - proof
-    - publish
-    - rules
-    - seal
-    - session
-    - sin
-    - thought
-    - typography
-    - worker
 typography:
   partition: guardian
-  bondDegree: 52
-  neighbors: []
+  bondDegree: 40
 standards:
   - "ISO/IEC 25010:2023 §5.5 testability — the decision is a pure function"
   - "ISO/IEC 25010:2023 §5.5 testability — the decision is a pure function`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - convention
-    - cost
-    - gate
-    - identity
-    - law
-    - proof
-    - seal
-  matrix:
-    - convention
-    - cost
-    - decide
-    - diamond
-    - gate
-    - hallucination
-    - identity
-    - law
-    - proof
-    - publish
-    - rules
-    - seal
-    - session
-    - sin
-    - thought
-    - typography
-    - worker
-  backlinks:
-    - convention
-    - cost
-    - decide
-    - diamond
-    - gate
-    - hallucination
-    - identity
-    - law
-    - proof
-    - publish
-    - rules
-    - seal
-    - session
-    - sin
-    - thought
-    - typography
-    - worker
 signatures:
-  computationUuid: "ac357a47-9ae0-8c94-9a71-88b2ea9ec8ad"
+  computationUuid: "76f39ef0-d138-8797-b891-fe8b15153a06"
   stages:
     - stage: path
       stageUuid: "83e530d4-1142-8bf7-b8c4-6462dc97de15"
@@ -108,13 +25,13 @@ signatures:
     - stage: boundary
       stageUuid: "8ba289f9-3046-8359-9e5b-6aab9896923c"
     - stage: links
-      stageUuid: "9f877aac-b513-8a1e-a9be-fa493fccba5f"
+      stageUuid: "2aa5904d-1563-84d6-b26a-e7df0dcfb665"
     - stage: horo
-      stageUuid: "0349652a-92ce-8062-bf1d-a6b4837f7582"
+      stageUuid: "693d78ce-0195-8b38-b387-d03f0419a2bf"
     - stage: seal
       stageUuid: "9441f23e-0439-8a74-b69f-fbb34baca302"
     - stage: uuid
-      stageUuid: "6c19b32b-6ff2-8dd0-935a-d34b6726a690"
+      stageUuid: "ffbb64a3-1640-8bba-aa48-152c916e3ae3"
 version: 2
 ---
 # guardian — one axis, one baseline, fail-closed

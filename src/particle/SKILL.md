@@ -2,78 +2,18 @@
 name: particle
 description: "Use when reading an atom as a particle in the matrix field — a content-uuid is the particle's identity, links are the forces it interacts through, and mass is its in-degree charge."
 atomPath: particle
-coordinate: particle · 7/descent · c7e7d503
-contentUuid: "fcbc1930-0ba3-58f6-b0b6-bc9d04bf1d2b"
-diamondUuid: "b56e9177-994d-86e4-af20-b1a633bf90c7"
-uuid: "c7e7d503-46b8-873b-bf10-ff24cf3c8b9a"
-horo: 7
-bonds:
-  in:
-    - atom
-    - entanglement
-    - generator
-    - gravity
-    - links
-    - matrix
-    - particle
-    - photon
-    - quantum
-    - uuid
-    - void
-  out:
-    - atom
-    - entanglement
-    - generator
-    - gravity
-    - links
-    - matrix
-    - particle
-    - photon
-    - quantum
-    - uuid
-    - void
+coordinate: "particle · 1/base · d0b49cef"
+contentUuid: "01fcb663-fb0a-5bb0-be6a-689e70035a98"
+diamondUuid: "7fb55e0c-8211-8bf3-bcf6-35396c76408c"
+uuid: "d0b49cef-b2f8-86ee-b658-64c34dd65156"
+horo: 1
 typography:
   partition: particle
   bondDegree: 40
-  neighbors: []
-standards:
-  - "composed from the live matrix node + its mass; never hand-asserted"
+standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - atom
-    - entanglement
-    - gravity
-    - links
-    - matrix
-    - quantum
-    - uuid
-  matrix:
-    - atom
-    - entanglement
-    - generator
-    - gravity
-    - links
-    - matrix
-    - particle
-    - photon
-    - quantum
-    - uuid
-    - void
-  backlinks:
-    - atom
-    - entanglement
-    - generator
-    - gravity
-    - links
-    - matrix
-    - particle
-    - photon
-    - quantum
-    - uuid
-    - void
 signatures:
-  computationUuid: "6ade5136-5f1b-84ca-bfd7-d912f2e72b72"
+  computationUuid: "2778e73e-954a-8637-bea0-da67ccabfc32"
   stages:
     - stage: path
       stageUuid: "94d707bf-3bf0-86f9-8a6a-d308957b3dd2"
@@ -84,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "cde842ae-f8c7-81a4-8715-a570b598072c"
     - stage: horo
-      stageUuid: "1dc68ee7-0456-83b9-8caa-9d4037ff3bae"
+      stageUuid: "a87cb638-6ce5-8215-8474-3acea36d0af3"
     - stage: seal
-      stageUuid: "ede13c17-75cb-8524-997b-3be5a0b24079"
+      stageUuid: "d9803831-159a-8fb2-a7da-ad0736da7fba"
     - stage: uuid
-      stageUuid: "bc6b1f4b-483a-8ac9-b9d3-c5ca905ad56e"
+      stageUuid: "3ff40bc2-03e6-80e7-be7c-2b3bd3d0cca8"
 version: 2
 ---
 # particle — an atom is a particle

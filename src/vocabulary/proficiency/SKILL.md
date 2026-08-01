@@ -1,68 +1,35 @@
 ---
 name: proficiency
 description: "Use when reasoning about proficiency as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/proficiency
-coordinate: proficiency · 8/crest · 627cac3d
-contentUuid: "cf7d5ae0-9096-50b4-a2be-6974cd35f039"
-diamondUuid: "2b5ee2d1-d774-8ecb-860d-19f377639f7a"
-uuid: "627cac3d-870a-8308-b566-ea9cc41ff092"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - level
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - level
-    - merge
-    - sti
+atomPath: "vocabulary/proficiency"
+coordinate: "vocabulary/proficiency · 7/descent · 55dd3c3c"
+contentUuid: "06b74cd2-35d0-5677-8256-4e366002dd71"
+diamondUuid: "f8eebac5-3386-8b40-a7ea-9d0756a4495c"
+uuid: "55dd3c3c-3be5-8b20-93a1-e41a1787b578"
+horo: 7
 typography:
-  partition: proficiency
-  bondDegree: 16
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 18
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - level
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - level
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - level
-    - merge
-    - sti
 signatures:
-  computationUuid: "1a22c494-591b-8206-ac3d-3846cc5f94ad"
+  computationUuid: "f7167a11-13b2-81de-938b-9cc2254b2a5f"
   stages:
     - stage: path
-      stageUuid: "e5d68009-bdd4-883d-842a-65e5f45a2229"
+      stageUuid: "33e4173c-f5f1-8551-bd99-ec0ea3eec201"
     - stage: trinity
-      stageUuid: "2fba848e-a805-8a3d-9164-18ebe1704d3a"
+      stageUuid: "202b31c1-3489-821d-95e7-573492f2224b"
     - stage: boundary
-      stageUuid: "27b34284-4846-861f-b3dc-93e36f620d6a"
+      stageUuid: "2c8a3827-a689-84d4-b933-1b9f21566adb"
     - stage: links
-      stageUuid: "14bae0d4-4b66-800e-86b5-639a4fd34e1c"
+      stageUuid: "1d0fa688-cb9d-8647-ae43-b1ae6c650c17"
     - stage: horo
-      stageUuid: "368c0c0e-61c7-8af3-b7db-4568eac1acdc"
+      stageUuid: "f051c951-5ef9-81c0-8be7-e9f9c6184c72"
     - stage: seal
-      stageUuid: "cf87b247-623b-8536-bdd2-2f58b8e8d57c"
+      stageUuid: "6a353542-43ed-83dc-9aad-9116ac6e5c16"
     - stage: uuid
-      stageUuid: "14ed0e12-28cf-89ee-b4c8-2aab5a4e0d8e"
+      stageUuid: "397b544d-1e56-8953-bb6e-182eb78a696d"
 version: 2
 ---
 # proficiency

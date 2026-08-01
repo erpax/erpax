@@ -1,68 +1,35 @@
 ---
 name: borrow
 description: "Use when reasoning about borrow as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/borrow
-coordinate: borrow · 4/weave · 7beb611e
-contentUuid: "e249da6d-004b-5ae9-8088-7282eaf69d1c"
-diamondUuid: "568e498c-cdaa-8fdd-89b5-2517fe18a7ff"
-uuid: "7beb611e-057f-8c09-9c4a-ccb6f4561791"
-horo: 4
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/borrow"
+coordinate: "vocabulary/borrow · 2/share · b79be5be"
+contentUuid: "aa4af8c9-2a18-576e-a76f-bee06778a75d"
+diamondUuid: "720b0566-96de-89db-baec-302b2232809f"
+uuid: "b79be5be-f410-80eb-8632-816c3746bef3"
+horo: 2
 typography:
-  partition: borrow
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "a3b049ae-b077-8d4b-82ce-9e488b084036"
+  computationUuid: "a4663ae2-6255-8072-ab30-2a6a3e6ae629"
   stages:
     - stage: path
-      stageUuid: "867c17d2-a659-8dd1-8d5f-62c7fb8bd5ed"
+      stageUuid: "634129b7-253d-8c75-8e6e-527c4b9aed95"
     - stage: trinity
-      stageUuid: "1263307d-aa10-81bb-b1ad-4947dcec08d0"
+      stageUuid: "914abb60-0f61-8e45-8f09-cc1739e9e243"
     - stage: boundary
-      stageUuid: "945aaee5-60d8-86bc-a06b-c120e897b4db"
+      stageUuid: "70afb8cf-d7ee-8f70-800a-d3cba03b70b8"
     - stage: links
-      stageUuid: "a40d7a32-70ab-8c49-b6a8-326fa20a5d68"
+      stageUuid: "5efc88e0-0915-828f-a06c-d1a7dc39a24c"
     - stage: horo
-      stageUuid: "0a506b24-c3f5-8db0-b038-3d92bea186f6"
+      stageUuid: "5a63f71e-9d30-8d77-bb9f-0af204931ceb"
     - stage: seal
-      stageUuid: "352ebe9b-4591-8c8e-ac69-172b4e9ae6c7"
+      stageUuid: "c8563646-d4fa-827c-846b-6ca20f0c65a3"
     - stage: uuid
-      stageUuid: "0c9e0bcb-9574-89f4-b2c7-d78a7177b557"
+      stageUuid: "869973bf-37c4-875d-9637-aed6d4c044f7"
 version: 2
 ---
 # borrow

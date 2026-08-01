@@ -2,41 +2,14 @@
 name: inspections
 description: "Use when recording incoming, in-process, or final-inspection outcomes — inspected/failed/sample quantities, lot acceptance, calibration checks per ISO 17025, outcome disposition (pass/fail/conditional), and nonconformance evidence that drives inventory write-offs. The ISO 9001 §8.7 quality-inspection collection for manufacturing and vendor receipts."
 atomPath: "items/quality/inspections"
-coordinate: "items/quality/inspections · 1/base · b5a6afa1"
-contentUuid: "48a8f15d-3688-50ce-9537-f4271eab3d0b"
-diamondUuid: "d0f33646-d54e-828c-a9be-c25ca5603ebf"
-uuid: "b5a6afa1-756d-8072-86f8-0f75253d0241"
-horo: 1
-bonds:
-  in:
-    - accounting
-    - batches
-    - defect
-    - identity
-    - inspection
-    - items
-    - law
-    - orders
-    - proof
-    - quality
-    - standard
-    - transaction
-  out:
-    - accounting
-    - batches
-    - defect
-    - identity
-    - inspection
-    - items
-    - law
-    - orders
-    - proof
-    - standard
-    - transaction
+coordinate: "items/quality/inspections · 8/crest · 80cdf2a6"
+contentUuid: "8fa73565-e469-5c31-9a17-0095b5c6994c"
+diamondUuid: "71597b92-a69f-84f0-ab5f-449053b5e96e"
+uuid: "80cdf2a6-9ca9-8571-b7c3-ea54f2691626"
+horo: 8
 typography:
   partition: items
   bondDegree: 33
-  neighbors: []
 standards:
   - "ISO 17025:2017 testing-and-calibration-laboratories"
   - "ISO 17025:2017 testing-and-calibration-laboratories`"
@@ -51,40 +24,8 @@ standards:
   - "SOX §404 internal-controls quality-control TOM-QC-01"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - identity
-    - law
-    - proof
-    - standard
-    - transaction
-  matrix:
-    - accounting
-    - batches
-    - defect
-    - identity
-    - inspection
-    - items
-    - law
-    - orders
-    - proof
-    - standard
-    - transaction
-  backlinks:
-    - accounting
-    - batches
-    - defect
-    - identity
-    - inspection
-    - items
-    - law
-    - orders
-    - proof
-    - standard
-    - transaction
 signatures:
-  computationUuid: "257ce290-fc24-8481-aa9f-ab847f4a9fda"
+  computationUuid: "059b38ce-1bf8-8693-8b96-ca618939f219"
   stages:
     - stage: path
       stageUuid: "0834a322-004d-889e-b174-a48dca66cacf"
@@ -95,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "45d31dd3-eb97-8bd8-9a1d-0cb4a715a236"
     - stage: horo
-      stageUuid: "cfb70140-bb63-8d57-9b5a-95db2de6cf35"
+      stageUuid: "b7266488-b12e-8442-8b17-c77be750c736"
     - stage: seal
       stageUuid: "c4b9f3de-9b2f-8be9-ba4d-32b708ca009f"
     - stage: uuid
-      stageUuid: "b758099f-672a-89fa-8485-63f8970a4c72"
+      stageUuid: "6165666c-3d6f-8d34-9e37-c54c0a40f159"
 version: 2
 ---
 # quality-inspections

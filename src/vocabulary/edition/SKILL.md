@@ -1,83 +1,35 @@
 ---
 name: edition
 description: "Use when reasoning about edition as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/edition
-coordinate: edition · 4/weave · 073162e9
-contentUuid: "822c0ea0-8d23-5b72-9d6d-1f691d3affb6"
-diamondUuid: "8c9ce876-9e0b-8c88-bcb4-a2de8fdc9aea"
-uuid: "073162e9-20fd-8132-af92-5e3d5f1fe08f"
-horo: 4
-bonds:
-  in:
-    - art
-    - book
-    - collapse
-    - game
-    - law
-    - merge
-    - print
-    - sti
-  out:
-    - art
-    - book
-    - collapse
-    - game
-    - law
-    - merge
-    - print
-    - sti
+atomPath: "vocabulary/edition"
+coordinate: "vocabulary/edition · 8/crest · 09cbeef8"
+contentUuid: "c4fab2da-a7f6-5790-8189-f43ce3dacfbe"
+diamondUuid: "38a559bb-8da0-8c2d-8575-0fa6532b0893"
+uuid: "09cbeef8-6604-8b75-a36c-0651a96fc74a"
+horo: 8
 typography:
-  partition: edition
+  partition: vocabulary
   bondDegree: 28
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - art
-    - book
-    - collapse
-    - game
-    - law
-    - merge
-    - print
-    - sti
-  matrix:
-    - art
-    - book
-    - collapse
-    - game
-    - law
-    - merge
-    - print
-    - sti
-  backlinks:
-    - art
-    - book
-    - collapse
-    - game
-    - law
-    - merge
-    - print
-    - sti
 signatures:
-  computationUuid: "885c4d15-134d-8839-b4e7-5d021a09d0a6"
+  computationUuid: "ebb8f4e8-3d6e-8be8-992f-870a6e41a994"
   stages:
     - stage: path
-      stageUuid: "d7074c6b-1dcc-8c78-9ed8-639d54919779"
+      stageUuid: "1e577a69-6fac-82cc-8d77-7ee51257104c"
     - stage: trinity
-      stageUuid: "bf0e4653-1d1d-8762-ac50-f9b11639272f"
+      stageUuid: "a24346ce-993c-8d25-9e52-c6ff2f507f42"
     - stage: boundary
-      stageUuid: "94063e25-c041-800c-b252-042e4b0e45ef"
+      stageUuid: "9fa194ac-fcfb-8c48-a2c8-054a9bed1350"
     - stage: links
-      stageUuid: "8fbc2776-f609-88ba-ba12-a218bcd83901"
+      stageUuid: "3cf900b4-635b-8600-b383-0bf6dcd89610"
     - stage: horo
-      stageUuid: "730e2099-5711-83b6-97a3-8aea393ded63"
+      stageUuid: "dc0836b3-832d-8d43-b04c-484badb25d1b"
     - stage: seal
-      stageUuid: "33b345e4-4cd9-8338-ac7c-6b295d8c29fd"
+      stageUuid: "18d493f1-53ed-8e20-9d3a-9bfede3d5818"
     - stage: uuid
-      stageUuid: "3aecbc24-fecc-8b79-82da-9ba6220f950b"
+      stageUuid: "9605e17c-fa7a-8bd5-9271-5b07bc33a4f4"
 version: 2
 ---
 # edition

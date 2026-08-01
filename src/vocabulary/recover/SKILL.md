@@ -1,119 +1,34 @@
 ---
 name: recover
-description: "Use when a Payload collection/config reorg or rename leaves the build broken — `tsc` crashes with \\\"Maximum call stack size exceeded\\\", hundreds of type errors after moving collections, or `payload generate:types` fails with InvalidFieldRelationship, DuplicateFieldName, \\\"does not provide an export named 'default'\\\", or ERR_MODULE_NOT_FOUND."
-atomPath: vocabulary/recover
-coordinate: recover · 7/descent · e2e5802d
-contentUuid: "5e26a00a-43c4-56a5-a00c-96ed8e96df65"
-diamondUuid: "4e46bd4c-ae67-837b-82ee-965bae68b0eb"
-uuid: "e2e5802d-dd7a-85e0-84b7-ce6bfcd680f4"
-horo: 7
-bonds:
-  in:
-    - chat
-    - collapse
-    - collections
-    - concatenate
-    - config
-    - database
-    - decompression
-    - fields
-    - generate
-    - limit
-    - merge
-    - one
-    - port
-    - profane
-    - research
-    - sequence
-    - society
-    - types
-  out:
-    - chat
-    - collapse
-    - collections
-    - concatenate
-    - config
-    - database
-    - decompression
-    - fields
-    - generate
-    - limit
-    - merge
-    - one
-    - port
-    - profane
-    - research
-    - sequence
-    - society
-    - types
+description: "Use when a Payload collection/config reorg or rename leaves the build broken — `tsc` crashes with \\\\\\\"Maximum call stack size exceeded\\\\\\\", hundreds of type errors after moving collections, or `payload generate:types` fails with InvalidFieldRelationship, DuplicateFieldName, \\\\\\\"does not provide an export named 'default'\\\\\\\", or ERR_MODULE_NOT_FOUND."
+atomPath: "vocabulary/recover"
+coordinate: "vocabulary/recover · 2/share · 9f55af3f"
+contentUuid: "7bbf516e-a8aa-5fb1-91c7-f35c35187795"
+diamondUuid: "af1bc599-9349-86e9-815c-6ed019e28c71"
+uuid: "9f55af3f-4ec0-8b0a-8269-6c9e9630d227"
+horo: 2
 typography:
-  partition: recover
-  bondDegree: 57
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 63
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - collections
-    - config
-    - database
-    - port
-    - types
-  matrix:
-    - chat
-    - collapse
-    - collections
-    - concatenate
-    - config
-    - database
-    - decompression
-    - fields
-    - generate
-    - limit
-    - merge
-    - one
-    - port
-    - profane
-    - research
-    - sequence
-    - society
-    - types
-  backlinks:
-    - chat
-    - collapse
-    - collections
-    - concatenate
-    - config
-    - database
-    - decompression
-    - fields
-    - generate
-    - limit
-    - merge
-    - one
-    - port
-    - profane
-    - research
-    - sequence
-    - society
-    - types
 signatures:
-  computationUuid: "e9c4f116-1d63-8605-b39c-46fc8418888f"
+  computationUuid: "2a43d9f2-e055-8c74-b20e-b00678d961e3"
   stages:
     - stage: path
-      stageUuid: "3c2c067a-9ed0-89de-a2c6-6b73bcf28913"
+      stageUuid: "bb2ae903-6d29-8697-855b-d82478fc9b11"
     - stage: trinity
-      stageUuid: "28a48f83-0535-8000-9ab3-6930f13e66bb"
+      stageUuid: "66d9d338-827c-87b9-af79-79559aedb62f"
     - stage: boundary
-      stageUuid: "745c2b5f-a376-8aa1-bb9c-667ac917b275"
+      stageUuid: "4bf48230-cac9-897b-8368-99a4de710890"
     - stage: links
-      stageUuid: "e047ab4c-40de-814c-8c76-8a2ce27b3590"
+      stageUuid: "604840d6-f4bc-84e6-b8cf-215f6cfeb241"
     - stage: horo
-      stageUuid: "04889bbc-0c12-83cb-a051-df967b45f619"
+      stageUuid: "b36d1883-9518-868f-b31d-6f5a5e2191cf"
     - stage: seal
-      stageUuid: "c3c31f62-7cb3-8c08-8706-031073d389ea"
+      stageUuid: "85b76e20-24d8-86c3-a451-0229a56483e2"
     - stage: uuid
-      stageUuid: "71d10067-cadc-8816-8936-0868ab0da29f"
+      stageUuid: "17c54d3b-c80a-8ed3-933c-e5133b2e6c56"
 version: 2
 ---
 # recover — Repair a Payload Build After a Reorg

@@ -1,150 +1,34 @@
 ---
 name: age
 description: "Use when treating age as a sociological axis — възраст — the life-course dimension that stratifies a society alongside class and status. Inequalities compound along it (cumulative advantage — the horo doubling), ageism flips the status sign against older workers, and a population's ageing inverts the pyramid that funds the allocation/decompression pot. The late in late career is a point on this axis; model age as one dimension with roles, not a separate entity."
-atomPath: vocabulary/age
-coordinate: age · 5/round · b685306b
-contentUuid: "7a88661f-750a-5a74-a86f-833ca03a3110"
-diamondUuid: "cd843add-643a-8251-a5d0-64fe6c21eecb"
-uuid: "b685306b-5748-8509-a776-594858440e52"
-horo: 5
-bonds:
-  in:
-    - allocation
-    - balance
-    - career
-    - child
-    - cohort
-    - crisis
-    - decompression
-    - dimension
-    - health
-    - horo
-    - market
-    - max
-    - min
-    - power
-    - range
-    - required
-    - sequence
-    - society
-    - status
-    - suggested
-    - time
-    - typical
-    - wellbeing
-  out:
-    - allocation
-    - balance
-    - career
-    - child
-    - cohort
-    - crisis
-    - decompression
-    - dimension
-    - health
-    - horo
-    - market
-    - max
-    - min
-    - power
-    - range
-    - required
-    - sequence
-    - society
-    - status
-    - suggested
-    - time
-    - typical
-    - wellbeing
+atomPath: "vocabulary/age"
+coordinate: "vocabulary/age · 1/base · e1b9df6e"
+contentUuid: "c1575839-920f-5b69-813d-b5f182d1e73c"
+diamondUuid: "b5b25a61-57ae-8ab6-977c-ec5c586d6318"
+uuid: "e1b9df6e-2c88-8aca-acc2-cb96fff031c6"
+horo: 1
 typography:
-  partition: age
+  partition: vocabulary
   bondDegree: 72
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - allocation
-    - balance
-    - career
-    - cohort
-    - crisis
-    - decompression
-    - dimension
-    - health
-    - horo
-    - market
-    - power
-    - sequence
-    - society
-    - status
-    - time
-    - wellbeing
-  matrix:
-    - allocation
-    - balance
-    - career
-    - child
-    - cohort
-    - crisis
-    - decompression
-    - dimension
-    - health
-    - horo
-    - market
-    - max
-    - min
-    - power
-    - range
-    - required
-    - sequence
-    - society
-    - status
-    - suggested
-    - time
-    - typical
-    - wellbeing
-  backlinks:
-    - allocation
-    - balance
-    - career
-    - child
-    - cohort
-    - crisis
-    - decompression
-    - dimension
-    - health
-    - horo
-    - market
-    - max
-    - min
-    - power
-    - range
-    - required
-    - sequence
-    - society
-    - status
-    - suggested
-    - time
-    - typical
-    - wellbeing
 signatures:
-  computationUuid: "96fbf9ee-247c-824f-a948-a5c67e158a13"
+  computationUuid: "680034ef-7a15-8612-810a-0a17f15e462f"
   stages:
     - stage: path
-      stageUuid: "9c96abdc-c6d8-8c5f-b8ad-5c9246767e80"
+      stageUuid: "4881610a-3552-8dd3-bef3-b15853b7ed5a"
     - stage: trinity
-      stageUuid: "534c1e96-e29a-8229-a587-3966219e1ee7"
+      stageUuid: "870d9b8c-e468-8332-b348-32dd1dc0ad54"
     - stage: boundary
-      stageUuid: "4caefe7d-e806-8bcd-89ef-0adbaa5f255e"
+      stageUuid: "c5d8730d-00bd-8959-b5a3-e6062875cc29"
     - stage: links
-      stageUuid: "f033974d-5b12-8944-9a36-2a735f5dd5fc"
+      stageUuid: "178b61d9-3fde-8c83-a5c6-ed650b5292db"
     - stage: horo
-      stageUuid: "0db34ae7-46cb-8449-bcb0-c3b9af3c9c5b"
+      stageUuid: "af3f27be-bb9d-8b2f-ae4f-896256063598"
     - stage: seal
-      stageUuid: "28e04739-309a-89a5-ba13-b38fe51b5ed0"
+      stageUuid: "23dac5a4-b43c-843a-82bb-54b994978493"
     - stage: uuid
-      stageUuid: "7608642e-2b06-8aca-964c-374c3a9124c5"
+      stageUuid: "815d8585-fa3a-8959-81d4-5438c06e74fa"
 version: 2
 ---
 # age — the life-course axis along which advantage compounds (възраст)

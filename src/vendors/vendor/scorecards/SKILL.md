@@ -1,73 +1,29 @@
 ---
 name: scorecards
 description: "Use when scoring or reviewing vendor performance — OTD%, quality acceptance rate, price accuracy, response time, cybersecurity/ESG scores — driving ISO 9001 §8.4 renewal, probation, or de-listing recommendations. The periodic vendor performance evaluation and re-approval node."
-atomPath: vendors/vendor/scorecards
-coordinate: vendors/vendor/scorecards · 1/base · 1b49ec1e
-contentUuid: "e1342c3c-dfec-55ff-99e8-c01e6f6dd819"
-diamondUuid: "b33a29f1-f7b8-83f5-9c43-a10b82de8696"
-uuid: "1b49ec1e-1ae2-8c15-b820-3173b63ac926"
-horo: 1
-bonds:
-  in:
-    - access
-    - accounting
-    - hooks
-    - identity
-    - law
-    - scorecard
-    - standard
-    - vendor
-    - vendors
-  out:
-    - access
-    - accounting
-    - hooks
-    - identity
-    - law
-    - scorecard
-    - standard
-    - vendors
+atomPath: "vendors/vendor/scorecards"
+coordinate: "vendors/vendor/scorecards · 2/share · 9123dca4"
+contentUuid: "680c7d73-5e83-54cd-869e-61aedec7e395"
+diamondUuid: "b0254c37-6131-81aa-9b99-d7ffd43f7419"
+uuid: "9123dca4-35a4-8676-b7af-f6fd090a31dd"
+horo: 2
 typography:
   partition: vendors
   bondDegree: 24
-  neighbors: []
 standards:
   - "ISO 9001:2015 §8.4 control-of-externally-provided-processes"
+  - "ISO 9001:2015 §8.4 control-of-externally-provided-processes`"
   - "ISO 9001:2015 §8.4.1 evaluation-and-re-evaluation"
-  - "ISO-19011:2018 audit-trail vendor-evaluation"
+  - "ISO 9001:2015 §8.4.1 evaluation-and-re-evaluation`"
   - "ISO-8601-1:2019 date-time"
+  - "ISO-8601-1:2019 date-time`"
   - "ISO-9001"
   - "SOX §404 internal-controls vendor-management"
   - "W3C-PROV-O"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - accounting
-    - hooks
-    - identity
-    - law
-    - standard
-  matrix:
-    - access
-    - accounting
-    - hooks
-    - identity
-    - law
-    - scorecard
-    - standard
-    - vendors
-  backlinks:
-    - access
-    - accounting
-    - hooks
-    - identity
-    - law
-    - scorecard
-    - standard
-    - vendors
 signatures:
-  computationUuid: "6ca04cc5-0879-88b3-99cb-dc0a66934b3d"
+  computationUuid: "e4cf0814-611d-8c7d-bc56-dce8ab19b80a"
   stages:
     - stage: path
       stageUuid: "63ceafff-7978-8d09-9a1e-dd026358cb01"
@@ -78,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "775fed0b-13e7-8f9b-b7fc-e9ea058912b3"
     - stage: horo
-      stageUuid: "799f6bf4-ac47-8dee-b0db-1932adbbd88c"
+      stageUuid: "ac0078cb-0614-8ecb-8e52-ac69031460c1"
     - stage: seal
       stageUuid: "6f5607e1-780e-88fa-bd2a-61f8db04332e"
     - stage: uuid
-      stageUuid: "17db5c2b-5f99-884b-93dd-aef3b5b9e370"
+      stageUuid: "8e5ab5cd-239e-8de3-a42b-e6d3c9c6997c"
 version: 2
 ---
 # vendor-scorecards

@@ -1,63 +1,35 @@
 ---
 name: percutaneous
 description: "Use when reasoning about percutaneous as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/percutaneous
-coordinate: percutaneous · 5/round · 78784491
-contentUuid: "77660a8c-d53f-5960-94b9-74b329c6802b"
-diamondUuid: "b388e471-fb0e-8a93-ac7e-b76d0fa5e410"
-uuid: "78784491-a8c4-85f6-83f3-eff0b51590ac"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/percutaneous"
+coordinate: "vocabulary/percutaneous · 7/descent · c036d1f6"
+contentUuid: "bba64362-60ed-53f0-87c2-3e0390be777f"
+diamondUuid: "0a325599-cb8f-8766-8f31-f9355406f8e2"
+uuid: "c036d1f6-c59c-814a-940d-dc488f324683"
+horo: 7
 typography:
-  partition: percutaneous
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "1136a270-ba80-813d-9f9a-77a56ea95db0"
+  computationUuid: "11525719-ce34-8a6c-bf32-6d5cc1174767"
   stages:
     - stage: path
-      stageUuid: "dbe2a372-4ef5-8bd5-8ef0-8eaa236f0d50"
+      stageUuid: "1a51a681-8f00-8ec7-9402-836b08b90c7b"
     - stage: trinity
-      stageUuid: "24855c93-2f90-83f1-ae29-48a5c9e6d136"
+      stageUuid: "3a0de1e3-9a60-877c-b15f-195309426b50"
     - stage: boundary
-      stageUuid: "4094b905-af3a-8c65-b51c-f8ef93b89dd4"
+      stageUuid: "e9991ff4-aa29-8873-98d2-3ce17923b8cb"
     - stage: links
-      stageUuid: "bea502b6-f356-8bea-84c9-637a57198bb4"
+      stageUuid: "6d9cbaec-d39e-8bf3-b9b6-aa58bb017e5b"
     - stage: horo
-      stageUuid: "c85f14ca-a9ba-81b2-ba11-3384263afb60"
+      stageUuid: "08eddfbe-f4f7-8a40-af1b-afd37436a54d"
     - stage: seal
-      stageUuid: "4e83c16e-f801-8b3e-a489-eb05e5d4ad6e"
+      stageUuid: "fb43fecf-7eec-8ea1-bddc-b9b40cb9d1e2"
     - stage: uuid
-      stageUuid: "ece3245a-d698-8208-ad93-a66d12ad2d30"
+      stageUuid: "cd7525a9-f0aa-8c1d-a735-3df05037e4f5"
 version: 2
 ---
 # percutaneous

@@ -1,103 +1,27 @@
 ---
 name: projection
 description: "Use when proving the projection leg — that the FORWARD project (content → uuid) is free and deterministic while its INVERSE (recover the analog negative without the held key) costs the maximum, unbounded at the biggest blockchain — and you must tag the ∞ instead of letting a raw Infinity leak into the bundle."
-atomPath: proof/projection
-coordinate: proof/projection · 8/crest · 74c2bf95
-contentUuid: "381ec825-5ef9-5340-a340-cba4d57ba75c"
-diamondUuid: "e621d267-3f6d-8c05-8e31-a25f3c0013ba"
-uuid: "74c2bf95-c033-831a-a15f-bb09e9216fda"
-horo: 8
-bonds:
-  in:
-    - anchor
-    - beyond
-    - cost
-    - entry
-    - give
-    - identity
-    - law
-    - localize
-    - merge
-    - proof
-    - take
-    - torus
-    - uuid
-    - zeropoint
-  out:
-    - anchor
-    - beyond
-    - cost
-    - entry
-    - give
-    - identity
-    - law
-    - localize
-    - merge
-    - proof
-    - take
-    - torus
-    - uuid
-    - zeropoint
+atomPath: "proof/projection"
+coordinate: "proof/projection · 7/descent · 7b1b4b47"
+contentUuid: "950d932c-965d-5ee9-a6a3-445f32f11e8f"
+diamondUuid: "e1229311-4b69-8833-899d-05817d6ea475"
+uuid: "7b1b4b47-85ce-87d7-bdd2-8a7277eda21c"
+horo: 7
 typography:
   partition: proof
   bondDegree: 53
-  neighbors: []
 standards:
-  - Conservation Law 55/62 (forge ≫ verify; coverage → ∞ at the anchor)
   - "NIST SP 800-57 Part 1 r5 §5.6.1 (anchor key strengths)"
+  - "NIST SP 800-57 Part 1 r5 §5.6.1 (anchor key strengths)`"
   - "NIST-SP-800-57"
   - "RFC 9562 §5.8 (content-uuid v8, the forward projection) · RFC 8785 (JCS)"
+  - "RFC 9562 §5.8 (content-uuid v8, the forward projection) · RFC 8785 (JCS)`"
   - "RFC-8785"
   - "SEC 2 secp256k1 / FIPS 186-4 P-256 (ECDLP — the inverse key recovery)"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - anchor
-    - beyond
-    - cost
-    - entry
-    - give
-    - identity
-    - law
-    - localize
-    - merge
-    - proof
-    - take
-    - torus
-    - uuid
-    - zeropoint
-  matrix:
-    - anchor
-    - beyond
-    - cost
-    - entry
-    - give
-    - identity
-    - law
-    - localize
-    - merge
-    - proof
-    - take
-    - torus
-    - uuid
-    - zeropoint
-  backlinks:
-    - anchor
-    - beyond
-    - cost
-    - entry
-    - give
-    - identity
-    - law
-    - localize
-    - merge
-    - proof
-    - take
-    - torus
-    - uuid
-    - zeropoint
 signatures:
-  computationUuid: "6d8836b3-d590-8a2d-a42d-d4b95ebbf91c"
+  computationUuid: "d76014e0-db9a-8c4d-96cd-a487ce4415b9"
   stages:
     - stage: path
       stageUuid: "d6eb7272-a5f9-853e-9fd6-6ad1e3123267"
@@ -108,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "39217772-f251-879a-8a2e-f9a452dd05ab"
     - stage: horo
-      stageUuid: "144e2f4a-bc48-895c-91fe-a35a21916f3c"
+      stageUuid: "06cbcc7f-b697-808b-987a-3db2e4357c25"
     - stage: seal
       stageUuid: "f989f461-f14a-8183-910a-98417ffbb1f1"
     - stage: uuid
-      stageUuid: "d66c5c9a-9cfb-8bb2-87e4-dcac89fb5334"
+      stageUuid: "891c7b1d-57e5-896a-b560-85fe71cf4e54"
 version: 2
 ---
 # proof-projection — the bounded-infinity organ

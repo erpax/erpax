@@ -2,112 +2,19 @@
 name: sub
 description: "Use when reasoning about sub as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: sub
-coordinate: sub · 1/base · 7798c791
-contentUuid: "9df35be1-2a3d-55d0-8b78-a2c80b3b1539"
-diamondUuid: "45b81641-f08a-898e-ab29-17e6de73ba28"
-uuid: "7798c791-68ff-8f93-be5d-e57d6b9a1159"
+coordinate: "sub · 1/base · 1eb0c820"
+contentUuid: "9a2f7b9b-3578-5989-897d-ee2fbb5f4e58"
+diamondUuid: "cedb02c7-7d4a-8f46-be9f-18a0171f13ef"
+uuid: "1eb0c820-d38b-81fa-ad3a-9cc44c7a2b73"
 horo: 1
-bonds:
-  in:
-    - application
-    - broadcast
-    - category
-    - channel
-    - collapse
-    - event
-    - events
-    - law
-    - merge
-    - organization
-    - reservation
-    - stage
-    - sti
-    - structure
-    - suffix
-    - test
-    - trip
-  out:
-    - application
-    - broadcast
-    - category
-    - channel
-    - collapse
-    - event
-    - events
-    - law
-    - merge
-    - organization
-    - reservation
-    - stage
-    - sti
-    - structure
-    - suffix
-    - test
-    - trip
 typography:
   partition: sub
-  bondDegree: 62
-  neighbors: []
+  bondDegree: 64
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - application
-    - broadcast
-    - category
-    - channel
-    - collapse
-    - event
-    - events
-    - law
-    - merge
-    - organization
-    - reservation
-    - stage
-    - sti
-    - structure
-    - suffix
-    - test
-    - trip
-  matrix:
-    - application
-    - broadcast
-    - category
-    - channel
-    - collapse
-    - event
-    - events
-    - law
-    - merge
-    - organization
-    - reservation
-    - stage
-    - sti
-    - structure
-    - suffix
-    - test
-    - trip
-  backlinks:
-    - application
-    - broadcast
-    - category
-    - channel
-    - collapse
-    - event
-    - events
-    - law
-    - merge
-    - organization
-    - reservation
-    - stage
-    - sti
-    - structure
-    - suffix
-    - test
-    - trip
 signatures:
-  computationUuid: "c4cde7ce-e17e-8f72-b757-649ef333fb3a"
+  computationUuid: "a8db847b-8552-8879-9cfd-a468bd129e98"
   stages:
     - stage: path
       stageUuid: "dbfe8301-5af7-89b1-8087-bdb0ce4dcafc"
@@ -118,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6a48cb93-49c4-8b7e-87b5-362335932610"
     - stage: horo
-      stageUuid: "d9977d67-a57c-84fa-8b07-307fd4e0bea0"
+      stageUuid: "264dd912-0ee0-830a-8ad5-05002be0a90b"
     - stage: seal
-      stageUuid: "df5e469d-5184-861d-831c-729ab586c5ec"
+      stageUuid: "eae51364-509c-85bf-b033-8cf32e6685c9"
     - stage: uuid
-      stageUuid: "8afaabba-4d1c-8e7a-a4a4-c23a3099e6a3"
+      stageUuid: "b1697fcd-0971-8872-952a-2a433dd505c4"
 version: 2
 ---
 # sub

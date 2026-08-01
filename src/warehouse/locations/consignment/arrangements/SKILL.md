@@ -1,89 +1,34 @@
 ---
 name: arrangements
 description: "Use when managing goods shipped to a consignee for onward sale where control transfers only at consignee sale — master IFRS-15 §B77-B78 / ASC 606-10-55-79 agreement covering consignee, term, control-transfer trigger, return rights, INCOTERM, and max-value cap. The consignment master-agreement collection."
-atomPath: warehouse/locations/consignment/arrangements
-coordinate: warehouse/locations/consignment/arrangements · 7/descent · f768dc1b
-contentUuid: "bb982ee2-16d4-5b62-afd4-f2afcaa43592"
-diamondUuid: "c9a7028f-c1b7-8aae-912b-4324e7f04ad7"
-uuid: "f768dc1b-680d-8f72-8da1-2b7259165f9b"
-horo: 7
-bonds:
-  in:
-    - accounting
-    - balance
-    - consignment
-    - entry
-    - identity
-    - inventories
-    - law
-    - locations
-    - proof
-    - sales
-    - transaction
-  out:
-    - accounting
-    - balance
-    - entry
-    - identity
-    - inventories
-    - law
-    - locations
-    - proof
-    - sales
-    - transaction
+atomPath: "warehouse/locations/consignment/arrangements"
+coordinate: "warehouse/locations/consignment/arrangements · 8/crest · a88c0b22"
+contentUuid: "d6a49a62-bb77-544f-bcbd-7d3bae705151"
+diamondUuid: "5eeb27b1-99e2-8d39-8b23-f7156b09e594"
+uuid: "a88c0b22-55d1-8b27-ae8a-37a4c36d7a51"
+horo: 8
 typography:
   partition: warehouse
   bondDegree: 0
-  neighbors: []
 standards:
   - "EN-16931:2017 §BG-15 deliver-to-information"
+  - "EN-16931:2017 §BG-15 deliver-to-information`"
   - "IFRS IAS-2 §6 inventory-held-at-other-location"
   - "IFRS IFRS-15 §38 point-in-time-control-transfer"
   - "IFRS IFRS-15 §B77-B78 consignment-arrangements"
   - "INCOTERMS 2020 (CPT / CIP / DDP control-transfer points)"
   - "INCOTERMS-2020"
-  - "ISO-19011:2018 audit-trail consignment-arrangement-evidence"
   - "ISO-3166-1:2020 country-codes"
+  - "ISO-3166-1:2020 country-codes`"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "SOX §404 internal-controls revenue-deferral TOM-AR-04"
   - "US-GAAP ASC-606-10-55-79 consignment-indicators"
   - "US-GAAP ASC-606-10-55-80 consignment-control"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - balance
-    - entry
-    - identity
-    - inventories
-    - law
-    - proof
-    - sales
-    - transaction
-  matrix:
-    - accounting
-    - balance
-    - entry
-    - identity
-    - inventories
-    - law
-    - locations
-    - proof
-    - sales
-    - transaction
-  backlinks:
-    - accounting
-    - balance
-    - entry
-    - identity
-    - inventories
-    - law
-    - locations
-    - proof
-    - sales
-    - transaction
 signatures:
-  computationUuid: "a6da6d73-3880-8e9f-9782-3a66a4747a4e"
+  computationUuid: "78e08a86-c114-88ed-9490-f19e2ab64ee1"
   stages:
     - stage: path
       stageUuid: "2832901f-7209-8dd6-a06c-1b54315cc475"
@@ -94,11 +39,11 @@ signatures:
     - stage: links
       stageUuid: "8c257b5a-2a37-8305-816b-51f8211aa49f"
     - stage: horo
-      stageUuid: "81c75ff9-bbff-8b6e-a135-6f1286b3ad9a"
+      stageUuid: "9edace24-35c4-8683-8d34-0ec503f43c12"
     - stage: seal
       stageUuid: "ecefbd6a-8b2d-8825-8205-6bcea0997fc2"
     - stage: uuid
-      stageUuid: "2e23cfa3-de65-8d3c-88ee-b2e1c5461196"
+      stageUuid: "5646daaa-6752-886c-a58c-38770f68094b"
 version: 2
 ---
 ## Overview

@@ -1,81 +1,35 @@
 ---
 name: death
 description: "Use when reasoning about death as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/death
-coordinate: death · 8/crest · e1262f16
-contentUuid: "9f4806e1-c6c9-5037-a23f-6669bce08e7e"
-diamondUuid: "42a1c693-2424-81f3-90f3-c5154c0fd4e6"
-uuid: "e1262f16-b75a-8563-8c0a-b440c8b573fa"
+atomPath: "vocabulary/death"
+coordinate: "vocabulary/death · 8/crest · 356253ed"
+contentUuid: "dda5d625-33d0-5b8d-8e59-7b57c533e957"
+diamondUuid: "45b62b10-0501-8763-ae70-afc3822c5db3"
+uuid: "356253ed-a9d5-8cdf-be47-127bbed83c61"
 horo: 8
-bonds:
-  in:
-    - collapse
-    - date
-    - law
-    - merge
-    - orphism
-    - place
-    - shamanism
-    - sti
-  out:
-    - collapse
-    - date
-    - law
-    - merge
-    - orphism
-    - place
-    - shamanism
-    - sti
 typography:
-  partition: death
+  partition: vocabulary
   bondDegree: 25
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - date
-    - law
-    - merge
-    - place
-    - sti
-  matrix:
-    - collapse
-    - date
-    - law
-    - merge
-    - orphism
-    - place
-    - shamanism
-    - sti
-  backlinks:
-    - collapse
-    - date
-    - law
-    - merge
-    - orphism
-    - place
-    - shamanism
-    - sti
 signatures:
-  computationUuid: "8c497735-7b66-8d55-8ca1-bc32a7d80bf8"
+  computationUuid: "61c95348-cce3-8a44-8729-6b9af0057292"
   stages:
     - stage: path
-      stageUuid: "7e1ebb45-4f5c-80e6-b412-9140727b8834"
+      stageUuid: "0fc83635-3444-8ed0-b22d-a3a6c0799920"
     - stage: trinity
-      stageUuid: "cfd0f459-6d9c-81c7-bf76-ddb4beb2a88a"
+      stageUuid: "322e6fed-f4cd-8e2b-904e-e574950ecab9"
     - stage: boundary
-      stageUuid: "7c835dd1-e95c-893d-a0cf-f5d3cabe6742"
+      stageUuid: "fe0c61c9-0e39-8f33-b895-4efabbd23cef"
     - stage: links
-      stageUuid: "4efb909e-2d18-8e20-8edc-3f3855cf0e2e"
+      stageUuid: "ab8cde76-35cb-8874-86d8-1597b01ed916"
     - stage: horo
-      stageUuid: "34cbdcb9-4449-82e9-9bdb-7d55d66812de"
+      stageUuid: "5b3cf1d2-585a-8938-a938-a4e222ef31b8"
     - stage: seal
-      stageUuid: "2cc4e314-8127-82d5-87e3-f8d1570aa6b6"
+      stageUuid: "92f8c0c2-8f94-8df4-bc7c-8dad8e439f87"
     - stage: uuid
-      stageUuid: "c885d0ee-4d27-8436-8964-9dc13aeced43"
+      stageUuid: "a726c5e6-b42d-81b2-b3e7-763dd9e06912"
 version: 2
 ---
 # death

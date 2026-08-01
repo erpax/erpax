@@ -1,63 +1,35 @@
 ---
 name: made
 description: "Use when reasoning about made as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/made
-coordinate: made · 7/descent · 8937d7d2
-contentUuid: "83ff2a2f-9340-5947-a3a8-b8098720c465"
-diamondUuid: "54307175-0781-8ee5-b494-b4ab74135b9f"
-uuid: "8937d7d2-d87c-8d04-93aa-a144fab9748b"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/made"
+coordinate: "vocabulary/made · 5/round · 836fd889"
+contentUuid: "848eb8ca-453a-55f7-93d1-be139a7d1e7d"
+diamondUuid: "ada01b75-2891-859e-843e-8e819fc14756"
+uuid: "836fd889-7e27-831e-9664-90e2a46434f8"
+horo: 5
 typography:
-  partition: made
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "132cdc59-30d6-8240-8ca6-4d55e2e029e0"
+  computationUuid: "3171b80a-48eb-8258-82bf-1d74532369c5"
   stages:
     - stage: path
-      stageUuid: "ff6602de-63cd-8a70-bd0b-32b48a6c152a"
+      stageUuid: "26bde49b-94e6-8873-9abd-af53d5426dd9"
     - stage: trinity
-      stageUuid: "a6d59016-ca15-8601-841e-08e102b40b61"
+      stageUuid: "18306d7c-5a18-88cd-b5a5-d1eea019798a"
     - stage: boundary
-      stageUuid: "77e28d57-7a94-8d02-b5c7-259a6aadbe34"
+      stageUuid: "12d0513f-e266-8dc8-8e36-f0b7375c4aba"
     - stage: links
-      stageUuid: "5cd60189-68a1-81cf-98da-95721a8185d9"
+      stageUuid: "e7a8ce33-d98f-80bb-b22e-8b14825e5568"
     - stage: horo
-      stageUuid: "9028c8ff-48dd-8049-9ad7-67a4cbd3eff5"
+      stageUuid: "87aae69c-64b3-87ac-9cc3-84f060e5c775"
     - stage: seal
-      stageUuid: "ec5c4d9f-5a10-80fd-b720-1a93d4df70fb"
+      stageUuid: "00ac4407-22c1-86e0-b7c2-6eca378ab6a0"
     - stage: uuid
-      stageUuid: "1366087a-23d3-8b47-81f1-3ef3df6b1fc6"
+      stageUuid: "5ba13e41-e3f8-8891-83e6-282b024a51a5"
 version: 2
 ---
 # made

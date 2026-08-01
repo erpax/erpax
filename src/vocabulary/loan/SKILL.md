@@ -1,133 +1,35 @@
 ---
 name: loan
 description: "Use when reasoning about loan as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/loan
-coordinate: loan · 8/crest · 9542b484
-contentUuid: "b5eb24d3-6c86-543a-bdf8-f8f9586fd5f7"
-diamondUuid: "120f1b74-d580-8d01-8014-4e317f286e82"
-uuid: "9542b484-8f1b-848d-af57-73f8fda728f0"
-horo: 8
-bonds:
-  in:
-    - amount
-    - collapse
-    - credit
-    - form
-    - frequency
-    - law
-    - mandate
-    - merge
-    - mortgage
-    - number
-    - payment
-    - payments
-    - recourse
-    - renegotiable
-    - repayment
-    - sti
-    - term
-    - type
-  out:
-    - amount
-    - collapse
-    - credit
-    - form
-    - frequency
-    - law
-    - mandate
-    - merge
-    - mortgage
-    - number
-    - payment
-    - payments
-    - recourse
-    - renegotiable
-    - repayment
-    - sti
-    - term
-    - type
+atomPath: "vocabulary/loan"
+coordinate: "vocabulary/loan · 2/share · 9576a4ca"
+contentUuid: "f35d0641-3282-559c-b9ae-a794143f1a0d"
+diamondUuid: "d7cf5320-2e4d-8ec3-bee6-8a066fcfbc41"
+uuid: "9576a4ca-1e65-8553-befb-61a793ec30cf"
+horo: 2
 typography:
-  partition: loan
+  partition: vocabulary
   bondDegree: 63
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - amount
-    - collapse
-    - credit
-    - form
-    - frequency
-    - law
-    - mandate
-    - merge
-    - mortgage
-    - number
-    - payment
-    - payments
-    - recourse
-    - renegotiable
-    - repayment
-    - sti
-    - term
-    - type
-  matrix:
-    - amount
-    - collapse
-    - credit
-    - form
-    - frequency
-    - law
-    - mandate
-    - merge
-    - mortgage
-    - number
-    - payment
-    - payments
-    - recourse
-    - renegotiable
-    - repayment
-    - sti
-    - term
-    - type
-  backlinks:
-    - amount
-    - collapse
-    - credit
-    - form
-    - frequency
-    - law
-    - mandate
-    - merge
-    - mortgage
-    - number
-    - payment
-    - payments
-    - recourse
-    - renegotiable
-    - repayment
-    - sti
-    - term
-    - type
 signatures:
-  computationUuid: "7dc7d89e-d086-8eaa-9e73-3219f5467350"
+  computationUuid: "d125803a-460a-8cc1-96ac-caaf5e75972b"
   stages:
     - stage: path
-      stageUuid: "ee1f173c-6923-8298-9543-30ee55a48e44"
+      stageUuid: "5bd920b6-f5d4-8e44-9653-2283ad3d5b1e"
     - stage: trinity
-      stageUuid: "ff6b0bf1-ca08-8942-9f47-611a49c798a9"
+      stageUuid: "699bd19a-7496-8018-b34a-a4ab831904ad"
     - stage: boundary
-      stageUuid: "0a7819f5-5fcf-8ad7-910e-01c5ac0d7751"
+      stageUuid: "df2080f0-c7bc-8a47-830e-c9e9991d9f17"
     - stage: links
-      stageUuid: "d3712b3a-8b19-8103-a85f-c83ba36369f8"
+      stageUuid: "aa305801-28de-8f9c-8f3a-5cb0d1207949"
     - stage: horo
-      stageUuid: "8bc83d1c-8726-80f5-8708-89be3b7dc457"
+      stageUuid: "f551f87e-2c29-87c5-b718-3a70dd6bfb05"
     - stage: seal
-      stageUuid: "e06a1b39-9eee-8c77-ab34-3b916f811012"
+      stageUuid: "2baf5198-74b7-8717-80d9-a52786abcfa8"
     - stage: uuid
-      stageUuid: "688cff3d-4011-8dcd-9850-8de41bf4e371"
+      stageUuid: "348ba91e-215c-8e13-9c77-cd3a89586e58"
 version: 2
 ---
 # loan

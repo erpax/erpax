@@ -1,63 +1,35 @@
 ---
 name: causes
 description: "Use when reasoning about causes as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/causes
-coordinate: causes · 7/descent · 245edc93
-contentUuid: "d6ea07d6-fe8f-56df-a1d0-8ce5e4e26221"
-diamondUuid: "baefb335-21b7-8b0a-b035-8806363f9909"
-uuid: "245edc93-ade1-8fbf-a70e-790299158ffe"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/causes"
+coordinate: "vocabulary/causes · 2/share · 69d6c4f7"
+contentUuid: "1d10f472-bb61-59a1-81e6-8fbd0f30e643"
+diamondUuid: "f4c3b243-f9c8-87cc-9baf-f76601faa425"
+uuid: "69d6c4f7-13c0-83d5-b513-aed09dabc0d2"
+horo: 2
 typography:
-  partition: causes
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "ca2f1afc-78de-8b25-babe-9c2c23ce5287"
+  computationUuid: "2b1d9826-1116-82df-82d3-1e49c6d9b73b"
   stages:
     - stage: path
-      stageUuid: "44f1441e-7c41-8af9-85b7-fe6e4f7c0760"
+      stageUuid: "e3217265-5b64-828d-8aae-5e039703e60b"
     - stage: trinity
-      stageUuid: "1ee6366d-4504-8b3d-8f3b-470b11d69dbd"
+      stageUuid: "04c97a08-87d5-8550-93e5-c204c181391c"
     - stage: boundary
-      stageUuid: "de2158f0-9f5b-8b20-938b-a05570af57ff"
+      stageUuid: "84dbf326-3e93-8277-8ed6-61216ef899ec"
     - stage: links
-      stageUuid: "5b8b0a0d-3428-881f-97bd-1add77ad08ed"
+      stageUuid: "e0f1536f-37d9-8972-94cd-47897c666095"
     - stage: horo
-      stageUuid: "c82d328e-a274-8999-af19-846bb104fcc5"
+      stageUuid: "87af669e-f97c-89f9-bdb5-addf1306c964"
     - stage: seal
-      stageUuid: "57277106-df2c-891f-a186-6bf6ecf6ba5a"
+      stageUuid: "1b826176-647a-83b0-ba59-90751846a8ec"
     - stage: uuid
-      stageUuid: "9e2e305c-1d1c-8e01-be8b-7a9f786b61d0"
+      stageUuid: "17b3dd09-aea7-89f9-ae1f-1d8b5be8d48f"
 version: 2
 ---
 # causes

@@ -1,63 +1,35 @@
 ---
 name: front
 description: "Use when reasoning about front as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/front
-coordinate: front · 8/crest · d60c2332
-contentUuid: "ac8fca24-174f-51c4-8368-58660d59708c"
-diamondUuid: "aa10cf18-1fd5-83e9-b1b3-4d332de55372"
-uuid: "d60c2332-e245-814a-b94f-52aa55623625"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/front"
+coordinate: "vocabulary/front · 4/weave · 5be12cf4"
+contentUuid: "11e91286-b2d7-5b83-88e3-6ad2f4448e6f"
+diamondUuid: "7cef5a94-0dd2-8707-8743-c2cb6652d1fb"
+uuid: "5be12cf4-1662-88dc-a23e-18720156f900"
+horo: 4
 typography:
-  partition: front
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "01da6252-8d66-8d5f-b2ca-b772d9af7683"
+  computationUuid: "d45e3d0e-a5f2-8934-99c7-b8dab7bec4a1"
   stages:
     - stage: path
-      stageUuid: "370c6dec-4f10-8ae2-8359-9933aabdac6c"
+      stageUuid: "0fccdb9d-9a62-8ed5-a44e-eebfd32b935e"
     - stage: trinity
-      stageUuid: "694e7323-08d5-8f4b-8b64-24ce2a279416"
+      stageUuid: "ffa4f7a2-441f-8fed-abec-2f59c9da778a"
     - stage: boundary
-      stageUuid: "8464c697-ee23-8e2d-b110-aff723c01f91"
+      stageUuid: "ea8f1a86-457d-8ffb-88f1-0714c4c19591"
     - stage: links
-      stageUuid: "d4fb126a-b925-889e-b4a0-9d54f70cf26c"
+      stageUuid: "20adaa1c-7d4f-8e68-a16f-6e297388345f"
     - stage: horo
-      stageUuid: "fe1a9c7e-4e0f-85da-b5d8-9b12fa5c120a"
+      stageUuid: "266e5fe7-488c-8784-ab67-7bb80ab375ef"
     - stage: seal
-      stageUuid: "6538e932-93df-81c5-bb8b-9a512e3ec8d5"
+      stageUuid: "24ebcc95-71b7-8edc-870c-185a6eb80d10"
     - stage: uuid
-      stageUuid: "240e9aca-9202-83da-bac9-fb4dc52faca4"
+      stageUuid: "a1b17a6f-8929-8582-a069-393fe13a213f"
 version: 2
 ---
 # front

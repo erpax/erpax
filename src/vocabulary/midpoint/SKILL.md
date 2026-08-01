@@ -1,68 +1,35 @@
 ---
 name: midpoint
 description: "Use when reasoning about midpoint as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/midpoint
-coordinate: midpoint · 2/share · 232e3ade
-contentUuid: "8be4fbad-198c-5d89-b9e6-85b3c085a81b"
-diamondUuid: "db631eea-bbc8-8d8d-a6f9-833da7a0a684"
-uuid: "232e3ade-355d-8d6c-a384-963cda7974eb"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/midpoint"
+coordinate: "vocabulary/midpoint · 5/round · 1e90a484"
+contentUuid: "bc3624bc-b24d-5a9c-b8c2-18eb7fcc060f"
+diamondUuid: "cb6148c1-21e0-8d5f-9a09-aa0b18a3785d"
+uuid: "1e90a484-a0f4-87cc-8933-ce4e8277f7da"
+horo: 5
 typography:
-  partition: midpoint
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "1d42515a-cea6-8238-8c53-0ea5fada9144"
+  computationUuid: "9047fc19-d00a-8781-a650-cff99a4977ce"
   stages:
     - stage: path
-      stageUuid: "f508526a-dc4b-8247-af12-f9baf91597ea"
+      stageUuid: "2236a07e-602a-87ba-a229-62a6b6954aed"
     - stage: trinity
-      stageUuid: "181b6901-36b9-86c5-8a1c-052442900171"
+      stageUuid: "38518690-def4-80f7-bf22-1fe1e4a4c59a"
     - stage: boundary
-      stageUuid: "360231b4-82bb-8f5c-9577-010f29563b32"
+      stageUuid: "ddc1d840-76e4-84b3-bdf3-99b2a28bef12"
     - stage: links
-      stageUuid: "c80f5553-2dd4-8d03-807e-24f06abc0c7f"
+      stageUuid: "dba644c1-0098-867d-ad32-e826b42e195e"
     - stage: horo
-      stageUuid: "d4eb5499-c9ee-8169-8a62-21744afd6e3a"
+      stageUuid: "69afc29e-e245-8692-a97e-4c3ce14b1c00"
     - stage: seal
-      stageUuid: "ae3f7263-3e7b-84b7-a4e1-3d94af193f7b"
+      stageUuid: "2de2cee7-ddb8-893c-ad3c-b8857a4eb228"
     - stage: uuid
-      stageUuid: "3670320d-348d-8188-9833-7dac9eb74b74"
+      stageUuid: "23f81b8b-ae68-8e31-be0b-71d769d82d83"
 version: 2
 ---
 # midpoint

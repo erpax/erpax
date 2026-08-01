@@ -2,75 +2,19 @@
 name: sign
 description: "Use when reasoning about sign as a medical facet of [[medical]] — vocabulary pivot to @/sign; nested not duplicated."
 atomPath: "medical/sign"
-coordinate: "medical/sign · 4/weave · ac9801d4"
-contentUuid: "0d95253b-0dad-5e7e-b207-81dc2df947a6"
-diamondUuid: "6bc1b6a0-96de-854c-9299-996a4f133af0"
-uuid: "ac9801d4-0c1d-81ac-8258-5ba5cd1e66c4"
+coordinate: "medical/sign · 4/weave · d13c9cb1"
+contentUuid: "89f76106-6afd-58b1-85ed-3d33ec6d0db9"
+diamondUuid: "e4b43d3e-18ad-8882-887f-f279546e2842"
+uuid: "d13c9cb1-2c23-8b66-8955-883bf59f4cc1"
 horo: 4
-bonds:
-  in:
-    - call
-    - collapse
-    - detected
-    - distinguishing
-    - law
-    - medical
-    - merge
-    - sign
-    - sti
-    - symptom
-    - vital
-  out:
-    - call
-    - collapse
-    - detected
-    - distinguishing
-    - law
-    - medical
-    - merge
-    - sign
-    - sti
-    - symptom
-    - vital
 typography:
   partition: medical
   bondDegree: 43
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - medical
-    - merge
-    - sign
-  matrix:
-    - call
-    - collapse
-    - detected
-    - distinguishing
-    - law
-    - medical
-    - merge
-    - sign
-    - sti
-    - symptom
-    - vital
-  backlinks:
-    - call
-    - collapse
-    - detected
-    - distinguishing
-    - law
-    - medical
-    - merge
-    - sign
-    - sti
-    - symptom
-    - vital
 signatures:
-  computationUuid: "703a63cb-b8f1-8628-b70d-05b464fe1c5d"
+  computationUuid: "d1e33010-4d45-8e8e-8894-0b3182225717"
   stages:
     - stage: path
       stageUuid: "c27978e7-259f-8060-b76c-6c335634ac96"
@@ -81,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9497699a-4218-87ad-bf1d-4ab325689cb4"
     - stage: horo
-      stageUuid: "ef893c79-10bb-8409-8f48-b28c610976e2"
+      stageUuid: "427d5f76-cbc7-8eb0-ba96-ce81dd7f7ef6"
     - stage: seal
       stageUuid: "23a4a7b9-1dab-8839-9b0f-d99187a783ac"
     - stage: uuid
-      stageUuid: "142dcb5e-c7fd-8cc4-a288-58dbaa51b175"
+      stageUuid: "6e95701e-584c-83db-8c6e-2e12e7cb5994"
 version: 2
 ---
 # medical/sign — medical facet

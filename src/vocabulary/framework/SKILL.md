@@ -1,68 +1,35 @@
 ---
 name: framework
 description: "Use when reasoning about framework as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/framework
-coordinate: framework · 2/share · ae5da8fb
-contentUuid: "d07c0152-9b6f-52d4-ba26-d0539cdf9a48"
-diamondUuid: "4dca5852-78b7-8e56-85e7-72a503c140aa"
-uuid: "ae5da8fb-a746-8ccf-82bb-06082ac3410c"
+atomPath: "vocabulary/framework"
+coordinate: "vocabulary/framework · 2/share · 502c0cca"
+contentUuid: "2af7b5da-de8e-5fc5-84ea-912d195b8192"
+diamondUuid: "2e45a5f5-0a9a-8006-8bea-288f76c9d237"
+uuid: "502c0cca-d50e-8ae5-892f-42d991cfca04"
 horo: 2
-bonds:
-  in:
-    - collapse
-    - educational
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - educational
-    - law
-    - merge
-    - sti
 typography:
-  partition: framework
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - educational
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - educational
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - educational
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "dd511850-c78e-8af0-81ce-49084f26288d"
+  computationUuid: "32882c10-d50a-8ebe-856b-a17b5daaa09b"
   stages:
     - stage: path
-      stageUuid: "8b26bf4a-8e5d-893a-a6ff-661851bdfc8b"
+      stageUuid: "075c42d9-1ff5-8fbf-8168-461b087f6076"
     - stage: trinity
-      stageUuid: "f7cb9a7f-4fc4-885b-9042-daf1d12d893b"
+      stageUuid: "6fdd60a8-1460-8945-b25a-a0465890895d"
     - stage: boundary
-      stageUuid: "d13098f1-34a5-8245-b885-c99b9b34abf0"
+      stageUuid: "d990cfd9-9f6d-85dd-9a22-4380ce90ab4c"
     - stage: links
-      stageUuid: "49ddb97b-3e10-8fae-b8f6-0505d2f1a43d"
+      stageUuid: "c7958ef7-6501-88e4-9f15-820f2f849337"
     - stage: horo
-      stageUuid: "76465086-80a7-8353-b003-1de272d8cb37"
+      stageUuid: "54469211-bfd5-8762-a2b5-d7c90244154a"
     - stage: seal
-      stageUuid: "0053e21a-6140-8ada-ae87-d2697c3003c9"
+      stageUuid: "012f15a6-54c2-83c8-8ffa-534c9e6df344"
     - stage: uuid
-      stageUuid: "fb10d288-d3d5-87f8-aa8f-9921b22164be"
+      stageUuid: "8c27a782-ddb8-88cf-ac48-8b0aed08b603"
 version: 2
 ---
 # framework

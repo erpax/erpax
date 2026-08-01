@@ -2,123 +2,19 @@
 name: test
 description: "Use when reasoning about test as a medical facet of [[medical]] — vocabulary pivot to @/test; nested not duplicated."
 atomPath: "medical/test"
-coordinate: "medical/test · 8/crest · c43031cc"
-contentUuid: "7c54f48d-89b1-51a5-bff9-59c1c0863f61"
-diamondUuid: "4a1d17c4-0b02-8316-b66a-ed4b3cf9735b"
-uuid: "c43031cc-7869-8c3d-bb53-1756c218e5a2"
-horo: 8
-bonds:
-  in:
-    - aura
-    - available
-    - blood
-    - collapse
-    - color
-    - diamond
-    - folder
-    - heart
-    - hooks
-    - identifying
-    - imaging
-    - law
-    - medical
-    - merge
-    - names
-    - panel
-    - pathology
-    - pwa
-    - sti
-    - sub
-    - test
-    - typical
-  out:
-    - aura
-    - available
-    - blood
-    - collapse
-    - color
-    - diamond
-    - folder
-    - heart
-    - hooks
-    - identifying
-    - imaging
-    - law
-    - medical
-    - merge
-    - names
-    - panel
-    - pathology
-    - pwa
-    - sti
-    - sub
-    - test
-    - typical
+coordinate: "medical/test · 5/round · 1879fc5b"
+contentUuid: "f0d830b4-21b5-5181-a7e9-24b8e4f6d4bd"
+diamondUuid: "c9bcf41f-5ad6-8f28-9409-3ea3a0810384"
+uuid: "1879fc5b-05a9-8eda-93b0-0aa00864369e"
+horo: 5
 typography:
   partition: medical
-  bondDegree: 102
-  neighbors:
-    - aura
-    - diamond
-    - hallucination
-    - purity
+  bondDegree: 100
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - medical
-    - merge
-    - test
-  matrix:
-    - aura
-    - available
-    - blood
-    - collapse
-    - color
-    - diamond
-    - folder
-    - heart
-    - hooks
-    - identifying
-    - imaging
-    - law
-    - medical
-    - merge
-    - names
-    - panel
-    - pathology
-    - pwa
-    - sti
-    - sub
-    - test
-    - typical
-  backlinks:
-    - aura
-    - available
-    - blood
-    - collapse
-    - color
-    - diamond
-    - folder
-    - heart
-    - hooks
-    - identifying
-    - imaging
-    - law
-    - medical
-    - merge
-    - names
-    - panel
-    - pathology
-    - pwa
-    - sti
-    - sub
-    - test
-    - typical
 signatures:
-  computationUuid: "7ed39ecd-846d-8b51-b79a-0f28f9762a7e"
+  computationUuid: "899a58d3-38c5-831f-bf44-afc812b4acee"
   stages:
     - stage: path
       stageUuid: "a1d06cbb-840f-8b9e-9ff4-abf91813154c"
@@ -129,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "75ae4c2f-bfdf-825b-9712-ccf0d53871dc"
     - stage: horo
-      stageUuid: "79f9f16a-5a47-8795-a334-8a85b59bcd4a"
+      stageUuid: "71b2445c-df4f-83d5-acf5-5a5fe59df810"
     - stage: seal
       stageUuid: "54762295-5624-8a34-a5b7-4048ca86a84b"
     - stage: uuid
-      stageUuid: "c2e03936-1c4e-8ec9-ad9f-9112a2ed2d45"
+      stageUuid: "47d99531-264d-83bd-b87d-331ee9a87777"
 version: 2
 ---
 # medical/test — medical facet

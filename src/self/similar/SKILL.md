@@ -1,57 +1,20 @@
 ---
 name: similar
 description: "Use when reasoning about why the same form holds at every scale of erpax — field → collection → plugin → erpax → agent — the fractal recursion the sequence embodies. The octave lift (×10 mod 9) preserves position (scale-invariance) and the unit Cayley table is a hologram (6 generators → 36 cells); self-similarity is zero-entropy."
-atomPath: self/similar
-coordinate: self/similar · 5/round · 399d2bea
-contentUuid: "2bdf51bc-eb3c-55eb-9d93-be9e593b22ff"
-diamondUuid: "4c5faa33-38c7-8922-ba01-568a4abe9425"
-uuid: "399d2bea-182a-8545-a244-4be4cfdde047"
-horo: 5
-bonds:
-  in:
-    - law
-    - self
-    - similar
-    - thing
-    - whole
-  out:
-    - law
-    - similar
-    - thing
-    - whole
+atomPath: "self/similar"
+coordinate: "self/similar · 1/base · bc6a4662"
+contentUuid: "06afe0d5-a052-52de-ba46-e1a9be700723"
+diamondUuid: "3b875472-920b-8ef7-a416-1da30ffe04a9"
+uuid: "bc6a4662-68b0-8d48-b9f0-22d96b917ab9"
+horo: 1
 typography:
   partition: self
   bondDegree: 24
-  neighbors: []
 standards:
-  - "every quantity computed on (ℤ/9ℤ) via @/horo + @/rodin, never asserted"
   - "the hologram — 6 generators → 36 Cayley cells, 0 free parameters"
 bindings: []
-neighbors:
-  wikilink:
-    - coil
-    - entropy
-    - fractal
-    - gate
-    - holographic
-    - horo
-    - merge
-    - rodin
-    - self
-    - sequence
-    - similar
-  matrix:
-    - law
-    - similar
-    - thing
-    - whole
-  backlinks:
-    - law
-    - similar
-    - thing
-    - whole
 signatures:
-  computationUuid: "7cb1d22d-7a74-8743-a43a-18a825b3e650"
+  computationUuid: "bb1cd698-6af7-8d8a-9695-e584ef4d2b0f"
   stages:
     - stage: path
       stageUuid: "f32b167b-4485-8d15-895b-692cf3d66965"
@@ -62,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4f7729dd-95f9-8fde-93c0-c52ca1abf9c2"
     - stage: horo
-      stageUuid: "e5b447a2-91d8-808f-808e-9add9eeadab8"
+      stageUuid: "8022834e-8c8b-8c76-8539-1292ed9102ec"
     - stage: seal
-      stageUuid: "526eca91-c487-868c-8a0d-93bcff02a237"
+      stageUuid: "2c3ea41e-c147-8dec-9ae1-fb78ef7d9277"
     - stage: uuid
-      stageUuid: "b2daa048-9ad6-8012-a7ae-de9e21ff8eb6"
+      stageUuid: "714971ba-0404-84fe-ad70-1b255e6331f0"
 version: 2
 ---
 # self-similar — the same form at every scale (under [[self]])

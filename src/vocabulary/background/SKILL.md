@@ -1,73 +1,35 @@
 ---
 name: background
 description: "Use when reasoning about background — A schema.org component word, collided out of schema.org compounds — fused from BackgroundNewsArticle (sti · collapse · merge)."
-atomPath: vocabulary/background
-coordinate: background · 1/base · c6c08635
-contentUuid: "42d55a8d-192e-595e-9e5c-3998ec708d87"
-diamondUuid: "d8699445-d859-8fa4-8cd8-8f828be941b5"
-uuid: "c6c08635-622f-8a2a-874a-c02ee8daffac"
+atomPath: "vocabulary/background"
+coordinate: "vocabulary/background · 1/base · a0be5ccd"
+contentUuid: "56915955-44e7-5eaa-b6dd-8fa31577e729"
+diamondUuid: "3242957b-5c4b-85bf-a4b2-b233aceee46e"
+uuid: "a0be5ccd-8c06-839f-b2f8-e9adcaa3d38f"
 horo: 1
-bonds:
-  in:
-    - article
-    - collapse
-    - law
-    - merge
-    - news
-    - sti
-  out:
-    - article
-    - collapse
-    - law
-    - merge
-    - news
-    - sti
 typography:
-  partition: background
-  bondDegree: 20
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 22
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - article
-    - collapse
-    - law
-    - merge
-    - news
-    - sti
-  matrix:
-    - article
-    - collapse
-    - law
-    - merge
-    - news
-    - sti
-  backlinks:
-    - article
-    - collapse
-    - law
-    - merge
-    - news
-    - sti
 signatures:
-  computationUuid: "903a4104-2e74-8fe6-8afd-dfe1b3adf85e"
+  computationUuid: "7878247d-069c-80e1-a84d-02bb9a3b46e7"
   stages:
     - stage: path
-      stageUuid: "c02e9ca0-079d-8289-99c3-e0b51e30b651"
+      stageUuid: "72fc3a49-b3bd-8344-a995-8318f3df8d89"
     - stage: trinity
-      stageUuid: "066585b0-df2b-8959-ab3c-713417ee2e43"
+      stageUuid: "fb36b7d6-bfb6-84d0-8536-bd351344559e"
     - stage: boundary
-      stageUuid: "49aba448-6b27-8f9a-9bbd-a51904871d2e"
+      stageUuid: "978717b7-cfb1-8508-8e4c-105c7c10a31f"
     - stage: links
-      stageUuid: "63cfb130-a5e2-800d-9664-fa56e0f33a34"
+      stageUuid: "0df2fb59-42da-8590-a86b-c9eb6956bd44"
     - stage: horo
-      stageUuid: "0c5e832d-e7f5-8252-8329-daff753953f1"
+      stageUuid: "c2eb0245-34bf-8748-89e5-d4367542ab0f"
     - stage: seal
-      stageUuid: "1ed0f200-688f-803e-80a8-88d5426ac5ff"
+      stageUuid: "a95e128a-af78-8615-891e-df49d1ed92d6"
     - stage: uuid
-      stageUuid: "39f75fa2-bb94-8d48-aff3-5d357a61d8c3"
+      stageUuid: "2cf3e189-458a-8753-b6c8-86cff0f5d6dc"
 version: 2
 ---
 # background

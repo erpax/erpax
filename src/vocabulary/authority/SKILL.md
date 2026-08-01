@@ -1,72 +1,35 @@
 ---
 name: authority
 description: "Use when reasoning about authority as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/authority
-coordinate: authority · 5/round · 4b63db5c
-contentUuid: "f8914261-9404-5fa8-97ad-3636e54414c5"
-diamondUuid: "c0c7ffa7-ffaf-892a-8459-5eac503397f8"
-uuid: "4b63db5c-14aa-853b-85fa-2289e9dd5753"
-horo: 5
-bonds:
-  in:
-    - catholicism
-    - collapse
-    - law
-    - merge
-    - recognizing
-    - sti
-  out:
-    - catholicism
-    - collapse
-    - law
-    - merge
-    - recognizing
-    - sti
+atomPath: "vocabulary/authority"
+coordinate: "vocabulary/authority · 8/crest · feecca34"
+contentUuid: "a3477552-58c8-56f6-ab31-2a3a892840d3"
+diamondUuid: "2496bbda-ba7a-8814-b697-a073740a08d6"
+uuid: "feecca34-0bbf-89f5-9dff-f9391c434a5c"
+horo: 8
 typography:
-  partition: authority
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - recognizing
-    - sti
-  matrix:
-    - catholicism
-    - collapse
-    - law
-    - merge
-    - recognizing
-    - sti
-  backlinks:
-    - catholicism
-    - collapse
-    - law
-    - merge
-    - recognizing
-    - sti
 signatures:
-  computationUuid: "0bbf9c2b-4b17-803c-a128-61389726e018"
+  computationUuid: "2d5f851a-ea54-845b-811b-64fed93a2ad2"
   stages:
     - stage: path
-      stageUuid: "103dcd02-a6f7-83aa-bc03-04f96bc0060d"
+      stageUuid: "3c44d783-a397-8576-a111-1fae72dba70f"
     - stage: trinity
-      stageUuid: "686a0371-a13c-8019-8462-ee86fe98fadc"
+      stageUuid: "25a0e308-e5af-8d00-b716-3e7b158c2abc"
     - stage: boundary
-      stageUuid: "e5171e46-4cc6-86d4-a9a3-e7888f4e8151"
+      stageUuid: "08eca5c8-c4ad-87cd-9b76-cb71f44f24be"
     - stage: links
-      stageUuid: "918353db-ca9e-8182-ac57-0bdcb9f55a53"
+      stageUuid: "dc14d740-7c06-821b-a299-821b012e2409"
     - stage: horo
-      stageUuid: "93cdc470-5a2b-8df9-8477-1c2fe794a168"
+      stageUuid: "d582b404-f0e7-8b7b-83a2-925301a242cf"
     - stage: seal
-      stageUuid: "0508e289-5fa0-80fb-b1ec-82cff618abfc"
+      stageUuid: "59d59a1f-757c-8954-b803-7074d66b16bc"
     - stage: uuid
-      stageUuid: "0987c704-2c57-83d6-a26e-f54fee328900"
+      stageUuid: "19204b4b-0310-8ba1-8c1d-65c2859ae0da"
 version: 2
 ---
 # authority

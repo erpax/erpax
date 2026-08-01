@@ -1,68 +1,35 @@
 ---
 name: featured
 description: "Use when reasoning about featured as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/featured
-coordinate: featured · 2/share · 8421b77e
-contentUuid: "1386ebe1-d67a-5962-9d46-1d1bd1172492"
-diamondUuid: "01eaa885-cf86-8af6-9238-2c1b4311e1d5"
-uuid: "8421b77e-8dca-8868-80bf-9b6d7e961ccd"
+atomPath: "vocabulary/featured"
+coordinate: "vocabulary/featured · 2/share · e76c8796"
+contentUuid: "a4b38e3c-0582-5c8f-84ed-3a9d87d7d5f1"
+diamondUuid: "1d3dedef-c425-89a4-864a-1b360c4a2b38"
+uuid: "e76c8796-bd74-8674-95ad-06879450f8f7"
 horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - work
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - work
 typography:
-  partition: featured
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - work
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - work
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - work
 signatures:
-  computationUuid: "caff012b-f074-8c27-9b40-dc386c7573e6"
+  computationUuid: "cbfe4b7d-977f-8e06-8880-e9da49172c21"
   stages:
     - stage: path
-      stageUuid: "66515b5d-4740-895f-b857-a7f47c60ef0e"
+      stageUuid: "ce9badc8-573b-8a5a-ae58-381aee6f81a0"
     - stage: trinity
-      stageUuid: "4b8c20d2-7757-80b3-97bd-c97279d2181f"
+      stageUuid: "d8e0a974-2b1e-88fc-bfc9-05e2b7d954f3"
     - stage: boundary
-      stageUuid: "e3181fd9-0eb8-805b-aa41-ceeb221e37fe"
+      stageUuid: "cdca3fd2-10c5-87f2-9b3b-6b1cc32d930d"
     - stage: links
-      stageUuid: "80b6bea8-bdaf-8c15-9813-ff0bbc6e02cb"
+      stageUuid: "89039a35-0f4d-8268-aa64-d880ac170582"
     - stage: horo
-      stageUuid: "7551c396-a508-8302-9296-06b96241bb07"
+      stageUuid: "51e95155-7049-8d12-944a-e7fb305d7c85"
     - stage: seal
-      stageUuid: "4264de76-d16f-850d-af86-fe86b4b619f7"
+      stageUuid: "c4c4e01e-fd99-8c07-b730-04b1b5940927"
     - stage: uuid
-      stageUuid: "924fc038-6a27-868d-ac61-8246b5205802"
+      stageUuid: "974b2c1f-b2a4-8e0b-8422-0ca849c31da1"
 version: 2
 ---
 # featured

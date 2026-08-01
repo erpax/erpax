@@ -1,63 +1,35 @@
 ---
 name: paperback
 description: "Use when reasoning about paperback as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/paperback
-coordinate: paperback · 8/crest · 966059b4
-contentUuid: "cdfc0945-5282-5bb1-9d83-68d55e91b5f8"
-diamondUuid: "eb9720e1-a3fd-8efa-a4f2-56f70d0cbeab"
-uuid: "966059b4-2ebf-8e28-bbb1-5d0132c7b523"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/paperback"
+coordinate: "vocabulary/paperback · 1/base · 41ce7023"
+contentUuid: "512910e7-ad87-5faa-9aae-e535bbb01945"
+diamondUuid: "48f4a31b-321d-8974-a9b8-18924b9c5a52"
+uuid: "41ce7023-3640-828d-893f-ddef2cac9a65"
+horo: 1
 typography:
-  partition: paperback
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "1ad94381-8202-8c27-9476-00fda85aab5a"
+  computationUuid: "3597187a-54f8-8ae8-8e2f-03d2738ffff6"
   stages:
     - stage: path
-      stageUuid: "3f296c36-b619-83b1-b718-9567d7dae110"
+      stageUuid: "b47272e5-ae21-8d85-bacf-3c2acc5547ee"
     - stage: trinity
-      stageUuid: "b52dffa0-a47a-86fc-b85e-f4e257f4c934"
+      stageUuid: "df84b32f-bc11-85b7-8a4c-9dc2f0a95e35"
     - stage: boundary
-      stageUuid: "59310660-d162-800e-a84f-4b800f3c1f61"
+      stageUuid: "f22f30a2-6443-810d-878a-f3bebb7f7b85"
     - stage: links
-      stageUuid: "97469cd0-2b95-89be-82cd-0b8da7f9a565"
+      stageUuid: "6f828285-9c05-812a-9aed-3ed2630170f8"
     - stage: horo
-      stageUuid: "efb414db-ba3e-8426-8765-7a95b3bddcea"
+      stageUuid: "fda3e104-d714-8e02-aba5-928aa532ceef"
     - stage: seal
-      stageUuid: "b948af07-eb76-8d04-ab1f-43a18a1c9a43"
+      stageUuid: "10036756-d2d8-8253-852e-6ab34fa56f79"
     - stage: uuid
-      stageUuid: "f5e54b0e-fca8-8f53-958e-f6e30a6873f0"
+      stageUuid: "374fac49-25dc-8bb8-beee-e811912ec8aa"
 version: 2
 ---
 # paperback

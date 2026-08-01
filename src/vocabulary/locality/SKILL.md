@@ -1,72 +1,35 @@
 ---
 name: locality
 description: "Use when reasoning about locality as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/locality
-coordinate: locality · 1/base · 5c1fb15a
-contentUuid: "bee4c8e2-7b06-5d4a-9b60-e8ee460f36d8"
-diamondUuid: "e4340857-1303-86e4-a647-d19af8dbc0a9"
-uuid: "5c1fb15a-ad61-89ee-8fc0-7c076ce89f04"
-horo: 1
-bonds:
-  in:
-    - address
-    - collapse
-    - law
-    - merge
-    - sti
-    - validation
-  out:
-    - address
-    - collapse
-    - law
-    - merge
-    - sti
-    - validation
+atomPath: "vocabulary/locality"
+coordinate: "vocabulary/locality · 5/round · 01346e41"
+contentUuid: "86a7fca6-4373-5571-8b36-80fef0d5b449"
+diamondUuid: "833ec5ad-40ef-84cb-ac7e-2db71ba97da6"
+uuid: "01346e41-a4fc-8e9c-92ee-27661cc3475c"
+horo: 5
 typography:
-  partition: locality
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - address
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - address
-    - collapse
-    - law
-    - merge
-    - sti
-    - validation
-  backlinks:
-    - address
-    - collapse
-    - law
-    - merge
-    - sti
-    - validation
 signatures:
-  computationUuid: "2a4dcfbc-4eed-834d-b5ec-a37119c61d94"
+  computationUuid: "70332a4d-4898-8cff-a59d-8f33eb1dddae"
   stages:
     - stage: path
-      stageUuid: "13076ff4-2956-828a-9dfc-e3584663129c"
+      stageUuid: "3e741490-faaa-8703-9497-60718fbaac4f"
     - stage: trinity
-      stageUuid: "111b64e1-d8d7-837d-87b9-0ea9eb4c0b7e"
+      stageUuid: "ef725984-9d96-8b6f-a821-3d85fc0e1b55"
     - stage: boundary
-      stageUuid: "fc9894f8-2310-897d-a61c-a2980ac2b820"
+      stageUuid: "c531149a-79a1-8b59-abbd-ae5d02a7ba47"
     - stage: links
-      stageUuid: "04dc1546-86a7-8544-acaa-68fc62413ab6"
+      stageUuid: "6a5b1acd-308c-87cd-aad2-f80e6ef363c1"
     - stage: horo
-      stageUuid: "6a688551-0177-8e03-bd23-2750278e7ad7"
+      stageUuid: "15bd8277-d28d-8820-8555-add841de4916"
     - stage: seal
-      stageUuid: "a3bafad4-5a57-8b22-beb5-d71767509962"
+      stageUuid: "feab0514-79e3-879c-8a53-d9655e22e09f"
     - stage: uuid
-      stageUuid: "bacd1e60-9603-86aa-bf85-3118bb4d4832"
+      stageUuid: "e37981ad-d648-84a9-9dc9-c549f6643787"
 version: 2
 ---
 # locality

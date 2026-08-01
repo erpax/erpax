@@ -2,81 +2,29 @@
 name: voting
 description: "Use when the society casts and tallies collective choice — ballots, votes, and rating series — where every gameable violation (double-voting, stuffing, post-cast tampering, aggregate fudging, anonymity collision, cross-tenant pollution) is made a uuid-mismatch any third party can detect without trusting the platform."
 atomPath: voting
-coordinate: voting · 8/crest · c927e5c7
-contentUuid: "79dc1aae-6a2b-5850-830f-fda2bb419bdf"
-diamondUuid: "261e6e6b-b8cf-8897-8de3-0ea47b42a9c4"
-uuid: "c927e5c7-c133-8eb3-bc99-068103d03c5d"
+coordinate: "voting · 8/crest · 72636e2a"
+contentUuid: "2a66085a-20bb-5bea-9622-34c2d1003dfc"
+diamondUuid: "f434138c-c51d-82ab-ad7b-1865f8bb7fb1"
+uuid: "72636e2a-6d74-8de8-b447-f98b0852283b"
 horo: 8
-bonds:
-  in:
-    - corruption
-    - cost
-    - duality
-    - fractal
-    - governance
-    - history
-    - identity
-    - merge
-    - proof
-    - society
-  out:
-    - corruption
-    - cost
-    - duality
-    - fractal
-    - governance
-    - history
-    - identity
-    - merge
-    - proof
-    - society
 typography:
   partition: voting
   bondDegree: 30
-  neighbors: []
 standards:
-  - "ISO 19011:2018 §6.4.6 (every vote/rating audit-trailed)"
   - "ISO/IEC 25010:2023 §5.6 security — non-repudiation"
+  - "ISO/IEC 25010:2023 §5.6 security — non-repudiation`"
   - "RFC 4122 §4.3 + RFC 8785 (content-derived uuids)"
+  - "RFC 4122 §4.3 + RFC 8785 (content-derived uuids)`"
+  - "RFC-4122"
   - W3C DID Core v1.0 (voter identity)
-  - W3C VC Data Model 2.0 (votes/ratings as verifiable claims)
+  - "W3C DID Core v1.0 (voter identity)`"
+  - "W3C VC Data Model 2.0 (votes/ratings as verifiable claims)"
+  - "W3C VC Data Model 2.0 (votes/ratings as verifiable claims)`"
+  - "W3C-DID-1.0"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - corruption
-    - cost
-    - duality
-    - fractal
-    - governance
-    - history
-    - identity
-    - merge
-    - proof
-    - society
-  matrix:
-    - corruption
-    - cost
-    - duality
-    - fractal
-    - governance
-    - history
-    - identity
-    - merge
-    - proof
-    - society
-  backlinks:
-    - corruption
-    - cost
-    - duality
-    - fractal
-    - governance
-    - history
-    - identity
-    - merge
-    - proof
-    - society
 signatures:
-  computationUuid: "bc1b616d-fec4-8767-8678-380e2c37a29a"
+  computationUuid: "3a293506-644a-819e-8d79-31521fb6b0ec"
   stages:
     - stage: path
       stageUuid: "9debe9bf-638e-8ad6-93a1-babceae3d7f9"
@@ -87,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "2830f216-7973-88b1-9c00-92409ef13f45"
     - stage: horo
-      stageUuid: "cc2e4b41-d789-8b47-9c80-e07b5dde9e0e"
+      stageUuid: "b4740db2-8a5e-8983-bf75-f576300811fe"
     - stage: seal
-      stageUuid: "80ad7a6d-4a1f-8151-bfe9-60ea852e79d3"
+      stageUuid: "4edfd136-7ee9-8e9f-bdd6-b995a1c173ee"
     - stage: uuid
-      stageUuid: "d75631d1-3232-85e4-9e04-176a67ccab16"
+      stageUuid: "9444f618-a1be-86e4-abf2-5ec90990b5c2"
 version: 2
 ---
 # voting — the unforgeable cast and the honest tally

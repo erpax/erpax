@@ -2,94 +2,19 @@
 name: verification
 description: "Use when proving control of a domain by content-uuid — publish the token in a DNS CNAME/TXT record (the ACME DNS-01 pattern); because the value IS the object's identity, any change to the object forces re-verification by architecture."
 atomPath: "domain/verification"
-coordinate: "domain/verification · 8/crest · 32995ada"
-contentUuid: "671ecb74-ed04-59f3-b581-c828021ba585"
-diamondUuid: "12e73bae-1c84-8ade-9d76-371349200948"
-uuid: "32995ada-d759-8cdb-bd2f-fe8645174944"
-horo: 8
-bonds:
-  in:
-    - anchor
-    - checking
-    - collapse
-    - domain
-    - fact
-    - law
-    - merge
-    - policy
-    - proof
-    - reality
-    - schema
-    - sti
-    - tamper
-    - uuid
-    - verification
-  out:
-    - anchor
-    - checking
-    - collapse
-    - domain
-    - fact
-    - law
-    - merge
-    - policy
-    - proof
-    - reality
-    - schema
-    - sti
-    - tamper
-    - uuid
-    - verification
+coordinate: "domain/verification · 2/share · f93d1d19"
+contentUuid: "47b1a466-be97-5bb8-b643-1c725c1c355c"
+diamondUuid: "62c279d5-5440-8da3-b06e-6abb6f0ca5e2"
+uuid: "f93d1d19-7f75-8e5f-93bc-6ef9de227c62"
+horo: 2
 typography:
   partition: domain
   bondDegree: 56
-  neighbors: []
 standards:
   - "RFC 8555 §8.4 (ACME DNS-01 challenge) + CA/Browser-Forum domain-control-validation"
 bindings: []
-neighbors:
-  wikilink:
-    - anchor
-    - domain
-    - identity
-    - proof
-    - tamper
-    - uuid
-    - verification
-  matrix:
-    - anchor
-    - checking
-    - collapse
-    - domain
-    - fact
-    - law
-    - merge
-    - policy
-    - proof
-    - reality
-    - schema
-    - sti
-    - tamper
-    - uuid
-    - verification
-  backlinks:
-    - anchor
-    - checking
-    - collapse
-    - domain
-    - fact
-    - law
-    - merge
-    - policy
-    - proof
-    - reality
-    - schema
-    - sti
-    - tamper
-    - uuid
-    - verification
 signatures:
-  computationUuid: "27690aa6-d2a5-8188-8019-dbe0a19de13b"
+  computationUuid: "8e09c4b0-518f-823d-ad92-b2e4be0959b8"
   stages:
     - stage: path
       stageUuid: "90aade4f-818d-8d4b-ad0e-dacb402a8696"
@@ -100,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b92635c1-c8e5-86f2-a6be-f245c3f1ec72"
     - stage: horo
-      stageUuid: "5d30ee41-887d-8408-94b2-91286df513bc"
+      stageUuid: "b39a664c-24c0-87f6-b1e5-2d4021955e04"
     - stage: seal
       stageUuid: "f8648717-91ef-8b1a-95c4-53376bf150e6"
     - stage: uuid
-      stageUuid: "e82f42ec-7a29-83fa-a28b-f423a6f6658d"
+      stageUuid: "8f94dd64-dc32-8843-b2b6-78ba741b8f9d"
 version: 2
 ---
 # domain/verification — content-addressed domain control

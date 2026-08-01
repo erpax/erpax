@@ -1,53 +1,35 @@
 ---
 name: distance
 description: "Use when reasoning about distance — Properties that take Distances as values are of the form '&lt;Number&gt; &lt;Length unit of measure&gt;'. E.g., '7 ft'."
-atomPath: vocabulary/distance
-coordinate: distance · 7/descent · 89a36b2c
-contentUuid: "fae25404-4264-5e09-b1e7-611d8578357e"
-diamondUuid: "26f47898-cabf-887f-9bb9-8f3f0c62102d"
-uuid: "89a36b2c-f3fd-8a33-8cb2-6c8ffbf4eba1"
-horo: 7
-bonds:
-  in:
-    - flight
-    - law
-  out:
-    - flight
-    - law
+atomPath: "vocabulary/distance"
+coordinate: "vocabulary/distance · 4/weave · 25c6e714"
+contentUuid: "e48bba22-2bd2-523f-bd54-a533083d91c5"
+diamondUuid: "15fb02be-02fe-8ad0-9340-36d4a3da9a90"
+uuid: "25c6e714-76a3-8272-b3d4-4888c0d20a5c"
+horo: 4
 typography:
-  partition: distance
+  partition: vocabulary
   bondDegree: 7
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - flight
-    - law
-  matrix:
-    - flight
-    - law
-  backlinks:
-    - flight
-    - law
 signatures:
-  computationUuid: "9d7adb39-76a9-88c7-b909-2234a64e0f97"
+  computationUuid: "40a2391c-848a-8c6d-adee-4122448f2dee"
   stages:
     - stage: path
-      stageUuid: "742c6a91-3db4-813f-a435-f382dc1f4b82"
+      stageUuid: "781d8a3d-8d8f-8cb1-a5d6-098ee312a138"
     - stage: trinity
-      stageUuid: "e05e20af-4828-85eb-8565-32d99100635e"
+      stageUuid: "f4b584f2-1104-8554-a7e7-2c21c8f1547f"
     - stage: boundary
-      stageUuid: "c42c0227-caba-8b9b-8751-3ef419767585"
+      stageUuid: "4d9a2a12-1473-8301-abea-c38451e8f29a"
     - stage: links
-      stageUuid: "a30147ca-b507-833f-9b44-109b131ed311"
+      stageUuid: "36609366-f72c-8aad-b471-cfed82e06018"
     - stage: horo
-      stageUuid: "d3590f9f-6f8f-8262-85f8-8e5d7df6f0a8"
+      stageUuid: "1adaf2bb-d885-80e7-ac77-b21ee64e2831"
     - stage: seal
-      stageUuid: "ab668ef1-2329-8018-9913-3782bf242c7a"
+      stageUuid: "3b291173-9bef-8cac-b91e-be6082348677"
     - stage: uuid
-      stageUuid: "7cc1e523-ba5d-8431-91cb-f4e48d2cd24f"
+      stageUuid: "b9dd2644-5e7b-86db-b48f-03fe084aa433"
 version: 2
 ---
 # distance

@@ -1,73 +1,35 @@
 ---
 name: created
 description: "Use when reasoning about created as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/created
-coordinate: created · 8/crest · 58f09019
-contentUuid: "e1583e22-21ca-5606-b8a3-dd3e05a36be7"
-diamondUuid: "7f5eda84-a943-8f81-9986-7c8697084673"
-uuid: "58f09019-e3a2-86b5-80d8-665c4c1aa519"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - date
-    - law
-    - location
-    - merge
-    - sti
-  out:
-    - collapse
-    - date
-    - law
-    - location
-    - merge
-    - sti
+atomPath: "vocabulary/created"
+coordinate: "vocabulary/created · 4/weave · 0c5494c8"
+contentUuid: "c688d6f7-b651-5fd9-9475-afd307251117"
+diamondUuid: "438d5156-ff32-8561-b87a-c7baecdbff81"
+uuid: "0c5494c8-ca73-8915-9831-a9b445bd3e8b"
+horo: 4
 typography:
-  partition: created
-  bondDegree: 19
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 21
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - date
-    - law
-    - location
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - date
-    - law
-    - location
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - date
-    - law
-    - location
-    - merge
-    - sti
 signatures:
-  computationUuid: "8aa31f1d-8a44-899f-b6b3-22143b09f576"
+  computationUuid: "18992d86-851e-8625-8f97-e6289f6abf04"
   stages:
     - stage: path
-      stageUuid: "6c132ccc-4506-853d-8031-79a12924bdf8"
+      stageUuid: "ebe224d8-a6e1-8409-b670-7bbbe4285893"
     - stage: trinity
-      stageUuid: "b6bd5422-cabc-8d30-a86c-4be5153e05b6"
+      stageUuid: "b7307cad-6ff7-855b-9ad9-3525c7b26f4f"
     - stage: boundary
-      stageUuid: "4236a1d3-f4ea-8072-baa5-2f6326408244"
+      stageUuid: "f49701d0-08bb-8e72-8253-9fe89b3a8947"
     - stage: links
-      stageUuid: "93403de3-7d1c-87ee-9fdf-c738e35ea5ad"
+      stageUuid: "55900c0a-3205-8afd-92c6-dacda20f7485"
     - stage: horo
-      stageUuid: "34dadc60-7b12-88c8-8d8f-422c67afdb43"
+      stageUuid: "93317854-8536-854e-97ea-e12ab6f2452f"
     - stage: seal
-      stageUuid: "82adf688-d235-8087-a975-0d9b1153bd59"
+      stageUuid: "0b7d2556-e5b3-836c-adba-064c9780b07f"
     - stage: uuid
-      stageUuid: "3cf62732-2959-8c8c-aec3-8422549477b9"
+      stageUuid: "9b305d3d-55a0-8b05-b86f-1d767efdd165"
 version: 2
 ---
 # created

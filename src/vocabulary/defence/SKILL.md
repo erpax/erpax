@@ -1,144 +1,34 @@
 ---
 name: defence
 description: "Use when managing defence/military operations — personnel rosters, equipment inventory, deployment scheduling, force readiness, or defence procurement in government military branches (COFOG 02)."
-atomPath: vocabulary/defence
-coordinate: defence · 4/weave · 661fb374
-contentUuid: "f90d85f2-4be3-5af1-bcbe-d5a889f4a3bc"
-diamondUuid: "37f2cf2f-09fe-8da3-b4e4-f7dfb3ae4eee"
-uuid: "661fb374-8d0f-8e58-b86b-d128025c7767"
-horo: 4
-bonds:
-  in:
-    - access
-    - accounting
-    - akashic
-    - close
-    - collections
-    - duality
-    - establishment
-    - fields
-    - fractal
-    - holographic
-    - hooks
-    - identity
-    - law
-    - merge
-    - methods
-    - open
-    - sectors
-    - sequence
-    - standard
-    - versions
-    - war
-  out:
-    - access
-    - accounting
-    - akashic
-    - close
-    - collections
-    - duality
-    - establishment
-    - fields
-    - fractal
-    - holographic
-    - hooks
-    - identity
-    - law
-    - merge
-    - methods
-    - open
-    - sectors
-    - sequence
-    - standard
-    - versions
-    - war
+atomPath: "vocabulary/defence"
+coordinate: "vocabulary/defence · 2/share · ee594bf5"
+contentUuid: "5028b477-4b78-5509-86bf-b1f0bffc60e1"
+diamondUuid: "e2cb69c2-d654-81f1-b19a-d4341c9c4295"
+uuid: "ee594bf5-9071-8cb5-acf6-0a4a95b7f75f"
+horo: 2
 typography:
-  partition: defence
+  partition: vocabulary
   bondDegree: 64
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - accounting
-    - akashic
-    - close
-    - collections
-    - duality
-    - fields
-    - fractal
-    - holographic
-    - hooks
-    - identity
-    - law
-    - merge
-    - open
-    - sectors
-    - sequence
-    - standard
-    - versions
-  matrix:
-    - access
-    - accounting
-    - akashic
-    - close
-    - collections
-    - duality
-    - establishment
-    - fields
-    - fractal
-    - holographic
-    - hooks
-    - identity
-    - law
-    - merge
-    - methods
-    - open
-    - sectors
-    - sequence
-    - standard
-    - versions
-    - war
-  backlinks:
-    - access
-    - accounting
-    - akashic
-    - close
-    - collections
-    - duality
-    - establishment
-    - fields
-    - fractal
-    - holographic
-    - hooks
-    - identity
-    - law
-    - merge
-    - methods
-    - open
-    - sectors
-    - sequence
-    - standard
-    - versions
-    - war
 signatures:
-  computationUuid: "db5eda61-8693-84c1-9c41-62373a47c0ae"
+  computationUuid: "3ecbbc4b-4942-825d-bbed-6f7ee83cffef"
   stages:
     - stage: path
-      stageUuid: "2ad817f1-2c88-8309-a1c9-350123761be0"
+      stageUuid: "6b4cdfbe-11d3-8ec9-bbec-2ac21d47b0a0"
     - stage: trinity
-      stageUuid: "f02cc9d2-f0ba-8f7e-a025-b66026e0277f"
+      stageUuid: "449db254-cb88-8bb5-8fce-1ca0f039755f"
     - stage: boundary
-      stageUuid: "c50a6ea1-3534-8d55-819e-3a783ef73448"
+      stageUuid: "273a7494-b534-8c2b-9df0-092baa718246"
     - stage: links
-      stageUuid: "24bc1159-b806-812d-9c53-d124afd0e320"
+      stageUuid: "740fab68-157e-8837-9ab8-816e4873ecaf"
     - stage: horo
-      stageUuid: "ff4fa853-3844-83f9-80db-35045b9da24b"
+      stageUuid: "c213a697-85ed-8be5-948d-0f8d762f58b2"
     - stage: seal
-      stageUuid: "d886e78d-fc3a-8589-abc7-e3c6513c7f24"
+      stageUuid: "ea8adc02-52ed-8b7d-a87b-a2c663a0280c"
     - stage: uuid
-      stageUuid: "a5c02562-a4ef-8067-9fae-090cf4cfb8f8"
+      stageUuid: "e4ddc999-1e8a-88af-901e-3ef91e627a7f"
 version: 2
 ---
 # defence — the readiness sector (COFOG 02)

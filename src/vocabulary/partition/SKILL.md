@@ -1,61 +1,34 @@
 ---
 name: partition
 description: "Use when dividing data for performance or governance — table partitioning (by range/hash/list), partition pruning, partition management (add/drop/compress), partitioning strategy for horizontal scaling."
-atomPath: vocabulary/partition
-coordinate: partition · 7/descent · a41f195c
-contentUuid: "3dc7b495-e486-5d06-8e68-9a54582233b6"
-diamondUuid: "25e51b40-52ea-8af3-b4cf-1ea00752636e"
-uuid: "a41f195c-b89d-84e3-9903-6c6b1c0bb422"
+atomPath: "vocabulary/partition"
+coordinate: "vocabulary/partition · 7/descent · 16c3b7d5"
+contentUuid: "1bb1a7e1-13d7-5499-ab33-47f43d1a0fcd"
+diamondUuid: "f06f050e-3e09-8040-aa18-1fcb95089381"
+uuid: "16c3b7d5-8109-8c60-8e05-5dc02708a77b"
 horo: 7
-bonds:
-  in:
-    - database
-    - law
-    - schema
-    - sparsity
-  out:
-    - database
-    - law
-    - schema
-    - sparsity
 typography:
-  partition: partition
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - database
-    - law
-    - schema
-  matrix:
-    - database
-    - law
-    - schema
-    - sparsity
-  backlinks:
-    - database
-    - law
-    - schema
-    - sparsity
 signatures:
-  computationUuid: "8efff840-9c6c-8950-8387-6e9431f3d554"
+  computationUuid: "3282520b-fd75-8281-a7bd-0ce3d7cae8a5"
   stages:
     - stage: path
-      stageUuid: "e5717fb1-586a-8e08-94eb-29cad73bb66e"
+      stageUuid: "de42580b-03c4-82eb-a170-847ff7c29f4c"
     - stage: trinity
-      stageUuid: "74388446-1e5b-8141-8a3e-eec0d95bdd0b"
+      stageUuid: "67ed7c02-9135-8bd7-8ade-c5206a3f1f58"
     - stage: boundary
-      stageUuid: "de16dc15-8093-8da3-a31a-c0a3f4ae04a4"
+      stageUuid: "d6847260-80f7-816b-a906-8e3b7c116268"
     - stage: links
-      stageUuid: "b715c9b8-24cc-8a04-a565-d211bcf772e5"
+      stageUuid: "7005ea87-259a-8711-8265-8e1a8e3aa9e3"
     - stage: horo
-      stageUuid: "3a59c1cc-d60b-83af-9b2a-d6e07852fbe4"
+      stageUuid: "d8012be0-52de-8fa3-8e29-6e8755184ff5"
     - stage: seal
-      stageUuid: "ecd3fa77-0c87-8760-81b4-14a347d32b40"
+      stageUuid: "7d7a6d23-dd6c-8fe1-979b-821ebf1030a2"
     - stage: uuid
-      stageUuid: "4fa87e50-d4cd-87fc-8fbe-fca70d34e71f"
+      stageUuid: "f1939cb8-ac68-8ffa-b46e-d5569bb411e6"
 version: 2
 ---
 # partition

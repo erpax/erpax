@@ -1,63 +1,35 @@
 ---
 name: bill
 description: "Use when reasoning about bill as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/bill
-coordinate: bill · 2/share · 46fe2538
-contentUuid: "7ea14ba9-9398-551d-acda-d85e053ce598"
-diamondUuid: "bf14ba41-193d-8302-ba44-7f482c3ee790"
-uuid: "46fe2538-7902-88b3-9969-ca756d082b23"
+atomPath: "vocabulary/bill"
+coordinate: "vocabulary/bill · 2/share · 0326bae8"
+contentUuid: "9b3ab540-76be-52fa-95fc-856367cd71a7"
+diamondUuid: "d26e6979-b0a8-8526-880e-7865996c98c6"
+uuid: "0326bae8-2b4c-8be1-9537-dcb176a6f595"
 horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: bill
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "d7ffe2ad-6f42-8d96-b7b4-cfe486ddd823"
+  computationUuid: "d79c022f-4c7b-80c7-a6a1-cee73aee191e"
   stages:
     - stage: path
-      stageUuid: "a5e9d203-386f-870f-8e9e-f27c8f3a3f7e"
+      stageUuid: "e0469191-253a-8a98-858b-3a4b5fd72cad"
     - stage: trinity
-      stageUuid: "2b9775d2-9c22-8f3c-83ff-af0761208372"
+      stageUuid: "df5a21e0-826b-80a3-be76-c218b61da6b1"
     - stage: boundary
-      stageUuid: "b058fb96-a767-8b38-a920-4fe64088ff65"
+      stageUuid: "90b9b1db-9787-83ab-8e15-95eb259125d0"
     - stage: links
-      stageUuid: "147ea3e5-0b15-8cca-9c22-3ced30430f98"
+      stageUuid: "47ac8968-c30c-8104-a8e3-b16e2b7429db"
     - stage: horo
-      stageUuid: "0d3b8422-c115-8f57-83cb-b0dde1c298ab"
+      stageUuid: "f20c2948-a1c7-8165-9c8b-81056b2d93e9"
     - stage: seal
-      stageUuid: "a7f0037b-9b55-8228-b737-538cefbfd155"
+      stageUuid: "82d9184d-298c-8913-a934-65acac85cfa3"
     - stage: uuid
-      stageUuid: "bd82f4f9-666c-8c78-91f8-8e3eaad77222"
+      stageUuid: "c8059508-c995-8cdd-8744-ef331d8f965a"
 version: 2
 ---
 # bill

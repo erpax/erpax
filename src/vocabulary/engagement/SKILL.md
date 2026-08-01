@@ -1,80 +1,34 @@
 ---
 name: engagement
 description: "Use when measuring or improving involvement/participation — employee engagement, customer engagement, learning engagement. The observed commitment/interaction level."
-atomPath: vocabulary/engagement
-coordinate: engagement · 5/round · 53a39a2f
-contentUuid: "d6a574e2-e949-5293-a6a4-53bad1323267"
-diamondUuid: "1c36f840-ab4a-8a4d-ace3-9192b8de3195"
-uuid: "53a39a2f-f49e-8577-9268-36cfdf4142af"
-horo: 5
-bonds:
-  in:
-    - activities
-    - customers
-    - employees
-    - feedback
-    - habit
-    - network
-    - satisfaction
-    - sentiment
-  out:
-    - activities
-    - customers
-    - employees
-    - feedback
-    - habit
-    - network
-    - satisfaction
-    - sentiment
+atomPath: "vocabulary/engagement"
+coordinate: "vocabulary/engagement · 4/weave · ed805f9a"
+contentUuid: "f68a4b46-dbd1-56d4-9cfb-1841af2c87ad"
+diamondUuid: "578007dd-e6ad-80ee-bf26-5734c4fba9a8"
+uuid: "ed805f9a-e0f6-8a60-8f06-be033ee723ea"
+horo: 4
 typography:
-  partition: engagement
+  partition: vocabulary
   bondDegree: 24
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - activities
-    - customers
-    - employees
-    - feedback
-    - satisfaction
-    - sentiment
-  matrix:
-    - activities
-    - customers
-    - employees
-    - feedback
-    - habit
-    - network
-    - satisfaction
-    - sentiment
-  backlinks:
-    - activities
-    - customers
-    - employees
-    - feedback
-    - habit
-    - network
-    - satisfaction
-    - sentiment
 signatures:
-  computationUuid: "974d8cce-af5b-83fd-92ad-1d244039c48f"
+  computationUuid: "29abf264-549f-87f8-8e5d-78834923c263"
   stages:
     - stage: path
-      stageUuid: "5ed4f103-7b77-8835-8528-f8bdb1e3731e"
+      stageUuid: "41a488fa-8935-83d0-98e7-b0bbe8ffe1fd"
     - stage: trinity
-      stageUuid: "0be46561-9559-80bd-96f5-e3d01cca23a6"
+      stageUuid: "a9758792-74fe-88aa-93b2-68e4ad6ac604"
     - stage: boundary
-      stageUuid: "3d55efb5-9864-88d7-98b3-4eae6d7046c9"
+      stageUuid: "07604bb6-0a1a-8301-8e0f-5a5cf048f57c"
     - stage: links
-      stageUuid: "ba67cee0-0c9b-88a4-b3f6-94758fd784c1"
+      stageUuid: "48d292cd-ea8d-87f4-a13a-ce73e3bf5013"
     - stage: horo
-      stageUuid: "124dc274-377b-83e5-b9f6-a355597c30f2"
+      stageUuid: "dd330d2d-1347-844a-89ba-8f4fa07f3f49"
     - stage: seal
-      stageUuid: "d5627043-b2d8-83ad-b771-4dede07c6835"
+      stageUuid: "6736d701-32fc-887d-ab96-9ee354c273ea"
     - stage: uuid
-      stageUuid: "88452b34-491b-8fef-b389-40995955ba4d"
+      stageUuid: "bfa5a7ed-a36d-83ce-86f7-75789690768a"
 version: 2
 ---
 # engagement

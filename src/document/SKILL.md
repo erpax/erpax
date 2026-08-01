@@ -2,99 +2,19 @@
 name: document
 description: "Use when reasoning about document as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: document
-coordinate: "document · 1/base · 5a03a5fe"
-contentUuid: "f32da3bf-cf73-569a-ada2-a152d46357e9"
-diamondUuid: "bd45a8aa-1667-88ea-9dc3-5513ff37ba4e"
-uuid: "5a03a5fe-6223-826d-adb3-d5694665235e"
-horo: 1
-bonds:
-  in:
-    - acknowledgment
-    - checklist
-    - collapse
-    - digital
-    - has
-    - instruction
-    - law
-    - merge
-    - note
-    - permission
-    - presentation
-    - spreadsheet
-    - sti
-    - text
-    - type
-  out:
-    - acknowledgment
-    - checklist
-    - collapse
-    - digital
-    - has
-    - instruction
-    - law
-    - merge
-    - note
-    - permission
-    - presentation
-    - spreadsheet
-    - sti
-    - text
-    - type
+coordinate: "document · 7/descent · c9c12a84"
+contentUuid: "e834c791-d2e1-5fa4-a90c-93aa8021f1c1"
+diamondUuid: "a0250139-25ac-83e4-a63d-b990a7ed5f64"
+uuid: "c9c12a84-30af-844a-850b-945c5da5c405"
+horo: 7
 typography:
   partition: document
   bondDegree: 0
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - digital
-    - has
-    - law
-    - merge
-    - note
-    - permission
-    - presentation
-    - spreadsheet
-    - sti
-    - text
-    - type
-  matrix:
-    - acknowledgment
-    - checklist
-    - collapse
-    - digital
-    - has
-    - instruction
-    - law
-    - merge
-    - note
-    - permission
-    - presentation
-    - spreadsheet
-    - sti
-    - text
-    - type
-  backlinks:
-    - acknowledgment
-    - checklist
-    - collapse
-    - digital
-    - has
-    - instruction
-    - law
-    - merge
-    - note
-    - permission
-    - presentation
-    - spreadsheet
-    - sti
-    - text
-    - type
 signatures:
-  computationUuid: "3e6a4d5a-3419-8e1b-affd-f0f69ab288c6"
+  computationUuid: "09e6a3ba-5d4d-8370-bd71-1f3c345b1fee"
   stages:
     - stage: path
       stageUuid: "7d65c198-109c-8f30-bb8a-40cf6a377306"
@@ -105,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "26284b4f-414b-85a8-8582-090d8c3bba29"
     - stage: horo
-      stageUuid: "9a085ab9-8db5-8cfb-b91e-7b98bbd3cf4b"
+      stageUuid: "a5bd6c76-ca28-8672-904a-438c1da2d218"
     - stage: seal
       stageUuid: "16d236c9-24ab-85a7-9003-38b2dd444332"
     - stage: uuid
-      stageUuid: "7a61f34d-0826-85ea-a341-ca923fdb28c3"
+      stageUuid: "96868e75-8e27-839b-a224-b467de7f14f9"
 version: 2
 ---
 # document

@@ -1,74 +1,35 @@
 ---
 name: actionable
 description: "Use when reasoning about actionable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/actionable
-coordinate: actionable · 4/weave · d688956e
-contentUuid: "993cf464-a079-5bea-a947-02f5843838c2"
-diamondUuid: "18a13ad7-96d2-88c4-b444-a8de3de05f85"
-uuid: "d688956e-8ad4-8953-ab81-4ccc08f0bd6e"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - feedback
-    - law
-    - merge
-    - policy
-    - sti
-  out:
-    - collapse
-    - feedback
-    - law
-    - merge
-    - policy
-    - sti
+atomPath: "vocabulary/actionable"
+coordinate: "vocabulary/actionable · 5/round · 312d2a09"
+contentUuid: "b0311471-c6b0-5ac3-850e-1d11ff6113e9"
+diamondUuid: "f429b5da-8f80-85d5-a1c2-1078c7b7d477"
+uuid: "312d2a09-6561-8b9c-9ef7-7d61f578baa3"
+horo: 5
 typography:
-  partition: actionable
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
-  - schema.org
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - feedback
-    - law
-    - merge
-    - policy
-    - sti
-  matrix:
-    - collapse
-    - feedback
-    - law
-    - merge
-    - policy
-    - sti
-  backlinks:
-    - collapse
-    - feedback
-    - law
-    - merge
-    - policy
-    - sti
 signatures:
-  computationUuid: "1317ef4a-d412-8c36-9ff9-daf6cd6b4cc2"
+  computationUuid: "2bc6bf86-0601-83e9-bf56-5b861b3cfbf4"
   stages:
     - stage: path
-      stageUuid: "33d4303a-b840-8915-904c-c0cf9b1afc62"
+      stageUuid: "e14a8a89-aca8-82d3-b295-6cf3c9414b76"
     - stage: trinity
-      stageUuid: "b2882d65-4d8c-8f42-b627-1932ab421f45"
+      stageUuid: "1a68fce0-1696-8e30-9b81-7d3c6ad80d74"
     - stage: boundary
-      stageUuid: "418f651f-7dc7-89e6-9f40-a93c339e01e9"
+      stageUuid: "48bab6a3-3e66-83af-9856-4922ce27d51a"
     - stage: links
-      stageUuid: "0b3c3f56-20a8-8784-b75d-432047553ea8"
+      stageUuid: "8a425aa6-7027-881f-bdc1-4d1b6e4e6e1a"
     - stage: horo
-      stageUuid: "ab964c5c-fc27-8261-b72a-013500fb6408"
+      stageUuid: "6cbe24aa-d098-8fe3-b2cd-3765c3565950"
     - stage: seal
-      stageUuid: "52d4a8b3-5824-8a2c-ba2e-ae8595328bf6"
+      stageUuid: "ddb09155-1073-8bd7-9f3f-0c4d266c96a4"
     - stage: uuid
-      stageUuid: "4cf8cd1a-6112-8056-aed0-229c733f1264"
+      stageUuid: "877fe9ff-6ac6-803d-b006-2508c2e40f55"
 version: 2
 ---
 # actionable

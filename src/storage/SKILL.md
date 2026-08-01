@@ -2,72 +2,22 @@
 name: storage
 description: "Use when reasoning about storage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: storage
-coordinate: storage · 1/base · 0790f97e
-contentUuid: "06f6be7d-8bb6-555c-9692-115fb630d88b"
-diamondUuid: "493c8a5e-19a8-85f0-80bb-fcba09cd0b93"
-uuid: "0790f97e-bb8d-85e0-8ebe-ed3445e8d356"
-horo: 1
-bonds:
-  in:
-    - bindings
-    - collapse
-    - computer
-    - law
-    - merge
-    - requirements
-    - self
-    - sti
-    - storage
-  out:
-    - bindings
-    - collapse
-    - computer
-    - law
-    - merge
-    - requirements
-    - self
-    - sti
-    - storage
+coordinate: "storage · 8/crest · a329a0ab"
+contentUuid: "b2366b80-6880-50bf-921d-f43f8a990629"
+diamondUuid: "3cf24e5d-1da9-8122-a044-2bd22484ba85"
+uuid: "a329a0ab-2a84-8945-9554-c4975f00635a"
+horo: 8
 typography:
   partition: storage
   bondDegree: 0
-  neighbors: []
 standards:
   - "RFC-8785"
   - "schema.org — the type vocabulary, collided to single words"
 bindings:
-  - kv_namespaces/AI_CACHE
-  - r2_buckets/R2
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - requirements
-    - self
-    - sti
-  matrix:
-    - bindings
-    - collapse
-    - computer
-    - law
-    - merge
-    - requirements
-    - self
-    - sti
-    - storage
-  backlinks:
-    - bindings
-    - collapse
-    - computer
-    - law
-    - merge
-    - requirements
-    - self
-    - sti
-    - storage
+  - "kv_namespaces/AI_CACHE"
+  - "r2_buckets/R2"
 signatures:
-  computationUuid: "ec6b0280-ed48-86a3-be4d-0248f90009bc"
+  computationUuid: "835df09e-b5cb-8750-849b-319f6196b302"
   stages:
     - stage: path
       stageUuid: "eba06007-f92e-8303-980e-d88beade93b9"
@@ -78,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "58a22a30-5820-8d1c-a912-05e62f38ddf8"
     - stage: horo
-      stageUuid: "874ccd50-9855-8571-a233-74a305f1a4b1"
+      stageUuid: "1ae1a263-6a70-88c2-ad0e-f4c75ba56cc7"
     - stage: seal
       stageUuid: "05e2fd11-64ba-84b4-9d3b-ee7fba0df20d"
     - stage: uuid
-      stageUuid: "7ff87ffa-008d-868b-850f-81bf63dc098c"
+      stageUuid: "1fd6ab69-5754-88b9-9a30-81062af631cd"
 version: 2
 ---
 # storage

@@ -1,73 +1,35 @@
 ---
 name: explanation
 description: "Use when reasoning about explanation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/explanation
-coordinate: explanation · 8/crest · 711c4e47
-contentUuid: "9711b300-4adc-5c0c-bb58-33e2bae0744f"
-diamondUuid: "ef7a92e2-ba3c-84eb-822c-ae5f17c7ecde"
-uuid: "711c4e47-9f63-8444-b043-9e0bc189f283"
-horo: 8
-bonds:
-  in:
-    - answer
-    - collapse
-    - law
-    - merge
-    - rating
-    - sti
-  out:
-    - answer
-    - collapse
-    - law
-    - merge
-    - rating
-    - sti
+atomPath: "vocabulary/explanation"
+coordinate: "vocabulary/explanation · 5/round · 08c61c9e"
+contentUuid: "67449aac-fa47-5470-9d13-3f74ae813b36"
+diamondUuid: "c8f45945-f261-857b-95d5-1f88e891a1be"
+uuid: "08c61c9e-babb-8bb0-948e-bec7d93507db"
+horo: 5
 typography:
-  partition: explanation
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - answer
-    - collapse
-    - law
-    - merge
-    - rating
-    - sti
-  matrix:
-    - answer
-    - collapse
-    - law
-    - merge
-    - rating
-    - sti
-  backlinks:
-    - answer
-    - collapse
-    - law
-    - merge
-    - rating
-    - sti
 signatures:
-  computationUuid: "12878ff3-c963-8195-8134-d3a235a7aece"
+  computationUuid: "63035129-b700-807d-abe6-032ee14cfe95"
   stages:
     - stage: path
-      stageUuid: "8883a216-bf4f-8f24-af3f-1783e9e22866"
+      stageUuid: "170ade59-4c8d-8263-aa60-855abbc3f696"
     - stage: trinity
-      stageUuid: "f56a8e35-3225-8b64-be3e-c10d2d7a02be"
+      stageUuid: "36580e51-d4ca-8d0a-8468-d799ab81d3b3"
     - stage: boundary
-      stageUuid: "6414b9bc-7a63-81c3-909c-d3acddd1b18c"
+      stageUuid: "ba5be191-9d15-87d0-8165-449c1dd9302c"
     - stage: links
-      stageUuid: "ced4f6f9-7503-8296-847d-86897334edff"
+      stageUuid: "0e0e6952-7d3f-805a-bc41-b746d974165b"
     - stage: horo
-      stageUuid: "49519674-355b-8675-b6a2-d20ee094bd28"
+      stageUuid: "52f1faff-b15e-87ff-93bb-53c87edb51aa"
     - stage: seal
-      stageUuid: "e882c14e-2648-8f9a-a3c9-21c83136adfd"
+      stageUuid: "88ec63b8-aab0-8c68-a919-7deb554d438b"
     - stage: uuid
-      stageUuid: "8891fa80-7a2e-86c5-b99f-2e2b902cd3c9"
+      stageUuid: "82546a8e-730d-8ad2-99fc-58b9661b38d6"
 version: 2
 ---
 # explanation

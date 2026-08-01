@@ -1,78 +1,35 @@
 ---
 name: download
 description: "Use when reasoning about download as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/download
-coordinate: download · 4/weave · ff6d7e66
-contentUuid: "57ab8bd9-7da5-568b-9a90-8ee1bba4d9e0"
-diamondUuid: "0ed75e25-6e86-8619-8bcb-8309a511ebdf"
-uuid: "ff6d7e66-49ff-88fc-9043-ed1b10a74591"
-horo: 4
-bonds:
-  in:
-    - action
-    - collapse
-    - data
-    - law
-    - merge
-    - sti
-    - url
-  out:
-    - action
-    - collapse
-    - data
-    - law
-    - merge
-    - sti
-    - url
+atomPath: "vocabulary/download"
+coordinate: "vocabulary/download · 1/base · 50a75e4b"
+contentUuid: "63edf3ce-5ba7-506f-ae81-78bc5060c463"
+diamondUuid: "c51476fe-0300-86ad-8d40-3940fe9753db"
+uuid: "50a75e4b-5f00-865a-8fee-78e0ce8eca3c"
+horo: 1
 typography:
-  partition: download
+  partition: vocabulary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - data
-    - law
-    - merge
-    - sti
-    - url
-  matrix:
-    - action
-    - collapse
-    - data
-    - law
-    - merge
-    - sti
-    - url
-  backlinks:
-    - action
-    - collapse
-    - data
-    - law
-    - merge
-    - sti
-    - url
 signatures:
-  computationUuid: "cc4fa17a-32f1-8b2d-8cdf-8f080538ad6f"
+  computationUuid: "d50cb564-392d-8ee5-82db-bfcc407b9e83"
   stages:
     - stage: path
-      stageUuid: "eec7bc39-4849-871b-b062-10c071d52abb"
+      stageUuid: "d3f17b95-51ef-8269-9d97-6bcca898ba5e"
     - stage: trinity
-      stageUuid: "ddaf8f0e-223a-83ee-b12a-a54a73041e48"
+      stageUuid: "634cbbbd-4e83-8d9b-9a51-44ec021c7b23"
     - stage: boundary
-      stageUuid: "22b8bae8-3604-80a3-93df-ba59300d678e"
+      stageUuid: "334220c1-cb6e-8322-9bc1-e3a2e3bd25aa"
     - stage: links
-      stageUuid: "8f0505cd-46d7-82c8-a030-ee58e4922f9e"
+      stageUuid: "ff517f5c-a931-8995-b9b8-4e2bf681a42c"
     - stage: horo
-      stageUuid: "d5ece030-9a97-887d-8463-911a3645e987"
+      stageUuid: "7b25912a-70f1-8a4a-9d69-7830d5c06cbd"
     - stage: seal
-      stageUuid: "6f67d3d3-b126-820b-8173-ef4282fec76e"
+      stageUuid: "6fd27a03-5699-8092-b0cc-b293e4378067"
     - stage: uuid
-      stageUuid: "45e0f3c3-bf58-87a0-8ddc-a315028a522b"
+      stageUuid: "1930bcd8-c2f3-8412-ae47-a810214c8f87"
 version: 2
 ---
 # download

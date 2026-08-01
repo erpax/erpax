@@ -148,3 +148,56 @@ export function manifestSealed(declarations: readonly SurfaceDeclaration[]): boo
 export function openSurfaces(declarations: readonly SurfaceDeclaration[]): readonly SurfaceKind[] {
   return declarations.filter((d) => d.status.state === 'open').map((d) => d.kind)
 }
+
+// ── PQC bindings — the surface guard reads what ACTUALLY seals each surface ──────────────────────
+// A `sealed` status names a standard as a STRING. A string is a claim about the world, and the
+// guard has no way to check it — which is the same default-by-omission the atom exists to close,
+// one level down. The bindings close it: a surface may only claim `sealed` when a provider is
+// actually bound for it. Unbound ⇒ the claim is downgraded to `open` with the binding named as the
+// gap, so the manifest reports the truth rather than the intention.
+//
+// Named PER SURFACE, never globally: a root sealed by FIPS 205 and a channel keyed by FIPS 203 are
+// different bindings and different failures, and one global flag would hide which is missing.
+
+/** Which env binding must be present for each surface to legitimately claim `sealed`. */
+export const SURFACE_BINDING: Readonly<Record<SurfaceKind, string>> = {
+  'root-signing': 'PQC_ROOT_PROVIDER',
+  'channel-keying': 'PQC_KEM_PROVIDER',
+  're-exchange': 'PQC_KEM_PROVIDER',
+  'storage-at-rest': 'PQC_STORAGE_PROVIDER',
+}
+
+/** The env face this atom reads — narrow and readonly, so a caller passes only what it sets. */
+export type SurfaceEnv = Readonly<Record<string, string | undefined>>
+
+/** Is a provider actually bound for this surface? An explicit absence, never a caught error. */
+export function bound(kind: SurfaceKind, env: SurfaceEnv = process.env): boolean {
+  const name = SURFACE_BINDING[kind]
+  return Boolean(env[name] && env[name]!.trim().length > 0)
+}
+
+/**
+ * Downgrade any `sealed` declaration whose provider is not bound. The result is a manifest that says
+ * what is TRUE of this environment: a surface claiming a standard with nothing bound behind it
+ * becomes `open`, naming the missing binding as the gap and the surface as its own owner.
+ *
+ * @invariant a sealed surface with its binding present is untouched
+ * @invariant a sealed surface with no binding becomes open, gap = the env var name
+ * @invariant an already-open declaration is never altered — this only ever downgrades
+ */
+export function groundInBindings(
+  declarations: readonly SurfaceDeclaration[],
+  env: SurfaceEnv = process.env,
+): readonly SurfaceDeclaration[] {
+  return declarations.map((d) => {
+    if (d.status.state !== 'sealed' || bound(d.kind, env)) return d
+    return {
+      kind: d.kind,
+      status: {
+        state: 'open',
+        gap: `claims '${d.status.standard}' but ${SURFACE_BINDING[d.kind]} is not bound in this environment`,
+        owner: d.kind,
+      },
+    }
+  })
+}

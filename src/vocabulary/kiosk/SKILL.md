@@ -1,63 +1,35 @@
 ---
 name: kiosk
 description: "Use when reasoning about kiosk as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/kiosk
-coordinate: kiosk · 7/descent · ffb45a64
-contentUuid: "5bca0601-4efb-508c-ae58-9cf154b3e436"
-diamondUuid: "c3038c47-220a-8b0c-8fcd-70ff65a8004a"
-uuid: "ffb45a64-b3ee-8c09-868d-16b409368374"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/kiosk"
+coordinate: "vocabulary/kiosk · 4/weave · 7dea83cb"
+contentUuid: "8dda4553-4537-51aa-8c48-0411218035c5"
+diamondUuid: "d9eb9656-6789-82a1-a9c2-78fea93410d0"
+uuid: "7dea83cb-c09c-8a38-9b57-3dbc74d579f4"
+horo: 4
 typography:
-  partition: kiosk
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "bea63bbc-099a-8cc5-b064-ecf132d3cd76"
+  computationUuid: "72e075f0-b62f-8a39-a1e3-8f063cfe35fa"
   stages:
     - stage: path
-      stageUuid: "5f706b05-8dec-848c-b9b1-627685969547"
+      stageUuid: "7f44b322-d1ec-8af9-b52c-d8b4b3191b0b"
     - stage: trinity
-      stageUuid: "400a8825-7548-8eb8-9eab-0da009684fc0"
+      stageUuid: "73a94d1d-3cb1-8ed1-a2ca-231869d51c15"
     - stage: boundary
-      stageUuid: "b14f859c-f7a9-8d46-b91e-ce4d003192ad"
+      stageUuid: "7ea789d3-9732-84c8-97ec-9d36647bd3e8"
     - stage: links
-      stageUuid: "e2404efc-d567-8c59-af82-691dc6f63613"
+      stageUuid: "f95115ba-5e98-8acf-88f1-5f3dcec21cc0"
     - stage: horo
-      stageUuid: "6c4da7cf-29c4-8466-a094-4f797bfd1b29"
+      stageUuid: "bf96c786-a8a3-880a-8574-6c550e412f5a"
     - stage: seal
-      stageUuid: "83ad80d4-84a0-8850-901d-9ab5561b4ed9"
+      stageUuid: "f49e96fa-6b50-8708-9b7f-f260e5002d97"
     - stage: uuid
-      stageUuid: "d167d193-6e86-85de-aa36-5dce7476eedf"
+      stageUuid: "7d25ca11-f6b6-8ebf-aa8d-4da41f3f89c7"
 version: 2
 ---
 # kiosk

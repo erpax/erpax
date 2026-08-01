@@ -2,134 +2,47 @@
 name: standards
 description: "Use when registering, citing, superseding or querying any published standard (IFRS, ISO, W3C, RFC, EU Directive, etc.) against a tenant — conflict graph, supersession trail, per-module citation index, per-tenant adoption status. The live standards-registry collection backing the erpax.standards.* MCP tool family."
 atomPath: standards
-coordinate: standards · 5/round · 0a4f370e
-contentUuid: "025124a1-4218-5da1-a79b-7c810d8bd274"
-diamondUuid: "29285d89-b2e9-8df6-8236-e0b3250ce42a"
-uuid: "0a4f370e-f3b0-8e5c-9dc2-3a765924c519"
-horo: 5
-bonds:
-  in:
-    - accounting
-    - agriculture
-    - analytics
-    - api
-    - certification
-    - factory
-    - folder
-    - grade
-    - identity
-    - law
-    - organic
-    - proof
-    - reference
-    - skills
-    - sourced
-    - standard
-    - topography
-    - truth
-    - vocabulary
-  out:
-    - accounting
-    - agriculture
-    - analytics
-    - api
-    - certification
-    - factory
-    - folder
-    - grade
-    - identity
-    - law
-    - organic
-    - proof
-    - reference
-    - skills
-    - sourced
-    - standard
-    - topography
-    - truth
-    - vocabulary
+coordinate: "standards · 8/crest · 2ac0b569"
+contentUuid: "cfedae76-2d4c-5ddd-975e-446738a540fb"
+diamondUuid: "83f3f0ff-8af1-8dea-94e5-e671bf832a09"
+uuid: "2ac0b569-2453-84c4-bc43-1a1fd8f69a04"
+horo: 8
 typography:
   partition: standards
-  bondDegree: 61
-  neighbors: []
+  bondDegree: 87
 standards:
-  - "Conservation Law 27 standards-as-live-objects"
-  - "Conservation Law 28 standards-supersession-tracking"
-  - "Conservation Law 38 mcp-tool-standardization"
   - "ISO 19011:2018 §6.4.6 audit-evidence (citation changes audit-trailed)"
+  - "ISO 19011:2018 §6.4.6 audit-evidence (citation changes audit-trailed)`"
   - "ISO-19011:2018"
   - "ISO/IEC 25010:2023 §5.1 functional-completeness"
+  - "ISO/IEC 25010:2023 §5.1 functional-completeness`"
   - "ISO/IEC-25010:2023"
+  - "ISO/IEC-29119"
   - "RFC-8259"
   - "W3C JSON-LD 1.1 (citation as live linked-data)"
+  - "W3C JSON-LD 1.1 (citation as live linked-data)`"
   - "W3C-JSON-LD-1.1"
-  - "banners by scripts/standards-catalogue.ts. Do not edit by hand. -->"
+  - "banners by src/standards/emit.ts. Do not edit by hand. -->"
   - "tag pointing at this standardId. Populated by the citation-index gate (Slice QQQQQQQQ companion).' },"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - identity
-    - law
-    - proof
-    - standard
-  matrix:
-    - accounting
-    - agriculture
-    - analytics
-    - api
-    - certification
-    - factory
-    - folder
-    - grade
-    - identity
-    - law
-    - organic
-    - proof
-    - reference
-    - skills
-    - sourced
-    - standard
-    - topography
-    - truth
-    - vocabulary
-  backlinks:
-    - accounting
-    - agriculture
-    - analytics
-    - api
-    - certification
-    - factory
-    - folder
-    - grade
-    - identity
-    - law
-    - organic
-    - proof
-    - reference
-    - skills
-    - sourced
-    - standard
-    - topography
-    - truth
-    - vocabulary
 signatures:
-  computationUuid: "7f649ece-1c8b-8dfd-a33b-8cd9d7d16897"
+  computationUuid: "6b3ab21a-a34b-8806-bc9b-173f9925f5c6"
   stages:
     - stage: path
       stageUuid: "e4d21269-1c37-8fe4-85da-1900af3645f0"
     - stage: trinity
       stageUuid: "4d6b8103-7297-8bd1-a011-ba1bc9680168"
     - stage: boundary
-      stageUuid: "fe032e88-3d46-80f9-8c29-55c390e50fc3"
+      stageUuid: "f27e4714-4ec5-8eec-861d-2fe000a74263"
     - stage: links
       stageUuid: "ce14a10d-8dd0-8830-b2ef-cf5cffbeec8e"
     - stage: horo
-      stageUuid: "9879dd67-43f5-81c9-9eac-0381c83ed451"
+      stageUuid: "6260d3e9-c11a-80a3-bf9a-f26fa8352ab0"
     - stage: seal
-      stageUuid: "7b4499bc-f117-8590-9608-a84661bebd42"
+      stageUuid: "47197e8b-0e61-8144-80ca-7730bd2eb282"
     - stage: uuid
-      stageUuid: "9339f706-45b8-8e95-b3ab-b58f49f031ca"
+      stageUuid: "20b0ead5-cb17-87e9-a73f-ba4dbe60fbdb"
 version: 2
 ---
 # standards

@@ -1,73 +1,35 @@
 ---
 name: ownership
 description: "Use when reasoning about ownership as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/ownership
-coordinate: ownership · 8/crest · 2a54b40e
-contentUuid: "caa6ccbb-8d8e-59a6-a7d6-8b827c13963c"
-diamondUuid: "1d031bb7-da41-8930-91e5-23465f60ddef"
-uuid: "2a54b40e-76aa-8608-a039-3e3af4566e24"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - funding
-    - info
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - funding
-    - info
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/ownership"
+coordinate: "vocabulary/ownership · 7/descent · d35420a0"
+contentUuid: "28deec48-10c8-54eb-ac0b-2e75a93f1840"
+diamondUuid: "13010110-d155-826a-8e9d-b3e9971edc09"
+uuid: "d35420a0-6f94-8687-b76d-2462f3039651"
+horo: 7
 typography:
-  partition: ownership
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - funding
-    - info
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - funding
-    - info
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - funding
-    - info
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "11750c83-3c06-8652-84af-798283976332"
+  computationUuid: "897405ac-e925-8408-ae40-5ea099d93a2d"
   stages:
     - stage: path
-      stageUuid: "162b9234-a38c-8345-aa4c-939b6bf7ca70"
+      stageUuid: "13b758dc-7269-8a55-b120-86ab092ea431"
     - stage: trinity
-      stageUuid: "db161ff8-fb38-8966-a085-0bb12222d79b"
+      stageUuid: "73ca6fa8-7e42-8ebf-82d4-a79395c25d78"
     - stage: boundary
-      stageUuid: "0d5c2228-400f-8679-95c8-1f31291a711f"
+      stageUuid: "8327c3e5-eb6b-8fba-abad-01f3f692ef48"
     - stage: links
-      stageUuid: "33bcc21d-d38c-8587-8894-8e8ea4636927"
+      stageUuid: "95528bef-4644-8d72-a42b-0ec7b7391dfb"
     - stage: horo
-      stageUuid: "7611de08-ab1c-8d06-992e-9ba8154e2545"
+      stageUuid: "a68a8ed2-5523-8639-845c-85d0154388b4"
     - stage: seal
-      stageUuid: "f50d0828-de33-8314-9108-4caf62cff170"
+      stageUuid: "4e223779-2246-8818-8618-94594a10e7aa"
     - stage: uuid
-      stageUuid: "c0278600-9856-8db5-9ab7-152a371dcef4"
+      stageUuid: "cc264f83-58f6-8e92-bdba-ee1405f41945"
 version: 2
 ---
 # ownership

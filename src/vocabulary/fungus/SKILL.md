@@ -1,63 +1,35 @@
 ---
 name: fungus
 description: "Use when reasoning about fungus as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/fungus
-coordinate: fungus · 8/crest · f4fdce2f
-contentUuid: "249dce76-173d-5a6f-9743-f5b04e593e04"
-diamondUuid: "c8bfced7-c992-8235-b644-d27c1803204a"
-uuid: "f4fdce2f-98cd-8df9-b6ed-8be81adb0e19"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/fungus"
+coordinate: "vocabulary/fungus · 4/weave · ef362584"
+contentUuid: "700ca7b6-fc45-5713-9e43-0c73b4c7008b"
+diamondUuid: "b5ae8413-0bc5-829b-80e5-5e15b03104a2"
+uuid: "ef362584-ceff-810d-a182-9159bbae0e89"
+horo: 4
 typography:
-  partition: fungus
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "44995dfe-49eb-8b24-9670-a10ecbca09c9"
+  computationUuid: "90882611-e59c-8f2c-901f-8e114fc850f9"
   stages:
     - stage: path
-      stageUuid: "0c8ec8c6-f04a-8801-87ac-771b8241543c"
+      stageUuid: "512c74c8-ea23-8787-a38a-0653f2a64bc7"
     - stage: trinity
-      stageUuid: "f5b8a9e1-1fd2-8653-83ef-545049f5299d"
+      stageUuid: "236ffc4c-f7fd-8cf5-b5ad-bf0ada6fb8fa"
     - stage: boundary
-      stageUuid: "1c98cb79-9c5d-8492-9bd4-cd1589ddbcf8"
+      stageUuid: "8031aa77-44fa-8169-b6cd-4958328efe69"
     - stage: links
-      stageUuid: "f0160c5c-8e20-8f61-8f7c-1be838f63cfd"
+      stageUuid: "edbf8702-9c87-86b4-b00a-658330d23088"
     - stage: horo
-      stageUuid: "9b01d88f-d7e5-80ed-af0b-4f2998c23b15"
+      stageUuid: "5a5c20c6-ecd6-821e-94cd-5f2eb4782682"
     - stage: seal
-      stageUuid: "9fe0462c-7801-8a5b-90af-71b121bf65c2"
+      stageUuid: "bd804794-a76f-84f4-85d5-ed3270447fde"
     - stage: uuid
-      stageUuid: "eb992bb4-4437-82a5-90ee-544e02d314e3"
+      stageUuid: "2fee6f26-6fb6-8e15-a244-9248646c14f2"
 version: 2
 ---
 # fungus

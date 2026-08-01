@@ -1,58 +1,35 @@
 ---
 name: lender
 description: Use when reasoning about lender — A sub property of participant. The person that lends the object being borrowed.
-atomPath: vocabulary/lender
-coordinate: lender · 7/descent · af16689b
-contentUuid: "63a97a9e-891e-5f36-9a1b-45779d015e9a"
-diamondUuid: "d8aa0f97-5a16-840c-b3e9-e913b2ec501a"
-uuid: "af16689b-ce3b-845f-8dc2-7c1657b5471e"
-horo: 7
-bonds:
-  in:
-    - law
-    - person
-    - thing
-  out:
-    - law
-    - person
-    - thing
+atomPath: "vocabulary/lender"
+coordinate: "vocabulary/lender · 8/crest · eba9ef1b"
+contentUuid: "07707f98-eae7-5388-8fad-164362018ede"
+diamondUuid: "0546c7f9-ca33-8e6e-84d6-7bf2a8ba4170"
+uuid: "eba9ef1b-d393-8f83-a11f-a83a148f2977"
+horo: 8
 typography:
-  partition: lender
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - person
-    - thing
-  matrix:
-    - law
-    - person
-    - thing
-  backlinks:
-    - law
-    - person
-    - thing
 signatures:
-  computationUuid: "a579631c-97d7-8a70-882f-461ef00acf9d"
+  computationUuid: "099f0dd5-5a8a-8d1c-bd51-f95db90bec47"
   stages:
     - stage: path
-      stageUuid: "908f70e1-0717-89f6-a7f9-e31bad120e19"
+      stageUuid: "78af98f6-3b2d-8843-a665-c7b37344bc41"
     - stage: trinity
-      stageUuid: "ce2a2821-c602-8c9c-a036-59ed6b50d0a5"
+      stageUuid: "87c11fac-7485-87e9-9a81-91be0798da0c"
     - stage: boundary
-      stageUuid: "ba65cbd1-7ecf-8737-86cc-5cb306209ae9"
+      stageUuid: "5d791049-4991-869d-a7c1-4b2e0d307d11"
     - stage: links
-      stageUuid: "4be75ad9-a050-8245-a4d7-e87af83f3411"
+      stageUuid: "bac98fb8-7d7b-80cd-a862-dbb51ff10771"
     - stage: horo
-      stageUuid: "e928b9c0-afec-8672-a4d0-46958cf2f636"
+      stageUuid: "629c873e-5eb5-8c3e-bd5e-03d83b1c5ecc"
     - stage: seal
-      stageUuid: "4340932a-ed5a-8f87-b265-bc3666de78fd"
+      stageUuid: "f93d1823-717a-8de5-9f0d-94fb4ada9747"
     - stage: uuid
-      stageUuid: "cf7c36da-b200-8d8d-9f1d-3f332ad83fae"
+      stageUuid: "bcb0b542-d22d-8a6a-8aa1-32b16fcbe5d4"
 version: 2
 ---
 # lender

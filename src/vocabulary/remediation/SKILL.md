@@ -1,80 +1,34 @@
 ---
 name: remediation
 description: "Use when a contract specifies the remedy for breach — payment, replacement, repair, specific performance, cure period, calculation (liquidated damages, penalties, attorney fees)."
-atomPath: vocabulary/remediation
-coordinate: remediation · 5/round · b4caabf4
-contentUuid: "c909fdf1-6abd-559d-9e5b-8123e2a8d2ba"
-diamondUuid: "06142a66-96b0-8e89-b32e-488e4f4acf09"
-uuid: "b4caabf4-2416-8457-bcfd-3a5c30a7f657"
-horo: 5
-bonds:
-  in:
-    - contracts
-    - disputeresolution
-    - indemnity
-    - law
-    - liability
-    - matter
-    - termination
-    - warranty
-  out:
-    - contracts
-    - disputeresolution
-    - indemnity
-    - law
-    - liability
-    - matter
-    - termination
-    - warranty
+atomPath: "vocabulary/remediation"
+coordinate: "vocabulary/remediation · 2/share · 3f0a3e5d"
+contentUuid: "88db7e58-e169-5f15-95a7-78ea91df90e4"
+diamondUuid: "860d5a36-6fa9-8526-9cca-776516ef4934"
+uuid: "3f0a3e5d-ef5c-85b5-baff-ed53e8024a03"
+horo: 2
 typography:
-  partition: remediation
+  partition: vocabulary
   bondDegree: 24
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - contracts
-    - indemnity
-    - law
-    - liability
-    - matter
-    - warranty
-  matrix:
-    - contracts
-    - disputeresolution
-    - indemnity
-    - law
-    - liability
-    - matter
-    - termination
-    - warranty
-  backlinks:
-    - contracts
-    - disputeresolution
-    - indemnity
-    - law
-    - liability
-    - matter
-    - termination
-    - warranty
 signatures:
-  computationUuid: "63f8bb4e-a61e-8678-bf11-2931978dd63d"
+  computationUuid: "66a42b19-12a8-8566-be51-58ac0566696a"
   stages:
     - stage: path
-      stageUuid: "03faef74-f877-87fc-a36b-33bd111f7679"
+      stageUuid: "f63a3b41-7e7f-844e-8ef2-9189720f372a"
     - stage: trinity
-      stageUuid: "289bddd6-1348-81c5-8d7e-aba21333bc81"
+      stageUuid: "40f8acf1-8389-83fd-ab50-15cea71378e3"
     - stage: boundary
-      stageUuid: "841a7ed7-c9c6-8319-99ab-7154320c5fd0"
+      stageUuid: "611f9199-062c-855b-9acb-1a14e779e845"
     - stage: links
-      stageUuid: "155eac92-103a-8af1-86e3-7e5c93179da1"
+      stageUuid: "0b4bc307-5fc4-8891-b0a3-a4fc8158f647"
     - stage: horo
-      stageUuid: "7d4ce288-4e03-8197-8386-51599ee90e1c"
+      stageUuid: "edb2ba6d-362f-856e-b084-a63aac554f6e"
     - stage: seal
-      stageUuid: "d2b2c4f3-1935-8f85-84bc-0f1f7c0f27c8"
+      stageUuid: "d42ab4bd-c9f3-8928-8487-5e33b77929b7"
     - stage: uuid
-      stageUuid: "802ff288-1b85-8344-8cc7-65ba515a1014"
+      stageUuid: "5a7d478a-b821-8e12-9f85-7791ad61605b"
 version: 2
 ---
 # remediation

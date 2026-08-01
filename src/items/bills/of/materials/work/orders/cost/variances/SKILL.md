@@ -2,43 +2,14 @@
 name: variances
 description: "Use when closing a work order and reconciling standard vs actual manufacturing costs — material price/quantity, labour rate/efficiency, and overhead spending/volume variances per IAS-2 §21. The variance-decomposition record generated on work-order close."
 atomPath: "items/bills/of/materials/work/orders/cost/variances"
-coordinate: "items/bills/of/materials/work/orders/cost/variances · 4/weave · 8482d7d3"
-contentUuid: "67740605-b8ba-55b7-bd90-3c12019fe03c"
-diamondUuid: "b2260470-8665-81a0-b098-20a5f2ba38e6"
-uuid: "8482d7d3-e5fa-8c8b-9cc9-063d91936573"
-horo: 4
-bonds:
-  in:
-    - accounting
-    - balance
-    - cost
-    - fields
-    - hooks
-    - identity
-    - law
-    - manufacturing
-    - orders
-    - proof
-    - standard
-    - transaction
-    - variance
-  out:
-    - accounting
-    - balance
-    - fields
-    - hooks
-    - identity
-    - law
-    - manufacturing
-    - orders
-    - proof
-    - standard
-    - transaction
-    - variance
+coordinate: "items/bills/of/materials/work/orders/cost/variances · 2/share · 21c9bf10"
+contentUuid: "95d98067-40c5-5704-8510-876ef67ab161"
+diamondUuid: "d5f07848-3662-85a0-82cd-da2b18b0307f"
+uuid: "21c9bf10-f753-832c-b5a7-8b90a72aade8"
+horo: 2
 typography:
   partition: items
-  bondDegree: 36
-  neighbors: []
+  bondDegree: 20
 standards:
   - "IFRS IAS-2 §21 standard-cost-method"
   - "ISO-8601-1:2019 date-time variance-date"
@@ -47,47 +18,8 @@ standards:
   - "US-GAAP ASC-330-10-30 standard-cost-variance-recognition"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - balance
-    - fields
-    - hooks
-    - identity
-    - law
-    - manufacturing
-    - orders
-    - proof
-    - standard
-    - transaction
-  matrix:
-    - accounting
-    - balance
-    - fields
-    - hooks
-    - identity
-    - law
-    - manufacturing
-    - orders
-    - proof
-    - standard
-    - transaction
-    - variance
-  backlinks:
-    - accounting
-    - balance
-    - fields
-    - hooks
-    - identity
-    - law
-    - manufacturing
-    - orders
-    - proof
-    - standard
-    - transaction
-    - variance
 signatures:
-  computationUuid: "b7909b0b-3800-834c-acbe-1f6d91c3e439"
+  computationUuid: "7100fbef-69a1-8ee1-9ee2-cc1d47fc5ee7"
   stages:
     - stage: path
       stageUuid: "441288ac-8b0a-8d7b-b5eb-4842416d6954"
@@ -96,13 +28,13 @@ signatures:
     - stage: boundary
       stageUuid: "51e61e0f-8534-8f53-8457-bc6b4b432f1d"
     - stage: links
-      stageUuid: "22e6aa62-3c6d-8c09-b953-eb44bea288d4"
+      stageUuid: "a4299a36-793d-8d29-a066-a4b7bc03b9a5"
     - stage: horo
-      stageUuid: "bd539f8a-8d25-87f1-ba90-2b4f5d7d74d6"
+      stageUuid: "484ecf4c-8418-89c4-a96b-044073d478c7"
     - stage: seal
       stageUuid: "49348af1-bf22-8954-87c6-bc72f71f7bbd"
     - stage: uuid
-      stageUuid: "54a9b0b6-537a-8dd8-8c47-c7a2cf289530"
+      stageUuid: "6d8030ec-e56d-84e4-bfaa-6862cdc8b291"
 version: 2
 ---
 # cost-variances

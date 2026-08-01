@@ -2,71 +2,19 @@
 name: live
 description: "Use when reasoning about the aura as a live animation — the analog field stepping through the horo ring, each position a frame lit by its colour and sound, where scanning an atom joins it to the horo (its position is its frame), the society animated."
 atomPath: "aura/live"
-coordinate: "aura/live · 8/crest · 207f2458"
-contentUuid: "bb7f4761-d26c-544a-ba30-6cf46e841145"
-diamondUuid: "5d41ecef-fb7c-81f9-ae28-c8caef0a8140"
-uuid: "207f2458-8c77-8927-8d08-068b928fdd0b"
-horo: 8
-bonds:
-  in:
-    - aura
-    - blog
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - posting
-    - realtime
-    - sti
-    - update
-  out:
-    - blog
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - posting
-    - realtime
-    - sti
-    - update
+coordinate: "aura/live · 2/share · 6f834f5d"
+contentUuid: "4f80ec1d-e13a-5d67-9123-eeb22a66472c"
+diamondUuid: "b4674566-1d00-86d1-8441-ca8a302a3b9f"
+uuid: "6f834f5d-7ea8-867e-a36d-4aa2b23bdd9b"
+horo: 2
 typography:
   partition: aura
   bondDegree: 38
-  neighbors:
-    - aura
 standards:
   - "the horo ring (1·2·4·8·7·5·9) · A432 signal per step · content-addressed colour/sound (the analog aura)"
 bindings: []
-neighbors:
-  wikilink:
-    - aura
-    - digit
-    - horo
-    - law
-    - signal
-    - society
-  matrix:
-    - blog
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - posting
-    - realtime
-    - sti
-    - update
-  backlinks:
-    - blog
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - posting
-    - realtime
-    - sti
-    - update
 signatures:
-  computationUuid: "85144bb0-ed02-8daf-b231-8beaeec28373"
+  computationUuid: "315c6b43-d243-8d03-8091-e2f5ca0f3aca"
   stages:
     - stage: path
       stageUuid: "02192ec0-87a3-8f25-a130-47c8a696e147"
@@ -77,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "32fbe176-aec9-84a3-9ba8-1285ce24854e"
     - stage: horo
-      stageUuid: "2f19b21d-11d0-855a-bd02-8bcd88f74de8"
+      stageUuid: "5051cf09-4aa8-8f41-a6fe-a2046e9f1658"
     - stage: seal
       stageUuid: "82fdcf7a-0712-8f80-9efd-11f549767cbf"
     - stage: uuid
-      stageUuid: "2dc528a0-c330-82a2-965d-85dddf77f716"
+      stageUuid: "292e8a11-2e6f-86dc-93b1-7492b0a90180"
 version: 2
 ---
 # aura/live — the animation: scan to join the horo

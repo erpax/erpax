@@ -1,73 +1,35 @@
 ---
 name: attraction
 description: "Use when reasoning about attraction as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/attraction
-coordinate: attraction · 4/weave · 76e1b248
-contentUuid: "45bef2ca-fad5-5245-9589-e9470f06c52d"
-diamondUuid: "554f486a-6908-85ae-bb84-a0f7104013ed"
-uuid: "76e1b248-aa86-80f8-b34b-d2d5e1f90113"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - includes
-    - law
-    - merge
-    - sti
-    - tourist
-  out:
-    - collapse
-    - includes
-    - law
-    - merge
-    - sti
-    - tourist
+atomPath: "vocabulary/attraction"
+coordinate: "vocabulary/attraction · 7/descent · 83095704"
+contentUuid: "6f1d5021-47ad-5957-94d6-af2298ed5604"
+diamondUuid: "0c81b21f-caed-8fd6-a885-9eb3ecf41eb2"
+uuid: "83095704-50fc-85f5-a0c9-d2df3eb5b244"
+horo: 7
 typography:
-  partition: attraction
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - includes
-    - law
-    - merge
-    - sti
-    - tourist
-  matrix:
-    - collapse
-    - includes
-    - law
-    - merge
-    - sti
-    - tourist
-  backlinks:
-    - collapse
-    - includes
-    - law
-    - merge
-    - sti
-    - tourist
 signatures:
-  computationUuid: "20c3569c-8b07-8e07-a6ba-78d18db83a60"
+  computationUuid: "f8f7fe97-a431-8b4e-a54a-f74153cebee8"
   stages:
     - stage: path
-      stageUuid: "11207f44-e2cf-830e-9cd6-a674b62fa222"
+      stageUuid: "333fc6ea-5a21-837f-a51d-a28a3f007df7"
     - stage: trinity
-      stageUuid: "b61749f6-2577-8b00-8812-11b7652bbafd"
+      stageUuid: "c618ae34-494e-8219-8ef6-416d5a478618"
     - stage: boundary
-      stageUuid: "bc30ba2b-c939-8ed7-9dc9-41bea17824af"
+      stageUuid: "89ba0330-4374-8ca4-b255-bba0d8f42e6e"
     - stage: links
-      stageUuid: "b3af0c14-b2ca-867e-a3d5-d2bf748499c4"
+      stageUuid: "a13cc369-7506-8c5e-befb-a7cb6b4fc576"
     - stage: horo
-      stageUuid: "0440ec35-21f6-8894-9b43-bd8b2c7308df"
+      stageUuid: "0717849f-4f0d-8120-9298-19d6553db39f"
     - stage: seal
-      stageUuid: "fc5595bc-3921-8df8-8dbe-d9e737e4292a"
+      stageUuid: "1080f27a-e40b-84b4-baa1-9390ae18314d"
     - stage: uuid
-      stageUuid: "b8940f1a-a679-8799-bdda-0834993d348f"
+      stageUuid: "b1b0ff2d-3538-82bf-a544-1513fb35ff0d"
 version: 2
 ---
 # attraction

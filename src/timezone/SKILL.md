@@ -2,57 +2,19 @@
 name: timezone
 description: "Use when reasoning about timezone as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: timezone
-coordinate: timezone · 4/weave · 5ea6f7db
-contentUuid: "ab30b193-19d6-563e-87bb-be67e3cb6c98"
-diamondUuid: "c52ab6c6-4607-8eb5-94f4-b5281b29b5bb"
-uuid: "5ea6f7db-21ce-8a7c-af89-b076e6080a3f"
-horo: 4
-bonds:
-  in:
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - schedule
-    - sti
-  out:
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - schedule
-    - sti
+coordinate: "timezone · 1/base · 197b6901"
+contentUuid: "9af81635-61c0-5856-9240-a6ed0af41a66"
+diamondUuid: "bc81e79e-20aa-844b-a4a6-8ede1c130cc3"
+uuid: "197b6901-4d03-86b5-9764-96f65839c671"
+horo: 1
 typography:
   partition: timezone
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - schedule
-    - sti
-  matrix:
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - schedule
-    - sti
-  backlinks:
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - schedule
-    - sti
 signatures:
-  computationUuid: "3ce2e76e-97cf-83cb-9e09-7df945a5add0"
+  computationUuid: "f8df2afc-a103-852f-8faf-97856432c3ce"
   stages:
     - stage: path
       stageUuid: "637aebb8-cf39-8afb-b833-22a32132b813"
@@ -63,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "57c7f6cf-683c-8c80-a970-a4a8981efc4c"
     - stage: horo
-      stageUuid: "2df73b9e-376d-81af-acc0-d5aa77707c69"
+      stageUuid: "5ccf287c-9dad-8c53-8418-6315961b329c"
     - stage: seal
-      stageUuid: "e8cdc78d-93c0-820b-b383-69f52802178f"
+      stageUuid: "77353127-69fa-821e-a7a9-63a054362254"
     - stage: uuid
-      stageUuid: "dd8aec0e-9459-854b-a5d8-7ace65ef2dd4"
+      stageUuid: "b735f56a-0233-861e-93bd-2c364277d0c1"
 version: 2
 ---
 # timezone

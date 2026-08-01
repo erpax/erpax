@@ -2,57 +2,19 @@
 name: screening
 description: "Use when reasoning about screening as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: screening
-coordinate: screening · 8/crest · 59eeb96a
-contentUuid: "9e46358c-1863-5660-ba43-57fe31714f9c"
-diamondUuid: "1db5ced3-f039-8ed6-967d-3d507b83a3f2"
-uuid: "59eeb96a-39b9-8c36-a843-9d34a41b7311"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - event
-    - law
-    - merge
-    - security
-    - sti
-  out:
-    - collapse
-    - event
-    - law
-    - merge
-    - security
-    - sti
+coordinate: "screening · 5/round · bc93047a"
+contentUuid: "dd8e05fd-49f0-5b4c-bff8-84559dd26d5b"
+diamondUuid: "7f39f685-ed2a-850b-92db-9b44d5263737"
+uuid: "bc93047a-f62f-820e-8fcd-e05e3e7f0d33"
+horo: 5
 typography:
   partition: screening
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - event
-    - law
-    - merge
-    - security
-    - sti
-  matrix:
-    - collapse
-    - event
-    - law
-    - merge
-    - security
-    - sti
-  backlinks:
-    - collapse
-    - event
-    - law
-    - merge
-    - security
-    - sti
 signatures:
-  computationUuid: "56297370-5040-81bc-867c-1d092d2c277d"
+  computationUuid: "4cee4c88-4d1a-877b-865c-eba9f86a4bf9"
   stages:
     - stage: path
       stageUuid: "ee87110d-55d7-84a6-ab8c-9de6aa91bb2b"
@@ -63,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b0af7b73-e1ce-8f34-8557-37f1ad083746"
     - stage: horo
-      stageUuid: "62fb30e3-969a-8d0f-bccf-0db61549853b"
+      stageUuid: "e0e1ce51-ed86-8cc1-8b0a-89e50a27bf81"
     - stage: seal
-      stageUuid: "30b8772c-49d9-876c-b1e7-27b3955c67b7"
+      stageUuid: "50107697-2e98-895f-a370-a3ae539a58ee"
     - stage: uuid
-      stageUuid: "436f7ac3-5832-80e1-a58c-9a54ca1aab87"
+      stageUuid: "eb11b381-32f5-8169-b33f-caf003ab2b36"
 version: 2
 ---
 # screening

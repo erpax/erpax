@@ -2,84 +2,19 @@
 name: communication
 description: "Use when conveying a message from a sender to a receiver — the message is its content-uuid (self-decoding, no payload), so transfer is uuid-transfer; same content is the same message and a tampered message has a different uuid."
 atomPath: communication
-coordinate: "communication · 1/base · f39732be"
-contentUuid: "d323e4d0-7cfa-580b-9f48-db8dfb25543a"
-diamondUuid: "0270612c-a862-8891-a6c5-7703da460c5c"
-uuid: "f39732be-2e57-8046-91a4-d51a44008e4d"
-horo: 1
-bonds:
-  in:
-    - channel
-    - chat
-    - communication
-    - key
-    - law
-    - merge
-    - message
-    - quantum
-    - send
-    - superdense
-    - teleportation
-    - uuid
-  out:
-    - channel
-    - chat
-    - communication
-    - key
-    - law
-    - merge
-    - message
-    - quantum
-    - send
-    - superdense
-    - teleportation
-    - uuid
+coordinate: "communication · 2/share · 83b5c4ab"
+contentUuid: "2a78ee29-f7f4-5cb9-ae2a-4f58026b6d5e"
+diamondUuid: "5d0e2d41-da00-8def-8ad8-4440ecc90f03"
+uuid: "83b5c4ab-3bc4-8a48-9bdb-65cfaeef936f"
+horo: 2
 typography:
   partition: communication
   bondDegree: 58
-  neighbors:
-    - agent
 standards:
   - "the message-uuid (self-decoding); RFC 9562 §5.8 content-uuid"
 bindings: []
-neighbors:
-  wikilink:
-    - channel
-    - chat
-    - law
-    - merge
-    - message
-    - quantum
-    - send
-    - uuid
-  matrix:
-    - channel
-    - chat
-    - communication
-    - key
-    - law
-    - merge
-    - message
-    - quantum
-    - send
-    - superdense
-    - teleportation
-    - uuid
-  backlinks:
-    - channel
-    - chat
-    - communication
-    - key
-    - law
-    - merge
-    - message
-    - quantum
-    - send
-    - superdense
-    - teleportation
-    - uuid
 signatures:
-  computationUuid: "4a10211e-77cc-8a14-9322-6f588836e554"
+  computationUuid: "1e90d2f9-db25-8ce3-966b-d33dc44b72bd"
   stages:
     - stage: path
       stageUuid: "a2134ab2-6571-8247-890f-371071a50d3d"
@@ -90,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d88a99f0-0128-8904-b730-b9c0df0df0e7"
     - stage: horo
-      stageUuid: "584e64e2-a880-8ad8-9073-f0ca2b556a1f"
+      stageUuid: "1f3bbb22-f68d-841e-b120-5def125f150e"
     - stage: seal
       stageUuid: "f67d187d-7c31-83bd-a35b-4062090b58d5"
     - stage: uuid
-      stageUuid: "1997356c-95f5-89ed-81c2-e59c37b22117"
+      stageUuid: "206391df-e199-83de-848a-6eef89af042c"
 version: 2
 ---
 # communication — transfer of a message-uuid

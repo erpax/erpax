@@ -1,57 +1,34 @@
 ---
 name: calculation
 description: Use when modelling one calculation — the singular model of the calculations collection (the plural store); a computed numeric result derived from inputs.
-atomPath: vocabulary/calculation
-coordinate: calculation · 5/round · 3a09d447
-contentUuid: "b12d5f7d-6e44-573c-926a-9463555d0d56"
-diamondUuid: "23a59a59-a14c-8a28-a546-ae07d08f6e65"
-uuid: "3a09d447-90fa-85b6-9214-a07139a6e79f"
-horo: 5
-bonds:
-  in:
-    - balance
-    - calculations
-    - math
-  out:
-    - balance
-    - calculations
-    - math
+atomPath: "vocabulary/calculation"
+coordinate: "vocabulary/calculation · 7/descent · ab49ab8c"
+contentUuid: "6e3c2d24-2134-5a5e-acc7-835c05b78c46"
+diamondUuid: "4429e939-5dbf-86d8-ba8c-68c44a1cb9aa"
+uuid: "ab49ab8c-7aae-870f-a909-b7384a462282"
+horo: 7
 typography:
-  partition: calculation
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - calculations
-    - math
-  matrix:
-    - balance
-    - calculations
-    - math
-  backlinks:
-    - balance
-    - calculations
-    - math
 signatures:
-  computationUuid: "5ece4846-b5d2-8221-9d96-bd9c394c996b"
+  computationUuid: "9d409fe5-f7a9-8be3-a2e2-844171187d32"
   stages:
     - stage: path
-      stageUuid: "20059d85-4d2c-8ff1-b8a8-caa005e5bec7"
+      stageUuid: "9d855f43-b6cd-8f22-aba1-cf16222fca59"
     - stage: trinity
-      stageUuid: "ee8124ce-dc48-8cd8-b1bd-2e4c579f6104"
+      stageUuid: "225110d0-0e6a-89da-b9b2-e98e605e813c"
     - stage: boundary
-      stageUuid: "5abbc696-66dc-844d-bab0-9df05dabf3ae"
+      stageUuid: "cfa90d65-5ff4-846b-bc6f-c7311018b244"
     - stage: links
-      stageUuid: "b2cdc81d-5983-89ad-9dfd-3f82463fe7e0"
+      stageUuid: "55efa895-6d5a-86c2-9109-c0cb67155148"
     - stage: horo
-      stageUuid: "7ff29389-4c87-8ea7-8a9f-cc525aa45f94"
+      stageUuid: "19a78e5a-8440-83f2-996b-18712f9cf535"
     - stage: seal
-      stageUuid: "dbdb1203-e035-853a-83c5-057c48719be0"
+      stageUuid: "02c3c3ff-be03-80f3-b5b9-4d5c7c930efe"
     - stage: uuid
-      stageUuid: "a7a102a8-2663-8c7a-9687-5551d18cbc48"
+      stageUuid: "d5e97761-e868-831a-be1b-647e02f2ab52"
 version: 2
 ---
 # calculation — the model of one [[calculations]] row

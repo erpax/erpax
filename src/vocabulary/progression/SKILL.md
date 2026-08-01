@@ -1,68 +1,35 @@
 ---
 name: progression
 description: "Use when reasoning about progression as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/progression
-coordinate: progression · 5/round · ec9c5e53
-contentUuid: "216ceefb-6775-521a-afd5-ba421bc58904"
-diamondUuid: "2f6308c7-4f5c-8110-94f7-48633c435b22"
-uuid: "ec9c5e53-362b-8dc7-aa7e-5fe5737e7de9"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - natural
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - natural
-    - sti
+atomPath: "vocabulary/progression"
+coordinate: "vocabulary/progression · 4/weave · 4bbfdd38"
+contentUuid: "980377c9-74ec-5fff-a4df-5c2b7df1cad2"
+diamondUuid: "dc756884-33a2-8a5e-8988-faa27252fc1d"
+uuid: "4bbfdd38-fd33-867a-ab23-e939ed3ea04a"
+horo: 4
 typography:
-  partition: progression
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - natural
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - natural
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - natural
-    - sti
 signatures:
-  computationUuid: "8bec8fd4-974b-834d-94fa-9bcd4bcf106b"
+  computationUuid: "6798d5af-ba97-83f2-8920-4c4ae8b3d23e"
   stages:
     - stage: path
-      stageUuid: "81870f7d-c4e4-8396-8938-f1cbb7f043f4"
+      stageUuid: "261b91f2-26c1-8c62-8f2d-6bb3b8d138e0"
     - stage: trinity
-      stageUuid: "bc53388e-c016-86d4-b519-7a853b4c4e28"
+      stageUuid: "4c8e2b40-2899-8031-8098-0258b4b96403"
     - stage: boundary
-      stageUuid: "c9f22c04-2c86-876d-b0be-58605c82cd8d"
+      stageUuid: "0729f989-4683-8781-b655-39c715b01b12"
     - stage: links
-      stageUuid: "16d5c6c6-11fb-8528-ab73-26e9d1b24fb4"
+      stageUuid: "2f31644e-eb20-86ee-8ec8-b76d7275cf31"
     - stage: horo
-      stageUuid: "bda27b1a-1499-8d6c-ae63-93ab084248c2"
+      stageUuid: "2b9665cf-dd8c-84cb-8e44-4b1d22f87d2b"
     - stage: seal
-      stageUuid: "e7fc3e75-f2a7-8b7f-8b91-7eec84f65fbd"
+      stageUuid: "9889f88c-e512-81d9-89fc-222f5c29d268"
     - stage: uuid
-      stageUuid: "4e50f736-df88-8d88-a836-1df84faee66d"
+      stageUuid: "ce4e3cd6-53d4-898c-a09d-c4e30e9a9542"
 version: 2
 ---
 # progression

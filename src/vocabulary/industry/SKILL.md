@@ -1,58 +1,35 @@
 ---
 name: industry
 description: Use when reasoning about industry — The industry associated with the job position.
-atomPath: vocabulary/industry
-coordinate: industry · 5/round · c7f63805
-contentUuid: "e0efb2b7-cc3a-5c07-ae6a-1d31c4c580ed"
-diamondUuid: "3a139f99-badc-8963-a70f-5d9ddc43aad2"
-uuid: "c7f63805-91d0-83f5-93ea-e9527ae454c4"
-horo: 5
-bonds:
-  in:
-    - law
-    - sector
-    - thing
-  out:
-    - law
-    - sector
-    - thing
+atomPath: "vocabulary/industry"
+coordinate: "vocabulary/industry · 2/share · f0c0b682"
+contentUuid: "ad2069bc-b249-5b47-b79e-be0740624282"
+diamondUuid: "f9fd56b7-1b7c-82e7-89a9-6778adf22c32"
+uuid: "f0c0b682-9e12-837c-82ff-282cf4041f70"
+horo: 2
 typography:
-  partition: industry
-  bondDegree: 29
-  neighbors:
-    - diamond
+  partition: vocabulary
+  bondDegree: 25
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - sector
-    - thing
-  backlinks:
-    - law
-    - sector
-    - thing
 signatures:
-  computationUuid: "0a0aeb4a-25c7-85ce-a667-6b1ce8d5445b"
+  computationUuid: "8afc6e40-3480-8551-873d-1fd400ee08e2"
   stages:
     - stage: path
-      stageUuid: "a048fb08-d0d7-84e3-847f-9e941b57a60e"
+      stageUuid: "25e581a5-1ce9-8f89-8514-18b1158f7cb4"
     - stage: trinity
-      stageUuid: "d461a6a1-8abe-86d2-8c1a-943b44d6dacf"
+      stageUuid: "7bbcf6d2-4b79-81ec-ae7c-a231f6dcbb62"
     - stage: boundary
-      stageUuid: "78bcf0cc-6cc2-8907-9460-01bd0d0dc89a"
+      stageUuid: "2ba7199f-7310-8915-9ef6-933762d2ddb8"
     - stage: links
-      stageUuid: "3fb678b3-495c-8f22-a5e5-e2543a83249e"
+      stageUuid: "e37797ec-2487-8365-af75-620046139bef"
     - stage: horo
-      stageUuid: "3dff7424-3fd9-88d0-a65e-737dacf37cd4"
+      stageUuid: "3774d9e1-dff9-87c4-9d69-269e952caecd"
     - stage: seal
-      stageUuid: "af53da3f-ba2f-8b40-96c6-e0fab17278dd"
+      stageUuid: "6d28dc66-5257-8ba2-bfd9-4773fbc38ff9"
     - stage: uuid
-      stageUuid: "42881e67-2b55-8e05-8801-5c8ef2b336ce"
+      stageUuid: "4a108560-0528-853b-964b-e49a44d8f772"
 version: 2
 ---
 # industry

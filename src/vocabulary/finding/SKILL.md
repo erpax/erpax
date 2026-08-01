@@ -1,62 +1,34 @@
 ---
 name: finding
 description: Use when modelling one finding — the singular model of the findings collection (the plural store); an observation of fact produced by an audit or review.
-atomPath: vocabulary/finding
-coordinate: finding · 7/descent · 0e3add87
-contentUuid: "67377c4a-766c-5540-ad3b-0232b8d53bbd"
-diamondUuid: "db565eb5-af53-8a7c-9913-44709e8aa3d0"
-uuid: "0e3add87-a75a-8b3e-b4ad-bdd7f4ab8c2c"
+atomPath: "vocabulary/finding"
+coordinate: "vocabulary/finding · 7/descent · c3c73b85"
+contentUuid: "374abec7-7a30-5712-b807-cf3b4e7d23ee"
+diamondUuid: "93dbd152-29d9-878e-902e-784d8a979c5d"
+uuid: "c3c73b85-6d12-8ccd-a4db-adf4ce1b2578"
 horo: 7
-bonds:
-  in:
-    - audit
-    - balance
-    - findings
-    - law
-  out:
-    - audit
-    - balance
-    - findings
-    - law
 typography:
-  partition: finding
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - audit
-    - balance
-    - findings
-    - law
-  matrix:
-    - audit
-    - balance
-    - findings
-    - law
-  backlinks:
-    - audit
-    - balance
-    - findings
-    - law
 signatures:
-  computationUuid: "a5f942da-dc6c-8c37-adf7-caa3d37decba"
+  computationUuid: "609f5610-33d0-8222-911f-52362618193f"
   stages:
     - stage: path
-      stageUuid: "2872f8a9-25d0-82b8-8f0d-c6d46fef41b7"
+      stageUuid: "e2969d90-13f6-8c86-a68a-2e9ee378e766"
     - stage: trinity
-      stageUuid: "a4235164-1b92-8a5d-951e-beb0970672b9"
+      stageUuid: "3b667e0d-2299-8d24-8183-b76e2f201256"
     - stage: boundary
-      stageUuid: "9cdf7e51-2c08-8ae9-91e5-4193c04edfda"
+      stageUuid: "215a60c5-56ed-80bd-be24-b9a9fe6244f5"
     - stage: links
-      stageUuid: "9ea38f30-d4bf-8ab4-b554-82053513973f"
+      stageUuid: "f7a6d8ab-df24-8623-8280-052b93a6d966"
     - stage: horo
-      stageUuid: "be1e9984-f9c5-8eeb-be6f-3c937965e113"
+      stageUuid: "3cc240b5-a299-89fa-a7b5-9481c91fdf3a"
     - stage: seal
-      stageUuid: "d88c2c76-e5aa-8e60-9589-88d6c9178a60"
+      stageUuid: "d650dcfa-fdd5-89a4-82d2-2487444ec20f"
     - stage: uuid
-      stageUuid: "da3fe1f9-1a6d-849f-96c6-580ad78f1d6d"
+      stageUuid: "6be20b68-2d4e-80a4-a44e-6193a3ff3bb0"
 version: 2
 ---
 # finding — the model of one [[findings]] row

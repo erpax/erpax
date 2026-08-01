@@ -1,68 +1,35 @@
 ---
 name: negative
 description: "Use when reasoning about negative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/negative
-coordinate: negative · 8/crest · 792f6961
-contentUuid: "4376a2ca-1aa6-51ab-967b-6c030f672b04"
-diamondUuid: "1f9d37fe-64e0-8901-80f6-b6eb46fa11ab"
-uuid: "792f6961-992e-89a7-b3b6-c9d3efce0cba"
+atomPath: "vocabulary/negative"
+coordinate: "vocabulary/negative · 8/crest · c5152662"
+contentUuid: "ad936b78-183e-5310-a527-2d0a28090954"
+diamondUuid: "1fe78184-2523-8a37-a12f-b67c5f8e507c"
+uuid: "c5152662-1f4e-8e1c-9802-bd4bc743076b"
 horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - notes
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - notes
-    - sti
 typography:
-  partition: negative
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - notes
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - notes
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - notes
-    - sti
 signatures:
-  computationUuid: "d0c6d0eb-98a1-846d-a25b-b75a37431524"
+  computationUuid: "23ffef5f-0252-8de2-837e-c03cd45e1d5c"
   stages:
     - stage: path
-      stageUuid: "e8d1d7a8-ff90-836c-896f-83cfd949c096"
+      stageUuid: "7237df3c-a12a-8bb8-b644-b7238848005a"
     - stage: trinity
-      stageUuid: "2a757deb-2346-8dd7-94dc-a0abc0625fec"
+      stageUuid: "1b8b3cf6-1a2c-81c0-a2f1-1c67d75571c5"
     - stage: boundary
-      stageUuid: "7c315cfd-d8cb-8f82-bb0e-da24321f3b2a"
+      stageUuid: "f21e685e-2583-83fc-baa1-3d18bafbad83"
     - stage: links
-      stageUuid: "df43c4de-ee50-8e35-ac4d-b8c53ac0218a"
+      stageUuid: "63190f25-7078-89cf-8bfc-e3ff33041bcc"
     - stage: horo
-      stageUuid: "7dfe2ab3-8acf-8f04-bd60-3857e5e8ec8e"
+      stageUuid: "fba8f980-a182-89ad-a400-373bc0ed8f5f"
     - stage: seal
-      stageUuid: "bb3d7b1f-ebb1-8397-b26e-bee98f1ca8a3"
+      stageUuid: "7fe5122d-6997-85b8-a276-7b6ddf3b9f55"
     - stage: uuid
-      stageUuid: "89df8082-8ebf-8a3d-a111-c04aa38a285a"
+      stageUuid: "28e85a48-1f1a-8ab3-a90d-15248cbdd994"
 version: 2
 ---
 # negative

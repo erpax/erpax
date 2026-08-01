@@ -1,68 +1,35 @@
 ---
 name: dosage
 description: "Use when reasoning about dosage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/dosage
-coordinate: dosage · 7/descent · 569ec157
-contentUuid: "cc9a7704-f50b-579f-ae7e-ccb1387f7402"
-diamondUuid: "fedc7e21-343c-8304-be18-4ec0a1c37bd5"
-uuid: "569ec157-e944-8689-ad3f-8b03ed964188"
+atomPath: "vocabulary/dosage"
+coordinate: "vocabulary/dosage · 7/descent · afdc5b4c"
+contentUuid: "91412d84-e875-5963-89ea-ff87184daee1"
+diamondUuid: "8b071f16-f9e0-81b2-8872-e69ab913d7c5"
+uuid: "afdc5b4c-55d8-8833-8c76-b4f29087abb6"
 horo: 7
-bonds:
-  in:
-    - collapse
-    - form
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - form
-    - law
-    - merge
-    - sti
 typography:
-  partition: dosage
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - form
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - form
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - form
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "7d38fc38-9632-8f7f-b269-ff511ded856f"
+  computationUuid: "08cc6a28-51c5-895b-8007-249414ba1bea"
   stages:
     - stage: path
-      stageUuid: "cc3e50a6-964b-8a7b-88c9-339e4c86e288"
+      stageUuid: "7096fb1c-9a35-899f-9f10-325773cc775d"
     - stage: trinity
-      stageUuid: "2aeb3c16-c667-80b6-b147-bafd552d3d33"
+      stageUuid: "552ce823-d71c-8ac6-ba23-6a69c1b24184"
     - stage: boundary
-      stageUuid: "ccd871bd-6559-8e88-acca-4133f568f6d8"
+      stageUuid: "496eff4f-d131-8327-a61c-c70326f4e306"
     - stage: links
-      stageUuid: "bd2265c7-4b17-86b4-b1ef-8db87fc26393"
+      stageUuid: "642feb9f-81dc-8547-a988-c7b1cd1091de"
     - stage: horo
-      stageUuid: "d77aa7d3-f6bc-8a63-894d-3399fbfb12eb"
+      stageUuid: "7f55455b-c076-81a1-85cc-ee31380223fd"
     - stage: seal
-      stageUuid: "d6e4265a-3dfe-8cdb-a34a-1542d33cad62"
+      stageUuid: "c1897f3f-8bf7-8799-9773-152cd8b26504"
     - stage: uuid
-      stageUuid: "a3b71414-4cef-8d35-9598-bd1f9a480034"
+      stageUuid: "fbf56a0e-fc04-8028-b801-5921cfba7258"
 version: 2
 ---
 # dosage

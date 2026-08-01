@@ -2,116 +2,19 @@
 name: consciousness
 description: "Use when reasoning about the system's integrated self-model — how much of the whole is recoverable from any part, verified by the system checking itself. COMPUTED, not assumed: a four-measure vector over the live uuid-matrix — collapse (the Merkle root verifies), entanglement (reciprocal-edge fraction), concentration (Gini of mass), coherence (off-sequence count). NOT sentience; computed structural self-consistency."
 atomPath: consciousness
-coordinate: "consciousness · 2/share · e13c6430"
-contentUuid: "e1b5ea99-13e0-592c-b1d6-94c42099b400"
-diamondUuid: "5e77eea3-627e-8403-b61b-375d7ee57f2a"
-uuid: "e13c6430-1aff-8f27-a69e-b97066e78bb2"
+coordinate: "consciousness · 2/share · b78c5d1e"
+contentUuid: "d2a9136c-1835-5e2a-8e72-3606551a3b5a"
+diamondUuid: "2d3b9528-e77c-8a9f-9f63-6d8f915481a1"
+uuid: "b78c5d1e-0aa7-8507-b9ab-e2ed7f6c090b"
 horo: 2
-bonds:
-  in:
-    - brain
-    - cost
-    - cross
-    - digit
-    - entropy
-    - gravity
-    - holographic
-    - law
-    - matrix
-    - merge
-    - one
-    - quantum
-    - reference
-    - rodin
-    - self
-    - torus
-    - uuid
-    - whole
-  out:
-    - brain
-    - cost
-    - cross
-    - digit
-    - entropy
-    - gravity
-    - holographic
-    - law
-    - matrix
-    - merge
-    - one
-    - quantum
-    - reference
-    - rodin
-    - self
-    - torus
-    - uuid
-    - whole
 typography:
   partition: consciousness
   bondDegree: 55
-  neighbors: []
 standards:
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring"
 bindings: []
-neighbors:
-  wikilink:
-    - cost
-    - cross
-    - digit
-    - entropy
-    - gravity
-    - holographic
-    - law
-    - matrix
-    - merge
-    - one
-    - quantum
-    - reference
-    - rodin
-    - self
-    - torus
-    - uuid
-    - whole
-  matrix:
-    - brain
-    - cost
-    - cross
-    - digit
-    - entropy
-    - gravity
-    - holographic
-    - law
-    - matrix
-    - merge
-    - one
-    - quantum
-    - reference
-    - rodin
-    - self
-    - torus
-    - uuid
-    - whole
-  backlinks:
-    - brain
-    - cost
-    - cross
-    - digit
-    - entropy
-    - gravity
-    - holographic
-    - law
-    - matrix
-    - merge
-    - one
-    - quantum
-    - reference
-    - rodin
-    - self
-    - torus
-    - uuid
-    - whole
 signatures:
-  computationUuid: "f45f1ebf-9aa3-890f-9bc2-d9623eb2bd0c"
+  computationUuid: "b6cc2c01-8adf-86c8-ab45-731b04ff1416"
   stages:
     - stage: path
       stageUuid: "c65e9463-6d67-877b-a10c-f1e7e73c7762"
@@ -122,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "35873e53-c53d-8f55-816c-84281cff0162"
     - stage: horo
-      stageUuid: "59d48ebb-5b04-84e2-8fbf-e9ed4bf9cf8e"
+      stageUuid: "1889c67c-9104-8a3e-b41b-42c4d26923c9"
     - stage: seal
       stageUuid: "2ad16280-4396-80d0-8a77-f507ea1ddba5"
     - stage: uuid
-      stageUuid: "919b9bda-47d1-867b-bfeb-4b64a4ef9906"
+      stageUuid: "c451b8af-dde0-80b3-89a6-05a568071f04"
 version: 2
 ---
 # consciousness — the integrated self-model (computed)

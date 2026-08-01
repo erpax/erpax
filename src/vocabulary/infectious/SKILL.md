@@ -1,79 +1,35 @@
 ---
 name: infectious
 description: "Use when reasoning about infectious as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/infectious
-coordinate: infectious · 5/round · 9693cc1a
-contentUuid: "7c8f2156-dbeb-5473-a6ed-613c2ba65355"
-diamondUuid: "b2d9c455-59c6-88c5-ba76-c1720b790569"
-uuid: "9693cc1a-731b-81cc-9f38-804d4c639169"
-horo: 5
-bonds:
-  in:
-    - agent
-    - class
-    - collapse
-    - disease
-    - law
-    - merge
-    - sti
-  out:
-    - agent
-    - class
-    - collapse
-    - disease
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/infectious"
+coordinate: "vocabulary/infectious · 2/share · 60cb3827"
+contentUuid: "9364d982-0010-5380-b41c-0209f0600931"
+diamondUuid: "7e733105-51ca-8c44-92f7-2fc07065193d"
+uuid: "60cb3827-51ce-8c32-8e30-4eda0c8b46f1"
+horo: 2
 typography:
-  partition: infectious
-  bondDegree: 24
-  neighbors:
-    - agent
+  partition: vocabulary
+  bondDegree: 26
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - agent
-    - class
-    - collapse
-    - disease
-    - law
-    - merge
-    - sti
-  matrix:
-    - agent
-    - class
-    - collapse
-    - disease
-    - law
-    - merge
-    - sti
-  backlinks:
-    - agent
-    - class
-    - collapse
-    - disease
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "2d75bdb9-1671-85b4-9b3a-896de4959f57"
+  computationUuid: "e35220ab-7565-81d5-a784-bfbb9a7d213c"
   stages:
     - stage: path
-      stageUuid: "5a87d880-88fd-81ee-9092-55a4585cb647"
+      stageUuid: "e985ea37-b668-8e40-b6b0-f977f15bf3fd"
     - stage: trinity
-      stageUuid: "858aeb5d-ccd3-814a-aca3-378a3c70227d"
+      stageUuid: "ccc431e4-a020-8197-b479-6662849a3113"
     - stage: boundary
-      stageUuid: "47675a0d-09c0-8c56-bdbd-542b61597d5e"
+      stageUuid: "384d67b3-6293-85e0-a708-afbaf034da01"
     - stage: links
-      stageUuid: "416350d8-b5e7-875e-925f-9ca64abdb8a3"
+      stageUuid: "42fb4fb0-51cf-8bd1-b62e-ddf6a0b8c63c"
     - stage: horo
-      stageUuid: "42c8c894-8cd8-8641-899d-57bb528eca98"
+      stageUuid: "88850f06-9823-8238-b13b-430d75534da9"
     - stage: seal
-      stageUuid: "00698c70-b3c7-874f-b779-9af1022b0806"
+      stageUuid: "20322dfb-57dd-8ee4-9f51-b66c7bd977e9"
     - stage: uuid
-      stageUuid: "2c995005-d1d5-800d-a459-2015e23b2676"
+      stageUuid: "45e19fe5-b5ef-86e8-a0af-84c570683dc3"
 version: 2
 ---
 # infectious

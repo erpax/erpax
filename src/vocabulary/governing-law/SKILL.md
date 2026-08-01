@@ -1,76 +1,34 @@
 ---
 name: "governing-law"
 description: "Use when a contract is subject to a specific jurisdiction's law — codified by choice-of-law clause, determines interpretation (UCC vs. Common Law), applicable standards, dispute resolution."
-atomPath: vocabulary/governing-law
-coordinate: "governing-law · 4/weave · 759ce8e1"
-contentUuid: "404359fc-8a35-5ea3-b174-b4d8bffdefdb"
-diamondUuid: "be54fee3-741f-81a8-a04c-1d68cba5fb94"
-uuid: "759ce8e1-88b0-8e31-973f-5ad0df1d15ea"
-horo: 4
-bonds:
-  in:
-    - cases
-    - contracts
-    - disputeresolution
-    - jurisdiction
-    - law
-    - matter
-    - standard
-  out:
-    - cases
-    - contracts
-    - disputeresolution
-    - jurisdiction
-    - law
-    - matter
-    - standard
+atomPath: "vocabulary/governing-law"
+coordinate: "vocabulary/governing-law · 5/round · 68ccfd71"
+contentUuid: "f1cda212-be86-5746-a886-b8c40be2a976"
+diamondUuid: "60861f8f-699b-8e8b-b7a5-c5cd65fe1290"
+uuid: "68ccfd71-211b-8b7d-bb3e-93fff821026b"
+horo: 5
 typography:
-  partition: "governing-law"
-  bondDegree: 21
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 19
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - contracts
-    - disputeresolution
-    - jurisdiction
-    - law
-    - matter
-    - standard
-  matrix:
-    - cases
-    - contracts
-    - disputeresolution
-    - jurisdiction
-    - law
-    - matter
-    - standard
-  backlinks:
-    - cases
-    - contracts
-    - disputeresolution
-    - jurisdiction
-    - law
-    - matter
-    - standard
 signatures:
-  computationUuid: "19ae613e-a9ee-852a-9ae5-d6ae6707bd35"
+  computationUuid: "dadd85cb-74c5-8bdb-9f35-a7a87b8c8b60"
   stages:
     - stage: path
-      stageUuid: "50b3a779-0823-83ab-8214-a9a1aee0f3cb"
+      stageUuid: "6f34c23b-37bd-8356-b088-296a2e8462f8"
     - stage: trinity
-      stageUuid: "62e805bf-109e-8195-ad4c-500b3d31052f"
+      stageUuid: "19cfc6d4-40f8-816c-935f-d9a71f1b7587"
     - stage: boundary
-      stageUuid: "5570c749-ea39-8479-a515-35d9dff484ba"
+      stageUuid: "8d9a524b-6be2-8a6b-bccf-ed50bdf0e5a7"
     - stage: links
-      stageUuid: "c9b550c6-2125-8ad0-95f4-873f021923bd"
+      stageUuid: "55b275b9-6272-8dbb-85dd-5aaf0659325f"
     - stage: horo
-      stageUuid: "23f82aa7-a78a-8beb-8d3d-d96d96b01493"
+      stageUuid: "60bd3bd1-c415-8647-a6a0-1e2d6e61f2ec"
     - stage: seal
-      stageUuid: "4917ccdc-3cf1-8025-ae3e-04a09a37db0d"
+      stageUuid: "48ec35de-facf-8217-8391-b0991cfaaa75"
     - stage: uuid
-      stageUuid: "e01f7e49-f964-83f7-a26f-0fe299c62646"
+      stageUuid: "fc206256-3d63-8107-ab7f-f6cd6928abcc"
 version: 2
 ---
 # governing-law

@@ -1,98 +1,34 @@
 ---
 name: optimize
 description: "Use when building or reviewing Payload collections, fields, queries, or config for performance — slow admin/API, large generated schemas, heavy relationship population, duplicated block definitions, or oversized client bundles."
-atomPath: vocabulary/optimize
-coordinate: optimize · 1/base · 1b060e00
-contentUuid: "032af121-449c-5910-82fc-2388e7796b21"
-diamondUuid: "9112ba49-86de-85fd-bd92-a146755b52a6"
-uuid: "1b060e00-d87a-87a6-9d3d-311e5715cf28"
-horo: 1
-bonds:
-  in:
-    - admin
-    - cache
-    - collections
-    - config
-    - deploy
-    - fields
-    - harden
-    - hooks
-    - jobs
-    - law
-    - queries
-    - types
-  out:
-    - admin
-    - cache
-    - collections
-    - config
-    - deploy
-    - fields
-    - harden
-    - hooks
-    - jobs
-    - law
-    - queries
-    - types
+atomPath: "vocabulary/optimize"
+coordinate: "vocabulary/optimize · 4/weave · 69ef340d"
+contentUuid: "03fb08d2-bf57-529f-b254-d82e34d4344b"
+diamondUuid: "7d6c4ad9-8704-81c7-abf6-9a763ee526c2"
+uuid: "69ef340d-5f65-8b91-b48c-80b6456773fe"
+horo: 4
 typography:
-  partition: optimize
+  partition: vocabulary
   bondDegree: 41
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - collections
-    - config
-    - deploy
-    - fields
-    - harden
-    - law
-    - queries
-    - types
-  matrix:
-    - admin
-    - cache
-    - collections
-    - config
-    - deploy
-    - fields
-    - harden
-    - hooks
-    - jobs
-    - law
-    - queries
-    - types
-  backlinks:
-    - admin
-    - cache
-    - collections
-    - config
-    - deploy
-    - fields
-    - harden
-    - hooks
-    - jobs
-    - law
-    - queries
-    - types
 signatures:
-  computationUuid: "d5e104a9-2f02-8ed5-a21e-88e05afbe558"
+  computationUuid: "00b173ba-e49e-8b6a-9c0a-ced6dc0607e3"
   stages:
     - stage: path
-      stageUuid: "ed005157-9905-8d14-85fa-079e6a0d308e"
+      stageUuid: "5948bcf6-e83a-8f46-a793-9ed3976d88a3"
     - stage: trinity
-      stageUuid: "dd886ebf-a1cf-868d-b7b7-e6096c34d729"
+      stageUuid: "63eeec8a-06ef-8921-9bfe-49b83b91863b"
     - stage: boundary
-      stageUuid: "b8795f48-7c2a-8a7b-9dab-3bce83cd8ef6"
+      stageUuid: "910a9a9a-8f77-8057-b226-603d331681ee"
     - stage: links
-      stageUuid: "814b8663-d53d-826c-8358-abfff8bbb5f8"
+      stageUuid: "0ff27d57-66c4-82fc-8d97-bf2564231e49"
     - stage: horo
-      stageUuid: "f77212f1-d748-88f6-866a-8afd1d51a6e5"
+      stageUuid: "5e2a26c4-dac2-8780-8733-9f6237460666"
     - stage: seal
-      stageUuid: "7201d9d6-3f17-82f6-a08c-6f61dcf269f4"
+      stageUuid: "6bd7cb9a-1893-8113-9bb9-67eeaafeb68b"
     - stage: uuid
-      stageUuid: "8b97d048-f5cc-85c3-84a7-756b9403db68"
+      stageUuid: "160681f4-e48b-8d2f-900a-c034fb378b16"
 version: 2
 ---
 # optimize — Payload performance & schema-size best practices

@@ -1,107 +1,35 @@
 ---
 name: postal
 description: "Use when reasoning about postal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/postal
-coordinate: postal · 4/weave · 26bd84ce
-contentUuid: "c9966535-8e10-55c9-8d6c-da41ede0c31e"
-diamondUuid: "90932b14-d1c6-8679-a924-e812d0babae2"
-uuid: "26bd84ce-e0c3-8c32-bc07-07d7f2d48e47"
-horo: 4
-bonds:
-  in:
-    - address
-    - begin
-    - code
-    - collapse
-    - end
-    - law
-    - merge
-    - prefix
-    - range
-    - service
-    - specification
-    - sti
-    - validation
-  out:
-    - address
-    - begin
-    - code
-    - collapse
-    - end
-    - law
-    - merge
-    - prefix
-    - range
-    - service
-    - specification
-    - sti
-    - validation
+atomPath: "vocabulary/postal"
+coordinate: "vocabulary/postal · 7/descent · 1bf823f7"
+contentUuid: "7e51a0e6-4cfb-5aa6-a677-2a7e81b0e138"
+diamondUuid: "c9bd9fed-770b-8ca0-964a-06369c8c6940"
+uuid: "1bf823f7-d151-86ff-bb74-612974d02a19"
+horo: 7
 typography:
-  partition: postal
+  partition: vocabulary
   bondDegree: 44
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - address
-    - begin
-    - code
-    - collapse
-    - end
-    - law
-    - merge
-    - prefix
-    - range
-    - service
-    - specification
-    - sti
-  matrix:
-    - address
-    - begin
-    - code
-    - collapse
-    - end
-    - law
-    - merge
-    - prefix
-    - range
-    - service
-    - specification
-    - sti
-    - validation
-  backlinks:
-    - address
-    - begin
-    - code
-    - collapse
-    - end
-    - law
-    - merge
-    - prefix
-    - range
-    - service
-    - specification
-    - sti
-    - validation
 signatures:
-  computationUuid: "179c0c86-8fe8-88f4-ac9a-782b127be494"
+  computationUuid: "6beab0b2-cbde-86ea-ae23-ee3ea7d55cf4"
   stages:
     - stage: path
-      stageUuid: "37fca09e-55a0-8b7a-b182-634b033e3151"
+      stageUuid: "aa811c93-9988-834a-80c7-6fc89d2375d5"
     - stage: trinity
-      stageUuid: "aa752988-03ec-8fe0-93b2-c567e8cf5804"
+      stageUuid: "b1aa95da-f220-81c1-a3e1-6824396172e8"
     - stage: boundary
-      stageUuid: "e8ad0acb-90ef-80bf-b1b2-3c6b6497932a"
+      stageUuid: "99d5e1ce-a5ba-842a-a45f-e12d3cc181a5"
     - stage: links
-      stageUuid: "1938a4cf-f339-8bff-b479-0e3f8fd960e8"
+      stageUuid: "11626d2c-8130-83f5-99b7-2a97b6f86271"
     - stage: horo
-      stageUuid: "fc7d1955-1883-8270-a64c-90d242669287"
+      stageUuid: "7b122d59-b608-85af-8620-83a508f670f7"
     - stage: seal
-      stageUuid: "c3509155-54a9-8156-bf5a-6026e806807f"
+      stageUuid: "6f025ef6-5723-8dc2-946d-e590448d878c"
     - stage: uuid
-      stageUuid: "9120d73c-094b-8b4f-8a6a-ff67c45c95fe"
+      stageUuid: "2effc1ce-76bc-8eb1-85cd-6d245b5d194f"
 version: 2
 ---
 # postal

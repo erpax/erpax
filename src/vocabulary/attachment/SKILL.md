@@ -1,68 +1,35 @@
 ---
 name: attachment
 description: "Use when reasoning about attachment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/attachment
-coordinate: attachment · 2/share · 6a4f250c
-contentUuid: "8e7b9a66-c9fc-5a31-ad0d-0b33849e2339"
-diamondUuid: "f2d55d26-8560-8416-83c4-6584ffd87f61"
-uuid: "6a4f250c-989a-8c17-8f42-7f646e5b333e"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - message
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - message
-    - sti
+atomPath: "vocabulary/attachment"
+coordinate: "vocabulary/attachment · 5/round · 7bd9a7ce"
+contentUuid: "7250ec4b-2dd0-5d87-888d-36f00f895744"
+diamondUuid: "078c8e69-3509-8f27-ba45-5addb1c0201c"
+uuid: "7bd9a7ce-b5ff-81fa-9379-ad4bdbbd7936"
+horo: 5
 typography:
-  partition: attachment
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - message
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - message
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - message
-    - sti
 signatures:
-  computationUuid: "acf74c56-2519-8c1b-9539-3dcff6b30165"
+  computationUuid: "fbc6e4a6-fd70-84c3-b5e9-f36e5089ad19"
   stages:
     - stage: path
-      stageUuid: "3a76a774-221a-899b-b49f-4040ff0bc5db"
+      stageUuid: "8b0c1f22-ad00-8d54-8793-00d618c8f448"
     - stage: trinity
-      stageUuid: "55b33bc6-6ea4-8d9c-863a-75cc364799e8"
+      stageUuid: "c38f97e4-cccb-8142-ab5a-be819da09b7e"
     - stage: boundary
-      stageUuid: "8bc64903-76ea-8918-9630-cad4bdeabf56"
+      stageUuid: "b24d3d95-fc9f-813a-a83b-468eb6d6e581"
     - stage: links
-      stageUuid: "9e84db0a-ba8b-8ede-bb81-804d8b4b9351"
+      stageUuid: "fc1555ab-9c93-8414-b62d-d7eb07c3a4a8"
     - stage: horo
-      stageUuid: "c0a213de-b4e8-89cc-975a-7b4b7b0f6825"
+      stageUuid: "480ad981-1abc-8d72-bfdf-60de35f36d4f"
     - stage: seal
-      stageUuid: "2391c519-38ac-8821-8d08-7e1cf098bc79"
+      stageUuid: "a75fc456-23c9-810c-aec4-b03741026c28"
     - stage: uuid
-      stageUuid: "b616b536-8ca9-80c0-b30c-1ef5cd2d027f"
+      stageUuid: "400ba34e-ac71-88b2-8cc0-a8ae96c31e43"
 version: 2
 ---
 # attachment

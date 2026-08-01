@@ -2,107 +2,21 @@
 name: regeneration
 description: "Use when reasoning about erpax as a living, self-repairing system — the computed proof that it regrows from seed and heals its own wounds. The content-uuid is the genome: every observable (uuid, aura, coordinate, the README proof) is derived from content and never stored, so any derived artefact regenerates byte-identically from the surviving seed. A gap (dead link, untested atom) is a wound; the gate is the immune system; healing is monotone, so the loop converges to gap 0 — wholeness, zero entropy, max tamper-cost."
 atomPath: regeneration
-coordinate: regeneration · 7/descent · 3c1982f5
-contentUuid: "3709f782-14a1-5532-a955-07e4549fb425"
-diamondUuid: "6772d540-4991-8244-a44e-68ed8971a519"
-uuid: "3c1982f5-5884-80ef-8d10-06e313d23f93"
-horo: 7
-bonds:
-  in:
-    - akashic
-    - aura
-    - blood
-    - coordinate
-    - gate
-    - law
-    - link
-    - one
-    - organic
-    - permaculture
-    - proof
-    - propose
-    - skin
-    - tamper
-    - uuid
-    - whole
-  out:
-    - akashic
-    - aura
-    - blood
-    - coordinate
-    - gate
-    - law
-    - link
-    - one
-    - organic
-    - permaculture
-    - proof
-    - propose
-    - skin
-    - tamper
-    - uuid
-    - whole
+coordinate: "regeneration · 2/share · 959d9034"
+contentUuid: "6bb9f0df-907b-5f39-8ffd-81a4a51800bf"
+diamondUuid: "63e90845-8b1b-8b06-86e6-872a0edc4ecc"
+uuid: "959d9034-00f4-8fbf-93d4-987615dac423"
+horo: 2
 typography:
   partition: regeneration
   bondDegree: 49
-  neighbors:
-    - aura
 standards:
   - "RFC 9562 §5.8 content-uuid (the genome) · DRY (no stored derivation)"
-  - "computed from first principles + the live content-uuid (toUuid)"
+  - "RFC 9562 §5.8 content-uuid (the genome) · DRY (no stored derivation)`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - aura
-    - coordinate
-    - gate
-    - law
-    - link
-    - one
-    - organic
-    - permaculture
-    - proof
-    - propose
-    - tamper
-    - uuid
-    - whole
-  matrix:
-    - akashic
-    - aura
-    - blood
-    - coordinate
-    - gate
-    - law
-    - link
-    - one
-    - organic
-    - permaculture
-    - proof
-    - propose
-    - skin
-    - tamper
-    - uuid
-    - whole
-  backlinks:
-    - akashic
-    - aura
-    - blood
-    - coordinate
-    - gate
-    - law
-    - link
-    - one
-    - organic
-    - permaculture
-    - proof
-    - propose
-    - skin
-    - tamper
-    - uuid
-    - whole
 signatures:
-  computationUuid: "89251306-c255-8f8e-a195-e262c1001ee3"
+  computationUuid: "60ecbdb7-9f41-81ce-a671-54b93e7f366f"
   stages:
     - stage: path
       stageUuid: "9663116d-30b9-855f-9152-e9e7a1576c7d"
@@ -113,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "7c9ba6bf-0ed9-87e8-a6f7-50d8afaeffca"
     - stage: horo
-      stageUuid: "67889851-c129-8d2e-b7a4-548555f5f28f"
+      stageUuid: "adeb6837-2c4b-8e3e-bfc7-48de5aacc148"
     - stage: seal
-      stageUuid: "72b57784-2cee-8d74-a3fa-1355f681c4cf"
+      stageUuid: "d02d9452-f116-8f2f-9333-5f8977fb0156"
     - stage: uuid
-      stageUuid: "2c75419d-ba5d-8657-a268-b7960faf9842"
+      stageUuid: "420e37cb-ed0d-89e0-9b67-19389aad2b67"
 version: 2
 ---
 # regeneration — erpax regrows from seed and heals its own wounds

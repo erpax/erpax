@@ -1,53 +1,35 @@
 ---
 name: maintainer
 description: "Use when reasoning about maintainer — A maintainer of a Dataset, software package (SoftwareApplication), or other Project. A maintainer is a Person or Organization that manages contributions to, and/or publication of,"
-atomPath: vocabulary/maintainer
-coordinate: maintainer · 7/descent · f9e8f593
-contentUuid: "b71322c8-6f81-53f2-b9f5-dd2111ad577d"
-diamondUuid: "05a3b9fe-57ee-8046-9115-c016b0d4d28b"
-uuid: "f9e8f593-eead-8b6b-98c0-353954f908af"
-horo: 7
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/maintainer"
+coordinate: "vocabulary/maintainer · 1/base · e6e14049"
+contentUuid: "a005af25-bfc0-5e54-8d65-54ca475c137e"
+diamondUuid: "f7685113-8aa6-81a3-b0e7-85d5ec4f5c32"
+uuid: "e6e14049-5a24-87ac-8c29-a20a252d6400"
+horo: 1
 typography:
-  partition: maintainer
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "020f0b6f-e3c5-88ac-a220-92f302185925"
+  computationUuid: "e7dce78a-6d4b-8060-b86f-11b79b351441"
   stages:
     - stage: path
-      stageUuid: "68634028-9609-8ca4-948a-9158c8d359ca"
+      stageUuid: "c64e7af9-393d-8cf0-829a-a8aa20bd689e"
     - stage: trinity
-      stageUuid: "cd186b7f-831f-831d-85e4-541fa2d1883c"
+      stageUuid: "bedf0f37-d40d-8fce-9544-d83659e2ae2c"
     - stage: boundary
-      stageUuid: "64a30a4b-bdb0-83c2-bc6b-b120f4f9f6d4"
+      stageUuid: "b98543aa-5e16-8bf8-a5cf-2e1225230343"
     - stage: links
-      stageUuid: "8ffc1eb4-d47e-87bf-b9ad-f3aabf95ded8"
+      stageUuid: "f15cf0f9-4bc3-8a9b-bdc4-b2d0e7dddb50"
     - stage: horo
-      stageUuid: "d3de623e-6869-8848-ada5-ae136039d580"
+      stageUuid: "bda25709-6cee-8c27-81c9-d83ea62aeb21"
     - stage: seal
-      stageUuid: "6e37800f-57aa-8bf3-9071-5f844f85cca2"
+      stageUuid: "ba56addc-7cc6-86e9-a75a-3deb1daaee8a"
     - stage: uuid
-      stageUuid: "6cf27b28-16db-82a9-a90c-33e45b4e1d63"
+      stageUuid: "6870b91d-5f5d-8067-9e99-b41d3e6c4466"
 version: 2
 ---
 # maintainer

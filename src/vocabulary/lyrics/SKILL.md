@@ -1,53 +1,35 @@
 ---
 name: lyrics
 description: Use when reasoning about lyrics — The words in the song.
-atomPath: vocabulary/lyrics
-coordinate: lyrics · 1/base · c0852588
-contentUuid: "1affd3cb-5eca-56c4-ad6c-7c64cd5e3f0b"
-diamondUuid: "585e1715-dfc3-8186-a19b-450ee100f61e"
-uuid: "c0852588-53f8-8b12-91e4-e96b9fac56ec"
-horo: 1
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/lyrics"
+coordinate: "vocabulary/lyrics · 5/round · a21d2167"
+contentUuid: "0ee62cc4-e657-5d5a-a5f3-14ffe4eb7492"
+diamondUuid: "46ffe141-57f7-842c-ab56-a6625ae46ac9"
+uuid: "a21d2167-394b-8de7-a6a3-b348cdf73806"
+horo: 5
 typography:
-  partition: lyrics
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "0006021f-d029-8a84-a704-5be324f3c057"
+  computationUuid: "a62cd7cd-121e-88f1-a1ca-d4f52a5405a8"
   stages:
     - stage: path
-      stageUuid: "beadf91e-05f0-884d-ad31-f669d7004cca"
+      stageUuid: "1bddd59b-78ea-80a9-b8da-0440a606cfa0"
     - stage: trinity
-      stageUuid: "0c6cb7e7-1b14-8f67-9ad7-0a40aa694a54"
+      stageUuid: "48075fe0-2c05-82ed-91c1-5633a4616614"
     - stage: boundary
-      stageUuid: "008ba2f5-a70a-8aa6-9bf9-2600d69dfb61"
+      stageUuid: "7e3ff43c-ab44-8f9b-957c-d572f4e4c923"
     - stage: links
-      stageUuid: "591e7677-72e5-8def-ba86-6f1cfbac3350"
+      stageUuid: "d8c34459-1417-8b9c-bbd9-174942b02d11"
     - stage: horo
-      stageUuid: "f97051ab-f1b7-8e47-b051-e4e3edf14270"
+      stageUuid: "aed0a051-e3eb-8cbf-81dc-bb9c9cd3b72b"
     - stage: seal
-      stageUuid: "b4be602b-e2e9-8a7f-87d5-5315c97fe25b"
+      stageUuid: "b946c35e-b48a-824b-a3b2-fbd526cd8a65"
     - stage: uuid
-      stageUuid: "74f682fa-ad58-8edf-a766-4d28e3ba7eb2"
+      stageUuid: "f025b0e9-ce7e-8acc-bd15-fb38cac460f7"
 version: 2
 ---
 # lyrics

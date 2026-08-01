@@ -1,62 +1,34 @@
 ---
 name: clause
 description: "Use when decomposing a contract into its constituent promises — each clause is a distinct obligation/right with its own conditions, beneficiaries, triggers, and performance timeline. The atomic unit of contract analysis."
-atomPath: vocabulary/clause
-coordinate: clause · 7/descent · b10b0764
-contentUuid: "f5172ddf-a20d-579d-a920-d5f98ce8a78b"
-diamondUuid: "b6f81b40-91c9-85d3-83e2-0bd512f4b562"
-uuid: "b10b0764-24b1-8d72-b14b-e30a7ffabbf0"
+atomPath: "vocabulary/clause"
+coordinate: "vocabulary/clause · 7/descent · fbc87ed6"
+contentUuid: "00a8447d-9e5c-5ad8-8bfb-ab7f90e98aaa"
+diamondUuid: "aa8f1be5-d0f6-8507-a083-d04b917ccc13"
+uuid: "fbc87ed6-43dd-8b26-bab8-b6aab0f8af4f"
 horo: 7
-bonds:
-  in:
-    - contracts
-    - law
-    - matter
-    - standard
-  out:
-    - contracts
-    - law
-    - matter
-    - standard
 typography:
-  partition: clause
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - contracts
-    - law
-    - matter
-    - standard
-  matrix:
-    - contracts
-    - law
-    - matter
-    - standard
-  backlinks:
-    - contracts
-    - law
-    - matter
-    - standard
 signatures:
-  computationUuid: "d5bbbc1a-c178-893c-ba9b-41882bd183f3"
+  computationUuid: "c4b5373b-ff18-82af-b647-45f6a563d552"
   stages:
     - stage: path
-      stageUuid: "3dd57cce-0db9-8c80-ba09-0e59e5df7ea8"
+      stageUuid: "9e181821-d90b-8788-81de-8f3ee2174d14"
     - stage: trinity
-      stageUuid: "48edd5f4-bf74-8b02-96dd-6d39ae83d3a6"
+      stageUuid: "2797a460-d219-8dd3-bc5b-b2b90f363b34"
     - stage: boundary
-      stageUuid: "25fed2af-b83d-876f-a5c0-91279ded11e5"
+      stageUuid: "3cf6bd86-c622-8db3-a0f2-885af913ade3"
     - stage: links
-      stageUuid: "933003e5-b0a0-8926-a38f-b9589d8331fe"
+      stageUuid: "a378489e-e4c1-88e0-8b70-05f6fe3d94d9"
     - stage: horo
-      stageUuid: "de2272bc-6924-89e5-992d-dfe6f5f71151"
+      stageUuid: "0798bf13-1a59-8e98-a1cb-fc4f2a6e82bf"
     - stage: seal
-      stageUuid: "0ec92945-92c9-85c1-b48e-b7890e1e050e"
+      stageUuid: "d2ead8b8-45c7-8b7a-b705-fbfda2a87c8a"
     - stage: uuid
-      stageUuid: "8bcb0b7d-e8a5-892f-b8af-0e4880d67f7e"
+      stageUuid: "f1da17ed-67a9-86fb-ab5a-5325d45e69a4"
 version: 2
 ---
 # clause

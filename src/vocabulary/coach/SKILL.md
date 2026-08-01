@@ -1,53 +1,35 @@
 ---
 name: coach
 description: Use when reasoning about coach — A person that acts in a coaching role for a sports team.
-atomPath: vocabulary/coach
-coordinate: coach · 2/share · 0b9741bc
-contentUuid: "9ca2eea5-a0cb-57b3-9842-26c69ba848e4"
-diamondUuid: "f231d40f-5951-8e03-8c03-0226d9dbed40"
-uuid: "0b9741bc-9b19-8ced-8ccc-0bdd5285a454"
-horo: 2
-bonds:
-  in:
-    - bus
-    - law
-  out:
-    - bus
-    - law
+atomPath: "vocabulary/coach"
+coordinate: "vocabulary/coach · 5/round · 3b080fc6"
+contentUuid: "7c4691df-1888-5ce9-bc81-2df9c65a5a3f"
+diamondUuid: "428286d9-ca16-8c1f-88c9-46094e4429f8"
+uuid: "3b080fc6-8eba-843f-a7d1-71bf6636e848"
+horo: 5
 typography:
-  partition: coach
+  partition: vocabulary
   bondDegree: 7
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - bus
-    - law
-  matrix:
-    - bus
-    - law
-  backlinks:
-    - bus
-    - law
 signatures:
-  computationUuid: "2afef24a-4b27-8312-8171-feacc3686001"
+  computationUuid: "08d1944d-d444-8184-99bb-2e5766611617"
   stages:
     - stage: path
-      stageUuid: "3c9d80cf-999b-8b01-93da-e0a8e94471fd"
+      stageUuid: "b60dfb00-65c1-838b-bf93-74187096973e"
     - stage: trinity
-      stageUuid: "2334b8ff-e3e6-84b0-babe-d88776c2216c"
+      stageUuid: "7f6c1789-2d0f-84a5-82ad-4259bd27fcb1"
     - stage: boundary
-      stageUuid: "7fc3fa58-9a9b-8074-a146-702165411c59"
+      stageUuid: "7a657605-dd0d-8b5a-97b0-f6f6d3fc37e4"
     - stage: links
-      stageUuid: "df0403ec-0450-8bf2-a104-3497aae54fac"
+      stageUuid: "516c7a1f-f839-8e1c-bb61-de0a5ccb5cb8"
     - stage: horo
-      stageUuid: "9aac7d4a-3cd2-8048-85b3-aec3d35e007f"
+      stageUuid: "65b39aad-33be-84c0-ad7b-de666182af01"
     - stage: seal
-      stageUuid: "9312e826-eaf6-8265-b5ff-1eca3bbaff3c"
+      stageUuid: "adf51041-fb1e-8e8f-b165-e48e46cf022f"
     - stage: uuid
-      stageUuid: "d1ff4102-2e76-8ae2-a17a-9c7922800370"
+      stageUuid: "24b57b0b-b27a-8254-8128-40009551bd4a"
 version: 2
 ---
 # coach

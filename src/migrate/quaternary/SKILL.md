@@ -2,84 +2,19 @@
 name: quaternary
 description: "Use when enforcing the four-file folder law — an atom folder holds only SKILL.md, index.ts, test.ts, translations.ts; any other file is a violation to collide into its own atom."
 atomPath: "migrate/quaternary"
-coordinate: "migrate/quaternary · 7/descent · 4af333b5"
-contentUuid: "46340b42-0083-570a-8814-d8bf11110393"
-diamondUuid: "ba6b2be8-c452-82f9-97a8-ec84607e90c4"
-uuid: "4af333b5-6089-8270-ae79-507fc6fbb853"
-horo: 7
-bonds:
-  in:
-    - aura
-    - collapse
-    - coordinate
-    - dissolution
-    - dry
-    - folder
-    - law
-    - merge
-    - migrate
-    - names
-    - translations
-    - trinity
-  out:
-    - aura
-    - collapse
-    - coordinate
-    - dissolution
-    - dry
-    - folder
-    - law
-    - merge
-    - migrate
-    - names
-    - translations
-    - trinity
+coordinate: "migrate/quaternary · 5/round · fa4f8b13"
+contentUuid: "d53ced44-c426-5ace-9e73-d56d84a90295"
+diamondUuid: "e591e45e-f8aa-8f5a-9ab9-c43a016d0bcd"
+uuid: "fa4f8b13-c9c5-826d-8eb5-2bb94aa88f99"
+horo: 5
 typography:
   partition: migrate
-  bondDegree: 38
-  neighbors:
-    - aura
+  bondDegree: 36
 standards:
   - "ISO/IEC 25010:2023 §5.1 functional-completeness"
 bindings: []
-neighbors:
-  wikilink:
-    - aura
-    - collapse
-    - coordinate
-    - dissolution
-    - merge
-    - migrate
-    - translations
-    - trinity
-  matrix:
-    - aura
-    - collapse
-    - coordinate
-    - dissolution
-    - dry
-    - folder
-    - law
-    - merge
-    - migrate
-    - names
-    - translations
-    - trinity
-  backlinks:
-    - aura
-    - collapse
-    - coordinate
-    - dissolution
-    - dry
-    - folder
-    - law
-    - merge
-    - migrate
-    - names
-    - translations
-    - trinity
 signatures:
-  computationUuid: "959d3673-d810-8a5e-af53-2cd33c516e87"
+  computationUuid: "02c4e21b-b63c-8f01-b199-1fe9bc49fa4f"
   stages:
     - stage: path
       stageUuid: "85aa950a-5376-8475-8305-c9defe10f675"
@@ -90,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d957f2f4-e76e-8f03-9cd1-2d6b440a1b05"
     - stage: horo
-      stageUuid: "015fc135-f4f2-848d-8a2b-74b36fc14981"
+      stageUuid: "7440e455-8f24-82b7-bb49-9505cd0e7a8b"
     - stage: seal
       stageUuid: "c92351d2-9637-8abf-af46-5751868fe4e6"
     - stage: uuid
-      stageUuid: "e2440e18-68ea-8559-aba1-12a58736f019"
+      stageUuid: "ba30c827-3eca-8a4e-88d8-572f17386f21"
 version: 2
 ---
 # quaternary

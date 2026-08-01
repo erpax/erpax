@@ -1,63 +1,35 @@
 ---
 name: randomized
 description: "Use when reasoning about randomized as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/randomized
-coordinate: randomized · 2/share · 1eca97a4
-contentUuid: "05692631-169a-5506-b022-7d0f9537286f"
-diamondUuid: "e9d552ab-76da-819a-bc52-2179277708a8"
-uuid: "1eca97a4-e0fe-80ea-baed-ffe4a623c4dd"
+atomPath: "vocabulary/randomized"
+coordinate: "vocabulary/randomized · 2/share · f2da0a36"
+contentUuid: "cbdaf4dd-be63-574b-ac80-7e95adc47aa8"
+diamondUuid: "ea31d9ef-3c75-8b33-9a24-e8b49d4a711e"
+uuid: "f2da0a36-ee29-8ed9-951e-58fe5c37d6e1"
 horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: randomized
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "72d4bfac-7bfc-8774-9f5a-27907e1fd84b"
+  computationUuid: "d58ae37c-e7d4-8f65-a316-fe6c1feab4f6"
   stages:
     - stage: path
-      stageUuid: "41c2733c-89f9-8892-8fcc-d609c2fe7635"
+      stageUuid: "2c29a81a-b406-8eb6-b68a-36c6a840e85d"
     - stage: trinity
-      stageUuid: "61ccfbac-edab-8a2c-8ff1-e5fb5d789c1d"
+      stageUuid: "4ca883c2-e9ed-8a22-8cb0-dd99415ff5a1"
     - stage: boundary
-      stageUuid: "c313f48c-d8e3-85ef-9589-29df12b5da94"
+      stageUuid: "4196ec4f-9afa-8c21-af24-d8bbdf500a81"
     - stage: links
-      stageUuid: "4e96751c-8ae6-8155-908a-277affaa815d"
+      stageUuid: "ca59938b-8201-8dd7-bfc1-84854ff10e42"
     - stage: horo
-      stageUuid: "b23983de-64eb-80f9-ae33-565e731b575e"
+      stageUuid: "fb123994-d9f2-8565-bfa1-3d39d7ec0412"
     - stage: seal
-      stageUuid: "c0f8a952-8e04-8ee3-898a-895d9471a5d8"
+      stageUuid: "273c9e0c-ad1d-8090-807c-ef7a47718c79"
     - stage: uuid
-      stageUuid: "e65ea3c3-60b4-84db-addb-752adf178d87"
+      stageUuid: "4f0c0430-6415-8406-9eb2-22dcfda6b089"
 version: 2
 ---
 # randomized

@@ -3,31 +3,15 @@ name: inertia
 description: "Use when a manoeuvre is claimed that a body cannot perform — the corner bound applied to mass. horo/cornerLimit gives the kinematics; this adds the body: F = m·v²/r, which has candidates. Every route around the bound must change one factor — inertial mass, proper acceleration, the body, or the observation — and each is a named claim with a refuting test. Computes what each hypothesis COSTS: the factor by which it must exceed its own measured bound. Identifies no object and proposes no mechanism."
 atomPath: inertia
 coordinate: inertia
-contentUuid: "d9c64cd4-4f39-58d2-bf92-db55f31362d0"
+contentUuid: "35c5ec55-f492-5be4-be0a-c2c244242d7a"
 diamondUuid: "c3a1c918-423c-8311-861b-ba4155342bfc"
-bonds:
-  in: []
-  out: []
 typography:
   partition: inertia
   bondDegree: 8
-  neighbors:
-    - diamond
-    - hallucination
-    - purity
 standards:
   - "ISO 80000-4:2019 — quantities and units, mechanics: force, acceleration, mass"
   - "NIST SP 811 §B.8 — standard acceleration of free fall, 9.80665 m/s² exactly"
 bindings: []
-neighbors:
-  wikilink:
-    - constitution
-    - duel
-    - horo
-    - law
-    - rules
-  matrix: []
-  backlinks: []
 signatures:
   computationUuid: "1a644d52-b19d-8e89-b2d3-110b284b8332"
   stages:

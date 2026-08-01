@@ -1,142 +1,34 @@
 ---
 name: amount
 description: "Use when a value is a monetary quantity — invoice total, line price, payment received, account balance. A minor-unit integer + ISO-4217 currency code (never a currency-baked field name). The value-of-trade twin of measure (quantity+unit). Composes with currency to form money."
-atomPath: vocabulary/amount
-coordinate: amount · 2/share · c2edef54
-contentUuid: "0b468a2d-8ba2-5241-96ad-6c25190d902e"
-diamondUuid: "bbee271f-2255-8cdd-92ac-846f0d8d33f2"
-uuid: "c2edef54-f1b4-81f0-b325-ac9854014d17"
-horo: 2
-bonds:
-  in:
-    - account
-    - accounting
-    - commerce
-    - conversion
-    - crop
-    - currency
-    - customer
-    - fees
-    - fields
-    - good
-    - incentive
-    - item
-    - loan
-    - mandate
-    - minimum
-    - monetary
-    - monthly
-    - mortgage
-    - payment
-    - remorse
-    - repayment
-    - return
-    - shipping
-    - total
-  out:
-    - account
-    - accounting
-    - commerce
-    - conversion
-    - crop
-    - currency
-    - customer
-    - fees
-    - fields
-    - good
-    - incentive
-    - item
-    - loan
-    - mandate
-    - minimum
-    - monetary
-    - monthly
-    - mortgage
-    - payment
-    - remorse
-    - repayment
-    - return
-    - shipping
-    - total
+atomPath: "vocabulary/amount"
+coordinate: "vocabulary/amount · 8/crest · a18560cd"
+contentUuid: "6a767731-3967-5708-b3b0-51ef5d2d4587"
+diamondUuid: "af8c4663-5a80-8fe2-bd44-85451d041bf7"
+uuid: "a18560cd-3e85-8fae-aa0b-893ff184ea20"
+horo: 8
 typography:
-  partition: amount
+  partition: vocabulary
   bondDegree: 72
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - commerce
-    - currency
-    - fields
-  matrix:
-    - account
-    - accounting
-    - commerce
-    - conversion
-    - crop
-    - currency
-    - customer
-    - fees
-    - fields
-    - good
-    - incentive
-    - item
-    - loan
-    - mandate
-    - minimum
-    - monetary
-    - monthly
-    - mortgage
-    - payment
-    - remorse
-    - repayment
-    - return
-    - shipping
-    - total
-  backlinks:
-    - account
-    - accounting
-    - commerce
-    - conversion
-    - crop
-    - currency
-    - customer
-    - fees
-    - fields
-    - good
-    - incentive
-    - item
-    - loan
-    - mandate
-    - minimum
-    - monetary
-    - monthly
-    - mortgage
-    - payment
-    - remorse
-    - repayment
-    - return
-    - shipping
-    - total
 signatures:
-  computationUuid: "9400aa31-7d63-8f03-a4ae-422036b38071"
+  computationUuid: "c11a23bd-94a8-84ee-868f-fb53fa672765"
   stages:
     - stage: path
-      stageUuid: "a8648b3c-2a87-8780-8b6c-9522944d4b3c"
+      stageUuid: "803dfcf8-107d-8e63-b016-4085edcfa670"
     - stage: trinity
-      stageUuid: "1676848e-c26f-8f13-babd-5d869f0eb0be"
+      stageUuid: "3abcd2be-48fe-8690-a5e8-59aea7d479e6"
     - stage: boundary
-      stageUuid: "82cbbbf2-33ef-8510-a34c-61e62f433907"
+      stageUuid: "9bb25446-4dba-8ace-b32e-8ed5f6b2f48e"
     - stage: links
-      stageUuid: "7ddc9fdc-23f6-8abe-a0ec-19735aa5c95f"
+      stageUuid: "4c6e9795-d9f8-8b90-9080-3b2482c6a632"
     - stage: horo
-      stageUuid: "a6a10f0f-bdfd-85aa-a90f-48fb66407aaa"
+      stageUuid: "3ed20b4f-5b53-8374-9208-a9db2086eebe"
     - stage: seal
-      stageUuid: "01e99383-8c30-8e9c-ba5b-bb5c752b376d"
+      stageUuid: "f16fd1fa-221f-8007-83f7-496d2386ecc6"
     - stage: uuid
-      stageUuid: "a617a3dd-798b-808a-bb97-df60eb987c73"
+      stageUuid: "5cee8aa5-c87a-8cec-86cc-7abb8b5241b4"
 version: 2
 ---
 # amount

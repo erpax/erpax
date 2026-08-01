@@ -1,53 +1,35 @@
 ---
 name: funder
 description: Use when reasoning about funder — A person or organization that supports (sponsors) something through some kind of financial contribution.
-atomPath: vocabulary/funder
-coordinate: funder · 2/share · 90241bf1
-contentUuid: "37c34160-d1fc-5148-b03e-c146e5119f18"
-diamondUuid: "94ff19b9-23d1-8ce5-9c44-d26de47a1b61"
-uuid: "90241bf1-268b-8f01-bd3e-7e525c85b121"
-horo: 2
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/funder"
+coordinate: "vocabulary/funder · 1/base · b59be529"
+contentUuid: "3b10336a-1a19-5b82-964e-3ec6543d62f3"
+diamondUuid: "283f7a39-e4fe-8a10-9256-dc595f6885b7"
+uuid: "b59be529-ad70-8e0f-ac62-0277c484fb46"
+horo: 1
 typography:
-  partition: funder
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "fc8dabee-fce0-8693-871b-f20de52106f0"
+  computationUuid: "fa6fd703-5f5e-8843-bbd2-842d537c41b9"
   stages:
     - stage: path
-      stageUuid: "cdf56d39-2772-8b91-95d9-b115a9660d86"
+      stageUuid: "3609cf5c-5ef2-8bb4-855d-22572d75a620"
     - stage: trinity
-      stageUuid: "f35e94db-4e16-87ef-acb3-76cfdd1df764"
+      stageUuid: "af4bccdc-c643-8026-b3d5-1c06a577915d"
     - stage: boundary
-      stageUuid: "62b30042-2877-8eca-8b25-c06fee98ef4a"
+      stageUuid: "16637af1-d34a-8eca-bbda-27bb99036dca"
     - stage: links
-      stageUuid: "5e6e22e8-3d29-8a86-a800-433693a32366"
+      stageUuid: "47d18dba-ff9d-855a-b248-9bb8b20ba0d5"
     - stage: horo
-      stageUuid: "73b7a1fc-c63b-818f-b0b0-ae0a1f5cdd8d"
+      stageUuid: "5b6f4bd6-08f2-81b6-853b-70b6f4f6660f"
     - stage: seal
-      stageUuid: "ad3d1d26-b187-890a-8f7f-73a99b065011"
+      stageUuid: "6e869e6e-f339-8509-bd12-ad2440555b87"
     - stage: uuid
-      stageUuid: "50768f38-7f56-8690-85df-c504d5ddf037"
+      stageUuid: "ad759131-ea95-81ed-8d7b-9651ae6b3726"
 version: 2
 ---
 # funder

@@ -2,34 +2,14 @@
 name: money
 description: "Use when reasoning about money as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: money
-coordinate: "money · 8/crest · dfd2c624"
-contentUuid: "0107d111-a570-5ad0-9dde-009ee07a0466"
-diamondUuid: "c2cfecd2-dd58-806e-9eed-da0145a45384"
-uuid: "dfd2c624-34ff-8c21-a6cb-becb54a2b573"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - dated
-    - law
-    - merge
-    - specification
-    - sti
-    - transfer
-    - wallet
-  out:
-    - collapse
-    - dated
-    - law
-    - merge
-    - specification
-    - sti
-    - transfer
-    - wallet
+coordinate: "money · 5/round · b15d93cf"
+contentUuid: "564fdd29-2076-51d0-84d0-018f34e8c517"
+diamondUuid: "ba31b1e1-96bc-8d74-b12a-7031ebde5942"
+uuid: "b15d93cf-223d-83e5-814b-4a8221eef968"
+horo: 5
 typography:
   partition: money
-  bondDegree: 32
-  neighbors: []
+  bondDegree: 24
 standards:
   - "IEEE-754"
   - "IFRS IAS-21 foreign-currency-translation"
@@ -39,35 +19,8 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - dated
-    - law
-    - merge
-    - specification
-    - sti
-    - transfer
-  matrix:
-    - collapse
-    - dated
-    - law
-    - merge
-    - specification
-    - sti
-    - transfer
-    - wallet
-  backlinks:
-    - collapse
-    - dated
-    - law
-    - merge
-    - specification
-    - sti
-    - transfer
-    - wallet
 signatures:
-  computationUuid: "4409c652-b4c6-8e39-9783-1a4a00b05026"
+  computationUuid: "f80c19c8-4274-80c9-bf77-6389f3710a12"
   stages:
     - stage: path
       stageUuid: "b2945010-4ac1-8bb3-a53f-83eba5a1807c"
@@ -76,13 +29,13 @@ signatures:
     - stage: boundary
       stageUuid: "8f05f367-b8e0-857c-a7ba-b1abedd49f8e"
     - stage: links
-      stageUuid: "f23daea0-8288-8ec0-958e-bae47981bbdc"
+      stageUuid: "4de442af-38b2-818f-b14e-a19ada8f59cf"
     - stage: horo
-      stageUuid: "d581e162-e1c7-82bf-bb02-3c442c229080"
+      stageUuid: "56ee7b4e-b6ae-8cde-bbc9-151f0831b58d"
     - stage: seal
       stageUuid: "4cfa9961-2e27-8b40-9639-072d80c2d91e"
     - stage: uuid
-      stageUuid: "abf84861-3b42-8b37-98fa-c6610d273409"
+      stageUuid: "f3c2fb2c-d230-8070-bb5b-3b6c03c8658c"
 version: 2
 ---
 # money

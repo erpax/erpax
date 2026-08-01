@@ -2,52 +2,19 @@
 name: shipped
 description: "Use when reasoning about shipped as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: shipped
-coordinate: shipped · 2/share · 80ad2fc7
-contentUuid: "7a893422-f8c0-537b-aad9-42becbd2030b"
-diamondUuid: "4234bc25-deb0-810b-a5a9-ba1e07164a7a"
-uuid: "80ad2fc7-6806-80c7-bef8-978a6aba7157"
+coordinate: "shipped · 2/share · 1dcddb3a"
+contentUuid: "343d4d2c-3780-5891-9b2a-c1144f39c3ab"
+diamondUuid: "0f27fcff-5653-8179-91fb-bf7f33f5f909"
+uuid: "1dcddb3a-303e-8873-86c6-513ac7163f3c"
 horo: 2
-bonds:
-  in:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
 typography:
   partition: shipped
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "5813331c-fe7a-85f4-bfd7-6ebad594830f"
+  computationUuid: "b8ef0916-ab88-85f8-9e83-17ca86fd4e4a"
   stages:
     - stage: path
       stageUuid: "b0117e00-cd15-87a9-8348-abc92d16fe1c"
@@ -58,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c20dbb46-475b-8f6d-b208-f18cfdb1a590"
     - stage: horo
-      stageUuid: "dd15273a-7e7b-8f9c-a426-d4dc26583a63"
+      stageUuid: "7afbd557-fc76-8eba-bc00-9d23a0bd82a0"
     - stage: seal
-      stageUuid: "3466a15c-8698-85cc-b5da-34758f9d782d"
+      stageUuid: "b61a6cc9-7330-8e06-ac3a-21bb5983baed"
     - stage: uuid
-      stageUuid: "3410a9da-aa1c-8431-a6ce-d44b686f1055"
+      stageUuid: "a4aa3197-1ed3-81a7-b455-7ca60e178ff5"
 version: 2
 ---
 # shipped

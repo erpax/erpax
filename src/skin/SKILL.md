@@ -2,77 +2,35 @@
 name: skin
 description: "Use when reasoning about erpax's boundary — the integument organ. The largest organ (~1.2–2.2 m²), a selectively-permeable barrier between inside and outside that renews itself continuously (~28-day epidermal turnover) and holds the interior to a setpoint (thermoregulation). Three properties (selective barrier · self-renewal · homeostasis) are computed and mapped — a structural isomorphism — onto erpax's sandbox/trust boundary."
 atomPath: skin
-coordinate: skin · 5/round · 9f23a6b1
-contentUuid: "43ae2f89-1a67-5610-bb7f-493f2a3b225f"
-diamondUuid: "bb34b8b7-0b9b-878b-9c58-681ae13353a4"
-uuid: "9f23a6b1-465a-841e-8dc0-0ef9280cbc68"
-horo: 5
-bonds:
-  in:
-    - body
-    - gate
-    - law
-    - regeneration
-    - sandbox
-    - self
-    - skin
-  out:
-    - body
-    - gate
-    - law
-    - regeneration
-    - sandbox
-    - self
-    - skin
+coordinate: "skin · 8/crest · e6e10295"
+contentUuid: "2323dee6-935c-5721-ad89-2dba0c76df14"
+diamondUuid: "6335c66f-d2d9-8ce5-a903-d6226cb74b99"
+uuid: "e6e10295-6cc5-89a3-af78-02042d76b5df"
+horo: 8
 typography:
   partition: skin
   bondDegree: 25
-  neighbors: []
 standards:
-  - "computed (selective permeability · turnover cycle · negative-feedback convergence)"
   - largest organ ≈1.2–2.2 m²; stratum corneum barrier; epidermal turnover ~28 days
   - largest organ ≈1.2–2.2 m²; stratum corneum barrier; epidermal turnover ~28 days; thermoregulation
 bindings: []
-neighbors:
-  wikilink:
-    - gate
-    - law
-    - regeneration
-    - sandbox
-    - self
-  matrix:
-    - body
-    - gate
-    - law
-    - regeneration
-    - sandbox
-    - self
-    - skin
-  backlinks:
-    - body
-    - gate
-    - law
-    - regeneration
-    - sandbox
-    - self
-    - skin
 signatures:
-  computationUuid: "854e9be3-1c89-8dd6-8b45-0f744798bcbb"
+  computationUuid: "b370ca0a-f329-8fe3-8bc1-56d2609d180b"
   stages:
     - stage: path
       stageUuid: "b697df77-1a5e-890f-9265-2e426bbb244d"
     - stage: trinity
       stageUuid: "09afadd6-cda5-8b06-a72a-528adf290be1"
     - stage: boundary
-      stageUuid: "6f084b6c-25da-8e5c-9383-af8b6f79f528"
+      stageUuid: "02ca2f52-174a-8da5-92ae-53553e9cffd8"
     - stage: links
       stageUuid: "730809fa-1898-8365-9a6e-6219559ba255"
     - stage: horo
-      stageUuid: "ebf92e2b-cde5-8661-a0d4-56924727be06"
+      stageUuid: "39947379-804c-8464-a747-1d699eb8ba78"
     - stage: seal
-      stageUuid: "c1883a60-4998-84bc-8ade-68b3d0533ff5"
+      stageUuid: "9657b8db-57b7-8a54-b8d4-c97798bf2fe9"
     - stage: uuid
-      stageUuid: "8bf66cf6-384c-82a6-b81c-5c62226fbbf1"
+      stageUuid: "7bec7751-0f6a-89f0-b4e2-bf176143a61b"
 version: 2
 ---
 # skin — the boundary (the trust membrane)

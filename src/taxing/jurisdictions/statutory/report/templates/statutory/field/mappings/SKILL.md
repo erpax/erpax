@@ -1,44 +1,25 @@
 ---
 name: mappings
 description: "Use when wiring source collection fields to statutory report template slots — mapping field names, types, transformations, and validation rules for SAF-T/XBRL/EN-16931 filings. The field-level mapping node for statutory report templates."
-atomPath: taxing/jurisdictions/statutory/report/templates/statutory/field/mappings
-coordinate: taxing/jurisdictions/statutory/report/templates/statutory/field/mappings · 7/descent · 4b0f448f
-contentUuid: "a4660ec6-a0d5-57d2-ac54-1e7f677dfc66"
-diamondUuid: "b0a89a69-02e0-8394-bdbe-0f39207dcd50"
-uuid: "4b0f448f-5d6d-85e0-9386-166844f7c747"
-horo: 7
-bonds:
-  in:
-    - field
-    - law
-    - mapping
-    - standards
-  out:
-    - law
-    - mapping
-    - standards
+atomPath: "taxing/jurisdictions/statutory/report/templates/statutory/field/mappings"
+coordinate: "taxing/jurisdictions/statutory/report/templates/statutory/field/mappings · 5/round · 3b334396"
+contentUuid: "c5f83053-84c2-5a93-a288-d336f9b90458"
+diamondUuid: "d5242669-1817-8959-9591-57e2c29ca333"
+uuid: "3b334396-682f-8452-b62a-2b650ad557e1"
+horo: 5
 typography:
   partition: taxing
   bondDegree: 10
-  neighbors: []
 standards:
   - "EN-16931 e-invoicing-semantic-model"
+  - "EN-16931 e-invoicing-semantic-model`"
   - "SAF-T OECD standard-audit-file-tax"
   - XBRL
   - "XBRL taxonomy-mapping"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink: []
-  matrix:
-    - law
-    - mapping
-    - standards
-  backlinks:
-    - law
-    - mapping
-    - standards
 signatures:
-  computationUuid: "e7030b08-e076-8f4b-be9a-9d5a91f51060"
+  computationUuid: "192b7aca-cd22-87dc-8b5c-175d80a6bb22"
   stages:
     - stage: path
       stageUuid: "d0dd9ea1-045b-88bb-b212-3e3934e7047a"
@@ -49,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "31e6565d-2928-8f2e-bd96-84885ceb3be9"
     - stage: horo
-      stageUuid: "2f4b7db9-ce84-8666-875e-a4e5a664dfe5"
+      stageUuid: "1e313036-4c11-843c-a5cd-8706eeaed810"
     - stage: seal
       stageUuid: "c18356bb-d2a1-8fab-b7eb-50adb1e2da4e"
     - stage: uuid
-      stageUuid: "b957ff63-5054-82aa-8c85-c821e83ae19b"
+      stageUuid: "69d19616-1748-8542-87c3-cfe9da5efacd"
 version: 2
 ---
 # statutory-field-mappings

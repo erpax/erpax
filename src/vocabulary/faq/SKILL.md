@@ -1,68 +1,35 @@
 ---
 name: faq
 description: "Use when reasoning about faq as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/faq
-coordinate: faq · 4/weave · 2ae20e09
-contentUuid: "dc78801a-b998-53f6-baf5-103fda56b607"
-diamondUuid: "2a7e0879-472e-8a86-b4d0-fd34027eba36"
-uuid: "2ae20e09-829f-873a-a1c3-726a96a12707"
+atomPath: "vocabulary/faq"
+coordinate: "vocabulary/faq · 4/weave · ae327db6"
+contentUuid: "db83f1b4-946f-5756-972d-d978fdec4117"
+diamondUuid: "7c30682e-2568-8c98-bbc9-cb33c0802477"
+uuid: "ae327db6-0492-8c97-a64f-1cb2333bc734"
 horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
 typography:
-  partition: faq
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
 signatures:
-  computationUuid: "61e1554e-52c4-8adb-af7e-9804aed32a7a"
+  computationUuid: "dcb92066-1bab-8fb5-bf7c-c3864b7e131a"
   stages:
     - stage: path
-      stageUuid: "58b58f64-c703-8f01-b6ca-e9ab9eeaa92e"
+      stageUuid: "d7127356-b85b-8c09-9504-8a172791fa1d"
     - stage: trinity
-      stageUuid: "69eaee4f-4edb-875f-a539-a7bc3ebb3c1a"
+      stageUuid: "75a0c4bf-0df3-86b1-9733-2c0996c52d81"
     - stage: boundary
-      stageUuid: "2454d443-2c78-8be1-adc7-e1c13ee03299"
+      stageUuid: "a59f1e91-1a10-8330-936a-32992e5ed5e1"
     - stage: links
-      stageUuid: "d0b2ce03-745c-85cb-a63e-ef42f91efb6e"
+      stageUuid: "19e179f8-9440-890d-8fbc-5302ac9cbea6"
     - stage: horo
-      stageUuid: "f41ba2c5-7136-8db4-9f71-ca5d077e79c4"
+      stageUuid: "d212f67a-c04f-8376-b73a-dce5bd4c76d5"
     - stage: seal
-      stageUuid: "f0f35898-657e-8e1f-8f34-5d901d906bac"
+      stageUuid: "5b353ffa-dddc-82d5-a930-67399edde500"
     - stage: uuid
-      stageUuid: "fc67cfa2-993c-8a90-9b34-24d76929e1ed"
+      stageUuid: "7f42f8a1-c734-84a1-acbc-c3b58f885b02"
 version: 2
 ---
 # faq

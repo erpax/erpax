@@ -1,63 +1,35 @@
 ---
 name: pediatric
 description: "Use when reasoning about pediatric as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/pediatric
-coordinate: pediatric · 2/share · 434677a4
-contentUuid: "b55aaddb-9602-5307-8b74-fcbc7b8248ee"
-diamondUuid: "7b65d752-b61a-876c-ba4e-65aae07bd249"
-uuid: "434677a4-62c1-8315-9215-3692c938675b"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/pediatric"
+coordinate: "vocabulary/pediatric · 1/base · 859c7952"
+contentUuid: "4b53acdb-1e5a-5fb9-8ac3-3bb757643dfc"
+diamondUuid: "8174e171-dc2f-8f6b-8844-b0df326cefd0"
+uuid: "859c7952-30fb-8536-8f09-cc2800be0125"
+horo: 1
 typography:
-  partition: pediatric
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "bce9a4c4-5fa0-8f5d-b467-28755dba8a33"
+  computationUuid: "17288a9f-0e05-8e30-85e6-4c9b6c6cd1a6"
   stages:
     - stage: path
-      stageUuid: "ec01cc73-16b5-80fe-9e5e-963e363f4d84"
+      stageUuid: "a5566294-5c3e-8fae-90df-073bab8b6f68"
     - stage: trinity
-      stageUuid: "b0767992-8eca-8a42-a71f-01971820d54a"
+      stageUuid: "8801aaac-faaf-86d6-8913-46f6ccbfe6a3"
     - stage: boundary
-      stageUuid: "52fca210-c5b5-8994-9f3c-39efc3f06f2a"
+      stageUuid: "28396dcc-06fe-80b5-aecb-fb9c4287acbe"
     - stage: links
-      stageUuid: "e8a38dca-9a1e-8b5d-96da-e0f0ebd91d51"
+      stageUuid: "43f9b0e6-f98e-8b36-9cbc-ed7d534af8cb"
     - stage: horo
-      stageUuid: "5cbc0cbd-13d8-87a9-959a-935969ed16e8"
+      stageUuid: "2b106ac3-62ef-8ac8-b4c1-65f91015a8fb"
     - stage: seal
-      stageUuid: "b9ad47ca-09fa-8f9f-ae93-f1caa71c72e4"
+      stageUuid: "da7fbeda-2de0-8b40-8748-ca29ea7d5733"
     - stage: uuid
-      stageUuid: "731a2615-c3cf-8f88-84ea-d99909267cfe"
+      stageUuid: "9ad364d7-e49c-83d6-9719-8f1c125837d8"
 version: 2
 ---
 # pediatric

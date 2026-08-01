@@ -1,73 +1,35 @@
 ---
 name: laundry
 description: "Use when reasoning about laundry as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/laundry
-coordinate: laundry · 5/round · 05c3172b
-contentUuid: "5a4740a9-0429-51b4-8dcd-232f80595a6c"
-diamondUuid: "93b9f3d5-6cb6-8cde-ad70-1693b33320c1"
-uuid: "05c3172b-f28c-8ce9-bc92-a5b8e049a21a"
-horo: 5
-bonds:
-  in:
-    - cleaning
-    - collapse
-    - dry
-    - law
-    - merge
-    - sti
-  out:
-    - cleaning
-    - collapse
-    - dry
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/laundry"
+coordinate: "vocabulary/laundry · 2/share · 9643cd8b"
+contentUuid: "492be9cc-b535-574b-85b6-65cf8132e0b3"
+diamondUuid: "ee9a3930-8cce-8de3-ae71-b4cf1eca2037"
+uuid: "9643cd8b-c87d-8647-acea-14195ac85093"
+horo: 2
 typography:
-  partition: laundry
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - cleaning
-    - collapse
-    - dry
-    - law
-    - merge
-    - sti
-  matrix:
-    - cleaning
-    - collapse
-    - dry
-    - law
-    - merge
-    - sti
-  backlinks:
-    - cleaning
-    - collapse
-    - dry
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "79d70421-5a3d-853b-b39b-ade13f842003"
+  computationUuid: "3a095a7d-1516-873b-8917-3a581ed038a7"
   stages:
     - stage: path
-      stageUuid: "bcc85e14-5211-811c-991d-85192cab988f"
+      stageUuid: "32c0a080-4b4c-8ac2-b7c5-b37cee214261"
     - stage: trinity
-      stageUuid: "eb465898-9801-8490-b27f-5c60fe594c08"
+      stageUuid: "34e56d74-dd2b-827a-a1f0-29c4b4dabcf4"
     - stage: boundary
-      stageUuid: "1036b8ef-ba01-8a7f-84ba-3f673f014769"
+      stageUuid: "1c987b93-9a1f-85f0-a245-95929bf8117f"
     - stage: links
-      stageUuid: "0524e1e6-0f06-8d0a-87b2-bf6e6de46a16"
+      stageUuid: "6ea74b96-42e3-8a40-af76-149e0992d52b"
     - stage: horo
-      stageUuid: "b113a204-68b6-85b6-9eac-42986522c855"
+      stageUuid: "f40c2d1b-8ecc-8a2c-9804-cde003966501"
     - stage: seal
-      stageUuid: "f5359809-273f-854d-9e2b-8c02d955432d"
+      stageUuid: "5319ffff-86ed-8b03-ad94-d00a4c63db2e"
     - stage: uuid
-      stageUuid: "52cd2325-a281-86f1-8aac-df4bd11475ba"
+      stageUuid: "5de261f8-542b-8062-97e0-48b02f9cd6dc"
 version: 2
 ---
 # laundry

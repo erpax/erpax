@@ -2,186 +2,38 @@
 name: seed
 description: "Use when seeding a tenant's opening chart-of-accounts + compliance posture from a (country × industry) template — INDUSTRY_TEMPLATES, the BG-NSS statutory chart, resolveTenantCompliance/getCuratedComplianceCountries. Derives every country fact from country-context; nothing is re-typed."
 atomPath: seed
-coordinate: seed · 7/descent · 94e11040
-contentUuid: "5f5abeaa-bfcf-5009-9f9a-378483a75943"
-diamondUuid: "041832bf-f00f-83bf-bcce-54b1483a9993"
-uuid: "94e11040-4e20-8395-b296-27cd61a5fb20"
-horo: 7
-bonds:
-  in:
-    - accounting
-    - akashic
-    - aura
-    - code
-    - crop
-    - cropplan
-    - currency
-    - empirical
-    - endpoints
-    - fractal
-    - graft
-    - holographic
-    - identity
-    - items
-    - law
-    - localize
-    - manufacturing
-    - measure
-    - organic
-    - planting
-    - pollination
-    - propagation
-    - rootstock
-    - spacing
-    - standard
-    - test
-    - testing
-    - transplant
-    - variant
-    - version
-  out:
-    - accounting
-    - akashic
-    - aura
-    - code
-    - crop
-    - cropplan
-    - currency
-    - empirical
-    - endpoints
-    - fractal
-    - graft
-    - holographic
-    - identity
-    - items
-    - law
-    - localize
-    - manufacturing
-    - measure
-    - organic
-    - planting
-    - pollination
-    - propagation
-    - rootstock
-    - spacing
-    - standard
-    - test
-    - testing
-    - transplant
-    - variant
-    - version
+coordinate: "seed · 2/share · 115fdb38"
+contentUuid: "857ab671-fd70-58f0-92c4-5d380db723d5"
+diamondUuid: "0a8b8e5d-70fb-821b-833c-84b3ae274375"
+uuid: "115fdb38-3e43-8e69-9b23-6d9478060312"
+horo: 2
 typography:
   partition: seed
-  bondDegree: 0
-  neighbors: []
+  bondDegree: 100
 standards:
   - "9110 http-semantics seed-endpoint"
   - "BCP-47 language-tag locale-bundled-fixtures"
-  - "ISO-19011:2018 audit-trail seed-runs"
   - "ISO-8601-1:2019 date-time"
+  - "ISO-8601-1:2019 date-time`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - akashic
-    - aura
-    - code
-    - crop
-    - currency
-    - fractal
-    - holographic
-    - identity
-    - items
-    - law
-    - localize
-    - manufacturing
-    - measure
-    - organic
-    - planting
-    - propagation
-    - standard
-    - transplant
-    - variant
-    - version
-  matrix:
-    - accounting
-    - akashic
-    - aura
-    - code
-    - crop
-    - cropplan
-    - currency
-    - empirical
-    - endpoints
-    - fractal
-    - graft
-    - holographic
-    - identity
-    - items
-    - law
-    - localize
-    - manufacturing
-    - measure
-    - organic
-    - planting
-    - pollination
-    - propagation
-    - rootstock
-    - spacing
-    - standard
-    - test
-    - testing
-    - transplant
-    - variant
-    - version
-  backlinks:
-    - accounting
-    - akashic
-    - aura
-    - code
-    - crop
-    - cropplan
-    - currency
-    - empirical
-    - endpoints
-    - fractal
-    - graft
-    - holographic
-    - identity
-    - items
-    - law
-    - localize
-    - manufacturing
-    - measure
-    - organic
-    - planting
-    - pollination
-    - propagation
-    - rootstock
-    - spacing
-    - standard
-    - test
-    - testing
-    - transplant
-    - variant
-    - version
 signatures:
-  computationUuid: "119976e9-3793-87d1-be34-3ae2f00021c4"
+  computationUuid: "8147a0c0-dfcf-8b58-b59e-a1a0de325d7f"
   stages:
     - stage: path
       stageUuid: "05e41cf0-e2fd-8003-93b3-15cc1f45e459"
     - stage: trinity
-      stageUuid: "6717f03c-19f4-8c0d-8225-6e9b6e649b83"
+      stageUuid: "891bd662-5421-83af-9036-616ecb447561"
     - stage: boundary
-      stageUuid: "2d9e3b1c-18ab-85fa-ada6-6413c9e9f5d3"
+      stageUuid: "cdfa3b76-e189-8d95-8f4f-5e7644138260"
     - stage: links
       stageUuid: "00c07e1c-d9ad-8ec0-9542-894b1e98bc06"
     - stage: horo
-      stageUuid: "049ab9a9-1cdd-8d22-9476-d345b97d3edd"
+      stageUuid: "70d4a5f9-1f56-88e7-8b98-c8926a3e7dcd"
     - stage: seal
-      stageUuid: "db2dbc3f-0ffd-8b47-accd-6a6a18356632"
+      stageUuid: "8951bdad-8502-86d6-97f2-3e0d7e26b647"
     - stage: uuid
-      stageUuid: "dd033a8e-dcc8-8eb0-a0e7-06ca9bd1c9e3"
+      stageUuid: "256bd52c-fe7c-8e7b-ab67-b48c6aef6af5"
 version: 2
 ---
 # seed — the (country × industry) opening-books template

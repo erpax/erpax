@@ -2,177 +2,18 @@
 name: season
 description: "Use when output is bounded by a recurring climate window in the annual cycle — the growing/harvest season set by the frost-free period, the cool- vs warm-season crop split, and heat accumulation (growing degree days) rather than the calendar. The season is the time-axis bottleneck of agriculture: land × season caps how much can be grown; it is regional and probabilistic, never a copied calendar."
 atomPath: season
-coordinate: season · 4/weave · 1dfc3bb0
-contentUuid: "49400b81-5962-52b4-8ba2-e7b9686977a9"
-diamondUuid: "a5751b08-e479-8dd4-ac2a-831ae15deb43"
-uuid: "1dfc3bb0-fdad-8bcc-9fb9-d9c1781e2532"
-horo: 4
-bonds:
-  in:
-    - agriculture
-    - apiculture
-    - bottleneck
-    - capacity
-    - contains
-    - covercrop
-    - creative
-    - crop
-    - cropplan
-    - cultivation
-    - degreeday
-    - dormancy
-    - evapotranspiration
-    - frost
-    - hardiness
-    - harvest
-    - horo
-    - lactation
-    - law
-    - maturity
-    - pasture
-    - perennial
-    - period
-    - planting
-    - podcast
-    - pruning
-    - radio
-    - rotation
-    - schedule
-    - share
-    - time
-    - tunnel
-    - tv
-    - work
-  out:
-    - agriculture
-    - apiculture
-    - bottleneck
-    - capacity
-    - contains
-    - covercrop
-    - creative
-    - crop
-    - cropplan
-    - cultivation
-    - degreeday
-    - dormancy
-    - evapotranspiration
-    - frost
-    - hardiness
-    - harvest
-    - horo
-    - lactation
-    - law
-    - maturity
-    - pasture
-    - perennial
-    - period
-    - planting
-    - podcast
-    - pruning
-    - radio
-    - rotation
-    - schedule
-    - share
-    - time
-    - tunnel
-    - tv
-    - work
+coordinate: "season · 1/base · 0d8ddd6a"
+contentUuid: "095d5361-951e-516a-8154-92a8e5528e04"
+diamondUuid: "39c42a04-d1a5-8e44-abce-a3ddcb03026f"
+uuid: "0d8ddd6a-917d-8220-ad66-71d26c9dd3b3"
+horo: 1
 typography:
   partition: season
-  bondDegree: 110
-  neighbors: []
+  bondDegree: 112
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - bottleneck
-    - capacity
-    - crop
-    - degreeday
-    - frost
-    - hardiness
-    - harvest
-    - horo
-    - law
-    - period
-    - planting
-    - schedule
-    - time
-    - tunnel
-  matrix:
-    - agriculture
-    - apiculture
-    - bottleneck
-    - capacity
-    - contains
-    - covercrop
-    - creative
-    - crop
-    - cropplan
-    - cultivation
-    - degreeday
-    - dormancy
-    - evapotranspiration
-    - frost
-    - hardiness
-    - harvest
-    - horo
-    - lactation
-    - law
-    - maturity
-    - pasture
-    - perennial
-    - period
-    - planting
-    - podcast
-    - pruning
-    - radio
-    - rotation
-    - schedule
-    - share
-    - time
-    - tunnel
-    - tv
-    - work
-  backlinks:
-    - agriculture
-    - apiculture
-    - bottleneck
-    - capacity
-    - contains
-    - covercrop
-    - creative
-    - crop
-    - cropplan
-    - cultivation
-    - degreeday
-    - dormancy
-    - evapotranspiration
-    - frost
-    - hardiness
-    - harvest
-    - horo
-    - lactation
-    - law
-    - maturity
-    - pasture
-    - perennial
-    - period
-    - planting
-    - podcast
-    - pruning
-    - radio
-    - rotation
-    - schedule
-    - share
-    - time
-    - tunnel
-    - tv
-    - work
 signatures:
-  computationUuid: "eda1331b-4e46-854a-bd1a-c3ce94e88eba"
+  computationUuid: "eb293c3e-3755-8009-8729-7cfd9952cce9"
   stages:
     - stage: path
       stageUuid: "a06c5aea-06e8-839a-bf73-bff93238b330"
@@ -183,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "33644355-c2d3-8cde-99b4-7a3a545b08d7"
     - stage: horo
-      stageUuid: "19aab08e-fddb-8ac0-b200-ed020da7eae3"
+      stageUuid: "be349aec-51f9-8232-91a6-789d64c9dfe7"
     - stage: seal
-      stageUuid: "8ce90a46-4f2c-8610-a7b3-debf1cef181f"
+      stageUuid: "7ba4f872-08c1-88fc-ad93-f0e08ba8c491"
     - stage: uuid
-      stageUuid: "34a12ce1-e566-8c8a-867c-60da9eda19b1"
+      stageUuid: "f97cc8fb-4df0-817d-b196-c28814b8f4a8"
 version: 2
 ---
 # season — the recurring climate window that bounds growth

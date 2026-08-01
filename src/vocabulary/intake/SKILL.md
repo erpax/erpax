@@ -1,73 +1,35 @@
 ---
 name: intake
 description: "Use when reasoning about intake as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/intake
-coordinate: intake · 2/share · 03e1ab12
-contentUuid: "3ef78e6e-2425-5449-840f-8556410884a3"
-diamondUuid: "4623e43f-67d9-88b6-81a8-8e463fa93ffb"
-uuid: "03e1ab12-6948-8965-a812-1e98eff82e98"
+atomPath: "vocabulary/intake"
+coordinate: "vocabulary/intake · 2/share · 4860b477"
+contentUuid: "6efae2cc-ec8c-5f18-976e-914173a6bc7d"
+diamondUuid: "8b185a24-aaab-858f-b8d4-cc2f44f5354f"
+uuid: "4860b477-dd99-8fc2-9037-3e75cf2b010c"
 horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - maximum
-    - merge
-    - recommended
-    - sti
-  out:
-    - collapse
-    - law
-    - maximum
-    - merge
-    - recommended
-    - sti
 typography:
-  partition: intake
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - maximum
-    - merge
-    - recommended
-    - sti
-  matrix:
-    - collapse
-    - law
-    - maximum
-    - merge
-    - recommended
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - maximum
-    - merge
-    - recommended
-    - sti
 signatures:
-  computationUuid: "5c28903c-aed6-8ec6-aa44-45bcf132cb5f"
+  computationUuid: "324563dd-58f7-8475-9959-9d4957268d08"
   stages:
     - stage: path
-      stageUuid: "e19a83a0-f54a-8a34-9273-20e9ff410898"
+      stageUuid: "acd1af48-c557-8ac5-b03e-a6896e78b2cb"
     - stage: trinity
-      stageUuid: "f904762d-343a-8a89-901f-a8df7a11943f"
+      stageUuid: "96ae3722-426a-87ef-b9de-f2816b3f0dbe"
     - stage: boundary
-      stageUuid: "73a32591-f1af-8de4-a7ad-fbfde5c1dd11"
+      stageUuid: "3e9e2960-4b91-85da-a05f-5d0eec2c208b"
     - stage: links
-      stageUuid: "6aab8734-48df-89a7-b3eb-7d763ba7ddfe"
+      stageUuid: "cab78fc6-711a-8ef7-b245-ed60443bef8f"
     - stage: horo
-      stageUuid: "17ff3678-1cb4-8f30-826c-7a2477775098"
+      stageUuid: "b7726f75-c064-80d9-a558-5cabbe7b4f82"
     - stage: seal
-      stageUuid: "a2ae9fba-82fe-8ebd-9e06-f132c082fff1"
+      stageUuid: "73d35088-4f42-8afa-8857-406e5cd0ce39"
     - stage: uuid
-      stageUuid: "ffac4c45-86dd-8d4f-8e78-f0d14168e6a9"
+      stageUuid: "a3dfb785-6240-8360-9a15-ef0f2a74f429"
 version: 2
 ---
 # intake

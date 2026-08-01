@@ -2,63 +2,20 @@
 name: accommodation
 description: "Use when reasoning about accommodation — An accommodation is a place that can accommodate human beings, e.g. a hotel room, a camping pitch, or a meeting room. Many accommodations are for overnight stays, but this is not a"
 atomPath: accommodation
-coordinate: "accommodation · 4/weave · a209d30f"
-contentUuid: "399597f3-f9e1-5a2d-b52a-2cdcb0de5956"
-diamondUuid: "50f977bc-d0c8-84d9-92ef-4cb0eb214eb8"
-uuid: "a209d30f-efbb-8998-8d0e-a3b49c158b20"
-horo: 4
-bonds:
-  in:
-    - available
-    - category
-    - floor
-    - law
-    - number
-    - plan
-    - units
-  out:
-    - available
-    - category
-    - floor
-    - law
-    - number
-    - plan
-    - units
+coordinate: "accommodation · 5/round · 64598652"
+contentUuid: "aab43ab6-4708-5176-bd20-4d98e6626dd2"
+diamondUuid: "7b418e70-8518-8ffe-8fe3-1ffc45f11d05"
+uuid: "64598652-24dc-8959-8dbc-4690c42b122e"
+horo: 5
 typography:
   partition: accommodation
   bondDegree: 26
-  neighbors: []
 standards:
   - schema.org
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - available
-    - category
-    - floor
-    - law
-    - number
-    - plan
-    - units
-  matrix:
-    - available
-    - category
-    - floor
-    - law
-    - number
-    - plan
-    - units
-  backlinks:
-    - available
-    - category
-    - floor
-    - law
-    - number
-    - plan
-    - units
 signatures:
-  computationUuid: "56f60d7b-0d9b-80c1-a94b-2fb8b4ac16e3"
+  computationUuid: "6f91d728-afe0-8852-8516-cb70ec9b5708"
   stages:
     - stage: path
       stageUuid: "ce2244ed-9a80-8faf-a632-0bf40a781806"
@@ -69,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "8ae9abac-dcf7-8bf5-b974-abc689e825cf"
     - stage: horo
-      stageUuid: "9b9ed109-7f82-899b-805c-82723f0708af"
+      stageUuid: "911f6c1e-847b-887d-9c49-3f4a8c5e799f"
     - stage: seal
       stageUuid: "8e584459-1f5f-8118-acf8-1b04804942b3"
     - stage: uuid
-      stageUuid: "c408f389-294c-8bf1-9233-1f2f67eee3b8"
+      stageUuid: "ff508f7c-4ceb-8f38-b294-a2783163591a"
 version: 2
 ---
 # accommodation

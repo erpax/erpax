@@ -1,68 +1,35 @@
 ---
 name: except
 description: "Use when reasoning about except as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/except
-coordinate: except · 2/share · 8fda17d7
-contentUuid: "1923f6a0-415d-5fef-8dd0-1bc7ce5fc4ec"
-diamondUuid: "a5d5aec7-dec9-8115-beb3-b5c9fc553efa"
-uuid: "8fda17d7-03e3-8eae-8cac-a5ca3ed1c28e"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - date
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - date
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/except"
+coordinate: "vocabulary/except · 5/round · eaa4e675"
+contentUuid: "c3c9a4c1-1e21-5095-89a8-21727216f028"
+diamondUuid: "48bdc38c-8fcf-8a95-8ff4-028ca62821d4"
+uuid: "eaa4e675-853e-838e-8dfa-1a47894345fb"
+horo: 5
 typography:
-  partition: except
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - date
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - date
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - date
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "115810f3-c179-801b-a77a-f1b2e6d31678"
+  computationUuid: "5e8f97c1-bc5e-8845-a983-60bec5704f74"
   stages:
     - stage: path
-      stageUuid: "158fd234-6176-8d18-8b50-2c61b93d2e29"
+      stageUuid: "bcc9767b-dcc9-8986-9b9a-f89d2f1b1e4d"
     - stage: trinity
-      stageUuid: "6e64b3d0-414c-8af5-9696-040813d0be06"
+      stageUuid: "e303877e-97dd-80c2-a4e5-feea0188ea9b"
     - stage: boundary
-      stageUuid: "72a9adf7-ce33-8975-9399-a11773856fe1"
+      stageUuid: "7091c969-64a2-802b-9111-dc2ffc27783e"
     - stage: links
-      stageUuid: "d72eba46-0f51-8fef-8d93-694cfdfbcce5"
+      stageUuid: "272eab8b-6abc-8093-b706-419aa33a1c73"
     - stage: horo
-      stageUuid: "ce52407d-b8da-8cb4-9d00-158c060f4fe1"
+      stageUuid: "ce65f65c-57d6-87ee-8349-ed92cb9d64c5"
     - stage: seal
-      stageUuid: "04da8eb0-91ef-8695-8365-664e56c4f43a"
+      stageUuid: "734c9639-1724-86dc-8c3e-6b9f8c6294f9"
     - stage: uuid
-      stageUuid: "fc55873d-6b97-80ab-94a6-83d6453215f4"
+      stageUuid: "f567718f-1bb0-8a4c-8242-dc7454f2fdc0"
 version: 2
 ---
 # except

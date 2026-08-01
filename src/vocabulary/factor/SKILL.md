@@ -1,78 +1,35 @@
 ---
 name: factor
 description: "Use when reasoning about factor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/factor
-coordinate: factor · 7/descent · 340ad1a0
-contentUuid: "484f4f72-d0e5-56b8-9899-ec0c916426b4"
-diamondUuid: "fa0475e0-3c86-8b05-9506-3f0d3bb38eef"
-uuid: "340ad1a0-13b0-8bd3-98fe-3b494bbbdb13"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - included
-    - law
-    - medical
-    - merge
-    - risk
-    - sti
-  out:
-    - collapse
-    - included
-    - law
-    - medical
-    - merge
-    - risk
-    - sti
+atomPath: "vocabulary/factor"
+coordinate: "vocabulary/factor · 4/weave · 3ff17070"
+contentUuid: "70feffb8-56f7-5b98-b148-49fad79f8198"
+diamondUuid: "f913f66a-60ab-83c5-bebc-b8357310d516"
+uuid: "3ff17070-218c-8408-8b9b-0753d279eb8f"
+horo: 4
 typography:
-  partition: factor
-  bondDegree: 23
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 24
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - included
-    - law
-    - medical
-    - merge
-    - risk
-    - sti
-  matrix:
-    - collapse
-    - included
-    - law
-    - medical
-    - merge
-    - risk
-    - sti
-  backlinks:
-    - collapse
-    - included
-    - law
-    - medical
-    - merge
-    - risk
-    - sti
 signatures:
-  computationUuid: "c5868023-b100-83f9-be22-11043118072e"
+  computationUuid: "dafdbd26-5f4e-89d2-b027-f0159ccca379"
   stages:
     - stage: path
-      stageUuid: "605fb581-b93c-836d-8470-1140156aaae5"
+      stageUuid: "7c5f694d-bd5f-8ea1-bc76-d6240250f411"
     - stage: trinity
-      stageUuid: "52169311-9edd-8c58-8d63-1ed2aab35257"
+      stageUuid: "d38bb918-6663-8357-9413-93fbeefa5795"
     - stage: boundary
-      stageUuid: "79d76faf-8e92-8db6-9b14-f9f323739763"
+      stageUuid: "650a4ec1-8d26-88e1-8a9c-9708c9a43d3b"
     - stage: links
-      stageUuid: "78d65eeb-a6a8-803e-b40b-24880c6d1c95"
+      stageUuid: "4087c5a4-0ea4-8546-9fc0-43dc1a287fad"
     - stage: horo
-      stageUuid: "5728bd44-a5ad-85fc-a5ff-26d25fc75d0e"
+      stageUuid: "23f641dc-0fca-8eb8-99bf-532263d4cb03"
     - stage: seal
-      stageUuid: "0ad574d0-dade-8236-9ba9-64b8ab0d1c82"
+      stageUuid: "305a9f16-1458-827f-b7d3-7fb6cfca4748"
     - stage: uuid
-      stageUuid: "4652fdb0-e0c0-88e6-aa56-f1de3e0be8fb"
+      stageUuid: "5e197f3b-1f94-838b-bed4-a0f64ff9e2e9"
 version: 2
 ---
 # factor

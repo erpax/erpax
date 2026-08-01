@@ -2,151 +2,18 @@
 name: chat
 description: "Use when agents converse — an ordered thread of content-uuid messages between agent ids; each message is a communication, the thread tamper-evident via the quantum chat chain."
 atomPath: "agent/chat"
-coordinate: "agent/chat · 7/descent · da1fa7d2"
-contentUuid: "eae737c3-7f29-5447-8236-caab83b35e6e"
-diamondUuid: "9240beda-7d7d-86b5-b7fe-11cc88181374"
-uuid: "da1fa7d2-b40c-8e5e-af54-2aeca7d6b616"
-horo: 7
-bonds:
-  in:
-    - agent
-    - akashic
-    - architecture
-    - breath
-    - chat
-    - classroom
-    - comms
-    - communication
-    - contribution
-    - cost
-    - history
-    - industry
-    - law
-    - llm
-    - matrix
-    - mcp
-    - merge
-    - message
-    - quantum
-    - realtime
-    - science
-    - session
-    - skills
-    - society
-    - team
-    - torus
-    - trinity
-    - uuid
-    - wave
-  out:
-    - agent
-    - akashic
-    - architecture
-    - breath
-    - chat
-    - classroom
-    - comms
-    - communication
-    - contribution
-    - cost
-    - history
-    - industry
-    - law
-    - llm
-    - matrix
-    - mcp
-    - merge
-    - message
-    - quantum
-    - realtime
-    - science
-    - session
-    - skills
-    - society
-    - team
-    - torus
-    - trinity
-    - uuid
-    - wave
+coordinate: "agent/chat · 1/base · 75895ed5"
+contentUuid: "0ede1602-6618-5701-b46d-d34f19e3d931"
+diamondUuid: "8689fcb3-63a1-8447-ab6e-c6c32847124f"
+uuid: "75895ed5-8e2d-8b12-9d27-cbcb19cdb4f9"
+horo: 1
 typography:
   partition: agent
-  bondDegree: 151
-  neighbors:
-    - agent
-    - aura
+  bondDegree: 156
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agent
-    - chat
-    - communication
-    - law
-    - message
-    - quantum
-    - uuid
-  matrix:
-    - agent
-    - akashic
-    - architecture
-    - breath
-    - chat
-    - classroom
-    - comms
-    - communication
-    - contribution
-    - cost
-    - history
-    - industry
-    - law
-    - llm
-    - matrix
-    - mcp
-    - merge
-    - message
-    - quantum
-    - realtime
-    - science
-    - session
-    - skills
-    - society
-    - team
-    - torus
-    - trinity
-    - uuid
-    - wave
-  backlinks:
-    - agent
-    - akashic
-    - architecture
-    - breath
-    - chat
-    - classroom
-    - comms
-    - communication
-    - contribution
-    - cost
-    - history
-    - industry
-    - law
-    - llm
-    - matrix
-    - mcp
-    - merge
-    - message
-    - quantum
-    - realtime
-    - science
-    - session
-    - skills
-    - society
-    - team
-    - torus
-    - trinity
-    - uuid
-    - wave
 signatures:
-  computationUuid: "fb8251b5-72ee-86df-b690-d041adf714ce"
+  computationUuid: "7176db67-b11f-8fc7-bfe8-e76aebe9c7a1"
   stages:
     - stage: path
       stageUuid: "98aef98a-97ad-869d-bca5-aaf4c28400e3"
@@ -157,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5fe11ab5-ca41-8ea2-84e8-558410fba0bd"
     - stage: horo
-      stageUuid: "cc14bdb2-baf4-801e-a9f5-356f79a6638b"
+      stageUuid: "17cbb5a3-34ac-8388-9301-cce95d3b389b"
     - stage: seal
       stageUuid: "3bc287af-a0bb-8498-bab8-35d97e08171a"
     - stage: uuid
-      stageUuid: "4842b0ba-7aa0-8f64-9555-1338586cba4b"
+      stageUuid: "778bc099-a35f-8374-b37d-4cd16d4ab275"
 version: 2
 ---
 # agent/chat — agents conversing

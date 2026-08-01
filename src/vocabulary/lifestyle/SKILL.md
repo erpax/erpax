@@ -1,68 +1,35 @@
 ---
 name: lifestyle
 description: "Use when reasoning about lifestyle as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/lifestyle
-coordinate: lifestyle · 1/base · 0411bc47
-contentUuid: "926c912b-1b74-58af-aeef-10d4e6673b46"
-diamondUuid: "a252333f-f286-8389-884e-d884fff45434"
-uuid: "0411bc47-0669-863b-9dba-af5cad27276d"
+atomPath: "vocabulary/lifestyle"
+coordinate: "vocabulary/lifestyle · 1/base · 97f222e8"
+contentUuid: "5e043e99-94b1-54ec-b396-36212758b275"
+diamondUuid: "cc2b09de-35cf-899e-b63b-292018fae540"
+uuid: "97f222e8-8aae-814c-885d-41b5a2d5234b"
 horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - modification
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - modification
-    - sti
 typography:
-  partition: lifestyle
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - modification
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - modification
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - modification
-    - sti
 signatures:
-  computationUuid: "39617256-710f-8e03-aaf5-f3aff241281a"
+  computationUuid: "7f6d7a16-f47f-8dbc-8074-89363627ae85"
   stages:
     - stage: path
-      stageUuid: "5e6d0f2b-924c-835d-87d9-3a4ac1a42cac"
+      stageUuid: "d08c7b56-4523-8c6a-aa30-14b6bb2bb215"
     - stage: trinity
-      stageUuid: "fa939d55-fc47-82f1-a745-979fdc23be23"
+      stageUuid: "797777a9-c341-8b2e-90f6-adc53d2f5aca"
     - stage: boundary
-      stageUuid: "73593b21-f556-8715-9000-8ed127c8a361"
+      stageUuid: "6678b5ed-8c3f-8b31-9ee1-42070c01f1ac"
     - stage: links
-      stageUuid: "8587dcb3-34f9-8a7d-831b-0ed00debcf43"
+      stageUuid: "1f4ae631-35d5-88fb-b462-b4227f673ced"
     - stage: horo
-      stageUuid: "1b742af7-eaee-8700-8242-47bc55eee0b3"
+      stageUuid: "b04e9502-93ff-8bb7-8bd6-857ac816f041"
     - stage: seal
-      stageUuid: "95cb2ec1-2b66-88da-a75d-904a34c5d6cc"
+      stageUuid: "ede32096-49db-8b7b-909c-ddaed533b41a"
     - stage: uuid
-      stageUuid: "aa5f56fa-eb24-85f0-9683-2e23aadc5b1a"
+      stageUuid: "e772ce49-4917-844b-a0a1-cff79f690024"
 version: 2
 ---
 # lifestyle

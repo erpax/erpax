@@ -2,52 +2,19 @@
 name: shopping
 description: "Use when reasoning about shopping as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: shopping
-coordinate: shopping · 2/share · 8fd7dde3
-contentUuid: "dc5f0734-4b9c-54b5-b5bf-f2ee7d53c440"
-diamondUuid: "21530832-a9e6-87e3-8dcb-d7ade5b00c51"
-uuid: "8fd7dde3-ce31-8a3c-9491-d89ce1ae9b8b"
-horo: 2
-bonds:
-  in:
-    - center
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - center
-    - collapse
-    - law
-    - merge
-    - sti
+coordinate: "shopping · 7/descent · 1c7931c8"
+contentUuid: "db1872a6-68aa-5732-aa7d-5606598e5aa3"
+diamondUuid: "a004b572-64a0-8ebf-b4e3-16013393c928"
+uuid: "1c7931c8-8965-86a7-865a-45c1df15de23"
+horo: 7
 typography:
   partition: shopping
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - center
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - center
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - center
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "86577be4-6aa8-88a1-9753-50da35a7923d"
+  computationUuid: "bfc25735-c938-84a2-b116-f748327cd917"
   stages:
     - stage: path
       stageUuid: "7795e39a-6ecc-8599-b249-90048585d7c2"
@@ -58,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6bae017b-ed8a-8dcf-8bdf-72f7489f8b12"
     - stage: horo
-      stageUuid: "53190576-611e-83dd-96a5-9549b81f58fb"
+      stageUuid: "fc0578a4-47d0-8c78-8aa5-50d756c4ad2c"
     - stage: seal
-      stageUuid: "8099c648-a820-8d0d-8cb8-60a1548ee1d9"
+      stageUuid: "3bd1bca6-7760-8c3f-af4a-19be6c3694a9"
     - stage: uuid
-      stageUuid: "209ded50-3f48-89c3-a2a7-99f762631f7e"
+      stageUuid: "58f61ba8-55d2-8314-a44c-239d4b6f643f"
 version: 2
 ---
 # shopping

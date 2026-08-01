@@ -1,68 +1,35 @@
 ---
 name: cancel
 description: "Use when reasoning about cancel — A schema.org component word, collided out of schema.org compounds — fused from CancelAction (sti · collapse · merge)."
-atomPath: vocabulary/cancel
-coordinate: cancel · 7/descent · 779fcf78
-contentUuid: "1531b1a1-c8a5-5f6a-bfde-8bc9a8058b0c"
-diamondUuid: "b47ca8ce-091f-8213-ba8e-3134ec4820ea"
-uuid: "779fcf78-3edf-8909-b57a-6c3648101a7b"
+atomPath: "vocabulary/cancel"
+coordinate: "vocabulary/cancel · 7/descent · 7147ec74"
+contentUuid: "c5411803-5cd4-5a82-a202-e148fb28b8c6"
+diamondUuid: "8d728af3-a68a-808d-a0f8-7e6f1cc23996"
+uuid: "7147ec74-5649-8857-8688-ed5723e003b4"
 horo: 7
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: cancel
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "ba8a81c8-36df-8774-8304-cbc24b0d5052"
+  computationUuid: "e5a1f07b-6abb-84ff-823f-df3684fabcb8"
   stages:
     - stage: path
-      stageUuid: "3435bde8-cc92-859f-ad4e-8c70c36816bb"
+      stageUuid: "1047a27a-8c38-8d00-878f-64e847664075"
     - stage: trinity
-      stageUuid: "04372c10-9dfa-88ad-b183-f5c640838c3f"
+      stageUuid: "849e5a60-62c9-8d43-a72d-2d7219aaa9c4"
     - stage: boundary
-      stageUuid: "d5927dd2-f82b-8ea2-9bee-85634059cf03"
+      stageUuid: "d3043f2d-297a-8f2c-aca6-9e90c80ecc44"
     - stage: links
-      stageUuid: "5af57111-0b56-8a0c-a246-54b1dae1d333"
+      stageUuid: "f932521c-6113-8780-9a00-125cf7ca9556"
     - stage: horo
-      stageUuid: "e361a471-5dc1-8998-9216-3d0da1a2eb2f"
+      stageUuid: "d7f57528-79af-8380-b74d-b6416a04338c"
     - stage: seal
-      stageUuid: "97601cb5-f677-83ce-9eb2-92a3e788a3e9"
+      stageUuid: "8c1354a6-79f3-8c9f-8acd-c87ae4abaa48"
     - stage: uuid
-      stageUuid: "256bac97-3f3e-83b5-937b-ad3b7af39e04"
+      stageUuid: "935344dd-6ad5-8a4c-94e6-ad33a86958aa"
 version: 2
 ---
 # cancel

@@ -1,91 +1,34 @@
 ---
 name: hedge
 description: "Use when designating financial instruments or transactions to offset market risk (FX, interest rate, commodity); accounting treatment under IFRS-9 hedge accounting or derivatives mark-to-market"
-atomPath: vocabulary/hedge
-coordinate: hedge · 1/base · df6da6f8
-contentUuid: "b71ae21f-9bee-5b34-95f7-8ec01f253a46"
-diamondUuid: "f9abc6de-6746-8825-89ae-1ddeb5c14179"
-uuid: "df6da6f8-dec0-8c4c-ad08-37e76b0a8684"
-horo: 1
-bonds:
-  in:
-    - accounting
-    - balance
-    - currency
-    - law
-    - measurements
-    - risk
-    - standard
-    - statements
-    - transaction
-    - transactions
-  out:
-    - accounting
-    - balance
-    - currency
-    - law
-    - measurements
-    - risk
-    - standard
-    - statements
-    - transaction
-    - transactions
+atomPath: "vocabulary/hedge"
+coordinate: "vocabulary/hedge · 8/crest · ecd40825"
+contentUuid: "7d150dd1-f08f-56e5-81b7-4c4ce5c44c35"
+diamondUuid: "311f07e9-91ac-8c67-9001-d89e32da879d"
+uuid: "ecd40825-9111-83b3-a14b-7665abef7ab5"
+horo: 8
 typography:
-  partition: hedge
+  partition: vocabulary
   bondDegree: 30
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - balance
-    - currency
-    - law
-    - measurements
-    - risk
-    - standard
-    - statements
-    - transactions
-  matrix:
-    - accounting
-    - balance
-    - currency
-    - law
-    - measurements
-    - risk
-    - standard
-    - statements
-    - transaction
-    - transactions
-  backlinks:
-    - accounting
-    - balance
-    - currency
-    - law
-    - measurements
-    - risk
-    - standard
-    - statements
-    - transaction
-    - transactions
 signatures:
-  computationUuid: "3eb12098-e3f8-8f05-a9b1-8857fdd1ecd7"
+  computationUuid: "19a1d4e7-2c62-8d8a-b247-054053035ad5"
   stages:
     - stage: path
-      stageUuid: "7338bdef-c421-8611-90f1-84e10200a336"
+      stageUuid: "c102ce7c-d5ac-8289-a468-d74116d464e7"
     - stage: trinity
-      stageUuid: "6cdd9724-aa9f-8203-8c14-55e06e8c4fb9"
+      stageUuid: "0bdaa3a0-fe0b-8259-88fc-eaf12c85ffc2"
     - stage: boundary
-      stageUuid: "fc27e2cd-118c-8986-ad2e-71f6d40ac803"
+      stageUuid: "77e969f5-3aac-84b1-adc3-8c52ea380910"
     - stage: links
-      stageUuid: "619c5843-a550-8322-808a-cac47845c37c"
+      stageUuid: "0f50b354-63ad-880d-bc79-15ecca94014a"
     - stage: horo
-      stageUuid: "2e5302c1-0a6e-845d-916a-e2b67a2a28ba"
+      stageUuid: "541f2159-8f8c-88a8-9e41-de916d69a5a5"
     - stage: seal
-      stageUuid: "0e4843fd-321a-8996-843b-0e41b8d8089e"
+      stageUuid: "b67cd21a-beb9-801f-a449-2ac48be0fc17"
     - stage: uuid
-      stageUuid: "ce25fa5b-5fb5-859b-9b4a-d063cfcc6ef1"
+      stageUuid: "755d4c2f-be80-84cd-a399-e5d8cfdbca77"
 version: 2
 ---
 # hedge

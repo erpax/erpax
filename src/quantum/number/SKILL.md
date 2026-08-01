@@ -1,318 +1,44 @@
 ---
 name: number
 description: "Use when reasoning about a number as a stream rather than a magnitude — the decimal point is the measurement that collapses an infinite digit-stream to a fixed value; remove it (compose, not dot) and the number is its uncollapsed sequence, pi the purest case that never resolves, its conjectured normality the even line."
-atomPath: quantum/number
-coordinate: quantum/number · 1/base · f776f65c
-contentUuid: "0323c40c-2b7e-5bbb-b1cd-c70623e2cf49"
-diamondUuid: "a828c4b5-2837-848d-b9d1-6f88d9debab2"
-uuid: "f776f65c-4f73-8781-a1fb-6f91e47c063f"
-horo: 1
-bonds:
-  in:
-    - accommodation
-    - accounting
-    - additional
-    - airbags
-    - available
-    - axles
-    - bathrooms
-    - bedrooms
-    - beds
-    - box
-    - bus
-    - catalog
-    - clip
-    - commerce
-    - confirmation
-    - credits
-    - doors
-    - episode
-    - episodes
-    - fax
-    - fields
-    - flight
-    - forward
-    - full
-    - gears
-    - global
-    - guests
-    - hooks
-    - id
-    - identification
-    - identity
-    - issue
-    - item
-    - loan
-    - location
-    - measure
-    - membership
-    - number
-    - office
-    - order
-    - partial
-    - passenger
-    - players
-    - post
-    - previous
-    - quantum
-    - rate
-    - report
-    - rooms
-    - science
-    - seasons
-    - seat
-    - serial
-    - service
-    - sms
-    - stage
-    - supto
-    - tracking
-    - transaction
-    - units
-    - utility
-    - vehicle
-    - volume
-    - zeropoint
-  out:
-    - accommodation
-    - accounting
-    - additional
-    - airbags
-    - available
-    - axles
-    - bathrooms
-    - bedrooms
-    - beds
-    - box
-    - bus
-    - catalog
-    - clip
-    - commerce
-    - confirmation
-    - credits
-    - doors
-    - episode
-    - episodes
-    - fax
-    - fields
-    - flight
-    - forward
-    - full
-    - gears
-    - global
-    - guests
-    - hooks
-    - id
-    - identification
-    - identity
-    - issue
-    - item
-    - loan
-    - location
-    - measure
-    - membership
-    - number
-    - office
-    - order
-    - partial
-    - passenger
-    - players
-    - post
-    - previous
-    - rate
-    - report
-    - rooms
-    - science
-    - seasons
-    - seat
-    - serial
-    - service
-    - sms
-    - stage
-    - supto
-    - tracking
-    - transaction
-    - units
-    - utility
-    - vehicle
-    - volume
-    - zeropoint
+atomPath: "quantum/number"
+coordinate: "quantum/number · 5/round · 80f32373"
+contentUuid: "3d2e142a-525c-5168-a0fd-0b75bca3f68e"
+diamondUuid: "f492c9ad-1805-807e-83e6-62cc9b18ee6b"
+uuid: "80f32373-1ea3-831e-b091-7ddda7a51ce3"
+horo: 5
 typography:
   partition: quantum
-  bondDegree: 205
-  neighbors: []
+  bondDegree: 219
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - breath
-    - collapse
-    - digit
-    - finality
-    - harmony
-    - law
-    - linearity
-    - number
-    - reality
-    - realtime
-    - sequence
-    - snapshot
-    - stream
-  matrix:
-    - accommodation
-    - accounting
-    - additional
-    - airbags
-    - available
-    - axles
-    - bathrooms
-    - bedrooms
-    - beds
-    - box
-    - bus
-    - catalog
-    - clip
-    - commerce
-    - confirmation
-    - credits
-    - doors
-    - episode
-    - episodes
-    - fax
-    - fields
-    - flight
-    - forward
-    - full
-    - gears
-    - global
-    - guests
-    - hooks
-    - id
-    - identification
-    - identity
-    - issue
-    - item
-    - loan
-    - location
-    - measure
-    - membership
-    - number
-    - office
-    - order
-    - partial
-    - passenger
-    - players
-    - post
-    - previous
-    - rate
-    - report
-    - rooms
-    - science
-    - seasons
-    - seat
-    - serial
-    - service
-    - sms
-    - stage
-    - supto
-    - tracking
-    - transaction
-    - units
-    - utility
-    - vehicle
-    - volume
-    - zeropoint
-  backlinks:
-    - accommodation
-    - accounting
-    - additional
-    - airbags
-    - available
-    - axles
-    - bathrooms
-    - bedrooms
-    - beds
-    - box
-    - bus
-    - catalog
-    - clip
-    - commerce
-    - confirmation
-    - credits
-    - doors
-    - episode
-    - episodes
-    - fax
-    - fields
-    - flight
-    - forward
-    - full
-    - gears
-    - global
-    - guests
-    - hooks
-    - id
-    - identification
-    - identity
-    - issue
-    - item
-    - loan
-    - location
-    - measure
-    - membership
-    - number
-    - office
-    - order
-    - partial
-    - passenger
-    - players
-    - post
-    - previous
-    - rate
-    - report
-    - rooms
-    - science
-    - seasons
-    - seat
-    - serial
-    - service
-    - sms
-    - stage
-    - supto
-    - tracking
-    - transaction
-    - units
-    - utility
-    - vehicle
-    - volume
-    - zeropoint
 signatures:
-  computationUuid: "1e96677f-8e77-8cb3-a962-9f10041f779b"
+  computationUuid: "27464f76-29d3-87d1-a526-bd9030672cda"
   stages:
     - stage: path
       stageUuid: "a4a59051-7c91-876b-903c-230d3d88aa79"
     - stage: trinity
       stageUuid: "10ce5c08-d03d-8df8-84e4-69e461a4c6cc"
     - stage: boundary
-      stageUuid: "9dac037b-56be-8d07-8ed8-c17a604f9b78"
+      stageUuid: "1305c840-09ac-8a3b-b010-58e5dc83c85b"
     - stage: links
-      stageUuid: "62c55f1c-81b8-896d-8db1-6a0eb81a5138"
+      stageUuid: "759ebade-752d-8b09-8735-b60be7e1fdc9"
     - stage: horo
-      stageUuid: "d2b3b146-aa68-8db7-a3b7-a18411a1255b"
+      stageUuid: "73745328-124b-8809-9512-793582f42350"
     - stage: seal
       stageUuid: "3f75ddee-1316-896d-acab-5906cb3d38b3"
     - stage: uuid
-      stageUuid: "149c8979-1349-8060-805b-8beff4068419"
+      stageUuid: "a2a84b82-1b15-8ee3-8bce-091258d92974"
 quantum:
   superposition:
     - accommodation
-    - accounting
     - additional
     - airbags
     - available
     - axles
     - bathrooms
     - bedrooms
+    - beds
     - superposition
   collapse:
     - "Use when reasoning about a number as a stream rather than a magnitude — the decimal point is the measurement that collapses an infinite digit-stream to a fixed value; remove it (compose, not dot) and the number is its uncollapsed sequence, pi the purest case that never resolves, its conjectured normality the even line."
@@ -332,8 +58,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "1e96677f-8e77-8cb3-a962-9f10041f779b"
-    contentUuid: "0323c40c-2b7e-5bbb-b1cd-c70623e2cf49"
+    computationUuid: "27464f76-29d3-87d1-a526-bd9030672cda"
+    contentUuid: "3d2e142a-525c-5168-a0fd-0b75bca3f68e"
 version: 2
 ---
 # quantum/number — the digit-stream behind the dot
@@ -351,4 +77,4 @@ The (conjectured) **normality** of π — every [[digit]] equally often — *is*
 
 @see [[number]] · [[digit]] · [[stream]] · [[linearity]] · [[finality]] · [[sequence]] · [[breath]] · [[harmony]]
 
-<sub>content-uuid `0323c40c-2b7e-5bbb-b1cd-c70623e2cf49` · account `quantum/number` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `3d2e142a-525c-5168-a0fd-0b75bca3f68e` · account `quantum/number` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

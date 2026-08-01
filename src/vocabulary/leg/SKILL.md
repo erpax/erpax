@@ -1,67 +1,35 @@
 ---
 name: leg
 description: "Use when reasoning about leg as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/leg
-coordinate: leg · 2/share · a1756515
-contentUuid: "18ce294a-cadb-5ea5-b270-b77638b1ed9f"
-diamondUuid: "3db59872-71b8-885e-889a-47d0008d952a"
-uuid: "a1756515-b303-8eb8-9791-da5202b7762a"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - leg
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - leg
-    - merge
-    - sti
+atomPath: "vocabulary/leg"
+coordinate: "vocabulary/leg · 5/round · 67cd1c7c"
+contentUuid: "b906c7d2-50da-59b6-8285-c9eebd4106e4"
+diamondUuid: "b3289ca2-b02f-8f61-a22e-3da002ca83d2"
+uuid: "67cd1c7c-ff11-8255-a1a0-2d1c203e45c7"
+horo: 5
 typography:
-  partition: leg
+  partition: vocabulary
   bondDegree: 21
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - leg
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - leg
-    - merge
-    - sti
 signatures:
-  computationUuid: "fc0a87ee-db69-8848-88cb-7be5dadf41fd"
+  computationUuid: "18c61f88-5c27-8ca9-8ff9-bcd9bc8b4d13"
   stages:
     - stage: path
-      stageUuid: "6293c5e4-364d-83ed-8d18-afbd3cf33907"
+      stageUuid: "61123926-7bcd-8bf7-a09a-7f289572a5ab"
     - stage: trinity
-      stageUuid: "5026625c-40c6-8fbf-a858-e543c7886236"
+      stageUuid: "06a60493-9b24-89a1-92c5-661c2e88f44e"
     - stage: boundary
-      stageUuid: "febcb38f-952f-8a42-87fb-bdf6ac51635c"
+      stageUuid: "204b0515-4c33-8d1f-81c3-e1ce9e17574a"
     - stage: links
-      stageUuid: "e8531754-93f5-8f42-8c51-cc7446d2cb85"
+      stageUuid: "8622c72a-3d82-8a80-93ab-ad9f7ca4c26f"
     - stage: horo
-      stageUuid: "1efc9a2c-83b2-8ab9-a892-ae3acfde2b53"
+      stageUuid: "1f7e13fa-8448-81b2-9c77-0c31ec1ccf2a"
     - stage: seal
-      stageUuid: "9cf64903-8aa1-80d4-8c83-89cb077024f3"
+      stageUuid: "6a53f132-a3cc-886b-890c-98cf41fdd90b"
     - stage: uuid
-      stageUuid: "8c1387a8-7677-8c32-8740-db6a7e701997"
+      stageUuid: "4c035218-a49c-8798-b887-d9d37a92d35b"
 version: 2
 ---
 # leg

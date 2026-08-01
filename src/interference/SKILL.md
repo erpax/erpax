@@ -2,86 +2,33 @@
 name: interference
 description: "Use when reasoning about interference — two wave amplitudes combine by phase, not classical sum: I = a1² + a2² + 2·a1·a2·cos(φ), constructive (in phase) reinforcing to (a1+a2)², destructive (out of phase) cancelling to (a1−a2)². The cross term is the quantum part that draws the double-slit fringes; averaged over a period it vanishes, so energy is conserved — interference redistributes intensity, never creates it. In erpax in-phase link-paths reinforce (gravity deepens), out-of-phase cancel."
 atomPath: interference
-coordinate: "interference · 7/descent · 10c76745"
-contentUuid: "1ed3465a-7494-562a-a90e-b6d0be639958"
-diamondUuid: "fbfe73d8-14ed-8f97-9fb5-a0bfb54e3a7e"
-uuid: "10c76745-a60c-8c75-86d9-cb889663d8d3"
-horo: 7
-bonds:
-  in:
-    - gravity
-    - harmony
-    - law
-    - link
-    - phase
-    - photon
-    - quantum
-    - superposition
-    - wave
-  out:
-    - gravity
-    - harmony
-    - law
-    - link
-    - phase
-    - photon
-    - quantum
-    - superposition
-    - wave
+coordinate: "interference · 1/base · 9eda7a4a"
+contentUuid: "bbc67f46-3e60-593c-ad40-d957e725693d"
+diamondUuid: "f63f2218-12c5-875d-82cd-3dd700c4d764"
+uuid: "9eda7a4a-4af5-8388-97f9-e299abab2c71"
+horo: 1
 typography:
   partition: interference
   bondDegree: 27
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - gravity
-    - harmony
-    - law
-    - link
-    - phase
-    - photon
-    - quantum
-    - superposition
-    - wave
-  matrix:
-    - gravity
-    - harmony
-    - law
-    - link
-    - phase
-    - photon
-    - quantum
-    - superposition
-    - wave
-  backlinks:
-    - gravity
-    - harmony
-    - law
-    - link
-    - phase
-    - photon
-    - quantum
-    - superposition
-    - wave
 signatures:
-  computationUuid: "adf9b042-40d0-8b68-83f6-fbbbe899d61a"
+  computationUuid: "4d3a584c-d6c2-8512-8304-a1f2f4330e2f"
   stages:
     - stage: path
       stageUuid: "02a61968-c435-8bc6-abf9-efe2c460c476"
     - stage: trinity
       stageUuid: "fe7753cb-5588-86ae-a367-0f2e95603068"
     - stage: boundary
-      stageUuid: "ae3c425d-ea64-8f0c-85e6-3ecb10b2993f"
+      stageUuid: "dd7f766b-d2e4-8f36-bfad-0e1c321ac3aa"
     - stage: links
       stageUuid: "b907126e-b131-8515-828d-b0be8220f2a9"
     - stage: horo
-      stageUuid: "d832fd2d-eaee-882e-90a7-da3d44f9f653"
+      stageUuid: "0d52401a-a229-87ec-b26d-0c7f85c7bbdb"
     - stage: seal
       stageUuid: "ea9e81aa-2b09-86b1-a93b-0074fd78ca4c"
     - stage: uuid
-      stageUuid: "6cb40cb3-0489-8619-bae2-07906af8a614"
+      stageUuid: "b52a580d-a939-845e-bd01-6336d238e79e"
 version: 2
 ---
 # interference — amplitudes combine by phase

@@ -2,195 +2,36 @@
 name: readme
 description: "Use when the repository README is generated, verified, or reasoned about — the README is a diamond (a content-addressed projection of the live tree, regenerable with zero entropy, drift fails closed) and its typography IS the diamond projected (facets = the closed horo ring laid out in measure-walk order, so reading the README is reading the crystal). Derived from the tree (matrix · fs walk · package.json), never hand-typed."
 atomPath: readme
-coordinate: readme · 4/weave · 2d73b9f3
-contentUuid: "fd81a968-6e06-5215-b2c1-170fceed1b90"
-diamondUuid: "dcbb8dcb-2f38-834b-92da-28f27c87ec77"
-uuid: "2d73b9f3-25dc-854b-b445-e928b229a5b9"
-horo: 4
-bonds:
-  in:
-    - accounting
-    - asset
-    - atom
-    - aura
-    - balance
-    - conservation
-    - credit
-    - debit
-    - diamond
-    - entropy
-    - entry
-    - generate
-    - gravity
-    - holographic
-    - horo
-    - identity
-    - law
-    - liability
-    - matrix
-    - merge
-    - pivot
-    - purity
-    - seal
-    - self
-    - sequence
-    - trinity
-    - upgrade
-    - uuid
-    - whole
-    - worker
-  out:
-    - accounting
-    - asset
-    - atom
-    - aura
-    - balance
-    - conservation
-    - credit
-    - debit
-    - diamond
-    - entropy
-    - entry
-    - generate
-    - gravity
-    - holographic
-    - horo
-    - identity
-    - law
-    - liability
-    - matrix
-    - merge
-    - pivot
-    - purity
-    - seal
-    - self
-    - sequence
-    - trinity
-    - upgrade
-    - uuid
-    - whole
-    - worker
+coordinate: "readme · 1/base · c1cb1f00"
+contentUuid: "374e8ca0-96f5-566f-880b-fb0e7d8e2802"
+diamondUuid: "fc016a38-33b1-8b55-90ee-410e3d3866ca"
+uuid: "c1cb1f00-7661-8d6d-8552-9f5b130e9452"
+horo: 1
 typography:
   partition: readme
-  bondDegree: 97
-  neighbors:
-    - aura
-    - diamond
-    - purity
+  bondDegree: 123
 standards:
-  - "Cloudflare Workers deploy-buttons)."
   - "RFC 9562 §5.8 (the README's own content-uuid is a v8 content-uuid)"
-  - "every number is read from the live tree (matrix · fs walk · package.json), never hand-set"
+  - "RFC 9562 §5.8 (the README's own content-uuid is a v8 content-uuid)`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - asset
-    - atom
-    - aura
-    - balance
-    - conservation
-    - credit
-    - debit
-    - diamond
-    - entropy
-    - entry
-    - generate
-    - gravity
-    - holographic
-    - horo
-    - identity
-    - law
-    - liability
-    - matrix
-    - merge
-    - pivot
-    - purity
-    - seal
-    - self
-    - sequence
-    - trinity
-    - uuid
-    - whole
-  matrix:
-    - accounting
-    - asset
-    - atom
-    - aura
-    - balance
-    - conservation
-    - credit
-    - debit
-    - diamond
-    - entropy
-    - entry
-    - generate
-    - gravity
-    - holographic
-    - horo
-    - identity
-    - law
-    - liability
-    - matrix
-    - merge
-    - pivot
-    - purity
-    - seal
-    - self
-    - sequence
-    - trinity
-    - upgrade
-    - uuid
-    - whole
-    - worker
-  backlinks:
-    - accounting
-    - asset
-    - atom
-    - aura
-    - balance
-    - conservation
-    - credit
-    - debit
-    - diamond
-    - entropy
-    - entry
-    - generate
-    - gravity
-    - holographic
-    - horo
-    - identity
-    - law
-    - liability
-    - matrix
-    - merge
-    - pivot
-    - purity
-    - seal
-    - self
-    - sequence
-    - trinity
-    - upgrade
-    - uuid
-    - whole
-    - worker
 signatures:
-  computationUuid: "a875e511-b3a3-8f9c-ab16-0ddaa4513c4c"
+  computationUuid: "7a19274a-2db9-8edc-bd84-933c5f06a62b"
   stages:
     - stage: path
       stageUuid: "dc681a92-56b1-8f59-b232-67e611a4affd"
     - stage: trinity
       stageUuid: "0e346e83-f398-83e6-80c7-c672603ac811"
     - stage: boundary
-      stageUuid: "c615a3cb-344e-82fa-8677-a591b64d01d2"
+      stageUuid: "8a678cf7-d196-80e2-aed3-da0c1ad71d5e"
     - stage: links
-      stageUuid: "d9ef9bc6-11e8-8a87-968b-68a8c851e302"
+      stageUuid: "c332faea-643b-8893-bc36-f71877aebdd8"
     - stage: horo
-      stageUuid: "8d2fe2f0-dc5f-88e1-bdce-819cc3fa6d96"
+      stageUuid: "c58373d0-abda-88b7-b1fb-bd1ec6b68740"
     - stage: seal
-      stageUuid: "a80d82c0-c26b-88a4-bce2-00d75801ca6b"
+      stageUuid: "164c37b8-34fa-8582-861b-07bd004fd6ce"
     - stage: uuid
-      stageUuid: "6f37fb3a-47fe-8305-b5d9-a5d947954e7e"
+      stageUuid: "f4f99f40-a9c3-8d1b-967f-949d49070094"
 version: 2
 ---
 # readme — the README is a diamond; its typography is the diamond projected (under [[self/generate]] · outward coil)

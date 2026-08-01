@@ -1,68 +1,35 @@
 ---
 name: representation
 description: "Use when reasoning about representation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/representation
-coordinate: representation · 5/round · f5b5322c
-contentUuid: "8fbe6e8a-90de-501e-8ea6-645c95f5019a"
-diamondUuid: "1a7624f6-6d49-83ab-82ba-e339fb2f5e5d"
-uuid: "f5b5322c-c083-8f92-bb39-1e50777b12cb"
+atomPath: "vocabulary/representation"
+coordinate: "vocabulary/representation · 5/round · 77282a9d"
+contentUuid: "9fadc5fa-a9b3-588e-b43a-fe2a1c85c783"
+diamondUuid: "d87a2fad-ccb4-8e3a-8b99-8ad6739e7918"
+uuid: "77282a9d-8510-8047-987a-8b845232ff05"
 horo: 5
-bonds:
-  in:
-    - collapse
-    - has
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - has
-    - law
-    - merge
-    - sti
 typography:
-  partition: representation
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - has
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - has
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - has
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "3482299d-2a7b-8d43-ac19-09eb59e50078"
+  computationUuid: "4e0da15e-c215-8453-b7d3-6f2595f35044"
   stages:
     - stage: path
-      stageUuid: "c7adddc0-0795-833f-8f6b-8d5cbc0cd4b3"
+      stageUuid: "e092dccb-8ced-8dbd-843c-8e9a2a6a522e"
     - stage: trinity
-      stageUuid: "ec2c5a29-84cc-8489-af23-ab279a5cbe12"
+      stageUuid: "18dedeb3-4287-85f8-bb0c-5a3df7696249"
     - stage: boundary
-      stageUuid: "0bef1142-cfbf-8bc4-a105-1921d8e3bcc0"
+      stageUuid: "78363e33-d52d-8fa5-9b4e-d3c8e3eec537"
     - stage: links
-      stageUuid: "e0ff889c-14f0-850d-870d-dd5a4e75745f"
+      stageUuid: "83e7b6d5-1ace-87b1-8182-3661f9932374"
     - stage: horo
-      stageUuid: "416ae36d-9fcd-8516-8825-98ea393fffea"
+      stageUuid: "4c04b298-bf2d-8916-a441-cef5ae3314b2"
     - stage: seal
-      stageUuid: "dc835506-03ba-85b1-a09f-f3ba776f30ca"
+      stageUuid: "060e2777-6a44-8bcb-ad57-15534a82cc0f"
     - stage: uuid
-      stageUuid: "aabcf371-a8f2-8ac1-950d-b1fd5cea0a8b"
+      stageUuid: "b874d262-b35c-875c-8bc8-2a647ad58b98"
 version: 2
 ---
 # representation

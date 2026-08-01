@@ -1,78 +1,35 @@
 ---
 name: discussion
 description: "Use when reasoning about discussion as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/discussion
-coordinate: discussion · 2/share · ece155a6
-contentUuid: "5960533e-57b9-5114-b83b-1bed06910a6d"
-diamondUuid: "9a366ae2-92da-8b53-99d2-56e358c53e7e"
-uuid: "ece155a6-a3ab-8245-abc0-915714cc61ba"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - forum
-    - law
-    - merge
-    - posting
-    - sti
-    - url
-  out:
-    - collapse
-    - forum
-    - law
-    - merge
-    - posting
-    - sti
-    - url
+atomPath: "vocabulary/discussion"
+coordinate: "vocabulary/discussion · 7/descent · 5206f207"
+contentUuid: "3e1cb538-9e97-562e-be61-4bfd5eed1889"
+diamondUuid: "ad7d60ee-ab3f-8cd2-8105-cb1d505a731e"
+uuid: "5206f207-b315-87f1-af3d-935ed5669ae3"
+horo: 7
 typography:
-  partition: discussion
+  partition: vocabulary
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - forum
-    - law
-    - merge
-    - posting
-    - sti
-    - url
-  matrix:
-    - collapse
-    - forum
-    - law
-    - merge
-    - posting
-    - sti
-    - url
-  backlinks:
-    - collapse
-    - forum
-    - law
-    - merge
-    - posting
-    - sti
-    - url
 signatures:
-  computationUuid: "d04a4390-6f32-8e13-91e2-aa7fc27766fe"
+  computationUuid: "7eb46c3d-324b-8786-beb1-723a7649ed55"
   stages:
     - stage: path
-      stageUuid: "2d59f956-45a3-867c-af0b-d5576ab3772a"
+      stageUuid: "86a818f1-04f9-871f-95c2-1ec0a641b1c2"
     - stage: trinity
-      stageUuid: "46c0c3d0-7625-86b2-982f-7384f0cbf958"
+      stageUuid: "16da1bb4-a081-8f82-94a0-bbf130a22a04"
     - stage: boundary
-      stageUuid: "33b1fa70-3a07-8155-b6f2-27f42e38c184"
+      stageUuid: "f3c479ee-7d1a-8502-8fa4-90e4da40e106"
     - stage: links
-      stageUuid: "1d704cb9-0a3a-8beb-88b5-29e23a9bdce1"
+      stageUuid: "e0c9d2b9-c549-8351-9b2d-21f641f015a2"
     - stage: horo
-      stageUuid: "133b8ad3-4d22-8bb4-a415-39cbb54491b8"
+      stageUuid: "caa95782-0da4-8e02-90e8-59bdb8c19f08"
     - stage: seal
-      stageUuid: "167016b5-59e7-8908-9199-862ee501f53b"
+      stageUuid: "1adf48c7-9e78-8121-9a85-3bb826c66ec8"
     - stage: uuid
-      stageUuid: "23276de4-d580-8288-a3c3-e5164af985d6"
+      stageUuid: "059631d4-2459-8e2a-869e-3c5148099ea0"
 version: 2
 ---
 # discussion

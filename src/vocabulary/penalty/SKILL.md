@@ -1,73 +1,35 @@
 ---
 name: penalty
 description: "Use when reasoning about penalty as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/penalty
-coordinate: penalty · 5/round · 231c3541
-contentUuid: "d0b43ed5-0fdd-5f58-bfe9-ad0323e28b20"
-diamondUuid: "0fa5bf96-cb01-8eff-a736-aa9bd6e86922"
-uuid: "231c3541-90aa-8749-ac01-dfbaa4e1d265"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - early
-    - law
-    - merge
-    - prepayment
-    - sti
-  out:
-    - collapse
-    - early
-    - law
-    - merge
-    - prepayment
-    - sti
+atomPath: "vocabulary/penalty"
+coordinate: "vocabulary/penalty · 4/weave · 2d0237dc"
+contentUuid: "c46de744-ffd5-5035-8cd2-53fab7970262"
+diamondUuid: "28ae23b4-e136-8d8a-8fc4-c4761a6cf6ba"
+uuid: "2d0237dc-11a8-8404-8bb6-b10631ab63b4"
+horo: 4
 typography:
-  partition: penalty
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - early
-    - law
-    - merge
-    - prepayment
-    - sti
-  matrix:
-    - collapse
-    - early
-    - law
-    - merge
-    - prepayment
-    - sti
-  backlinks:
-    - collapse
-    - early
-    - law
-    - merge
-    - prepayment
-    - sti
 signatures:
-  computationUuid: "fdce85f1-a851-8d4a-b115-3a9627efb509"
+  computationUuid: "0a2c8a06-a34c-87f4-8b57-8f46c60eb614"
   stages:
     - stage: path
-      stageUuid: "01777707-d298-81d3-a3e0-df5bdee9b3dc"
+      stageUuid: "57981a46-b6a7-8c98-8f25-dd9c8b256da9"
     - stage: trinity
-      stageUuid: "36a8bd06-6846-824c-a783-0e073c179000"
+      stageUuid: "0235e96b-1ed6-831b-adb6-93a706776542"
     - stage: boundary
-      stageUuid: "d43af506-e3ae-8e19-b3ac-c0449ebf5ef3"
+      stageUuid: "81b428f2-6611-852f-a8d9-b3efe9cca916"
     - stage: links
-      stageUuid: "222ec1fb-f3f1-8200-a8f4-54296d2f133e"
+      stageUuid: "805cbeee-7f92-89b8-a365-7550a71fade6"
     - stage: horo
-      stageUuid: "d41ec5c5-0983-8413-96b0-921f732a596f"
+      stageUuid: "c0468423-dae3-81d8-aca7-343da10f258f"
     - stage: seal
-      stageUuid: "c590fbdd-6d19-8056-ac4c-72cdf1891b54"
+      stageUuid: "5594543b-5ad1-80fe-b4ca-6fe51331967b"
     - stage: uuid
-      stageUuid: "202c3de8-7b02-8633-b849-645d988c4ed2"
+      stageUuid: "f38da8f2-0b0e-8b1a-9193-cb65fe39578e"
 version: 2
 ---
 # penalty

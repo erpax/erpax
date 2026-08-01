@@ -1,9 +1,37 @@
 ---
 name: compatibility
 description: "Use when a corpus atom's name might collide with the framework — ISO/IEC 25010 §5.3 co-existence: an atom folder whose leaf is a framework-reserved router namespace (pages) is misparsed by Next.js and breaks the build; the gate that seals the engineering FORM trinity."
-atomPath: rules/compatibility
+atomPath: "rules/compatibility"
+coordinate: "rules/compatibility · 7/descent · a1d85033"
+contentUuid: "cc17ba3f-0241-54db-ab70-f2cb8cd96ba3"
+diamondUuid: "bebd929d-2637-8bf8-9257-e6716db745cb"
+uuid: "a1d85033-76f5-806c-80cd-267e55cd6c66"
+horo: 7
+typography:
+  partition: rules
+  bondDegree: 9
+standards:
+  - "ISO/IEC 25010:2023 §5.3 compatibility — co-existence with the framework namespace"
+bindings: []
+signatures:
+  computationUuid: "fd67397e-7a10-85f9-9f44-2dfe1a2a0171"
+  stages:
+    - stage: path
+      stageUuid: "138cde0b-8fa2-82f5-aaea-d1c5716dd79c"
+    - stage: trinity
+      stageUuid: "ba6e12df-5665-8958-95b3-716071bbc00a"
+    - stage: boundary
+      stageUuid: "bb2b2768-b79f-8cb6-81a0-5d6006e79001"
+    - stage: links
+      stageUuid: "52f1e19f-27ed-89bd-b4b1-01ac85668aa9"
+    - stage: horo
+      stageUuid: "3b00d829-7011-8733-af37-1beba50e256a"
+    - stage: seal
+      stageUuid: "28892a9d-3b18-8422-86b3-e038812fa1ea"
+    - stage: uuid
+      stageUuid: "ef75bf26-b411-8ecb-81fe-bafcff905aa5"
+version: 2
 ---
-
 # rules/compatibility — an atom may not seize a name the framework reserves
 
 ISO/IEC 25010 **§5.3 compatibility** = co-existence + interoperability: the corpus shares its environment with the framework **without detriment**. It does not. `src/pages` is a perfect one-word erpax atom (a CMS collection) **and** Next.js's reserved **Pages-Router** directory. Next reads it as a router, not as data — the admin panel's generated types reject every `src/pages/*` module (`.next/dev/types/validator.ts`), so **the app does not compile**.

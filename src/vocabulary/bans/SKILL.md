@@ -1,68 +1,35 @@
 ---
 name: bans
 description: "Use when reasoning about bans as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/bans
-coordinate: bans · 2/share · f4156b30
-contentUuid: "4ae48bde-f341-5647-9c23-181624a255e3"
-diamondUuid: "b95c75a2-638e-8f48-8f92-0fb6fbf53036"
-uuid: "f4156b30-e5ba-8fe5-92de-3d94d9b0e672"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - travel
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - travel
+atomPath: "vocabulary/bans"
+coordinate: "vocabulary/bans · 5/round · de0980e4"
+contentUuid: "c6523266-8f42-5ee9-a723-5d4729037e17"
+diamondUuid: "d11b0b47-5fba-84ab-a45c-ff0f98dd224f"
+uuid: "de0980e4-6f08-87d3-92cd-1521fef09ded"
+horo: 5
 typography:
-  partition: bans
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - travel
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - travel
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - travel
 signatures:
-  computationUuid: "6c8be936-4811-860e-b36c-ff64b91983c1"
+  computationUuid: "07582971-ffcb-8efe-8c4e-99154a141c6f"
   stages:
     - stage: path
-      stageUuid: "5166961e-edc6-8fe1-83bf-761ee11ffc44"
+      stageUuid: "9d592c61-c53b-8334-ae0f-ab80bc4a8f24"
     - stage: trinity
-      stageUuid: "2492166a-f780-86ef-b20a-310a44cb4b7d"
+      stageUuid: "771d7398-578b-8267-b1f6-6bfd9b0fa73c"
     - stage: boundary
-      stageUuid: "c4c6318b-2892-87b1-b71f-ad800742cab0"
+      stageUuid: "d435461b-5e97-81ba-a8c1-577d01bb1e21"
     - stage: links
-      stageUuid: "f0277b46-8f1f-835b-b6e3-99bf9cab416d"
+      stageUuid: "eaa41ec1-791e-8c86-92be-ce99fe6ef8ea"
     - stage: horo
-      stageUuid: "f4e4673d-088f-8164-8c28-6960be387144"
+      stageUuid: "179d1d69-23b4-8dee-8854-be3b7cb838f0"
     - stage: seal
-      stageUuid: "55b2c921-0b8a-8faf-8ad0-031abb8eb12a"
+      stageUuid: "a589f747-9905-854d-939a-427676590149"
     - stage: uuid
-      stageUuid: "c3501134-3df4-8a3b-a783-ac89f6e8bce3"
+      stageUuid: "80ae12c7-8ce8-8d27-9b44-b687172addb4"
 version: 2
 ---
 # bans

@@ -1,68 +1,35 @@
 ---
 name: reject
 description: "Use when reasoning about reject as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/reject
-coordinate: reject · 4/weave · 420e9035
-contentUuid: "923ac7cd-4005-5d96-8da2-9f367c475563"
-diamondUuid: "a8ae0501-4766-83a4-97a9-c935f201274b"
-uuid: "420e9035-234d-8cc4-8cbb-9a342d754165"
+atomPath: "vocabulary/reject"
+coordinate: "vocabulary/reject · 4/weave · 5064c45f"
+contentUuid: "5b716366-9d85-53ee-8062-4867835b0205"
+diamondUuid: "b00d231a-bc64-8ba2-b376-ac60da2dda10"
+uuid: "5064c45f-7919-8dbb-ab93-cd5985ba8599"
 horo: 4
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: reject
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "08da77d9-d4fb-8bbc-bb01-d8997b11fc4f"
+  computationUuid: "ec7b2cc9-40b4-8982-9a42-94edf9eae52d"
   stages:
     - stage: path
-      stageUuid: "42038724-d320-8cef-8830-52c3f5062756"
+      stageUuid: "15adcaad-a807-8a42-8ea3-84730a8d6623"
     - stage: trinity
-      stageUuid: "39a0d14c-31c4-83b3-9d8c-10af63a77098"
+      stageUuid: "4eca5668-7e73-85f8-9435-4d249a78238d"
     - stage: boundary
-      stageUuid: "eae37ee0-6de6-87fe-bc2b-369fbeffeb29"
+      stageUuid: "87ae3bd8-28ec-8b25-9c1a-a675a5f599e3"
     - stage: links
-      stageUuid: "89a0cdee-254b-8eb0-8cfd-3c0cb2f71ed8"
+      stageUuid: "a40058d9-21b6-8b3e-a64f-d478cfe60672"
     - stage: horo
-      stageUuid: "1017691c-201d-8c4a-b718-c8cc8305a04d"
+      stageUuid: "7d265ccf-8707-869f-8350-a41742c6754a"
     - stage: seal
-      stageUuid: "db70eec1-81e9-8956-b3e2-d56ef417b33a"
+      stageUuid: "8802fdcc-81ef-8fad-8678-aeafdcc05bf1"
     - stage: uuid
-      stageUuid: "b20e561b-d7be-830e-8eb9-154997e9aade"
+      stageUuid: "f6ca4530-5078-892d-ae77-f1abcc8cfce8"
 version: 2
 ---
 # reject

@@ -1,83 +1,35 @@
 ---
 name: coinsurance
 description: "Use when reasoning about coinsurance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/coinsurance
-coordinate: coinsurance · 2/share · 8ec76ef4
-contentUuid: "70ae515d-a9eb-5b3f-a98c-83ac9b54d3d3"
-diamondUuid: "73c668b4-fb6d-8cff-b3f6-a98f82674602"
-uuid: "8ec76ef4-cec8-89d8-892e-afabfce8f77d"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - health
-    - law
-    - merge
-    - option
-    - plan
-    - rate
-    - sti
-  out:
-    - collapse
-    - health
-    - law
-    - merge
-    - option
-    - plan
-    - rate
-    - sti
+atomPath: "vocabulary/coinsurance"
+coordinate: "vocabulary/coinsurance · 8/crest · be6fa407"
+contentUuid: "6988c82a-8a5a-5174-a347-238633536ce4"
+diamondUuid: "78cc3485-138c-8591-bf16-7a5a790c0979"
+uuid: "be6fa407-c45a-843e-a7e4-c0e680b6650d"
+horo: 8
 typography:
-  partition: coinsurance
+  partition: vocabulary
   bondDegree: 26
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - health
-    - law
-    - merge
-    - option
-    - plan
-    - rate
-    - sti
-  matrix:
-    - collapse
-    - health
-    - law
-    - merge
-    - option
-    - plan
-    - rate
-    - sti
-  backlinks:
-    - collapse
-    - health
-    - law
-    - merge
-    - option
-    - plan
-    - rate
-    - sti
 signatures:
-  computationUuid: "e636614b-823d-876f-8219-7ac19fb36a5d"
+  computationUuid: "255d6463-f479-80db-b6e1-3ecb140eb23f"
   stages:
     - stage: path
-      stageUuid: "dc2b7c59-2a09-8dc2-8b6f-28b52395ece7"
+      stageUuid: "0a9a068b-85df-808d-b9bb-0ecf42c258bc"
     - stage: trinity
-      stageUuid: "26d6f829-d9b4-8e9e-8741-0195a6a919ec"
+      stageUuid: "be73046e-8a60-8da7-93c1-6edf39be84f2"
     - stage: boundary
-      stageUuid: "3b5b9fc1-5348-8518-9e80-da6c41047fff"
+      stageUuid: "802da694-3682-863b-a1bc-88144e3a3422"
     - stage: links
-      stageUuid: "404fefe0-86c8-8728-8276-1df202a6bef7"
+      stageUuid: "8fb7c6c5-d490-8b79-b19d-4b33fcfb9ad9"
     - stage: horo
-      stageUuid: "3fe890c6-b52e-8113-8c42-55e2cbfbb4d7"
+      stageUuid: "888b70c1-2ce8-80f5-826f-ca46074a2a0b"
     - stage: seal
-      stageUuid: "f3b14a10-f841-8dd0-be03-3166464d2882"
+      stageUuid: "7c64bda7-4d1d-8c55-8fd6-2ba7610c0a32"
     - stage: uuid
-      stageUuid: "546ada4b-f87e-85ad-8484-711f0699c264"
+      stageUuid: "23d95683-1f6c-8e20-8bc0-b3fa4429c7b0"
 version: 2
 ---
 # coinsurance

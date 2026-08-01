@@ -1,68 +1,35 @@
 ---
 name: collateral
 description: "Use when reasoning about collateral as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/collateral
-coordinate: collateral · 1/base · 4dca6564
-contentUuid: "f37d3aa2-9176-5e93-8f2d-bda51730abbc"
-diamondUuid: "06cf9d3c-19aa-8a2f-b014-dffb4469a9ab"
-uuid: "4dca6564-c3c9-8688-afb9-8a96683b63d4"
+atomPath: "vocabulary/collateral"
+coordinate: "vocabulary/collateral · 1/base · 3c6a7648"
+contentUuid: "b98abbac-6301-583d-8d73-7a0711227909"
+diamondUuid: "f703c21d-6276-8190-ae57-fcbdeda39e67"
+uuid: "3c6a7648-9863-8925-bf42-c644c18f34d8"
 horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - required
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - required
-    - sti
 typography:
-  partition: collateral
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - required
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - required
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - required
-    - sti
 signatures:
-  computationUuid: "b88da6d7-6879-8617-aab1-83c2f7269979"
+  computationUuid: "caf4c5c4-938a-8611-b980-400f2700ca7e"
   stages:
     - stage: path
-      stageUuid: "e3b191c7-01c7-8b59-a530-e36058fa3b38"
+      stageUuid: "c5f90008-4dc4-8634-bb30-9c5a74180d57"
     - stage: trinity
-      stageUuid: "fbd81c17-179e-8a17-8657-04c19f04ec2d"
+      stageUuid: "3332cf84-8d95-882d-a325-b641201bd107"
     - stage: boundary
-      stageUuid: "a99ef3b3-ca6f-8f17-b3c7-5ee7395605b1"
+      stageUuid: "479ecdec-e4c4-8ff6-9b5f-0a8546705dbd"
     - stage: links
-      stageUuid: "7df4a030-43f1-8466-add9-436468515dd5"
+      stageUuid: "c84f36c6-06d6-88c8-972f-96d81a94e864"
     - stage: horo
-      stageUuid: "2c6d6e8b-8e4c-8ff8-ba58-26acf214e4cd"
+      stageUuid: "4828cd62-5fa4-877c-a377-be1572cf2d29"
     - stage: seal
-      stageUuid: "6ee1a88b-9ffa-8a86-a409-2e5eb35045fb"
+      stageUuid: "90b79a65-17ed-844e-8025-4141fd631ef7"
     - stage: uuid
-      stageUuid: "e6da4286-b773-8652-adf6-1232b98ee9da"
+      stageUuid: "aefc955e-6228-86a9-9e5b-4137a0d0c134"
 version: 2
 ---
 # collateral

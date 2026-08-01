@@ -1,78 +1,35 @@
 ---
 name: guidelines
 description: "Use when reasoning about guidelines as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/guidelines
-coordinate: guidelines · 2/share · c4ceb925
-contentUuid: "6dc49da6-ecb1-5111-ae41-c73806ae0044"
-diamondUuid: "42d6cd94-8230-8b70-a4c0-319ab463b7b3"
-uuid: "c4ceb925-80f8-8d69-acfe-dcd809d70237"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - news
-    - quarantine
-    - sti
-    - updates
-  out:
-    - collapse
-    - law
-    - merge
-    - news
-    - quarantine
-    - sti
-    - updates
+atomPath: "vocabulary/guidelines"
+coordinate: "vocabulary/guidelines · 8/crest · e8c21d64"
+contentUuid: "eebea6d1-0597-5ad6-9a72-e5075c988425"
+diamondUuid: "bd26b909-70c8-8703-b1c7-30b061d09a85"
+uuid: "e8c21d64-f721-8dd0-bb3f-d1b39851813f"
+horo: 8
 typography:
-  partition: guidelines
+  partition: vocabulary
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - news
-    - quarantine
-    - sti
-    - updates
-  matrix:
-    - collapse
-    - law
-    - merge
-    - news
-    - quarantine
-    - sti
-    - updates
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - news
-    - quarantine
-    - sti
-    - updates
 signatures:
-  computationUuid: "43478360-7116-816d-aaca-e5cc003065f7"
+  computationUuid: "4486e4f9-5a07-8027-82fb-665c80b2d494"
   stages:
     - stage: path
-      stageUuid: "f13502d6-5d42-8edf-a0ab-a789bcc78d8e"
+      stageUuid: "65ded602-5c13-8a45-89bb-40f44bfeda52"
     - stage: trinity
-      stageUuid: "9a1f8088-bcd0-8183-b772-e4ad8e393dde"
+      stageUuid: "f86781b2-5482-8014-9a94-a80389e71848"
     - stage: boundary
-      stageUuid: "7643d424-ebcc-8e44-8d93-3e2fa848ab76"
+      stageUuid: "76eedf30-2ebe-8f0d-9c9f-3b678c25f38b"
     - stage: links
-      stageUuid: "5e06d019-d1ad-8547-a801-ae9d4a9a0e49"
+      stageUuid: "651a1afb-daf0-88eb-a9e3-24eecccd6e6a"
     - stage: horo
-      stageUuid: "eabcfb1e-015c-85c0-99d6-35820286fe3d"
+      stageUuid: "0eedd0bf-3468-841a-8a63-9f64d5f3ad55"
     - stage: seal
-      stageUuid: "c1f59876-2de9-85ba-ba7f-c9361669aa0f"
+      stageUuid: "d9265bed-3a59-8e21-8d6c-c89e2a6cc898"
     - stage: uuid
-      stageUuid: "d7f9c69a-2a62-8b3c-9844-8c849d915e64"
+      stageUuid: "e03b1e92-77d9-8036-8b7a-084d67f7657a"
 version: 2
 ---
 # guidelines

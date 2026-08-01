@@ -1,63 +1,35 @@
 ---
 name: dvdformat
 description: "Use when reasoning about dvdformat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/dvdformat
-coordinate: dvdformat · 7/descent · 83187509
-contentUuid: "7fce0137-d876-5bb9-a8a5-c0327e359866"
-diamondUuid: "51a49520-ea5a-85a4-8795-3aa0b4eb8dea"
-uuid: "83187509-56e8-8e7d-b953-6a405b47d4b4"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/dvdformat"
+coordinate: "vocabulary/dvdformat · 8/crest · 0ef2211b"
+contentUuid: "22641f45-6965-53bb-8bac-e27cd62b32e6"
+diamondUuid: "9a5d2ff5-2183-88f5-8781-795ff7c676c5"
+uuid: "0ef2211b-42f1-8641-87d4-903ff511790e"
+horo: 8
 typography:
-  partition: dvdformat
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "c72fb5b3-59f3-8503-b12c-8c87565c4799"
+  computationUuid: "08e255d2-5511-8f1e-9fa7-d489115b8542"
   stages:
     - stage: path
-      stageUuid: "99cd0f39-33a2-8c43-8180-95ed5cd19e47"
+      stageUuid: "d9e94444-4029-8bd2-9022-543872f7766d"
     - stage: trinity
-      stageUuid: "bea548e1-154c-8fb8-8fcc-63ec8770ce04"
+      stageUuid: "24e103f9-a240-8e96-a994-30c307aa647e"
     - stage: boundary
-      stageUuid: "f322ac25-9c63-8fac-88b7-4fbe41d7467c"
+      stageUuid: "5f27aafd-4fdd-8650-9f48-bc3e4e132b14"
     - stage: links
-      stageUuid: "1781c569-59d9-8aa6-8567-567db8d6a886"
+      stageUuid: "dc8c7652-ab1f-85d3-afe2-d588e1a1f460"
     - stage: horo
-      stageUuid: "6b2d3abf-2dde-8c85-9e9c-c0b60d22a35c"
+      stageUuid: "6bc0e73d-1efe-87f6-ae63-bf5a9e87d30e"
     - stage: seal
-      stageUuid: "527f470a-f442-8efc-abd2-126a5d2d6fff"
+      stageUuid: "65a33832-ade2-8fed-b5d5-b2275bbf8273"
     - stage: uuid
-      stageUuid: "44a045ed-1d73-84a9-8743-eb470f25c143"
+      stageUuid: "a44067d0-8fb8-8f11-a0e7-7dccac856c17"
 version: 2
 ---
 # dvdformat

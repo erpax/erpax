@@ -1,63 +1,35 @@
 ---
 name: ddx
 description: "Use when reasoning about ddx as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/ddx
-coordinate: ddx · 1/base · 1a09475e
-contentUuid: "1965154d-25b9-50fc-8910-9eb0d521c977"
-diamondUuid: "05ea449f-670b-8bbf-8464-ed4496888640"
-uuid: "1a09475e-a23f-8bbd-a0b8-b0ca7c98b4c7"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/ddx"
+coordinate: "vocabulary/ddx · 5/round · 6f7059a7"
+contentUuid: "9e463ab9-48ab-502c-ba49-9cf121451f14"
+diamondUuid: "4bb82d88-86b9-8bf4-a3c9-fea4006e0aa6"
+uuid: "6f7059a7-6c8a-885a-9d86-a077b3777789"
+horo: 5
 typography:
-  partition: ddx
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "af142103-d4f4-8cc0-8fd6-2dfaf725f851"
+  computationUuid: "5211c3a4-2806-89aa-a850-4ccd2727fb99"
   stages:
     - stage: path
-      stageUuid: "a3540769-838b-80f7-82ad-898f689223ce"
+      stageUuid: "3a817f3a-7f0f-8fef-9486-125ea7a70f47"
     - stage: trinity
-      stageUuid: "e2edd68e-7a31-8645-b562-5e57b6ad0071"
+      stageUuid: "5953f32d-31e3-8514-a748-66285a6cb604"
     - stage: boundary
-      stageUuid: "895eaa0f-07a2-8c2c-a4d4-b93a96c5cf9d"
+      stageUuid: "fa7c3a7b-78ab-8311-8ca3-aed8b10e7cce"
     - stage: links
-      stageUuid: "9c0ff249-3516-8f3e-ac21-e139e1f3b94b"
+      stageUuid: "5e954236-f41a-8599-9141-d4765b5d37fc"
     - stage: horo
-      stageUuid: "e7e939bb-d038-89bd-9d28-e951182bdfee"
+      stageUuid: "8dd22f94-a4bc-870b-af63-4ae9b84217d4"
     - stage: seal
-      stageUuid: "3bb03674-d653-83bf-88d7-67dab549274d"
+      stageUuid: "dcf694d5-cb28-8738-a8f7-38a3aca6daca"
     - stage: uuid
-      stageUuid: "7779be44-6ee8-8425-9211-04407cd16c37"
+      stageUuid: "9a7a65b6-abed-8091-a76a-a1d3fb31a911"
 version: 2
 ---
 # ddx

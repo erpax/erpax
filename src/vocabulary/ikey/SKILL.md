@@ -1,63 +1,35 @@
 ---
 name: ikey
 description: "Use when reasoning about ikey as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/ikey
-coordinate: ikey · 7/descent · be7e7984
-contentUuid: "c2c1887a-7e62-530a-9234-b346e62c5329"
-diamondUuid: "e1ddb504-0b9c-830e-abfc-67b4a1ca0e40"
-uuid: "be7e7984-7ccf-8525-a5c2-607f42865f19"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/ikey"
+coordinate: "vocabulary/ikey · 2/share · 12cfb02d"
+contentUuid: "ff6cd1c2-676d-5151-be2c-9482996e1321"
+diamondUuid: "5074ce9f-f7d1-8030-a244-9714f59fb4fa"
+uuid: "12cfb02d-cea4-8b23-88de-a0f20106d157"
+horo: 2
 typography:
-  partition: ikey
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "14c3b6f7-c1b9-84a0-92a4-9b3845c085ba"
+  computationUuid: "8776bccd-14dc-82ba-9fb3-35654b9eba53"
   stages:
     - stage: path
-      stageUuid: "404d0490-7872-8bda-b28e-50f76d35210a"
+      stageUuid: "66ec3fcd-2376-8995-858d-e69d3a6f5ef9"
     - stage: trinity
-      stageUuid: "297580c1-2be7-8d62-b677-1b953e2ae505"
+      stageUuid: "4f3bcc66-bba5-8ebf-83e4-20d5b7de1d97"
     - stage: boundary
-      stageUuid: "3c1fe472-43e0-8b23-8132-b16031d8891f"
+      stageUuid: "ab59c976-4795-8494-9e95-b9d6ce39f324"
     - stage: links
-      stageUuid: "4a2c579f-da91-860d-adb7-4abbfe02d642"
+      stageUuid: "35647abc-473a-8e6e-84a3-ab2a09ea3912"
     - stage: horo
-      stageUuid: "cbe8e511-f2ed-8b70-8f83-e4e12e926c39"
+      stageUuid: "a1e40f66-68b1-837b-a380-a594ef7e4753"
     - stage: seal
-      stageUuid: "6eb45170-94e1-85a6-932a-dce30d422846"
+      stageUuid: "0288a6d9-5c64-8a35-84f8-02d2d8d6cce9"
     - stage: uuid
-      stageUuid: "ee56e3a0-40b7-8d79-ac1e-fbae9ca7ce2f"
+      stageUuid: "02ff4830-0532-8112-b2dd-0ee78955ae40"
 version: 2
 ---
 # ikey

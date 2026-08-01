@@ -1,57 +1,35 @@
 ---
 name: cause
 description: Use when reasoning about cause — The cause of a medical condition.
-atomPath: vocabulary/cause
-coordinate: cause · 2/share · b989e75d
-contentUuid: "d6a04483-a902-52b2-a3b1-4fb5523ed6c2"
-diamondUuid: "5a1fda0d-6316-86a8-8a9a-f61417ef924d"
-uuid: "b989e75d-6b09-818f-8010-0b0254636736"
-horo: 2
-bonds:
-  in:
-    - law
-    - medical
-    - provenance
-  out:
-    - law
-    - medical
-    - provenance
+atomPath: "vocabulary/cause"
+coordinate: "vocabulary/cause · 7/descent · 7693b425"
+contentUuid: "3608d179-f722-5c20-84b8-3a7de01438a4"
+diamondUuid: "b71abef4-54b4-81b0-ad3a-9997bd68affe"
+uuid: "7693b425-3d1a-8150-b3d5-7ce21aaa0ba7"
+horo: 7
 typography:
-  partition: cause
-  bondDegree: 10
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 19
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - medical
-  matrix:
-    - law
-    - medical
-    - provenance
-  backlinks:
-    - law
-    - medical
-    - provenance
 signatures:
-  computationUuid: "41be3aa4-b136-83f6-9976-a0714e6f7af9"
+  computationUuid: "53d71912-3283-815e-b3d3-e0ae92fe292a"
   stages:
     - stage: path
-      stageUuid: "ee588fb0-f65c-8a69-aa72-6e3543faf70d"
+      stageUuid: "d056ba78-565c-8b6d-89db-b2fbe8d5a700"
     - stage: trinity
-      stageUuid: "0966fb3a-706f-8681-aba4-afeb24c4ffdd"
+      stageUuid: "bc000d09-572c-8fd5-9e44-8af8246142e4"
     - stage: boundary
-      stageUuid: "8f09e209-a8ce-8430-a75f-c054fd329333"
+      stageUuid: "63c21a38-9501-88a5-83d5-0c1b20497899"
     - stage: links
-      stageUuid: "af0f19fa-b3b4-8501-8fdf-9fc29eb35199"
+      stageUuid: "ff187318-3e67-82ce-a55c-487122a6f8bb"
     - stage: horo
-      stageUuid: "93197af3-0ca6-81ae-8603-385b10dcd118"
+      stageUuid: "9569fdb2-f0a5-8b87-a114-8f3c1f654320"
     - stage: seal
-      stageUuid: "732ff5fd-daf0-87e9-a979-4b7a0287c2e0"
+      stageUuid: "bf2852c4-febb-83ef-91bc-331f1122f127"
     - stage: uuid
-      stageUuid: "da536bf1-b528-8014-a8e9-dcbde12a11e3"
+      stageUuid: "13a464a4-73e5-86ff-9553-8204ee3409d2"
 version: 2
 ---
 # cause

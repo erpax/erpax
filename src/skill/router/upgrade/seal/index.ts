@@ -107,19 +107,25 @@ export function renderFrontmatter(fm: ConnectedFrontmatter): string {
   L.push(`diamondUuid: ${yamlQuote(fm.diamondUuid)}`)
   if (fm.uuid) L.push(`uuid: ${yamlQuote(fm.uuid)}`)
   if (fm.horo !== null) L.push(`horo: ${fm.horo}`)
-  L.push('bonds:')
-  L.push(...renderYamlList('in', fm.bonds.in, '  '))
-  L.push(...renderYamlList('out', fm.bonds.out, '  '))
+  // The GRAPH is not stored. `bonds`, `neighbors.{wikilink,matrix,backlinks}` and
+  // `typography.neighbors` were 255,405 of 349,792 frontmatter lines — 73% — and they are
+  // WRITE-ONLY: computed from `uuid/matrix` by connectCorpus, written here, and never read back
+  // except by the drift check that compares them against themselves. VitePress does not use them
+  // either; its own comment says the page subgraph is injected by `transformPageData` "without any
+  // of it being stored in the file's frontmatter".
+  //
+  // Storing a derivation is what the one law forbids, and the corpus was paying three ways:
+  //   STALE   462 of 3,072 atoms carried a copy the matrix no longer agreed with
+  //   MEMORY  `skill:upgrade --verify` was KILLED at 14GB reading them — read-only, no writes
+  //   TRAVEL  353k lines moved to answer what one address answers (ftl: foldOps 1 vs 3,105 search)
+  //
+  // The scalars stay: `typography.partition` and `bondDegree` are single values, not a duplicated
+  // edge list, and nothing here established they are unread — dropping them would be a guess.
   L.push('typography:')
   L.push(`  partition: ${yamlQuote(fm.typography.partition)}`)
   L.push(`  bondDegree: ${fm.typography.bondDegree}`)
-  L.push(...renderYamlList('neighbors', fm.typography.neighbors, '  '))
   L.push(...renderYamlList('standards', fm.standards, ''))
   L.push(...renderYamlList('bindings', fm.bindings, ''))
-  L.push('neighbors:')
-  L.push(...renderYamlList('wikilink', fm.neighbors.wikilink, '  '))
-  L.push(...renderYamlList('matrix', fm.neighbors.matrix, '  '))
-  L.push(...renderYamlList('backlinks', fm.neighbors.backlinks, '  '))
   L.push(...renderSignatures(fm.signatures))
   L.push(`version: ${fm.version}`)
   L.push('---', '')

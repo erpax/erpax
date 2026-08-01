@@ -2,32 +2,14 @@
 name: refunds
 description: "Use when tracking the actual cash payment back to a customer for a credit memo — Stripe, ACH, SEPA, check or cash; ISO-20022 pacs.004 return, tokenised card data, GL journal entry, refund-approval SoD. The refunds collection."
 atomPath: "invoices/credit/memos/refunds"
-coordinate: "invoices/credit/memos/refunds · 5/round · f2627d54"
-contentUuid: "dbdd7733-8ab9-53e8-8dcc-298e21b335c0"
-diamondUuid: "b30cb2f7-798b-84a8-9697-40776e6ac807"
-uuid: "f2627d54-0277-8123-8b61-8f00ba4cfe10"
+coordinate: "invoices/credit/memos/refunds · 5/round · 6fba0856"
+contentUuid: "e407f205-d3fb-5ef4-aa1b-e26bbf45cfe2"
+diamondUuid: "b07e1fd7-81f8-896b-aee0-376e35b752f2"
+uuid: "6fba0856-7d16-8c28-a467-c03cd722bc17"
 horo: 5
-bonds:
-  in:
-    - access
-    - accounting
-    - entries
-    - invoices
-    - law
-    - memos
-    - orders
-  out:
-    - access
-    - accounting
-    - entries
-    - invoices
-    - law
-    - memos
-    - orders
 typography:
   partition: invoices
   bondDegree: 22
-  neighbors: []
 standards:
   - "IFRS IFRS-15 §B22 refund-liability-settlement"
   - "ISO-20022 pacs.004 payment-return"
@@ -41,33 +23,8 @@ standards:
   - "US-GAAP ASC-606-10-32-10 variable-consideration"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - accounting
-    - entries
-    - invoices
-    - law
-    - memos
-    - orders
-  matrix:
-    - access
-    - accounting
-    - entries
-    - invoices
-    - law
-    - memos
-    - orders
-  backlinks:
-    - access
-    - accounting
-    - entries
-    - invoices
-    - law
-    - memos
-    - orders
 signatures:
-  computationUuid: "e569e66f-44a3-8527-92c6-488f037a00a6"
+  computationUuid: "ef5bd710-2ca3-85f7-b34b-1e48a4317005"
   stages:
     - stage: path
       stageUuid: "b102a1cc-74f3-84f1-b992-73431a965887"
@@ -78,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "1a286aa0-42d7-84ab-8c05-372819be4ed6"
     - stage: horo
-      stageUuid: "14e6cefd-5d18-8bdb-b6d9-54f363a1001f"
+      stageUuid: "9b16d89d-aace-87fa-aea7-04ba78ac76ed"
     - stage: seal
       stageUuid: "1e1435da-6cf4-8211-a7e3-27f976534703"
     - stage: uuid
-      stageUuid: "c602ef8c-4938-84da-ac71-662788d9d807"
+      stageUuid: "071f82e4-4eb4-89ba-894a-e7a3e67ffb77"
 version: 2
 ---
 # refunds

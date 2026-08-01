@@ -1,173 +1,34 @@
 ---
 name: limit
 description: "Use when mapping the boundary of erpax — what it CAN do (the provable: addressable, balanced, conserved FORM) vs what it CANNOT do from within (truth, judgment, finality, true-erasure, prevention, the subjective — the Gödel boundary). The live finder is services/architecture-invariants; the hard limits are filled by proving the unprovable — supplying the missing 1/3 from OUTSIDE the formalism."
-atomPath: vocabulary/limit
-coordinate: limit · 4/weave · 63fa1f8e
-contentUuid: "162c9582-7134-5485-8cef-b34b87233f80"
-diamondUuid: "ae238795-69e4-846a-b5ba-a564c215b834"
-uuid: "63fa1f8e-b2a1-88b0-9491-b1028be8f359"
-horo: 4
-bonds:
-  in:
-    - angel
-    - auth
-    - balance
-    - barrier
-    - choice
-    - domain
-    - floor
-    - generate
-    - identity
-    - income
-    - law
-    - llm
-    - mcp
-    - merge
-    - overdraft
-    - price
-    - profane
-    - proof
-    - purchase
-    - recover
-    - sacred
-    - science
-    - scouting
-    - sequence
-    - society
-    - torus
-    - trinity
-    - uncertainty
-    - uuid
-  out:
-    - angel
-    - auth
-    - balance
-    - barrier
-    - choice
-    - domain
-    - floor
-    - generate
-    - identity
-    - income
-    - law
-    - llm
-    - mcp
-    - merge
-    - overdraft
-    - price
-    - profane
-    - proof
-    - purchase
-    - recover
-    - sacred
-    - science
-    - scouting
-    - sequence
-    - society
-    - torus
-    - trinity
-    - uncertainty
-    - uuid
+atomPath: "vocabulary/limit"
+coordinate: "vocabulary/limit · 5/round · b8148c80"
+contentUuid: "3ed5577a-b622-5fba-a9e2-0847e764fb47"
+diamondUuid: "f1bd7058-d68e-8037-a709-e76101aa6818"
+uuid: "b8148c80-bbda-87a0-b153-4bcd1e0f44dc"
+horo: 5
 typography:
-  partition: limit
+  partition: vocabulary
   bondDegree: 88
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - generate
-    - identity
-    - law
-    - merge
-    - profane
-    - proof
-    - recover
-    - sacred
-    - science
-    - sequence
-    - society
-    - torus
-    - trinity
-    - uuid
-  matrix:
-    - angel
-    - auth
-    - balance
-    - barrier
-    - choice
-    - domain
-    - floor
-    - generate
-    - identity
-    - income
-    - law
-    - llm
-    - mcp
-    - merge
-    - overdraft
-    - price
-    - profane
-    - proof
-    - purchase
-    - recover
-    - sacred
-    - science
-    - scouting
-    - sequence
-    - society
-    - torus
-    - trinity
-    - uncertainty
-    - uuid
-  backlinks:
-    - angel
-    - auth
-    - balance
-    - barrier
-    - choice
-    - domain
-    - floor
-    - generate
-    - identity
-    - income
-    - law
-    - llm
-    - mcp
-    - merge
-    - overdraft
-    - price
-    - profane
-    - proof
-    - purchase
-    - recover
-    - sacred
-    - science
-    - scouting
-    - sequence
-    - society
-    - torus
-    - trinity
-    - uncertainty
-    - uuid
 signatures:
-  computationUuid: "810079da-6e78-80f5-99c1-ad99ad39ff93"
+  computationUuid: "7411e3d2-ff4b-8e27-af38-756fd61d7b89"
   stages:
     - stage: path
-      stageUuid: "913fb214-1d6a-844e-ad8a-b93de248073a"
+      stageUuid: "cea28cd9-e99d-89e5-b774-aa44cc5dcab9"
     - stage: trinity
-      stageUuid: "20e3a1a7-6bd9-8bc7-88d6-db997cad8401"
+      stageUuid: "625725cd-ad0a-8162-bdf3-17515e3741d3"
     - stage: boundary
-      stageUuid: "86c0db34-c455-882c-bda1-29195dc53fd3"
+      stageUuid: "59dbc6d9-c4f2-8906-b132-cc904d09001d"
     - stage: links
-      stageUuid: "76f9cc28-ca42-8124-80ae-3085c8968e5c"
+      stageUuid: "81228d75-76cf-8b0f-ac82-4633613682fd"
     - stage: horo
-      stageUuid: "11cb2723-5894-86e4-8b25-d169bacca4a4"
+      stageUuid: "4fde29da-92df-8705-a2e3-7190fb8d8432"
     - stage: seal
-      stageUuid: "27cf8f75-5a54-83fb-8fe0-40dcdabe7a7e"
+      stageUuid: "8ce69114-3bb1-8aa1-afe0-96a18aad8515"
     - stage: uuid
-      stageUuid: "8f133917-8889-8ffe-94bf-f26550e8302b"
+      stageUuid: "a88afa39-fca6-8b47-9f6d-6fabd21bfba7"
 version: 2
 ---
 # limit — the boundary (what erpax cannot do), and how the unprovable is proved

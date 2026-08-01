@@ -2,63 +2,21 @@
 name: tenant
 description: "Use when resolving which tenants expose published content to anonymous callers — the TTL-cached lookup of tenant ids flagged `allowPublicRead = true`, minimizing D1 row-reads on cold anonymous paths."
 atomPath: "allow/public/read/tenant"
-coordinate: "allow/public/read/tenant · 7/descent · 89e32db7"
-contentUuid: "9c8f1db2-077c-562a-8591-6d27f602495f"
-diamondUuid: "130bfbf8-fd61-845a-984e-eef6505ab4d2"
-uuid: "89e32db7-0902-878b-8f9c-a3d35cc76a0d"
-horo: 7
-bonds:
-  in:
-    - balance
-    - law
-    - organization
-    - read
-    - research
-    - tenant
-    - tenants
-  out:
-    - balance
-    - law
-    - organization
-    - research
-    - tenant
-    - tenants
+coordinate: "allow/public/read/tenant · 5/round · 43703b82"
+contentUuid: "4c766519-c255-5888-8e03-923ea1b9bfad"
+diamondUuid: "99fbc213-65f7-826f-8405-14705e12ef14"
+uuid: "43703b82-a7b6-8d20-af6b-f5106f970593"
+horo: 5
 typography:
   partition: allow
   bondDegree: 30
-  neighbors: []
 standards:
   - "9110 §13 caching"
-  - "EU-2022/1925"
-  - "EU-2022/2065"
-  - "EU-2022/2554"
-  - "EU-2022/2555"
-  - "EU-2022/868"
   - "GDPR Art.5(1)(c) data-minimization"
   - "ISO/IEC-29119"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - law
-    - scope
-    - tenant
-  matrix:
-    - balance
-    - law
-    - organization
-    - research
-    - tenant
-    - tenants
-  backlinks:
-    - balance
-    - law
-    - organization
-    - research
-    - tenant
-    - tenants
 signatures:
-  computationUuid: "f5cb0991-370a-81af-a906-89493feffc69"
+  computationUuid: "10086bda-de03-8aff-8cd2-5ad3989162de"
   stages:
     - stage: path
       stageUuid: "ea980209-b26f-8e8b-be04-8138ba749348"
@@ -69,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "46fb0549-ab27-835d-9767-bba6fb02c15a"
     - stage: horo
-      stageUuid: "08f2d7fe-6e3b-89a8-97bd-22a3c44948ab"
+      stageUuid: "b2fe1fde-21f5-8b36-8219-9e3275686f0b"
     - stage: seal
       stageUuid: "9de6a2b2-87a2-8afa-8e86-4b1a7eb1796b"
     - stage: uuid
-      stageUuid: "fa7fffe7-ce2f-8741-b5e3-42d7042d8b5c"
+      stageUuid: "17b6b1d8-179f-8cee-9db5-8de1141328ef"
 version: 2
 ---
 # allow/public/read/tenant — public-read tenant id cache

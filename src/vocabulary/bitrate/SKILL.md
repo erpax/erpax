@@ -1,53 +1,35 @@
 ---
 name: bitrate
 description: Use when reasoning about bitrate — The bitrate of the media object.
-atomPath: vocabulary/bitrate
-coordinate: bitrate · 7/descent · ce3a90df
-contentUuid: "c2926970-bfc2-583c-8c6d-be47ff452003"
-diamondUuid: "7fc6391e-aaf3-8640-94e3-d99e1f93ebe3"
-uuid: "ce3a90df-15aa-8698-87cc-355da1004ac6"
-horo: 7
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/bitrate"
+coordinate: "vocabulary/bitrate · 2/share · 3fb55c2c"
+contentUuid: "2a37934d-7871-5d7c-9509-e6b0a0aba340"
+diamondUuid: "4096d86e-f568-86c2-ab5d-e234db869274"
+uuid: "3fb55c2c-1064-870c-8d13-e7511323b0ba"
+horo: 2
 typography:
-  partition: bitrate
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "f38716b8-03d1-8558-9a9b-6e6f82dd3c02"
+  computationUuid: "ff628019-a6c5-80b2-a24e-f03a4bead404"
   stages:
     - stage: path
-      stageUuid: "9bf06053-a680-8279-a7d0-c646e5ffde42"
+      stageUuid: "297c02b1-9a7e-804a-918e-01e51f4ad9a4"
     - stage: trinity
-      stageUuid: "7e4a4548-4431-8b85-a891-d94e8377f134"
+      stageUuid: "e6c8a301-ac8e-882e-b67f-e245e864d3cf"
     - stage: boundary
-      stageUuid: "ebe256ac-b7a0-8081-b403-67ff3fa1f56d"
+      stageUuid: "883fb209-57cd-8077-813c-9180c25450a9"
     - stage: links
-      stageUuid: "81df99e1-99be-830c-a623-9bf4d2066100"
+      stageUuid: "cd859663-92f2-8eed-a4fa-df1c51bff351"
     - stage: horo
-      stageUuid: "3e00def5-80d5-8904-8a98-5c4143a04bfe"
+      stageUuid: "495850af-da53-835b-942c-94973e19d829"
     - stage: seal
-      stageUuid: "824f6b6d-1902-8b1f-ad2b-52867baf162b"
+      stageUuid: "e828f28e-6577-8612-bf0b-4d285ca9b5df"
     - stage: uuid
-      stageUuid: "71d9b898-5830-885d-8434-b89500e47759"
+      stageUuid: "0f65bb5e-1635-8fca-a6c9-321f3caeb861"
 version: 2
 ---
 # bitrate

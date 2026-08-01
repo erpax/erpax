@@ -1,88 +1,35 @@
 ---
 name: production
 description: "Use when reasoning about production as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/production
-coordinate: production · 4/weave · 601aa0c9
-contentUuid: "ea827d7f-9be7-5937-9ee6-4c0044dd43da"
-diamondUuid: "831c96e6-f94d-8ae9-b262-a2627b525fff"
-uuid: "601aa0c9-5220-86e2-bde9-cbf387800044"
-horo: 4
-bonds:
-  in:
-    - album
-    - collapse
-    - company
-    - date
-    - law
-    - merge
-    - music
-    - sti
-    - type
-  out:
-    - album
-    - collapse
-    - company
-    - date
-    - law
-    - merge
-    - music
-    - sti
-    - type
+atomPath: "vocabulary/production"
+coordinate: "vocabulary/production · 2/share · 7ecbbb01"
+contentUuid: "8b344b3f-cc7f-5c19-8a72-c0db25977cf5"
+diamondUuid: "b1a56a0c-1c20-84a9-a150-062ce0f836d3"
+uuid: "7ecbbb01-2b2c-822e-8726-d40b3da05ca8"
+horo: 2
 typography:
-  partition: production
+  partition: vocabulary
   bondDegree: 30
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - album
-    - collapse
-    - company
-    - date
-    - law
-    - merge
-    - music
-    - sti
-    - type
-  matrix:
-    - album
-    - collapse
-    - company
-    - date
-    - law
-    - merge
-    - music
-    - sti
-    - type
-  backlinks:
-    - album
-    - collapse
-    - company
-    - date
-    - law
-    - merge
-    - music
-    - sti
-    - type
 signatures:
-  computationUuid: "5ac51175-4beb-896e-9b24-4d47a5c55e81"
+  computationUuid: "c58d205a-f7fc-81db-b924-96bc808ab72b"
   stages:
     - stage: path
-      stageUuid: "0adfc151-aef1-8a3e-b11f-189583e28a03"
+      stageUuid: "9a07009d-ae28-8a35-b4d6-312d03320535"
     - stage: trinity
-      stageUuid: "78b1bda2-db8e-849b-b8ae-b75090a16076"
+      stageUuid: "8da96c68-27f6-869d-984b-8909c03eea34"
     - stage: boundary
-      stageUuid: "44de62d2-e36c-8693-822f-b864dd8f5909"
+      stageUuid: "aa90c16d-e695-8637-8076-517e7a07346e"
     - stage: links
-      stageUuid: "7f7c9fba-b0d8-89a1-b5ec-0a235c706aa7"
+      stageUuid: "a05e0e96-cda5-855f-aa85-1c892f444c28"
     - stage: horo
-      stageUuid: "702d24ac-39df-82fb-abbe-425f8142513a"
+      stageUuid: "74aee1d9-5eaf-82fd-8040-71e67167a161"
     - stage: seal
-      stageUuid: "afb93cc9-68ee-8070-bcbf-bc0e6c70619a"
+      stageUuid: "9c83a2d2-8cb6-8d19-b806-633c2214fd14"
     - stage: uuid
-      stageUuid: "8848e9d4-2c7f-8a98-8279-bf0c0e5fb652"
+      stageUuid: "72573ae9-5083-8dee-aef2-e16ffc9dde67"
 version: 2
 ---
 # production

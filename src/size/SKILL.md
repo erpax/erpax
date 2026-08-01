@@ -2,97 +2,19 @@
 name: size
 description: "Use when reasoning about size — A standardized size of a product or creative work, specified either through a simple textual string (for example 'XL', '32Wx34L'), a QuantitativeValue with a unitCode, or a compreh"
 atomPath: size
-coordinate: size · 1/base · e29a6c7e
-contentUuid: "94cb2575-7456-52d6-b2a9-9dc91e41639c"
-diamondUuid: "b4ce7237-8944-84f4-8d23-698ba14c0518"
-uuid: "e29a6c7e-3095-88f4-b91f-48acc5edbfe2"
-horo: 1
-bonds:
-  in:
-    - collection
-    - content
-    - enumeration
-    - file
-    - floor
-    - frame
-    - group
-    - law
-    - party
-    - serving
-    - specification
-    - system
-    - video
-    - wearable
-  out:
-    - collection
-    - content
-    - enumeration
-    - file
-    - floor
-    - frame
-    - group
-    - law
-    - party
-    - serving
-    - specification
-    - system
-    - video
-    - wearable
+coordinate: "size · 7/descent · 6747bc03"
+contentUuid: "418bca5f-ecd8-59a4-8969-fe8323dce701"
+diamondUuid: "82cd07ad-8727-89b6-93e5-dc652d73b9e2"
+uuid: "6747bc03-0caf-841c-bbcf-26bde273b5a5"
+horo: 7
 typography:
   partition: size
-  bondDegree: 54
-  neighbors: []
+  bondDegree: 58
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collection
-    - content
-    - enumeration
-    - file
-    - floor
-    - frame
-    - group
-    - law
-    - party
-    - serving
-    - specification
-    - system
-    - video
-    - wearable
-  matrix:
-    - collection
-    - content
-    - enumeration
-    - file
-    - floor
-    - frame
-    - group
-    - law
-    - party
-    - serving
-    - specification
-    - system
-    - video
-    - wearable
-  backlinks:
-    - collection
-    - content
-    - enumeration
-    - file
-    - floor
-    - frame
-    - group
-    - law
-    - party
-    - serving
-    - specification
-    - system
-    - video
-    - wearable
 signatures:
-  computationUuid: "814e889a-2198-8d32-9e19-a53a289d1b6e"
+  computationUuid: "099fc1cb-6bc8-8035-8a7e-36cc3d5b6d44"
   stages:
     - stage: path
       stageUuid: "8eb42bb2-c568-8662-a0eb-9d03ef50383a"
@@ -103,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5a17d84f-5954-8c28-917e-4f50d3fa331c"
     - stage: horo
-      stageUuid: "2a8408e7-3d72-8b97-b365-d08e59ae7fcc"
+      stageUuid: "64039303-0d42-8b57-b27e-a6aee164f073"
     - stage: seal
-      stageUuid: "e616a4fb-b927-8a41-a8a0-a7d50783de65"
+      stageUuid: "7cbbc868-377c-82e7-8821-52c045200a9e"
     - stage: uuid
-      stageUuid: "5c7abd43-1f12-8f97-90a9-4e309847fd02"
+      stageUuid: "a3464292-ec3e-8381-af7c-0bb38fb5baaf"
 version: 2
 ---
 # size

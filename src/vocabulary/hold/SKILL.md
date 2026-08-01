@@ -1,63 +1,35 @@
 ---
 name: hold
 description: "Use when reasoning about hold as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/hold
-coordinate: hold · 5/round · c015b49e
-contentUuid: "8595b76f-0d52-590c-9ea5-fac4dff8505f"
-diamondUuid: "660f0e52-0dfb-8830-b8d0-7129190c2be8"
-uuid: "c015b49e-b2f5-855f-ab29-f9088b252565"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/hold"
+coordinate: "vocabulary/hold · 7/descent · b55d6ca0"
+contentUuid: "5dc64168-c773-5a7b-a8fd-f37562b08b9f"
+diamondUuid: "8ad90c96-f273-83c2-bea0-01d3e122e4d7"
+uuid: "b55d6ca0-d2fb-888f-9ef0-b26a81cd83bf"
+horo: 7
 typography:
-  partition: hold
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "a2f43500-c31a-84c4-adef-ca2fed8f82d6"
+  computationUuid: "638965e5-ff80-8259-a7e5-af834d0b0ceb"
   stages:
     - stage: path
-      stageUuid: "4002bb77-e125-8231-a6d7-cd0509180d62"
+      stageUuid: "9e55183f-1432-8131-8c00-822697d54256"
     - stage: trinity
-      stageUuid: "2bb4afd9-294a-899c-91bc-d2b32847a861"
+      stageUuid: "bf45c526-37a0-82e8-8d70-a834c42e5ac6"
     - stage: boundary
-      stageUuid: "5ebb7155-fe7d-89a9-aa63-2199cd8107bf"
+      stageUuid: "197627cb-c9af-82e4-87df-2d368cd113cb"
     - stage: links
-      stageUuid: "a3b5fd33-2433-818e-b27b-28f6c3ec753e"
+      stageUuid: "08b00ac1-1d0a-8034-88df-5167ec3d9b71"
     - stage: horo
-      stageUuid: "85a80894-3266-88a5-8c9b-0e638b0ecc36"
+      stageUuid: "d27d51bc-556f-840e-921c-0f4aa6948290"
     - stage: seal
-      stageUuid: "b8473269-89cb-8dad-a922-ab3e59a48430"
+      stageUuid: "14665f16-2713-87b0-8693-7c230d5a7909"
     - stage: uuid
-      stageUuid: "4327f962-1c99-8765-bd0f-0dd3aea83dfa"
+      stageUuid: "dd861214-7d17-8557-890f-b471fbbed766"
 version: 2
 ---
 # hold

@@ -1,73 +1,35 @@
 ---
 name: building
 description: "Use when reasoning about building as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/building
-coordinate: building · 2/share · 5ade275e
-contentUuid: "b845eff5-33c3-5e70-a1cc-cb65b2f36d8e"
-diamondUuid: "1c3bf2d3-c729-81a6-b1f8-5743089afdf8"
-uuid: "5ade275e-886b-86cf-8dd9-553a182dc00a"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - government
-    - law
-    - legislative
-    - merge
-    - sti
-  out:
-    - collapse
-    - government
-    - law
-    - legislative
-    - merge
-    - sti
+atomPath: "vocabulary/building"
+coordinate: "vocabulary/building · 4/weave · aad97698"
+contentUuid: "b87aeee0-2a39-5472-8cf8-74470c0720b5"
+diamondUuid: "55fd83d1-157d-8241-8f1b-e9e6607531da"
+uuid: "aad97698-1f04-86b1-a64f-2eac0db3b11b"
+horo: 4
 typography:
-  partition: building
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - government
-    - law
-    - legislative
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - government
-    - law
-    - legislative
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - government
-    - law
-    - legislative
-    - merge
-    - sti
 signatures:
-  computationUuid: "f9e4820e-1063-8abe-b50f-f65205543a66"
+  computationUuid: "b957b603-e9bd-8c85-a95e-8dee42761ae6"
   stages:
     - stage: path
-      stageUuid: "8a7db377-aa5a-81c8-9488-c415e2e5f3be"
+      stageUuid: "e3e50b7c-4475-8dda-855e-f6d344ffd1e6"
     - stage: trinity
-      stageUuid: "84c9ac88-cd4a-800d-b2ea-dd1f323c4bcb"
+      stageUuid: "64b66428-b6a5-8a79-a46e-07ab0b5866cd"
     - stage: boundary
-      stageUuid: "4c142258-7dcb-86f1-9538-37690d1cfe2b"
+      stageUuid: "e946f36c-09f3-8cfa-b013-e3dc4a9097f8"
     - stage: links
-      stageUuid: "fea2cc34-0e85-89c5-a50f-116baa6bf512"
+      stageUuid: "492d2d22-f5f7-8414-bfd6-cd28abc81954"
     - stage: horo
-      stageUuid: "0f8fd519-b2c7-8a3c-badf-739eaf9c8c92"
+      stageUuid: "e1d0e035-928c-8a81-95a1-3c2304d1ede7"
     - stage: seal
-      stageUuid: "1a20e61b-0a70-8a04-980b-2d2d06f46709"
+      stageUuid: "21bbee8d-474b-8aa2-b060-c418e4bcf59f"
     - stage: uuid
-      stageUuid: "d0599f9e-7c88-80bf-864d-18425fdf504f"
+      stageUuid: "85f932f4-7c1c-8884-8283-b01869972e6c"
 version: 2
 ---
 # building

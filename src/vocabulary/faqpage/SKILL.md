@@ -1,63 +1,35 @@
 ---
 name: faqpage
 description: "Use when reasoning about faqpage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/faqpage
-coordinate: faqpage · 1/base · 6f664b50
-contentUuid: "aae0a947-bc8d-5e4b-83de-28e2f231ecc8"
-diamondUuid: "b9e9d992-c585-86d4-97bd-650f3c14130c"
-uuid: "6f664b50-52dd-88d7-91d8-38cc92ef3882"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/faqpage"
+coordinate: "vocabulary/faqpage · 5/round · 8cbd5471"
+contentUuid: "688ffc0a-87d5-56da-8c95-199bd04d522c"
+diamondUuid: "4fb72b1f-89eb-8a09-965f-23bfc2edf399"
+uuid: "8cbd5471-03fe-89d2-b014-28eea6011ab6"
+horo: 5
 typography:
-  partition: faqpage
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "43aed34c-58c7-8fa2-9f3d-521b2dee5b51"
+  computationUuid: "e4297037-2bea-8b9e-9d8e-98031fb90045"
   stages:
     - stage: path
-      stageUuid: "b777241c-f82c-8b64-931a-39795de60444"
+      stageUuid: "a0b20265-17bd-83eb-9a7f-0eaf499d4c8a"
     - stage: trinity
-      stageUuid: "faad9a26-3a0a-8dd6-bd3b-48a09e9fce1f"
+      stageUuid: "a2c9ea0a-24de-88ff-a537-3682567fbe67"
     - stage: boundary
-      stageUuid: "e7d9a2a4-1111-895c-b322-7836d7ed26f5"
+      stageUuid: "da1eab1a-37d1-85f2-bdcf-eba91798aaa4"
     - stage: links
-      stageUuid: "5100ff35-650f-8667-8aa2-8f221604d68b"
+      stageUuid: "057b86b2-ceff-8b67-8826-016406f472ab"
     - stage: horo
-      stageUuid: "00daa5d0-99dc-8156-be1a-8b4bdf19e2ab"
+      stageUuid: "8af1209a-54af-8bd2-bfea-7c3421eefd15"
     - stage: seal
-      stageUuid: "4526145e-0d09-81ff-b96d-2605a61dcf4a"
+      stageUuid: "47988517-a5d9-83af-818c-f5d47a902bdd"
     - stage: uuid
-      stageUuid: "835c6fa3-bd21-8952-80b7-5368931e10ac"
+      stageUuid: "3cc40a17-3d80-8c03-a236-e34516e51da7"
 version: 2
 ---
 # faqpage

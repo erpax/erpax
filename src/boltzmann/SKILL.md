@@ -2,91 +2,34 @@
 name: boltzmann
 description: "Use when reasoning about entropy as microstate-counting — Boltzmann's S = k·ln W: the entropy of a macrostate is the log of W, the number of microstates that look the same (W=1 ⇒ S=0). It is extensive (independent systems' entropies add, since ln turns product into sum) and its Gibbs form S = −k·Σ pᵢ ln pᵢ is maximised, equal to k·ln W, exactly when uniform. The microstate foundation under erpax's reciprocity-entropy; DRY collapse removes configurations so entropy falls."
 atomPath: boltzmann
-coordinate: "boltzmann · 4/weave · a5544113"
-contentUuid: "626b57ab-0626-528d-b4c3-97309472426b"
-diamondUuid: "24acfe1d-0958-8451-a085-e2ff59111e21"
-uuid: "a5544113-c22e-8a1b-b9e7-a224f5dd4b5f"
+coordinate: "boltzmann · 4/weave · 2c0a68c9"
+contentUuid: "e06f3570-372a-558a-be9f-a14fee279324"
+diamondUuid: "e8a03553-8c8e-8ec3-9810-ae10fbc866da"
+uuid: "2c0a68c9-8304-8afb-9b90-4b3783088bec"
 horo: 4
-bonds:
-  in:
-    - balance
-    - collapse
-    - entropy
-    - equilibrium
-    - gravity
-    - harmony
-    - law
-    - rodin
-    - shannon
-    - temperature
-  out:
-    - balance
-    - collapse
-    - entropy
-    - equilibrium
-    - gravity
-    - harmony
-    - law
-    - rodin
-    - shannon
-    - temperature
 typography:
   partition: boltzmann
   bondDegree: 32
-  neighbors: []
 standards:
   - "SI-2019 exact: k_B = 1.380649e-23 J/K"
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - collapse
-    - entropy
-    - equilibrium
-    - gravity
-    - harmony
-    - law
-    - rodin
-    - temperature
-  matrix:
-    - balance
-    - collapse
-    - entropy
-    - equilibrium
-    - gravity
-    - harmony
-    - law
-    - rodin
-    - shannon
-    - temperature
-  backlinks:
-    - balance
-    - collapse
-    - entropy
-    - equilibrium
-    - gravity
-    - harmony
-    - law
-    - rodin
-    - shannon
-    - temperature
 signatures:
-  computationUuid: "2388e5e0-72a0-85de-81b5-e3d6917dec91"
+  computationUuid: "fba7d09c-0c96-8511-a1bb-fdc2466ff04d"
   stages:
     - stage: path
       stageUuid: "06a804a4-3a98-8118-8517-82dc58d6d677"
     - stage: trinity
       stageUuid: "bb29771b-958c-8fdc-a2a0-df96d54bb8ca"
     - stage: boundary
-      stageUuid: "3272ca48-f8dd-8410-bc88-cb2ca18ed1d6"
+      stageUuid: "7fc8180f-453b-8514-b463-f793c3241a1d"
     - stage: links
       stageUuid: "9be5f7d9-0225-8c45-8101-8ec2a518415f"
     - stage: horo
-      stageUuid: "ff5a56d2-f15e-84f9-a948-0dcd116b626d"
+      stageUuid: "16e3d346-8c5e-830b-a7bb-0157034e39e8"
     - stage: seal
       stageUuid: "a4d02196-2866-8942-b8e2-e03eae7187f0"
     - stage: uuid
-      stageUuid: "2478d2fc-4c48-8943-b45e-ffc12644e659"
+      stageUuid: "533d5ce3-8d8d-8c2d-b617-d6ebfb7c65c9"
 version: 2
 ---
 # boltzmann — entropy is counting (S = k·ln W)

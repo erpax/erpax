@@ -1,158 +1,34 @@
 ---
 name: paganism
 description: "Use when reading paganism as a diamond of invariant atoms — the many gods as many names of the cycles and powers of nature, the wheel of the year, the sacred in sun and soil and season. The polytheist many-as-one: the many names resolve to one root. Covers the historic and revived nature-religions (Hellenic, Norse, Celtic, Wicca, druidry) as one principled umbrella."
-atomPath: vocabulary/paganism
-coordinate: paganism · 5/round · d315f640
-contentUuid: "a1650728-faa4-5116-b071-31eb11e1b72d"
-diamondUuid: "8715a551-520f-8a00-8f13-c3af777769cb"
-uuid: "d315f640-c0b7-81c6-af44-cf7050ad235f"
-horo: 5
-bonds:
-  in:
-    - archangel
-    - balance
-    - cycle
-    - diamond
-    - fire
-    - fractal
-    - gift
-    - holographic
-    - identity
-    - law
-    - merge
-    - name
-    - one
-    - part
-    - religion
-    - ritual
-    - sacred
-    - society
-    - translator
-    - uuid
-    - water
-    - wheel
-    - whole
-  out:
-    - archangel
-    - balance
-    - cycle
-    - diamond
-    - fire
-    - fractal
-    - gift
-    - holographic
-    - identity
-    - law
-    - merge
-    - name
-    - one
-    - part
-    - religion
-    - ritual
-    - sacred
-    - society
-    - translator
-    - uuid
-    - water
-    - wheel
-    - whole
+atomPath: "vocabulary/paganism"
+coordinate: "vocabulary/paganism · 4/weave · 2be567a2"
+contentUuid: "7dd5a0ad-e9b4-5b79-81ea-bdb8bb591f23"
+diamondUuid: "31be9bd1-2dd8-8344-9029-4f88a86f9775"
+uuid: "2be567a2-42e4-8841-9fbf-cf6dc6bb4063"
+horo: 4
 typography:
-  partition: paganism
+  partition: vocabulary
   bondDegree: 71
-  neighbors:
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - archangel
-    - balance
-    - cycle
-    - diamond
-    - fire
-    - fractal
-    - gift
-    - holographic
-    - identity
-    - law
-    - merge
-    - name
-    - one
-    - part
-    - religion
-    - ritual
-    - sacred
-    - society
-    - translator
-    - uuid
-    - water
-    - wheel
-    - whole
-  matrix:
-    - archangel
-    - balance
-    - cycle
-    - diamond
-    - fire
-    - fractal
-    - gift
-    - holographic
-    - identity
-    - law
-    - merge
-    - name
-    - one
-    - part
-    - religion
-    - ritual
-    - sacred
-    - society
-    - translator
-    - uuid
-    - water
-    - wheel
-    - whole
-  backlinks:
-    - archangel
-    - balance
-    - cycle
-    - diamond
-    - fire
-    - fractal
-    - gift
-    - holographic
-    - identity
-    - law
-    - merge
-    - name
-    - one
-    - part
-    - religion
-    - ritual
-    - sacred
-    - society
-    - translator
-    - uuid
-    - water
-    - wheel
-    - whole
 signatures:
-  computationUuid: "3a9e7000-00f6-846d-8eda-04fc544e5e9c"
+  computationUuid: "31addd6e-ba40-8f72-9373-6b7696faedfb"
   stages:
     - stage: path
-      stageUuid: "29a21ae9-4eb8-8176-8b96-3fae978ab4c6"
+      stageUuid: "da7a19b0-49a3-88ab-ba45-de059c609fa1"
     - stage: trinity
-      stageUuid: "27041d62-5e61-8a8d-9ebf-5fc5e35c5347"
+      stageUuid: "1d5b9d08-f3a3-8a94-8718-613f706da8ad"
     - stage: boundary
-      stageUuid: "b1717d95-9c43-8763-9ce3-04c40eade153"
+      stageUuid: "eb4ac6c9-9300-8e40-9825-ebce1eba5bca"
     - stage: links
-      stageUuid: "efe1820a-940f-846d-a26f-071776b309c3"
+      stageUuid: "31820ebd-f338-8f42-bf1c-525cd033eacd"
     - stage: horo
-      stageUuid: "d5860ef4-765d-846e-9870-6154a6157221"
+      stageUuid: "a8c7107d-636e-812f-8456-3d3233232617"
     - stage: seal
-      stageUuid: "c28b287e-c2f5-839e-8284-29ffc59fe52a"
+      stageUuid: "bcd42467-cfb2-86cd-8091-b0c1238251aa"
     - stage: uuid
-      stageUuid: "2e74b669-a193-8e29-a84d-f745ae0cf6bc"
+      stageUuid: "c30d3729-4b58-8360-a10e-042b8d8d2989"
 version: 2
 ---
 # paganism — the many names of the turning world

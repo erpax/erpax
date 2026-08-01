@@ -1,68 +1,35 @@
 ---
 name: extent
 description: "Use when reasoning about extent as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/extent
-coordinate: extent · 2/share · a81c6ea6
-contentUuid: "6f1f275b-e3de-5572-a586-25b06a96dd9e"
-diamondUuid: "c1efef63-6f93-8633-bd41-75d063a84752"
-uuid: "a81c6ea6-e785-8466-8f40-8a475dca0026"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - material
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - material
-    - merge
-    - sti
+atomPath: "vocabulary/extent"
+coordinate: "vocabulary/extent · 1/base · d8ae363e"
+contentUuid: "d1b365b0-b406-5cc9-a83e-ed5a164bc39b"
+diamondUuid: "2ea1c253-0ea8-824d-9e6c-796ef5c9cda3"
+uuid: "d8ae363e-6198-8cf7-9ba2-4adfb154001d"
+horo: 1
 typography:
-  partition: extent
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - material
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - material
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - material
-    - merge
-    - sti
 signatures:
-  computationUuid: "c7b1a0ea-0da5-89b3-a199-575516730ea8"
+  computationUuid: "842d7e55-4ed2-833a-adb5-06bc9a0f24ff"
   stages:
     - stage: path
-      stageUuid: "c1c00494-efd5-84ec-b29b-cbc3a4660053"
+      stageUuid: "b87ce099-d28c-80c4-8dfc-24ec95525ac6"
     - stage: trinity
-      stageUuid: "266b608a-1c65-81db-b851-359bab37d796"
+      stageUuid: "77430d20-824a-81c1-a829-13c9f1f3be8b"
     - stage: boundary
-      stageUuid: "32530638-7528-869b-983d-839f2c03c07d"
+      stageUuid: "2a723172-9ebe-82ab-acb3-01f09eb37ba6"
     - stage: links
-      stageUuid: "94db2187-a484-887c-ac05-e18dd5090cfc"
+      stageUuid: "06c9e3df-390f-8505-bc5f-2c10dc3332f2"
     - stage: horo
-      stageUuid: "0f81fc5f-c034-84e4-80ac-49ccbf0ba155"
+      stageUuid: "e0927494-9ec0-8ddf-8c19-8269a9b1497e"
     - stage: seal
-      stageUuid: "d85ac4da-257c-8b76-b6c6-8f29cf90c952"
+      stageUuid: "565a1cb7-701a-887e-9472-4da7f88a0a57"
     - stage: uuid
-      stageUuid: "768dc423-9711-8f39-9619-77cb7f6984b1"
+      stageUuid: "5e2cb5f2-abe2-8126-9f5e-435a731d6e60"
 version: 2
 ---
 # extent

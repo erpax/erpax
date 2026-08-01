@@ -2,52 +2,19 @@
 name: route
 description: "Use when reasoning about route as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: route
-coordinate: route · 5/round · 38a92913
-contentUuid: "f889b593-c647-58c6-8e18-40ff10b0b0ad"
-diamondUuid: "0ef85ef4-16cf-819f-8b3b-3494b37e26ff"
-uuid: "38a92913-13f7-88da-a6fa-493aef14cd87"
+coordinate: "route · 5/round · 8edd7948"
+contentUuid: "69663527-3440-5e13-bc12-9b9215f27d25"
+diamondUuid: "e9d3f951-8b89-8ec6-b7e3-b29ef50ab398"
+uuid: "8edd7948-b3db-8711-9255-585c7a844375"
 horo: 5
-bonds:
-  in:
-    - administration
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - administration
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
   partition: route
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - administration
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - administration
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - administration
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "531c711f-06c5-8850-90c0-daaff22d3e33"
+  computationUuid: "110023a4-8d8e-8678-8f5b-fc1b4e84637c"
   stages:
     - stage: path
       stageUuid: "ff9a9573-22aa-8cd6-8017-fd7bf1c21f3a"
@@ -58,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e8858b09-febd-88d0-a412-e01a98d014c9"
     - stage: horo
-      stageUuid: "cfc164e1-78fd-86ab-a5a1-06a0698628db"
+      stageUuid: "692df909-a6d0-878c-9fba-e209c465f6c4"
     - stage: seal
-      stageUuid: "0574b32d-a0ab-851a-8e03-ef07380eb717"
+      stageUuid: "3a1798c1-3f97-8005-bc78-2780b9676076"
     - stage: uuid
-      stageUuid: "8fc23146-cb31-840d-ba63-62131d5ff423"
+      stageUuid: "3b351367-38ab-8f87-ac18-f869af231de8"
 version: 2
 ---
 # route

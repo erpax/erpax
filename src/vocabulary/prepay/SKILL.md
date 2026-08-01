@@ -1,63 +1,35 @@
 ---
 name: prepay
 description: "Use when reasoning about prepay as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/prepay
-coordinate: prepay · 5/round · 111b4e67
-contentUuid: "b4306235-a72c-57da-a587-c6e269a10ed4"
-diamondUuid: "74608acd-a22b-8a34-821d-c75cf5084d87"
-uuid: "111b4e67-7907-83ff-91b9-61122957a447"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/prepay"
+coordinate: "vocabulary/prepay · 4/weave · 08e8d4da"
+contentUuid: "4c4e6c4c-5361-5a76-a2c1-81a15d0a77c4"
+diamondUuid: "0d34293d-5f7d-8d88-a0b9-b743c64d64d1"
+uuid: "08e8d4da-2f31-83ad-87c7-bb88fe25a707"
+horo: 4
 typography:
-  partition: prepay
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "b1eeacc4-fb72-869b-a112-6198a6dca79e"
+  computationUuid: "5f2d9d1e-e6ed-84a6-8905-cb7ccd37e301"
   stages:
     - stage: path
-      stageUuid: "34ca9442-a471-8727-9912-e8b2c8a83369"
+      stageUuid: "15c2013e-7f2d-820d-8daf-a8f7d9cc35c3"
     - stage: trinity
-      stageUuid: "4b6afb78-02b3-8ada-8c7f-50f5304c22dc"
+      stageUuid: "512dc18c-e008-87e0-8e8f-42b4341b745a"
     - stage: boundary
-      stageUuid: "a49678e4-6306-8c09-b573-f87d302e438e"
+      stageUuid: "fc1d0600-2b81-8055-81e6-bd4b0935da20"
     - stage: links
-      stageUuid: "627dc30a-3e1a-8517-83d8-544f9817dd48"
+      stageUuid: "22ad8e28-689e-8a58-865c-7043d1602067"
     - stage: horo
-      stageUuid: "88764c79-5d90-80b0-9920-3aa8bc625237"
+      stageUuid: "4f73eb91-4de0-85f7-90f9-ea1ab4c0b91a"
     - stage: seal
-      stageUuid: "a93d0dfe-e5fc-89d6-99a7-74b552abc888"
+      stageUuid: "a915168b-92d5-82a4-9196-461467aa79a6"
     - stage: uuid
-      stageUuid: "8466f183-b47c-893b-8e0d-2c7f8aecea25"
+      stageUuid: "ee23197f-095c-886f-be66-cfd0bc7b5622"
 version: 2
 ---
 # prepay

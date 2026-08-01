@@ -1,53 +1,35 @@
 ---
 name: recording
 description: Use when reasoning about recording — The composition this track is a recording of.
-atomPath: vocabulary/recording
-coordinate: recording · 5/round · d23e8cad
-contentUuid: "a17b699b-8a7c-5cde-8af3-aa3015955d70"
-diamondUuid: "4911f57f-1983-8691-bfcf-de444d1be01a"
-uuid: "d23e8cad-48c7-868b-916b-a235bc6061c2"
-horo: 5
-bonds:
-  in:
-    - law
-    - music
-  out:
-    - law
-    - music
+atomPath: "vocabulary/recording"
+coordinate: "vocabulary/recording · 2/share · a8eb1d67"
+contentUuid: "f715c92c-2d53-56a4-ac8e-bd11a5d252e6"
+diamondUuid: "104ea14a-d794-8ed8-95f0-41f716a14b7c"
+uuid: "a8eb1d67-177c-82af-92e9-ef5318677456"
+horo: 2
 typography:
-  partition: recording
+  partition: vocabulary
   bondDegree: 7
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - music
-  matrix:
-    - law
-    - music
-  backlinks:
-    - law
-    - music
 signatures:
-  computationUuid: "1874e947-68fe-81c7-876b-b9600443e018"
+  computationUuid: "c5c53899-f31b-8df5-8d20-a851b5769369"
   stages:
     - stage: path
-      stageUuid: "33883858-35c8-8708-83db-4fa36adf7492"
+      stageUuid: "ed0bf543-875a-8100-825d-d66b45de7681"
     - stage: trinity
-      stageUuid: "84868120-6343-83c2-880c-b390e46e1a7b"
+      stageUuid: "14749235-a051-8178-bc9a-e9796b1c3285"
     - stage: boundary
-      stageUuid: "fb296858-3ed7-8ee6-9c5b-c1f0e3744efb"
+      stageUuid: "98951d87-5875-8361-acd7-4570fa5d43c8"
     - stage: links
-      stageUuid: "3284b55a-e091-8932-8572-d783507ed6d2"
+      stageUuid: "676038b0-3ed3-87c4-bc54-29515eb788b6"
     - stage: horo
-      stageUuid: "37e1fa58-c2ed-89c8-8945-9d8a6d5acef2"
+      stageUuid: "5b1081ad-79d7-8da5-84b0-763bf4457ba4"
     - stage: seal
-      stageUuid: "1b105281-2af5-842c-9c2a-ea338a0d1847"
+      stageUuid: "99f3ade8-bedb-81f6-b1b0-658135a6ace5"
     - stage: uuid
-      stageUuid: "068a21b0-bec5-8506-bc09-9d5701040d63"
+      stageUuid: "12925d60-7fa7-8939-b103-1d1a3fcb3822"
 version: 2
 ---
 # recording

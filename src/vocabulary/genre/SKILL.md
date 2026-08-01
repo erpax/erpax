@@ -1,53 +1,35 @@
 ---
 name: genre
 description: "Use when reasoning about genre — Genre of the creative work, broadcast channel or group."
-atomPath: vocabulary/genre
-coordinate: genre · 1/base · baa54634
-contentUuid: "985ff73b-7178-5ec8-971b-fa239992ca80"
-diamondUuid: "e7bf7d04-ffe3-80c7-899b-060011ef651b"
-uuid: "baa54634-c8f7-8eb5-9302-4e5b52704dbe"
-horo: 1
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/genre"
+coordinate: "vocabulary/genre · 7/descent · 1c1ec44d"
+contentUuid: "ee32e508-5dd1-5da6-8e5d-ca353ee17f6a"
+diamondUuid: "23741bd6-06eb-82a4-872d-64ba56cf00e4"
+uuid: "1c1ec44d-593e-81ff-86e3-8d35c45b1c1a"
+horo: 7
 typography:
-  partition: genre
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "b9773cc3-6be1-8f9c-93a8-7119e1dea854"
+  computationUuid: "b58364dc-3b68-84b0-90e1-4bf85206abc3"
   stages:
     - stage: path
-      stageUuid: "b3f19a78-dfc1-8b2d-920f-e8af03062796"
+      stageUuid: "5b0f3006-c439-82cf-881e-e2faf5259a8a"
     - stage: trinity
-      stageUuid: "fa05d8e9-c5d7-846f-87ac-0ce8a62e12d5"
+      stageUuid: "85687566-9e30-81ce-9d14-83bbb3097d1d"
     - stage: boundary
-      stageUuid: "73a194df-a81d-813a-83da-c5c3825e84e6"
+      stageUuid: "c4751e6a-6202-8e78-a242-d7b40de0c57c"
     - stage: links
-      stageUuid: "ca8d5b81-6823-8764-a196-20eccebaa2a2"
+      stageUuid: "32978327-8174-830a-9a91-9cff72570b5f"
     - stage: horo
-      stageUuid: "e68f7069-03ee-83b2-bc22-8939cd34ece8"
+      stageUuid: "fabf9bd6-322b-8155-8076-5f5dce4e4579"
     - stage: seal
-      stageUuid: "91a6fae5-2a14-8016-b795-c0f44899d13c"
+      stageUuid: "18afe8e7-a917-8e70-a101-0f36b3c3b91d"
     - stage: uuid
-      stageUuid: "15e4f89c-535e-8b8b-ba88-8ab5927fa13e"
+      stageUuid: "7cd6b954-129a-8613-8565-098b7319a7a0"
 version: 2
 ---
 # genre

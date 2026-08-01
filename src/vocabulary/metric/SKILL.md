@@ -1,95 +1,34 @@
 ---
 name: metric
 description: "Use when recording a periodic quantitative observation — daily/weekly/monthly snapshot of performance (headcount, utilization %, defect rate, cost-per-unit, customer-satisfaction score). The data point."
-atomPath: vocabulary/metric
-coordinate: metric · 4/weave · d57f987a
-contentUuid: "9ff9131a-6f87-593a-b0da-30ef35932b01"
-diamondUuid: "2be35d0b-f604-84af-a6dd-3f47c051eb3f"
-uuid: "d57f987a-16a7-868c-8106-e83032e047a3"
-horo: 4
-bonds:
-  in:
-    - attrition
-    - breed
-    - defect
-    - distribution
-    - kpi
-    - law
-    - measure
-    - observability
-    - outlier
-    - sampling
-    - schedule
-    - trend
-  out:
-    - attrition
-    - breed
-    - defect
-    - distribution
-    - kpi
-    - law
-    - measure
-    - observability
-    - outlier
-    - sampling
-    - schedule
-    - trend
+atomPath: "vocabulary/metric"
+coordinate: "vocabulary/metric · 7/descent · c14628c6"
+contentUuid: "ebdc2d92-d20a-5744-9606-9c679eedc57c"
+diamondUuid: "583aee68-bee1-8663-854f-aa49a8eabf22"
+uuid: "c14628c6-a8e7-88c8-b79d-daad4ea5a1db"
+horo: 7
 typography:
-  partition: metric
-  bondDegree: 37
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 56
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - defect
-    - kpi
-    - law
-    - measure
-    - schedule
-  matrix:
-    - attrition
-    - breed
-    - defect
-    - distribution
-    - kpi
-    - law
-    - measure
-    - observability
-    - outlier
-    - sampling
-    - schedule
-    - trend
-  backlinks:
-    - attrition
-    - breed
-    - defect
-    - distribution
-    - kpi
-    - law
-    - measure
-    - observability
-    - outlier
-    - sampling
-    - schedule
-    - trend
 signatures:
-  computationUuid: "427e3f21-41f3-811d-9ebe-19839a7f8dcb"
+  computationUuid: "a252ed75-c863-8570-8b74-c0ba514f38b0"
   stages:
     - stage: path
-      stageUuid: "82395992-1936-8e81-8480-d47406fc8974"
+      stageUuid: "c910d55b-72c8-8019-a887-862f5f746d1b"
     - stage: trinity
-      stageUuid: "03439098-babc-85df-bc72-58f40f980fe5"
+      stageUuid: "690f0bc3-9d1d-872d-b230-240b6e9cf04c"
     - stage: boundary
-      stageUuid: "792437b1-536b-8591-a893-9e1a77bcc6a4"
+      stageUuid: "bf127a26-f084-8871-b7cc-96b9d494ae24"
     - stage: links
-      stageUuid: "13fd8a66-507b-8beb-8c1a-fe918e553af8"
+      stageUuid: "5f36684c-e643-84eb-bfa5-dca4a78fe6f9"
     - stage: horo
-      stageUuid: "9642c91c-63c0-841e-8a61-00e7e36b8330"
+      stageUuid: "f7eeea68-c8b9-8da3-9235-df6f89e994fb"
     - stage: seal
-      stageUuid: "4698dc3d-611d-87a4-86dd-4a829ddbb829"
+      stageUuid: "f5e195d8-5fd1-8234-82c8-839612b6d45e"
     - stage: uuid
-      stageUuid: "c0c39d69-1487-8286-9c84-f2b69937f31e"
+      stageUuid: "fe1c060f-cb6b-83e0-96c3-0b011b099706"
 version: 2
 ---
 # metric

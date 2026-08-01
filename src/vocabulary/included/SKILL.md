@@ -1,118 +1,35 @@
 ---
 name: included
 description: "Use when reasoning about included as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/included
-coordinate: included · 4/weave · 953a3004
-contentUuid: "5b5db37e-51fc-58e9-b83a-4dbff259c0eb"
-diamondUuid: "2c096c33-4e22-81fe-a0b0-d5ca6bb866f4"
-uuid: "953a3004-f1b1-8abe-a084-b2b36c1b244f"
-horo: 4
-bonds:
-  in:
-    - added
-    - catalog
-    - collapse
-    - composition
-    - data
-    - factor
-    - health
-    - insurance
-    - law
-    - merge
-    - plan
-    - risk
-    - sti
-    - tax
-    - value
-  out:
-    - added
-    - catalog
-    - collapse
-    - composition
-    - data
-    - factor
-    - health
-    - insurance
-    - law
-    - merge
-    - plan
-    - risk
-    - sti
-    - tax
-    - value
+atomPath: "vocabulary/included"
+coordinate: "vocabulary/included · 7/descent · a3b6c1de"
+contentUuid: "7c503c00-f7b3-5508-ba76-fb722dba005b"
+diamondUuid: "3759cf62-732a-8592-977e-d32f93f6469f"
+uuid: "a3b6c1de-ac0e-8354-939f-eb015be83e70"
+horo: 7
 typography:
-  partition: included
-  bondDegree: 52
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 54
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - added
-    - catalog
-    - collapse
-    - composition
-    - data
-    - factor
-    - health
-    - insurance
-    - law
-    - merge
-    - plan
-    - risk
-    - sti
-    - tax
-    - value
-  matrix:
-    - added
-    - catalog
-    - collapse
-    - composition
-    - data
-    - factor
-    - health
-    - insurance
-    - law
-    - merge
-    - plan
-    - risk
-    - sti
-    - tax
-    - value
-  backlinks:
-    - added
-    - catalog
-    - collapse
-    - composition
-    - data
-    - factor
-    - health
-    - insurance
-    - law
-    - merge
-    - plan
-    - risk
-    - sti
-    - tax
-    - value
 signatures:
-  computationUuid: "6878425f-46bd-83dc-b021-ed29fb532b7f"
+  computationUuid: "23fe82c3-869e-8eca-bb34-a0856b9350d0"
   stages:
     - stage: path
-      stageUuid: "530b18e3-761a-89a0-afb3-efe4a28f1b57"
+      stageUuid: "15b0ee41-a5c3-80ac-a074-6fd006cb6cdb"
     - stage: trinity
-      stageUuid: "470c11f2-d41f-8c68-9953-dede2791ddd3"
+      stageUuid: "a0ba33f9-d552-8e62-a43c-5aca722325d4"
     - stage: boundary
-      stageUuid: "a76ab49a-d50d-8a06-80e1-e5ccef3687f5"
+      stageUuid: "e45bb970-efeb-829b-9cd5-5f86397ed663"
     - stage: links
-      stageUuid: "aff3d259-d49b-8abe-a4e0-6f1268025c6b"
+      stageUuid: "19ebb509-19f5-8988-9e08-ec2da5bbc91d"
     - stage: horo
-      stageUuid: "3eff866d-f657-8ea6-9300-684f60984934"
+      stageUuid: "92ae3b5b-0028-874c-b5ca-1c9fe99f4239"
     - stage: seal
-      stageUuid: "680f0dc9-d41a-88f1-ad93-13cbad7d5bba"
+      stageUuid: "5f7062d8-4e9b-81b5-be0d-bce25c783932"
     - stage: uuid
-      stageUuid: "5864793b-fdf6-8f1b-9479-2830666b86a6"
+      stageUuid: "337c7159-0fc4-8838-b93d-71051706bb55"
 version: 2
 ---
 # included

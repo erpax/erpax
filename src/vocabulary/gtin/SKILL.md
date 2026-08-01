@@ -1,53 +1,35 @@
 ---
 name: gtin
 description: "Use when reasoning about gtin — A Global Trade Item Number (GTIN). GTINs identify trade items, including products and services, using numeric identification codes. A correct gtin value should be a valid GTIN, whi"
-atomPath: vocabulary/gtin
-coordinate: gtin · 7/descent · 40e7d876
-contentUuid: "5613b565-02b5-5861-b026-722c2e13f812"
-diamondUuid: "3b893b09-fac3-8336-b627-b56625415b10"
-uuid: "40e7d876-78df-8b60-a7c9-dafa4648ebc2"
-horo: 7
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/gtin"
+coordinate: "vocabulary/gtin · 8/crest · f82d7588"
+contentUuid: "c104abab-796e-55d0-88a3-453b8b99886b"
+diamondUuid: "253819ce-a31e-8008-aecc-afded616c8d9"
+uuid: "f82d7588-da46-8369-9bdf-aac9a7f299a6"
+horo: 8
 typography:
-  partition: gtin
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "2a9f87bf-2cf6-8aa1-b853-2c4167733206"
+  computationUuid: "7fcf27c4-1674-8c2a-8aea-b205e8312bfe"
   stages:
     - stage: path
-      stageUuid: "8438ece9-f098-8f1b-ba9b-a448ad85454a"
+      stageUuid: "a7908915-0ff1-88e6-8a21-f02f42e9e25f"
     - stage: trinity
-      stageUuid: "a678f062-69d8-8004-bd0e-d21dd09d4197"
+      stageUuid: "a7d1b5d5-bc5e-851f-acdb-62414df98e26"
     - stage: boundary
-      stageUuid: "cf9f4c93-6f59-8258-9816-bb3ac520e083"
+      stageUuid: "e5efccc1-7de4-8f97-b974-2ce5b9340767"
     - stage: links
-      stageUuid: "c4416b32-3d80-8b76-9896-0f741bb2f33b"
+      stageUuid: "118b17c2-0efa-8ff8-a291-77c675414c96"
     - stage: horo
-      stageUuid: "7f0ff9ca-7f25-8f51-a77f-f13216021f79"
+      stageUuid: "7e19333a-f566-8efe-a627-d036027fd976"
     - stage: seal
-      stageUuid: "b66482c5-66db-837a-ad11-57e67b673c53"
+      stageUuid: "5274ca5e-8a17-86e8-b802-01b6193f2814"
     - stage: uuid
-      stageUuid: "1bda7c5e-9719-82cc-818a-2bba0f62edfa"
+      stageUuid: "7e25d5b0-17ca-87d1-b03d-3fc4ad011972"
 version: 2
 ---
 # gtin

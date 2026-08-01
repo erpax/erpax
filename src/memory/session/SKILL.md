@@ -2,78 +2,18 @@
 name: session
 description: "Use when reasoning about session/chat memory — it must NOT live in ephemeral context. Session memory IS the diamond lattice: save(thought) ⇐ isDiamond; parallel sessions (Cursor, society breath, chat, MCP) converge on ONE lattice via content-uuid merge — same thought ⇒ same diamond ⇒ no collision."
 atomPath: "memory/session"
-coordinate: "memory/session · 8/crest · 073aad11"
-contentUuid: "9288b7ee-6c78-599a-9e41-39699684346f"
-diamondUuid: "0a5457bf-be11-8800-a9e5-38cb803e1e47"
-uuid: "073aad11-79bd-821d-9011-fc659961cd1a"
+coordinate: "memory/session · 8/crest · b4070360"
+contentUuid: "0332fa8e-e0a9-5128-a87a-9d2d594d50b5"
+diamondUuid: "7917b938-a96a-8b71-a031-49a10cea6756"
+uuid: "b4070360-0996-88cc-9a92-760b39e137f0"
 horo: 8
-bonds:
-  in:
-    - accounting
-    - catharsis
-    - law
-    - leftover
-    - memory
-    - metric
-    - self
-    - think
-  out:
-    - accounting
-    - catharsis
-    - law
-    - leftover
-    - metric
-    - self
-    - think
 typography:
   partition: memory
   bondDegree: 50
-  neighbors:
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - architecture
-    - atom
-    - chat
-    - confirm
-    - contribution
-    - diamond
-    - generate
-    - guardian
-    - holographic
-    - identity
-    - matrix
-    - memories
-    - memory
-    - merge
-    - part
-    - seal
-    - self
-    - society
-    - thought
-    - uuid
-    - whole
-  matrix:
-    - accounting
-    - catharsis
-    - law
-    - leftover
-    - metric
-    - self
-    - think
-  backlinks:
-    - accounting
-    - catharsis
-    - law
-    - leftover
-    - metric
-    - self
-    - think
 signatures:
-  computationUuid: "316e9dce-1114-8965-b255-c54998819bf4"
+  computationUuid: "30a43206-7ab4-835c-9e52-3436c6b73c4f"
   stages:
     - stage: path
       stageUuid: "15c8d8d5-2f12-8a42-af92-6a4b5e0d7d6e"
@@ -84,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "74070105-dade-8403-b4eb-9534f3176fae"
     - stage: horo
-      stageUuid: "b56b8b8e-148d-8c63-9955-d2a73ef88e6c"
+      stageUuid: "7278336c-7056-8754-a22c-beab7a877937"
     - stage: seal
       stageUuid: "2b2059d8-4538-82d0-a489-55264255ccb3"
     - stage: uuid
-      stageUuid: "a377857d-9a5f-8ebc-b662-8fe1b439bd7f"
+      stageUuid: "b00a3ca2-a6b1-8413-903f-20530cbd0ed5"
 version: 2
 ---
 # memory/session — session memory is the diamond lattice

@@ -2,77 +2,19 @@
 name: emergence
 description: "Use when a two-fold pair completes to a third in the forge — expand ⊕ collide revealing their synthesis once both poles are present; the trinity emerging, computed from the poles not authored."
 atomPath: emergence
-coordinate: "emergence · 7/descent · 56a195a6"
-contentUuid: "47959702-104c-57df-a60b-bcbdbcabac94"
-diamondUuid: "b6c186af-4bf1-80b5-95ed-e5a291aafe2e"
-uuid: "56a195a6-dadc-8053-acf7-0544267d6d4b"
+coordinate: "emergence · 7/descent · cb71f40a"
+contentUuid: "c9eb4d82-a2a5-5a1d-b872-67b07379990e"
+diamondUuid: "a5d635b8-8d8f-8ec2-b16f-fe635e65820f"
+uuid: "cb71f40a-1121-88db-b97b-ae0e3fdb0ced"
 horo: 7
-bonds:
-  in:
-    - collapse
-    - duality
-    - entropy
-    - fractal
-    - horo
-    - law
-    - matrix
-    - one
-    - trinity
-    - uuid
-  out:
-    - collapse
-    - duality
-    - entropy
-    - fractal
-    - horo
-    - law
-    - matrix
-    - one
-    - trinity
-    - uuid
 typography:
   partition: emergence
   bondDegree: 30
-  neighbors: []
 standards:
   - "the third is computed from the poles — horo composeSteps ⊕ uuid merge, never asserted"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - duality
-    - entropy
-    - fractal
-    - horo
-    - law
-    - matrix
-    - one
-    - trinity
-    - uuid
-  matrix:
-    - collapse
-    - duality
-    - entropy
-    - fractal
-    - horo
-    - law
-    - matrix
-    - one
-    - trinity
-    - uuid
-  backlinks:
-    - collapse
-    - duality
-    - entropy
-    - fractal
-    - horo
-    - law
-    - matrix
-    - one
-    - trinity
-    - uuid
 signatures:
-  computationUuid: "3a32d77d-2a02-8fd8-805c-9bcc8fe1006d"
+  computationUuid: "f73749ca-520b-8feb-80ca-610c98ca7021"
   stages:
     - stage: path
       stageUuid: "2e95b39b-c1fc-8c46-9e48-bf8aaa239f6d"
@@ -83,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "05f59d91-a42f-8f8e-bfac-ec4a98f32e77"
     - stage: horo
-      stageUuid: "ec7aa48e-adb7-8555-94c5-e9255eb07bde"
+      stageUuid: "488634aa-a497-811e-afd2-43c41defc8bd"
     - stage: seal
       stageUuid: "a709acc6-8bda-8cd3-ba72-cd411557120d"
     - stage: uuid
-      stageUuid: "e749248a-58aa-8d8f-b4f1-8fff277e5bdb"
+      stageUuid: "3a08aff5-8b0a-877f-8f3d-3df8382ee56d"
 version: 2
 ---
 # emergence — the third revealed

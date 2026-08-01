@@ -2,59 +2,19 @@
 name: score
 description: "Use when reasoning about score as a medical facet of [[medical]] — vocabulary pivot to @/score; nested not duplicated."
 atomPath: "medical/score"
-coordinate: "medical/score · 5/round · 2c4f2359"
-contentUuid: "7d0a9f78-2f23-5581-bbfc-e3f5a44d7b17"
-diamondUuid: "96f99feb-b036-8a1f-8508-f54c74a20268"
-uuid: "2c4f2359-ccc3-849a-b92b-6584351cd4ad"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - medical
-    - merge
-    - risk
-    - score
-    - sti
-  out:
-    - collapse
-    - law
-    - medical
-    - merge
-    - risk
-    - score
-    - sti
+coordinate: "medical/score · 8/crest · 4f36dad2"
+contentUuid: "ac56f2b6-2fa3-5bde-9f83-6c946cf1b34a"
+diamondUuid: "598720bd-555a-856c-b747-ed5720ae88cb"
+uuid: "4f36dad2-b8ae-8300-a685-33166bd8c6d6"
+horo: 8
 typography:
   partition: medical
   bondDegree: 26
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - medical
-    - merge
-    - score
-  matrix:
-    - collapse
-    - law
-    - medical
-    - merge
-    - risk
-    - score
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - medical
-    - merge
-    - risk
-    - score
-    - sti
 signatures:
-  computationUuid: "df3623cf-655d-84f0-a989-03e5e7a8149c"
+  computationUuid: "e350a9f7-a993-8962-8759-b2c4ca6bcadb"
   stages:
     - stage: path
       stageUuid: "ce61771a-7b71-806a-ab35-8334d9d7b9e4"
@@ -65,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "96a5d0c9-822c-89f0-a451-f2cfc453dd10"
     - stage: horo
-      stageUuid: "ecd218a5-0dfd-8459-9bf8-90cc4ae3d63f"
+      stageUuid: "da073168-832d-8826-801b-d7a961040896"
     - stage: seal
       stageUuid: "da84b570-5c20-8129-aeca-49c3d1764658"
     - stage: uuid
-      stageUuid: "ef01471c-75bb-8bc7-b646-39d8b479dd68"
+      stageUuid: "3bc066cc-d9df-88e5-9192-ae0e8855c2ad"
 version: 2
 ---
 # medical/score — medical facet

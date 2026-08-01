@@ -1,110 +1,34 @@
 ---
 name: distribution
 description: "Use when analyzing data spread — normal/Poisson/exponential distributions, distribution testing (Shapiro-Wilk, Kolmogorov-Smirnov), distribution fitting, distribution-aware statistics (mean vs median), distribution plots/histograms."
-atomPath: vocabulary/distribution
-coordinate: distribution · 5/round · 71fe3ef9
-contentUuid: "0981249f-ce66-515f-b39d-5621cfd7786a"
-diamondUuid: "404815b2-8fb2-8b53-aea0-ac29cc6ac468"
-uuid: "71fe3ef9-25a0-8e58-9cac-734372dea1c5"
+atomPath: "vocabulary/distribution"
+coordinate: "vocabulary/distribution · 5/round · 33fdd8c5"
+contentUuid: "bd6fc050-1584-5d01-bbbd-4970faeba709"
+diamondUuid: "8b086253-d329-8888-b851-9af861b8f761"
+uuid: "33fdd8c5-d03e-8c8e-becd-dba5f12f821d"
 horo: 5
-bonds:
-  in:
-    - aggregation
-    - awareness
-    - calculate
-    - desire
-    - diffusion
-    - friction
-    - law
-    - market
-    - metric
-    - monetary
-    - pickup
-    - quantitative
-    - sampling
-    - science
-    - stream
-    - sync
-  out:
-    - aggregation
-    - awareness
-    - calculate
-    - desire
-    - diffusion
-    - friction
-    - law
-    - market
-    - metric
-    - monetary
-    - pickup
-    - quantitative
-    - sampling
-    - science
-    - stream
-    - sync
 typography:
-  partition: distribution
+  partition: vocabulary
   bondDegree: 48
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - aggregation
-    - calculate
-    - law
-    - metric
-  matrix:
-    - aggregation
-    - awareness
-    - calculate
-    - desire
-    - diffusion
-    - friction
-    - law
-    - market
-    - metric
-    - monetary
-    - pickup
-    - quantitative
-    - sampling
-    - science
-    - stream
-    - sync
-  backlinks:
-    - aggregation
-    - awareness
-    - calculate
-    - desire
-    - diffusion
-    - friction
-    - law
-    - market
-    - metric
-    - monetary
-    - pickup
-    - quantitative
-    - sampling
-    - science
-    - stream
-    - sync
 signatures:
-  computationUuid: "9cdcf234-830c-8b7e-aaa4-6c9cac5269cf"
+  computationUuid: "36f7ffc2-eebc-8771-be33-abe29d2c90ce"
   stages:
     - stage: path
-      stageUuid: "58485d3c-f578-86e6-8a3a-7837ad7ad81a"
+      stageUuid: "19e5d8c8-9351-8b0e-9b48-6230274592f5"
     - stage: trinity
-      stageUuid: "c7fd9f65-78b7-85b4-8ed9-7c36faddfac5"
+      stageUuid: "b538ee1a-6e81-8bb3-b313-96b3cd97c4f3"
     - stage: boundary
-      stageUuid: "13182293-232c-8665-83fe-0b15a99cc032"
+      stageUuid: "d0d25551-5a72-8d80-aaf3-741b1ccc8c68"
     - stage: links
-      stageUuid: "32c17dba-58a3-81e4-83e0-7a08fa0e4944"
+      stageUuid: "672a1e40-ebe4-80d0-a89b-e1a2ae3b59e2"
     - stage: horo
-      stageUuid: "c3316b1b-708a-8ab4-af78-77e209e06af1"
+      stageUuid: "e58abbf4-0ff2-8a0c-b75f-50818f0d321a"
     - stage: seal
-      stageUuid: "25aafc15-1a24-88fb-8bba-e4ffc159043c"
+      stageUuid: "c8bcbff1-9c4b-8d8e-9375-b4be790af493"
     - stage: uuid
-      stageUuid: "df7de3a6-1e84-8cdf-bd99-6a1cc2d06ff2"
+      stageUuid: "0c7cbcb0-965d-84dd-baf2-d4439ce29943"
 version: 2
 ---
 # distribution

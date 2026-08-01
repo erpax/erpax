@@ -1,58 +1,35 @@
 ---
 name: continent
 description: "Use when reasoning about continent — One of the continents (for example, Europe or Africa)."
-atomPath: vocabulary/continent
-coordinate: continent · 8/crest · 53292df6
-contentUuid: "2cddeb0c-1da9-5f89-9e36-84a1984801ea"
-diamondUuid: "e8090265-4110-8211-8296-fc78407310bd"
-uuid: "53292df6-f7df-8d99-a32f-b9aa2e962dc4"
-horo: 8
-bonds:
-  in:
-    - law
-    - place
-    - thing
-  out:
-    - law
-    - place
-    - thing
+atomPath: "vocabulary/continent"
+coordinate: "vocabulary/continent · 5/round · 85fab2de"
+contentUuid: "eec00551-aa79-582b-b591-a7ac48865ed0"
+diamondUuid: "da5ced1d-11c8-893d-a3b4-cd88228d914a"
+uuid: "85fab2de-fe28-8c0e-80ec-d547a1e25863"
+horo: 5
 typography:
-  partition: continent
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - place
-    - thing
-  matrix:
-    - law
-    - place
-    - thing
-  backlinks:
-    - law
-    - place
-    - thing
 signatures:
-  computationUuid: "9511ac52-175c-8f24-98c1-849c15e86bab"
+  computationUuid: "26011d97-fba0-8ec1-9f96-9e55dc3a7d3c"
   stages:
     - stage: path
-      stageUuid: "29d46fd9-38bd-8d3b-81f2-8af58c4667fc"
+      stageUuid: "aacebed9-3668-8b9d-9b61-238296121845"
     - stage: trinity
-      stageUuid: "fe1ef352-c85a-8123-8342-8cd0d3d6e702"
+      stageUuid: "f3ea321d-4709-8c82-aa77-b8b52d481053"
     - stage: boundary
-      stageUuid: "9f64c6dd-93d9-8fed-b032-7803589c7f0a"
+      stageUuid: "dd848876-3b12-89e8-ba02-9d7fc2e51f45"
     - stage: links
-      stageUuid: "8a2d96d1-3223-8079-acac-35e9619862e2"
+      stageUuid: "438a3ff9-c171-8045-a9fa-363137541fc4"
     - stage: horo
-      stageUuid: "413dc6a9-19d0-8a01-aeb7-bbbc37fe21f2"
+      stageUuid: "087fb635-04de-87d4-9ede-6caeab9e9ef6"
     - stage: seal
-      stageUuid: "c9a6b704-b5d1-8057-8350-d7fb71b37ce2"
+      stageUuid: "3a2e4438-7539-8ec9-934b-af042f9b6c5b"
     - stage: uuid
-      stageUuid: "6fca479c-6230-80fb-9f62-94d9a45431f2"
+      stageUuid: "9fb00a64-9cf1-8698-b3a0-0fa2edcbcd9e"
 version: 2
 ---
 # continent

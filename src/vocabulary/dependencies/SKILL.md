@@ -1,57 +1,35 @@
 ---
 name: dependencies
 description: Use when reasoning about dependencies — Prerequisites needed to fulfill steps in article.
-atomPath: vocabulary/dependencies
-coordinate: dependencies · 5/round · da8fe982
-contentUuid: "23201397-b16b-5f1f-aa4e-2122099b0039"
-diamondUuid: "234ada66-6c91-8561-a910-bfe618086041"
-uuid: "da8fe982-68a8-8b4c-bc6b-8a38e6c3a282"
-horo: 5
-bonds:
-  in:
-    - dependency
-    - law
-    - thing
-  out:
-    - dependency
-    - law
-    - thing
+atomPath: "vocabulary/dependencies"
+coordinate: "vocabulary/dependencies · 8/crest · 70797ef4"
+contentUuid: "032d8e06-57ff-56d7-80e9-4a642cd2af04"
+diamondUuid: "1ded0e8c-b1e7-84f5-8ad5-5396060bd04b"
+uuid: "70797ef4-551c-8a5f-8777-71d6f5b4f226"
+horo: 8
 typography:
-  partition: dependencies
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - dependency
-    - law
-    - thing
-  backlinks:
-    - dependency
-    - law
-    - thing
 signatures:
-  computationUuid: "116ff787-ce8a-80ad-827f-ef221d01af38"
+  computationUuid: "cd54190c-a20b-88fe-a551-2781f9efa012"
   stages:
     - stage: path
-      stageUuid: "d5c19b81-91e5-8c3b-b537-16ffd6d507da"
+      stageUuid: "a32a62c6-2a2c-8b6c-aee2-17b8a573c732"
     - stage: trinity
-      stageUuid: "c961a0b2-8cc6-856e-a4a0-7b87917319be"
+      stageUuid: "fc294b44-159a-8b33-8ff8-958e11e28d38"
     - stage: boundary
-      stageUuid: "be868c50-b4f3-8a56-8e7d-b7b3c09eb32d"
+      stageUuid: "8e612db8-5579-8bdc-a659-00d81c3ee365"
     - stage: links
-      stageUuid: "4c23a04e-d585-891d-9d73-286a2e4ea20a"
+      stageUuid: "7fa8ccc6-96cf-85dd-be66-8a0abbb5e173"
     - stage: horo
-      stageUuid: "b48f4761-c91f-88b4-a14f-4d882b11badc"
+      stageUuid: "88f5bffc-dfa2-8501-8319-10acabce6e23"
     - stage: seal
-      stageUuid: "49a8b858-7f6b-863b-a818-700d78479d49"
+      stageUuid: "58f68ef7-3943-894e-8404-784a1a6d5c05"
     - stage: uuid
-      stageUuid: "c88f95d1-2fd6-88af-8177-9ce852e5da85"
+      stageUuid: "3ef6da2f-9dfa-89d2-8b44-21df32daac19"
 version: 2
 ---
 # dependencies

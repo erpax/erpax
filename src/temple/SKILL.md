@@ -2,57 +2,19 @@
 name: temple
 description: "Use when reasoning about temple as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: temple
-coordinate: temple · 4/weave · 7315862a
-contentUuid: "574e0393-6598-54e7-9fe5-1c5da56cbba9"
-diamondUuid: "b71e5e11-1ff0-85df-8da0-50c7c618b407"
-uuid: "7315862a-25bb-821d-9cdb-1ed1ae9ff68e"
+coordinate: "temple · 4/weave · 42e7ae72"
+contentUuid: "76498636-3768-54f9-86c6-b184595c04da"
+diamondUuid: "34354eb3-87b9-86a3-b370-6bc9b59a686a"
+uuid: "42e7ae72-ad45-883a-89dc-120d6fe967e4"
 horo: 4
-bonds:
-  in:
-    - buddhist
-    - collapse
-    - hindu
-    - law
-    - merge
-    - sti
-  out:
-    - buddhist
-    - collapse
-    - hindu
-    - law
-    - merge
-    - sti
 typography:
   partition: temple
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - buddhist
-    - collapse
-    - hindu
-    - law
-    - merge
-    - sti
-  matrix:
-    - buddhist
-    - collapse
-    - hindu
-    - law
-    - merge
-    - sti
-  backlinks:
-    - buddhist
-    - collapse
-    - hindu
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "2f5b9f62-4f77-85e7-8f30-8fc7ebe911fd"
+  computationUuid: "a58fd2fb-9938-80cd-a18a-f20d648b91a9"
   stages:
     - stage: path
       stageUuid: "85dda65e-8ad0-84e3-968b-192ae4e9264d"
@@ -63,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "706810ae-87d9-8d22-8345-c96d60fe643d"
     - stage: horo
-      stageUuid: "16bc68cc-8893-8545-a819-3b301a236d74"
+      stageUuid: "17a1f2e7-03e3-8ab6-9cd8-132661a98e13"
     - stage: seal
-      stageUuid: "6cd13bbc-2048-8f28-8b34-8858564cfd9d"
+      stageUuid: "13ae202f-b679-8d88-abd8-ef1b5600843e"
     - stage: uuid
-      stageUuid: "f61ef6d2-7826-8558-8b89-366474d50501"
+      stageUuid: "70f673d6-5b1f-8620-9848-14d9f0337acd"
 version: 2
 ---
 # temple

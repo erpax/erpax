@@ -1,58 +1,35 @@
 ---
 name: owner
 description: Use when reasoning about owner — A person or organization who owns this Thing.
-atomPath: vocabulary/owner
-coordinate: owner · 5/round · 32b710d3
-contentUuid: "f34e7b11-b2f4-51b3-b8f5-0cd2f99eb0dd"
-diamondUuid: "d8bcec55-a1bd-821a-ba65-e74252c08f29"
-uuid: "32b710d3-207e-87af-bb1c-983e414b9fbf"
-horo: 5
-bonds:
-  in:
-    - law
-    - person
-    - thing
-  out:
-    - law
-    - person
-    - thing
+atomPath: "vocabulary/owner"
+coordinate: "vocabulary/owner · 7/descent · f622a49c"
+contentUuid: "5ab4520e-e13a-516c-b662-372766cc7212"
+diamondUuid: "961674a2-04d2-8ad6-8229-c4a1de33a18a"
+uuid: "f622a49c-29ab-82e4-92ab-ce726dd83e0c"
+horo: 7
 typography:
-  partition: owner
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - person
-    - thing
-  matrix:
-    - law
-    - person
-    - thing
-  backlinks:
-    - law
-    - person
-    - thing
 signatures:
-  computationUuid: "46b02566-4005-81f6-9718-25a129d38c6d"
+  computationUuid: "0a9ce5e8-22fe-8413-84dc-7c592ea8a8ec"
   stages:
     - stage: path
-      stageUuid: "2408ec16-1a76-8961-89aa-1d66d4c6cb45"
+      stageUuid: "ba6428a8-32fa-8f08-9d9f-042697644706"
     - stage: trinity
-      stageUuid: "a4114572-f794-850d-9804-1af005df5ddb"
+      stageUuid: "d6359cdd-1beb-8d4a-afc2-bc4add69980e"
     - stage: boundary
-      stageUuid: "15a7e2bd-3d95-8920-b7a0-d8a09ba9633d"
+      stageUuid: "6fc3a5bc-1763-85d6-adc4-8c5100e5c28f"
     - stage: links
-      stageUuid: "ce1412d0-184d-8c5c-b25b-d350287a4df1"
+      stageUuid: "297b3402-6a0d-84a8-b7c7-46fb8354280b"
     - stage: horo
-      stageUuid: "d7074306-db7b-873c-901a-f2464b94f16b"
+      stageUuid: "7cab5edf-6d10-8bb4-9876-d7754222cfc8"
     - stage: seal
-      stageUuid: "a66f6a95-0c86-84b3-921e-a634be7ca10d"
+      stageUuid: "63de3ce4-4eb7-845a-be81-81e75d344b64"
     - stage: uuid
-      stageUuid: "3584db1d-de07-85de-a0f9-d11561a0cff3"
+      stageUuid: "e5774c70-5271-8cc8-9b1e-4f205a115381"
 version: 2
 ---
 # owner

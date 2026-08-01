@@ -1,172 +1,34 @@
 ---
 name: fertility
 description: "Use when budgeting the soil's nutrient capacity against crop demand — the N-P-K balance where a crop's nitrogen and potassium need (lbs/acre, as N and K₂O oxide forms) scales with its yield; heavy vs light feeders; legumes fixing their own nitrogen (N ≈ 0); the 4R stewardship and soil-test basis. Fertility is a double-entry budget: crop removal debits the soil, application credits it; it must balance like any ledger."
-atomPath: vocabulary/fertility
-coordinate: fertility · 7/descent · 5d5cf92f
-contentUuid: "47c6aa90-32f9-502d-9b4d-e0ea87ff9013"
-diamondUuid: "303f2827-dd39-86a0-9023-fa8c8910d78f"
-uuid: "5d5cf92f-a33a-82fb-86e5-069a52eeea94"
-horo: 7
-bonds:
-  in:
-    - agriculture
-    - assets
-    - balance
-    - capacity
-    - compost
-    - conversion
-    - covercrop
-    - crop
-    - entry
-    - family
-    - forestry
-    - grazing
-    - irrigation
-    - law
-    - livestock
-    - manure
-    - measure
-    - moisture
-    - mycorrhizae
-    - pasture
-    - permaculture
-    - planting
-    - rate
-    - rotation
-    - salinity
-    - soil
-    - taxonomy
-    - yield
-  out:
-    - agriculture
-    - assets
-    - balance
-    - capacity
-    - compost
-    - conversion
-    - covercrop
-    - crop
-    - entry
-    - family
-    - forestry
-    - grazing
-    - irrigation
-    - law
-    - livestock
-    - manure
-    - measure
-    - moisture
-    - mycorrhizae
-    - pasture
-    - permaculture
-    - planting
-    - rate
-    - rotation
-    - salinity
-    - soil
-    - taxonomy
-    - yield
+atomPath: "vocabulary/fertility"
+coordinate: "vocabulary/fertility · 5/round · 81ecfbb5"
+contentUuid: "276b2935-cd1c-5025-bebd-d156a9af08f7"
+diamondUuid: "c3a91984-e92a-8783-9675-d997da5ec7aa"
+uuid: "81ecfbb5-f897-8426-903b-ef64e522d383"
+horo: 5
 typography:
-  partition: fertility
+  partition: vocabulary
   bondDegree: 93
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - assets
-    - balance
-    - capacity
-    - compost
-    - conversion
-    - covercrop
-    - crop
-    - entry
-    - irrigation
-    - law
-    - measure
-    - mycorrhizae
-    - planting
-    - rate
-    - salinity
-    - soil
-    - yield
-  matrix:
-    - agriculture
-    - assets
-    - balance
-    - capacity
-    - compost
-    - conversion
-    - covercrop
-    - crop
-    - entry
-    - family
-    - forestry
-    - grazing
-    - irrigation
-    - law
-    - livestock
-    - manure
-    - measure
-    - moisture
-    - mycorrhizae
-    - pasture
-    - permaculture
-    - planting
-    - rate
-    - rotation
-    - salinity
-    - soil
-    - taxonomy
-    - yield
-  backlinks:
-    - agriculture
-    - assets
-    - balance
-    - capacity
-    - compost
-    - conversion
-    - covercrop
-    - crop
-    - entry
-    - family
-    - forestry
-    - grazing
-    - irrigation
-    - law
-    - livestock
-    - manure
-    - measure
-    - moisture
-    - mycorrhizae
-    - pasture
-    - permaculture
-    - planting
-    - rate
-    - rotation
-    - salinity
-    - soil
-    - taxonomy
-    - yield
 signatures:
-  computationUuid: "a4a0d710-0cf8-882f-84cc-7bc96a043c60"
+  computationUuid: "a514be90-c7c6-8c59-8ad2-7e5a49129f1b"
   stages:
     - stage: path
-      stageUuid: "1aafa7a5-b1ee-856f-abc4-8b72c7e1e5fc"
+      stageUuid: "1e1d332f-0c31-87a3-85ce-c60054d0bc4a"
     - stage: trinity
-      stageUuid: "4a8a5545-7130-851b-a471-60a699c80a1c"
+      stageUuid: "672e89fa-11d1-842c-9241-2c803e3bf11a"
     - stage: boundary
-      stageUuid: "3764f3ca-77b7-8828-b80f-43c92258e33e"
+      stageUuid: "8717a789-2423-8b13-98a8-f944dc211ff0"
     - stage: links
-      stageUuid: "cb9146b9-d91f-88d7-a8f1-e86b4e2be7d7"
+      stageUuid: "b8827f5d-8861-897d-aa93-a75b109cb8cb"
     - stage: horo
-      stageUuid: "6b826def-4793-87e5-a6cd-e88e6b6d1c99"
+      stageUuid: "7f5ace51-c803-8406-8365-bc94a518f166"
     - stage: seal
-      stageUuid: "44600b5f-3c1e-8ab1-8368-24128401a45f"
+      stageUuid: "e52fa052-d5d4-8772-a997-5c083896fae7"
     - stage: uuid
-      stageUuid: "2a4f6617-6cad-81e5-a296-d9a7751b89bf"
+      stageUuid: "b4c5a81b-68bf-8f21-ba64-2995f38ee8da"
 version: 2
 ---
 # fertility — the soil's nutrient budget, balanced against crop demand

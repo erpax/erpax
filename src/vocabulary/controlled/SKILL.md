@@ -1,63 +1,35 @@
 ---
 name: controlled
 description: "Use when reasoning about controlled as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/controlled
-coordinate: controlled · 5/round · b9e55222
-contentUuid: "10413724-4085-5d55-80bc-58b73b599767"
-diamondUuid: "a60a857f-63ef-82ff-a6e9-448c62df6c7c"
-uuid: "b9e55222-c780-820d-a5ff-f8a1df7dc129"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/controlled"
+coordinate: "vocabulary/controlled · 4/weave · 7df0c8d0"
+contentUuid: "978e673f-e4a1-54ea-862b-026cf9859ab1"
+diamondUuid: "7453a752-9acd-8085-bcd2-e2a810007e04"
+uuid: "7df0c8d0-1aa0-80bb-a895-46ce3ec75b27"
+horo: 4
 typography:
-  partition: controlled
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "14eb0e2f-7d2a-8390-aa25-cfe3ecc9bacc"
+  computationUuid: "9e9ed506-79aa-8b55-9dde-f85956af7f9e"
   stages:
     - stage: path
-      stageUuid: "f734113a-a8ba-8317-8183-0e781fb46c0b"
+      stageUuid: "742afab2-1dfa-8794-a121-97f256eb0a19"
     - stage: trinity
-      stageUuid: "4a3c9116-eb0e-85a6-a7eb-f7fd1ec43725"
+      stageUuid: "cf5d61f3-b45b-8424-abf2-ac397c12c636"
     - stage: boundary
-      stageUuid: "f7aace8b-b0f3-8b1e-b281-e6cab7d76f92"
+      stageUuid: "dec7373e-7f12-82f8-bb73-77910204c3ce"
     - stage: links
-      stageUuid: "531430df-14b8-8a5f-8f9e-d9b9b3def6e6"
+      stageUuid: "fc889998-c15d-8fa7-8276-64773bf28167"
     - stage: horo
-      stageUuid: "34bae99c-61a8-8c2f-9d91-94b38d0055a3"
+      stageUuid: "5775902c-6160-8ab8-b75d-7a32b6e9c498"
     - stage: seal
-      stageUuid: "37d8fbae-cc9d-8d98-b3b8-6bdc02d441e6"
+      stageUuid: "d0d9f48d-a5bf-84ea-bd9f-5ded42f13390"
     - stage: uuid
-      stageUuid: "a2e65b97-66b1-8cb4-a5bf-6bb021e9590d"
+      stageUuid: "08abb15f-4036-8f2e-a26b-264852bcbbd1"
 version: 2
 ---
 # controlled

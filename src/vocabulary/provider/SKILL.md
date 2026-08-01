@@ -1,57 +1,35 @@
 ---
 name: provider
 description: "Use when reasoning about provider — The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider m"
-atomPath: vocabulary/provider
-coordinate: provider · 5/round · d7da27d2
-contentUuid: "369b7cf9-40a1-5d9f-8e7e-070e3b438c8b"
-diamondUuid: "86f25ab1-4fc0-87b4-8cd3-66f583a38b2f"
-uuid: "d7da27d2-3693-8a3b-91d4-1a49c9ace0ec"
-horo: 5
-bonds:
-  in:
-    - closure
-    - law
-    - mobility
-  out:
-    - closure
-    - law
-    - mobility
+atomPath: "vocabulary/provider"
+coordinate: "vocabulary/provider · 2/share · d621c6e8"
+contentUuid: "ff4f481a-eb98-59f3-aabd-ffbcc0ddd60a"
+diamondUuid: "c54057cb-d65e-85fa-9d99-532834ba59d2"
+uuid: "d621c6e8-590c-802d-8fc8-2c0e2ee4e140"
+horo: 2
 typography:
-  partition: provider
-  bondDegree: 0
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 15
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - mobility
-  matrix:
-    - closure
-    - law
-    - mobility
-  backlinks:
-    - closure
-    - law
-    - mobility
 signatures:
-  computationUuid: "e3518eb0-b35c-8224-9ec3-2de0f782042c"
+  computationUuid: "ebc469e4-9008-8e54-b96a-c3deccc5aa38"
   stages:
     - stage: path
-      stageUuid: "4098a470-edfb-8dda-bdb5-bf2336fed6e9"
+      stageUuid: "6c07bf19-b6a9-847d-9ad8-46428669415f"
     - stage: trinity
-      stageUuid: "8237ab55-a498-8ffb-b046-8db1b1c9f4a7"
+      stageUuid: "800b939e-ae2f-8391-854b-13a5899d3c25"
     - stage: boundary
-      stageUuid: "5d2387b6-d31f-8c9d-9207-21e2ec4061ad"
+      stageUuid: "2bd38a96-9075-8383-8e36-e620bd3abfe9"
     - stage: links
-      stageUuid: "ee66a0aa-49b2-8496-a6ff-b45b92eca850"
+      stageUuid: "4f9fed48-6b8a-890e-8736-7a4b696f6f39"
     - stage: horo
-      stageUuid: "f7fa2cce-214f-829b-b10d-472c7ddfcb8d"
+      stageUuid: "49ce8e48-5d10-8a4d-8508-0001d90fcdcd"
     - stage: seal
-      stageUuid: "aa313bed-9ab8-8567-bedd-db82509dbb09"
+      stageUuid: "6e502971-cd42-8487-8763-34ce65259739"
     - stage: uuid
-      stageUuid: "aeb41867-6340-804f-9603-22b27aa5166d"
+      stageUuid: "500773bc-3725-89d7-a56d-6b10fb7742bb"
 version: 2
 ---
 # provider

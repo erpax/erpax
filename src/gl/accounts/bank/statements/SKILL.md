@@ -2,50 +2,16 @@
 name: statements
 description: "Use when importing or matching bank statements (CSV, OFX, API) against journal entries for reconciliation — opening/closing balance, transaction lines, match type, variance; feeds account-reconciliations and IAS-7 cash-flow GL. The bank-statements import collection."
 atomPath: "gl/accounts/bank/statements"
-coordinate: "gl/accounts/bank/statements · 1/base · 050440ca"
-contentUuid: "558436b8-215d-5044-88e6-df4e69cdbc1c"
-diamondUuid: "04377bb6-1840-8d44-9a08-f73f6af78325"
-uuid: "050440ca-5f0d-8660-a4f5-edb8779ebd47"
-horo: 1
-bonds:
-  in:
-    - accounting
-    - balance
-    - bank
-    - budgetvariance
-    - disclosure
-    - hedge
-    - horo
-    - identity
-    - law
-    - materiality
-    - proof
-    - segment
-    - standard
-    - transaction
-    - variance
-  out:
-    - accounting
-    - balance
-    - budgetvariance
-    - disclosure
-    - hedge
-    - horo
-    - identity
-    - law
-    - materiality
-    - proof
-    - segment
-    - standard
-    - transaction
-    - variance
+coordinate: "gl/accounts/bank/statements · 8/crest · ff66ebbb"
+contentUuid: "d43a1439-4d51-5372-875e-e6d0e49956da"
+diamondUuid: "e453175d-b957-8106-bdcc-4ac956f780d6"
+uuid: "ff66ebbb-a5dc-8146-a5c6-5f9e0efa29e9"
+horo: 8
 typography:
   partition: gl
   bondDegree: 0
-  neighbors: []
 standards:
   - "IFRS IAS-7 statement-of-cash-flows"
-  - "ISO-13616-1"
   - "ISO-13616-1:2020 iban"
   - "ISO-13616-1:2020 iban`"
   - "ISO-20022 camt.053 bank-to-customer-statement"
@@ -60,48 +26,8 @@ standards:
   - "SOX §404 internal-controls reconciliation-evidence"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - anchor
-    - horo
-    - identity
-    - law
-    - proof
-    - standard
-    - transaction
-  matrix:
-    - accounting
-    - balance
-    - budgetvariance
-    - disclosure
-    - hedge
-    - horo
-    - identity
-    - law
-    - materiality
-    - proof
-    - segment
-    - standard
-    - transaction
-    - variance
-  backlinks:
-    - accounting
-    - balance
-    - budgetvariance
-    - disclosure
-    - hedge
-    - horo
-    - identity
-    - law
-    - materiality
-    - proof
-    - segment
-    - standard
-    - transaction
-    - variance
 signatures:
-  computationUuid: "97f52fe0-503e-8590-b96c-38844c311681"
+  computationUuid: "512ce538-6903-86a3-bd13-5cc7ae6ead51"
   stages:
     - stage: path
       stageUuid: "6d118f30-67d4-8f95-a572-fe9bfdd7ab3e"
@@ -112,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "00b34f27-e857-898d-afb5-f65130d311d9"
     - stage: horo
-      stageUuid: "318c4b6c-530c-899b-9021-fa8559f7b73e"
+      stageUuid: "7c2a2c12-15b9-821a-9be9-14a123d64a38"
     - stage: seal
       stageUuid: "7519ed5d-8015-8786-8592-2a84e63cca62"
     - stage: uuid
-      stageUuid: "8357bf1e-b1b4-8375-9851-24eb926864d6"
+      stageUuid: "39c6db08-c09e-8ce4-b8c6-e4a2baab1295"
 version: 2
 ---
 # bank-statements

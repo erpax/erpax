@@ -1,63 +1,35 @@
 ---
 name: friday
 description: "Use when reasoning about friday as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/friday
-coordinate: friday · 7/descent · bcf23929
-contentUuid: "e6e10bef-edd5-57a3-afed-b614d6f72a6f"
-diamondUuid: "ded3d323-9e8c-8afa-80ca-1c8671fe8df3"
-uuid: "bcf23929-9573-80cb-b637-9929522db2e9"
+atomPath: "vocabulary/friday"
+coordinate: "vocabulary/friday · 7/descent · 984a4ba9"
+contentUuid: "800e2130-4ccf-5b44-9daf-fe8421f8b81f"
+diamondUuid: "50bc5087-931e-8e11-852a-fec159f1ebe6"
+uuid: "984a4ba9-01d9-8686-b576-084ef2043817"
 horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: friday
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "e89a9855-c26d-8a73-8959-60cd10d481fa"
+  computationUuid: "a3b8f9c0-f55c-8d41-a88f-38b1ecdffbd7"
   stages:
     - stage: path
-      stageUuid: "4cedca11-6e7f-840f-9524-ed4d1f418073"
+      stageUuid: "e687a993-47e2-8204-8f41-89165a622031"
     - stage: trinity
-      stageUuid: "29312ead-1787-87e6-85bd-2f571bcf3436"
+      stageUuid: "d3797294-da7b-89c6-9901-9a58efe9554b"
     - stage: boundary
-      stageUuid: "1985ced9-acde-8977-9abc-5ed23bfec15f"
+      stageUuid: "3f7fb3d3-469e-84ad-8aa5-41fb19ddbaab"
     - stage: links
-      stageUuid: "c58a954a-005a-8268-a371-e1d2f68b1c4d"
+      stageUuid: "d22977e2-1e26-85d4-9880-900909156253"
     - stage: horo
-      stageUuid: "cd5f0303-845b-8924-bbe3-ace37dce47d8"
+      stageUuid: "57622c86-f3aa-8e9c-8d58-dba2bc1c4c2a"
     - stage: seal
-      stageUuid: "d360dfdb-f306-89aa-843b-ad150fb6e96b"
+      stageUuid: "544db398-ef8e-8b71-af59-ea26c0105c6c"
     - stage: uuid
-      stageUuid: "90a6f12c-a507-8cc4-9f44-e201deca5f1e"
+      stageUuid: "0d685393-dcf3-8afd-9c86-21040119be6f"
 version: 2
 ---
 # friday

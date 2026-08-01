@@ -1,53 +1,35 @@
 ---
 name: photograph
 description: Use when reasoning about photograph — A photograph.
-atomPath: vocabulary/photograph
-coordinate: photograph · 8/crest · 094a77fd
-contentUuid: "3e23ade8-c27d-59d0-9a82-e8693cb43c51"
-diamondUuid: "46627adf-f849-850c-9a47-446a5ad4f8bf"
-uuid: "094a77fd-5182-8203-a5b0-b771545e2ebf"
-horo: 8
-bonds:
-  in:
-    - action
-    - law
-  out:
-    - action
-    - law
+atomPath: "vocabulary/photograph"
+coordinate: "vocabulary/photograph · 5/round · 4aeda70c"
+contentUuid: "fae542ee-560e-5fd4-93ec-592208580dd6"
+diamondUuid: "5fd71563-2645-82db-b2c2-2117c45ec3ba"
+uuid: "4aeda70c-6146-8dab-b38d-623eec719f64"
+horo: 5
 typography:
-  partition: photograph
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - law
-  matrix:
-    - action
-    - law
-  backlinks:
-    - action
-    - law
 signatures:
-  computationUuid: "9ecd4c46-23be-8419-a990-76289121cdca"
+  computationUuid: "484ff492-f200-8573-ab3c-ee667c0e312f"
   stages:
     - stage: path
-      stageUuid: "526ef2fd-0579-8378-92ac-7bcb40aacd45"
+      stageUuid: "731c3819-9c7a-8fff-889a-b3038d3504e9"
     - stage: trinity
-      stageUuid: "61af9970-22a5-87af-971e-4f966330fbf8"
+      stageUuid: "f968f427-dd49-8abc-95d8-8f60bf115ff1"
     - stage: boundary
-      stageUuid: "b512895c-b3eb-80e5-baf7-ea87c01b8cbf"
+      stageUuid: "d291075f-8f74-8822-89b9-11d38e141cff"
     - stage: links
-      stageUuid: "cbee3afa-910d-8933-8f47-3b9db94deca0"
+      stageUuid: "4431eed9-7b2c-8a8c-82b1-3a4cc7bfa4d3"
     - stage: horo
-      stageUuid: "58da6c2a-1f67-8e9a-8148-dddabd55d050"
+      stageUuid: "91b6f441-56d2-8de4-ba1e-f32505ed4ca1"
     - stage: seal
-      stageUuid: "a294075a-82cd-850a-a6f1-a99bbf41abe6"
+      stageUuid: "6d0ca692-8ddd-85ba-9fe9-cc533e0c5e76"
     - stage: uuid
-      stageUuid: "f0d03561-2a38-89a2-82f0-e56173b0ce1d"
+      stageUuid: "088a33ca-225f-8b65-aa95-a3f0912d0b01"
 version: 2
 ---
 # photograph

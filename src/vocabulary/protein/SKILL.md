@@ -1,53 +1,35 @@
 ---
 name: protein
 description: "Use when reasoning about protein — Protein is here used in its widest possible definition, as classes of amino acid based molecules. Amyloid-beta Protein in human (UniProt P05067), eukaryota (e.g. an OrthoDB group)"
-atomPath: vocabulary/protein
-coordinate: protein · 2/share · 2c898a1b
-contentUuid: "f02a20e2-a31a-5536-9e1c-2f311735f258"
-diamondUuid: "10fad050-5644-8630-9adb-dde3592fe847"
-uuid: "2c898a1b-dbeb-8717-a024-25862850100a"
-horo: 2
-bonds:
-  in:
-    - content
-    - law
-  out:
-    - content
-    - law
+atomPath: "vocabulary/protein"
+coordinate: "vocabulary/protein · 7/descent · c7de762d"
+contentUuid: "abb48683-fb50-5d36-b804-9a815c82d50b"
+diamondUuid: "eff8301e-96d6-802b-9588-509312a91b7d"
+uuid: "c7de762d-914c-8dcb-bb3c-0deff2312d72"
+horo: 7
 typography:
-  partition: protein
+  partition: vocabulary
   bondDegree: 7
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - content
-    - law
-  matrix:
-    - content
-    - law
-  backlinks:
-    - content
-    - law
 signatures:
-  computationUuid: "9be71fdb-caa7-8d55-9416-9e5da267e2a5"
+  computationUuid: "bcf01025-9339-831f-9a84-45058e96e022"
   stages:
     - stage: path
-      stageUuid: "dc52ccbc-9dfd-8502-8ae9-14418cd4f1e0"
+      stageUuid: "2904aa77-9a62-8870-959a-535f417dccab"
     - stage: trinity
-      stageUuid: "2f054f9f-7034-8a8b-9243-9ba0ecff09df"
+      stageUuid: "c8daec6d-397b-8bab-8535-998a1fec8167"
     - stage: boundary
-      stageUuid: "7f9043f6-f5b7-884c-b5fe-98b9c2b1f6f4"
+      stageUuid: "3927ab64-c6cc-8f38-8576-f096cff16d2c"
     - stage: links
-      stageUuid: "b3ccd502-7c54-8916-9d12-e85ffb824219"
+      stageUuid: "0f4b71b9-fad4-8f50-845f-f9f7e10cb47b"
     - stage: horo
-      stageUuid: "420cf0da-0c6c-82f7-a41e-1df0acacc4a9"
+      stageUuid: "9d5edc68-f7bc-85c2-b2ee-087bd911a30c"
     - stage: seal
-      stageUuid: "71275e8b-c5c7-8602-a133-3c5a06110c02"
+      stageUuid: "27c88a53-4a07-82e2-8b13-e4548a45f02b"
     - stage: uuid
-      stageUuid: "be0c7b87-dc00-85be-b4e1-f6447342a70f"
+      stageUuid: "bc096f72-ef8f-8a11-a913-a679c5f99d2b"
 version: 2
 ---
 # protein

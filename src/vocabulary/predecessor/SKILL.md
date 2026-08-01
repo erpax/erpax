@@ -1,53 +1,35 @@
 ---
 name: predecessor
 description: "Use when reasoning about predecessor — A pointer from a previous, often discontinued variant of the product to its newer variant."
-atomPath: vocabulary/predecessor
-coordinate: predecessor · 8/crest · 09d43344
-contentUuid: "b856e320-065a-5c7d-9fe6-4bf81c5d88b7"
-diamondUuid: "7d901f83-3198-8c62-bec5-51c89fe3146c"
-uuid: "09d43344-b6e7-8037-b03e-8f687f5c5e0f"
-horo: 8
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/predecessor"
+coordinate: "vocabulary/predecessor · 2/share · d5236dae"
+contentUuid: "585944a2-a3b8-5dac-aa02-e2d72ded05a2"
+diamondUuid: "b1663d28-ac90-8fe2-9259-65603f2721b4"
+uuid: "d5236dae-6884-8e8a-a1ae-9c2811599b5e"
+horo: 2
 typography:
-  partition: predecessor
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "dfa9ddf0-2380-8e50-af39-337b6ba28bc4"
+  computationUuid: "7dd0a97f-9ade-8a9d-b073-75bac5d158a3"
   stages:
     - stage: path
-      stageUuid: "476c6ea9-9508-81d0-afc1-8faa685dbbfe"
+      stageUuid: "1143fc06-a7da-8466-a361-a128a07e9a53"
     - stage: trinity
-      stageUuid: "aed5fbca-c36a-8c24-af6e-da7ecb70ccdd"
+      stageUuid: "4708922e-af5d-8a66-b428-78a11d47ba1e"
     - stage: boundary
-      stageUuid: "92239554-9c4b-80ea-a58e-d09f4de33856"
+      stageUuid: "9f80ea08-d132-8186-a4b8-637ec394acc2"
     - stage: links
-      stageUuid: "5dc5b155-9c02-8ed7-b82d-a84971bb8162"
+      stageUuid: "0c1783d9-3bba-8ca5-92a8-04daf7260e04"
     - stage: horo
-      stageUuid: "49b1ea13-3daa-8f9d-a464-b9bea0ed4b75"
+      stageUuid: "f766574d-8b4c-81ff-af84-53e89b9ee12c"
     - stage: seal
-      stageUuid: "45ee35e3-5f7c-8251-8228-d2585ea96c79"
+      stageUuid: "498cb791-69c4-862d-b0bd-14b96e2c91e7"
     - stage: uuid
-      stageUuid: "8272c7e6-65a9-87a3-9b6d-ca1dbefeb8a0"
+      stageUuid: "526ffc0b-d35d-8aec-8ef6-a627164654b6"
 version: 2
 ---
 # predecessor

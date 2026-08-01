@@ -1,73 +1,35 @@
 ---
 name: repeat
 description: "Use when reasoning about repeat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/repeat
-coordinate: repeat · 8/crest · 21aed7f1
-contentUuid: "54bc99bd-feff-5aaf-a980-c6242b097415"
-diamondUuid: "fed52590-0292-84a8-a08b-5eccd8b56152"
-uuid: "21aed7f1-f020-8bdf-8b07-dc41d1f16768"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - count
-    - frequency
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - count
-    - frequency
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/repeat"
+coordinate: "vocabulary/repeat · 4/weave · 48033f02"
+contentUuid: "5be390b2-f9db-58b3-967f-192f583c01c2"
+diamondUuid: "962dbfba-2847-8744-a51d-afcbd64cdc91"
+uuid: "48033f02-7268-8315-806b-3457f641b182"
+horo: 4
 typography:
-  partition: repeat
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - count
-    - frequency
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - count
-    - frequency
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - count
-    - frequency
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "a22c4cd8-eec8-8f52-b1bd-085dcf32be6d"
+  computationUuid: "9cf89583-cc31-8404-8de4-56dd262b49f1"
   stages:
     - stage: path
-      stageUuid: "ffcb5d77-513d-8879-9178-ed5f3d4ec3a9"
+      stageUuid: "6af16b30-89e1-8675-836e-c3473ae2efa8"
     - stage: trinity
-      stageUuid: "32d4370b-36b5-8fc7-97bf-a4658f1c5eb8"
+      stageUuid: "091d24a4-13ec-896c-a120-04305e4b4cce"
     - stage: boundary
-      stageUuid: "4052b99c-0946-84b7-9828-7dd7a13cf94e"
+      stageUuid: "2a44a1ea-1f3d-8a68-8450-bf8ef61c1ff2"
     - stage: links
-      stageUuid: "fa58f456-6b8d-8526-97d1-411d00ed1e37"
+      stageUuid: "02b9e573-022f-82ca-a732-52717f24bac7"
     - stage: horo
-      stageUuid: "2badada0-28b6-8540-8bbb-dd73872a7649"
+      stageUuid: "28b15c8e-615e-8de2-958e-db01d16d10ce"
     - stage: seal
-      stageUuid: "ae66c2bd-f1d7-88e3-a750-fb90e3995212"
+      stageUuid: "bc0a5fa7-65b3-8f00-b6cb-3b9eea114089"
     - stage: uuid
-      stageUuid: "02f1cabe-9728-8b51-80cc-3a11f5c54e21"
+      stageUuid: "978eca1c-e5d3-8408-9117-2b33bfa0353a"
 version: 2
 ---
 # repeat

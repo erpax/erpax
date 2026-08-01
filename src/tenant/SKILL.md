@@ -2,30 +2,14 @@
 name: tenant
 description: "Use when modelling one tenant — the singular model of the tenants collection (the plural store); one isolated organization within the multi-tenant platform."
 atomPath: tenant
-coordinate: tenant · 7/descent · df2a1e12
-contentUuid: "d422e198-6699-5f40-938a-80c7c91ba677"
-diamondUuid: "48749c71-545d-8e90-9cfd-84c263be7c8e"
-uuid: "df2a1e12-6998-8ec9-9e96-cbc3cbcf9f0c"
-horo: 7
-bonds:
-  in:
-    - balance
-    - law
-    - organization
-    - research
-    - tenant
-    - tenants
-  out:
-    - balance
-    - law
-    - organization
-    - research
-    - tenant
-    - tenants
+coordinate: "tenant · 2/share · ecd4b8b7"
+contentUuid: "29abe49b-172d-57ad-a707-e2c427f60999"
+diamondUuid: "7385e652-09ab-82b4-8141-157003369107"
+uuid: "ecd4b8b7-e437-85ac-bff0-d0d311dbb6d2"
+horo: 2
 typography:
   partition: tenant
   bondDegree: 0
-  neighbors: []
 standards:
   - BEPS
   - "Berlin-Group-PSD2"
@@ -39,30 +23,9 @@ standards:
   - "UN-CEFACT"
   - "W3C-DID-1.0"
   - "WCO-HS"
-  - "re-exports only; the truth lives in ./remote/secret"
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - law
-    - organization
-    - tenants
-  matrix:
-    - balance
-    - law
-    - organization
-    - research
-    - tenant
-    - tenants
-  backlinks:
-    - balance
-    - law
-    - organization
-    - research
-    - tenant
-    - tenants
 signatures:
-  computationUuid: "7227604c-4a8f-8dc2-97df-ce7e91352b8f"
+  computationUuid: "8f3c8ca4-f4ce-862b-bdfe-417856896394"
   stages:
     - stage: path
       stageUuid: "4c66b572-895c-8d84-8cc0-8c422684b9ec"
@@ -73,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "788083c4-73e6-8e46-a522-f7b66f2af46e"
     - stage: horo
-      stageUuid: "82d0787c-7ef3-8001-92ca-9c119688b392"
+      stageUuid: "63d27d67-cbd0-80ef-8025-5d94efd70f76"
     - stage: seal
       stageUuid: "235a379b-38c5-8ad2-acf9-319e95140680"
     - stage: uuid
-      stageUuid: "a14e544c-73bc-883c-b453-ff5fa4a26f56"
+      stageUuid: "a14294a9-03c2-89a1-966d-8d101d9183b4"
 version: 2
 ---
 # tenant — the model of one [[tenants]] row

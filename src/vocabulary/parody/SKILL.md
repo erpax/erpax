@@ -1,63 +1,35 @@
 ---
 name: parody
 description: "Use when reasoning about parody as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/parody
-coordinate: parody · 2/share · b231a37b
-contentUuid: "6cf234f8-7839-51e6-b7b5-8188371bef5e"
-diamondUuid: "44d22785-79d3-8b9c-a2bd-cc40a2857320"
-uuid: "b231a37b-01cc-8cf6-affe-614f3c57ce39"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/parody"
+coordinate: "vocabulary/parody · 7/descent · b6b16079"
+contentUuid: "bfdf793e-0fae-5c62-8c79-8c39c1193e32"
+diamondUuid: "3ef0ded4-d8c2-8b0a-bac7-d3ad86a1f3cd"
+uuid: "b6b16079-6fe0-8185-b783-b1b8dcf8e410"
+horo: 7
 typography:
-  partition: parody
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "5debbdad-6d4d-8ef8-ab64-4a0ed405d101"
+  computationUuid: "b9cdbc08-752e-8fd5-9bab-6f97bb2576aa"
   stages:
     - stage: path
-      stageUuid: "9ffb1912-772f-8c1b-8735-18562991fa57"
+      stageUuid: "840f3b56-e243-84aa-a535-70bcd2eb12a3"
     - stage: trinity
-      stageUuid: "0b83aaad-a326-83b5-ad62-db9c55a976b1"
+      stageUuid: "c7c48d95-2492-83d5-9ee5-ea1e818e24b4"
     - stage: boundary
-      stageUuid: "97afb90e-7279-87b8-8186-50511b3cbcad"
+      stageUuid: "52b81aa4-c0d0-8f67-bd1a-bdafa612ba91"
     - stage: links
-      stageUuid: "0c8fd20c-c20a-8082-9105-2105f874678c"
+      stageUuid: "3d433ad6-b219-81be-bab0-2e97979c12f0"
     - stage: horo
-      stageUuid: "297df395-a0ce-8ac8-adcc-192a2412a063"
+      stageUuid: "cb186a21-9db2-82ad-9008-b7491485af3e"
     - stage: seal
-      stageUuid: "6ebc2e4a-9129-8bce-8e3a-7c8639942a01"
+      stageUuid: "80daeebf-1dd2-8381-89ac-54996c7a5564"
     - stage: uuid
-      stageUuid: "ee951c31-f8af-8e45-bdef-02ae0013ce12"
+      stageUuid: "d6a96cd2-c875-8f97-8034-a9a44bdc97e9"
 version: 2
 ---
 # parody

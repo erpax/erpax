@@ -2,64 +2,20 @@
 name: import
 description: "Use when reasoning about the import convention — every import must read from an atom index (@/x), never a deep file or a relative path; coverage is the index-only fraction of all imports, and the convention is enforced by the import lint (a ratchet that fails the build when non-index imports rise above a committed baseline), reaching its ∞ tamper-cost limit only at coverage one."
 atomPath: "convention/import"
-coordinate: "convention/import · 2/share · a3ae7fea"
-contentUuid: "b6c7a426-3cdc-5abb-a7f9-eac0dc7c4a61"
-diamondUuid: "a7f4be40-daa9-8302-a54a-af0a710180c3"
-uuid: "a3ae7fea-6d8a-83d2-b728-2d608e15cab0"
-horo: 2
-bonds:
-  in:
-    - convention
-    - cost
-    - exported
-    - import
-    - law
-    - lawful
-    - method
-    - tamper
-  out:
-    - cost
-    - exported
-    - import
-    - law
-    - lawful
-    - method
-    - tamper
+coordinate: "convention/import · 8/crest · e2dda81a"
+contentUuid: "ae127ada-a919-5823-a2f4-3fdafca92128"
+diamondUuid: "6155574c-8f58-8b59-bae2-f140ccc06c68"
+uuid: "e2dda81a-cfca-8671-b3e4-bab3ff9a2b38"
+horo: 8
 typography:
   partition: convention
   bondDegree: 40
-  neighbors:
-    - aura
-    - "quantum/boundary"
-    - "tamper/import"
 standards:
   - "UBL-2.1"
   - "the import graph is the config (imported↔declared) — an atom's only public face is its index.ts"
 bindings: []
-neighbors:
-  wikilink:
-    - cost
-    - exported
-    - law
-    - tamper
-  matrix:
-    - cost
-    - exported
-    - import
-    - law
-    - lawful
-    - method
-    - tamper
-  backlinks:
-    - cost
-    - exported
-    - import
-    - law
-    - lawful
-    - method
-    - tamper
 signatures:
-  computationUuid: "6727b840-9d23-8489-8016-33a0ceba251d"
+  computationUuid: "d0aaaf7e-2392-8f39-9c6d-676337dc8130"
   stages:
     - stage: path
       stageUuid: "de3c492b-ce89-85d0-aec4-77aa5233f279"
@@ -70,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "bc0a91d1-7269-80d4-a7fc-21c0a44cc42b"
     - stage: horo
-      stageUuid: "cda067ba-835e-84a2-b80d-172531c0785a"
+      stageUuid: "1c10fa01-c508-8d01-8971-a0e52aaa7cf2"
     - stage: seal
       stageUuid: "1f48e516-c239-8511-bddf-f57077304e50"
     - stage: uuid
-      stageUuid: "0bf0fa6d-731c-8006-8042-39ce530ab1ca"
+      stageUuid: "af2b44f6-a4ba-83cb-a5d1-8bbb8381cf01"
 version: 2
 ---
 # convention/import — every import is from an atom index, never a deep/relative path

@@ -1,63 +1,35 @@
 ---
 name: europe
 description: "Use when reasoning about europe as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/europe
-coordinate: europe · 1/base · f94ca7f3
-contentUuid: "8ed3d69c-0e01-5e8e-a043-78d9acc3bdc6"
-diamondUuid: "ae0ac168-0463-811e-bcb1-b4df8f1c82e9"
-uuid: "f94ca7f3-c966-8dea-8c64-901176cc070b"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/europe"
+coordinate: "vocabulary/europe · 5/round · 0bb6d5d7"
+contentUuid: "9ead03a2-a7a4-53f9-a40e-fc19f3b7f68f"
+diamondUuid: "d9881c1b-85cd-844d-ad31-cf70c5a4db31"
+uuid: "0bb6d5d7-dcd8-8727-afe3-814aaf46702c"
+horo: 5
 typography:
-  partition: europe
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "5f1c6e7d-bca8-8711-a9dc-508e074a1ec4"
+  computationUuid: "0777590a-2c3e-8dc5-bea8-07fb2c3f270b"
   stages:
     - stage: path
-      stageUuid: "cb9f863d-e166-8307-8005-19ebbc380d03"
+      stageUuid: "d60c986e-a701-8aaf-ad16-2a0bf6304d82"
     - stage: trinity
-      stageUuid: "605dba40-324e-845e-8777-03ec5fe2079e"
+      stageUuid: "49e683f8-669a-828c-8017-fe27e8428b63"
     - stage: boundary
-      stageUuid: "3fa26112-9050-87f1-95cf-5b0dbd853624"
+      stageUuid: "70148f34-6428-8a89-82c4-b8362fde747d"
     - stage: links
-      stageUuid: "450e13cf-9f46-8bd1-815e-fddc1ff82fac"
+      stageUuid: "98116dcb-3283-89ef-87cf-5e6a05648042"
     - stage: horo
-      stageUuid: "450380ad-61bc-80ff-be2f-07a331a4e5e8"
+      stageUuid: "00767ef5-1fca-8237-b001-7bff4cc0a71b"
     - stage: seal
-      stageUuid: "6ef44542-c53a-8c80-9626-3c690f22d1c9"
+      stageUuid: "245cec38-73cc-8195-a43f-4cea9f3993df"
     - stage: uuid
-      stageUuid: "0cbbf505-4e02-8d50-b03e-fbd46eb3d141"
+      stageUuid: "7e7eb537-b494-8942-b894-e7068ad7ce2a"
 version: 2
 ---
 # europe

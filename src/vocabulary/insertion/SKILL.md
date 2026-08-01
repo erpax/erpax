@@ -1,53 +1,35 @@
 ---
 name: insertion
 description: "Use when reasoning about insertion — The place of attachment of a muscle, or what the muscle moves."
-atomPath: vocabulary/insertion
-coordinate: insertion · 1/base · 1b94eafa
-contentUuid: "e1d49bd5-d7a2-5f9e-b7c1-51d63a7a1c14"
-diamondUuid: "1ff8affa-4eb7-86a1-9f8e-03a7b71c09a8"
-uuid: "1b94eafa-73b2-81a4-b5c8-858df20a03a1"
-horo: 1
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/insertion"
+coordinate: "vocabulary/insertion · 4/weave · fabc6255"
+contentUuid: "019ba4ed-37da-52d4-a5c8-42f81708b699"
+diamondUuid: "e38f93de-a1ec-815a-bea1-90fba97f296e"
+uuid: "fabc6255-b705-8250-98ec-a048eecc5c4f"
+horo: 4
 typography:
-  partition: insertion
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "ea60d3b6-8e73-8352-8d7b-985af16046f7"
+  computationUuid: "69a9b38d-1749-897e-b53d-439f8868bee9"
   stages:
     - stage: path
-      stageUuid: "42587470-34c0-88ee-aa72-98267a4f312a"
+      stageUuid: "b9816e93-2990-8488-a752-bcf79c99f580"
     - stage: trinity
-      stageUuid: "cc7c593b-40bf-86a8-a2f8-37d5e26c0ed2"
+      stageUuid: "eaf6240b-aa8c-83ec-a9d7-8fbcc47b0c3f"
     - stage: boundary
-      stageUuid: "331d63de-1285-82af-8156-410a90632011"
+      stageUuid: "bcb4751d-2a7e-809f-abc3-e47d6baab2a5"
     - stage: links
-      stageUuid: "29ae8502-df5e-897c-82eb-c64e2d456d22"
+      stageUuid: "94793c2e-bd14-8a0d-8e61-10eff454fec3"
     - stage: horo
-      stageUuid: "77ed2bde-adff-8539-b1e2-e701fea9393c"
+      stageUuid: "de578e12-d001-83d2-9b9e-527224b33302"
     - stage: seal
-      stageUuid: "62fd16d9-42e1-8636-b164-ea95425636a7"
+      stageUuid: "b2f934c7-eb8a-8f21-80d5-0b170d7fd518"
     - stage: uuid
-      stageUuid: "5e707294-800a-820b-a17c-66a500f27aa1"
+      stageUuid: "570670f6-fddc-8245-aa4d-0dcb251024ac"
 version: 2
 ---
 # insertion

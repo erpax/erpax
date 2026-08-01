@@ -2,76 +2,16 @@
 name: contracts
 description: "Use when recording, approving, or recognizing revenue from customer contracts — IFRS-15 §10 master record with transaction price decomposition (fixed, variable, financing), performance obligations, contract combination, amendments, and SOX-gated approval. The canonical revenue-contract collection."
 atomPath: "customers/contracts"
-coordinate: "customers/contracts · 8/crest · 573c7328"
-contentUuid: "a5bf735a-07d3-51ca-b37a-79000d929ced"
-diamondUuid: "673f16f8-d081-82c3-aedf-89cfa563a9cf"
-uuid: "573c7328-58ac-8c03-ac66-1db3c415b049"
-horo: 8
-bonds:
-  in:
-    - amendment
-    - amendments
-    - assignment
-    - auditright
-    - clause
-    - confidentiality
-    - consent
-    - contract
-    - customers
-    - dataprotection
-    - deferredrevenue
-    - disputeresolution
-    - forcemajeure
-    - governinglaw
-    - indemnity
-    - jurisdiction
-    - law
-    - liability
-    - license
-    - obligations
-    - orders
-    - performances
-    - remediation
-    - restriction
-    - revenue
-    - signatures
-    - termination
-    - warranty
-  out:
-    - amendment
-    - amendments
-    - assignment
-    - auditright
-    - clause
-    - confidentiality
-    - consent
-    - contract
-    - dataprotection
-    - deferredrevenue
-    - disputeresolution
-    - forcemajeure
-    - governinglaw
-    - indemnity
-    - jurisdiction
-    - law
-    - liability
-    - license
-    - obligations
-    - orders
-    - performances
-    - remediation
-    - restriction
-    - revenue
-    - signatures
-    - termination
-    - warranty
+coordinate: "customers/contracts · 4/weave · e77e45c5"
+contentUuid: "8d3e9014-b998-5174-8d41-8f55f18b5ec0"
+diamondUuid: "3bf87541-93dd-88c1-9375-d53e91498ed3"
+uuid: "e77e45c5-9b5f-8843-b1ee-5d763d91c68c"
+horo: 4
 typography:
   partition: customers
   bondDegree: 0
-  neighbors: []
 standards:
   - "ASC-606"
-  - "EU-2014/55"
   - "EU-537/2014"
   - "EU-910/2014"
   - "GDPR Art.6(1)(b) lawful-basis-contract"
@@ -105,71 +45,8 @@ standards:
   - eIDAS
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - amendments
-    - law
-    - obligations
-    - performances
-    - signatures
-  matrix:
-    - amendment
-    - amendments
-    - assignment
-    - auditright
-    - clause
-    - confidentiality
-    - consent
-    - contract
-    - dataprotection
-    - deferredrevenue
-    - disputeresolution
-    - forcemajeure
-    - governinglaw
-    - indemnity
-    - jurisdiction
-    - law
-    - liability
-    - license
-    - obligations
-    - orders
-    - performances
-    - remediation
-    - restriction
-    - revenue
-    - signatures
-    - termination
-    - warranty
-  backlinks:
-    - amendment
-    - amendments
-    - assignment
-    - auditright
-    - clause
-    - confidentiality
-    - consent
-    - contract
-    - dataprotection
-    - deferredrevenue
-    - disputeresolution
-    - forcemajeure
-    - governinglaw
-    - indemnity
-    - jurisdiction
-    - law
-    - liability
-    - license
-    - obligations
-    - orders
-    - performances
-    - remediation
-    - restriction
-    - revenue
-    - signatures
-    - termination
-    - warranty
 signatures:
-  computationUuid: "72933b1b-ead4-8c5f-aff3-4e6b1c8891ba"
+  computationUuid: "1144e96f-1ecf-8cf9-b402-648efb142fb4"
   stages:
     - stage: path
       stageUuid: "18721974-e2b6-8318-9112-35ae1d2a4a37"
@@ -180,11 +57,11 @@ signatures:
     - stage: links
       stageUuid: "632e0ccd-8050-8be6-b8dd-5f0e7f19abeb"
     - stage: horo
-      stageUuid: "1fbf8600-7b88-816e-a44b-58594f1865bb"
+      stageUuid: "236e0b75-618d-802e-b278-2c03ae4b4bf6"
     - stage: seal
       stageUuid: "69f1a37a-6261-8ed9-9de0-183821889f48"
     - stage: uuid
-      stageUuid: "81427eb1-d1f6-8b55-b6b1-a7c44f231226"
+      stageUuid: "e7c6b835-b1cf-8e4f-a99c-c832a6ecaa23"
 version: 2
 ---
 # contracts

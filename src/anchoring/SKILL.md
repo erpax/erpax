@@ -2,38 +2,15 @@
 name: anchoring
 description: "Use when periodically pinning a Merkle root of audit leaves to entropy no single party controls (Bitcoin OP_RETURN, an L2, Cardano metadata, AT-proto, or a real TSA) so a regulator can verify ERPax integrity without trusting ERPax — and when you must refuse a non-external stub as tamper-evidence."
 atomPath: anchoring
-coordinate: "anchoring · 4/weave · 1cc71b6d"
-contentUuid: "e4d81f6d-9ce3-537a-af57-0bbb6a8ca20e"
-diamondUuid: "1dbe3c77-929f-8631-9db5-105e7c2b97ad"
-uuid: "1cc71b6d-8b65-8afe-a505-77ae80634605"
-horo: 4
-bonds:
-  in:
-    - anchor
-    - audit
-    - cost
-    - integrity
-    - law
-    - tamper
-  out:
-    - anchor
-    - audit
-    - cost
-    - integrity
-    - law
-    - tamper
+coordinate: "anchoring · 8/crest · 13ee8cc4"
+contentUuid: "278647d8-48ef-573e-88fd-d2f25f224b10"
+diamondUuid: "fd77fdb9-569d-8022-b9f7-50e7b5dedd35"
+uuid: "13ee8cc4-c498-8408-8670-a707e65f3271"
+horo: 8
 typography:
   partition: anchoring
-  bondDegree: 18
-  neighbors: []
+  bondDegree: 6
 standards:
-  - "EU-2014/55"
-  - "EU-2018/1673"
-  - "EU-2018/1725"
-  - "EU-2018/302"
-  - "EU-2018/389-SCA-RTS"
-  - "EU-2018/843"
-  - "EU-2018/957"
   - "EU-537/2014"
   - "EU-910/2014"
   - "ISO 19011:2018 §6.4.6 (third-party-verifiable audit trail)"
@@ -47,30 +24,8 @@ standards:
   - eIDAS
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - anchor
-    - audit
-    - cost
-    - integrity
-    - law
-    - tamper
-  matrix:
-    - anchor
-    - audit
-    - cost
-    - integrity
-    - law
-    - tamper
-  backlinks:
-    - anchor
-    - audit
-    - cost
-    - integrity
-    - law
-    - tamper
 signatures:
-  computationUuid: "26dae7b5-9790-89b6-87de-0455be334efc"
+  computationUuid: "376f4415-8a3b-858e-bdec-2121b4d267bc"
   stages:
     - stage: path
       stageUuid: "63f36273-5705-8ddc-b213-153a26f34905"
@@ -79,13 +34,13 @@ signatures:
     - stage: boundary
       stageUuid: "8b656b15-723f-8b85-a869-b20424bab41f"
     - stage: links
-      stageUuid: "b6682a0d-d0cb-8ffc-876e-288513b51ea8"
+      stageUuid: "57e2aee5-2219-88b3-9b86-17ec71a63c6d"
     - stage: horo
-      stageUuid: "db4f5866-7875-8657-a0a5-51181f968603"
+      stageUuid: "5635f018-0b57-8bc5-b52b-efd14c4969a7"
     - stage: seal
       stageUuid: "49ef4046-6840-83bc-8a17-047c570945d8"
     - stage: uuid
-      stageUuid: "ec3ad496-84d2-896e-b7f2-2aef17557d62"
+      stageUuid: "1cb66ef6-69e5-82e0-b493-3bc4d4366f86"
 version: 2
 ---
 # anchoring — blockchain/TSA anchoring (the one borrowed external entropy)

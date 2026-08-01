@@ -1,91 +1,34 @@
 ---
 name: constraint
 description: "Use when defining data constraints at the schema level — NOT NULL / UNIQUE / FOREIGN KEY / CHECK / DEFAULT constraints, their lifecycle (creation/modification/disable), enforcement semantics, and violation detection in the database layer."
-atomPath: vocabulary/constraint
-coordinate: constraint · 8/crest · 31f8fe59
-contentUuid: "c95e7cfc-360a-57f7-b6d1-94784dee837e"
-diamondUuid: "c1e0cbf0-c00f-875a-b6db-5c8f9c84080f"
-uuid: "31f8fe59-5f09-8ce9-89c5-c4153ff71e71"
-horo: 8
-bonds:
-  in:
-    - cardinality
-    - consistency
-    - database
-    - fields
-    - identity
-    - market
-    - node
-    - nullability
-    - property
-    - schema
-    - science
-  out:
-    - cardinality
-    - consistency
-    - database
-    - fields
-    - identity
-    - market
-    - node
-    - nullability
-    - property
-    - schema
-    - science
+atomPath: "vocabulary/constraint"
+coordinate: "vocabulary/constraint · 5/round · 959f1b3e"
+contentUuid: "f3789ae8-3817-52b3-b898-fb04e75ebbf4"
+diamondUuid: "4253980f-5d09-8570-a235-3f00f177307e"
+uuid: "959f1b3e-1c58-804d-aa59-ecedbada9f4a"
+horo: 5
 typography:
-  partition: constraint
+  partition: vocabulary
   bondDegree: 33
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - database
-    - fields
-    - identity
-    - nullability
-    - schema
-  matrix:
-    - cardinality
-    - consistency
-    - database
-    - fields
-    - identity
-    - market
-    - node
-    - nullability
-    - property
-    - schema
-    - science
-  backlinks:
-    - cardinality
-    - consistency
-    - database
-    - fields
-    - identity
-    - market
-    - node
-    - nullability
-    - property
-    - schema
-    - science
 signatures:
-  computationUuid: "0177faf0-f107-8dc6-ad51-ecc1450502b1"
+  computationUuid: "9cd9c4e0-03e3-8435-ad8e-f0a6ba0b56cd"
   stages:
     - stage: path
-      stageUuid: "9fb7f061-ddcc-8ee8-b09d-e2fc1e7b5c1f"
+      stageUuid: "508a6b44-6a81-89f1-a614-5a26b071db24"
     - stage: trinity
-      stageUuid: "bb65e571-c785-8522-952e-4754e4abc8e9"
+      stageUuid: "2264bc54-7d03-8c9a-a4e2-7d66e9e11479"
     - stage: boundary
-      stageUuid: "286c5b8e-ebd5-89d4-820d-74c40e971979"
+      stageUuid: "b541a31e-3932-892f-bb0d-681b9dc79ef3"
     - stage: links
-      stageUuid: "2a4b4184-a557-8db4-9772-1b3b25cd3eb5"
+      stageUuid: "c333cdb7-09be-86ae-b4fe-173597b985b3"
     - stage: horo
-      stageUuid: "176576f4-22ed-8eff-9733-2dc6074c6dde"
+      stageUuid: "ced9ef67-5b81-8d51-bd8f-7c4323770fb0"
     - stage: seal
-      stageUuid: "2116531b-44c9-8ab7-835d-cfa4b160b79b"
+      stageUuid: "a57a46db-358e-872d-99e3-dc9760824002"
     - stage: uuid
-      stageUuid: "2993decd-45b7-8b64-8356-414d8eb95729"
+      stageUuid: "628f43b5-1651-8d5b-871c-003e54b2e2f3"
 version: 2
 ---
 # constraint

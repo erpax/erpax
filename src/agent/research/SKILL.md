@@ -2,155 +2,20 @@
 name: research
 description: "Use when registering an agent R&D society as tenant users with assigned roles, coordinating findings over the chat bus, and gating each finding behind tamper-evident tenant-admin approval — the actor-merge made operational (an agent IS a user)."
 atomPath: "agent/research"
-coordinate: "agent/research · 5/round · d1f8334e"
-contentUuid: "05387249-efb7-5e96-9c0c-197198ebf15f"
-diamondUuid: "79ae3135-daa4-837f-b4d9-6cd43424576d"
-uuid: "d1f8334e-6dcd-887f-9529-eba8f1f3d0d7"
-horo: 5
-bonds:
-  in:
-    - accounting
-    - agent
-    - akashic
-    - anchor
-    - angel
-    - breath
-    - civilization
-    - collapse
-    - consultant
-    - consulting
-    - design
-    - development
-    - drone
-    - feedback
-    - history
-    - interview
-    - law
-    - literature
-    - localize
-    - merge
-    - oid
-    - organization
-    - profane
-    - project
-    - proof
-    - research
-    - sacred
-    - science
-    - uuid
-    - zeropoint
-  out:
-    - accounting
-    - akashic
-    - anchor
-    - angel
-    - breath
-    - civilization
-    - collapse
-    - consultant
-    - consulting
-    - design
-    - development
-    - drone
-    - feedback
-    - history
-    - interview
-    - law
-    - literature
-    - localize
-    - merge
-    - oid
-    - organization
-    - profane
-    - project
-    - proof
-    - research
-    - sacred
-    - science
-    - uuid
-    - zeropoint
+coordinate: "agent/research · 2/share · 8f2748e6"
+contentUuid: "e1902cc8-8ec6-5144-9fff-b14dacd0bac0"
+diamondUuid: "360afb9c-a379-8907-bce0-2c4c73d1d844"
+uuid: "8f2748e6-f28d-8316-a3d9-7abd6597d02c"
+horo: 2
 typography:
   partition: agent
-  bondDegree: 149
-  neighbors:
-    - agent
+  bondDegree: 158
 standards:
   - "RFC 9562 §5.8 content-addressed identity (agent uuid, finding uuid)"
   - "RFC-9562"
 bindings: []
-neighbors:
-  wikilink:
-    - agent
-    - audit
-    - cross
-    - identity
-    - law
-    - merge
-    - receipt
-    - tenant
-    - user
-  matrix:
-    - accounting
-    - akashic
-    - anchor
-    - angel
-    - breath
-    - civilization
-    - collapse
-    - consultant
-    - consulting
-    - design
-    - development
-    - drone
-    - feedback
-    - history
-    - interview
-    - law
-    - literature
-    - localize
-    - merge
-    - oid
-    - organization
-    - profane
-    - project
-    - proof
-    - research
-    - sacred
-    - science
-    - uuid
-    - zeropoint
-  backlinks:
-    - accounting
-    - akashic
-    - anchor
-    - angel
-    - breath
-    - civilization
-    - collapse
-    - consultant
-    - consulting
-    - design
-    - development
-    - drone
-    - feedback
-    - history
-    - interview
-    - law
-    - literature
-    - localize
-    - merge
-    - oid
-    - organization
-    - profane
-    - project
-    - proof
-    - research
-    - sacred
-    - science
-    - uuid
-    - zeropoint
 signatures:
-  computationUuid: "c6502650-149e-837b-bb4c-7e5de235478c"
+  computationUuid: "972db877-f896-860f-8f4f-5aca197c4112"
   stages:
     - stage: path
       stageUuid: "e0999009-6b6a-86b9-9558-c23da22b26e6"
@@ -161,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "bb3db05e-a70f-8d10-adb1-a07e7f11d3e8"
     - stage: horo
-      stageUuid: "c86195bf-a8bb-8a6c-a866-674fac7469e9"
+      stageUuid: "5c4ce6e0-9c2b-83b2-9781-76a7b8463e1f"
     - stage: seal
       stageUuid: "977a727b-ae11-8cd2-a77d-22cf313e15da"
     - stage: uuid
-      stageUuid: "7c2fd5d2-abab-8ae0-b634-e9d800db74aa"
+      stageUuid: "b7dedc4d-174d-8a32-881a-13ed93385952"
 version: 2
 ---
 # agent/research — the R&D society (an agent IS a user)

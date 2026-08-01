@@ -2,55 +2,19 @@
 name: sealed
 description: "Use when reasoning about error handling as an entropy leak — a swallowed or defaulted catch hides the truth so entropy escapes; the corpus is sealed only when errors propagate, and coverage measures the fraction of catches that do not leak."
 atomPath: "convention/sealed"
-coordinate: "convention/sealed · 4/weave · 8873e75d"
-contentUuid: "f7b513b4-c9a5-5e07-86db-915100c066a7"
-diamondUuid: "8c5db77c-65c8-8cd7-94b5-a577195ec59b"
-uuid: "8873e75d-0265-8e47-a64e-d2a91e522591"
-horo: 4
-bonds:
-  in:
-    - collider
-    - convention
-    - default
-    - entropy
-    - gate
-    - law
-  out:
-    - collider
-    - convention
-    - default
-    - entropy
-    - gate
-    - law
+coordinate: "convention/sealed · 2/share · 13015cb4"
+contentUuid: "1b314219-09aa-5609-8765-8ed88da1c07d"
+diamondUuid: "711eaaa8-a84b-8ecf-b4ca-592e5ffd18d7"
+uuid: "13015cb4-b8e0-82d3-9217-4ed50e9326fb"
+horo: 2
 typography:
   partition: convention
   bondDegree: 19
-  neighbors: []
 standards:
   - "error propagation over swallow/default · no defined fallback · zero-entropy (no hidden state)"
 bindings: []
-neighbors:
-  wikilink:
-    - collider
-    - default
-    - entropy
-    - law
-  matrix:
-    - collider
-    - convention
-    - default
-    - entropy
-    - gate
-    - law
-  backlinks:
-    - collider
-    - convention
-    - default
-    - entropy
-    - gate
-    - law
 signatures:
-  computationUuid: "8faece7c-d517-8e14-bc1c-f69bec5d779e"
+  computationUuid: "2b0b4bfc-5597-8ef6-acf3-1c9067c225b6"
   stages:
     - stage: path
       stageUuid: "fdf6dc66-0ef3-85d2-a4ca-eaea9df5cb28"
@@ -61,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f24deda2-c095-80f7-8884-fb63a6535862"
     - stage: horo
-      stageUuid: "7d5a1eb2-ed1e-8890-82db-34c90f13e5ae"
+      stageUuid: "b48d2051-32b0-8292-b987-e7bc12859348"
     - stage: seal
       stageUuid: "fc54d3ec-3c69-8716-a14e-f15faebb0a3f"
     - stage: uuid
-      stageUuid: "e0a4f51e-36de-8cca-9806-f3f62acbe1b0"
+      stageUuid: "78c52e4c-ed10-854c-961f-9568353915cb"
 version: 2
 ---
 # convention/sealed — entropy leaves through error handling

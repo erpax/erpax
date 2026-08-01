@@ -1,58 +1,35 @@
 ---
 name: encoding
 description: Use when reasoning about encoding — A media object that encodes this CreativeWork. This property is a synonym for associatedMedia.
-atomPath: vocabulary/encoding
-coordinate: encoding · 4/weave · 657716c8
-contentUuid: "ce7af2cc-ed4c-5bca-afa1-f7f103fd3a8e"
-diamondUuid: "fbf8c827-c1c1-80a2-891c-6ebb38758488"
-uuid: "657716c8-d4b0-8170-a6fc-01862b1162aa"
-horo: 4
-bonds:
-  in:
-    - format
-    - law
-    - type
-  out:
-    - format
-    - law
-    - type
+atomPath: "vocabulary/encoding"
+coordinate: "vocabulary/encoding · 5/round · 6b85a7d2"
+contentUuid: "0ee1f602-285c-5619-990b-45da95a7abca"
+diamondUuid: "10c53d31-3c7e-8735-b4df-310adb3554fc"
+uuid: "6b85a7d2-5c35-8fd6-97c7-1f59bb6eb7fc"
+horo: 5
 typography:
-  partition: encoding
+  partition: vocabulary
   bondDegree: 10
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - format
-    - law
-    - type
-  matrix:
-    - format
-    - law
-    - type
-  backlinks:
-    - format
-    - law
-    - type
 signatures:
-  computationUuid: "289a82fd-2093-8ca6-8fdb-0d1f340f39c9"
+  computationUuid: "5a9ce15d-251d-8785-beff-68c3568a914c"
   stages:
     - stage: path
-      stageUuid: "30fa74ac-7515-836a-8d42-009e4d2f7b87"
+      stageUuid: "b460fb58-9e40-8684-bd3d-7e935eaa2cae"
     - stage: trinity
-      stageUuid: "fcda58c6-8e42-880a-9309-364a69cc1684"
+      stageUuid: "2c09d3bf-4259-8472-9bf6-c565043c5fea"
     - stage: boundary
-      stageUuid: "076aa726-2ae0-8cdd-85ae-28cf74bacedd"
+      stageUuid: "a4be801c-54d6-8bb0-8e0f-67d1e24889a7"
     - stage: links
-      stageUuid: "34ca60a2-e0ab-8a8a-a224-30e5ee89c017"
+      stageUuid: "ff2ac691-88b1-8865-abf6-5a701a667a6f"
     - stage: horo
-      stageUuid: "5712a414-6267-81c0-a389-70d07405a7c4"
+      stageUuid: "e5299d2f-7bd2-8a84-b4f5-541d15644fa4"
     - stage: seal
-      stageUuid: "ad2989c0-468d-8969-aa58-f90a2c4d0c2d"
+      stageUuid: "f11e315d-caac-8925-a570-f13f330a7469"
     - stage: uuid
-      stageUuid: "3d5fde68-742c-8c21-8959-264c4d37b251"
+      stageUuid: "afa33b4a-31a1-850f-ac61-732950c9649e"
 version: 2
 ---
 # encoding

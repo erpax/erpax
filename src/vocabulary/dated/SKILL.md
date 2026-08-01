@@ -1,73 +1,35 @@
 ---
 name: dated
 description: "Use when reasoning about dated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/dated
-coordinate: dated · 4/weave · b52b6bd7
-contentUuid: "76ab16eb-35a9-5702-8706-652c112003c7"
-diamondUuid: "a77819a5-7921-8f8e-925e-99fcc2f8715c"
-uuid: "b52b6bd7-8a89-8255-95bc-f70c35e7bcb8"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - money
-    - specification
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - money
-    - specification
-    - sti
+atomPath: "vocabulary/dated"
+coordinate: "vocabulary/dated · 1/base · 3d3913f2"
+contentUuid: "ed31ae3f-a2e0-5b9a-86ce-34c118831614"
+diamondUuid: "03df27e5-3935-8ba0-913d-d25c82828402"
+uuid: "3d3913f2-023f-8eeb-89bf-4a0af7c361be"
+horo: 1
 typography:
-  partition: dated
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - money
-    - specification
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - money
-    - specification
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - money
-    - specification
-    - sti
 signatures:
-  computationUuid: "5b64aa95-82da-8d91-b2ef-503e3069f6a2"
+  computationUuid: "1c287a4e-a76e-8ed7-9e54-3863264b27a4"
   stages:
     - stage: path
-      stageUuid: "70664f97-8182-8ac7-9f9a-0bd0379415c6"
+      stageUuid: "8dc56ac1-e211-84d9-b573-8a52a06d1d54"
     - stage: trinity
-      stageUuid: "98517645-74b8-8cda-8060-22cea9c87000"
+      stageUuid: "78a5cb95-55d5-81db-bf28-ad9145fa5456"
     - stage: boundary
-      stageUuid: "fc38db27-cc86-8da1-97e0-98efe2823b68"
+      stageUuid: "51340105-e31b-852e-8a8e-3a306c13ff4f"
     - stage: links
-      stageUuid: "06f3e716-fb43-8754-82ca-cf1ed57ef420"
+      stageUuid: "d4b1eff3-2869-8ca4-bfe8-d34e314fde91"
     - stage: horo
-      stageUuid: "9ce94155-6404-83f2-8b96-d6fe1ec63f31"
+      stageUuid: "d53fe91b-774a-8e06-9aa7-4024e2085a5a"
     - stage: seal
-      stageUuid: "b14d21c0-f1ec-858f-b1d8-d8f900343c76"
+      stageUuid: "f4f7d842-5c87-849f-a789-6ca0ce7971c4"
     - stage: uuid
-      stageUuid: "5cdc9d80-49de-80aa-bd85-c217aea03cfe"
+      stageUuid: "4e8d7209-a560-8c7b-bdb3-f0f76fc584f8"
 version: 2
 ---
 # dated

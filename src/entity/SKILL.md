@@ -2,112 +2,20 @@
 name: entity
 description: "Use when reasoning about entity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: entity
-coordinate: "entity · 2/share · 86e0a0fb"
-contentUuid: "ec9a5ad7-f20b-5b7d-a117-80ecdf60dc6d"
-diamondUuid: "a940e621-11e5-8e5e-95f2-9847ffacb6a6"
-uuid: "86e0a0fb-2a57-8e61-8b58-09a26a911b9c"
+coordinate: "entity · 2/share · 941717bb"
+contentUuid: "c3a46435-e1ee-5b76-bca7-afe7b3c4865e"
+diamondUuid: "64e078a1-768f-88cf-bcb8-172556dd537d"
+uuid: "941717bb-31c2-868d-bf8e-8e87585072b2"
 horo: 2
-bonds:
-  in:
-    - bio
-    - business
-    - chem
-    - collapse
-    - encoded
-    - encodes
-    - entity
-    - has
-    - law
-    - main
-    - medical
-    - merge
-    - molecular
-    - page
-    - part
-    - sti
-    - type
-  out:
-    - bio
-    - business
-    - chem
-    - collapse
-    - encoded
-    - encodes
-    - entity
-    - has
-    - law
-    - main
-    - medical
-    - merge
-    - molecular
-    - page
-    - part
-    - sti
-    - type
 typography:
   partition: entity
   bondDegree: 65
-  neighbors: []
 standards:
   - "COSO-2013"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - bio
-    - business
-    - chem
-    - collapse
-    - encoded
-    - encodes
-    - has
-    - law
-    - main
-    - medical
-    - merge
-    - molecular
-    - page
-    - part
-    - sti
-    - type
-  matrix:
-    - bio
-    - business
-    - chem
-    - collapse
-    - encoded
-    - encodes
-    - entity
-    - has
-    - law
-    - main
-    - medical
-    - merge
-    - molecular
-    - page
-    - part
-    - sti
-    - type
-  backlinks:
-    - bio
-    - business
-    - chem
-    - collapse
-    - encoded
-    - encodes
-    - entity
-    - has
-    - law
-    - main
-    - medical
-    - merge
-    - molecular
-    - page
-    - part
-    - sti
-    - type
 signatures:
-  computationUuid: "efd59026-19b5-8334-bfe1-dbf2afe4240b"
+  computationUuid: "d8f32b06-745f-8809-a965-5f8668a82b13"
   stages:
     - stage: path
       stageUuid: "da38b77f-624a-8103-8473-29bcd4f7c451"
@@ -118,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "604b93a6-e42a-809e-ae05-a0a76e750ac2"
     - stage: horo
-      stageUuid: "13e6b2ea-daf9-878d-8f5b-3cc52d6b5910"
+      stageUuid: "f8591438-73de-853d-aa63-037952bf587c"
     - stage: seal
       stageUuid: "73137cbd-3deb-894d-b26e-4945510e9a0d"
     - stage: uuid
-      stageUuid: "cbe4a4fc-9889-888e-b2d6-d152a0a5c083"
+      stageUuid: "db3f61ca-9f23-8bb0-a2b3-89b72fa1ce0e"
 version: 2
 ---
 # entity

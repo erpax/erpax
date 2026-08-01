@@ -2,33 +2,14 @@
 name: pipelines
 description: "Use when tracking candidate applications, interview stages, offers, and hiring decisions per position — GDPR-compliant funnel (applied→screening→interview→offer→hired/rejected), sourcing, skill-match, and recruiter activity. The GDPR Art.6(1)(b) candidate-pipeline collection."
 atomPath: "cost/centers/job/positions/recruiting/pipelines"
-coordinate: "cost/centers/job/positions/recruiting/pipelines · 8/crest · f5c2252e"
-contentUuid: "b89d656a-2875-5be5-9a6b-92c470fbcd26"
-diamondUuid: "10e2d0f7-472e-8443-a561-b679e1929e55"
-uuid: "f5c2252e-f502-85df-9a54-81ae3f6390c5"
-horo: 8
-bonds:
-  in:
-    - access
-    - fields
-    - hooks
-    - identity
-    - interview
-    - proof
-    - recruiting
-    - standard
-  out:
-    - access
-    - fields
-    - hooks
-    - identity
-    - interview
-    - proof
-    - standard
+coordinate: "cost/centers/job/positions/recruiting/pipelines · 5/round · f8504a06"
+contentUuid: "fa4d5a25-15f5-58d1-9be1-5ddd6e876eba"
+diamondUuid: "4ec95382-eab8-835d-a357-6f6fb8b96296"
+uuid: "f8504a06-b90f-8c0b-b366-3b28fd9d7d89"
+horo: 5
 typography:
   partition: cost
   bondDegree: 21
-  neighbors: []
 standards:
   - "ADA / EEOC US-equal-opportunity"
   - "EU Equal Treatment Directive 2000/78"
@@ -38,32 +19,8 @@ standards:
   - "ISO-8601-1:2019 date-time`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - fields
-    - hooks
-    - identity
-    - proof
-    - standard
-  matrix:
-    - access
-    - fields
-    - hooks
-    - identity
-    - interview
-    - proof
-    - standard
-  backlinks:
-    - access
-    - fields
-    - hooks
-    - identity
-    - interview
-    - proof
-    - standard
 signatures:
-  computationUuid: "715cd83a-5d7d-8d1f-a470-e6e04dfff546"
+  computationUuid: "a730f276-b29f-8adc-b67b-baab7c803a88"
   stages:
     - stage: path
       stageUuid: "4d849f42-98d4-8e67-bc26-040e53d4ec98"
@@ -74,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "666ce1f9-d459-8f90-bc27-19e53f781c25"
     - stage: horo
-      stageUuid: "91162533-3b98-84fc-80b4-689d5ab6ede2"
+      stageUuid: "666328b9-3a74-893b-a286-707c32b7a172"
     - stage: seal
       stageUuid: "b0184ca8-a938-82a6-bbc4-e3c778f21623"
     - stage: uuid
-      stageUuid: "804f7688-b3ac-8905-b4f9-df880f51f2fc"
+      stageUuid: "557e77d9-7e2d-8041-8c4b-9a59e35f5a93"
 version: 2
 ---
 # recruiting-pipeline

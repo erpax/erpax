@@ -1,53 +1,35 @@
 ---
 name: instrument
 description: "Use when reasoning about instrument — The object that helped the agent perform the action. E.g. John wrote a book with *a pen*."
-atomPath: vocabulary/instrument
-coordinate: instrument · 5/round · d2ef8f88
-contentUuid: "23afac59-e6ae-5412-b280-7615e1d02f5a"
-diamondUuid: "6a8426ac-dc20-8bfa-90fe-8f22b5339648"
-uuid: "d2ef8f88-7544-82a3-b65f-75e6a5b13fe6"
-horo: 5
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/instrument"
+coordinate: "vocabulary/instrument · 2/share · 8ad2b305"
+contentUuid: "00bde5ed-1c59-5f3d-a3f6-f0285e53ec16"
+diamondUuid: "64d8d9d5-c9e1-801e-a28d-760970d51d7a"
+uuid: "8ad2b305-3712-83c6-b020-8b1a92000f03"
+horo: 2
 typography:
-  partition: instrument
-  bondDegree: 6
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 15
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "55f827f7-c97a-8ddd-9413-b2cbb8e60da4"
+  computationUuid: "0e149ea7-5147-85f5-a463-078596e0d6ac"
   stages:
     - stage: path
-      stageUuid: "0206f4f7-9ca8-8f1a-be42-a83767990b95"
+      stageUuid: "494ac3a0-29c4-862c-be43-ffe332638c11"
     - stage: trinity
-      stageUuid: "0ef1e153-caf1-8337-b49e-dbf0df3573b2"
+      stageUuid: "d2aa07ff-b522-8bc5-a8cd-00b3c051993a"
     - stage: boundary
-      stageUuid: "0cef79a3-a82d-8ccc-808b-548ab2baf049"
+      stageUuid: "3a7d1e7f-9198-8671-8bfc-1f9473413fd9"
     - stage: links
-      stageUuid: "356d5a24-3f29-8752-91bc-88e6c1837492"
+      stageUuid: "5ae35c98-91d4-8480-aa53-f8949b1a0b4d"
     - stage: horo
-      stageUuid: "c1408aa1-7ebb-8260-a129-1a1c1f28ded5"
+      stageUuid: "908dace7-ef77-8e8d-84ec-22d04b80fdb5"
     - stage: seal
-      stageUuid: "e35fa601-7a4d-87de-9013-7b099b3430b3"
+      stageUuid: "aa5df5fd-9789-8312-a6b1-2d2bcde26165"
     - stage: uuid
-      stageUuid: "108fc505-6d84-8b22-bdbe-e5a60b716f66"
+      stageUuid: "0d36ba1b-c05e-8e48-9aee-5d7526814a5f"
 version: 2
 ---
 # instrument

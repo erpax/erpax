@@ -1,63 +1,35 @@
 ---
 name: lactose
 description: "Use when reasoning about lactose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/lactose
-coordinate: lactose · 4/weave · fa8db9e7
-contentUuid: "1981e9b3-13e2-5b00-bedc-a013daffd5ca"
-diamondUuid: "7f98b23b-5b53-8261-ac8f-e8b3ae02ebf9"
-uuid: "fa8db9e7-0f32-869f-b4d6-be2368fd980d"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/lactose"
+coordinate: "vocabulary/lactose · 7/descent · ac4b0b2f"
+contentUuid: "dbf03648-5563-501b-a641-62f42f0c3175"
+diamondUuid: "1369f9c0-c4ac-8941-8802-b795ebaad670"
+uuid: "ac4b0b2f-d568-8028-bfbe-53b0d6041aca"
+horo: 7
 typography:
-  partition: lactose
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "4685b0a2-474f-877c-bff8-795dc1fb9c96"
+  computationUuid: "97027d36-6908-87f7-bc6e-bc8b12878109"
   stages:
     - stage: path
-      stageUuid: "0d70069d-bf8a-8050-8ab6-bc85044e6517"
+      stageUuid: "ac7a7a7d-f2de-8fba-bd94-92f79a33408b"
     - stage: trinity
-      stageUuid: "6899cb97-32c3-8d27-a97b-d851fb152a92"
+      stageUuid: "2e7d08fa-7e86-83e8-a38f-84d552118d1a"
     - stage: boundary
-      stageUuid: "e04120fb-9bc7-835e-bc9d-40ed9639532d"
+      stageUuid: "7ca483bd-a2e6-8bd8-bd71-bf00d4cf729e"
     - stage: links
-      stageUuid: "b801e47d-4316-888b-abf0-57e0d61a37df"
+      stageUuid: "45b9f448-cbfd-8539-ad87-50d5383e141c"
     - stage: horo
-      stageUuid: "f8f1799f-4737-87b5-992f-9af144624741"
+      stageUuid: "94c21217-deb9-8b2e-a1d5-01c8131bbf94"
     - stage: seal
-      stageUuid: "9c22cf15-ff31-8958-8ae9-4cd71f9885b2"
+      stageUuid: "0c1bed7f-bb7d-8f30-afc9-8c31f9920846"
     - stage: uuid
-      stageUuid: "db11f90b-7982-8112-b72f-d8f18a010d65"
+      stageUuid: "3f41f27a-5710-82ee-a999-c17e85945a04"
 version: 2
 ---
 # lactose

@@ -1,63 +1,35 @@
 ---
 name: pending
 description: "Use when reasoning about pending as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/pending
-coordinate: pending · 8/crest · 82ab5b1d
-contentUuid: "4ae6bb94-de04-5d62-b54e-4ef162996871"
-diamondUuid: "9551cd1f-4d0d-8935-ab7d-b5ddb91ad53f"
-uuid: "82ab5b1d-8fd5-81fa-ab43-573353befb1d"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/pending"
+coordinate: "vocabulary/pending · 7/descent · c7db2d9b"
+contentUuid: "afd7c7a4-3b15-5b80-b279-dda151af3d86"
+diamondUuid: "4dab1b69-37c7-84f1-ae08-82de0494f56e"
+uuid: "c7db2d9b-158e-8524-be33-eeaf9e50d876"
+horo: 7
 typography:
-  partition: pending
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "81702a7c-b95a-8888-b40b-9c5de21871f2"
+  computationUuid: "8148d3c4-d53a-84fa-b18e-484f9a1994b8"
   stages:
     - stage: path
-      stageUuid: "b810d0af-c482-8356-a165-c9ebe9713f48"
+      stageUuid: "aafd9e66-0a70-8ccd-82c7-942f0f287e76"
     - stage: trinity
-      stageUuid: "888a4dcc-c9a1-8680-a51e-a01576a4fa86"
+      stageUuid: "4ff17d46-b351-83d1-a157-73753f0f70c6"
     - stage: boundary
-      stageUuid: "4ca35755-3cc3-873d-a962-71b6903f258a"
+      stageUuid: "cacffa7f-1656-82b7-86d5-67edaee76892"
     - stage: links
-      stageUuid: "ef1874ef-911a-8504-985e-6d5d34a99a72"
+      stageUuid: "8213c4c5-846a-8bc7-8bc2-b95b1ffdb747"
     - stage: horo
-      stageUuid: "8dfc88d9-0280-8f7f-8df9-e1e7b79b615b"
+      stageUuid: "4ef41d38-0574-87d0-a25b-284c4120c38c"
     - stage: seal
-      stageUuid: "cd46968d-ea24-8c3d-9808-a66b06d45bf5"
+      stageUuid: "f9bcb92f-36e1-871e-a154-0ebb1cb5a256"
     - stage: uuid
-      stageUuid: "349c6c9c-ec4d-8a3c-b67a-92442a1c9a08"
+      stageUuid: "3f700a31-aca5-873d-8b07-cc858d80513a"
 version: 2
 ---
 # pending

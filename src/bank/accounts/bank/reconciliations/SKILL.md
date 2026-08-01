@@ -2,41 +2,15 @@
 name: reconciliations
 description: "Use when performing or auditing the period-end bank-balance proof — GL cash balance vs. camt.053 bank-statement closing balance, quantified variance, reconciling items (outstanding deposits/cheques/fees/NSF), SOX §404 TOM-CSH-01 evidence. The bank-side period-end balance proof collection."
 atomPath: "bank/accounts/bank/reconciliations"
-coordinate: "bank/accounts/bank/reconciliations · 2/share · 6c941d4f"
-contentUuid: "46106645-a5d4-5b9d-854e-10a00cf4d718"
-diamondUuid: "78205831-d9b4-8ebe-8a8d-1eb7aa28c079"
-uuid: "6c941d4f-9f29-8393-a796-15d20094dac9"
-horo: 2
-bonds:
-  in:
-    - accounting
-    - accounts
-    - bank
-    - proof
-    - reconciliation
-    - statements
-    - transaction
-  out:
-    - accounting
-    - accounts
-    - proof
-    - reconciliation
-    - statements
-    - transaction
+coordinate: "bank/accounts/bank/reconciliations · 5/round · fe7f0281"
+contentUuid: "3df1cd7c-d135-5a78-89ef-bf56a182ecdf"
+diamondUuid: "8c1e19a5-1f69-871b-9436-a595defc2af4"
+uuid: "fe7f0281-e4f3-8826-a749-ddcb052af81f"
+horo: 5
 typography:
   partition: bank
   bondDegree: 25
-  neighbors: []
 standards:
-  - "EU-2002/58"
-  - "EU-2015/847"
-  - "EU-2015/849"
-  - "EU-2019/1150"
-  - "EU-2019/1152"
-  - "EU-2019/1937"
-  - "EU-2019/2161"
-  - "EU-2019/770"
-  - "EU-2019/771"
   - "EU-Intrastat-Reg-2019/2152"
   - "IFRS IAS-7 §6 §44 cash-flow-reconciliation"
   - "ISO-20022"
@@ -52,29 +26,8 @@ standards:
   - "US-GAAP ASC-230 statement-of-cash-flows"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - accounts
-    - proof
-    - statements
-    - transaction
-  matrix:
-    - accounting
-    - accounts
-    - proof
-    - reconciliation
-    - statements
-    - transaction
-  backlinks:
-    - accounting
-    - accounts
-    - proof
-    - reconciliation
-    - statements
-    - transaction
 signatures:
-  computationUuid: "a165114a-6996-8c70-ba9e-c298b5ce6ef8"
+  computationUuid: "0ac309b0-63f7-87f8-addd-ec2d11bb844c"
   stages:
     - stage: path
       stageUuid: "f0214203-4284-876e-aecf-8ccfee1cdcbb"
@@ -85,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "201bee56-8968-8237-87d3-1762516e142f"
     - stage: horo
-      stageUuid: "b24c1e08-ebdd-8687-ab0a-6935a6f46590"
+      stageUuid: "b868123d-7fc3-83e2-8778-295a15ac3741"
     - stage: seal
       stageUuid: "283527df-8d07-87e6-9bdd-3cddc021cd9f"
     - stage: uuid
-      stageUuid: "502c3ef1-e53e-8b19-ba16-19a95bd3e6cb"
+      stageUuid: "22db6e3f-7c8f-8fdb-9159-6af896d3a92f"
 version: 2
 ---
 # bank-reconciliations

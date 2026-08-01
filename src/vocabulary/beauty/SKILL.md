@@ -1,78 +1,35 @@
 ---
 name: beauty
 description: "Use when reasoning about beauty as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/beauty
-coordinate: beauty · 7/descent · caad12b6
-contentUuid: "427ba37f-ab16-5af7-ba91-62a24b6c378c"
-diamondUuid: "3257c767-df27-8f51-b2b9-3263b24bef29"
-uuid: "caad12b6-0d31-8870-9f35-75e9ac387497"
-horo: 7
-bonds:
-  in:
-    - business
-    - collapse
-    - health
-    - law
-    - merge
-    - salon
-    - sti
-  out:
-    - business
-    - collapse
-    - health
-    - law
-    - merge
-    - salon
-    - sti
+atomPath: "vocabulary/beauty"
+coordinate: "vocabulary/beauty · 2/share · 932f23fe"
+contentUuid: "ddc90fed-9db3-5e08-a8be-88f9ae6b5c1f"
+diamondUuid: "bb19f396-5121-8b25-8128-37b21657ac00"
+uuid: "932f23fe-20fd-8a08-850b-c5536782b450"
+horo: 2
 typography:
-  partition: beauty
+  partition: vocabulary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - business
-    - collapse
-    - health
-    - law
-    - merge
-    - salon
-    - sti
-  matrix:
-    - business
-    - collapse
-    - health
-    - law
-    - merge
-    - salon
-    - sti
-  backlinks:
-    - business
-    - collapse
-    - health
-    - law
-    - merge
-    - salon
-    - sti
 signatures:
-  computationUuid: "8ba9f420-7fa5-88ec-a724-eed4cb18f720"
+  computationUuid: "572721e3-3815-8025-a87e-26f209c5fc16"
   stages:
     - stage: path
-      stageUuid: "64784638-d072-8fb5-8e6e-7d3ac3ea7662"
+      stageUuid: "f384bf69-091b-8035-b15d-421be0a03111"
     - stage: trinity
-      stageUuid: "1377a3d0-3dae-828f-bfeb-a8baa24227a7"
+      stageUuid: "fe20e6cb-40ef-875f-85d0-196bc33abc18"
     - stage: boundary
-      stageUuid: "eebf2e9e-9fc0-8675-a9d6-5ebba62a9620"
+      stageUuid: "afcdfbdc-165c-8c06-bacd-7505ec60e094"
     - stage: links
-      stageUuid: "dd106936-a86e-85af-9dc3-d481043bc224"
+      stageUuid: "383c0baa-ea3e-8b00-8269-aa13f924a4c3"
     - stage: horo
-      stageUuid: "c4e23f3f-03e3-816c-b1f5-ed76fe185b44"
+      stageUuid: "f63cc388-adc7-8ec9-9565-5816b1eec2ae"
     - stage: seal
-      stageUuid: "a5273e82-03c2-8931-be1d-5d024810d664"
+      stageUuid: "7c6df357-dc54-8866-9034-cc22b06531de"
     - stage: uuid
-      stageUuid: "3ae4a16c-b01f-8702-b20e-b157950de431"
+      stageUuid: "76d1bcd6-b8a9-87b2-8b79-801cf38ca7b0"
 version: 2
 ---
 # beauty

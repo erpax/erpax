@@ -1,113 +1,35 @@
 ---
 name: program
 description: Use when reasoning about program — The MemberProgram associated with a ProgramMembership.
-atomPath: vocabulary/program
-coordinate: program · 8/crest · 389203ad
-contentUuid: "4e9beaef-7a3e-5ea3-8154-23eae6a7c32b"
-diamondUuid: "649c1168-3c17-8a27-ab06-682d35583973"
-uuid: "389203ad-8b32-80a0-8264-2ab015e3eca0"
-horo: 8
-bonds:
-  in:
-    - based
-    - educational
-    - has
-    - law
-    - member
-    - membership
-    - mode
-    - name
-    - occupational
-    - prerequisites
-    - tier
-    - type
-    - used
-    - work
-  out:
-    - based
-    - educational
-    - has
-    - law
-    - member
-    - membership
-    - mode
-    - name
-    - occupational
-    - prerequisites
-    - tier
-    - type
-    - used
-    - work
+atomPath: "vocabulary/program"
+coordinate: "vocabulary/program · 4/weave · 330e7c1b"
+contentUuid: "933460f3-7f64-56c4-91bf-9d518bd68228"
+diamondUuid: "f6034fb9-6312-89f9-bedb-a2c6057dbcff"
+uuid: "330e7c1b-1375-89cb-8a21-682bc2a1f803"
+horo: 4
 typography:
-  partition: program
+  partition: vocabulary
   bondDegree: 53
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - based
-    - educational
-    - has
-    - law
-    - member
-    - membership
-    - mode
-    - name
-    - occupational
-    - prerequisites
-    - tier
-    - type
-    - used
-    - work
-  matrix:
-    - based
-    - educational
-    - has
-    - law
-    - member
-    - membership
-    - mode
-    - name
-    - occupational
-    - prerequisites
-    - tier
-    - type
-    - used
-    - work
-  backlinks:
-    - based
-    - educational
-    - has
-    - law
-    - member
-    - membership
-    - mode
-    - name
-    - occupational
-    - prerequisites
-    - tier
-    - type
-    - used
-    - work
 signatures:
-  computationUuid: "2efcc1e9-7c7f-8a9b-8406-5dde219f4525"
+  computationUuid: "cfdb8708-baed-88c1-8873-7f890b808de8"
   stages:
     - stage: path
-      stageUuid: "538589d7-fa73-8350-8981-85a228096379"
+      stageUuid: "3a94a916-2cbe-8dae-9b25-9a4c31c6d87d"
     - stage: trinity
-      stageUuid: "2e26617c-bfd5-8041-847a-60c4d11cb8d1"
+      stageUuid: "53c594ec-0389-8812-92a8-5eb28c3affef"
     - stage: boundary
-      stageUuid: "e748814e-4feb-8739-8e92-0ceebe79fb4a"
+      stageUuid: "9d4902d5-015c-8f8b-8abd-1de89220b3b5"
     - stage: links
-      stageUuid: "0fe4a4cd-dced-839d-9bf5-84eed4379b1c"
+      stageUuid: "42eed7b4-9edb-8200-afc0-a5f3c97e006e"
     - stage: horo
-      stageUuid: "58d257ea-f167-8160-91d0-b43a1e11c4d1"
+      stageUuid: "18b5a651-ac3d-8dd0-8527-038cd1127de1"
     - stage: seal
-      stageUuid: "bc102756-a594-8977-ab4e-6aa7bcb46989"
+      stageUuid: "547850e0-db19-8077-8341-f8f8c6dbd163"
     - stage: uuid
-      stageUuid: "afa87d1f-973e-813b-8437-6b14521b0abb"
+      stageUuid: "da431fa4-1432-8035-af95-673b80a9d035"
 version: 2
 ---
 # program

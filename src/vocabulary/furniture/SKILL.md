@@ -1,68 +1,35 @@
 ---
 name: furniture
 description: "Use when reasoning about furniture as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/furniture
-coordinate: furniture · 8/crest · 506c55f8
-contentUuid: "8c4ed98e-9cfb-5375-a762-6a2b4ccdd414"
-diamondUuid: "2583c627-2faa-8405-a41f-c8f49263048d"
-uuid: "506c55f8-8ab3-8fa2-a8e6-8f172af8705a"
+atomPath: "vocabulary/furniture"
+coordinate: "vocabulary/furniture · 8/crest · f045714f"
+contentUuid: "e900ecc9-8369-5c92-976e-1b8e86d97526"
+diamondUuid: "93f08a83-729b-87f3-87ec-66cb018097e0"
+uuid: "f045714f-dc6b-886c-8259-ffaaa5379a2b"
 horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
 typography:
-  partition: furniture
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
 signatures:
-  computationUuid: "71cda1c7-283e-891a-a59c-bc8de434577d"
+  computationUuid: "5b3a2fc6-178d-8b9c-ba69-83f3a3fe9033"
   stages:
     - stage: path
-      stageUuid: "c6c4c438-deb0-8a14-b77a-caf904a99ba2"
+      stageUuid: "a5a92127-a6b3-8ffe-bcb5-1ac119904753"
     - stage: trinity
-      stageUuid: "b3745416-0dca-850d-b9e1-96e1622fed2b"
+      stageUuid: "28b8e036-cb04-8192-a767-a8f1a9f1f660"
     - stage: boundary
-      stageUuid: "0095f3ee-c2d1-8d37-96dc-cf554345b78b"
+      stageUuid: "82e62d2e-1550-8c39-a547-e704869e1075"
     - stage: links
-      stageUuid: "2b67cd6e-abb9-826d-b59d-2ebd465b42a4"
+      stageUuid: "5d28c40f-b504-8d2c-9194-a04b521a3d28"
     - stage: horo
-      stageUuid: "903ad1fe-2ebc-8764-b2e5-d9ac20fc502e"
+      stageUuid: "47ea6411-b091-890d-8e05-c8719fb210bf"
     - stage: seal
-      stageUuid: "2007612b-d826-8f7d-8cc8-4629fe0d7f7e"
+      stageUuid: "3f5e6da1-62ea-83d0-8f53-5ae33b8bb260"
     - stage: uuid
-      stageUuid: "781ef6ab-e3d0-8d86-b43d-ddfac6a34455"
+      stageUuid: "6e401f30-c5da-8c10-9997-1d549e251b03"
 version: 2
 ---
 # furniture

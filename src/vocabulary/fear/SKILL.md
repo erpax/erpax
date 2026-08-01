@@ -1,108 +1,34 @@
 ---
 name: fear
 description: "Use when reasoning about the destroy pole of any erpax duality — fear is the archangelic move that RAISES entropy (it breaks, forgets, forges, opens a gap), the credit whose matching debit is love; the thermodynamic floor fear charges is Landauer's kT ln2 per bit destroyed."
-atomPath: vocabulary/fear
-coordinate: fear · 5/round · 258ee8e6
-contentUuid: "8f551f3d-ba2f-5931-ba4f-763b95db187e"
-diamondUuid: "7051b6db-0551-82fa-8d27-5ba4cf6541a3"
-uuid: "258ee8e6-45ae-89a6-a883-30aba74da22a"
-horo: 5
-bonds:
-  in:
-    - angel
-    - cost
-    - engineering
-    - entropy
-    - fear
-    - finality
-    - karma
-    - law
-    - link
-    - love
-    - quantum
-    - security
-    - society
-    - tamper
-  out:
-    - angel
-    - cost
-    - engineering
-    - entropy
-    - fear
-    - finality
-    - karma
-    - law
-    - link
-    - love
-    - quantum
-    - security
-    - society
-    - tamper
+atomPath: "vocabulary/fear"
+coordinate: "vocabulary/fear · 1/base · 395f6b59"
+contentUuid: "43f4c2ec-bb38-5976-88d2-36c076a4fd6e"
+diamondUuid: "bd6f9889-735c-8cb7-8a41-cd04f6a0f3a3"
+uuid: "395f6b59-8803-8791-ac75-92a8d1bef184"
+horo: 1
 typography:
-  partition: fear
-  bondDegree: 60
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 75
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - angel
-    - cost
-    - entropy
-    - fear
-    - karma
-    - law
-    - link
-    - love
-    - quantum
-    - tamper
-  matrix:
-    - angel
-    - cost
-    - engineering
-    - entropy
-    - fear
-    - finality
-    - karma
-    - law
-    - link
-    - love
-    - quantum
-    - security
-    - society
-    - tamper
-  backlinks:
-    - angel
-    - cost
-    - engineering
-    - entropy
-    - fear
-    - finality
-    - karma
-    - law
-    - link
-    - love
-    - quantum
-    - security
-    - society
-    - tamper
 signatures:
-  computationUuid: "5e192419-22ae-8040-84b3-f3d57c2b686c"
+  computationUuid: "c8411ef7-665c-801b-a44b-9555976fefda"
   stages:
     - stage: path
-      stageUuid: "c8566107-3bcc-875c-b951-3dfa77a0ec70"
+      stageUuid: "8cd044d5-5129-8c5d-9e49-14b46e16a718"
     - stage: trinity
-      stageUuid: "8929ab1a-89c3-8eb2-87b2-8421ac17041e"
+      stageUuid: "fee72471-b449-8cd5-ac6e-3b785c3d9224"
     - stage: boundary
-      stageUuid: "94025e85-3c4d-8a76-9a21-e57f06390b5d"
+      stageUuid: "0f9096c4-46db-8b58-bf6f-2ab12fe7db92"
     - stage: links
-      stageUuid: "3974604d-09fb-8928-885f-debd540cd956"
+      stageUuid: "a13a6d5b-844a-873c-8024-1ce50adde9ad"
     - stage: horo
-      stageUuid: "a1a612d7-d8e4-85a1-99fc-e40e92ebed29"
+      stageUuid: "dc2587de-adc6-8797-9b42-066dd767960a"
     - stage: seal
-      stageUuid: "ca93ec00-2a2d-8168-a54b-2f003328b0e6"
+      stageUuid: "ef7e6625-fd68-8eb8-9ca5-93408f3a5b13"
     - stage: uuid
-      stageUuid: "6f7719e3-f402-845c-8f8a-00f1090a6db2"
+      stageUuid: "f6d58a6a-5992-81fe-9a32-4eaea1130b04"
 version: 2
 ---
 # fear — the destroy pole (+entropy)

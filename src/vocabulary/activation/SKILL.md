@@ -1,64 +1,35 @@
 ---
 name: activation
 description: "Use when reasoning about activation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/activation
-coordinate: activation · 4/weave · 08cb1e79
-contentUuid: "7b447887-b1b9-51ff-a33b-6dc74549a8f6"
-diamondUuid: "0378b965-a1cd-827b-b1f2-b1612c515d90"
-uuid: "08cb1e79-d875-864b-8230-0ba23628b8ad"
+atomPath: "vocabulary/activation"
+coordinate: "vocabulary/activation · 4/weave · d93e08d9"
+contentUuid: "348312c1-720c-5eab-834c-cf284800a9b9"
+diamondUuid: "1ee4383e-15d1-8a4e-8ac2-b980b3b694be"
+uuid: "d93e08d9-0658-8993-bcdb-965f6b72299c"
 horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: activation
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
-  - schema.org
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "84070784-c868-8e56-8ba6-5bcd55701ea1"
+  computationUuid: "30b12b63-8af7-84c0-9203-3bcdc82f564c"
   stages:
     - stage: path
-      stageUuid: "3d501683-4957-8538-8d43-b3c77d0f1489"
+      stageUuid: "ead0f459-a18e-8956-a1f1-ef59d7e5e697"
     - stage: trinity
-      stageUuid: "59e379fe-bf48-87f8-b451-2c14687103c4"
+      stageUuid: "f89f823b-1578-8e39-929b-46fbd5860dc2"
     - stage: boundary
-      stageUuid: "1ccb4130-ba78-88de-9b76-44c8311622dd"
+      stageUuid: "7a039855-d3cf-8a1c-96e4-ee92939130f8"
     - stage: links
-      stageUuid: "ba8319cf-4328-849d-a25c-3c2a33d6257f"
+      stageUuid: "843e927b-676d-8c0f-8d57-4d70df9dffd4"
     - stage: horo
-      stageUuid: "4433df37-6a33-806e-a705-3193ae246fca"
+      stageUuid: "59750eab-dd9d-80ae-ad17-34d68fcdfbce"
     - stage: seal
-      stageUuid: "98c08123-bb35-8368-9305-6fb7ea3d09f3"
+      stageUuid: "3021f9c8-b4df-8f6e-817b-b53fa70d758d"
     - stage: uuid
-      stageUuid: "c8181ea3-96f1-8df1-bd2b-6d30b750d09b"
+      stageUuid: "e8222411-b003-8573-ab7d-01628624a636"
 version: 2
 ---
 # activation

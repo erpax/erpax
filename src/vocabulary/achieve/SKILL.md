@@ -1,69 +1,35 @@
 ---
 name: achieve
 description: "Use when reasoning about achieve as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/achieve
-coordinate: achieve · 5/round · 738a5f78
-contentUuid: "7212dc94-2d25-537c-808a-873bec8d0855"
-diamondUuid: "8b105f3f-bad3-8119-b847-ebbcda2914a4"
-uuid: "738a5f78-387f-84c0-8caa-615a8727a7be"
-horo: 5
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/achieve"
+coordinate: "vocabulary/achieve · 2/share · e8a28b19"
+contentUuid: "4690b339-5091-585d-9ee1-2db48d703155"
+diamondUuid: "d88ca2a0-759b-8f8d-916e-7d42ee6c152a"
+uuid: "e8a28b19-5c01-8943-9455-aa23419d47ef"
+horo: 2
 typography:
-  partition: achieve
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
-  - schema.org
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "64a082be-9941-8b76-9392-41457c0390ae"
+  computationUuid: "329e3b82-8d64-81ff-ae9a-5d0ca18e745b"
   stages:
     - stage: path
-      stageUuid: "c3ebed09-4465-8023-b078-744cd285f2fe"
+      stageUuid: "c7346302-4185-8a2f-a67e-ef731490057d"
     - stage: trinity
-      stageUuid: "0f5b0cca-603e-8359-9604-6fb924e4f69c"
+      stageUuid: "7ad4b9c9-0fff-89ad-99bb-abc09ac3f195"
     - stage: boundary
-      stageUuid: "cb5e8a3b-3b29-8454-9597-202b73999c3d"
+      stageUuid: "26100579-f1b5-8c63-9da0-b365edecb2d5"
     - stage: links
-      stageUuid: "7dfcdffa-9a7d-8613-b778-c127f0d06d89"
+      stageUuid: "296d5282-eb05-8a77-a600-874f0f20e608"
     - stage: horo
-      stageUuid: "8d5d7412-3ed2-83c9-a13c-bd6c20b83258"
+      stageUuid: "0c893584-fda1-8e5d-9529-afef111cb1c2"
     - stage: seal
-      stageUuid: "9d4b5045-4f9d-8bb4-b770-873edb323b15"
+      stageUuid: "1616775d-ef4e-8646-80b3-ab720276df11"
     - stage: uuid
-      stageUuid: "984e2800-bb69-8d74-a1c0-8b3e50415a1a"
+      stageUuid: "9c915569-6825-890f-8de6-bb8bd126a4d8"
 version: 2
 ---
 # achieve

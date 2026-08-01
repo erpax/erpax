@@ -1,128 +1,35 @@
 ---
 name: links
 description: "Use when reasoning about links as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/links
-coordinate: links · 4/weave · 6ceb07a3
-contentUuid: "0723c705-d8cc-55a0-b382-b3f7cef6ef5b"
-diamondUuid: "8b5bef34-b189-8b46-88d4-450a89f91d80"
-uuid: "6ceb07a3-cacd-842d-b263-a662cd64858c"
-horo: 4
-bonds:
-  in:
-    - app
-    - aura
-    - collapse
-    - dashboard
-    - development
-    - digit
-    - drone
-    - entanglement
-    - graph
-    - gravity
-    - law
-    - matrix
-    - merge
-    - network
-    - particle
-    - quantum
-    - seo
-    - significant
-    - sti
-    - topography
-  out:
-    - app
-    - aura
-    - collapse
-    - dashboard
-    - development
-    - digit
-    - drone
-    - entanglement
-    - graph
-    - gravity
-    - law
-    - matrix
-    - merge
-    - network
-    - particle
-    - quantum
-    - seo
-    - significant
-    - sti
-    - topography
+atomPath: "vocabulary/links"
+coordinate: "vocabulary/links · 1/base · f1c524ed"
+contentUuid: "13369012-4c77-516f-8122-3f6b54b5a045"
+diamondUuid: "49d9fad8-821b-882c-a5e0-0b13b442577d"
+uuid: "f1c524ed-f0b4-8209-b8d6-3a24674bd399"
+horo: 1
 typography:
-  partition: links
-  bondDegree: 61
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 68
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - significant
-    - sti
-  matrix:
-    - app
-    - aura
-    - collapse
-    - dashboard
-    - development
-    - digit
-    - drone
-    - entanglement
-    - graph
-    - gravity
-    - law
-    - matrix
-    - merge
-    - network
-    - particle
-    - quantum
-    - seo
-    - significant
-    - sti
-    - topography
-  backlinks:
-    - app
-    - aura
-    - collapse
-    - dashboard
-    - development
-    - digit
-    - drone
-    - entanglement
-    - graph
-    - gravity
-    - law
-    - matrix
-    - merge
-    - network
-    - particle
-    - quantum
-    - seo
-    - significant
-    - sti
-    - topography
 signatures:
-  computationUuid: "e2e7630f-ba74-89ab-bd85-f2fdf27d93c9"
+  computationUuid: "8b43d80c-a0cf-8a53-8d5b-f82f4d9e07ac"
   stages:
     - stage: path
-      stageUuid: "686401c9-59a2-88a0-822b-7dbd3edd332b"
+      stageUuid: "82772dba-30a0-8b84-9bdd-ad47007f07df"
     - stage: trinity
-      stageUuid: "10232e63-48cd-853a-b8d2-89b8aef05d25"
+      stageUuid: "f2782d26-fb1c-838d-bbab-545f5a82431b"
     - stage: boundary
-      stageUuid: "34e24d96-d432-8c5c-9f6d-2413452902a7"
+      stageUuid: "7623f88e-b30b-872a-8cf1-7c49b32d7c53"
     - stage: links
-      stageUuid: "f2a96920-9172-8c12-a35d-ebcc4704f125"
+      stageUuid: "25c45098-dd84-8113-8100-20de60cc65f5"
     - stage: horo
-      stageUuid: "86753362-73f6-8f6c-afde-b1a779212afb"
+      stageUuid: "7e701698-41a5-88e3-80c0-2ea220127939"
     - stage: seal
-      stageUuid: "7f0072d1-e699-8761-b6d4-ba217a60c483"
+      stageUuid: "613d475e-48ca-85fa-8f54-55412cfbc3ca"
     - stage: uuid
-      stageUuid: "e6412fc6-3946-85b0-915a-a2d9b5650f6a"
+      stageUuid: "4ba62e5e-4bec-8548-9612-7870cc7996c3"
 version: 2
 ---
 # links

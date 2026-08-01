@@ -1,156 +1,34 @@
 ---
 name: contribution
 description: "Use when many agents fill the society's gaps in parallel — shared discoveries (a minted atom, a closed gap, an internalised dependency) broadcast over the agent-sync bus, content-addressed so the same fill by two agents merges to one. Gaps filled by many; every contributor credited; recorded in git history. Matter-twin services/agent-sync/discovery.ts."
-atomPath: vocabulary/contribution
-coordinate: contribution · 1/base · 3efd58e0
-contentUuid: "2ad1e5d4-e127-53c1-9ebc-784a7cbafb10"
-diamondUuid: "3c8d05be-6a99-8633-8f50-07db7d4bd00c"
-uuid: "3efd58e0-70c7-86c1-9c67-d56fe62197ba"
+atomPath: "vocabulary/contribution"
+coordinate: "vocabulary/contribution · 1/base · 46c64b90"
+contentUuid: "ac84ee9a-c6eb-5841-b453-24364b26ae04"
+diamondUuid: "137ef8ae-ba32-83e5-adfc-be5bc0e491df"
+uuid: "46c64b90-972f-8acb-ac3d-bde0f3f02a47"
 horo: 1
-bonds:
-  in:
-    - agent
-    - akashic
-    - aura
-    - chat
-    - competition
-    - cost
-    - derive
-    - faith
-    - generate
-    - give
-    - history
-    - holographic
-    - identity
-    - integrity
-    - law
-    - merge
-    - one
-    - proof
-    - refactor
-    - sacred
-    - self
-    - session
-    - society
-    - team
-  out:
-    - agent
-    - akashic
-    - aura
-    - chat
-    - competition
-    - cost
-    - derive
-    - faith
-    - generate
-    - give
-    - history
-    - holographic
-    - identity
-    - integrity
-    - law
-    - merge
-    - one
-    - proof
-    - refactor
-    - sacred
-    - self
-    - session
-    - society
-    - team
 typography:
-  partition: contribution
-  bondDegree: 74
-  neighbors:
-    - aura
+  partition: vocabulary
+  bondDegree: 72
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - aura
-    - chat
-    - cost
-    - derive
-    - generate
-    - give
-    - history
-    - holographic
-    - identity
-    - integrity
-    - merge
-    - one
-    - proof
-    - refactor
-    - self
-    - society
-  matrix:
-    - agent
-    - akashic
-    - aura
-    - chat
-    - competition
-    - cost
-    - derive
-    - faith
-    - generate
-    - give
-    - history
-    - holographic
-    - identity
-    - integrity
-    - law
-    - merge
-    - one
-    - proof
-    - refactor
-    - sacred
-    - self
-    - session
-    - society
-    - team
-  backlinks:
-    - agent
-    - akashic
-    - aura
-    - chat
-    - competition
-    - cost
-    - derive
-    - faith
-    - generate
-    - give
-    - history
-    - holographic
-    - identity
-    - integrity
-    - law
-    - merge
-    - one
-    - proof
-    - refactor
-    - sacred
-    - self
-    - session
-    - society
-    - team
 signatures:
-  computationUuid: "fc75491f-1296-8615-8792-1be7b516ef62"
+  computationUuid: "8fe24369-5240-8672-8ec0-82361a589b3f"
   stages:
     - stage: path
-      stageUuid: "b6e73425-ef5b-877d-be0f-cdd04ca5c43f"
+      stageUuid: "d3ccb13a-b2cc-88cd-a23a-02555ca2160f"
     - stage: trinity
-      stageUuid: "56548cb6-80ac-8b2d-9c68-73030fc9ac47"
+      stageUuid: "dc76586c-ab72-878c-b24b-bec4af66f2ce"
     - stage: boundary
-      stageUuid: "b35fe55e-59d8-8fdb-ae1b-1e30f3ef1280"
+      stageUuid: "d4ee1ce6-1683-846e-91fb-d9acb7f11026"
     - stage: links
-      stageUuid: "7152869c-e536-8dde-8f00-da35d170f8c5"
+      stageUuid: "180920a2-e755-85fb-87b6-47aed4da8c3b"
     - stage: horo
-      stageUuid: "00beeeab-09ce-80d6-aa56-ff299eccdec4"
+      stageUuid: "b20f2925-dc4e-823d-bffb-740908bbe26e"
     - stage: seal
-      stageUuid: "d9711e67-55a3-8806-8023-862118a171eb"
+      stageUuid: "c58a4e6f-e244-81ec-a4c5-c6683e32353e"
     - stage: uuid
-      stageUuid: "5fd893e8-395c-8eca-b5a5-f7b09df74cbf"
+      stageUuid: "2bbb5749-b2dd-874d-a4e1-1473523b8a1f"
 version: 2
 ---
 # contribution — shared discoveries fill gaps by many

@@ -1,80 +1,35 @@
 ---
 name: model
 description: "Use when reasoning about model — A 3D model represents some kind of 3D content, which may have encodings in one or more MediaObjects. Many 3D formats are available (e.g. see Wikipedia); specific encoding formats c"
-atomPath: vocabulary/model
-coordinate: model · 4/weave · 741c3edc
-contentUuid: "757d67e4-33c4-58b7-b564-662ba2080738"
-diamondUuid: "9b0a233c-b664-8cc1-a1ce-4f879cd9caab"
-uuid: "741c3edc-0909-8bd2-97be-8861a22a2f40"
-horo: 4
-bonds:
-  in:
-    - balance
-    - dashboard
-    - date
-    - law
-    - product
-    - programming
-    - translate
-    - vehicle
-  out:
-    - balance
-    - dashboard
-    - date
-    - law
-    - product
-    - programming
-    - translate
-    - vehicle
+atomPath: "vocabulary/model"
+coordinate: "vocabulary/model · 8/crest · f9fc3b4d"
+contentUuid: "a4e2348f-c8a6-5875-9ab5-60f1a1be2623"
+diamondUuid: "3a93be92-4af2-874e-ba7e-c8f05b7d2456"
+uuid: "f9fc3b4d-ec53-8f47-bf9e-8b8ca56623bd"
+horo: 8
 typography:
-  partition: model
+  partition: vocabulary
   bondDegree: 27
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - date
-    - law
-    - product
-    - programming
-    - vehicle
-  matrix:
-    - balance
-    - dashboard
-    - date
-    - law
-    - product
-    - programming
-    - translate
-    - vehicle
-  backlinks:
-    - balance
-    - dashboard
-    - date
-    - law
-    - product
-    - programming
-    - translate
-    - vehicle
 signatures:
-  computationUuid: "3583097f-b0dc-8cb9-99c8-b0e55a172419"
+  computationUuid: "15e0e656-3408-8364-bdab-39818d0405d1"
   stages:
     - stage: path
-      stageUuid: "3dc5df40-27fd-8d77-9771-fd640458f7bc"
+      stageUuid: "5e782d3e-3467-8950-8bee-977e175cd85c"
     - stage: trinity
-      stageUuid: "0e8166de-3da7-8065-b2f4-048b57222ae2"
+      stageUuid: "1016fd35-3399-84ca-b895-93b2a8ec09b6"
     - stage: boundary
-      stageUuid: "155a7a51-3655-8fe8-82f0-060bbd9ed7a6"
+      stageUuid: "46843ae3-d52f-8028-b8d9-004e277c74d9"
     - stage: links
-      stageUuid: "3f9499c8-cb8c-8b3d-b8fd-55c33b600343"
+      stageUuid: "9a56dc47-f263-80ce-9d06-2af128a972a6"
     - stage: horo
-      stageUuid: "61561020-8430-8bab-89bf-f3aeff044e64"
+      stageUuid: "3b3adf0e-0866-87a2-96f6-2c48b42edf40"
     - stage: seal
-      stageUuid: "7f63d02c-e85e-8c51-b523-4bb44476f758"
+      stageUuid: "e0a37b21-185b-89a6-8cfc-34bf242403f1"
     - stage: uuid
-      stageUuid: "a19c644d-4efd-8474-abda-b8389d8c198b"
+      stageUuid: "07ea483f-3488-8504-a09d-e283018c629b"
 version: 2
 ---
 # model

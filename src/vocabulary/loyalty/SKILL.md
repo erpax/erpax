@@ -1,63 +1,35 @@
 ---
 name: loyalty
 description: "Use when reasoning about loyalty as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/loyalty
-coordinate: loyalty · 4/weave · db17fed8
-contentUuid: "9be7f286-8e0d-567f-8eb7-efe7ce34cb30"
-diamondUuid: "3073624e-fedc-8c82-bd29-e34ead8d1b06"
-uuid: "db17fed8-9176-8946-aa3e-3d53c910bebf"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/loyalty"
+coordinate: "vocabulary/loyalty · 1/base · de3a842b"
+contentUuid: "de8c89c8-8de6-5e94-9f6a-d70953639329"
+diamondUuid: "a4dde151-8da8-8452-adc9-e41c3e13a195"
+uuid: "de3a842b-956a-88af-930c-6a7c4080979b"
+horo: 1
 typography:
-  partition: loyalty
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "ca905919-2bb3-848c-8dea-cc04392642c4"
+  computationUuid: "bff7bf45-63f1-8a8e-8add-708e8197ba6c"
   stages:
     - stage: path
-      stageUuid: "e492bcf2-b2b0-81a0-933e-78d87e76c2c6"
+      stageUuid: "7a0ceb2b-6ffd-87f9-aaa9-b1a12d9e3516"
     - stage: trinity
-      stageUuid: "37f0223d-9856-85d1-b312-549e0cffd4bc"
+      stageUuid: "d6a57d28-829b-8a6b-9309-6a9e3ce9c3c9"
     - stage: boundary
-      stageUuid: "479b25cf-7c8d-8b58-b6d4-22307783d4b0"
+      stageUuid: "9097f19a-1e9b-8a9a-acb1-b6b12a3615ee"
     - stage: links
-      stageUuid: "47b81b3e-ebda-8612-9fd1-75b393eb64a4"
+      stageUuid: "d652aee3-7c7b-85bb-b5ad-f8b1af5dc0ee"
     - stage: horo
-      stageUuid: "e2d93680-0f4b-8864-a6f2-429c5de34bda"
+      stageUuid: "e6c555ec-b9f7-8141-b52e-968c076c45aa"
     - stage: seal
-      stageUuid: "4322875e-59e0-8bb5-a58f-d9931d5ccfe1"
+      stageUuid: "25b859b0-d353-82cb-afe6-c4867b844d0e"
     - stage: uuid
-      stageUuid: "4d665ed6-d97a-8463-bcbd-f3b1458cd9e5"
+      stageUuid: "48c19951-94ab-89f9-87ab-eb27010beeee"
 version: 2
 ---
 # loyalty

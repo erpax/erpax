@@ -1,73 +1,35 @@
 ---
 name: applicability
 description: "Use when reasoning about applicability as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/applicability
-coordinate: applicability · 4/weave · bad1d7ed
-contentUuid: "d4da1f50-54e9-52bd-aef0-991f2da77abd"
-diamondUuid: "99fd2480-ace7-8439-a073-cce858d0fa50"
-uuid: "bad1d7ed-c7c7-8ce4-9ffe-b32ff010ae26"
+atomPath: "vocabulary/applicability"
+coordinate: "vocabulary/applicability · 4/weave · c2725506"
+contentUuid: "0e9c6b2a-d6c4-56b5-9e07-c0b20de79cdf"
+diamondUuid: "d14d2cc2-308d-82a3-b91e-b8b5cf8d31ec"
+uuid: "c2725506-568f-84ba-a3f0-ea80cf37e532"
 horo: 4
-bonds:
-  in:
-    - collapse
-    - date
-    - law
-    - legislation
-    - merge
-    - sti
-  out:
-    - collapse
-    - date
-    - law
-    - legislation
-    - merge
-    - sti
 typography:
-  partition: applicability
+  partition: vocabulary
   bondDegree: 18
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - date
-    - law
-    - legislation
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - date
-    - law
-    - legislation
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - date
-    - law
-    - legislation
-    - merge
-    - sti
 signatures:
-  computationUuid: "ddf920cd-3322-8641-9aa4-a55d9d6db096"
+  computationUuid: "980d8b9f-eec0-8e23-9125-184eefb0f0f8"
   stages:
     - stage: path
-      stageUuid: "25cbbf03-bf79-83df-a5e9-0283f8212ba7"
+      stageUuid: "ffd19d7d-5fc1-8dd6-9a13-7331cc56b951"
     - stage: trinity
-      stageUuid: "f530ecf7-4936-8f62-8732-a9215ab5af4a"
+      stageUuid: "6639c588-407a-819a-b3a8-f6f810125a0b"
     - stage: boundary
-      stageUuid: "26dd93ea-c5ec-86a6-9bd1-dcb2eb5e7ef1"
+      stageUuid: "7fdb9b12-8953-8861-929f-76810b370d7a"
     - stage: links
-      stageUuid: "239e8d21-3478-8917-bd2f-77f912dba5c6"
+      stageUuid: "c256407c-d2f7-873b-a0dd-11a6e81758c2"
     - stage: horo
-      stageUuid: "a6787e39-703a-802f-af2a-fc04a12710bf"
+      stageUuid: "e9269ea7-89d1-83a1-8033-8c2bc17bedbe"
     - stage: seal
-      stageUuid: "9460881d-5206-87a3-b8ff-e6d46db24490"
+      stageUuid: "723a94f6-e9b9-836f-b501-b10de624c88f"
     - stage: uuid
-      stageUuid: "5be2f071-5da0-8ae7-89e4-68860a91ab9a"
+      stageUuid: "db3c6704-093e-8a48-bb2a-38a422a6b659"
 version: 2
 ---
 # applicability

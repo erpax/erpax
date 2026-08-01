@@ -1,68 +1,35 @@
 ---
 name: police
 description: "Use when reasoning about police as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/police
-coordinate: police · 7/descent · 1fc44862
-contentUuid: "0bb951b6-6500-5e76-b498-9d21ef7e2af2"
-diamondUuid: "8fb06e05-61f9-8173-a290-72107e5de6f9"
-uuid: "1fc44862-2c40-8969-a2a9-f618125f2497"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - station
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - station
-    - sti
+atomPath: "vocabulary/police"
+coordinate: "vocabulary/police · 8/crest · bbbfe8fa"
+contentUuid: "1cc39a3a-3891-580e-a996-b493b14ecdd3"
+diamondUuid: "1e79a5de-0ff2-8960-b3eb-8e1e36102617"
+uuid: "bbbfe8fa-f43d-84e3-9e6e-91db943f40fe"
+horo: 8
 typography:
-  partition: police
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - station
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - station
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - station
-    - sti
 signatures:
-  computationUuid: "03ebc808-6d50-81e9-999b-d1b82ad940b5"
+  computationUuid: "f6f0042b-6d81-8f16-b1c9-1cd9a45222fb"
   stages:
     - stage: path
-      stageUuid: "486ccbc8-0a25-8644-893c-31aae7c71ed1"
+      stageUuid: "b331ced7-cf1a-806d-954e-2b723bba0fb1"
     - stage: trinity
-      stageUuid: "e599d996-d808-8be0-b4b8-bdbe9fcb698b"
+      stageUuid: "872d3bb9-da6b-86a5-90e7-1983f2c18ed4"
     - stage: boundary
-      stageUuid: "28f3a571-8801-8899-905d-91ac3e564d52"
+      stageUuid: "b03a8c85-ba4b-81e6-be60-a9abad211c0e"
     - stage: links
-      stageUuid: "f8b53852-adcb-80d1-a568-4a50fde19b03"
+      stageUuid: "d20738fd-4051-875d-a1f8-61fbcc130be9"
     - stage: horo
-      stageUuid: "baa2eba4-c1d1-8a18-a35a-d3d67723bbb9"
+      stageUuid: "cd58fb56-b88f-8c2c-a741-1d2e8bb71739"
     - stage: seal
-      stageUuid: "14e271ce-fcbd-85bf-b974-6efca3c0d1c5"
+      stageUuid: "476252b5-a059-82d3-afd6-f03e57e14931"
     - stage: uuid
-      stageUuid: "7e86370d-4df3-8574-92b2-829a29cea72f"
+      stageUuid: "756fdafa-3263-8134-92c1-9fcf906f38be"
 version: 2
 ---
 # police

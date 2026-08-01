@@ -2,54 +2,14 @@
 name: biomass
 description: "Use when a living stock is valued by its total mass, not per-individual — standing biomass (kg) is the IAS-41 fair-value unit for an aquaculture stock, a forest stand, or a bee colony's strength: mass × forward price − costs-to-sell. Its growth rate is biological transformation. The non-individuated living-asset measure, shared across aquaculture/forestry/apiculture."
 atomPath: biomass
-coordinate: "biomass · 8/crest · 6b072c73"
-contentUuid: "0a7c6fa7-b76a-596d-ab6b-ab41c74a1b22"
-diamondUuid: "906dfd75-0001-8629-a058-906724236eae"
-uuid: "6b072c73-4345-8799-a0d4-9eb4fb9c7312"
-horo: 8
-bonds:
-  in:
-    - apiculture
-    - aquaculture
-    - assets
-    - capacity
-    - conservation
-    - ecosystem
-    - forecast
-    - forestry
-    - harvest
-    - herd
-    - items
-    - livestock
-    - measure
-    - mortality
-    - mycelium
-    - rate
-    - sustainability
-    - yield
-  out:
-    - apiculture
-    - aquaculture
-    - assets
-    - capacity
-    - conservation
-    - ecosystem
-    - forecast
-    - forestry
-    - harvest
-    - herd
-    - items
-    - livestock
-    - measure
-    - mortality
-    - mycelium
-    - rate
-    - sustainability
-    - yield
+coordinate: "biomass · 7/descent · e4364e6c"
+contentUuid: "57369047-ec67-54fe-b6fc-fe0c9ee2b41a"
+diamondUuid: "5847ea9c-3182-82d8-95de-497251f5d27b"
+uuid: "e4364e6c-fb54-808d-a5f6-a682a6ae05fa"
+horo: 7
 typography:
   partition: biomass
-  bondDegree: 61
-  neighbors: []
+  bondDegree: 37
 standards:
   - "FAO — forest growth-and-yield / mean annual increment (MAI)"
   - "IAS-41"
@@ -57,64 +17,8 @@ standards:
   - "IFRS IAS-41 — biological assets: fair-value-less-costs-to-sell; transformation-vs-price split`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - apiculture
-    - aquaculture
-    - assets
-    - capacity
-    - ecosystem
-    - forecast
-    - forestry
-    - harvest
-    - herd
-    - items
-    - livestock
-    - measure
-    - mortality
-    - rate
-    - sustainability
-    - yield
-  matrix:
-    - apiculture
-    - aquaculture
-    - assets
-    - capacity
-    - conservation
-    - ecosystem
-    - forecast
-    - forestry
-    - harvest
-    - herd
-    - items
-    - livestock
-    - measure
-    - mortality
-    - mycelium
-    - rate
-    - sustainability
-    - yield
-  backlinks:
-    - apiculture
-    - aquaculture
-    - assets
-    - capacity
-    - conservation
-    - ecosystem
-    - forecast
-    - forestry
-    - harvest
-    - herd
-    - items
-    - livestock
-    - measure
-    - mortality
-    - mycelium
-    - rate
-    - sustainability
-    - yield
 signatures:
-  computationUuid: "2068b595-6159-8f54-978f-6faa49dfd357"
+  computationUuid: "d6ae58a4-0938-8b1f-bca2-5632ebf7dc41"
   stages:
     - stage: path
       stageUuid: "89f60642-c0ca-8467-b5aa-e02a0fd16eca"
@@ -123,13 +27,13 @@ signatures:
     - stage: boundary
       stageUuid: "2ad254e9-695d-80d1-a8d4-b894dc1bc280"
     - stage: links
-      stageUuid: "efb65edd-8e10-8fda-8399-a85bc27baeef"
+      stageUuid: "619490fa-9e41-88c8-abf4-b834964fc612"
     - stage: horo
-      stageUuid: "68732356-e5cc-8cbc-ad00-64c846c0620e"
+      stageUuid: "fd7ef275-b004-8055-8918-9e2000023b11"
     - stage: seal
       stageUuid: "da4bd91a-383c-84fa-a2c2-f4d1fc1bd47e"
     - stage: uuid
-      stageUuid: "47d754d2-a598-89b9-beb5-7f3b2ac94d63"
+      stageUuid: "5a98f284-703e-84e4-9429-c54c6978e78d"
 version: 2
 ---
 # biomass — the living mass of a stock; the fair-value unit of non-individuated life

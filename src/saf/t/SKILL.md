@@ -1,34 +1,21 @@
 ---
 name: t
 description: "Use when implementing or referencing OECD SAF-T — Standard Audit File for Tax."
-atomPath: saf/t
-coordinate: saf/t · 1/base · 9a41197f
-contentUuid: "5167563a-51ff-5929-8601-c14a1f796ed8"
-diamondUuid: "40aca2c2-87b6-8a83-bcdd-046ac8d930ef"
-uuid: "9a41197f-0134-8af5-a98e-84006f0d83a3"
-horo: 1
-bonds:
-  in:
-    - law
-  out:
-    - law
+atomPath: "saf/t"
+coordinate: "saf/t · 8/crest · d5ef5108"
+contentUuid: "1a395d97-11a9-54c7-aee7-3059df5a43d2"
+diamondUuid: "70c83bac-750c-804a-a631-2ef3ac2b2b10"
+uuid: "d5ef5108-de3c-8ca0-906c-3cf408ee8dfd"
+horo: 8
 typography:
   partition: saf
   bondDegree: 0
-  neighbors: []
 standards:
   - "OECD SAF-T 2.0 standard-audit-file-for-tax"
   - "SAF-T"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-  matrix:
-    - law
-  backlinks:
-    - law
 signatures:
-  computationUuid: "331dc2ec-4255-86ac-9312-e87f00b87c69"
+  computationUuid: "2dbaa24d-d344-8917-9aab-063606ff6f9b"
   stages:
     - stage: path
       stageUuid: "ba188100-552c-8994-b928-6f44f4117880"
@@ -39,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "683f77c1-65eb-8060-b4f9-069de7d56c61"
     - stage: horo
-      stageUuid: "27e9cf84-e002-89dc-bd90-ce21b351bd83"
+      stageUuid: "cb9d5684-4720-8ab8-a1c6-b3b9758f7da2"
     - stage: seal
       stageUuid: "e816edec-46e3-8dc2-8bdf-f4a177ed4ff4"
     - stage: uuid
-      stageUuid: "08189f4b-ff66-89d5-9955-69e88a6db4af"
+      stageUuid: "ec8c2738-34fc-87b6-bf38-dd428607e9c9"
 version: 2
 ---
 # OECD SAF-T — Standard Audit File for Tax

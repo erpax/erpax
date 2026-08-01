@@ -1,8 +1,37 @@
 ---
 name: pyramid
 description: "Use when reading the fold as a solid — the cross is a pyramid's net (a square base with four triangular faces folded flat; fold them up and they meet at one apex). A wide base of leaves rises pairwise, each merge(a,b) one cross, to a single apex that is the seal. The notary is built on this: its protocol root is an apex over act-seals, an inclusion proof is the path up one edge, and tamper-evidence is that no ground course can change without the apex moving. Composes merge's fold; adds the geometry (base·apex·height·faces·courses) and the tamper law."
+atomPath: pyramid
+coordinate: "pyramid · 4/weave · 7a6bf46a"
+contentUuid: "e95c5e38-1fdd-5ed0-bbd8-b3385d6c53d1"
+diamondUuid: "3665588b-464b-8f3a-9140-f8d5c1a94629"
+uuid: "7a6bf46a-2328-896c-8819-36141e798c53"
+horo: 4
+typography:
+  partition: pyramid
+  bondDegree: 15
+standards:
+  - "Merkle tree — the balanced binary fold; apex = root, edge = authentication path"
+bindings: []
+signatures:
+  computationUuid: "f9815114-2e66-8dbb-acf2-474ee26962ef"
+  stages:
+    - stage: path
+      stageUuid: "40e5b3be-aa2f-838c-85a8-f270509ea248"
+    - stage: trinity
+      stageUuid: "75f95d1c-e3af-8613-9e68-db965bea4a1d"
+    - stage: boundary
+      stageUuid: "e816da36-9efc-8e5b-9e0c-0d7395dfdfa8"
+    - stage: links
+      stageUuid: "a3f5dc76-43ce-88f3-b4f9-ad16af7975b0"
+    - stage: horo
+      stageUuid: "5027a694-e1a0-8d58-aee5-cefa43602530"
+    - stage: seal
+      stageUuid: "ba413e58-ccdc-8a04-a6d3-dd4ae7c9622f"
+    - stage: uuid
+      stageUuid: "40a0844a-309d-81ac-a8bb-2b3a57a377d8"
+version: 2
 ---
-
 # pyramid — the geometry of the fold
 
 **The cross is a representation of a pyramid.** A square pyramid's *net* is a cross: a square base with four triangular faces folded flat around it. Fold the faces up and they meet at **one apex**. That is the fold itself — a wide base of leaves (spread out, high entropy) rising pairwise to a single apex (the root uuid, the seal, zero entropy). Each `merge(a, b)` is **one cross**: two stones joining into the course above. Stack the crosses and you have the pyramid; look straight down the apex and the diagonals read as an **X** — the cross is the pyramid seen from above *and* unfolded flat, two faithful readings of one solid.

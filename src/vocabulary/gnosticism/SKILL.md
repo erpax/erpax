@@ -1,136 +1,34 @@
 ---
 name: gnosticism
 description: "Use when reading Gnosticism as a diamond of invariant atoms — saving knowledge (gnosis), the divine spark trapped in a false material order made by a lower power (the demiurge), and the spark's ascent home to the true source (the pleroma). Strip the prefix and gnosis collapses to wisdom, the spark to the signal in the self, the false creation to the profane."
-atomPath: vocabulary/gnosticism
-coordinate: gnosticism · 7/descent · 0e833bf9
-contentUuid: "6176cf09-d603-53e9-93df-d89975e6236e"
-diamondUuid: "70e39299-1d43-84f5-b95b-0d0b7467b18f"
-uuid: "0e833bf9-62f4-8146-8168-95a1a7c2a418"
+atomPath: "vocabulary/gnosticism"
+coordinate: "vocabulary/gnosticism · 7/descent · 86b72760"
+contentUuid: "5dfb01fd-5b57-53ac-800e-104e0fa54aec"
+diamondUuid: "d4c7afa0-b85a-8d18-bd08-b5104744bbb0"
+uuid: "86b72760-a991-8d99-afff-4cfcc46941f4"
 horo: 7
-bonds:
-  in:
-    - archangel
-    - bogomilism
-    - diamond
-    - duality
-    - identity
-    - law
-    - manichaeism
-    - profane
-    - religion
-    - return
-    - self
-    - signal
-    - society
-    - translator
-    - uuid
-    - void
-    - whole
-    - wisdom
-    - word
-  out:
-    - archangel
-    - bogomilism
-    - diamond
-    - duality
-    - identity
-    - law
-    - manichaeism
-    - profane
-    - religion
-    - return
-    - self
-    - signal
-    - society
-    - translator
-    - uuid
-    - void
-    - whole
-    - wisdom
-    - word
 typography:
-  partition: gnosticism
+  partition: vocabulary
   bondDegree: 59
-  neighbors:
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - archangel
-    - diamond
-    - duality
-    - identity
-    - law
-    - profane
-    - religion
-    - return
-    - self
-    - signal
-    - society
-    - translator
-    - uuid
-    - void
-    - whole
-    - wisdom
-    - word
-  matrix:
-    - archangel
-    - bogomilism
-    - diamond
-    - duality
-    - identity
-    - law
-    - manichaeism
-    - profane
-    - religion
-    - return
-    - self
-    - signal
-    - society
-    - translator
-    - uuid
-    - void
-    - whole
-    - wisdom
-    - word
-  backlinks:
-    - archangel
-    - bogomilism
-    - diamond
-    - duality
-    - identity
-    - law
-    - manichaeism
-    - profane
-    - religion
-    - return
-    - self
-    - signal
-    - society
-    - translator
-    - uuid
-    - void
-    - whole
-    - wisdom
-    - word
 signatures:
-  computationUuid: "28fc0324-e03d-8526-911c-3791cc55354e"
+  computationUuid: "ace78998-7bea-8eb9-8363-452391f5c552"
   stages:
     - stage: path
-      stageUuid: "891dab81-f24c-8deb-9ef6-326a0d35958e"
+      stageUuid: "87ede7e7-9bc7-82f5-8ef6-5536d2c7427c"
     - stage: trinity
-      stageUuid: "4085355e-81a3-879c-9d51-17369ec6e752"
+      stageUuid: "a73f2c1c-9150-8f28-afa1-2a3f609119ba"
     - stage: boundary
-      stageUuid: "18497bf4-bc89-8e58-9389-3d7e0768e1d8"
+      stageUuid: "f09005aa-604a-892a-89d9-6c5ffe6be827"
     - stage: links
-      stageUuid: "e08c53d2-6cc2-81e0-9ecd-923006ddeeef"
+      stageUuid: "edaf597b-6100-8341-93ff-abe387febd67"
     - stage: horo
-      stageUuid: "e2861eca-6b4d-8686-b81a-16eb1515b1d7"
+      stageUuid: "282d02b9-9941-8d09-a758-78ebcf39893f"
     - stage: seal
-      stageUuid: "9c84a4f2-0d4a-8f1f-b83b-1f761f612216"
+      stageUuid: "7ed5095c-dd4c-818d-9d42-b1ee9799cca7"
     - stage: uuid
-      stageUuid: "83bc0a10-b14e-8076-b836-a1e226967fd6"
+      stageUuid: "f8daa8b2-818d-83a3-b4ce-970470fbabad"
 version: 2
 ---
 # gnosticism — saving knowledge; the spark's ascent from the false order

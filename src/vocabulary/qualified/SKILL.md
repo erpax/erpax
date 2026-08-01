@@ -1,78 +1,35 @@
 ---
 name: qualified
 description: "Use when reasoning about qualified as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/qualified
-coordinate: qualified · 7/descent · 81295e65
-contentUuid: "7b85625a-ad39-592d-8b5f-d4efc8b6eeb6"
-diamondUuid: "d6aa9eb4-9f06-8f18-876c-2600a9fa01e0"
-uuid: "81295e65-3ca0-855c-9184-78f216f4e17a"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - expense
-    - incentive
-    - law
-    - merge
-    - sti
-    - type
-  out:
-    - collapse
-    - expense
-    - incentive
-    - law
-    - merge
-    - sti
-    - type
+atomPath: "vocabulary/qualified"
+coordinate: "vocabulary/qualified · 2/share · fa7cb922"
+contentUuid: "b0b8db4b-f1a3-598d-a0f8-ff85d9f8de5d"
+diamondUuid: "4f828bcb-31fb-8d2d-b8f2-29b61477f80f"
+uuid: "fa7cb922-7a3d-8736-b1d9-f7fcecc97414"
+horo: 2
 typography:
-  partition: qualified
+  partition: vocabulary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - expense
-    - incentive
-    - law
-    - merge
-    - sti
-    - type
-  matrix:
-    - collapse
-    - expense
-    - incentive
-    - law
-    - merge
-    - sti
-    - type
-  backlinks:
-    - collapse
-    - expense
-    - incentive
-    - law
-    - merge
-    - sti
-    - type
 signatures:
-  computationUuid: "bde55fc3-edf4-851c-94d4-d8439b44a3e9"
+  computationUuid: "88f487a9-47b3-89ea-ae00-dc88a9892b5c"
   stages:
     - stage: path
-      stageUuid: "1f395eea-3d83-8cfe-983c-d40258fb9b6a"
+      stageUuid: "f24ee5c5-9439-8e94-89c3-429fb90f3c2d"
     - stage: trinity
-      stageUuid: "d3fb20ae-86e3-8109-8df7-c92132e640cf"
+      stageUuid: "357ab988-e335-8a09-9d60-c39aad7493ee"
     - stage: boundary
-      stageUuid: "e1efd259-890d-8d6e-a12d-856b84a28e37"
+      stageUuid: "786e1731-7663-8503-8a89-0a5ab2f500ae"
     - stage: links
-      stageUuid: "78fbd1f2-2960-81ac-b989-ed4901ee340b"
+      stageUuid: "0e78d7cb-db09-8b21-a84a-4de99437c9e8"
     - stage: horo
-      stageUuid: "1f0d4d16-d5af-8063-99e2-45a58a6d7680"
+      stageUuid: "d01f949f-b32f-8a87-b82c-81a7b793c54f"
     - stage: seal
-      stageUuid: "35f47a57-3368-886a-945f-5437152fdbb4"
+      stageUuid: "788e9ece-b9e4-8d0a-8d01-a882241aad1f"
     - stage: uuid
-      stageUuid: "a4cb3ddf-3598-8379-b176-9c236095b962"
+      stageUuid: "f752a881-e794-8ee3-8617-3624c99a1ef0"
 version: 2
 ---
 # qualified

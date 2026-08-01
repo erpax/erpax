@@ -1,51 +1,15 @@
 ---
 name: cross
-description: "Use when authorising \\\\\\\"who can do what\\\\\\\" — the agnostic Payload Access factory that attaches capability to roles (not users), merges role reach by lattice max, and decides an operation iff the merged capability reaches the op's required role."
+description: "Use when authorising \\\\\\\\\\\\\\\"who can do what\\\\\\\\\\\\\\\" — the agnostic Payload Access factory that attaches capability to roles (not users), merges role reach by lattice max, and decides an operation iff the merged capability reaches the op's required role."
 atomPath: cross
-coordinate: "cross · 4/weave · c85598dd"
-contentUuid: "725c7855-ccd8-5f74-8254-11390eb2df17"
-diamondUuid: "b083df8d-403e-8feb-8aff-3a9c4ef1537b"
-uuid: "c85598dd-0e6f-87b5-8c58-9d32b2af4394"
-horo: 4
-bonds:
-  in:
-    - access
-    - auth
-    - blockchain
-    - christianity
-    - consciousness
-    - diamond
-    - gate
-    - horo
-    - law
-    - merge
-    - orthodoxy
-    - research
-    - roles
-    - scopes
-    - shamanism
-    - uuid
-  out:
-    - access
-    - auth
-    - blockchain
-    - christianity
-    - consciousness
-    - diamond
-    - gate
-    - horo
-    - law
-    - merge
-    - orthodoxy
-    - research
-    - roles
-    - scopes
-    - shamanism
-    - uuid
+coordinate: "cross · 7/descent · 81c2b961"
+contentUuid: "2b4b6789-7544-58e0-a7e2-3b0c3d818064"
+diamondUuid: "aa0051ac-cafb-8f37-b3a6-b17f36e764a7"
+uuid: "81c2b961-52ee-83d9-8a29-09f68d4485d9"
+horo: 7
 typography:
   partition: cross
   bondDegree: 58
-  neighbors: []
 standards:
   - "ISO 27002 §5.15 access-control + §5.3 segregation-of-duties"
   - "ISO-27002"
@@ -53,51 +17,8 @@ standards:
   - "NIST INCITS-359 role-based-access-control"
   - "NIST-INCITS-359-2012"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - auth
-    - horo
-    - law
-    - merge
-    - roles
-    - uuid
-  matrix:
-    - access
-    - auth
-    - blockchain
-    - christianity
-    - consciousness
-    - diamond
-    - gate
-    - horo
-    - law
-    - merge
-    - orthodoxy
-    - research
-    - roles
-    - scopes
-    - shamanism
-    - uuid
-  backlinks:
-    - access
-    - auth
-    - blockchain
-    - christianity
-    - consciousness
-    - diamond
-    - gate
-    - horo
-    - law
-    - merge
-    - orthodoxy
-    - research
-    - roles
-    - scopes
-    - shamanism
-    - uuid
 signatures:
-  computationUuid: "b5469de0-4cd8-8ea1-9a99-293d6044a451"
+  computationUuid: "c69da587-632e-895a-91d3-77c456e52c33"
   stages:
     - stage: path
       stageUuid: "83564b20-9d2e-8449-a9be-5e389526d96f"
@@ -108,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "abbf30ac-176d-8eb0-bb7d-e2d4dd24d301"
     - stage: horo
-      stageUuid: "b9fbfa50-11fd-80ea-a0e7-1d6f34068e1b"
+      stageUuid: "059f8b59-6fa1-8cfb-b4e1-31f00d472f8d"
     - stage: seal
       stageUuid: "7d29c4f8-f242-8a42-b0d8-fadfcb5abd6d"
     - stage: uuid
-      stageUuid: "d6949a8e-392d-8568-9d93-ea1de4430708"
+      stageUuid: "74e7c994-245b-8bec-b4ae-14a92248a24f"
 version: 2
 ---
 # cross — the agnostic access factory (the 3·6·9 governing axis)

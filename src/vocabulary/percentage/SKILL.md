@@ -1,83 +1,35 @@
 ---
 name: percentage
 description: "Use when reasoning about percentage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/percentage
-coordinate: percentage · 4/weave · 9d173e8b
-contentUuid: "9820c5d4-2538-5c4f-ac31-04e68f194921"
-diamondUuid: "804789e5-0fab-85aa-92df-107c4dd3d7c3"
-uuid: "9d173e8b-9918-8c5f-a659-1d66255abc0e"
+atomPath: "vocabulary/percentage"
+coordinate: "vocabulary/percentage · 4/weave · ceb683a8"
+contentUuid: "eb8bacc5-ef3f-5ea1-9371-94a5cdc25f95"
+diamondUuid: "c1d9b25f-ff81-809c-8597-0c1eb83dec32"
+uuid: "ceb683a8-e3da-8153-97ae-3b360e47bb42"
 horo: 4
-bonds:
-  in:
-    - annual
-    - collapse
-    - law
-    - merge
-    - order
-    - rate
-    - sti
-    - weight
-  out:
-    - annual
-    - collapse
-    - law
-    - merge
-    - order
-    - rate
-    - sti
-    - weight
 typography:
-  partition: percentage
+  partition: vocabulary
   bondDegree: 27
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - annual
-    - collapse
-    - law
-    - merge
-    - order
-    - rate
-    - sti
-    - weight
-  matrix:
-    - annual
-    - collapse
-    - law
-    - merge
-    - order
-    - rate
-    - sti
-    - weight
-  backlinks:
-    - annual
-    - collapse
-    - law
-    - merge
-    - order
-    - rate
-    - sti
-    - weight
 signatures:
-  computationUuid: "21469063-d881-8c96-a59e-4f6cd70caca6"
+  computationUuid: "b8369788-012a-88d2-b556-61fdc79b1076"
   stages:
     - stage: path
-      stageUuid: "de22d515-a771-85e6-978a-de7965e16c4c"
+      stageUuid: "fa6d0147-c8cc-8a6f-a5f7-89434fabca29"
     - stage: trinity
-      stageUuid: "c046b4d9-6abe-8712-a692-16733a1dadf7"
+      stageUuid: "a1217ff1-7477-8669-8e1d-9eed4ba34bbc"
     - stage: boundary
-      stageUuid: "7e1e6461-ddf9-86ca-9fc2-3f913eb8c4dd"
+      stageUuid: "2e06817e-7c87-8505-a5e5-fb813e17541b"
     - stage: links
-      stageUuid: "4c1d8cb6-8fe0-8b81-bece-5fc96e55e48b"
+      stageUuid: "8b8dfc05-43cb-8107-b086-815ade34f804"
     - stage: horo
-      stageUuid: "75e87cb7-0491-87bf-9eb6-3b5a4c0f8d6e"
+      stageUuid: "d6551e26-0c68-8d0c-a05f-720f3a11ef22"
     - stage: seal
-      stageUuid: "fefd7b19-c117-8130-8155-20d77e879af6"
+      stageUuid: "312d85cb-25da-8b6f-bccb-6c1da6714b47"
     - stage: uuid
-      stageUuid: "0641ff80-46f7-87a5-82c1-5fd0a9b08a80"
+      stageUuid: "6fd02cae-1b00-8923-b582-dd1f36ea42a3"
 version: 2
 ---
 # percentage

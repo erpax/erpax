@@ -1,112 +1,34 @@
 ---
 name: apiculture
 description: "Use when keeping bee colonies for produce and pollination — the colony (queen + workers) as a biological asset (the hive housing is IAS-16 equipment); honey and wax are harvested produce, the colony is also rented as a pollination service; brood is its growth, swarming its propagation, colony loss its mortality, the nectar flow its season. A living-production domain anchor and the pollination link to crops."
-atomPath: vocabulary/apiculture
-coordinate: apiculture · 2/share · e58f818e
-contentUuid: "bf0a34de-55ec-5363-9688-b4435632cf01"
-diamondUuid: "01ce770b-4c15-8b56-8ea6-88ebd21ccb43"
-uuid: "e58f818e-0e4e-86df-84f3-d07034104d2b"
-horo: 2
-bonds:
-  in:
-    - agriculture
-    - assets
-    - biomass
-    - harvest
-    - health
-    - items
-    - law
-    - livestock
-    - maturity
-    - mortality
-    - pollination
-    - propagation
-    - season
-    - yield
-  out:
-    - agriculture
-    - assets
-    - biomass
-    - harvest
-    - health
-    - items
-    - law
-    - livestock
-    - maturity
-    - mortality
-    - pollination
-    - propagation
-    - season
-    - yield
+atomPath: "vocabulary/apiculture"
+coordinate: "vocabulary/apiculture · 4/weave · a1bbd149"
+contentUuid: "17a090eb-2df2-5464-af67-8b7c12551e9d"
+diamondUuid: "41a75e0c-2459-8bf4-baf6-553a40f8f80b"
+uuid: "a1bbd149-60be-8f1f-abcc-312b75609f4d"
+horo: 4
 typography:
-  partition: apiculture
-  bondDegree: 45
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 47
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - assets
-    - biomass
-    - harvest
-    - health
-    - items
-    - law
-    - livestock
-    - maturity
-    - mortality
-    - pollination
-    - propagation
-    - season
-    - yield
-  matrix:
-    - agriculture
-    - assets
-    - biomass
-    - harvest
-    - health
-    - items
-    - law
-    - livestock
-    - maturity
-    - mortality
-    - pollination
-    - propagation
-    - season
-    - yield
-  backlinks:
-    - agriculture
-    - assets
-    - biomass
-    - harvest
-    - health
-    - items
-    - law
-    - livestock
-    - maturity
-    - mortality
-    - pollination
-    - propagation
-    - season
-    - yield
 signatures:
-  computationUuid: "7d0271eb-8a62-899b-b3f7-a0ca710a67c7"
+  computationUuid: "be9b840f-0c8e-89d9-bad9-019bfe6027fb"
   stages:
     - stage: path
-      stageUuid: "19b0e0c4-86c8-8b09-8c6b-ddd0c0096387"
+      stageUuid: "f780942a-673e-8785-9b23-017b3a329d41"
     - stage: trinity
-      stageUuid: "8a210797-cb97-864d-a298-645446516332"
+      stageUuid: "b1b7fb14-099f-8afe-966f-b33c03c0fbb8"
     - stage: boundary
-      stageUuid: "964bf443-65f8-8908-a788-62b10d146d50"
+      stageUuid: "a32c4c8a-98f4-8875-a9ad-e1d8b180f238"
     - stage: links
-      stageUuid: "9cf84fe0-bb0c-8cfe-87a6-2d541a93d161"
+      stageUuid: "9a688bc7-e850-8780-8567-61e59fa1836b"
     - stage: horo
-      stageUuid: "46b642a1-f8b6-8c2a-b2a6-a69d182bb89c"
+      stageUuid: "0fac96ea-30b8-8141-b455-71784ff4b95c"
     - stage: seal
-      stageUuid: "837de772-be74-803a-9cf0-259569545c63"
+      stageUuid: "7f73387a-b420-8d0f-b740-c59eedb0735b"
     - stage: uuid
-      stageUuid: "fc97459d-6474-82d9-b8e9-26dd30fa9203"
+      stageUuid: "4905e537-66b4-808a-935e-9007f284a60e"
 version: 2
 ---
 # apiculture — beekeeping for produce and pollination

@@ -1,53 +1,35 @@
 ---
 name: permissions
 description: "Use when reasoning about permissions — Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi)."
-atomPath: vocabulary/permissions
-coordinate: permissions · 4/weave · 39f47c2f
-contentUuid: "052698f6-5d70-500e-9433-e52861877890"
-diamondUuid: "3e38b6c1-4c7c-8372-b0d7-c084cb63228d"
-uuid: "39f47c2f-8cd2-889c-b2ad-828a24d732bc"
-horo: 4
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/permissions"
+coordinate: "vocabulary/permissions · 8/crest · 9914adc9"
+contentUuid: "5dc47f48-8ea3-5ed7-92f2-a59bef434c06"
+diamondUuid: "e4584740-4fd9-8a09-9e08-ac20bedeb32a"
+uuid: "9914adc9-4ac8-8b81-810c-b5de1a8b61fa"
+horo: 8
 typography:
-  partition: permissions
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "5894affe-dd3a-8852-bf33-ac74e1278790"
+  computationUuid: "dbcb735f-ba3f-87ac-a8b9-b96e2942296b"
   stages:
     - stage: path
-      stageUuid: "14eeb256-6c64-8a2f-b276-483a0707e763"
+      stageUuid: "f2a776dc-60be-807c-833e-78dad41e62b5"
     - stage: trinity
-      stageUuid: "9b7a07eb-94d1-8e6e-adce-35136c22ade4"
+      stageUuid: "55db184a-128d-881d-9ec4-a4c731f2bf30"
     - stage: boundary
-      stageUuid: "ed87d1ad-c72c-870c-b628-a9be2b8d823a"
+      stageUuid: "48f12b37-7fb2-8f8f-a194-72f07bd8c52d"
     - stage: links
-      stageUuid: "e6a5d097-3885-8a8f-8d79-977b38e85ea0"
+      stageUuid: "b040ca49-a1d1-8264-af7a-b1cc299c2ba2"
     - stage: horo
-      stageUuid: "1e2de5cc-a370-8014-8ee9-08e9f28b3e2f"
+      stageUuid: "a19df4f1-3955-8717-8d93-cbf2af488ae7"
     - stage: seal
-      stageUuid: "a1cd51e3-59c3-8335-a59f-e78b1b377cf4"
+      stageUuid: "f5da5f3e-3fc8-886a-bd0a-4a6e871c608f"
     - stage: uuid
-      stageUuid: "cadc960b-fa28-8f53-a82b-7c40cd1e4843"
+      stageUuid: "018d1318-91f9-873e-b253-bb264080087c"
 version: 2
 ---
 # permissions

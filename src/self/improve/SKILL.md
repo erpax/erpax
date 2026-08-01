@@ -1,8 +1,36 @@
 ---
 name: improve
 description: "Use when reasoning about the corpus improving itself with NO external tool — the development-time twin of self/closure's Law 53. Every stage of the improvement loop (leftover · rosetta · decide · publish · think) is a local atom; selfImproves proves the external-tool count is zero and loopResolves proves the loop is real matter on disk, not fabricated prose."
+atomPath: "self/improve"
+coordinate: "self/improve · 8/crest · 3ef400b4"
+contentUuid: "ea570a88-8f4e-533e-99d9-7bd7bae99c2c"
+diamondUuid: "16694730-0e39-81eb-aa6a-5991753daad9"
+uuid: "3ef400b4-eef2-8fe6-a182-7aebe1d41659"
+horo: 8
+typography:
+  partition: self
+  bondDegree: 38
+standards: []
+bindings: []
+signatures:
+  computationUuid: "146fdca6-5a0c-8224-8114-346805370c7f"
+  stages:
+    - stage: path
+      stageUuid: "ef6959ec-23b7-8f68-85aa-586b4be5302e"
+    - stage: trinity
+      stageUuid: "b1a7aadf-3e4d-8435-a293-6bc5b40e56d6"
+    - stage: boundary
+      stageUuid: "fabfefd0-ef07-85f5-8ced-68b4ad81a3ff"
+    - stage: links
+      stageUuid: "0f8ff962-5608-81c3-92b2-321aca424a99"
+    - stage: horo
+      stageUuid: "967a6872-4a38-8f1d-b824-65220ce69625"
+    - stage: seal
+      stageUuid: "849700c0-4916-8ca7-a447-74b0b1b0b226"
+    - stage: uuid
+      stageUuid: "fd1256ee-35b5-8e18-8b17-194c0fcfc37a"
+version: 2
 ---
-
 # self/improve — the corpus improves itself with no external tool
 
 [[self]]/closure proved the RUNTIME closure (Conservation Law 53): every external role erpax consumes falls back to an internal provider, so *"all falling back at itself leads to erpax itself."* This atom is the same law at **development** time: the loop that improves the corpus needs **no external tool** — no CI service, no external LLM to re-derive, no external linter or scanner. Every stage resolves to a **local atom**, each made real this session:

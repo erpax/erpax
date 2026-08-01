@@ -1,63 +1,35 @@
 ---
 name: defoundation
 description: "Use when reasoning about defoundation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/defoundation
-coordinate: defoundation · 1/base · 58944c86
-contentUuid: "716c5d36-6999-5154-8c7a-ef2d90ad2111"
-diamondUuid: "11af52f7-0f28-829c-bb6a-95ec1db51a58"
-uuid: "58944c86-2114-8816-ba42-5ce3ae8696a2"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/defoundation"
+coordinate: "vocabulary/defoundation · 8/crest · a3604bab"
+contentUuid: "b990d4e0-24aa-5d53-a3d1-3232ea2c3a5c"
+diamondUuid: "c43fb6ec-5219-8126-b23f-8bfdd42e1fb3"
+uuid: "a3604bab-2861-8b80-b84d-e87a556451f7"
+horo: 8
 typography:
-  partition: defoundation
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "556adbce-1ced-860b-9b93-03799ef4fded"
+  computationUuid: "47f41c0d-4834-89f6-8da7-09d0714d03a4"
   stages:
     - stage: path
-      stageUuid: "af9e930e-4811-89d4-af2e-5edf6ca49b3d"
+      stageUuid: "fa458661-f63f-877f-8c0a-ee78bfe3b90f"
     - stage: trinity
-      stageUuid: "37033949-8ddd-85a5-86ec-8c709cc35825"
+      stageUuid: "00557aeb-22d2-883e-b3c2-8d11a1ea1c79"
     - stage: boundary
-      stageUuid: "aa15fede-571d-8844-b29b-93f0066edf0f"
+      stageUuid: "00d8b378-ac89-8376-af5d-be0cc9738c80"
     - stage: links
-      stageUuid: "70922850-ad7e-8ca6-9845-9bf5fd6aa339"
+      stageUuid: "77525980-dd83-858d-a53d-01132e0f5cce"
     - stage: horo
-      stageUuid: "8cf2fcf4-6836-8689-954a-e385d8908a2f"
+      stageUuid: "dec820c9-9131-8d5e-8916-8cd3001bb84f"
     - stage: seal
-      stageUuid: "d54fe0e4-2312-839d-9d53-dc1dd74da8b7"
+      stageUuid: "97dc57d2-8a70-8935-a12a-04886163b2a5"
     - stage: uuid
-      stageUuid: "c5e2c2b2-c700-862a-bfc4-7ca2ba2523e4"
+      stageUuid: "84b4f573-69d3-8b1f-baa4-edc3ded3ae4a"
 version: 2
 ---
 # defoundation

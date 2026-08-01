@@ -2,8 +2,54 @@
 name: coalesce
 description: "Use when many API requests must be served without many API calls — content-addressed single-flight collapses identical concurrent work onto ONE upstream call and bounds how much runs at once. Emits MEASURED answers/tokens for amortize, which is what makes the FTL claim refutable. Run: tsx src/quantum/coalesce/index.ts"
 atomPath: "quantum/coalesce"
+coordinate: "quantum/coalesce · 7/descent · 1d19c103"
+contentUuid: "eeb72392-bfd5-5b61-8927-946eda57ddd5"
+diamondUuid: "f9d57802-ef38-800c-97a0-e5a02c07d24f"
+uuid: "1d19c103-d7bd-84ca-98cf-c73339625587"
+horo: 7
+typography:
+  partition: quantum
+  bondDegree: 12
+standards: []
+bindings: []
+signatures:
+  computationUuid: "c19758b1-ea37-8c18-a2f5-58d136c37151"
+  stages:
+    - stage: path
+      stageUuid: "742d7b1e-3ead-82eb-9a77-4d934cc999e4"
+    - stage: trinity
+      stageUuid: "41d8b628-3426-8a30-b25f-62cf4181dd97"
+    - stage: boundary
+      stageUuid: "04118db8-5acd-8e35-948d-11ac821ad081"
+    - stage: links
+      stageUuid: "b2d4ef7d-58a1-8b46-b819-b850e9c6474d"
+    - stage: horo
+      stageUuid: "c7486804-1f51-8ccc-940d-d92247a9b7b0"
+    - stage: seal
+      stageUuid: "395ce11a-b2b5-8bb8-a496-82b51c8a6eca"
+    - stage: uuid
+      stageUuid: "da1df740-39ed-8287-966c-529c3af5f0c7"
+quantum:
+  superposition:
+    - algebra
+    - law
+    - quantum
+    - rules
+    - superposition
+  collapse:
+    - "Use when many API requests must be served without many API calls — content-addressed single-flight collapses identical concurrent work onto ONE upstream call and bounds how much runs at once. Emits MEASURED answers/tokens for amortize, which is what makes the FTL claim refutable. Run: tsx src/quantum/coalesce/index.ts"
+    - "identical work folds to one call. The address is a function of the content, so duplicate requests collapse provably; what remains is bounded on purpose, and the cost it reports is the cost it paid."
+  seal:
+    sandbox: false
+    receipt: false
+    pathFollow: true
+    canonicalRecord: true
+    analogResults: false
+    speechResults: false
+    computationUuid: "c19758b1-ea37-8c18-a2f5-58d136c37151"
+    contentUuid: "eeb72392-bfd5-5b61-8927-946eda57ddd5"
+version: 2
 ---
-
 # coalesce — same content ⇒ same address ⇒ one upstream call
 
 The primitives were already here and nothing used them. [[quantum]]/request has `requestUuid` · `idempotentReplay` · `cacheDedupKey` in 48 lines; the only real in-flight map in the corpus was **private** inside `remote/media/import`. So every other caller that asked the same question twice paid twice.
@@ -32,3 +78,5 @@ The coalescer's `amortizeInput` method returns what it **actually did**: `answer
 - **ISO/IEC 25010:2023 §5.4** — performance efficiency: resource utilisation under load.
 
 Composes: [[quantum]]/request · [[quantum]]/ftl · [[algebra]] · [[law]].
+
+<sub>content-uuid `eeb72392-bfd5-5b61-8927-946eda57ddd5` · account `quantum/coalesce` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

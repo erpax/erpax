@@ -1,135 +1,34 @@
 ---
 name: grace
 description: "Use when reasoning about the unearned credit in erpax — the write-off / jubilee / forgiveness that clears a debt the debtor cannot pay; the reversal that restores balance from outside the ledger. The universal root of unmerited settlement; dual of debt."
-atomPath: vocabulary/grace
-coordinate: grace · 4/weave · 4ee34453
-contentUuid: "d71ded4f-4c04-5c1b-8f6c-f09f1793eb21"
-diamondUuid: "bf3c3c6c-0cf4-8c44-9724-167bce9c2077"
-uuid: "4ee34453-33d2-8353-a0a2-ebe5b4a582fc"
-horo: 4
-bonds:
-  in:
-    - accounting
-    - angel
-    - balance
-    - catholicism
-    - christianity
-    - close
-    - covenant
-    - faith
-    - give
-    - law
-    - mercy
-    - merge
-    - one
-    - orthodoxy
-    - proof
-    - protestantism
-    - sacred
-    - sikhism
-    - take
-    - zeropoint
-  out:
-    - accounting
-    - angel
-    - balance
-    - catholicism
-    - christianity
-    - close
-    - covenant
-    - faith
-    - give
-    - law
-    - mercy
-    - merge
-    - one
-    - orthodoxy
-    - proof
-    - protestantism
-    - sacred
-    - sikhism
-    - take
-    - zeropoint
+atomPath: "vocabulary/grace"
+coordinate: "vocabulary/grace · 2/share · a87fc358"
+contentUuid: "5b8b252c-49c8-5549-b5fb-1d195891ede1"
+diamondUuid: "5abe5544-3688-87a4-97cc-47d1c9f66c22"
+uuid: "a87fc358-9f79-8678-ab14-affad5b553e8"
+horo: 2
 typography:
-  partition: grace
+  partition: vocabulary
   bondDegree: 64
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - angel
-    - balance
-    - close
-    - faith
-    - give
-    - law
-    - merge
-    - one
-    - proof
-    - sacred
-    - take
-    - zeropoint
-  matrix:
-    - accounting
-    - angel
-    - balance
-    - catholicism
-    - christianity
-    - close
-    - covenant
-    - faith
-    - give
-    - law
-    - mercy
-    - merge
-    - one
-    - orthodoxy
-    - proof
-    - protestantism
-    - sacred
-    - sikhism
-    - take
-    - zeropoint
-  backlinks:
-    - accounting
-    - angel
-    - balance
-    - catholicism
-    - christianity
-    - close
-    - covenant
-    - faith
-    - give
-    - law
-    - mercy
-    - merge
-    - one
-    - orthodoxy
-    - proof
-    - protestantism
-    - sacred
-    - sikhism
-    - take
-    - zeropoint
 signatures:
-  computationUuid: "a69e6e37-2c9b-8ca4-9fb4-cadfecc56a3f"
+  computationUuid: "6bf83bec-8a1c-8f58-9a6f-cb392ee11aea"
   stages:
     - stage: path
-      stageUuid: "2c8ba4e7-9480-82f9-bb91-a617e67783ff"
+      stageUuid: "d5baf9a5-ef8b-800d-a3ea-d93416acb520"
     - stage: trinity
-      stageUuid: "3f2c0e90-67b5-88e4-bf3b-56209bb2e92a"
+      stageUuid: "ee9f9f10-596b-8a1f-a255-4e74a867aad4"
     - stage: boundary
-      stageUuid: "92fecfd3-c73e-8fd8-b0bb-5d97125c87df"
+      stageUuid: "0bf5eb2d-6f62-858d-9eaa-f58884754a69"
     - stage: links
-      stageUuid: "0f9974c2-37e4-81fe-abcf-3110492003e5"
+      stageUuid: "e8c555b2-de96-843a-9c3b-0e1822cd0e62"
     - stage: horo
-      stageUuid: "f19199bd-dc8f-8dea-bcaf-d1d3f545edce"
+      stageUuid: "a13158db-d305-877c-889b-5f05d32f477b"
     - stage: seal
-      stageUuid: "60103e2e-7498-8878-bd1d-da083ab9e5f7"
+      stageUuid: "7136bda9-0070-832f-90bc-99d049ff9e11"
     - stage: uuid
-      stageUuid: "0e7f4b9a-f7cc-8021-ab68-062778abf355"
+      stageUuid: "ae4c5860-08ae-8c0a-91cf-e1bb26d83016"
 version: 2
 ---
 # grace — the unearned credit (the debt cleared from outside)

@@ -1,53 +1,35 @@
 ---
 name: followup
 description: Use when reasoning about followup — Typical or recommended followup care after the procedure is performed.
-atomPath: vocabulary/followup
-coordinate: followup · 4/weave · 0388d1ae
-contentUuid: "c39f676b-6174-5e21-bce8-e156114d7ec8"
-diamondUuid: "ea9a2427-6387-8026-9b20-ef080cce343e"
-uuid: "0388d1ae-e46a-8dc1-a7a8-baebee82e87e"
-horo: 4
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/followup"
+coordinate: "vocabulary/followup · 8/crest · 461a6814"
+contentUuid: "0c6bce64-3d80-5fa5-b36b-14b2d91d7a91"
+diamondUuid: "dbbb661d-37b6-8810-8759-e83e2880263d"
+uuid: "461a6814-bf50-8be3-99bb-f72080f938b0"
+horo: 8
 typography:
-  partition: followup
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "a8fe2442-6f42-84b8-871e-f5c3d6dddd7e"
+  computationUuid: "2db14a6c-6975-8025-8b46-1cd0ea815de7"
   stages:
     - stage: path
-      stageUuid: "72540a68-fa0e-874f-95f0-9c6276e838e3"
+      stageUuid: "73e1afac-beac-8070-bfb7-3ec98e494dc4"
     - stage: trinity
-      stageUuid: "b8527f04-3417-825c-b92f-17ce0c64c46e"
+      stageUuid: "23df1f30-f397-8743-ad67-e0ba4b013ea9"
     - stage: boundary
-      stageUuid: "6a1b6a83-c219-8d10-ad1c-10f58d197bbf"
+      stageUuid: "2efe6909-6341-8ca9-b685-6e7f14760225"
     - stage: links
-      stageUuid: "f7029006-6f6d-87e4-80ce-7755c26409f3"
+      stageUuid: "afd5b271-8772-8a16-ae4e-f9163f50f14e"
     - stage: horo
-      stageUuid: "80c8a3a6-9934-89b2-ba7b-b7a8a36a3f6f"
+      stageUuid: "0622b4e6-e105-8e93-9431-b25594ba44de"
     - stage: seal
-      stageUuid: "a8c602bf-b09a-84a6-a9d3-774f0656c4b7"
+      stageUuid: "3f9ad11a-d964-8a6f-b1bb-db1d46bc9625"
     - stage: uuid
-      stageUuid: "14666cd5-21bc-893f-8512-ee582f46e7de"
+      stageUuid: "286e0800-8267-86c1-a1b4-7343557f1818"
 version: 2
 ---
 # followup

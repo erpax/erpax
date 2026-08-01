@@ -1,68 +1,35 @@
 ---
 name: imprint
 description: "Use when reasoning about imprint as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/imprint
-coordinate: imprint · 1/base · b7b15db3
-contentUuid: "a90776d5-cdff-5730-97a8-d240fa548b65"
-diamondUuid: "cd14a82d-d285-8e5f-ad00-c6d0cb263087"
-uuid: "b7b15db3-f1fe-8e34-97e4-8e148a6ac0a8"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - publisher
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - publisher
-    - sti
+atomPath: "vocabulary/imprint"
+coordinate: "vocabulary/imprint · 7/descent · 5494689c"
+contentUuid: "41862010-521c-565e-886c-f43ff4b103aa"
+diamondUuid: "bdacbe4f-baca-858a-b7e4-04bda61c8a23"
+uuid: "5494689c-4bcb-8a17-902d-2a36b5f21f98"
+horo: 7
 typography:
-  partition: imprint
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - publisher
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - publisher
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - publisher
-    - sti
 signatures:
-  computationUuid: "9c559021-2fe2-8649-a42f-b6a219d08a55"
+  computationUuid: "92fd23ed-ba2f-8093-a73a-046da4db7061"
   stages:
     - stage: path
-      stageUuid: "6c850289-f3c2-8c98-baae-318afc942108"
+      stageUuid: "70ecaa75-3fa9-8738-870a-451c4674077f"
     - stage: trinity
-      stageUuid: "3bb752e9-ee5d-8a5e-ab9f-a233c014fc5e"
+      stageUuid: "fa263bfb-3c46-878a-ab5e-b790ab6e2c7f"
     - stage: boundary
-      stageUuid: "f59d93ba-ad35-8f08-805e-f699796074d3"
+      stageUuid: "589a5237-6cbf-8830-a8de-99034dc58495"
     - stage: links
-      stageUuid: "f54cc893-c8de-86e7-8e5d-f835af9e5e33"
+      stageUuid: "0fbea4b4-bf8b-89c7-8932-6e46e64fa044"
     - stage: horo
-      stageUuid: "2529a54a-1c47-870a-9e33-62b973c93a7f"
+      stageUuid: "78e147f6-c867-8b26-b071-f7ae0b58ace2"
     - stage: seal
-      stageUuid: "6291e461-87cb-85f4-927e-fd9f4218b306"
+      stageUuid: "cf1d2653-34e6-8dcd-8ab7-3109f35d102a"
     - stage: uuid
-      stageUuid: "2dd6a868-c163-8ceb-a50a-2fcd7146c82d"
+      stageUuid: "ac32486b-a402-850b-a17d-2ce27c697cc2"
 version: 2
 ---
 # imprint

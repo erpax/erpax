@@ -1,58 +1,35 @@
 ---
 name: corporation
 description: "Use when reasoning about corporation — Organization: A business corporation."
-atomPath: vocabulary/corporation
-coordinate: corporation · 5/round · 85916289
-contentUuid: "688de2aa-4dfd-5acb-a64d-12712ae1cbc5"
-diamondUuid: "f25a281b-edac-8be0-8a52-69eb48149ba7"
-uuid: "85916289-0d91-8ea6-8a73-5e39f806fc36"
+atomPath: "vocabulary/corporation"
+coordinate: "vocabulary/corporation · 5/round · aafff86d"
+contentUuid: "f07f380b-d22a-5c40-beb3-8f86a1e6c8aa"
+diamondUuid: "dc8df51e-ad0d-8f07-b4d1-292dc68432a7"
+uuid: "aafff86d-d5c4-8973-857d-1251d2c6044f"
 horo: 5
-bonds:
-  in:
-    - law
-    - organization
-    - thing
-  out:
-    - law
-    - organization
-    - thing
 typography:
-  partition: corporation
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - organization
-    - thing
-  matrix:
-    - law
-    - organization
-    - thing
-  backlinks:
-    - law
-    - organization
-    - thing
 signatures:
-  computationUuid: "bfab4dee-2e5c-8723-9991-e44c9d308bae"
+  computationUuid: "6f3ac3e7-b299-8908-a749-5e384a5bbe64"
   stages:
     - stage: path
-      stageUuid: "78daf960-cfa5-80e1-81bf-ce7b1bdd6ee1"
+      stageUuid: "3044ebc2-cafd-8a4e-85c2-7cd83a2d1433"
     - stage: trinity
-      stageUuid: "7ed33273-d381-8368-8a1c-39208f6e5c7f"
+      stageUuid: "41c36c10-a4db-88d5-8671-e9af5e8e3f46"
     - stage: boundary
-      stageUuid: "44ff7f24-ace7-83c6-9cbe-b002f8efb753"
+      stageUuid: "8dbcfd03-43ae-8cf0-8a9d-d7b16d600835"
     - stage: links
-      stageUuid: "65675a88-b474-8837-845c-47c7947c439f"
+      stageUuid: "cd219ca9-cf31-8194-beae-aef77d00463a"
     - stage: horo
-      stageUuid: "3d75e04b-30dc-853f-a3b2-dad20e8e09de"
+      stageUuid: "65589375-c0dd-8eef-b064-181a24e7f1ff"
     - stage: seal
-      stageUuid: "2f1e6d14-a860-8e59-ae7c-376d0eced7a7"
+      stageUuid: "1f7ff82f-8266-8289-860a-b295546f80b3"
     - stage: uuid
-      stageUuid: "2811e995-a7fe-847c-a3a0-8e757fe84011"
+      stageUuid: "f1af50f1-e497-8ef6-b304-3619ba4fb4a6"
 version: 2
 ---
 # corporation

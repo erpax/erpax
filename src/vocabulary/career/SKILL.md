@@ -1,112 +1,34 @@
 ---
 name: career
 description: "Use when modelling a work career as a life-course trajectory — трудова кариера — a sequence of positions on the harmonic allocation ladder walked over time. Late career is a late band on that ring (the maintenance→disengagement stage before decompression/retirement) where accumulated experience peaks against skill obsolescence and the status sign can flip with age. Derive the stage from the sequence and time; never store it."
-atomPath: vocabulary/career
-coordinate: career · 1/base · 3cce1e87
-contentUuid: "b1f927bc-1b64-5d95-86ec-9cc1f57561a5"
-diamondUuid: "8740fe6c-3a74-8642-a8e3-81b38e966183"
-uuid: "3cce1e87-031e-847b-8096-c9c0ad1bd63e"
+atomPath: "vocabulary/career"
+coordinate: "vocabulary/career · 1/base · 01032c1b"
+contentUuid: "9e6d0bc2-766e-569f-8956-b1d84e9c981f"
+diamondUuid: "b83f18fc-eba3-8a81-8a04-655ad7d25f2a"
+uuid: "01032c1b-7385-8166-a329-989aff1f843c"
 horo: 1
-bonds:
-  in:
-    - age
-    - allocation
-    - cohort
-    - crisis
-    - decompression
-    - health
-    - horo
-    - law
-    - market
-    - positions
-    - sequence
-    - status
-    - time
-    - wellbeing
-  out:
-    - age
-    - allocation
-    - cohort
-    - crisis
-    - decompression
-    - health
-    - horo
-    - law
-    - market
-    - positions
-    - sequence
-    - status
-    - time
-    - wellbeing
 typography:
-  partition: career
+  partition: vocabulary
   bondDegree: 45
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - age
-    - allocation
-    - cohort
-    - crisis
-    - decompression
-    - health
-    - horo
-    - law
-    - market
-    - positions
-    - sequence
-    - status
-    - time
-    - wellbeing
-  matrix:
-    - age
-    - allocation
-    - cohort
-    - crisis
-    - decompression
-    - health
-    - horo
-    - law
-    - market
-    - positions
-    - sequence
-    - status
-    - time
-    - wellbeing
-  backlinks:
-    - age
-    - allocation
-    - cohort
-    - crisis
-    - decompression
-    - health
-    - horo
-    - law
-    - market
-    - positions
-    - sequence
-    - status
-    - time
-    - wellbeing
 signatures:
-  computationUuid: "6c5ef82b-5c26-843e-a237-670c5bf1f4d0"
+  computationUuid: "795e98c7-b798-8c5f-8ded-13081ce69109"
   stages:
     - stage: path
-      stageUuid: "1f10997f-d335-85d2-8b50-538c4fff47ff"
+      stageUuid: "adcfe4be-b41d-80f7-ac09-ba010b6c9b02"
     - stage: trinity
-      stageUuid: "60507b89-692b-8b8b-b7cf-02761fb5d08a"
+      stageUuid: "76021817-3bbf-89f4-8a8c-41fecb10d347"
     - stage: boundary
-      stageUuid: "5c1d2c4c-5f72-85cc-a4b6-6985355e50fd"
+      stageUuid: "22c332f9-8c63-83a7-91d1-e965619004bd"
     - stage: links
-      stageUuid: "02114f3f-0dd1-8208-8ccd-80b78d603ff7"
+      stageUuid: "20e25282-1d3e-849e-a94a-9f0953d20194"
     - stage: horo
-      stageUuid: "6e70b40e-8443-8cb0-a8c0-e39a686ec939"
+      stageUuid: "665d7ccb-ecab-8e9e-9607-f9e8b4b83689"
     - stage: seal
-      stageUuid: "79441d6a-951e-8437-9fb8-d33ae5406b3e"
+      stageUuid: "d1e3d95f-95cf-8355-8c5f-85af08bf3a73"
     - stage: uuid
-      stageUuid: "2fec4e8b-03ec-8de7-921e-3ccc441125b2"
+      stageUuid: "c4ec1917-25dc-8599-a7e9-39f9638f7da8"
 version: 2
 ---
 # career — the life-course work trajectory, a sequence of positions (трудова кариера)

@@ -1,103 +1,20 @@
 ---
 name: command
 description: "Use when reasoning about the Payload CLI command set folded into the corpus — each command a name (name equals path equals uuid), the set folding to one root by the merge, with both-sides inverse pairs encoded (migrate up and down, fresh and reset) and generators forward-only."
-atomPath: payload/command
-coordinate: payload/command · 1/base · abe67c5b
-contentUuid: "946be9f1-9048-517c-91a8-42025330c679"
-diamondUuid: "d1fd55ce-f303-84ec-a9af-8d85f5de7cc5"
-uuid: "abe67c5b-784d-878c-8bc4-539e36fc8b69"
+atomPath: "payload/command"
+coordinate: "payload/command · 1/base · d739f9cd"
+contentUuid: "d3e2af9e-8dd5-5761-8b16-fa8b437418c0"
+diamondUuid: "d61a527a-330a-8b44-89a7-59e9c47c7836"
+uuid: "d739f9cd-754a-882e-8506-dddb6e2a806a"
 horo: 1
-bonds:
-  in:
-    - answer
-    - collapse
-    - concatenate
-    - dry
-    - generate
-    - law
-    - merge
-    - migrate
-    - payload
-    - question
-    - relocate
-    - self
-    - sequence
-    - society
-    - step
-    - train
-    - workflow
-  out:
-    - answer
-    - collapse
-    - concatenate
-    - dry
-    - generate
-    - law
-    - merge
-    - migrate
-    - question
-    - relocate
-    - self
-    - sequence
-    - society
-    - step
-    - train
-    - workflow
 typography:
   partition: payload
   bondDegree: 59
-  neighbors: []
 standards:
-  - "UBL-2.1"
   - "the Payload CLI (generate / migrate / jobs / run) · double-entry (every reversible command has its inverse)"
-  - "the command list is the installed CLI's; each uuid and the fold are computed"
-  - "the command list is the installed CLI's; each uuid and the fold are computed, never assumed"
 bindings: []
-neighbors:
-  wikilink:
-    - deploy
-    - karma
-    - law
-    - merge
-    - name
-    - payload
-    - uuid
-  matrix:
-    - answer
-    - collapse
-    - concatenate
-    - dry
-    - generate
-    - law
-    - merge
-    - migrate
-    - question
-    - relocate
-    - self
-    - sequence
-    - society
-    - step
-    - train
-    - workflow
-  backlinks:
-    - answer
-    - collapse
-    - concatenate
-    - dry
-    - generate
-    - law
-    - merge
-    - migrate
-    - question
-    - relocate
-    - self
-    - sequence
-    - society
-    - step
-    - train
-    - workflow
 signatures:
-  computationUuid: "b259b1bb-b958-84ec-bf9d-b8c76a4e0edb"
+  computationUuid: "824c821e-0200-8dee-a09a-72aa886e5e7c"
   stages:
     - stage: path
       stageUuid: "e70726ce-9100-8683-a469-cb57a1beec52"
@@ -108,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7a296942-2da5-8720-9b28-2997e7a9a345"
     - stage: horo
-      stageUuid: "1387f2a5-02a6-85c2-90d7-c8b6776a48dc"
+      stageUuid: "1ef256cc-2d89-8076-a11d-9c4eeed244d5"
     - stage: seal
       stageUuid: "40937d28-15e1-896d-ad47-68a193ce7b4d"
     - stage: uuid
-      stageUuid: "98fbedb1-f237-89e5-ba61-2d4b2c11cb64"
+      stageUuid: "0c9be5bc-cb71-8c44-8c0a-d7122f451170"
 version: 2
 ---
 # payload/command — the CLI command set, folded

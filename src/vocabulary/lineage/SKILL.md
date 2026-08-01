@@ -1,182 +1,34 @@
 ---
 name: lineage
 description: "Use when tracking data origin and transformation — source-to-target lineage, transformation tracking, column-level lineage, lineage visualization, provenance chain, audit trail of data movement."
-atomPath: vocabulary/lineage
-coordinate: lineage · 7/descent · 85671fa9
-contentUuid: "4169a626-d7f1-5856-b716-ceb178ff481a"
-diamondUuid: "84318061-1139-8d09-aef6-d23650044d21"
-uuid: "85671fa9-b482-8c1d-9ce2-ba70d2cef5ca"
-horo: 7
-bonds:
-  in:
-    - accounting
-    - agriculture
-    - animal
-    - aquaculture
-    - baseline
-    - breed
-    - catholicism
-    - certification
-    - cloning
-    - dna
-    - empirical
-    - events
-    - federation
-    - forestry
-    - grade
-    - harvest
-    - history
-    - identity
-    - ingest
-    - karma
-    - livestock
-    - lots
-    - organic
-    - orthodoxy
-    - postharvest
-    - profane
-    - proof
-    - sacred
-    - shia
-    - supto
-    - terroir
-  out:
-    - accounting
-    - agriculture
-    - animal
-    - aquaculture
-    - baseline
-    - breed
-    - catholicism
-    - certification
-    - cloning
-    - dna
-    - empirical
-    - events
-    - federation
-    - forestry
-    - grade
-    - harvest
-    - history
-    - identity
-    - ingest
-    - karma
-    - livestock
-    - lots
-    - organic
-    - orthodoxy
-    - postharvest
-    - profane
-    - proof
-    - sacred
-    - shia
-    - supto
-    - terroir
+atomPath: "vocabulary/lineage"
+coordinate: "vocabulary/lineage · 8/crest · e56ed91c"
+contentUuid: "243878b2-c535-5b6f-a719-f5b08322a7cb"
+diamondUuid: "e9376ff7-6599-8f14-bc2a-4810cddc29c8"
+uuid: "e56ed91c-c418-8037-b52e-02015eef1a5f"
+horo: 8
 typography:
-  partition: lineage
-  bondDegree: 98
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 96
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - certification
-    - events
-    - federation
-    - grade
-    - harvest
-    - history
-    - identity
-    - ingest
-    - lots
-    - organic
-    - postharvest
-    - profane
-    - proof
-    - sacred
-    - supto
-  matrix:
-    - accounting
-    - agriculture
-    - animal
-    - aquaculture
-    - baseline
-    - breed
-    - catholicism
-    - certification
-    - cloning
-    - dna
-    - empirical
-    - events
-    - federation
-    - forestry
-    - grade
-    - harvest
-    - history
-    - identity
-    - ingest
-    - karma
-    - livestock
-    - lots
-    - organic
-    - orthodoxy
-    - postharvest
-    - profane
-    - proof
-    - sacred
-    - shia
-    - supto
-    - terroir
-  backlinks:
-    - accounting
-    - agriculture
-    - animal
-    - aquaculture
-    - baseline
-    - breed
-    - catholicism
-    - certification
-    - cloning
-    - dna
-    - empirical
-    - events
-    - federation
-    - forestry
-    - grade
-    - harvest
-    - history
-    - identity
-    - ingest
-    - karma
-    - livestock
-    - lots
-    - organic
-    - orthodoxy
-    - postharvest
-    - profane
-    - proof
-    - sacred
-    - shia
-    - supto
-    - terroir
 signatures:
-  computationUuid: "8727c210-fc78-8326-a079-52185a48c1d8"
+  computationUuid: "6e5ec73e-ba3a-88ac-ae30-057cdb38ad93"
   stages:
     - stage: path
-      stageUuid: "7f12ffdb-804b-8f67-96d2-d8e2d7e143ed"
+      stageUuid: "af972014-9f28-80b4-ba5c-08b7a8f2fd8f"
     - stage: trinity
-      stageUuid: "bd9a99f0-4f83-8e0e-b9f1-acb6d077e4f0"
+      stageUuid: "43887ccc-06fb-8d31-acd6-82f4e0650e43"
     - stage: boundary
-      stageUuid: "7cfebc6e-f280-83da-ade5-723f7244e580"
+      stageUuid: "b5197edb-2aad-866d-a55a-907a26a6de83"
     - stage: links
-      stageUuid: "61cd3c75-053d-805c-8faa-c312d0ad1182"
+      stageUuid: "25f7e9fb-4565-8fe2-93a1-ff23340697d6"
     - stage: horo
-      stageUuid: "b80ea5fa-d62c-88a5-8acb-1c4346217dfb"
+      stageUuid: "2273d460-1f49-8bd2-bc84-36c59126ae30"
     - stage: seal
-      stageUuid: "29e7be2a-d548-8ac5-ba06-079a6af5bc3a"
+      stageUuid: "10552d65-1e10-8b25-9fa7-4e9bf8ef967d"
     - stage: uuid
-      stageUuid: "87467d14-4901-810d-8f23-0a4945bf3f1c"
+      stageUuid: "98af913d-f386-81a1-b69c-bdc6f1dcacc9"
 version: 2
 ---
 # lineage

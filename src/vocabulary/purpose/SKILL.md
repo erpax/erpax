@@ -1,73 +1,35 @@
 ---
 name: purpose
 description: "Use when reasoning about purpose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/purpose
-coordinate: purpose · 5/round · 99a19570
-contentUuid: "77c532ed-b9b2-595e-ae9f-9a9abc7a7663"
-diamondUuid: "627e7d6d-e961-8b45-a8e8-7cc7a0c1d695"
-uuid: "99a19570-5c1c-8b10-b54f-885ebfe46c28"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - device
-    - law
-    - medical
-    - merge
-    - sti
-  out:
-    - collapse
-    - device
-    - law
-    - medical
-    - merge
-    - sti
+atomPath: "vocabulary/purpose"
+coordinate: "vocabulary/purpose · 7/descent · 0e8f485a"
+contentUuid: "0b5455b0-b848-551e-8a68-732de90b5f9b"
+diamondUuid: "381213fa-c14b-8164-a6ac-4d94ec97c97c"
+uuid: "0e8f485a-015c-887a-ba5b-42b502310f04"
+horo: 7
 typography:
-  partition: purpose
-  bondDegree: 20
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 23
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - device
-    - law
-    - medical
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - device
-    - law
-    - medical
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - device
-    - law
-    - medical
-    - merge
-    - sti
 signatures:
-  computationUuid: "81e0d22c-784f-892a-9abc-b81f02b05543"
+  computationUuid: "1c6e59ce-1be1-8722-8f3e-87d10a6a6e05"
   stages:
     - stage: path
-      stageUuid: "8ffc5fc1-682b-85f4-86c7-4f921e6fb2ba"
+      stageUuid: "7c8d65d1-0569-828f-8d09-fff7ee7111a3"
     - stage: trinity
-      stageUuid: "b996f539-e18c-88b7-a229-f4c87d0874c5"
+      stageUuid: "22ed6fec-df82-8bf2-b72a-91b7e966abf4"
     - stage: boundary
-      stageUuid: "ec5b257b-f206-807b-b595-ce8e66be68be"
+      stageUuid: "06b7781c-6410-8e10-86ee-3e07cd56be18"
     - stage: links
-      stageUuid: "ecd2236a-e9b5-8fa8-b062-c3c4f042c75f"
+      stageUuid: "c99fd115-bccc-881a-8e4a-ccf87e2de380"
     - stage: horo
-      stageUuid: "64913d47-0821-8ea6-ba1e-932df7bf663b"
+      stageUuid: "08ea2ea1-a05a-81cc-9fc2-a4a574f7cdd4"
     - stage: seal
-      stageUuid: "26ced22c-d425-8354-89e3-c64e3eb3dba7"
+      stageUuid: "38b22136-5b70-8deb-8944-6d00a50d5884"
     - stage: uuid
-      stageUuid: "10519cf9-aa22-8b9e-bc6a-aa8976bf7c84"
+      stageUuid: "1b4e93b7-259a-8666-a331-9823acf7e743"
 version: 2
 ---
 # purpose

@@ -1,68 +1,35 @@
 ---
 name: local
 description: "Use when reasoning about local as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/local
-coordinate: local · 2/share · 59e38221
-contentUuid: "6f4c8151-db9a-5492-bc8d-367df65a196c"
-diamondUuid: "3016eb55-aa13-82e2-b36c-996c2c39d81d"
-uuid: "59e38221-e43a-8281-acd0-5e1f3e67a43f"
-horo: 2
-bonds:
-  in:
-    - business
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - business
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/local"
+coordinate: "vocabulary/local · 8/crest · b6578d29"
+contentUuid: "2b6f257c-d366-5c5d-9e16-7d7d19080475"
+diamondUuid: "5910cab9-b265-87e3-8b1c-442be826b70f"
+uuid: "b6578d29-15a0-87e1-9fdb-89f0e91cf2e7"
+horo: 8
 typography:
-  partition: local
-  bondDegree: 16
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 44
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - business
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - business
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - business
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "cc9272d0-d0b9-8af0-9d00-36222838fd27"
+  computationUuid: "12ac2176-3897-89ef-81a6-cf5264c7c235"
   stages:
     - stage: path
-      stageUuid: "b29edc17-f712-852d-876c-e238bccdd788"
+      stageUuid: "22e64a0e-f913-8364-afa0-acb89f4e0104"
     - stage: trinity
-      stageUuid: "a742aa61-6a87-8b40-bdc2-9f84ac1c87f3"
+      stageUuid: "87378fbe-8f67-8f28-ab8c-0dc3a0625b9a"
     - stage: boundary
-      stageUuid: "4bb8aa1f-08f3-8dbf-bf1a-8872aa8d18b6"
+      stageUuid: "7e34fa37-4b85-8851-8859-dba07a13e357"
     - stage: links
-      stageUuid: "3f420d75-882b-8f18-8f95-5608440324ea"
+      stageUuid: "f45d8100-952a-80a9-8a24-9f2cc064650d"
     - stage: horo
-      stageUuid: "da962a3c-883d-83f3-8e23-348478edad04"
+      stageUuid: "55b3bcb0-cfa7-848f-9a34-718605bd4ad8"
     - stage: seal
-      stageUuid: "38e8efc1-2ef0-80b3-9c47-38919aa22e30"
+      stageUuid: "6fc6c077-9bb3-85d2-bd70-f0ea0be9fa28"
     - stage: uuid
-      stageUuid: "9ccffe24-17cc-84f2-a840-ff9e099726b6"
+      stageUuid: "f241899a-cfb8-84c8-b319-669b2f6d4942"
 version: 2
 ---
 # local

@@ -2,101 +2,20 @@
 name: spec
 description: "Use when one workflow definition must generate many materializations — e2e test, help tip/subtitle, seed, evidence, marketing page, i18n keys — from a single source. The spec-generator over BUSINESS_CHAINS; e2e tests and help tips share one source."
 atomPath: spec
-coordinate: spec · 1/base · baed5e9d
-contentUuid: "1f2dce10-9b90-548d-8f64-35925109cc12"
-diamondUuid: "4ddc4e5f-d408-8a4b-b6e8-ca8af590e049"
-uuid: "baed5e9d-d1c3-8560-8a3e-7778ef78b572"
-horo: 1
-bonds:
-  in:
-    - accounting
-    - admin
-    - api
-    - chat
-    - collapse
-    - commerce
-    - concatenate
-    - generate
-    - identity
-    - jobs
-    - law
-    - port
-    - sequence
-    - society
-    - testing
-    - trinity
-  out:
-    - accounting
-    - admin
-    - api
-    - chat
-    - collapse
-    - commerce
-    - concatenate
-    - generate
-    - identity
-    - jobs
-    - law
-    - port
-    - sequence
-    - society
-    - testing
-    - trinity
+coordinate: "spec · 7/descent · 5a0266c5"
+contentUuid: "f84ca258-69c5-5e83-bc75-c031a03efa19"
+diamondUuid: "9b45b95b-9bfc-8a87-9893-d31df75af87c"
+uuid: "5a0266c5-d065-8aad-974a-c447fdad8d22"
+horo: 7
 typography:
   partition: spec
   bondDegree: 0
-  neighbors: []
 standards:
   - "ISO/IEC-12207"
   - "ISO/IEC-29119"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - admin
-    - api
-    - commerce
-    - identity
-    - jobs
-    - law
-    - port
-    - sequence
-  matrix:
-    - accounting
-    - admin
-    - api
-    - chat
-    - collapse
-    - commerce
-    - concatenate
-    - generate
-    - identity
-    - jobs
-    - law
-    - port
-    - sequence
-    - society
-    - testing
-    - trinity
-  backlinks:
-    - accounting
-    - admin
-    - api
-    - chat
-    - collapse
-    - commerce
-    - concatenate
-    - generate
-    - identity
-    - jobs
-    - law
-    - port
-    - sequence
-    - society
-    - testing
-    - trinity
 signatures:
-  computationUuid: "3ebf92ec-727c-87e5-a1ca-330a826386a6"
+  computationUuid: "61fd7899-1d72-84bb-bbef-681fc463f3e0"
   stages:
     - stage: path
       stageUuid: "4eb8ef9c-3c64-8427-add6-7d971014f25c"
@@ -107,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "9ff24001-7257-8ffa-981c-1ea4f998eadd"
     - stage: horo
-      stageUuid: "bc66ad12-5152-808e-b6e3-e9f868b2a323"
+      stageUuid: "63a40514-229d-8157-b2a1-425613436899"
     - stage: seal
       stageUuid: "3ea5dd48-d2d0-8cbc-940a-8f05a124a3c0"
     - stage: uuid
-      stageUuid: "afba142d-2ede-8241-808d-888babc65a21"
+      stageUuid: "6221eb69-611f-836b-9173-1bd079d419ff"
 version: 2
 ---
 # spec — one source, many materializations (e2e test ↔ help tip)

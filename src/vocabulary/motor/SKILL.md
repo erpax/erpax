@@ -1,68 +1,35 @@
 ---
 name: motor
 description: "Use when reasoning about motor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/motor
-coordinate: motor · 4/weave · 1a7a66bf
-contentUuid: "ebdd9485-04a1-59fa-94ae-d3888cc4ec6d"
-diamondUuid: "09808127-2444-8b7a-9766-ce64fd6f47dd"
-uuid: "1a7a66bf-a638-80ac-aa98-2ded71ac6a48"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - nerve
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - nerve
-    - sti
+atomPath: "vocabulary/motor"
+coordinate: "vocabulary/motor · 8/crest · a15b70ea"
+contentUuid: "26d32314-8191-5c64-927c-0fb96c9fb4d6"
+diamondUuid: "c862e301-ad4e-8631-8182-a7f9c602713d"
+uuid: "a15b70ea-e712-8c9e-aec3-46a9d13f502e"
+horo: 8
 typography:
-  partition: motor
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - nerve
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - nerve
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - nerve
-    - sti
 signatures:
-  computationUuid: "1de65ede-b776-8fbc-82e7-a0a34e8b2114"
+  computationUuid: "81b7a536-566b-8198-adf3-b46704bb69f5"
   stages:
     - stage: path
-      stageUuid: "8f4479de-47e7-8988-940e-afeb8c764936"
+      stageUuid: "6e95ad4e-96e8-8d58-ac40-3994d96776dc"
     - stage: trinity
-      stageUuid: "f6e98bcb-18d4-8360-ac90-2b5bf25b97c5"
+      stageUuid: "420edd20-86ec-89f4-800a-bcec7ec99457"
     - stage: boundary
-      stageUuid: "255ba64e-5724-8d67-94c8-cea4bd95c7a3"
+      stageUuid: "63b09f3f-6b1a-8cc0-bece-6c70e76f0398"
     - stage: links
-      stageUuid: "1aedeee6-27a2-8627-ac73-ebd7c6a1b099"
+      stageUuid: "7644181c-cbf5-8bac-9767-f05677a86244"
     - stage: horo
-      stageUuid: "b6d2384e-dc4b-84ff-9b90-6457253fcf5b"
+      stageUuid: "69baddb8-b789-803d-8b22-c1eb4a5646bf"
     - stage: seal
-      stageUuid: "17817c64-e2b5-8ecc-bee7-449dc3b8d324"
+      stageUuid: "a95ec7fe-ea93-8c7f-8184-0762d65aa366"
     - stage: uuid
-      stageUuid: "aae47173-8ce9-8bfb-bc39-75ecfa9ef913"
+      stageUuid: "3899c0ed-5417-8de5-bb05-ea03bf4b86aa"
 version: 2
 ---
 # motor

@@ -1,73 +1,35 @@
 ---
 name: quantitative
 description: "Use when reasoning about quantitative — A schema.org component word, collided out of schema.org compounds — fused from QuantitativeValue · QuantitativeValueDistribution (sti · collapse · merge)."
-atomPath: vocabulary/quantitative
-coordinate: quantitative · 1/base · 2019d922
-contentUuid: "b4c286eb-09e6-565f-ae66-8517b4d4ed14"
-diamondUuid: "26281e0b-d3a2-8104-9da3-f02054fdbf50"
-uuid: "2019d922-bfdd-80f1-8544-bf46c116a98d"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - distribution
-    - law
-    - merge
-    - sti
-    - value
-  out:
-    - collapse
-    - distribution
-    - law
-    - merge
-    - sti
-    - value
+atomPath: "vocabulary/quantitative"
+coordinate: "vocabulary/quantitative · 4/weave · b04504fe"
+contentUuid: "edf30128-3eb7-5b75-bbf6-e2eb5339ea31"
+diamondUuid: "83a1809c-7519-8b83-9bba-b6651f547999"
+uuid: "b04504fe-df53-88e8-83d3-69b83ce51253"
+horo: 4
 typography:
-  partition: quantitative
+  partition: vocabulary
   bondDegree: 18
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - distribution
-    - law
-    - merge
-    - sti
-    - value
-  matrix:
-    - collapse
-    - distribution
-    - law
-    - merge
-    - sti
-    - value
-  backlinks:
-    - collapse
-    - distribution
-    - law
-    - merge
-    - sti
-    - value
 signatures:
-  computationUuid: "e8130779-39d4-8064-b0b1-17b2444cbe78"
+  computationUuid: "83b6d743-b612-86d9-af47-c6a24989d8e1"
   stages:
     - stage: path
-      stageUuid: "35455ff0-72dd-8096-bd94-aafe8ede26df"
+      stageUuid: "1735f6a1-33f1-8a58-a61c-29ae18f03907"
     - stage: trinity
-      stageUuid: "97b2e59d-dd75-8ed5-9f35-4420b1e55a6a"
+      stageUuid: "bda6709f-007e-8a06-9cf4-7d36d5ef06cb"
     - stage: boundary
-      stageUuid: "393993fc-6e5e-8d62-ac64-9ccc0377e660"
+      stageUuid: "e4986f7f-11de-8fc0-a395-d6f8394dcd51"
     - stage: links
-      stageUuid: "8b482342-cfb0-8bb6-9d0d-527eb4b3d0d7"
+      stageUuid: "1d228f08-3f9b-808d-b337-b14bb37bc5e1"
     - stage: horo
-      stageUuid: "e0429821-1ef1-8934-91de-eb0568d317b3"
+      stageUuid: "b9804ea4-8bfb-810a-8dbf-dd1f55168861"
     - stage: seal
-      stageUuid: "5a2e99c4-d7b1-8392-bbb2-ca1c035caa7d"
+      stageUuid: "b68a3fa7-05c0-8993-bdd2-6b7fe7468f6a"
     - stage: uuid
-      stageUuid: "d7a322cc-d0ef-838c-8039-dfeff8f914bd"
+      stageUuid: "c1349e69-8dc8-8f0b-a3e9-22aa9522f522"
 version: 2
 ---
 # quantitative

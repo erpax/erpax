@@ -1,83 +1,35 @@
 ---
 name: closures
 description: "Use when reasoning about closures as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/closures
-coordinate: closures · 7/descent · 4afbde40
-contentUuid: "a8430ed4-4d78-53a6-a196-28eb9ceff9e3"
-diamondUuid: "bae822e1-ffc1-8ec0-aa66-5dafd7be0e2f"
-uuid: "4afbde40-e198-85a8-b05f-723c691b9367"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - info
-    - law
-    - merge
-    - public
-    - school
-    - sti
-    - transport
-  out:
-    - collapse
-    - info
-    - law
-    - merge
-    - public
-    - school
-    - sti
-    - transport
+atomPath: "vocabulary/closures"
+coordinate: "vocabulary/closures · 4/weave · 9eaa8cd0"
+contentUuid: "88471049-cb9c-5f56-b390-83ddf6fbdc05"
+diamondUuid: "0fc03af3-c1bd-8ad1-901c-10e93db0c7ed"
+uuid: "9eaa8cd0-a8ca-8e9d-b946-313a5aa9428e"
+horo: 4
 typography:
-  partition: closures
+  partition: vocabulary
   bondDegree: 28
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - info
-    - law
-    - merge
-    - public
-    - school
-    - sti
-    - transport
-  matrix:
-    - collapse
-    - info
-    - law
-    - merge
-    - public
-    - school
-    - sti
-    - transport
-  backlinks:
-    - collapse
-    - info
-    - law
-    - merge
-    - public
-    - school
-    - sti
-    - transport
 signatures:
-  computationUuid: "6809a04f-f7b0-8c5a-85ac-1d5b793782bd"
+  computationUuid: "5d97d5e3-112d-8039-bac7-82f91d21dee5"
   stages:
     - stage: path
-      stageUuid: "0f566325-b0b2-810a-b3ab-ba03db289f96"
+      stageUuid: "b5246da2-7455-85da-9748-ad19f26efbc3"
     - stage: trinity
-      stageUuid: "ca79dd7f-58c2-88ad-b489-b4a848f4c065"
+      stageUuid: "b124d1da-d41a-8477-bfc6-37884e3bf720"
     - stage: boundary
-      stageUuid: "e34265f9-90a0-874c-bbb1-c674527c8859"
+      stageUuid: "03d9f379-1f98-8544-83e7-60e1f0afaa90"
     - stage: links
-      stageUuid: "08a6d5f2-d847-8b47-97b1-0ac488d09180"
+      stageUuid: "9999781e-0573-8a5d-8fb3-e49d2e64c0c1"
     - stage: horo
-      stageUuid: "aec7d199-7747-8e45-8f91-842e4ea67671"
+      stageUuid: "84b67892-bcfe-817e-872c-9eec2d77aac7"
     - stage: seal
-      stageUuid: "ea2b5a99-cfd5-84c0-a5ca-fda027d2a0bf"
+      stageUuid: "66a511bc-752d-8629-8623-01406b7a67b7"
     - stage: uuid
-      stageUuid: "b7756e59-5593-8d9f-b639-7efcd04b9d5f"
+      stageUuid: "4ef946da-84e4-8d21-8e58-431befdd808a"
 version: 2
 ---
 # closures

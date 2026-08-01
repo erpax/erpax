@@ -1,73 +1,35 @@
 ---
 name: located
 description: "Use when reasoning about located as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/located
-coordinate: located · 7/descent · 520f5dd9
-contentUuid: "f2f98c40-cfdd-5137-9087-1c8837a8aa62"
-diamondUuid: "9016c7c0-b362-8543-911c-403d61673108"
-uuid: "520f5dd9-9187-8594-971b-7869332fb516"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - location
-    - merge
-    - sti
-    - subcellular
-  out:
-    - collapse
-    - law
-    - location
-    - merge
-    - sti
-    - subcellular
+atomPath: "vocabulary/located"
+coordinate: "vocabulary/located · 5/round · c81f8c3f"
+contentUuid: "5151bb52-448f-5b55-b065-09913adc625b"
+diamondUuid: "c1e1e0c3-2df3-839f-8818-f6db6bffa72d"
+uuid: "c81f8c3f-fba4-8592-a1dd-268b4e14c1df"
+horo: 5
 typography:
-  partition: located
-  bondDegree: 20
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 22
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - location
-    - merge
-    - sti
-    - subcellular
-  matrix:
-    - collapse
-    - law
-    - location
-    - merge
-    - sti
-    - subcellular
-  backlinks:
-    - collapse
-    - law
-    - location
-    - merge
-    - sti
-    - subcellular
 signatures:
-  computationUuid: "431338c4-1c1d-88f5-99d5-7c92ffef3eab"
+  computationUuid: "36ca21ed-0115-8366-9b81-9756be854802"
   stages:
     - stage: path
-      stageUuid: "b615781d-6857-8f48-91da-902eeb6de4b5"
+      stageUuid: "e595d41d-f16e-8ce3-ab0b-73c1b0e5da18"
     - stage: trinity
-      stageUuid: "a325c810-1ef4-8a2d-be54-32da1771fed4"
+      stageUuid: "e5db84ce-9575-8454-ae78-2b55990522d6"
     - stage: boundary
-      stageUuid: "eb7359c2-eeb5-8674-a44a-5969b50ae1f6"
+      stageUuid: "6384aa8c-e82f-8311-80aa-e4e29cb7a82e"
     - stage: links
-      stageUuid: "82670e8e-bb2a-8b18-b007-893e47ddae9d"
+      stageUuid: "66add062-1ba7-8926-b6b8-93952664133c"
     - stage: horo
-      stageUuid: "2a18f98e-8079-8568-af80-0e42c279baf0"
+      stageUuid: "9a2e9f30-27bc-8718-a066-bbecee4d97f1"
     - stage: seal
-      stageUuid: "6c3778a3-2978-858a-8935-d58b204e8277"
+      stageUuid: "c0fad78e-284c-8cd8-9a61-aa820aa0c24d"
     - stage: uuid
-      stageUuid: "ef3e36fb-9356-8202-b0d2-7c60eecef558"
+      stageUuid: "f823fe66-a385-84af-a0ac-1d0784d74e97"
 version: 2
 ---
 # located

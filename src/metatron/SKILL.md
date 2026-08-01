@@ -2,131 +2,35 @@
 name: metatron
 description: "Use when reasoning about why erpax's uuid-matrix is Metatron's Cube — the complete pairwise binding (merge is total ⇒ K_n) of 12-around-1 folding to one center (the root). The drawn 13-circle figure is the n=13 unit cell (the cuboctahedron / 3-D kissing-number 12); the matrix is its fractal extension to n nodes. Graph + packing structure, not the Platonic-solid folklore."
 atomPath: metatron
-coordinate: "metatron · 2/share · bd4798e8"
-contentUuid: "e1d78584-17e6-5c7e-bc38-88e6a40eb79f"
-diamondUuid: "ad7fd8ba-473f-8a7e-b398-62a8a2399687"
-uuid: "bd4798e8-e070-8ff6-a64d-054d80ec18b5"
-horo: 2
-bonds:
-  in:
-    - architect
-    - axis
-    - chakra
-    - collapse
-    - diamond
-    - hamiltonian
-    - law
-    - matrix
-    - merge
-    - one
-    - part
-    - religion
-    - rodin
-    - self
-    - skills
-    - torus
-    - typography
-    - uuid
-    - whole
-  out:
-    - architect
-    - axis
-    - chakra
-    - collapse
-    - diamond
-    - hamiltonian
-    - law
-    - matrix
-    - merge
-    - one
-    - part
-    - religion
-    - rodin
-    - self
-    - skills
-    - torus
-    - typography
-    - uuid
-    - whole
+coordinate: "metatron · 4/weave · 36aab46a"
+contentUuid: "82ea489d-5a28-58ef-9393-0acaf55429fe"
+diamondUuid: "6b3af385-eb46-8542-8f2a-cb54ff92f6ec"
+uuid: "36aab46a-1314-8dd8-b653-dd64330c9df6"
+horo: 4
 typography:
   partition: metatron
   bondDegree: 60
-  neighbors: []
 standards:
   - "RFC 9562 §5.8 content-uuid (the total merge) + K₁₃ / cuboctahedron geometry"
   - "RFC 9562 §5.8 content-uuid (total merge) + K13 / cuboctahedron"
 bindings: []
-neighbors:
-  wikilink:
-    - axis
-    - chakra
-    - collapse
-    - law
-    - matrix
-    - merge
-    - one
-    - part
-    - rodin
-    - torus
-    - uuid
-    - whole
-  matrix:
-    - architect
-    - axis
-    - chakra
-    - collapse
-    - diamond
-    - hamiltonian
-    - law
-    - matrix
-    - merge
-    - one
-    - part
-    - religion
-    - rodin
-    - self
-    - skills
-    - torus
-    - typography
-    - uuid
-    - whole
-  backlinks:
-    - architect
-    - axis
-    - chakra
-    - collapse
-    - diamond
-    - hamiltonian
-    - law
-    - matrix
-    - merge
-    - one
-    - part
-    - religion
-    - rodin
-    - self
-    - skills
-    - torus
-    - typography
-    - uuid
-    - whole
 signatures:
-  computationUuid: "b3442f88-444a-8d22-b9bc-fa290b0a883b"
+  computationUuid: "af2a93aa-7365-88a9-a747-ab10d4d57101"
   stages:
     - stage: path
       stageUuid: "74cb6d3b-cd73-86d0-a91f-2f12886f8c44"
     - stage: trinity
       stageUuid: "acd8f7bd-f7c3-80bd-bd51-e70d29f58193"
     - stage: boundary
-      stageUuid: "880e597f-3c47-8326-add6-b7e2e69b9c27"
+      stageUuid: "de143dc7-1997-8d90-9844-53a39afaf47a"
     - stage: links
       stageUuid: "3180e019-8568-8423-99ae-e6f9d0291a05"
     - stage: horo
-      stageUuid: "3ceffc01-ec70-8b4c-9b3f-fa64a678ad09"
+      stageUuid: "0e18b806-e3a7-8f8c-a655-45702055d1cf"
     - stage: seal
       stageUuid: "b1521e55-be22-87dd-88df-1eb16373088a"
     - stage: uuid
-      stageUuid: "32f27310-6adf-872b-8427-0aa882c77c2f"
+      stageUuid: "ab1b6208-5dbe-83dc-b913-ebf2947eb331"
 version: 2
 ---
 # metatron — the matrix IS Metatron's Cube (complete binding → one center)

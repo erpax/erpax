@@ -1,67 +1,35 @@
 ---
 name: arm
 description: "Use when reasoning about arm as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/arm
-coordinate: arm · 1/base · 87edaede
-contentUuid: "1e05051a-cce7-5fbf-b929-3f135286f329"
-diamondUuid: "d45613dc-f694-873f-b2da-5171967a9f06"
-uuid: "87edaede-7be9-87f0-aa7a-fe3507847dd4"
+atomPath: "vocabulary/arm"
+coordinate: "vocabulary/arm · 1/base · 52908e98"
+contentUuid: "61169bac-ed74-59b9-bbff-d4904b6e3c01"
+diamondUuid: "2eee2762-54b1-8e5f-89d1-288e6866d4a4"
+uuid: "52908e98-cf24-8ddb-9e73-7151f7a45fe2"
 horo: 1
-bonds:
-  in:
-    - arm
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - arm
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: arm
+  partition: vocabulary
   bondDegree: 21
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - arm
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - arm
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "edf46f75-01da-85e1-adad-feb1afb8570c"
+  computationUuid: "8ba0158d-7e6a-8837-a2d1-bf178ba0c2b3"
   stages:
     - stage: path
-      stageUuid: "184716ee-d01f-8569-be6b-59ff076cba0e"
+      stageUuid: "4ad2589a-798e-83d0-ac5f-9eaa5b9fed4d"
     - stage: trinity
-      stageUuid: "7f82cf02-638f-8dd6-9c36-8b28f5dac1c3"
+      stageUuid: "ff8066df-b281-8df6-ade6-6dfc89fb6f06"
     - stage: boundary
-      stageUuid: "7c3fc2df-7c4e-81e8-884e-d3a3fd1bbbf0"
+      stageUuid: "f9e90fec-09e2-87e9-871d-9d95b8c6952a"
     - stage: links
-      stageUuid: "820b9ba4-3836-887b-814f-37cab16e6c83"
+      stageUuid: "27af3efe-bcab-8b36-a6b2-13a42eb7a42a"
     - stage: horo
-      stageUuid: "f061756d-4c0f-8266-b795-30bc9e787e5c"
+      stageUuid: "996f91ff-309d-83fe-8a8a-a2b7ffef8b96"
     - stage: seal
-      stageUuid: "e5f156fd-8f1e-8a52-889d-37947c1942cf"
+      stageUuid: "50ee7419-e5ff-8ed9-a0d1-5043473c1f40"
     - stage: uuid
-      stageUuid: "f5ddabe1-06e1-8669-ad96-d581713d47c0"
+      stageUuid: "f13a521a-35b3-88f1-9634-bca0409dae5a"
 version: 2
 ---
 # arm

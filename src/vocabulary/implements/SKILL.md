@@ -1,63 +1,35 @@
 ---
 name: implements
 description: "Use when reasoning about implements as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/implements
-coordinate: implements · 2/share · 3adae787
-contentUuid: "41db5ad2-f12e-555d-92e2-ea15cac9cb27"
-diamondUuid: "3b2917e8-0210-851d-b1d6-aebd0852dedb"
-uuid: "3adae787-723e-83a8-a02f-bb1638c3a061"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/implements"
+coordinate: "vocabulary/implements · 8/crest · 2b48c791"
+contentUuid: "36012ae2-5956-5e50-85e8-5c7c89516c43"
+diamondUuid: "8e81fb99-e8d7-8610-a372-26fad0991e28"
+uuid: "2b48c791-df12-8441-a3ab-bd1ea5511b0e"
+horo: 8
 typography:
-  partition: implements
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "628dae3c-6a13-80d5-b486-7dfcdc4f1d7b"
+  computationUuid: "4365c992-8cde-8337-8c5a-ef4ffc316608"
   stages:
     - stage: path
-      stageUuid: "87eae565-db71-8c3c-b5b8-50090b042240"
+      stageUuid: "b8e7f67e-d5ca-8f10-85fc-92511275dcec"
     - stage: trinity
-      stageUuid: "bbf850f6-ccca-8a64-b14b-37634db49e9d"
+      stageUuid: "dde48ce0-7c96-8759-8283-ac237b731b38"
     - stage: boundary
-      stageUuid: "2c813c7c-3bcb-8105-8470-62e5f27d6d53"
+      stageUuid: "2cd1df60-e010-813f-8220-b181e414eab7"
     - stage: links
-      stageUuid: "d507996c-01cc-8ce1-8314-97256acfc367"
+      stageUuid: "743926dd-e2b5-82ba-9b5f-ccae6f75f3b3"
     - stage: horo
-      stageUuid: "1f01cd2d-e91b-8256-9d47-e52832b76158"
+      stageUuid: "ee021eba-a120-8c6c-9ae4-0bd378d457c7"
     - stage: seal
-      stageUuid: "a9e88048-c943-85b6-9c58-ef0a52046b88"
+      stageUuid: "f5bafa3c-9877-8a1c-ac3f-e3a71365d321"
     - stage: uuid
-      stageUuid: "f685a2d9-6137-816c-aef1-7a2bfb7f7d9b"
+      stageUuid: "63939783-9099-826c-a5c4-5463ab7ca093"
 version: 2
 ---
 # implements

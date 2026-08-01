@@ -1,53 +1,35 @@
 ---
 name: float
 description: "Use when reasoning about float — Data type: Floating number."
-atomPath: vocabulary/float
-coordinate: float · 4/weave · 0eadb7b1
-contentUuid: "e7fadd15-6089-58fa-a698-69a3f4e50a76"
-diamondUuid: "007c36d9-19fa-8748-bc88-bd799c3dff8f"
-uuid: "0eadb7b1-521b-8be1-95de-c2b8661c74cf"
-horo: 4
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/float"
+coordinate: "vocabulary/float · 5/round · 21572aba"
+contentUuid: "6bff050b-327b-52ae-81b2-38e4151282bb"
+diamondUuid: "3685e8af-6ced-895d-802e-b87552fe05c5"
+uuid: "21572aba-6de8-896f-b92a-852a82e0c7d5"
+horo: 5
 typography:
-  partition: float
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "8531c41c-6df9-88eb-951e-6e9e956a895e"
+  computationUuid: "bbc34e5b-23e7-85d6-936f-35196a32a1bf"
   stages:
     - stage: path
-      stageUuid: "88c7850e-398f-83c1-a734-68a2febb2536"
+      stageUuid: "8c7fec2e-aca2-8e76-a3c8-1112e866e1db"
     - stage: trinity
-      stageUuid: "576b4a51-7c91-890a-a3a6-445b32f6564b"
+      stageUuid: "1e8614e6-1e0f-887a-9106-e40453e9c093"
     - stage: boundary
-      stageUuid: "6ccf07bf-53c1-8772-ad9a-77b59104df03"
+      stageUuid: "93374673-a93b-8c41-a758-1d72b432f907"
     - stage: links
-      stageUuid: "e6f61627-45df-8fb7-bec8-a4dd8341b13f"
+      stageUuid: "5772c4ef-61c5-8df5-a90f-7c44dc74f79a"
     - stage: horo
-      stageUuid: "e14608e6-57ab-81ad-a790-0ad54c7b7daa"
+      stageUuid: "ecb3736c-7c96-832d-9788-ce9c4905079a"
     - stage: seal
-      stageUuid: "4bbe1abc-060b-883b-9be4-43fae15c3d6d"
+      stageUuid: "946ad48d-4293-8248-bded-af13b9181d12"
     - stage: uuid
-      stageUuid: "bc505308-fbe3-8196-af5c-a62557c8cb5a"
+      stageUuid: "0fa691e8-3dc5-8d08-b4d3-be857fbf5371"
 version: 2
 ---
 # float

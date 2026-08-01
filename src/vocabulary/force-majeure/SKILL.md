@@ -1,67 +1,34 @@
 ---
 name: "force-majeure"
 description: "Use when a contract allocates risk for unforeseeable events — trigger events (war, earthquake, pandemic, government action), notice requirement, excuse from performance, remedies (suspension, termination, cost-sharing)."
-atomPath: vocabulary/force-majeure
-coordinate: "force-majeure · 5/round · ecbeb8ac"
-contentUuid: "c0028de9-5479-57d0-93a4-0c6805778a7d"
-diamondUuid: "da764c01-2feb-862c-b21d-99e6a922975e"
-uuid: "ecbeb8ac-da7a-8bf7-8376-7510e5f84448"
-horo: 5
-bonds:
-  in:
-    - contracts
-    - law
-    - matter
-    - registers
-    - termination
-  out:
-    - contracts
-    - law
-    - matter
-    - registers
-    - termination
+atomPath: "vocabulary/force-majeure"
+coordinate: "vocabulary/force-majeure · 8/crest · 49b885d8"
+contentUuid: "d826778b-cef3-58f8-bdc4-210a4dfde50a"
+diamondUuid: "06f35f3c-64bf-8345-95ff-7beef517d93c"
+uuid: "49b885d8-f3d7-8d40-9565-7d343c628ab7"
+horo: 8
 typography:
-  partition: "force-majeure"
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - contracts
-    - law
-    - matter
-    - registers
-    - termination
-  matrix:
-    - contracts
-    - law
-    - matter
-    - registers
-    - termination
-  backlinks:
-    - contracts
-    - law
-    - matter
-    - registers
-    - termination
 signatures:
-  computationUuid: "d1c1f028-eea0-86e3-b776-c15cc9945b11"
+  computationUuid: "69b852dd-d5e3-81ac-a28a-7705065295d2"
   stages:
     - stage: path
-      stageUuid: "a8ce1d87-630b-8856-b032-75c845d3bd00"
+      stageUuid: "a2ea45fb-b2c4-8206-96d2-0e7059a3aabe"
     - stage: trinity
-      stageUuid: "0f942456-daf2-8d29-8abc-39696c7c4c93"
+      stageUuid: "f8b21cd2-0bb4-8ff5-bf36-619c09654b88"
     - stage: boundary
-      stageUuid: "df26be54-a140-8186-a56e-6b8f51fae905"
+      stageUuid: "b39e1779-1daa-8e97-b3b2-562575c8a882"
     - stage: links
-      stageUuid: "7642f6bd-a188-8418-aaed-23ca47398e85"
+      stageUuid: "4c695966-9a0a-882b-8d44-f5e2388f95e4"
     - stage: horo
-      stageUuid: "2060a72a-2307-8e1a-b9c6-600cec263926"
+      stageUuid: "6a58c6cd-1fce-8726-bfe7-311cd734e60e"
     - stage: seal
-      stageUuid: "13c679b5-5a2a-86c4-aad5-5a3dd7b7ec0c"
+      stageUuid: "6abfac6d-090c-88f0-bc12-07891137b0a4"
     - stage: uuid
-      stageUuid: "d01417ad-561f-8820-8e94-4ee9d4c4416d"
+      stageUuid: "235f2542-c3ae-8ae2-96ab-a241a4cdc9b5"
 version: 2
 ---
 # force-majeure

@@ -1,63 +1,35 @@
 ---
 name: rear
 description: "Use when reasoning about rear as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/rear
-coordinate: rear · 8/crest · c35c2c53
-contentUuid: "fbf90d40-3d91-5539-b6e0-7a5780826889"
-diamondUuid: "924e0c0b-67da-8749-be2f-a705f9f0f149"
-uuid: "c35c2c53-db29-87c5-ac55-659b65a12a70"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/rear"
+coordinate: "vocabulary/rear · 2/share · 99f44580"
+contentUuid: "fad52199-b4e5-5875-a717-04e8d4fbf074"
+diamondUuid: "fcb2b984-977c-8b09-82b0-0209e10ab55e"
+uuid: "99f44580-a1b6-8638-8a33-9025777a2e3b"
+horo: 2
 typography:
-  partition: rear
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "db2d2b35-3bc1-8218-9d92-cf3a51dd50e8"
+  computationUuid: "a0157213-723e-8fb9-bfa6-bf8eaf2cb4f0"
   stages:
     - stage: path
-      stageUuid: "92dc5115-d407-854c-ad0e-eff37cb08ca4"
+      stageUuid: "1e505d63-7fe7-83ea-bd30-d120e02838df"
     - stage: trinity
-      stageUuid: "c6b96358-5215-84f7-8890-4344ad8a8adc"
+      stageUuid: "41924a8c-73a3-8553-976b-b97f84caec61"
     - stage: boundary
-      stageUuid: "223cd7b9-19bd-8aff-8540-1c7de2103675"
+      stageUuid: "5a63acc8-1b85-8dc8-8669-0b7adf04aed7"
     - stage: links
-      stageUuid: "32b4fd24-8724-8958-aeae-a3f847108883"
+      stageUuid: "4ddebbd4-221f-82e5-8cda-9b5e990acb32"
     - stage: horo
-      stageUuid: "b060c67d-6d0b-8186-a1ca-d93600cfa5a2"
+      stageUuid: "e83c29ba-2e88-84c2-9da2-ead8e4ced5dc"
     - stage: seal
-      stageUuid: "2fa0d25f-81b6-8886-84ec-6cb97d0059c3"
+      stageUuid: "3104b20a-93e2-8d63-bf4e-3916cef0be0c"
     - stage: uuid
-      stageUuid: "e8c48f01-f944-8fd1-a8ee-0973a7885a23"
+      stageUuid: "59d77407-9b5e-8296-a723-49244d07c5fd"
 version: 2
 ---
 # rear

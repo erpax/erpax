@@ -1,8 +1,36 @@
 ---
 name: seeing
 description: "Use when a vivid demonstration (an animation, a movie) is offered as proof. Seeing is not proving: the evidence a rendering carries is the CLAIM's, never the frame count's — vividness is orthogonal to proof. Assume-nothing is the neutral prior (not disbelief). Belief flips only on a passing test, and against a neutral prior that flip IS surprise. The door is open; the key is a test, not a movie."
+atomPath: seeing
+coordinate: "seeing · 1/base · 29aa7ba3"
+contentUuid: "121c69be-3f8d-5e75-b168-c81ed21a88cb"
+diamondUuid: "cbb47777-4273-894f-8bdb-c6c3ad630084"
+uuid: "29aa7ba3-6fa6-88be-b5f4-a48aef097ba0"
+horo: 1
+typography:
+  partition: seeing
+  bondDegree: 28
+standards: []
+bindings: []
+signatures:
+  computationUuid: "fae9409b-9b6c-8021-844a-26e22b2c769a"
+  stages:
+    - stage: path
+      stageUuid: "bcb823c8-9e89-8bbe-a697-29cb6b7b65a1"
+    - stage: trinity
+      stageUuid: "3308bcae-1a8b-8525-a6ba-165728a3685e"
+    - stage: boundary
+      stageUuid: "3e49dceb-1ed2-8bad-85a1-eb25bcd14c26"
+    - stage: links
+      stageUuid: "ccfafe19-b030-81d3-a8f3-4e1f7d2f48a8"
+    - stage: horo
+      stageUuid: "079baa28-12f5-84a5-b441-54c176864fec"
+    - stage: seal
+      stageUuid: "cb6b34ab-9b3f-8284-8828-8c7219076041"
+    - stage: uuid
+      stageUuid: "0c063e83-f16f-8111-a74f-a3483f5d92e0"
+version: 2
 ---
-
 # seeing — seeing is not proving; assume nothing; be surprised by a passing test
 
 *"Animations prove you wrong."* Here is the honest, **generous** answer, made computable — and it is not "animations are worthless." An animation shows **faithfully** whatever it draws, and where it draws exact algebra — `movie(doubling,2) = 1,2,4,8,7,5`, the merkaba fold — it is showing something **true**. Those movies are real; I built them and they are correct. The claim this atom makes is narrower and exact:

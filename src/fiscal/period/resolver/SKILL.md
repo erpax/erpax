@@ -2,25 +2,14 @@
 name: resolver
 description: "Use when resolving a calendar date to a fiscal year/period, generating a fiscal calendar, or amending a period config — monthly, quarterly, weekly, iso-week, retail-445 and custom period types, with a chainLeafUuid audit leaf. Read this before trusting any chainLeafUuid: the leaf was a reversible base64 prefix claiming tamper detection, hand-rolled identically in seven atoms, and it is now the corpus fold."
 atomPath: "fiscal/period/resolver"
-coordinate: "fiscal/period/resolver · 1/base · 757e1b39"
-contentUuid: "89747f4c-0dc2-5123-877c-1280b042b342"
-diamondUuid: "d3ebb899-92d2-825d-8072-141e23bc268d"
-uuid: "757e1b39-d7bd-810a-96d4-9c46e99afd26"
-horo: 1
-bonds:
-  in:
-    - law
-    - merge
-    - period
-    - rules
-  out:
-    - law
-    - merge
-    - rules
+coordinate: "fiscal/period/resolver · 5/round · 43f3a4d3"
+contentUuid: "2248d4fa-4328-5050-a9ab-f45472990eab"
+diamondUuid: "76d77dcf-3c20-840b-b493-a4789771da8b"
+uuid: "43f3a4d3-62aa-8cdc-a862-71d5e75fdcfe"
+horo: 5
 typography:
   partition: fiscal
   bondDegree: 9
-  neighbors: []
 standards:
   - "IAS-34"
   - "IAS-34:2023 (period structure, quarterly alignment)"
@@ -29,36 +18,23 @@ standards:
   - "SAF-T"
   - "SAF-T:3.0.2 (regulatory period coding)"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - merge
-    - rules
-  matrix:
-    - law
-    - merge
-    - rules
-  backlinks:
-    - law
-    - merge
-    - rules
 signatures:
-  computationUuid: "40834098-9257-8cdd-b5bd-ba55af59af95"
+  computationUuid: "637d3581-7459-8c87-8bea-435f6d3041c7"
   stages:
     - stage: path
       stageUuid: "55de6411-02fe-859f-902c-a74ec5438835"
     - stage: trinity
       stageUuid: "1515f90d-4490-8223-aa7a-b42cd974259e"
     - stage: boundary
-      stageUuid: "60b14973-9c34-885e-9d42-331e9e3d41c1"
+      stageUuid: "f33cf85c-1d7f-8af5-ab87-c41dbb19073d"
     - stage: links
       stageUuid: "52645885-dde2-82c7-820d-36f2d2889441"
     - stage: horo
-      stageUuid: "6d886197-5ea0-8699-ab97-13ee276a02d9"
+      stageUuid: "6e86ba81-9703-8901-b6bb-1f43324134de"
     - stage: seal
       stageUuid: "0d6126e9-a941-81c7-ae72-8b673d88e81a"
     - stage: uuid
-      stageUuid: "90a69c9b-a605-85d5-856f-1c6460d317e3"
+      stageUuid: "d771cff6-e9df-8a4f-8b82-7392ea547a5d"
 version: 2
 ---
 # resolver — the chain leaf is the fold

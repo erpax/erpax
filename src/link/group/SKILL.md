@@ -2,70 +2,21 @@
 name: group
 description: Use when reasoning about a group of links.
 atomPath: "link/group"
-coordinate: "link/group · 2/share · dd0b050b"
-contentUuid: "b865146e-1b09-565b-9087-6958ccc4f002"
-diamondUuid: "ce2d4979-189f-84f1-808a-e8b07cd5f295"
-uuid: "dd0b050b-cfc4-8093-acc3-75ce3ae8839a"
-horo: 2
-bonds:
-  in:
-    - boarding
-    - dance
-    - enumeration
-    - link
-    - member
-    - music
-    - performing
-    - product
-    - size
-    - theater
-    - wearable
-  out:
-    - boarding
-    - dance
-    - enumeration
-    - member
-    - music
-    - performing
-    - product
-    - size
-    - theater
-    - wearable
+coordinate: "link/group · 4/weave · dd52888e"
+contentUuid: "ab6da68b-dba8-5182-8809-c9ed727cd819"
+diamondUuid: "0cc51a98-1e60-8fc5-a982-0ffd2f69f86f"
+uuid: "dd52888e-b3e7-897c-9f9e-9074ab951b40"
+horo: 4
 typography:
   partition: link
   bondDegree: 45
-  neighbors: []
 standards:
   - "3986 uniform-resource-identifier"
   - "W3C HTML5 nav-element"
   - "WCAG-2.1 §2.4.4 link-purpose-in-context"
 bindings: []
-neighbors:
-  wikilink: []
-  matrix:
-    - boarding
-    - dance
-    - enumeration
-    - member
-    - music
-    - performing
-    - product
-    - size
-    - theater
-    - wearable
-  backlinks:
-    - boarding
-    - dance
-    - enumeration
-    - member
-    - music
-    - performing
-    - product
-    - size
-    - theater
-    - wearable
 signatures:
-  computationUuid: "ddff395e-3692-802a-8e9a-dfc4cb3be189"
+  computationUuid: "ad208227-4111-8611-a4ad-3cda2d0126ec"
   stages:
     - stage: path
       stageUuid: "edc6cbce-2ff1-8a8e-8fae-9d1365d21d78"
@@ -76,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "48d6020a-a204-88d4-9d0c-452cdb970c2a"
     - stage: horo
-      stageUuid: "c1d44ab7-3d21-8d4b-9f7f-5607d17f6a64"
+      stageUuid: "6ab38b5b-7303-8c14-80a5-8853a1d6a6bb"
     - stage: seal
       stageUuid: "86aa5c20-df32-8b19-8a1f-c88817666bda"
     - stage: uuid
-      stageUuid: "543bea94-b09b-845c-bc7c-af95ea9a8071"
+      stageUuid: "abffa114-c331-8e94-bf53-728aa36d6cf2"
 version: 2
 ---
 # link/group

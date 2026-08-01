@@ -1,197 +1,34 @@
 ---
 name: begin
 description: "Use when reasoning about origin or boundary in erpax — the 0 (both end and beginning), period open/close, lifecycle start/seal, the axis every pass departs from and returns to. The universal root of origin."
-atomPath: vocabulary/begin
-coordinate: begin · 1/base · 5a306025
-contentUuid: "5ed29dd1-73a7-540c-9a11-71c933bd8f73"
-diamondUuid: "5c3a79b8-4110-870f-9625-57c06a82cff4"
-uuid: "5a306025-1c4e-8051-ab4f-691e0f85f102"
-horo: 1
-bonds:
-  in:
-    - accounting
-    - all
-    - angel
-    - atom
-    - base
-    - begin
-    - coil
-    - config
-    - decompression
-    - diamond
-    - duality
-    - end
-    - entry
-    - history
-    - horo
-    - identifier
-    - identity
-    - law
-    - lexical
-    - matter
-    - octave
-    - oid
-    - open
-    - postal
-    - reverse
-    - schedule
-    - sequence
-    - torus
-    - trinity
-    - unity
-    - uuid
-    - versions
-    - whole
-    - workflow
-    - zeropoint
-  out:
-    - accounting
-    - all
-    - angel
-    - atom
-    - base
-    - begin
-    - coil
-    - config
-    - decompression
-    - diamond
-    - duality
-    - end
-    - entry
-    - history
-    - horo
-    - identifier
-    - identity
-    - law
-    - lexical
-    - matter
-    - octave
-    - oid
-    - open
-    - postal
-    - reverse
-    - schedule
-    - sequence
-    - torus
-    - trinity
-    - unity
-    - uuid
-    - versions
-    - whole
-    - workflow
-    - zeropoint
+atomPath: "vocabulary/begin"
+coordinate: "vocabulary/begin · 8/crest · c548b477"
+contentUuid: "83d3d432-d8b5-59c5-98ae-042a11f912be"
+diamondUuid: "c3878aed-00cd-8f2f-8931-e7a51bbcc072"
+uuid: "c548b477-5473-88d4-95de-b5887862400c"
+horo: 8
 typography:
-  partition: begin
-  bondDegree: 111
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 107
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - all
-    - angel
-    - begin
-    - config
-    - end
-    - identity
-    - law
-    - lexical
-    - oid
-    - sequence
-    - torus
-    - uuid
-    - versions
-    - zeropoint
-  matrix:
-    - accounting
-    - all
-    - angel
-    - atom
-    - base
-    - begin
-    - coil
-    - config
-    - decompression
-    - diamond
-    - duality
-    - end
-    - entry
-    - history
-    - horo
-    - identifier
-    - identity
-    - law
-    - lexical
-    - matter
-    - octave
-    - oid
-    - open
-    - postal
-    - reverse
-    - schedule
-    - sequence
-    - torus
-    - trinity
-    - unity
-    - uuid
-    - versions
-    - whole
-    - workflow
-    - zeropoint
-  backlinks:
-    - accounting
-    - all
-    - angel
-    - atom
-    - base
-    - begin
-    - coil
-    - config
-    - decompression
-    - diamond
-    - duality
-    - end
-    - entry
-    - history
-    - horo
-    - identifier
-    - identity
-    - law
-    - lexical
-    - matter
-    - octave
-    - oid
-    - open
-    - postal
-    - reverse
-    - schedule
-    - sequence
-    - torus
-    - trinity
-    - unity
-    - uuid
-    - versions
-    - whole
-    - workflow
-    - zeropoint
 signatures:
-  computationUuid: "d48c77cb-536c-88b8-8342-aabb876053f9"
+  computationUuid: "b014a737-fba7-8cbc-b3d0-58848f245239"
   stages:
     - stage: path
-      stageUuid: "8fb011cc-7125-852b-85dc-8d9659f74540"
+      stageUuid: "dc358c06-eec7-8d99-9ff0-d6f07058f921"
     - stage: trinity
-      stageUuid: "21574535-d527-8976-8164-a5bd60d4b890"
+      stageUuid: "4087d32c-e3d1-8f40-9b5e-217499a6c39c"
     - stage: boundary
-      stageUuid: "cb76ca34-4feb-84fd-bb28-d2251c281159"
+      stageUuid: "9e74350c-4c11-86c0-afb8-d126ef794afa"
     - stage: links
-      stageUuid: "9d385734-0e3c-88dc-bd64-d17989bf17da"
+      stageUuid: "27c17562-111a-8efc-9fec-7a5947572bfb"
     - stage: horo
-      stageUuid: "5e708a31-47fe-803a-b5bf-9b353c5e556c"
+      stageUuid: "c9b86031-4cbc-8c19-bde2-b0b34c607c30"
     - stage: seal
-      stageUuid: "914ab4c6-2cc1-8a9e-915c-c3f0d81e15f9"
+      stageUuid: "b46bd34a-bc30-8e59-9367-6dbd35b3de3b"
     - stage: uuid
-      stageUuid: "cd40411e-53b7-860d-aad0-dcf8bbc788c5"
+      stageUuid: "4e68cf99-3cf8-8df7-8c9e-ea8ff2c1d6be"
 version: 2
 ---
 # begin — origin (the 0 is both end and beginning)

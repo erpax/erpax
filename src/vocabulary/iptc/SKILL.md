@@ -1,78 +1,35 @@
 ---
 name: iptc
 description: "Use when reasoning about iptc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/iptc
-coordinate: iptc · 4/weave · f5d09ef4
-contentUuid: "d73dd25a-4446-5aa8-8a0b-58f140179dc4"
-diamondUuid: "77bbb850-d20b-8e1d-96ab-4cb271f660ee"
-uuid: "f5d09ef4-b815-8982-a0a5-18ca3a791a8b"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - digital
-    - enumeration
-    - law
-    - merge
-    - source
-    - sti
-  out:
-    - collapse
-    - digital
-    - enumeration
-    - law
-    - merge
-    - source
-    - sti
+atomPath: "vocabulary/iptc"
+coordinate: "vocabulary/iptc · 2/share · 272d82d9"
+contentUuid: "9e4875c1-ead2-5e63-949f-ba807a1b151e"
+diamondUuid: "68733e5f-008a-833a-9b5d-e95ef4b0db50"
+uuid: "272d82d9-9614-837e-b479-751b69b45b5c"
+horo: 2
 typography:
-  partition: iptc
-  bondDegree: 23
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 25
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - digital
-    - enumeration
-    - law
-    - merge
-    - source
-    - sti
-  matrix:
-    - collapse
-    - digital
-    - enumeration
-    - law
-    - merge
-    - source
-    - sti
-  backlinks:
-    - collapse
-    - digital
-    - enumeration
-    - law
-    - merge
-    - source
-    - sti
 signatures:
-  computationUuid: "f3caa2b2-7dbe-83bb-816b-bf68727e6ef6"
+  computationUuid: "03e226e5-e625-8d96-bd55-6b1b1e62d29c"
   stages:
     - stage: path
-      stageUuid: "910cd3af-12fd-819d-afc5-0190a98d462a"
+      stageUuid: "28f2d866-2d65-8911-b374-0cb626ef395d"
     - stage: trinity
-      stageUuid: "126a0296-2427-8898-8b7d-ece41a0ee35d"
+      stageUuid: "a339b676-6089-8932-8520-19c2ae9cdbcd"
     - stage: boundary
-      stageUuid: "2be26db2-70d6-8d62-8b93-71680e626024"
+      stageUuid: "7c41635c-9485-86fb-a68c-72020c31c5c2"
     - stage: links
-      stageUuid: "1f23a00e-d76d-8b86-87d9-f0202f627ba7"
+      stageUuid: "d0aa9bb9-4e2d-8729-9a0e-3cd907f2c3fb"
     - stage: horo
-      stageUuid: "cf4ee19a-b503-8ee1-a2fd-157abbe6e0e9"
+      stageUuid: "16d7d8f1-50a7-8541-9f75-4c0965dec8d8"
     - stage: seal
-      stageUuid: "cbd5d166-f071-8c1d-9009-3032e2aa1a37"
+      stageUuid: "059e9592-76a8-80e8-8cfc-58d580a1a738"
     - stage: uuid
-      stageUuid: "0f161ec8-d10a-84a7-b4be-324062491683"
+      stageUuid: "41496189-57d1-8f53-b9a9-f1711fe37f7b"
 version: 2
 ---
 # iptc

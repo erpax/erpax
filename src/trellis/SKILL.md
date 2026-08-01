@@ -2,71 +2,18 @@
 name: trellis
 description: "Use when a crop is supported vertically — trellising/staking holds vining or heavy crops (tomatoes, cucumbers, pole beans, peas) off the ground for airflow, quality, and harvest access; methods scale from stake-and-weave (basket weave) for determinates to lower-and-lean string for indeterminates. Vertical support trades labor/materials for yield, quality, and disease reduction."
 atomPath: trellis
-coordinate: trellis · 4/weave · 2100b12f
-contentUuid: "a67e28ab-dfec-553f-9c23-5462084424a6"
-diamondUuid: "e10461a9-7bba-89f1-8c45-6848ae1ca069"
-uuid: "2100b12f-0788-8277-a154-6373aae198db"
+coordinate: "trellis · 4/weave · 295f52e6"
+contentUuid: "a253aebc-7c58-5917-9bb3-531ccb9e21d4"
+diamondUuid: "935c3293-e013-8ccf-90b9-39caf0d195e4"
+uuid: "295f52e6-5b1b-8434-b41c-cd866443fc9e"
 horo: 4
-bonds:
-  in:
-    - agriculture
-    - cost
-    - crop
-    - grade
-    - law
-    - pruning
-    - scouting
-    - tunnel
-    - yield
-  out:
-    - agriculture
-    - cost
-    - crop
-    - grade
-    - law
-    - pruning
-    - scouting
-    - tunnel
-    - yield
 typography:
   partition: trellis
   bondDegree: 28
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - cost
-    - crop
-    - grade
-    - law
-    - pruning
-    - scouting
-    - tunnel
-    - yield
-  matrix:
-    - agriculture
-    - cost
-    - crop
-    - grade
-    - law
-    - pruning
-    - scouting
-    - tunnel
-    - yield
-  backlinks:
-    - agriculture
-    - cost
-    - crop
-    - grade
-    - law
-    - pruning
-    - scouting
-    - tunnel
-    - yield
 signatures:
-  computationUuid: "e8999a7f-5612-8cc0-b1cb-88e365d81f10"
+  computationUuid: "dc4d8c46-91fd-8669-bf1a-991e449384b4"
   stages:
     - stage: path
       stageUuid: "f5e366e8-ac05-86b2-9759-3f829da5f930"
@@ -77,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "efa3633d-63d1-8b8b-ae9d-84513160be99"
     - stage: horo
-      stageUuid: "bc3e9c39-91cd-83d3-a7d7-77a712575032"
+      stageUuid: "d3f39813-4b36-87f1-962c-c9ce50d54f17"
     - stage: seal
-      stageUuid: "b27200dc-cdd2-87f8-bc7d-0c42a34f0f9b"
+      stageUuid: "6ae68238-a46e-8018-aa66-a9ef4d1b48de"
     - stage: uuid
-      stageUuid: "51f5201a-466e-88f8-8538-deca344e4645"
+      stageUuid: "d55af371-f69e-84f4-a31e-243ef0f315bc"
 version: 2
 ---
 # trellis — supporting the crop vertically

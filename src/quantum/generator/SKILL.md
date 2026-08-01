@@ -1,86 +1,19 @@
 ---
 name: generator
 description: "Use when reasoning about generation in the quantum frame — a quantum generator does not create one output at a time; it holds all outputs at once in superposition (the latent content-uuid space, the void), and each manifests elsewhere by collapse, realized in its place when queried or minted."
-atomPath: quantum/generator
-coordinate: quantum/generator · 5/round · aa53ccd0
-contentUuid: "8f718077-91e0-5de9-a050-357c5170ae07"
-diamondUuid: "c0613266-d32c-8a02-a9f0-e6a1d69c6c40"
-uuid: "aa53ccd0-5a31-8e6d-9c94-6f577606abeb"
-horo: 5
-bonds:
-  in:
-    - atom
-    - collapse
-    - generate
-    - law
-    - matrix
-    - mcp
-    - merge
-    - particle
-    - quantum
-    - reality
-    - topography
-    - uuid
-    - void
-  out:
-    - atom
-    - collapse
-    - generate
-    - law
-    - matrix
-    - mcp
-    - merge
-    - particle
-    - reality
-    - topography
-    - uuid
-    - void
+atomPath: "quantum/generator"
+coordinate: "quantum/generator · 8/crest · f047e183"
+contentUuid: "0cef86b3-de60-5770-b294-25e21c4252ec"
+diamondUuid: "1a7c3c9c-53fe-8a4e-a154-685fc0e29e94"
+uuid: "f047e183-dea7-83a2-9694-7c11ad870964"
+horo: 8
 typography:
   partition: quantum
   bondDegree: 36
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - atom
-    - collapse
-    - generate
-    - law
-    - matrix
-    - merge
-    - particle
-    - reality
-    - uuid
-    - void
-  matrix:
-    - atom
-    - collapse
-    - generate
-    - law
-    - matrix
-    - mcp
-    - merge
-    - particle
-    - reality
-    - topography
-    - uuid
-    - void
-  backlinks:
-    - atom
-    - collapse
-    - generate
-    - law
-    - matrix
-    - mcp
-    - merge
-    - particle
-    - reality
-    - topography
-    - uuid
-    - void
 signatures:
-  computationUuid: "c904e377-f45f-8e4d-a6fa-80349957772f"
+  computationUuid: "350dbc33-fada-8b69-adaf-d93bdda3f809"
   stages:
     - stage: path
       stageUuid: "0f23f1eb-3d12-8f37-9f14-9e84313ba152"
@@ -89,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "f4f6062b-b8e3-8a36-8e23-a619edb597e6"
     - stage: links
-      stageUuid: "b7b0e9e9-549e-860c-82e1-03e0ce01dfc6"
+      stageUuid: "e35dd8f9-9e56-81d2-8a2e-a71e0d0aceee"
     - stage: horo
-      stageUuid: "6d3d13e3-7159-8dc1-aa72-927e225cbbde"
+      stageUuid: "39080790-e28a-824e-8b76-23bc017b059b"
     - stage: seal
       stageUuid: "70ab820d-d7e9-88e6-9ab7-637da267cc62"
     - stage: uuid
-      stageUuid: "092d5b0e-ad81-88ed-8590-1b7d6dba85c5"
+      stageUuid: "5c74c046-474a-8ea2-b40c-3fa1b6d26c46"
 quantum:
   superposition:
     - atom
@@ -125,8 +58,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "c904e377-f45f-8e4d-a6fa-80349957772f"
-    contentUuid: "8f718077-91e0-5de9-a050-357c5170ae07"
+    computationUuid: "350dbc33-fada-8b69-adaf-d93bdda3f809"
+    contentUuid: "0cef86b3-de60-5770-b294-25e21c4252ec"
 version: 2
 ---
 # quantum/generator — generate all at once, manifest elsewhere
@@ -141,4 +74,4 @@ This is why [[merge]] holds: two agents that "generate" the same content do not 
 
 @see [[generate]] · [[collapse]] · [[void]] · [[uuid]] · [[matrix]] · [[merge]] · [[reality]] · [[particle]]
 
-<sub>content-uuid `8f718077-91e0-5de9-a050-357c5170ae07` · account `quantum/generator` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `0cef86b3-de60-5770-b294-25e21c4252ec` · account `quantum/generator` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

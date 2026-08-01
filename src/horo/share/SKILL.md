@@ -2,174 +2,18 @@
 name: share
 description: "Use when reasoning about a portion of a whole allocated to a member who joins — horo position 2 (digit 2, the first doubling: one becomes two, the whole splits, value allocated). Its domain instance is a proportional, contingent claim on a pooled whole under shared risk: the CSA share (prepaid box of whatever the farm harvests), equity share, profit share — the inverse of a fixed order."
 atomPath: "horo/share"
-coordinate: "horo/share · 8/crest · e8a461f9"
-contentUuid: "a74adf38-44bd-5614-9f47-546d3238d7ec"
-diamondUuid: "1759a229-0222-8ec0-bd5d-08ba7ae2ab39"
-uuid: "e8a461f9-02ab-8606-8f71-5a2e6efd1328"
-horo: 8
-bonds:
-  in:
-    - agriculture
-    - balance
-    - base
-    - choice
-    - coil
-    - collections
-    - crop
-    - deferral
-    - deferredrevenue
-    - duality
-    - fractal
-    - harvest
-    - horo
-    - items
-    - law
-    - livestock
-    - market
-    - notes
-    - orders
-    - part
-    - periods
-    - pickup
-    - planting
-    - prepaid
-    - recognition
-    - risk
-    - season
-    - sequence
-    - weave
-    - whole
-    - yield
-  out:
-    - agriculture
-    - balance
-    - base
-    - choice
-    - coil
-    - collections
-    - crop
-    - deferral
-    - deferredrevenue
-    - duality
-    - fractal
-    - harvest
-    - horo
-    - items
-    - law
-    - livestock
-    - market
-    - notes
-    - orders
-    - part
-    - periods
-    - pickup
-    - planting
-    - prepaid
-    - recognition
-    - risk
-    - season
-    - sequence
-    - weave
-    - whole
-    - yield
+coordinate: "horo/share · 5/round · 08286f9d"
+contentUuid: "9abda7e4-059d-5d06-b9a9-c416c17c31d9"
+diamondUuid: "90190824-f2e5-86ea-a506-92a7ed78e6e2"
+uuid: "08286f9d-8ae5-894c-b63c-e80389af4b75"
+horo: 5
 typography:
   partition: horo
   bondDegree: 102
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - balance
-    - base
-    - choice
-    - coil
-    - collections
-    - deferral
-    - deferredrevenue
-    - duality
-    - fractal
-    - harvest
-    - horo
-    - law
-    - market
-    - orders
-    - part
-    - pickup
-    - prepaid
-    - recognition
-    - risk
-    - season
-    - sequence
-    - weave
-    - whole
-  matrix:
-    - agriculture
-    - balance
-    - base
-    - choice
-    - coil
-    - collections
-    - crop
-    - deferral
-    - deferredrevenue
-    - duality
-    - fractal
-    - harvest
-    - horo
-    - items
-    - law
-    - livestock
-    - market
-    - notes
-    - orders
-    - part
-    - periods
-    - pickup
-    - planting
-    - prepaid
-    - recognition
-    - risk
-    - season
-    - sequence
-    - weave
-    - whole
-    - yield
-  backlinks:
-    - agriculture
-    - balance
-    - base
-    - choice
-    - coil
-    - collections
-    - crop
-    - deferral
-    - deferredrevenue
-    - duality
-    - fractal
-    - harvest
-    - horo
-    - items
-    - law
-    - livestock
-    - market
-    - notes
-    - orders
-    - part
-    - periods
-    - pickup
-    - planting
-    - prepaid
-    - recognition
-    - risk
-    - season
-    - sequence
-    - weave
-    - whole
-    - yield
 signatures:
-  computationUuid: "3190e80e-9551-8f30-b93c-2ac01c43d707"
+  computationUuid: "c8880054-887a-887c-91e0-008a8c922fa8"
   stages:
     - stage: path
       stageUuid: "342dad34-4df1-8ac5-a0c9-166a472e3f65"
@@ -180,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "29a75327-1d79-8567-b856-29d00b08529c"
     - stage: horo
-      stageUuid: "738dc4de-8ecd-8cff-b9d2-54adc70eec89"
+      stageUuid: "49d11f65-c10d-8370-b167-ef1498692168"
     - stage: seal
       stageUuid: "835c8bbe-ee81-83ff-b3b7-2f64eafff525"
     - stage: uuid
-      stageUuid: "e4264a20-3b28-8f70-a17d-3c2282f76b6b"
+      stageUuid: "c9bad877-a8ee-86b7-b390-2fa9c02a77b2"
 version: 2
 ---
 # share — horo position 2: the whole splits, a member joins, a portion is allocated

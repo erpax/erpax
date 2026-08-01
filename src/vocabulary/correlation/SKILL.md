@@ -1,52 +1,34 @@
 ---
 name: correlation
 description: "Use when analyzing variable relationships — Pearson/Spearman correlation, multicollinearity detection, correlation matrices, spurious vs causal correlation, correlation thresholds in feature selection."
-atomPath: vocabulary/correlation
-coordinate: correlation · 5/round · 0b4cf3c6
-contentUuid: "b9304071-aa77-56b9-87e3-3cee0595b9ee"
-diamondUuid: "a8491f9c-71e6-892a-8339-d9804c4152c2"
-uuid: "0b4cf3c6-ad37-8b4c-998a-7c2b85bd05c1"
-horo: 5
-bonds:
-  in:
-    - calculate
-    - law
-  out:
-    - calculate
-    - law
+atomPath: "vocabulary/correlation"
+coordinate: "vocabulary/correlation · 8/crest · ae12c8dd"
+contentUuid: "baebce79-9d78-5bb4-b1ac-39ff7742e58e"
+diamondUuid: "60de3a01-bd6f-8b1a-8e91-2f432ed163a7"
+uuid: "ae12c8dd-b19d-8f49-a79b-ede2b649921e"
+horo: 8
 typography:
-  partition: correlation
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - calculate
-    - law
-  matrix:
-    - calculate
-    - law
-  backlinks:
-    - calculate
-    - law
 signatures:
-  computationUuid: "521f8f91-84bd-8b68-b49d-068a0edefe58"
+  computationUuid: "8c77ad35-0847-8482-9589-087a616f183d"
   stages:
     - stage: path
-      stageUuid: "049ffc90-5ac2-8f33-84f7-7d2e6bc07344"
+      stageUuid: "f39d5832-6abe-881e-9aad-51dae0ca61f8"
     - stage: trinity
-      stageUuid: "7347977f-2770-80d5-92c4-d19631830066"
+      stageUuid: "620a02a6-524a-87a1-9ede-74330409d9c7"
     - stage: boundary
-      stageUuid: "189e3846-1bf2-810d-94f5-5676584743f8"
+      stageUuid: "0c596073-ee18-84cc-bb8c-39d193414855"
     - stage: links
-      stageUuid: "ef42c509-9e2c-8fea-932a-cfd1f08ed2ba"
+      stageUuid: "e34bf967-ac1b-8185-8811-341af32bc205"
     - stage: horo
-      stageUuid: "9c448526-4c30-889c-af83-f9719a95adfb"
+      stageUuid: "bdc99c6c-67a2-8a39-a3d3-893782eda70d"
     - stage: seal
-      stageUuid: "385359b6-851b-8f22-b744-1996c709d711"
+      stageUuid: "fdee7953-3786-8260-8812-1ca3f397fc46"
     - stage: uuid
-      stageUuid: "f556d29d-d441-8e3d-a523-75a7b1039021"
+      stageUuid: "10f98c30-5459-8926-ae68-025da2a72078"
 version: 2
 ---
 # correlation

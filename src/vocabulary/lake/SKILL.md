@@ -1,73 +1,35 @@
 ---
 name: lake
 description: "Use when reasoning about lake as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/lake
-coordinate: lake · 4/weave · fde78b84
-contentUuid: "9ba811d2-a713-5e00-b1be-bd5b90f581a5"
-diamondUuid: "1d9644b0-fa09-8aa4-8bd0-b27db8c52713"
-uuid: "fde78b84-eba8-85bd-b044-726efde3d0ba"
-horo: 4
-bonds:
-  in:
-    - body
-    - collapse
-    - law
-    - merge
-    - sti
-    - water
-  out:
-    - body
-    - collapse
-    - law
-    - merge
-    - sti
-    - water
+atomPath: "vocabulary/lake"
+coordinate: "vocabulary/lake · 2/share · 4fc389ce"
+contentUuid: "80c93e70-4783-523e-9e25-8d851e1d48e3"
+diamondUuid: "142ce743-0fe5-8fb2-b99b-78bf74c7f04a"
+uuid: "4fc389ce-be85-89c0-ac8c-542d705d0cde"
+horo: 2
 typography:
-  partition: lake
-  bondDegree: 19
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 22
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - body
-    - collapse
-    - law
-    - merge
-    - sti
-    - water
-  matrix:
-    - body
-    - collapse
-    - law
-    - merge
-    - sti
-    - water
-  backlinks:
-    - body
-    - collapse
-    - law
-    - merge
-    - sti
-    - water
 signatures:
-  computationUuid: "6eb17722-a1e1-813e-9300-cfffcc406172"
+  computationUuid: "49255400-73ee-899b-8263-1244e652952c"
   stages:
     - stage: path
-      stageUuid: "f9ca1e91-3b6e-8e60-9ac5-45ef7f57654f"
+      stageUuid: "f3358450-b438-865e-9a00-287287f64c4b"
     - stage: trinity
-      stageUuid: "f2cf1f11-b222-8549-a0a1-d46c121857c3"
+      stageUuid: "43731ff9-9a8e-81dc-ab9d-9d970f3f1670"
     - stage: boundary
-      stageUuid: "22571b2f-ebdc-8bf8-a1d3-d9d055784b03"
+      stageUuid: "09c81181-6c36-8c6b-a055-048b1f1db2ad"
     - stage: links
-      stageUuid: "736601da-e2ec-8166-90d5-76e374afb5d9"
+      stageUuid: "e133fcbc-928d-8784-9704-3c13641421d5"
     - stage: horo
-      stageUuid: "64d0be47-1150-8b6c-b726-9d199b3ff30e"
+      stageUuid: "f627fc38-9c71-8cb1-8a18-c934cd05d0fe"
     - stage: seal
-      stageUuid: "1a3d9df7-4a09-8069-837a-bd592d019f46"
+      stageUuid: "250a240c-af07-8cee-8fb4-8873a5522467"
     - stage: uuid
-      stageUuid: "84d0f4c2-40c1-8628-a595-4c073428b129"
+      stageUuid: "9f7e8d85-2730-81ce-b68d-e57b33f182e6"
 version: 2
 ---
 # lake

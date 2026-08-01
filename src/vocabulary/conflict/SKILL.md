@@ -1,82 +1,34 @@
 ---
 name: conflict
 description: "Use when reasoning about conflict — Before a matter opens, the firm must prove there is no **conflict**: the proposed party (client) must not be adverse to a party the firm already serves. Strip the prefix and this i"
-atomPath: vocabulary/conflict
-coordinate: conflict · 8/crest · 2462c0b5
-contentUuid: "fbed8d07-722f-5bee-9b64-baa6c75b9ea4"
-diamondUuid: "46f8d97e-d5ad-8956-a9f1-1f80fe178415"
-uuid: "2462c0b5-2d6d-8566-8b39-454457817d53"
-horo: 8
-bonds:
-  in:
-    - akashic
-    - identity
-    - matter
-    - merge
-    - party
-    - privilege
-    - proof
-    - society
-  out:
-    - akashic
-    - identity
-    - matter
-    - merge
-    - party
-    - privilege
-    - proof
-    - society
+atomPath: "vocabulary/conflict"
+coordinate: "vocabulary/conflict · 1/base · c8fbcd0e"
+contentUuid: "f93416db-cde8-5bdf-8a5a-55ead5a1e0d3"
+diamondUuid: "bb075005-068b-8cbb-8864-4489ba175c4f"
+uuid: "c8fbcd0e-32f1-83e4-bcf0-0f91d812beb0"
+horo: 1
 typography:
-  partition: conflict
+  partition: vocabulary
   bondDegree: 26
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - identity
-    - matter
-    - merge
-    - party
-    - privilege
-    - proof
-    - society
-  matrix:
-    - akashic
-    - identity
-    - matter
-    - merge
-    - party
-    - privilege
-    - proof
-    - society
-  backlinks:
-    - akashic
-    - identity
-    - matter
-    - merge
-    - party
-    - privilege
-    - proof
-    - society
 signatures:
-  computationUuid: "11bf9b20-a31a-8d9d-a206-2591c04824d1"
+  computationUuid: "5b413b61-6a97-8a08-b516-5016ff5944e0"
   stages:
     - stage: path
-      stageUuid: "10cb9551-5733-89c0-aa34-e1da98865142"
+      stageUuid: "c450f96d-b319-81f5-8a75-e0a0bbcf33c5"
     - stage: trinity
-      stageUuid: "5f86e9a6-3401-82b3-bcf8-30a2ea3e4e2a"
+      stageUuid: "8c27eb20-4d6c-8f15-aab5-1087619fab92"
     - stage: boundary
-      stageUuid: "523a794f-fd99-8c2e-873d-d18049eca76f"
+      stageUuid: "dc0468d2-e110-8544-8222-5ccd9944ecd1"
     - stage: links
-      stageUuid: "d2432398-3533-84fe-8d5e-5b107d0cbea4"
+      stageUuid: "041fc12f-8fa4-8633-a812-b7f331717c11"
     - stage: horo
-      stageUuid: "afd64446-3091-8499-8e2d-2d875ffa0a2e"
+      stageUuid: "2e80dc7e-8cef-8126-84e6-bb1125db3428"
     - stage: seal
-      stageUuid: "573575f0-17f2-8d63-837e-e45cb52a0173"
+      stageUuid: "5f6d31b5-98a2-8916-a0d5-abc272009fbe"
     - stage: uuid
-      stageUuid: "d857f1b9-529b-8049-b3b1-cad6fffd0e4f"
+      stageUuid: "2716922b-9ae3-81f8-a158-9a72e15f25d0"
 version: 2
 ---
 # conflict — the adversity collision (the merge law as a clearance check)

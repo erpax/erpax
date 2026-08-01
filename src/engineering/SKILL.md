@@ -2,56 +2,19 @@
 name: engineering
 description: "Use when an engineering standard (ISO/IEC 25010 quality model) must move from cited to enforced — maps each quality concern to the erpax gate that enforces it, and names the cited-but-ungated concerns as the solutions to reverse-engineer next."
 atomPath: engineering
-coordinate: "engineering · 8/crest · 602b26f2"
-contentUuid: "bd7c4b2e-1697-5a50-8ada-0be4d2f3854d"
-diamondUuid: "c524aa0f-5778-8c7e-9d20-ec704377934c"
-uuid: "602b26f2-2336-81d9-855b-d6166e1086c7"
-horo: 8
-bonds:
-  in:
-    - access
-    - accounting
-    - compatibility
-    - law
-    - rules
-    - timeout
-  out:
-    - access
-    - accounting
-    - compatibility
-    - law
-    - rules
-    - timeout
+coordinate: "engineering · 1/base · 5001d99b"
+contentUuid: "34a3fe9b-ee5e-573f-a95b-4800fb80d653"
+diamondUuid: "b8af1a9c-7f67-8116-8f4b-d21230027aab"
+uuid: "5001d99b-5e8e-8650-adf2-df1ee6ed4856"
+horo: 1
 typography:
   partition: engineering
   bondDegree: 37
-  neighbors: []
 standards:
   - "ISO/IEC 25010:2023 §5 — product quality model (functional suitability … maintainability)"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - accounting
-    - law
-    - rules
-    - timeout
-  matrix:
-    - access
-    - accounting
-    - compatibility
-    - law
-    - rules
-    - timeout
-  backlinks:
-    - access
-    - accounting
-    - compatibility
-    - law
-    - rules
-    - timeout
 signatures:
-  computationUuid: "1fbb596b-7ba8-8e9c-a5a5-78e3df44f935"
+  computationUuid: "c2d244b9-f1f2-895d-9ad0-d528914cf4db"
   stages:
     - stage: path
       stageUuid: "95807699-b9b4-8136-b8f6-132233e1c55d"
@@ -62,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e442d965-f220-886c-a479-1b634244ea44"
     - stage: horo
-      stageUuid: "e68ba97c-f92a-8761-9448-f01ce445e0e1"
+      stageUuid: "d8741be2-0bca-8b48-967b-4199da871571"
     - stage: seal
       stageUuid: "6d10faea-e4f7-8985-a9db-cf1037b733bb"
     - stage: uuid
-      stageUuid: "2c1f01d1-2023-8b29-93fc-78e43acc7b61"
+      stageUuid: "aa2fa285-0be4-8f62-ac43-c587534f8036"
 version: 2
 ---
 # engineering — reverse-engineer the standards into the gates that enforce them

@@ -1,63 +1,35 @@
 ---
 name: renal
 description: "Use when reasoning about renal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/renal
-coordinate: renal · 7/descent · 75ac61c4
-contentUuid: "a70ec95a-72ca-570d-a64c-10f7773ea8a6"
-diamondUuid: "bc9925b5-db1c-879f-97a4-233b30a98b40"
-uuid: "75ac61c4-4716-8345-ab87-8f1d99ac1b27"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/renal"
+coordinate: "vocabulary/renal · 5/round · e41cbc7f"
+contentUuid: "d6795779-77b8-5ea1-9e96-5cb6d2bce764"
+diamondUuid: "b267d4a6-2e45-88cf-93f5-01b95f268e91"
+uuid: "e41cbc7f-56c7-86ca-884a-f35a2be559d5"
+horo: 5
 typography:
-  partition: renal
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "c070aa5a-fefd-8a05-a453-8511e58c40df"
+  computationUuid: "6f4fe1ec-6ea3-8900-96cb-224fb0bb66c1"
   stages:
     - stage: path
-      stageUuid: "d1407b97-05c0-8f6e-82fc-72c2dfe1f1c6"
+      stageUuid: "d4bb490e-7f8b-80b8-ad5d-1db23fc247a7"
     - stage: trinity
-      stageUuid: "1d122574-5e33-85cd-a815-a6131b35149b"
+      stageUuid: "67d43a4a-c11b-8f79-9393-7fde5e7a6bce"
     - stage: boundary
-      stageUuid: "b3f9f5f2-9ef1-8bff-80b1-b65c2b80f5ef"
+      stageUuid: "83184ece-5c85-8c11-a0ca-85fef126a1c2"
     - stage: links
-      stageUuid: "9d1ee7e0-afeb-877f-96a7-5ed62b110885"
+      stageUuid: "4bcf310b-5cef-8fc3-b2e7-aef285fd0135"
     - stage: horo
-      stageUuid: "9127bd38-f11e-821f-8d4b-1495038bbd6a"
+      stageUuid: "fa017a0c-e3a1-82db-953a-4772f325605b"
     - stage: seal
-      stageUuid: "ba0b9f07-0726-8f72-86bd-c2599de7cd57"
+      stageUuid: "f292c8c3-66d7-8025-9732-f8b2499cdc37"
     - stage: uuid
-      stageUuid: "24c3c333-c43c-8e53-a365-2505ec5a84d8"
+      stageUuid: "c960827c-9bdf-898c-97b9-3f3dab2adaf1"
 version: 2
 ---
 # renal

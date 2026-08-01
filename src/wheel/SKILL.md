@@ -2,82 +2,19 @@
 name: wheel
 description: "Use when reasoning about wheel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: wheel
-coordinate: wheel · 5/round · bd81accd
-contentUuid: "2eced029-2b42-56df-a6ca-b33b0d27d583"
-diamondUuid: "ac38103d-7c14-89b4-aa60-3d09e59be813"
-uuid: "bd81accd-9e3e-8f1f-8d98-b0b1987b66b9"
-horo: 5
-bonds:
-  in:
-    - buddhism
-    - collapse
-    - configuration
-    - drive
-    - hinduism
-    - law
-    - merge
-    - orphism
-    - paganism
-    - ritual
-    - sti
-    - value
-  out:
-    - buddhism
-    - collapse
-    - configuration
-    - drive
-    - hinduism
-    - law
-    - merge
-    - orphism
-    - paganism
-    - ritual
-    - sti
-    - value
+coordinate: "wheel · 7/descent · 1d012609"
+contentUuid: "26d20e2b-a639-5459-8238-c828cad51f39"
+diamondUuid: "4a0c4993-1fa2-86b6-b712-b027ccf6bb08"
+uuid: "1d012609-9445-857b-90e4-62205b65d80e"
+horo: 7
 typography:
   partition: wheel
   bondDegree: 38
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - configuration
-    - drive
-    - law
-    - merge
-    - sti
-    - value
-  matrix:
-    - buddhism
-    - collapse
-    - configuration
-    - drive
-    - hinduism
-    - law
-    - merge
-    - orphism
-    - paganism
-    - ritual
-    - sti
-    - value
-  backlinks:
-    - buddhism
-    - collapse
-    - configuration
-    - drive
-    - hinduism
-    - law
-    - merge
-    - orphism
-    - paganism
-    - ritual
-    - sti
-    - value
 signatures:
-  computationUuid: "ae398ba5-9bc0-8912-859f-ed0c8c9ed3b6"
+  computationUuid: "7b440bab-4d61-88af-a3d5-00c2e8c5b926"
   stages:
     - stage: path
       stageUuid: "46a36ec6-bcad-8493-a4db-57999e052689"
@@ -88,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6297e221-05c2-8ebf-8704-bca792a481bb"
     - stage: horo
-      stageUuid: "a854b904-13dc-8a13-aa25-042f0cc14f5a"
+      stageUuid: "47e13bab-8249-8be6-87e1-f09fae661585"
     - stage: seal
-      stageUuid: "cda6f4fd-df0e-8390-abbb-24c6f12e7acc"
+      stageUuid: "400ab394-1b10-88fe-af3d-8cf328ed0892"
     - stage: uuid
-      stageUuid: "0642d784-4cb6-882e-ad62-9fb140ebda87"
+      stageUuid: "37965742-d368-86d9-94fa-50844d87ae84"
 version: 2
 ---
 # wheel

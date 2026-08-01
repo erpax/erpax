@@ -2,54 +2,14 @@
 name: invoices
 description: "Use when issuing, receiving or auditing AR/AP invoices — EN-16931 BG-1 header, BG-22 document totals, BG-23 VAT breakdown, fiscal device fields, period-lock guard, GL posting and audit trail. The invoices collection."
 atomPath: invoices
-coordinate: "invoices · 4/weave · 6e1b9286"
-contentUuid: "019f2593-9521-50be-9bc8-e17ef5623da5"
-diamondUuid: "75430bf1-7e38-80b5-b8c7-204593b471cc"
-uuid: "6e1b9286-a8ed-8715-95f4-950684358e8d"
-horo: 4
-bonds:
-  in:
-    - accounting
-    - bookings
-    - cycles
-    - deferredrevenue
-    - dunning
-    - identity
-    - law
-    - lines
-    - milestones
-    - orders
-    - party
-    - performances
-    - reference
-    - refunds
-    - revenue
-    - sales
-    - subscriptions
-    - transaction
-  out:
-    - accounting
-    - bookings
-    - cycles
-    - deferredrevenue
-    - dunning
-    - identity
-    - law
-    - lines
-    - milestones
-    - orders
-    - party
-    - performances
-    - reference
-    - refunds
-    - revenue
-    - sales
-    - subscriptions
-    - transaction
+coordinate: "invoices · 2/share · 6ad98f69"
+contentUuid: "759a0a80-a187-5961-8649-265de5676bac"
+diamondUuid: "0c057fb0-6813-81a0-8a4c-9f5ed3994290"
+uuid: "6ad98f69-6505-8737-982c-25e2c5ef70cb"
+horo: 2
 typography:
   partition: invoices
   bondDegree: 0
-  neighbors: []
 standards:
   - "EN-16931:2017 BT-3 invoice-type-code"
   - "EN-16931:2017 BT-3 invoice-type-code`"
@@ -62,7 +22,6 @@ standards:
   - "EN-16931:2017 §BG-23 vat-breakdown"
   - "EN-16931:2017 §BG-23 vat-breakdown`"
   - "IFRS IFRS-15 revenue-from-contracts-with-customers"
-  - "ILO-C100"
   - "ISO-4217:2015 currency-codes"
   - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time invoice-date due-date"
@@ -83,55 +42,8 @@ standards:
   - "US-GAAP ASC-606 revenue-from-contracts-with-customers"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - cycles
-    - identity
-    - law
-    - party
-    - subscriptions
-    - transaction
-  matrix:
-    - accounting
-    - bookings
-    - cycles
-    - deferredrevenue
-    - dunning
-    - identity
-    - law
-    - lines
-    - milestones
-    - orders
-    - party
-    - performances
-    - reference
-    - refunds
-    - revenue
-    - sales
-    - subscriptions
-    - transaction
-  backlinks:
-    - accounting
-    - bookings
-    - cycles
-    - deferredrevenue
-    - dunning
-    - identity
-    - law
-    - lines
-    - milestones
-    - orders
-    - party
-    - performances
-    - reference
-    - refunds
-    - revenue
-    - sales
-    - subscriptions
-    - transaction
 signatures:
-  computationUuid: "1d4a5ec7-7a9a-8a58-bb0f-21e504ba2288"
+  computationUuid: "41cd9d32-d21f-8f1d-8c8a-cde7ea0395b7"
   stages:
     - stage: path
       stageUuid: "343d953a-b200-88f2-9d81-ba44e9b2c0ea"
@@ -142,11 +54,11 @@ signatures:
     - stage: links
       stageUuid: "0d1a4cd3-01dc-82ba-a9f1-7d5140a02884"
     - stage: horo
-      stageUuid: "ee6fa9b8-080a-82d4-a63b-5735d4cb05ea"
+      stageUuid: "d264756d-175a-88b4-9187-d78097abe800"
     - stage: seal
       stageUuid: "962fd028-1986-8e58-9ce7-557199c5ca50"
     - stage: uuid
-      stageUuid: "bf63f3d0-8cdb-8432-98e6-6cb8d13c5023"
+      stageUuid: "b9604a45-7493-80ba-935f-0fde5eb60f5d"
 version: 2
 ---
 # invoices

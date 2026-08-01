@@ -2,23 +2,16 @@
 name: protocol
 description: Use when implementing or referencing GHG Protocol.
 atomPath: "ghg/protocol"
-coordinate: "ghg/protocol · 7/descent · 34ea8e95"
-contentUuid: "91eca552-1b58-513f-bda1-0ca3f9b00f61"
-diamondUuid: "2ba74900-cc66-85c3-9fdf-be9a8ff6de99"
-uuid: "34ea8e95-9ed1-8887-8f52-269f410a64ac"
-horo: 7
-bonds:
-  in:
-    - law
-  out:
-    - law
+coordinate: "ghg/protocol · 4/weave · 05e65896"
+contentUuid: "f3d85fc7-c4be-50b5-8de6-a385f4f0ae9e"
+diamondUuid: "72a46cf8-f0d7-8b9d-852f-716316d7314c"
+uuid: "05e65896-d8d0-8a8f-b3b8-c2d0b6fb3bbd"
+horo: 4
 typography:
   partition: ghg
   bondDegree: 3
-  neighbors: []
 standards:
   - "EU ESRS E1 §44-50 ghg-emissions-disclosure (companion)"
-  - "EU-2011/83"
   - "EU-ESRS"
   - "EU-VAT-Implementing-Reg-282/2011"
   - GHG Protocol Corporate Standard (revised 2015)
@@ -27,20 +20,14 @@ standards:
   - "GHG-Protocol"
   - "IFRS S2 §29-32 climate-related-metrics (companion)"
   - "IFRS S2 §29-32 climate-related-metrics (companion)`"
+  - "IFRS-S2"
   - "ISO 14064-1:2018 organisation-level-ghg-quantification"
   - "ISO 14064-1:2018 organisation-level-ghg-quantification`"
   - "ISO-14064-1"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-  matrix:
-    - law
-  backlinks:
-    - law
 signatures:
-  computationUuid: "cf38fd18-d7d3-8f99-bbb3-076fb4946f18"
+  computationUuid: "2c8da6c4-d00a-8f84-90fa-ed5d5203df50"
   stages:
     - stage: path
       stageUuid: "51418229-28d4-8f7d-86b9-e02843439ce5"
@@ -51,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "65a987b0-a2e8-85eb-b09d-41fdefa6d607"
     - stage: horo
-      stageUuid: "754ad966-5966-89f1-9e39-e66d0a0d4038"
+      stageUuid: "1e538167-cb0e-8fee-9573-7352223b55e1"
     - stage: seal
       stageUuid: "83431ce0-8794-8b40-b0d7-1b1e74168d7f"
     - stage: uuid
-      stageUuid: "574af560-e108-8a80-92c6-699a32a2b758"
+      stageUuid: "d104db56-4798-8bf7-83a5-d3ce2025a2e5"
 version: 2
 ---
 # GHG Protocol

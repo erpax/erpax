@@ -1,63 +1,35 @@
 ---
 name: chiropractic
 description: "Use when reasoning about chiropractic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/chiropractic
-coordinate: chiropractic · 8/crest · d34d20e6
-contentUuid: "ff53a9d3-77a3-57f7-ab0a-f689c77c5f8e"
-diamondUuid: "fc4b2360-db3d-8da6-8199-6e55491909f6"
-uuid: "d34d20e6-3df7-8577-a876-50a474d77bab"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/chiropractic"
+coordinate: "vocabulary/chiropractic · 7/descent · 05eb54ee"
+contentUuid: "0b267e34-27b8-596d-8261-d4db0048b8d1"
+diamondUuid: "c5997704-d428-8626-a4d5-9c4af995385c"
+uuid: "05eb54ee-2f4b-883d-89cc-ab4f11e9782e"
+horo: 7
 typography:
-  partition: chiropractic
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "c481db0a-ff7d-8239-be41-df7dc1359524"
+  computationUuid: "55d37a03-ac7c-8a10-9021-dfb20d17e38f"
   stages:
     - stage: path
-      stageUuid: "95145581-89e9-8fd5-a0b0-791860bb7c93"
+      stageUuid: "0421318d-8a45-859f-bf80-cc4836c85217"
     - stage: trinity
-      stageUuid: "79857394-58b3-872d-8f89-665b0bf5d635"
+      stageUuid: "d95ba3a0-726c-82dc-b4cd-7fa2ac40034c"
     - stage: boundary
-      stageUuid: "86664fd5-e5ea-888e-9651-01d09053b598"
+      stageUuid: "00d88315-e236-84f7-a0aa-46dfce9fa590"
     - stage: links
-      stageUuid: "a0c337b6-ad88-8b7c-9e97-e49d7685cd29"
+      stageUuid: "bf2b21a6-41d1-87c3-8e28-20af366fc79a"
     - stage: horo
-      stageUuid: "cc52cf50-bf0e-83e5-80b2-6248d15024a7"
+      stageUuid: "d88ba15e-90d0-80fb-ba2b-3abe82f146c9"
     - stage: seal
-      stageUuid: "cfe33f21-bf8e-8451-86a1-423337eec374"
+      stageUuid: "7e1f2dba-3d82-889c-9520-a0d6733b63f2"
     - stage: uuid
-      stageUuid: "e4d99b3c-1b69-8598-88fe-b92031ab61ee"
+      stageUuid: "740aa86d-2c44-87c8-9892-d8493aca6337"
 version: 2
 ---
 # chiropractic

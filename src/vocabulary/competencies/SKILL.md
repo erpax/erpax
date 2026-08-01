@@ -1,109 +1,34 @@
 ---
 name: competencies
 description: "Use when mapping the one actor-capability taxonomy — agents load it, employees hold it, jobs require it, the skill-router resolves it. Skills ARE competencies, so the catalogue is COMPUTED from the SKILL.md corpus (no stored collection), and a held/required line references a competency by its content-addressed skillRoute."
-atomPath: vocabulary/competencies
-coordinate: competencies · 5/round · e475a942
-contentUuid: "ba8f2f46-7ccd-5e4b-9404-54516c873cb1"
-diamondUuid: "80e64ee7-a59e-8bdc-ab2f-116f0abb0540"
-uuid: "e475a942-187f-8003-bc0b-1c73928b519d"
-horo: 5
-bonds:
-  in:
-    - accounting
-    - collapse
-    - derive
-    - duality
-    - education
-    - employees
-    - fractal
-    - holographic
-    - identity
-    - merge
-    - sequence
-    - standard
-    - train
-    - training
-  out:
-    - accounting
-    - collapse
-    - derive
-    - duality
-    - education
-    - employees
-    - fractal
-    - holographic
-    - identity
-    - merge
-    - sequence
-    - standard
-    - train
-    - training
+atomPath: "vocabulary/competencies"
+coordinate: "vocabulary/competencies · 4/weave · dfb56630"
+contentUuid: "cefeb628-d24a-5dd5-a4c2-510af60c31b8"
+diamondUuid: "386c56ed-07b6-884d-8961-c25b53a7b56a"
+uuid: "dfb56630-3f98-8ccf-a217-4af9932e0a53"
+horo: 4
 typography:
-  partition: competencies
+  partition: vocabulary
   bondDegree: 42
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - duality
-    - education
-    - employees
-    - fractal
-    - holographic
-    - identity
-    - merge
-    - sequence
-    - standard
-    - train
-  matrix:
-    - accounting
-    - collapse
-    - derive
-    - duality
-    - education
-    - employees
-    - fractal
-    - holographic
-    - identity
-    - merge
-    - sequence
-    - standard
-    - train
-    - training
-  backlinks:
-    - accounting
-    - collapse
-    - derive
-    - duality
-    - education
-    - employees
-    - fractal
-    - holographic
-    - identity
-    - merge
-    - sequence
-    - standard
-    - train
-    - training
 signatures:
-  computationUuid: "9de848f8-f44f-87bf-b668-aa0007f42348"
+  computationUuid: "aaf50184-9748-8e1c-881c-0acb055d52f5"
   stages:
     - stage: path
-      stageUuid: "db860e3d-9d24-8b5a-b88d-49e6e2abfa32"
+      stageUuid: "299a5a9f-aab7-8296-8caa-90c9310bdb41"
     - stage: trinity
-      stageUuid: "e33229fd-f6c5-8b3f-b16c-1bb8553747f3"
+      stageUuid: "aae43426-d0f7-8910-a5df-3e9de4510461"
     - stage: boundary
-      stageUuid: "c8014664-2d43-8804-ae0a-f6d5f741930d"
+      stageUuid: "c8686518-32f7-8c49-bb55-c81ab914cd6e"
     - stage: links
-      stageUuid: "f7945035-3f2a-8209-a997-a272da461822"
+      stageUuid: "836189a0-8f50-83e7-805e-401da5369c12"
     - stage: horo
-      stageUuid: "84e056f8-8bc9-8c5e-ab10-8ff0279d07e2"
+      stageUuid: "6bc70f6c-a8c6-88b2-aa30-26a93aaa1346"
     - stage: seal
-      stageUuid: "ba46ad8e-d5df-8dd1-b877-1749bc777e20"
+      stageUuid: "3fdcfe3e-8249-8569-af00-ee338d23fbf0"
     - stage: uuid
-      stageUuid: "29cdf694-693d-89d9-8495-24fed80d6594"
+      stageUuid: "1bc01f5a-f851-8e07-929f-1996e40f8498"
 version: 2
 ---
 # competencies — the ONE actor-capability taxonomy (computed from the corpus)

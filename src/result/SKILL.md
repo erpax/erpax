@@ -2,42 +2,19 @@
 name: result
 description: "Use when reasoning about result — The result produced in the action. E.g. John wrote *a book*."
 atomPath: result
-coordinate: result · 2/share · b0317bae
-contentUuid: "bf84dfb2-e3b5-510c-9f82-5ea34a30b27d"
-diamondUuid: "01bdc4db-e4d6-81b5-a65e-cfab687649f9"
-uuid: "b0317bae-84dc-843a-9e14-53ce16a4211b"
-horo: 2
-bonds:
-  in:
-    - comment
-    - law
-    - review
-  out:
-    - comment
-    - law
-    - review
+coordinate: "result · 7/descent · 99b7f9e3"
+contentUuid: "3ad6c35f-9cdd-5772-8f12-f3943d6e4702"
+diamondUuid: "79bce44f-4a0a-820c-a17b-9c83fe04a1d8"
+uuid: "99b7f9e3-8932-80cf-b0c8-975b527d321b"
+horo: 7
 typography:
   partition: result
   bondDegree: 10
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - comment
-    - law
-    - review
-  matrix:
-    - comment
-    - law
-    - review
-  backlinks:
-    - comment
-    - law
-    - review
 signatures:
-  computationUuid: "5e6425ca-2b08-8cf2-a972-f0c6cf54bb4d"
+  computationUuid: "e4aef714-7304-8a4e-bf49-ad496fb1e0a8"
   stages:
     - stage: path
       stageUuid: "c8de8a20-2028-8122-9fab-b257f5f12d8a"
@@ -48,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ad64bfed-ecc2-81b4-9efd-4724e4df441a"
     - stage: horo
-      stageUuid: "ee1f87ab-3c5e-8dca-9ea0-542b3b03099f"
+      stageUuid: "94ce9780-9caa-888f-9762-61b0949937fa"
     - stage: seal
-      stageUuid: "9589ae0a-3843-884d-8ac5-40e2cf7bb75b"
+      stageUuid: "679318fc-f523-8d7f-8898-3f244f06f159"
     - stage: uuid
-      stageUuid: "f2b36d80-65ef-8c9b-8c07-3c8cb125d258"
+      stageUuid: "bbecd86f-fa8b-8dfe-8bac-45a7486e6732"
 version: 2
 ---
 # result

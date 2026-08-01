@@ -2,107 +2,19 @@
 name: risk
 description: "Use when reasoning about risk as a medical facet of [[medical]] — vocabulary pivot to @/risk; nested not duplicated."
 atomPath: "medical/risk"
-coordinate: "medical/risk · 8/crest · fe79d964"
-contentUuid: "7b74cb40-4ef4-53f1-9b5f-2e5a723da4b7"
-diamondUuid: "0ac042bb-d8d4-81b8-ae75-836c52f10808"
-uuid: "fe79d964-4800-8f07-b6e4-7fb1f83f3c2c"
-horo: 8
-bonds:
-  in:
-    - calculator
-    - dormancy
-    - estimates
-    - estimator
-    - factor
-    - hedge
-    - incident
-    - included
-    - increases
-    - manure
-    - medical
-    - mortality
-    - registers
-    - risk
-    - score
-    - scouting
-    - share
-    - withdrawal
-    - workflow
-  out:
-    - calculator
-    - dormancy
-    - estimates
-    - estimator
-    - factor
-    - hedge
-    - incident
-    - included
-    - increases
-    - manure
-    - medical
-    - mortality
-    - registers
-    - risk
-    - score
-    - scouting
-    - share
-    - withdrawal
-    - workflow
+coordinate: "medical/risk · 2/share · 5a3e8cae"
+contentUuid: "a260bf56-7cb0-59fb-b379-a20f1007bd7d"
+diamondUuid: "27317591-b48e-8f19-b001-487757862f8d"
+uuid: "5a3e8cae-366d-8dc2-a6cb-2afb74bef66d"
+horo: 2
 typography:
   partition: medical
   bondDegree: 62
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - medical
-    - merge
-    - risk
-  matrix:
-    - calculator
-    - dormancy
-    - estimates
-    - estimator
-    - factor
-    - hedge
-    - incident
-    - included
-    - increases
-    - manure
-    - medical
-    - mortality
-    - registers
-    - risk
-    - score
-    - scouting
-    - share
-    - withdrawal
-    - workflow
-  backlinks:
-    - calculator
-    - dormancy
-    - estimates
-    - estimator
-    - factor
-    - hedge
-    - incident
-    - included
-    - increases
-    - manure
-    - medical
-    - mortality
-    - registers
-    - risk
-    - score
-    - scouting
-    - share
-    - withdrawal
-    - workflow
 signatures:
-  computationUuid: "80c3449a-2bbd-87d6-9b4c-8f440f9c1228"
+  computationUuid: "7b22b9d5-c5ef-8ee4-853f-b9520df2e297"
   stages:
     - stage: path
       stageUuid: "041c17d0-2ccd-8724-a5ca-5989aff344e5"
@@ -113,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "039cdda5-9928-8d8c-81cd-cf46718d26ef"
     - stage: horo
-      stageUuid: "f396c48d-c856-8eef-8d26-039359dae8a2"
+      stageUuid: "0dcf96e9-627a-8e55-bd23-f4e40931e821"
     - stage: seal
       stageUuid: "271f20b3-6d77-8f23-b252-dbaa1654c2c5"
     - stage: uuid
-      stageUuid: "5c89a095-1d55-85b4-b71a-e749a10e4b5e"
+      stageUuid: "49c286d3-1c54-8a14-8f44-7da89d51e83d"
 version: 2
 ---
 # medical/risk — medical facet

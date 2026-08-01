@@ -1,58 +1,35 @@
 ---
 name: attorney
 description: "Use when reasoning about attorney — Professional service: Attorney. This type is deprecated - LegalService is more inclusive and less ambiguous."
-atomPath: vocabulary/attorney
-coordinate: attorney · 5/round · eecc92b4
-contentUuid: "62be49b1-3b8b-5d4c-b27b-8669790b146e"
-diamondUuid: "cb8850e6-f6a7-8a72-bc92-3869056947b6"
-uuid: "eecc92b4-09b6-8a41-9bbe-889aa6ef7fdc"
-horo: 5
-bonds:
-  in:
-    - law
-    - person
-    - thing
-  out:
-    - law
-    - person
-    - thing
+atomPath: "vocabulary/attorney"
+coordinate: "vocabulary/attorney · 1/base · 574da223"
+contentUuid: "fe88c899-79f1-5e7e-b2e7-43062132794e"
+diamondUuid: "dc385e1f-5743-8bcb-9ca3-607e41eddaf4"
+uuid: "574da223-8475-8602-bdce-1f151c381cb7"
+horo: 1
 typography:
-  partition: attorney
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - person
-    - thing
-  matrix:
-    - law
-    - person
-    - thing
-  backlinks:
-    - law
-    - person
-    - thing
 signatures:
-  computationUuid: "73668c46-a73f-8f32-b9f2-488ef808260f"
+  computationUuid: "4e841a5c-fb27-8b24-9bde-5041a4b81792"
   stages:
     - stage: path
-      stageUuid: "49d2892e-c2cc-8e66-9088-f96ff30acda3"
+      stageUuid: "16c98cd9-7738-80fb-89b0-9c1e6507af7c"
     - stage: trinity
-      stageUuid: "5a7c6ebd-cc27-8c43-aa36-ff0e6c7af026"
+      stageUuid: "73fcf468-5fa3-84dc-b39a-b23d3ea04913"
     - stage: boundary
-      stageUuid: "06e6f910-1512-85f8-9946-58447670bc76"
+      stageUuid: "55021896-f962-8a3e-b8af-faf7551b227c"
     - stage: links
-      stageUuid: "d1b76687-be8d-8201-8049-7221b31e8dc7"
+      stageUuid: "a960157d-2bcb-890e-b531-4de34548d230"
     - stage: horo
-      stageUuid: "b4e411d0-080c-8e84-ab6c-b8cb8ea3f548"
+      stageUuid: "c134ab25-8fa8-84da-9e77-9094defd8340"
     - stage: seal
-      stageUuid: "e1fbea89-1307-8f49-b230-869a42aabbcc"
+      stageUuid: "25453856-48a3-83d7-9d96-eeb602ff921b"
     - stage: uuid
-      stageUuid: "58de7abb-8092-8401-915d-6c3d9aab4e63"
+      stageUuid: "4582f2fc-bf38-8d47-9bfc-39ac42a16bde"
 version: 2
 ---
 # attorney

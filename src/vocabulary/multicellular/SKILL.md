@@ -1,63 +1,35 @@
 ---
 name: multicellular
 description: "Use when reasoning about multicellular as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/multicellular
-coordinate: multicellular · 4/weave · 46fbe17e
-contentUuid: "27188082-396d-574c-ba0e-d2b5990d1102"
-diamondUuid: "dbd1013a-233e-8c78-91a9-1c5abd06ae3c"
-uuid: "46fbe17e-6780-8bf3-ac8a-8d211b18dcbc"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/multicellular"
+coordinate: "vocabulary/multicellular · 2/share · 6c07fd0e"
+contentUuid: "893aec45-a23a-5b28-b306-1f7e11a8e87d"
+diamondUuid: "5b4ff781-7e54-883c-9a71-e897f4d2a4c7"
+uuid: "6c07fd0e-44a8-8907-ac38-b5a99834a74e"
+horo: 2
 typography:
-  partition: multicellular
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "521d928b-ca9b-84cc-a369-ec76d68e837b"
+  computationUuid: "6ab3b798-5292-8d43-b9ba-609df13acd7e"
   stages:
     - stage: path
-      stageUuid: "4a1c2e98-6ef9-8a36-b733-5931f48f952a"
+      stageUuid: "cd714b04-f4e7-8873-b549-5acc3004e111"
     - stage: trinity
-      stageUuid: "9d97551b-0d91-8397-8880-787c604cd694"
+      stageUuid: "734b1214-e525-8a39-ac1a-a6e8381a6174"
     - stage: boundary
-      stageUuid: "fa9b5716-8ff4-885d-80f5-bceb7bb29520"
+      stageUuid: "d45d57fb-5095-8f2e-809c-cdce0d47bc66"
     - stage: links
-      stageUuid: "94df4bf4-77c3-8f61-9830-9a4d2c1acc5d"
+      stageUuid: "c0d3995c-0a19-833f-8c49-a8c41ade9b5d"
     - stage: horo
-      stageUuid: "167f1614-ecc7-8de3-935d-ac1e6118d71f"
+      stageUuid: "b6904a07-6bba-8cfd-8e20-b764039b0477"
     - stage: seal
-      stageUuid: "2b54e35c-910e-8a53-b953-3b7f3f30cb15"
+      stageUuid: "185b8861-8834-8ad3-8dfa-0735762fbb9b"
     - stage: uuid
-      stageUuid: "f6c4ef65-f1f5-8868-b203-7139cfbbadc3"
+      stageUuid: "26a62afe-0830-8856-8d67-0f33fe2a2ed2"
 version: 2
 ---
 # multicellular

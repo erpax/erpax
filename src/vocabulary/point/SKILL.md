@@ -1,78 +1,35 @@
 ---
 name: point
 description: "Use when reasoning about point as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/point
-coordinate: point · 5/round · 2712572e
-contentUuid: "85824fbc-707b-5d6d-af81-6142a60eccbc"
-diamondUuid: "16b57816-4402-8a05-a2b4-eff8a428d6d9"
-uuid: "2712572e-dd36-8543-8895-7747854b0acf"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - contact
-    - entry
-    - law
-    - merge
-    - option
-    - sti
-  out:
-    - collapse
-    - contact
-    - entry
-    - law
-    - merge
-    - option
-    - sti
+atomPath: "vocabulary/point"
+coordinate: "vocabulary/point · 2/share · 41035630"
+contentUuid: "86ee88cb-f5ea-5008-b96c-4326f0040a9c"
+diamondUuid: "14e6a01e-8b72-86fc-a7e5-fbe116e387a5"
+uuid: "41035630-fee6-88a1-97ea-4c4af7cdb528"
+horo: 2
 typography:
-  partition: point
+  partition: vocabulary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - contact
-    - entry
-    - law
-    - merge
-    - option
-    - sti
-  matrix:
-    - collapse
-    - contact
-    - entry
-    - law
-    - merge
-    - option
-    - sti
-  backlinks:
-    - collapse
-    - contact
-    - entry
-    - law
-    - merge
-    - option
-    - sti
 signatures:
-  computationUuid: "4fdcfded-50b1-89fb-bff5-314eabfa361f"
+  computationUuid: "6922581f-3039-89d1-811c-6df61a4d5a84"
   stages:
     - stage: path
-      stageUuid: "83bbb19f-1f97-8367-a22f-9fdecb05ad4c"
+      stageUuid: "0e9849db-2d0f-89bd-88b2-6b08415e576d"
     - stage: trinity
-      stageUuid: "4c82287c-6ecc-8a9c-8cd7-0788ba8e14a7"
+      stageUuid: "a7671197-9bfa-8953-8661-4efbdb371894"
     - stage: boundary
-      stageUuid: "65ad01b3-51ea-89c5-a11d-e930f7d9b5b1"
+      stageUuid: "54942492-f452-83bc-9835-3321e5f0d664"
     - stage: links
-      stageUuid: "85f4ef2e-b6d6-8b54-abfe-9b66a5b98189"
+      stageUuid: "4d549163-ed54-8aeb-8ca6-1b5fb1563ddc"
     - stage: horo
-      stageUuid: "a11ce3f8-6529-8c0a-bc48-d4265d9ec78d"
+      stageUuid: "1996f101-fb1c-886e-a8d9-c70678a7c8ce"
     - stage: seal
-      stageUuid: "fc118cfa-f955-80ed-8b70-f9b522d8272d"
+      stageUuid: "0e321e1b-510e-894e-8ffd-bb2701f3812b"
     - stage: uuid
-      stageUuid: "ce7dc379-efce-8f22-a7c8-c984621f329c"
+      stageUuid: "4cd77d52-a789-8574-9f64-48031f20e71c"
 version: 2
 ---
 # point

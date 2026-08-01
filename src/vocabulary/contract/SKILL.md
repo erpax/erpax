@@ -1,62 +1,34 @@
 ---
 name: contract
 description: Use when modelling one contract — the singular model of the contracts collection (the plural store); a legally binding agreement between parties.
-atomPath: vocabulary/contract
-coordinate: contract · 5/round · f88c4370
-contentUuid: "1a032860-2a1a-57a0-8b93-3d1a7c59bad9"
-diamondUuid: "551de4e8-6fe2-86e3-b15d-7745968b6372"
-uuid: "f88c4370-a82f-8cad-9c09-03711081c04a"
-horo: 5
-bonds:
-  in:
-    - balance
-    - contracts
-    - law
-    - legal
-  out:
-    - balance
-    - contracts
-    - law
-    - legal
+atomPath: "vocabulary/contract"
+coordinate: "vocabulary/contract · 1/base · cadbe06d"
+contentUuid: "cd065df4-6ae9-5068-8e4b-a15cce9d0fcb"
+diamondUuid: "16e70e25-3ce8-8578-9c65-6672fdce615d"
+uuid: "cadbe06d-2996-8635-b3da-197f1b6a8aac"
+horo: 1
 typography:
-  partition: contract
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - contracts
-    - law
-    - legal
-  matrix:
-    - balance
-    - contracts
-    - law
-    - legal
-  backlinks:
-    - balance
-    - contracts
-    - law
-    - legal
 signatures:
-  computationUuid: "64762b6c-d7ce-88ac-96ea-356eb5a29ed0"
+  computationUuid: "6df679f2-571b-8026-933c-973dbe2c4f55"
   stages:
     - stage: path
-      stageUuid: "9dfcabb2-b46f-895d-ae4e-ab396f4e3538"
+      stageUuid: "8b3352a7-9962-8f70-8bce-7e87c44b9ae4"
     - stage: trinity
-      stageUuid: "e8f9b902-1cbc-80fd-8436-378b0f46bdca"
+      stageUuid: "d2d1b897-5da0-89c7-aa40-6e56b1900cbc"
     - stage: boundary
-      stageUuid: "f13a0680-ad81-8bc1-9d96-f0a4badb9d94"
+      stageUuid: "b2a2d4d3-c590-8990-8202-d23c911e4260"
     - stage: links
-      stageUuid: "864e0992-3cb1-88a5-9e4d-13867fb23a0d"
+      stageUuid: "9bd42fe8-fa69-8e38-b315-5dcf07637a15"
     - stage: horo
-      stageUuid: "d6a288b9-f219-8999-a014-d739991b239f"
+      stageUuid: "f3a7d7b7-5ec9-838c-8790-793cb398c54d"
     - stage: seal
-      stageUuid: "f6af3955-64fe-86cb-bdc6-1842ac0bbf49"
+      stageUuid: "2906d14b-08b4-896e-be8e-5caaeb950113"
     - stage: uuid
-      stageUuid: "386dd87e-7889-8cc5-b009-0372da36a805"
+      stageUuid: "fd990a8c-1fa5-85a3-b471-57e3fdfaa5e5"
 version: 2
 ---
 # contract — the model of one [[contracts]] row

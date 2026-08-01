@@ -1,53 +1,26 @@
 ---
 name: header
 description: "Use when implementing or referencing `_security-headers/` — Composite HTTP security-headers module."
-atomPath: security/header
-coordinate: security/header · 4/weave · 5da1412e
-contentUuid: "fcf62da7-b67e-5fa3-a22a-cd1bc4219328"
-diamondUuid: "a3349621-307e-818b-9c02-a1d7055da17c"
-uuid: "5da1412e-1e7d-84c3-95d6-cf8bee148a42"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - security
-    - sti
-    - wp
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - wp
+atomPath: "security/header"
+coordinate: "security/header · 5/round · 62e45bff"
+contentUuid: "2bbcff35-707d-52c1-aabb-c2aa9692c831"
+diamondUuid: "7ee559e0-cb2a-8e9b-be54-04d509e5345e"
+uuid: "62e45bff-5dc3-8c6e-a8dc-03a7f3e54a1f"
+horo: 5
 typography:
   partition: security
   bondDegree: 17
-  neighbors: []
 standards:
   - "6797 hsts"
   - "OWASP-ASVS"
   - "W3C CSP-3"
+  - "W3C CSP-3`"
   - "W3C Permissions-Policy"
+  - "W3C Permissions-Policy`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - wp
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - wp
 signatures:
-  computationUuid: "f14d8f3d-5036-81b6-99e0-4b0c372bb38c"
+  computationUuid: "89131df6-25ae-856c-8c51-105ab1dbb8cf"
   stages:
     - stage: path
       stageUuid: "58b85437-450d-8dac-a4d8-2398c112c444"
@@ -58,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "1a1cccf0-6988-8e89-857f-4a484420fc9e"
     - stage: horo
-      stageUuid: "272108c0-d6ab-8e86-8eff-1379b89cfb65"
+      stageUuid: "2fe367f3-32d0-8cde-9f73-d14d417bfb0d"
     - stage: seal
       stageUuid: "889afee7-f608-84f7-8d71-ace1d215bd25"
     - stage: uuid
-      stageUuid: "2dab7afb-5a67-81ec-bdc0-fb5b3a400abf"
+      stageUuid: "3b3a8719-2073-8520-971a-b24bc66fba6e"
 version: 2
 ---
 # `_security-headers/` — Composite HTTP security-headers module

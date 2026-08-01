@@ -1,63 +1,35 @@
 ---
 name: mixtape
 description: "Use when reasoning about mixtape as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/mixtape
-coordinate: mixtape · 1/base · 8af46b1a
-contentUuid: "100a8492-2915-5011-993f-c4f40a31792a"
-diamondUuid: "15e2fbf7-b5ed-8813-88fb-d04af34a9950"
-uuid: "8af46b1a-51c7-8f65-a0f8-4ec809bc5b21"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/mixtape"
+coordinate: "vocabulary/mixtape · 5/round · 39037872"
+contentUuid: "0586ea82-480c-5b30-af49-bac63298ed5b"
+diamondUuid: "e2bf072e-fa0b-8025-adcb-bf06d513db52"
+uuid: "39037872-caec-88ff-beb7-f7e70a388b34"
+horo: 5
 typography:
-  partition: mixtape
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "f98946be-2194-81a5-b526-c04c7a1c424b"
+  computationUuid: "b1700af3-dd3f-8210-8e14-f16a9db4c3dd"
   stages:
     - stage: path
-      stageUuid: "344876a7-6dee-8a0f-853d-eaf544bb66fa"
+      stageUuid: "31012f4e-645e-8500-86ff-8e64b9bc6042"
     - stage: trinity
-      stageUuid: "7de50f6c-87ca-867d-9828-9d08022edd17"
+      stageUuid: "e3636dc2-8b0c-8bd8-8515-9a8e3d5ae6e6"
     - stage: boundary
-      stageUuid: "e42d24e4-ff25-8e79-91b3-3ea99e7ba482"
+      stageUuid: "edf859e4-9ec3-8172-addf-d76712dd2616"
     - stage: links
-      stageUuid: "8168082a-5d7f-8431-b885-0765f9238164"
+      stageUuid: "22a1e0f4-f921-8ecc-aecc-099355f377a5"
     - stage: horo
-      stageUuid: "47f6895b-4214-88ff-9b0d-00c869c9ae59"
+      stageUuid: "84baaabe-02f4-8e1d-aae6-28782623e36a"
     - stage: seal
-      stageUuid: "2a931ab1-a486-8287-8fd5-7bb1c59a5e10"
+      stageUuid: "6703456f-632e-8893-89fa-676a854371db"
     - stage: uuid
-      stageUuid: "c3eedfbc-aa29-87d1-929d-6b57164d5cc4"
+      stageUuid: "ba295563-d7f2-89e2-b3bb-8c082f923391"
 version: 2
 ---
 # mixtape

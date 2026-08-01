@@ -1,63 +1,35 @@
 ---
 name: association
 description: "Use when reasoning about association as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/association
-coordinate: association · 8/crest · bade655c
-contentUuid: "bc8a3096-6c72-5902-8012-69ea2b016252"
-diamondUuid: "5eeb4363-d543-8532-ba94-9990327f2545"
-uuid: "bade655c-7068-8fff-a793-e2092424d63b"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/association"
+coordinate: "vocabulary/association · 5/round · c6f421d8"
+contentUuid: "689286a8-7d0a-5d20-b88e-7048292b2b61"
+diamondUuid: "1f63ab2e-afc6-8a05-92ae-3494814c9948"
+uuid: "c6f421d8-86e4-801f-bcff-b19bfc0f4c1b"
+horo: 5
 typography:
-  partition: association
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "e4b457f4-36d8-80a4-a45e-2eea24f46026"
+  computationUuid: "9f5c5cf6-e4a6-8b2e-b4a5-19c1dc0d8b92"
   stages:
     - stage: path
-      stageUuid: "0109df35-39c7-85f5-8070-a79b5228f7c6"
+      stageUuid: "f4d81c64-5b72-84e6-b310-1e97e275327d"
     - stage: trinity
-      stageUuid: "5341e846-156c-85b9-b8dd-c81132e680f6"
+      stageUuid: "d45be141-230b-869b-bebd-b8cbe89085e1"
     - stage: boundary
-      stageUuid: "337026ea-a3fc-8242-8c62-70aee02b4216"
+      stageUuid: "c61e8abd-8cb7-897d-9b79-b9b6bf6e06fc"
     - stage: links
-      stageUuid: "dd55c8d1-7657-81b7-9f73-ff2649f2d721"
+      stageUuid: "09b523a7-6d6f-8a3a-8ea6-9d21621dfee7"
     - stage: horo
-      stageUuid: "4b1ce08a-a83e-813f-aaa8-375be791a57b"
+      stageUuid: "35e559e7-8eaf-84db-810a-35dfed051ccc"
     - stage: seal
-      stageUuid: "6fd98337-1767-808a-9e49-966ec3fa960f"
+      stageUuid: "1af9192b-0ec6-8e27-a628-a5dca2e7aeaa"
     - stage: uuid
-      stageUuid: "83329d46-ab3f-8521-8655-20d944a604f9"
+      stageUuid: "74061408-52e7-8f5a-a788-b86d1b436c3f"
 version: 2
 ---
 # association

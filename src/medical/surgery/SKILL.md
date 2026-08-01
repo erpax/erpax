@@ -2,52 +2,19 @@
 name: surgery
 description: "Use when reasoning about surgery as a medical facet of [[medical]] — vocabulary pivot to @/surgery; nested not duplicated."
 atomPath: "medical/surgery"
-coordinate: "medical/surgery · 2/share · 203e54c7"
-contentUuid: "5d5c1b43-6547-5090-8d91-c74cfe08a299"
-diamondUuid: "bd4ec2bf-81a0-8a2e-8793-5e197316c2ad"
-uuid: "203e54c7-e094-8c94-bcb6-81ffebd293d8"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - medical
-    - merge
-    - sti
-    - surgery
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - surgery
+coordinate: "medical/surgery · 7/descent · 75ad9e44"
+contentUuid: "536f4f6c-3b8e-59cc-a648-515631a7494b"
+diamondUuid: "3f7bc8d3-b2d7-8785-9c40-b8eaa3205f43"
+uuid: "75ad9e44-0785-81a1-92f2-4e4b7edae46f"
+horo: 7
 typography:
   partition: medical
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - medical
-    - merge
-    - surgery
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - surgery
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - surgery
 signatures:
-  computationUuid: "8ccdac85-ab5c-82c6-9dec-4fdcbcc7693b"
+  computationUuid: "d47fe593-47d5-8602-a94e-51ee835f2a18"
   stages:
     - stage: path
       stageUuid: "2fbfb64a-ad64-809a-b95f-a0adaac45d3b"
@@ -58,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "561180b7-4377-87f4-8276-769b8618d030"
     - stage: horo
-      stageUuid: "5d366184-fbaf-8576-b4b0-84457cf826d9"
+      stageUuid: "eee79a70-9774-8ad7-9dc1-ddba49fe7f9e"
     - stage: seal
       stageUuid: "44f4c181-8519-8063-ac93-cc2319404644"
     - stage: uuid
-      stageUuid: "04854e66-b972-8ebb-9daa-b3aefaf52c45"
+      stageUuid: "7e382860-5cd1-843e-a288-15106de184c4"
 version: 2
 ---
 # medical/surgery — medical facet

@@ -2,62 +2,20 @@
 name: default
 description: "Use when reasoning about defaults — nothing defines a default; the default is by architecture, derived from the content-uuid and the path, never a hardcoded fallback, because a defined default is an assumption and an assumption is entropy."
 atomPath: default
-coordinate: "default · 5/round · f56998e0"
-contentUuid: "aec23964-50d0-52e7-95e7-0d4da42b5a52"
-diamondUuid: "1cf0b752-1e84-82d9-bc35-2e449f6aa766"
-uuid: "f56998e0-d0ea-8f06-8c9f-58043c83eab0"
-horo: 5
-bonds:
-  in:
-    - collider
-    - digit
-    - law
-    - name
-    - sealed
-    - uuid
-    - value
-  out:
-    - collider
-    - digit
-    - law
-    - name
-    - sealed
-    - uuid
-    - value
+coordinate: "default · 4/weave · 68108657"
+contentUuid: "c03310ba-8549-52bd-8a36-dd2d5307a701"
+diamondUuid: "87d0aa32-b0ae-813a-b20b-d9b1814a8745"
+uuid: "68108657-5881-84fb-ba22-903af34fa293"
+horo: 4
 typography:
   partition: default
   bondDegree: 0
-  neighbors: []
 standards:
   - "BCP-47"
   - "computed-not-hardcoded · content-addressed identity (RFC 9562) · no free parameters (zero entropy)"
 bindings: []
-neighbors:
-  wikilink:
-    - collider
-    - digit
-    - law
-    - name
-    - uuid
-    - value
-  matrix:
-    - collider
-    - digit
-    - law
-    - name
-    - sealed
-    - uuid
-    - value
-  backlinks:
-    - collider
-    - digit
-    - law
-    - name
-    - sealed
-    - uuid
-    - value
 signatures:
-  computationUuid: "6fa7bb2b-5278-8e68-b4c6-9eaf10478d65"
+  computationUuid: "1d1cdec1-9d83-81ba-ac08-3fb68030d457"
   stages:
     - stage: path
       stageUuid: "c340c85e-5b4c-8efd-806f-2eb2ee73fe77"
@@ -68,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "861efd06-c433-808b-a5b2-faab459d1aad"
     - stage: horo
-      stageUuid: "900ee28b-32d0-8305-8455-d62f0f48f9f0"
+      stageUuid: "8178669d-f98a-80d9-8c8a-8e210654ecf1"
     - stage: seal
       stageUuid: "dc131036-cc7b-8d4e-8eff-39c1bfc58778"
     - stage: uuid
-      stageUuid: "28506110-8ebc-8512-818d-28094474dd84"
+      stageUuid: "495b4c8c-fa36-826c-886b-f776f64bf2ff"
 version: 2
 ---
 # default — nothing defines a default; the default is by architecture

@@ -1,80 +1,34 @@
 ---
 name: churn
 description: "Use when measuring customer retention/attrition — monthly/annual churn %, cohort analysis, at-risk indicators, retention drivers."
-atomPath: vocabulary/churn
-coordinate: churn · 8/crest · 0ab90dca
-contentUuid: "0c5e2fdb-0c61-5930-b7c7-ed81c89fc574"
-diamondUuid: "40e12eb3-7a01-8cc1-9c48-4f69363dae2b"
-uuid: "0ab90dca-1515-8519-beff-c4f662e26048"
-horo: 8
-bonds:
-  in:
-    - cohort
-    - customers
-    - forecast
-    - habit
-    - law
-    - retention
-    - revenue
-    - subscriptions
-  out:
-    - cohort
-    - customers
-    - forecast
-    - habit
-    - law
-    - retention
-    - revenue
-    - subscriptions
+atomPath: "vocabulary/churn"
+coordinate: "vocabulary/churn · 2/share · 6dffe103"
+contentUuid: "4640de4e-db97-5344-b0dc-c0e78d3978e7"
+diamondUuid: "7c3fe022-9ccc-8bf3-a4ca-55f004e955f5"
+uuid: "6dffe103-b1aa-8872-9e1a-3325b192db20"
+horo: 2
 typography:
-  partition: churn
+  partition: vocabulary
   bondDegree: 24
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - cohort
-    - customers
-    - forecast
-    - law
-    - revenue
-    - subscriptions
-  matrix:
-    - cohort
-    - customers
-    - forecast
-    - habit
-    - law
-    - retention
-    - revenue
-    - subscriptions
-  backlinks:
-    - cohort
-    - customers
-    - forecast
-    - habit
-    - law
-    - retention
-    - revenue
-    - subscriptions
 signatures:
-  computationUuid: "72e7d1ca-aa84-8760-9311-ed06da61597d"
+  computationUuid: "31b0ae9a-f250-8732-b159-d71d1f563d6b"
   stages:
     - stage: path
-      stageUuid: "e1efda69-f8d5-87de-98b9-4b4dd3e54877"
+      stageUuid: "afef8cc3-16d7-84d5-9b62-6064cb290e37"
     - stage: trinity
-      stageUuid: "2a234f21-0eb1-830f-be21-f8311b89d401"
+      stageUuid: "69c6e560-624b-8c56-98f7-0b5416d2fec6"
     - stage: boundary
-      stageUuid: "8df1e610-c6e9-8eee-bda1-94d3cdffeede"
+      stageUuid: "9379113a-a8eb-87ce-b7e9-ef987545947f"
     - stage: links
-      stageUuid: "e2281e65-fc94-8ee5-a06c-025b6c39f05a"
+      stageUuid: "2c95de05-c7e6-8d68-a14f-eedd228447a3"
     - stage: horo
-      stageUuid: "ff22ed67-f883-8665-b19e-c05d2bc221fa"
+      stageUuid: "05d17f75-4dde-8a02-9e43-b44b39b55cca"
     - stage: seal
-      stageUuid: "b86231ad-ab0b-80ae-8706-0a7f8eca6a09"
+      stageUuid: "4bdc54b8-cd12-8d96-b43f-6737b676e0f4"
     - stage: uuid
-      stageUuid: "d1f62ae3-18e3-83d6-af59-45cfaa8d0027"
+      stageUuid: "8f28bae9-137c-835e-ae26-ed9b5a1f2a5f"
 version: 2
 ---
 # churn

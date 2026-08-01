@@ -1,93 +1,35 @@
 ---
 name: contact
 description: "Use when reasoning about contact as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/contact
-coordinate: contact · 7/descent · 01ede04f
-contentUuid: "a0291106-8038-5892-9a98-2f9ecd18e822"
-diamondUuid: "86c22d93-80fe-899e-8ec2-c4e18b25813e"
-uuid: "01ede04f-6597-83cc-8472-1d57d3d177c3"
-horo: 7
-bonds:
-  in:
-    - application
-    - collapse
-    - law
-    - merge
-    - option
-    - page
-    - point
-    - points
-    - sti
-    - type
-  out:
-    - application
-    - collapse
-    - law
-    - merge
-    - option
-    - page
-    - point
-    - points
-    - sti
-    - type
+atomPath: "vocabulary/contact"
+coordinate: "vocabulary/contact · 5/round · 8abfcfea"
+contentUuid: "2f4175fc-3980-5d10-915f-5c161d683649"
+diamondUuid: "744aee97-3479-81ec-9c06-2131aab87e6f"
+uuid: "8abfcfea-4176-85ba-8bbc-8591250a959e"
+horo: 5
 typography:
-  partition: contact
+  partition: vocabulary
   bondDegree: 35
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - application
-    - collapse
-    - law
-    - merge
-    - option
-    - page
-    - point
-    - points
-    - sti
-    - type
-  matrix:
-    - application
-    - collapse
-    - law
-    - merge
-    - option
-    - page
-    - point
-    - points
-    - sti
-    - type
-  backlinks:
-    - application
-    - collapse
-    - law
-    - merge
-    - option
-    - page
-    - point
-    - points
-    - sti
-    - type
 signatures:
-  computationUuid: "df8f2a29-66a7-8a3f-af93-ffeac4a748a6"
+  computationUuid: "dbc00dc1-ed0d-8fc7-b736-05feb274268f"
   stages:
     - stage: path
-      stageUuid: "04ea11a1-fb0f-8c37-979b-1c0f09e76775"
+      stageUuid: "8b0188ab-7b69-860f-944d-934e3e37d624"
     - stage: trinity
-      stageUuid: "be09c53b-4eb3-83cf-8789-99eaef1d5e6e"
+      stageUuid: "86241a64-217e-8f27-a0ac-951fd2085546"
     - stage: boundary
-      stageUuid: "16262a4b-ca12-8763-a040-798eaade5acd"
+      stageUuid: "ace79f49-f886-8cee-adee-49f5f0d40995"
     - stage: links
-      stageUuid: "0eabe2e4-db72-8fca-869e-7b1e12761b04"
+      stageUuid: "4f79c8d5-b04e-8e7c-9f76-712a9544db0c"
     - stage: horo
-      stageUuid: "6008d527-1760-8e60-bfb3-6697555f67c1"
+      stageUuid: "e42ebd69-d00c-8382-b190-7fa7df2722fb"
     - stage: seal
-      stageUuid: "9c60bee7-cf11-8ba9-8bb3-ab86ccbba4e1"
+      stageUuid: "e5f87380-2d8d-8f36-b1ba-003258971d51"
     - stage: uuid
-      stageUuid: "2733cca4-d9b5-83c4-84d2-32c02575ae6f"
+      stageUuid: "3aa4b0bf-b16e-863d-8b81-a1e449c0343c"
 version: 2
 ---
 # contact

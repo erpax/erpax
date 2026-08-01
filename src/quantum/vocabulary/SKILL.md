@@ -1,84 +1,19 @@
 ---
 name: vocabulary
 description: "Use when reasoning about the vocabulary as the meaning singularity — every atom's words ground in the shared vocabulary, so it has infinite gravity and pulls all atoms into one shared meaning-space."
-atomPath: quantum/vocabulary
-coordinate: quantum/vocabulary · 4/weave · 13c7b568
-contentUuid: "592a1bae-0518-5783-bba5-db5158d9db35"
-diamondUuid: "ad21e9e8-74ec-8a68-a111-73cfcb4a9771"
-uuid: "13c7b568-670f-86a1-a3f4-006f7e02f7e9"
-horo: 4
-bonds:
-  in:
-    - atom
-    - collapse
-    - concatenate
-    - entropy
-    - matrix
-    - merge
-    - quantum
-    - standards
-    - tamper
-    - trinity
-    - unavoidable
-    - vocabulary
-    - word
-  out:
-    - atom
-    - collapse
-    - concatenate
-    - entropy
-    - matrix
-    - merge
-    - standards
-    - tamper
-    - trinity
-    - unavoidable
-    - vocabulary
-    - word
+atomPath: "quantum/vocabulary"
+coordinate: "quantum/vocabulary · 7/descent · d680278d"
+contentUuid: "24315cc2-0af1-5419-8caa-7d5ea3d0fb73"
+diamondUuid: "8dccaa4a-4333-83ad-8f51-f843f271a398"
+uuid: "d680278d-aca7-8742-85ac-b250794d8e13"
+horo: 7
 typography:
   partition: quantum
   bondDegree: 44
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - dry
-    - gravity
-    - law
-    - matrix
-    - merge
-    - quantum
-    - singularity
-    - vocabulary
-  matrix:
-    - atom
-    - collapse
-    - concatenate
-    - entropy
-    - matrix
-    - merge
-    - standards
-    - tamper
-    - trinity
-    - unavoidable
-    - vocabulary
-    - word
-  backlinks:
-    - atom
-    - collapse
-    - concatenate
-    - entropy
-    - matrix
-    - merge
-    - standards
-    - tamper
-    - trinity
-    - unavoidable
-    - vocabulary
-    - word
 signatures:
-  computationUuid: "e8c0389b-fa6b-82a7-9de3-cc7bad23152d"
+  computationUuid: "ca3c9b79-cca6-8497-acbf-32182230c873"
   stages:
     - stage: path
       stageUuid: "69d5d59f-a293-8d42-97cf-3f22a579001b"
@@ -89,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "091c8815-4fc3-88ad-b0c8-2cd3dc44465d"
     - stage: horo
-      stageUuid: "0dbb0200-acb4-8c9e-9e7e-b31b661dfd0b"
+      stageUuid: "8b7ab65f-7ef4-83e9-a7bc-0c99b0da2e48"
     - stage: seal
       stageUuid: "7ddac279-5f3c-89b3-8f3a-9d4893ea49b9"
     - stage: uuid
-      stageUuid: "8007a3d6-fd4e-80e4-a163-ad432fd1dd3b"
+      stageUuid: "4a44dcfe-c8bb-8359-9377-c26f8c2dff98"
 quantum:
   superposition:
     - atom
@@ -118,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "e8c0389b-fa6b-82a7-9de3-cc7bad23152d"
-    contentUuid: "592a1bae-0518-5783-bba5-db5158d9db35"
+    computationUuid: "ca3c9b79-cca6-8497-acbf-32182230c873"
+    contentUuid: "24315cc2-0af1-5419-8caa-7d5ea3d0fb73"
 version: 2
 ---
 # quantum/vocabulary — the meaning singularity (infinite gravity)
@@ -134,4 +69,4 @@ Matter-twin: `src/quantum/vocabulary/index.ts` (`INFINITE_GRAVITY` · `pulls` ·
 
 @audit the pull is computed over the live matrix + vocabulary; never hand-asserted
 
-<sub>content-uuid `592a1bae-0518-5783-bba5-db5158d9db35` · account `quantum/vocabulary` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `24315cc2-0af1-5419-8caa-7d5ea3d0fb73` · account `quantum/vocabulary` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -1,102 +1,34 @@
 ---
 name: lactation
 description: "Use when modelling the dairy production phase — lactation, the milk-producing interval of a dairy female between parturition and dry-off, with its yield curve, parity (lactation number), and the dry period before the next cycle. The per-animal dairy season; milk is the agricultural produce realized at each milking (harvest)."
-atomPath: vocabulary/lactation
-coordinate: lactation · 1/base · fef24a1f
-contentUuid: "de27eb85-e704-5ded-b932-b7926e4c79c1"
-diamondUuid: "9aa752bf-0453-8bcf-b278-8ace073ea85c"
-uuid: "fef24a1f-88ed-8874-abbb-bce06bc9a6ce"
-horo: 1
-bonds:
-  in:
-    - animal
-    - assets
-    - breed
-    - grade
-    - harvest
-    - items
-    - law
-    - livestock
-    - measure
-    - season
-    - withdrawal
-    - yield
-  out:
-    - animal
-    - assets
-    - breed
-    - grade
-    - harvest
-    - items
-    - law
-    - livestock
-    - measure
-    - season
-    - withdrawal
-    - yield
+atomPath: "vocabulary/lactation"
+coordinate: "vocabulary/lactation · 8/crest · 63ac63cf"
+contentUuid: "ffdd3201-d648-5b82-824a-d0fb7b77ca17"
+diamondUuid: "b228200b-881d-89a7-9302-5eddf6a6447c"
+uuid: "63ac63cf-4a7c-82d9-9a81-980877108edb"
+horo: 8
 typography:
-  partition: lactation
+  partition: vocabulary
   bondDegree: 39
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - animal
-    - assets
-    - breed
-    - grade
-    - harvest
-    - items
-    - law
-    - livestock
-    - measure
-    - season
-    - withdrawal
-    - yield
-  matrix:
-    - animal
-    - assets
-    - breed
-    - grade
-    - harvest
-    - items
-    - law
-    - livestock
-    - measure
-    - season
-    - withdrawal
-    - yield
-  backlinks:
-    - animal
-    - assets
-    - breed
-    - grade
-    - harvest
-    - items
-    - law
-    - livestock
-    - measure
-    - season
-    - withdrawal
-    - yield
 signatures:
-  computationUuid: "4d69b8a8-652a-87f3-81b2-80ec95d6a3e8"
+  computationUuid: "cfe1c08c-6043-8539-8808-0182113140bd"
   stages:
     - stage: path
-      stageUuid: "4780032c-5a36-847f-a8ff-9d8d5c7674fb"
+      stageUuid: "39ab0254-59ef-8958-983e-f3c06fee473f"
     - stage: trinity
-      stageUuid: "c8507e25-8983-8e6e-b273-53024e3abfaf"
+      stageUuid: "c1142103-93a4-8f38-849f-6ff8288d6bfb"
     - stage: boundary
-      stageUuid: "22022086-66d3-8af7-a5bf-0b5647ef6ffd"
+      stageUuid: "1baf997e-3432-8b79-8cef-7459dd908273"
     - stage: links
-      stageUuid: "c2c17468-725a-89f7-937e-4cfb553b3f79"
+      stageUuid: "11de8293-5482-8adc-ad86-3814a280207b"
     - stage: horo
-      stageUuid: "e1230588-cac6-88cf-bfac-62045c4d70d8"
+      stageUuid: "f44ff363-8906-837b-a077-78bd8a91b63a"
     - stage: seal
-      stageUuid: "29014fcb-71af-841b-95c7-e7a5eca2c19f"
+      stageUuid: "c38e3401-9ae5-80b9-a279-397a354df373"
     - stage: uuid
-      stageUuid: "42c1ba71-f112-8de1-8a2d-968054a0eb86"
+      stageUuid: "498f525c-1b27-82e7-bc7c-79f483d420d9"
 version: 2
 ---
 # lactation — the dairy production phase

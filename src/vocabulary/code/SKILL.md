@@ -1,183 +1,34 @@
 ---
 name: code
 description: "Use when master-data needs a unique short code — accounts, products, machines, teams, categories. The CodeConcern field-factory; code derived from name when absent; code is the human key, content-uuid the machine key."
-atomPath: vocabulary/code
-coordinate: code · 7/descent · 6f079482
-contentUuid: "a347085a-8cfc-5525-996f-85e81d7b3186"
-diamondUuid: "7e8ab448-a216-88ef-b896-8bbb9c3b9dc1"
-uuid: "6f079482-c2ca-8812-9c87-9c73736192ee"
+atomPath: "vocabulary/code"
+coordinate: "vocabulary/code · 7/descent · 60dc572f"
+contentUuid: "dc90363b-498b-55a4-b96f-0eaf47e37fd7"
+diamondUuid: "6ee3309d-e6da-8713-84fa-3ccd6d4a5686"
+uuid: "60dc572f-8a75-86bc-8345-c86a18d0ab42"
 horo: 7
-bonds:
-  in:
-    - account
-    - accounting
-    - acriss
-    - branch
-    - category
-    - cheat
-    - collapse
-    - course
-    - derive
-    - error
-    - fields
-    - generate
-    - has
-    - hooks
-    - iata
-    - icao
-    - identity
-    - iso
-    - isrc
-    - iswc
-    - law
-    - lei
-    - medical
-    - postal
-    - prefix
-    - range
-    - repository
-    - sample
-    - seed
-    - set
-    - software
-    - specification
-    - term
-    - unit
-  out:
-    - account
-    - accounting
-    - acriss
-    - branch
-    - category
-    - cheat
-    - collapse
-    - course
-    - derive
-    - error
-    - fields
-    - generate
-    - has
-    - hooks
-    - iata
-    - icao
-    - identity
-    - iso
-    - isrc
-    - iswc
-    - law
-    - lei
-    - medical
-    - postal
-    - prefix
-    - range
-    - repository
-    - sample
-    - seed
-    - set
-    - software
-    - specification
-    - term
-    - unit
 typography:
-  partition: code
-  bondDegree: 103
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 104
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - fields
-    - hooks
-    - identity
-    - law
-  matrix:
-    - account
-    - accounting
-    - acriss
-    - branch
-    - category
-    - cheat
-    - collapse
-    - course
-    - derive
-    - error
-    - fields
-    - generate
-    - has
-    - hooks
-    - iata
-    - icao
-    - identity
-    - iso
-    - isrc
-    - iswc
-    - law
-    - lei
-    - medical
-    - postal
-    - prefix
-    - range
-    - repository
-    - sample
-    - seed
-    - set
-    - software
-    - specification
-    - term
-    - unit
-  backlinks:
-    - account
-    - accounting
-    - acriss
-    - branch
-    - category
-    - cheat
-    - collapse
-    - course
-    - derive
-    - error
-    - fields
-    - generate
-    - has
-    - hooks
-    - iata
-    - icao
-    - identity
-    - iso
-    - isrc
-    - iswc
-    - law
-    - lei
-    - medical
-    - postal
-    - prefix
-    - range
-    - repository
-    - sample
-    - seed
-    - set
-    - software
-    - specification
-    - term
-    - unit
 signatures:
-  computationUuid: "01358ec6-c6a5-8d88-ac2e-4024e82e4e13"
+  computationUuid: "5a93f855-ffda-8100-9604-50f1d19d13c7"
   stages:
     - stage: path
-      stageUuid: "2beda239-8dbb-81a3-b69d-ff391ebafdad"
+      stageUuid: "81c8167f-d6a5-868d-8ffe-a7fd07876781"
     - stage: trinity
-      stageUuid: "2905c147-2ad0-8c46-89c8-ed4239420647"
+      stageUuid: "49297401-3320-8517-ab60-b0e329140829"
     - stage: boundary
-      stageUuid: "a4f813e6-7390-8b7e-95e7-7b21e2ba1d5e"
+      stageUuid: "197e0931-fb4d-8976-9168-e53b67f490b1"
     - stage: links
-      stageUuid: "781a20d7-801a-8089-a360-116b68c56899"
+      stageUuid: "da6be5aa-2f5b-8bd6-8515-ae88f91cd8f5"
     - stage: horo
-      stageUuid: "d0c83865-1456-8bd1-9d89-2c8a590d3c3f"
+      stageUuid: "df13cfb2-512e-8100-9d2c-557ecce463ca"
     - stage: seal
-      stageUuid: "045581e7-71ef-89f2-ac1d-bc61b57786e0"
+      stageUuid: "ca31ea5d-c602-8427-b8da-e5f164794c74"
     - stage: uuid
-      stageUuid: "159e9d4d-9a33-8196-b929-d4dd29c508c4"
+      stageUuid: "a625291f-968a-8238-a7df-9815a404ef03"
 version: 2
 ---
 # code — the master-data human key

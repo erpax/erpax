@@ -1,62 +1,34 @@
 ---
 name: estimate
 description: Use when modelling one estimate — the singular model of the estimates collection (the plural store); a projected figure issued before the actual is known.
-atomPath: vocabulary/estimate
-coordinate: estimate · 8/crest · 55a9d0a6
-contentUuid: "26b7f3c6-2cbd-50a3-8edf-6506e6c1f932"
-diamondUuid: "2cecac05-b8a8-802f-aef8-adf4645cedcd"
-uuid: "55a9d0a6-89dd-8ced-a007-92ac6b374f02"
+atomPath: "vocabulary/estimate"
+coordinate: "vocabulary/estimate · 8/crest · 0ff796a4"
+contentUuid: "4fd3900d-5d0f-55c1-bde1-85c46ff85dcb"
+diamondUuid: "6261b63b-c549-8259-a96b-8c8bec9201ce"
+uuid: "0ff796a4-2979-850c-b0dc-e0399e2c499a"
 horo: 8
-bonds:
-  in:
-    - balance
-    - estimates
-    - forecast
-    - law
-  out:
-    - balance
-    - estimates
-    - forecast
-    - law
 typography:
-  partition: estimate
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - estimates
-    - forecast
-    - law
-  matrix:
-    - balance
-    - estimates
-    - forecast
-    - law
-  backlinks:
-    - balance
-    - estimates
-    - forecast
-    - law
 signatures:
-  computationUuid: "8b248685-a85f-8da3-8e28-a7ee0cf9af0d"
+  computationUuid: "7a94b6f0-5a56-8b44-8d95-1ddab5804526"
   stages:
     - stage: path
-      stageUuid: "3d27fdf3-be30-8a75-b632-03fdfc53e9b7"
+      stageUuid: "a07cad24-dbe1-887d-bc75-35096d928554"
     - stage: trinity
-      stageUuid: "0f373daf-40b4-80dc-af71-f1d123c4bfab"
+      stageUuid: "5e8ee2e4-9bd9-8732-b052-5ec97b3f0813"
     - stage: boundary
-      stageUuid: "bf3084d2-32d0-8f55-8a94-9943f9b35c64"
+      stageUuid: "225f86ad-47dc-811d-9ad1-ce290f99740d"
     - stage: links
-      stageUuid: "50ad4af0-84c4-8e1f-ac32-45d796a933a4"
+      stageUuid: "32e301f8-8830-86e2-8e86-e556303666e4"
     - stage: horo
-      stageUuid: "24374bee-682e-80c6-8011-993789242927"
+      stageUuid: "efbb6557-a51e-874a-b78b-24d34a56988c"
     - stage: seal
-      stageUuid: "a7890803-096d-8c3a-b731-9c59de65c0fb"
+      stageUuid: "05910b09-5368-8d26-90dc-582dd867c3cc"
     - stage: uuid
-      stageUuid: "e3d149ac-cd77-857e-8183-1225025ccaa1"
+      stageUuid: "7a78e484-5901-8128-a27f-2a2c65fc0aac"
 version: 2
 ---
 # estimate — the model of one [[estimates]] row

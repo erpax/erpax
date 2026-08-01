@@ -1,63 +1,35 @@
 ---
 name: lnid
 description: "Use when reasoning about lnid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/lnid
-coordinate: lnid · 4/weave · aab9061f
-contentUuid: "ee6fe06a-5f5b-5b17-950b-217308577eb5"
-diamondUuid: "3d99c97e-c311-885e-b223-6c5dbd3bec66"
-uuid: "aab9061f-49ca-803c-a57a-bf5ddc4bf009"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/lnid"
+coordinate: "vocabulary/lnid · 8/crest · 4929b483"
+contentUuid: "ce6b7d84-3feb-5fc2-905c-6c811c015512"
+diamondUuid: "9c1ed7d2-cafc-8d97-8964-464d723bd26c"
+uuid: "4929b483-587e-8f41-8ae7-4469f2254cd1"
+horo: 8
 typography:
-  partition: lnid
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "2a257e20-c81e-8791-9478-42725dd36c9c"
+  computationUuid: "0000b352-8059-854d-a498-74e160eb6779"
   stages:
     - stage: path
-      stageUuid: "6e4a0fb5-cb4c-8aec-a825-d6ad5e19b027"
+      stageUuid: "b2f3048e-8a40-8181-bd3b-51f9c7794052"
     - stage: trinity
-      stageUuid: "c8a740f0-4818-83cf-ad5f-d27219879846"
+      stageUuid: "db3f79c7-f094-87be-a7cd-fee09687ec3a"
     - stage: boundary
-      stageUuid: "6673ed38-6672-83f9-afb8-90ea5fb5f831"
+      stageUuid: "d95d9e4f-46ba-80cd-b537-fb66c162c95d"
     - stage: links
-      stageUuid: "c8c75015-20cd-807f-8811-079e28425401"
+      stageUuid: "48d4a462-db15-8214-9d85-53670e7f5619"
     - stage: horo
-      stageUuid: "649cedf1-2484-8b5e-84cc-1b9860203ecb"
+      stageUuid: "641e407a-4ea5-8c26-b927-fe9a1718c1cb"
     - stage: seal
-      stageUuid: "70f3ba20-01b7-86a4-b09b-1b329220f328"
+      stageUuid: "34ffc310-3c99-8ff7-96b3-a213ef688984"
     - stage: uuid
-      stageUuid: "6c3e5d61-76c4-8405-b0a6-b7fb5b0ff5af"
+      stageUuid: "a6796619-d1c9-85d3-841d-31089f8197c5"
 version: 2
 ---
 # lnid

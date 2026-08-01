@@ -1,68 +1,35 @@
 ---
 name: arrive
 description: "Use when reasoning about arrive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/arrive
-coordinate: arrive · 1/base · 23dead65
-contentUuid: "74265d34-203f-5b19-afeb-9c04104a7df7"
-diamondUuid: "ec01ab55-9ea9-875d-9792-1dfcba868315"
-uuid: "23dead65-0eed-8e32-996c-2f08e0db6b86"
+atomPath: "vocabulary/arrive"
+coordinate: "vocabulary/arrive · 1/base · 25124788"
+contentUuid: "385b5ea8-c432-5790-aea3-2d6f0fba4d4b"
+diamondUuid: "86fcd1e9-5d92-8fef-bcd6-f74b843708af"
+uuid: "25124788-14b3-8124-84a9-5fc9a14f335e"
 horo: 1
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: arrive
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "85125bd0-4df7-8277-9e7f-4ecdba5b19c6"
+  computationUuid: "825fbf60-2f2d-8f33-8587-1a46050d66fe"
   stages:
     - stage: path
-      stageUuid: "5d847343-8ee9-8638-bb70-33668e341bb5"
+      stageUuid: "41510400-1966-8bab-8f7f-575d91cd92ae"
     - stage: trinity
-      stageUuid: "0def55f8-0576-886c-87eb-d03d0a2d1eff"
+      stageUuid: "ff4d23b8-8fb2-87c6-84dd-52382cc31766"
     - stage: boundary
-      stageUuid: "e3bff9ae-091c-8a19-8994-3841ad9dd515"
+      stageUuid: "99a80025-2aaf-8fc5-93c1-585cf93f3833"
     - stage: links
-      stageUuid: "0a2e789a-3385-80bf-b0e0-703c6a730166"
+      stageUuid: "cf03e5df-34f7-8de9-85d1-bf0d86644de8"
     - stage: horo
-      stageUuid: "f9721c81-3ad1-8e81-b124-2ab1509cdc4b"
+      stageUuid: "e2b8b90f-5708-8281-8b87-27247861fa12"
     - stage: seal
-      stageUuid: "b22aa777-c59d-82ee-b49a-dcc9d4c5a05c"
+      stageUuid: "6eec44a7-8fb5-8940-9fd8-d40fccb837a8"
     - stage: uuid
-      stageUuid: "5729b309-1715-868d-ba48-b0d6984e79d4"
+      stageUuid: "0e5b915b-4c90-843e-b683-7d5a0e61a46d"
 version: 2
 ---
 # arrive

@@ -1,58 +1,35 @@
 ---
 name: permit
 description: "Use when reasoning about permit — A permit issued by an organization, e.g. a parking pass."
-atomPath: vocabulary/permit
-coordinate: permit · 4/weave · 9a2964fe
-contentUuid: "9ab8dbfe-cb2a-50fe-bd5d-bb5a27384b8c"
-diamondUuid: "62b925d4-a29b-8dbe-bee8-060c136b2a2f"
-uuid: "9a2964fe-12ad-8127-8db3-522e11be5138"
-horo: 4
-bonds:
-  in:
-    - audience
-    - government
-    - law
-  out:
-    - audience
-    - government
-    - law
+atomPath: "vocabulary/permit"
+coordinate: "vocabulary/permit · 1/base · c4b49531"
+contentUuid: "daf67fc9-8b94-5f0c-a940-4afe68c7da7f"
+diamondUuid: "49a10feb-f5d3-80fd-8734-f8c20d615322"
+uuid: "c4b49531-8aa8-8216-8ac9-c31250b7cc73"
+horo: 1
 typography:
-  partition: permit
-  bondDegree: 11
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 13
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - audience
-    - government
-    - law
-  matrix:
-    - audience
-    - government
-    - law
-  backlinks:
-    - audience
-    - government
-    - law
 signatures:
-  computationUuid: "ec97c0b7-4a90-8496-bc3c-6d81820ad48a"
+  computationUuid: "cc0e383e-de6f-8326-8f56-17574027a62b"
   stages:
     - stage: path
-      stageUuid: "f7673534-18cb-8f74-a4ec-97392f46f2e1"
+      stageUuid: "4ee8c474-4630-8b4e-9cea-85e1d93da31d"
     - stage: trinity
-      stageUuid: "b2b36a41-aabc-8a66-ad08-05b07ffc1400"
+      stageUuid: "cc82f808-5907-88b2-b9cb-9b6d21bb20e8"
     - stage: boundary
-      stageUuid: "c76b8909-26bf-8494-aec5-5df0f0c334e0"
+      stageUuid: "2065a03e-bc93-85da-a244-63025cbe6ff2"
     - stage: links
-      stageUuid: "988627d0-f7ed-8414-b674-f40eb8e8756c"
+      stageUuid: "98885d68-1bb7-861f-929b-91004ddb0c90"
     - stage: horo
-      stageUuid: "c25063bc-c069-85d9-acbf-bd794873feee"
+      stageUuid: "1faf6cb8-fb6f-8525-81b7-073924a9626f"
     - stage: seal
-      stageUuid: "51514b6e-ac51-8f54-b445-88de1ab4c041"
+      stageUuid: "25122c01-3da2-8f28-83dc-c8a16f2414b7"
     - stage: uuid
-      stageUuid: "fdbb4e30-5a58-8f66-9f78-7b044d0aa4cd"
+      stageUuid: "f19cbb8c-93d8-84e6-be18-aa34b352a5ef"
 version: 2
 ---
 # permit

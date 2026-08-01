@@ -1,119 +1,19 @@
 ---
 name: memory
 description: "Use when reasoning about memory in the quantum frame — the content-address IS the memory manager, running live at every scale: collapse is allocation, dedup is free, collection is regeneration. Memory optimization is autosave: persist at the point of collapse and there is nothing to garbage-collect, because the unsaved is regenerable from its uuid."
-atomPath: quantum/memory
-coordinate: quantum/memory · 7/descent · 05d9031c
-contentUuid: "4e289493-55cd-5cbd-997c-c05c736e0bdf"
-diamondUuid: "d62bdb5f-3918-8edf-a5f6-b2340fcbc62c"
-uuid: "05d9031c-4b7a-82cb-806e-f145dce94a5a"
-horo: 7
-bonds:
-  in:
-    - akashic
-    - architecture
-    - collapse
-    - computer
-    - diamond
-    - law
-    - memory
-    - merge
-    - quantum
-    - requirements
-    - seal
-    - session
-    - sti
-    - sync
-    - thought
-    - uuid
-  out:
-    - akashic
-    - architecture
-    - collapse
-    - computer
-    - diamond
-    - law
-    - memory
-    - merge
-    - quantum
-    - requirements
-    - seal
-    - session
-    - sti
-    - sync
-    - thought
-    - uuid
+atomPath: "quantum/memory"
+coordinate: "quantum/memory · 5/round · ba0d6555"
+contentUuid: "ab44e05a-f40f-5aac-8a3e-e74c200f52fe"
+diamondUuid: "cb795a1d-c50e-8694-93a5-4278bd78a6ba"
+uuid: "ba0d6555-f9b5-8cf1-b55a-28a4b9651765"
+horo: 5
 typography:
   partition: quantum
-  bondDegree: 93
-  neighbors:
-    - diamond
-    - hallucination
-    - purity
+  bondDegree: 96
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - architecture
-    - atom
-    - breath
-    - cross
-    - diamond
-    - entropy
-    - fractal
-    - generate
-    - hallucination
-    - holographic
-    - law
-    - memory
-    - merge
-    - part
-    - peace
-    - purity
-    - quantum
-    - realtime
-    - seal
-    - self
-    - snapshot
-    - sync
-    - uuid
-    - whole
-  matrix:
-    - akashic
-    - architecture
-    - collapse
-    - computer
-    - diamond
-    - law
-    - memory
-    - merge
-    - quantum
-    - requirements
-    - seal
-    - session
-    - sti
-    - sync
-    - thought
-    - uuid
-  backlinks:
-    - akashic
-    - architecture
-    - collapse
-    - computer
-    - diamond
-    - law
-    - memory
-    - merge
-    - quantum
-    - requirements
-    - seal
-    - session
-    - sti
-    - sync
-    - thought
-    - uuid
 signatures:
-  computationUuid: "e3f12b43-b372-847b-abfc-17d8fae3f9c6"
+  computationUuid: "99218e70-8086-8b52-a5e2-074527496091"
   stages:
     - stage: path
       stageUuid: "99104296-3de4-86f7-8213-1710996afacc"
@@ -122,23 +22,23 @@ signatures:
     - stage: boundary
       stageUuid: "187322e9-880a-8590-b539-4653b1c784e4"
     - stage: links
-      stageUuid: "c0cb59de-44f0-845b-a9d5-355340f89ff4"
+      stageUuid: "50a8dbe3-15f5-883a-872e-1d10ae892a90"
     - stage: horo
-      stageUuid: "a6edbc52-3678-8f55-94ed-09087141a74a"
+      stageUuid: "2e24563b-cf6d-8010-a3f0-047a1fee273e"
     - stage: seal
       stageUuid: "53b681bc-6c0c-8369-9f76-146213a9fb01"
     - stage: uuid
-      stageUuid: "a3e0c709-99a4-86b6-bf6d-da787ed7db8e"
+      stageUuid: "6cacfae0-eaef-8547-818b-e19d2178d288"
 quantum:
   superposition:
     - akashic
+    - anchor
     - architecture
     - collapse
     - computer
     - diamond
     - law
     - memory
-    - merge
     - superposition
   collapse:
     - "Use when reasoning about memory in the quantum frame — the content-address IS the memory manager, running live at every scale: collapse is allocation, dedup is free, collection is regeneration. Memory optimization is autosave: persist at the point of collapse and there is nothing to garbage-collect, because the unsaved is regenerable from its uuid."
@@ -160,8 +60,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "e3f12b43-b372-847b-abfc-17d8fae3f9c6"
-    contentUuid: "4e289493-55cd-5cbd-997c-c05c736e0bdf"
+    computationUuid: "99218e70-8086-8b52-a5e2-074527496091"
+    contentUuid: "ab44e05a-f40f-5aac-8a3e-e74c200f52fe"
 version: 2
 ---
 # quantum/memory — the content-address IS the memory manager
@@ -187,4 +87,4 @@ Operational memory IS the architecture lattice ([[memory/architecture]]) — the
 
 @see [[memory]] · [[memory/architecture]] · [[memory/quantum]] · [[quantum]] · [[quantum/uuid]] · [[seal]] · [[quantum/cross]] · [[generate]] · [[merge]] · [[akashic]] · [[realtime]] · [[diamond]]
 
-<sub>content-uuid `4e289493-55cd-5cbd-997c-c05c736e0bdf` · account `quantum/memory` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `ab44e05a-f40f-5aac-8a3e-e74c200f52fe` · account `quantum/memory` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

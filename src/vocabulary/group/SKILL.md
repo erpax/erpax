@@ -1,118 +1,35 @@
 ---
 name: group
 description: "Use when reasoning about group as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/group
-coordinate: group · 8/crest · 184888d5
-contentUuid: "0c37b317-1ab7-5e45-86ff-882801bb4a76"
-diamondUuid: "3cdb91e5-d6ff-8acd-8392-5d440d4b7f6b"
-uuid: "184888d5-f1a7-85c9-a0ab-c7f994a808e3"
-horo: 8
-bonds:
-  in:
-    - boarding
-    - collapse
-    - dance
-    - enumeration
-    - id
-    - law
-    - member
-    - merge
-    - music
-    - performing
-    - product
-    - size
-    - sti
-    - theater
-    - wearable
-  out:
-    - boarding
-    - collapse
-    - dance
-    - enumeration
-    - id
-    - law
-    - member
-    - merge
-    - music
-    - performing
-    - product
-    - size
-    - sti
-    - theater
-    - wearable
+atomPath: "vocabulary/group"
+coordinate: "vocabulary/group · 5/round · 6b974a94"
+contentUuid: "4bacb6b2-8600-54da-9b7c-4d5c234f35a3"
+diamondUuid: "5e834c68-5afe-81f5-964f-d44713335d1b"
+uuid: "6b974a94-7978-86a4-a77d-0934a80114d6"
+horo: 5
 typography:
-  partition: group
-  bondDegree: 55
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 45
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - boarding
-    - collapse
-    - dance
-    - enumeration
-    - id
-    - law
-    - member
-    - merge
-    - music
-    - performing
-    - product
-    - size
-    - sti
-    - theater
-    - wearable
-  matrix:
-    - boarding
-    - collapse
-    - dance
-    - enumeration
-    - id
-    - law
-    - member
-    - merge
-    - music
-    - performing
-    - product
-    - size
-    - sti
-    - theater
-    - wearable
-  backlinks:
-    - boarding
-    - collapse
-    - dance
-    - enumeration
-    - id
-    - law
-    - member
-    - merge
-    - music
-    - performing
-    - product
-    - size
-    - sti
-    - theater
-    - wearable
 signatures:
-  computationUuid: "0cc4b101-98c0-84de-9144-f2a8235d46da"
+  computationUuid: "7e4c9d2a-7c14-838f-8f17-2cb820480493"
   stages:
     - stage: path
-      stageUuid: "21aac075-1770-8c2e-be4a-05824a032077"
+      stageUuid: "f83c7d82-2aa9-81bf-8eaf-097d3829938a"
     - stage: trinity
-      stageUuid: "a82b738f-0b7a-8a79-9310-d028e53cab0a"
+      stageUuid: "79166868-e2e2-889c-9e45-fc6e90883ed0"
     - stage: boundary
-      stageUuid: "46525ee0-246e-85f6-b84f-f5762082ee1f"
+      stageUuid: "7b5cfd10-ce07-8285-a8c5-4a8e802099ab"
     - stage: links
-      stageUuid: "47684f96-78dc-8f4d-a1fb-1e865ebfe7a1"
+      stageUuid: "6c509368-fd1e-8433-8dec-345c6c6e76a0"
     - stage: horo
-      stageUuid: "bff34195-fc60-8687-b1c1-e1c4f13710f6"
+      stageUuid: "3467418f-9acb-8a8d-9acc-14b71d5f7853"
     - stage: seal
-      stageUuid: "fdc16636-8c1e-8205-9d07-d8426c1981e3"
+      stageUuid: "d2ac1093-9c11-8962-bc2f-1719c178daf1"
     - stage: uuid
-      stageUuid: "62cd774d-0208-8d32-9a6d-cfb0360a048e"
+      stageUuid: "d60ef7ad-2816-8d8b-ace4-ce73148ddddb"
 version: 2
 ---
 # group

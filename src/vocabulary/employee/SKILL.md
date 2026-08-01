@@ -1,61 +1,35 @@
 ---
 name: employee
 description: Use when reasoning about employee — Someone working for this organization.
-atomPath: vocabulary/employee
-coordinate: employee · 4/weave · 0e168bdb
-contentUuid: "6c318d64-74f1-5527-abea-0c2ad074a9d1"
-diamondUuid: "e924ace6-b860-8bda-b14d-963d2eb705f3"
-uuid: "0e168bdb-d86a-8c1f-9d71-4c49f1f1b381"
-horo: 4
-bonds:
-  in:
-    - law
-    - role
-    - shift
-    - worker
-  out:
-    - law
-    - role
-    - shift
-    - worker
+atomPath: "vocabulary/employee"
+coordinate: "vocabulary/employee · 7/descent · 7048b465"
+contentUuid: "252ea3e4-9173-5ecf-999c-3df2ad3a8e1c"
+diamondUuid: "2165dc65-6d92-8e40-a918-0a4f1609b4f3"
+uuid: "7048b465-f70d-897c-9b08-1ce4df5294de"
+horo: 7
 typography:
-  partition: employee
+  partition: vocabulary
   bondDegree: 13
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - role
-  matrix:
-    - law
-    - role
-    - shift
-    - worker
-  backlinks:
-    - law
-    - role
-    - shift
-    - worker
 signatures:
-  computationUuid: "3253947c-4484-82bd-9dd7-f58dfee6599b"
+  computationUuid: "f7190192-c674-8a30-9a63-8591734a0b83"
   stages:
     - stage: path
-      stageUuid: "d05aaa5b-945b-8e23-8120-a70b24104318"
+      stageUuid: "e4edf1db-4858-861e-b92f-8e49fbf5163c"
     - stage: trinity
-      stageUuid: "97ea6c10-0201-8560-8f3c-552169ec0315"
+      stageUuid: "05e5af73-cd8e-8a47-9f75-b72403cdb577"
     - stage: boundary
-      stageUuid: "7de9bd2f-8401-8492-a6a6-b81eae92c515"
+      stageUuid: "a2ce3a2e-384c-890d-9fe1-d33174ff2955"
     - stage: links
-      stageUuid: "b7f63453-5c21-8086-b8ac-6d850154b927"
+      stageUuid: "2c13fca2-761e-8194-b9c8-73dd16600aa9"
     - stage: horo
-      stageUuid: "64269716-32b4-8c90-87d3-4af80dd7aa3e"
+      stageUuid: "2304f0a5-49f4-86c9-bb19-ee38601c4e9f"
     - stage: seal
-      stageUuid: "4be78b64-fe23-8169-aa80-146044dd0f50"
+      stageUuid: "49581c89-5626-82b1-b65f-c82c26ab228d"
     - stage: uuid
-      stageUuid: "41634ecd-7869-8e0a-ac50-1d588371cf38"
+      stageUuid: "23eb32f6-358b-886f-8631-8acafe02ce4f"
 version: 2
 ---
 # employee

@@ -1,129 +1,34 @@
 ---
 name: forecast
 description: "Use when projecting revenue from pipeline/opportunities — weighted by probability, stage, and close date; aggregated by rep/territory/product/period."
-atomPath: vocabulary/forecast
-coordinate: forecast · 5/round · 03d3417d
-contentUuid: "2061a37c-c66c-50f7-9840-54b19172e095"
-diamondUuid: "fdd37b3c-2130-8c14-94ef-e68d95d7ad48"
-uuid: "03d3417d-f19e-82c8-ae9f-b57f9d2b0683"
-horo: 5
-bonds:
-  in:
-    - aggregation
-    - agriculture
-    - biomass
-    - breed
-    - budgetvariance
-    - churn
-    - cropplan
-    - degreeday
-    - enterprisebudget
-    - estimate
-    - forestry
-    - funnel
-    - law
-    - opportunities
-    - orders
-    - pipeline
-    - quota
-    - revenue
-    - territory
-    - upsell
-  out:
-    - aggregation
-    - agriculture
-    - biomass
-    - breed
-    - budgetvariance
-    - churn
-    - cropplan
-    - degreeday
-    - enterprisebudget
-    - estimate
-    - forestry
-    - funnel
-    - law
-    - opportunities
-    - orders
-    - pipeline
-    - quota
-    - revenue
-    - territory
-    - upsell
+atomPath: "vocabulary/forecast"
+coordinate: "vocabulary/forecast · 7/descent · 1bb5544c"
+contentUuid: "bcc9d430-ee96-570e-a962-91ad01ca0719"
+diamondUuid: "0eccdb63-b31d-84f0-916e-b81c1791d8d8"
+uuid: "1bb5544c-9910-8a82-8e45-3d8dc99e6203"
+horo: 7
 typography:
-  partition: forecast
-  bondDegree: 62
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 60
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - aggregation
-    - law
-    - opportunities
-    - orders
-    - pipeline
-    - revenue
-    - territory
-  matrix:
-    - aggregation
-    - agriculture
-    - biomass
-    - breed
-    - budgetvariance
-    - churn
-    - cropplan
-    - degreeday
-    - enterprisebudget
-    - estimate
-    - forestry
-    - funnel
-    - law
-    - opportunities
-    - orders
-    - pipeline
-    - quota
-    - revenue
-    - territory
-    - upsell
-  backlinks:
-    - aggregation
-    - agriculture
-    - biomass
-    - breed
-    - budgetvariance
-    - churn
-    - cropplan
-    - degreeday
-    - enterprisebudget
-    - estimate
-    - forestry
-    - funnel
-    - law
-    - opportunities
-    - orders
-    - pipeline
-    - quota
-    - revenue
-    - territory
-    - upsell
 signatures:
-  computationUuid: "da677e6f-b903-8f60-bf64-7a0ae333e0f2"
+  computationUuid: "0cc959ea-7b60-8e83-af0c-31c37782a697"
   stages:
     - stage: path
-      stageUuid: "e101a1bb-d2d6-83f0-bbb8-fb29523d14ca"
+      stageUuid: "5e012143-b6be-84e2-8005-6679f6f5280f"
     - stage: trinity
-      stageUuid: "cacf6524-2cd3-8784-90e0-30d4030f2010"
+      stageUuid: "76765977-0fa0-8dec-b9a6-42b9487691fb"
     - stage: boundary
-      stageUuid: "49d7b285-6aff-80aa-8afe-573253bc6032"
+      stageUuid: "7a0c0f16-ecfb-8801-8d18-fec6abab9829"
     - stage: links
-      stageUuid: "d2db4f61-29a7-8326-bf54-64ab7bc71a13"
+      stageUuid: "5395ac7a-484e-8f4b-b33f-6f2a0e7e311d"
     - stage: horo
-      stageUuid: "a42d3918-5536-8a18-ac66-37cd99472522"
+      stageUuid: "ace0d964-8de2-8051-9270-eeb495eec589"
     - stage: seal
-      stageUuid: "1c649605-03cd-8063-8783-7fd3ad0f442e"
+      stageUuid: "b49ddde6-6076-832f-860d-9933574b7773"
     - stage: uuid
-      stageUuid: "26937fd6-5cd3-8dab-930c-fec59eee3987"
+      stageUuid: "d06fc440-a5e1-8876-a17c-19de6ab4287a"
 version: 2
 ---
 # forecast

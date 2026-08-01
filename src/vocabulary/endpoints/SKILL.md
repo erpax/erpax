@@ -1,86 +1,34 @@
 ---
 name: endpoints
 description: "Use when adding or debugging a custom HTTP route that does work outside a collection's CRUD — the `/next/seed` demo-data loader that clears and repopulates a fresh tenant with example pages, posts, media, and the erpax product-marketing pages — endpoints is the society's custom-route organ (currently one organ-scoped seed handler, not the per-collection structural seed)."
-atomPath: vocabulary/endpoints
-coordinate: endpoints · 7/descent · 65ac312e
-contentUuid: "7650f476-5a65-5a79-ac84-617ed2c326ea"
-diamondUuid: "4b100f60-27f0-8b9c-8983-c6285c53e5b7"
-uuid: "65ac312e-0608-845a-8340-1979bf1e2612"
-horo: 7
-bonds:
-  in:
-    - api
-    - collections
-    - commerce
-    - config
-    - endpoint
-    - identity
-    - law
-    - seed
-    - society
-  out:
-    - api
-    - collections
-    - commerce
-    - config
-    - endpoint
-    - identity
-    - law
-    - seed
-    - society
+atomPath: "vocabulary/endpoints"
+coordinate: "vocabulary/endpoints · 2/share · 7a1a02df"
+contentUuid: "71702f86-eba1-5a37-b1de-589523418c30"
+diamondUuid: "aacb96fb-0859-847b-8b8f-855d4a8388a7"
+uuid: "7a1a02df-6aee-8d27-b318-db7c6b0fbc06"
+horo: 2
 typography:
-  partition: endpoints
-  bondDegree: 27
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 11
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - api
-    - collections
-    - commerce
-    - config
-    - identity
-    - law
-    - seed
-    - society
-  matrix:
-    - api
-    - collections
-    - commerce
-    - config
-    - endpoint
-    - identity
-    - law
-    - seed
-    - society
-  backlinks:
-    - api
-    - collections
-    - commerce
-    - config
-    - endpoint
-    - identity
-    - law
-    - seed
-    - society
 signatures:
-  computationUuid: "c7e82c99-e451-8a51-b8b1-c9226bdc9d36"
+  computationUuid: "23174328-f20b-8cff-8e0c-b61efa1f4a8c"
   stages:
     - stage: path
-      stageUuid: "ddddcd56-c5c4-8a1e-a97c-32fcf7e8a35d"
+      stageUuid: "a2d95c0e-3251-8087-abb5-162478667fe1"
     - stage: trinity
-      stageUuid: "4437fdab-3174-85a9-bff3-2c1dc552608d"
+      stageUuid: "14cf4735-4ca0-8463-8124-c60b601a1296"
     - stage: boundary
-      stageUuid: "ca9444ce-ed8b-851d-9cfb-8abbd0bf9008"
+      stageUuid: "d64f33d5-c5d3-81df-9eaa-859f1e08a65e"
     - stage: links
-      stageUuid: "d1ddfa4f-008e-881a-a1cf-366e97418eb2"
+      stageUuid: "ea7bb7bb-3cb5-834a-8187-09385ed86603"
     - stage: horo
-      stageUuid: "cc637233-7539-8507-b730-e8273060164d"
+      stageUuid: "042574f0-c67e-8990-baec-4542a035888f"
     - stage: seal
-      stageUuid: "002351a6-3029-8be4-8d08-343414e9f4ef"
+      stageUuid: "dab4d8f6-8733-8563-ad11-128d27b9f57c"
     - stage: uuid
-      stageUuid: "ba3847c7-f88f-8df3-af19-857019b8c66c"
+      stageUuid: "e0c59f8c-2c58-8cea-8670-c4a96d19dd02"
 version: 2
 ---
 # endpoints — the custom-route organ (the `/next/seed` demo loader)

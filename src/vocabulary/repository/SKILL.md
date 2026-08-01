@@ -1,68 +1,35 @@
 ---
 name: repository
 description: "Use when reasoning about repository as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/repository
-coordinate: repository · 4/weave · bb6b9e36
-contentUuid: "0c7c5928-df44-5a23-a3b4-d6b8da0aae97"
-diamondUuid: "b6905398-5425-8ad4-bd6e-27806f9cbaef"
-uuid: "bb6b9e36-c486-8b52-9932-e1ed16f9f19c"
+atomPath: "vocabulary/repository"
+coordinate: "vocabulary/repository · 4/weave · 53ee40df"
+contentUuid: "1fa67855-1540-5876-ade3-ba8e0ecfc251"
+diamondUuid: "c588c4e3-31ea-8f29-b0ea-903b96a788c5"
+uuid: "53ee40df-665c-84cc-b952-7471ff526a49"
 horo: 4
-bonds:
-  in:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: repository
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "022c5159-a60b-8f01-bafd-bbf51f078813"
+  computationUuid: "1d71aee7-d31c-839e-85bb-5e321424bcc1"
   stages:
     - stage: path
-      stageUuid: "b3af020b-982a-8411-9bac-faa3665bd9f6"
+      stageUuid: "d8fe7745-2167-8840-a985-495106ce4e98"
     - stage: trinity
-      stageUuid: "43559e00-4703-8be2-9722-33c8076134b9"
+      stageUuid: "6abf85c3-8986-8737-b885-471923610674"
     - stage: boundary
-      stageUuid: "b7e825b4-d5e6-8851-b252-286d397b21a0"
+      stageUuid: "3762323e-3212-8402-a063-3eaee386a1b2"
     - stage: links
-      stageUuid: "8f669005-0f3d-88e4-ab6c-516a3e14bddd"
+      stageUuid: "44e2e3c4-e8e9-8441-97fb-82d83ccae73d"
     - stage: horo
-      stageUuid: "89d88ca9-8642-87eb-875b-81b841cf2d60"
+      stageUuid: "c2a77d06-0d39-8b8c-9e39-7e890711a7db"
     - stage: seal
-      stageUuid: "57d42f46-101a-89c6-947f-e3245a510511"
+      stageUuid: "0e0c5ebf-3277-870c-b85a-ccfe2b1e5115"
     - stage: uuid
-      stageUuid: "2b4e7dd9-b89a-8f90-bbe4-81bb3ff717d4"
+      stageUuid: "369039ee-0c5b-8af5-b446-8e771a42b7c9"
 version: 2
 ---
 # repository

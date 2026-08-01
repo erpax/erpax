@@ -2,46 +2,22 @@
 name: qtsp
 description: "Use when a notary check needs a qualified electronic signature or a qualified timestamp — the REAL wired eIDAS provider. Resolves the Bulgarian Trusted List from the EU List Of Trusted Lists (LOTL, no country hardcoded), parses the granted qualified services (CA/QC for signature, TSA/QTST for RFC 3161 timestamp), and verifies a named QTSP (BORICA B-Trust / Evrotrust / InfoNotary) holds one. Highest-leverage check: signature+timestamp are on EVERY document type. Honest boundary — verification is public and credential-free; actual issuance needs a QTSP account credential injected at deploy."
 atomPath: "notary/check/qtsp"
-coordinate: "notary/check/qtsp · 2/share · fd8dbf8c"
-contentUuid: "853e6d7c-0de8-5fca-ae08-266df221c324"
-diamondUuid: "6ceae5b2-e6ab-8827-bc2e-af05837d697c"
-uuid: "fd8dbf8c-1117-838c-a0f7-f9f672b5bb53"
-horo: 2
-bonds:
-  in:
-    - check
-    - law
-    - notary
-    - standards
-  out:
-    - law
-    - notary
-    - standards
+coordinate: "notary/check/qtsp · 8/crest · 46ce968c"
+contentUuid: "a5ab969c-3bf9-5d01-a1c0-e8c3aa76d028"
+diamondUuid: "a5e8a8c0-d3eb-887b-8c52-2ef4a01f37c4"
+uuid: "46ce968c-cc8c-8101-a1eb-0a1094a65fd6"
+horo: 8
 typography:
   partition: notary
   bondDegree: 9
-  neighbors: []
 standards:
   - RFC 3161 — trusted timestamp protocol
   - eIDAS
   - "eIDAS (EU 910/2014) — qualified electronic signature (Art. 25) + qualified timestamp (Art. 42)"
   - "eIDAS Art. 22 — member-state Trusted Lists; ETSI TS 119 612 — TL format"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - notary
-    - standards
-  matrix:
-    - law
-    - notary
-    - standards
-  backlinks:
-    - law
-    - notary
-    - standards
 signatures:
-  computationUuid: "cc426cf4-309a-864a-968e-ed05dc6a43f8"
+  computationUuid: "0125f13d-4a9a-80d6-8655-11113c161197"
   stages:
     - stage: path
       stageUuid: "ce516877-1f4a-81d2-a1fa-9e2ddffdf186"
@@ -52,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "57587cbd-7aa6-80a1-ba2c-939f1df256b3"
     - stage: horo
-      stageUuid: "593ad7c1-6dfd-8a94-aaa5-dec89fff0f58"
+      stageUuid: "96b0a1ca-2677-8b40-bdcd-5c503c3e7987"
     - stage: seal
       stageUuid: "422ef0c2-d455-8b30-9f20-3baa64087a82"
     - stage: uuid
-      stageUuid: "7d792b19-4076-8276-9a05-ce49c55e9854"
+      stageUuid: "5cef7244-f695-80ad-b840-c416fdc6e6a7"
 version: 2
 ---
 # qtsp — real eIDAS qualified-trust verification

@@ -1,88 +1,34 @@
 ---
 name: recognition
 description: "Use when determining whether to record (recognize) an asset, liability, revenue, or expense per the accounting framework — the gate for when something enters the financial statements"
-atomPath: vocabulary/recognition
-coordinate: recognition · 2/share · bf6dafed
-contentUuid: "bc0e21a1-e4b5-5415-80e4-0cc21a69736e"
-diamondUuid: "3d7ea493-87ba-8b02-8dd5-94430b87c2c8"
-uuid: "bf6dafed-2574-8c9c-93fe-c3fd031d7d8a"
-horo: 2
-bonds:
-  in:
-    - accrual
-    - agriculture
-    - balance
-    - deferral
-    - entries
-    - harvest
-    - law
-    - performances
-    - prepaid
-    - share
-  out:
-    - accrual
-    - agriculture
-    - balance
-    - deferral
-    - entries
-    - harvest
-    - law
-    - performances
-    - prepaid
-    - share
+atomPath: "vocabulary/recognition"
+coordinate: "vocabulary/recognition · 5/round · 798ea21a"
+contentUuid: "1bb88c59-2e46-5165-9b59-ae472b577fe7"
+diamondUuid: "a1947232-b86d-8838-bb64-9247f3bca61c"
+uuid: "798ea21a-70ce-8315-82d3-720c9cd7e872"
+horo: 5
 typography:
-  partition: recognition
+  partition: vocabulary
   bondDegree: 30
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accrual
-    - balance
-    - deferral
-    - entries
-    - law
-    - performances
-  matrix:
-    - accrual
-    - agriculture
-    - balance
-    - deferral
-    - entries
-    - harvest
-    - law
-    - performances
-    - prepaid
-    - share
-  backlinks:
-    - accrual
-    - agriculture
-    - balance
-    - deferral
-    - entries
-    - harvest
-    - law
-    - performances
-    - prepaid
-    - share
 signatures:
-  computationUuid: "8bb7dafd-0da8-8dad-be71-ba191b0bf2c1"
+  computationUuid: "e5165c2f-8770-8b51-893c-97ad85211ddb"
   stages:
     - stage: path
-      stageUuid: "07b0bdab-753a-81a4-b373-1eecc05f37dd"
+      stageUuid: "1e792f0e-5888-8706-9b9f-08e6c93b71e1"
     - stage: trinity
-      stageUuid: "bed414c2-f71d-82a8-a4ee-5398472b5abf"
+      stageUuid: "9ab72bdd-95d4-86a0-a523-9b61e27fc86e"
     - stage: boundary
-      stageUuid: "ab04e77b-3edb-8ae4-a1d0-0ab37de86ec1"
+      stageUuid: "6df13145-45bc-81ca-8965-6b655972eb46"
     - stage: links
-      stageUuid: "25010192-21bc-8672-ba3d-cb800697e85c"
+      stageUuid: "0e5a5225-e292-8e25-be7e-24502de573a7"
     - stage: horo
-      stageUuid: "54969121-2b79-8960-b5a2-91e861761ad5"
+      stageUuid: "b882ce17-498c-8086-a5a8-b049e9a9030c"
     - stage: seal
-      stageUuid: "5be04a6a-72e0-8f9d-9250-437de92bfdc1"
+      stageUuid: "18ef4306-a970-8f5b-aa17-7db9ac1f3eb3"
     - stage: uuid
-      stageUuid: "02626f0a-4fe6-820b-ad99-55c6958546c9"
+      stageUuid: "32776e75-73c0-8db3-9ca1-f13aab0c5bb1"
 version: 2
 ---
 # recognition

@@ -2,138 +2,22 @@
 name: work
 description: "Use when reasoning about work as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: work
-coordinate: work · 1/base · a4b32117
-contentUuid: "325dd1f2-2cb4-5142-a312-110b52c837f3"
-diamondUuid: "4989d5a1-adbe-83bd-9368-b51933b758fe"
-uuid: "a4b32117-243e-800e-81ad-5f04a4db2e61"
-horo: 1
-bonds:
-  in:
-    - based
-    - collapse
-    - creative
-    - eligibility
-    - encodes
-    - example
-    - featured
-    - hours
-    - law
-    - location
-    - merge
-    - performed
-    - presented
-    - program
-    - queue
-    - requirement
-    - season
-    - series
-    - status
-    - sti
-    - task
-    - translation
-  out:
-    - based
-    - collapse
-    - creative
-    - eligibility
-    - encodes
-    - example
-    - featured
-    - hours
-    - law
-    - location
-    - merge
-    - performed
-    - presented
-    - program
-    - queue
-    - requirement
-    - season
-    - series
-    - status
-    - sti
-    - task
-    - translation
+coordinate: "work · 8/crest · 87bb4d92"
+contentUuid: "852537e4-8086-5e9f-b20d-420f80ad40a6"
+diamondUuid: "0e16058a-1f61-88a7-96ea-be1f42a6a557"
+uuid: "87bb4d92-90fa-888a-81ac-cded28afb33b"
+horo: 8
 typography:
   partition: work
-  bondDegree: 79
-  neighbors: []
+  bondDegree: 90
 standards:
+  - "ILO-C001"
   - "ISA-95"
   - "ISO-22400-2"
-  - "ISO/IEC-29119"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - based
-    - collapse
-    - creative
-    - eligibility
-    - encodes
-    - example
-    - featured
-    - hours
-    - law
-    - location
-    - merge
-    - performed
-    - presented
-    - program
-    - requirement
-    - season
-    - series
-    - status
-    - sti
-    - translation
-  matrix:
-    - based
-    - collapse
-    - creative
-    - eligibility
-    - encodes
-    - example
-    - featured
-    - hours
-    - law
-    - location
-    - merge
-    - performed
-    - presented
-    - program
-    - queue
-    - requirement
-    - season
-    - series
-    - status
-    - sti
-    - task
-    - translation
-  backlinks:
-    - based
-    - collapse
-    - creative
-    - eligibility
-    - encodes
-    - example
-    - featured
-    - hours
-    - law
-    - location
-    - merge
-    - performed
-    - presented
-    - program
-    - queue
-    - requirement
-    - season
-    - series
-    - status
-    - sti
-    - task
-    - translation
 signatures:
-  computationUuid: "598c7cd8-7252-8f9e-a0d1-536fe1617de6"
+  computationUuid: "c1bfbcfc-cb43-8e26-96b5-641a524a4939"
   stages:
     - stage: path
       stageUuid: "7c771e81-28fd-8848-8c9f-e0730bfcabda"
@@ -144,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "23ab7dc1-96f9-8ef8-b396-38437e406c8b"
     - stage: horo
-      stageUuid: "238dd838-6eb8-8aab-b3dd-c53f5e496ab1"
+      stageUuid: "672342ac-be36-8a49-a79d-55b4568cba9a"
     - stage: seal
-      stageUuid: "287e9733-2507-8926-bdb2-568e9a13fcd3"
+      stageUuid: "8325267a-6fec-8531-a8ff-6aa5060b6e7a"
     - stage: uuid
-      stageUuid: "8e80f2c0-6d81-823b-b292-58439913ab9e"
+      stageUuid: "4a350ea7-6162-88ab-8d3a-395bd0b88e2f"
 version: 2
 ---
 # work

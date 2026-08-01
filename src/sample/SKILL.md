@@ -2,62 +2,19 @@
 name: sample
 description: "Use when reasoning about sample as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: sample
-coordinate: sample · 2/share · 1b547069
-contentUuid: "ff90e0ab-245d-5d1e-b60e-ef718392a946"
-diamondUuid: "4306c9a2-0746-886a-9a35-350bec8b353a"
-uuid: "1b547069-91db-8cae-b27e-b700f5e79444"
-horo: 2
-bonds:
-  in:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-    - tissue
-    - type
-  out:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-    - tissue
-    - type
+coordinate: "sample · 7/descent · 9e730131"
+contentUuid: "b42308cf-ae8e-504d-9fc4-7f89d2e71f76"
+diamondUuid: "8717e45f-665a-85d7-8688-dbbf8de43fae"
+uuid: "9e730131-641a-800b-8c1d-aee20e803fb2"
+horo: 7
 typography:
   partition: sample
   bondDegree: 22
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-    - tissue
-    - type
-  matrix:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-    - tissue
-    - type
-  backlinks:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-    - tissue
-    - type
 signatures:
-  computationUuid: "59b45cbb-3a6c-8aaf-bae1-be7c52dd7086"
+  computationUuid: "b517e38e-f39b-8cdb-b564-eba26c1e6a0f"
   stages:
     - stage: path
       stageUuid: "e3157093-c18a-86eb-ba1f-37b4e751350c"
@@ -68,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c89b7a07-e398-8e28-b207-4eb36cf09d54"
     - stage: horo
-      stageUuid: "6be4fae7-b54d-877b-a015-e6bfd859fcef"
+      stageUuid: "63ec791f-06a3-8f11-bbcf-bab0f175cc7e"
     - stage: seal
-      stageUuid: "d594a6a7-4f96-8720-adec-98ad9fc4688f"
+      stageUuid: "89438189-727d-83cf-912f-4b82f9de1b07"
     - stage: uuid
-      stageUuid: "cbd8a09b-7d37-8d1c-a287-b7372ce4da9d"
+      stageUuid: "dbdbd3d5-892a-82a1-a839-20ec5fce2995"
 version: 2
 ---
 # sample

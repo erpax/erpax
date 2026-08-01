@@ -1,88 +1,35 @@
 ---
 name: experience
 description: "Use when reasoning about experience — A schema.org component word, collided out of schema.org compounds — fused from OccupationalExperienceRequirements · experienceInPlaceOfEducation · experienceRequirements · monthsOf"
-atomPath: vocabulary/experience
-coordinate: experience · 5/round · c88ac7b9
-contentUuid: "024af668-d649-52d2-8467-19d6f75e653f"
-diamondUuid: "c4000ea2-bdb5-8e2e-9d27-bf0d1719c42b"
-uuid: "c88ac7b9-c82f-86ac-880e-d69acc68e12b"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - education
-    - law
-    - merge
-    - months
-    - occupational
-    - place
-    - requirements
-    - sti
-  out:
-    - collapse
-    - education
-    - law
-    - merge
-    - months
-    - occupational
-    - place
-    - requirements
-    - sti
+atomPath: "vocabulary/experience"
+coordinate: "vocabulary/experience · 4/weave · 7f41279b"
+contentUuid: "adc7489b-faa1-5c33-b1cf-a403090c083a"
+diamondUuid: "b49bb0fe-b4d2-8fcb-abd8-bfdaaf5cfb5c"
+uuid: "7f41279b-d88c-890f-a902-7a21e993e692"
+horo: 4
 typography:
-  partition: experience
+  partition: vocabulary
   bondDegree: 30
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - education
-    - law
-    - merge
-    - months
-    - occupational
-    - place
-    - requirements
-    - sti
-  matrix:
-    - collapse
-    - education
-    - law
-    - merge
-    - months
-    - occupational
-    - place
-    - requirements
-    - sti
-  backlinks:
-    - collapse
-    - education
-    - law
-    - merge
-    - months
-    - occupational
-    - place
-    - requirements
-    - sti
 signatures:
-  computationUuid: "95324a8e-f95b-8e2c-955b-01db6b129add"
+  computationUuid: "9329bad7-effb-8f0c-9fba-75f9982cdefa"
   stages:
     - stage: path
-      stageUuid: "0ca5d28c-37b7-833f-b2ec-485635b10705"
+      stageUuid: "69926336-1f74-85ae-9a97-9965ec5531fd"
     - stage: trinity
-      stageUuid: "c3aaeda5-141a-89dc-8965-d2e34310c3ba"
+      stageUuid: "89a78e22-1b99-83fe-a58b-7a87ef457bda"
     - stage: boundary
-      stageUuid: "34e9d785-02ef-8411-bdfc-f09cbb6a31eb"
+      stageUuid: "f30f9de8-efdf-8329-b923-7c643be8ff1c"
     - stage: links
-      stageUuid: "b292de95-aa9b-8fdc-97f2-3f3fff54ce44"
+      stageUuid: "d7773bb0-a172-879a-a4e4-7b2de8a0c43a"
     - stage: horo
-      stageUuid: "daa0ddd2-cb79-83e3-8543-f64d0b76797e"
+      stageUuid: "80ad9f69-c89d-8c28-ad5d-8609c286b1a7"
     - stage: seal
-      stageUuid: "09656296-fe34-83ac-a3c3-50fda628b59a"
+      stageUuid: "b2cc71c2-32f3-88d8-ae30-740d7caf38dc"
     - stage: uuid
-      stageUuid: "93fabc7a-3267-89f2-8fd8-14791cc69e98"
+      stageUuid: "d7d91a62-3b12-8f87-9627-79a9f838cec0"
 version: 2
 ---
 # experience

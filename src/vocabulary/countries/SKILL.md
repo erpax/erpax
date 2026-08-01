@@ -1,73 +1,35 @@
 ---
 name: countries
 description: "Use when reasoning about countries as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/countries
-coordinate: countries · 2/share · fcbc0c6d
-contentUuid: "4d468ee6-5727-5b72-85b1-06abcf6b78bf"
-diamondUuid: "213d77bc-401b-8233-bf98-285099bf0e8f"
-uuid: "fcbc0c6d-3778-8f4d-ac5c-b7c0e71dbce2"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - not
-    - sti
-    - supported
-  out:
-    - collapse
-    - law
-    - merge
-    - not
-    - sti
-    - supported
+atomPath: "vocabulary/countries"
+coordinate: "vocabulary/countries · 8/crest · ee69de4f"
+contentUuid: "306c8928-806e-5fd6-8b39-db79c078d996"
+diamondUuid: "54d237b0-3495-86cf-9537-fc6cf1a1bfaa"
+uuid: "ee69de4f-cf91-8075-98a4-26f8ddf59e26"
+horo: 8
 typography:
-  partition: countries
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - not
-    - sti
-    - supported
-  matrix:
-    - collapse
-    - law
-    - merge
-    - not
-    - sti
-    - supported
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - not
-    - sti
-    - supported
 signatures:
-  computationUuid: "b29a3bf3-90af-8144-bf0c-d60bebd70b17"
+  computationUuid: "191cd652-bed8-8748-9d4f-600df81c3b46"
   stages:
     - stage: path
-      stageUuid: "585287d9-5a94-896b-b533-35a16902da1c"
+      stageUuid: "52db23b0-4d9d-83a6-81c1-48bd78fc9432"
     - stage: trinity
-      stageUuid: "eae56ce9-253b-8722-88c8-79069b7ad3ed"
+      stageUuid: "6ea61d27-f928-8e91-bf6c-030988fb4c60"
     - stage: boundary
-      stageUuid: "8234435f-3bfc-816e-b091-118fe29da64b"
+      stageUuid: "2ac5e37e-b5e2-8057-be60-32ced22c09b8"
     - stage: links
-      stageUuid: "6561915c-b509-812b-a761-c6a46cdf6ffa"
+      stageUuid: "224e4302-da82-84a5-a211-82e618a39efe"
     - stage: horo
-      stageUuid: "33d9105d-e6e5-8570-8432-4de830e9079c"
+      stageUuid: "c3ebe3ea-febe-86bc-858b-ffdb6b02a449"
     - stage: seal
-      stageUuid: "5fea19da-2fbb-8bc7-a1d9-4f0a9e9642bc"
+      stageUuid: "ebf99c31-3e43-8cb8-a24b-90e5b9d74ca6"
     - stage: uuid
-      stageUuid: "7d2d9d78-54cb-8960-a12b-e28b6b2a5f2e"
+      stageUuid: "dff32b7c-d98d-8d58-901c-31e0c65b4cef"
 version: 2
 ---
 # countries

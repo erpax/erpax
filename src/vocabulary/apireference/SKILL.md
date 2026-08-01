@@ -1,63 +1,35 @@
 ---
 name: apireference
 description: "Use when reasoning about apireference as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/apireference
-coordinate: apireference · 1/base · a5d39c20
-contentUuid: "0a32a90f-a3a4-5d19-a101-3dd6e9d25946"
-diamondUuid: "7d2e5025-567c-8675-9693-be5c4a31710e"
-uuid: "a5d39c20-d4d0-804e-be89-69f4731c2e51"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/apireference"
+coordinate: "vocabulary/apireference · 2/share · eeda97d3"
+contentUuid: "4210d1d9-e74f-5b84-a0d6-010ae881e87c"
+diamondUuid: "349be4e4-ce7d-8769-a302-a5f14c55d7a2"
+uuid: "eeda97d3-06d1-81b3-8110-4ae54ca21985"
+horo: 2
 typography:
-  partition: apireference
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "a9916966-5f6b-8456-a44b-21a8dcd6f4b4"
+  computationUuid: "02f4c471-a90e-84dd-8211-4b2be204df18"
   stages:
     - stage: path
-      stageUuid: "4c215b88-2e72-867c-8c60-e7b51cd48016"
+      stageUuid: "1758b0a7-7abd-88f1-a170-2da0ff17a5b5"
     - stage: trinity
-      stageUuid: "43d6b988-70c5-8978-9f13-5b9ef9fb2828"
+      stageUuid: "a65b88fe-c9a8-8814-9d2a-1497cf22c44e"
     - stage: boundary
-      stageUuid: "3edc0485-6bda-89b4-a456-739794893c88"
+      stageUuid: "9836f824-f7a6-8ba3-a2cc-a6c355edf6d0"
     - stage: links
-      stageUuid: "6ec51067-198a-8f20-80e3-5d1ae51d0bfe"
+      stageUuid: "4b391adf-a9e6-8ae8-8b91-3846b861e989"
     - stage: horo
-      stageUuid: "e75ffd00-02b0-8134-87be-0188fd10ffb5"
+      stageUuid: "28f2562c-046d-86fa-8f0c-8ee8cda8f89e"
     - stage: seal
-      stageUuid: "93bc181b-9a5e-8192-845f-480dac7109d7"
+      stageUuid: "ef9ce5ba-9845-8886-b32a-26406e2eecd4"
     - stage: uuid
-      stageUuid: "3536799b-0f37-89d4-aafe-14f2a701292c"
+      stageUuid: "33e5be6a-6815-8faf-b618-c102812beef9"
 version: 2
 ---
 # apireference

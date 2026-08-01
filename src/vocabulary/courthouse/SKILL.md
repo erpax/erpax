@@ -1,58 +1,35 @@
 ---
 name: courthouse
 description: Use when reasoning about courthouse — A courthouse.
-atomPath: vocabulary/courthouse
-coordinate: courthouse · 5/round · c183c378
-contentUuid: "3e975ab6-9621-5ffd-b8c7-5c404d5609e8"
-diamondUuid: "c47431f8-fd30-8434-bd79-a159bbf5bd79"
-uuid: "c183c378-a10e-827b-8ec5-8b2baed310b0"
+atomPath: "vocabulary/courthouse"
+coordinate: "vocabulary/courthouse · 5/round · 5891bac1"
+contentUuid: "73977a80-0018-5b67-83ba-d1167fc98735"
+diamondUuid: "74d35ddb-11b9-85f2-a3c5-53cdd2b6a3e1"
+uuid: "5891bac1-07c6-8564-a61e-cc99a4ec7056"
 horo: 5
-bonds:
-  in:
-    - law
-    - place
-    - thing
-  out:
-    - law
-    - place
-    - thing
 typography:
-  partition: courthouse
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - place
-    - thing
-  matrix:
-    - law
-    - place
-    - thing
-  backlinks:
-    - law
-    - place
-    - thing
 signatures:
-  computationUuid: "7b1c532e-3e47-8f04-b2de-c05bf74de2d2"
+  computationUuid: "d2e4fcd8-6128-8f54-9f3e-aadc01b1334e"
   stages:
     - stage: path
-      stageUuid: "5065672e-ec11-88b2-b539-b18a15207984"
+      stageUuid: "89d88237-06c0-86c6-921b-0a53600214b9"
     - stage: trinity
-      stageUuid: "f3f27810-739a-84eb-9e9e-191b17c37194"
+      stageUuid: "16b90ce0-e7b1-88da-bc70-cccfe5dff7ac"
     - stage: boundary
-      stageUuid: "889141a4-b4e0-8c63-aeb8-854e2f11b9bf"
+      stageUuid: "77ce19a9-bc60-8ec9-a5c4-7bd9924e2267"
     - stage: links
-      stageUuid: "cdfa319b-ee9e-84bb-be80-c4cc0510a04c"
+      stageUuid: "a90f75f5-6fca-8166-918c-5110517f787f"
     - stage: horo
-      stageUuid: "3896b349-685d-80f3-95ba-40eae7372c66"
+      stageUuid: "84715632-8990-8e35-b71a-b3e0d0082601"
     - stage: seal
-      stageUuid: "d87cbe8e-3f94-87d5-bf99-23fd77e85d12"
+      stageUuid: "06ff61c7-2c0a-8cbc-a264-93b91ee2ef6f"
     - stage: uuid
-      stageUuid: "ceef38f7-72de-8817-abf3-9ad2d8e39862"
+      stageUuid: "772afebd-9d05-8200-83d2-4721e5163f23"
 version: 2
 ---
 # courthouse

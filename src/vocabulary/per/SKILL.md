@@ -1,63 +1,35 @@
 ---
 name: per
 description: "Use when reasoning about per as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/per
-coordinate: per · 4/weave · e0be797e
-contentUuid: "a949f4f1-f997-5732-b313-d0c05afb2c78"
-diamondUuid: "7334d4c3-c2b0-88d4-8f01-e84413d96d99"
-uuid: "e0be797e-745d-8cc5-9885-6e470bf8ae38"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/per"
+coordinate: "vocabulary/per · 1/base · ad5cfd2f"
+contentUuid: "016675eb-b7e9-5a29-833b-984ee9a4871c"
+diamondUuid: "f5350f0d-ebdd-8ab7-a1db-0c654527f420"
+uuid: "ad5cfd2f-4cc2-8dd7-b947-cad9298853ac"
+horo: 1
 typography:
-  partition: per
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "fccd1f2b-64af-8c69-9011-1e65e941e216"
+  computationUuid: "f4646a7f-508a-88e7-a1d3-77e14e0b4f8c"
   stages:
     - stage: path
-      stageUuid: "a98df4f9-1e43-805f-a4b0-0108293aa347"
+      stageUuid: "fc8456f3-10ba-81f5-bca6-30296fb751fd"
     - stage: trinity
-      stageUuid: "d1500930-4d2b-8e79-9c9a-b62b13a5223f"
+      stageUuid: "8764edf6-c0a8-80b7-aed7-990644a4d202"
     - stage: boundary
-      stageUuid: "8d06fd30-1d57-810f-a696-f9af8b69e719"
+      stageUuid: "e10bac69-a64f-8d31-a3ad-e2f8fc9e93fd"
     - stage: links
-      stageUuid: "cc700422-e00c-82ac-8a04-76a226125969"
+      stageUuid: "d36dd301-b363-83bf-b822-404a4340c5c8"
     - stage: horo
-      stageUuid: "672132b0-2818-825d-a9c8-6ea0a974ecaa"
+      stageUuid: "3860a2e4-69e1-83e2-8426-4bcb8c400439"
     - stage: seal
-      stageUuid: "8e29f5d0-f90f-8800-acf3-b1921c401953"
+      stageUuid: "0ebea9d5-7d35-8d63-8415-ff073e1ad769"
     - stage: uuid
-      stageUuid: "4fd8880d-6068-8fed-928d-13f2fd2e0736"
+      stageUuid: "de12343e-ac1c-8036-8107-515cd419abb9"
 version: 2
 ---
 # per

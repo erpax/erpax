@@ -1,63 +1,35 @@
 ---
 name: inactive
 description: "Use when reasoning about inactive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/inactive
-coordinate: inactive · 5/round · bf5d2072
-contentUuid: "2e237052-48a1-5fa8-ac04-6208942c90b3"
-diamondUuid: "4a4910ce-81ea-879f-8b81-aab0e1501e34"
-uuid: "bf5d2072-287b-8a32-a207-39a3d148de1e"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/inactive"
+coordinate: "vocabulary/inactive · 4/weave · 7aa5395a"
+contentUuid: "db2ef5e4-a267-5850-8bad-b8975552976c"
+diamondUuid: "98fcb6d5-2e0e-8a8a-853d-56d522c2f529"
+uuid: "7aa5395a-5925-8138-ac3e-d7498bd94403"
+horo: 4
 typography:
-  partition: inactive
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "82003f0e-9b3c-8d34-bda3-aac2bb25e50c"
+  computationUuid: "138630b7-621b-8cd9-aaa2-801e94be272d"
   stages:
     - stage: path
-      stageUuid: "c649669b-52dd-89d6-b0b5-b399ee314f9b"
+      stageUuid: "5e1c97bf-4760-8f84-8286-36e4543b8a21"
     - stage: trinity
-      stageUuid: "000c4aaa-c4fc-83e1-9cc4-6fc0ce94b69b"
+      stageUuid: "13fad3a6-e570-8229-8f8f-84f7358f4429"
     - stage: boundary
-      stageUuid: "20c459c4-fbf3-89d4-ad20-ceca4bde2ce0"
+      stageUuid: "90a65c9a-91b4-8d36-b37e-a30ed2ac5dbc"
     - stage: links
-      stageUuid: "a1ecc2ed-f488-8d1f-8b82-a0118d06caba"
+      stageUuid: "ca98bb29-1e4c-8c4f-ab49-3d8e8a716b26"
     - stage: horo
-      stageUuid: "8767ad0a-d027-8904-8290-fad06122b317"
+      stageUuid: "25bc4d3d-6e26-8ffc-80df-419429974bbc"
     - stage: seal
-      stageUuid: "2940d077-7ab3-8f9f-9297-61d164b8bd12"
+      stageUuid: "d665cce9-e547-81a3-976d-6ed9bf33975c"
     - stage: uuid
-      stageUuid: "e9044735-9ca2-8489-a7b3-7dceddb0cff0"
+      stageUuid: "a0700c00-b9a7-8651-a247-613aa09d6171"
 version: 2
 ---
 # inactive

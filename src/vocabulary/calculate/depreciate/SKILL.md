@@ -1,62 +1,34 @@
 ---
 name: depreciate
 description: "Use when reasoning about depreciate — ports the etrima/erpax depreciation calculators verbatim (calculate, port): given cost, salvage, useful-life (and units for activity-based), compute the per-period charge by method"
-atomPath: calculate/depreciate
-coordinate: calculate/depreciate · 8/crest · 27db78ce
-contentUuid: "998f24ba-e2e5-5a37-b623-a2df51f13a91"
-diamondUuid: "e1f3724a-44ba-876c-8032-34d0f01c856e"
-uuid: "27db78ce-d56b-8fed-81d5-e9a43eb91459"
-horo: 8
-bonds:
-  in:
-    - accounting
-    - calculate
-    - currency
-    - port
-  out:
-    - accounting
-    - calculate
-    - currency
-    - port
+atomPath: "vocabulary/calculate/depreciate"
+coordinate: "vocabulary/calculate/depreciate · 1/base · 27f56771"
+contentUuid: "fd57d96d-8d61-5830-9aae-eac588de80db"
+diamondUuid: "7f9685b9-b200-8e11-8dfe-f938045a7119"
+uuid: "27f56771-45ae-8fd0-bc06-c213509431a0"
+horo: 1
 typography:
-  partition: calculate
+  partition: vocabulary
   bondDegree: 13
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - calculate
-    - currency
-    - port
-  matrix:
-    - accounting
-    - calculate
-    - currency
-    - port
-  backlinks:
-    - accounting
-    - calculate
-    - currency
-    - port
 signatures:
-  computationUuid: "658b9122-5811-836c-aacf-249517a98765"
+  computationUuid: "4784611d-2716-803d-aaa1-ea98c9d6e2fb"
   stages:
     - stage: path
-      stageUuid: "4909eb44-3c1c-8702-af12-0943088a2823"
+      stageUuid: "77e91b0c-24f9-843d-92a0-67a993c85081"
     - stage: trinity
-      stageUuid: "108470d2-2ec3-86ff-b513-b0101ac2ac41"
+      stageUuid: "3b4d899b-c6f6-8d0d-b6a5-8edfa446eda1"
     - stage: boundary
-      stageUuid: "df7c6710-04a3-85ad-8b36-7d6c963f5d81"
+      stageUuid: "4a3b2383-85ec-895e-84f5-0b3e8e01b367"
     - stage: links
-      stageUuid: "965e4b0a-1517-8431-9b1c-aebe70b67153"
+      stageUuid: "c391e1e4-148e-85ce-91d5-08ea04452294"
     - stage: horo
-      stageUuid: "e0a8945a-52d6-8f0c-9701-c31ecc703a53"
+      stageUuid: "668df847-924e-8bbf-a66b-29173c9266b2"
     - stage: seal
-      stageUuid: "22c58448-2c5e-8186-84a9-19a12c36dca1"
+      stageUuid: "c26c328f-a5b2-840e-b329-b5ee4e511f89"
     - stage: uuid
-      stageUuid: "e3c0ba5d-a046-8bf5-b915-2ee5495f9020"
+      stageUuid: "05aab8cf-ee02-8c78-aa7c-5cb3000fd377"
 version: 2
 ---
 # depreciate — depreciation schedules (pure compute)

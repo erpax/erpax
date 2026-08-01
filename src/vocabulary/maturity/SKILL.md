@@ -1,131 +1,34 @@
 ---
 name: maturity
 description: "Use when deciding a crop is ready to harvest — days-to-maturity (DTM, the scheduling constant from sow/transplant to first pick), the maturity index (color, firmness, size, °Brix sugar) that signals harvest readiness, and the harvest window before over-maturity. Harvest maturity (pick-point) differs from eating ripeness; DTM lengthens as daylight wanes."
-atomPath: vocabulary/maturity
-coordinate: maturity · 4/weave · 5b076993
-contentUuid: "d2b0e577-d568-5b2e-a2b4-50a813230c90"
-diamondUuid: "acea07aa-3500-8e2b-97ab-4191173cbec0"
-uuid: "5b076993-efc6-8111-becc-fec548d2519f"
+atomPath: "vocabulary/maturity"
+coordinate: "vocabulary/maturity · 4/weave · cc279c5b"
+contentUuid: "fee2c8a0-4bcd-54e4-92d8-90c4cfccd4de"
+diamondUuid: "06898103-cb8b-8cf3-931e-e8a7038700d9"
+uuid: "cc279c5b-e7e9-8fb7-bf0a-ab0525ea7e72"
 horo: 4
-bonds:
-  in:
-    - agriculture
-    - animal
-    - apiculture
-    - aquaculture
-    - crop
-    - degreeday
-    - dormancy
-    - evapotranspiration
-    - grade
-    - harvest
-    - measure
-    - perennial
-    - planting
-    - pollination
-    - rootstock
-    - scion
-    - season
-    - transplant
-    - tunnel
-    - variant
-  out:
-    - agriculture
-    - animal
-    - apiculture
-    - aquaculture
-    - crop
-    - degreeday
-    - dormancy
-    - evapotranspiration
-    - grade
-    - harvest
-    - measure
-    - perennial
-    - planting
-    - pollination
-    - rootstock
-    - scion
-    - season
-    - transplant
-    - tunnel
-    - variant
 typography:
-  partition: maturity
+  partition: vocabulary
   bondDegree: 61
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - crop
-    - degreeday
-    - grade
-    - harvest
-    - measure
-    - planting
-    - season
-    - transplant
-  matrix:
-    - agriculture
-    - animal
-    - apiculture
-    - aquaculture
-    - crop
-    - degreeday
-    - dormancy
-    - evapotranspiration
-    - grade
-    - harvest
-    - measure
-    - perennial
-    - planting
-    - pollination
-    - rootstock
-    - scion
-    - season
-    - transplant
-    - tunnel
-    - variant
-  backlinks:
-    - agriculture
-    - animal
-    - apiculture
-    - aquaculture
-    - crop
-    - degreeday
-    - dormancy
-    - evapotranspiration
-    - grade
-    - harvest
-    - measure
-    - perennial
-    - planting
-    - pollination
-    - rootstock
-    - scion
-    - season
-    - transplant
-    - tunnel
-    - variant
 signatures:
-  computationUuid: "a6ab305b-1e61-8967-82d9-637802880d12"
+  computationUuid: "a6c6e0cb-6f09-8be2-8543-6f11a0db1ab7"
   stages:
     - stage: path
-      stageUuid: "723ac26d-3fc9-87e2-8bde-4eeb37d012e1"
+      stageUuid: "448c4738-a1af-80c2-b978-c2cc84b1f8eb"
     - stage: trinity
-      stageUuid: "953e6d75-4d9e-88fb-8f66-956a741de1c0"
+      stageUuid: "e8a8a6dd-c4cc-8238-9c19-3040df3c92fe"
     - stage: boundary
-      stageUuid: "2e2e54af-6ba9-8fd6-a370-3145adb1adbb"
+      stageUuid: "b79b5261-e581-8e1d-bf88-da178be0c169"
     - stage: links
-      stageUuid: "9572f18a-c730-8b28-949e-04339948abaa"
+      stageUuid: "7affcfb4-3538-8673-85b2-0cab69690c0b"
     - stage: horo
-      stageUuid: "a378247d-1baf-80c3-8be3-dab94aed53d6"
+      stageUuid: "fbcd55d4-4e22-8ae5-b371-cfb6b2ae9cb4"
     - stage: seal
-      stageUuid: "7c2ce6b1-3457-89bd-94ea-65576119e9e1"
+      stageUuid: "e11d5395-f7e0-85e8-b2ac-d90c0a6371de"
     - stage: uuid
-      stageUuid: "2c5167e5-d2e1-8eb6-855b-5a5ef7e1bc0f"
+      stageUuid: "28f30599-6ec8-8773-8700-1c1530f9950b"
 version: 2
 ---
 # maturity — when the crop is ready (the harvest-readiness signal)

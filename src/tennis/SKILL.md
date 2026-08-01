@@ -2,52 +2,19 @@
 name: tennis
 description: "Use when reasoning about tennis as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: tennis
-coordinate: tennis · 1/base · e5b05764
-contentUuid: "8b89c386-7e58-5653-89de-3b85169f1ca8"
-diamondUuid: "0b01c694-ea81-88e0-8188-8175983adf85"
-uuid: "e5b05764-8203-8c45-a9d6-9df04ac01983"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - complex
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - complex
-    - law
-    - merge
-    - sti
+coordinate: "tennis · 8/crest · 0d85b2a1"
+contentUuid: "bae2667c-4029-53ad-a2ad-ccb61e02d8b6"
+diamondUuid: "4c0b0d0d-0def-80e8-80f1-062394bc64bd"
+uuid: "0d85b2a1-d4fc-8f59-a845-78b015dae2d4"
+horo: 8
 typography:
   partition: tennis
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - complex
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - complex
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - complex
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "0031c6b8-555b-8e57-80af-283c50bff90f"
+  computationUuid: "668ed87a-c770-8b53-84ed-b6a60bfa9959"
   stages:
     - stage: path
       stageUuid: "c3400d12-8ad9-8c44-af9b-5c7d1acaeaa4"
@@ -58,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "570333f4-2fef-8eb4-98d7-89ba624abde4"
     - stage: horo
-      stageUuid: "329a3ce5-6aa2-8a6a-93cc-8a1870100160"
+      stageUuid: "271f41fc-8c5d-88f6-8b16-5867298d8e8c"
     - stage: seal
-      stageUuid: "636e2acc-e6f0-8dd6-b811-b80c17dd114b"
+      stageUuid: "cf1204bc-9f5b-818e-8858-ac5e8c389eff"
     - stage: uuid
-      stageUuid: "631620e0-4aa1-8404-9339-4e6e538ac618"
+      stageUuid: "a20c65c4-1178-8559-9dfb-433b57ec7a10"
 version: 2
 ---
 # tennis

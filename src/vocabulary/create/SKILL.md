@@ -1,68 +1,35 @@
 ---
 name: create
 description: "Use when reasoning about create as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/create
-coordinate: create · 8/crest · 5ff5cb93
-contentUuid: "162a5906-f51a-5668-a380-5c6bafb13ea3"
-diamondUuid: "5b44f800-85ee-8365-81a7-0b3f9d8c14c0"
-uuid: "5ff5cb93-afc7-8bc6-adff-93bcd08fd5a7"
-horo: 8
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/create"
+coordinate: "vocabulary/create · 2/share · aff697c2"
+contentUuid: "167012d7-9c0d-53c2-bb7d-e49ba37a1da7"
+diamondUuid: "adce3015-472a-8cc0-9979-5d2f99b82f18"
+uuid: "aff697c2-b4ad-893b-aa30-6e7923ac9ef8"
+horo: 2
 typography:
-  partition: create
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "fd33c62f-a2db-81c2-b335-1a3f5cd0d977"
+  computationUuid: "87f9d82e-8ac1-8b04-a4b5-7116e48ceb8b"
   stages:
     - stage: path
-      stageUuid: "90366700-f305-86ea-bd05-8868db987c07"
+      stageUuid: "f1108232-5348-8f15-b2fc-213dfed1b8bf"
     - stage: trinity
-      stageUuid: "79ca901a-7d5d-8681-8e33-1f64171cb864"
+      stageUuid: "caacc228-e994-80e8-8856-6a8baf6c1e00"
     - stage: boundary
-      stageUuid: "ba4cfa1b-e0c0-820a-9331-d9c44decc270"
+      stageUuid: "5b674502-b194-807c-ae1b-32503dee3f07"
     - stage: links
-      stageUuid: "73c4f154-a245-87d9-aae7-3eff8a9a86ac"
+      stageUuid: "a43a4723-3b27-80ef-8c6e-075f692eb9e5"
     - stage: horo
-      stageUuid: "b85260b7-91cb-8b33-9e4b-9961d90b2dfd"
+      stageUuid: "5cb0567b-4bc8-8303-a2b6-163c6755ca3d"
     - stage: seal
-      stageUuid: "f22ecf1d-4627-8104-b919-f2d19f687362"
+      stageUuid: "521abedc-7053-821f-9d9b-3da295d1b81f"
     - stage: uuid
-      stageUuid: "6ecb86e0-fe8e-8f12-b7a2-76697a71fdf6"
+      stageUuid: "44abf767-c180-8f01-a8c2-78ebc6fd3d4a"
 version: 2
 ---
 # create

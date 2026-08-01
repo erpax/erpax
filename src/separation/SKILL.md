@@ -2,73 +2,20 @@
 name: separation
 description: "Use when checking the separation of powers — that no single actor holds two of the legislative, executive, or judicial branches; the anti-corruption segregation-of-duties invariant applied at the scale of the state."
 atomPath: separation
-coordinate: separation · 4/weave · 3e4cfb9d
-contentUuid: "6eb59748-e3f5-56a3-bed8-ed9bac217f73"
-diamondUuid: "c0cf4212-e779-8230-a842-d2993e050df2"
-uuid: "3e4cfb9d-8f31-8991-8eb7-dc32d88f4175"
-horo: 4
-bonds:
-  in:
-    - balance
-    - constitution
-    - corruption
-    - duality
-    - fractal
-    - governance
-    - law
-    - legislation
-    - society
-  out:
-    - balance
-    - constitution
-    - corruption
-    - duality
-    - fractal
-    - governance
-    - law
-    - legislation
-    - society
+coordinate: "separation · 8/crest · ccb8fa18"
+contentUuid: "fa4bbc0c-5ca9-5be7-a09d-5f9f36be2103"
+diamondUuid: "55cff382-56c7-8551-9d73-c0165f84e331"
+uuid: "ccb8fa18-2992-8a78-879f-39e0867687fa"
+horo: 8
 typography:
   partition: separation
   bondDegree: 29
-  neighbors: []
 standards:
   - "Montesquieu separation-of-powers (legislative · executive · judicial)"
   - "SOX §404 segregation-of-duties (the same invariant, public-office scale)"
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - constitution
-    - corruption
-    - duality
-    - fractal
-    - governance
-    - law
-    - legislation
-    - society
-  matrix:
-    - balance
-    - constitution
-    - corruption
-    - duality
-    - fractal
-    - governance
-    - law
-    - legislation
-    - society
-  backlinks:
-    - balance
-    - constitution
-    - corruption
-    - duality
-    - fractal
-    - governance
-    - law
-    - legislation
-    - society
 signatures:
-  computationUuid: "4f057a1b-2150-8e11-92b4-668270ac5bb2"
+  computationUuid: "fcb5d972-682a-846a-81c3-37400a84399f"
   stages:
     - stage: path
       stageUuid: "a5700057-d58d-822e-a0cb-8d50ac3fc025"
@@ -79,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "f8f9ff1c-ba37-8238-abab-5ff1ff34f5b4"
     - stage: horo
-      stageUuid: "8b75850b-9f40-896c-ace8-63c5a71d1381"
+      stageUuid: "c49b03cd-25a9-8621-bea6-71be4ec49cf3"
     - stage: seal
-      stageUuid: "9c3a5892-a42e-870e-bc86-96d342d957aa"
+      stageUuid: "ce33e633-06c7-84dc-8ca6-43b258fb8381"
     - stage: uuid
-      stageUuid: "1b2b5ba0-6947-80e2-a4e4-4f20f32d77fa"
+      stageUuid: "38c98f4b-41cd-831b-a27d-2999ad1efabe"
 version: 2
 ---
 # separation — the separation of powers, the SoD invariant at the scale of the state

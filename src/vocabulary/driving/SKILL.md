@@ -1,63 +1,35 @@
 ---
 name: driving
 description: "Use when reasoning about driving as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/driving
-coordinate: driving · 7/descent · 3a743a92
-contentUuid: "d07fe373-e9b0-58b0-813a-a5262291a8ce"
-diamondUuid: "9f8f6723-e720-8c3f-aa37-dcc3c7a5a4c0"
-uuid: "3a743a92-2a7a-8948-b0ec-8e5496e33680"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/driving"
+coordinate: "vocabulary/driving · 1/base · c0b2121a"
+contentUuid: "4d136b33-b8d7-54ea-8065-40dc8a10e2d0"
+diamondUuid: "f8c44ebe-7646-83f4-b924-c8a6409d58d0"
+uuid: "c0b2121a-a65b-8fb1-a6f7-53a1ccedaa09"
+horo: 1
 typography:
-  partition: driving
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "fe4121d1-9e46-8ab9-bc52-d1fbe95e7468"
+  computationUuid: "91207415-879b-8442-a888-b8c5426b0124"
   stages:
     - stage: path
-      stageUuid: "f0baaaff-0432-83cb-a482-9c87d8f72ae9"
+      stageUuid: "555da600-e5b9-8b93-aa44-2af89cb21da5"
     - stage: trinity
-      stageUuid: "0f9461d3-0266-8538-8e33-1d886cadb29e"
+      stageUuid: "f0592f6a-0b0a-87c6-be66-956ba79dbd1b"
     - stage: boundary
-      stageUuid: "158f9ea1-353f-83c2-acaa-90db738f85ec"
+      stageUuid: "5e820c64-2bd9-8137-8aba-045adcf39d6c"
     - stage: links
-      stageUuid: "95309f91-9d69-84d2-babc-6070915ef472"
+      stageUuid: "d1e2a2aa-1041-896f-b916-6c8a95e2345d"
     - stage: horo
-      stageUuid: "6973ab3e-0be6-8d60-86e7-056722d22aa9"
+      stageUuid: "c60371ed-51eb-860b-a4ae-23f36cc427e4"
     - stage: seal
-      stageUuid: "9b6d0dbf-19ea-84b1-96ae-e5f9aa0b5d83"
+      stageUuid: "579881bd-b8c2-8aa3-b182-605534dd71da"
     - stage: uuid
-      stageUuid: "e6abd8b6-bb26-81d4-ad33-9f8290ecb15f"
+      stageUuid: "e4a0d0f3-0382-8db9-98f4-946f10e8a121"
 version: 2
 ---
 # driving

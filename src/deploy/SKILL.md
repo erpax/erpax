@@ -2,118 +2,18 @@
 name: deploy
 description: "Use when deploying a Payload app to production or fixing build/migration/env issues — required secrets, running migrations vs dev push, building without a DB connection, file storage, or Cloudflare/Next/Docker specifics."
 atomPath: deploy
-coordinate: "deploy · 2/share · 4013aba2"
-contentUuid: "60621be7-64fa-5c87-a15c-621f41a08eca"
-diamondUuid: "8fe58ec1-bf91-8330-8fc5-f708f42d20b9"
-uuid: "4013aba2-4d84-8354-901c-0f1fdaede553"
+coordinate: "deploy · 2/share · 9a63e6a3"
+contentUuid: "099df91f-820d-509f-87f8-e98089f1e054"
+diamondUuid: "d186f622-b43c-8c67-b512-397d5ecbc4e1"
+uuid: "9a63e6a3-09e8-803b-a34a-70878f766303"
 horo: 2
-bonds:
-  in:
-    - backup
-    - bindings
-    - command
-    - config
-    - database
-    - deploy
-    - dev
-    - gate
-    - harden
-    - harmony
-    - law
-    - mcp
-    - observability
-    - optimize
-    - reality
-    - rodin
-    - secret
-    - serverless
-    - stack
-    - upload
-  out:
-    - backup
-    - bindings
-    - command
-    - config
-    - database
-    - deploy
-    - dev
-    - gate
-    - harden
-    - harmony
-    - law
-    - mcp
-    - observability
-    - optimize
-    - reality
-    - rodin
-    - secret
-    - serverless
-    - stack
-    - upload
 typography:
   partition: deploy
   bondDegree: 90
-  neighbors:
-    - cloudflare
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - bindings
-    - config
-    - database
-    - gate
-    - harden
-    - harmony
-    - law
-    - reality
-    - rodin
-    - stack
-    - upload
-  matrix:
-    - backup
-    - bindings
-    - command
-    - config
-    - database
-    - deploy
-    - dev
-    - gate
-    - harden
-    - harmony
-    - law
-    - mcp
-    - observability
-    - optimize
-    - reality
-    - rodin
-    - secret
-    - serverless
-    - stack
-    - upload
-  backlinks:
-    - backup
-    - bindings
-    - command
-    - config
-    - database
-    - deploy
-    - dev
-    - gate
-    - harden
-    - harmony
-    - law
-    - mcp
-    - observability
-    - optimize
-    - reality
-    - rodin
-    - secret
-    - serverless
-    - stack
-    - upload
 signatures:
-  computationUuid: "46e58689-948a-8c93-873b-487550dff1c8"
+  computationUuid: "9b9519db-dbd5-8a9a-842b-91a18889b665"
   stages:
     - stage: path
       stageUuid: "b2dec97d-58be-8973-929d-1384ec4ddcf8"
@@ -124,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d3db1d99-7bf0-8094-9885-10212d437084"
     - stage: horo
-      stageUuid: "c7836e0d-aba3-87ef-94a0-64c1ad635fbd"
+      stageUuid: "e1458e90-366b-81fa-b402-21f2ff996849"
     - stage: seal
       stageUuid: "846600a4-d368-8e6e-bb3d-2e82c706994c"
     - stage: uuid
-      stageUuid: "95d81b1d-1c28-85f8-a662-27933f44c79a"
+      stageUuid: "f529ca2e-932c-867b-ba56-5bae1560227c"
 version: 2
 ---
 # deploy — Payload production deployment

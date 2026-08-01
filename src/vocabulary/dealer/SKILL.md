@@ -1,73 +1,35 @@
 ---
 name: dealer
 description: "Use when reasoning about dealer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/dealer
-coordinate: dealer · 4/weave · 2a634532
-contentUuid: "0050ca4d-c206-5cc5-931a-4f19dc5a6773"
-diamondUuid: "32c7d934-3579-82f3-a41b-1053f8e395b1"
-uuid: "2a634532-099b-87d9-b40d-f21bb28ffdec"
-horo: 4
-bonds:
-  in:
-    - auto
-    - collapse
-    - law
-    - merge
-    - motorcycle
-    - sti
-  out:
-    - auto
-    - collapse
-    - law
-    - merge
-    - motorcycle
-    - sti
+atomPath: "vocabulary/dealer"
+coordinate: "vocabulary/dealer · 7/descent · 0ab5635e"
+contentUuid: "972325e9-a611-5a29-a346-fc012fb1bab8"
+diamondUuid: "be55d05a-e146-8970-9e31-ccc81b6c4959"
+uuid: "0ab5635e-f9d5-83d1-9a3f-1682c6ff98ac"
+horo: 7
 typography:
-  partition: dealer
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - auto
-    - collapse
-    - law
-    - merge
-    - motorcycle
-    - sti
-  matrix:
-    - auto
-    - collapse
-    - law
-    - merge
-    - motorcycle
-    - sti
-  backlinks:
-    - auto
-    - collapse
-    - law
-    - merge
-    - motorcycle
-    - sti
 signatures:
-  computationUuid: "e74cc114-c347-8825-b513-d7a58c82e0a9"
+  computationUuid: "d071e054-aedf-8bf8-a80d-34199d3cfdac"
   stages:
     - stage: path
-      stageUuid: "28ba52e0-8c4a-86b8-adb4-ca36ebcad7bb"
+      stageUuid: "a462a8ee-f067-8056-a14b-f24599cee03f"
     - stage: trinity
-      stageUuid: "8ee7089c-dff1-8cd3-8520-00287fcfbff2"
+      stageUuid: "c1045252-08d3-8a58-a3e5-7aad31334520"
     - stage: boundary
-      stageUuid: "f87261c2-5e3e-8886-98d5-1de8adc8aa2c"
+      stageUuid: "6640722b-095e-8602-8f00-681e8bbd2ec5"
     - stage: links
-      stageUuid: "7408a055-d20f-8699-9603-c00486e2f68e"
+      stageUuid: "df7b50f6-48b3-81d7-a487-dcd61de3b342"
     - stage: horo
-      stageUuid: "ae15bcb4-e842-8382-9f4b-c7de0d1d7ac3"
+      stageUuid: "1cd9e5d9-d89c-8c8e-ae09-ff0741d00b44"
     - stage: seal
-      stageUuid: "e86d7e94-b418-8261-b25a-7d310a19a137"
+      stageUuid: "d1811642-f421-814a-a13f-10238e98a3c1"
     - stage: uuid
-      stageUuid: "927c020f-f613-8745-b3d4-046a200e8649"
+      stageUuid: "82fb9365-b837-814f-9a67-bebb1b8a50cc"
 version: 2
 ---
 # dealer

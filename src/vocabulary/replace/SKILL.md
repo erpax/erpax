@@ -1,68 +1,35 @@
 ---
 name: replace
 description: "Use when reasoning about replace as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/replace
-coordinate: replace · 7/descent · 435eba20
-contentUuid: "c017dd34-57b3-5d2c-9354-7ead5304b594"
-diamondUuid: "c80ed841-e095-8fc0-a082-33652c89e65d"
-uuid: "435eba20-e0d3-8916-b148-d2a9f0c04526"
-horo: 7
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/replace"
+coordinate: "vocabulary/replace · 4/weave · 35fc8fc8"
+contentUuid: "9335b16a-113a-5561-a9cf-38c79f0fa466"
+diamondUuid: "432cc210-afb5-8796-a7ee-df36e531650c"
+uuid: "35fc8fc8-8836-8260-af45-45bae50320cb"
+horo: 4
 typography:
-  partition: replace
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "d9aa94e8-5c71-8d9b-bc73-e616f21f8051"
+  computationUuid: "72f696cf-d105-8320-8988-2880c6f20aa0"
   stages:
     - stage: path
-      stageUuid: "13107d9a-745f-8bb6-8095-91ff8a3d16af"
+      stageUuid: "3c5e4d05-8671-80ac-a32f-cd21413898b3"
     - stage: trinity
-      stageUuid: "b140ec41-829b-8889-949e-5cfb0e5c021f"
+      stageUuid: "66b1a83f-477d-8637-ada5-017964a5d780"
     - stage: boundary
-      stageUuid: "adc8016e-d54f-83f1-b8cc-2ae1db8daaa4"
+      stageUuid: "f0e98611-56f2-83af-9299-35d0c27d2a67"
     - stage: links
-      stageUuid: "a0d86ca0-21a9-8da0-9708-6777c02226b8"
+      stageUuid: "a43da2cf-b27e-8d33-829b-1e82d2bdbfb6"
     - stage: horo
-      stageUuid: "1e1fc455-9c20-8682-8ee2-44522da063aa"
+      stageUuid: "85d4f0d4-0a95-860e-9ed7-d1f21503721d"
     - stage: seal
-      stageUuid: "522743ee-049f-8848-901c-f12a41c76afe"
+      stageUuid: "ff5dcd27-2006-8953-bf5f-753f0c84e7ed"
     - stage: uuid
-      stageUuid: "c78800ef-e95f-8bb8-ac14-7887172420f1"
+      stageUuid: "5db2b2d4-2afb-8e97-b39a-0bf2b102bafb"
 version: 2
 ---
 # replace

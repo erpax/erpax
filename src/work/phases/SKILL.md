@@ -1,74 +1,26 @@
 ---
 name: phases
 description: "Use when modeling the reusable work-phase (operation) catalog — the routing vocabulary (sewing/cutting/buttonholes/steaming/embroidery/dyeing/finishing) a lot is produced through, a self-referential tree with standard time."
-atomPath: work/phases
-coordinate: work/phases · 1/base · 61769793
-contentUuid: "efa1da12-2317-50ce-80c5-7ed1dbd5b915"
-diamondUuid: "3758be15-ca60-85a8-b1ef-ce8051582a87"
-uuid: "61769793-1677-8138-b623-ecbd9c122c0b"
-horo: 1
-bonds:
-  in:
-    - accounting
-    - balance
-    - coordinate
-    - law
-    - lots
-    - merge
-    - operations
-    - phases
-    - work
-  out:
-    - accounting
-    - balance
-    - coordinate
-    - law
-    - lots
-    - merge
-    - operations
-    - phases
+atomPath: "work/phases"
+coordinate: "work/phases · 8/crest · b6e78373"
+contentUuid: "c9a85d01-e3c0-5c4c-9481-cb1a8178e027"
+diamondUuid: "aef71bfd-c39b-819a-bea1-22f91e006427"
+uuid: "b6e78373-8a0f-86c1-9be2-fed3b5b7629a"
+horo: 8
 typography:
   partition: work
   bondDegree: 36
-  neighbors: []
 standards:
   - "ISA-95"
   - "ISA-95:2013 / IEC-62264-1 §B.4 operations-definition process-segment"
-  - "ISO-19011:2018 audit-trail work-phase-definition-changes"
   - "ISO-22400-2"
   - "ISO-22400-2:2014 manufacturing-operations KPIs standard-time"
+  - "ISO-22400-2:2014 manufacturing-operations KPIs standard-time`"
   - "SOX §404 internal-controls production-control"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - balance
-    - coordinate
-    - law
-    - lots
-    - merge
-    - operations
-    - phases
-  matrix:
-    - accounting
-    - balance
-    - coordinate
-    - law
-    - lots
-    - merge
-    - operations
-    - phases
-  backlinks:
-    - accounting
-    - balance
-    - coordinate
-    - law
-    - lots
-    - merge
-    - operations
-    - phases
 signatures:
-  computationUuid: "1b3b5e00-fb3c-80a8-a007-6d087382257e"
+  computationUuid: "2fd54276-a732-8f43-94a1-c8ba6205b6ae"
   stages:
     - stage: path
       stageUuid: "d0a34978-9410-83f8-b715-d52a1a5f9daa"
@@ -79,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "7b4cd3a4-faa6-8a58-a4ac-bbc427eb65a0"
     - stage: horo
-      stageUuid: "694afaca-0319-8e49-b621-001dcb5d668b"
+      stageUuid: "72ef05ba-2d9f-86aa-971a-8262fcd69061"
     - stage: seal
-      stageUuid: "e3520ddd-cac7-854e-8bb6-d51de9ed7294"
+      stageUuid: "ce605f88-8271-828b-ad4c-ec149a16d987"
     - stage: uuid
-      stageUuid: "a75373a3-26ad-8639-ab66-165f64d7b61e"
+      stageUuid: "2d5e0d63-d63d-83e7-8365-0f30281dbde0"
 version: 2
 ---
 # work/phases — the operation catalog (the routing vocabulary, a tree)

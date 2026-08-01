@@ -1,83 +1,35 @@
 ---
 name: passenger
 description: "Use when reasoning about passenger as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/passenger
-coordinate: passenger · 8/crest · 791389f4
-contentUuid: "d42f6eda-4da0-540d-be50-273e80c4e2df"
-diamondUuid: "87558b95-a7f6-870b-98de-f56bbf7afde2"
-uuid: "791389f4-928a-8286-ad72-3e17d5e718f8"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - number
-    - priority
-    - sequence
-    - status
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - number
-    - priority
-    - sequence
-    - status
-    - sti
+atomPath: "vocabulary/passenger"
+coordinate: "vocabulary/passenger · 2/share · 989ab028"
+contentUuid: "b5fb70c2-a181-541c-9045-62a02dcf6b43"
+diamondUuid: "d3513c30-aec0-8a91-a780-7bbe71e6bf9a"
+uuid: "989ab028-a42a-857f-9e68-8995809addbc"
+horo: 2
 typography:
-  partition: passenger
+  partition: vocabulary
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - number
-    - priority
-    - sequence
-    - status
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - number
-    - priority
-    - sequence
-    - status
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - number
-    - priority
-    - sequence
-    - status
-    - sti
 signatures:
-  computationUuid: "ea19d027-b57a-8f68-912d-abaff7569481"
+  computationUuid: "23cb1948-a065-8140-8e2a-350ac550d09d"
   stages:
     - stage: path
-      stageUuid: "5f53afd1-ad9b-8cd0-bff2-a878f0791675"
+      stageUuid: "654c82a6-5902-8edf-8ff2-0a8275e76832"
     - stage: trinity
-      stageUuid: "2ab8d29c-74b0-8df5-8466-1686b4842c7c"
+      stageUuid: "5bfa492b-5300-8a10-94cf-9e5c0f6492a1"
     - stage: boundary
-      stageUuid: "778e14d3-814f-8fc7-b7e3-5557db557996"
+      stageUuid: "d753facc-de1c-89f7-8300-d5b1a4e20494"
     - stage: links
-      stageUuid: "458fd64f-8902-8f92-95e4-53d3a607a2b7"
+      stageUuid: "7ac94ff8-9fd8-8638-b279-f3a5c5f72147"
     - stage: horo
-      stageUuid: "19d20b43-9891-898f-aa5c-7447aa9e054d"
+      stageUuid: "6d6b75c9-5c85-84cc-a6a9-1df1d06a848a"
     - stage: seal
-      stageUuid: "093a74fb-fc1a-89d1-9ca5-781bbe3428bc"
+      stageUuid: "8b2655be-cf8a-88a0-b03c-540b83aa6701"
     - stage: uuid
-      stageUuid: "2d8ec4fd-034e-86eb-a68f-248865a48fef"
+      stageUuid: "f094e96a-52d0-89f0-894d-994266ee18fb"
 version: 2
 ---
 # passenger

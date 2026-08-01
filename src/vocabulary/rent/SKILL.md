@@ -1,68 +1,35 @@
 ---
 name: rent
 description: "Use when reasoning about rent as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/rent
-coordinate: rent · 8/crest · 6774ffa0
-contentUuid: "aee0115e-9ac3-582d-9944-8c4697cd361b"
-diamondUuid: "71f40c5e-8595-8d68-91e3-40cce1c28dc0"
-uuid: "6774ffa0-d429-8e66-b02a-712b605e0204"
-horo: 8
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/rent"
+coordinate: "vocabulary/rent · 5/round · 504e701b"
+contentUuid: "930d20ec-6315-586b-b237-e8f0f55d5a23"
+diamondUuid: "631fa6fb-986f-8e43-8969-6ed61e4a804a"
+uuid: "504e701b-a52e-8745-a977-cc99c71cfeed"
+horo: 5
 typography:
-  partition: rent
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "14e6327e-2206-8a2d-aff1-9bd524dac38c"
+  computationUuid: "a1e4d304-76ce-84ab-a31d-074cec3fe948"
   stages:
     - stage: path
-      stageUuid: "c3803f9f-a8ee-8936-b156-c1b4826e7d32"
+      stageUuid: "0f505946-9738-8650-8ca2-301664e055af"
     - stage: trinity
-      stageUuid: "f1aa1cec-ced4-8bfb-b5af-7379abb04f92"
+      stageUuid: "87fc8cca-80c7-8023-ab8a-832bf505a940"
     - stage: boundary
-      stageUuid: "410a5d48-e3ff-8c9d-b537-6236f0109a2c"
+      stageUuid: "19293b87-eb46-8b66-af81-cf80bbb0cd7c"
     - stage: links
-      stageUuid: "e87fae5f-abb9-8643-9a9c-870add3206ff"
+      stageUuid: "e805d009-c3e1-860a-b55a-b199a83a2ef2"
     - stage: horo
-      stageUuid: "6f22934e-41a7-8238-bae3-b4068ebd9448"
+      stageUuid: "38de81c3-1fde-85b2-9deb-b0a8864e0250"
     - stage: seal
-      stageUuid: "7b94814e-ed57-8fd1-b93e-c8945f32d416"
+      stageUuid: "38517656-d278-8628-b266-910457dc1c92"
     - stage: uuid
-      stageUuid: "46240b30-22d0-81b5-aa9d-7a8c284a6245"
+      stageUuid: "73ff516b-c04d-8d00-af7e-b91ee9bff41f"
 version: 2
 ---
 # rent

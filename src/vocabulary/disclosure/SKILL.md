@@ -1,79 +1,34 @@
 ---
 name: disclosure
 description: "Use when determining which items require quantitative and narrative disclosure in financial statements — mandatory, recommended, and suggested per IFRS/GAAP; gate for materiality and scope"
-atomPath: vocabulary/disclosure
-coordinate: disclosure · 1/base · 402ac14d
-contentUuid: "66da6c24-a2c6-5f2a-bd42-8babea778beb"
-diamondUuid: "ac49dcf0-979a-8c6c-a23f-26febb850a94"
-uuid: "402ac14d-3ecb-8fa6-8574-4e9f8c30bb91"
-horo: 1
-bonds:
-  in:
-    - accounting
-    - checklists
-    - law
-    - materiality
-    - provision
-    - standard
-    - statements
-    - taxexempt
-  out:
-    - accounting
-    - checklists
-    - law
-    - materiality
-    - provision
-    - standard
-    - statements
-    - taxexempt
+atomPath: "vocabulary/disclosure"
+coordinate: "vocabulary/disclosure · 7/descent · 2d82e67a"
+contentUuid: "036c595e-4081-53c8-98ce-439dd9c7318a"
+diamondUuid: "c4c03c81-b127-828b-95e6-56fa7e9476ca"
+uuid: "2d82e67a-cd30-82f7-94ab-bede5bbd0365"
+horo: 7
 typography:
-  partition: disclosure
+  partition: vocabulary
   bondDegree: 24
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - checklists
-    - law
-    - materiality
-    - standard
-    - statements
-  matrix:
-    - accounting
-    - checklists
-    - law
-    - materiality
-    - provision
-    - standard
-    - statements
-    - taxexempt
-  backlinks:
-    - accounting
-    - checklists
-    - law
-    - materiality
-    - provision
-    - standard
-    - statements
-    - taxexempt
 signatures:
-  computationUuid: "51dd2dea-1cb8-8869-8679-aa795023ee7d"
+  computationUuid: "b4250e8a-a5cf-8391-982c-d7f2091da6ed"
   stages:
     - stage: path
-      stageUuid: "09399096-5f3f-88ff-ada9-a3656c78162a"
+      stageUuid: "3847b321-68a1-8ae6-af6d-0e02ece855e0"
     - stage: trinity
-      stageUuid: "75a35044-381f-87cc-8777-156e0b67cbd4"
+      stageUuid: "276d25b1-335e-89ad-ab4a-5eaa3762957d"
     - stage: boundary
-      stageUuid: "d9272079-a3c2-8a1c-b3c3-927acc86e884"
+      stageUuid: "10f4332f-f67d-8c1e-bc5f-a42795b1ce32"
     - stage: links
-      stageUuid: "63256ba6-7d72-8ce3-8965-a56d40818dcf"
+      stageUuid: "98d49da4-d898-866e-8dce-d0ba6af2b5ab"
     - stage: horo
-      stageUuid: "7292ced9-6afe-8fab-8b2b-65d247d712bb"
+      stageUuid: "90d89d8e-a5fa-8f73-93f3-83d88d35808e"
     - stage: seal
-      stageUuid: "0ee0ebf7-c3d3-8228-b71c-a8da06777ecc"
+      stageUuid: "ee92238b-a530-8930-9ca1-c540e35300ed"
     - stage: uuid
-      stageUuid: "855e30b9-14a4-8c63-ae14-d1150ad9a8fa"
+      stageUuid: "0ae906b0-765c-89f9-bff7-a0a95be70855"
 version: 2
 ---
 # disclosure

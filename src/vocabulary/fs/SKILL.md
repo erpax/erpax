@@ -1,119 +1,34 @@
 ---
 name: fs
 description: "Use when reasoning about the filesystem as erpax sees it — the tree of paths to content where the path IS the address and the leaf word IS the atom; the matter the corpus lives on, and the thing whose every state is a snapshot."
-atomPath: vocabulary/fs
-coordinate: fs · 1/base · 303f45f4
-contentUuid: "7e973c75-5774-5767-9406-18c89c251dc1"
-diamondUuid: "5b1ef12f-0495-812f-957d-8ba7b76318dd"
-uuid: "303f45f4-8873-8bb5-89e1-0eb3683df0b5"
-horo: 1
-bonds:
-  in:
-    - api
-    - atom
-    - dimension
-    - file
-    - fs
-    - generate
-    - github
-    - law
-    - matter
-    - mcp
-    - path
-    - reference
-    - snapshot
-    - url
-    - uuid
-    - word
-  out:
-    - api
-    - atom
-    - dimension
-    - file
-    - fs
-    - generate
-    - github
-    - law
-    - matter
-    - mcp
-    - path
-    - reference
-    - snapshot
-    - url
-    - uuid
-    - word
+atomPath: "vocabulary/fs"
+coordinate: "vocabulary/fs · 8/crest · 55c797e5"
+contentUuid: "11942d52-0cac-5844-8a39-9cb3efcf5caf"
+diamondUuid: "bd699ffe-c6cd-842a-b5eb-cda08f95092f"
+uuid: "55c797e5-4460-89c2-bd82-eb3d822a58d5"
+horo: 8
 typography:
-  partition: fs
-  bondDegree: 69
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 82
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - api
-    - atom
-    - dimension
-    - file
-    - github
-    - law
-    - matter
-    - mcp
-    - path
-    - snapshot
-    - url
-    - uuid
-    - word
-  matrix:
-    - api
-    - atom
-    - dimension
-    - file
-    - fs
-    - generate
-    - github
-    - law
-    - matter
-    - mcp
-    - path
-    - reference
-    - snapshot
-    - url
-    - uuid
-    - word
-  backlinks:
-    - api
-    - atom
-    - dimension
-    - file
-    - fs
-    - generate
-    - github
-    - law
-    - matter
-    - mcp
-    - path
-    - reference
-    - snapshot
-    - url
-    - uuid
-    - word
 signatures:
-  computationUuid: "0ca2db01-aaf7-81a8-bda3-1760cf6bec64"
+  computationUuid: "eb42b6b7-b3d5-87e9-a097-3316530ad94c"
   stages:
     - stage: path
-      stageUuid: "034f930f-cc31-8ad5-91c7-af56e5f38665"
+      stageUuid: "34f2404a-04d4-8368-b3e7-0e4a54b1e7de"
     - stage: trinity
-      stageUuid: "3c179eb4-5e39-8fd4-8fe9-c5e7acba5685"
+      stageUuid: "cbf50aa7-4b8a-8e12-8361-189969b56b46"
     - stage: boundary
-      stageUuid: "e01acd1c-8141-870b-b25c-30418710a486"
+      stageUuid: "d8b42da3-27fa-8956-846c-922560a390d1"
     - stage: links
-      stageUuid: "bf210b30-138b-8e59-9c96-5c318d4060dc"
+      stageUuid: "d6b7bb1d-5685-8783-b3b0-5ce7fe79d1e7"
     - stage: horo
-      stageUuid: "8b7739b8-a54b-842e-8179-63fa5716c939"
+      stageUuid: "143ebfc4-77d6-8bf7-8e95-bf8dc5f1d043"
     - stage: seal
-      stageUuid: "a2f7133c-112c-8ced-a90c-c92fe7195df6"
+      stageUuid: "033d1095-e0b5-8d32-8a35-c24e6d12f489"
     - stage: uuid
-      stageUuid: "62ef6a01-4f5e-85b2-a159-ab91d96a9bd2"
+      stageUuid: "4849e922-2a0b-8fd3-94cf-c9e076e99f11"
 version: 2
 ---
 # fs — the tree of paths to content

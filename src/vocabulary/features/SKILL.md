@@ -1,68 +1,35 @@
 ---
 name: features
 description: "Use when reasoning about features as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/features
-coordinate: features · 2/share · e83ebb73
-contentUuid: "b5f47809-584b-55dc-9560-1769d1210274"
-diamondUuid: "b1f5f52d-bd62-8b64-90be-ee746c4c2787"
-uuid: "e83ebb73-1e9b-8337-bebf-21419886fb6a"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - diet
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - diet
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/features"
+coordinate: "vocabulary/features · 8/crest · a7aad9a6"
+contentUuid: "dba1ffb5-6353-5656-b619-59757732720d"
+diamondUuid: "2f694490-182f-843c-81ef-16174dd8bfea"
+uuid: "a7aad9a6-a727-8434-9bfc-c479a0519f37"
+horo: 8
 typography:
-  partition: features
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - diet
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - diet
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - diet
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "b7388237-2c83-82dc-b5dc-e74dedebfc97"
+  computationUuid: "889b8888-b83e-848c-8c9d-0a1103bbff02"
   stages:
     - stage: path
-      stageUuid: "7affff81-9355-8b76-a082-db6a14e3822b"
+      stageUuid: "cf28be30-5c4a-800e-933a-118cbcbd6f59"
     - stage: trinity
-      stageUuid: "a5992156-d156-8b57-a586-9f900d022e45"
+      stageUuid: "fddc2072-c72e-83ce-88c2-2de539088e3d"
     - stage: boundary
-      stageUuid: "84a15a5f-8b47-8b8b-a023-35b787c97fed"
+      stageUuid: "2f28db09-b01f-8051-a61a-741241b4a53d"
     - stage: links
-      stageUuid: "7f0f4bfa-550d-8876-a742-36fedb9c1637"
+      stageUuid: "8351cf40-1cd3-880c-95e5-87e367e5e3e0"
     - stage: horo
-      stageUuid: "bcb775b2-e33f-8bab-bae2-48a1d8dfdcd6"
+      stageUuid: "c914c5e2-c2bf-8bcf-8d15-8154f33e770f"
     - stage: seal
-      stageUuid: "809b55d0-2069-8eda-aff7-a415e96caf75"
+      stageUuid: "b61f8819-ca54-8c61-a120-58bc81d94bbf"
     - stage: uuid
-      stageUuid: "8e76f77a-9f91-89fe-975b-7f4c2a869b80"
+      stageUuid: "820980e2-2a52-8b6d-9500-073c267bfc0f"
 version: 2
 ---
 # features

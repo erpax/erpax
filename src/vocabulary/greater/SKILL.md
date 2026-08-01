@@ -1,53 +1,35 @@
 ---
 name: greater
 description: Use when reasoning about greater — This ordering relation for qualitative values indicates that the subject is greater than the object.
-atomPath: vocabulary/greater
-coordinate: greater · 1/base · 88eb5e47
-contentUuid: "abbe3086-0ddc-5c32-9c3c-7a47c079ee19"
-diamondUuid: "7847caef-064a-8746-b462-c474c1d28601"
-uuid: "88eb5e47-d95d-823b-aa2a-3764212ddeec"
-horo: 1
-bonds:
-  in:
-    - equal
-    - law
-  out:
-    - equal
-    - law
+atomPath: "vocabulary/greater"
+coordinate: "vocabulary/greater · 8/crest · a5edc7ff"
+contentUuid: "6a5bc451-0fdc-5a45-a3f8-83e6aea3fe45"
+diamondUuid: "b81f3e54-8e52-8a09-a01a-82c6180a1a5c"
+uuid: "a5edc7ff-7d7b-8aae-8bb2-877d863bf49f"
+horo: 8
 typography:
-  partition: greater
+  partition: vocabulary
   bondDegree: 7
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - equal
-    - law
-  matrix:
-    - equal
-    - law
-  backlinks:
-    - equal
-    - law
 signatures:
-  computationUuid: "704f8fb0-c6e0-8897-9ba0-f58280098b53"
+  computationUuid: "af9c50eb-48e3-8f0a-ba79-63086f3f1feb"
   stages:
     - stage: path
-      stageUuid: "df707106-07a7-8dcc-864c-d3cfe070b957"
+      stageUuid: "0d92e4e8-7dd7-8ed7-8ab1-be6e10504b60"
     - stage: trinity
-      stageUuid: "77aec416-2004-891d-9aa7-74e5e138f9ac"
+      stageUuid: "add7ce1b-23b1-8742-9f14-a5ebe794b361"
     - stage: boundary
-      stageUuid: "246927dd-92b9-83ae-bde1-f8821a6d4d08"
+      stageUuid: "b2bddfb8-64cd-86b0-a913-363e3791a73d"
     - stage: links
-      stageUuid: "7e4a0c5a-4741-8c45-ab8c-f7db6570ba9c"
+      stageUuid: "6cde14a5-f2d0-8068-89ef-dcc8d238259f"
     - stage: horo
-      stageUuid: "ada880ff-01f6-8f36-b68e-ae20e643ab8e"
+      stageUuid: "52981c5f-6eaa-8b4a-94fb-b2ac2bc34a49"
     - stage: seal
-      stageUuid: "07d76088-45c2-8434-a93d-52cc86a80593"
+      stageUuid: "faa95174-5041-8daa-abf7-d6c11de16d4a"
     - stage: uuid
-      stageUuid: "4fbbf7ce-9746-819e-bb87-fd1bde819c6e"
+      stageUuid: "4799336f-2603-8628-8e6f-2872a5cb5ced"
 version: 2
 ---
 # greater

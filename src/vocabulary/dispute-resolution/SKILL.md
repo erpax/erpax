@@ -1,80 +1,34 @@
 ---
 name: "dispute-resolution"
 description: "Use when a contract specifies dispute handling — mechanism (litigation, arbitration, mediation), forum/arbitrator, procedural rules (discovery, evidence, cost allocation), escalation (negotiation→mediation→arbitration)."
-atomPath: vocabulary/dispute-resolution
-coordinate: "dispute-resolution · 5/round · 2d779941"
-contentUuid: "a2d94012-47cf-5899-9f19-59b54994c6d6"
-diamondUuid: "fe9e5724-7e58-8fe5-b865-c55370ca3918"
-uuid: "2d779941-3a49-8ae5-b2b8-e16ae0cdf54a"
-horo: 5
-bonds:
-  in:
-    - cases
-    - contracts
-    - governinglaw
-    - jurisdiction
-    - law
-    - liability
-    - matter
-    - remediation
-  out:
-    - cases
-    - contracts
-    - governinglaw
-    - jurisdiction
-    - law
-    - liability
-    - matter
-    - remediation
+atomPath: "vocabulary/dispute-resolution"
+coordinate: "vocabulary/dispute-resolution · 4/weave · bc0e4331"
+contentUuid: "658afdf8-7907-5b8a-a5cc-fc18f6b09c19"
+diamondUuid: "e453bc55-6040-8949-9406-20b992c7bf27"
+uuid: "bc0e4331-bc06-876c-912d-97e0bce70615"
+horo: 4
 typography:
-  partition: "dispute-resolution"
-  bondDegree: 24
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 22
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - contracts
-    - jurisdiction
-    - law
-    - liability
-    - matter
-    - remediation
-  matrix:
-    - cases
-    - contracts
-    - governinglaw
-    - jurisdiction
-    - law
-    - liability
-    - matter
-    - remediation
-  backlinks:
-    - cases
-    - contracts
-    - governinglaw
-    - jurisdiction
-    - law
-    - liability
-    - matter
-    - remediation
 signatures:
-  computationUuid: "468dd329-af67-8f50-b212-b8e05bd53e5a"
+  computationUuid: "0864cfe7-a9d3-8d25-92b9-92b85e3ceb01"
   stages:
     - stage: path
-      stageUuid: "0e7c798f-e128-86a6-b6f4-85cfa3b4f3f4"
+      stageUuid: "b138951c-c7a7-8d12-8709-dd8e801cbcc0"
     - stage: trinity
-      stageUuid: "696309d0-0a48-8723-aa39-a2ad329a42d0"
+      stageUuid: "baceab6c-fc96-8482-a719-4c288472234e"
     - stage: boundary
-      stageUuid: "1d739297-5ecf-80f0-bcd4-c2c38503c1f0"
+      stageUuid: "261247db-9763-8a56-96c7-d51ee2a955c2"
     - stage: links
-      stageUuid: "656dca65-d9af-895f-8bd9-f2005df3a3bd"
+      stageUuid: "6cbbe764-db14-8640-8d0f-5d1bffd63df4"
     - stage: horo
-      stageUuid: "5bcdf8b7-3a56-8279-aab3-cd3c369dbe53"
+      stageUuid: "f3036339-07b6-8d42-b3cd-c37ad5f19026"
     - stage: seal
-      stageUuid: "2bc95012-c204-84d7-abab-8e24e516be2c"
+      stageUuid: "6a04554a-aac6-8357-8bf4-709943ee2883"
     - stage: uuid
-      stageUuid: "b2b82b97-1c08-8c13-b775-8a457df678b8"
+      stageUuid: "f218fac1-288e-8a3f-a210-7ce677004d63"
 version: 2
 ---
 # dispute-resolution

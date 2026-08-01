@@ -1,63 +1,35 @@
 ---
 name: character
 description: Use when reasoning about character — Fictional person connected with a creative work.
-atomPath: vocabulary/character
-coordinate: character · 1/base · 0253a126
-contentUuid: "ea8d5f47-dec9-5b40-963c-eab8c20c4af8"
-diamondUuid: "bf2831d4-d35e-8954-95a6-21d37970a542"
-uuid: "0253a126-e305-813c-ae23-1e10a8efc958"
-horo: 1
-bonds:
-  in:
-    - attribute
-    - law
-    - name
-    - spoken
-  out:
-    - attribute
-    - law
-    - name
-    - spoken
+atomPath: "vocabulary/character"
+coordinate: "vocabulary/character · 8/crest · dfc04727"
+contentUuid: "b14d4c37-e8a9-5ab7-ac43-7bf914863718"
+diamondUuid: "c176de78-9656-83ec-9c8b-77590151001d"
+uuid: "dfc04727-a061-8e69-b09b-036b0d880e92"
+horo: 8
 typography:
-  partition: character
+  partition: vocabulary
   bondDegree: 14
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - attribute
-    - law
-    - name
-    - spoken
-  matrix:
-    - attribute
-    - law
-    - name
-    - spoken
-  backlinks:
-    - attribute
-    - law
-    - name
-    - spoken
 signatures:
-  computationUuid: "5af5fb2e-fd7d-84d2-83e2-346bc063e78d"
+  computationUuid: "fc8afc3d-cc82-87ae-9b3e-6f41201417d7"
   stages:
     - stage: path
-      stageUuid: "be360fb1-5bdd-8194-b13e-8865a2075d8d"
+      stageUuid: "165d962f-3c9d-890f-8716-83bc63b52a4b"
     - stage: trinity
-      stageUuid: "abcd86dd-e80d-83cc-93e6-41e4c082c416"
+      stageUuid: "d3591593-4c2e-8974-af0d-18e002b7d8ee"
     - stage: boundary
-      stageUuid: "f333a567-62dd-8f79-8fee-d41e2364dcb7"
+      stageUuid: "e39010ca-1891-83a9-86b2-1f722a36ccb5"
     - stage: links
-      stageUuid: "c84c1a19-4d7d-8bc9-8252-b215b835df62"
+      stageUuid: "60922afb-eee3-8e29-a5b2-d9dabbe5d016"
     - stage: horo
-      stageUuid: "4ba35919-567c-83a4-9467-3632eae3b05b"
+      stageUuid: "8c88a444-6726-8475-bfd9-b48f4f997713"
     - stage: seal
-      stageUuid: "9e0fa7fe-85d1-8f9d-bae4-898d562b6a20"
+      stageUuid: "1629e5e8-f6ef-8ce4-8d42-7f74a445d6eb"
     - stage: uuid
-      stageUuid: "f132e047-5f83-86fc-95b7-a83cde2b3713"
+      stageUuid: "0414efe2-5e0e-8f7a-a930-f3a5644c036a"
 version: 2
 ---
 # character

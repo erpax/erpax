@@ -1,68 +1,35 @@
 ---
 name: draw
 description: "Use when reasoning about draw as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/draw
-coordinate: draw · 5/round · c1b49964
-contentUuid: "0ddf0deb-f91d-5b20-bb4f-df6f05d977b4"
-diamondUuid: "431f6d58-eaea-8117-add8-5d1afeac1bb4"
-uuid: "c1b49964-5119-8548-8489-185f41360ffa"
-horo: 5
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/draw"
+coordinate: "vocabulary/draw · 8/crest · 51a2fbe4"
+contentUuid: "f997d9cf-953e-5e40-91f9-4534080d6218"
+diamondUuid: "742407d6-b4b7-8340-81cf-62cbdf82a05f"
+uuid: "51a2fbe4-5e39-8d33-b617-471a781f47be"
+horo: 8
 typography:
-  partition: draw
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "50d0df2c-df10-8ae9-99b6-ae1c67e37e4e"
+  computationUuid: "6959f56c-5001-8cde-88f6-2e8588dbe0c2"
   stages:
     - stage: path
-      stageUuid: "314fa66f-1253-8b6d-98e5-6c4bce708f73"
+      stageUuid: "a0997cb6-d3b0-8cf3-ad80-60f71df6594d"
     - stage: trinity
-      stageUuid: "ebebf618-a0fa-86a4-a3a4-a3f0e01999d3"
+      stageUuid: "90a0097a-efdd-8887-830c-58e9056f1313"
     - stage: boundary
-      stageUuid: "c844ea7c-e63e-8023-aebb-d273a304610b"
+      stageUuid: "d9abc27b-f466-8a73-be31-bedeee00cff9"
     - stage: links
-      stageUuid: "e8ab4b70-7397-8a67-8c95-f3c32f5568df"
+      stageUuid: "b7bb3ab6-d5d8-8f0b-8812-78d7be4cab44"
     - stage: horo
-      stageUuid: "e74b7c65-d4c4-8618-8c37-c783700825c7"
+      stageUuid: "b50ac85f-11d4-88fb-9dcc-64e03c20a656"
     - stage: seal
-      stageUuid: "2557c09f-82fb-8f57-9822-ada6c2920c62"
+      stageUuid: "de6705ab-d3de-8f1f-8ff9-814f2d4dbf2d"
     - stage: uuid
-      stageUuid: "1c0a0474-e9fc-8d34-9733-cf1235efbaca"
+      stageUuid: "533ce0a7-deb9-8577-a7bd-cf63b5e6e494"
 version: 2
 ---
 # draw

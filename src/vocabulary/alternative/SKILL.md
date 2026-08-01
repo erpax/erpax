@@ -1,53 +1,35 @@
 ---
 name: alternative
 description: Use when reasoning about alternative — Another gene which is a variation of this one.
-atomPath: vocabulary/alternative
-coordinate: alternative · 8/crest · 5cb808e5
-contentUuid: "826e39fb-7d35-5b28-994e-bf080bcc34bc"
-diamondUuid: "16e6e21e-e1eb-81f3-8eab-f9d2079b6a4a"
-uuid: "5cb808e5-3545-8445-9ad2-d55b5cbf4492"
+atomPath: "vocabulary/alternative"
+coordinate: "vocabulary/alternative · 8/crest · cca58cf2"
+contentUuid: "72a103ca-91f4-5760-9e66-b6be32c42db5"
+diamondUuid: "243a9bb2-f0cd-8ddd-875d-502e810138cd"
+uuid: "cca58cf2-9eef-85bc-967b-a8816dc6a8b1"
 horo: 8
-bonds:
-  in:
-    - headline
-    - law
-  out:
-    - headline
-    - law
 typography:
-  partition: alternative
+  partition: vocabulary
   bondDegree: 7
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - headline
-    - law
-  matrix:
-    - headline
-    - law
-  backlinks:
-    - headline
-    - law
 signatures:
-  computationUuid: "79c4cda8-345a-8124-98bd-1126e46fac9a"
+  computationUuid: "1318da52-3652-806d-9d53-e7be4f8b3ff0"
   stages:
     - stage: path
-      stageUuid: "0a7af85d-cbae-8121-8d86-82dba4a45d95"
+      stageUuid: "34e2d2ce-84b3-8e47-ade7-65ef4171d999"
     - stage: trinity
-      stageUuid: "ea276efe-40a0-875f-92c3-9072453a629a"
+      stageUuid: "51a3fd3f-b68c-8ed0-a1c1-693f5ea9c7e6"
     - stage: boundary
-      stageUuid: "378057b9-98dc-81ea-81f6-32112644f76f"
+      stageUuid: "7c2f7e37-070d-8e91-8143-ac0d800c0776"
     - stage: links
-      stageUuid: "49634342-3bd9-895e-a908-c25094358f5d"
+      stageUuid: "aaf3b1f9-c262-898e-83ef-19f5e782a632"
     - stage: horo
-      stageUuid: "0775151f-0973-841c-8b11-e00afd43d5dd"
+      stageUuid: "906403d7-3255-8a2b-b44a-bfc1829125b3"
     - stage: seal
-      stageUuid: "d06f058b-e59f-8953-805c-4bfef27306af"
+      stageUuid: "8f6afff2-adc4-8d2b-afce-494fc2e675f4"
     - stage: uuid
-      stageUuid: "ddc14d3e-641f-8530-967e-604c0d61b586"
+      stageUuid: "6fe1d99e-a3d3-8889-92cf-24aafd05a38d"
 version: 2
 ---
 # alternative

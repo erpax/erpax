@@ -1,68 +1,35 @@
 ---
 name: notice
 description: "Use when reasoning about notice as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/notice
-coordinate: notice · 8/crest · c979510f
-contentUuid: "bc6d25a9-622c-5a50-ab63-31fad71f3e99"
-diamondUuid: "628334b6-84d1-8c0c-bee8-933af8e4c79b"
-uuid: "c979510f-3115-817f-bad3-6fa8a0b46ee3"
+atomPath: "vocabulary/notice"
+coordinate: "vocabulary/notice · 8/crest · 4f0c5771"
+contentUuid: "b17c8d6c-e9d3-51ac-a577-f3ec44d2e313"
+diamondUuid: "2709648a-3811-80a7-bcdc-c4d817975489"
+uuid: "4f0c5771-7ae1-8fa7-b384-96d85002fb6d"
 horo: 8
-bonds:
-  in:
-    - collapse
-    - copyright
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - copyright
-    - law
-    - merge
-    - sti
 typography:
-  partition: notice
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - copyright
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - copyright
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - copyright
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "7fb1e669-38aa-8f78-b1bf-2ed592ca307d"
+  computationUuid: "65f8d2a0-e5c4-8abd-8825-ec6f8de3d48b"
   stages:
     - stage: path
-      stageUuid: "08db4c14-be56-85e0-9e3a-9900ecf03cea"
+      stageUuid: "705fe5fe-e3ee-8090-8067-47dd4051baa0"
     - stage: trinity
-      stageUuid: "19b5d57d-61f2-8749-bcb8-30a427585c38"
+      stageUuid: "de31072d-f9e5-8b93-8727-362094bf645e"
     - stage: boundary
-      stageUuid: "d5e95c21-f7c3-8995-9f24-61b6ebf24a2d"
+      stageUuid: "e8fbba4b-284f-88df-857a-41abc3b4c868"
     - stage: links
-      stageUuid: "c1d053f2-de8c-894e-a845-fbcec32c5707"
+      stageUuid: "9bb9ff60-9088-8df1-95c9-ea35fc45386c"
     - stage: horo
-      stageUuid: "3d26114c-16eb-8214-af64-082638c08729"
+      stageUuid: "4f7bdfb7-0c4e-83f0-b81d-431d5bd7848a"
     - stage: seal
-      stageUuid: "8641af97-ab44-8bec-a7fa-4bb9f84b67b3"
+      stageUuid: "577ef7c9-aaf8-8c20-9ad8-184f630f37e1"
     - stage: uuid
-      stageUuid: "8c70b7f6-6a28-85e3-9143-f34fd65f1199"
+      stageUuid: "f7709df8-8a8a-8049-9cba-ce5fcc31ddaf"
 version: 2
 ---
 # notice

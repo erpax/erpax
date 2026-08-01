@@ -1,68 +1,35 @@
 ---
 name: mobility
 description: "Use when reasoning about mobility as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/mobility
-coordinate: mobility · 5/round · 6eec3ac8
-contentUuid: "9f5e56d0-9c73-54e0-8ea4-f55cf1b448d3"
-diamondUuid: "10d9a46c-470b-8e8a-8887-ddddc6a990d4"
-uuid: "6eec3ac8-beeb-8baf-af1c-55e3f01cb0a9"
+atomPath: "vocabulary/mobility"
+coordinate: "vocabulary/mobility · 5/round · 2d058bee"
+contentUuid: "10c64a47-e48d-5f46-a2a2-dbdd6dc189f6"
+diamondUuid: "418cc34f-0178-87af-a23a-20eb56b72f79"
+uuid: "2d058bee-a528-87e5-a440-368b2a376e43"
 horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - provider
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - provider
-    - sti
 typography:
-  partition: mobility
-  bondDegree: 16
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 19
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - provider
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - provider
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - provider
-    - sti
 signatures:
-  computationUuid: "eead1cf5-496e-8aa9-b69e-2d467ae41403"
+  computationUuid: "8d716f36-daef-875d-a2e5-12aaecf2d7c6"
   stages:
     - stage: path
-      stageUuid: "96a852b0-9fa4-8858-b349-f9a9f4fc5de8"
+      stageUuid: "b7a9c5fb-84c1-8053-9977-5473c15597c3"
     - stage: trinity
-      stageUuid: "4f4561fa-a20f-8f48-a31c-a8b5b30547cc"
+      stageUuid: "2d9ec4f0-e47f-83dd-9216-55bd27cd9514"
     - stage: boundary
-      stageUuid: "124591c9-3799-8cc2-9d9b-ce40e5f65244"
+      stageUuid: "c4632dfa-b3fc-85f7-812c-dcbd8f649477"
     - stage: links
-      stageUuid: "378f0ced-e42e-8208-94ef-641af090a6d7"
+      stageUuid: "f7253f7d-0973-84c4-8db0-1542ff47a829"
     - stage: horo
-      stageUuid: "4a09e373-5fca-818e-a94c-d62de7dbac33"
+      stageUuid: "ebdaf49b-8b62-8747-969e-fac945fc3c97"
     - stage: seal
-      stageUuid: "02af8782-a815-8954-9ee8-6187d0ad313f"
+      stageUuid: "69c9720f-0ccc-8eee-be54-d2c82dada27c"
     - stage: uuid
-      stageUuid: "c0ceb80a-bde0-8c73-8e13-b82df9e25733"
+      stageUuid: "5bf2bb95-06c0-80aa-b5f1-e1ad5540a89a"
 version: 2
 ---
 # mobility

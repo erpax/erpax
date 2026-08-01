@@ -1,73 +1,35 @@
 ---
 name: investment
 description: "Use when reasoning about investment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/investment
-coordinate: investment · 5/round · 8415bee0
-contentUuid: "d70144b8-c45c-529b-b9ae-7197b47b3956"
-diamondUuid: "0b34a509-1cef-8335-8841-2c04dd71a8d6"
-uuid: "8415bee0-81bc-8338-97c1-3bb032b90f55"
+atomPath: "vocabulary/investment"
+coordinate: "vocabulary/investment · 5/round · 82cfffe1"
+contentUuid: "196799cb-cbee-59a9-b433-85a61c63be64"
+diamondUuid: "6dcfb041-2945-8b02-b92d-16dcb3ca236f"
+uuid: "82cfffe1-0d0d-8aa8-a923-240686756348"
 horo: 5
-bonds:
-  in:
-    - collapse
-    - deposit
-    - fund
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - deposit
-    - fund
-    - law
-    - merge
-    - sti
 typography:
-  partition: investment
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - deposit
-    - fund
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - deposit
-    - fund
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - deposit
-    - fund
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "8f9b1b88-1a6b-84b4-a723-fa888c6a7d3b"
+  computationUuid: "224ecc27-8024-8d29-a1f9-38bd6919b3b5"
   stages:
     - stage: path
-      stageUuid: "97b40c97-ac9d-8b83-9f60-d9aabeee1dc8"
+      stageUuid: "2309dde6-a627-813f-b561-37418d46b8b8"
     - stage: trinity
-      stageUuid: "c72bff60-1db9-8020-9307-2098e5867606"
+      stageUuid: "363c7a8f-1018-8229-bbb1-1eaaa159cd4a"
     - stage: boundary
-      stageUuid: "1c8dbabe-ff2e-875f-931c-3c6bd311b45f"
+      stageUuid: "0ad807b4-e687-8a15-9630-a2d27b3bec77"
     - stage: links
-      stageUuid: "d50ae966-1ead-8b8c-85ac-176e28e8bdf2"
+      stageUuid: "aac52399-3174-8207-9001-39d7399015e9"
     - stage: horo
-      stageUuid: "11357e5f-fb0d-845f-a103-04ca3a27cb76"
+      stageUuid: "c440f5c2-f58f-8421-855d-c506c0c1ded8"
     - stage: seal
-      stageUuid: "a2dbdc3f-7db6-8179-82e3-0172845e5e12"
+      stageUuid: "08a5467d-66ae-852f-8961-3fdcff62a186"
     - stage: uuid
-      stageUuid: "f2f036f2-734c-8b8a-a123-9b6d36d14d7c"
+      stageUuid: "1fbb65a2-19a1-8be3-9cc2-942bbfdc6b70"
 version: 2
 ---
 # investment

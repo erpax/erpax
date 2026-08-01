@@ -1,106 +1,34 @@
 ---
 name: mycelium
 description: "Use when modelling a living network with NO center — mycelium is the fungal body as a self-organizing web of hyphae that explores, connects, and transports nutrients with no brain and no coordinator; the literal decentralization and the substrate of the mycorrhizal trade. Nature's proof of the wired whole — but the 'wood wide web' is real as a network while its 'mother tree' resource-sharing is contested."
-atomPath: vocabulary/mycelium
-coordinate: mycelium · 7/descent · 1bbce7a8
-contentUuid: "0c543508-4a6c-5482-9339-2870480b2ce7"
-diamondUuid: "83950bac-5944-8250-a245-04ac6a5915a3"
-uuid: "1bbce7a8-6c40-8f71-807b-db7e12054e35"
+atomPath: "vocabulary/mycelium"
+coordinate: "vocabulary/mycelium · 7/descent · f772e652"
+contentUuid: "97569bc5-9fbe-5bc1-b302-9afe6ac7f1d2"
+diamondUuid: "4a8a0ad3-efb6-85ed-bc01-17b7475322bd"
+uuid: "f772e652-e18e-86b1-a49d-4ed8bc33e425"
 horo: 7
-bonds:
-  in:
-    - biomass
-    - compost
-    - connections
-    - conservation
-    - decentralization
-    - ecosystem
-    - law
-    - lichen
-    - merge
-    - mycorrhizae
-    - network
-    - soil
-    - symbiosis
-  out:
-    - biomass
-    - compost
-    - connections
-    - conservation
-    - decentralization
-    - ecosystem
-    - law
-    - lichen
-    - merge
-    - mycorrhizae
-    - network
-    - soil
-    - symbiosis
 typography:
-  partition: mycelium
+  partition: vocabulary
   bondDegree: 40
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - biomass
-    - compost
-    - connections
-    - conservation
-    - decentralization
-    - ecosystem
-    - law
-    - merge
-    - mycorrhizae
-    - network
-    - soil
-    - symbiosis
-  matrix:
-    - biomass
-    - compost
-    - connections
-    - conservation
-    - decentralization
-    - ecosystem
-    - law
-    - lichen
-    - merge
-    - mycorrhizae
-    - network
-    - soil
-    - symbiosis
-  backlinks:
-    - biomass
-    - compost
-    - connections
-    - conservation
-    - decentralization
-    - ecosystem
-    - law
-    - lichen
-    - merge
-    - mycorrhizae
-    - network
-    - soil
-    - symbiosis
 signatures:
-  computationUuid: "3b9b6110-8bcf-8985-9d21-c010b6d4803f"
+  computationUuid: "0cf15192-3ddd-8dc7-af12-3e91732a964b"
   stages:
     - stage: path
-      stageUuid: "b7474535-5944-85d7-b19f-d6d61277dbe3"
+      stageUuid: "8a199687-fd65-8184-b1f2-c9ee1a047ffe"
     - stage: trinity
-      stageUuid: "73ac0036-01ec-8e29-84bc-1d497fde3839"
+      stageUuid: "7152507e-d3f2-8a1a-a29d-c603be10961f"
     - stage: boundary
-      stageUuid: "eeb7c4b2-6515-8c47-81e5-7286942b5d77"
+      stageUuid: "e2b24c8b-7884-8ad8-801f-9090b3594119"
     - stage: links
-      stageUuid: "b60f0867-c159-8de2-adc0-bb82ccfa5819"
+      stageUuid: "a06c1542-da24-89cf-9a3c-3d3478466324"
     - stage: horo
-      stageUuid: "5b57aa2c-f441-8aab-b72e-a0b3b7cfe229"
+      stageUuid: "7096fc9d-d36a-80a7-bbfa-f5d6a172d687"
     - stage: seal
-      stageUuid: "95807085-c00f-87f9-b67a-a5b2695adc96"
+      stageUuid: "4f65aa75-ef07-82a1-bde1-ef164a147d0c"
     - stage: uuid
-      stageUuid: "1cde8d3b-3fee-81aa-8c6a-afc84e4e1a46"
+      stageUuid: "8836ed3b-b4e0-833f-aa12-cb62b0e28159"
 version: 2
 ---
 # mycelium — the network that is a body (decentralization, alive)

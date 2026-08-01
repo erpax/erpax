@@ -1,118 +1,35 @@
 ---
 name: offer
 description: "Use when reasoning about offer — An offer to transfer some rights to an item or to provide a service — for example, an offer to sell tickets to an event, to rent the DVD of a movie, to stream a TV show over the in"
-atomPath: vocabulary/offer
-coordinate: offer · 5/round · 0d1a7919
-contentUuid: "596d0f0f-d459-5d24-ab67-a5b4bb34a020"
-diamondUuid: "5f809d72-ead3-80dd-b478-ec02acbeb439"
-uuid: "0d1a7919-868a-8f40-a605-ae0be9ae2412"
-horo: 5
-bonds:
-  in:
-    - accepted
-    - aggregate
-    - catalog
-    - condition
-    - count
-    - details
-    - has
-    - item
-    - law
-    - lease
-    - makes
-    - participation
-    - purchase
-    - shipping
-    - sponsorship
-  out:
-    - accepted
-    - aggregate
-    - catalog
-    - condition
-    - count
-    - details
-    - has
-    - item
-    - law
-    - lease
-    - makes
-    - participation
-    - purchase
-    - shipping
-    - sponsorship
+atomPath: "vocabulary/offer"
+coordinate: "vocabulary/offer · 1/base · fbe37314"
+contentUuid: "c8b290d5-1592-547f-946d-a17d2ab372d1"
+diamondUuid: "4dcabbe1-65ce-8898-b94c-370e65a9adfb"
+uuid: "fbe37314-6e2a-8964-9412-0396ef2512b9"
+horo: 1
 typography:
-  partition: offer
-  bondDegree: 58
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 60
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - accepted
-    - aggregate
-    - catalog
-    - condition
-    - count
-    - details
-    - has
-    - item
-    - law
-    - lease
-    - makes
-    - participation
-    - purchase
-    - shipping
-    - sponsorship
-  matrix:
-    - accepted
-    - aggregate
-    - catalog
-    - condition
-    - count
-    - details
-    - has
-    - item
-    - law
-    - lease
-    - makes
-    - participation
-    - purchase
-    - shipping
-    - sponsorship
-  backlinks:
-    - accepted
-    - aggregate
-    - catalog
-    - condition
-    - count
-    - details
-    - has
-    - item
-    - law
-    - lease
-    - makes
-    - participation
-    - purchase
-    - shipping
-    - sponsorship
 signatures:
-  computationUuid: "e4e4e97d-ad26-836f-a079-8e46e36a97fe"
+  computationUuid: "5249e7af-19d1-88aa-95e6-5e6d383383ba"
   stages:
     - stage: path
-      stageUuid: "52101e79-ab2d-8fca-a0b9-b8d2420e027b"
+      stageUuid: "ad782c4e-ca00-85da-909b-350504b6a3f4"
     - stage: trinity
-      stageUuid: "b5fd8d09-e37d-85f8-b2fe-de0044a2d2c4"
+      stageUuid: "16576b79-d925-82f5-9b61-dc1a2c64305d"
     - stage: boundary
-      stageUuid: "17c01623-1ee6-8fb1-b9e1-cc023c2e8d67"
+      stageUuid: "44aefb47-9355-8636-b2da-c8d483ec9936"
     - stage: links
-      stageUuid: "11870827-a811-8108-a9bb-9481954eb492"
+      stageUuid: "1e1a0b3f-83e0-8aa3-91cc-2c4b0601e072"
     - stage: horo
-      stageUuid: "349088a5-814c-807f-8045-227a5fb7359c"
+      stageUuid: "56910d55-0456-8870-bed6-5a802fcbe33d"
     - stage: seal
-      stageUuid: "b9e8e571-eecd-8555-81b2-5b3617746c73"
+      stageUuid: "f6496f94-ba3d-81b0-8108-d7dfd8a2f8ce"
     - stage: uuid
-      stageUuid: "41250fd3-5db0-89d6-bb39-9524e325491f"
+      stageUuid: "8d7a0d9b-98ca-82b9-a868-1328c8b3f27d"
 version: 2
 ---
 # offer

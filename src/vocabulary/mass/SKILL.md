@@ -1,93 +1,35 @@
 ---
 name: mass
 description: "Use when reasoning about mass — Properties that take Mass as values are of the form '&lt;Number&gt; &lt;Mass unit of measure&gt;'. E.g., '7 kg'."
-atomPath: vocabulary/mass
-coordinate: mass · 7/descent · 640ee0be
-contentUuid: "4e0ca7a6-4bf5-53e3-8d08-4264655e7e81"
-diamondUuid: "bdb3f2a6-8146-8dce-90c5-5c3d42f15103"
-uuid: "640ee0be-1cd7-865d-bf08-af5c288f9562"
+atomPath: "vocabulary/mass"
+coordinate: "vocabulary/mass · 7/descent · dc1ea043"
+contentUuid: "103f74f7-32ef-5102-b71f-499de9119097"
+diamondUuid: "a5227e6e-deb2-81a8-9e33-712e90f4bfd6"
+uuid: "dc1ea043-4982-8e47-a3e9-e8e96e9ffabf"
 horo: 7
-bonds:
-  in:
-    - collide
-    - entropy
-    - fusion
-    - gravity
-    - law
-    - network
-    - propose
-    - science
-    - tamper
-    - thing
-    - topography
-    - void
-  out:
-    - collide
-    - entropy
-    - fusion
-    - gravity
-    - law
-    - network
-    - propose
-    - science
-    - tamper
-    - thing
-    - topography
-    - void
 typography:
-  partition: mass
+  partition: vocabulary
   bondDegree: 37
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - collide
-    - entropy
-    - fusion
-    - gravity
-    - law
-    - network
-    - propose
-    - science
-    - tamper
-    - thing
-    - topography
-    - void
-  backlinks:
-    - collide
-    - entropy
-    - fusion
-    - gravity
-    - law
-    - network
-    - propose
-    - science
-    - tamper
-    - thing
-    - topography
-    - void
 signatures:
-  computationUuid: "dd5138bf-09ae-8528-b12c-baf8e0e8a56f"
+  computationUuid: "cdfbaf61-fd9d-8a32-a6d4-e7aded1e1160"
   stages:
     - stage: path
-      stageUuid: "116d3ab5-f9c6-84ac-bad5-82e2ce11ab8f"
+      stageUuid: "99143c6a-3bcd-832e-a5f0-9ffdb2cedbd3"
     - stage: trinity
-      stageUuid: "775e2e1c-2716-8fd7-b890-2b0cb092acef"
+      stageUuid: "ab554be2-4f8f-820c-919b-333a79f4c304"
     - stage: boundary
-      stageUuid: "99cc6b39-e96e-865d-9929-05407f3535ac"
+      stageUuid: "4a6cb235-4fe6-8c8d-b60d-d30b8e56c65d"
     - stage: links
-      stageUuid: "26bd9cd0-9d5a-8d7c-bc0e-2e8cb5e99d02"
+      stageUuid: "1d07feca-bfe0-8947-b8e6-70886578bf13"
     - stage: horo
-      stageUuid: "e2006de3-7bf4-892b-b367-f6fbcd498faa"
+      stageUuid: "a70ef87b-2c3e-8f06-9bfa-a9ac7ebed9ba"
     - stage: seal
-      stageUuid: "0d3fae1c-a184-84ee-bd5a-c89ac047043d"
+      stageUuid: "91589af6-70b0-8a77-aaaf-f97bc69cc70f"
     - stage: uuid
-      stageUuid: "b38ae61b-10ac-8d7d-8569-47d4125833b3"
+      stageUuid: "341ca494-3f89-85f0-8b0c-750fe4952676"
 version: 2
 ---
 # mass

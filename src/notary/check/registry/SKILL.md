@@ -2,50 +2,21 @@
 name: registry
 description: "Use when a notary check must confirm a company exists and resolve its registered name/address — the REAL wired provider for registryAgency (Агенция по вписванията). Validates an EIK/ЕИК as a BG VAT number against the EU VIES service, which answers over the national Commercial Register in real time; no credential. Honest boundary — VIES gives existence + name + address; representatives/capital and the Property Register (title/encumbrance) need credentialed RegiX / data-sharing access, refused honestly."
 atomPath: "notary/check/registry"
-coordinate: "notary/check/registry · 7/descent · 1a141c76"
-contentUuid: "c55de6f8-8ccd-51d9-9d69-80ce7bdaaefd"
-diamondUuid: "830e870a-5df1-89be-bccb-9175da5b43f0"
-uuid: "1a141c76-ba20-830c-9ca4-e075069c928a"
+coordinate: "notary/check/registry · 7/descent · 0c74689a"
+contentUuid: "1bcf7759-c600-551c-9c15-466c1c092f08"
+diamondUuid: "54522c43-6f80-86ca-8995-71257085f078"
+uuid: "0c74689a-6ceb-8408-bdf5-16d056890b97"
 horo: 7
-bonds:
-  in:
-    - check
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
   partition: notary
   bondDegree: 15
-  neighbors: []
 standards:
   - "Bulgarian Commercial Register (Търговски регистър) — EIK/ЕИК company identity"
   - "Council Directive 2006/112/EC (VAT) · VIES — cross-border registered-taxpayer validation"
-  - "EU-2006/43"
   - "EU-VAT-Directive"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - notary
-    - standards
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "f90b9d16-e02a-8166-82af-1c1eb3512978"
+  computationUuid: "d7bbaec9-c5a5-802e-b2a5-4fcf8766c862"
   stages:
     - stage: path
       stageUuid: "62be28ea-e63e-8245-b065-c99bc8028413"
@@ -56,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "ed52fded-1c62-8d52-aa51-9215cd618bd9"
     - stage: horo
-      stageUuid: "5b489ba5-1fc0-8c5e-9f71-bbdbbd5e5dcd"
+      stageUuid: "6290a7c8-5eee-8c67-837a-fd745115f6b1"
     - stage: seal
       stageUuid: "77f1d446-dde5-8b26-93b5-9744382e2004"
     - stage: uuid
-      stageUuid: "e60bb381-f334-8260-8bd1-ba4b2ac83fc5"
+      stageUuid: "73e005bd-4818-8c6a-908b-52000b2feeb7"
 version: 2
 ---
 # registry — real company verification via VIES

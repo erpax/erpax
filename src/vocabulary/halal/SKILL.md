@@ -1,63 +1,35 @@
 ---
 name: halal
 description: "Use when reasoning about halal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/halal
-coordinate: halal · 8/crest · c02ee852
-contentUuid: "118360ba-7e44-5dcc-a327-eac8236d81a9"
-diamondUuid: "4d418a3a-93aa-80d5-8abe-3de9b78ac974"
-uuid: "c02ee852-c98b-8ebf-b1f8-34e5e34de2d4"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/halal"
+coordinate: "vocabulary/halal · 1/base · 1c9b4198"
+contentUuid: "84306f57-bae6-501e-8546-f0cbfb0a9b91"
+diamondUuid: "576d57f8-64e9-88c9-9859-1ae7b7e2de78"
+uuid: "1c9b4198-d889-838f-baeb-41f531dc1fae"
+horo: 1
 typography:
-  partition: halal
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "5b988759-e181-8d42-b997-a3afe0dfca63"
+  computationUuid: "3cf39360-5e17-8811-ba27-8c92393b59d6"
   stages:
     - stage: path
-      stageUuid: "a70fe233-2693-88b3-8b51-3317c0ecacc3"
+      stageUuid: "0e3f828e-82e2-8f9e-a6fb-f352e1f77ee6"
     - stage: trinity
-      stageUuid: "1243b97f-3d55-87d1-bdf6-eee5eea4cd9e"
+      stageUuid: "cd0d5692-713b-834a-8347-5cc53db39f49"
     - stage: boundary
-      stageUuid: "6d4656a4-dfd9-8663-8d68-f6417918e823"
+      stageUuid: "c49511ba-3a52-86f8-a47b-25bc0d1d1b47"
     - stage: links
-      stageUuid: "35415de6-d68b-8235-acca-e1bd936d4b6d"
+      stageUuid: "1c1b1de0-0324-8492-a5bd-d30dbba1432e"
     - stage: horo
-      stageUuid: "9ea8fa96-3262-8c18-9275-d4f2b9d1c93c"
+      stageUuid: "33efb29e-7a6b-8036-a605-0b06b19de492"
     - stage: seal
-      stageUuid: "104477a9-148c-8d20-943e-bfc273cb739a"
+      stageUuid: "17cd046c-e592-8c53-935d-5f3b84f6f7b6"
     - stage: uuid
-      stageUuid: "f3aef431-29a0-85bd-8164-3f558af41f6b"
+      stageUuid: "2a84203b-d77d-8de8-8888-f222d26a1cc0"
 version: 2
 ---
 # halal

@@ -1,66 +1,34 @@
 ---
 name: discount
 description: "Use when applying promotional/volume/loyalty price reductions — percent or fixed amount, scope (item/order/customer), validity period, approval workflow."
-atomPath: vocabulary/discount
-coordinate: discount · 8/crest · d552e4cb
-contentUuid: "2664bd3c-8d31-5a6e-a7fc-a760a3c3a314"
-diamondUuid: "73d30d97-4482-876e-a444-e2ea6a28b06f"
-uuid: "d552e4cb-afc8-8f3c-ba71-4dec6f3c074b"
-horo: 8
-bonds:
-  in:
-    - bundle
-    - currency
-    - orders
-    - quotes
-    - rate
-  out:
-    - bundle
-    - currency
-    - orders
-    - quotes
-    - rate
+atomPath: "vocabulary/discount"
+coordinate: "vocabulary/discount · 5/round · 35fdfa78"
+contentUuid: "85a09aa9-76af-5806-b39f-19ddba25362d"
+diamondUuid: "7ba17ec1-0362-8f85-bd52-d29cedab0bb9"
+uuid: "35fdfa78-3030-83cd-8c61-46fc3eac51ab"
+horo: 5
 typography:
-  partition: discount
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - currency
-    - orders
-    - quotes
-    - rate
-  matrix:
-    - bundle
-    - currency
-    - orders
-    - quotes
-    - rate
-  backlinks:
-    - bundle
-    - currency
-    - orders
-    - quotes
-    - rate
 signatures:
-  computationUuid: "1eb07acb-6e44-83e0-b593-69cfc4a9c37e"
+  computationUuid: "ad6b4359-6d9b-86fd-81f3-a0661a86a02c"
   stages:
     - stage: path
-      stageUuid: "946e9bca-056b-83e6-85b8-f95b3e8611cd"
+      stageUuid: "92042231-7465-878b-94d1-26428ab42ad3"
     - stage: trinity
-      stageUuid: "3eeb77d3-0e53-800e-83db-0212fee6d5fa"
+      stageUuid: "c6fffa8b-1aa8-8d16-999f-992db5f88b2b"
     - stage: boundary
-      stageUuid: "b232ef3c-b43b-837d-b33e-d41c7cd000b5"
+      stageUuid: "f3899a5b-b98c-8448-800e-97f03937f481"
     - stage: links
-      stageUuid: "48a47d85-edbe-8114-a32a-8e94405c16b2"
+      stageUuid: "b091c003-3f94-8b45-8f88-207e4848bc98"
     - stage: horo
-      stageUuid: "e73380e0-405d-8f42-89e9-18515bbe43e1"
+      stageUuid: "dedd2f10-df5d-8a40-ac35-df879e0be8e3"
     - stage: seal
-      stageUuid: "d89a57b7-b262-8e91-b9f6-87578a7ed711"
+      stageUuid: "be053964-0cd7-8472-8ea8-a4af28128361"
     - stage: uuid
-      stageUuid: "9bbd4727-3209-8bce-8d42-f158e9340d02"
+      stageUuid: "9e78bbaa-5380-8526-8b70-f45002972991"
 version: 2
 ---
 # discount

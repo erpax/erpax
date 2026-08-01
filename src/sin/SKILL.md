@@ -2,133 +2,18 @@
 name: sin
 description: "Use when reasoning about missing the mark — a measured deviation from the law/target, the violation a guardian catches. Not a stain but a distance: sin is entropy with a direction away from the whole, cured by turning back (reverse) and the debt released (mercy), never by hiding the gap."
 atomPath: sin
-coordinate: sin · 5/round · 046e08a1
-contentUuid: "42881009-40ba-54d1-adeb-f42e02a0f81e"
-diamondUuid: "82802b0c-3021-8992-a62e-4dee6e11348a"
-uuid: "046e08a1-33a8-8364-b90f-45876c1cc77b"
-horo: 5
-bonds:
-  in:
-    - archangel
-    - architect
-    - aura
-    - balance
-    - christianity
-    - covenant
-    - entropy
-    - gate
-    - guardian
-    - hallucination
-    - judaism
-    - law
-    - mercy
-    - profane
-    - protestantism
-    - purity
-    - religion
-    - return
-    - reverse
-    - sacred
-    - sequence
-    - suffering
-    - whole
-  out:
-    - archangel
-    - architect
-    - aura
-    - balance
-    - christianity
-    - covenant
-    - entropy
-    - gate
-    - guardian
-    - hallucination
-    - judaism
-    - law
-    - mercy
-    - profane
-    - protestantism
-    - purity
-    - religion
-    - return
-    - reverse
-    - sacred
-    - sequence
-    - suffering
-    - whole
+coordinate: "sin · 2/share · d1a902d0"
+contentUuid: "588b985b-3768-5cc1-8439-20b366736e11"
+diamondUuid: "637dd1d7-ce31-8885-866d-fefe0658d7fe"
+uuid: "d1a902d0-6d50-8432-944b-f0a8b2e05536"
+horo: 2
 typography:
   partition: sin
   bondDegree: 70
-  neighbors:
-    - aura
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - aura
-    - balance
-    - entropy
-    - gate
-    - guardian
-    - law
-    - mercy
-    - profane
-    - return
-    - reverse
-    - sacred
-    - sequence
-    - suffering
-    - whole
-  matrix:
-    - archangel
-    - architect
-    - aura
-    - balance
-    - christianity
-    - covenant
-    - entropy
-    - gate
-    - guardian
-    - hallucination
-    - judaism
-    - law
-    - mercy
-    - profane
-    - protestantism
-    - purity
-    - religion
-    - return
-    - reverse
-    - sacred
-    - sequence
-    - suffering
-    - whole
-  backlinks:
-    - archangel
-    - architect
-    - aura
-    - balance
-    - christianity
-    - covenant
-    - entropy
-    - gate
-    - guardian
-    - hallucination
-    - judaism
-    - law
-    - mercy
-    - profane
-    - protestantism
-    - purity
-    - religion
-    - return
-    - reverse
-    - sacred
-    - sequence
-    - suffering
-    - whole
 signatures:
-  computationUuid: "5ddd6929-0448-830a-a2bb-e0ffcd0db077"
+  computationUuid: "253316a0-a6fa-8f6f-80e3-395e4c7cdfc9"
   stages:
     - stage: path
       stageUuid: "8486f780-ea33-82b7-8c77-f49e64f831d9"
@@ -139,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "1f97ff3c-9dec-8bc2-a0c1-a075f7acdbf1"
     - stage: horo
-      stageUuid: "7cae212c-d283-8fb5-803c-c61eaa5d1fa5"
+      stageUuid: "e5aca580-a7ed-8708-99e5-121c1524eba0"
     - stage: seal
-      stageUuid: "b01c75fd-0e3d-8778-9247-ffe9ff3fed4a"
+      stageUuid: "f371b33d-abee-8aea-a7bd-cd095bbf1c3a"
     - stage: uuid
-      stageUuid: "e8c86b40-5cba-842b-bc31-e3ce6a3cbd32"
+      stageUuid: "e8ba3c0f-0fd4-8426-bcec-600c49bb9d03"
 version: 2
 ---
 # sin — missing the mark (the caught deviation from the law)

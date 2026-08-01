@@ -2,57 +2,19 @@
 name: uk
 description: "Use when reasoning about uk as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: uk
-coordinate: uk · 2/share · 5a17583f
-contentUuid: "7a5e1d78-3e0e-5d5e-b7f8-9c3ab2e9a8c1"
-diamondUuid: "eeee0430-5299-863f-89c3-15dbca018ac5"
-uuid: "5a17583f-4f88-8a7e-9733-40d1f4d912b0"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - nonprofit
-    - sti
-    - type
-  out:
-    - collapse
-    - law
-    - merge
-    - nonprofit
-    - sti
-    - type
+coordinate: "uk · 4/weave · a79e9bd3"
+contentUuid: "c7e16d87-c825-540d-9ffd-12a96c7e7c5f"
+diamondUuid: "ef157ec9-bed0-8ea3-9221-0056c420d086"
+uuid: "a79e9bd3-67c4-8610-a9a1-f7c4c0f7a0ee"
+horo: 4
 typography:
   partition: uk
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - nonprofit
-    - sti
-    - type
-  matrix:
-    - collapse
-    - law
-    - merge
-    - nonprofit
-    - sti
-    - type
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - nonprofit
-    - sti
-    - type
 signatures:
-  computationUuid: "7503731e-0576-852d-a5ee-18aefc45336c"
+  computationUuid: "beb1d176-afd6-8378-9375-867d616e8f6c"
   stages:
     - stage: path
       stageUuid: "119bfc0e-51c1-8584-bcc7-947c028c936d"
@@ -63,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2584f402-d023-8ecd-b240-a2c6f60f6cfa"
     - stage: horo
-      stageUuid: "1d6b80fa-6e4c-87a4-b871-a3f3af1ac39e"
+      stageUuid: "9e6fe097-0309-8dcb-9bcb-2bb842ce1f2b"
     - stage: seal
-      stageUuid: "b6302acf-80a1-84e5-8660-f4ed4490bcaa"
+      stageUuid: "d429a5b6-f098-8445-9517-898a85067356"
     - stage: uuid
-      stageUuid: "42a55c7c-b247-8662-b604-aa2501a13ca2"
+      stageUuid: "02607115-d2c5-80e6-bba6-3229ba0f3be7"
 version: 2
 ---
 # uk

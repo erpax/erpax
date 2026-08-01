@@ -2,176 +2,18 @@
 name: ritual
 description: "Use when reasoning about the patterned sacred repeat — the enacted cycle that re-tunes the part to the whole on a fixed period. The communal, outward twin of prayer's inward breath: where prayer is the self attuning, ritual is the rite performed, idempotent so the same act collapses to the same sealed alignment."
 atomPath: ritual
-coordinate: ritual · 1/base · 954d433f
-contentUuid: "ec7aea66-5ea4-53e0-8ee1-28f19bb099ed"
-diamondUuid: "d3c11853-a4ef-8928-84ef-bc3ac50ad0b0"
-uuid: "954d433f-b86b-8433-8aad-3d1f56051b65"
-horo: 1
-bonds:
-  in:
-    - animism
-    - archangel
-    - architect
-    - bogomilism
-    - breath
-    - catholicism
-    - christianity
-    - confucianism
-    - cycle
-    - entropy
-    - fast
-    - fire
-    - harmony
-    - hinduism
-    - identity
-    - islam
-    - judaism
-    - law
-    - order
-    - orthodoxy
-    - paganism
-    - prayer
-    - religion
-    - repetition
-    - return
-    - sacred
-    - seal
-    - self
-    - shamanism
-    - shinto
-    - wheel
-    - whole
-    - worship
-  out:
-    - animism
-    - archangel
-    - architect
-    - bogomilism
-    - breath
-    - catholicism
-    - christianity
-    - confucianism
-    - cycle
-    - entropy
-    - fast
-    - fire
-    - harmony
-    - hinduism
-    - identity
-    - islam
-    - judaism
-    - law
-    - order
-    - orthodoxy
-    - paganism
-    - prayer
-    - religion
-    - repetition
-    - return
-    - sacred
-    - seal
-    - self
-    - shamanism
-    - shinto
-    - wheel
-    - whole
-    - worship
+coordinate: "ritual · 8/crest · c6e648eb"
+contentUuid: "47c32758-7b71-5791-8d64-8cfea266d0df"
+diamondUuid: "937d5657-315b-89c7-9e87-fcc0b7cf95e2"
+uuid: "c6e648eb-1e0f-8988-b23e-2493c23dac9e"
+horo: 8
 typography:
   partition: ritual
   bondDegree: 99
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - breath
-    - cycle
-    - entropy
-    - fast
-    - fire
-    - harmony
-    - identity
-    - law
-    - order
-    - prayer
-    - repetition
-    - return
-    - sacred
-    - seal
-    - self
-    - wheel
-    - whole
-    - worship
-  matrix:
-    - animism
-    - archangel
-    - architect
-    - bogomilism
-    - breath
-    - catholicism
-    - christianity
-    - confucianism
-    - cycle
-    - entropy
-    - fast
-    - fire
-    - harmony
-    - hinduism
-    - identity
-    - islam
-    - judaism
-    - law
-    - order
-    - orthodoxy
-    - paganism
-    - prayer
-    - religion
-    - repetition
-    - return
-    - sacred
-    - seal
-    - self
-    - shamanism
-    - shinto
-    - wheel
-    - whole
-    - worship
-  backlinks:
-    - animism
-    - archangel
-    - architect
-    - bogomilism
-    - breath
-    - catholicism
-    - christianity
-    - confucianism
-    - cycle
-    - entropy
-    - fast
-    - fire
-    - harmony
-    - hinduism
-    - identity
-    - islam
-    - judaism
-    - law
-    - order
-    - orthodoxy
-    - paganism
-    - prayer
-    - religion
-    - repetition
-    - return
-    - sacred
-    - seal
-    - self
-    - shamanism
-    - shinto
-    - wheel
-    - whole
-    - worship
 signatures:
-  computationUuid: "816d3d0c-8eb3-810d-909d-041265e41c5b"
+  computationUuid: "309d808a-7b8d-8f7b-bff3-0674fdbbf968"
   stages:
     - stage: path
       stageUuid: "a6cd656d-c0f5-8c21-b6c9-957b9c244f01"
@@ -182,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "38fc2ae6-44e8-8b17-8198-1ac7688d9310"
     - stage: horo
-      stageUuid: "be146d2f-ff17-8cd0-96ea-376069d3c92a"
+      stageUuid: "e19b7b84-572d-8561-ae34-939debc6ccba"
     - stage: seal
-      stageUuid: "e86ac4d4-4526-84e1-9eaa-d16da294bb24"
+      stageUuid: "2347ece1-09bb-8bbe-a130-5a841d00e74d"
     - stage: uuid
-      stageUuid: "06bd1447-d42a-83b9-97e7-e4ff2e5a1af6"
+      stageUuid: "eb167799-fc2e-8ab2-b823-0be859abed7e"
 version: 2
 ---
 # ritual — the patterned sacred repeat (the enacted cycle)

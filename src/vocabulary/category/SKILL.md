@@ -1,173 +1,35 @@
 ---
 name: category
 description: Use when reasoning about category — A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.
-atomPath: vocabulary/category
-coordinate: category · 7/descent · 58a6b032
-contentUuid: "1890b990-66e6-562e-b5bf-694cc08e9026"
-diamondUuid: "3e62e537-8ac1-803b-8524-266848ff165d"
-uuid: "58a6b032-92a3-893d-9336-0d42a1e4af03"
-horo: 7
-bonds:
-  in:
-    - accommodation
-    - activity
-    - application
-    - authenticity
-    - code
-    - cost
-    - credential
-    - drug
-    - efficiency
-    - energy
-    - has
-    - health
-    - law
-    - map
-    - media
-    - occupational
-    - pharmacy
-    - physical
-    - plan
-    - policy
-    - pregnancy
-    - recipe
-    - return
-    - set
-    - sub
-    - type
-  out:
-    - accommodation
-    - activity
-    - application
-    - authenticity
-    - code
-    - cost
-    - credential
-    - drug
-    - efficiency
-    - energy
-    - has
-    - health
-    - law
-    - map
-    - media
-    - occupational
-    - pharmacy
-    - physical
-    - plan
-    - policy
-    - pregnancy
-    - recipe
-    - return
-    - set
-    - sub
-    - type
+atomPath: "vocabulary/category"
+coordinate: "vocabulary/category · 1/base · 1a62554d"
+contentUuid: "129d3d75-e4bc-51e1-8055-2603b10a1530"
+diamondUuid: "875a3353-4193-8fae-a22d-0733a95d3407"
+uuid: "1a62554d-1b05-8f5c-b762-227bb29cb611"
+horo: 1
 typography:
-  partition: category
-  bondDegree: 98
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 100
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - accommodation
-    - activity
-    - application
-    - authenticity
-    - code
-    - cost
-    - credential
-    - drug
-    - efficiency
-    - energy
-    - has
-    - health
-    - law
-    - map
-    - media
-    - occupational
-    - pharmacy
-    - physical
-    - plan
-    - policy
-    - pregnancy
-    - recipe
-    - return
-    - set
-    - sub
-    - type
-  matrix:
-    - accommodation
-    - activity
-    - application
-    - authenticity
-    - code
-    - cost
-    - credential
-    - drug
-    - efficiency
-    - energy
-    - has
-    - health
-    - law
-    - map
-    - media
-    - occupational
-    - pharmacy
-    - physical
-    - plan
-    - policy
-    - pregnancy
-    - recipe
-    - return
-    - set
-    - sub
-    - type
-  backlinks:
-    - accommodation
-    - activity
-    - application
-    - authenticity
-    - code
-    - cost
-    - credential
-    - drug
-    - efficiency
-    - energy
-    - has
-    - health
-    - law
-    - map
-    - media
-    - occupational
-    - pharmacy
-    - physical
-    - plan
-    - policy
-    - pregnancy
-    - recipe
-    - return
-    - set
-    - sub
-    - type
 signatures:
-  computationUuid: "e9549cf6-88ca-8153-8702-a575acecee36"
+  computationUuid: "ba9c4885-860e-89b3-979b-b3b51e8c4ad6"
   stages:
     - stage: path
-      stageUuid: "78b1d20f-4284-8a6f-81e9-ceb8328c1782"
+      stageUuid: "7d619975-0ca9-8d39-8b29-ea73a44ed23b"
     - stage: trinity
-      stageUuid: "97b580ca-9f4b-88ea-9256-1d1affd2d9bb"
+      stageUuid: "31fead7f-2b91-8077-b814-5887dcdfc055"
     - stage: boundary
-      stageUuid: "b4314060-6469-8dd5-bd87-e66c2af5beba"
+      stageUuid: "4aae74d4-9cf0-8cc0-85d8-e1e34099aaec"
     - stage: links
-      stageUuid: "bcea4436-ae66-89e5-ae2c-896a4d430212"
+      stageUuid: "d8aab23a-af40-8fa6-9f99-ca8d346734c8"
     - stage: horo
-      stageUuid: "8f22f1bb-cbd0-8fbf-bb14-5e94db9d10d3"
+      stageUuid: "ddcf8602-2e67-87be-a4cd-21f8d1a9be28"
     - stage: seal
-      stageUuid: "2305c980-19a2-8d80-b6a3-56e3cbba9dae"
+      stageUuid: "10e23c5f-b227-86db-8078-7c7b4ddf7bec"
     - stage: uuid
-      stageUuid: "272f3210-ed09-8c31-b106-8600ce0c382f"
+      stageUuid: "44fcd28c-e6f9-881c-8d0e-f7d2f5e10ad7"
 version: 2
 ---
 # category

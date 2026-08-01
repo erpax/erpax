@@ -1,104 +1,34 @@
 ---
 name: breed
 description: "Use when classifying an animal by its genetic type — the breed (Angus, Holstein, Yorkshire), a genetically distinct sub-population with stable heritable traits, recorded in a breed registry with pedigree; and breeding (mating selection, AI, gestation). The animal-genetics classifier — distinct from taxonomy (the crop-variety tree)."
-atomPath: vocabulary/breed
-coordinate: breed · 4/weave · 558bdd0d
-contentUuid: "bad82897-00bd-57a8-8a64-fe81dc98fb74"
-diamondUuid: "3d9f0c04-b1ed-8616-a7d0-e931669f25f8"
-uuid: "558bdd0d-0245-8f99-a499-5a8bfd217f48"
-horo: 4
-bonds:
-  in:
-    - animal
-    - assets
-    - cohort
-    - forecast
-    - herd
-    - lactation
-    - law
-    - lineage
-    - livestock
-    - metric
-    - period
-    - science
-    - taxonomy
-  out:
-    - animal
-    - assets
-    - cohort
-    - forecast
-    - herd
-    - lactation
-    - law
-    - lineage
-    - livestock
-    - metric
-    - period
-    - science
-    - taxonomy
+atomPath: "vocabulary/breed"
+coordinate: "vocabulary/breed · 8/crest · 834e3cbf"
+contentUuid: "15a0d920-c456-5945-8feb-da7f68ff09fc"
+diamondUuid: "5d6c219b-5bf2-851d-93d4-25fd62670212"
+uuid: "834e3cbf-fea0-8384-a6bf-bbd9a46d74aa"
+horo: 8
 typography:
-  partition: breed
+  partition: vocabulary
   bondDegree: 41
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - animal
-    - assets
-    - cohort
-    - forecast
-    - law
-    - lineage
-    - livestock
-    - metric
-    - period
-    - taxonomy
-  matrix:
-    - animal
-    - assets
-    - cohort
-    - forecast
-    - herd
-    - lactation
-    - law
-    - lineage
-    - livestock
-    - metric
-    - period
-    - science
-    - taxonomy
-  backlinks:
-    - animal
-    - assets
-    - cohort
-    - forecast
-    - herd
-    - lactation
-    - law
-    - lineage
-    - livestock
-    - metric
-    - period
-    - science
-    - taxonomy
 signatures:
-  computationUuid: "aca4c7c7-f601-8ef2-b8ba-77382d45af15"
+  computationUuid: "cb4fa2e4-3e32-874e-9cd9-74fd120a16ce"
   stages:
     - stage: path
-      stageUuid: "87f187cc-563d-8582-a4f3-2902f46b10f2"
+      stageUuid: "02507ee6-036a-82ee-acf8-32f5f175bf36"
     - stage: trinity
-      stageUuid: "9f2be44c-1c7a-809d-ac55-7d2d83e2c7cf"
+      stageUuid: "5a51c438-8444-8db6-8c00-deeafd127ef3"
     - stage: boundary
-      stageUuid: "f4288fcd-3a49-89b1-8386-371a7e4aa2cb"
+      stageUuid: "8001f103-21fc-8f79-b6fb-517ed16ee89d"
     - stage: links
-      stageUuid: "56cef5f3-c753-8c8f-94d0-d9b90a3381af"
+      stageUuid: "2f0c8a70-5cf4-82e9-97c6-ba68c8985dca"
     - stage: horo
-      stageUuid: "c7d660fa-a38d-8bd2-b21a-e32cb24d4b44"
+      stageUuid: "b5685ddc-c1cd-84f3-87f2-54efb69d33cf"
     - stage: seal
-      stageUuid: "5bfdce37-2477-8a9d-bdb6-faa83c04f6ae"
+      stageUuid: "489c8284-c960-8278-a80d-41e7401f6c51"
     - stage: uuid
-      stageUuid: "24361a32-8186-837d-b136-8a5d7007a5e0"
+      stageUuid: "ba416ddb-bfd8-8f3d-8585-d5649466ce81"
 version: 2
 ---
 # breed — the animal's genetic type; the breeding selection

@@ -1,68 +1,35 @@
 ---
 name: mileage
 description: "Use when reasoning about mileage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/mileage
-coordinate: mileage · 8/crest · a3b3b997
-contentUuid: "68c4b1ff-cb69-58c5-93a0-691deece22c1"
-diamondUuid: "f7285cf2-3da9-8e1d-9920-90010e24029f"
-uuid: "a3b3b997-050f-8380-afd2-6454cd1f85f4"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - odometer
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - odometer
-    - sti
+atomPath: "vocabulary/mileage"
+coordinate: "vocabulary/mileage · 2/share · 3abbcf66"
+contentUuid: "b479346f-dd85-53d4-b00a-d6626dd8f077"
+diamondUuid: "2db9afe7-77d9-85a0-af45-31d00a59449f"
+uuid: "3abbcf66-e836-8329-a4f8-2d6f24d743e3"
+horo: 2
 typography:
-  partition: mileage
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - odometer
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - odometer
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - odometer
-    - sti
 signatures:
-  computationUuid: "a8957fcc-6e23-8f93-b221-b57a5a6c0c7e"
+  computationUuid: "90d97401-843f-8ab3-b8ed-6315ab477dc6"
   stages:
     - stage: path
-      stageUuid: "dd3fc49b-be2d-8297-bdab-64441fbc8287"
+      stageUuid: "5158b4ca-d766-8385-8a85-7de6b3853add"
     - stage: trinity
-      stageUuid: "8f66644b-0214-81d9-98ae-6216e6d63b97"
+      stageUuid: "c6de7a42-86b9-872f-85d2-29f3aae84f8f"
     - stage: boundary
-      stageUuid: "66cb1ee1-e27a-8822-9215-9ed84dc6f5cf"
+      stageUuid: "a2ec9648-daf0-85d7-b6c0-339a92e7a452"
     - stage: links
-      stageUuid: "6c7fa265-ebcb-8568-a0fd-267eafaef30b"
+      stageUuid: "8ea930d2-75bb-8881-b662-6b51f2a274e6"
     - stage: horo
-      stageUuid: "5808637a-c118-8980-b110-4d2086ca4e04"
+      stageUuid: "6e79346b-38d0-86dd-a265-ef8cfc729d0c"
     - stage: seal
-      stageUuid: "6d5f69c3-b2f9-8400-a7ef-a1361daaddf5"
+      stageUuid: "33634d3a-1176-8cce-b62d-ecc8c5b27a5f"
     - stage: uuid
-      stageUuid: "751b93da-76cd-845c-9a5e-75279f63e613"
+      stageUuid: "fa44eabc-a27a-8121-914d-64f825e1f575"
 version: 2
 ---
 # mileage

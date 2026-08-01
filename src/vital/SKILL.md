@@ -2,64 +2,19 @@
 name: vital
 description: "Use when reasoning about vital as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: vital
-coordinate: vital · 2/share · b892dfe4
-contentUuid: "c0bbb6d7-2c6c-5612-b1dd-6941d17b2b20"
-diamondUuid: "94dc9f15-a34b-8d98-ad74-4842c2be9810"
-uuid: "b892dfe4-1a1f-87d0-b28f-a04f7a4d20c3"
-horo: 2
-bonds:
-  in:
-    - analog
-    - biometric
-    - collapse
-    - emr
-    - law
-    - merge
-    - sign
-    - sti
-  out:
-    - analog
-    - biometric
-    - collapse
-    - emr
-    - law
-    - merge
-    - sign
-    - sti
+coordinate: "vital · 1/base · 5701b59d"
+contentUuid: "aca21164-d8b2-53a0-8ca5-81082f49e71c"
+diamondUuid: "3e93d308-b1fd-85df-8e14-37619028d38e"
+uuid: "5701b59d-4746-8cd6-b895-627b76ec050e"
+horo: 1
 typography:
   partition: vital
-  bondDegree: 25
-  neighbors: []
+  bondDegree: 37
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sign
-    - sti
-  matrix:
-    - analog
-    - biometric
-    - collapse
-    - emr
-    - law
-    - merge
-    - sign
-    - sti
-  backlinks:
-    - analog
-    - biometric
-    - collapse
-    - emr
-    - law
-    - merge
-    - sign
-    - sti
 signatures:
-  computationUuid: "d54b1aab-2be2-8b9c-8ace-698a250beb21"
+  computationUuid: "7cf84791-87c7-8000-8b41-0795a53aa6fc"
   stages:
     - stage: path
       stageUuid: "d6b95085-8941-80d0-b41b-d267888bc3d8"
@@ -70,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f9fcb439-3872-8f38-883d-617e7a0041a9"
     - stage: horo
-      stageUuid: "0bd3a163-9be7-8327-8744-a44c4c5b2a9c"
+      stageUuid: "5509d795-c4f2-8172-a189-b03f460cb252"
     - stage: seal
-      stageUuid: "d9b3a128-7b11-872f-9097-84300dd87be0"
+      stageUuid: "a34b291e-4cc7-89c5-8901-ebdb6891d56f"
     - stage: uuid
-      stageUuid: "d247d17e-7eb2-8532-8bdb-1fe70cc7a217"
+      stageUuid: "ef2ce3b4-45ec-8690-8bf4-ef40ae71afff"
 version: 2
 ---
 # vital

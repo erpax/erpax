@@ -1,78 +1,35 @@
 ---
 name: gs
 description: "Use when reasoning about gs as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/gs
-coordinate: gs · 8/crest · f7076a4a
-contentUuid: "55363662-1dc7-5f99-bac8-5185a0f99258"
-diamondUuid: "3b94bddc-f143-8c62-b2e0-1943602d6c5b"
-uuid: "f7076a4a-fbea-8ad1-aee2-850d7ba6a9e5"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - digital
-    - has
-    - law
-    - link
-    - merge
-    - sti
-  out:
-    - collapse
-    - digital
-    - has
-    - law
-    - link
-    - merge
-    - sti
+atomPath: "vocabulary/gs"
+coordinate: "vocabulary/gs · 1/base · 52e22d5f"
+contentUuid: "5e78575e-b4db-5794-b0c2-de24201ef639"
+diamondUuid: "d2deebb8-f12e-8bbb-8a1d-be99345a2085"
+uuid: "52e22d5f-1b6d-84ab-b9fe-e55557b33bff"
+horo: 1
 typography:
-  partition: gs
+  partition: vocabulary
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - digital
-    - has
-    - law
-    - link
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - digital
-    - has
-    - law
-    - link
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - digital
-    - has
-    - law
-    - link
-    - merge
-    - sti
 signatures:
-  computationUuid: "21ca2b40-e5eb-8af0-9b5c-d971ae4ddb00"
+  computationUuid: "6c0bf385-5e6b-85cf-8d42-c7094d69a7e3"
   stages:
     - stage: path
-      stageUuid: "c41d7d90-32fe-8270-a410-c82cb4efa2dd"
+      stageUuid: "06ffa816-7c65-86e1-b87a-9630677e9a68"
     - stage: trinity
-      stageUuid: "11bfc588-8bd5-85f7-993f-7a7f459741eb"
+      stageUuid: "701cf3b0-165c-828b-a848-33ec248c46a5"
     - stage: boundary
-      stageUuid: "9c6a1275-c481-803c-8991-823455f0fe19"
+      stageUuid: "7d5da426-ca1f-83d7-961b-cf4d02fdc09c"
     - stage: links
-      stageUuid: "2cb797f9-f99b-8471-aed7-04833e2bc99a"
+      stageUuid: "87ade3d0-7592-8266-9b70-f7f3bafbb003"
     - stage: horo
-      stageUuid: "b588ff4c-2c1d-89b3-b0d8-516c52cdd58b"
+      stageUuid: "7aba4298-edb0-8d2f-9859-6bd53a5160e5"
     - stage: seal
-      stageUuid: "b68ad6f5-652d-83d6-88ee-9ae9b2afa518"
+      stageUuid: "775ddd4a-dae9-8449-8a6e-096459a69e32"
     - stage: uuid
-      stageUuid: "7d7ce605-b58a-8a22-b85e-de5f75592f2d"
+      stageUuid: "e4b4b2c6-6c7a-8ba4-bac1-1562f2dbb036"
 version: 2
 ---
 # gs

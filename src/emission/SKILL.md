@@ -2,80 +2,27 @@
 name: emission
 description: "Use when quantifying the greenhouse-gas mass a cycle releases — converting each gas to CO₂-equivalent via its Global Warming Potential, summing a multi-gas inventory, computing activity-based emissions (GHG Protocol), or measuring carbon intensity (CO₂e per unit output). The DEBIT/EXPORT side of [[sustainability]]."
 atomPath: emission
-coordinate: "emission · 5/round · b11f62df"
-contentUuid: "49a74404-c66e-549e-866c-0048ede5edd0"
-diamondUuid: "989d8f91-9686-8e1a-b847-b01dc0a24893"
-uuid: "b11f62df-5878-8d65-9085-0352a256dfef"
-horo: 5
-bonds:
-  in:
-    - biophoton
-    - compost
-    - conservation
-    - ecosystem
-    - law
-    - meets
-    - merge
-    - standard
-    - sustainability
-  out:
-    - biophoton
-    - compost
-    - conservation
-    - ecosystem
-    - law
-    - meets
-    - merge
-    - standard
-    - sustainability
+coordinate: "emission · 4/weave · f6dc1d46"
+contentUuid: "b36340c7-e889-5446-926e-729466af67da"
+diamondUuid: "a6800457-e09a-8f45-90fe-89ffc84ecde9"
+uuid: "f6dc1d46-81c5-8a43-8e35-a21bec96e882"
+horo: 4
 typography:
   partition: emission
-  bondDegree: 28
-  neighbors: []
+  bondDegree: 26
 standards:
-  - "EU-2014/55"
   - "EU-537/2014"
   - "EU-910/2014"
   - "GHG Protocol Corporate Standard (Scope 1 / 2 / 3)"
   - "GHG-Protocol"
-  - "ILO-C100"
   - "IPCC AR5 (2014) — 100-yr Global Warming Potentials (Table 8.A.1)"
   - ISO 14064 — Greenhouse gas quantification and reporting
   - "ISO 14064 — Greenhouse gas quantification and reporting`"
   - "ISO-14064-1"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - compost
-    - conservation
-    - ecosystem
-    - law
-    - merge
-    - standard
-    - sustainability
-  matrix:
-    - biophoton
-    - compost
-    - conservation
-    - ecosystem
-    - law
-    - meets
-    - merge
-    - standard
-    - sustainability
-  backlinks:
-    - biophoton
-    - compost
-    - conservation
-    - ecosystem
-    - law
-    - meets
-    - merge
-    - standard
-    - sustainability
 signatures:
-  computationUuid: "ae754918-cdbc-80c9-b369-f20b98a5b2fa"
+  computationUuid: "a756330e-3758-8f89-aff8-c6c54ef13940"
   stages:
     - stage: path
       stageUuid: "6b83bd2a-a9d8-8e5b-bc63-da90403e5090"
@@ -84,13 +31,13 @@ signatures:
     - stage: boundary
       stageUuid: "5deff58a-e09c-8eb5-bd44-b7fcff219653"
     - stage: links
-      stageUuid: "b7e6154c-650f-84af-8dd0-ad32d25bd942"
+      stageUuid: "fffacdd8-a58a-8f2b-81ac-0f156e54b36e"
     - stage: horo
-      stageUuid: "1f424b74-af14-8453-bb4e-07e2b03f62c4"
+      stageUuid: "d7cf7773-bd6d-881d-a82d-26edd2c633a0"
     - stage: seal
       stageUuid: "d564da16-4ca8-8846-8076-c7070c3271a0"
     - stage: uuid
-      stageUuid: "93e0493b-7340-8b79-b1ac-26822a21f619"
+      stageUuid: "3105b775-9b31-8fa7-bf37-e4e3f8900283"
 version: 2
 ---
 # emission — the greenhouse-gas DEBIT a cycle releases (CO₂-equivalent)

@@ -1,53 +1,35 @@
 ---
 name: bone
 description: Use when reasoning about bone — Rigid connective tissue that comprises up the skeletal structure of the human body.
-atomPath: vocabulary/bone
-coordinate: bone · 7/descent · 1359119f
-contentUuid: "7a7a3173-b6ab-5de8-b181-2c44efd2a543"
-diamondUuid: "8a92df65-e73f-8b1f-a3eb-ee4180011e6a"
-uuid: "1359119f-88f4-8505-a56a-daf3a1595a98"
+atomPath: "vocabulary/bone"
+coordinate: "vocabulary/bone · 7/descent · 3af43a8c"
+contentUuid: "09535f55-1a9e-5ecf-972a-12f7225228a4"
+diamondUuid: "06f5b261-1ccb-8bc0-ab42-7b1abc740396"
+uuid: "3af43a8c-c46f-8dfe-9af3-3b53c49018a1"
 horo: 7
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
 typography:
-  partition: bone
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "79c361f3-61a8-8a69-9e5c-f0331050e870"
+  computationUuid: "a8b331e8-fd1c-81da-94ad-5f4fcd925f14"
   stages:
     - stage: path
-      stageUuid: "8be2eb76-b589-86c4-9b65-2af28e089742"
+      stageUuid: "2b74d316-03dc-88ff-86d8-277fbcba5fca"
     - stage: trinity
-      stageUuid: "1fb2c48c-de0d-89f2-84ab-1272d373f7a7"
+      stageUuid: "aa0d0848-9a6e-83c9-9408-9444794fb90c"
     - stage: boundary
-      stageUuid: "e081d3b0-c885-8a19-a0dd-f9d692c9b093"
+      stageUuid: "897f80ae-5bf6-8996-b069-3723a413818a"
     - stage: links
-      stageUuid: "d1371390-1fda-8c7c-8f51-642ba9f68cdd"
+      stageUuid: "765ffc84-d2c3-8160-8521-8d59c7968706"
     - stage: horo
-      stageUuid: "37faa421-abd5-85a9-81d4-a3288cfe8761"
+      stageUuid: "a6f64bbe-14e6-8f62-9477-0fd6807d568d"
     - stage: seal
-      stageUuid: "88850c77-ab8c-8003-aa9a-e7cfb2494d3a"
+      stageUuid: "df3c287c-8797-87e5-b439-965c1d815269"
     - stage: uuid
-      stageUuid: "5b960437-945d-879c-b6d1-9f42f822ab99"
+      stageUuid: "b8aa6904-a091-8349-b637-7004ee231e84"
 version: 2
 ---
 # bone

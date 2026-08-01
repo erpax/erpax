@@ -1,123 +1,35 @@
 ---
 name: count
 description: "Use when reasoning about count as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/count
-coordinate: count · 1/base · 7ec4f297
-contentUuid: "71a8f9a3-ef6b-59d0-bb66-03cf7c4d8646"
-diamondUuid: "e42858fa-e1f2-8339-8003-932d1147f304"
-uuid: "7ec4f297-c914-8814-a292-aa7ee72ab768"
-horo: 1
-bonds:
-  in:
-    - answer
-    - collapse
-    - comment
-    - downvote
-    - interaction
-    - law
-    - merge
-    - offer
-    - rating
-    - repeat
-    - review
-    - screen
-    - sti
-    - upvote
-    - user
-    - word
-  out:
-    - answer
-    - collapse
-    - comment
-    - downvote
-    - interaction
-    - law
-    - merge
-    - offer
-    - rating
-    - repeat
-    - review
-    - screen
-    - sti
-    - upvote
-    - user
-    - word
+atomPath: "vocabulary/count"
+coordinate: "vocabulary/count · 5/round · 0f5f5bb5"
+contentUuid: "197410bc-4eb4-5c44-babb-a140831f3571"
+diamondUuid: "3ff6da2c-8fc6-8ffe-ba73-57d59891c930"
+uuid: "0f5f5bb5-4ba4-8428-942f-b2623b3927f8"
+horo: 5
 typography:
-  partition: count
+  partition: vocabulary
   bondDegree: 59
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - answer
-    - collapse
-    - comment
-    - downvote
-    - interaction
-    - law
-    - merge
-    - offer
-    - rating
-    - repeat
-    - review
-    - screen
-    - sti
-    - upvote
-    - user
-    - word
-  matrix:
-    - answer
-    - collapse
-    - comment
-    - downvote
-    - interaction
-    - law
-    - merge
-    - offer
-    - rating
-    - repeat
-    - review
-    - screen
-    - sti
-    - upvote
-    - user
-    - word
-  backlinks:
-    - answer
-    - collapse
-    - comment
-    - downvote
-    - interaction
-    - law
-    - merge
-    - offer
-    - rating
-    - repeat
-    - review
-    - screen
-    - sti
-    - upvote
-    - user
-    - word
 signatures:
-  computationUuid: "5160b907-13cd-8d53-ac71-9a3a7ca33fb9"
+  computationUuid: "1a07812b-9d1e-8d56-9217-300e4932d148"
   stages:
     - stage: path
-      stageUuid: "ee41c121-cc76-8ab4-8471-35adc9665ebc"
+      stageUuid: "4a518f14-2f09-8111-8cd5-95ac03adabfa"
     - stage: trinity
-      stageUuid: "685e413a-5425-8d28-a81f-1a6758c20733"
+      stageUuid: "2b24dab8-ebf8-8814-8358-f4eac892b636"
     - stage: boundary
-      stageUuid: "f360a9fc-e830-874c-8931-65f4a8662b54"
+      stageUuid: "e6fa5c67-ef0a-8012-8488-5cd1af6bbf10"
     - stage: links
-      stageUuid: "f84fef98-0e8f-8800-beac-2ad38c2db2d5"
+      stageUuid: "e2af5839-a712-8c2a-8ce6-b3c2deba14c6"
     - stage: horo
-      stageUuid: "b40162c9-3124-80a9-b2d6-891a58c359f9"
+      stageUuid: "c97580ac-be6e-8367-b4e4-3282a21cd3be"
     - stage: seal
-      stageUuid: "3f4648db-71ae-8202-ace1-c3d5d57a97f3"
+      stageUuid: "1bb8d03c-2fb3-8424-8e18-2412b910709b"
     - stage: uuid
-      stageUuid: "4a9e5074-9dab-8c34-8522-5c32b6dee747"
+      stageUuid: "a8c3b3f6-9a62-8ca6-9aec-35e58d59ad0a"
 version: 2
 ---
 # count

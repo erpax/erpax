@@ -2,70 +2,18 @@
 name: transplant
 description: "Use when setting greenhouse-raised seedlings into the field — transplanting (vs direct seeding): plug or bare-root starts set at spacing, after hardening off. Transplanting buys earliness, uniformity, and a weed jump; direct seeding saves labor but ~10–20% may not establish. A method of planting, downstream of propagation."
 atomPath: transplant
-coordinate: transplant · 5/round · 7b7160e9
-contentUuid: "7bd4d684-35e6-50c7-bbbd-198b44e575da"
-diamondUuid: "3468fa10-2a2e-893f-84e8-204932759c8a"
-uuid: "7b7160e9-5ff4-8677-9947-a09f528691da"
-horo: 5
-bonds:
-  in:
-    - agriculture
-    - crop
-    - irrigation
-    - maturity
-    - mulch
-    - planting
-    - propagation
-    - seed
-    - spacing
-  out:
-    - agriculture
-    - crop
-    - irrigation
-    - maturity
-    - mulch
-    - planting
-    - propagation
-    - seed
-    - spacing
+coordinate: "transplant · 2/share · 18d6976a"
+contentUuid: "fb672da1-6e2a-57e6-b718-eede9a8dbdef"
+diamondUuid: "8fe49000-e20d-8c64-810a-302ae7182f2f"
+uuid: "18d6976a-9534-8e36-a196-0dc851888535"
+horo: 2
 typography:
   partition: transplant
   bondDegree: 32
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - crop
-    - irrigation
-    - mulch
-    - planting
-    - propagation
-    - seed
-    - spacing
-  matrix:
-    - agriculture
-    - crop
-    - irrigation
-    - maturity
-    - mulch
-    - planting
-    - propagation
-    - seed
-    - spacing
-  backlinks:
-    - agriculture
-    - crop
-    - irrigation
-    - maturity
-    - mulch
-    - planting
-    - propagation
-    - seed
-    - spacing
 signatures:
-  computationUuid: "ac4f854d-4b19-87b5-9be7-8b2b79bd4b6d"
+  computationUuid: "f0490c45-093e-8ff7-b3f9-39b009625c57"
   stages:
     - stage: path
       stageUuid: "6c2b8700-d8b1-8df9-b044-bc0d5bb3c954"
@@ -76,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c6e40dab-e966-838e-bb90-58f7fc642898"
     - stage: horo
-      stageUuid: "221e1409-887a-88cb-8851-f73841a1ca3e"
+      stageUuid: "706437d0-bb25-87bf-8fdd-c21eb28e8649"
     - stage: seal
-      stageUuid: "ee303edf-cb6e-884e-adbc-277f2fc73292"
+      stageUuid: "766fe60f-c8b2-89fc-9ea9-4766b6902976"
     - stage: uuid
-      stageUuid: "a75e830b-f466-8555-a3bc-9241d93eeee9"
+      stageUuid: "47650452-0ed8-8167-98a4-39a4cfe69948"
 version: 2
 ---
 # transplant — setting raised seedlings into the field

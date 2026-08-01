@@ -1,68 +1,35 @@
 ---
 name: listen
 description: "Use when reasoning about listen as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/listen
-coordinate: listen · 7/descent · 47077faa
-contentUuid: "1600242d-73aa-510d-8b6e-b8864da8c65e"
-diamondUuid: "7edb7889-e3bb-8622-a497-8184812994d3"
-uuid: "47077faa-2ff7-85bb-85c1-c933d175d77a"
-horo: 7
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/listen"
+coordinate: "vocabulary/listen · 8/crest · e22ef965"
+contentUuid: "e849d267-34c6-5e29-9da0-06f8cb96586b"
+diamondUuid: "28dd7044-97a2-8d2f-bcba-6b9092ca90f8"
+uuid: "e22ef965-efbf-835b-a467-c14c51d3a3cc"
+horo: 8
 typography:
-  partition: listen
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "54ad2b8a-183d-88df-a052-58ac7dcb303e"
+  computationUuid: "df58a15f-3285-8f4a-9dbf-35ffcf4477e1"
   stages:
     - stage: path
-      stageUuid: "124c4951-9370-8655-babd-0d9e22ed0670"
+      stageUuid: "cb62ea84-dd5d-84e0-be4b-2b1026d1544e"
     - stage: trinity
-      stageUuid: "7fa08958-4180-8a82-8f04-8d951ccd009d"
+      stageUuid: "cd8f19b2-243b-85da-adcd-898068608ec4"
     - stage: boundary
-      stageUuid: "8817cd6d-4257-8c8a-a93b-50d8999ccd8f"
+      stageUuid: "cf075419-6936-88e8-80bb-8c181791cd80"
     - stage: links
-      stageUuid: "a58d8474-e4bf-8481-bb1f-4b4560bd602f"
+      stageUuid: "b9839b79-ca86-860d-9666-944f1c1121ce"
     - stage: horo
-      stageUuid: "cd748ffb-16dc-8709-83ec-f2f4cf53cd60"
+      stageUuid: "4f4034d0-4efe-8626-a7fe-9622313931e2"
     - stage: seal
-      stageUuid: "c862fa11-80d5-8e25-bdad-c1d285882ada"
+      stageUuid: "fe82be81-1925-82f4-9415-3c2fc16aecd0"
     - stage: uuid
-      stageUuid: "25da0d95-8ca2-85f4-b35b-c2812a9d39db"
+      stageUuid: "101ebc31-6885-89af-aa74-564d93d207be"
 version: 2
 ---
 # listen

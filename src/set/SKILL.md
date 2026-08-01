@@ -2,67 +2,19 @@
 name: set
 description: "Use when reasoning about set as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: set
-coordinate: set · 8/crest · 59ce29fb
-contentUuid: "0eedcac1-53f6-5754-b552-96801cf2e2a9"
-diamondUuid: "434ea3ff-29c4-8b05-80a2-2197803239e6"
-uuid: "59ce29fb-d3cc-8a44-a74b-f489f2a25fa3"
+coordinate: "set · 8/crest · 1cc71d61"
+contentUuid: "d074c771-3ff2-53ec-aefd-0f9653d32848"
+diamondUuid: "653e8494-1b41-8951-9246-e3379f7c6f9e"
+uuid: "1cc71d61-af97-811d-ab26-207d5365765e"
 horo: 8
-bonds:
-  in:
-    - category
-    - code
-    - collapse
-    - defined
-    - law
-    - merge
-    - sti
-    - term
-  out:
-    - category
-    - code
-    - collapse
-    - defined
-    - law
-    - merge
-    - sti
-    - term
 typography:
   partition: set
   bondDegree: 27
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - category
-    - code
-    - collapse
-    - defined
-    - law
-    - merge
-    - sti
-    - term
-  matrix:
-    - category
-    - code
-    - collapse
-    - defined
-    - law
-    - merge
-    - sti
-    - term
-  backlinks:
-    - category
-    - code
-    - collapse
-    - defined
-    - law
-    - merge
-    - sti
-    - term
 signatures:
-  computationUuid: "f51e1207-b3b2-8702-8b76-92cd58c68b0d"
+  computationUuid: "3f73823e-57f7-872a-b989-09101f17cf96"
   stages:
     - stage: path
       stageUuid: "97c1aab6-a8ff-8b6c-88c5-e10166f6b73c"
@@ -73,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "32000a15-bf66-8c06-b123-441fb87e9467"
     - stage: horo
-      stageUuid: "4f26e769-cb5f-841c-85a1-31d91785a6aa"
+      stageUuid: "93d46544-f050-88f3-b2b1-f97b4d8beaf8"
     - stage: seal
-      stageUuid: "0e3e84ea-2191-800a-886b-fc069eb02539"
+      stageUuid: "6da8a292-faa0-833e-8ae9-ca6afcd06622"
     - stage: uuid
-      stageUuid: "c047011c-aabf-83b3-ab04-ad20ed850466"
+      stageUuid: "5855f6c1-9e5b-89de-8cb4-f39b37525a83"
 version: 2
 ---
 # set

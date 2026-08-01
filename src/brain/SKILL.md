@@ -2,90 +2,35 @@
 name: brain
 description: "Use when reasoning about erpax's matrix as the connectome organ — a small-world network where any node reaches any other in a handful of hops, wired sparsely yet integrated. ~86 billion neurons, ~150 trillion synapses; high clustering, short path length. Three properties (small-world path length · sparse efficient wiring · connectome-scale cross-check) are computed and mapped — a structural isomorphism — onto erpax's link graph and integrated self-model."
 atomPath: brain
-coordinate: "brain · 5/round · 21090bea"
-contentUuid: "4af4a62b-c717-5fe6-af51-7685eef07239"
-diamondUuid: "85eae472-fb6e-8981-951e-33ff2e37caff"
-uuid: "21090bea-1fc6-8feb-b6d7-2ce11840bc05"
-horo: 5
-bonds:
-  in:
-    - body
-    - brain
-    - consciousness
-    - gravity
-    - law
-    - merge
-    - network
-    - sparsity
-    - structure
-    - uuid
-  out:
-    - body
-    - brain
-    - consciousness
-    - gravity
-    - law
-    - merge
-    - network
-    - sparsity
-    - structure
-    - uuid
+coordinate: "brain · 1/base · 864620de"
+contentUuid: "79d59b40-81b1-538d-91e4-1f709fa54ed0"
+diamondUuid: "dc6d5508-84c3-8d6c-bfbf-d63806e7708f"
+uuid: "864620de-9930-857d-b7c5-8f56f46eeaca"
+horo: 1
 typography:
   partition: brain
   bondDegree: 34
-  neighbors: []
 standards:
   - "≈86×10⁹ neurons, ≈1.5×10¹⁴ synapses; brain networks are small-world (Bassett & Bullmore, 2006)"
   - "≈86×10⁹ neurons, ≈1.5×10¹⁴ synapses; brain networks are small-world (Bassett, Bullmore)"
 bindings: []
-neighbors:
-  wikilink:
-    - consciousness
-    - gravity
-    - law
-    - merge
-    - network
-    - sparsity
-    - uuid
-  matrix:
-    - body
-    - brain
-    - consciousness
-    - gravity
-    - law
-    - merge
-    - network
-    - sparsity
-    - structure
-    - uuid
-  backlinks:
-    - body
-    - brain
-    - consciousness
-    - gravity
-    - law
-    - merge
-    - network
-    - sparsity
-    - structure
-    - uuid
 signatures:
-  computationUuid: "e34a98ce-be64-8c5a-86aa-1e423bf028cd"
+  computationUuid: "19420373-6380-8097-ad26-0ed0a51bec52"
   stages:
     - stage: path
       stageUuid: "1ce92240-d9ae-8c67-8d43-fe65e783d44d"
     - stage: trinity
       stageUuid: "c00a5a3c-6dc7-8dba-8b6f-abcb8d970663"
     - stage: boundary
-      stageUuid: "f92b0c79-5479-8f5f-96c8-e3643f061e01"
+      stageUuid: "ae72c0be-0b18-8c98-81a4-136c14e83305"
     - stage: links
       stageUuid: "ca9365b0-b01d-8d08-a696-be1ef56449fb"
     - stage: horo
-      stageUuid: "e94cddf4-46ad-8944-99b3-b2b67cb93816"
+      stageUuid: "7c3c6244-027a-845c-ad94-f59a9b794457"
     - stage: seal
       stageUuid: "2fc162b7-51ab-826d-804c-38140fd92f53"
     - stage: uuid
-      stageUuid: "10fbec69-688e-8cee-bdb0-75ee5e20f50d"
+      stageUuid: "b725e1c5-55ce-8281-a003-52f8684a7457"
 version: 2
 ---
 # brain — the small-world connectome (the matrix)

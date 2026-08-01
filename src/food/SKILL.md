@@ -2,82 +2,19 @@
 name: food
 description: "Use when reasoning about food as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: food
-coordinate: "food · 8/crest · 6a708201"
-contentUuid: "7b470e5e-1ef5-5ed8-8db8-beff5308e30a"
-diamondUuid: "406477ce-60ef-871d-8625-ba9715fdea82"
-uuid: "6a708201-f695-8237-8e0b-44bbcc983f05"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - establishment
-    - event
-    - fast
-    - law
-    - merge
-    - reservation
-    - restaurant
-    - service
-    - sti
-    - warning
-  out:
-    - collapse
-    - establishment
-    - event
-    - fast
-    - law
-    - merge
-    - reservation
-    - restaurant
-    - service
-    - sti
-    - warning
+coordinate: "food · 4/weave · 120da080"
+contentUuid: "cc93abca-e2f4-57cb-b8e3-83b78df83d12"
+diamondUuid: "940df1b5-7523-8cd0-9679-19886677ebaa"
+uuid: "120da080-a7a0-8cb2-bff1-8f281fc790f5"
+horo: 4
 typography:
   partition: food
   bondDegree: 39
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - establishment
-    - event
-    - fast
-    - law
-    - merge
-    - reservation
-    - restaurant
-    - service
-    - sti
-    - warning
-  matrix:
-    - collapse
-    - establishment
-    - event
-    - fast
-    - law
-    - merge
-    - reservation
-    - restaurant
-    - service
-    - sti
-    - warning
-  backlinks:
-    - collapse
-    - establishment
-    - event
-    - fast
-    - law
-    - merge
-    - reservation
-    - restaurant
-    - service
-    - sti
-    - warning
 signatures:
-  computationUuid: "df5b7665-ff74-8bca-86b9-fd67f756a6e2"
+  computationUuid: "8ee268b6-39df-8b06-9738-66e9a9ef3299"
   stages:
     - stage: path
       stageUuid: "62ccbaa5-57ec-8477-8fb5-408d0e3e5d04"
@@ -88,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4afc03b1-4f64-85fe-8fbc-db37e453e2c8"
     - stage: horo
-      stageUuid: "378a8991-1ff3-8402-a2ac-a1df21b30fae"
+      stageUuid: "12cf2f6e-d660-8225-8485-915997d6d8ea"
     - stage: seal
       stageUuid: "e238794f-0eac-8c7a-8ea7-662b51399a2b"
     - stage: uuid
-      stageUuid: "1cfa47e8-85ba-8e56-982e-1508a18dbcd2"
+      stageUuid: "fbad0e03-96e4-8fdc-822c-a6e7b0735020"
 version: 2
 ---
 # food

@@ -2,61 +2,19 @@
 name: sea
 description: "Use when reasoning about sea as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: sea
-coordinate: sea · 2/share · ca35b628
-contentUuid: "7b1ee517-b85f-54d6-b28e-2aa151793b85"
-diamondUuid: "25f4cb31-4e25-8bfd-bd66-ee61ed86eeec"
-uuid: "ca35b628-02d6-8b88-ab00-bad28bcb3563"
-horo: 2
-bonds:
-  in:
-    - body
-    - collapse
-    - law
-    - marine
-    - merge
-    - sti
-    - water
-  out:
-    - body
-    - collapse
-    - law
-    - marine
-    - merge
-    - sti
-    - water
+coordinate: "sea · 4/weave · 2e35648e"
+contentUuid: "520de5df-bbf6-58b4-8c07-3d12fa75ffea"
+diamondUuid: "4b4c4640-2a83-80ec-a88f-c3754d0d2243"
+uuid: "2e35648e-61a1-89d4-9f6a-7cbc04cd5183"
+horo: 4
 typography:
   partition: sea
-  bondDegree: 22
-  neighbors: []
+  bondDegree: 29
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - body
-    - collapse
-    - law
-    - merge
-    - sti
-    - water
-  matrix:
-    - body
-    - collapse
-    - law
-    - marine
-    - merge
-    - sti
-    - water
-  backlinks:
-    - body
-    - collapse
-    - law
-    - marine
-    - merge
-    - sti
-    - water
 signatures:
-  computationUuid: "4c1b3477-6402-8d61-8a94-678d4440c419"
+  computationUuid: "c298765e-6df5-897a-8b23-68f9d8ef8ded"
   stages:
     - stage: path
       stageUuid: "83472638-113d-8237-8f34-f08b39aa638e"
@@ -67,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "43a7c8dd-eb4d-8714-a3d8-4249fe6aacff"
     - stage: horo
-      stageUuid: "c3cf613d-0c91-8421-9c3a-050f81515426"
+      stageUuid: "a1266154-49b1-8180-8839-5070fb7dbd2b"
     - stage: seal
-      stageUuid: "eede261d-970f-89cd-b9a6-f10a5572311f"
+      stageUuid: "25142c94-b859-8533-831a-ca718c2c7acd"
     - stage: uuid
-      stageUuid: "a8ab6147-e5d3-8c78-83c6-771390487cb2"
+      stageUuid: "56439083-49f0-8ddd-94a3-3cfd4dd9fc1a"
 version: 2
 ---
 # sea

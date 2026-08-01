@@ -1,73 +1,35 @@
 ---
 name: presentation
 description: "Use when reasoning about presentation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/presentation
-coordinate: presentation · 7/descent · 137678bd
-contentUuid: "737e9c74-de5b-5a07-be50-a939b95620c4"
-diamondUuid: "20bcc86f-e434-80a2-b691-3d5db7aff9d2"
-uuid: "137678bd-b6b0-840d-82d3-125645689336"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - digital
-    - document
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - digital
-    - document
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/presentation"
+coordinate: "vocabulary/presentation · 4/weave · dc2d534b"
+contentUuid: "8b12de98-7308-5460-8ae8-fdb7be08da61"
+diamondUuid: "0b9c5dc5-9b33-8ad8-8525-870bf5c70f56"
+uuid: "dc2d534b-032f-8a9b-93ae-efbb5ae82ac9"
+horo: 4
 typography:
-  partition: presentation
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - digital
-    - document
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - digital
-    - document
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - digital
-    - document
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "4cbf2d19-57a2-8c24-8967-638b22ec9c63"
+  computationUuid: "ec7a30bd-d457-86df-ba7d-9c0c72c85ec6"
   stages:
     - stage: path
-      stageUuid: "678dc8cc-3ecc-8d87-96a5-993e7c952825"
+      stageUuid: "276397e1-0ebe-8431-b3de-eba18eefe7f9"
     - stage: trinity
-      stageUuid: "3c49882f-b5f7-84c5-bb8f-5fda0c81b79e"
+      stageUuid: "70bf8264-258a-898b-9d12-d57810120c53"
     - stage: boundary
-      stageUuid: "e5a73a67-dfce-84b1-a7a5-8012a5df4e7c"
+      stageUuid: "d79d2410-5271-8f8d-b070-56e58d0a71f8"
     - stage: links
-      stageUuid: "1ba731c7-244f-8a30-a1f5-8c26fa1a4d91"
+      stageUuid: "ce003d42-0841-844a-a599-f962d422ea87"
     - stage: horo
-      stageUuid: "31b4b716-800e-8974-b1a0-90bca936ac8d"
+      stageUuid: "e8c5705b-7803-8641-8691-02a8b116729b"
     - stage: seal
-      stageUuid: "4b3a3c0f-abea-805e-8c6e-f31ae360d15b"
+      stageUuid: "df402920-e956-8403-9183-a8df4013622f"
     - stage: uuid
-      stageUuid: "dcda3ebc-2e13-8ca3-b9b0-fe6789b5a3a6"
+      stageUuid: "69f4bdca-66f9-85bc-a2f6-0fd8a5544c82"
 version: 2
 ---
 # presentation

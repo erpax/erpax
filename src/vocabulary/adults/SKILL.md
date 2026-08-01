@@ -1,68 +1,35 @@
 ---
 name: adults
 description: "Use when reasoning about adults as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/adults
-coordinate: adults · 4/weave · e663e98e
-contentUuid: "6d9de1b0-b431-5ae7-921b-e9ec914ad18d"
-diamondUuid: "451bf29b-0eda-8b1b-9c3c-933df709f2ee"
-uuid: "e663e98e-fe0d-8bb7-bccf-be1037f22f98"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - num
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - num
-    - sti
+atomPath: "vocabulary/adults"
+coordinate: "vocabulary/adults · 8/crest · f29697eb"
+contentUuid: "b9a7c8dd-a0e6-5e0d-83dd-c7250c224484"
+diamondUuid: "f6e07e66-090e-85e7-81ad-8ca4bd6212a7"
+uuid: "f29697eb-8510-83cb-a8bc-7b3b62264e18"
+horo: 8
 typography:
-  partition: adults
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - num
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - num
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - num
-    - sti
 signatures:
-  computationUuid: "a003cca9-301b-8ecc-9e7d-34ce650816b2"
+  computationUuid: "bebf0a54-e32a-807f-8041-437b59873b0a"
   stages:
     - stage: path
-      stageUuid: "d7f72366-eb18-8fc7-a0e1-ffd01bc34244"
+      stageUuid: "80b68b8c-dbab-8dca-a5be-2d21299c44fb"
     - stage: trinity
-      stageUuid: "8a5cf591-e27d-8198-a0bd-867b75aa8ce3"
+      stageUuid: "873bb9f4-846f-8908-942f-0dd253bb429f"
     - stage: boundary
-      stageUuid: "66456d16-3cbe-8bba-b82e-f0899d607c5b"
+      stageUuid: "6eda1602-0f3e-8147-abef-8f42c1724d65"
     - stage: links
-      stageUuid: "7abf6a32-c8e8-87ea-9bc3-ba954065c96a"
+      stageUuid: "820c10ef-6a07-8f82-84fd-0d61aafedc54"
     - stage: horo
-      stageUuid: "a79ac0b2-3ba6-8734-9363-9b4c32e2fa3e"
+      stageUuid: "ada4df14-7a66-8373-a8dc-1d9b2e5130f1"
     - stage: seal
-      stageUuid: "4e4831c7-9363-8ecd-bfa1-3ca844506209"
+      stageUuid: "99fabc2a-dd4f-8567-8ff7-36c4d357a2b6"
     - stage: uuid
-      stageUuid: "5c1bdfd9-690e-8f35-8cd3-e6653cb44625"
+      stageUuid: "51bd6875-56a2-89af-9b62-281e98834d06"
 version: 2
 ---
 # adults

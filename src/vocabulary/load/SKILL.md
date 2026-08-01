@@ -1,68 +1,35 @@
 ---
 name: load
 description: "Use when reasoning about load as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/load
-coordinate: load · 4/weave · e9ed5f2c
-contentUuid: "697da057-b2d5-5411-9f88-b91b091a4468"
-diamondUuid: "203f9f88-ff79-8a0d-af7d-34e3661278b0"
-uuid: "e9ed5f2c-78de-81aa-93df-65478c1c865c"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - roof
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - roof
-    - sti
+atomPath: "vocabulary/load"
+coordinate: "vocabulary/load · 2/share · 7c4e1dbb"
+contentUuid: "a70f1bfe-da9d-5ed7-a25a-369c5ad66e05"
+diamondUuid: "f31c27c9-8a27-89e8-99ef-c8f3bd50d4d6"
+uuid: "7c4e1dbb-94b3-8515-b22f-85a0c9ac78b9"
+horo: 2
 typography:
-  partition: load
-  bondDegree: 16
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 14
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - roof
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - roof
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - roof
-    - sti
 signatures:
-  computationUuid: "357c03a7-6bc7-88b6-810b-f5b6821a4caf"
+  computationUuid: "25c9a675-7164-82eb-8fc0-8d2ddedf4eae"
   stages:
     - stage: path
-      stageUuid: "0ee8f03a-2020-89b5-b1fe-2826d712b06d"
+      stageUuid: "a908f668-f3a0-84cc-ba44-4582d60947ce"
     - stage: trinity
-      stageUuid: "1d68e595-7364-81fb-8da4-baabf79281cd"
+      stageUuid: "dae882ce-924f-8747-96ba-d0772a5e9f53"
     - stage: boundary
-      stageUuid: "30ef02e3-8421-8216-ba27-59176efb0185"
+      stageUuid: "146e0c92-e16d-88a9-ba58-c45bf874e94f"
     - stage: links
-      stageUuid: "924d818f-e1ba-812b-98a0-77ff366eb0b0"
+      stageUuid: "fc1fffa5-03b8-80bb-81be-a4f880519c38"
     - stage: horo
-      stageUuid: "1844b811-4dfc-8179-b3af-55bdb660cfa7"
+      stageUuid: "07142076-210c-8c5b-8fbd-ba65c1b6ec39"
     - stage: seal
-      stageUuid: "d5f7fabf-aa5b-8b30-864f-3e3cafe37409"
+      stageUuid: "016622dd-d10d-8a10-967f-2c5e0c3c35ea"
     - stage: uuid
-      stageUuid: "a812d307-a8a2-8814-bd5d-83e1ddc04d46"
+      stageUuid: "fc5fa3b9-bfdb-8958-98fa-27f2c7603c8b"
 version: 2
 ---
 # load

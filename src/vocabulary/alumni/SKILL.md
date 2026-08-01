@@ -1,58 +1,35 @@
 ---
 name: alumni
 description: Use when reasoning about alumni — Alumni of an organization.
-atomPath: vocabulary/alumni
-coordinate: alumni · 5/round · 33f3c61a
-contentUuid: "40bbb167-604a-586f-9bc5-3d55785b1734"
-diamondUuid: "a4337d0b-676c-8b46-95eb-2869cb497e42"
-uuid: "33f3c61a-6a0a-806d-8773-3f5ef84bdd31"
-horo: 5
-bonds:
-  in:
-    - law
-    - person
-    - thing
-  out:
-    - law
-    - person
-    - thing
+atomPath: "vocabulary/alumni"
+coordinate: "vocabulary/alumni · 4/weave · 505d1e1a"
+contentUuid: "d735ed8f-6886-5dba-affb-3632de4a3923"
+diamondUuid: "39eda441-f8cf-8fd1-8a4a-a35d4cca2a82"
+uuid: "505d1e1a-b255-897a-9c5e-cd1a718de9b3"
+horo: 4
 typography:
-  partition: alumni
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - person
-    - thing
-  matrix:
-    - law
-    - person
-    - thing
-  backlinks:
-    - law
-    - person
-    - thing
 signatures:
-  computationUuid: "189bb1c7-d7e6-81d3-8cb9-29db46592fe9"
+  computationUuid: "501e22ab-9d12-84f8-b98d-4d9e415b50a7"
   stages:
     - stage: path
-      stageUuid: "aa664f18-1eb8-8920-8388-96f552a4aa25"
+      stageUuid: "924bd2a4-552b-81d6-9277-eb7eef1b3630"
     - stage: trinity
-      stageUuid: "d3833fc6-6816-8acc-9ace-d1255032f1ac"
+      stageUuid: "45653a32-f483-8e6c-90e0-a5f7ad4eff07"
     - stage: boundary
-      stageUuid: "3231a3a1-3924-826b-8853-1d4507618bff"
+      stageUuid: "9725d22f-25be-86a8-84ce-a129a7049e2b"
     - stage: links
-      stageUuid: "20eda2b2-5d82-8f0e-9033-d87ef4f597f4"
+      stageUuid: "0d1eb313-a9a7-8c51-bd2f-d15df271caa0"
     - stage: horo
-      stageUuid: "9eb369a7-2011-8709-839a-1abebe3046fe"
+      stageUuid: "fea04044-0bef-8753-a4f5-39141a83a923"
     - stage: seal
-      stageUuid: "775a1631-d470-8a9f-96ea-f76c14d4c3ab"
+      stageUuid: "bd9dcd44-0741-8cfd-8d96-fb80ea6e8eb3"
     - stage: uuid
-      stageUuid: "17dc4f0a-eb3f-8bb8-872b-6fe03afdd58b"
+      stageUuid: "d9a94423-5e39-8a2f-8831-372af5455194"
 version: 2
 ---
 # alumni

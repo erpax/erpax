@@ -1,68 +1,35 @@
 ---
 name: electronics
 description: "Use when reasoning about electronics as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/electronics
-coordinate: electronics · 4/weave · d6097c62
-contentUuid: "4c36e6bd-e74e-53ed-94d0-d29660f37dbf"
-diamondUuid: "6b0a5487-6196-8f4c-b026-b4de05cfa452"
-uuid: "d6097c62-ffe7-84f7-9290-3329a3c0e57e"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
+atomPath: "vocabulary/electronics"
+coordinate: "vocabulary/electronics · 1/base · 350f0b7a"
+contentUuid: "6f8488d6-08f0-58f8-9633-72dad4cd3f14"
+diamondUuid: "c3acf7be-99af-843a-8eb0-6b0cb488f474"
+uuid: "350f0b7a-9339-8bdd-9ca8-51ead34edf8e"
+horo: 1
 typography:
-  partition: electronics
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
 signatures:
-  computationUuid: "49b4067d-e173-845b-8a31-882220264924"
+  computationUuid: "9f513158-5b4d-814f-9314-0840c2453e19"
   stages:
     - stage: path
-      stageUuid: "73f602c3-452c-86c3-9112-5b852ec9e9ac"
+      stageUuid: "624bad0d-b1bc-8466-ac9c-9687dca2b9b2"
     - stage: trinity
-      stageUuid: "22fd0fd5-0942-843b-87a9-4a47277ed450"
+      stageUuid: "69ef5a66-18fd-88e7-85d1-e4eb9d898950"
     - stage: boundary
-      stageUuid: "b4530da1-aed8-8936-97d1-8474596e5bcb"
+      stageUuid: "ed5f73b3-1df5-874d-89d6-f11e80f209c8"
     - stage: links
-      stageUuid: "d344f823-419c-8130-9a7a-bc4cc8550045"
+      stageUuid: "871150b0-39e6-85dd-aa8a-80d866ad65dd"
     - stage: horo
-      stageUuid: "fd43e2f0-57f5-891d-b3d9-2b4c22c054db"
+      stageUuid: "424c5d46-2751-894c-8135-375b0db481cf"
     - stage: seal
-      stageUuid: "ad574cb1-07e0-8eb0-9fbe-bd65dd006101"
+      stageUuid: "ddc1ed92-7db5-8367-aa9c-12462cd1ba5d"
     - stage: uuid
-      stageUuid: "023bd069-35f7-83e6-ac8c-bf5670f9354b"
+      stageUuid: "9b99bccd-0c08-8980-abf7-85147e3f79de"
 version: 2
 ---
 # electronics

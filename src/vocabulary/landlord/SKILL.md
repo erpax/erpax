@@ -1,58 +1,35 @@
 ---
 name: landlord
 description: Use when reasoning about landlord — A sub property of participant. The owner of the real estate property.
-atomPath: vocabulary/landlord
-coordinate: landlord · 1/base · 88cedabc
-contentUuid: "f98cd9af-0128-5437-bcc2-5b70f4212329"
-diamondUuid: "42dc0721-8c43-859e-b967-1cc5df893afe"
-uuid: "88cedabc-a2a8-85bd-856f-297d69eb5c56"
-horo: 1
-bonds:
-  in:
-    - law
-    - person
-    - thing
-  out:
-    - law
-    - person
-    - thing
+atomPath: "vocabulary/landlord"
+coordinate: "vocabulary/landlord · 5/round · 70eb4cb7"
+contentUuid: "0be60585-212a-55b0-ac09-b216044d1fce"
+diamondUuid: "12993c4a-3ff0-883a-a2c7-271861522e34"
+uuid: "70eb4cb7-e40b-84e4-be0c-a14bfb948001"
+horo: 5
 typography:
-  partition: landlord
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - person
-    - thing
-  matrix:
-    - law
-    - person
-    - thing
-  backlinks:
-    - law
-    - person
-    - thing
 signatures:
-  computationUuid: "8bc88ef1-0d36-8e7e-bd22-cfdef6016b9b"
+  computationUuid: "54b0a7c7-5756-8311-a167-3363fc979fb8"
   stages:
     - stage: path
-      stageUuid: "224f0cb7-5f8a-8a73-8f48-473182693520"
+      stageUuid: "23d387f8-e9de-8cfc-9dd7-f4545da0e669"
     - stage: trinity
-      stageUuid: "21c7b49f-c170-85a7-af2e-8572fd488fca"
+      stageUuid: "8489e8e0-0f0f-8fbc-b55d-8d447dfeff8e"
     - stage: boundary
-      stageUuid: "04e2570e-19c6-8bc8-8ee7-792a85ba4eef"
+      stageUuid: "c850c39b-8689-8e53-bebc-a4dff98817d4"
     - stage: links
-      stageUuid: "7fa4df4d-bd09-8d66-bede-6fa2d03899ee"
+      stageUuid: "c2484b1b-f1d2-8d82-bf57-afc4f82848f6"
     - stage: horo
-      stageUuid: "29bf787c-56e2-8beb-a631-e96cd532fd4e"
+      stageUuid: "50a06b0f-c841-8856-8d83-e6154893b113"
     - stage: seal
-      stageUuid: "f8828c02-ef91-84e2-9bb0-ad4e6dce2fa1"
+      stageUuid: "f136f1a4-4ac7-8ab9-9ce1-b8b590a02b59"
     - stage: uuid
-      stageUuid: "dc0579be-de00-8403-8796-8358a92f74c9"
+      stageUuid: "f3d2a1bb-35a4-8bc8-ad71-3a96a89014c3"
 version: 2
 ---
 # landlord

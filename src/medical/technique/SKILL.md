@@ -2,63 +2,19 @@
 name: technique
 description: "Use when reasoning about technique as a medical facet of [[medical]] — vocabulary pivot to @/technique; nested not duplicated."
 atomPath: "medical/technique"
-coordinate: "medical/technique · 8/crest · 4b87f4fe"
-contentUuid: "1f8cf11c-ae29-5ff7-8018-ff3f253307d2"
-diamondUuid: "54dad4a9-bf70-8813-9ee9-3051941e6710"
-uuid: "4b87f4fe-dd3e-8fc3-b45c-0e911843d509"
+coordinate: "medical/technique · 8/crest · dada9c1d"
+contentUuid: "e64356ed-82de-57fe-a6e2-f57ad2f5d398"
+diamondUuid: "cff9c8fc-259e-8628-ae34-119f212c5311"
+uuid: "dada9c1d-7106-8d2f-b2fe-1f1e7334d8d7"
 horo: 8
-bonds:
-  in:
-    - collapse
-    - imaging
-    - law
-    - measurement
-    - medical
-    - merge
-    - sti
-    - technique
-  out:
-    - collapse
-    - imaging
-    - law
-    - measurement
-    - medical
-    - merge
-    - sti
-    - technique
 typography:
   partition: medical
   bondDegree: 33
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - medical
-    - merge
-    - technique
-  matrix:
-    - collapse
-    - imaging
-    - law
-    - measurement
-    - medical
-    - merge
-    - sti
-    - technique
-  backlinks:
-    - collapse
-    - imaging
-    - law
-    - measurement
-    - medical
-    - merge
-    - sti
-    - technique
 signatures:
-  computationUuid: "587e2edb-ffca-857e-b451-12e402b42639"
+  computationUuid: "ae7cb892-4ac1-898f-94b8-328749b1c320"
   stages:
     - stage: path
       stageUuid: "14ca9c92-669b-8bff-81b3-ee2cc3bacae7"
@@ -69,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d8a7aa92-5eef-8fb3-a478-dcf54f33ccf1"
     - stage: horo
-      stageUuid: "d9bcae68-9062-85f5-83a9-48c8e761b7f7"
+      stageUuid: "5ddd9cd6-874a-802a-9ebf-9ba28dee1536"
     - stage: seal
       stageUuid: "238be6a5-f3ac-8d5b-9db6-c293795e1d8b"
     - stage: uuid
-      stageUuid: "30c96396-555f-8af4-b03e-1f9264dd7097"
+      stageUuid: "3dbf116a-c94c-8116-aa49-d0d6b5b99001"
 version: 2
 ---
 # medical/technique — medical facet

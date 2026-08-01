@@ -1,68 +1,35 @@
 ---
 name: permitted
 description: "Use when reasoning about permitted as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/permitted
-coordinate: permitted · 2/share · aee2bf57
-contentUuid: "27ee2836-03f0-5be9-889a-70c7781e811a"
-diamondUuid: "14e00058-6ccd-8691-85bc-8f02dd61c018"
-uuid: "aee2bf57-647d-8519-a1a8-24913c877f4c"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - usage
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - usage
+atomPath: "vocabulary/permitted"
+coordinate: "vocabulary/permitted · 7/descent · c651c592"
+contentUuid: "b1c55ce8-f901-50f8-ae97-77c44c819488"
+diamondUuid: "69d354ff-3e42-890a-aadb-91705736d43d"
+uuid: "c651c592-1da9-8adb-b166-59282437d4c0"
+horo: 7
 typography:
-  partition: permitted
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - usage
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - usage
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - usage
 signatures:
-  computationUuid: "aab9af94-3547-80b8-b516-5e5a42306315"
+  computationUuid: "d187974e-20e0-84bb-ac91-692c4d0be898"
   stages:
     - stage: path
-      stageUuid: "bb440aa5-a50a-8044-a534-7acc98578f75"
+      stageUuid: "17697788-2134-8cf4-be1e-10be916f14bc"
     - stage: trinity
-      stageUuid: "26c21f99-6616-8751-a3ca-db36cd5fd1fd"
+      stageUuid: "d442640f-672f-8f17-aa45-822432ecb714"
     - stage: boundary
-      stageUuid: "edf11917-89cd-8185-a654-f23603c1bcd1"
+      stageUuid: "807b89f1-9fa6-86c2-8e93-462cb8dd2846"
     - stage: links
-      stageUuid: "d405382d-df0c-847d-b24c-de7aaf84c089"
+      stageUuid: "959c8585-506b-807c-a923-d2d9133669ef"
     - stage: horo
-      stageUuid: "3d135e6b-abdb-8d00-a600-e635366266c2"
+      stageUuid: "1aa883c6-a008-888f-82d9-c4dd0b0bf7e2"
     - stage: seal
-      stageUuid: "39a95433-b75e-8feb-9399-2fb601c1ada9"
+      stageUuid: "3868b6b5-83d5-8f24-b645-54784cbe8f5c"
     - stage: uuid
-      stageUuid: "ba505e78-5714-8f86-ad80-37df6dd20cd7"
+      stageUuid: "cd729aa4-6ebb-842e-8255-936e22b9137d"
 version: 2
 ---
 # permitted

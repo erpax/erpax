@@ -1,53 +1,35 @@
 ---
 name: mosque
 description: Use when reasoning about mosque — A mosque.
-atomPath: vocabulary/mosque
-coordinate: mosque · 4/weave · 1b75114b
-contentUuid: "2ecbeb4f-861c-54ec-a6f0-59b8deae9a6f"
-diamondUuid: "7797aa7f-42de-8974-b3f3-f7fcd40779c7"
-uuid: "1b75114b-57cf-86e6-8061-62d0931b5f8a"
-horo: 4
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/mosque"
+coordinate: "vocabulary/mosque · 5/round · 71469362"
+contentUuid: "af422a19-0fb7-5587-9809-c7dd15d19310"
+diamondUuid: "de415ca5-7f0f-8146-906e-dd0c3e580772"
+uuid: "71469362-e41f-8831-b9ba-3de0c7dc66bc"
+horo: 5
 typography:
-  partition: mosque
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "376b14ee-dc40-809e-9cdf-257af949d741"
+  computationUuid: "6b8f0445-3af4-8d9c-bf95-fcb0ff767d8c"
   stages:
     - stage: path
-      stageUuid: "0ebace1b-f12d-80df-a13b-da3cd0674c40"
+      stageUuid: "dfdfd78c-1b2b-8ba3-8d30-8e65f690dd5c"
     - stage: trinity
-      stageUuid: "6a8f5066-9467-8415-80c9-7dae9cc75f48"
+      stageUuid: "47e9d840-920b-806d-9044-29eb5843df34"
     - stage: boundary
-      stageUuid: "f8073fd2-24e8-8798-a178-da6646811803"
+      stageUuid: "ee06ca05-a82c-8cc9-8910-07ac71b7fe9f"
     - stage: links
-      stageUuid: "d0e374e8-563e-80df-ac52-4f4c7572c4ae"
+      stageUuid: "8229a228-a1fa-8418-8c78-752626a827ba"
     - stage: horo
-      stageUuid: "4786964c-d3f7-8de2-b2e8-840ae28c2e00"
+      stageUuid: "16da4bf6-1dd2-8592-a35f-2f51bc4327a3"
     - stage: seal
-      stageUuid: "5299f544-c859-87f3-94b7-b81ca1055a6a"
+      stageUuid: "37dcb39d-ab6e-8091-97b1-4e1622b81ffe"
     - stage: uuid
-      stageUuid: "fbff19c1-11c6-8c33-ae1b-8acc35aa7e2b"
+      stageUuid: "516e2489-2ed9-8f75-b474-60229b497593"
 version: 2
 ---
 # mosque

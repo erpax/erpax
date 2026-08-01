@@ -1,67 +1,35 @@
 ---
 name: hand
 description: "Use when reasoning about hand as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/hand
-coordinate: hand · 8/crest · d0dcb6e9
-contentUuid: "d302144f-19c4-5b15-abbe-6a1817d0dd75"
-diamondUuid: "29956b79-03cd-8b1e-b85f-0f29aa6efea0"
-uuid: "d0dcb6e9-8f57-87c7-a8e5-4b2f337e59bb"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - hand
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - hand
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/hand"
+coordinate: "vocabulary/hand · 5/round · 4a1cd740"
+contentUuid: "d08c8814-cfa5-536a-bc04-a04d3eb87f98"
+diamondUuid: "e626c1a9-3182-8738-87e3-7710832ea3e0"
+uuid: "4a1cd740-3774-8287-bfa7-04cf9e13ad7b"
+horo: 5
 typography:
-  partition: hand
+  partition: vocabulary
   bondDegree: 21
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - hand
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - hand
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "fb41a3ab-274a-88b5-aeec-2f7db4c5932d"
+  computationUuid: "63080146-e50c-82ad-9460-0f8be0ed024b"
   stages:
     - stage: path
-      stageUuid: "bee91fea-63a3-848e-92c6-7cc4b63f7f3e"
+      stageUuid: "d1b68bea-5f45-80e2-a3a6-7cbe7fe9a068"
     - stage: trinity
-      stageUuid: "d95d5156-1a2b-8f7a-9560-08dd6742a550"
+      stageUuid: "23c77ecd-3ec3-8f85-bac2-08efcff2053d"
     - stage: boundary
-      stageUuid: "5546cf2d-00aa-8a82-951f-7e33905bb567"
+      stageUuid: "dcdc172d-2c01-885d-bf23-3c13d654fd8c"
     - stage: links
-      stageUuid: "69860b02-e930-8f21-ba4b-ab3da47173ef"
+      stageUuid: "4a6d2d67-1efe-8ef9-917b-ddd17753c84b"
     - stage: horo
-      stageUuid: "9ab424ca-50aa-8dc3-a4ad-7e316abcef16"
+      stageUuid: "1210e69e-81f7-8ff2-84eb-e0daecb07fa1"
     - stage: seal
-      stageUuid: "f18d99dc-0015-8875-a3c2-6b2f8552beb1"
+      stageUuid: "aa3a7158-908b-889c-9885-bf2ddaabcef5"
     - stage: uuid
-      stageUuid: "11f15ca1-4a43-859e-bb8a-4f3c2ef5608d"
+      stageUuid: "e397c817-4f76-8e7c-8818-4cdcf97535b1"
 version: 2
 ---
 # hand

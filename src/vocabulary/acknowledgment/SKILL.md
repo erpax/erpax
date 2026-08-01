@@ -1,57 +1,34 @@
 ---
 name: acknowledgment
 description: Use when modelling one acknowledgment — the singular model of the acknowledgments collection (the plural store); a formal confirmation that something was received or accepted.
-atomPath: vocabulary/acknowledgment
-coordinate: acknowledgment · 2/share · 0cded450
-contentUuid: "cbe3dfb4-4ef8-56b4-b78f-00e21bcbac78"
-diamondUuid: "38f79d08-a542-882d-b307-d21fa45b8740"
-uuid: "0cded450-d73e-8c8c-be36-b1fdf0bbf6f7"
-horo: 2
-bonds:
-  in:
-    - acknowledgments
-    - balance
-    - document
-  out:
-    - acknowledgments
-    - balance
-    - document
+atomPath: "vocabulary/acknowledgment"
+coordinate: "vocabulary/acknowledgment · 4/weave · f79abd0e"
+contentUuid: "fca46e35-2249-5f87-ad06-6cb1f889192f"
+diamondUuid: "9b1ed312-e3b4-827c-8677-61b2f26e751c"
+uuid: "f79abd0e-1c8f-8401-9ce2-025034d7208f"
+horo: 4
 typography:
-  partition: acknowledgment
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - acknowledgments
-    - balance
-    - document
-  matrix:
-    - acknowledgments
-    - balance
-    - document
-  backlinks:
-    - acknowledgments
-    - balance
-    - document
 signatures:
-  computationUuid: "c186b2c8-8a8c-8f85-8ec1-f0e5a1e7ec75"
+  computationUuid: "3394124e-bbed-8ab7-abe4-f82bd224d939"
   stages:
     - stage: path
-      stageUuid: "339c414d-2eeb-8ef5-a64c-22b0c14eaaae"
+      stageUuid: "83612a27-6ca1-88e5-ba04-3b88d94c4ed9"
     - stage: trinity
-      stageUuid: "9b6354ae-fca3-86a1-b53b-38a12dd6f201"
+      stageUuid: "3a8b0596-8998-89ac-a706-aea8ad15c654"
     - stage: boundary
-      stageUuid: "836885f3-c255-8956-bdb2-06595ca55282"
+      stageUuid: "d1ebb09b-a1ea-8829-b9f2-77ca8cbabe20"
     - stage: links
-      stageUuid: "3018b8f1-a690-89f7-a8b6-a344fed75764"
+      stageUuid: "89d9e946-94b7-8ea0-9473-b12cc4beb84f"
     - stage: horo
-      stageUuid: "337dde74-4986-80e8-9141-ac5ff61ddd4e"
+      stageUuid: "35ede2af-47d9-80fc-ac11-15713aef5337"
     - stage: seal
-      stageUuid: "5057a168-35a4-89f5-bbc2-d221beb12afc"
+      stageUuid: "5ef753a4-009e-877b-a5b4-a82579691589"
     - stage: uuid
-      stageUuid: "b8532bd9-d3f4-84e2-a23a-1da49beb8b89"
+      stageUuid: "cc35236d-a7e7-8744-ad16-4dc547c6c6f7"
 version: 2
 ---
 # acknowledgment — the model of one [[acknowledgments]] row

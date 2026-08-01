@@ -2,8 +2,59 @@
 name: evidence
 description: "Use when external research must be held at its real epistemic status — each claim stated agnostically with a verdict (theorem · measured · contested · open · error · metaphor · unfalsifiable) and the observation that would refute it. Empirical claims with no refutation condition fail closed. Run: tsx src/quantum/evidence/index.ts"
 atomPath: "quantum/evidence"
+coordinate: "quantum/evidence · 7/descent · 43514c39"
+contentUuid: "caaf5649-ebd9-5a7e-a3a8-6f6f8c957aea"
+diamondUuid: "c1f12d04-6086-80d7-8fea-688b4afbedb5"
+uuid: "43514c39-8aaa-8420-a464-5f6bb8cc1c19"
+horo: 7
+typography:
+  partition: quantum
+  bondDegree: 37
+standards: []
+bindings: []
+signatures:
+  computationUuid: "5cf11e07-a9f2-8c2f-be1f-d7c2d0dd85b4"
+  stages:
+    - stage: path
+      stageUuid: "8c8812a4-ccd6-87f5-93cc-ec8b91105ae9"
+    - stage: trinity
+      stageUuid: "78fd6b5b-00c0-878a-bef9-34360bcc74c1"
+    - stage: boundary
+      stageUuid: "5393bfcd-b117-8704-891f-2d8b39e4beb8"
+    - stage: links
+      stageUuid: "2aa28b1c-5bb4-8c10-9fef-8143522f5dac"
+    - stage: horo
+      stageUuid: "afd7623f-9b00-87f5-88da-46620ba83e7f"
+    - stage: seal
+      stageUuid: "bc8defd4-f6ef-8605-9305-22b46c6a35b5"
+    - stage: uuid
+      stageUuid: "d5de24aa-e4ab-86a3-b49d-fa0fa97c6e7c"
+quantum:
+  superposition:
+    - collapse
+    - evidence
+    - law
+    - level
+    - medical
+    - merge
+    - origin
+    - quantum
+    - sti
+    - superposition
+  collapse:
+    - "Use when external research must be held at its real epistemic status — each claim stated agnostically with a verdict (theorem · measured · contested · open · error · metaphor · unfalsifiable) and the observation that would refute it. Empirical claims with no refutation condition fail closed. Run: tsx src/quantum/evidence/index.ts"
+    - "a claim is stored with what would refute it, or it is not stored as a claim. Verdict, refutation and boundary travel together — flatten them and a metaphor shelves beside a theorem, which is how the reader is lost."
+  seal:
+    sandbox: false
+    receipt: false
+    pathFollow: true
+    canonicalRecord: true
+    analogResults: false
+    speechResults: false
+    computationUuid: "5cf11e07-a9f2-8c2f-be1f-d7c2d0dd85b4"
+    contentUuid: "caaf5649-ebd9-5a7e-a3a8-6f6f8c957aea"
+version: 2
 ---
-
 # evidence — a claim is held at the status it has earned, not the one it is delivered in
 
 Research arrives flattened. A survey presents a settled theorem, a contested reading, a plain error and a bare metaphor in the same voice, at the same confidence, and the reader has no way to tell them apart — because **fiction and truth read identically** ([[rules]]/prose). Flattened confidence is the carrier, not the content.
@@ -43,3 +94,5 @@ What is **COMPUTED**: the distribution across verdicts, the refutability check, 
 - **ISO-19011:2018 §6.4** — audit evidence: a citation must lead to the evidence.
 
 Composes: [[rules]]/refutable · [[rules]]/audience · [[integrity]] · [[law]].
+
+<sub>content-uuid `caaf5649-ebd9-5a7e-a3a8-6f6f8c957aea` · account `quantum/evidence` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

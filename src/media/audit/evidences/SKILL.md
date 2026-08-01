@@ -2,46 +2,22 @@
 name: evidences
 description: "Use when attaching or retrieving documentary evidence for audit work — PDF documents, bank statements, GL printouts, reconciliations, signed approvals, workpapers — with chain-of-custody log, confidentiality classification, retention schedule, and links to controls, control tests, samples, and findings. The ISA-500/PCAOB-AS-1105 audit-evidence register."
 atomPath: "media/audit/evidences"
-coordinate: "media/audit/evidences · 7/descent · d735f20e"
-contentUuid: "d708d988-0840-559f-b3bd-a2870692cb9b"
-diamondUuid: "9ca6049a-70e4-8249-bfd2-24c7953945cd"
-uuid: "d735f20e-16e8-8374-ad44-7bfebfacb822"
-horo: 7
-bonds:
-  in:
-    - audit
-    - law
-    - samples
-    - transactions
-  out:
-    - law
-    - samples
-    - transactions
+coordinate: "media/audit/evidences · 2/share · 31b7cce6"
+contentUuid: "503fe681-97cb-55a4-bc89-b182aff12876"
+diamondUuid: "1905a0ef-b3c6-8198-bdfe-bf5fa758dd0f"
+uuid: "31b7cce6-3310-8b99-95d0-28baf8e3897f"
+horo: 2
 typography:
   partition: media
   bondDegree: 9
-  neighbors: []
 standards:
-  - "ILO-C105"
   - "ISA-500"
   - "ISA-500 audit-evidence"
   - "PCAOB AS-1105 audit-evidence"
   - "PCAOB-AS-1105"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - samples
-  matrix:
-    - law
-    - samples
-    - transactions
-  backlinks:
-    - law
-    - samples
-    - transactions
 signatures:
-  computationUuid: "c6fffc9d-7079-8739-889f-7a839e1a21c8"
+  computationUuid: "798fcf5d-0b8c-806c-8f35-e59c1209e99c"
   stages:
     - stage: path
       stageUuid: "515581df-778c-8832-ab92-677924026d57"
@@ -52,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "c1c1be08-5bcd-864f-ad87-afbfdb5a98e5"
     - stage: horo
-      stageUuid: "cf457db6-5ec8-81e5-a070-f1f385a4b4a1"
+      stageUuid: "5848e104-582a-82ef-a262-7234453f1ea1"
     - stage: seal
       stageUuid: "ee0b3925-ea4a-8133-9c29-aa94c5f5aad8"
     - stage: uuid
-      stageUuid: "f71508e6-4045-8280-bf68-7a175290ee93"
+      stageUuid: "909a3328-e725-8db9-8b2d-bf7b61d4c126"
 version: 2
 ---
 # audit-evidence

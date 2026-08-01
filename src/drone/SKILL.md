@@ -2,126 +2,36 @@
 name: drone
 description: "Use when the society sends scouts to fly the content-uuid matrix in coordinated self-learning — reconnoitring sectors for gaps and entropy and feeding them to the agents to eat, warfare tactics applied to building."
 atomPath: drone
-coordinate: "drone · 1/base · ad44041f"
-contentUuid: "5bb675d3-f237-53d3-ba57-ae456b111eaa"
-diamondUuid: "4d0f9a37-6c3a-8568-b07e-f1b1c49ed100"
-uuid: "ad44041f-90c5-8bc3-89cb-cdd796a8538a"
-horo: 1
-bonds:
-  in:
-    - agent
-    - aura
-    - breath
-    - harmony
-    - links
-    - matrix
-    - merge
-    - peace
-    - research
-    - scouting
-    - sequence
-    - society
-    - tamper
-    - team
-    - uuid
-    - war
-  out:
-    - agent
-    - aura
-    - breath
-    - harmony
-    - links
-    - matrix
-    - merge
-    - peace
-    - research
-    - scouting
-    - sequence
-    - society
-    - tamper
-    - team
-    - uuid
-    - war
+coordinate: "drone · 7/descent · 6a745485"
+contentUuid: "f49f3ba7-1a40-5789-bdf3-88bca08c1d95"
+diamondUuid: "2416c61a-5b23-8589-88a1-7c968873d0d7"
+uuid: "6a745485-a60b-8188-b884-61d5bffc7a92"
+horo: 7
 typography:
   partition: drone
-  bondDegree: 52
-  neighbors:
-    - agent
-    - aura
+  bondDegree: 24
 standards:
   - "RFC 9562 §5.8 content-uuid (the nodes a drone flies)"
   - "RFC 9562 §5.8 content-uuid (the nodes a drone flies)`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - agent
-    - aura
-    - breath
-    - harmony
-    - links
-    - matrix
-    - merge
-    - peace
-    - research
-    - scouting
-    - sequence
-    - society
-    - tamper
-    - team
-    - uuid
-    - war
-  matrix:
-    - agent
-    - aura
-    - breath
-    - harmony
-    - links
-    - matrix
-    - merge
-    - peace
-    - research
-    - scouting
-    - sequence
-    - society
-    - tamper
-    - team
-    - uuid
-    - war
-  backlinks:
-    - agent
-    - aura
-    - breath
-    - harmony
-    - links
-    - matrix
-    - merge
-    - peace
-    - research
-    - scouting
-    - sequence
-    - society
-    - tamper
-    - team
-    - uuid
-    - war
 signatures:
-  computationUuid: "3b2a52a2-31fd-8426-9112-72f717fc7431"
+  computationUuid: "70b9d59b-3eca-8a1b-8b68-d4ec4f1f3ab1"
   stages:
     - stage: path
       stageUuid: "756ed54f-14fb-86e9-8438-c165e3c14dc8"
     - stage: trinity
       stageUuid: "db67a31a-1f32-8cce-a994-823b0bcb14af"
     - stage: boundary
-      stageUuid: "0640a14d-244c-888d-9150-080dc984d997"
+      stageUuid: "54279ba8-4f3d-81cf-b4cf-46d32c6f6d3c"
     - stage: links
-      stageUuid: "cc538335-990e-8c1b-a623-ac5c9fcc1b18"
+      stageUuid: "12fb6759-11e0-8bd1-85d8-f7459bdf16f3"
     - stage: horo
-      stageUuid: "a4a00c7a-fc4d-8a24-8468-5484ee314c97"
+      stageUuid: "728180e8-1f10-830a-b24a-0d81a530ae56"
     - stage: seal
       stageUuid: "8f407fb9-467c-85d7-b812-9dc90614bc96"
     - stage: uuid
-      stageUuid: "3c381efa-be26-8a9b-93da-95260fb20a19"
+      stageUuid: "fecd589c-7d90-8c16-915e-350f5944a014"
 version: 2
 ---
 # drone — the scout that flies the matrix, for peace

@@ -2,41 +2,15 @@
 name: periods
 description: "Use when managing the accounting calendar — opening, closing, or locking periods; enforcing four-eyes SoD on period transitions; configuring SAF-T or XBRL-GL period coding; blocking GL writes once a period is locked. The fiscal-period lifecycle node (open → closed → locked)."
 atomPath: "fiscal/periods"
-coordinate: "fiscal/periods · 8/crest · 6f44a5f3"
-contentUuid: "00e471af-2dca-5ceb-8d7c-2b5738246f32"
-diamondUuid: "d761e5f3-4387-8956-affb-acc9d76e44bb"
-uuid: "6f44a5f3-54cd-8b1e-a1c8-2a84df1677ff"
-horo: 8
-bonds:
-  in:
-    - accounting
-    - accrual
-    - adjustments
-    - events
-    - law
-    - periods
-    - quota
-    - share
-    - shares
-    - snapshots
-  out:
-    - accounting
-    - accrual
-    - adjustments
-    - events
-    - law
-    - periods
-    - quota
-    - share
-    - shares
-    - snapshots
+coordinate: "fiscal/periods · 7/descent · ae16b5dd"
+contentUuid: "831b347b-aeda-5cf4-b0f6-afb0b8889dbe"
+diamondUuid: "10409617-0c18-8677-b2da-918007d9e931"
+uuid: "ae16b5dd-f075-84dc-a25e-34c88655dba3"
+horo: 7
 typography:
   partition: fiscal
   bondDegree: 0
-  neighbors: []
 standards:
-  - "EU-2011/83"
-  - "EU-2014/55"
   - "EU-2016/679"
   - "EU-537/2014"
   - "EU-910/2014"
@@ -66,38 +40,8 @@ standards:
   - "eIDAS Regulation 910/2014 qualified-electronic-signature on-amendments"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - adjustments
-    - events
-    - law
-    - periods
-    - share
-    - snapshots
-  matrix:
-    - accounting
-    - accrual
-    - adjustments
-    - events
-    - law
-    - periods
-    - quota
-    - share
-    - shares
-    - snapshots
-  backlinks:
-    - accounting
-    - accrual
-    - adjustments
-    - events
-    - law
-    - periods
-    - quota
-    - share
-    - shares
-    - snapshots
 signatures:
-  computationUuid: "466ed8a8-3459-824e-8958-7c7744152c48"
+  computationUuid: "b8bf15d2-ddd9-8b62-950e-1d7323adad37"
   stages:
     - stage: path
       stageUuid: "c2d46d7d-f33b-8c89-9ef4-d333fbff62a5"
@@ -108,11 +52,11 @@ signatures:
     - stage: links
       stageUuid: "4b5e5c91-6683-8872-8f10-17c232d67ede"
     - stage: horo
-      stageUuid: "6c3de3b3-434a-8466-9d8e-b82ec946ae7a"
+      stageUuid: "9bc38158-fa6e-800f-8331-b8d7b05a0453"
     - stage: seal
       stageUuid: "799579d1-a269-8094-bf85-70c24d3c360f"
     - stage: uuid
-      stageUuid: "696fbd9c-5094-8287-841d-0f1c76f11345"
+      stageUuid: "0f613ed6-40fd-82a7-a792-5b7bacc61913"
 version: 2
 ---
 # fiscal-periods

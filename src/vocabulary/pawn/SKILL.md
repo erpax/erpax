@@ -1,68 +1,35 @@
 ---
 name: pawn
 description: "Use when reasoning about pawn as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/pawn
-coordinate: pawn · 8/crest · 3847a49a
-contentUuid: "edcfb535-18c9-597e-89d1-fb1a5608d735"
-diamondUuid: "36b91cf7-00b9-82fd-a900-7a23545a4c8e"
-uuid: "3847a49a-c61b-8561-9e2b-d433db2f5633"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - shop
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - shop
-    - sti
+atomPath: "vocabulary/pawn"
+coordinate: "vocabulary/pawn · 4/weave · 3cca65e7"
+contentUuid: "208e4fee-f657-533e-b9a9-5bf8ff3cabc9"
+diamondUuid: "fc879387-ccf7-8f94-9dd0-5306103b20db"
+uuid: "3cca65e7-84f9-86ba-8fee-0e1a9423775a"
+horo: 4
 typography:
-  partition: pawn
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - shop
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - shop
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - shop
-    - sti
 signatures:
-  computationUuid: "2f2d6b5e-542d-8cbf-a211-3f3b172e2d5b"
+  computationUuid: "ec1a2ba5-8f21-85bf-9c50-475d99c76a33"
   stages:
     - stage: path
-      stageUuid: "3e86f7d4-50ec-8404-8b85-0177c6bca73b"
+      stageUuid: "ee6f9291-6aea-8167-9e41-e4243b06da4c"
     - stage: trinity
-      stageUuid: "936aefa7-e06a-8b48-b596-58c65c93fed4"
+      stageUuid: "34fe7ec5-9152-8684-9642-1015f61d4e4d"
     - stage: boundary
-      stageUuid: "6f077805-62ce-89f7-a05d-007adf47dada"
+      stageUuid: "8b81e362-e11f-8a0f-84e7-bcc860614feb"
     - stage: links
-      stageUuid: "0a6fd078-41c7-80bf-8cb3-2b5b5fa6c1a2"
+      stageUuid: "ffc2f4d0-b343-885f-90d0-3635f595349c"
     - stage: horo
-      stageUuid: "b579c277-c9d5-8d0b-8e6e-29f6474ce626"
+      stageUuid: "90f12593-279f-8af4-9d8f-e5363b821862"
     - stage: seal
-      stageUuid: "78446bd4-fb7b-8714-9e53-fa60c5295fb0"
+      stageUuid: "2f094a89-46d8-8e52-9b66-9b5e1f792669"
     - stage: uuid
-      stageUuid: "55e738b3-42f8-847a-a3d8-09d6c7da220d"
+      stageUuid: "8bb56639-c265-8c16-ae59-a9d4eaaf0bb5"
 version: 2
 ---
 # pawn

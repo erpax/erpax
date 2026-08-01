@@ -1,68 +1,35 @@
 ---
 name: holder
 description: "Use when reasoning about holder as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/holder
-coordinate: holder · 5/round · b0abf284
-contentUuid: "2b352cfb-a930-52fd-b90c-5e50eb767927"
-diamondUuid: "7ef69d0f-e51e-84c4-9d0f-168c233aba94"
-uuid: "b0abf284-1d33-8a6f-9be0-c1e04ba6ca8c"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - copyright
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - copyright
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/holder"
+coordinate: "vocabulary/holder · 4/weave · 92bb411e"
+contentUuid: "78d76af7-0243-5ab0-93d6-dca95a600a83"
+diamondUuid: "a9e74619-a1d6-859b-938a-b2b08ce98770"
+uuid: "92bb411e-a286-841c-a0b9-3fa16eae2dd4"
+horo: 4
 typography:
-  partition: holder
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - copyright
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - copyright
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - copyright
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "43db25e6-aeba-87f7-8368-2c750293faf3"
+  computationUuid: "e4d84d19-fb94-8ef1-9bd1-92d8f691b14a"
   stages:
     - stage: path
-      stageUuid: "45cbe4b2-5e9c-8067-9ffb-4dc17551ab80"
+      stageUuid: "1d9a2c07-18fa-893b-b167-bd9016c61231"
     - stage: trinity
-      stageUuid: "ba171cd9-595a-84f2-92db-5c9c221d1d36"
+      stageUuid: "bdd2e562-f4d0-86bc-8ac9-80cdc3595b5c"
     - stage: boundary
-      stageUuid: "342ee73c-b80f-8398-835b-9a3e0c769366"
+      stageUuid: "59b442cf-4bee-8f29-b629-bb56d52b0b54"
     - stage: links
-      stageUuid: "5268e982-e1bb-8862-b77f-8b57b9b8592d"
+      stageUuid: "2361603a-0660-893e-abe1-62b126d08288"
     - stage: horo
-      stageUuid: "a85289fa-5528-8c0f-a633-8caff93f5016"
+      stageUuid: "d723fc8b-c47e-8541-ba06-6dbee0fe4ef0"
     - stage: seal
-      stageUuid: "cddf48fa-1ae3-8831-a024-234c5bd26e43"
+      stageUuid: "0b1ad996-5197-878a-9391-b5a71a770cfd"
     - stage: uuid
-      stageUuid: "ce0dc73c-5837-8bf4-8b93-f645e57f689f"
+      stageUuid: "f0da74c9-c8f1-83e5-aa3d-477958efddfb"
 version: 2
 ---
 # holder

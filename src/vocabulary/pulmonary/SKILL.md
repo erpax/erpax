@@ -1,63 +1,35 @@
 ---
 name: pulmonary
 description: "Use when reasoning about pulmonary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/pulmonary
-coordinate: pulmonary · 1/base · b2d7a44a
-contentUuid: "0918097a-731c-51fc-b6b1-797087965564"
-diamondUuid: "984395e6-563a-8ab7-8b15-88c8224de13c"
-uuid: "b2d7a44a-9672-861f-a556-08e9d649deed"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/pulmonary"
+coordinate: "vocabulary/pulmonary · 2/share · 4653d817"
+contentUuid: "854faaee-df89-58f5-ab59-fad9775ac5ad"
+diamondUuid: "7c37cac4-e26f-8d2c-bc94-80ae2ce3c9c5"
+uuid: "4653d817-0ece-8952-9590-524d4988b2cb"
+horo: 2
 typography:
-  partition: pulmonary
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "3d68a368-c778-8697-8bce-789a42637c92"
+  computationUuid: "06e51dce-3ec1-8f78-a28a-86542ad0dde4"
   stages:
     - stage: path
-      stageUuid: "0259b43f-e15a-8753-aea9-19f9003656e3"
+      stageUuid: "f2f5a554-00c6-8328-820d-1567b6c41912"
     - stage: trinity
-      stageUuid: "211a7f86-dbd5-84cc-a08b-4027c9a68431"
+      stageUuid: "7ec41d12-56cf-88c9-8491-6ed5358599c2"
     - stage: boundary
-      stageUuid: "d6bc2bdc-d543-8341-be84-d327e6ac7261"
+      stageUuid: "6b244183-d5ec-8175-9b08-8486e073a7c4"
     - stage: links
-      stageUuid: "f9272a2b-46ad-8e4d-b70a-b81eaaa5f9c5"
+      stageUuid: "f888d4bb-6dbf-84e0-9fbf-d4a6dd3be82e"
     - stage: horo
-      stageUuid: "c161eb4a-f61c-8e61-aebd-97e253e31500"
+      stageUuid: "e976bd44-e0c0-8205-a313-07cde657f43f"
     - stage: seal
-      stageUuid: "62733084-2bfb-8e97-a7ed-d783e46e6db7"
+      stageUuid: "cf718a6e-dbe4-8aa8-adbf-d982cb94f5a4"
     - stage: uuid
-      stageUuid: "d0673f31-fabc-88e0-b79b-d20db33f80c3"
+      stageUuid: "a8e42423-7e52-802b-a7e2-0ca03c0c90e7"
 version: 2
 ---
 # pulmonary

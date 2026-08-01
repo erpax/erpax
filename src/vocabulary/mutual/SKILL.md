@@ -1,63 +1,35 @@
 ---
 name: mutual
 description: "Use when reasoning about mutual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/mutual
-coordinate: mutual · 8/crest · 093099d2
-contentUuid: "bc95eb18-6e08-5517-8b4c-30c3997c11f6"
-diamondUuid: "21d1b2b0-e4a5-8819-84e5-9d026b6eb511"
-uuid: "093099d2-8931-86d0-9662-a466e6c4ae71"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/mutual"
+coordinate: "vocabulary/mutual · 5/round · e812d769"
+contentUuid: "2c5c2182-44ab-5bf8-9ab4-4a7d637165fb"
+diamondUuid: "ec5a02c7-67de-8178-9bfe-b5798dbf3862"
+uuid: "e812d769-7c72-8d68-b42d-dbb79b60a49a"
+horo: 5
 typography:
-  partition: mutual
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "5b82844b-3e17-8b08-b211-4d5113cb3c25"
+  computationUuid: "cbf4c2be-284d-8405-8e91-c1396527d372"
   stages:
     - stage: path
-      stageUuid: "de30810d-dbfc-8653-a773-f9d8eb140a15"
+      stageUuid: "8b8cc648-e452-8ba7-a30c-2fe930a84b10"
     - stage: trinity
-      stageUuid: "ac7767a5-05f2-8b07-86de-c3c5b9d901de"
+      stageUuid: "e467f646-1a90-84c2-b25e-bfe94f8ca19c"
     - stage: boundary
-      stageUuid: "213c86ce-e978-8c30-ae5e-224d773917e7"
+      stageUuid: "8b4d7da1-1c51-85ef-bac5-56e170e050e7"
     - stage: links
-      stageUuid: "34ff9572-ec03-8545-a5f7-9bcfa2c873bc"
+      stageUuid: "46e2095a-6883-8f5f-99aa-3b5ef5698ed3"
     - stage: horo
-      stageUuid: "a1b69399-00df-8eab-bb23-e1512c7d2342"
+      stageUuid: "507a5647-7c74-8c66-851b-faac70c69887"
     - stage: seal
-      stageUuid: "a600f8e1-87bc-8d71-b2d4-6c2dbe4c9416"
+      stageUuid: "3276eac2-ab10-860a-82ac-d598f6e926e4"
     - stage: uuid
-      stageUuid: "230595dd-446d-8df5-b0f4-5e9eb6ea740f"
+      stageUuid: "43b98c41-d9fc-8bed-bb3f-336025795164"
 version: 2
 ---
 # mutual

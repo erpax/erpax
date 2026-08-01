@@ -1,68 +1,35 @@
 ---
 name: palliative
 description: "Use when reasoning about palliative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/palliative
-coordinate: palliative · 7/descent · c044012c
-contentUuid: "cbef5a06-12c8-5824-9185-6128d8686054"
-diamondUuid: "33d80786-3bb7-86d9-9ab7-23a569b63fac"
-uuid: "c044012c-6d5d-8001-be37-df50de5062e8"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - procedure
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - procedure
-    - sti
+atomPath: "vocabulary/palliative"
+coordinate: "vocabulary/palliative · 4/weave · b26b4312"
+contentUuid: "e91c89c5-cfa4-514f-b06b-3860d7ddcc26"
+diamondUuid: "5c33f0a9-9523-8c8f-9ed9-80c9c6af9182"
+uuid: "b26b4312-fa94-8ab4-85f1-03bb119d61a3"
+horo: 4
 typography:
-  partition: palliative
-  bondDegree: 16
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 18
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - procedure
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - procedure
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - procedure
-    - sti
 signatures:
-  computationUuid: "e3d3f47c-8483-8557-a332-4072b3afddda"
+  computationUuid: "617d57d9-e3d4-8dc6-8ab4-27ebd4f8e200"
   stages:
     - stage: path
-      stageUuid: "434a556a-96a6-8969-9e82-4780c8976cde"
+      stageUuid: "ab5508d4-f16d-8693-a3c6-f3a0371d8782"
     - stage: trinity
-      stageUuid: "ddeeea24-73fc-8474-affd-b92d00a232b6"
+      stageUuid: "71c61a89-e365-80c0-bd41-63f148c54b20"
     - stage: boundary
-      stageUuid: "885b7edc-47dd-8d1a-890e-29c09aacb33b"
+      stageUuid: "a958dd0a-1e63-8274-a868-dc49de77eec9"
     - stage: links
-      stageUuid: "b595a687-4471-8e02-b99b-fafb82cf06d0"
+      stageUuid: "4858b6f1-1edc-8def-a583-55437cfe8c3c"
     - stage: horo
-      stageUuid: "11c39ec6-d4f7-8bf5-b162-80ca6ba8367f"
+      stageUuid: "acbfdeef-52cd-8c81-8309-e267cb6037f0"
     - stage: seal
-      stageUuid: "845109f0-8c6b-8238-944c-f1067fe4ffe0"
+      stageUuid: "3a540447-8897-8bc4-86e9-6cbcbf861423"
     - stage: uuid
-      stageUuid: "e5cf07cb-9cae-8fcc-9c59-b343381f104b"
+      stageUuid: "0b7396b5-f5e2-82fb-93b0-417cc15e1a68"
 version: 2
 ---
 # palliative

@@ -2,70 +2,20 @@
 name: patent
 description: "Use when challenging an over-broad or illegally granted patent — encode the claim as a content-digest and test it on three computable grounds (prior art via anchored anteriority, obviousness via merge identity, abstract-math via §101); defensive only, not legal advice."
 atomPath: patent
-coordinate: patent · 7/descent · e6534b5b
-contentUuid: "65f24ac8-7544-5770-b364-d311a531993b"
-diamondUuid: "d7c5a294-d373-8999-bffb-87b6e61fb569"
-uuid: "e6534b5b-be65-8ee7-acf1-c0bf07ec2c9a"
-horo: 7
-bonds:
-  in:
-    - akashic
-    - anchor
-    - history
-    - law
-    - merge
-    - proof
-    - tamper
-    - uuid
-  out:
-    - akashic
-    - anchor
-    - history
-    - law
-    - merge
-    - proof
-    - tamper
-    - uuid
+coordinate: "patent · 2/share · 6b6f2b19"
+contentUuid: "6d469c35-9a7c-5a34-b40b-ed9ea4c8f8e6"
+diamondUuid: "d33ba9ee-9874-8bc7-be91-be3c07a9e663"
+uuid: "6b6f2b19-d166-8310-8a5e-2c504e9fef75"
+horo: 2
 typography:
   partition: patent
   bondDegree: 24
-  neighbors: []
 standards:
   - "35 U.S.C. §§101–103; RFC 3161 / eIDAS anchored timestamps (the anteriority proof)"
-  - "anteriority is a timestamp comparison over anchor-bound digests; obviousness is a merge identity"
-  - "anteriority is a timestamp comparison over anchor-bound digests; obviousness is a merge identity; defensive only"
   - eIDAS
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - anchor
-    - history
-    - law
-    - merge
-    - proof
-    - tamper
-    - uuid
-  matrix:
-    - akashic
-    - anchor
-    - history
-    - law
-    - merge
-    - proof
-    - tamper
-    - uuid
-  backlinks:
-    - akashic
-    - anchor
-    - history
-    - law
-    - merge
-    - proof
-    - tamper
-    - uuid
 signatures:
-  computationUuid: "1a22c221-11d5-87f8-9478-d3239e3111cd"
+  computationUuid: "fc04fd89-99a9-8c9c-887a-e8a27ee9f00f"
   stages:
     - stage: path
       stageUuid: "7eece577-454d-86ea-b63b-a6207db8a551"
@@ -76,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "106e2a9a-1fb3-8fd5-a623-1cad776d5753"
     - stage: horo
-      stageUuid: "02995f6c-7c15-8b37-bb7e-38696daf32ca"
+      stageUuid: "46108c73-b14b-875f-bfef-31134e285836"
     - stage: seal
-      stageUuid: "8c445b9d-a54d-8af9-ade8-9003c6e72e7a"
+      stageUuid: "1f4d844e-60e1-8802-ba73-bb58a1e3bffb"
     - stage: uuid
-      stageUuid: "67e8d8d9-f764-8d96-8650-67e7bf1ac933"
+      stageUuid: "5bd6f8db-aa2d-898f-a78d-35edd1f22bca"
 version: 2
 ---
 # patent — challenge illegal patents, encoded in math

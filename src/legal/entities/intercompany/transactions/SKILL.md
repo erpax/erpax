@@ -2,40 +2,14 @@
 name: transactions
 description: "Use when recording or reconciling paired source-document transactions between two group tenants or legal entities — cash transfers, service charges, goods transfers, loans, capital contributions, and cost allocations that must net to zero on consolidation per IFRS-10 §B86 / ASC-810 / SOX §404. The intercompany paired-document register collection."
 atomPath: "legal/entities/intercompany/transactions"
-coordinate: "legal/entities/intercompany/transactions · 5/round · f27fad99"
-contentUuid: "dae2c132-ef30-5667-9fb4-52069f753116"
-diamondUuid: "881f7f28-5359-8866-abc9-0f7a1b38e431"
-uuid: "f27fad99-274f-8fc9-9198-215707087581"
-horo: 5
-bonds:
-  in:
-    - accounting
-    - entries
-    - fractal
-    - hedge
-    - horo
-    - law
-    - proof
-    - rates
-    - standard
-    - transaction
-    - trinity
-  out:
-    - accounting
-    - entries
-    - fractal
-    - hedge
-    - horo
-    - law
-    - proof
-    - rates
-    - standard
-    - transaction
-    - trinity
+coordinate: "legal/entities/intercompany/transactions · 2/share · 74fe36a8"
+contentUuid: "5247326f-ab0f-5f7e-a2e5-c65901cb6261"
+diamondUuid: "ece46916-58d6-8c3a-842e-5d8878132dcf"
+uuid: "74fe36a8-25bb-87d8-b205-75fcae0f8edb"
+horo: 2
 typography:
   partition: legal
   bondDegree: 54
-  neighbors: []
 standards:
   - "IFRS IAS-24 related-party-disclosures"
   - "IFRS IFRS-10 §B86 consolidated-financial-statements"
@@ -49,41 +23,8 @@ standards:
   - "US-GAAP ASC-850 related-party-disclosures"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - adjustments
-    - eliminations
-    - entities
-    - entries
-    - tenants
-    - transaction
-  matrix:
-    - accounting
-    - entries
-    - fractal
-    - hedge
-    - horo
-    - law
-    - proof
-    - rates
-    - standard
-    - transaction
-    - trinity
-  backlinks:
-    - accounting
-    - entries
-    - fractal
-    - hedge
-    - horo
-    - law
-    - proof
-    - rates
-    - standard
-    - transaction
-    - trinity
 signatures:
-  computationUuid: "22a34c46-3d09-8d8f-8747-28218ba61d95"
+  computationUuid: "b05e044e-ef2f-8781-a15e-10dec166de22"
   stages:
     - stage: path
       stageUuid: "455bd872-0395-885d-b190-b8df4a087691"
@@ -94,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "ad2dad8d-2513-86ab-a98d-dda2d489b373"
     - stage: horo
-      stageUuid: "e0d3de59-9b68-8fd0-83eb-f5bee84f9513"
+      stageUuid: "0247b6e1-7e6e-818e-8cec-7a2898cc15a9"
     - stage: seal
       stageUuid: "dfb8d9b9-c260-8c95-9b24-3b7f09452202"
     - stage: uuid
-      stageUuid: "486c3ef6-ef71-8734-87e8-eb6273ce3cd2"
+      stageUuid: "495267a1-4ab2-8934-9b0b-79e1c2cb5f91"
 version: 2
 ---
 # intercompany-transactions

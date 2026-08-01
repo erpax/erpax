@@ -1,58 +1,35 @@
 ---
 name: issn
 description: "Use when reasoning about issn — The International Standard Serial Number (ISSN) that identifies this serial publication. You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L)"
-atomPath: vocabulary/issn
-coordinate: issn · 7/descent · edf78f11
-contentUuid: "239106c4-5efe-5cad-85fd-9fcafb33e47e"
-diamondUuid: "a6382532-7179-8bbd-9c76-f0c920fdbf5b"
-uuid: "edf78f11-9c79-8090-8b78-12922e39c946"
-horo: 7
-bonds:
-  in:
-    - creative
-    - law
-    - thing
-  out:
-    - creative
-    - law
-    - thing
+atomPath: "vocabulary/issn"
+coordinate: "vocabulary/issn · 8/crest · 2a69074f"
+contentUuid: "9aef8f04-8ba6-5d07-a3f0-b1008548d3ff"
+diamondUuid: "229b0770-1495-8e46-8ef7-bfd203b6ec1c"
+uuid: "2a69074f-0a95-889f-9bf7-98cde64e656e"
+horo: 8
 typography:
-  partition: issn
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - creative
-    - law
-    - thing
-  matrix:
-    - creative
-    - law
-    - thing
-  backlinks:
-    - creative
-    - law
-    - thing
 signatures:
-  computationUuid: "9518817b-e180-80f9-8c6a-600b965bab63"
+  computationUuid: "5c234ebf-a421-8b95-8279-c747cd7a1460"
   stages:
     - stage: path
-      stageUuid: "aa57ffce-3588-8c22-9f45-99135df605c5"
+      stageUuid: "cba18e29-bcca-8f34-ba15-3784ea2b776e"
     - stage: trinity
-      stageUuid: "f62849d8-0a44-8e3f-834c-426da0142787"
+      stageUuid: "b63a3902-24f1-8836-8e28-7a2764bb805d"
     - stage: boundary
-      stageUuid: "de6d39f0-144d-860d-abc1-a44781ee52d3"
+      stageUuid: "1b08b113-6fb5-8529-b305-91db92121d6e"
     - stage: links
-      stageUuid: "90fbb930-e270-8d04-bb00-03c4cff75cdc"
+      stageUuid: "d6fac700-84b2-876e-bb9f-32d2388819e6"
     - stage: horo
-      stageUuid: "fb8498b2-ac56-83a8-9327-fe47384adce5"
+      stageUuid: "ee5640bb-4999-85d5-b246-b514c8d23d86"
     - stage: seal
-      stageUuid: "aec7cf35-c1b4-8f60-8860-96d03bb81c6a"
+      stageUuid: "33caae28-2a5b-8ba3-8af7-4ec9c3efa195"
     - stage: uuid
-      stageUuid: "a42364b8-dfae-8a19-9a15-eded98e2f4f3"
+      stageUuid: "0cdd46d6-3f1d-86e2-a546-5bfa02907e38"
 version: 2
 ---
 # issn

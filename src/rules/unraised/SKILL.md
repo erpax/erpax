@@ -2,8 +2,35 @@
 name: unraised
 description: "Use when a declared failure kind is never raised — a `…Kind` union member that nothing in src ever constructs is a check that cannot fire, so its claim defaults to TRUE by omission. Parsed via ts.createSourceFile, never matched. Run: tsx src/rules/unraised/index.ts"
 atomPath: "rules/unraised"
+coordinate: "rules/unraised · 2/share · 2076c61b"
+contentUuid: "9f1d8efd-fadf-54f4-a5fd-253bc3b36461"
+diamondUuid: "d2921fcc-a824-8dfd-8367-13f10787286a"
+uuid: "2076c61b-2cf3-8e5b-9180-6e28d475ec32"
+horo: 2
+typography:
+  partition: rules
+  bondDegree: 9
+standards: []
+bindings: []
+signatures:
+  computationUuid: "e8bcca7c-1662-87be-a232-97d054c5c125"
+  stages:
+    - stage: path
+      stageUuid: "b60dad88-5945-832b-8446-10ee08a57e87"
+    - stage: trinity
+      stageUuid: "c4af7a23-1bee-8fd6-88df-f57dca2104e1"
+    - stage: boundary
+      stageUuid: "e84233d7-0cb0-8757-9b1f-e020aa7bc73b"
+    - stage: links
+      stageUuid: "0ccf65af-137b-84a7-87d9-c0c3da62d6e6"
+    - stage: horo
+      stageUuid: "fdc00f9d-d3ad-83bb-a858-f803d1fe0268"
+    - stage: seal
+      stageUuid: "2706b24c-7df7-8886-9bad-5a455e692e99"
+    - stage: uuid
+      stageUuid: "e43b3091-d0fe-858e-ab0b-3f9ddcdf78ab"
+version: 2
 ---
-
 # unraised — a case that is never raised is a check that cannot fire
 
 A taxonomy of failures is a promise: *these are the ways this can go wrong, and each is detected.* A member declared in the union and **constructed nowhere** breaks that promise silently. The check does not fail — it never runs, and the claim it guards reads as true forever because nothing is left to contradict it.

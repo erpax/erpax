@@ -1,145 +1,20 @@
 ---
 name: concatenate
 description: "Use when building a completely autonomous workflow from command·question·answer atoms — the free monoid of steps, run as command then gate then computed-answer-on-NO until every gate is YES (zero entropy), no human in the loop."
-atomPath: workflow/concatenate
-coordinate: workflow/concatenate · 5/round · c13fd658
-contentUuid: "55bf17ec-e103-5382-8551-58c26fa3daf6"
-diamondUuid: "2d09ba6a-df3e-80a4-b074-2eed7a198c2a"
-uuid: "c13fd658-41b4-8b9b-9cec-475895a8f4a6"
-horo: 5
-bonds:
-  in:
-    - answer
-    - aura
-    - balance
-    - breath
-    - command
-    - cost
-    - decide
-    - derive
-    - dry
-    - entropy
-    - gate
-    - generate
-    - law
-    - merge
-    - question
-    - recover
-    - self
-    - sequence
-    - society
-    - spec
-    - step
-    - vocabulary
-    - workflow
-  out:
-    - answer
-    - aura
-    - balance
-    - breath
-    - command
-    - cost
-    - decide
-    - derive
-    - dry
-    - entropy
-    - gate
-    - generate
-    - law
-    - merge
-    - question
-    - recover
-    - self
-    - sequence
-    - society
-    - spec
-    - step
-    - vocabulary
-    - workflow
+atomPath: "workflow/concatenate"
+coordinate: "workflow/concatenate · 1/base · 07a51f62"
+contentUuid: "4eb97637-3892-51c6-9690-ba33ed77d265"
+diamondUuid: "8be68777-799c-8b0f-8948-238e16207a4f"
+uuid: "07a51f62-eefa-8515-910f-f285c8adf70e"
+horo: 1
 typography:
   partition: workflow
   bondDegree: 74
-  neighbors:
-    - aura
 standards:
   - "ISO/IEC 19510:2013 BPMN-2.0 — a free monoid over the workflow step"
-  - pure — the algebra + an injected NAME→effect registry; effects at the boundary
-  - pure — the algebra + an injected NAME→effect registry; the canonical workflows are gated for groundedness
 bindings: []
-neighbors:
-  wikilink:
-    - answer
-    - aura
-    - balance
-    - breath
-    - command
-    - cost
-    - decide
-    - derive
-    - dry
-    - entropy
-    - gate
-    - generate
-    - law
-    - merge
-    - question
-    - recover
-    - self
-    - sequence
-    - society
-    - spec
-    - step
-    - vocabulary
-  matrix:
-    - answer
-    - aura
-    - balance
-    - breath
-    - command
-    - cost
-    - decide
-    - derive
-    - dry
-    - entropy
-    - gate
-    - generate
-    - law
-    - merge
-    - question
-    - recover
-    - self
-    - sequence
-    - society
-    - spec
-    - step
-    - vocabulary
-    - workflow
-  backlinks:
-    - answer
-    - aura
-    - balance
-    - breath
-    - command
-    - cost
-    - decide
-    - derive
-    - dry
-    - entropy
-    - gate
-    - generate
-    - law
-    - merge
-    - question
-    - recover
-    - self
-    - sequence
-    - society
-    - spec
-    - step
-    - vocabulary
-    - workflow
 signatures:
-  computationUuid: "fb864b01-8d37-8ac4-84b1-6780d052bdba"
+  computationUuid: "085acdfd-0fde-8796-b2b9-38a70da5a0dd"
   stages:
     - stage: path
       stageUuid: "d5367a3e-ff14-831b-a8e8-89b629ea2592"
@@ -150,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9b76ec74-712c-8c1e-bc59-3be6bea7ec2b"
     - stage: horo
-      stageUuid: "d9e0c473-7ac2-86ed-b129-854b3fd80e57"
+      stageUuid: "65394577-c516-8a9d-a646-3b2d0ce5e079"
     - stage: seal
       stageUuid: "a8d9c3a9-9627-88ac-bb85-8779c68c821f"
     - stage: uuid
-      stageUuid: "edefc557-8456-8697-82a3-0ede01778dbb"
+      stageUuid: "72996bb6-2162-8fc6-bac0-b241b219fa27"
 version: 2
 ---
 # workflow/concatenate — command·question·answer → autonomous workflows

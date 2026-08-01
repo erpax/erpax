@@ -1,63 +1,35 @@
 ---
 name: continental
 description: "Use when reasoning about continental as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/continental
-coordinate: continental · 2/share · c706d85d
-contentUuid: "afdbda69-391e-5bf6-b853-c51573c0c161"
-diamondUuid: "8de97b56-387a-8d93-a31d-b65b34541870"
-uuid: "c706d85d-1557-88a9-9854-10fc8c8444e4"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/continental"
+coordinate: "vocabulary/continental · 4/weave · edf488a0"
+contentUuid: "e9d97255-1ea3-5cdb-89ac-dd8bb303a4ab"
+diamondUuid: "b47f45e7-7d52-83b6-9248-bbf2f0e87b4b"
+uuid: "edf488a0-c1ce-885c-92d7-23fd98116a02"
+horo: 4
 typography:
-  partition: continental
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "aa6815f4-b6c6-8b39-8ecb-13d8fa959fb3"
+  computationUuid: "ffbdc0f6-28bc-8610-82df-d9a148c8bad1"
   stages:
     - stage: path
-      stageUuid: "89ba72be-51c3-81ff-b6ba-ed2499c75a1d"
+      stageUuid: "8069cd43-d323-87ef-b2b9-3a38ccccd9c1"
     - stage: trinity
-      stageUuid: "f68eebd1-cc94-840e-9e4e-25ac113706ea"
+      stageUuid: "d82b0f06-c2b7-86c6-b497-b083ad5cc23a"
     - stage: boundary
-      stageUuid: "b712741a-c63f-8af7-b382-12f658f98abe"
+      stageUuid: "fba4dacc-5d69-8586-b795-56633d7057fa"
     - stage: links
-      stageUuid: "362f84de-7828-83c9-895a-3ef6499d5f01"
+      stageUuid: "b36b863b-7dca-8257-97f0-ff7538970191"
     - stage: horo
-      stageUuid: "bc21e4c3-6c53-8c42-a06f-694a03d4fcbd"
+      stageUuid: "87b43a72-22ce-80c9-8df9-e1627c3fee5e"
     - stage: seal
-      stageUuid: "99b121a3-9c7c-8f9a-8434-39a8a40ff679"
+      stageUuid: "17d71cb1-eff1-8d9a-bb35-4cf6bce65ad3"
     - stage: uuid
-      stageUuid: "1f0589ea-de87-82c6-a0ae-471550a41da9"
+      stageUuid: "bb897f2f-b5f5-8c64-9b8b-050a43e4398f"
 version: 2
 ---
 # continental

@@ -1,118 +1,35 @@
 ---
 name: arrival
 description: "Use when reasoning about arrival as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/arrival
-coordinate: arrival · 2/share · efaa88b7
-contentUuid: "2a3b2d32-063e-5de7-baf6-fac6a6760c97"
-diamondUuid: "1c3bea15-f88e-8d3c-b93f-6d1744b51473"
-uuid: "efaa88b7-9b0b-8109-8ca9-74a29dd934d4"
+atomPath: "vocabulary/arrival"
+coordinate: "vocabulary/arrival · 2/share · ac21f5f9"
+contentUuid: "f17e097c-9087-5e61-a033-bd67c7a032b7"
+diamondUuid: "b4eb785a-6e09-8333-9e0f-4a1c26e3d216"
+uuid: "ac21f5f9-335c-8751-be28-e98130df40aa"
 horo: 2
-bonds:
-  in:
-    - airport
-    - boat
-    - bus
-    - collapse
-    - expected
-    - gate
-    - law
-    - merge
-    - platform
-    - station
-    - sti
-    - stop
-    - terminal
-    - time
-    - until
-  out:
-    - airport
-    - boat
-    - bus
-    - collapse
-    - expected
-    - gate
-    - law
-    - merge
-    - platform
-    - station
-    - sti
-    - stop
-    - terminal
-    - time
-    - until
 typography:
-  partition: arrival
+  partition: vocabulary
   bondDegree: 54
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - airport
-    - boat
-    - bus
-    - collapse
-    - expected
-    - gate
-    - law
-    - merge
-    - platform
-    - station
-    - sti
-    - stop
-    - terminal
-    - time
-    - until
-  matrix:
-    - airport
-    - boat
-    - bus
-    - collapse
-    - expected
-    - gate
-    - law
-    - merge
-    - platform
-    - station
-    - sti
-    - stop
-    - terminal
-    - time
-    - until
-  backlinks:
-    - airport
-    - boat
-    - bus
-    - collapse
-    - expected
-    - gate
-    - law
-    - merge
-    - platform
-    - station
-    - sti
-    - stop
-    - terminal
-    - time
-    - until
 signatures:
-  computationUuid: "7e1bb340-f456-8768-93b6-d6222851af66"
+  computationUuid: "fcc6f280-0cac-84ec-b7d9-85be1597edc2"
   stages:
     - stage: path
-      stageUuid: "d3d58f87-3a3e-8ea9-ac7f-a0a5e3253153"
+      stageUuid: "e8379a9b-a6e6-8d1a-8e8e-04d0b5721e76"
     - stage: trinity
-      stageUuid: "5ba6fe3e-834b-8918-8fea-d25b0ab2068c"
+      stageUuid: "9b555165-f60c-8728-a9fb-119fbd29d18d"
     - stage: boundary
-      stageUuid: "5effff38-f0e1-8dfd-9fb3-179aa0717b95"
+      stageUuid: "8908bad8-e3aa-82d8-a8a1-7e80d9162fa4"
     - stage: links
-      stageUuid: "24ed2013-57f1-8ee6-8dd3-33c62213a3e4"
+      stageUuid: "2de31c23-4de8-855c-9d98-48d2bf72d9a2"
     - stage: horo
-      stageUuid: "de9f6ec9-dfcf-849d-aa9a-dd91de4575f3"
+      stageUuid: "6d4539dd-0b1c-82a3-9203-e1de283924e0"
     - stage: seal
-      stageUuid: "deffe9b1-5214-8e1e-962f-3255fce75a09"
+      stageUuid: "15235496-935f-810c-aa91-28af6d88be2b"
     - stage: uuid
-      stageUuid: "98df00eb-e068-83ba-bdbe-7b8b3a310ca8"
+      stageUuid: "f1baa15f-3563-89ae-acc5-6d54d057e9c7"
 version: 2
 ---
 # arrival

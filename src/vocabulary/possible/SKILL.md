@@ -1,73 +1,35 @@
 ---
 name: possible
 description: "Use when reasoning about possible as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/possible
-coordinate: possible · 5/round · ab377bf6
-contentUuid: "cc7a8bd7-1ecc-5daa-b085-e0c0c00f5db0"
-diamondUuid: "a348b4c8-8697-8fb0-b17e-020763042fdb"
-uuid: "ab377bf6-9bba-843e-aec7-557276af9824"
+atomPath: "vocabulary/possible"
+coordinate: "vocabulary/possible · 5/round · 400f188e"
+contentUuid: "fe87fbb1-566f-5ec9-8a2b-7c172e70a58a"
+diamondUuid: "a3fa5d78-72e5-821a-a3e4-68d1b30c0fcf"
+uuid: "400f188e-11bc-824a-8188-fba188fbcb82"
 horo: 5
-bonds:
-  in:
-    - collapse
-    - complication
-    - law
-    - merge
-    - sti
-    - treatment
-  out:
-    - collapse
-    - complication
-    - law
-    - merge
-    - sti
-    - treatment
 typography:
-  partition: possible
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - complication
-    - law
-    - merge
-    - sti
-    - treatment
-  matrix:
-    - collapse
-    - complication
-    - law
-    - merge
-    - sti
-    - treatment
-  backlinks:
-    - collapse
-    - complication
-    - law
-    - merge
-    - sti
-    - treatment
 signatures:
-  computationUuid: "55d89983-7b87-8b2f-ab81-280ff8731c5c"
+  computationUuid: "d571e92a-648f-8b8c-9cf8-5e65ae2b6114"
   stages:
     - stage: path
-      stageUuid: "14c18697-c72b-843f-a6f1-1e0816210422"
+      stageUuid: "271985f1-9da3-847d-9a78-06246f117c36"
     - stage: trinity
-      stageUuid: "26b86de9-c6f3-8958-9524-e53676716861"
+      stageUuid: "1bdfb1db-63e2-8ea9-bcda-ec53b9cb8359"
     - stage: boundary
-      stageUuid: "5b97e482-db53-8bac-95e7-caaf0fb3fefd"
+      stageUuid: "d4f5b1ea-b4c0-88dd-b47c-6687ad114707"
     - stage: links
-      stageUuid: "7559664c-588b-895d-9e06-1aad995f3fca"
+      stageUuid: "2b9ae000-2e77-8922-8496-53847ca7ae8f"
     - stage: horo
-      stageUuid: "75b1fd9a-137b-85b6-93be-bfc8f38d3eae"
+      stageUuid: "6f7c360a-463a-8987-85e2-3656aab2ac6c"
     - stage: seal
-      stageUuid: "0ab3ed2d-a187-8961-a7a4-2bf7cf36afe2"
+      stageUuid: "5a1896f9-bec5-8a6f-aaba-dc5f1aa1f715"
     - stage: uuid
-      stageUuid: "df25ee4e-69c5-8d59-8dbe-22ee7f41c173"
+      stageUuid: "2469d489-2694-8091-9fb9-b6011e6617ed"
 version: 2
 ---
 # possible

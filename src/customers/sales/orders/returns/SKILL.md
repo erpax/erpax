@@ -2,38 +2,14 @@
 name: returns
 description: "Use when authorising, tracking, and closing a customer return (RMA) — recording the reason, line-level items and restock decisions, enforcing SoD on approval, and linking to the credit memo that reverses revenue per IFRS-15 §B22. The returns-and-RMA collection."
 atomPath: "customers/sales/orders/returns"
-coordinate: "customers/sales/orders/returns · 8/crest · a767eceb"
-contentUuid: "86fb91a8-d0d6-5fff-8e82-5d6cb0f7621c"
-diamondUuid: "f2bda075-961a-893d-8834-7c58d0df4702"
-uuid: "a767eceb-f762-8f4c-b3a1-e31285cd3ce5"
-horo: 8
-bonds:
-  in:
-    - accounting
-    - fields
-    - hooks
-    - law
-    - offered
-    - orders
-    - proof
-    - standard
-    - store
-    - transaction
-  out:
-    - accounting
-    - fields
-    - hooks
-    - law
-    - offered
-    - orders
-    - proof
-    - standard
-    - store
-    - transaction
+coordinate: "customers/sales/orders/returns · 4/weave · b2a8079c"
+contentUuid: "3f4e8e52-7191-5af2-a3af-21ad1924eb95"
+diamondUuid: "bb97791b-84c4-8a2a-b7c8-3b7568ce3200"
+uuid: "b2a8079c-a943-88ab-9490-f3c8ee3624a7"
+horo: 4
 typography:
   partition: customers
   bondDegree: 36
-  neighbors: []
 standards:
   - "IFRS IAS-2 inventories return-to-stock"
   - "IFRS IFRS-15 §B22 right-of-return-revenue-reversal"
@@ -44,39 +20,8 @@ standards:
   - "US-GAAP ASC-606-10-32-10 variable-consideration"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - fields
-    - hooks
-    - law
-    - proof
-    - standard
-    - transaction
-  matrix:
-    - accounting
-    - fields
-    - hooks
-    - law
-    - offered
-    - orders
-    - proof
-    - standard
-    - store
-    - transaction
-  backlinks:
-    - accounting
-    - fields
-    - hooks
-    - law
-    - offered
-    - orders
-    - proof
-    - standard
-    - store
-    - transaction
 signatures:
-  computationUuid: "04b7b254-a7b0-8c7f-a802-5ac1c7009f30"
+  computationUuid: "22c3954a-53ea-87fe-9311-4ce17bc3ee58"
   stages:
     - stage: path
       stageUuid: "2bf7c8f8-0287-893b-af46-38d6e75a697e"
@@ -87,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "bafa1ce5-fff9-862a-aee3-a893153ac587"
     - stage: horo
-      stageUuid: "3072d676-18c1-846a-964f-7fff3499ca10"
+      stageUuid: "af215d30-3e4a-807e-9094-d1481565cd36"
     - stage: seal
       stageUuid: "70ac5fd1-5c8d-8cfe-aa60-4be79ba32b9b"
     - stage: uuid
-      stageUuid: "8f8e9d13-04b3-8ac4-b67e-a59572d82eb8"
+      stageUuid: "05ef01ad-89c7-842a-9708-f5c056e8c33c"
 version: 2
 ---
 # returns

@@ -1,79 +1,35 @@
 ---
 name: class
 description: "Use when reasoning about class — A class, also often called a 'Type'; equivalent to rdfs:Class."
-atomPath: vocabulary/class
-coordinate: class · 4/weave · 3a3eeffd
-contentUuid: "3c0eb259-c603-5c9f-a96c-95112ea2b642"
-diamondUuid: "b9e5a924-5f91-81c1-8904-f0c2e7845db4"
-uuid: "3a3eeffd-f1f2-8199-8e60-4bf69efe72c6"
-horo: 4
-bonds:
-  in:
-    - agent
-    - biomechnical
-    - drug
-    - functional
-    - infectious
-    - law
-    - structural
-  out:
-    - agent
-    - biomechnical
-    - drug
-    - functional
-    - infectious
-    - law
-    - structural
+atomPath: "vocabulary/class"
+coordinate: "vocabulary/class · 5/round · f89eb60b"
+contentUuid: "6616c6a7-a0d9-586d-a00c-b7a1f6f2b2d7"
+diamondUuid: "225a9973-b3b9-8f77-bade-adecdd3d9100"
+uuid: "f89eb60b-aa51-8a84-8f3b-0f5b6820d9d8"
+horo: 5
 typography:
-  partition: class
-  bondDegree: 27
-  neighbors:
-    - agent
+  partition: vocabulary
+  bondDegree: 29
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - agent
-    - biomechnical
-    - drug
-    - functional
-    - infectious
-    - law
-    - structural
-  matrix:
-    - agent
-    - biomechnical
-    - drug
-    - functional
-    - infectious
-    - law
-    - structural
-  backlinks:
-    - agent
-    - biomechnical
-    - drug
-    - functional
-    - infectious
-    - law
-    - structural
 signatures:
-  computationUuid: "26e23dd2-508e-87ca-bc82-77f5113877f1"
+  computationUuid: "fd875a04-5c7b-850d-8225-98dbb37a8821"
   stages:
     - stage: path
-      stageUuid: "a3b37e35-3fef-8481-a829-316960e29d91"
+      stageUuid: "9626b9fc-71d5-84bb-801d-4378544e9102"
     - stage: trinity
-      stageUuid: "65d29594-d7e2-8330-b7a4-60136f55335f"
+      stageUuid: "31c8cbb8-636b-8dbd-8371-9ddc956d5563"
     - stage: boundary
-      stageUuid: "7768413f-4284-8375-8f5d-6da8aa36ea4d"
+      stageUuid: "62f51002-d7d6-8f21-b9d6-12f5172305e2"
     - stage: links
-      stageUuid: "11519a82-eaf9-8328-90d6-8d0fb3d79d99"
+      stageUuid: "9ed4d5e3-0568-8266-bbd3-7be70c657c22"
     - stage: horo
-      stageUuid: "468192e3-0fc7-81e6-8a9b-a29a71ca29a1"
+      stageUuid: "3bcfdbbd-6989-8f3c-9fb5-d2d69b13e93c"
     - stage: seal
-      stageUuid: "8386a2d1-8bba-8185-aa22-a681801e6176"
+      stageUuid: "352bec45-6571-80b7-8a64-95f1f34357ba"
     - stage: uuid
-      stageUuid: "5cdbe283-8dd0-8a93-bec2-baf2d589113e"
+      stageUuid: "c6e422e9-78e3-8c64-9438-8e20b96e8731"
 version: 2
 ---
 # class

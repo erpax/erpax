@@ -2,77 +2,19 @@
 name: sign
 description: "Use when reasoning about sign as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: sign
-coordinate: sign · 2/share · e1a63b39
-contentUuid: "2291dcdf-fbab-5c36-b632-a4c00bb23c69"
-diamondUuid: "1365ac44-46ac-87c6-a333-f4d4223d2a6a"
-uuid: "e1a63b39-0eb3-8b75-a7a7-0c995cb1401f"
-horo: 2
-bonds:
-  in:
-    - call
-    - collapse
-    - detected
-    - distinguishing
-    - law
-    - medical
-    - merge
-    - sti
-    - symptom
-    - vital
-  out:
-    - call
-    - collapse
-    - detected
-    - distinguishing
-    - law
-    - medical
-    - merge
-    - sti
-    - symptom
-    - vital
+coordinate: "sign · 7/descent · 8c9eaa3c"
+contentUuid: "7feab16d-d9e8-528a-a3ba-d00925d72580"
+diamondUuid: "33d22422-31ae-8337-895a-824ea841892c"
+uuid: "8c9eaa3c-c54a-8ad2-a95a-db73e828dde1"
+horo: 7
 typography:
   partition: sign
-  bondDegree: 36
-  neighbors: []
+  bondDegree: 43
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - call
-    - collapse
-    - detected
-    - distinguishing
-    - law
-    - medical
-    - merge
-    - sti
-    - symptom
-    - vital
-  matrix:
-    - call
-    - collapse
-    - detected
-    - distinguishing
-    - law
-    - medical
-    - merge
-    - sti
-    - symptom
-    - vital
-  backlinks:
-    - call
-    - collapse
-    - detected
-    - distinguishing
-    - law
-    - medical
-    - merge
-    - sti
-    - symptom
-    - vital
 signatures:
-  computationUuid: "8e806340-ae53-8fa9-bd3d-5bf6c74d81c1"
+  computationUuid: "fb77b864-87f4-84d8-b9f8-9d943fe7b685"
   stages:
     - stage: path
       stageUuid: "f5b26de8-c462-8f50-b284-e1b00d05645f"
@@ -83,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b78eceab-5cb6-8af1-ba0a-1dd3dc93d31b"
     - stage: horo
-      stageUuid: "a8ec24aa-0866-804c-a347-e5a4d36ecbde"
+      stageUuid: "bcabc965-c90f-8dbd-bce9-173ce6f6df1f"
     - stage: seal
-      stageUuid: "fe3c63c3-1900-8a7b-9de0-b355bc15a7f4"
+      stageUuid: "1d969368-fee8-8087-a2ac-848e74fffbef"
     - stage: uuid
-      stageUuid: "2c217f7d-c1a3-892b-9c26-7eae9fb8b0f3"
+      stageUuid: "c40cd768-e64b-807b-b5ca-5962cce0ea0c"
 version: 2
 ---
 # sign

@@ -1,53 +1,35 @@
 ---
 name: documentation
 description: Use when reasoning about documentation — Further documentation describing the Web API in more detail.
-atomPath: vocabulary/documentation
-coordinate: documentation · 5/round · 7265317b
-contentUuid: "92b61b79-5636-5818-8f1c-ef148b557e29"
-diamondUuid: "84edab9f-d025-8e4b-8424-3dd6a4d8ace4"
-uuid: "7265317b-00a4-8b60-b960-2343618ead80"
-horo: 5
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/documentation"
+coordinate: "vocabulary/documentation · 8/crest · f68ec301"
+contentUuid: "cf5e8dc0-2499-587a-b362-4228470b7eaf"
+diamondUuid: "11450ede-f17e-8f49-8167-d63eeecd7e84"
+uuid: "f68ec301-bf2c-8769-9fde-2a592dd43d2e"
+horo: 8
 typography:
-  partition: documentation
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "76f07c80-7a84-8c81-8735-b3e095392b5c"
+  computationUuid: "22538fac-906d-820d-8aca-ab75a5e8cc57"
   stages:
     - stage: path
-      stageUuid: "5655a32b-6410-8641-9eed-d692d6500a27"
+      stageUuid: "3c2a8e1a-7116-803c-9c43-31737a8f49ed"
     - stage: trinity
-      stageUuid: "f2c9ce0e-8094-8cc3-9fda-1f98547580a4"
+      stageUuid: "0ce7e347-a243-8e98-aaa9-6df5e19d02bf"
     - stage: boundary
-      stageUuid: "02be570b-cc93-8148-b1c1-d22206e6ee4d"
+      stageUuid: "155f4184-130d-8d44-bd65-e9bf1894290e"
     - stage: links
-      stageUuid: "fea5f6b1-2c91-8638-88b6-39118133ffc0"
+      stageUuid: "d84d0641-9dd8-8fc8-a387-1b7d688c276a"
     - stage: horo
-      stageUuid: "ca7437e9-0e43-8dd3-b7bf-435f100a5b86"
+      stageUuid: "704e1026-c729-8fb5-a085-e9f8c194f593"
     - stage: seal
-      stageUuid: "2fb59c1e-9cf2-838b-a203-94cb6ed6d9ed"
+      stageUuid: "523de695-1ef2-8dda-ad67-bc4f27bed9f2"
     - stage: uuid
-      stageUuid: "2b6d5f6e-e4bc-8b57-a1f2-2e9d30b4736c"
+      stageUuid: "81b38ea8-8521-8227-9ae6-88f099a7c10f"
 version: 2
 ---
 # documentation

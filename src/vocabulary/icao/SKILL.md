@@ -1,68 +1,35 @@
 ---
 name: icao
 description: "Use when reasoning about icao as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/icao
-coordinate: icao · 7/descent · cc9e36de
-contentUuid: "d96f30d8-b919-5ecd-b441-b768ea6f15d7"
-diamondUuid: "5f2a6d8c-c093-8d6c-9818-b2bd2d8960f3"
-uuid: "cc9e36de-f8f3-8494-a1e3-581c0fa0a4e6"
-horo: 7
-bonds:
-  in:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/icao"
+coordinate: "vocabulary/icao · 4/weave · 090dde92"
+contentUuid: "2ad0d5c6-ec3f-5904-9ea1-6050aac6e55e"
+diamondUuid: "bc79af35-d066-8d96-bf0a-6f011df39b01"
+uuid: "090dde92-4851-8422-91a1-489c6a6e7318"
+horo: 4
 typography:
-  partition: icao
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "cd010cc5-33c4-83f9-a8ff-79991de36ca5"
+  computationUuid: "5d86c245-76b0-866a-9265-e78242c59c7d"
   stages:
     - stage: path
-      stageUuid: "847682db-de22-8a52-ae00-e27b5da5d9a2"
+      stageUuid: "88b2ddc8-459a-8e3f-9f3c-d8d70eb977a1"
     - stage: trinity
-      stageUuid: "36e54f5a-e799-8b93-b3c7-04c7e7d7afd7"
+      stageUuid: "f444435b-e51a-8346-9d74-f110ff56a2dc"
     - stage: boundary
-      stageUuid: "ee64061d-38ee-82ba-9771-3b86baeeb199"
+      stageUuid: "1eb77398-23ff-8cab-84da-8c497351d1df"
     - stage: links
-      stageUuid: "bc6af0f8-f672-8049-9eb7-d91c54f2b32c"
+      stageUuid: "2ef44a56-22df-888a-9684-6730bda19d8c"
     - stage: horo
-      stageUuid: "42a3d8bb-155d-8a89-8de4-20d99e6b3e33"
+      stageUuid: "fdf62c26-b678-85d3-aa63-9455d6261f79"
     - stage: seal
-      stageUuid: "155c1064-a044-8458-b875-767fa00956f7"
+      stageUuid: "268a951f-bc63-8fb6-a39d-6ee348b55bc8"
     - stage: uuid
-      stageUuid: "53e5a8c8-e77e-8e6b-8d85-1f049e9402e2"
+      stageUuid: "2da7623e-be33-8f7a-9ad8-d7a71c8a50fa"
 version: 2
 ---
 # icao

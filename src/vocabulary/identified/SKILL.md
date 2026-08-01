@@ -1,63 +1,35 @@
 ---
 name: identified
 description: "Use when reasoning about identified as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/identified
-coordinate: identified · 7/descent · 2a4fd1a4
-contentUuid: "4bf7fb26-ce32-5213-8650-b916343b1d30"
-diamondUuid: "d11fa863-ecc0-8324-af43-19c46c90ba37"
-uuid: "2a4fd1a4-8936-8389-a72d-5e8e2c9a1e85"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/identified"
+coordinate: "vocabulary/identified · 8/crest · c4b10cfc"
+contentUuid: "6a3e1819-e749-5272-9cb8-695343ee10f1"
+diamondUuid: "97682229-fd53-8df3-a6af-a5d7826593df"
+uuid: "c4b10cfc-2744-829b-b837-835254e08048"
+horo: 8
 typography:
-  partition: identified
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "86d0f5ed-abf7-810e-ba6b-c0a50a07ef89"
+  computationUuid: "0eef56a0-1ec7-808f-84dc-02fecf985535"
   stages:
     - stage: path
-      stageUuid: "ccbc5c2a-55bd-8a83-870e-ca2ef6304a5b"
+      stageUuid: "7d472492-9442-82bf-8ea9-973b3bf49b5a"
     - stage: trinity
-      stageUuid: "97998043-a23a-89cf-b5b9-600920c94a71"
+      stageUuid: "355157cb-83a8-862c-8dea-867fd61904b9"
     - stage: boundary
-      stageUuid: "38fa9d2f-5668-8269-8857-48573566aa12"
+      stageUuid: "a2f96a08-4dc2-8508-be99-a708b5c22d8a"
     - stage: links
-      stageUuid: "54072b94-c193-8f46-8142-924cfe139bcf"
+      stageUuid: "74f24da9-95ed-85ff-a377-b6a262adc66a"
     - stage: horo
-      stageUuid: "f40c73d8-5628-8def-995c-010c3c537339"
+      stageUuid: "6a1ba14a-4109-8118-ad40-782d1f80bfe4"
     - stage: seal
-      stageUuid: "20ba7390-7aff-86f4-9876-4617955e3f54"
+      stageUuid: "f7861412-22cd-8dd7-b5fa-027b9901e256"
     - stage: uuid
-      stageUuid: "59b3ea6c-3429-8530-a9ba-c89e610d9dd6"
+      stageUuid: "da239485-4028-84b6-8d93-c38f63386aca"
 version: 2
 ---
 # identified

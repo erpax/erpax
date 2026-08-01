@@ -2,96 +2,19 @@
 name: dust
 description: "Use when reasoning about the corpus as forged matter — every content-uuid node is a grain of stardust, an atom fused in the star and scattered; dust records the quantum proof as the grain census, computed on the live matrix."
 atomPath: dust
-coordinate: "dust · 2/share · 0d598b5f"
-contentUuid: "a343dd8a-f3e0-508f-990a-d7f6de2fe79d"
-diamondUuid: "4324ee94-127e-8eed-b10f-a019cbec745f"
-uuid: "0d598b5f-676f-854e-96c1-3af3ae678132"
+coordinate: "dust · 2/share · d1fdb46b"
+contentUuid: "fea0841b-38b9-5105-a1d2-d477c010325f"
+diamondUuid: "9ab4fee1-2ceb-8ccc-b64a-f9d73841c21d"
+uuid: "d1fdb46b-f81f-8e54-855c-da338f59f75a"
 horo: 2
-bonds:
-  in:
-    - atom
-    - cost
-    - entanglement
-    - fractal
-    - fusion
-    - gravity
-    - law
-    - matrix
-    - merge
-    - plasma
-    - quantum
-    - rodin
-    - star
-    - uuid
-  out:
-    - atom
-    - cost
-    - entanglement
-    - fractal
-    - fusion
-    - gravity
-    - law
-    - matrix
-    - merge
-    - plasma
-    - quantum
-    - rodin
-    - star
-    - uuid
 typography:
   partition: dust
   bondDegree: 44
-  neighbors: []
 standards:
   - "RFC 9562 §5.8 content-uuid + stellar nucleosynthesis (the standard astrophysical account)"
 bindings: []
-neighbors:
-  wikilink:
-    - atom
-    - cost
-    - entanglement
-    - fractal
-    - fusion
-    - gravity
-    - law
-    - matrix
-    - merge
-    - quantum
-    - rodin
-    - star
-    - uuid
-  matrix:
-    - atom
-    - cost
-    - entanglement
-    - fractal
-    - fusion
-    - gravity
-    - law
-    - matrix
-    - merge
-    - plasma
-    - quantum
-    - rodin
-    - star
-    - uuid
-  backlinks:
-    - atom
-    - cost
-    - entanglement
-    - fractal
-    - fusion
-    - gravity
-    - law
-    - matrix
-    - merge
-    - plasma
-    - quantum
-    - rodin
-    - star
-    - uuid
 signatures:
-  computationUuid: "5da8b743-a1d1-837a-959d-0e8d73b67166"
+  computationUuid: "ac8952d7-def7-8d9c-8f27-3c28d8f1082f"
   stages:
     - stage: path
       stageUuid: "0c97104c-bf26-816f-8222-1d52d12ad40a"
@@ -102,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9d34a3e6-6722-879f-881c-5905717c58d1"
     - stage: horo
-      stageUuid: "b0916c75-4cd0-8522-8938-8cca0a112ff7"
+      stageUuid: "b45fd684-b997-8cfa-b080-80657e149362"
     - stage: seal
       stageUuid: "a219491b-1c19-886b-8f53-1e65c0fb2f80"
     - stage: uuid
-      stageUuid: "b4561818-e073-8790-8df2-3f7a9d5fa545"
+      stageUuid: "963b2ccd-55c4-8636-9e02-6df6286fce21"
 version: 2
 ---
 # dust — stardust: the corpus is forged atoms, scattered

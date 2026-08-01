@@ -1,53 +1,35 @@
 ---
 name: ch
 description: "Use when reasoning about ch — Non-proprietary identifier for molecular entity that can be used in printed and electronic data sources thus enabling easier linking of diverse data compilations."
-atomPath: vocabulary/ch
-coordinate: ch · 5/round · a34b8936
-contentUuid: "67c82a0f-7667-5833-b790-342180a217cc"
-diamondUuid: "44e94e86-cd7e-8823-a593-c75d5357bbde"
-uuid: "a34b8936-1e46-8c27-8fed-70bf95f3ff2b"
-horo: 5
-bonds:
-  in:
-    - key
-    - law
-  out:
-    - key
-    - law
+atomPath: "vocabulary/ch"
+coordinate: "vocabulary/ch · 1/base · 2a110618"
+contentUuid: "d0356de4-a6ef-594e-a687-521fe901b117"
+diamondUuid: "c49c8441-4985-8c49-a876-e2cd19576849"
+uuid: "2a110618-a2ba-8ee4-9e62-979a0416d19b"
+horo: 1
 typography:
-  partition: ch
+  partition: vocabulary
   bondDegree: 7
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - key
-    - law
-  matrix:
-    - key
-    - law
-  backlinks:
-    - key
-    - law
 signatures:
-  computationUuid: "b48ee2a5-ff38-8532-ba86-4dfceca00020"
+  computationUuid: "ea7e8fc9-49a5-8646-bc64-c76a1e919b34"
   stages:
     - stage: path
-      stageUuid: "54ab085a-75e4-811e-950a-4fc5e64c6d1d"
+      stageUuid: "6ef12496-07f5-8534-a2de-899860defd09"
     - stage: trinity
-      stageUuid: "f626e03d-5c13-87a5-aeea-41bc8c317e6f"
+      stageUuid: "c703e6c8-228b-8fca-9c28-42626358a711"
     - stage: boundary
-      stageUuid: "c7613c44-4fe1-8efb-81da-83f842bf773e"
+      stageUuid: "b28e02ff-31d2-87bf-afa7-6dfbbc007ecb"
     - stage: links
-      stageUuid: "ca86fe95-4f91-8c45-b763-e46168954ce3"
+      stageUuid: "36bccdf9-14c1-8299-b173-92244476a65c"
     - stage: horo
-      stageUuid: "80e524dc-0c5b-8b99-a437-3f8e2247812c"
+      stageUuid: "1f3e4b09-e180-8c7c-93a0-594f174ae9cb"
     - stage: seal
-      stageUuid: "0afa1b2e-b89f-8a8a-854f-ca2717fdebab"
+      stageUuid: "0c033a32-ec6d-80d1-a98a-08d4c9aa5f05"
     - stage: uuid
-      stageUuid: "80e4fcdb-2254-809b-be6b-fb5d0d48dd22"
+      stageUuid: "df413769-254f-8e3a-9517-18a4554d1f74"
 version: 2
 ---
 # ch

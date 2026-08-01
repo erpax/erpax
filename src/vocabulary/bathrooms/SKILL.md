@@ -1,83 +1,35 @@
 ---
 name: bathrooms
 description: "Use when reasoning about bathrooms as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/bathrooms
-coordinate: bathrooms · 1/base · d7c72558
-contentUuid: "541fcd53-6b02-5fcc-8621-5f3a457e9817"
-diamondUuid: "57f90b54-2a83-83ce-8a92-8e36df4d9460"
-uuid: "d7c72558-7de0-885b-a97c-503969f7e372"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - full
-    - law
-    - merge
-    - number
-    - partial
-    - sti
-    - total
-  out:
-    - collapse
-    - full
-    - law
-    - merge
-    - number
-    - partial
-    - sti
-    - total
+atomPath: "vocabulary/bathrooms"
+coordinate: "vocabulary/bathrooms · 7/descent · 69b1c30e"
+contentUuid: "68be527b-2178-59b6-bfc3-5865b0066efc"
+diamondUuid: "ec2e644d-33a0-8e23-aa00-fdbff5b2609c"
+uuid: "69b1c30e-1525-87b3-aa3d-c9168aea21b2"
+horo: 7
 typography:
-  partition: bathrooms
+  partition: vocabulary
   bondDegree: 26
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - full
-    - law
-    - merge
-    - number
-    - partial
-    - sti
-    - total
-  matrix:
-    - collapse
-    - full
-    - law
-    - merge
-    - number
-    - partial
-    - sti
-    - total
-  backlinks:
-    - collapse
-    - full
-    - law
-    - merge
-    - number
-    - partial
-    - sti
-    - total
 signatures:
-  computationUuid: "c356908e-18e5-82dc-bbd5-c3394a578a89"
+  computationUuid: "88c32a9f-62b2-874c-b1c2-b4e3f0222c41"
   stages:
     - stage: path
-      stageUuid: "ff6ea348-48f2-865c-9a06-3ea661f06036"
+      stageUuid: "cc1604df-7959-899c-b769-206409ec2841"
     - stage: trinity
-      stageUuid: "a972ff0f-706e-8da2-bac9-57049b17fc1a"
+      stageUuid: "14ba4aaa-5c15-8d98-b43e-3eef897f7169"
     - stage: boundary
-      stageUuid: "8d1487f7-da62-8368-b376-b0c87b1beb08"
+      stageUuid: "82d7fa3b-25b8-8645-abde-0d3115cd73f7"
     - stage: links
-      stageUuid: "86ca4aae-20a5-8f32-bbe5-8bbc6e0b61fc"
+      stageUuid: "3098cb3b-661c-8f73-9010-7b16d60b314f"
     - stage: horo
-      stageUuid: "d190fff4-cf2f-879e-92a7-484f285a59c0"
+      stageUuid: "e021d26a-699b-8612-bfe7-cf52a3d583bf"
     - stage: seal
-      stageUuid: "d2e09280-59f9-871b-b6e6-c47f35a7b318"
+      stageUuid: "7d7ec729-6a64-8920-8e85-01f2627182cc"
     - stage: uuid
-      stageUuid: "e98e5247-1b4f-8fa1-9163-d344a7dc3e18"
+      stageUuid: "ccd2e455-2fbb-85be-9af6-8c20369a3ce5"
 version: 2
 ---
 # bathrooms

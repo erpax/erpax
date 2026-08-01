@@ -1,53 +1,35 @@
 ---
 name: photo
 description: Use when reasoning about photo — A photograph of this place.
-atomPath: vocabulary/photo
-coordinate: photo · 5/round · 2758a511
-contentUuid: "5cfd937c-6b89-5d2e-9806-549ab38bb1fa"
-diamondUuid: "06c08dba-b3ce-820f-bf2e-e2a02948a75d"
-uuid: "2758a511-f833-8ac2-ab84-6117c4f3aa5b"
-horo: 5
-bonds:
-  in:
-    - creative
-    - law
-  out:
-    - creative
-    - law
+atomPath: "vocabulary/photo"
+coordinate: "vocabulary/photo · 4/weave · afeb401e"
+contentUuid: "d3045584-5995-5b27-82fc-2d3afae33775"
+diamondUuid: "1819b58f-092e-8e56-bbe7-6f3a0a37eac8"
+uuid: "afeb401e-3ada-8eac-8831-8aa5a3341b2c"
+horo: 4
 typography:
-  partition: photo
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - creative
-    - law
-  matrix:
-    - creative
-    - law
-  backlinks:
-    - creative
-    - law
 signatures:
-  computationUuid: "22bbb32f-f142-8232-b6bd-cede37303099"
+  computationUuid: "09105424-0e92-83e1-8798-ac2bebb9c71c"
   stages:
     - stage: path
-      stageUuid: "b2fbfbf4-1d07-8e7c-9b79-1831839d92b7"
+      stageUuid: "83e2643c-53cc-8322-a636-ac5279fdd9d9"
     - stage: trinity
-      stageUuid: "af6510b1-9bbe-897a-92ac-4bfa7704ec2f"
+      stageUuid: "2e2e798c-4248-8810-983d-57ac60fb193e"
     - stage: boundary
-      stageUuid: "cc20e83c-e192-868b-bde4-036661d9f394"
+      stageUuid: "a5d0e173-13ed-895c-adb9-7ae89e9761cc"
     - stage: links
-      stageUuid: "108b0c8e-4837-8177-b19a-4385adcf73d6"
+      stageUuid: "bb77ad8f-2874-8046-b9b9-292570c55afa"
     - stage: horo
-      stageUuid: "b2329a0c-e3b4-8771-8464-56b3334bfbf4"
+      stageUuid: "a118119f-d581-8151-ad8f-cdf433bd72ae"
     - stage: seal
-      stageUuid: "7f9c4a86-e4d5-805d-bc8d-9ae2556fce84"
+      stageUuid: "5ad2583a-a886-87b7-bdfc-39dc0c879572"
     - stage: uuid
-      stageUuid: "08242d3e-4ee8-85fb-a874-e1d8372c3c6a"
+      stageUuid: "e145b931-7825-8265-88f2-93e828731cab"
 version: 2
 ---
 # photo

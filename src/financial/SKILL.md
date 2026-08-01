@@ -2,74 +2,21 @@
 name: financial
 description: "Use when reasoning about financial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: financial
-coordinate: "financial · 2/share · 2ffe4f32"
-contentUuid: "a890f750-18e9-5eef-8705-aad868c536df"
-diamondUuid: "f89073d4-67c2-89f4-be51-aa2c27317d96"
-uuid: "2ffe4f32-91b1-8a1d-b2c6-4554be9a8ebf"
-horo: 2
-bonds:
-  in:
-    - aid
-    - collapse
-    - eligible
-    - incentive
-    - law
-    - merge
-    - product
-    - service
-    - sti
-  out:
-    - aid
-    - collapse
-    - eligible
-    - incentive
-    - law
-    - merge
-    - product
-    - service
-    - sti
+coordinate: "financial · 7/descent · f66ed780"
+contentUuid: "4ddce708-83b3-5b25-9ac1-ef3a108a17aa"
+diamondUuid: "0f0da91b-3884-8e96-8ecf-92acf5aeed3e"
+uuid: "f66ed780-1a0a-8c6f-a78d-e65a2f8acccb"
+horo: 7
 typography:
   partition: financial
   bondDegree: 32
-  neighbors: []
 standards:
   - "BCP-47"
   - "W3C-PROV-O"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - aid
-    - collapse
-    - eligible
-    - incentive
-    - law
-    - merge
-    - product
-    - service
-    - sti
-  matrix:
-    - aid
-    - collapse
-    - eligible
-    - incentive
-    - law
-    - merge
-    - product
-    - service
-    - sti
-  backlinks:
-    - aid
-    - collapse
-    - eligible
-    - incentive
-    - law
-    - merge
-    - product
-    - service
-    - sti
 signatures:
-  computationUuid: "d924e57d-ef7b-8ec1-8a8a-94644bfd598c"
+  computationUuid: "dececa21-f3d1-87da-8116-a9c17bfb8f6a"
   stages:
     - stage: path
       stageUuid: "51512af1-b305-8cc8-846f-ee5b6a120c77"
@@ -80,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "c0c31784-fff5-8bdb-b268-1bc370d69760"
     - stage: horo
-      stageUuid: "62a7de80-7132-8834-b5b5-228ee13393ee"
+      stageUuid: "a72a750e-3745-8ce7-b837-080ca1dee03a"
     - stage: seal
       stageUuid: "2ef1ab3b-1282-86b8-8193-bd639168f640"
     - stage: uuid
-      stageUuid: "3c828f8e-0513-86dd-83fb-8ef7e8cd3950"
+      stageUuid: "15dac6ba-bdb9-8f2a-997e-dc3206ba0804"
 version: 2
 ---
 # financial

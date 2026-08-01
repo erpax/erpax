@@ -1,8 +1,38 @@
 ---
 name: syntax
 description: "Use when a gate needs a grammatical fact about source — which comments a file has, which names it binds. Wraps ts.createSourceFile so the answer is the compiler's, not a pattern's: a // inside a string is not a comment, and no regex can tell. The gates derive from here rather than each guessing."
+atomPath: syntax
+coordinate: "syntax · 7/descent · 192c2765"
+contentUuid: "e741d632-38b3-5d7b-aaa1-c46731eafe11"
+diamondUuid: "90aff9c8-0b32-8deb-84d8-9bda1db3af27"
+uuid: "192c2765-4c57-8426-a940-0447dbd2e6c1"
+horo: 7
+typography:
+  partition: syntax
+  bondDegree: 46
+standards:
+  - "ECMA-262"
+  - "ECMA-262 · TypeScript grammar (via ts.createSourceFile — the compiler's own scanner)"
+bindings: []
+signatures:
+  computationUuid: "522ab47e-db7b-8f26-9abb-1d5c1f390a2d"
+  stages:
+    - stage: path
+      stageUuid: "4b4d0139-9d23-8983-a3ea-2d9d370fd2c2"
+    - stage: trinity
+      stageUuid: "adeea898-52b1-8c3b-8d3e-6aebed6623e2"
+    - stage: boundary
+      stageUuid: "793ad8ba-b4f7-8d02-8eee-4e54986cc249"
+    - stage: links
+      stageUuid: "3b32e7bd-af1d-89c0-a93b-0d907c6afce7"
+    - stage: horo
+      stageUuid: "a0d6877f-0d1c-8211-9ed4-483392f7b813"
+    - stage: seal
+      stageUuid: "d5396447-1bf8-8f79-be83-ddaa72e7739e"
+    - stage: uuid
+      stageUuid: "0d1eeb97-372d-886d-8c4c-a4459b207c10"
+version: 2
 ---
-
 # syntax — you cannot trust something that is not a theorem
 
 **A regex over TypeScript is a guess.** The language has a grammar; a pattern that *usually* matches it is a heuristic wearing a theorem's clothes. Every false measurement this corpus has paid for came from pattern-matching the language instead of parsing it — and every "fix" was a **better pattern**, which is still a guess:

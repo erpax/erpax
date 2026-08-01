@@ -1,138 +1,19 @@
 ---
 name: cmyk
 description: "Use when reasoning about color/signal from sequence position in erpax — the four print primaries ARE the first four rodin digits {0=K, 3=C, 6=M, 9=Y}; color comes from the slot, the C↔M polarity gap is closed by Y at 9 and anchored by K at 0. The signal model under links/tags/admin hue. Nested under rodin."
-atomPath: rodin/cmyk
-coordinate: rodin/cmyk · 8/crest · 5d5d78c8
-contentUuid: "33e680fc-5baa-514a-8ce3-8436f164d2be"
-diamondUuid: "af7a52b5-98db-8504-aa20-d40fee87a706"
-uuid: "5d5d78c8-d139-817d-a445-63804748e286"
+atomPath: "rodin/cmyk"
+coordinate: "rodin/cmyk · 8/crest · bd46d38e"
+contentUuid: "c41558c7-6713-5211-92c5-8442a871d9e4"
+diamondUuid: "18fa2ebe-9275-827e-be77-47b040f1f8f8"
+uuid: "bd46d38e-2956-8e2e-ba91-cc1de952c77a"
 horo: 8
-bonds:
-  in:
-    - analog
-    - aura
-    - axis
-    - balance
-    - biophoton
-    - breath
-    - chakra
-    - coil
-    - config
-    - decompression
-    - give
-    - horo
-    - identity
-    - localize
-    - notes
-    - oid
-    - phase
-    - polarity
-    - rodin
-    - science
-    - signal
-    - tags
-    - take
-    - theme
-    - vibration
-  out:
-    - analog
-    - aura
-    - axis
-    - balance
-    - biophoton
-    - breath
-    - chakra
-    - coil
-    - config
-    - decompression
-    - give
-    - horo
-    - identity
-    - localize
-    - notes
-    - oid
-    - phase
-    - polarity
-    - rodin
-    - science
-    - signal
-    - tags
-    - take
-    - theme
-    - vibration
 typography:
   partition: rodin
-  bondDegree: 79
-  neighbors: []
+  bondDegree: 80
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - axis
-    - balance
-    - coil
-    - config
-    - give
-    - horo
-    - identity
-    - polarity
-    - rodin
-    - tags
-    - take
-  matrix:
-    - analog
-    - aura
-    - axis
-    - balance
-    - biophoton
-    - breath
-    - chakra
-    - coil
-    - config
-    - decompression
-    - give
-    - horo
-    - identity
-    - localize
-    - notes
-    - oid
-    - phase
-    - polarity
-    - rodin
-    - science
-    - signal
-    - tags
-    - take
-    - theme
-    - vibration
-  backlinks:
-    - analog
-    - aura
-    - axis
-    - balance
-    - biophoton
-    - breath
-    - chakra
-    - coil
-    - config
-    - decompression
-    - give
-    - horo
-    - identity
-    - localize
-    - notes
-    - oid
-    - phase
-    - polarity
-    - rodin
-    - science
-    - signal
-    - tags
-    - take
-    - theme
-    - vibration
 signatures:
-  computationUuid: "3aa75d55-34fd-8f39-a962-6ff8e434c5cf"
+  computationUuid: "9b40a4e7-e321-8058-a84f-fd13ecc05a12"
   stages:
     - stage: path
       stageUuid: "44e9fde9-ad35-8c46-b850-0680d8da2a8d"
@@ -143,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "81b5c1f8-723f-84ee-80a0-d0e5b68e28d2"
     - stage: horo
-      stageUuid: "cbddaf19-16e9-8ad9-84a0-88bdbccf8552"
+      stageUuid: "67d27e20-4a57-80b6-8347-c6501225a098"
     - stage: seal
-      stageUuid: "413a6bb8-237d-84cd-a74d-e95c17479789"
+      stageUuid: "d3718c06-185f-8362-931c-c510e5f71ebf"
     - stage: uuid
-      stageUuid: "97930d4e-7603-8c53-8684-04d0831c1529"
+      stageUuid: "fadb1b1d-a023-8cb7-a7ed-db40524e269e"
 version: 2
 ---
 # cmyk — color from position (the gamut is {0,3,6,9})

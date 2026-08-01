@@ -1,103 +1,19 @@
 ---
 name: octave
-description: "Use when reasoning about scale-lift in erpax — ×10 preserves the digit (10≡1 mod 9), so the same position recurs at the next order of magnitude; the canonical \\\"next octave\\\" (NOT +1, which crosses close→open within a scale). The fractal step. Nested under rodin."
-atomPath: rodin/octave
-coordinate: rodin/octave · 2/share · 4046852e
-contentUuid: "9dfd24e3-b7b3-5359-a76c-46c1a4dcb534"
-diamondUuid: "562815d3-f1ad-80b9-8aa2-6121bcd6dfd6"
-uuid: "4046852e-fd13-8a36-9995-9cc82ee4fb45"
-horo: 2
-bonds:
-  in:
-    - begin
-    - breath
-    - chakra
-    - close
-    - coil
-    - coordinate
-    - decompression
-    - fractal
-    - harmony
-    - horo
-    - merge
-    - notes
-    - rodin
-    - sequence
-    - torus
-    - unity
-  out:
-    - begin
-    - breath
-    - chakra
-    - close
-    - coil
-    - coordinate
-    - decompression
-    - fractal
-    - harmony
-    - horo
-    - merge
-    - notes
-    - rodin
-    - sequence
-    - torus
-    - unity
+description: "Use when reasoning about scale-lift in erpax — ×10 preserves the digit (10≡1 mod 9), so the same position recurs at the next order of magnitude; the canonical \\\\\\\"next octave\\\\\\\" (NOT +1, which crosses close→open within a scale). The fractal step. Nested under rodin."
+atomPath: "rodin/octave"
+coordinate: "rodin/octave · 5/round · 9fb82d10"
+contentUuid: "a537f5e6-5f3f-5aef-b9bf-df91dca31106"
+diamondUuid: "6c5811a8-8c66-8668-b100-507f26e28e8a"
+uuid: "9fb82d10-a930-8ca6-ac91-db7de61b6563"
+horo: 5
 typography:
   partition: rodin
   bondDegree: 53
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - begin
-    - breath
-    - close
-    - coil
-    - fractal
-    - horo
-    - merge
-    - notes
-    - rodin
-    - sequence
-    - torus
-    - unity
-  matrix:
-    - begin
-    - breath
-    - chakra
-    - close
-    - coil
-    - coordinate
-    - decompression
-    - fractal
-    - harmony
-    - horo
-    - merge
-    - notes
-    - rodin
-    - sequence
-    - torus
-    - unity
-  backlinks:
-    - begin
-    - breath
-    - chakra
-    - close
-    - coil
-    - coordinate
-    - decompression
-    - fractal
-    - harmony
-    - horo
-    - merge
-    - notes
-    - rodin
-    - sequence
-    - torus
-    - unity
 signatures:
-  computationUuid: "da6663a5-0baa-8ae9-86bd-00c82039b926"
+  computationUuid: "f9bf88ae-cc09-8f8d-a86a-412a5714eb2f"
   stages:
     - stage: path
       stageUuid: "f209c32a-92b4-8714-bfa7-6ffcc8a6f0c1"
@@ -108,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "07fea44b-f38b-81be-90d3-2abdeb8077c5"
     - stage: horo
-      stageUuid: "adfa3106-aa46-8b9f-b1f2-cf7f5b6d2cac"
+      stageUuid: "cbd21c0e-4d81-8af9-ba3d-5e97979158b1"
     - stage: seal
-      stageUuid: "2a1d886e-0dde-80b2-bc45-98215feadb87"
+      stageUuid: "631d3a2e-c1c9-8e73-8053-f37c9d4eb97d"
     - stage: uuid
-      stageUuid: "a96a3748-513d-8139-8ac8-8a93b71b3e1d"
+      stageUuid: "08eae6c4-873f-8353-becb-0d29c230a139"
 version: 2
 ---
 # octave — the ×10 scale-lift (same position, next scale)

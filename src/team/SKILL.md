@@ -2,236 +2,33 @@
 name: team
 description: "Use when the society spawns multiple agents that share skills — a team is a set of content-addressed agents whose competence is the UNION of their skills (merge/holographic: a skill one loads, the team has), with distinct purposes preserved. Spawn → share → cover the gap in parallel. Matter-twin services/agent/team.ts."
 atomPath: team
-coordinate: team · 1/base · f339fa0b
-contentUuid: "d549956c-29d4-5cc7-a43e-ee71a6417a72"
-diamondUuid: "50b2a603-892c-8e3f-811d-fe674ee411bb"
-uuid: "f339fa0b-a527-84af-ad5f-bae6e74c9895"
-horo: 1
-bonds:
-  in:
-    - access
-    - agent
-    - akashic
-    - away
-    - axis
-    - brainstorm
-    - breath
-    - chat
-    - classroom
-    - comms
-    - contribution
-    - cost
-    - decompression
-    - drone
-    - duality
-    - fractal
-    - give
-    - holographic
-    - home
-    - horo
-    - identity
-    - law
-    - merge
-    - one
-    - part
-    - peace
-    - quantum
-    - realtime
-    - receipt
-    - rodin
-    - sandbox
-    - self
-    - skill
-    - skills
-    - society
-    - sports
-    - take
-    - test
-    - trinity
-    - war
-    - wave
-    - whole
-  out:
-    - access
-    - agent
-    - akashic
-    - away
-    - axis
-    - brainstorm
-    - breath
-    - chat
-    - classroom
-    - comms
-    - contribution
-    - cost
-    - decompression
-    - drone
-    - duality
-    - fractal
-    - give
-    - holographic
-    - home
-    - horo
-    - identity
-    - law
-    - merge
-    - one
-    - part
-    - peace
-    - quantum
-    - realtime
-    - receipt
-    - rodin
-    - sandbox
-    - self
-    - skill
-    - skills
-    - society
-    - sports
-    - take
-    - test
-    - trinity
-    - war
-    - wave
-    - whole
+coordinate: "team · 5/round · ae3e76c5"
+contentUuid: "e2e71838-0c08-54c0-a275-a1c564f1fe0c"
+diamondUuid: "292d7794-699d-8166-b696-6d617cd4077d"
+uuid: "ae3e76c5-8477-8630-928d-39608ddf131c"
+horo: 5
 typography:
   partition: team
-  bondDegree: 137
-  neighbors:
-    - agent
+  bondDegree: 135
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - agent
-    - axis
-    - chat
-    - comms
-    - contribution
-    - cost
-    - decompression
-    - duality
-    - fractal
-    - give
-    - holographic
-    - horo
-    - identity
-    - merge
-    - one
-    - part
-    - realtime
-    - receipt
-    - rodin
-    - sandbox
-    - self
-    - society
-    - take
-    - trinity
-    - whole
-  matrix:
-    - access
-    - agent
-    - akashic
-    - away
-    - axis
-    - brainstorm
-    - breath
-    - chat
-    - classroom
-    - comms
-    - contribution
-    - cost
-    - decompression
-    - drone
-    - duality
-    - fractal
-    - give
-    - holographic
-    - home
-    - horo
-    - identity
-    - law
-    - merge
-    - one
-    - part
-    - peace
-    - quantum
-    - realtime
-    - receipt
-    - rodin
-    - sandbox
-    - self
-    - skill
-    - skills
-    - society
-    - sports
-    - take
-    - test
-    - trinity
-    - war
-    - wave
-    - whole
-  backlinks:
-    - access
-    - agent
-    - akashic
-    - away
-    - axis
-    - brainstorm
-    - breath
-    - chat
-    - classroom
-    - comms
-    - contribution
-    - cost
-    - decompression
-    - drone
-    - duality
-    - fractal
-    - give
-    - holographic
-    - home
-    - horo
-    - identity
-    - law
-    - merge
-    - one
-    - part
-    - peace
-    - quantum
-    - realtime
-    - receipt
-    - rodin
-    - sandbox
-    - self
-    - skill
-    - skills
-    - society
-    - sports
-    - take
-    - test
-    - trinity
-    - war
-    - wave
-    - whole
 signatures:
-  computationUuid: "44d5975c-ca69-880a-8c88-3d05aa905b51"
+  computationUuid: "eecd3a36-b85f-84fa-ae55-636cbbe86efc"
   stages:
     - stage: path
       stageUuid: "4d706eb7-0a34-8fe3-b270-5fa968cfb4c1"
     - stage: trinity
       stageUuid: "f9b325fb-dfae-83f4-b357-bbff898fda55"
     - stage: boundary
-      stageUuid: "cbd77bd2-6b54-8dff-9e1d-816f72787945"
+      stageUuid: "d564debb-5a58-8f71-9f4c-8f110b60ecfc"
     - stage: links
       stageUuid: "2196cb76-2eee-8f7f-b5f3-2180c79ec45b"
     - stage: horo
-      stageUuid: "593ddc78-9c64-834c-a2b4-044f3be67a3c"
+      stageUuid: "bc18698a-e4c7-8156-9ef4-a078ef966280"
     - stage: seal
-      stageUuid: "ae2c1cf9-4999-80cd-ab3f-a5a85f80f3ac"
+      stageUuid: "79cdc5ff-6754-827d-97cb-368680df6387"
     - stage: uuid
-      stageUuid: "cfab6efa-277e-8416-afc5-0f1bdbb48fb9"
+      stageUuid: "d455b704-52ba-85af-9062-376b5f1ef96f"
 version: 2
 ---
 # team — agents sharing skills (competence is the union)

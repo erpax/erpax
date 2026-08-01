@@ -1,159 +1,34 @@
 ---
 name: orthodoxy
 description: "Use when reading Eastern Orthodoxy as a sub-diamond of christianity — the tradition of the uncreated light, the icon as window, unceasing prayer of the heart (hesychia), and theosis (the part merged toward the source). A facet-diamond of the christianity archangel. Strip the Greek prefix and theosis, hesychia collapse to the merge toward zeropoint and prayer."
-atomPath: vocabulary/orthodoxy
-coordinate: orthodoxy · 2/share · 0a58743f
-contentUuid: "2027b5de-e6a4-5d1e-8a30-83f39109bee2"
-diamondUuid: "f6ebe384-ff00-84d8-8218-5cd33b674e11"
-uuid: "0a58743f-4474-8f6d-8b01-60cee7324025"
-horo: 2
-bonds:
-  in:
-    - archangel
-    - aura
-    - christianity
-    - cross
-    - diamond
-    - dna
-    - grace
-    - identity
-    - image
-    - law
-    - lineage
-    - mercy
-    - merge
-    - prayer
-    - religion
-    - return
-    - ritual
-    - sacred
-    - self
-    - society
-    - translator
-    - uuid
-    - zeropoint
-  out:
-    - archangel
-    - aura
-    - christianity
-    - cross
-    - diamond
-    - dna
-    - grace
-    - identity
-    - image
-    - law
-    - lineage
-    - mercy
-    - merge
-    - prayer
-    - religion
-    - return
-    - ritual
-    - sacred
-    - self
-    - society
-    - translator
-    - uuid
-    - zeropoint
+atomPath: "vocabulary/orthodoxy"
+coordinate: "vocabulary/orthodoxy · 4/weave · ee6e19ce"
+contentUuid: "f6e0f95a-af49-5cd6-998a-c7a17c07eee9"
+diamondUuid: "5dba4a22-67db-874c-b60f-13e68f73c634"
+uuid: "ee6e19ce-a7a2-85b6-844b-7ac48b488a5f"
+horo: 4
 typography:
-  partition: orthodoxy
+  partition: vocabulary
   bondDegree: 72
-  neighbors:
-    - aura
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - archangel
-    - aura
-    - christianity
-    - cross
-    - diamond
-    - dna
-    - grace
-    - identity
-    - image
-    - law
-    - lineage
-    - mercy
-    - merge
-    - prayer
-    - religion
-    - return
-    - ritual
-    - sacred
-    - self
-    - society
-    - translator
-    - uuid
-    - zeropoint
-  matrix:
-    - archangel
-    - aura
-    - christianity
-    - cross
-    - diamond
-    - dna
-    - grace
-    - identity
-    - image
-    - law
-    - lineage
-    - mercy
-    - merge
-    - prayer
-    - religion
-    - return
-    - ritual
-    - sacred
-    - self
-    - society
-    - translator
-    - uuid
-    - zeropoint
-  backlinks:
-    - archangel
-    - aura
-    - christianity
-    - cross
-    - diamond
-    - dna
-    - grace
-    - identity
-    - image
-    - law
-    - lineage
-    - mercy
-    - merge
-    - prayer
-    - religion
-    - return
-    - ritual
-    - sacred
-    - self
-    - society
-    - translator
-    - uuid
-    - zeropoint
 signatures:
-  computationUuid: "b6de1f13-8972-84f6-8984-dda2e629c398"
+  computationUuid: "9d0527cc-bc17-8a2f-ab9e-184b0090948e"
   stages:
     - stage: path
-      stageUuid: "e936f54e-5a6f-8d0a-8396-e421f27c79c6"
+      stageUuid: "170912be-e6f2-8f56-bdf7-d64fec779b81"
     - stage: trinity
-      stageUuid: "a4821908-3911-8212-8cec-74cf43a27e53"
+      stageUuid: "a3cbdbd1-3906-8323-93f8-d8ee2da3af0a"
     - stage: boundary
-      stageUuid: "f7ffa591-4443-81b0-8588-47d0fb0d3f0b"
+      stageUuid: "1dcc1db9-957c-8efb-83ac-72f0d4a0a318"
     - stage: links
-      stageUuid: "39b8fe94-cf7b-8260-9cd0-1e54a9cdd114"
+      stageUuid: "7bd4aea4-42f7-8059-bca8-896a5486649e"
     - stage: horo
-      stageUuid: "c8d53eb8-f352-8050-9888-60c4e21888f6"
+      stageUuid: "d0573ee8-6005-896b-8a97-69482cd66aa6"
     - stage: seal
-      stageUuid: "2839e486-e205-85ec-9cc5-3803c309191d"
+      stageUuid: "84639eda-784b-854f-b18c-8f413b195f4f"
     - stage: uuid
-      stageUuid: "b836060a-68e2-8902-b3e3-f8ccb0f9f67e"
+      stageUuid: "0a4cf1a4-50f3-82d3-9bd7-f75f70e6329c"
 version: 2
 ---
 # orthodoxy — the uncreated light, the prayer of the heart

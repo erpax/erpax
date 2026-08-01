@@ -2,148 +2,18 @@
 name: sparsity
 description: "Use when reasoning about erpax's efficiency principle — sparsity: of a large DORMANT pool, only the smallest correct subset is active at once (capability ÷ cost → max). Two conjugate axes (DeepSeek's own framing, Engram) — COMPUTE sparsity (MoE routes 37B of 671B params; erpax routes few of 593 atoms per task) and MEMORY/representation sparsity (conditional lookup; content-uuid stores the whole in 128 bits, schema is generated not stored). Its limit is zeropoint (zero active = the source), its dual the bottleneck (the one missing active factor zeroes the product), its selector routing. DeepSeek reaches it by hardware constraint, erpax by telos — they converge on the identical sparse form."
 atomPath: sparsity
-coordinate: sparsity · 7/descent · 9262a444
-contentUuid: "6b978cc8-461a-54e7-879e-a73fa9c99efa"
-diamondUuid: "859377eb-cfca-8ce3-971a-fd93f37c764c"
-uuid: "9262a444-51b8-88f9-bd2e-4c2b00dce31b"
-horo: 7
-bonds:
-  in:
-    - akashic
-    - allocation
-    - atom
-    - bottleneck
-    - brain
-    - breath
-    - collapse
-    - deduplication
-    - dimension
-    - flow
-    - holographic
-    - identity
-    - law
-    - market
-    - merge
-    - partition
-    - proof
-    - rodin
-    - routing
-    - science
-    - sequence
-    - throughput
-    - train
-    - uuid
-    - zeropoint
-  out:
-    - akashic
-    - allocation
-    - atom
-    - bottleneck
-    - brain
-    - breath
-    - collapse
-    - deduplication
-    - dimension
-    - flow
-    - holographic
-    - identity
-    - law
-    - market
-    - merge
-    - partition
-    - proof
-    - rodin
-    - routing
-    - science
-    - sequence
-    - throughput
-    - train
-    - uuid
-    - zeropoint
+coordinate: "sparsity · 2/share · 5fcc6f2d"
+contentUuid: "3160fa15-772c-5a22-8e65-b263fbe8dd2b"
+diamondUuid: "dc83152c-bb9d-8ef3-9767-db35ae20628e"
+uuid: "5fcc6f2d-5428-82d6-a393-190716475fa2"
+horo: 2
 typography:
   partition: sparsity
   bondDegree: 78
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - allocation
-    - atom
-    - bottleneck
-    - breath
-    - collapse
-    - deduplication
-    - dimension
-    - flow
-    - holographic
-    - identity
-    - law
-    - market
-    - merge
-    - partition
-    - proof
-    - rodin
-    - routing
-    - sequence
-    - throughput
-    - uuid
-    - zeropoint
-  matrix:
-    - akashic
-    - allocation
-    - atom
-    - bottleneck
-    - brain
-    - breath
-    - collapse
-    - deduplication
-    - dimension
-    - flow
-    - holographic
-    - identity
-    - law
-    - market
-    - merge
-    - partition
-    - proof
-    - rodin
-    - routing
-    - science
-    - sequence
-    - throughput
-    - train
-    - uuid
-    - zeropoint
-  backlinks:
-    - akashic
-    - allocation
-    - atom
-    - bottleneck
-    - brain
-    - breath
-    - collapse
-    - deduplication
-    - dimension
-    - flow
-    - holographic
-    - identity
-    - law
-    - market
-    - merge
-    - partition
-    - proof
-    - rodin
-    - routing
-    - science
-    - sequence
-    - throughput
-    - train
-    - uuid
-    - zeropoint
 signatures:
-  computationUuid: "8ec00139-5dd9-8042-b029-5888722610e2"
+  computationUuid: "1babeae3-3807-876f-b55b-fc8d7b28a2d1"
   stages:
     - stage: path
       stageUuid: "c2f0ac27-728f-8616-8099-eb64d86b8a4a"
@@ -154,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "cb22eecc-608d-81c7-a668-024710c4ca96"
     - stage: horo
-      stageUuid: "832294c5-80d0-8afc-aaa9-6c2fe2b8d3b7"
+      stageUuid: "2b52051d-e9d7-83e8-bb27-eaa98398ff57"
     - stage: seal
-      stageUuid: "9fc229e9-e9b5-899e-92a7-6ddfd33ab357"
+      stageUuid: "05ff4ba5-f389-8961-93c4-317fa21cc0d4"
     - stage: uuid
-      stageUuid: "19e9cecf-05af-8141-a63f-6b156a676ea1"
+      stageUuid: "e52bcbee-c4d7-8ee9-a795-0ae4386ebb0d"
 version: 2
 ---
 # sparsity — the active fraction (few of many, alive at once)

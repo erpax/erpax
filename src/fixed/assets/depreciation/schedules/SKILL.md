@@ -2,34 +2,14 @@
 name: schedules
 description: "Use when recording or reviewing the depreciation charge for each period — linking to the fixed-asset master, storing depreciationAmount, accumulatedAfter, and bookValueAfter per period; posting to GL via the depreciation hook; verifying period-lock before posting. The per-period IAS-16 depreciation evidence node."
 atomPath: "fixed/assets/depreciation/schedules"
-coordinate: "fixed/assets/depreciation/schedules · 7/descent · 7ecb5631"
-contentUuid: "fc1da108-afe9-5640-aa5f-2c9fcb1b95ea"
-diamondUuid: "b1c9f66b-9887-87f2-8743-b5553a1bbe34"
-uuid: "7ecb5631-33b7-82a3-941e-5a85f0439d3e"
-horo: 7
-bonds:
-  in:
-    - accounting
-    - assets
-    - balance
-    - identity
-    - intangible
-    - proof
-    - standard
-    - transaction
-  out:
-    - accounting
-    - assets
-    - balance
-    - identity
-    - intangible
-    - proof
-    - standard
-    - transaction
+coordinate: "fixed/assets/depreciation/schedules · 8/crest · 24e99bca"
+contentUuid: "5123ebed-4dd9-546c-b61f-4392e5bee8ec"
+diamondUuid: "17336df3-810b-8c4a-8658-d7e9cbc711df"
+uuid: "24e99bca-a5e8-8c0e-a49a-495dc159f688"
+horo: 8
 typography:
   partition: fixed
   bondDegree: 0
-  neighbors: []
 standards:
   - "IFRS IAS-16 property-plant-and-equipment depreciation"
   - "IFRS IAS-36 impairment-of-assets"
@@ -41,34 +21,8 @@ standards:
   - "US-GAAP ASC-360 property-plant-and-equipment"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - balance
-    - identity
-    - proof
-    - standard
-    - transaction
-  matrix:
-    - accounting
-    - assets
-    - balance
-    - identity
-    - intangible
-    - proof
-    - standard
-    - transaction
-  backlinks:
-    - accounting
-    - assets
-    - balance
-    - identity
-    - intangible
-    - proof
-    - standard
-    - transaction
 signatures:
-  computationUuid: "036526c8-1b8d-89d6-9196-1e35d25e89fd"
+  computationUuid: "a694419c-7e09-8732-9e71-2625bb8404a8"
   stages:
     - stage: path
       stageUuid: "dc1ae3b7-dc2e-8a8d-940b-9e57c4f92d39"
@@ -79,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "a99ce833-ba58-88d1-b01c-b67a89d68f3a"
     - stage: horo
-      stageUuid: "e1f7875a-901d-82c5-bec7-b659015a39af"
+      stageUuid: "7c600b69-53c3-8fab-8eb5-4dca5bfcc842"
     - stage: seal
       stageUuid: "6dd2f3d3-a5af-80e6-8e22-11503fae091b"
     - stage: uuid
-      stageUuid: "91f844f6-2733-8b55-8371-a9e0a8a08835"
+      stageUuid: "10f16ff9-23d7-860c-99df-404dffae49fa"
 version: 2
 ---
 # depreciation-schedules

@@ -1,58 +1,35 @@
 ---
 name: chapter
 description: Use when reasoning about chapter — One of the sections into which a book is divided. A chapter usually has a section number or a name.
-atomPath: vocabulary/chapter
-coordinate: chapter · 4/weave · 37e37879
-contentUuid: "89dcd8d5-a34a-50de-a3d0-ae65b1c2e3bd"
-diamondUuid: "233730e0-ae07-8bd4-a13b-ab9959379d61"
-uuid: "37e37879-2ba3-8cb9-8873-7225e6fd5e15"
-horo: 4
-bonds:
-  in:
-    - creative
-    - law
-    - thing
-  out:
-    - creative
-    - law
-    - thing
+atomPath: "vocabulary/chapter"
+coordinate: "vocabulary/chapter · 8/crest · ba801cae"
+contentUuid: "ef177bf2-6bdc-5def-bd97-7bb0d61ccb0b"
+diamondUuid: "207b421e-c32f-8e97-93c3-bcfdf84b49ed"
+uuid: "ba801cae-6285-8951-8eb9-e0072af34780"
+horo: 8
 typography:
-  partition: chapter
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - creative
-    - law
-    - thing
-  matrix:
-    - creative
-    - law
-    - thing
-  backlinks:
-    - creative
-    - law
-    - thing
 signatures:
-  computationUuid: "733853e2-d22d-8edd-9ee6-a72f43d10aac"
+  computationUuid: "d3945ed8-5eaf-879f-b402-e3616306f4b6"
   stages:
     - stage: path
-      stageUuid: "e21b3b51-ddaa-887c-a648-cca63226f8af"
+      stageUuid: "71e3e1bc-47a8-8cad-bc1b-68567169907d"
     - stage: trinity
-      stageUuid: "33379e04-c05c-8723-afc5-54401943738b"
+      stageUuid: "3cb9eab2-39cc-8fb1-b2c0-b768f456a009"
     - stage: boundary
-      stageUuid: "4137fcba-4012-8d72-9571-c179d23b9253"
+      stageUuid: "61861321-7eb6-8d82-844d-08f4377a0922"
     - stage: links
-      stageUuid: "5d8b5079-0fa9-8598-8324-feb9ce9c11a0"
+      stageUuid: "ab0f4569-cc4c-8219-ab27-42ac726a2c5d"
     - stage: horo
-      stageUuid: "39177991-c81a-8fef-b892-7a9450f935a4"
+      stageUuid: "a739c3f2-ad8d-8e8f-99e4-fe744da562ce"
     - stage: seal
-      stageUuid: "d0aa4fdf-b9ef-872e-a5f1-08b33d456949"
+      stageUuid: "027eda55-bca4-84ec-80dd-a7b30b11ea15"
     - stage: uuid
-      stageUuid: "20717115-4a22-8a71-ba0d-8ecbda292717"
+      stageUuid: "28400d8d-0cff-8824-a31c-e0e3f8f71cc6"
 version: 2
 ---
 # chapter

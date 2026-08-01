@@ -1,73 +1,35 @@
 ---
 name: cook
 description: "Use when reasoning about cook as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/cook
-coordinate: cook · 7/descent · cb22e9b2
-contentUuid: "b7906ffc-35d8-55d7-a69d-11fb0330b539"
-diamondUuid: "8970261d-a81d-8775-bcdf-0f3faf31b43d"
-uuid: "cb22e9b2-d37c-87d6-8708-b40385bed5b4"
-horo: 7
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-    - time
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-    - time
+atomPath: "vocabulary/cook"
+coordinate: "vocabulary/cook · 2/share · 766cf60b"
+contentUuid: "761c95d6-fa4f-514e-90df-542c585438b0"
+diamondUuid: "e8536e29-6aa6-8155-879e-e2dac7823b12"
+uuid: "766cf60b-4ac1-896d-b5de-8cccbe809d27"
+horo: 2
 typography:
-  partition: cook
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-    - time
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-    - time
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-    - time
 signatures:
-  computationUuid: "ae428667-811b-8522-996d-9e528583bd0e"
+  computationUuid: "aa80a352-9d12-8207-a4f5-3a82d1ac71a0"
   stages:
     - stage: path
-      stageUuid: "3e4d3665-6411-8732-90a7-202abb9bd6d3"
+      stageUuid: "92c656c2-d4dc-8eb8-b55c-3c0b07d83075"
     - stage: trinity
-      stageUuid: "7b551200-f525-841e-8e65-1d3fc7e5f419"
+      stageUuid: "e8c02b96-e94e-8f9b-8790-795345c488a2"
     - stage: boundary
-      stageUuid: "f71ced4c-52d9-8f82-a935-45e91ad826a4"
+      stageUuid: "cc028fcd-4bf3-8a51-99fe-5d99813de270"
     - stage: links
-      stageUuid: "a193d448-c9c0-8d52-bcf2-004b003d7e0b"
+      stageUuid: "0d4de8a3-511f-8143-81e6-c1779f0daaf7"
     - stage: horo
-      stageUuid: "321f38a4-97a9-86a6-ae3a-11a8d6bbbc50"
+      stageUuid: "19bf53e1-ef77-8e7a-91e3-61dcd9e6c959"
     - stage: seal
-      stageUuid: "12380f5d-2e98-8e32-bd0e-b73a4ce6da64"
+      stageUuid: "f67f3d60-6332-885b-ae3d-e2f9e4711aa1"
     - stage: uuid
-      stageUuid: "d87020c2-3ec9-8320-821f-9b07431eff00"
+      stageUuid: "15e826a4-d54a-8a4a-b773-e5b06d8e86cd"
 version: 2
 ---
 # cook

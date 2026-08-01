@@ -2,172 +2,34 @@
 name: capacity
 description: "Use when reasoning about erpax's production hardware — the Cloudflare edge (Worker isolate, D1, R2, Durable Objects) has hard limits, and CLOUDFLARE_LIMITS declares them with sources. productionCapacity(cwd) computes erpax's demand vs each; the decisive one is the 80MB skill index against the 3MB Worker script limit (27× over), deployable only because it is never bundled. assertFitsProduction refuses a deploy where the worker entry imports the index — the discipline made a theorem. Models the ceiling; the actual built artifact needs a build to measure."
 atomPath: "cloudflare/capacity"
-coordinate: "cloudflare/capacity · 4/weave · 0acf85a7"
-contentUuid: "0e2c0c10-d6a0-5195-bbf8-3800fc11df2b"
-diamondUuid: "782795a6-2480-8914-91b6-4ac6f9415e03"
-uuid: "0acf85a7-6e42-8d65-bd48-251857b0ceca"
-horo: 4
-bonds:
-  in:
-    - agent
-    - agriculture
-    - aquaculture
-    - attendee
-    - biomass
-    - bottleneck
-    - cloudflare
-    - compost
-    - covercrop
-    - fertility
-    - fuel
-    - grazing
-    - herd
-    - irrigation
-    - law
-    - maximum
-    - moisture
-    - pasture
-    - physical
-    - propagation
-    - remaining
-    - rotation
-    - season
-    - seating
-    - skill
-    - soil
-    - sustainability
-    - tunnel
-    - vehicle
-    - virtual
-    - yield
-  out:
-    - agent
-    - agriculture
-    - aquaculture
-    - attendee
-    - biomass
-    - bottleneck
-    - cloudflare
-    - compost
-    - covercrop
-    - fertility
-    - fuel
-    - grazing
-    - herd
-    - irrigation
-    - law
-    - maximum
-    - moisture
-    - pasture
-    - physical
-    - propagation
-    - remaining
-    - rotation
-    - season
-    - seating
-    - skill
-    - soil
-    - sustainability
-    - tunnel
-    - vehicle
-    - virtual
-    - yield
+coordinate: "cloudflare/capacity · 8/crest · 48abbe76"
+contentUuid: "2bb25021-be2b-5190-9024-6aa91b0fa654"
+diamondUuid: "4cd054bc-370b-89fb-aa72-4239ecc4670f"
+uuid: "48abbe76-2560-8a9f-9318-c02a5e477818"
+horo: 8
 typography:
   partition: cloudflare
-  bondDegree: 100
-  neighbors:
-    - agent
-    - cloudflare
+  bondDegree: 98
 standards:
   - "Cloudflare Workers/D1/R2/Durable Objects platform limits (2025) — the production ceiling"
 bindings: []
-neighbors:
-  wikilink:
-    - agent
-    - cloudflare
-    - law
-    - skill
-  matrix:
-    - agent
-    - agriculture
-    - aquaculture
-    - attendee
-    - biomass
-    - bottleneck
-    - cloudflare
-    - compost
-    - covercrop
-    - fertility
-    - fuel
-    - grazing
-    - herd
-    - irrigation
-    - law
-    - maximum
-    - moisture
-    - pasture
-    - physical
-    - propagation
-    - remaining
-    - rotation
-    - season
-    - seating
-    - skill
-    - soil
-    - sustainability
-    - tunnel
-    - vehicle
-    - virtual
-    - yield
-  backlinks:
-    - agent
-    - agriculture
-    - aquaculture
-    - attendee
-    - biomass
-    - bottleneck
-    - cloudflare
-    - compost
-    - covercrop
-    - fertility
-    - fuel
-    - grazing
-    - herd
-    - irrigation
-    - law
-    - maximum
-    - moisture
-    - pasture
-    - physical
-    - propagation
-    - remaining
-    - rotation
-    - season
-    - seating
-    - skill
-    - soil
-    - sustainability
-    - tunnel
-    - vehicle
-    - virtual
-    - yield
 signatures:
-  computationUuid: "0bfda2f1-530c-89dd-9dde-2e0de666f4f3"
+  computationUuid: "68c44c2c-f672-88c2-bd1d-acf2251f7741"
   stages:
     - stage: path
       stageUuid: "f666844f-9173-8547-815e-16bbb6fa1f6a"
     - stage: trinity
       stageUuid: "ee4d1b24-6669-8204-9be8-eaed7f090be3"
     - stage: boundary
-      stageUuid: "43ea1bed-2a50-8d21-9b8f-07a885b786e5"
+      stageUuid: "47dfb213-db9c-82aa-9d17-ee8b5f386804"
     - stage: links
       stageUuid: "bd4006d0-09c5-8dc1-8f93-51f41189fa24"
     - stage: horo
-      stageUuid: "8fc0c05f-cd99-8e7c-ad73-2c05f1711ae8"
+      stageUuid: "68d6c120-f4e3-89b9-b46e-7570feeda3b5"
     - stage: seal
       stageUuid: "1139f2b6-25cc-83d0-8cf9-bb6f28ed79a0"
     - stage: uuid
-      stageUuid: "9880feca-6a9d-8277-9d3d-7dd9d67eb3b1"
+      stageUuid: "6bd6e00b-b77a-86be-87c0-2ef44e47aae9"
 version: 2
 ---
 # capacity — the production hardware, computed against erpax's demand

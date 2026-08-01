@@ -1,68 +1,35 @@
 ---
 name: cheat
 description: "Use when reasoning about cheat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/cheat
-coordinate: cheat · 2/share · e648f078
-contentUuid: "9b7e5953-02b9-511d-90e9-a2b6dca25531"
-diamondUuid: "56268b0d-6ddd-8700-aee0-5b3419e56a5f"
-uuid: "e648f078-9231-8217-9c41-09f6c47d0d7d"
+atomPath: "vocabulary/cheat"
+coordinate: "vocabulary/cheat · 2/share · fc35399b"
+contentUuid: "ef790dc2-7743-5bdb-a5d7-946d7a6bb6d2"
+diamondUuid: "38b05ab9-86a9-84aa-95e9-e80efd15037a"
+uuid: "fc35399b-135b-86db-b027-862c309cac40"
 horo: 2
-bonds:
-  in:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: cheat
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "5021d419-f87a-85b7-959e-82f597ef3ef1"
+  computationUuid: "7ce0ab92-2e5c-8791-bd05-dd7d20544b87"
   stages:
     - stage: path
-      stageUuid: "50fda97e-c065-8797-b121-881ebec0c24c"
+      stageUuid: "5c05fa9d-d2d0-8d63-bece-5498391e5e20"
     - stage: trinity
-      stageUuid: "ac97fcbb-35da-8972-992b-2951b510492c"
+      stageUuid: "15f31bb0-5e8d-89d5-8dc0-ed5f7df4c826"
     - stage: boundary
-      stageUuid: "bca912f6-5d21-89bd-8663-7ca911228d64"
+      stageUuid: "40cbf3f3-9a61-82f5-b04d-201f3f2627d2"
     - stage: links
-      stageUuid: "143e452d-f6f1-860e-91a8-0eb8fdb0ccbe"
+      stageUuid: "ee78d62b-de10-8bcc-bd5e-a56cab0cb64c"
     - stage: horo
-      stageUuid: "77f8c817-924d-8fbd-b215-63bf3442290f"
+      stageUuid: "797bbc4e-c4b6-8070-92e5-41293b75815b"
     - stage: seal
-      stageUuid: "17522881-dfca-8ae7-921e-4f730fef539b"
+      stageUuid: "cbad6480-c720-80c5-a5a0-efc4210a029b"
     - stage: uuid
-      stageUuid: "6e1663e9-58f9-8dd6-8705-c57be85e281f"
+      stageUuid: "8a2f5905-c81e-8592-85ca-ba0e5ea422f8"
 version: 2
 ---
 # cheat

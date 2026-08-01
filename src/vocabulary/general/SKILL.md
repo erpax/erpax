@@ -1,68 +1,35 @@
 ---
 name: general
 description: "Use when reasoning about general as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/general
-coordinate: general · 2/share · c70c0c07
-contentUuid: "7ac49eae-fb3c-5e9f-a711-105a4a10203d"
-diamondUuid: "12d3a586-96a5-894b-b6d1-1310208a8975"
-uuid: "c70c0c07-6746-8e17-83c4-45c3ba90f591"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - contractor
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - contractor
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/general"
+coordinate: "vocabulary/general · 5/round · cdd2a69d"
+contentUuid: "6dac775e-297d-5c84-a447-d7b3dac8a9b1"
+diamondUuid: "b5bd7404-d1d2-827c-8f20-66453b50d542"
+uuid: "cdd2a69d-7a49-8dfa-8aa1-9f351acad3bf"
+horo: 5
 typography:
-  partition: general
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - contractor
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - contractor
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - contractor
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "b08a9158-5e28-86b7-93ec-0ad4f1a5d478"
+  computationUuid: "faa3e260-ddf2-8779-b1c7-ff94aeaa3d19"
   stages:
     - stage: path
-      stageUuid: "94113e50-0ca3-8c8c-b0e7-1e2547be35c4"
+      stageUuid: "2221aa4a-a9cc-8774-9cb2-f659bf49aa4f"
     - stage: trinity
-      stageUuid: "72a12066-173b-88ae-bf9f-3a86528af7ad"
+      stageUuid: "2bd43434-d4c9-83e8-b7b5-921238b29d93"
     - stage: boundary
-      stageUuid: "f7a9402a-9577-87e2-b077-1c688fd2a948"
+      stageUuid: "998b03a6-bef9-81ac-b57a-9475e69348bd"
     - stage: links
-      stageUuid: "9daa3c87-a829-8ba7-890f-8cb8941970c2"
+      stageUuid: "a8f83358-2b6b-8674-8a01-71d3b8a45393"
     - stage: horo
-      stageUuid: "a04ec8f7-41af-8180-82bf-d12b999e551d"
+      stageUuid: "c38734b5-7091-8f3c-bfca-c928c36d2ca7"
     - stage: seal
-      stageUuid: "0562ff38-827e-8389-b5e6-27c4888dfd3d"
+      stageUuid: "2a1b30c9-938f-899c-a3a4-57f09838b5fd"
     - stage: uuid
-      stageUuid: "0ebc501a-7249-8b96-8bc0-9d9773fb16e6"
+      stageUuid: "f4fc8493-0dd3-8b18-9900-ee68735d0cb2"
 version: 2
 ---
 # general

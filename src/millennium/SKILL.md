@@ -2,67 +2,18 @@
 name: millennium
 description: "Use when the Clay Millennium Problems are offered as a testing ground — the honest register that NAMES the seven, marks six open and one solved (Poincaré, by Perelman), and refuses to solve any. Every entry's `corpusSolves` is the literal false, so the code cannot claim a solution; the corpus tools are lenses to learn through, and the quantum waves CLASSIFY a claimed solution, they do not produce one. HARMONY ≠ TRUTH."
 atomPath: millennium
-coordinate: "millennium · 8/crest · fc3b536a"
-contentUuid: "556c5916-9623-585b-82f5-92b5ee99e745"
-diamondUuid: "e4f8a953-d552-8ad8-a390-f6834e375e1f"
-uuid: "fc3b536a-2dd0-83a1-ae44-95fc6f321f19"
+coordinate: "millennium · 8/crest · 99503659"
+contentUuid: "d41cde69-3606-5435-ad6d-530a5210066f"
+diamondUuid: "1f4b02a4-7a9d-8314-b944-018e84d3f5b3"
+uuid: "99503659-e7cb-802d-a599-958170b9fe21"
 horo: 8
-bonds:
-  in:
-    - coincidence
-    - duel
-    - law
-    - merge
-    - quantum
-    - rules
-    - seeing
-    - theorem
-  out:
-    - coincidence
-    - duel
-    - law
-    - merge
-    - quantum
-    - rules
-    - seeing
-    - theorem
 typography:
   partition: millennium
-  bondDegree: 26
-  neighbors: []
+  bondDegree: 29
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - coincidence
-    - duel
-    - law
-    - merge
-    - quantum
-    - row
-    - rules
-    - seeing
-    - theorem
-  matrix:
-    - coincidence
-    - duel
-    - law
-    - merge
-    - quantum
-    - rules
-    - seeing
-    - theorem
-  backlinks:
-    - coincidence
-    - duel
-    - law
-    - merge
-    - quantum
-    - rules
-    - seeing
-    - theorem
 signatures:
-  computationUuid: "b14b999e-f50f-87e6-8be3-559cc3b86119"
+  computationUuid: "d2084dee-fd3f-83b4-b419-8e02bc66288a"
   stages:
     - stage: path
       stageUuid: "1ea0afd8-0007-8ac8-802d-3bf04a0ced0c"
@@ -73,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "579e48fc-c299-8db5-9346-222dcf2fbfcd"
     - stage: horo
-      stageUuid: "1c0cd109-2df4-85e1-a857-160a69ea2093"
+      stageUuid: "d9d81eee-f597-8906-b7c9-b50ff9879f63"
     - stage: seal
       stageUuid: "20645fbb-d08f-8362-b087-0366b7970a44"
     - stage: uuid
-      stageUuid: "0c79d705-1e5b-8577-837c-a28c704f65ec"
+      stageUuid: "553bb2af-e3d5-85b4-8f67-564078031e26"
 version: 2
 ---
 # millennium — the Clay problems as a testing ground; the waves classify, they do not solve

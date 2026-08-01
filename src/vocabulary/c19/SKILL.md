@@ -1,63 +1,35 @@
 ---
 name: c19
 description: "Use when reasoning about c19 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/c19
-coordinate: c19 · 5/round · d13c313f
-contentUuid: "43b0ad71-5509-5c79-8cc5-4d0708782d25"
-diamondUuid: "0de59f82-7811-840b-896c-c3eebcbdc749"
-uuid: "d13c313f-aa75-8ce6-bcc6-c221a2038dac"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/c19"
+coordinate: "vocabulary/c19 · 4/weave · 773283fd"
+contentUuid: "d49b31ef-621e-5190-8cbe-6d89ad779698"
+diamondUuid: "557f2391-19af-8ad2-88d0-88624073227d"
+uuid: "773283fd-55d9-8de9-be49-308abd75df3f"
+horo: 4
 typography:
-  partition: c19
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "44edfe6b-7c9f-8764-96c8-6b20e0965a28"
+  computationUuid: "814c57d7-6df9-8056-8643-d535c4f642ff"
   stages:
     - stage: path
-      stageUuid: "e8e94d96-7ccb-8a98-9ba3-945bc4bf8f96"
+      stageUuid: "b6e285a8-1105-8831-b88a-8ec2c2f04109"
     - stage: trinity
-      stageUuid: "db0f6e8d-baec-891d-8330-05a37c51f616"
+      stageUuid: "25ff90ce-4701-8e1b-acad-55961d59342a"
     - stage: boundary
-      stageUuid: "8f9739ea-e1ee-8362-b2fd-879992cec8ff"
+      stageUuid: "65e1aa18-0672-85f9-b792-0b7db5bfa2e1"
     - stage: links
-      stageUuid: "61c84e65-37b0-8453-b24b-37bc83a8fd7a"
+      stageUuid: "e838bbdd-590e-83ba-a067-0a8e8d70f331"
     - stage: horo
-      stageUuid: "58554112-c02c-8131-86e3-4297615a54d2"
+      stageUuid: "79901733-ea05-81f9-bb68-53d46108bff4"
     - stage: seal
-      stageUuid: "fe29f253-b5ca-85a9-b365-7e3b56783de2"
+      stageUuid: "36b04188-57c4-81db-ab92-a9390cc491f5"
     - stage: uuid
-      stageUuid: "f78e57f6-0047-8f09-8bef-c49770386dd9"
+      stageUuid: "acdc2b73-1ee8-8790-bdce-22a4d412e3f2"
 version: 2
 ---
 # c19

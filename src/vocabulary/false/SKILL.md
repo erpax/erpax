@@ -1,63 +1,35 @@
 ---
 name: false
 description: "Use when reasoning about false as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/false
-coordinate: false · 8/crest · 3f8862b2
-contentUuid: "2c3e039f-2093-5b14-808e-7765208b1812"
-diamondUuid: "99ee467d-446d-8c19-bd66-48357978c01b"
-uuid: "3f8862b2-942b-854d-9761-3060fa0846b1"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/false"
+coordinate: "vocabulary/false · 5/round · 0b02b0e2"
+contentUuid: "796f3247-d4a7-5787-9cf2-799b2ea6f774"
+diamondUuid: "ff455bee-a1e5-8ed9-898d-4b214a0b8707"
+uuid: "0b02b0e2-fbd4-88e3-97ec-16f688938eea"
+horo: 5
 typography:
-  partition: false
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "06f8976b-3d2e-8c92-aa32-61326ba28b9e"
+  computationUuid: "93daf938-8db4-82b7-898a-5c13bd8d0967"
   stages:
     - stage: path
-      stageUuid: "90527201-48f6-83bb-bce1-a838d95ad52a"
+      stageUuid: "c39a48ba-f34c-8e15-94a7-05828616bda4"
     - stage: trinity
-      stageUuid: "aca3303b-ddb7-831e-8cac-072412c16fca"
+      stageUuid: "4e3d98e9-6143-8fcc-9774-0fd7ee8b741c"
     - stage: boundary
-      stageUuid: "69b64401-9c66-8f32-9961-8e1b2ea4ad57"
+      stageUuid: "ec8c72d6-1448-8235-b0df-01b19e2ead35"
     - stage: links
-      stageUuid: "822e49aa-c46f-8458-a1ab-2d81b9aafd45"
+      stageUuid: "cbda412a-f778-8cdd-a070-a01aea541457"
     - stage: horo
-      stageUuid: "f819f967-4958-8df3-930e-1796ca51266c"
+      stageUuid: "7e68a877-270b-87b9-8677-acde0c9154cc"
     - stage: seal
-      stageUuid: "fe68b762-8665-820b-b081-fd69bb650913"
+      stageUuid: "c17a72a9-5993-859e-a431-bb1ea6243945"
     - stage: uuid
-      stageUuid: "b6205968-678c-89b0-b5c1-e206d979c319"
+      stageUuid: "9a3b8931-4438-859b-8bce-ad60815f5a32"
 version: 2
 ---
 # false

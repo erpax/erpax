@@ -1,88 +1,35 @@
 ---
 name: previous
 description: "Use when reasoning about previous as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/previous
-coordinate: previous · 8/crest · 25299874
-contentUuid: "bff433b2-ed99-5783-87c5-b9f2492380f2"
-diamondUuid: "d0e206dd-711d-8a30-90d7-729f2a410088"
-uuid: "25299874-42ca-8ac6-9897-c53671437790"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - date
-    - item
-    - law
-    - merge
-    - number
-    - owners
-    - start
-    - sti
-  out:
-    - collapse
-    - date
-    - item
-    - law
-    - merge
-    - number
-    - owners
-    - start
-    - sti
+atomPath: "vocabulary/previous"
+coordinate: "vocabulary/previous · 2/share · 38b3f7f9"
+contentUuid: "4d5eb32a-2a4a-5afa-9764-91ec36c56920"
+diamondUuid: "a31b082a-ecce-89d1-8d4b-52f44df2b308"
+uuid: "38b3f7f9-28c3-8360-8dcf-e894200e5ed6"
+horo: 2
 typography:
-  partition: previous
+  partition: vocabulary
   bondDegree: 28
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - date
-    - item
-    - law
-    - merge
-    - number
-    - owners
-    - start
-    - sti
-  matrix:
-    - collapse
-    - date
-    - item
-    - law
-    - merge
-    - number
-    - owners
-    - start
-    - sti
-  backlinks:
-    - collapse
-    - date
-    - item
-    - law
-    - merge
-    - number
-    - owners
-    - start
-    - sti
 signatures:
-  computationUuid: "c5b081b6-ffcb-81d5-b72f-dc20c470bd3e"
+  computationUuid: "1b2f2cca-2bb8-8af6-a670-3882f73c9c98"
   stages:
     - stage: path
-      stageUuid: "7bfdebca-7570-8797-a753-daf6be4332ff"
+      stageUuid: "83e1382e-7df2-8473-a890-594f1aa3b94a"
     - stage: trinity
-      stageUuid: "73e3fe16-f03e-87e4-88bc-c3e35cec893d"
+      stageUuid: "602a9a27-a9d6-8509-b7bc-9dec799f018a"
     - stage: boundary
-      stageUuid: "09472095-5575-8681-bbb0-127633e88afb"
+      stageUuid: "470bef06-c3cd-8686-9369-c780bbc10979"
     - stage: links
-      stageUuid: "0f88a50d-7f4f-8e7b-b536-91fbddcee2d7"
+      stageUuid: "b12135cf-9dcd-8c69-af70-53423d3d161e"
     - stage: horo
-      stageUuid: "75233f5a-29eb-8c7b-8450-d4b99b49a0d4"
+      stageUuid: "73a3077c-d2f4-805f-a792-8f9adf700ef3"
     - stage: seal
-      stageUuid: "2c07e6aa-3708-82b6-8f99-97afc3d33d5e"
+      stageUuid: "d38ed5da-1423-8370-8a68-58e38a6e0b5f"
     - stage: uuid
-      stageUuid: "d084dcf3-0391-8332-b16d-2a64b0047627"
+      stageUuid: "7418b0a1-fa9d-8931-a018-cb186b3bf06a"
 version: 2
 ---
 # previous

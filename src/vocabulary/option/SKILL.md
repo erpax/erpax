@@ -1,88 +1,35 @@
 ---
 name: option
 description: Use when reasoning about option — A sub property of object. The options subject to this action.
-atomPath: vocabulary/option
-coordinate: option · 7/descent · 02f6b360
-contentUuid: "43993491-e2d1-5901-b49c-fe481d146f5d"
-diamondUuid: "c5c70b26-ce95-8047-8345-7a38a84ccc5d"
-uuid: "02f6b360-813f-8f0c-ac9e-96621755f02c"
-horo: 7
-bonds:
-  in:
-    - action
-    - coinsurance
-    - contact
-    - copay
-    - drug
-    - health
-    - law
-    - plan
-    - point
-  out:
-    - action
-    - coinsurance
-    - contact
-    - copay
-    - drug
-    - health
-    - law
-    - plan
-    - point
+atomPath: "vocabulary/option"
+coordinate: "vocabulary/option · 5/round · 01dfb1b6"
+contentUuid: "517d4720-e13e-58de-b984-7838953e62a0"
+diamondUuid: "59b9a115-e926-8067-be68-bc3f1ed1f2b0"
+uuid: "01dfb1b6-8752-898e-9c89-90417b14f7b0"
+horo: 5
 typography:
-  partition: option
-  bondDegree: 33
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 35
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - coinsurance
-    - contact
-    - copay
-    - drug
-    - health
-    - law
-    - plan
-    - point
-  matrix:
-    - action
-    - coinsurance
-    - contact
-    - copay
-    - drug
-    - health
-    - law
-    - plan
-    - point
-  backlinks:
-    - action
-    - coinsurance
-    - contact
-    - copay
-    - drug
-    - health
-    - law
-    - plan
-    - point
 signatures:
-  computationUuid: "6e3830ec-7c13-8f8f-aadc-7d6f542f8a3f"
+  computationUuid: "225637a8-5cae-8ebf-8135-7ede78325b86"
   stages:
     - stage: path
-      stageUuid: "4515acb3-ae2a-8df3-a5b4-e9677b47f091"
+      stageUuid: "27503121-9697-8c0f-92b0-7bc150eb2239"
     - stage: trinity
-      stageUuid: "d786f3c7-7b25-8e44-a57d-607194d4a84d"
+      stageUuid: "cce8eb90-371f-869b-94e6-ef936dbecc5f"
     - stage: boundary
-      stageUuid: "e1e729a3-9382-8677-a6c3-22b90d0aa178"
+      stageUuid: "e966ad56-0898-88cb-ba59-1325adaa3e54"
     - stage: links
-      stageUuid: "42bbc920-f1d9-87f6-af6b-7bd242f57a7d"
+      stageUuid: "9e08ab2d-b842-8d43-97fd-447e2540f74f"
     - stage: horo
-      stageUuid: "e86142cd-3d05-8fba-b719-0a85ad22e382"
+      stageUuid: "f5d165e3-a8e2-8d54-a5dd-320ad226a342"
     - stage: seal
-      stageUuid: "1be85a87-b15a-8466-9673-6dc1888ad5f9"
+      stageUuid: "570c21c1-4b17-86e2-815c-04e3156beaba"
     - stage: uuid
-      stageUuid: "a20b939b-dd82-8abc-b0f3-c469e29d200c"
+      stageUuid: "52dfe817-3965-8202-897c-294b850cd373"
 version: 2
 ---
 # option

@@ -1,123 +1,35 @@
 ---
 name: educational
 description: "Use when reasoning about educational as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/educational
-coordinate: educational · 8/crest · e73ca4d6
-contentUuid: "24d0457e-18e5-5197-ab2e-9de563d4bb45"
-diamondUuid: "7dc1a731-57c5-8307-80cc-7ebf02c8125c"
-uuid: "e73ca4d6-2444-8b2e-af7f-559f0ff0fa52"
-horo: 8
-bonds:
-  in:
-    - alignment
-    - audience
-    - awarded
-    - collapse
-    - credential
-    - framework
-    - law
-    - level
-    - merge
-    - mode
-    - occupational
-    - organization
-    - program
-    - role
-    - sti
-    - use
-  out:
-    - alignment
-    - audience
-    - awarded
-    - collapse
-    - credential
-    - framework
-    - law
-    - level
-    - merge
-    - mode
-    - occupational
-    - organization
-    - program
-    - role
-    - sti
-    - use
+atomPath: "vocabulary/educational"
+coordinate: "vocabulary/educational · 5/round · 2d850c5a"
+contentUuid: "34b578e6-17b2-5f78-b707-3b24da8a41e5"
+diamondUuid: "7ba300a3-a3f8-85e0-a478-d39426b052ae"
+uuid: "2d850c5a-2f1e-8046-b27d-9773183ee902"
+horo: 5
 typography:
-  partition: educational
-  bondDegree: 60
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 66
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - alignment
-    - audience
-    - awarded
-    - collapse
-    - credential
-    - framework
-    - law
-    - level
-    - merge
-    - mode
-    - occupational
-    - organization
-    - program
-    - role
-    - sti
-    - use
-  matrix:
-    - alignment
-    - audience
-    - awarded
-    - collapse
-    - credential
-    - framework
-    - law
-    - level
-    - merge
-    - mode
-    - occupational
-    - organization
-    - program
-    - role
-    - sti
-    - use
-  backlinks:
-    - alignment
-    - audience
-    - awarded
-    - collapse
-    - credential
-    - framework
-    - law
-    - level
-    - merge
-    - mode
-    - occupational
-    - organization
-    - program
-    - role
-    - sti
-    - use
 signatures:
-  computationUuid: "e997f9f3-c64d-8dd1-a616-b790d624b13f"
+  computationUuid: "6b3c6a13-1638-89c7-a057-f414d95835e5"
   stages:
     - stage: path
-      stageUuid: "e09f065b-41a0-87ab-8f3a-67e6d1830b93"
+      stageUuid: "48a58874-d431-83a5-9b4d-a7724ec7e7c5"
     - stage: trinity
-      stageUuid: "3c73019b-2bed-8acf-88ba-297033e8057d"
+      stageUuid: "9c9cc851-7f62-8e23-adbc-62c50da55f15"
     - stage: boundary
-      stageUuid: "1ddef447-0a83-8a7f-b3ea-6c185128068c"
+      stageUuid: "9426689a-7931-80f9-8045-a3e35155d589"
     - stage: links
-      stageUuid: "aaf780f1-6e11-8e1d-9067-8e4f9cc16890"
+      stageUuid: "463e8a8a-f3d3-85d0-b637-caef06a17371"
     - stage: horo
-      stageUuid: "6a4ffff7-4eb2-8730-9d81-302387847316"
+      stageUuid: "208db1f1-15fe-861b-85a7-6655d155fcc6"
     - stage: seal
-      stageUuid: "2683f339-fc8d-8574-95f3-bfc103d87520"
+      stageUuid: "d3126f3b-18eb-83c7-836e-5832368f0d8d"
     - stage: uuid
-      stageUuid: "6d7b2276-2aef-8557-9470-ded67469eee5"
+      stageUuid: "f0167469-e804-8d08-ab3c-09fb49d02879"
 version: 2
 ---
 # educational

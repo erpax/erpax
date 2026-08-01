@@ -1,63 +1,35 @@
 ---
 name: charity
 description: "Use when reasoning about charity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/charity
-coordinate: charity · 2/share · 07926bae
-contentUuid: "0f3881c3-2b15-57f5-b681-c92f25df8ea2"
-diamondUuid: "1f4e5d63-5213-84fa-bf5a-b96325888f77"
-uuid: "07926bae-9e95-8f54-b730-2349630b0f2d"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/charity"
+coordinate: "vocabulary/charity · 7/descent · de0d9fc5"
+contentUuid: "4140fb5a-38f0-50de-9708-4723a8610ba2"
+diamondUuid: "5ed2435f-430a-82d9-8be5-8e39857e839a"
+uuid: "de0d9fc5-1677-8b50-9446-94b8550013a3"
+horo: 7
 typography:
-  partition: charity
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "52581041-56d1-896c-98c1-249e637928b8"
+  computationUuid: "20e396e2-fb1f-8ef4-8976-ba49668e5d28"
   stages:
     - stage: path
-      stageUuid: "8450c4ad-cb0e-8b7e-be1c-42fdf9af08d8"
+      stageUuid: "097d0978-be36-8531-8f9c-b1ce2c890853"
     - stage: trinity
-      stageUuid: "505c1e27-88b8-86c8-9503-7f3de668767e"
+      stageUuid: "7567f98e-0302-8902-b717-c91243965bef"
     - stage: boundary
-      stageUuid: "f018013c-4f2d-8a09-87a8-47b78b61afaa"
+      stageUuid: "adc3bfe1-9142-83df-bfcf-2d7c7e8348df"
     - stage: links
-      stageUuid: "3d8ae3eb-94b3-8b66-9ccc-4311cf88ad3b"
+      stageUuid: "2dbc388d-f799-829f-9898-c13a3ab9f5d9"
     - stage: horo
-      stageUuid: "35359af6-0c1d-8a89-a1ad-80a42b475c6d"
+      stageUuid: "5fd2b4c4-27d2-8c09-8d23-db2601fea3e0"
     - stage: seal
-      stageUuid: "7dcd98e7-d18b-8c64-9c7d-aa0492f78154"
+      stageUuid: "3f380a95-4110-88dd-a4e3-edc2942ee22f"
     - stage: uuid
-      stageUuid: "78357b2a-2d3d-8cef-b478-e491864af801"
+      stageUuid: "6a638c75-d660-8c8f-a305-84e5a2893d01"
 version: 2
 ---
 # charity

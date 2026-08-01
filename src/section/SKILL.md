@@ -2,77 +2,19 @@
 name: section
 description: "Use when reasoning about section as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: section
-coordinate: section · 2/share · 36dbdd25
-contentUuid: "a2f96170-b50d-5a9d-91ca-9ff71077514d"
-diamondUuid: "9e9b232d-e6b2-8e0b-acc3-914140143d51"
-uuid: "36dbdd25-06a0-8162-ac5b-e67f4fee296d"
-horo: 2
-bonds:
-  in:
-    - article
-    - collapse
-    - has
-    - how
-    - law
-    - menu
-    - merge
-    - print
-    - seat
-    - sti
-  out:
-    - article
-    - collapse
-    - has
-    - how
-    - law
-    - menu
-    - merge
-    - print
-    - seat
-    - sti
+coordinate: "section · 7/descent · 365ae5a4"
+contentUuid: "73ce48a4-fe76-5296-b292-cb75af582213"
+diamondUuid: "7e540a80-0fa9-846b-b2a4-88a076be5c27"
+uuid: "365ae5a4-1843-8e43-839b-76316b07c3af"
+horo: 7
 typography:
   partition: section
-  bondDegree: 35
-  neighbors: []
+  bondDegree: 37
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - article
-    - collapse
-    - has
-    - how
-    - law
-    - menu
-    - merge
-    - print
-    - seat
-    - sti
-  matrix:
-    - article
-    - collapse
-    - has
-    - how
-    - law
-    - menu
-    - merge
-    - print
-    - seat
-    - sti
-  backlinks:
-    - article
-    - collapse
-    - has
-    - how
-    - law
-    - menu
-    - merge
-    - print
-    - seat
-    - sti
 signatures:
-  computationUuid: "6edcb6b6-dca2-8d06-86ea-adc431edf473"
+  computationUuid: "a4004680-34ad-857e-af53-e7176c48b6bf"
   stages:
     - stage: path
       stageUuid: "d9f484a5-1182-8e75-ab05-a7436f10e409"
@@ -83,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "63d0e67a-2ce8-8e93-a79c-d6a41800092f"
     - stage: horo
-      stageUuid: "758eff21-eb05-84dc-8b4f-fa1d9cc4a323"
+      stageUuid: "38b782f8-8e6b-87d2-94df-e35c61833acd"
     - stage: seal
-      stageUuid: "ccc29cbd-f0e1-8d0f-be53-b648980f1360"
+      stageUuid: "1a8f8b01-ea9d-863d-8711-c4a6aa8ef5da"
     - stage: uuid
-      stageUuid: "694432f4-784a-831e-a2c7-75f709240a0d"
+      stageUuid: "f108b7e0-5985-8e07-8d98-aeaf5c6dc6bb"
 version: 2
 ---
 # section

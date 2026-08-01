@@ -1,53 +1,35 @@
 ---
 name: distillery
 description: Use when reasoning about distillery — A distillery.
-atomPath: vocabulary/distillery
-coordinate: distillery · 5/round · 7442b8cd
-contentUuid: "bd1e3d20-3a57-599d-aa98-ba7b0bafeabd"
-diamondUuid: "8545b886-21d2-8c2a-9905-ea4a757fcb73"
-uuid: "7442b8cd-4fd1-8e22-84e6-ae78a950eed1"
-horo: 5
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/distillery"
+coordinate: "vocabulary/distillery · 4/weave · 2201a5e1"
+contentUuid: "0ca2ed7e-753a-5d53-b6e5-b5278b6590e4"
+diamondUuid: "12160aa6-71fa-8bab-88ee-11901890658b"
+uuid: "2201a5e1-af79-87ff-81de-42d466c77495"
+horo: 4
 typography:
-  partition: distillery
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "97631cfc-28ee-85a9-88ae-3fb62f256706"
+  computationUuid: "9c89cfe9-4226-80a3-ad94-8ab6268cf201"
   stages:
     - stage: path
-      stageUuid: "790e2ed7-a1c9-8bf8-86f9-113d9c8f2dd7"
+      stageUuid: "b74f8988-b1ab-8edb-aa41-f7efe2c321da"
     - stage: trinity
-      stageUuid: "b31a1aa5-81df-8276-8056-1fc5e00dcddc"
+      stageUuid: "dc51c4f8-db43-8da8-bf7a-26abde94ade3"
     - stage: boundary
-      stageUuid: "87c9f9b3-6124-8ccd-99d0-f58ebe2b712c"
+      stageUuid: "46d41d72-f9fb-8508-9e15-b4376285131b"
     - stage: links
-      stageUuid: "e9e5315b-4d5d-880a-89b1-e95c34a6b165"
+      stageUuid: "fd5fcdc7-eb25-8e0c-913c-d8c5704ae92c"
     - stage: horo
-      stageUuid: "304b02f0-77da-890b-927b-7136dbf660eb"
+      stageUuid: "a6786ef8-3342-8167-a8a9-c30b63d3e89d"
     - stage: seal
-      stageUuid: "7998061d-1f51-8ebc-8201-def159dce5bd"
+      stageUuid: "21b53726-7ea3-8741-a4fe-ef491e59790a"
     - stage: uuid
-      stageUuid: "396d7440-cc02-8a42-943a-1d1db03f0196"
+      stageUuid: "a7d04b1e-f9ad-8e24-b0e9-e45b550057b4"
 version: 2
 ---
 # distillery

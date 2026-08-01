@@ -1,73 +1,35 @@
 ---
 name: players
 description: "Use when reasoning about players as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/players
-coordinate: players · 8/crest · 43420039
-contentUuid: "a5e648cc-2b4f-5c82-ac13-3b80ef60390d"
-diamondUuid: "e8c0435f-a018-8955-8588-819b5f9889a5"
-uuid: "43420039-aff7-82cf-bb7f-28100cfc2c86"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - number
-    - online
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - number
-    - online
-    - sti
+atomPath: "vocabulary/players"
+coordinate: "vocabulary/players · 2/share · 958af96c"
+contentUuid: "59a1c272-a33b-5c50-b6e9-e0647cd581f4"
+diamondUuid: "c558c9d7-f90a-80ea-9616-fb1f3bb3cd2a"
+uuid: "958af96c-94db-8204-97e3-6a80631abebf"
+horo: 2
 typography:
-  partition: players
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - number
-    - online
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - number
-    - online
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - number
-    - online
-    - sti
 signatures:
-  computationUuid: "8a7d8438-7f7e-8af7-bde7-69123081c75e"
+  computationUuid: "d36502dc-c137-8e0e-9373-ed5c5f8b6708"
   stages:
     - stage: path
-      stageUuid: "7018b807-96cf-8dfb-8b3f-46516f3b5c76"
+      stageUuid: "27c4ad00-f84b-8bae-aa80-607d29bec630"
     - stage: trinity
-      stageUuid: "a55ae44f-94b2-88e2-96e4-b9507a6aa56c"
+      stageUuid: "8901839e-70bb-8698-8159-bfd4219d76db"
     - stage: boundary
-      stageUuid: "484377a3-3eb4-8050-a948-62c2297a997e"
+      stageUuid: "d5fecbc1-a981-887b-9d09-9188381f38db"
     - stage: links
-      stageUuid: "0ed1d751-33fd-8e4a-881c-3e50aa8ba8fd"
+      stageUuid: "90e5824e-e07d-81c9-9d64-bc03c15816c5"
     - stage: horo
-      stageUuid: "66f492ae-9e21-8901-9f24-c38fea13e051"
+      stageUuid: "d2f3fd8f-bc16-82d3-998f-1153d9562929"
     - stage: seal
-      stageUuid: "030d02fd-6c1c-8a58-936b-e49c85119db6"
+      stageUuid: "da607f8a-418c-824e-9d00-881ae9ada760"
     - stage: uuid
-      stageUuid: "bae14311-3c8a-855a-ad78-41845ab2653c"
+      stageUuid: "a4228f61-de8f-886d-a296-9edb22e97a56"
 version: 2
 ---
 # players

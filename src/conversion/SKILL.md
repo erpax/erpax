@@ -2,116 +2,16 @@
 name: conversion
 description: "Use when reasoning about reversible representation change — a conversion is a bijection on ℤ/9 (multiplication by a unit), and inversion REINVENTS conversion: the inverse of a conversion is another conversion, from the same unit group closed under inverse. Holds only for the reversible units {1,2,4,5,7,8}; the axis {3,6,9} collapses — a lossy conversion (like the one-way fold) has no inverse to reinvent."
 atomPath: conversion
-coordinate: "conversion · 5/round · 867d0b0a"
-contentUuid: "b5148662-e464-5891-b01c-2da4fbd01255"
+coordinate: "conversion · 2/share · cfb611e7"
+contentUuid: "dd69290b-4b83-529b-9c85-c2a4c9df9881"
 diamondUuid: "6605c621-6a09-8c77-ab7d-76c868dcbde9"
-uuid: "867d0b0a-b8b4-8e9c-a41d-cc34c9b453ca"
-horo: 5
-bonds:
-  in:
-    - agriculture
-    - aquaculture
-    - attribution
-    - beyond
-    - coincidence
-    - collapse
-    - crop
-    - discover
-    - fertility
-    - fodder
-    - friction
-    - funnel
-    - horo
-    - law
-    - merge
-    - organic
-    - reverse
-    - rodin
-    - service
-    - theorem
-    - yield
-  out:
-    - agriculture
-    - aquaculture
-    - attribution
-    - beyond
-    - coincidence
-    - collapse
-    - crop
-    - discover
-    - fertility
-    - fodder
-    - friction
-    - funnel
-    - horo
-    - law
-    - merge
-    - organic
-    - reverse
-    - rodin
-    - service
-    - theorem
-    - yield
+uuid: "cfb611e7-997d-8ec7-a131-1ef2dcb04a01"
+horo: 2
 typography:
   partition: conversion
   bondDegree: 81
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - beyond
-    - collapse
-    - discover
-    - horo
-    - law
-    - merge
-    - reverse
-    - rodin
-  matrix:
-    - agriculture
-    - aquaculture
-    - attribution
-    - beyond
-    - coincidence
-    - collapse
-    - crop
-    - discover
-    - fertility
-    - fodder
-    - friction
-    - funnel
-    - horo
-    - law
-    - merge
-    - organic
-    - reverse
-    - rodin
-    - service
-    - theorem
-    - yield
-  backlinks:
-    - agriculture
-    - aquaculture
-    - attribution
-    - beyond
-    - coincidence
-    - collapse
-    - crop
-    - discover
-    - fertility
-    - fodder
-    - friction
-    - funnel
-    - horo
-    - law
-    - merge
-    - organic
-    - reverse
-    - rodin
-    - service
-    - theorem
-    - yield
 signatures:
   computationUuid: "2cda7733-747a-8add-b74a-f23267a659a0"
   stages:

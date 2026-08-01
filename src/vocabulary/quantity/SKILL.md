@@ -1,78 +1,35 @@
 ---
 name: quantity
 description: "Use when reasoning about quantity — Quantities such as distance, time, mass, weight, etc. Particular instances of say Mass are strings like '3 kg' or '4 milligrams'."
-atomPath: vocabulary/quantity
-coordinate: quantity · 5/round · a2987313
-contentUuid: "02b9aa0d-5985-5bd1-9654-b7f9c43b8f5c"
-diamondUuid: "022612ac-c98f-84f7-bc95-858267833ae5"
-uuid: "a2987313-12a5-8453-a4f7-2fc16bef85db"
-horo: 5
-bonds:
-  in:
-    - eligible
-    - law
-    - node
-    - order
-    - reference
-    - required
-    - type
-  out:
-    - eligible
-    - law
-    - node
-    - order
-    - reference
-    - required
-    - type
+atomPath: "vocabulary/quantity"
+coordinate: "vocabulary/quantity · 1/base · 48351f66"
+contentUuid: "470ac799-95e3-5ab6-96df-30c711eb3947"
+diamondUuid: "74f60c54-6170-8877-839b-62ec0bed6f04"
+uuid: "48351f66-2e64-82c7-b111-c63bb27829cd"
+horo: 1
 typography:
-  partition: quantity
-  bondDegree: 26
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 28
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - eligible
-    - law
-    - node
-    - order
-    - reference
-    - required
-    - type
-  matrix:
-    - eligible
-    - law
-    - node
-    - order
-    - reference
-    - required
-    - type
-  backlinks:
-    - eligible
-    - law
-    - node
-    - order
-    - reference
-    - required
-    - type
 signatures:
-  computationUuid: "4156fbca-181d-8f07-82eb-4d159c2643a2"
+  computationUuid: "987401f6-b3c5-88ac-85a9-7b30f4a754bd"
   stages:
     - stage: path
-      stageUuid: "7120eb3f-3bb0-8559-b52c-9f44f2521638"
+      stageUuid: "6f7b60ed-cc0c-8c59-ba14-3be03d0a1d0e"
     - stage: trinity
-      stageUuid: "71821a1f-c8ce-85c5-bea2-b0bfd68e8f8b"
+      stageUuid: "bb538a75-9f25-8978-bb6d-356a163abd1e"
     - stage: boundary
-      stageUuid: "dad91b4a-5673-8840-81ad-ba5b6df68318"
+      stageUuid: "df20344c-f7bd-8677-9bf4-cf3abf936b05"
     - stage: links
-      stageUuid: "11fb0409-a896-8bf9-b53f-f004945efa28"
+      stageUuid: "30170b90-8e9d-837d-8bd0-caacc07d32b4"
     - stage: horo
-      stageUuid: "109556b6-e28f-8d7c-bddf-cd303a836821"
+      stageUuid: "ec3a5c73-a76a-8022-8042-e1c29c3b1114"
     - stage: seal
-      stageUuid: "431fa38f-14b0-8ce0-8d57-de0ab150cb7a"
+      stageUuid: "2a40477b-29bd-815f-a9a3-783d97c775e9"
     - stage: uuid
-      stageUuid: "7e1fa164-4ea4-82a1-967f-55fe7fdb7c8e"
+      stageUuid: "fae8b534-92d1-823c-9da4-4dc631ad4cf7"
 version: 2
 ---
 # quantity

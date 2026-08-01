@@ -1,73 +1,35 @@
 ---
 name: modified
 description: "Use when reasoning about modified as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/modified
-coordinate: modified · 2/share · 3ae4bd97
-contentUuid: "99a87893-ac22-5b77-b62d-07e20286285c"
-diamondUuid: "b92c1a0b-b2b3-8e7f-8129-6f12df8679ab"
-uuid: "3ae4bd97-b54c-8c68-beda-bf91ddd3813b"
+atomPath: "vocabulary/modified"
+coordinate: "vocabulary/modified · 2/share · 236efb54"
+contentUuid: "ab329e46-01b6-577e-ae6f-54e6bfaf395a"
+diamondUuid: "4c9cd69c-7b9a-81da-87ae-f53cc9476d82"
+uuid: "236efb54-104c-8c55-a72e-8b763353e9a1"
 horo: 2
-bonds:
-  in:
-    - collapse
-    - date
-    - law
-    - merge
-    - sti
-    - time
-  out:
-    - collapse
-    - date
-    - law
-    - merge
-    - sti
-    - time
 typography:
-  partition: modified
+  partition: vocabulary
   bondDegree: 18
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - date
-    - law
-    - merge
-    - sti
-    - time
-  matrix:
-    - collapse
-    - date
-    - law
-    - merge
-    - sti
-    - time
-  backlinks:
-    - collapse
-    - date
-    - law
-    - merge
-    - sti
-    - time
 signatures:
-  computationUuid: "e3cf369f-5f20-88f8-b973-ce57fa625458"
+  computationUuid: "79719e86-a6fc-8c9a-bd97-ebcb8373beb5"
   stages:
     - stage: path
-      stageUuid: "ef271054-dc12-8a49-bf58-f5748b96054c"
+      stageUuid: "6b985f3b-451c-8c5b-bb99-9a5e178e07e8"
     - stage: trinity
-      stageUuid: "bcd16a4b-c2bd-852a-9a0e-420f4e1db7fb"
+      stageUuid: "374de75a-359b-8e71-8eba-e7fcbfe56def"
     - stage: boundary
-      stageUuid: "ef812449-d834-8b2d-b281-faa2416380c4"
+      stageUuid: "771501f7-d361-8b59-bbb7-51520c9c428a"
     - stage: links
-      stageUuid: "c290a696-8647-81ce-a474-cefd3ba1170c"
+      stageUuid: "33ff8d69-489e-875d-b997-68d53e9fdd7c"
     - stage: horo
-      stageUuid: "32d95a82-6aab-8a27-bfba-2e53f66b079f"
+      stageUuid: "d850f2e5-e231-8a3b-a7ea-80d81abfeddf"
     - stage: seal
-      stageUuid: "fb7ddc6d-1fab-8af7-848c-3347ccf4c51f"
+      stageUuid: "24e7de14-6e1f-847f-9519-b73fe5bcba7a"
     - stage: uuid
-      stageUuid: "9f0ca12b-2920-83a2-baf4-4fc5c1e75c8f"
+      stageUuid: "4bf24f9a-2edf-8576-90de-960bed899be7"
 version: 2
 ---
 # modified

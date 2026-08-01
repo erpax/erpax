@@ -2,122 +2,18 @@
 name: domain
 description: "Use when modelling a tenant's domain — NOT tenant isolation (the multi-tenant plugin does that), but the domain as the tenant's identity and managed entity: the name that routes the request to the tenant, its hierarchy, status lifecycle, SSL, billing, and — the key — proof of domain ownership, which IS the computational admin grant: prove you control the domain and the tenant is yours."
 atomPath: domain
-coordinate: "domain · 7/descent · ef98ed49"
-contentUuid: "d0c221c5-c80b-5b18-85a7-8d2eb90fc922"
-diamondUuid: "6086fce4-17ed-8f86-a9de-c1abd0aae705"
-uuid: "ef98ed49-c144-8509-ad42-1b9c7f3c2c0b"
-horo: 7
-bonds:
-  in:
-    - access
-    - angel
-    - auth
-    - commerce
-    - dimension
-    - horo
-    - identity
-    - includes
-    - limit
-    - mcp
-    - merge
-    - part
-    - plugins
-    - port
-    - proof
-    - science
-    - standard
-    - tenants
-    - verification
-    - whole
-  out:
-    - access
-    - angel
-    - auth
-    - commerce
-    - dimension
-    - horo
-    - identity
-    - includes
-    - limit
-    - mcp
-    - merge
-    - part
-    - plugins
-    - port
-    - proof
-    - science
-    - standard
-    - tenants
-    - verification
-    - whole
+coordinate: "domain · 4/weave · 7cd013fd"
+contentUuid: "651bd041-d6b6-5f83-80ca-ba9383f159c5"
+diamondUuid: "d52c2215-feb8-84f5-bbf9-38bc831d61f9"
+uuid: "7cd013fd-7934-8c63-b658-b7f742dd1d64"
+horo: 4
 typography:
   partition: domain
   bondDegree: 66
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - auth
-    - commerce
-    - horo
-    - identity
-    - limit
-    - merge
-    - part
-    - plugins
-    - port
-    - proof
-    - science
-    - standard
-    - tenants
-    - verification
-    - whole
-  matrix:
-    - access
-    - angel
-    - auth
-    - commerce
-    - dimension
-    - horo
-    - identity
-    - includes
-    - limit
-    - mcp
-    - merge
-    - part
-    - plugins
-    - port
-    - proof
-    - science
-    - standard
-    - tenants
-    - verification
-    - whole
-  backlinks:
-    - access
-    - angel
-    - auth
-    - commerce
-    - dimension
-    - horo
-    - identity
-    - includes
-    - limit
-    - mcp
-    - merge
-    - part
-    - plugins
-    - port
-    - proof
-    - science
-    - standard
-    - tenants
-    - verification
-    - whole
 signatures:
-  computationUuid: "07587e6f-f61f-8b34-b4e2-7f06e480b086"
+  computationUuid: "584bf91f-d83c-85b7-96eb-ece1d6dbe607"
   stages:
     - stage: path
       stageUuid: "d51a7a0f-f89c-8662-8ebd-2bb8db95d24e"
@@ -128,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "535501f4-42d8-864e-8df6-8ccedf07e910"
     - stage: horo
-      stageUuid: "af9d0d0b-659e-895e-88ac-b98dfc88e538"
+      stageUuid: "8dffa625-7eed-8313-94f1-b3daf82e8bb6"
     - stage: seal
       stageUuid: "ff5ffc08-4181-8d78-9844-ef039741d3bf"
     - stage: uuid
-      stageUuid: "70897298-05af-851b-b57a-83467f50a877"
+      stageUuid: "dc064cda-d245-8b45-929d-9a5d1a011efd"
 version: 2
 ---
 # domain — prove ownership and the tenant is yours

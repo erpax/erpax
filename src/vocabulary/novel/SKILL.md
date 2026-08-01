@@ -1,63 +1,35 @@
 ---
 name: novel
 description: "Use when reasoning about novel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/novel
-coordinate: novel · 7/descent · cf1a31ab
-contentUuid: "98edaf49-c215-593d-bc38-510825bc1758"
-diamondUuid: "63575678-bd92-8950-8b76-d5e3c3ba2e61"
-uuid: "cf1a31ab-3afe-857f-993d-f26aa625317f"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/novel"
+coordinate: "vocabulary/novel · 8/crest · 374d8110"
+contentUuid: "70ac66ad-0f19-5b83-a3ac-aeaf66912c54"
+diamondUuid: "5d0a9c16-2c45-811f-bf04-ac1f4abdd16f"
+uuid: "374d8110-1bc6-8b3a-992d-b512bf85b41d"
+horo: 8
 typography:
-  partition: novel
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "9b62bad3-6c56-88d5-8f06-5b422e36d381"
+  computationUuid: "d85bf3d7-894b-810a-b40f-279d0028cbd4"
   stages:
     - stage: path
-      stageUuid: "bbfe248a-5343-81e8-99bc-69ea51799596"
+      stageUuid: "a4cf5429-c5fb-8feb-bb7e-eeac98c554b6"
     - stage: trinity
-      stageUuid: "6925aa5e-0943-8277-9b73-7973bfb9f484"
+      stageUuid: "2d0ee793-b229-811f-ae0c-08fd9e2556a3"
     - stage: boundary
-      stageUuid: "8e94ffd4-7e3d-80c1-89e8-3fec573f362f"
+      stageUuid: "34cc4afe-26cf-84ca-bc76-40fb431d118f"
     - stage: links
-      stageUuid: "0a0cb2b8-a8a6-8a71-8f53-ef8362909ab2"
+      stageUuid: "879ad3e3-b4be-8cf2-b424-0ffa10c74712"
     - stage: horo
-      stageUuid: "e321105f-fdad-8798-a858-e6c9e3877ee3"
+      stageUuid: "7dbda232-d7da-8151-a2da-68d0b3c773c7"
     - stage: seal
-      stageUuid: "a70d855e-54a3-8fe3-8e32-b9926b755fd5"
+      stageUuid: "994e6904-f5f1-800c-b9ec-786006272abf"
     - stage: uuid
-      stageUuid: "2b69eeb5-6881-860b-b1ac-88209c4319ae"
+      stageUuid: "96fe4703-dda9-86c5-9f07-1d5b0acb6548"
 version: 2
 ---
 # novel

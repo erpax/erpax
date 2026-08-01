@@ -1,75 +1,34 @@
 ---
 name: nullability
 description: "Use when deciding NULL semantics — nullable vs NOT NULL fields, NULL handling in queries (IS NULL, COALESCE, NVL), NULL in aggregates (SUM ignores NULL), NULL propagation in calculations, three-valued logic."
-atomPath: vocabulary/nullability
-coordinate: nullability · 4/weave · f364ddd9
-contentUuid: "2d4f4c10-5636-5e8d-b1eb-dacecd43fc7e"
-diamondUuid: "9ce46e5f-24d5-8137-a2c2-56c1def036f5"
-uuid: "f364ddd9-b8c4-8594-861c-90c2c6c0ed61"
+atomPath: "vocabulary/nullability"
+coordinate: "vocabulary/nullability · 4/weave · 8ccdc86f"
+contentUuid: "7a9d678a-4a27-517c-8c6e-dac48901c760"
+diamondUuid: "aa729569-f496-8bb4-a172-8664a016fa00"
+uuid: "8ccdc86f-d35f-89e1-8949-950ab1ea39bb"
 horo: 4
-bonds:
-  in:
-    - calculate
-    - cardinality
-    - constraint
-    - database
-    - fields
-    - law
-    - queries
-  out:
-    - calculate
-    - cardinality
-    - constraint
-    - database
-    - fields
-    - law
-    - queries
 typography:
-  partition: nullability
+  partition: vocabulary
   bondDegree: 21
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - calculate
-    - database
-    - fields
-    - law
-    - queries
-  matrix:
-    - calculate
-    - cardinality
-    - constraint
-    - database
-    - fields
-    - law
-    - queries
-  backlinks:
-    - calculate
-    - cardinality
-    - constraint
-    - database
-    - fields
-    - law
-    - queries
 signatures:
-  computationUuid: "81ffc42e-4555-8ab9-8820-7f35a3030d45"
+  computationUuid: "7c28ee18-d9b7-8272-a271-b9aeff370b32"
   stages:
     - stage: path
-      stageUuid: "6a7bea09-ca28-8031-b806-5d1147b71210"
+      stageUuid: "c35dd35f-167c-8ede-a75d-8865356e7a80"
     - stage: trinity
-      stageUuid: "29f760f0-346b-8d58-afdf-066ae347cd52"
+      stageUuid: "daecab58-0284-844a-bf55-91d505d2a53e"
     - stage: boundary
-      stageUuid: "50196211-2b66-8b96-bc49-9ec517fead41"
+      stageUuid: "826d4c59-4527-89c5-ab67-e25e01229c2d"
     - stage: links
-      stageUuid: "c8a7e9ba-aa05-8fee-8a87-c77740afa2e5"
+      stageUuid: "4f5f3a09-d86c-8037-b3aa-15b94b79ff9c"
     - stage: horo
-      stageUuid: "eac2f001-ef0d-89c1-8d40-a754c60ff486"
+      stageUuid: "2b3d8e07-6230-8ce3-ae4f-38706c2bb6d7"
     - stage: seal
-      stageUuid: "374f8b71-150d-8db2-b2e8-8f4b5f266146"
+      stageUuid: "0d851fce-096b-8dc3-95be-97ef41396c99"
     - stage: uuid
-      stageUuid: "32e51611-1467-8c37-95b5-5ad3616d4d09"
+      stageUuid: "69d2aefc-08a3-81cb-807b-6a19ebf21c1b"
 version: 2
 ---
 # nullability

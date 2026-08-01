@@ -1,73 +1,35 @@
 ---
 name: mail
 description: "Use when reasoning about mail as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/mail
-coordinate: mail · 5/round · a09a1fbc
-contentUuid: "743d2268-61f2-55c6-9759-6ed18f3b196c"
-diamondUuid: "93608e07-f0ba-899d-b000-74bc5223120e"
-uuid: "a09a1fbc-f9dc-831b-a0a9-51e8e1e32d8e"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - offers
-    - prescription
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - offers
-    - prescription
-    - sti
+atomPath: "vocabulary/mail"
+coordinate: "vocabulary/mail · 8/crest · 714644f5"
+contentUuid: "ebcafb53-0527-5898-8500-f05a98e55a71"
+diamondUuid: "619d3130-4e7c-8c18-aadd-077cfb4ee449"
+uuid: "714644f5-9d9f-810e-b6ce-b56d8977dad4"
+horo: 8
 typography:
-  partition: mail
-  bondDegree: 20
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 22
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - offers
-    - prescription
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - offers
-    - prescription
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - offers
-    - prescription
-    - sti
 signatures:
-  computationUuid: "45ad058e-f899-8ba7-b7b9-e12509c1dfe9"
+  computationUuid: "741dcdd8-5069-8f58-b7cc-df5c497fe5fe"
   stages:
     - stage: path
-      stageUuid: "cb2a88ad-5642-8b46-8cae-edbc1c6c39e2"
+      stageUuid: "c96e716a-fa70-839c-83eb-6fedec8e4ecc"
     - stage: trinity
-      stageUuid: "99893c1a-31dc-8a56-81d3-b810670122a4"
+      stageUuid: "36deca99-8346-8bec-80ab-9f1e3110e455"
     - stage: boundary
-      stageUuid: "f057f3e1-9332-8769-8016-24f769abbab9"
+      stageUuid: "8563692b-1022-82fb-ae89-0a2c2183f9a7"
     - stage: links
-      stageUuid: "e177f6fe-45fd-8374-82e9-5403e939daed"
+      stageUuid: "f4967411-0ff4-88cf-9f13-b4ab75357617"
     - stage: horo
-      stageUuid: "1c2c6ef1-ce13-8a6d-8348-94d9df32be4d"
+      stageUuid: "9077569d-d130-8768-93d3-9e5c0a4bf24c"
     - stage: seal
-      stageUuid: "5d303bdd-884a-864e-b47c-80b4156f33c7"
+      stageUuid: "d27c009f-e2de-8e78-b42a-5d3516588cfe"
     - stage: uuid
-      stageUuid: "f3c11e6d-4b5a-8fc8-a1b2-973680a8ab45"
+      stageUuid: "9f26749c-9b0a-8746-9f2a-f686bcc99406"
 version: 2
 ---
 # mail

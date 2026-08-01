@@ -1,73 +1,35 @@
 ---
 name: guideline
 description: Use when reasoning about guideline — A medical guideline related to this entity.
-atomPath: vocabulary/guideline
-coordinate: guideline · 7/descent · 2f289990
-contentUuid: "c43f09ae-bbd9-576a-a2af-4ce52c00929d"
-diamondUuid: "26312735-cb8b-8e29-8953-eabd4485be1c"
-uuid: "2f289990-0706-8280-9874-dbf81fd06d3c"
-horo: 7
-bonds:
-  in:
-    - contraindication
-    - date
-    - law
-    - medical
-    - recommendation
-    - subject
-  out:
-    - contraindication
-    - date
-    - law
-    - medical
-    - recommendation
-    - subject
+atomPath: "vocabulary/guideline"
+coordinate: "vocabulary/guideline · 2/share · cfb0bd2f"
+contentUuid: "6df9d6e0-bf0e-5905-af27-bdbc053ab29a"
+diamondUuid: "b2c61c19-356b-8f48-a962-3a3c32a50861"
+uuid: "cfb0bd2f-f8d8-8194-8a36-4f69662e9a87"
+horo: 2
 typography:
-  partition: guideline
-  bondDegree: 22
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 29
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - contraindication
-    - date
-    - law
-    - medical
-    - recommendation
-    - subject
-  matrix:
-    - contraindication
-    - date
-    - law
-    - medical
-    - recommendation
-    - subject
-  backlinks:
-    - contraindication
-    - date
-    - law
-    - medical
-    - recommendation
-    - subject
 signatures:
-  computationUuid: "89728689-43de-8b85-a4a3-1887329a0466"
+  computationUuid: "cf43a408-7025-8084-a7e6-6ed1f663d924"
   stages:
     - stage: path
-      stageUuid: "8b27d0ca-f6a6-8e6c-9538-193a68cd464d"
+      stageUuid: "5a0eb423-27a5-8057-b7ca-de9d0c5b0d8e"
     - stage: trinity
-      stageUuid: "2d0a29cd-3ed0-8da4-97ea-151c202ba919"
+      stageUuid: "bc284cac-6b92-85e0-916f-97313b699acf"
     - stage: boundary
-      stageUuid: "5d65924f-2ca6-8604-ac96-8fcdf4b8c215"
+      stageUuid: "aa6741e8-62e7-824b-af79-adcf90602251"
     - stage: links
-      stageUuid: "c43549b1-b22c-850e-9b78-c06e676b9740"
+      stageUuid: "623f2a8d-271d-8f5b-98d9-e8415b2e485e"
     - stage: horo
-      stageUuid: "932f1c72-f5cd-8dd5-b228-36e557370e9c"
+      stageUuid: "b11ab66d-6e56-8467-a942-7f9bc918b2fb"
     - stage: seal
-      stageUuid: "fccb62f5-d0aa-80aa-ae94-d84baf4e0184"
+      stageUuid: "68dad567-2c6a-88f8-a9c7-2add875ffe77"
     - stage: uuid
-      stageUuid: "9292dac0-40d0-8d84-af00-9eb67168e5e3"
+      stageUuid: "33f4bcb5-1978-8239-a1c8-b6ac63cda3f5"
 version: 2
 ---
 # guideline

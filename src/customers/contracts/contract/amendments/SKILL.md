@@ -2,37 +2,14 @@
 name: amendments
 description: "Use when recording formal changes to an executed contract — IFRS-15 §20 classification (separate obligation vs. integrated modification), revenue impact amount, modification reason, approval chain, and immutable original/new terms snapshot. The contract-modification audit collection."
 atomPath: "customers/contracts/contract/amendments"
-coordinate: "customers/contracts/contract/amendments · 5/round · 3e25ff90"
-contentUuid: "0fcdf062-1347-58d8-ab06-514db30d1c74"
-diamondUuid: "6268bda3-2df6-81ed-b8ba-b56f8f192082"
-uuid: "3e25ff90-8d33-8bf6-9a80-26b2a284d49e"
-horo: 5
-bonds:
-  in:
-    - access
-    - accounting
-    - amendment
-    - contract
-    - contracts
-    - identity
-    - law
-    - proof
-    - standard
-    - transaction
-  out:
-    - access
-    - accounting
-    - amendment
-    - contracts
-    - identity
-    - law
-    - proof
-    - standard
-    - transaction
+coordinate: "customers/contracts/contract/amendments · 2/share · 67ca3dfb"
+contentUuid: "a04113c2-34a6-51c4-a266-a24b3724b012"
+diamondUuid: "8757d6ef-5a8f-8f9b-b3d0-c7e4fb145e9e"
+uuid: "67ca3dfb-c36a-899f-a8a0-a30201cde02a"
+horo: 2
 typography:
   partition: customers
   bondDegree: 28
-  neighbors: []
 standards:
   - "ASC-606"
   - "GDPR Art.6(1)(b) lawful-basis-contract-modification"
@@ -56,38 +33,8 @@ standards:
   - "US-GAAP ASC-606-10-25-13 contract-modifications"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - accounting
-    - contracts
-    - identity
-    - law
-    - proof
-    - standard
-    - transaction
-  matrix:
-    - access
-    - accounting
-    - amendment
-    - contracts
-    - identity
-    - law
-    - proof
-    - standard
-    - transaction
-  backlinks:
-    - access
-    - accounting
-    - amendment
-    - contracts
-    - identity
-    - law
-    - proof
-    - standard
-    - transaction
 signatures:
-  computationUuid: "7168393d-3523-86cd-b5a9-232844eddc15"
+  computationUuid: "7d81b79a-78ef-8892-b9fb-acc709441848"
   stages:
     - stage: path
       stageUuid: "95564245-ed1e-8974-be19-55ed0a9fdbff"
@@ -98,11 +45,11 @@ signatures:
     - stage: links
       stageUuid: "ddb1a57d-0e25-84de-8c62-e3f93976305c"
     - stage: horo
-      stageUuid: "017a1dd0-1e22-8ef8-89b3-d99c41189acf"
+      stageUuid: "4eeec16b-3063-8679-86a2-73dc0dc0e136"
     - stage: seal
       stageUuid: "a797dff8-564e-8153-b87e-1971aeb838fe"
     - stage: uuid
-      stageUuid: "d6129501-c623-88d6-bace-c57d455f554b"
+      stageUuid: "d7d6c5cb-205e-8145-a37e-d89297a3fed9"
 version: 2
 ---
 # contract-amendments

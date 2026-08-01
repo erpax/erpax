@@ -2,93 +2,21 @@
 name: anchor
 description: "Use when reasoning about the external anchor — the one drop of borrowed entropy that makes a zero-entropy content-addressed store tamper-proof. RFC-3161/eIDAS TSA or a blockchain leaf pins the chain root to a time no party can rewrite; tamper-cost is min(digest, anchor), so the anchor must be ≥ the digest or it is the weak link. Matter-twin anchor/index.ts."
 atomPath: anchor
-coordinate: "anchor · 8/crest · 0c99ff1d"
-contentUuid: "c503c8e4-6504-511e-8bff-985c4c319b30"
-diamondUuid: "9938cdf4-ff44-8380-9166-ff634ddaf4f2"
-uuid: "0c99ff1d-be3d-8c29-9381-a3dfa16bda56"
+coordinate: "anchor · 8/crest · 3831aa63"
+contentUuid: "3b54055d-ccce-5ebd-94c5-d8e9423612d7"
+diamondUuid: "108092bb-61d2-8f4b-b1f8-40c6de381e65"
+uuid: "3831aa63-e876-805e-aa8d-5414dad8e9c9"
 horo: 8
-bonds:
-  in:
-    - access
-    - angel
-    - aura
-    - barrier
-    - blockchain
-    - conservation
-    - cost
-    - deploy
-    - development
-    - entropy
-    - finality
-    - fusion
-    - history
-    - identity
-    - law
-    - merge
-    - patent
-    - power
-    - projection
-    - proof
-    - purity
-    - reality
-    - relocate
-    - research
-    - self
-    - standard
-    - statements
-    - surface
-    - surprisal
-    - sustainability
-    - tamper
-    - torus
-    - trading
-    - unavoidable
-    - uuid
-    - verification
-  out:
-    - access
-    - angel
-    - aura
-    - barrier
-    - blockchain
-    - conservation
-    - cost
-    - deploy
-    - development
-    - entropy
-    - finality
-    - fusion
-    - history
-    - identity
-    - law
-    - merge
-    - patent
-    - power
-    - projection
-    - proof
-    - purity
-    - reality
-    - relocate
-    - research
-    - self
-    - standard
-    - statements
-    - surface
-    - surprisal
-    - sustainability
-    - tamper
-    - torus
-    - trading
-    - unavoidable
-    - uuid
-    - verification
 typography:
   partition: anchor
   bondDegree: 121
-  neighbors: []
 standards:
   - "EU-537/2014"
   - "EU-910/2014"
+  - "EU-CSDDD-2024/1760"
+  - "FIPS 203 (ML-KEM, finalized 2024-08-13) — key establishment; not an anchor kind, it"
+  - "FIPS 204 (ML-DSA, finalized 2024-08-13) — the lattice hybrid `ml-dsa-fips204`, whose"
+  - "FIPS 205 (SLH-DSA, finalized 2024-08-13) — the primary root signature kind defined"
   - "NIST SP 800-57 Part 1 r5 §5.6.1 (comparable key strengths)"
   - "NIST SP 800-57 Part 1 r5 §5.6.1 (comparable key strengths)`"
   - "NIST-SP-800-57"
@@ -98,95 +26,8 @@ standards:
   - eIDAS
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - cost
-    - history
-    - identity
-    - law
-    - merge
-    - proof
-    - self
-    - standard
-    - surface
-    - torus
-    - uuid
-  matrix:
-    - access
-    - angel
-    - aura
-    - barrier
-    - blockchain
-    - conservation
-    - cost
-    - deploy
-    - development
-    - entropy
-    - finality
-    - fusion
-    - history
-    - identity
-    - law
-    - merge
-    - patent
-    - power
-    - projection
-    - proof
-    - purity
-    - reality
-    - relocate
-    - research
-    - self
-    - standard
-    - statements
-    - surface
-    - surprisal
-    - sustainability
-    - tamper
-    - torus
-    - trading
-    - unavoidable
-    - uuid
-    - verification
-  backlinks:
-    - access
-    - angel
-    - aura
-    - barrier
-    - blockchain
-    - conservation
-    - cost
-    - deploy
-    - development
-    - entropy
-    - finality
-    - fusion
-    - history
-    - identity
-    - law
-    - merge
-    - patent
-    - power
-    - projection
-    - proof
-    - purity
-    - reality
-    - relocate
-    - research
-    - self
-    - standard
-    - statements
-    - surface
-    - surprisal
-    - sustainability
-    - tamper
-    - torus
-    - trading
-    - unavoidable
-    - uuid
-    - verification
 signatures:
-  computationUuid: "f004a3fb-ed75-8bd6-bae7-c872ae5182af"
+  computationUuid: "be032a80-6158-8071-8618-385444cccee3"
   stages:
     - stage: path
       stageUuid: "a67b8c67-2555-82a4-bf4a-6851baaa82ca"
@@ -197,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "95d22f77-8c2c-8c74-804b-0d08cc27bf7c"
     - stage: horo
-      stageUuid: "e0c1b7c0-d5a8-8b8e-880a-b83dcb5850bb"
+      stageUuid: "e53e8478-c1cb-8d30-8bb6-db997e1eea0e"
     - stage: seal
       stageUuid: "05f9e206-43bb-8ebe-8bbb-46d89406277d"
     - stage: uuid
-      stageUuid: "6a196610-e284-8c23-9d89-a058dd9e342d"
+      stageUuid: "26ab4e11-ba98-86b0-a44a-f0d656f7070f"
 version: 2
 ---
 # anchor — the borrowed entropy

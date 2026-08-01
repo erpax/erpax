@@ -1,53 +1,35 @@
 ---
 name: owned
 description: Use when reasoning about owned — The date and time of obtaining the product.
-atomPath: vocabulary/owned
-coordinate: owned · 5/round · 0c57fcde
-contentUuid: "c4bb0d88-6944-5480-9aa5-e77791cc6f4a"
-diamondUuid: "b91329ea-9fb0-84e8-9f50-1df73c2264d0"
-uuid: "0c57fcde-32a8-8040-951d-5dbb0dd8e871"
-horo: 5
-bonds:
-  in:
-    - law
-    - through
-  out:
-    - law
-    - through
+atomPath: "vocabulary/owned"
+coordinate: "vocabulary/owned · 2/share · b110b722"
+contentUuid: "59f738eb-a47d-5a25-a3d7-3c3a9244bb10"
+diamondUuid: "2908774f-df53-8738-ad90-d494ebba6cf2"
+uuid: "b110b722-f164-8290-aee3-80d5deca348c"
+horo: 2
 typography:
-  partition: owned
+  partition: vocabulary
   bondDegree: 7
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - through
-  matrix:
-    - law
-    - through
-  backlinks:
-    - law
-    - through
 signatures:
-  computationUuid: "0c775528-dc18-8ee6-b174-1775f21ce284"
+  computationUuid: "1132e7fd-e47d-8e71-84b5-39ed07de2f6a"
   stages:
     - stage: path
-      stageUuid: "d6af1f8e-3677-8e32-b0c0-2464a1f3d1ce"
+      stageUuid: "8e1fe553-544f-8363-8992-9206e65feada"
     - stage: trinity
-      stageUuid: "87f340eb-d3fa-890b-8b73-0d86a0d9488a"
+      stageUuid: "088f8da7-40a7-8b87-9fa2-ee72ba50fbc5"
     - stage: boundary
-      stageUuid: "f0e98bc1-7518-85a1-a97f-d13aff8a1eb6"
+      stageUuid: "d103d27f-1df9-8b09-a4e8-3cafc8a5b52d"
     - stage: links
-      stageUuid: "609cf63f-343a-8a4a-b168-a4e77b111e28"
+      stageUuid: "72b02ff9-45aa-8b95-ab81-6299927ceccc"
     - stage: horo
-      stageUuid: "3439af88-90f9-8cc0-af84-a1ad10cd49dd"
+      stageUuid: "a7032df2-7cc7-8f29-ad61-51cdc78daf7f"
     - stage: seal
-      stageUuid: "94fbea4b-c62f-82d2-8638-c21afef23d9f"
+      stageUuid: "cc1b66e4-89ca-8137-bcef-6c0e51b16961"
     - stage: uuid
-      stageUuid: "de167309-b735-89fc-8ee1-0d887593833f"
+      stageUuid: "ae56f55c-3cf1-858b-8d30-7e583e14e7fa"
 version: 2
 ---
 # owned

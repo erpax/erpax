@@ -2,166 +2,20 @@
 name: fusion
 description: "Use when reasoning about the fusion of a dual torus — the quantum cross, where two tori (the two infinities, 1/0 the double torus) merge at the centre into one; fusing to full coverage is the infinite seal, and src/quantum/cross re-exports this as one identity."
 atomPath: "dual/torus/fusion"
-coordinate: "dual/torus/fusion · 2/share · 52a4990a"
-contentUuid: "5a2456f8-b064-596f-b429-116b28a5cb65"
-diamondUuid: "7d4777b8-e13e-8d30-9d91-1c424ef05b7b"
-uuid: "52a4990a-6001-80f0-b1ea-5613589774da"
-horo: 2
-bonds:
-  in:
-    - akashic
-    - anchor
-    - atom
-    - breath
-    - collapse
-    - cost
-    - cross
-    - development
-    - dry
-    - dust
-    - entropy
-    - forge
-    - fusion
-    - gate
-    - gravity
-    - law
-    - leftover
-    - link
-    - mass
-    - matrix
-    - merge
-    - one
-    - plasma
-    - quantum
-    - reactor
-    - reveal
-    - singularity
-    - society
-    - star
-    - tamper
-    - torus
-    - whole
-    - zeropoint
-  out:
-    - akashic
-    - anchor
-    - atom
-    - breath
-    - collapse
-    - cost
-    - cross
-    - development
-    - dry
-    - dust
-    - entropy
-    - forge
-    - fusion
-    - gate
-    - gravity
-    - law
-    - leftover
-    - link
-    - mass
-    - matrix
-    - merge
-    - one
-    - plasma
-    - quantum
-    - reactor
-    - reveal
-    - singularity
-    - society
-    - star
-    - tamper
-    - torus
-    - whole
-    - zeropoint
+coordinate: "dual/torus/fusion · 8/crest · 0a486ece"
+contentUuid: "1f3d24ca-0975-5252-822f-2f40fd84b2c6"
+diamondUuid: "f8621d54-468c-8e9d-b850-ee8227d272b7"
+uuid: "0a486ece-8631-8d46-9b8f-e39314f96ab4"
+horo: 8
 typography:
   partition: dual
   bondDegree: 113
-  neighbors: []
 standards:
   - "UBL-2.1"
   - "the double torus (1/0 the infinite seal) · content-addressed merge (RFC 9562) · zero-entropy via no duplication"
 bindings: []
-neighbors:
-  wikilink:
-    - entropy
-    - fusion
-    - law
-    - merge
-    - quantum
-    - torus
-  matrix:
-    - akashic
-    - anchor
-    - atom
-    - breath
-    - collapse
-    - cost
-    - cross
-    - development
-    - dry
-    - dust
-    - entropy
-    - forge
-    - fusion
-    - gate
-    - gravity
-    - law
-    - leftover
-    - link
-    - mass
-    - matrix
-    - merge
-    - one
-    - plasma
-    - quantum
-    - reactor
-    - reveal
-    - singularity
-    - society
-    - star
-    - tamper
-    - torus
-    - whole
-    - zeropoint
-  backlinks:
-    - akashic
-    - anchor
-    - atom
-    - breath
-    - collapse
-    - cost
-    - cross
-    - development
-    - dry
-    - dust
-    - entropy
-    - forge
-    - fusion
-    - gate
-    - gravity
-    - law
-    - leftover
-    - link
-    - mass
-    - matrix
-    - merge
-    - one
-    - plasma
-    - quantum
-    - reactor
-    - reveal
-    - singularity
-    - society
-    - star
-    - tamper
-    - torus
-    - whole
-    - zeropoint
 signatures:
-  computationUuid: "d792c748-b261-8f21-9bdb-a296588baa4a"
+  computationUuid: "4d3f4153-1318-8674-883d-3b90c36692bc"
   stages:
     - stage: path
       stageUuid: "4323b36c-dd1d-86e9-9d44-02a688669cd3"
@@ -172,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "f0c1b4ea-6cf8-8bf8-b83f-8fcb1fcd8d50"
     - stage: horo
-      stageUuid: "ba329a84-9941-89ad-b18b-2596ba112ebb"
+      stageUuid: "81885b38-a528-8de2-8b93-265614b94b84"
     - stage: seal
       stageUuid: "de8cae58-7e47-8176-aaaa-f5d721b7eee4"
     - stage: uuid
-      stageUuid: "140bf077-8077-8676-a035-3e42105d19e9"
+      stageUuid: "e90eab32-8b31-8d95-a44a-42dbee0703b8"
 version: 2
 ---
 # dual/torus/fusion — the quantum cross

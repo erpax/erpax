@@ -1,58 +1,35 @@
 ---
 name: audio
 description: Use when reasoning about audio — An embedded audio object.
-atomPath: vocabulary/audio
-coordinate: audio · 8/crest · 39b7cfd4
-contentUuid: "887f5fa8-dad9-5f16-9382-a3b49dcac530"
-diamondUuid: "69f29518-3d24-87bb-b23c-135cc5a0c172"
-uuid: "39b7cfd4-725b-88d2-a60d-51a525982ecb"
-horo: 8
-bonds:
-  in:
-    - law
-    - object
-    - snapshot
-  out:
-    - law
-    - object
-    - snapshot
+atomPath: "vocabulary/audio"
+coordinate: "vocabulary/audio · 2/share · cf5335d9"
+contentUuid: "3041b7eb-6f8a-5c0b-8931-d13f11e3f527"
+diamondUuid: "663a2ff2-dd69-801d-810b-346e4fa39e5e"
+uuid: "cf5335d9-eea0-8f25-8714-288cb2f05004"
+horo: 2
 typography:
-  partition: audio
+  partition: vocabulary
   bondDegree: 11
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - object
-    - snapshot
-  matrix:
-    - law
-    - object
-    - snapshot
-  backlinks:
-    - law
-    - object
-    - snapshot
 signatures:
-  computationUuid: "da3aed8c-49ff-8150-9d98-941b0535c1b0"
+  computationUuid: "dfc63785-3123-81fc-9bd6-141d5bf3e319"
   stages:
     - stage: path
-      stageUuid: "46b7243e-d6cf-8dfb-bc5e-ef485f426472"
+      stageUuid: "c5999713-c9f1-8822-a3aa-b074f3ac7b48"
     - stage: trinity
-      stageUuid: "e2cd2d11-f3cf-876c-b066-3074edeba631"
+      stageUuid: "2a754342-5eb9-8fdd-97c5-e2a36b03708a"
     - stage: boundary
-      stageUuid: "02a26ba5-9c33-84df-baeb-95f4f401cf60"
+      stageUuid: "9b3e15d5-9161-837e-b211-6369f88938cd"
     - stage: links
-      stageUuid: "9a618bda-43d0-828c-9ccd-3616d6ab8a27"
+      stageUuid: "6dc01c48-a8e6-8105-94b2-0f116f1b67df"
     - stage: horo
-      stageUuid: "3150bd29-f3f5-83e2-8408-d86195270fac"
+      stageUuid: "1f48301c-9318-8d44-8f07-91738606e6f1"
     - stage: seal
-      stageUuid: "7a59be5d-4a9d-8f69-88d6-f581c323c6a3"
+      stageUuid: "d1fe1027-46ef-8409-8135-f9b452e92e2b"
     - stage: uuid
-      stageUuid: "cf359bfc-c539-875a-b49b-32e3005032e9"
+      stageUuid: "940786ec-2d33-8728-9462-6ae1dab320a8"
 version: 2
 ---
 # audio

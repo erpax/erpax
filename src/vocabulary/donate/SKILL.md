@@ -1,68 +1,35 @@
 ---
 name: donate
 description: "Use when reasoning about donate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/donate
-coordinate: donate · 2/share · d3d38c09
-contentUuid: "ddac89ef-0da3-53e0-9369-4ac660ac82f3"
-diamondUuid: "74fa6832-cc38-8908-a2ca-f28817274b23"
-uuid: "d3d38c09-8909-8da8-93f6-eeb3182fa6a0"
-horo: 2
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/donate"
+coordinate: "vocabulary/donate · 4/weave · 19dba94d"
+contentUuid: "ba5e2b14-1fbd-5569-8cc9-e39451133081"
+diamondUuid: "2d68fb15-81b2-86ec-a2fd-02cfd576cba5"
+uuid: "19dba94d-b911-8b56-9ed4-d3a192bed601"
+horo: 4
 typography:
-  partition: donate
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "4229a477-cd8b-85e3-acf6-4e9fbbb87093"
+  computationUuid: "9ea14741-9b1e-8979-b9a8-c4a9e4c932a1"
   stages:
     - stage: path
-      stageUuid: "a3d0bccc-cdd8-8cde-a36e-bb74f575abe6"
+      stageUuid: "4b34bb97-c131-898c-bb73-ff9cd41ab8b1"
     - stage: trinity
-      stageUuid: "07b4a8f9-b3af-8737-a494-ed31020111ad"
+      stageUuid: "17ae9cdf-5a78-8bba-b404-5f760319379d"
     - stage: boundary
-      stageUuid: "7e21f6ce-3e72-87f6-b6a4-edb63ba32c45"
+      stageUuid: "aff75677-6176-87e2-997b-7128aadad4f6"
     - stage: links
-      stageUuid: "66e1b035-ac2e-865b-914f-73fe96612d90"
+      stageUuid: "f2426d21-9ca7-8e68-bce7-28c3380555eb"
     - stage: horo
-      stageUuid: "91dc9164-e5b5-8306-a448-465118f2e647"
+      stageUuid: "16c38d04-d49c-8b36-a464-240d0086e6c5"
     - stage: seal
-      stageUuid: "694d4720-179a-88fc-8187-3bf3a1c0f15f"
+      stageUuid: "e2ba8f69-eb05-8974-8dd1-3aaea53ff3f2"
     - stage: uuid
-      stageUuid: "92acce39-5372-8661-aa6e-da6f3564b465"
+      stageUuid: "dd793fb1-c492-8357-9b95-d42c3692d670"
 version: 2
 ---
 # donate

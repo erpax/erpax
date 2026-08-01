@@ -1,118 +1,34 @@
 ---
 name: covercrop
 description: "Use when a crop is grown to protect and build the soil rather than to harvest — cover crops / green manures: catch crops scavenging residual N, nurse crops sheltering a main crop, legumes fixing nitrogen vs grasses building biomass, then termination (mow/crimp/winterkill/incorporate) before the cash crop. The off-season twin of crop; soil capital, not sales."
-atomPath: vocabulary/covercrop
-coordinate: covercrop · 7/descent · 03399816
-contentUuid: "f591f28e-246b-546b-bbfe-65ebfe9096fc"
-diamondUuid: "e7a8f494-763f-80d7-bb0b-e02ec7a4b6b7"
-uuid: "03399816-e5af-8934-9303-37e9470006de"
+atomPath: "vocabulary/covercrop"
+coordinate: "vocabulary/covercrop · 7/descent · f7b7296d"
+contentUuid: "9aee82ab-786c-5826-8642-8907a54c75d8"
+diamondUuid: "231ee027-26f3-8726-8ed1-6c38e3d66d06"
+uuid: "f7b7296d-d789-85d7-b751-aedf122cbbee"
 horo: 7
-bonds:
-  in:
-    - agriculture
-    - balance
-    - capacity
-    - compost
-    - crop
-    - fertility
-    - harvest
-    - mulch
-    - mycorrhizae
-    - organic
-    - permaculture
-    - rotation
-    - season
-    - soil
-    - tillage
-    - yield
-  out:
-    - agriculture
-    - balance
-    - capacity
-    - compost
-    - crop
-    - fertility
-    - harvest
-    - mulch
-    - mycorrhizae
-    - organic
-    - permaculture
-    - rotation
-    - season
-    - soil
-    - tillage
-    - yield
 typography:
-  partition: covercrop
+  partition: vocabulary
   bondDegree: 53
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - balance
-    - capacity
-    - crop
-    - fertility
-    - harvest
-    - mulch
-    - rotation
-    - season
-    - soil
-    - tillage
-    - yield
-  matrix:
-    - agriculture
-    - balance
-    - capacity
-    - compost
-    - crop
-    - fertility
-    - harvest
-    - mulch
-    - mycorrhizae
-    - organic
-    - permaculture
-    - rotation
-    - season
-    - soil
-    - tillage
-    - yield
-  backlinks:
-    - agriculture
-    - balance
-    - capacity
-    - compost
-    - crop
-    - fertility
-    - harvest
-    - mulch
-    - mycorrhizae
-    - organic
-    - permaculture
-    - rotation
-    - season
-    - soil
-    - tillage
-    - yield
 signatures:
-  computationUuid: "edc1d333-0015-8ef7-93b1-ecc0075d2926"
+  computationUuid: "8a1931c8-1ddc-8478-bf5b-272553744cb6"
   stages:
     - stage: path
-      stageUuid: "9a29b1a7-d68b-89e5-9214-950c966d0d6e"
+      stageUuid: "bd6825ed-a82f-8388-9617-d66494af0fd6"
     - stage: trinity
-      stageUuid: "d8f088a0-c1d0-85f7-8fe5-35bb7f300f9f"
+      stageUuid: "bf1b15b2-7dba-82b8-a9cc-1d61a180e336"
     - stage: boundary
-      stageUuid: "02b23c5c-7bc9-8fbd-9f82-eed5829de8f6"
+      stageUuid: "4067c34c-e75f-8134-8606-4cf63809d6d2"
     - stage: links
-      stageUuid: "2b9732ec-318f-8d4d-aa9c-ff0e37e79a8f"
+      stageUuid: "f51efe68-3fb3-849d-8faf-ade90e9d7da7"
     - stage: horo
-      stageUuid: "91524985-0294-81ee-9a03-785abec63116"
+      stageUuid: "c7343612-6663-8249-88a3-5352e49706fb"
     - stage: seal
-      stageUuid: "8537dbf3-db0a-8c37-87e8-119dbcddd731"
+      stageUuid: "0f800081-9f4f-8bf9-9eaf-8eea83e61177"
     - stage: uuid
-      stageUuid: "38ce16dc-27a1-81dd-9203-f3949d3ffe8b"
+      stageUuid: "f5cf161e-a888-8af1-9fef-22cac64a7042"
 version: 2
 ---
 # covercrop — a crop grown for the soil, not the harvest

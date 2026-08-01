@@ -2,34 +2,14 @@
 name: cycles
 description: "Use when tracking or auditing the collections process for an overdue invoice — reminder→demand→legal-handover→write-off stages, ECL allowance evidence (IFRS 9 §5.5 / ASC 326-20 CECL), manual overrides and SOX §404 bad-debt evidence. The dunning-cycles collection."
 atomPath: "invoices/dunning/cycles"
-coordinate: "invoices/dunning/cycles · 7/descent · 088e98cb"
-contentUuid: "1ca01fb3-2042-5d8c-bbfb-c4c7c246c3fd"
-diamondUuid: "ddc310fc-7d77-85c3-83ca-9bf894efeeb4"
-uuid: "088e98cb-2442-843e-871f-425b1e215f24"
-horo: 7
-bonds:
-  in:
-    - accounting
-    - cycle
-    - dunning
-    - entries
-    - invoices
-    - law
-    - sla
-    - standard
-  out:
-    - accounting
-    - cycle
-    - dunning
-    - entries
-    - invoices
-    - law
-    - sla
-    - standard
+coordinate: "invoices/dunning/cycles · 5/round · ba3191d0"
+contentUuid: "7c32167a-ab29-5164-b4e8-b1293a40ae59"
+diamondUuid: "86b52395-db28-89c6-88d8-cccb869f7f27"
+uuid: "ba3191d0-3e62-8275-b243-70e3fcfb2c75"
+horo: 5
 typography:
   partition: invoices
   bondDegree: 25
-  neighbors: []
 standards:
   - "GDPR Art.6(1)(f) lawful-basis-legitimate-interest collections"
   - "IFRS IFRS-9 §5.5 expected-credit-loss simplified-approach"
@@ -42,33 +22,8 @@ standards:
   - "US-GAAP ASC-326-20 cecl-credit-losses"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - entries
-    - invoices
-    - law
-    - standard
-  matrix:
-    - accounting
-    - cycle
-    - dunning
-    - entries
-    - invoices
-    - law
-    - sla
-    - standard
-  backlinks:
-    - accounting
-    - cycle
-    - dunning
-    - entries
-    - invoices
-    - law
-    - sla
-    - standard
 signatures:
-  computationUuid: "6595e8f3-86be-8336-b92f-d07715fbc4f1"
+  computationUuid: "339c4389-f207-8737-baa8-9e2e7dd00fde"
   stages:
     - stage: path
       stageUuid: "a80297b2-61c1-8809-9076-b2bf8d9eb151"
@@ -79,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "482c0a9e-c55e-8378-9917-25d183a6850c"
     - stage: horo
-      stageUuid: "eb57f101-6ca9-80b3-850c-9d812a0fe5d6"
+      stageUuid: "2c1e35d5-570a-800c-8d2a-096d63d26a70"
     - stage: seal
       stageUuid: "68c0c8c6-a9ad-858d-9757-f84cd4e2aec0"
     - stage: uuid
-      stageUuid: "2b590c65-ebf2-81b4-9b1e-dcd50f569a98"
+      stageUuid: "1b211664-d7df-8bf6-83df-04d08b0afca4"
 version: 2
 ---
 # dunning-cycles

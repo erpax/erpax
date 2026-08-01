@@ -1,122 +1,34 @@
 ---
 name: bindings
-description: "Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindings — D1, R2, KV, Durable Objects, Queues, Workers AI, Vectorize, Analytics Engine, Browser, service self-reference, Hyperdrive, cron — or when a binding \\\"works in config but fails at runtime\\\" (e.g. \\\"no such Durable Object class is exported from the worker\\\"). The map of binding ↔ capability ↔ cost lever ↔ gap for the self-managed edge app."
-atomPath: vocabulary/bindings
-coordinate: bindings · 4/weave · fd270977
-contentUuid: "8a0617e5-a4a8-5962-9b0c-787fe9ae0c30"
-diamondUuid: "271cc41f-9f95-89e3-b6a5-9b5dc01520fc"
-uuid: "fd270977-05e0-8c4b-aabe-c0222d8158fc"
-horo: 4
-bonds:
-  in:
-    - binding
-    - bindings
-    - cache
-    - config
-    - currency
-    - deploy
-    - dev
-    - harden
-    - identity
-    - jobs
-    - law
-    - manufacturing
-    - mcp
-    - plugins
-    - search
-    - signal
-    - sufficient
-    - supto
-  out:
-    - binding
-    - bindings
-    - cache
-    - config
-    - currency
-    - deploy
-    - dev
-    - harden
-    - identity
-    - jobs
-    - law
-    - manufacturing
-    - mcp
-    - plugins
-    - search
-    - signal
-    - sufficient
-    - supto
+description: "Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindings — D1, R2, KV, Durable Objects, Queues, Workers AI, Vectorize, Analytics Engine, Browser, service self-reference, Hyperdrive, cron — or when a binding \\\\\\\"works in config but fails at runtime\\\\\\\" (e.g. \\\\\\\"no such Durable Object class is exported from the worker\\\\\\\"). The map of binding ↔ capability ↔ cost lever ↔ gap for the self-managed edge app."
+atomPath: "vocabulary/bindings"
+coordinate: "vocabulary/bindings · 2/share · b5e963ee"
+contentUuid: "bbaaa022-1be0-5352-801f-8496d2001e0c"
+diamondUuid: "be5c5193-9a91-8ef6-9e35-4d4ee31ba209"
+uuid: "b5e963ee-a2df-8d42-b9bc-02e01e074640"
+horo: 2
 typography:
-  partition: bindings
-  bondDegree: 77
-  neighbors:
-    - analytics
+  partition: vocabulary
+  bondDegree: 91
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - config
-    - deploy
-    - harden
-    - identity
-    - jobs
-    - law
-    - plugins
-  matrix:
-    - binding
-    - bindings
-    - cache
-    - config
-    - currency
-    - deploy
-    - dev
-    - harden
-    - identity
-    - jobs
-    - law
-    - manufacturing
-    - mcp
-    - plugins
-    - search
-    - signal
-    - sufficient
-    - supto
-  backlinks:
-    - binding
-    - bindings
-    - cache
-    - config
-    - currency
-    - deploy
-    - dev
-    - harden
-    - identity
-    - jobs
-    - law
-    - manufacturing
-    - mcp
-    - plugins
-    - search
-    - signal
-    - sufficient
-    - supto
 signatures:
-  computationUuid: "cf994c6a-a425-8f37-8c27-d5025a889ea4"
+  computationUuid: "adeaecd8-0626-8c63-a6c7-20324c617eae"
   stages:
     - stage: path
-      stageUuid: "9071a170-1a64-8d34-9de5-91310579dc04"
+      stageUuid: "73db70eb-5db8-86db-b860-1416a1766a2e"
     - stage: trinity
-      stageUuid: "6726ad8e-4810-8c30-b23e-8de8ac15e58c"
+      stageUuid: "de10b2cd-6697-8657-991e-6cd57cecc126"
     - stage: boundary
-      stageUuid: "2d1a480b-eb65-80eb-b8a1-28786ef0fea0"
+      stageUuid: "c1d5b265-d5e9-8fc2-ace4-02e45711a03f"
     - stage: links
-      stageUuid: "82e1ef67-2712-81e3-9e9c-41f185b630f1"
+      stageUuid: "5943bce6-bff0-831b-b05d-4d2f3b347568"
     - stage: horo
-      stageUuid: "a302eb15-c983-8602-a167-d7886b44d77c"
+      stageUuid: "9f33dc35-3af7-82bb-ae7d-f9c9b20b70e9"
     - stage: seal
-      stageUuid: "4715aa9c-d40d-8912-972c-99523bd70596"
+      stageUuid: "7c1cdb57-fb42-84cb-b3f6-f44a48312c4d"
     - stage: uuid
-      stageUuid: "70774aa9-8146-8c24-8e19-585c0679c0f2"
+      stageUuid: "e7812f5c-7f8a-8259-b569-03602fa86832"
 version: 2
 ---
 # bindings — erpax fully self-managed on Cloudflare (every binding is a cost lever)

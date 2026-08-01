@@ -1,67 +1,35 @@
 ---
 name: head
 description: "Use when reasoning about head as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/head
-coordinate: head · 5/round · 195cdbeb
-contentUuid: "a67e790b-82de-5153-bed4-3f2f2c55459e"
-diamondUuid: "81875663-2587-8dd9-8444-1031fa6c129a"
-uuid: "195cdbeb-7760-81bf-af14-cc23e49489b2"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - head
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - head
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/head"
+coordinate: "vocabulary/head · 2/share · af82cd57"
+contentUuid: "50f010b7-418a-5d6f-8758-249a7947ca5f"
+diamondUuid: "d2b84378-bba4-8bb4-8177-3da5ffd82bb6"
+uuid: "af82cd57-50c6-80d2-a84a-fd5c108d4626"
+horo: 2
 typography:
-  partition: head
+  partition: vocabulary
   bondDegree: 21
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - head
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - head
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "68144f5d-34e0-8fb5-9fc3-6db7525acc2f"
+  computationUuid: "058aaaaf-afae-8ccf-9282-33b31d871c34"
   stages:
     - stage: path
-      stageUuid: "886e9ab4-bb66-81d0-a9b9-ceeaea643a79"
+      stageUuid: "30fe61b6-30e6-8113-a952-2c2e946331ce"
     - stage: trinity
-      stageUuid: "7bbded81-34ff-8749-a1c0-f4957948fc37"
+      stageUuid: "eb525dcd-5af9-825f-b652-c3a349fd6ab8"
     - stage: boundary
-      stageUuid: "3720d2cb-4c1a-8101-bc30-ac1b3efc43ac"
+      stageUuid: "4f07adfa-83ca-84fa-b316-bf6062cfee55"
     - stage: links
-      stageUuid: "efc7d901-b007-89ba-b88f-4afd0f5cf00f"
+      stageUuid: "fb460e0c-1590-8999-be60-954cbb57722f"
     - stage: horo
-      stageUuid: "8ac44286-2415-830c-bf11-12f93f37e8cd"
+      stageUuid: "0a07b420-ccfc-8b92-b172-2daf64f4a2e3"
     - stage: seal
-      stageUuid: "49876c6f-5a34-8e31-a4f2-bbccd4d27bd3"
+      stageUuid: "c7996b33-eb90-81ab-b8b0-68d487b6af1c"
     - stage: uuid
-      stageUuid: "a9ff3bed-d1da-835b-9165-59dc3fbb3335"
+      stageUuid: "b33ef325-26f0-8c13-bb1c-69d91e386822"
 version: 2
 ---
 # head

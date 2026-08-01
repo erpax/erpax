@@ -2,73 +2,15 @@
 name: corruption
 description: "Use when detecting internal-control invariants — content-uuid immutability, segregation of duties, double-entry balance, or reversals-only history; the four architectural impossibilities that make financial corruption structurally detectable."
 atomPath: "anti/corruption"
-coordinate: "anti/corruption · 2/share · ce5400d5"
-contentUuid: "a899abbf-3675-587e-b34e-027e4fba0f10"
-diamondUuid: "81829aec-6506-8ac8-818e-80cd21f50bb5"
-uuid: "ce5400d5-ba2b-81a0-a944-c1b9adce2d23"
-horo: 2
-bonds:
-  in:
-    - access
-    - accounting
-    - balance
-    - consistency
-    - constitution
-    - duality
-    - event
-    - fractal
-    - governance
-    - holographic
-    - hooks
-    - identity
-    - law
-    - legislation
-    - merge
-    - notification
-    - party
-    - perspective
-    - reverse
-    - separation
-    - sequence
-    - standard
-    - supto
-    - voting
-  out:
-    - access
-    - accounting
-    - balance
-    - consistency
-    - constitution
-    - duality
-    - event
-    - fractal
-    - governance
-    - holographic
-    - hooks
-    - identity
-    - law
-    - legislation
-    - merge
-    - notification
-    - party
-    - perspective
-    - reverse
-    - separation
-    - sequence
-    - standard
-    - supto
-    - voting
+coordinate: "anti/corruption · 4/weave · 84d2a624"
+contentUuid: "333a63f1-d754-55a2-8299-e70789e33044"
+diamondUuid: "a71a64d0-1275-80b1-868d-998bd8bc568b"
+uuid: "84d2a624-22a4-8562-9166-1bdd9206ffa1"
+horo: 4
 typography:
   partition: anti
-  bondDegree: 72
-  neighbors: []
+  bondDegree: 64
 standards:
-  - "EU-2022/1925"
-  - "EU-2022/2065"
-  - "EU-2022/2554"
-  - "EU-2022/2555"
-  - "EU-2022/868"
-  - "ILO-C001"
   - "ISO-19011"
   - "ISO-19011`"
   - "ISO-27001"
@@ -76,75 +18,8 @@ standards:
   - "ISO/IEC-27001:2022`"
   - "SOX §404 segregation-of-duties internal-controls"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - accounting
-    - balance
-    - duality
-    - event
-    - fractal
-    - holographic
-    - hooks
-    - identity
-    - law
-    - merge
-    - reverse
-    - sequence
-    - standard
-    - supto
-  matrix:
-    - access
-    - accounting
-    - balance
-    - consistency
-    - constitution
-    - duality
-    - event
-    - fractal
-    - governance
-    - holographic
-    - hooks
-    - identity
-    - law
-    - legislation
-    - merge
-    - notification
-    - party
-    - perspective
-    - reverse
-    - separation
-    - sequence
-    - standard
-    - supto
-    - voting
-  backlinks:
-    - access
-    - accounting
-    - balance
-    - consistency
-    - constitution
-    - duality
-    - event
-    - fractal
-    - governance
-    - holographic
-    - hooks
-    - identity
-    - law
-    - legislation
-    - merge
-    - notification
-    - party
-    - perspective
-    - reverse
-    - separation
-    - sequence
-    - standard
-    - supto
-    - voting
 signatures:
-  computationUuid: "0a7cb259-f246-8636-888f-5216e8b68aba"
+  computationUuid: "51cc99da-d848-8e15-9dd4-f24877fda47e"
   stages:
     - stage: path
       stageUuid: "29d53fec-2df7-8ef3-b27b-76fdbd140708"
@@ -155,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "95c594ce-539f-84a9-8062-deea5da92d05"
     - stage: horo
-      stageUuid: "28b4254e-99f0-8f7b-b160-91c626a54632"
+      stageUuid: "18d6bdeb-bc4c-8ed1-b996-d5a92aae05d3"
     - stage: seal
       stageUuid: "e21c760a-79f7-8a0b-baad-c61cfdef37a5"
     - stage: uuid
-      stageUuid: "0480f6ed-ec4b-8906-893d-6e7304525cc6"
+      stageUuid: "f2380f0a-7459-8adf-afa1-0570438c1aa7"
 version: 2
 ---
 # anti-corruption — corruption foreclosed by construction, not policed by policy

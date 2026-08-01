@@ -1,73 +1,35 @@
 ---
 name: equipment
 description: "Use when reasoning about equipment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/equipment
-coordinate: equipment · 8/crest · 9ce4d190
-contentUuid: "ae1cb2a9-27cc-5d4e-a5b0-e9a7005c4148"
-diamondUuid: "83718f15-7e09-8038-a280-e0dfb9ba4c0a"
-uuid: "9ce4d190-e46b-8763-be1a-834459244e2f"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - office
-    - sti
-    - store
-  out:
-    - collapse
-    - law
-    - merge
-    - office
-    - sti
-    - store
+atomPath: "vocabulary/equipment"
+coordinate: "vocabulary/equipment · 1/base · afd73ce7"
+contentUuid: "b2a2c533-89c0-5d00-9d2c-c98028c0798a"
+diamondUuid: "63ec026c-385b-84a4-98a0-d539bf78c957"
+uuid: "afd73ce7-02eb-891f-9a39-0d3a4a33529f"
+horo: 1
 typography:
-  partition: equipment
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - office
-    - sti
-    - store
-  matrix:
-    - collapse
-    - law
-    - merge
-    - office
-    - sti
-    - store
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - office
-    - sti
-    - store
 signatures:
-  computationUuid: "fbb0d931-7563-87c4-bb22-eeca4d07e26f"
+  computationUuid: "6e5f9efb-c51c-8803-888e-3584ce4ef144"
   stages:
     - stage: path
-      stageUuid: "299b1e0d-53c9-886a-82c1-b3a8fa59de49"
+      stageUuid: "1113bb41-b0d1-88c8-b7b2-cb7816186073"
     - stage: trinity
-      stageUuid: "bc6bf34e-1960-8d3f-827e-9d8624add66a"
+      stageUuid: "1aced889-e9bd-85a0-9a06-5890fd7d8d00"
     - stage: boundary
-      stageUuid: "7a659754-993b-8046-b3e0-363981652d2f"
+      stageUuid: "83f496c5-4623-860e-8b0a-1cba9a07d506"
     - stage: links
-      stageUuid: "69dc592b-b302-8d5a-a0bc-f201d3df57ac"
+      stageUuid: "495413b4-7c79-88ff-b42f-c2bde583a052"
     - stage: horo
-      stageUuid: "0e3314e7-4940-8cd2-a2b6-cfc9044941f4"
+      stageUuid: "b8106a93-5bb5-8abd-8467-b44f49f17c46"
     - stage: seal
-      stageUuid: "4a7d12f5-8274-8a8f-bc97-eba74a1679b2"
+      stageUuid: "f22da7e0-1025-8acc-9e4d-f7993784b34d"
     - stage: uuid
-      stageUuid: "f2b4157f-d4a0-8b7b-bcc6-3a8cb77c2a3e"
+      stageUuid: "176b6c88-6bf0-8c06-9145-63c8abd402b6"
 version: 2
 ---
 # equipment

@@ -1,63 +1,35 @@
 ---
 name: cropped
 description: "Use when reasoning about cropped as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/cropped
-coordinate: cropped · 7/descent · 0d619cc0
-contentUuid: "c156c7be-b010-54aa-943e-7297a7c16453"
-diamondUuid: "ef2bd03f-8e9c-84cb-8a6b-bb65bb17ab6a"
-uuid: "0d619cc0-9878-882a-8813-b4edf443797e"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/cropped"
+coordinate: "vocabulary/cropped · 5/round · 7af1b628"
+contentUuid: "9a2aabf9-6e50-59e7-8dbe-fa6d498bb29c"
+diamondUuid: "0f53a630-61e7-86ba-b06a-dcef2681c615"
+uuid: "7af1b628-ee08-875c-9161-54bc24fde84e"
+horo: 5
 typography:
-  partition: cropped
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "238ed609-c543-8b60-b135-62f3714cfa33"
+  computationUuid: "2ba12673-5877-8ad9-9ff6-c8a6e6a1fabb"
   stages:
     - stage: path
-      stageUuid: "6baa13ad-7a14-8eaa-9605-0d792f961193"
+      stageUuid: "f0d2fe71-3309-821b-be38-3613e750ff1b"
     - stage: trinity
-      stageUuid: "f460d471-32e5-8488-8461-bdae90f32810"
+      stageUuid: "eee210fe-d0a2-8bbd-bc7e-c0eed0415bb8"
     - stage: boundary
-      stageUuid: "752c40be-ac4e-8d85-ac63-3b9e41bc2723"
+      stageUuid: "a1af0616-bf13-8a23-99a2-bc63628e5fe4"
     - stage: links
-      stageUuid: "c10e83a7-f763-8c4a-a6ec-3203c9dc4605"
+      stageUuid: "b11c5f22-f15c-82f0-9fea-35d144ba7fe9"
     - stage: horo
-      stageUuid: "35e58f50-e084-8b0b-90bb-204202a710ca"
+      stageUuid: "812c609b-a961-8fc5-ab47-953e590fe02f"
     - stage: seal
-      stageUuid: "8fcb3633-e739-8c4d-b2b9-310b3e61a3af"
+      stageUuid: "bdac2bdb-db49-845c-bb65-9d60b167cb8b"
     - stage: uuid
-      stageUuid: "31008e0c-53db-8b1b-9954-050e78f40a59"
+      stageUuid: "5d9ea36e-613a-84a3-b020-b3a0c9d3920a"
 version: 2
 ---
 # cropped

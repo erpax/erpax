@@ -1,63 +1,35 @@
 ---
 name: designation
 description: "Use when reasoning about designation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/designation
-coordinate: designation · 2/share · 426602fb
-contentUuid: "8e8a50f4-461c-5526-aad6-92d004bae4e8"
-diamondUuid: "5da099f8-efcb-8c5e-aa6d-7ed504b9033a"
-uuid: "426602fb-f8e3-8196-b2f2-1f25e29123aa"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/designation"
+coordinate: "vocabulary/designation · 5/round · cb996c05"
+contentUuid: "a7133b35-a13c-5340-b7e1-accd2d1f5f59"
+diamondUuid: "d346a2a6-fbb2-8d45-bb60-1672d504a73b"
+uuid: "cb996c05-0573-8448-948e-5eae64b8e5df"
+horo: 5
 typography:
-  partition: designation
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "d7a537bc-f3fe-8cc5-8e31-a1bde4b99b56"
+  computationUuid: "db8bd6be-4625-8351-84ec-7970a2c69531"
   stages:
     - stage: path
-      stageUuid: "ebee80f0-c743-8b0c-b4fb-46c750a09593"
+      stageUuid: "a07d9b27-2f5a-8f0f-b04d-4c5a01524462"
     - stage: trinity
-      stageUuid: "f5c35681-ef5e-865f-8672-b4d8c86a2c1c"
+      stageUuid: "35e371d2-0f3d-8db9-95a9-41f32f0bcde9"
     - stage: boundary
-      stageUuid: "ec24a6e3-7f07-8734-a017-a4bc9d04b066"
+      stageUuid: "661af75b-8c2f-816d-83fe-daf346acb1fc"
     - stage: links
-      stageUuid: "cf105579-290d-8d01-98ab-9822a18ef093"
+      stageUuid: "6c207676-0c58-83ec-aa3b-54ee9624c574"
     - stage: horo
-      stageUuid: "6477256d-786f-8efd-b2bf-f9354642983c"
+      stageUuid: "84ab1582-7a17-8cbf-9069-cc07de1d3f84"
     - stage: seal
-      stageUuid: "5962a7a2-51da-87a1-87e2-ad5536502d41"
+      stageUuid: "c862120e-3482-8412-a927-c9ae39873e59"
     - stage: uuid
-      stageUuid: "c59531ff-aa89-8dd7-a880-9cd9ca9bf0eb"
+      stageUuid: "515a5c66-09aa-8e67-b148-f1d296491b82"
 version: 2
 ---
 # designation

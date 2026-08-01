@@ -1,68 +1,35 @@
 ---
 name: gym
 description: "Use when reasoning about gym as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/gym
-coordinate: gym · 7/descent · 27157b92
-contentUuid: "ce1a0d74-d207-5d00-8601-6d1b56b0df2a"
-diamondUuid: "44cfecc9-f73a-87bf-bb7f-d9fbc2c69bec"
-uuid: "27157b92-0aa1-8a78-90e3-bcaf287abb11"
+atomPath: "vocabulary/gym"
+coordinate: "vocabulary/gym · 7/descent · 26745a5b"
+contentUuid: "cded3b12-f95c-5d90-b825-69c9efb8da9a"
+diamondUuid: "04e26639-efdf-88c6-8938-6239dd96d481"
+uuid: "26745a5b-3b05-8aa5-871c-4c82a20d5e44"
 horo: 7
-bonds:
-  in:
-    - collapse
-    - exercise
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - exercise
-    - law
-    - merge
-    - sti
 typography:
-  partition: gym
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - exercise
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - exercise
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - exercise
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "6db949a9-c2e2-87e0-be64-5c9defc42965"
+  computationUuid: "5fc361be-695c-8180-930e-d38caa320d33"
   stages:
     - stage: path
-      stageUuid: "cff60f2b-3779-800a-95ad-77a17d6f319f"
+      stageUuid: "f679a68d-2db8-88a5-ab4e-322bcf987538"
     - stage: trinity
-      stageUuid: "6f7efc73-929d-879c-9a24-bad0ca7e5285"
+      stageUuid: "1a2baa5d-0352-8257-92db-cf10c2aed920"
     - stage: boundary
-      stageUuid: "5887a4bb-ae41-8adb-9c12-176074570739"
+      stageUuid: "cea0fe4a-22a4-842a-9d0f-522b4687b7fe"
     - stage: links
-      stageUuid: "eb1bbafb-b34f-8836-89ba-51ef1c274a24"
+      stageUuid: "07c7eb99-a523-8aed-a907-a267a776ff62"
     - stage: horo
-      stageUuid: "0ca560eb-952a-80f3-828c-b4f85af9f098"
+      stageUuid: "42d78d1d-bcef-8c31-93cd-52a0fb7a51b4"
     - stage: seal
-      stageUuid: "42d6bf42-6d59-831c-a44b-e664c9acd2cc"
+      stageUuid: "02f1b11c-8588-88a2-bfec-4f99467a723d"
     - stage: uuid
-      stageUuid: "be3779ef-b82c-887a-b114-ad98a647461a"
+      stageUuid: "a1074fb4-6c63-8df6-b363-be303e25120c"
 version: 2
 ---
 # gym

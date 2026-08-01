@@ -1,201 +1,35 @@
 ---
 name: location
 description: Use when reasoning about location — A sub property of location. The original location of the object or the agent before the action.
-atomPath: vocabulary/location
-coordinate: location · 7/descent · c9df9c4f
-contentUuid: "dc748743-e9c5-5119-9305-2690286e7e21"
-diamondUuid: "4fe988b2-6791-8f21-8909-b3049b4069bb"
-uuid: "c9df9c4f-126b-8d10-8f58-060465f2be59"
+atomPath: "vocabulary/location"
+coordinate: "vocabulary/location · 7/descent · 3a2d1316"
+contentUuid: "caafbaeb-7cbe-55ab-8057-500c1cd7badc"
+diamondUuid: "3b23cac1-5a74-8b7d-92c5-9fe695a9e715"
+uuid: "3a2d1316-d6c8-85bd-8f1a-be3f9fa70260"
 horo: 7
-bonds:
-  in:
-    - activity
-    - announcement
-    - applicable
-    - applicant
-    - body
-    - content
-    - created
-    - display
-    - dropoff
-    - feature
-    - founding
-    - game
-    - global
-    - home
-    - item
-    - job
-    - landmark
-    - law
-    - located
-    - number
-    - occupation
-    - pickup
-    - requirements
-    - service
-    - space
-    - specification
-    - sports
-    - study
-    - subcellular
-    - type
-    - virtual
-    - work
-  out:
-    - activity
-    - announcement
-    - applicable
-    - applicant
-    - body
-    - content
-    - created
-    - display
-    - dropoff
-    - feature
-    - founding
-    - game
-    - global
-    - home
-    - item
-    - job
-    - landmark
-    - law
-    - located
-    - number
-    - occupation
-    - pickup
-    - requirements
-    - service
-    - space
-    - specification
-    - sports
-    - study
-    - subcellular
-    - type
-    - virtual
-    - work
 typography:
-  partition: location
-  bondDegree: 120
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 121
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - activity
-    - announcement
-    - applicable
-    - applicant
-    - body
-    - content
-    - created
-    - display
-    - dropoff
-    - feature
-    - founding
-    - game
-    - global
-    - home
-    - item
-    - job
-    - law
-    - located
-    - number
-    - occupation
-    - pickup
-    - requirements
-    - service
-    - specification
-    - sports
-    - study
-    - subcellular
-    - type
-    - virtual
-    - work
-  matrix:
-    - activity
-    - announcement
-    - applicable
-    - applicant
-    - body
-    - content
-    - created
-    - display
-    - dropoff
-    - feature
-    - founding
-    - game
-    - global
-    - home
-    - item
-    - job
-    - landmark
-    - law
-    - located
-    - number
-    - occupation
-    - pickup
-    - requirements
-    - service
-    - space
-    - specification
-    - sports
-    - study
-    - subcellular
-    - type
-    - virtual
-    - work
-  backlinks:
-    - activity
-    - announcement
-    - applicable
-    - applicant
-    - body
-    - content
-    - created
-    - display
-    - dropoff
-    - feature
-    - founding
-    - game
-    - global
-    - home
-    - item
-    - job
-    - landmark
-    - law
-    - located
-    - number
-    - occupation
-    - pickup
-    - requirements
-    - service
-    - space
-    - specification
-    - sports
-    - study
-    - subcellular
-    - type
-    - virtual
-    - work
 signatures:
-  computationUuid: "f7f40ff4-ee5d-8b67-91e3-53099e8a0054"
+  computationUuid: "82cc660f-e65a-8370-9d81-3607083d4a13"
   stages:
     - stage: path
-      stageUuid: "d7d7aae8-8cb2-8fcc-a564-2a6bd553d04f"
+      stageUuid: "e6693567-a4de-81e7-9b7a-7dbb1e5fa9b5"
     - stage: trinity
-      stageUuid: "b06cb43f-8555-864d-8af0-55a2a960b7f3"
+      stageUuid: "ee95d332-045d-80d8-96a9-95a354941994"
     - stage: boundary
-      stageUuid: "f22e0a3c-d1d9-85c0-91b3-2ef3cb6decf1"
+      stageUuid: "071d4a90-c951-8240-8db6-1b408756c3bf"
     - stage: links
-      stageUuid: "c73cb080-ac36-82cb-9a43-4ad451297b4e"
+      stageUuid: "0f5a491d-6d64-852f-b3ab-d400d78faf07"
     - stage: horo
-      stageUuid: "bbad49b1-acec-80db-9950-44d250cc5d67"
+      stageUuid: "cb4847d3-628c-8572-83b5-1d1e74c68eb7"
     - stage: seal
-      stageUuid: "faf720a3-0f35-8ad7-85c6-bdb8c126e05e"
+      stageUuid: "d16e7548-c3d4-8bef-bacc-021aa6d111bd"
     - stage: uuid
-      stageUuid: "06e75f87-1e31-81d6-a361-8a1352ab3f23"
+      stageUuid: "a14c9fa4-4e27-83be-aa8a-2431fd450dfa"
 version: 2
 ---
 # location

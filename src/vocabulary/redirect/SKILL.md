@@ -1,62 +1,34 @@
 ---
 name: redirect
 description: Use when modelling one redirect — the singular model of the redirects collection (the plural store); a rule that forwards one address to another.
-atomPath: vocabulary/redirect
-coordinate: redirect · 4/weave · 9fa0b847
-contentUuid: "03e204c3-71b9-5eb6-a799-0d83bc552e61"
-diamondUuid: "7e782519-62a3-8ba8-810e-d6367fa4ab4e"
-uuid: "9fa0b847-a4f8-8a2e-8d8b-e43e28095950"
-horo: 4
-bonds:
-  in:
-    - balance
-    - law
-    - redirects
-    - url
-  out:
-    - balance
-    - law
-    - redirects
-    - url
+atomPath: "vocabulary/redirect"
+coordinate: "vocabulary/redirect · 1/base · cfe07901"
+contentUuid: "e7e1ff9a-44c4-5569-bf54-8c779ce83b30"
+diamondUuid: "635cfef3-c8c7-8b7b-96ac-70b25f8c0cf5"
+uuid: "cfe07901-7ca1-8b05-8128-ddaa6ff0e0e5"
+horo: 1
 typography:
-  partition: redirect
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - law
-    - redirects
-    - url
-  matrix:
-    - balance
-    - law
-    - redirects
-    - url
-  backlinks:
-    - balance
-    - law
-    - redirects
-    - url
 signatures:
-  computationUuid: "dce8e1e2-a080-8736-bee9-4ea1f1d70006"
+  computationUuid: "b68e1c1a-9b1f-8d36-bd9f-bd76d9f46004"
   stages:
     - stage: path
-      stageUuid: "9586b685-7f39-8c00-87d3-601d638c1f4c"
+      stageUuid: "88e0cc97-f57b-835d-a424-a62d86dd4d9b"
     - stage: trinity
-      stageUuid: "a06419d4-207b-852c-92f6-7a3374e2ca41"
+      stageUuid: "f2456342-38c2-8bfa-b74e-69ee7d38c248"
     - stage: boundary
-      stageUuid: "41960c6f-4f8a-8426-af42-f8b57a6ea366"
+      stageUuid: "bfc9d014-0dd6-865c-95bb-af0da48c6488"
     - stage: links
-      stageUuid: "8213248c-03f8-8c6c-ae6c-4cfe1d2a08f8"
+      stageUuid: "bfe6b34b-781d-81c8-86ae-ed79bf45e353"
     - stage: horo
-      stageUuid: "5673d45c-2ece-80a4-a292-1252f4bed1e2"
+      stageUuid: "21f219e4-c1b1-8218-afc3-1b7daa478d88"
     - stage: seal
-      stageUuid: "1a47c226-c5fd-89c0-b346-240a61076839"
+      stageUuid: "92afb84c-3807-832c-9ff1-97632598c76a"
     - stage: uuid
-      stageUuid: "071b23e9-33b3-8782-a977-c7ceb366dfd0"
+      stageUuid: "4acc10a4-55f6-889c-b3a4-60029f8a6f56"
 version: 2
 ---
 # redirect — the model of one [[redirects]] row

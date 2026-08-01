@@ -2,207 +2,24 @@
 name: party
 description: "Use when one entity is referenced under many roles (seller/buyer/agent/supplier/consignee/carrier/sender/receiver/authorized-by) OR when computing the counterparty side of a financial document — aging open balances into day-buckets (A/R and A/P share one algorithm) or validating a status-lifecycle transition; one party seen through infinite roles, receivable and payable seen from two sides."
 atomPath: party
-coordinate: party · 8/crest · 3a6be360
-contentUuid: "b2e0cbb3-258d-5d26-9a3a-d13fb707fe65"
-diamondUuid: "ce2fdaca-f9b9-89cd-8cfd-db2103a85359"
-uuid: "3a6be360-d2e4-8b2b-b792-fe5536f08c43"
-horo: 8
-bonds:
-  in:
-    - accounting
-    - accounts
-    - akashic
-    - allocations
-    - attestations
-    - balance
-    - calculations
-    - certification
-    - checks
-    - commerce
-    - conflict
-    - corruption
-    - customers
-    - dimension
-    - duality
-    - events
-    - fields
-    - flow
-    - fractal
-    - horo
-    - identity
-    - invoices
-    - law
-    - matter
-    - measurements
-    - merge
-    - orders
-    - party
-    - plugins
-    - political
-    - runs
-    - sequence
-    - size
-    - society
-    - standard
-    - tags
-    - tax
-    - transaction
-    - transactions
-    - vendors
-  out:
-    - accounting
-    - accounts
-    - akashic
-    - allocations
-    - attestations
-    - balance
-    - calculations
-    - certification
-    - checks
-    - commerce
-    - conflict
-    - corruption
-    - customers
-    - dimension
-    - duality
-    - events
-    - fields
-    - flow
-    - fractal
-    - horo
-    - identity
-    - invoices
-    - law
-    - matter
-    - measurements
-    - merge
-    - orders
-    - party
-    - plugins
-    - political
-    - runs
-    - sequence
-    - size
-    - society
-    - standard
-    - tags
-    - tax
-    - transaction
-    - transactions
-    - vendors
+coordinate: "party · 1/base · 8e2d09cd"
+contentUuid: "89327d99-5b80-56bb-9e16-1b4211cf1b74"
+diamondUuid: "9f470b65-e66d-8b40-9592-908cfc0d725c"
+uuid: "8e2d09cd-3f61-8323-a51f-b58039e73898"
+horo: 1
 typography:
   partition: party
-  bondDegree: 122
-  neighbors: []
-standards: []
+  bondDegree: 125
+standards:
+  - "EN-16931`"
+  - "ISO-19011`"
+  - "ISO-27002"
+  - "ISO-8601-1`"
+  - "ISO/IEC-27002:2022"
+  - "ISO/IEC-27002:2022`"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - akashic
-    - balance
-    - commerce
-    - corruption
-    - customers
-    - duality
-    - fields
-    - flow
-    - fractal
-    - horo
-    - identity
-    - law
-    - merge
-    - party
-    - plugins
-    - sequence
-    - society
-    - standard
-    - tags
-    - vendors
-  matrix:
-    - accounting
-    - accounts
-    - akashic
-    - allocations
-    - attestations
-    - balance
-    - calculations
-    - certification
-    - checks
-    - commerce
-    - conflict
-    - corruption
-    - customers
-    - dimension
-    - duality
-    - events
-    - fields
-    - flow
-    - fractal
-    - horo
-    - identity
-    - invoices
-    - law
-    - matter
-    - measurements
-    - merge
-    - orders
-    - party
-    - plugins
-    - political
-    - runs
-    - sequence
-    - size
-    - society
-    - standard
-    - tags
-    - tax
-    - transaction
-    - transactions
-    - vendors
-  backlinks:
-    - accounting
-    - accounts
-    - akashic
-    - allocations
-    - attestations
-    - balance
-    - calculations
-    - certification
-    - checks
-    - commerce
-    - conflict
-    - corruption
-    - customers
-    - dimension
-    - duality
-    - events
-    - fields
-    - flow
-    - fractal
-    - horo
-    - identity
-    - invoices
-    - law
-    - matter
-    - measurements
-    - merge
-    - orders
-    - party
-    - plugins
-    - political
-    - runs
-    - sequence
-    - size
-    - society
-    - standard
-    - tags
-    - tax
-    - transaction
-    - transactions
-    - vendors
 signatures:
-  computationUuid: "dfaddfd4-7ba6-8ebf-84d1-61860354ee27"
+  computationUuid: "57bc4c4b-c655-87c3-9739-89a39b171211"
   stages:
     - stage: path
       stageUuid: "0ef76c9e-8206-8572-a3b4-828ca52c220a"
@@ -213,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "6caf1e98-5c3a-827a-89da-22131a348949"
     - stage: horo
-      stageUuid: "ae0eb0f4-9b00-8eae-ab50-2aded1e42370"
+      stageUuid: "f83f0989-f8e5-8eb8-9793-34121463ba0e"
     - stage: seal
-      stageUuid: "c8b3cb5c-fd4b-8cbf-a8ed-e35ca205e069"
+      stageUuid: "9ab5dcde-f654-8f13-b628-e78032c820a3"
     - stage: uuid
-      stageUuid: "d3e68b95-0bf7-83e1-85e6-a965875e7374"
+      stageUuid: "3d3f32fc-68cf-81d4-9d84-77cf809bf6de"
 version: 2
 ---
 # party — one party, infinite roles; two sides of the same debt

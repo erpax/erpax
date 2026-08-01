@@ -1,63 +1,35 @@
 ---
 name: big
 description: "Use when reasoning about big as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/big
-coordinate: big · 5/round · 710eb2d6
-contentUuid: "0ef331a4-dd80-5e7c-8d13-a52228ccf129"
-diamondUuid: "09b52e94-3328-8a07-a116-fbd68f2b8251"
-uuid: "710eb2d6-f41d-833b-9072-24260dbde3aa"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/big"
+coordinate: "vocabulary/big · 7/descent · 77e021e1"
+contentUuid: "24133d44-2640-5511-beb5-cc0cbcd1e67d"
+diamondUuid: "e60b2b2a-acc5-8d17-8680-03a98de3bc13"
+uuid: "77e021e1-1b19-8b34-a41a-1388f494a1ce"
+horo: 7
 typography:
-  partition: big
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "ba36c5ba-990a-8f93-9c24-56936552115b"
+  computationUuid: "cbb2fb69-e0e8-80f7-99c2-2382d62bf765"
   stages:
     - stage: path
-      stageUuid: "a6b8d051-f10c-8e43-bbb1-00aa2ac07ed9"
+      stageUuid: "36eb4284-0942-85fe-83d0-6f69542fc3dd"
     - stage: trinity
-      stageUuid: "8abefe81-ecab-8b77-b123-ed56fd38d1e8"
+      stageUuid: "b41c1721-32b9-8f11-aa02-305677c61b0b"
     - stage: boundary
-      stageUuid: "ebb34d52-bbb1-8840-9ea5-c6d8bfc1d382"
+      stageUuid: "958f253a-09ad-8269-b4b1-8240566b3e97"
     - stage: links
-      stageUuid: "e7782d91-1ae5-8ca1-b5d3-a89a91f94679"
+      stageUuid: "e1988109-dbf9-836f-bc31-857adc188339"
     - stage: horo
-      stageUuid: "82a7d0b2-d3f5-8742-8d69-012a072195b9"
+      stageUuid: "52a068c0-98b4-8c08-a9c9-7c7ae9fa1cd8"
     - stage: seal
-      stageUuid: "175f7634-7fab-8d79-ba24-fcb0d57615a6"
+      stageUuid: "e6447234-500d-891c-ad6e-18b26a07b249"
     - stage: uuid
-      stageUuid: "84674be8-5cd7-81b5-a204-10d6cc879c75"
+      stageUuid: "716b13c8-e8ad-81d3-9fc9-a624993bd24b"
 version: 2
 ---
 # big

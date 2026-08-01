@@ -1,57 +1,34 @@
 ---
 name: declaration
 description: Use when modelling one declaration — the singular model of the declarations collection (the plural store); a formal statement filed with an authority.
-atomPath: vocabulary/declaration
-coordinate: declaration · 4/weave · 578cbc25
-contentUuid: "c53bfac9-7bed-5940-be95-3ed882227974"
-diamondUuid: "7303ef99-80c6-8d80-9ecd-90278ab1b18e"
-uuid: "578cbc25-c5a3-89a9-baec-11183a83c4ac"
+atomPath: "vocabulary/declaration"
+coordinate: "vocabulary/declaration · 4/weave · d82e5d4f"
+contentUuid: "3d996346-e5b9-55e6-b7e6-8e61d87fb1bd"
+diamondUuid: "64ee740b-a96d-8436-975e-da7910e4ef79"
+uuid: "d82e5d4f-7959-82d7-9f1f-6703088a3a4f"
 horo: 4
-bonds:
-  in:
-    - balance
-    - declarations
-    - legal
-  out:
-    - balance
-    - declarations
-    - legal
 typography:
-  partition: declaration
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - declarations
-    - legal
-  matrix:
-    - balance
-    - declarations
-    - legal
-  backlinks:
-    - balance
-    - declarations
-    - legal
 signatures:
-  computationUuid: "fdad1e87-f0c9-86ad-b433-c5d006b56724"
+  computationUuid: "4bf514a5-74d8-83f7-8c55-bff1b48e10a4"
   stages:
     - stage: path
-      stageUuid: "22e6deed-b0ab-8388-8962-dc0f0b58f15e"
+      stageUuid: "feaf5466-d3ea-8db8-9321-2244e04fc9db"
     - stage: trinity
-      stageUuid: "abee49bb-6e49-823d-ae6e-defdb92a74b8"
+      stageUuid: "4622fc02-4207-8b9f-a2e2-e5216b0cfb76"
     - stage: boundary
-      stageUuid: "6c611266-8249-80a8-8de1-94980c2c3c08"
+      stageUuid: "0ab12a75-353e-84ec-a685-5573c0b9f391"
     - stage: links
-      stageUuid: "bb3b45ee-fc53-8150-9688-5a52702964ea"
+      stageUuid: "73a19ca3-953d-8390-b69b-dada83ce19c1"
     - stage: horo
-      stageUuid: "dc345e0c-0c1f-86ca-a097-65dad384f571"
+      stageUuid: "4dcd2e12-f9ef-88cd-8d1d-488c5f59bb55"
     - stage: seal
-      stageUuid: "46daa557-1aa7-8756-b514-8ac520f9b129"
+      stageUuid: "2bfb44d7-92b8-8933-8f66-fc2757d1cba7"
     - stage: uuid
-      stageUuid: "af22b0b5-1a6a-85e6-adc0-2a961b9ff874"
+      stageUuid: "b602b72f-1f16-831a-89c1-e28c3de790d8"
 version: 2
 ---
 # declaration — the model of one [[declarations]] row

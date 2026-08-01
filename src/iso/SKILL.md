@@ -2,41 +2,18 @@
 name: iso
 description: "Use when reasoning about iso as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: iso
-coordinate: "iso · 7/descent · 9e7918ea"
-contentUuid: "c5edbc50-7205-56be-957a-d3695aa968e1"
-diamondUuid: "bc04b943-77f7-8a2f-9c24-c9642c143cb7"
-uuid: "9e7918ea-0ef0-83ff-bc64-b8221c282b8e"
-horo: 7
-bonds:
-  in:
-    - code
-    - collapse
-    - input
-    - law
-    - merge
-    - sti
-  out:
-    - code
-    - collapse
-    - input
-    - law
-    - merge
-    - sti
+coordinate: "iso · 1/base · 9136a3e2"
+contentUuid: "49f20ac9-5ec7-544b-82ae-1a4956bc8144"
+diamondUuid: "34e52689-8697-82d3-968b-ba3b53b6dcdd"
+uuid: "9136a3e2-053b-8400-ae01-5ab2833e1d2d"
+horo: 1
 typography:
   partition: iso
   bondDegree: 0
-  neighbors: []
 standards:
   - "ECMA-262"
   - "ECMA-402"
-  - "EU-2000/31"
   - "EU-2003/88/EC"
-  - "EU-2005/29"
-  - "EU-2011/83"
-  - "EU-2014/55"
-  - "EU-2024/1183"
-  - "EU-2024/1620"
-  - "EU-2024/1624"
   - "EU-537/2014"
   - "EU-765/2008"
   - "EU-910/2014"
@@ -55,29 +32,8 @@ standards:
   - "WCAG-2.1"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - code
-    - collapse
-    - input
-    - law
-    - merge
-    - sti
-  backlinks:
-    - code
-    - collapse
-    - input
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "973c06e7-23ca-8dee-bc16-551feb8d0bbd"
+  computationUuid: "eea93acf-81b5-80b3-a108-8275610d4093"
   stages:
     - stage: path
       stageUuid: "c88a843b-bf2a-8898-a154-cee879a8f1ad"
@@ -88,11 +44,11 @@ signatures:
     - stage: links
       stageUuid: "07ae7f54-5b07-8cd0-8122-3b1e2aa1ef6e"
     - stage: horo
-      stageUuid: "9c871c32-929f-80b9-b8cd-4f04bc204c8e"
+      stageUuid: "eb6dfa92-112c-8ff1-9d2f-1499aa7d8ae1"
     - stage: seal
       stageUuid: "60b51164-2e88-828e-866e-2598a00de830"
     - stage: uuid
-      stageUuid: "653d7cb2-694d-8fa4-b732-651d3afd6abb"
+      stageUuid: "bf9e6395-83d5-8101-9d94-4c78b0e9854b"
 version: 2
 ---
 # iso

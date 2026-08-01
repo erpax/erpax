@@ -1,73 +1,35 @@
 ---
 name: participation
 description: "Use when reasoning about participation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/participation
-coordinate: participation · 7/descent · 5c077ad4
-contentUuid: "01690d0d-6e16-5bf9-ae5a-2c11bf387ac8"
-diamondUuid: "797e8487-d68d-8473-abc2-bc3c4494be6a"
-uuid: "5c077ad4-1652-8f13-bd11-48f286d4f39e"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - has
-    - law
-    - merge
-    - offer
-    - sti
-  out:
-    - collapse
-    - has
-    - law
-    - merge
-    - offer
-    - sti
+atomPath: "vocabulary/participation"
+coordinate: "vocabulary/participation · 5/round · 0cd68d4d"
+contentUuid: "6cca2e16-8825-5f42-8de9-5fc1410540b0"
+diamondUuid: "77b1b4ea-06b9-82a8-9036-b3abb2d01adb"
+uuid: "0cd68d4d-6408-88f4-9841-4ef15099a016"
+horo: 5
 typography:
-  partition: participation
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - has
-    - law
-    - merge
-    - offer
-    - sti
-  matrix:
-    - collapse
-    - has
-    - law
-    - merge
-    - offer
-    - sti
-  backlinks:
-    - collapse
-    - has
-    - law
-    - merge
-    - offer
-    - sti
 signatures:
-  computationUuid: "9a2d20e4-d33f-8061-b0f3-00255e8554a1"
+  computationUuid: "80cd1233-ba53-8241-9f1b-6b24ed1c46f0"
   stages:
     - stage: path
-      stageUuid: "07574c7d-0228-89fb-a84f-d9a590bc2e86"
+      stageUuid: "356ab068-1e52-846b-a1a6-d73fb08362a7"
     - stage: trinity
-      stageUuid: "56070097-7141-8526-a1d2-9f04c49652c1"
+      stageUuid: "c591c347-9c98-87cd-b3c6-36dedfed0f9a"
     - stage: boundary
-      stageUuid: "9855d27d-6c28-8076-b3be-9e421083a4e8"
+      stageUuid: "7b236491-f48d-8415-acbb-67cf07a0d6a4"
     - stage: links
-      stageUuid: "6f18f40f-a123-815d-976e-fd0266f2a95d"
+      stageUuid: "d776cd1d-565f-80bf-af6b-90560a37e27d"
     - stage: horo
-      stageUuid: "cabae0c0-82ae-8349-a0e1-f52514cd8540"
+      stageUuid: "9e8fb7b7-511c-8293-9c66-babb98da1fc2"
     - stage: seal
-      stageUuid: "b140b4cb-20de-8d49-9ec7-1f2aa2b8f2f7"
+      stageUuid: "95aac1aa-a1f6-8a3d-ba2d-aeaf0f75a3d0"
     - stage: uuid
-      stageUuid: "f5319939-c32b-8ac0-98a4-5ac4f5f3168c"
+      stageUuid: "6a4d0968-05fd-8530-b6c7-401eb72de02b"
 version: 2
 ---
 # participation

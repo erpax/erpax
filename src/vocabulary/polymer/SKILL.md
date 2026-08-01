@@ -1,78 +1,35 @@
 ---
 name: polymer
 description: "Use when reasoning about polymer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/polymer
-coordinate: polymer · 4/weave · 84c8f019
-contentUuid: "88a1c8c4-0826-5704-bdfa-909636f84de0"
-diamondUuid: "3c6d4d77-edfa-8bdf-be1b-88d9bcbcb28f"
-uuid: "84c8f019-83c2-81f6-8f73-033244924de3"
-horo: 4
-bonds:
-  in:
-    - bio
-    - collapse
-    - has
-    - law
-    - merge
-    - sequence
-    - sti
-  out:
-    - bio
-    - collapse
-    - has
-    - law
-    - merge
-    - sequence
-    - sti
+atomPath: "vocabulary/polymer"
+coordinate: "vocabulary/polymer · 8/crest · 35424fdb"
+contentUuid: "668b034e-914d-5b90-a8c4-2970b2740cc1"
+diamondUuid: "9dbaf331-e72e-8796-b6d5-ae9529db4fdc"
+uuid: "35424fdb-7653-891d-ae1a-d9888d369043"
+horo: 8
 typography:
-  partition: polymer
+  partition: vocabulary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - bio
-    - collapse
-    - has
-    - law
-    - merge
-    - sequence
-    - sti
-  matrix:
-    - bio
-    - collapse
-    - has
-    - law
-    - merge
-    - sequence
-    - sti
-  backlinks:
-    - bio
-    - collapse
-    - has
-    - law
-    - merge
-    - sequence
-    - sti
 signatures:
-  computationUuid: "b46069df-1241-8ad9-90ae-353960dcf834"
+  computationUuid: "2bad5ca6-f946-89d5-a4a9-f3dba1a0dd32"
   stages:
     - stage: path
-      stageUuid: "156c6596-fe03-8aed-b30d-b2c91d119791"
+      stageUuid: "9bd2e250-0f57-8633-b4bf-8ef79e074bc1"
     - stage: trinity
-      stageUuid: "9ca95dff-e481-8861-b02a-0e65adecf864"
+      stageUuid: "656f4083-042b-82fe-9106-3b5878d96aa6"
     - stage: boundary
-      stageUuid: "5e7ea54f-4261-8f61-801a-3d337de4f32b"
+      stageUuid: "85867b44-9aa1-8d9c-93e0-0f9a42734bf1"
     - stage: links
-      stageUuid: "434c7b47-7b73-83fa-b942-9bc7b091d7dd"
+      stageUuid: "2b1c4d67-5e92-8d53-82c9-5334590c9c31"
     - stage: horo
-      stageUuid: "edc9822c-5617-84d1-a8dd-cf401451bd11"
+      stageUuid: "eafb320c-13cd-893f-a35f-85f27cd90dab"
     - stage: seal
-      stageUuid: "51e42dde-4f3d-84bf-ac09-7f7513824733"
+      stageUuid: "bee39db0-24bf-8c75-98eb-756faa3daf20"
     - stage: uuid
-      stageUuid: "5822be64-58a6-8a58-b97d-772db44a7ff2"
+      stageUuid: "a0c06df7-f738-82a6-8d15-c456308f24a5"
 version: 2
 ---
 # polymer

@@ -1,53 +1,35 @@
 ---
 name: nsn
 description: Use when reasoning about nsn — Indicates the NATO stock number (nsn) of a Product.
-atomPath: vocabulary/nsn
-coordinate: nsn · 2/share · 8a3169a4
-contentUuid: "b71b306e-ae44-5cee-bae4-4bb8811e9138"
-diamondUuid: "72d8c6dc-c610-8f1f-a6d3-bb7b1e0c9894"
-uuid: "8a3169a4-a486-8aa3-996d-484d8878d63f"
-horo: 2
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/nsn"
+coordinate: "vocabulary/nsn · 4/weave · 2d6a2bef"
+contentUuid: "d6672573-ca10-5ca8-8c59-a635530c4f0f"
+diamondUuid: "87a9c174-ced4-8280-9872-f1c76abae584"
+uuid: "2d6a2bef-72fe-863e-933e-f4191d539671"
+horo: 4
 typography:
-  partition: nsn
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "5f5a1f94-93ef-8c43-8836-1f6b9e95a427"
+  computationUuid: "fd1aa581-c082-8341-a4f7-1ad163c94afb"
   stages:
     - stage: path
-      stageUuid: "3a1a5a7e-6442-80ac-b7f9-030e4c54c3c8"
+      stageUuid: "158d1593-bdca-838d-9b70-45e12e5681cd"
     - stage: trinity
-      stageUuid: "8fce35ca-8ba2-8d0b-b198-cf196a3feb61"
+      stageUuid: "a6869604-bded-8e4c-ba20-106584343ad5"
     - stage: boundary
-      stageUuid: "a3510e80-0684-8891-853b-9991dbace554"
+      stageUuid: "9979403a-4376-82ab-864f-26d93a8094c5"
     - stage: links
-      stageUuid: "2f36cf6f-37c8-880e-a200-abe2d93d0a8e"
+      stageUuid: "8c7c2448-f8da-88d7-a06c-cb17cc575500"
     - stage: horo
-      stageUuid: "0a4094c6-fc7f-87e2-85b7-c5cf74304d56"
+      stageUuid: "5a65a828-c261-8e3b-ae45-c5b581d2936c"
     - stage: seal
-      stageUuid: "b8e3bc6e-6cde-8723-a7bc-844e5ace497b"
+      stageUuid: "153cf90e-52f0-81f3-af6f-a741ba162559"
     - stage: uuid
-      stageUuid: "1f9ae523-c0ae-8466-b38c-97131f4c1772"
+      stageUuid: "c4fe9b3d-3061-87fd-82eb-f1fd5b1e89b8"
 version: 2
 ---
 # nsn

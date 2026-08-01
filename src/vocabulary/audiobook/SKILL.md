@@ -1,58 +1,35 @@
 ---
 name: audiobook
 description: Use when reasoning about audiobook — An audiobook.
-atomPath: vocabulary/audiobook
-coordinate: audiobook · 1/base · 9069009e
-contentUuid: "decb12fd-057c-545a-a12c-6f330539cbe4"
-diamondUuid: "92618e96-da4c-898f-b4fb-06aecbbee540"
-uuid: "9069009e-0f5f-8c4c-839b-fe95f33eedb8"
+atomPath: "vocabulary/audiobook"
+coordinate: "vocabulary/audiobook · 1/base · 6593c492"
+contentUuid: "2b6cd945-c694-51c7-8aad-1cc0f5e59004"
+diamondUuid: "d0bbd3a7-34c9-85f1-b2ab-f6e411961fd7"
+uuid: "6593c492-adea-833e-ab66-9011fc489f9b"
 horo: 1
-bonds:
-  in:
-    - creative
-    - law
-    - thing
-  out:
-    - creative
-    - law
-    - thing
 typography:
-  partition: audiobook
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - creative
-    - law
-    - thing
-  matrix:
-    - creative
-    - law
-    - thing
-  backlinks:
-    - creative
-    - law
-    - thing
 signatures:
-  computationUuid: "8ee5bd62-c1ab-8be0-8ce7-92c4d457930b"
+  computationUuid: "28c9ecb9-5986-8947-9037-1de4bcfc8849"
   stages:
     - stage: path
-      stageUuid: "7fbda1ef-6f6d-85b9-8a1b-05dc92eab666"
+      stageUuid: "4ce5e387-5717-8b6f-9f15-442cca566975"
     - stage: trinity
-      stageUuid: "95a90dfc-f491-8890-903b-49edb9de3dda"
+      stageUuid: "f143b77a-2781-8d67-b324-367ded702c04"
     - stage: boundary
-      stageUuid: "22906bb5-a977-821c-bdb2-3ede914ef577"
+      stageUuid: "fe75c9a9-b54a-8808-9659-d075e14cabf1"
     - stage: links
-      stageUuid: "a5745056-2b41-822e-a7f6-c4770f6030ea"
+      stageUuid: "6ffc7f09-7fc3-8aaf-8c4e-e29f03547034"
     - stage: horo
-      stageUuid: "872a03a8-143d-833d-999e-307d3511e698"
+      stageUuid: "c6c99dff-646f-8726-ba29-adf924db049d"
     - stage: seal
-      stageUuid: "a3a81672-25b2-8ded-9b5a-6cd4602481ab"
+      stageUuid: "c0bb7dfc-2905-8f22-bd3b-869b84552e26"
     - stage: uuid
-      stageUuid: "ac209230-3af4-8c1d-a1c9-5405e9b96065"
+      stageUuid: "7d4b4921-b1cc-82d5-af91-14e6af44c426"
 version: 2
 ---
 # audiobook

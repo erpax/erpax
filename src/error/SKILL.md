@@ -2,24 +2,14 @@
 name: error
 description: Use when reasoning about error — Representation of an Error.
 atomPath: error
-coordinate: "error · 1/base · b5fc5f86"
-contentUuid: "186ea35b-9b4d-59ff-98ed-5604b94339f7"
-diamondUuid: "d252cf07-7230-8286-bbea-4698a7169774"
-uuid: "b5fc5f86-3129-8a71-9d66-9de824d72ad2"
-horo: 1
-bonds:
-  in:
-    - code
-    - law
-    - margin
-  out:
-    - code
-    - law
-    - margin
+coordinate: "error · 8/crest · 178f0b05"
+contentUuid: "cb0e9226-a84d-5072-a392-9d0da023a383"
+diamondUuid: "037d58d1-3aa6-8444-ba35-0c0531c5e003"
+uuid: "178f0b05-846e-89fb-9d69-f256f2340029"
+horo: 8
 typography:
   partition: error
   bondDegree: 0
-  neighbors: []
 standards:
   - "7807 problem-details-for-http-apis"
   - "9110 §10.3 error-responses"
@@ -31,21 +21,8 @@ standards:
   - "SOC-2 CC4.1 monitoring-and-evaluation"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - code
-    - law
-    - margin
-  matrix:
-    - code
-    - law
-    - margin
-  backlinks:
-    - code
-    - law
-    - margin
 signatures:
-  computationUuid: "8c53cc53-5357-83a7-a85d-39f9c9819ba2"
+  computationUuid: "b85933d6-e6fe-8946-b533-8f05b54434f4"
   stages:
     - stage: path
       stageUuid: "059b2d4e-0017-857e-9938-cc8fe5dd15b0"
@@ -56,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "8fd5bc9e-5d1e-8e2e-85db-6016aa13106c"
     - stage: horo
-      stageUuid: "c4239e9a-767d-80eb-be99-81b0c6c84b40"
+      stageUuid: "fa77ed99-8fd6-8c5e-ad72-f306a60c5ec8"
     - stage: seal
       stageUuid: "6d9e5b91-c526-8116-8dd6-ecdc8e862773"
     - stage: uuid
-      stageUuid: "c4dd9df1-44ca-88b4-ab15-0fbb9752a978"
+      stageUuid: "9cef6ad6-0644-8b1b-8d81-c15cdebce177"
 version: 2
 ---
 # error

@@ -1,78 +1,35 @@
 ---
 name: mission
 description: "Use when reasoning about mission as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/mission
-coordinate: mission · 2/share · 4b3174d7
-contentUuid: "689ddec8-dde3-5303-8943-1e2dba1cc8ed"
-diamondUuid: "cc979703-abb1-868d-8314-adccd6b5d3e0"
-uuid: "4b3174d7-6de8-8552-97c6-36006d08241e"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - coverage
-    - law
-    - merge
-    - policy
-    - priorities
-    - sti
-  out:
-    - collapse
-    - coverage
-    - law
-    - merge
-    - policy
-    - priorities
-    - sti
+atomPath: "vocabulary/mission"
+coordinate: "vocabulary/mission · 4/weave · 27b21ccc"
+contentUuid: "200dbaf0-ee30-5c28-80b4-4e72075faabe"
+diamondUuid: "57d39f92-12ff-8faf-9c6c-1c9659f2284d"
+uuid: "27b21ccc-3b7f-85e4-b11a-bbcb3fafda15"
+horo: 4
 typography:
-  partition: mission
-  bondDegree: 24
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 26
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - coverage
-    - law
-    - merge
-    - policy
-    - priorities
-    - sti
-  matrix:
-    - collapse
-    - coverage
-    - law
-    - merge
-    - policy
-    - priorities
-    - sti
-  backlinks:
-    - collapse
-    - coverage
-    - law
-    - merge
-    - policy
-    - priorities
-    - sti
 signatures:
-  computationUuid: "17567f25-0a68-83f7-9843-e177041e8112"
+  computationUuid: "3b438c95-ad79-8c02-8a8e-36c07eb38961"
   stages:
     - stage: path
-      stageUuid: "18e7e821-e2c5-8b0b-a0aa-3fbb49dc3d88"
+      stageUuid: "34ba4dba-d6d8-8915-badc-76fbe9398044"
     - stage: trinity
-      stageUuid: "62763e01-fb79-8644-a7a4-a95484314e41"
+      stageUuid: "4a4fe3b4-55bd-820e-b40e-a5f18e2f627c"
     - stage: boundary
-      stageUuid: "6b2097ca-7e14-803c-8981-5e273e2bd5c6"
+      stageUuid: "af7b2862-5289-8a44-abc5-7c9b30c67968"
     - stage: links
-      stageUuid: "e5dc5851-48b0-8afe-9af9-4f88a266d707"
+      stageUuid: "ded75754-081d-8305-8cf7-450004409e5e"
     - stage: horo
-      stageUuid: "3383be07-c8ac-86f4-b2ef-b00057f83983"
+      stageUuid: "65d20838-efb9-8671-83ba-0ea524401952"
     - stage: seal
-      stageUuid: "152837e6-b38c-801c-8057-0399818312c7"
+      stageUuid: "6df0f925-8767-898d-9d10-ff962a21c4a1"
     - stage: uuid
-      stageUuid: "454609e5-a951-897e-a690-8a62b21fecce"
+      stageUuid: "2eeba3b7-ffe1-84f4-bab7-179d878d7820"
 version: 2
 ---
 # mission

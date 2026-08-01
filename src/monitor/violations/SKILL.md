@@ -2,76 +2,33 @@
 name: violations
 description: "Use when monitoring all erpax gate violations in realtime — folder law, rules:check, diamond strays, gap eb, finishedIdeaCrossed, import/boundary, path-follow, entanglement, logic-concentration."
 atomPath: "monitor/violations"
-coordinate: "monitor/violations · 7/descent · 8cb6403e"
-contentUuid: "60fc24cd-628a-55b3-bdd6-b9a64e716dbe"
-diamondUuid: "25535021-d3e4-8382-a499-5a8baace3420"
-uuid: "8cb6403e-caf2-8860-8d4e-a335763e112a"
-horo: 7
-bonds:
-  in:
-    - apply
-    - entropy
-    - law
-    - monitor
-    - realtime
-    - rules
-  out:
-    - apply
-    - entropy
-    - law
-    - monitor
-    - realtime
-    - rules
+coordinate: "monitor/violations · 8/crest · 4ad6516a"
+contentUuid: "b978730c-a55e-5cac-b039-ba767decc092"
+diamondUuid: "3bf546b6-5bed-8177-83c4-552ce810db2b"
+uuid: "4ad6516a-2337-8a66-885a-f49f9ef64336"
+horo: 8
 typography:
   partition: monitor
   bondDegree: 24
-  neighbors:
-    - "analytics/max-tamper-cost"
-    - aura
-    - diamond
-    - hallucination
-    - purity
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - apply
-    - entropy
-    - law
-    - monitor
-    - realtime
-    - rules
-  matrix:
-    - apply
-    - entropy
-    - law
-    - monitor
-    - realtime
-    - rules
-  backlinks:
-    - apply
-    - entropy
-    - law
-    - monitor
-    - realtime
-    - rules
 signatures:
-  computationUuid: "ede6b8ad-2e35-8c39-9de9-b5d5d16862c0"
+  computationUuid: "84b60ca1-d887-8f99-aabe-cbb6671a81e7"
   stages:
     - stage: path
       stageUuid: "340e2891-69d7-8662-a3b6-86ec1c2e52b6"
     - stage: trinity
       stageUuid: "c265e8b7-8bfb-8407-ade9-dab9c4281dd1"
     - stage: boundary
-      stageUuid: "45b72fb4-35c8-81fa-b27e-a70bcca019ff"
+      stageUuid: "71759490-a352-829a-a13d-e6687f3c52c0"
     - stage: links
       stageUuid: "c895c554-ce45-8394-b9a8-ec20fe02855a"
     - stage: horo
-      stageUuid: "6837b44e-16e6-816d-88fc-fc7d10e0a8a0"
+      stageUuid: "aa754dab-165d-8442-b516-04914d5f322a"
     - stage: seal
       stageUuid: "1e51d55e-b4be-86f6-8bd4-2fa5ef4e094b"
     - stage: uuid
-      stageUuid: "b30be2f8-930e-8c9d-a118-d8f8d1ce55d5"
+      stageUuid: "b239095a-841a-8238-b355-6257d553bcd1"
 version: 2
 ---
 # monitor/violations — realtime corpus violation monitor

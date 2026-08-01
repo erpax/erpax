@@ -2,46 +2,18 @@
 name: responsibility
 description: Use when modelling one responsibility — the singular model of the responsibilities collection (the plural store); a duty assigned to a role or position.
 atomPath: responsibility
-coordinate: responsibility · 5/round · c00c1a57
-contentUuid: "c7cb6ffb-03cb-593b-8e4e-7fd4381403b6"
-diamondUuid: "b782a5ef-97fc-832a-a681-e1045310641f"
-uuid: "c00c1a57-8836-8daa-adba-0f0049979c89"
-horo: 5
-bonds:
-  in:
-    - balance
-    - law
-    - position
-    - responsibilities
-  out:
-    - balance
-    - law
-    - position
-    - responsibilities
+coordinate: "responsibility · 8/crest · 5c5a27f9"
+contentUuid: "0c67be9c-4e88-5afa-9ac0-249eaae9ba68"
+diamondUuid: "42a7962e-60c3-86ed-adc0-0a538c3ef9a0"
+uuid: "5c5a27f9-464d-84b6-bb85-8fa9109a9d45"
+horo: 8
 typography:
   partition: responsibility
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - law
-    - position
-    - responsibilities
-  matrix:
-    - balance
-    - law
-    - position
-    - responsibilities
-  backlinks:
-    - balance
-    - law
-    - position
-    - responsibilities
 signatures:
-  computationUuid: "9a2ad716-7bc1-823a-8eba-7960535bcc60"
+  computationUuid: "836f1041-ebe4-8e9a-8533-a96ce1b5641e"
   stages:
     - stage: path
       stageUuid: "908b416e-e7c5-8fab-8754-8547498f6ec3"
@@ -52,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "01351e3f-39fd-8566-a1cd-711727d21064"
     - stage: horo
-      stageUuid: "fdbd8112-26c1-871e-983c-fd1ec76e1853"
+      stageUuid: "04694b78-76b8-8025-882e-d82e6e951c4f"
     - stage: seal
-      stageUuid: "9d1d7672-58f3-82bd-b3bc-ff5b79a6439c"
+      stageUuid: "19d7bc22-29e5-8cc6-a252-3d3ca0d08db2"
     - stage: uuid
-      stageUuid: "c25517b6-1c5c-821d-8f35-8823f1e96832"
+      stageUuid: "4a66e01a-fba1-8f7b-b23c-6a4bb149cd65"
 version: 2
 ---
 # responsibility — the model of one [[responsibilities]] row

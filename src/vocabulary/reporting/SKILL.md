@@ -1,73 +1,35 @@
 ---
 name: reporting
 description: "Use when reasoning about reporting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/reporting
-coordinate: reporting · 1/base · acc28686
-contentUuid: "f38cf702-0722-5ce8-8aa2-bfec92347db3"
-diamondUuid: "3aaf301b-8938-8585-b191-13895a7cc792"
-uuid: "acc28686-ad0b-8471-83e4-321b1c7ffa52"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - data
-    - healthcare
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - data
-    - healthcare
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/reporting"
+coordinate: "vocabulary/reporting · 2/share · f41dde46"
+contentUuid: "5dd7c46f-29f4-597c-a49e-c7732e4e8d7c"
+diamondUuid: "773100c5-1c4a-82bb-b720-356581886a62"
+uuid: "f41dde46-dbc8-8ce3-b7f1-64534a6317eb"
+horo: 2
 typography:
-  partition: reporting
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - data
-    - healthcare
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - data
-    - healthcare
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - data
-    - healthcare
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "28652e0b-a8ef-8d8a-83b9-9f7c81c560c1"
+  computationUuid: "603eb9b1-47b6-8db6-a335-6704fe2fdaab"
   stages:
     - stage: path
-      stageUuid: "0c629266-061c-82db-9446-f2a27f9826e8"
+      stageUuid: "771f5ff4-fc3a-8b06-a632-258f453014ce"
     - stage: trinity
-      stageUuid: "358e675f-495e-842b-abd0-e0ac3f5f2839"
+      stageUuid: "3b4a94ff-5600-8191-9831-2ca2ef2f2c99"
     - stage: boundary
-      stageUuid: "d38afe83-54f8-8d73-9c94-794bf3014462"
+      stageUuid: "2adcf73d-a769-8f9b-a749-6f95e7308652"
     - stage: links
-      stageUuid: "defc791b-adf4-8730-9967-de34a72423a1"
+      stageUuid: "32203466-d69c-88aa-85a7-53eb5293271c"
     - stage: horo
-      stageUuid: "a74b483f-40e0-8625-a9e0-7466cec747c5"
+      stageUuid: "0bf199f3-2d5d-8a64-b037-56d4480082cf"
     - stage: seal
-      stageUuid: "c3bf2c06-3348-8ce4-9a60-d29020298b7a"
+      stageUuid: "7b9a386a-ea00-8313-94de-1f8507a05376"
     - stage: uuid
-      stageUuid: "a8596539-a854-84ba-aae2-5a38fb6fcdf1"
+      stageUuid: "efa3b291-09c7-8096-85d5-93af7a2c5bd2"
 version: 2
 ---
 # reporting

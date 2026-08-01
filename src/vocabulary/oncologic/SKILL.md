@@ -1,63 +1,35 @@
 ---
 name: oncologic
 description: "Use when reasoning about oncologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/oncologic
-coordinate: oncologic · 2/share · 850bea43
-contentUuid: "7da04c7b-d9c0-502a-aeb5-9b33f0c8cd63"
-diamondUuid: "126763dd-7b3c-8734-8f52-0a0ad19e7690"
-uuid: "850bea43-eae7-8efd-be32-d027b0be67e6"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/oncologic"
+coordinate: "vocabulary/oncologic · 4/weave · 8b8f890d"
+contentUuid: "e4657916-0a61-518c-a477-b0750326a54c"
+diamondUuid: "9e2fd2ab-7c0f-8065-aeab-8684ad521eb4"
+uuid: "8b8f890d-9dae-8eaa-83aa-910c072850b8"
+horo: 4
 typography:
-  partition: oncologic
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "d1a5de02-4781-8ae6-8146-b5d05e031a07"
+  computationUuid: "a3c7c2b8-aa53-8a62-adf7-9e268376b95f"
   stages:
     - stage: path
-      stageUuid: "0dfbf8cd-1d0c-8722-8378-e5545deb8adf"
+      stageUuid: "5a88f388-ebed-8fe3-a6ba-3da1c94fa112"
     - stage: trinity
-      stageUuid: "2c6f636c-3e21-8f7e-8925-0cfe178f2144"
+      stageUuid: "511a7f5f-de66-8666-856e-fd1726a5ccfe"
     - stage: boundary
-      stageUuid: "dfb18c6d-8c7e-8897-af8d-f0d038dcc9fe"
+      stageUuid: "5203ed7c-7ca4-874b-b5ec-775fd29e1b00"
     - stage: links
-      stageUuid: "06e3639b-2bea-8861-9993-2da45dff1d54"
+      stageUuid: "69d1c994-517a-8f24-98e0-c079bb9523d4"
     - stage: horo
-      stageUuid: "3b8a2f92-c3be-8916-bff6-8bb612af763b"
+      stageUuid: "17858353-ea65-857e-9325-d7f96ed59ffc"
     - stage: seal
-      stageUuid: "8e54bfaa-39ab-8269-93e9-6cf0ac4c49b7"
+      stageUuid: "f338c244-3ea0-8f88-a140-5c43a5adc7dd"
     - stage: uuid
-      stageUuid: "8d0cb8ab-e644-89ff-82c1-4b397e68c6a3"
+      stageUuid: "10c27e62-c348-8706-99c6-abeb85ac9531"
 version: 2
 ---
 # oncologic

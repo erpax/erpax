@@ -2,30 +2,14 @@
 name: archival
 description: "Use when pinning tenant content to long-term decentralized storage (IPFS, Arweave, Filecoin, R2-glacier) for regulatory long-retention rules — banks 10y, gov 30y, healthcare 50y, archives unlimited — pinning to every listed backend for defense-in-depth and verifying or recovering by receipt."
 atomPath: archival
-coordinate: "archival · 7/descent · 9597dd0c"
-contentUuid: "158e889a-9f09-5079-959c-02572e758a4a"
-diamondUuid: "3dc7aa02-41f7-8c73-a7c3-d0b0e2c6de1c"
-uuid: "9597dd0c-9038-8793-ae24-772515abcca5"
-horo: 7
-bonds:
-  in:
-    - archive
-    - content
-    - integrity
-    - law
-    - retention
-    - uuid
-  out:
-    - archive
-    - content
-    - integrity
-    - law
-    - retention
-    - uuid
+coordinate: "archival · 4/weave · 74f8791c"
+contentUuid: "e92ea36f-72f1-56ec-a505-a4c7156ddcbf"
+diamondUuid: "b59ede67-7037-8327-8704-7ccfef0e2560"
+uuid: "74f8791c-dd10-8557-8b54-ca3a320ef132"
+horo: 4
 typography:
   partition: archival
-  bondDegree: 18
-  neighbors: []
+  bondDegree: 6
 standards:
   - "Arweave Pay-Once-Store-Forever"
   - "Filecoin storage proofs (Spacegap / Spacetime)"
@@ -33,30 +17,8 @@ standards:
   - "W3C IPFS CID v1 — sha-256 maps to ERPax content-uuid`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - archive
-    - content
-    - integrity
-    - law
-    - retention
-    - uuid
-  matrix:
-    - archive
-    - content
-    - integrity
-    - law
-    - retention
-    - uuid
-  backlinks:
-    - archive
-    - content
-    - integrity
-    - law
-    - retention
-    - uuid
 signatures:
-  computationUuid: "32cf0b33-0b62-89ce-bcf6-bd1b71469670"
+  computationUuid: "3b82f7ad-5a2b-8cbe-ab25-e90fbe88147c"
   stages:
     - stage: path
       stageUuid: "d3d18419-2856-8d1d-be61-c116e67f2795"
@@ -65,13 +27,13 @@ signatures:
     - stage: boundary
       stageUuid: "f5bb205d-e229-8254-b3fc-d0f0102b6b29"
     - stage: links
-      stageUuid: "b2714d20-3b7c-8693-a59e-97d5f03e3f03"
+      stageUuid: "acb77f2d-8fc0-8cdb-a347-73248066eca6"
     - stage: horo
-      stageUuid: "11f1a852-7b4b-8010-943f-d6628cfb1d61"
+      stageUuid: "c9b53243-72f5-8d83-b8c0-6f63e96e160d"
     - stage: seal
       stageUuid: "6cb5ad34-44ce-8321-aa0d-86c1e70a252c"
     - stage: uuid
-      stageUuid: "eb0f6246-2355-8fb4-b575-7710f118a313"
+      stageUuid: "bfa60d02-b6b2-8a0e-8604-acdaf205fe92"
 version: 2
 ---
 # archival — long-term decentralized archival (defense-in-depth pinning)

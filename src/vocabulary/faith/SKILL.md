@@ -1,110 +1,34 @@
 ---
 name: faith
 description: "Use when reasoning about the dual of proof in erpax — trust extended WITHOUT the trustless recompute; accepting a source as canonical before verifying its content-uuid. The root of trust-without-verify; dual of proof."
-atomPath: vocabulary/faith
-coordinate: faith · 2/share · 145050c6
-contentUuid: "fe4ed235-adba-5e6b-b78c-9b235e1ec3cd"
-diamondUuid: "6bc5ddb9-aa6f-8618-98f9-a498f1e00ba5"
-uuid: "145050c6-2436-8168-ab8f-92f67a323402"
-horo: 2
-bonds:
-  in:
-    - christianity
-    - confucianism
-    - contribution
-    - covenant
-    - duality
-    - grace
-    - islam
-    - jainism
-    - law
-    - profane
-    - proof
-    - protestantism
-    - religion
-    - sacred
-    - standard
-  out:
-    - christianity
-    - confucianism
-    - contribution
-    - covenant
-    - duality
-    - grace
-    - islam
-    - jainism
-    - law
-    - profane
-    - proof
-    - protestantism
-    - religion
-    - sacred
-    - standard
+atomPath: "vocabulary/faith"
+coordinate: "vocabulary/faith · 4/weave · d2601ac2"
+contentUuid: "e422e693-b3ce-51d7-a3ed-30345f875a4d"
+diamondUuid: "addb78a5-234b-88bf-99d8-9974bc17fda1"
+uuid: "d2601ac2-3830-8b9e-8041-b29625fa2473"
+horo: 4
 typography:
-  partition: faith
+  partition: vocabulary
   bondDegree: 47
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - contribution
-    - duality
-    - grace
-    - law
-    - profane
-    - proof
-    - sacred
-    - standard
-  matrix:
-    - christianity
-    - confucianism
-    - contribution
-    - covenant
-    - duality
-    - grace
-    - islam
-    - jainism
-    - law
-    - profane
-    - proof
-    - protestantism
-    - religion
-    - sacred
-    - standard
-  backlinks:
-    - christianity
-    - confucianism
-    - contribution
-    - covenant
-    - duality
-    - grace
-    - islam
-    - jainism
-    - law
-    - profane
-    - proof
-    - protestantism
-    - religion
-    - sacred
-    - standard
 signatures:
-  computationUuid: "52bdfa01-4d3a-8c13-8db8-0737fd560325"
+  computationUuid: "003c72db-c2e5-8472-80b0-09160fd95200"
   stages:
     - stage: path
-      stageUuid: "6a1a2a47-4712-8e40-b16a-e4b4f85d1a32"
+      stageUuid: "c257e12a-66be-81d3-b65d-8aa53ea8a961"
     - stage: trinity
-      stageUuid: "a644f29b-828a-8c01-8d02-fdef776274f2"
+      stageUuid: "36256a32-a7ee-8bf1-b37f-7ed3eb112e8b"
     - stage: boundary
-      stageUuid: "2aa551d9-b847-8480-8271-ac7b71249ade"
+      stageUuid: "13f195df-6408-89ae-be6e-f4c1f502c028"
     - stage: links
-      stageUuid: "c25d88d0-6881-8f75-bbd4-0d35320f5655"
+      stageUuid: "0b5b11f4-78be-8b6e-8d0f-0ea8e9fb2bd0"
     - stage: horo
-      stageUuid: "c3d40d4f-d9c0-82b7-9406-baab4a235a27"
+      stageUuid: "8874588b-daaf-8884-a265-812294cc7080"
     - stage: seal
-      stageUuid: "2b7d86d5-5a49-8502-a81e-f9ced030e16a"
+      stageUuid: "ec4a1c4b-5204-8247-9b69-25ece880b4d5"
     - stage: uuid
-      stageUuid: "62ae9d25-8bd2-81b9-8cff-8612494cf064"
+      stageUuid: "7ca0b9b6-04b3-8174-a100-99f81e7155ee"
 version: 2
 ---
 # faith — trust without verify (the dual of proof)

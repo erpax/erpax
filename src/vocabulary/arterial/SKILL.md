@@ -1,68 +1,35 @@
 ---
 name: arterial
 description: "Use when reasoning about arterial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/arterial
-coordinate: arterial · 5/round · cfba1dce
-contentUuid: "0bb7c06c-165a-5c38-8a2b-af923f3c325e"
-diamondUuid: "cd59c0db-43a9-8a3e-9ef5-6cbea33d0643"
-uuid: "cfba1dce-af84-804b-a9ad-73817efe4bbe"
-horo: 5
-bonds:
-  in:
-    - branch
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - branch
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/arterial"
+coordinate: "vocabulary/arterial · 4/weave · 1e1e1e79"
+contentUuid: "d3fe93ba-0c9e-53a8-9571-bb9c9b314de1"
+diamondUuid: "c3f0f5fd-abd3-8913-9251-20a8bdf5eb01"
+uuid: "1e1e1e79-42fe-898b-9c68-a6034959d6f4"
+horo: 4
 typography:
-  partition: arterial
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - branch
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - branch
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - branch
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "081480d5-4a6b-8369-bcc9-0644d21a67d8"
+  computationUuid: "7633ffcf-c03a-81f6-87c8-b80d59f8329a"
   stages:
     - stage: path
-      stageUuid: "765bd653-1fe2-86fe-83f2-c4377bdacebb"
+      stageUuid: "7710e7ca-472a-80e6-939d-3345a24b5b23"
     - stage: trinity
-      stageUuid: "fd83bcf4-59de-8531-8ede-60735b9b8011"
+      stageUuid: "a0d11c9a-f7ff-82ec-9138-d620e3a35a47"
     - stage: boundary
-      stageUuid: "07e1fc6b-a6b8-810d-8994-18cc3a68c391"
+      stageUuid: "edd31cf8-01d7-814c-82c1-bf6360863199"
     - stage: links
-      stageUuid: "d37cb39b-eef1-8df7-99a8-d0f26e91799b"
+      stageUuid: "2759f094-c55a-8484-aea3-3dd628471d63"
     - stage: horo
-      stageUuid: "e5073a44-dba5-8de1-8cef-586ddaa08b7c"
+      stageUuid: "8a49d726-92ac-8658-90e4-8e4c976af7f7"
     - stage: seal
-      stageUuid: "ee1905af-12ae-8444-8043-e4a2bbaf19b3"
+      stageUuid: "9fa71db6-770f-8822-9aeb-18c0e69028ae"
     - stage: uuid
-      stageUuid: "8a94daab-accc-833d-8f1e-cc9a0d96a0b2"
+      stageUuid: "d0028466-a50f-8d64-b7dd-a9cb91564d42"
 version: 2
 ---
 # arterial

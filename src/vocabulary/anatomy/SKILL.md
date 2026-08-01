@@ -1,106 +1,35 @@
 ---
 name: anatomy
 description: "Use when reasoning about anatomy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/anatomy
-coordinate: anatomy · 2/share · 91e95ccd
-contentUuid: "cd6528e0-d23e-59e1-8950-6998f79f6c5d"
-diamondUuid: "1892746a-df2f-80f4-9764-cb87068edc51"
-uuid: "91e95ccd-b6df-8434-be56-08e07363a39c"
+atomPath: "vocabulary/anatomy"
+coordinate: "vocabulary/anatomy · 2/share · b3326a34"
+contentUuid: "d9a0746c-79a6-52e3-b133-676bb833505c"
+diamondUuid: "a89492f0-8b1b-8efb-ad1c-2776153be133"
+uuid: "b3326a34-23a3-8406-882f-43b38ddfaf0e"
 horo: 2
-bonds:
-  in:
-    - abdomen
-    - anatomy
-    - arm
-    - associated
-    - collapse
-    - foot
-    - hand
-    - head
-    - law
-    - leg
-    - merge
-    - related
-    - sti
-    - superficial
-  out:
-    - abdomen
-    - anatomy
-    - arm
-    - associated
-    - collapse
-    - foot
-    - hand
-    - head
-    - law
-    - leg
-    - merge
-    - related
-    - sti
-    - superficial
 typography:
-  partition: anatomy
-  bondDegree: 50
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 48
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - associated
-    - collapse
-    - law
-    - merge
-    - related
-    - sti
-    - superficial
-  matrix:
-    - abdomen
-    - anatomy
-    - arm
-    - associated
-    - collapse
-    - foot
-    - hand
-    - head
-    - law
-    - leg
-    - merge
-    - related
-    - sti
-    - superficial
-  backlinks:
-    - abdomen
-    - anatomy
-    - arm
-    - associated
-    - collapse
-    - foot
-    - hand
-    - head
-    - law
-    - leg
-    - merge
-    - related
-    - sti
-    - superficial
 signatures:
-  computationUuid: "81bc457a-62ab-8f02-918e-e3a007b1df2f"
+  computationUuid: "c29fe85d-cd85-84af-91ab-0042b4625d12"
   stages:
     - stage: path
-      stageUuid: "e595c783-4f86-89cd-9754-d6692b56d8e3"
+      stageUuid: "c1f81e2c-9738-8269-a684-8286c7c8d6ba"
     - stage: trinity
-      stageUuid: "34de8a3c-4461-837b-9728-9b506e2f7abe"
+      stageUuid: "77a122b1-5181-8138-8dad-ea59865075aa"
     - stage: boundary
-      stageUuid: "6e7f1c4f-9f2e-8829-bc9c-05b2f68b7f8f"
+      stageUuid: "e4ccc8cc-fd3d-8dfd-a534-b1c86707d34b"
     - stage: links
-      stageUuid: "7c58511e-3ffd-89b3-9815-4aec758da804"
+      stageUuid: "cfdfc09b-427f-84cd-af66-f882603df577"
     - stage: horo
-      stageUuid: "85d0be81-b3c1-82fe-98e3-e41135d582ec"
+      stageUuid: "cd94aa77-e98d-84ec-b901-523f90de97f6"
     - stage: seal
-      stageUuid: "42f44377-afb0-8b7c-b113-4904e851394e"
+      stageUuid: "3598cfbd-862e-8b44-9fc6-20a78241eeb7"
     - stage: uuid
-      stageUuid: "bfe60b3b-2308-8875-9833-cd4ff15443c4"
+      stageUuid: "18ab9b02-ffa9-8cbe-a64c-afc4aff5675b"
 version: 2
 ---
 # anatomy

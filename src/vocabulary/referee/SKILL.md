@@ -1,58 +1,35 @@
 ---
 name: referee
 description: "Use when reasoning about referee — An official who watches a game or match closely to enforce the rules and arbitrate on matters arising from the play such as referees, umpires or judges. The name of the effective f"
-atomPath: vocabulary/referee
-coordinate: referee · 1/base · 2956bf32
-contentUuid: "9b5e5c81-0592-5b7d-9fac-290727f553fc"
-diamondUuid: "4bf482da-9f66-8995-be91-96c95f038f66"
-uuid: "2956bf32-c24c-8952-b119-a37cd57ad3e2"
-horo: 1
-bonds:
-  in:
-    - law
-    - person
-    - thing
-  out:
-    - law
-    - person
-    - thing
+atomPath: "vocabulary/referee"
+coordinate: "vocabulary/referee · 5/round · 06d2443d"
+contentUuid: "c9bb9167-c657-5fb8-9884-1f55f7af7d13"
+diamondUuid: "9439490e-8a5f-8686-a083-28de481b8dcf"
+uuid: "06d2443d-1e6b-857f-8ab7-a60ce4dc2c78"
+horo: 5
 typography:
-  partition: referee
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - person
-    - thing
-  matrix:
-    - law
-    - person
-    - thing
-  backlinks:
-    - law
-    - person
-    - thing
 signatures:
-  computationUuid: "fd2e6956-cb21-8d46-8e98-9dd52f9cfd41"
+  computationUuid: "dc012db6-40e6-803e-927e-61033425ec0d"
   stages:
     - stage: path
-      stageUuid: "09364b8c-72b0-8a96-95bf-2d37dd454c5e"
+      stageUuid: "ecc259ee-fa81-87cf-baa1-1cbc4287ab8c"
     - stage: trinity
-      stageUuid: "68ed444e-ede4-8a98-820a-452663d844c7"
+      stageUuid: "7527b3fc-adc1-85f9-b0b4-92ecba2ab078"
     - stage: boundary
-      stageUuid: "4bb00ce0-03b6-85ea-af15-5e8b1ff618f4"
+      stageUuid: "bb95e001-148d-846a-81a9-36c911d37d39"
     - stage: links
-      stageUuid: "099741f1-52b3-8abc-b7d8-0a9dceeba1ee"
+      stageUuid: "19d79e6b-4a95-8b08-abef-d7b0ad332e4c"
     - stage: horo
-      stageUuid: "16e7ead1-db50-8e5c-af6d-dc62ca8c01b8"
+      stageUuid: "e592838e-625b-866a-bde4-b09931b51652"
     - stage: seal
-      stageUuid: "f1ad2c68-e42e-885a-9182-45e7802f9472"
+      stageUuid: "dcf9f33d-a79d-8099-b087-56eea984265e"
     - stage: uuid
-      stageUuid: "163fd15d-a040-8d29-9cd6-8ecaa79acd7f"
+      stageUuid: "6df8cf74-547c-8bde-bc53-35f0568052ba"
 version: 2
 ---
 # referee

@@ -1,108 +1,35 @@
 ---
 name: required
 description: "Use when reasoning about required as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/required
-coordinate: required · 8/crest · 74bf7db9
-contentUuid: "d7773195-0fd7-528b-bdae-daae2663bd99"
-diamondUuid: "db08f57a-292a-818b-92a9-9cd9ae7379fb"
-uuid: "74bf7db9-34d9-8cfe-925a-0c84a0249a39"
-horo: 8
-bonds:
-  in:
-    - age
-    - collapse
-    - collateral
-    - competency
-    - gender
-    - law
-    - max
-    - merge
-    - min
-    - quantity
-    - sti
-    - time
-    - value
-  out:
-    - age
-    - collapse
-    - collateral
-    - competency
-    - gender
-    - law
-    - max
-    - merge
-    - min
-    - quantity
-    - sti
-    - time
-    - value
+atomPath: "vocabulary/required"
+coordinate: "vocabulary/required · 1/base · 3774990f"
+contentUuid: "1d0cb5d1-b00b-536c-9e5a-8361d315c657"
+diamondUuid: "614b9339-15a8-8593-bf9e-6095b7c63865"
+uuid: "3774990f-b996-88be-a09c-5f79aafaff37"
+horo: 1
 typography:
-  partition: required
+  partition: vocabulary
   bondDegree: 45
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - age
-    - collapse
-    - collateral
-    - competency
-    - gender
-    - law
-    - max
-    - merge
-    - min
-    - quantity
-    - sti
-    - time
-    - value
-  matrix:
-    - age
-    - collapse
-    - collateral
-    - competency
-    - gender
-    - law
-    - max
-    - merge
-    - min
-    - quantity
-    - sti
-    - time
-    - value
-  backlinks:
-    - age
-    - collapse
-    - collateral
-    - competency
-    - gender
-    - law
-    - max
-    - merge
-    - min
-    - quantity
-    - sti
-    - time
-    - value
 signatures:
-  computationUuid: "add89154-e1f9-8d4d-a517-ebf62ea1d3cb"
+  computationUuid: "1dca6940-0f38-8e3c-9d1d-e2f2cbdeb147"
   stages:
     - stage: path
-      stageUuid: "ab12bd3b-2c89-87dd-916c-2356d687a037"
+      stageUuid: "4c1c1dc4-f406-8cc4-a7cc-f921213ddb63"
     - stage: trinity
-      stageUuid: "03cfff46-eee8-8ffa-9372-61d67f5de310"
+      stageUuid: "8115fd78-2710-8a5a-9595-82a700c3ce60"
     - stage: boundary
-      stageUuid: "e3a2b575-ddcc-8b94-aed5-3c1a3f11d1d2"
+      stageUuid: "24374dc1-443f-829e-ad48-ab26821db84d"
     - stage: links
-      stageUuid: "1db15993-35b1-842c-b6d9-949cdb95a3a5"
+      stageUuid: "be20aae4-d074-8429-b3c1-ee40e0c6b7f7"
     - stage: horo
-      stageUuid: "dc8daf96-fdeb-8f25-9f11-6594c572df25"
+      stageUuid: "2af8d30c-11cf-8f5b-841e-48536a821f4b"
     - stage: seal
-      stageUuid: "e10cccef-10da-8066-9a26-4ddd4fbbe27d"
+      stageUuid: "7dafe53b-d606-80e7-8e36-a562b9e7e163"
     - stage: uuid
-      stageUuid: "132bb1b1-7c1d-8768-b695-b3bc30b22411"
+      stageUuid: "aa59a6f9-b22d-82b3-8128-e6fba4f17c62"
 version: 2
 ---
 # required

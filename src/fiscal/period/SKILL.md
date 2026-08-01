@@ -2,54 +2,15 @@
 name: period
 description: Use when implementing or referencing Fiscal Period Standard.
 atomPath: "fiscal/period"
-coordinate: "fiscal/period · 8/crest · 7780b6e5"
-contentUuid: "6cc9cf25-b869-52a4-ab27-5b725d1b74f9"
-diamondUuid: "b211b2ab-f76f-8b0a-809b-ee7eb26aebfb"
-uuid: "7780b6e5-a6f0-8ae1-b54e-709623bd421b"
-horo: 8
-bonds:
-  in:
-    - accounting
-    - billing
-    - breed
-    - certification
-    - checker
-    - date
-    - fields
-    - integration
-    - law
-    - locks
-    - observation
-    - organic
-    - season
-    - service
-    - start
-    - versions
-    - withdrawal
-  out:
-    - accounting
-    - billing
-    - breed
-    - certification
-    - checker
-    - date
-    - fields
-    - integration
-    - law
-    - locks
-    - observation
-    - organic
-    - season
-    - service
-    - start
-    - versions
-    - withdrawal
+coordinate: "fiscal/period · 4/weave · 062f6256"
+contentUuid: "ada1e90d-3946-50b7-9f27-366b41d6f59f"
+diamondUuid: "151d5146-b205-81a5-853e-b3c42093b952"
+uuid: "062f6256-1d19-8060-a22e-3eafe3d6ad48"
+horo: 4
 typography:
   partition: fiscal
   bondDegree: 57
-  neighbors: []
 standards:
-  - "EU-2014/55"
   - "EU-2016/679"
   - "EU-537/2014"
   - "EU-910/2014"
@@ -61,7 +22,6 @@ standards:
   - "ISO-4217:2023 Currency codes`"
   - "ISO-8601:2019 Date/Time representation"
   - "ISO-8601:2019 Date/Time representation`"
-  - "NIST-SP-800-63"
   - "NIST-SP-800-92"
   - "NIST-SP-800-92 Audit logging"
   - "NIST-SP-800-92 Audit logging`"
@@ -76,47 +36,8 @@ standards:
   - "eIDAS:2014/910/EU Electronic signatures"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-  matrix:
-    - accounting
-    - billing
-    - breed
-    - certification
-    - checker
-    - date
-    - fields
-    - integration
-    - law
-    - locks
-    - observation
-    - organic
-    - season
-    - service
-    - start
-    - versions
-    - withdrawal
-  backlinks:
-    - accounting
-    - billing
-    - breed
-    - certification
-    - checker
-    - date
-    - fields
-    - integration
-    - law
-    - locks
-    - observation
-    - organic
-    - season
-    - service
-    - start
-    - versions
-    - withdrawal
 signatures:
-  computationUuid: "d22bf09a-726b-8ab9-9607-301881ffbdb5"
+  computationUuid: "509cf6fa-e1de-83d0-90a9-36eceb5037cb"
   stages:
     - stage: path
       stageUuid: "43d2a82b-4cc1-8c35-98fd-4b088ad6b0dc"
@@ -125,13 +46,13 @@ signatures:
     - stage: boundary
       stageUuid: "ba8ae51b-6df7-8689-b62b-7ea709e2682c"
     - stage: links
-      stageUuid: "e0a2eb50-ddcf-8b0a-b156-a3644b939b67"
+      stageUuid: "a8a7cc41-0c8a-8001-8fb6-98a7475b822c"
     - stage: horo
-      stageUuid: "c70d8353-e5ea-80ad-bb0d-72f34a6b0d1b"
+      stageUuid: "f9677f6a-9c36-8ea5-b19e-35ffbfaf676a"
     - stage: seal
       stageUuid: "e088a7d9-7200-8e03-9a8b-3dd6e3ab2989"
     - stage: uuid
-      stageUuid: "665259d2-9d79-87ae-9127-038e9aa70b04"
+      stageUuid: "c0d5df3f-2450-88cf-a8dd-44a8a551734d"
 version: 2
 ---
 # Fiscal Period Standard

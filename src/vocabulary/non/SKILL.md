@@ -1,78 +1,35 @@
 ---
 name: non
 description: "Use when reasoning about non as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/non
-coordinate: non · 4/weave · eb9e94ac
-contentUuid: "9b816187-3ad2-56a7-953f-320541fec454"
-diamondUuid: "d094379b-1f67-88b0-80fb-da3517aa7120"
-uuid: "eb9e94ac-b887-8ca8-add1-fb4f9231e8fd"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - equal
-    - law
-    - merge
-    - name
-    - proprietary
-    - sti
-  out:
-    - collapse
-    - equal
-    - law
-    - merge
-    - name
-    - proprietary
-    - sti
+atomPath: "vocabulary/non"
+coordinate: "vocabulary/non · 8/crest · 859efc5a"
+contentUuid: "4c565699-0c24-5972-80d1-a53648d095c2"
+diamondUuid: "d7ab2f35-2055-86a6-ac4d-c143a512f2e3"
+uuid: "859efc5a-ec10-8c3e-908a-51a180f8b537"
+horo: 8
 typography:
-  partition: non
+  partition: vocabulary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - equal
-    - law
-    - merge
-    - name
-    - proprietary
-    - sti
-  matrix:
-    - collapse
-    - equal
-    - law
-    - merge
-    - name
-    - proprietary
-    - sti
-  backlinks:
-    - collapse
-    - equal
-    - law
-    - merge
-    - name
-    - proprietary
-    - sti
 signatures:
-  computationUuid: "b70414c7-ffbf-88b8-8800-ce2f54852c63"
+  computationUuid: "7861ec62-ba91-8ea2-94c4-e8d52d5de1ae"
   stages:
     - stage: path
-      stageUuid: "9473812c-213c-8bc5-9c0f-e29f926434dd"
+      stageUuid: "9d489510-af7d-8765-a7ec-025a800d82e9"
     - stage: trinity
-      stageUuid: "c6aa8689-4679-86f2-8ef3-955d673f1c79"
+      stageUuid: "639b5f7a-a2c3-85a4-8245-3073893b9ffb"
     - stage: boundary
-      stageUuid: "045829d2-77ad-843d-9ade-65479f77816c"
+      stageUuid: "bb7e0e8e-855c-8c9f-a21b-14c39cd2e94f"
     - stage: links
-      stageUuid: "1cb3091a-9c8e-811a-89dd-499e8bbe5475"
+      stageUuid: "dc116b09-bd94-8fe4-b37e-b64317bb403c"
     - stage: horo
-      stageUuid: "6f92f521-d496-8663-ac2b-42019e4a4d5a"
+      stageUuid: "70f2c664-2c7b-89aa-93b5-55a34c545889"
     - stage: seal
-      stageUuid: "5c08ebce-e0b1-83c4-ba84-07acd76b2177"
+      stageUuid: "7c72d6ef-6754-83c2-8631-f15b68c0379e"
     - stage: uuid
-      stageUuid: "273e71ad-4f14-8d51-87f2-265f3620e638"
+      stageUuid: "0d1683d7-d41c-89c4-970d-8b229960f1f2"
 version: 2
 ---
 # non

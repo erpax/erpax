@@ -1,76 +1,35 @@
 ---
 name: quality
 description: "Use when reasoning about quality as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/quality
-coordinate: quality · 5/round · 44a91b6c
-contentUuid: "40610cb0-f7ac-51e6-815c-e688ab0d1be0"
-diamondUuid: "35421d3d-3a3c-830b-aa02-8110b8ff26a5"
-uuid: "44a91b6c-7942-8c1e-87ac-aae2712f827d"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - failure
-    - inspection
-    - law
-    - merge
-    - sti
-    - video
-  out:
-    - collapse
-    - failure
-    - inspection
-    - law
-    - merge
-    - sti
-    - video
+atomPath: "vocabulary/quality"
+coordinate: "vocabulary/quality · 2/share · 8cd9d438"
+contentUuid: "37c48bb5-cc3a-5cfc-9e54-f4cc07af39cf"
+diamondUuid: "cda25829-e875-8887-8764-561abf88b102"
+uuid: "8cd9d438-b368-8407-bb3d-7d5c6f9ee5d3"
+horo: 2
 typography:
-  partition: quality
+  partition: vocabulary
   bondDegree: 22
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - video
-  matrix:
-    - collapse
-    - failure
-    - inspection
-    - law
-    - merge
-    - sti
-    - video
-  backlinks:
-    - collapse
-    - failure
-    - inspection
-    - law
-    - merge
-    - sti
-    - video
 signatures:
-  computationUuid: "7c643bf4-54a4-869b-8f47-91451649bb01"
+  computationUuid: "637d0736-e351-85e2-997d-83ca6acd4b53"
   stages:
     - stage: path
-      stageUuid: "7b3ff713-cb41-8108-899c-13f28828ac8f"
+      stageUuid: "df3a7d9c-e5c4-8567-ac52-80af8fc04ecd"
     - stage: trinity
-      stageUuid: "3e4b380e-2917-85a9-aa6d-c20d14abf15e"
+      stageUuid: "8520a9a6-9125-87f2-adc2-188d42b48ad1"
     - stage: boundary
-      stageUuid: "035e70e3-899d-80d9-b729-484e6511a315"
+      stageUuid: "4d7e5dba-6794-8cd9-aa07-0424ab950731"
     - stage: links
-      stageUuid: "7721246a-1d83-8c02-bca8-6065b081388f"
+      stageUuid: "29ca43d2-6bda-844e-985e-dcb81b45a628"
     - stage: horo
-      stageUuid: "fe4b69ff-2659-8658-a800-204d5f45ed38"
+      stageUuid: "e8221353-7a50-8103-8827-5d59b3ac0be8"
     - stage: seal
-      stageUuid: "1411b3da-fde0-860f-8f00-c32459cea756"
+      stageUuid: "9daee88c-04ed-8daf-a276-d5ccb8b5ced6"
     - stage: uuid
-      stageUuid: "d36d8852-a8d2-88ba-8d1a-cebdafdece3c"
+      stageUuid: "251eeae1-46ca-86f8-a887-a990b5a7ae84"
 version: 2
 ---
 # quality

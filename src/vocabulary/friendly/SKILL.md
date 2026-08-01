@@ -1,68 +1,35 @@
 ---
 name: friendly
 description: "Use when reasoning about friendly as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/friendly
-coordinate: friendly · 5/round · 5b1c2156
-contentUuid: "e40ae37f-349a-507c-895e-9b84c51ca2a2"
-diamondUuid: "6f02b32d-1d87-8b89-80b9-18611aebb615"
-uuid: "5b1c2156-d6e5-803f-b789-4cc539090d75"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - family
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - family
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/friendly"
+coordinate: "vocabulary/friendly · 4/weave · a6f45987"
+contentUuid: "b2ccb08b-d189-5514-b905-2b166b70df28"
+diamondUuid: "85474852-5aa3-8324-b53a-3efcb7ed9ccf"
+uuid: "a6f45987-38df-8dc0-a2d7-b39f47548df1"
+horo: 4
 typography:
-  partition: friendly
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - family
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - family
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - family
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "fa01c365-0849-87ed-a4c0-304edf173495"
+  computationUuid: "f25f4ea8-68ef-8ab8-bc2a-85f19b974272"
   stages:
     - stage: path
-      stageUuid: "32a5eae6-7089-8093-8403-b648f1fa9109"
+      stageUuid: "d2eaf1b2-1e6f-8e60-b6d1-997bf077fe8d"
     - stage: trinity
-      stageUuid: "008648f6-4d94-82fd-a395-9fd9db9745cb"
+      stageUuid: "c5c3303d-5c9c-893c-bb35-2923ca6fdd47"
     - stage: boundary
-      stageUuid: "3a5682ca-2236-842c-961a-d8b911fbd24f"
+      stageUuid: "9d1864cc-6cd7-82fb-b710-e81b635abd02"
     - stage: links
-      stageUuid: "48ef411f-fe07-8309-bd8d-73efc9471359"
+      stageUuid: "b9c03081-4ec7-87b7-8f3c-62141c368694"
     - stage: horo
-      stageUuid: "4856e703-084c-8312-90b1-3255cba762d3"
+      stageUuid: "6a5c5f02-7938-8c1a-88be-1044a902bac2"
     - stage: seal
-      stageUuid: "1f9c0019-1bfd-81a7-8137-1e501fe5b31e"
+      stageUuid: "c6b035fa-cda5-87d4-b9bd-e7fb050abea3"
     - stage: uuid
-      stageUuid: "f262d7d7-f431-8c20-97d0-5951a851a0f7"
+      stageUuid: "40b18a3f-181c-8e74-8998-458fa66c84b8"
 version: 2
 ---
 # friendly

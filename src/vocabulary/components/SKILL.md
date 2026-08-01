@@ -1,101 +1,34 @@
 ---
 name: components
 description: "Use when building or debugging the erpax React UI — server-component-first Next.js App Router views, Lexical/Payload block renderers, admin panels, dashboards, widgets, and shared primitives — the society's FACE, the rendered surface where matter meets the eye."
-atomPath: vocabulary/components
-coordinate: components · 1/base · df44f5d5
-contentUuid: "4f9156a0-575b-50cb-9f14-095cf6a389ac"
-diamondUuid: "5d6dd7ba-27ee-8570-b9bb-8b56736b4201"
-uuid: "df44f5d5-6bb7-8a2e-8cb2-db2edd618901"
-horo: 1
-bonds:
-  in:
-    - accessibility
-    - admin
-    - collapse
-    - component
-    - config
-    - dashboard
-    - design
-    - fractal
-    - lexical
-    - standard
-    - theme
-    - trinity
-  out:
-    - accessibility
-    - admin
-    - collapse
-    - component
-    - config
-    - dashboard
-    - design
-    - fractal
-    - lexical
-    - standard
-    - theme
-    - trinity
+atomPath: "vocabulary/components"
+coordinate: "vocabulary/components · 8/crest · 16a0f00e"
+contentUuid: "b22488af-92fa-5c03-bb1f-020ba5452518"
+diamondUuid: "5d146455-a238-846e-a264-6b075c661f88"
+uuid: "16a0f00e-d5f2-812e-8214-0bb82e4b9a45"
+horo: 8
 typography:
-  partition: components
+  partition: vocabulary
   bondDegree: 36
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accessibility
-    - admin
-    - collapse
-    - component
-    - config
-    - design
-    - fractal
-    - lexical
-    - standard
-    - theme
-    - trinity
-  matrix:
-    - accessibility
-    - admin
-    - collapse
-    - component
-    - config
-    - dashboard
-    - design
-    - fractal
-    - lexical
-    - standard
-    - theme
-    - trinity
-  backlinks:
-    - accessibility
-    - admin
-    - collapse
-    - component
-    - config
-    - dashboard
-    - design
-    - fractal
-    - lexical
-    - standard
-    - theme
-    - trinity
 signatures:
-  computationUuid: "9a69a311-c99c-8d01-a112-32adc71f7a59"
+  computationUuid: "d17a087a-7ce0-8458-a2ed-db880aceff31"
   stages:
     - stage: path
-      stageUuid: "a6038da7-fc5c-87b0-890e-570b9df1b648"
+      stageUuid: "3c13ab03-94be-8703-acd3-9b39b2a94b38"
     - stage: trinity
-      stageUuid: "2a1b3529-205a-8629-b287-4fd2cb08dd7e"
+      stageUuid: "c2eaaf64-06f8-8f89-8cce-b44fddcb8a7e"
     - stage: boundary
-      stageUuid: "5756408c-1432-86c6-9511-37ebb71ab616"
+      stageUuid: "b0d86a90-4e2e-8963-a343-7239ccf3eb8e"
     - stage: links
-      stageUuid: "70ca398f-7277-8349-b8a0-7485d5125d89"
+      stageUuid: "4fa8c4da-6762-8de2-9673-676da5a0a55c"
     - stage: horo
-      stageUuid: "7f9fe625-631b-8c03-adfc-dced98f7f853"
+      stageUuid: "fed44ab3-fba2-8c8b-a1b0-6ce6331fde69"
     - stage: seal
-      stageUuid: "37151f00-5ed4-8032-8489-ac12400c6980"
+      stageUuid: "23db407c-8ada-8c02-8b37-a2cf272681a5"
     - stage: uuid
-      stageUuid: "ad0b34e7-e585-8341-b413-262705046940"
+      stageUuid: "15d54f8a-4a0e-8016-ae6e-411dc51206e0"
 version: 2
 ---
 # components — the rendered face of the society

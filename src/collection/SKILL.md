@@ -2,78 +2,19 @@
 name: collection
 description: "Use when reasoning about collection — A collection of items, e.g. creative works or products."
 atomPath: collection
-coordinate: "collection · 1/base · fa4deb84"
-contentUuid: "69925b56-d8e7-544d-a711-e7988f814ad7"
-diamondUuid: "445bd437-93f3-81bd-b312-11f649152886"
-uuid: "fa4deb84-c942-818d-8217-9c55b647e8d4"
-horo: 1
-bonds:
-  in:
-    - balance
-    - cvd
-    - dashboard
-    - date
-    - interactive
-    - law
-    - page
-    - product
-    - size
-    - target
-    - translate
-  out:
-    - balance
-    - cvd
-    - dashboard
-    - date
-    - interactive
-    - law
-    - page
-    - product
-    - size
-    - target
-    - translate
+coordinate: "collection · 2/share · 7b991ff7"
+contentUuid: "59662adb-1c83-51d2-97d9-73cddf134aa2"
+diamondUuid: "c86529a3-f9cb-877e-a839-c9e1ca678869"
+uuid: "7b991ff7-2892-883d-8a48-32475c5c8239"
+horo: 2
 typography:
   partition: collection
   bondDegree: 0
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - cvd
-    - date
-    - law
-    - page
-    - product
-    - size
-    - target
-  matrix:
-    - balance
-    - cvd
-    - dashboard
-    - date
-    - interactive
-    - law
-    - page
-    - product
-    - size
-    - target
-    - translate
-  backlinks:
-    - balance
-    - cvd
-    - dashboard
-    - date
-    - interactive
-    - law
-    - page
-    - product
-    - size
-    - target
-    - translate
 signatures:
-  computationUuid: "e886f4b4-8ba4-8cb9-a74c-47596801206c"
+  computationUuid: "0b2cce2b-cc46-83ac-86ca-20998aecd7af"
   stages:
     - stage: path
       stageUuid: "314d5d2c-92d1-8199-8fa1-ebda5fbefe75"
@@ -84,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ff92c6e3-4892-8271-bce6-a4f9d0f512c1"
     - stage: horo
-      stageUuid: "2e40035e-0ba7-8052-a200-464013bdd8fe"
+      stageUuid: "15547387-bba3-877a-a904-11de7446bea2"
     - stage: seal
       stageUuid: "3aadbc71-3159-8360-ad67-0470b0dafb0f"
     - stage: uuid
-      stageUuid: "da16bc1b-2406-8211-b671-dbf4d7915bc2"
+      stageUuid: "3d02bd05-46bf-8352-8136-58af4dbb92c4"
 version: 2
 ---
 # collection

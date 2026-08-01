@@ -1,82 +1,35 @@
 ---
 name: attendance
 description: "Use when reasoning about attendance — A schema.org component word, collided out of schema.org compounds — fused from EventAttendanceModeEnumeration · eventAttendanceMode (sti · collapse · merge)."
-atomPath: vocabulary/attendance
-coordinate: attendance · 8/crest · d710ded6
-contentUuid: "05f27160-2e17-597b-b6d2-00a0f5c11d11"
-diamondUuid: "6fcba9c3-a01b-8dec-9232-67fd98a07318"
-uuid: "d710ded6-b93b-86a1-ac51-ec0705908e08"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - enumeration
-    - event
-    - law
-    - merge
-    - mode
-    - shift
-    - sti
-  out:
-    - collapse
-    - enumeration
-    - event
-    - law
-    - merge
-    - mode
-    - shift
-    - sti
+atomPath: "vocabulary/attendance"
+coordinate: "vocabulary/attendance · 5/round · 60507556"
+contentUuid: "0f13afec-a57f-5739-a868-ae7236a11d8b"
+diamondUuid: "174650f4-95bc-8444-8422-4511d4b81db1"
+uuid: "60507556-42dc-8ee8-8176-08fc6fad6ccb"
+horo: 5
 typography:
-  partition: attendance
-  bondDegree: 26
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 28
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - enumeration
-    - event
-    - law
-    - merge
-    - mode
-    - sti
-  matrix:
-    - collapse
-    - enumeration
-    - event
-    - law
-    - merge
-    - mode
-    - shift
-    - sti
-  backlinks:
-    - collapse
-    - enumeration
-    - event
-    - law
-    - merge
-    - mode
-    - shift
-    - sti
 signatures:
-  computationUuid: "45cca9f0-1263-8743-bc3c-5f665345255f"
+  computationUuid: "828abda9-fc11-8b3c-9482-dae24cf01d7e"
   stages:
     - stage: path
-      stageUuid: "5cf5eb42-389a-8126-be5e-f18bc31e083c"
+      stageUuid: "ef7e303a-5fda-8894-8256-db4805f7ca68"
     - stage: trinity
-      stageUuid: "58117321-7783-863e-856a-1f0e97b2fc3d"
+      stageUuid: "0b80809f-a321-8cd8-957b-7619de252f51"
     - stage: boundary
-      stageUuid: "50f5fb16-935e-8840-9e86-6fb38b0e84fe"
+      stageUuid: "a115bd22-19ff-8f96-809c-2e8684c88e77"
     - stage: links
-      stageUuid: "c7caa796-9b68-8ea4-a34d-9aef46c74ce0"
+      stageUuid: "c78e5d8c-fa0c-8596-9b5d-ec218e508342"
     - stage: horo
-      stageUuid: "9f356a8e-f63d-8357-80f7-17500e254b94"
+      stageUuid: "1d635ece-be47-8b5c-b43a-00acf13fe2c1"
     - stage: seal
-      stageUuid: "c51d51c4-c84e-8fc6-83ae-c8b59f4438fb"
+      stageUuid: "a7e0909c-0afb-872f-906e-23ada99a35ce"
     - stage: uuid
-      stageUuid: "f29ce512-0966-881d-8c65-1af2242b7f38"
+      stageUuid: "c523e151-d534-8cc7-b9ef-0bc69c1a55e4"
 version: 2
 ---
 # attendance

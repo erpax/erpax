@@ -2,67 +2,19 @@
 name: target
 description: "Use when reasoning about target — Indicates a target EntryPoint, or url, for an Action."
 atomPath: target
-coordinate: target · 7/descent · 5a1feebb
-contentUuid: "1cbf897e-3578-5eb8-a069-6bdc2fe150fb"
-diamondUuid: "76e7ebb1-1bd5-87fd-a8cb-e3f9e1a0b675"
-uuid: "5a1feebb-1fb2-807a-bfb3-a0b75636a41c"
-horo: 7
-bonds:
-  in:
-    - collection
-    - description
-    - law
-    - name
-    - platform
-    - population
-    - product
-    - url
-  out:
-    - collection
-    - description
-    - law
-    - name
-    - platform
-    - population
-    - product
-    - url
+coordinate: "target · 8/crest · 89ecfb94"
+contentUuid: "115cec1e-2301-5847-850f-eb10b32ba72b"
+diamondUuid: "2b86593b-6897-8dcd-b3a0-04031bb59830"
+uuid: "89ecfb94-1fc3-8cda-a672-704fa8a7c493"
+horo: 8
 typography:
   partition: target
   bondDegree: 29
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collection
-    - description
-    - law
-    - name
-    - platform
-    - population
-    - product
-    - url
-  matrix:
-    - collection
-    - description
-    - law
-    - name
-    - platform
-    - population
-    - product
-    - url
-  backlinks:
-    - collection
-    - description
-    - law
-    - name
-    - platform
-    - population
-    - product
-    - url
 signatures:
-  computationUuid: "3b8dc690-9d62-8d95-a27a-b5a522b172c2"
+  computationUuid: "2c5b7675-2ea1-80dd-ac2c-57df9612f7c4"
   stages:
     - stage: path
       stageUuid: "47fd291e-2854-8ab1-8dd0-0e435e6db5c1"
@@ -73,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e496a4bf-9334-8864-a5f3-5e861d3a7ccd"
     - stage: horo
-      stageUuid: "5984e1a4-6c91-865d-955f-afcf52271053"
+      stageUuid: "2a6d5d2b-667b-836c-9ad2-d6c1d40133e8"
     - stage: seal
-      stageUuid: "bdc06d53-26a6-8212-b7f9-c59b1785f52b"
+      stageUuid: "f708fe79-a7fa-80a4-84eb-f354d5e85688"
     - stage: uuid
-      stageUuid: "09585fd8-5793-8889-b3fc-84267bf77a86"
+      stageUuid: "43c384fd-b32e-8063-b0f2-570a8ea4219a"
 version: 2
 ---
 # target

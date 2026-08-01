@@ -1,102 +1,35 @@
 ---
 name: exercise
 description: "Use when reasoning about exercise as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/exercise
-coordinate: exercise · 4/weave · d1f023fc
-contentUuid: "d2a5eb6a-7a99-598f-aff5-7b07ba7d9a2d"
-diamondUuid: "efbf4cff-765c-836e-8252-8e3cc8bee0a4"
-uuid: "d1f023fc-c80f-875b-89f4-35eb6d6c6318"
-horo: 4
-bonds:
-  in:
-    - action
-    - collapse
-    - course
-    - diet
-    - gym
-    - law
-    - merge
-    - plan
-    - related
-    - repetition
-    - sti
-    - type
-  out:
-    - action
-    - collapse
-    - course
-    - diet
-    - gym
-    - law
-    - merge
-    - plan
-    - related
-    - repetition
-    - sti
-    - type
+atomPath: "vocabulary/exercise"
+coordinate: "vocabulary/exercise · 7/descent · bcc3a607"
+contentUuid: "1f2739b3-6a1d-5887-8134-10324badd009"
+diamondUuid: "26c62592-c369-8278-acbb-a8cabb8c9cfe"
+uuid: "bcc3a607-2254-8720-935c-98ede8ed72f4"
+horo: 7
 typography:
-  partition: exercise
+  partition: vocabulary
   bondDegree: 41
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - course
-    - diet
-    - gym
-    - law
-    - merge
-    - plan
-    - related
-    - sti
-    - type
-  matrix:
-    - action
-    - collapse
-    - course
-    - diet
-    - gym
-    - law
-    - merge
-    - plan
-    - related
-    - repetition
-    - sti
-    - type
-  backlinks:
-    - action
-    - collapse
-    - course
-    - diet
-    - gym
-    - law
-    - merge
-    - plan
-    - related
-    - repetition
-    - sti
-    - type
 signatures:
-  computationUuid: "2cffec24-aad0-8ce3-9847-d386798bad18"
+  computationUuid: "f614dd43-7ef5-87a4-93b9-db7cd6df10e7"
   stages:
     - stage: path
-      stageUuid: "38b57dbb-405a-8e4e-b455-fef988a92b1b"
+      stageUuid: "fdac0f7b-d5d2-83a5-a4df-49d5e51780bc"
     - stage: trinity
-      stageUuid: "31b95b9b-f722-8595-aa6c-a65b5d42f498"
+      stageUuid: "fe950779-a102-84af-b381-419d24ab130e"
     - stage: boundary
-      stageUuid: "f31402f0-5be3-85f8-923d-1d7872b1aa12"
+      stageUuid: "d5c0fcc3-97ac-80a1-832b-9027cf50e2da"
     - stage: links
-      stageUuid: "85e6bb7a-a0c4-873c-9329-d5577747e607"
+      stageUuid: "29748272-4325-82c6-a531-f25f1d15061a"
     - stage: horo
-      stageUuid: "060007e5-b8ce-852e-83ef-d2757d49fff2"
+      stageUuid: "9dd390e3-f28e-822b-ba6f-df0b55d9576b"
     - stage: seal
-      stageUuid: "c356e4b4-6e57-8dcf-ae07-446b99ee5399"
+      stageUuid: "1e450a2a-981b-8d40-85e7-69c191079571"
     - stage: uuid
-      stageUuid: "5043ff6a-d88d-8cc9-8e5a-35dca6f4b863"
+      stageUuid: "1d7e2c50-0109-8fe6-a5a9-f172b5750a29"
 version: 2
 ---
 # exercise

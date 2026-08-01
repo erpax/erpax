@@ -1,68 +1,35 @@
 ---
 name: iupac
 description: "Use when reasoning about iupac as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/iupac
-coordinate: iupac · 8/crest · cddaf2f8
-contentUuid: "3ab4c38d-5dfb-5cbe-a4c2-1c798cbc8b7e"
-diamondUuid: "d3e98d6d-2bc4-88f8-a89d-7632c02efbe5"
-uuid: "cddaf2f8-fe33-8839-bfc9-47effb2ce3ce"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - name
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - name
-    - sti
+atomPath: "vocabulary/iupac"
+coordinate: "vocabulary/iupac · 5/round · a813fc0d"
+contentUuid: "d8193e59-eb9a-50b6-85e5-d7717c8fa656"
+diamondUuid: "beb1358d-4e3f-8a4a-bb48-a58b896fb6cf"
+uuid: "a813fc0d-1d4b-80be-bcf0-6333d8d8d79c"
+horo: 5
 typography:
-  partition: iupac
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - name
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - name
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - name
-    - sti
 signatures:
-  computationUuid: "4eb1ea4f-6795-8a83-8b2b-668e7bd6e831"
+  computationUuid: "10c6882d-8456-8cb3-99d8-d115c49bddbe"
   stages:
     - stage: path
-      stageUuid: "d8620bc9-afc7-8559-ac39-54751240a8ab"
+      stageUuid: "1b40568d-d332-8d56-95f1-9bd9a16e9a91"
     - stage: trinity
-      stageUuid: "e22ca72a-2d1e-8372-bde5-9078cd55a473"
+      stageUuid: "8d4a55f4-301d-810e-89a5-f6025aa882b7"
     - stage: boundary
-      stageUuid: "caffe130-508f-8408-82c3-7992da953041"
+      stageUuid: "1a3b50a7-5b43-8d22-bf64-6f60d4128760"
     - stage: links
-      stageUuid: "83997114-e9e7-8679-804e-0d4dc4b582c0"
+      stageUuid: "ec6648c8-ee09-8b2f-91e3-1345d223c628"
     - stage: horo
-      stageUuid: "da48f3b7-baa6-86b0-86b8-b3e75a481e43"
+      stageUuid: "8aaadc5a-4d77-80d1-a0b4-5bcf0e40ee26"
     - stage: seal
-      stageUuid: "ab04994c-653c-8aa1-b2e3-73f96d8fb0c6"
+      stageUuid: "ac261bc4-2e50-8fad-a765-02e568126563"
     - stage: uuid
-      stageUuid: "82a33b25-0c70-8f73-b5c9-2456160599c0"
+      stageUuid: "dd591fef-71e2-8b8b-ae67-1b3fed2b6b54"
 version: 2
 ---
 # iupac

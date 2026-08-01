@@ -2,47 +2,19 @@
 name: dead
 description: "Use when checking the corpus for dead weight without re-deriving it by hand — deadScripts lists non-TS scripts (.mjs/.js) that nothing references (invokers live in package.json, hooks, imports). A file is live iff something names it; else it is entropy. The partner skill: the reference graph is a fact src already holds, handed back as one call, so keeping healthy is a READ not a grep-assembled pass."
 atomPath: dead
-coordinate: "dead · 1/base · fe5d372b"
-contentUuid: "45582748-44f3-5d22-9595-93759bfe6e74"
-diamondUuid: "46ed60dd-d2e2-888c-8ca8-242cf8ba2eb3"
-uuid: "fe5d372b-a244-8a19-80bc-4950f07e7aef"
-horo: 1
-bonds:
-  in:
-    - gate
-    - law
-    - merge
-    - readme
-  out:
-    - gate
-    - law
-    - merge
-    - readme
+coordinate: "dead · 2/share · 351122b7"
+contentUuid: "87395f1e-5a8f-5fb9-9f2d-0b8acb495b2c"
+diamondUuid: "1a5641a1-1cc0-8ce7-8cc4-f3ec3e140d16"
+uuid: "351122b7-1590-8cb1-91ed-8a8367cd0e11"
+horo: 2
 typography:
   partition: dead
   bondDegree: 12
-  neighbors: []
 standards:
   - "the reference graph — a file is live iff something invokes/imports it; else it is entropy"
 bindings: []
-neighbors:
-  wikilink:
-    - gate
-    - law
-    - merge
-    - readme
-  matrix:
-    - gate
-    - law
-    - merge
-    - readme
-  backlinks:
-    - gate
-    - law
-    - merge
-    - readme
 signatures:
-  computationUuid: "e8375357-b175-8ade-be79-71d26efd5d6f"
+  computationUuid: "2ce247f4-f895-8020-a0c1-6377172b38eb"
   stages:
     - stage: path
       stageUuid: "3e65e07c-169b-8f54-b970-da3627c19096"
@@ -53,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2607ce8c-3195-89ba-8a2e-43f8b0b38d64"
     - stage: horo
-      stageUuid: "d9eb554f-7fc9-8dad-8bdd-57085c2c187a"
+      stageUuid: "901e7d9a-cb4e-8114-9f3c-914965b9ebcb"
     - stage: seal
       stageUuid: "334b6fb9-b848-8386-93ad-4537d1ef9b93"
     - stage: uuid
-      stageUuid: "0bb33820-58bd-8e73-acab-969fe2bb16a6"
+      stageUuid: "872c1607-784b-86ae-a973-725e6d2f5763"
 version: 2
 ---
 # dead — the corpus names its own dead weight

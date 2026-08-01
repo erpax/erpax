@@ -2,188 +2,37 @@
 name: conservation
 description: "Use when reasoning about what is conserved across a flow — nothing is created or destroyed, only transformed (mass-energy; Noether — every continuous symmetry yields a conserved quantity), which in erpax IS double-entry — Σdebit=Σcredit, every config a balanced gateway, the pot conserved. The physics root of the accounting law; an open system conserves by accounting for what crosses its boundary (the borrowed anchor)."
 atomPath: conservation
-coordinate: "conservation · 1/base · c28de118"
-contentUuid: "e717a855-b591-596d-accc-ad8085d8458e"
-diamondUuid: "a0ac2be9-a959-84df-89b9-c3378b778884"
-uuid: "c28de118-f211-8cec-b97c-26e293a62c4d"
-horo: 1
-bonds:
-  in:
-    - accounting
-    - anchor
-    - artery
-    - balance
-    - biomass
-    - blockchain
-    - blood
-    - compost
-    - ecosystem
-    - emission
-    - energy
-    - entropy
-    - entry
-    - equity
-    - fold
-    - gate
-    - heart
-    - hooks
-    - law
-    - lung
-    - mycelium
-    - proof
-    - quantum
-    - readme
-    - reconcile
-    - reconciliation
-    - skills
-    - soil
-    - sustainability
-    - unavoidable
-    - uuid
-    - vein
-  out:
-    - accounting
-    - anchor
-    - artery
-    - balance
-    - biomass
-    - blockchain
-    - blood
-    - compost
-    - ecosystem
-    - emission
-    - energy
-    - entropy
-    - entry
-    - equity
-    - fold
-    - gate
-    - heart
-    - hooks
-    - law
-    - lung
-    - mycelium
-    - proof
-    - quantum
-    - readme
-    - reconcile
-    - reconciliation
-    - skills
-    - soil
-    - sustainability
-    - unavoidable
-    - uuid
-    - vein
+coordinate: "conservation · 5/round · 1218c9a2"
+contentUuid: "a1e49ff3-6c73-5f16-b98c-0e9eb4601420"
+diamondUuid: "f48e7f8d-fd58-831e-a9b7-0af83305a8bf"
+uuid: "1218c9a2-db31-86a2-bb73-10c127a0c909"
+horo: 5
 typography:
   partition: conservation
   bondDegree: 99
-  neighbors: []
 standards:
   - "Double-entry bookkeeping (Pacioli, 1494) — Σdebit = Σcredit"
   - First Law of Thermodynamics — energy is conserved in an isolated system
   - "Noether's theorem (E. Noether, 1918) — continuous symmetry ⇔ conserved quantity"
   - "UBL-2.1"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - anchor
-    - balance
-    - biomass
-    - ecosystem
-    - energy
-    - entropy
-    - entry
-    - gate
-    - hooks
-    - law
-    - proof
-    - reconcile
-    - sustainability
-    - uuid
-  matrix:
-    - accounting
-    - anchor
-    - artery
-    - balance
-    - biomass
-    - blockchain
-    - blood
-    - compost
-    - ecosystem
-    - emission
-    - energy
-    - entropy
-    - entry
-    - equity
-    - fold
-    - gate
-    - heart
-    - hooks
-    - law
-    - lung
-    - mycelium
-    - proof
-    - quantum
-    - readme
-    - reconcile
-    - reconciliation
-    - skills
-    - soil
-    - sustainability
-    - unavoidable
-    - uuid
-    - vein
-  backlinks:
-    - accounting
-    - anchor
-    - artery
-    - balance
-    - biomass
-    - blockchain
-    - blood
-    - compost
-    - ecosystem
-    - emission
-    - energy
-    - entropy
-    - entry
-    - equity
-    - fold
-    - gate
-    - heart
-    - hooks
-    - law
-    - lung
-    - mycelium
-    - proof
-    - quantum
-    - readme
-    - reconcile
-    - reconciliation
-    - skills
-    - soil
-    - sustainability
-    - unavoidable
-    - uuid
-    - vein
 signatures:
-  computationUuid: "98ee6c7d-42db-8f52-be4b-e583b36ef9f8"
+  computationUuid: "021bcea5-70e1-826f-aac8-08c405fa2f8a"
   stages:
     - stage: path
       stageUuid: "4da50aaf-bca0-808d-a7b5-181ad11c2a01"
     - stage: trinity
       stageUuid: "feef67a5-6f21-8917-b026-f482db01fcd2"
     - stage: boundary
-      stageUuid: "ec7b43e7-4ca1-84a2-9646-6a12b380855d"
+      stageUuid: "8b6b9fc1-9632-8871-a4bf-e38d842115f3"
     - stage: links
       stageUuid: "a40f802a-4d15-872b-ab9e-685b84c57294"
     - stage: horo
-      stageUuid: "8c9f3c05-0739-817f-adb0-4205efee6925"
+      stageUuid: "8a3468fa-df20-8490-82e3-03dc34eba50a"
     - stage: seal
       stageUuid: "d44e2523-c79e-8d62-aac8-8d1127c3641c"
     - stage: uuid
-      stageUuid: "8be68cc8-894e-8216-b5b7-cf8ca889fa83"
+      stageUuid: "f72b8270-56b5-86b6-a55d-8a8168df9fc9"
 version: 2
 ---
 # conservation — nothing is lost, only transformed (the root of double-entry)

@@ -1,76 +1,34 @@
 ---
 name: intangible
 description: "Use when reasoning about intangible — Use for identifiable intangible assets — patents, licenses, trademarks, software, customer relationships — subject to amortization and impairment per IAS-38; distinct from goodwill"
-atomPath: vocabulary/intangible
-coordinate: intangible · 5/round · 1afbce66
-contentUuid: "3b4938cb-da2a-5db9-825d-a082c51a78d8"
-diamondUuid: "7203ccf0-1950-8d9b-8281-9d610b7834f6"
-uuid: "1afbce66-21bc-82ea-8388-be8670819fd6"
-horo: 5
-bonds:
-  in:
-    - amortize
-    - assets
-    - combinations
-    - impairment
-    - law
-    - medical
-    - schedules
-  out:
-    - amortize
-    - assets
-    - combinations
-    - impairment
-    - law
-    - medical
-    - schedules
+atomPath: "vocabulary/intangible"
+coordinate: "vocabulary/intangible · 4/weave · 80551499"
+contentUuid: "fdadafd8-7610-5326-81e0-1f64bb34ada8"
+diamondUuid: "807a277a-5a33-8cd3-92bc-5e63b7a83d9b"
+uuid: "80551499-e5c0-8f4a-8ed5-f13a553f26fa"
+horo: 4
 typography:
-  partition: intangible
-  bondDegree: 22
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 23
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - amortize
-    - assets
-    - combinations
-    - impairment
-    - law
-    - schedules
-  matrix:
-    - amortize
-    - assets
-    - combinations
-    - impairment
-    - law
-    - medical
-    - schedules
-  backlinks:
-    - amortize
-    - assets
-    - combinations
-    - impairment
-    - law
-    - medical
-    - schedules
 signatures:
-  computationUuid: "d4c56b5a-1e67-8f4d-b97c-da1eed5f9b83"
+  computationUuid: "8db539f9-a0fc-8f2e-a4e5-56c67488232c"
   stages:
     - stage: path
-      stageUuid: "5e6790a8-e147-8abb-8d31-7f19ec995299"
+      stageUuid: "9ec4bbc3-5e38-856b-9331-3a3f619f04b3"
     - stage: trinity
-      stageUuid: "f2701da7-06e2-81db-9c6b-ad9633216878"
+      stageUuid: "51f90945-460c-839d-b0c3-3d01c934f831"
     - stage: boundary
-      stageUuid: "ff552687-5924-899e-8594-496f5ee92dc4"
+      stageUuid: "c6404117-183f-8961-9d57-56d0de3ecd29"
     - stage: links
-      stageUuid: "81bb1137-4a63-83c4-a959-7ff565788fb2"
+      stageUuid: "f2a4d063-d4b5-89ab-89ba-e2e8a211046b"
     - stage: horo
-      stageUuid: "09257264-b90f-8a10-b5f5-0459818a62d9"
+      stageUuid: "d252529f-2527-89b7-b668-771871a58d04"
     - stage: seal
-      stageUuid: "22c6103d-b213-8fdc-8c9c-7200c2dcae2e"
+      stageUuid: "44ef121a-3bc4-88de-be05-ce633fc2797b"
     - stage: uuid
-      stageUuid: "2cd109a4-7a04-872e-9046-af33d0a8e9fb"
+      stageUuid: "736efe04-439c-8be1-b02e-95274791c703"
 version: 2
 ---
 # intangible

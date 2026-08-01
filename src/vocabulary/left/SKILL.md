@@ -1,63 +1,35 @@
 ---
 name: left
 description: "Use when reasoning about left as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/left
-coordinate: left · 2/share · ddfab307
-contentUuid: "277bf3a6-78d7-5f17-822c-af52ca8f56ab"
-diamondUuid: "7781fbff-83b8-83b2-b38f-76f189a9b4af"
-uuid: "ddfab307-e78a-8efc-afb2-8d0bd84ad62c"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/left"
+coordinate: "vocabulary/left · 7/descent · ea45bec8"
+contentUuid: "87f10290-0419-5cb5-bc56-526f5225f4e0"
+diamondUuid: "c1e0a853-b4da-82d4-bb19-8459c796ac87"
+uuid: "ea45bec8-e76f-8c1e-8c64-0464023d451b"
+horo: 7
 typography:
-  partition: left
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "f96f743c-8128-8371-af6a-2dd23729ae75"
+  computationUuid: "ed9b012a-8ffd-843b-b67f-749facafa6b0"
   stages:
     - stage: path
-      stageUuid: "ba7b4cbf-2d51-8c2e-ba72-249c8d836871"
+      stageUuid: "90a73fcc-796d-8b9d-87c9-53702f14dfd4"
     - stage: trinity
-      stageUuid: "8402bf15-64fc-87a6-bc5d-f81fd5151d39"
+      stageUuid: "163e4043-c55c-879c-b488-6a50fc0dd09d"
     - stage: boundary
-      stageUuid: "eb1f3242-283a-87bc-86c6-50ac6a2ba713"
+      stageUuid: "c1ea361c-34ca-8963-b11b-4ad8adcb2654"
     - stage: links
-      stageUuid: "6693bdac-a3b1-8563-91f9-c4e77e0e057c"
+      stageUuid: "f6c7ce84-9af1-81eb-bdb5-cb43006d2e33"
     - stage: horo
-      stageUuid: "81454208-fc89-8917-a257-7f07d1b47d52"
+      stageUuid: "058bb8de-fd85-84d8-99ea-e9ff8b7b5da1"
     - stage: seal
-      stageUuid: "a6dd6747-8235-851f-aba1-df46efddb2ba"
+      stageUuid: "13388c26-c6f6-86e8-850c-cc9fe8d0dc5d"
     - stage: uuid
-      stageUuid: "41950b11-e788-8ceb-a23b-072f5a1d4343"
+      stageUuid: "d2b7fe72-a606-8934-9cd8-e99652fc1053"
 version: 2
 ---
 # left

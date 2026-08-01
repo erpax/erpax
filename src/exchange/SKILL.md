@@ -2,46 +2,14 @@
 name: exchange
 description: "Use when reasoning about exchange — FORM: **a cross-domain exchange is gated, sanitized, and receipted — the requester gets the data AND the proof of how it was obtained.** Party (one domain, its own identity) asks p"
 atomPath: exchange
-coordinate: "exchange · 4/weave · 34765d11"
-contentUuid: "21db8691-eca6-5dc2-a919-942bc0c85142"
-diamondUuid: "971a587b-f204-8925-83ac-843e3393ee09"
-uuid: "34765d11-34f4-8ae7-8958-2faac80a9fca"
-horo: 4
-bonds:
-  in:
-    - connections
-    - current
-    - federation
-    - give
-    - identity
-    - law
-    - merge
-    - receipt
-    - sandbox
-    - society
-    - specification
-    - spread
-    - symbiosis
-    - take
-  out:
-    - connections
-    - current
-    - federation
-    - give
-    - identity
-    - law
-    - merge
-    - receipt
-    - sandbox
-    - society
-    - specification
-    - spread
-    - symbiosis
-    - take
+coordinate: "exchange · 7/descent · 0a17707b"
+contentUuid: "59f32ea3-5501-575d-b607-49ae36c5347f"
+diamondUuid: "75a10689-14d1-8c6d-ad42-0463c4d33863"
+uuid: "0a17707b-d7de-8f4e-9d0e-c6b759695dc9"
+horo: 7
 typography:
   partition: exchange
   bondDegree: 43
-  neighbors: []
 standards:
   - "EU-2016/679"
   - "GDPR Art.5(1)(c) data-minimisation (release only the granted fields)"
@@ -52,50 +20,8 @@ standards:
   - "ISO/IEC-27001:2022"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - connections
-    - federation
-    - give
-    - identity
-    - law
-    - merge
-    - receipt
-    - sandbox
-    - society
-    - take
-  matrix:
-    - connections
-    - current
-    - federation
-    - give
-    - identity
-    - law
-    - merge
-    - receipt
-    - sandbox
-    - society
-    - specification
-    - spread
-    - symbiosis
-    - take
-  backlinks:
-    - connections
-    - current
-    - federation
-    - give
-    - identity
-    - law
-    - merge
-    - receipt
-    - sandbox
-    - society
-    - specification
-    - spread
-    - symbiosis
-    - take
 signatures:
-  computationUuid: "ae1ff276-a9f0-8ca0-b029-bfb2bff44c48"
+  computationUuid: "cdb715f9-00f7-862a-8476-45b75eba9761"
   stages:
     - stage: path
       stageUuid: "991b5f8f-298a-8f09-8315-f7dfb61efe52"
@@ -106,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "7ee5a9a7-e172-840f-8783-4dd0724a9c93"
     - stage: horo
-      stageUuid: "2380b8bb-bd49-838f-a1ee-78f055fcc8dd"
+      stageUuid: "3a6472c8-1fd6-84b1-99c7-f38969dc3dd2"
     - stage: seal
       stageUuid: "6c9ba44c-525d-852c-bc20-becc2a651f3d"
     - stage: uuid
-      stageUuid: "4ef823c8-5b3d-8102-8c01-65d3fd19d3be"
+      stageUuid: "0ecbfc85-191b-8de5-a80f-bb47ddd46625"
 version: 2
 ---
 # exchange — governed cross-domain data exchange with provenance

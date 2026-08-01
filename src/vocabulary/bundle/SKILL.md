@@ -1,76 +1,34 @@
 ---
 name: bundle
 description: "Use when packaging multiple items for joint sale — bundle composition, bundle pricing (vs. component sum), discount rules for bundles."
-atomPath: vocabulary/bundle
-coordinate: bundle · 5/round · d68a7420
-contentUuid: "30d5799e-99fc-54cd-b381-f42bc5414245"
-diamondUuid: "023e02e2-8d87-88e4-b138-d5dcd83445e5"
-uuid: "d68a7420-039e-8899-ab79-0a6db248b76b"
-horo: 5
-bonds:
-  in:
-    - choice
-    - discount
-    - items
-    - law
-    - materials
-    - orders
-    - variant
-  out:
-    - choice
-    - discount
-    - items
-    - law
-    - materials
-    - orders
-    - variant
+atomPath: "vocabulary/bundle"
+coordinate: "vocabulary/bundle · 8/crest · 840e70f9"
+contentUuid: "25586cb5-e0bc-5fe7-a8a9-876562ef7ce3"
+diamondUuid: "f054a527-4ba4-8bff-9e9b-94bc7e2ed1a3"
+uuid: "840e70f9-067b-8ef8-9fd2-a78a818bdfc2"
+horo: 8
 typography:
-  partition: bundle
+  partition: vocabulary
   bondDegree: 21
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - discount
-    - items
-    - law
-    - materials
-    - orders
-    - variant
-  matrix:
-    - choice
-    - discount
-    - items
-    - law
-    - materials
-    - orders
-    - variant
-  backlinks:
-    - choice
-    - discount
-    - items
-    - law
-    - materials
-    - orders
-    - variant
 signatures:
-  computationUuid: "b4fadeb5-7c9a-8522-9c57-82483e2ec628"
+  computationUuid: "77d3a92a-dc8b-8efa-9918-52e2744e7829"
   stages:
     - stage: path
-      stageUuid: "88332beb-6aa2-8ba4-b9ed-7dd138ec1e7f"
+      stageUuid: "393bbaf6-d189-8ee9-9694-aa21b4de91b2"
     - stage: trinity
-      stageUuid: "01a30a84-dc9e-8a1b-b692-168b887d36ea"
+      stageUuid: "3e7bd9a8-0ccf-81c0-a4fc-be800b2d60c8"
     - stage: boundary
-      stageUuid: "e434990c-6af3-8d5a-8fb3-96ab66ed444f"
+      stageUuid: "51cf19ce-c4b4-8b6d-8a95-891f05672301"
     - stage: links
-      stageUuid: "c628a9a3-e7c6-846c-91a6-a24d05014178"
+      stageUuid: "f71a29f9-c127-8769-8d11-858541f32b69"
     - stage: horo
-      stageUuid: "a3ce34bc-102b-8898-b7e6-236cf9a563d3"
+      stageUuid: "c658e0be-cac4-8469-b682-a7152e8d1d6d"
     - stage: seal
-      stageUuid: "d6f99f28-fadd-8c78-af73-1cd01c78dde8"
+      stageUuid: "7dbaa0b0-25e0-88b0-8a60-7bdc8a1ebdb5"
     - stage: uuid
-      stageUuid: "9ff929f7-1148-852c-93ac-c9710e696005"
+      stageUuid: "36847479-dcab-8ea3-a38a-100c2cdcce1c"
 version: 2
 ---
 # bundle

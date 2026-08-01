@@ -1,63 +1,35 @@
 ---
 name: hvacbusiness
 description: "Use when reasoning about hvacbusiness as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/hvacbusiness
-coordinate: hvacbusiness · 8/crest · f0e6764d
-contentUuid: "03633887-ed51-56c4-8249-797f06e19231"
-diamondUuid: "e0acbdb3-73be-8b6c-9e79-289f6054b2b0"
-uuid: "f0e6764d-8e71-814c-9901-1e8dcf80a311"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/hvacbusiness"
+coordinate: "vocabulary/hvacbusiness · 2/share · 932a0bfc"
+contentUuid: "e7fa2efe-6f17-5b76-8ce6-9fff827e72a5"
+diamondUuid: "400abb78-e821-8d97-b764-85c438fbf216"
+uuid: "932a0bfc-3b46-88c1-b600-d50b23f395fa"
+horo: 2
 typography:
-  partition: hvacbusiness
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "e3436e46-976c-807d-8d3f-f9ba697d8053"
+  computationUuid: "62b6795c-f06c-80fc-b336-991ca2308b56"
   stages:
     - stage: path
-      stageUuid: "11ba5e5a-2c06-8890-a641-43a6b50b0139"
+      stageUuid: "6a9cf101-4b9d-884f-91b6-142a5c08168b"
     - stage: trinity
-      stageUuid: "6e2340e7-15b1-8349-9f5f-eb865a727990"
+      stageUuid: "be6ece36-2d33-81fb-8ff2-a3430cdc21a9"
     - stage: boundary
-      stageUuid: "52f80306-2b8e-8029-94fa-7b563b9786fe"
+      stageUuid: "c76dcec3-fc34-84b5-b648-daa743d98289"
     - stage: links
-      stageUuid: "a4e95dbf-08fb-850b-810c-faed652dd9f3"
+      stageUuid: "1a566fd1-1c12-8604-b98b-9bea0db5517e"
     - stage: horo
-      stageUuid: "4255d479-fb74-8793-b4ec-c4b6127d702b"
+      stageUuid: "e7c5a595-76d9-8b41-978e-a1b7fe30b630"
     - stage: seal
-      stageUuid: "3e49d05f-015d-8180-81c9-dff956a61601"
+      stageUuid: "440f2352-f61a-8496-97b5-3f92c20a61d0"
     - stage: uuid
-      stageUuid: "d2045e29-8149-8f5d-a34a-af096258cc66"
+      stageUuid: "c073129d-a14d-8d6f-8364-f7e8bde774ec"
 version: 2
 ---
 # hvacbusiness

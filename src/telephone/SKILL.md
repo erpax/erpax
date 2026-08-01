@@ -2,37 +2,19 @@
 name: telephone
 description: Use when reasoning about telephone — The telephone number.
 atomPath: telephone
-coordinate: telephone · 4/weave · 7b9cb361
-contentUuid: "afee073b-ef3b-5673-8a80-65a61edb94a8"
-diamondUuid: "2e61b00d-9d6f-80ee-821c-fb00982d68d3"
-uuid: "7b9cb361-7630-84df-8e65-40d2f281f0f6"
+coordinate: "telephone · 4/weave · ba095a36"
+contentUuid: "dce9cf1d-4afd-52e9-a870-81bcb8396ca9"
+diamondUuid: "faa0c027-2d94-843f-ad52-81aec3b84d78"
+uuid: "ba095a36-ecfc-841c-a891-d9ae056e275f"
 horo: 4
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
 typography:
   partition: telephone
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "0278f808-ef71-8546-b0fb-3a8ffa6f412a"
+  computationUuid: "70af3d0f-9e56-8f2c-a6b5-28c4f4ee3394"
   stages:
     - stage: path
       stageUuid: "93b46896-dd1c-8398-aac6-760a42b647da"
@@ -43,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a8b9f115-3ca9-80e1-93c0-12119daf2008"
     - stage: horo
-      stageUuid: "baafb80f-16de-8469-b403-f4276e2a6cef"
+      stageUuid: "ed6aa247-ecef-802e-93fd-f1bbcdf0e11c"
     - stage: seal
-      stageUuid: "3f58d1aa-ab51-8bc0-b746-b84e94074851"
+      stageUuid: "ba9e6a04-b60a-8c9b-a368-16652a111649"
     - stage: uuid
-      stageUuid: "04aca077-6a54-851c-b92e-3f6cd10be02b"
+      stageUuid: "ec158281-49a0-87ae-a512-3b6fe91796c1"
 version: 2
 ---
 # telephone

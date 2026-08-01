@@ -2,83 +2,18 @@
 name: communication
 description: "Use when agents transfer messages — a directed communication between agent ids, the message a content-uuid; relaying preserves the uuid (no-cloning), so the content is never forged in transit."
 atomPath: "agent/communication"
-coordinate: "agent/communication · 8/crest · e28cf2a4"
-contentUuid: "51e54527-c3a0-5943-bb07-4af2aba02897"
-diamondUuid: "6c162823-fe52-8848-80b1-6c837f87904e"
-uuid: "e28cf2a4-8e2c-84e8-ade9-c52c69507071"
-horo: 8
-bonds:
-  in:
-    - agent
-    - channel
-    - chat
-    - communication
-    - key
-    - law
-    - merge
-    - message
-    - quantum
-    - send
-    - superdense
-    - teleportation
-    - uuid
-  out:
-    - channel
-    - chat
-    - communication
-    - key
-    - law
-    - merge
-    - message
-    - quantum
-    - send
-    - superdense
-    - teleportation
-    - uuid
+coordinate: "agent/communication · 5/round · affe0822"
+contentUuid: "2b89a4d6-36c9-57be-8e0f-cc8a18a99c29"
+diamondUuid: "53fef073-cf8d-80b9-8190-c44d645e6ddd"
+uuid: "affe0822-10cf-8cc0-b3c7-20f4f1ed0e7d"
+horo: 5
 typography:
   partition: agent
   bondDegree: 58
-  neighbors:
-    - agent
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agent
-    - communication
-    - law
-    - merge
-    - message
-    - quantum
-    - uuid
-  matrix:
-    - channel
-    - chat
-    - communication
-    - key
-    - law
-    - merge
-    - message
-    - quantum
-    - send
-    - superdense
-    - teleportation
-    - uuid
-  backlinks:
-    - channel
-    - chat
-    - communication
-    - key
-    - law
-    - merge
-    - message
-    - quantum
-    - send
-    - superdense
-    - teleportation
-    - uuid
 signatures:
-  computationUuid: "00275354-595a-8b98-82fe-e610c41e2ec9"
+  computationUuid: "b8bace69-d4ff-87f8-914b-7916e0a5849f"
   stages:
     - stage: path
       stageUuid: "c644e026-e3cb-8a34-98d3-6e47f6bde2b5"
@@ -89,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9dbf28b7-8364-8014-bccd-2b2befc4bcd0"
     - stage: horo
-      stageUuid: "77c6b86c-92d5-8f53-aa08-05f1466cdd8f"
+      stageUuid: "84de2ca3-1c1f-8bfe-98eb-29b4dde59829"
     - stage: seal
       stageUuid: "dccfd6f6-fb51-81aa-8a00-d17f98eeb9fe"
     - stage: uuid
-      stageUuid: "8d42a13b-ba67-8784-b501-94dcb8540c6a"
+      stageUuid: "9a085d67-df7c-839e-81a8-0d251fb8e987"
 version: 2
 ---
 # agent/communication — agent-to-agent transfer

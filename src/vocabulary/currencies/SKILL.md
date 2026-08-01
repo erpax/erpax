@@ -1,68 +1,35 @@
 ---
 name: currencies
 description: "Use when reasoning about currencies as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/currencies
-coordinate: currencies · 2/share · 070e4252
-contentUuid: "e077edc3-241a-50ec-886a-afe71f728198"
-diamondUuid: "811b10f6-ae0e-85ea-8506-2f8001eddef0"
-uuid: "070e4252-3dc5-824c-9e18-acf8e700eec1"
-horo: 2
-bonds:
-  in:
-    - accepted
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - accepted
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/currencies"
+coordinate: "vocabulary/currencies · 1/base · 6fd80fbe"
+contentUuid: "19d4692e-83e2-52f4-8e3a-9ed5dec9a4b0"
+diamondUuid: "7d6501fd-a662-892d-a100-ead499e129c9"
+uuid: "6fd80fbe-d728-827f-945e-9624bfc66b06"
+horo: 1
 typography:
-  partition: currencies
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - accepted
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - accepted
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - accepted
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "18119a3f-301b-856b-ad9d-783ef8bd8daf"
+  computationUuid: "c7f3ef52-a169-80e1-98e2-657c8104ed6f"
   stages:
     - stage: path
-      stageUuid: "03aa5705-90fe-8b9b-bf94-d83f06aa8851"
+      stageUuid: "9f35c0ec-c4e3-80d2-848d-4dfda2b0c62a"
     - stage: trinity
-      stageUuid: "9af817a7-d3d4-8f38-b304-f5fcad8d3469"
+      stageUuid: "47841d0d-987a-8c99-a650-72e7902c770c"
     - stage: boundary
-      stageUuid: "30b129da-c40c-8781-969d-39dd4130da58"
+      stageUuid: "c8151122-8999-8d04-adbf-a2a2391033fa"
     - stage: links
-      stageUuid: "d313a2e8-83b9-8b3c-926d-715164bfd5fc"
+      stageUuid: "327cc44d-2a40-890b-bbce-9e048b53053b"
     - stage: horo
-      stageUuid: "a014c3e7-9f2c-848c-95e8-72c2587fb3a2"
+      stageUuid: "6011bb3d-4cb1-81f0-b0a6-f8d1b9a2d20b"
     - stage: seal
-      stageUuid: "ae70397b-6f82-862e-91c5-9b2749f4ea33"
+      stageUuid: "9bed5d68-e51d-83dd-8c35-e84fb8ee006e"
     - stage: uuid
-      stageUuid: "eb67cfaf-2a1e-8cee-b1db-70baf952dfd5"
+      stageUuid: "0dbee91c-ffcc-81ea-a0d5-0a4b4748b51e"
 version: 2
 ---
 # currencies

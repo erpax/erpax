@@ -2,81 +2,14 @@
 name: entries
 description: "Use when creating or auditing double-entry accounting records — balanced debit/credit lines, entry/posted/approval dates, period-lock enforcement, posted-immutability, and segregation-of-duties (creator ≠ approver). The core GL write target per IAS-1 and OECD SAF-T §3."
 atomPath: "journal/entries"
-coordinate: "journal/entries · 1/base · 448b4c9d"
-contentUuid: "69ca2698-6baf-5876-98af-9b45dab73a06"
-diamondUuid: "46461c75-7e79-8adb-95a0-d2853c3a267b"
-uuid: "448b4c9d-bf3f-810d-96d7-41f90b39ee1b"
-horo: 1
-bonds:
-  in:
-    - accounting
-    - accrual
-    - adjustments
-    - assets
-    - bookings
-    - classifications
-    - combinations
-    - cycles
-    - deduction
-    - deferral
-    - deferredrevenue
-    - elimination
-    - eliminations
-    - events
-    - harvest
-    - identity
-    - journal
-    - journals
-    - law
-    - modifications
-    - orders
-    - postings
-    - prepaid
-    - proof
-    - provision
-    - recognition
-    - reconciliations
-    - refunds
-    - runs
-    - sales
-    - standard
-    - transactions
-  out:
-    - accounting
-    - accrual
-    - adjustments
-    - assets
-    - bookings
-    - classifications
-    - combinations
-    - cycles
-    - deduction
-    - deferral
-    - deferredrevenue
-    - elimination
-    - eliminations
-    - events
-    - harvest
-    - identity
-    - journals
-    - law
-    - modifications
-    - orders
-    - postings
-    - prepaid
-    - proof
-    - provision
-    - recognition
-    - reconciliations
-    - refunds
-    - runs
-    - sales
-    - standard
-    - transactions
+coordinate: "journal/entries · 5/round · a811a892"
+contentUuid: "c3938615-7139-5453-b369-6ecbcbdd54b5"
+diamondUuid: "9c16fa59-da06-8987-bda8-837cdefb1f0d"
+uuid: "a811a892-75f2-8d69-b5db-4f923dceb122"
+horo: 5
 typography:
   partition: journal
   bondDegree: 0
-  neighbors: []
 standards:
   - "ECMA-262"
   - "IEEE-754"
@@ -89,80 +22,8 @@ standards:
   - "W3C-PROV-O"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - adjustments
-    - identity
-    - law
-    - proof
-    - standard
-  matrix:
-    - accounting
-    - accrual
-    - adjustments
-    - assets
-    - bookings
-    - classifications
-    - combinations
-    - cycles
-    - deduction
-    - deferral
-    - deferredrevenue
-    - elimination
-    - eliminations
-    - events
-    - harvest
-    - identity
-    - journals
-    - law
-    - modifications
-    - orders
-    - postings
-    - prepaid
-    - proof
-    - provision
-    - recognition
-    - reconciliations
-    - refunds
-    - runs
-    - sales
-    - standard
-    - transactions
-  backlinks:
-    - accounting
-    - accrual
-    - adjustments
-    - assets
-    - bookings
-    - classifications
-    - combinations
-    - cycles
-    - deduction
-    - deferral
-    - deferredrevenue
-    - elimination
-    - eliminations
-    - events
-    - harvest
-    - identity
-    - journals
-    - law
-    - modifications
-    - orders
-    - postings
-    - prepaid
-    - proof
-    - provision
-    - recognition
-    - reconciliations
-    - refunds
-    - runs
-    - sales
-    - standard
-    - transactions
 signatures:
-  computationUuid: "c71866e9-13ec-8dd8-8c08-3852615e6e56"
+  computationUuid: "8594e2a2-b0ff-89d3-be76-fa459724e2d5"
   stages:
     - stage: path
       stageUuid: "e1568b51-9231-8c31-b451-33e00acace8d"
@@ -173,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "d8a582b9-24ef-8760-a424-e9bb0b3974d0"
     - stage: horo
-      stageUuid: "37203637-262d-85b6-aa9d-8a54afeeca56"
+      stageUuid: "58e35dbe-8be1-822e-bf65-dd7a7eb3d6a3"
     - stage: seal
       stageUuid: "4d94095d-dde8-88d1-806a-155fee347f61"
     - stage: uuid
-      stageUuid: "7cb9b4f9-90db-842b-9d2b-055b7b11344d"
+      stageUuid: "80213f1b-27ed-83c2-81e9-12883ee1d24e"
 version: 2
 ---
 # journal-entries

@@ -1,57 +1,34 @@
 ---
 name: byline
 description: Use when modelling one byline — the singular model of the bylines collection (the plural store); the credited author line on a published article.
-atomPath: vocabulary/byline
-coordinate: byline · 7/descent · 54f337ce
-contentUuid: "4c1de17e-7d2f-55f1-a16f-2a64d3b8d7df"
-diamondUuid: "3f781fa3-fc4c-893f-a4b0-98978c76619b"
-uuid: "54f337ce-6a7d-8f2d-8b0f-70207cd4224b"
-horo: 7
-bonds:
-  in:
-    - article
-    - balance
-    - bylines
-  out:
-    - article
-    - balance
-    - bylines
+atomPath: "vocabulary/byline"
+coordinate: "vocabulary/byline · 4/weave · c2f1e53a"
+contentUuid: "e1b4d842-7b47-5628-91af-86582a742ef2"
+diamondUuid: "cbdecb1a-25b3-85bc-8086-272a3037f770"
+uuid: "c2f1e53a-18c3-830f-af97-c623915d409a"
+horo: 4
 typography:
-  partition: byline
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - article
-    - balance
-    - bylines
-  matrix:
-    - article
-    - balance
-    - bylines
-  backlinks:
-    - article
-    - balance
-    - bylines
 signatures:
-  computationUuid: "810e37a0-c31c-8e0f-aeb4-0ddd6e4f1269"
+  computationUuid: "7473b40a-476d-83ff-b875-1f06005a57b2"
   stages:
     - stage: path
-      stageUuid: "69c3d997-487f-8641-a9e1-5bd98d5393d0"
+      stageUuid: "f8941131-fffc-8b8f-ad90-fdcf0f24bfbd"
     - stage: trinity
-      stageUuid: "ff01cdc2-aafa-8463-9827-d9c6d98dcdde"
+      stageUuid: "9b5ae712-9f0b-8090-8a7c-c181cc376697"
     - stage: boundary
-      stageUuid: "935b96a2-3a3e-871e-9964-83e141b5b347"
+      stageUuid: "8cc68e1c-3205-8cdc-8a43-a735348d44b1"
     - stage: links
-      stageUuid: "7b401ba5-2d07-870d-8f67-ce5e5c62580c"
+      stageUuid: "fb0708ca-b035-89b2-963f-eea8f2d1ec08"
     - stage: horo
-      stageUuid: "eaae9cf8-267a-8c2e-8e38-09793d42e6c8"
+      stageUuid: "fd0fb1c2-46f4-81c7-8c73-6fc605a27291"
     - stage: seal
-      stageUuid: "df6b7083-abef-82ff-aa9b-cae7b19fe0a0"
+      stageUuid: "b7406938-f6f2-8b52-aed4-464b5e15436d"
     - stage: uuid
-      stageUuid: "3aa20e15-f7ca-813d-bf65-3e8ac0886630"
+      stageUuid: "1781e54d-93ed-8bce-b1e5-a044394fca11"
 version: 2
 ---
 # byline — the model of one [[bylines]] row

@@ -1,58 +1,35 @@
 ---
 name: airport
 description: Use when reasoning about airport — An airport.
-atomPath: vocabulary/airport
-coordinate: airport · 7/descent · fa67a452
-contentUuid: "b6bf2091-9136-5cc4-8a07-2c32c267c955"
-diamondUuid: "e1636423-7e4c-85be-93c3-db25d92c1022"
-uuid: "fa67a452-9148-84cd-bb15-8cb6bff8c8d0"
-horo: 7
-bonds:
-  in:
-    - arrival
-    - departure
-    - law
-  out:
-    - arrival
-    - departure
-    - law
+atomPath: "vocabulary/airport"
+coordinate: "vocabulary/airport · 2/share · 577e063d"
+contentUuid: "929210ea-6730-58ff-a562-9ce8d36bad2f"
+diamondUuid: "77fda227-f45c-85f8-9bc3-a02db5e53e45"
+uuid: "577e063d-9bbd-8fe4-8c17-1a80f2556e6a"
+horo: 2
 typography:
-  partition: airport
+  partition: vocabulary
   bondDegree: 11
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - arrival
-    - departure
-    - law
-  matrix:
-    - arrival
-    - departure
-    - law
-  backlinks:
-    - arrival
-    - departure
-    - law
 signatures:
-  computationUuid: "64f8e733-0a12-80fd-b3f9-1f42ba45e8a3"
+  computationUuid: "e73a31c7-1133-802b-9675-9c90054877b5"
   stages:
     - stage: path
-      stageUuid: "04b76581-9dfa-8445-a20b-2b36154e4b23"
+      stageUuid: "c23f145c-7a8c-86fe-83bc-dcb7dbcaa397"
     - stage: trinity
-      stageUuid: "9b9d79f7-1ce8-86b4-8951-c8ff0dd00061"
+      stageUuid: "74541891-2aed-8c54-a556-05313aa8c61b"
     - stage: boundary
-      stageUuid: "778259c5-d870-8306-922b-44ad0f740a8e"
+      stageUuid: "e73df01c-c3e8-80df-a80b-e358081bcb8b"
     - stage: links
-      stageUuid: "43350ead-57ba-87d5-936c-36a9faac707c"
+      stageUuid: "0309d007-9190-847f-8e70-228985368a64"
     - stage: horo
-      stageUuid: "ce56fb6b-eb0d-82b7-af2c-08e55135257c"
+      stageUuid: "1c1da675-afef-895c-a14b-e71bf6e5595a"
     - stage: seal
-      stageUuid: "b2312a22-69a2-83ed-b2bc-33bc3668edcd"
+      stageUuid: "ce58adee-e65c-8eb5-bdd2-b3d322b02b06"
     - stage: uuid
-      stageUuid: "97f6b3fa-688f-869b-8905-e6fb4a939a40"
+      stageUuid: "51941b7e-0705-8ddc-a284-de4014292e5c"
 version: 2
 ---
 # airport

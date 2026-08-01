@@ -2,111 +2,18 @@
 name: component
 description: Use when reasoning about the link UI component.
 atomPath: "link/component"
-coordinate: "link/component · 2/share · c54723ae"
-contentUuid: "d21fdd39-4e1c-5626-8c80-679f72adc06f"
-diamondUuid: "edbcd849-d87b-84b9-9d3a-9861d88d4b92"
-uuid: "c54723ae-9d9e-8ed9-ada0-7cc23ae5d395"
-horo: 2
-bonds:
-  in:
-    - accessibility
-    - archive
-    - atom
-    - component
-    - components
-    - computer
-    - css
-    - design
-    - diamond
-    - enumeration
-    - interactive
-    - law
-    - link
-    - pixel
-    - price
-    - primitive
-    - render
-    - standard
-    - theme
-    - token
-    - ui
-    - uuid
-  out:
-    - accessibility
-    - archive
-    - atom
-    - component
-    - components
-    - computer
-    - css
-    - design
-    - diamond
-    - enumeration
-    - interactive
-    - law
-    - pixel
-    - price
-    - primitive
-    - render
-    - standard
-    - theme
-    - token
-    - ui
-    - uuid
+coordinate: "link/component · 1/base · af2c360b"
+contentUuid: "85eb2b0e-5548-5b8d-941a-a078f6908209"
+diamondUuid: "edc69454-0d85-8b64-b959-485df87bc716"
+uuid: "af2c360b-56a6-8aef-bf5e-a0e06f8cdd40"
+horo: 1
 typography:
   partition: link
   bondDegree: 70
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink: []
-  matrix:
-    - accessibility
-    - archive
-    - atom
-    - component
-    - components
-    - computer
-    - css
-    - design
-    - diamond
-    - enumeration
-    - interactive
-    - law
-    - pixel
-    - price
-    - primitive
-    - render
-    - standard
-    - theme
-    - token
-    - ui
-    - uuid
-  backlinks:
-    - accessibility
-    - archive
-    - atom
-    - component
-    - components
-    - computer
-    - css
-    - design
-    - diamond
-    - enumeration
-    - interactive
-    - law
-    - pixel
-    - price
-    - primitive
-    - render
-    - standard
-    - theme
-    - token
-    - ui
-    - uuid
 signatures:
-  computationUuid: "bedcd890-5f66-852f-817b-4431157be435"
+  computationUuid: "24fc1f13-fb87-8196-a148-061727205b97"
   stages:
     - stage: path
       stageUuid: "084f41de-5395-88d1-bb54-54c91bf405d2"
@@ -117,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c679df9f-ccb2-8ae8-a73f-c38a3d96cccf"
     - stage: horo
-      stageUuid: "dff52e09-5ffd-81ce-9759-274eb52fa7fb"
+      stageUuid: "0f815ff9-00b9-8155-a68f-33469f1dde2b"
     - stage: seal
       stageUuid: "81f39d2e-3a32-82a5-9ff8-d757319b1595"
     - stage: uuid
-      stageUuid: "8ea37beb-c901-8b1a-9e34-e53140b35c35"
+      stageUuid: "cf54b34f-6b5f-8df5-8c3e-5152f8c4ee04"
 version: 2
 ---
 # link/component

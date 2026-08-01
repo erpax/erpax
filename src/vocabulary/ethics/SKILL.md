@@ -1,80 +1,35 @@
 ---
 name: ethics
 description: "Use when reasoning about ethics as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/ethics
-coordinate: ethics · 2/share · a51470ba
-contentUuid: "224d0796-e36a-5737-9492-343baf02c68a"
-diamondUuid: "782e6300-3aad-8661-9dea-055f9dc448f8"
-uuid: "a51470ba-d2d4-8764-af3c-38e8d5e6ea37"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - jainism
-    - law
-    - merge
-    - policy
-    - sikhism
-    - sti
-    - zoroastrianism
-  out:
-    - collapse
-    - jainism
-    - law
-    - merge
-    - policy
-    - sikhism
-    - sti
-    - zoroastrianism
+atomPath: "vocabulary/ethics"
+coordinate: "vocabulary/ethics · 4/weave · ddfdd272"
+contentUuid: "bf0fb6f9-5df0-51d9-ad35-d82c414a6745"
+diamondUuid: "e7100796-6c05-85bc-a1f8-c19a4e953c06"
+uuid: "ddfdd272-f0ac-886a-8e4e-fdf14ff56f53"
+horo: 4
 typography:
-  partition: ethics
+  partition: vocabulary
   bondDegree: 25
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - policy
-    - sti
-  matrix:
-    - collapse
-    - jainism
-    - law
-    - merge
-    - policy
-    - sikhism
-    - sti
-    - zoroastrianism
-  backlinks:
-    - collapse
-    - jainism
-    - law
-    - merge
-    - policy
-    - sikhism
-    - sti
-    - zoroastrianism
 signatures:
-  computationUuid: "420d0df0-2982-8ccb-8659-501273fe0afb"
+  computationUuid: "8a366b50-0cbf-8ddd-85c0-c357313773d9"
   stages:
     - stage: path
-      stageUuid: "1d2c55a5-169c-86b3-9906-c3c70f706766"
+      stageUuid: "6d694fe8-eac1-88c3-b32b-e674fb3f8116"
     - stage: trinity
-      stageUuid: "e3c20b9c-ad94-831f-a478-8a921e144c30"
+      stageUuid: "76868592-2128-886d-8275-35880a635b88"
     - stage: boundary
-      stageUuid: "3c1af827-a113-8a41-91d3-ff7e51bd4dfd"
+      stageUuid: "6dfa5edc-343e-8aa3-8a45-3ad0f15f8c7e"
     - stage: links
-      stageUuid: "f955a77e-a6cf-89a6-b173-b5b75e06cbd2"
+      stageUuid: "89a570b6-7e01-8fc2-9250-e62a99737441"
     - stage: horo
-      stageUuid: "d6a231b5-5e8d-8d3c-b5de-f16fda754765"
+      stageUuid: "04c3e156-0314-8436-8e61-c3907419392b"
     - stage: seal
-      stageUuid: "724932ce-54b7-8a14-8685-4a82610c5beb"
+      stageUuid: "345f774f-a3d8-87c2-a233-68f32dce36f7"
     - stage: uuid
-      stageUuid: "ab504106-4c73-87b0-87ba-7928228b80d3"
+      stageUuid: "4db2ed88-7388-8bfc-8519-d1cfb30b5656"
 version: 2
 ---
 # ethics

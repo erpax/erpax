@@ -2,92 +2,19 @@
 name: system
 description: "Use when reasoning about system as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: system
-coordinate: system · 5/round · 3f5d8d80
-contentUuid: "2bbb28aa-fe50-5239-9522-003f6ab8caad"
-diamondUuid: "2bde5750-5407-865e-add2-d56c6f6e12fe"
-uuid: "3f5d8d80-6238-8602-8457-7f51b74d6649"
-horo: 5
-bonds:
-  in:
-    - anatomical
-    - coding
-    - collapse
-    - enumeration
-    - law
-    - library
-    - medicine
-    - merge
-    - operating
-    - part
-    - size
-    - sti
-    - wearable
-  out:
-    - anatomical
-    - coding
-    - collapse
-    - enumeration
-    - law
-    - library
-    - medicine
-    - merge
-    - operating
-    - part
-    - size
-    - sti
-    - wearable
+coordinate: "system · 4/weave · a267405d"
+contentUuid: "d1f9d477-f484-5ed2-9495-d97b08e23e1c"
+diamondUuid: "c87b2900-1553-823a-900a-87382e32ecce"
+uuid: "a267405d-6756-879d-bdb2-ca1c9891b9b4"
+horo: 4
 typography:
   partition: system
-  bondDegree: 47
-  neighbors: []
+  bondDegree: 49
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - anatomical
-    - coding
-    - collapse
-    - enumeration
-    - law
-    - library
-    - medicine
-    - merge
-    - operating
-    - part
-    - size
-    - sti
-    - wearable
-  matrix:
-    - anatomical
-    - coding
-    - collapse
-    - enumeration
-    - law
-    - library
-    - medicine
-    - merge
-    - operating
-    - part
-    - size
-    - sti
-    - wearable
-  backlinks:
-    - anatomical
-    - coding
-    - collapse
-    - enumeration
-    - law
-    - library
-    - medicine
-    - merge
-    - operating
-    - part
-    - size
-    - sti
-    - wearable
 signatures:
-  computationUuid: "06f98c51-58cf-8352-8bac-2bbfdf55e44f"
+  computationUuid: "c74e1fb5-feb2-816b-b801-81a434b3e747"
   stages:
     - stage: path
       stageUuid: "58c0005a-c29e-8ac0-a3dc-376adc611b10"
@@ -98,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e7493c36-af5f-8e13-9c0d-6131fc5b9b81"
     - stage: horo
-      stageUuid: "cf68a825-a920-8ad2-85e5-a4367c2a9298"
+      stageUuid: "7dbc921e-751e-8e2a-afaf-49ef9b963de0"
     - stage: seal
-      stageUuid: "b930c2f9-a281-8989-8eea-11a32b149bd5"
+      stageUuid: "4eeb515a-1e24-8309-819d-801231d12486"
     - stage: uuid
-      stageUuid: "81cea17d-c39f-84af-b5c1-da249a33ed45"
+      stageUuid: "499d24ef-6573-84d6-aa92-c42ba768e939"
 version: 2
 ---
 # system

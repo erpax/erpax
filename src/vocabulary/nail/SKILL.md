@@ -1,68 +1,35 @@
 ---
 name: nail
 description: "Use when reasoning about nail as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/nail
-coordinate: nail · 1/base · 83118154
-contentUuid: "9b6d30b2-cdd1-5b43-bb7b-cc5ca0541e44"
-diamondUuid: "2f3c36c7-4154-8753-9f7a-88279b503a41"
-uuid: "83118154-0620-81c1-a4b1-50a2e9947e8b"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - salon
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - salon
-    - sti
+atomPath: "vocabulary/nail"
+coordinate: "vocabulary/nail · 7/descent · b2b57979"
+contentUuid: "472fa8e8-63f6-562d-8700-24e7b038ae8c"
+diamondUuid: "8344111f-e39c-8a2e-a457-3f8ef4553818"
+uuid: "b2b57979-dcc3-83a7-bd18-2de135337013"
+horo: 7
 typography:
-  partition: nail
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - salon
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - salon
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - salon
-    - sti
 signatures:
-  computationUuid: "d8d0696e-a544-8871-81a2-57cc6349905c"
+  computationUuid: "3298fd62-fc98-8fb0-aa95-1e2f6abad732"
   stages:
     - stage: path
-      stageUuid: "5089f97f-8df2-81af-92eb-1a7889ba36e4"
+      stageUuid: "f39fbe98-759f-8d8e-bd20-92291e3de54f"
     - stage: trinity
-      stageUuid: "7cdeb8ff-741d-89c3-85b6-c4951316a5dd"
+      stageUuid: "6bf0b8b6-292c-8a10-9150-350467019a50"
     - stage: boundary
-      stageUuid: "1d2aa798-faa4-869b-9d14-8fac139a5d25"
+      stageUuid: "f0f5912b-b8a0-8977-a206-d6f5126d0e17"
     - stage: links
-      stageUuid: "20fad9ef-bbeb-8cd8-9418-312b0ab4fe90"
+      stageUuid: "1dc8f0fc-86c8-86c0-90cc-38c4eea26bb9"
     - stage: horo
-      stageUuid: "0a67a017-3ec1-8193-b37e-145a10df582b"
+      stageUuid: "718ad6fb-86ca-8a60-b562-83dae21a1b95"
     - stage: seal
-      stageUuid: "11e2704d-08e6-8cfd-a841-65b6b08d55eb"
+      stageUuid: "213e5f08-410f-8b79-82ad-ac36b0fb5f8f"
     - stage: uuid
-      stageUuid: "e71582b6-ff21-8ba3-aafb-35463df3f197"
+      stageUuid: "9d515266-d9b1-8de1-8195-e0c30555ce3b"
 version: 2
 ---
 # nail

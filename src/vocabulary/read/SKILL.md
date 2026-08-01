@@ -1,58 +1,35 @@
 ---
 name: read
 description: Use when reasoning about read — A person who reads (performs) the audiobook.
-atomPath: vocabulary/read
-coordinate: read · 5/round · 579b743a
-contentUuid: "7bcedbc3-c46b-5d43-b3e7-239d5b26f271"
-diamondUuid: "1b0275a0-79c3-8057-82d0-bdd9c47ec26d"
-uuid: "579b743a-4ac1-85d3-b18c-6baf83ebeb22"
-horo: 5
-bonds:
-  in:
-    - action
-    - date
-    - law
-  out:
-    - action
-    - date
-    - law
+atomPath: "vocabulary/read"
+coordinate: "vocabulary/read · 7/descent · 2c1bb82f"
+contentUuid: "aed9fd26-2fbd-50d1-9f15-faaceff62164"
+diamondUuid: "cd5d3f3c-7e10-8225-9bc9-9913fc46d697"
+uuid: "2c1bb82f-e1a0-820c-b484-358dd7e2cde1"
+horo: 7
 typography:
-  partition: read
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - date
-    - law
-  matrix:
-    - action
-    - date
-    - law
-  backlinks:
-    - action
-    - date
-    - law
 signatures:
-  computationUuid: "23ee59ce-bea2-879d-9b02-71970ad64d2f"
+  computationUuid: "a354f3a1-545b-862b-b4d9-7d8f12b9cc5d"
   stages:
     - stage: path
-      stageUuid: "128421c0-7fcd-8891-a3d2-530bb3dbf5f7"
+      stageUuid: "8101055c-30c7-8b98-998f-3148d111f809"
     - stage: trinity
-      stageUuid: "f5399176-eaf3-8367-b0b8-112e618a58e7"
+      stageUuid: "78ed4823-a4aa-8f52-8f9a-5cca4b117aa8"
     - stage: boundary
-      stageUuid: "109322ff-2752-8f6c-bfa6-3f03fe430f2e"
+      stageUuid: "88b4ea05-c639-8a93-bc2c-3472044fd0c8"
     - stage: links
-      stageUuid: "bfef0904-d39f-80c2-8699-ec9225ac48c0"
+      stageUuid: "5664d7d2-efc3-8be1-b065-978b0e6b8635"
     - stage: horo
-      stageUuid: "27673cd2-effb-84fc-b227-b142f03617e1"
+      stageUuid: "6b184f73-9583-820e-813f-b4999aa62123"
     - stage: seal
-      stageUuid: "ba4b9706-b2fe-8a3d-92e5-f5a5bde9ac5d"
+      stageUuid: "2384dcea-611c-837a-9a66-acd40d38fcbf"
     - stage: uuid
-      stageUuid: "47356e03-669c-8ce9-abaf-dae981104d0a"
+      stageUuid: "0dcde535-6fbb-8a00-8468-391621c167b6"
 version: 2
 ---
 # read

@@ -1,112 +1,34 @@
 ---
 name: oid
 description: "Use when an identity needs its ISO/ITU-T Object Identifier — every uuid is 2.25.<128-bit integer> (X.667), urn:oid (RFC 3061): the hierarchical dotted-path dual of the flat content-uuid. A derived, lossless re-encoding — another independently-verifiable level, another increment of tamper cost. Matter-twin localize (uuidToOid)."
-atomPath: vocabulary/oid
-coordinate: oid · 2/share · 3e3c5f98
-contentUuid: "780acd45-a6b1-5b73-931c-236ac839c2ef"
-diamondUuid: "aa180fd0-108f-8c43-9097-92891168f243"
-uuid: "3e3c5f98-c272-830f-bd16-10029ca421ba"
-horo: 2
-bonds:
-  in:
-    - angel
-    - begin
-    - cmyk
-    - cost
-    - fractal
-    - identity
-    - law
-    - llm
-    - localize
-    - merge
-    - message
-    - proof
-    - research
-    - standard
-    - uuid
-  out:
-    - angel
-    - begin
-    - cmyk
-    - cost
-    - fractal
-    - identity
-    - law
-    - llm
-    - localize
-    - merge
-    - message
-    - proof
-    - research
-    - standard
-    - uuid
+atomPath: "vocabulary/oid"
+coordinate: "vocabulary/oid · 5/round · 7599f071"
+contentUuid: "002ed2a6-560f-5766-8927-d2d4d95b96ef"
+diamondUuid: "dee2ff25-24fb-8682-8c34-9977c495a671"
+uuid: "7599f071-0a67-813a-9305-6b4494613157"
+horo: 5
 typography:
-  partition: oid
-  bondDegree: 48
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 46
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - cmyk
-    - cost
-    - fractal
-    - identity
-    - law
-    - localize
-    - merge
-    - proof
-    - standard
-    - uuid
-  matrix:
-    - angel
-    - begin
-    - cmyk
-    - cost
-    - fractal
-    - identity
-    - law
-    - llm
-    - localize
-    - merge
-    - message
-    - proof
-    - research
-    - standard
-    - uuid
-  backlinks:
-    - angel
-    - begin
-    - cmyk
-    - cost
-    - fractal
-    - identity
-    - law
-    - llm
-    - localize
-    - merge
-    - message
-    - proof
-    - research
-    - standard
-    - uuid
 signatures:
-  computationUuid: "194ab2d2-d882-890a-9cd2-d1e120c201ee"
+  computationUuid: "7b437b98-7941-8898-91b2-2991c69e7300"
   stages:
     - stage: path
-      stageUuid: "5ed0dcb0-a973-8932-b75d-d6008fb83168"
+      stageUuid: "6ca28f66-df71-8c1f-99ed-fde44d457423"
     - stage: trinity
-      stageUuid: "7f6ec19c-6cb3-8674-96b7-905a327bdcb2"
+      stageUuid: "237ef514-8be2-8aa9-888a-6e9c1534e1cc"
     - stage: boundary
-      stageUuid: "bca96d98-7ed4-8ad8-a805-e1f125882a47"
+      stageUuid: "011da852-4658-89f5-8fce-74d9f6cff436"
     - stage: links
-      stageUuid: "d0950a8b-5063-8115-8c91-db924e776498"
+      stageUuid: "1011ebe2-3de5-847a-86e6-afb8a981af4b"
     - stage: horo
-      stageUuid: "69840614-a0c2-8b19-bd01-d214de03e509"
+      stageUuid: "1765313c-6e71-899a-94f6-1f5d7f423dc7"
     - stage: seal
-      stageUuid: "2ba88618-6d80-8f3d-9070-ecae162a214c"
+      stageUuid: "70d24586-e5b5-832e-bbcf-7232d0bac6ca"
     - stage: uuid
-      stageUuid: "6b55818b-9d1b-8e7b-9c10-bb2635e3cbab"
+      stageUuid: "4516fa17-afc7-8c48-8183-bfed636d22c1"
 version: 2
 ---
 # oid — the uuid on the ISO 2.25 arc

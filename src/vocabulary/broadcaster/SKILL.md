@@ -1,58 +1,35 @@
 ---
 name: broadcaster
 description: Use when reasoning about broadcaster — The organization owning or operating the broadcast service.
-atomPath: vocabulary/broadcaster
-coordinate: broadcaster · 5/round · e830e1e4
-contentUuid: "8cb64363-19bb-5b43-9a6b-2fb0eb3a680b"
-diamondUuid: "e9bf9011-48e4-8169-ac78-a276925214b8"
-uuid: "e830e1e4-89b1-80ee-952c-02e1938c5a93"
-horo: 5
-bonds:
-  in:
-    - law
-    - organization
-    - thing
-  out:
-    - law
-    - organization
-    - thing
+atomPath: "vocabulary/broadcaster"
+coordinate: "vocabulary/broadcaster · 4/weave · 62149d4e"
+contentUuid: "ca3f7e89-2ebc-58d1-b326-cb81f38c9d6a"
+diamondUuid: "4eec3d69-20ba-8ffe-abd6-be54af3ed2b6"
+uuid: "62149d4e-e27e-8ffb-b972-0276ef6ea942"
+horo: 4
 typography:
-  partition: broadcaster
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - organization
-    - thing
-  matrix:
-    - law
-    - organization
-    - thing
-  backlinks:
-    - law
-    - organization
-    - thing
 signatures:
-  computationUuid: "dab9844a-7edc-8b74-9f3b-5cbfae800655"
+  computationUuid: "dfb4d743-0ca2-8293-8755-8cec2cf2f553"
   stages:
     - stage: path
-      stageUuid: "352ff8ac-0466-829b-8d61-66038ff8ca65"
+      stageUuid: "3544c59a-620b-8a8d-a678-0f50deb2045e"
     - stage: trinity
-      stageUuid: "433d377c-962f-8f21-b358-99d0b9631eea"
+      stageUuid: "ba279264-489d-8020-8408-389f9be54925"
     - stage: boundary
-      stageUuid: "96e9f33f-d3f9-861a-bfb7-bc3939256e8c"
+      stageUuid: "9c90bfd8-a27a-8b8f-b4b6-3f001bff0b0f"
     - stage: links
-      stageUuid: "1ae7e12f-7d1a-8717-8702-9a4777ce7c34"
+      stageUuid: "d106d23f-5893-8f95-8eec-12bed5bb4d92"
     - stage: horo
-      stageUuid: "a2570a0d-db6d-804a-9375-e2b1119f51c5"
+      stageUuid: "068b81e9-3c96-85b5-9fe5-8d22c404da45"
     - stage: seal
-      stageUuid: "e199c753-c059-8b5f-b2f4-4a3a2fc00dee"
+      stageUuid: "0c39c079-f305-83e8-a612-8a544d03a760"
     - stage: uuid
-      stageUuid: "2c638881-93be-80da-9622-aefa804c15ed"
+      stageUuid: "c73bd5af-3e94-8d0a-a11a-d138041d4a0c"
 version: 2
 ---
 # broadcaster

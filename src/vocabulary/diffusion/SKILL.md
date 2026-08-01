@@ -1,122 +1,34 @@
 ---
 name: diffusion
 description: "Use when reasoning about HOW a small market becomes big over time — the time-axis the static market product is missing. Adoption spreads as a contagion (Bass: rate = (p + q·F)·(1−F)·m; word-of-mouth q≈0.38 far exceeds advertising p≈0.03), filling the adopter sequence innovators → early-adopters → majority → laggards. Trendsetters are the seed the imitation engine amplifies; the chasm is where that engine stalls and most small markets stay small."
-atomPath: vocabulary/diffusion
-coordinate: diffusion · 8/crest · da56f2b1
-contentUuid: "199c9bc6-376c-5752-abe8-112953ef4995"
-diamondUuid: "8e3302f2-086f-8650-9f4f-40a2ec34ca5e"
-uuid: "da56f2b1-934c-8a36-a3c0-e83de9fe31f9"
-horo: 8
-bonds:
-  in:
-    - awareness
-    - bottleneck
-    - breath
-    - cohort
-    - desire
-    - distribution
-    - friction
-    - habit
-    - market
-    - network
-    - power
-    - proof
-    - segment
-    - signal
-    - status
-    - trend
-  out:
-    - awareness
-    - bottleneck
-    - breath
-    - cohort
-    - desire
-    - distribution
-    - friction
-    - habit
-    - market
-    - network
-    - power
-    - proof
-    - segment
-    - signal
-    - status
-    - trend
+atomPath: "vocabulary/diffusion"
+coordinate: "vocabulary/diffusion · 5/round · 8f7166bc"
+contentUuid: "6d13e9a8-8060-5bad-8271-ad8b44958536"
+diamondUuid: "f5f91d01-b4c6-858b-bd89-3b9e36288d5c"
+uuid: "8f7166bc-f281-8ed1-8eb4-340b019f3fb5"
+horo: 5
 typography:
-  partition: diffusion
-  bondDegree: 50
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 52
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - awareness
-    - bottleneck
-    - breath
-    - cohort
-    - desire
-    - distribution
-    - friction
-    - habit
-    - market
-    - network
-    - power
-    - proof
-    - segment
-    - signal
-    - status
-    - trend
-  matrix:
-    - awareness
-    - bottleneck
-    - breath
-    - cohort
-    - desire
-    - distribution
-    - friction
-    - habit
-    - market
-    - network
-    - power
-    - proof
-    - segment
-    - signal
-    - status
-    - trend
-  backlinks:
-    - awareness
-    - bottleneck
-    - breath
-    - cohort
-    - desire
-    - distribution
-    - friction
-    - habit
-    - market
-    - network
-    - power
-    - proof
-    - segment
-    - signal
-    - status
-    - trend
 signatures:
-  computationUuid: "48c48660-9f83-8551-9cb7-e7c625447cdd"
+  computationUuid: "18a4abf2-89b4-8d34-9c33-9ebe801f1dbe"
   stages:
     - stage: path
-      stageUuid: "ffb36692-907c-8eb6-9063-d922328772cd"
+      stageUuid: "1ac3d2f6-6ca6-83ac-9f02-e5a326723178"
     - stage: trinity
-      stageUuid: "8d2dd7ed-42ae-8626-9aaf-ad56c731455f"
+      stageUuid: "64700774-47fd-855d-ad0f-faa1854b347b"
     - stage: boundary
-      stageUuid: "6290dadf-8fea-8d47-a215-1dc5bc8bc11d"
+      stageUuid: "e1784c12-0ee3-8d38-971c-651f40166288"
     - stage: links
-      stageUuid: "80ad7b96-be63-8c3a-a009-feafb5795db4"
+      stageUuid: "9702f09a-9167-8309-82c9-79d3eb00d2a6"
     - stage: horo
-      stageUuid: "b141dc53-a10b-8806-b23e-18f0239a77b0"
+      stageUuid: "4258874b-a23a-835a-a67e-2816a2191a67"
     - stage: seal
-      stageUuid: "35d1a57e-b015-8b48-9190-47e770e9677c"
+      stageUuid: "ad7087d2-7c0d-82af-a2ff-c840a72447de"
     - stage: uuid
-      stageUuid: "ed886144-214e-82e5-8d76-f8bbc6d4dd62"
+      stageUuid: "d890a970-8b72-8b94-a177-eba21056b5c6"
 version: 2
 ---
 # diffusion — how a market fills over time (the dynamic the product law is missing)

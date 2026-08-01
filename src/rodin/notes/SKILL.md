@@ -1,142 +1,19 @@
 ---
 name: notes
 description: "Use when reasoning about sound from sequence position in erpax — the seven horo positions ARE seven diatonic notes, just-intonation ratios over A432 (La=A=432 Hz at the round step), Ti resolves to Do as the ring closes. The sound twin of cmyk. Nested under rodin."
-atomPath: rodin/notes
-coordinate: rodin/notes · 4/weave · 5c0845b3
-contentUuid: "2358480b-49ae-5c18-afd0-b3fefa67f815"
-diamondUuid: "c099f7c3-e6ca-8d82-83a2-1c752662f618"
-uuid: "5c0845b3-0313-864e-b9dd-6c885258b044"
-horo: 4
-bonds:
-  in:
-    - analog
-    - aura
-    - balance
-    - base
-    - breath
-    - chakra
-    - cmyk
-    - crest
-    - descent
-    - duality
-    - harmony
-    - horo
-    - negative
-    - octave
-    - phase
-    - positive
-    - release
-    - rodin
-    - round
-    - science
-    - share
-    - signal
-    - unity
-    - vibration
-    - weave
-  out:
-    - analog
-    - aura
-    - balance
-    - base
-    - breath
-    - chakra
-    - cmyk
-    - crest
-    - descent
-    - duality
-    - harmony
-    - horo
-    - negative
-    - octave
-    - phase
-    - positive
-    - release
-    - rodin
-    - round
-    - science
-    - share
-    - signal
-    - unity
-    - vibration
-    - weave
+atomPath: "rodin/notes"
+coordinate: "rodin/notes · 2/share · 6ab43d9d"
+contentUuid: "c1b45fb9-07df-5043-b36f-60705e0ec5b1"
+diamondUuid: "79613256-5621-8b00-9ce1-bcc2fd9616b6"
+uuid: "6ab43d9d-0808-8663-9592-9d1d8c2836f3"
+horo: 2
 typography:
   partition: rodin
-  bondDegree: 82
-  neighbors: []
+  bondDegree: 83
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - base
-    - breath
-    - cmyk
-    - crest
-    - descent
-    - duality
-    - horo
-    - octave
-    - rodin
-    - round
-    - share
-    - signal
-    - unity
-    - weave
-  matrix:
-    - analog
-    - aura
-    - balance
-    - base
-    - breath
-    - chakra
-    - cmyk
-    - crest
-    - descent
-    - duality
-    - harmony
-    - horo
-    - negative
-    - octave
-    - phase
-    - positive
-    - release
-    - rodin
-    - round
-    - science
-    - share
-    - signal
-    - unity
-    - vibration
-    - weave
-  backlinks:
-    - analog
-    - aura
-    - balance
-    - base
-    - breath
-    - chakra
-    - cmyk
-    - crest
-    - descent
-    - duality
-    - harmony
-    - horo
-    - negative
-    - octave
-    - phase
-    - positive
-    - release
-    - rodin
-    - round
-    - science
-    - share
-    - signal
-    - unity
-    - vibration
-    - weave
 signatures:
-  computationUuid: "c20358be-0574-86d6-825b-3aa299999770"
+  computationUuid: "f2efbd1a-808e-87e8-988c-ba9db340741a"
   stages:
     - stage: path
       stageUuid: "44be2154-bc3d-81ad-8863-cdf91a2dd9cf"
@@ -147,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "209454ce-773b-890c-9c42-d150f5137ebe"
     - stage: horo
-      stageUuid: "83b6af39-9e0c-8e28-a9d5-f0d58739f8fd"
+      stageUuid: "bb0fdbe2-9c01-8ded-b31d-3a4f5b6a693e"
     - stage: seal
-      stageUuid: "08e62c25-2178-8c96-9572-bdcd9b28102a"
+      stageUuid: "002e10b4-8ad5-8e70-8b7f-61e622bff0fd"
     - stage: uuid
-      stageUuid: "386dc5dc-979b-8ff8-be5f-e4f58572aaee"
+      stageUuid: "a1257f48-1f56-8b6f-bf1c-da095195c5c7"
 version: 2
 ---
 # notes — sound from position (the horo IS music)

@@ -1,68 +1,35 @@
 ---
 name: ordered
 description: "Use when reasoning about ordered as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/ordered
-coordinate: ordered · 1/base · 181e258b
-contentUuid: "4b383905-9dd0-5505-899f-63ca5fa877d4"
-diamondUuid: "1857c629-dd61-8c26-b380-94a65bb7c2fb"
-uuid: "181e258b-b506-848c-9946-7e23e6b4bbc4"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/ordered"
+coordinate: "vocabulary/ordered · 2/share · 627850ce"
+contentUuid: "be124e4d-cac5-5110-b9a5-d884d2a82803"
+diamondUuid: "fed14fd4-0647-8e25-8001-dbe498664e06"
+uuid: "627850ce-162b-870e-b477-5116aab2e0d9"
+horo: 2
 typography:
-  partition: ordered
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "7b9bc06d-a969-8ddb-a2c7-47e171beb6c3"
+  computationUuid: "d35c0faf-2cae-87ec-b885-adfab022c538"
   stages:
     - stage: path
-      stageUuid: "21c08204-124c-8463-8d73-365f9cc1a5be"
+      stageUuid: "2649f491-e682-8d7b-bda3-005fce204f14"
     - stage: trinity
-      stageUuid: "7b31e990-790d-82af-abb5-0ee90413f000"
+      stageUuid: "de4a8239-1590-873e-b48a-8a48a63e09ea"
     - stage: boundary
-      stageUuid: "afa620df-180b-8151-a962-84e3238e5e27"
+      stageUuid: "850ddd12-6973-8868-9575-91fe874dd1c0"
     - stage: links
-      stageUuid: "9e06a025-4dca-8fef-bd8c-91f3f3671542"
+      stageUuid: "67968d93-1f2a-85ca-acf1-020e31233a61"
     - stage: horo
-      stageUuid: "fc6fe552-24d7-867e-81f6-6243e2aef10a"
+      stageUuid: "a7f5ccc4-01d7-8da4-8ba6-63e03b8d905c"
     - stage: seal
-      stageUuid: "a3c56c7e-c22e-883b-990f-ee513da8ab73"
+      stageUuid: "13f6f479-5bcf-8f58-8e81-aa080b0e89c2"
     - stage: uuid
-      stageUuid: "37bfbeec-c035-8314-b68a-1a8a4dd4251a"
+      stageUuid: "3cdb62b3-6051-8e6f-b1b5-cfeebb767f55"
 version: 2
 ---
 # ordered

@@ -1,102 +1,34 @@
 ---
 name: enterprisebudget
 description: "Use when projecting the profit of one crop/product/activity as a standalone line — the crop enterprise budget: revenue (units × price) minus its direct costs (seed, inputs, labor) per crop or per bed-foot, so crops can be ranked by net return and the unprofitable dropped. The per-line P&L projection; the production-economics twin of the cost center."
-atomPath: vocabulary/enterprisebudget
-coordinate: enterprisebudget · 4/weave · 314c87c4
-contentUuid: "c2b446a4-4e32-5f8c-8d19-b5f1f5c1deaa"
-diamondUuid: "54b54258-37e7-88ec-bfec-90818601b83e"
-uuid: "314c87c4-0554-8e79-a0d2-64838a07d373"
-horo: 4
-bonds:
-  in:
-    - agriculture
-    - bottleneck
-    - cost
-    - crop
-    - cropplan
-    - currency
-    - forecast
-    - law
-    - manufacturing
-    - revenue
-    - value
-    - yield
-  out:
-    - agriculture
-    - bottleneck
-    - cost
-    - crop
-    - cropplan
-    - currency
-    - forecast
-    - law
-    - manufacturing
-    - revenue
-    - value
-    - yield
+atomPath: "vocabulary/enterprisebudget"
+coordinate: "vocabulary/enterprisebudget · 8/crest · 65bb6cad"
+contentUuid: "69fc35c3-227f-5364-b5f1-3f16c717c4cf"
+diamondUuid: "f6663713-317b-85a2-a89e-87802d46940d"
+uuid: "65bb6cad-b93d-8ee8-86a0-ef39a46159b8"
+horo: 8
 typography:
-  partition: enterprisebudget
+  partition: vocabulary
   bondDegree: 38
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - bottleneck
-    - cost
-    - crop
-    - cropplan
-    - currency
-    - forecast
-    - law
-    - manufacturing
-    - revenue
-    - value
-    - yield
-  matrix:
-    - agriculture
-    - bottleneck
-    - cost
-    - crop
-    - cropplan
-    - currency
-    - forecast
-    - law
-    - manufacturing
-    - revenue
-    - value
-    - yield
-  backlinks:
-    - agriculture
-    - bottleneck
-    - cost
-    - crop
-    - cropplan
-    - currency
-    - forecast
-    - law
-    - manufacturing
-    - revenue
-    - value
-    - yield
 signatures:
-  computationUuid: "cba84e53-c317-874e-95d0-60557a020587"
+  computationUuid: "d36eee0b-f8a1-89f6-8e23-5cc414644e97"
   stages:
     - stage: path
-      stageUuid: "ab26f0d4-3104-8828-9adf-aa69fddd9540"
+      stageUuid: "c9d4e529-8ac3-8163-95bf-4ca070742d9a"
     - stage: trinity
-      stageUuid: "45977fa2-be15-83d5-9d21-81178300192a"
+      stageUuid: "59598cf3-ff07-836c-a17c-63bd51b7a6c5"
     - stage: boundary
-      stageUuid: "9f9228f9-7e69-8973-8c74-a103b440402b"
+      stageUuid: "11ca491d-a88e-8bc3-9e17-3b8c5dadd27a"
     - stage: links
-      stageUuid: "91643fdc-9a24-81b2-99ff-dc1a1b307fa0"
+      stageUuid: "1c33df34-f86f-8d41-ad50-e4522441e700"
     - stage: horo
-      stageUuid: "68604954-25ec-8762-9490-5ed445e32614"
+      stageUuid: "9c807c8c-a800-856c-879c-dc2191327566"
     - stage: seal
-      stageUuid: "2dc241c9-1bfc-8621-b72c-b4239706a030"
+      stageUuid: "fa9cc9b6-5849-8f89-b988-13fa153a73e6"
     - stage: uuid
-      stageUuid: "de770c46-0c37-87f6-a16f-4d3f51dc018d"
+      stageUuid: "9b0ebed3-8764-84c1-a8c5-245d30898cdb"
 version: 2
 ---
 # enterprisebudget — the per-line profit projection that ranks what to grow

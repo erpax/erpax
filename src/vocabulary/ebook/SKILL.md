@@ -1,63 +1,35 @@
 ---
 name: ebook
 description: "Use when reasoning about ebook as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/ebook
-coordinate: ebook · 5/round · 0adbd829
-contentUuid: "74938851-9a04-55a1-b5b7-112b88a16c9e"
-diamondUuid: "dea8b54a-20da-8201-81ce-32a86f2a399a"
-uuid: "0adbd829-f753-88a6-9fdd-bc8e8518a008"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/ebook"
+coordinate: "vocabulary/ebook · 7/descent · 2566b0fc"
+contentUuid: "fca9eda3-5a53-507d-88bc-faff7dca96b5"
+diamondUuid: "c14dd28f-a09b-8258-aa42-63d944ff9ee7"
+uuid: "2566b0fc-5ac2-8ba4-a38d-454113294d51"
+horo: 7
 typography:
-  partition: ebook
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "685e8dac-4e4f-8fbe-8ca3-df06040555d5"
+  computationUuid: "f1378161-6d66-8909-8c1d-1a07b0252df4"
   stages:
     - stage: path
-      stageUuid: "0972e3e3-6896-8c9b-ba9e-25ea140d2d2f"
+      stageUuid: "cbee98ed-ca00-84f4-bc66-5fcdbed77c5b"
     - stage: trinity
-      stageUuid: "cf3b9182-729f-8083-bc5f-5e7f92bff51c"
+      stageUuid: "3a5703d3-c0ec-8b08-b338-b2a30f991ae4"
     - stage: boundary
-      stageUuid: "3834fa7e-f082-8c61-bc1b-104a1fe3fc70"
+      stageUuid: "4b87d68e-5ad3-8705-9f4d-fbd356a50d41"
     - stage: links
-      stageUuid: "c9868942-c3f1-8908-9ecb-8550c90c0d92"
+      stageUuid: "d16e00ff-19cd-89ed-8f53-5453cec56a08"
     - stage: horo
-      stageUuid: "1882be8b-f951-8759-8809-9bd6c6d70cd6"
+      stageUuid: "669dc323-2130-8a2e-b083-0b20e1ac9d39"
     - stage: seal
-      stageUuid: "1120c831-706c-8798-876d-db481dd7792f"
+      stageUuid: "cc968507-311b-8aeb-8534-04d3045a5f15"
     - stage: uuid
-      stageUuid: "47fc9ded-a8c1-8f42-8472-4eb7a36ef5d4"
+      stageUuid: "95a9c652-a0d7-8347-ad68-e9a331e87c88"
 version: 2
 ---
 # ebook

@@ -1,63 +1,35 @@
 ---
 name: effects
 description: "Use when reasoning about effects as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/effects
-coordinate: effects · 8/crest · dad662f1
-contentUuid: "a518ec46-3a39-56a2-b02e-ffbc5e48e5aa"
-diamondUuid: "52bf4154-2c9b-85f3-8b38-475c0937ccc2"
-uuid: "dad662f1-6154-851d-a93c-27a851ccdf99"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/effects"
+coordinate: "vocabulary/effects · 4/weave · cc709c0d"
+contentUuid: "7f0e6bed-ae94-54a3-bfc1-a32cee249200"
+diamondUuid: "2f27733f-7a1c-886b-a988-988e10fa86e3"
+uuid: "cc709c0d-1a23-8ee3-b98d-b5e42e207c9a"
+horo: 4
 typography:
-  partition: effects
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "9fed50c3-40f1-83fe-bed1-c0faac8b06a6"
+  computationUuid: "b7049cea-1b39-829f-b547-7119e92b5c10"
   stages:
     - stage: path
-      stageUuid: "c2e06b42-ccbf-8832-a83e-af93d535122a"
+      stageUuid: "c6ab29fe-cd05-8e04-a671-059686fad62a"
     - stage: trinity
-      stageUuid: "ad6afd81-a34e-87cc-879c-d825f948853a"
+      stageUuid: "f826ce4d-5f10-8620-b5a3-243fd60f1c7e"
     - stage: boundary
-      stageUuid: "772c495d-58af-80bd-a052-f1df812d0c50"
+      stageUuid: "2204af94-844f-80fb-9595-5fcf8c9e57d3"
     - stage: links
-      stageUuid: "482cf093-96d0-81d8-ae87-0ade1222e91b"
+      stageUuid: "2e62d1ea-ed8b-8f7e-b439-d61ffb8de54e"
     - stage: horo
-      stageUuid: "c5b1f886-2caf-8860-b22c-c7e9dc6776fa"
+      stageUuid: "010aa9dd-c4fb-8df4-8e7d-15cee5281df8"
     - stage: seal
-      stageUuid: "2a49f0f3-8d50-8316-8ec9-1fb5983152b1"
+      stageUuid: "900e7ecd-2291-8442-a8df-4f7a766c9de3"
     - stage: uuid
-      stageUuid: "8f2d101d-7d0d-8d13-b246-daa22514bb6e"
+      stageUuid: "300b9ec2-094a-8941-8b5f-70ee0b584135"
 version: 2
 ---
 # effects

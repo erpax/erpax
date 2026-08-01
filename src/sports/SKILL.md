@@ -2,77 +2,19 @@
 name: sports
 description: "Use when reasoning about sports as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: sports
-coordinate: sports · 2/share · 17cb61b0
-contentUuid: "3d9fc877-ae89-538b-8b9f-1f5d8d4c61be"
-diamondUuid: "c174b42c-51e8-8a8b-98de-682b92614021"
-uuid: "17cb61b0-7280-8a72-ad8e-9234b7128971"
-horo: 2
-bonds:
-  in:
-    - activity
-    - club
-    - collapse
-    - event
-    - law
-    - location
-    - merge
-    - organization
-    - sti
-    - team
-  out:
-    - activity
-    - club
-    - collapse
-    - event
-    - law
-    - location
-    - merge
-    - organization
-    - sti
-    - team
+coordinate: "sports · 7/descent · 733f059f"
+contentUuid: "24da3087-cfdb-54d4-91ca-e48fe2cf6d32"
+diamondUuid: "a4fddc87-b402-82f5-8283-01904339b26e"
+uuid: "733f059f-c052-85eb-a0fc-47140881750f"
+horo: 7
 typography:
   partition: sports
-  bondDegree: 34
-  neighbors: []
+  bondDegree: 38
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - activity
-    - club
-    - collapse
-    - event
-    - law
-    - location
-    - merge
-    - organization
-    - sti
-    - team
-  matrix:
-    - activity
-    - club
-    - collapse
-    - event
-    - law
-    - location
-    - merge
-    - organization
-    - sti
-    - team
-  backlinks:
-    - activity
-    - club
-    - collapse
-    - event
-    - law
-    - location
-    - merge
-    - organization
-    - sti
-    - team
 signatures:
-  computationUuid: "3b7ae200-2725-8fd7-98fc-d782323606fa"
+  computationUuid: "ea9be852-0823-8004-8e5a-c2ddff164f8a"
   stages:
     - stage: path
       stageUuid: "f3cdd218-7484-84fb-89c2-03da8deaf705"
@@ -83,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d8191dae-c2b7-8071-a61d-6b7abce1d51a"
     - stage: horo
-      stageUuid: "d36c32c7-b42c-8f2a-add9-bd06e3ee8752"
+      stageUuid: "8266aea2-1fe3-88fe-8505-ba3b79a7276a"
     - stage: seal
-      stageUuid: "5180af1a-2917-82e0-a7e7-93f4d1c03b9f"
+      stageUuid: "cde526b5-9598-8eed-a197-d04a0f3420d9"
     - stage: uuid
-      stageUuid: "ae55a59e-de6a-819a-8d81-ee6bf608ade7"
+      stageUuid: "e0cbf1dc-ddbe-8f56-82ef-96d97b74fcc8"
 version: 2
 ---
 # sports

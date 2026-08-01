@@ -1,57 +1,35 @@
 ---
 name: repetitions
 description: Use when reasoning about repetitions — Number of times one should repeat the activity.
-atomPath: vocabulary/repetitions
-coordinate: repetitions · 5/round · 91b825a4
-contentUuid: "92f1cc51-504a-50eb-8a36-69f8b91bf4fc"
-diamondUuid: "c11b2b45-d8e5-8256-bbfc-03da3e317b42"
-uuid: "91b825a4-877d-830e-98d1-885a3a34f10a"
-horo: 5
-bonds:
-  in:
-    - law
-    - repetition
-    - thing
-  out:
-    - law
-    - repetition
-    - thing
+atomPath: "vocabulary/repetitions"
+coordinate: "vocabulary/repetitions · 7/descent · 03b8981d"
+contentUuid: "43841fa6-592c-5103-846c-5acd786bdf17"
+diamondUuid: "7938161b-3eaa-8dec-9d91-0f7f2d6316af"
+uuid: "03b8981d-7227-8614-90b6-86c89d145086"
+horo: 7
 typography:
-  partition: repetitions
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - repetition
-    - thing
-  backlinks:
-    - law
-    - repetition
-    - thing
 signatures:
-  computationUuid: "78d7b620-9314-8bbe-8b38-a84f87f14233"
+  computationUuid: "97af9ae1-c0c9-87d1-a02d-55ddc4dbaace"
   stages:
     - stage: path
-      stageUuid: "dc99cf9b-2530-8260-a7e2-5e3b53e75323"
+      stageUuid: "1935c3db-9805-8803-8623-6cad39c59092"
     - stage: trinity
-      stageUuid: "17c44a8d-ba48-8c5a-ba3d-070b2264e87a"
+      stageUuid: "f973c242-6a19-8ea5-bb97-4427c20578c0"
     - stage: boundary
-      stageUuid: "d87eb146-e135-8981-b67f-6b004c8b8c71"
+      stageUuid: "861ac24a-381a-845e-8355-6f3ead071e20"
     - stage: links
-      stageUuid: "fe7f26b9-e41b-884c-97e8-b7cebfddedc6"
+      stageUuid: "8b66cfd2-212d-8e17-8e8b-46e9c3b5ac3b"
     - stage: horo
-      stageUuid: "202c4041-c8a1-815b-b0e8-56a7ae89b359"
+      stageUuid: "9ec32edb-5bba-8610-9b89-af4e3beace62"
     - stage: seal
-      stageUuid: "89332927-c0ea-84a1-bcdc-e03674a5b069"
+      stageUuid: "4082db6e-9ed1-871f-bc8c-af1c25e0bc34"
     - stage: uuid
-      stageUuid: "59df31f6-1e32-8b12-bbcb-1e11616bec31"
+      stageUuid: "be3ee435-4cca-8683-bfe2-7c7fa77227b6"
 version: 2
 ---
 # repetitions

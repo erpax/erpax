@@ -1,57 +1,34 @@
 ---
 name: definition
 description: Use when modelling one definition — the singular model of the definitions collection (the plural store); the precise meaning assigned to a term.
-atomPath: vocabulary/definition
-coordinate: definition · 8/crest · 5bde0f04
-contentUuid: "8669115c-e3dc-5e55-94fa-14dcbe6cc919"
-diamondUuid: "5853b81a-2dc5-8c3f-b4b0-04806575bfc7"
-uuid: "5bde0f04-9efe-8c27-8c0b-33f2652ed261"
-horo: 8
-bonds:
-  in:
-    - balance
-    - definitions
-    - reference
-  out:
-    - balance
-    - definitions
-    - reference
+atomPath: "vocabulary/definition"
+coordinate: "vocabulary/definition · 5/round · 5598dd1b"
+contentUuid: "7f846d3a-3486-5004-8da3-b3e03daa3494"
+diamondUuid: "cc10c451-970a-84ab-971b-80e67dc44e94"
+uuid: "5598dd1b-e6e3-86d6-ab45-36266e8bd9cb"
+horo: 5
 typography:
-  partition: definition
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - definitions
-    - reference
-  matrix:
-    - balance
-    - definitions
-    - reference
-  backlinks:
-    - balance
-    - definitions
-    - reference
 signatures:
-  computationUuid: "59930ac9-ef57-8e89-82a3-7049308c2b28"
+  computationUuid: "4d0d1537-480c-8ecd-bb49-41583f758d0e"
   stages:
     - stage: path
-      stageUuid: "66d20f19-cf2f-84fa-a6a2-19db69a38bb9"
+      stageUuid: "1364c5e2-2c47-85dd-8d86-5ecba7017d25"
     - stage: trinity
-      stageUuid: "a0817458-1c43-841a-8ff9-19e98dde8dfc"
+      stageUuid: "61736ba9-01c6-8251-bfd5-af41235baf34"
     - stage: boundary
-      stageUuid: "a334b95c-fcd1-892c-a587-f5b5ca4cee5b"
+      stageUuid: "93292ea5-388e-8f39-8531-816f702d0972"
     - stage: links
-      stageUuid: "edf385f1-731b-8dbc-a820-13850a209120"
+      stageUuid: "3213ff07-8c97-8b38-9a20-956412a7f90b"
     - stage: horo
-      stageUuid: "315e0fc7-e699-8eed-9e79-260fd9b1ccbc"
+      stageUuid: "855b8ec3-7227-8dfb-b997-fe9804c2ceac"
     - stage: seal
-      stageUuid: "ec582ef6-9c22-8393-a26b-1d239d159001"
+      stageUuid: "82e37d81-3df1-870b-823a-703ecd0164eb"
     - stage: uuid
-      stageUuid: "a75cd9ef-358b-8e37-a573-8613beffb33c"
+      stageUuid: "5a435f90-07b2-84f3-9f2f-5b5046dd032d"
 version: 2
 ---
 # definition — the model of one [[definitions]] row

@@ -1,105 +1,47 @@
 ---
 name: shifts
 description: "Use when modelling the per-actor-day labour aggregate — the efficiency + wage authority a work order inherits from; presence vs produced minutes, the ⌊produced·100/presence⌋ efficiency, the max(time-pay, order-rollup) wage, on the horo lifecycle ring. Grounded in 20-yr etrima production (work_shifts, 376k)."
-atomPath: work/shifts
-coordinate: work/shifts · 4/weave · 4e418430
-contentUuid: "967f07dc-aa50-5ee2-8203-a50cf6810fb7"
-diamondUuid: "4816914f-361a-8b47-87b3-1cbc1be54a05"
-uuid: "4e418430-828c-882b-8508-5e4be089f9c8"
+atomPath: "work/shifts"
+coordinate: "work/shifts · 4/weave · d72e7bbf"
+contentUuid: "d71f9652-7801-5d22-b254-dd53e9ae42fa"
+diamondUuid: "3babde32-53eb-88ea-b85f-6d552267ce34"
+uuid: "d72e7bbf-dc51-8f5d-93de-e9b09aa8d66c"
 horo: 4
-bonds:
-  in:
-    - accounting
-    - capacity
-    - cases
-    - centers
-    - duality
-    - employees
-    - horo
-    - law
-    - orders
-    - schedule
-    - shift
-    - work
-  out:
-    - accounting
-    - capacity
-    - cases
-    - centers
-    - duality
-    - employees
-    - horo
-    - law
-    - orders
-    - schedule
-    - shift
 typography:
   partition: work
   bondDegree: 36
-  neighbors: []
 standards:
   - "IFRS IAS-2 §12 cost-of-conversion direct-labour (the `wage` feed)"
   - "ILO C001 hours-of-work presence-minutes"
+  - "ILO-C001"
   - "ISA-95"
   - "ISA-95:2013 / IEC-62264-1 §B.5 personnel + production-performance"
-  - "ISO-19011:2018 audit-trail labour-recording"
   - "ISO-22400-2"
   - "ISO-22400-2:2014 manufacturing-operations KPIs (labour efficiency / utilisation)"
+  - "ISO-22400-2:2014 manufacturing-operations KPIs (labour efficiency / utilisation)`"
   - "ISO-8601-1:2019 date-time shift-start/finish/close"
+  - "ISO-8601-1:2019 date-time shift-start/finish/close`"
   - "SOX §404 internal-controls payroll-and-production-control"
   - "US-GAAP ASC-330-10-30 inventory-cost"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - cases
-    - centers
-    - duality
-    - employees
-    - horo
-    - law
-    - orders
-  matrix:
-    - accounting
-    - capacity
-    - cases
-    - centers
-    - duality
-    - employees
-    - horo
-    - law
-    - orders
-    - schedule
-    - shift
-  backlinks:
-    - accounting
-    - capacity
-    - cases
-    - centers
-    - duality
-    - employees
-    - horo
-    - law
-    - orders
-    - schedule
-    - shift
 signatures:
-  computationUuid: "550b9401-d5d6-8b10-bf3e-da14b5a4a834"
+  computationUuid: "41c61452-8759-8d25-bbe7-9e94ccfcbbc3"
   stages:
     - stage: path
       stageUuid: "cf2c1704-9108-8aee-9f9b-adea31552ef5"
     - stage: trinity
       stageUuid: "38783971-99fe-8905-9bcf-e450d753ac2c"
     - stage: boundary
-      stageUuid: "405ab182-0c7c-8899-8369-9fac86968540"
+      stageUuid: "e01a1c4c-39c9-87a2-9e8c-0403a6fb3afe"
     - stage: links
       stageUuid: "242ed191-fd50-81fe-b0c2-5928fc511644"
     - stage: horo
-      stageUuid: "b94b7ab0-a126-881a-a969-c62ff47caec2"
+      stageUuid: "96c1c186-83a9-8231-8d21-7226010eec3b"
     - stage: seal
-      stageUuid: "7e86ff5f-6c52-8820-8f08-f996a1e301d6"
+      stageUuid: "7a76c879-97ed-879c-896e-badc1bf7fefc"
     - stage: uuid
-      stageUuid: "37fbf691-b1d2-8856-b0c1-1a5778a41591"
+      stageUuid: "d7d6a6ad-3d0c-8922-8f52-b17a47b140c7"
 version: 2
 ---
 # work/shifts

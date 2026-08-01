@@ -1,77 +1,35 @@
 ---
 name: compound
 description: "Use when reasoning about compound as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/compound
-coordinate: compound · 1/base · 45a1532b
-contentUuid: "021890c1-aae2-5f7f-9e3e-023b71ab2732"
-diamondUuid: "825d6522-eddf-8294-b659-c7fb65be5c4d"
-uuid: "45a1532b-768f-8418-bcb8-f74a9567de58"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - price
-    - science
-    - specification
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - price
-    - science
-    - specification
-    - sti
+atomPath: "vocabulary/compound"
+coordinate: "vocabulary/compound · 8/crest · 90223925"
+contentUuid: "e3683df9-711a-557f-bb61-9ac9cca51f77"
+diamondUuid: "a6d904de-e6b3-8a09-9740-0cb62cbae4bb"
+uuid: "90223925-1982-8c3c-8777-2df7acf20a14"
+horo: 8
 typography:
-  partition: compound
+  partition: vocabulary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - price
-    - specification
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - price
-    - science
-    - specification
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - price
-    - science
-    - specification
-    - sti
 signatures:
-  computationUuid: "233b8dbd-64b4-84ec-a58d-7c0bc4d64b6a"
+  computationUuid: "16bf3eca-557f-805b-be32-1221143da1c2"
   stages:
     - stage: path
-      stageUuid: "d67b0d32-3f17-8995-8c92-a537d9feb825"
+      stageUuid: "f45d23a8-defa-8714-ae74-020c9a36dd7a"
     - stage: trinity
-      stageUuid: "973032c8-a78a-8c80-a666-9021d0b88e7a"
+      stageUuid: "ee718358-7827-8292-9a5a-b7e93d06942b"
     - stage: boundary
-      stageUuid: "1f2d9a10-41ea-812d-833c-20333cfd6ee5"
+      stageUuid: "96c629b9-e182-82ce-ba44-96f2fde7bb94"
     - stage: links
-      stageUuid: "275572d6-8501-8783-a82c-d4d5b61f2ff3"
+      stageUuid: "06bee5f5-3092-88e8-908d-6104b7c95fc7"
     - stage: horo
-      stageUuid: "c556e522-f68e-89ca-a730-978c8ea38d32"
+      stageUuid: "92d7fafd-2d04-820f-9936-7fc2f6946220"
     - stage: seal
-      stageUuid: "52742f08-0c4a-8a87-bbdb-2b7aca7683c1"
+      stageUuid: "c335629d-6293-8bd4-bbd4-2f72cefdc75a"
     - stage: uuid
-      stageUuid: "4652fd68-edb2-89ae-bf37-12b1fd3dec02"
+      stageUuid: "0d76703e-667a-8b74-878b-b7a3786490fa"
 version: 2
 ---
 # compound

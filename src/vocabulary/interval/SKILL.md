@@ -1,73 +1,35 @@
 ---
 name: interval
 description: "Use when reasoning about interval as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/interval
-coordinate: interval · 5/round · 4e3ce3f6
-contentUuid: "a3c31ab7-3e02-5b3a-b8c6-918bb1297c54"
-diamondUuid: "cbbd5cb8-0452-812c-a952-0e214739be27"
-uuid: "4e3ce3f6-2d1f-8972-a48c-b9283d293767"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - dataset
-    - law
-    - merge
-    - sti
-    - time
-  out:
-    - collapse
-    - dataset
-    - law
-    - merge
-    - sti
-    - time
+atomPath: "vocabulary/interval"
+coordinate: "vocabulary/interval · 2/share · 0c87a8ad"
+contentUuid: "f5a39a9c-d413-5083-a69f-2fd888eb5fd6"
+diamondUuid: "b0ed9ffc-9420-84f4-b348-3c42204f0991"
+uuid: "0c87a8ad-14e3-8c47-bd00-3b31cf0628a7"
+horo: 2
 typography:
-  partition: interval
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - dataset
-    - law
-    - merge
-    - sti
-    - time
-  matrix:
-    - collapse
-    - dataset
-    - law
-    - merge
-    - sti
-    - time
-  backlinks:
-    - collapse
-    - dataset
-    - law
-    - merge
-    - sti
-    - time
 signatures:
-  computationUuid: "d16f5e3d-add8-8652-865f-ebbaf97d5b1f"
+  computationUuid: "f4b6cb9e-d577-85ae-927c-6bd656a3be31"
   stages:
     - stage: path
-      stageUuid: "81dadda6-280f-8ba6-a249-ec8cf138ba58"
+      stageUuid: "1c0f63c7-3bf6-8566-b307-cdeac2dab9fa"
     - stage: trinity
-      stageUuid: "37f6ba9f-5191-844e-9c7a-096b32199d73"
+      stageUuid: "ddd20177-6057-8ee1-ad65-291def61aa57"
     - stage: boundary
-      stageUuid: "c6192616-fdd3-8ace-bf40-40d9efba7fc1"
+      stageUuid: "db9143a8-1be5-8e29-acab-16b3f7664ce5"
     - stage: links
-      stageUuid: "5cb5d9fe-3472-8cac-b33c-e2d1122469de"
+      stageUuid: "6e744a44-5daa-86a1-9951-a88c2f6f8004"
     - stage: horo
-      stageUuid: "1a08cab8-34c5-8e3a-b18b-dcd6d768bdd9"
+      stageUuid: "1b9f3985-eddb-8ac3-839e-960e999eebaf"
     - stage: seal
-      stageUuid: "7db9e774-979d-8069-9fe2-934f407c1210"
+      stageUuid: "97cef050-899e-8975-b4c1-f735ab90eba5"
     - stage: uuid
-      stageUuid: "683ff660-4b7c-8bba-a25b-1bbf5fe2e329"
+      stageUuid: "7007be96-2deb-8fe4-bd2f-a227065bdfe5"
 version: 2
 ---
 # interval

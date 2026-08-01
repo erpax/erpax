@@ -1,63 +1,35 @@
 ---
 name: enrolling
 description: "Use when reasoning about enrolling as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/enrolling
-coordinate: enrolling · 5/round · 404c4db1
-contentUuid: "6e4cad4c-2bf8-53ee-8ffd-47a82f46f7ed"
-diamondUuid: "3d5679ab-3d92-8a4f-97b2-e4473c2424a1"
-uuid: "404c4db1-367d-8e8e-b78c-09c1dab56501"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/enrolling"
+coordinate: "vocabulary/enrolling · 1/base · eaf58efb"
+contentUuid: "c8882024-1030-5e4c-8237-af16d6546486"
+diamondUuid: "469fbdb9-7704-83ea-b041-beaca1d9668b"
+uuid: "eaf58efb-a783-82c1-b429-2147bb0aef14"
+horo: 1
 typography:
-  partition: enrolling
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "82daddad-4766-833d-9306-31ae5507aa3a"
+  computationUuid: "bc9f6dd8-d879-8693-b5bd-a5280a637236"
   stages:
     - stage: path
-      stageUuid: "fa8dd843-f6bb-81d0-9b28-5c100ca48dde"
+      stageUuid: "e47eb1a0-72e8-8683-aa9e-7576cb275ed2"
     - stage: trinity
-      stageUuid: "c0acb845-c3f4-8a4a-aaf6-167fed8109a4"
+      stageUuid: "c8ea12d6-8806-851c-b620-b7cc86e2bb87"
     - stage: boundary
-      stageUuid: "f293302d-2cf6-811a-a7df-8bc845a2a76e"
+      stageUuid: "bc15072c-1936-8312-8a01-3cf838c0f151"
     - stage: links
-      stageUuid: "e854663c-8443-8870-8d5f-a02d25126090"
+      stageUuid: "e1c012d3-6ff6-8595-9d30-ba8a7095b033"
     - stage: horo
-      stageUuid: "55d9a07f-9a26-8a9c-b8f8-a04368d1b650"
+      stageUuid: "0ecead98-7f6e-8e25-9ed5-81cfee4bfe6a"
     - stage: seal
-      stageUuid: "9fab8b7f-0442-849b-894c-50e0e4b46d91"
+      stageUuid: "a7f073e0-d588-87bb-ac1a-0f50e100e5f8"
     - stage: uuid
-      stageUuid: "f79b2157-1d56-821b-9360-1c313fafefd7"
+      stageUuid: "0ae7d42a-8a07-82f8-a4ac-1e3f84b8a2f6"
 version: 2
 ---
 # enrolling

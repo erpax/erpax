@@ -2,52 +2,19 @@
 name: warning
 description: Use when reasoning about warning — Any FDA or other warnings about the drug (text or URL).
 atomPath: warning
-coordinate: warning · 7/descent · 8ab8fe61
-contentUuid: "cf3e77d3-3426-5f3b-888a-a454d09383dc"
-diamondUuid: "b9303ca3-635e-893f-be31-51c73101150a"
-uuid: "8ab8fe61-fce1-86a3-98ba-f5292cdda1cf"
+coordinate: "warning · 7/descent · 4d53604a"
+contentUuid: "91d35f84-d536-5716-8eca-a8416b57a88d"
+diamondUuid: "9de464c3-e2d2-8199-bf37-9c02e1f59483"
+uuid: "4d53604a-9f41-892d-98b4-28d818575bfe"
 horo: 7
-bonds:
-  in:
-    - alcohol
-    - breastfeeding
-    - food
-    - law
-    - pregnancy
-  out:
-    - alcohol
-    - breastfeeding
-    - food
-    - law
-    - pregnancy
 typography:
   partition: warning
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - alcohol
-    - breastfeeding
-    - food
-    - law
-    - pregnancy
-  matrix:
-    - alcohol
-    - breastfeeding
-    - food
-    - law
-    - pregnancy
-  backlinks:
-    - alcohol
-    - breastfeeding
-    - food
-    - law
-    - pregnancy
 signatures:
-  computationUuid: "450e4a76-ae38-8af6-abca-8289772c9c28"
+  computationUuid: "591150c9-5605-8bab-876f-158b39babb11"
   stages:
     - stage: path
       stageUuid: "81d468c3-afb1-8270-af16-b05a6f0002c4"
@@ -58,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "204bd84a-d21d-84e8-a487-b74a3fa8fd77"
     - stage: horo
-      stageUuid: "6fe5f680-08ca-8c50-8f9c-368d12166436"
+      stageUuid: "eb112051-6f2b-83a3-82fc-864c7a8f235a"
     - stage: seal
-      stageUuid: "c6b8905a-495a-8c24-ae9c-5350afaa2cbe"
+      stageUuid: "0fb389ee-247a-898d-a25a-66583ccd8b06"
     - stage: uuid
-      stageUuid: "c0b2038a-35a2-815d-b986-3e924d39ec92"
+      stageUuid: "b65a2718-4cb4-86b5-8675-0d555e32a030"
 version: 2
 ---
 # warning

@@ -1,63 +1,35 @@
 ---
 name: nicotine
 description: "Use when reasoning about nicotine as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/nicotine
-coordinate: nicotine · 8/crest · aa1f411f
-contentUuid: "fc9a07f1-1f2b-52fe-95ab-a00d26ae0c77"
-diamondUuid: "2e3808be-cca3-8a00-bb2d-5011e1dd3f35"
-uuid: "aa1f411f-6eaf-811c-98d0-0843d309c6fd"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/nicotine"
+coordinate: "vocabulary/nicotine · 2/share · 53fe22b9"
+contentUuid: "ec4213d9-f078-5fa8-9b04-37d86f478158"
+diamondUuid: "b2116ab5-a2ce-83c6-b090-29581e391ed1"
+uuid: "53fe22b9-8f81-8ff2-b81e-6d98cb70aaba"
+horo: 2
 typography:
-  partition: nicotine
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "77fb4e99-8b71-849f-806e-7fc2b1e28b72"
+  computationUuid: "237464e0-d34e-8e37-abaf-c910675717e1"
   stages:
     - stage: path
-      stageUuid: "db5802f9-78df-8480-b7fe-8b8b628714a4"
+      stageUuid: "9547a978-7640-8939-a114-ea50c96814c3"
     - stage: trinity
-      stageUuid: "3085bf01-76c7-84d7-b3c9-3411ba808d3c"
+      stageUuid: "4a6b154c-b926-80af-a596-46937e0fe573"
     - stage: boundary
-      stageUuid: "53f138ef-69c8-8647-9a24-80e794f6ee88"
+      stageUuid: "5fbc8da5-f443-816b-8ca5-69e9ed2aeec0"
     - stage: links
-      stageUuid: "e5c80120-4cd2-8cd2-8b8c-7de2c45cf306"
+      stageUuid: "31708470-c9d8-831f-bb84-efd96b9f0e2a"
     - stage: horo
-      stageUuid: "50487653-158f-8c20-a2bd-d36b67ae7fe9"
+      stageUuid: "f74ce2ff-8cef-8cf2-9225-3fe0ac1f780c"
     - stage: seal
-      stageUuid: "00f03419-0ecd-87f4-90e5-ed4fe0b4dae5"
+      stageUuid: "38180195-a147-8c6f-8a6b-6826088cb779"
     - stage: uuid
-      stageUuid: "c3a2ccca-95cd-8af9-87c5-9daa0f295b50"
+      stageUuid: "65302f6f-9a66-8c12-aa94-72f771c127f0"
 version: 2
 ---
 # nicotine

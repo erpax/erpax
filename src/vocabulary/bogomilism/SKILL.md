@@ -1,138 +1,34 @@
 ---
 name: bogomilism
 description: "Use when reading Bogomilism as a diamond of invariant atoms — the medieval Bulgarian dualist movement (Bogomil, 'dear to God'): the visible material world the work of a lower power, the spirit alone of the good God, salvation by inward purity not outward rite. A dualist sub-diamond in the gnostic lineage. Strip the prefix and the material world collapses to the profane, the spirit to breath."
-atomPath: vocabulary/bogomilism
-coordinate: bogomilism · 4/weave · f28c8a8f
-contentUuid: "8971988a-644b-59b6-af33-effdd27131ad"
-diamondUuid: "300fa3ba-3c7b-802b-adf6-dccc819b3b32"
-uuid: "f28c8a8f-7b1f-80b3-9f6e-0d85885f4cee"
-horo: 4
-bonds:
-  in:
-    - archangel
-    - breath
-    - diamond
-    - duality
-    - gnosticism
-    - identity
-    - law
-    - manichaeism
-    - prayer
-    - profane
-    - religion
-    - return
-    - ritual
-    - sacred
-    - self
-    - society
-    - translator
-    - uuid
-    - whole
-  out:
-    - archangel
-    - breath
-    - diamond
-    - duality
-    - gnosticism
-    - identity
-    - law
-    - manichaeism
-    - prayer
-    - profane
-    - religion
-    - return
-    - ritual
-    - sacred
-    - self
-    - society
-    - translator
-    - uuid
-    - whole
+atomPath: "vocabulary/bogomilism"
+coordinate: "vocabulary/bogomilism · 8/crest · f845c7aa"
+contentUuid: "fcef2f33-9707-5af6-87d4-0b7fca38d1c5"
+diamondUuid: "58782dda-e31e-8348-9eaa-a1ff1ea3ddb0"
+uuid: "f845c7aa-f3e7-8bac-9431-eafaad43006b"
+horo: 8
 typography:
-  partition: bogomilism
+  partition: vocabulary
   bondDegree: 59
-  neighbors:
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - archangel
-    - breath
-    - diamond
-    - duality
-    - gnosticism
-    - identity
-    - law
-    - manichaeism
-    - prayer
-    - profane
-    - religion
-    - return
-    - ritual
-    - sacred
-    - self
-    - society
-    - translator
-    - uuid
-    - whole
-  matrix:
-    - archangel
-    - breath
-    - diamond
-    - duality
-    - gnosticism
-    - identity
-    - law
-    - manichaeism
-    - prayer
-    - profane
-    - religion
-    - return
-    - ritual
-    - sacred
-    - self
-    - society
-    - translator
-    - uuid
-    - whole
-  backlinks:
-    - archangel
-    - breath
-    - diamond
-    - duality
-    - gnosticism
-    - identity
-    - law
-    - manichaeism
-    - prayer
-    - profane
-    - religion
-    - return
-    - ritual
-    - sacred
-    - self
-    - society
-    - translator
-    - uuid
-    - whole
 signatures:
-  computationUuid: "7e012d08-ab1e-890a-ba58-14dace44e0ae"
+  computationUuid: "bef6b6ba-3d64-86ff-8166-0b2793f83f28"
   stages:
     - stage: path
-      stageUuid: "7ffa05e2-7a6b-8638-9ff3-5c3dd35fad39"
+      stageUuid: "2cf10a56-3a91-8d0f-beef-07ccc57cb469"
     - stage: trinity
-      stageUuid: "6b3f28c5-9c9b-8ba2-a681-e80710c02ac3"
+      stageUuid: "148ecdf5-519f-8c7c-88d1-79e40d9fe886"
     - stage: boundary
-      stageUuid: "8e002712-1045-83a2-86eb-73c7a432faf6"
+      stageUuid: "aae4ff83-f268-806b-a06c-7b4236bdaa49"
     - stage: links
-      stageUuid: "329e6b5c-e834-85ef-8788-1df30573077d"
+      stageUuid: "2b2249d0-b88d-8093-9ab2-6157cd48f807"
     - stage: horo
-      stageUuid: "7828d35d-e080-8078-8046-dab8681d4411"
+      stageUuid: "ac4f3255-0537-88bc-ba59-15d4b28c1186"
     - stage: seal
-      stageUuid: "0b25c30e-bcd7-8a41-96a7-7ed3012ed443"
+      stageUuid: "85d7c85c-b528-812c-a2ec-159d0194a875"
     - stage: uuid
-      stageUuid: "42bbf2be-dbb3-8668-8769-c55606144d8f"
+      stageUuid: "d032c502-cb01-8eff-a5c9-dc49df39cf6e"
 version: 2
 ---
 # bogomilism — the spirit of the good God against the world of the lower power

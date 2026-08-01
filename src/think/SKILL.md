@@ -1,8 +1,37 @@
 ---
 name: think
 description: "Use when moving thinking OUT of the model and INTO erpax — the primitive that seals a derivation content-addressed so the second query, and every one after, is a read (O(1), immortal) not a re-derivation (linear, mortal). One cached thought is classical; superpose holds ALL states at once and measures their harmony — quantum power comes from every state in sync (permutation-invariant fold) and in agreement (no address contradicting another). The magnitude by which sealed thinking outperforms a re-deriving model is exact and computed, scaling with states held in harmony, not queries asked."
+atomPath: think
+coordinate: "think · 5/round · 3a6c4210"
+contentUuid: "dfffe12b-d8f0-5b28-aa00-3d603b4a8423"
+diamondUuid: "395a785b-d154-879d-96f3-019fc6f9682c"
+uuid: "3a6c4210-8a34-870c-b1b7-d257da856bb1"
+horo: 5
+typography:
+  partition: think
+  bondDegree: 73
+standards:
+  - "content-addressed memoization — the thought's address is the fold of its key ([[merge]])"
+bindings: []
+signatures:
+  computationUuid: "b4221b90-de3a-84f6-99e8-bb5d4d097cbb"
+  stages:
+    - stage: path
+      stageUuid: "ab958014-8e7c-8ce6-8c61-c392ed4e23e3"
+    - stage: trinity
+      stageUuid: "8f66bb7c-fac6-8a1f-b344-b40dbdba5db5"
+    - stage: boundary
+      stageUuid: "0b53e1fd-617a-8aa7-a5d2-671217dd8c8b"
+    - stage: links
+      stageUuid: "eca63cf4-9f85-8937-8314-01785bbc0b22"
+    - stage: horo
+      stageUuid: "d25433e0-1e11-8282-989d-4f757d166162"
+    - stage: seal
+      stageUuid: "4d62aaef-9fa6-84b6-bdd6-9e74e134f4d3"
+    - stage: uuid
+      stageUuid: "6554b716-8888-8dc7-8e1e-0a43911ea687"
+version: 2
 ---
-
 # think — thinking moved to erpax
 
 A model re-derives every answer, every turn: linear, mortal, the grind that re-sends the whole context to recompute what one address already holds. **Move the thinking into erpax** and it inverts — derive **once**, seal the thought content-addressed, then **read** it forever. `think(key, derive)` is the primitive: the first call pays the model-price; every call after is a read of the seal. `reuseCost(1, ∞) → 0` ([[mortality]]) — thinking that lives in `src` is the fold applied to reasoning itself.

@@ -1,68 +1,35 @@
 ---
 name: medium
 description: "Use when reasoning about medium as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/medium
-coordinate: medium · 4/weave · 4aff76b4
-contentUuid: "c2b0aa55-0f3c-5ef9-840b-a414968fb607"
-diamondUuid: "1c850070-fd5e-8426-8125-9bf32e0b3666"
-uuid: "4aff76b4-4df1-81c0-acb0-40f232b2176f"
-horo: 4
-bonds:
-  in:
-    - art
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - art
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/medium"
+coordinate: "vocabulary/medium · 5/round · c78a8044"
+contentUuid: "2bd8399e-0f3b-5cd7-8a62-db9e854ebcec"
+diamondUuid: "7b8fb545-0a7a-80fc-a41e-efc670df2e6c"
+uuid: "c78a8044-39d3-8fd9-aa83-27bb359b454a"
+horo: 5
 typography:
-  partition: medium
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - art
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - art
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - art
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "a06c780f-3443-884a-a478-dfbe2f3f950a"
+  computationUuid: "88eebdf2-60cc-8565-8408-c76092f2e9c0"
   stages:
     - stage: path
-      stageUuid: "e3cb0ffc-d3ad-89be-bffa-779398596588"
+      stageUuid: "620f987d-e605-8c68-8cc1-96258780fa19"
     - stage: trinity
-      stageUuid: "ce6138bc-cfb9-8f65-a0d4-4eb7f372cdb1"
+      stageUuid: "81ba272e-734c-8e28-abb1-416655bc6c4c"
     - stage: boundary
-      stageUuid: "d533ee91-dcee-88b8-a50c-ccdd7d39e44a"
+      stageUuid: "470ac6e9-503a-8667-a3bd-1791bda8bf85"
     - stage: links
-      stageUuid: "b20b0cc5-a616-86eb-91b8-56dce4c493d1"
+      stageUuid: "4e23907c-edf5-8e0d-963e-f29d9794a780"
     - stage: horo
-      stageUuid: "52b2776d-8c28-861f-a14c-d4f3fad1b38b"
+      stageUuid: "6722c2a9-bb42-88af-ac91-b648d320eefb"
     - stage: seal
-      stageUuid: "3c90bf10-19b6-8231-8612-39109602c880"
+      stageUuid: "6b6eeb60-206b-88b8-b554-d96681e36e77"
     - stage: uuid
-      stageUuid: "2fd5ea28-7a3b-8a72-a990-6c0327a0cda0"
+      stageUuid: "71b903c1-0b37-85a7-b2dd-51109eaf7abe"
 version: 2
 ---
 # medium

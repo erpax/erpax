@@ -1,73 +1,35 @@
 ---
 name: eligibility
 description: "Use when reasoning about eligibility as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/eligibility
-coordinate: eligibility · 4/weave · 1bfd8743
-contentUuid: "67a4709f-8125-5250-a6cc-8b1ec007c697"
-diamondUuid: "f9c6e95c-846b-8624-8d53-93a40f45bb80"
-uuid: "1bfd8743-29fc-87f6-95ed-5a7638ef5e83"
+atomPath: "vocabulary/eligibility"
+coordinate: "vocabulary/eligibility · 4/weave · 5ee9247f"
+contentUuid: "bd45ea86-aee6-574a-9e1b-bc76cc011d90"
+diamondUuid: "da07dd0e-f9c7-8c49-b26e-b569786a0196"
+uuid: "5ee9247f-bf38-8856-8b51-28f97a9f625d"
 horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - requirement
-    - sti
-    - work
-  out:
-    - collapse
-    - law
-    - merge
-    - requirement
-    - sti
-    - work
 typography:
-  partition: eligibility
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - requirement
-    - sti
-    - work
-  matrix:
-    - collapse
-    - law
-    - merge
-    - requirement
-    - sti
-    - work
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - requirement
-    - sti
-    - work
 signatures:
-  computationUuid: "7f0a81a7-bc3a-85a2-a63c-4968d58d65ab"
+  computationUuid: "390667c1-7776-87ee-b2e2-44a96eacfedb"
   stages:
     - stage: path
-      stageUuid: "6b63f3c1-a765-8cbb-8785-330fd62c7296"
+      stageUuid: "ef1c3705-d331-8f8c-9a44-7586bb6d6e48"
     - stage: trinity
-      stageUuid: "ba7de133-5701-80b6-95a3-1dcd8a443a34"
+      stageUuid: "1cca95eb-c4a4-8e20-9c9e-6296bda07b1e"
     - stage: boundary
-      stageUuid: "7bc76142-98ab-865f-8a50-a4e2eeb506bb"
+      stageUuid: "ddc86e5f-3ba6-852a-93f9-22cb115c2be3"
     - stage: links
-      stageUuid: "68d5c91b-455b-8862-9009-5aa387d81bdc"
+      stageUuid: "9f2842a2-8049-843c-89c3-21da6d3ea952"
     - stage: horo
-      stageUuid: "e17917aa-dd0d-83ac-9f5c-237f8241b229"
+      stageUuid: "995b3f7e-8fe3-8cca-902f-c32868a6352a"
     - stage: seal
-      stageUuid: "650e5ddf-3974-8f6c-a83a-bce21442f325"
+      stageUuid: "a055d28d-4401-8c1a-bed0-f31599b646f9"
     - stage: uuid
-      stageUuid: "55842b3e-cfa3-85ee-961c-440a3ef61bea"
+      stageUuid: "d9e10a7b-96ce-87b1-abdc-7291b73e9f6b"
 version: 2
 ---
 # eligibility

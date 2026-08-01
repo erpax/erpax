@@ -2,39 +2,18 @@
 name: reporting
 description: "Use when implementing or referencing Phase B6: Audit & Compliance Reporting."
 atomPath: "audit/compliance/reporting"
-coordinate: "audit/compliance/reporting · 5/round · cb850a4d"
-contentUuid: "82133a31-6a8d-567d-8ccb-ffb93555fbbc"
-diamondUuid: "1a26b88d-e05a-858e-976e-450e4c1665db"
-uuid: "cb850a4d-aaaa-8823-b7e0-4ef8bcc496f0"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - data
-    - healthcare
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - data
-    - healthcare
-    - law
-    - merge
-    - sti
+coordinate: "audit/compliance/reporting · 1/base · 455bffae"
+contentUuid: "1db1e5e9-3925-5c1a-861a-8e415450e48a"
+diamondUuid: "01e49652-d6f9-8703-9f8b-e7ed32aeb6fe"
+uuid: "455bffae-5134-8e3c-a818-2dcdfb0f757b"
+horo: 1
 typography:
   partition: audit
   bondDegree: 20
-  neighbors: []
 standards:
   - BEPS
   - "BEPS Action 13:2021 Transfer Pricing Documentation"
   - "EU-2016/679"
-  - "EU-2022/1925"
-  - "EU-2022/2065"
-  - "EU-2022/2554"
-  - "EU-2022/2555"
-  - "EU-2022/868"
   - GDPR Art. 32 Data Protection
   - "GDPR Art. 32 Data Protection`"
   - "IAS-1"
@@ -53,24 +32,8 @@ standards:
   - banner barrel (the regulatory contract)
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink: []
-  matrix:
-    - collapse
-    - data
-    - healthcare
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - data
-    - healthcare
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "49da5bab-3e07-8e42-8fc8-e6400846d8af"
+  computationUuid: "32d1ace1-7380-8ca5-8fb8-5e599bfaaf4c"
   stages:
     - stage: path
       stageUuid: "ff906584-7cd3-86ed-822c-d5619e136f2c"
@@ -81,11 +44,11 @@ signatures:
     - stage: links
       stageUuid: "a33cf334-e2ab-8c33-998d-ff03bbe35f68"
     - stage: horo
-      stageUuid: "333f9207-86e8-8d09-8c66-a7c6bf04c632"
+      stageUuid: "3c0a5339-8cf1-8dbb-8264-5434c8a5e1dc"
     - stage: seal
       stageUuid: "c4da9bb5-a0ac-8412-8b35-c0699d4468f0"
     - stage: uuid
-      stageUuid: "f2acb9b6-dfcb-8d25-b488-867fc4888027"
+      stageUuid: "22e793e9-12bf-82e6-ada3-8b4809a470c8"
 version: 2
 ---
 # Phase B6: Audit & Compliance Reporting

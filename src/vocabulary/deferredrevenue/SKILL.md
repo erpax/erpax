@@ -1,89 +1,34 @@
 ---
 name: deferredrevenue
 description: "Use when reasoning about deferredrevenue — Use for customer advance payments or contract-liability positions — amounts received before performance is satisfied; net against contract assets to determine net contract position"
-atomPath: vocabulary/deferredrevenue
-coordinate: deferredrevenue · 5/round · 891c0e99
-contentUuid: "04702057-ffb0-5abf-b37e-a992c33b0a8b"
-diamondUuid: "b1b25d22-5e30-8cc5-b299-091bd0d66330"
-uuid: "891c0e99-6344-8b13-8fba-e54d07cda942"
-horo: 5
-bonds:
-  in:
-    - accrual
-    - contracts
-    - deferral
-    - entries
-    - invoices
-    - law
-    - performances
-    - prepaid
-    - revenue
-    - share
-  out:
-    - accrual
-    - contracts
-    - deferral
-    - entries
-    - invoices
-    - law
-    - performances
-    - prepaid
-    - revenue
-    - share
+atomPath: "vocabulary/deferredrevenue"
+coordinate: "vocabulary/deferredrevenue · 8/crest · 0428d9df"
+contentUuid: "5ebb897e-8e3f-5720-b34b-c88a27f0ce5b"
+diamondUuid: "2b2368ef-4b3d-89f7-a8d3-904bca2ca771"
+uuid: "0428d9df-7853-8b2d-a99e-a7b1575e709a"
+horo: 8
 typography:
-  partition: deferredrevenue
+  partition: vocabulary
   bondDegree: 30
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accrual
-    - contracts
-    - deferral
-    - entries
-    - invoices
-    - law
-    - performances
-  matrix:
-    - accrual
-    - contracts
-    - deferral
-    - entries
-    - invoices
-    - law
-    - performances
-    - prepaid
-    - revenue
-    - share
-  backlinks:
-    - accrual
-    - contracts
-    - deferral
-    - entries
-    - invoices
-    - law
-    - performances
-    - prepaid
-    - revenue
-    - share
 signatures:
-  computationUuid: "767b7fc2-dfa7-8e48-b427-ee6f0707cf74"
+  computationUuid: "bccc6e82-0915-8e95-a70a-ac1791ab4890"
   stages:
     - stage: path
-      stageUuid: "59f46214-5811-8514-8c18-86bd6eb6b325"
+      stageUuid: "043bb685-a1fd-89bd-9b58-f43f6ae67bac"
     - stage: trinity
-      stageUuid: "cc5af615-c65c-84c9-a0b8-58cf2cf566eb"
+      stageUuid: "b1654661-3afc-8290-ae36-ebebf74b596a"
     - stage: boundary
-      stageUuid: "fc5e6e56-3d0b-898e-b9eb-2d0afce4b991"
+      stageUuid: "d6abb7a9-e2cb-86fc-adc5-6026809ae343"
     - stage: links
-      stageUuid: "ac8ba571-0fb1-8ddf-a5af-fdce93bd9f18"
+      stageUuid: "b1a1609f-262a-8bd7-af4a-f8490ca1bd0d"
     - stage: horo
-      stageUuid: "7fc2f78d-92c8-839c-a6ea-3633bba4de9a"
+      stageUuid: "8f81271c-d58c-8bec-b78e-8e28964e6722"
     - stage: seal
-      stageUuid: "69db91c4-ca06-882a-a2ce-9cd2bf74792d"
+      stageUuid: "2e3d52c5-8b6a-86c8-ba05-e8a7c2dfec06"
     - stage: uuid
-      stageUuid: "9bc6a1ee-3af5-8c6f-b5fb-4d7c740303a7"
+      stageUuid: "afa4f18c-2e7d-8345-8e48-5a7adb32bbc6"
 version: 2
 ---
 # deferredrevenue

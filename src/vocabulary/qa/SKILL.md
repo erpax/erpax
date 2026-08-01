@@ -1,68 +1,35 @@
 ---
 name: qa
 description: "Use when reasoning about qa as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/qa
-coordinate: qa · 4/weave · 1d043c39
-contentUuid: "61340cca-ae50-5a62-a0bf-61c3029275af"
-diamondUuid: "91175be4-54f9-81d3-9414-41b5a60f545e"
-uuid: "1d043c39-ae77-8477-8ed8-d05132f57bd3"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
+atomPath: "vocabulary/qa"
+coordinate: "vocabulary/qa · 8/crest · b6b1a165"
+contentUuid: "adb24605-2ae9-517a-b634-0cce75be25db"
+diamondUuid: "f0b118c6-4eac-8471-b479-fbf828b406c0"
+uuid: "b6b1a165-9c64-8ced-8194-09cc12bb735d"
+horo: 8
 typography:
-  partition: qa
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
 signatures:
-  computationUuid: "4893f87a-e0b0-8dc6-9937-8eda92016db6"
+  computationUuid: "ad0aeaeb-214b-824d-b3b9-83af0ed59ed1"
   stages:
     - stage: path
-      stageUuid: "0475a1de-5842-8479-8091-221da28e0b13"
+      stageUuid: "80700544-11ff-8e37-bf21-7a4cc10538f6"
     - stage: trinity
-      stageUuid: "420b82ca-98d8-8d93-8fb5-8fa528233a49"
+      stageUuid: "39444718-85a9-8f8b-b799-d7c2a47bdb77"
     - stage: boundary
-      stageUuid: "7c033773-376f-8046-ad39-147f3f9b1fe1"
+      stageUuid: "48320e83-7149-8965-a69a-abc5ab3c83af"
     - stage: links
-      stageUuid: "6eb4ce0d-32a1-802a-9520-39f45e3d0d7d"
+      stageUuid: "4152cf7b-95bd-804f-94a6-eceba064e8e1"
     - stage: horo
-      stageUuid: "30fcb19a-aa95-8500-a3d6-e02ae35c4738"
+      stageUuid: "820f03ce-490d-8cad-a80d-f286961a87bd"
     - stage: seal
-      stageUuid: "58c564a9-7787-8987-a9be-59b85852d950"
+      stageUuid: "5d59c355-7809-80cf-bc62-e4d37c55e08e"
     - stage: uuid
-      stageUuid: "79e61a28-dc8f-8c7b-badd-4a65759e9aa0"
+      stageUuid: "a4f3bb74-e01d-8e90-a4af-f5f305094882"
 version: 2
 ---
 # qa

@@ -1,78 +1,35 @@
 ---
 name: podcast
 description: "Use when reasoning about podcast as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/podcast
-coordinate: podcast · 1/base · a846f330
-contentUuid: "a202ed59-7e7e-527a-8cf5-35fcae7af539"
-diamondUuid: "035fd049-4afe-8020-b064-edbf3dce58c1"
-uuid: "a846f330-ff60-8b82-8bb3-eacfeb9ad9d8"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - episode
-    - law
-    - merge
-    - season
-    - series
-    - sti
-  out:
-    - collapse
-    - episode
-    - law
-    - merge
-    - season
-    - series
-    - sti
+atomPath: "vocabulary/podcast"
+coordinate: "vocabulary/podcast · 5/round · c93ab603"
+contentUuid: "04785138-2aa2-5cc2-add2-3fc6a2baa752"
+diamondUuid: "9b211cbc-82e5-8fbd-9343-4cf9b251c627"
+uuid: "c93ab603-a950-88c0-96fe-09b4a5edefd8"
+horo: 5
 typography:
-  partition: podcast
+  partition: vocabulary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - episode
-    - law
-    - merge
-    - season
-    - series
-    - sti
-  matrix:
-    - collapse
-    - episode
-    - law
-    - merge
-    - season
-    - series
-    - sti
-  backlinks:
-    - collapse
-    - episode
-    - law
-    - merge
-    - season
-    - series
-    - sti
 signatures:
-  computationUuid: "ba17c5fe-bfcf-8cb8-892f-aba279da2823"
+  computationUuid: "30329520-5c70-8355-9fb1-48e4d4aeb178"
   stages:
     - stage: path
-      stageUuid: "dcbd0711-da8d-847c-9f2e-29c475cfd009"
+      stageUuid: "93badba0-3575-8392-afcb-2874d00dd03f"
     - stage: trinity
-      stageUuid: "87cf7d31-74cf-8027-afb5-e141a393fcb7"
+      stageUuid: "96b76efd-ed3c-85bd-ae86-66f63f1a3862"
     - stage: boundary
-      stageUuid: "fac95f97-9cde-835e-9ff0-a7e1e43caa4c"
+      stageUuid: "472c5452-d1fa-83e4-a0a8-ab71f957a30b"
     - stage: links
-      stageUuid: "a390d2c4-b2bb-8858-a1fc-11207750b3d6"
+      stageUuid: "ad186d13-dd5c-815c-ae70-1fad3daa06be"
     - stage: horo
-      stageUuid: "8f6572b7-701e-8711-8950-d5c8d08f9749"
+      stageUuid: "94cea499-d0f7-8115-84c2-071840e45cd0"
     - stage: seal
-      stageUuid: "1d24e3d6-55ce-8301-915b-30387c21787e"
+      stageUuid: "13b4590c-a30d-880e-9de0-b9c07d0aaac5"
     - stage: uuid
-      stageUuid: "2cb4a8da-eaa1-8524-a8ba-1fb1502b098f"
+      stageUuid: "29126592-5370-8892-a72c-1f5b2b619e46"
 version: 2
 ---
 # podcast

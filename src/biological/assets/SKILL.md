@@ -2,85 +2,14 @@
 name: assets
 description: "Use when measuring, re-measuring, or disclosing IAS 41 biological assets — livestock, aquaculture, annual/perennial crops, forestry, vineyard produce — at fair-value-less-costs-to-sell; biological-transformation vs. price-change P&L split; bearer-plant IAS-16 carve-out; harvest-event transformation lifecycle. The IAS-41 biological-asset measurement collection."
 atomPath: "biological/assets"
-coordinate: "biological/assets · 2/share · d3f903d3"
-contentUuid: "0df03b61-204e-5bd8-afba-529e56b4382e"
-diamondUuid: "377c0852-ca15-84c9-89a2-6826b45189c9"
-uuid: "d3f903d3-ce3e-8bf5-aa6f-d9adbbe2fc63"
-horo: 2
-bonds:
-  in:
-    - access
-    - accounting
-    - agriculture
-    - animal
-    - apiculture
-    - aquaculture
-    - asset
-    - balance
-    - biological
-    - biomass
-    - breed
-    - collections
-    - crop
-    - entries
-    - fertility
-    - fields
-    - forestry
-    - fractal
-    - graft
-    - harvest
-    - herd
-    - hooks
-    - identity
-    - impairment
-    - lactation
-    - law
-    - livestock
-    - measurements
-    - merge
-    - mortality
-    - perennial
-    - postharvest
-    - rootstock
-    - soil
-  out:
-    - access
-    - accounting
-    - agriculture
-    - animal
-    - apiculture
-    - aquaculture
-    - asset
-    - balance
-    - biomass
-    - breed
-    - collections
-    - crop
-    - entries
-    - fertility
-    - fields
-    - forestry
-    - fractal
-    - graft
-    - harvest
-    - herd
-    - hooks
-    - identity
-    - impairment
-    - lactation
-    - law
-    - livestock
-    - measurements
-    - merge
-    - mortality
-    - perennial
-    - postharvest
-    - rootstock
-    - soil
+coordinate: "biological/assets · 4/weave · 909e0730"
+contentUuid: "d9ba5b66-3063-5cbe-a9e2-75a55b451998"
+diamondUuid: "70a71bba-fa1f-8929-9bba-ae2038320bf2"
+uuid: "909e0730-8ed2-88ef-8532-6047afee66c9"
+horo: 4
 typography:
   partition: biological
-  bondDegree: 120
-  neighbors: []
+  bondDegree: 96
 standards:
   - "IAS-41"
   - "IFRS IAS-41 §10 recognition-criteria"
@@ -105,90 +34,8 @@ standards:
   - "SOX §404 internal-controls TOM-AGRI-01"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - accounting
-    - balance
-    - collections
-    - entries
-    - fields
-    - fractal
-    - hooks
-    - identity
-    - law
-    - measurements
-    - merge
-  matrix:
-    - access
-    - accounting
-    - agriculture
-    - animal
-    - apiculture
-    - aquaculture
-    - asset
-    - balance
-    - biomass
-    - breed
-    - collections
-    - crop
-    - entries
-    - fertility
-    - fields
-    - forestry
-    - fractal
-    - graft
-    - harvest
-    - herd
-    - hooks
-    - identity
-    - impairment
-    - lactation
-    - law
-    - livestock
-    - measurements
-    - merge
-    - mortality
-    - perennial
-    - postharvest
-    - rootstock
-    - soil
-  backlinks:
-    - access
-    - accounting
-    - agriculture
-    - animal
-    - apiculture
-    - aquaculture
-    - asset
-    - balance
-    - biomass
-    - breed
-    - collections
-    - crop
-    - entries
-    - fertility
-    - fields
-    - forestry
-    - fractal
-    - graft
-    - harvest
-    - herd
-    - hooks
-    - identity
-    - impairment
-    - lactation
-    - law
-    - livestock
-    - measurements
-    - merge
-    - mortality
-    - perennial
-    - postharvest
-    - rootstock
-    - soil
 signatures:
-  computationUuid: "499301f4-5a65-8e7d-a01d-6d2e37f0f271"
+  computationUuid: "6ae1cd8a-2a37-88cd-9199-6b3276d18269"
   stages:
     - stage: path
       stageUuid: "78a30e64-5ab4-848b-8d59-1078f20f0656"
@@ -197,13 +44,13 @@ signatures:
     - stage: boundary
       stageUuid: "71e52ffc-ac61-8a97-8463-245dffe70934"
     - stage: links
-      stageUuid: "c5ad9bd6-2f78-8953-b0ec-4f2dd0fbb856"
+      stageUuid: "f2acb224-d215-8394-8a27-61ba44ae0637"
     - stage: horo
-      stageUuid: "c9c75a00-3c7c-88dc-a8f4-a1dbf6d47b7d"
+      stageUuid: "5ba15613-6e4c-8817-b977-a6aac2745f1a"
     - stage: seal
       stageUuid: "3db92f29-073f-82ee-9982-e9e81fa80aad"
     - stage: uuid
-      stageUuid: "f9afbaa2-b2b3-8149-b52e-42711befc4b7"
+      stageUuid: "f68501a6-2ae5-8bff-9656-e32bb83dc63e"
 version: 2
 ---
 # biological-assets

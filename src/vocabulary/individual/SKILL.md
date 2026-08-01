@@ -1,73 +1,35 @@
 ---
 name: individual
 description: "Use when reasoning about individual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/individual
-coordinate: individual · 8/crest · cafbd077
-contentUuid: "1dcc0a5b-558c-58e6-9a1f-ffc2a987ce18"
-diamondUuid: "3cf04277-81f4-8242-8b58-26be406e39c7"
-uuid: "cafbd077-ff2f-82e3-8564-dead808b98b5"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - physician
-    - product
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - physician
-    - product
-    - sti
+atomPath: "vocabulary/individual"
+coordinate: "vocabulary/individual · 5/round · 06ae5d59"
+contentUuid: "1eddf745-f3c4-50e8-a432-d983742e7853"
+diamondUuid: "a3ffe82e-0079-8cc3-a3c2-37e5140aaa0f"
+uuid: "06ae5d59-0e9e-899b-b4d0-5e8256e94d19"
+horo: 5
 typography:
-  partition: individual
-  bondDegree: 20
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 22
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - physician
-    - product
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - physician
-    - product
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - physician
-    - product
-    - sti
 signatures:
-  computationUuid: "72f2f286-5a6c-8a67-9ffa-e8e0706b6adc"
+  computationUuid: "9f2ba460-13b4-8876-994f-7c3d6bda7ffe"
   stages:
     - stage: path
-      stageUuid: "ce1601b2-8f5a-885e-8fd0-56d662919fef"
+      stageUuid: "53bc2328-4640-8b06-b1a8-136e20796201"
     - stage: trinity
-      stageUuid: "4d233a9e-5c76-80c5-9799-ca653792ff5b"
+      stageUuid: "11cb0fff-03ed-804f-bfa1-09c7304e029f"
     - stage: boundary
-      stageUuid: "a127e2d1-6609-8a17-a3b5-92485f7becf6"
+      stageUuid: "399bc024-7b43-8c4d-a627-f78610c2b056"
     - stage: links
-      stageUuid: "d5554707-c3bb-8196-adc6-98e0b14aa433"
+      stageUuid: "14ba9e40-0b1f-8983-8a80-4b11812c2fef"
     - stage: horo
-      stageUuid: "2d6fa246-fc2f-870f-9b7f-6af759340680"
+      stageUuid: "f3547857-3bb4-8a5e-9349-2dad61021fd7"
     - stage: seal
-      stageUuid: "d5ee3f3b-4d26-8d5d-9fb2-782553adc350"
+      stageUuid: "99383431-8c25-83c6-bff7-ad893276cc26"
     - stage: uuid
-      stageUuid: "2373896e-f1ec-8f57-84f4-11ae2a99020d"
+      stageUuid: "a39ced6c-f692-8432-8337-933a2f720052"
 version: 2
 ---
 # individual

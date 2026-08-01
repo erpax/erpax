@@ -2,57 +2,19 @@
 name: transit
 description: "Use when reasoning about transit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: transit
-coordinate: transit · 5/round · b8e06b87
-contentUuid: "c415a1ea-e129-50ea-80a8-fffa9c563fd7"
-diamondUuid: "cb8dfca8-a7d2-8733-9052-ce208bc5df6d"
-uuid: "b8e06b87-f7da-8ad7-8555-1e1179be978a"
+coordinate: "transit · 5/round · 8f9bb661"
+contentUuid: "3e1e58ce-3de9-50fd-b0b8-386e21707213"
+diamondUuid: "f424cd19-efa3-83ce-b156-c79ab73b4970"
+uuid: "8f9bb661-d725-8059-8f17-367cebed506d"
 horo: 5
-bonds:
-  in:
-    - collapse
-    - label
-    - law
-    - merge
-    - sti
-    - time
-  out:
-    - collapse
-    - label
-    - law
-    - merge
-    - sti
-    - time
 typography:
   partition: transit
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - label
-    - law
-    - merge
-    - sti
-    - time
-  matrix:
-    - collapse
-    - label
-    - law
-    - merge
-    - sti
-    - time
-  backlinks:
-    - collapse
-    - label
-    - law
-    - merge
-    - sti
-    - time
 signatures:
-  computationUuid: "8dcb3d41-22c1-8ff9-b1ec-3b6dcdbb4bf5"
+  computationUuid: "3e68861f-dee0-856e-9dc0-cb26f4ca37ae"
   stages:
     - stage: path
       stageUuid: "9f3ed539-445a-8850-b2fc-73f88755a329"
@@ -63,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2bd51a2c-8071-8a68-8130-702f6e5ec394"
     - stage: horo
-      stageUuid: "ed4429c9-6e46-8009-8da9-28c25ecd5382"
+      stageUuid: "ff0502b7-fdb6-82de-a910-507dac2c3b08"
     - stage: seal
-      stageUuid: "37507624-14eb-8bbb-bf80-981b63c8e67c"
+      stageUuid: "e41fba29-0911-8fc7-93bb-9c8589afbceb"
     - stage: uuid
-      stageUuid: "73a85297-490d-8a83-a3e9-722aebed06cd"
+      stageUuid: "d5665447-6391-8e56-88b6-60f71e7d9669"
 version: 2
 ---
 # transit

@@ -1,53 +1,35 @@
 ---
 name: maps
 description: Use when reasoning about maps — A URL to a map of the place.
-atomPath: vocabulary/maps
-coordinate: maps · 2/share · 70b2e0ce
-contentUuid: "976d67f2-8fd9-5a5c-a4c8-7bd5f491c684"
-diamondUuid: "759e90af-6c4c-8ba3-b170-32fab5b15006"
-uuid: "70b2e0ce-d8b2-8cf3-af8d-f2b6ae606008"
-horo: 2
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/maps"
+coordinate: "vocabulary/maps · 7/descent · 581743d2"
+contentUuid: "fbf8012f-7e92-5c1e-b2ea-1f7e527985ac"
+diamondUuid: "58d3a255-477d-88c0-920a-2cf74c60937f"
+uuid: "581743d2-6929-873b-8cf0-39443349f1a4"
+horo: 7
 typography:
-  partition: maps
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "f04b4af2-3593-88ef-8c38-03b53ff9375c"
+  computationUuid: "94aecb3e-710e-8f0f-9577-9404d444d382"
   stages:
     - stage: path
-      stageUuid: "4ee4a86a-4688-8070-aedc-ff77f466d474"
+      stageUuid: "1120edfe-3c23-8d99-ad33-3b10eefab334"
     - stage: trinity
-      stageUuid: "7510bd17-1ae0-860f-a3f1-ad4df0819a46"
+      stageUuid: "78e680e6-a3a8-8096-b714-17c2a869ac5c"
     - stage: boundary
-      stageUuid: "16fa1381-c13e-85ec-95c0-504fe0534d91"
+      stageUuid: "edf0097c-5399-84ec-98be-716eae0f013b"
     - stage: links
-      stageUuid: "e564b4ed-f103-8c3e-a0e9-fcc191699ba5"
+      stageUuid: "fb81ae2c-ee1b-859c-9198-2a6c14ecdce5"
     - stage: horo
-      stageUuid: "205d7b29-19e9-8cb0-8bab-5ae159040b6b"
+      stageUuid: "5deef1d8-6422-8bad-9856-e12ccf15126b"
     - stage: seal
-      stageUuid: "db73b9f2-2ed4-8d72-a6d4-489967b3d80f"
+      stageUuid: "18e7e76f-b95e-8e4c-a777-bdb4f5fc45b1"
     - stage: uuid
-      stageUuid: "ee0e35b3-5379-882a-987c-3f96d62f10a2"
+      stageUuid: "789c7027-acdc-8864-8cad-02935e21f985"
 version: 2
 ---
 # maps

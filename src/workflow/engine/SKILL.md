@@ -1,71 +1,20 @@
 ---
 name: engine
 description: "Use when executing or validating finite-state machines — gating transitions, detecting dead-ends, or auditing workflow harmony."
-atomPath: workflow/engine
-coordinate: workflow/engine · 5/round · 842f6a9b
-contentUuid: "4d519b36-7c6e-5783-ba20-474bb92dcb46"
-diamondUuid: "5b084c8d-befd-8bdc-8c07-4e174a7afe7b"
-uuid: "842f6a9b-c2e0-8505-a150-51d6ef1a054b"
-horo: 5
-bonds:
-  in:
-    - displacement
-    - find
-    - matrix
-    - query
-    - rank
-    - search
-    - specification
-    - vehicle
-    - workflow
-  out:
-    - displacement
-    - find
-    - matrix
-    - query
-    - rank
-    - search
-    - specification
-    - vehicle
+atomPath: "workflow/engine"
+coordinate: "workflow/engine · 7/descent · 25ec3863"
+contentUuid: "8fcc58c9-63f5-5748-b491-8f1a3ae2d3b0"
+diamondUuid: "6347a6e6-e641-8ce5-90b9-726d2015521f"
+uuid: "25ec3863-9308-8988-8234-65cb450db9f3"
+horo: 7
 typography:
   partition: workflow
   bondDegree: 35
-  neighbors:
-    - aura
 standards:
   - "OMG BPMN 2.0 process-execution-semantics"
 bindings: []
-neighbors:
-  wikilink:
-    - aura
-    - event
-    - flow
-    - hooks
-    - horo
-    - identity
-    - law
-    - merge
-    - standard
-  matrix:
-    - displacement
-    - find
-    - matrix
-    - query
-    - rank
-    - search
-    - specification
-    - vehicle
-  backlinks:
-    - displacement
-    - find
-    - matrix
-    - query
-    - rank
-    - search
-    - specification
-    - vehicle
 signatures:
-  computationUuid: "c1b122c5-ef8c-804c-b2bc-51fbaad83b39"
+  computationUuid: "a5ab4306-0984-872c-8090-c9e0692fcdbd"
   stages:
     - stage: path
       stageUuid: "d26ebc48-f8cf-8785-be51-1f16d8273a43"
@@ -76,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1e72931c-e40b-80b3-a6ad-4c7c475af10d"
     - stage: horo
-      stageUuid: "9b4f3143-99e8-861a-9fbb-2b807ab46c7d"
+      stageUuid: "9d889635-fb3d-8ca0-8088-959746484ad6"
     - stage: seal
       stageUuid: "a312714d-904f-82f6-ab4d-eec1d3b25988"
     - stage: uuid
-      stageUuid: "cecd44a7-bc39-85a4-a7a3-4f092e2ea2ec"
+      stageUuid: "fe7ce00b-dd0e-8837-963d-9e18cda648b1"
 version: 2
 ---
 # workflow-engine — the inert state machine made LIVE, self-auditing

@@ -1,72 +1,34 @@
 ---
 name: attribution
 description: "Use when tracking which touchpoint/channel caused a conversion — first-touch, last-touch, multi-touch models; credit value allocation across channels."
-atomPath: vocabulary/attribution
-coordinate: attribution · 2/share · d1fbecd1
-contentUuid: "c2166d91-32f6-5601-9c29-ec44f1726ca8"
-diamondUuid: "d9999f41-8439-83b4-aa5b-a932500aa42e"
-uuid: "d1fbecd1-11a7-8c80-a4c9-5fba5853d59e"
+atomPath: "vocabulary/attribution"
+coordinate: "vocabulary/attribution · 2/share · 9c77084c"
+contentUuid: "583840b9-269f-5878-92ee-5ab4ed43e9ae"
+diamondUuid: "56e685fb-dc21-8147-a87b-9c9d4bf25989"
+uuid: "9c77084c-2d34-82a8-818a-bbe01b0cce6a"
 horo: 2
-bonds:
-  in:
-    - activities
-    - campaign
-    - conversion
-    - law
-    - opportunities
-    - orders
-  out:
-    - activities
-    - campaign
-    - conversion
-    - law
-    - opportunities
-    - orders
 typography:
-  partition: attribution
-  bondDegree: 19
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 21
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - activities
-    - campaign
-    - conversion
-    - law
-    - opportunities
-    - orders
-  matrix:
-    - activities
-    - campaign
-    - conversion
-    - law
-    - opportunities
-    - orders
-  backlinks:
-    - activities
-    - campaign
-    - conversion
-    - law
-    - opportunities
-    - orders
 signatures:
-  computationUuid: "5eaa5f65-7303-85a8-b94e-bafa1e792fd0"
+  computationUuid: "d3e0ae2c-7235-8c42-91c9-82f4400f1f78"
   stages:
     - stage: path
-      stageUuid: "4f323f90-b1b7-8de6-bde0-bd5d548fcd58"
+      stageUuid: "0f82d580-ac07-8617-8e23-f8c5d7e7cd13"
     - stage: trinity
-      stageUuid: "b33ba76c-6469-8227-8d3c-6a46eafadd61"
+      stageUuid: "189124c7-8ff9-8127-9e4f-c1ba67f1c7c9"
     - stage: boundary
-      stageUuid: "ba4963b7-3849-8973-89eb-4d9921991319"
+      stageUuid: "ae0e9659-7a7a-8a17-87bc-770056cb9b28"
     - stage: links
-      stageUuid: "37bc9ce3-c2d0-8bab-b96a-081ae9b7894f"
+      stageUuid: "d5ee2d11-fe50-88f8-9015-8cce4e16b6c3"
     - stage: horo
-      stageUuid: "b80fd4be-9843-8a8d-bb75-f0f359e21113"
+      stageUuid: "df4b3184-60e8-8fdd-918f-71b9d2832010"
     - stage: seal
-      stageUuid: "a304bb0c-bfb0-8470-8ded-5006de08fa75"
+      stageUuid: "cffddaec-e372-8779-a8d7-3b94a9394a25"
     - stage: uuid
-      stageUuid: "42fc6eed-daf8-87da-a843-a8e595120264"
+      stageUuid: "de291309-ca3a-807a-abae-6ce6ebfe7485"
 version: 2
 ---
 # attribution

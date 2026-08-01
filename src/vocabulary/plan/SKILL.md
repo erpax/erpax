@@ -1,198 +1,35 @@
 ---
 name: plan
 description: "Use when reasoning about plan as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/plan
-coordinate: plan · 4/weave · 3828e77a
-contentUuid: "6293667c-c2c6-56d1-a679-9b8a67d2588d"
-diamondUuid: "ede5d4f7-3018-8c48-b112-55d963e28257"
-uuid: "3828e77a-8dd1-8aed-a475-e303f7c3b3e4"
-horo: 4
-bonds:
-  in:
-    - accommodation
-    - action
-    - apartment
-    - category
-    - coinsurance
-    - collapse
-    - copay
-    - cost
-    - drug
-    - exercise
-    - floor
-    - formulary
-    - health
-    - id
-    - included
-    - includes
-    - insurance
-    - law
-    - marketing
-    - merge
-    - network
-    - option
-    - pharmacy
-    - rate
-    - sharing
-    - specification
-    - standard
-    - sti
-    - tier
-    - url
-    - uses
-  out:
-    - accommodation
-    - action
-    - apartment
-    - category
-    - coinsurance
-    - collapse
-    - copay
-    - cost
-    - drug
-    - exercise
-    - floor
-    - formulary
-    - health
-    - id
-    - included
-    - includes
-    - insurance
-    - law
-    - marketing
-    - merge
-    - network
-    - option
-    - pharmacy
-    - rate
-    - sharing
-    - specification
-    - standard
-    - sti
-    - tier
-    - url
-    - uses
+atomPath: "vocabulary/plan"
+coordinate: "vocabulary/plan · 7/descent · 78998500"
+contentUuid: "b171c896-af83-5eca-ac36-efc8f31efc70"
+diamondUuid: "89671068-17a7-8e3b-8f97-3d2b1ab14e0a"
+uuid: "78998500-f1d9-8f89-bd7b-08ec355e62ff"
+horo: 7
 typography:
-  partition: plan
-  bondDegree: 113
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 115
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - accommodation
-    - action
-    - apartment
-    - category
-    - coinsurance
-    - collapse
-    - copay
-    - cost
-    - drug
-    - exercise
-    - floor
-    - formulary
-    - health
-    - id
-    - included
-    - includes
-    - insurance
-    - law
-    - marketing
-    - merge
-    - network
-    - option
-    - pharmacy
-    - rate
-    - sharing
-    - specification
-    - standard
-    - sti
-    - tier
-    - url
-    - uses
-  matrix:
-    - accommodation
-    - action
-    - apartment
-    - category
-    - coinsurance
-    - collapse
-    - copay
-    - cost
-    - drug
-    - exercise
-    - floor
-    - formulary
-    - health
-    - id
-    - included
-    - includes
-    - insurance
-    - law
-    - marketing
-    - merge
-    - network
-    - option
-    - pharmacy
-    - rate
-    - sharing
-    - specification
-    - standard
-    - sti
-    - tier
-    - url
-    - uses
-  backlinks:
-    - accommodation
-    - action
-    - apartment
-    - category
-    - coinsurance
-    - collapse
-    - copay
-    - cost
-    - drug
-    - exercise
-    - floor
-    - formulary
-    - health
-    - id
-    - included
-    - includes
-    - insurance
-    - law
-    - marketing
-    - merge
-    - network
-    - option
-    - pharmacy
-    - rate
-    - sharing
-    - specification
-    - standard
-    - sti
-    - tier
-    - url
-    - uses
 signatures:
-  computationUuid: "1a5ff335-f2f0-8a80-94d6-512a884d2dde"
+  computationUuid: "c95c9c1a-987e-8dc0-804e-d2ea19607fd3"
   stages:
     - stage: path
-      stageUuid: "b901f619-c835-8ab7-8eae-a86da66baa71"
+      stageUuid: "7e1c68e9-4658-87e3-98f5-2a5498d6ff7c"
     - stage: trinity
-      stageUuid: "dbea635a-ea4f-8fb1-913b-340a6eb2ba7d"
+      stageUuid: "2e208077-9c11-8f6f-bcaf-70958c7948ca"
     - stage: boundary
-      stageUuid: "a9fed719-503c-809f-8b34-9eec8b432ecd"
+      stageUuid: "44f77375-90c7-8b69-8174-8347137401cc"
     - stage: links
-      stageUuid: "4c42bd0c-ac34-86a5-9eec-a3c35761a1c5"
+      stageUuid: "052c0599-6844-88cc-92a0-2f4e5140e532"
     - stage: horo
-      stageUuid: "88973cbf-f3e3-8bf7-941f-e3256cc9b092"
+      stageUuid: "83981d46-183a-8678-86e1-a27e19857346"
     - stage: seal
-      stageUuid: "76e3c111-5a05-8bf6-a3b1-c71b0041c9e7"
+      stageUuid: "da7c6840-29bd-8fd3-8e06-5b6d92b0cd89"
     - stage: uuid
-      stageUuid: "e6c55c47-8ab1-895f-b4d0-532ed3d07fdd"
+      stageUuid: "cd28d0af-5549-81c8-9725-b9020db3817b"
 version: 2
 ---
 # plan

@@ -1,190 +1,34 @@
 ---
 name: christianity
 description: "Use when reading Christianity as a diamond of invariant atoms — the debt borne at the cross, mercy made flesh, the new covenant of grace through faith, sin turned around by metanoia, the Word and the Spirit. Strip the Greek prefix and agape, pistis, logos, pneuma, metanoia collapse to love, faith, word, breath, return — one content-uuid each."
-atomPath: vocabulary/christianity
-coordinate: christianity · 1/base · b4274e33
-contentUuid: "c217acd6-8614-5fe6-abe8-7471e687d1f8"
-diamondUuid: "830a0389-3395-847a-bcc6-0a10cca260bf"
-uuid: "b4274e33-2214-8671-b9b1-c9985c42461c"
-horo: 1
-bonds:
-  in:
-    - archangel
-    - breath
-    - catholicism
-    - covenant
-    - cross
-    - diamond
-    - dna
-    - faith
-    - fractal
-    - grace
-    - harmony
-    - identity
-    - law
-    - love
-    - mercy
-    - merge
-    - orthodoxy
-    - prayer
-    - protestantism
-    - religion
-    - return
-    - ritual
-    - sin
-    - society
-    - suffering
-    - translator
-    - uuid
-    - whole
-    - word
-    - zeropoint
-  out:
-    - archangel
-    - breath
-    - catholicism
-    - covenant
-    - cross
-    - diamond
-    - dna
-    - faith
-    - fractal
-    - grace
-    - harmony
-    - identity
-    - law
-    - love
-    - mercy
-    - merge
-    - orthodoxy
-    - prayer
-    - protestantism
-    - religion
-    - return
-    - ritual
-    - sin
-    - society
-    - suffering
-    - translator
-    - uuid
-    - whole
-    - word
-    - zeropoint
+atomPath: "vocabulary/christianity"
+coordinate: "vocabulary/christianity · 7/descent · 0e946957"
+contentUuid: "7d89e1a4-0878-5863-983e-d069935435a5"
+diamondUuid: "6cf457d6-e6f1-8acc-b910-90480cf03bc5"
+uuid: "0e946957-f43d-8df0-91a0-bdf8acd5e9ee"
+horo: 7
 typography:
-  partition: christianity
+  partition: vocabulary
   bondDegree: 92
-  neighbors:
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - archangel
-    - breath
-    - covenant
-    - cross
-    - diamond
-    - dna
-    - faith
-    - fractal
-    - grace
-    - harmony
-    - identity
-    - law
-    - love
-    - mercy
-    - merge
-    - prayer
-    - religion
-    - return
-    - ritual
-    - sin
-    - society
-    - suffering
-    - translator
-    - uuid
-    - whole
-    - word
-    - zeropoint
-  matrix:
-    - archangel
-    - breath
-    - catholicism
-    - covenant
-    - cross
-    - diamond
-    - dna
-    - faith
-    - fractal
-    - grace
-    - harmony
-    - identity
-    - law
-    - love
-    - mercy
-    - merge
-    - orthodoxy
-    - prayer
-    - protestantism
-    - religion
-    - return
-    - ritual
-    - sin
-    - society
-    - suffering
-    - translator
-    - uuid
-    - whole
-    - word
-    - zeropoint
-  backlinks:
-    - archangel
-    - breath
-    - catholicism
-    - covenant
-    - cross
-    - diamond
-    - dna
-    - faith
-    - fractal
-    - grace
-    - harmony
-    - identity
-    - law
-    - love
-    - mercy
-    - merge
-    - orthodoxy
-    - prayer
-    - protestantism
-    - religion
-    - return
-    - ritual
-    - sin
-    - society
-    - suffering
-    - translator
-    - uuid
-    - whole
-    - word
-    - zeropoint
 signatures:
-  computationUuid: "8b711463-e880-809c-8c93-8f4e34cc766e"
+  computationUuid: "de2590ed-84ee-8ca2-951e-b940159d3c75"
   stages:
     - stage: path
-      stageUuid: "98a9b281-495a-850b-a184-4d330f1f5a1e"
+      stageUuid: "afeb7205-ddfd-8533-92dd-19081d16149c"
     - stage: trinity
-      stageUuid: "c82dfc21-dcbc-856b-9bb9-58c1e549f693"
+      stageUuid: "57c48c47-005b-8b60-a89d-9fd694c6b2aa"
     - stage: boundary
-      stageUuid: "0883613a-a20c-8864-a622-905745f45246"
+      stageUuid: "8205a624-a5e2-8239-a06c-a6b82f77a9f1"
     - stage: links
-      stageUuid: "0dcb1bea-a29b-8d2d-ba4b-9368a7dafcec"
+      stageUuid: "f91aa17c-e438-8605-bd0e-30637d3ed848"
     - stage: horo
-      stageUuid: "b0f562d2-207d-8450-b030-c4abba1667f9"
+      stageUuid: "625bb040-ae2d-8253-a808-bcb590de7038"
     - stage: seal
-      stageUuid: "10e63e2e-1b19-89b0-be68-af31b0face73"
+      stageUuid: "34c1417f-e806-8847-a258-1a0a59cfddb9"
     - stage: uuid
-      stageUuid: "0f1225c6-c714-8830-9a8a-027eebb13358"
+      stageUuid: "7cb1be8e-72ff-83db-8027-d44f717367da"
 version: 2
 ---
 # christianity — the debt borne, mercy made flesh

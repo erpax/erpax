@@ -1,68 +1,35 @@
 ---
 name: pet
 description: "Use when reasoning about pet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/pet
-coordinate: pet · 4/weave · bc9d31cb
-contentUuid: "d64a468d-ca29-5998-99d7-4058be5c5400"
-diamondUuid: "d0d1d2dd-2149-8fa3-bc8b-7c027479ddcb"
-uuid: "bc9d31cb-1f7a-8826-929c-dd78f203357b"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
+atomPath: "vocabulary/pet"
+coordinate: "vocabulary/pet · 8/crest · df3ab280"
+contentUuid: "05dafa49-6cef-5fc7-a47e-8a1f804bee35"
+diamondUuid: "48cdbb40-4cc2-80b0-8427-56465874d17d"
+uuid: "df3ab280-af1e-83eb-b13d-ca42bc723146"
+horo: 8
 typography:
-  partition: pet
-  bondDegree: 16
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 19
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
 signatures:
-  computationUuid: "2516d6c4-c45e-8a3f-a24f-a944defe75ed"
+  computationUuid: "cafb7996-89c0-87f2-8656-7edbb7fada47"
   stages:
     - stage: path
-      stageUuid: "5fc8bb5c-974a-87fc-8683-8411b38d7435"
+      stageUuid: "d5cf53e0-5690-8af4-b316-9fed2e4142fc"
     - stage: trinity
-      stageUuid: "856a1208-e53e-8778-9918-b7d95ad65e85"
+      stageUuid: "873b44bb-4c08-841d-af40-ee91dc042eee"
     - stage: boundary
-      stageUuid: "85e4fda3-31a8-85e8-a404-f6bd18d5521c"
+      stageUuid: "1f0653a2-a2c2-8674-9047-f7030e3f6606"
     - stage: links
-      stageUuid: "f3eb1433-3b41-8d0b-9ec8-cc651d40d813"
+      stageUuid: "e049abe5-1e9a-8cde-b358-04f007a8ff1d"
     - stage: horo
-      stageUuid: "798d18b9-cdfd-836f-b2af-4227386dd919"
+      stageUuid: "c36b4d0f-301a-8320-a5bb-bfc7c0a4b32f"
     - stage: seal
-      stageUuid: "8f50657f-9c17-89d8-917a-0bcf0f68034d"
+      stageUuid: "aba452da-0da6-8909-b659-dd4064676465"
     - stage: uuid
-      stageUuid: "5526031d-25e2-80a6-b44a-a3a1682dae07"
+      stageUuid: "702903b2-0f6a-8641-accb-898ee17d18c5"
 version: 2
 ---
 # pet

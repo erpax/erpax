@@ -2,55 +2,14 @@
 name: types
 description: "Use when typing a tenant's agnostic seed configuration — the `TenantConfig` shape (branding, businessModel, subscriptionPlans with feature limits, marketing content, feature flags, localization, stripe) plus the `TranslatedField` / `FeatureLimit` helpers."
 atomPath: "config/types"
-coordinate: "config/types · 3/3 · 65cd7adc"
-contentUuid: "58f1705d-c482-5983-8526-9f5265138f75"
-diamondUuid: "d92b8aa3-39c5-8af0-a8d5-b7f0a6e88488"
-uuid: "65cd7adc-ceb9-848d-89e1-178b4854cb8e"
+coordinate: "config/types · 3/3 · a47d89f5"
+contentUuid: "cabe8636-472c-54dc-aea3-3b6ca6982c30"
+diamondUuid: "31b9ec9a-4f11-8fcc-b38b-3daadcb5c951"
+uuid: "a47d89f5-22ac-8ba9-939d-1b6efe1dab98"
 horo: 3
-bonds:
-  in:
-    - chat
-    - collapse
-    - config
-    - decompression
-    - examples
-    - gate
-    - law
-    - optimize
-    - payload
-    - recover
-    - schema
-    - society
-    - sti
-    - test
-    - torus
-    - trinity
-    - types
-    - vitepress
-  out:
-    - chat
-    - collapse
-    - config
-    - decompression
-    - examples
-    - gate
-    - law
-    - optimize
-    - payload
-    - recover
-    - schema
-    - society
-    - sti
-    - test
-    - torus
-    - trinity
-    - types
-    - vitepress
 typography:
   partition: config
   bondDegree: 66
-  neighbors:
-    - agent
 standards:
   - "BCP-47"
   - "BCP-47 language-tag"
@@ -62,51 +21,8 @@ standards:
   - "ISO-3166-1:2020 country-codes"
   - "ISO-4217:2015 currency-codes"
 bindings: []
-neighbors:
-  wikilink:
-    - config
-    - law
-    - types
-  matrix:
-    - chat
-    - collapse
-    - config
-    - decompression
-    - examples
-    - gate
-    - law
-    - optimize
-    - payload
-    - recover
-    - schema
-    - society
-    - sti
-    - test
-    - torus
-    - trinity
-    - types
-    - vitepress
-  backlinks:
-    - chat
-    - collapse
-    - config
-    - decompression
-    - examples
-    - gate
-    - law
-    - optimize
-    - payload
-    - recover
-    - schema
-    - society
-    - sti
-    - test
-    - torus
-    - trinity
-    - types
-    - vitepress
 signatures:
-  computationUuid: "103529e0-3a9c-8d5c-98a4-7de8f65b02c4"
+  computationUuid: "a61df4fa-664d-889e-97ef-701c54fe1c3b"
   stages:
     - stage: path
       stageUuid: "0c15b24d-92f2-8307-b5d1-8a7a70e28e96"
@@ -117,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "0ddfdbf1-d37d-8240-9942-a08bbe524264"
     - stage: horo
-      stageUuid: "80271314-2fa3-8753-a12f-d7c8f694d62b"
+      stageUuid: "a32d50fb-0b74-8d5a-b690-edfc5eee4cf7"
     - stage: seal
       stageUuid: "52444869-a2dd-8749-bf4f-7035de37ba99"
     - stage: uuid
-      stageUuid: "7eb875ea-14a8-858b-9976-515de6ffa2e2"
+      stageUuid: "db735446-d72f-8c35-8397-37d5b8818d38"
 version: 2
 ---
 # config/types — the agnostic TenantConfig shape

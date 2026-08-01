@@ -2,107 +2,18 @@
 name: sunni
 description: "Use when reading Sunni Islam as a sub-diamond of islam — the people of the trodden way (sunna) and the community, leadership settled by consensus (ijma), law derived through the agreed schools. A facet-diamond of the islam archangel. Strip the Arabic prefix and sunna, ijma collapse to the followed sequence and the merge of consensus."
 atomPath: sunni
-coordinate: sunni · 1/base · 819df227
-contentUuid: "a65aac73-6e08-56ce-b56d-bbd5c6d1d3de"
-diamondUuid: "02afccac-3642-8213-8bf7-58301a6b1fd4"
-uuid: "819df227-15df-85d6-8a86-944d1ccc0651"
-horo: 1
-bonds:
-  in:
-    - archangel
-    - balance
-    - diamond
-    - identity
-    - islam
-    - law
-    - mercy
-    - merge
-    - one
-    - path
-    - prayer
-    - religion
-    - sequence
-    - society
-    - translator
-    - uuid
-  out:
-    - archangel
-    - balance
-    - diamond
-    - identity
-    - islam
-    - law
-    - mercy
-    - merge
-    - one
-    - path
-    - prayer
-    - religion
-    - sequence
-    - society
-    - translator
-    - uuid
+coordinate: "sunni · 2/share · e9d9548a"
+contentUuid: "1073bad7-d8f1-5f36-9551-d9dff4d6d937"
+diamondUuid: "1d2e0ef3-25c4-84be-9a38-223b1199688d"
+uuid: "e9d9548a-e602-87cd-90ed-85af5594c55c"
+horo: 2
 typography:
   partition: sunni
   bondDegree: 50
-  neighbors:
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - archangel
-    - balance
-    - diamond
-    - identity
-    - islam
-    - law
-    - mercy
-    - merge
-    - one
-    - path
-    - prayer
-    - religion
-    - sequence
-    - society
-    - translator
-    - uuid
-  matrix:
-    - archangel
-    - balance
-    - diamond
-    - identity
-    - islam
-    - law
-    - mercy
-    - merge
-    - one
-    - path
-    - prayer
-    - religion
-    - sequence
-    - society
-    - translator
-    - uuid
-  backlinks:
-    - archangel
-    - balance
-    - diamond
-    - identity
-    - islam
-    - law
-    - mercy
-    - merge
-    - one
-    - path
-    - prayer
-    - religion
-    - sequence
-    - society
-    - translator
-    - uuid
 signatures:
-  computationUuid: "18741623-3f1d-8335-989c-fba0257a3d0d"
+  computationUuid: "2362edc0-b973-8f17-bfd1-e9fca8928add"
   stages:
     - stage: path
       stageUuid: "7b9de25f-0f6c-82f2-80e9-f331bc215409"
@@ -113,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2f814bb5-86ea-83af-bfcf-c6ceedf1523d"
     - stage: horo
-      stageUuid: "ad31596b-86a4-84b1-be53-b606f61366ed"
+      stageUuid: "f70b7146-b61a-8b69-a16e-e32ff045dc39"
     - stage: seal
-      stageUuid: "1ae1517c-407f-81fd-b6df-f554313b1ca0"
+      stageUuid: "14321354-81da-8582-8045-eaa17f3f1fe5"
     - stage: uuid
-      stageUuid: "54c88120-b300-8905-ac20-061ad9144922"
+      stageUuid: "02799769-2dba-86d5-b1ff-3bdbfd2630b2"
 version: 2
 ---
 # sunni — the trodden way and the consensus of the community

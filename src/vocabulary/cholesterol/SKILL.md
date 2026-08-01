@@ -1,68 +1,35 @@
 ---
 name: cholesterol
 description: "Use when reasoning about cholesterol as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/cholesterol
-coordinate: cholesterol · 7/descent · 6476e43a
-contentUuid: "1255c7ea-e5e4-5eaf-b61f-5c047e83d736"
-diamondUuid: "ff011524-97c2-843a-b11b-6edd256beb9a"
-uuid: "6476e43a-0c8e-80d5-ad01-2edc21731f8a"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - content
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - content
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/cholesterol"
+coordinate: "vocabulary/cholesterol · 2/share · bb20a6bf"
+contentUuid: "db3029f4-63db-58cd-8b3d-5c58e3372f95"
+diamondUuid: "e11c329c-5b36-899d-bdaf-7464c45cdd2d"
+uuid: "bb20a6bf-09bc-853f-9e28-3a4e44c5efe4"
+horo: 2
 typography:
-  partition: cholesterol
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - content
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - content
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - content
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "94470735-f141-8498-b69b-4d17c2f05f91"
+  computationUuid: "58bcf304-1f4c-8800-81a3-d85f83624636"
   stages:
     - stage: path
-      stageUuid: "e2d28507-327f-8ccc-b061-74a3eebc588e"
+      stageUuid: "6360ada9-d58d-857d-87a9-768b1b33f67e"
     - stage: trinity
-      stageUuid: "120b3c40-766b-823c-8723-af59394527d3"
+      stageUuid: "4479f9b0-a72b-8ad7-8aa8-6b7f61437d4a"
     - stage: boundary
-      stageUuid: "46043274-9ea5-81f7-9dca-875357ebac9d"
+      stageUuid: "91efb7e4-a411-8035-be97-25ee53fe1d7b"
     - stage: links
-      stageUuid: "a5f63f96-1e9b-8c85-8c89-ef0bd0aa4797"
+      stageUuid: "cf232c59-bcf8-8c61-a831-0b1e20346c0a"
     - stage: horo
-      stageUuid: "a3e9310f-4c2b-82ff-9a67-ff06a53a512c"
+      stageUuid: "5012faac-14fe-83f4-bd67-9e40d86ef2c2"
     - stage: seal
-      stageUuid: "c685627e-4d75-8e8f-a15a-4938c32bc075"
+      stageUuid: "82ce31fb-3a93-83e9-969d-ded2f18d9476"
     - stage: uuid
-      stageUuid: "d25ec851-3ba5-8830-a391-c73d553a27ca"
+      stageUuid: "73731c6b-88ee-85cb-8532-3437816d2392"
 version: 2
 ---
 # cholesterol

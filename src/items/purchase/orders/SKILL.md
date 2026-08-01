@@ -2,57 +2,14 @@
 name: orders
 description: "Use when raising or reviewing a vendor purchase commitment — line items, Incoterms 2020 delivery terms and location (FOB/CIF/DDP/EXW), order/due dates, currency, and SOX three-way-match (PO → goods receipt → invoice). The procure-to-pay header that gates GL posting timing by FOB point per IFRS-15 §38-42."
 atomPath: "items/purchase/orders"
-coordinate: "items/purchase/orders · 2/share · a8e54f93"
-contentUuid: "1d4e7290-abae-5583-a05e-9587937b9f6c"
-diamondUuid: "2d1ff51f-4a3f-8481-a669-95b3af69386e"
-uuid: "a8e54f93-6a2b-84cb-b882-932fc5bef3a2"
-horo: 2
-bonds:
-  in:
-    - accounting
-    - allocation
-    - duality
-    - fractal
-    - hooks
-    - horo
-    - law
-    - materials
-    - orders
-    - packs
-    - party
-    - purchase
-    - receipts
-    - routings
-    - runs
-    - shift
-    - shifts
-    - standard
-    - utility
-    - variances
-  out:
-    - accounting
-    - allocation
-    - duality
-    - fractal
-    - hooks
-    - horo
-    - law
-    - materials
-    - orders
-    - packs
-    - party
-    - receipts
-    - routings
-    - runs
-    - shift
-    - shifts
-    - standard
-    - utility
-    - variances
+coordinate: "items/purchase/orders · 8/crest · 05f9c2bd"
+contentUuid: "cf7bff65-7735-5ff8-a61b-5c770ed63310"
+diamondUuid: "b2e7c7e8-0567-873d-972f-5baa05c540cd"
+uuid: "05f9c2bd-c6c9-8360-99c9-f81df9f6d8ec"
+horo: 8
 typography:
   partition: items
   bondDegree: 0
-  neighbors: []
 standards:
   - "EN-16931:2017 §BG-13 buyer-reference"
   - "EN-16931:2017 §BG-13 buyer-reference`"
@@ -71,56 +28,8 @@ standards:
   - "US-GAAP ASC 405 liabilities accounts-payable"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounts
-    - commitments
-    - invoices
-    - items
-    - law
-    - receipts
-  matrix:
-    - accounting
-    - allocation
-    - duality
-    - fractal
-    - hooks
-    - horo
-    - law
-    - materials
-    - orders
-    - packs
-    - party
-    - receipts
-    - routings
-    - runs
-    - shift
-    - shifts
-    - standard
-    - utility
-    - variances
-  backlinks:
-    - accounting
-    - allocation
-    - duality
-    - fractal
-    - hooks
-    - horo
-    - law
-    - materials
-    - orders
-    - packs
-    - party
-    - receipts
-    - routings
-    - runs
-    - shift
-    - shifts
-    - standard
-    - utility
-    - variances
 signatures:
-  computationUuid: "91a864dd-53c1-8ae3-b596-f0512adc030d"
+  computationUuid: "7f301355-2114-8588-a909-fcbe25dca972"
   stages:
     - stage: path
       stageUuid: "49cf6b73-1636-8513-8828-faf9fe67178e"
@@ -131,11 +40,11 @@ signatures:
     - stage: links
       stageUuid: "06733905-1ce6-800c-a7ae-d2cec55bfd2a"
     - stage: horo
-      stageUuid: "2c00c0b7-3373-85fa-8ec1-25ac66f082f2"
+      stageUuid: "a9686e6f-f25a-8f86-a22f-6a32db1607c3"
     - stage: seal
       stageUuid: "f83526b5-a4ba-8a1a-8b15-45767398a915"
     - stage: uuid
-      stageUuid: "4cb4c4da-4787-85a3-ab05-cfb57f38a51e"
+      stageUuid: "1cff46a8-e3c6-8cfb-a618-3195385b7705"
 version: 2
 ---
 # purchase-orders

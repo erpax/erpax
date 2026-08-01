@@ -2,62 +2,19 @@
 name: treatment
 description: "Use when reasoning about treatment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: treatment
-coordinate: treatment · 2/share · 6016702e
-contentUuid: "3646283f-f434-5294-8fce-093fc280a8fc"
-diamondUuid: "142abeb5-e8ac-8986-9323-6fb151194c4f"
-uuid: "6016702e-1d6b-80e3-831e-6f239842d05b"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - indication
-    - law
-    - merge
-    - possible
-    - psychological
-    - sti
-  out:
-    - collapse
-    - indication
-    - law
-    - merge
-    - possible
-    - psychological
-    - sti
+coordinate: "treatment · 4/weave · 3666f892"
+contentUuid: "61ae05c5-9c38-56f6-aa8f-bf44844e575f"
+diamondUuid: "dfd85987-3985-860b-8d1f-38b5a96fbe11"
+uuid: "3666f892-ca70-8286-b41c-b4ae489cceec"
+horo: 4
 typography:
   partition: treatment
-  bondDegree: 24
-  neighbors: []
+  bondDegree: 33
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - indication
-    - law
-    - merge
-    - possible
-    - psychological
-    - sti
-  matrix:
-    - collapse
-    - indication
-    - law
-    - merge
-    - possible
-    - psychological
-    - sti
-  backlinks:
-    - collapse
-    - indication
-    - law
-    - merge
-    - possible
-    - psychological
-    - sti
 signatures:
-  computationUuid: "918b561d-261c-8ea9-b1b6-ada9f5f11e0a"
+  computationUuid: "2540068b-9637-8c5c-87ff-1ca9eecb4836"
   stages:
     - stage: path
       stageUuid: "1b9d5f6f-8219-84be-a7e1-515f16c62fc2"
@@ -68,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "50448a84-619d-8933-be21-b441865e032f"
     - stage: horo
-      stageUuid: "ba7f78e5-a214-8527-8161-339699ec2843"
+      stageUuid: "7ee8009e-d48c-80eb-8d9d-962e62dd19b5"
     - stage: seal
-      stageUuid: "8083f6e2-901b-86bb-b11f-237de604def1"
+      stageUuid: "05af4ebc-1ff6-8812-a6ef-5872698f05fe"
     - stage: uuid
-      stageUuid: "73601441-b0b8-855d-b1a7-93db235dcdeb"
+      stageUuid: "4a9923cd-0cb3-87bb-a849-97b2aa2a64fc"
 version: 2
 ---
 # treatment

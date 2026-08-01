@@ -1,63 +1,35 @@
 ---
 name: petite
 description: "Use when reasoning about petite as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/petite
-coordinate: petite · 5/round · 432997f6
-contentUuid: "bb6c54cb-e2d4-58c7-bc2e-d0a852d78ebe"
-diamondUuid: "6725992f-e55d-8738-828c-d9a0ce5e998c"
-uuid: "432997f6-6b26-8226-8bbf-cb5a5d31b8a4"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/petite"
+coordinate: "vocabulary/petite · 1/base · 66a37e80"
+contentUuid: "ebb816b9-3ac4-53d3-8f42-0a66b6233ee2"
+diamondUuid: "89fb8d29-df73-85fe-a6c0-062c34e9ac91"
+uuid: "66a37e80-7ee6-859f-8460-e718c1ed1ef2"
+horo: 1
 typography:
-  partition: petite
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "3aa75dee-ad2e-801b-84ec-158cf60cbe81"
+  computationUuid: "1d206821-5a19-8df7-9a9c-28c43b1096b8"
   stages:
     - stage: path
-      stageUuid: "b59f470e-897b-8608-bbfd-91e6342e7b53"
+      stageUuid: "68702db1-0296-8b9f-a2b4-6a1bca416eba"
     - stage: trinity
-      stageUuid: "8134d268-90cf-853f-9063-33933f69e8fb"
+      stageUuid: "d16a1922-2d59-8b20-a24d-7e75c2dd2677"
     - stage: boundary
-      stageUuid: "0563b0f6-a90a-8c98-9503-0213098eb9b2"
+      stageUuid: "0468374e-03d5-8f0f-ada3-58dc80a426d2"
     - stage: links
-      stageUuid: "3baf2975-a657-832f-9102-c27b6c04cc85"
+      stageUuid: "b34e5b59-b68d-884d-8931-323c21c6ddc6"
     - stage: horo
-      stageUuid: "cfec1c6e-bf09-8d0b-8679-53ab900c240b"
+      stageUuid: "55127e43-c64d-80b3-8d9b-ab51732ad459"
     - stage: seal
-      stageUuid: "3853108f-eec0-8a95-950b-30c351e6990c"
+      stageUuid: "36afd25f-e647-8194-8761-40e19adf67be"
     - stage: uuid
-      stageUuid: "0d3b82fb-b393-8bb7-8107-e51ff3d867ab"
+      stageUuid: "c508f331-26c7-827d-8896-25ae96a409a3"
 version: 2
 ---
 # petite

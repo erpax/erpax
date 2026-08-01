@@ -1,68 +1,35 @@
 ---
 name: organize
 description: "Use when reasoning about organize as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/organize
-coordinate: organize · 8/crest · 0c585da9
-contentUuid: "8452c9c2-8fd3-52db-958b-88c6e001cd05"
-diamondUuid: "d483ee6e-469c-8635-bfeb-ed70018aad57"
-uuid: "0c585da9-c618-87a3-adcd-4507c63eb001"
+atomPath: "vocabulary/organize"
+coordinate: "vocabulary/organize · 8/crest · 77110b22"
+contentUuid: "3721c9b2-14a0-5837-8ffb-7ae75ae2bbe6"
+diamondUuid: "6348090c-4d7e-8cc3-a11a-ce6073feb098"
+uuid: "77110b22-5415-82f6-8916-741e911bdb73"
 horo: 8
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: organize
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "460fffab-bebb-8ae3-ae84-53165a0b79c3"
+  computationUuid: "dd8d7dc2-0b09-8e23-b8dd-9b172367ba4b"
   stages:
     - stage: path
-      stageUuid: "7c6114e0-0089-89c2-b19c-e0c16f4f5be5"
+      stageUuid: "8cd87680-d45f-8857-a22e-9d2b6d3c89d0"
     - stage: trinity
-      stageUuid: "273eb452-8906-893e-bcd2-b0c049560efd"
+      stageUuid: "388bb4c0-5965-882e-a190-a85e431981ff"
     - stage: boundary
-      stageUuid: "4c7bbcc0-479e-8099-b0f4-f143dddeb8b8"
+      stageUuid: "3986f06c-2d36-8823-b4a6-ed4a910d7c19"
     - stage: links
-      stageUuid: "40ad5813-ecc5-80e1-a4a4-616f1450b971"
+      stageUuid: "45eda243-fc91-87ef-8312-2768b1bae607"
     - stage: horo
-      stageUuid: "e25a357f-b486-8b28-a81d-669e79fefaa9"
+      stageUuid: "c08698fa-07e5-88b6-b320-83cab2ad2d67"
     - stage: seal
-      stageUuid: "3672f124-8fdb-8017-bb14-8a63a3b1a7bf"
+      stageUuid: "e01871bf-38ef-8709-9c52-5ffdbacefe5c"
     - stage: uuid
-      stageUuid: "2f2fbc82-3213-8c58-8c5f-3d8430bf967c"
+      stageUuid: "f5ff1119-8777-869d-9585-b63153eab4f0"
 version: 2
 ---
 # organize

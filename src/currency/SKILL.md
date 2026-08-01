@@ -2,104 +2,14 @@
 name: currency
 description: "Use when a value carries money — amount + ISO-4217 currency, exchange rates, rounding, multi-currency ledgers/totals. The CurrencyConcern/AmountConcern field-factory; money is amount+currency, never a currency-baked field name."
 atomPath: currency
-coordinate: "currency · 2/share · f15e0b64"
-contentUuid: "0722723c-7066-567c-897d-3b8cb36f6950"
-diamondUuid: "2bc3ce10-059d-892c-bbd6-f3b8c04b12d3"
-uuid: "f15e0b64-f539-8e50-920c-41cff1ab7a1d"
-horo: 2
-bonds:
-  in:
-    - accounting
-    - agriculture
-    - amortize
-    - amount
-    - bindings
-    - calculate
-    - commerce
-    - compensation
-    - conversion
-    - crop
-    - decompression
-    - depreciate
-    - dimension
-    - discount
-    - ebitda
-    - enterprisebudget
-    - events
-    - fallback
-    - field
-    - fields
-    - hedge
-    - hooks
-    - identity
-    - items
-    - jobs
-    - measure
-    - payment
-    - price
-    - rate
-    - rates
-    - reconcile
-    - reconciliation
-    - resources
-    - revenue
-    - salary
-    - seed
-    - service
-    - standard
-    - tax
-    - total
-    - transaction
-    - value
-    - versions
-  out:
-    - accounting
-    - agriculture
-    - amortize
-    - amount
-    - bindings
-    - calculate
-    - commerce
-    - compensation
-    - conversion
-    - crop
-    - decompression
-    - depreciate
-    - dimension
-    - discount
-    - ebitda
-    - enterprisebudget
-    - events
-    - fallback
-    - field
-    - fields
-    - hedge
-    - hooks
-    - identity
-    - items
-    - jobs
-    - measure
-    - payment
-    - price
-    - rate
-    - rates
-    - reconcile
-    - reconciliation
-    - resources
-    - revenue
-    - salary
-    - seed
-    - service
-    - standard
-    - tax
-    - total
-    - transaction
-    - value
-    - versions
+coordinate: "currency · 8/crest · cbf15042"
+contentUuid: "1e579efe-bad1-5191-8252-9442b6da4b7d"
+diamondUuid: "07027f69-2eba-81d4-aa42-1c9570e60798"
+uuid: "cbf15042-4b14-8536-8ab3-16e70fa01662"
+horo: 8
 typography:
   partition: currency
-  bondDegree: 136
-  neighbors: []
+  bondDegree: 118
 standards:
   - "EN-16931"
   - "IFRS-9"
@@ -114,109 +24,8 @@ standards:
   - "RFC-8785"
   - "SAF-T"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - bindings
-    - commerce
-    - fields
-    - hooks
-    - identity
-    - jobs
-    - measure
-    - rate
-    - standard
-    - versions
-  matrix:
-    - accounting
-    - agriculture
-    - amortize
-    - amount
-    - bindings
-    - calculate
-    - commerce
-    - compensation
-    - conversion
-    - crop
-    - decompression
-    - depreciate
-    - dimension
-    - discount
-    - ebitda
-    - enterprisebudget
-    - events
-    - fallback
-    - field
-    - fields
-    - hedge
-    - hooks
-    - identity
-    - items
-    - jobs
-    - measure
-    - payment
-    - price
-    - rate
-    - rates
-    - reconcile
-    - reconciliation
-    - resources
-    - revenue
-    - salary
-    - seed
-    - service
-    - standard
-    - tax
-    - total
-    - transaction
-    - value
-    - versions
-  backlinks:
-    - accounting
-    - agriculture
-    - amortize
-    - amount
-    - bindings
-    - calculate
-    - commerce
-    - compensation
-    - conversion
-    - crop
-    - decompression
-    - depreciate
-    - dimension
-    - discount
-    - ebitda
-    - enterprisebudget
-    - events
-    - fallback
-    - field
-    - fields
-    - hedge
-    - hooks
-    - identity
-    - items
-    - jobs
-    - measure
-    - payment
-    - price
-    - rate
-    - rates
-    - reconcile
-    - reconciliation
-    - resources
-    - revenue
-    - salary
-    - seed
-    - service
-    - standard
-    - tax
-    - total
-    - transaction
-    - value
-    - versions
 signatures:
-  computationUuid: "078e6f51-5988-8eee-a87d-853544bf3624"
+  computationUuid: "40aadb77-d503-8dee-a4fb-b503eeae0def"
   stages:
     - stage: path
       stageUuid: "88086f14-e2e7-866a-8bde-e04e3b3e732a"
@@ -225,13 +34,13 @@ signatures:
     - stage: boundary
       stageUuid: "22a53d4c-2fd3-817b-954a-d1bf89445b2a"
     - stage: links
-      stageUuid: "1209b5a2-8624-8f15-9ca4-feb601967f49"
+      stageUuid: "6b6671b3-2c21-87db-bb34-d6069c80d5fd"
     - stage: horo
-      stageUuid: "004affa1-e80f-8e65-ac63-b4672f69fa91"
+      stageUuid: "e6d1b8e0-d809-8e80-80da-f6a73d8665bf"
     - stage: seal
       stageUuid: "b3024b56-3245-8e63-8c3d-aa51dde15274"
     - stage: uuid
-      stageUuid: "b9542633-0e9f-8928-adc9-a879b5c60107"
+      stageUuid: "717897ed-6b5d-8de9-82c3-a2f232303c6b"
 version: 2
 ---
 # currency — money is amount + ISO-4217 code (never baked into the name)

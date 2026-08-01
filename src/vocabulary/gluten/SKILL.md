@@ -1,63 +1,35 @@
 ---
 name: gluten
 description: "Use when reasoning about gluten as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/gluten
-coordinate: gluten · 4/weave · e9796e8e
-contentUuid: "e3bc7ccc-7baa-55e5-84dc-d996f6efa828"
-diamondUuid: "53bdbc79-f0a4-8bab-9d9c-b642dfbc8678"
-uuid: "e9796e8e-005e-81fd-b9d4-9f9ff7520d7d"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/gluten"
+coordinate: "vocabulary/gluten · 2/share · 1800c765"
+contentUuid: "2874c345-90f5-5c29-ad9b-ebe47c149346"
+diamondUuid: "a7aadae4-ed81-82cf-8ef6-8b45b923b5e4"
+uuid: "1800c765-a615-83a0-b497-4f5c01ff5671"
+horo: 2
 typography:
-  partition: gluten
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "15ea6822-8b83-8e70-842b-41ef596b9bb8"
+  computationUuid: "341b32f8-4f5e-8972-800f-a208fe554f42"
   stages:
     - stage: path
-      stageUuid: "3f554a63-5288-8e8e-be78-feddae055355"
+      stageUuid: "7f8e88b2-1367-8957-b829-e016a783407d"
     - stage: trinity
-      stageUuid: "e4421929-d521-829c-baa6-0d64eb48099f"
+      stageUuid: "00f97048-5fa6-8826-8986-ac7a2849694a"
     - stage: boundary
-      stageUuid: "ff600d61-bf90-8411-a467-2c5d289917d9"
+      stageUuid: "b9276354-9166-89c9-8c66-7149e08677af"
     - stage: links
-      stageUuid: "7a2f0cff-0928-8c13-b74e-1d568451b8a6"
+      stageUuid: "ce244d05-a0dc-8490-8a55-499f6879f31a"
     - stage: horo
-      stageUuid: "efa1bc3b-05e9-83de-aaa6-fe11af386395"
+      stageUuid: "c9661e0e-628d-883f-a910-d2b0af84a833"
     - stage: seal
-      stageUuid: "401b982b-89ee-884d-9e4b-93cb8a121f68"
+      stageUuid: "fc8e1918-89d0-88fb-9bcd-0eb4b3de2f9d"
     - stage: uuid
-      stageUuid: "bed7a892-314d-8cfb-a6e2-5f44bbe80471"
+      stageUuid: "85c5d875-af77-8392-8087-4b5e309e4158"
 version: 2
 ---
 # gluten

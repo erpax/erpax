@@ -1,75 +1,20 @@
 ---
 name: wallet
 description: "Use when putting a wallet on the quantum substrate — when you need its state to be a content-uuid (tamper-evident, any balance change yields a new state-uuid) and every transfer to be a balanced double-entry (payer credited, payee debited) over a history that is a chain of state-uuids."
-atomPath: quantum/wallet
-coordinate: quantum/wallet · 8/crest · bb61b198
-contentUuid: "8027d15e-e73a-5f8c-a266-d88395ce8a04"
-diamondUuid: "db457c99-ab83-85bc-84dd-6f81d74f0e65"
-uuid: "bb61b198-c4a8-89fc-9218-03de7f3619a6"
-horo: 8
-bonds:
-  in:
-    - account
-    - balance
-    - cost
-    - entry
-    - identity
-    - law
-    - money
-    - quantum
-    - uuid
-    - wallet
-  out:
-    - account
-    - balance
-    - cost
-    - entry
-    - identity
-    - law
-    - money
-    - quantum
-    - uuid
-    - wallet
+atomPath: "quantum/wallet"
+coordinate: "quantum/wallet · 7/descent · c8fc2bf2"
+contentUuid: "e2144870-02bd-522e-8f73-5253b2d213ec"
+diamondUuid: "8ae82cb1-4ec8-864e-a1b6-9aaa57b19287"
+uuid: "c8fc2bf2-f352-8ed6-b317-0b8759c6862b"
+horo: 7
 typography:
   partition: quantum
   bondDegree: 37
-  neighbors: []
 standards:
   - "double-entry ([[entry]]); RFC 9562 §5.8 content-uuid (tamper-evident state)"
 bindings: []
-neighbors:
-  wikilink:
-    - entry
-    - karma
-    - law
-    - merge
-    - quantum
-    - uuid
-    - wallet
-  matrix:
-    - account
-    - balance
-    - cost
-    - entry
-    - identity
-    - law
-    - money
-    - quantum
-    - uuid
-    - wallet
-  backlinks:
-    - account
-    - balance
-    - cost
-    - entry
-    - identity
-    - law
-    - money
-    - quantum
-    - uuid
-    - wallet
 signatures:
-  computationUuid: "a997a4c4-d232-830d-ad30-5a2a33806c5f"
+  computationUuid: "5aecd77d-2ef7-876f-a2e7-7d35ec2e0bb8"
   stages:
     - stage: path
       stageUuid: "f32d55f5-b79b-8134-a3f7-08e464af10a9"
@@ -78,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "79ddfb9c-2a23-86e9-9502-baf8bc2321cd"
     - stage: links
-      stageUuid: "713f62a3-eddb-8519-b8da-8055c8e721ce"
+      stageUuid: "d22f1e90-765b-8b56-9443-477a0eb57206"
     - stage: horo
-      stageUuid: "a5a55f92-f72c-8660-8bb4-a9986f009640"
+      stageUuid: "96aaa277-dabe-83f5-9084-c2e3c4b0f447"
     - stage: seal
       stageUuid: "b820d6ec-568b-8335-9cc3-01bbde7b618f"
     - stage: uuid
-      stageUuid: "c3bf672a-1c94-81db-a9c8-c37ba864009c"
+      stageUuid: "18f69e3c-cee7-86ed-b53d-3f66b70aa22e"
 quantum:
   superposition:
     - account
@@ -108,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "a997a4c4-d232-830d-ad30-5a2a33806c5f"
-    contentUuid: "8027d15e-e73a-5f8c-a266-d88395ce8a04"
+    computationUuid: "5aecd77d-2ef7-876f-a2e7-7d35ec2e0bb8"
+    contentUuid: "e2144870-02bd-522e-8f73-5253b2d213ec"
 version: 2
 ---
 # quantum/wallet — the tamper-evident wallet (state = content-uuid)
@@ -122,4 +67,4 @@ Matter-twin: `src/quantum/wallet/index.ts` (`stateUuid` · `transfer` · `balanc
 
 @standard double-entry ([[entry]]); RFC 9562 §5.8 content-uuid (tamper-evident state)
 
-<sub>content-uuid `8027d15e-e73a-5f8c-a266-d88395ce8a04` · account `quantum/wallet` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `e2144870-02bd-522e-8f73-5253b2d213ec` · account `quantum/wallet` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

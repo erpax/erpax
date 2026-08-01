@@ -2,148 +2,35 @@
 name: fold
 description: "Use when counting the folding — how the whole corpus collapses to one Merkle root and in how many folds; N atoms reach the root in ceil(log2 N) folds by N−1 merges (12 for the corpus), and the orthogonal digital-root fold collapses every count to its rodin digit."
 atomPath: fold
-coordinate: "fold · 7/descent · ce5a9b31"
-contentUuid: "00312dbf-17cf-5089-9e98-694a122c3457"
-diamondUuid: "c0f64429-7c26-8a3c-bcfc-1227abfee385"
-uuid: "ce5a9b31-6d1a-8c67-9eaf-ebde520f9b8e"
-horo: 7
-bonds:
-  in:
-    - agent
-    - angle
-    - collapse
-    - conservation
-    - db
-    - diamond
-    - e
-    - entropy
-    - horo
-    - law
-    - mala
-    - matrix
-    - merge
-    - mortality
-    - name
-    - notary
-    - one
-    - phi
-    - pi
-    - rodin
-    - rosetta
-    - stack
-    - uuid
-  out:
-    - agent
-    - angle
-    - collapse
-    - conservation
-    - db
-    - diamond
-    - e
-    - entropy
-    - horo
-    - law
-    - mala
-    - matrix
-    - merge
-    - mortality
-    - name
-    - notary
-    - one
-    - phi
-    - pi
-    - rodin
-    - rosetta
-    - stack
-    - uuid
+coordinate: "fold · 5/round · 5fa6489c"
+contentUuid: "0092d888-13aa-54d3-8702-fa824cd678ec"
+diamondUuid: "1e9c1c12-c190-84d5-8151-79120f0b1d27"
+uuid: "5fa6489c-baa9-8688-b510-103c0a22c068"
+horo: 5
 typography:
   partition: fold
-  bondDegree: 72
-  neighbors:
-    - diamond
+  bondDegree: 70
 standards:
   - "ceccec.psg.bg theorems — self-address (`concept.self.address`) · diamond-complete (`concept.diamond.complete`): folding excises duplication to zero remainder (the cancer cure)"
   - "the Merkle binary fold (depth ⌈log2 N⌉) · the base-10 digital root (the rodin reduction)"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - conservation
-    - diamond
-    - entropy
-    - horo
-    - law
-    - mala
-    - matrix
-    - merge
-    - one
-    - rodin
-    - uuid
-  matrix:
-    - agent
-    - angle
-    - collapse
-    - conservation
-    - db
-    - diamond
-    - e
-    - entropy
-    - horo
-    - law
-    - mala
-    - matrix
-    - merge
-    - mortality
-    - name
-    - notary
-    - one
-    - phi
-    - pi
-    - rodin
-    - rosetta
-    - stack
-    - uuid
-  backlinks:
-    - agent
-    - angle
-    - collapse
-    - conservation
-    - db
-    - diamond
-    - e
-    - entropy
-    - horo
-    - law
-    - mala
-    - matrix
-    - merge
-    - mortality
-    - name
-    - notary
-    - one
-    - phi
-    - pi
-    - rodin
-    - rosetta
-    - stack
-    - uuid
 signatures:
-  computationUuid: "96e024ed-bb08-8640-8629-4152edef0a87"
+  computationUuid: "763074ca-ea39-82ab-9b05-553fff972527"
   stages:
     - stage: path
       stageUuid: "37834c64-da0b-8010-85d6-f62831a39992"
     - stage: trinity
       stageUuid: "41f55f96-dd84-81a1-bbe3-52509b1b5da8"
     - stage: boundary
-      stageUuid: "502655f6-c0f2-8093-97a1-38a382299256"
+      stageUuid: "a24d4610-c5e9-8f6b-974d-e520c9dc200d"
     - stage: links
       stageUuid: "07ebed05-1d09-8888-b658-756a2c994136"
     - stage: horo
-      stageUuid: "67bdd4d7-792e-8f1b-89b2-6cb359198186"
+      stageUuid: "1b30b7b7-76b2-8582-8618-e161f3b4bb48"
     - stage: seal
       stageUuid: "432ca860-c728-8001-a70b-ce3e78142f27"
     - stage: uuid
-      stageUuid: "9c52d944-f90b-8b35-83b3-bed6532a6271"
+      stageUuid: "3a6adf21-be70-8299-9ff2-4bc28c29ec55"
 version: 2
 ---
 # fold — the math of the folding

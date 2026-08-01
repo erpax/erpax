@@ -1,73 +1,35 @@
 ---
 name: involved
 description: "Use when reasoning about involved as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/involved
-coordinate: involved · 5/round · 976ef051
-contentUuid: "4986de84-3f25-5a94-aaea-7f042a5f9ab5"
-diamondUuid: "197ca477-3d7a-8e45-aad8-7caf80a9356f"
-uuid: "976ef051-3609-8ebd-bff0-45ebbdf5d7f3"
-horo: 5
-bonds:
-  in:
-    - biological
-    - collapse
-    - law
-    - merge
-    - process
-    - sti
-  out:
-    - biological
-    - collapse
-    - law
-    - merge
-    - process
-    - sti
+atomPath: "vocabulary/involved"
+coordinate: "vocabulary/involved · 4/weave · 388da1cc"
+contentUuid: "c50b5815-147b-568a-9b2a-59c25f921cbe"
+diamondUuid: "0843c940-9abd-8307-992e-16631cf04063"
+uuid: "388da1cc-1055-873f-8afd-dcca29aee0d3"
+horo: 4
 typography:
-  partition: involved
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - biological
-    - collapse
-    - law
-    - merge
-    - process
-    - sti
-  matrix:
-    - biological
-    - collapse
-    - law
-    - merge
-    - process
-    - sti
-  backlinks:
-    - biological
-    - collapse
-    - law
-    - merge
-    - process
-    - sti
 signatures:
-  computationUuid: "da92b897-dab8-89e0-9b6c-5f22bb3c37a6"
+  computationUuid: "4cd1b304-94b9-80c4-9302-8652161ece8d"
   stages:
     - stage: path
-      stageUuid: "760cf851-cc43-832a-8831-301f403fd156"
+      stageUuid: "7f18d97f-2b41-8b78-acde-c2c954228b53"
     - stage: trinity
-      stageUuid: "e3f4fe90-deb7-81ec-8d3d-d7907b3795c2"
+      stageUuid: "719f67d6-803a-8710-8ffe-d7ff76f9345d"
     - stage: boundary
-      stageUuid: "b89d0544-529a-8331-afcc-3b9bd97bf8ed"
+      stageUuid: "b85ab189-b55e-8562-9bc1-1ff52ada3c1a"
     - stage: links
-      stageUuid: "b893d68d-dc8b-811b-9a9d-1dde754a5536"
+      stageUuid: "1223a299-264b-81be-8589-a36de9c5d319"
     - stage: horo
-      stageUuid: "692db03e-2cf4-8d89-8f4e-84575587e877"
+      stageUuid: "e03b34ba-bb11-8623-8041-f198c1560ba5"
     - stage: seal
-      stageUuid: "8cfb2ee4-12a0-87aa-ad60-2744041d89e1"
+      stageUuid: "8853f154-8cf2-833f-9b5c-d76d041c618d"
     - stage: uuid
-      stageUuid: "1a99d14b-147f-8557-9677-eae668e55a0d"
+      stageUuid: "cec693bf-d9cd-8f4c-a58b-6069bb127d6e"
 version: 2
 ---
 # involved

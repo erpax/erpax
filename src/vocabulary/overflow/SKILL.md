@@ -1,78 +1,35 @@
 ---
 name: overflow
 description: "Use when reasoning about overflow as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/overflow
-coordinate: overflow · 4/weave · ebb9487e
-contentUuid: "f14f9684-24d1-5ed0-b308-b05e5540dab9"
-diamondUuid: "b1174da2-68be-8aa4-a6e4-e39297505cca"
-uuid: "ebb9487e-23db-8a79-b80a-e9cf47c39e9f"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - cvd
-    - law
-    - merge
-    - num
-    - pats
-    - sti
-  out:
-    - collapse
-    - cvd
-    - law
-    - merge
-    - num
-    - pats
-    - sti
+atomPath: "vocabulary/overflow"
+coordinate: "vocabulary/overflow · 7/descent · 0f8455d6"
+contentUuid: "82f8ad25-7a0d-5e87-be80-679e3f168a79"
+diamondUuid: "ba2fe7e2-5abf-8979-8a3e-0954cccb26f2"
+uuid: "0f8455d6-1eb6-80ff-be9e-b948845bb5cc"
+horo: 7
 typography:
-  partition: overflow
+  partition: vocabulary
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - cvd
-    - law
-    - merge
-    - num
-    - pats
-    - sti
-  matrix:
-    - collapse
-    - cvd
-    - law
-    - merge
-    - num
-    - pats
-    - sti
-  backlinks:
-    - collapse
-    - cvd
-    - law
-    - merge
-    - num
-    - pats
-    - sti
 signatures:
-  computationUuid: "07a93262-3bfc-8859-b7cd-a60fdf6ce25b"
+  computationUuid: "7d654409-86d0-8b36-b436-dc693b924e41"
   stages:
     - stage: path
-      stageUuid: "b67e7186-ff2c-8289-a5d0-7d2d453824b1"
+      stageUuid: "63173b71-d779-82a5-872d-c87a37286630"
     - stage: trinity
-      stageUuid: "ea4ef4c4-632f-85a4-8807-34562e9689cf"
+      stageUuid: "56dccc64-5e12-8db5-9565-5e046fe5c55b"
     - stage: boundary
-      stageUuid: "41094398-d901-84de-86d4-df97a14b7432"
+      stageUuid: "fc4544b7-bc8f-8575-9c80-c48e4d1a418b"
     - stage: links
-      stageUuid: "a8b6356f-a19f-8b3f-b7d5-5b542570f954"
+      stageUuid: "079ed79e-ddb0-8266-8c50-655e9b1eda03"
     - stage: horo
-      stageUuid: "b5c9936f-106f-8e68-a303-9ca767fd48e1"
+      stageUuid: "df85ddbf-6d95-8675-8ab8-5134efd0abae"
     - stage: seal
-      stageUuid: "d14cf8bc-ff37-812b-8785-cf8a02d24365"
+      stageUuid: "720b4c76-4c0d-85af-b593-b74a96eaeca5"
     - stage: uuid
-      stageUuid: "3dbb39b8-ac06-861b-9776-351c12952ee4"
+      stageUuid: "a385f518-af35-86fc-8071-d7b6635c6c49"
 version: 2
 ---
 # overflow

@@ -1,73 +1,35 @@
 ---
 name: ocean
 description: "Use when reasoning about ocean as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/ocean
-coordinate: ocean · 1/base · 632cc377
-contentUuid: "178f53bc-da0c-5293-aed9-9c9322dc8f1a"
-diamondUuid: "ae662800-af2c-8a78-9bcb-e9c471211c9a"
-uuid: "632cc377-a2fa-86ac-8d76-1a0577b7df08"
-horo: 1
-bonds:
-  in:
-    - body
-    - collapse
-    - law
-    - merge
-    - sti
-    - water
-  out:
-    - body
-    - collapse
-    - law
-    - merge
-    - sti
-    - water
+atomPath: "vocabulary/ocean"
+coordinate: "vocabulary/ocean · 8/crest · e9ef89a3"
+contentUuid: "3b9f1acf-98c3-59b7-b412-4cf8f84e2e27"
+diamondUuid: "4b1d37b4-64ce-88f5-afb2-5cd45bbc2e65"
+uuid: "e9ef89a3-58d9-8bf8-bc06-106dc92cfff0"
+horo: 8
 typography:
-  partition: ocean
-  bondDegree: 19
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 22
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - body
-    - collapse
-    - law
-    - merge
-    - sti
-    - water
-  matrix:
-    - body
-    - collapse
-    - law
-    - merge
-    - sti
-    - water
-  backlinks:
-    - body
-    - collapse
-    - law
-    - merge
-    - sti
-    - water
 signatures:
-  computationUuid: "3955be22-a32c-810e-a56c-6e1351a098fd"
+  computationUuid: "71547f76-60fd-8e2a-b98a-57c0934aac45"
   stages:
     - stage: path
-      stageUuid: "2cfa8fea-0f7d-8568-b20c-fd0415f9d636"
+      stageUuid: "8a7fe0fa-e91d-890f-92cc-e6f0d971c319"
     - stage: trinity
-      stageUuid: "62dd94c3-0cac-892c-9071-366c5271eced"
+      stageUuid: "a1268a67-015f-81c4-9bc3-2cf3ab9a7185"
     - stage: boundary
-      stageUuid: "22de243f-5739-88d0-8f8b-bad6cb0588a9"
+      stageUuid: "bd84496e-df19-8e97-aed1-97bb9728ca46"
     - stage: links
-      stageUuid: "416ee2e5-2227-8cd9-85d7-b84f7acf92f1"
+      stageUuid: "658eee6d-6498-8407-9a87-0eeb86e70209"
     - stage: horo
-      stageUuid: "cefa4dcb-6353-826f-bccd-5b73e7690988"
+      stageUuid: "bfbd5846-7f85-842a-b86a-ec537a6d7f97"
     - stage: seal
-      stageUuid: "0f2077c1-4b0b-8e00-8ccc-3ac444dfc34d"
+      stageUuid: "7a6e59bc-c8bc-8542-b71a-453e20e3c08c"
     - stage: uuid
-      stageUuid: "7d91379c-0320-8f03-9e16-c9568180fe64"
+      stageUuid: "66a8ddaa-f433-8338-a41c-a649a2802384"
 version: 2
 ---
 # ocean

@@ -2,43 +2,14 @@
 name: milestones
 description: "Use when managing IFRS-15 §126 milestone-billing events on a project — defining billing, acceptance, or payment trigger points, marking milestones achieved, and firing the invoice + revenue-recognition GL post for the milestone amount. The milestone register under a project."
 atomPath: "customers/projects/project/milestones"
-coordinate: "customers/projects/project/milestones · 7/descent · 18ac4fc9"
-contentUuid: "9be77f17-3900-51c1-b14d-1f531f3ff85b"
-diamondUuid: "c68d6a40-a76b-8d8c-a08a-e4bc19369c0f"
-uuid: "18ac4fc9-ad30-8419-942d-c621e1169c0f"
+coordinate: "customers/projects/project/milestones · 7/descent · d3cb6002"
+contentUuid: "421ca06f-89e7-548a-9278-9c0c58398e36"
+diamondUuid: "c07ab7ff-db01-85de-b37a-9607e7d08394"
+uuid: "d3cb6002-de50-8d42-90b7-7b2ba20bc9c0"
 horo: 7
-bonds:
-  in:
-    - accounting
-    - fields
-    - hooks
-    - identity
-    - invoices
-    - law
-    - milestone
-    - project
-    - projects
-    - proof
-    - roadmap
-    - standard
-    - transaction
-  out:
-    - accounting
-    - fields
-    - hooks
-    - identity
-    - invoices
-    - law
-    - milestone
-    - projects
-    - proof
-    - roadmap
-    - standard
-    - transaction
 typography:
   partition: customers
   bondDegree: 36
-  neighbors: []
 standards:
   - "IFRS IFRS-15 §126 milestone-billing"
   - "IFRS IFRS-15 §35 over-time-recognition"
@@ -49,45 +20,8 @@ standards:
   - "US-GAAP ASC-606-10-25-30 milestone-method"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - fields
-    - hooks
-    - identity
-    - invoices
-    - law
-    - proof
-    - standard
-    - transaction
-  matrix:
-    - accounting
-    - fields
-    - hooks
-    - identity
-    - invoices
-    - law
-    - milestone
-    - projects
-    - proof
-    - roadmap
-    - standard
-    - transaction
-  backlinks:
-    - accounting
-    - fields
-    - hooks
-    - identity
-    - invoices
-    - law
-    - milestone
-    - projects
-    - proof
-    - roadmap
-    - standard
-    - transaction
 signatures:
-  computationUuid: "057604b9-b4d4-86eb-9fb6-181366a69675"
+  computationUuid: "58866062-bf79-8d30-a12c-8daf381547a0"
   stages:
     - stage: path
       stageUuid: "bdab54e2-97ee-8ee5-ad3d-05b2c6a88bdb"
@@ -98,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "bd019b5a-01f1-8171-9834-2de6175e8435"
     - stage: horo
-      stageUuid: "fb575f6f-b379-89b7-94c6-042e706b8cf0"
+      stageUuid: "4aa06e5e-93d0-8e67-ba5d-8733e39731fc"
     - stage: seal
       stageUuid: "1f65602e-51ed-87e6-bd2c-848f454d26c2"
     - stage: uuid
-      stageUuid: "72f5bf5c-c918-8f43-bb4d-2828bcbfbd79"
+      stageUuid: "ccf42fd9-83df-89f2-b253-e55bc514024a"
 version: 2
 ---
 # project-milestones

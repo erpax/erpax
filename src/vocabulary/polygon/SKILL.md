@@ -1,53 +1,35 @@
 ---
 name: polygon
 description: "Use when reasoning about polygon — A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more space delimited po"
-atomPath: vocabulary/polygon
-coordinate: polygon · 8/crest · f37602a1
-contentUuid: "49630304-b6e2-5093-9551-30c28a2fda4b"
-diamondUuid: "f7c8840c-22b8-80eb-b551-47b6c999b8fd"
-uuid: "f37602a1-e815-8f6c-b0c0-dca44daa97c9"
-horo: 8
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/polygon"
+coordinate: "vocabulary/polygon · 4/weave · cc7528f1"
+contentUuid: "d6e89352-fcd2-508a-833e-cb604af66d94"
+diamondUuid: "81d03560-7005-83da-a009-786bd003f22c"
+uuid: "cc7528f1-82bd-872f-85c9-62a3074a2b52"
+horo: 4
 typography:
-  partition: polygon
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "d6abc0a6-0ea9-88e9-a67a-4c5afbaead45"
+  computationUuid: "3e7229c1-c707-8bc3-8670-37117c905d9e"
   stages:
     - stage: path
-      stageUuid: "de3e87d5-a835-8603-b93f-d007b62d7d77"
+      stageUuid: "bed77ab7-f0f7-8a58-b6b7-b4efced35ba4"
     - stage: trinity
-      stageUuid: "fdd12a90-f908-8f09-a9bb-c9bbe6017ae9"
+      stageUuid: "d7d5509f-e2cb-8427-bb3f-d04dd7404d73"
     - stage: boundary
-      stageUuid: "4fd63324-3cd2-8269-9d79-ce4d75520810"
+      stageUuid: "6e48be6c-d4e8-828e-9a17-5e2c5bc9386f"
     - stage: links
-      stageUuid: "73b427c2-6f2d-8ff4-b3b5-cf12f26e4f4c"
+      stageUuid: "1828aad9-6f09-87b7-921b-4c519e79098e"
     - stage: horo
-      stageUuid: "13835a68-113d-8aaf-a435-b5c854ee7bbc"
+      stageUuid: "0fef8f45-e606-842f-bbb0-6f7cbd9829c8"
     - stage: seal
-      stageUuid: "15155048-609c-89d4-86f0-531786c6de88"
+      stageUuid: "251da904-e708-8d4e-b318-081ddfe52ad4"
     - stage: uuid
-      stageUuid: "28e3db89-dd5c-85e8-871b-fb2a6e453343"
+      stageUuid: "d7fe9def-25f1-8b51-8b37-b11eeb6bd1cc"
 version: 2
 ---
 # polygon

@@ -2,85 +2,33 @@
 name: writing
 description: "Use when writing must be computed from sealed coordinates — debit/credit prose structure · law lines · wikilink density · eb/word from readme/paper.ts; never prose templates."
 atomPath: writing
-coordinate: writing · 5/round · aa2bb47a
-contentUuid: "ac6d97e7-82c9-5aae-b998-93cbaf0e6369"
-diamondUuid: "7a903b93-c359-83c2-a52d-9f865fee967d"
-uuid: "aa2bb47a-2560-8c62-ba8e-5fb14dbfb76c"
-horo: 5
-bonds:
-  in:
-    - balance
-    - coherence
-    - entropy
-    - heart
-    - law
-    - merge
-    - recycle
-    - sequence
-    - speech
-  out:
-    - balance
-    - coherence
-    - entropy
-    - heart
-    - law
-    - merge
-    - recycle
-    - sequence
-    - speech
+coordinate: "writing · 1/base · 9c4b31dd"
+contentUuid: "680859dd-04b1-5a58-b877-f07580ce4e57"
+diamondUuid: "af6b9132-2dcd-8186-83dc-4a451f88fa9f"
+uuid: "9c4b31dd-fde6-8bee-8206-64dc0e2c95e8"
+horo: 1
 typography:
   partition: writing
-  bondDegree: 24
-  neighbors: []
-standards:
-  - "the principles are the coherence law applied to prose — craft, not decoration"
-  - "the principles are the coherence law applied to prose, never decoration"
+  bondDegree: 28
+standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - coherence
-    - entropy
-    - heart
-    - law
-    - merge
-    - recycle
-    - sequence
-  matrix:
-    - balance
-    - coherence
-    - entropy
-    - heart
-    - law
-    - merge
-    - recycle
-    - sequence
-  backlinks:
-    - balance
-    - coherence
-    - entropy
-    - heart
-    - law
-    - merge
-    - recycle
-    - sequence
 signatures:
-  computationUuid: "bb648991-e19d-83e1-9014-ac5d92a1f6cb"
+  computationUuid: "224291d4-f3e2-80df-9242-4b103c21f989"
   stages:
     - stage: path
       stageUuid: "4a2340f3-f322-8f89-a6b1-73ec663906b2"
     - stage: trinity
       stageUuid: "1a307afd-f059-8646-ba0b-f0165c307687"
     - stage: boundary
-      stageUuid: "3224d448-bbe0-82f2-a45a-7ee80cb44e72"
+      stageUuid: "ad86686c-6206-8a1c-87dd-343fbb87fe76"
     - stage: links
-      stageUuid: "a3b5f768-b64b-8113-9ad3-3c50c32ee223"
+      stageUuid: "6a46da64-5c4f-8970-bb64-77430271f0ae"
     - stage: horo
-      stageUuid: "c237a386-dc5c-8cab-b67e-d3c79e3923c5"
+      stageUuid: "80f0e1cb-580b-8746-89d6-58ccb773f1dc"
     - stage: seal
-      stageUuid: "3979ea34-f3f2-8e85-9fc7-28c0932d484a"
+      stageUuid: "df5b1fc5-5f55-84e6-b042-b7bc5d640f5a"
     - stage: uuid
-      stageUuid: "85c1620c-8f9b-8f90-a96f-0b649eb57b7c"
+      stageUuid: "9e91ed12-01ef-8a7a-b21e-80b3e8dc92fb"
 version: 2
 ---
 # writing — the craft of connected thoughts

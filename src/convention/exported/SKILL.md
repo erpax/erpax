@@ -2,87 +2,20 @@
 name: exported
 description: "Use when reasoning about an atom's PRODUCER obligation — every symbol consumed across atoms is re-exported from that atom's index (its one public face), so a deep importer can collapse to @/x; the producer-side dual of the importer conventions import and shallow, measured live as the index-reachable fraction of cross-atom symbols, enforced by the same import ratchet so it can only tighten toward coverage one (tamper-cost to infinity)."
 atomPath: "convention/exported"
-coordinate: "convention/exported · 2/share · b42ef380"
-contentUuid: "e8e1b873-7cc3-534e-8b7a-dbdb2ea15f80"
-diamondUuid: "8ecf23e2-fb62-8036-b0b2-16748cce199d"
-uuid: "b42ef380-2580-8967-a643-61d21d22d4c8"
-horo: 2
-bonds:
-  in:
-    - boundary
-    - collider
-    - convention
-    - cost
-    - duality
-    - export
-    - fronted
-    - import
-    - law
-    - method
-    - named
-    - shallow
-    - tamper
-  out:
-    - boundary
-    - collider
-    - cost
-    - duality
-    - export
-    - fronted
-    - import
-    - law
-    - method
-    - named
-    - shallow
-    - tamper
+coordinate: "convention/exported · 4/weave · c1a42ebb"
+contentUuid: "52c5722f-0166-5f36-af93-6f1272116717"
+diamondUuid: "700f6f52-76ca-809e-8232-0568499cdb95"
+uuid: "c1a42ebb-3f8a-877d-b12f-a302a30e7106"
+horo: 4
 typography:
   partition: convention
   bondDegree: 40
-  neighbors:
-    - "tamper/import"
 standards:
   - "UBL-2.1"
   - "an atom's only public face is its index.ts; what it exports through it IS its contract"
 bindings: []
-neighbors:
-  wikilink:
-    - collider
-    - cost
-    - duality
-    - fronted
-    - import
-    - law
-    - named
-    - shallow
-    - tamper
-  matrix:
-    - boundary
-    - collider
-    - cost
-    - duality
-    - export
-    - fronted
-    - import
-    - law
-    - method
-    - named
-    - shallow
-    - tamper
-  backlinks:
-    - boundary
-    - collider
-    - cost
-    - duality
-    - export
-    - fronted
-    - import
-    - law
-    - method
-    - named
-    - shallow
-    - tamper
 signatures:
-  computationUuid: "d1285db0-4e33-869f-b125-7942bfbeaaed"
+  computationUuid: "45eea0a2-8928-8994-9f18-25489377eb7f"
   stages:
     - stage: path
       stageUuid: "77c95ee2-19bc-82fc-9940-94c9abac2904"
@@ -93,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "7cec3dda-27e0-8298-a864-05352078c31d"
     - stage: horo
-      stageUuid: "4d195579-059a-89db-b428-e93e8054b2a2"
+      stageUuid: "4c9d2034-0809-8a7b-85fa-ace86f5377c4"
     - stage: seal
       stageUuid: "be8dcfa7-1828-8a43-afbd-57bb03195779"
     - stage: uuid
-      stageUuid: "e035e83e-398d-8bb5-8f3a-bdea1f5a956b"
+      stageUuid: "f5b8eb2a-46fe-857a-915e-faaa0ee66d5d"
 version: 2
 ---
 # convention/exported — every cross-atom symbol is re-exported from the atom's index

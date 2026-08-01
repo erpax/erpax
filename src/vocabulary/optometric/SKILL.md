@@ -1,63 +1,35 @@
 ---
 name: optometric
 description: "Use when reasoning about optometric as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/optometric
-coordinate: optometric · 1/base · 6c2c2575
-contentUuid: "49bd3231-199c-5a40-a7f2-5830b7b72765"
-diamondUuid: "45bb505f-9ae1-8042-a773-7d2d30320157"
-uuid: "6c2c2575-7414-8a07-98a4-89889d20c38a"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/optometric"
+coordinate: "vocabulary/optometric · 5/round · 2c782035"
+contentUuid: "969f27ca-87b5-5aa4-b56f-cc445c4643f6"
+diamondUuid: "adb963ec-3c98-86a5-a7b0-f5be6abd8803"
+uuid: "2c782035-4d14-8599-a7e3-47b1598a3bef"
+horo: 5
 typography:
-  partition: optometric
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "e02321ec-f66a-8191-9c46-c65e159ece15"
+  computationUuid: "def1ab7d-3d79-88a7-8533-0b8d0bfe5f95"
   stages:
     - stage: path
-      stageUuid: "55c47703-c80f-87f6-9c1f-0997a61defda"
+      stageUuid: "1164a0ff-3b14-8e74-852a-a382597a686d"
     - stage: trinity
-      stageUuid: "e1bb6e85-f93f-8d11-b501-0affc7bf8ff4"
+      stageUuid: "cb182e32-8d4c-8143-aa33-2a6ebca7f298"
     - stage: boundary
-      stageUuid: "d05cd904-9efa-811a-95c9-2d19e1c17edb"
+      stageUuid: "78684575-6d78-805b-96d3-155a4ac62bc7"
     - stage: links
-      stageUuid: "538e40eb-937f-88f9-a834-022d9d0ec41f"
+      stageUuid: "922e7b96-e3db-8a86-ab15-c4d04492984e"
     - stage: horo
-      stageUuid: "a4d44a28-2d8c-8835-951d-6ffe746b4e12"
+      stageUuid: "8aef06e3-6d23-8be1-b0cf-675283b2c5cd"
     - stage: seal
-      stageUuid: "b971d813-f112-84ae-8609-6a09c2418641"
+      stageUuid: "35efa4d2-b231-8769-9f4d-5a15a7ed6861"
     - stage: uuid
-      stageUuid: "fb64626d-02c4-8aa6-adb7-805a7f07eabf"
+      stageUuid: "c3d5446c-aae5-812f-9c77-6ef7f9b2710d"
 version: 2
 ---
 # optometric

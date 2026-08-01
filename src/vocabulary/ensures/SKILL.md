@@ -1,73 +1,35 @@
 ---
 name: ensures
 description: "Use when reasoning about ensures as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/ensures
-coordinate: ensures · 1/base · 96ffeae3
-contentUuid: "1f7ec474-7ddd-5f8d-a97f-9bf651838dcf"
-diamondUuid: "b21b696a-4907-8d2a-a5d1-dbf9279df499"
-uuid: "96ffeae3-f71b-87ee-bdf5-c6a0080c39e4"
+atomPath: "vocabulary/ensures"
+coordinate: "vocabulary/ensures · 1/base · d23a214e"
+contentUuid: "76686df8-7a56-5c59-8b38-3db00df33dae"
+diamondUuid: "79f40c78-c0b2-8941-88f0-f20c14d0c9ce"
+uuid: "d23a214e-6005-8aaa-8073-44a6119cbfa5"
 horo: 1
-bonds:
-  in:
-    - collapse
-    - implementation
-    - law
-    - legislation
-    - merge
-    - sti
-  out:
-    - collapse
-    - implementation
-    - law
-    - legislation
-    - merge
-    - sti
 typography:
-  partition: ensures
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - implementation
-    - law
-    - legislation
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - implementation
-    - law
-    - legislation
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - implementation
-    - law
-    - legislation
-    - merge
-    - sti
 signatures:
-  computationUuid: "a0101c6c-b90c-81aa-8881-a320b07270aa"
+  computationUuid: "4c4141a5-056c-8da4-b0eb-41a9d257dd80"
   stages:
     - stage: path
-      stageUuid: "fe0f82b2-6d86-8d08-b222-62f334c8ee81"
+      stageUuid: "98feb870-e90d-8c37-8134-5e6f116ccf84"
     - stage: trinity
-      stageUuid: "e1717985-89c5-8dbd-8f19-e916681099f3"
+      stageUuid: "256015cb-e1a5-8ff8-ad6a-840872f2f3cd"
     - stage: boundary
-      stageUuid: "135347b9-388b-8684-a15f-d0820bf81700"
+      stageUuid: "2058f624-52fd-8731-ad14-7c54786ecf24"
     - stage: links
-      stageUuid: "fc7381e4-1463-8597-90f6-ca719328f59b"
+      stageUuid: "d90b35e1-b869-843f-9fc3-f820576f6c07"
     - stage: horo
-      stageUuid: "b11d0d65-c8e2-85de-8c40-a63fe8effec7"
+      stageUuid: "72975c4e-c97f-8898-9feb-3b6395bbb73d"
     - stage: seal
-      stageUuid: "33643f2f-a572-846b-b743-e1b4dae9db3c"
+      stageUuid: "38659f3b-b58f-8c4c-8f4b-8c71fe2ad304"
     - stage: uuid
-      stageUuid: "fbac8b70-bdf6-870f-9c37-ead66e89fb61"
+      stageUuid: "665c0e49-100e-837e-9a2e-8f3a7c5fe145"
 version: 2
 ---
 # ensures

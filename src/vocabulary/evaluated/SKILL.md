@@ -1,63 +1,35 @@
 ---
 name: evaluated
 description: "Use when reasoning about evaluated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/evaluated
-coordinate: evaluated · 2/share · 48ce3aa8
-contentUuid: "4fa8cdbe-e5f5-512a-ad86-1354018d837d"
-diamondUuid: "e76706f3-afe8-86d6-9644-8a19dbb5e772"
-uuid: "48ce3aa8-4461-85b0-ab7a-6ffd26e284e8"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/evaluated"
+coordinate: "vocabulary/evaluated · 8/crest · 0d59bcc4"
+contentUuid: "f580c827-4914-5d68-889e-a6a2f0261635"
+diamondUuid: "9efcb9a3-234f-8e94-82ab-843ca2e84f57"
+uuid: "0d59bcc4-2fa9-8ea5-9c35-c257494de947"
+horo: 8
 typography:
-  partition: evaluated
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "bc0995ed-bdcc-861b-a4d6-48c87773a20f"
+  computationUuid: "cdbff33c-21e3-8396-ac76-98f2e54c3484"
   stages:
     - stage: path
-      stageUuid: "8e21fcb5-0afd-8ab7-ab08-debe1a152158"
+      stageUuid: "67996888-5c9c-805b-9c56-367234116741"
     - stage: trinity
-      stageUuid: "53e2e653-aefe-8f67-b5ec-2748bc70a7df"
+      stageUuid: "df77dd79-f063-8f0e-a6a6-abe842404432"
     - stage: boundary
-      stageUuid: "6c3b532e-9885-8c24-823c-5f055d8c99f6"
+      stageUuid: "492e38ac-24c1-8286-8bf3-1bc6b5b62f2e"
     - stage: links
-      stageUuid: "7e5bc48e-7ece-8bce-ba1b-6e71f01bb482"
+      stageUuid: "59bd39d5-fbe7-8e4e-b1da-0c1e7523876a"
     - stage: horo
-      stageUuid: "ee8d5667-37af-8014-9ab1-173a0908bf42"
+      stageUuid: "b96ee522-7395-8a75-9ab2-0e23ca91e5fd"
     - stage: seal
-      stageUuid: "e42ac254-17d3-839a-86a2-dc8228f81d6e"
+      stageUuid: "5b6ec583-c45f-8288-a620-3f318edc8b83"
     - stage: uuid
-      stageUuid: "0845b936-d370-8191-ba16-e6497ce1297f"
+      stageUuid: "63b8ce3c-7b1a-8e8c-9857-fc4a34ba893b"
 version: 2
 ---
 # evaluated

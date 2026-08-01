@@ -1,63 +1,35 @@
 ---
 name: damaged
 description: "Use when reasoning about damaged as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/damaged
-coordinate: damaged · 7/descent · deb54edc
-contentUuid: "df74fd13-db74-59c6-b035-b6f40a479d59"
-diamondUuid: "1e31bead-99c2-8c74-beef-9539f448c242"
-uuid: "deb54edc-b424-85c6-ade7-6534ee83dd69"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/damaged"
+coordinate: "vocabulary/damaged · 2/share · fbb94d66"
+contentUuid: "97538748-5772-5c15-ba7c-f2b5a16e0147"
+diamondUuid: "7f6dc688-fd66-826c-bfab-9a732a9bfd05"
+uuid: "fbb94d66-a40c-8a41-a8df-4e659f0b2716"
+horo: 2
 typography:
-  partition: damaged
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "c35ac9bc-cd2c-8630-84df-a5dc12f918a3"
+  computationUuid: "d4cd2a6c-5ead-8cd9-96c6-25ac0fb47b24"
   stages:
     - stage: path
-      stageUuid: "12ceb1cc-e185-876b-aaf5-699d5f2eb614"
+      stageUuid: "556a5c8c-fc07-8108-bc36-4ca1033f8c2f"
     - stage: trinity
-      stageUuid: "b4fecf12-c16d-877c-85db-90d6f076bcb4"
+      stageUuid: "53b1526d-c509-8552-be23-83ee1c4f3759"
     - stage: boundary
-      stageUuid: "1212cb04-fa71-8bc5-816c-e2e1a328de41"
+      stageUuid: "7a91326c-0aa6-891e-bd59-df23e989b224"
     - stage: links
-      stageUuid: "20c766a8-c0db-8e0e-8d6f-4c4a89098d1e"
+      stageUuid: "3a471bf1-88b7-8dd0-bc5a-56b24c7aeacf"
     - stage: horo
-      stageUuid: "b1117cdc-be74-88df-9ecc-58008c7a61ab"
+      stageUuid: "7f0d1a58-28dc-8258-bbb2-d79869ade74d"
     - stage: seal
-      stageUuid: "e8e17ea9-5a54-8dc9-b9cf-acedd6ade8d0"
+      stageUuid: "23b54f57-8aad-8306-b24c-928f7531c5fa"
     - stage: uuid
-      stageUuid: "c88e3b12-ebcd-8e69-854d-65200ecb2fbf"
+      stageUuid: "cafa347f-4748-8456-8cd5-cf55da5fcb5d"
 version: 2
 ---
 # damaged

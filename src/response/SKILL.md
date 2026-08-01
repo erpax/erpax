@@ -2,57 +2,19 @@
 name: response
 description: "Use when reasoning about response as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: response
-coordinate: response · 2/share · d1179266
-contentUuid: "009c7ce1-e84d-5024-8c44-f801dff79949"
-diamondUuid: "5e22e7cb-582c-846c-b56d-168ef7932c48"
-uuid: "d1179266-d9ab-8a67-9034-10494649adcd"
+coordinate: "response · 2/share · cf45f3be"
+contentUuid: "0e463b40-63c9-5b69-9870-31035f2b0555"
+diamondUuid: "86776c70-7e76-834b-843b-493c7b858b09"
+uuid: "cf45f3be-cb29-8da3-9206-ffe073f4068e"
 horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - rsvp
-    - sti
-    - type
-  out:
-    - collapse
-    - law
-    - merge
-    - rsvp
-    - sti
-    - type
 typography:
   partition: response
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - rsvp
-    - sti
-    - type
-  matrix:
-    - collapse
-    - law
-    - merge
-    - rsvp
-    - sti
-    - type
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - rsvp
-    - sti
-    - type
 signatures:
-  computationUuid: "65035ef8-60d6-83f2-86eb-14f3a34ba281"
+  computationUuid: "539b3eea-3f6c-8deb-8119-35b60bf7370a"
   stages:
     - stage: path
       stageUuid: "f3431256-c2cc-8a01-b654-cf3936d17462"
@@ -63,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9d3e029a-67c3-8789-abc7-2a3be5748204"
     - stage: horo
-      stageUuid: "dddeb737-0b16-8137-8586-791f15a14487"
+      stageUuid: "d9af5735-f04b-886e-ad57-e27af09c0b7c"
     - stage: seal
-      stageUuid: "48ac9dc5-e050-80a0-b428-d44a7918910d"
+      stageUuid: "7241e045-07c1-842c-9261-687b1cf692ed"
     - stage: uuid
-      stageUuid: "2e29112b-f314-8cc5-afc3-e94b63127c5f"
+      stageUuid: "a87b269c-1154-88d4-b2af-611c8379d147"
 version: 2
 ---
 # response

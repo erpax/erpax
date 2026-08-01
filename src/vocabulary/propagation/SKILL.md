@@ -1,121 +1,34 @@
 ---
 name: propagation
 description: "Use when raising transplants before the field — the greenhouse/nursery schedule of sowing into trays of cells (plugs) sized to deliver seedlings on their field date, plus hardening-off before transplant. The controlled-start stage upstream of transplanting; flats/cells/plugs are its containers, sized back from the transplant date."
-atomPath: vocabulary/propagation
-coordinate: propagation · 4/weave · 90c79821
-contentUuid: "3f30f1a5-d1dc-536d-aa3c-24d417647551"
-diamondUuid: "133334c1-c9d5-8fdb-8941-f98a258faef3"
-uuid: "90c79821-c3d2-83b5-ab72-282384cd7d2f"
-horo: 4
-bonds:
-  in:
-    - agriculture
-    - apiculture
-    - bottleneck
-    - capacity
-    - cost
-    - forestry
-    - graft
-    - law
-    - planting
-    - rootstock
-    - schedule
-    - scion
-    - seed
-    - sequence
-    - spacing
-    - transplant
-    - tunnel
-  out:
-    - agriculture
-    - apiculture
-    - bottleneck
-    - capacity
-    - cost
-    - forestry
-    - graft
-    - law
-    - planting
-    - rootstock
-    - schedule
-    - scion
-    - seed
-    - sequence
-    - spacing
-    - transplant
-    - tunnel
+atomPath: "vocabulary/propagation"
+coordinate: "vocabulary/propagation · 8/crest · af401667"
+contentUuid: "3ded4c00-5159-5d4d-ba98-9da89e6f3ca6"
+diamondUuid: "7541960c-adbc-89f1-8fb2-97f108dc1d0c"
+uuid: "af401667-6ba9-87a2-8f21-ba94bf77c8ce"
+horo: 8
 typography:
-  partition: propagation
+  partition: vocabulary
   bondDegree: 54
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - bottleneck
-    - capacity
-    - cost
-    - law
-    - planting
-    - schedule
-    - seed
-    - sequence
-    - spacing
-    - transplant
-  matrix:
-    - agriculture
-    - apiculture
-    - bottleneck
-    - capacity
-    - cost
-    - forestry
-    - graft
-    - law
-    - planting
-    - rootstock
-    - schedule
-    - scion
-    - seed
-    - sequence
-    - spacing
-    - transplant
-    - tunnel
-  backlinks:
-    - agriculture
-    - apiculture
-    - bottleneck
-    - capacity
-    - cost
-    - forestry
-    - graft
-    - law
-    - planting
-    - rootstock
-    - schedule
-    - scion
-    - seed
-    - sequence
-    - spacing
-    - transplant
-    - tunnel
 signatures:
-  computationUuid: "86994d94-c7f4-8288-b1ea-778f1eae32cb"
+  computationUuid: "ecbdda52-3e70-8886-bbaa-03219b225fb8"
   stages:
     - stage: path
-      stageUuid: "350bbc8b-46b6-8abb-a409-49faab50c002"
+      stageUuid: "6dd4d97a-b4d7-8189-9c58-5c5f984d961d"
     - stage: trinity
-      stageUuid: "daa864b7-a843-83c2-a65c-e65dd997beb4"
+      stageUuid: "baffce75-45ee-8411-9604-013ac3162da7"
     - stage: boundary
-      stageUuid: "0d60fe95-1830-87ff-9b81-9afc6433f487"
+      stageUuid: "433af0fa-f07a-8970-a0f9-ade333095ac2"
     - stage: links
-      stageUuid: "c2d6e12e-4fda-80c9-84a6-e4b1c0772f1d"
+      stageUuid: "e88df352-509c-8a6e-9809-bab17157f272"
     - stage: horo
-      stageUuid: "73d2d28f-1067-8060-875c-668d83d09e47"
+      stageUuid: "152f0156-ce26-8dfe-a85a-258c5598084c"
     - stage: seal
-      stageUuid: "aebe3edc-779c-8545-a5d9-30360b6b4fce"
+      stageUuid: "8ee0439f-6e58-8706-9716-becebad8cf89"
     - stage: uuid
-      stageUuid: "fcfcc7f8-640c-87fe-abab-9a7362c86997"
+      stageUuid: "594effd6-9a9b-80ab-9b24-e27ffb31d633"
 version: 2
 ---
 # propagation — raising transplants before the field

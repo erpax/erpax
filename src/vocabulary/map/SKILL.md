@@ -1,63 +1,35 @@
 ---
 name: map
 description: Use when reasoning about map — A map.
-atomPath: vocabulary/map
-coordinate: map · 1/base · 6f9cfbc0
-contentUuid: "d5f67829-3ed4-501e-97d2-008a0743610e"
-diamondUuid: "2392af2c-c063-8672-ab08-3489a8843788"
-uuid: "6f9cfbc0-8b32-8a69-b262-aa94d643aa45"
-horo: 1
-bonds:
-  in:
-    - category
-    - has
-    - law
-    - type
-  out:
-    - category
-    - has
-    - law
-    - type
+atomPath: "vocabulary/map"
+coordinate: "vocabulary/map · 8/crest · 7de8af61"
+contentUuid: "1e40978e-c62e-5069-a8b6-f19554a05b97"
+diamondUuid: "14413197-bfdc-857a-8a66-f8c75c238199"
+uuid: "7de8af61-495d-8614-81e0-41ae33662a25"
+horo: 8
 typography:
-  partition: map
-  bondDegree: 14
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 15
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - category
-    - has
-    - law
-    - type
-  matrix:
-    - category
-    - has
-    - law
-    - type
-  backlinks:
-    - category
-    - has
-    - law
-    - type
 signatures:
-  computationUuid: "94bb49d3-0c53-84b0-9af3-5775afba8045"
+  computationUuid: "dfc46449-a463-81d0-a9ae-33b4b64353fe"
   stages:
     - stage: path
-      stageUuid: "4fae5cc1-ebce-81bb-a060-88fa4feac456"
+      stageUuid: "70417eb6-8f8e-8e7c-9a43-0906545c5eaa"
     - stage: trinity
-      stageUuid: "39cac47d-d4e5-8718-8543-b2fb3a52ab6b"
+      stageUuid: "2fdbcd46-7e73-8635-91a4-d57a0d71412e"
     - stage: boundary
-      stageUuid: "0781c767-0b7e-89f3-b84f-02a1208ae2f8"
+      stageUuid: "7a2ecf87-01e2-8922-80b9-ef04165b52b3"
     - stage: links
-      stageUuid: "c60e8b0c-111d-8e12-8fe0-600a1929ad7a"
+      stageUuid: "76b5937e-ae05-8fb5-90fc-f94c191c9909"
     - stage: horo
-      stageUuid: "3efcbf41-4809-8da6-9b8b-204cab9bdb92"
+      stageUuid: "bb2d53b6-9a59-8a1d-a57d-3ff9f1b7f9ee"
     - stage: seal
-      stageUuid: "3230dcdb-5d02-8aaa-bfd8-937c242749fc"
+      stageUuid: "e44ed88d-ce1b-8565-861b-3361f9c791f1"
     - stage: uuid
-      stageUuid: "e9ac5a3b-8680-8e2d-be96-1d00a012f1e4"
+      stageUuid: "5715cc20-9035-8fec-a25e-fbef509541bd"
 version: 2
 ---
 # map

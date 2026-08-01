@@ -1,63 +1,35 @@
 ---
 name: endocrine
 description: "Use when reasoning about endocrine as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/endocrine
-coordinate: endocrine · 5/round · a4420a04
-contentUuid: "f2442f5c-f9de-5594-846a-5b6f3aa0e5d7"
-diamondUuid: "5a0af5ad-71a4-8a0a-ae87-bfc5d48c78ac"
-uuid: "a4420a04-b829-8501-8e7d-33a431026f5a"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/endocrine"
+coordinate: "vocabulary/endocrine · 4/weave · f0f4a0d6"
+contentUuid: "f33f5edf-ff27-5037-aacd-0e260c89a7e7"
+diamondUuid: "a8b20545-fd82-8850-93c0-07a6a41fd4dd"
+uuid: "f0f4a0d6-7e76-8607-9d24-44df5765a3e4"
+horo: 4
 typography:
-  partition: endocrine
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "7ed9fcd1-0469-8456-9c4f-359d03b3f510"
+  computationUuid: "f235c52e-8ddd-8eeb-a31e-ef4a073edb2c"
   stages:
     - stage: path
-      stageUuid: "a7f9be77-7c5c-8c77-822d-bcd0ae9277c8"
+      stageUuid: "c679a183-174a-8d43-a271-bb34fb729767"
     - stage: trinity
-      stageUuid: "1393fea6-e25b-803f-b5b1-d5657be05542"
+      stageUuid: "cd92b239-ff5c-85b8-95c5-e81d248649bc"
     - stage: boundary
-      stageUuid: "550e8b45-ecb5-8994-9871-f2f86c779c4c"
+      stageUuid: "a8f8a7b3-8cad-8871-a3f8-cf1ee143a304"
     - stage: links
-      stageUuid: "33d08acd-2c49-85ba-a7db-735a9fa072f7"
+      stageUuid: "31f128b7-2059-8a90-b320-9a4bc29f066c"
     - stage: horo
-      stageUuid: "21f4ad49-cc32-8580-9fef-530f8689e33a"
+      stageUuid: "e2433373-1898-8ae1-a9ce-b42196e822c4"
     - stage: seal
-      stageUuid: "214fbded-bbff-87f1-9730-5c3ff8f1b873"
+      stageUuid: "9615cc24-685d-8373-94fe-fd7b16b30bd7"
     - stage: uuid
-      stageUuid: "ea7569e9-5f42-850a-aa7a-f9f328965f92"
+      stageUuid: "5b87f81c-fab6-8b64-8bf3-2e62e3722f35"
 version: 2
 ---
 # endocrine

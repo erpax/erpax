@@ -1,45 +1,25 @@
 ---
 name: mappings
 description: "Use when translating elements across reporting frameworks — account/line-item/disclosure/metric mappings between a source and target standard (XBRL-GL, IFRS-Taxonomy, SAF-T). The cross-standard element-mapping node."
-atomPath: taxing/jurisdictions/reporting/standards/reporting/mappings
-coordinate: taxing/jurisdictions/reporting/standards/reporting/mappings · 8/crest · 62411723
-contentUuid: "6353d45c-e228-5bcc-b4ce-33fc5e3ed112"
-diamondUuid: "f8743f8c-c694-8d3a-985e-e0d133d7a520"
-uuid: "62411723-27a7-8789-9175-9bac0e76e22b"
-horo: 8
-bonds:
-  in:
-    - law
-    - mapping
-    - reporting
-    - standards
-  out:
-    - law
-    - mapping
-    - standards
+atomPath: "taxing/jurisdictions/reporting/standards/reporting/mappings"
+coordinate: "taxing/jurisdictions/reporting/standards/reporting/mappings · 5/round · 94499806"
+contentUuid: "d1b43020-be76-5d68-9f12-324294aeb5b3"
+diamondUuid: "86014317-fda6-87fa-a063-1d96d417eea9"
+uuid: "94499806-5665-8040-900d-dddbe4a62816"
+horo: 5
 typography:
   partition: taxing
   bondDegree: 10
-  neighbors: []
 standards:
   - "IFRS-Taxonomy reporting-mapping"
+  - "IFRS-Taxonomy reporting-mapping`"
   - "SAF-T OECD mapping"
   - XBRL
   - "XBRL-GL global-ledger-taxonomy"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-  matrix:
-    - law
-    - mapping
-    - standards
-  backlinks:
-    - law
-    - mapping
-    - standards
 signatures:
-  computationUuid: "c9d83ae1-9613-8e0d-815f-1d65d455d1bc"
+  computationUuid: "76976066-f544-881f-9aca-27d67663b52d"
   stages:
     - stage: path
       stageUuid: "a13c53e0-51cd-816a-95c8-8c72d5657b95"
@@ -50,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "46a129b6-4883-81ca-a485-8fa957d58d31"
     - stage: horo
-      stageUuid: "c39f165f-e73b-830b-af34-43be94589b95"
+      stageUuid: "a69a9b1a-d67e-88a1-b9a2-2713531c5dd5"
     - stage: seal
       stageUuid: "28fef98e-2137-8a3c-baf9-17ab842acad5"
     - stage: uuid
-      stageUuid: "1bebefa6-6e97-8635-8db4-9c7c61fb0a17"
+      stageUuid: "7ef160bd-ebc6-825a-ab93-add9a3640eeb"
 version: 2
 ---
 # reporting-mappings

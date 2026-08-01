@@ -1,63 +1,35 @@
 ---
 name: municipality
 description: "Use when reasoning about municipality as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/municipality
-coordinate: municipality · 8/crest · 64b36387
-contentUuid: "cd0dda21-5346-5413-aa3f-46b7554c869c"
-diamondUuid: "1c8dfaee-8b75-8ed9-aac7-5219815cfe0e"
-uuid: "64b36387-4bc8-89f0-ae71-11f206b33d3e"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/municipality"
+coordinate: "vocabulary/municipality · 4/weave · 72481c16"
+contentUuid: "7ea0353d-d519-52e2-a233-cf2321dcfc78"
+diamondUuid: "cfb8a155-524f-883b-b658-d4fa10e2d531"
+uuid: "72481c16-35be-8859-853b-37abc38f008a"
+horo: 4
 typography:
-  partition: municipality
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "a9a9b941-35e1-8e11-98df-0d069ee83ca5"
+  computationUuid: "1e564940-7232-8a40-bbe9-36f72de26648"
   stages:
     - stage: path
-      stageUuid: "252d3b1f-d32c-8dbc-a5a3-034b8c0de2a5"
+      stageUuid: "c44d00ef-e8bc-8733-b30e-27b02f5026b4"
     - stage: trinity
-      stageUuid: "b7cbed1b-a39e-813b-bdb6-3766a085938e"
+      stageUuid: "d5a10a09-f029-855a-a2a0-18b1e6a70310"
     - stage: boundary
-      stageUuid: "110c1e01-076e-8883-98ba-4c8c3ce48253"
+      stageUuid: "896399da-4938-8fe4-bc24-924f70f238e3"
     - stage: links
-      stageUuid: "652a460e-6fe3-888b-b015-600fa65fb7ac"
+      stageUuid: "ec21d3ec-35c2-8643-9ed7-9490469c7360"
     - stage: horo
-      stageUuid: "0f1dd1f5-7239-8abc-956c-649c5464739f"
+      stageUuid: "c33ebb5d-8ec7-8119-b66c-feb77b87eb6c"
     - stage: seal
-      stageUuid: "ea0b3eb7-91ce-8b32-9c7a-41a4d4eb3297"
+      stageUuid: "176cf390-ea0c-83e7-af48-a8dcac54da8b"
     - stage: uuid
-      stageUuid: "94617c4f-0aad-8c6f-8998-6516f0551aea"
+      stageUuid: "6ac11ed2-07f0-8c55-9691-b99c9755c057"
 version: 2
 ---
 # municipality

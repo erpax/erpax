@@ -1,58 +1,35 @@
 ---
 name: latitude
 description: Use when reasoning about latitude — The latitude of a location. For example (WGS 84).
-atomPath: vocabulary/latitude
-coordinate: latitude · 8/crest · b36ca798
-contentUuid: "291d9879-6016-59e6-bf1e-6529c044e913"
-diamondUuid: "9d6fbb5d-3f9e-84a4-a678-b7fc09fa43d0"
-uuid: "b36ca798-02ab-8caf-842d-f41e8f0815b0"
-horo: 8
-bonds:
-  in:
-    - law
-    - place
-    - thing
-  out:
-    - law
-    - place
-    - thing
+atomPath: "vocabulary/latitude"
+coordinate: "vocabulary/latitude · 7/descent · 87f3edbd"
+contentUuid: "a981063b-bb01-5c74-8bb6-544b78412533"
+diamondUuid: "a0c20478-3e1e-8958-8dbb-c683654c04e4"
+uuid: "87f3edbd-c288-8212-abc6-a2a6f498d4db"
+horo: 7
 typography:
-  partition: latitude
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - place
-    - thing
-  matrix:
-    - law
-    - place
-    - thing
-  backlinks:
-    - law
-    - place
-    - thing
 signatures:
-  computationUuid: "472e583c-d65e-8089-8341-93e4681adcd9"
+  computationUuid: "58ff6a07-0a3b-8d6f-9166-f73ae4dac83b"
   stages:
     - stage: path
-      stageUuid: "ac8fbd1d-8d5c-872e-81c5-1aaf4da7c8e8"
+      stageUuid: "5df4cba9-0ec3-86c0-88bb-8f9c4721d7a0"
     - stage: trinity
-      stageUuid: "a8bf21cc-db42-8e34-a1a1-41b787635178"
+      stageUuid: "cf26e122-b54d-81e6-925d-697bee7b8a89"
     - stage: boundary
-      stageUuid: "501ae678-537d-88ee-9ccc-763117f3fbd6"
+      stageUuid: "0379d5b2-457d-8d56-867d-9cea00379012"
     - stage: links
-      stageUuid: "aa6db833-5227-824a-9d1e-8ffe9226c32a"
+      stageUuid: "972676ef-fa36-8b86-8420-0e238b9b0e54"
     - stage: horo
-      stageUuid: "5d8450da-27d6-8fff-a8c6-7c1c445bf36b"
+      stageUuid: "9380dfbc-1654-8517-90b7-985fa1bd2f51"
     - stage: seal
-      stageUuid: "d87c9599-94a3-81a2-a409-f3baebe1078f"
+      stageUuid: "67cc6996-62a6-8e70-b6f3-24845c77b779"
     - stage: uuid
-      stageUuid: "c1ecd8da-1635-85b4-9fa2-0a59f216ad9b"
+      stageUuid: "448cc0ef-868c-834d-be4e-e48b0a2fdd04"
 version: 2
 ---
 # latitude

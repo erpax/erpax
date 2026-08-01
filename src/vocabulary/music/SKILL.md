@@ -1,158 +1,35 @@
 ---
 name: music
 description: Use when reasoning about music — The composer of the soundtrack.
-atomPath: vocabulary/music
-coordinate: music · 5/round · 65e0b63e
-contentUuid: "8922c926-0f5b-59bf-9ea2-2addfd7f26f4"
-diamondUuid: "a55de6ed-e263-81a7-baa9-6b64e47b9bdc"
-uuid: "65e0b63e-59cf-8307-a067-4b5fc1d8c7eb"
-horo: 5
-bonds:
-  in:
-    - album
-    - albums
-    - arrangement
-    - composition
-    - credited
-    - event
-    - form
-    - format
-    - group
-    - law
-    - member
-    - object
-    - orphism
-    - playlist
-    - production
-    - recorded
-    - recording
-    - release
-    - sheet
-    - store
-    - sufism
-    - type
-    - venue
-    - video
-  out:
-    - album
-    - albums
-    - arrangement
-    - composition
-    - credited
-    - event
-    - form
-    - format
-    - group
-    - law
-    - member
-    - object
-    - orphism
-    - playlist
-    - production
-    - recorded
-    - recording
-    - release
-    - sheet
-    - store
-    - sufism
-    - type
-    - venue
-    - video
+atomPath: "vocabulary/music"
+coordinate: "vocabulary/music · 2/share · 988ee14e"
+contentUuid: "ff637f51-cfc8-5403-81b8-a4323cd2e705"
+diamondUuid: "a5666e88-d0bb-8f56-a9ac-9efd60c8f651"
+uuid: "988ee14e-db4e-8a74-8814-5e0c88e4cab9"
+horo: 2
 typography:
-  partition: music
-  bondDegree: 88
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 90
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - album
-    - arrangement
-    - composition
-    - event
-    - form
-    - format
-    - group
-    - law
-    - member
-    - object
-    - playlist
-    - production
-    - recording
-    - release
-    - sheet
-    - store
-    - type
-    - venue
-    - video
-  matrix:
-    - album
-    - albums
-    - arrangement
-    - composition
-    - credited
-    - event
-    - form
-    - format
-    - group
-    - law
-    - member
-    - object
-    - orphism
-    - playlist
-    - production
-    - recorded
-    - recording
-    - release
-    - sheet
-    - store
-    - sufism
-    - type
-    - venue
-    - video
-  backlinks:
-    - album
-    - albums
-    - arrangement
-    - composition
-    - credited
-    - event
-    - form
-    - format
-    - group
-    - law
-    - member
-    - object
-    - orphism
-    - playlist
-    - production
-    - recorded
-    - recording
-    - release
-    - sheet
-    - store
-    - sufism
-    - type
-    - venue
-    - video
 signatures:
-  computationUuid: "c439dad6-36ff-8f6a-a4ad-9b2a0e3c023b"
+  computationUuid: "df24c537-4e0d-89ec-bea3-5e40ad4d300e"
   stages:
     - stage: path
-      stageUuid: "ed9dc49a-e717-8fcd-9d3d-9ebea60f07c9"
+      stageUuid: "283276d7-c396-83c1-972b-a6bc50ddff53"
     - stage: trinity
-      stageUuid: "c4b5d6ca-ff8c-8f4e-88b4-497438412b92"
+      stageUuid: "85bdfaa8-c5ab-80c2-9712-aa4ce37e18fd"
     - stage: boundary
-      stageUuid: "3d7c4064-38d8-8b40-9a87-cd7e2b89c909"
+      stageUuid: "482ac5fc-06df-8de7-89a6-caf7b53f41f1"
     - stage: links
-      stageUuid: "b2a5f78a-9387-8b1d-85b1-9a979a61bd3a"
+      stageUuid: "73cf43fe-128b-8373-91bc-34021dc2ecf5"
     - stage: horo
-      stageUuid: "a515364d-031d-8119-94d0-712abe92fe32"
+      stageUuid: "9cf762c4-0cfe-886f-88d5-e4394b83705b"
     - stage: seal
-      stageUuid: "3f2d4d23-65aa-86be-a720-45f87b6c86f9"
+      stageUuid: "4c8b9eff-9d7f-8eca-b409-c98f16bb3d55"
     - stage: uuid
-      stageUuid: "c999e39d-01a1-8fa7-a911-65a5d29555fc"
+      stageUuid: "5aec0aea-cdbf-87eb-b5e6-e185058e203e"
 version: 2
 ---
 # music

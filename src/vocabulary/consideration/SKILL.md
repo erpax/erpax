@@ -1,78 +1,35 @@
 ---
 name: consideration
 description: "Use when reasoning about consideration as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/consideration
-coordinate: consideration · 7/descent · 7cffe8ab
-contentUuid: "36a3be8d-671a-5d9d-8628-2ec65cffcf40"
-diamondUuid: "69e99b7c-ec02-8393-a42d-0a2b7ab910de"
-uuid: "7cffe8ab-4727-8b71-b9f4-317f2c1d0bc1"
-horo: 7
-bonds:
-  in:
-    - adult
-    - collapse
-    - has
-    - law
-    - merge
-    - safety
-    - sti
-  out:
-    - adult
-    - collapse
-    - has
-    - law
-    - merge
-    - safety
-    - sti
+atomPath: "vocabulary/consideration"
+coordinate: "vocabulary/consideration · 2/share · 4fe31cda"
+contentUuid: "bce8d8c9-e26e-5bbd-9a02-2f5255f4fe28"
+diamondUuid: "2f0b65da-8e65-82f8-970e-fb9c486718ae"
+uuid: "4fe31cda-6d89-80ad-8b4b-c23cf82926e1"
+horo: 2
 typography:
-  partition: consideration
+  partition: vocabulary
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - adult
-    - collapse
-    - has
-    - law
-    - merge
-    - safety
-    - sti
-  matrix:
-    - adult
-    - collapse
-    - has
-    - law
-    - merge
-    - safety
-    - sti
-  backlinks:
-    - adult
-    - collapse
-    - has
-    - law
-    - merge
-    - safety
-    - sti
 signatures:
-  computationUuid: "2062f041-5158-8158-b0fb-e44fde5e4394"
+  computationUuid: "8eb2117a-9889-8c98-8ad1-0f52da692813"
   stages:
     - stage: path
-      stageUuid: "10eff1ca-608f-8fcf-850b-37c08bae1021"
+      stageUuid: "e89f9ad3-96bd-8414-a7df-f81bec5fd721"
     - stage: trinity
-      stageUuid: "8ce46f21-99c8-8608-a095-c86a3d7aacc8"
+      stageUuid: "1773431b-715f-8ec3-b2ff-8c7c2766912c"
     - stage: boundary
-      stageUuid: "ea2d16f7-b001-8f59-9510-8fcff9acc08b"
+      stageUuid: "f05fa59b-68d3-8c0a-8223-bd16d7112ff0"
     - stage: links
-      stageUuid: "2ea8b576-79e5-86e0-b0bb-1e91c4c3a47a"
+      stageUuid: "6b6889d7-2f99-8358-b8c8-a987667ebd68"
     - stage: horo
-      stageUuid: "21c37909-7de2-832d-81fe-7fcbf0f1a2ea"
+      stageUuid: "3e9c3d07-2831-8761-91f7-7a6c01d8c60c"
     - stage: seal
-      stageUuid: "5e0e56b8-71cd-837a-a5e2-7289266285f7"
+      stageUuid: "7f1170df-30b9-8aec-9523-62c56cc7080e"
     - stage: uuid
-      stageUuid: "a1ca0294-2e07-8ecf-ae46-00f53d644bb5"
+      stageUuid: "d2196172-dbcf-85fa-a3c3-d747e3db5335"
 version: 2
 ---
 # consideration

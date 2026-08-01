@@ -1,63 +1,35 @@
 ---
 name: certificate
 description: "Use when reasoning about certificate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/certificate
-coordinate: certificate · 8/crest · 3558950c
-contentUuid: "5cb4c54b-bb02-5738-af4e-707966f9445a"
-diamondUuid: "3ee53444-9bd6-8e17-a4d4-798ce7caf246"
-uuid: "3558950c-5ce0-891f-a983-9bbc2dbf714f"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/certificate"
+coordinate: "vocabulary/certificate · 4/weave · d685aa3f"
+contentUuid: "2c6539bf-8a4f-5f53-84f3-445b4f268583"
+diamondUuid: "2c403ac0-fb7c-8e6d-8477-f82fee8e1d79"
+uuid: "d685aa3f-33f6-8411-865a-e9a0b266ffec"
+horo: 4
 typography:
-  partition: certificate
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "f4e87f78-92a0-861e-933b-fc36b30faa71"
+  computationUuid: "34d1bc76-6fee-8ee0-bede-f3401c408764"
   stages:
     - stage: path
-      stageUuid: "1cbe8e4a-208e-892b-984a-e05862b87655"
+      stageUuid: "b84960b4-ed3d-89c5-9bb8-3cb2531ed224"
     - stage: trinity
-      stageUuid: "3dca8fd1-e410-83b9-9da2-829eeedba852"
+      stageUuid: "8f8456c7-1c6c-85b0-a150-b6dbb8b17c62"
     - stage: boundary
-      stageUuid: "60ed5895-2603-8748-84bc-bbafd2de10ae"
+      stageUuid: "2f1b56bb-d7db-8821-a08d-1f8113693e2b"
     - stage: links
-      stageUuid: "a5769cba-34d8-8fd0-9b34-29f76370433d"
+      stageUuid: "86638387-d559-884a-a2a2-3a0d98f7eec1"
     - stage: horo
-      stageUuid: "3b25600a-7f5a-87e9-aaaf-bd4999815e26"
+      stageUuid: "4f09a2c7-f20d-8dff-beb4-04798092c483"
     - stage: seal
-      stageUuid: "4ac76087-06b5-8da7-a125-9c74b8f3db78"
+      stageUuid: "f61f8fc3-d202-8dfb-8a37-8482cab62d94"
     - stage: uuid
-      stageUuid: "2484053d-5661-8828-acd3-b8fb990a3a12"
+      stageUuid: "90a3f18e-9dc3-890e-b507-f45af2780d5d"
 version: 2
 ---
 # certificate

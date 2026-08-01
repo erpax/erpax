@@ -1,53 +1,35 @@
 ---
 name: photos
 description: Use when reasoning about photos — Photographs of this place.
-atomPath: vocabulary/photos
-coordinate: photos · 2/share · 02f05307
-contentUuid: "c4bc15dc-504b-550b-bd04-4b4f57f1cc02"
-diamondUuid: "212e9499-4785-8ad2-ab48-0a3af46d4162"
-uuid: "02f05307-aa05-8874-b735-45fbaf91fddb"
-horo: 2
-bonds:
-  in:
-    - creative
-    - law
-  out:
-    - creative
-    - law
+atomPath: "vocabulary/photos"
+coordinate: "vocabulary/photos · 7/descent · db041ba8"
+contentUuid: "f125be59-0fe5-5fb1-b0e4-5d0723eb0aef"
+diamondUuid: "551c0fd3-5303-85dc-a049-62fcca4226a4"
+uuid: "db041ba8-d58f-8b22-884b-5e640ce736cb"
+horo: 7
 typography:
-  partition: photos
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - creative
-    - law
-  matrix:
-    - creative
-    - law
-  backlinks:
-    - creative
-    - law
 signatures:
-  computationUuid: "1b6d0f6b-61f9-8c52-8a6e-c2c3b96c7ba5"
+  computationUuid: "800bdc31-8be9-875e-b75a-d05dca2f448a"
   stages:
     - stage: path
-      stageUuid: "305e61fa-299b-8d1c-a613-5e6068ea5ad9"
+      stageUuid: "c54f6ad3-a6b9-86b3-a1c4-3af518b164c8"
     - stage: trinity
-      stageUuid: "776882ee-9346-84f1-966e-5ff8ca523577"
+      stageUuid: "912e687c-6bba-8910-9c6f-395ea43eb6cd"
     - stage: boundary
-      stageUuid: "8254b00c-5a87-8fc4-b5f3-fae1c747fbc8"
+      stageUuid: "b7bcd317-1949-8d6a-a9ab-6b3487a8a46d"
     - stage: links
-      stageUuid: "2d715687-e1ae-8586-9a4b-e1c44ee141a4"
+      stageUuid: "d7120cfd-de12-80cd-ab7a-0e4cd84f42c9"
     - stage: horo
-      stageUuid: "0eca59f3-5bd9-8c13-adcd-5bc9377ae8b0"
+      stageUuid: "5ef6a7ba-5eee-8d57-9d94-c4a2ab00e635"
     - stage: seal
-      stageUuid: "0e2ac135-b691-8c6d-9c71-69bfbf1fdc1b"
+      stageUuid: "c40047f3-9c46-8213-b9f2-f7083b7f51a2"
     - stage: uuid
-      stageUuid: "763b83b1-b064-8e40-9f99-48434d73a45a"
+      stageUuid: "cb76a592-c96d-8cc8-a3c3-448cfd0385f8"
 version: 2
 ---
 # photos

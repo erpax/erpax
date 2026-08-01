@@ -2,34 +2,16 @@
 name: validation
 description: "Use when checking that a postal address is complete and well-formed for its declared country — country-aware required components and postal-code pattern checks, returning human-readable errors (empty ⇒ valid) ready for a Payload beforeValidate throw."
 atomPath: "address/validation"
-coordinate: "address/validation · 8/crest · 640b1d16"
-contentUuid: "798dfaa5-42c7-5c5d-9952-218312b88a55"
-diamondUuid: "7ef98d9d-9026-894f-a99e-bc4c940440a1"
-uuid: "640b1d16-9525-8cda-9b9c-ddca2247c86a"
-horo: 8
-bonds:
-  in:
-    - address
-    - country
-    - law
-    - locality
-    - postal
-    - region
-  out:
-    - address
-    - country
-    - law
-    - locality
-    - postal
-    - region
+coordinate: "address/validation · 2/share · 4da13b76"
+contentUuid: "bdd3ab04-0999-5c07-bc77-093fc401977f"
+diamondUuid: "714add58-1ef5-8f90-8423-b5d2cccdee15"
+uuid: "4da13b76-27c3-8b30-ab34-8b8fcb03e519"
+horo: 2
 typography:
   partition: address
   bondDegree: 18
-  neighbors: []
 standards:
   - "COSO-ERM-2017"
-  - "EU-2017/1132"
-  - "EU-2017/828"
   - "EU-Taxonomy-2020/852"
   - "GDPR Art.5(1)(c) data-minimisation collect-only-fields-the-format-requires"
   - "GDPR Art.5(1)(c) data-minimisation — only the fields the format requires"
@@ -41,30 +23,8 @@ standards:
   - "UPU-S42"
   - "UPU-S42 international-postal-addressing"
 bindings: []
-neighbors:
-  wikilink:
-    - address
-    - country
-    - law
-    - locality
-    - postal
-    - region
-  matrix:
-    - address
-    - country
-    - law
-    - locality
-    - postal
-    - region
-  backlinks:
-    - address
-    - country
-    - law
-    - locality
-    - postal
-    - region
 signatures:
-  computationUuid: "decd7e4c-8c7f-857e-a680-78e31615a2f7"
+  computationUuid: "8851b436-01b8-8188-986d-1080d7f7262e"
   stages:
     - stage: path
       stageUuid: "509641d0-0cde-868c-98b4-70d9f17ce1a8"
@@ -75,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "82b9d3dd-6383-8feb-ab13-a1a3839d291b"
     - stage: horo
-      stageUuid: "f2863832-f276-8c80-bb3c-946d4a79d396"
+      stageUuid: "3b4640b0-e898-8978-8436-ded418a52689"
     - stage: seal
       stageUuid: "6d5501f0-1ad2-80d9-aa3c-0808dd20bd96"
     - stage: uuid
-      stageUuid: "5021734b-8634-82d1-9b41-64f770dd3422"
+      stageUuid: "9a22b47b-afc7-8795-9465-c1dff6f6b5aa"
 version: 2
 ---
 # address/validation — the country-aware address validator

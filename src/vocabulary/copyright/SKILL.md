@@ -1,78 +1,35 @@
 ---
 name: copyright
 description: "Use when reasoning about copyright as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/copyright
-coordinate: copyright · 1/base · 68e8b9b1
-contentUuid: "afb8e38c-be5d-54e2-8298-0805a7fc7853"
-diamondUuid: "72f60f68-4cd9-8fe9-a002-416d163236b9"
-uuid: "68e8b9b1-b849-8f68-9a63-b1cc602fe2ab"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - holder
-    - law
-    - merge
-    - notice
-    - sti
-    - year
-  out:
-    - collapse
-    - holder
-    - law
-    - merge
-    - notice
-    - sti
-    - year
+atomPath: "vocabulary/copyright"
+coordinate: "vocabulary/copyright · 7/descent · e9f80b9e"
+contentUuid: "e0f22786-fdd6-5de3-a719-bb5353861c48"
+diamondUuid: "f3f86fd0-ca4a-8d34-a21b-b811729de538"
+uuid: "e9f80b9e-6c78-868b-8fd1-5d6402560dd9"
+horo: 7
 typography:
-  partition: copyright
+  partition: vocabulary
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - holder
-    - law
-    - merge
-    - notice
-    - sti
-    - year
-  matrix:
-    - collapse
-    - holder
-    - law
-    - merge
-    - notice
-    - sti
-    - year
-  backlinks:
-    - collapse
-    - holder
-    - law
-    - merge
-    - notice
-    - sti
-    - year
 signatures:
-  computationUuid: "754a4a48-92d2-85d6-85a0-eabe0d94db66"
+  computationUuid: "c3434eea-e86c-8cd1-82b6-749a4238616b"
   stages:
     - stage: path
-      stageUuid: "d1cfa2a8-6c97-8795-9164-0c5dd1589bea"
+      stageUuid: "a1906be7-4032-8709-86ae-d405bec91919"
     - stage: trinity
-      stageUuid: "4a36ea0f-d474-8724-b563-19d6a4c5d04e"
+      stageUuid: "8519f4b8-5088-8bdd-8674-c6379a2d77d9"
     - stage: boundary
-      stageUuid: "88b9619c-5453-8132-85d4-a18d483cc3ba"
+      stageUuid: "19f9bf4f-bf22-8dc2-9aa9-aacb92291aa3"
     - stage: links
-      stageUuid: "f0d11591-ad94-8392-b1d8-add9ddde2ca7"
+      stageUuid: "538b6794-ce27-8b27-a5fd-b87397ca12df"
     - stage: horo
-      stageUuid: "fd2465ad-9941-8cbc-aac0-7bf1797c3e0b"
+      stageUuid: "fb590d07-de56-84e7-8f67-96eb695f3b2f"
     - stage: seal
-      stageUuid: "ee818bc8-a171-8fe5-a15a-5fa10eef8325"
+      stageUuid: "b99d89e7-a541-808b-8c7b-8a32899adfeb"
     - stage: uuid
-      stageUuid: "8d6cc8ce-d9b4-8c3f-bbfa-ed8d4c789680"
+      stageUuid: "3fe61ee5-2a3e-824d-b80e-34edf5b1720a"
 version: 2
 ---
 # copyright

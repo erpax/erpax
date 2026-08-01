@@ -1,68 +1,35 @@
 ---
 name: radius
 description: "Use when reasoning about radius as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/radius
-coordinate: radius · 4/weave · 16022e34
-contentUuid: "1cefcd5f-aaed-5c70-93a9-b585d3f00ac3"
-diamondUuid: "e77d0587-4320-8253-9fe5-2b4e97a7c9dc"
-uuid: "16022e34-bd57-81c4-a5b0-5a4ef756b19c"
+atomPath: "vocabulary/radius"
+coordinate: "vocabulary/radius · 4/weave · ef961036"
+contentUuid: "0d799987-9175-5085-8b94-71712f8e4ae8"
+diamondUuid: "02108696-7c11-8be0-beb7-55758171fad0"
+uuid: "ef961036-fdb8-8e0c-b7fd-ea8db6e08514"
 horo: 4
-bonds:
-  in:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
 typography:
-  partition: radius
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - geo
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "b2e235f2-ad6b-8fbe-aa90-46371ec62d58"
+  computationUuid: "95cab7b1-e494-83d6-bdbc-be0c82970a26"
   stages:
     - stage: path
-      stageUuid: "07063680-63ae-8d63-a8f6-ef5f9f88e4d0"
+      stageUuid: "aae74922-2460-8501-b5b2-34169e5e6147"
     - stage: trinity
-      stageUuid: "38f119ea-b508-8bb4-9552-bca2613a8a76"
+      stageUuid: "a0da01bf-d1fa-8b1b-a579-35b1759b4eb7"
     - stage: boundary
-      stageUuid: "878a889f-4ab2-8cc2-a1c1-14ec57af7d47"
+      stageUuid: "83c8797b-cc85-809d-9b34-c79a07c44d00"
     - stage: links
-      stageUuid: "f3a7171a-18b6-8449-8116-3e4c318272a0"
+      stageUuid: "54779449-5c39-8456-89fb-5d83228e7b96"
     - stage: horo
-      stageUuid: "4f53e0c8-5be2-8e7f-9012-971ebdcd3229"
+      stageUuid: "9fec093f-09f0-8a6f-a544-5660292e9ff9"
     - stage: seal
-      stageUuid: "8292bd78-77db-86cd-9f4f-16b464b8557e"
+      stageUuid: "15aaea47-3018-813e-ba35-73db1b5ab5bb"
     - stage: uuid
-      stageUuid: "a137ed01-19cb-80a9-bb7b-8c8b9513ace0"
+      stageUuid: "30d99825-800b-8f7f-b0e0-14c94de5fc5f"
 version: 2
 ---
 # radius

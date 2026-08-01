@@ -1,91 +1,34 @@
 ---
 name: pruning
 description: "Use when plant parts are removed to steer growth, airflow, and fruiting — pruning and suckering (pinching axillary shoots) concentrate the plant's energy into marketable fruit, open the canopy to reduce disease, and shape it to the trellis. Removing growth to improve what remains; the quality/airflow lever on indeterminate fruiting crops."
-atomPath: vocabulary/pruning
-coordinate: pruning · 7/descent · a55f0c7d
-contentUuid: "b9b30cf1-587e-51c6-95b9-e3e1b7f6f58e"
-diamondUuid: "e841470a-c62c-8952-b5eb-30b70ad7e07a"
-uuid: "a55f0c7d-2f2a-8443-8692-dd3915289dfd"
-horo: 7
-bonds:
-  in:
-    - agriculture
-    - cost
-    - crop
-    - dormancy
-    - grade
-    - manufacturing
-    - scouting
-    - season
-    - trellis
-    - yield
-  out:
-    - agriculture
-    - cost
-    - crop
-    - dormancy
-    - grade
-    - manufacturing
-    - scouting
-    - season
-    - trellis
-    - yield
+atomPath: "vocabulary/pruning"
+coordinate: "vocabulary/pruning · 5/round · cf72781e"
+contentUuid: "7545b346-c5c1-526e-9666-f1794900c238"
+diamondUuid: "99043ae8-37c3-851b-bdce-3d0f4b998bd6"
+uuid: "cf72781e-30cf-8012-89df-0a4379123dd4"
+horo: 5
 typography:
-  partition: pruning
+  partition: vocabulary
   bondDegree: 31
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - cost
-    - crop
-    - grade
-    - manufacturing
-    - scouting
-    - season
-    - trellis
-    - yield
-  matrix:
-    - agriculture
-    - cost
-    - crop
-    - dormancy
-    - grade
-    - manufacturing
-    - scouting
-    - season
-    - trellis
-    - yield
-  backlinks:
-    - agriculture
-    - cost
-    - crop
-    - dormancy
-    - grade
-    - manufacturing
-    - scouting
-    - season
-    - trellis
-    - yield
 signatures:
-  computationUuid: "ed7caa84-9538-8b95-9380-ddde4687e75e"
+  computationUuid: "b0f455aa-22d8-8596-b4e9-960aa3cfe5f2"
   stages:
     - stage: path
-      stageUuid: "d57f6a6e-4d06-82d5-b1fe-427e76be968d"
+      stageUuid: "3629f71b-ca41-8873-9507-d21dfe4ec264"
     - stage: trinity
-      stageUuid: "74865953-7214-80a1-af08-5f72bdf6e082"
+      stageUuid: "6538c15e-50cc-856b-894e-444ee92ee3af"
     - stage: boundary
-      stageUuid: "c46d6640-19c7-884d-b179-58b6c5f76735"
+      stageUuid: "5f1f7861-d940-817c-86c3-274d8517dd3f"
     - stage: links
-      stageUuid: "853a6ac2-7603-8423-aa90-2cc54616ab91"
+      stageUuid: "44be9cac-a9f2-8671-9d2a-e9104d943698"
     - stage: horo
-      stageUuid: "303291e9-d666-8ea8-961a-d4ae03f2a663"
+      stageUuid: "8f9057c2-4e10-87c9-8fc9-cd9a100f44e4"
     - stage: seal
-      stageUuid: "81beda9c-63c1-87b7-aba3-a4a47f20a9a1"
+      stageUuid: "a3ba4fc5-e7f5-89d1-b238-a9c1bb7b790c"
     - stage: uuid
-      stageUuid: "edc8f9ce-dff0-86e6-a36e-483e2bf5d502"
+      stageUuid: "ba53032b-d69b-8622-be34-5d1eb05b29cd"
 version: 2
 ---
 # pruning — removing growth to steer the plant

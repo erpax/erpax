@@ -1,68 +1,35 @@
 ---
 name: prognosis
 description: "Use when reasoning about prognosis as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/prognosis
-coordinate: prognosis · 8/crest · b944ac66
-contentUuid: "28eed0aa-c109-503f-8514-a68e2a15d5a5"
-diamondUuid: "d277475a-ccdd-801e-917f-881dd6fbafbb"
-uuid: "b944ac66-6426-89b7-81ab-09e200700a0b"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - expected
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - expected
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/prognosis"
+coordinate: "vocabulary/prognosis · 7/descent · b2b37264"
+contentUuid: "8a545b91-ea9f-5782-97f2-b9e15ec5c0c9"
+diamondUuid: "5afe05fa-c1dc-8579-9761-37314e0876ff"
+uuid: "b2b37264-f84e-8749-a4d8-5e227d4f222b"
+horo: 7
 typography:
-  partition: prognosis
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - expected
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - expected
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - expected
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "64953019-f3de-8b55-944c-3fdefe2a515f"
+  computationUuid: "c4d66a0d-da04-80bd-a8df-be2b90319e5e"
   stages:
     - stage: path
-      stageUuid: "c07cf9f3-c268-8997-b1c1-937c23e7e4f9"
+      stageUuid: "d49ab89b-82a5-8e70-b527-aa04000612d1"
     - stage: trinity
-      stageUuid: "a1e83f91-6db8-8993-994e-7f64904eb083"
+      stageUuid: "bdb90cce-68ce-8fe4-b033-bebdabef6dad"
     - stage: boundary
-      stageUuid: "c790fe2e-77d6-8024-ace6-98f476502fae"
+      stageUuid: "b8ed5f68-c024-883c-ab69-f2d6d27663aa"
     - stage: links
-      stageUuid: "439ee7e9-7ab3-83b4-b36c-baa0c29e542d"
+      stageUuid: "489cfc9c-8417-8681-a430-d8b70f52966b"
     - stage: horo
-      stageUuid: "926d935b-0544-8b8c-93ca-5a27407bc89e"
+      stageUuid: "8f0367e4-c6a4-8607-a08b-23a1360180dd"
     - stage: seal
-      stageUuid: "a75aec58-493f-85d4-ad53-246cdf53782b"
+      stageUuid: "2408081f-d26b-8b9c-b06c-0cf192b4d17f"
     - stage: uuid
-      stageUuid: "f5ba5ba5-cc97-8393-b1fc-8cc4f78ce692"
+      stageUuid: "8184bc9d-25ee-82c2-bf0a-eba3c0ca5393"
 version: 2
 ---
 # prognosis

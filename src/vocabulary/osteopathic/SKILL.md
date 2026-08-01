@@ -1,63 +1,35 @@
 ---
 name: osteopathic
 description: "Use when reasoning about osteopathic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/osteopathic
-coordinate: osteopathic · 5/round · e1f410ef
-contentUuid: "e8881159-33b5-53e5-8dc0-87ae9c156908"
-diamondUuid: "798f965d-6a5b-8462-b568-3269eec17d90"
-uuid: "e1f410ef-5bf8-8cd8-9aa8-90a6cf271347"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/osteopathic"
+coordinate: "vocabulary/osteopathic · 1/base · 4087e0b8"
+contentUuid: "e83a4677-a8d8-578b-8e96-13978c2b4356"
+diamondUuid: "9a56862b-a253-8a04-86fb-056b4f1059ac"
+uuid: "4087e0b8-1903-8589-820c-50970b22763b"
+horo: 1
 typography:
-  partition: osteopathic
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "a3ec733c-76dc-8724-9ff7-f7281fa2e6f0"
+  computationUuid: "36beced8-fee5-8cfa-b8ca-b6feac1bc2aa"
   stages:
     - stage: path
-      stageUuid: "6ba761d3-9396-8fff-8a78-fa8dff6bd0ee"
+      stageUuid: "854dc868-ec12-8872-a4d9-c0a082e03398"
     - stage: trinity
-      stageUuid: "aeb6872e-d7d0-800a-af7b-05774e543fed"
+      stageUuid: "2c7555cd-ffc2-8275-b683-1a7ba14a9d47"
     - stage: boundary
-      stageUuid: "c73408e1-6f2b-8f3a-a0b4-5f4b1a5b910f"
+      stageUuid: "a84a8ba2-77c0-877b-8ea8-b6790cf2daa0"
     - stage: links
-      stageUuid: "dda97d34-8b0a-8e44-aa37-6461a813d1a4"
+      stageUuid: "b390bde1-ef04-8ad1-b45d-b060d23371d0"
     - stage: horo
-      stageUuid: "3c66be45-6434-8fa2-80fc-0aab257f9829"
+      stageUuid: "6d5e42c8-592a-854e-a1db-e92121b4014b"
     - stage: seal
-      stageUuid: "32a06645-68df-873e-b0f2-363792a1ec35"
+      stageUuid: "fde0bfc9-0a16-8b69-94b7-9c79add882cc"
     - stage: uuid
-      stageUuid: "41221e13-a27a-88f0-9531-538c3c007cd5"
+      stageUuid: "aa4fea9b-afbe-856a-a138-4976773304f9"
 version: 2
 ---
 # osteopathic

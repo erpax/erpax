@@ -1,58 +1,35 @@
 ---
 name: researcher
 description: Use when reasoning about researcher — Researchers.
-atomPath: vocabulary/researcher
-coordinate: researcher · 4/weave · 44e76075
-contentUuid: "7d5fe9dd-b6ae-5b1c-932a-cf2540665542"
-diamondUuid: "7678c519-068e-8510-ac37-3521ce320d13"
-uuid: "44e76075-b04c-8c0f-9291-c3dedce81a39"
-horo: 4
-bonds:
-  in:
-    - law
-    - person
-    - thing
-  out:
-    - law
-    - person
-    - thing
+atomPath: "vocabulary/researcher"
+coordinate: "vocabulary/researcher · 2/share · da5e915b"
+contentUuid: "7a684477-fcd4-52b5-852a-28b0df52edc7"
+diamondUuid: "d08e68ab-533c-80f2-87dc-1e5df0c72733"
+uuid: "da5e915b-1c9c-85a9-96df-9a96d43a1212"
+horo: 2
 typography:
-  partition: researcher
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - person
-    - thing
-  matrix:
-    - law
-    - person
-    - thing
-  backlinks:
-    - law
-    - person
-    - thing
 signatures:
-  computationUuid: "65a96c95-838f-8fd7-aa4d-627b35f2dd54"
+  computationUuid: "244e3119-6b3a-8a12-a37c-39d30adb9eea"
   stages:
     - stage: path
-      stageUuid: "41a83928-da54-8031-ac9e-0065f85d7dbd"
+      stageUuid: "19ea5319-c051-8024-969a-7002eabb18cf"
     - stage: trinity
-      stageUuid: "f47cb69a-a147-8dd3-92fe-586f97537214"
+      stageUuid: "f35e807b-9b37-8baf-895f-cb947a8ccd0a"
     - stage: boundary
-      stageUuid: "e133fd13-75ab-8f20-b7b8-09c837f5a741"
+      stageUuid: "7ec210cf-2dad-85b8-ae50-1f13691efdd4"
     - stage: links
-      stageUuid: "88183208-dd6d-8cd3-acb7-0175f8119672"
+      stageUuid: "c1e160e0-ab84-85d3-bd4b-ae85ba3407d7"
     - stage: horo
-      stageUuid: "f150ce85-ad3d-8ceb-bfde-ccde6d55cd41"
+      stageUuid: "6c32f8e3-f8d3-8330-826b-b905d861c5fe"
     - stage: seal
-      stageUuid: "8a930913-c81a-8d77-a1ef-e0c271bd40c1"
+      stageUuid: "95f74e3c-d5ca-8efb-881e-2730c0071bf0"
     - stage: uuid
-      stageUuid: "f63361f0-7fc5-80c7-b5dd-e36daa88edc2"
+      stageUuid: "659db745-24ae-8007-b96b-fe40e5ca0dd5"
 version: 2
 ---
 # researcher

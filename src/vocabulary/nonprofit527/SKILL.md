@@ -1,63 +1,35 @@
 ---
 name: nonprofit527
 description: "Use when reasoning about nonprofit527 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/nonprofit527
-coordinate: nonprofit527 · 5/round · d9c73b1f
-contentUuid: "9e9f1de1-1316-5e8f-8e7f-43a5b6e762d6"
-diamondUuid: "9d68cc81-df65-8c24-9cdf-1d09a194d8c5"
-uuid: "d9c73b1f-d111-8164-9989-311de15a3b00"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/nonprofit527"
+coordinate: "vocabulary/nonprofit527 · 8/crest · b32c134d"
+contentUuid: "b75b6dba-5f56-5725-88c7-0d46ffa65325"
+diamondUuid: "a68544e2-072f-83d2-b052-aaae6797139d"
+uuid: "b32c134d-f4b8-80e3-ac5a-8cb65159fd18"
+horo: 8
 typography:
-  partition: nonprofit527
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "836441d2-a580-8ecd-8485-df4f5c68dba5"
+  computationUuid: "cbf59c03-dc40-8f68-bd14-2754c69ad544"
   stages:
     - stage: path
-      stageUuid: "c461339c-4018-8a70-b19e-c412d3001e70"
+      stageUuid: "fa3b5749-f4b6-8dd2-b0e1-d38143e339d6"
     - stage: trinity
-      stageUuid: "ea11a56a-cd2a-8329-9d23-e55ac7998b31"
+      stageUuid: "7bde32dc-40be-8a69-b4f9-6d5797d32dce"
     - stage: boundary
-      stageUuid: "53f6f6c9-00b0-80a9-b138-3a7680352c9c"
+      stageUuid: "6c36f51a-a79d-8557-b40c-aa9f7d9adee7"
     - stage: links
-      stageUuid: "176164c9-b0ec-8966-8bc9-432f62f1b4d2"
+      stageUuid: "85820108-04a5-8745-adad-0b11534e4c0b"
     - stage: horo
-      stageUuid: "bc2a078b-56ac-8912-8513-115132e2a9bd"
+      stageUuid: "26aa122c-5be3-8fdc-867f-28f13392afab"
     - stage: seal
-      stageUuid: "f171581b-7e11-8833-bae2-654c49b1710a"
+      stageUuid: "6725d5a1-7cde-8ed1-9a30-73731e86afa4"
     - stage: uuid
-      stageUuid: "512f2603-ab50-8c33-bc72-1c487ea1e507"
+      stageUuid: "97c689de-6876-89c4-b940-2822ed0dd58b"
 version: 2
 ---
 # nonprofit527

@@ -2,56 +2,18 @@
 name: evolve
 description: "Use when the paradox bites — to evolve you must invert what you are sure about, but you cannot invert everything at once (you need ground to stand on). The resolution: invert the FRAGILE certainties through the void (throughVoid is an involution, 9→1 reopens), stand on the INVARIANT keel (what survives every inversion — a theorem, the conformal angle). Survives iff a keel remains; a mind of only certainties is pulled wholly to 0."
 atomPath: evolve
-coordinate: "evolve · 4/weave · b6a64a06"
-contentUuid: "d88e7288-dd55-5a1d-8a04-2d13b7d5a04b"
-diamondUuid: "297d86c8-84c5-81e2-b764-abca579e434a"
-uuid: "b6a64a06-3047-8617-916b-fb88f32c492d"
-horo: 4
-bonds:
-  in:
-    - coincidence
-    - conformal
-    - horo
-    - law
-    - seeing
-    - theorem
-  out:
-    - coincidence
-    - conformal
-    - horo
-    - law
-    - seeing
-    - theorem
+coordinate: "evolve · 7/descent · 22ee1463"
+contentUuid: "52a5de15-33b1-51e9-9c3f-54376cb7b4cc"
+diamondUuid: "54976cdd-de13-87b2-b3ad-a41c2742667a"
+uuid: "22ee1463-bf2e-848d-8664-0f23002acbd4"
+horo: 7
 typography:
   partition: evolve
   bondDegree: 18
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - coincidence
-    - conformal
-    - horo
-    - law
-    - seeing
-    - theorem
-  matrix:
-    - coincidence
-    - conformal
-    - horo
-    - law
-    - seeing
-    - theorem
-  backlinks:
-    - coincidence
-    - conformal
-    - horo
-    - law
-    - seeing
-    - theorem
 signatures:
-  computationUuid: "7024aa31-2439-85b1-b67a-4feec3815e92"
+  computationUuid: "ff42c8fa-3269-8899-bf20-7d41943dc3ef"
   stages:
     - stage: path
       stageUuid: "ac5cc0fe-6d09-81a7-8325-6227dfd2f01f"
@@ -62,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "53cb7766-abca-8632-b5c4-873188a4bdcd"
     - stage: horo
-      stageUuid: "21395fce-a652-8696-a0d1-5863137951b6"
+      stageUuid: "6a7dbba5-2423-8a24-aef1-ab2e011d6261"
     - stage: seal
       stageUuid: "208c1819-5fd0-8c38-9a01-bf204635b84c"
     - stage: uuid
-      stageUuid: "73636c83-f577-8012-88e5-e8e778502c73"
+      stageUuid: "7550323f-96a4-8616-bef4-3e8aae7abcc2"
 version: 2
 ---
 # evolve — invert the fragile through the void, stand on the invariant

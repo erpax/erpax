@@ -2,89 +2,22 @@
 name: positions
 description: "Use when managing org-chart slots, headcount planning, or recruiting — an ESCO/ISCO-08 classified position (vacant, filled, or planned) that drives the recruiting pipeline and IAS-19 headcount accruals. The HR job-position collection."
 atomPath: "cost/centers/job/positions"
-coordinate: "cost/centers/job/positions · 1/base · 5e952a9c"
-contentUuid: "a9d41dd9-a52d-5f7b-91cc-ec60ef65c980"
-diamondUuid: "f66a2bff-e928-8353-9ce5-08f288c14da1"
-uuid: "5e952a9c-f6ee-85ad-a761-a26b420f372c"
-horo: 1
-bonds:
-  in:
-    - allocation
-    - career
-    - centers
-    - compensation
-    - decompression
-    - identity
-    - job
-    - law
-    - matter
-    - pipeline
-    - proof
-    - standard
-    - tenure
-    - train
-  out:
-    - allocation
-    - career
-    - centers
-    - compensation
-    - decompression
-    - identity
-    - law
-    - matter
-    - pipeline
-    - proof
-    - standard
-    - tenure
-    - train
+coordinate: "cost/centers/job/positions · 2/share · fd68126d"
+contentUuid: "cfd54c34-ac31-576f-85f7-4b9cc1e684c2"
+diamondUuid: "0e1fa06b-8e7b-8f3f-9c7d-52bfaaca138c"
+uuid: "fd68126d-9ef1-836f-9799-4ed974bc3061"
+horo: 2
 typography:
   partition: cost
   bondDegree: 0
-  neighbors: []
 standards:
   - "IFRS IAS-19 employee-benefits (planned-headcount accruals)"
   - "ISO-8601-1:2019 date-time"
   - "ISO-8601-1:2019 date-time`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - identity
-    - law
-    - pipeline
-    - proof
-    - standard
-    - train
-  matrix:
-    - allocation
-    - career
-    - centers
-    - compensation
-    - decompression
-    - identity
-    - law
-    - matter
-    - pipeline
-    - proof
-    - standard
-    - tenure
-    - train
-  backlinks:
-    - allocation
-    - career
-    - centers
-    - compensation
-    - decompression
-    - identity
-    - law
-    - matter
-    - pipeline
-    - proof
-    - standard
-    - tenure
-    - train
 signatures:
-  computationUuid: "b7a7b5e5-88df-84f1-b77c-c2ebe26b13dc"
+  computationUuid: "9229785d-ce8f-8141-84ad-f2f7362a04dc"
   stages:
     - stage: path
       stageUuid: "5965dd4d-91c4-8faf-99b9-f05081fb6b66"
@@ -95,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "44e32719-7151-81c0-a3e0-82e428b4c799"
     - stage: horo
-      stageUuid: "25b1e914-63a8-8476-8547-7235d6c63be4"
+      stageUuid: "1a38f246-139c-8251-acf1-1dc710b24316"
     - stage: seal
       stageUuid: "bf8e606c-00ce-86bc-a6e4-ed3c01b23a51"
     - stage: uuid
-      stageUuid: "183308de-891e-80ab-8056-6344f606c4e5"
+      stageUuid: "fe01c724-e130-8a6c-82b1-c2718f9b8c88"
 version: 2
 ---
 # job-positions

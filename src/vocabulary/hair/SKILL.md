@@ -1,68 +1,35 @@
 ---
 name: hair
 description: "Use when reasoning about hair as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/hair
-coordinate: hair · 1/base · eb912d4a
-contentUuid: "5072f421-0134-5978-93ba-5b839de5533f"
-diamondUuid: "242b301d-e8f0-8def-91b3-a5d5f3e6c01c"
-uuid: "eb912d4a-020f-8092-bc3e-c38b38d9a6b9"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - salon
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - salon
-    - sti
+atomPath: "vocabulary/hair"
+coordinate: "vocabulary/hair · 2/share · f4a9cd8e"
+contentUuid: "37e3d2b2-0a9b-50cd-805f-a3ee2a9136e5"
+diamondUuid: "f3e5d481-49a0-8d8b-bf2a-3f77e8548852"
+uuid: "f4a9cd8e-43b8-8e63-990f-8105e1ecb456"
+horo: 2
 typography:
-  partition: hair
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - salon
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - salon
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - salon
-    - sti
 signatures:
-  computationUuid: "88b96de3-d614-87c5-a497-3e81f5ad0484"
+  computationUuid: "ea46831e-d44f-8586-9d86-439be16289b6"
   stages:
     - stage: path
-      stageUuid: "ef155860-8ee2-8ccc-8fd3-9305064d896c"
+      stageUuid: "62414813-71d5-8395-a0e2-2b00fbcd4814"
     - stage: trinity
-      stageUuid: "cbdc06bc-7717-89ec-ac3d-2237299fce6b"
+      stageUuid: "67604981-5336-8cd0-9f6d-631541b45c6d"
     - stage: boundary
-      stageUuid: "64188b56-f8ea-8b16-a6dc-69c7d52e5090"
+      stageUuid: "1b90e035-767d-85c4-ab5c-561f07587d4f"
     - stage: links
-      stageUuid: "76106aae-9743-8152-8e63-5770f650af3c"
+      stageUuid: "0a430916-f046-870e-b3fa-3ba0a116bbde"
     - stage: horo
-      stageUuid: "49b145ab-871c-85d8-9ee1-4ea151c3c5e3"
+      stageUuid: "0aae91ea-8475-864d-ba77-f3ab1c0e556e"
     - stage: seal
-      stageUuid: "a10d3a55-0f46-838e-8fce-3aa48a4f39d2"
+      stageUuid: "a6d6ba6b-8763-8858-8006-410e38a6f4bb"
     - stage: uuid
-      stageUuid: "e0473988-3754-8f3a-b71f-0f3ba04666f8"
+      stageUuid: "8c25cf65-24ba-84f8-b032-6ccf50d4c1a6"
 version: 2
 ---
 # hair

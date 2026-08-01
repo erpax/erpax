@@ -1,63 +1,35 @@
 ---
 name: hips
 description: "Use when reasoning about hips as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/hips
-coordinate: hips · 7/descent · a395bd0b
-contentUuid: "6defdb4d-dc68-599c-94f9-9559bfee298f"
-diamondUuid: "2239a867-b16d-8e0e-9b06-9ddefde20319"
-uuid: "a395bd0b-dba4-8276-beb0-a22d0b463e53"
+atomPath: "vocabulary/hips"
+coordinate: "vocabulary/hips · 7/descent · 90ae1128"
+contentUuid: "8843365b-e94d-5917-b9a7-a108801e95ab"
+diamondUuid: "07939884-6f81-8ec9-9c4a-d262970f57cf"
+uuid: "90ae1128-9059-82a5-8569-b2e09a9aa8fd"
 horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: hips
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "f0629a7c-90b0-8890-bf6d-a095177afc7b"
+  computationUuid: "e2591dd8-b17a-88b9-99bf-5a414d35ea65"
   stages:
     - stage: path
-      stageUuid: "61daba4c-d0de-85c2-907d-60802680df2a"
+      stageUuid: "429c163e-c4a0-866f-a907-dd1581b85368"
     - stage: trinity
-      stageUuid: "32fd334c-8931-8463-b4c9-ac257646a253"
+      stageUuid: "15b570d7-0ecc-8ada-8bcb-0cea3c53af86"
     - stage: boundary
-      stageUuid: "a00d5753-29ea-8f27-a402-354c7ae59873"
+      stageUuid: "142c2c42-4833-841a-90f3-021f16cb026b"
     - stage: links
-      stageUuid: "f1e64650-4703-81d5-a1d9-d70e73f274d9"
+      stageUuid: "36d094e0-6424-8422-9a40-5043bcd070c5"
     - stage: horo
-      stageUuid: "71cae35e-7734-8c60-80f2-cf11b6ce2747"
+      stageUuid: "4960e36a-a783-8805-a432-77d023d725ff"
     - stage: seal
-      stageUuid: "e33a0443-3b22-8aac-9ebc-9a3bddb9bb0c"
+      stageUuid: "e9bbf2d7-d071-8b1d-9fc4-dbcc8e775496"
     - stage: uuid
-      stageUuid: "567c9806-230e-8549-b41c-ff07b3aa9f6b"
+      stageUuid: "5dbace3b-20a0-8070-a796-332d6f585e65"
 version: 2
 ---
 # hips

@@ -1,63 +1,35 @@
 ---
 name: nose
 description: "Use when reasoning about nose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/nose
-coordinate: nose · 1/base · 53db112a
-contentUuid: "cfead3ae-90c4-5318-a59d-23929eb70af2"
-diamondUuid: "09227006-9efe-88ec-98ea-ced9fdfeb5ae"
-uuid: "53db112a-e477-8a2b-8871-7c01fbbbd314"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/nose"
+coordinate: "vocabulary/nose · 5/round · 51c3f94f"
+contentUuid: "5089d784-12fa-5188-a70d-900809acd11e"
+diamondUuid: "0d096885-feb7-84c8-8c40-129e4a42d246"
+uuid: "51c3f94f-dd88-8996-a16f-b89b55f57d49"
+horo: 5
 typography:
-  partition: nose
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "1f23f337-8b8e-8358-8712-4b4313c571b8"
+  computationUuid: "d09dd550-4d9e-8bb5-b3ce-cfbb4e8259a5"
   stages:
     - stage: path
-      stageUuid: "e3ed2120-8998-85f1-96ac-022c315d7c5b"
+      stageUuid: "e0966087-68bc-8a88-a440-6ed95b26da52"
     - stage: trinity
-      stageUuid: "0f34d70d-bdad-8705-a76a-3b31322a335f"
+      stageUuid: "cf0f0a1d-83ec-8640-aa6e-bb82d4fc7e80"
     - stage: boundary
-      stageUuid: "e4942f3e-4f04-891a-a8e6-abd8cd8f8fc4"
+      stageUuid: "1f0a6a4b-137e-86f4-95dc-a155616e9d62"
     - stage: links
-      stageUuid: "b8280071-74dd-8f18-b3e7-b94063d344df"
+      stageUuid: "56064c24-c1ad-8f92-bd00-3967958f0790"
     - stage: horo
-      stageUuid: "7432f0eb-d98d-8410-bf25-d9240e71f6ee"
+      stageUuid: "a0c21f56-054f-8684-9a40-68d10b423d15"
     - stage: seal
-      stageUuid: "e2748bcb-5b0d-8cf7-b187-af38e54b3532"
+      stageUuid: "68ef0f95-4e4a-87ae-b5cd-90c7726554de"
     - stage: uuid
-      stageUuid: "5bf97bbf-a94e-8fb9-aa48-42a3a43e2821"
+      stageUuid: "f9bf7cd5-6696-85a3-abbe-edef2a410e2e"
 version: 2
 ---
 # nose

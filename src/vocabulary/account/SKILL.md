@@ -1,105 +1,34 @@
 ---
 name: account
 description: "Use when a transaction or GL entry references a chart-of-accounts item — bank account, GL account, cost-center account, liability account. Payload relationTo: 'gl-accounts' or 'bank-accounts'; denormalized fields (accountNumber, accountName) wire via account atom."
-atomPath: vocabulary/account
-coordinate: account · 7/descent · bdc42ba5
-contentUuid: "800f0d63-d5ec-53cc-b878-1e03b3dcb6f1"
-diamondUuid: "c76147f3-d768-8442-9113-e84f7ce9cf2b"
-uuid: "bdc42ba5-9a52-8061-9092-bc6f59b56c5f"
+atomPath: "vocabulary/account"
+coordinate: "vocabulary/account · 7/descent · 6c8d99a7"
+contentUuid: "cd156f90-a1c2-52c8-9a74-cd8ea6276d94"
+diamondUuid: "9b6e904f-83fe-8f1f-a6c8-4c0607ca0d03"
+uuid: "6c8d99a7-df9d-8f68-ac4f-bbacc64f5cc7"
 horo: 7
-bonds:
-  in:
-    - accounting
-    - amount
-    - bank
-    - brokerage
-    - code
-    - deposit
-    - fields
-    - identity
-    - inflow
-    - law
-    - minimum
-    - overdraft
-    - research
-    - wallet
-  out:
-    - accounting
-    - amount
-    - bank
-    - brokerage
-    - code
-    - deposit
-    - fields
-    - identity
-    - inflow
-    - law
-    - minimum
-    - overdraft
-    - research
-    - wallet
 typography:
-  partition: account
-  bondDegree: 43
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 46
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - amount
-    - bank
-    - code
-    - fields
-    - identity
-    - law
-  matrix:
-    - accounting
-    - amount
-    - bank
-    - brokerage
-    - code
-    - deposit
-    - fields
-    - identity
-    - inflow
-    - law
-    - minimum
-    - overdraft
-    - research
-    - wallet
-  backlinks:
-    - accounting
-    - amount
-    - bank
-    - brokerage
-    - code
-    - deposit
-    - fields
-    - identity
-    - inflow
-    - law
-    - minimum
-    - overdraft
-    - research
-    - wallet
 signatures:
-  computationUuid: "53182468-5693-81ad-84eb-aa18857807eb"
+  computationUuid: "0267e3ff-c24f-858e-8597-24a19037e18a"
   stages:
     - stage: path
-      stageUuid: "e1cfc1dd-3557-8880-93a0-f232873f4b3e"
+      stageUuid: "26a014d3-93c7-8a7f-b892-6b93abb4d3b4"
     - stage: trinity
-      stageUuid: "f1e05295-98cf-845d-bc30-b87cf0991cfa"
+      stageUuid: "8c66c57f-8a2e-8f56-b26b-98c85604f8f3"
     - stage: boundary
-      stageUuid: "8c302b9a-e57f-8ba9-939a-78f00bdf998e"
+      stageUuid: "b735212b-550f-8d4b-bcdc-39f8ea6eb167"
     - stage: links
-      stageUuid: "8f2bbec8-21b1-8b84-81f3-195293065d67"
+      stageUuid: "0c80c4d8-d3b8-8cae-8880-50f18dc9a4d6"
     - stage: horo
-      stageUuid: "592ec25d-1f6b-8c5b-9915-22a81bfd6e9a"
+      stageUuid: "a44709ce-f778-8d77-bc1b-b07b0fe2b289"
     - stage: seal
-      stageUuid: "993bb32a-05b2-86be-9fa3-f76fb8e15833"
+      stageUuid: "b822ae3f-c10c-8e16-843d-9871b3b0723a"
     - stage: uuid
-      stageUuid: "95d6420f-ce49-889e-8463-e41081748ef7"
+      stageUuid: "6d891b62-c842-8da2-a43a-cc168e304e20"
 version: 2
 ---
 # account

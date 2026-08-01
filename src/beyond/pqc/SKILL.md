@@ -2,60 +2,22 @@
 name: pqc
 description: "Use when an audit-chain leaf signature must survive a quantum adversary — post-quantum cryptography, the migration target from SHA-256 to lattice signatures (ML-DSA / SLH-DSA, FIPS 204) so a future Shor-capable machine cannot forge the [[signature]] that seals the [[audit]] chain."
 atomPath: "beyond/pqc"
-coordinate: "beyond/pqc · 7/descent · b826b476"
-contentUuid: "ce1cc9bb-8528-5ebd-ade5-7d5e6c061aad"
-diamondUuid: "d5c2c6f0-507b-8964-92a8-e334d50633f3"
-uuid: "b826b476-537a-8276-a89c-2e7b7f27fbad"
+coordinate: "beyond/pqc · 7/descent · 0877e9bd"
+contentUuid: "1a2c76a0-7db9-508e-8dc5-1f23afa82b55"
+diamondUuid: "265da3d9-d2ee-824f-95bf-c48d7c8a34c7"
+uuid: "0877e9bd-df84-833e-935b-ef0319780496"
 horo: 7
-bonds:
-  in:
-    - audit
-    - beyond
-    - integrity
-    - law
-    - quantum
-    - signature
-  out:
-    - audit
-    - beyond
-    - integrity
-    - law
-    - quantum
-    - signature
 typography:
   partition: beyond
-  bondDegree: 18
-  neighbors: []
+  bondDegree: 21
 standards:
   - "NIST FIPS 203 ML-KEM (Module-Lattice Key Encapsulation)"
   - "NIST FIPS 204 ML-DSA (Module-Lattice Digital Signature)"
   - "NIST SP 800-208 stateful-hash-based-signatures"
   - "NIST-SP-800-63"
 bindings: []
-neighbors:
-  wikilink:
-    - audit
-    - beyond
-    - integrity
-    - law
-    - quantum
-    - signature
-  matrix:
-    - audit
-    - beyond
-    - integrity
-    - law
-    - quantum
-    - signature
-  backlinks:
-    - audit
-    - beyond
-    - integrity
-    - law
-    - quantum
-    - signature
 signatures:
-  computationUuid: "60abb9ee-abe0-8956-966c-9a4b41e92d3c"
+  computationUuid: "4632d9e8-2218-82d0-8c22-169b2650a487"
   stages:
     - stage: path
       stageUuid: "f85f7d6a-4941-80ff-a861-f7d878cf2dcf"
@@ -66,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "ae81fd0e-fa93-8bb5-85dc-ac330c404a73"
     - stage: horo
-      stageUuid: "af838a4c-a6ba-8b9d-be8c-cf0f0e7c1a7e"
+      stageUuid: "b1776117-2863-88ef-b74a-fdd07fa965d3"
     - stage: seal
       stageUuid: "398ff010-4d1b-8d78-86d4-c6b518e1faac"
     - stage: uuid
-      stageUuid: "7f98e3b8-a874-8b2c-8271-2163efd358dc"
+      stageUuid: "fb5e72c0-6a13-8651-aa3c-21c7557602a9"
 version: 2
 ---
 # beyond/pqc — post-quantum signatures (the quantum-proof seal)

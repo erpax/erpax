@@ -2,34 +2,14 @@
 name: mandates
 description: "Use when managing SEPA Direct Debit mandates (pain.008) — mandate id, debtor IBAN/BIC, creditor identifier, signature date, CORE/B2B instrument, sequence-state (FRST→RCUR), 36-month expiry rule, revocation, and linkage to PaymentRuns. The EPC130-08 SDD mandate register."
 atomPath: "media/sepa/mandates"
-coordinate: "media/sepa/mandates · 7/descent · 53652caf"
-contentUuid: "b90a6839-63f4-51fd-b919-18b17cafb01a"
-diamondUuid: "15e4619a-ac85-8dd4-9592-88b4440b31b5"
-uuid: "53652caf-5c1e-85dc-acc8-60298034735c"
+coordinate: "media/sepa/mandates · 7/descent · fbe00e8d"
+contentUuid: "b5bfea3b-d33f-541d-b527-3efa5c5f93af"
+diamondUuid: "b83e872a-8e4d-88ae-a602-64b5e99fe65c"
+uuid: "fbe00e8d-1400-8145-af98-cce9d8ef1c3f"
 horo: 7
-bonds:
-  in:
-    - accounting
-    - horo
-    - identity
-    - law
-    - proof
-    - runs
-    - standard
-    - transaction
-  out:
-    - accounting
-    - horo
-    - identity
-    - law
-    - proof
-    - runs
-    - standard
-    - transaction
 typography:
   partition: media
   bondDegree: 24
-  neighbors: []
 standards:
   - "EPC130-08 sepa-direct-debit-rulebook"
   - "GDPR Art.6(1)(b) lawful-basis-contract"
@@ -46,35 +26,8 @@ standards:
   - "US-GAAP ASC-310 receivables"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - horo
-    - identity
-    - law
-    - proof
-    - standard
-    - transaction
-  matrix:
-    - accounting
-    - horo
-    - identity
-    - law
-    - proof
-    - runs
-    - standard
-    - transaction
-  backlinks:
-    - accounting
-    - horo
-    - identity
-    - law
-    - proof
-    - runs
-    - standard
-    - transaction
 signatures:
-  computationUuid: "ac7e89ed-8c03-8592-9081-4567f80029ec"
+  computationUuid: "98769e95-5b7a-87b3-b68f-c619909822d9"
   stages:
     - stage: path
       stageUuid: "2d8ed2c6-c904-862e-9179-375a89532ffa"
@@ -85,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "df826c80-5d83-856d-b715-d789cbed1856"
     - stage: horo
-      stageUuid: "6d392bcc-ac41-88f3-a75a-81c8b75dbda4"
+      stageUuid: "34fb9eb4-9a72-841a-95cb-c061ffe20c85"
     - stage: seal
       stageUuid: "a7a20b80-2a12-8364-94c6-3c4ffa0a4dd1"
     - stage: uuid
-      stageUuid: "f312d873-d5e4-8a21-99b5-b8fd572f8cfd"
+      stageUuid: "3da5e2cc-a8c5-8564-860d-6bad2f609ba0"
 version: 2
 ---
 # sepa-mandates

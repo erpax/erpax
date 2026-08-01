@@ -1,63 +1,35 @@
 ---
 name: maternity
 description: "Use when reasoning about maternity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/maternity
-coordinate: maternity · 5/round · 4853e530
-contentUuid: "4c4540e3-4375-56c5-b469-23c43e98ceaf"
-diamondUuid: "81473bdc-591c-8284-96ef-2a4bbe25202d"
-uuid: "4853e530-15dc-8a32-88ea-6e8a026fccdb"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/maternity"
+coordinate: "vocabulary/maternity · 8/crest · 23a04186"
+contentUuid: "ac555ccd-dbfc-59cd-9c8f-3abad3b8fbe6"
+diamondUuid: "c7a3c402-d397-8843-82ee-40cb2ba07f14"
+uuid: "23a04186-6ce9-88a0-9432-5f2ba998a7ce"
+horo: 8
 typography:
-  partition: maternity
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "ad446d44-be14-89ad-b396-d0f966e827d1"
+  computationUuid: "21bb2955-713d-8603-ba66-e380c4dee2ec"
   stages:
     - stage: path
-      stageUuid: "4a97de68-4b3a-840c-8608-545e3fc7b57a"
+      stageUuid: "b8a4c258-71c5-85d2-9e09-24a8b2cb337e"
     - stage: trinity
-      stageUuid: "77774582-7a3f-806f-a187-29c954701ba6"
+      stageUuid: "986950fb-319a-8ba4-a24c-e0b1faa6b4a1"
     - stage: boundary
-      stageUuid: "4455f8b2-9f7d-8149-ad08-c17d2882f47f"
+      stageUuid: "049332c3-7d72-8c48-bcdf-21b3054fd071"
     - stage: links
-      stageUuid: "eca30489-5097-81f9-9317-d7b460fe49f0"
+      stageUuid: "79ad4c51-7315-8b6f-b55d-866b32045731"
     - stage: horo
-      stageUuid: "54a5f638-0a1c-8843-a68f-2c4f68684df6"
+      stageUuid: "f9d82274-f2f8-8790-b077-ce19290f461c"
     - stage: seal
-      stageUuid: "01b90cab-88a3-8e9f-b603-f206c838bf08"
+      stageUuid: "cdcd3e5e-c788-8ec4-b74c-a04f248febc9"
     - stage: uuid
-      stageUuid: "749303fd-1ead-8241-85f3-cad436a14a55"
+      stageUuid: "754f80d4-66fc-8aff-97f6-b7561bf51d62"
 version: 2
 ---
 # maternity

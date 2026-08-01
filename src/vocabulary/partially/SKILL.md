@@ -1,63 +1,35 @@
 ---
 name: partially
 description: "Use when reasoning about partially as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/partially
-coordinate: partially · 8/crest · 49c5a872
-contentUuid: "5103508b-d669-5778-acf8-7fe23b7598d9"
-diamondUuid: "0ef02ef6-a0dd-8d15-9c0e-028903cc83e9"
-uuid: "49c5a872-0113-82cc-ad2b-acc345c889a6"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/partially"
+coordinate: "vocabulary/partially · 2/share · 8aa2777b"
+contentUuid: "9dd1ef9b-e5c0-5347-9b60-44e4bcd8dd0d"
+diamondUuid: "2f750e44-3bd4-87ab-a4a0-cd9d53f832b7"
+uuid: "8aa2777b-7587-8250-a65f-c2b3a9a8eef2"
+horo: 2
 typography:
-  partition: partially
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "71bfb456-6cae-8bf1-b3dc-6e4e323cdd28"
+  computationUuid: "ddce7598-992a-87a6-b3a7-2780a59bcbc6"
   stages:
     - stage: path
-      stageUuid: "723098f0-d1f8-88cf-9949-7be9d1597f9e"
+      stageUuid: "b0f16b1c-b43d-80b2-86b7-af9516b99682"
     - stage: trinity
-      stageUuid: "5d2576fd-8a4b-8af1-9c85-4017a4e28a5c"
+      stageUuid: "dfd59433-6102-8cff-a10e-a9cd37502c5a"
     - stage: boundary
-      stageUuid: "3d47df15-b9b0-8680-9522-af6a99bc2008"
+      stageUuid: "ccce6e2d-9eb4-836d-87fe-9b8b08bc1709"
     - stage: links
-      stageUuid: "42487927-da5a-8d66-871a-edf219dc2705"
+      stageUuid: "741258a2-9855-85b5-80c4-524044f7ad76"
     - stage: horo
-      stageUuid: "7d680b82-fb95-8358-bd01-0e61704a020f"
+      stageUuid: "c04e860e-72a1-8b51-b25b-8a9ce6e6b559"
     - stage: seal
-      stageUuid: "e505615b-8644-81a2-ac9d-ce7a8be856f6"
+      stageUuid: "b219f43e-0b30-8448-b0ba-dbe6f1bb6cc3"
     - stage: uuid
-      stageUuid: "ed766be0-bb07-80e5-80d7-5a0957e62f2b"
+      stageUuid: "7ea29522-abb1-897f-a169-407d32b4c00b"
 version: 2
 ---
 # partially

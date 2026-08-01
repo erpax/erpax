@@ -1,63 +1,35 @@
 ---
 name: offline
 description: "Use when reasoning about offline as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/offline
-coordinate: offline · 1/base · 32fa43df
-contentUuid: "71f40b1c-0329-5ddc-896c-b2df81460e19"
-diamondUuid: "5c13e1c4-2571-89d2-bbc7-055ad5722161"
-uuid: "32fa43df-8812-8ab8-8b89-01853d6ad0b7"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/offline"
+coordinate: "vocabulary/offline · 7/descent · d9da0e86"
+contentUuid: "191deed5-5afd-5ca2-aecb-127e3408e621"
+diamondUuid: "f84f9684-9c0f-8c9a-bab3-fa3dbc7133b9"
+uuid: "d9da0e86-da6f-8b75-80cf-e2887e68e586"
+horo: 7
 typography:
-  partition: offline
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "9268054d-bfad-8538-a517-58bf8d37bcfb"
+  computationUuid: "85780a1d-ccc0-8116-be30-575446cb0d32"
   stages:
     - stage: path
-      stageUuid: "f4290090-d050-8a9a-bfe7-bcad87bb0f96"
+      stageUuid: "65849fc8-db74-844e-b428-a743575733dd"
     - stage: trinity
-      stageUuid: "63564ba4-26ac-8c80-a14f-ddff194a1e11"
+      stageUuid: "92d9903c-33dd-8afa-8440-128e14d09a06"
     - stage: boundary
-      stageUuid: "1e6c032d-42cc-8a29-b18d-247a1bdcb854"
+      stageUuid: "1ebddeb4-c157-86f7-9a27-48360fd9087f"
     - stage: links
-      stageUuid: "d43c5588-a22e-840a-81f5-f0152b991c14"
+      stageUuid: "6544fc0c-00cd-8bdc-b53b-1e52db3261cd"
     - stage: horo
-      stageUuid: "ea06e17f-35d7-842d-b4e1-7804050fd322"
+      stageUuid: "a6f91333-a127-8d6a-b34d-834cd0802178"
     - stage: seal
-      stageUuid: "641831eb-7466-8061-881c-4b8dde861cef"
+      stageUuid: "0c27db86-bb97-8066-8690-1121d9202779"
     - stage: uuid
-      stageUuid: "5919e758-1314-85af-9b78-9af2661f4e55"
+      stageUuid: "7c97b1d2-4ea6-8898-b839-e109124ecd5f"
 version: 2
 ---
 # offline

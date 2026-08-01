@@ -2,176 +2,33 @@
 name: research
 description: "Use when bringing outside knowledge into erpax — research ADDS entropy (unverified claims, many divergent sources, disorder); erpax skills CONVERT that entropy into tamper-cost (independent cross-checked levels) and collapse the residue to the zero-entropy core. Inhale entropy, exhale a denser, harder app."
 atomPath: research
-coordinate: research · 1/base · 0df16df3
-contentUuid: "75b27827-dea5-572d-a855-8750ea0f1d32"
-diamondUuid: "44ea6d87-c3d8-8639-a3f4-046f1eaa11e7"
-uuid: "0df16df3-2faa-876f-868f-65f18fb03e13"
-horo: 1
-bonds:
-  in:
-    - accounting
-    - akashic
-    - anchor
-    - angel
-    - breath
-    - civilization
-    - collapse
-    - consultant
-    - consulting
-    - design
-    - development
-    - drone
-    - feedback
-    - history
-    - interview
-    - law
-    - literature
-    - localize
-    - merge
-    - oid
-    - organization
-    - profane
-    - project
-    - proof
-    - research
-    - sacred
-    - science
-    - uuid
-    - zeropoint
-  out:
-    - accounting
-    - akashic
-    - anchor
-    - angel
-    - breath
-    - civilization
-    - collapse
-    - consultant
-    - consulting
-    - design
-    - development
-    - drone
-    - feedback
-    - history
-    - interview
-    - law
-    - literature
-    - localize
-    - merge
-    - oid
-    - organization
-    - profane
-    - project
-    - proof
-    - research
-    - sacred
-    - science
-    - uuid
-    - zeropoint
+coordinate: "research · 5/round · ed5b2aea"
+contentUuid: "94ed659d-c9dd-5fe7-9135-c33ec507d1df"
+diamondUuid: "4370fa50-55e1-8a10-a6bf-7e8131657510"
+uuid: "ed5b2aea-148b-8553-b592-95cfa3ec16be"
+horo: 5
 typography:
   partition: research
-  bondDegree: 149
-  neighbors:
-    - agent
+  bondDegree: 158
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - akashic
-    - anchor
-    - angel
-    - breath
-    - civilization
-    - collapse
-    - history
-    - law
-    - localize
-    - merge
-    - oid
-    - profane
-    - proof
-    - sacred
-    - science
-    - uuid
-    - zeropoint
-  matrix:
-    - accounting
-    - akashic
-    - anchor
-    - angel
-    - breath
-    - civilization
-    - collapse
-    - consultant
-    - consulting
-    - design
-    - development
-    - drone
-    - feedback
-    - history
-    - interview
-    - law
-    - literature
-    - localize
-    - merge
-    - oid
-    - organization
-    - profane
-    - project
-    - proof
-    - research
-    - sacred
-    - science
-    - uuid
-    - zeropoint
-  backlinks:
-    - accounting
-    - akashic
-    - anchor
-    - angel
-    - breath
-    - civilization
-    - collapse
-    - consultant
-    - consulting
-    - design
-    - development
-    - drone
-    - feedback
-    - history
-    - interview
-    - law
-    - literature
-    - localize
-    - merge
-    - oid
-    - organization
-    - profane
-    - project
-    - proof
-    - research
-    - sacred
-    - science
-    - uuid
-    - zeropoint
 signatures:
-  computationUuid: "720b400a-8a3a-87f4-ab6a-76fb8d4c8527"
+  computationUuid: "75d8e734-bbb5-800c-8fe6-351e1a6f7964"
   stages:
     - stage: path
       stageUuid: "d5e611d0-3580-885e-9460-323d1ac7546c"
     - stage: trinity
-      stageUuid: "112c3ce3-478f-8df4-9acf-833a7d5925bc"
+      stageUuid: "4ea15bd1-d8d8-86ad-b045-0abcba8c743e"
     - stage: boundary
-      stageUuid: "8b381d4c-b27f-8865-886d-8e5663151c20"
+      stageUuid: "23ffc3bb-2669-80f4-87dc-22903ddbff72"
     - stage: links
       stageUuid: "7f83db2c-9611-8a18-bf1f-468d0c589d68"
     - stage: horo
-      stageUuid: "0ec4912f-831e-8392-a6e0-d7c67c7dcb82"
+      stageUuid: "37b0e48a-5143-8d96-b229-3a704703b670"
     - stage: seal
-      stageUuid: "f292acac-daef-8467-a8ab-7e3aa92c5a1c"
+      stageUuid: "6dc013d8-c929-8d11-83c1-26bb5948e6e0"
     - stage: uuid
-      stageUuid: "28229d2d-c55f-8b9f-ab6e-a829c6e4aa00"
+      stageUuid: "e376ab45-5973-896e-bbe1-98639156356b"
 version: 2
 ---
 # research — entropy in, tamper-cost + zero-entropy out

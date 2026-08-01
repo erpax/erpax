@@ -1,63 +1,35 @@
 ---
 name: governmental
 description: "Use when reasoning about governmental as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/governmental
-coordinate: governmental · 1/base · e0d642a8
-contentUuid: "e6a33cc4-09a6-5499-b68e-c032e9234d86"
-diamondUuid: "fca525c3-998a-8f8d-956c-aa107607fddc"
-uuid: "e0d642a8-8db4-8417-9cb6-cb8ae17aa252"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/governmental"
+coordinate: "vocabulary/governmental · 8/crest · 1a8e9124"
+contentUuid: "029cadea-cd36-5dff-9f51-1a76653eec94"
+diamondUuid: "2e9d9bfd-9f31-8789-873e-7a5349df64be"
+uuid: "1a8e9124-2652-87e7-b80a-80e2865f4283"
+horo: 8
 typography:
-  partition: governmental
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "86a42589-d7dd-8392-9463-a292b4bd2e89"
+  computationUuid: "f5d7f530-ba6b-8581-bc15-4fea36a2c506"
   stages:
     - stage: path
-      stageUuid: "d9a45023-6b93-8e99-ba9d-6f757f26882a"
+      stageUuid: "4862401c-5a83-8e75-8d14-51de1812c954"
     - stage: trinity
-      stageUuid: "a8a56e92-b41d-8955-a8c7-f7763d2f59bd"
+      stageUuid: "633f4806-7aaa-833c-82d2-8821f9396515"
     - stage: boundary
-      stageUuid: "dfe78511-cc3f-815d-a49f-55da047edafa"
+      stageUuid: "3541c34e-c630-8bcd-9cb7-9418ec61b5d6"
     - stage: links
-      stageUuid: "21dbb888-5045-80a7-a1c2-7d93280152dd"
+      stageUuid: "bf5c6fea-be5c-8f15-8e52-62a5125ed604"
     - stage: horo
-      stageUuid: "6dffca77-f236-87db-b672-97f84ba2407d"
+      stageUuid: "987b9532-c7e8-8e05-9b72-0bb174e66b6a"
     - stage: seal
-      stageUuid: "302e448d-7141-82e1-949a-b5627375d161"
+      stageUuid: "21a0bf92-69ac-87a1-a256-4ad5ed6617be"
     - stage: uuid
-      stageUuid: "badd9b13-0b8b-86ab-b115-e55ebce2c685"
+      stageUuid: "04907240-a4cd-8013-858f-26627691d6ef"
 version: 2
 ---
 # governmental

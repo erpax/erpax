@@ -2,61 +2,19 @@
 name: resource
 description: "Use when reasoning about resource as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: resource
-coordinate: resource · 7/descent · fe4aad7f
-contentUuid: "7c4459e0-eba0-5362-ab19-f6ef587ff701"
-diamondUuid: "83013ea1-08e5-8d83-920b-161606008dfb"
-uuid: "fe4aad7f-be3e-8398-a047-dc9b8d5ac20c"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - drain
-    - law
-    - learning
-    - merge
-    - sti
-    - type
-  out:
-    - collapse
-    - drain
-    - law
-    - learning
-    - merge
-    - sti
-    - type
+coordinate: "resource · 4/weave · 3e1f408a"
+contentUuid: "83911afd-9fab-58ea-b7c1-ea27fbd9d478"
+diamondUuid: "a09fc57a-6791-8286-824c-4deeb9de145a"
+uuid: "3e1f408a-2f6a-8626-a46c-5e737ec386a2"
+horo: 4
 typography:
   partition: resource
   bondDegree: 22
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - learning
-    - merge
-    - sti
-    - type
-  matrix:
-    - collapse
-    - drain
-    - law
-    - learning
-    - merge
-    - sti
-    - type
-  backlinks:
-    - collapse
-    - drain
-    - law
-    - learning
-    - merge
-    - sti
-    - type
 signatures:
-  computationUuid: "c62e1857-81a4-8c62-9818-b305af361349"
+  computationUuid: "e38cd659-6a2e-89be-b2e5-df9ead07c5e9"
   stages:
     - stage: path
       stageUuid: "468926c0-c453-8e18-a89b-668f4bb7f624"
@@ -67,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bfa16bcf-88f6-8a92-a7cc-5f5336956a2d"
     - stage: horo
-      stageUuid: "737fb09f-0a80-8db4-bfeb-73cd8827b524"
+      stageUuid: "120a4173-0b43-81f7-93ce-46bd4c70bea9"
     - stage: seal
-      stageUuid: "8c6d6c2a-8782-899c-8d1a-1a522fbf7118"
+      stageUuid: "bfc58060-8a54-83f1-a39a-6b04bd880a02"
     - stage: uuid
-      stageUuid: "4dac989f-7442-8a15-b34f-0905be8fde48"
+      stageUuid: "a5b5a9f0-394c-8374-923e-d58466431f27"
 version: 2
 ---
 # resource

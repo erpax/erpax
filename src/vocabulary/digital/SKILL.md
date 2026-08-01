@@ -1,133 +1,35 @@
 ---
 name: digital
 description: "Use when reasoning about digital as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/digital
-coordinate: digital · 7/descent · cd7cee31
-contentUuid: "ca0c3ae6-c2a8-5948-a6e4-d4497328448a"
-diamondUuid: "bde22944-6a75-8a1c-8445-b1bb61d980c1"
-uuid: "cd7cee31-2b23-88cb-adfe-702c24bd25ac"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - document
-    - enumeration
-    - gs
-    - has
-    - iptc
-    - law
-    - link
-    - merge
-    - note
-    - permission
-    - platform
-    - presentation
-    - source
-    - spreadsheet
-    - sti
-    - text
-    - type
-  out:
-    - collapse
-    - document
-    - enumeration
-    - gs
-    - has
-    - iptc
-    - law
-    - link
-    - merge
-    - note
-    - permission
-    - platform
-    - presentation
-    - source
-    - spreadsheet
-    - sti
-    - text
-    - type
+atomPath: "vocabulary/digital"
+coordinate: "vocabulary/digital · 2/share · c1e4929f"
+contentUuid: "7adaf830-2a89-500a-819b-7ae6cf50145e"
+diamondUuid: "4df526bb-bec5-85b6-ac9a-e8512944afb2"
+uuid: "c1e4929f-eef0-8a19-a953-e86997d44717"
+horo: 2
 typography:
-  partition: digital
-  bondDegree: 65
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 67
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - document
-    - enumeration
-    - gs
-    - has
-    - iptc
-    - law
-    - link
-    - merge
-    - note
-    - permission
-    - platform
-    - presentation
-    - source
-    - spreadsheet
-    - sti
-    - text
-    - type
-  matrix:
-    - collapse
-    - document
-    - enumeration
-    - gs
-    - has
-    - iptc
-    - law
-    - link
-    - merge
-    - note
-    - permission
-    - platform
-    - presentation
-    - source
-    - spreadsheet
-    - sti
-    - text
-    - type
-  backlinks:
-    - collapse
-    - document
-    - enumeration
-    - gs
-    - has
-    - iptc
-    - law
-    - link
-    - merge
-    - note
-    - permission
-    - platform
-    - presentation
-    - source
-    - spreadsheet
-    - sti
-    - text
-    - type
 signatures:
-  computationUuid: "b494ba21-b601-8c38-8971-6a1216a3a7d5"
+  computationUuid: "0d70760c-2e92-87ee-b50a-d9e55d7297a7"
   stages:
     - stage: path
-      stageUuid: "c5903104-493b-8b8f-bc85-3f5ef3c0f3bc"
+      stageUuid: "5f7da672-15d2-8894-8ccd-a415e437e19c"
     - stage: trinity
-      stageUuid: "8551bc9f-eb8a-82ec-ae40-f0c2d62029fc"
+      stageUuid: "6a387949-0d39-80d0-8686-cb082a3ec63f"
     - stage: boundary
-      stageUuid: "e6bda2dd-a4b2-862e-a8e5-4fea5e504998"
+      stageUuid: "59baff1e-a080-88ba-ae18-c421d6445948"
     - stage: links
-      stageUuid: "830aed25-3c89-8c51-9256-93f7b5c8d8d3"
+      stageUuid: "57e4dbbc-bc3a-885e-9fb5-6d85d9c97877"
     - stage: horo
-      stageUuid: "680f0d0e-f02d-8735-b5e3-de23394618d9"
+      stageUuid: "65b4326c-5190-8f8e-a47b-18fb7f72db1f"
     - stage: seal
-      stageUuid: "86c925d9-e488-8e9c-897a-831e0f527278"
+      stageUuid: "36dc8cd0-1cb3-85db-87ec-4d52056bd741"
     - stage: uuid
-      stageUuid: "96425d0a-98e0-8c20-b7ce-cde99ca4fb53"
+      stageUuid: "e2d522ee-e030-8c63-9690-725ac894e05e"
 version: 2
 ---
 # digital

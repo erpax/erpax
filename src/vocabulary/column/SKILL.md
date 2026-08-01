@@ -1,72 +1,35 @@
 ---
 name: column
 description: "Use when reasoning about column as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/column
-coordinate: column · 7/descent · 28bd1655
-contentUuid: "319e9eca-2339-5250-964b-fd57dd405c1b"
-diamondUuid: "4c5507a9-1969-87cf-b833-23e9c4274ff0"
-uuid: "28bd1655-ddd1-8896-9e0f-c181dc60b017"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - print
-    - sql
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - print
-    - sql
-    - sti
+atomPath: "vocabulary/column"
+coordinate: "vocabulary/column · 2/share · 5a0001ac"
+contentUuid: "a5dde780-e664-5152-8388-eb10b0a5d675"
+diamondUuid: "5e088286-b1bf-8b59-acf2-533c4daf4264"
+uuid: "5a0001ac-b766-86bb-9c28-f5bfab99c426"
+horo: 2
 typography:
-  partition: column
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - print
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - print
-    - sql
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - print
-    - sql
-    - sti
 signatures:
-  computationUuid: "d56a69fb-750d-81ca-a355-f26c35b39f45"
+  computationUuid: "cc362716-9994-896b-bc18-dcf90798be1c"
   stages:
     - stage: path
-      stageUuid: "600149b4-c576-877a-a7a1-a433a42c8c72"
+      stageUuid: "5af2f9fc-e2bc-8078-82a9-aae77d6a5466"
     - stage: trinity
-      stageUuid: "43040e46-2e81-807a-babe-7293738b00cf"
+      stageUuid: "f46bdb04-348d-8b93-b706-5e632c5970f6"
     - stage: boundary
-      stageUuid: "e6174686-f744-8576-b3a7-ec9bf0ea93b7"
+      stageUuid: "8dc7f691-9332-84af-af50-78fde5af70f1"
     - stage: links
-      stageUuid: "347cc8d4-0cb8-8d6e-a21d-08e62d5af191"
+      stageUuid: "e0ceccca-5252-8d24-bec4-c5fee4f38d4e"
     - stage: horo
-      stageUuid: "2183ddf9-7647-8e6f-b406-2d98c7fddea9"
+      stageUuid: "58e39993-5a49-82ed-a3ec-5298fa6f18a1"
     - stage: seal
-      stageUuid: "6e7c1b3c-b113-896f-9be7-7485928f6187"
+      stageUuid: "22e9df0c-abe4-8f2e-aaed-7bd9fd4b85ac"
     - stage: uuid
-      stageUuid: "9fdf8c85-e268-8299-bc66-33206f5fefdf"
+      stageUuid: "4d8c0d01-10d5-8327-8070-0dcdae0bcb4e"
 version: 2
 ---
 # column

@@ -1,63 +1,35 @@
 ---
 name: neuro
 description: "Use when reasoning about neuro as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/neuro
-coordinate: neuro · 4/weave · 80dce77f
-contentUuid: "482de903-ecb3-5483-b5b8-dac09bbd3d02"
-diamondUuid: "26b37676-76e2-83a5-a2a7-1e4638ada808"
-uuid: "80dce77f-6538-8c51-8753-ac907f01a92b"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/neuro"
+coordinate: "vocabulary/neuro · 5/round · 0144895e"
+contentUuid: "4c389246-3ae8-575d-b285-a2c368fbf052"
+diamondUuid: "ad4a91ae-827e-8cb3-9f43-7e28d28560c3"
+uuid: "0144895e-36df-8540-aad0-ba10245e9b9a"
+horo: 5
 typography:
-  partition: neuro
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "ad74af7f-ec3e-8bda-b3ff-b76f5879206a"
+  computationUuid: "c1e61868-2fd7-87ff-a9be-79ce9746908c"
   stages:
     - stage: path
-      stageUuid: "f21a570f-4fe4-845c-9d79-63387e822e82"
+      stageUuid: "7ad44ae0-48c9-8829-a953-c28a5d227e93"
     - stage: trinity
-      stageUuid: "10dee1fc-43bd-82f3-9024-702f4cfb0573"
+      stageUuid: "08d323ae-042a-8840-85a6-471e97eeb103"
     - stage: boundary
-      stageUuid: "44fcb5bc-d284-8978-b58f-58452a99d061"
+      stageUuid: "527b51b9-0fbe-84cd-b97c-b67d9163e4bb"
     - stage: links
-      stageUuid: "1af91eaa-f06f-8de1-a103-5073a5cd0fb5"
+      stageUuid: "5e86d71c-cd1f-8969-941d-340bc201c543"
     - stage: horo
-      stageUuid: "2b327ba1-f923-882e-9347-9fabe216e7a5"
+      stageUuid: "cc3debe7-1eb0-8759-81dd-b43e48eb17e5"
     - stage: seal
-      stageUuid: "5d2934dd-b5ac-8124-abd3-14e64fbd6fd9"
+      stageUuid: "a57bab09-9673-8cf0-ab0f-d704f1458d1d"
     - stage: uuid
-      stageUuid: "ae693fd9-7fb7-8c73-8d42-9f7fa0012bf6"
+      stageUuid: "07172542-65d5-8ce2-a4d6-b4fefbf4ee09"
 version: 2
 ---
 # neuro

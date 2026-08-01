@@ -1,53 +1,35 @@
 ---
 name: circle
 description: Use when reasoning about circle — A circle is the circular region of a specified radius centered at a specified latitude and longitude. A circle is expressed as a pair followed by a radius in meters.
-atomPath: vocabulary/circle
-coordinate: circle · 1/base · 7d527585
-contentUuid: "f2bd22ac-b42f-5807-b920-371894b48aaf"
-diamondUuid: "f8b428ad-5423-869c-819f-8a56881b3261"
-uuid: "7d527585-cc6a-8c2a-a84f-babb3247d5ad"
+atomPath: "vocabulary/circle"
+coordinate: "vocabulary/circle · 1/base · 4aed30d4"
+contentUuid: "308d9311-a339-5a6c-a670-4af89560f545"
+diamondUuid: "aa82bb24-13b9-81c6-8fd3-1d995e06c22c"
+uuid: "4aed30d4-e0a3-84d9-828e-fa15115bb383"
 horo: 1
-bonds:
-  in:
-    - geo
-    - law
-  out:
-    - geo
-    - law
 typography:
-  partition: circle
+  partition: vocabulary
   bondDegree: 7
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - geo
-    - law
-  matrix:
-    - geo
-    - law
-  backlinks:
-    - geo
-    - law
 signatures:
-  computationUuid: "26c07b00-48c2-8f60-b3db-f7b665578ada"
+  computationUuid: "ea2f54af-1c2a-87b1-9a45-eaf92f41fbfa"
   stages:
     - stage: path
-      stageUuid: "9d36ffe4-64e7-8670-9e14-d15ccecb9802"
+      stageUuid: "48597822-5ccf-8f85-b6fb-8f8c5fbd9940"
     - stage: trinity
-      stageUuid: "6b107ea7-3b41-8017-b41f-8d298ceac900"
+      stageUuid: "f5f8013c-dbed-8d49-a5fd-d634a424b61f"
     - stage: boundary
-      stageUuid: "82662cad-0021-8048-a0dd-0a8073cd0841"
+      stageUuid: "21b8c95b-91ec-8ab0-af6b-0da3d55bbebd"
     - stage: links
-      stageUuid: "cab8fd8f-8183-827b-9108-71b4beea7e0d"
+      stageUuid: "8fa524ae-bf5a-8d69-b693-3e1e3d9b469c"
     - stage: horo
-      stageUuid: "c97a4705-2660-8f89-893c-c0e6707c6ee8"
+      stageUuid: "33dfe37e-c57b-85f0-a28b-180a7cbaba9e"
     - stage: seal
-      stageUuid: "8c4e09c4-4509-8153-bee4-c739a4357937"
+      stageUuid: "f8c0acbc-e124-87e5-843f-f05ee7595f52"
     - stage: uuid
-      stageUuid: "7ceaf675-735b-89c1-bac3-8842036abde2"
+      stageUuid: "be267e95-541b-8fe1-8ce6-6c67c4743607"
 version: 2
 ---
 # circle

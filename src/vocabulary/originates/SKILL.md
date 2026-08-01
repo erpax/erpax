@@ -1,53 +1,35 @@
 ---
 name: originates
 description: "Use when reasoning about originates — The vasculature the lymphatic structure originates, or afferents, from."
-atomPath: vocabulary/originates
-coordinate: originates · 1/base · 8e6219c9
-contentUuid: "d34d1a37-05be-5f1a-b7ca-47dfc151bce5"
-diamondUuid: "8384050e-065a-8a31-b5a9-f786e0e30a41"
-uuid: "8e6219c9-19d8-8ded-aba9-79699f1e5c3c"
-horo: 1
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/originates"
+coordinate: "vocabulary/originates · 2/share · fea9d231"
+contentUuid: "781b01e3-572f-58fa-b1c3-bbb4be9bcbdd"
+diamondUuid: "c3dd2cc3-6874-8fe8-9ad4-5856a370c130"
+uuid: "fea9d231-9d39-86c2-a265-1a41eb2caafe"
+horo: 2
 typography:
-  partition: originates
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "7ecad105-9a69-8368-be2d-078b9b8bbaab"
+  computationUuid: "445d2a41-f243-8d6b-953d-f9efd2bf6ec5"
   stages:
     - stage: path
-      stageUuid: "15080bbd-295e-8777-8a55-e25dba09280c"
+      stageUuid: "e936187f-860f-82fb-9b68-46e48456448f"
     - stage: trinity
-      stageUuid: "c24297ba-803b-8f87-a0e0-b952d765861f"
+      stageUuid: "71daf0e1-ff55-8533-8698-5b66924227fe"
     - stage: boundary
-      stageUuid: "3c28e918-4566-8e73-98c9-2277d520b50d"
+      stageUuid: "ffa72aad-8294-8326-8b80-9f03dab662ee"
     - stage: links
-      stageUuid: "35d9524b-8a89-8ee5-9556-6f627e714fed"
+      stageUuid: "6cf52303-bef9-8871-9cc7-92d15818c29e"
     - stage: horo
-      stageUuid: "1ee8df30-1558-8ea8-98ee-0916bae4cc79"
+      stageUuid: "3ae32033-b5a0-87ea-9e1f-eb998b4d0b48"
     - stage: seal
-      stageUuid: "2598b1f0-a92f-8d19-966f-044d93f99b3b"
+      stageUuid: "c2244055-e9d6-8658-a9d0-27a5d7e51108"
     - stage: uuid
-      stageUuid: "9e622901-55c6-8067-8732-6c88ec95ba37"
+      stageUuid: "a2b16b47-309a-8968-9b8d-2292c26459c0"
 version: 2
 ---
 # originates

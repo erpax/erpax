@@ -1,73 +1,35 @@
 ---
 name: gears
 description: "Use when reasoning about gears as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/gears
-coordinate: gears · 7/descent · 310908ae
-contentUuid: "9647fc32-9e08-519f-974a-8df7d7b02d79"
-diamondUuid: "33ece379-5c4c-8105-a61a-83a3c893de1c"
-uuid: "310908ae-b9fc-8880-98f7-c932376cd880"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - forward
-    - law
-    - merge
-    - number
-    - sti
-  out:
-    - collapse
-    - forward
-    - law
-    - merge
-    - number
-    - sti
+atomPath: "vocabulary/gears"
+coordinate: "vocabulary/gears · 1/base · 2a109cf1"
+contentUuid: "004190db-b5c8-5abf-bdd9-f52d740ebb69"
+diamondUuid: "a299de15-fec6-8ed1-aeb9-46d92faf2798"
+uuid: "2a109cf1-bd52-895e-bbdb-2b21abf66199"
+horo: 1
 typography:
-  partition: gears
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - forward
-    - law
-    - merge
-    - number
-    - sti
-  matrix:
-    - collapse
-    - forward
-    - law
-    - merge
-    - number
-    - sti
-  backlinks:
-    - collapse
-    - forward
-    - law
-    - merge
-    - number
-    - sti
 signatures:
-  computationUuid: "a3726461-cc8d-877b-8919-a958757182ee"
+  computationUuid: "ceaff9c1-4f35-836e-95a9-403f9614d3c7"
   stages:
     - stage: path
-      stageUuid: "ab9145d0-5423-8836-9254-53491be299b2"
+      stageUuid: "99b6b237-09de-875a-8fd5-bdf3c66672de"
     - stage: trinity
-      stageUuid: "9c27cfa6-f6dd-8028-a22c-b29b55b66679"
+      stageUuid: "67612ea2-a50a-8c1f-b8d8-da1f3fe51b66"
     - stage: boundary
-      stageUuid: "d0e619fe-c6fb-8165-a167-cf781174ee60"
+      stageUuid: "3589f0db-44d7-8d03-b2dd-6cff329c3a9a"
     - stage: links
-      stageUuid: "2f36f5b8-d491-8ee5-a64d-14230303ffbf"
+      stageUuid: "cc5c5a8d-5c51-83f6-8640-02644dad26c4"
     - stage: horo
-      stageUuid: "58955462-a334-8f79-92f1-1f5f04d327ca"
+      stageUuid: "0433ee8a-c1d0-8586-bfb9-361f4086bd12"
     - stage: seal
-      stageUuid: "316e4861-d504-8660-b86e-0d7201cff623"
+      stageUuid: "8b394782-b3c4-8999-8e4b-d2fff2a37fcf"
     - stage: uuid
-      stageUuid: "8fc339db-2b5e-810b-8aca-26ba51adfe86"
+      stageUuid: "58de70d7-ef14-81bf-a0a6-c6675872f3b4"
 version: 2
 ---
 # gears

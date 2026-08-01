@@ -1,83 +1,35 @@
 ---
 name: print
 description: "Use when reasoning about print as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/print
-coordinate: print · 1/base · 6d678540
-contentUuid: "fbbc6f62-b1d4-5d56-b48f-5b73d576cb2e"
-diamondUuid: "f0a08257-802e-8cfe-a478-c930c049dd2b"
-uuid: "6d678540-f8e8-8bf1-bafa-95ca8a1d157e"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - column
-    - edition
-    - law
-    - merge
-    - page
-    - section
-    - sti
-  out:
-    - collapse
-    - column
-    - edition
-    - law
-    - merge
-    - page
-    - section
-    - sti
+atomPath: "vocabulary/print"
+coordinate: "vocabulary/print · 2/share · a28e0a96"
+contentUuid: "3eb0ee2b-8604-52a0-9f8e-11c51b78e71a"
+diamondUuid: "ca10fb99-9512-80b1-ad03-54ea2f3b7225"
+uuid: "a28e0a96-5ea3-8de8-9856-47186a5963c8"
+horo: 2
 typography:
-  partition: print
+  partition: vocabulary
   bondDegree: 28
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - column
-    - edition
-    - law
-    - merge
-    - page
-    - section
-    - sti
-  matrix:
-    - collapse
-    - column
-    - edition
-    - law
-    - merge
-    - page
-    - section
-    - sti
-  backlinks:
-    - collapse
-    - column
-    - edition
-    - law
-    - merge
-    - page
-    - section
-    - sti
 signatures:
-  computationUuid: "ad0d2f79-4cbe-80b9-a9ac-98c5e7c6e8de"
+  computationUuid: "f4f22ad4-d162-891f-aa8a-f5b2af8e096a"
   stages:
     - stage: path
-      stageUuid: "df371149-90c7-8bcf-866e-a2158f461e40"
+      stageUuid: "5ac07f57-c085-871a-aa53-c0ea2da036d2"
     - stage: trinity
-      stageUuid: "864c6d4b-043f-8948-a598-eaf65aa80675"
+      stageUuid: "1c4861bb-ae1d-8d27-90ca-dad3de20b884"
     - stage: boundary
-      stageUuid: "21ac64f5-c959-8768-a2b3-0049340f4308"
+      stageUuid: "fc2e0598-0d5a-88fe-9bc1-cd1b35a70e3d"
     - stage: links
-      stageUuid: "8c224cd8-4314-8f07-ad11-f5711102a22f"
+      stageUuid: "0a5f2df0-dd6b-8fa7-a9a5-38d488ab6587"
     - stage: horo
-      stageUuid: "0693d3cb-6472-858a-bd0c-94a564238b24"
+      stageUuid: "44c92c95-904b-8b46-9207-a03dde92139a"
     - stage: seal
-      stageUuid: "5c02a2fb-282f-870b-a5ea-7d6879f14354"
+      stageUuid: "0ccb7ecf-5985-825d-b5b4-903be1726019"
     - stage: uuid
-      stageUuid: "67590071-dd4f-88a6-b899-25817e8ee631"
+      stageUuid: "ef96db26-859f-873a-b978-2af5cfcb13af"
 version: 2
 ---
 # print

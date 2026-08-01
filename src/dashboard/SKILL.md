@@ -2,105 +2,24 @@
 name: dashboard
 description: "Use when each model needs a computed Payload admin view — its related links partitioned into the collections (plural) and models (singular) it composes, rendered via reusable component-atoms. Computed from the link graph, not hardcoded; each atom is Open Graph + schema.org compatible in all dimensions."
 atomPath: dashboard
-coordinate: "dashboard · 1/base · 8e297594"
-contentUuid: "adee705c-2096-57d6-a04c-25b9c7a6a357"
-diamondUuid: "d1036a49-3ffe-8d30-8cda-ad14c52286a5"
-uuid: "8e297594-df2d-8005-8341-fd1c6259e80d"
+coordinate: "dashboard · 1/base · eba8351b"
+contentUuid: "8c73652c-eab5-500a-8983-cb3e4689689e"
+diamondUuid: "3d581970-839c-8c1d-a107-b0b183967059"
+uuid: "eba8351b-29f2-83e0-8713-cf1adb47b5df"
 horo: 1
-bonds:
-  in:
-    - atom
-    - aura
-    - before
-    - collection
-    - collections
-    - components
-    - gate
-    - identity
-    - link
-    - links
-    - model
-    - translate
-    - trinity
-    - website
-  out:
-    - atom
-    - aura
-    - before
-    - collection
-    - collections
-    - components
-    - gate
-    - identity
-    - link
-    - links
-    - model
-    - translate
-    - trinity
-    - website
 typography:
   partition: dashboard
   bondDegree: 0
-  neighbors: []
 standards:
   - "ECMA-262"
-  - "EU-2024/1183"
-  - "EU-2024/1620"
-  - "EU-2024/1624"
   - "EU-CSDDD-2024/1760"
   - "ISO-27002"
   - "ISO/IEC-27002:2022"
   - MCP
   - "NIST-INCITS-359-2012"
 bindings: []
-neighbors:
-  wikilink:
-    - atom
-    - aura
-    - before
-    - collection
-    - collections
-    - components
-    - gate
-    - identity
-    - link
-    - links
-    - model
-    - translate
-    - trinity
-    - website
-  matrix:
-    - atom
-    - aura
-    - before
-    - collection
-    - collections
-    - components
-    - gate
-    - identity
-    - link
-    - links
-    - model
-    - translate
-    - trinity
-    - website
-  backlinks:
-    - atom
-    - aura
-    - before
-    - collection
-    - collections
-    - components
-    - gate
-    - identity
-    - link
-    - links
-    - model
-    - translate
-    - trinity
-    - website
 signatures:
-  computationUuid: "248f86a2-905e-8d79-bae9-18e2b0ca4962"
+  computationUuid: "e2384b5c-07d2-8df0-afb2-ad1492db642f"
   stages:
     - stage: path
       stageUuid: "deb8c079-da08-8019-9459-9f3a08003bb9"
@@ -111,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "857c3683-4dab-8201-b18b-5b0df077442b"
     - stage: horo
-      stageUuid: "997ecfab-7de4-80b2-becd-20805249ce45"
+      stageUuid: "59e28f93-6931-85e5-8b81-c8aff68950fe"
     - stage: seal
       stageUuid: "526a7d4b-25e6-8ac2-a63f-9a3a81a7470c"
     - stage: uuid
-      stageUuid: "29d1211b-4917-85e0-a072-1d26d8390d65"
+      stageUuid: "7855260b-a8a7-8256-85e8-b6a39dab7bdf"
 version: 2
 ---
 # dashboard — each model's computed admin view (under [[before]])

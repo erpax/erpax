@@ -1,68 +1,35 @@
 ---
 name: hall
 description: "Use when reasoning about hall as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/hall
-coordinate: hall · 4/weave · cd8aee17
-contentUuid: "908c59d9-0261-570d-a175-ab57dbe8e61d"
-diamondUuid: "aa15ee64-656a-86e8-88da-841aa8d6adf0"
-uuid: "cd8aee17-382e-8a04-9cd2-5066dedbcfd0"
+atomPath: "vocabulary/hall"
+coordinate: "vocabulary/hall · 4/weave · 7062a732"
+contentUuid: "335e91ce-82fb-5ea1-b457-e821eff0d219"
+diamondUuid: "b2a2e348-c0d7-8b5c-a090-ccc7994f9233"
+uuid: "7062a732-9f27-86da-93a4-e8d2caf57a73"
 horo: 4
-bonds:
-  in:
-    - city
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - city
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: hall
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - city
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - city
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - city
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "48bd3bd5-a934-823f-96df-de03b9d85757"
+  computationUuid: "5c6da712-2895-8052-9636-d0589c5f33f3"
   stages:
     - stage: path
-      stageUuid: "d92218b3-44fa-8d3b-9ab8-bcd775561afd"
+      stageUuid: "8b15b8b8-ff48-8ff5-a1ec-fd69a596a0d6"
     - stage: trinity
-      stageUuid: "d52a5251-b0e3-88b5-8927-7fc97d122326"
+      stageUuid: "39c4d356-1a34-896e-8f72-a218d3ef62c0"
     - stage: boundary
-      stageUuid: "0b72b074-15cd-8f42-bdbb-230d1c3ced5d"
+      stageUuid: "7bfdbc2e-6a35-8290-9243-b9f849b63741"
     - stage: links
-      stageUuid: "dd587f5e-59cd-8f82-8ece-512728f73e51"
+      stageUuid: "9b988ef6-03ac-8d94-a1d5-7e85326cefe0"
     - stage: horo
-      stageUuid: "62489d8d-fce4-895c-b4f1-bf74608759ec"
+      stageUuid: "0a4c6ad8-bd31-84fa-ac71-2ffb82640f21"
     - stage: seal
-      stageUuid: "9d1988d8-d6cf-8907-b983-987c3718257d"
+      stageUuid: "1e80eb62-40c7-8cac-96a0-ddfec084836d"
     - stage: uuid
-      stageUuid: "ecba001a-1a01-873c-83b5-f2599210450e"
+      stageUuid: "35b1a1c7-916f-8c1b-b382-43d7d9c72e34"
 version: 2
 ---
 # hall

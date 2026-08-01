@@ -1,106 +1,34 @@
 ---
 name: fodder
 description: "Use when animals are fed harvested or provided feed rather than grazing — fodder/feed: hay, silage, grain, concentrate, the formulated ration (TMR), and the feed-conversion ratio. The cost driver of confined livestock and the harvested twin of grazed forage; FCR reuses the conversion atom."
-atomPath: vocabulary/fodder
-coordinate: fodder · 7/descent · 0ee657c9
-contentUuid: "a2212331-5d77-55e4-adf0-e99eaac3623d"
-diamondUuid: "a2eb16f6-b8fd-82de-b7eb-c38abcd2d608"
-uuid: "0ee657c9-3812-81ce-a7be-1844b333edbb"
-horo: 7
-bonds:
-  in:
-    - animal
-    - conversion
-    - cost
-    - grazing
-    - harvest
-    - herd
-    - law
-    - livestock
-    - manufacturing
-    - manure
-    - postharvest
-    - rate
-    - throughput
-  out:
-    - animal
-    - conversion
-    - cost
-    - grazing
-    - harvest
-    - herd
-    - law
-    - livestock
-    - manufacturing
-    - manure
-    - postharvest
-    - rate
-    - throughput
+atomPath: "vocabulary/fodder"
+coordinate: "vocabulary/fodder · 4/weave · 8fa9d4f8"
+contentUuid: "2a2bc613-7a10-550e-8da2-5cad21af6bb6"
+diamondUuid: "f004b1f6-9029-86e6-84e1-37835189923a"
+uuid: "8fa9d4f8-60d8-8017-8c70-239c9c460810"
+horo: 4
 typography:
-  partition: fodder
+  partition: vocabulary
   bondDegree: 42
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - animal
-    - conversion
-    - cost
-    - grazing
-    - harvest
-    - herd
-    - law
-    - livestock
-    - manufacturing
-    - postharvest
-    - rate
-    - throughput
-  matrix:
-    - animal
-    - conversion
-    - cost
-    - grazing
-    - harvest
-    - herd
-    - law
-    - livestock
-    - manufacturing
-    - manure
-    - postharvest
-    - rate
-    - throughput
-  backlinks:
-    - animal
-    - conversion
-    - cost
-    - grazing
-    - harvest
-    - herd
-    - law
-    - livestock
-    - manufacturing
-    - manure
-    - postharvest
-    - rate
-    - throughput
 signatures:
-  computationUuid: "ff79188c-8de1-8589-b9bc-ed21f9e385c3"
+  computationUuid: "04718e21-23eb-87e7-b2a5-7179eba3eb8e"
   stages:
     - stage: path
-      stageUuid: "ac4a3ca2-0b80-89f8-8542-66f121118399"
+      stageUuid: "c2e6e84a-12cb-8742-90a7-66ccf5beffbb"
     - stage: trinity
-      stageUuid: "178fecc5-61ff-8836-b830-960ba1577f7b"
+      stageUuid: "32ceae74-0133-8874-a7c8-a8f2826d3888"
     - stage: boundary
-      stageUuid: "53e04ff9-525f-8015-9f37-39b9471ad8fd"
+      stageUuid: "f8d9eff5-dd9f-8c25-a070-bb6171ba9134"
     - stage: links
-      stageUuid: "e7264aff-d0cd-8abf-a5c5-7c6b8d5d0a51"
+      stageUuid: "3c77ffd8-8587-886a-bdb3-06f3edf2e9c1"
     - stage: horo
-      stageUuid: "a8243327-00e7-8786-a629-f53d3d2cfc73"
+      stageUuid: "70226ef1-d5cc-847d-b93c-f2988465d5f3"
     - stage: seal
-      stageUuid: "394c628e-98fd-8981-af24-5978a53931b6"
+      stageUuid: "bea4d64a-6ae0-85b6-b4af-a42360127ee1"
     - stage: uuid
-      stageUuid: "92f7380a-2a0c-8c7c-90b0-0853547f286e"
+      stageUuid: "1a2012c4-3321-8d93-95e8-ce113248a579"
 version: 2
 ---
 # fodder — harvested/provided animal feed (the cut twin of grazed forage)

@@ -2,111 +2,22 @@
 name: compost
 description: "Use when organic residues are decomposed into a soil amendment — compost and manure as the organic-matter/microbial input that rebuilds soil rather than just feeding the crop. The literal entropy→soil recycling node: spent residue, decomposed, credited back to the soil's capacity (the regenerative balance)."
 atomPath: compost
-coordinate: "compost · 8/crest · 4b1367cc"
-contentUuid: "9e70b7c8-4fca-50ea-9035-2bd3558a579b"
-diamondUuid: "5ba6ce52-73f2-8dd6-924a-d1f9742f0613"
-uuid: "4b1367cc-7612-8a46-8b25-91cb396b17d1"
-horo: 8
-bonds:
-  in:
-    - agriculture
-    - balance
-    - breath
-    - capacity
-    - conservation
-    - covercrop
-    - ecosystem
-    - emission
-    - fertility
-    - harvest
-    - law
-    - manure
-    - mycelium
-    - organic
-    - soil
-    - sustainability
-    - tillage
-  out:
-    - agriculture
-    - balance
-    - breath
-    - capacity
-    - conservation
-    - covercrop
-    - ecosystem
-    - emission
-    - fertility
-    - harvest
-    - law
-    - manure
-    - mycelium
-    - organic
-    - soil
-    - sustainability
-    - tillage
+coordinate: "compost · 7/descent · afbb9a04"
+contentUuid: "d28de187-88d2-5060-bef3-15d9458106f7"
+diamondUuid: "9e7777bc-be59-8d5d-b70c-1aa45f91635e"
+uuid: "afbb9a04-2542-8946-890c-e8ef52c80696"
+horo: 7
 typography:
   partition: compost
   bondDegree: 56
-  neighbors: []
 standards:
   - "SARE, Building Soils for Better Crops — organic-matter management"
   - "US Composting Council — compost maturity/stability (C:N criteria)"
   - "USDA NOP 7 CFR §205.203 — compost and raw-manure rules"
   - "USDA-NOP"
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - balance
-    - breath
-    - capacity
-    - conservation
-    - covercrop
-    - ecosystem
-    - emission
-    - fertility
-    - harvest
-    - law
-    - soil
-    - sustainability
-  matrix:
-    - agriculture
-    - balance
-    - breath
-    - capacity
-    - conservation
-    - covercrop
-    - ecosystem
-    - emission
-    - fertility
-    - harvest
-    - law
-    - manure
-    - mycelium
-    - organic
-    - soil
-    - sustainability
-    - tillage
-  backlinks:
-    - agriculture
-    - balance
-    - breath
-    - capacity
-    - conservation
-    - covercrop
-    - ecosystem
-    - emission
-    - fertility
-    - harvest
-    - law
-    - manure
-    - mycelium
-    - organic
-    - soil
-    - sustainability
-    - tillage
 signatures:
-  computationUuid: "8595a725-f888-8158-91dc-30aca175856e"
+  computationUuid: "2e09ab07-9f0e-8a53-8f05-7c598cc06a38"
   stages:
     - stage: path
       stageUuid: "f6bf7fde-93ab-8a11-b344-939400cb706f"
@@ -117,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "2b5de81a-742f-81e0-87b9-d91cbcfaeab8"
     - stage: horo
-      stageUuid: "5a378798-686d-85bf-8285-f766e41a9d1e"
+      stageUuid: "99957538-a821-8f8d-8525-0efb3199ad7a"
     - stage: seal
       stageUuid: "b8b04192-5a91-85d4-a84c-128a5bb227df"
     - stage: uuid
-      stageUuid: "62ac6142-1a87-86ff-b729-957ed5595f10"
+      stageUuid: "5b6013f9-b04a-8c95-8320-e8fd78285c18"
 version: 2
 ---
 # compost — decomposed residue returned to the soil

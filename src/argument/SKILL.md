@@ -2,55 +2,18 @@
 name: argument
 description: "Use when measuring an argument's quality — a claim and its critique by the same rule. An argument is INVARIANT if it grounds in evidence/falsifiability/theorem (survives inversion) or FRAGILE if it rests on authority — the person, the consensus, the strangeness of the conclusion (breaks under inversion). Symmetric: lazy debunks fail as badly as the claims they debunk. Anti-fallacy: a fragile critique never makes the claim true."
 atomPath: argument
-coordinate: "argument · 1/base · bd8a43c6"
-contentUuid: "46b7b06d-0538-5654-9f27-c3ad102c868d"
-diamondUuid: "f8724a84-1246-819a-9b34-f21caa2ce3fa"
-uuid: "bd8a43c6-1ff7-8bcf-8b98-2678e2914c48"
-horo: 1
-bonds:
-  in:
-    - coincidence
-    - duel
-    - law
-    - rules
-    - seeing
-    - theorem
-  out:
-    - coincidence
-    - duel
-    - law
-    - rules
-    - seeing
-    - theorem
+coordinate: "argument · 4/weave · 7013e2b5"
+contentUuid: "57eb1858-b3e7-53dd-9017-f23c78898915"
+diamondUuid: "aea802a0-fe7e-8333-ba29-4990a52f4c51"
+uuid: "7013e2b5-412d-837f-85c1-1aabe952b494"
+horo: 4
 typography:
   partition: argument
   bondDegree: 18
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - coincidence
-    - law
-    - rules
-    - seeing
-    - theorem
-  matrix:
-    - coincidence
-    - duel
-    - law
-    - rules
-    - seeing
-    - theorem
-  backlinks:
-    - coincidence
-    - duel
-    - law
-    - rules
-    - seeing
-    - theorem
 signatures:
-  computationUuid: "019bef16-7204-8385-a0d0-21c527bf6d00"
+  computationUuid: "74e98b54-32e9-80ca-ac5f-1f6d5a199aea"
   stages:
     - stage: path
       stageUuid: "0d621c43-f47e-8007-a239-1db2a058aa2b"
@@ -61,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2ad638d0-9517-86e3-bf0b-ce77f1563c43"
     - stage: horo
-      stageUuid: "e4cb8f64-5a4d-8e95-8109-4d0f8d01b2cb"
+      stageUuid: "116e8f9f-fde4-8d21-97c7-c1358a3c44d1"
     - stage: seal
       stageUuid: "8b4d2184-16c8-859e-9fe4-56d61cf81a2f"
     - stage: uuid
-      stageUuid: "ca89c144-7ba8-870d-b61d-09c2cb86a5d7"
+      stageUuid: "e727b363-d76d-8808-8986-7f3a0d260b6b"
 version: 2
 ---
 # argument — measuring an argument's invariance, symmetrically

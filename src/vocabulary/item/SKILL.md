@@ -1,228 +1,35 @@
 ---
 name: item
 description: "Use when reasoning about item — An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists')."
-atomPath: vocabulary/item
-coordinate: item · 4/weave · 5afa3b13
-contentUuid: "2fe7d57c-c668-5aea-87de-d398585a49ff"
-diamondUuid: "f5d8f1a0-b4cc-8f29-9905-8303368790a4"
-uuid: "5afa3b13-db06-89ad-91f6-3f459c52d17d"
-horo: 4
-bonds:
-  in:
-    - amount
-    - appearance
-    - availability
-    - condition
-    - data
-    - defect
-    - element
-    - feed
-    - fees
-    - funded
-    - game
-    - has
-    - how
-    - incentivized
-    - label
-    - law
-    - list
-    - location
-    - media
-    - menu
-    - next
-    - number
-    - offer
-    - offered
-    - order
-    - ordered
-    - page
-    - parent
-    - previous
-    - return
-    - review
-    - reviewed
-    - shipped
-    - shipping
-    - source
-    - status
-    - type
-  out:
-    - amount
-    - appearance
-    - availability
-    - condition
-    - data
-    - defect
-    - element
-    - feed
-    - fees
-    - funded
-    - game
-    - has
-    - how
-    - incentivized
-    - label
-    - law
-    - list
-    - location
-    - media
-    - menu
-    - next
-    - number
-    - offer
-    - offered
-    - order
-    - ordered
-    - page
-    - parent
-    - previous
-    - return
-    - review
-    - reviewed
-    - shipped
-    - shipping
-    - source
-    - status
-    - type
+atomPath: "vocabulary/item"
+coordinate: "vocabulary/item · 7/descent · 005eafe9"
+contentUuid: "4589649f-5020-5378-8b03-d0fc691e0dc1"
+diamondUuid: "d3876ecc-c304-8b0b-a4b2-c08c6c6abe5e"
+uuid: "005eafe9-17f8-8c69-b674-e3a81a1ff327"
+horo: 7
 typography:
-  partition: item
-  bondDegree: 139
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 143
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - amount
-    - appearance
-    - availability
-    - condition
-    - data
-    - defect
-    - element
-    - feed
-    - fees
-    - funded
-    - game
-    - has
-    - how
-    - incentivized
-    - label
-    - law
-    - list
-    - location
-    - media
-    - menu
-    - next
-    - number
-    - offer
-    - offered
-    - order
-    - ordered
-    - page
-    - parent
-    - previous
-    - return
-    - review
-    - reviewed
-    - shipped
-    - shipping
-    - source
-    - status
-    - type
-  matrix:
-    - amount
-    - appearance
-    - availability
-    - condition
-    - data
-    - defect
-    - element
-    - feed
-    - fees
-    - funded
-    - game
-    - has
-    - how
-    - incentivized
-    - label
-    - law
-    - list
-    - location
-    - media
-    - menu
-    - next
-    - number
-    - offer
-    - offered
-    - order
-    - ordered
-    - page
-    - parent
-    - previous
-    - return
-    - review
-    - reviewed
-    - shipped
-    - shipping
-    - source
-    - status
-    - type
-  backlinks:
-    - amount
-    - appearance
-    - availability
-    - condition
-    - data
-    - defect
-    - element
-    - feed
-    - fees
-    - funded
-    - game
-    - has
-    - how
-    - incentivized
-    - label
-    - law
-    - list
-    - location
-    - media
-    - menu
-    - next
-    - number
-    - offer
-    - offered
-    - order
-    - ordered
-    - page
-    - parent
-    - previous
-    - return
-    - review
-    - reviewed
-    - shipped
-    - shipping
-    - source
-    - status
-    - type
 signatures:
-  computationUuid: "059aa6a6-dc60-8b39-b732-ecce36f2f4f1"
+  computationUuid: "8bf239eb-8b41-826c-9040-b890d771fe76"
   stages:
     - stage: path
-      stageUuid: "c4f76c84-782b-804c-b6e4-006dc9f24fc8"
+      stageUuid: "2bc9a103-6809-825b-a1f9-2f4bea0400ba"
     - stage: trinity
-      stageUuid: "e406ddef-005e-8ca8-b2ad-3a554462bcef"
+      stageUuid: "304dae77-4c51-8b49-8e58-78c3e91e9f9e"
     - stage: boundary
-      stageUuid: "3d1b469a-e2cf-879c-a1d7-3e3c56d97596"
+      stageUuid: "19ebce35-0de9-87d6-9ee0-8e694638c702"
     - stage: links
-      stageUuid: "3c5085e2-3e32-83f8-b6d1-e0981ab1ec78"
+      stageUuid: "58ef83bc-3975-8b7a-a9e2-84dba58d9124"
     - stage: horo
-      stageUuid: "cfd8ab62-f253-8c70-8bc3-2493a41689da"
+      stageUuid: "c7ea4676-7a3a-8542-9e48-b6e04434dfd4"
     - stage: seal
-      stageUuid: "f211f525-0afe-87e8-ba3b-40dc93f1f76a"
+      stageUuid: "1b4b5ff6-598c-8dc0-acc5-809aa55f684c"
     - stage: uuid
-      stageUuid: "bca4148f-0f92-8bfd-bed0-2594bc60f5c9"
+      stageUuid: "438ba2e0-ed36-8b45-810f-ce259d400b49"
 version: 2
 ---
 # item

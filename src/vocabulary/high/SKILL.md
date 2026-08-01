@@ -1,73 +1,35 @@
 ---
 name: high
 description: "Use when reasoning about high as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/high
-coordinate: high · 1/base · 9a876521
-contentUuid: "d8e8923d-874c-5faa-a82c-10b87735110a"
-diamondUuid: "4a89cc6b-0b19-8368-bbe2-fd1fc0a61bb0"
-uuid: "9a876521-28f1-8a64-b191-a3a1988de3c4"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - price
-    - school
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - price
-    - school
-    - sti
+atomPath: "vocabulary/high"
+coordinate: "vocabulary/high · 8/crest · c72afc4c"
+contentUuid: "6579dfa8-d271-54b9-9ed5-3e4275d788ab"
+diamondUuid: "7337795d-ea2c-8adc-ba90-733ba218e24a"
+uuid: "c72afc4c-4727-8797-9f52-6336147ff1ec"
+horo: 8
 typography:
-  partition: high
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - price
-    - school
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - price
-    - school
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - price
-    - school
-    - sti
 signatures:
-  computationUuid: "fe5743d4-5906-8008-8992-4944868d955a"
+  computationUuid: "cf0f6e23-7675-8400-b8c9-b13ba90888f6"
   stages:
     - stage: path
-      stageUuid: "7b8f9276-2008-8abe-9623-7854d7a8ba40"
+      stageUuid: "af18296c-2886-82db-b240-80a956d3371a"
     - stage: trinity
-      stageUuid: "eadfd310-c58c-8ac9-8015-1bb09da07cec"
+      stageUuid: "9a477289-c058-8736-ad7e-15bdceab8e44"
     - stage: boundary
-      stageUuid: "9a2570fa-1048-8672-b1a0-f431aa210db0"
+      stageUuid: "bc30f3e3-1c80-8a4c-8a01-e061af579020"
     - stage: links
-      stageUuid: "44fad62a-04b6-878e-81d6-1473311ba336"
+      stageUuid: "3919c324-f394-889a-ac80-67148fa4505f"
     - stage: horo
-      stageUuid: "657b4140-9902-8fc6-a7c5-b1c680a9d51d"
+      stageUuid: "24bcdeb1-2a55-8b45-ad25-cad7aa079e18"
     - stage: seal
-      stageUuid: "45588cea-474e-8a41-9150-d64687e4d459"
+      stageUuid: "71f2200c-19cd-86b3-83cb-3b3997d9fa0e"
     - stage: uuid
-      stageUuid: "41004557-1305-87f5-8269-9e63b16a64cd"
+      stageUuid: "02cdebb8-9224-8089-b63c-ab977a411de3"
 version: 2
 ---
 # high

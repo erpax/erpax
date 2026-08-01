@@ -2,79 +2,19 @@
 name: apply
 description: "Use when reasoning about apply — A schema.org component word, collided out of schema.org compounds — fused from ApplyAction · directApply (sti · collapse · merge)."
 atomPath: apply
-coordinate: "apply · 2/share · 701d945a"
-contentUuid: "2aaf7000-04c2-5e01-bdfb-10fb4449148e"
-diamondUuid: "e87454e5-f568-81b0-a263-0403954684fe"
-uuid: "701d945a-a318-8117-8568-513ba02ff04f"
-horo: 2
-bonds:
-  in:
-    - action
-    - apply
-    - automate
-    - collapse
-    - direct
-    - law
-    - merge
-    - rules
-    - sti
-    - violations
-    - wave
-  out:
-    - action
-    - apply
-    - automate
-    - collapse
-    - direct
-    - law
-    - merge
-    - rules
-    - sti
-    - violations
-    - wave
+coordinate: "apply · 7/descent · 6f753f1a"
+contentUuid: "db10b2d7-81c1-535c-aae5-e186aa9c00c1"
+diamondUuid: "d827f7b6-7883-83aa-9749-2194902f8889"
+uuid: "6f753f1a-cba9-8cef-9a6e-246ace62599f"
+horo: 7
 typography:
   partition: apply
   bondDegree: 39
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - direct
-    - law
-    - merge
-    - rules
-    - sti
-    - violations
-  matrix:
-    - action
-    - apply
-    - automate
-    - collapse
-    - direct
-    - law
-    - merge
-    - rules
-    - sti
-    - violations
-    - wave
-  backlinks:
-    - action
-    - apply
-    - automate
-    - collapse
-    - direct
-    - law
-    - merge
-    - rules
-    - sti
-    - violations
-    - wave
 signatures:
-  computationUuid: "dd84ab17-d2f3-87ad-9ec3-cac91ba309ab"
+  computationUuid: "3ac72987-14d1-80f5-87ba-95b3f1410aea"
   stages:
     - stage: path
       stageUuid: "af7e02e8-820d-805e-abb4-f88a19d268b8"
@@ -85,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c3997c8c-f7b2-8ba0-9935-d0bac56466b9"
     - stage: horo
-      stageUuid: "93238d99-a448-802c-8a4c-9f5d34138366"
+      stageUuid: "dc13daac-60e2-823f-b3b2-b62d327615d6"
     - stage: seal
       stageUuid: "762eb5ae-7420-8f7d-84e8-2f0dabd2bcf9"
     - stage: uuid
-      stageUuid: "a2275128-69bb-8fff-917b-039b86230d4a"
+      stageUuid: "32fae84f-4a02-8121-8aac-1af1c8c2ee73"
 version: 2
 ---
 # apply

@@ -1,68 +1,35 @@
 ---
 name: buddhist
 description: "Use when reasoning about buddhist as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/buddhist
-coordinate: buddhist · 8/crest · 465add24
-contentUuid: "8f6c140b-c642-5937-ba73-ac688e7482dd"
-diamondUuid: "230941fc-d199-8628-b549-ee5098dd81fa"
-uuid: "465add24-a8c8-88e3-9d78-5d17c226e961"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - temple
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - temple
+atomPath: "vocabulary/buddhist"
+coordinate: "vocabulary/buddhist · 5/round · de9f1926"
+contentUuid: "90af6cd2-5c4d-539d-a9c8-2c02afc9b8ad"
+diamondUuid: "d0aaaf21-1925-896d-83a1-30787bbb8f9d"
+uuid: "de9f1926-3f41-8b6e-ad3d-fb850174d8bd"
+horo: 5
 typography:
-  partition: buddhist
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - temple
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - temple
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - temple
 signatures:
-  computationUuid: "a337ba91-f043-8d0a-a850-984ef006134e"
+  computationUuid: "aaf99f32-4b96-823d-828d-9f6f5ae57c9c"
   stages:
     - stage: path
-      stageUuid: "cd096d17-939a-89c5-9953-2c5edd99d038"
+      stageUuid: "4cf85a57-fce2-8d39-af44-93c86dc4bac2"
     - stage: trinity
-      stageUuid: "1de3fe76-3123-862f-a958-ff0e34177505"
+      stageUuid: "bb516098-ec7a-8d3b-abf5-91318286a9eb"
     - stage: boundary
-      stageUuid: "7eefe4d7-896b-8fa2-91fb-8399c8b3528c"
+      stageUuid: "b7b7a3df-c770-8bce-aa67-27f3ada98c1b"
     - stage: links
-      stageUuid: "1443c114-e0af-84ec-853f-012ec5ecf7f6"
+      stageUuid: "3953a236-12fd-8c22-93ea-c1e6f45f1c47"
     - stage: horo
-      stageUuid: "8b76d828-19aa-8129-851a-7aecabb7b70d"
+      stageUuid: "2c09271f-befc-8728-8f72-fabb6c7b44d5"
     - stage: seal
-      stageUuid: "1e1bbff6-1de8-8e54-a513-ab42f35d14c6"
+      stageUuid: "f831c1fb-d60b-8717-8b73-813b32fa3e63"
     - stage: uuid
-      stageUuid: "36a9863d-5363-8b46-814c-3e3ce8491d53"
+      stageUuid: "2782174d-47bc-830f-b0e8-b52a868da431"
 version: 2
 ---
 # buddhist

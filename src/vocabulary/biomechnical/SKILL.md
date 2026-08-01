@@ -1,68 +1,35 @@
 ---
 name: biomechnical
 description: "Use when reasoning about biomechnical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/biomechnical
-coordinate: biomechnical · 5/round · 040235e1
-contentUuid: "4e8c9655-7ea7-5af3-8a7e-b6a57596d8b6"
-diamondUuid: "a7a1ae36-5b0f-86e0-8209-929ab2ce47e0"
-uuid: "040235e1-90aa-8fa8-9d6c-53d24b882dfa"
-horo: 5
-bonds:
-  in:
-    - class
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - class
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/biomechnical"
+coordinate: "vocabulary/biomechnical · 4/weave · 482ec6f3"
+contentUuid: "9939bf01-0ac2-50b5-8b5f-d642ae2592be"
+diamondUuid: "4cde7801-33ce-859f-9b0e-578835ba60de"
+uuid: "482ec6f3-4cb7-845c-a37d-d620d0944751"
+horo: 4
 typography:
-  partition: biomechnical
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - class
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - class
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - class
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "0862a477-0ec2-821b-981c-758b52bfa1c1"
+  computationUuid: "92fee0f9-ddd6-8ddb-8872-a21a4b837921"
   stages:
     - stage: path
-      stageUuid: "9ea26806-e710-87b9-87cd-c736861a900b"
+      stageUuid: "8072397a-9fa7-8e1a-84e1-972f6763761c"
     - stage: trinity
-      stageUuid: "29223813-3a62-8045-8723-b3ef7c5c9d83"
+      stageUuid: "059576c3-3402-8dcc-ba0a-302376e8f84c"
     - stage: boundary
-      stageUuid: "9b9eae50-dd45-890c-b155-0b51221e8faa"
+      stageUuid: "d6461f17-be4c-8f82-8629-daf574284474"
     - stage: links
-      stageUuid: "5b3ccfe2-f43e-8eda-b733-aff69edab348"
+      stageUuid: "f95f5a7f-9bee-8758-aa2a-a4d14cc79b9a"
     - stage: horo
-      stageUuid: "31c3396b-8bb2-8eab-9890-56e507a0e76a"
+      stageUuid: "9c38c630-3617-81af-b295-004b10af2c7a"
     - stage: seal
-      stageUuid: "ae5cb2da-c890-8422-b9a3-a9217981f31f"
+      stageUuid: "824073b4-fdff-807c-ae05-34a39a972048"
     - stage: uuid
-      stageUuid: "a4358a45-3655-890d-aee3-55eb8b269a7a"
+      stageUuid: "2bd8b980-cf20-8a92-bd1a-ba008e6e0441"
 version: 2
 ---
 # biomechnical

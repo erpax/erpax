@@ -1,83 +1,35 @@
 ---
 name: consumption
 description: "Use when reasoning about consumption as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/consumption
-coordinate: consumption · 2/share · d0a7dc69
-contentUuid: "3c0013f7-6442-5751-89bf-535520137e49"
-diamondUuid: "f665a052-85eb-8e08-9984-1b82767d3628"
-uuid: "d0a7dc69-da21-8bd5-a69b-06fce1ce3afc"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - details
-    - energy
-    - fuel
-    - has
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - details
-    - energy
-    - fuel
-    - has
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/consumption"
+coordinate: "vocabulary/consumption · 5/round · 0fa91445"
+contentUuid: "b159bcb5-593c-5510-9b54-5213c53f1ff6"
+diamondUuid: "2ac825f7-8cf1-85c8-a6b2-83b1f5df95a7"
+uuid: "0fa91445-89c0-8e02-a990-e8d88dc1b076"
+horo: 5
 typography:
-  partition: consumption
+  partition: vocabulary
   bondDegree: 28
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - details
-    - energy
-    - fuel
-    - has
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - details
-    - energy
-    - fuel
-    - has
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - details
-    - energy
-    - fuel
-    - has
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "d6b8a051-66d2-87e1-aa83-50df3d32d3d7"
+  computationUuid: "48e0a92a-60d9-83a2-b1c8-e29200667b63"
   stages:
     - stage: path
-      stageUuid: "b57dbf0f-685d-893a-a2c3-07883021e627"
+      stageUuid: "0db09d62-4f81-8ccc-a8b7-a21b95102cb6"
     - stage: trinity
-      stageUuid: "07204fa0-4d7c-8e7e-a561-4fc82f8fd638"
+      stageUuid: "83cce1a3-ec38-8062-9db0-332298fdaec5"
     - stage: boundary
-      stageUuid: "15ff204a-0a21-8126-8776-e05611efc295"
+      stageUuid: "da3a7151-cc43-8d86-b259-06ebf1862e54"
     - stage: links
-      stageUuid: "26488bcf-f457-8ff2-9df5-86a456ec0cbf"
+      stageUuid: "32169275-2113-86d7-978f-de1d9d2da9ff"
     - stage: horo
-      stageUuid: "1c7c4aec-3870-8557-b307-64ed1f910dbf"
+      stageUuid: "945b0ad6-e825-83cf-afb3-1dd3a270ab73"
     - stage: seal
-      stageUuid: "d7ec58f6-da18-8280-be3c-9ec8e8b176cb"
+      stageUuid: "d792ef57-024a-8f58-9d05-432a0ccf9ebd"
     - stage: uuid
-      stageUuid: "76e2e159-3f8f-84d4-83f4-701cbeba30b3"
+      stageUuid: "33fcd984-5fa9-8c5f-ac61-9daf05e72d2e"
 version: 2
 ---
 # consumption

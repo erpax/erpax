@@ -2,74 +2,19 @@
 name: folded
 description: "Use when checking whether every atom folds into the matrix — the computed convention that each SKILL.md atom is a node in the collided uuid-matrix, measured live as coverage = folded / total over the real tree."
 atomPath: "convention/folded"
-coordinate: "convention/folded · 2/share · d1d9a828"
-contentUuid: "a2e6f69c-ee8f-58a5-88cf-93456409f686"
-diamondUuid: "d30bc71d-c9e3-8629-9dfa-bb9ccc5f2bd7"
-uuid: "d1d9a828-96a3-8e30-acd7-9ebd8d20d21b"
-horo: 2
-bonds:
-  in:
-    - aura
-    - collapse
-    - complete
-    - convention
-    - cost
-    - gravity
-    - law
-    - matrix
-    - merge
-    - snapshot
-  out:
-    - aura
-    - collapse
-    - complete
-    - cost
-    - gravity
-    - law
-    - matrix
-    - merge
-    - snapshot
+coordinate: "convention/folded · 7/descent · 4f4bf5bf"
+contentUuid: "2efddb2c-5dfa-50b2-adf8-51dbcbf5b714"
+diamondUuid: "6b4643c7-eaaf-8849-9604-bbb19a29b3c7"
+uuid: "4f4bf5bf-b1e0-8fb8-9ce0-1f2eea86f2cd"
+horo: 7
 typography:
   partition: convention
   bondDegree: 28
-  neighbors:
-    - aura
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - aura
-    - collapse
-    - complete
-    - cost
-    - gravity
-    - law
-    - matrix
-    - merge
-    - snapshot
-  matrix:
-    - aura
-    - collapse
-    - complete
-    - cost
-    - gravity
-    - law
-    - matrix
-    - merge
-    - snapshot
-  backlinks:
-    - aura
-    - collapse
-    - complete
-    - cost
-    - gravity
-    - law
-    - matrix
-    - merge
-    - snapshot
 signatures:
-  computationUuid: "fa9b0f6c-3f2d-84f2-89c1-dd160e4b7798"
+  computationUuid: "4071237e-05cf-848b-a17c-713586cfe19e"
   stages:
     - stage: path
       stageUuid: "73754e98-b99c-87ae-a3c8-48859e4790cf"
@@ -80,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "96ab009f-bf84-8f29-9800-7fd368dc2913"
     - stage: horo
-      stageUuid: "e46a6062-147f-8ecf-8895-01fa21b635ab"
+      stageUuid: "649b938b-bb80-8455-adf1-041ab29a4d7e"
     - stage: seal
       stageUuid: "14779d41-b302-8b6c-9d1d-32af7688a80d"
     - stage: uuid
-      stageUuid: "ad12ddc1-2528-813d-8d04-84cc74cffce9"
+      stageUuid: "0851014d-9cad-8cee-9995-3e6474eb1170"
 version: 2
 ---
 # convention/folded — every atom folds into the matrix (is a node)

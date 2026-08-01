@@ -1,83 +1,35 @@
 ---
 name: permission
 description: "Use when reasoning about permission as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/permission
-coordinate: permission · 8/crest · 532065b9
-contentUuid: "81d6e787-4dae-5cef-89f3-26bff5c41838"
-diamondUuid: "2ad847cf-046a-84fd-a60a-ad350b98890e"
-uuid: "532065b9-2294-86ce-b78f-065724aea766"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - digital
-    - document
-    - has
-    - law
-    - merge
-    - sti
-    - type
-  out:
-    - collapse
-    - digital
-    - document
-    - has
-    - law
-    - merge
-    - sti
-    - type
+atomPath: "vocabulary/permission"
+coordinate: "vocabulary/permission · 2/share · 25ac00ea"
+contentUuid: "94c882d0-03d0-5f25-a379-cdc1064b9c2b"
+diamondUuid: "6b275232-6ee3-840c-98de-5e3a633dddb2"
+uuid: "25ac00ea-200c-81b0-91d3-946e49a140fd"
+horo: 2
 typography:
-  partition: permission
+  partition: vocabulary
   bondDegree: 27
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - digital
-    - document
-    - has
-    - law
-    - merge
-    - sti
-    - type
-  matrix:
-    - collapse
-    - digital
-    - document
-    - has
-    - law
-    - merge
-    - sti
-    - type
-  backlinks:
-    - collapse
-    - digital
-    - document
-    - has
-    - law
-    - merge
-    - sti
-    - type
 signatures:
-  computationUuid: "ae805ea7-45b9-8765-9223-657bf925a9cd"
+  computationUuid: "20dce9a0-7f1c-899d-98a4-125f1f3da923"
   stages:
     - stage: path
-      stageUuid: "0dd33fcc-1bdc-8f75-9d99-2bbacd5fe351"
+      stageUuid: "efc994d3-d09d-8938-bd46-50428da49db2"
     - stage: trinity
-      stageUuid: "fd7dbc2b-f089-86da-88ab-5c230c2bd104"
+      stageUuid: "3abb3a01-12ec-8059-8bd8-18057472f107"
     - stage: boundary
-      stageUuid: "54f2734c-2733-87f6-88da-0957add7f148"
+      stageUuid: "249ca906-fc81-8b91-9940-27e5fde23277"
     - stage: links
-      stageUuid: "a1e7e8c7-8564-83e3-ba8e-7a0b2b91eba7"
+      stageUuid: "f1675bd1-7098-8dfe-96a0-29783514398a"
     - stage: horo
-      stageUuid: "fa37739a-571b-8e8e-83ac-943dded3e1e8"
+      stageUuid: "f431c85b-6499-8b11-9637-4b59a017c1fe"
     - stage: seal
-      stageUuid: "7c13018c-2e91-8017-8f70-7a53c129387d"
+      stageUuid: "2fa9cb99-fa58-8710-a770-8c8a23f43bf4"
     - stage: uuid
-      stageUuid: "8f537bfd-f854-8a43-b593-97abf0640e19"
+      stageUuid: "74cb4c3e-2767-83fd-bc26-fd3326f003aa"
 version: 2
 ---
 # permission

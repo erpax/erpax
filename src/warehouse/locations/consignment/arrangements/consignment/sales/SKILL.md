@@ -1,81 +1,31 @@
 ---
 name: sales
 description: "Use when recording a consignee's sale to an end-customer that triggers IFRS-15 §B78 control transfer — revenue recognition, COGS derecognition, commission calculation, inventory decrement, and GL journal booking. The consignment sale-event collection."
-atomPath: warehouse/locations/consignment/arrangements/consignment/sales
-coordinate: warehouse/locations/consignment/arrangements/consignment/sales · 5/round · ee1ab03a
-contentUuid: "1b5891df-1e6a-5f4e-ad78-a589649a2f4f"
-diamondUuid: "ffdddc1e-2d21-8a9e-a930-b705524191c0"
-uuid: "ee1ab03a-a3a9-8b75-bad2-8dfeb6a401bb"
-horo: 5
-bonds:
-  in:
-    - access
-    - accounting
-    - commission
-    - consignment
-    - devices
-    - law
-    - opportunity
-    - receipts
-    - standard
-  out:
-    - access
-    - accounting
-    - commission
-    - devices
-    - law
-    - opportunity
-    - receipts
-    - standard
+atomPath: "warehouse/locations/consignment/arrangements/consignment/sales"
+coordinate: "warehouse/locations/consignment/arrangements/consignment/sales · 1/base · 81b313e2"
+contentUuid: "9decb81c-a4ac-5beb-b900-1ff5c3f4391a"
+diamondUuid: "c552359e-ec4b-8ca8-aa00-a99f9a01f64a"
+uuid: "81b313e2-5e0c-8504-bd98-f888762f171f"
+horo: 1
 typography:
   partition: warehouse
   bondDegree: 37
-  neighbors: []
 standards:
   - "IFRS IAS-2 §34 cost-of-inventories-recognised-as-expense"
   - "IFRS IFRS-15 §31 satisfaction-of-performance-obligation"
   - "IFRS IFRS-15 §38 point-in-time-control-transfer"
   - "IFRS IFRS-15 §B77-B78 consignment-control"
-  - "ISO-19011:2018 audit-trail consignment-sale-evidence"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time sale-date"
+  - "ISO-8601-1:2019 date-time sale-date`"
   - "SOX §404 internal-controls revenue-completeness TOM-AR-04"
   - "US-GAAP ASC-606-10-25-30 control-passing"
   - "US-GAAP ASC-606-10-55-79 consignment-indicators"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - arrangements
-    - balance
-    - close
-    - entries
-    - entry
-    - horo
-    - inventories
-    - invoices
-    - law
-    - take
-  matrix:
-    - access
-    - accounting
-    - commission
-    - devices
-    - law
-    - opportunity
-    - receipts
-    - standard
-  backlinks:
-    - access
-    - accounting
-    - commission
-    - devices
-    - law
-    - opportunity
-    - receipts
-    - standard
 signatures:
-  computationUuid: "e0a9430c-f94c-89b4-a473-3edbacec15c0"
+  computationUuid: "60202dc7-9f5f-8ab6-bf52-6b7a831b8aa2"
   stages:
     - stage: path
       stageUuid: "51d29834-c311-8ea0-96b4-5d7412d932d9"
@@ -86,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "8d62d6f4-7be9-82df-bdb7-279f12ab4288"
     - stage: horo
-      stageUuid: "7db4ab2c-f4c5-8592-bdd0-e14458fd15f7"
+      stageUuid: "979c600b-9f19-861d-b1b8-a2d27a0fb4ad"
     - stage: seal
       stageUuid: "07de05d5-e98a-80e0-b971-8d39d97683f4"
     - stage: uuid
-      stageUuid: "6a3dcdfe-edda-8278-ae15-4e378228e3d7"
+      stageUuid: "2e689c99-102e-83ed-9b34-d4f238ed5235"
 version: 2
 ---
 # consignment-sales

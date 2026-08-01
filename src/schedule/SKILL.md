@@ -2,140 +2,18 @@
 name: schedule
 description: "Use when assigning work to calendar slots — resource schedules, shift rosters, project timelines, appointment booking. The time-coordinate commitment."
 atomPath: schedule
-coordinate: schedule · 1/base · f259804d
-contentUuid: "85623ceb-8a59-5c7e-b2ad-b344428750ff"
-diamondUuid: "a07fbbc7-5e73-8d26-9d39-04c16af9b7b7"
-uuid: "f259804d-d866-8b75-8bf6-e7422d5a67a6"
-horo: 1
-bonds:
-  in:
-    - backlog
-    - begin
-    - bookings
-    - cohort
-    - course
-    - cropplan
-    - dose
-    - horo
-    - incident
-    - irrigation
-    - kpi
-    - law
-    - maximum
-    - metric
-    - moisture
-    - planting
-    - propagation
-    - recommended
-    - reported
-    - resources
-    - roadmap
-    - run
-    - runbook
-    - season
-    - shifts
-    - timezone
-    - trend
-  out:
-    - backlog
-    - begin
-    - bookings
-    - cohort
-    - course
-    - cropplan
-    - dose
-    - horo
-    - incident
-    - irrigation
-    - kpi
-    - law
-    - maximum
-    - metric
-    - moisture
-    - planting
-    - propagation
-    - recommended
-    - reported
-    - resources
-    - roadmap
-    - run
-    - runbook
-    - season
-    - shifts
-    - timezone
-    - trend
+coordinate: "schedule · 5/round · 7b95a050"
+contentUuid: "81025497-83d6-5890-95b7-8fb974f5828f"
+diamondUuid: "1e201c04-0197-80c4-905e-942aaf8477b3"
+uuid: "7b95a050-0862-8234-82c1-1da07126cf1b"
+horo: 5
 typography:
   partition: schedule
   bondDegree: 81
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - begin
-    - bookings
-    - horo
-    - law
-    - resources
-    - shifts
-  matrix:
-    - backlog
-    - begin
-    - bookings
-    - cohort
-    - course
-    - cropplan
-    - dose
-    - horo
-    - incident
-    - irrigation
-    - kpi
-    - law
-    - maximum
-    - metric
-    - moisture
-    - planting
-    - propagation
-    - recommended
-    - reported
-    - resources
-    - roadmap
-    - run
-    - runbook
-    - season
-    - shifts
-    - timezone
-    - trend
-  backlinks:
-    - backlog
-    - begin
-    - bookings
-    - cohort
-    - course
-    - cropplan
-    - dose
-    - horo
-    - incident
-    - irrigation
-    - kpi
-    - law
-    - maximum
-    - metric
-    - moisture
-    - planting
-    - propagation
-    - recommended
-    - reported
-    - resources
-    - roadmap
-    - run
-    - runbook
-    - season
-    - shifts
-    - timezone
-    - trend
 signatures:
-  computationUuid: "ae55bb48-3d64-82ff-bb33-5dd932f1c3f4"
+  computationUuid: "d4ea902e-7221-8215-8882-9e6608654014"
   stages:
     - stage: path
       stageUuid: "259af7f0-2e78-856a-89aa-7896763108ce"
@@ -146,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "413a0365-ee02-8e3d-b919-72b871054848"
     - stage: horo
-      stageUuid: "1f4dd7b9-1c69-8e41-b7be-1d7d9c0846d1"
+      stageUuid: "1a7667eb-f1a9-82a3-9ad9-419356270f47"
     - stage: seal
-      stageUuid: "362ab0f2-ddb9-80d5-88fe-cf7f64b0dfd2"
+      stageUuid: "1bb48b25-5485-8342-8157-3ee8c8db0514"
     - stage: uuid
-      stageUuid: "0ffd5ee1-b939-8a6a-8908-91b95646afbc"
+      stageUuid: "4a5516be-f235-8043-808c-d3ac2ebedc90"
 version: 2
 ---
 # schedule

@@ -1,63 +1,35 @@
 ---
 name: remix
 description: "Use when reasoning about remix as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/remix
-coordinate: remix · 7/descent · 3c76411a
-contentUuid: "ad374dd7-2ff9-5be5-8c47-ba3deaef4ea7"
-diamondUuid: "206f6d23-14d6-89c1-b32e-2f5c1b8b71cb"
-uuid: "3c76411a-c77c-8590-896f-97107f7ac76c"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/remix"
+coordinate: "vocabulary/remix · 2/share · 50de35ed"
+contentUuid: "d40b0317-531f-53bb-84d4-6d672d6a848f"
+diamondUuid: "7da41e1a-5dfb-8b64-bb0b-f59ef68f2481"
+uuid: "50de35ed-1832-8080-b928-ff5029d73651"
+horo: 2
 typography:
-  partition: remix
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "ba603c43-654d-8a78-b0dd-e98a75fc1531"
+  computationUuid: "59466ee1-5e3c-88d2-a63e-390a55082d8c"
   stages:
     - stage: path
-      stageUuid: "0362d902-6a7c-8804-b7ef-e1672414b6b6"
+      stageUuid: "e2049750-804c-8913-ade3-2ce8d9a1b5de"
     - stage: trinity
-      stageUuid: "634528af-0057-859a-98d4-5d911d548ead"
+      stageUuid: "e9e67a82-dad1-8a66-add8-f6b5cdc71bea"
     - stage: boundary
-      stageUuid: "34ab1bf0-d3a6-8e8f-ae32-0e1c77c06c81"
+      stageUuid: "782b0608-8dd2-8d73-acf7-91b88dabdfb4"
     - stage: links
-      stageUuid: "6ae51360-951e-872f-abaf-64fa62dfb930"
+      stageUuid: "572c9b5d-3d3e-8cb1-804a-d5c548377a14"
     - stage: horo
-      stageUuid: "add36164-e795-81d6-8848-faa6255e74cf"
+      stageUuid: "2a8230db-3910-80ce-bb2f-df06d25b50f6"
     - stage: seal
-      stageUuid: "0f9865cc-bf84-80a7-9ccb-e291ea6c1b66"
+      stageUuid: "1fd3e901-655f-8c2d-84d5-f1c770993317"
     - stage: uuid
-      stageUuid: "9cb3478b-99b0-8fb1-88f3-24910f967621"
+      stageUuid: "dc742fdb-f593-89ec-884e-ff61763b3a7c"
 version: 2
 ---
 # remix

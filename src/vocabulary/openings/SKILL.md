@@ -1,73 +1,35 @@
 ---
 name: openings
 description: "Use when reasoning about openings as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/openings
-coordinate: openings · 2/share · a31c428c
-contentUuid: "420c1ad3-8c65-5a68-a3a5-092d30524f42"
-diamondUuid: "3ad65eb4-afdc-8bd8-89be-d474468afd15"
-uuid: "a31c428c-ee52-8801-acea-8b3863a88f26"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - job
-    - law
-    - merge
-    - sti
-    - total
-  out:
-    - collapse
-    - job
-    - law
-    - merge
-    - sti
-    - total
+atomPath: "vocabulary/openings"
+coordinate: "vocabulary/openings · 1/base · 94e2fc14"
+contentUuid: "101f3063-d049-5933-8041-b5260a8a6aee"
+diamondUuid: "e879b77a-d064-8623-b41a-f235fb20c237"
+uuid: "94e2fc14-307f-8362-bb00-fe44b1b11c99"
+horo: 1
 typography:
-  partition: openings
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - job
-    - law
-    - merge
-    - sti
-    - total
-  matrix:
-    - collapse
-    - job
-    - law
-    - merge
-    - sti
-    - total
-  backlinks:
-    - collapse
-    - job
-    - law
-    - merge
-    - sti
-    - total
 signatures:
-  computationUuid: "a9d2b8b4-f1ed-8c77-9e28-f7e63765a42f"
+  computationUuid: "e993694c-8fb4-8104-88c2-7059f95da9a1"
   stages:
     - stage: path
-      stageUuid: "9fbb3417-1da1-89b5-adb1-fb8a7ba48311"
+      stageUuid: "19f3be0f-9b8d-8a21-bdba-b0742915bec5"
     - stage: trinity
-      stageUuid: "a5061366-6cee-896b-a50f-781f5dc4ff56"
+      stageUuid: "4fa63c95-b058-82eb-af6a-386b07b1c63c"
     - stage: boundary
-      stageUuid: "3c4e75f1-4b8d-82d3-8d83-534c71ccb4a1"
+      stageUuid: "6721c85c-d45c-896e-bb69-f1d5b52d9e5f"
     - stage: links
-      stageUuid: "e2979f8a-0fb3-8465-86d4-7ed79f994b6d"
+      stageUuid: "9f697fa8-ff60-876d-9b2f-6f698c0bcf10"
     - stage: horo
-      stageUuid: "e144a4c5-0130-8932-bdf2-00f3aeff3132"
+      stageUuid: "e69d3184-ebee-8348-8b2e-4795f9e855b2"
     - stage: seal
-      stageUuid: "b2fbcc7b-bc47-8beb-870c-1844d77f0b86"
+      stageUuid: "cf7909ec-4c09-8c03-91a9-efe6b76f9b02"
     - stage: uuid
-      stageUuid: "6db3c146-eb6a-85fd-9728-3291ace8b581"
+      stageUuid: "feac2bb3-ca8d-82c7-a362-b2f30d6fbc43"
 version: 2
 ---
 # openings

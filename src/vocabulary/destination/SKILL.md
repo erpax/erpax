@@ -1,73 +1,35 @@
 ---
 name: destination
 description: "Use when reasoning about destination as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/destination
-coordinate: destination · 1/base · 8a77af32
-contentUuid: "2f0b392b-96e5-5349-ac2f-be0fc8e6cde4"
-diamondUuid: "3a7f0654-42a0-8e0a-b3e8-c498471c3c59"
-uuid: "8a77af32-1872-854a-8e3a-095d0616082f"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - shipping
-    - sti
-    - tourist
-  out:
-    - collapse
-    - law
-    - merge
-    - shipping
-    - sti
-    - tourist
+atomPath: "vocabulary/destination"
+coordinate: "vocabulary/destination · 5/round · 4a84722b"
+contentUuid: "57cd830e-c8c6-5631-92d3-10613d988d30"
+diamondUuid: "6301665f-3e08-8ec9-b333-4fd50e96f629"
+uuid: "4a84722b-33a8-8189-ad2a-763929871b1c"
+horo: 5
 typography:
-  partition: destination
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - shipping
-    - sti
-    - tourist
-  matrix:
-    - collapse
-    - law
-    - merge
-    - shipping
-    - sti
-    - tourist
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - shipping
-    - sti
-    - tourist
 signatures:
-  computationUuid: "4b379fd5-458f-82da-aaed-2cdc41726e1e"
+  computationUuid: "6e9de4e9-c55f-8921-b2dd-861e8c12c60b"
   stages:
     - stage: path
-      stageUuid: "b53517f2-6be3-8bbd-b0b2-86fe107c0b74"
+      stageUuid: "1bf5e57b-40fb-8959-93f5-9a0102f45e2a"
     - stage: trinity
-      stageUuid: "be6e34db-67c9-83e9-b3d5-af85d66edff5"
+      stageUuid: "3518d2f7-637a-850b-8f40-9dbc320c5627"
     - stage: boundary
-      stageUuid: "fa252a9c-a304-8ae5-85ed-238ebeed75ec"
+      stageUuid: "f61d40c8-ee7e-856d-a242-35ca15b85a3f"
     - stage: links
-      stageUuid: "8e3662fe-5562-8e2a-aee3-d7bfba401f1a"
+      stageUuid: "f6cc4516-8197-8660-96d7-6ffdf0dd94f3"
     - stage: horo
-      stageUuid: "3ac8592c-dea3-8250-975a-397e786427db"
+      stageUuid: "3d0b2d1b-fdba-8c5a-ad3f-198d2cba876a"
     - stage: seal
-      stageUuid: "b7abada6-2f53-8a12-a4ca-8b05e5a4400a"
+      stageUuid: "b52a9fe7-1a2a-8c57-81a3-ed38954cb70d"
     - stage: uuid
-      stageUuid: "9b7d6713-b9c1-8c1c-9ff9-3c7ea5b7662e"
+      stageUuid: "ad0a2ffa-9fa7-8298-9069-187c9d371125"
 version: 2
 ---
 # destination

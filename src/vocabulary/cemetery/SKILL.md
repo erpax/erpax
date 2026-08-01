@@ -1,58 +1,35 @@
 ---
 name: cemetery
 description: Use when reasoning about cemetery — A graveyard.
-atomPath: vocabulary/cemetery
-coordinate: cemetery · 7/descent · 2157871b
-contentUuid: "2317ea90-db81-523a-921f-b255274141ad"
-diamondUuid: "870ab055-8dd1-8d20-a3ed-b57b6e6414a5"
-uuid: "2157871b-7501-8d9b-b0aa-c515a1dc73cc"
-horo: 7
-bonds:
-  in:
-    - law
-    - place
-    - thing
-  out:
-    - law
-    - place
-    - thing
+atomPath: "vocabulary/cemetery"
+coordinate: "vocabulary/cemetery · 2/share · 9d54d54b"
+contentUuid: "584e6079-4f37-586a-9158-fb4e8c38aa2e"
+diamondUuid: "c1fbafa4-da28-8b77-9021-ced6f0282093"
+uuid: "9d54d54b-4900-86d2-a2f4-eb3d423315ed"
+horo: 2
 typography:
-  partition: cemetery
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - place
-    - thing
-  matrix:
-    - law
-    - place
-    - thing
-  backlinks:
-    - law
-    - place
-    - thing
 signatures:
-  computationUuid: "aa05f8ec-bdb4-896d-b47b-87230432bf27"
+  computationUuid: "459f6ae7-068b-8e1f-bb93-8b61649d05fe"
   stages:
     - stage: path
-      stageUuid: "cbc2d282-95e7-8e5d-82a8-5f3a4d823191"
+      stageUuid: "609ef092-b730-83a0-87fb-1c8db677378b"
     - stage: trinity
-      stageUuid: "35fbef8c-96c2-86a7-bb63-246286d53346"
+      stageUuid: "5cae0bb5-4cbe-8c9a-b596-f7c48eff0fe7"
     - stage: boundary
-      stageUuid: "0e2e2dab-7750-891c-b472-b1d2fff82e25"
+      stageUuid: "a4baf2d3-ee06-84dd-b4a3-b628a74d4d39"
     - stage: links
-      stageUuid: "0b4d063b-e0d5-818f-9ada-e20e6fa8ccaf"
+      stageUuid: "89368d06-4935-8d56-84d2-c69542969244"
     - stage: horo
-      stageUuid: "7297ae36-022f-829c-b7fc-2ee3298160d4"
+      stageUuid: "9589c821-927b-8992-9cbb-af6cafc8e5cb"
     - stage: seal
-      stageUuid: "4eef8251-98f2-84ad-b71a-528f2552b1b5"
+      stageUuid: "2ac37b1c-7f4a-808c-a4fe-d369ccd63d86"
     - stage: uuid
-      stageUuid: "87a8afb5-abae-86c3-bf22-6c6d35998647"
+      stageUuid: "d85d87b5-2f99-8aba-a851-ccb7f5d03e41"
 version: 2
 ---
 # cemetery

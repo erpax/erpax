@@ -1,72 +1,35 @@
 ---
 name: append
 description: "Use when reasoning about append as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/append
-coordinate: append · 8/crest · d59a1e4a
-contentUuid: "3c6a562f-3a5e-57a5-a62f-d9a3726fcdc3"
-diamondUuid: "a17f2a12-8cd9-83c7-9d18-461879617e48"
-uuid: "d59a1e4a-b30f-8e6f-8559-a11e1bc1dc9e"
-horo: 8
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-    - unavoidable
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-    - unavoidable
+atomPath: "vocabulary/append"
+coordinate: "vocabulary/append · 1/base · 9e1a2a8f"
+contentUuid: "11c03405-ad0e-5703-938e-df088b63872c"
+diamondUuid: "4dfaf4d6-c1c3-8040-b75a-47bd8a898f99"
+uuid: "9e1a2a8f-8478-879a-8f80-fab75ae457ff"
+horo: 1
 typography:
-  partition: append
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-    - unavoidable
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-    - unavoidable
 signatures:
-  computationUuid: "6e6300e6-16e9-8a8c-ab23-e943b95ae5aa"
+  computationUuid: "03af3ed8-ba7f-809c-8945-1bf29cd30f84"
   stages:
     - stage: path
-      stageUuid: "025ab29d-04c5-87f0-91ff-4536c6594a8f"
+      stageUuid: "48a0193a-d365-8184-9417-91e880d806aa"
     - stage: trinity
-      stageUuid: "953236bd-c6e8-8773-8cf8-cd85ba4cf8e3"
+      stageUuid: "cb043753-26d4-8ca8-ade2-7265d9383527"
     - stage: boundary
-      stageUuid: "d9c92c0b-6f56-8fbe-8d9d-e26c35eef223"
+      stageUuid: "2ac69d16-facf-88ed-9ea1-af64fce4c8a4"
     - stage: links
-      stageUuid: "90b00049-e0c6-8b74-93a2-c601d7fe338d"
+      stageUuid: "05a79972-c83f-865a-a90b-7b59385714e1"
     - stage: horo
-      stageUuid: "0e534e8f-6349-843f-b5a4-18bf2fc482ac"
+      stageUuid: "a751eb47-c743-8edf-ab27-3e39f31f85c5"
     - stage: seal
-      stageUuid: "ba086144-4cb4-80cf-9ce9-3485d9e55cef"
+      stageUuid: "1adc887d-c09b-8950-aabe-294bbf4cc34c"
     - stage: uuid
-      stageUuid: "1c16f8a2-cd59-8910-8990-feaf2a8c5fa4"
+      stageUuid: "b3ee3b0a-7247-898e-bd37-29bf7807d9ec"
 version: 2
 ---
 # append

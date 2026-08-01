@@ -2,64 +2,18 @@
 name: skill
 description: "Use when an agent loads a capability — the agent's competence is the union of its loaded skills (a skill one agent loads, the team has); loading is idempotent."
 atomPath: "agent/skill"
-coordinate: "agent/skill · 2/share · f5048d69"
-contentUuid: "9f65b818-92a3-56fe-8524-2e5c306e9127"
-diamondUuid: "67640e67-a27a-87fc-8a33-68fc946b13a3"
-uuid: "f5048d69-00b9-8540-98c6-0dc80e51fb09"
-horo: 2
-bonds:
-  in:
-    - agent
-    - baked
-    - capacity
-    - holographic
-    - law
-    - merge
-    - team
-    - typography
-  out:
-    - agent
-    - baked
-    - capacity
-    - holographic
-    - law
-    - merge
-    - team
-    - typography
+coordinate: "agent/skill · 5/round · e83276f4"
+contentUuid: "dbbb2c0c-42d8-557e-9fa2-bede6842c3ac"
+diamondUuid: "71253f63-d8cb-8464-9632-87cc8f301594"
+uuid: "e83276f4-8948-8310-9e96-ac35c36b00a8"
+horo: 5
 typography:
   partition: agent
   bondDegree: 25
-  neighbors:
-    - agent
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agent
-    - holographic
-    - law
-    - merge
-    - team
-  matrix:
-    - agent
-    - baked
-    - capacity
-    - holographic
-    - law
-    - merge
-    - team
-    - typography
-  backlinks:
-    - agent
-    - baked
-    - capacity
-    - holographic
-    - law
-    - merge
-    - team
-    - typography
 signatures:
-  computationUuid: "79f910f3-31ff-8bfc-bb6f-8b7155e9559c"
+  computationUuid: "1a20e254-af60-88c8-9dba-31857b616078"
   stages:
     - stage: path
       stageUuid: "a0a5cef4-9ccd-80d8-b657-cfa59b62e915"
@@ -68,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "50fc9599-2cd2-866c-b250-24b2ccd2c1a2"
     - stage: links
-      stageUuid: "40ed0d1e-8d92-8b1a-b6a0-e463355eed21"
+      stageUuid: "d10b9ce1-92a5-8a56-91eb-9e554f750da3"
     - stage: horo
-      stageUuid: "390836d1-0071-85f1-8036-e717e321cf0b"
+      stageUuid: "2dd7a3a8-3869-8dad-b587-4a8cf5f52d75"
     - stage: seal
-      stageUuid: "314f0044-b646-87e0-ba60-77309e790bcf"
+      stageUuid: "2854c9c6-8372-8a76-9e59-a0264e44ece4"
     - stage: uuid
-      stageUuid: "23a4acc8-bded-827b-8832-2f4c4bd5cd1f"
+      stageUuid: "c140b4ee-17b7-8620-9217-fe99e9e533c7"
 version: 2
 ---
 # agent/skill — an agent loads a capability

@@ -1,73 +1,35 @@
 ---
 name: announcement
 description: "Use when reasoning about announcement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/announcement
-coordinate: announcement · 1/base · 801cfc4e
-contentUuid: "e6fcd586-b9de-5da8-a673-85eb4e933077"
-diamondUuid: "9b781302-1642-8fe5-a8fd-a940458f64d0"
-uuid: "801cfc4e-d1cd-853d-8691-28223f1e4523"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - location
-    - merge
-    - special
-    - sti
-  out:
-    - collapse
-    - law
-    - location
-    - merge
-    - special
-    - sti
+atomPath: "vocabulary/announcement"
+coordinate: "vocabulary/announcement · 8/crest · a185ca1e"
+contentUuid: "01d3b177-2ace-5e8e-9c41-8e8cf46eb35e"
+diamondUuid: "c936ad50-d842-8f2a-9182-6a65b49f52c6"
+uuid: "a185ca1e-b96d-8f3a-8491-d44e339cc7c1"
+horo: 8
 typography:
-  partition: announcement
-  bondDegree: 20
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 22
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - location
-    - merge
-    - special
-    - sti
-  matrix:
-    - collapse
-    - law
-    - location
-    - merge
-    - special
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - location
-    - merge
-    - special
-    - sti
 signatures:
-  computationUuid: "0a818edc-acf6-89c6-9561-651234258117"
+  computationUuid: "7ee877d5-ea32-83d3-bd19-9932c3448ab9"
   stages:
     - stage: path
-      stageUuid: "2ed8d9e4-7c5a-8fb3-b910-6520229e7237"
+      stageUuid: "e2e14291-82f8-8087-947d-3ef74154167b"
     - stage: trinity
-      stageUuid: "97430ca7-8ec9-8fde-99e6-b0b096679b7a"
+      stageUuid: "647fd063-65c0-8b2e-b830-2ecfb610e9de"
     - stage: boundary
-      stageUuid: "b51a5c0e-2d14-8775-929c-81c902f31cb7"
+      stageUuid: "9c135167-5bfb-8a37-aa01-40311f6bc5f5"
     - stage: links
-      stageUuid: "76ff5b8f-acd9-8992-9b1d-530ed892615f"
+      stageUuid: "231106c5-d9db-8b8e-b51d-98246fa4c062"
     - stage: horo
-      stageUuid: "f00eb243-b34d-844c-8b96-52b7694b32b6"
+      stageUuid: "9735c678-4850-8311-a886-556be2fb06f1"
     - stage: seal
-      stageUuid: "af2e4b26-76e9-8e43-ae10-4bc92f2acea3"
+      stageUuid: "fd8b5e71-a538-83d5-b6fe-da52064a6f55"
     - stage: uuid
-      stageUuid: "abb2b807-fef0-8750-a7e1-7a48b6c3dbf3"
+      stageUuid: "34f71811-0494-8f08-a69a-3b1011a8a08a"
 version: 2
 ---
 # announcement

@@ -1,73 +1,35 @@
 ---
 name: key
 description: "Use when reasoning about key as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/key
-coordinate: key · 2/share · ec665c6b
-contentUuid: "e2e4bf41-1240-5150-9ec6-9641336617a8"
-diamondUuid: "2a95cb5c-9de2-804e-a2c2-82e6ec0cdbfa"
-uuid: "ec665c6b-d6fb-8d4a-a585-7559452b273d"
+atomPath: "vocabulary/key"
+coordinate: "vocabulary/key · 2/share · f65dd7e3"
+contentUuid: "c3351584-3140-511b-906a-60036cd376fd"
+diamondUuid: "8446cb14-c06a-8748-a896-dd44761d2e91"
+uuid: "f65dd7e3-a0bf-8ed3-a093-e84a35b17f2a"
 horo: 2
-bonds:
-  in:
-    - ch
-    - collapse
-    - law
-    - merge
-    - musical
-    - sti
-  out:
-    - ch
-    - collapse
-    - law
-    - merge
-    - musical
-    - sti
 typography:
-  partition: key
+  partition: vocabulary
   bondDegree: 28
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - ch
-    - collapse
-    - law
-    - merge
-    - musical
-    - sti
-  matrix:
-    - ch
-    - collapse
-    - law
-    - merge
-    - musical
-    - sti
-  backlinks:
-    - ch
-    - collapse
-    - law
-    - merge
-    - musical
-    - sti
 signatures:
-  computationUuid: "5213a2db-a86b-811e-8e8d-4265318b5050"
+  computationUuid: "2dd57d4f-dc99-8323-a6ec-e64359d575d9"
   stages:
     - stage: path
-      stageUuid: "b023bf0b-3337-8d3f-b049-f1abb5f0e7dd"
+      stageUuid: "6477d149-027e-8cc0-8a32-179809c09f1b"
     - stage: trinity
-      stageUuid: "1b0a3157-7eba-8937-b7e8-e9025bd02d15"
+      stageUuid: "d1ceef5c-11c4-8bc2-a6e1-616819edc933"
     - stage: boundary
-      stageUuid: "637d2cc6-f406-8f0d-a2d0-e4dc16f27718"
+      stageUuid: "bdfa80b0-55ac-8c55-9c5b-a2d5bb70d866"
     - stage: links
-      stageUuid: "a344f737-e29d-8ece-ba8a-1541982624d5"
+      stageUuid: "ff35fa86-4de0-87dd-84cd-994ba6d57dec"
     - stage: horo
-      stageUuid: "cb6c4c95-3e1d-8ca6-8d6f-ad89119ae38d"
+      stageUuid: "72cba245-c160-8505-8361-b22f08021146"
     - stage: seal
-      stageUuid: "633e5a49-0607-8de3-8b1b-b518d79d7cd8"
+      stageUuid: "9ede680d-f1bb-8203-8754-043c8d1e9e09"
     - stage: uuid
-      stageUuid: "419d82c3-8c0c-8dcd-b729-034df0d01c4a"
+      stageUuid: "3b23bf9e-e4f6-80b0-ac7a-3d80253479ec"
 version: 2
 ---
 # key

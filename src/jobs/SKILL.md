@@ -2,94 +2,19 @@
 name: jobs
 description: "Use when offloading work to Payload's jobs queue — defining tasks/workflows, queuing jobs, scheduling/cron, retries, or moving slow hook logic to background processing."
 atomPath: jobs
-coordinate: "jobs · 8/crest · e2df8e3d"
-contentUuid: "d30ad9c4-1ff8-5013-aa68-8d11de3128f4"
-diamondUuid: "b72be163-523b-8de0-8315-70eebf9136d5"
-uuid: "e2df8e3d-283a-81c6-8f3d-1265c24373ab"
-horo: 8
-bonds:
-  in:
-    - batch
-    - bindings
-    - currency
-    - desire
-    - event
-    - hooks
-    - idempotency
-    - law
-    - manufacturing
-    - observability
-    - optimize
-    - port
-    - reconcile
-    - run
-    - spec
-    - supto
-  out:
-    - batch
-    - bindings
-    - currency
-    - desire
-    - event
-    - hooks
-    - idempotency
-    - law
-    - manufacturing
-    - observability
-    - optimize
-    - port
-    - reconcile
-    - run
-    - spec
-    - supto
+coordinate: "jobs · 4/weave · 1c7f876d"
+contentUuid: "5fbf84fe-1763-50d0-87bb-d048356f7832"
+diamondUuid: "384d6d75-330d-8855-bfef-5e9d77fe4a36"
+uuid: "1c7f876d-bcc7-856d-a125-ddcbe10dfe9e"
+horo: 4
 typography:
   partition: jobs
   bondDegree: 0
-  neighbors: []
 standards:
   - "Naredba-N-18"
 bindings: []
-neighbors:
-  wikilink:
-    - hooks
-    - law
-    - optimize
-  matrix:
-    - batch
-    - bindings
-    - currency
-    - desire
-    - event
-    - hooks
-    - idempotency
-    - law
-    - manufacturing
-    - observability
-    - optimize
-    - port
-    - reconcile
-    - run
-    - spec
-    - supto
-  backlinks:
-    - batch
-    - bindings
-    - currency
-    - desire
-    - event
-    - hooks
-    - idempotency
-    - law
-    - manufacturing
-    - observability
-    - optimize
-    - port
-    - reconcile
-    - run
-    - spec
-    - supto
 signatures:
-  computationUuid: "ae67c7f8-ff1d-8c34-8b2f-c2c8447c28e9"
+  computationUuid: "544e74bb-0f8e-8bc7-b3c3-0a65f74c3664"
   stages:
     - stage: path
       stageUuid: "2219ff37-c700-8086-99fd-8affa98b0a2b"
@@ -100,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e5de92d1-2a09-89d8-9376-144538b7fc48"
     - stage: horo
-      stageUuid: "0bd0ac2f-229b-8eeb-8ddb-9053b5a937d3"
+      stageUuid: "3d93b978-42d0-869b-8ec1-22174057e09a"
     - stage: seal
       stageUuid: "ebbe4f7e-5f39-8414-966e-e8759fca6b84"
     - stage: uuid
-      stageUuid: "1e8dfc00-d980-8231-85a8-581f2f19cc9d"
+      stageUuid: "c48b8bdc-3859-82af-b7ae-f1f09760c625"
 version: 2
 ---
 # jobs — the jobs queue (background work)

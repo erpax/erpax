@@ -1,138 +1,34 @@
 ---
 name: bottleneck
 description: "Use when identifying or tracking the limiting factor in a flow — the slowest operation in a sequence, the resource with lowest capacity. The theory-of-constraints node."
-atomPath: vocabulary/bottleneck
-coordinate: bottleneck · 8/crest · 0a4dcd10
-contentUuid: "8f88d73e-4f08-5fb0-8522-38692067b495"
-diamondUuid: "513fd392-f4b5-85c5-9881-4153782b1d9d"
-uuid: "0a4dcd10-bc69-8e48-8abd-def041344d29"
-horo: 8
-bonds:
-  in:
-    - agriculture
-    - allocation
-    - capacity
-    - centers
-    - crisis
-    - crop
-    - diffusion
-    - enterprisebudget
-    - flow
-    - market
-    - network
-    - pasture
-    - propagation
-    - purity
-    - science
-    - season
-    - spacing
-    - sparsity
-    - throughput
-    - tunnel
-    - unavoidable
-    - wellbeing
-    - yield
-  out:
-    - agriculture
-    - allocation
-    - capacity
-    - centers
-    - crisis
-    - crop
-    - diffusion
-    - enterprisebudget
-    - flow
-    - market
-    - network
-    - pasture
-    - propagation
-    - purity
-    - science
-    - season
-    - spacing
-    - sparsity
-    - throughput
-    - tunnel
-    - unavoidable
-    - wellbeing
-    - yield
+atomPath: "vocabulary/bottleneck"
+coordinate: "vocabulary/bottleneck · 7/descent · d50ac61d"
+contentUuid: "adfd5761-f897-508e-a4fd-483d64406db5"
+diamondUuid: "349c4771-558a-8699-9e94-63a94539912e"
+uuid: "d50ac61d-ab81-89ef-bf69-f5391b4b5cfc"
+horo: 7
 typography:
-  partition: bottleneck
+  partition: vocabulary
   bondDegree: 71
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - capacity
-    - centers
-    - flow
-    - throughput
-  matrix:
-    - agriculture
-    - allocation
-    - capacity
-    - centers
-    - crisis
-    - crop
-    - diffusion
-    - enterprisebudget
-    - flow
-    - market
-    - network
-    - pasture
-    - propagation
-    - purity
-    - science
-    - season
-    - spacing
-    - sparsity
-    - throughput
-    - tunnel
-    - unavoidable
-    - wellbeing
-    - yield
-  backlinks:
-    - agriculture
-    - allocation
-    - capacity
-    - centers
-    - crisis
-    - crop
-    - diffusion
-    - enterprisebudget
-    - flow
-    - market
-    - network
-    - pasture
-    - propagation
-    - purity
-    - science
-    - season
-    - spacing
-    - sparsity
-    - throughput
-    - tunnel
-    - unavoidable
-    - wellbeing
-    - yield
 signatures:
-  computationUuid: "fd89742f-770c-8591-9f9d-cfc1fd5a708a"
+  computationUuid: "a0e07703-690c-862d-8d29-2570e3ff3e28"
   stages:
     - stage: path
-      stageUuid: "b56b7fd9-ac6b-82a9-ab3e-e904fc56e779"
+      stageUuid: "4f616de2-b02d-830c-b05b-9c56c4bc0792"
     - stage: trinity
-      stageUuid: "5f924ad4-f2b3-8a8e-8053-b0d3a79885ba"
+      stageUuid: "7e08bd0d-698c-8d72-b432-a17a7b38cb12"
     - stage: boundary
-      stageUuid: "28f42100-b078-84c2-8dd2-0585f7e37ec1"
+      stageUuid: "ba80b039-c1dc-835a-9aaa-844f3b1a9dbd"
     - stage: links
-      stageUuid: "98954f6c-44c0-8cd4-96c1-fe3bb1f0cfb4"
+      stageUuid: "42baa341-203d-8fc5-9717-5647f2b3fa46"
     - stage: horo
-      stageUuid: "802960ae-ad90-85a7-b877-578c0a32691b"
+      stageUuid: "9866e282-bd12-8f93-a74a-397f609e059f"
     - stage: seal
-      stageUuid: "44bf117b-9552-8429-b8cc-8356878c524b"
+      stageUuid: "17e888c5-507d-8173-9373-6450bcab54af"
     - stage: uuid
-      stageUuid: "3713c71b-d56e-8ca8-9b88-0d991cc0d350"
+      stageUuid: "b2b587d5-8982-87e8-8672-51862604fc17"
 version: 2
 ---
 # bottleneck

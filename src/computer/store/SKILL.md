@@ -2,179 +2,19 @@
 name: store
 description: "Use when reasoning about store as a hardware facet of [[computer]] — vocabulary pivot to @/store; nested not duplicated."
 atomPath: "computer/store"
-coordinate: "computer/store · 8/crest · 6d382bb5"
-contentUuid: "c2759d9a-8746-5615-8ba5-c90e543b8f39"
-diamondUuid: "2e5a2347-1d85-8c9e-8e5f-3ce97c9cdd03"
-uuid: "6d382bb5-0cc6-846a-a447-8749388c1782"
-horo: 8
-bonds:
-  in:
-    - auto
-    - bike
-    - book
-    - clothing
-    - computer
-    - convenience
-    - department
-    - electronics
-    - equipment
-    - furniture
-    - garden
-    - goods
-    - grocery
-    - hardware
-    - has
-    - home
-    - jewelry
-    - law
-    - liquor
-    - mens
-    - mobile
-    - movie
-    - music
-    - offered
-    - office
-    - online
-    - outlet
-    - parts
-    - pet
-    - phone
-    - rental
-    - returns
-    - shoe
-    - sporting
-    - store
-    - toy
-    - wholesale
-  out:
-    - auto
-    - bike
-    - book
-    - clothing
-    - computer
-    - convenience
-    - department
-    - electronics
-    - equipment
-    - furniture
-    - garden
-    - goods
-    - grocery
-    - hardware
-    - has
-    - home
-    - jewelry
-    - law
-    - liquor
-    - mens
-    - mobile
-    - movie
-    - music
-    - offered
-    - office
-    - online
-    - outlet
-    - parts
-    - pet
-    - phone
-    - rental
-    - returns
-    - shoe
-    - sporting
-    - store
-    - toy
-    - wholesale
+coordinate: "computer/store · 4/weave · 0f6e26b8"
+contentUuid: "fa75afb3-e4e2-543a-8b41-19e851d0f075"
+diamondUuid: "205bc2c9-d2f3-8edc-9c0d-80614f638ee4"
+uuid: "0f6e26b8-fe8b-8006-a950-adf9f1c7aaeb"
+horo: 4
 typography:
   partition: computer
   bondDegree: 150
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - computer
-    - law
-    - merge
-    - store
-  matrix:
-    - auto
-    - bike
-    - book
-    - clothing
-    - computer
-    - convenience
-    - department
-    - electronics
-    - equipment
-    - furniture
-    - garden
-    - goods
-    - grocery
-    - hardware
-    - has
-    - home
-    - jewelry
-    - law
-    - liquor
-    - mens
-    - mobile
-    - movie
-    - music
-    - offered
-    - office
-    - online
-    - outlet
-    - parts
-    - pet
-    - phone
-    - rental
-    - returns
-    - shoe
-    - sporting
-    - store
-    - toy
-    - wholesale
-  backlinks:
-    - auto
-    - bike
-    - book
-    - clothing
-    - computer
-    - convenience
-    - department
-    - electronics
-    - equipment
-    - furniture
-    - garden
-    - goods
-    - grocery
-    - hardware
-    - has
-    - home
-    - jewelry
-    - law
-    - liquor
-    - mens
-    - mobile
-    - movie
-    - music
-    - offered
-    - office
-    - online
-    - outlet
-    - parts
-    - pet
-    - phone
-    - rental
-    - returns
-    - shoe
-    - sporting
-    - store
-    - toy
-    - wholesale
 signatures:
-  computationUuid: "c38aa360-841e-817e-8f38-954d7e2b1459"
+  computationUuid: "5b3a20bc-136b-89f7-88dc-f785c077c9f7"
   stages:
     - stage: path
       stageUuid: "4c1c2e21-dcee-819f-b2b3-3dc4dc1e9afa"
@@ -185,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "998045b2-36df-8f9e-930e-4cf68feeffe5"
     - stage: horo
-      stageUuid: "e0f69af7-8ff7-8b54-afc2-41b76bbae613"
+      stageUuid: "d7579f04-1b71-8f0e-baa5-c2a444fbb2cf"
     - stage: seal
       stageUuid: "a412e88d-05cf-8e59-b4f2-5992b0fe4014"
     - stage: uuid
-      stageUuid: "5b94fdf1-7395-88f0-a7cc-337743f86b2f"
+      stageUuid: "9b52042f-97a7-8769-9dc6-0f07827c71e4"
 version: 2
 ---
 # computer/store — hardware facet

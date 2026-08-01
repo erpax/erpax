@@ -1,194 +1,34 @@
 ---
 name: harvest
 description: "Use when modelling the gathering of matured output from a growth process — the IAS-41 transformation event where a biological asset becomes inventory, and the per-week harvest window (the produce calendar) over which a crop yields. Harvest is the realization point: value created by living growth crosses into sellable stock; the window is non-uniform — a 1 in the calendar marks presence, not constant volume."
-atomPath: vocabulary/harvest
-coordinate: harvest · 7/descent · 1bf1e6d2
-contentUuid: "a0ea8c7a-5017-5d0f-8d7d-cb8da2889e3e"
-diamondUuid: "80bc42e1-ee12-81d4-9be8-6be8fa16b018"
-uuid: "1bf1e6d2-ec7c-8ac2-a423-78532cc21789"
-horo: 7
-bonds:
-  in:
-    - agriculture
-    - animal
-    - apiculture
-    - aquaculture
-    - assets
-    - balance
-    - biomass
-    - choice
-    - commerce
-    - compost
-    - covercrop
-    - crop
-    - cropplan
-    - degreeday
-    - dormancy
-    - entries
-    - fodder
-    - forestry
-    - grade
-    - hardiness
-    - items
-    - lactation
-    - lineage
-    - livestock
-    - maturity
-    - perennial
-    - planting
-    - pollination
-    - postharvest
-    - recognition
-    - season
-    - share
-    - tunnel
-    - withdrawal
-    - yield
-  out:
-    - agriculture
-    - animal
-    - apiculture
-    - aquaculture
-    - assets
-    - balance
-    - biomass
-    - choice
-    - commerce
-    - compost
-    - covercrop
-    - crop
-    - cropplan
-    - degreeday
-    - dormancy
-    - entries
-    - fodder
-    - forestry
-    - grade
-    - hardiness
-    - items
-    - lactation
-    - lineage
-    - livestock
-    - maturity
-    - perennial
-    - planting
-    - pollination
-    - postharvest
-    - recognition
-    - season
-    - share
-    - tunnel
-    - withdrawal
-    - yield
+atomPath: "vocabulary/harvest"
+coordinate: "vocabulary/harvest · 2/share · 885c7859"
+contentUuid: "f24c005b-79ed-5a52-9c27-d60714e7fecd"
+diamondUuid: "091a1c8d-58bb-8725-8336-aef439b1291d"
+uuid: "885c7859-72e0-874f-a2e4-b08709dd5a13"
+horo: 2
 typography:
-  partition: harvest
-  bondDegree: 111
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 97
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - assets
-    - balance
-    - commerce
-    - crop
-    - entries
-    - items
-    - planting
-    - recognition
-    - season
-    - share
-    - yield
-  matrix:
-    - agriculture
-    - animal
-    - apiculture
-    - aquaculture
-    - assets
-    - balance
-    - biomass
-    - choice
-    - commerce
-    - compost
-    - covercrop
-    - crop
-    - cropplan
-    - degreeday
-    - dormancy
-    - entries
-    - fodder
-    - forestry
-    - grade
-    - hardiness
-    - items
-    - lactation
-    - lineage
-    - livestock
-    - maturity
-    - perennial
-    - planting
-    - pollination
-    - postharvest
-    - recognition
-    - season
-    - share
-    - tunnel
-    - withdrawal
-    - yield
-  backlinks:
-    - agriculture
-    - animal
-    - apiculture
-    - aquaculture
-    - assets
-    - balance
-    - biomass
-    - choice
-    - commerce
-    - compost
-    - covercrop
-    - crop
-    - cropplan
-    - degreeday
-    - dormancy
-    - entries
-    - fodder
-    - forestry
-    - grade
-    - hardiness
-    - items
-    - lactation
-    - lineage
-    - livestock
-    - maturity
-    - perennial
-    - planting
-    - pollination
-    - postharvest
-    - recognition
-    - season
-    - share
-    - tunnel
-    - withdrawal
-    - yield
 signatures:
-  computationUuid: "c22be7ec-37c5-89ff-8af3-dd39c9ad9e4f"
+  computationUuid: "0ac6935f-eb99-8271-be2c-d17faca82beb"
   stages:
     - stage: path
-      stageUuid: "88a976ed-73dd-8615-9dcb-bd8e4c7a261e"
+      stageUuid: "9f1f2fad-d288-8aa1-a4f9-c4e121468e1a"
     - stage: trinity
-      stageUuid: "329b9b24-aa58-8faf-b31b-a9eb3a427e7e"
+      stageUuid: "a826e2a7-3c9c-883e-90dd-e58493fa1866"
     - stage: boundary
-      stageUuid: "4d714460-41ff-8cee-9a96-499940a621a4"
+      stageUuid: "7c142fba-4f0a-894b-b087-b910521254b1"
     - stage: links
-      stageUuid: "6f3b75b2-80ee-8c3f-acce-a6f34c69010b"
+      stageUuid: "d779cede-6b7b-8931-82e2-02898b95ac76"
     - stage: horo
-      stageUuid: "dc8492d5-3bb9-889b-9d73-132a7e910a4d"
+      stageUuid: "5f443f05-daa6-82c3-b66c-915a4c72639b"
     - stage: seal
-      stageUuid: "c9ca9766-5471-82b6-bb75-359b6cb1383b"
+      stageUuid: "3dd08655-daa5-844f-a105-13c3c219a90c"
     - stage: uuid
-      stageUuid: "d79cfb71-1585-85c0-acf7-22c8c9dee3cc"
+      stageUuid: "7cc71c3d-4a68-8e09-bd52-9200d10c1fb2"
 version: 2
 ---
 # harvest — the gathering event, and the window over which a crop yields

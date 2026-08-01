@@ -1,63 +1,35 @@
 ---
 name: pamphlet
 description: "Use when reasoning about pamphlet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/pamphlet
-coordinate: pamphlet · 5/round · 55b1e92f
-contentUuid: "ee0cd0ad-ad8c-52d8-a54a-310bbd12cc8f"
-diamondUuid: "1e62cd85-14c5-8964-bc9d-8321dc9c8a47"
-uuid: "55b1e92f-c148-838d-941c-9f8e91e38283"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/pamphlet"
+coordinate: "vocabulary/pamphlet · 8/crest · d220c23c"
+contentUuid: "b57608af-cf89-569e-ba7d-04ac97b22247"
+diamondUuid: "f63249d0-660c-811a-a818-949ab2ff86e1"
+uuid: "d220c23c-ece7-8b12-8675-5340e66a3d14"
+horo: 8
 typography:
-  partition: pamphlet
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "7cd92ac8-80b7-875f-9242-792035886df1"
+  computationUuid: "7da18072-bf8e-8306-8fe8-8fcc3d7a7d22"
   stages:
     - stage: path
-      stageUuid: "1169119c-5e1c-883a-87e1-577b5d1e7633"
+      stageUuid: "31f2a821-46b0-8106-8b8e-a0e23553d547"
     - stage: trinity
-      stageUuid: "79767472-30db-8d6e-8761-98563e96ce1d"
+      stageUuid: "3ef6c9db-340c-8e4b-b434-44bc1d0f0110"
     - stage: boundary
-      stageUuid: "c509f340-6dbf-87a7-9fbb-ca66c370bbfe"
+      stageUuid: "1d0c32bd-81e6-8d0d-9a24-8df8bbcef286"
     - stage: links
-      stageUuid: "28748381-594f-82f4-a39d-4fcbf0b1e151"
+      stageUuid: "645dd019-4201-8571-abd3-30684040c11f"
     - stage: horo
-      stageUuid: "11d6d281-e1a5-89c0-b3e8-2cc9a986a2b2"
+      stageUuid: "5da4787d-006e-890d-a7b7-8e462da12ff6"
     - stage: seal
-      stageUuid: "eb96f8c5-78b7-8174-98d3-e0b44ea3e881"
+      stageUuid: "c593014a-c23a-8b26-a97e-3886f1bfdbb4"
     - stage: uuid
-      stageUuid: "8042a3f3-3acb-8bdd-8883-40badd0a5a2e"
+      stageUuid: "b412399a-a016-81a5-a684-402800bde408"
 version: 2
 ---
 # pamphlet

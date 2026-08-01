@@ -1,53 +1,35 @@
 ---
 name: discusses
 description: Use when reasoning about discusses — Specifies the CreativeWork associated with the UserComment.
-atomPath: vocabulary/discusses
-coordinate: discusses · 5/round · 5bde8458
-contentUuid: "14ccd189-e8ad-51a5-8a34-c3fbc0e0d1a9"
-diamondUuid: "9c686899-df92-8d3c-a963-68c89048f478"
-uuid: "5bde8458-adb5-87b3-bcdf-49d7b78e3e94"
-horo: 5
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/discusses"
+coordinate: "vocabulary/discusses · 4/weave · 7086ea2d"
+contentUuid: "dab971c3-1cef-5699-a2c8-9dd84d9b778e"
+diamondUuid: "5f0f8fa7-5d52-8532-b4f5-7c13036fa892"
+uuid: "7086ea2d-e258-8986-a41d-15042539c75b"
+horo: 4
 typography:
-  partition: discusses
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "1cdd9b2f-a780-8974-b8e8-4caa3adf8b8a"
+  computationUuid: "ff162560-2c3e-89d6-a588-32eb9932257b"
   stages:
     - stage: path
-      stageUuid: "559df589-7a59-8314-8d74-95af477c257e"
+      stageUuid: "4c00d9b3-2eca-8b83-8db1-a0b9f7daef6d"
     - stage: trinity
-      stageUuid: "37295140-9f29-83cc-a43b-39d57952410b"
+      stageUuid: "c9199940-1cb1-85c5-9967-61b72e7aee8f"
     - stage: boundary
-      stageUuid: "0ae9139f-2f2b-8955-80c1-761f29d40a04"
+      stageUuid: "c2ce8d00-4255-8b16-ab32-ee9b3f8742d4"
     - stage: links
-      stageUuid: "4bf9116c-ab9d-8bc9-91a7-8884b0a951e3"
+      stageUuid: "3a128e68-42b3-8b81-b41c-fe3346fc7c5a"
     - stage: horo
-      stageUuid: "310e0baa-4943-802a-b968-a6399a514b0c"
+      stageUuid: "bf67a892-3d26-82fb-a4a7-d7d04d0ebb2b"
     - stage: seal
-      stageUuid: "47c4c6f9-487a-8aa7-903a-560bfc9d8e13"
+      stageUuid: "ce40712e-4c9e-8eb4-88ab-fe7c668c69e9"
     - stage: uuid
-      stageUuid: "6b8048e6-ee3f-80f6-bb6c-38728b0003ed"
+      stageUuid: "9781b078-f7a6-838a-80a8-e64d55367bcb"
 version: 2
 ---
 # discusses

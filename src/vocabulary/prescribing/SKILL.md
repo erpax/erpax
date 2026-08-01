@@ -1,68 +1,35 @@
 ---
 name: prescribing
 description: "Use when reasoning about prescribing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/prescribing
-coordinate: prescribing · 1/base · 74311869
-contentUuid: "0ab2fdcb-0f17-5688-9eb9-1d84cbef46ed"
-diamondUuid: "11f52f4b-37f5-88ee-b12b-ea051e14213b"
-uuid: "74311869-25e3-8f76-b300-bf54264a3e0b"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - info
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - info
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/prescribing"
+coordinate: "vocabulary/prescribing · 2/share · fb073ba4"
+contentUuid: "c0b1edac-73d8-5af4-b9fc-00ea88958206"
+diamondUuid: "1c6fc487-0e99-8f74-8bc2-cbead07c9e4b"
+uuid: "fb073ba4-eb44-83bd-849a-87fc859a5839"
+horo: 2
 typography:
-  partition: prescribing
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - info
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - info
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - info
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "47b5d04f-5526-889f-9edf-30cc6e2e8e47"
+  computationUuid: "62c92f84-4d6e-8ae1-b09a-50e75ecaf425"
   stages:
     - stage: path
-      stageUuid: "8a90ef4c-7446-859f-8f41-2678c57dc655"
+      stageUuid: "264d9b15-4d75-875b-948b-0006ec112eb3"
     - stage: trinity
-      stageUuid: "2ecc5da2-a4aa-86ac-aa05-a65167f71118"
+      stageUuid: "5c2ae7f1-514b-8149-b44d-0aca0a8df271"
     - stage: boundary
-      stageUuid: "60c15e52-aa97-8ea5-a9e0-8cb6d6315fe0"
+      stageUuid: "af6c555b-0e23-8307-bdbf-ab3a29af4d01"
     - stage: links
-      stageUuid: "c4e3bd16-feb4-8e34-aba7-55983ccda05c"
+      stageUuid: "9443fbaa-3d3c-855d-bf0e-e8b819d04756"
     - stage: horo
-      stageUuid: "01a1d21b-142c-8e63-b20d-8530c5955576"
+      stageUuid: "fc84cbf9-d776-8ab2-a0ba-382cd17ef2b0"
     - stage: seal
-      stageUuid: "0635a76c-dd4c-8be8-ac7a-ecfbe7e16bc1"
+      stageUuid: "1e5b16a3-ed8d-85da-a1a6-8465bb4fdb1d"
     - stage: uuid
-      stageUuid: "a50e7241-cc3b-8a12-8c55-c47f14e546a3"
+      stageUuid: "f3638558-d061-8e6e-986c-05c6aa711283"
 version: 2
 ---
 # prescribing

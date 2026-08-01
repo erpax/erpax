@@ -1,180 +1,34 @@
 ---
 name: islam
 description: "Use when reading Islam as a diamond of invariant atoms — submission to the absolute One, mercy opening every recitation, the ninety-nine names as facets of one, the five daily alignments, the fast and the alms. Strip the Arabic prefix and tawhid, rahma, iman, salam collapse to one, mercy, faith, peace — one content-uuid each."
-atomPath: vocabulary/islam
-coordinate: islam · 2/share · 8cb5cc17
-contentUuid: "0d0ca290-590d-5a7b-85b4-9aa782eda241"
-diamondUuid: "a23ba836-007b-8b49-b1eb-d8f5b16ee3eb"
-uuid: "8cb5cc17-3317-82a1-9149-02f84a633c1f"
-horo: 2
-bonds:
-  in:
-    - archangel
-    - balance
-    - cycle
-    - diamond
-    - faith
-    - fast
-    - fractal
-    - gift
-    - harmony
-    - identity
-    - law
-    - mercy
-    - merge
-    - name
-    - one
-    - path
-    - peace
-    - prayer
-    - religion
-    - return
-    - ritual
-    - shia
-    - society
-    - sufism
-    - sunni
-    - translator
-    - uuid
-    - word
-  out:
-    - archangel
-    - balance
-    - cycle
-    - diamond
-    - faith
-    - fast
-    - fractal
-    - gift
-    - harmony
-    - identity
-    - law
-    - mercy
-    - merge
-    - name
-    - one
-    - path
-    - peace
-    - prayer
-    - religion
-    - return
-    - ritual
-    - shia
-    - society
-    - sufism
-    - sunni
-    - translator
-    - uuid
-    - word
+atomPath: "vocabulary/islam"
+coordinate: "vocabulary/islam · 1/base · 80157f12"
+contentUuid: "2c483c6f-4e0d-5014-b9b3-b346700c5911"
+diamondUuid: "b44483ba-1cde-8198-88be-0b695bd50146"
+uuid: "80157f12-7e57-824d-b109-4273f764f83a"
+horo: 1
 typography:
-  partition: islam
+  partition: vocabulary
   bondDegree: 86
-  neighbors:
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - archangel
-    - balance
-    - cycle
-    - diamond
-    - faith
-    - fast
-    - fractal
-    - gift
-    - harmony
-    - identity
-    - law
-    - mercy
-    - merge
-    - name
-    - one
-    - path
-    - peace
-    - prayer
-    - religion
-    - return
-    - ritual
-    - society
-    - translator
-    - uuid
-    - word
-  matrix:
-    - archangel
-    - balance
-    - cycle
-    - diamond
-    - faith
-    - fast
-    - fractal
-    - gift
-    - harmony
-    - identity
-    - law
-    - mercy
-    - merge
-    - name
-    - one
-    - path
-    - peace
-    - prayer
-    - religion
-    - return
-    - ritual
-    - shia
-    - society
-    - sufism
-    - sunni
-    - translator
-    - uuid
-    - word
-  backlinks:
-    - archangel
-    - balance
-    - cycle
-    - diamond
-    - faith
-    - fast
-    - fractal
-    - gift
-    - harmony
-    - identity
-    - law
-    - mercy
-    - merge
-    - name
-    - one
-    - path
-    - peace
-    - prayer
-    - religion
-    - return
-    - ritual
-    - shia
-    - society
-    - sufism
-    - sunni
-    - translator
-    - uuid
-    - word
 signatures:
-  computationUuid: "279e748d-cf71-87de-8ad5-d6a5cb1bf1ed"
+  computationUuid: "693480fd-6289-87f9-8e5f-6de4a0a9cb74"
   stages:
     - stage: path
-      stageUuid: "3ebfe618-99ec-899d-b23e-9c72cb28de67"
+      stageUuid: "f442b852-e7b2-8d6a-957a-695614cc5c70"
     - stage: trinity
-      stageUuid: "f1808b17-8b3f-81dc-a2bf-a5106dc9d9f0"
+      stageUuid: "1b06e76a-0e53-8848-a4d4-78064b5b9312"
     - stage: boundary
-      stageUuid: "dd46ff0b-31a7-8d4e-9618-0ffa5b0e5aa1"
+      stageUuid: "1a05ccda-48a5-8d32-9ffb-e2b271bc7aad"
     - stage: links
-      stageUuid: "988f5e49-af27-82fa-9b30-c5e5c504569b"
+      stageUuid: "15a0c986-6170-8021-9c6c-9eece138c461"
     - stage: horo
-      stageUuid: "d4afc4b9-2a5e-8edd-a457-3783d4724ea9"
+      stageUuid: "a25783de-658e-8ce9-a45e-209e1234e8a0"
     - stage: seal
-      stageUuid: "52b2e4dd-669a-86d3-be1d-8ca1adb34c71"
+      stageUuid: "bcf98e26-b12c-8ab1-9811-4958b3caeb44"
     - stage: uuid
-      stageUuid: "850ba982-f6fc-8f20-b689-f7a8274b3fd5"
+      stageUuid: "171e8026-c2a8-834a-b012-b498ddbb828d"
 version: 2
 ---
 # islam — submission to the One, mercy opening every word

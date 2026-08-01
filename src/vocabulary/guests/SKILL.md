@@ -1,73 +1,35 @@
 ---
 name: guests
 description: "Use when reasoning about guests as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/guests
-coordinate: guests · 7/descent · 61a4ece8
-contentUuid: "71aa5b6b-38aa-5320-bcc5-1711181869dc"
-diamondUuid: "a8720c67-402e-8f53-9039-1bd658efcce8"
-uuid: "61a4ece8-7e8a-8388-a5d9-40b298daa452"
-horo: 7
-bonds:
-  in:
-    - additional
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
-  out:
-    - additional
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
+atomPath: "vocabulary/guests"
+coordinate: "vocabulary/guests · 8/crest · 4b3c1d78"
+contentUuid: "81c47b89-df0a-559d-94ea-14cf10e2a646"
+diamondUuid: "f7253ae4-b62d-8a1e-a799-75b733931bea"
+uuid: "4b3c1d78-9d4d-8753-bb33-904f75bb67a9"
+horo: 8
 typography:
-  partition: guests
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - additional
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
-  matrix:
-    - additional
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
-  backlinks:
-    - additional
-    - collapse
-    - law
-    - merge
-    - number
-    - sti
 signatures:
-  computationUuid: "8b2229a2-7af5-8897-b947-ba912151c5ad"
+  computationUuid: "fc5145c5-3fb4-8c6e-9061-b01a5ed087f3"
   stages:
     - stage: path
-      stageUuid: "eb3b39f1-1e69-87ce-b97c-fe01d9b93c2d"
+      stageUuid: "0187e304-c52f-8652-821b-12aff4467799"
     - stage: trinity
-      stageUuid: "a3077b00-4645-89e9-8744-fd56bd12bd90"
+      stageUuid: "bd48bbe9-9bb5-88bc-9388-5ccbca82666e"
     - stage: boundary
-      stageUuid: "0af50f69-310e-867f-ade3-b92693dfcca6"
+      stageUuid: "b5b4c309-33a6-8d94-b6a6-dcb05828ce0e"
     - stage: links
-      stageUuid: "25651bd3-e78c-841b-ab4d-50ae28e89b7a"
+      stageUuid: "5b4c13e3-b178-84db-88e5-fe3e4aa0d062"
     - stage: horo
-      stageUuid: "c6420408-1265-89c6-8507-1dd5f7c154ec"
+      stageUuid: "19a9023c-fda2-85be-b8b0-98ea365a3019"
     - stage: seal
-      stageUuid: "1e3994eb-720e-8e96-a9b2-e8b02591b805"
+      stageUuid: "6ef84f0b-9680-8a5a-ae95-bac16753f61e"
     - stage: uuid
-      stageUuid: "1491f547-caf3-8a58-88b2-422bab2e43ab"
+      stageUuid: "6e59b04c-d02a-8ed8-ae38-9c0b5449c098"
 version: 2
 ---
 # guests

@@ -1,57 +1,34 @@
 ---
 name: endpoint
 description: Use when modelling one endpoint — the singular model of the endpoints collection (the plural store); an addressable interface where a service is reached.
-atomPath: vocabulary/endpoint
-coordinate: endpoint · 8/crest · 97250dab
-contentUuid: "c935a820-3ec5-5a58-b602-34ab021062b2"
-diamondUuid: "4d876cbb-d7cf-8ce7-82eb-187cf68ead60"
-uuid: "97250dab-ea96-8e45-ae7e-68c2644edb8d"
-horo: 8
-bonds:
-  in:
-    - api
-    - balance
-    - endpoints
-  out:
-    - api
-    - balance
-    - endpoints
+atomPath: "vocabulary/endpoint"
+coordinate: "vocabulary/endpoint · 5/round · 00a877f4"
+contentUuid: "f67bc871-f991-5f7a-ac59-290b90261354"
+diamondUuid: "e7f98774-74a2-843e-b350-f813b8aa7260"
+uuid: "00a877f4-42af-8601-9818-8b6d02f3d36c"
+horo: 5
 typography:
-  partition: endpoint
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - api
-    - balance
-    - endpoints
-  matrix:
-    - api
-    - balance
-    - endpoints
-  backlinks:
-    - api
-    - balance
-    - endpoints
 signatures:
-  computationUuid: "d2a62803-a7f7-89d3-bf51-72f449a5b629"
+  computationUuid: "3ac557f8-7e1e-8e14-a175-b206aabaabeb"
   stages:
     - stage: path
-      stageUuid: "3ca9fe6a-775b-83a9-b89e-7d5e1023e91a"
+      stageUuid: "f0358055-c312-8892-bb57-324c13c5091a"
     - stage: trinity
-      stageUuid: "6ecefae3-b282-892b-a54c-8f545ef331d9"
+      stageUuid: "4f06a340-5f5d-8a43-94fc-a7f2f89effac"
     - stage: boundary
-      stageUuid: "38f014d9-6fef-861a-b7e7-b433ba35614b"
+      stageUuid: "b7a97281-5db6-8b38-b74d-af830361c45c"
     - stage: links
-      stageUuid: "c01136b6-b67e-879f-8138-cca14bc65536"
+      stageUuid: "9222266f-56cc-8564-b964-fcb83379dc83"
     - stage: horo
-      stageUuid: "9e90bd0a-360d-8bee-8ec5-9e7ce1ccfbe0"
+      stageUuid: "cc496254-fd32-8d82-a4b7-082a1ce4eab7"
     - stage: seal
-      stageUuid: "74d2a9eb-5aec-87dc-96e7-2a71dd1f1954"
+      stageUuid: "693298b0-f144-8584-a2ed-94387571ff7d"
     - stage: uuid
-      stageUuid: "8a1f2a0d-c729-8c7a-a3ba-55354f9f1227"
+      stageUuid: "6bca3d1c-0ec0-8ecb-a24d-eb5d47768a4c"
 version: 2
 ---
 # endpoint — the model of one [[endpoints]] row

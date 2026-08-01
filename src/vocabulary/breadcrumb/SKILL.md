@@ -1,53 +1,35 @@
 ---
 name: breadcrumb
 description: Use when reasoning about breadcrumb — A set of links that can help a user understand and navigate a website hierarchy.
-atomPath: vocabulary/breadcrumb
-coordinate: breadcrumb · 4/weave · 5cefc459
-contentUuid: "8ee11a0b-83fa-595f-b94c-ca445947a0ce"
-diamondUuid: "10804503-5e66-8773-bd13-69c4cc1569a7"
-uuid: "5cefc459-5748-8731-ac64-8977cc90fd86"
-horo: 4
-bonds:
-  in:
-    - law
-    - list
-  out:
-    - law
-    - list
+atomPath: "vocabulary/breadcrumb"
+coordinate: "vocabulary/breadcrumb · 2/share · bc2cf8b4"
+contentUuid: "45c6eaf0-7d72-5bac-892c-476c9950051d"
+diamondUuid: "c2013961-ec97-81b6-bb9c-37deb9266222"
+uuid: "bc2cf8b4-98ce-8042-ac56-190553502a48"
+horo: 2
 typography:
-  partition: breadcrumb
+  partition: vocabulary
   bondDegree: 7
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - list
-  matrix:
-    - law
-    - list
-  backlinks:
-    - law
-    - list
 signatures:
-  computationUuid: "59f1487b-cdfe-8b0b-b1e2-bfee5faeeea8"
+  computationUuid: "c35b2ddd-1e37-80f2-bfc2-cf5944e4167d"
   stages:
     - stage: path
-      stageUuid: "4bc2ecb3-b7c9-8ce6-a0b0-c39b52f63167"
+      stageUuid: "054d5f3a-8e3d-807a-837c-965884778c45"
     - stage: trinity
-      stageUuid: "2e95bb65-bb0b-8efc-a881-c484b807c676"
+      stageUuid: "2fc6dbac-a3ad-8edf-9e28-99e44717660b"
     - stage: boundary
-      stageUuid: "13414bb6-e9d4-8693-aa1f-5b40c7d4bc22"
+      stageUuid: "608e6f65-97d3-8da7-be19-ed77b35d97a4"
     - stage: links
-      stageUuid: "f6e348ba-3935-8949-a414-dafd4ac5aac7"
+      stageUuid: "5b95513f-1eb2-8311-a2d9-bb5fbeb069c2"
     - stage: horo
-      stageUuid: "66162317-87d8-8cd3-82b7-912205da81bd"
+      stageUuid: "fb0f701c-67e2-813b-906b-2534c99073f3"
     - stage: seal
-      stageUuid: "25f866e1-66aa-8797-bb52-df3f4ee25e79"
+      stageUuid: "801eeb08-ef1d-8e83-be81-fdda7f270d63"
     - stage: uuid
-      stageUuid: "dbc2bf3d-261d-8016-a3fb-3c33df2a8564"
+      stageUuid: "c96af1db-9754-8873-aea2-234773a3b03e"
 version: 2
 ---
 # breadcrumb

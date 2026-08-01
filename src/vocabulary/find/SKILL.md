@@ -1,72 +1,35 @@
 ---
 name: find
 description: "Use when reasoning about find as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/find
-coordinate: find · 8/crest · f18b3ed0
-contentUuid: "74c10a54-ee88-55be-b5da-2e77acdf2e82"
-diamondUuid: "8bb3d7a7-0c46-85c2-95ec-ef7c8375e815"
-uuid: "f18b3ed0-ed11-8196-be8d-77e26e5846f0"
+atomPath: "vocabulary/find"
+coordinate: "vocabulary/find · 8/crest · dd40dc93"
+contentUuid: "4248245c-6f98-518c-a536-b9a649251197"
+diamondUuid: "c7038e97-1600-8cbb-88b5-c825061ee42e"
+uuid: "dd40dc93-9a3c-8919-bd70-792fb96b808a"
 horo: 8
-bonds:
-  in:
-    - action
-    - collapse
-    - engine
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - engine
-    - law
-    - merge
-    - sti
 typography:
-  partition: find
+  partition: vocabulary
   bondDegree: 18
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - engine
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - engine
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "e8574ed5-7ee2-8739-a35e-aef9daa50c7a"
+  computationUuid: "300cba87-2576-8507-bfa3-7790ec6874b3"
   stages:
     - stage: path
-      stageUuid: "1c6b13d3-87a2-8ea4-b575-b54b8cc094d3"
+      stageUuid: "69209b03-5676-8216-825e-7dbe1a58b64c"
     - stage: trinity
-      stageUuid: "34ad1377-7c5f-8f29-b449-657f9e16bd91"
+      stageUuid: "ecf769d5-ad7c-87cc-ba75-ed34d4758909"
     - stage: boundary
-      stageUuid: "b8a4a5ad-d914-8ff1-915c-66473cab8d96"
+      stageUuid: "89ab27ab-f812-89c5-b1ee-7c6223245d84"
     - stage: links
-      stageUuid: "465a01bd-4a1b-8604-86dd-6fed95ecebcc"
+      stageUuid: "12b13583-dbef-8e3e-b240-2689023fcfe4"
     - stage: horo
-      stageUuid: "8c2232f2-4afa-8b00-8adf-4600226432ca"
+      stageUuid: "af71c0a8-53e4-8bb7-ad8b-b748bbfd1576"
     - stage: seal
-      stageUuid: "d5de8981-9c55-8541-a7c3-e4d96bfd0c06"
+      stageUuid: "91d3b9fd-3629-828c-b7f7-24b9ee8198a3"
     - stage: uuid
-      stageUuid: "1a17db9b-157e-8b16-9ba0-84e436c71293"
+      stageUuid: "fe68ced1-eb03-8917-9e0c-34b4997a67a4"
 version: 2
 ---
 # find

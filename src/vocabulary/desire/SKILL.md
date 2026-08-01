@@ -1,90 +1,34 @@
 ---
 name: desire
 description: "Use when reasoning about the demand seed of a market — the latent want that precedes any transaction. The one market atom you cannot manufacture exogenously; you reveal or awaken it, never inject it. If desire is the zero atom, no convenience, proof, or trendsetter reaches the market — you redefine the product onto a want that already exists."
-atomPath: vocabulary/desire
-coordinate: desire · 1/base · 05235025
-contentUuid: "452461bb-b80a-5813-89ee-37a6732e8137"
-diamondUuid: "8624c92a-f460-8e53-a1a0-492ead6930c7"
-uuid: "05235025-a40e-86c4-87d6-9b68f28b5123"
-horo: 1
-bonds:
-  in:
-    - awareness
-    - diffusion
-    - distribution
-    - friction
-    - habit
-    - jobs
-    - law
-    - market
-    - network
-    - proof
-  out:
-    - awareness
-    - diffusion
-    - distribution
-    - friction
-    - habit
-    - jobs
-    - law
-    - market
-    - network
-    - proof
+atomPath: "vocabulary/desire"
+coordinate: "vocabulary/desire · 8/crest · 98cad302"
+contentUuid: "75fe08a2-d20f-55e9-b11d-0a1c04af2459"
+diamondUuid: "3aaa7c8b-5d7c-8e2b-834c-4a32e61551c5"
+uuid: "98cad302-2f04-8179-933b-9e2fd2e5ba97"
+horo: 8
 typography:
-  partition: desire
+  partition: vocabulary
   bondDegree: 34
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - awareness
-    - distribution
-    - friction
-    - habit
-    - jobs
-    - law
-    - market
-    - proof
-  matrix:
-    - awareness
-    - diffusion
-    - distribution
-    - friction
-    - habit
-    - jobs
-    - law
-    - market
-    - network
-    - proof
-  backlinks:
-    - awareness
-    - diffusion
-    - distribution
-    - friction
-    - habit
-    - jobs
-    - law
-    - market
-    - network
-    - proof
 signatures:
-  computationUuid: "0b775848-a2f0-8eba-ae95-605c0cb78561"
+  computationUuid: "c0025efd-8710-81f6-9ab3-f2d842d9310d"
   stages:
     - stage: path
-      stageUuid: "eec6bfd3-2be4-80e0-b175-c8feb68d6d78"
+      stageUuid: "5955a49b-ee46-802a-976a-cc12bcd9f0bd"
     - stage: trinity
-      stageUuid: "396bc2d1-4183-8669-b3ac-2125f6334cbf"
+      stageUuid: "457727c4-6f7b-845b-a800-2891de42305c"
     - stage: boundary
-      stageUuid: "91c137e1-11cf-8278-a4b7-a357c65c355d"
+      stageUuid: "f89656e1-fb6a-8bc3-9f9a-5df53b025e3a"
     - stage: links
-      stageUuid: "4a1cb8c1-0d3d-87ad-bace-2d8eba537aeb"
+      stageUuid: "cdc3d16c-747d-81fd-a448-cc26ccda00e3"
     - stage: horo
-      stageUuid: "5ba7ae0f-8430-84bb-add2-33c22db325ae"
+      stageUuid: "40b8844c-b334-80b5-a1cf-ba415f4bd35c"
     - stage: seal
-      stageUuid: "64058f6d-ecce-8d28-b0a8-074083821801"
+      stageUuid: "2e0a4a0f-92b4-8aa0-b13e-d49f7f07a0df"
     - stage: uuid
-      stageUuid: "04ddc0db-a18b-8da7-a0cc-95c053dff4a5"
+      stageUuid: "62569e44-e827-87d5-a891-77a824f64d84"
 version: 2
 ---
 # desire — the demand seed (the one atom you cannot inject)

@@ -1,73 +1,35 @@
 ---
 name: it
 description: "Use when reasoning about it as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/it
-coordinate: it · 7/descent · 376a0db8
-contentUuid: "7f3e3bcb-61c7-5276-a098-8ee7a5814ad2"
-diamondUuid: "d014bc6c-85d5-8a96-b928-62995b8fa70c"
-uuid: "376a0db8-5899-8773-a083-38a4f7cddddd"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - nonprofit
-    - sti
-    - type
-  out:
-    - collapse
-    - law
-    - merge
-    - nonprofit
-    - sti
-    - type
+atomPath: "vocabulary/it"
+coordinate: "vocabulary/it · 4/weave · 331c1658"
+contentUuid: "270aad08-e752-528c-99b7-ba9522e7206c"
+diamondUuid: "96be2be2-ab5c-8309-a385-8fbeb9fb1f88"
+uuid: "331c1658-7101-83eb-841a-2096d238531e"
+horo: 4
 typography:
-  partition: it
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - nonprofit
-    - sti
-    - type
-  matrix:
-    - collapse
-    - law
-    - merge
-    - nonprofit
-    - sti
-    - type
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - nonprofit
-    - sti
-    - type
 signatures:
-  computationUuid: "4273be36-756a-8669-8977-e8f65b77fef3"
+  computationUuid: "4e202684-4671-86ee-a73c-3171fc5f3a34"
   stages:
     - stage: path
-      stageUuid: "a468d6a8-c69b-8517-a630-cd1128146fce"
+      stageUuid: "6f00ac25-8d87-875e-9388-77cd3675582c"
     - stage: trinity
-      stageUuid: "70a67d65-92c9-8860-9d41-66e44bfa719b"
+      stageUuid: "7aee8dd2-6da2-853f-a003-c11286e3551a"
     - stage: boundary
-      stageUuid: "8142f09c-d809-8ae9-981d-6192424267c8"
+      stageUuid: "5d13faa7-f5d4-8fe8-bbfb-9df90dff87b9"
     - stage: links
-      stageUuid: "8256ee48-fccb-8da7-ad43-12d64c81d4a3"
+      stageUuid: "f1d41a99-f573-8bbc-875e-0dded5781a99"
     - stage: horo
-      stageUuid: "72de772b-c27d-81f4-bb57-6307946fe7fc"
+      stageUuid: "cdb3f4cc-0dd6-8197-be31-aec87eb3ea25"
     - stage: seal
-      stageUuid: "0881d8c5-faaa-8615-895e-77d9ab4fcea1"
+      stageUuid: "1eca8bb5-41f5-83c5-bcd1-cff75f6ddbb5"
     - stage: uuid
-      stageUuid: "a36884f0-a8be-853c-a298-cf766338df0f"
+      stageUuid: "9103aa65-b1fd-8675-9e62-c81776905e20"
 version: 2
 ---
 # it

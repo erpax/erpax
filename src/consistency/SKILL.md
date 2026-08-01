@@ -2,75 +2,18 @@
 name: consistency
 description: "Use when enforcing or auditing data consistency — ACID properties, eventual consistency vs strong consistency, consistency models (read-after-write, causal), constraint enforcement, synchronization guarantees across replicas or shards."
 atomPath: consistency
-coordinate: "consistency · 7/descent · 2bbb3139"
-contentUuid: "c3ba5f8b-c9c0-5753-8f18-daf1ac77db67"
-diamondUuid: "f2915b48-2fc8-8af7-b069-377a6c449442"
-uuid: "2bbb3139-29a6-8f3d-8962-bac0462792b7"
-horo: 7
-bonds:
-  in:
-    - apply
-    - constraint
-    - corruption
-    - cost
-    - database
-    - identity
-    - law
-    - proof
-    - reconcile
-    - replication
-    - testing
-  out:
-    - apply
-    - constraint
-    - corruption
-    - cost
-    - database
-    - identity
-    - law
-    - proof
-    - reconcile
-    - replication
-    - testing
+coordinate: "consistency · 2/share · 200a7e55"
+contentUuid: "d0ec63c9-956b-538c-8032-f1a303c17bd4"
+diamondUuid: "e20cc054-b7ff-8a03-935a-b33e58320deb"
+uuid: "200a7e55-bbc7-83fa-bb47-a4f914d6716f"
+horo: 2
 typography:
   partition: consistency
   bondDegree: 33
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - constraint
-    - corruption
-    - database
-    - identity
-    - reconcile
-  matrix:
-    - apply
-    - constraint
-    - corruption
-    - cost
-    - database
-    - identity
-    - law
-    - proof
-    - reconcile
-    - replication
-    - testing
-  backlinks:
-    - apply
-    - constraint
-    - corruption
-    - cost
-    - database
-    - identity
-    - law
-    - proof
-    - reconcile
-    - replication
-    - testing
 signatures:
-  computationUuid: "3dc9c449-4889-859f-8f80-a625a7106f4d"
+  computationUuid: "71b055c5-617c-8cc0-9127-44a271fde349"
   stages:
     - stage: path
       stageUuid: "5a173b75-283c-8e8e-b372-6f955f1fa6ea"
@@ -81,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "db809132-84c8-8992-9b57-7a4bc35ac1c6"
     - stage: horo
-      stageUuid: "a4d7811a-15e7-8cd6-8ff6-0e50f52c3eaa"
+      stageUuid: "116d4332-e61a-80f2-8e2b-a2fa3fdf7def"
     - stage: seal
       stageUuid: "675e26be-78a1-8589-8c73-6740f640795a"
     - stage: uuid
-      stageUuid: "ca5dfb86-102c-8016-a203-5431369b6a86"
+      stageUuid: "10043254-8c25-8091-ad13-43c87c5f4736"
 version: 2
 ---
 # consistency

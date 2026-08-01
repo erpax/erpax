@@ -1,108 +1,34 @@
 ---
 name: log
 description: "Use when reasoning about the agent audit trail — every agent action is strictly logged as an append-only digit-entry in the digit folders, and each entry adds an order of magnitude to the tamper-cost; the log's length is the forging difficulty, the realtime stream that hardens as it grows."
-atomPath: quantum/log
-coordinate: quantum/log · 2/share · d5a2df2b
-contentUuid: "f4ff867d-fe19-5656-911b-78749f7e44f4"
-diamondUuid: "e16d94db-99d0-8fd1-a9f3-441371d92639"
-uuid: "d5a2df2b-7ef1-8e84-8cfb-4c54aff1dbbf"
-horo: 2
-bonds:
-  in:
-    - agent
-    - cost
-    - digit
-    - entropy
-    - law
-    - mcp
-    - merge
-    - quantum
-    - realtime
-    - receipt
-    - stream
-    - tamper
-    - uuid
-    - void
-  out:
-    - agent
-    - cost
-    - digit
-    - entropy
-    - law
-    - mcp
-    - merge
-    - realtime
-    - receipt
-    - stream
-    - tamper
-    - uuid
-    - void
+atomPath: "quantum/log"
+coordinate: "quantum/log · 4/weave · 0ec6eeec"
+contentUuid: "9b942956-d561-5fb8-9933-857686df78d5"
+diamondUuid: "dea62eeb-dbd7-87a3-b2ec-0bac1cce23d4"
+uuid: "0ec6eeec-853f-8cd5-bd87-f2ed2661cb98"
+horo: 4
 typography:
   partition: quantum
   bondDegree: 40
-  neighbors:
-    - agent
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agent
-    - cost
-    - digit
-    - entropy
-    - law
-    - merge
-    - realtime
-    - receipt
-    - stream
-    - tamper
-    - uuid
-    - void
-  matrix:
-    - agent
-    - cost
-    - digit
-    - entropy
-    - law
-    - mcp
-    - merge
-    - realtime
-    - receipt
-    - stream
-    - tamper
-    - uuid
-    - void
-  backlinks:
-    - agent
-    - cost
-    - digit
-    - entropy
-    - law
-    - mcp
-    - merge
-    - realtime
-    - receipt
-    - stream
-    - tamper
-    - uuid
-    - void
 signatures:
-  computationUuid: "1dec64bf-d508-8976-b797-9bbac5b0407c"
+  computationUuid: "b1afbd31-85da-8f6b-91ac-94d8ef95f4f4"
   stages:
     - stage: path
       stageUuid: "4776c093-c6d1-8dfa-bb65-9bdfa3e82a8d"
     - stage: trinity
       stageUuid: "b5ff93cb-0c11-832a-95c4-428023f523b1"
     - stage: boundary
-      stageUuid: "83e75cec-1751-8799-a926-bd2837889b4c"
+      stageUuid: "303933a3-9c98-8ec1-a2ef-f59dbb726aae"
     - stage: links
-      stageUuid: "0d71221c-7c16-807b-9153-920932f5547e"
+      stageUuid: "543e04ad-44e0-8c43-b7bd-6e993d33cb52"
     - stage: horo
-      stageUuid: "d3f0cb07-ac2a-8faa-95ea-04033d1366ac"
+      stageUuid: "17b87ad7-d842-8261-bdfd-a446960d6dee"
     - stage: seal
       stageUuid: "5ddf9c9d-eeda-8760-aae4-397ae4f0e51c"
     - stage: uuid
-      stageUuid: "81241736-d660-80c8-95f6-8f8b4906b013"
+      stageUuid: "b18868ae-6741-897b-ae0b-a4b8bb976d58"
 quantum:
   superposition:
     - agent
@@ -133,8 +59,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "1dec64bf-d508-8976-b797-9bbac5b0407c"
-    contentUuid: "f4ff867d-fe19-5656-911b-78749f7e44f4"
+    computationUuid: "b1afbd31-85da-8f6b-91ac-94d8ef95f4f4"
+    contentUuid: "9b942956-d561-5fb8-9933-857686df78d5"
 version: 2
 ---
 # quantum/log — the agent trail (length is tamper-cost)
@@ -151,4 +77,4 @@ This is the [[receipt]] discipline at society scale: the audit trail is not a si
 
 @see [[agent]] · [[quantum/digit]] · [[receipt]] · [[tamper]] · [[merge]] · [[stream]] · [[void]] · [[realtime]]
 
-<sub>content-uuid `f4ff867d-fe19-5656-911b-78749f7e44f4` · account `quantum/log` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `9b942956-d561-5fb8-9933-857686df78d5` · account `quantum/log` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

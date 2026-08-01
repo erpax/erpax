@@ -2,59 +2,19 @@
 name: scholarly
 description: "Use when reasoning about scholarly as a medical facet of [[medical]] — vocabulary pivot to @/scholarly; nested not duplicated."
 atomPath: "medical/scholarly"
-coordinate: "medical/scholarly · 4/weave · 0702128c"
-contentUuid: "08e1fc08-6995-5d11-9790-a2be28668f69"
-diamondUuid: "c79f1e0a-580c-8c9e-8c59-a09b445fe5b8"
-uuid: "0702128c-edf0-87f6-900a-b184f81c10e8"
-horo: 4
-bonds:
-  in:
-    - article
-    - collapse
-    - law
-    - medical
-    - merge
-    - scholarly
-    - sti
-  out:
-    - article
-    - collapse
-    - law
-    - medical
-    - merge
-    - scholarly
-    - sti
+coordinate: "medical/scholarly · 2/share · 0a9039e5"
+contentUuid: "585e331d-8286-5354-a299-b4650ae27445"
+diamondUuid: "9fb153dc-cef4-8f46-99c8-dbf39b1514b4"
+uuid: "0a9039e5-b274-8877-915e-e08105bfd935"
+horo: 2
 typography:
   partition: medical
   bondDegree: 29
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - medical
-    - merge
-    - scholarly
-  matrix:
-    - article
-    - collapse
-    - law
-    - medical
-    - merge
-    - scholarly
-    - sti
-  backlinks:
-    - article
-    - collapse
-    - law
-    - medical
-    - merge
-    - scholarly
-    - sti
 signatures:
-  computationUuid: "8a4dedf9-c726-848e-a099-da2b4c4ec638"
+  computationUuid: "39437996-3bcc-8166-bc66-ebca80ed15d1"
   stages:
     - stage: path
       stageUuid: "9a46b8db-1fab-8d49-aac0-bb9bb76866a5"
@@ -65,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e4398e03-a3d7-8b92-8e79-f73cf8ef5483"
     - stage: horo
-      stageUuid: "aafcd0af-c64d-881f-b429-ec7184f7f874"
+      stageUuid: "5d4e59b8-535c-8df7-81c9-8e764476e7a9"
     - stage: seal
       stageUuid: "f651c438-0753-8e4f-adc3-31d71d434fb5"
     - stage: uuid
-      stageUuid: "3d32cdb8-673b-84f9-90af-620d4a1f455d"
+      stageUuid: "908b9719-2173-833c-96ba-884217f1f4ae"
 version: 2
 ---
 # medical/scholarly — medical facet

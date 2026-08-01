@@ -1,107 +1,34 @@
 ---
 name: biomagnetism
 description: "Use when grounding the aura's 'field' in real science — the body's magnetic fields ARE measurable, but only by SQUID magnetometers in a shielded room and only at the body surface: magnetocardiography (heart, ~10⁻¹⁰–10⁻¹¹ T / tens of pT) and magnetoencephalography (brain, ~10⁻¹³–10⁻¹⁵ T / ~100 fT). The established part is intra-body diagnostics; the claim the heart's field extends feet from the body as an 'aura' was refuted under test."
-atomPath: vocabulary/biomagnetism
-coordinate: biomagnetism · 5/round · 384be47b
-contentUuid: "b3f0c38d-4fd9-5ce5-8223-8c86a355e192"
-diamondUuid: "eda64818-37e1-897d-826a-bbcb10be815f"
-uuid: "384be47b-746b-8d41-bd00-eac39fb93040"
-horo: 5
-bonds:
-  in:
-    - analog
-    - aura
-    - biofield
-    - biophoton
-    - coherence
-    - health
-    - law
-    - matrix
-    - measure
-    - proof
-    - radiation
-    - signal
-    - vibration
-  out:
-    - analog
-    - aura
-    - biofield
-    - biophoton
-    - coherence
-    - health
-    - law
-    - matrix
-    - measure
-    - proof
-    - radiation
-    - signal
-    - vibration
+atomPath: "vocabulary/biomagnetism"
+coordinate: "vocabulary/biomagnetism · 7/descent · eb460fa7"
+contentUuid: "470b596d-8f19-516b-a823-209cd86a6887"
+diamondUuid: "634e454e-634b-889a-9dcc-a43ee5bbc21c"
+uuid: "eb460fa7-8d83-875f-b09a-2bbf0232146b"
+horo: 7
 typography:
-  partition: biomagnetism
+  partition: vocabulary
   bondDegree: 43
-  neighbors:
-    - aura
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - analog
-    - aura
-    - biofield
-    - biophoton
-    - coherence
-    - health
-    - law
-    - matrix
-    - measure
-    - proof
-    - radiation
-    - signal
-  matrix:
-    - analog
-    - aura
-    - biofield
-    - biophoton
-    - coherence
-    - health
-    - law
-    - matrix
-    - measure
-    - proof
-    - radiation
-    - signal
-    - vibration
-  backlinks:
-    - analog
-    - aura
-    - biofield
-    - biophoton
-    - coherence
-    - health
-    - law
-    - matrix
-    - measure
-    - proof
-    - radiation
-    - signal
-    - vibration
 signatures:
-  computationUuid: "49208b7b-eac9-8e93-acbc-7dad596dfb08"
+  computationUuid: "1e917afa-53e4-8aea-8189-13644dbb2bf9"
   stages:
     - stage: path
-      stageUuid: "619d2e24-6421-82ac-96ef-51af3c3806ea"
+      stageUuid: "f3497d9c-8928-8700-a93d-47082e156c99"
     - stage: trinity
-      stageUuid: "c58aa892-d792-84d1-b2d9-137317707864"
+      stageUuid: "6a2463d9-2529-888c-9b3b-e5efe1a44fdc"
     - stage: boundary
-      stageUuid: "15eb4723-25ea-8342-84fc-c85c4b79a13c"
+      stageUuid: "87272263-80e0-821c-9883-78876b8874ae"
     - stage: links
-      stageUuid: "1d07526d-f38c-84d0-aa95-9addbff92b84"
+      stageUuid: "6bdec23e-5567-8217-9748-a6cd770ebe95"
     - stage: horo
-      stageUuid: "a6eec3c7-9bf3-8f03-879f-9825c6315d43"
+      stageUuid: "7dbe7f1a-7290-8555-9de0-6949f81ba106"
     - stage: seal
-      stageUuid: "8d5dd125-7ba8-8ce2-8244-80dece7096b9"
+      stageUuid: "cc7c3ac7-d0e2-8d6a-8f25-24410b0b76d8"
     - stage: uuid
-      stageUuid: "55f5912d-e057-8727-9a37-45bec31a08ae"
+      stageUuid: "c6eeeb32-d6db-8569-a675-cb16e7c572e3"
 version: 2
 ---
 # biomagnetism — the body's real (but contained) magnetic field

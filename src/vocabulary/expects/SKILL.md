@@ -1,68 +1,35 @@
 ---
 name: expects
 description: "Use when reasoning about expects as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/expects
-coordinate: expects · 1/base · 50b8fd6f
-contentUuid: "3af5a7b3-ace1-51ec-b568-5c874d56a6b3"
-diamondUuid: "33153fe8-be84-8b94-9063-dc11a9b8a5c6"
-uuid: "50b8fd6f-3f29-8581-919e-3155fb2ba8ff"
-horo: 1
-bonds:
-  in:
-    - acceptance
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - acceptance
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/expects"
+coordinate: "vocabulary/expects · 5/round · 70e35157"
+contentUuid: "154e8c4a-a0d8-5fef-8916-fdf1118a5328"
+diamondUuid: "1604de3f-8db5-8065-a7a7-b2c4894e1a25"
+uuid: "70e35157-7847-82e1-9704-27d5570bf415"
+horo: 5
 typography:
-  partition: expects
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - acceptance
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - acceptance
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - acceptance
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "4ada3027-7b9d-854d-88a0-111df517a61b"
+  computationUuid: "b9384be0-0af5-8bd3-aeda-64d839c34b90"
   stages:
     - stage: path
-      stageUuid: "872844c8-d725-8397-bcad-07b755cbe392"
+      stageUuid: "355776be-28c1-8e13-9441-d63e93d383e4"
     - stage: trinity
-      stageUuid: "fbb3ae02-443e-822f-a465-e596cd7f3a45"
+      stageUuid: "000ff743-6436-8d60-8e21-010eeb8a2426"
     - stage: boundary
-      stageUuid: "01fd8b57-8cdf-834c-b2d3-213040bab54e"
+      stageUuid: "37b9f5d2-4d7a-8684-a5a2-9c00b1e33e10"
     - stage: links
-      stageUuid: "aae6addd-ba9e-8b1e-839e-76450c3ecb1d"
+      stageUuid: "b404786a-b7cf-8dc4-9b46-1a68a855beaa"
     - stage: horo
-      stageUuid: "41803a5c-e289-8050-8d7b-e1695d6a9ca1"
+      stageUuid: "90ad4bbf-4028-8557-bc59-59da2e17eaea"
     - stage: seal
-      stageUuid: "a7082bc9-b436-822b-88fd-91775c68a084"
+      stageUuid: "1986d117-96aa-818e-b431-0ad6ebdbfa94"
     - stage: uuid
-      stageUuid: "9dee95b2-66ba-8fa5-8ac2-71a093a6b995"
+      stageUuid: "5e3f9ab9-6dcd-807c-8f0a-34016f48ff8d"
 version: 2
 ---
 # expects

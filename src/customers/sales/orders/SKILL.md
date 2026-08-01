@@ -2,57 +2,14 @@
 name: orders
 description: "Use when recording or progressing a customer order — from quote conversion through confirmation, partial fulfillment, invoicing, and closure; track order lines, delivery dates, shipping and billing addresses, and fulfillment progress. The O2C customer-order register (UBL-2.1 / UN-EDIFACT ORDERS / Peppol BIS-3.0), distinct from purchase-orders (P2P)."
 atomPath: "customers/sales/orders"
-coordinate: "customers/sales/orders · 4/weave · 81278673"
-contentUuid: "9ae93ec1-926e-5129-96a7-13f5ccf9b13c"
-diamondUuid: "ff78f7b5-f625-8456-8891-b6cf51315262"
-uuid: "81278673-d93f-8fe8-a7af-7255edf44c2e"
-horo: 4
-bonds:
-  in:
-    - accounting
-    - allocation
-    - duality
-    - fractal
-    - hooks
-    - horo
-    - law
-    - materials
-    - orders
-    - packs
-    - party
-    - receipts
-    - routings
-    - runs
-    - sales
-    - shift
-    - shifts
-    - standard
-    - utility
-    - variances
-  out:
-    - accounting
-    - allocation
-    - duality
-    - fractal
-    - hooks
-    - horo
-    - law
-    - materials
-    - orders
-    - packs
-    - party
-    - receipts
-    - routings
-    - runs
-    - shift
-    - shifts
-    - standard
-    - utility
-    - variances
+coordinate: "customers/sales/orders · 5/round · 753185c1"
+contentUuid: "ba8abb8c-0c66-559f-8c85-0d9f480353e0"
+diamondUuid: "c853bbdd-8dc8-827d-b091-e9f83fe2e29d"
+uuid: "753185c1-fb44-8f8e-96bb-f55f63255b3f"
+horo: 5
 typography:
   partition: customers
   bondDegree: 96
-  neighbors: []
 standards:
   - "ASC-606"
   - "COSO-ERM-2017"
@@ -60,8 +17,6 @@ standards:
   - "EN-16931:2017"
   - "EN-16931:2017 §BG-13 delivery-information (downstream of the order)"
   - "EN-16931:2017 §BG-13 delivery-information (downstream of the order)`"
-  - "EU-2017/1132"
-  - "EU-2017/828"
   - "EU-Directive-2006/112/EC"
   - "EU-UCC"
   - "EU-VAT-Directive 2006/112/EC supply-of-goods-or-services"
@@ -82,55 +37,8 @@ standards:
   - "WCO-HS"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - contracts
-    - law
-    - quotes
-    - returns
-    - shipments
-  matrix:
-    - accounting
-    - allocation
-    - duality
-    - fractal
-    - hooks
-    - horo
-    - law
-    - materials
-    - orders
-    - packs
-    - party
-    - receipts
-    - routings
-    - runs
-    - shift
-    - shifts
-    - standard
-    - utility
-    - variances
-  backlinks:
-    - accounting
-    - allocation
-    - duality
-    - fractal
-    - hooks
-    - horo
-    - law
-    - materials
-    - orders
-    - packs
-    - party
-    - receipts
-    - routings
-    - runs
-    - shift
-    - shifts
-    - standard
-    - utility
-    - variances
 signatures:
-  computationUuid: "7970fb2c-a1c9-8966-a7e9-f7789974ca4d"
+  computationUuid: "7a3739bf-7fe9-88f9-85f1-5ce5eec03560"
   stages:
     - stage: path
       stageUuid: "5c34a03f-a43b-89db-9e2d-711268cc5a2b"
@@ -141,11 +49,11 @@ signatures:
     - stage: links
       stageUuid: "31265c36-810c-88c8-8c26-becd09f1595f"
     - stage: horo
-      stageUuid: "87541750-7d63-89cb-a47a-cfabc985f426"
+      stageUuid: "12302a3f-42a5-8786-990c-9f3cf131abd1"
     - stage: seal
       stageUuid: "d26ecb74-da97-8151-b843-1839acad68d9"
     - stage: uuid
-      stageUuid: "538e242a-bdbf-855c-b51e-3ae5b57bb529"
+      stageUuid: "06f2916c-3d8f-8150-bb43-d5dec62d2c64"
 version: 2
 ---
 # sales-orders

@@ -1,100 +1,34 @@
 ---
 name: degreeday
 description: "Use when crop development is predicted from accumulated heat rather than the calendar — growing degree days (GDD = (Tmax+Tmin)/2 − Tbase, capped) measure the heat a crop banks toward maturity, so a warm spring advances harvest and a cool one delays it. The heat-unit clock that makes a fixed-week calendar drift; pairs with frost and evapotranspiration."
-atomPath: vocabulary/degreeday
-coordinate: degreeday · 4/weave · 241701aa
-contentUuid: "293ec105-99da-5e26-82ee-768ae6cfeaf8"
-diamondUuid: "bb829caf-51bb-8acb-a195-09d698dbd3f0"
-uuid: "241701aa-8b6b-87f8-8529-8d15ee6c2685"
-horo: 4
-bonds:
-  in:
-    - agriculture
-    - dormancy
-    - evapotranspiration
-    - forecast
-    - frost
-    - harvest
-    - law
-    - maturity
-    - measure
-    - planting
-    - season
-    - terroir
-  out:
-    - agriculture
-    - dormancy
-    - evapotranspiration
-    - forecast
-    - frost
-    - harvest
-    - law
-    - maturity
-    - measure
-    - planting
-    - season
-    - terroir
+atomPath: "vocabulary/degreeday"
+coordinate: "vocabulary/degreeday · 5/round · 4b69764c"
+contentUuid: "dbc0395e-e86c-5106-a36a-23e9b14a30a2"
+diamondUuid: "7d34b183-da49-8a9c-a930-1752a55175bf"
+uuid: "4b69764c-139e-87f9-8bb7-894be64c2f7f"
+horo: 5
 typography:
-  partition: degreeday
+  partition: vocabulary
   bondDegree: 40
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - evapotranspiration
-    - forecast
-    - frost
-    - harvest
-    - law
-    - maturity
-    - measure
-    - planting
-    - season
-  matrix:
-    - agriculture
-    - dormancy
-    - evapotranspiration
-    - forecast
-    - frost
-    - harvest
-    - law
-    - maturity
-    - measure
-    - planting
-    - season
-    - terroir
-  backlinks:
-    - agriculture
-    - dormancy
-    - evapotranspiration
-    - forecast
-    - frost
-    - harvest
-    - law
-    - maturity
-    - measure
-    - planting
-    - season
-    - terroir
 signatures:
-  computationUuid: "fa8efe09-49e0-8f7d-bc5e-e05cbe799b70"
+  computationUuid: "5c49f17b-7a66-85ea-b16a-3b5a14ccd033"
   stages:
     - stage: path
-      stageUuid: "232bbb2e-6235-8f4e-ada9-c156f1eee287"
+      stageUuid: "dc7940ba-2ab3-89b9-a710-5fadef681ed8"
     - stage: trinity
-      stageUuid: "101977e4-dfa7-8a2b-9d5f-b987cbf0655e"
+      stageUuid: "6fa2287d-aad7-8f8a-a68a-0ae186383454"
     - stage: boundary
-      stageUuid: "90b36066-5744-8427-9a9f-32c963c3149c"
+      stageUuid: "764cd583-67bb-83fd-bdf3-ed8ed5d0c9c4"
     - stage: links
-      stageUuid: "0aa9818b-9a25-88f7-a3be-40f0bb8beb8d"
+      stageUuid: "a070e8f0-b980-80b9-9de2-e2a54d607954"
     - stage: horo
-      stageUuid: "559927e6-9086-834b-ace0-a2022ef43d21"
+      stageUuid: "8980c5b7-63b3-8eca-a006-8b37d83dc58f"
     - stage: seal
-      stageUuid: "4ad2664e-818e-893a-8612-f79b76dc0936"
+      stageUuid: "f0686474-2a84-8a3d-9f2f-bb338412e572"
     - stage: uuid
-      stageUuid: "c587bed6-3910-89c0-8cdc-a2aa3dbbbec9"
+      stageUuid: "bd8bf22d-7680-836a-bc83-005ec49f46c3"
 version: 2
 ---
 # degreeday — the heat-unit clock that paces crop development

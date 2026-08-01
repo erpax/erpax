@@ -1,53 +1,35 @@
 ---
 name: ligament
 description: "Use when reasoning about ligament — A short band of tough, flexible, fibrous connective tissue that functions to connect multiple bones, cartilages, and structurally support joints."
-atomPath: vocabulary/ligament
-coordinate: ligament · 8/crest · 5d8c19ad
-contentUuid: "f8cfb772-d218-50f1-bc9d-90ac3daef7b6"
-diamondUuid: "11db6bfe-75f9-85b8-a23f-f89e9a791d93"
-uuid: "5d8c19ad-00c1-8303-b8ec-9e396dacc168"
-horo: 8
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/ligament"
+coordinate: "vocabulary/ligament · 2/share · 89112263"
+contentUuid: "3244b15e-1a6c-594b-8c9e-66c565576e39"
+diamondUuid: "d97b5961-62c7-86f3-ae5a-c646709cdd68"
+uuid: "89112263-2411-828e-bb08-c4e85746395e"
+horo: 2
 typography:
-  partition: ligament
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "56c9ba73-0be8-85a6-81b9-4c4c4c88e8a4"
+  computationUuid: "54f27f2d-9926-8b71-ab1b-c17d618c70dc"
   stages:
     - stage: path
-      stageUuid: "7aff59aa-2214-82e8-b8bd-09c92155334c"
+      stageUuid: "f5bc5e27-e85e-894e-9358-8906c554f441"
     - stage: trinity
-      stageUuid: "3f9c3fc5-5585-8903-9e83-f5620ddc2bfb"
+      stageUuid: "5c612409-8ff1-85c8-b09d-2ad3c0ce4b89"
     - stage: boundary
-      stageUuid: "5dec6b94-11d3-81ca-a48e-5511310b125d"
+      stageUuid: "0456957d-c910-8900-8c27-d02bc4d0c20e"
     - stage: links
-      stageUuid: "e32f1146-b2df-83d2-b572-de744e7841d6"
+      stageUuid: "9de05266-2a15-8efa-92fa-ef77d99d38cb"
     - stage: horo
-      stageUuid: "0e082818-4c55-8103-a4c5-558dcb26b49b"
+      stageUuid: "f4a90173-b1f0-8f45-aba9-d56245a166e1"
     - stage: seal
-      stageUuid: "7f70fc81-1bb3-8547-9977-184146bfb1f6"
+      stageUuid: "de5e257b-19b7-8253-8796-1cc627bef256"
     - stage: uuid
-      stageUuid: "69b62df2-b2d8-8cf1-ba4b-33a4cf04202f"
+      stageUuid: "6d6ed2f5-4d2c-8cf3-9287-ffb22da9d4be"
 version: 2
 ---
 # ligament

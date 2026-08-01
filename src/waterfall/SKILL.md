@@ -2,37 +2,19 @@
 name: waterfall
 description: "Use when reasoning about waterfall — A waterfall, like Niagara."
 atomPath: waterfall
-coordinate: waterfall · 5/round · 766770fa
-contentUuid: "d002f1cb-cd61-5dad-aa89-35a0363c21c1"
-diamondUuid: "40b46326-f0ce-8732-b09e-c0bf5db3474a"
-uuid: "766770fa-8e8c-82b6-a864-5b92f8ebae24"
-horo: 5
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+coordinate: "waterfall · 1/base · 5e4db60e"
+contentUuid: "5bb79f44-1de4-5729-8eff-b6977f62c203"
+diamondUuid: "c84f817c-8ec1-8fce-b569-f62b3536e7ca"
+uuid: "5e4db60e-e3a6-8623-ac2c-aa613dccf0a5"
+horo: 1
 typography:
   partition: waterfall
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "60443ba0-994e-8d38-9e4e-c3760e3204ca"
+  computationUuid: "989f8cb8-e78f-85e0-90d0-32d575f7240d"
   stages:
     - stage: path
       stageUuid: "ff5ce7db-a8b3-8a5b-a07e-cf29f990ba3e"
@@ -43,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d88cf54c-85bf-82b5-95e6-ed3c65889328"
     - stage: horo
-      stageUuid: "34569111-5007-8d9e-9c8e-ebde878a9dd4"
+      stageUuid: "1d4a7883-fb9b-8da7-a90f-3b276090d131"
     - stage: seal
-      stageUuid: "0de46fa0-3475-8487-b331-b3effd5fe856"
+      stageUuid: "6850cbca-0d5c-87e6-aaaa-af73415d9687"
     - stage: uuid
-      stageUuid: "def8b156-d8d4-870e-b232-5ac064d3e1dd"
+      stageUuid: "0a04cd18-c41c-8431-9ab9-126789ae4a98"
 version: 2
 ---
 # waterfall

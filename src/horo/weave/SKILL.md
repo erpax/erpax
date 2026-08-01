@@ -1,80 +1,19 @@
 ---
 name: weave
-description: "Use when reasoning about the third position of the horo state ring — digit 4, \\\\\\\"four hands meeting\\\\\\\", the interlinking step where a flow is being worked/woven (in-production, in-progress, related). Ascent arc; nested under horo."
+description: "Use when reasoning about the third position of the horo state ring — digit 4, \\\\\\\\\\\\\\\"four hands meeting\\\\\\\\\\\\\\\", the interlinking step where a flow is being worked/woven (in-production, in-progress, related). Ascent arc; nested under horo."
 atomPath: "horo/weave"
-coordinate: "horo/weave · 1/base · 5a6041ea"
-contentUuid: "0e678013-ce4c-52e5-855f-c1d3dceaba16"
-diamondUuid: "485f0f06-3537-834c-b1ae-f2dff4e16c80"
-uuid: "5a6041ea-3b2a-85be-ae41-57ca3710b3dd"
-horo: 1
-bonds:
-  in:
-    - coil
-    - crest
-    - database
-    - flow
-    - horo
-    - law
-    - notes
-    - propose
-    - sequence
-    - share
-    - whole
-  out:
-    - coil
-    - crest
-    - database
-    - flow
-    - horo
-    - law
-    - notes
-    - propose
-    - sequence
-    - share
-    - whole
+coordinate: "horo/weave · 5/round · 9abc0b24"
+contentUuid: "d7d29bcf-df04-5fed-b0fd-8ff530735567"
+diamondUuid: "c275888e-fffe-8fa0-bff8-aa3825d53bf3"
+uuid: "9abc0b24-0a71-896b-a6fd-25aa5d78ba8a"
+horo: 5
 typography:
   partition: horo
   bondDegree: 36
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - coil
-    - crest
-    - database
-    - flow
-    - horo
-    - law
-    - sequence
-    - share
-    - whole
-  matrix:
-    - coil
-    - crest
-    - database
-    - flow
-    - horo
-    - law
-    - notes
-    - propose
-    - sequence
-    - share
-    - whole
-  backlinks:
-    - coil
-    - crest
-    - database
-    - flow
-    - horo
-    - law
-    - notes
-    - propose
-    - sequence
-    - share
-    - whole
 signatures:
-  computationUuid: "190dd496-218f-89a4-aa99-249f3d1ecef8"
+  computationUuid: "5e28fb40-c902-869e-a703-01c12ba92748"
   stages:
     - stage: path
       stageUuid: "d20f3641-be1b-8b2b-b73f-3061bbd2b828"
@@ -85,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "8704f8ad-d540-8d4c-99eb-6422343ccd9b"
     - stage: horo
-      stageUuid: "ff2261f7-af4c-87d0-bdd2-eb47faf90e6e"
+      stageUuid: "bf34cd0b-cdf5-8838-8cff-7663862e886b"
     - stage: seal
       stageUuid: "bc8d478a-f7bd-8945-b01d-9dddff065e62"
     - stage: uuid
-      stageUuid: "84fbdfb6-e202-8d57-8f48-60cac93270c0"
+      stageUuid: "3351fab2-d855-83b7-823a-5263ad4597b4"
 version: 2
 ---
 # weave — horo position 4 (four hands meeting)

@@ -1,87 +1,25 @@
 ---
 name: instances
 description: "Use when tracking the live run of a workflow-definition against a document — current step, assignee, SLA due date, step-history decisions (approved/rejected/delegated/escalated/auto), final outcome, and ISO-19011 §6.4.6 audit-event trail. The workflow execution-instance collection."
-atomPath: workflow/definitions/workflow/instances
-coordinate: workflow/definitions/workflow/instances · 5/round · 27a86996
-contentUuid: "ed0fbb13-2605-52ff-9ba8-26baf8711d2b"
-diamondUuid: "027f8f01-ff33-846a-be38-23f8324d08bb"
-uuid: "27a86996-3efd-845f-9abc-90801f13fb96"
+atomPath: "workflow/definitions/workflow/instances"
+coordinate: "workflow/definitions/workflow/instances · 5/round · f363f662"
+contentUuid: "608f8dd7-7db5-576d-87f3-71ce153a9d70"
+diamondUuid: "a86e7239-fa48-8f69-9fa6-b02f703e0fd4"
+uuid: "f363f662-ffb3-84e3-bc14-a336e9d0e088"
 horo: 5
-bonds:
-  in:
-    - access
-    - approved
-    - definitions
-    - escalation
-    - events
-    - fields
-    - hooks
-    - law
-    - resolution
-    - ticket
-    - users
-    - workflow
-  out:
-    - access
-    - approved
-    - definitions
-    - escalation
-    - events
-    - fields
-    - hooks
-    - law
-    - resolution
-    - ticket
-    - users
-    - workflow
 typography:
   partition: workflow
   bondDegree: 36
-  neighbors: []
 standards:
-  - "ISO-19011:2018 §6.4.6 audit-evidence-workflow"
   - "ISO-8601-1:2019 date-time"
+  - "ISO-8601-1:2019 date-time`"
   - "ISO/IEC 19510:2013 BPMN-2.0"
+  - "ISO/IEC 19510:2013 BPMN-2.0`"
   - "SOX §404 internal-controls workflow-execution"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - approved
-    - definitions
-    - events
-    - fields
-    - hooks
-    - law
-    - users
-  matrix:
-    - access
-    - approved
-    - definitions
-    - escalation
-    - events
-    - fields
-    - hooks
-    - law
-    - resolution
-    - ticket
-    - users
-    - workflow
-  backlinks:
-    - access
-    - approved
-    - definitions
-    - escalation
-    - events
-    - fields
-    - hooks
-    - law
-    - resolution
-    - ticket
-    - users
-    - workflow
 signatures:
-  computationUuid: "1c975878-cdb7-8c74-9b31-58878d8c49a9"
+  computationUuid: "4ce31079-dde4-84f7-99f8-f57d012ded9c"
   stages:
     - stage: path
       stageUuid: "ef31534c-b77a-8d21-add2-ccd21f5f21ad"
@@ -92,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "a6266696-53a0-8529-9b6f-1f1b5cbb97b9"
     - stage: horo
-      stageUuid: "97e75bb5-f49e-8546-b777-3cb706131c90"
+      stageUuid: "88fb444c-2af2-8932-b0ef-41738e3bbc1b"
     - stage: seal
       stageUuid: "890a1125-1c21-8d98-8220-87225d147a2d"
     - stage: uuid
-      stageUuid: "f6b21023-abfa-89ae-baa6-0c4bd944cef4"
+      stageUuid: "fef57971-9c11-89bf-bba6-dbf156600aba"
 version: 2
 ---
 # workflow-instances

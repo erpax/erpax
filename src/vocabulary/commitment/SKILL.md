@@ -1,57 +1,34 @@
 ---
 name: commitment
 description: Use when modelling one commitment — the singular model of the commitments collection (the plural store); a binding promise to perform or provide.
-atomPath: vocabulary/commitment
-coordinate: commitment · 4/weave · a0c24652
-contentUuid: "453ee0a4-98dd-5acd-9b87-5cc5cf284492"
-diamondUuid: "e143cf9b-db56-8726-8c5f-c981086e3f70"
-uuid: "a0c24652-b165-80d4-bc47-4aaad2bef82b"
-horo: 4
-bonds:
-  in:
-    - balance
-    - commitments
-    - legal
-  out:
-    - balance
-    - commitments
-    - legal
+atomPath: "vocabulary/commitment"
+coordinate: "vocabulary/commitment · 2/share · e318b1d3"
+contentUuid: "0d79adb9-7850-50a2-8b4e-65b8f5ec63e4"
+diamondUuid: "81b259b9-ada5-89dc-b9d2-4fefd087600d"
+uuid: "e318b1d3-3f80-8a8a-b624-b1e0244053a3"
+horo: 2
 typography:
-  partition: commitment
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - commitments
-    - legal
-  matrix:
-    - balance
-    - commitments
-    - legal
-  backlinks:
-    - balance
-    - commitments
-    - legal
 signatures:
-  computationUuid: "033b70ff-13d9-8db1-9d54-80874673b055"
+  computationUuid: "51ed2304-fdb3-8345-a372-a08b871638a9"
   stages:
     - stage: path
-      stageUuid: "d57ba8b6-d044-8d4d-8d80-6bdaac42b929"
+      stageUuid: "13a832c1-7d1e-898c-bce7-034453a4f264"
     - stage: trinity
-      stageUuid: "fb40f5b1-3934-8a78-b28a-e33829ad2078"
+      stageUuid: "c8a35925-6bc4-835f-a389-e92ba365bdf9"
     - stage: boundary
-      stageUuid: "47511cf3-0aec-86ac-a2fa-01d8a1f5bfbb"
+      stageUuid: "416c7ca9-5db5-8719-a3f9-c74ee1bcf28e"
     - stage: links
-      stageUuid: "54cd2200-618d-8a8a-ac25-311aa0ffb62d"
+      stageUuid: "f751f8d2-d2a9-81cb-aff7-4f0e016163d9"
     - stage: horo
-      stageUuid: "b7ed5f04-340d-8b81-b276-bb1b4474ce71"
+      stageUuid: "265ada07-9e51-8f1d-acc9-388ccd63092b"
     - stage: seal
-      stageUuid: "797b163c-25c2-8230-82b9-6b16e76b3298"
+      stageUuid: "20438a10-30fa-8df6-8573-225767b84d3c"
     - stage: uuid
-      stageUuid: "8aa366c8-e1ae-88dd-a1f2-43c1c6354c81"
+      stageUuid: "685da28b-11be-8e32-9551-e106a301781c"
 version: 2
 ---
 # commitment — the model of one [[commitments]] row

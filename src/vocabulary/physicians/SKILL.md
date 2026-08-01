@@ -1,68 +1,35 @@
 ---
 name: physicians
 description: "Use when reasoning about physicians as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/physicians
-coordinate: physicians · 4/weave · 1c1f80a1
-contentUuid: "5b0eab9c-04fb-503c-b6da-c8cb3d7d3bfc"
-diamondUuid: "58b80bfb-b5c9-8074-835b-e712707f5a88"
-uuid: "1c1f80a1-dbeb-8ef0-b969-6d3782c418e4"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - office
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - office
-    - sti
+atomPath: "vocabulary/physicians"
+coordinate: "vocabulary/physicians · 8/crest · 17929758"
+contentUuid: "04591426-9e45-55f5-aec9-faa476bf0a18"
+diamondUuid: "8889d3e0-d80f-8f30-adc7-7d6a0c5fb908"
+uuid: "17929758-6a39-8be0-b10e-c91a80619199"
+horo: 8
 typography:
-  partition: physicians
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - office
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - office
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - office
-    - sti
 signatures:
-  computationUuid: "b49723db-10b7-87eb-ba48-bebe8118a60e"
+  computationUuid: "891fc0ca-7ba3-8dd6-bd56-28dcdd1a7c1c"
   stages:
     - stage: path
-      stageUuid: "1392524e-347c-87b4-a053-10f2572f12de"
+      stageUuid: "c57f6fbc-39d4-85a2-b09f-07500add67f7"
     - stage: trinity
-      stageUuid: "3d14cd07-2799-89ec-9102-e19f3ef148dd"
+      stageUuid: "a54c4cae-446a-87d5-b1ba-86665c5fc436"
     - stage: boundary
-      stageUuid: "76f1dbe0-1556-86c8-b40c-c11827d79582"
+      stageUuid: "252aaa25-cc9a-8b25-8418-1f6e8c83e0f8"
     - stage: links
-      stageUuid: "063190bf-f61b-8660-bb83-ca3ee1a1a95d"
+      stageUuid: "24df7a01-dea2-82cb-ae3a-9a666e14bc50"
     - stage: horo
-      stageUuid: "6ea0834b-275f-8fc4-bc5f-41792e99bd50"
+      stageUuid: "1ff10c39-145f-8181-9e5e-8194f067d22c"
     - stage: seal
-      stageUuid: "99c21b67-24c3-838c-af25-9633a5eee35b"
+      stageUuid: "00b1e5f6-a39b-82ed-9628-9ffa402c2c22"
     - stage: uuid
-      stageUuid: "44e6977a-a023-83ce-8180-60ed69f7fcb0"
+      stageUuid: "3a67fe5b-3f15-8444-8a9d-2c6795ae61c5"
 version: 2
 ---
 # physicians

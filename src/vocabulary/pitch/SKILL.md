@@ -1,68 +1,35 @@
 ---
 name: pitch
 description: "Use when reasoning about pitch — A schema.org component word, collided out of schema.org compounds — fused from CampingPitch (sti · collapse · merge)."
-atomPath: vocabulary/pitch
-coordinate: pitch · 8/crest · fe2a99b2
-contentUuid: "5d4ba5e9-12ba-5460-a093-f7355ac205ff"
-diamondUuid: "98b6b7b4-d33d-805f-a219-e8cfda2d872b"
-uuid: "fe2a99b2-babb-8e70-bce3-233e354ed17b"
+atomPath: "vocabulary/pitch"
+coordinate: "vocabulary/pitch · 8/crest · 66386598"
+contentUuid: "0c16bdb9-81ec-5d1d-ab13-5d2204dac95f"
+diamondUuid: "35876e03-bb5d-837c-bf45-11381ce006cf"
+uuid: "66386598-ff7e-8c40-86bc-edd570451f09"
 horo: 8
-bonds:
-  in:
-    - camping
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - camping
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: pitch
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - camping
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - camping
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - camping
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "ab77f113-f8ce-8148-83ff-7c4b6f74169d"
+  computationUuid: "f277250e-b1f0-8e44-bc7e-ec18577ca003"
   stages:
     - stage: path
-      stageUuid: "741dae7f-e91e-86f4-b916-8658df94572c"
+      stageUuid: "89593aeb-f35f-8d1a-9171-c296ddca9bff"
     - stage: trinity
-      stageUuid: "21be7d6e-6e57-8912-aede-3f98525020bc"
+      stageUuid: "1805c3bc-8197-829f-bfda-bd43cda83292"
     - stage: boundary
-      stageUuid: "92d6d745-537a-8298-9521-a3b415c785ed"
+      stageUuid: "3e614092-f9f8-8b1b-ad10-81cf121be629"
     - stage: links
-      stageUuid: "acea33f3-4924-8ed4-af15-712b31135c83"
+      stageUuid: "0e86c9d5-29fe-83bd-8564-082e80511091"
     - stage: horo
-      stageUuid: "32058da5-6abe-88fa-8136-3dea567268f2"
+      stageUuid: "ed82f682-8e9c-8df7-a505-28af1d0d3c4c"
     - stage: seal
-      stageUuid: "ef24e1e7-9213-84e0-82c5-4b50beaccab1"
+      stageUuid: "611e7e64-3032-8c74-ba6f-a0eeb63e3e09"
     - stage: uuid
-      stageUuid: "7bf7e990-caf8-8532-a8e4-c29a02d77144"
+      stageUuid: "c4cd0470-fbd6-8666-90d1-7da442f80e01"
 version: 2
 ---
 # pitch

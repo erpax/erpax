@@ -1,69 +1,35 @@
 ---
 name: acriss
 description: "Use when reasoning about acriss — A schema.org component word, collided out of schema.org compounds — fused from acrissCode (sti · collapse · merge)."
-atomPath: vocabulary/acriss
-coordinate: acriss · 2/share · 69faa807
-contentUuid: "0bf6fcae-afb0-5b7a-afaa-a03252bd71dc"
-diamondUuid: "d046fb55-79c3-802a-bce1-169a888d1a73"
-uuid: "69faa807-70ad-88c2-a9d2-93438d2ea65e"
-horo: 2
-bonds:
-  in:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/acriss"
+coordinate: "vocabulary/acriss · 5/round · 0eeb6db6"
+contentUuid: "94d2e635-e7b8-5fce-920c-3d8c48fac30b"
+diamondUuid: "195791ef-d511-8aee-8915-504aebbfa4bc"
+uuid: "0eeb6db6-6c83-8358-aaf8-c921f6c581ed"
+horo: 5
 typography:
-  partition: acriss
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
-  - schema.org
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "909fea25-14e3-8150-8803-59ccb4ec0876"
+  computationUuid: "c4f13949-b022-8a7f-8175-4841510782b2"
   stages:
     - stage: path
-      stageUuid: "74c15d9f-cd8c-8849-83da-ede216e8fb2b"
+      stageUuid: "7b63def7-9600-8989-a7fa-9d5ba6dd57b9"
     - stage: trinity
-      stageUuid: "ac729b7c-64c3-8e7e-b201-845674741862"
+      stageUuid: "df2c84d6-0a4a-840e-80fb-dd4db5640512"
     - stage: boundary
-      stageUuid: "0d205aa3-3e76-8bd3-a290-808260c2e58b"
+      stageUuid: "01399869-f0e4-8c65-a5ab-1e87aa4ba689"
     - stage: links
-      stageUuid: "d1712eb5-da00-8aa4-aee0-6798785ef714"
+      stageUuid: "43a41864-411d-8f5b-8a43-da20163a45dd"
     - stage: horo
-      stageUuid: "eec57fca-56b2-8bec-9add-982d17d4680a"
+      stageUuid: "d9fa8da7-7478-8ac2-aec9-a3b5f79737ee"
     - stage: seal
-      stageUuid: "5f2fcff9-ae98-8d1e-bfee-44a944414b1d"
+      stageUuid: "504edc3a-45f5-892e-bcef-b8871220e863"
     - stage: uuid
-      stageUuid: "a65d280b-8552-82c6-babd-bd75229d6084"
+      stageUuid: "3f63a13d-95b1-8ad2-801f-e00e01447cce"
 version: 2
 ---
 # acriss

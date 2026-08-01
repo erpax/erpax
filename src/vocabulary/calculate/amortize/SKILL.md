@@ -1,66 +1,34 @@
 ---
 name: amortize
 description: "Use when reasoning about amortize — ports the bond discount/premium amortization calculators verbatim (calculate, port): **effective-interest** (or straight-line where permitted) amortization of a discount/premium ov"
-atomPath: calculate/amortize
-coordinate: calculate/amortize · 7/descent · 44dbc87b
-contentUuid: "9beda778-dfd5-5404-ada2-f33d376f871a"
-diamondUuid: "c49bfb7a-a987-84c1-a08b-f008f6b13d19"
-uuid: "44dbc87b-78a6-8275-8c6e-cd6a2f997133"
-horo: 7
-bonds:
-  in:
-    - accounting
-    - calculate
-    - currency
-    - intangible
-    - port
-  out:
-    - accounting
-    - calculate
-    - currency
-    - intangible
-    - port
+atomPath: "vocabulary/calculate/amortize"
+coordinate: "vocabulary/calculate/amortize · 1/base · 96d5476e"
+contentUuid: "ee2d3f7c-7ae2-5586-93b8-acf1679ff7f7"
+diamondUuid: "44102a06-a4b5-82e0-9f05-5f4ea668e0ab"
+uuid: "96d5476e-d022-8d50-bc58-32d5e054ebe3"
+horo: 1
 typography:
-  partition: calculate
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - calculate
-    - currency
-    - port
-  matrix:
-    - accounting
-    - calculate
-    - currency
-    - intangible
-    - port
-  backlinks:
-    - accounting
-    - calculate
-    - currency
-    - intangible
-    - port
 signatures:
-  computationUuid: "b3ef4be3-741d-8a22-a4c8-93c42f426302"
+  computationUuid: "a99d5c81-69f6-8ebb-8848-86c1e4afc83e"
   stages:
     - stage: path
-      stageUuid: "6ab65087-6953-82e0-a1d4-eae76bd0e9ae"
+      stageUuid: "ac42360a-d5da-830c-8ae9-1cd31e4c425e"
     - stage: trinity
-      stageUuid: "c2e9fa62-1dfd-822b-a588-dd4a6ee03c9d"
+      stageUuid: "b74cf055-62e6-84bc-a02f-fc60434eac09"
     - stage: boundary
-      stageUuid: "47ec5240-dda9-8a30-965b-7b266498160c"
+      stageUuid: "573ebb12-5aeb-8f96-8855-f665cb262294"
     - stage: links
-      stageUuid: "94c8949b-7ad5-8af3-a773-d94e8150aa59"
+      stageUuid: "34eac497-f725-81a9-8fd0-068d1dec5adc"
     - stage: horo
-      stageUuid: "3ff7c3df-a9f4-83da-a262-58cd27d36739"
+      stageUuid: "83ecf0a9-af3c-8134-bc6f-c01d2e789b2a"
     - stage: seal
-      stageUuid: "cce2c195-d842-8fa3-ba28-9f578a43d416"
+      stageUuid: "c6d75694-08a5-82f9-8463-73b39afe690f"
     - stage: uuid
-      stageUuid: "58d24504-311b-8eac-ad8d-c560c99a1180"
+      stageUuid: "1dca3389-9dad-874a-af9c-6a4c677cb24d"
 version: 2
 ---
 # amortize — amortization schedules (pure compute)

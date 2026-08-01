@@ -3,9 +3,40 @@ import { join } from 'node:path'
 import { mkdtempSync, writeFileSync, rmSync, existsSync, readFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { CLI_REGISTRY } from '@/cli/registry'
-import { BUILD_GATE_CHECKS, folderNameWarnings, touchesStandardBanner } from './matter'
+import { BUILD_GATE_CHECKS, folderNameWarnings, touchesStandardBanner, outsideMatter, CONFIRM_CHECK_AXES } from './matter'
 
 const ROOT = process.cwd()
+
+describe('confirm/matter — outside axis (default-DENY)', () => {
+  // The false negative every location axis shared: `isMdStray` and `folderNameWarnings` both bail on
+  // `rel.startsWith('..')`, so an atom written to ~/.claude/…/memory was exempt from every structural
+  // check while the path-agnostic `reference` axis still ran — the gate fired on the wrong thing and the
+  // real violation passed. A gate reporting green over the defect it exists for is the worst kind.
+  it('denies ANY write outside the corpus root — allowlist, not blocklist', () => {
+    // Deny-by-default: the extension is irrelevant. A blocklist can always be evaded by a case nobody
+    // enumerated, so the policy is inverted — outside is denied unless explicitly allowed.
+    expect(outsideMatter([join(ROOT, '..', 'memory', 'note.md')], ROOT)).toHaveLength(1)
+    expect(outsideMatter([join(ROOT, '..', 'elsewhere', 'atom.ts')], ROOT)).toHaveLength(1)
+    expect(outsideMatter([join(ROOT, '..', 'x', 'anything.json')], ROOT)).toHaveLength(1)
+  })
+
+  it('allows in-corpus writes and the scratch allowlist — scratch is not matter', () => {
+    expect(outsideMatter([join(ROOT, 'src', 'confirm', 'matter.ts')], ROOT)).toHaveLength(0)
+    expect(outsideMatter([join(tmpdir(), 'scratch', 'probe.md')], ROOT)).toHaveLength(0)
+  })
+
+  it('allows /private/tmp — os.tmpdir() alone denied a real scratchpad', () => {
+    // The axis blocked its own author's scratch file: macOS tmpdir() is /var/folders/…, while the
+    // scratchpad sits under /private/tmp. A gate that denies legitimate work is one people learn
+    // to route around, so the allowlist covers both roots.
+    expect(outsideMatter(['/private/tmp/session/scratch/notes.txt'], ROOT)).toHaveLength(0)
+    expect(outsideMatter(['/private/var/tmp/x.md'], ROOT)).toHaveLength(0)
+  })
+
+  it('the axis is IN the law — a check absent from CONFIRM_CHECK_AXES cannot block', () => {
+    expect(CONFIRM_CHECK_AXES).toContain('outside')
+  })
+})
 
 describe('confirm/matter — scoped + full gate', () => {
   // Was: `expect(labels.length).toBe(9)` under the name "matches package.json check chain" — which it never
@@ -99,14 +130,24 @@ describe('confirm/matter — scoped + full gate', () => {
     })
 
     // This gate refused its OWN first draft. The refusal message named the two banner sigils in prose, and
-    // the scanner it guards — an rg regex over raw text — matched the sentence as a citation and filed
+    // the scanner it guards — a regex over raw text — matched the sentence as a citation and filed
     // confirm/matter.ts as implementing an "RFC" titled with the rest of my message. The catalogue went
     // stale and the hook blocked the write that added it. A string is DATA, not a citation — the lesson
-    // rules/reference already paid for, which standards/emit has not learned.
-    it('the scanner cannot tell a banner from a string that looks like one — the flaw, pinned', () => {
-      const sigil = '@' + 'rfc' // never written literally: it would file a false citation from this test
+    // rules/reference already paid for.
+    //
+    // The flaw was PINNED here rather than fixed, and the cost came due: a fixture string in this very
+    // file made the `standards` axis refuse every edit to it — a red nobody could clear. The scanner now
+    // reads comments through ts.createSourceFile ([[syntax]]), so the pin inverts into a regression test.
+    it('a string that looks like a banner does NOT count — parsed, not matched', () => {
+      const sigil = '@' + 'rfc' // kept split: hygiene, since a real COMMENT here would still count
       const d = fixture(`export const msg = '${sigil} banner moved and the catalogue did not follow'`)
-      expect(touchesStandardBanner(['f.ts'], d)).toBe(true) // a STRING, and it counts
+      expect(touchesStandardBanner(['f.ts'], d)).toBe(false)
+      rmSync(d, { recursive: true, force: true })
+    })
+
+    it('a real comment banner still counts — the fix must not disarm the gate', () => {
+      const d = fixture('/**\n * @standard ISO-4217:2015 currency-codes\n */\nexport const x = 1')
+      expect(touchesStandardBanner(['f.ts'], d)).toBe(true)
       rmSync(d, { recursive: true, force: true })
     })
 

@@ -2,66 +2,19 @@
 name: storage
 description: "Use when reasoning about storage as a part of [[computer]] — vocabulary pivot to @/storage; nested not duplicated."
 atomPath: "computer/storage"
-coordinate: "computer/storage · 7/descent · b8a98bd0"
-contentUuid: "cb43c494-af59-5133-9239-6c30989a1f45"
-diamondUuid: "495fa82e-c315-87d6-a2f1-5ec791dededc"
-uuid: "b8a98bd0-9e42-8276-8568-67e2244081ad"
-horo: 7
-bonds:
-  in:
-    - bindings
-    - collapse
-    - computer
-    - law
-    - merge
-    - requirements
-    - self
-    - sti
-    - storage
-  out:
-    - bindings
-    - collapse
-    - computer
-    - law
-    - merge
-    - requirements
-    - self
-    - sti
-    - storage
+coordinate: "computer/storage · 4/weave · 7153f820"
+contentUuid: "169c63e7-cc47-51ad-af67-09a4e0a585fb"
+diamondUuid: "7ffb610e-d197-81c4-b201-9ce4f501f39a"
+uuid: "7153f820-d918-85f4-9b35-007bbe1ae49b"
+horo: 4
 typography:
   partition: computer
   bondDegree: 30
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - computer
-    - law
-    - storage
-  matrix:
-    - bindings
-    - collapse
-    - computer
-    - law
-    - merge
-    - requirements
-    - self
-    - sti
-    - storage
-  backlinks:
-    - bindings
-    - collapse
-    - computer
-    - law
-    - merge
-    - requirements
-    - self
-    - sti
-    - storage
 signatures:
-  computationUuid: "feecb3e0-cd2b-8b7c-b1cb-21c0ac0581b0"
+  computationUuid: "9fa1d6e0-d95f-8c2d-ac66-b3ab9fb2b954"
   stages:
     - stage: path
       stageUuid: "69dac02f-584d-8876-94c6-3b1c64db9319"
@@ -72,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ab04aea3-212f-86c7-af86-eb57690629eb"
     - stage: horo
-      stageUuid: "a4e382df-d63e-84e3-9555-b72e415d3416"
+      stageUuid: "7925b860-70a0-8b2e-89f1-864f393cb368"
     - stage: seal
       stageUuid: "5a82b980-73d2-8fca-abad-ca28f1c21c80"
     - stage: uuid
-      stageUuid: "50bdb036-0314-8edc-8d6c-bc45fba2e415"
+      stageUuid: "468605b0-7276-82fd-bd65-01f2c9c87991"
 version: 2
 ---
 # computer/storage — persists bytes

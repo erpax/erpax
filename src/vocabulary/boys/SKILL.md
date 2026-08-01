@@ -1,63 +1,35 @@
 ---
 name: boys
 description: "Use when reasoning about boys as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/boys
-coordinate: boys · 2/share · 6088ac8c
-contentUuid: "0a2a000f-10b6-5ff5-bdd0-869fd894a762"
-diamondUuid: "5d7186a1-af20-8e04-99a1-31af6bdb8844"
-uuid: "6088ac8c-d303-846a-84de-b4a80dc5bdfa"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/boys"
+coordinate: "vocabulary/boys · 1/base · 893014c8"
+contentUuid: "3324576a-6f49-534d-976b-dbc00f8171c2"
+diamondUuid: "61662b08-0edb-8665-b694-5a2a76912867"
+uuid: "893014c8-45ca-86b5-83c9-2800e4cf6e78"
+horo: 1
 typography:
-  partition: boys
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "9d153fc6-5896-837e-8339-2bce3bcf7751"
+  computationUuid: "a75df69b-68d1-828d-ad6f-d5ef1fc42424"
   stages:
     - stage: path
-      stageUuid: "ea9d75b5-1f42-86ff-86b8-a12f3ffd63e4"
+      stageUuid: "4cdd1306-c183-8899-b33e-93f43adeab97"
     - stage: trinity
-      stageUuid: "013cb0e0-3ad6-8d78-9b68-da50ca0a1e43"
+      stageUuid: "535b024a-2ca5-82fb-b4cf-d6887cf05454"
     - stage: boundary
-      stageUuid: "3404bae7-b4d1-8840-961b-e4e553389737"
+      stageUuid: "5f74b692-776c-80c4-91ff-898291badb28"
     - stage: links
-      stageUuid: "385022b5-8c68-81d4-8280-8881624f3cfc"
+      stageUuid: "313c53db-5967-8981-8768-9613a0e2f6dd"
     - stage: horo
-      stageUuid: "80b3bbbe-ca55-8094-82be-36306ecde70b"
+      stageUuid: "29582a1a-d027-8c9e-86b3-9efee7bb81ed"
     - stage: seal
-      stageUuid: "9734205e-1f50-81ce-9079-7b73db3a210d"
+      stageUuid: "245a5fd9-5825-8e19-a7b7-7961fe5f936d"
     - stage: uuid
-      stageUuid: "556c6f8f-d9ea-887e-817f-4fff0bfecb15"
+      stageUuid: "d4504e75-98c3-8340-b91a-395fcae72ec4"
 version: 2
 ---
 # boys

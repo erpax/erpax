@@ -2,71 +2,19 @@
 name: disease
 description: "Use when reasoning about disease as a medical facet of [[medical]] — vocabulary pivot to @/disease; nested not duplicated."
 atomPath: "medical/disease"
-coordinate: "medical/disease · 7/descent · c2d18f6e"
-contentUuid: "753f9d6f-359c-5f79-ba9a-7e2bcfd9e759"
-diamondUuid: "2ffe388d-811f-87bf-9fd1-0f989a05f120"
-uuid: "c2d18f6e-0be8-8f1d-8327-0d99e42272ab"
-horo: 7
-bonds:
-  in:
-    - associated
-    - disease
-    - infectious
-    - info
-    - law
-    - medical
-    - merge
-    - prevention
-    - spread
-    - statistics
-  out:
-    - associated
-    - disease
-    - infectious
-    - info
-    - law
-    - medical
-    - merge
-    - prevention
-    - spread
-    - statistics
+coordinate: "medical/disease · 5/round · 077b08d3"
+contentUuid: "093c4329-925b-59a2-b880-abadd5543072"
+diamondUuid: "31183ff2-666f-81cd-9b6f-c4cb6b281038"
+uuid: "077b08d3-399a-8e5e-b684-642dac34b2e8"
+horo: 5
 typography:
   partition: medical
   bondDegree: 41
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - disease
-    - law
-    - medical
-    - merge
-  matrix:
-    - associated
-    - disease
-    - infectious
-    - info
-    - law
-    - medical
-    - merge
-    - prevention
-    - spread
-    - statistics
-  backlinks:
-    - associated
-    - disease
-    - infectious
-    - info
-    - law
-    - medical
-    - merge
-    - prevention
-    - spread
-    - statistics
 signatures:
-  computationUuid: "6efae695-d608-8536-8b98-6970af173592"
+  computationUuid: "c771cd0a-9472-8685-b5eb-0ba4b0a03ab4"
   stages:
     - stage: path
       stageUuid: "0f457ecb-81a7-8846-a05a-de89f6bdce22"
@@ -77,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "605157b7-3440-8609-b82a-6060adb054f8"
     - stage: horo
-      stageUuid: "d318415a-dc13-8a33-bf18-f5b67f627b7f"
+      stageUuid: "9ea2b3c6-04a2-8d4e-9f77-50a097eba97e"
     - stage: seal
       stageUuid: "80fcb0ff-21c4-825b-9f74-a0b58675d43e"
     - stage: uuid
-      stageUuid: "a53e98fa-3cf2-8556-8b8a-38b2cd8f86a6"
+      stageUuid: "76b000f5-141a-8215-9b66-761d612db314"
 version: 2
 ---
 # medical/disease — medical facet

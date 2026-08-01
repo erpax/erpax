@@ -1,68 +1,35 @@
 ---
 name: amusement
 description: "Use when reasoning about amusement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/amusement
-coordinate: amusement · 4/weave · aff2c2ff
-contentUuid: "8ff9c4c6-7564-5cad-9a99-21e287fabab5"
-diamondUuid: "c186c5ac-e272-8b4c-b668-cfc466e02a47"
-uuid: "aff2c2ff-2214-8b03-8aa4-36bd80e6b510"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - park
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - park
-    - sti
+atomPath: "vocabulary/amusement"
+coordinate: "vocabulary/amusement · 8/crest · 6479d0df"
+contentUuid: "ad6c6c4d-27f4-53a4-8d4c-ab5f04420632"
+diamondUuid: "a0e61988-c325-8df4-bd5c-e16d3e74caf7"
+uuid: "6479d0df-9fb0-86fc-8bd2-d57b34e99f87"
+horo: 8
 typography:
-  partition: amusement
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - park
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - park
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - park
-    - sti
 signatures:
-  computationUuid: "f7e476dc-3996-80fe-a92a-bc53bd168dc3"
+  computationUuid: "9c7f5f9b-7713-85a9-935d-54c75445cccb"
   stages:
     - stage: path
-      stageUuid: "7c4ddf6d-fddf-8f49-a366-05959fcb8d94"
+      stageUuid: "f40926ea-577e-80d5-b24e-dd7f583bb643"
     - stage: trinity
-      stageUuid: "7dd42a0e-42ee-86c5-8b9f-53419889479b"
+      stageUuid: "50979f16-7583-8f96-92a2-66f98ccbb644"
     - stage: boundary
-      stageUuid: "15b591c5-865c-8ac9-9a8b-84dd561e6ad7"
+      stageUuid: "e9de57e8-1955-8d87-882e-c0de56399795"
     - stage: links
-      stageUuid: "74c33ec9-e2c4-87c1-aaed-70de2db5434c"
+      stageUuid: "e33f18d7-2d1b-84d6-885f-0660fb4d034b"
     - stage: horo
-      stageUuid: "e335654f-db37-8e53-8558-c7df18e07ad8"
+      stageUuid: "197d91a7-5908-8924-b87f-91fcf11759e7"
     - stage: seal
-      stageUuid: "f1e3ca18-fb32-8723-966d-97b2c822fb73"
+      stageUuid: "14048507-2d60-8b67-aa1e-006e0ff53e09"
     - stage: uuid
-      stageUuid: "183f494d-f17a-8d36-883f-33210e5922b5"
+      stageUuid: "d02778bb-8bb0-8602-8a1a-c4041ac984e1"
 version: 2
 ---
 # amusement

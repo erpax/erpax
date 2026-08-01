@@ -1,80 +1,35 @@
 ---
 name: named
 description: "Use when reasoning about named as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/named
-coordinate: named · 2/share · 5bfe61bb
-contentUuid: "a8b2acbf-36ba-5e1a-8e4e-04781368804e"
-diamondUuid: "8369b564-25a4-8c7c-b7fb-305842fba524"
-uuid: "5bfe61bb-b5d7-8d10-9c94-573631422015"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - convention
-    - exported
-    - fronted
-    - law
-    - merge
-    - position
-    - sti
-  out:
-    - collapse
-    - convention
-    - exported
-    - fronted
-    - law
-    - merge
-    - position
-    - sti
+atomPath: "vocabulary/named"
+coordinate: "vocabulary/named · 8/crest · e74546b4"
+contentUuid: "d884c107-ef89-5993-936d-b305980486d4"
+diamondUuid: "47ff8f16-4b2c-83f6-8a4b-adaa73f5f97e"
+uuid: "e74546b4-53a3-8827-aa04-bd57a4f57c1d"
+horo: 8
 typography:
-  partition: named
-  bondDegree: 32
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 36
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - position
-    - sti
-  matrix:
-    - collapse
-    - convention
-    - exported
-    - fronted
-    - law
-    - merge
-    - position
-    - sti
-  backlinks:
-    - collapse
-    - convention
-    - exported
-    - fronted
-    - law
-    - merge
-    - position
-    - sti
 signatures:
-  computationUuid: "81bc022c-944c-8a2d-88f1-d8baae02e482"
+  computationUuid: "a0a311a8-e034-87ed-8722-52512e5ec0b1"
   stages:
     - stage: path
-      stageUuid: "4d84e28d-d5cc-814e-a346-1052a617e3d9"
+      stageUuid: "635ecd7f-4a3a-8b3d-8dc0-78dfb8c4cf2f"
     - stage: trinity
-      stageUuid: "998328e7-f2a0-82f3-9aa1-b6744d7882dd"
+      stageUuid: "52d4f1a8-7901-84c4-9692-0b151734772f"
     - stage: boundary
-      stageUuid: "386c2f47-395b-830c-8579-e35585a6f15f"
+      stageUuid: "6ac56d3c-7590-8d54-9197-3bc3d6296516"
     - stage: links
-      stageUuid: "5b694c76-8f7e-859d-84a0-3d622dead1ef"
+      stageUuid: "34004b74-c23c-804e-88d0-5cb151fc926a"
     - stage: horo
-      stageUuid: "4bbd0d32-16c1-8b61-a460-e139c90ff182"
+      stageUuid: "35bdf8bd-e56d-8ae1-ade2-abeb259b33e9"
     - stage: seal
-      stageUuid: "8e5180ac-b762-848c-8788-5dd30b3ee958"
+      stageUuid: "fbb4996e-3c80-834d-a335-c376838c0f26"
     - stage: uuid
-      stageUuid: "38b173d0-1a7d-85e8-a923-877e8ab86783"
+      stageUuid: "98caab50-2da3-8e6f-9b9d-3da2291a1233"
 version: 2
 ---
 # named

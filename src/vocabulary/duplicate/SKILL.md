@@ -1,68 +1,35 @@
 ---
 name: duplicate
 description: "Use when reasoning about duplicate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/duplicate
-coordinate: duplicate · 5/round · 9ce66100
-contentUuid: "120c236b-2d9f-5a8e-a85f-87c9e6c2f25f"
-diamondUuid: "876db7f1-8590-8cc3-8fff-bb13bd24caf4"
-uuid: "9ce66100-5e25-8dbe-94fd-0bd07e61b255"
+atomPath: "vocabulary/duplicate"
+coordinate: "vocabulary/duplicate · 5/round · 5f380c20"
+contentUuid: "06c40f95-7356-5d35-a13f-64eea48c1834"
+diamondUuid: "66db540f-8279-8dbf-b76c-a2ae3f34b0fe"
+uuid: "5f380c20-97b8-87f3-ac2b-9609b19ee903"
 horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - therapy
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - therapy
 typography:
-  partition: duplicate
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - therapy
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - therapy
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - therapy
 signatures:
-  computationUuid: "d0679d50-d0d9-8db0-a52a-43bab6d140c8"
+  computationUuid: "44b817fe-6874-824a-affc-51fc531b9a6e"
   stages:
     - stage: path
-      stageUuid: "d8e8436e-b41e-8a78-8ddc-c12a2b7f897b"
+      stageUuid: "b883bd6b-d5b6-881e-89ab-c735b491f3a4"
     - stage: trinity
-      stageUuid: "67db0757-534f-8cee-84bf-5d1f23beb051"
+      stageUuid: "0e37f4d7-98e6-815c-8293-d041282db601"
     - stage: boundary
-      stageUuid: "293d63e6-e6e3-838c-8238-a69b490e4351"
+      stageUuid: "418064f1-ab43-87ec-9437-c8f0a87c5de0"
     - stage: links
-      stageUuid: "508c0a5d-947d-80de-a496-ddf5abebcb1a"
+      stageUuid: "4093ce31-cfed-8080-b1e4-c84483f54e73"
     - stage: horo
-      stageUuid: "e159b139-ea15-8555-b9f9-1a4c26731d52"
+      stageUuid: "73c25287-d3f4-832e-8dc8-fcb20d7d6ab8"
     - stage: seal
-      stageUuid: "b3027b0a-87d8-8f51-a07b-c8d9e225a4e9"
+      stageUuid: "2cdd2585-6229-8a68-b477-218020e57a80"
     - stage: uuid
-      stageUuid: "25c9d6ac-a5b0-83c8-9f7b-d9355b3bca66"
+      stageUuid: "f3e5ddf9-aa8d-8492-b18b-868c34cac21e"
 version: 2
 ---
 # duplicate

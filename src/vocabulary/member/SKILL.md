@@ -1,78 +1,35 @@
 ---
 name: member
 description: Use when reasoning about member — A member of an Organization or a ProgramMembership. Organizations can be members of organizations; ProgramMembership is typically for individuals.
-atomPath: vocabulary/member
-coordinate: member · 5/round · c8e8b243
-contentUuid: "dd0cca5c-4e30-5c65-ad86-95bb00040211"
-diamondUuid: "73723fab-7ad0-8220-bf33-b88452940c65"
-uuid: "c8e8b243-5da3-8b63-99a2-70e5f7ee04d7"
-horo: 5
-bonds:
-  in:
-    - group
-    - has
-    - law
-    - music
-    - program
-    - tier
-    - valid
-  out:
-    - group
-    - has
-    - law
-    - music
-    - program
-    - tier
-    - valid
+atomPath: "vocabulary/member"
+coordinate: "vocabulary/member · 1/base · 969ca10f"
+contentUuid: "0832a70b-df61-51c0-8265-952876c7ddde"
+diamondUuid: "2e58d865-f8ec-8798-8c63-97b34afec398"
+uuid: "969ca10f-6ca0-806a-a38e-87384ed2b81c"
+horo: 1
 typography:
-  partition: member
-  bondDegree: 27
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 29
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - group
-    - has
-    - law
-    - music
-    - program
-    - tier
-    - valid
-  matrix:
-    - group
-    - has
-    - law
-    - music
-    - program
-    - tier
-    - valid
-  backlinks:
-    - group
-    - has
-    - law
-    - music
-    - program
-    - tier
-    - valid
 signatures:
-  computationUuid: "115ee3a2-c1e6-846a-917e-f51a186c7e4d"
+  computationUuid: "993f7de2-6f43-8c28-adb7-a61d60d0092e"
   stages:
     - stage: path
-      stageUuid: "b4713720-a9a1-8129-bebb-18631ec2219e"
+      stageUuid: "58e775ec-bce9-82d8-a6f6-f08cf2657107"
     - stage: trinity
-      stageUuid: "34405b14-9fb6-8840-b5b6-25b2df0e11d9"
+      stageUuid: "7ade580a-ade5-899a-9499-d7a155cee0ca"
     - stage: boundary
-      stageUuid: "4df48938-4561-8007-b056-e89a14160d37"
+      stageUuid: "c0c3c219-b1b2-87b7-ba53-ed8b5673d2ea"
     - stage: links
-      stageUuid: "4b006ccc-c7f9-81e5-a7ef-27c745160df9"
+      stageUuid: "0243a568-6319-8c32-801e-49d3c7e851b6"
     - stage: horo
-      stageUuid: "2f914562-8143-8d7f-84fa-23de49c43c3c"
+      stageUuid: "e40ad16f-1497-86e8-a065-3a9d7799ced9"
     - stage: seal
-      stageUuid: "e341b7ee-4cf2-8220-9e03-f53a27e0f672"
+      stageUuid: "0cba1513-1553-8cf9-967d-af1aff80ea5e"
     - stage: uuid
-      stageUuid: "10301bb1-c427-8798-8e79-93660b66f715"
+      stageUuid: "595dafe8-38b7-8a0e-be71-756ffffbce60"
 version: 2
 ---
 # member

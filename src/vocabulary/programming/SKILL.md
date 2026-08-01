@@ -1,73 +1,35 @@
 ---
 name: programming
 description: "Use when reasoning about programming as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/programming
-coordinate: programming · 7/descent · 127a5e29
-contentUuid: "f88eafcf-c62f-5c7d-83fc-e0e3e97edc34"
-diamondUuid: "590edfc4-07b6-8f5e-a661-bc6b1a28ef70"
-uuid: "127a5e29-6653-8df4-881b-ccb5920ca6b7"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - language
-    - law
-    - merge
-    - model
-    - sti
-  out:
-    - collapse
-    - language
-    - law
-    - merge
-    - model
-    - sti
+atomPath: "vocabulary/programming"
+coordinate: "vocabulary/programming · 1/base · 61661d2b"
+contentUuid: "549a3ea8-fc9d-5f44-a34b-acd058bdf857"
+diamondUuid: "d3f76101-d01e-8d0a-810f-365b540655ae"
+uuid: "61661d2b-5647-8371-8302-b81d82c4dede"
+horo: 1
 typography:
-  partition: programming
-  bondDegree: 20
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 22
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - language
-    - law
-    - merge
-    - model
-    - sti
-  matrix:
-    - collapse
-    - language
-    - law
-    - merge
-    - model
-    - sti
-  backlinks:
-    - collapse
-    - language
-    - law
-    - merge
-    - model
-    - sti
 signatures:
-  computationUuid: "24f9b285-564e-83f5-84f3-92b0abc3c5fc"
+  computationUuid: "607e1f98-eda9-8e3b-9834-5a9c552a22f0"
   stages:
     - stage: path
-      stageUuid: "353eb103-758b-8734-81a1-9dfbd17738da"
+      stageUuid: "692e96a6-d927-8ee6-98d5-a0522723e68a"
     - stage: trinity
-      stageUuid: "2d9228b1-466d-8131-9bae-13e8a966177d"
+      stageUuid: "84355ae4-a5bc-8864-9bf5-ca614d2e5c99"
     - stage: boundary
-      stageUuid: "3a3e301b-acb4-8842-84cc-8f42fc36fb42"
+      stageUuid: "f433957e-096b-87a9-888d-459599e364cf"
     - stage: links
-      stageUuid: "e290e624-8e4d-8983-a620-bde34b89b7f3"
+      stageUuid: "7985d406-62c9-881e-b8bb-183ad67c4dc9"
     - stage: horo
-      stageUuid: "145d508e-79b3-81c3-ac08-65249dd0fb40"
+      stageUuid: "23fa73ca-33d0-861e-bf5a-aff3a393781f"
     - stage: seal
-      stageUuid: "4adfddf8-13d7-82df-9f89-64d1de113f40"
+      stageUuid: "7552d263-fa59-8525-928c-e0a570ba9db6"
     - stage: uuid
-      stageUuid: "38084b2e-7b85-83c7-9940-a0ebfff87dde"
+      stageUuid: "29319637-8a33-8173-a6ca-e87af6b5a82b"
 version: 2
 ---
 # programming

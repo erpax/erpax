@@ -2,77 +2,19 @@
 name: wearable
 description: "Use when reasoning about wearable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: wearable
-coordinate: wearable · 7/descent · 0fb7063c
-contentUuid: "d3acd9e5-a667-5c8b-b743-b5ea8c8c1742"
-diamondUuid: "6978ee02-0073-88c6-9cdd-585abfedf6ae"
-uuid: "0fb7063c-9173-8706-8ee6-33c75e9479d6"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - enumeration
-    - group
-    - law
-    - measurement
-    - merge
-    - size
-    - sti
-    - system
-    - type
-  out:
-    - collapse
-    - enumeration
-    - group
-    - law
-    - measurement
-    - merge
-    - size
-    - sti
-    - system
-    - type
+coordinate: "wearable · 1/base · d3cf3cc7"
+contentUuid: "ca674054-4e98-51be-add3-3d15178f3889"
+diamondUuid: "04b330b0-47de-8de5-93d8-26a9e729e9b9"
+uuid: "d3cf3cc7-9a4b-8900-8dc1-bdeae2f9fabb"
+horo: 1
 typography:
   partition: wearable
-  bondDegree: 34
-  neighbors: []
+  bondDegree: 38
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - enumeration
-    - group
-    - law
-    - measurement
-    - merge
-    - size
-    - sti
-    - system
-    - type
-  matrix:
-    - collapse
-    - enumeration
-    - group
-    - law
-    - measurement
-    - merge
-    - size
-    - sti
-    - system
-    - type
-  backlinks:
-    - collapse
-    - enumeration
-    - group
-    - law
-    - measurement
-    - merge
-    - size
-    - sti
-    - system
-    - type
 signatures:
-  computationUuid: "3c99e70f-ca90-8ba2-bc0b-22be59a4e2bf"
+  computationUuid: "87689f55-2920-88f8-9eab-3589ecb9421f"
   stages:
     - stage: path
       stageUuid: "8270aca7-de5d-8000-a72d-3b4be67b20f9"
@@ -83,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b573596e-d7a9-815e-b8d7-aa8f93699754"
     - stage: horo
-      stageUuid: "8640d965-6891-8f2e-a6a4-d0117dea27fa"
+      stageUuid: "a5039263-6ea1-8b89-a30f-19420460df91"
     - stage: seal
-      stageUuid: "79a606cd-2193-8353-af7e-77b1cb37fb28"
+      stageUuid: "59452751-cdb4-8752-9fc3-963c64cd9290"
     - stage: uuid
-      stageUuid: "0957a80e-d3ab-8fef-8e62-c9979a042ada"
+      stageUuid: "5544e9c2-b072-8249-8c6d-87d93aa844d0"
 version: 2
 ---
 # wearable

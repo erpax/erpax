@@ -1,55 +1,22 @@
 ---
 name: replay
-description: "Use when an auditor demands \\\\\\\"show me how this number was computed and reproduce it\\\\\\\" — deterministic replay re-runs a chain step and proves byte-identical output by hashing the AgentEffect sequence (timestamps stripped) and matching it against the leaf's recorded outputHash."
+description: "Use when an auditor demands \\\\\\\\\\\\\\\"show me how this number was computed and reproduce it\\\\\\\\\\\\\\\" — deterministic replay re-runs a chain step and proves byte-identical output by hashing the AgentEffect sequence (timestamps stripped) and matching it against the leaf's recorded outputHash."
 atomPath: "beyond/replay"
-coordinate: "beyond/replay · 4/weave · b812a842"
-contentUuid: "5d0f6012-730f-5a8d-bfd9-577168adf4fb"
-diamondUuid: "f57f066b-de4a-88c3-a366-304705f2f92d"
-uuid: "b812a842-15be-857d-a43e-d67958208b65"
-horo: 4
-bonds:
-  in:
-    - audit
-    - beyond
-    - integrity
-    - law
-    - trinity
-  out:
-    - audit
-    - beyond
-    - integrity
-    - law
-    - trinity
+coordinate: "beyond/replay · 2/share · c3989a49"
+contentUuid: "262b12f5-3336-5b63-b6c1-1b00e7eebe37"
+diamondUuid: "cb89f103-0858-85d8-9e3e-f29016b2cc58"
+uuid: "c3989a49-e7f8-8f43-b247-bef8535d124d"
+horo: 2
 typography:
   partition: beyond
   bondDegree: 15
-  neighbors: []
 standards:
   - "ISO/IEC 25010:2023 testability + reusability"
   - "ISO/IEC 25010:2023 §5.5 testability + §5.7 reusability"
   - "ISRS 4400 agreed-upon-procedures (replay verification)"
 bindings: []
-neighbors:
-  wikilink:
-    - audit
-    - beyond
-    - integrity
-    - law
-    - trinity
-  matrix:
-    - audit
-    - beyond
-    - integrity
-    - law
-    - trinity
-  backlinks:
-    - audit
-    - beyond
-    - integrity
-    - law
-    - trinity
 signatures:
-  computationUuid: "e24ef319-e29a-8cab-b6e0-c1cd07fc49e5"
+  computationUuid: "e3651b5d-0197-8331-9a86-fc049cd6e560"
   stages:
     - stage: path
       stageUuid: "0e8f4b83-e98b-86c0-9791-fd654ffb1f6a"
@@ -60,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "9c02f772-ec16-8c68-9ebe-a5864966711a"
     - stage: horo
-      stageUuid: "c45b26ac-b7d8-8411-bc24-acb09ccb5381"
+      stageUuid: "3a365334-724b-841a-a53c-da412042f377"
     - stage: seal
       stageUuid: "ffcd2413-5fcd-866f-a960-b3d70a9c7114"
     - stage: uuid
-      stageUuid: "bc302880-da3c-8134-85ca-dd4906582663"
+      stageUuid: "f88f27c3-65e1-8bdc-8f08-b4abbc5ce5af"
 version: 2
 ---
 # beyond/replay — deterministic replay (byte-identical re-computation)

@@ -1,72 +1,35 @@
 ---
 name: inventory
 description: "Use when reasoning about inventory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/inventory
-coordinate: inventory · 7/descent · e115febd
-contentUuid: "e069da1c-fed1-59d7-9ded-75b51619b5d1"
-diamondUuid: "7804d875-140e-886d-93c1-ee2ef23c7224"
-uuid: "e115febd-1f34-8cd5-974f-bdd31e9ec467"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - level
-    - merge
-    - movement
-    - sti
-  out:
-    - collapse
-    - law
-    - level
-    - merge
-    - movement
-    - sti
+atomPath: "vocabulary/inventory"
+coordinate: "vocabulary/inventory · 5/round · 2c0a0426"
+contentUuid: "3b2a0eae-25ee-5faf-92f0-af2772cc4594"
+diamondUuid: "d5ea5cb4-b503-8ce2-ba28-7e1f2382c15a"
+uuid: "2c0a0426-61fa-8d26-8bd6-560ffd1970db"
+horo: 5
 typography:
-  partition: inventory
-  bondDegree: 19
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 27
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - level
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - level
-    - merge
-    - movement
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - level
-    - merge
-    - movement
-    - sti
 signatures:
-  computationUuid: "341975c7-3aaf-83fb-8d27-f79cc2e758e8"
+  computationUuid: "86225930-369e-8e53-b64c-617499fd5330"
   stages:
     - stage: path
-      stageUuid: "4db352c5-e12d-834e-954b-24a378e30200"
+      stageUuid: "dca2a56a-e3fc-8adc-8bbb-8ffb1be9a135"
     - stage: trinity
-      stageUuid: "8ae3f436-4b96-873c-b85c-9a0794d78c81"
+      stageUuid: "6965885b-9c43-879d-8556-0b86f4756191"
     - stage: boundary
-      stageUuid: "b2a986b2-ad9f-8aab-be75-d8c1ee07c5be"
+      stageUuid: "a1e57642-d206-80e2-9bae-6d36633cc23b"
     - stage: links
-      stageUuid: "ca9d73e5-27fa-8eb3-a053-c004531e4a44"
+      stageUuid: "7f6238f9-f298-8cad-b623-30961e9d1960"
     - stage: horo
-      stageUuid: "087eb1a5-08c0-891c-b76c-dd5951d93028"
+      stageUuid: "1b7d123a-8ddb-83bb-9570-76a037e9586f"
     - stage: seal
-      stageUuid: "c56d67bc-8d42-8a97-82ee-68ca52aec3ca"
+      stageUuid: "56198a26-d1c4-838a-a2d5-fd44d78daa3c"
     - stage: uuid
-      stageUuid: "ee5d43a7-9650-86c8-b809-381d11457867"
+      stageUuid: "c1e58642-3401-8a04-8199-a822c97a66d5"
 version: 2
 ---
 # inventory

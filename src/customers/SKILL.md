@@ -2,69 +2,20 @@
 name: customers
 description: "Use when creating or querying the sale-side party master — customer identity, LEI, IBAN, VAT classification, credit limit, payment terms, accounts-receivable exposure, and GDPR consent. The EN-16931 buyer party collection."
 atomPath: customers
-coordinate: "customers · 4/weave · 64e95a83"
-contentUuid: "2090d42a-b6a3-56c1-bd4c-5697db043699"
-diamondUuid: "093b772d-da8f-86e1-8164-83a8364a862d"
-uuid: "64e95a83-8e42-874b-8e63-b7d6a08ad943"
-horo: 4
-bonds:
-  in:
-    - accounting
-    - activities
-    - bookings
-    - churn
-    - dunning
-    - engagement
-    - horo
-    - identity
-    - law
-    - memos
-    - orders
-    - party
-    - prospect
-    - retention
-    - satisfaction
-    - segments
-    - sla
-    - standard
-    - tax
-    - territory
-    - upsell
-  out:
-    - accounting
-    - activities
-    - bookings
-    - churn
-    - dunning
-    - engagement
-    - horo
-    - identity
-    - law
-    - memos
-    - orders
-    - party
-    - prospect
-    - retention
-    - satisfaction
-    - segments
-    - sla
-    - standard
-    - tax
-    - territory
-    - upsell
+coordinate: "customers · 5/round · fc6878d5"
+contentUuid: "c9699cc0-6d80-5743-a87d-33f479861123"
+diamondUuid: "82b11168-b17b-815e-ad72-d96d897ce4a6"
+uuid: "fc6878d5-dc88-8db5-a29a-26e4cd91908e"
+horo: 5
 typography:
   partition: customers
   bondDegree: 0
-  neighbors: []
 standards:
   - "ASC-606"
   - "COSO-ERM-2017"
   - "EN-16931"
   - "EN-16931:2017 §BG-7 buyer"
   - "EN-16931:2017 §BG-7 buyer`"
-  - "EU-2014/55"
-  - "EU-2017/1132"
-  - "EU-2017/828"
   - "EU-537/2014"
   - "EU-910/2014"
   - "EU-UCC"
@@ -95,61 +46,8 @@ standards:
   - eIDAS
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - horo
-    - identity
-    - law
-    - orders
-    - standard
-    - tax
-  matrix:
-    - accounting
-    - activities
-    - bookings
-    - churn
-    - dunning
-    - engagement
-    - horo
-    - identity
-    - law
-    - memos
-    - orders
-    - party
-    - prospect
-    - retention
-    - satisfaction
-    - segments
-    - sla
-    - standard
-    - tax
-    - territory
-    - upsell
-  backlinks:
-    - accounting
-    - activities
-    - bookings
-    - churn
-    - dunning
-    - engagement
-    - horo
-    - identity
-    - law
-    - memos
-    - orders
-    - party
-    - prospect
-    - retention
-    - satisfaction
-    - segments
-    - sla
-    - standard
-    - tax
-    - territory
-    - upsell
 signatures:
-  computationUuid: "2c6a50d9-998f-80b9-92ba-78660edc5f06"
+  computationUuid: "0e3b0b20-148e-8320-91ca-5a40eb67706d"
   stages:
     - stage: path
       stageUuid: "06e2401f-1cb1-8548-a990-755d31d88436"
@@ -160,11 +58,11 @@ signatures:
     - stage: links
       stageUuid: "76a0cd85-c851-88fd-a4e3-0e34bda9597b"
     - stage: horo
-      stageUuid: "0119ef1f-b9c7-8384-bf3b-f54be6e21ce7"
+      stageUuid: "5ebba9fe-a1fe-8d5c-b3ad-72d86dd75a2b"
     - stage: seal
       stageUuid: "06983341-9c4d-8ff2-8f93-343a2d9d2c9b"
     - stage: uuid
-      stageUuid: "42aeb7e8-2695-86e5-8e2c-82f64ee479c6"
+      stageUuid: "cfb8b4fd-4795-8a48-bef2-3935b617e650"
 version: 2
 ---
 # customers

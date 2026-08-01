@@ -2,30 +2,14 @@
 name: disclosures
 description: "Use when structuring EU mandatory sustainability reporting — one row per ESRS datapoint per reporting year (E1–E5 environmental, S1–S4 social, G1 governance) with narrative, quantitative KPIs, IRO classification, and assurance evidence for XBRL filing. The CSRD/ESRS disclosure register."
 atomPath: "csrd/disclosures"
-coordinate: "csrd/disclosures · 2/share · 88c4ec64"
-contentUuid: "6e7b83e5-2075-5567-9994-df8036279ebe"
-diamondUuid: "604f18f8-ef7a-8086-b504-a9ba0ecfbcf6"
-uuid: "88c4ec64-62a8-8403-8657-35148595ce88"
-horo: 2
-bonds:
-  in:
-    - accounting
-    - emissions
-    - fields
-    - hooks
-    - law
-    - standard
-  out:
-    - accounting
-    - emissions
-    - fields
-    - hooks
-    - law
-    - standard
+coordinate: "csrd/disclosures · 7/descent · 42fcef45"
+contentUuid: "38e4ee5b-62b9-5b88-a5d0-e04ca001ea55"
+diamondUuid: "7c38ce08-2c2e-803a-a033-9db133920345"
+uuid: "42fcef45-bf77-8223-86b5-057136059b1a"
+horo: 7
 typography:
   partition: csrd
   bondDegree: 19
-  neighbors: []
 standards:
   - "EU CSRD Directive 2022/2464"
   - "EU EFRAG ESRS-XBRL taxonomy"
@@ -45,30 +29,8 @@ standards:
   - XBRL
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - emissions
-    - fields
-    - hooks
-    - law
-    - standard
-  matrix:
-    - accounting
-    - emissions
-    - fields
-    - hooks
-    - law
-    - standard
-  backlinks:
-    - accounting
-    - emissions
-    - fields
-    - hooks
-    - law
-    - standard
 signatures:
-  computationUuid: "97d96923-a198-8d76-a80e-7c976e6ff401"
+  computationUuid: "23c3d598-0712-8b9e-86d2-ddbbc4b4114e"
   stages:
     - stage: path
       stageUuid: "42d87685-4469-8d8d-ad0f-b3fec575bd74"
@@ -79,11 +41,11 @@ signatures:
     - stage: links
       stageUuid: "e92cf626-78bc-8be8-8a55-e521345e3b26"
     - stage: horo
-      stageUuid: "5763c6a7-cce2-8249-9446-26baf919c83e"
+      stageUuid: "fbcdb313-f4e7-86de-896e-a50c38a1fab7"
     - stage: seal
       stageUuid: "ab8206c5-d899-82d6-a4d0-72b32ebbef7e"
     - stage: uuid
-      stageUuid: "d8ae3e22-6f39-88af-ac1d-28f9c6899379"
+      stageUuid: "4e52663b-d767-8a87-bc8a-be78919641d8"
 version: 2
 ---
 # csrd-disclosures

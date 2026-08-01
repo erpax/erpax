@@ -2,42 +2,14 @@
 name: requirements
 description: "Use when defining or querying individual control obligations within a compliance framework — code, title, description, section, severity (critical/high/medium/low) — linked to a ComplianceFramework; super-admin-only writes, tenant-read. The per-requirement obligation register that ComplianceGaps reference."
 atomPath: "compliance/frameworks/compliance/requirements"
-coordinate: "compliance/frameworks/compliance/requirements · 5/round · de18b883"
-contentUuid: "c4408a3a-552d-5082-8a6b-97fba20de224"
-diamondUuid: "21135dec-a101-887f-a259-f56bc607894c"
-uuid: "de18b883-4b75-8e77-ae4b-9570ec01ef39"
-horo: 5
-bonds:
-  in:
-    - applicant
-    - browser
-    - carrier
-    - experience
-    - frameworks
-    - gaps
-    - location
-    - memory
-    - occupational
-    - processor
-    - software
-    - storage
-  out:
-    - applicant
-    - browser
-    - carrier
-    - experience
-    - frameworks
-    - gaps
-    - location
-    - memory
-    - occupational
-    - processor
-    - software
-    - storage
+coordinate: "compliance/frameworks/compliance/requirements · 7/descent · 7a951d36"
+contentUuid: "0d7cf2a7-6764-57a3-83fe-b7d4bfd63769"
+diamondUuid: "3a7a9aa7-48e7-8295-8ee6-9d86652edd37"
+uuid: "7a951d36-42a2-848a-bd70-3b7396b4e3e8"
+horo: 7
 typography:
   partition: compliance
   bondDegree: 0
-  neighbors: []
 standards:
   - "ISO-37301"
   - "ISO-37301:2021 obligation-register"
@@ -46,37 +18,8 @@ standards:
   - "US-CTA-2021"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - gaps
-  matrix:
-    - applicant
-    - browser
-    - carrier
-    - experience
-    - frameworks
-    - gaps
-    - location
-    - memory
-    - occupational
-    - processor
-    - software
-    - storage
-  backlinks:
-    - applicant
-    - browser
-    - carrier
-    - experience
-    - frameworks
-    - gaps
-    - location
-    - memory
-    - occupational
-    - processor
-    - software
-    - storage
 signatures:
-  computationUuid: "5976fb15-be0a-8530-ba60-8a524c526930"
+  computationUuid: "f770c441-2685-841e-8aa7-d54a3336cdf5"
   stages:
     - stage: path
       stageUuid: "12c5ca21-ec66-85c6-ac1b-89a64544597b"
@@ -87,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "379eb10e-62d0-8e8b-8482-ee00d61563d7"
     - stage: horo
-      stageUuid: "195a2508-3d57-8489-a50e-19d32960006c"
+      stageUuid: "705f2f7b-d81a-8e5e-96ee-a178670f7a4b"
     - stage: seal
       stageUuid: "66c3d07c-0ea3-856a-a68a-827c41865036"
     - stage: uuid
-      stageUuid: "102ef7b8-7d40-801f-bf35-e2e3539e946f"
+      stageUuid: "45ecafc1-087a-81ef-b245-54a4c0d14c7e"
 version: 2
 ---
 # compliance-requirements

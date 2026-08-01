@@ -1,62 +1,34 @@
 ---
 name: requisition
 description: Use when modelling one requisition — the singular model of the requisitions collection (the plural store); a formal internal request to procure goods.
-atomPath: vocabulary/requisition
-coordinate: requisition · 4/weave · a75c3bb3
-contentUuid: "d6ce0256-104e-571d-82e6-3ca269c7213d"
-diamondUuid: "65f45b6c-e0f5-8f43-89ed-76a618791a68"
-uuid: "a75c3bb3-2456-8271-9463-771d1d8eb531"
-horo: 4
-bonds:
-  in:
-    - balance
-    - law
-    - purchase
-    - requisitions
-  out:
-    - balance
-    - law
-    - purchase
-    - requisitions
+atomPath: "vocabulary/requisition"
+coordinate: "vocabulary/requisition · 1/base · 2878ddbb"
+contentUuid: "46627641-5c75-59a3-a356-af0f469f347d"
+diamondUuid: "1e67471d-272c-8687-9b9b-5f264f09dad1"
+uuid: "2878ddbb-a698-85c9-bea1-28e620179cd2"
+horo: 1
 typography:
-  partition: requisition
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - law
-    - purchase
-    - requisitions
-  matrix:
-    - balance
-    - law
-    - purchase
-    - requisitions
-  backlinks:
-    - balance
-    - law
-    - purchase
-    - requisitions
 signatures:
-  computationUuid: "be613f85-7bb3-8fba-8df7-a666207bfac6"
+  computationUuid: "eceec518-58ea-82f5-8606-513f8e879830"
   stages:
     - stage: path
-      stageUuid: "0449d497-77c8-83e7-8f33-1b0be64b404f"
+      stageUuid: "0c054de3-2e64-8188-870e-901a33f79ed5"
     - stage: trinity
-      stageUuid: "509be80d-bb2f-8b36-8af3-cac33ce72c6b"
+      stageUuid: "8559039f-fd58-8d99-98ce-38ff4771a9eb"
     - stage: boundary
-      stageUuid: "78d9e04d-2c21-8cf2-aab6-cf8eb60e5d8c"
+      stageUuid: "38cd3870-f001-8e84-b169-ff9fb3da07aa"
     - stage: links
-      stageUuid: "78f059a6-2dca-8ab4-a4cb-5a9704831f58"
+      stageUuid: "7d727585-16f4-8209-828c-46dedfebfc94"
     - stage: horo
-      stageUuid: "dc3d400d-0792-8895-8805-d017734d1102"
+      stageUuid: "1b2a658d-f7f0-8634-b084-fb7a73ff4be0"
     - stage: seal
-      stageUuid: "ccc92945-6b04-8b5e-bbd9-dec0ec6158fe"
+      stageUuid: "2e39e3ce-81d8-8dc1-8456-b6b92d6f4ef3"
     - stage: uuid
-      stageUuid: "5347c425-9b1b-89e5-b078-6415d65ac336"
+      stageUuid: "5d19a314-88f4-8f51-94ec-c68488a244e9"
 version: 2
 ---
 # requisition — the model of one [[requisitions]] row

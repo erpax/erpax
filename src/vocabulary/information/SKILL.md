@@ -1,82 +1,35 @@
 ---
 name: information
 description: "Use when reasoning about information as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/information
-coordinate: information · 1/base · 0b1bea1f
-contentUuid: "8d78bdf2-bede-56e1-b5da-e08cf39760de"
-diamondUuid: "221a3885-5f25-857b-9768-288f8c53c38a"
-uuid: "0b1bea1f-25ac-8272-83e1-d56a8fc767d4"
-horo: 1
-bonds:
-  in:
-    - center
-    - collapse
-    - law
-    - merge
-    - nutrition
-    - science
-    - sti
-    - tourist
-  out:
-    - center
-    - collapse
-    - law
-    - merge
-    - nutrition
-    - science
-    - sti
-    - tourist
+atomPath: "vocabulary/information"
+coordinate: "vocabulary/information · 5/round · 1037410d"
+contentUuid: "843085e8-cacb-544c-a4c6-a0ef16d68569"
+diamondUuid: "7575a13a-9089-8d17-98f0-cbe951880fcd"
+uuid: "1037410d-287a-812f-bc90-c5041195918a"
+horo: 5
 typography:
-  partition: information
+  partition: vocabulary
   bondDegree: 27
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - center
-    - collapse
-    - law
-    - merge
-    - nutrition
-    - sti
-    - tourist
-  matrix:
-    - center
-    - collapse
-    - law
-    - merge
-    - nutrition
-    - science
-    - sti
-    - tourist
-  backlinks:
-    - center
-    - collapse
-    - law
-    - merge
-    - nutrition
-    - science
-    - sti
-    - tourist
 signatures:
-  computationUuid: "0d888bf6-59fe-892f-bfd1-ab116d959739"
+  computationUuid: "c1c3d098-a6ad-8561-83b0-adab1f747db5"
   stages:
     - stage: path
-      stageUuid: "72d34456-7186-88e9-84a1-24a1548267e9"
+      stageUuid: "7c8cba19-77af-8fec-876e-a6f7c5536d3d"
     - stage: trinity
-      stageUuid: "d9f207cd-8bf8-88fd-9772-4b42f845cb0a"
+      stageUuid: "ac5e945b-4c0b-8f59-b00f-2414709872e0"
     - stage: boundary
-      stageUuid: "7fad9476-7314-816f-b8e6-1f4ff49e16a3"
+      stageUuid: "2cc49fff-4a94-8c19-ae50-3475f2c6fb1b"
     - stage: links
-      stageUuid: "3ea2edd3-14d9-81dc-a8ea-2c6fbec3337d"
+      stageUuid: "e5fb38eb-e5fe-8d34-beb5-f67dd32ab5db"
     - stage: horo
-      stageUuid: "ae03dd72-2646-8e49-a9f4-933ee184d059"
+      stageUuid: "c5753948-8ca8-8e01-ae67-83368fb4643c"
     - stage: seal
-      stageUuid: "523fd454-db71-8211-a874-8102472ad888"
+      stageUuid: "e5c279ea-9715-810c-9108-34e57c9ecc9c"
     - stage: uuid
-      stageUuid: "edceb49b-09d7-8e05-a130-3201f35a4411"
+      stageUuid: "7a944641-0962-837f-a03d-c59053c2516d"
 version: 2
 ---
 # information

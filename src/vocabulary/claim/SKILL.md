@@ -1,73 +1,35 @@
 ---
 name: claim
 description: "Use when reasoning about claim — A Claim in Schema.org represents a specific, factually-oriented claim that could be the itemReviewed in a ClaimReview. The content of a claim can be summarized with the text proper"
-atomPath: vocabulary/claim
-coordinate: claim · 5/round · 41f6bd70
-contentUuid: "b8f18e83-e05b-50b2-8b31-9c838600cc69"
-diamondUuid: "27a7c1d9-f667-857a-87fd-adcee5fbb1ca"
-uuid: "41f6bd70-4109-8507-861d-3dfbeabecb75"
-horo: 5
-bonds:
-  in:
-    - associated
-    - interpreted
-    - interpreter
-    - law
-    - review
-    - reviewed
-  out:
-    - associated
-    - interpreted
-    - interpreter
-    - law
-    - review
-    - reviewed
+atomPath: "vocabulary/claim"
+coordinate: "vocabulary/claim · 7/descent · c514f46c"
+contentUuid: "3590d6ad-4e09-5b71-8345-080b93366d1d"
+diamondUuid: "af6d9349-fe3a-8c76-b8c2-31ebb539217f"
+uuid: "c514f46c-0ecc-83d4-ba48-2567650627ca"
+horo: 7
 typography:
-  partition: claim
-  bondDegree: 23
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 42
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - associated
-    - interpreted
-    - interpreter
-    - law
-    - review
-    - reviewed
-  matrix:
-    - associated
-    - interpreted
-    - interpreter
-    - law
-    - review
-    - reviewed
-  backlinks:
-    - associated
-    - interpreted
-    - interpreter
-    - law
-    - review
-    - reviewed
 signatures:
-  computationUuid: "15f1a35e-4c3d-84bb-b95a-a115abc31400"
+  computationUuid: "ebc930ef-9d02-8902-b7c2-5c57db911034"
   stages:
     - stage: path
-      stageUuid: "ea207ef1-05c8-82a8-9ac1-c2859691b373"
+      stageUuid: "59a6fb6b-fc59-8264-b9c8-65421b75765e"
     - stage: trinity
-      stageUuid: "9748039a-2b7b-858c-820e-bea089c1caa6"
+      stageUuid: "d1e9c45e-e2f1-891b-ade0-390526fc82e6"
     - stage: boundary
-      stageUuid: "eebcf1f3-01b8-83c5-acbd-e20c7e7c5bc7"
+      stageUuid: "7ae1d47e-9fb3-8257-ba3f-a260dfeea215"
     - stage: links
-      stageUuid: "28b0a10d-cce7-897c-9e2a-8a5434ac23e3"
+      stageUuid: "d9af3594-2c29-8560-8f06-b52803778ed2"
     - stage: horo
-      stageUuid: "cac7bf79-13a8-872b-afd8-0f17c5934f45"
+      stageUuid: "a602622b-350b-8615-9f77-96148304f8ed"
     - stage: seal
-      stageUuid: "1f7e0de3-5b54-8c22-8afd-44b32d26dc0c"
+      stageUuid: "3b91dce7-ce62-8cbe-9b09-82851bb955a3"
     - stage: uuid
-      stageUuid: "0740e798-8bce-8c76-996e-f4cf9db623a6"
+      stageUuid: "abab00e9-ec1b-8eb3-b675-ffa24f5cf870"
 version: 2
 ---
 # claim

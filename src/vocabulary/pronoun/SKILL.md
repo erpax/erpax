@@ -1,62 +1,34 @@
 ---
 name: pronoun
 description: Use when modelling one pronoun — the singular model of the pronouns collection (the plural store); a term by which a person chooses to be referred to.
-atomPath: vocabulary/pronoun
-coordinate: pronoun · 1/base · f3859e70
-contentUuid: "ca35d15b-e321-51ad-92de-a0f99e391d1d"
-diamondUuid: "22a4cfbd-6b52-8062-84d4-0aa8557ca1f0"
-uuid: "f3859e70-0a0d-8e68-ad22-e29e897ed4bf"
-horo: 1
-bonds:
-  in:
-    - balance
-    - law
-    - person
-    - pronouns
-  out:
-    - balance
-    - law
-    - person
-    - pronouns
+atomPath: "vocabulary/pronoun"
+coordinate: "vocabulary/pronoun · 8/crest · 1d3f79d2"
+contentUuid: "1e743531-8eba-548c-8410-178eaf8fe121"
+diamondUuid: "ac2d0ba8-1cf1-8f67-92cd-3343593dd528"
+uuid: "1d3f79d2-4d4c-8c78-8397-4dc98c54f0b1"
+horo: 8
 typography:
-  partition: pronoun
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - law
-    - person
-    - pronouns
-  matrix:
-    - balance
-    - law
-    - person
-    - pronouns
-  backlinks:
-    - balance
-    - law
-    - person
-    - pronouns
 signatures:
-  computationUuid: "3ff3d957-9d4d-8093-b1d6-db869dbeebbd"
+  computationUuid: "139c606c-9d07-8010-a601-e3b8884c2b08"
   stages:
     - stage: path
-      stageUuid: "9075dcd5-b5e2-8890-9784-4977a4819cb8"
+      stageUuid: "8db614e2-22f1-8388-860c-23f3c3fcc7d8"
     - stage: trinity
-      stageUuid: "8d96b213-ca98-8eb1-a6b7-e4ad728baa28"
+      stageUuid: "1a8492ed-de76-81db-96c3-cf249dbc66d3"
     - stage: boundary
-      stageUuid: "9ae29753-bc9e-8171-a2f1-dbd1646e8d3c"
+      stageUuid: "92309fa9-bd39-8cff-a81c-a74f59ff3292"
     - stage: links
-      stageUuid: "49c6f6ce-ea24-8862-85f4-4e7b9d4c9f9d"
+      stageUuid: "cf18d119-6c1a-8282-9e0c-253b6f19394f"
     - stage: horo
-      stageUuid: "f0076f73-0572-8ee0-bc07-e4f8d25bdef9"
+      stageUuid: "e43d97f5-7c3e-8876-b3cf-09f75c929456"
     - stage: seal
-      stageUuid: "83fcf8a0-7751-8f31-9639-95c06a2f0c42"
+      stageUuid: "f42748f3-a0b6-88a1-bbb8-a3f4665f9582"
     - stage: uuid
-      stageUuid: "1a452792-b726-8500-b2de-05f5a2d12af9"
+      stageUuid: "dbd3d00f-a122-8439-aca2-0c7378dc0f41"
 version: 2
 ---
 # pronoun — the model of one [[pronouns]] row

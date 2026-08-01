@@ -1,41 +1,31 @@
 ---
 name: "3"
 description: Use when implementing or referencing Peppol BIS Billing 3.0.
-atomPath: peppol/bis/3
-coordinate: peppol/bis/3 · 4/weave · c80c4942
-contentUuid: "3f31091a-e37f-507d-adfb-c657fca004fc"
-diamondUuid: "0e7984f8-cf0c-853d-9e6e-e26bdd6c748b"
-uuid: "c80c4942-c6f3-82f0-b194-32053295d603"
+atomPath: "peppol/bis/3"
+coordinate: "peppol/bis/3 · 4/weave · 8a574e56"
+contentUuid: "f0994081-8925-5c32-81a7-f3f3cd0bf331"
+diamondUuid: "af9ca1a1-4d0c-850b-8814-8792625fbdaa"
+uuid: "8a574e56-1ccc-89d9-8823-51c353b0e1ca"
 horo: 4
-bonds:
-  in:
-    - law
-  out:
-    - law
 typography:
   partition: peppol
-  bondDegree: 3
-  neighbors: []
+  bondDegree: 1
 standards:
   - "EN-16931:2017+A1:2019 semantic-model-electronic-invoice"
+  - "EN-16931:2017+A1:2019 semantic-model-electronic-invoice`"
   - "ISO-6523-1"
   - "ISO-6523-1:1998 participant-identifier-scheme"
+  - "ISO-6523-1:1998 participant-identifier-scheme`"
   - "Peppol-BIS-3.0"
   - "Peppol-BIS-3.0 billing"
   - "Peppol-BIS-3.0 billing line-detail` on InvoiceLines and Invoices. That citation grounds the wire format the EU's e-invoicing network expects. The EN-16931 module (already shipped) covers the semantic model; this module covers the Peppol-specific envelope (CustomizationID + ProfileID + ParticipantIdentifier + EndpointID) so the e-invoice export service can construct a complete Peppol-compliant message without composing types from two modules in user code."
   - "Peppol-BIS-3.0 billing line-detail`."
   - "Peppol-BIS-3.0`."
   - "UBL-2.1 universal-business-language"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-  matrix:
-    - law
-  backlinks:
-    - law
 signatures:
-  computationUuid: "419989b6-860e-85ad-8596-fe280578643e"
+  computationUuid: "c094e430-8a87-878b-a077-a599020d1fbf"
   stages:
     - stage: path
       stageUuid: "05fcd777-41ce-8c51-89aa-018720334d30"
@@ -44,13 +34,13 @@ signatures:
     - stage: boundary
       stageUuid: "c5140c1d-17ad-8d7a-9a46-61e945a9d646"
     - stage: links
-      stageUuid: "41a26687-9128-87b3-8811-2211d38ccc3f"
+      stageUuid: "06d3f277-b5fa-84ac-bab4-21e95d9e4987"
     - stage: horo
-      stageUuid: "4d78a63a-9712-8f6f-b1ea-39964cbc21b4"
+      stageUuid: "bb20e669-1849-850c-80a2-263eb553c53f"
     - stage: seal
       stageUuid: "b09770e4-ed3b-8573-81b1-db0ef609494b"
     - stage: uuid
-      stageUuid: "0a6a912e-db36-832d-8cc0-98bf95a67eba"
+      stageUuid: "32e2e9eb-d49b-8cda-a957-30e80dab9d50"
 version: 2
 ---
 # Peppol BIS Billing 3.0

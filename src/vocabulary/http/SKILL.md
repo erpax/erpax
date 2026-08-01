@@ -1,68 +1,35 @@
 ---
 name: http
 description: "Use when reasoning about http as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/http
-coordinate: http · 2/share · bbe59bd8
-contentUuid: "01cb80df-aee0-5e31-9401-4a954808fff8"
-diamondUuid: "87410503-965f-83ca-bc37-b74e958eca85"
-uuid: "bbe59bd8-b8da-8270-97a6-569300045129"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - method
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - method
-    - sti
+atomPath: "vocabulary/http"
+coordinate: "vocabulary/http · 8/crest · 085f27ba"
+contentUuid: "6a368dab-57d5-597c-a890-749e63be1fea"
+diamondUuid: "99d4c7b0-c530-89b7-b838-5deba1ac5970"
+uuid: "085f27ba-b4a7-8448-ba01-e6d750542d35"
+horo: 8
 typography:
-  partition: http
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - method
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - method
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - method
-    - sti
 signatures:
-  computationUuid: "d50ecd21-5818-875c-a4c5-ccf2f3b513b3"
+  computationUuid: "a8d8f47e-03f5-877d-a234-9719ffb48e7a"
   stages:
     - stage: path
-      stageUuid: "fc1ce259-8a98-8f04-987a-4d54fb399986"
+      stageUuid: "5be54743-bb5b-8acc-9acb-1c044ef023d6"
     - stage: trinity
-      stageUuid: "3d7e820a-46ff-8c2b-a381-0f300813f9c0"
+      stageUuid: "5d1efb89-1242-8e28-b9a3-603c9900a7f2"
     - stage: boundary
-      stageUuid: "b34c4812-69d2-8360-bcf7-e1cae5011da0"
+      stageUuid: "24e00eca-d11b-814e-97c9-a0bcdcfda91e"
     - stage: links
-      stageUuid: "1221e750-3d4c-883c-9a6c-7e6e3c00e9de"
+      stageUuid: "b168c442-9912-8e2c-8c56-eba099f7029b"
     - stage: horo
-      stageUuid: "ab033de8-642e-8deb-98cb-5aecc82d1ba9"
+      stageUuid: "cbbc5aaa-16d3-8357-864c-9e73e8cfd442"
     - stage: seal
-      stageUuid: "cfb0552f-e457-8c97-8fb0-d47a244c5c25"
+      stageUuid: "c8cb02c6-74d8-8c58-9a8d-76bfd00a1607"
     - stage: uuid
-      stageUuid: "016015e0-5a98-87c9-863a-f91e733cf401"
+      stageUuid: "274f4283-17f8-8bbc-b2eb-326a1f9a147d"
 version: 2
 ---
 # http

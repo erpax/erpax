@@ -1,113 +1,34 @@
 ---
 name: primitive
 description: "Use when reasoning about the smallest frontend diamond — the irreducible UI vertex below the component (a design token, a raw input, a pixel-level element). What the atom is to the corpus, the primitive is to the UI: one content-uuid, one render, complete and sealed; components compose primitives, blocks compose components."
-atomPath: vocabulary/primitive
-coordinate: primitive · 4/weave · 24310755
-contentUuid: "5c49f650-12fd-5863-ac93-10133de665b9"
-diamondUuid: "aceefe22-76a6-88c0-963d-6081378b942f"
-uuid: "24310755-683b-8969-8406-166f6b7b8e0d"
-horo: 4
-bonds:
-  in:
-    - atom
-    - aura
-    - block
-    - component
-    - css
-    - diamond
-    - dimension
-    - fields
-    - fractal
-    - law
-    - pixel
-    - proof
-    - seal
-    - uuid
-  out:
-    - atom
-    - aura
-    - block
-    - component
-    - css
-    - diamond
-    - dimension
-    - fields
-    - fractal
-    - law
-    - pixel
-    - proof
-    - seal
-    - uuid
+atomPath: "vocabulary/primitive"
+coordinate: "vocabulary/primitive · 2/share · 99ac5731"
+contentUuid: "e399116c-d3e7-5ab3-b579-fa2379ce015e"
+diamondUuid: "cf33488a-582b-8ab2-9184-dbd0cc484d8c"
+uuid: "99ac5731-02d2-8901-b085-df98fae186db"
+horo: 2
 typography:
-  partition: primitive
+  partition: vocabulary
   bondDegree: 45
-  neighbors:
-    - aura
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - atom
-    - aura
-    - block
-    - component
-    - diamond
-    - dimension
-    - fields
-    - fractal
-    - law
-    - pixel
-    - proof
-    - seal
-    - uuid
-  matrix:
-    - atom
-    - aura
-    - block
-    - component
-    - css
-    - diamond
-    - dimension
-    - fields
-    - fractal
-    - law
-    - pixel
-    - proof
-    - seal
-    - uuid
-  backlinks:
-    - atom
-    - aura
-    - block
-    - component
-    - css
-    - diamond
-    - dimension
-    - fields
-    - fractal
-    - law
-    - pixel
-    - proof
-    - seal
-    - uuid
 signatures:
-  computationUuid: "4f2a6060-de36-8c91-8dd8-a7041608ab07"
+  computationUuid: "c5c90b50-8362-8408-8f26-834dde3b6ada"
   stages:
     - stage: path
-      stageUuid: "6f685f65-eb5e-89f9-80b1-575813a9f700"
+      stageUuid: "4e8195f7-78dc-8816-a4e8-065cbc746f54"
     - stage: trinity
-      stageUuid: "d6ce29a1-9da5-8696-80ea-9e85d905ff56"
+      stageUuid: "dff9d581-a72e-853d-bdd4-cd1db30ac3fa"
     - stage: boundary
-      stageUuid: "9349e7a6-aaf5-8b9d-904f-a4fe8c17b9c9"
+      stageUuid: "92c65be9-70c6-8e36-bf65-2a08a0bb73ea"
     - stage: links
-      stageUuid: "013231a7-ca6d-80da-acb8-c825dc5527a7"
+      stageUuid: "b494f214-7408-864b-84cb-48368043f4e0"
     - stage: horo
-      stageUuid: "18b428d5-421a-850b-b697-75f802878d97"
+      stageUuid: "a403a57f-31f7-8d3d-9b07-0404685107ba"
     - stage: seal
-      stageUuid: "fe448a90-e0f0-8a84-9f3d-8c4933eeac9b"
+      stageUuid: "c814276f-a1de-8b09-a08b-300026ffcd40"
     - stage: uuid
-      stageUuid: "39938fb8-d569-84f6-aa04-2b8bf6d69ea2"
+      stageUuid: "982ec47c-a372-88df-9b9c-b3322fc0bda6"
 version: 2
 ---
 # primitive — the irreducible UI vertex (the smallest frontend diamond)

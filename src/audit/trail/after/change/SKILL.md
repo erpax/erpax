@@ -2,27 +2,14 @@
 name: change
 description: "Use when emitting an audit event after a Payload write — the afterChange hook builds a canonical AuditEntry, logs it to the streaming aggregator, and persists a durable, Merkle-chained row to the audit-events collection for tamper-evident SOX evidence."
 atomPath: "audit/trail/after/change"
-coordinate: "audit/trail/after/change · 7/descent · fd9cb5e4"
-contentUuid: "966c9d1b-61f4-5796-90c2-5326bdf46377"
-diamondUuid: "64df1522-7a53-829b-9872-21481fe92bde"
-uuid: "fd9cb5e4-ce7d-8e5f-84be-1782c7bffa9b"
-horo: 7
-bonds:
-  in:
-    - after
-    - audit
-    - balance
-    - changes
-    - law
-  out:
-    - audit
-    - balance
-    - changes
-    - law
+coordinate: "audit/trail/after/change · 2/share · ce915a16"
+contentUuid: "553fcaa2-0a6e-5772-a0e6-54848fb41b73"
+diamondUuid: "df5dc28b-ab87-802c-aa82-8d6883008c7f"
+uuid: "ce915a16-3aa5-8652-83d5-6fd026c80f7f"
+horo: 2
 typography:
   partition: audit
   bondDegree: 18
-  neighbors: []
 standards:
   - "NIST FIPS-180-4 sha-256"
   - "NIST FIPS-180-4 sha-256`"
@@ -34,23 +21,8 @@ standards:
   - "rfc-9562 uuid event-id`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - audit
-    - hooks
-    - law
-  matrix:
-    - audit
-    - balance
-    - changes
-    - law
-  backlinks:
-    - audit
-    - balance
-    - changes
-    - law
 signatures:
-  computationUuid: "1de53b43-730f-8b2d-8525-9238880f45ef"
+  computationUuid: "eafaa0a6-f062-8457-b1c5-dde980bdd2c6"
   stages:
     - stage: path
       stageUuid: "be6ac1fb-54a3-82cd-8b82-f3991779d2f4"
@@ -61,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "cac2ce41-769e-83ec-b339-e93ef9a9e1c5"
     - stage: horo
-      stageUuid: "200bab4d-6eb7-8313-afd4-c886bba71dca"
+      stageUuid: "5456e35c-3832-8e9f-862c-948baf31bf6d"
     - stage: seal
       stageUuid: "be6e5db3-52ed-8e1c-9240-8cc23b01210f"
     - stage: uuid
-      stageUuid: "7f64b511-0326-8940-b5d0-a73f5ea3009e"
+      stageUuid: "cc38228a-4d66-8667-8b97-9a17e0381a44"
 version: 2
 ---
 # audit/trail/after/change — the [[audit]] afterChange emitter

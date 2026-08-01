@@ -1,57 +1,34 @@
 ---
 name: "audit-right"
 description: "Use when a contract grants audit rights — auditor identity, audit scope (books, records, systems), frequency, notice requirement, cost allocation, remedies for non-access."
-atomPath: vocabulary/audit-right
-coordinate: "audit-right · 2/share · f2c2cfdb"
-contentUuid: "c6560ecb-93bf-519c-81e9-55257ffcab9c"
-diamondUuid: "39652f4d-93c4-80e7-904d-7c3c91a5cfe5"
-uuid: "f2c2cfdb-9808-8216-892c-1561accc3e04"
-horo: 2
-bonds:
-  in:
-    - contracts
-    - events
-    - matter
-  out:
-    - contracts
-    - events
-    - matter
+atomPath: "vocabulary/audit-right"
+coordinate: "vocabulary/audit-right · 5/round · d5aa2b2b"
+contentUuid: "b115eb81-ab77-52ae-b8df-58e8f17b04eb"
+diamondUuid: "694487ae-488c-80ee-9125-6c7eb74118bc"
+uuid: "d5aa2b2b-38f1-85b5-a679-bc1aa72d9543"
+horo: 5
 typography:
-  partition: "audit-right"
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - contracts
-    - events
-    - matter
-  matrix:
-    - contracts
-    - events
-    - matter
-  backlinks:
-    - contracts
-    - events
-    - matter
 signatures:
-  computationUuid: "d61f2092-a9cd-8563-8e05-bb9e32d30e94"
+  computationUuid: "229d0ec7-b489-87a1-a39c-f95b1ee6fd9d"
   stages:
     - stage: path
-      stageUuid: "3fae9c76-e2ae-8da0-8321-82773938675c"
+      stageUuid: "bd58094d-98d1-8f6d-bafb-83f00481e0fd"
     - stage: trinity
-      stageUuid: "afdcdbe8-c591-8b4c-8c83-2599d1fb0f06"
+      stageUuid: "9222fbaa-15f2-84aa-8fff-35cb84c58de3"
     - stage: boundary
-      stageUuid: "9f9dd644-3fd9-858f-94b0-ec3c8f646653"
+      stageUuid: "414b982a-08a8-82fe-a057-1da5bcc8d1b3"
     - stage: links
-      stageUuid: "843a7dab-b556-8fdf-8ed6-bccbafc8c911"
+      stageUuid: "d431fa36-aea7-8f24-a1b0-17c258f48a30"
     - stage: horo
-      stageUuid: "db4aceb2-b57f-82d9-81eb-b72aeceb5885"
+      stageUuid: "3b26f1b5-b99c-8e6e-ac6a-f7cd8afd3c1e"
     - stage: seal
-      stageUuid: "f5eb87a0-3b8d-850b-98b8-9057e61a0f50"
+      stageUuid: "39e12c60-2690-8ccc-aed3-a4ef9e31fc45"
     - stage: uuid
-      stageUuid: "a1439b36-ea29-824d-bb1c-94f665fe4e0b"
+      stageUuid: "161d632f-7ace-84e2-a403-797390107ace"
 version: 2
 ---
 # audit-right

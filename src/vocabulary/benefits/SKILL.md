@@ -1,83 +1,35 @@
 ---
 name: benefits
 description: Use when reasoning about benefits — Description of benefits associated with the job.
-atomPath: vocabulary/benefits
-coordinate: benefits · 7/descent · d72b8092
-contentUuid: "ecb027b1-9d3f-5c23-baa1-7f12d234fde7"
-diamondUuid: "b1691db9-09ec-8d95-8eef-8a3f3cda8ae4"
-uuid: "d72b8092-6fa8-87a4-b4d0-cb052223ab4a"
-horo: 7
-bonds:
-  in:
-    - government
-    - info
-    - job
-    - law
-    - physiological
-    - summary
-    - type
-    - url
-  out:
-    - government
-    - info
-    - job
-    - law
-    - physiological
-    - summary
-    - type
-    - url
+atomPath: "vocabulary/benefits"
+coordinate: "vocabulary/benefits · 2/share · 318a77bc"
+contentUuid: "12454ff2-d6c2-5abc-8afe-8b1d78739950"
+diamondUuid: "8489ee44-b217-8880-a625-e5ec40017f7b"
+uuid: "318a77bc-7975-87f4-8b53-5310d1f939a0"
+horo: 2
 typography:
-  partition: benefits
+  partition: vocabulary
   bondDegree: 30
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - government
-    - info
-    - job
-    - law
-    - physiological
-    - summary
-    - type
-    - url
-  matrix:
-    - government
-    - info
-    - job
-    - law
-    - physiological
-    - summary
-    - type
-    - url
-  backlinks:
-    - government
-    - info
-    - job
-    - law
-    - physiological
-    - summary
-    - type
-    - url
 signatures:
-  computationUuid: "a32e181c-66af-8195-bdc4-648a032b88b4"
+  computationUuid: "9b6fa3ec-d276-8789-9a3a-70f23c54f940"
   stages:
     - stage: path
-      stageUuid: "be85a41f-0773-8251-a296-478da73da6e4"
+      stageUuid: "8683afd8-15d1-8ae4-8094-85b6131bde44"
     - stage: trinity
-      stageUuid: "d4de30ef-3ec3-86f9-9a98-25e150aef1e9"
+      stageUuid: "57467f8d-420f-8bd6-87f8-6e5417c50656"
     - stage: boundary
-      stageUuid: "58573388-b2ed-8110-ad27-30e33ba59894"
+      stageUuid: "34e69e32-ab5d-8010-b0ae-b7fb0d42740c"
     - stage: links
-      stageUuid: "9a1a2fae-7c6a-8be6-8e43-0061215f2c01"
+      stageUuid: "583aa674-060c-8ca4-9225-fdb4029816b9"
     - stage: horo
-      stageUuid: "d8bf9865-831f-89f6-81ff-d70a83ab40cc"
+      stageUuid: "f43e55a8-ec07-8c56-a960-9e137aef79ca"
     - stage: seal
-      stageUuid: "48e07674-6961-8d6b-a4cb-1c6616d7174b"
+      stageUuid: "6d5556b6-8c59-8e87-bf1a-8eb50810b38b"
     - stage: uuid
-      stageUuid: "02e8b4d1-0b57-80a9-84de-5ffc03cd4f8e"
+      stageUuid: "b70329cc-226a-863f-831b-3153b4396efb"
 version: 2
 ---
 # benefits

@@ -1,63 +1,35 @@
 ---
 name: imperial
 description: "Use when reasoning about imperial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/imperial
-coordinate: imperial · 5/round · 070b361c
-contentUuid: "a3a9b70e-69d5-54e7-b5a9-97895bcb55d0"
-diamondUuid: "efcf81d3-d22f-8755-8da7-373cbfcf853d"
-uuid: "070b361c-6be5-8e6c-85c5-1576acc3d495"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/imperial"
+coordinate: "vocabulary/imperial · 2/share · 6d881de0"
+contentUuid: "d0cac984-b375-58cc-a1fd-6e7faf249638"
+diamondUuid: "325d0372-d9a9-83bb-8aa9-8b473be0d9f3"
+uuid: "6d881de0-64bf-80c6-8306-ab0c2d3186c6"
+horo: 2
 typography:
-  partition: imperial
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "db6f2d64-c945-8d2c-bfba-703f4da6f01c"
+  computationUuid: "92e8a016-6ebd-8718-8220-8971775a3ff5"
   stages:
     - stage: path
-      stageUuid: "515b8e6a-a52e-8915-8c30-617beb007cee"
+      stageUuid: "84da32b3-61c4-8c94-8581-fbd191ccaff4"
     - stage: trinity
-      stageUuid: "8b106d31-f681-89e4-b395-94259eb8c360"
+      stageUuid: "5172b3af-1231-87ae-9a9c-8a71ea6d1ebb"
     - stage: boundary
-      stageUuid: "81bf95ee-89e4-88be-af76-d83c2382584f"
+      stageUuid: "30fd611b-868a-884a-aa4f-cb983359d64a"
     - stage: links
-      stageUuid: "79f62a43-4c1d-84ac-99ad-b948bb5260ac"
+      stageUuid: "8d0d1c20-01fb-85f0-bee9-b865a6145b40"
     - stage: horo
-      stageUuid: "ce09f0e4-7150-8b71-ad8f-bc47ea203907"
+      stageUuid: "939d8b0d-a0c0-8ba0-9c95-bf7f9c2e8fb5"
     - stage: seal
-      stageUuid: "ddee70a6-1e3c-852d-a865-850ee11f16b4"
+      stageUuid: "723c6a1c-b652-8623-9cb8-ff2d742a86f4"
     - stage: uuid
-      stageUuid: "c59333e7-75c9-8296-b332-952ec98c2cb2"
+      stageUuid: "9e426d72-97e1-8ff4-a591-678048ed1aee"
 version: 2
 ---
 # imperial

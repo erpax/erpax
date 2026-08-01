@@ -1,61 +1,35 @@
 ---
 name: artist
 description: "Use when reasoning about artist — The primary artist for a work in a medium other than pencils or digital line art--for example, if the primary artwork is done in watercolors or digital paints."
-atomPath: vocabulary/artist
-coordinate: artist · 1/base · 5eb58f77
-contentUuid: "8a847b85-13b5-5152-8b23-b07a4e8cff9c"
-diamondUuid: "732a7849-4e1e-88a6-91fb-6fcb90965d2e"
-uuid: "5eb58f77-cbb3-8c8a-be26-7587f1bae2e8"
-horo: 1
-bonds:
-  in:
-    - brainstorm
-    - consultant
-    - law
-    - thing
-  out:
-    - brainstorm
-    - consultant
-    - law
-    - thing
+atomPath: "vocabulary/artist"
+coordinate: "vocabulary/artist · 5/round · d507e5f2"
+contentUuid: "3a804209-7361-50cd-85ae-bf13d0539ce6"
+diamondUuid: "649549eb-f841-87dc-86b3-f8183bc9f2cb"
+uuid: "d507e5f2-92ee-8ecb-9dbf-146e96f59d0f"
+horo: 5
 typography:
-  partition: artist
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - brainstorm
-    - consultant
-    - law
-    - thing
-  backlinks:
-    - brainstorm
-    - consultant
-    - law
-    - thing
 signatures:
-  computationUuid: "9324a4c6-be8b-8c93-8e3e-980092b16b82"
+  computationUuid: "483abb2d-dcba-874e-a136-0f9673840ed4"
   stages:
     - stage: path
-      stageUuid: "c3af5f8f-44c7-8a03-ae3a-0f3ad8399ffc"
+      stageUuid: "56f4c569-86b9-8519-a638-84cc290ec67f"
     - stage: trinity
-      stageUuid: "adc1117a-97e1-80b5-b437-b235e65b6f48"
+      stageUuid: "df147a32-bd29-844b-9d3a-a8dede3a9f0c"
     - stage: boundary
-      stageUuid: "578d6632-f8ba-8fc5-93a1-b07006159560"
+      stageUuid: "d6c37294-7c99-8ae7-a18c-fe555e8d19cb"
     - stage: links
-      stageUuid: "06f1d17b-5305-80d6-a39f-ff019c8c3b7d"
+      stageUuid: "513b193f-ef97-89fd-ba6a-1f217dbb1be2"
     - stage: horo
-      stageUuid: "c88d3460-7a04-8ef4-8ad4-32de8689a8dc"
+      stageUuid: "d4d1615b-bd69-8f48-9aee-7272d85a6068"
     - stage: seal
-      stageUuid: "4f945325-6438-8ac1-b061-5b2799d018b5"
+      stageUuid: "c42778cb-9756-8be0-ac3c-6009c53841fb"
     - stage: uuid
-      stageUuid: "921a3554-28f6-8718-aed3-849af530ae04"
+      stageUuid: "002b6415-1266-86bd-99b2-fb349b13471a"
 version: 2
 ---
 # artist

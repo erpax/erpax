@@ -1,63 +1,35 @@
 ---
 name: co2
 description: "Use when reasoning about co2 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/co2
-coordinate: co2 · 8/crest · be85a471
-contentUuid: "39bda2b3-0678-5552-a2b9-c958918ebe1a"
-diamondUuid: "13906334-5b6d-8eb3-8f8d-205dc226d5fa"
-uuid: "be85a471-d7c7-8f4d-970f-9e6af8cbb943"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/co2"
+coordinate: "vocabulary/co2 · 2/share · 098febae"
+contentUuid: "62f7d87b-6786-57f5-ac38-598b1535ae4d"
+diamondUuid: "b50b69fa-4015-8a1b-a24a-5024518acb49"
+uuid: "098febae-d07d-8c85-9207-afff28d24caf"
+horo: 2
 typography:
-  partition: co2
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "eb0b0ed6-9519-8318-ac37-9e568d5830dc"
+  computationUuid: "011bd479-859a-82ef-aec9-ce18297ec130"
   stages:
     - stage: path
-      stageUuid: "1b3a5f47-6662-87e2-a37f-eb595094a84c"
+      stageUuid: "7822079b-0883-8798-8f66-f4c010f9557c"
     - stage: trinity
-      stageUuid: "7a6fa50a-3c63-8d7f-b309-5a4b2a6f7fcb"
+      stageUuid: "cb4c9ff6-5307-86b0-8c0f-e25d34537599"
     - stage: boundary
-      stageUuid: "43ce89ab-d2a0-85a8-b8bd-67fc528861ea"
+      stageUuid: "102f9c59-47db-8a0f-992a-249827e6a9c1"
     - stage: links
-      stageUuid: "c825952a-1545-8fdf-8284-1d009e69561d"
+      stageUuid: "a7898d20-bfdc-88cc-a980-097f5ee7a50e"
     - stage: horo
-      stageUuid: "816353e3-0df3-82d3-801a-2bb8f06acf73"
+      stageUuid: "a07ef4b0-24de-8e56-ae8d-59accf82209c"
     - stage: seal
-      stageUuid: "d07d3f60-3a99-80d4-bf70-1d5b7b16c5fd"
+      stageUuid: "b08fadf4-f15a-8fb4-9a30-a122fa94e6b5"
     - stage: uuid
-      stageUuid: "92e11214-212e-81c9-8557-c4758be91c48"
+      stageUuid: "e939215b-711b-8a0d-8ca9-aa0a8d276d21"
 version: 2
 ---
 # co2

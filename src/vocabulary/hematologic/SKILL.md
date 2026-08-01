@@ -1,63 +1,35 @@
 ---
 name: hematologic
 description: "Use when reasoning about hematologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/hematologic
-coordinate: hematologic · 8/crest · 446c2046
-contentUuid: "30db4630-5f28-57d3-90d1-495c369cd2ef"
-diamondUuid: "2afd91b4-f578-83e1-8db7-dd9644d176dc"
-uuid: "446c2046-60a4-86cf-80e6-9e5e954f8858"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/hematologic"
+coordinate: "vocabulary/hematologic · 7/descent · 34fad324"
+contentUuid: "8500f1c7-8a87-562f-9c2a-cd3174123721"
+diamondUuid: "3f48197f-29a3-87c7-909a-b2e3ab685f50"
+uuid: "34fad324-8133-8538-b896-4f76f6202f18"
+horo: 7
 typography:
-  partition: hematologic
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "45f9298c-6713-8be9-8c4c-72946285f75c"
+  computationUuid: "a2bc1612-451a-8b69-879b-a46db1fa262a"
   stages:
     - stage: path
-      stageUuid: "78ba3448-d2f6-88f7-9df1-1c6f21861832"
+      stageUuid: "d47078cd-4797-8158-856e-5e18cde17cc9"
     - stage: trinity
-      stageUuid: "7da7cb77-eb85-8ae5-8ae0-665a9c005478"
+      stageUuid: "015d591b-e13c-8ef8-a6c7-5377fe1861ee"
     - stage: boundary
-      stageUuid: "ab0b1fb8-10ce-83da-9aaf-eb3119818fb0"
+      stageUuid: "d13f41ad-5cd7-8438-a8e8-45053d3a530c"
     - stage: links
-      stageUuid: "28fa1d50-23d9-8869-bb0e-f1fa4e769b85"
+      stageUuid: "1d520548-c8ef-8839-8526-60a521842a6a"
     - stage: horo
-      stageUuid: "d0e03d67-cec5-80c8-be7d-e0135545a357"
+      stageUuid: "7ce104c8-55ff-8d44-a6b8-832f0046d911"
     - stage: seal
-      stageUuid: "c3ee04d3-42c3-82d6-9629-7c86ea1075cf"
+      stageUuid: "b0129f5d-7752-8e29-a01c-5892e189ccec"
     - stage: uuid
-      stageUuid: "5d90bcaf-b973-8d8e-b21a-b27a2ea1f74b"
+      stageUuid: "d7506084-9746-8d91-970b-94895d650322"
 version: 2
 ---
 # hematologic

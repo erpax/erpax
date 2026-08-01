@@ -2,119 +2,23 @@
 name: trading
 description: "Use when wiring an OUTBOUND call to a commercial counterparty — a payment gateway, marketplace, shipping carrier, Peppol/EDI access point, banking aggregator, or FX feed. Every such call runs at maximum tamper-cost — gated by the sandbox (capability + credential-broker + endpoint allowlist) and emitting a uuid-chained receipt — so the integration surface is zero-entropy and tamper-evident; credentials live per-tenant by handle, never in code."
 atomPath: trading
-coordinate: trading · 8/crest · a7c6c97a
-contentUuid: "bf5c4a73-7ff0-5d34-b224-11b715268b3a"
-diamondUuid: "ab935a27-7ae7-8d2c-8091-040edf22f9a6"
-uuid: "a7c6c97a-3ab2-83a1-a206-7feb697347fc"
-horo: 8
-bonds:
-  in:
-    - access
-    - anchor
-    - api
-    - carriers
-    - commerce
-    - connections
-    - cost
-    - country
-    - law
-    - merge
-    - payment
-    - proof
-    - quantum
-    - realtime
-    - receipt
-    - sandbox
-    - tamper
-  out:
-    - access
-    - anchor
-    - api
-    - carriers
-    - commerce
-    - connections
-    - cost
-    - country
-    - law
-    - merge
-    - payment
-    - proof
-    - quantum
-    - realtime
-    - receipt
-    - sandbox
-    - tamper
+coordinate: "trading · 1/base · c5a77718"
+contentUuid: "224fc107-0ed4-50b7-9dac-85bd6bc14d92"
+diamondUuid: "acd75d5e-5e00-88e6-8f7e-bf730a2a96fb"
+uuid: "c5a77718-e258-89cd-9876-cc43200c50a4"
+horo: 1
 typography:
   partition: trading
   bondDegree: 57
-  neighbors: []
 standards:
   - "EN-16931 Peppol-BIS-3 e-invoicing access-points (AS4 send/receive)"
-  - "EU-2002/58"
-  - "EU-Taxonomy-2020/852"
-  - "ISO-20022"
-  - "ISO-3166-1"
   - "ISO-3166-1:2020 region-scope (the alpha-2 dispatch key, shared with the [[country]] twin)"
   - "ISO-4217:2015 currency-codes (FX / market-data feeds)"
   - "PSD2 EU-2015/2366 open-banking-aggregators (Berlin Group NextGenPSD2 consent)"
   - "RFC-9110 http-semantics (the REST/fetch client surface)"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - anchor
-    - carriers
-    - commerce
-    - connections
-    - cost
-    - country
-    - law
-    - merge
-    - payment
-    - proof
-    - quantum
-    - realtime
-    - receipt
-    - sandbox
-    - tamper
-  matrix:
-    - access
-    - anchor
-    - api
-    - carriers
-    - commerce
-    - connections
-    - cost
-    - country
-    - law
-    - merge
-    - payment
-    - proof
-    - quantum
-    - realtime
-    - receipt
-    - sandbox
-    - tamper
-  backlinks:
-    - access
-    - anchor
-    - api
-    - carriers
-    - commerce
-    - connections
-    - cost
-    - country
-    - law
-    - merge
-    - payment
-    - proof
-    - quantum
-    - realtime
-    - receipt
-    - sandbox
-    - tamper
 signatures:
-  computationUuid: "8f9a25ea-4f84-8858-888f-b73fa6c29d57"
+  computationUuid: "43a7d047-4217-8f25-80e1-e6ce5def1848"
   stages:
     - stage: path
       stageUuid: "864e1a0a-eecc-8ce3-9db4-0a40af74a45b"
@@ -125,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "585dc7a3-a275-8c45-b95e-b70ffc3b9883"
     - stage: horo
-      stageUuid: "6daf02c5-db07-81f8-93a9-5d71ecf0007c"
+      stageUuid: "57b245e9-ac80-8a72-b648-a5de4abb29a9"
     - stage: seal
-      stageUuid: "395a2070-e784-831a-b44f-ad2ea56a18a7"
+      stageUuid: "1a8f83f8-bad3-8f9c-a2d5-df4a362407a5"
     - stage: uuid
-      stageUuid: "6c7e9a19-cc4f-8dcf-ab0d-0289caa90347"
+      stageUuid: "c4a6a781-a9b0-80a2-9470-7682768fecf4"
 version: 2
 ---
 # trading — the commercial counterparty layer (every outbound call at max tamper-cost)

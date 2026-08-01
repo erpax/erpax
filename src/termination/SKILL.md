@@ -2,69 +2,18 @@
 name: termination
 description: "Use when modeling contract end conditions — termination for convenience, termination for cause, notice period, effect (wind-down obligations, survival clauses), remedies on termination."
 atomPath: termination
-coordinate: termination · 5/round · db0b291f
-contentUuid: "2a911b90-d0c1-52ed-9c11-fc5a19bf1431"
-diamondUuid: "fb30c19d-0ac3-8fb1-8f9a-95aa9a007cc0"
-uuid: "db0b291f-a710-8d5f-a7cb-e3898c1fc215"
-horo: 5
-bonds:
-  in:
-    - close
-    - contracts
-    - forcemajeure
-    - horo
-    - law
-    - liability
-    - license
-    - matter
-    - remediation
-  out:
-    - close
-    - contracts
-    - forcemajeure
-    - horo
-    - law
-    - liability
-    - license
-    - matter
-    - remediation
+coordinate: "termination · 4/weave · 9df7dc21"
+contentUuid: "d2f86a34-9301-56a7-91e1-c4e3bda2d7b1"
+diamondUuid: "82f96ac1-b15d-8bc1-b250-d0219f76badb"
+uuid: "9df7dc21-df97-8cdc-98ed-6465f2cbdaa6"
+horo: 4
 typography:
   partition: termination
   bondDegree: 27
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - close
-    - contracts
-    - horo
-    - law
-    - liability
-    - matter
-    - remediation
-  matrix:
-    - close
-    - contracts
-    - forcemajeure
-    - horo
-    - law
-    - liability
-    - license
-    - matter
-    - remediation
-  backlinks:
-    - close
-    - contracts
-    - forcemajeure
-    - horo
-    - law
-    - liability
-    - license
-    - matter
-    - remediation
 signatures:
-  computationUuid: "61142219-bf7a-883b-9593-c8189646c0da"
+  computationUuid: "bd2a6ec7-a340-8b2b-80fe-4d602c42b5a1"
   stages:
     - stage: path
       stageUuid: "9d2856f5-5589-8396-aaf2-cd446750b4a7"
@@ -75,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f1b2e992-5017-87f7-8ff8-ef9d4ab3f849"
     - stage: horo
-      stageUuid: "357bcc52-1616-84e6-8f4e-f3b35a14a182"
+      stageUuid: "f00bd0e4-1316-82b0-ba32-2733d8866540"
     - stage: seal
-      stageUuid: "69367b6b-1aa9-8846-8d12-28339ec92edc"
+      stageUuid: "55dc51da-cdda-894a-a9f1-2340789b1f2f"
     - stage: uuid
-      stageUuid: "80e6fdf0-cd8a-8d10-a920-cedd3a93f179"
+      stageUuid: "81a7027a-bd0e-8195-8361-10a4414a3a18"
 version: 2
 ---
 # termination

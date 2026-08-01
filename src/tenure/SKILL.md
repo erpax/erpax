@@ -2,63 +2,18 @@
 name: tenure
 description: "Use when tracking employment duration, anniversaries, or vesting schedules — hire date, current tenure, service-based benefits accrual, or eligibility calculations."
 atomPath: tenure
-coordinate: tenure · 1/base · 9789e719
-contentUuid: "f832801d-f24b-50c5-affc-dda767dbbd34"
-diamondUuid: "6d123ba2-1d90-8977-9bc4-16b8be683fcd"
-uuid: "9789e719-cb68-8970-aebc-3f49ab81fdbd"
-horo: 1
-bonds:
-  in:
-    - accrual
-    - attrition
-    - compensation
-    - employees
-    - forestry
-    - payments
-    - positions
-    - time
-  out:
-    - accrual
-    - attrition
-    - compensation
-    - employees
-    - forestry
-    - payments
-    - positions
-    - time
+coordinate: "tenure · 5/round · 74813fb2"
+contentUuid: "91df29d9-eb46-5a12-8de0-a63c28c5d112"
+diamondUuid: "f876fe5c-d347-8814-bd18-a38b7af4dccf"
+uuid: "74813fb2-1b0e-8a0b-8ab0-788337646f40"
+horo: 5
 typography:
   partition: tenure
   bondDegree: 24
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accrual
-    - employees
-    - payments
-    - positions
-    - time
-  matrix:
-    - accrual
-    - attrition
-    - compensation
-    - employees
-    - forestry
-    - payments
-    - positions
-    - time
-  backlinks:
-    - accrual
-    - attrition
-    - compensation
-    - employees
-    - forestry
-    - payments
-    - positions
-    - time
 signatures:
-  computationUuid: "954d8dbb-2c0b-8e20-9523-83937fe603ce"
+  computationUuid: "eacb33a4-fec0-8bd9-9a9c-4a535d3121d1"
   stages:
     - stage: path
       stageUuid: "936814bc-89bc-8ebf-bf3a-a69c064f3247"
@@ -69,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2551869a-4437-88e7-bc0a-f4b5894bec89"
     - stage: horo
-      stageUuid: "3233fd7a-a59e-870f-9dc4-e1b3001eb6ff"
+      stageUuid: "1e71ba2f-b8fb-8fa1-a72f-cbc6fabadeda"
     - stage: seal
-      stageUuid: "541c8d4e-ca69-8840-901f-87992c39cb11"
+      stageUuid: "2a8c031b-24ec-81f5-9713-e40442b972b6"
     - stage: uuid
-      stageUuid: "997d519a-1abb-888b-9416-4830e310f501"
+      stageUuid: "271440d4-09ce-893f-9152-cd69b7a67369"
 version: 2
 ---
 # tenure

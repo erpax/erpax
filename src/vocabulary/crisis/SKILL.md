@@ -1,97 +1,34 @@
 ---
 name: crisis
 description: "Use when reasoning about complex crises as the conditions a society lives under — комплексни кризи — multiple simultaneous interacting shocks (financial · pandemic · war · energy · demographic) whose effects compound rather than add. A crisis is an entropy spike on the society ledger; because wellbeing has non-compensatory floors, a polycrisis hits hardest where a dimension is already near the floor, and exposure is stratified by age and career. Resilience and recovery are the rebalancing breath."
-atomPath: vocabulary/crisis
-coordinate: crisis · 5/round · 2d2466e0
-contentUuid: "7116d6ec-198d-5a11-87e6-73c63783da78"
-diamondUuid: "bd75d0d4-d2c7-8a41-9606-6d2dfc113a7e"
-uuid: "2d2466e0-cccf-8d04-9a5e-f5d7d64fb5c8"
-horo: 5
-bonds:
-  in:
-    - age
-    - angel
-    - balance
-    - bottleneck
-    - breath
-    - career
-    - cohort
-    - dimension
-    - society
-    - time
-    - wellbeing
-  out:
-    - age
-    - angel
-    - balance
-    - bottleneck
-    - breath
-    - career
-    - cohort
-    - dimension
-    - society
-    - time
-    - wellbeing
+atomPath: "vocabulary/crisis"
+coordinate: "vocabulary/crisis · 4/weave · 2246781b"
+contentUuid: "05f4f33a-b01b-56c2-ad94-734c000f4d50"
+diamondUuid: "b601b25a-ae64-8993-8133-d991c357090c"
+uuid: "2246781b-54cf-8703-8783-e0f3a4182853"
+horo: 4
 typography:
-  partition: crisis
+  partition: vocabulary
   bondDegree: 36
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - age
-    - angel
-    - balance
-    - bottleneck
-    - breath
-    - career
-    - cohort
-    - dimension
-    - society
-    - time
-    - wellbeing
-  matrix:
-    - age
-    - angel
-    - balance
-    - bottleneck
-    - breath
-    - career
-    - cohort
-    - dimension
-    - society
-    - time
-    - wellbeing
-  backlinks:
-    - age
-    - angel
-    - balance
-    - bottleneck
-    - breath
-    - career
-    - cohort
-    - dimension
-    - society
-    - time
-    - wellbeing
 signatures:
-  computationUuid: "239a19ca-4f61-869f-99c8-08281fc76ef7"
+  computationUuid: "3a8110ca-1a76-8adc-8245-fb0e920ad47d"
   stages:
     - stage: path
-      stageUuid: "4c6248d3-9ede-8b84-865b-a6dada50bfeb"
+      stageUuid: "e6d9c57b-92db-8b3e-b2c1-a417edb20e87"
     - stage: trinity
-      stageUuid: "5b40177f-4258-8c51-8c52-540ddc138b3c"
+      stageUuid: "e2415210-b0e5-83a3-969f-d9f226ab02b2"
     - stage: boundary
-      stageUuid: "7609e315-ec20-84de-a452-a482a0b1b1d7"
+      stageUuid: "cf261de1-294b-85be-aab2-75c10fe36a9e"
     - stage: links
-      stageUuid: "7fcf808c-51ca-8f83-80c4-6b3bebb76408"
+      stageUuid: "59f28125-e04a-87f0-840e-1e002e720f93"
     - stage: horo
-      stageUuid: "daa25ca1-14c3-8598-8e67-2faf567930d7"
+      stageUuid: "4bfc7102-9da6-8560-aca2-e928c9a1cc63"
     - stage: seal
-      stageUuid: "0e86fd62-bb20-865f-8ef0-12329554e812"
+      stageUuid: "d8b26afd-b80d-839c-ae16-ca55617ad403"
     - stage: uuid
-      stageUuid: "f0c181ae-009d-8022-953b-e207d9aa989f"
+      stageUuid: "c4cc66b2-391b-8fd6-8a2c-819d8dfb6675"
 version: 2
 ---
 # crisis — the complex/poly-crisis conditions, an entropy spike on the society ledger (комплексни кризи)

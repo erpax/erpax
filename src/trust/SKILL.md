@@ -2,82 +2,18 @@
 name: trust
 description: "Use when reasoning about trust — A **trust** (IOLTA) account holds client money the firm may not touch except to bill against fees already earned. Strip the prefix and it is a segregated sub-account on the one acc"
 atomPath: trust
-coordinate: trust · 5/round · af593474
-contentUuid: "0be5652c-5e69-5de1-bdca-7bff9d406811"
-diamondUuid: "f11c3c32-8384-8fe9-8867-72464a526254"
-uuid: "af593474-cbcd-8788-be5e-759aa3428a5a"
+coordinate: "trust · 5/round · 24e227dc"
+contentUuid: "51a19e73-5b91-5c9d-a489-f19c0d23aa6d"
+diamondUuid: "0c5fa4bf-ee4e-84d9-b482-32b65514600d"
+uuid: "24e227dc-3e4a-8d11-a210-ed8c6a6ae80f"
 horo: 5
-bonds:
-  in:
-    - access
-    - accounting
-    - allocation
-    - balance
-    - entry
-    - law
-    - matter
-    - mcp
-    - proof
-    - security
-    - society
-    - transaction
-  out:
-    - access
-    - accounting
-    - allocation
-    - balance
-    - entry
-    - law
-    - matter
-    - mcp
-    - proof
-    - security
-    - society
-    - transaction
 typography:
   partition: trust
   bondDegree: 37
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - allocation
-    - balance
-    - entry
-    - law
-    - matter
-    - proof
-    - transaction
-  matrix:
-    - access
-    - accounting
-    - allocation
-    - balance
-    - entry
-    - law
-    - matter
-    - mcp
-    - proof
-    - security
-    - society
-    - transaction
-  backlinks:
-    - access
-    - accounting
-    - allocation
-    - balance
-    - entry
-    - law
-    - matter
-    - mcp
-    - proof
-    - security
-    - society
-    - transaction
 signatures:
-  computationUuid: "f75a7352-bce0-8f34-905c-72b4824355b3"
+  computationUuid: "788ae664-543a-8d13-a266-a14c29f3c34b"
   stages:
     - stage: path
       stageUuid: "c3c16335-f7c4-8400-a2db-82e343687f17"
@@ -88,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "8329d8a0-ae09-8900-ab21-ccb28a439486"
     - stage: horo
-      stageUuid: "0ef6d3af-20d4-84b5-b3ad-7bc47180f744"
+      stageUuid: "ce8bef3e-0d05-8036-ac53-1d1b8e29c93b"
     - stage: seal
-      stageUuid: "d1b94524-d0f1-8cd8-87ea-3edf957908f6"
+      stageUuid: "2c79d32d-3e8f-8798-836a-9ea1807907cf"
     - stage: uuid
-      stageUuid: "6da3f78e-842e-8279-80ea-aba18f68b09a"
+      stageUuid: "9dd5cd1f-edf8-8ad3-92c3-f5aa4a06f033"
 version: 2
 ---
 # trust — the segregated client account (a balance invariant on the ledger)

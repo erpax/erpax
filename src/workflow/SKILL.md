@@ -2,186 +2,42 @@
 name: workflow
 description: "Use when spawning, advancing, or escalating a workflow instance bound to a document — evaluating trigger conditions against a definition, routing step decisions (approve/reject/delegate/return), running service-task handlers, or firing SLA escalation on overdue steps; SOX-compliant approval chain execution. The BPMN-2.0 workflow orchestration service."
 atomPath: workflow
-coordinate: workflow · 1/base · efe72732
-contentUuid: "14520150-4c97-55b4-989a-dec0b07e57db"
-diamondUuid: "4b07506c-a01d-82b5-9d64-9abc727d7e23"
-uuid: "efe72732-badf-8ab8-a2e1-90f8de484a17"
-horo: 1
-bonds:
-  in:
-    - access
-    - answer
-    - approved
-    - begin
-    - close
-    - command
-    - concatenate
-    - defect
-    - definitions
-    - end
-    - engine
-    - event
-    - flow
-    - hooks
-    - horo
-    - identity
-    - incident
-    - instances
-    - law
-    - merge
-    - open
-    - question
-    - request
-    - risk
-    - scouting
-    - sla
-    - standard
-    - step
-    - submission
-  out:
-    - access
-    - answer
-    - approved
-    - begin
-    - close
-    - command
-    - concatenate
-    - defect
-    - definitions
-    - end
-    - engine
-    - event
-    - flow
-    - hooks
-    - horo
-    - identity
-    - incident
-    - instances
-    - law
-    - merge
-    - open
-    - question
-    - request
-    - risk
-    - scouting
-    - sla
-    - standard
-    - step
-    - submission
+coordinate: "workflow · 7/descent · 856d01c7"
+contentUuid: "f5052369-07e4-5f61-b000-939b341e02dc"
+diamondUuid: "b71f3292-ad24-852e-aa74-c6e020ce7000"
+uuid: "856d01c7-f5bb-85ef-87e8-4582cc6913ae"
+horo: 7
 typography:
   partition: workflow
-  bondDegree: 91
-  neighbors: []
+  bondDegree: 0
 standards:
   - "ASC-606"
   - "IFRS-15"
   - "ISA-95"
-  - "ISO-19011:2018 §6.4.6 audit-evidence-workflow"
   - "ISO/IEC 19510:2013 BPMN-2.0"
+  - "ISO/IEC 19510:2013 BPMN-2.0`"
   - "SOX §404 internal-controls workflow-execution"
   - "US-GAAP"
   - "W3C-ActivityPub"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - answer
-    - approved
-    - begin
-    - close
-    - command
-    - concatenate
-    - definitions
-    - end
-    - engine
-    - event
-    - flow
-    - hooks
-    - horo
-    - identity
-    - instances
-    - law
-    - merge
-    - open
-    - question
-    - standard
-  matrix:
-    - access
-    - answer
-    - approved
-    - begin
-    - close
-    - command
-    - concatenate
-    - defect
-    - definitions
-    - end
-    - engine
-    - event
-    - flow
-    - hooks
-    - horo
-    - identity
-    - incident
-    - instances
-    - law
-    - merge
-    - open
-    - question
-    - request
-    - risk
-    - scouting
-    - sla
-    - standard
-    - step
-    - submission
-  backlinks:
-    - access
-    - answer
-    - approved
-    - begin
-    - close
-    - command
-    - concatenate
-    - defect
-    - definitions
-    - end
-    - engine
-    - event
-    - flow
-    - hooks
-    - horo
-    - identity
-    - incident
-    - instances
-    - law
-    - merge
-    - open
-    - question
-    - request
-    - risk
-    - scouting
-    - sla
-    - standard
-    - step
-    - submission
 signatures:
-  computationUuid: "c6b659e7-8d6c-8acd-a300-2e020ffb18e0"
+  computationUuid: "1848de20-1fc2-8a2e-9304-6d4c6f56fdbe"
   stages:
     - stage: path
       stageUuid: "94f4098e-fbfa-80dd-a103-8e647ab5c24d"
     - stage: trinity
       stageUuid: "5ad1a9fa-0d34-8605-9ae6-ea9047426f31"
     - stage: boundary
-      stageUuid: "8e7e855f-0401-85a8-bdf0-03f230b6109a"
+      stageUuid: "bdc923f3-d166-84e6-a2d9-cb21ce970de3"
     - stage: links
       stageUuid: "2b2be7bc-c8ec-892f-af0a-dc286bafd288"
     - stage: horo
-      stageUuid: "379bf587-b9d4-8d53-8c5a-8973be6a3cfd"
+      stageUuid: "d9564fb5-2ce8-8702-817a-b6ae67587563"
     - stage: seal
       stageUuid: "485d4bdf-e79b-8de8-bc49-cc4c3a037885"
     - stage: uuid
-      stageUuid: "ec2bd8fe-2df3-8daf-8e5e-ead393cd2430"
+      stageUuid: "525de210-b38e-82ac-b93c-5c41b1b6f627"
 version: 2
 ---
 # process — the running approval chain, BPMN execution made live

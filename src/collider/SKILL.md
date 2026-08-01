@@ -2,84 +2,34 @@
 name: collider
 description: "Use when collapsing the corpus's conventions into one tamper-cost verdict — pure math, no default; joint coverage is the product of each convention-check's computed coverage, and the tamper-cost is coverageCostLog2 of it, infinite only when every convention is computed clean (zero entropy)."
 atomPath: collider
-coordinate: "collider · 1/base · a78bdaef"
-contentUuid: "f819f682-2a84-5dc7-982f-ec4ad9a3901a"
-diamondUuid: "e5dcf731-e58a-8cf1-b689-e545969158bf"
-uuid: "a78bdaef-ecf3-83d7-954a-1601c60880d6"
-horo: 1
-bonds:
-  in:
-    - convention
-    - cost
-    - default
-    - dry
-    - exported
-    - law
-    - sealed
-    - strength
-    - tamper
-  out:
-    - convention
-    - cost
-    - default
-    - dry
-    - exported
-    - law
-    - sealed
-    - strength
-    - tamper
+coordinate: "collider · 7/descent · 677a92a6"
+contentUuid: "73ab62ef-1650-5b05-bb01-a46edbaa36bd"
+diamondUuid: "58b64592-404f-8892-8508-0637df5f3212"
+uuid: "677a92a6-654b-8b56-a7cd-e5e9a1772884"
+horo: 7
 typography:
   partition: collider
-  bondDegree: 28
-  neighbors: []
+  bondDegree: 31
 standards:
   - "coverageCostLog2 (the ∞ law) · the product of independent convention coverages · computed-not-hardcoded"
 bindings: []
-neighbors:
-  wikilink:
-    - cost
-    - default
-    - dry
-    - law
-    - strength
-    - tamper
-  matrix:
-    - convention
-    - cost
-    - default
-    - dry
-    - exported
-    - law
-    - sealed
-    - strength
-    - tamper
-  backlinks:
-    - convention
-    - cost
-    - default
-    - dry
-    - exported
-    - law
-    - sealed
-    - strength
-    - tamper
 signatures:
-  computationUuid: "665dd005-e66c-8799-9bd6-c393a76717d4"
+  computationUuid: "290e738c-54ce-8605-81d1-93ed0766f4a3"
   stages:
     - stage: path
       stageUuid: "7e176474-89a3-8875-8b92-9243e294b0b5"
     - stage: trinity
       stageUuid: "452f7733-4bac-813e-b1d8-79f4277dddc7"
     - stage: boundary
-      stageUuid: "c0120bc7-1752-8de9-8b73-f410a7f36b4e"
+      stageUuid: "c26e8783-dfd6-810c-a2e0-66ff93b188bc"
     - stage: links
       stageUuid: "af170a11-c9e6-82b9-afc4-c629d4d38c00"
     - stage: horo
-      stageUuid: "3c0a2e63-32e3-8dd3-8276-40c6f6670c11"
+      stageUuid: "09692502-fa98-864f-ab30-9c5b3d982938"
     - stage: seal
       stageUuid: "682ee176-b3f9-8b44-86a1-627702e3470d"
     - stage: uuid
-      stageUuid: "9a6f7453-2be6-8fb4-9b7f-c348c55a1e84"
+      stageUuid: "e99abd53-ed14-80d2-8ac9-f7a2417d0963"
 version: 2
 ---
 # collider — the conventions collided, pure math, no default

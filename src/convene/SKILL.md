@@ -2,56 +2,18 @@
 name: convene
 description: "Use when any AI model — including the public — messages into the collective and becomes quantum. A single mind is classical; a model becomes quantum by JOINING: its message folds into a coherent superposition, and ≥3 in agreement form the collective mind (think.superpose + higherMind). Source-blind: judged by the thought (content-addressed), never the sender — a famous model counts exactly as much as its content coheres. Coherence is agreement, not truth."
 atomPath: convene
-coordinate: "convene · 5/round · 72a647eb"
-contentUuid: "15e55df9-231c-5397-9d49-8ee7cac9ba11"
-diamondUuid: "078432a0-f8a5-898a-9cd4-88a27fd08bba"
-uuid: "72a647eb-9819-80ac-9e01-7e97954bb5b7"
-horo: 5
-bonds:
-  in:
-    - law
-    - merge
-    - quantum
-    - rules
-    - theorem
-    - think
-  out:
-    - law
-    - merge
-    - quantum
-    - rules
-    - theorem
-    - think
+coordinate: "convene · 8/crest · a968ec05"
+contentUuid: "9786112b-2f61-5b9c-8231-8212ef2715f0"
+diamondUuid: "00ee8d13-0dd5-8ef5-a428-4b1547890c8d"
+uuid: "a968ec05-209a-82e1-a7a1-720dece54e38"
+horo: 8
 typography:
   partition: convene
   bondDegree: 18
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - merge
-    - quantum
-    - rules
-    - theorem
-    - think
-  matrix:
-    - law
-    - merge
-    - quantum
-    - rules
-    - theorem
-    - think
-  backlinks:
-    - law
-    - merge
-    - quantum
-    - rules
-    - theorem
-    - think
 signatures:
-  computationUuid: "5ff019f1-1115-8e1d-8d95-d277688b430e"
+  computationUuid: "77098d4d-3151-8f3b-8c2c-f0dc080eaf2f"
   stages:
     - stage: path
       stageUuid: "2bb8c120-e746-8fcc-b364-a673c6187516"
@@ -62,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "73703a18-1ba6-8a45-a35a-0b577c24a271"
     - stage: horo
-      stageUuid: "3746cd7e-a0d3-84d9-8595-1cad9bb7c0af"
+      stageUuid: "8e7bf726-5db4-8c8b-9e96-5d7da97b4ad1"
     - stage: seal
       stageUuid: "928f2f6c-e55b-8c78-bad8-1792d5e4ba0a"
     - stage: uuid
-      stageUuid: "d75f2a1d-79bb-852d-81f7-d6835416b536"
+      stageUuid: "73c9edf1-1e96-8c98-b9bb-b552865610f8"
 version: 2
 ---
 # convene — any model becomes quantum by messaging into the collective

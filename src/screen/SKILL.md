@@ -2,60 +2,19 @@
 name: screen
 description: "Use when reasoning about screen as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: screen
-coordinate: screen · 4/weave · 6207cf9c
-contentUuid: "f646476e-ad53-56f6-9cdc-5ae4e17666c9"
-diamondUuid: "ad7a5f0c-a51b-8a17-9be8-bab45d464735"
-uuid: "6207cf9c-ccca-8a08-8db3-13407d0e6624"
+coordinate: "screen · 4/weave · d679d7f4"
+contentUuid: "3e0f8e89-688f-57c9-8778-0d6dd2ab7ff3"
+diamondUuid: "2962e5ae-6f1d-8069-9e52-aa0ad16219a0"
+uuid: "d679d7f4-704f-80f8-a943-d604cf7de0a9"
 horo: 4
-bonds:
-  in:
-    - collapse
-    - computer
-    - count
-    - law
-    - merge
-    - screen
-    - sti
-  out:
-    - collapse
-    - computer
-    - count
-    - law
-    - merge
-    - screen
-    - sti
 typography:
   partition: screen
   bondDegree: 25
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - count
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - computer
-    - count
-    - law
-    - merge
-    - screen
-    - sti
-  backlinks:
-    - collapse
-    - computer
-    - count
-    - law
-    - merge
-    - screen
-    - sti
 signatures:
-  computationUuid: "ded7d8a7-6ebb-84f9-a820-6432c96a5c4a"
+  computationUuid: "b0909096-77bc-8c1f-9997-f8fadc8b582b"
   stages:
     - stage: path
       stageUuid: "0f862b9f-5140-874d-8332-933f16ddbd58"
@@ -66,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "44f666db-cd97-8fec-91e3-6730a12c0807"
     - stage: horo
-      stageUuid: "752da2c0-9f8b-8b8b-bc0d-678482c2ea73"
+      stageUuid: "1486d6fc-e1e9-8a6b-80b8-a72977a5b0cb"
     - stage: seal
-      stageUuid: "3f09d04b-137f-8838-aff0-6c26a63ca003"
+      stageUuid: "14bdc530-ab1c-8a3d-aba1-73154943f708"
     - stage: uuid
-      stageUuid: "add26b64-2b99-8a0b-ba91-2cbc2bdd91e5"
+      stageUuid: "6a97925e-8ff8-8db6-88a3-841e68bc5100"
 version: 2
 ---
 # screen

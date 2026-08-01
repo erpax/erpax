@@ -1,93 +1,35 @@
 ---
 name: course
 description: "Use when reasoning about course — A description of an educational course which may be offered as distinct instances which take place at different times or take place at different locations, or be offered through di"
-atomPath: vocabulary/course
-coordinate: course · 2/share · f2d59556
-contentUuid: "27a29f7d-9aa2-58aa-8a3d-aa4f54e4e1d7"
-diamondUuid: "2c7c14e7-3a45-8529-8607-1a2275a3b80c"
-uuid: "f2d59556-2a19-86a3-895e-14e1279062aa"
-horo: 2
-bonds:
-  in:
-    - code
-    - exercise
-    - golf
-    - has
-    - instance
-    - law
-    - mode
-    - prerequisites
-    - schedule
-    - workload
-  out:
-    - code
-    - exercise
-    - golf
-    - has
-    - instance
-    - law
-    - mode
-    - prerequisites
-    - schedule
-    - workload
+atomPath: "vocabulary/course"
+coordinate: "vocabulary/course · 4/weave · 31d76f3e"
+contentUuid: "95e12161-bea6-5b26-ab26-e986ce611a37"
+diamondUuid: "3d74cba1-73b7-8224-9e79-6a3d3aa93976"
+uuid: "31d76f3e-e9a5-8693-87d3-3e777c004b6e"
+horo: 4
 typography:
-  partition: course
+  partition: vocabulary
   bondDegree: 37
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - code
-    - exercise
-    - golf
-    - has
-    - instance
-    - law
-    - mode
-    - prerequisites
-    - schedule
-    - workload
-  matrix:
-    - code
-    - exercise
-    - golf
-    - has
-    - instance
-    - law
-    - mode
-    - prerequisites
-    - schedule
-    - workload
-  backlinks:
-    - code
-    - exercise
-    - golf
-    - has
-    - instance
-    - law
-    - mode
-    - prerequisites
-    - schedule
-    - workload
 signatures:
-  computationUuid: "0d01924e-2aa4-88e9-80c0-172ddae21af3"
+  computationUuid: "9d40ef0b-6db1-87c8-ba89-deba1d49f7a9"
   stages:
     - stage: path
-      stageUuid: "e7ed3bcf-9f53-837a-96b1-3a749044b810"
+      stageUuid: "ab2e95c8-b807-8143-b129-8df6aabfb5f0"
     - stage: trinity
-      stageUuid: "2c4c843a-af38-88cd-970e-ccaab4e532a5"
+      stageUuid: "52f42569-2aef-8843-8f96-65617686a92f"
     - stage: boundary
-      stageUuid: "386099b4-83ac-8e84-b710-163ccf824d6f"
+      stageUuid: "bc90e478-69e8-8998-b0d5-50bf761d23c1"
     - stage: links
-      stageUuid: "dbb1b4f8-afab-8cce-9130-11621be33f3a"
+      stageUuid: "2ab742b8-620a-879f-9aa4-01e8af2b1845"
     - stage: horo
-      stageUuid: "6fbad3ae-25c2-8e0e-b924-f20147749380"
+      stageUuid: "94daa147-7f85-81f6-bcfc-d77d796c0d88"
     - stage: seal
-      stageUuid: "2f1a501b-aa0f-86d7-875c-ff8f487234da"
+      stageUuid: "be8e92f5-3bdf-80eb-a562-453d7390551d"
     - stage: uuid
-      stageUuid: "d8b37559-cdd4-8cd0-ac0f-dda0a03a41b2"
+      stageUuid: "dad46d01-2625-8f05-950d-84fce31d648f"
 version: 2
 ---
 # course

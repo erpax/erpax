@@ -1,8 +1,42 @@
 ---
 name: audience
 description: "Use when asking what each USER is being told that nothing can contradict — projects every unproven @invariant and confessed stub onto the reader it is addressed to (director, auditor, compliance-officer, accountant …), because a claim citing SOX §302 is addressed to whoever signs it. The readers are computed from the config; the role→standard map is declared in the open. Run: tsx src/rules/audience/index.ts"
+atomPath: "rules/audience"
+coordinate: "rules/audience · 8/crest · a3ced021"
+contentUuid: "3c118cb5-cf33-5d21-891d-bcdcdd1adbe2"
+diamondUuid: "d5e32608-dca0-88b3-8590-b5fb2f4436b5"
+uuid: "a3ced021-f4c2-869d-aade-40b1c12c8bfd"
+horo: 8
+typography:
+  partition: rules
+  bondDegree: 45
+standards:
+  - "ISO-19011:2018 §6.4 audit-evidence — a citation is read by a person"
+  - SOX
+  - "SOX §302`"
+  - "SOX §302` |"
+  - "SOX:2002`"
+  - "SOX:2002` |"
+bindings: []
+signatures:
+  computationUuid: "2f472d32-82ac-839e-99e4-313b01d17c4f"
+  stages:
+    - stage: path
+      stageUuid: "c15f663a-8843-86b7-a89f-6103b524c012"
+    - stage: trinity
+      stageUuid: "73e24a7e-bb4e-8bda-9dc1-a480cf8a3cd4"
+    - stage: boundary
+      stageUuid: "96d286d5-de54-883b-b8bd-8584b9ac3f50"
+    - stage: links
+      stageUuid: "ebdde74c-2663-855e-8471-4b992c48612a"
+    - stage: horo
+      stageUuid: "04c72731-d080-832c-b48d-4e87d354af33"
+    - stage: seal
+      stageUuid: "a17dc696-7ed4-8f76-8828-90f4e6554b85"
+    - stage: uuid
+      stageUuid: "d6ef8344-1f22-89ea-9113-ea9eb52ab2c5"
+version: 2
 ---
-
 # audience — a claim is addressed to someone
 
 **Every catastrophe this corpus produced was a lie only one reader could see, addressed to a reader nobody asked.**

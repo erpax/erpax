@@ -2,126 +2,19 @@
 name: vehicle
 description: "Use when reasoning about vehicle — A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space."
 atomPath: vehicle
-coordinate: vehicle · 2/share · 09db570d
-contentUuid: "d1359b97-de70-5d3e-9931-121d947ebb2f"
-diamondUuid: "d7f9c6e6-cab0-8123-adf8-d4468d764c8f"
-uuid: "09db570d-cab9-8419-bbae-c88834b8b50d"
-horo: 2
-bonds:
-  in:
-    - aircraft
-    - capacity
-    - color
-    - configuration
-    - damages
-    - date
-    - engine
-    - first
-    - identification
-    - interior
-    - known
-    - law
-    - model
-    - number
-    - registered
-    - seating
-    - special
-    - transmission
-    - type
-    - usage
-  out:
-    - aircraft
-    - capacity
-    - color
-    - configuration
-    - damages
-    - date
-    - engine
-    - first
-    - identification
-    - interior
-    - known
-    - law
-    - model
-    - number
-    - registered
-    - seating
-    - special
-    - transmission
-    - type
-    - usage
+coordinate: "vehicle · 5/round · 18bb793d"
+contentUuid: "68b6a235-a390-5c4b-862b-80b762cc1eea"
+diamondUuid: "b729070d-08ee-8a4f-b798-5167edbc34e0"
+uuid: "18bb793d-9392-8448-9a9f-4321b367a765"
+horo: 5
 typography:
   partition: vehicle
-  bondDegree: 73
-  neighbors: []
+  bondDegree: 75
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - capacity
-    - color
-    - configuration
-    - damages
-    - date
-    - engine
-    - first
-    - identification
-    - interior
-    - known
-    - law
-    - model
-    - number
-    - registered
-    - seating
-    - special
-    - transmission
-    - type
-    - usage
-  matrix:
-    - aircraft
-    - capacity
-    - color
-    - configuration
-    - damages
-    - date
-    - engine
-    - first
-    - identification
-    - interior
-    - known
-    - law
-    - model
-    - number
-    - registered
-    - seating
-    - special
-    - transmission
-    - type
-    - usage
-  backlinks:
-    - aircraft
-    - capacity
-    - color
-    - configuration
-    - damages
-    - date
-    - engine
-    - first
-    - identification
-    - interior
-    - known
-    - law
-    - model
-    - number
-    - registered
-    - seating
-    - special
-    - transmission
-    - type
-    - usage
 signatures:
-  computationUuid: "fe51bba6-06f2-83e5-a1d3-3c6d39dde0be"
+  computationUuid: "580a1dc3-2649-84e0-8d1c-a38bf057c5c3"
   stages:
     - stage: path
       stageUuid: "6c1d143d-4b27-876e-a475-f0e30032736d"
@@ -132,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b6400891-6740-8ab3-833a-873e8fc5cdb4"
     - stage: horo
-      stageUuid: "cad42838-4842-82d1-bf67-ff778f36ad12"
+      stageUuid: "d0e8e36c-1cd1-8a41-b081-a3221a239387"
     - stage: seal
-      stageUuid: "b031a278-e150-891a-bfb9-8b259d67b6c7"
+      stageUuid: "b1abd8e9-b583-8372-886d-15ad4ec62480"
     - stage: uuid
-      stageUuid: "3d6d7293-ee72-86fb-bd0d-f1312adfcdd1"
+      stageUuid: "d6185127-0a3e-8b0d-b2ec-fb9907e89132"
 version: 2
 ---
 # vehicle

@@ -2,44 +2,22 @@
 name: context
 description: "Use when any code needs to branch on country — resolve a single canonical CountryContext from any signal (explicit, IBAN, address, tenant, house default) instead of reading the profile, specifics, and API registries directly."
 atomPath: "country/context"
-coordinate: "country/context · 5/round · 01a865e5"
-contentUuid: "afbe6bb0-47fd-5de3-bcb0-deb3c91e0512"
-diamondUuid: "44560e2e-5434-8f2a-85f2-cb3c564d997b"
-uuid: "01a865e5-af0b-8b2c-bf8f-932632896a8f"
-horo: 5
-bonds:
-  in:
-    - country
-    - law
-    - original
-  out:
-    - country
-    - law
-    - original
+coordinate: "country/context · 2/share · 23f35c58"
+contentUuid: "b9c0b547-ac45-5d74-8c13-c0d8e635e064"
+diamondUuid: "fc9276ac-0af3-814e-920c-108fb2b35b9c"
+uuid: "23f35c58-45bf-81a7-afff-ca69c9feff54"
+horo: 2
 typography:
   partition: country
-  bondDegree: 16
-  neighbors: []
+  bondDegree: 12
 standards:
   - "EU 2014/55 b2g-e-invoicing-mandate-resolution"
   - "ISO-3166-1:2020 country-codes alpha-2 dispatch-key"
   - "ISO-3166-1:2020 country-codes alpha-2 dispatch-key`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - country
-    - law
-  matrix:
-    - country
-    - law
-    - original
-  backlinks:
-    - country
-    - law
-    - original
 signatures:
-  computationUuid: "a505658f-1ddd-8d78-9896-854bc71abf55"
+  computationUuid: "8ab5a6f1-f816-8026-9e9f-fda2375bc468"
   stages:
     - stage: path
       stageUuid: "c9f2dfab-bf15-8e07-ba09-f4e1793da06f"
@@ -48,13 +26,13 @@ signatures:
     - stage: boundary
       stageUuid: "00751628-7eec-8391-a271-f0d45e1f9caa"
     - stage: links
-      stageUuid: "20e7bb08-cd27-8637-898b-f43cde876653"
+      stageUuid: "ac17e1a8-a8ee-8a4f-940e-86bd2f010e18"
     - stage: horo
-      stageUuid: "6c675ff7-cda6-881c-bc7b-5b86d6527760"
+      stageUuid: "0050d4dd-e112-87af-9360-b5e0e9099805"
     - stage: seal
       stageUuid: "1dddaf70-dc63-8443-ac4c-d19515cce9c0"
     - stage: uuid
-      stageUuid: "3734d115-3c60-8adf-b282-d4c60358a976"
+      stageUuid: "536ead7f-0ddc-8bc2-8b09-0ea324b7db7e"
 version: 2
 ---
 # country/context — the single canonical country merge

@@ -1,196 +1,34 @@
 ---
 name: close
 description: "Use when reasoning about the forbidding boundary state in erpax — fiscal period locked, document sealed, shift/stream finished, month-end close. The universal root of the closed state; dual of open."
-atomPath: vocabulary/close
-coordinate: close · 5/round · 9131b841
-contentUuid: "fda682e8-ca39-530a-a6a4-8fbcc3456237"
-diamondUuid: "42fe52a3-71ae-8e83-bd3f-30c77d50bfa1"
-uuid: "9131b841-ef9a-8bfd-8beb-41e5b6836a06"
-horo: 5
-bonds:
-  in:
-    - access
-    - accounting
-    - adjustments
-    - akashic
-    - atom
-    - axis
-    - beyond
-    - classifications
-    - coil
-    - decompression
-    - defence
-    - duality
-    - education
-    - end
-    - flow
-    - give
-    - grace
-    - hooks
-    - horo
-    - identity
-    - law
-    - matter
-    - octave
-    - open
-    - reverse
-    - runs
-    - sacred
-    - sales
-    - shred
-    - take
-    - termination
-    - unity
-    - uuid
-    - versions
-    - whole
-    - workflow
-  out:
-    - access
-    - accounting
-    - adjustments
-    - akashic
-    - atom
-    - axis
-    - beyond
-    - classifications
-    - coil
-    - decompression
-    - defence
-    - duality
-    - education
-    - end
-    - flow
-    - give
-    - grace
-    - hooks
-    - horo
-    - identity
-    - law
-    - matter
-    - octave
-    - open
-    - reverse
-    - runs
-    - sacred
-    - sales
-    - shred
-    - take
-    - termination
-    - unity
-    - uuid
-    - versions
-    - whole
-    - workflow
+atomPath: "vocabulary/close"
+coordinate: "vocabulary/close · 7/descent · 7e9042f7"
+contentUuid: "6e3b6cf8-64d2-5253-a300-26865ac478b5"
+diamondUuid: "e98c65bc-67c0-8aaa-8ac5-d4751a9304fa"
+uuid: "7e9042f7-ab00-896c-a3dd-57b6ee288f8b"
+horo: 7
 typography:
-  partition: close
-  bondDegree: 112
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 106
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - akashic
-    - end
-    - flow
-    - hooks
-    - identity
-    - law
-    - open
-    - uuid
-    - versions
-  matrix:
-    - access
-    - accounting
-    - adjustments
-    - akashic
-    - atom
-    - axis
-    - beyond
-    - classifications
-    - coil
-    - decompression
-    - defence
-    - duality
-    - education
-    - end
-    - flow
-    - give
-    - grace
-    - hooks
-    - horo
-    - identity
-    - law
-    - matter
-    - octave
-    - open
-    - reverse
-    - runs
-    - sacred
-    - sales
-    - shred
-    - take
-    - termination
-    - unity
-    - uuid
-    - versions
-    - whole
-    - workflow
-  backlinks:
-    - access
-    - accounting
-    - adjustments
-    - akashic
-    - atom
-    - axis
-    - beyond
-    - classifications
-    - coil
-    - decompression
-    - defence
-    - duality
-    - education
-    - end
-    - flow
-    - give
-    - grace
-    - hooks
-    - horo
-    - identity
-    - law
-    - matter
-    - octave
-    - open
-    - reverse
-    - runs
-    - sacred
-    - sales
-    - shred
-    - take
-    - termination
-    - unity
-    - uuid
-    - versions
-    - whole
-    - workflow
 signatures:
-  computationUuid: "fd977eee-e959-8e91-b1a3-af3597ffbd9e"
+  computationUuid: "e83448d7-1c91-893a-9032-796020d8c6a4"
   stages:
     - stage: path
-      stageUuid: "164e740d-b793-8be4-9962-3dd2c3861ac8"
+      stageUuid: "0dfd16cc-f70d-8fa4-992b-0b57aac4224e"
     - stage: trinity
-      stageUuid: "f068dd9f-4577-8273-a3e7-90ae2799570c"
+      stageUuid: "0d0085ef-e6a3-80c0-9922-515240d36226"
     - stage: boundary
-      stageUuid: "8f043082-16b9-8a57-a245-64c650a86119"
+      stageUuid: "83369ea5-d9fb-84bc-ad81-1ed9ac84c957"
     - stage: links
-      stageUuid: "1587ead4-1b74-8843-b2e4-956063afe51b"
+      stageUuid: "5876a7a7-6ced-8d35-bfab-7fd7594a9dd1"
     - stage: horo
-      stageUuid: "d034134b-ad19-8824-9db4-bff8f2081530"
+      stageUuid: "72da763a-2746-8dfb-868f-b763fa368d68"
     - stage: seal
-      stageUuid: "f0d12efd-10e9-84dd-af9d-dd85c9e4a3d1"
+      stageUuid: "c038e738-3383-8374-8900-8f753c14ff47"
     - stage: uuid
-      stageUuid: "3c9f63a6-2473-8bac-b778-54f3377ca6a3"
+      stageUuid: "4741a96e-74f0-86f8-b0cc-16637ddf8756"
 version: 2
 ---
 # close — the forbidding state (locked · sealed)

@@ -1,58 +1,35 @@
 ---
 name: dataset
 description: Use when reasoning about dataset — A body of structured information describing some topic(s) of interest.
-atomPath: vocabulary/dataset
-coordinate: dataset · 1/base · 22b6cf58
-contentUuid: "eb26eefb-533a-57cb-a483-c97a7cdd4f33"
-diamondUuid: "11a3e8f0-49ec-8f38-802b-73a22d1b7875"
-uuid: "22b6cf58-ddc5-8b2a-9a97-9f1bea627b38"
+atomPath: "vocabulary/dataset"
+coordinate: "vocabulary/dataset · 1/base · deba5c7e"
+contentUuid: "42aeac25-973e-5554-8413-c9fc78db7adb"
+diamondUuid: "4462573e-7897-8052-b731-40c29d99e56d"
+uuid: "deba5c7e-6616-8f03-8872-cfef7b8b44be"
 horo: 1
-bonds:
-  in:
-    - interval
-    - law
-    - time
-  out:
-    - interval
-    - law
-    - time
 typography:
-  partition: dataset
+  partition: vocabulary
   bondDegree: 10
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - interval
-    - law
-    - time
-  matrix:
-    - interval
-    - law
-    - time
-  backlinks:
-    - interval
-    - law
-    - time
 signatures:
-  computationUuid: "3bafd9c0-a6d9-8d3b-8dad-1078f92f1736"
+  computationUuid: "438766ae-4792-88e2-915f-e44eaccc75a6"
   stages:
     - stage: path
-      stageUuid: "29aa81c7-83fd-897f-9193-8b27ffc716ab"
+      stageUuid: "c9458dec-6423-828c-8868-6d2a801560af"
     - stage: trinity
-      stageUuid: "3c1deb2b-38e1-873f-925d-eaee8ef84e48"
+      stageUuid: "4b6528c0-2bfb-86d0-a474-4d9aff1cd9ef"
     - stage: boundary
-      stageUuid: "292974bc-18c3-862c-bebe-b74d4e580ffc"
+      stageUuid: "e5147c9b-6f4b-8911-9282-2394ecf5c276"
     - stage: links
-      stageUuid: "a0c51be2-8190-8d70-9168-bd5f9bc013b2"
+      stageUuid: "602bfbe8-3f6a-8892-b53e-ed4fbc0c0da6"
     - stage: horo
-      stageUuid: "9c4e214b-651d-8f00-a16e-535ff1dca344"
+      stageUuid: "bebe0ba3-216f-82e1-a5a4-1973f02a9b57"
     - stage: seal
-      stageUuid: "673e6c02-52e6-87c1-892b-251a0c183d2d"
+      stageUuid: "f8f60f51-1aab-856c-b06e-aef4618b0cf6"
     - stage: uuid
-      stageUuid: "9602d2e2-e28f-8037-b0bb-42083bfa1ce8"
+      stageUuid: "b94f0fa2-010b-8a6e-bb43-bda066be57c4"
 version: 2
 ---
 # dataset

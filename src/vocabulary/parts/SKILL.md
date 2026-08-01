@@ -1,73 +1,35 @@
 ---
 name: parts
 description: "Use when reasoning about parts as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/parts
-coordinate: parts · 8/crest · d15c8846
-contentUuid: "f311ee6d-1be7-5e3e-a197-11aa388a9e2e"
-diamondUuid: "119f76b1-716f-892d-9592-7118261ba605"
-uuid: "d15c8846-20ec-830f-88c6-b837d791be41"
-horo: 8
-bonds:
-  in:
-    - auto
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  out:
-    - auto
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
+atomPath: "vocabulary/parts"
+coordinate: "vocabulary/parts · 4/weave · c060af93"
+contentUuid: "a5b173a5-f8d0-5caf-aa34-23a0729bbdc8"
+diamondUuid: "2ac5462d-a1b5-8b3d-bae7-0d8fc0b0cf8e"
+uuid: "c060af93-2183-866b-8fa0-f0e1aabe5053"
+horo: 4
 typography:
-  partition: parts
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - auto
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  matrix:
-    - auto
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  backlinks:
-    - auto
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
 signatures:
-  computationUuid: "eb1a9848-9dea-8bc5-ad5e-b068bf68dfea"
+  computationUuid: "2bd68e82-86ee-801a-a4e3-709d9ba399eb"
   stages:
     - stage: path
-      stageUuid: "bc68abcc-aa96-8747-bcbd-f7e21aee1c09"
+      stageUuid: "5a98ec1a-26e0-80c0-9efe-98c6ed309784"
     - stage: trinity
-      stageUuid: "fcc850f5-50f1-8089-9588-f6599af37c4b"
+      stageUuid: "f3ebdd9f-12e1-864b-8cbe-1dd29fa8acfe"
     - stage: boundary
-      stageUuid: "bd086785-2301-84ea-baa6-968066e7fd39"
+      stageUuid: "acdc6f26-cdb7-8795-a0de-2cbb029a454d"
     - stage: links
-      stageUuid: "2268d5ee-5043-87f4-a4f7-7b782a63667c"
+      stageUuid: "c1ade5fe-0448-85b4-829e-3763bedac406"
     - stage: horo
-      stageUuid: "826abd93-cc92-8b74-b00d-c1bf4d2f7fba"
+      stageUuid: "dd9bf363-eb4c-87cd-b2c2-c267b7293357"
     - stage: seal
-      stageUuid: "3874d61d-fdbb-8873-89bb-7784c6582392"
+      stageUuid: "6c0ed6b7-62a0-803a-b2f3-52d4c29969c4"
     - stage: uuid
-      stageUuid: "c6782c0e-c5dc-8ca1-b986-e19809a07409"
+      stageUuid: "1ba7c144-2e5f-84e5-ade4-da2094217ea7"
 version: 2
 ---
 # parts

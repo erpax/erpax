@@ -1,68 +1,35 @@
 ---
 name: assign
 description: "Use when reasoning about assign as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/assign
-coordinate: assign · 2/share · e717a856
-contentUuid: "500cd5a3-959b-5945-a074-b928e1a8378d"
-diamondUuid: "e75d5e3b-2a6e-84a8-a9c0-85669ea8f277"
-uuid: "e717a856-f9c0-8ddb-925b-846d478e552e"
-horo: 2
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/assign"
+coordinate: "vocabulary/assign · 8/crest · c77c02e0"
+contentUuid: "40de1ae7-c611-5cad-b498-d44121d24b0d"
+diamondUuid: "39eeb2f0-a719-8685-b727-5bb2ab150613"
+uuid: "c77c02e0-246b-805e-a28a-2ff114690266"
+horo: 8
 typography:
-  partition: assign
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "5f9d7a37-c9de-8878-8ab3-37294e5bf5de"
+  computationUuid: "45616e55-f00d-8175-aa6f-f25e6704f5fe"
   stages:
     - stage: path
-      stageUuid: "6289e01a-e018-8f5e-88d1-e9fa0c6f0cab"
+      stageUuid: "17fff5b2-3394-8240-9a1c-6650f289bb0c"
     - stage: trinity
-      stageUuid: "043b33d0-cae8-82b0-90e6-031801522f4c"
+      stageUuid: "bbd8c32b-61b3-8e58-b3e2-8b224aeca3bb"
     - stage: boundary
-      stageUuid: "0c9a9c31-4a5c-8303-ba9e-3dbb56d47782"
+      stageUuid: "384b331e-e11f-80de-8fa0-5ff35901ba83"
     - stage: links
-      stageUuid: "1addaee8-3459-8f9d-9210-c63166482789"
+      stageUuid: "11650d27-bede-8bf7-9f4c-883ba2ef6e6e"
     - stage: horo
-      stageUuid: "734975c7-c10b-88c8-a204-8fa5cfc7951d"
+      stageUuid: "47b5d79c-59b8-80bf-acad-1215aea0306d"
     - stage: seal
-      stageUuid: "3085a791-7915-8072-a7b2-20dffcf6ca1d"
+      stageUuid: "af436a11-5438-86ab-b42f-2acc9139a19a"
     - stage: uuid
-      stageUuid: "fb65ce74-2d95-839e-b913-a32af103f5bf"
+      stageUuid: "41fdefb5-366c-8061-b94f-4a9d1b5b2d51"
 version: 2
 ---
 # assign

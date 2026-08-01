@@ -1,63 +1,35 @@
 ---
 name: parental
 description: "Use when reasoning about parental as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/parental
-coordinate: parental · 8/crest · f4833c97
-contentUuid: "651cf928-0c6c-5d95-84b3-4a8511bcc034"
-diamondUuid: "ac095d8d-0b79-8a1c-a650-c3e1f860bb7f"
-uuid: "f4833c97-a083-804e-bfc2-3f0b5d468870"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/parental"
+coordinate: "vocabulary/parental · 5/round · 77c94d9b"
+contentUuid: "94f10399-d6ea-57ed-8b40-60073475d414"
+diamondUuid: "64b3f39f-203a-898d-a139-88462dc7baf9"
+uuid: "77c94d9b-cac6-8619-9e04-c65302e51fc1"
+horo: 5
 typography:
-  partition: parental
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "4c83be38-1037-8263-bffe-957cebf743a9"
+  computationUuid: "d62d65bd-c43a-8b7c-aad1-69508c070ff9"
   stages:
     - stage: path
-      stageUuid: "8a10195f-d1e7-83f1-a524-c712cdc85ba2"
+      stageUuid: "f54bc21a-806d-88bb-893b-e2e1f1f72c44"
     - stage: trinity
-      stageUuid: "51dda856-24d4-8abf-872e-2e660610a27d"
+      stageUuid: "5bb41411-f210-876e-b654-68f1643d8136"
     - stage: boundary
-      stageUuid: "074e1737-4af9-8033-9c13-97144cf8f8dd"
+      stageUuid: "3ad985e0-da59-85dd-a7f7-b4d5e9e9d48b"
     - stage: links
-      stageUuid: "5ae954f1-aed9-80af-852e-974e16e347a4"
+      stageUuid: "2dcdc88e-6a66-81ba-aaef-5364b1568e61"
     - stage: horo
-      stageUuid: "845642a6-dd22-8c3c-97c3-1d5d7413d6b8"
+      stageUuid: "f70491e9-4977-8150-8b47-b67efc3d4eb8"
     - stage: seal
-      stageUuid: "da7fecc4-b2d5-84b0-9d89-35fdf21fa942"
+      stageUuid: "0448ff75-b7b1-8821-9128-6fcf3c9c281f"
     - stage: uuid
-      stageUuid: "e6d9aa44-a621-8eda-8681-2f51c015a732"
+      stageUuid: "df6b1f78-14b3-8073-9b3d-93296b79f1c4"
 version: 2
 ---
 # parental

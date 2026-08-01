@@ -1,152 +1,34 @@
 ---
 name: database
 description: "Use when configuring the Payload database adapter or working with migrations/schema — choosing sqlite/d1/postgres/mongo, running migrate / migrate:create / migrate:down, dev push, transactions, indexes, defaultIDType, or fixing schema/enum/table-name errors."
-atomPath: vocabulary/database
-coordinate: database · 2/share · ecd5de20
-contentUuid: "55441f23-b116-51b7-b855-14a42ca0eb9a"
-diamondUuid: "3baa7da1-5488-816e-9148-32867ea87b73"
-uuid: "ecd5de20-2da9-8b71-a117-1ea0764562b1"
-horo: 2
-bonds:
-  in:
-    - backup
-    - bindings
-    - cardinality
-    - chat
-    - config
-    - consistency
-    - constraint
-    - deploy
-    - dev
-    - fields
-    - id
-    - identity
-    - law
-    - merge
-    - nullability
-    - partition
-    - payload
-    - port
-    - recover
-    - replication
-    - schema
-    - skills
-    - society
-    - tag
-    - torus
-    - weave
-  out:
-    - backup
-    - bindings
-    - cardinality
-    - chat
-    - config
-    - consistency
-    - constraint
-    - deploy
-    - dev
-    - fields
-    - id
-    - identity
-    - law
-    - merge
-    - nullability
-    - partition
-    - payload
-    - port
-    - recover
-    - replication
-    - schema
-    - skills
-    - society
-    - tag
-    - torus
-    - weave
+atomPath: "vocabulary/database"
+coordinate: "vocabulary/database · 5/round · 6768ceca"
+contentUuid: "439e507c-b4b6-5b5d-9037-deec6e878fb5"
+diamondUuid: "732624a8-aa73-81af-82f3-8c4b961e21ec"
+uuid: "6768ceca-1954-8ba5-93c5-e2caccbdd1c3"
+horo: 5
 typography:
-  partition: database
-  bondDegree: 0
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 85
 standards: []
-bindings:
-  - d1_databases/D1
-neighbors:
-  wikilink:
-    - deploy
-    - fields
-    - identity
-    - law
-    - recover
-  matrix:
-    - backup
-    - bindings
-    - cardinality
-    - chat
-    - config
-    - consistency
-    - constraint
-    - deploy
-    - dev
-    - fields
-    - id
-    - identity
-    - law
-    - merge
-    - nullability
-    - partition
-    - payload
-    - port
-    - recover
-    - replication
-    - schema
-    - skills
-    - society
-    - tag
-    - torus
-    - weave
-  backlinks:
-    - backup
-    - bindings
-    - cardinality
-    - chat
-    - config
-    - consistency
-    - constraint
-    - deploy
-    - dev
-    - fields
-    - id
-    - identity
-    - law
-    - merge
-    - nullability
-    - partition
-    - payload
-    - port
-    - recover
-    - replication
-    - schema
-    - skills
-    - society
-    - tag
-    - torus
-    - weave
+bindings: []
 signatures:
-  computationUuid: "64cae152-3b4c-808f-96b3-bda0030b3bdb"
+  computationUuid: "57087322-0ade-8bbf-9eca-3c38c5025299"
   stages:
     - stage: path
-      stageUuid: "f6ce6480-b1e7-8e00-be61-231c4403ed58"
+      stageUuid: "3b97cf25-ecaf-8580-99e3-0b887f2f8aaa"
     - stage: trinity
-      stageUuid: "e89757f9-aeae-8e0d-96f9-a4d1dff27f4f"
+      stageUuid: "e331f430-0f9e-8992-b77d-0f347255324d"
     - stage: boundary
-      stageUuid: "30a0af2e-3349-88dc-92a1-4d120eba6bb6"
+      stageUuid: "c8b5b5e6-17fb-84a1-812d-b30d2def69ed"
     - stage: links
-      stageUuid: "dd142287-73b2-80bb-a1f1-e1c9f67d9be0"
+      stageUuid: "dc314301-ff93-83fb-98b2-86194e05f42b"
     - stage: horo
-      stageUuid: "8edca529-c06c-88c9-ad60-915dd9ac61fe"
+      stageUuid: "bf35e6c4-347f-80ac-bd62-2710ca0cd718"
     - stage: seal
-      stageUuid: "94d3bc0a-3a57-8f93-8a8b-34eef701f737"
+      stageUuid: "e12a6f2a-fa13-8117-ab28-ac858dc362db"
     - stage: uuid
-      stageUuid: "b3ffaba2-245d-81e7-9415-a9ec0635f31d"
+      stageUuid: "c732d8f7-11bd-8335-839b-98a0fedc2500"
 version: 2
 ---
 # database — adapter, migrations, schema (position 4 of the material cycle)

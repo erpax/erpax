@@ -1,68 +1,35 @@
 ---
 name: elementary
 description: "Use when reasoning about elementary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/elementary
-coordinate: elementary · 1/base · e65931fd
-contentUuid: "957c4fa1-bc9a-5879-b04e-b99771e4b216"
-diamondUuid: "2e6f4d9a-298d-854d-abcb-e4ab11552448"
-uuid: "e65931fd-23ab-8f0d-869c-aa4e1082b128"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - school
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - school
-    - sti
+atomPath: "vocabulary/elementary"
+coordinate: "vocabulary/elementary · 7/descent · 6cead71e"
+contentUuid: "1ae00fec-331f-58f7-a111-bb46151b37ea"
+diamondUuid: "f3f39fc1-8cd4-81ba-96ba-1ec08364a3b3"
+uuid: "6cead71e-54b0-8717-adf0-f5f652911474"
+horo: 7
 typography:
-  partition: elementary
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - school
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - school
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - school
-    - sti
 signatures:
-  computationUuid: "5dd1695c-fa2c-8ff4-9f04-3c8327442184"
+  computationUuid: "a084df7b-9c92-89d9-ba36-e5993607cabd"
   stages:
     - stage: path
-      stageUuid: "9f106ea1-6d66-8039-afc5-be90a995583f"
+      stageUuid: "6dbc8e2d-05cd-8d39-a946-5a79ad30dacb"
     - stage: trinity
-      stageUuid: "a353c3c0-e384-8689-a01d-fee280f84816"
+      stageUuid: "76611b19-04b5-89ee-9bb4-d131ebdf82f2"
     - stage: boundary
-      stageUuid: "85bdeeb7-3e19-8b5c-a793-2368531beb9d"
+      stageUuid: "c22852ed-23fd-8379-a44a-1a982820f889"
     - stage: links
-      stageUuid: "151970eb-1714-8618-9d21-8b1e1c08d677"
+      stageUuid: "191d7cff-8e94-8edc-bd2a-bdc390fee835"
     - stage: horo
-      stageUuid: "6b8b8d82-e4ed-82f1-a678-3669faf608cb"
+      stageUuid: "32398293-a744-8780-ae29-5305ef44c3b5"
     - stage: seal
-      stageUuid: "1ac400e9-e96f-823f-ab3c-26dc955229af"
+      stageUuid: "ec08c6fe-c978-811d-8fd5-82e0360f7581"
     - stage: uuid
-      stageUuid: "b843fa42-e281-8240-9b48-7eb3d2dd4e92"
+      stageUuid: "f5fd6224-b000-8b41-82d8-81f2f35f223c"
 version: 2
 ---
 # elementary

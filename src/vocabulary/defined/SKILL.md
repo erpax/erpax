@@ -1,83 +1,35 @@
 ---
 name: defined
 description: "Use when reasoning about defined as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/defined
-coordinate: defined · 8/crest · aeaacd30
-contentUuid: "35f0aa6e-fa1d-5984-96c7-2d84b5497576"
-diamondUuid: "2c91fc57-f17f-8a0b-925c-bfee4c6be470"
-uuid: "aeaacd30-bec7-8008-b243-c8cdc3f8bd41"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - has
-    - law
-    - merge
-    - region
-    - set
-    - sti
-    - term
-  out:
-    - collapse
-    - has
-    - law
-    - merge
-    - region
-    - set
-    - sti
-    - term
+atomPath: "vocabulary/defined"
+coordinate: "vocabulary/defined · 5/round · 210e3043"
+contentUuid: "f14e95e1-783c-5cac-9858-8908409e55db"
+diamondUuid: "120e8776-379a-8900-be68-845509367fc2"
+uuid: "210e3043-6975-8926-bafe-555c50be1649"
+horo: 5
 typography:
-  partition: defined
+  partition: vocabulary
   bondDegree: 28
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - has
-    - law
-    - merge
-    - region
-    - set
-    - sti
-    - term
-  matrix:
-    - collapse
-    - has
-    - law
-    - merge
-    - region
-    - set
-    - sti
-    - term
-  backlinks:
-    - collapse
-    - has
-    - law
-    - merge
-    - region
-    - set
-    - sti
-    - term
 signatures:
-  computationUuid: "1893647b-4901-8eb9-8957-3fd5704d705e"
+  computationUuid: "a4e639f5-43a6-8630-aad3-1771a272ffe6"
   stages:
     - stage: path
-      stageUuid: "b3e5463b-ea7c-89aa-b18c-ab99777b8005"
+      stageUuid: "b042a04c-621c-8143-aa67-ed7eaa15f17e"
     - stage: trinity
-      stageUuid: "e0088f14-defe-85a1-8973-128a4eb71f13"
+      stageUuid: "46174c52-87e3-80fd-bab1-9c0fe639c9a8"
     - stage: boundary
-      stageUuid: "e217152d-a272-800c-b45c-00e08aef6c03"
+      stageUuid: "1a435d8d-1ea7-876b-8529-aaafcdc0af07"
     - stage: links
-      stageUuid: "64153d47-8b74-87b1-9b24-5e2afe3d9065"
+      stageUuid: "f69cbe91-c86c-882e-8b28-c7e74ed8c2f1"
     - stage: horo
-      stageUuid: "e50ee15d-862c-8360-82d3-951a493d61cd"
+      stageUuid: "2c9eb858-464b-85a6-b065-00b34d6fe563"
     - stage: seal
-      stageUuid: "f08c4cfa-48b2-81cc-a0d4-c83ea01a8078"
+      stageUuid: "7ea33498-64f7-8c4e-9e96-a65b1af0398d"
     - stage: uuid
-      stageUuid: "be4dc165-c6c1-8c9f-99bc-9f6912707232"
+      stageUuid: "2b1b70fc-2bd6-8049-8de0-319364492e28"
 version: 2
 ---
 # defined

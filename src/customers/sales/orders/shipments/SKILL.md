@@ -2,41 +2,19 @@
 name: shipments
 description: "Use when dispatching goods against a sales order — recording carrier, tracking number and URL, line items shipped, ship-from/to addresses, and progressing through picked → packed → shipped → delivered states. The fulfillment and carrier-tracking collection per EN-16931 §BG-13."
 atomPath: "customers/sales/orders/shipments"
-coordinate: "customers/sales/orders/shipments · 2/share · 2573150c"
-contentUuid: "b7a696ff-207b-5a5e-a000-7524b130a5b3"
-diamondUuid: "ff0c5728-a80a-8b48-9855-263ea4b7035d"
-uuid: "2573150c-ecee-8d0e-a115-5803c5ce5b46"
-horo: 2
-bonds:
-  in:
-    - declarations
-    - events
-    - law
-    - locations
-    - orders
-    - packages
-    - shipment
-    - standard
-  out:
-    - declarations
-    - events
-    - law
-    - locations
-    - orders
-    - packages
-    - shipment
-    - standard
+coordinate: "customers/sales/orders/shipments · 1/base · e115606d"
+contentUuid: "c2ef1211-3b1c-5834-ba58-6f42f140f35c"
+diamondUuid: "344601fa-a9da-8af8-8830-fe0fd676f2ea"
+uuid: "e115606d-f5a5-8794-9b9d-a459948d74ca"
+horo: 1
 typography:
   partition: customers
   bondDegree: 0
-  neighbors: []
 standards:
   - "COSO-ERM-2017"
   - "EN-16931"
   - "EN-16931:2017 §BG-13 delivery-information"
   - "EN-16931:2017 §BG-13 delivery-information`"
-  - "EU-2017/1132"
-  - "EU-2017/828"
   - "EU-UCC"
   - "INCOTERMS-2020"
   - "ISO-3166-1:2020 country-codes ship-from ship-to"
@@ -48,33 +26,8 @@ standards:
   - "WCO-HS"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - declarations
-    - events
-    - law
-    - packages
-    - standard
-  matrix:
-    - declarations
-    - events
-    - law
-    - locations
-    - orders
-    - packages
-    - shipment
-    - standard
-  backlinks:
-    - declarations
-    - events
-    - law
-    - locations
-    - orders
-    - packages
-    - shipment
-    - standard
 signatures:
-  computationUuid: "412b587d-24d8-8cc7-a17c-2e3ff9ac615c"
+  computationUuid: "60d2f51e-c6d0-8a8d-91ca-272e200ebdd6"
   stages:
     - stage: path
       stageUuid: "ca8e7be6-59bd-8dde-93a8-ace0ba50a476"
@@ -85,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "09a5c83b-2dd3-81d1-8d4e-ed9edf0d3115"
     - stage: horo
-      stageUuid: "dcfbc4f2-50a4-873a-9c5e-9489af67f3bf"
+      stageUuid: "8a5be8d3-e89f-8333-b17c-5c7fe093f607"
     - stage: seal
       stageUuid: "5511df6e-d635-835e-a514-e8f79c8558c0"
     - stage: uuid
-      stageUuid: "fd447306-af80-8cb1-b8c7-4944a05b465e"
+      stageUuid: "90c30c4c-33c1-8569-9671-b02dfa601222"
 version: 2
 ---
 # shipments

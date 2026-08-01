@@ -1,63 +1,35 @@
 ---
 name: discontinued
 description: "Use when reasoning about discontinued as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/discontinued
-coordinate: discontinued · 7/descent · c094bb35
-contentUuid: "6bbb96bc-8d18-587b-a1f1-152481220e86"
-diamondUuid: "f78ce64f-7a54-8aa8-bc25-67c54772c581"
-uuid: "c094bb35-962c-8e68-ba88-4ab7773d2659"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/discontinued"
+coordinate: "vocabulary/discontinued · 2/share · 2bc2677e"
+contentUuid: "d13f22db-6d6f-5741-9c1f-4d9c49dd4a9f"
+diamondUuid: "af0e3b13-5031-8f34-b7ad-cc4a5e46e6ee"
+uuid: "2bc2677e-9b5c-828d-9270-f1e4c547d05e"
+horo: 2
 typography:
-  partition: discontinued
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "241ded96-e0ed-8ffc-a694-5829596df789"
+  computationUuid: "498de187-1914-84e0-80cf-1b14a339e5e9"
   stages:
     - stage: path
-      stageUuid: "4337f487-65f8-884b-a9da-0e194b4b583c"
+      stageUuid: "b8f56574-b0a7-864d-87db-3a9ceb07a9a7"
     - stage: trinity
-      stageUuid: "cd57772c-01d4-86c6-a99a-a096ad49d6a8"
+      stageUuid: "5954949b-9e5e-8252-8ff5-f956f542a710"
     - stage: boundary
-      stageUuid: "439f7725-55c0-8d3c-bd04-4888b28a5e22"
+      stageUuid: "5339ea84-d7e6-8244-bfe6-f4404a2bbd9c"
     - stage: links
-      stageUuid: "be359fd0-94a6-86db-81c0-5ee2a2eaadfe"
+      stageUuid: "69ca067a-e640-8cbc-b55b-b504a7bd26f9"
     - stage: horo
-      stageUuid: "4e01c881-6782-862d-8b95-6fe433f497c1"
+      stageUuid: "91091a66-d7ef-8cc7-9e3f-3b723695113d"
     - stage: seal
-      stageUuid: "32329f91-859f-8c09-82da-7e162937ba9e"
+      stageUuid: "009fe8b3-2b10-84f8-b500-0338c0f940ca"
     - stage: uuid
-      stageUuid: "c2b516ed-2ab4-86e5-9f9d-4937fe86d695"
+      stageUuid: "c2f0b178-9e2f-84a9-bfe5-fe5f964872ca"
 version: 2
 ---
 # discontinued

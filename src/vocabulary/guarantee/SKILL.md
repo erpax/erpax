@@ -1,63 +1,35 @@
 ---
 name: guarantee
 description: "Use when reasoning about guarantee as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/guarantee
-coordinate: guarantee · 2/share · ad4f4dd1
-contentUuid: "5ab048e5-95a0-5d11-9181-a996e6783283"
-diamondUuid: "423dea23-4011-8e2a-88db-c3c7eb911c37"
-uuid: "ad4f4dd1-9c12-83f4-8e04-64c2bd4e392e"
+atomPath: "vocabulary/guarantee"
+coordinate: "vocabulary/guarantee · 2/share · f883f0cc"
+contentUuid: "13c45d13-5ae8-54e3-a4bf-806207619a54"
+diamondUuid: "031d342c-6aa9-83c1-9f17-2719ae9b9677"
+uuid: "f883f0cc-e374-82d4-8b5a-52f5cf5679cd"
 horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: guarantee
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "37fcd2f9-a0e3-8060-9016-bc5ea6b221a3"
+  computationUuid: "46a82e58-477b-8a93-b44b-041d3fca5b12"
   stages:
     - stage: path
-      stageUuid: "94c06e12-e8ac-8183-b0fe-5b13e0eb64d3"
+      stageUuid: "8ece34f5-fef8-8ab0-8643-2bb76a7d513c"
     - stage: trinity
-      stageUuid: "7bbb61e3-2cf0-82a8-a21c-e9041cd4c76e"
+      stageUuid: "d7c0c1e9-985a-8ae4-a794-0e1a223a1d42"
     - stage: boundary
-      stageUuid: "2138c559-1bf8-8df1-8aa5-d428fdd8a83c"
+      stageUuid: "b357530f-56bd-81c7-b1b5-5a968a92cea6"
     - stage: links
-      stageUuid: "61f7b981-cfa2-8f62-9c84-923a7a5d2970"
+      stageUuid: "89744609-0f16-8737-818b-4e3c5f35008c"
     - stage: horo
-      stageUuid: "2f04822a-56ed-865f-9660-7ca03876678c"
+      stageUuid: "e21b0474-40c4-84e6-beb7-3a91da861bfc"
     - stage: seal
-      stageUuid: "1d869253-30bd-8084-95b2-9c8f15a6b629"
+      stageUuid: "a1c7f579-bea3-86dc-9740-4ce2c1d13603"
     - stage: uuid
-      stageUuid: "95ff7e6d-6828-8e88-80f2-5541801f910d"
+      stageUuid: "f701c14d-a2ad-813c-9608-91d154a00dc5"
 version: 2
 ---
 # guarantee

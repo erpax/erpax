@@ -1,78 +1,35 @@
 ---
 name: monthly
 description: "Use when reasoning about monthly as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/monthly
-coordinate: monthly · 7/descent · 8af31786
-contentUuid: "d68000b0-552f-59b9-bc7c-2086286e348d"
-diamondUuid: "83f79c68-8aa4-8209-ba95-b608062383d5"
-uuid: "8af31786-46dd-8ee0-be14-815ab79684f9"
-horo: 7
-bonds:
-  in:
-    - amount
-    - collapse
-    - law
-    - merge
-    - minimum
-    - repayment
-    - sti
-  out:
-    - amount
-    - collapse
-    - law
-    - merge
-    - minimum
-    - repayment
-    - sti
+atomPath: "vocabulary/monthly"
+coordinate: "vocabulary/monthly · 4/weave · cae3a58d"
+contentUuid: "b1fd9ae7-5328-56be-82e8-234b19854fd4"
+diamondUuid: "a1a490b6-3771-818a-9d35-9d8c7e2c0e51"
+uuid: "cae3a58d-f4e0-8de0-ab26-2e0644352fcf"
+horo: 4
 typography:
-  partition: monthly
+  partition: vocabulary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - amount
-    - collapse
-    - law
-    - merge
-    - minimum
-    - repayment
-    - sti
-  matrix:
-    - amount
-    - collapse
-    - law
-    - merge
-    - minimum
-    - repayment
-    - sti
-  backlinks:
-    - amount
-    - collapse
-    - law
-    - merge
-    - minimum
-    - repayment
-    - sti
 signatures:
-  computationUuid: "1c4b79d9-db5f-8936-9d48-ba9c1c09ccaf"
+  computationUuid: "773c8cea-0a2d-8d6a-a394-974b2bbccea8"
   stages:
     - stage: path
-      stageUuid: "c6b38307-618d-85b1-8931-70286389fc5e"
+      stageUuid: "52cc8505-e6cc-84d4-95f6-f01926ef115a"
     - stage: trinity
-      stageUuid: "118b1a11-2833-8ee2-8edd-455524f666f3"
+      stageUuid: "8f3a9277-cf82-8e59-9f34-3e527262e6f4"
     - stage: boundary
-      stageUuid: "268e1056-af91-8fb3-9eb5-1bac87234b6f"
+      stageUuid: "b57bcc15-a0db-8c38-8d1e-3e06e0e13000"
     - stage: links
-      stageUuid: "6c75c8e3-700f-892e-a32a-1a54d4639b5d"
+      stageUuid: "36d9254f-4270-8312-8c07-257459192e7b"
     - stage: horo
-      stageUuid: "da794a3a-0b79-838e-994d-dc066e2bf55f"
+      stageUuid: "b5fe4a47-4e72-8477-9d22-0ce13760bff4"
     - stage: seal
-      stageUuid: "5916af67-2687-83ba-bf7e-83964a382134"
+      stageUuid: "b51797c6-73fb-8d54-b45c-d3d28efbaef1"
     - stage: uuid
-      stageUuid: "1d516e9b-bc47-8da9-933b-6383f0ce33e1"
+      stageUuid: "69680008-7934-8364-ae82-f96d63969744"
 version: 2
 ---
 # monthly

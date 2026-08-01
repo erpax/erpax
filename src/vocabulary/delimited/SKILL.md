@@ -1,63 +1,35 @@
 ---
 name: delimited
 description: "Use when reasoning about delimited as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/delimited
-coordinate: delimited · 8/crest · 1bfdef24
-contentUuid: "c0052c5f-bf25-57b6-a656-d491f187120e"
-diamondUuid: "4b85c42a-f9f4-889f-9b88-2408a0639147"
-uuid: "1bfdef24-8d3b-8d60-85bc-a4e11b037da2"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/delimited"
+coordinate: "vocabulary/delimited · 1/base · 4aaec1e8"
+contentUuid: "220fdfe4-a63d-5b72-b72b-806b663dd38a"
+diamondUuid: "128fcef5-adf0-8e34-bad8-960629d76c78"
+uuid: "4aaec1e8-73d9-802a-b6ab-62b4c1c434bd"
+horo: 1
 typography:
-  partition: delimited
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "e986039f-7263-83a8-b8a6-e401bb3f91e9"
+  computationUuid: "354516de-b642-8a60-a040-b95fb2d01a1d"
   stages:
     - stage: path
-      stageUuid: "f53f375f-801e-87ff-a3f3-4f43f344d196"
+      stageUuid: "a51580bf-001f-8fc0-82d6-e086f0fe1fbe"
     - stage: trinity
-      stageUuid: "2d721a17-9622-8278-bf91-98b7e72eceb7"
+      stageUuid: "e1bc95aa-57ef-82a5-878e-4f9ef5bb4f0d"
     - stage: boundary
-      stageUuid: "99db96cf-e33f-826d-a960-3e2911cbf12a"
+      stageUuid: "98b6a33d-b244-8184-9e35-3bebefecc6c9"
     - stage: links
-      stageUuid: "f273e107-abf5-897b-823b-76e38e558f77"
+      stageUuid: "fc0bb7c0-8709-8b5f-b33f-a70eb67f3387"
     - stage: horo
-      stageUuid: "3c4d8009-a8df-8b6a-9a7b-880239c1f320"
+      stageUuid: "8d2756f7-4b15-8086-b09f-b12202cdc9ba"
     - stage: seal
-      stageUuid: "19f6c1ba-6d23-81ac-adf0-227c2a31638b"
+      stageUuid: "e48ba18e-9f43-870e-b3ab-5f757dd420f4"
     - stage: uuid
-      stageUuid: "dda0d0c6-645a-8199-9616-cc6949043fb4"
+      stageUuid: "8132c525-3358-820c-b248-d4ffe891ac7b"
 version: 2
 ---
 # delimited

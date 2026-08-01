@@ -2,59 +2,19 @@
 name: addressed
 description: "Use when an atom needs an identity — the convention is that identity is content-addressed as a v8 uuid derived from what the atom IS, never an arbitrary external name; this atom measures the corpus's live content-address coverage = addressed / total over the real tree."
 atomPath: "convention/addressed"
-coordinate: "convention/addressed · 4/weave · 61dde71e"
-contentUuid: "e0c9dfc2-8428-5d85-8765-ea3805595799"
-diamondUuid: "f4efaa41-fa4e-893e-9e22-d2f7d70afeee"
-uuid: "61dde71e-9578-8a59-a843-3b4759d954f2"
+coordinate: "convention/addressed · 4/weave · 83e6f713"
+contentUuid: "c24dbafc-d7cc-585c-b320-8ab80ed2bdf6"
+diamondUuid: "282df735-199e-8a6e-af66-93dc52e705f9"
+uuid: "83e6f713-b7aa-8fb5-8bae-62f947313525"
 horo: 4
-bonds:
-  in:
-    - aura
-    - convention
-    - coordinate
-    - cost
-    - law
-    - matrix
-    - uuid
-  out:
-    - aura
-    - coordinate
-    - cost
-    - law
-    - matrix
-    - uuid
 typography:
   partition: convention
   bondDegree: 19
-  neighbors:
-    - aura
 standards:
   - "RFC 9562 §5.8 (uuidv8 content-uuid) + §4.1 variant — identity derived from content"
 bindings: []
-neighbors:
-  wikilink:
-    - aura
-    - coordinate
-    - cost
-    - law
-    - matrix
-    - uuid
-  matrix:
-    - aura
-    - coordinate
-    - cost
-    - law
-    - matrix
-    - uuid
-  backlinks:
-    - aura
-    - coordinate
-    - cost
-    - law
-    - matrix
-    - uuid
 signatures:
-  computationUuid: "7baa0526-8d25-8ac5-9e17-35e5fb5e79f9"
+  computationUuid: "47f326d3-7ee9-8f33-b370-aa9ac21633e5"
   stages:
     - stage: path
       stageUuid: "2c2e94b8-4910-8b63-ac31-bf17ec470b74"
@@ -65,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e3fd5d2f-5918-80e5-9146-00a8de0e9f99"
     - stage: horo
-      stageUuid: "f84f2207-45f3-838d-bd36-b896811af08f"
+      stageUuid: "dad571a7-28de-8512-bf4f-15cf6cb8339b"
     - stage: seal
       stageUuid: "affb6269-4041-83b2-9353-70fccb86d0af"
     - stage: uuid
-      stageUuid: "a4df3a5c-4a78-8372-9c90-9393c276101b"
+      stageUuid: "e4d02597-1e6d-82b3-95f4-90687bce9f22"
 version: 2
 ---
 # convention/addressed — identity is content-addressed (a uuid)

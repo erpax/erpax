@@ -1,58 +1,35 @@
 ---
 name: buyer
-description: Use when reasoning about buyer — A sub property of participant. The participant/person/organization that bought the object.
-atomPath: vocabulary/buyer
-coordinate: buyer · 8/crest · fb75d508
-contentUuid: "250756a2-76f0-57f4-a0f6-46f4acff5222"
-diamondUuid: "e0846ba1-4345-8ef2-b08e-e6280c0f000c"
-uuid: "fb75d508-5d61-830c-a6a6-9b8cd763b274"
-horo: 8
-bonds:
-  in:
-    - law
-    - person
-    - thing
-  out:
-    - law
-    - person
-    - thing
+description: "Use when reasoning about buyer — A sub property of participant. The participant/person/organization that bought the object."
+atomPath: "vocabulary/buyer"
+coordinate: "vocabulary/buyer · 5/round · 1c57661b"
+contentUuid: "90854048-dc62-5ec8-8858-8c7479a80133"
+diamondUuid: "2603171f-cbdf-8caa-a576-954eae05e5ba"
+uuid: "1c57661b-349f-8a6d-96bc-ed48892fb89a"
+horo: 5
 typography:
-  partition: buyer
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - person
-    - thing
-  matrix:
-    - law
-    - person
-    - thing
-  backlinks:
-    - law
-    - person
-    - thing
 signatures:
-  computationUuid: "d7f8588c-18d5-8714-a8be-5922745cbd6e"
+  computationUuid: "01fdda22-6bd7-8602-af44-85c103c5e336"
   stages:
     - stage: path
-      stageUuid: "6d146eb4-bc83-861a-a55f-abe1cdd020ab"
+      stageUuid: "c5bd7408-848e-830d-be48-7e0abb4c1dd0"
     - stage: trinity
-      stageUuid: "ce0d0abd-3d0a-8efc-b734-7079f76e020c"
+      stageUuid: "1e0c19ff-f5ee-8a6d-a192-b85eedf4086f"
     - stage: boundary
-      stageUuid: "43ef4b6c-b63c-8348-920d-dad86bfe7e0b"
+      stageUuid: "d2f0feaf-b907-8d76-90a2-dd9413f0b441"
     - stage: links
-      stageUuid: "3f1037f7-3f04-87a6-b695-e28f7302d1cb"
+      stageUuid: "41e05a78-3888-880e-828e-0f2f1d2780b5"
     - stage: horo
-      stageUuid: "102ca7f1-129f-8f11-a2ca-da5737b87edd"
+      stageUuid: "23685554-c978-8fc6-90dd-199947a3058f"
     - stage: seal
-      stageUuid: "d6b5f45e-886e-8e30-a4dc-e8c8b9500bd4"
+      stageUuid: "f9a3c066-35b4-8a19-9855-3962a23cb734"
     - stage: uuid
-      stageUuid: "c9051c23-b955-84f8-95e5-46a261c8b4d3"
+      stageUuid: "32a6dc9a-bcee-844e-a354-3f09891713f5"
 version: 2
 ---
 # buyer

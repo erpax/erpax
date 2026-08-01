@@ -1,103 +1,34 @@
 ---
 name: compass
 description: "Use when reasoning about how you navigate erpax — navigation is SELF-GENERATING (sidebar · prev/next · ancestors · siblings · children · related · search all computed from the parent+prev/next trinity + the fractal path + the body links, never hand-listed) and it points like an alethiometer: ask any question and it points to the answer-path. The golden compass — the path IS the answer; the needle settles on the lowest-entropy form."
-atomPath: vocabulary/compass
-coordinate: compass · 2/share · fa3df3eb
-contentUuid: "922fc0e5-beb9-5b9b-85c2-50165d9f4a28"
-diamondUuid: "ea0fb67e-9736-8d59-a9a3-48d00fdcb5b7"
-uuid: "fa3df3eb-7be4-8078-91eb-a55b9507df70"
+atomPath: "vocabulary/compass"
+coordinate: "vocabulary/compass · 2/share · ade4f460"
+contentUuid: "9011fb1d-48bd-5ead-9467-2f43ca5d931a"
+diamondUuid: "af918b67-9491-88d1-9e03-4dba93f4cb2c"
+uuid: "ade4f460-4a9d-86ac-8cc8-d055607dd085"
 horo: 2
-bonds:
-  in:
-    - akashic
-    - dimension
-    - duality
-    - generate
-    - holographic
-    - law
-    - matter
-    - merge
-    - science
-    - self
-    - sequence
-    - uuid
-    - zeropoint
-  out:
-    - akashic
-    - dimension
-    - duality
-    - generate
-    - holographic
-    - law
-    - matter
-    - merge
-    - science
-    - self
-    - sequence
-    - uuid
-    - zeropoint
 typography:
-  partition: compass
+  partition: vocabulary
   bondDegree: 40
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - dimension
-    - generate
-    - holographic
-    - law
-    - merge
-    - self
-    - sequence
-    - zeropoint
-  matrix:
-    - akashic
-    - dimension
-    - duality
-    - generate
-    - holographic
-    - law
-    - matter
-    - merge
-    - science
-    - self
-    - sequence
-    - uuid
-    - zeropoint
-  backlinks:
-    - akashic
-    - dimension
-    - duality
-    - generate
-    - holographic
-    - law
-    - matter
-    - merge
-    - science
-    - self
-    - sequence
-    - uuid
-    - zeropoint
 signatures:
-  computationUuid: "e86289b1-13aa-8ce7-ae67-a99f8d0b29fe"
+  computationUuid: "c14ef966-79ce-8388-bf60-77caa8a60d5c"
   stages:
     - stage: path
-      stageUuid: "b052c09c-ec1c-8f57-aec7-fea394e38460"
+      stageUuid: "0d947836-b2c5-84a1-8d0f-55d4b10c7462"
     - stage: trinity
-      stageUuid: "61172fed-dbee-8005-85eb-5d0dcf2f9e4d"
+      stageUuid: "2d352857-7481-8e82-964b-0c2d6aa5152c"
     - stage: boundary
-      stageUuid: "7f810c82-ba13-836b-b358-f009ddd8b04f"
+      stageUuid: "57f42bef-84fd-8bbe-83a4-2b4d8fe25c81"
     - stage: links
-      stageUuid: "aabd8fab-d5ca-8a81-95eb-731f27e5db61"
+      stageUuid: "dad76b54-0bf4-8a92-9ef7-8c789dd73687"
     - stage: horo
-      stageUuid: "a14b3cca-469f-8dbc-9c30-9e00eec40d9e"
+      stageUuid: "c4d4929b-7992-8594-9b61-c3c72b2c1c40"
     - stage: seal
-      stageUuid: "8ea7d475-b055-8f19-b0c0-a019af5bae78"
+      stageUuid: "be95c892-4b55-841b-828d-b5da5884387f"
     - stage: uuid
-      stageUuid: "8d07ada7-4560-827e-a0bb-45bd41d5c1a3"
+      stageUuid: "8b3b5ca9-8203-85e8-b62c-bd7a5c24acda"
 version: 2
 ---
 # compass — the self-generating navigation (ask, and it points to the answer)

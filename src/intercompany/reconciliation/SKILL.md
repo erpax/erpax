@@ -2,28 +2,14 @@
 name: reconciliation
 description: "Use when reconciling intercompany payable/receivable balances for multi-entity period close — the 'payable = receivable, net' invariant is the conservation algebra (netFlow = 0) at entity scale, proven at 0 and at scale, refutable on any break."
 atomPath: "intercompany/reconciliation"
-coordinate: "intercompany/reconciliation · 5/round · bb9bf12e"
-contentUuid: "4092f938-c004-5038-a4f3-d9c9809f98f2"
-diamondUuid: "8c5432e9-5845-800b-98ba-a896ec9c8552"
-uuid: "bb9bf12e-961b-80dc-8920-e436948b9081"
-horo: 5
-bonds:
-  in:
-    - balance
-    - currency
-    - law
-    - proof
-    - uuid
-  out:
-    - balance
-    - currency
-    - law
-    - proof
-    - uuid
+coordinate: "intercompany/reconciliation · 8/crest · 8b8e17b3"
+contentUuid: "6643ba6c-e4a2-516e-9f80-f2fa83aab05e"
+diamondUuid: "39426280-59cc-850b-bdc5-fd3789db2f94"
+uuid: "8b8e17b3-3420-8389-aa42-c3ebc006c290"
+horo: 8
 typography:
   partition: intercompany
-  bondDegree: 25
-  neighbors: []
+  bondDegree: 15
 standards:
   - "IAS-27:2023 (consolidated and separate financial statements)"
   - "IAS-28:2023 (associates and joint ventures)"
@@ -34,40 +20,23 @@ standards:
   - "SAF-T"
   - "SAF-T:3.0.2 (multi-entity audit trail)"
 bindings: []
-neighbors:
-  wikilink:
-    - conservation
-    - law
-    - rules
-  matrix:
-    - balance
-    - currency
-    - law
-    - proof
-    - uuid
-  backlinks:
-    - balance
-    - currency
-    - law
-    - proof
-    - uuid
 signatures:
-  computationUuid: "06d20c1b-f495-8a71-9409-8db0c082d145"
+  computationUuid: "5cd17bf6-f422-85a9-853e-482034062509"
   stages:
     - stage: path
       stageUuid: "38e4f755-dc98-803c-bbdc-816592099d35"
     - stage: trinity
       stageUuid: "e849e205-4e2e-8266-8e3c-1d5e71cd75cf"
     - stage: boundary
-      stageUuid: "f5bee406-a583-8cf0-b006-72a64ab2c0ac"
+      stageUuid: "afc39431-fb45-8d30-a28b-9cfa9ad8757f"
     - stage: links
       stageUuid: "afa9b908-a574-8b60-b4f6-31bc69e47e50"
     - stage: horo
-      stageUuid: "1b8d0ece-46d2-8463-8f4e-e0331046d96a"
+      stageUuid: "c4c7d42c-63b0-8d0a-aa89-3eea450ecf9b"
     - stage: seal
       stageUuid: "bbbb288a-7f35-8fce-8e39-8eb9f11a57d3"
     - stage: uuid
-      stageUuid: "a13355ce-f65a-8061-8213-325a5808f247"
+      stageUuid: "e14c96d0-5789-8c75-bccc-36e019fd49c0"
 version: 2
 ---
 # intercompany/reconciliation — payable = receivable, net: conservation at entity scale

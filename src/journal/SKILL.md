@@ -2,49 +2,21 @@
 name: journal
 description: Use when modelling one journal — the singular model of the journals collection (the plural store); the chronological book of original accounting entries.
 atomPath: journal
-coordinate: "journal · 7/descent · 634d427d"
-contentUuid: "56238397-081e-5a57-b41e-173e4d5344f0"
-diamondUuid: "7ae757c3-4760-8fa9-abf7-969e58d7a314"
-uuid: "634d427d-730a-8123-b722-28ce234742ff"
-horo: 7
-bonds:
-  in:
-    - accounting
-    - balance
-    - journals
-    - law
-  out:
-    - accounting
-    - balance
-    - journals
-    - law
+coordinate: "journal · 2/share · 6b5a0710"
+contentUuid: "26c2abd5-1c4e-582c-9cff-51870ad6866b"
+diamondUuid: "9857b525-67a6-8ef1-8feb-af324999b6a9"
+uuid: "6b5a0710-ade5-8ecc-9590-3c8b25e32633"
+horo: 2
 typography:
   partition: journal
   bondDegree: 0
-  neighbors: []
 standards:
   - "ECMA-262"
   - "IEEE-754"
   - "W3C-PROV-O"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - balance
-    - journals
-    - law
-  matrix:
-    - accounting
-    - balance
-    - journals
-    - law
-  backlinks:
-    - accounting
-    - balance
-    - journals
-    - law
 signatures:
-  computationUuid: "05aeb6c5-3189-8ffc-aa9e-dc9327706c26"
+  computationUuid: "0372133e-2271-8e82-a9f4-78becad15d25"
   stages:
     - stage: path
       stageUuid: "33c93eb0-813f-8b38-8044-062ba60ced27"
@@ -55,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "718412fa-d731-85a7-8937-3be1d6907430"
     - stage: horo
-      stageUuid: "f9955910-3b94-890f-9d3e-397ed451bf3c"
+      stageUuid: "ba3588a0-a5bb-89b4-b970-aa5fb2ae46c7"
     - stage: seal
       stageUuid: "de9730a1-caaf-8904-8824-67d84a88a973"
     - stage: uuid
-      stageUuid: "37113431-515e-8a57-9a34-5d5a54736232"
+      stageUuid: "c6c3c0aa-27c4-8599-bf55-6308f9854fe0"
 version: 2
 ---
 # journal — the model of one [[journals]] row

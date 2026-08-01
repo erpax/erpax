@@ -2,62 +2,19 @@
 name: visual
 description: "Use when reasoning about visual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: visual
-coordinate: visual · 2/share · 8d89ae07
-contentUuid: "0ba34d10-8778-5f5d-a206-d12b272dc5ef"
-diamondUuid: "ef425fb0-77ec-895e-90aa-6937e730d5e7"
-uuid: "8d89ae07-2c89-8b8e-a216-ab99b7a68ad7"
-horo: 2
-bonds:
-  in:
-    - arts
-    - artwork
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
-  out:
-    - arts
-    - artwork
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
+coordinate: "visual · 1/base · 63360cac"
+contentUuid: "59a2c89f-b08e-5be4-b70e-66fff0b335f5"
+diamondUuid: "a200403a-150d-8c7a-8b3c-6048a10dce6a"
+uuid: "63360cac-26ec-8af5-9b99-a67bc5ba1323"
+horo: 1
 typography:
   partition: visual
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - arts
-    - artwork
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
-  matrix:
-    - arts
-    - artwork
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
-  backlinks:
-    - arts
-    - artwork
-    - collapse
-    - event
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "7d14517c-bf8a-8a34-8c2c-098b9cc2b852"
+  computationUuid: "0850ecbe-d83c-8256-a3d7-bdc67d8417c2"
   stages:
     - stage: path
       stageUuid: "628096d0-0c95-897f-b0f2-d39c57100584"
@@ -68,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2dce5f32-4c4d-8baf-a167-12d9f1e787e4"
     - stage: horo
-      stageUuid: "224c09ef-105a-843e-a407-1ce1dca2d611"
+      stageUuid: "1d65df99-6ae7-8675-a9d9-016dafb15d83"
     - stage: seal
-      stageUuid: "5310fd6e-5ed8-8733-b2fd-a3abeb60f604"
+      stageUuid: "28a20ba7-2824-8e85-b78e-02e5ba1c1931"
     - stage: uuid
-      stageUuid: "e9709601-d8e0-831e-a604-defee7e4f5b5"
+      stageUuid: "7f01601c-2ff1-847c-ad49-45ac362bc82c"
 version: 2
 ---
 # visual

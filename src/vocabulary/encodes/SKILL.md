@@ -1,88 +1,35 @@
 ---
 name: encodes
 description: "Use when reasoning about encodes as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/encodes
-coordinate: encodes · 5/round · c98449de
-contentUuid: "a54a2bf1-db22-568d-bb55-068c05704e78"
-diamondUuid: "c0da3bf3-e0f8-8989-a4c0-66c2b8e581a9"
-uuid: "c98449de-635e-846a-92ba-95fb9b7da141"
-horo: 5
-bonds:
-  in:
-    - bio
-    - chem
-    - collapse
-    - creative
-    - entity
-    - law
-    - merge
-    - sti
-    - work
-  out:
-    - bio
-    - chem
-    - collapse
-    - creative
-    - entity
-    - law
-    - merge
-    - sti
-    - work
+atomPath: "vocabulary/encodes"
+coordinate: "vocabulary/encodes · 4/weave · cdbf7c47"
+contentUuid: "91836421-da28-5e04-8148-7019f41a8921"
+diamondUuid: "9b5c828b-f391-8301-ae70-60abbb0c6788"
+uuid: "cdbf7c47-6e82-842d-9387-4e7055b68e15"
+horo: 4
 typography:
-  partition: encodes
+  partition: vocabulary
   bondDegree: 32
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - bio
-    - chem
-    - collapse
-    - creative
-    - entity
-    - law
-    - merge
-    - sti
-    - work
-  matrix:
-    - bio
-    - chem
-    - collapse
-    - creative
-    - entity
-    - law
-    - merge
-    - sti
-    - work
-  backlinks:
-    - bio
-    - chem
-    - collapse
-    - creative
-    - entity
-    - law
-    - merge
-    - sti
-    - work
 signatures:
-  computationUuid: "4365f954-f7bb-8b11-b335-ef6399448bb8"
+  computationUuid: "ba20e7b1-3900-85e2-9f9a-d8b96d441f20"
   stages:
     - stage: path
-      stageUuid: "61226f61-420f-8070-ae3c-ca05c6129e26"
+      stageUuid: "3525717a-21fb-889a-8de2-64bac16466a6"
     - stage: trinity
-      stageUuid: "87c999fa-67c5-868d-986d-e27b33fdefe5"
+      stageUuid: "0b088911-429b-8ec8-91c0-0e47d735f1a1"
     - stage: boundary
-      stageUuid: "cb50b7b6-0115-8425-9faa-dd5468f219c7"
+      stageUuid: "c8615509-5274-865f-8bf5-4d248b685b9f"
     - stage: links
-      stageUuid: "67c51b13-7321-8e3b-8efb-3b6a95a9b2ff"
+      stageUuid: "fe9c5882-abb6-88c2-8770-3ac68a3c21c4"
     - stage: horo
-      stageUuid: "4e7cd842-9f9f-8e55-ad6f-a6debf7992ba"
+      stageUuid: "64d30f72-f833-8e81-acb5-129a6380584f"
     - stage: seal
-      stageUuid: "cfb8b483-e5b9-85ba-88db-0e2c78c0e150"
+      stageUuid: "8a105638-712a-8cb4-ab04-144a7cd75bc7"
     - stage: uuid
-      stageUuid: "b8cb53fd-8a9b-81b1-8b78-cab821036ffb"
+      stageUuid: "e7f820d4-874c-818e-b186-b04fb53eab4a"
 version: 2
 ---
 # encodes

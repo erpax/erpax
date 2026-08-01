@@ -1,98 +1,35 @@
 ---
 name: minimum
 description: "Use when reasoning about minimum as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/minimum
-coordinate: minimum · 1/base · 202c692b
-contentUuid: "3e2a0389-8956-5b40-8d24-ab8680cc809a"
-diamondUuid: "ba5b1b3b-08d5-83d0-b85f-eb2be61da9af"
-uuid: "202c692b-e0b6-833f-a3ba-310250b79ac3"
-horo: 1
-bonds:
-  in:
-    - account
-    - amount
-    - collapse
-    - due
-    - inflow
-    - law
-    - merge
-    - monthly
-    - payment
-    - repayment
-    - sti
-  out:
-    - account
-    - amount
-    - collapse
-    - due
-    - inflow
-    - law
-    - merge
-    - monthly
-    - payment
-    - repayment
-    - sti
+atomPath: "vocabulary/minimum"
+coordinate: "vocabulary/minimum · 5/round · 59f9879f"
+contentUuid: "6eb38b7b-11ad-582c-9349-22e34cc5116c"
+diamondUuid: "e7c16ae9-63d1-86c3-b36a-2a022fe950a1"
+uuid: "59f9879f-88ea-8f1f-8d57-dfff80f7c3c1"
+horo: 5
 typography:
-  partition: minimum
+  partition: vocabulary
   bondDegree: 37
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - account
-    - amount
-    - collapse
-    - due
-    - inflow
-    - law
-    - merge
-    - monthly
-    - payment
-    - repayment
-    - sti
-  matrix:
-    - account
-    - amount
-    - collapse
-    - due
-    - inflow
-    - law
-    - merge
-    - monthly
-    - payment
-    - repayment
-    - sti
-  backlinks:
-    - account
-    - amount
-    - collapse
-    - due
-    - inflow
-    - law
-    - merge
-    - monthly
-    - payment
-    - repayment
-    - sti
 signatures:
-  computationUuid: "e70ef5be-c1e8-8ead-b096-53af42e66d32"
+  computationUuid: "3d6c5fe1-343e-8c4e-b08a-30b4ece591ad"
   stages:
     - stage: path
-      stageUuid: "f005264c-04bd-82f3-a2f8-1a89ddd28f6f"
+      stageUuid: "983550a0-2e46-829d-825e-bdbc3d166dc8"
     - stage: trinity
-      stageUuid: "d82c8f8a-da95-874a-848e-fa7b5ae62713"
+      stageUuid: "5aea8039-53a6-8492-9231-84c5f73eeb57"
     - stage: boundary
-      stageUuid: "80802dc2-97a6-86a1-9f3e-d6d94e7d7e85"
+      stageUuid: "8a66743c-ede4-89eb-8525-2785b9aabe7c"
     - stage: links
-      stageUuid: "c83059a0-cbf8-87b1-9542-dabdea58ca5e"
+      stageUuid: "065cefac-be7f-8981-af2e-74500dbebfd3"
     - stage: horo
-      stageUuid: "16f38d4b-5633-84c9-9f11-4f9389949f0a"
+      stageUuid: "7c9457f3-36d8-84cd-91c0-e5fc055ea8cc"
     - stage: seal
-      stageUuid: "3958865c-d7e2-8b01-a138-d5c65edcffd8"
+      stageUuid: "067fcc9e-6541-8f7f-b0b5-67b8233c1aa7"
     - stage: uuid
-      stageUuid: "47c4a38d-ab8a-8612-8dbe-80ad2e64f04f"
+      stageUuid: "09bf472e-06f4-84ff-a0d2-00188eab2cce"
 version: 2
 ---
 # minimum

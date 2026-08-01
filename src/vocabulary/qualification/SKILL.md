@@ -1,57 +1,34 @@
 ---
 name: qualification
 description: Use when modelling one qualification — the singular model of the qualifications collection (the plural store); a credential establishing fitness for a role.
-atomPath: vocabulary/qualification
-coordinate: qualification · 8/crest · 79750dbe
-contentUuid: "c40c3252-0da7-5312-a240-375efd85d849"
-diamondUuid: "472e8db2-486e-80fa-a43a-8e0a42f5dd54"
-uuid: "79750dbe-d432-8218-9dd2-b3e27b4d0af6"
+atomPath: "vocabulary/qualification"
+coordinate: "vocabulary/qualification · 8/crest · d71f0c44"
+contentUuid: "5d561bfb-b730-54e2-9768-044d8371518c"
+diamondUuid: "33f7db0c-8770-85f4-a423-d72bb8487a26"
+uuid: "d71f0c44-0722-88b6-b82d-a11880a6bd23"
 horo: 8
-bonds:
-  in:
-    - balance
-    - competency
-    - qualifications
-  out:
-    - balance
-    - competency
-    - qualifications
 typography:
-  partition: qualification
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - competency
-    - qualifications
-  matrix:
-    - balance
-    - competency
-    - qualifications
-  backlinks:
-    - balance
-    - competency
-    - qualifications
 signatures:
-  computationUuid: "4719d1a7-1643-8b7f-9ed4-e739a0bed786"
+  computationUuid: "8acffb15-1c8e-8d7b-8285-2afa6367fbd3"
   stages:
     - stage: path
-      stageUuid: "1a37cf1c-a89f-8991-8ec3-b0921d713c91"
+      stageUuid: "afd4b8be-342e-84e1-b640-e603e5b1fef3"
     - stage: trinity
-      stageUuid: "f2b5adcd-296e-8c66-984b-46b6d419ca3c"
+      stageUuid: "6f0a0ef1-1065-8b87-91c2-3fb83e6b874c"
     - stage: boundary
-      stageUuid: "2fa603a1-bf32-819d-90e5-44c78466b9e8"
+      stageUuid: "46be65fb-15d4-85da-b707-c517b8b42baa"
     - stage: links
-      stageUuid: "e9cc2eab-69f2-8e20-aae1-f3d8c0ce5ec2"
+      stageUuid: "31d0ea71-1012-836b-a53e-088033066299"
     - stage: horo
-      stageUuid: "bbaaca88-b608-8037-b635-f30948f6fa7b"
+      stageUuid: "ec685570-d5da-8a2c-a2a4-f91df8101601"
     - stage: seal
-      stageUuid: "2bcf2603-a88b-86d6-af2a-2d02a5f6d606"
+      stageUuid: "efa1908e-1e24-8bc5-97ea-7a10a2b244f5"
     - stage: uuid
-      stageUuid: "84ee3ec1-0753-87f5-a558-39b6f83211a4"
+      stageUuid: "f29578ab-b897-8d48-9b65-7409610c17b6"
 version: 2
 ---
 # qualification — the model of one [[qualifications]] row

@@ -1,53 +1,35 @@
 ---
 name: drawing
 description: "Use when reasoning about drawing — A picture or diagram made with a pencil, pen, or crayon rather than paint."
-atomPath: vocabulary/drawing
-coordinate: drawing · 2/share · f914c36c
-contentUuid: "c4e6a705-6ed6-575f-8676-3f1f5c7a98b5"
-diamondUuid: "f7f37852-0ce3-8be4-a906-9f681924fc53"
-uuid: "f914c36c-140d-8dcf-a0b4-0330da02e0eb"
+atomPath: "vocabulary/drawing"
+coordinate: "vocabulary/drawing · 2/share · 42fc10f4"
+contentUuid: "12777771-de60-5021-861f-bf0fe7b2bbf8"
+diamondUuid: "e29ee889-123d-847a-a76c-d265fb71ab63"
+uuid: "42fc10f4-f44d-823c-bb2d-bd0d0f095e6a"
 horo: 2
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
 typography:
-  partition: drawing
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "f6c9c70d-b25f-8dec-861e-a56d31d85e3c"
+  computationUuid: "19098769-2e78-8367-a951-621eafd9635d"
   stages:
     - stage: path
-      stageUuid: "79761a3a-cd4b-858b-ba82-18afc4f2a986"
+      stageUuid: "99c7fa9a-a61f-8764-9f7b-2f6b97bef603"
     - stage: trinity
-      stageUuid: "c7b712be-6e3e-8fc7-9249-fb1b3f0adb06"
+      stageUuid: "69a76217-87b2-8776-a7b5-43a13510cba9"
     - stage: boundary
-      stageUuid: "45de5f50-efaf-84f3-8f66-5cc323231bf6"
+      stageUuid: "e773ce95-6a3a-8f7f-ba48-4579ca480630"
     - stage: links
-      stageUuid: "e73b882c-9787-8877-b01d-ed3ce6443083"
+      stageUuid: "dfbbd170-749a-8383-a14e-76f4222f186a"
     - stage: horo
-      stageUuid: "77e3dcec-490c-844b-a664-9a97c844f850"
+      stageUuid: "110cd61e-b8cd-8bc9-bae2-9cfe02be7a9a"
     - stage: seal
-      stageUuid: "b6b20236-ebfc-8cce-8960-2ca50447457e"
+      stageUuid: "c598773e-d836-8c89-bfbe-2a3e4a85a194"
     - stage: uuid
-      stageUuid: "ba3d968f-82b1-89fb-bc99-7c40d2bdf1b1"
+      stageUuid: "876f0162-3233-8f17-95ba-950ba70eec90"
 version: 2
 ---
 # drawing

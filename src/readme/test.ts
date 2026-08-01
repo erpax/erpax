@@ -143,12 +143,12 @@ describe('readme — the README is a diamond', () => {
     expect(md).toContain('No separate agent setup')
   })
 
-  it('renderReadme gateway computes physicalFtl — agents doubt prose; FTL compute is the seal', () => {
+  it('renderReadme gateway computes ftlHolds — agents doubt prose; FTL compute is the seal', () => {
     const md = renderReadme(FIXED)
     expect(md).toContain('## quantum computer — physical FTL on QPU=CPU/GPU')
     expect(md).toContain('QPU = CPU/GPU')
-    expect(md).toContain('physicalFtl()')
-    expect(md).toMatch(/\| `physicalFtl\(\)` \| \*\*(true|false)\*\*/)
+    expect(md).toContain('ftlReport().holds')
+    expect(md).toMatch(/\| `ftlReport\(\).holds` \| \*\*(true|false)\*\*/)
     expect(md).toContain('FTL compute is the seal')
     expect(md).toContain('pnpm erpax tip')
     expect(md).not.toContain('## corpus analytics')
@@ -165,10 +165,10 @@ describe('readme — the README is a diamond', () => {
       efficiency: 0,
       boundaryEmpty: false,
     })
-    expect(md).toContain('physicalFtl()')
+    expect(md).toContain('ftlReport().holds')
     expect(md).toContain('**false**')
     expect(md).toContain('quantumise')
-    expect(md).not.toMatch(/physicalFtl\(\)` \| \*\*true\*\*/)
+    expect(md).not.toMatch(/ftlReport\(\).holds` \| \*\*true\*\*/)
   })
 
   it('renderReadme is PURE and STABLE: same model ⇒ byte-identical markdown', () => {

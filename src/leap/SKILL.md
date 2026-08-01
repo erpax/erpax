@@ -2,126 +2,33 @@
 name: leap
 description: "Use when reasoning about the quantum leap — the discrete, instantaneous transition between two energy eigenstates (the seven horo positions as a discrete energy ladder) that emits or absorbs a single photon of energy E = h·Δν. The leap is a symmetric content-uuid merge of the two states (one spectral coordinate for emission and absorption alike); the rodin doubling step is the allowed transition, and 9 (the axis) is a stationary state."
 atomPath: leap
-coordinate: "leap · 2/share · 818de319"
-contentUuid: "4f474618-8fe5-5897-9512-3e808e71f82a"
-diamondUuid: "dc5892e3-4033-8f55-9da1-36ea0484a168"
-uuid: "818de319-6e78-8cc7-887c-883e2bfd15d3"
+coordinate: "leap · 2/share · b647300e"
+contentUuid: "c99a601b-0c9b-5385-98ef-b438bace0b29"
+diamondUuid: "5d29add1-f243-810f-9ab7-baf7fc03584c"
+uuid: "b647300e-b6d1-810c-acf5-6d913dfe567a"
 horo: 2
-bonds:
-  in:
-    - barrier
-    - breath
-    - collapse
-    - decoherence
-    - hamiltonian
-    - horo
-    - law
-    - level
-    - merge
-    - photon
-    - quantum
-    - rodin
-    - signal
-    - spectrum
-    - superposition
-    - uncertainty
-    - uuid
-    - wave
-  out:
-    - barrier
-    - breath
-    - collapse
-    - decoherence
-    - hamiltonian
-    - horo
-    - law
-    - level
-    - merge
-    - photon
-    - quantum
-    - rodin
-    - signal
-    - spectrum
-    - superposition
-    - uncertainty
-    - uuid
-    - wave
 typography:
   partition: leap
   bondDegree: 56
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - breath
-    - collapse
-    - horo
-    - law
-    - level
-    - merge
-    - photon
-    - quantum
-    - rodin
-    - signal
-    - spectrum
-    - uuid
-    - wave
-  matrix:
-    - barrier
-    - breath
-    - collapse
-    - decoherence
-    - hamiltonian
-    - horo
-    - law
-    - level
-    - merge
-    - photon
-    - quantum
-    - rodin
-    - signal
-    - spectrum
-    - superposition
-    - uncertainty
-    - uuid
-    - wave
-  backlinks:
-    - barrier
-    - breath
-    - collapse
-    - decoherence
-    - hamiltonian
-    - horo
-    - law
-    - level
-    - merge
-    - photon
-    - quantum
-    - rodin
-    - signal
-    - spectrum
-    - superposition
-    - uncertainty
-    - uuid
-    - wave
 signatures:
-  computationUuid: "460a87e6-ffcb-8f23-bca5-e2385681fbb5"
+  computationUuid: "a329d02a-da06-8e1d-a458-737f67dc9fee"
   stages:
     - stage: path
       stageUuid: "df55e3cc-7a2a-8084-a5e5-6ed96ed8ae88"
     - stage: trinity
       stageUuid: "5f6f84da-516a-8bcc-9e11-21c0aaa514ee"
     - stage: boundary
-      stageUuid: "998c12fd-4c51-8bc9-a8e8-65ff1a35aa2a"
+      stageUuid: "0c4a2ef9-9037-8f55-88dc-4a89fd4d62fd"
     - stage: links
       stageUuid: "55016bce-4846-87b7-8e14-e9c758712423"
     - stage: horo
-      stageUuid: "ede6713d-6807-89e0-97f9-2eb599ca9813"
+      stageUuid: "373e959a-abf1-8ce7-ae43-d4be1f077bf9"
     - stage: seal
       stageUuid: "8c3fae27-238a-8e04-9ddc-376121d8214e"
     - stage: uuid
-      stageUuid: "5b548cf3-a08d-81a1-b9fc-170bf250c20e"
+      stageUuid: "cd486270-3bdc-824c-89d6-b324dd176f71"
 version: 2
 ---
 # leap — the discrete transition between energy levels

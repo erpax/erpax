@@ -1,73 +1,20 @@
 ---
 name: graph
 description: "Use when reading a graph as entanglement — an edge is an entangled pair, entanglement is symmetric, so a coherent corpus reciprocates every edge; entangled is the connected component."
-atomPath: quantum/graph
-coordinate: quantum/graph · 1/base · f0fc2466
-contentUuid: "c4ef8811-b694-59cf-b814-f87507bc9e08"
-diamondUuid: "b778bd57-8ddc-8bf8-9cc1-b5a72cfc08cf"
-uuid: "f0fc2466-c15a-838d-a0d8-8e28bc8cb582"
-horo: 1
-bonds:
-  in:
-    - atom
-    - entanglement
-    - graph
-    - law
-    - link
-    - links
-    - matrix
-    - merge
-    - node
-    - quantum
-  out:
-    - atom
-    - entanglement
-    - graph
-    - law
-    - link
-    - links
-    - matrix
-    - merge
-    - node
-    - quantum
+atomPath: "quantum/graph"
+coordinate: "quantum/graph · 8/crest · 4a43f8a3"
+contentUuid: "5cc95f7f-bbe5-581b-8100-521bd32e347a"
+diamondUuid: "d65a3d91-2b99-8abd-b093-834e31643c27"
+uuid: "4a43f8a3-bcb6-87ab-9791-c0fd6ec109d4"
+horo: 8
 typography:
   partition: quantum
-  bondDegree: 35
-  neighbors: []
+  bondDegree: 36
 standards:
   - "symmetric (reciprocal) entanglement — directed-link entropy → 0"
 bindings: []
-neighbors:
-  wikilink:
-    - entanglement
-    - graph
-    - law
-    - merge
-    - quantum
-  matrix:
-    - atom
-    - entanglement
-    - graph
-    - law
-    - link
-    - links
-    - matrix
-    - merge
-    - node
-    - quantum
-  backlinks:
-    - atom
-    - entanglement
-    - graph
-    - law
-    - link
-    - links
-    - matrix
-    - merge
-    - node
-    - quantum
 signatures:
-  computationUuid: "d4395134-5d23-8981-9424-66ca0b6cde2f"
+  computationUuid: "545b0853-c4bd-86f4-9bc2-25453ba53518"
   stages:
     - stage: path
       stageUuid: "0512b6c1-b02f-8872-b8b1-a82178658a4d"
@@ -76,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "882a2712-747d-8c87-b96f-24b8831dbfd4"
     - stage: links
-      stageUuid: "6b8524db-4eed-8e5a-97e7-276da15b5a02"
+      stageUuid: "c029c8b7-d4e2-87d1-8cbc-f1c0afcf7508"
     - stage: horo
-      stageUuid: "7e46b511-859f-8117-8709-e1c115902615"
+      stageUuid: "f569db9d-5b76-8144-b5fa-91112083452c"
     - stage: seal
       stageUuid: "7079e992-19eb-80c7-9f80-82d1867b2f24"
     - stage: uuid
-      stageUuid: "0783005c-7902-8d32-98cf-2bcd220a2c62"
+      stageUuid: "53a97de0-57e8-8b2d-b03e-fe271d34a8ff"
 quantum:
   superposition:
     - atom
@@ -106,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "d4395134-5d23-8981-9424-66ca0b6cde2f"
-    contentUuid: "c4ef8811-b694-59cf-b814-f87507bc9e08"
+    computationUuid: "545b0853-c4bd-86f4-9bc2-25453ba53518"
+    contentUuid: "5cc95f7f-bbe5-581b-8100-521bd32e347a"
 version: 2
 ---
 # quantum/graph — the graph as entanglement
@@ -120,4 +67,4 @@ Matter-twin: `src/quantum/graph/index.ts` (`isReciprocal` · `reciprocate` · `e
 
 @standard symmetric (reciprocal) entanglement — directed-link entropy → 0
 
-<sub>content-uuid `c4ef8811-b694-59cf-b814-f87507bc9e08` · account `quantum/graph` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `5cc95f7f-bbe5-581b-8100-521bd32e347a` · account `quantum/graph` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

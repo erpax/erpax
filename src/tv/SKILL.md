@@ -2,72 +2,19 @@
 name: tv
 description: "Use when reasoning about tv as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: tv
-coordinate: tv · 4/weave · 983aada7
-contentUuid: "2b13fb94-becc-5a60-8694-03a3c63ac721"
-diamondUuid: "1cddcd5e-f345-8b27-8bb3-88794974cfc5"
-uuid: "983aada7-893c-87d2-8984-865222191096"
+coordinate: "tv · 4/weave · 620b9850"
+contentUuid: "cebe90f6-615c-5ad9-89ad-739bcfef9647"
+diamondUuid: "7c1c395e-8249-8123-a593-eaadc88b0c45"
+uuid: "620b9850-3a28-84ba-b972-fc80fd4d845a"
 horo: 4
-bonds:
-  in:
-    - clip
-    - collapse
-    - episode
-    - law
-    - merge
-    - part
-    - season
-    - series
-    - sti
-  out:
-    - clip
-    - collapse
-    - episode
-    - law
-    - merge
-    - part
-    - season
-    - series
-    - sti
 typography:
   partition: tv
   bondDegree: 30
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - clip
-    - collapse
-    - episode
-    - law
-    - merge
-    - part
-    - season
-    - series
-    - sti
-  matrix:
-    - clip
-    - collapse
-    - episode
-    - law
-    - merge
-    - part
-    - season
-    - series
-    - sti
-  backlinks:
-    - clip
-    - collapse
-    - episode
-    - law
-    - merge
-    - part
-    - season
-    - series
-    - sti
 signatures:
-  computationUuid: "9893175b-e28d-8185-a98c-1dac8a94d7b5"
+  computationUuid: "2d2fcb7f-054c-8bce-b5db-c0f625f110cc"
   stages:
     - stage: path
       stageUuid: "10c765a6-eee4-8035-a821-49e13cc4422a"
@@ -78,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8fd78947-94fa-8175-aa9f-a8218d7ffb7f"
     - stage: horo
-      stageUuid: "377d70e3-f0ae-8eda-a3d3-39058329e557"
+      stageUuid: "542b3385-5456-837b-89d2-6df0b2b94f87"
     - stage: seal
-      stageUuid: "5c8c95f0-d684-8dd4-9d45-3df95b881ae5"
+      stageUuid: "a6cee6a9-1ab8-84ec-b660-c83765099922"
     - stage: uuid
-      stageUuid: "b5140728-0c9d-83bb-a365-33674079d44b"
+      stageUuid: "73de9b3f-5b2f-8c2a-85e1-36c010b42bc0"
 version: 2
 ---
 # tv

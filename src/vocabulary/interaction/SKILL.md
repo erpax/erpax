@@ -1,109 +1,35 @@
 ---
 name: interaction
 description: "Use when reasoning about interaction as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/interaction
-coordinate: interaction · 8/crest · 3de48433
-contentUuid: "32d3b7cd-1044-5ee3-b4b1-a743c813a897"
-diamondUuid: "a55af18d-d667-801d-a60d-25abf97247c8"
-uuid: "3de48433-3d0d-8fb1-b4a0-dad2c86860b7"
-horo: 8
-bonds:
-  in:
-    - agent
-    - bio
-    - chem
-    - collapse
-    - count
-    - counter
-    - law
-    - merge
-    - service
-    - statistic
-    - sti
-    - type
-    - user
-  out:
-    - agent
-    - bio
-    - chem
-    - collapse
-    - count
-    - counter
-    - law
-    - merge
-    - service
-    - statistic
-    - sti
-    - type
-    - user
+atomPath: "vocabulary/interaction"
+coordinate: "vocabulary/interaction · 4/weave · 9bd84312"
+contentUuid: "46c62990-95d1-5777-83e5-22cd45cb0f5d"
+diamondUuid: "1755ab49-8b0b-8db7-a474-4a686838beec"
+uuid: "9bd84312-39b3-8cfb-8ed1-006a33340033"
+horo: 4
 typography:
-  partition: interaction
+  partition: vocabulary
   bondDegree: 47
-  neighbors:
-    - agent
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - agent
-    - bio
-    - chem
-    - collapse
-    - count
-    - counter
-    - law
-    - merge
-    - service
-    - statistic
-    - sti
-    - type
-    - user
-  matrix:
-    - agent
-    - bio
-    - chem
-    - collapse
-    - count
-    - counter
-    - law
-    - merge
-    - service
-    - statistic
-    - sti
-    - type
-    - user
-  backlinks:
-    - agent
-    - bio
-    - chem
-    - collapse
-    - count
-    - counter
-    - law
-    - merge
-    - service
-    - statistic
-    - sti
-    - type
-    - user
 signatures:
-  computationUuid: "e1cdf693-29d4-8b9f-8931-4b990437d521"
+  computationUuid: "94f7099c-09f2-850a-842a-8874fd40d254"
   stages:
     - stage: path
-      stageUuid: "2b63e30b-2794-8d2c-ad4f-78da86136fbb"
+      stageUuid: "3c17167b-e37a-8f92-9eeb-14932249c878"
     - stage: trinity
-      stageUuid: "edebc812-082b-81d4-a753-d94d4ef91bd5"
+      stageUuid: "ea0dbbf4-d479-88ff-ae9f-e1843470decb"
     - stage: boundary
-      stageUuid: "1092a60f-bb2f-8a6a-8d67-4378f95cd52d"
+      stageUuid: "3421aa44-a451-8d87-9a9c-ab43df8c1418"
     - stage: links
-      stageUuid: "f6931f5a-83a8-8a51-96bd-f88011b5bc69"
+      stageUuid: "23b994eb-4f37-8688-8200-bea0b3fb29d2"
     - stage: horo
-      stageUuid: "b07b85c0-e562-82bf-8009-526459a60bfc"
+      stageUuid: "13fdf63b-661a-8d86-b32e-240f01bad5cd"
     - stage: seal
-      stageUuid: "d2c26d6e-091d-8c2f-b49c-50d120153999"
+      stageUuid: "a257db49-896d-8b8b-b8c9-653a2c418273"
     - stage: uuid
-      stageUuid: "d3e90380-97e2-89d1-a2a9-1936ffba1714"
+      stageUuid: "238e2aad-c8ab-8123-9ee6-1480e9b2647c"
 version: 2
 ---
 # interaction

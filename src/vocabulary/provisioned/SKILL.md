@@ -1,63 +1,35 @@
 ---
 name: provisioned
 description: "Use when reasoning about provisioned as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/provisioned
-coordinate: provisioned · 4/weave · 2757cfe2
-contentUuid: "0e2c8740-d045-5b1a-8ac9-daeffa3dc471"
-diamondUuid: "f117d4f2-e30c-8220-a08a-bcc397d336ba"
-uuid: "2757cfe2-b460-8489-95c6-612eb937395b"
+atomPath: "vocabulary/provisioned"
+coordinate: "vocabulary/provisioned · 4/weave · acb08cfe"
+contentUuid: "b204eeb9-487d-5053-bfa5-b3dc795620b5"
+diamondUuid: "b226625b-65cd-8243-bd35-f9c1aafd98fc"
+uuid: "acb08cfe-51ee-869d-8f06-b96eb0e2a4f4"
 horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: provisioned
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "b7421e24-4b2d-8467-9a7c-edd6295c396e"
+  computationUuid: "48695085-df1e-8fde-a193-223dbf962542"
   stages:
     - stage: path
-      stageUuid: "31473ba7-906b-8f99-9656-2372aadfde54"
+      stageUuid: "d7f6587a-a405-8081-8c2c-5b446b3e1f02"
     - stage: trinity
-      stageUuid: "f6adebe7-f6e4-8cad-8a68-1249b65a097b"
+      stageUuid: "0cab7add-4d38-81da-8241-79793e373790"
     - stage: boundary
-      stageUuid: "603cb2d5-409a-8941-8b70-8e09dc27f423"
+      stageUuid: "f9f9d5f9-5e45-8440-83c3-3f73c8c57da0"
     - stage: links
-      stageUuid: "998a4048-3403-8026-a804-857c6e46d967"
+      stageUuid: "2d291392-380b-8fa6-8088-6ca3c0512854"
     - stage: horo
-      stageUuid: "f1aa4abd-6764-8e3b-b529-fb8d9a821616"
+      stageUuid: "ac4c55b1-8e54-8f1a-849b-737128d0c1b2"
     - stage: seal
-      stageUuid: "0378d6ee-5838-8547-9158-e984926627f6"
+      stageUuid: "f8a1e322-df39-89dd-9a67-284e47a7c969"
     - stage: uuid
-      stageUuid: "28a1be62-5646-8f1a-89f6-eeaadb80a0ef"
+      stageUuid: "9dfd4625-666a-8c8b-ac4b-6d0fea5828f2"
 version: 2
 ---
 # provisioned

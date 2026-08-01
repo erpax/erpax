@@ -2,76 +2,19 @@
 name: run
 description: "Use when modeling one execution of a batch process — a payment run, payroll run, or scheduled job run — the singular of the runs collection; one bounded pass that gathers a set, authorises it, executes, and reconciles on a lifecycle."
 atomPath: run
-coordinate: run · 7/descent · 7fd24f31
-contentUuid: "b8d40f69-aab4-5b88-8758-ece1aea8eff5"
-diamondUuid: "8a205e81-3c62-8d40-b59c-285f08df0145"
-uuid: "7fd24f31-9d73-85ce-80bd-a135c9c4f70f"
+coordinate: "run · 7/descent · 5350035b"
+contentUuid: "3cca4ca3-ac68-5d9f-b9a8-c64eed58dfb6"
+diamondUuid: "c985b616-9f47-8d18-8bbd-3d7c2c6c93ba"
+uuid: "5350035b-024b-8661-9a83-43704bbddd26"
 horo: 7
-bonds:
-  in:
-    - balance
-    - batch
-    - dev
-    - entry
-    - horo
-    - jobs
-    - law
-    - payment
-    - schedule
-    - society
-  out:
-    - balance
-    - batch
-    - dev
-    - entry
-    - horo
-    - jobs
-    - law
-    - payment
-    - schedule
-    - society
 typography:
   partition: run
-  bondDegree: 30
-  neighbors: []
-standards: []
+  bondDegree: 42
+standards:
+  - "ISO-20022`"
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - batch
-    - dev
-    - entry
-    - horo
-    - jobs
-    - law
-    - payment
-    - schedule
-    - society
-  matrix:
-    - balance
-    - batch
-    - dev
-    - entry
-    - horo
-    - jobs
-    - law
-    - payment
-    - schedule
-    - society
-  backlinks:
-    - balance
-    - batch
-    - dev
-    - entry
-    - horo
-    - jobs
-    - law
-    - payment
-    - schedule
-    - society
 signatures:
-  computationUuid: "7e817a1c-f934-8edd-9a68-cdd12e6ef44a"
+  computationUuid: "f3cc6109-3804-8b9b-9b03-ea58f1611209"
   stages:
     - stage: path
       stageUuid: "8e364e5e-81f5-8938-96d6-4f9e482cd0bd"
@@ -82,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a737cef1-4dc8-8163-a11f-afed648a0881"
     - stage: horo
-      stageUuid: "6d0e947b-12e7-8d4a-bef1-3e90beb9a61f"
+      stageUuid: "3b6190f4-5f62-8309-9ddb-40b011f25724"
     - stage: seal
-      stageUuid: "815b2716-b399-8dbb-afc5-d20649749ce4"
+      stageUuid: "9935d688-d989-80db-83ca-4db6555c1032"
     - stage: uuid
-      stageUuid: "2b2019e6-dc09-88bf-875a-ad4d2bd92429"
+      stageUuid: "b187c6ff-e867-83e7-8885-6d55c0611afc"
 version: 2
 ---
 # run

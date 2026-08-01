@@ -14,6 +14,7 @@
  */
 import { coverageCostLog2 } from '@/cost'
 import { conventionChecks } from '@/convention'
+import { coverage as groundedCoverage } from '@/grounded'
 
 /** A convention check — its law and the coverage (fraction clean) computed over the real tree. */
 export interface Check {
@@ -29,8 +30,16 @@ export function collide(checks: readonly Check[]): { coverage: number; violation
   return { coverage, violations, tamperCost: coverageCostLog2(coverage, checks.length) }
 }
 
-/** The corpus's live convention checks — every convention atom's coverage (DRY: composed from @/convention). */
-export const corpusChecks = (): Check[] => conventionChecks()
+/**
+ * The corpus's live convention checks — every convention atom's coverage, PLUS `grounded`: the
+ * check that each of those coverages is itself sourced from SEALED content (not a `process.cwd()`
+ * scan). Including it makes the verdict price its own provenance — the forge-cost cannot be ∞ while
+ * any input to it is ungrounded. No AI, no default: pure computation feeding on the sealed corpus.
+ */
+export const corpusChecks = (): Check[] => [
+  ...conventionChecks(),
+  { law: 'grounded', coverage: groundedCoverage() },
+]
 
 /** Collide the corpus's live conventions — the zero-entropy tamper-cost verdict, pure math. */
 export const corpusCollider = (): { coverage: number; violations: number; tamperCost: number } => collide(corpusChecks())

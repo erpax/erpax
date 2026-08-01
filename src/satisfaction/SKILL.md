@@ -2,63 +2,18 @@
 name: satisfaction
 description: "Use when measuring employee/customer contentment — survey scores, NPS, CSAT, engagement indices. The scalar metric of sentiment toward work, leadership, culture, or service."
 atomPath: satisfaction
-coordinate: satisfaction · 2/share · 1d564e49
-contentUuid: "5b576996-257f-578b-9d84-6607ce3adc90"
-diamondUuid: "5a154bc4-9e38-8e2d-ac8a-c3089e4c230e"
-uuid: "1d564e49-3d05-8920-b971-4a0e519978d4"
-horo: 2
-bonds:
-  in:
-    - attrition
-    - comment
-    - customers
-    - employees
-    - engagement
-    - feedback
-    - reviews
-    - sentiment
-  out:
-    - attrition
-    - comment
-    - customers
-    - employees
-    - engagement
-    - feedback
-    - reviews
-    - sentiment
+coordinate: "satisfaction · 7/descent · 5a3b7db2"
+contentUuid: "f8b55dbe-db24-53b2-bfd8-8613c4cb666a"
+diamondUuid: "9908b7bb-8298-87a5-8f73-705f4994f9f7"
+uuid: "5a3b7db2-418c-82c9-b0e0-15309ee617a4"
+horo: 7
 typography:
   partition: satisfaction
   bondDegree: 25
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - comment
-    - customers
-    - employees
-    - reviews
-    - sentiment
-  matrix:
-    - attrition
-    - comment
-    - customers
-    - employees
-    - engagement
-    - feedback
-    - reviews
-    - sentiment
-  backlinks:
-    - attrition
-    - comment
-    - customers
-    - employees
-    - engagement
-    - feedback
-    - reviews
-    - sentiment
 signatures:
-  computationUuid: "e2b0969f-89ee-81b1-8c00-c3722038b871"
+  computationUuid: "2a17a749-081f-8092-8df2-1d43fdf7ef66"
   stages:
     - stage: path
       stageUuid: "568b17d7-6ecb-8ba5-8acd-3c86235eda2f"
@@ -69,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f08eb388-0e55-8855-af38-007a57c6d0ad"
     - stage: horo
-      stageUuid: "7cc265e4-06a4-889e-bfbb-bbc5db6d24df"
+      stageUuid: "47a6f55e-8720-8801-bf2f-33155de257d3"
     - stage: seal
-      stageUuid: "eb19b697-0599-846a-8a84-16b79b9b486f"
+      stageUuid: "03f1ed26-8ccf-8dc3-9d0f-fd4ec9bb45c8"
     - stage: uuid
-      stageUuid: "12bdec17-d069-82b8-aea7-366b1c14491d"
+      stageUuid: "ccae587f-836e-895c-a174-1bc769588466"
 version: 2
 ---
 # satisfaction

@@ -2,39 +2,14 @@
 name: segments
 description: "Use when grouping customers for differentiated pricing tiers, volume discounts, targeted campaigns, or IFRS-15 §4 portfolio-of-contracts disclosures — segment type, pricing tier, payment terms, credit limit, and priority rank. The CRM customer-segmentation collection."
 atomPath: "customer/segments"
-coordinate: "customer/segments · 2/share · aa504b3f"
-contentUuid: "b8a263f6-e295-52e6-8847-12824b8c19ce"
-diamondUuid: "42b41bfd-85a4-8fc0-b732-591b8dad69ab"
-uuid: "aa504b3f-64ce-8df1-baac-2d1a96918926"
-horo: 2
-bonds:
-  in:
-    - accounting
-    - cohort
-    - collections
-    - customer
-    - customers
-    - fields
-    - hooks
-    - identity
-    - opportunities
-    - proof
-    - standard
-  out:
-    - accounting
-    - cohort
-    - collections
-    - customers
-    - fields
-    - hooks
-    - identity
-    - opportunities
-    - proof
-    - standard
+coordinate: "customer/segments · 8/crest · 54821309"
+contentUuid: "296d3064-c384-5983-8cff-52aacedcd4c0"
+diamondUuid: "8a0f3365-42fd-895f-8772-5c8fdf3877ed"
+uuid: "54821309-a4bf-89ba-8bb5-14bc26b70e78"
+horo: 8
 typography:
   partition: customer
-  bondDegree: 30
-  neighbors: []
+  bondDegree: 14
 standards:
   - "IFRS IFRS-15 §4 portfolio-practical-expedient"
   - "IFRS IFRS-8 §22 disclosure-of-segment-information"
@@ -42,40 +17,8 @@ standards:
   - "ISO-8601-1:2019 date-time`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - collections
-    - customers
-    - fields
-    - hooks
-    - identity
-    - proof
-    - standard
-  matrix:
-    - accounting
-    - cohort
-    - collections
-    - customers
-    - fields
-    - hooks
-    - identity
-    - opportunities
-    - proof
-    - standard
-  backlinks:
-    - accounting
-    - cohort
-    - collections
-    - customers
-    - fields
-    - hooks
-    - identity
-    - opportunities
-    - proof
-    - standard
 signatures:
-  computationUuid: "0c748687-2041-8fb7-9a42-9824a1d300c7"
+  computationUuid: "5294eecb-2f21-8b24-9c3f-29b22520b41f"
   stages:
     - stage: path
       stageUuid: "1c7ffcd0-9eb2-8460-8d19-ebb9cdc249ad"
@@ -84,13 +27,13 @@ signatures:
     - stage: boundary
       stageUuid: "62109d48-aa7e-8ccd-aa68-d90c8cb6b184"
     - stage: links
-      stageUuid: "5ae3b2b7-877a-8c3d-a2f4-c495142a36ce"
+      stageUuid: "0fbc175e-7429-8804-9ab8-23d9742fdab3"
     - stage: horo
-      stageUuid: "89a926a7-57e9-8609-9dfc-b9c069e0708e"
+      stageUuid: "e6225aeb-960a-8655-aa6b-a81ef1753199"
     - stage: seal
       stageUuid: "fb4a6019-5ed4-81ea-89af-a298d840e048"
     - stage: uuid
-      stageUuid: "22d04081-ff4b-814d-898c-889763fffa44"
+      stageUuid: "8afd4e5f-66b1-861c-bd5b-ae39f3081cc5"
 version: 2
 ---
 # customer-segments

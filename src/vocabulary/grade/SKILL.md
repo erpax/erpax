@@ -1,116 +1,34 @@
 ---
 name: grade
 description: "Use when produce is sorted into quality classes — grading against uniform standards (USDA US No. 1, Fancy), with culling (discarding unmarketable units) and the packout (the marketable fraction packed from a harvested lot). Grade sets price and the gross-vs-marketable yield gap; °Brix, size, color, and defects are the criteria."
-atomPath: vocabulary/grade
-coordinate: grade · 7/descent · eedb07f1
-contentUuid: "0eb0bbda-b02d-5c21-a86a-4a8311987795"
-diamondUuid: "ef01cbae-545e-80b2-bb94-811133402589"
-uuid: "eedb07f1-349f-870e-b2b6-3c8cb907a2dd"
-horo: 7
-bonds:
-  in:
-    - agriculture
-    - harvest
-    - lactation
-    - lineage
-    - lots
-    - maturity
-    - measure
-    - packs
-    - postharvest
-    - pruning
-    - quota
-    - rate
-    - standards
-    - trellis
-    - withdrawal
-    - yield
-  out:
-    - agriculture
-    - harvest
-    - lactation
-    - lineage
-    - lots
-    - maturity
-    - measure
-    - packs
-    - postharvest
-    - pruning
-    - quota
-    - rate
-    - standards
-    - trellis
-    - withdrawal
-    - yield
+atomPath: "vocabulary/grade"
+coordinate: "vocabulary/grade · 4/weave · 6412a2dd"
+contentUuid: "69b04193-fcb6-5c01-b81b-ff5c07e47709"
+diamondUuid: "3258f479-30bc-8a50-87b9-f5c9cde8ca43"
+uuid: "6412a2dd-c607-8889-92ec-b03acdce1860"
+horo: 4
 typography:
-  partition: grade
+  partition: vocabulary
   bondDegree: 51
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - harvest
-    - lots
-    - measure
-    - packs
-    - postharvest
-    - quota
-    - rate
-    - standards
-    - yield
-  matrix:
-    - agriculture
-    - harvest
-    - lactation
-    - lineage
-    - lots
-    - maturity
-    - measure
-    - packs
-    - postharvest
-    - pruning
-    - quota
-    - rate
-    - standards
-    - trellis
-    - withdrawal
-    - yield
-  backlinks:
-    - agriculture
-    - harvest
-    - lactation
-    - lineage
-    - lots
-    - maturity
-    - measure
-    - packs
-    - postharvest
-    - pruning
-    - quota
-    - rate
-    - standards
-    - trellis
-    - withdrawal
-    - yield
 signatures:
-  computationUuid: "19b0ff6b-f95c-89da-acdd-5451e4b0937b"
+  computationUuid: "b17cb6b8-fc74-8c65-ab88-9fd032d751d5"
   stages:
     - stage: path
-      stageUuid: "886e2af3-cff8-8b6d-bd08-65bd42136f77"
+      stageUuid: "319a139f-50cd-878b-941b-bda754f70d74"
     - stage: trinity
-      stageUuid: "899514de-cde1-84c0-bae1-0453ce5183f8"
+      stageUuid: "452132ec-7f0a-8aaa-b50a-778ea8f0f897"
     - stage: boundary
-      stageUuid: "b1af0399-baa4-82ec-a424-31ab1ed41046"
+      stageUuid: "55e9a4e1-d594-822a-95d1-b1c307876576"
     - stage: links
-      stageUuid: "23b89c75-817c-873e-b800-6f06eb10d8b6"
+      stageUuid: "28a480fe-fdf2-8f06-b3bb-273e24faa6b7"
     - stage: horo
-      stageUuid: "b826fe92-df7e-80c1-8ae7-4a28151fe741"
+      stageUuid: "d891db5b-ec70-8d70-bd27-ac06e91037fc"
     - stage: seal
-      stageUuid: "c48e2e1d-6dc1-8ddd-9efe-81bd5b2a5b67"
+      stageUuid: "6ad2515d-6d18-8665-b7c0-aa7281cf33c4"
     - stage: uuid
-      stageUuid: "f9aeae36-3c09-84b5-96c8-7fd8f4d1e83c"
+      stageUuid: "5d0a6229-0e23-8321-b09f-d2f4bebc5924"
 version: 2
 ---
 # grade — sorting produce into quality classes

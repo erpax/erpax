@@ -2,79 +2,20 @@
 name: blood
 description: "Use when reasoning about erpax's carrier — the courier organ that delivers accounted value to every node and carries entropy away. Blood is the receipt flow through the closed loop the heart drives and the lung charges: three properties of living blood (cooperative Hill binding · steady-state turnover by Little's law · conserved delivery) are computed and mapped — a structural isomorphism — onto erpax's coverage, regeneration, and double-entry."
 atomPath: blood
-coordinate: "blood · 2/share · 2df5a535"
-contentUuid: "cd0bc64e-eb6f-5eb5-91d2-5664bb4d572f"
-diamondUuid: "93f49120-90bd-81c4-9c1e-84323e12b22e"
-uuid: "2df5a535-e272-88d0-ad32-9d46ecc437da"
+coordinate: "blood · 2/share · ffd03739"
+contentUuid: "cb8b38a0-2d77-5b25-b402-9fbc54587880"
+diamondUuid: "20d93a1f-12f7-80f5-9cd5-ada7676d3507"
+uuid: "ffd03739-af2b-8077-8ee3-44a084b5a3de"
 horo: 2
-bonds:
-  in:
-    - blood
-    - body
-    - conservation
-    - coverage
-    - heart
-    - law
-    - lung
-    - receipt
-    - regeneration
-    - supply
-    - test
-  out:
-    - blood
-    - body
-    - conservation
-    - coverage
-    - heart
-    - law
-    - lung
-    - receipt
-    - regeneration
-    - supply
-    - test
 typography:
   partition: blood
   bondDegree: 37
-  neighbors: []
 standards:
   - "A. V. Hill,"
   - "Hill, J. Physiol. 1910 (cooperativity) · erythropoiesis (≈2M RBC/s, ≈120 d)"
 bindings: []
-neighbors:
-  wikilink:
-    - conservation
-    - coverage
-    - heart
-    - law
-    - lung
-    - receipt
-    - regeneration
-  matrix:
-    - blood
-    - body
-    - conservation
-    - coverage
-    - heart
-    - law
-    - lung
-    - receipt
-    - regeneration
-    - supply
-    - test
-  backlinks:
-    - blood
-    - body
-    - conservation
-    - coverage
-    - heart
-    - law
-    - lung
-    - receipt
-    - regeneration
-    - supply
-    - test
 signatures:
-  computationUuid: "55ca6b08-0b38-8527-9a0d-f0d26fb2675b"
+  computationUuid: "2e1554fe-6e63-8127-9d3c-b8ed800b07b7"
   stages:
     - stage: path
       stageUuid: "2cdf2439-8f4a-8dd6-8571-6697ceba1894"
@@ -85,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "5bfa5375-0785-85f9-bde0-1cfb8bb4268d"
     - stage: horo
-      stageUuid: "4fd96e60-8c1b-8e04-a4ad-b9560740489e"
+      stageUuid: "7e6a7268-c558-8507-ba98-c6c43f0a543b"
     - stage: seal
       stageUuid: "f0894d76-5fc3-8cd7-9199-445aae280848"
     - stage: uuid
-      stageUuid: "374b394e-e73d-82fb-af4c-619cbfb7281e"
+      stageUuid: "9204912a-a9ba-818c-a86a-79ec0de85485"
 version: 2
 ---
 # blood — the courier (cooperative delivery · regenerated · conserved)

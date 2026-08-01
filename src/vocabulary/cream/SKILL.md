@@ -1,73 +1,35 @@
 ---
 name: cream
 description: "Use when reasoning about cream as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/cream
-coordinate: cream · 1/base · 2cd661a3
-contentUuid: "0e81b619-412d-53b3-8c17-e93b5cf6db9c"
-diamondUuid: "05423d59-f4ba-87b7-921d-004b04dad95f"
-uuid: "2cd661a3-0b3f-8d14-bf1d-1fdfb7ac695f"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - ice
-    - law
-    - merge
-    - shop
-    - sti
-  out:
-    - collapse
-    - ice
-    - law
-    - merge
-    - shop
-    - sti
+atomPath: "vocabulary/cream"
+coordinate: "vocabulary/cream · 4/weave · 55ea7bb9"
+contentUuid: "379fdfbf-6fdd-5d3c-bf6f-293ce72070df"
+diamondUuid: "e3307d9f-8e13-8c23-abea-338152667da9"
+uuid: "55ea7bb9-0f92-8524-af58-38e1ddb83604"
+horo: 4
 typography:
-  partition: cream
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - ice
-    - law
-    - merge
-    - shop
-    - sti
-  matrix:
-    - collapse
-    - ice
-    - law
-    - merge
-    - shop
-    - sti
-  backlinks:
-    - collapse
-    - ice
-    - law
-    - merge
-    - shop
-    - sti
 signatures:
-  computationUuid: "432f0410-0efc-827c-b6e5-62ebd09f9178"
+  computationUuid: "6c157d7c-1c53-868d-a0e2-19ded8d818a8"
   stages:
     - stage: path
-      stageUuid: "f6545b56-d2c6-84c7-8c8d-22aaa8847a19"
+      stageUuid: "fe28073b-6f52-87d1-8c78-f1f32fbc04ff"
     - stage: trinity
-      stageUuid: "1cd1d1e0-d4da-8a7e-9658-06a8a39ca9ce"
+      stageUuid: "1e6e5c09-5760-8bc3-8432-e6f42bfc0c85"
     - stage: boundary
-      stageUuid: "9ab0eadb-2b9a-8cd2-bd54-e4158063852a"
+      stageUuid: "127978ac-1cbe-8986-a2b8-244bd246fd7d"
     - stage: links
-      stageUuid: "e7b8d0a4-7054-8573-a4ba-d20693ecd85f"
+      stageUuid: "1d466677-dfcc-837c-ae3d-a8a8f4d6c32f"
     - stage: horo
-      stageUuid: "48cdd796-72d7-86b9-ae45-ca35973f7aaa"
+      stageUuid: "34971a55-d98f-80f0-a249-037fadd50099"
     - stage: seal
-      stageUuid: "4fd42d7c-6ef5-84b1-a75a-2573b464ef67"
+      stageUuid: "2e22eae0-4dfc-8031-bd6e-7ed51b0bb59a"
     - stage: uuid
-      stageUuid: "6f420100-5b99-8689-bdb0-bc968d9f0691"
+      stageUuid: "b54838dd-c162-8322-83e4-84ecd8457e73"
 version: 2
 ---
 # cream

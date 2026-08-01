@@ -1,68 +1,35 @@
 ---
 name: distinguishing
 description: "Use when reasoning about distinguishing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/distinguishing
-coordinate: distinguishing · 1/base · 7acb55e2
-contentUuid: "214ed298-a92b-58a6-895b-dae5e78e5bca"
-diamondUuid: "98c62e42-9988-80aa-8aba-19eab2457170"
-uuid: "7acb55e2-d614-8a43-aa6e-772a23922a9d"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sign
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sign
-    - sti
+atomPath: "vocabulary/distinguishing"
+coordinate: "vocabulary/distinguishing · 2/share · ede44de8"
+contentUuid: "41ef200b-04e4-5539-974c-2f3c12d54cdd"
+diamondUuid: "879d3a15-c7ca-89ff-b951-95544bfc1af0"
+uuid: "ede44de8-e19e-80ab-ac28-89b81fd40796"
+horo: 2
 typography:
-  partition: distinguishing
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sign
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sign
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sign
-    - sti
 signatures:
-  computationUuid: "7c4da2f7-92e7-82ca-9995-caedbafdb395"
+  computationUuid: "bf1b464d-e13f-887b-9689-ce7b225a0971"
   stages:
     - stage: path
-      stageUuid: "3800f3d4-c712-845a-8ed3-2e58b82cfb18"
+      stageUuid: "f7f214be-74a1-8ef8-a554-5892e23d464d"
     - stage: trinity
-      stageUuid: "81095857-c8bf-8e9f-97d8-352eb23ac1c1"
+      stageUuid: "2487777e-cfb4-8fd8-9fc8-3a8aad1bd9f3"
     - stage: boundary
-      stageUuid: "0939a032-5062-8a7f-86a7-917489155245"
+      stageUuid: "220f8376-6ade-8043-8689-d185775e4622"
     - stage: links
-      stageUuid: "8cbdd1ca-2e95-8610-a094-f416aca8b5eb"
+      stageUuid: "b6426f64-a112-86e9-a4ea-153fff7a3927"
     - stage: horo
-      stageUuid: "40e6f5af-d664-8a42-8e01-9c89c1b302ae"
+      stageUuid: "01d63f34-6543-875f-bf42-9351c0c5e0d3"
     - stage: seal
-      stageUuid: "60d8f1b8-0eca-8b88-a0cb-7df72ff91770"
+      stageUuid: "f84b6a63-901e-8d07-9cdb-c40a18f84675"
     - stage: uuid
-      stageUuid: "30c06d68-224f-82c8-9753-8bbbe37c6c9b"
+      stageUuid: "7890bbc5-92f6-82db-953d-b978a5e657d2"
 version: 2
 ---
 # distinguishing

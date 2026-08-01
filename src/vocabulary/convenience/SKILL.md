@@ -1,68 +1,35 @@
 ---
 name: convenience
 description: "Use when reasoning about convenience as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/convenience
-coordinate: convenience · 7/descent · fe67222f
-contentUuid: "a4586da4-bba3-5744-b537-552e3750ba4d"
-diamondUuid: "09bb0233-6feb-8912-88a7-f50508e8d9c6"
-uuid: "fe67222f-3191-8312-96b3-94bd3a2a1d90"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
+atomPath: "vocabulary/convenience"
+coordinate: "vocabulary/convenience · 5/round · 6fd06456"
+contentUuid: "5f5b8736-4269-53ac-aee7-9529ebefae68"
+diamondUuid: "714b7983-9e5d-8827-9560-fed01bfa54c4"
+uuid: "6fd06456-e184-839a-80aa-5d28e276c990"
+horo: 5
 typography:
-  partition: convenience
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - store
 signatures:
-  computationUuid: "76c51375-5b84-8354-a621-f3adc1a69795"
+  computationUuid: "464d87d5-4db0-834f-8da5-ab11c90f93d9"
   stages:
     - stage: path
-      stageUuid: "48ec33a5-b793-83aa-aa7c-d3df16a4f094"
+      stageUuid: "86d7a247-2bf6-8550-933c-9f319a1ececd"
     - stage: trinity
-      stageUuid: "0d553144-0567-8f0a-8b34-f28a336bd735"
+      stageUuid: "50252366-3f84-810c-837e-f3b6ce607829"
     - stage: boundary
-      stageUuid: "71ec5aa7-86c0-8427-a617-dc7f74a3066a"
+      stageUuid: "74efdcbe-51c3-87a3-ab87-4a9d73d16e9c"
     - stage: links
-      stageUuid: "38915b75-8732-8bc3-b076-6d05ffb3d301"
+      stageUuid: "e864fa4e-1c28-8c88-a99d-a1fea3a6ddd4"
     - stage: horo
-      stageUuid: "0235d6ad-1b34-8db1-90db-33b4d8d7890a"
+      stageUuid: "627b2169-5780-8400-8f1b-99c6bb6ab6af"
     - stage: seal
-      stageUuid: "e0f4ad7a-f724-88e4-8c04-f24fb6e2c67c"
+      stageUuid: "7e9956d9-9150-859e-975c-944bee906a60"
     - stage: uuid
-      stageUuid: "326f85e5-ac22-8c22-97da-cf90ba4ada65"
+      stageUuid: "18e1d78a-4f2d-8237-bdde-b8ab2228b6e0"
 version: 2
 ---
 # convenience

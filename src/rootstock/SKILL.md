@@ -2,81 +2,18 @@
 name: rootstock
 description: "Use when modelling the root-providing lower plant a scion is grafted onto — the rootstock controls vigour, size (dwarfing → high-density orchards), and disease/phylloxera resistance. The perennial-planting keystone, chosen once for the asset's multi-decade life; paired with the scion via a graft."
 atomPath: rootstock
-coordinate: rootstock · 8/crest · bf2256a1
-contentUuid: "44f44522-d3ec-528e-81bd-e0af3c6016e8"
-diamondUuid: "88e2f434-b58c-82a1-ae01-773add1ccb08"
-uuid: "bf2256a1-f7b0-8cee-a55d-7b13a5b16145"
-horo: 8
-bonds:
-  in:
-    - assets
-    - graft
-    - law
-    - maturity
-    - perennial
-    - propagation
-    - scion
-    - seed
-    - soil
-    - spacing
-    - taxonomy
-  out:
-    - assets
-    - graft
-    - law
-    - maturity
-    - perennial
-    - propagation
-    - scion
-    - seed
-    - soil
-    - spacing
-    - taxonomy
+coordinate: "rootstock · 4/weave · df37d3de"
+contentUuid: "b8493ef5-a948-5bd5-ac7c-597d7730e123"
+diamondUuid: "e8c74557-d529-89cd-b725-8da5d7fe7a93"
+uuid: "df37d3de-380d-8ed8-b1f2-8584b4a18ef7"
+horo: 4
 typography:
   partition: rootstock
   bondDegree: 36
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - assets
-    - graft
-    - law
-    - maturity
-    - perennial
-    - propagation
-    - scion
-    - seed
-    - soil
-    - spacing
-    - taxonomy
-  matrix:
-    - assets
-    - graft
-    - law
-    - maturity
-    - perennial
-    - propagation
-    - scion
-    - seed
-    - soil
-    - spacing
-    - taxonomy
-  backlinks:
-    - assets
-    - graft
-    - law
-    - maturity
-    - perennial
-    - propagation
-    - scion
-    - seed
-    - soil
-    - spacing
-    - taxonomy
 signatures:
-  computationUuid: "dc332115-eaf5-880a-a535-45d12d379b5a"
+  computationUuid: "592aa361-0039-8677-97a6-f68860a53f3c"
   stages:
     - stage: path
       stageUuid: "64620819-20e4-8fb0-8d75-1abc73455b05"
@@ -87,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "522cb750-175e-8e52-b817-46a99f8004e2"
     - stage: horo
-      stageUuid: "a236985d-8c55-8a34-a0dd-76c121a2332e"
+      stageUuid: "268dcc25-e3a2-83cf-87df-152ff7c42281"
     - stage: seal
-      stageUuid: "1a52cca9-0b23-89e8-a072-f26db2ad1b21"
+      stageUuid: "edd28e15-1ca2-80e9-91da-0583a925978c"
     - stage: uuid
-      stageUuid: "9e8bc3c0-68cb-85cd-b19a-862e5400631c"
+      stageUuid: "288c7c32-91e0-8dd4-9ccf-b1495f4671eb"
 version: 2
 ---
 # rootstock — the root system a scion is grafted onto

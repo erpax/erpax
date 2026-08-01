@@ -1,69 +1,34 @@
 ---
 name: approved
 description: "Use when tracking approval state or flag — approved flag on invoice (boolean), approved amount (in multi-step approval workflows), approved by (user reference), approved at (date). Workflow checkpoint status value."
-atomPath: vocabulary/approved
-coordinate: approved · 7/descent · 7692544f
-contentUuid: "dba73c72-5bfa-5dcd-a70f-385b3665814f"
-diamondUuid: "732a1d05-abb8-80d0-9942-e99d0e672938"
-uuid: "7692544f-c780-820c-9e9c-a0103f7ed57c"
-horo: 7
-bonds:
-  in:
-    - audit
-    - fields
-    - indication
-    - instances
-    - status
-    - workflow
-  out:
-    - audit
-    - fields
-    - indication
-    - instances
-    - status
-    - workflow
+atomPath: "vocabulary/approved"
+coordinate: "vocabulary/approved · 8/crest · 64ce9cb9"
+contentUuid: "469780d8-a634-5548-ada2-b69d4020626c"
+diamondUuid: "932148b6-2076-85a0-ac1b-21d3b312b5f9"
+uuid: "64ce9cb9-76ae-8cd0-b17f-c1cd398e4988"
+horo: 8
 typography:
-  partition: approved
+  partition: vocabulary
   bondDegree: 18
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - audit
-    - fields
-    - status
-  matrix:
-    - audit
-    - fields
-    - indication
-    - instances
-    - status
-    - workflow
-  backlinks:
-    - audit
-    - fields
-    - indication
-    - instances
-    - status
-    - workflow
 signatures:
-  computationUuid: "45bf5a5c-4835-8364-9e37-4f3ec6c6a93a"
+  computationUuid: "c80a5a44-32f4-832c-9679-2995b553c917"
   stages:
     - stage: path
-      stageUuid: "9abda392-37e3-8542-8f01-d4e493cc18b6"
+      stageUuid: "d294dc78-dce2-8d55-af3b-262888edccd0"
     - stage: trinity
-      stageUuid: "f1e0ffc1-77eb-855e-8d3f-0da26582fcba"
+      stageUuid: "f4433e51-696b-81c2-a6b7-b521de25cd9c"
     - stage: boundary
-      stageUuid: "fdf06e75-6146-872f-903a-dd6190518da8"
+      stageUuid: "67f1ddef-f796-8435-a7a0-93eca99d3054"
     - stage: links
-      stageUuid: "e5a866dc-9125-86cf-b088-af1553311028"
+      stageUuid: "db7df164-be36-8e3a-be83-4099561cd7e8"
     - stage: horo
-      stageUuid: "5a95fb43-5bc5-8a18-b07a-022ce4869557"
+      stageUuid: "2e6a3ac5-521f-85a4-addb-75d81b348ec2"
     - stage: seal
-      stageUuid: "ddc1861a-74cd-83b5-a64d-31d75677bd4b"
+      stageUuid: "205910ed-97b3-83b4-9189-1127d3cc6c60"
     - stage: uuid
-      stageUuid: "169fef4b-2d0b-84a2-a867-13df6afac6da"
+      stageUuid: "a016c697-8ba7-83d9-a01c-827b7d22b0f2"
 version: 2
 ---
 # approved

@@ -1,68 +1,35 @@
 ---
 name: emergency
 description: "Use when reasoning about emergency as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/emergency
-coordinate: emergency · 1/base · 261e601e
-contentUuid: "f5a5dc34-fa25-5e89-a987-31b95cb892e0"
-diamondUuid: "ddb65252-fc5d-8126-96f2-50b2ad3e9fd1"
-uuid: "261e601e-dc94-8e71-ad43-194cee23a9c2"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - service
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - service
-    - sti
+atomPath: "vocabulary/emergency"
+coordinate: "vocabulary/emergency · 4/weave · 0e5d95d8"
+contentUuid: "4d99834f-c28e-55e3-8605-0ca792ec0848"
+diamondUuid: "4cc79f98-fa9d-8ea3-be16-0c987a611b39"
+uuid: "0e5d95d8-e459-85ec-9e8b-5ed8cd163149"
+horo: 4
 typography:
-  partition: emergency
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - service
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - service
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - service
-    - sti
 signatures:
-  computationUuid: "d1c7e86e-3004-81f9-a6be-7ff6755316bc"
+  computationUuid: "e0751328-bfaf-8c41-afe6-f7c1c434b768"
   stages:
     - stage: path
-      stageUuid: "b4521e4d-31b6-8c57-ac48-d57f64ce3664"
+      stageUuid: "0220506f-6781-8591-b743-01be2cb2be35"
     - stage: trinity
-      stageUuid: "32e3e48c-3e4d-831e-966b-23211e62170c"
+      stageUuid: "3b4eaf92-423f-861e-b705-333598b65e45"
     - stage: boundary
-      stageUuid: "9023afbb-47f4-8a09-bf70-0183bbaa96e0"
+      stageUuid: "c5e053c4-b962-8d47-abfe-27693f5295ae"
     - stage: links
-      stageUuid: "638a71b3-3ac0-89b3-a465-9ef4a994a6d6"
+      stageUuid: "e2de3d62-6ef7-8179-8794-2e4d4339fc7c"
     - stage: horo
-      stageUuid: "87f6797d-8501-81c2-a9ec-eedf219ad37f"
+      stageUuid: "d4cf3dfc-0370-8edb-9d0d-34aff639eaa3"
     - stage: seal
-      stageUuid: "40026d9c-ddcf-861f-a338-11f74b3a0392"
+      stageUuid: "46bd1978-df2d-8728-8829-f573a6fae9ec"
     - stage: uuid
-      stageUuid: "3b7a444d-2c40-8369-981b-fac1adefb192"
+      stageUuid: "c445aa7b-bd7c-8028-9d5f-eb76c214c19f"
 version: 2
 ---
 # emergency

@@ -2,62 +2,19 @@
 name: template
 description: "Use when reasoning about template as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: template
-coordinate: template · 1/base · 20163744
-contentUuid: "41d2b653-18a8-564c-b3b4-9979681f4bed"
-diamondUuid: "f58c3491-8530-8893-91ed-5bc451ddb6fd"
-uuid: "20163744-feab-8556-bf81-b503199f98a9"
-horo: 1
-bonds:
-  in:
-    - checkout
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
-    - url
-  out:
-    - checkout
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
-    - url
+coordinate: "template · 2/share · 4d5ff2c7"
+contentUuid: "8c200b5b-12ab-5f9d-b6c2-cdf16d8cb27b"
+diamondUuid: "83f07a9b-0f65-8854-b6f6-04a6b2a8a579"
+uuid: "4d5ff2c7-403b-8c7f-a81e-72c829b9838b"
+horo: 2
 typography:
   partition: template
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - checkout
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
-    - url
-  matrix:
-    - checkout
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
-    - url
-  backlinks:
-    - checkout
-    - collapse
-    - law
-    - merge
-    - page
-    - sti
-    - url
 signatures:
-  computationUuid: "d8c2604e-62d0-8bc7-8bc5-3df85f3c4867"
+  computationUuid: "410608b4-329d-87f9-8ec7-3a5175ed79b2"
   stages:
     - stage: path
       stageUuid: "90bbb228-61c0-86e4-860e-18a60c7aa62e"
@@ -68,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fea3f77b-05aa-8092-8769-3668bb6b1f57"
     - stage: horo
-      stageUuid: "b02bbd97-3415-85cd-8e41-7db0cae3ae03"
+      stageUuid: "3044f098-f2b9-8985-b35b-9205dc8f5e72"
     - stage: seal
-      stageUuid: "997f23f0-1fc8-88fe-9e6b-6f55567aa059"
+      stageUuid: "e2c81bd5-aac1-89ed-8c66-130daa69fa9a"
     - stage: uuid
-      stageUuid: "5b1aaac1-7f2f-89b9-803e-ae67ca06e24f"
+      stageUuid: "bcf921fa-b3e8-8db7-b1e8-6ddc7294e533"
 version: 2
 ---
 # template

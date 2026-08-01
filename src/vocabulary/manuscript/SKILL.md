@@ -1,53 +1,35 @@
 ---
 name: manuscript
 description: "Use when reasoning about manuscript — A book, document, or piece of music written by hand rather than typed or printed."
-atomPath: vocabulary/manuscript
-coordinate: manuscript · 7/descent · 03af0c50
-contentUuid: "20e76203-7578-5b66-aff1-0018a52612d4"
-diamondUuid: "95341d36-c3c6-8764-b578-93c0c6bb7e43"
-uuid: "03af0c50-53f2-8174-9035-cb6f7a0b3ed2"
-horo: 7
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/manuscript"
+coordinate: "vocabulary/manuscript · 1/base · 13f875b5"
+contentUuid: "13f43aac-d1f0-55e3-88a0-50e583e66e49"
+diamondUuid: "18550b9c-c6fe-8ee7-afd5-88c5db33612c"
+uuid: "13f875b5-aad6-8e41-b75c-e336d92e45f8"
+horo: 1
 typography:
-  partition: manuscript
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "41f0a87d-c800-8f66-8bb9-e9c3ebc5b9a1"
+  computationUuid: "8f8e4988-a3d7-8860-9a6e-d3a1530246a2"
   stages:
     - stage: path
-      stageUuid: "3ff0b987-f467-81ff-8dc8-b3960c63205e"
+      stageUuid: "f3beab27-2e9a-8800-b8b4-f59d74b63033"
     - stage: trinity
-      stageUuid: "ffa11b7a-1941-88da-ad5a-0e98395b96be"
+      stageUuid: "554a4bf6-d8e1-81bc-ab8b-21370c4d1fc5"
     - stage: boundary
-      stageUuid: "6e7eefb7-e12e-8d63-8049-655a4625c378"
+      stageUuid: "020e6d67-d812-8c5f-9d5c-b2d2478ed5b1"
     - stage: links
-      stageUuid: "3d4f7915-bbed-8afc-b351-2fb5a46fcfc9"
+      stageUuid: "d01a51bd-6eb7-85a4-952e-ad524f319082"
     - stage: horo
-      stageUuid: "d63da484-dfa0-80fa-874f-fa73787052fd"
+      stageUuid: "a65dac50-9cd6-8f5e-be9b-e71a8c25fe54"
     - stage: seal
-      stageUuid: "90435afa-470c-8b15-89d1-8b4530d72821"
+      stageUuid: "be68f891-8bf7-88ea-912f-ed5787870274"
     - stage: uuid
-      stageUuid: "94679ff1-59eb-8e54-bb38-9d5393102ce2"
+      stageUuid: "f37ad520-420c-8662-aa09-c1f8b2d52208"
 version: 2
 ---
 # manuscript

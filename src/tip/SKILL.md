@@ -2,62 +2,19 @@
 name: tip
 description: "Use when reasoning about tip as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: tip
-coordinate: tip · 7/descent · 101e0416
-contentUuid: "3ef35fee-24ba-562b-8490-7ae6ffb8c9c3"
-diamondUuid: "c08404fb-1315-806e-8e6d-61e94d7baa94"
-uuid: "101e0416-0877-843a-814e-b242788da201"
+coordinate: "tip · 7/descent · 72e7373f"
+contentUuid: "df40cd8d-ca8e-5d68-8a7f-394d752e1304"
+diamondUuid: "c4f26437-072b-8b1a-9f24-b7e48e6ba6db"
+uuid: "72e7373f-0f54-848e-9617-a559606eeaa1"
 horo: 7
-bonds:
-  in:
-    - action
-    - collapse
-    - game
-    - how
-    - law
-    - merge
-    - sti
-  out:
-    - action
-    - collapse
-    - game
-    - how
-    - law
-    - merge
-    - sti
 typography:
   partition: tip
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - game
-    - how
-    - law
-    - merge
-    - sti
-  matrix:
-    - action
-    - collapse
-    - game
-    - how
-    - law
-    - merge
-    - sti
-  backlinks:
-    - action
-    - collapse
-    - game
-    - how
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "9dd4e637-bedd-8404-bb9c-b35103eab186"
+  computationUuid: "8e71748c-6502-83d2-9d15-6a4ac9a6b560"
   stages:
     - stage: path
       stageUuid: "fe0b8187-dffe-8c5f-a495-f10d93523a76"
@@ -68,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d310ea6f-a9d8-8ff7-9bb2-f2a57f318542"
     - stage: horo
-      stageUuid: "4ccc52c1-b510-80c5-b571-04e30e99204c"
+      stageUuid: "c9a5754a-efd1-8365-9af3-3f1af0932bdc"
     - stage: seal
-      stageUuid: "32a20e8a-97db-8d92-8fd5-1b910a6eda52"
+      stageUuid: "4b52dd16-eb18-830d-8f39-d786489ade1f"
     - stage: uuid
-      stageUuid: "5d7fb148-8525-8b66-ae65-3c8b0bd7b3b9"
+      stageUuid: "5f1e9949-b2e1-87d6-b921-37fa277b3233"
 version: 2
 ---
 # tip

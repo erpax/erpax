@@ -1,65 +1,20 @@
 ---
 name: sql
 description: "Use when caching or deduping SQL queries by identity — the canonical normalized query hashes to a content-uuid, so equivalent queries share one identity and a changed query invalidates by content-address."
-atomPath: quantum/sql
-coordinate: quantum/sql · 1/base · b5523992
-contentUuid: "0bbe5bec-7536-5b66-8993-a48ebdaec644"
-diamondUuid: "6ae9934e-d0f1-812a-a5d2-53eb5a5cd6f9"
-uuid: "b5523992-11c5-8a54-8f74-28b956cd6daa"
-horo: 1
-bonds:
-  in:
-    - column
-    - law
-    - merge
-    - quantum
-    - query
-    - sql
-    - table
-    - uuid
-  out:
-    - column
-    - law
-    - merge
-    - quantum
-    - query
-    - sql
-    - table
-    - uuid
+atomPath: "quantum/sql"
+coordinate: "quantum/sql · 7/descent · 5da17670"
+contentUuid: "5da7b263-cbd1-5d8a-9217-2ae55ac96cfa"
+diamondUuid: "81612f0f-8195-804b-90fe-972dc1933595"
+uuid: "5da17670-622e-8708-816f-c1fbbf4d95ca"
+horo: 7
 typography:
   partition: quantum
   bondDegree: 29
-  neighbors: []
 standards:
   - "RFC 9562 §5.8 content-uuid (the query cache key)"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - merge
-    - quantum
-    - sql
-    - uuid
-  matrix:
-    - column
-    - law
-    - merge
-    - quantum
-    - query
-    - sql
-    - table
-    - uuid
-  backlinks:
-    - column
-    - law
-    - merge
-    - quantum
-    - query
-    - sql
-    - table
-    - uuid
 signatures:
-  computationUuid: "e7e105b2-43d1-8750-8a25-5ed5ffcfedd0"
+  computationUuid: "a9a3a96d-26ad-8aec-9feb-77119401f287"
   stages:
     - stage: path
       stageUuid: "d1c97627-32e2-8c5f-b317-c4112004cb8f"
@@ -70,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bd7cca66-6a06-8407-83b8-c68e8b5c0fb1"
     - stage: horo
-      stageUuid: "72a5c457-6b0b-8bd2-b0aa-cd6f4c7574df"
+      stageUuid: "2a542207-18fa-8a46-bb10-b4544acaa994"
     - stage: seal
       stageUuid: "67d3b559-1601-8d50-b8ee-f7deae87f43b"
     - stage: uuid
-      stageUuid: "75f719e4-2bc8-896a-933b-5b28c1311775"
+      stageUuid: "f4764b4a-b5c6-848c-a604-55d4184795d3"
 quantum:
   superposition:
     - column
@@ -98,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "e7e105b2-43d1-8750-8a25-5ed5ffcfedd0"
-    contentUuid: "0bbe5bec-7536-5b66-8993-a48ebdaec644"
+    computationUuid: "a9a3a96d-26ad-8aec-9feb-77119401f287"
+    contentUuid: "5da7b263-cbd1-5d8a-9217-2ae55ac96cfa"
 version: 2
 ---
 # quantum/sql — a query as a content-uuid
@@ -112,4 +67,4 @@ Matter-twin: `src/quantum/sql/index.ts` (`queryUuid` · `sameQuery`). Composes [
 
 @standard RFC 9562 §5.8 content-uuid (the query cache key)
 
-<sub>content-uuid `0bbe5bec-7536-5b66-8993-a48ebdaec644` · account `quantum/sql` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `5da7b263-cbd1-5d8a-9217-2ae55ac96cfa` · account `quantum/sql` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

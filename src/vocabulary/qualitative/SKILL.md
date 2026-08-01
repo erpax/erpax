@@ -1,68 +1,35 @@
 ---
 name: qualitative
 description: "Use when reasoning about qualitative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/qualitative
-coordinate: qualitative · 8/crest · c18de375
-contentUuid: "310fdf61-5add-51c9-930b-6b85ec9e2d33"
-diamondUuid: "3316da34-6e3c-86ef-80d9-010daa0e57d4"
-uuid: "c18de375-0c81-8428-9a91-c87fc8292639"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - value
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - value
+atomPath: "vocabulary/qualitative"
+coordinate: "vocabulary/qualitative · 2/share · 16d9adb1"
+contentUuid: "7c5c1590-bf7e-5403-a399-e9f3701dcf4f"
+diamondUuid: "b3373382-3775-8ec0-9ea2-e8e72716eb6f"
+uuid: "16d9adb1-d5d6-887b-a58b-338fa0b7b487"
+horo: 2
 typography:
-  partition: qualitative
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - value
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - value
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - value
 signatures:
-  computationUuid: "a003439e-dae5-83e3-89f4-cda49feba884"
+  computationUuid: "b1bd8253-d915-84eb-b93b-e473649d1164"
   stages:
     - stage: path
-      stageUuid: "0ce9ef0a-ab2d-8389-ab69-8069255bcc73"
+      stageUuid: "ae637f02-8fd1-87ee-b59a-ff0ef7f426c6"
     - stage: trinity
-      stageUuid: "f5db2b2f-9a1e-8cde-a090-978479d7d6dd"
+      stageUuid: "ff7d87ae-5881-88cb-a851-9e917cd1f6da"
     - stage: boundary
-      stageUuid: "a49e2a70-ac98-86b2-8e0a-14f758bbf1f4"
+      stageUuid: "dc976423-3655-86aa-8b8e-34afc5c04dd1"
     - stage: links
-      stageUuid: "da1ba894-7778-8487-8ed6-36447a9b56eb"
+      stageUuid: "6fa1d975-da80-8bac-804c-4992d8272db4"
     - stage: horo
-      stageUuid: "ffe862c6-bfff-8043-ad67-6a6370c82052"
+      stageUuid: "0d251d68-043c-833a-8cdf-c1b9db0da34d"
     - stage: seal
-      stageUuid: "2c0b8903-acae-8e9d-a251-f433541d7ada"
+      stageUuid: "2a74c4a3-c5c7-875a-905e-e3586293a6ac"
     - stage: uuid
-      stageUuid: "46b338b8-571b-8189-ba2d-3ebac8002bbd"
+      stageUuid: "a1661db8-248b-8681-a1ed-b63c2f8e1500"
 version: 2
 ---
 # qualitative

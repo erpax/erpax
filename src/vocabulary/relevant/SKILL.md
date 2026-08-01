@@ -1,73 +1,35 @@
 ---
 name: relevant
 description: "Use when reasoning about relevant as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/relevant
-coordinate: relevant · 8/crest · 3add5f62
-contentUuid: "60612e88-ff58-532e-ad28-cd1c4fd56142"
-diamondUuid: "4631c68c-7064-83b6-8728-101b3f24ba26"
-uuid: "3add5f62-c545-8192-8886-b3cd10e5a69d"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - occupation
-    - specialty
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - occupation
-    - specialty
-    - sti
+atomPath: "vocabulary/relevant"
+coordinate: "vocabulary/relevant · 7/descent · efc1d922"
+contentUuid: "077727a0-db79-5385-87a1-ab9b04908aa3"
+diamondUuid: "7f3dded6-bb10-81d9-815d-c2e3ec1ad1fc"
+uuid: "efc1d922-6875-84a5-93d3-de1157959931"
+horo: 7
 typography:
-  partition: relevant
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - occupation
-    - specialty
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - occupation
-    - specialty
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - occupation
-    - specialty
-    - sti
 signatures:
-  computationUuid: "28d31a83-d020-8353-8e3f-5fe6e8f10ea7"
+  computationUuid: "4b75f781-55d3-866b-b14e-7d84f80eb1c2"
   stages:
     - stage: path
-      stageUuid: "1c3b775f-0d61-8b06-bebe-4f7077281b34"
+      stageUuid: "df9b633f-f7f8-8808-8f89-96de3511b506"
     - stage: trinity
-      stageUuid: "4ea40c89-9e87-88e9-8528-0ab38532ae87"
+      stageUuid: "37b71dfd-fe1c-8b21-9970-7975c6e6e332"
     - stage: boundary
-      stageUuid: "ec684d32-8c4e-85b4-8fe4-ff320700ee97"
+      stageUuid: "9ce40399-68f0-8327-9fd2-377654fed7a3"
     - stage: links
-      stageUuid: "a19381db-40f8-8ef3-9c48-3fed97375d82"
+      stageUuid: "fdfda270-bb9b-861a-b964-d7ec85b3b24f"
     - stage: horo
-      stageUuid: "c86d1899-0533-8ffe-9e5a-dfcb7b0496e3"
+      stageUuid: "c05c0040-057e-8862-8f26-c28f6b4f3ee8"
     - stage: seal
-      stageUuid: "c088a390-402c-89af-ad72-23d965e115a5"
+      stageUuid: "fc566571-2440-869e-aa3a-459340c4f4fa"
     - stage: uuid
-      stageUuid: "b2adb0f5-31f6-85e0-9c83-11cb328ff093"
+      stageUuid: "efd797df-61bc-830e-aa11-c0a86329ba80"
 version: 2
 ---
 # relevant

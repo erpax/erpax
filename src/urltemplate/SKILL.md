@@ -2,47 +2,19 @@
 name: urltemplate
 description: "Use when reasoning about urltemplate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: urltemplate
-coordinate: urltemplate · 4/weave · d852954d
-contentUuid: "1c9abe98-b50a-57cc-ada9-ac63f222bc18"
-diamondUuid: "81807da2-55a9-8ff6-a835-ba1b27dbe364"
-uuid: "d852954d-0a20-8140-9298-2c7cca0272fd"
+coordinate: "urltemplate · 4/weave · a14effa7"
+contentUuid: "412e6325-0c23-5ab5-a9d0-7afccac52792"
+diamondUuid: "494db0d4-d344-8f30-9a6b-3ff542fa5d34"
+uuid: "a14effa7-90bb-8673-965a-136ea127ea22"
 horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
   partition: urltemplate
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "699bb82b-059d-8cb9-8d3e-34317bdfef89"
+  computationUuid: "f2715a40-b297-8a2d-a462-8d295b74c5b9"
   stages:
     - stage: path
       stageUuid: "cb143a04-a734-8b8a-9dbc-ade33111bcc6"
@@ -53,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ce62aa6c-ddc5-8d11-bb6e-213446b72c3f"
     - stage: horo
-      stageUuid: "33e2c4dd-a5c7-84c8-ad76-4d9c2e3ef232"
+      stageUuid: "c1eff22d-0a50-8c7e-ac74-7a8fabb7fb6a"
     - stage: seal
-      stageUuid: "18e64617-ddf8-8683-bc50-fb5b6ec5bfa8"
+      stageUuid: "0e252ff2-73bc-843d-b06e-24d098ed457e"
     - stage: uuid
-      stageUuid: "8ff28247-e715-88bd-bd89-7706d38db52a"
+      stageUuid: "2f73fcca-8ea6-8362-8069-32da94b77e8e"
 version: 2
 ---
 # urltemplate

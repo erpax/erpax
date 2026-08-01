@@ -1,107 +1,34 @@
 ---
 name: biophoton
 description: "Use when grounding the aura's colour channel in real science — biophotons (ultraweak photon emission, UPE) are a REAL, instrument-measured light the body emits: ~1–10³ (up to 10⁴) photons·s⁻¹·cm⁻² (~10⁻¹⁴–10⁻¹⁹ W/cm²), 200–800 nm, from oxidative-metabolism reactive oxygen species, detected by cooled photomultiplier tubes and EMCCD cameras. The body literally emits light — but 3–6 orders too faint to see, so the visible 'aura' is not this."
-atomPath: vocabulary/biophoton
-coordinate: biophoton · 4/weave · 19cec9cf
-contentUuid: "cf98b310-4178-5ec9-ac42-0af513320342"
-diamondUuid: "3ea55ba6-5298-8041-9c02-ba1d45957906"
-uuid: "19cec9cf-ad88-8bff-ada8-21797f2ad29c"
-horo: 4
-bonds:
-  in:
-    - analog
-    - aura
-    - biofield
-    - biomagnetism
-    - cmyk
-    - coherence
-    - emission
-    - health
-    - measure
-    - proof
-    - radiation
-    - signal
-    - vibration
-  out:
-    - analog
-    - aura
-    - biofield
-    - biomagnetism
-    - cmyk
-    - coherence
-    - emission
-    - health
-    - measure
-    - proof
-    - radiation
-    - signal
-    - vibration
+atomPath: "vocabulary/biophoton"
+coordinate: "vocabulary/biophoton · 1/base · b0cd1b61"
+contentUuid: "7d103ee9-7060-5851-af00-454b386d67a7"
+diamondUuid: "b329e148-d053-8324-bbc4-6aa733c29d5b"
+uuid: "b0cd1b61-ad4f-8d3f-93e9-1070e2c42d3e"
+horo: 1
 typography:
-  partition: biophoton
+  partition: vocabulary
   bondDegree: 45
-  neighbors:
-    - aura
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - analog
-    - aura
-    - biofield
-    - biomagnetism
-    - cmyk
-    - coherence
-    - emission
-    - health
-    - measure
-    - proof
-    - radiation
-    - signal
-  matrix:
-    - analog
-    - aura
-    - biofield
-    - biomagnetism
-    - cmyk
-    - coherence
-    - emission
-    - health
-    - measure
-    - proof
-    - radiation
-    - signal
-    - vibration
-  backlinks:
-    - analog
-    - aura
-    - biofield
-    - biomagnetism
-    - cmyk
-    - coherence
-    - emission
-    - health
-    - measure
-    - proof
-    - radiation
-    - signal
-    - vibration
 signatures:
-  computationUuid: "33ba9486-8afa-8cbd-b262-a1f8baf3a53c"
+  computationUuid: "36ab2b29-386f-8776-930e-36e75a6cc1e4"
   stages:
     - stage: path
-      stageUuid: "6958c491-79bc-8f8f-a05d-040509a09a74"
+      stageUuid: "fef508cb-8766-8293-b8fd-64eb05896757"
     - stage: trinity
-      stageUuid: "b116dc6a-02d1-8161-8133-53da720e47c5"
+      stageUuid: "e8565675-a9fa-8c5f-b3a1-22c9eb67cb33"
     - stage: boundary
-      stageUuid: "65b4c1f7-1d2d-8428-b7aa-c7da0ad63df0"
+      stageUuid: "e329d290-f3bc-88d5-96e4-0ff4494aec84"
     - stage: links
-      stageUuid: "ece400f5-8e34-8558-86a8-42955c44cc3a"
+      stageUuid: "632b8ab5-4d53-86bc-95c5-59a875a94323"
     - stage: horo
-      stageUuid: "1dba085c-4fc0-8015-bdfa-c98fc61065a0"
+      stageUuid: "fe68869d-941e-862b-927e-48ee57454ccf"
     - stage: seal
-      stageUuid: "c863323a-5181-8419-b9a4-e464e89b7ce6"
+      stageUuid: "44e963a7-b8de-89ff-b730-8a1390547c51"
     - stage: uuid
-      stageUuid: "41babe00-330e-892f-84b0-db8a7546d211"
+      stageUuid: "6be453f1-87ed-8ec5-8e59-7478f4faffee"
 version: 2
 ---
 # biophoton — the real light the body emits (ultraweak photon emission)

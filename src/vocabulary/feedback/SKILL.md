@@ -1,91 +1,34 @@
 ---
 name: feedback
 description: "Use when collecting, structuring, and acting on input from users, employees, or customers — surveys, reviews, suggestions, 360-degree feedback. The structured loop of input → analysis → action."
-atomPath: vocabulary/feedback
-coordinate: feedback · 7/descent · 8dadb4eb
-contentUuid: "727448d7-25bb-509e-a803-8d108bd4459f"
-diamondUuid: "acadde19-b953-8b7b-b576-e8e201bb487e"
-uuid: "8dadb4eb-f445-8cda-ac13-b3a81b9e0ad3"
-horo: 7
-bonds:
-  in:
-    - actionable
-    - comment
-    - engagement
-    - interview
-    - policy
-    - research
-    - reviews
-    - satisfaction
-    - science
-    - sentiment
-    - suggestion
-  out:
-    - actionable
-    - comment
-    - engagement
-    - interview
-    - policy
-    - research
-    - reviews
-    - satisfaction
-    - science
-    - sentiment
-    - suggestion
+atomPath: "vocabulary/feedback"
+coordinate: "vocabulary/feedback · 1/base · 2e0d7fe7"
+contentUuid: "53a6b9d0-e646-5876-b29b-a01e3f8574aa"
+diamondUuid: "88a9631d-29f3-89be-aa2b-315c17dcc890"
+uuid: "2e0d7fe7-ece7-8411-a3fe-d6dbadeb5b30"
+horo: 1
 typography:
-  partition: feedback
+  partition: vocabulary
   bondDegree: 33
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - comment
-    - interview
-    - research
-    - reviews
-    - satisfaction
-  matrix:
-    - actionable
-    - comment
-    - engagement
-    - interview
-    - policy
-    - research
-    - reviews
-    - satisfaction
-    - science
-    - sentiment
-    - suggestion
-  backlinks:
-    - actionable
-    - comment
-    - engagement
-    - interview
-    - policy
-    - research
-    - reviews
-    - satisfaction
-    - science
-    - sentiment
-    - suggestion
 signatures:
-  computationUuid: "7eeaa7b5-098f-85f0-9279-b8a12685f210"
+  computationUuid: "9144349f-6a48-86de-b494-caacdf1d77bd"
   stages:
     - stage: path
-      stageUuid: "bd658c2d-1d39-8217-ae8a-4de302b5ed51"
+      stageUuid: "c99b0b65-7d85-8cc5-bb93-233e46a59920"
     - stage: trinity
-      stageUuid: "e169b9ca-9844-8bb1-9d6b-ac335c9b75e1"
+      stageUuid: "e50c837f-bedf-8c90-97a1-2d81c70d689e"
     - stage: boundary
-      stageUuid: "4c220ce1-5f69-8454-9958-4130ee6f9809"
+      stageUuid: "b9ae1f5c-1f6d-8562-a748-20da44e14573"
     - stage: links
-      stageUuid: "7d37c4f8-0627-8c75-a54d-d13d0dc64ed5"
+      stageUuid: "6b1742db-e044-8744-bd1e-8a0d1b0c798b"
     - stage: horo
-      stageUuid: "13b27b12-ed3a-8986-90dd-6617fdbdb933"
+      stageUuid: "f89adec5-6c74-89ab-83e1-7d9afef457d6"
     - stage: seal
-      stageUuid: "dac4ed94-a565-8ef7-bb2c-83755b46dcca"
+      stageUuid: "5501dd5d-c860-8463-9dac-d7120a65ae2a"
     - stage: uuid
-      stageUuid: "f6d7e4e1-60f9-81d0-81ab-409db414de6b"
+      stageUuid: "3fe71989-e8be-8793-a9ac-07731fefaac8"
 version: 2
 ---
 # feedback

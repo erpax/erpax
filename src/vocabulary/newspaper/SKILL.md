@@ -1,53 +1,35 @@
 ---
 name: newspaper
 description: "Use when reasoning about newspaper — A publication containing information about varied topics that are pertinent to general information, a geographic area, or a specific subject matter (i.e. business, culture, educati"
-atomPath: vocabulary/newspaper
-coordinate: newspaper · 2/share · 74c35eb3
-contentUuid: "7a906476-4657-5aa6-a63d-9d8277c04a96"
-diamondUuid: "c48cf1f4-7a28-8791-9a9e-3dcac5012928"
-uuid: "74c35eb3-cfb3-8259-8764-1bc5dba0fa82"
-horo: 2
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/newspaper"
+coordinate: "vocabulary/newspaper · 8/crest · 68e6b6fc"
+contentUuid: "86fbd9cc-e856-5eb6-91c8-9daa705b951d"
+diamondUuid: "e91e0359-641e-82e3-953c-22c3d4e07e1f"
+uuid: "68e6b6fc-5c0d-8855-ae0d-dfa65f30dded"
+horo: 8
 typography:
-  partition: newspaper
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "5a0faac8-85e5-81b8-9dde-082dc2ba5d17"
+  computationUuid: "ba7381c4-6115-85ba-9fc6-0f4c9a7972b4"
   stages:
     - stage: path
-      stageUuid: "56576264-311a-8b5a-86cd-89cc8e223a22"
+      stageUuid: "d62172db-f6be-83e0-954c-a746b4d85e3b"
     - stage: trinity
-      stageUuid: "703f9f79-cb8f-86f6-8d0b-a82ef44d09ec"
+      stageUuid: "271de40b-5765-8de3-ae8b-8d1327a169eb"
     - stage: boundary
-      stageUuid: "c2c1639d-ecff-8ec2-ac8e-983fa37d7f1c"
+      stageUuid: "514d84bd-c09c-82a7-ad20-92aace1d1c9c"
     - stage: links
-      stageUuid: "be9f54f4-7381-801a-a6e7-3e389d9fc858"
+      stageUuid: "84ea1121-2b7c-8ba0-8422-5b8533123789"
     - stage: horo
-      stageUuid: "52dd32a8-8977-8b64-add6-e431d930bb82"
+      stageUuid: "80f56d1d-ce2d-865b-806d-ccd70e03af30"
     - stage: seal
-      stageUuid: "43ce4af4-ffaa-8682-91ea-5f955d0a1a6d"
+      stageUuid: "9b34a0a8-7847-8655-8f4b-43ec9c6541da"
     - stage: uuid
-      stageUuid: "e420f1c0-c667-8f8b-935e-ca4aee614599"
+      stageUuid: "c8c746b5-e256-8054-8c55-989ed955800a"
 version: 2
 ---
 # newspaper

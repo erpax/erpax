@@ -1,63 +1,35 @@
 ---
 name: hopats
 description: "Use when reasoning about hopats as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/hopats
-coordinate: hopats · 1/base · f9d2e42f
-contentUuid: "037ed55a-968d-5afe-afab-a2d3299219c6"
-diamondUuid: "1cb77f77-5de5-8664-874f-b18e8c15914b"
-uuid: "f9d2e42f-6ff3-8efa-a6fc-a7c70d6b686e"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/hopats"
+coordinate: "vocabulary/hopats · 7/descent · ba1fc38b"
+contentUuid: "8bbae8f9-15bd-5c5a-96d8-58d5de04dbe0"
+diamondUuid: "6920913d-4507-819e-84b5-3533b7f8fdec"
+uuid: "ba1fc38b-01e3-823e-a588-59ec650541fc"
+horo: 7
 typography:
-  partition: hopats
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "293255c2-0054-8614-a5b4-01312360e3f5"
+  computationUuid: "34885297-b45e-8207-9792-278088824c31"
   stages:
     - stage: path
-      stageUuid: "2c659ce4-a7c3-83a5-b64e-b05763540824"
+      stageUuid: "c42889e6-d019-87cb-bc2f-26a8ad350d66"
     - stage: trinity
-      stageUuid: "80ceffd2-0e03-8c4e-af45-b498bc7a99ac"
+      stageUuid: "54ebc30c-8395-891b-bfb0-25ab18b12450"
     - stage: boundary
-      stageUuid: "da3531e0-8dd7-8398-8e72-3d2ff56a2913"
+      stageUuid: "64a00188-415e-8213-9ae0-47caa1a5fb03"
     - stage: links
-      stageUuid: "22a42cea-5f2e-8258-8f6b-fdf70d6d02ea"
+      stageUuid: "00338467-d83a-8f06-b318-4b96e93ad490"
     - stage: horo
-      stageUuid: "13c2768f-06d7-8dc4-9a52-8c0c3813c558"
+      stageUuid: "618daed6-378e-8130-98a2-98029412a9cb"
     - stage: seal
-      stageUuid: "c246f062-d04f-8f92-99c2-dff000329c28"
+      stageUuid: "cf8a78cb-fd13-8ec0-89c0-8ab181c18edc"
     - stage: uuid
-      stageUuid: "a7791191-49a4-8fc5-a906-be0fd57dbe96"
+      stageUuid: "95230a21-612a-88e4-beb7-e0e469e6a9d6"
 version: 2
 ---
 # hopats

@@ -2,57 +2,19 @@
 name: symptom
 description: "Use when reasoning about symptom as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: symptom
-coordinate: symptom · 2/share · 38e2b324
-contentUuid: "754cf52d-f0a2-5019-869a-fb226d8dbf65"
-diamondUuid: "bf76baf4-c289-8169-9a11-3aedb15fc0b2"
-uuid: "38e2b324-1a11-8bef-8a5a-f84eafda869c"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - medical
-    - merge
-    - sign
-    - sti
-  out:
-    - collapse
-    - law
-    - medical
-    - merge
-    - sign
-    - sti
+coordinate: "symptom · 5/round · dedc8d0a"
+contentUuid: "7711e211-c79e-54a1-b5e9-617ffc78a280"
+diamondUuid: "9d9ccb9a-6ca3-8dba-92ee-01c68f777925"
+uuid: "dedc8d0a-c3a6-859f-870f-db681799eeda"
+horo: 5
 typography:
   partition: symptom
-  bondDegree: 20
-  neighbors: []
+  bondDegree: 27
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - medical
-    - merge
-    - sign
-    - sti
-  matrix:
-    - collapse
-    - law
-    - medical
-    - merge
-    - sign
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - medical
-    - merge
-    - sign
-    - sti
 signatures:
-  computationUuid: "cba4a568-4263-8880-af2e-fd3a6ee4c44a"
+  computationUuid: "aaf9a193-4ab4-8786-90da-6b5cbe28aaab"
   stages:
     - stage: path
       stageUuid: "5ea4118d-09d5-85dd-8967-4d2295dd8062"
@@ -63,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "078c787e-3857-8793-923d-e7e29f672422"
     - stage: horo
-      stageUuid: "209a677c-2b50-81a0-aa91-47a8f79a16f9"
+      stageUuid: "5b4f2c49-8c3b-8913-af37-26d6b079d801"
     - stage: seal
-      stageUuid: "bee69bf4-a837-812a-b592-bca2fbad53fd"
+      stageUuid: "e284131a-9344-80bc-a7f6-b4421762dd2f"
     - stage: uuid
-      stageUuid: "047bb3ce-e621-8735-8e39-9651d01a8158"
+      stageUuid: "0b5917c2-c0be-83b9-a9f8-a68060ad6f01"
 version: 2
 ---
 # symptom

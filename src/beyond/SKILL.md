@@ -2,85 +2,16 @@
 name: beyond
 description: "Use when implementing any next-horizon conservation primitive beyond the base laws — causal provenance, deterministic replay, tenant isolation, bitemporal queries, cost accountability, carbon-aware execution, agent capability (RBAC), post-quantum signatures, self-explainability, reversibility/crypto-shred, or AI-decision audit. The 11-primitive barrel for Laws 11–22."
 atomPath: beyond
-coordinate: "beyond · 8/crest · 9672112b"
-contentUuid: "21525827-6102-5321-8083-7293a531520a"
-diamondUuid: "e79f3efd-f44d-8dec-b399-826f818623f3"
-uuid: "9672112b-4b71-8cb0-bd7d-acabd118cd66"
+coordinate: "beyond · 8/crest · f0bd8add"
+contentUuid: "7081867e-c820-5260-a48c-c4afbcb37095"
+diamondUuid: "59607ae7-b4f5-88e2-b6e8-eea2f6ba9504"
+uuid: "f0bd8add-8c6e-884e-bd57-eb2d77a775ae"
 horo: 8
-bonds:
-  in:
-    - access
-    - bitemporal
-    - carbon
-    - close
-    - conversion
-    - cost
-    - duality
-    - event
-    - explainability
-    - fractal
-    - harden
-    - holographic
-    - hooks
-    - identity
-    - merge
-    - pqc
-    - privilege
-    - projection
-    - provenance
-    - replay
-    - reversibility
-    - sequence
-    - standard
-    - torus
-    - types
-  out:
-    - access
-    - bitemporal
-    - carbon
-    - close
-    - conversion
-    - cost
-    - duality
-    - event
-    - explainability
-    - fractal
-    - harden
-    - holographic
-    - hooks
-    - identity
-    - merge
-    - pqc
-    - privilege
-    - projection
-    - provenance
-    - replay
-    - reversibility
-    - sequence
-    - standard
-    - torus
-    - types
 typography:
   partition: beyond
   bondDegree: 0
-  neighbors: []
 standards:
-  - "EU-2011/83"
   - "EU-2016/679"
-  - "EU-2018/1673"
-  - "EU-2018/1725"
-  - "EU-2018/302"
-  - "EU-2018/389-SCA-RTS"
-  - "EU-2018/843"
-  - "EU-2018/957"
-  - "EU-2022/1925"
-  - "EU-2022/2065"
-  - "EU-2022/2554"
-  - "EU-2022/2555"
-  - "EU-2022/868"
-  - "EU-2024/1183"
-  - "EU-2024/1620"
-  - "EU-2024/1624"
   - "EU-AI-Act"
   - "EU-CSDDD-2024/1760"
   - "EU-CSRD"
@@ -99,74 +30,8 @@ standards:
   - XBRL
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - close
-    - duality
-    - event
-    - fractal
-    - harden
-    - holographic
-    - hooks
-    - identity
-    - merge
-    - sequence
-    - standard
-  matrix:
-    - access
-    - bitemporal
-    - carbon
-    - close
-    - conversion
-    - cost
-    - duality
-    - event
-    - explainability
-    - fractal
-    - harden
-    - holographic
-    - hooks
-    - identity
-    - merge
-    - pqc
-    - privilege
-    - projection
-    - provenance
-    - replay
-    - reversibility
-    - sequence
-    - standard
-    - torus
-    - types
-  backlinks:
-    - access
-    - bitemporal
-    - carbon
-    - close
-    - conversion
-    - cost
-    - duality
-    - event
-    - explainability
-    - fractal
-    - harden
-    - holographic
-    - hooks
-    - identity
-    - merge
-    - pqc
-    - privilege
-    - projection
-    - provenance
-    - replay
-    - reversibility
-    - sequence
-    - standard
-    - torus
-    - types
 signatures:
-  computationUuid: "e69f21d1-cab3-8922-94ef-292ef9ab24d7"
+  computationUuid: "03afbe04-6c41-8255-aff1-559a7a65953a"
   stages:
     - stage: path
       stageUuid: "177106db-95e3-8019-9888-f1a8dc3d6d6e"
@@ -175,13 +40,13 @@ signatures:
     - stage: boundary
       stageUuid: "aea6f962-8b09-8ad3-a0b3-7535eb9e4dcc"
     - stage: links
-      stageUuid: "7e15f3bc-8645-88c5-bd44-5e4c30af3433"
+      stageUuid: "67dbabec-4952-83bd-87a7-28262a186028"
     - stage: horo
-      stageUuid: "ec02759f-7a76-8a28-a0a2-9e7171ea4254"
+      stageUuid: "34a5cbcf-e7ed-8cf8-9b23-5a1343eabfb4"
     - stage: seal
       stageUuid: "75b3b9b9-bea0-85ef-8b31-9abb33117ad6"
     - stage: uuid
-      stageUuid: "8ff9c7df-ba72-8612-90b8-f5a840113f4c"
+      stageUuid: "d7c85c57-13fa-8bd7-a851-74bbf527ebcc"
 version: 2
 ---
 # beyond — 11 next-horizon conservation primitives (Laws 11–22)

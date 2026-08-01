@@ -1,124 +1,34 @@
 ---
 name: cropplan
 description: "Use when converting a sales/yield goal into what to grow, how much, when, and where — the crop plan (the what/how-much: quantities, seed, beds) and its spatial twin the field plan/map (the where: each succession assigned to a bed/block). The master planning document of a market farm; the backward demand→land calculation made concrete and recorded."
-atomPath: vocabulary/cropplan
-coordinate: cropplan · 7/descent · 000a71f1
-contentUuid: "1d6b0c66-2b4f-5ebb-a63a-8d0e859f6da8"
-diamondUuid: "f61b1cf1-f7d3-8b21-8158-a46293fcceb3"
-uuid: "000a71f1-3c4b-875a-bc12-e032bd32da23"
+atomPath: "vocabulary/cropplan"
+coordinate: "vocabulary/cropplan · 7/descent · 29e797de"
+contentUuid: "19fdc938-5402-5a14-a62a-7c42125db9ed"
+diamondUuid: "fd1bfee1-7cd4-8b70-ba32-38fd5b7b2609"
+uuid: "29e797de-3458-8ae9-a3e0-514bd97cbcc2"
 horo: 7
-bonds:
-  in:
-    - agriculture
-    - allocation
-    - crop
-    - enterprisebudget
-    - forecast
-    - harvest
-    - items
-    - law
-    - manufacturing
-    - planting
-    - rotation
-    - schedule
-    - season
-    - seed
-    - variant
-    - version
-    - yield
-  out:
-    - agriculture
-    - allocation
-    - crop
-    - enterprisebudget
-    - forecast
-    - harvest
-    - items
-    - law
-    - manufacturing
-    - planting
-    - rotation
-    - schedule
-    - season
-    - seed
-    - variant
-    - version
-    - yield
 typography:
-  partition: cropplan
+  partition: vocabulary
   bondDegree: 53
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - allocation
-    - crop
-    - forecast
-    - harvest
-    - law
-    - manufacturing
-    - planting
-    - rotation
-    - schedule
-    - season
-    - seed
-    - version
-    - yield
-  matrix:
-    - agriculture
-    - allocation
-    - crop
-    - enterprisebudget
-    - forecast
-    - harvest
-    - items
-    - law
-    - manufacturing
-    - planting
-    - rotation
-    - schedule
-    - season
-    - seed
-    - variant
-    - version
-    - yield
-  backlinks:
-    - agriculture
-    - allocation
-    - crop
-    - enterprisebudget
-    - forecast
-    - harvest
-    - items
-    - law
-    - manufacturing
-    - planting
-    - rotation
-    - schedule
-    - season
-    - seed
-    - variant
-    - version
-    - yield
 signatures:
-  computationUuid: "e25a8b0b-1736-8db3-a6d9-2ab1b127bb14"
+  computationUuid: "cdda57e3-fff9-8a02-a246-4630d6d7a821"
   stages:
     - stage: path
-      stageUuid: "3fce129a-850b-895a-9175-5226c73854f0"
+      stageUuid: "f27c968f-bb0d-83a9-b2a6-62b4ded9436e"
     - stage: trinity
-      stageUuid: "7b3f34e7-9b97-83af-9f9d-f52a32409cc8"
+      stageUuid: "d1aa40e8-3c4f-8251-9356-facee25fed18"
     - stage: boundary
-      stageUuid: "0497b643-7f6d-85f1-8b3a-df63b5156b02"
+      stageUuid: "730e9003-12c1-8535-8220-2630989b3990"
     - stage: links
-      stageUuid: "4d36b976-e690-83c9-b6c6-5b3c7dbeaf8e"
+      stageUuid: "fc5948fc-76fc-8c1f-b12f-da9feae498b8"
     - stage: horo
-      stageUuid: "5e631afe-becf-82e5-8ab6-3c16645619bf"
+      stageUuid: "9b669410-b9a2-82c8-a82d-0c46995aefd8"
     - stage: seal
-      stageUuid: "251c4bd7-0bfc-88d4-ad11-2a777a7ea179"
+      stageUuid: "a355186a-6b07-84bc-95f1-39827cd15a5b"
     - stage: uuid
-      stageUuid: "c7d8e7ae-ef2a-8254-b193-721d819f9b82"
+      stageUuid: "4b2f2695-c00a-8d58-8843-67a3858f1bf8"
 version: 2
 ---
 # cropplan — the document that turns a sales goal into what/how-much/when/where

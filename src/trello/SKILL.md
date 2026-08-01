@@ -2,49 +2,21 @@
 name: trello
 description: "Use when entangling an external REST system with erpax — the first worked proof that a third-party API becomes a one-word atom judged by the same constitution as everything else: a typed Trello client (key+token query auth, 300/10s per key and 100/10s per token as a continuous-refill token bucket that QUEUES a burst rather than dropping it), errors that propagate as TrelloError instead of being swallowed, and a Payload plugin whose record→card sync is idempotent on a stored card id."
 atomPath: trello
-coordinate: "trello · 7/descent · b462486f"
-contentUuid: "fc936f9f-2fba-55ec-a8be-ab2818fbe0d3"
-diamondUuid: "c3315619-cbb7-87ca-a895-f30fefd69a9f"
-uuid: "b462486f-e251-8d1c-94a4-fe941160b311"
-horo: 7
-bonds:
-  in:
-    - constitution
-    - convention
-    - law
-    - plugin
-  out:
-    - constitution
-    - convention
-    - law
-    - plugin
+coordinate: "trello · 5/round · 6fd00706"
+contentUuid: "21cccb16-ab78-5641-a98c-2cfca44de35d"
+diamondUuid: "fc086e34-095b-8bb9-9114-f76c56bd7a99"
+uuid: "6fd00706-9eee-87b0-a58f-ab0cc349c15a"
+horo: 5
 typography:
   partition: trello
-  bondDegree: 15
-  neighbors: []
+  bondDegree: 20
 standards:
   - "ISO/IEC 25010:2023 §5.7.2 fault-tolerance (a rate-limited burst queues; it does not drop)"
   - "RFC 6749 §1.4 bearer-credential (the token is the whole authority — env-only, never stored)"
   - "RFC-6749"
 bindings: []
-neighbors:
-  wikilink:
-    - constitution
-    - convention
-    - law
-    - plugin
-  matrix:
-    - constitution
-    - convention
-    - law
-    - plugin
-  backlinks:
-    - constitution
-    - convention
-    - law
-    - plugin
 signatures:
-  computationUuid: "a27697ef-342a-85fd-816b-1ba8dac90032"
+  computationUuid: "51ac15da-b5d9-80e9-ad06-4cf05be0a240"
   stages:
     - stage: path
       stageUuid: "f1f9c7eb-245e-8497-9f63-16d09458e5e0"
@@ -55,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "72bfbe57-f94c-8ef6-811c-697b7daf1d08"
     - stage: horo
-      stageUuid: "ec1153b2-1c8e-8a51-ac4b-92d3b6bbb6df"
+      stageUuid: "80744c88-9073-8332-a3cf-0d2d5dd4b212"
     - stage: seal
       stageUuid: "d25f7d7b-91b4-890e-9d13-c716236f283b"
     - stage: uuid
-      stageUuid: "3151659b-feb5-88ac-bbec-5ac4a51f049b"
+      stageUuid: "92d74bb8-2193-8e7d-8880-fcb42b9c663c"
 version: 2
 ---
 # trello — an external system becomes an entangled atom, not a swallowed dependency

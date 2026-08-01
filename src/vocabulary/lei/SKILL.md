@@ -1,68 +1,35 @@
 ---
 name: lei
 description: "Use when reasoning about lei as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/lei
-coordinate: lei · 7/descent · 5b90bb7d
-contentUuid: "167c9f76-e0bd-5433-87a4-e1aea71be8c3"
-diamondUuid: "29088f7f-173a-831a-b701-fbbc1726c387"
-uuid: "5b90bb7d-1098-879a-85cd-0279886deca4"
-horo: 7
-bonds:
-  in:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/lei"
+coordinate: "vocabulary/lei · 8/crest · 92c1c933"
+contentUuid: "bf7716a6-b859-53d7-aea4-7654cfb1ac4c"
+diamondUuid: "bd97f1b9-07ed-8320-b44b-fc64b5bb638b"
+uuid: "92c1c933-16ef-8322-9675-88ae4a291e10"
+horo: 8
 typography:
-  partition: lei
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - code
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "f52e80fe-faa4-8799-afb4-b29cd5562913"
+  computationUuid: "81009de2-6d56-89ca-b7b0-c8c44ec9d42b"
   stages:
     - stage: path
-      stageUuid: "11861611-1101-8d5d-9b47-ec087ae871ee"
+      stageUuid: "f607db26-2b17-88f2-a113-27e0a4b8e4ce"
     - stage: trinity
-      stageUuid: "fcff50c1-52ed-8b1c-bf16-1aedb64759a5"
+      stageUuid: "48fedbb8-70da-813b-add6-09523f904be0"
     - stage: boundary
-      stageUuid: "3587afb1-efdb-8e55-a3bd-f40bb66eb59b"
+      stageUuid: "c81112f0-1092-8aed-aee0-f0aad51e52f2"
     - stage: links
-      stageUuid: "d299ea51-be86-8e87-bc98-f483f1d2fa2b"
+      stageUuid: "70992312-3912-8bd9-9ea4-7a8fe3dbdb24"
     - stage: horo
-      stageUuid: "7bd98b36-c9aa-81c5-a69c-4dc4d6b909bf"
+      stageUuid: "69f65033-1114-8131-b664-8dbfbbe90dd8"
     - stage: seal
-      stageUuid: "3d3b9789-f756-848a-93b9-db98f2eeba81"
+      stageUuid: "6caa2715-bd1e-80a2-996e-3851361f7f39"
     - stage: uuid
-      stageUuid: "b8277a47-ed42-843c-aa03-f7d0fb57e81b"
+      stageUuid: "c09b8c05-cf77-8c6c-a60b-47ea883f18f0"
 version: 2
 ---
 # lei

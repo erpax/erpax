@@ -2,210 +2,20 @@
 name: body
 description: "Use when reasoning about erpax as ONE organism — the eight organs harmonized into a body. Each organ is sent through the wave mechanism; its horo position sounds a note and a colour (A432); composed, the organs span the full diatonic spectrum and rest at unity (the closing wave). The body harmonizes ⟺ every organ healthy ⊕ full-spectrum chord ⊕ folds to unity — wholeness renders as harmony, a failing organ as dissonance."
 atomPath: body
-coordinate: "body · 4/weave · f5cd43a1"
-contentUuid: "286b5cb2-92b6-5e1e-835a-4488c78aa0b1"
-diamondUuid: "729b16b0-1056-838e-96bb-cb59d0dc500a"
-uuid: "f5cd43a1-af3a-81c6-8f22-40859a7455c3"
-horo: 4
-bonds:
-  in:
-    - abdomen
-    - anatomy
-    - arm
-    - artery
-    - article
-    - aura
-    - auto
-    - blood
-    - brain
-    - coherence
-    - enumeration
-    - folder
-    - foot
-    - hand
-    - harmony
-    - head
-    - heart
-    - lake
-    - law
-    - leg
-    - location
-    - lung
-    - measurement
-    - memory
-    - merge
-    - nerve
-    - ocean
-    - one
-    - quantum
-    - review
-    - river
-    - sea
-    - shop
-    - signal
-    - skin
-    - taichi
-    - vein
-    - water
-    - wave
-  out:
-    - abdomen
-    - anatomy
-    - arm
-    - artery
-    - article
-    - aura
-    - auto
-    - blood
-    - brain
-    - coherence
-    - enumeration
-    - folder
-    - foot
-    - hand
-    - harmony
-    - head
-    - heart
-    - lake
-    - law
-    - leg
-    - location
-    - lung
-    - measurement
-    - memory
-    - merge
-    - nerve
-    - ocean
-    - one
-    - quantum
-    - review
-    - river
-    - sea
-    - shop
-    - signal
-    - skin
-    - taichi
-    - vein
-    - water
-    - wave
+coordinate: "body · 5/round · 7039e2a0"
+contentUuid: "b37c9aa4-e9ee-584c-9e77-7674e383a594"
+diamondUuid: "726abb67-44be-8a51-8085-dcd7e7acc3de"
+uuid: "7039e2a0-5ab9-8f44-a67f-dd4ac760d372"
+horo: 5
 typography:
   partition: body
-  bondDegree: 183
-  neighbors:
-    - aura
+  bondDegree: 181
 standards:
   - "the A432 just-intonation diatonic ring (the seven horo positions)"
   - "the A432 just-intonation diatonic ring — the seven horo positions as the seven notes"
 bindings: []
-neighbors:
-  wikilink:
-    - abdomen
-    - anatomy
-    - arm
-    - artery
-    - aura
-    - blood
-    - brain
-    - coherence
-    - foot
-    - hand
-    - harmony
-    - head
-    - heart
-    - law
-    - leg
-    - lung
-    - memory
-    - merge
-    - nerve
-    - one
-    - quantum
-    - signal
-    - skin
-    - vein
-    - wave
-  matrix:
-    - abdomen
-    - anatomy
-    - arm
-    - artery
-    - article
-    - aura
-    - auto
-    - blood
-    - brain
-    - coherence
-    - enumeration
-    - folder
-    - foot
-    - hand
-    - harmony
-    - head
-    - heart
-    - lake
-    - law
-    - leg
-    - location
-    - lung
-    - measurement
-    - memory
-    - merge
-    - nerve
-    - ocean
-    - one
-    - quantum
-    - review
-    - river
-    - sea
-    - shop
-    - signal
-    - skin
-    - taichi
-    - vein
-    - water
-    - wave
-  backlinks:
-    - abdomen
-    - anatomy
-    - arm
-    - artery
-    - article
-    - aura
-    - auto
-    - blood
-    - brain
-    - coherence
-    - enumeration
-    - folder
-    - foot
-    - hand
-    - harmony
-    - head
-    - heart
-    - lake
-    - law
-    - leg
-    - location
-    - lung
-    - measurement
-    - memory
-    - merge
-    - nerve
-    - ocean
-    - one
-    - quantum
-    - review
-    - river
-    - sea
-    - shop
-    - signal
-    - skin
-    - taichi
-    - vein
-    - water
-    - wave
 signatures:
-  computationUuid: "6b423883-4e09-88c9-9ce3-eceac3fbbcd3"
+  computationUuid: "d892b69e-9312-8052-896a-5048a124d582"
   stages:
     - stage: path
       stageUuid: "25cbb789-1b68-87df-9521-3a78713c0542"
@@ -216,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "8154f2a0-0d15-8789-95f3-37e177188a33"
     - stage: horo
-      stageUuid: "6c2a7146-b700-8e16-a1a9-6407208d09da"
+      stageUuid: "1af9922b-476e-8d78-9df9-947c113d1015"
     - stage: seal
       stageUuid: "80789d40-7b03-8f3a-a949-059c907b7ee2"
     - stage: uuid
-      stageUuid: "858cde87-8f0d-8895-8d19-ab4afec9ca31"
+      stageUuid: "9e11700a-ce97-8f8e-a2ed-d925b0a04f8b"
 version: 2
 ---
 # body — the organs harmonized (one organism)

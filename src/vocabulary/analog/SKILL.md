@@ -1,201 +1,34 @@
 ---
 name: analog
 description: "Use when reasoning about the aura as a CONTINUOUS computed signal — the uuid matrix renders every node's coordinate cross to an analog colour+sound+vibration field animated over A432, gaplessly at every fractal level and at no cost (derived from the uuid, never stored). The analog twin of the discrete content-fingerprint, and the verifiable answer to science's 'aura', whose only measurable form is an analog physical signal (biophoton flux, electrodermal conductance) — never a detectable subtle-energy field."
-atomPath: vocabulary/analog
-coordinate: analog · 4/weave · eee29d96
-contentUuid: "1beb15e1-fc13-5153-a179-e3dea4cd93c2"
-diamondUuid: "4ff9b9f7-d1d5-883c-9e9e-1831232ab3b4"
-uuid: "eee29d96-b621-835a-8762-292060de8869"
+atomPath: "vocabulary/analog"
+coordinate: "vocabulary/analog · 4/weave · 88686a1b"
+contentUuid: "c8f20691-9ba4-5d1d-9070-a30b5de228fe"
+diamondUuid: "025ccd05-3243-83de-92a1-b33e73ff6f3c"
+uuid: "88686a1b-1b08-8ef0-836c-6ae71ff2d6e7"
 horo: 4
-bonds:
-  in:
-    - aura
-    - axis
-    - biofield
-    - biomagnetism
-    - biophoton
-    - chart
-    - cmyk
-    - coherence
-    - coordinate
-    - cost
-    - development
-    - device
-    - digit
-    - duality
-    - emr
-    - fractal
-    - health
-    - holographic
-    - horo
-    - law
-    - link
-    - matrix
-    - notes
-    - observation
-    - pixel
-    - proof
-    - render
-    - rodin
-    - signal
-    - tamper
-    - uuid
-    - vibration
-    - vital
-  out:
-    - aura
-    - axis
-    - biofield
-    - biomagnetism
-    - biophoton
-    - chart
-    - cmyk
-    - coherence
-    - coordinate
-    - cost
-    - development
-    - device
-    - digit
-    - duality
-    - emr
-    - fractal
-    - health
-    - holographic
-    - horo
-    - law
-    - link
-    - matrix
-    - notes
-    - observation
-    - pixel
-    - proof
-    - render
-    - rodin
-    - signal
-    - tamper
-    - uuid
-    - vibration
-    - vital
 typography:
-  partition: analog
-  bondDegree: 109
-  neighbors:
-    - aura
+  partition: vocabulary
+  bondDegree: 121
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - aura
-    - axis
-    - biofield
-    - biophoton
-    - cmyk
-    - coherence
-    - coordinate
-    - cost
-    - duality
-    - emr
-    - fractal
-    - health
-    - holographic
-    - horo
-    - law
-    - link
-    - matrix
-    - notes
-    - observation
-    - proof
-    - rodin
-    - signal
-    - tamper
-    - uuid
-    - vibration
-    - vital
-  matrix:
-    - aura
-    - axis
-    - biofield
-    - biomagnetism
-    - biophoton
-    - chart
-    - cmyk
-    - coherence
-    - coordinate
-    - cost
-    - development
-    - device
-    - digit
-    - duality
-    - emr
-    - fractal
-    - health
-    - holographic
-    - horo
-    - law
-    - link
-    - matrix
-    - notes
-    - observation
-    - pixel
-    - proof
-    - render
-    - rodin
-    - signal
-    - tamper
-    - uuid
-    - vibration
-    - vital
-  backlinks:
-    - aura
-    - axis
-    - biofield
-    - biomagnetism
-    - biophoton
-    - chart
-    - cmyk
-    - coherence
-    - coordinate
-    - cost
-    - development
-    - device
-    - digit
-    - duality
-    - emr
-    - fractal
-    - health
-    - holographic
-    - horo
-    - law
-    - link
-    - matrix
-    - notes
-    - observation
-    - pixel
-    - proof
-    - render
-    - rodin
-    - signal
-    - tamper
-    - uuid
-    - vibration
-    - vital
 signatures:
-  computationUuid: "ad05d06f-e15c-8da4-91af-73360d0b7f57"
+  computationUuid: "f86948a7-0bcf-8166-981f-c87626b2d216"
   stages:
     - stage: path
-      stageUuid: "5bb10810-c41f-8527-a8da-3348a6990e3f"
+      stageUuid: "7e1d0ce1-f72f-8593-9d1b-f2c53cfac1ab"
     - stage: trinity
-      stageUuid: "a7c54b68-94ea-8d89-a0ed-ab5ea40d9105"
+      stageUuid: "23d80f03-38f3-84fd-bee7-4f23f4db8c0c"
     - stage: boundary
-      stageUuid: "4358858c-58dc-88d7-9bc6-57ff23d3ffa6"
+      stageUuid: "edcfee7b-5d3b-88d4-ba18-fc8a829bf962"
     - stage: links
-      stageUuid: "c5483d0e-62c7-89d1-baa3-e4cc7759f8da"
+      stageUuid: "88e348c2-b91d-8661-bc02-473ad4f6e0bc"
     - stage: horo
-      stageUuid: "d7ef123b-0f7c-823c-8741-bd14166f2df9"
+      stageUuid: "6d3da594-0140-8201-8705-1519d764dc41"
     - stage: seal
-      stageUuid: "9ab1b12f-9908-8a77-8093-554c302ac071"
+      stageUuid: "3a1d9304-4106-88fd-8065-f0a11064b60f"
     - stage: uuid
-      stageUuid: "29fa8007-2994-8bf4-97ba-0cb9ad999b8a"
+      stageUuid: "395b8dde-6b62-85b2-8175-a2ebd229f118"
 version: 2
 ---
 # analog — the continuous computed aura (gapless at every scale, at no cost)

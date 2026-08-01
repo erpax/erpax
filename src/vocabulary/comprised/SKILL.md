@@ -1,53 +1,35 @@
 ---
 name: comprised
 description: "Use when reasoning about comprised — Specifying something physically contained by something else. Typically used here for the underlying anatomical structures, such as organs, that comprise the anatomical system."
-atomPath: vocabulary/comprised
-coordinate: comprised · 5/round · bc81cb39
-contentUuid: "f8154ead-092a-565a-a7a4-97d99e106446"
-diamondUuid: "12689a22-170c-8636-b3c9-0fa132d0dfd1"
-uuid: "bc81cb39-30ce-8168-adc1-09379a36c96a"
-horo: 5
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/comprised"
+coordinate: "vocabulary/comprised · 2/share · a33af51a"
+contentUuid: "34af409c-8596-537d-a936-eaa6ab53dacc"
+diamondUuid: "6d1ca3e2-3766-836c-9985-8f8101ac78aa"
+uuid: "a33af51a-6759-8aa5-8b23-4d203a394c6a"
+horo: 2
 typography:
-  partition: comprised
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "22ad2d9c-1930-8128-ac84-e5d0780a4a9e"
+  computationUuid: "df37c738-9cab-8fc3-9bbc-535c62d99e35"
   stages:
     - stage: path
-      stageUuid: "c18ec934-ef0d-874d-99d3-3a12ec815e06"
+      stageUuid: "b742c0a0-8dce-8a37-ad88-353c805fc25e"
     - stage: trinity
-      stageUuid: "2f373799-444f-8343-ad7a-964e07489cbd"
+      stageUuid: "746532dc-f9ac-896c-ba8e-e548adbecffc"
     - stage: boundary
-      stageUuid: "89fe4685-afe3-8fdb-9a16-1acfd9354baa"
+      stageUuid: "4e050256-b0b9-816c-9a4f-05d809e3f13e"
     - stage: links
-      stageUuid: "05279039-e622-818a-a857-c5e3fe580954"
+      stageUuid: "cc7d4d79-39d3-865a-ad7f-bcd79169ae02"
     - stage: horo
-      stageUuid: "26f6d211-b937-8e81-9482-c77338f42e40"
+      stageUuid: "ac26e0a8-ea1a-886c-a2b3-66c7e2eacdff"
     - stage: seal
-      stageUuid: "b01eea92-6f61-8f26-bc8a-57746bed9ffd"
+      stageUuid: "6edfbeeb-b07b-8fa5-80d0-b4a14e817d10"
     - stage: uuid
-      stageUuid: "5640fd07-cafa-8815-b5a4-b4f4434e1c30"
+      stageUuid: "69552b57-4c49-8f63-ad3b-27ea90aafc71"
 version: 2
 ---
 # comprised

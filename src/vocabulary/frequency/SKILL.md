@@ -1,91 +1,35 @@
 ---
 name: frequency
 description: "Use when reasoning about frequency — How often the dose is taken, e.g. 'daily'."
-atomPath: vocabulary/frequency
-coordinate: frequency · 1/base · 49b37269
-contentUuid: "fffe8b42-01ed-56ba-893a-fea114aac066"
-diamondUuid: "483cbc96-54cc-89d6-8efb-9a378300248e"
-uuid: "49b37269-d00c-8954-8383-7bacc24dbf31"
-horo: 1
-bonds:
-  in:
-    - activity
-    - broadcast
-    - law
-    - loan
-    - payment
-    - photon
-    - repeat
-    - specification
-    - spectrum
-    - value
-  out:
-    - activity
-    - broadcast
-    - law
-    - loan
-    - payment
-    - photon
-    - repeat
-    - specification
-    - spectrum
-    - value
+atomPath: "vocabulary/frequency"
+coordinate: "vocabulary/frequency · 4/weave · 5038bc4c"
+contentUuid: "21f984fc-2469-5598-b58a-fc027f57dced"
+diamondUuid: "6f122426-f11b-8d8f-bb3f-a8a19df139b3"
+uuid: "5038bc4c-5038-87a1-91c8-b93984436be3"
+horo: 4
 typography:
-  partition: frequency
+  partition: vocabulary
   bondDegree: 35
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - activity
-    - broadcast
-    - law
-    - loan
-    - payment
-    - repeat
-    - specification
-    - value
-  matrix:
-    - activity
-    - broadcast
-    - law
-    - loan
-    - payment
-    - photon
-    - repeat
-    - specification
-    - spectrum
-    - value
-  backlinks:
-    - activity
-    - broadcast
-    - law
-    - loan
-    - payment
-    - photon
-    - repeat
-    - specification
-    - spectrum
-    - value
 signatures:
-  computationUuid: "c066be8c-3886-8132-9291-3f359f8ecbb6"
+  computationUuid: "5558b6d1-44fa-8770-b5b9-86fdb79a2e18"
   stages:
     - stage: path
-      stageUuid: "67d38505-d8b0-853d-85c3-ab2a85f77cdb"
+      stageUuid: "24136bb3-4319-89c9-acd7-5231d6f9b69d"
     - stage: trinity
-      stageUuid: "5b945f6f-a4da-8096-838b-fe74231cccbe"
+      stageUuid: "f9cbcb22-e237-8b1b-9638-96349c8399d6"
     - stage: boundary
-      stageUuid: "7d67fad8-9971-84e6-a651-95e1a19469a5"
+      stageUuid: "5c084060-b52a-892e-9c7a-963e392f9f58"
     - stage: links
-      stageUuid: "72626364-4188-8025-8bce-1b4aa40e820e"
+      stageUuid: "0b79dcc5-d83b-8ac4-a05d-804795cd7117"
     - stage: horo
-      stageUuid: "0805cc55-2245-8097-a178-1dada5d0c878"
+      stageUuid: "5aa6147d-2e00-89bc-b06d-895d61fd3f47"
     - stage: seal
-      stageUuid: "514b2c0d-690c-8038-963e-b193e521b159"
+      stageUuid: "bce50346-7ffd-8cad-9a6f-29308e8f0b12"
     - stage: uuid
-      stageUuid: "9cd0b431-0f04-8875-8c03-3eec3d07e8cd"
+      stageUuid: "f05c91c3-f704-8983-a9a6-dfdc1cc7946c"
 version: 2
 ---
 # frequency

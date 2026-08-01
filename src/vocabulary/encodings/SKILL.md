@@ -1,53 +1,35 @@
 ---
 name: encodings
 description: Use when reasoning about encodings — A media object that encodes this CreativeWork.
-atomPath: vocabulary/encodings
-coordinate: encodings · 4/weave · c4598970
-contentUuid: "6019bdcd-8bbb-5202-879e-d8a74000f109"
-diamondUuid: "ec79ecc8-a81f-8987-9e13-9537cab29faa"
-uuid: "c4598970-6f98-80d8-b708-a01da8843e0f"
-horo: 4
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/encodings"
+coordinate: "vocabulary/encodings · 5/round · f4ee0745"
+contentUuid: "1ac4a74c-867d-5184-a041-061e35ce8914"
+diamondUuid: "a9d6cd19-d543-8da7-a1fd-034dcb68e7db"
+uuid: "f4ee0745-a4e8-808a-93da-b818665ef719"
+horo: 5
 typography:
-  partition: encodings
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "f811ccd5-e94b-8445-94e4-8adb4547cef3"
+  computationUuid: "e69db3f5-3efa-8f2e-b76f-53a98bf787c8"
   stages:
     - stage: path
-      stageUuid: "a315a33f-8bd0-86de-878a-07b28413921a"
+      stageUuid: "ebd0371e-82a7-80a3-92c4-68decab21459"
     - stage: trinity
-      stageUuid: "a5272361-4ab1-8011-aa5f-e6b92eb0fadb"
+      stageUuid: "ec69aa0b-ab5b-89d6-80cb-3a51e826ed13"
     - stage: boundary
-      stageUuid: "ff454fe3-8521-80b7-bc13-27dfba56546d"
+      stageUuid: "7eac1d75-cd5f-8afe-b970-94839e39cd23"
     - stage: links
-      stageUuid: "b366cf1b-0937-80ba-aa4b-07eaea1b8557"
+      stageUuid: "a7b10507-dc71-87b3-96d0-6ebf7a3e4f15"
     - stage: horo
-      stageUuid: "50676973-22c0-888c-8d5e-5aef7a6e6b96"
+      stageUuid: "2c030e5d-0dfc-8485-9b9f-77ccfd6e693c"
     - stage: seal
-      stageUuid: "da4df436-0c24-839b-b2a9-038b5e8b400e"
+      stageUuid: "b9734836-a366-8f84-8a5e-0d46b79ba617"
     - stage: uuid
-      stageUuid: "893ea3c1-1dcc-881e-9528-7774634f9ea2"
+      stageUuid: "28b4455a-2f5d-8d61-8bf5-9b03847ed402"
 version: 2
 ---
 # encodings

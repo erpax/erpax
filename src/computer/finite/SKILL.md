@@ -2,45 +2,19 @@
 name: finite
 description: "Use when modeling finite-state machines — seal check FSM linking [[seal]] guardians to automata theory under [[computer]]."
 atomPath: "computer/finite"
-coordinate: "computer/finite · 8/crest · 2dff78fa"
-contentUuid: "77000574-46df-5577-8ee3-4eb28045b7f6"
-diamondUuid: "88dd0b06-8035-803e-b516-125e349e9661"
-uuid: "2dff78fa-2ff8-8b6c-a933-2170fde27a03"
-horo: 8
-bonds:
-  in:
-    - computer
-    - finite
-    - law
-    - seal
-  out:
-    - computer
-    - finite
-    - law
-    - seal
+coordinate: "computer/finite · 2/share · 629317af"
+contentUuid: "b0c7bed9-46d5-5feb-b33b-e2b277c671af"
+diamondUuid: "9fbc1481-66d3-811f-a53a-b15316f9b723"
+uuid: "629317af-3984-8456-a0ac-587794ab1b96"
+horo: 2
 typography:
   partition: computer
   bondDegree: 15
-  neighbors: []
 standards:
   - "finite-state machine (deterministic transitions)"
 bindings: []
-neighbors:
-  wikilink:
-    - finite
-    - law
-  matrix:
-    - computer
-    - finite
-    - law
-    - seal
-  backlinks:
-    - computer
-    - finite
-    - law
-    - seal
 signatures:
-  computationUuid: "2675409f-eb60-83f4-b94d-141260b9b5d7"
+  computationUuid: "6b73cd05-6511-8957-909d-94bade6e4115"
   stages:
     - stage: path
       stageUuid: "cedfbeda-5183-8114-a719-2b79812c47de"
@@ -51,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5dd7884d-b9a5-80e1-9909-a836de4644b9"
     - stage: horo
-      stageUuid: "394e6648-b593-87c2-85cb-0b6aa20e2531"
+      stageUuid: "c8299294-7083-8e30-943b-805d7c4f56c8"
     - stage: seal
       stageUuid: "914679fb-d19a-8c77-81dd-4ca7dda4eb5a"
     - stage: uuid
-      stageUuid: "931844f9-7226-8597-8599-8331e69840fc"
+      stageUuid: "f22b833f-b287-88e6-91e4-f8cc3a6cab4c"
 version: 2
 ---
 # computer/finite — finite-state automata

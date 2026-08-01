@@ -2,69 +2,19 @@
 name: graph
 description: "Use when traversing corpus bonds as a directed graph — matrix adjacency under [[computer]]; executable not glossary."
 atomPath: "computer/graph"
-coordinate: "computer/graph · 5/round · 0822aeff"
-contentUuid: "06219225-b6df-5e1d-bdd0-6c6911dd7440"
-diamondUuid: "123cf593-93b1-83c1-a30f-6afca364620e"
-uuid: "0822aeff-4bb3-8ff4-b557-0bb43668b47c"
-horo: 5
-bonds:
-  in:
-    - atom
-    - computer
-    - entanglement
-    - graph
-    - law
-    - link
-    - links
-    - matrix
-    - merge
-    - node
-    - quantum
-  out:
-    - atom
-    - entanglement
-    - graph
-    - law
-    - link
-    - links
-    - matrix
-    - merge
-    - node
-    - quantum
+coordinate: "computer/graph · 7/descent · 0960131d"
+contentUuid: "43fc563c-99c3-5382-8bb5-17855fb6415f"
+diamondUuid: "9df25390-8606-889e-a11f-568182f721ec"
+uuid: "0960131d-5bd5-848e-ba3e-50c5e5c1b18d"
+horo: 7
 typography:
   partition: computer
   bondDegree: 36
-  neighbors: []
 standards:
   - directed graph (nodes + edges)
 bindings: []
-neighbors:
-  wikilink:
-    - law
-  matrix:
-    - atom
-    - entanglement
-    - graph
-    - law
-    - link
-    - links
-    - matrix
-    - merge
-    - node
-    - quantum
-  backlinks:
-    - atom
-    - entanglement
-    - graph
-    - law
-    - link
-    - links
-    - matrix
-    - merge
-    - node
-    - quantum
 signatures:
-  computationUuid: "3f8f0537-6abd-896f-935a-923d20d031c2"
+  computationUuid: "7e285e76-6e90-891f-b27f-83804faaf949"
   stages:
     - stage: path
       stageUuid: "5d1f0380-5707-8442-877c-b9bd0bfa7447"
@@ -75,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "41ce8865-6e16-84ec-9878-f2edc34eb64a"
     - stage: horo
-      stageUuid: "b4a63568-df71-8877-a0fe-3888bca16b43"
+      stageUuid: "589c29cd-aafd-841a-af80-07a655e7f896"
     - stage: seal
       stageUuid: "49e5528a-3e63-8ad3-b687-7d44c8b1590c"
     - stage: uuid
-      stageUuid: "6a95ccad-d5d0-8107-a2c9-db1f7e775f15"
+      stageUuid: "b57e1a58-c4dd-8901-87a0-8150da5d07c1"
 version: 2
 ---
 # computer/graph — matrix adjacency

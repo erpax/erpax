@@ -1,83 +1,35 @@
 ---
 name: gallery
 description: "Use when reasoning about gallery as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/gallery
-coordinate: gallery · 8/crest · efa3bc13
-contentUuid: "95289cec-77fb-5b29-af4d-23ebb94ea41b"
-diamondUuid: "47339ce3-12e1-8e7a-86de-4f5bd78ebcc4"
-uuid: "efa3bc13-80b3-8c7f-bb1e-a141f0f3eac6"
-horo: 8
-bonds:
-  in:
-    - art
-    - collapse
-    - image
-    - law
-    - media
-    - merge
-    - sti
-    - video
-  out:
-    - art
-    - collapse
-    - image
-    - law
-    - media
-    - merge
-    - sti
-    - video
+atomPath: "vocabulary/gallery"
+coordinate: "vocabulary/gallery · 2/share · 90c6d8f7"
+contentUuid: "3b9c4bb6-958f-5db8-acdc-ea658dc4f137"
+diamondUuid: "dcc43652-3f76-80bf-bba6-65fa8ce746d2"
+uuid: "90c6d8f7-1872-8021-bbe1-a4cdf6e9e93e"
+horo: 2
 typography:
-  partition: gallery
-  bondDegree: 27
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 29
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - art
-    - collapse
-    - image
-    - law
-    - media
-    - merge
-    - sti
-    - video
-  matrix:
-    - art
-    - collapse
-    - image
-    - law
-    - media
-    - merge
-    - sti
-    - video
-  backlinks:
-    - art
-    - collapse
-    - image
-    - law
-    - media
-    - merge
-    - sti
-    - video
 signatures:
-  computationUuid: "4076ae03-a3a7-8a3e-9580-8dd24ef45127"
+  computationUuid: "327234b2-114d-8276-afb0-c75591caea85"
   stages:
     - stage: path
-      stageUuid: "c7d40380-678a-8151-b9c8-108fe0a34fb9"
+      stageUuid: "face9f25-3ac8-8930-b0cc-476bc168fc3e"
     - stage: trinity
-      stageUuid: "fbd422eb-84d7-8a0c-8c45-3094481579d8"
+      stageUuid: "b2f60e2b-8699-8914-bdf2-6ac4e7680095"
     - stage: boundary
-      stageUuid: "90acfbfa-f237-8817-a3e4-78324ee630b4"
+      stageUuid: "6d93b632-afb7-8f84-a1d8-725306433dea"
     - stage: links
-      stageUuid: "629e0c67-9f11-83ef-8884-29fb974f8777"
+      stageUuid: "af978966-fcf1-8c22-95f8-a902c775ce4e"
     - stage: horo
-      stageUuid: "88f28b15-d26b-8c8a-93ee-7b0d7a93c1ad"
+      stageUuid: "cec01a3b-f152-871e-9473-2d3cc632c2cc"
     - stage: seal
-      stageUuid: "e603acfe-deb3-8edf-9828-1f062fbb6382"
+      stageUuid: "8c637b8c-ae48-8390-8a45-a1132823bd2f"
     - stage: uuid
-      stageUuid: "b3b61bbf-919a-8a3f-bb44-18528ae08b4c"
+      stageUuid: "d5f65cf9-7c83-86e5-93fa-315a634e53e6"
 version: 2
 ---
 # gallery

@@ -2,48 +2,20 @@
 name: authenticated
 description: "Use when gating a Payload collection or field on a logged-in session — the access predicate that grants only when `req.user` exists, denying every anonymous caller."
 atomPath: authenticated
-coordinate: "authenticated · 1/base · 8d232ac2"
-contentUuid: "3028eaee-3552-5eb4-ad62-b862470274f4"
-diamondUuid: "25611be7-b82b-8e77-a482-1e45029a2ce4"
-uuid: "8d232ac2-7397-8457-a24d-4d69a42e68f6"
-horo: 1
-bonds:
-  in:
-    - access
-    - auth
-    - law
-  out:
-    - access
-    - auth
-    - law
+coordinate: "authenticated · 7/descent · 7c870518"
+contentUuid: "ca4f7e7e-6723-5364-94fc-ecb626608b41"
+diamondUuid: "5dc01d1d-7e7c-8a88-9e7c-a80de6a38acd"
+uuid: "7c870518-d3a8-8d70-a7b7-2aa568b71501"
+horo: 7
 typography:
   partition: authenticated
   bondDegree: 0
-  neighbors: []
 standards:
-  - "EU-2022/1925"
-  - "EU-2022/2065"
-  - "EU-2022/2554"
-  - "EU-2022/2555"
-  - "EU-2022/868"
   - "ISO/IEC-29119"
   - "SOC-2 CC6.1 logical-access-controls"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - auth
-    - law
-  matrix:
-    - access
-    - auth
-    - law
-  backlinks:
-    - access
-    - auth
-    - law
 signatures:
-  computationUuid: "017e07ad-9aab-8000-93ea-6c365d3bd935"
+  computationUuid: "575e6258-db24-831f-b129-b6174d4b65d1"
   stages:
     - stage: path
       stageUuid: "d354e2ad-c7ff-87b4-8a30-6d705d6c1a65"
@@ -54,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "c0389eea-483e-8038-8ce4-6072c8310497"
     - stage: horo
-      stageUuid: "0cd35a28-d20a-8b1a-a7cd-6401ce87ebc2"
+      stageUuid: "243bd79c-76ed-87d1-aa80-ca2b66629d04"
     - stage: seal
       stageUuid: "c25f34c6-a515-8e4f-8ee8-c9b8e6052639"
     - stage: uuid
-      stageUuid: "2d47122f-791a-80b1-8fbc-d5d08b5a22fb"
+      stageUuid: "9c450142-9bba-8539-ab54-494833f9ea37"
 version: 2
 ---
 # authenticated — logged-in read predicate

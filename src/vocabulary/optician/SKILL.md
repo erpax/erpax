@@ -1,53 +1,35 @@
 ---
 name: optician
 description: Use when reasoning about optician — A store that sells reading glasses and similar devices for improving vision.
-atomPath: vocabulary/optician
-coordinate: optician · 5/round · 2d08f8d6
-contentUuid: "a5c1b7f2-66e7-571b-a9fe-1fe03bca4cf7"
-diamondUuid: "a3858d2c-18f8-8300-860b-3d86ef53b7b7"
-uuid: "2d08f8d6-ec11-8a34-9a94-2b6e36bc5e62"
-horo: 5
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/optician"
+coordinate: "vocabulary/optician · 8/crest · 0c2d444a"
+contentUuid: "87abfb21-4427-51dc-b9a0-4754d82b24fc"
+diamondUuid: "55e35cc9-2bf8-8e86-b03d-9ccd924f9dda"
+uuid: "0c2d444a-fb53-8dd7-a6c8-9b816d4c9c01"
+horo: 8
 typography:
-  partition: optician
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "b2b8b798-fbdc-8122-b400-045e5902855e"
+  computationUuid: "f2fd5884-8cfc-8435-9336-d2bf4bc1d470"
   stages:
     - stage: path
-      stageUuid: "8b546ff6-8336-8366-ac35-6390ce7c441d"
+      stageUuid: "3eb70336-cc96-80b1-8be6-eb8187b71557"
     - stage: trinity
-      stageUuid: "5382ab5a-7bfe-896f-bdab-6c7b78210e57"
+      stageUuid: "cbe44289-6633-800b-81d6-f63308340008"
     - stage: boundary
-      stageUuid: "367b26b6-737f-8e6c-a803-0776c8c8b582"
+      stageUuid: "fbc5c2c9-ff0a-8205-a560-34aba14a7f3b"
     - stage: links
-      stageUuid: "2181fff5-3e28-8d2a-8958-f081dbf5f4fa"
+      stageUuid: "c534c625-5b3f-87b0-be55-ad2896fcfa61"
     - stage: horo
-      stageUuid: "8e271e84-c485-80cd-86bc-baed238af1c0"
+      stageUuid: "5a832dbf-1c98-8640-8713-173570ef92fb"
     - stage: seal
-      stageUuid: "848b8979-58a4-8dc2-b0d2-6304e121d7ec"
+      stageUuid: "1b86eb60-6978-8030-b2aa-9d57838b91ed"
     - stage: uuid
-      stageUuid: "27ab3f3b-a37e-8a06-a4eb-6bad071b5bf6"
+      stageUuid: "9d38b606-f6cb-8f74-b2a9-7f287da79622"
 version: 2
 ---
 # optician

@@ -2,90 +2,35 @@
 name: factory
 description: "Use when creating Payload collections from declarative metadata — createAccountingCollection injects audit fields, tamper-proof uuid, horo state ring, standards citations, and chain-event hooks so collection files carry only domain intent."
 atomPath: factory
-coordinate: "factory · 5/round · 58c56ad4"
-contentUuid: "09882094-d5b9-5ab8-99de-e9b699826098"
-diamondUuid: "5df68ad5-89dd-8acd-80fd-0919f2804b08"
-uuid: "58c56ad4-ca05-8f49-9a4e-b56c1971e925"
-horo: 5
-bonds:
-  in:
-    - collections
-    - diamond
-    - dimension
-    - fields
-    - hooks
-    - horo
-    - law
-    - signal
-    - standards
-    - uuid
-  out:
-    - collections
-    - diamond
-    - dimension
-    - fields
-    - hooks
-    - horo
-    - law
-    - signal
-    - standards
-    - uuid
+coordinate: "factory · 4/weave · 2b696730"
+contentUuid: "ff88ebf9-0bfc-54e8-9101-619c2e4965a2"
+diamondUuid: "d55b423c-06c8-8bc9-ac1b-44756a554a85"
+uuid: "2b696730-d25e-88f5-987a-b2b880cbce8f"
+horo: 4
 typography:
   partition: factory
-  bondDegree: 0
-  neighbors: []
+  bondDegree: 32
 standards:
+  - "EN-16931"
   - "ISA-95"
 bindings: []
-neighbors:
-  wikilink:
-    - collections
-    - diamond
-    - fields
-    - hooks
-    - horo
-    - law
-    - standards
-    - uuid
-  matrix:
-    - collections
-    - diamond
-    - dimension
-    - fields
-    - hooks
-    - horo
-    - law
-    - signal
-    - standards
-    - uuid
-  backlinks:
-    - collections
-    - diamond
-    - dimension
-    - fields
-    - hooks
-    - horo
-    - law
-    - signal
-    - standards
-    - uuid
 signatures:
-  computationUuid: "48852dd1-bb19-8e1c-95f0-54033024f1a3"
+  computationUuid: "b445c710-3230-8eca-b9fb-fa45452a6519"
   stages:
     - stage: path
       stageUuid: "ee1efea5-acdf-8b3b-8fda-09a0cf9f9d7a"
     - stage: trinity
-      stageUuid: "f26eb7ab-c50d-8b26-b6bf-941ebf91a840"
+      stageUuid: "4ad79492-ea13-8661-b71c-32ad4f231e39"
     - stage: boundary
       stageUuid: "5ed60c82-7fe9-8329-ab4a-2a8ce5f9d691"
     - stage: links
       stageUuid: "a39050ef-b09e-884f-aa49-edcde69ee09d"
     - stage: horo
-      stageUuid: "8296cafc-594c-8168-b166-c0133f389d88"
+      stageUuid: "96a2d781-ce5c-8049-8d7d-febaeff968f8"
     - stage: seal
-      stageUuid: "c2fdfd7a-6e45-886e-a333-8e98ec903306"
+      stageUuid: "34be0308-3103-8bb5-855a-d8630b87d46e"
     - stage: uuid
-      stageUuid: "ef871a2b-ba43-8a37-a3f7-f0d25ee75e21"
+      stageUuid: "abaceb41-a510-8d29-b2f8-f78f3df1cbed"
 version: 2
 ---
 # factory — declarative collection factory

@@ -1,57 +1,34 @@
 ---
 name: contingency
 description: Use when modelling one contingency — the singular model of the contingencies collection (the plural store); a possible obligation that depends on an uncertain future event.
-atomPath: vocabulary/contingency
-coordinate: contingency · 5/round · 865683fc
-contentUuid: "feaeeef8-14a8-52b1-ba31-cccc047da231"
-diamondUuid: "4ac1b515-9ccd-8457-9ec3-7eb1979f0390"
-uuid: "865683fc-7ffb-8d21-a0c0-ebce169a0dbe"
-horo: 5
-bonds:
-  in:
-    - accounting
-    - balance
-    - contingencies
-  out:
-    - accounting
-    - balance
-    - contingencies
+atomPath: "vocabulary/contingency"
+coordinate: "vocabulary/contingency · 8/crest · 34009d91"
+contentUuid: "9907e9e1-81cf-5861-956d-b7ac1fe585c2"
+diamondUuid: "736902f9-9fe9-8486-8462-6eded3c83159"
+uuid: "34009d91-1686-8299-bf2b-7e64825d3930"
+horo: 8
 typography:
-  partition: contingency
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - balance
-    - contingencies
-  matrix:
-    - accounting
-    - balance
-    - contingencies
-  backlinks:
-    - accounting
-    - balance
-    - contingencies
 signatures:
-  computationUuid: "c1e18e7f-747a-840c-b586-6d3b1c7aa4df"
+  computationUuid: "dbc8aa80-538e-8f02-bc47-76e74bf88ebe"
   stages:
     - stage: path
-      stageUuid: "3f5b8c2b-c807-8ad8-9c21-c701b4f45fbf"
+      stageUuid: "5e3fe6ae-a1f3-868c-93e4-1d8cfd4e5f72"
     - stage: trinity
-      stageUuid: "140e1fd6-ba77-8721-abb8-f5a543276c10"
+      stageUuid: "2337ac23-bd05-8e45-9a05-a6df3831f05d"
     - stage: boundary
-      stageUuid: "042b5346-c69d-838a-830a-6b4ccf427188"
+      stageUuid: "be3c325e-5de6-86ce-919b-c44f1fa45834"
     - stage: links
-      stageUuid: "5bcd067a-647b-8618-9279-b4b7676d61a2"
+      stageUuid: "d14d921d-e5bb-8def-92c1-c1f244cce7b1"
     - stage: horo
-      stageUuid: "34b3cf09-e52e-8c67-9ea8-2aa4441b5c59"
+      stageUuid: "99f50146-cbe1-8a06-a958-dd5a9da3a70b"
     - stage: seal
-      stageUuid: "94e93ad0-e330-8c3b-873f-ab4cca996506"
+      stageUuid: "f244a990-7222-8faf-921e-26344a98bea5"
     - stage: uuid
-      stageUuid: "fe25ce69-c873-8a20-9c51-5e381bd62792"
+      stageUuid: "49761c63-61ab-8c7c-afd8-5c57c3279a5c"
 version: 2
 ---
 # contingency — the model of one [[contingencies]] row

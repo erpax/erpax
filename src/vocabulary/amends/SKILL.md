@@ -1,68 +1,35 @@
 ---
 name: amends
 description: "Use when reasoning about amends as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/amends
-coordinate: amends · 4/weave · b6a6a66c
-contentUuid: "2437e120-0dc2-55c8-9d8e-f19cba665b8c"
-diamondUuid: "735d951a-adc9-8ba0-9fcd-3c56f78f60bf"
-uuid: "b6a6a66c-1fda-8dc7-ac24-c14db2cbb6ea"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
+atomPath: "vocabulary/amends"
+coordinate: "vocabulary/amends · 7/descent · 27e117be"
+contentUuid: "d02cce88-1822-5564-b1d0-c574958acdd2"
+diamondUuid: "6e8647b1-5b4c-8d7c-9e21-5cda8927278a"
+uuid: "27e117be-727e-8ec4-b2ec-56f9997e6948"
+horo: 7
 typography:
-  partition: amends
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
 signatures:
-  computationUuid: "bf4623f0-d2b2-88be-9d4f-85ef6dc5c629"
+  computationUuid: "e6c224ce-07b2-80b7-ba9f-5b441fef0ae8"
   stages:
     - stage: path
-      stageUuid: "1c939bf2-8346-8811-9eb3-ecca34bd8e4b"
+      stageUuid: "df6f0653-c83d-88ec-b231-e3b60ce41961"
     - stage: trinity
-      stageUuid: "8fe77fd5-9ccd-8d1b-b808-d62cac70defe"
+      stageUuid: "ac9cf1d2-0305-8541-bba7-da8953a1dc09"
     - stage: boundary
-      stageUuid: "625f961a-480b-82e6-8180-ef5862f0512b"
+      stageUuid: "69e53c46-b9ca-8dfd-a93b-b17162b67613"
     - stage: links
-      stageUuid: "fe2bded7-be3b-82c5-80a7-edb2dcced4c7"
+      stageUuid: "cebc926d-947a-81cb-a903-3ec6949a8135"
     - stage: horo
-      stageUuid: "62d896c2-b0f6-8f5d-a60c-4c6215d521d9"
+      stageUuid: "d162db7c-ffa5-8a91-8d86-31dc98e9f52f"
     - stage: seal
-      stageUuid: "3df1372c-72a7-8086-89f2-c878adcfbde0"
+      stageUuid: "4f01665c-f1ce-88dd-8b94-5b907c78fc58"
     - stage: uuid
-      stageUuid: "6dbb7d38-d9bc-8e58-8e1b-140eb9fea878"
+      stageUuid: "f22b4f56-7fc1-895d-8bd5-8a1186031a88"
 version: 2
 ---
 # amends

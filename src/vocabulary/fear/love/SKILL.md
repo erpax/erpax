@@ -1,168 +1,34 @@
 ---
 name: love
 description: "Use when reasoning about the destroy-over-create arrow — fear corrupting love, entropy winning, a gap opening; the reverse direction of the love and fear duality and the mirror of love/fear."
-atomPath: fear/love
-coordinate: fear/love · 8/crest · ddba4fcb
-contentUuid: "e5a66bfe-2c3b-5b4f-90a1-d655cdaae94a"
-diamondUuid: "00d87ab3-84fd-89f2-8f8a-224fd8204ad3"
-uuid: "ddba4fcb-85f4-85a5-ab1c-4e5cd2533104"
-horo: 8
-bonds:
-  in:
-    - angel
-    - atom
-    - bahai
-    - buddhism
-    - christianity
-    - confucianism
-    - cost
-    - duality
-    - entropy
-    - fear
-    - finality
-    - fs
-    - gravity
-    - heart
-    - hinduism
-    - karma
-    - law
-    - link
-    - love
-    - mercy
-    - merge
-    - quantum
-    - security
-    - sikhism
-    - snapshot
-    - society
-    - sufism
-    - tamper
-    - uuid
-  out:
-    - angel
-    - atom
-    - bahai
-    - buddhism
-    - christianity
-    - confucianism
-    - cost
-    - duality
-    - entropy
-    - fear
-    - finality
-    - fs
-    - gravity
-    - heart
-    - hinduism
-    - karma
-    - law
-    - link
-    - love
-    - mercy
-    - merge
-    - quantum
-    - security
-    - sikhism
-    - snapshot
-    - society
-    - sufism
-    - tamper
-    - uuid
+atomPath: "vocabulary/fear/love"
+coordinate: "vocabulary/fear/love · 4/weave · a6ca757d"
+contentUuid: "a6562e25-c66b-503c-b8ca-c3a464117db7"
+diamondUuid: "4e9de269-4592-8b27-b132-137b2a80d43a"
+uuid: "a6ca757d-7af5-8a82-9a26-c9fb471dcf3e"
+horo: 4
 typography:
-  partition: fear
-  bondDegree: 103
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 118
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - cost
-    - duality
-    - entropy
-    - fear
-    - karma
-    - law
-    - love
-    - proof
-    - tamper
-  matrix:
-    - angel
-    - atom
-    - bahai
-    - buddhism
-    - christianity
-    - confucianism
-    - cost
-    - duality
-    - entropy
-    - fear
-    - finality
-    - fs
-    - gravity
-    - heart
-    - hinduism
-    - karma
-    - law
-    - link
-    - love
-    - mercy
-    - merge
-    - quantum
-    - security
-    - sikhism
-    - snapshot
-    - society
-    - sufism
-    - tamper
-    - uuid
-  backlinks:
-    - angel
-    - atom
-    - bahai
-    - buddhism
-    - christianity
-    - confucianism
-    - cost
-    - duality
-    - entropy
-    - fear
-    - finality
-    - fs
-    - gravity
-    - heart
-    - hinduism
-    - karma
-    - law
-    - link
-    - love
-    - mercy
-    - merge
-    - quantum
-    - security
-    - sikhism
-    - snapshot
-    - society
-    - sufism
-    - tamper
-    - uuid
 signatures:
-  computationUuid: "100429be-5b54-8a90-84a6-92599894c3c2"
+  computationUuid: "f863dbb4-f462-8b0b-a05f-98046b0cb250"
   stages:
     - stage: path
-      stageUuid: "abdf32ec-d718-89f1-98f8-674fda45467f"
+      stageUuid: "0af6e11b-10b2-895d-9d2a-d4d4332942c7"
     - stage: trinity
-      stageUuid: "9fde0e4f-d01b-88c3-89c2-2c89b6329c70"
+      stageUuid: "0a000d7c-d0ec-8fc2-b475-b1d75c0a76fa"
     - stage: boundary
-      stageUuid: "c5b4cc7e-cc73-835b-8e37-c6a840e45cd7"
+      stageUuid: "a36631d6-9c0f-8a93-8029-1fd3db401e5d"
     - stage: links
-      stageUuid: "8d70eadb-1e38-8bc5-80b8-abf0c91c2447"
+      stageUuid: "38a0edfd-6d63-8213-93c6-58e2ec4e9db0"
     - stage: horo
-      stageUuid: "bfe3578e-2f57-8e40-94e7-322b99964884"
+      stageUuid: "f65813f8-456b-850a-9e31-39d9c83a2a17"
     - stage: seal
-      stageUuid: "6b5a6274-cbc5-8f2b-b0be-a603e3688985"
+      stageUuid: "97a67f69-6f4b-8a79-bd57-3f201394a424"
     - stage: uuid
-      stageUuid: "cd627abb-d130-816f-8736-1eb865de976a"
+      stageUuid: "eb03e2e6-2ca0-8932-b718-1c276e7c9401"
 version: 2
 ---
 # fear/love — fear over love (the +entropy arrow)

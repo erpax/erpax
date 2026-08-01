@@ -1,116 +1,34 @@
 ---
 name: linearity
 description: "Use when reasoning about why erpax stays even and collision-free — quantum linearity is the superposition principle made structural; the content-uuid hash distributes every word and digit uniformly, so atoms form perfect lines (no clumping, no privileged point), merge is a linear set-union, and in the double torus gravity reads double."
-atomPath: vocabulary/linearity
-coordinate: linearity · 2/share · 86eebf20
-contentUuid: "71ebcf2e-5786-5e90-bef3-2a06265157a4"
-diamondUuid: "aaae4d61-fcb6-89d5-8f31-d08f5514d14e"
-uuid: "86eebf20-c1d4-8c79-8b61-e40a0ecbef30"
+atomPath: "vocabulary/linearity"
+coordinate: "vocabulary/linearity · 2/share · 6aaca07f"
+contentUuid: "ba403469-154b-53f0-a31b-64d0c878aaca"
+diamondUuid: "50b2aff0-9537-8b0c-967e-344fab1be8c3"
+uuid: "6aaca07f-1e08-85f3-976f-0f15aba7f6cc"
 horo: 2
-bonds:
-  in:
-    - digit
-    - entropy
-    - gravity
-    - holographic
-    - literature
-    - matrix
-    - merge
-    - number
-    - pi
-    - quantum
-    - request
-    - rodin
-    - sync
-    - torus
-    - uuid
-    - word
-  out:
-    - digit
-    - entropy
-    - gravity
-    - holographic
-    - literature
-    - matrix
-    - merge
-    - number
-    - pi
-    - quantum
-    - request
-    - rodin
-    - sync
-    - torus
-    - uuid
-    - word
 typography:
-  partition: linearity
+  partition: vocabulary
   bondDegree: 48
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - digit
-    - entropy
-    - gravity
-    - holographic
-    - matrix
-    - merge
-    - rodin
-    - torus
-    - uuid
-    - word
-  matrix:
-    - digit
-    - entropy
-    - gravity
-    - holographic
-    - literature
-    - matrix
-    - merge
-    - number
-    - pi
-    - quantum
-    - request
-    - rodin
-    - sync
-    - torus
-    - uuid
-    - word
-  backlinks:
-    - digit
-    - entropy
-    - gravity
-    - holographic
-    - literature
-    - matrix
-    - merge
-    - number
-    - pi
-    - quantum
-    - request
-    - rodin
-    - sync
-    - torus
-    - uuid
-    - word
 signatures:
-  computationUuid: "0759de05-3b3f-8b0d-85b7-68008f217b22"
+  computationUuid: "13a7e2ac-dac2-84ef-a0b7-ae5a62db6c3d"
   stages:
     - stage: path
-      stageUuid: "f200a2ed-0f35-859a-a727-bdd41f0601d4"
+      stageUuid: "f6771a0a-55b6-8491-a283-22f76d80625a"
     - stage: trinity
-      stageUuid: "ff0d89cd-7569-8f6d-a6a4-7ee7c9b4a1de"
+      stageUuid: "fb9ab342-7b05-80b4-8b5e-9b367172e4a3"
     - stage: boundary
-      stageUuid: "2e709f4e-c16d-8e7e-bdb8-4dfcc1318fc1"
+      stageUuid: "06d1a5b7-8b5d-8350-9897-7d3b77a17bf7"
     - stage: links
-      stageUuid: "47716ab3-fdc1-811f-b10b-e2eeaef50296"
+      stageUuid: "e0274363-1311-8988-91b5-1d52839e34fc"
     - stage: horo
-      stageUuid: "dd74277d-6b82-8e85-a9ef-00116011faab"
+      stageUuid: "e8882498-4230-8e61-b77b-03725c317c95"
     - stage: seal
-      stageUuid: "1bd72804-a7d6-8a58-9315-4d06faa81652"
+      stageUuid: "46adc9e8-f96f-8bbf-8a37-5661bd57524c"
     - stage: uuid
-      stageUuid: "1cab69a4-efa6-8474-a1de-ef38fbc62a00"
+      stageUuid: "6d477ef5-37b1-838e-95e5-cb642cffb7a7"
 version: 2
 ---
 # linearity — quantum linearity (the even line)

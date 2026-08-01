@@ -2,37 +2,14 @@
 name: obligations
 description: "Use when decomposing a contract into its distinct promises for IFRS-15 §22 revenue allocation — kind (distinct or series), recognition timing (point-in-time §38 or over-time §35), progress measurement method, standalone selling price, and allocated amount. The IFRS-15 performance-obligation collection."
 atomPath: "customers/contracts/performance/obligations"
-coordinate: "customers/contracts/performance/obligations · 2/share · b7d22288"
-contentUuid: "2390a7e1-9cb7-5da1-a3b5-1813cf3abf9e"
-diamondUuid: "2584d15a-0c46-870f-9576-da006e724c57"
-uuid: "b7d22288-d2d3-8275-b6e6-1a98a1a98b45"
-horo: 2
-bonds:
-  in:
-    - accounting
-    - auth
-    - contracts
-    - hooks
-    - law
-    - obligation
-    - performance
-    - performances
-    - revenue
-    - standard
-  out:
-    - accounting
-    - auth
-    - contracts
-    - hooks
-    - law
-    - obligation
-    - performances
-    - revenue
-    - standard
+coordinate: "customers/contracts/performance/obligations · 8/crest · 2acfa524"
+contentUuid: "624090ac-9684-54c9-8776-63c97731511f"
+diamondUuid: "5a2b9470-a5b8-8d38-8b3e-460e48be255d"
+uuid: "2acfa524-919a-8ec2-8356-b8c814aa24e9"
+horo: 8
 typography:
   partition: customers
   bondDegree: 28
-  neighbors: []
 standards:
   - "IFRS IFRS-15 §22 distinct-performance-obligation"
   - "IFRS IFRS-15 §31 satisfaction-of-performance-obligation"
@@ -48,36 +25,8 @@ standards:
   - "US-GAAP ASC-606-10-25-31 progress-measurement"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - auth
-    - contracts
-    - hooks
-    - law
-    - standard
-  matrix:
-    - accounting
-    - auth
-    - contracts
-    - hooks
-    - law
-    - obligation
-    - performances
-    - revenue
-    - standard
-  backlinks:
-    - accounting
-    - auth
-    - contracts
-    - hooks
-    - law
-    - obligation
-    - performances
-    - revenue
-    - standard
 signatures:
-  computationUuid: "b9628698-2ce8-891f-9aa1-b3ae68e9b008"
+  computationUuid: "36041e0b-d2e1-87fb-8a52-7cfd52ec27e3"
   stages:
     - stage: path
       stageUuid: "fc62e037-117b-8f30-b5d8-f0d29725b571"
@@ -88,11 +37,11 @@ signatures:
     - stage: links
       stageUuid: "f57ced79-e4e8-8742-acc5-a4b95f239144"
     - stage: horo
-      stageUuid: "127d0cd5-103d-86a9-bfcd-4517fda34d9d"
+      stageUuid: "396d19e1-f934-81d8-a136-4f1d50109d53"
     - stage: seal
       stageUuid: "545c13c8-0931-85dd-9f7c-b290e53396c4"
     - stage: uuid
-      stageUuid: "7c562500-3cf2-8ce9-b32a-5f84f38faf9c"
+      stageUuid: "3b48424e-10d7-8798-874b-a773c7effb0b"
 version: 2
 ---
 # performance-obligations

@@ -2,98 +2,19 @@
 name: logic
 description: "Use when reasoning about correctness/consistency in the horo society — consistency IS harmony (a claim is sound iff harmonic: on the horo ring / gate-verified), inference must preserve harmony, and the harmonic-FIRST law orders resolution: self-consistent agents interact with themselves (no external coordination needed), so they resolve first and win the competition. The reasoning substrate education is acquired through and competition selects on."
 atomPath: logic
-coordinate: "logic · 4/weave · 70364332"
-contentUuid: "f8781040-2096-5367-86ee-9ba1a6ae72a2"
-diamondUuid: "214e2691-bec5-8a78-b89a-af9f13f6428d"
-uuid: "70364332-63f6-8892-8053-671889cd3d1f"
-horo: 4
-bonds:
-  in:
-    - competition
-    - decide
-    - education
-    - element
-    - holographic
-    - horo
-    - law
-    - merge
-    - peace
-    - proof
-    - rodin
-    - science
-    - self
-    - sequence
-    - society
-  out:
-    - competition
-    - decide
-    - education
-    - element
-    - holographic
-    - horo
-    - law
-    - merge
-    - peace
-    - proof
-    - rodin
-    - science
-    - self
-    - sequence
-    - society
+coordinate: "logic · 5/round · b43283ab"
+contentUuid: "413fc43e-647a-5c1b-ac02-a3188057db4b"
+diamondUuid: "6eae50f3-a1c0-8bae-a8f0-d7404e520be7"
+uuid: "b43283ab-791b-85ac-bf9f-7b26909d95f9"
+horo: 5
 typography:
   partition: logic
   bondDegree: 46
-  neighbors: []
 standards:
   - classical propositional consistency (no P ∧ ¬P) grounded in the horo ring
 bindings: []
-neighbors:
-  wikilink:
-    - competition
-    - education
-    - holographic
-    - horo
-    - law
-    - merge
-    - proof
-    - rodin
-    - self
-    - sequence
-    - society
-  matrix:
-    - competition
-    - decide
-    - education
-    - element
-    - holographic
-    - horo
-    - law
-    - merge
-    - peace
-    - proof
-    - rodin
-    - science
-    - self
-    - sequence
-    - society
-  backlinks:
-    - competition
-    - decide
-    - education
-    - element
-    - holographic
-    - horo
-    - law
-    - merge
-    - peace
-    - proof
-    - rodin
-    - science
-    - self
-    - sequence
-    - society
 signatures:
-  computationUuid: "7bc2e23f-2dd7-8c1f-b4a0-cef191047c21"
+  computationUuid: "c805ed28-8c8a-8ae2-9a61-e4cbc3203eb0"
   stages:
     - stage: path
       stageUuid: "087bb473-992f-86b8-9199-9d48aae601ed"
@@ -104,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "871eb0c1-3fee-8f79-a1e8-49f952d9a4a7"
     - stage: horo
-      stageUuid: "8893f6f3-fe84-8046-886e-dc41de811f38"
+      stageUuid: "227b2818-3db4-82d5-861d-5de4155d0ec5"
     - stage: seal
       stageUuid: "c9404cc7-1544-86db-b62f-6c93843ceea1"
     - stage: uuid
-      stageUuid: "73d9a553-954f-8282-a22a-a223b146fe94"
+      stageUuid: "2078111e-4ef4-8dd7-b3b3-f81f1ec90e43"
 version: 2
 ---
 # logic — consistency is harmony; the harmonic resolve first

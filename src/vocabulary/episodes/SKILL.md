@@ -1,53 +1,35 @@
 ---
 name: episodes
-description: Use when reasoning about episodes — An episode of a TV/radio series or season.
-atomPath: vocabulary/episodes
-coordinate: episodes · 1/base · 68107f8e
-contentUuid: "7fe17c5a-88c5-5f07-b4df-540053a89a21"
-diamondUuid: "495575d7-2034-866f-a784-8dc0869e7a5d"
-uuid: "68107f8e-2a88-87e4-aa76-a7b7b50cd728"
-horo: 1
-bonds:
-  in:
-    - law
-    - number
-  out:
-    - law
-    - number
+description: "Use when reasoning about episodes — An episode of a TV/radio series or season."
+atomPath: "vocabulary/episodes"
+coordinate: "vocabulary/episodes · 7/descent · a2362a20"
+contentUuid: "40179a73-08ec-57a8-bd6e-9e033110b8c4"
+diamondUuid: "82cf310b-6418-8d82-ac74-c8fa7fc56590"
+uuid: "a2362a20-4316-823a-a8a0-3f9a98060fbd"
+horo: 7
 typography:
-  partition: episodes
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - number
-  matrix:
-    - law
-    - number
-  backlinks:
-    - law
-    - number
 signatures:
-  computationUuid: "471ac86d-410b-8fbe-9fa4-5265667e4b0f"
+  computationUuid: "7c5eda63-c20d-82a5-b799-1c24e080d410"
   stages:
     - stage: path
-      stageUuid: "6b5cee85-8b21-8821-b8d0-80811b5b6415"
+      stageUuid: "fd317e7f-a62f-839b-874b-1d5c61d20af0"
     - stage: trinity
-      stageUuid: "3c0598d1-252f-86eb-b36b-bc10fc71b0a4"
+      stageUuid: "f8362b5a-bb96-8b07-a838-19807377871f"
     - stage: boundary
-      stageUuid: "9d8ceeb5-a919-8b6c-adc8-53c014a5db0d"
+      stageUuid: "1ed00e70-9517-865f-a2e6-ee2752760917"
     - stage: links
-      stageUuid: "8798ea27-6501-8440-baf4-40ed85eae7d9"
+      stageUuid: "43eb6c96-e13e-805a-89a9-c2e6fef7633e"
     - stage: horo
-      stageUuid: "9b39101e-2bab-8a6b-96e3-02c3f565281a"
+      stageUuid: "74497f50-2315-8193-a598-6fb61b91f673"
     - stage: seal
-      stageUuid: "b8a97ffc-7ef1-8020-a0e8-aa756ac9ec33"
+      stageUuid: "416b8816-36b6-8795-a616-2a14e4708f64"
     - stage: uuid
-      stageUuid: "c12ff65d-7991-8821-a2a8-003b1cd42b74"
+      stageUuid: "fb65a4df-47f9-8587-b398-7bc4b4c6aa99"
 version: 2
 ---
 # episodes

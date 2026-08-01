@@ -2,94 +2,24 @@
 name: items
 description: "Use when managing the product/service catalogue — code, SKU, GTIN barcode, pricing, VAT rate, inventory quantity, GL posting; EN-16931 BG-31 item-information, UNSPSC classification. The items collection."
 atomPath: items
-coordinate: "items · 1/base · 17839cef"
-contentUuid: "94582fa5-5259-5ca0-a149-83c6a78e772c"
-diamondUuid: "6ffe0508-f1a1-8a92-8bca-6d5d7c554d5a"
-uuid: "17839cef-7e07-8956-b1c2-ebc3141f8f80"
+coordinate: "items · 1/base · ce26a8c2"
+contentUuid: "3351dc09-4d93-554b-a00f-e7da544e8839"
+diamondUuid: "5253f0dc-4aaa-8e54-ad48-bdbfc6d48cf9"
+uuid: "ce26a8c2-8f7e-8933-a4df-d31b9a9178a7"
 horo: 1
-bonds:
-  in:
-    - agriculture
-    - apiculture
-    - aquaculture
-    - batches
-    - biomass
-    - bundle
-    - crop
-    - cropplan
-    - currency
-    - declarations
-    - forestry
-    - harvest
-    - inspections
-    - lactation
-    - law
-    - lines
-    - livestock
-    - materials
-    - measure
-    - merge
-    - movements
-    - num
-    - orders
-    - packages
-    - packs
-    - postharvest
-    - quotes
-    - seed
-    - share
-    - upsell
-    - variant
-  out:
-    - agriculture
-    - apiculture
-    - aquaculture
-    - batches
-    - biomass
-    - bundle
-    - crop
-    - cropplan
-    - currency
-    - declarations
-    - forestry
-    - harvest
-    - inspections
-    - lactation
-    - law
-    - lines
-    - livestock
-    - materials
-    - measure
-    - merge
-    - movements
-    - num
-    - orders
-    - packages
-    - packs
-    - postharvest
-    - quotes
-    - seed
-    - share
-    - upsell
-    - variant
 typography:
   partition: items
   bondDegree: 0
-  neighbors: []
 standards:
   - "EN-16931:2017 §BG-31 item-information"
   - "EN-16931:2017 §BG-31 item-information`"
   - "EU-1007/2011 textile-fibre-names + composition-labelling (the `contents` field)"
-  - "EU-2005/29"
-  - "EU-2011/83"
-  - "EU-2014/55"
   - "EU-537/2014"
   - "EU-910/2014"
   - "EU-VAT-Implementing-Reg-282/2011"
   - "GS1 GTIN global-trade-item-number"
   - "GS1-GTIN"
   - "IFRS IAS-2 inventories"
-  - "ILO-C100"
   - "INCOTERMS-2020"
   - "ISA-95"
   - "ISO-22400-2"
@@ -103,89 +33,8 @@ standards:
   - "US-GAAP ASC-330 inventory"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - batches
-    - crop
-    - cropplan
-    - currency
-    - inspections
-    - law
-    - materials
-    - measure
-    - merge
-    - movements
-    - orders
-    - packages
-    - packs
-    - seed
-    - share
-  matrix:
-    - agriculture
-    - apiculture
-    - aquaculture
-    - batches
-    - biomass
-    - bundle
-    - crop
-    - cropplan
-    - currency
-    - declarations
-    - forestry
-    - harvest
-    - inspections
-    - lactation
-    - law
-    - lines
-    - livestock
-    - materials
-    - measure
-    - merge
-    - movements
-    - num
-    - orders
-    - packages
-    - packs
-    - postharvest
-    - quotes
-    - seed
-    - share
-    - upsell
-    - variant
-  backlinks:
-    - agriculture
-    - apiculture
-    - aquaculture
-    - batches
-    - biomass
-    - bundle
-    - crop
-    - cropplan
-    - currency
-    - declarations
-    - forestry
-    - harvest
-    - inspections
-    - lactation
-    - law
-    - lines
-    - livestock
-    - materials
-    - measure
-    - merge
-    - movements
-    - num
-    - orders
-    - packages
-    - packs
-    - postharvest
-    - quotes
-    - seed
-    - share
-    - upsell
-    - variant
 signatures:
-  computationUuid: "35de5f4d-0f99-8bde-bd4c-f20eae7ca612"
+  computationUuid: "76a5f910-b9ce-82dc-bdfd-70ccfe4558d1"
   stages:
     - stage: path
       stageUuid: "966285a0-056b-8fe0-94b4-9ced326c71b1"
@@ -196,11 +45,11 @@ signatures:
     - stage: links
       stageUuid: "31c384c8-dc3b-8450-828d-f1e9bbe391aa"
     - stage: horo
-      stageUuid: "c342ec3d-5539-8ac2-a888-9641f78996e5"
+      stageUuid: "0f211170-3e9a-86ff-a60b-4da377c9d16b"
     - stage: seal
       stageUuid: "cc10ed21-6c84-8c19-9834-5e61d6462f11"
     - stage: uuid
-      stageUuid: "a8d22e3c-a749-840c-a843-cab17fc1f77e"
+      stageUuid: "6a1fd89c-d27e-8645-8b28-092faf83e39f"
 version: 2
 ---
 # items

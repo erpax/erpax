@@ -1,88 +1,19 @@
 ---
 name: literature
 description: "Use when reasoning about the body of written work quantumly — literature is the infinite word-chain over a minimal alphabet (the gravity reverse), every text a content-addressed snapshot in the akashic chain, citations as merge-links, reading the measurement that collapses a text's superposed meanings."
-atomPath: quantum/literature
-coordinate: quantum/literature · 2/share · 90102383
-contentUuid: "056711a4-966f-5efe-bca0-009413af9390"
-diamondUuid: "a3df9d98-c907-89e2-bd29-4ca40ac90dbd"
-uuid: "90102383-769e-8fcd-b3b4-b79fd53e8b00"
-horo: 2
-bonds:
-  in:
-    - akashic
-    - gravity
-    - law
-    - linearity
-    - merge
-    - proof
-    - quantum
-    - reality
-    - research
-    - snapshot
-    - translation
-    - uuid
-    - word
-  out:
-    - akashic
-    - gravity
-    - law
-    - linearity
-    - merge
-    - proof
-    - reality
-    - research
-    - snapshot
-    - translation
-    - uuid
-    - word
+atomPath: "quantum/literature"
+coordinate: "quantum/literature · 1/base · 227a39ea"
+contentUuid: "bd1aa91a-a0a4-5b81-853a-eae5ba88aaab"
+diamondUuid: "914cf25c-82b8-8232-b597-a20a7a77190c"
+uuid: "227a39ea-2cb3-8cce-8f89-771a166abe77"
+horo: 1
 typography:
   partition: quantum
   bondDegree: 36
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - gravity
-    - law
-    - linearity
-    - merge
-    - proof
-    - reality
-    - research
-    - snapshot
-    - translation
-    - uuid
-    - word
-  matrix:
-    - akashic
-    - gravity
-    - law
-    - linearity
-    - merge
-    - proof
-    - reality
-    - research
-    - snapshot
-    - translation
-    - uuid
-    - word
-  backlinks:
-    - akashic
-    - gravity
-    - law
-    - linearity
-    - merge
-    - proof
-    - reality
-    - research
-    - snapshot
-    - translation
-    - uuid
-    - word
 signatures:
-  computationUuid: "b5452996-d50f-8439-be15-02352b80e410"
+  computationUuid: "c807dce9-3277-8721-8f2f-42a3488b92bc"
   stages:
     - stage: path
       stageUuid: "510e9c51-ab34-8a4a-bd89-1ac7b804ad0d"
@@ -91,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "328aa73a-e443-8042-b68f-477b9a62b9b3"
     - stage: links
-      stageUuid: "0bd04202-0912-8045-bad1-a687bdd4f110"
+      stageUuid: "65d9aa0f-893c-88e6-ad85-e31275f73c33"
     - stage: horo
-      stageUuid: "f6e47047-5ca9-8254-ae05-685473c3851b"
+      stageUuid: "7104a91e-0932-8cdc-b994-0c814e272b00"
     - stage: seal
       stageUuid: "9710b589-2bf9-8d00-9264-8e1b78b832ac"
     - stage: uuid
-      stageUuid: "3463bc95-f072-8587-9e87-c7c0335b53a6"
+      stageUuid: "eacaa5a0-ca5f-83a9-89d6-39dff9ab0cfe"
 quantum:
   superposition:
     - akashic
@@ -129,8 +60,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "b5452996-d50f-8439-be15-02352b80e410"
-    contentUuid: "056711a4-966f-5efe-bca0-009413af9390"
+    computationUuid: "c807dce9-3277-8721-8f2f-42a3488b92bc"
+    contentUuid: "bd1aa91a-a0a4-5b81-853a-eae5ba88aaab"
 version: 2
 ---
 # quantum/literature — the infinite word-chain
@@ -145,4 +76,4 @@ A text is a **superposition** of its readings; **reading is the measurement** th
 
 @see [[word]] · [[gravity]] · [[linearity]] · [[snapshot]] · [[akashic]] · [[merge]] · [[research]] · [[proof]] · [[translation]]
 
-<sub>content-uuid `056711a4-966f-5efe-bca0-009413af9390` · account `quantum/literature` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `bd1aa91a-a0a4-5b81-853a-eae5ba88aaab` · account `quantum/literature` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

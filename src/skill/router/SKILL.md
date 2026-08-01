@@ -1,54 +1,36 @@
 ---
 name: router
 description: "Use when reasoning about router — Barrel face for skill/router — re-exports the atom public surface at index."
-atomPath: skill/router
-coordinate: skill/router · 4/weave · 3c11255f
-contentUuid: "81ef4646-7409-59b2-9983-4930201d5e6a"
-diamondUuid: "7d0739de-deec-87f8-bbd6-8581081a81b3"
-uuid: "3c11255f-cb19-8b42-bbf3-35a29fb54ce1"
-horo: 4
-bonds:
-  in:
-    - law
-    - skill
-    - upgrade
-  out:
-    - law
-    - upgrade
+atomPath: "skill/router"
+coordinate: "skill/router · 1/base · 8bee018c"
+contentUuid: "140fa1fd-ba77-54b0-89cc-ef92840ea866"
+diamondUuid: "c9685123-e2cf-8db2-a416-8f0b02923dee"
+uuid: "8bee018c-4cfe-8896-82bd-eb56ac6f496c"
+horo: 1
 typography:
   partition: skill
-  bondDegree: 0
-  neighbors: []
+  bondDegree: 12
 standards:
   - ESCO
   - SFIA
 bindings: []
-neighbors:
-  wikilink:
-    - law
-  matrix:
-    - law
-    - upgrade
-  backlinks:
-    - law
-    - upgrade
 signatures:
-  computationUuid: "6fe2f61c-13da-8e20-9426-f1c08035813a"
+  computationUuid: "3cc074bf-1866-84b3-828b-68fbc691fe9f"
   stages:
     - stage: path
       stageUuid: "28c28e7c-641d-8649-b10f-e93cdb9f85f3"
     - stage: trinity
       stageUuid: "759a9700-1cfe-8c85-b9b5-82cb17528c30"
     - stage: boundary
-      stageUuid: "d1fb8b2f-74da-8306-be8a-96e7bd760f3d"
+      stageUuid: "75674634-dc56-8d3e-a87a-8e0650205a3a"
     - stage: links
       stageUuid: "9819f976-c8d8-8fc0-894f-d91be9eea9e7"
     - stage: horo
-      stageUuid: "46747d21-bdd6-84ae-9cbe-a006ccc209cf"
+      stageUuid: "4ba54a95-9ec4-832f-92d5-ba0900a30017"
     - stage: seal
       stageUuid: "5d9e0b2b-c4eb-8769-9314-55732c9559c1"
     - stage: uuid
-      stageUuid: "00ac2abe-9d76-8271-9df2-da4ff744c964"
+      stageUuid: "e6e143ec-af3a-83b2-ad1b-8cb51b043306"
 version: 2
 ---
 # router

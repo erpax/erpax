@@ -1,68 +1,35 @@
 ---
 name: low
 description: "Use when reasoning about low as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/low
-coordinate: low · 7/descent · f73d17ec
-contentUuid: "5623ee2c-8387-59d8-9a3c-8c8867195381"
-diamondUuid: "3d4dc14b-7b91-8ad2-9ae6-c58b0e3e0980"
-uuid: "f73d17ec-dfee-889a-bcfc-eb89251e1c11"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - price
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - price
-    - sti
+atomPath: "vocabulary/low"
+coordinate: "vocabulary/low · 8/crest · 7686a25c"
+contentUuid: "5edb065a-cc84-56c7-9f44-6eca18016e2e"
+diamondUuid: "1fe1bcad-f99a-8905-a64b-39c197bf8e95"
+uuid: "7686a25c-e485-894b-b90d-3125f24cabad"
+horo: 8
 typography:
-  partition: low
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - price
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - price
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - price
-    - sti
 signatures:
-  computationUuid: "9273688a-fdae-8010-b965-725443cb5cf4"
+  computationUuid: "dbffe3b6-ada1-89ef-9814-264ad82b827a"
   stages:
     - stage: path
-      stageUuid: "b52a97dd-f0ab-84f1-b2db-4e2253cd29ad"
+      stageUuid: "af2f6d51-5336-88de-ab54-afd0ab7ccbf7"
     - stage: trinity
-      stageUuid: "f649c807-7414-8976-8ca0-ef7e48202279"
+      stageUuid: "65c35642-9501-81ae-bae0-a04b660094f4"
     - stage: boundary
-      stageUuid: "0b114211-c36e-81b9-a79c-dd4dd6f1179f"
+      stageUuid: "cdd53349-947b-8b32-8056-c8588a356ca8"
     - stage: links
-      stageUuid: "7ea03f71-818f-81d7-aa19-87f56a5918ea"
+      stageUuid: "bc5c0a95-d17c-821f-a4d7-d983673884cf"
     - stage: horo
-      stageUuid: "f07ebf58-5f5f-89bb-b9c0-3bfdff555a62"
+      stageUuid: "4d117907-c951-87b8-88e2-6af3b60466d8"
     - stage: seal
-      stageUuid: "0ad6372b-204f-8430-8848-6f9c94fc429b"
+      stageUuid: "23adb63d-5dfc-8809-b126-a5d8318449ca"
     - stage: uuid
-      stageUuid: "08bfa2c2-7ef5-84a6-a2e0-a1e4646c7dae"
+      stageUuid: "abef5f9d-bf12-84ab-bb49-eb165edcf1e6"
 version: 2
 ---
 # low

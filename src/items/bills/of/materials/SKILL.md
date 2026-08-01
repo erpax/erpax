@@ -2,30 +2,15 @@
 name: materials
 description: "Use when defining or querying the component recipe for a finished good — BOM lines, component quantities, version control per ECO, effective date ranges, and IAS-2 §10 cost-of-conversion lookup. The versioned bill-of-materials collection that seeds work-order execution and overhead absorption."
 atomPath: "items/bills/of/materials"
-coordinate: "items/bills/of/materials · 8/crest · f0643201"
-contentUuid: "197287d5-d5da-594f-9b5b-78ad33151d3e"
-diamondUuid: "62452bbd-0ddf-8f6e-916a-93f68e4a1587"
-uuid: "f0643201-d48d-82aa-a3db-449296eb4a34"
-horo: 8
-bonds:
-  in:
-    - bundle
-    - centers
-    - items
-    - law
-    - orders
-  out:
-    - bundle
-    - centers
-    - items
-    - law
-    - orders
+coordinate: "items/bills/of/materials · 4/weave · c4dde1d3"
+contentUuid: "7f5be70a-3f8a-5f17-8658-58d973cdda6a"
+diamondUuid: "e8c8138f-2a1a-8fd0-9266-fdec3f04c9e4"
+uuid: "c4dde1d3-3104-883a-85de-f2cc5491d0fa"
+horo: 4
 typography:
   partition: items
   bondDegree: 0
-  neighbors: []
 standards:
-  - "EU-2014/55"
   - "EU-537/2014"
   - "EU-910/2014"
   - "IFRS IAS-2 §10 §13 cost-of-conversion"
@@ -41,26 +26,8 @@ standards:
   - "US-GAAP ASC-330-10-30 inventory-cost"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - centers
-    - items
-    - law
-    - orders
-  matrix:
-    - bundle
-    - centers
-    - items
-    - law
-    - orders
-  backlinks:
-    - bundle
-    - centers
-    - items
-    - law
-    - orders
 signatures:
-  computationUuid: "82024762-cc54-85b9-b9cd-e6aa0309a69a"
+  computationUuid: "eba5743d-ccdf-836d-b309-6e3b68fbf30e"
   stages:
     - stage: path
       stageUuid: "0678991a-9722-84ce-95fd-3f875a126a04"
@@ -71,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "0a586a94-3b81-86cc-91c0-bfdc65d37a1b"
     - stage: horo
-      stageUuid: "7ae4efe5-138d-8c79-a8f0-218fef7479f9"
+      stageUuid: "f0b2e61b-6acd-850f-b9ef-d2fe0648904c"
     - stage: seal
       stageUuid: "05195066-ede7-8221-98f5-9697ae5d3c81"
     - stage: uuid
-      stageUuid: "eac1bd41-c2a8-8321-baf5-985406b32937"
+      stageUuid: "2d728fb5-a7b2-86bf-a6f5-cf6a0ab44053"
 version: 2
 ---
 # bills-of-materials

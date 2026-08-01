@@ -1,93 +1,35 @@
 ---
 name: list
 description: "Use when reasoning about list as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/list
-coordinate: list · 8/crest · b81f3bdd
-contentUuid: "e61080ac-a288-5b70-b62d-27099fc0358f"
-diamondUuid: "e6b7037c-de46-8c36-b3dd-cbc3a57121bd"
-uuid: "b81f3bdd-f3c2-8320-ab81-c07a4355ff65"
-horo: 8
-bonds:
-  in:
-    - breadcrumb
-    - collapse
-    - element
-    - feature
-    - item
-    - law
-    - merge
-    - order
-    - sti
-    - type
-  out:
-    - breadcrumb
-    - collapse
-    - element
-    - feature
-    - item
-    - law
-    - merge
-    - order
-    - sti
-    - type
+atomPath: "vocabulary/list"
+coordinate: "vocabulary/list · 7/descent · 2f3f02d4"
+contentUuid: "8f43200a-2bff-5aa3-a720-ee4ba9651ca5"
+diamondUuid: "0b9509c2-df5d-8003-86ad-8c03fd51e9ce"
+uuid: "2f3f02d4-f298-88b2-aa99-bb4334a3b9cb"
+horo: 7
 typography:
-  partition: list
+  partition: vocabulary
   bondDegree: 34
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - breadcrumb
-    - collapse
-    - element
-    - feature
-    - item
-    - law
-    - merge
-    - order
-    - sti
-    - type
-  matrix:
-    - breadcrumb
-    - collapse
-    - element
-    - feature
-    - item
-    - law
-    - merge
-    - order
-    - sti
-    - type
-  backlinks:
-    - breadcrumb
-    - collapse
-    - element
-    - feature
-    - item
-    - law
-    - merge
-    - order
-    - sti
-    - type
 signatures:
-  computationUuid: "d42d210d-faa5-808b-b591-76894369eb69"
+  computationUuid: "b72096a8-4771-8b25-9ec8-281fb6455318"
   stages:
     - stage: path
-      stageUuid: "37a65016-659a-83d1-8df5-8f44099c5367"
+      stageUuid: "4c42e1be-6ae3-84c7-b32d-975016f8d9d1"
     - stage: trinity
-      stageUuid: "45e568c2-da2e-8920-9cd4-bbedba3b7a58"
+      stageUuid: "4e1be18f-23da-8701-a99a-3c9eba25dd93"
     - stage: boundary
-      stageUuid: "4743527b-7088-8460-93fc-b6b6e7a7ea25"
+      stageUuid: "67b186af-7dba-8606-b38d-00a1fe46ef24"
     - stage: links
-      stageUuid: "68590dff-0d6d-81b7-874f-47745bbbc090"
+      stageUuid: "94986a89-063b-8f69-9473-d11e13e65d65"
     - stage: horo
-      stageUuid: "069d1965-8752-844a-8689-51d53c907edc"
+      stageUuid: "41d8fec2-ce2d-8c2a-9826-dd1c3970c6be"
     - stage: seal
-      stageUuid: "6c26f672-7250-8663-9fed-74565c52e65f"
+      stageUuid: "29925c30-95b2-8ab0-adf5-2273e9f76adb"
     - stage: uuid
-      stageUuid: "52f2f9b4-44d0-8d7b-a5f5-4cc7045f327b"
+      stageUuid: "e8d77955-c324-8756-9893-67bc1a93ba6a"
 version: 2
 ---
 # list

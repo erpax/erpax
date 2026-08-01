@@ -1,108 +1,35 @@
 ---
 name: range
 description: "Use when reasoning about range as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/range
-coordinate: range · 5/round · ef8c2690
-contentUuid: "ad734a09-8613-57c2-a462-61d3a054d276"
-diamondUuid: "7395839e-2a9b-8b3d-a95e-6a79fab96021"
-uuid: "ef8c2690-122f-8660-b3f0-a1a211aedf99"
-horo: 5
-bonds:
-  in:
-    - age
-    - code
-    - collapse
-    - includes
-    - law
-    - merge
-    - normal
-    - postal
-    - price
-    - specification
-    - sti
-    - taxonomic
-    - typical
-  out:
-    - age
-    - code
-    - collapse
-    - includes
-    - law
-    - merge
-    - normal
-    - postal
-    - price
-    - specification
-    - sti
-    - taxonomic
-    - typical
+atomPath: "vocabulary/range"
+coordinate: "vocabulary/range · 1/base · 0f2923ed"
+contentUuid: "88426183-7e19-5e83-89e1-de3d1161b55f"
+diamondUuid: "edb80955-b2a6-8c6d-8ee1-57812dab09f7"
+uuid: "0f2923ed-93e3-8deb-bb4b-cd5306b3e219"
+horo: 1
 typography:
-  partition: range
+  partition: vocabulary
   bondDegree: 46
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - age
-    - code
-    - collapse
-    - includes
-    - law
-    - merge
-    - normal
-    - postal
-    - price
-    - specification
-    - sti
-    - taxonomic
-    - typical
-  matrix:
-    - age
-    - code
-    - collapse
-    - includes
-    - law
-    - merge
-    - normal
-    - postal
-    - price
-    - specification
-    - sti
-    - taxonomic
-    - typical
-  backlinks:
-    - age
-    - code
-    - collapse
-    - includes
-    - law
-    - merge
-    - normal
-    - postal
-    - price
-    - specification
-    - sti
-    - taxonomic
-    - typical
 signatures:
-  computationUuid: "fecedd83-d238-8f4b-9f1c-af1157817df0"
+  computationUuid: "8707220c-925b-8bdf-88a7-1e39f2edf894"
   stages:
     - stage: path
-      stageUuid: "e1898e41-93b0-8408-ad6c-fec2d88ceff6"
+      stageUuid: "f4f43835-29fb-85d0-827d-8cb1d3916982"
     - stage: trinity
-      stageUuid: "198eb106-216a-865d-bd90-8e4042926a7a"
+      stageUuid: "db32cc53-e87d-8009-ac41-b56b45d99115"
     - stage: boundary
-      stageUuid: "0aac2686-e66d-847f-822e-9cffda237f76"
+      stageUuid: "b3c467d1-c306-818d-a726-55a57fd51302"
     - stage: links
-      stageUuid: "2f806b71-c8a8-83bb-a224-e2cd0679cb8b"
+      stageUuid: "5d3b7e5a-b692-8f10-8494-1056cac23ed2"
     - stage: horo
-      stageUuid: "5cbf295c-4457-8326-8f5e-91d861037633"
+      stageUuid: "807e6474-49e6-8e39-926e-a7d9b4802880"
     - stage: seal
-      stageUuid: "a423d8c4-cf2f-8bb9-bf2f-ed783ec2d909"
+      stageUuid: "9e4d2bac-bd41-87e1-98f1-b84bff9a7bcb"
     - stage: uuid
-      stageUuid: "fa65b708-2bfd-87e6-817a-bf4c28ecf9d6"
+      stageUuid: "ce1d2af4-1da2-8e84-9a5e-6df997c01426"
 version: 2
 ---
 # range

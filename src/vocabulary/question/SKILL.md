@@ -1,82 +1,35 @@
 ---
 name: question
 description: "Use when reasoning about question — A specific question - e.g. from a user seeking answers online, or collected in a Frequently Asked Questions (FAQ) document."
-atomPath: vocabulary/question
-coordinate: question · 5/round · 15cd3315
-contentUuid: "e13bc4f3-a6c8-5622-9ea7-cb31c901eb50"
-diamondUuid: "5ee9006e-7141-8b23-ab64-9a88b36f1edb"
-uuid: "15cd3315-d51a-8381-a87c-77cfbdecf0af"
-horo: 5
-bonds:
-  in:
-    - answer
-    - command
-    - concatenate
-    - edu
-    - law
-    - step
-    - type
-    - workflow
-  out:
-    - answer
-    - command
-    - concatenate
-    - edu
-    - law
-    - step
-    - type
-    - workflow
+atomPath: "vocabulary/question"
+coordinate: "vocabulary/question · 1/base · 2e342baf"
+contentUuid: "3ac47e8f-3ca8-5d2e-9a04-61ef332c381e"
+diamondUuid: "801224c2-9db7-8835-86d2-7c69bd37fd3b"
+uuid: "2e342baf-dbb3-85c9-80d8-feaf35a9b3dc"
+horo: 1
 typography:
-  partition: question
+  partition: vocabulary
   bondDegree: 29
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - answer
-    - command
-    - concatenate
-    - edu
-    - law
-    - step
-    - type
-  matrix:
-    - answer
-    - command
-    - concatenate
-    - edu
-    - law
-    - step
-    - type
-    - workflow
-  backlinks:
-    - answer
-    - command
-    - concatenate
-    - edu
-    - law
-    - step
-    - type
-    - workflow
 signatures:
-  computationUuid: "f6508b6f-6f32-8e70-bbb5-6c78a3714f96"
+  computationUuid: "2d41aee4-4266-830d-bb8c-bea8d9999c0d"
   stages:
     - stage: path
-      stageUuid: "463c6894-300d-872b-b204-a3125ae7770f"
+      stageUuid: "438e0ca7-e5a0-89fb-a3b1-839992208b55"
     - stage: trinity
-      stageUuid: "c450dd43-9879-83b6-b79d-b9369e282f90"
+      stageUuid: "8e0895dd-5de5-8c59-988d-aea624bc5ca6"
     - stage: boundary
-      stageUuid: "252e7644-b577-8925-973e-81b5bc1a0505"
+      stageUuid: "d25d4f0f-25ce-806e-95d9-acaf4a7b292d"
     - stage: links
-      stageUuid: "ab10bf7f-e01e-8f32-af56-ef64c24e70e9"
+      stageUuid: "73d7460d-15d3-8b00-98f3-b8c0234ac4ef"
     - stage: horo
-      stageUuid: "4da4783a-601c-89a9-a491-bc3edd2fbeda"
+      stageUuid: "e54e6798-27dd-8301-ba3d-f042f7567a22"
     - stage: seal
-      stageUuid: "927c671d-3883-89b0-a67e-43c110b7ba01"
+      stageUuid: "332a8367-7ba9-8df7-856c-29f7f66776e8"
     - stage: uuid
-      stageUuid: "e0e7f3c4-fd5c-81d7-8948-38c57f7de5db"
+      stageUuid: "72632e00-f8a4-8ba2-b34a-112ad24d80a1"
 version: 2
 ---
 # question

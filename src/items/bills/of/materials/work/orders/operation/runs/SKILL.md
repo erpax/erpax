@@ -2,35 +2,15 @@
 name: runs
 description: "Use when recording actual production at one operation × work-center — quantities ordered/produced/scrapped/backordered, variant attribute axes, shift, start/completion timestamps, and ISA-95 KPIs (yield, scrap). The per-routing-step execution record within a work order."
 atomPath: "items/bills/of/materials/work/orders/operation/runs"
-coordinate: "items/bills/of/materials/work/orders/operation/runs · 1/base · a310c745"
-contentUuid: "b52067f8-64f3-569e-8d58-68f35a63c5a2"
-diamondUuid: "90e61f0a-4e64-8bf9-9da9-058e07f13911"
-uuid: "a310c745-7ecc-8a03-b4d5-9630733bebaa"
-horo: 1
-bonds:
-  in:
-    - accounting
-    - accounts
-    - mandates
-    - operation
-    - proof
-    - runs
-    - standard
-    - transaction
-  out:
-    - accounting
-    - accounts
-    - mandates
-    - proof
-    - runs
-    - standard
-    - transaction
+coordinate: "items/bills/of/materials/work/orders/operation/runs · 2/share · 69654761"
+contentUuid: "510afd2d-08ce-5bcb-b83a-b92e45ec08b2"
+diamondUuid: "3819e01d-2eab-8e1d-b961-df9de98628ff"
+uuid: "69654761-4d56-8b8a-9da6-7e86ba7eb0cc"
+horo: 2
 typography:
   partition: items
   bondDegree: 41
-  neighbors: []
 standards:
-  - "EU-2014/55"
   - "EU-537/2014"
   - "EU-910/2014"
   - "IFRS IAS-2 §12 cost-of-conversion"
@@ -45,28 +25,8 @@ standards:
   - "US-GAAP ASC-330-10-30 inventory-cost"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - orders
-  matrix:
-    - accounting
-    - accounts
-    - mandates
-    - proof
-    - runs
-    - standard
-    - transaction
-  backlinks:
-    - accounting
-    - accounts
-    - mandates
-    - proof
-    - runs
-    - standard
-    - transaction
 signatures:
-  computationUuid: "f914c77e-1ad0-8b93-9537-1f7efbf58e65"
+  computationUuid: "a36cce71-e45e-8a0e-acbe-7ed6121245a6"
   stages:
     - stage: path
       stageUuid: "dfc7a5d2-4c1b-872f-9ee1-6b0b2e4412bd"
@@ -77,11 +37,11 @@ signatures:
     - stage: links
       stageUuid: "3ac9e96c-737f-8e83-8a37-6dfaec0bd75f"
     - stage: horo
-      stageUuid: "e1d3ea9c-5c3c-8e66-821d-f72baf149a73"
+      stageUuid: "7901a23c-a4b4-80af-8e41-fd534cdc51fb"
     - stage: seal
       stageUuid: "c52a0589-2148-8dff-a5d1-141f46c5aaea"
     - stage: uuid
-      stageUuid: "9629024a-b3f2-87bf-9c95-e67c5ce60134"
+      stageUuid: "8640d712-db83-87cd-a69d-ad645378246c"
 version: 2
 ---
 # operation-runs

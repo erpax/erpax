@@ -2,122 +2,20 @@
 name: mcp
 description: "Use when configuring the erpax agent gateway — it IS the official @payloadcms/plugin-mcp; every collection becomes find/create/update/delete tools at /api/mcp, computed from the barrel never hand-listed; Bearer API-key auth inherits the key owner's access and tenant scope; custom tools added via the plugin mcp config."
 atomPath: mcp
-coordinate: "mcp · 7/descent · 423f6d3f"
-contentUuid: "71f85509-2d69-56ed-b13e-5d554f2b8f3b"
-diamondUuid: "9d757e6e-6369-8c67-aabc-c88f69c5d273"
-uuid: "423f6d3f-1d2c-83d3-a61f-cd275f2dd794"
-horo: 7
-bonds:
-  in:
-    - access
-    - agent
-    - api
-    - atom
-    - collections
-    - cost
-    - dimension
-    - fs
-    - generate
-    - github
-    - mcp
-    - path
-    - payload
-    - reference
-    - research
-    - scopes
-    - society
-    - tool
-    - trust
-    - uuid
-  out:
-    - access
-    - agent
-    - api
-    - atom
-    - collections
-    - cost
-    - dimension
-    - fs
-    - generate
-    - github
-    - mcp
-    - path
-    - payload
-    - reference
-    - research
-    - scopes
-    - society
-    - tool
-    - trust
-    - uuid
+coordinate: "mcp · 4/weave · cfa1df33"
+contentUuid: "8d1b1b7f-7558-51ca-bf6e-5d6b149de6df"
+diamondUuid: "17bc55d3-9f72-8490-ad78-f721ddf04872"
+uuid: "cfa1df33-52ab-8b3b-891a-94582e3f3d32"
+horo: 4
 typography:
   partition: mcp
   bondDegree: 0
-  neighbors: []
 standards:
   - "EU-1958"
   - "RFC-7231"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - agent
-    - api
-    - atom
-    - collections
-    - dimension
-    - fs
-    - generate
-    - github
-    - mcp
-    - path
-    - payload
-    - trust
-    - uuid
-  matrix:
-    - access
-    - agent
-    - api
-    - atom
-    - collections
-    - cost
-    - dimension
-    - fs
-    - generate
-    - github
-    - mcp
-    - path
-    - payload
-    - reference
-    - research
-    - scopes
-    - society
-    - tool
-    - trust
-    - uuid
-  backlinks:
-    - access
-    - agent
-    - api
-    - atom
-    - collections
-    - cost
-    - dimension
-    - fs
-    - generate
-    - github
-    - mcp
-    - path
-    - payload
-    - reference
-    - research
-    - scopes
-    - society
-    - tool
-    - trust
-    - uuid
 signatures:
-  computationUuid: "d8e33945-36ab-8e2d-87e4-e20022823f65"
+  computationUuid: "364750b2-a860-8c02-bebd-6eb12db53595"
   stages:
     - stage: path
       stageUuid: "a22f54d4-d296-8ec5-8330-e970946345bf"
@@ -128,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "23aa2d1d-e9b8-84e6-9b50-9a580c826316"
     - stage: horo
-      stageUuid: "ab1a902e-26c8-834e-8ef5-44e5c365fe09"
+      stageUuid: "cf0e2334-b750-82be-9e38-7cd56932c6a3"
     - stage: seal
       stageUuid: "b37fed21-5b14-8bd2-9996-148049c0b53b"
     - stage: uuid
-      stageUuid: "e9e05ecb-c0e9-85f5-b8e9-46edcf4b2a2f"
+      stageUuid: "efaf78b7-c1a8-8d59-a4aa-ab020e093535"
 version: 2
 ---
 # mcp — the agent gateway (configure it computed)

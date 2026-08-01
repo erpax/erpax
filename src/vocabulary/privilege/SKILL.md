@@ -1,99 +1,34 @@
 ---
 name: privilege
 description: "Use when reasoning about privilege — **Privilege** — attorney-client confidentiality and the ethical wall that screens a matter from conflicted staff — is an access scope: a capability on the role × isolation to the m"
-atomPath: vocabulary/privilege
-coordinate: privilege · 7/descent · 96e57864
-contentUuid: "5f79360e-c38a-5211-8df6-ec3ebba32573"
-diamondUuid: "d64ed830-2909-8a47-b144-ddb986ad2ded"
-uuid: "96e57864-1959-8c33-9788-8b63d5990e97"
-horo: 7
-bonds:
-  in:
-    - access
-    - activities
-    - beyond
-    - confidentiality
-    - conflict
-    - controls
-    - law
-    - localize
-    - matter
-    - proof
-    - requisitions
-    - runs
-  out:
-    - access
-    - activities
-    - beyond
-    - confidentiality
-    - conflict
-    - controls
-    - law
-    - localize
-    - matter
-    - proof
-    - requisitions
-    - runs
+atomPath: "vocabulary/privilege"
+coordinate: "vocabulary/privilege · 2/share · 97430453"
+contentUuid: "02f22d11-4851-51ac-a98c-ce39351f8b5b"
+diamondUuid: "1e3a3a91-9db5-84b9-9c48-92489e803234"
+uuid: "97430453-49f8-85d6-b63d-5809f7eb75c3"
+horo: 2
 typography:
-  partition: privilege
+  partition: vocabulary
   bondDegree: 38
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - activities
-    - beyond
-    - conflict
-    - controls
-    - law
-    - localize
-    - matter
-    - proof
-  matrix:
-    - access
-    - activities
-    - beyond
-    - confidentiality
-    - conflict
-    - controls
-    - law
-    - localize
-    - matter
-    - proof
-    - requisitions
-    - runs
-  backlinks:
-    - access
-    - activities
-    - beyond
-    - confidentiality
-    - conflict
-    - controls
-    - law
-    - localize
-    - matter
-    - proof
-    - requisitions
-    - runs
 signatures:
-  computationUuid: "a3137eee-f860-8723-8be4-9b48e13407f1"
+  computationUuid: "1437dd5f-74b6-8508-ac87-1ad30a45eaef"
   stages:
     - stage: path
-      stageUuid: "825e3197-ea0a-8650-95df-a77b9f0a0b38"
+      stageUuid: "dc0903fd-7f85-8432-a340-ede0f9480a67"
     - stage: trinity
-      stageUuid: "d92ee32e-5f66-8ab7-8191-b817d97777ce"
+      stageUuid: "bb42a9ab-c8b3-8b0b-a765-7a9cba395b2f"
     - stage: boundary
-      stageUuid: "27cc47fe-fb70-827d-8bd5-17c9cdadf9d4"
+      stageUuid: "6e671a93-3b87-8059-b410-f3490cde7cf3"
     - stage: links
-      stageUuid: "66d36f31-bd5c-811f-b8a9-c8c905d6d7e2"
+      stageUuid: "4514349a-4277-8e4f-a255-94851b26e73e"
     - stage: horo
-      stageUuid: "6d1f61b1-81fc-8d12-add7-bf65db1ccebb"
+      stageUuid: "29bbe5d3-ab08-88ad-9779-c0c052c68014"
     - stage: seal
-      stageUuid: "131f077b-ebbe-8e13-8d49-19597c56e685"
+      stageUuid: "6851fde5-94f0-82c6-bbeb-fd00523bd849"
     - stage: uuid
-      stageUuid: "5a27a9a5-a047-8da4-88dc-1456867591c2"
+      stageUuid: "7589b695-0477-8baf-b4f0-d41fce19c062"
 version: 2
 ---
 # privilege — the confidentiality wall (access scope + crypto-shred)

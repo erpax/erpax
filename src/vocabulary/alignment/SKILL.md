@@ -1,78 +1,35 @@
 ---
 name: alignment
 description: "Use when reasoning about alignment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/alignment
-coordinate: alignment · 1/base · 69f52a97
-contentUuid: "58918563-46c0-5e02-ae2f-6c5ebc45a222"
-diamondUuid: "a88d0d74-7cdf-891a-bf68-8b73eeed0ba3"
-uuid: "69f52a97-97ac-8b56-81d8-9629e322a76f"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - educational
-    - law
-    - merge
-    - object
-    - sti
-    - type
-  out:
-    - collapse
-    - educational
-    - law
-    - merge
-    - object
-    - sti
-    - type
+atomPath: "vocabulary/alignment"
+coordinate: "vocabulary/alignment · 5/round · 613aeb0b"
+contentUuid: "c2c0dff3-07e1-55ba-8a03-09d29bc0daae"
+diamondUuid: "f7840751-276a-8cd8-ba4b-67cd688abaa6"
+uuid: "613aeb0b-ad3b-8ec2-b590-10e1f29195f4"
+horo: 5
 typography:
-  partition: alignment
+  partition: vocabulary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - educational
-    - law
-    - merge
-    - object
-    - sti
-    - type
-  matrix:
-    - collapse
-    - educational
-    - law
-    - merge
-    - object
-    - sti
-    - type
-  backlinks:
-    - collapse
-    - educational
-    - law
-    - merge
-    - object
-    - sti
-    - type
 signatures:
-  computationUuid: "5edec36e-d2d8-8a76-8ecd-1546a5ed6ad6"
+  computationUuid: "c73f200f-ea6a-8579-9b88-2c8f546e687a"
   stages:
     - stage: path
-      stageUuid: "bb052a09-1f98-8161-9e7c-a3acee95ff34"
+      stageUuid: "b581dc2d-f68e-8138-a16d-b9d51ec19dc6"
     - stage: trinity
-      stageUuid: "1b8e940f-8f7b-82ef-a286-209699fc4ba8"
+      stageUuid: "0fccbcc0-cc2a-8d72-bb1b-776e43929be4"
     - stage: boundary
-      stageUuid: "1ba5c85c-10d7-8204-b9b0-d89aa4478a4a"
+      stageUuid: "a84b4fb3-5300-8da4-8d3d-40efb6185889"
     - stage: links
-      stageUuid: "7122d7f2-6b25-88bc-83ba-7bdf41093b0b"
+      stageUuid: "510ff943-5a1b-88e7-8e29-9f1404fea348"
     - stage: horo
-      stageUuid: "64e86793-d6bc-8087-82e0-f3cd672ded83"
+      stageUuid: "5da7d42e-a0b7-873f-b5f2-0f25de338064"
     - stage: seal
-      stageUuid: "9ff4fcb6-e191-8318-9121-a2c47538ca61"
+      stageUuid: "602a2ae8-7357-860a-a5ba-b07ebe5c3bf1"
     - stage: uuid
-      stageUuid: "2d92c7f2-cbd6-8b2f-9f11-789945846b5d"
+      stageUuid: "d15476d0-085f-864e-b8da-07c2af0f1428"
 version: 2
 ---
 # alignment

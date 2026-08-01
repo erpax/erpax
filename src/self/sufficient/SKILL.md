@@ -1,134 +1,39 @@
 ---
 name: sufficient
 description: "Use when deciding whether to act from internal knowledge vs. ask externally — totality/completeness, the identity-element guarantee that every case is defined, the bounded form holding the unbounded answer. Nested under self → self-sufficiency: derive the next move, don't break flow with questions."
-atomPath: self/sufficient
-coordinate: self/sufficient · 1/base · 07f0136b
-contentUuid: "c916847f-5b5a-5e47-95ea-be07bd747d91"
-diamondUuid: "aaaf6970-9f58-8423-93e6-e09668164648"
-uuid: "07f0136b-d232-8c1b-91ba-a53120c28a5b"
-horo: 1
-bonds:
-  in:
-    - akashic
-    - all
-    - allocation
-    - bindings
-    - cost
-    - duality
-    - fractal
-    - history
-    - holographic
-    - identity
-    - law
-    - merge
-    - mode
-    - position
-    - proof
-    - self
-    - sequence
-    - skills
-    - society
-  out:
-    - akashic
-    - all
-    - allocation
-    - bindings
-    - cost
-    - duality
-    - fractal
-    - history
-    - holographic
-    - identity
-    - law
-    - merge
-    - mode
-    - position
-    - proof
-    - self
-    - sequence
-    - skills
-    - society
+atomPath: "self/sufficient"
+coordinate: "self/sufficient · 8/crest · 1cf2a230"
+contentUuid: "2ed24882-25b7-53a5-91d6-8265f7e27083"
+diamondUuid: "76b24af3-bf05-8b6a-8480-c0b0ab425bfa"
+uuid: "1cf2a230-4202-8d67-a511-54da1ffe703a"
+horo: 8
 typography:
   partition: self
-  bondDegree: 59
-  neighbors: []
+  bondDegree: 57
 standards:
-  - "Conservation Law 53 (self-referential closure — internal fallback can replay)"
-  - Conservation Law 54 (universal identity element — every case already defined)
   - "NIST SP 800-107r1 §5.1 (the digest bound — via tamper-cost)"
+  - "NIST SP 800-107r1 §5.1 (the digest bound — via tamper-cost)`"
   - "NIST SP 800-161r1 (supply-chain / external-dependency risk)"
+  - "NIST SP 800-161r1 (supply-chain / external-dependency risk)`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - bindings
-    - cost
-    - history
-    - holographic
-    - identity
-    - law
-    - merge
-    - proof
-    - self
-    - sequence
-    - society
-  matrix:
-    - akashic
-    - all
-    - allocation
-    - bindings
-    - cost
-    - duality
-    - fractal
-    - history
-    - holographic
-    - identity
-    - law
-    - merge
-    - mode
-    - position
-    - proof
-    - self
-    - sequence
-    - skills
-    - society
-  backlinks:
-    - akashic
-    - all
-    - allocation
-    - bindings
-    - cost
-    - duality
-    - fractal
-    - history
-    - holographic
-    - identity
-    - law
-    - merge
-    - mode
-    - position
-    - proof
-    - self
-    - sequence
-    - skills
-    - society
 signatures:
-  computationUuid: "611bf339-58a0-87a8-a43b-180df02335ff"
+  computationUuid: "90639cc2-010b-869d-9d03-f12eecf55886"
   stages:
     - stage: path
       stageUuid: "5db7871f-da5f-8343-8c1c-8b88b4cd6beb"
     - stage: trinity
       stageUuid: "b22ad0f9-7285-83bc-9ba6-be3de2b3b722"
     - stage: boundary
-      stageUuid: "98f16adb-0ec7-8fed-8d6d-44aac6170d8a"
+      stageUuid: "005dc50b-bc51-89c1-baae-bcda229a41af"
     - stage: links
       stageUuid: "a4ccf1c9-1742-8908-9995-d8a22fa25da5"
     - stage: horo
-      stageUuid: "c832a58a-2977-8a9a-ad6d-7d91464c8051"
+      stageUuid: "d9ebec53-85b5-83fd-9f63-68273204724e"
     - stage: seal
-      stageUuid: "c2b40ad5-dae4-81fd-9fe8-586bc5afe643"
+      stageUuid: "f47ae58c-28f2-8701-9937-a5c3a43cfdba"
     - stage: uuid
-      stageUuid: "1626b957-fe95-8fc8-acb9-3fa881b20cdc"
+      stageUuid: "65802a25-f36d-8b86-a427-ba92da0698f7"
 version: 2
 ---
 # sufficient — totality (every case is already defined)

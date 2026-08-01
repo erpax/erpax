@@ -1,68 +1,35 @@
 ---
 name: lymphatic
 description: "Use when reasoning about lymphatic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/lymphatic
-coordinate: lymphatic · 5/round · ce07ef3c
-contentUuid: "da1d914b-71a4-5a14-9a2a-e88712798c13"
-diamondUuid: "72755e1f-e6b1-8b2d-a71a-461d1fe4a1d4"
-uuid: "ce07ef3c-7e66-872e-86e5-8ae604986861"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - vessel
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - vessel
+atomPath: "vocabulary/lymphatic"
+coordinate: "vocabulary/lymphatic · 8/crest · 5b308fd0"
+contentUuid: "08857cec-4429-58e3-8056-0412a424bae3"
+diamondUuid: "1792c64f-e7f7-8dd7-8296-69561e1e5341"
+uuid: "5b308fd0-746b-81cc-9b0b-6f4514f805f0"
+horo: 8
 typography:
-  partition: lymphatic
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - vessel
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - vessel
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - vessel
 signatures:
-  computationUuid: "45d02ec6-b2d5-8db4-8602-e5a23acd3df5"
+  computationUuid: "4807a55e-e3de-8629-86de-fede443a58e7"
   stages:
     - stage: path
-      stageUuid: "c8b2a19a-b935-8736-aa3c-6696cd7cb70c"
+      stageUuid: "cb36657c-5126-8cae-ac67-3d48178d1bd6"
     - stage: trinity
-      stageUuid: "0281f27f-6c21-8d6b-9ace-ceac98a6a333"
+      stageUuid: "a5767414-02b6-8b38-adec-723e9f629f5c"
     - stage: boundary
-      stageUuid: "f0a4f219-0589-8a25-89cd-734a33c7dd2d"
+      stageUuid: "b74c0d5a-afc8-866b-ac69-128b7979279c"
     - stage: links
-      stageUuid: "ad0d2414-ccc5-894e-9915-ced5850b09cb"
+      stageUuid: "6659fb84-2b9d-8c45-aa88-37fd0ef4dab0"
     - stage: horo
-      stageUuid: "6aec9e61-e632-8f81-a860-6e930431688f"
+      stageUuid: "20dad360-c800-8e5e-b038-5ae4776f5407"
     - stage: seal
-      stageUuid: "604891a8-1d62-8e9d-b2ed-a54de69cf2b7"
+      stageUuid: "d23da2c6-2351-899b-85c4-243cde895637"
     - stage: uuid
-      stageUuid: "666e5c3f-704d-89a5-8063-ee6200963dd8"
+      stageUuid: "e1bd2b98-cf32-8e31-8afe-fb9fb0c3cc03"
 version: 2
 ---
 # lymphatic

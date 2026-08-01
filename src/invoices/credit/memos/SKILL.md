@@ -2,33 +2,14 @@
 name: memos
 description: "Use when issuing or applying a credit against an invoice — contra-revenue / refund-liability (IFRS-15 §B22), returns, write-offs; lifecycle draft→issued→applied→settled with SoD enforcement and GL posting. The credit-memos collection."
 atomPath: "invoices/credit/memos"
-coordinate: "invoices/credit/memos · 2/share · f488b273"
-contentUuid: "c7b89711-8d47-5f96-b581-8eb77e75bf0f"
-diamondUuid: "8d486569-9acc-85b3-bcb4-7481c6c6ffa7"
-uuid: "f488b273-fba8-8c63-977a-21c6c235907f"
-horo: 2
-bonds:
-  in:
-    - accounting
-    - credit
-    - customers
-    - memo
-    - proof
-    - refunds
-    - tenants
-    - transaction
-  out:
-    - accounting
-    - customers
-    - memo
-    - proof
-    - refunds
-    - tenants
-    - transaction
+coordinate: "invoices/credit/memos · 1/base · 5e6048f4"
+contentUuid: "89929baf-8d0a-5086-b317-36fb40f29227"
+diamondUuid: "0723579e-649c-83be-b9f5-17bae482a221"
+uuid: "5e6048f4-b38a-86d0-af98-4ddb3823b31e"
+horo: 1
 typography:
   partition: invoices
   bondDegree: 22
-  neighbors: []
 standards:
   - "EN-16931:2017 credit-note-semantic-model"
   - "EN-16931:2017 credit-note-semantic-model`"
@@ -42,32 +23,8 @@ standards:
   - "US-GAAP ASC-606-10-32-10 variable-consideration"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - customers
-    - proof
-    - refunds
-    - tenants
-    - transaction
-  matrix:
-    - accounting
-    - customers
-    - memo
-    - proof
-    - refunds
-    - tenants
-    - transaction
-  backlinks:
-    - accounting
-    - customers
-    - memo
-    - proof
-    - refunds
-    - tenants
-    - transaction
 signatures:
-  computationUuid: "040e9753-e50e-8391-baf4-ccdfe7e958cb"
+  computationUuid: "dd042df4-745d-8eee-9904-d291b2d4ebbc"
   stages:
     - stage: path
       stageUuid: "10aa267b-48ee-8085-8027-5403424717c1"
@@ -78,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "5d3e1112-88c1-88ff-be5e-814c34cc42d6"
     - stage: horo
-      stageUuid: "afc08516-1a7e-8b3d-96ce-969fefc3348d"
+      stageUuid: "06fc80ea-bbfa-8df7-b91e-2ddfabf4bf8b"
     - stage: seal
       stageUuid: "7a8d4577-a184-8ccb-9196-6b68a8daa14f"
     - stage: uuid
-      stageUuid: "1caa68e4-7ae5-8ab3-b0a7-51c715d54f69"
+      stageUuid: "334acff9-9f23-8b55-b6b5-809d181d880d"
 version: 2
 ---
 # credit-memos

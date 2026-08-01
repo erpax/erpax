@@ -1,63 +1,35 @@
 ---
 name: bacteria
 description: "Use when reasoning about bacteria as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/bacteria
-coordinate: bacteria · 4/weave · 8cfcb5c1
-contentUuid: "69f66c34-48af-587f-b24d-761468091b5d"
-diamondUuid: "ae95189e-4768-8041-b4ca-5dc73d161cf8"
-uuid: "8cfcb5c1-7ed6-8794-9ce3-dcc5167c57a6"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/bacteria"
+coordinate: "vocabulary/bacteria · 7/descent · edbc0129"
+contentUuid: "2487c1ad-d924-50b3-8303-f49a91b56e01"
+diamondUuid: "d5129837-4e7b-8982-8c8e-393ace960a8a"
+uuid: "edbc0129-c1a0-8399-8825-718c65609134"
+horo: 7
 typography:
-  partition: bacteria
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "93f18beb-c018-818c-8b3e-9638d1da01d7"
+  computationUuid: "a7cb32e2-6314-871a-b479-71097333c574"
   stages:
     - stage: path
-      stageUuid: "ea381468-d341-8414-95f5-c7770be0b182"
+      stageUuid: "62e257ca-e6f7-89d4-96de-4008ece38794"
     - stage: trinity
-      stageUuid: "7e3d3a5f-7771-81e5-9493-88822042563a"
+      stageUuid: "e13ced6e-b075-8510-b708-ca30882375a9"
     - stage: boundary
-      stageUuid: "c37dddb0-2a06-83a3-945f-fa93e72ab75f"
+      stageUuid: "65241dd7-ea8b-839e-a258-c69cd22741f8"
     - stage: links
-      stageUuid: "87282f96-51d5-8323-b7ab-3bd3bfa552c0"
+      stageUuid: "dbb5d79c-1836-8823-80f5-992278daf414"
     - stage: horo
-      stageUuid: "87a0fa74-950a-8a7b-a67e-427fc0def6db"
+      stageUuid: "ae78806e-d78a-8e0e-b7fe-db85af24a35b"
     - stage: seal
-      stageUuid: "7c70818d-88d2-889d-b159-0f841cf394b3"
+      stageUuid: "31959f3c-8b0c-8458-a59c-a26b3d1b2274"
     - stage: uuid
-      stageUuid: "cea64f7e-c0f8-875b-908e-aa8f709a7423"
+      stageUuid: "1471188c-e43a-884b-afcc-c641a00027de"
 version: 2
 ---
 # bacteria

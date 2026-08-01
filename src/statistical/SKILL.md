@@ -2,57 +2,19 @@
 name: statistical
 description: "Use when reasoning about statistical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: statistical
-coordinate: statistical · 2/share · b8149763
-contentUuid: "8c6badb2-edf0-566f-be16-be9642add9b4"
-diamondUuid: "1aad8d31-7dce-879f-bda0-dc2c647274d7"
-uuid: "b8149763-778b-8451-8d96-240be7ffcb6b"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - population
-    - sti
-    - variable
-  out:
-    - collapse
-    - law
-    - merge
-    - population
-    - sti
-    - variable
+coordinate: "statistical · 8/crest · 0e0c07a4"
+contentUuid: "22629fe6-4e40-510d-84c1-00d2f3e366ec"
+diamondUuid: "79bc3e48-2c28-8924-ba07-bdb629be20b2"
+uuid: "0e0c07a4-f0ea-8a11-980d-0f7b7d40e48f"
+horo: 8
 typography:
   partition: statistical
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - population
-    - sti
-    - variable
-  matrix:
-    - collapse
-    - law
-    - merge
-    - population
-    - sti
-    - variable
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - population
-    - sti
-    - variable
 signatures:
-  computationUuid: "a3828a76-a393-8e2a-ae89-8b32751e39ef"
+  computationUuid: "494230ce-ae5a-8b9c-821c-08d35e96ea41"
   stages:
     - stage: path
       stageUuid: "78469094-2385-8a87-bf57-c10549a30bcb"
@@ -63,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "378bb544-bd48-893a-898b-815204865fc9"
     - stage: horo
-      stageUuid: "3e1d15ed-5326-891c-874f-a7371aa26649"
+      stageUuid: "7c235757-be2b-8cbd-83e7-02cc987c8061"
     - stage: seal
-      stageUuid: "5549b011-e03a-8e11-ad36-400ae93a3e47"
+      stageUuid: "4f1a8dc6-2cce-89eb-9c4e-0ef6dfa23857"
     - stage: uuid
-      stageUuid: "9ff9c933-bed0-85f0-8bbf-8ff59fafc1cc"
+      stageUuid: "c26be264-2a07-8da2-977e-288c6af07397"
 version: 2
 ---
 # statistical

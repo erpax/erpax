@@ -1,68 +1,35 @@
 ---
 name: dietary
 description: "Use when reasoning about dietary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/dietary
-coordinate: dietary · 8/crest · 6d7ab555
-contentUuid: "c25c06bd-3dca-5250-a157-b90f15a0e7ab"
-diamondUuid: "b50f9df8-f5c8-8e67-8bc7-9adb7f0c984f"
-uuid: "6d7ab555-677a-8049-8aaa-0d3cd226bd20"
+atomPath: "vocabulary/dietary"
+coordinate: "vocabulary/dietary · 8/crest · 82b3d4ea"
+contentUuid: "84cbe0aa-6748-549f-9403-b6fedb887097"
+diamondUuid: "c94fab9d-cd7a-8b00-9f93-0b5b7e2350c6"
+uuid: "82b3d4ea-7910-8cc4-a5b4-4f13c9132420"
 horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-    - supplement
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
-    - supplement
 typography:
-  partition: dietary
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-    - supplement
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-    - supplement
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
-    - supplement
 signatures:
-  computationUuid: "f2e7ed21-430a-8b2d-922c-9e7ddd17b6b1"
+  computationUuid: "682ef0b2-f2de-8f02-af9f-eaafedf4d3d4"
   stages:
     - stage: path
-      stageUuid: "35a59246-8122-80f1-836a-6bdeb2b1d22b"
+      stageUuid: "681f44da-d065-8e40-8bf8-6a6684767b69"
     - stage: trinity
-      stageUuid: "e80392dc-f85f-87a9-a9b5-2a61655fe405"
+      stageUuid: "55c2fca1-9f5f-83b2-8985-1186408aeedb"
     - stage: boundary
-      stageUuid: "c82f3ecb-08ad-8eef-a7c8-96ddeb211737"
+      stageUuid: "f2578bed-7f99-8fa1-a9f1-60cc63f15e9e"
     - stage: links
-      stageUuid: "65757f51-c1fd-8eda-9c97-9c349fcedd19"
+      stageUuid: "eb3f1308-6984-88c4-9428-c332521bd3fc"
     - stage: horo
-      stageUuid: "8fdde26d-5c04-876e-97cf-6b28b8195e0f"
+      stageUuid: "b8d4fe08-7a12-8b37-a065-d9810d8c08ed"
     - stage: seal
-      stageUuid: "49942cf0-538b-88d2-8eed-61aa4ea35e5b"
+      stageUuid: "3c23a0ad-d8dd-8f9b-918b-38c6ebab6036"
     - stage: uuid
-      stageUuid: "cc4d7463-3b39-8a2f-992f-8cbe4bbebe6c"
+      stageUuid: "6e76b1b2-7d06-80a0-92f9-cd0e72b71091"
 version: 2
 ---
 # dietary

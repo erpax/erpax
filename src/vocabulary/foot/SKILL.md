@@ -1,67 +1,35 @@
 ---
 name: foot
 description: "Use when reasoning about foot as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/foot
-coordinate: foot · 4/weave · 48b83243
-contentUuid: "9218f8b1-d961-508c-84d1-92a4ad0b5c71"
-diamondUuid: "de9ad1db-2e79-8e32-8dc8-89679ec35d76"
-uuid: "48b83243-b2f3-8571-8205-166774502931"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - foot
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - foot
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/foot"
+coordinate: "vocabulary/foot · 5/round · fbe5f966"
+contentUuid: "1fcdcef7-a872-5b03-bf67-6804b6fcb650"
+diamondUuid: "d04cc9f9-da9d-8aed-83ac-7575c17d50ce"
+uuid: "fbe5f966-1301-8afa-b2b6-83948d112b1a"
+horo: 5
 typography:
-  partition: foot
+  partition: vocabulary
   bondDegree: 21
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - foot
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - foot
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "0b50e59b-9803-8115-8093-07ddb0ce485c"
+  computationUuid: "4bf4a515-49d0-84df-ab15-43c748b2f6e9"
   stages:
     - stage: path
-      stageUuid: "ee4b2afc-eb1e-8057-bd30-496acdcc220e"
+      stageUuid: "652094b9-a667-8e6a-92f7-3658e33f39c0"
     - stage: trinity
-      stageUuid: "6a289778-3063-8151-85a3-c99238418579"
+      stageUuid: "2c5b4247-cf2b-87fb-83ff-cbe686005328"
     - stage: boundary
-      stageUuid: "9dfaf621-81e0-89e1-b1d5-481f804bba7a"
+      stageUuid: "bb95c201-6d7e-8417-a471-9c75ecb6d1a9"
     - stage: links
-      stageUuid: "08fb1e1c-f3e4-894c-9c1d-ad0abbdc3f0e"
+      stageUuid: "f365dc4c-447d-87db-a6cb-aad7a56e897c"
     - stage: horo
-      stageUuid: "eebfe7bd-f45d-848d-b763-03f557dae20a"
+      stageUuid: "519c39c3-4f28-8a7c-aa9e-14035250e6df"
     - stage: seal
-      stageUuid: "c60e4a0c-780e-8e1f-8db1-7c1d6eb22c5a"
+      stageUuid: "4d0ab221-d498-8898-ba35-ba75ce6e041d"
     - stage: uuid
-      stageUuid: "672acf1d-e283-81b1-a4cb-dfdf690f35ea"
+      stageUuid: "95e04ede-860d-8c4d-b945-5d5df15121df"
 version: 2
 ---
 # foot

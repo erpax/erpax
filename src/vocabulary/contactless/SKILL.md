@@ -1,68 +1,35 @@
 ---
 name: contactless
 description: "Use when reasoning about contactless as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/contactless
-coordinate: contactless · 7/descent · 6da3fe3f
-contentUuid: "227dcec4-3a52-5eff-94b9-c3a9485ad3a6"
-diamondUuid: "e51a783b-9d06-82aa-a9a0-1e904be416fb"
-uuid: "6da3fe3f-a1ea-8ecc-a3ef-68466c69d03b"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - payment
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - payment
-    - sti
+atomPath: "vocabulary/contactless"
+coordinate: "vocabulary/contactless · 1/base · 5e7e8a7e"
+contentUuid: "44f79f44-ce52-5068-9fe9-513f50a0350d"
+diamondUuid: "9ef78fa8-4277-8fbc-91e8-d7d230a0dce9"
+uuid: "5e7e8a7e-0738-82b8-84b2-25fa550711c5"
+horo: 1
 typography:
-  partition: contactless
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - payment
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - payment
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - payment
-    - sti
 signatures:
-  computationUuid: "9de051e0-982c-805a-9be9-a93294e573e7"
+  computationUuid: "dedcff91-50a4-8474-a8b1-1ef445d03f12"
   stages:
     - stage: path
-      stageUuid: "49756d15-873e-8ce7-972a-43679fa6407b"
+      stageUuid: "495e1bc8-9489-8cda-982d-915829f94e94"
     - stage: trinity
-      stageUuid: "0f57565d-3021-851d-b931-89da3baf4dc4"
+      stageUuid: "513a41fa-5418-820d-b070-c5e2b2b964d6"
     - stage: boundary
-      stageUuid: "451a3b3f-ae2a-8443-954d-b146a91bbacb"
+      stageUuid: "ebe527ce-b98c-8d77-9d60-b5637b830826"
     - stage: links
-      stageUuid: "aae85ae3-cc9c-865c-bf55-0ff8d9c71c48"
+      stageUuid: "4b37ae40-cee7-8b92-bddb-47bd68b038bb"
     - stage: horo
-      stageUuid: "282a5496-8f37-85e3-852c-9d0044814bfd"
+      stageUuid: "f413f645-60b5-80ba-bcca-5f498737cf2f"
     - stage: seal
-      stageUuid: "fed8ef07-1b5e-819c-be8b-29466de35515"
+      stageUuid: "31e4d6da-f55a-8149-a197-32e911d96f92"
     - stage: uuid
-      stageUuid: "af69916d-16d4-811b-9dfe-c2a5c2360001"
+      stageUuid: "f610b706-49c8-8940-9243-0b667d87407b"
 version: 2
 ---
 # contactless

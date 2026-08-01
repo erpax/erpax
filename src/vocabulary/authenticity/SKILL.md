@@ -1,73 +1,35 @@
 ---
 name: authenticity
 description: "Use when reasoning about authenticity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/authenticity
-coordinate: authenticity · 7/descent · 88dab724
-contentUuid: "ebda60b0-2daf-5e1c-9c0b-f46e80ca0741"
-diamondUuid: "c75ef75a-5c9a-83fa-bacc-66eedab2fc81"
-uuid: "88dab724-c2cb-8632-a43b-f5559b615f44"
-horo: 7
-bonds:
-  in:
-    - category
-    - collapse
-    - law
-    - media
-    - merge
-    - sti
-  out:
-    - category
-    - collapse
-    - law
-    - media
-    - merge
-    - sti
+atomPath: "vocabulary/authenticity"
+coordinate: "vocabulary/authenticity · 1/base · 2a5c198f"
+contentUuid: "b2f7573b-d941-5a5e-a2be-8e195fbde3a4"
+diamondUuid: "ab6b71a1-dcb6-8e86-8bdb-c9ff36850331"
+uuid: "2a5c198f-cea4-82fc-bcf8-fd9ded163451"
+horo: 1
 typography:
-  partition: authenticity
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - category
-    - collapse
-    - law
-    - media
-    - merge
-    - sti
-  matrix:
-    - category
-    - collapse
-    - law
-    - media
-    - merge
-    - sti
-  backlinks:
-    - category
-    - collapse
-    - law
-    - media
-    - merge
-    - sti
 signatures:
-  computationUuid: "706e7bc2-d375-8b5d-b470-ec02daf9fd5d"
+  computationUuid: "d3ab5038-f305-8210-bf0f-e4b132dfa877"
   stages:
     - stage: path
-      stageUuid: "e079adf9-d15f-8f7d-8819-fca7de6830af"
+      stageUuid: "57af4706-fc40-8ce6-aa85-2e6244df522d"
     - stage: trinity
-      stageUuid: "d5c68818-1cd1-8b52-a5bf-1e37e7ba9873"
+      stageUuid: "932a21d7-abb4-8466-8364-8d5038bc3ef2"
     - stage: boundary
-      stageUuid: "8e907a58-a586-89b0-b875-1f8faaa9f6cb"
+      stageUuid: "98ed8462-0614-88bf-9df1-f871bd39beb0"
     - stage: links
-      stageUuid: "43f23620-d418-8ae1-b447-000ae4cf76f0"
+      stageUuid: "4973455c-d15a-83ba-8847-c340710ea434"
     - stage: horo
-      stageUuid: "804d7a5d-211d-8639-96dd-2e75ce17d765"
+      stageUuid: "ff6339c4-240b-83d2-9f37-eb0a83217432"
     - stage: seal
-      stageUuid: "7ca964e3-1ad0-82ef-8047-dc7a564cf87f"
+      stageUuid: "532ea3e4-0b51-8f77-ac10-ad4529a2ed4f"
     - stage: uuid
-      stageUuid: "edb25b98-aac5-85e3-9fb8-163c182ef0cd"
+      stageUuid: "9589f494-42d7-8cad-a5ea-e3e4cdfd9f45"
 version: 2
 ---
 # authenticity

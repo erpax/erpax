@@ -1,83 +1,35 @@
 ---
 name: online
 description: "Use when reasoning about online as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/online
-coordinate: online · 8/crest · 67afbf85
-contentUuid: "30c89428-6b36-5b25-b9ff-5cda4c93cc8e"
-diamondUuid: "95417bf0-9968-87aa-9968-f8057b33be4e"
-uuid: "67afbf85-8a43-8c8c-9107-4dd1ff182a59"
-horo: 8
-bonds:
-  in:
-    - business
-    - collapse
-    - law
-    - marketplace
-    - merge
-    - players
-    - sti
-    - store
-  out:
-    - business
-    - collapse
-    - law
-    - marketplace
-    - merge
-    - players
-    - sti
-    - store
+atomPath: "vocabulary/online"
+coordinate: "vocabulary/online · 2/share · 2da84668"
+contentUuid: "0223196a-b068-5fdd-980d-9a71d3712ce6"
+diamondUuid: "0d3c06a6-5511-8a94-b35f-1181a370c6f6"
+uuid: "2da84668-fa0b-8ab2-98b6-38cd7b741c1d"
+horo: 2
 typography:
-  partition: online
+  partition: vocabulary
   bondDegree: 28
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - business
-    - collapse
-    - law
-    - marketplace
-    - merge
-    - players
-    - sti
-    - store
-  matrix:
-    - business
-    - collapse
-    - law
-    - marketplace
-    - merge
-    - players
-    - sti
-    - store
-  backlinks:
-    - business
-    - collapse
-    - law
-    - marketplace
-    - merge
-    - players
-    - sti
-    - store
 signatures:
-  computationUuid: "2aee85a7-ca67-83d4-8cdb-7999964effd2"
+  computationUuid: "aa0f448e-5882-8384-a742-c422217b6378"
   stages:
     - stage: path
-      stageUuid: "8ba74b91-7e78-8e38-8ec6-bf25280eb937"
+      stageUuid: "27d41345-a166-8c59-8146-cd0dcbbe9c63"
     - stage: trinity
-      stageUuid: "cffcc363-d1bb-849f-afc2-eec416d9eb39"
+      stageUuid: "60150e6f-22b5-8859-a1bb-da841c955100"
     - stage: boundary
-      stageUuid: "92623fbb-ba30-8f98-af73-5d515b8c1ab6"
+      stageUuid: "bb4a15db-cbb8-80d8-8b42-1b2142fe6dc2"
     - stage: links
-      stageUuid: "d0bcc33d-b04c-85f6-b8c0-8a868778dc3e"
+      stageUuid: "653e4856-c752-8647-9631-2d9cd880f494"
     - stage: horo
-      stageUuid: "d9bb028a-4036-887a-b528-6bf4a567a19c"
+      stageUuid: "33313057-b655-80f6-a98f-6de72fa3f18b"
     - stage: seal
-      stageUuid: "c4ea5f50-b6fd-82db-bc5b-2dae21ef2c06"
+      stageUuid: "087fe03f-cddf-8a74-98e1-f4b3203293af"
     - stage: uuid
-      stageUuid: "0c5479ee-bbc1-8cda-b63c-4354fc0627c5"
+      stageUuid: "24f9674d-3bb2-819d-b0fb-ba9184e9bcdd"
 version: 2
 ---
 # online

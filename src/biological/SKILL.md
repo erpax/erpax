@@ -2,64 +2,21 @@
 name: biological
 description: "Use when reasoning about biological as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: biological
-coordinate: "biological · 2/share · 437a2f2c"
-contentUuid: "cd978339-5265-57e1-a1f1-e5f409e00250"
-diamondUuid: "695b78f9-2851-882b-a9b3-46c3c117f1d5"
-uuid: "437a2f2c-4cfb-8349-adef-ea83e2c73cd6"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - involved
-    - law
-    - merge
-    - process
-    - role
-    - sti
-  out:
-    - collapse
-    - involved
-    - law
-    - merge
-    - process
-    - role
-    - sti
+coordinate: "biological · 7/descent · 572e39bc"
+contentUuid: "6e995caa-2924-5ecb-8d87-fe54aa746346"
+diamondUuid: "69262afa-5c89-89a4-a335-49aba3490d36"
+uuid: "572e39bc-5849-8ef3-9b79-21f9d8e4abe5"
+horo: 7
 typography:
   partition: biological
   bondDegree: 24
-  neighbors: []
 standards:
   - "IAS-41"
   - "IFRS-13"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - involved
-    - law
-    - merge
-    - process
-    - role
-    - sti
-  matrix:
-    - collapse
-    - involved
-    - law
-    - merge
-    - process
-    - role
-    - sti
-  backlinks:
-    - collapse
-    - involved
-    - law
-    - merge
-    - process
-    - role
-    - sti
 signatures:
-  computationUuid: "a592434a-71b7-8e35-8111-d96e6e42e271"
+  computationUuid: "46a1367a-49e6-83cd-adda-cf51e4f8086d"
   stages:
     - stage: path
       stageUuid: "6bf03bbe-9d87-8680-9b3e-3fe24f05fd24"
@@ -70,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "7a0becd4-2025-8c17-aac5-3182bfb15b22"
     - stage: horo
-      stageUuid: "5adacbc6-224c-8c34-ba61-998c026b0679"
+      stageUuid: "fe8f7fc7-e597-8e0a-94b7-34a534fcb370"
     - stage: seal
       stageUuid: "d57360fb-95fa-8e37-bd21-da531b908d8b"
     - stage: uuid
-      stageUuid: "94655d11-4ad1-8696-aa6a-1e7f6ffe0926"
+      stageUuid: "8b9c486e-5b0f-83c8-879e-cd2b58c4e7ee"
 version: 2
 ---
 # biological

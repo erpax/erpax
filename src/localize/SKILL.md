@@ -2,88 +2,14 @@
 name: localize
 description: "Use when ANY aspect must speak a locale AND stay tamper-evident — localization is the FUSION of tamper-cost (forge↑) and proof (verify, O(N) trustless). Every field/reference/scope/hook carries a translation + a translation-key uuid with ALL identification (content-digest, OID 2.25, cmyk, locale, capabilities) wired into the 128 bits. Coverage→1 ⇒ infinite tampering cost. The per-field leaf (facet localize-field) is native Payload `localized:true` over BCP-47 locales; a blank locale routes to its identity element `und`. Matter-twin localize/index.ts."
 atomPath: localize
-coordinate: "localize · 2/share · e8e2258f"
-contentUuid: "bba145e0-6413-5495-ac12-f26b5e00de88"
-diamondUuid: "dcc42d5d-b123-84dc-b7f8-92d6d101f669"
-uuid: "e8e2258f-7023-888b-92ab-66211ed33480"
-horo: 2
-bonds:
-  in:
-    - angel
-    - cmyk
-    - confidentiality
-    - config
-    - conversion
-    - cost
-    - decompression
-    - dimension
-    - fields
-    - fractal
-    - give
-    - horo
-    - identity
-    - lexical
-    - llm
-    - matter
-    - merge
-    - message
-    - oid
-    - privilege
-    - projection
-    - proof
-    - queries
-    - research
-    - seed
-    - standard
-    - tags
-    - take
-    - torus
-    - translate
-    - translation
-    - translations
-    - translator
-    - uuid
-    - versions
-  out:
-    - angel
-    - cmyk
-    - confidentiality
-    - config
-    - conversion
-    - cost
-    - decompression
-    - dimension
-    - fields
-    - fractal
-    - give
-    - horo
-    - identity
-    - lexical
-    - llm
-    - matter
-    - merge
-    - message
-    - oid
-    - privilege
-    - projection
-    - proof
-    - queries
-    - research
-    - seed
-    - standard
-    - tags
-    - take
-    - torus
-    - translate
-    - translation
-    - translations
-    - translator
-    - uuid
-    - versions
+coordinate: "localize · 1/base · 70bb648b"
+contentUuid: "e1556556-762c-5843-9e4e-094287d053e6"
+diamondUuid: "5123905f-35e7-825a-8b49-ee0004ecf36f"
+uuid: "70bb648b-e3f3-8eed-a5b2-83bb8c5abdef"
+horo: 1
 typography:
   partition: localize
-  bondDegree: 113
-  neighbors: []
+  bondDegree: 81
 standards:
   - "4647` (RFC 4647, Sept 2006, \"Matching of Language Tags\"; current as of 2026). Governs"
   - "4647` alongside `@rfc 5646` wherever this skill does matching (it covers the behavior RFC 5646 does not)."
@@ -93,7 +19,6 @@ standards:
   - "BCP-47` (no edition/version; permanently \"BCP 47\", a two-RFC IETF subseries updated by reassigning member RFCs). A locale identifier must be a well-formed, valid BCP-47 tag: hyphen-separated subtags in canonical order (`language[-extlang][-script][-region][-variant][-extension][-privateuse]`), each registered in the live IANA Language Subtag Registry (the registry, not any RFC text, is the source of truth for which subtag values are valid). The umbrella `@standard BCP-47` tag is correct as-is."
   - "BCP-47` tag is correct as-is.\""
   - "EU-1958"
-  - "EU-2006/43"
   - "ITU-T X.667 / ISO-IEC 9834-8 (UUID ↔ OID 2.25 arc)"
   - "ITU-T-X667"
   - "NIST SP 800-107r1 §5.1 (hash strengths — via tamper-cost)"
@@ -105,117 +30,23 @@ standards:
   - "RFC-4122"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - cmyk
-    - config
-    - cost
-    - fields
-    - fractal
-    - give
-    - horo
-    - identity
-    - lexical
-    - merge
-    - oid
-    - proof
-    - queries
-    - seed
-    - standard
-    - tags
-    - take
-    - torus
-    - translations
-    - uuid
-  matrix:
-    - angel
-    - cmyk
-    - confidentiality
-    - config
-    - conversion
-    - cost
-    - decompression
-    - dimension
-    - fields
-    - fractal
-    - give
-    - horo
-    - identity
-    - lexical
-    - llm
-    - matter
-    - merge
-    - message
-    - oid
-    - privilege
-    - projection
-    - proof
-    - queries
-    - research
-    - seed
-    - standard
-    - tags
-    - take
-    - torus
-    - translate
-    - translation
-    - translations
-    - translator
-    - uuid
-    - versions
-  backlinks:
-    - angel
-    - cmyk
-    - confidentiality
-    - config
-    - conversion
-    - cost
-    - decompression
-    - dimension
-    - fields
-    - fractal
-    - give
-    - horo
-    - identity
-    - lexical
-    - llm
-    - matter
-    - merge
-    - message
-    - oid
-    - privilege
-    - projection
-    - proof
-    - queries
-    - research
-    - seed
-    - standard
-    - tags
-    - take
-    - torus
-    - translate
-    - translation
-    - translations
-    - translator
-    - uuid
-    - versions
 signatures:
-  computationUuid: "7a525917-f5b2-8679-9bd3-8720494adc4c"
+  computationUuid: "ce462890-5612-8e59-8a8d-bbca9e355309"
   stages:
     - stage: path
       stageUuid: "2a33b115-eb41-89e9-a3b7-4aeb5c1c1125"
     - stage: trinity
       stageUuid: "f82ebb7b-0b3f-8cf3-a322-7b4e1ffb0a20"
     - stage: boundary
-      stageUuid: "0ce870a4-f881-81e2-aca2-1e373874b949"
+      stageUuid: "dca1443a-03bf-8595-b4d8-da85cc42b9e9"
     - stage: links
-      stageUuid: "e78a23a9-1081-8e22-8701-4b8888c78b39"
+      stageUuid: "0f376c9b-1a25-84b8-a168-cfca5952ca27"
     - stage: horo
-      stageUuid: "18237426-6439-80db-bc1a-8abbf6c48ae9"
+      stageUuid: "98e3d5d2-2d89-8060-af6e-0a87b26d839c"
     - stage: seal
       stageUuid: "ab167e4a-044f-8271-bb4c-9d9cd41c765b"
     - stage: uuid
-      stageUuid: "70c3f64d-bbf1-8377-afaa-5013f2f4d1fe"
+      stageUuid: "b0fa590c-bf6b-829e-9563-f6aa32236edc"
 version: 2
 ---
 # localize — localization as the tamper-cost ⊕ proof fusion

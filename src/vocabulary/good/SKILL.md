@@ -1,73 +1,35 @@
 ---
 name: good
 description: "Use when reasoning about good as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/good
-coordinate: good · 1/base · d60fafaa
-contentUuid: "966938f0-72ce-5dc7-9ab7-d5111bc39c34"
-diamondUuid: "eddb9382-3a28-844d-8c8c-9e977a8c072b"
-uuid: "d60fafaa-963d-8df5-97c7-30abcb78f451"
-horo: 1
-bonds:
-  in:
-    - amount
-    - collapse
-    - law
-    - merge
-    - sti
-    - type
-  out:
-    - amount
-    - collapse
-    - law
-    - merge
-    - sti
-    - type
+atomPath: "vocabulary/good"
+coordinate: "vocabulary/good · 5/round · 809b6334"
+contentUuid: "369ecf7d-21e9-5f6c-ab5a-ddd5330162c9"
+diamondUuid: "94064b0a-eabf-838e-abb2-9da054975fe6"
+uuid: "809b6334-9b2a-8d91-b62c-14ec57541435"
+horo: 5
 typography:
-  partition: good
+  partition: vocabulary
   bondDegree: 18
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - amount
-    - collapse
-    - law
-    - merge
-    - sti
-    - type
-  matrix:
-    - amount
-    - collapse
-    - law
-    - merge
-    - sti
-    - type
-  backlinks:
-    - amount
-    - collapse
-    - law
-    - merge
-    - sti
-    - type
 signatures:
-  computationUuid: "2229d3a9-b6ff-85fe-be37-cc40fa82acf7"
+  computationUuid: "bf84699e-4916-8acc-b662-d60c5d36ec4d"
   stages:
     - stage: path
-      stageUuid: "2049d16f-f83d-80d4-88d3-9ab5e328ff87"
+      stageUuid: "6bc66c1b-bcb3-834a-929b-618904bda7fc"
     - stage: trinity
-      stageUuid: "8c69117c-0cfb-82c7-a480-0b933bae955f"
+      stageUuid: "64ce7ce8-5c80-8318-8c1b-d61f01ff0afd"
     - stage: boundary
-      stageUuid: "3bf52b80-ceed-8c4a-98a1-77ec35756303"
+      stageUuid: "80b85823-6685-8dff-8dfa-fec20b970aca"
     - stage: links
-      stageUuid: "915d81ff-e5bd-8777-bba4-e70a749afa7b"
+      stageUuid: "3ec460ad-cdd4-892f-aaea-092807f6faf0"
     - stage: horo
-      stageUuid: "de9a57b8-4ee9-8058-83cf-5feaef418c6e"
+      stageUuid: "ac4966dd-9df4-83d9-8e40-d19ce1c20b99"
     - stage: seal
-      stageUuid: "6a325f4c-8c7d-8a02-b9ee-ebffac1a4943"
+      stageUuid: "e1b36963-8fd9-81c8-938d-cdc528fe0c7c"
     - stage: uuid
-      stageUuid: "4bfe69da-a40c-8aab-9539-4a0bd815640c"
+      stageUuid: "a024eb8f-b65e-8073-abcb-42a692139487"
 version: 2
 ---
 # good

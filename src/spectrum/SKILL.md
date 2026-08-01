@@ -2,96 +2,33 @@
 name: spectrum
 description: "Use when reasoning about the spectrum — the finite, discrete set of lines a system can emit or absorb, computed from every leap between the seven horo energy-rungs and deduplicated to its distinct gap-frequencies. The spectrum is the system's fingerprint and a discrete sampling of the continuous aura; it is where the wave shows it is quantised. Each line is the symmetric binding of its two rungs (one coordinate for emission and absorption alike)."
 atomPath: spectrum
-coordinate: spectrum · 1/base · 45fadd6a
-contentUuid: "ce7e04a3-6309-57ac-8d7e-d80916e97d55"
-diamondUuid: "8f890091-958e-8b8c-8b8d-dc15eaa4e4ea"
-uuid: "45fadd6a-7de0-8a76-9b9f-98e8de02235a"
-horo: 1
-bonds:
-  in:
-    - aura
-    - frequency
-    - hamiltonian
-    - horo
-    - law
-    - leap
-    - photon
-    - quantum
-    - series
-    - uncertainty
-    - wave
-  out:
-    - aura
-    - frequency
-    - hamiltonian
-    - horo
-    - law
-    - leap
-    - photon
-    - quantum
-    - series
-    - uncertainty
-    - wave
+coordinate: "spectrum · 4/weave · 8ed94881"
+contentUuid: "70593feb-805f-5644-ab7a-277192a81cdf"
+diamondUuid: "794524c6-bdb9-871d-9e98-7be3bebcc9c2"
+uuid: "8ed94881-bd61-8096-ab13-68d51782a422"
+horo: 4
 typography:
   partition: spectrum
   bondDegree: 36
-  neighbors:
-    - aura
-standards:
-  - "lines computed from every horo rung-pair via ../leap, deduped by the symmetric binding-uuid"
+standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - aura
-    - frequency
-    - horo
-    - law
-    - leap
-    - photon
-    - quantum
-    - series
-    - wave
-  matrix:
-    - aura
-    - frequency
-    - hamiltonian
-    - horo
-    - law
-    - leap
-    - photon
-    - quantum
-    - series
-    - uncertainty
-    - wave
-  backlinks:
-    - aura
-    - frequency
-    - hamiltonian
-    - horo
-    - law
-    - leap
-    - photon
-    - quantum
-    - series
-    - uncertainty
-    - wave
 signatures:
-  computationUuid: "6bd9c055-5c1d-877b-991c-7a8f8b61e9df"
+  computationUuid: "2729722b-c878-8f10-93ec-3c57347e63db"
   stages:
     - stage: path
       stageUuid: "4d4e6c40-7276-87a7-81f0-d88d6d6e941c"
     - stage: trinity
       stageUuid: "2fb6652e-c7aa-8a1d-9b58-70e8fae2b622"
     - stage: boundary
-      stageUuid: "23317b0d-01c5-8e4b-a16b-a2e81da8ee0d"
+      stageUuid: "32a749b3-653f-87ae-ae51-2ca2bf83ee11"
     - stage: links
       stageUuid: "a7a485d0-2cf4-8c3a-98dc-7f8edf220433"
     - stage: horo
-      stageUuid: "a9004df5-e001-8e55-8447-9bad5c897c9b"
+      stageUuid: "8e8787e4-a9f7-8834-ba29-77320c406601"
     - stage: seal
-      stageUuid: "f545b605-afb5-8a11-9256-c935d65af30f"
+      stageUuid: "c1e4ca21-7cf9-8f14-95d7-7a3bde56609b"
     - stage: uuid
-      stageUuid: "c159091a-745c-87b6-b3d6-4f47e696fccd"
+      stageUuid: "a82aee40-3e92-8464-8c3b-715abc7c60e1"
 version: 2
 ---
 # spectrum — the discrete lines of every leap

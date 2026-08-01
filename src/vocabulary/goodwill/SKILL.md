@@ -1,72 +1,34 @@
 ---
 name: goodwill
 description: "Use when reasoning about goodwill — Use for the excess of acquisition cost over fair value of identifiable net assets; subject to annual impairment testing under IFRS-3 and required cash-flow allocation to CGUs"
-atomPath: vocabulary/goodwill
-coordinate: goodwill · 1/base · 48cf547c
-contentUuid: "bf50b86b-81fa-51e4-a227-0f64e19ca2b0"
-diamondUuid: "f2ef12c8-6f48-8c0d-93c2-af8811629969"
-uuid: "48cf547c-15f8-80b1-9aa8-729adf5431ab"
-horo: 1
-bonds:
-  in:
-    - assets
-    - combinations
-    - consolidations
-    - impairment
-    - law
-    - measurements
-  out:
-    - assets
-    - combinations
-    - consolidations
-    - impairment
-    - law
-    - measurements
+atomPath: "vocabulary/goodwill"
+coordinate: "vocabulary/goodwill · 5/round · 1c4d3626"
+contentUuid: "3bf66320-b742-5c6b-a9e7-727146b7fde0"
+diamondUuid: "339ec40d-5c1d-8fa1-be33-1a5767591052"
+uuid: "1c4d3626-f15a-85c3-bd96-9fd00465bcb2"
+horo: 5
 typography:
-  partition: goodwill
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - assets
-    - combinations
-    - consolidations
-    - impairment
-    - law
-    - measurements
-  matrix:
-    - assets
-    - combinations
-    - consolidations
-    - impairment
-    - law
-    - measurements
-  backlinks:
-    - assets
-    - combinations
-    - consolidations
-    - impairment
-    - law
-    - measurements
 signatures:
-  computationUuid: "fde70175-ddb2-800a-baad-63fd21ea8b68"
+  computationUuid: "bb3859e3-926f-8131-811f-6dc5c0ba6f0b"
   stages:
     - stage: path
-      stageUuid: "b2f11413-c4b9-85dd-af6c-5d2e906ec31c"
+      stageUuid: "2cab5121-efb6-85fa-890e-91fa71d49214"
     - stage: trinity
-      stageUuid: "4dfd3307-33c2-86cd-9935-2b7160a0a617"
+      stageUuid: "50a9acbb-f6c2-87bd-b102-fb8ad91de6a5"
     - stage: boundary
-      stageUuid: "5cd025a2-f85b-899d-91d0-0adec31b862a"
+      stageUuid: "069a0de3-fb5f-8c2b-9c4a-36165347025b"
     - stage: links
-      stageUuid: "abf5bab3-c019-8c1e-956b-22e68f9c7416"
+      stageUuid: "6d392859-fb87-86c2-8cb6-ae17d3ec1b43"
     - stage: horo
-      stageUuid: "011a017c-7db4-8632-a0f8-acbc8770b68f"
+      stageUuid: "3c06811e-22f8-895b-95ba-83ae3f2a71c2"
     - stage: seal
-      stageUuid: "fe1e5715-0a80-8c21-83ba-787e211b7906"
+      stageUuid: "61e88c8b-8f65-8af7-99b9-af6436cb509f"
     - stage: uuid
-      stageUuid: "2c62fe89-46d8-87c2-bd12-051bc3bf9d3a"
+      stageUuid: "47a65ff8-3d96-8c4b-8c81-9f875260fe4e"
 version: 2
 ---
 # goodwill

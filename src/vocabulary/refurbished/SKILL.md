@@ -1,63 +1,35 @@
 ---
 name: refurbished
 description: "Use when reasoning about refurbished as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/refurbished
-coordinate: refurbished · 7/descent · f39edec8
-contentUuid: "159c1f65-fd1c-5ba2-b9b9-62a4548f66e7"
-diamondUuid: "043c4e82-d86e-8c54-9c7e-eb760c928d91"
-uuid: "f39edec8-1043-894b-b851-6611b5753eb0"
+atomPath: "vocabulary/refurbished"
+coordinate: "vocabulary/refurbished · 7/descent · 35287687"
+contentUuid: "0b0a0ae9-9efe-5a83-a4b8-177d14656771"
+diamondUuid: "553d3890-d60f-831e-b3bf-b639387d0c45"
+uuid: "35287687-de23-811d-80cd-fb205fc95c39"
 horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: refurbished
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "e9a947ce-7466-8f70-8784-75e05c8c7bf3"
+  computationUuid: "64cc0715-e244-85ea-826f-72845a3819e2"
   stages:
     - stage: path
-      stageUuid: "6bb9a5b3-e995-85f7-ba20-1a645d1b53e4"
+      stageUuid: "1630ce7d-5aed-8de6-92ec-694d233be1bc"
     - stage: trinity
-      stageUuid: "b97af68e-364c-8696-9960-dde4dc236be4"
+      stageUuid: "8cd55e54-a322-85fc-b658-04333914cc06"
     - stage: boundary
-      stageUuid: "e6c6c0e9-54bd-8224-8ea3-16001e304beb"
+      stageUuid: "bb97d980-4f1d-88b6-b9d5-3cc414f3caaa"
     - stage: links
-      stageUuid: "01532f6a-0322-86db-9fd9-c7cb02b20070"
+      stageUuid: "876f6537-b166-8100-9bcc-cd577009f482"
     - stage: horo
-      stageUuid: "8d6ab744-4929-8728-9844-c270440b5921"
+      stageUuid: "ced91c64-2e3e-80d8-b047-a458fbbca563"
     - stage: seal
-      stageUuid: "5164923f-f39e-8885-9f22-9146c6ba36d4"
+      stageUuid: "dd2e3392-c9e8-8972-b1ed-65f7844907af"
     - stage: uuid
-      stageUuid: "c9040c7f-61c5-8e22-8a2c-34d28414faa9"
+      stageUuid: "7f84b0a6-9241-85da-bc3e-6fa53b7d2c93"
 version: 2
 ---
 # refurbished

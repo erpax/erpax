@@ -1,93 +1,35 @@
 ---
 name: drive
 description: "Use when reasoning about drive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/drive
-coordinate: drive · 7/descent · 0b36807b
-contentUuid: "2f4d7b8b-f8dc-52be-bd05-ebd5b056aab7"
-diamondUuid: "116f9dc1-d3c1-8555-81f5-05e0bcd7dc40"
-uuid: "0b36807b-adfa-89b0-9347-329c38a3b380"
+atomPath: "vocabulary/drive"
+coordinate: "vocabulary/drive · 7/descent · 3a1fc712"
+contentUuid: "46ec64e1-139b-56dc-a3fd-859ddc09d9f7"
+diamondUuid: "75a11ae1-2b61-8ffc-a5ff-7ad7a6d90cb5"
+uuid: "3a1fc712-0d8b-8135-ad65-5cdadc2a6d0b"
 horo: 7
-bonds:
-  in:
-    - collapse
-    - configuration
-    - has
-    - law
-    - merge
-    - service
-    - sti
-    - through
-    - value
-    - wheel
-  out:
-    - collapse
-    - configuration
-    - has
-    - law
-    - merge
-    - service
-    - sti
-    - through
-    - value
-    - wheel
 typography:
-  partition: drive
+  partition: vocabulary
   bondDegree: 35
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - configuration
-    - has
-    - law
-    - merge
-    - service
-    - sti
-    - through
-    - value
-    - wheel
-  matrix:
-    - collapse
-    - configuration
-    - has
-    - law
-    - merge
-    - service
-    - sti
-    - through
-    - value
-    - wheel
-  backlinks:
-    - collapse
-    - configuration
-    - has
-    - law
-    - merge
-    - service
-    - sti
-    - through
-    - value
-    - wheel
 signatures:
-  computationUuid: "12dcd71b-3662-82b7-a85b-4e0404dd6e48"
+  computationUuid: "f7dd5d54-76a8-84a8-9b23-6ac60491ffdd"
   stages:
     - stage: path
-      stageUuid: "cb3a7f0b-374e-8331-b36e-0330d232d1a0"
+      stageUuid: "af7df46c-bdac-857b-bd54-81e3f97d101b"
     - stage: trinity
-      stageUuid: "2710c525-e526-858e-b7f6-6b04d6de8af9"
+      stageUuid: "41cf20eb-a876-81a0-9b45-8abacef1a490"
     - stage: boundary
-      stageUuid: "50640625-c9a0-834a-97ae-556961df7c5d"
+      stageUuid: "07e96200-9401-8246-a15c-e25d77e7d709"
     - stage: links
-      stageUuid: "6ac7b165-6576-8f0c-b5cd-041beb80738e"
+      stageUuid: "e2d12ca3-9ec5-8ae6-9f78-df94f8a96dca"
     - stage: horo
-      stageUuid: "497f25f6-6c63-8e76-8acf-cb51afe039fc"
+      stageUuid: "53cdbceb-38f4-84a0-b2e1-1b1ca3ba330c"
     - stage: seal
-      stageUuid: "5bbbecb6-5f4b-8d1c-a52b-f564219dd47e"
+      stageUuid: "5d4a0a05-9cad-87c8-a440-875cce609670"
     - stage: uuid
-      stageUuid: "3fd3c8c0-19cd-85ac-b286-46850a4cc882"
+      stageUuid: "dee7e7a5-a6c1-8667-9441-62d85094b090"
 version: 2
 ---
 # drive

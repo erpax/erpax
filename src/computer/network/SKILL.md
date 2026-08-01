@@ -2,90 +2,19 @@
 name: network
 description: "Use when reasoning about network as a part of [[computer]] — vocabulary pivot to @/network; nested not duplicated."
 atomPath: "computer/network"
-coordinate: "computer/network · 4/weave · 7ced6630"
-contentUuid: "4b43e23c-c7bd-51a4-bd01-66a4756b4fe1"
-diamondUuid: "7668236a-1a1d-8b63-b148-2194d61908aa"
-uuid: "7ced6630-2661-890e-9159-39e9ab37ff30"
-horo: 4
-bonds:
-  in:
-    - brain
-    - collapse
-    - computer
-    - connection
-    - decentralization
-    - diffusion
-    - ecosystem
-    - includes
-    - law
-    - market
-    - mycelium
-    - network
-    - plan
-    - science
-    - tier
-  out:
-    - brain
-    - collapse
-    - computer
-    - connection
-    - decentralization
-    - diffusion
-    - ecosystem
-    - includes
-    - law
-    - market
-    - mycelium
-    - network
-    - plan
-    - science
-    - tier
+coordinate: "computer/network · 2/share · 338e9d46"
+contentUuid: "dc50c00a-990f-511f-a7ef-c39191b1a52f"
+diamondUuid: "566b1b20-0099-877b-9b60-4524126f8813"
+uuid: "338e9d46-163c-8e8c-8371-07271fb37603"
+horo: 2
 typography:
   partition: computer
   bondDegree: 69
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - computer
-    - law
-    - network
-  matrix:
-    - brain
-    - collapse
-    - computer
-    - connection
-    - decentralization
-    - diffusion
-    - ecosystem
-    - includes
-    - law
-    - market
-    - mycelium
-    - network
-    - plan
-    - science
-    - tier
-  backlinks:
-    - brain
-    - collapse
-    - computer
-    - connection
-    - decentralization
-    - diffusion
-    - ecosystem
-    - includes
-    - law
-    - market
-    - mycelium
-    - network
-    - plan
-    - science
-    - tier
 signatures:
-  computationUuid: "1599b03e-1332-8e50-8980-45b50f17089f"
+  computationUuid: "0f9f031a-6e4d-8c02-8e03-0722a4229ed8"
   stages:
     - stage: path
       stageUuid: "fcdf2894-16ae-81e6-a88a-a81e434e5745"
@@ -96,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "23255e00-f85b-8670-a1b2-e3974f8b46bd"
     - stage: horo
-      stageUuid: "4a476aad-c0aa-82b4-9cde-1a098825cd3a"
+      stageUuid: "41d09acc-a591-828a-80df-f73fd3937f6e"
     - stage: seal
       stageUuid: "fcb962e8-cbae-87c3-86f4-f064ac194101"
     - stage: uuid
-      stageUuid: "44a1937c-7eb4-8573-bfb6-bb49a4d3a2db"
+      stageUuid: "304f8142-c363-8825-9a45-68ea6be3bcd5"
 version: 2
 ---
 # computer/network — connects externally

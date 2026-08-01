@@ -1,73 +1,35 @@
 ---
 name: forum
 description: "Use when reasoning about forum as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/forum
-coordinate: forum · 2/share · 4c2df957
-contentUuid: "e91f102b-1882-5e39-b2cc-1de99bf68924"
-diamondUuid: "2d816b5e-b2b4-8083-80be-56b9ccab17dc"
-uuid: "4c2df957-e348-8834-a18f-4ceeaba5a25f"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - discussion
-    - law
-    - merge
-    - posting
-    - sti
-  out:
-    - collapse
-    - discussion
-    - law
-    - merge
-    - posting
-    - sti
+atomPath: "vocabulary/forum"
+coordinate: "vocabulary/forum · 4/weave · 2c7a705e"
+contentUuid: "6e6db895-551d-58b1-be3f-a2fbd36b2a42"
+diamondUuid: "bd4a2e7f-b9c5-806f-b916-cf1758d3a40c"
+uuid: "2c7a705e-c467-8aa4-875d-7a4c96c6c166"
+horo: 4
 typography:
-  partition: forum
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - discussion
-    - law
-    - merge
-    - posting
-    - sti
-  matrix:
-    - collapse
-    - discussion
-    - law
-    - merge
-    - posting
-    - sti
-  backlinks:
-    - collapse
-    - discussion
-    - law
-    - merge
-    - posting
-    - sti
 signatures:
-  computationUuid: "a17af551-c7da-8c19-b9ff-26cda67d0b81"
+  computationUuid: "dd979d93-56b1-8af0-aa3d-91f94374d4d2"
   stages:
     - stage: path
-      stageUuid: "44b93b3e-989c-872e-97dc-db77b0d15523"
+      stageUuid: "a266b21a-61b1-893d-aa6d-2d466683f786"
     - stage: trinity
-      stageUuid: "0f20a646-779e-85dc-9f56-33e90e78e2f1"
+      stageUuid: "447abec8-189d-8ad0-b4dc-70f56aaf04a8"
     - stage: boundary
-      stageUuid: "dfe1deb0-f540-88cb-b974-90c03486e523"
+      stageUuid: "ed3d4381-add0-82c8-9efd-7fb0dcdb3106"
     - stage: links
-      stageUuid: "055f2cf6-dbed-8628-8b84-62865491d8bf"
+      stageUuid: "3ddb29cc-d525-8333-b6f3-3c3b2ee32338"
     - stage: horo
-      stageUuid: "83672504-498a-88e0-99a7-0d22e5952b89"
+      stageUuid: "d3d71c02-f6aa-8948-8abe-84e0511c1bfd"
     - stage: seal
-      stageUuid: "49b62156-13ca-8ee0-bfb4-ca75ce319f98"
+      stageUuid: "d7e5a006-105f-857d-b8bb-ba5ca7686409"
     - stage: uuid
-      stageUuid: "fdfcb00b-e3b4-8153-a24f-98409fd38022"
+      stageUuid: "2f8c7418-c4a6-883e-94be-d3e3915d0abf"
 version: 2
 ---
 # forum

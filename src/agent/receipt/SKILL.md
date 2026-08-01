@@ -3,148 +3,15 @@ name: receipt
 description: "Use when an agent must publish its own error record — the ledger every atom carries except the thing that writes them. Computes honesty (claims that held / claims made), efficiency (delivered / delivered+rework), self-caught defects, and lapses repeated after acknowledgement; withoutCorpus gives the counterfactual (what ships when the gates are stripped), trainingRules turns each correction into an imperative naming the instrument that already existed, and compareAgents refuses to call one row a comparison. Harness is tracked apart from model, and any harness can emit a receipt — the shape is plain data."
 atomPath: "agent/receipt"
 coordinate: "agent/receipt"
-contentUuid: "b923e25f-0651-5965-83bb-67915f889e45"
+contentUuid: "4b7ec77b-d3c2-5118-8d58-d4e5942fb3cd"
 diamondUuid: "4313cd4c-87b3-81f6-9b36-04b05f71e84f"
 uuid: "40f2d8da-cb59-862d-b935-209e2213b3b1"
 horo: 4
-bonds:
-  in:
-    - access
-    - agent
-    - bindings
-    - blood
-    - comms
-    - exchange
-    - gate
-    - history
-    - holographic
-    - identity
-    - log
-    - mcp
-    - merge
-    - peace
-    - proof
-    - quantum
-    - realtime
-    - request
-    - research
-    - sandbox
-    - sanitization
-    - security
-    - self
-    - society
-    - team
-    - trading
-    - uuid
-    - vein
-    - wave
-  out:
-    - access
-    - agent
-    - bindings
-    - blood
-    - comms
-    - exchange
-    - gate
-    - history
-    - holographic
-    - identity
-    - log
-    - mcp
-    - merge
-    - peace
-    - proof
-    - quantum
-    - realtime
-    - request
-    - research
-    - sandbox
-    - sanitization
-    - security
-    - self
-    - society
-    - team
-    - trading
-    - uuid
-    - vein
-    - wave
 typography:
   partition: agent
   bondDegree: 114
-  neighbors:
-    - agent
-    - diamond
-    - hallucination
-    - purity
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agent
-    - constitution
-    - law
-    - local
-    - rules
-  matrix:
-    - access
-    - agent
-    - bindings
-    - blood
-    - comms
-    - exchange
-    - gate
-    - history
-    - holographic
-    - identity
-    - log
-    - mcp
-    - merge
-    - peace
-    - proof
-    - quantum
-    - realtime
-    - request
-    - research
-    - sandbox
-    - sanitization
-    - security
-    - self
-    - society
-    - team
-    - trading
-    - uuid
-    - vein
-    - wave
-  backlinks:
-    - access
-    - agent
-    - bindings
-    - blood
-    - comms
-    - exchange
-    - gate
-    - history
-    - holographic
-    - identity
-    - log
-    - mcp
-    - merge
-    - peace
-    - proof
-    - quantum
-    - realtime
-    - request
-    - research
-    - sandbox
-    - sanitization
-    - security
-    - self
-    - society
-    - team
-    - trading
-    - uuid
-    - vein
-    - wave
 signatures:
   computationUuid: "52de06d9-d71f-848e-b8a7-eb1a5e4dd861"
   stages:

@@ -2,34 +2,14 @@
 name: journals
 description: "Use when defining or managing recurring accrual templates (rent, depreciation, amortisation, prepaid/deferred-revenue release) that a scheduled job materialises into journal-entries each period — RFC 5545 RRULE supported, SOX §404 four-eyes on auto-post. The recurring-journals automation register."
 atomPath: "gl/accounts/recurring/journals"
-coordinate: "gl/accounts/recurring/journals · 5/round · d48d409e"
-contentUuid: "71e85084-cb68-5fa3-8f6f-d73d78ac3bc7"
-diamondUuid: "b739a038-1c96-8736-9f90-7da368f541d6"
-uuid: "d48d409e-77b7-8540-947d-8bca218cde10"
-horo: 5
-bonds:
-  in:
-    - accounting
-    - accrual
-    - centers
-    - deferral
-    - entries
-    - journal
-    - law
-    - prepaid
-  out:
-    - accounting
-    - accrual
-    - centers
-    - deferral
-    - entries
-    - journal
-    - law
-    - prepaid
+coordinate: "gl/accounts/recurring/journals · 1/base · f7fe4571"
+contentUuid: "06531ffa-f20e-521a-928f-5d468b719c58"
+diamondUuid: "c9992cd5-e38f-833b-8d05-4a84db0b7b14"
+uuid: "f7fe4571-b2f0-8301-bcff-20af006e54b9"
+horo: 1
 typography:
   partition: gl
   bondDegree: 25
-  neighbors: []
 standards:
   - "IFRS IAS-1 §27 accrual-basis-of-accounting"
   - "IFRS IAS-1 §29 §30 separate-presentation"
@@ -43,32 +23,8 @@ standards:
   - "rfc-5545 icalendar-rrule recurrence-rule`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - centers
-    - entries
-    - law
-  matrix:
-    - accounting
-    - accrual
-    - centers
-    - deferral
-    - entries
-    - journal
-    - law
-    - prepaid
-  backlinks:
-    - accounting
-    - accrual
-    - centers
-    - deferral
-    - entries
-    - journal
-    - law
-    - prepaid
 signatures:
-  computationUuid: "bc188062-5fa2-88f1-8d16-c38da01b1ff3"
+  computationUuid: "b4915f8a-35b4-8cdf-a4cd-53d79354b4c7"
   stages:
     - stage: path
       stageUuid: "994bc4fc-e135-865b-b66d-a47a86410297"
@@ -79,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "0c796456-2a98-8e71-aba3-ad42b340a2e2"
     - stage: horo
-      stageUuid: "d9765148-aaae-865c-ab29-0c6fb81d4b5b"
+      stageUuid: "8a46466f-45c2-8600-acec-71fee67fb162"
     - stage: seal
       stageUuid: "e218d9ee-bb29-8993-b06a-9920dffcdb8a"
     - stage: uuid
-      stageUuid: "dd07ad97-7b4b-8873-bb91-087da81409cd"
+      stageUuid: "e9382b3b-715c-8fb0-8c8e-c9ab34a6b8e3"
 version: 2
 ---
 # recurring-journals

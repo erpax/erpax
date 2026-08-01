@@ -1,53 +1,35 @@
 ---
 name: line
 description: "Use when reasoning about line — A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space."
-atomPath: vocabulary/line
-coordinate: line · 2/share · a2b25ee1
-contentUuid: "3bb94f7d-da5f-5397-858a-e2486abc5a0e"
-diamondUuid: "9c462357-d5a4-8293-adbc-b3940d015483"
-uuid: "a2b25ee1-9d7e-8f99-8de2-592a200cc633"
-horo: 2
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/line"
+coordinate: "vocabulary/line · 7/descent · 42f0d94f"
+contentUuid: "75a36d3b-5f52-5d74-9365-2bc9a94966b9"
+diamondUuid: "d6105e20-36c4-8d1b-b2ff-c6f591805eff"
+uuid: "42f0d94f-2690-84cb-aa54-204a4d5e4af2"
+horo: 7
 typography:
-  partition: line
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "4fb929d9-4210-82f8-be51-80e685c4a7b0"
+  computationUuid: "b5877544-9114-80f2-8957-0d83478e0503"
   stages:
     - stage: path
-      stageUuid: "4466de2a-1232-8340-8685-4c54e09c291b"
+      stageUuid: "28ef1fa7-02db-89a6-936d-04e35758512c"
     - stage: trinity
-      stageUuid: "4cfc04e4-43a0-8641-9137-df87e9566d16"
+      stageUuid: "afc635c4-b36a-8015-9baf-dba2b8e30e81"
     - stage: boundary
-      stageUuid: "e73bec5e-b050-8af9-ade1-860798d8052d"
+      stageUuid: "77d2a2f2-f2c8-8e79-9a9a-fc0f1999e947"
     - stage: links
-      stageUuid: "bc844df7-13ad-8141-be3e-2a7ac3e17f1e"
+      stageUuid: "549063fa-6161-8d09-80d5-d087ffc7f19b"
     - stage: horo
-      stageUuid: "f5297a82-36b7-8b2e-9670-3f1d712ce845"
+      stageUuid: "be6bd028-d7d9-8a8a-b1ca-e083b3484c99"
     - stage: seal
-      stageUuid: "97a1efbb-e0f7-8033-ac63-f9e23c4369f4"
+      stageUuid: "846d1669-a626-839a-ae7b-4cfad026449c"
     - stage: uuid
-      stageUuid: "ce1b3789-48f5-8329-95f0-1812698632e1"
+      stageUuid: "410e3d3a-beeb-8895-8808-47f1dff7c05e"
 version: 2
 ---
 # line

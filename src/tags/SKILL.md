@@ -2,97 +2,26 @@
 name: tags
 description: "Use when defining or querying reusable labels applied across any collection — tag vocabulary, use-count counter cache, content-uuid dedup (same name = same id everywhere). The universal label-vocabulary collection; pair with taggings for the full polymorphic tagging engine."
 atomPath: tags
-coordinate: tags · 5/round · 165f9c08
-contentUuid: "54832f6f-b81d-54ae-879e-a942bf3dddde"
-diamondUuid: "f2c3dcf8-abc5-8a57-9113-41b0996ff920"
-uuid: "165f9c08-886a-8ca8-95ba-ecc3c264b4ca"
-horo: 5
-bonds:
-  in:
-    - accounting
-    - all
-    - cmyk
-    - collapse
-    - comment
-    - commerce
-    - crest
-    - dimension
-    - fields
-    - horo
-    - localize
-    - metadata
-    - party
-    - sequence
-    - taggings
-    - variant
-  out:
-    - accounting
-    - all
-    - cmyk
-    - collapse
-    - comment
-    - commerce
-    - crest
-    - dimension
-    - fields
-    - horo
-    - localize
-    - metadata
-    - party
-    - sequence
-    - taggings
-    - variant
+coordinate: "tags · 4/weave · 0d76af4e"
+contentUuid: "6e95eba7-059b-55e5-84f9-6be0fdf62ee2"
+diamondUuid: "7edfc0d9-49c2-8843-bcbf-4af559030a9f"
+uuid: "0d76af4e-1354-8f12-a208-ce87a4ebc73f"
+horo: 4
 typography:
   partition: tags
-  bondDegree: 48
-  neighbors: []
+  bondDegree: 42
 standards:
-  - "EU-2011/83"
   - "EU-VAT-Implementing-Reg-282/2011"
-  - "ISO-19011:2018 audit-trail label-changes"
   - "ISO-25964-1:2011 thesauri-and-interoperability controlled-vocabulary"
+  - "ISO-25964-1:2011 thesauri-and-interoperability controlled-vocabulary`"
   - "RFC-4122"
   - "RFC-4122 §4.3 uuid content-addressed-id"
+  - "RFC-4122 §4.3 uuid content-addressed-id`"
   - "SOX §404 internal-controls"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink: []
-  matrix:
-    - accounting
-    - all
-    - cmyk
-    - collapse
-    - comment
-    - commerce
-    - crest
-    - dimension
-    - fields
-    - horo
-    - localize
-    - metadata
-    - party
-    - sequence
-    - taggings
-    - variant
-  backlinks:
-    - accounting
-    - all
-    - cmyk
-    - collapse
-    - comment
-    - commerce
-    - crest
-    - dimension
-    - fields
-    - horo
-    - localize
-    - metadata
-    - party
-    - sequence
-    - taggings
-    - variant
 signatures:
-  computationUuid: "5149c9de-6d0e-8a34-b47b-984fc9657864"
+  computationUuid: "65dd0d34-129a-8fe9-a364-0859c1f5ca2b"
   stages:
     - stage: path
       stageUuid: "e95df052-9841-8ff0-8bc2-652b80f2398c"
@@ -103,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "acef3454-eeed-86c4-8db4-e32cd9be5392"
     - stage: horo
-      stageUuid: "0ebf387e-d35e-8976-b9c2-20c29351ac53"
+      stageUuid: "02ca4e8d-ec90-8e80-96e6-18e01e1b6c69"
     - stage: seal
-      stageUuid: "5459d429-efea-8766-b30b-332b0535906b"
+      stageUuid: "878fcf5a-870b-8e55-b6e6-0d80fc9fdbf4"
     - stage: uuid
-      stageUuid: "5f082110-f083-8ef6-8289-80af209eb741"
+      stageUuid: "b8c4a36a-9fd0-8042-8ce5-61a2e7499237"
 version: 2
 ---
 # tags

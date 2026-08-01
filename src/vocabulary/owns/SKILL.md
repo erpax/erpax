@@ -1,53 +1,35 @@
 ---
 name: owns
 description: Use when reasoning about owns — Things owned by the organization or person.
-atomPath: vocabulary/owns
-coordinate: owns · 4/weave · 566282b8
-contentUuid: "a180226a-09b4-53de-83a7-e07b117fba11"
-diamondUuid: "11ea85d6-9f97-8edb-a16f-b455e261b5fb"
-uuid: "566282b8-4af3-83b2-ba3a-6465f3274625"
-horo: 4
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/owns"
+coordinate: "vocabulary/owns · 2/share · 54526801"
+contentUuid: "ba7a6fa8-9637-52f5-9ac8-3df36c63e9b4"
+diamondUuid: "c9fbd13e-5a9f-87f7-a782-f1c8397489fe"
+uuid: "54526801-4ee4-86d4-93b8-204b85a08cf1"
+horo: 2
 typography:
-  partition: owns
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "82c163f6-008a-86cf-88fa-1298bf9ec912"
+  computationUuid: "dde69250-04da-82fe-9935-b178583ce2ad"
   stages:
     - stage: path
-      stageUuid: "f796b3db-137c-8be2-9dc8-c4e8137e23c0"
+      stageUuid: "73cf0b69-f9f2-8b35-887c-f36c94c08b53"
     - stage: trinity
-      stageUuid: "15885abb-1ed3-8852-84f2-c9ae41906fcc"
+      stageUuid: "603b09f9-f1bf-82e9-bd69-cd73e058b4c6"
     - stage: boundary
-      stageUuid: "46b5e069-8f3e-80da-9e56-8b945558d4fe"
+      stageUuid: "fe005375-0214-8729-9fc3-1640c8d52dd7"
     - stage: links
-      stageUuid: "712809e0-846d-85ac-93bf-3f7fbac9b78b"
+      stageUuid: "f2a11e8b-94b0-84f9-86ae-abe5516fea64"
     - stage: horo
-      stageUuid: "e68edba2-2c60-890c-a3ae-985d9ec5b6e8"
+      stageUuid: "b955fa9f-c2f1-871b-9842-6e2760a1531b"
     - stage: seal
-      stageUuid: "edaa68e7-97c9-88ce-88c8-5c2cfdcfaf50"
+      stageUuid: "2d5f8214-efa8-82b7-ab4d-3b8e0e21d19f"
     - stage: uuid
-      stageUuid: "bea558b3-3495-89eb-aac4-2af1cd3558da"
+      stageUuid: "6b72b138-238b-82c3-8d6b-b00adfa5497c"
 version: 2
 ---
 # owns

@@ -1,78 +1,35 @@
 ---
 name: employment
 description: "Use when reasoning about employment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/employment
-coordinate: employment · 4/weave · 7dd07be6
-contentUuid: "ffe34ff2-c6f8-5ed8-b344-8b026c2ceab6"
-diamondUuid: "fd898956-b112-8176-8999-b0b18dd8b7b4"
-uuid: "7dd07be6-3d8a-89cb-98aa-2241df2b517f"
-horo: 4
-bonds:
-  in:
-    - agency
-    - collapse
-    - law
-    - merge
-    - sti
-    - type
-    - unit
-  out:
-    - agency
-    - collapse
-    - law
-    - merge
-    - sti
-    - type
-    - unit
+atomPath: "vocabulary/employment"
+coordinate: "vocabulary/employment · 2/share · affa7f48"
+contentUuid: "28c9585e-2d99-5745-ace2-cbadb391e0a0"
+diamondUuid: "8aca576a-16a9-8c3c-9f79-73d8893294f3"
+uuid: "affa7f48-fedb-80f2-bf2f-affd4bd5c367"
+horo: 2
 typography:
-  partition: employment
+  partition: vocabulary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - agency
-    - collapse
-    - law
-    - merge
-    - sti
-    - type
-    - unit
-  matrix:
-    - agency
-    - collapse
-    - law
-    - merge
-    - sti
-    - type
-    - unit
-  backlinks:
-    - agency
-    - collapse
-    - law
-    - merge
-    - sti
-    - type
-    - unit
 signatures:
-  computationUuid: "39224513-27f2-8c07-805f-6b5a93594871"
+  computationUuid: "3577fd58-6b41-87a2-842a-1bb7670ac9c3"
   stages:
     - stage: path
-      stageUuid: "23653ab9-ebce-8255-b9f0-6bd330c913c4"
+      stageUuid: "a9dca80a-41d8-812f-b839-9f1a5f1c732a"
     - stage: trinity
-      stageUuid: "c6a4189e-1fbf-8240-ab5b-5b3cd4760526"
+      stageUuid: "2a5879b9-3a86-82d6-adff-bdcdb69ec900"
     - stage: boundary
-      stageUuid: "1f7a488a-22c2-8a01-88e5-49c5ee119b75"
+      stageUuid: "570066af-4414-8b50-bc81-c480c64fc747"
     - stage: links
-      stageUuid: "ccb6025d-5e66-8e2e-820e-d62989d77c72"
+      stageUuid: "46f29057-9afe-8aa6-9a02-8d446f5cd1c2"
     - stage: horo
-      stageUuid: "09fc49ea-884a-8b79-8d3e-f1971c38b140"
+      stageUuid: "f57ca6c5-4526-8414-8d53-e5766af8533a"
     - stage: seal
-      stageUuid: "34d1249b-d60e-8f30-aa3f-fde3ec92dc53"
+      stageUuid: "e49bebe9-58f1-8027-b5c3-47116d6abee9"
     - stage: uuid
-      stageUuid: "d16a028a-8ed1-80c4-8bcb-5a1e99eb6b93"
+      stageUuid: "75f96210-d262-8c38-b7d8-bd22ce517c0f"
 version: 2
 ---
 # employment

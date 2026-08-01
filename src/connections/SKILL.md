@@ -2,64 +2,18 @@
 name: connections
 description: "Use when managing the universal social/commercial/civic edge between typeless users — follow/friend/block/customer/supplier/employer/member — the one directed graph that carries the relation in context (not the user type), federated server-to-server via W3C ActivityPub."
 atomPath: connections
-coordinate: "connections · 4/weave · 6be39015"
-contentUuid: "f85622a8-725f-5c8f-bf14-e64a89ec4540"
-diamondUuid: "40e951b6-0a39-8ad8-906c-ee7b835c0a61"
-uuid: "6be39015-0f38-8391-8b19-08b676998491"
-horo: 4
-bonds:
-  in:
-    - access
-    - accounting
-    - api
-    - collections
-    - connection
-    - duality
-    - event
-    - exchange
-    - fields
-    - fractal
-    - hooks
-    - identity
-    - law
-    - merge
-    - mycelium
-    - network
-    - perspective
-    - standard
-    - trading
-    - workspace
-  out:
-    - access
-    - accounting
-    - api
-    - collections
-    - connection
-    - duality
-    - event
-    - exchange
-    - fields
-    - fractal
-    - hooks
-    - identity
-    - law
-    - merge
-    - mycelium
-    - network
-    - perspective
-    - standard
-    - trading
-    - workspace
+coordinate: "connections · 7/descent · 4e4250b9"
+contentUuid: "22aab63f-26e7-55b7-9902-6b707d1ddbc9"
+diamondUuid: "babe1545-8b2d-811b-9f16-af067814cc9c"
+uuid: "4e4250b9-9b3e-8ab0-83d5-6573f3c6c05b"
+horo: 7
 typography:
   partition: connections
   bondDegree: 60
-  neighbors: []
 standards:
-  - "EU-2002/58"
   - "GDPR Art 17 right-to-erasure Art 21 right-to-object (mute/block)"
   - "ISO 20022 financial-business-party-relationships"
   - "ISO 20022 financial-business-party-relationships`"
-  - "ISO-20022"
   - "OASIS UBL 2.1 business-relationship (B2B trade edges)"
   - "Peppol BIS billing-and-procurement (B2B / B2G interoperability)"
   - "Peppol-BIS-3.0"
@@ -74,63 +28,8 @@ standards:
   - "W3C-ActivityPub"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - accounting
-    - collections
-    - duality
-    - event
-    - fields
-    - fractal
-    - hooks
-    - identity
-    - merge
-    - standard
-  matrix:
-    - access
-    - accounting
-    - api
-    - collections
-    - connection
-    - duality
-    - event
-    - exchange
-    - fields
-    - fractal
-    - hooks
-    - identity
-    - law
-    - merge
-    - mycelium
-    - network
-    - perspective
-    - standard
-    - trading
-    - workspace
-  backlinks:
-    - access
-    - accounting
-    - api
-    - collections
-    - connection
-    - duality
-    - event
-    - exchange
-    - fields
-    - fractal
-    - hooks
-    - identity
-    - law
-    - merge
-    - mycelium
-    - network
-    - perspective
-    - standard
-    - trading
-    - workspace
 signatures:
-  computationUuid: "43abf0ee-f6d4-891e-9254-a6b1c77822f3"
+  computationUuid: "fda1f99b-f9d3-899a-82dc-f718c627d298"
   stages:
     - stage: path
       stageUuid: "365eb881-b33e-8c12-89d2-bdf9ef21f8a5"
@@ -141,11 +40,11 @@ signatures:
     - stage: links
       stageUuid: "75cd1b4a-71c5-8b8d-9e73-880ea620c9e7"
     - stage: horo
-      stageUuid: "003a47c0-ea66-82d3-a05a-b30e91b001a6"
+      stageUuid: "e7bdf001-a382-805c-9f72-ac10ec11b1f0"
     - stage: seal
       stageUuid: "ab2bba1f-7fc3-8880-ad82-bb3733c93443"
     - stage: uuid
-      stageUuid: "71c151cc-8590-88fe-92cb-05a7352fe757"
+      stageUuid: "c021e1dd-8caa-8027-a12a-2707696e57a2"
 version: 2
 ---
 # connections

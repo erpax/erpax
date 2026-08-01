@@ -1,63 +1,35 @@
 ---
 name: cap
 description: "Use when reasoning about cap as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/cap
-coordinate: cap · 4/weave · ba595f20
-contentUuid: "934fd657-fd31-58a9-b622-38075ecb6281"
-diamondUuid: "59127d9e-42d6-840d-a301-a98bbd36f5b7"
-uuid: "ba595f20-a933-8613-a8fe-d378a8cea529"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/cap"
+coordinate: "vocabulary/cap · 2/share · 0406d5bc"
+contentUuid: "9f6923b3-3095-596e-9d2a-55f9ac5e4531"
+diamondUuid: "be245caa-ea8c-8eec-97c8-936da1b6d502"
+uuid: "0406d5bc-fbef-8697-b7a6-51b36dce7e99"
+horo: 2
 typography:
-  partition: cap
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "c72ebd2b-2895-81a2-9576-7d12069313e7"
+  computationUuid: "e9037982-1223-8532-bb9e-1ca91595dadc"
   stages:
     - stage: path
-      stageUuid: "7ac36740-ac27-8487-9c04-ede872bf8683"
+      stageUuid: "42bdedfa-a4a0-8097-ab21-8daa9f8f931f"
     - stage: trinity
-      stageUuid: "5b784efa-59e8-81ea-974c-20667ecfb38d"
+      stageUuid: "641f661a-abcf-80d1-80c2-8508767146e7"
     - stage: boundary
-      stageUuid: "b3f6116f-1792-86d6-9867-593d4b70f229"
+      stageUuid: "7fbac52f-d960-8612-9c76-f6f601da390c"
     - stage: links
-      stageUuid: "c88ec30b-e683-84e0-83fd-0098df498932"
+      stageUuid: "018a2905-a8aa-8e23-8fe2-434ae8101747"
     - stage: horo
-      stageUuid: "401fba83-e52b-820a-94f0-2c1a6bbba1f0"
+      stageUuid: "8e4dc22f-6141-86b4-af79-a4a436f7f0d5"
     - stage: seal
-      stageUuid: "234e7959-c0ef-8d20-8702-0ca4fa7bd43d"
+      stageUuid: "ff6b5803-0e3d-82b0-9e12-5a2ace312434"
     - stage: uuid
-      stageUuid: "edbcd448-f248-84ce-9697-b6207147e1bf"
+      stageUuid: "d8007870-4916-8379-bdf4-00363a392b34"
 version: 2
 ---
 # cap

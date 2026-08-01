@@ -2,40 +2,14 @@
 name: calculations
 description: "Use when computing or reviewing tax-liability snapshots per period and jurisdiction — VAT, GST, income tax, payroll tax — with rate, gross/taxable/net amounts, GL payable account, and filing/payment deadlines; lifecycle from calculated to filed/paid. The tax-calculations period-snapshot collection."
 atomPath: "gl/accounts/tax/calculations"
-coordinate: "gl/accounts/tax/calculations · 4/weave · 6f640afe"
-contentUuid: "18f13c65-74ae-5065-84fb-b9d83ab76bdc"
-diamondUuid: "98705b79-ea93-85da-8b2a-23dd4035fc03"
-uuid: "6f640afe-97f1-88b8-8088-ca4b120b98d9"
-horo: 4
-bonds:
-  in:
-    - accounting
-    - calculation
-    - deduction
-    - identity
-    - law
-    - party
-    - proof
-    - returns
-    - standard
-    - tax
-    - taxexempt
-  out:
-    - accounting
-    - calculation
-    - deduction
-    - identity
-    - law
-    - party
-    - proof
-    - returns
-    - standard
-    - tax
-    - taxexempt
+coordinate: "gl/accounts/tax/calculations · 5/round · 7e638015"
+contentUuid: "ca387496-f7d7-5d01-9eb8-395a0d4fe043"
+diamondUuid: "6e106596-23bf-878f-aca4-de108c904877"
+uuid: "7e638015-caef-805d-849b-cd7926a992f7"
+horo: 5
 typography:
   partition: gl
   bondDegree: 34
-  neighbors: []
 standards:
   - "EN-16931:2017 §BG-23 vat-breakdown"
   - "EN-16931:2017 §BG-23 vat-breakdown`"
@@ -52,42 +26,8 @@ standards:
   - "SOX §404 internal-controls tax-position"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - identity
-    - law
-    - party
-    - proof
-    - standard
-    - tax
-    - taxexempt
-  matrix:
-    - accounting
-    - calculation
-    - deduction
-    - identity
-    - law
-    - party
-    - proof
-    - returns
-    - standard
-    - tax
-    - taxexempt
-  backlinks:
-    - accounting
-    - calculation
-    - deduction
-    - identity
-    - law
-    - party
-    - proof
-    - returns
-    - standard
-    - tax
-    - taxexempt
 signatures:
-  computationUuid: "4554b453-ad6f-81d4-acd0-a81f4baadc60"
+  computationUuid: "f7e5c7e1-774d-8772-be7c-1f09baf045bb"
   stages:
     - stage: path
       stageUuid: "a21c4d46-dfb9-8827-8d5d-ef79247677a5"
@@ -98,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "8ea662ea-5321-83e2-a608-92cabfadaa94"
     - stage: horo
-      stageUuid: "0f2f22c9-0a4c-84bb-88c2-3298fe1c8248"
+      stageUuid: "a2018041-e264-8ffe-be8f-8f8cad8518f3"
     - stage: seal
       stageUuid: "b7722fdd-120b-851d-9fc0-2b05bb0200b2"
     - stage: uuid
-      stageUuid: "93ba2164-f153-8aed-a512-615ba57684e7"
+      stageUuid: "15849974-2146-8f3a-827c-7acd9e28dd4a"
 version: 2
 ---
 # tax-calculations

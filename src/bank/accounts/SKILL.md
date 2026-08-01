@@ -2,56 +2,18 @@
 name: accounts
 description: "Use when managing bank account master data — IBAN (ISO-13616 mod-97 validated), BIC, account name, purpose (operating/payroll/tax/reserve/FX), GL cash account link, currency, country auto-derived from IBAN; separate from statement transactions. The cash-account master collection."
 atomPath: "bank/accounts"
-coordinate: "bank/accounts · 5/round · 7beae73a"
-contentUuid: "fbd90a07-cdb0-5add-abdf-ea7019959808"
-diamondUuid: "688d45a4-1c6c-8b66-8fa5-f783dc86949f"
-uuid: "7beae73a-feba-86d3-ba72-d9d8ff3d9c99"
+coordinate: "bank/accounts · 5/round · 10d00b45"
+contentUuid: "fa953fd6-5f21-51a0-b051-8ab74f212fc7"
+diamondUuid: "085d6508-f228-8cdd-aa3c-90d64106fdad"
+uuid: "10d00b45-c760-866d-ac2e-e16053a47cd1"
 horo: 5
-bonds:
-  in:
-    - access
-    - accounting
-    - auth
-    - bank
-    - escrow
-    - hooks
-    - identity
-    - party
-    - reconciliations
-    - runs
-  out:
-    - access
-    - accounting
-    - auth
-    - escrow
-    - hooks
-    - identity
-    - party
-    - reconciliations
-    - runs
 typography:
   partition: bank
   bondDegree: 0
-  neighbors: []
 standards:
-  - "EU-2002/58"
-  - "EU-2015/847"
-  - "EU-2015/849"
-  - "EU-2019/1150"
-  - "EU-2019/1152"
-  - "EU-2019/1937"
-  - "EU-2019/2161"
-  - "EU-2019/770"
-  - "EU-2019/771"
-  - "EU-2022/1925"
-  - "EU-2022/2065"
-  - "EU-2022/2554"
-  - "EU-2022/2555"
-  - "EU-2022/868"
   - "EU-Intrastat-Reg-2019/2152"
   - "EU-Taxonomy-2020/852"
   - "IFRS IAS-7 statement-of-cash-flows cash-and-equivalents"
-  - "ILO-C001"
   - "ISO-13616-1"
   - "ISO-13616-1:2020 iban"
   - "ISO-13616-1:2020 iban`"
@@ -68,37 +30,8 @@ standards:
   - "SOX §404 internal-controls cash-management"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - accounting
-    - auth
-    - hooks
-    - identity
-    - party
-    - runs
-  matrix:
-    - access
-    - accounting
-    - auth
-    - escrow
-    - hooks
-    - identity
-    - party
-    - reconciliations
-    - runs
-  backlinks:
-    - access
-    - accounting
-    - auth
-    - escrow
-    - hooks
-    - identity
-    - party
-    - reconciliations
-    - runs
 signatures:
-  computationUuid: "fd9c663a-5ba3-8168-ad93-f2929649967a"
+  computationUuid: "d73a13d7-df6c-82e7-b390-8694997dffd2"
   stages:
     - stage: path
       stageUuid: "60b94686-1fac-88a8-a05f-29a6cb9baafb"
@@ -109,11 +42,11 @@ signatures:
     - stage: links
       stageUuid: "1550b6cd-8401-8c89-ac53-91016a54c928"
     - stage: horo
-      stageUuid: "52264116-7965-89b6-a825-eaabe218cc76"
+      stageUuid: "fa93657c-e71c-829e-85d2-7f376426d65c"
     - stage: seal
       stageUuid: "1920324e-3087-8b0e-8da1-cf127899a70b"
     - stage: uuid
-      stageUuid: "4f525da2-e6a9-880c-9c77-a645264d38d0"
+      stageUuid: "fc6aa136-33e4-866e-88f4-04af540d5d30"
 version: 2
 ---
 # bank-accounts

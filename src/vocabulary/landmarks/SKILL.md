@@ -1,77 +1,35 @@
 ---
 name: landmarks
 description: "Use when reasoning about landmarks as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/landmarks
-coordinate: landmarks · 7/descent · 69f277d6
-contentUuid: "5bb79bff-a12c-5f11-8507-b88a5f64d242"
-diamondUuid: "62240edd-0a43-8c72-86d1-db00cd36d8f4"
-uuid: "69f277d6-91df-876a-9547-d7fb0b561337"
-horo: 7
-bonds:
-  in:
-    - buildings
-    - collapse
-    - historical
-    - landmark
-    - law
-    - merge
-    - sti
-  out:
-    - buildings
-    - collapse
-    - historical
-    - landmark
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/landmarks"
+coordinate: "vocabulary/landmarks · 2/share · 8cd8ae27"
+contentUuid: "33206d26-4efa-5a75-b1db-3fcdd7706826"
+diamondUuid: "2842dfe0-3efb-8189-b8f2-ed38e4c31f94"
+uuid: "8cd8ae27-ebc7-873f-bdf3-012d61671f29"
+horo: 2
 typography:
-  partition: landmarks
+  partition: vocabulary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - buildings
-    - collapse
-    - historical
-    - law
-    - merge
-    - sti
-  matrix:
-    - buildings
-    - collapse
-    - historical
-    - landmark
-    - law
-    - merge
-    - sti
-  backlinks:
-    - buildings
-    - collapse
-    - historical
-    - landmark
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "d55147f0-1e05-83fd-804b-8ba51cf3610b"
+  computationUuid: "37df914b-d75c-876f-836a-416034aca7f4"
   stages:
     - stage: path
-      stageUuid: "d1c6bd53-2305-8f2b-95dc-32f7f9f06239"
+      stageUuid: "0fab9ed2-1e07-83ac-8808-dfd1da3ddc55"
     - stage: trinity
-      stageUuid: "043267dd-9bb5-85e6-80ac-678125a09fd0"
+      stageUuid: "5137b1a1-d532-846c-9947-657ce57c04cd"
     - stage: boundary
-      stageUuid: "536b9b7b-acc6-88a7-a7c2-08665517df10"
+      stageUuid: "62120a4a-b5b6-82d6-864b-927952c2159a"
     - stage: links
-      stageUuid: "97dd7757-cc57-8f6b-a633-27f72439b63c"
+      stageUuid: "3fa4d5cb-ca25-83f6-9f61-b6738d36e929"
     - stage: horo
-      stageUuid: "0052eece-299a-81aa-8fff-6a81090b517f"
+      stageUuid: "fe4d1c5c-2f79-8e36-aa18-ab94c6374216"
     - stage: seal
-      stageUuid: "6a76a018-3080-8db0-9c7c-6770d681b18f"
+      stageUuid: "26a705cb-e034-82bb-ba13-a744d74dd742"
     - stage: uuid
-      stageUuid: "3e265869-01bc-874e-a26b-084c5e1faec5"
+      stageUuid: "c1509f35-cb38-84ba-8ba2-7a11a2513e84"
 version: 2
 ---
 # landmarks

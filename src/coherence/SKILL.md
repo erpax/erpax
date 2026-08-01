@@ -2,138 +2,34 @@
 name: coherence
 description: "Use when reasoning about wholeness as a MEASURABLE quantity — coherence is the scientific name for what erpax renders as harmony: phase-alignment across a signal. Physics/DSP coherence (phase-locked waves, 0..1), HRV 'psychophysiological coherence' (a real, measured intra-body state) and Popp's contested biophoton coherence; the inter-personal 'field coherence' aura claim is refuted. Wholeness renders as coherence, a gap or tamper as decoherence."
 atomPath: coherence
-coordinate: "coherence · 4/weave · 885294cc"
-contentUuid: "7c71c47f-6aa7-5d03-ba08-af55ccc6b73a"
-diamondUuid: "c412fe2f-2f62-86df-a564-a44424b84bb7"
-uuid: "885294cc-abd1-813b-955d-9294389b6d60"
-horo: 4
-bonds:
-  in:
-    - analog
-    - aura
-    - balance
-    - biofield
-    - biomagnetism
-    - biometric
-    - biophoton
-    - body
-    - color
-    - device
-    - duality
-    - harmony
-    - heart
-    - hooks
-    - law
-    - proof
-    - recycle
-    - signal
-    - tamper
-    - whole
-    - writing
-  out:
-    - analog
-    - aura
-    - balance
-    - biofield
-    - biomagnetism
-    - biometric
-    - biophoton
-    - body
-    - color
-    - device
-    - duality
-    - harmony
-    - heart
-    - hooks
-    - law
-    - proof
-    - recycle
-    - signal
-    - tamper
-    - whole
-    - writing
+coordinate: "coherence · 8/crest · 3440cfac"
+contentUuid: "3a871ae5-bca4-554d-a195-ea60ecd59532"
+diamondUuid: "5a2921c7-0bca-825e-af34-f6fbb9ca309b"
+uuid: "3440cfac-c455-83d7-99ac-9b34970f4dd4"
+horo: 8
 typography:
   partition: coherence
   bondDegree: 71
-  neighbors:
-    - aura
 standards:
   - "DSP magnitude-spectrum (DFT) + the 0.7..4 Hz human-pulse band"
 bindings: []
-neighbors:
-  wikilink:
-    - analog
-    - aura
-    - balance
-    - biofield
-    - biophoton
-    - duality
-    - harmony
-    - proof
-    - signal
-    - tamper
-    - whole
-  matrix:
-    - analog
-    - aura
-    - balance
-    - biofield
-    - biomagnetism
-    - biometric
-    - biophoton
-    - body
-    - color
-    - device
-    - duality
-    - harmony
-    - heart
-    - hooks
-    - law
-    - proof
-    - recycle
-    - signal
-    - tamper
-    - whole
-    - writing
-  backlinks:
-    - analog
-    - aura
-    - balance
-    - biofield
-    - biomagnetism
-    - biometric
-    - biophoton
-    - body
-    - color
-    - device
-    - duality
-    - harmony
-    - heart
-    - hooks
-    - law
-    - proof
-    - recycle
-    - signal
-    - tamper
-    - whole
-    - writing
 signatures:
-  computationUuid: "81d173ff-3438-884b-ad75-6d6657b0b91e"
+  computationUuid: "078a2e66-217a-83c2-8f55-64be2af15c25"
   stages:
     - stage: path
       stageUuid: "4731d009-169d-8f89-80e6-2503486a019e"
     - stage: trinity
       stageUuid: "64f28a85-e2d4-8f00-a9a6-a00c0aaee619"
     - stage: boundary
-      stageUuid: "b0ec2f31-f1d0-8ec1-b7f2-a13151eb41ee"
+      stageUuid: "36cbc55f-96f7-8222-a714-6307e226f8d8"
     - stage: links
       stageUuid: "9c6f5216-2e31-8ec9-8aff-75d5ad7acaa7"
     - stage: horo
-      stageUuid: "45263263-26cc-80b0-95fe-cf2fb55d27cc"
+      stageUuid: "fbd910cb-032e-81b9-b742-e7d60c81114c"
     - stage: seal
       stageUuid: "dbd2006f-384b-89f2-bfa7-43993c2cb851"
     - stage: uuid
-      stageUuid: "3795c7d5-6d6e-8cd2-98f2-829200937b19"
+      stageUuid: "dbcc48ab-bb51-8716-8f8c-65c38eeb8366"
 version: 2
 ---
 # coherence — the measurable form of wholeness (harmony, as a quantity)

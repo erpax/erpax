@@ -1,68 +1,35 @@
 ---
 name: formula
 description: "Use when reasoning about formula as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/formula
-coordinate: formula · 5/round · b2e4be24
-contentUuid: "49f6fd64-608e-5737-af4d-e1fb94798007"
-diamondUuid: "74dd64dc-e782-8ecb-981a-3dcb90278f56"
-uuid: "b2e4be24-4744-8176-9ef9-980dfd9c55a5"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - molecular
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - molecular
-    - sti
+atomPath: "vocabulary/formula"
+coordinate: "vocabulary/formula · 8/crest · b18810ab"
+contentUuid: "3bd29a5a-d070-5521-9fa9-673337650db5"
+diamondUuid: "8585a40b-7907-8214-9b03-43bc32c7b594"
+uuid: "b18810ab-19da-83fc-ad53-effe50cf1c2d"
+horo: 8
 typography:
-  partition: formula
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - molecular
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - molecular
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - molecular
-    - sti
 signatures:
-  computationUuid: "654661e2-f626-85af-bfde-3e5d4c41b148"
+  computationUuid: "6dab1936-fbd0-8b1a-8d0a-df666a1dc318"
   stages:
     - stage: path
-      stageUuid: "b212d3a2-deba-8990-a190-8e6df65de079"
+      stageUuid: "cc943531-9617-8b19-a00b-8145cfa658c5"
     - stage: trinity
-      stageUuid: "511d96b9-357d-8240-8b57-cfcd8522cacc"
+      stageUuid: "cacb3995-4d8c-831a-a2c1-646d54c6c9c5"
     - stage: boundary
-      stageUuid: "a67d74ee-2fc3-8f8d-b4c4-94116073c561"
+      stageUuid: "23be28c8-d3a6-84d5-b90c-43f3dda8c81c"
     - stage: links
-      stageUuid: "99d3b48a-c32c-8461-9d21-87bddbd0efd5"
+      stageUuid: "dd2eddf6-eb83-8350-b5da-999c0bf32429"
     - stage: horo
-      stageUuid: "80be3e5c-876d-8ee1-b16b-ee23db9c9462"
+      stageUuid: "60fcb69e-6715-844c-bbdb-f53fcb95d753"
     - stage: seal
-      stageUuid: "a9662a63-6d01-8ca1-9d70-6b79227510f7"
+      stageUuid: "887f154a-105d-8cfd-95b1-73c4d48c32a4"
     - stage: uuid
-      stageUuid: "8cfd4d8b-76cb-8342-8709-57cf307f19cf"
+      stageUuid: "567d17c1-f718-8203-9a36-1363b514a0fc"
 version: 2
 ---
 # formula

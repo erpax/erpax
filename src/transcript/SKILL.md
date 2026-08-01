@@ -1,9 +1,37 @@
 ---
 name: transcript
 description: "Use when spoken content must be read rather than watched — captions parsed into locatable segments. Handles WebVTT and SubRip alike, decides the format from the bytes rather than a filename, strips inline markup as presentation, and SKIPS a malformed cue instead of guessing a timestamp. mentions() returns a term with the moment attached, which is a pointer to go listen, never a finding: a transcript is what was said, not what is true, and auto-generated captions carry transcription error."
-atomPath: "transcript"
+atomPath: transcript
+coordinate: "transcript · 5/round · d01382bd"
+contentUuid: "ef50be08-4f76-5fd1-b301-7a8abbaf8ee7"
+diamondUuid: "6a809808-d562-8929-ac8a-c4d0aa7a091d"
+uuid: "d01382bd-54ca-8054-b35e-4333f281f41f"
+horo: 5
+typography:
+  partition: transcript
+  bondDegree: 10
+standards:
+  - W3C WebVTT — The Web Video Text Tracks Format
+bindings: []
+signatures:
+  computationUuid: "972f6ecb-bad0-8f0f-bd78-b59915b2f659"
+  stages:
+    - stage: path
+      stageUuid: "dfaa5b1e-5b64-893c-b98d-8e1cabe1fb5d"
+    - stage: trinity
+      stageUuid: "d6cecce6-d77a-8212-b89d-a1a59798dae1"
+    - stage: boundary
+      stageUuid: "1becf37a-915e-826d-be5c-7d86ef2ae1c3"
+    - stage: links
+      stageUuid: "eadc3fc9-2ad0-87e8-a678-ca5d714ea855"
+    - stage: horo
+      stageUuid: "54af08c6-b6e2-8a43-85fd-953c5ef15df0"
+    - stage: seal
+      stageUuid: "e463a45a-b6c3-8a96-b5c8-816924a87b10"
+    - stage: uuid
+      stageUuid: "49c38a53-0150-8813-9fa0-54d2a791f411"
+version: 2
 ---
-
 # transcript — what was said, located
 
 This atom existed as **prose only** — `SKILL.md`, `README.md`, `LLM.md`, and no `index.ts`, no `test.ts`. A name with no matter, exactly what [[rules]]/word-without-logic counts. It was found by looking for an honest way to read video content and discovering the socket was already cut and empty.

@@ -2,62 +2,19 @@
 name: year
 description: "Use when reasoning about year as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: year
-coordinate: year · 8/crest · d9d7d74d
-contentUuid: "1d61f0cc-e041-5b17-9ec3-0adf315828e5"
-diamondUuid: "754feec5-58ab-88e2-80df-08cbaa208ce6"
-uuid: "d9d7d74d-5d0c-86f4-af49-33623f1bbdd6"
-horo: 8
-bonds:
-  in:
-    - built
-    - collapse
-    - copyright
-    - law
-    - merge
-    - sti
-    - terms
-  out:
-    - built
-    - collapse
-    - copyright
-    - law
-    - merge
-    - sti
-    - terms
+coordinate: "year · 4/weave · bc0acb73"
+contentUuid: "4c6bed9a-cbad-5e87-b848-d8d69e41e476"
+diamondUuid: "9a9cdc31-85ef-80e6-840d-476476f989ce"
+uuid: "bc0acb73-3b5f-8197-9815-884cb2076426"
+horo: 4
 typography:
   partition: year
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - built
-    - collapse
-    - copyright
-    - law
-    - merge
-    - sti
-    - terms
-  matrix:
-    - built
-    - collapse
-    - copyright
-    - law
-    - merge
-    - sti
-    - terms
-  backlinks:
-    - built
-    - collapse
-    - copyright
-    - law
-    - merge
-    - sti
-    - terms
 signatures:
-  computationUuid: "b8bd5f93-72db-82e0-94d0-0e1c6903c429"
+  computationUuid: "24828e5d-1089-865e-92db-937fd4ec882a"
   stages:
     - stage: path
       stageUuid: "1c8e2365-3ce6-8103-8b0b-3bd5df14ed85"
@@ -68,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "860291fa-accc-8735-88df-5187719e4094"
     - stage: horo
-      stageUuid: "2207665b-2d74-8c88-bf85-c90de1670c60"
+      stageUuid: "726785aa-285d-838d-8155-7c671f2c9e64"
     - stage: seal
-      stageUuid: "3009751e-0e9b-858e-9632-17daaad9daf8"
+      stageUuid: "335fed2d-95e2-8e04-a09e-d7793e5ae60a"
     - stage: uuid
-      stageUuid: "8c05951d-a7f1-82a2-ba5b-7bd05dd0798d"
+      stageUuid: "c22b1e52-8b7f-8ad8-a323-7b0cd12854d1"
 version: 2
 ---
 # year

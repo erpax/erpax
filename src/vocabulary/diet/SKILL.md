@@ -1,73 +1,35 @@
 ---
 name: diet
 description: "Use when reasoning about diet — A strategy of regulating the intake of food to achieve or maintain a specific health-related goal."
-atomPath: vocabulary/diet
-coordinate: diet · 2/share · d20b6632
-contentUuid: "0097b689-31cb-5f3f-b8a0-0a8001708e41"
-diamondUuid: "da5d98f4-e0fc-8c46-9f6b-5c856c896450"
-uuid: "d20b6632-8d30-8407-b206-e336143f5d6f"
-horo: 2
-bonds:
-  in:
-    - exercise
-    - features
-    - law
-    - related
-    - restricted
-    - suitable
-  out:
-    - exercise
-    - features
-    - law
-    - related
-    - restricted
-    - suitable
+atomPath: "vocabulary/diet"
+coordinate: "vocabulary/diet · 4/weave · e3ed0420"
+contentUuid: "dd370be1-4458-5716-8945-a30e220f22f1"
+diamondUuid: "7d10b065-81df-84b3-846a-e13a2818deee"
+uuid: "e3ed0420-88e4-84d8-a288-368a070f2a8a"
+horo: 4
 typography:
-  partition: diet
+  partition: vocabulary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - exercise
-    - features
-    - law
-    - related
-    - restricted
-    - suitable
-  matrix:
-    - exercise
-    - features
-    - law
-    - related
-    - restricted
-    - suitable
-  backlinks:
-    - exercise
-    - features
-    - law
-    - related
-    - restricted
-    - suitable
 signatures:
-  computationUuid: "46d97189-d2c3-8a06-ab3a-be90ae4c3f47"
+  computationUuid: "f50d1542-4fe3-8ca7-95a7-07e1ecfcb8bf"
   stages:
     - stage: path
-      stageUuid: "71f10dd2-ebeb-8bbf-952e-7941f5282295"
+      stageUuid: "bccdbb99-3232-8dcf-ad4c-e47bdd003f84"
     - stage: trinity
-      stageUuid: "adcf5028-8923-8e5a-a3d1-270264623970"
+      stageUuid: "79cc0039-c94f-83b1-92ce-0ad57466f058"
     - stage: boundary
-      stageUuid: "d142940d-f2c7-810a-a3f6-70b58c414a9c"
+      stageUuid: "6fc2fd1a-4cd5-8109-8039-649634d449a3"
     - stage: links
-      stageUuid: "1f674ca0-7828-8d2d-9383-2c86de89f2d0"
+      stageUuid: "c2e7a3c9-5460-8bd3-befb-a18ef701e49e"
     - stage: horo
-      stageUuid: "5930dd74-6fe1-8b6e-9f8d-3a4ea8fa6638"
+      stageUuid: "27a23315-e20f-8592-964f-d1777e96b6a6"
     - stage: seal
-      stageUuid: "9a1dc829-264a-8d58-9466-5e15a9141368"
+      stageUuid: "bf0e966a-8500-8e1f-8471-02c857df3f00"
     - stage: uuid
-      stageUuid: "8101dab5-0cfa-8bad-83e7-f4a1591d3c1a"
+      stageUuid: "9f271f1c-ea09-8dbc-b980-646ac7bc0e4c"
 version: 2
 ---
 # diet

@@ -1,63 +1,35 @@
 ---
 name: chinese
 description: "Use when reasoning about chinese as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/chinese
-coordinate: chinese · 2/share · 4c880a3b
-contentUuid: "2cfab2fa-0a6a-57a6-b59f-721ea07cb283"
-diamondUuid: "2e6da236-8e43-88fd-a545-d5c24eda0c20"
-uuid: "4c880a3b-fd5b-84a8-bec4-0af8228e1721"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/chinese"
+coordinate: "vocabulary/chinese · 7/descent · 2b510c01"
+contentUuid: "c6e81b39-95ce-5cb9-a683-1ec2f902101b"
+diamondUuid: "0708ea1e-6b68-8ed9-b5ba-5f7bb0a11a1d"
+uuid: "2b510c01-b197-8ed2-907e-13f5adbe81db"
+horo: 7
 typography:
-  partition: chinese
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "18fb92d2-81c8-88da-be06-a22a9a6d4e37"
+  computationUuid: "881e01e2-0627-8970-94df-ecdc04a6c1ec"
   stages:
     - stage: path
-      stageUuid: "0b236a21-a3d6-8ff1-9df1-d1c78003ae12"
+      stageUuid: "5691576e-d8ac-824f-a607-d9271f2172e3"
     - stage: trinity
-      stageUuid: "a5d3574d-8712-8b6b-aa91-721b2c155fc1"
+      stageUuid: "559ef62d-1730-857e-9d86-5893776f44a7"
     - stage: boundary
-      stageUuid: "7ef2e5dd-0393-87cb-bcf8-cd4be594c9c9"
+      stageUuid: "385fc9f0-65cb-8fe8-967f-8acd820ad0f6"
     - stage: links
-      stageUuid: "d2f763eb-5f5d-8f3b-8dea-f893c5d1d6ea"
+      stageUuid: "93870355-056b-8edf-a8fc-078093a705e1"
     - stage: horo
-      stageUuid: "ed4f5053-0881-8bae-8c44-0b106f6cab10"
+      stageUuid: "4f6bf7b3-5455-8513-a5e4-9b86efc4b4e6"
     - stage: seal
-      stageUuid: "a533ffff-0e0a-8aef-a11b-2395543cfa97"
+      stageUuid: "9c6f8ad2-f23b-8066-99a1-6db56eac4a8c"
     - stage: uuid
-      stageUuid: "4f1323a1-d7ea-809b-9d5f-14158a9ce03a"
+      stageUuid: "f225ce23-09cb-8d77-9937-9e4e54f9580c"
 version: 2
 ---
 # chinese

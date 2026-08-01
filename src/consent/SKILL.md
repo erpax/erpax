@@ -2,57 +2,18 @@
 name: consent
 description: "Use when a contract or compliance regime requires explicit consent — who must consent, form (written/electronic/oral), revocation, withdrawal, withdrawal timeline, conditions."
 atomPath: consent
-coordinate: "consent · 5/round · 488b33ee"
-contentUuid: "20dfaa16-2eb6-5acf-bab7-bab95d3bd59b"
-diamondUuid: "39755be5-937a-889e-8e40-9c97a4ea17b5"
-uuid: "488b33ee-7ecb-8727-af16-053fd3acd3e7"
-horo: 5
-bonds:
-  in:
-    - assignment
-    - biometric
-    - contracts
-    - dataprotection
-    - matter
-    - notification
-    - records
-  out:
-    - assignment
-    - biometric
-    - contracts
-    - dataprotection
-    - matter
-    - notification
-    - records
+coordinate: "consent · 2/share · 8764a53f"
+contentUuid: "e714aa19-5819-5be1-bb95-206dca316aa8"
+diamondUuid: "8d9eeeb8-98a0-800e-9082-a02e6075beeb"
+uuid: "8764a53f-ff69-88d0-b8f9-15783e46c7c5"
+horo: 2
 typography:
   partition: consent
-  bondDegree: 21
-  neighbors: []
+  bondDegree: 19
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - contracts
-    - matter
-    - records
-  matrix:
-    - assignment
-    - biometric
-    - contracts
-    - dataprotection
-    - matter
-    - notification
-    - records
-  backlinks:
-    - assignment
-    - biometric
-    - contracts
-    - dataprotection
-    - matter
-    - notification
-    - records
 signatures:
-  computationUuid: "cd7f1567-311a-803d-8a8a-2321217f3ae3"
+  computationUuid: "dec7c16e-2607-8762-8c24-af767ce21dc3"
   stages:
     - stage: path
       stageUuid: "a5193824-78c2-85c2-a1fc-ee1757d8b955"
@@ -63,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3434fdcb-1d97-8dc3-9d56-68a2cd0a82b7"
     - stage: horo
-      stageUuid: "7275e0a6-8fef-807b-b925-274267b8a47e"
+      stageUuid: "91f02796-db13-8074-8a84-00ed6071564c"
     - stage: seal
       stageUuid: "6dd005cf-a812-856d-a856-961e0c517710"
     - stage: uuid
-      stageUuid: "f96cbe81-00e1-8c12-b0a6-83ee78482f30"
+      stageUuid: "d8b5f71d-7cba-8ed9-afea-8c61b16356f4"
 version: 2
 ---
 # consent

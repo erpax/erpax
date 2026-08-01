@@ -2,99 +2,18 @@
 name: taxonomy
 description: "Use when classifying entities into a ranked hierarchy — the family→genus→species→cultivar ladder for crops, and the generic ranked-classification engine for any LOD @type tree. A node's type is its rank-chain; traits inherit down the ranks (the fractal parent-chain), so taxonomy is the dimension atom applied to kind."
 atomPath: taxonomy
-coordinate: taxonomy · 7/descent · 228481dc
-contentUuid: "659908e1-3c86-5be0-b1c0-5ed0bc348914"
-diamondUuid: "b102b20c-b366-8dbf-8cc1-7e03e9a95792"
-uuid: "228481dc-cb5e-8745-9715-eccd45e6de8c"
+coordinate: "taxonomy · 7/descent · 79fd7dfc"
+contentUuid: "cf5fa160-e632-58a5-9e07-0f2213f5fe46"
+diamondUuid: "850f339d-07d5-8a4b-be46-3761a9d10f80"
+uuid: "79fd7dfc-aa15-88ed-a7b9-c29437c69d69"
 horo: 7
-bonds:
-  in:
-    - agriculture
-    - aquaculture
-    - breed
-    - classification
-    - crop
-    - dimension
-    - family
-    - fertility
-    - fractal
-    - graft
-    - hardiness
-    - identity
-    - rootstock
-    - rotation
-    - scion
-    - variant
-  out:
-    - agriculture
-    - aquaculture
-    - breed
-    - classification
-    - crop
-    - dimension
-    - family
-    - fertility
-    - fractal
-    - graft
-    - hardiness
-    - identity
-    - rootstock
-    - rotation
-    - scion
-    - variant
 typography:
   partition: taxonomy
   bondDegree: 50
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - crop
-    - dimension
-    - family
-    - fertility
-    - fractal
-    - identity
-    - rotation
-    - variant
-  matrix:
-    - agriculture
-    - aquaculture
-    - breed
-    - classification
-    - crop
-    - dimension
-    - family
-    - fertility
-    - fractal
-    - graft
-    - hardiness
-    - identity
-    - rootstock
-    - rotation
-    - scion
-    - variant
-  backlinks:
-    - agriculture
-    - aquaculture
-    - breed
-    - classification
-    - crop
-    - dimension
-    - family
-    - fertility
-    - fractal
-    - graft
-    - hardiness
-    - identity
-    - rootstock
-    - rotation
-    - scion
-    - variant
 signatures:
-  computationUuid: "32d7cb85-d106-808e-8c54-8ab67693d095"
+  computationUuid: "d7ed6b77-6fe9-8ba5-9614-0c35b8124509"
   stages:
     - stage: path
       stageUuid: "3b73f3b7-0cf5-8cda-a064-4db5fe2f4ad0"
@@ -105,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5daffa8e-1703-840e-a9e7-670dd02f672a"
     - stage: horo
-      stageUuid: "175f1737-f804-85d8-8493-fbbd681a43c8"
+      stageUuid: "6035c236-713e-8f36-8d70-00aca22e09a1"
     - stage: seal
-      stageUuid: "e628deb0-c65c-8fdb-9cc6-2304e575e508"
+      stageUuid: "4dace892-8e45-8eea-8244-66e0c89953d3"
     - stage: uuid
-      stageUuid: "919d910b-9d34-890d-8f36-a88ce5cd4768"
+      stageUuid: "64861f52-81e9-8d1f-b1b4-f3881019d1ed"
 version: 2
 ---
 # taxonomy — the ranked classification ladder

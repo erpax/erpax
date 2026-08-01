@@ -2,145 +2,20 @@
 name: contracts
 description: "Use when modelling the employment contract — the labour anchor a work shift is worked under (etrima work_shifts reference it, 376 780 rows). A homonym of the IFRS-15 customer contract, deliberately distinct by path: this is the labour-law agreement with an employee (Bulgarian Кодекс на труда чл.67/68/70), not the revenue agreement with a customer. legalGround is open text because one article is written four ways in real data; an absent endDate IS the indefinite contract."
 atomPath: "employees/contracts"
-coordinate: "employees/contracts · 5/round · 56cb832c"
-contentUuid: "5c8723a4-4332-598c-9016-4f453ec5e538"
-diamondUuid: "6047f74e-c6fc-8249-aa4d-6cc9a231a538"
-uuid: "56cb832c-de69-85f4-b009-ebb4078f5974"
-horo: 5
-bonds:
-  in:
-    - amendment
-    - amendments
-    - assignment
-    - auditright
-    - clause
-    - confidentiality
-    - consent
-    - contract
-    - dataprotection
-    - deferredrevenue
-    - disputeresolution
-    - employees
-    - forcemajeure
-    - governinglaw
-    - indemnity
-    - jurisdiction
-    - law
-    - liability
-    - license
-    - obligations
-    - orders
-    - performances
-    - remediation
-    - restriction
-    - revenue
-    - signatures
-    - termination
-    - warranty
-  out:
-    - amendment
-    - amendments
-    - assignment
-    - auditright
-    - clause
-    - confidentiality
-    - consent
-    - contract
-    - dataprotection
-    - deferredrevenue
-    - disputeresolution
-    - forcemajeure
-    - governinglaw
-    - indemnity
-    - jurisdiction
-    - law
-    - liability
-    - license
-    - obligations
-    - orders
-    - performances
-    - remediation
-    - restriction
-    - revenue
-    - signatures
-    - termination
-    - warranty
+coordinate: "employees/contracts · 7/descent · d35a7e92"
+contentUuid: "ce8abe39-73b2-5844-a65e-423b116902ad"
+diamondUuid: "9a1b125b-0b23-84c9-bccc-932683906bb8"
+uuid: "d35a7e92-b632-8e61-b393-7bfb6bc16afe"
+horo: 7
 typography:
   partition: employees
   bondDegree: 97
-  neighbors: []
 standards:
   - "Bulgarian Labour Code (Кодекс на труда) — чл.67 indefinite · чл.68 fixed-term · чл.70 probationary"
   - "ISO-8601 — contract term dates"
 bindings: []
-neighbors:
-  wikilink:
-    - allocation
-    - employees
-    - law
-    - machine
-    - path
-    - port
-    - variant
-    - work
-  matrix:
-    - amendment
-    - amendments
-    - assignment
-    - auditright
-    - clause
-    - confidentiality
-    - consent
-    - contract
-    - dataprotection
-    - deferredrevenue
-    - disputeresolution
-    - forcemajeure
-    - governinglaw
-    - indemnity
-    - jurisdiction
-    - law
-    - liability
-    - license
-    - obligations
-    - orders
-    - performances
-    - remediation
-    - restriction
-    - revenue
-    - signatures
-    - termination
-    - warranty
-  backlinks:
-    - amendment
-    - amendments
-    - assignment
-    - auditright
-    - clause
-    - confidentiality
-    - consent
-    - contract
-    - dataprotection
-    - deferredrevenue
-    - disputeresolution
-    - forcemajeure
-    - governinglaw
-    - indemnity
-    - jurisdiction
-    - law
-    - liability
-    - license
-    - obligations
-    - orders
-    - performances
-    - remediation
-    - restriction
-    - revenue
-    - signatures
-    - termination
-    - warranty
 signatures:
-  computationUuid: "60dad3be-2674-8431-8b8d-c79806c4a41e"
+  computationUuid: "5f6e9907-789d-8115-9559-2aa5d800e9f9"
   stages:
     - stage: path
       stageUuid: "71dc0324-bddb-8a5a-b98b-662836a47aee"
@@ -151,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "8c343738-2bd0-87cc-95c8-0b9e59fbafdb"
     - stage: horo
-      stageUuid: "82bc06f8-66c6-8644-968b-4a6ead50662f"
+      stageUuid: "8b31a884-c326-8e6c-8049-9eba218613c3"
     - stage: seal
       stageUuid: "b84e8072-de68-88c0-8da1-7482febf5849"
     - stage: uuid
-      stageUuid: "c47b5214-24fd-880d-bc46-51f0a8a8cbb7"
+      stageUuid: "5a899bab-ce42-809e-8fae-037f1187ae52"
 version: 2
 ---
 # contracts — the employment contract (the labour anchor)

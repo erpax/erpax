@@ -1,63 +1,35 @@
 ---
 name: calorie
 description: "Use when reasoning about calorie as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/calorie
-coordinate: calorie · 8/crest · 8863095d
-contentUuid: "a774dff2-4f14-5082-b36e-26f8785c5e57"
-diamondUuid: "4775be83-d2d8-84ad-bbba-b55589b0f530"
-uuid: "8863095d-afd9-8678-992a-91c5f12833c5"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/calorie"
+coordinate: "vocabulary/calorie · 2/share · 1c023583"
+contentUuid: "2b6b12bf-8724-5259-ac52-3cbc384ec799"
+diamondUuid: "a1371c4f-2fe4-8184-ac7f-14ece3fdbf49"
+uuid: "1c023583-d8be-810f-a068-2b0ea313e0ee"
+horo: 2
 typography:
-  partition: calorie
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "c70fd0db-6a79-8dc0-b634-f261c34ec15d"
+  computationUuid: "b8bb52d4-09a8-8b64-bebe-a22412043209"
   stages:
     - stage: path
-      stageUuid: "3ae7fe26-4f9a-898d-ad9b-c58ff6a5f9cf"
+      stageUuid: "c1707c5d-b2d8-8906-8df8-b1fc047da149"
     - stage: trinity
-      stageUuid: "aa7587ad-f014-810c-bcd8-13fcc8ea57db"
+      stageUuid: "26acc6f0-baef-8b96-9adc-d994a68e2a5b"
     - stage: boundary
-      stageUuid: "ce21916d-3992-8786-82d9-5b999947a92a"
+      stageUuid: "cf31ed21-f13a-8154-90c0-5dce6be21eed"
     - stage: links
-      stageUuid: "c065e601-a357-85bd-bb93-c9a564e3b584"
+      stageUuid: "5274679b-2cda-86fd-99da-2176aa3cf0df"
     - stage: horo
-      stageUuid: "4d7f6dcd-18a2-8254-a8c4-341f1448a3cf"
+      stageUuid: "dddabd42-a142-8c9d-b6af-e39a37a72ae7"
     - stage: seal
-      stageUuid: "2c573ada-50b5-8bd6-bdde-116ad1a9c7a5"
+      stageUuid: "9d7a2fbe-4b5e-8913-83eb-661276680085"
     - stage: uuid
-      stageUuid: "d6a12e0d-9a1d-815e-8bbf-1be69504751d"
+      stageUuid: "6aee2fb0-6dc5-8ae1-bfe8-2dab34aabd6e"
 version: 2
 ---
 # calorie

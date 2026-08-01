@@ -1,73 +1,35 @@
 ---
 name: edu
 description: "Use when reasoning about edu — A schema.org component word, collided out of schema.org compounds — fused from eduQuestionType (sti · collapse · merge)."
-atomPath: vocabulary/edu
-coordinate: edu · 5/round · 7563d8f0
-contentUuid: "5213124a-ba18-588a-a37a-c83cb0f2a317"
-diamondUuid: "2f9f2e99-f1f2-8cde-b0b3-b708ff11acfe"
-uuid: "7563d8f0-c4b1-843a-ba91-f4666b2ed5d3"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - question
-    - sti
-    - type
-  out:
-    - collapse
-    - law
-    - merge
-    - question
-    - sti
-    - type
+atomPath: "vocabulary/edu"
+coordinate: "vocabulary/edu · 8/crest · e27ec0d2"
+contentUuid: "8647786d-d32c-5f85-bf33-0d5cb42009f9"
+diamondUuid: "4b931ed4-3b00-8ba3-b9de-bdc7af7ba0ff"
+uuid: "e27ec0d2-1622-8fbb-b9c7-be5ec9c5ac37"
+horo: 8
 typography:
-  partition: edu
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - question
-    - sti
-    - type
-  matrix:
-    - collapse
-    - law
-    - merge
-    - question
-    - sti
-    - type
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - question
-    - sti
-    - type
 signatures:
-  computationUuid: "d97f444e-b7d1-86c6-88d2-ce7850159328"
+  computationUuid: "a507ba1b-69c9-86c9-a268-c66d135ea1b4"
   stages:
     - stage: path
-      stageUuid: "5e4211e8-dfa3-8ded-bb70-f1db97860cbc"
+      stageUuid: "83e18cff-e5fe-8167-83b6-305a720164c5"
     - stage: trinity
-      stageUuid: "4e267b89-04f9-89e6-a955-a838adf094a0"
+      stageUuid: "6291d296-db04-8dde-bddf-3083989ccd53"
     - stage: boundary
-      stageUuid: "71d6a8bc-ca0e-8090-ac8a-c9025cac0a2f"
+      stageUuid: "ced6d4bb-3ed6-8555-85d1-d4e9919e8ae5"
     - stage: links
-      stageUuid: "7038848f-10b3-843f-ab3f-7e2f0572ca0a"
+      stageUuid: "f5495ab0-6b6f-8e49-9c41-e1d3a9d25d91"
     - stage: horo
-      stageUuid: "009c738f-dbc1-8703-bd13-c4d3a4220869"
+      stageUuid: "98c9bcd9-2df2-82e7-834f-245a5e777181"
     - stage: seal
-      stageUuid: "2e6931ac-78e5-85a6-b678-b2e66a2751a3"
+      stageUuid: "4826efd2-12cb-87ac-8791-e02660481a9e"
     - stage: uuid
-      stageUuid: "e77eccdb-059c-8b06-b122-5ba150767a23"
+      stageUuid: "78c43761-cf8d-8d0a-a368-b835158b7bbb"
 version: 2
 ---
 # edu

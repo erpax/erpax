@@ -2,50 +2,14 @@
 name: lots
 description: "Use when modeling a production order (a lot) — the manufacturing funnel head whose state is DERIVED from lifecycle watermarks on the horo ring, fanning into lot-variants and a lot-work-phases routing chain."
 atomPath: lots
-coordinate: "lots · 8/crest · 3d3c18be"
-contentUuid: "5075c471-e034-5c99-a679-80e048528549"
-diamondUuid: "cce74aa4-b35c-82a2-90fe-cd5a0a905906"
-uuid: "3d3c18be-8341-8ee3-a3d1-562a67f7c7dc"
-horo: 8
-bonds:
-  in:
-    - accounting
-    - balance
-    - certification
-    - coordinate
-    - entry
-    - grade
-    - herd
-    - horo
-    - law
-    - lineage
-    - lot
-    - machine
-    - organic
-    - packs
-    - phases
-    - variants
-  out:
-    - accounting
-    - balance
-    - certification
-    - coordinate
-    - entry
-    - grade
-    - herd
-    - horo
-    - law
-    - lineage
-    - lot
-    - machine
-    - organic
-    - packs
-    - phases
-    - variants
+coordinate: "lots · 2/share · 0356c4c7"
+contentUuid: "d143e94a-da4b-5f97-994a-736f9649e32a"
+diamondUuid: "418ea0a4-df2c-8fae-b584-d1de4d81e084"
+uuid: "0356c4c7-48ca-8c8c-929e-0c160b597ea9"
+horo: 2
 typography:
   partition: lots
-  bondDegree: 53
-  neighbors: []
+  bondDegree: 39
 standards:
   - "ISA-95"
   - "ISA-95:2013 / IEC-62264-1 §B.3 production-schedule production-order"
@@ -56,52 +20,8 @@ standards:
   - "double-entry — the lot total IS the sum of its variant postings;"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - balance
-    - coordinate
-    - entry
-    - horo
-    - law
-    - phases
-    - variants
-  matrix:
-    - accounting
-    - balance
-    - certification
-    - coordinate
-    - entry
-    - grade
-    - herd
-    - horo
-    - law
-    - lineage
-    - lot
-    - machine
-    - organic
-    - packs
-    - phases
-    - variants
-  backlinks:
-    - accounting
-    - balance
-    - certification
-    - coordinate
-    - entry
-    - grade
-    - herd
-    - horo
-    - law
-    - lineage
-    - lot
-    - machine
-    - organic
-    - packs
-    - phases
-    - variants
 signatures:
-  computationUuid: "4e7292cf-9872-8dad-ae1e-d033244806e9"
+  computationUuid: "a0eb914b-c8e4-8ba7-9f24-0ecc154ca516"
   stages:
     - stage: path
       stageUuid: "be1ef1f2-590a-83fa-a1d3-498285b60554"
@@ -110,13 +30,13 @@ signatures:
     - stage: boundary
       stageUuid: "0d8a8b6f-ccc5-8372-9eeb-351b46dc8396"
     - stage: links
-      stageUuid: "5db61009-ae9e-8118-bf90-7c0764d34a6f"
+      stageUuid: "c2b1cb31-42ac-8e28-b58a-05ed8c25f50f"
     - stage: horo
-      stageUuid: "ece92ff4-7415-8acd-9620-4243cbd9408f"
+      stageUuid: "a0f57ad2-0369-8408-ae79-4385baf2a2c7"
     - stage: seal
       stageUuid: "8dd29a52-6490-8c98-b3e1-660e72ea3347"
     - stage: uuid
-      stageUuid: "459f7044-7eda-8b26-b5e7-39372b961c4d"
+      stageUuid: "637a4437-7e9b-8140-a22c-1891ba699217"
 version: 2
 ---
 # lots — the production order (the funnel head, derived-state on the horo ring)

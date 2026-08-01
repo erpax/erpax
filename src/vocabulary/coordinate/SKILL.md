@@ -1,172 +1,34 @@
 ---
 name: coordinate
 description: "Use when reasoning about where an atom sits in the whole — its coordinate is the cross of three neighbor uuids (parent, prev, next), binding it into the tree and the sequence ring. The uuid is the coordinate system; this cross is the next uuid trinity."
-atomPath: vocabulary/coordinate
-coordinate: coordinate · 7/descent · 38727e7d
-contentUuid: "553eab29-3685-5726-8df4-04825558987c"
-diamondUuid: "4fcc759a-a2c0-8a0d-93af-11e7ddc4c028"
-uuid: "38727e7d-2a5e-8fbf-a078-a670c97f05b2"
-horo: 7
-bonds:
-  in:
-    - accounting
-    - addressed
-    - agent
-    - analog
-    - aura
-    - balance
-    - coil
-    - dna
-    - fields
-    - gate
-    - harmony
-    - hooks
-    - horo
-    - identity
-    - invariant
-    - items
-    - law
-    - lots
-    - merge
-    - octave
-    - packs
-    - phases
-    - proof
-    - quaternary
-    - regeneration
-    - sequence
-    - tenants
-    - unavoidable
-    - variants
-  out:
-    - accounting
-    - addressed
-    - agent
-    - analog
-    - aura
-    - balance
-    - coil
-    - dna
-    - fields
-    - gate
-    - harmony
-    - hooks
-    - horo
-    - identity
-    - invariant
-    - items
-    - law
-    - lots
-    - merge
-    - octave
-    - packs
-    - phases
-    - proof
-    - quaternary
-    - regeneration
-    - sequence
-    - tenants
-    - unavoidable
-    - variants
+atomPath: "vocabulary/coordinate"
+coordinate: "vocabulary/coordinate · 2/share · fa160981"
+contentUuid: "53550892-9073-5258-b84d-45f630cb746d"
+diamondUuid: "94afdd97-e58c-8282-897b-b6f2ad57d2e3"
+uuid: "fa160981-ea13-81a0-9593-6c9dd3ef5379"
+horo: 2
 typography:
-  partition: coordinate
-  bondDegree: 92
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 86
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - coil
-    - fields
-    - harmony
-    - hooks
-    - horo
-    - identity
-    - invariant
-    - law
-    - merge
-    - octave
-    - proof
-    - sequence
-    - tenants
-  matrix:
-    - accounting
-    - addressed
-    - agent
-    - analog
-    - aura
-    - balance
-    - coil
-    - dna
-    - fields
-    - gate
-    - harmony
-    - hooks
-    - horo
-    - identity
-    - invariant
-    - items
-    - law
-    - lots
-    - merge
-    - octave
-    - packs
-    - phases
-    - proof
-    - quaternary
-    - regeneration
-    - sequence
-    - tenants
-    - unavoidable
-    - variants
-  backlinks:
-    - accounting
-    - addressed
-    - agent
-    - analog
-    - aura
-    - balance
-    - coil
-    - dna
-    - fields
-    - gate
-    - harmony
-    - hooks
-    - horo
-    - identity
-    - invariant
-    - items
-    - law
-    - lots
-    - merge
-    - octave
-    - packs
-    - phases
-    - proof
-    - quaternary
-    - regeneration
-    - sequence
-    - tenants
-    - unavoidable
-    - variants
 signatures:
-  computationUuid: "658c5034-6b41-827c-99e4-18bc71f56305"
+  computationUuid: "699d422a-6558-886d-8db2-4ab34b622cbc"
   stages:
     - stage: path
-      stageUuid: "36bd5574-3d92-8883-83ed-c680842a90a8"
+      stageUuid: "cd630dd9-ebe9-8fec-af89-809dce788348"
     - stage: trinity
-      stageUuid: "6ecb6a36-99f0-81f9-8861-85ed30c92d7f"
+      stageUuid: "3bd12acb-8f38-8742-8271-a8822956705f"
     - stage: boundary
-      stageUuid: "f60b4ba1-65d5-8336-ba24-0e7c9dde26a2"
+      stageUuid: "b8a9c44e-a61f-8034-a151-1fc78e830a1e"
     - stage: links
-      stageUuid: "4330c029-834c-8c7a-968a-7caced2f4b0c"
+      stageUuid: "78830c27-57b9-8cf4-9945-68e2a89b613b"
     - stage: horo
-      stageUuid: "2a62c1b1-e18d-82ad-8c67-124d64ca0558"
+      stageUuid: "505ecad6-f865-82f6-be52-b2bde144a55e"
     - stage: seal
-      stageUuid: "4cd5a159-fb5b-8737-864f-8b41d3c70adc"
+      stageUuid: "296f9300-0ed9-848d-9f60-97ab2225a1c8"
     - stage: uuid
-      stageUuid: "547d413f-f0e8-8f67-b160-bf3cf519813f"
+      stageUuid: "0a655066-cf2b-88b5-9c6f-fc07b7c973fd"
 version: 2
 ---
 # coordinate — the uuid is the coordinate system

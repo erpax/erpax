@@ -1,78 +1,35 @@
 ---
 name: recommended
 description: "Use when reasoning about recommended as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/recommended
-coordinate: recommended · 8/crest · 430f7e7b
-contentUuid: "1f7973ea-a8d9-58cc-9f5e-7f29b37cd7bc"
-diamondUuid: "7e5235ab-9364-855d-a6c6-b136d9ed988d"
-uuid: "430f7e7b-8a43-8133-b949-78767fe49d25"
+atomPath: "vocabulary/recommended"
+coordinate: "vocabulary/recommended · 8/crest · 4d341dc4"
+contentUuid: "bffcdf4d-b6ea-5ee6-b9ad-e228a95ee108"
+diamondUuid: "2a6f8d2c-9aa8-8f72-8680-7e4c788637a7"
+uuid: "4d341dc4-1a79-842f-8f04-50ff70e20d9e"
 horo: 8
-bonds:
-  in:
-    - collapse
-    - dose
-    - intake
-    - law
-    - merge
-    - schedule
-    - sti
-  out:
-    - collapse
-    - dose
-    - intake
-    - law
-    - merge
-    - schedule
-    - sti
 typography:
-  partition: recommended
+  partition: vocabulary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - dose
-    - intake
-    - law
-    - merge
-    - schedule
-    - sti
-  matrix:
-    - collapse
-    - dose
-    - intake
-    - law
-    - merge
-    - schedule
-    - sti
-  backlinks:
-    - collapse
-    - dose
-    - intake
-    - law
-    - merge
-    - schedule
-    - sti
 signatures:
-  computationUuid: "8a6a4242-c986-8ad7-917b-3fe5f1361daf"
+  computationUuid: "513922cb-87eb-8f8c-b20f-d36ec2e32ade"
   stages:
     - stage: path
-      stageUuid: "ef6020b8-1638-80cd-bbab-8af3968e1eec"
+      stageUuid: "b73916f7-8b66-8489-8e11-f4776a110bb0"
     - stage: trinity
-      stageUuid: "f085ed32-373a-8194-9d53-41b4e0f53b62"
+      stageUuid: "2bb8c314-28be-8104-8b75-06d1d8fb07e4"
     - stage: boundary
-      stageUuid: "38f41c26-0904-83dd-b972-d7a6d30c744b"
+      stageUuid: "d806e953-0ca3-82c9-abf7-fcc6a66fee3d"
     - stage: links
-      stageUuid: "cb5e7956-b587-8850-96fe-f3f720c94ca3"
+      stageUuid: "9c95f10e-150d-8778-8869-0ffd70fa8cd1"
     - stage: horo
-      stageUuid: "d108c55b-1a31-8875-aa66-20702fd0522b"
+      stageUuid: "81eb92d1-3ee6-8da9-a597-a0b825427e27"
     - stage: seal
-      stageUuid: "59ccad96-a7a1-864c-9ec3-798c637faf57"
+      stageUuid: "e27324a0-4a6c-81af-a924-63200d4fe706"
     - stage: uuid
-      stageUuid: "7ec6713f-c349-8101-a30d-205a62c0c660"
+      stageUuid: "ce574352-aeee-8168-8d14-70f8516240fa"
 version: 2
 ---
 # recommended

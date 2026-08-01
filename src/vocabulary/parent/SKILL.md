@@ -1,73 +1,35 @@
 ---
 name: parent
 description: Use when reasoning about parent — A parent of this person.
-atomPath: vocabulary/parent
-coordinate: parent · 4/weave · 848af1c6
-contentUuid: "da904e75-93ae-5c92-a449-f90f4420d62b"
-diamondUuid: "8377d10b-ec40-833c-8d00-6a07a5107066"
-uuid: "848af1c6-522d-849c-adf6-28bb5eb26018"
-horo: 4
-bonds:
-  in:
-    - audience
-    - item
-    - law
-    - organization
-    - service
-    - taxon
-  out:
-    - audience
-    - item
-    - law
-    - organization
-    - service
-    - taxon
+atomPath: "vocabulary/parent"
+coordinate: "vocabulary/parent · 5/round · d94d04bc"
+contentUuid: "c4f0a3fd-f232-5490-8a48-5b297ec3e57d"
+diamondUuid: "9b18b247-91b7-830e-97ba-1029280bdb73"
+uuid: "d94d04bc-75fd-83c5-a268-ddd6a14d1ef0"
+horo: 5
 typography:
-  partition: parent
-  bondDegree: 23
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 27
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - audience
-    - item
-    - law
-    - organization
-    - service
-    - taxon
-  matrix:
-    - audience
-    - item
-    - law
-    - organization
-    - service
-    - taxon
-  backlinks:
-    - audience
-    - item
-    - law
-    - organization
-    - service
-    - taxon
 signatures:
-  computationUuid: "21e2de39-0f44-820b-9a02-5864508e0ef8"
+  computationUuid: "34edd59a-8c24-8d8a-9be4-038ef7331dd5"
   stages:
     - stage: path
-      stageUuid: "d6638999-46c5-8f9c-8c41-0eb562718f07"
+      stageUuid: "e5a8c30a-eb46-8fd5-9097-76f1b1314e75"
     - stage: trinity
-      stageUuid: "57cc18e0-e4c6-8d45-b6e6-e07e54f3cc79"
+      stageUuid: "4879ceab-3c6a-8cf3-a0e2-4810a02c5f47"
     - stage: boundary
-      stageUuid: "a169807a-059b-8687-a5ce-f95c5bccc8c5"
+      stageUuid: "2617bfa9-3517-8cc7-a761-984126feba65"
     - stage: links
-      stageUuid: "86cfff6a-ffe1-8cb6-8660-6b7ab46a33a1"
+      stageUuid: "83bb0e01-a7de-85f1-be06-1a0945f5a6d8"
     - stage: horo
-      stageUuid: "d2e99042-2d6f-8f03-9ed8-b3261be4c17d"
+      stageUuid: "dab56cbd-e841-8e76-a041-cc4e5fa3eec5"
     - stage: seal
-      stageUuid: "41b7e5d2-fb83-8c85-99d4-11302797c1a1"
+      stageUuid: "582cb805-16bb-859d-a2ed-a5f9651edd4b"
     - stage: uuid
-      stageUuid: "f9b9c926-cbb4-8d8f-a379-9bc023fe23e0"
+      stageUuid: "fb4ecfb6-bd3c-8e2b-8e1d-42cdfa6a3685"
 version: 2
 ---
 # parent

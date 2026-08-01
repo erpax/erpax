@@ -1,73 +1,35 @@
 ---
 name: cable
 description: "Use when reasoning about cable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/cable
-coordinate: cable · 7/descent · 30b49d79
-contentUuid: "9e037bc5-45e8-59e2-a7e9-1a6d42a97864"
-diamondUuid: "8e536ef4-6e58-853b-a0f3-896daaac4381"
-uuid: "30b49d79-7bc1-87b4-8e69-a7921252ca51"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - satellite
-    - service
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - satellite
-    - service
-    - sti
+atomPath: "vocabulary/cable"
+coordinate: "vocabulary/cable · 1/base · 3526f78f"
+contentUuid: "56d701ff-9832-55a1-9412-0e1504289f31"
+diamondUuid: "ab825f70-0d5b-80f3-88b8-202295831b86"
+uuid: "3526f78f-8bfa-83cf-8018-88f340b85720"
+horo: 1
 typography:
-  partition: cable
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - satellite
-    - service
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - satellite
-    - service
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - satellite
-    - service
-    - sti
 signatures:
-  computationUuid: "68f5e92e-3cfe-80be-9116-60707f76750a"
+  computationUuid: "32ca6bcb-2238-8c89-b9f8-094fe631f5ad"
   stages:
     - stage: path
-      stageUuid: "6a5199df-f099-81f3-925c-8eecbfed5cc6"
+      stageUuid: "26a858da-bff1-8362-afc7-5cbf32d25cec"
     - stage: trinity
-      stageUuid: "6ca4d083-b023-83d8-a111-c99b8ffa1ef3"
+      stageUuid: "d772c9cd-858d-84ce-b794-1bb63e43a47e"
     - stage: boundary
-      stageUuid: "d3b58317-2ad7-8c7d-a615-20bcf2dd6b3b"
+      stageUuid: "deda1197-00c6-8f29-9a4e-ed64f646658e"
     - stage: links
-      stageUuid: "ed343fcb-8c67-82eb-a5a2-d9d912653965"
+      stageUuid: "5ba4fb77-ded5-8605-af60-d83e061bfe9c"
     - stage: horo
-      stageUuid: "dbf4f059-8e99-8bd7-9e93-a9ae70cc258c"
+      stageUuid: "67a29348-0a53-8fce-8af7-38c967ccc13f"
     - stage: seal
-      stageUuid: "44348f17-e74e-8a7d-aaa4-e186606158f4"
+      stageUuid: "710d688f-67b8-8a9a-831b-603679b008e6"
     - stage: uuid
-      stageUuid: "290a74d1-bf38-8a7e-903b-44808bb2dd34"
+      stageUuid: "da96bf81-5209-835f-8b6b-e4d30ae9e190"
 version: 2
 ---
 # cable

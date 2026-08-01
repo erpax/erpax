@@ -1,133 +1,35 @@
 ---
 name: price
 description: "Use when reasoning about price — The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes. Usage guidelines: * Use the priceCurrency property (with standard format"
-atomPath: vocabulary/price
-coordinate: price · 5/round · 4c3d30a5
-contentUuid: "3b13d03e-3f83-5f5d-86c9-7c8b53b6022d"
-diamondUuid: "25cf2723-e41a-8683-8d5a-f37a5b3f8d6e"
-uuid: "4c3d30a5-51ee-85ee-94cf-89a2a22aaf56"
-horo: 5
-bonds:
-  in:
-    - component
-    - compound
-    - currency
-    - enumeration
-    - high
-    - law
-    - limit
-    - low
-    - max
-    - min
-    - purchase
-    - range
-    - specification
-    - total
-    - type
-    - unit
-    - until
-    - valid
-  out:
-    - component
-    - compound
-    - currency
-    - enumeration
-    - high
-    - law
-    - limit
-    - low
-    - max
-    - min
-    - purchase
-    - range
-    - specification
-    - total
-    - type
-    - unit
-    - until
-    - valid
+atomPath: "vocabulary/price"
+coordinate: "vocabulary/price · 1/base · f4e7817d"
+contentUuid: "17342036-3edf-5769-8d53-4442c26d5b58"
+diamondUuid: "c4de151c-ae26-877f-a3a8-180dfcc4946c"
+uuid: "f4e7817d-d5f0-8797-bca3-95dd4b4f2b74"
+horo: 1
 typography:
-  partition: price
-  bondDegree: 66
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 68
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - component
-    - compound
-    - currency
-    - enumeration
-    - high
-    - law
-    - limit
-    - low
-    - max
-    - min
-    - purchase
-    - range
-    - specification
-    - total
-    - type
-    - unit
-    - until
-    - valid
-  matrix:
-    - component
-    - compound
-    - currency
-    - enumeration
-    - high
-    - law
-    - limit
-    - low
-    - max
-    - min
-    - purchase
-    - range
-    - specification
-    - total
-    - type
-    - unit
-    - until
-    - valid
-  backlinks:
-    - component
-    - compound
-    - currency
-    - enumeration
-    - high
-    - law
-    - limit
-    - low
-    - max
-    - min
-    - purchase
-    - range
-    - specification
-    - total
-    - type
-    - unit
-    - until
-    - valid
 signatures:
-  computationUuid: "06f82430-e0b5-89ad-907d-40fff8d225cd"
+  computationUuid: "45e5e34d-2a98-85b7-97c8-12583b806803"
   stages:
     - stage: path
-      stageUuid: "bbc26f59-f50f-899d-975c-53442e7b7e95"
+      stageUuid: "dafaf8ed-8eda-8175-9705-b55645a91b89"
     - stage: trinity
-      stageUuid: "89655916-1da5-80df-9290-7180e9f9218b"
+      stageUuid: "e626fb8d-471a-8c09-b2a7-679e07289013"
     - stage: boundary
-      stageUuid: "bb7f06b9-1df0-8346-ac13-607a54a2f531"
+      stageUuid: "12d035bc-907c-81ae-a2c4-b8b74552c83f"
     - stage: links
-      stageUuid: "131fccd8-e74c-811b-84cd-4bdac8f24d88"
+      stageUuid: "c6537360-c0af-8126-b0aa-c513b4b4b191"
     - stage: horo
-      stageUuid: "93ab2fe2-3ff3-83ae-b343-c197f85239d1"
+      stageUuid: "7825c2b6-884c-834b-b01e-2676551616f8"
     - stage: seal
-      stageUuid: "b15b1c08-56dd-858a-88e0-40a187bb7c8c"
+      stageUuid: "563f9593-f8a2-8244-8d80-a01e73ef46fa"
     - stage: uuid
-      stageUuid: "c646fad9-0df9-8c7f-872d-667d47f1a34c"
+      stageUuid: "7733029b-20ff-82bb-8f40-8d3417cf3fe2"
 version: 2
 ---
 # price

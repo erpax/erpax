@@ -1,63 +1,35 @@
 ---
 name: iosplatform
 description: "Use when reasoning about iosplatform as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/iosplatform
-coordinate: iosplatform · 1/base · 9fb47bbb
-contentUuid: "769f2d9a-e406-57f8-b0b6-329eef51ff35"
-diamondUuid: "cd012df8-f41b-877c-84ac-5a9fe0b27129"
-uuid: "9fb47bbb-4705-8dc6-ad4a-0f07e8aa2ab3"
+atomPath: "vocabulary/iosplatform"
+coordinate: "vocabulary/iosplatform · 1/base · 915f2126"
+contentUuid: "5d642bc1-d1b8-5a84-ba15-66970f79818f"
+diamondUuid: "4aa2731d-ccff-8a9f-ab9f-f5a4e1af8361"
+uuid: "915f2126-d220-8d22-bb43-c9ac352142ef"
 horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: iosplatform
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "2ae9d797-c874-8c70-970b-52eab07a99ad"
+  computationUuid: "5328ec30-1f9f-86d6-85e5-b2f579b51a5f"
   stages:
     - stage: path
-      stageUuid: "3b243933-c68b-8500-91fc-9d8a0bc8ddb4"
+      stageUuid: "c2b153e2-ddf5-8a1e-a258-af794f9c5d40"
     - stage: trinity
-      stageUuid: "88d63cc7-ea5a-8586-a785-4936fe330fca"
+      stageUuid: "0b7c5084-12aa-8162-959c-7dde88565f95"
     - stage: boundary
-      stageUuid: "2d65adb6-a75c-8350-82ee-93104f6c73dc"
+      stageUuid: "3fb266f0-de4c-84a0-8ad9-d6ea6d61bf95"
     - stage: links
-      stageUuid: "46caf03e-8781-8110-a0cf-4a6499805341"
+      stageUuid: "51cc1c48-9410-8374-a812-a282791bd645"
     - stage: horo
-      stageUuid: "b0740dfd-1fc6-8c75-b62d-99b77ed909cc"
+      stageUuid: "21e429b7-115a-8d7c-bb2c-47d0e20a2592"
     - stage: seal
-      stageUuid: "df270c16-91f1-891a-b2f2-72c494e6988c"
+      stageUuid: "feef8b58-c07a-8efa-a6d3-035ffa0fc469"
     - stage: uuid
-      stageUuid: "c24c173b-9c23-8078-945c-a78deb25942d"
+      stageUuid: "73f811ee-3bd3-8e53-b944-b7cabddf4e20"
 version: 2
 ---
 # iosplatform

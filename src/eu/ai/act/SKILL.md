@@ -2,26 +2,16 @@
 name: act
 description: Use when implementing or referencing EU AI Act 2024.
 atomPath: "eu/ai/act"
-coordinate: "eu/ai/act · 4/weave · 2f33f184"
-contentUuid: "22121ae5-365f-5014-bcee-2f44d5ee3ed1"
-diamondUuid: "676e32f2-3062-8eb2-9652-5e7ce350cf53"
-uuid: "2f33f184-e0dd-80d5-9974-5027e0d27ee3"
-horo: 4
-bonds:
-  in:
-    - ai
-    - law
-  out:
-    - law
+coordinate: "eu/ai/act · 1/base · 44f1d030"
+contentUuid: "3a8b234d-7f1a-51ba-9c49-133d192c8ba2"
+diamondUuid: "0b956067-e329-8d22-bdc6-e05d0ffdfc8a"
+uuid: "44f1d030-6381-83e1-b32d-49385a8caa84"
+horo: 1
 typography:
   partition: eu
-  bondDegree: 3
-  neighbors: []
+  bondDegree: 1
 standards:
   - "EU AI Act 2024 Regulation (EU) 2024/1689"
-  - "EU-2024/1183"
-  - "EU-2024/1620"
-  - "EU-2024/1624"
   - "EU-AI-Act"
   - "EU-CSDDD-2024/1760"
   - "GDPR Art.22 automated-individual-decision-making"
@@ -36,15 +26,8 @@ standards:
   - "NIST-AI-RMF"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-  matrix:
-    - law
-  backlinks:
-    - law
 signatures:
-  computationUuid: "db750818-2c7b-8457-ade1-109256f35f53"
+  computationUuid: "094a5800-b87b-8da2-a4b4-53248a01d762"
   stages:
     - stage: path
       stageUuid: "2527075a-ba61-851f-9aab-85c9f5c8a6c6"
@@ -53,13 +36,13 @@ signatures:
     - stage: boundary
       stageUuid: "0101ff25-5b2c-8128-9886-92c815aab863"
     - stage: links
-      stageUuid: "98191726-790a-8899-a504-a76e9c0d7340"
+      stageUuid: "eabcfa6e-ab8c-8b34-8da5-2ba696bcf15e"
     - stage: horo
-      stageUuid: "01c63d7d-8579-80c4-a31a-daaa54506b28"
+      stageUuid: "e7a86164-efcc-85f0-931f-dd4d6768df83"
     - stage: seal
       stageUuid: "1bef13ee-de70-8a4e-96e1-480b2a009186"
     - stage: uuid
-      stageUuid: "67ad5507-6588-83b9-8515-de0823093963"
+      stageUuid: "13600def-177f-80a8-974b-ca662f766daf"
 version: 2
 ---
 # EU AI Act 2024

@@ -2,74 +2,41 @@
 name: vendors
 description: "Use when managing purchase-side party master data — vendor identity, VAT/tax classification, IBAN/BIC bank details, payment terms, AP ledger defaults, and IRS 1099 eligibility. The supplier/vendor master and accounts-payable party registry."
 atomPath: vendors
-coordinate: vendors · 8/crest · 34860d9f
-contentUuid: "ddf50663-c308-538a-8d6f-a4fad58d30a7"
-diamondUuid: "91ac3f5d-6a6f-8113-b3ef-ae4b4433333a"
-uuid: "34860d9f-e41d-8967-b0ff-e65da8971306"
-horo: 8
-bonds:
-  in:
-    - activities
-    - identity
-    - law
-    - party
-    - quotes
-    - scorecards
-    - standard
-  out:
-    - activities
-    - identity
-    - law
-    - party
-    - quotes
-    - scorecards
-    - standard
+coordinate: "vendors · 2/share · 74696745"
+contentUuid: "9ffe8b2a-3d0c-5e23-b340-f49d281ba696"
+diamondUuid: "78267faf-2041-80ea-844f-9193f52cf845"
+uuid: "74696745-3bd0-886f-9905-4179e54c65cc"
+horo: 2
 typography:
   partition: vendors
   bondDegree: 0
-  neighbors: []
 standards:
   - "EN-16931:2017 §BG-4 seller"
+  - "EN-16931:2017 §BG-4 seller`"
   - "GDPR Art.6(1)(b) lawful-basis-contract"
   - "ISO-13616-1:2020 iban"
+  - "ISO-13616-1:2020 iban`"
   - "ISO-17442-1"
   - "ISO-17442-1:2020 lei"
+  - "ISO-17442-1:2020 lei`"
   - "ISO-20022 pain.001 customer-credit-transfer-initiation"
+  - "ISO-20022 pain.001 customer-credit-transfer-initiation`"
   - "ISO-20022 pain.008 customer-direct-debit-initiation"
+  - "ISO-20022 pain.008 customer-direct-debit-initiation`"
   - "ISO-3166-1:2020 country-codes via-addresses"
+  - "ISO-3166-1:2020 country-codes via-addresses`"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-9001"
-  - "ISO-9362"
   - "ISO-9362:2022 bic"
+  - "ISO-9362:2022 bic`"
   - "US-GAAP ASC-405 liabilities"
   - "US-IRS Form-1099 information-return"
   - "W3C-PROV-O"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - identity
-    - law
-    - quotes
-    - scorecards
-    - standard
-  matrix:
-    - activities
-    - identity
-    - law
-    - party
-    - quotes
-    - scorecards
-    - standard
-  backlinks:
-    - activities
-    - identity
-    - law
-    - party
-    - quotes
-    - scorecards
-    - standard
 signatures:
-  computationUuid: "4692a811-c938-8ec7-8c4b-820a7d6f7eb6"
+  computationUuid: "069614cf-e4d4-8db4-b556-6feb03047c24"
   stages:
     - stage: path
       stageUuid: "2a6e8c99-f082-82ff-91e2-e5d52e9d7121"
@@ -80,11 +47,11 @@ signatures:
     - stage: links
       stageUuid: "1b5d1159-5783-83c7-9049-b3dd23d11d74"
     - stage: horo
-      stageUuid: "e6fba55f-d824-8b85-99e2-51dee06c1201"
+      stageUuid: "76153e19-3865-80a4-bf75-cc4d3e3ca4f2"
     - stage: seal
       stageUuid: "ce22f689-243f-8da3-a84a-a3b4ecd061d6"
     - stage: uuid
-      stageUuid: "dd746e8f-628c-89c6-894b-99774374c3cf"
+      stageUuid: "621c9647-d3da-8e2e-8e15-1f5916e139e7"
 version: 2
 ---
 # vendors

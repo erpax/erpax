@@ -1,96 +1,35 @@
 ---
 name: answer
 description: "Use when reasoning about answer — An answer offered to a question; perhaps correct, perhaps opinionated or wrong."
-atomPath: vocabulary/answer
-coordinate: answer · 5/round · 2406832e
-contentUuid: "1c3513dc-dc0e-57a9-b335-72704335b31c"
-diamondUuid: "eb1e2b41-ca9f-8fb1-a774-50ddd42bb205"
-uuid: "2406832e-7ce0-81cc-bd9f-d6a27d3d7297"
-horo: 5
-bonds:
-  in:
-    - accepted
-    - command
-    - concatenate
-    - count
-    - explanation
-    - law
-    - question
-    - self
-    - step
-    - suggested
-    - workflow
-  out:
-    - accepted
-    - command
-    - concatenate
-    - count
-    - explanation
-    - law
-    - question
-    - self
-    - step
-    - suggested
-    - workflow
+atomPath: "vocabulary/answer"
+coordinate: "vocabulary/answer · 1/base · f4d84aca"
+contentUuid: "fac891ef-058b-597a-8c14-e88cc457331e"
+diamondUuid: "32f57cf2-1ff3-809d-8950-a21392193495"
+uuid: "f4d84aca-7b6e-8207-a5b0-722721829514"
+horo: 1
 typography:
-  partition: answer
+  partition: vocabulary
   bondDegree: 40
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - accepted
-    - concatenate
-    - count
-    - explanation
-    - law
-    - question
-    - self
-    - step
-    - suggested
-  matrix:
-    - accepted
-    - command
-    - concatenate
-    - count
-    - explanation
-    - law
-    - question
-    - self
-    - step
-    - suggested
-    - workflow
-  backlinks:
-    - accepted
-    - command
-    - concatenate
-    - count
-    - explanation
-    - law
-    - question
-    - self
-    - step
-    - suggested
-    - workflow
 signatures:
-  computationUuid: "5821ec03-6af4-8b74-86ad-f00f28a5f563"
+  computationUuid: "bf9fb5ee-dab5-8e0d-8bca-9c2c01e8cb18"
   stages:
     - stage: path
-      stageUuid: "bc62524c-c252-8414-82b9-718c5ba1a351"
+      stageUuid: "bdf4acff-b323-8044-b5b6-51083ff1c266"
     - stage: trinity
-      stageUuid: "b68c33cc-8835-8143-b1ee-751e3976a669"
+      stageUuid: "953b0e04-c321-80cb-922f-453cc23c2e44"
     - stage: boundary
-      stageUuid: "a0f1edfc-73f8-82fc-8fee-8385603204bb"
+      stageUuid: "a572475e-fd41-825d-9978-2396c2d7e3d0"
     - stage: links
-      stageUuid: "ac7b5f9d-da38-87ef-b42c-437f381165b1"
+      stageUuid: "40031949-9ac5-83c4-bdb5-8971250c0eff"
     - stage: horo
-      stageUuid: "20e5e750-4979-820d-8af2-dfcef72690fa"
+      stageUuid: "71c18fcc-ab14-8dbc-a4d1-00786e3a7fc6"
     - stage: seal
-      stageUuid: "79a9883e-bd98-869c-8ec8-896421931150"
+      stageUuid: "02a36c72-ad1b-87ac-b781-5a69c03b461d"
     - stage: uuid
-      stageUuid: "003efffe-41bd-80f0-a72c-e2079565a5df"
+      stageUuid: "b5d8cc39-3fc3-8acd-8cf6-e74d2a271805"
 version: 2
 ---
 # answer

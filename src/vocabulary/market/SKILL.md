@@ -1,177 +1,34 @@
 ---
 name: market
 description: "Use when reasoning about why a market is small or how to grow it — a market is the PRODUCT (not the sum) of its atoms, so the near-zero atom caps the whole and growth means finding the zero atom and lifting it. Trendsetters are the operator that flips the social-status sign and seeds awareness; convenience lowers friction but decays status (coupled, opposite sign), so you harvest status at high friction then lower friction for the majority — the breath, run on demand."
-atomPath: vocabulary/market
-coordinate: market · 5/round · 078c0b9c
-contentUuid: "0eefd27c-8f87-5bc2-b4bf-750c238c96df"
-diamondUuid: "3873f3e3-5383-8b29-a664-7570bf307804"
-uuid: "078c0b9c-d1ff-87da-be27-2c8913ee6c25"
-horo: 5
-bonds:
-  in:
-    - age
-    - awareness
-    - bottleneck
-    - breath
-    - career
-    - commerce
-    - constraint
-    - desire
-    - diffusion
-    - distribution
-    - entry
-    - friction
-    - habit
-    - law
-    - network
-    - pickup
-    - planting
-    - power
-    - proof
-    - share
-    - signal
-    - society
-    - sparsity
-    - status
-    - symbiosis
-    - trend
-    - wellbeing
-    - yield
-    - zeropoint
-  out:
-    - age
-    - awareness
-    - bottleneck
-    - breath
-    - career
-    - commerce
-    - constraint
-    - desire
-    - diffusion
-    - distribution
-    - entry
-    - friction
-    - habit
-    - law
-    - network
-    - pickup
-    - planting
-    - power
-    - proof
-    - share
-    - signal
-    - society
-    - sparsity
-    - status
-    - symbiosis
-    - trend
-    - wellbeing
-    - yield
-    - zeropoint
+atomPath: "vocabulary/market"
+coordinate: "vocabulary/market · 4/weave · d9b95d61"
+contentUuid: "380c14e8-718f-5c29-99f4-1d214ad4f834"
+diamondUuid: "c0d2ef77-902e-8171-8d3d-70663bcc5f72"
+uuid: "d9b95d61-2fa1-804f-99c2-83e6259dd681"
+horo: 4
 typography:
-  partition: market
-  bondDegree: 96
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 98
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - awareness
-    - bottleneck
-    - breath
-    - commerce
-    - constraint
-    - desire
-    - diffusion
-    - distribution
-    - entry
-    - friction
-    - habit
-    - law
-    - network
-    - power
-    - proof
-    - signal
-    - society
-    - status
-    - trend
-  matrix:
-    - age
-    - awareness
-    - bottleneck
-    - breath
-    - career
-    - commerce
-    - constraint
-    - desire
-    - diffusion
-    - distribution
-    - entry
-    - friction
-    - habit
-    - law
-    - network
-    - pickup
-    - planting
-    - power
-    - proof
-    - share
-    - signal
-    - society
-    - sparsity
-    - status
-    - symbiosis
-    - trend
-    - wellbeing
-    - yield
-    - zeropoint
-  backlinks:
-    - age
-    - awareness
-    - bottleneck
-    - breath
-    - career
-    - commerce
-    - constraint
-    - desire
-    - diffusion
-    - distribution
-    - entry
-    - friction
-    - habit
-    - law
-    - network
-    - pickup
-    - planting
-    - power
-    - proof
-    - share
-    - signal
-    - society
-    - sparsity
-    - status
-    - symbiosis
-    - trend
-    - wellbeing
-    - yield
-    - zeropoint
 signatures:
-  computationUuid: "fd11b80d-e6b8-8db1-a09c-e7f44de8467b"
+  computationUuid: "fe54a446-caf8-8322-acc0-63f147ce42b0"
   stages:
     - stage: path
-      stageUuid: "b93f36d9-03bb-864a-b374-b374a75647cb"
+      stageUuid: "134b4ef9-02ba-88cd-8b77-af0bf2ad6eb2"
     - stage: trinity
-      stageUuid: "cef20696-2b7e-8998-933a-47cbc714985d"
+      stageUuid: "b910bacf-ba41-8674-b7b5-8cf664dad920"
     - stage: boundary
-      stageUuid: "210f2b48-cecf-8148-8c70-db6c5e00796b"
+      stageUuid: "1e05aa17-fa5c-8e9e-bfc1-0ca7a36b18b1"
     - stage: links
-      stageUuid: "11db67d3-be30-83fd-8210-05b5ef820d28"
+      stageUuid: "56cd0f7f-d147-81f9-8808-5eae59d13ca5"
     - stage: horo
-      stageUuid: "764261bc-2c8e-8fe1-b6d2-f4445893ff35"
+      stageUuid: "12e6c5cc-9532-857d-b4a6-8cb9202361c3"
     - stage: seal
-      stageUuid: "38e3dab4-689e-8332-992e-a72be3bbdfd9"
+      stageUuid: "f618385b-c8cb-8972-a184-fb4312ad25ae"
     - stage: uuid
-      stageUuid: "2004afc7-10a5-8d38-b3ef-8947f0e7ece1"
+      stageUuid: "ee147ab3-81d3-887b-998e-8b88027601a0"
 version: 2
 ---
 # market — the emergent whole where desire meets supply (a product of atoms)

@@ -2,211 +2,33 @@
 name: port
 description: "Use when porting a Rails/ActiveAdmin ERP feature (from etrima or ceccec/erpax) into Payload/Next — mapping ActiveAdmin resource registrations to CollectionConfig, Rails concerns to reusable field-factories/skills, controllers/callbacks to endpoints/hooks, CanCan authorization to access control, polymorphic/self-referential associations to relationships. The Rails↔Next / ActiveAdmin↔Payload Rosetta Stone."
 atomPath: port
-coordinate: port · 5/round · a5b47990
-contentUuid: "c229232f-ea46-561e-a932-8b1ce675dc76"
-diamondUuid: "9f021790-2ff4-80a1-a9b9-4232513d66b7"
-uuid: "a5b47990-d345-876a-a87f-bf460554ac61"
-horo: 5
-bonds:
-  in:
-    - access
-    - accounting
-    - admin
-    - amortize
-    - api
-    - calculate
-    - chat
-    - collapse
-    - collections
-    - commerce
-    - config
-    - database
-    - depreciate
-    - domain
-    - ebitda
-    - empirical
-    - fields
-    - fractal
-    - generate
-    - hooks
-    - identity
-    - jobs
-    - law
-    - manufacturing
-    - measure
-    - merge
-    - plugins
-    - port
-    - profane
-    - queries
-    - recover
-    - sacred
-    - sequence
-    - spec
-    - standard
-    - sti
-    - trinity
-  out:
-    - access
-    - accounting
-    - admin
-    - amortize
-    - api
-    - calculate
-    - chat
-    - collapse
-    - collections
-    - commerce
-    - config
-    - database
-    - depreciate
-    - domain
-    - ebitda
-    - empirical
-    - fields
-    - fractal
-    - generate
-    - hooks
-    - identity
-    - jobs
-    - law
-    - manufacturing
-    - measure
-    - merge
-    - plugins
-    - port
-    - profane
-    - queries
-    - recover
-    - sacred
-    - sequence
-    - spec
-    - standard
-    - sti
-    - trinity
+coordinate: "port · 4/weave · 86b03c2d"
+contentUuid: "8bab4ab4-6b01-5955-b964-86707b96421b"
+diamondUuid: "c2cb3ef5-8b82-8ee2-b7bf-4d6935099761"
+uuid: "86b03c2d-65ba-8acd-8c36-de9e5d79ce87"
+horo: 4
 typography:
   partition: port
-  bondDegree: 120
-  neighbors: []
+  bondDegree: 144
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - accounting
-    - admin
-    - api
-    - collapse
-    - collections
-    - config
-    - database
-    - fields
-    - fractal
-    - hooks
-    - identity
-    - jobs
-    - law
-    - manufacturing
-    - merge
-    - plugins
-    - profane
-    - queries
-    - sacred
-    - sequence
-    - trinity
-  matrix:
-    - access
-    - accounting
-    - admin
-    - amortize
-    - api
-    - calculate
-    - chat
-    - collapse
-    - collections
-    - commerce
-    - config
-    - database
-    - depreciate
-    - domain
-    - ebitda
-    - empirical
-    - fields
-    - fractal
-    - generate
-    - hooks
-    - identity
-    - jobs
-    - law
-    - manufacturing
-    - measure
-    - merge
-    - plugins
-    - port
-    - profane
-    - queries
-    - recover
-    - sacred
-    - sequence
-    - spec
-    - standard
-    - sti
-    - trinity
-  backlinks:
-    - access
-    - accounting
-    - admin
-    - amortize
-    - api
-    - calculate
-    - chat
-    - collapse
-    - collections
-    - commerce
-    - config
-    - database
-    - depreciate
-    - domain
-    - ebitda
-    - empirical
-    - fields
-    - fractal
-    - generate
-    - hooks
-    - identity
-    - jobs
-    - law
-    - manufacturing
-    - measure
-    - merge
-    - plugins
-    - port
-    - profane
-    - queries
-    - recover
-    - sacred
-    - sequence
-    - spec
-    - standard
-    - sti
-    - trinity
 signatures:
-  computationUuid: "44e31539-a605-82df-a548-6a230f0f3d8a"
+  computationUuid: "bdf6288d-44a0-8523-9d13-8a88e4d171d8"
   stages:
     - stage: path
       stageUuid: "6106f228-2108-8091-a6d5-498dae0bf453"
     - stage: trinity
       stageUuid: "56d6a3ba-02d4-8023-a956-55f8b1fa6e59"
     - stage: boundary
-      stageUuid: "12644c00-0e2d-87b7-9966-1ba58f428e6f"
+      stageUuid: "be38fadd-20ad-81d7-9970-6cf92567bb29"
     - stage: links
-      stageUuid: "f97ff853-4487-807e-a227-ccd817bcdb2c"
+      stageUuid: "f24b8ec8-e7a4-840c-b0ab-3962561b4f3b"
     - stage: horo
-      stageUuid: "43a17bf7-2f18-8be9-a661-96cd18fb5996"
+      stageUuid: "95cbeb35-9e49-87ec-aada-b456c12c3f6c"
     - stage: seal
-      stageUuid: "d3cf0cae-7360-8271-9311-fdd99681a1c2"
+      stageUuid: "d1d2bef0-baed-85a1-b0c8-6a518a1d5d9b"
     - stage: uuid
-      stageUuid: "2123ce05-9422-8bd6-8929-290ad60b1374"
+      stageUuid: "8b1a97a1-1743-80d7-873e-058eb5fdedb0"
 version: 2
 ---
 # port — Rails/ActiveAdmin → Payload/Next (same shape, different host)

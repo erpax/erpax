@@ -2,34 +2,15 @@
 name: routings
 description: "Use when sequencing the process steps for a work order — operation type, work center, setup time, run-time per unit, UoM, and IAS-2 cost-of-conversion from cycle time. The ordered routing-step collection — the second universal manufacturing primitive alongside the BOM."
 atomPath: "items/bills/of/materials/work/orders/routings"
-coordinate: "items/bills/of/materials/work/orders/routings · 7/descent · 629d3fc2"
-contentUuid: "3c8814dd-3671-51b6-8d60-48a3c41a3bbb"
-diamondUuid: "440f5800-104f-812a-bc8e-67b642a3233c"
-uuid: "629d3fc2-861f-8670-96bb-135d891eff40"
-horo: 7
-bonds:
-  in:
-    - access
-    - accounting
-    - centers
-    - hooks
-    - law
-    - operations
-    - orders
-  out:
-    - access
-    - accounting
-    - centers
-    - hooks
-    - law
-    - operations
-    - orders
+coordinate: "items/bills/of/materials/work/orders/routings · 1/base · 91154196"
+contentUuid: "4d83df1b-d565-524f-b099-3af4a3174660"
+diamondUuid: "84849c67-8fb8-8404-9e54-ab7db8f880c6"
+uuid: "91154196-c5c6-8b54-a6f6-466dcc38aa8c"
+horo: 1
 typography:
   partition: items
   bondDegree: 21
-  neighbors: []
 standards:
-  - "EU-2014/55"
   - "EU-537/2014"
   - "EU-910/2014"
   - "IFRS IAS-2 §12 cost-of-conversion operation-time"
@@ -44,33 +25,8 @@ standards:
   - "US-GAAP ASC-330-10-30 inventory-cost"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - accounting
-    - centers
-    - hooks
-    - law
-    - operations
-    - orders
-  matrix:
-    - access
-    - accounting
-    - centers
-    - hooks
-    - law
-    - operations
-    - orders
-  backlinks:
-    - access
-    - accounting
-    - centers
-    - hooks
-    - law
-    - operations
-    - orders
 signatures:
-  computationUuid: "c75a4f79-4edb-8d65-afe8-f5365e780c81"
+  computationUuid: "7ebec49c-04de-8493-b23e-1c69f5dbb83c"
   stages:
     - stage: path
       stageUuid: "e7aed141-56a1-89f4-9156-1aefa4fd0d81"
@@ -81,11 +37,11 @@ signatures:
     - stage: links
       stageUuid: "60c3e473-1804-8214-92b0-fed10bdf7755"
     - stage: horo
-      stageUuid: "e63d0885-9b7b-8ae5-8bc6-2aa418c1e2a2"
+      stageUuid: "b1ee289f-c0d6-8b27-bb52-01a9b20b2910"
     - stage: seal
       stageUuid: "bcbf5cea-67b1-88b8-8632-28d36bc262c9"
     - stage: uuid
-      stageUuid: "b3a34378-00a7-8b05-be1f-2faf046549a8"
+      stageUuid: "8100b553-8964-8c77-bb44-5608a2f2ded4"
 version: 2
 ---
 # routings

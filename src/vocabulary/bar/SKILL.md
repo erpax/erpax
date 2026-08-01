@@ -1,78 +1,35 @@
 ---
 name: bar
 description: "Use when reasoning about bar as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/bar
-coordinate: bar · 4/weave · 82949de1
-contentUuid: "e58912ba-ebba-5d27-b917-109a711873fb"
-diamondUuid: "19e3e8de-d8f8-881d-bef4-dc49d075203b"
-uuid: "82949de1-6ebe-8162-bb69-71eec1f201e2"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - pub
-    - side
-    - sti
-    - wp
-  out:
-    - collapse
-    - law
-    - merge
-    - pub
-    - side
-    - sti
-    - wp
+atomPath: "vocabulary/bar"
+coordinate: "vocabulary/bar · 7/descent · e458a1cc"
+contentUuid: "d8f53653-f65e-531f-816e-f87204622e2b"
+diamondUuid: "cadbc39d-efee-8564-9430-ce7d42320017"
+uuid: "e458a1cc-a000-8455-9f01-066cc131633b"
+horo: 7
 typography:
-  partition: bar
+  partition: vocabulary
   bondDegree: 24
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - pub
-    - side
-    - sti
-    - wp
-  matrix:
-    - collapse
-    - law
-    - merge
-    - pub
-    - side
-    - sti
-    - wp
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - pub
-    - side
-    - sti
-    - wp
 signatures:
-  computationUuid: "dc09d210-8f14-81d5-8749-bbf6c1261447"
+  computationUuid: "852fc909-1ff7-84b9-99e5-31680d6cfc89"
   stages:
     - stage: path
-      stageUuid: "4cc3ebb9-9966-851e-888d-e78efa4bf3df"
+      stageUuid: "167c7d02-776b-87b1-8af8-761ef7dba0f8"
     - stage: trinity
-      stageUuid: "c7d8ddff-f426-8733-9cff-1741439fe113"
+      stageUuid: "12d8341d-069b-8776-b435-4c664f0dffa8"
     - stage: boundary
-      stageUuid: "f0e1c6d6-dbb5-84cb-9a90-afcc200f37fa"
+      stageUuid: "e8b3343f-78f5-897a-b5e2-f062d6ca71fb"
     - stage: links
-      stageUuid: "86523369-209a-8de1-8563-6b6e33bb1135"
+      stageUuid: "59f9b9e1-781c-865c-a864-8a208a7b8e52"
     - stage: horo
-      stageUuid: "606afd7d-3243-8a32-bf4b-482b44c509b0"
+      stageUuid: "6e0dc7eb-ea39-87c2-a8e6-33dfc20da3d1"
     - stage: seal
-      stageUuid: "35c6cc28-7bdd-8c31-b281-699c698f1182"
+      stageUuid: "48fb4bae-97d2-85d5-8a80-5eff102088e5"
     - stage: uuid
-      stageUuid: "71ccc086-7580-8739-8f2c-875e95c746d0"
+      stageUuid: "1bc1a1e4-9110-8e6c-a2b4-0bc72a18263a"
 version: 2
 ---
 # bar

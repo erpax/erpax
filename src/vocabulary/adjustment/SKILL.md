@@ -1,62 +1,34 @@
 ---
 name: adjustment
 description: Use when modelling one adjustment — the singular model of the adjustments collection (the plural store); a correction posted against a prior figure or balance.
-atomPath: vocabulary/adjustment
-coordinate: adjustment · 1/base · bff36514
-contentUuid: "3d4769ca-d0fe-5f84-aca7-78425b89ba00"
-diamondUuid: "d8e06c49-65fc-833a-8d41-648a3668b057"
-uuid: "bff36514-9c9e-80bf-bc34-908569493811"
+atomPath: "vocabulary/adjustment"
+coordinate: "vocabulary/adjustment · 1/base · 8ce454a1"
+contentUuid: "2a74612a-be03-590e-a242-86579640fdd8"
+diamondUuid: "4eeaebc8-d1c8-8a0f-9b86-bb6c6149276b"
+uuid: "8ce454a1-4f4b-8be9-b3fb-16d2518fcd44"
 horo: 1
-bonds:
-  in:
-    - accounting
-    - adjustments
-    - balance
-    - law
-  out:
-    - accounting
-    - adjustments
-    - balance
-    - law
 typography:
-  partition: adjustment
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - adjustments
-    - balance
-    - law
-  matrix:
-    - accounting
-    - adjustments
-    - balance
-    - law
-  backlinks:
-    - accounting
-    - adjustments
-    - balance
-    - law
 signatures:
-  computationUuid: "5ae47fd0-0ec7-80a4-bc48-abc8399e909f"
+  computationUuid: "1fbb39e6-c77b-8e09-9be1-ce8a1195c0c5"
   stages:
     - stage: path
-      stageUuid: "9a9aea15-f058-8886-b785-86858e992f27"
+      stageUuid: "da69af37-b23b-8ca0-b9cc-e894d7ffe4dd"
     - stage: trinity
-      stageUuid: "1e282963-7ed9-8e1d-9b6b-9156b0db804b"
+      stageUuid: "ca662eb5-3dc8-8c22-86ae-a5c100682950"
     - stage: boundary
-      stageUuid: "0c336404-71db-8183-ac63-af8b0a92349d"
+      stageUuid: "160400b7-c24a-894f-aae9-dca1eb151f05"
     - stage: links
-      stageUuid: "dd68ab3f-a67b-86cd-b6bd-4becfa4b2dd5"
+      stageUuid: "a56f8671-94b4-894a-a437-a1127ca7f7d5"
     - stage: horo
-      stageUuid: "c4d66918-8637-82e1-82c7-3487e3bbd1f1"
+      stageUuid: "c5e482e5-1b4d-8b63-be8f-020b28ec5a5e"
     - stage: seal
-      stageUuid: "083f5f24-5a3e-8e44-ac88-981d9d283a5e"
+      stageUuid: "7a9d2498-5a65-8e67-9f82-14a76d857372"
     - stage: uuid
-      stageUuid: "791b986b-ad07-855c-bef4-57bb8c0b2476"
+      stageUuid: "9851ccf2-6afc-8eae-9526-350366b62b0a"
 version: 2
 ---
 # adjustment — the model of one [[adjustments]] row

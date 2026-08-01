@@ -1,82 +1,35 @@
 ---
 name: marketing
 description: "Use when reasoning about marketing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/marketing
-coordinate: marketing · 1/base · bc792ff2
-contentUuid: "70e4961e-0eff-5e28-ab0f-075ecd7a64cc"
-diamondUuid: "1f25dd37-40c5-89fa-8783-4a9a71c0a927"
-uuid: "bc792ff2-efbb-896f-a7b2-774fd21e0807"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - health
-    - law
-    - merge
-    - plan
-    - seo
-    - sti
-    - url
-  out:
-    - collapse
-    - health
-    - law
-    - merge
-    - plan
-    - seo
-    - sti
-    - url
+atomPath: "vocabulary/marketing"
+coordinate: "vocabulary/marketing · 4/weave · 93bf3108"
+contentUuid: "14d80838-36fb-5d3a-9701-b13123aff0bc"
+diamondUuid: "095dea93-1599-86a8-93c2-0bcc12c769f4"
+uuid: "93bf3108-882d-81f8-bc58-5c5e271b921f"
+horo: 4
 typography:
-  partition: marketing
-  bondDegree: 0
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 26
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - health
-    - law
-    - merge
-    - plan
-    - sti
-    - url
-  matrix:
-    - collapse
-    - health
-    - law
-    - merge
-    - plan
-    - seo
-    - sti
-    - url
-  backlinks:
-    - collapse
-    - health
-    - law
-    - merge
-    - plan
-    - seo
-    - sti
-    - url
 signatures:
-  computationUuid: "3c8be0aa-73b6-8fd5-94d5-98e8c0c587bf"
+  computationUuid: "d926d19a-d249-8411-b877-08e8e91a55c7"
   stages:
     - stage: path
-      stageUuid: "ba544b56-01e4-80db-bfeb-9884ba9b5434"
+      stageUuid: "8b2101d1-9a42-8b38-ab3e-e8b8008426fb"
     - stage: trinity
-      stageUuid: "db813dfe-9126-8340-b03f-dcc67e80f29e"
+      stageUuid: "a91c75cb-8f33-8bc7-b622-ec89029ebaec"
     - stage: boundary
-      stageUuid: "2fdb3425-3a44-83e7-b67d-436a9955b487"
+      stageUuid: "6641b10e-d663-8b31-95c8-df8864a2b4ce"
     - stage: links
-      stageUuid: "dff034ac-21f5-8c64-a18f-3f054d5ee8e6"
+      stageUuid: "1dfd1c69-81f9-8aae-ad83-782afb7e332d"
     - stage: horo
-      stageUuid: "37386d09-09a3-823d-90ab-371391c6b562"
+      stageUuid: "e3ec20de-fd87-818a-95e6-5ffabe384d2c"
     - stage: seal
-      stageUuid: "d14687bc-3daa-8aff-8b93-c4eb7cb09e71"
+      stageUuid: "845057e1-c9c5-88c0-8355-07748cdbb3d4"
     - stage: uuid
-      stageUuid: "cfa136f4-c480-847b-9153-a58b1c438158"
+      stageUuid: "1388ca80-716d-86a4-aefb-41d55a1e3650"
 version: 2
 ---
 # marketing

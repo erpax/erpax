@@ -1,78 +1,35 @@
 ---
 name: prefix
 description: "Use when reasoning about prefix as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/prefix
-coordinate: prefix · 4/weave · a767f7a8
-contentUuid: "b712c765-25b4-5fe1-81bd-fc3517533afd"
-diamondUuid: "c24c7db8-3d6d-8868-9bad-317039824232"
-uuid: "a767f7a8-2ed3-8cf3-86a1-5a7c178a86e1"
-horo: 4
-bonds:
-  in:
-    - code
-    - collapse
-    - honorific
-    - law
-    - merge
-    - postal
-    - sti
-  out:
-    - code
-    - collapse
-    - honorific
-    - law
-    - merge
-    - postal
-    - sti
+atomPath: "vocabulary/prefix"
+coordinate: "vocabulary/prefix · 5/round · 9103b0ea"
+contentUuid: "59557848-535c-5fd2-a311-6a4c713ec7ec"
+diamondUuid: "26156921-60ac-88fe-baa2-5cb305635849"
+uuid: "9103b0ea-45ec-8c80-bfca-e9ff95fa9e70"
+horo: 5
 typography:
-  partition: prefix
+  partition: vocabulary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - code
-    - collapse
-    - honorific
-    - law
-    - merge
-    - postal
-    - sti
-  matrix:
-    - code
-    - collapse
-    - honorific
-    - law
-    - merge
-    - postal
-    - sti
-  backlinks:
-    - code
-    - collapse
-    - honorific
-    - law
-    - merge
-    - postal
-    - sti
 signatures:
-  computationUuid: "6d691b19-7f31-8c60-98bf-a7fd5107ec8d"
+  computationUuid: "6448d9dc-3a6f-88cc-a659-f197948bc311"
   stages:
     - stage: path
-      stageUuid: "94dff7c9-25fb-8d93-9cbb-e587793eb110"
+      stageUuid: "a483f7a1-da33-8495-80a7-d6d838f6b6a3"
     - stage: trinity
-      stageUuid: "29abc4ab-bd3f-8cba-9657-8e1e743052ae"
+      stageUuid: "baa21a98-262c-8d0f-9c9f-b58d63b8e7e8"
     - stage: boundary
-      stageUuid: "405a78b5-c635-88b7-9b7e-4261a637f9a8"
+      stageUuid: "28b8206c-a9c4-829f-9c2a-c13a0da25a45"
     - stage: links
-      stageUuid: "833f43e0-c03f-873d-9856-80a212a809ca"
+      stageUuid: "46cb991b-284f-87a6-a333-c4a53a04116c"
     - stage: horo
-      stageUuid: "85fa386d-0e54-8a71-91fc-8fbffcb6e5dd"
+      stageUuid: "d25b90e7-f806-850b-8980-9af6a3a481af"
     - stage: seal
-      stageUuid: "c94fa68e-4e49-8331-bc52-f884a2a78331"
+      stageUuid: "49af94c4-fc3f-82cc-a915-3b3f3015c2c0"
     - stage: uuid
-      stageUuid: "0e126d3d-d64a-87d5-a4c8-2d19cda64f31"
+      stageUuid: "0847ee51-7063-8100-91a8-63d4672a616d"
 version: 2
 ---
 # prefix

@@ -9,7 +9,11 @@
  *
  * @see ./index.ts · ../../admin/ui/ComputedCssAdminRoot.tsx · next.config.ts
  */
-import { ftl, type CrackPattern, type Ftl } from './index'
+// '../index', not './index'. As a loose sibling this file was `ftl/admin.ts`, where `./index` meant
+// the ftl barrel; nested as `ftl/admin/index.ts` the same specifier resolves to ITSELF — a
+// self-import that typechecks and leaves every binding undefined at runtime. A move changes what a
+// relative specifier means, and the compiler cannot tell you so.
+import { ftl, type CrackPattern, type Ftl } from '../index'
 
 /** Collections registered in `@/collections` — searchOps ceiling for admin nav fold. */
 export const ADMIN_COLLECTION_SPACE = 210 as const

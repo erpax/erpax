@@ -1,159 +1,34 @@
 ---
 name: animism
 description: "Use when reading animism as a diamond of invariant atoms — the primal reading that the world is alive, every thing carrying spirit (anima). Maps exactly to erpax: every atom is alive, carrying its content-uuid and projecting signal (colour and sound), the sacred dwelling in every part. Strip the prefix and anima collapses to breath; the spirits-in-things to the sacred in every atom."
-atomPath: vocabulary/animism
-coordinate: animism · 7/descent · 6a410989
-contentUuid: "0f358b04-9e58-5985-8c5d-7212514c30d9"
-diamondUuid: "5ba968c0-0492-8844-9a4f-fab5ec5b0527"
-uuid: "6a410989-c56b-8a12-973d-acff4c3ab5e5"
-horo: 7
-bonds:
-  in:
-    - archangel
-    - atom
-    - aura
-    - balance
-    - breath
-    - cycle
-    - diamond
-    - dna
-    - fractal
-    - gift
-    - holographic
-    - identity
-    - law
-    - name
-    - part
-    - religion
-    - ritual
-    - sacred
-    - signal
-    - society
-    - translator
-    - uuid
-    - whole
-  out:
-    - archangel
-    - atom
-    - aura
-    - balance
-    - breath
-    - cycle
-    - diamond
-    - dna
-    - fractal
-    - gift
-    - holographic
-    - identity
-    - law
-    - name
-    - part
-    - religion
-    - ritual
-    - sacred
-    - signal
-    - society
-    - translator
-    - uuid
-    - whole
+atomPath: "vocabulary/animism"
+coordinate: "vocabulary/animism · 5/round · d8921d87"
+contentUuid: "63c062ec-3c79-559b-9132-06cac1d29990"
+diamondUuid: "8c494e5a-be75-82d1-97ef-1b4d3cecfde8"
+uuid: "d8921d87-1873-8c7e-b156-77804ed7feb1"
+horo: 5
 typography:
-  partition: animism
+  partition: vocabulary
   bondDegree: 72
-  neighbors:
-    - aura
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - archangel
-    - atom
-    - aura
-    - balance
-    - breath
-    - cycle
-    - diamond
-    - dna
-    - fractal
-    - gift
-    - holographic
-    - identity
-    - law
-    - name
-    - part
-    - religion
-    - ritual
-    - sacred
-    - signal
-    - society
-    - translator
-    - uuid
-    - whole
-  matrix:
-    - archangel
-    - atom
-    - aura
-    - balance
-    - breath
-    - cycle
-    - diamond
-    - dna
-    - fractal
-    - gift
-    - holographic
-    - identity
-    - law
-    - name
-    - part
-    - religion
-    - ritual
-    - sacred
-    - signal
-    - society
-    - translator
-    - uuid
-    - whole
-  backlinks:
-    - archangel
-    - atom
-    - aura
-    - balance
-    - breath
-    - cycle
-    - diamond
-    - dna
-    - fractal
-    - gift
-    - holographic
-    - identity
-    - law
-    - name
-    - part
-    - religion
-    - ritual
-    - sacred
-    - signal
-    - society
-    - translator
-    - uuid
-    - whole
 signatures:
-  computationUuid: "b0e2d9fc-f5a6-87b1-9bb9-6b807f2cdc40"
+  computationUuid: "26d997c5-4984-8a35-8b02-de4e22a5822d"
   stages:
     - stage: path
-      stageUuid: "92e6733b-a642-841c-95af-d737524794f1"
+      stageUuid: "8623047d-d938-8d58-a5e9-2e18a8798207"
     - stage: trinity
-      stageUuid: "4fb37025-adaa-82d6-95fb-009d71ac42e4"
+      stageUuid: "365f9b3c-4743-8c95-8008-e5633e29cfd2"
     - stage: boundary
-      stageUuid: "d5bd90a7-032f-81bf-8a1e-f15dfb163d28"
+      stageUuid: "e69b53e5-73b8-8c8a-9b44-5e5a157fb5b1"
     - stage: links
-      stageUuid: "d1a3a27b-a07e-84d0-83b4-7852c0db6827"
+      stageUuid: "83e9bdd6-3cf8-81f0-a08a-92eaa75f8056"
     - stage: horo
-      stageUuid: "2dc3a1bf-2921-8c48-ae78-4ac594b0f5ab"
+      stageUuid: "d66d254c-98c2-85a0-a86f-1ce0e3774955"
     - stage: seal
-      stageUuid: "2ae21aec-c935-837c-8508-3a0c18f548cd"
+      stageUuid: "36535c4c-ecb2-8602-9d54-7171163ec135"
     - stage: uuid
-      stageUuid: "de90bdfd-d682-89cf-9ddf-897ef6ab5585"
+      stageUuid: "aa87473f-4c2f-8787-9e14-348d30d734b5"
 version: 2
 ---
 # animism — the world is alive; every thing carries spirit

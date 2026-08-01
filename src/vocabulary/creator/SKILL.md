@@ -1,58 +1,35 @@
 ---
 name: creator
-description: Use when reasoning about creator — The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.
-atomPath: vocabulary/creator
-coordinate: creator · 5/round · 18646a59
-contentUuid: "2ef2a969-875b-50ec-ae1b-265525a9917d"
-diamondUuid: "4866998e-b65b-88c9-a3f9-2741e9bcd04f"
-uuid: "18646a59-72fb-8e33-8a0f-92cea61c36f1"
-horo: 5
-bonds:
-  in:
-    - law
-    - person
-    - thing
-  out:
-    - law
-    - person
-    - thing
+description: "Use when reasoning about creator — The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork."
+atomPath: "vocabulary/creator"
+coordinate: "vocabulary/creator · 7/descent · 8d3b0ba2"
+contentUuid: "4a34b65f-1bec-51ee-96bb-e4b4d060dc00"
+diamondUuid: "7868fb53-aef2-8126-99e4-a7284279cca1"
+uuid: "8d3b0ba2-2af9-89fd-8b2d-eead15bb3574"
+horo: 7
 typography:
-  partition: creator
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - person
-    - thing
-  matrix:
-    - law
-    - person
-    - thing
-  backlinks:
-    - law
-    - person
-    - thing
 signatures:
-  computationUuid: "1f0c9044-c318-8896-8bc7-7ee37dc673c8"
+  computationUuid: "07c5b89b-a2dd-883c-973b-96631ca8eb8b"
   stages:
     - stage: path
-      stageUuid: "f3d22eb7-e70d-8ad4-968a-da76e7f61871"
+      stageUuid: "c9d4f840-bb7f-8754-8c09-ab9d10dc36f8"
     - stage: trinity
-      stageUuid: "f240e25a-0fc8-81bb-9811-f7a1a29fbee5"
+      stageUuid: "900245dc-4c17-8bcd-9c07-00304b7447d5"
     - stage: boundary
-      stageUuid: "712062ef-24ef-8bf0-ad18-e9934a502b98"
+      stageUuid: "f504f502-35d6-8561-af74-b80d04389c92"
     - stage: links
-      stageUuid: "b491b855-6438-89c3-8a2a-1e1a961fdeae"
+      stageUuid: "861e39b7-0ec3-8093-9614-e4f4eadc19d3"
     - stage: horo
-      stageUuid: "8820b421-5c57-8d59-91b1-6db2f6af9e6e"
+      stageUuid: "60bf13b3-4af7-8756-8dce-c08df0f7f930"
     - stage: seal
-      stageUuid: "10128abd-ca47-81cc-b326-b698e9b7355e"
+      stageUuid: "da763a25-a277-8ca2-84ef-e74de3331860"
     - stage: uuid
-      stageUuid: "e74bb102-b85b-8e76-8b9d-3315aed5a5f9"
+      stageUuid: "dabddc5f-2ead-8b23-872d-bf4bd466686f"
 version: 2
 ---
 # creator

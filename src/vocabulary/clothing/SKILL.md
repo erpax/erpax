@@ -1,73 +1,35 @@
 ---
 name: clothing
 description: "Use when reasoning about clothing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/clothing
-coordinate: clothing · 7/descent · 4062d871
-contentUuid: "367a2e2e-33ca-53e6-8d0b-bb0b313dee18"
-diamondUuid: "620b5bf9-f1f9-81b5-91ce-b3211ecabb73"
-uuid: "4062d871-fddf-8bcb-9d0a-9a8d2b430fdc"
+atomPath: "vocabulary/clothing"
+coordinate: "vocabulary/clothing · 7/descent · cb4e0d2a"
+contentUuid: "61cca6f9-8e48-518f-aaf5-6c856ed87425"
+diamondUuid: "edc5b475-57ab-8642-943c-1a0006c140c2"
+uuid: "cb4e0d2a-cc76-851f-946b-57642f9935a1"
 horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - mens
-    - merge
-    - sti
-    - store
-  out:
-    - collapse
-    - law
-    - mens
-    - merge
-    - sti
-    - store
 typography:
-  partition: clothing
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - mens
-    - merge
-    - sti
-    - store
-  matrix:
-    - collapse
-    - law
-    - mens
-    - merge
-    - sti
-    - store
-  backlinks:
-    - collapse
-    - law
-    - mens
-    - merge
-    - sti
-    - store
 signatures:
-  computationUuid: "c90fe1d3-eef7-8712-ba12-20e68db70b48"
+  computationUuid: "8c7699ac-3a27-8e45-a432-619c526d81de"
   stages:
     - stage: path
-      stageUuid: "1d809eb6-31e4-85f7-8bff-bb3a9f21cd82"
+      stageUuid: "1a98bccc-455f-82fe-a9fc-5ae1e7f46cf1"
     - stage: trinity
-      stageUuid: "cc42d029-ff72-87bf-a636-a603f68d05d0"
+      stageUuid: "cfb70849-fc69-8954-a651-cff2544155c0"
     - stage: boundary
-      stageUuid: "e1bb8c55-b738-878e-8b51-5f8ee0924daf"
+      stageUuid: "fd85c150-2007-894b-9336-4b4c4cad467f"
     - stage: links
-      stageUuid: "30626b60-c9a0-85b0-a2bb-e8f6394bcadb"
+      stageUuid: "699aeff3-0728-8d2c-97b9-cb53722883d2"
     - stage: horo
-      stageUuid: "54456c6d-a022-89ec-8a94-c7ea058c03ad"
+      stageUuid: "e1eb7a11-dcea-8bc7-908c-ee8cd1512d67"
     - stage: seal
-      stageUuid: "911b31ea-17ad-885d-aab9-05691691ec16"
+      stageUuid: "9692fa38-4d49-8187-bbdb-16467b7fa657"
     - stage: uuid
-      stageUuid: "7898c76f-cbbc-8335-97a5-c5896b5c56a6"
+      stageUuid: "95592583-a50d-878d-b13e-f7b8bad9d532"
 version: 2
 ---
 # clothing

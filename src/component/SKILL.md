@@ -2,119 +2,19 @@
 name: component
 description: "Use when defining a reusable UI building block — button, card, modal, form field, input. The atomic UI element with consistent design, behavior, and accessibility."
 atomPath: component
-coordinate: "component · 8/crest · f99c710b"
-contentUuid: "395b550b-0cb6-5512-b2d1-32b5fdef15f7"
-diamondUuid: "02f2f12d-1b1a-82de-bdd4-7b62f44c2039"
-uuid: "f99c710b-7d6f-8488-92b8-5f7e55dec488"
-horo: 8
-bonds:
-  in:
-    - accessibility
-    - archive
-    - atom
-    - component
-    - components
-    - computer
-    - css
-    - design
-    - diamond
-    - enumeration
-    - interactive
-    - law
-    - pixel
-    - price
-    - primitive
-    - render
-    - standard
-    - theme
-    - token
-    - ui
-    - uuid
-  out:
-    - accessibility
-    - archive
-    - atom
-    - component
-    - components
-    - computer
-    - css
-    - design
-    - diamond
-    - enumeration
-    - interactive
-    - law
-    - pixel
-    - price
-    - primitive
-    - render
-    - standard
-    - theme
-    - token
-    - ui
-    - uuid
+coordinate: "component · 2/share · 30048856"
+contentUuid: "1a1af0f3-6c41-5141-84e4-2309e38a0eb1"
+diamondUuid: "2c27e29f-8d19-80d1-804f-a4594c5ec228"
+uuid: "30048856-5cab-84e2-b955-33a8e221d73f"
+horo: 2
 typography:
   partition: component
   bondDegree: 70
-  neighbors: []
 standards:
   - "WAI-ARIA semantics on a render whose identity is the content-uuid"
 bindings: []
-neighbors:
-  wikilink:
-    - accessibility
-    - atom
-    - design
-    - law
-    - pixel
-    - standard
-    - theme
-    - uuid
-  matrix:
-    - accessibility
-    - archive
-    - atom
-    - component
-    - components
-    - computer
-    - css
-    - design
-    - diamond
-    - enumeration
-    - interactive
-    - law
-    - pixel
-    - price
-    - primitive
-    - render
-    - standard
-    - theme
-    - token
-    - ui
-    - uuid
-  backlinks:
-    - accessibility
-    - archive
-    - atom
-    - component
-    - components
-    - computer
-    - css
-    - design
-    - diamond
-    - enumeration
-    - interactive
-    - law
-    - pixel
-    - price
-    - primitive
-    - render
-    - standard
-    - theme
-    - token
-    - ui
-    - uuid
 signatures:
-  computationUuid: "31352eed-2e5c-884c-aa65-1fa5d2a91723"
+  computationUuid: "ed116dde-d0ef-81c3-bdcd-3ed4d4a04e5c"
   stages:
     - stage: path
       stageUuid: "e1ef97d9-1bf4-8d59-8c82-0fce0f7ed3bc"
@@ -123,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "00aaccec-5721-8eff-8530-13776fbfcffb"
     - stage: links
-      stageUuid: "efeb6f55-ad7d-88f5-97f4-e901a41620ed"
+      stageUuid: "f8b1c5fe-f546-8e2b-bced-1dca1e60f051"
     - stage: horo
-      stageUuid: "f55bfe34-d893-8eb9-b643-3ff5f24fc997"
+      stageUuid: "853c2009-fef2-8040-a89a-a9953dc7c765"
     - stage: seal
       stageUuid: "b3c3e737-d41d-8e21-a31c-0d5ed14fec00"
     - stage: uuid
-      stageUuid: "6f612c9a-9938-8867-a7d1-57512004faac"
+      stageUuid: "bca2a16b-1afa-878d-9003-0a3804ce9760"
 version: 2
 ---
 # component

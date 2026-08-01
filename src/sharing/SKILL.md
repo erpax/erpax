@@ -2,67 +2,19 @@
 name: sharing
 description: "Use when reasoning about sharing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: sharing
-coordinate: sharing · 2/share · 65f5f2ff
-contentUuid: "95ffbc41-bcd8-5ba7-ae6e-f6eaee977409"
-diamondUuid: "6ad2c42c-25f7-8389-89ed-1be617b9d74c"
-uuid: "65f5f2ff-1768-8400-850b-18b0f2d09a81"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - cost
-    - health
-    - law
-    - merge
-    - plan
-    - specification
-    - sti
-  out:
-    - collapse
-    - cost
-    - health
-    - law
-    - merge
-    - plan
-    - specification
-    - sti
+coordinate: "sharing · 7/descent · 89a77e29"
+contentUuid: "5209ce71-a4a9-5fff-a811-e64e392136c5"
+diamondUuid: "40097720-395c-86bc-91be-06cb0d43da5d"
+uuid: "89a77e29-2e4f-87db-bcda-c728c8769e03"
+horo: 7
 typography:
   partition: sharing
   bondDegree: 26
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - cost
-    - health
-    - law
-    - merge
-    - plan
-    - specification
-    - sti
-  matrix:
-    - collapse
-    - cost
-    - health
-    - law
-    - merge
-    - plan
-    - specification
-    - sti
-  backlinks:
-    - collapse
-    - cost
-    - health
-    - law
-    - merge
-    - plan
-    - specification
-    - sti
 signatures:
-  computationUuid: "ed99dede-4f2c-8c66-90af-ad9357e087a4"
+  computationUuid: "89744fdf-2272-8d37-bce2-d0c66f334659"
   stages:
     - stage: path
       stageUuid: "a48220ce-a4b9-878c-b5c2-a10e59ed6fee"
@@ -73,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2421d24c-ba4b-836c-bc3f-1d48216db948"
     - stage: horo
-      stageUuid: "0ef85519-7155-8449-be90-08d75c634434"
+      stageUuid: "d9057846-8833-8c22-97e2-c2f7d8f11298"
     - stage: seal
-      stageUuid: "ae10d4b6-f37a-817f-b1d0-b9ec35fd4c6a"
+      stageUuid: "94f77049-c201-89c0-9ce1-91664fb9857d"
     - stage: uuid
-      stageUuid: "e29dec73-c9de-80f5-9fb9-170dbac3baad"
+      stageUuid: "dd1063db-e737-8e71-ac2a-3a6f1f1247ab"
 version: 2
 ---
 # sharing

@@ -2,75 +2,19 @@
 name: named
 description: "Use when reasoning about how an atom is addressed — the convention that every SKILL.md frontmatter name equals its folder leaf word (the name IS the path), measured live as coverage = matching / total over the real corpus tree."
 atomPath: "convention/named"
-coordinate: "convention/named · 5/round · a226273b"
-contentUuid: "5e1cbb96-4feb-5c91-aa2f-c6aedd20c3f7"
-diamondUuid: "024fe2d1-673f-8326-b9d4-19b02068da61"
-uuid: "a226273b-a101-8c37-b288-de2a621dbddc"
+coordinate: "convention/named · 5/round · 55f97f1e"
+contentUuid: "24265a8d-1ded-5132-ada9-c3713f023d6b"
+diamondUuid: "f9d32ef5-5f81-8432-9587-28b22e846e31"
+uuid: "55f97f1e-ef33-8a05-8b91-28f1c070bfa3"
 horo: 5
-bonds:
-  in:
-    - akashic
-    - collapse
-    - complete
-    - convention
-    - cost
-    - exported
-    - fronted
-    - law
-    - lawful
-    - merge
-  out:
-    - akashic
-    - collapse
-    - complete
-    - convention
-    - cost
-    - exported
-    - fronted
-    - law
-    - lawful
-    - merge
 typography:
   partition: convention
   bondDegree: 36
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - akashic
-    - collapse
-    - complete
-    - cost
-    - fronted
-    - law
-    - lawful
-    - merge
-  matrix:
-    - akashic
-    - collapse
-    - complete
-    - convention
-    - cost
-    - exported
-    - fronted
-    - law
-    - lawful
-    - merge
-  backlinks:
-    - akashic
-    - collapse
-    - complete
-    - convention
-    - cost
-    - exported
-    - fronted
-    - law
-    - lawful
-    - merge
 signatures:
-  computationUuid: "a8fd533d-f299-8bfe-8d06-6227381055d0"
+  computationUuid: "7956ff20-24fe-868f-ac49-fb5f56c03273"
   stages:
     - stage: path
       stageUuid: "2a80a10f-dd23-8d7b-9477-2c7ca12044b9"
@@ -81,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2e5d4db3-9fd5-8316-aada-a6fda667a953"
     - stage: horo
-      stageUuid: "129b3c06-56c0-8cca-a2b1-a87811fb51ea"
+      stageUuid: "65acffe6-5ae7-8b64-9e61-133222bc47ce"
     - stage: seal
       stageUuid: "47367ae6-ff50-85a1-a42f-49e926fe7cf3"
     - stage: uuid
-      stageUuid: "0f1df7b2-7f0d-83b0-950f-d343a28a2885"
+      stageUuid: "69f4ab10-01c7-8a16-8276-8cacc082d0bc"
 version: 2
 ---
 # convention/named — the name is the path

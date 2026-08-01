@@ -2,41 +2,19 @@
 name: vessel
 description: Use when reasoning about vessel — A component of the human body circulatory system comprised of an intricate network of hollow tubes that transport blood throughout the entire body.
 atomPath: vessel
-coordinate: vessel · 5/round · 6ea5bed3
-contentUuid: "172b4d0f-7896-590c-b5ed-cc74510b8cfa"
-diamondUuid: "0d204235-97e2-8167-ad1f-c1d2b85c6065"
-uuid: "6ea5bed3-a758-87df-a806-756ba9ee2807"
+coordinate: "vessel · 5/round · c20d4df0"
+contentUuid: "1a7e444a-d64c-5e2e-a212-fafbd9940ed6"
+diamondUuid: "1f053a3c-8139-89f2-b96a-7880a5bdd9db"
+uuid: "c20d4df0-c239-808d-b34e-f6f4e240467a"
 horo: 5
-bonds:
-  in:
-    - law
-    - lymphatic
-    - marine
-  out:
-    - law
-    - lymphatic
-    - marine
 typography:
   partition: vessel
   bondDegree: 10
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - lymphatic
-  matrix:
-    - law
-    - lymphatic
-    - marine
-  backlinks:
-    - law
-    - lymphatic
-    - marine
 signatures:
-  computationUuid: "c774c62d-2eca-877b-962e-53d3da9913f2"
+  computationUuid: "bbebd6e8-e104-847d-bcaa-36770166704d"
   stages:
     - stage: path
       stageUuid: "d67d0e0b-7904-8f84-b071-377ba9c2977c"
@@ -47,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "42ad67b9-b94f-8c55-b64e-75c87b71d831"
     - stage: horo
-      stageUuid: "471d2555-186a-8793-a230-988d06527b83"
+      stageUuid: "0d9254fe-d9de-82d9-a074-759a701c4533"
     - stage: seal
-      stageUuid: "63b74495-5de8-8bd3-9561-8b9140321e31"
+      stageUuid: "bbcf3831-cd22-80b5-b36f-c9b8a98e8c4e"
     - stage: uuid
-      stageUuid: "427383b1-42a4-89d0-9f7a-6d22822608ca"
+      stageUuid: "bb2de1fb-011e-81fc-bc20-31167a1a6f5b"
 version: 2
 ---
 # vessel

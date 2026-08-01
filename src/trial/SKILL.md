@@ -2,57 +2,19 @@
 name: trial
 description: "Use when reasoning about trial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: trial
-coordinate: trial · 7/descent · f8c4f95f
-contentUuid: "7c424ea6-d20a-5076-8658-98e08bbe92e9"
-diamondUuid: "fb9ccdaa-e385-80b6-8089-891eae2b9eaa"
-uuid: "f8c4f95f-7934-82ee-bea9-fcaeba7c7c72"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - design
-    - law
-    - medical
-    - merge
-    - sti
-  out:
-    - collapse
-    - design
-    - law
-    - medical
-    - merge
-    - sti
+coordinate: "trial · 1/base · 59316043"
+contentUuid: "356665d9-fca3-5197-a0c2-ba8ad79f8317"
+diamondUuid: "f9e51d9b-d3c7-891d-b135-190d19091286"
+uuid: "59316043-24ce-85bb-ae37-519f51c22194"
+horo: 1
 typography:
   partition: trial
-  bondDegree: 18
-  neighbors: []
+  bondDegree: 25
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - design
-    - law
-    - medical
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - design
-    - law
-    - medical
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - design
-    - law
-    - medical
-    - merge
-    - sti
 signatures:
-  computationUuid: "8eca6805-331b-8129-b84b-7a8b8ae586bc"
+  computationUuid: "accd9358-deae-8ca6-b213-4b0827947d30"
   stages:
     - stage: path
       stageUuid: "e68e140b-7bc4-80ab-ae01-0389a60717da"
@@ -63,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "48368faf-6429-8734-9754-c01a371273f9"
     - stage: horo
-      stageUuid: "a9a93b10-bef2-8cf3-a4e8-660cbcd79e77"
+      stageUuid: "3a854e54-2b2f-8e8d-975f-4287e7b3a452"
     - stage: seal
-      stageUuid: "313f3ec0-513d-89c4-b009-92b34051f315"
+      stageUuid: "47d742ee-aca1-80d8-9c06-880ab20724d2"
     - stage: uuid
-      stageUuid: "d9f097f9-f52a-87eb-89e9-0802cd9ce27a"
+      stageUuid: "feba73e1-8ba9-892c-a081-938b30a28c9c"
 version: 2
 ---
 # trial

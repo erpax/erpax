@@ -1,53 +1,35 @@
 ---
 name: contained
 description: Use when reasoning about contained — The basic containment relation between a place and one that contains it.
-atomPath: vocabulary/contained
-coordinate: contained · 7/descent · 15943c8b
-contentUuid: "fe671411-3000-5074-8ed3-a2cc03573b12"
-diamondUuid: "3fd572e7-5d34-823f-bde7-563fce40816f"
-uuid: "15943c8b-e1ca-837e-8884-5114d865daf4"
-horo: 7
-bonds:
-  in:
-    - law
-    - place
-  out:
-    - law
-    - place
+atomPath: "vocabulary/contained"
+coordinate: "vocabulary/contained · 4/weave · 9ad1130c"
+contentUuid: "e94a1767-61f3-509c-a31b-869026700570"
+diamondUuid: "bcfaf2a8-9630-86e5-af15-d3206ef6a1b0"
+uuid: "9ad1130c-f32e-888c-9f77-3bd6d8b00167"
+horo: 4
 typography:
-  partition: contained
+  partition: vocabulary
   bondDegree: 7
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - place
-  matrix:
-    - law
-    - place
-  backlinks:
-    - law
-    - place
 signatures:
-  computationUuid: "eed56a1c-d01a-84cd-b2d2-9c902f47d879"
+  computationUuid: "c815dbbb-71b3-8af7-95bc-8821952186d0"
   stages:
     - stage: path
-      stageUuid: "39f8eceb-2223-8ee5-890e-798f6a9cc701"
+      stageUuid: "56a29866-af5e-8251-bf39-683e298c9a03"
     - stage: trinity
-      stageUuid: "33bd370b-54b5-8f92-8bf0-75e0c3dbd0aa"
+      stageUuid: "79f25ec8-ffbf-825b-83f8-24336b646e4b"
     - stage: boundary
-      stageUuid: "7297db3f-0bea-84ec-8300-b2e543607f96"
+      stageUuid: "54888266-f5e7-8aad-b026-238e4d96529f"
     - stage: links
-      stageUuid: "fb461b0c-0b54-8358-83dc-3115ef8068f4"
+      stageUuid: "e4163717-e96a-84bf-8fb0-2b8dcb987fa1"
     - stage: horo
-      stageUuid: "f8af0ba0-2aba-8538-bab9-7ae61c902763"
+      stageUuid: "539494a6-a55d-8695-9321-83aa4c12c415"
     - stage: seal
-      stageUuid: "f245c251-dea6-8bfc-96ca-dca15ed1c5c1"
+      stageUuid: "84aad602-5862-8fc4-b2aa-a8cfddf128c0"
     - stage: uuid
-      stageUuid: "2da4dfc1-88de-85a8-9a4a-9608ba640747"
+      stageUuid: "96fb72b3-eb61-8c78-b1c2-f46277615ab7"
 version: 2
 ---
 # contained

@@ -1,66 +1,34 @@
 ---
 name: asset
 description: Use when modelling one asset — the singular model of the assets collection (the plural store); a resource the organization owns or controls that carries economic value.
-atomPath: vocabulary/asset
-coordinate: asset · 2/share · e264acbe
-contentUuid: "384fca3c-04ee-53b0-8831-a85de73c4270"
-diamondUuid: "24affd62-6d37-80a6-b142-ac589935880b"
-uuid: "e264acbe-4350-8a36-901d-916c0330525f"
-horo: 2
-bonds:
-  in:
-    - accounting
-    - assets
-    - balance
-    - law
-    - readme
-  out:
-    - accounting
-    - assets
-    - balance
-    - law
-    - readme
+atomPath: "vocabulary/asset"
+coordinate: "vocabulary/asset · 4/weave · c07ff47c"
+contentUuid: "f28bc553-3e7c-5afb-b329-e90c58175bca"
+diamondUuid: "6916bc06-8c26-8c6b-9493-eab67aca76ad"
+uuid: "c07ff47c-fdde-85aa-aa59-10662be4547f"
+horo: 4
 typography:
-  partition: asset
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - assets
-    - balance
-    - law
-  matrix:
-    - accounting
-    - assets
-    - balance
-    - law
-    - readme
-  backlinks:
-    - accounting
-    - assets
-    - balance
-    - law
-    - readme
 signatures:
-  computationUuid: "00783c71-61b3-8f97-ab95-825e5c9e2e05"
+  computationUuid: "8eef919a-1a72-8ff6-9e47-7a48a0e00ee8"
   stages:
     - stage: path
-      stageUuid: "2037b2cf-965e-8d35-b4ad-ff95bbfe25e1"
+      stageUuid: "7e0cea3d-4858-8b6f-aed9-444ebda5cf32"
     - stage: trinity
-      stageUuid: "230fe776-38ae-8e88-bcc9-d67044bebf15"
+      stageUuid: "55b7188a-d681-80f2-851c-dc9f47cc4da9"
     - stage: boundary
-      stageUuid: "7ffacbd4-2cd9-8185-b2fb-32c819036f1c"
+      stageUuid: "2b22e31a-040f-8e35-94e3-196a4f29ab64"
     - stage: links
-      stageUuid: "f34ea957-8370-80e6-a6c7-ce917e354a9c"
+      stageUuid: "ec990b0b-0972-8d9e-a2b0-0e95094052d8"
     - stage: horo
-      stageUuid: "ca9cf1c4-212a-8423-9bca-ddd2a6a95e86"
+      stageUuid: "05d69418-91b6-8bd7-b484-38fe5d1fb7fd"
     - stage: seal
-      stageUuid: "88152fd8-d452-8020-bc56-16efcb9083b4"
+      stageUuid: "cdbd8d60-bc5a-8a05-81c3-8595f3654528"
     - stage: uuid
-      stageUuid: "83be88b2-66fe-8ac3-afd7-496aea68f662"
+      stageUuid: "ecd62eae-3b88-8e61-82fe-0df4792bd68a"
 version: 2
 ---
 # asset — the model of one [[assets]] row

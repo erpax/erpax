@@ -2,41 +2,16 @@
 name: models
 description: "Use when registering, routing, or auditing the AI model fallback catalog — provider/capability/tier per model, EU AI Act risk class, EU-hostable flag for data-residency, feature-guarded dispatch. The admin-editable expert-catalog the router dispatches over when the deterministic core cannot decide alone."
 atomPath: "ai/models"
-coordinate: "ai/models · 7/descent · 6b507ae3"
-contentUuid: "7b2af127-f0b8-5cf3-88d3-eaa5a8dbab84"
-diamondUuid: "17570577-6aa8-8086-a872-c05be0fcd616"
-uuid: "6b507ae3-9f9b-8eb8-a017-f6355492c2e8"
-horo: 7
-bonds:
-  in:
-    - access
-    - ai
-    - fields
-    - hooks
-    - identity
-    - law
-    - self
-    - standard
-    - suggestions
-  out:
-    - access
-    - ai
-    - fields
-    - hooks
-    - identity
-    - law
-    - self
-    - standard
-    - suggestions
+coordinate: "ai/models · 5/round · 0a8c80b6"
+contentUuid: "ca0c2024-a1a1-5093-8d43-d7014b8db76c"
+diamondUuid: "33d34e24-a606-867e-ad95-a2b7a2b1c38b"
+uuid: "0a8c80b6-3a8d-8173-86fe-1503c911ee52"
+horo: 5
 typography:
   partition: ai
-  bondDegree: 27
-  neighbors: []
+  bondDegree: 9
 standards:
   - "EU AI Act 2024 risk-classification + transparency"
-  - "EU-2024/1183"
-  - "EU-2024/1620"
-  - "EU-2024/1624"
   - "EU-AI-Act"
   - "EU-CSDDD-2024/1760"
   - "GDPR data-residency (`euHostable` — EU PoPs for EU tenants)"
@@ -46,39 +21,8 @@ standards:
   - "SOX §404 internal-controls"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - ai
-    - fields
-    - hooks
-    - identity
-    - law
-    - self
-    - standard
-    - suggestions
-  matrix:
-    - access
-    - ai
-    - fields
-    - hooks
-    - identity
-    - law
-    - self
-    - standard
-    - suggestions
-  backlinks:
-    - access
-    - ai
-    - fields
-    - hooks
-    - identity
-    - law
-    - self
-    - standard
-    - suggestions
 signatures:
-  computationUuid: "540b071f-01d7-845d-8c36-5c5aff2855de"
+  computationUuid: "23bbdc96-98fa-8f66-af8e-c88007c69537"
   stages:
     - stage: path
       stageUuid: "e78584f2-055b-8136-92e8-38ff817ccfff"
@@ -87,13 +31,13 @@ signatures:
     - stage: boundary
       stageUuid: "f207f784-6acc-88e2-9e19-76fe61705037"
     - stage: links
-      stageUuid: "211843b7-f577-8a87-8c0f-63187698184e"
+      stageUuid: "8dda6397-d63f-8232-9d52-22a1f0293de5"
     - stage: horo
-      stageUuid: "dbb20fbd-f0db-8247-b113-a7c8f0640bf9"
+      stageUuid: "02c7a535-07d9-8d32-9a79-8c599d541b5f"
     - stage: seal
       stageUuid: "fe7a8370-28bb-8d23-9e5b-df34a5b131b6"
     - stage: uuid
-      stageUuid: "64daf0e2-6810-821e-8299-2175776e58d5"
+      stageUuid: "f092a6f6-b17b-895c-ab08-20964b3ea5f4"
 version: 2
 ---
 # ai-models

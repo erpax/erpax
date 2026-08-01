@@ -1,73 +1,35 @@
 ---
 name: performance
 description: "Use when reasoning about performance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/performance
-coordinate: performance · 4/weave · 33318e66
-contentUuid: "ff584b54-2785-5e42-99b4-31c998a88f25"
-diamondUuid: "e4d067b0-992b-874c-aba6-22a43fa92ae8"
-uuid: "33318e66-fce0-897a-a8ed-d70780a4e80a"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - first
-    - law
-    - merge
-    - role
-    - sti
-  out:
-    - collapse
-    - first
-    - law
-    - merge
-    - role
-    - sti
+atomPath: "vocabulary/performance"
+coordinate: "vocabulary/performance · 8/crest · f4aa7743"
+contentUuid: "b6dd44e5-305a-5c7e-a770-26bb79a51544"
+diamondUuid: "5d4daf50-cdc9-8ebb-9713-41455f64364d"
+uuid: "f4aa7743-620d-80e0-92e7-8fb6be4e9acc"
+horo: 8
 typography:
-  partition: performance
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - first
-    - law
-    - merge
-    - role
-    - sti
-  matrix:
-    - collapse
-    - first
-    - law
-    - merge
-    - role
-    - sti
-  backlinks:
-    - collapse
-    - first
-    - law
-    - merge
-    - role
-    - sti
 signatures:
-  computationUuid: "77dd8452-34b7-85fd-9429-7f4a23a00b6c"
+  computationUuid: "70aa7095-26a9-8ead-8250-090f01489180"
   stages:
     - stage: path
-      stageUuid: "b4facb67-e4b2-89d1-8780-141ecb4234fa"
+      stageUuid: "f555d3d4-abe7-8e2f-81d1-5cf4a765790a"
     - stage: trinity
-      stageUuid: "97ef8cc2-4b2a-8f49-bfd9-aa6d685b1eee"
+      stageUuid: "4c0c0dec-9107-8108-86fa-f55604764d05"
     - stage: boundary
-      stageUuid: "1b34749a-340b-853b-82a1-78e5546b6a4d"
+      stageUuid: "815ccc7b-1b39-8815-9e7b-515e0466617c"
     - stage: links
-      stageUuid: "573edf37-a08a-8485-875b-e522ce6d4728"
+      stageUuid: "6a7eb004-42d9-8501-a8a9-bb77503e1a01"
     - stage: horo
-      stageUuid: "7e40f0e9-b54a-828a-9fe2-25516850dd50"
+      stageUuid: "57d02ee0-cad9-81db-8f1b-c6ab1a4cd107"
     - stage: seal
-      stageUuid: "6559f0be-1052-865e-bd13-85e1a84d3ec6"
+      stageUuid: "59da9543-34f8-872e-8af0-85a5dd0ed9b3"
     - stage: uuid
-      stageUuid: "57323bf9-a653-882b-adc3-13b7a84449dc"
+      stageUuid: "caecf0c2-f837-800c-9be6-b65a8572f7af"
 version: 2
 ---
 # performance

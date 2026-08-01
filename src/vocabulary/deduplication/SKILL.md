@@ -1,71 +1,34 @@
 ---
 name: deduplication
 description: "Use when eliminating duplicate records — duplicate detection (exact/fuzzy), merge strategies, idempotency to prevent re-ingestion, duplicate scope (entity/transaction/field-level), dedup window/time-range."
-atomPath: vocabulary/deduplication
-coordinate: deduplication · 8/crest · 315576bc
-contentUuid: "0e5c018b-0368-557e-8b3c-0ab8f056c6c0"
-diamondUuid: "200c3cb8-fe8f-840c-b1a5-efa8730b7b20"
-uuid: "315576bc-dd88-81df-aed1-c36281178076"
-horo: 8
-bonds:
-  in:
-    - idempotency
-    - identity
-    - ingest
-    - merge
-    - reconcile
-    - sparsity
-  out:
-    - idempotency
-    - identity
-    - ingest
-    - merge
-    - reconcile
-    - sparsity
+atomPath: "vocabulary/deduplication"
+coordinate: "vocabulary/deduplication · 2/share · 3029e688"
+contentUuid: "56e291c6-4567-5c84-9134-c8ea2de1be9d"
+diamondUuid: "00e0184c-0a61-8631-82f8-02a0931d431a"
+uuid: "3029e688-8102-848e-b0d4-9971e9ff0c5d"
+horo: 2
 typography:
-  partition: deduplication
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - idempotency
-    - identity
-    - ingest
-    - merge
-    - reconcile
-  matrix:
-    - idempotency
-    - identity
-    - ingest
-    - merge
-    - reconcile
-    - sparsity
-  backlinks:
-    - idempotency
-    - identity
-    - ingest
-    - merge
-    - reconcile
-    - sparsity
 signatures:
-  computationUuid: "da442dfa-45f8-8152-9afa-973bb95dff42"
+  computationUuid: "c1be7223-7a9d-8241-a613-d6c865babc4d"
   stages:
     - stage: path
-      stageUuid: "28b1cd68-b067-87a3-84cd-6c03d601d7b7"
+      stageUuid: "838ff753-b85c-807d-a761-e1cd4dcbc1f5"
     - stage: trinity
-      stageUuid: "c6fb24e8-24af-8e5a-ad2a-24447227e3a8"
+      stageUuid: "d68048b7-7451-8e0a-be8a-686dd7675085"
     - stage: boundary
-      stageUuid: "83b3a526-5d0c-851d-992f-8362c7094ea9"
+      stageUuid: "2995e7d3-6ffb-8efc-9153-cb74a15f7b5d"
     - stage: links
-      stageUuid: "8f1ffa19-03c3-8fb5-a83c-85a54274e76b"
+      stageUuid: "4e7f5096-014b-82f8-ab6d-79a20f4a8c5a"
     - stage: horo
-      stageUuid: "3a74f112-55fd-8ee5-9c99-62349b1029cb"
+      stageUuid: "a9079519-e414-8e01-beca-93aeb67b1433"
     - stage: seal
-      stageUuid: "a8009d05-c332-83ee-b34f-dcb5469c385c"
+      stageUuid: "dce388af-64d3-8018-9abd-a879ef4709e9"
     - stage: uuid
-      stageUuid: "8b2cd42b-18b1-8367-90fc-4991564e99b0"
+      stageUuid: "876ce08d-1654-8484-a884-8ccbafca248c"
 version: 2
 ---
 # deduplication

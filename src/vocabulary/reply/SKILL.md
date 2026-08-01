@@ -1,73 +1,35 @@
 ---
 name: reply
 description: "Use when reasoning about reply as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/reply
-coordinate: reply · 7/descent · a1ac0a18
-contentUuid: "e828df0c-b47d-552b-a565-530b2c2d6cef"
-diamondUuid: "5047c7fc-d6b7-85ad-9293-b26e20284dde"
-uuid: "a1ac0a18-8362-81bf-b41a-1d0a841bb4be"
+atomPath: "vocabulary/reply"
+coordinate: "vocabulary/reply · 7/descent · b4a31faa"
+contentUuid: "032f0044-ba45-5c7e-b3b8-0c7fad0188f2"
+diamondUuid: "dd945d1b-04fa-8d64-80f6-3cc5566ab1b7"
+uuid: "b4a31faa-aa6d-8acd-a87d-41662ecc9a98"
 horo: 7
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-    - url
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-    - url
 typography:
-  partition: reply
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-    - url
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-    - url
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-    - url
 signatures:
-  computationUuid: "ae759283-1e71-80e6-93d7-1ac9d0249a3d"
+  computationUuid: "bbfe80d3-1b64-82be-801c-cfdf38658302"
   stages:
     - stage: path
-      stageUuid: "1b0a973d-61cb-8d61-9cd3-588617f35c3e"
+      stageUuid: "2462fe50-0d6f-8694-8e18-7cb7b64dcf47"
     - stage: trinity
-      stageUuid: "707ac850-861d-8aa4-b59d-4813489ea981"
+      stageUuid: "3a7d5d1e-5c97-892b-965a-26322691846c"
     - stage: boundary
-      stageUuid: "23b8d6c9-3c86-8c6e-ac20-f580961308a5"
+      stageUuid: "bf326d67-141b-8c6e-a2a6-454fea1f1abe"
     - stage: links
-      stageUuid: "ec515bb7-5148-8b06-b8b1-55051181072e"
+      stageUuid: "03f52923-d6e4-85b6-b39a-04c7a8ddbb80"
     - stage: horo
-      stageUuid: "6263dc0d-fc2c-85c8-80d5-c6db736aca8c"
+      stageUuid: "2459b271-628f-8d80-a64e-62ea0029d22b"
     - stage: seal
-      stageUuid: "d43b3e61-78b0-8be0-98e1-5e2db54b1d45"
+      stageUuid: "e6bc0330-210d-8f5d-b9e8-943a25094f9d"
     - stage: uuid
-      stageUuid: "c6473ad8-3f31-8a81-b7d6-2e55e643d567"
+      stageUuid: "d780ddbb-1742-8d9f-9b30-18a8076906dd"
 version: 2
 ---
 # reply

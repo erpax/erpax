@@ -2,157 +2,19 @@
 name: shipping
 description: "Use when reasoning about shipping as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: shipping
-coordinate: shipping · 8/crest · 8e262c4d
-contentUuid: "8299e6f3-609a-59f9-8039-a5772a4c2db6"
-diamondUuid: "0f96066a-198f-8d0e-b0e0-838f913db659"
-uuid: "8e262c4d-c620-8b92-9988-22fcc7b6a756"
-horo: 8
-bonds:
-  in:
-    - amount
-    - collapse
-    - conditions
-    - customer
-    - defect
-    - delivery
-    - destination
-    - details
-    - fees
-    - free
-    - has
-    - item
-    - label
-    - law
-    - link
-    - merge
-    - offer
-    - origin
-    - rate
-    - remorse
-    - return
-    - service
-    - settings
-    - sti
-    - threshold
-    - time
-  out:
-    - amount
-    - collapse
-    - conditions
-    - customer
-    - defect
-    - delivery
-    - destination
-    - details
-    - fees
-    - free
-    - has
-    - item
-    - label
-    - law
-    - link
-    - merge
-    - offer
-    - origin
-    - rate
-    - remorse
-    - return
-    - service
-    - settings
-    - sti
-    - threshold
-    - time
+coordinate: "shipping · 7/descent · d3af9122"
+contentUuid: "9478ef97-0381-5cc1-bb34-978d3607a6bb"
+diamondUuid: "5babacb4-4ac5-829c-a9c1-b21e0d307d02"
+uuid: "d3af9122-ee50-8ec2-a28f-0ba67a78ca37"
+horo: 7
 typography:
   partition: shipping
   bondDegree: 95
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - amount
-    - collapse
-    - conditions
-    - customer
-    - defect
-    - delivery
-    - destination
-    - details
-    - fees
-    - free
-    - has
-    - item
-    - label
-    - law
-    - link
-    - merge
-    - offer
-    - origin
-    - rate
-    - remorse
-    - return
-    - service
-    - settings
-    - sti
-    - threshold
-    - time
-  matrix:
-    - amount
-    - collapse
-    - conditions
-    - customer
-    - defect
-    - delivery
-    - destination
-    - details
-    - fees
-    - free
-    - has
-    - item
-    - label
-    - law
-    - link
-    - merge
-    - offer
-    - origin
-    - rate
-    - remorse
-    - return
-    - service
-    - settings
-    - sti
-    - threshold
-    - time
-  backlinks:
-    - amount
-    - collapse
-    - conditions
-    - customer
-    - defect
-    - delivery
-    - destination
-    - details
-    - fees
-    - free
-    - has
-    - item
-    - label
-    - law
-    - link
-    - merge
-    - offer
-    - origin
-    - rate
-    - remorse
-    - return
-    - service
-    - settings
-    - sti
-    - threshold
-    - time
 signatures:
-  computationUuid: "f789d212-0baf-86d1-a964-9ac281157606"
+  computationUuid: "9fc00e10-5578-8b1c-8b7f-9428f5864713"
   stages:
     - stage: path
       stageUuid: "d1a822f6-1e94-8a35-9caf-bd269ee485ad"
@@ -163,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e1fe1ed6-0d8f-85da-ac17-b5ce3473ee4a"
     - stage: horo
-      stageUuid: "9683f2bc-f72b-8e4f-9faf-b4e2bed641f9"
+      stageUuid: "929f9a3d-7168-8642-97a9-52a093904758"
     - stage: seal
-      stageUuid: "98969c94-9c47-8e6a-bf4a-cd374f3770c7"
+      stageUuid: "2ca55561-2fce-84a3-9df1-f28b106d9d1e"
     - stage: uuid
-      stageUuid: "3ba7cbbc-3ddc-8493-bafe-20acb86e8cd1"
+      stageUuid: "69e3896a-98ab-827b-a2a2-418902972b50"
 version: 2
 ---
 # shipping

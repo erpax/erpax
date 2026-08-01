@@ -1,53 +1,35 @@
 ---
 name: assesses
 description: Use when reasoning about assesses — The item being described is intended to assess the competency or learning outcome defined by the referenced term.
-atomPath: vocabulary/assesses
-coordinate: assesses · 8/crest · b3361e42
-contentUuid: "24be9d99-9810-53dc-a548-04f6433eef7b"
-diamondUuid: "3abdeb31-30e2-83a7-a9a7-e553f6f435db"
-uuid: "b3361e42-1bc0-8170-badd-bed7985ad862"
-horo: 8
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/assesses"
+coordinate: "vocabulary/assesses · 7/descent · ebe27271"
+contentUuid: "ac133324-614d-569b-8988-5590e1bd66c9"
+diamondUuid: "f03a19eb-0c7b-8ac4-b2c0-02ad8f208230"
+uuid: "ebe27271-5499-859b-9b63-b2c43425e010"
+horo: 7
 typography:
-  partition: assesses
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "462641c3-e15d-8a84-ad91-b1a3b305c5e9"
+  computationUuid: "4de3f4fc-73c7-85ac-aec7-e69d352127a5"
   stages:
     - stage: path
-      stageUuid: "0d28ce5f-1959-8cd8-ac90-f398dcc80d3e"
+      stageUuid: "ec9e7188-d8c4-84e8-9c60-e6e80c6a2e37"
     - stage: trinity
-      stageUuid: "c2103628-bf08-8b8a-8cac-823834a524d5"
+      stageUuid: "75a18598-1cc0-82ff-8f31-12990a6c3d1b"
     - stage: boundary
-      stageUuid: "9b6f6369-c67e-86b6-be66-3c3b20de33d6"
+      stageUuid: "75761301-203f-8574-a0ab-65efdf9b3411"
     - stage: links
-      stageUuid: "11f715e3-d6ee-818d-afef-6e286e5bd48c"
+      stageUuid: "5ce2e653-4b5f-8bb1-958e-f100e0ef0696"
     - stage: horo
-      stageUuid: "c919e83c-5c84-8ef8-b464-a50986f544ad"
+      stageUuid: "f412fc15-3bd9-8e14-960f-1b0d26094265"
     - stage: seal
-      stageUuid: "8456976f-cd23-80cf-a8f6-17250755fc77"
+      stageUuid: "91ddfb3f-f1e6-8d80-a344-80759c82b6d9"
     - stage: uuid
-      stageUuid: "87c0b659-b600-80a2-b71c-5e27f9b28274"
+      stageUuid: "aaeb060c-4b3b-8596-a96a-aeb411dde237"
 version: 2
 ---
 # assesses

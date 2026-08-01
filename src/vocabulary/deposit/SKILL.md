@@ -1,73 +1,35 @@
 ---
 name: deposit
 description: "Use when reasoning about deposit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/deposit
-coordinate: deposit · 2/share · 2cb39fca
-contentUuid: "388f8be2-11c4-5197-9f98-de29b62d78a6"
-diamondUuid: "899fea7e-a61f-8586-b4cb-58ca14287f0f"
-uuid: "2cb39fca-3fc5-8f90-9f11-0ac50bdd0caf"
-horo: 2
-bonds:
-  in:
-    - account
-    - collapse
-    - investment
-    - law
-    - merge
-    - sti
-  out:
-    - account
-    - collapse
-    - investment
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/deposit"
+coordinate: "vocabulary/deposit · 1/base · af32e4a4"
+contentUuid: "abf60f0e-afac-5876-8d42-519900afa63f"
+diamondUuid: "a808f1ef-445b-8d47-b474-46dbff6926fa"
+uuid: "af32e4a4-2017-827b-a398-afeaee9faf23"
+horo: 1
 typography:
-  partition: deposit
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - account
-    - collapse
-    - investment
-    - law
-    - merge
-    - sti
-  matrix:
-    - account
-    - collapse
-    - investment
-    - law
-    - merge
-    - sti
-  backlinks:
-    - account
-    - collapse
-    - investment
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "cba428ea-c4eb-8fbf-8c9e-9ecb66856137"
+  computationUuid: "5b85ca74-b158-8f81-b1d1-3b8ca5d6c53f"
   stages:
     - stage: path
-      stageUuid: "7108ef61-8571-8898-ba81-f6de338405de"
+      stageUuid: "4929b6f8-d2b3-8452-99ac-1948dea159ed"
     - stage: trinity
-      stageUuid: "e015e83a-c284-8751-b2a1-a90eb8488547"
+      stageUuid: "8aa6d3ec-6aef-8341-bff1-9bd61a757d8c"
     - stage: boundary
-      stageUuid: "278eedeb-d264-8d9b-8e42-e805738e3888"
+      stageUuid: "400c5a0a-747c-8928-a2a5-718f996fd5f6"
     - stage: links
-      stageUuid: "25888680-6960-882d-b343-5aee7431dead"
+      stageUuid: "ca262907-32eb-8301-b566-9ac6231e74d3"
     - stage: horo
-      stageUuid: "856c47d8-e5d0-8934-bd6f-a7e6653f6b1d"
+      stageUuid: "2d0a37ee-4b04-82b8-ae83-f9a90843ebeb"
     - stage: seal
-      stageUuid: "73389cf7-8e5d-8053-af03-63a6fef2d046"
+      stageUuid: "3575fee8-4f73-8f0c-bd98-281af9d36b41"
     - stage: uuid
-      stageUuid: "2b0077eb-625f-87e4-a552-dadaa91bed8b"
+      stageUuid: "554c37f1-af4f-8b62-b96f-1003273477cc"
 version: 2
 ---
 # deposit

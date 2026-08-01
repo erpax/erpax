@@ -2,55 +2,14 @@
 name: id
 description: "Use when a tax-ID needs a normalised type-label stamped onto the document — a beforeChange hook that matches the raw number against the per-country regex registry so downstream code branches on a label, not a free-form match."
 atomPath: "classify/tax/id"
-coordinate: "classify/tax/id · 1/base · a9767983"
-contentUuid: "abe2b16c-510a-5f28-9612-37bb3d4ff187"
-diamondUuid: "964c30e8-ba37-841b-a9b7-e2c75324e044"
-uuid: "a9767983-b904-807b-b9be-8a0e76a1a596"
-horo: 1
-bonds:
-  in:
-    - animal
-    - broadcast
-    - channel
-    - cvd
-    - database
-    - facility
-    - group
-    - id
-    - identity
-    - law
-    - merge
-    - number
-    - plan
-    - product
-    - property
-    - reservation
-    - tax
-    - uses
-    - uuid
-  out:
-    - animal
-    - broadcast
-    - channel
-    - cvd
-    - database
-    - facility
-    - group
-    - id
-    - identity
-    - law
-    - merge
-    - number
-    - plan
-    - product
-    - property
-    - reservation
-    - uses
-    - uuid
+coordinate: "classify/tax/id · 5/round · 0d18f6c6"
+contentUuid: "1420012f-d52a-5c70-8080-284543879cf3"
+diamondUuid: "dd739cbb-a332-87df-9800-c951a25ce9ce"
+uuid: "0d18f6c6-459d-89b6-a0c0-b9a7c460b9ae"
+horo: 5
 typography:
   partition: classify
-  bondDegree: 58
-  neighbors: []
+  bondDegree: 56
 standards:
   - "EU-Taxonomy-2020/852"
   - "ISO-3166-1"
@@ -58,52 +17,8 @@ standards:
   - "ISO-3166-1:2020 country-codes alpha-2`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - country
-    - id
-    - law
-    - tax
-  matrix:
-    - animal
-    - broadcast
-    - channel
-    - cvd
-    - database
-    - facility
-    - group
-    - id
-    - identity
-    - law
-    - merge
-    - number
-    - plan
-    - product
-    - property
-    - reservation
-    - uses
-    - uuid
-  backlinks:
-    - animal
-    - broadcast
-    - channel
-    - cvd
-    - database
-    - facility
-    - group
-    - id
-    - identity
-    - law
-    - merge
-    - number
-    - plan
-    - product
-    - property
-    - reservation
-    - uses
-    - uuid
 signatures:
-  computationUuid: "b56df856-e919-8a2a-95ee-a8c2ee424bd7"
+  computationUuid: "98a59176-8cf2-8dcb-95cb-8b67ef678267"
   stages:
     - stage: path
       stageUuid: "24c533f5-84e8-8f9d-83c9-1063160e5331"
@@ -112,13 +27,13 @@ signatures:
     - stage: boundary
       stageUuid: "a04dd499-33a7-80a1-85f5-da4743d0fdfd"
     - stage: links
-      stageUuid: "eab96a84-5895-8ffe-8c99-ba2efb002bf7"
+      stageUuid: "a7357f92-ac0c-8599-bea1-6afe719f58c4"
     - stage: horo
-      stageUuid: "19e298e7-7864-88d5-990c-12928f9c2751"
+      stageUuid: "c25cf8a9-8d4d-8f47-a9f0-701de87a194a"
     - stage: seal
       stageUuid: "265c4b61-2379-844c-9b22-925e14afcb7c"
     - stage: uuid
-      stageUuid: "05641680-d47d-891a-9700-1ee0dc993679"
+      stageUuid: "d0da2f8d-f49d-897d-9d3e-b1232a4fa737"
 version: 2
 ---
 # classify/tax/id — stamp the tax-ID's type-label

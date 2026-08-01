@@ -1,98 +1,35 @@
 ---
 name: associated
 description: "Use when reasoning about associated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/associated
-coordinate: associated · 2/share · c37fb3ec
-contentUuid: "f3778c23-e0bb-554b-83c1-73161bdd72e9"
-diamondUuid: "b202d859-8145-8148-abf1-89587c0831ac"
-uuid: "c37fb3ec-0322-8427-9e45-400a76e6c3de"
-horo: 2
-bonds:
-  in:
-    - anatomy
-    - article
-    - claim
-    - collapse
-    - disease
-    - law
-    - media
-    - merge
-    - pathophysiology
-    - review
-    - sti
-  out:
-    - anatomy
-    - article
-    - claim
-    - collapse
-    - disease
-    - law
-    - media
-    - merge
-    - pathophysiology
-    - review
-    - sti
+atomPath: "vocabulary/associated"
+coordinate: "vocabulary/associated · 1/base · 1d828811"
+contentUuid: "4a67ad2c-ce48-5907-b173-0773e7be018a"
+diamondUuid: "82363019-98bf-8853-b29d-c664bf75c6ac"
+uuid: "1d828811-1953-856b-a46b-990bd4281596"
+horo: 1
 typography:
-  partition: associated
-  bondDegree: 39
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 47
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - anatomy
-    - article
-    - claim
-    - collapse
-    - disease
-    - law
-    - media
-    - merge
-    - pathophysiology
-    - review
-    - sti
-  matrix:
-    - anatomy
-    - article
-    - claim
-    - collapse
-    - disease
-    - law
-    - media
-    - merge
-    - pathophysiology
-    - review
-    - sti
-  backlinks:
-    - anatomy
-    - article
-    - claim
-    - collapse
-    - disease
-    - law
-    - media
-    - merge
-    - pathophysiology
-    - review
-    - sti
 signatures:
-  computationUuid: "9e6d14ed-f609-847f-9567-8d6c8924172a"
+  computationUuid: "d062edf8-3a19-89d0-aae6-00004707a19c"
   stages:
     - stage: path
-      stageUuid: "c810fd0f-ddbf-8633-96d3-3c626c98cb27"
+      stageUuid: "a1cdea6c-97ae-8b14-963e-50f74dcfc29f"
     - stage: trinity
-      stageUuid: "21423ad6-4850-8324-8aac-a641cb0a53c5"
+      stageUuid: "c6bb2f3d-31d0-8448-b0d9-3e5688347bfa"
     - stage: boundary
-      stageUuid: "e20d2f7d-5f81-884b-bfb1-6781412fa467"
+      stageUuid: "ed2cc43d-147b-8956-8fd8-8ba4a4535487"
     - stage: links
-      stageUuid: "acc26856-228a-83be-b083-19f6ba04ec63"
+      stageUuid: "8dc808e3-549c-8d21-bae3-bf0b19f57f3c"
     - stage: horo
-      stageUuid: "0ca7af87-31cf-8cf0-bd27-a1b92e1e21eb"
+      stageUuid: "8749d69d-8455-8aab-9c88-e5a4a418f883"
     - stage: seal
-      stageUuid: "8569411c-3a9e-8210-992f-0e0f94573662"
+      stageUuid: "85d4afdf-ca87-8880-b38c-ff8a8f17850b"
     - stage: uuid
-      stageUuid: "626a26b7-f9b0-8d8b-9442-d3e37450d9ae"
+      stageUuid: "1ff442fc-1ee2-8585-9866-eb11df81de0b"
 version: 2
 ---
 # associated

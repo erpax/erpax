@@ -1,73 +1,35 @@
 ---
 name: birth
 description: "Use when reasoning about birth as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/birth
-coordinate: birth · 1/base · 4a453ee0
-contentUuid: "7eaffe5a-b053-5796-9cdf-a05626b6fb7e"
-diamondUuid: "3a0ad984-b9a0-88d4-a1d4-06420be46984"
-uuid: "4a453ee0-8375-8a49-8907-1e0149a84c78"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - date
-    - law
-    - merge
-    - place
-    - sti
-  out:
-    - collapse
-    - date
-    - law
-    - merge
-    - place
-    - sti
+atomPath: "vocabulary/birth"
+coordinate: "vocabulary/birth · 5/round · 43fbc97e"
+contentUuid: "bc5651e3-9237-5e61-92bb-d7bbb321b150"
+diamondUuid: "b8194d85-8b85-8d01-9e94-77abb34d1cee"
+uuid: "43fbc97e-fee8-837a-80c0-fe3fcba46356"
+horo: 5
 typography:
-  partition: birth
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - date
-    - law
-    - merge
-    - place
-    - sti
-  matrix:
-    - collapse
-    - date
-    - law
-    - merge
-    - place
-    - sti
-  backlinks:
-    - collapse
-    - date
-    - law
-    - merge
-    - place
-    - sti
 signatures:
-  computationUuid: "fed6b43d-bdfa-8a82-a2a6-95d06a0b894b"
+  computationUuid: "f5c0e312-1298-8fa3-8104-e1a44fc8a1f0"
   stages:
     - stage: path
-      stageUuid: "08b626f1-39c0-8407-bab4-d38e90b215cd"
+      stageUuid: "425ba27a-7639-88ec-af9f-c0070b478df7"
     - stage: trinity
-      stageUuid: "856fa202-7dd6-844b-8c3b-fe2511467a2e"
+      stageUuid: "4c699b39-d126-8fa2-87d7-86ec3cce4a77"
     - stage: boundary
-      stageUuid: "3db047d8-fb3f-8e2d-990c-85abf91a66de"
+      stageUuid: "ee5d73d8-9b16-8b93-85fd-5cfda2e64822"
     - stage: links
-      stageUuid: "93e98a56-4694-80d5-a008-032e3aca0faa"
+      stageUuid: "e6d394f4-703e-8305-a828-1f3e1714ca72"
     - stage: horo
-      stageUuid: "0c2ba351-7a54-8190-aeb2-2776777299fd"
+      stageUuid: "50a879c2-3bae-88ee-9898-138c783d96c2"
     - stage: seal
-      stageUuid: "57a469c0-196e-8cc9-9596-91b7565298fc"
+      stageUuid: "9056eb28-4821-8441-9fbb-1f2009567832"
     - stage: uuid
-      stageUuid: "7ecedfa2-fba1-8e6c-acff-b9a6a68a5196"
+      stageUuid: "4844f9e8-a29d-8c3f-989b-9d59f0c6967c"
 version: 2
 ---
 # birth

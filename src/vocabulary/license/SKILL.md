@@ -1,79 +1,34 @@
 ---
 name: license
 description: "Use when a contract grants a right to use IP/goods — licensor, licensee, scope (exclusive vs. non-exclusive, sublicense rights), term, fees, restrictions, termination."
-atomPath: vocabulary/license
-coordinate: license · 4/weave · b52eb970
-contentUuid: "2e7c58a4-e0a3-5f49-87dc-18c61b162cc8"
-diamondUuid: "f9473655-43ed-8e75-a885-a1a0d82408e9"
-uuid: "b52eb970-3805-8453-9f39-d4717fed7fd2"
-horo: 4
-bonds:
-  in:
-    - acquire
-    - contracts
-    - law
-    - matter
-    - page
-    - restriction
-    - sd
-    - termination
-  out:
-    - acquire
-    - contracts
-    - law
-    - matter
-    - page
-    - restriction
-    - sd
-    - termination
+atomPath: "vocabulary/license"
+coordinate: "vocabulary/license · 7/descent · 78fe7f35"
+contentUuid: "6d0bdb8a-6ed6-5334-a184-e266469b23b0"
+diamondUuid: "16fce7c2-4f7a-8dd3-852d-9a45696b27db"
+uuid: "78fe7f35-2f20-8a36-b417-acc5841708ca"
+horo: 7
 typography:
-  partition: license
+  partition: vocabulary
   bondDegree: 25
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - contracts
-    - law
-    - matter
-    - restriction
-    - termination
-  matrix:
-    - acquire
-    - contracts
-    - law
-    - matter
-    - page
-    - restriction
-    - sd
-    - termination
-  backlinks:
-    - acquire
-    - contracts
-    - law
-    - matter
-    - page
-    - restriction
-    - sd
-    - termination
 signatures:
-  computationUuid: "626f7985-4833-8a3f-99b8-ec86c022afdb"
+  computationUuid: "7fe4b933-da02-8f4a-b5cd-06777c0b32e0"
   stages:
     - stage: path
-      stageUuid: "424c9957-41a0-89e5-b530-1a8dba6fe8e3"
+      stageUuid: "48b2a27b-8437-8144-95a8-1079e87928a5"
     - stage: trinity
-      stageUuid: "7ac8869a-545e-83af-bf84-b2d25aacc013"
+      stageUuid: "7eb99acc-5f9b-85c6-9bb2-d7fbdea9b6b6"
     - stage: boundary
-      stageUuid: "4fb0cc98-373b-8b79-b761-88e4ced3a2ed"
+      stageUuid: "e741f4dc-b8bc-8d92-bbff-e581938ab5a9"
     - stage: links
-      stageUuid: "1557f153-7b76-802f-9834-feb7f6a8b65c"
+      stageUuid: "9621bea8-b663-8c8c-80af-b9122373271a"
     - stage: horo
-      stageUuid: "acc94c97-2327-8133-ac0f-188697d31704"
+      stageUuid: "2d4f0b44-986c-89bb-b74e-dd9e579830b0"
     - stage: seal
-      stageUuid: "eba1ba0d-0caf-878a-ad2c-fee27298da39"
+      stageUuid: "a427dcf8-025c-8a96-a89c-5468e7ce206a"
     - stage: uuid
-      stageUuid: "2d35f7d4-d85f-8a17-a3fa-1bb6418452f0"
+      stageUuid: "adbdc7bb-1c0e-8cfe-b686-aa146da62024"
 version: 2
 ---
 # license

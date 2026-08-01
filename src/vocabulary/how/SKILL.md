@@ -1,88 +1,35 @@
 ---
 name: how
 description: Use when reasoning about how — Instructions that explain how to achieve a result by performing a sequence of steps.
-atomPath: vocabulary/how
-coordinate: how · 1/base · b98712ac
-contentUuid: "defab0d8-0a49-5c46-b7d4-486e00db28c9"
-diamondUuid: "850d2a93-978c-825f-a113-d0b0adea810c"
-uuid: "b98712ac-1b55-88b0-8921-4983cf2a073e"
-horo: 1
-bonds:
-  in:
-    - direction
-    - item
-    - law
-    - performed
-    - section
-    - step
-    - supply
-    - tip
-    - tool
-  out:
-    - direction
-    - item
-    - law
-    - performed
-    - section
-    - step
-    - supply
-    - tip
-    - tool
+atomPath: "vocabulary/how"
+coordinate: "vocabulary/how · 2/share · c3b4a079"
+contentUuid: "087cda98-a26c-5d11-83b4-fd571084a31a"
+diamondUuid: "146cca6b-e98e-8538-8049-dc912564c22e"
+uuid: "c3b4a079-b29e-88c2-b700-0eeaf8021907"
+horo: 2
 typography:
-  partition: how
+  partition: vocabulary
   bondDegree: 35
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - direction
-    - item
-    - law
-    - performed
-    - section
-    - step
-    - supply
-    - tip
-    - tool
-  matrix:
-    - direction
-    - item
-    - law
-    - performed
-    - section
-    - step
-    - supply
-    - tip
-    - tool
-  backlinks:
-    - direction
-    - item
-    - law
-    - performed
-    - section
-    - step
-    - supply
-    - tip
-    - tool
 signatures:
-  computationUuid: "5587e006-39b7-88e0-b2aa-73e5e9e1f0f5"
+  computationUuid: "dfcfc3a6-7201-8119-bf14-6cac473d90e1"
   stages:
     - stage: path
-      stageUuid: "d288ae3c-0e24-8ad9-b752-5372bde98b08"
+      stageUuid: "5dfea3c1-5085-83c8-817f-6003d19cb5f8"
     - stage: trinity
-      stageUuid: "564513cd-30b4-8506-bce0-a183caf24965"
+      stageUuid: "52da30ef-6f21-82ed-a3aa-1a6a078e0693"
     - stage: boundary
-      stageUuid: "c6c23fbf-f9fe-8f7e-874e-595516da17f8"
+      stageUuid: "801fc239-6407-800b-9c05-a1c7bbaa1084"
     - stage: links
-      stageUuid: "1f46df52-31c3-8d2d-810f-5c4ddc9019bb"
+      stageUuid: "226e11ce-ed42-82fe-b4ee-52a535f3c78a"
     - stage: horo
-      stageUuid: "7b273f15-d625-8ce5-beb2-f0ecae2aa95c"
+      stageUuid: "da5b21b8-bb57-8b5e-8635-10c8403281e6"
     - stage: seal
-      stageUuid: "cfb31b22-3192-89ab-8650-46a901018f50"
+      stageUuid: "da18bef8-f9cd-8283-90a7-851c222dd743"
     - stage: uuid
-      stageUuid: "d4647f72-7bc7-8321-9551-24d15651cbd6"
+      stageUuid: "b3724c60-037a-80b8-8cd3-d05457c4e0c4"
 version: 2
 ---
 # how

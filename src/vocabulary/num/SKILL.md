@@ -1,153 +1,35 @@
 ---
 name: num
 description: "Use when reasoning about num as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/num
-coordinate: num · 4/weave · 32cd0272
-contentUuid: "e0a69a6b-b5ed-5062-9993-ed36031b5939"
-diamondUuid: "c07e423f-8ca5-8472-ad0e-522abbae328e"
-uuid: "32cd0272-b349-8757-a86b-a2f102e44132"
-horo: 4
-bonds:
-  in:
-    - adults
-    - beds
-    - children
-    - collapse
-    - constraints
-    - cvd
-    - died
-    - ho
-    - hosp
-    - icu
-    - items
-    - law
-    - mech
-    - merge
-    - occ
-    - overflow
-    - pats
-    - sti
-    - tot
-    - tracks
-    - use
-    - vent
-  out:
-    - adults
-    - beds
-    - children
-    - collapse
-    - constraints
-    - cvd
-    - died
-    - ho
-    - hosp
-    - icu
-    - items
-    - law
-    - mech
-    - merge
-    - occ
-    - overflow
-    - pats
-    - sti
-    - tot
-    - tracks
-    - use
-    - vent
+atomPath: "vocabulary/num"
+coordinate: "vocabulary/num · 7/descent · 9f3a3965"
+contentUuid: "188ba3a4-d132-5b3e-9e61-5c1541376b40"
+diamondUuid: "41e4defa-6374-8f14-8409-dd0026d44397"
+uuid: "9f3a3965-3979-852e-bbc2-20d5e96d51b3"
+horo: 7
 typography:
-  partition: num
+  partition: vocabulary
   bondDegree: 83
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - adults
-    - beds
-    - children
-    - collapse
-    - constraints
-    - cvd
-    - died
-    - ho
-    - hosp
-    - icu
-    - items
-    - law
-    - mech
-    - merge
-    - occ
-    - overflow
-    - pats
-    - sti
-    - tot
-    - tracks
-    - use
-    - vent
-  matrix:
-    - adults
-    - beds
-    - children
-    - collapse
-    - constraints
-    - cvd
-    - died
-    - ho
-    - hosp
-    - icu
-    - items
-    - law
-    - mech
-    - merge
-    - occ
-    - overflow
-    - pats
-    - sti
-    - tot
-    - tracks
-    - use
-    - vent
-  backlinks:
-    - adults
-    - beds
-    - children
-    - collapse
-    - constraints
-    - cvd
-    - died
-    - ho
-    - hosp
-    - icu
-    - items
-    - law
-    - mech
-    - merge
-    - occ
-    - overflow
-    - pats
-    - sti
-    - tot
-    - tracks
-    - use
-    - vent
 signatures:
-  computationUuid: "c258aa00-1b01-8aed-94d5-db3402203098"
+  computationUuid: "e24889e3-65a3-8960-b2c3-4b53a87f71c5"
   stages:
     - stage: path
-      stageUuid: "95f4730f-d2a9-8542-87bc-5fe4a6ddd068"
+      stageUuid: "905d95be-579a-8e7b-9ca8-20e483e3e458"
     - stage: trinity
-      stageUuid: "5e731218-4cbf-8321-a7ea-886cc40484d1"
+      stageUuid: "96841286-46a1-8f24-98e0-e2d046d025e1"
     - stage: boundary
-      stageUuid: "32c5c8cd-64c0-88e4-96d5-8522a9c71b01"
+      stageUuid: "ea9f501f-3094-8b1a-8b84-80dfb4f94b8f"
     - stage: links
-      stageUuid: "47c8e950-de50-8efa-8dad-48daae8a08a4"
+      stageUuid: "6b997708-cc92-8aca-a930-2ad9be017dda"
     - stage: horo
-      stageUuid: "0645a3c3-e5c0-8b07-a458-b9df47d0f336"
+      stageUuid: "a88b4ea6-0386-8c97-9dfb-53f8cd899b06"
     - stage: seal
-      stageUuid: "3efb787d-b6cc-8d91-bff9-5ecf0065a86c"
+      stageUuid: "eb002899-c606-82f7-9e4e-1ffc72c629d9"
     - stage: uuid
-      stageUuid: "74b6e2d7-0e0d-87fb-98b8-a2ef157745bc"
+      stageUuid: "badc9f3e-2de6-87e5-bc46-5648f5e023d1"
 version: 2
 ---
 # num

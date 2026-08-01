@@ -1,98 +1,35 @@
 ---
 name: incentive
 description: "Use when reasoning about incentive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/incentive
-coordinate: incentive · 7/descent · 23f28d05
-contentUuid: "32226501-8805-5f9f-a11a-1a8a24db8ed3"
-diamondUuid: "33db612f-6688-89ca-b346-a0dc03f6e789"
-uuid: "23f28d05-b92f-8180-afe0-2203236eeaef"
-horo: 7
-bonds:
-  in:
-    - amount
-    - collapse
-    - compensation
-    - expense
-    - financial
-    - law
-    - merge
-    - qualified
-    - status
-    - sti
-    - type
-  out:
-    - amount
-    - collapse
-    - compensation
-    - expense
-    - financial
-    - law
-    - merge
-    - qualified
-    - status
-    - sti
-    - type
+atomPath: "vocabulary/incentive"
+coordinate: "vocabulary/incentive · 8/crest · 89b5b748"
+contentUuid: "0ce0a48f-07f0-5ff0-ad92-1a9b1f96e346"
+diamondUuid: "d8b5934e-30ba-8ad5-af3d-c3249161742a"
+uuid: "89b5b748-6349-80de-a99d-a2809f0a9ea1"
+horo: 8
 typography:
-  partition: incentive
+  partition: vocabulary
   bondDegree: 36
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - amount
-    - collapse
-    - compensation
-    - expense
-    - financial
-    - law
-    - merge
-    - qualified
-    - status
-    - sti
-    - type
-  matrix:
-    - amount
-    - collapse
-    - compensation
-    - expense
-    - financial
-    - law
-    - merge
-    - qualified
-    - status
-    - sti
-    - type
-  backlinks:
-    - amount
-    - collapse
-    - compensation
-    - expense
-    - financial
-    - law
-    - merge
-    - qualified
-    - status
-    - sti
-    - type
 signatures:
-  computationUuid: "f901b072-7303-818d-a4a7-140a94b703ef"
+  computationUuid: "38905ee5-6399-89da-9bb6-f7d50669afae"
   stages:
     - stage: path
-      stageUuid: "894f3416-c1a9-86ca-b661-7af9661ba8c0"
+      stageUuid: "305c5316-aa34-8223-8cf7-6708ffac638a"
     - stage: trinity
-      stageUuid: "7a047400-f1eb-8057-98e1-523c3a5b1716"
+      stageUuid: "7c9492f4-3026-851f-9867-018f4f0fbc15"
     - stage: boundary
-      stageUuid: "89074df8-682b-8966-9a80-e31551503e83"
+      stageUuid: "3a33113f-d8b6-8588-87d0-daf44546cb1e"
     - stage: links
-      stageUuid: "bcf51824-18ee-86f2-a4bf-9175880dbdc9"
+      stageUuid: "f81ddcf7-3130-8808-8bb3-3faa1ae71a54"
     - stage: horo
-      stageUuid: "5e94a04b-acc2-8c84-92ce-43d54d3f55ac"
+      stageUuid: "f462aea9-e144-8832-baf0-56959167de0c"
     - stage: seal
-      stageUuid: "6ed48561-b5ee-8ba3-b178-c616769e382c"
+      stageUuid: "4acf9f67-f979-8ec1-a274-ea7b05a3fb90"
     - stage: uuid
-      stageUuid: "4ff795e0-0290-8662-ab55-bd904c8ce51b"
+      stageUuid: "3cda652b-c02f-8666-a4e1-00e784622dd9"
 version: 2
 ---
 # incentive

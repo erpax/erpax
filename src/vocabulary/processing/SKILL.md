@@ -1,78 +1,35 @@
 ---
 name: processing
 description: "Use when reasoning about processing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/processing
-coordinate: processing · 1/base · 5e9a8a05
-contentUuid: "bc34a7ed-b32b-547f-a994-97ba8610ef34"
-diamondUuid: "3d55a383-71d8-8064-bc50-c4f934c8ded0"
-uuid: "5e9a8a05-a6e8-8d29-a8a1-67f172031f5c"
+atomPath: "vocabulary/processing"
+coordinate: "vocabulary/processing · 1/base · 7ed6d877"
+contentUuid: "f3123674-d88d-5eab-a60a-2eb8ccc51920"
+diamondUuid: "3f814b9e-4d17-8df0-971a-014750abf1d7"
+uuid: "7ed6d877-94f6-8c59-8064-6507199c0d02"
 horo: 1
-bonds:
-  in:
-    - collapse
-    - country
-    - last
-    - law
-    - merge
-    - sti
-    - time
-  out:
-    - collapse
-    - country
-    - last
-    - law
-    - merge
-    - sti
-    - time
 typography:
-  partition: processing
+  partition: vocabulary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - country
-    - last
-    - law
-    - merge
-    - sti
-    - time
-  matrix:
-    - collapse
-    - country
-    - last
-    - law
-    - merge
-    - sti
-    - time
-  backlinks:
-    - collapse
-    - country
-    - last
-    - law
-    - merge
-    - sti
-    - time
 signatures:
-  computationUuid: "0c451e06-b061-8be9-ab87-98f76db45d72"
+  computationUuid: "871f1441-a079-8d6d-8fe7-76b1bb066245"
   stages:
     - stage: path
-      stageUuid: "025b260e-040a-8b88-97fb-d040607d516e"
+      stageUuid: "1e43d8b5-0164-8953-959e-b4b7c14b2bfc"
     - stage: trinity
-      stageUuid: "87756f8a-c474-837a-b4e1-63e5fa59ff3a"
+      stageUuid: "108e3b95-3dfe-88ea-9345-17325fdfdb47"
     - stage: boundary
-      stageUuid: "6bc4811c-d5d4-8483-a2e6-4508875542b7"
+      stageUuid: "a24dd12f-6a5e-862d-a0be-6a43b6effadd"
     - stage: links
-      stageUuid: "8240858a-4dd0-8803-9c69-11f3e200f381"
+      stageUuid: "2bd319c8-d510-86dd-b908-dca961fa26e4"
     - stage: horo
-      stageUuid: "05565544-519d-8496-8b48-fc4fa9db9d06"
+      stageUuid: "4c92c506-251b-839e-833e-103ab226ba6f"
     - stage: seal
-      stageUuid: "ecba8491-ac56-884e-ac20-dede2b24cf82"
+      stageUuid: "0de7b460-baaf-8c0f-be71-f24d7e28ea89"
     - stage: uuid
-      stageUuid: "44adae0f-7bfc-88de-98ff-8c9a612e483b"
+      stageUuid: "facedaa3-2676-8a36-9bc1-8ec6cb86fc81"
 version: 2
 ---
 # processing

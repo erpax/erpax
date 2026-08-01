@@ -1,56 +1,26 @@
 ---
 name: scopes
 description: "Use when collapsing MCP api-key capability columns to a compact deny-list — the matrix→cross collapse for @payloadcms/plugin-mcp at erpax scale (D1 100-col cap); virtual afterRead repopulates the handler's read shape default-open, narrowed by scopes.deny."
-atomPath: plugins/mcp/scopes
-coordinate: plugins/mcp/scopes · 1/base · fe5be69e
-contentUuid: "99e14757-21d1-5ae4-9e1e-35b7fc116d30"
-diamondUuid: "6a0b7493-cf4f-8591-bb64-397503571130"
-uuid: "fe5be69e-5087-8798-8ab2-2c5d3affe9a0"
-horo: 1
-bonds:
-  in:
-    - access
-    - cross
-    - law
-    - mcp
-    - plugins
-  out:
-    - access
-    - cross
-    - law
-    - mcp
-    - plugins
+atomPath: "plugins/mcp/scopes"
+coordinate: "plugins/mcp/scopes · 2/share · c04cf208"
+contentUuid: "2b550da4-64a8-5b4b-b0fc-46dce7949d24"
+diamondUuid: "177b196c-2b89-8444-afb4-ea404e8db015"
+uuid: "c04cf208-f619-849d-9202-33886fadff8f"
+horo: 2
 typography:
   partition: plugins
   bondDegree: 15
-  neighbors: []
 standards:
   - "ISO-27002"
-  - ISO/IEC 27001 §A.9.4.1 information access restriction
+  - "ISO/IEC 27001 §A.9.4.1 information access restriction"
+  - "ISO/IEC 27001 §A.9.4.1 information access restriction`"
   - "ISO/IEC 27002 §5.15 access-control + §5.18 access-rights (per-key narrowing)"
+  - "ISO/IEC 27002 §5.15 access-control + §5.18 access-rights (per-key narrowing)`"
   - "ISO/IEC-27002:2022"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - cross
-    - law
-    - mcp
-    - plugins
-  matrix:
-    - access
-    - cross
-    - law
-    - mcp
-    - plugins
-  backlinks:
-    - access
-    - cross
-    - law
-    - mcp
-    - plugins
 signatures:
-  computationUuid: "f174bc3c-8732-88f3-94a2-ec4f959edbe8"
+  computationUuid: "e93625d0-e573-8b29-8377-90b85783f4d0"
   stages:
     - stage: path
       stageUuid: "2c4511fc-bedf-88aa-b121-9c7462a2e571"
@@ -61,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "5e17a84f-eafc-8935-b877-296d3d195364"
     - stage: horo
-      stageUuid: "ad297c2e-6ed5-8738-885e-9c68b0afd393"
+      stageUuid: "97e3226c-f657-885f-b3fd-cd43ad7ab43a"
     - stage: seal
       stageUuid: "5b3af09a-ba11-83bd-ab97-3e7165dbe3f9"
     - stage: uuid
-      stageUuid: "effb4b9c-fae1-8610-8cbe-45de4934b124"
+      stageUuid: "94c01372-4a1d-8efc-952f-e98dca5cd473"
 version: 2
 ---
 # scopes — MCP api-key capability collapse

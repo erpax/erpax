@@ -1,68 +1,35 @@
 ---
 name: golf
 description: "Use when reasoning about golf as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/golf
-coordinate: golf · 5/round · 0a2dfe36
-contentUuid: "d0d50373-0799-502e-924e-618acfe26213"
-diamondUuid: "73c725d4-a98a-8012-b3fa-f8c0257a5fba"
-uuid: "0a2dfe36-9e43-8fed-94e0-b93959f97adb"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - course
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - course
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/golf"
+coordinate: "vocabulary/golf · 1/base · 985207b2"
+contentUuid: "d4d9d615-0473-5a5f-a4e1-d3810fea4808"
+diamondUuid: "a4eb2959-bc43-8bbc-9e97-90fa1470fadd"
+uuid: "985207b2-7002-8166-a6c0-092f07898911"
+horo: 1
 typography:
-  partition: golf
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - course
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - course
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - course
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "9f62e840-12c5-8d00-99ea-c7c8b3036057"
+  computationUuid: "d8bd6822-1f36-807c-9cfc-90a3d6bf0aee"
   stages:
     - stage: path
-      stageUuid: "106f2ab8-2ed7-80b6-8dac-be3fa2ad3b31"
+      stageUuid: "955bbdbc-3164-821f-bc5a-0fc74b27ad5f"
     - stage: trinity
-      stageUuid: "37ffe930-7e83-8421-ba3c-35fe102d919c"
+      stageUuid: "581e0061-d572-84cf-951b-0344845c25b8"
     - stage: boundary
-      stageUuid: "23305794-2516-8595-9f0c-af281e3083cd"
+      stageUuid: "198e8d4f-f0d1-8594-9248-6cabbf8a096d"
     - stage: links
-      stageUuid: "a44bbc45-b48b-8c64-8e7c-18a5373495ca"
+      stageUuid: "466e14de-3805-8964-98ed-d3d51ae12cce"
     - stage: horo
-      stageUuid: "aabf1f9d-987d-8a64-b0ea-06885829a056"
+      stageUuid: "9e114b69-c1a8-8a99-a866-6b59c0a65af1"
     - stage: seal
-      stageUuid: "e6a6db99-940f-8d5b-ab27-f1b1d147a40b"
+      stageUuid: "85edb2d7-546d-8e8b-bcc0-7cb0084f4900"
     - stage: uuid
-      stageUuid: "0cadb048-4fb6-8b4c-9658-32249acdfbc8"
+      stageUuid: "283093b9-d3ea-8603-87b4-0d67ce270929"
 version: 2
 ---
 # golf

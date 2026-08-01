@@ -1,63 +1,35 @@
 ---
 name: flexibility
 description: "Use when reasoning about flexibility as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/flexibility
-coordinate: flexibility · 7/descent · bdc9e879
-contentUuid: "ff74b712-7520-5560-9ca4-475a8286ed68"
-diamondUuid: "82faa84c-5eba-8e17-a3fb-29c262b91677"
-uuid: "bdc9e879-5796-8d72-bcd4-919305489850"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/flexibility"
+coordinate: "vocabulary/flexibility · 2/share · 085e6191"
+contentUuid: "4ea3dd60-c0e4-5176-841c-78dae5102383"
+diamondUuid: "4449fdf9-bf3f-821c-ba4a-23dd7d32f28d"
+uuid: "085e6191-520d-813c-a28a-74ed9aa381bc"
+horo: 2
 typography:
-  partition: flexibility
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "a734a3d2-fcdb-8eb5-87b1-559066edf85a"
+  computationUuid: "d1d5c2da-bf82-8cdb-9b1c-de65fa766938"
   stages:
     - stage: path
-      stageUuid: "af879593-75f5-8997-88de-277c70b70d14"
+      stageUuid: "ca41d23f-1abf-8611-8846-3885ab6453b5"
     - stage: trinity
-      stageUuid: "dde4512a-6daf-80d2-ad25-3bf3b93d86d7"
+      stageUuid: "9a798cac-af05-839f-95c6-c6853f28359f"
     - stage: boundary
-      stageUuid: "c1e3a5a5-b5cd-8977-b8df-b28b9ffa635b"
+      stageUuid: "dc8b03d3-0128-83bb-a92b-bc70b13e9129"
     - stage: links
-      stageUuid: "9caa530a-6fb8-8280-b8f3-8003941e0b95"
+      stageUuid: "cfe84937-9d1f-8612-969e-dcee6790d741"
     - stage: horo
-      stageUuid: "833c7dca-ef56-8bb8-9699-c379721dc888"
+      stageUuid: "8234f883-a26b-88eb-af0f-9bb929c4b9e7"
     - stage: seal
-      stageUuid: "c612c5fb-7d8e-8e0b-b359-373388e4355e"
+      stageUuid: "c815e6ad-d06d-8a44-9b1f-88bf52423c78"
     - stage: uuid
-      stageUuid: "88d9805d-e69c-80c5-9fd9-5e30ed8056d3"
+      stageUuid: "936db4e4-971a-8aa0-92de-5c6d5020e673"
 version: 2
 ---
 # flexibility

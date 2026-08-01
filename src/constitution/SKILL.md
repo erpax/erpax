@@ -2,28 +2,14 @@
 name: constitution
 description: "Use when reasoning about the entrenched foundation, or when judging whether a proposed change may ship — two rules at the root (no expectation: claim no result you have not computed; no judgment: reject nothing you have not measured, discernment by test kept), the nine laws that are their lemmas (duality · legality · honest boundaries · balance · service · conservation · reciprocity · reproducibility · regeneration), and the seven supreme articles saying what a majority may amend versus what is perpetual; every predicate computed, fails closed, and heads every agent prompt."
 atomPath: constitution
-coordinate: "constitution · 4/weave · c67b69e0"
-contentUuid: "90ef653c-34a1-5a7e-8e3a-5d63f7db67e7"
-diamondUuid: "a6d19c97-ebf6-8c66-a7f4-951d3ad2cfd1"
-uuid: "c67b69e0-27e5-8581-9f2a-756cc11adbe2"
+coordinate: "constitution · 4/weave · 0bfb84a2"
+contentUuid: "a31e4b33-5f06-56ff-914c-1146cb92d330"
+diamondUuid: "1049f203-2699-88f7-95e7-926cabd1b111"
+uuid: "0bfb84a2-f327-8cdf-b5b1-555cdab2ca4a"
 horo: 4
-bonds:
-  in:
-    - legislation
-    - plugin
-    - separation
-    - surface
-    - trello
-  out:
-    - legislation
-    - plugin
-    - separation
-    - surface
-    - trello
 typography:
   partition: constitution
-  bondDegree: 32
-  neighbors: []
+  bondDegree: 44
 standards:
   - "ISO 37000:2021 governance-of-organizations principle-of-purpose"
   - "ISO 37000:2021 governance-of-organizations principle-of-purpose`"
@@ -32,37 +18,8 @@ standards:
   - Venice Commission Rule of Law (entrenched fundamental guarantees)
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - civilization
-    - corruption
-    - governance
-    - identity
-    - legislation
-    - merge
-    - row
-    - rules
-    - separation
-    - sequence
-    - society
-    - surface
-    - trello
-    - zeropoint
-  matrix:
-    - legislation
-    - plugin
-    - separation
-    - surface
-    - trello
-  backlinks:
-    - legislation
-    - plugin
-    - separation
-    - surface
-    - trello
 signatures:
-  computationUuid: "e6ff7f49-9c89-8fe5-a956-c96a3f980e63"
+  computationUuid: "b2e5122e-3314-8f06-b210-21e76645e7ac"
   stages:
     - stage: path
       stageUuid: "210a2855-2ef2-8f53-8a65-93ebae61b5f1"
@@ -73,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "f884e2b1-1a03-8756-95d8-fa23f5d26198"
     - stage: horo
-      stageUuid: "1878b6f3-49dd-86b5-ac3d-bcf64152e70b"
+      stageUuid: "76ecf456-11bf-81c0-9886-c0b2ea2a8167"
     - stage: seal
       stageUuid: "79d6cdcb-5abc-8ea1-af80-6c8ad39015bf"
     - stage: uuid
-      stageUuid: "f4da62f3-580a-81b0-b15e-cb786de5e9bc"
+      stageUuid: "07418292-95df-8480-8445-bb66bc2d5aa0"
 version: 2
 ---
 # constitution — the 0 of the sequence, the supreme law erpax derives from

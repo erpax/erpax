@@ -1,88 +1,35 @@
 ---
 name: floor
 description: "Use when reasoning about floor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/floor
-coordinate: floor · 2/share · d8131498
-contentUuid: "7ccde1b5-41d2-5047-9f46-5e0c247aa3c2"
-diamondUuid: "e25f3396-e944-8c7d-a03d-dca1289d2e03"
-uuid: "d8131498-5633-8d22-8c21-aff28e882773"
-horo: 2
-bonds:
-  in:
-    - accommodation
-    - collapse
-    - law
-    - level
-    - limit
-    - merge
-    - plan
-    - size
-    - sti
-  out:
-    - accommodation
-    - collapse
-    - law
-    - level
-    - limit
-    - merge
-    - plan
-    - size
-    - sti
+atomPath: "vocabulary/floor"
+coordinate: "vocabulary/floor · 1/base · cf1a54d5"
+contentUuid: "eaa1a913-bb10-5b73-85ed-9abf133a95ae"
+diamondUuid: "57ded20c-6bc6-8f7a-8073-b857f5a5850e"
+uuid: "cf1a54d5-2f53-8f91-b5f7-b0e988e2afcc"
+horo: 1
 typography:
-  partition: floor
-  bondDegree: 31
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 33
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - accommodation
-    - collapse
-    - law
-    - level
-    - limit
-    - merge
-    - plan
-    - size
-    - sti
-  matrix:
-    - accommodation
-    - collapse
-    - law
-    - level
-    - limit
-    - merge
-    - plan
-    - size
-    - sti
-  backlinks:
-    - accommodation
-    - collapse
-    - law
-    - level
-    - limit
-    - merge
-    - plan
-    - size
-    - sti
 signatures:
-  computationUuid: "b89fbbfb-61c6-87ea-95a7-987b64bab576"
+  computationUuid: "2b827879-26ed-81d8-bb74-520ba7ff20a5"
   stages:
     - stage: path
-      stageUuid: "2cdeb260-da49-891b-98e5-33171f54d7fe"
+      stageUuid: "b8809de7-2504-81c8-97f3-114bdcc7c8be"
     - stage: trinity
-      stageUuid: "bfe51d6c-2ad5-858c-93a5-89e7b1307367"
+      stageUuid: "91d25432-e7a1-8f8b-8d71-2486efdf16ca"
     - stage: boundary
-      stageUuid: "7a41d569-fb0c-87d9-9788-d542b4a98277"
+      stageUuid: "b27ac005-99bd-89a5-9f14-b4a7bc1ec34b"
     - stage: links
-      stageUuid: "b220bead-afee-8391-957a-030f2986ccfb"
+      stageUuid: "a644e74f-b22f-8c4f-9ad6-494c249f413e"
     - stage: horo
-      stageUuid: "9519a209-aba4-860b-a9b9-2069a6934328"
+      stageUuid: "c11c112c-4d4e-8524-b924-21b622df89fb"
     - stage: seal
-      stageUuid: "7df6cc35-0f43-8ee8-aa0d-83b4d0f871f8"
+      stageUuid: "0e79a031-f919-839d-8810-c45c78e697ab"
     - stage: uuid
-      stageUuid: "f8a21813-117a-83cc-98cd-4021000a8b53"
+      stageUuid: "6cdef78c-552c-89e4-9b08-a13fd29df6fe"
 version: 2
 ---
 # floor

@@ -1,133 +1,35 @@
 ---
 name: info
 description: "Use when reasoning about info as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/info
-coordinate: info · 5/round · 96140ade
-contentUuid: "194118c0-96aa-54fd-918e-17e9e5aa92c7"
-diamondUuid: "24d75a9a-6a8e-8d0b-bfca-b0e52c312b83"
-uuid: "96140ade-4a9d-8a44-8904-da78ed8e4179"
-horo: 5
-bonds:
-  in:
-    - benefits
-    - closures
-    - collapse
-    - disease
-    - funding
-    - getting
-    - government
-    - law
-    - merge
-    - ownership
-    - prescribing
-    - prevention
-    - public
-    - school
-    - sti
-    - tested
-    - transport
-    - usage
-  out:
-    - benefits
-    - closures
-    - collapse
-    - disease
-    - funding
-    - getting
-    - government
-    - law
-    - merge
-    - ownership
-    - prescribing
-    - prevention
-    - public
-    - school
-    - sti
-    - tested
-    - transport
-    - usage
+atomPath: "vocabulary/info"
+coordinate: "vocabulary/info · 2/share · 6f418930"
+contentUuid: "08f0d3ab-e069-5ab4-984d-5bb7d1436a2d"
+diamondUuid: "2641d79e-fbf0-8412-8cec-042011a59bfa"
+uuid: "6f418930-fe19-8f0e-85b5-9d990fd084cd"
+horo: 2
 typography:
-  partition: info
-  bondDegree: 68
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 70
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - benefits
-    - closures
-    - collapse
-    - disease
-    - funding
-    - getting
-    - government
-    - law
-    - merge
-    - ownership
-    - prescribing
-    - prevention
-    - public
-    - school
-    - sti
-    - tested
-    - transport
-    - usage
-  matrix:
-    - benefits
-    - closures
-    - collapse
-    - disease
-    - funding
-    - getting
-    - government
-    - law
-    - merge
-    - ownership
-    - prescribing
-    - prevention
-    - public
-    - school
-    - sti
-    - tested
-    - transport
-    - usage
-  backlinks:
-    - benefits
-    - closures
-    - collapse
-    - disease
-    - funding
-    - getting
-    - government
-    - law
-    - merge
-    - ownership
-    - prescribing
-    - prevention
-    - public
-    - school
-    - sti
-    - tested
-    - transport
-    - usage
 signatures:
-  computationUuid: "a2daded2-df1d-8f7e-b6a5-e363e581b418"
+  computationUuid: "79cb6694-2c94-81c5-a0dd-6c2b2bf7d2f4"
   stages:
     - stage: path
-      stageUuid: "25e7d567-04dc-83cc-902e-27e0242e78ed"
+      stageUuid: "17bff0c3-e3e7-86f4-9622-bb8450832634"
     - stage: trinity
-      stageUuid: "69b5fffc-1c42-8693-9a5c-c6f6e9e54775"
+      stageUuid: "6544840d-08b3-818c-9f8f-ac9bc826b920"
     - stage: boundary
-      stageUuid: "4d38d7a8-a520-81d4-bae9-90f42b7af7e3"
+      stageUuid: "d505712b-453b-86a5-9e6a-be15374552cd"
     - stage: links
-      stageUuid: "c6fe3673-d968-8af7-8715-f0f0561e4c92"
+      stageUuid: "4c4128e5-8140-84c3-ade0-a6e65743818c"
     - stage: horo
-      stageUuid: "f67ad10d-d1cf-8d0e-9dc5-72138c156725"
+      stageUuid: "7df6610e-b356-8800-a7ae-a28605d09d2c"
     - stage: seal
-      stageUuid: "dd25307a-2923-8345-bb5c-586630ec8902"
+      stageUuid: "31477c24-de6d-824f-b77d-3a7ef25ce8ce"
     - stage: uuid
-      stageUuid: "fbd53a5a-dccc-824f-a9c8-582291ab6149"
+      stageUuid: "58a50123-9c48-8fe7-87ff-23ece34c0c7c"
 version: 2
 ---
 # info

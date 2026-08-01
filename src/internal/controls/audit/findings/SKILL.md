@@ -2,39 +2,14 @@
 name: findings
 description: "Use when recording, tracking, or resolving audit findings against internal controls — control deficiency, significant deficiency, material weakness, misstatement; severity, root cause, management response, remediation status, ISMS-audit (ISO/IEC 27007) and SOX §404 deficiency workflow. The audit-findings ISO-19011 evidence collection."
 atomPath: "internal/controls/audit/findings"
-coordinate: "internal/controls/audit/findings · 8/crest · c6127697"
-contentUuid: "17a3e96f-511c-51ea-b626-67e06dcd0cfb"
-diamondUuid: "547d6c2b-2895-87ce-97ed-f62f5bf3be3d"
-uuid: "c6127697-9a5e-8b5a-aab7-f9e074d6f00f"
-horo: 8
-bonds:
-  in:
-    - access
-    - akashic
-    - audit
-    - finding
-    - functions
-    - hooks
-    - law
-    - materiality
-    - plans
-    - proof
-    - provisions
-  out:
-    - access
-    - akashic
-    - finding
-    - functions
-    - hooks
-    - law
-    - materiality
-    - plans
-    - proof
-    - provisions
+coordinate: "internal/controls/audit/findings · 7/descent · 7aec21ed"
+contentUuid: "1c866b93-dec3-5d0a-8285-d887110f9c8e"
+diamondUuid: "d4285f92-f70f-85a4-9d6a-f731a3cf8ced"
+uuid: "7aec21ed-6159-8f5f-87ad-3b3a14b8922b"
+horo: 7
 typography:
   partition: internal
   bondDegree: 0
-  neighbors: []
 standards:
   - "COSO-2013"
   - "ISO-19011:2018 audit-finding"
@@ -44,38 +19,8 @@ standards:
   - "SOX §404 internal-controls deficiency-tracking"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - akashic
-    - hooks
-    - law
-    - plans
-    - proof
-  matrix:
-    - access
-    - akashic
-    - finding
-    - functions
-    - hooks
-    - law
-    - materiality
-    - plans
-    - proof
-    - provisions
-  backlinks:
-    - access
-    - akashic
-    - finding
-    - functions
-    - hooks
-    - law
-    - materiality
-    - plans
-    - proof
-    - provisions
 signatures:
-  computationUuid: "fe262fde-691a-8916-bb9e-a2a49141e0b5"
+  computationUuid: "cac08f13-e86a-8fc8-acb5-ab28160cad73"
   stages:
     - stage: path
       stageUuid: "793ca585-325a-8e30-96f9-74a39aff22b7"
@@ -86,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "6ed701a1-e071-890a-bc8e-ea3d8b841f5e"
     - stage: horo
-      stageUuid: "95e95277-bf55-8a9f-b9ae-6d79c6e4b110"
+      stageUuid: "6cc24334-c333-8804-b0b4-0853408502ab"
     - stage: seal
       stageUuid: "95e175e4-276a-82e7-a54c-a0a432dfff48"
     - stage: uuid
-      stageUuid: "9a14bcd4-4080-803b-b0d0-7bef3d21938c"
+      stageUuid: "699b4e12-18d0-8dda-bb3f-81885d9cd874"
 version: 2
 ---
 # audit-findings

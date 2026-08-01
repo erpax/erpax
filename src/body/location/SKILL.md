@@ -2,151 +2,19 @@
 name: location
 description: "Use when reasoning about location as a anatomical part of [[body]] — vocabulary pivot to @/location; nested not duplicated."
 atomPath: "body/location"
-coordinate: "body/location · 1/base · c9b062c7"
-contentUuid: "74a77397-04e9-5809-9e4f-7eb98067f8fb"
-diamondUuid: "e1512e9e-484d-8fe3-81a8-8e6780e1724b"
-uuid: "c9b062c7-8168-88fb-91ae-58de10840bf0"
-horo: 1
-bonds:
-  in:
-    - activity
-    - announcement
-    - applicable
-    - applicant
-    - body
-    - content
-    - created
-    - display
-    - dropoff
-    - feature
-    - founding
-    - game
-    - global
-    - home
-    - item
-    - job
-    - landmark
-    - law
-    - located
-    - location
-    - merge
-    - occupation
-    - service
-    - space
-    - specification
-    - sports
-    - study
-    - subcellular
-    - virtual
-    - work
-  out:
-    - activity
-    - announcement
-    - applicable
-    - applicant
-    - body
-    - content
-    - created
-    - display
-    - dropoff
-    - feature
-    - founding
-    - game
-    - global
-    - home
-    - item
-    - job
-    - landmark
-    - law
-    - located
-    - location
-    - merge
-    - occupation
-    - service
-    - space
-    - specification
-    - sports
-    - study
-    - subcellular
-    - virtual
-    - work
+coordinate: "body/location · 8/crest · 7683abe2"
+contentUuid: "cb4901d4-d9e9-5d2e-9a0e-5b143a04de64"
+diamondUuid: "ed4e452b-4a4d-87cb-8edd-42934e944cff"
+uuid: "7683abe2-4481-8502-8cdd-15c439723ff7"
+horo: 8
 typography:
   partition: body
   bondDegree: 121
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - body
-    - law
-    - location
-    - merge
-  matrix:
-    - activity
-    - announcement
-    - applicable
-    - applicant
-    - body
-    - content
-    - created
-    - display
-    - dropoff
-    - feature
-    - founding
-    - game
-    - global
-    - home
-    - item
-    - job
-    - landmark
-    - law
-    - located
-    - location
-    - merge
-    - occupation
-    - service
-    - space
-    - specification
-    - sports
-    - study
-    - subcellular
-    - virtual
-    - work
-  backlinks:
-    - activity
-    - announcement
-    - applicable
-    - applicant
-    - body
-    - content
-    - created
-    - display
-    - dropoff
-    - feature
-    - founding
-    - game
-    - global
-    - home
-    - item
-    - job
-    - landmark
-    - law
-    - located
-    - location
-    - merge
-    - occupation
-    - service
-    - space
-    - specification
-    - sports
-    - study
-    - subcellular
-    - virtual
-    - work
 signatures:
-  computationUuid: "2a6eebb8-5230-8e06-949d-c7c40a0a6935"
+  computationUuid: "91481f5f-cbec-84a2-9de3-7881e2b3ad01"
   stages:
     - stage: path
       stageUuid: "50f4b786-823b-8cd5-a456-79797c7829bc"
@@ -157,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "53616b08-ff89-8a39-8416-4901290db4b9"
     - stage: horo
-      stageUuid: "0bebf8ab-62e1-8408-904e-d76cb79facbd"
+      stageUuid: "65bf052f-d322-8375-b55e-483f6be0cc16"
     - stage: seal
       stageUuid: "cf2efc0a-f729-84f8-ba85-9f2eab73a132"
     - stage: uuid
-      stageUuid: "d7a30585-826d-82ad-9dec-752879fc6e89"
+      stageUuid: "275dde22-9176-83f6-95e0-931c0a4e827c"
 version: 2
 ---
 # body/location — anatomical part

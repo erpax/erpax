@@ -116,6 +116,26 @@ const CURATED_STANDARDS: ReadonlyArray<RegisteredStandard> = [
 
   // — Money, banking identifiers & payments —
   { id: 'ISO-4217', family: 'iso', title: 'Currency codes', match: '4217' },
+  // ADDED 2026-08-01 — cited by the corpus and absent from the registry. Found by matching every
+  // @standard/@rfc banner against every registered matcher: 777 citations across 416 distinct heads
+  // matched NOTHING. These are the load-bearing ones, by citation count.
+  //
+  // `match` is EXPLICIT on each because the banner text is captured AFTER the sigil — `@rfc 3986 …`
+  // yields "3986 uniform-resource-identifier", which an `RFC[- ]?3986` matcher never sees. Both
+  // forms are accepted, and every bare number is \b-bounded on both sides so it cannot swallow a
+  // longer one (the ILO-C001 defect, where an unbounded /001/ matched ISO 27001 120 times).
+  { id: 'RFC-9110', family: 'rfc', title: 'HTTP Semantics', match: 'RFC[- ]?9110|\\b9110\\b' },
+  { id: 'RFC-3986', family: 'rfc', title: 'Uniform Resource Identifier (URI): Generic Syntax', match: 'RFC[- ]?3986|\\b3986\\b' },
+  { id: 'RFC-8259', family: 'rfc', title: 'The JavaScript Object Notation (JSON) Data Interchange Format', match: 'RFC[- ]?8259|\\b8259\\b' },
+  { id: 'RFC-5646', family: 'rfc', title: 'Tags for Identifying Languages', match: 'RFC[- ]?5646|\\b5646\\b' },
+  { id: 'W3C-HTML5', family: 'w3c', title: 'HTML — the living standard', match: 'W3C HTML5|\\bHTML5\\b' },
+  { id: 'ISO/IEC-19510', family: 'iso', title: 'Business Process Model and Notation (BPMN) 2.0', match: 'ISO/IEC[- ]?19510|\\b19510\\b' },
+  { id: 'IAS-10', family: 'ifrs', title: 'Events after the Reporting Period', match: 'IAS[- ]?10\\b' },
+  // ADDED 2026-08-01: the LEI standard was missing while a GLEIF lane was being wired. Dropping
+  // the lane for want of a registry row would have been backwards — the registry grows to meet the
+  // corpus, it does not bound it. `match` is explicit so the id cannot fall through to the digit-run
+  // fallback and collide the way ILO-C001 did with ISO 27001.
+  { id: 'ISO-17442', family: 'iso', title: 'Legal Entity Identifier (LEI)', match: 'ISO[- ]?17442|\\bLEI\\b' },
   { id: 'ISO-13616-1', family: 'iso', title: 'IBAN — International Bank Account Number', match: '13616' },
   { id: 'ISO-9362', family: 'iso', title: 'BIC — Business Identifier Code (SWIFT)', match: '9362' },
   { id: 'ISO-17442-1', family: 'iso', title: 'LEI — Legal Entity Identifier', match: '17442' },

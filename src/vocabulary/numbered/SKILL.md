@@ -1,68 +1,35 @@
 ---
 name: numbered
 description: "Use when reasoning about numbered as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/numbered
-coordinate: numbered · 8/crest · 64fc7a35
-contentUuid: "88fb8096-69aa-5222-b8d0-3af27633023d"
-diamondUuid: "af7e1d5b-31c9-87d8-8507-334cb27bf318"
-uuid: "64fc7a35-6560-8489-b881-52b592cf6fd0"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - position
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - position
-    - sti
+atomPath: "vocabulary/numbered"
+coordinate: "vocabulary/numbered · 4/weave · b1a70cad"
+contentUuid: "f3801b17-4261-5579-9bfb-616ed18196d2"
+diamondUuid: "88af4af8-bc0f-8c6d-a0d1-f21fa6e1db23"
+uuid: "b1a70cad-9866-885a-9cf4-d8b33d6976aa"
+horo: 4
 typography:
-  partition: numbered
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - position
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - position
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - position
-    - sti
 signatures:
-  computationUuid: "1c676ef1-6abf-87f3-acc5-15942d283342"
+  computationUuid: "5f450cf4-39f5-8615-8ddc-efb6e76c7e3a"
   stages:
     - stage: path
-      stageUuid: "bff68073-26c3-86d0-a50e-62102f89a583"
+      stageUuid: "19815b37-f7d5-8630-9c78-16458761523b"
     - stage: trinity
-      stageUuid: "74ca290b-448e-8271-8b98-5c9c2940b9bb"
+      stageUuid: "1c180d57-815a-8123-a66c-2eb84ab51ddc"
     - stage: boundary
-      stageUuid: "ce46cfc5-0706-8507-8674-6901acfec28c"
+      stageUuid: "5e695d4a-b75e-8dc2-bf5f-8c2799427ac8"
     - stage: links
-      stageUuid: "3ef3b8be-c054-846c-a5d5-7027a13bc436"
+      stageUuid: "7723b539-8aeb-8a64-a03d-59187f54fb0b"
     - stage: horo
-      stageUuid: "353457ad-2678-8e8f-a48c-3a40c8645ab2"
+      stageUuid: "d9e4b05e-3ebe-8bdc-8a13-d057b6edfb05"
     - stage: seal
-      stageUuid: "877eb64f-b66d-8934-852a-a30209299297"
+      stageUuid: "ab68889b-1ccd-806a-93cf-ee62479deabf"
     - stage: uuid
-      stageUuid: "250b3788-8571-8e96-ace2-791c10ff2944"
+      stageUuid: "01c86b02-24d8-8d92-ac2b-b681d27aeda3"
 version: 2
 ---
 # numbered

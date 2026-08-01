@@ -1,77 +1,35 @@
 ---
 name: op
 description: "Use when reasoning about op as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/op
-coordinate: op · 1/base · efcc623e
-contentUuid: "be934570-924b-5534-ba27-12193e5bc838"
-diamondUuid: "3572fbad-1cd1-8661-b222-409afe4417dc"
-uuid: "efcc623e-d56f-86a1-915e-2d8e36acef71"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - op
-    - post
-    - pre
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - op
-    - post
-    - pre
-    - sti
+atomPath: "vocabulary/op"
+coordinate: "vocabulary/op · 8/crest · 999beb3f"
+contentUuid: "a81a0194-822f-5af1-98e5-5b8d5611a18a"
+diamondUuid: "3288a7b3-499f-82d8-bd85-3417d5a221e0"
+uuid: "999beb3f-5b98-88b9-8026-c2236ff2b384"
+horo: 8
 typography:
-  partition: op
-  bondDegree: 26
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 22
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - post
-    - pre
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - op
-    - post
-    - pre
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - op
-    - post
-    - pre
-    - sti
 signatures:
-  computationUuid: "5e26784c-5d96-8778-be21-f648a5825815"
+  computationUuid: "c69a4c8f-b625-8206-8984-6293274b9a06"
   stages:
     - stage: path
-      stageUuid: "3213de27-64c9-8c10-8806-e7e121b554cb"
+      stageUuid: "f85de56c-c795-8484-8692-b30c47ce2f94"
     - stage: trinity
-      stageUuid: "0e8c3544-30a4-8520-943a-cb9803d78344"
+      stageUuid: "78e440a1-487d-852a-a92a-c0cc532666fa"
     - stage: boundary
-      stageUuid: "f482b020-ab12-8556-9155-f6389f798eaf"
+      stageUuid: "77a29feb-5aa8-8b8e-b50a-2ea5d06b5559"
     - stage: links
-      stageUuid: "7483329e-ba8f-8a1a-b3bf-6ad3c6dab8db"
+      stageUuid: "b229dc0d-1bca-8eb5-ba39-f84c70d908e7"
     - stage: horo
-      stageUuid: "2ef09ec5-7b92-833d-8d18-b7258ed95e95"
+      stageUuid: "8bf14712-1f17-8143-b842-396d1ce04371"
     - stage: seal
-      stageUuid: "afeeb191-3eaf-80c2-84dc-7b01d89bae3b"
+      stageUuid: "c2685b0a-cc60-889b-b1aa-5e194769bd79"
     - stage: uuid
-      stageUuid: "8f491a21-5894-8297-8484-6c3839d22ef1"
+      stageUuid: "9cbf0ec8-6056-8ea9-9a18-af00edaafdd5"
 version: 2
 ---
 # op

@@ -1,53 +1,35 @@
 ---
 name: occupancy
 description: "Use when reasoning about occupancy — The allowed total occupancy for the accommodation in persons (including infants etc). For individual accommodations, this is not necessarily the legal maximum but defines the permi"
-atomPath: vocabulary/occupancy
-coordinate: occupancy · 5/round · c90c61a4
-contentUuid: "836803e3-499e-5b13-9172-3ebbfab9f325"
-diamondUuid: "26f0490e-7d8e-804b-9ffb-ac69832eb7de"
-uuid: "c90c61a4-82ba-814c-b9d1-385d0b3f28a5"
-horo: 5
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/occupancy"
+coordinate: "vocabulary/occupancy · 1/base · 85e90eb0"
+contentUuid: "223de6d0-8038-5288-bb20-137f0d2babdb"
+diamondUuid: "29af95c4-aa88-85a7-aeb6-8cfd5df598bc"
+uuid: "85e90eb0-3d85-8638-acc9-b23cd2ec3409"
+horo: 1
 typography:
-  partition: occupancy
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "ac53a78a-5dd0-87e5-b728-b47194738e44"
+  computationUuid: "103ecc51-0723-8d8d-babb-f96a7da62d77"
   stages:
     - stage: path
-      stageUuid: "e60f1669-d4a2-84a4-b508-aa25527aa0ba"
+      stageUuid: "cc319b43-d03f-8ed4-813d-e709dbef5177"
     - stage: trinity
-      stageUuid: "66d14004-8d8d-817b-974d-a6ea70ebaf6c"
+      stageUuid: "6d23a408-da21-8cd4-bd9f-9ead3bcf0953"
     - stage: boundary
-      stageUuid: "0411aac6-9e20-8046-86d3-7b552b7fc35d"
+      stageUuid: "b9ebfda3-0d44-84c3-8124-4a27d9ee883f"
     - stage: links
-      stageUuid: "570a9e22-c372-858d-b796-b8f19df19e19"
+      stageUuid: "0b8fc051-678b-8633-b7d8-fdc269b14fb5"
     - stage: horo
-      stageUuid: "df43ccb5-9c34-82d5-a39c-c9b0b62f3b38"
+      stageUuid: "16b5742b-8c58-85ac-939c-67dce311de85"
     - stage: seal
-      stageUuid: "85f012d9-5d50-849f-8339-0c27ee67d599"
+      stageUuid: "940b7fad-b3e9-8bcd-849e-d82e2aa71f00"
     - stage: uuid
-      stageUuid: "53947754-752c-884b-ac0f-fd1868ebc6f4"
+      stageUuid: "bc2aa1da-0e3b-86d6-b798-3dd4b3800698"
 version: 2
 ---
 # occupancy

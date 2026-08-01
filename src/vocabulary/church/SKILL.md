@@ -1,53 +1,35 @@
 ---
 name: church
 description: Use when reasoning about church — A church.
-atomPath: vocabulary/church
-coordinate: church · 4/weave · d3df9b74
-contentUuid: "a69abc8a-b42b-5cf2-a5c0-35ac9b49616d"
-diamondUuid: "dd13adbd-0d2f-8065-b7fe-f372a8935427"
-uuid: "d3df9b74-f576-8b9d-8247-5e37f6daf3b9"
+atomPath: "vocabulary/church"
+coordinate: "vocabulary/church · 4/weave · eca9607a"
+contentUuid: "d501e22e-541a-5b15-b79d-5875797a509f"
+diamondUuid: "49a1119a-3630-820e-a26e-3288fa167532"
+uuid: "eca9607a-301f-8eb5-bd19-3c75c0973dc0"
 horo: 4
-bonds:
-  in:
-    - catholic
-    - law
-  out:
-    - catholic
-    - law
 typography:
-  partition: church
+  partition: vocabulary
   bondDegree: 7
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - catholic
-    - law
-  matrix:
-    - catholic
-    - law
-  backlinks:
-    - catholic
-    - law
 signatures:
-  computationUuid: "0deb1b15-7b87-8eb2-b46c-be48b76caec9"
+  computationUuid: "e28e5513-bd1f-8fac-9f32-41155eaa4660"
   stages:
     - stage: path
-      stageUuid: "bca31138-c65f-852d-828b-ad3415e325f5"
+      stageUuid: "807b071b-d7e7-8d9b-8756-2ce431bf5dd5"
     - stage: trinity
-      stageUuid: "27eeaa2a-9478-84ca-a574-0fb01207cb56"
+      stageUuid: "e40eca81-2691-829a-94cd-c6f9b3e5f255"
     - stage: boundary
-      stageUuid: "48ed1e96-9e04-8d48-9a5b-8cc4bc7314ac"
+      stageUuid: "5e0bf2e7-b8a1-81d2-b97a-27ec18633b7c"
     - stage: links
-      stageUuid: "1b101b0b-1021-8235-8d56-5bd5fa40aa63"
+      stageUuid: "7748793a-6720-897c-ab36-79194a29f5d6"
     - stage: horo
-      stageUuid: "92301b77-9c42-83e7-896b-5ff7ee806480"
+      stageUuid: "41b3e327-9698-817a-ad56-e2b466c2f78a"
     - stage: seal
-      stageUuid: "8a1be5a5-709d-85d6-b9a2-fbc3ac4f91fd"
+      stageUuid: "5fe61b7a-1815-8f66-9cf5-c72d10bc395d"
     - stage: uuid
-      stageUuid: "95d570fa-938c-8ffb-9ded-3dbd17783bab"
+      stageUuid: "99fa0c44-f71e-829d-89eb-e3f38b429dde"
 version: 2
 ---
 # church

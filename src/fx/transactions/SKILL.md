@@ -2,40 +2,14 @@
 name: transactions
 description: "Use when logging or auditing IAS-21 FX events — spot conversions, period-end monetary-item revaluations, hedge settlements, or consolidation translation adjustments; tracing exchangeRate to the currency-rates master; booking the resulting FX gain/loss journal entry. The IAS-21 FX conversion and revaluation event register."
 atomPath: "fx/transactions"
-coordinate: "fx/transactions · 5/round · 847cc3cc"
-contentUuid: "ed576894-327e-529d-bd04-41c95adea568"
-diamondUuid: "75602304-a48c-8682-be2b-db32bd739f90"
-uuid: "847cc3cc-6919-8652-9f9f-da0055019d0d"
-horo: 5
-bonds:
-  in:
-    - accounting
-    - entries
-    - fractal
-    - hedge
-    - horo
-    - law
-    - proof
-    - rates
-    - standard
-    - transaction
-    - trinity
-  out:
-    - accounting
-    - entries
-    - fractal
-    - hedge
-    - horo
-    - law
-    - proof
-    - rates
-    - standard
-    - transaction
-    - trinity
+coordinate: "fx/transactions · 8/crest · b928adb8"
+contentUuid: "5f2d1221-683e-5197-9f3a-5bf67434424a"
+diamondUuid: "7837a21a-8cc0-8e72-b55f-73fade63e888"
+uuid: "b928adb8-88f5-81ca-8bea-9568f3cbb3f8"
+horo: 8
 typography:
   partition: fx
   bondDegree: 54
-  neighbors: []
 standards:
   - "IFRS IAS-21 §21 §23 §28 §29 effects-of-changes-in-foreign-exchange-rates"
   - "IFRS IAS-21 §39 foreign-currency-translation"
@@ -50,44 +24,8 @@ standards:
   - "US-GAAP ASC-830-20 foreign-currency-transactions"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - entries
-    - fractal
-    - horo
-    - law
-    - proof
-    - rates
-    - standard
-    - transaction
-    - trinity
-  matrix:
-    - accounting
-    - entries
-    - fractal
-    - hedge
-    - horo
-    - law
-    - proof
-    - rates
-    - standard
-    - transaction
-    - trinity
-  backlinks:
-    - accounting
-    - entries
-    - fractal
-    - hedge
-    - horo
-    - law
-    - proof
-    - rates
-    - standard
-    - transaction
-    - trinity
 signatures:
-  computationUuid: "4458b46e-4c31-8136-80c8-4284bc78eb8f"
+  computationUuid: "77d41192-e678-89ef-a3a1-93db7d585462"
   stages:
     - stage: path
       stageUuid: "f4e0d4d1-e66c-8343-bb9c-44d5c6c8fd88"
@@ -98,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "de806bbc-35a1-8166-8d14-29aa9b2c1742"
     - stage: horo
-      stageUuid: "17aeb367-b3b6-801d-91fc-d6e194a646b1"
+      stageUuid: "17a4b4e8-a81a-89fc-8fd0-0a59eb021bd7"
     - stage: seal
       stageUuid: "64793975-f9ff-82f3-8d9b-6ac2d532036e"
     - stage: uuid
-      stageUuid: "7be286ab-459e-8e56-8291-170ec7687524"
+      stageUuid: "2755135c-91a7-84c8-84c4-8ffab61814d9"
 version: 2
 ---
 # fx-transactions

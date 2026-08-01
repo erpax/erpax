@@ -1,63 +1,35 @@
 ---
 name: misconceptions
 description: "Use when reasoning about misconceptions as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/misconceptions
-coordinate: misconceptions · 8/crest · 1fc50831
-contentUuid: "ff78ec8f-a49c-580b-aa69-2cec6b75c1e1"
-diamondUuid: "31b3e17a-a643-8e65-a806-a915985024ce"
-uuid: "1fc50831-6238-8137-974b-bc5f0e9cf9a8"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/misconceptions"
+coordinate: "vocabulary/misconceptions · 7/descent · 1779630e"
+contentUuid: "4a3d935a-3105-51bf-be5f-0011f76ee82b"
+diamondUuid: "2aae94fa-79c6-858c-bc70-9195dae32f1b"
+uuid: "1779630e-d890-88c8-89fc-55226a1d7a0e"
+horo: 7
 typography:
-  partition: misconceptions
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "d2d947fd-4617-8fba-a0ac-d6d645b8b7b6"
+  computationUuid: "b8177883-be56-8f87-8020-42ed5159e111"
   stages:
     - stage: path
-      stageUuid: "2af1bb41-8bdc-85d4-94d5-04fccab1c6ba"
+      stageUuid: "d282cd20-38cf-8754-8038-57c3b12bed04"
     - stage: trinity
-      stageUuid: "9b3b0526-3996-8cd7-aad1-8587d3e1a358"
+      stageUuid: "f51e6f1b-467c-8955-8dab-ce6413e9fc67"
     - stage: boundary
-      stageUuid: "0a8239b9-0f67-8894-a67e-eb21f612baf8"
+      stageUuid: "a5c1def6-c242-8539-a511-c9338f1144dd"
     - stage: links
-      stageUuid: "9f763df4-58ed-8aaf-9fd0-9f5c263328b1"
+      stageUuid: "3f791919-4f31-8060-b183-bb3a5ccbacdf"
     - stage: horo
-      stageUuid: "a790774d-c6a9-8de2-a42b-95048595eb03"
+      stageUuid: "56b7ae27-5da4-8db6-8a1c-fa3d2dbc8e92"
     - stage: seal
-      stageUuid: "920d9986-b48f-86d2-98fe-cae80a51d0e2"
+      stageUuid: "0cca9bf8-5750-8c25-b2fa-2a768ae553f7"
     - stage: uuid
-      stageUuid: "05bc2e21-e8db-8bf5-ba77-07b7d16c979d"
+      stageUuid: "d3092d9f-198a-8e9c-9628-48902cb958ae"
 version: 2
 ---
 # misconceptions

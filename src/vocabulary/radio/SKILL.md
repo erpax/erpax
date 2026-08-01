@@ -1,113 +1,35 @@
 ---
 name: radio
 description: "Use when reasoning about radio as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/radio
-coordinate: radio · 2/share · 7a21360f
-contentUuid: "343850fa-8275-5362-b5c5-f39c10a57ad0"
-diamondUuid: "fe763920-81a3-8a13-9892-7640d62bb64f"
-uuid: "7a21360f-9fa9-87cc-a8be-5ea341326de9"
-horo: 2
-bonds:
-  in:
-    - am
-    - broadcast
-    - channel
-    - clip
-    - collapse
-    - episode
-    - fm
-    - law
-    - merge
-    - season
-    - series
-    - service
-    - station
-    - sti
-  out:
-    - am
-    - broadcast
-    - channel
-    - clip
-    - collapse
-    - episode
-    - fm
-    - law
-    - merge
-    - season
-    - series
-    - service
-    - station
-    - sti
+atomPath: "vocabulary/radio"
+coordinate: "vocabulary/radio · 4/weave · 5c1e7173"
+contentUuid: "7cff3152-b94d-5d64-bf59-713b0c5d59e8"
+diamondUuid: "4a712972-977e-8d5d-8b1f-b69003fccea1"
+uuid: "5c1e7173-186d-8f1a-a4d1-e8d825373114"
+horo: 4
 typography:
-  partition: radio
+  partition: vocabulary
   bondDegree: 51
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - am
-    - broadcast
-    - channel
-    - clip
-    - collapse
-    - episode
-    - fm
-    - law
-    - merge
-    - season
-    - series
-    - service
-    - station
-    - sti
-  matrix:
-    - am
-    - broadcast
-    - channel
-    - clip
-    - collapse
-    - episode
-    - fm
-    - law
-    - merge
-    - season
-    - series
-    - service
-    - station
-    - sti
-  backlinks:
-    - am
-    - broadcast
-    - channel
-    - clip
-    - collapse
-    - episode
-    - fm
-    - law
-    - merge
-    - season
-    - series
-    - service
-    - station
-    - sti
 signatures:
-  computationUuid: "702f608f-4fbf-8198-ac47-f05a60844afa"
+  computationUuid: "497167d8-e339-8b1f-b3f2-61ca32d13b6c"
   stages:
     - stage: path
-      stageUuid: "28e5de52-cbe2-8879-b614-48d1394c34bf"
+      stageUuid: "8f13456f-195d-882e-8961-befd707283cd"
     - stage: trinity
-      stageUuid: "f3d817ee-9068-8e1c-bf7d-04d4ead903d9"
+      stageUuid: "9886883c-27dd-8a51-aac1-b222778458cb"
     - stage: boundary
-      stageUuid: "54d76158-befe-87cd-a5fe-6c8554cf9e45"
+      stageUuid: "9505d1a3-5718-82d2-a827-aefd85da013f"
     - stage: links
-      stageUuid: "6a750a3f-432e-8b24-9eff-0bd0dd32d49a"
+      stageUuid: "d450fd35-bb01-8ff0-86ce-a9ad941e7c16"
     - stage: horo
-      stageUuid: "68bdfdeb-e357-834f-8bd0-bfafa833ed2b"
+      stageUuid: "57d2cb06-b906-83c0-87b0-6b0f67d10dd7"
     - stage: seal
-      stageUuid: "ee869a61-6673-8786-9932-0cbaba460673"
+      stageUuid: "e9d65a6e-377a-89fe-85bb-a604134f90eb"
     - stage: uuid
-      stageUuid: "6584a10d-b9c9-86b0-a55e-469c8ce2d941"
+      stageUuid: "87abec43-5735-864d-9c2b-08e5563ae37c"
 version: 2
 ---
 # radio

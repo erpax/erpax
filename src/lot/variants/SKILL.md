@@ -2,70 +2,22 @@
 name: variants
 description: "Use when modeling a lot's per-variant line — the size/colour option breakdown whose total IS the sum of its options (100% data-verified), monotonic through the ordered→delivered funnel."
 atomPath: "lot/variants"
-coordinate: "lot/variants · 7/descent · 790c4b6e"
-contentUuid: "c19ba459-b4a1-5e8c-8917-e6a5edd7b096"
-diamondUuid: "1e21aa71-eea4-8596-ac4c-26fd35b094b3"
-uuid: "790c4b6e-fcdf-85cd-a07e-2905afdfdb9c"
-horo: 7
-bonds:
-  in:
-    - accounting
-    - balance
-    - coordinate
-    - fields
-    - items
-    - law
-    - lot
-    - lots
-    - phases
-  out:
-    - accounting
-    - balance
-    - coordinate
-    - fields
-    - items
-    - law
-    - lots
-    - phases
+coordinate: "lot/variants · 5/round · 080df855"
+contentUuid: "4c27e082-2ddd-56c9-96d1-198b3617f9fd"
+diamondUuid: "c9ae11b5-19e6-8575-8e23-896d6eea1ad5"
+uuid: "080df855-0b51-81bb-a6dc-da4105858ef4"
+horo: 5
 typography:
   partition: lot
   bondDegree: 26
-  neighbors: []
 standards:
   - "ISA-95"
   - "ISA-95:2013 / IEC-62264-1 material-lot sublot"
   - "UBL-2.1"
   - "double-entry — every counter is a balanced number; the variant"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - balance
-    - coordinate
-    - fields
-    - law
-    - lots
-    - phases
-  matrix:
-    - accounting
-    - balance
-    - coordinate
-    - fields
-    - items
-    - law
-    - lots
-    - phases
-  backlinks:
-    - accounting
-    - balance
-    - coordinate
-    - fields
-    - items
-    - law
-    - lots
-    - phases
 signatures:
-  computationUuid: "abb982ef-3a90-8ba3-8a82-1165dca4a19b"
+  computationUuid: "53886ee5-82d1-8253-8853-03a4d58fb3e1"
   stages:
     - stage: path
       stageUuid: "36078a37-8df6-8282-b320-004655785d78"
@@ -76,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "bf9799bf-0222-8a14-a441-3e522d337d69"
     - stage: horo
-      stageUuid: "52f435d1-0568-824c-a2d1-3a30b9a5d68c"
+      stageUuid: "ac1833af-3de9-809c-81ee-0e4c89335d05"
     - stage: seal
       stageUuid: "147b92a6-7bf3-8c14-a835-f323b5d0ae52"
     - stage: uuid
-      stageUuid: "11a4eab9-131f-8c2f-8114-ce5b3401e9e7"
+      stageUuid: "678d0a74-afb6-8812-9eb3-c5df6f5ea066"
 version: 2
 ---
 # lot/variants — the option roll-up (the variant total IS the sum of its parts)

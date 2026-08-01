@@ -1,63 +1,35 @@
 ---
 name: means
 description: "Use when reasoning about means as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/means
-coordinate: means · 8/crest · a92b74cd
-contentUuid: "bc8cca48-b0ac-51a9-b73a-5ac1952d0137"
-diamondUuid: "f1ea1298-00f1-82ce-bd31-6ff617883d7f"
-uuid: "a92b74cd-af17-8b34-82c1-ae10a842a676"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/means"
+coordinate: "vocabulary/means · 2/share · d3b87d05"
+contentUuid: "01844b6f-cb08-553f-a37a-260585864dd3"
+diamondUuid: "1e18d26e-7c96-8a31-8003-b6d9014dd8d0"
+uuid: "d3b87d05-7d50-8c9a-b4bb-683e9604c9f9"
+horo: 2
 typography:
-  partition: means
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "a9f5a404-8e08-8abc-aedd-479558405cdb"
+  computationUuid: "c37a8a7d-653f-8e28-932c-0e0596b8e97c"
   stages:
     - stage: path
-      stageUuid: "b63006c9-bf19-81b1-944b-86191e6306ae"
+      stageUuid: "d6a6356c-9690-8fe7-ba05-0c0311c12671"
     - stage: trinity
-      stageUuid: "58073e81-d883-8861-9d11-f639c10be7e4"
+      stageUuid: "808e7741-e5b7-8a39-aa39-7623bdf060f1"
     - stage: boundary
-      stageUuid: "875312bc-1180-89bc-bb7b-d8b70d6e2275"
+      stageUuid: "f220b1da-f90c-89cf-9531-40c9030ade97"
     - stage: links
-      stageUuid: "6904b2aa-f4dd-8451-aedd-be6080f8554b"
+      stageUuid: "fe8a2466-142d-86fb-9c56-2555a419235e"
     - stage: horo
-      stageUuid: "0bca99b5-9dfd-8ac3-9596-2b689df6e101"
+      stageUuid: "27a7a971-1137-8f30-a665-38dcf9d7b7f4"
     - stage: seal
-      stageUuid: "6939e21a-ffd5-8004-835d-90b4fd331f7d"
+      stageUuid: "50b38b3b-f5c4-8378-ad19-ad3cac2a748d"
     - stage: uuid
-      stageUuid: "f3d8411f-91d9-85ac-8785-1b4c4c19eed5"
+      stageUuid: "93123afe-58f5-880e-9bc9-b316a16cdff8"
 version: 2
 ---
 # means

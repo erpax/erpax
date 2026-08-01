@@ -1,36 +1,24 @@
 ---
 name: structures
 description: "Use when mapping legal entity types to their jurisdiction-specific legal forms — local name, abbreviation, governance structure (single/board/supervisory), tax treatment (corporate/pass-through/exempt), audit requirement and regulatory characteristics per taxing jurisdiction. The reference collection for entity-type-to-legal-form bindings."
-atomPath: taxing/jurisdictions/entity/legal/structures
-coordinate: taxing/jurisdictions/entity/legal/structures · 1/base · f975e9f5
-contentUuid: "7ab0a235-5505-5915-a9b6-d2b22dc4be1b"
-diamondUuid: "65dd90bd-4b1e-8186-9810-b71a5984614d"
-uuid: "f975e9f5-425a-88cf-9715-ad1c6f1c3e2d"
-horo: 1
-bonds:
-  in:
-    - jurisdictions
-    - legal
-  out:
-    - jurisdictions
+atomPath: "taxing/jurisdictions/entity/legal/structures"
+coordinate: "taxing/jurisdictions/entity/legal/structures · 2/share · ad2c9745"
+contentUuid: "a55e0f26-6008-5fd5-bb2b-e8557363e83e"
+diamondUuid: "dd2fdde5-9649-80d1-a8c7-c34b6304ee1e"
+uuid: "ad2c9745-e8b6-850f-9034-b3d8e268bb6c"
+horo: 2
 typography:
   partition: taxing
   bondDegree: 4
-  neighbors: []
 standards:
   - "IFRS-10 §B86 reporting-entity"
   - "ISO-17442-1"
   - "ISO-17442-1:2020 legal-entity-identifier"
+  - "ISO-17442-1:2020 legal-entity-identifier`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - jurisdictions
-  matrix:
-    - jurisdictions
-  backlinks:
-    - jurisdictions
 signatures:
-  computationUuid: "5a50cbb1-d20e-86f1-af1f-6a38ff05ce50"
+  computationUuid: "3b24a43e-016e-8d6e-ad02-75530f77d532"
   stages:
     - stage: path
       stageUuid: "09e5f36d-9485-8d71-a05d-6a62b594cc0d"
@@ -41,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "120e887d-dc17-818e-94ee-78e38a1caee3"
     - stage: horo
-      stageUuid: "d25e83c2-e295-8be3-a427-49e0c0febb74"
+      stageUuid: "382fa42f-adae-867a-8ded-80c61b20b7d0"
     - stage: seal
       stageUuid: "4de7642f-30ca-86a9-b5dd-c33b54aaaf0c"
     - stage: uuid
-      stageUuid: "b322672b-ed54-8bfd-a6fc-74f18acd2816"
+      stageUuid: "9dcd5d95-fd33-8cbf-a28c-26f3fe2a6ddb"
 version: 2
 ---
 # entity-legal-structures

@@ -1,53 +1,35 @@
 ---
 name: participant
 description: "Use when reasoning about participant — Other co-agents that participated in the action indirectly. E.g. John wrote a book with *Steve*."
-atomPath: vocabulary/participant
-coordinate: participant · 4/weave · d2a5b05f
-contentUuid: "84a26bec-413f-5497-8f86-6efffa3dfe39"
-diamondUuid: "ba4f314f-475b-8fff-9bc5-1ffe5cb996d3"
-uuid: "d2a5b05f-6786-8431-ba9a-861de9cfda57"
-horo: 4
-bonds:
-  in:
-    - law
-    - person
-  out:
-    - law
-    - person
+atomPath: "vocabulary/participant"
+coordinate: "vocabulary/participant · 2/share · 0d82336a"
+contentUuid: "3949f4f5-9f4b-53d4-9408-fcfa3a4674ce"
+diamondUuid: "feaf939a-129b-8c68-a493-4141c50e43b3"
+uuid: "0d82336a-cc80-8dfb-a3fb-1e03aca9cae7"
+horo: 2
 typography:
-  partition: participant
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - person
-  matrix:
-    - law
-    - person
-  backlinks:
-    - law
-    - person
 signatures:
-  computationUuid: "63bf5ef9-5321-8272-9f09-207dbfda3662"
+  computationUuid: "a0c350d3-1633-8490-8782-33bf860ce22c"
   stages:
     - stage: path
-      stageUuid: "83d59e2d-37aa-8b71-ac9c-a12ea35fb067"
+      stageUuid: "ff904cc7-e9ee-889e-9bc2-1c413aed8526"
     - stage: trinity
-      stageUuid: "d1b4829d-acc0-8490-b2fe-842fab906a2a"
+      stageUuid: "3cce668b-2d45-8494-97f2-e71e13ec2a09"
     - stage: boundary
-      stageUuid: "8c38bf56-31bf-8e58-b43a-270fc5f4b8e4"
+      stageUuid: "4c351e73-3717-855e-a447-f85588af5ba2"
     - stage: links
-      stageUuid: "7f24568c-7b78-8383-96c1-ad1dc9bf6f8f"
+      stageUuid: "1b537842-35f3-84b7-9903-ec1178cec6be"
     - stage: horo
-      stageUuid: "b92e0d00-51b7-83c5-88d7-24a1b0363df2"
+      stageUuid: "ed8d5cac-f665-85a0-8ba9-ea5583736d7f"
     - stage: seal
-      stageUuid: "59b47832-6c66-81da-aabc-a04f9a0c4e63"
+      stageUuid: "08d06197-ee09-87d9-be9c-62dcb3cf8f7f"
     - stage: uuid
-      stageUuid: "47c793e6-25cb-8f41-a297-1e019bf6af70"
+      stageUuid: "ed3ec879-03af-8de3-a004-4ce17d857367"
 version: 2
 ---
 # participant

@@ -1,53 +1,35 @@
 ---
 name: pond
 description: Use when reasoning about pond — A pond.
-atomPath: vocabulary/pond
-coordinate: pond · 4/weave · 46003292
-contentUuid: "b751672f-35f7-59c5-9258-50c2626b286c"
-diamondUuid: "deb94e39-7ffb-8117-a73f-afdb21de10cd"
-uuid: "46003292-07e3-8da3-942f-d8835e628901"
-horo: 4
-bonds:
-  in:
-    - law
-    - place
-  out:
-    - law
-    - place
+atomPath: "vocabulary/pond"
+coordinate: "vocabulary/pond · 1/base · 46443c5f"
+contentUuid: "61034b35-9156-5ca3-a793-c0fdc46251ec"
+diamondUuid: "2c217e14-2fe2-8317-9cf4-dcb50a85e068"
+uuid: "46443c5f-22c8-863d-bec1-f689ef415a80"
+horo: 1
 typography:
-  partition: pond
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - place
-  matrix:
-    - law
-    - place
-  backlinks:
-    - law
-    - place
 signatures:
-  computationUuid: "190e6a01-8bc2-8954-b83b-83b9de3ba589"
+  computationUuid: "4d1803a4-4302-88e8-9695-b99b40d0dd14"
   stages:
     - stage: path
-      stageUuid: "f5ef3d7e-7b39-8ee1-836b-c27d521b9c18"
+      stageUuid: "be378d9b-4b1a-867c-a049-38a049b76a3d"
     - stage: trinity
-      stageUuid: "a192c080-b9b9-8b16-bc07-e5a77bbf4066"
+      stageUuid: "308f5a85-47c3-89d6-ab32-044ec06b45f6"
     - stage: boundary
-      stageUuid: "cea64ad4-66a1-82a7-91b6-65bcad14f7f8"
+      stageUuid: "b7868dc3-19a5-876c-95ff-66228b586739"
     - stage: links
-      stageUuid: "b0a2a23c-cbb1-8712-a241-08b3bfea0213"
+      stageUuid: "84029910-cc34-8c3e-b2be-00754c04b380"
     - stage: horo
-      stageUuid: "59065d1b-810f-8cb1-8f32-a5af230f1cc8"
+      stageUuid: "6593025f-72d4-86b4-9e18-c19e1eb0bfa0"
     - stage: seal
-      stageUuid: "a014a98f-96e4-8be3-93fd-1f937c022066"
+      stageUuid: "ab87b38e-320a-8f4e-bee7-f372bc30b3f6"
     - stage: uuid
-      stageUuid: "7b6d5a7d-ba9d-83b7-a852-2fdba3aa7ee8"
+      stageUuid: "3d5c4ad8-9e32-894e-b73f-ea35536ec1ce"
 version: 2
 ---
 # pond

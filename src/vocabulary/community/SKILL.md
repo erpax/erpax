@@ -1,73 +1,35 @@
 ---
 name: community
 description: "Use when reasoning about community as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/community
-coordinate: community · 5/round · c008d5da
-contentUuid: "6aa8d7ba-3fe5-5c03-b3bb-e3af795bdfee"
-diamondUuid: "0cd29cfd-b258-846c-9245-a6fde94cc142"
-uuid: "c008d5da-4436-8671-a78f-8d23e7dd4d06"
+atomPath: "vocabulary/community"
+coordinate: "vocabulary/community · 5/round · aaa262cb"
+contentUuid: "9efd252d-0b8f-5e75-92bf-3980dd4e40d0"
+diamondUuid: "38776b54-a28c-84cb-94b9-84f98c8e3a95"
+uuid: "aaa262cb-7029-8f67-9f72-6932d892b14c"
 horo: 5
-bonds:
-  in:
-    - collapse
-    - gated
-    - law
-    - merge
-    - residence
-    - sti
-  out:
-    - collapse
-    - gated
-    - law
-    - merge
-    - residence
-    - sti
 typography:
-  partition: community
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - gated
-    - law
-    - merge
-    - residence
-    - sti
-  matrix:
-    - collapse
-    - gated
-    - law
-    - merge
-    - residence
-    - sti
-  backlinks:
-    - collapse
-    - gated
-    - law
-    - merge
-    - residence
-    - sti
 signatures:
-  computationUuid: "398b014a-6028-84ff-a951-df0f9103c9bf"
+  computationUuid: "7a4d734f-41ed-80fe-bab6-61382a5284bc"
   stages:
     - stage: path
-      stageUuid: "45c6c023-599b-8a8e-96a0-aec7821d1b27"
+      stageUuid: "b4401fa6-fd6c-8a94-824e-945e0140f50d"
     - stage: trinity
-      stageUuid: "dfc9e705-c07c-8754-b13f-2900bb93c5b9"
+      stageUuid: "8b880acd-aca5-8508-9bd5-eae489d54b83"
     - stage: boundary
-      stageUuid: "b9cd63eb-2c70-8fe6-bf55-0516e1d6d649"
+      stageUuid: "8b8e351d-abb3-8297-a3fe-d7a9a2a0265f"
     - stage: links
-      stageUuid: "2d27b07e-6643-8746-9902-600b843d868b"
+      stageUuid: "30e0870f-184a-885e-bae9-54d779820133"
     - stage: horo
-      stageUuid: "1d53b955-3d24-8405-bbee-a1c944e91dc0"
+      stageUuid: "c3bfbb46-1665-8a63-a99b-fe096c157c28"
     - stage: seal
-      stageUuid: "29c2f5db-9d99-82ea-8236-6d6e041acfb1"
+      stageUuid: "1a4270aa-e969-873e-a17d-4534fafdeb69"
     - stage: uuid
-      stageUuid: "b701f8e2-823f-8429-aa0a-b4775dbb05bc"
+      stageUuid: "3ce4af2d-660b-8690-b62f-bb43d594b5d6"
 version: 2
 ---
 # community

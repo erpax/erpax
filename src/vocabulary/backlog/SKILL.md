@@ -1,71 +1,34 @@
 ---
 name: backlog
 description: "Use when managing a prioritized list of pending work — features to build, bugs to fix, support tickets, maintenance requests. The work-capture system."
-atomPath: vocabulary/backlog
-coordinate: backlog · 4/weave · fa6134f0
-contentUuid: "c91451ce-4d1d-5f73-8f54-d7f2ce3b41bd"
-diamondUuid: "f850d1a5-3189-82e6-a4f2-80af869190b7"
-uuid: "fa6134f0-ddc2-8807-97cf-a09d313f330d"
-horo: 4
-bonds:
-  in:
-    - definitions
-    - priority
-    - queue
-    - schedule
-    - tasks
-    - ticket
-  out:
-    - definitions
-    - priority
-    - queue
-    - schedule
-    - tasks
-    - ticket
+atomPath: "vocabulary/backlog"
+coordinate: "vocabulary/backlog · 5/round · 02b6eec1"
+contentUuid: "331563fe-b842-55b0-9afc-05ed2026d692"
+diamondUuid: "159eee38-f2a8-8efd-8382-f11ee2f66346"
+uuid: "02b6eec1-5e9e-87b0-90ec-131cb48da5b0"
+horo: 5
 typography:
-  partition: backlog
+  partition: vocabulary
   bondDegree: 18
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - definitions
-    - priority
-    - schedule
-    - tasks
-    - ticket
-  matrix:
-    - definitions
-    - priority
-    - queue
-    - schedule
-    - tasks
-    - ticket
-  backlinks:
-    - definitions
-    - priority
-    - queue
-    - schedule
-    - tasks
-    - ticket
 signatures:
-  computationUuid: "dacae3d7-7388-83b0-b0b2-42929213241a"
+  computationUuid: "11cd34cc-585f-81cd-bb6a-9bbf1da03ff1"
   stages:
     - stage: path
-      stageUuid: "03521b3c-fffd-8eac-8a28-96c9322bcb4b"
+      stageUuid: "473661f8-9c4c-8cc6-81b3-b2bdae6f1106"
     - stage: trinity
-      stageUuid: "2fec529f-2f87-80a5-8f61-c0d304a87543"
+      stageUuid: "470f2425-accd-8728-8550-3eca23965ad4"
     - stage: boundary
-      stageUuid: "cc7631a4-7a11-880a-95bf-f83dacf484f9"
+      stageUuid: "89495637-4191-8437-b68e-24b6f3054781"
     - stage: links
-      stageUuid: "fd466435-e114-84d0-90fd-dc7069a10dbd"
+      stageUuid: "bbd06a5a-4216-8693-85fa-85c04af9f93e"
     - stage: horo
-      stageUuid: "27af3639-70b3-8c1c-aae1-956fdda48751"
+      stageUuid: "6a0f1432-85c3-86bc-a07f-5e90a5e31a28"
     - stage: seal
-      stageUuid: "7755dfa9-80ed-86a9-ae1c-cea0af6735aa"
+      stageUuid: "da0810e7-0b51-89d0-afcc-d3af88fdbd1d"
     - stage: uuid
-      stageUuid: "a944550b-8f65-8031-868f-fcde4cc34bc8"
+      stageUuid: "47ca769d-30cf-8f8d-ac33-9e7d06251026"
 version: 2
 ---
 # backlog

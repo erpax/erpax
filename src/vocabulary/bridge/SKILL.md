@@ -1,58 +1,35 @@
 ---
 name: bridge
 description: Use when reasoning about bridge — A bridge.
-atomPath: vocabulary/bridge
-coordinate: bridge · 1/base · 3adbce5a
-contentUuid: "8bd53e1f-914d-5344-8e03-00193754b2dd"
-diamondUuid: "0ef320f1-e86e-86f5-9b18-6dec3ce94db9"
-uuid: "3adbce5a-a0d2-8f55-a672-6df9efc5cdc4"
-horo: 1
-bonds:
-  in:
-    - law
-    - place
-    - thing
-  out:
-    - law
-    - place
-    - thing
+atomPath: "vocabulary/bridge"
+coordinate: "vocabulary/bridge · 2/share · 0ab43e88"
+contentUuid: "96826ecc-263d-56f7-8e8d-720390677a57"
+diamondUuid: "f4aa9547-b550-8958-9c38-04aea25f7f15"
+uuid: "0ab43e88-e37f-840b-bfa9-8134fc2dd701"
+horo: 2
 typography:
-  partition: bridge
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - place
-    - thing
-  matrix:
-    - law
-    - place
-    - thing
-  backlinks:
-    - law
-    - place
-    - thing
 signatures:
-  computationUuid: "2632b927-33fe-882e-9a36-f03f5eebe48b"
+  computationUuid: "ff91e732-41dd-832f-87af-054485f94b55"
   stages:
     - stage: path
-      stageUuid: "8d88658d-44ec-8d7b-a21d-ae39066581f4"
+      stageUuid: "3f659a07-bbc9-8ff3-bd23-ec044b84c7a7"
     - stage: trinity
-      stageUuid: "7cc44747-bb9d-8d78-8ced-b93893c2170f"
+      stageUuid: "46476c43-e515-8687-b4f3-05660130b848"
     - stage: boundary
-      stageUuid: "af5dd599-8478-8165-9acf-e56d0da2d7bd"
+      stageUuid: "049a4f22-f73f-88d3-9ea6-2790035d1ddc"
     - stage: links
-      stageUuid: "e44bc97a-e6c0-86ad-a69d-ca9ba5f5cd5f"
+      stageUuid: "2970b1a0-6d4b-8b3f-9d8e-f98c647273ba"
     - stage: horo
-      stageUuid: "82bac69b-1eae-8e8a-87e2-154f6d47822e"
+      stageUuid: "8a51019a-b288-848f-89db-f277bd418007"
     - stage: seal
-      stageUuid: "09b61251-7f25-8c44-8dfe-2005a593d0be"
+      stageUuid: "b5ce139c-e799-89c5-a8c3-bc52cde7e7fe"
     - stage: uuid
-      stageUuid: "569df46f-e322-8caf-a102-b4906c5e66fb"
+      stageUuid: "3c2c3528-aecc-8d82-b10e-a9580c50f1a1"
 version: 2
 ---
 # bridge

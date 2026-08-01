@@ -1,102 +1,34 @@
 ---
 name: mycorrhizae
 description: "Use when modelling the root–fungus symbiosis that mines nutrients and water for the plant — arbuscular mycorrhizal fungi colonize >90% of crops, extending hyphae to acquire phosphorus and water in exchange for plant carbon, and binding soil aggregates with glomalin. The living merge at the root zone; tillage and high-P fertilization suppress it."
-atomPath: vocabulary/mycorrhizae
-coordinate: mycorrhizae · 7/descent · 9977288e
-contentUuid: "150541fd-09fa-54e5-ab79-4fe058be54b4"
-diamondUuid: "ecb92712-e8fe-8031-b55b-57e87f0724fe"
-uuid: "9977288e-e682-8f55-b5c0-5e9e849a51b8"
-horo: 7
-bonds:
-  in:
-    - agriculture
-    - covercrop
-    - fertility
-    - give
-    - law
-    - merge
-    - moisture
-    - mycelium
-    - soil
-    - symbiosis
-    - take
-    - tillage
-  out:
-    - agriculture
-    - covercrop
-    - fertility
-    - give
-    - law
-    - merge
-    - moisture
-    - mycelium
-    - soil
-    - symbiosis
-    - take
-    - tillage
+atomPath: "vocabulary/mycorrhizae"
+coordinate: "vocabulary/mycorrhizae · 1/base · 7f899377"
+contentUuid: "daf1d891-72fc-5682-af0c-51341ffbd391"
+diamondUuid: "5a4dacdb-fbb0-84f8-a7fa-94696141c1f6"
+uuid: "7f899377-0be9-802f-b962-074d3474c8c8"
+horo: 1
 typography:
-  partition: mycorrhizae
+  partition: vocabulary
   bondDegree: 41
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - covercrop
-    - fertility
-    - give
-    - law
-    - merge
-    - moisture
-    - mycelium
-    - soil
-    - symbiosis
-    - take
-    - tillage
-  matrix:
-    - agriculture
-    - covercrop
-    - fertility
-    - give
-    - law
-    - merge
-    - moisture
-    - mycelium
-    - soil
-    - symbiosis
-    - take
-    - tillage
-  backlinks:
-    - agriculture
-    - covercrop
-    - fertility
-    - give
-    - law
-    - merge
-    - moisture
-    - mycelium
-    - soil
-    - symbiosis
-    - take
-    - tillage
 signatures:
-  computationUuid: "2ecb9576-6db8-8c49-a78d-70c846b1b975"
+  computationUuid: "455bc4fd-410c-8c05-bd92-aa9859f0417f"
   stages:
     - stage: path
-      stageUuid: "61936917-13fe-8410-a6df-1089c2a15256"
+      stageUuid: "4957f353-104b-8d4a-bd2c-d7dfe81653d5"
     - stage: trinity
-      stageUuid: "41b7045c-dc09-8527-9635-1d7813ea9a14"
+      stageUuid: "b0d96c5d-6274-87bd-ac42-cfc7d037db4a"
     - stage: boundary
-      stageUuid: "9383bb00-82e7-825e-b150-9d5ae72060f7"
+      stageUuid: "6bd0ca7f-9dff-8596-8638-19af7757e63a"
     - stage: links
-      stageUuid: "f4df0c8a-6c6d-839a-a946-985972333709"
+      stageUuid: "0d292cc4-bd00-85c0-a569-2e3954b22d45"
     - stage: horo
-      stageUuid: "d8118ba8-f5f8-8856-bbe8-164c468d37e8"
+      stageUuid: "44112d48-00fb-83e8-a173-a1b315bb7a85"
     - stage: seal
-      stageUuid: "c1e5c4d8-6e0d-8cf5-b51d-d58e3b1a74d6"
+      stageUuid: "fcf73f54-9e51-8216-bb17-95cc9ff29974"
     - stage: uuid
-      stageUuid: "d6cb0de2-b06e-847d-b043-998cf4730c26"
+      stageUuid: "827fceb5-e093-88b0-8b97-cad733aa6510"
 version: 2
 ---
 # mycorrhizae — the root–fungus symbiosis that feeds the plant

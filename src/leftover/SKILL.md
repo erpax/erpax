@@ -2,103 +2,35 @@
 name: leftover
 description: "Use when reasoning about the fold's residual — the bits that did not fold into trinities of theorems. Leftovers attract by field (one proof settles the cluster), pull a seed from beyond to complete what the corpus cannot derive, and the irreducible residue powers the next research. Composes accounting/proof, gravity, and think."
 atomPath: leftover
-coordinate: "leftover · 5/round · 17663c30"
-contentUuid: "5eaf29e5-369b-5ac5-a6ec-db98be4b1ad8"
-diamondUuid: "81249e80-bafe-8152-bf26-bcb5a5ae70dd"
-uuid: "17663c30-080f-8878-8376-e939ca2d33cc"
-horo: 5
-bonds:
-  in:
-    - accounting
-    - fusion
-    - gravity
-    - horo
-    - improve
-    - law
-    - metric
-    - rodin
-    - rosetta
-    - rules
-    - session
-    - syntax
-    - think
-  out:
-    - accounting
-    - fusion
-    - gravity
-    - horo
-    - improve
-    - law
-    - metric
-    - rodin
-    - rosetta
-    - rules
-    - session
-    - syntax
-    - think
+coordinate: "leftover · 1/base · 4a239c39"
+contentUuid: "cb32c77f-825e-5194-b021-bfd8273b3073"
+diamondUuid: "8717e696-0ce8-8006-9afc-c6917ec2f378"
+uuid: "4a239c39-9456-8d30-b463-2314dd72f8f6"
+horo: 1
 typography:
   partition: leftover
-  bondDegree: 40
-  neighbors: []
+  bondDegree: 39
 standards:
   - "```"
   - "src/app/(api)/api/subscriptions/create/route.ts:9:4   @compliance"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - fusion
-    - gravity
-    - law
-    - rodin
-    - rules
-    - syntax
-    - think
-  matrix:
-    - accounting
-    - fusion
-    - gravity
-    - horo
-    - improve
-    - law
-    - metric
-    - rodin
-    - rosetta
-    - rules
-    - session
-    - syntax
-    - think
-  backlinks:
-    - accounting
-    - fusion
-    - gravity
-    - horo
-    - improve
-    - law
-    - metric
-    - rodin
-    - rosetta
-    - rules
-    - session
-    - syntax
-    - think
 signatures:
-  computationUuid: "50ac94d3-0957-88d8-a81b-02f07b0635d5"
+  computationUuid: "a655e382-e580-8fcd-9c18-dca181b2ca93"
   stages:
     - stage: path
       stageUuid: "c8f20437-a19d-8ee9-bf3e-3fbde1997aac"
     - stage: trinity
       stageUuid: "1ae6423a-4841-808b-892e-6e0082d1e028"
     - stage: boundary
-      stageUuid: "9a532ac0-07f8-89cb-b15c-ee0232de0914"
+      stageUuid: "1fb8668d-d647-83eb-b145-21a777e3867a"
     - stage: links
-      stageUuid: "5a4d9215-e24d-85ee-b6a8-723069b8f67e"
+      stageUuid: "bc630195-2e51-8633-a34e-273b41960f7d"
     - stage: horo
-      stageUuid: "0a00ca1a-acfc-892b-a945-2d088a5ed0f6"
+      stageUuid: "80c19117-2f4a-8fa8-abf5-861424ac53ed"
     - stage: seal
       stageUuid: "d7f4c92d-2e26-85d2-afe0-b584398dd5ec"
     - stage: uuid
-      stageUuid: "5c6a9fd6-9e37-8e81-bd58-1a38acc67c11"
+      stageUuid: "7cfcbb94-7852-8639-8254-5d73e64bd979"
 version: 2
 ---
 # leftover — the fold's residual attracts, pulls from beyond, and powers the next pass

@@ -1,81 +1,34 @@
 ---
 name: compensation
 description: "Use when defining or analyzing an employee's total pay structure — base salary, bonus, incentives, benefits value, equity, deductions. The compensation-concern collecting all economic value flows from employer to worker."
-atomPath: vocabulary/compensation
-coordinate: compensation · 7/descent · d23e6a75
-contentUuid: "140606bd-2cd6-572a-a244-6fff67e46dd4"
-diamondUuid: "a43dba1b-3511-8f95-9be9-680196cb9e9e"
-uuid: "d23e6a75-6b34-81e4-bb37-808bf9855890"
-horo: 7
-bonds:
-  in:
-    - allocation
-    - currency
-    - employees
-    - incentive
-    - positions
-    - rate
-    - runs
-    - tenure
-  out:
-    - allocation
-    - currency
-    - employees
-    - incentive
-    - positions
-    - rate
-    - runs
-    - tenure
+atomPath: "vocabulary/compensation"
+coordinate: "vocabulary/compensation · 2/share · 6fadf3c0"
+contentUuid: "e8a93752-4ffa-581e-b1ce-50b3fd38a945"
+diamondUuid: "c8acb5d8-31c3-8a5a-a670-3b762a406da4"
+uuid: "6fadf3c0-6d98-8cc2-bef1-0eebd0aa64f7"
+horo: 2
 typography:
-  partition: compensation
+  partition: vocabulary
   bondDegree: 24
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - allocation
-    - currency
-    - employees
-    - positions
-    - rate
-    - runs
-    - tenure
-  matrix:
-    - allocation
-    - currency
-    - employees
-    - incentive
-    - positions
-    - rate
-    - runs
-    - tenure
-  backlinks:
-    - allocation
-    - currency
-    - employees
-    - incentive
-    - positions
-    - rate
-    - runs
-    - tenure
 signatures:
-  computationUuid: "31d492da-846c-811c-b235-06684215f54b"
+  computationUuid: "7fcfdb8b-4b18-81a5-b6ef-02a96da76692"
   stages:
     - stage: path
-      stageUuid: "d788589c-21a5-8964-81dd-fbaa2941c19a"
+      stageUuid: "44eb6a1d-1f3b-8ae9-8f66-bb7c4c6166c8"
     - stage: trinity
-      stageUuid: "2e2c0bb3-7916-85de-b39a-54bd6446bb96"
+      stageUuid: "ccbb31e3-e562-8a13-b52d-6682f3862d3b"
     - stage: boundary
-      stageUuid: "2d7d4841-70b1-8375-bea0-5522394c9534"
+      stageUuid: "db2c9791-f9d0-8abf-9d03-c1ce9675201f"
     - stage: links
-      stageUuid: "902baaac-962c-8a61-9b10-26b746e128fc"
+      stageUuid: "292cd282-3723-839b-a3af-2935c3e6e730"
     - stage: horo
-      stageUuid: "8bad055d-4949-8930-b1e5-bac1ccf6ca84"
+      stageUuid: "f5dd897a-0f7f-85e9-9077-3c72d9107688"
     - stage: seal
-      stageUuid: "52c9102e-0c4c-87da-af36-aa7c4b5cd429"
+      stageUuid: "7239ad60-bfb9-8b02-9258-4e936477021d"
     - stage: uuid
-      stageUuid: "06f7f031-6b39-8e73-a4cd-2ca4189ef955"
+      stageUuid: "cb8f72b2-4986-8d46-ba9f-661a93dd3082"
 version: 2
 ---
 # compensation

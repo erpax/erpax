@@ -1,63 +1,35 @@
 ---
 name: occupation
 description: "Use when reasoning about occupation — A profession, may involve prolonged training and/or a formal qualification."
-atomPath: vocabulary/occupation
-coordinate: occupation · 4/weave · 2a9e393e
-contentUuid: "62ab07aa-802e-55e6-b445-c6a5b8778042"
-diamondUuid: "ad0e646a-5487-8af2-8aae-1d3a8d16e8fb"
-uuid: "2a9e393e-f50a-85a4-84d0-b9efd41f452f"
-horo: 4
-bonds:
-  in:
-    - has
-    - law
-    - location
-    - relevant
-  out:
-    - has
-    - law
-    - location
-    - relevant
+atomPath: "vocabulary/occupation"
+coordinate: "vocabulary/occupation · 8/crest · 7c35a3e6"
+contentUuid: "8abc7764-19c9-5e69-8c3f-4fd84c9273a7"
+diamondUuid: "4f9d0ef6-ac54-8ada-b257-27f65f0875d3"
+uuid: "7c35a3e6-411b-82d2-9dea-3614368d3099"
+horo: 8
 typography:
-  partition: occupation
-  bondDegree: 14
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 16
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - has
-    - law
-    - location
-    - relevant
-  matrix:
-    - has
-    - law
-    - location
-    - relevant
-  backlinks:
-    - has
-    - law
-    - location
-    - relevant
 signatures:
-  computationUuid: "02bba488-588b-8795-83d1-1b67b561ebd7"
+  computationUuid: "40a2396c-14ae-848d-b454-f3f37f11a4bd"
   stages:
     - stage: path
-      stageUuid: "73ce8a49-cfcc-8ec3-ba4f-98e6136b2659"
+      stageUuid: "228b13c5-d39f-8900-8bb0-4a5a7869f28d"
     - stage: trinity
-      stageUuid: "7a890384-0b84-8345-99ee-6e557adf9cfe"
+      stageUuid: "5bedf21c-87af-885d-aa3a-e70bef8378a3"
     - stage: boundary
-      stageUuid: "091e3d00-b249-8df2-be3b-35b528ef1497"
+      stageUuid: "040e1c9d-3129-8250-b7be-b54eedfdc24e"
     - stage: links
-      stageUuid: "0470f4fd-dc79-8164-aba0-073bb0f68950"
+      stageUuid: "d6a9ee3a-88e3-8de3-ba83-d329ce640963"
     - stage: horo
-      stageUuid: "25596523-8e9c-8b20-b189-572c4f385c0b"
+      stageUuid: "672a54d6-3482-8ad6-bbb6-724dc75850f3"
     - stage: seal
-      stageUuid: "0f853674-da45-871c-9708-dac0b4db8688"
+      stageUuid: "1771b9b5-00dd-8f04-9bf9-e407aabe5ecb"
     - stage: uuid
-      stageUuid: "c2cbbfe5-8f05-82a2-b0b4-cc62757b0555"
+      stageUuid: "0897b490-0d64-83a1-bd8d-19d4e4c6c23a"
 version: 2
 ---
 # occupation

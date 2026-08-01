@@ -1,90 +1,34 @@
 ---
 name: mulch
 description: "Use when the soil surface is covered to suppress weeds and moderate temperature/moisture — plastic film (warms soil + blocks weeds), woven landscape fabric (reusable, burn-holed for transplants), and organic straw/leaf mulch. The smother alternative to cultivation; a soil-surface cover with weed, water, and heat functions."
-atomPath: vocabulary/mulch
-coordinate: mulch · 5/round · b6b1f5bc
-contentUuid: "9fa86551-64a2-5416-adf7-f6e8ad0c466f"
-diamondUuid: "a799d73f-685a-89a2-8deb-21b112a5099f"
-uuid: "b6b1f5bc-9997-8367-bc08-148cc60bd395"
-horo: 5
-bonds:
-  in:
-    - agriculture
-    - cost
-    - covercrop
-    - cultivation
-    - irrigation
-    - moisture
-    - scouting
-    - soil
-    - tillage
-    - transplant
-  out:
-    - agriculture
-    - cost
-    - covercrop
-    - cultivation
-    - irrigation
-    - moisture
-    - scouting
-    - soil
-    - tillage
-    - transplant
+atomPath: "vocabulary/mulch"
+coordinate: "vocabulary/mulch · 4/weave · 08196de2"
+contentUuid: "e32f3ec4-c305-5f13-96a8-a3dd500c6aa8"
+diamondUuid: "86c2731e-a52c-8157-aa5a-e264bcf3f746"
+uuid: "08196de2-cd71-8b99-8c7b-7165942b4b7b"
+horo: 4
 typography:
-  partition: mulch
+  partition: vocabulary
   bondDegree: 35
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - cost
-    - covercrop
-    - cultivation
-    - irrigation
-    - moisture
-    - soil
-    - transplant
-  matrix:
-    - agriculture
-    - cost
-    - covercrop
-    - cultivation
-    - irrigation
-    - moisture
-    - scouting
-    - soil
-    - tillage
-    - transplant
-  backlinks:
-    - agriculture
-    - cost
-    - covercrop
-    - cultivation
-    - irrigation
-    - moisture
-    - scouting
-    - soil
-    - tillage
-    - transplant
 signatures:
-  computationUuid: "4300a0fd-2969-81cd-ac18-0769378f3b17"
+  computationUuid: "7a8b0be2-5d32-8b17-bf1d-f3b3b8c2923f"
   stages:
     - stage: path
-      stageUuid: "36d56957-a246-8382-a77f-d4973974763e"
+      stageUuid: "4772ca3f-08fa-8a52-a3c4-5e942a8f217d"
     - stage: trinity
-      stageUuid: "abf4c278-b3f0-8feb-81a8-ea264bedda9e"
+      stageUuid: "1a4f8c20-26a0-8b27-8805-79b2fb1589f9"
     - stage: boundary
-      stageUuid: "970762ed-89a2-82ca-8aa5-479d36723041"
+      stageUuid: "f4219130-7ccb-8f4f-84dc-33b0df670d36"
     - stage: links
-      stageUuid: "d5d9015d-d3fa-8e7f-81ea-8064f9c2f7eb"
+      stageUuid: "e123e379-ee5a-8e3d-aaeb-468b0ef4e40e"
     - stage: horo
-      stageUuid: "1c604d1f-b995-8735-a855-db119ad408f8"
+      stageUuid: "6b0a9d62-6b3b-836b-af5d-db12e7fadcf3"
     - stage: seal
-      stageUuid: "bbd53fa0-3404-8eb8-8a23-26b9f72521df"
+      stageUuid: "de614e6c-70ce-8a21-8842-b986df04e8f4"
     - stage: uuid
-      stageUuid: "ff05042f-4197-82a6-8c96-142b2ac93ec3"
+      stageUuid: "52a19caa-d781-8ff4-a9ef-74f5755d81b4"
 version: 2
 ---
 # mulch — covering the soil surface to suppress weeds and hold moisture

@@ -2,27 +2,14 @@
 name: eliminations
 description: "Use when posting or replaying group-level elimination JEs at consolidation close — intercompany balances, IC revenue/expense, unrealised intra-group profit, investment in subsidiary, FC translation reserve — per IFRS-10 §B86 / ASC-810-10-45; distinct from per-tenant journal-entries and the intercompany-transactions source register. The group consolidation elimination cycle register."
 atomPath: "consolidation/eliminations"
-coordinate: "consolidation/eliminations · 7/descent · 5e96cdbd"
-contentUuid: "9d2ec46d-ad3a-5436-936f-ee57d236e992"
-diamondUuid: "77d40f34-aae3-8740-b298-53f41289e107"
-uuid: "5e96cdbd-e242-8f5c-9128-8d5886aa9d94"
-horo: 7
-bonds:
-  in:
-    - consolidation
-    - elimination
-    - entries
-    - law
-    - transactions
-  out:
-    - elimination
-    - entries
-    - law
-    - transactions
+coordinate: "consolidation/eliminations · 5/round · 284f6625"
+contentUuid: "2d08c4ea-ab62-51ab-b148-a020fb28df1b"
+diamondUuid: "9cb638bb-d526-8659-9a30-36af86509521"
+uuid: "284f6625-b23b-8618-b3cb-6b60f3d31a57"
+horo: 5
 typography:
   partition: consolidation
   bondDegree: 13
-  neighbors: []
 standards:
   - "IFRS IAS-21 §39 foreign-currency-translation-on-consolidation"
   - "IFRS IFRS-10 §B86 consolidated-financial-statements"
@@ -35,23 +22,8 @@ standards:
   - "US-GAAP ASC-830-30 foreign-currency-translation"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - entries
-    - law
-    - transactions
-  matrix:
-    - elimination
-    - entries
-    - law
-    - transactions
-  backlinks:
-    - elimination
-    - entries
-    - law
-    - transactions
 signatures:
-  computationUuid: "18b85d7f-f473-8979-8ed7-dec52f60f5e5"
+  computationUuid: "d0f8eb3c-7460-82ff-828f-b8f39bc593ef"
   stages:
     - stage: path
       stageUuid: "9e055a7a-931a-8925-a579-e0400f142749"
@@ -62,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "511f5e11-7f93-8122-94c4-7270bcbf3642"
     - stage: horo
-      stageUuid: "3e9f9b40-5bb7-8b6c-93e9-e6a4a37d99e9"
+      stageUuid: "6c8627dc-387f-8e25-9030-72b957230252"
     - stage: seal
       stageUuid: "faa78d31-8f08-8987-aafb-15c904248275"
     - stage: uuid
-      stageUuid: "e7f7f5c3-cc3d-851a-bdda-279dc0aab945"
+      stageUuid: "128fae42-f137-8245-b49e-4f08a83a0550"
 version: 2
 ---
 # consolidation-eliminations

@@ -1,78 +1,35 @@
 ---
 name: function
 description: "Use when reasoning about function as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/function
-coordinate: function · 2/share · 8144f3eb
-contentUuid: "dfabb39a-e72a-5a9d-bd79-1a46948a8af9"
-diamondUuid: "23a8c342-9c44-8680-bab2-3ca088e0d7c0"
-uuid: "8144f3eb-b95e-8735-838e-30bff7ec8b41"
-horo: 2
-bonds:
-  in:
-    - business
-    - collapse
-    - has
-    - law
-    - merge
-    - molecular
-    - sti
-  out:
-    - business
-    - collapse
-    - has
-    - law
-    - merge
-    - molecular
-    - sti
+atomPath: "vocabulary/function"
+coordinate: "vocabulary/function · 5/round · b79cfdae"
+contentUuid: "b8354c6c-7b06-5ab8-acf4-90da49b0c428"
+diamondUuid: "bd35f0bb-266b-8fd8-bdd2-90042c8f9d72"
+uuid: "b79cfdae-075a-86cd-9fbc-548aaab5cdcc"
+horo: 5
 typography:
-  partition: function
+  partition: vocabulary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - business
-    - collapse
-    - has
-    - law
-    - merge
-    - molecular
-    - sti
-  matrix:
-    - business
-    - collapse
-    - has
-    - law
-    - merge
-    - molecular
-    - sti
-  backlinks:
-    - business
-    - collapse
-    - has
-    - law
-    - merge
-    - molecular
-    - sti
 signatures:
-  computationUuid: "c16f00c7-1abf-8489-a642-2bdcdd05fd61"
+  computationUuid: "59a0a411-9037-83bb-bd56-560503e64931"
   stages:
     - stage: path
-      stageUuid: "2177ecc3-258d-8739-8ac0-2e8d3120c65b"
+      stageUuid: "c6afff57-29fc-8093-ba9a-2f69e5f8856d"
     - stage: trinity
-      stageUuid: "ab67ddf5-09ca-8940-86d9-77b579b56049"
+      stageUuid: "31f004e7-8707-87bf-9c89-12ca58adc994"
     - stage: boundary
-      stageUuid: "1fa0a15a-604c-8d0f-b854-d69192a2e466"
+      stageUuid: "3d093c99-cf1d-88bb-b6a7-db1446e735a3"
     - stage: links
-      stageUuid: "a5713d27-dd34-8bd0-9407-4753db613ce2"
+      stageUuid: "9613b83d-8a56-89c4-a58a-0416d82d828b"
     - stage: horo
-      stageUuid: "03fb7416-4864-861b-bb35-0fcfff8671cc"
+      stageUuid: "9ac7912b-96a5-8cbb-9303-18e2c372983e"
     - stage: seal
-      stageUuid: "094e0d18-27ff-87f3-a30b-0d94c20e874f"
+      stageUuid: "4482af92-77a4-8cf5-856b-2ff140b2bfe3"
     - stage: uuid
-      stageUuid: "7b4dd679-86ab-821e-84c5-d49bfa51cf73"
+      stageUuid: "06f24415-477a-846e-8879-9de4e15944ed"
 version: 2
 ---
 # function

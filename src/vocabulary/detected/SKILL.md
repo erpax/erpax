@@ -1,68 +1,35 @@
 ---
 name: detected
 description: "Use when reasoning about detected as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/detected
-coordinate: detected · 7/descent · 7279c01f
-contentUuid: "5d36972c-e660-538f-bb85-cec34e64a487"
-diamondUuid: "98e19b30-e674-81e2-a991-0697e0eb6811"
-uuid: "7279c01f-c580-8122-ba57-03e83ce0e9c1"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sign
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sign
-    - sti
+atomPath: "vocabulary/detected"
+coordinate: "vocabulary/detected · 8/crest · 9feaf07d"
+contentUuid: "afc3dcad-e24e-5fb6-89ec-5919497ffd50"
+diamondUuid: "31b4e743-c814-865e-904e-6b91a6cd8df1"
+uuid: "9feaf07d-b9c8-815e-91ee-f1af9a4f522b"
+horo: 8
 typography:
-  partition: detected
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sign
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sign
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sign
-    - sti
 signatures:
-  computationUuid: "a7a8e374-66bf-8564-91a1-7842c17f753f"
+  computationUuid: "bb44cfad-a80b-80f2-a3d0-114906a714fc"
   stages:
     - stage: path
-      stageUuid: "15db2001-fb31-8042-bfaf-05a4bf33db08"
+      stageUuid: "685a002e-20a7-8e14-b961-aa240ebdb438"
     - stage: trinity
-      stageUuid: "0db4617e-a82b-87ca-82c6-a08d7a2549d2"
+      stageUuid: "919f34a3-fc63-83d4-9787-8e2d3015f213"
     - stage: boundary
-      stageUuid: "15a95fb2-e635-835f-9344-2f970b98a577"
+      stageUuid: "e6affa41-7f2d-8ec3-b906-124789fb5e92"
     - stage: links
-      stageUuid: "eebcde27-e781-83d5-95d7-00670ab5758a"
+      stageUuid: "edae7979-ec90-879f-bbc8-2168d849d8af"
     - stage: horo
-      stageUuid: "e801d71b-8b88-8587-8c10-d815e5af68ca"
+      stageUuid: "45fcf54b-7c59-80f6-b83a-5f0336e99e48"
     - stage: seal
-      stageUuid: "0b3c290c-c636-8ac0-a176-7ab59de710fc"
+      stageUuid: "751bc374-6426-86e6-a815-c76035a6b3f2"
     - stage: uuid
-      stageUuid: "63e0d1ef-2ece-8ddb-bc9d-35299db08e47"
+      stageUuid: "1cf905e7-ccc6-86c8-a010-832911111604"
 version: 2
 ---
 # detected

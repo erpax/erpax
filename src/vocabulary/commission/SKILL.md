@@ -1,62 +1,34 @@
 ---
 name: commission
 description: Use when modelling one commission — the singular model of the commissions collection (the plural store); earned compensation tied to a sale or transaction.
-atomPath: vocabulary/commission
-coordinate: commission · 1/base · cd695b72
-contentUuid: "0ff23e96-4410-5d9f-96d1-48469108f4b7"
-diamondUuid: "d9f54a1f-5102-88a9-9802-7249399799a6"
-uuid: "cd695b72-0a90-8de1-ae26-965d58ef0b14"
-horo: 1
-bonds:
-  in:
-    - balance
-    - commissions
-    - law
-    - sales
-  out:
-    - balance
-    - commissions
-    - law
-    - sales
+atomPath: "vocabulary/commission"
+coordinate: "vocabulary/commission · 4/weave · 14db75f9"
+contentUuid: "4fa48bbb-2746-5459-b7eb-76279a330af4"
+diamondUuid: "532a1abb-f20d-824d-8057-4e4de8739689"
+uuid: "14db75f9-a477-8c80-bf8f-d0cbd09c6e4b"
+horo: 4
 typography:
-  partition: commission
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - commissions
-    - law
-    - sales
-  matrix:
-    - balance
-    - commissions
-    - law
-    - sales
-  backlinks:
-    - balance
-    - commissions
-    - law
-    - sales
 signatures:
-  computationUuid: "4b080e82-631d-80e1-81bd-1f13e125da10"
+  computationUuid: "60e71364-a941-89fb-b67b-ef634383b8cc"
   stages:
     - stage: path
-      stageUuid: "ca313deb-5d58-87a5-9baf-5fa710bbbf41"
+      stageUuid: "fc4e6035-0c71-8c95-88bc-fa272ea1bba2"
     - stage: trinity
-      stageUuid: "02582d52-a5f6-846c-8b94-eb3b26b9c68b"
+      stageUuid: "a7268d39-b827-8b0a-8287-73d631b12937"
     - stage: boundary
-      stageUuid: "2ffa3197-b982-805e-9181-74f34f46920e"
+      stageUuid: "d4e2bbe7-2a5c-8502-8cc0-45b3c9aa97ab"
     - stage: links
-      stageUuid: "9c2b29e5-fc21-8291-9be9-7e89ee2044a9"
+      stageUuid: "400722c1-57b1-885d-a648-161ddbbbab25"
     - stage: horo
-      stageUuid: "bf4d8b11-c39f-82a9-a9bf-acae1aa43db1"
+      stageUuid: "85d7697e-67ab-8b55-9360-bf979c1adaaf"
     - stage: seal
-      stageUuid: "cebf634f-f4ac-8753-a797-469d5e8f5a6d"
+      stageUuid: "5babbd15-bcd5-8b9e-9771-0ca46e2f5917"
     - stage: uuid
-      stageUuid: "e1ecf8b1-ebcd-8f3b-8a2d-0886da61b241"
+      stageUuid: "d2e14be0-779d-8349-bfcc-b1cea4a6ec90"
 version: 2
 ---
 # commission — the model of one [[commissions]] row

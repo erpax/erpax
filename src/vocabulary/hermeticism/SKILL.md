@@ -1,138 +1,34 @@
 ---
 name: hermeticism
 description: "Use when reading Hermeticism as a diamond of invariant atoms — as above, so below: the part mirrors the whole at every scale, the All is One, know thyself and know the source. This is literally erpax's fractal/holographic law and the identity of part and whole. Strip the prefix and the correspondence collapses to fractal, the mirror to holographic, the All to one."
-atomPath: vocabulary/hermeticism
-coordinate: hermeticism · 2/share · 1c8e5103
-contentUuid: "62f8b95a-13a4-5090-b170-7add7b183cf1"
-diamondUuid: "852d75ab-a36c-8b12-a485-0a5b6326a3e3"
-uuid: "1c8e5103-6cf8-8bd3-902d-462e95a5b0c4"
-horo: 2
-bonds:
-  in:
-    - archangel
-    - collapse
-    - diamond
-    - fractal
-    - holographic
-    - identity
-    - image
-    - law
-    - mirror
-    - name
-    - one
-    - part
-    - religion
-    - self
-    - society
-    - translator
-    - uuid
-    - whole
-    - word
-  out:
-    - archangel
-    - collapse
-    - diamond
-    - fractal
-    - holographic
-    - identity
-    - image
-    - law
-    - mirror
-    - name
-    - one
-    - part
-    - religion
-    - self
-    - society
-    - translator
-    - uuid
-    - whole
-    - word
+atomPath: "vocabulary/hermeticism"
+coordinate: "vocabulary/hermeticism · 5/round · 45df99d3"
+contentUuid: "8cd5d652-2155-5f66-9afa-2a216f663f5b"
+diamondUuid: "771e0b38-ca46-8b15-a95a-3f6033f18de5"
+uuid: "45df99d3-ffbc-8c3d-bbdb-4d15cebd4e0e"
+horo: 5
 typography:
-  partition: hermeticism
+  partition: vocabulary
   bondDegree: 59
-  neighbors:
-    - diamond
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - archangel
-    - collapse
-    - diamond
-    - fractal
-    - holographic
-    - identity
-    - image
-    - law
-    - mirror
-    - name
-    - one
-    - part
-    - religion
-    - self
-    - society
-    - translator
-    - uuid
-    - whole
-    - word
-  matrix:
-    - archangel
-    - collapse
-    - diamond
-    - fractal
-    - holographic
-    - identity
-    - image
-    - law
-    - mirror
-    - name
-    - one
-    - part
-    - religion
-    - self
-    - society
-    - translator
-    - uuid
-    - whole
-    - word
-  backlinks:
-    - archangel
-    - collapse
-    - diamond
-    - fractal
-    - holographic
-    - identity
-    - image
-    - law
-    - mirror
-    - name
-    - one
-    - part
-    - religion
-    - self
-    - society
-    - translator
-    - uuid
-    - whole
-    - word
 signatures:
-  computationUuid: "471c439a-ce4a-84cf-9933-d395e10198a9"
+  computationUuid: "c6117687-fc87-8625-82fd-f55903277088"
   stages:
     - stage: path
-      stageUuid: "467dd9b5-a187-89a5-9673-202a71c5a3ae"
+      stageUuid: "892c08bc-12c4-832d-b1de-5832abc14007"
     - stage: trinity
-      stageUuid: "f6402e02-3ca7-8a36-ab08-6acb61a52482"
+      stageUuid: "40e3ac05-ace0-8b2e-baa7-d9cec392a60d"
     - stage: boundary
-      stageUuid: "4a63e48c-33a1-8eb2-a806-ac83b68c4fd8"
+      stageUuid: "f17a61d3-64ed-8dc5-b255-8fae2b50bf6d"
     - stage: links
-      stageUuid: "fd687a0f-58e8-82f7-8e7a-3a5fbfbd8453"
+      stageUuid: "5b1b19ce-aa7a-81db-b756-6b9cdbfef47c"
     - stage: horo
-      stageUuid: "86759abd-f7b4-8362-93ab-1b4e86242304"
+      stageUuid: "4c12cbce-5659-80ec-a1c9-6dbd790d4dc6"
     - stage: seal
-      stageUuid: "e1e5825d-b238-8d75-84e5-3b122955ec88"
+      stageUuid: "898e62e3-9e14-84e4-9d7b-df71377bd4dd"
     - stage: uuid
-      stageUuid: "f6e501e6-0b33-89c7-b805-4eb35e6f2e72"
+      stageUuid: "1349bb45-d38d-8865-954a-dd03481f1565"
 version: 2
 ---
 # hermeticism — as above, so below; the part mirrors the whole

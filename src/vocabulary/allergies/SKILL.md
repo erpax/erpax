@@ -1,63 +1,35 @@
 ---
 name: allergies
 description: "Use when reasoning about allergies as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/allergies
-coordinate: allergies · 5/round · 0f0754ea
-contentUuid: "b822f129-7d5b-51f3-99c5-651f3f7861e3"
-diamondUuid: "268f1f63-2d6d-85ad-b77b-4ab452d0c6fc"
-uuid: "0f0754ea-e642-84ce-b844-e8652217a314"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/allergies"
+coordinate: "vocabulary/allergies · 2/share · a2d91316"
+contentUuid: "b3bcf04e-7415-5db2-9c0c-0d970677186c"
+diamondUuid: "b2720ef2-a522-8184-b95d-6e7116c05768"
+uuid: "a2d91316-8d8c-8a55-87d3-b5989cd0a42a"
+horo: 2
 typography:
-  partition: allergies
-  bondDegree: 12
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 17
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "8a128ef0-2113-84b1-8d2d-f8a4aec1056f"
+  computationUuid: "d6350308-4b4e-8153-8a24-f6b275430772"
   stages:
     - stage: path
-      stageUuid: "32aa0347-a39f-8cb4-b55a-9dfa8b713fa7"
+      stageUuid: "e442df63-fae4-869a-a706-100ea70a366e"
     - stage: trinity
-      stageUuid: "29304cac-d83c-80d4-a991-7406784d486b"
+      stageUuid: "d2ecc8d1-bef2-8ca7-a0b6-bfa26b847714"
     - stage: boundary
-      stageUuid: "89e9fbb7-0fd4-871f-a0c1-321bcdbcfe24"
+      stageUuid: "776427d8-2046-8a02-b30f-465aacee1c38"
     - stage: links
-      stageUuid: "77a57996-fdae-80e5-8624-c39f72c8c151"
+      stageUuid: "d946cf51-99f6-8676-9f1f-9ef3e001f31b"
     - stage: horo
-      stageUuid: "47408488-aa62-81be-aa9c-15cc09567f7a"
+      stageUuid: "b6bc31bd-6978-80ec-93b9-dd64e0d1d23d"
     - stage: seal
-      stageUuid: "1d2a1252-c76b-87c6-b323-19c0017549ad"
+      stageUuid: "6d4f6b72-b902-8de4-b129-0b0ff7397f99"
     - stage: uuid
-      stageUuid: "41a6e944-cb41-81d6-b009-e20ec88a3195"
+      stageUuid: "21ece199-f9ba-8d6c-8899-08d02b4ad0a4"
 version: 2
 ---
 # allergies

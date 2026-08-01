@@ -1,73 +1,35 @@
 ---
 name: analysis
 description: "Use when reasoning about analysis as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/analysis
-coordinate: analysis · 1/base · 08755c11
-contentUuid: "5cddf3b1-bf7a-5948-a06a-b9e3b11c407a"
-diamondUuid: "3e9bbf28-dd64-8e43-a7a8-e7d41c68b956"
-uuid: "08755c11-124f-840c-8cb9-7d4c5006f66b"
-horo: 1
-bonds:
-  in:
-    - article
-    - collapse
-    - law
-    - merge
-    - news
-    - sti
-  out:
-    - article
-    - collapse
-    - law
-    - merge
-    - news
-    - sti
+atomPath: "vocabulary/analysis"
+coordinate: "vocabulary/analysis · 8/crest · 0aee7523"
+contentUuid: "f86972f6-6c56-59cf-b38b-2b47a05b90da"
+diamondUuid: "4e3e3c2f-4f6a-8dd1-84d9-50b8b3dd655c"
+uuid: "0aee7523-2f90-838e-bb27-8ba5f99498a6"
+horo: 8
 typography:
-  partition: analysis
-  bondDegree: 20
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 27
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - article
-    - collapse
-    - law
-    - merge
-    - news
-    - sti
-  matrix:
-    - article
-    - collapse
-    - law
-    - merge
-    - news
-    - sti
-  backlinks:
-    - article
-    - collapse
-    - law
-    - merge
-    - news
-    - sti
 signatures:
-  computationUuid: "c42cff41-29c7-8f85-b811-8a14acca6a6e"
+  computationUuid: "e9e5d11f-c646-859d-8758-3a3b0703b84b"
   stages:
     - stage: path
-      stageUuid: "1742995c-1738-8b57-b443-9e8eb9a50cad"
+      stageUuid: "0046cfdb-e790-8d22-b837-d48d4772b543"
     - stage: trinity
-      stageUuid: "7d3da719-258d-8cb2-801f-875ab121bc03"
+      stageUuid: "4dc8d6d2-7d43-8690-8e54-bcddba7c5310"
     - stage: boundary
-      stageUuid: "911b2afd-a753-8701-85f1-a7bb26e1b8ad"
+      stageUuid: "d5348e52-9c02-84ea-9172-66dc0f55b0cd"
     - stage: links
-      stageUuid: "66d0077c-48d7-8551-bb29-3f67b573e451"
+      stageUuid: "01eed5f6-933b-8bb9-b5ae-732623382520"
     - stage: horo
-      stageUuid: "bc36343b-1e12-81bb-a893-6940f81e946e"
+      stageUuid: "395c2dbb-97fa-80c8-b9a4-36c2ed98f3e2"
     - stage: seal
-      stageUuid: "6dca437a-c2bc-8289-9065-107deb9c4c81"
+      stageUuid: "539cfe85-b43b-89c7-a6d6-4735baa75eec"
     - stage: uuid
-      stageUuid: "e40eced8-1175-827d-900a-222392a91d54"
+      stageUuid: "651cb9f1-ae00-8339-aaf3-7a007c3a7a20"
 version: 2
 ---
 # analysis

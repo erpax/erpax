@@ -1,53 +1,35 @@
 ---
 name: mountain
 description: "Use when reasoning about mountain — A mountain, like Mount Whitney or Mount Everest."
-atomPath: vocabulary/mountain
-coordinate: mountain · 4/weave · 4b51cb6a
-contentUuid: "88b70e28-2eb5-5106-bfcf-74f383cfea2e"
-diamondUuid: "db2272e6-b530-8222-a36d-f1b716037fd1"
-uuid: "4b51cb6a-d4c4-8989-9ee1-ab767dd76300"
-horo: 4
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/mountain"
+coordinate: "vocabulary/mountain · 7/descent · 81131680"
+contentUuid: "de2dfe42-9648-5305-a89e-6a5872b90c04"
+diamondUuid: "e7195c48-8bce-838a-9e40-2ab825cebe50"
+uuid: "81131680-a4e7-8d02-8d4f-cc17a87b9cc8"
+horo: 7
 typography:
-  partition: mountain
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "1491628a-25d4-80bd-a054-bb24c91e3da7"
+  computationUuid: "38eedd8d-7a46-8895-89ef-157b0367fc9d"
   stages:
     - stage: path
-      stageUuid: "8dbcedf7-12ce-88bc-a96a-c0d9de528843"
+      stageUuid: "530aaca4-d054-85ad-ac6f-96451749e4ea"
     - stage: trinity
-      stageUuid: "8e639035-f7b9-8ad5-9543-9524348f7281"
+      stageUuid: "5fc3df4a-fbe3-8f13-9fee-4d3503c3de07"
     - stage: boundary
-      stageUuid: "6d9fbb3e-1901-8e47-b275-15cd27f70ddc"
+      stageUuid: "7c8713db-70f2-8be3-b61c-84d215ddcace"
     - stage: links
-      stageUuid: "b013cdd7-6d38-87a3-8474-936dce1fb977"
+      stageUuid: "d4039266-ca83-808a-9e57-c4c115330899"
     - stage: horo
-      stageUuid: "37898ae6-c1c6-8dab-baf4-30dfc2554b73"
+      stageUuid: "e8db2510-a0b3-811d-ac62-fe60c130b3fe"
     - stage: seal
-      stageUuid: "d4c185a5-bc4c-8bc8-a355-1247647c2040"
+      stageUuid: "35bfdaec-729c-8ae7-9a8b-fd17f0e3654a"
     - stage: uuid
-      stageUuid: "67255d77-446b-8cc9-80dc-6e423b952df4"
+      stageUuid: "53313450-0e8e-8b03-855a-2c3320908f82"
 version: 2
 ---
 # mountain

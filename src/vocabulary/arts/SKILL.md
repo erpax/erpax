@@ -1,83 +1,35 @@
 ---
 name: arts
 description: "Use when reasoning about arts as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/arts
-coordinate: arts · 5/round · 6d16ae2c
-contentUuid: "6258a945-2497-5f76-b80f-bd0a019d3510"
-diamondUuid: "e570582d-1880-827a-9018-e101db98a0d8"
-uuid: "6d16ae2c-2721-8fbe-839d-1d77c06cebce"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - event
-    - law
-    - merge
-    - performing
-    - sti
-    - theater
-    - visual
-  out:
-    - collapse
-    - event
-    - law
-    - merge
-    - performing
-    - sti
-    - theater
-    - visual
+atomPath: "vocabulary/arts"
+coordinate: "vocabulary/arts · 7/descent · bb6011dc"
+contentUuid: "96ff1d0d-4a69-5b96-8618-80b5a4ef27a8"
+diamondUuid: "ceb31eba-749f-8eb9-81df-17a50d0fd4a6"
+uuid: "bb6011dc-ab7e-8f15-a21b-6b4d6ee70106"
+horo: 7
 typography:
-  partition: arts
+  partition: vocabulary
   bondDegree: 27
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - event
-    - law
-    - merge
-    - performing
-    - sti
-    - theater
-    - visual
-  matrix:
-    - collapse
-    - event
-    - law
-    - merge
-    - performing
-    - sti
-    - theater
-    - visual
-  backlinks:
-    - collapse
-    - event
-    - law
-    - merge
-    - performing
-    - sti
-    - theater
-    - visual
 signatures:
-  computationUuid: "95b65955-b099-8ec5-b652-2e648ae483d8"
+  computationUuid: "4362a587-c5b9-89c0-bde3-61f6abb4eb1b"
   stages:
     - stage: path
-      stageUuid: "ce8a8b31-92a3-8458-b38c-e32454469617"
+      stageUuid: "771563f4-ca48-8b5e-8e13-134490d719a9"
     - stage: trinity
-      stageUuid: "c7d7aee7-4268-854a-a83e-ef4db966e8d4"
+      stageUuid: "a7218fe2-9b3b-86bc-8a15-d3ba46e4b2ee"
     - stage: boundary
-      stageUuid: "6e506f4a-d490-8216-afb9-db22be59e3af"
+      stageUuid: "9f0f650d-91fa-8966-94fb-825e1936774d"
     - stage: links
-      stageUuid: "12fb6e1c-dad7-8938-9e22-bf2cad758fca"
+      stageUuid: "24b464ae-91df-8cbc-acbf-895bfb9fb917"
     - stage: horo
-      stageUuid: "56999be0-9ea1-8ec2-b09d-72106e0dd15b"
+      stageUuid: "5475a036-c4b6-8a3e-b5bb-2a536aa1b3d8"
     - stage: seal
-      stageUuid: "e0e7666d-fa76-89a3-991c-02936748c49e"
+      stageUuid: "27855903-28bd-831c-8fb8-62779e8510be"
     - stage: uuid
-      stageUuid: "10b7c7ef-68f0-8504-81d4-7ed114df44c3"
+      stageUuid: "2b8e0ca4-2f5d-8c45-afe9-f9b4612ee42c"
 version: 2
 ---
 # arts

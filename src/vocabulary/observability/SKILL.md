@@ -1,71 +1,34 @@
 ---
 name: observability
 description: "Use when making systems instrumentable — metrics (gauge/counter/histogram/summary), distributed tracing, structured logging, cardinality explosion in high-dimensional metrics, sampling strategies for observability."
-atomPath: vocabulary/observability
-coordinate: observability · 5/round · 3a7bcee7
-contentUuid: "55f270a0-caf8-54ce-b6e9-66ddda1b73d6"
-diamondUuid: "2139da76-f882-8246-85ce-861e7c8c1e92"
-uuid: "3a7bcee7-18de-85c3-9f0b-3044e9b8f7e9"
-horo: 5
-bonds:
-  in:
-    - deploy
-    - events
-    - jobs
-    - metric
-    - sampling
-    - sla
-  out:
-    - deploy
-    - events
-    - jobs
-    - metric
-    - sampling
-    - sla
+atomPath: "vocabulary/observability"
+coordinate: "vocabulary/observability · 4/weave · 686d7076"
+contentUuid: "84372ac2-bfcb-5251-a816-201fe874ccf8"
+diamondUuid: "e3495c91-d77e-88e7-b58b-f3c227ccee2b"
+uuid: "686d7076-559d-844f-b560-350d42ac19d8"
+horo: 4
 typography:
-  partition: observability
+  partition: vocabulary
   bondDegree: 18
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - deploy
-    - events
-    - jobs
-    - metric
-    - sampling
-  matrix:
-    - deploy
-    - events
-    - jobs
-    - metric
-    - sampling
-    - sla
-  backlinks:
-    - deploy
-    - events
-    - jobs
-    - metric
-    - sampling
-    - sla
 signatures:
-  computationUuid: "b2194b49-f7c0-86f4-b780-2ca6b6c1326c"
+  computationUuid: "23ce28e0-ceae-865c-8e79-9885ef578206"
   stages:
     - stage: path
-      stageUuid: "0989a2b9-7502-8fab-88c0-0a7b2804f803"
+      stageUuid: "89e333b9-2ae7-81ad-a74a-cd99cb420152"
     - stage: trinity
-      stageUuid: "51bcfbce-7b59-8ecc-b785-e6554e36e619"
+      stageUuid: "729ae518-08a5-8cd9-a8e9-bb04fc6e0c3e"
     - stage: boundary
-      stageUuid: "0c1ea5c2-20ca-8840-be9b-03b246596120"
+      stageUuid: "15c78626-9989-82be-94ce-f55ffa111bc8"
     - stage: links
-      stageUuid: "7691fc0a-0e32-84be-bb56-f2dd1942a6dd"
+      stageUuid: "45ed9431-aee7-8e10-abab-f676dc631762"
     - stage: horo
-      stageUuid: "8652881e-c137-8404-8eeb-1cb18958284a"
+      stageUuid: "2a6659e6-622f-8854-84be-d6bb5cdbe97b"
     - stage: seal
-      stageUuid: "b12b72c3-240f-82ba-9521-3fbcdf9f4da3"
+      stageUuid: "3478c606-dc53-881e-8d6d-da196d39f096"
     - stage: uuid
-      stageUuid: "3583c7c1-5ae9-8260-9628-43aab3b42754"
+      stageUuid: "726bc7ba-6d6d-8dca-b5c6-f41edf74a956"
 version: 2
 ---
 # observability

@@ -2,159 +2,19 @@
 name: dry
 description: "Use when checking whether the corpus stays DRY — the computed convention that no reference is duplicated, every one folded to a single source, measured live as coverage = atoms / (atoms + residue) over the real tree."
 atomPath: "convention/dry"
-coordinate: "convention/dry · 4/weave · d8d7a529"
-contentUuid: "bd5272b1-39d4-52ba-91c5-10a0c8d790b6"
-diamondUuid: "024ed682-214d-8e2f-9690-086fc09dd375"
-uuid: "d8d7a529-fb32-8f69-bf9c-9ecda7ddc949"
-horo: 4
-bonds:
-  in:
-    - analytics
-    - calculator
-    - cleaning
-    - collapse
-    - collide
-    - collider
-    - command
-    - complete
-    - concatenate
-    - convention
-    - dry
-    - entropy
-    - expand
-    - field
-    - fusion
-    - gravity
-    - laundry
-    - law
-    - lawful
-    - math
-    - merge
-    - migrate
-    - op
-    - quaternary
-    - reactor
-    - singularity
-    - sti
-    - strength
-    - tamper
-    - test
-    - vocabulary
-  out:
-    - analytics
-    - calculator
-    - cleaning
-    - collapse
-    - collide
-    - collider
-    - command
-    - complete
-    - concatenate
-    - convention
-    - dry
-    - entropy
-    - expand
-    - field
-    - fusion
-    - gravity
-    - laundry
-    - law
-    - lawful
-    - math
-    - merge
-    - migrate
-    - op
-    - quaternary
-    - reactor
-    - singularity
-    - sti
-    - strength
-    - tamper
-    - test
-    - vocabulary
+coordinate: "convention/dry · 5/round · 6f143aa0"
+contentUuid: "bab24681-315e-5117-93c2-db9c680fe30a"
+diamondUuid: "833d5c33-d30d-85b2-bc52-6964325fd18c"
+uuid: "6f143aa0-ecd2-8ba7-8cce-911be9429a0f"
+horo: 5
 typography:
   partition: convention
-  bondDegree: 109
-  neighbors: []
+  bondDegree: 107
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - cost
-    - dry
-    - gravity
-    - law
-    - matrix
-    - merge
-    - uuid
-  matrix:
-    - analytics
-    - calculator
-    - cleaning
-    - collapse
-    - collide
-    - collider
-    - command
-    - complete
-    - concatenate
-    - convention
-    - dry
-    - entropy
-    - expand
-    - field
-    - fusion
-    - gravity
-    - laundry
-    - law
-    - lawful
-    - math
-    - merge
-    - migrate
-    - op
-    - quaternary
-    - reactor
-    - singularity
-    - sti
-    - strength
-    - tamper
-    - test
-    - vocabulary
-  backlinks:
-    - analytics
-    - calculator
-    - cleaning
-    - collapse
-    - collide
-    - collider
-    - command
-    - complete
-    - concatenate
-    - convention
-    - dry
-    - entropy
-    - expand
-    - field
-    - fusion
-    - gravity
-    - laundry
-    - law
-    - lawful
-    - math
-    - merge
-    - migrate
-    - op
-    - quaternary
-    - reactor
-    - singularity
-    - sti
-    - strength
-    - tamper
-    - test
-    - vocabulary
 signatures:
-  computationUuid: "b79280c6-3c41-8b78-b49b-83586491d3dd"
+  computationUuid: "6ae34d6c-295e-8b9d-922d-dad51eb048bb"
   stages:
     - stage: path
       stageUuid: "f16a4d18-bd62-8760-b46b-7ede514743b6"
@@ -165,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0f088d3d-86cb-83e6-8b24-16d331c6f813"
     - stage: horo
-      stageUuid: "4c463b7e-b7e5-840d-8fec-52605637721d"
+      stageUuid: "66d81c79-2630-8c4a-9291-b16a62ac7a3d"
     - stage: seal
       stageUuid: "304b13dc-3c90-87d4-8b1f-ada85e465b65"
     - stage: uuid
-      stageUuid: "3830888a-34f9-8b2a-bafe-e8a77c89cf5c"
+      stageUuid: "3e717019-9c7b-8c0d-9548-2d70eafc7b6b"
 version: 2
 ---
 # convention/dry — no duplication, every reference folded to one source

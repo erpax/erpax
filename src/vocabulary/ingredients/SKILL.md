@@ -1,53 +1,35 @@
 ---
 name: ingredients
 description: "Use when reasoning about ingredients — A single ingredient used in the recipe, e.g. sugar, flour or garlic."
-atomPath: vocabulary/ingredients
-coordinate: ingredients · 7/descent · 6fb55173
-contentUuid: "c11ef16a-6504-5017-8605-8f1379a13fb6"
-diamondUuid: "519fe857-9b30-87ed-9528-0c118e8c80c4"
-uuid: "6fb55173-3b58-8574-8394-2378a3a7eb0b"
-horo: 7
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/ingredients"
+coordinate: "vocabulary/ingredients · 4/weave · e983b12f"
+contentUuid: "4734e518-d450-50a3-8412-a83340f59a17"
+diamondUuid: "18f21476-c8a5-8969-aa2a-15a629a4c046"
+uuid: "e983b12f-4937-89f0-a371-404eb1a0e8dc"
+horo: 4
 typography:
-  partition: ingredients
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "24306504-129d-8398-8f18-9a1bc5240cec"
+  computationUuid: "1527ed3a-0843-8389-8ac1-1bfd785c333c"
   stages:
     - stage: path
-      stageUuid: "ab670f04-7da3-8937-aed0-497c2792161f"
+      stageUuid: "27ac0d87-08e3-8d97-bcf1-122b5788a3f0"
     - stage: trinity
-      stageUuid: "a89e8d37-6a06-81ec-b8fd-64eac2ef9585"
+      stageUuid: "2e14a62d-7475-845c-b4cb-d4d48013babf"
     - stage: boundary
-      stageUuid: "5e38fda2-5196-8b4f-b5c9-1da6840bd960"
+      stageUuid: "3667ae16-1d0a-81db-b671-a8464bfecb2b"
     - stage: links
-      stageUuid: "709b25c7-e023-83fe-ae04-1793db8c440b"
+      stageUuid: "f42cb818-02a0-8f62-b666-46ae59d58d16"
     - stage: horo
-      stageUuid: "a34f72ea-6d9b-86e9-94df-346cbf311924"
+      stageUuid: "ef306e25-5615-8bc7-abd7-58d99391e264"
     - stage: seal
-      stageUuid: "032fae9b-1c20-87a3-ac88-0ec527cb9319"
+      stageUuid: "434a83ba-0782-8cac-9b01-e58b35d55473"
     - stage: uuid
-      stageUuid: "21ad259d-b6d1-8995-964d-618364f7d118"
+      stageUuid: "41d26e61-a808-8622-98d4-b0ae33caf8e2"
 version: 2
 ---
 # ingredients

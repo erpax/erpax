@@ -2,56 +2,33 @@
 name: fingerprint
 description: "Use when a whole-corpus derivation (rules snapshot, readme graph, corpus context) is computed by many callers — corpusFingerprint + memoByFingerprint reuse the one scan across siblings, the compute-tier of learn-by-shared-experience and the buildable AI-bill lever."
 atomPath: "cache/fingerprint"
-coordinate: "cache/fingerprint · 4/weave · e533bea9"
-contentUuid: "ad827c9c-df11-5234-8aa3-46212b0e5b5f"
-diamondUuid: "b0e4e3a6-4334-8d82-b318-9c4874cb1f44"
-uuid: "e533bea9-3ba2-8073-9783-166d596bcb19"
-horo: 4
-bonds:
-  in:
-    - cache
-    - law
-    - rules
-  out:
-    - cache
-    - law
-    - rules
+coordinate: "cache/fingerprint · 1/base · c340b2d8"
+contentUuid: "891771d9-0dd6-5b8a-b80c-4d06b7067730"
+diamondUuid: "79a719cb-38be-80dc-9f53-b734a16de296"
+uuid: "c340b2d8-8ef6-800f-935d-23f56bfda10d"
+horo: 1
 typography:
   partition: cache
   bondDegree: 9
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - cache
-    - law
-    - rules
-  matrix:
-    - cache
-    - law
-    - rules
-  backlinks:
-    - cache
-    - law
-    - rules
 signatures:
-  computationUuid: "9a994570-5066-892a-90ae-5ba5faa5af63"
+  computationUuid: "3a8a46e5-febc-84e8-bd05-f741b3c99c49"
   stages:
     - stage: path
       stageUuid: "9330f767-034a-8e89-98a5-6408dacef4a6"
     - stage: trinity
       stageUuid: "332e0ea5-5e63-8e4f-99a2-f8b848fa4c9e"
     - stage: boundary
-      stageUuid: "305a9c12-a9e8-841b-b56b-82feba033b37"
+      stageUuid: "a327a607-c08b-8ccb-ae2d-5f6b2f0a2159"
     - stage: links
       stageUuid: "a7c43aa0-7f93-8744-874e-30078f10f86d"
     - stage: horo
-      stageUuid: "f15f0e1f-ed42-83ae-8b05-ee5e5402c5ff"
+      stageUuid: "f0adebc2-a994-8650-a36f-ef7cc5f2aec2"
     - stage: seal
       stageUuid: "228b64f1-3fd2-845e-85b6-dffa239fdd32"
     - stage: uuid
-      stageUuid: "8cd8ac00-7c7a-8c69-95a2-26f4663444ec"
+      stageUuid: "fba5ec15-0572-8d30-a45b-595f00552c2b"
 version: 2
 ---
 # cache/fingerprint — reuse the whole-corpus scan, never re-derive it

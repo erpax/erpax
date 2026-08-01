@@ -1,63 +1,35 @@
 ---
 name: iptcdigital
 description: "Use when reasoning about iptcdigital as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/iptcdigital
-coordinate: iptcdigital · 8/crest · 4ec63ab0
-contentUuid: "69f59b20-477a-5c21-ae9a-393fb438b276"
-diamondUuid: "05094b2d-3dd4-85f2-bfbc-dd22e3a1d4ed"
-uuid: "4ec63ab0-313e-8d31-854a-b484e4de6914"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/iptcdigital"
+coordinate: "vocabulary/iptcdigital · 1/base · 45839bcc"
+contentUuid: "02fe78bc-e0bc-5190-b3d0-49cb889a1005"
+diamondUuid: "add10165-47b7-8aff-91a4-25d644ff06e3"
+uuid: "45839bcc-6d9a-8208-82e3-10a4e7b0f76f"
+horo: 1
 typography:
-  partition: iptcdigital
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "5de0f5e6-b5b9-8609-81b2-9fa2842b9ab2"
+  computationUuid: "3ede72f2-8c43-8e98-b1a2-3bb277e28c1a"
   stages:
     - stage: path
-      stageUuid: "483403b3-750b-845e-bc54-e3c707a1b735"
+      stageUuid: "2b2086e3-61c4-8ac5-8e97-444bfb693549"
     - stage: trinity
-      stageUuid: "0b52b35b-044b-8952-ba7d-9a950e0195b6"
+      stageUuid: "70f386cc-3e9e-8f5f-b8a3-32d856b57a48"
     - stage: boundary
-      stageUuid: "f6e4ea3c-94fd-8fe4-a724-c4def85bfefa"
+      stageUuid: "5e6d675a-4e16-8022-aa00-e1e0af4e6873"
     - stage: links
-      stageUuid: "3df9e715-6e55-8a62-9400-d282490ada07"
+      stageUuid: "a035ceff-933b-8631-b69f-294d0afa574e"
     - stage: horo
-      stageUuid: "9be99fac-a6e2-830d-8883-f9fa272d0627"
+      stageUuid: "22bea822-5848-826d-b57f-9576150aa289"
     - stage: seal
-      stageUuid: "f72b4c60-1a14-8615-9f5b-8e7c444d54e5"
+      stageUuid: "9b336502-d6be-8ca9-9481-3ebfec7f4016"
     - stage: uuid
-      stageUuid: "d70491ef-fecb-8624-80e0-b6b5d3f2034e"
+      stageUuid: "81f55113-e489-858d-b9c3-5adbdaa98be0"
 version: 2
 ---
 # iptcdigital

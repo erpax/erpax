@@ -1,63 +1,35 @@
 ---
 name: midwifery
 description: "Use when reasoning about midwifery as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/midwifery
-coordinate: midwifery · 8/crest · bb4d9f3f
-contentUuid: "beefb1c3-448e-579a-933c-eb27daa2d6fb"
-diamondUuid: "fd237994-e8d6-87aa-9ce5-9486815300b4"
-uuid: "bb4d9f3f-0985-8ec2-ba1e-9d171fd43e18"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/midwifery"
+coordinate: "vocabulary/midwifery · 5/round · 4aa4a613"
+contentUuid: "0c410fb1-dfe8-57c1-8bad-2127d5e4e02e"
+diamondUuid: "ac64e745-1e1e-8de3-bfd2-833f89f8011d"
+uuid: "4aa4a613-0b5b-87f4-8111-604e69e892c8"
+horo: 5
 typography:
-  partition: midwifery
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "8be7246b-20ac-895e-a89c-5e86cecc54a3"
+  computationUuid: "11dbb505-f313-8533-9b6f-5037a3eed238"
   stages:
     - stage: path
-      stageUuid: "8cdab852-a585-8122-a187-5c0aaaf7a01b"
+      stageUuid: "569ae120-9c1e-84a0-81e1-ef82010fcc73"
     - stage: trinity
-      stageUuid: "6eb994bf-c006-81b4-a6e8-6140a042d46c"
+      stageUuid: "19f3cec2-5b48-8cb9-8619-82cc8d5bfd9d"
     - stage: boundary
-      stageUuid: "430a1257-aa03-8879-9634-02ca11bba603"
+      stageUuid: "d7984e0f-d945-8c34-aa53-940388505d25"
     - stage: links
-      stageUuid: "af6832d5-6d30-84d7-b147-75f09ace2334"
+      stageUuid: "7c8cce64-406b-8252-97a5-a5643dd4ed6a"
     - stage: horo
-      stageUuid: "0ef9a6ba-27ca-893e-afaf-0fe933931963"
+      stageUuid: "5ea1ef58-96b1-8d4e-b428-0b3b385d0d11"
     - stage: seal
-      stageUuid: "07475881-5d87-8a3c-88aa-089565686fae"
+      stageUuid: "351886ee-9f54-831a-bbcb-4bbc2dc456b5"
     - stage: uuid
-      stageUuid: "572e750e-363d-8f9a-a94c-67e04bd2f26b"
+      stageUuid: "983fe21b-214a-8dae-b4b0-8ec47fb0a2bd"
 version: 2
 ---
 # midwifery

@@ -2,102 +2,18 @@
 name: reality
 description: "Use when reasoning about the live shipped state versus the model — reality is what is actually on main / deployed; the live matrix root is its fingerprint, and a claim is real iff it matches that root."
 atomPath: reality
-coordinate: reality · 2/share · 8c21e68a
-contentUuid: "15a6fa0f-b809-58e1-ad37-de688dd57b63"
-diamondUuid: "d2c85901-7675-8670-abe8-e69fe610d749"
-uuid: "8c21e68a-3d9c-8432-ae65-07fe18e3c20c"
-horo: 2
-bonds:
-  in:
-    - anchor
-    - deploy
-    - device
-    - finality
-    - fs
-    - generator
-    - law
-    - literature
-    - matrix
-    - number
-    - proof
-    - quantum
-    - reality
-    - snapshot
-    - uuid
-    - verification
-    - void
-  out:
-    - anchor
-    - deploy
-    - device
-    - finality
-    - fs
-    - generator
-    - law
-    - literature
-    - matrix
-    - number
-    - proof
-    - quantum
-    - reality
-    - snapshot
-    - uuid
-    - verification
-    - void
+coordinate: "reality · 4/weave · 7cf31774"
+contentUuid: "b3e29dab-2fbb-56ed-8f62-7623365c2c8c"
+diamondUuid: "b7068a8d-f7e6-82c6-a040-c49a95504e6e"
+uuid: "7cf31774-50d1-871b-b2f5-728007c6e1b6"
+horo: 4
 typography:
   partition: reality
   bondDegree: 62
-  neighbors: []
-standards:
-  - "reality = the live matrix root; computed, never hand-asserted"
+standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - anchor
-    - deploy
-    - law
-    - matrix
-    - proof
-    - quantum
-    - verification
-  matrix:
-    - anchor
-    - deploy
-    - device
-    - finality
-    - fs
-    - generator
-    - law
-    - literature
-    - matrix
-    - number
-    - proof
-    - quantum
-    - reality
-    - snapshot
-    - uuid
-    - verification
-    - void
-  backlinks:
-    - anchor
-    - deploy
-    - device
-    - finality
-    - fs
-    - generator
-    - law
-    - literature
-    - matrix
-    - number
-    - proof
-    - quantum
-    - reality
-    - snapshot
-    - uuid
-    - verification
-    - void
 signatures:
-  computationUuid: "b6755ff6-552e-8dbc-961c-334d20c941cf"
+  computationUuid: "b1ca2bcd-5281-8011-ba38-c5dad69e1344"
   stages:
     - stage: path
       stageUuid: "cc5c3991-41ab-84d4-8479-b6c4481d2e1a"
@@ -108,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c38a8899-1005-8e64-a66a-0b75d3b8560a"
     - stage: horo
-      stageUuid: "973dde8a-91c5-8f57-97a5-a00e4883651f"
+      stageUuid: "7f3122ee-1797-8137-84a2-0e69e7c49741"
     - stage: seal
-      stageUuid: "a08722e5-b8f7-8b3e-86b5-e6a2546bd92c"
+      stageUuid: "d22eabd0-9d37-8375-8adc-9ad972427dda"
     - stage: uuid
-      stageUuid: "f0ce6d6c-b9c6-8a73-9292-7e82707d1499"
+      stageUuid: "b9cbd775-19c4-80c3-89fa-4b139619bfaa"
 version: 2
 ---
 # reality — the live state, content-addressed

@@ -1,53 +1,35 @@
 ---
 name: physician
 description: "Use when reasoning about physician — An individual physician or a physician's office considered as a MedicalOrganization."
-atomPath: vocabulary/physician
-coordinate: physician · 1/base · bbafbce5
-contentUuid: "a9ec3996-dc07-5607-9a29-5e0d915df5a3"
-diamondUuid: "47602781-ff9c-8c4c-85aa-e53e49b8a77d"
-uuid: "bbafbce5-b174-8267-be9e-e3e02e8c316d"
-horo: 1
-bonds:
-  in:
-    - individual
-    - law
-  out:
-    - individual
-    - law
+atomPath: "vocabulary/physician"
+coordinate: "vocabulary/physician · 8/crest · 194c55ca"
+contentUuid: "06243df0-70da-54d7-ae00-881855083e71"
+diamondUuid: "9e5d47ad-9701-8410-8176-d5a7568ca040"
+uuid: "194c55ca-4e8f-8ea4-b172-db281b478f37"
+horo: 8
 typography:
-  partition: physician
-  bondDegree: 7
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 18
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - individual
-    - law
-  matrix:
-    - individual
-    - law
-  backlinks:
-    - individual
-    - law
 signatures:
-  computationUuid: "8f4c1b15-69df-8df6-a97c-0e8efdf83ce1"
+  computationUuid: "132c1325-65af-8dec-aa0a-1a2de395ec52"
   stages:
     - stage: path
-      stageUuid: "297d0a42-fcf3-81b0-889b-5942bf8d9181"
+      stageUuid: "327ffae8-5180-8a1b-ba12-a9cb36b15f3e"
     - stage: trinity
-      stageUuid: "ea6b2fea-790b-8c49-a7fc-02b4138b1f95"
+      stageUuid: "b2ba1ae7-7f86-8d2c-9420-1aeed8913002"
     - stage: boundary
-      stageUuid: "b55c5ef8-2c38-889b-8a1f-f1beffde9635"
+      stageUuid: "a0486510-e103-87f0-80c0-4e923d4b740f"
     - stage: links
-      stageUuid: "3c14107c-5375-8cc2-8926-6de4a408ee7f"
+      stageUuid: "e931907b-52fa-868d-9436-fe005efb86f0"
     - stage: horo
-      stageUuid: "08785958-19e7-8a45-b753-b3ba081b8504"
+      stageUuid: "4d311e93-764d-8fce-aeb0-18ff9cac927b"
     - stage: seal
-      stageUuid: "c3488f10-0c00-8493-b75d-faf457d99a76"
+      stageUuid: "4e6cd941-3996-8e21-a373-b2fe3ff7c5b9"
     - stage: uuid
-      stageUuid: "c351ca4c-0f78-810c-ad81-75cdd5e1fed8"
+      stageUuid: "57e7aede-3e92-8e66-ba24-0f67c8a9aa3d"
 version: 2
 ---
 # physician

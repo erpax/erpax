@@ -1,73 +1,35 @@
 ---
 name: broker
 description: Use when reasoning about broker — An entity that arranges for an exchange between a buyer and a seller. In most cases a broker never acquires or releases ownership of a product or service involved in an exchange. I
-atomPath: vocabulary/broker
-coordinate: broker · 8/crest · 43fb3d55
-contentUuid: "9010ff02-e4af-5850-a40d-cece887adfdd"
-diamondUuid: "0ea282c6-a6a2-8759-ab1c-dde886136c69"
-uuid: "43fb3d55-336d-80c4-bc0f-d1a24d8609fd"
+atomPath: "vocabulary/broker"
+coordinate: "vocabulary/broker · 8/crest · c2013090"
+contentUuid: "685aafb9-d8a6-5d31-bc01-79d36e64c452"
+diamondUuid: "02baa6cf-1d87-842b-b302-84358702204f"
+uuid: "c2013090-d770-80b5-ab1f-67b4f8cdf57d"
 horo: 8
-bonds:
-  in:
-    - access
-    - bindings
-    - law
-    - mcp
-    - request
-    - research
-    - thing
-  out:
-    - access
-    - bindings
-    - law
-    - mcp
-    - request
-    - research
-    - thing
 typography:
-  partition: broker
+  partition: vocabulary
   bondDegree: 21
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - access
-    - bindings
-    - law
-    - mcp
-    - request
-    - research
-    - thing
-  backlinks:
-    - access
-    - bindings
-    - law
-    - mcp
-    - request
-    - research
-    - thing
 signatures:
-  computationUuid: "246fe635-7f27-8c21-9d7a-3ac96b2778bb"
+  computationUuid: "131ba12a-a180-8aa9-8574-7c247def41a2"
   stages:
     - stage: path
-      stageUuid: "01ced5b0-6c30-8e4a-837f-df959adbda01"
+      stageUuid: "1e668809-6b76-8683-b498-a11556dba394"
     - stage: trinity
-      stageUuid: "de003d6e-d9e7-81e2-be8b-cef0d6ab160a"
+      stageUuid: "ac33eb5b-b750-89ea-a75e-cd8e4999420d"
     - stage: boundary
-      stageUuid: "45bee809-e3c2-8714-a440-9eb74947e37d"
+      stageUuid: "353cab15-5b4b-8087-9d01-e11ba1c1c368"
     - stage: links
-      stageUuid: "0f112f1a-6eb3-8520-b65a-9446c5921833"
+      stageUuid: "2b9fd492-ff86-8e58-906c-5f7baec51cd7"
     - stage: horo
-      stageUuid: "f1de66cc-2844-809b-bf33-fad655daa925"
+      stageUuid: "f1ee73b3-2b3c-88ec-b1df-1e41db02846e"
     - stage: seal
-      stageUuid: "1d2db084-41d7-8c0d-879a-3ca0fd0772cb"
+      stageUuid: "2d7f379a-6575-85c5-9832-1485df691219"
     - stage: uuid
-      stageUuid: "bc34b1e5-422f-8b1e-b051-f72b2ca1ce8b"
+      stageUuid: "8640a884-43a6-8a70-8677-637ca6933e7e"
 version: 2
 ---
 # broker

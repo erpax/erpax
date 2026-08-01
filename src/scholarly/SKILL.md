@@ -2,57 +2,19 @@
 name: scholarly
 description: "Use when reasoning about scholarly as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: scholarly
-coordinate: scholarly · 1/base · b0ec2276
-contentUuid: "293e7bd1-3bbf-5a7b-94f0-750a8930858b"
-diamondUuid: "25a17828-ebd2-88d2-a247-151abab7cdc9"
-uuid: "b0ec2276-aaa6-86b7-ba8a-be30e680daff"
+coordinate: "scholarly · 1/base · d32db8bd"
+contentUuid: "b8784129-58dd-560e-815b-5fb56e851c13"
+diamondUuid: "75b9457c-19ab-880b-88ac-cfd4b7de7d5d"
+uuid: "d32db8bd-df7b-8119-9a0d-983f4af6b84f"
 horo: 1
-bonds:
-  in:
-    - article
-    - collapse
-    - law
-    - medical
-    - merge
-    - sti
-  out:
-    - article
-    - collapse
-    - law
-    - medical
-    - merge
-    - sti
 typography:
   partition: scholarly
-  bondDegree: 20
-  neighbors: []
+  bondDegree: 29
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - article
-    - collapse
-    - law
-    - medical
-    - merge
-    - sti
-  matrix:
-    - article
-    - collapse
-    - law
-    - medical
-    - merge
-    - sti
-  backlinks:
-    - article
-    - collapse
-    - law
-    - medical
-    - merge
-    - sti
 signatures:
-  computationUuid: "84978e62-e62e-8a90-a326-29bd099ed504"
+  computationUuid: "cb5fe1ec-70aa-85ae-aecb-6d7fd8d22157"
   stages:
     - stage: path
       stageUuid: "c5dfd29e-989f-8d51-88db-081a1f47cf67"
@@ -63,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "036a4df0-c4c7-8f2e-ab79-546ff832e799"
     - stage: horo
-      stageUuid: "39511933-250e-8d84-bb0c-7fb6505a26f7"
+      stageUuid: "a6c595e7-4206-83e5-a850-fdd7aaf7e215"
     - stage: seal
-      stageUuid: "b1368c55-db4b-8b40-ace5-f7b9da481f44"
+      stageUuid: "7b682bee-6bfe-896a-ac3a-f76c756b723b"
     - stage: uuid
-      stageUuid: "9598f695-c369-8506-bf5d-66b7df2fbd9b"
+      stageUuid: "567b18f3-6f22-898b-8095-b091a351cff3"
 version: 2
 ---
 # scholarly

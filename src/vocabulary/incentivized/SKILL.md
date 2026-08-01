@@ -1,68 +1,35 @@
 ---
 name: incentivized
 description: "Use when reasoning about incentivized as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/incentivized
-coordinate: incentivized · 7/descent · 64986262
-contentUuid: "a52aea09-7bf4-5e33-9a8c-515a4de4e674"
-diamondUuid: "68c97ea2-222f-8180-ae26-9b7a30cd230a"
-uuid: "64986262-b112-800d-8e1d-095ff1c8c769"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/incentivized"
+coordinate: "vocabulary/incentivized · 1/base · d5ecdbe6"
+contentUuid: "68d63ae1-a169-58b8-95dd-c32c4f98d2cb"
+diamondUuid: "bd9de4b6-1576-8736-bff8-abfa8a3ea5f3"
+uuid: "d5ecdbe6-e0d0-8fec-8840-260c39809fbb"
+horo: 1
 typography:
-  partition: incentivized
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - item
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "c8539ac1-a025-8dde-ad9e-5391edccce7f"
+  computationUuid: "d41c7b21-7ffd-8093-9378-975d71a40cbb"
   stages:
     - stage: path
-      stageUuid: "b9d6690e-a23c-83d3-9588-55c79346c1f3"
+      stageUuid: "e9b399e9-a45f-85e5-af3d-43e1a9af242a"
     - stage: trinity
-      stageUuid: "3a3fd8e1-03f8-88db-afb7-93233accd6c5"
+      stageUuid: "77b2fdc8-506b-8ec3-972f-3ca821ecd2b2"
     - stage: boundary
-      stageUuid: "74795941-b3b6-8d50-b293-4cc268a2e28d"
+      stageUuid: "57eb3027-0092-88ac-9c5b-7117fc5a34e0"
     - stage: links
-      stageUuid: "ff405267-3260-8864-902f-a08d1f03cc1d"
+      stageUuid: "0bef55aa-0788-873c-af98-d050b7e6c400"
     - stage: horo
-      stageUuid: "2794494a-34df-827b-845a-0c969fa1e764"
+      stageUuid: "99a66ff1-c8f5-8be1-aaf0-15631f26c13d"
     - stage: seal
-      stageUuid: "62447936-fb2a-8d41-9a3d-9a7c559c3bf1"
+      stageUuid: "cd1918df-ffe1-8062-b574-aeee0ec69352"
     - stage: uuid
-      stageUuid: "96347dfa-457a-87f3-9d5a-ada8afe13c6e"
+      stageUuid: "5aed0065-4431-86e2-b316-86e6e0b0c044"
 version: 2
 ---
 # incentivized

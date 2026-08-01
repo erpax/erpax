@@ -1,63 +1,35 @@
 ---
 name: add
 description: Use when reasoning about add — An additional offer that can only be obtained in combination with the first base offer (e.g. supplements and extensions that are available for a surcharge).
-atomPath: vocabulary/add
-coordinate: add · 2/share · 536dd378
-contentUuid: "117fc4f8-1598-58b8-bb9a-e8bc879ccb4b"
-diamondUuid: "41d3d5d5-d3ca-8421-bdff-8e29f894947a"
-uuid: "536dd378-f239-8c41-a262-b12cb34b2cb5"
-horo: 2
-bonds:
-  in:
-    - action
-    - law
-    - menu
-    - software
-  out:
-    - action
-    - law
-    - menu
-    - software
+atomPath: "vocabulary/add"
+coordinate: "vocabulary/add · 5/round · fe36269a"
+contentUuid: "414c1c14-6027-58c0-a289-b0b441a49abd"
+diamondUuid: "4d8aa9ee-de12-802e-bf51-77095c0d7ded"
+uuid: "fe36269a-7237-8f7c-b139-73fe2dc65297"
+horo: 5
 typography:
-  partition: add
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - law
-    - menu
-    - software
-  matrix:
-    - action
-    - law
-    - menu
-    - software
-  backlinks:
-    - action
-    - law
-    - menu
-    - software
 signatures:
-  computationUuid: "d537825b-8078-888e-8cbf-d99eeadb743c"
+  computationUuid: "7e0a45f7-55ae-82bd-af33-ceb8c28d63fc"
   stages:
     - stage: path
-      stageUuid: "0a60f18b-85d6-868a-a6e5-e5f8d51785ed"
+      stageUuid: "5b2fae6f-1b91-8d6d-8895-d4caa53d4fd0"
     - stage: trinity
-      stageUuid: "2091beb7-f1a3-8eb9-a4b5-b9852dd5cb94"
+      stageUuid: "9abbd904-78ff-89bb-ab38-2b19cc6f0bb2"
     - stage: boundary
-      stageUuid: "67c88f01-9e2e-8e13-b88f-8a41e7ccd7e4"
+      stageUuid: "c8b8b182-458d-8a67-ad75-818466b3e0ad"
     - stage: links
-      stageUuid: "f365f275-9709-89c3-a481-c1f3af8dcecc"
+      stageUuid: "9e0b5afb-d22d-8c3c-9b12-1002b96c453c"
     - stage: horo
-      stageUuid: "d2a8d16d-cb54-84a2-a170-92c2aa5e37ea"
+      stageUuid: "b8db1fb1-b555-8657-a7ed-b47191380286"
     - stage: seal
-      stageUuid: "d3a59d99-f662-84e9-8411-22eea140967a"
+      stageUuid: "7d335cd4-f8ae-8c1a-bdc5-719adba06655"
     - stage: uuid
-      stageUuid: "fcab07a8-7be7-823c-91fd-3dfcc32c02c5"
+      stageUuid: "7acfebb6-75bc-81d0-a55d-c9bfe8f163fc"
 version: 2
 ---
 # add

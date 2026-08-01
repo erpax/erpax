@@ -2,109 +2,18 @@
 name: biometric
 description: "Use when measuring a person's body — biometric is the sharpest device measurement, serving identity (who you are) and health (your state) at once; privacy-by-design demands it stays on the edge, so the raw signal never leaves the device, only a derived uuid or a signed assertion does."
 atomPath: biometric
-coordinate: "biometric · 5/round · 4827160d"
-contentUuid: "53fbb321-9f42-5fc4-8b71-81299ebd21b1"
-diamondUuid: "1327732c-c481-8958-b9a8-94dafc1a945a"
-uuid: "4827160d-bfcd-898e-9b25-3883aeb5377b"
-horo: 5
-bonds:
-  in:
-    - auth
-    - biofield
-    - coherence
-    - consent
-    - dataprotection
-    - device
-    - emr
-    - finality
-    - health
-    - identity
-    - measurement
-    - readings
-    - sanitization
-    - security
-    - snapshot
-    - uuid
-    - vital
-  out:
-    - auth
-    - biofield
-    - coherence
-    - consent
-    - dataprotection
-    - device
-    - emr
-    - finality
-    - health
-    - identity
-    - measurement
-    - readings
-    - sanitization
-    - security
-    - snapshot
-    - uuid
-    - vital
+coordinate: "biometric · 2/share · ab9ea01d"
+contentUuid: "96bb6220-e849-5e82-a406-eac82cdf00fe"
+diamondUuid: "56e4dec6-c71b-8b3c-8aed-c77563a82a4f"
+uuid: "ab9ea01d-339b-8e08-977d-869fac23adaa"
+horo: 2
 typography:
   partition: biometric
   bondDegree: 55
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - auth
-    - biofield
-    - coherence
-    - consent
-    - dataprotection
-    - device
-    - emr
-    - finality
-    - health
-    - identity
-    - measurement
-    - security
-    - snapshot
-    - uuid
-    - vital
-  matrix:
-    - auth
-    - biofield
-    - coherence
-    - consent
-    - dataprotection
-    - device
-    - emr
-    - finality
-    - health
-    - identity
-    - measurement
-    - readings
-    - sanitization
-    - security
-    - snapshot
-    - uuid
-    - vital
-  backlinks:
-    - auth
-    - biofield
-    - coherence
-    - consent
-    - dataprotection
-    - device
-    - emr
-    - finality
-    - health
-    - identity
-    - measurement
-    - readings
-    - sanitization
-    - security
-    - snapshot
-    - uuid
-    - vital
 signatures:
-  computationUuid: "e8d8d5ad-dc8b-82de-95e7-6052b521c6c8"
+  computationUuid: "409fa949-b188-8fd5-ae9d-8f5ecfa05703"
   stages:
     - stage: path
       stageUuid: "952c92af-1f35-8515-937f-07b68429276b"
@@ -115,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d4c8ac6d-b322-85c8-b9ea-44484bf2dd15"
     - stage: horo
-      stageUuid: "d63c31b9-d7ea-8e74-ad2c-8ce8252f8191"
+      stageUuid: "c4af797f-563c-816a-941e-2d40f8015224"
     - stage: seal
       stageUuid: "4437c728-cfd5-8da6-a669-22d3a5e19bfd"
     - stage: uuid
-      stageUuid: "ec09f4f2-d589-827c-8177-f4fd5510d419"
+      stageUuid: "27dc007f-d99f-8007-a05d-c2090705cd07"
 version: 2
 ---
 # biometric — measuring the body (identity ⊕ health)

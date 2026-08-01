@@ -1,35 +1,24 @@
 ---
 name: "5305"
-description: Use when implementing or referencing UN/CEFACT 5305 — Duty / Tax / Fee Category Code.
-atomPath: un/cefact/5305
-coordinate: un/cefact/5305 · 5/round · 8cd575d0
-contentUuid: "fa6d0e85-a249-564e-a406-6e84a2f83a39"
-diamondUuid: "a233281a-a902-8a99-a891-4866f39d57e6"
-uuid: "8cd575d0-d3c0-8c2d-875f-874f2fc8ff67"
+description: "Use when implementing or referencing UN/CEFACT 5305 — Duty / Tax / Fee Category Code."
+atomPath: "un/cefact/5305"
+coordinate: "un/cefact/5305 · 5/round · ec1504e8"
+contentUuid: "0c2ec3a2-202d-507a-91a7-83c69f387c67"
+diamondUuid: "0a00725f-761d-8ca8-a0f7-9a88f750f534"
+uuid: "ec1504e8-a402-8c68-90d6-b73b94431ef9"
 horo: 5
-bonds:
-  in:
-    - law
-  out:
-    - law
 typography:
   partition: un
   bondDegree: 3
-  neighbors: []
 standards:
   - "EN-16931:2017 BT-151 vat-category-code (subset that EN-16931 admits)"
+  - "EN-16931:2017 BT-151 vat-category-code (subset that EN-16931 admits)`"
   - "UN-CEFACT"
   - "UN/CEFACT Trade Data Element 5305 duty-tax-fee-category-code"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-  matrix:
-    - law
-  backlinks:
-    - law
 signatures:
-  computationUuid: "edb15672-71a2-89d2-94d1-344c7bd8b181"
+  computationUuid: "8673b98a-48db-8625-8920-98da8750331a"
   stages:
     - stage: path
       stageUuid: "6164a2b6-457f-8f8f-a8c7-c4a5eb0eb8cb"
@@ -40,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "d24d012a-7b53-8a4b-8f21-495d1a0f53b7"
     - stage: horo
-      stageUuid: "433bea33-6c86-8263-b406-6e353e4f68d1"
+      stageUuid: "6e2649d2-c704-8256-bd50-971525ded5a6"
     - stage: seal
       stageUuid: "2dbaffc4-77cd-8dfa-91b5-9f0541269636"
     - stage: uuid
-      stageUuid: "8e5e1ae2-8015-8afc-9452-7ccdeea94622"
+      stageUuid: "1cab45cf-cb4b-8870-89af-84a5db7832c1"
 version: 2
 ---
 # UN/CEFACT 5305 — Duty / Tax / Fee Category Code

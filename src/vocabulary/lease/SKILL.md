@@ -1,73 +1,35 @@
 ---
 name: lease
 description: "Use when reasoning about lease as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/lease
-coordinate: lease · 1/base · e1c90f55
-contentUuid: "2d158f97-7fc5-50f2-97b8-e99f11a5523b"
-diamondUuid: "de7a60b2-6881-84c7-95f2-db2001a0984b"
-uuid: "e1c90f55-2149-819f-ad65-c6ce1f231642"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - length
-    - merge
-    - offer
-    - sti
-  out:
-    - collapse
-    - law
-    - length
-    - merge
-    - offer
-    - sti
+atomPath: "vocabulary/lease"
+coordinate: "vocabulary/lease · 7/descent · 7aa8c504"
+contentUuid: "608602f8-eb8e-54f0-a543-b9371793760d"
+diamondUuid: "bbed72f6-1761-8985-92a9-cb495de0e849"
+uuid: "7aa8c504-3ced-8d3d-8a21-db00aa14ab93"
+horo: 7
 typography:
-  partition: lease
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - length
-    - merge
-    - offer
-    - sti
-  matrix:
-    - collapse
-    - law
-    - length
-    - merge
-    - offer
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - length
-    - merge
-    - offer
-    - sti
 signatures:
-  computationUuid: "6ba7c186-7154-8ce7-b7a2-8a856d47008a"
+  computationUuid: "afd2747f-9859-8b89-a605-5f9c1b7f4174"
   stages:
     - stage: path
-      stageUuid: "2db3603d-fa96-8a88-889d-f7c875756b96"
+      stageUuid: "2ed93ba3-374a-849d-a4a6-495419478cb0"
     - stage: trinity
-      stageUuid: "b06c5b8a-3092-892a-8f6c-0308b41f9d0b"
+      stageUuid: "36567bf2-e1e1-8572-b7b3-236eeaabd04c"
     - stage: boundary
-      stageUuid: "ff9bd29e-8ed5-8947-a44f-bd02c90afc95"
+      stageUuid: "b03ae152-a346-8851-865d-701b1fb75ab8"
     - stage: links
-      stageUuid: "2457b714-42f2-8ea5-b490-f2dfc207f21c"
+      stageUuid: "6c89ffee-3f55-8a80-96ac-e8d36518b1ed"
     - stage: horo
-      stageUuid: "28499a7e-9a2e-8b29-a1f4-0c3c9f4179df"
+      stageUuid: "e14b0a11-4c21-82e8-83fd-bb7de8226a1e"
     - stage: seal
-      stageUuid: "f9ef1b93-c61b-8221-bbc9-f64baa8b3ba3"
+      stageUuid: "e571b978-5df2-82f0-a6f1-28e5dcf4025e"
     - stage: uuid
-      stageUuid: "632f3d1b-da45-8ccc-a687-4af03639c60d"
+      stageUuid: "4bf0008d-b490-8795-8c2f-9e9a3c90bba5"
 version: 2
 ---
 # lease

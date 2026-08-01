@@ -1,83 +1,35 @@
 ---
 name: agency
 description: "Use when reasoning about agency as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/agency
-coordinate: agency · 1/base · 61206104
-contentUuid: "d4e4da8d-a2d7-549a-a0bc-27ac04fe5809"
-diamondUuid: "9791ec31-44ff-80a3-8e2f-187e29a1bda4"
-uuid: "61206104-edd0-8225-897b-65031969bdcb"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - employment
-    - funding
-    - insurance
-    - law
-    - merge
-    - sti
-    - travel
-  out:
-    - collapse
-    - employment
-    - funding
-    - insurance
-    - law
-    - merge
-    - sti
-    - travel
+atomPath: "vocabulary/agency"
+coordinate: "vocabulary/agency · 8/crest · c12041b6"
+contentUuid: "ea601519-0426-56df-bba4-63cd44309092"
+diamondUuid: "b9de528a-e14c-8346-a79c-db94719fbf06"
+uuid: "c12041b6-5a69-8601-ba70-13cdaa2ba74b"
+horo: 8
 typography:
-  partition: agency
+  partition: vocabulary
   bondDegree: 28
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - employment
-    - funding
-    - insurance
-    - law
-    - merge
-    - sti
-    - travel
-  matrix:
-    - collapse
-    - employment
-    - funding
-    - insurance
-    - law
-    - merge
-    - sti
-    - travel
-  backlinks:
-    - collapse
-    - employment
-    - funding
-    - insurance
-    - law
-    - merge
-    - sti
-    - travel
 signatures:
-  computationUuid: "48fb19d1-0f1a-8d92-a94e-6b345ded0fa6"
+  computationUuid: "91e501af-dd07-8dd6-a42e-7459b9f41de3"
   stages:
     - stage: path
-      stageUuid: "ab16a259-fb73-822b-a300-3dc3ceb287d5"
+      stageUuid: "4627f85e-79f2-83ff-91bd-ce32b0d841bc"
     - stage: trinity
-      stageUuid: "72551eef-823e-8568-9597-ee807dba56fc"
+      stageUuid: "28edb0c5-725b-8755-a8c5-5a58d0609cd7"
     - stage: boundary
-      stageUuid: "b728ed1a-49cc-8b24-aa1a-b2c990bd0b6f"
+      stageUuid: "ab8bba4b-eeef-8b63-99d3-e3cd51037f9d"
     - stage: links
-      stageUuid: "26803456-315c-8e7d-9559-64c45487e935"
+      stageUuid: "e26db738-b545-8616-9321-e610c416e8bc"
     - stage: horo
-      stageUuid: "89981960-0109-895d-931e-f765aa79b2ce"
+      stageUuid: "b2e0e1da-0ba7-8273-9b49-a5e1572408b4"
     - stage: seal
-      stageUuid: "7ce35226-cd01-8e4f-a113-7f995b3b0dd9"
+      stageUuid: "28ea3fc4-c7dc-8b29-b342-3901d8aa7b2c"
     - stage: uuid
-      stageUuid: "e01e4d7b-ab98-87bc-9c9b-bef26e1d071c"
+      stageUuid: "4416fff5-10e3-8241-821b-af71e8ac1797"
 version: 2
 ---
 # agency

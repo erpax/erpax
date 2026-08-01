@@ -1,73 +1,35 @@
 ---
 name: install
 description: "Use when reasoning about install as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/install
-coordinate: install · 1/base · b7813a83
-contentUuid: "5c61f8c3-02d5-575b-9cf0-71b9b1b16bfc"
-diamondUuid: "6bf26f62-3c94-8f7c-8fc9-ac97eeaa610b"
-uuid: "b7813a83-ab01-8f48-bf94-0ad2be340d26"
-horo: 1
-bonds:
-  in:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-    - url
-  out:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-    - url
+atomPath: "vocabulary/install"
+coordinate: "vocabulary/install · 2/share · 38e29e22"
+contentUuid: "4d344c06-046e-5dd4-a7b9-7bff62c2a1a8"
+diamondUuid: "3949b7b6-406a-8acc-8fc5-3b32009d3841"
+uuid: "38e29e22-029d-8edd-9956-d3ca8d1f870e"
+horo: 2
 typography:
-  partition: install
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-    - url
-  matrix:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-    - url
-  backlinks:
-    - action
-    - collapse
-    - law
-    - merge
-    - sti
-    - url
 signatures:
-  computationUuid: "d4e8668a-6349-8e8f-abc1-652f9f873ca5"
+  computationUuid: "de764d89-6644-8fd7-b903-fad960451300"
   stages:
     - stage: path
-      stageUuid: "1e3d27ce-ac7a-83b1-be3b-d6ce829a200c"
+      stageUuid: "b9af3630-5d30-8cb9-9391-8f23a1f1aea5"
     - stage: trinity
-      stageUuid: "6f414262-fc7c-8689-ba8f-bb724d5f9bec"
+      stageUuid: "a75e110a-2b8f-813c-896d-ef776e7aceef"
     - stage: boundary
-      stageUuid: "3f9b9892-420e-8acf-8e0f-1eb44c6fc2a5"
+      stageUuid: "95d138ad-b7d4-8e7e-8e29-53467083e9cd"
     - stage: links
-      stageUuid: "3c68c622-97c3-8adc-a123-5cef69f67ee2"
+      stageUuid: "ed3eab7a-628a-8c79-baf1-3c9b9eedee93"
     - stage: horo
-      stageUuid: "e09778cc-562c-8048-bef5-d99ce8cf5927"
+      stageUuid: "fae50f13-0865-80c4-9951-d7370fcefc4b"
     - stage: seal
-      stageUuid: "19f2347d-9bbf-8d46-adfe-1b75ac6cba6a"
+      stageUuid: "ffa31694-09b9-81c3-9b6f-f71d5d3cbc54"
     - stage: uuid
-      stageUuid: "fd4b6643-e408-8636-b979-9b3045275fa3"
+      stageUuid: "da56b92e-3f12-8238-a8f9-1de34f11d71a"
 version: 2
 ---
 # install

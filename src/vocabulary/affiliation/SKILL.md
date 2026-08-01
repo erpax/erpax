@@ -1,53 +1,35 @@
 ---
 name: affiliation
 description: "Use when reasoning about affiliation — An organization that this person is affiliated with. For example, a school/university, a club, or a team."
-atomPath: vocabulary/affiliation
-coordinate: affiliation · 2/share · 7b6ea21a
-contentUuid: "098f782e-3a17-5e40-8e87-baa0a126d518"
-diamondUuid: "f2e16b51-bf8e-82e2-910c-8e70e51423cd"
-uuid: "7b6ea21a-0eb0-85ac-9336-04103f41b7b3"
-horo: 2
-bonds:
-  in:
-    - hospital
-    - law
-  out:
-    - hospital
-    - law
+atomPath: "vocabulary/affiliation"
+coordinate: "vocabulary/affiliation · 7/descent · 5c85b773"
+contentUuid: "9587c4f3-deff-5aa8-b548-6485eabd334c"
+diamondUuid: "37f45002-e617-8b4d-ab04-b2248a22cb1c"
+uuid: "5c85b773-e2f5-8efc-bd62-916607d250ad"
+horo: 7
 typography:
-  partition: affiliation
-  bondDegree: 7
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 9
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - hospital
-    - law
-  matrix:
-    - hospital
-    - law
-  backlinks:
-    - hospital
-    - law
 signatures:
-  computationUuid: "b94d6464-881b-8177-8692-96d5f35ca80b"
+  computationUuid: "d2314a71-d87e-8f4d-a01c-fb5a86c4b2fd"
   stages:
     - stage: path
-      stageUuid: "a5f054b2-fd55-8aa9-988d-3896f3008323"
+      stageUuid: "effe1e77-33cc-8ed0-9b8a-a74c34558e81"
     - stage: trinity
-      stageUuid: "e984658a-a9ee-8b00-a02b-587499181eed"
+      stageUuid: "359bb2e1-9de5-8a65-a3d7-221e54fee5f5"
     - stage: boundary
-      stageUuid: "ff48158a-109f-8cb0-ae1f-cd0fce8971c1"
+      stageUuid: "585eb03f-09df-8477-97cf-e2efdd98f89d"
     - stage: links
-      stageUuid: "98bbc5f1-d539-8e70-9622-69529281cc8c"
+      stageUuid: "8e533b10-80bc-896d-a135-b22816607387"
     - stage: horo
-      stageUuid: "1c704407-28d3-8731-b85e-c06779d72c1d"
+      stageUuid: "a7296ccf-8651-8f00-873d-8fc2832767ad"
     - stage: seal
-      stageUuid: "53ea70ca-e3c9-83cb-8cb0-af134f7ba6b9"
+      stageUuid: "c2fa4220-1752-855e-9a34-c6fbb6a7e41c"
     - stage: uuid
-      stageUuid: "458e6391-c06b-87a7-958d-2f050cc5090b"
+      stageUuid: "63a8b8ea-00db-8d0f-a27c-88007dc25a49"
 version: 2
 ---
 # affiliation

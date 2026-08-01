@@ -1,63 +1,35 @@
 ---
 name: hardcover
 description: "Use when reasoning about hardcover as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/hardcover
-coordinate: hardcover · 2/share · d1c2bf64
-contentUuid: "08673b43-3eeb-5df5-a651-365c23cdee28"
-diamondUuid: "51ee5354-4539-8952-b826-782ac5328e90"
-uuid: "d1c2bf64-84e7-8a4b-b3eb-5328ba33f540"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/hardcover"
+coordinate: "vocabulary/hardcover · 7/descent · 3b37f846"
+contentUuid: "714b3fa0-1dfd-5300-9a10-1cbf135a5819"
+diamondUuid: "ab846468-bf68-86f2-ae07-c25e629c1e17"
+uuid: "3b37f846-b450-84d5-9dd0-3080c35eb58c"
+horo: 7
 typography:
-  partition: hardcover
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "f2c73def-5f16-86db-8e07-f111bd237555"
+  computationUuid: "2070e97f-bdd1-8a40-bee0-60786f39c7be"
   stages:
     - stage: path
-      stageUuid: "8310ab46-b180-8960-ab62-8ed196e5bc8a"
+      stageUuid: "262abf6e-a79d-852f-9fa9-f602c2e6d029"
     - stage: trinity
-      stageUuid: "1b316e49-62c9-81f7-9eb8-a01b5cea1fba"
+      stageUuid: "01a32395-7b52-8f82-a463-4b579ec2e056"
     - stage: boundary
-      stageUuid: "490787df-2908-8d8c-ab1e-4c80b7856c37"
+      stageUuid: "dd8bdfab-7e61-8357-9111-28be66f772a5"
     - stage: links
-      stageUuid: "0cbb1bc7-e171-83d7-91df-8f96fa147e77"
+      stageUuid: "225700d0-5aa9-86b0-b39e-54559050227f"
     - stage: horo
-      stageUuid: "0b863529-de62-8fbe-8a92-4260f2a4eca8"
+      stageUuid: "110b2dea-17e5-8497-8deb-7b492d39256d"
     - stage: seal
-      stageUuid: "32122fd8-2ea5-8ce0-93b3-74c79235955d"
+      stageUuid: "907e71de-c774-8868-905a-60b36ad2b488"
     - stage: uuid
-      stageUuid: "5faebbe6-9bf8-8ae3-ba69-46405ef00afb"
+      stageUuid: "9c589efe-fb6e-8971-8754-11461ebaceb9"
 version: 2
 ---
 # hardcover

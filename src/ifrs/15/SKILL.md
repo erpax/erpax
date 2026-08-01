@@ -2,25 +2,16 @@
 name: "15"
 description: "Use when implementing or referencing IFRS 15 / ASC 606 — Revenue from Contracts with Customers."
 atomPath: "ifrs/15"
-coordinate: "ifrs/15 · 1/base · 73664f2b"
-contentUuid: "fcfb4a23-6cf7-5b06-a168-4666051158c0"
-diamondUuid: "d802f887-728c-8cce-9f83-776f185294aa"
-uuid: "73664f2b-4b9e-8e9c-8b33-7cd18c9b4eee"
-horo: 1
-bonds:
-  in:
-    - law
-  out:
-    - law
+coordinate: "ifrs/15 · 4/weave · 3890200b"
+contentUuid: "00ddbd1a-15da-52d5-b329-4db39c0d5f1e"
+diamondUuid: "08cde2a1-8afc-8b4f-9acc-512c8af5ba98"
+uuid: "3890200b-7e60-8585-ac76-1c54193e0b8b"
+horo: 4
 typography:
   partition: ifrs
-  bondDegree: 3
-  neighbors: []
+  bondDegree: 1
 standards:
   - "ECMA-262"
-  - "EU-2024/1183"
-  - "EU-2024/1620"
-  - "EU-2024/1624"
   - "EU-CSDDD-2024/1760"
   - "IFRS IFRS-15 revenue-from-contracts-with-customers"
   - "IFRS IFRS-15` / `@accounting US-GAAP ASC-606`. Plus `gl-posting.service.ts` has four subscription-lifecycle handlers. Before this module, each defined its own ad-hoc types for the same concepts (performance obligation, transaction price, allocation). Now they all reference the canonical shapes here."
@@ -30,15 +21,8 @@ standards:
   - "US-GAAP ASC-606`. Plus `gl-posting.service.ts` has four subscription-lifecycle handlers. Before this module, each defined its own ad-hoc types for the same concepts (performance obligation, transaction price, allocation). Now they all reference the canonical shapes here.\""
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-  matrix:
-    - law
-  backlinks:
-    - law
 signatures:
-  computationUuid: "02d48686-d1cd-844d-b5b8-a1bd20159968"
+  computationUuid: "80f8b346-b54f-843e-9eb6-17f33c79a354"
   stages:
     - stage: path
       stageUuid: "03eb7d08-176e-810b-822b-498e0ffb0b49"
@@ -47,13 +31,13 @@ signatures:
     - stage: boundary
       stageUuid: "c71c487f-1f91-8f05-9225-745b6c55a178"
     - stage: links
-      stageUuid: "2a5cd49b-61af-87ed-9128-be6f3b8e41ef"
+      stageUuid: "8e559f4a-7eb3-843a-a128-2a2c901f9a9b"
     - stage: horo
-      stageUuid: "561d594b-6422-897c-b302-9102d93a54be"
+      stageUuid: "292882b6-e421-87d2-bbac-5a4b3882419e"
     - stage: seal
       stageUuid: "36a951c0-1cef-81c8-828b-02fcf0245ec5"
     - stage: uuid
-      stageUuid: "d7309c30-a8c4-84a1-8e17-b4af10cf6590"
+      stageUuid: "2cb7e27a-5e5f-8fc2-8c7f-c151feb57a66"
 version: 2
 ---
 # IFRS 15 / ASC 606 — Revenue from Contracts with Customers

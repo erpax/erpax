@@ -2,31 +2,16 @@
 name: explainability
 description: "Use when a business outcome must ship its own natural-language explanation citing standards, sources and chain steps — autoExplain composes the narrative deterministically with no LLM in the path (preserving replay), isExplanationComplete verifies it is non-trivial."
 atomPath: "beyond/explainability"
-coordinate: "beyond/explainability · 2/share · 47717927"
-contentUuid: "aec0d0c2-faf2-5c77-a61d-7d5dae8dc2c6"
-diamondUuid: "8cf227bb-cf57-86f3-9bfb-a9724d5190bd"
-uuid: "47717927-81d5-834e-b592-0b50da9651d5"
-horo: 2
-bonds:
-  in:
-    - beyond
-    - law
-    - standard
-    - trinity
-  out:
-    - beyond
-    - law
-    - standard
-    - trinity
+coordinate: "beyond/explainability · 7/descent · 60dea6a3"
+contentUuid: "228c64ed-d8e9-5a48-aa51-8247124524a5"
+diamondUuid: "9dee54b0-acde-86d3-a3d8-27da55b8303c"
+uuid: "60dea6a3-3c3e-84ff-9bd4-68e69c7ebdca"
+horo: 7
 typography:
   partition: beyond
-  bondDegree: 12
-  neighbors: []
+  bondDegree: 4
 standards:
   - "EU AI Act 2024/1689 Art. 13 (transparency for high-risk)"
-  - "EU-2024/1183"
-  - "EU-2024/1620"
-  - "EU-2024/1624"
   - "EU-AI-Act"
   - "EU-CSDDD-2024/1760"
   - "ISO/IEC 23053 AI-systems-with-machine-learning (explainability)"
@@ -35,24 +20,8 @@ standards:
   - "XBRL inline-XBRL (machine-explainability of values)"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - beyond
-    - law
-    - standard
-    - trinity
-  matrix:
-    - beyond
-    - law
-    - standard
-    - trinity
-  backlinks:
-    - beyond
-    - law
-    - standard
-    - trinity
 signatures:
-  computationUuid: "5ad9735f-b798-859d-9ac8-564046a9a4ce"
+  computationUuid: "66f9045e-4e17-842a-ae39-c756051bed7b"
   stages:
     - stage: path
       stageUuid: "2825efc3-1b16-8c3d-8cb9-4086ac4853d9"
@@ -61,13 +30,13 @@ signatures:
     - stage: boundary
       stageUuid: "d38bf9ea-a606-87c2-be27-173e3b1647ff"
     - stage: links
-      stageUuid: "e1b0f3e2-bb66-8e43-9648-1fe58e0de4d6"
+      stageUuid: "997c19c3-6a2b-865c-b85a-8975f5b83e2e"
     - stage: horo
-      stageUuid: "d493d832-e188-88f7-adf2-784ab1c78d0b"
+      stageUuid: "8d401e29-3600-82dc-9b36-ad4bd9a56827"
     - stage: seal
       stageUuid: "9b1ed1e2-5c5c-8dc7-8d93-5fc8b30bc14f"
     - stage: uuid
-      stageUuid: "46401c1c-eccd-8bd0-8152-1880913620bb"
+      stageUuid: "81597918-8bf1-83bc-9c1e-182492e64022"
 version: 2
 ---
 # beyond/explainability — self-explainability (auto-generated narrative)

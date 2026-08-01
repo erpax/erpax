@@ -1,68 +1,35 @@
 ---
 name: parking
 description: "Use when reasoning about parking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/parking
-coordinate: parking · 2/share · 37f430bf
-contentUuid: "a09b41d5-601d-52c8-8233-ed3c2624fd87"
-diamondUuid: "305c42ca-209f-83e0-9245-cb02a168af32"
-uuid: "37f430bf-842a-8473-84b9-fa6ba358b4d3"
-horo: 2
-bonds:
-  in:
-    - collapse
-    - facility
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - facility
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/parking"
+coordinate: "vocabulary/parking · 5/round · d05dc568"
+contentUuid: "2f7cbdb2-d91e-5e50-9b0c-24821e5ba3ed"
+diamondUuid: "ac2761f7-1735-86ac-b5ed-b778b813bc16"
+uuid: "d05dc568-9707-8c6e-b8b7-58cb3241dcd2"
+horo: 5
 typography:
-  partition: parking
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - facility
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - facility
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - facility
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "abdd69a6-2a52-820a-a367-873393a21b45"
+  computationUuid: "31d81615-bd50-81dd-98bf-06f25060b6d7"
   stages:
     - stage: path
-      stageUuid: "8a78eab1-d313-8e95-b6a6-bb27bcfb223d"
+      stageUuid: "6401e6ac-aff1-845c-8d05-0067222800ae"
     - stage: trinity
-      stageUuid: "1232c5ba-ebf4-8b36-b6f2-c1099f5ce089"
+      stageUuid: "9a9e9fc3-95dc-8b5b-94bd-5af7148c51f4"
     - stage: boundary
-      stageUuid: "7514df46-5fc0-8dab-b2ea-8276a98855b2"
+      stageUuid: "a4d951c4-b80c-8ae3-a4c8-317655fa9db5"
     - stage: links
-      stageUuid: "fbcf61dd-dec5-81be-afd2-286e61525456"
+      stageUuid: "78a16d3f-4851-8923-b74b-7f84b5fcc03e"
     - stage: horo
-      stageUuid: "102558d4-122f-8510-ba26-22fc5bc6723e"
+      stageUuid: "7c2628ea-8183-8e2e-9fa0-0e3333d73166"
     - stage: seal
-      stageUuid: "90896d23-fc1b-8081-a9a5-833af72ddebf"
+      stageUuid: "b5dfa282-db0f-8f94-bc2f-03e5e66cfe3d"
     - stage: uuid
-      stageUuid: "aaa4b98e-531d-8768-b3d6-40c6e589c39c"
+      stageUuid: "f936cb7b-3d5c-8002-897e-8e524b7bb7b8"
 version: 2
 ---
 # parking

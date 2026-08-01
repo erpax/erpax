@@ -1,128 +1,35 @@
 ---
 name: reservation
 description: "Use when reasoning about reservation — Describes a reservation for travel, dining or an event. Some reservations require tickets. Note: This type is for information about actual reservations, e.g. in confirmation emails"
-atomPath: vocabulary/reservation
-coordinate: reservation · 7/descent · 3b1ba1eb
-contentUuid: "b7389345-0ce1-5872-8b07-6de8261cbdfe"
-diamondUuid: "ea1ad8dc-bbc6-850d-99e1-45e902f4254c"
-uuid: "3b1ba1eb-73b2-8766-81ee-2618269d5262"
-horo: 7
-bonds:
-  in:
-    - boat
-    - bus
-    - car
-    - establishment
-    - event
-    - flight
-    - food
-    - id
-    - law
-    - lodging
-    - package
-    - rental
-    - status
-    - sub
-    - taxi
-    - train
-    - type
-  out:
-    - boat
-    - bus
-    - car
-    - establishment
-    - event
-    - flight
-    - food
-    - id
-    - law
-    - lodging
-    - package
-    - rental
-    - status
-    - sub
-    - taxi
-    - train
-    - type
+atomPath: "vocabulary/reservation"
+coordinate: "vocabulary/reservation · 2/share · 27cc741b"
+contentUuid: "a8a3ecd6-714e-50aa-aa0e-0d3096f29b43"
+diamondUuid: "98cba36e-6a29-884f-afe1-28af926a1b53"
+uuid: "27cc741b-e8d6-8f71-9071-cb6d2a01f398"
+horo: 2
 typography:
-  partition: reservation
+  partition: vocabulary
   bondDegree: 62
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - boat
-    - bus
-    - car
-    - establishment
-    - event
-    - flight
-    - food
-    - id
-    - law
-    - lodging
-    - package
-    - rental
-    - status
-    - sub
-    - taxi
-    - train
-    - type
-  matrix:
-    - boat
-    - bus
-    - car
-    - establishment
-    - event
-    - flight
-    - food
-    - id
-    - law
-    - lodging
-    - package
-    - rental
-    - status
-    - sub
-    - taxi
-    - train
-    - type
-  backlinks:
-    - boat
-    - bus
-    - car
-    - establishment
-    - event
-    - flight
-    - food
-    - id
-    - law
-    - lodging
-    - package
-    - rental
-    - status
-    - sub
-    - taxi
-    - train
-    - type
 signatures:
-  computationUuid: "6d697daa-9ab5-86f2-beea-0b77cb5a6d8a"
+  computationUuid: "7ce966b3-d8f0-8179-a664-1c10a1adb9d6"
   stages:
     - stage: path
-      stageUuid: "0d93d158-6663-8143-a962-a587b5bb1e62"
+      stageUuid: "9f52e93a-9e6c-89fa-becd-3d63fbf7d60e"
     - stage: trinity
-      stageUuid: "68f497b0-d64f-8619-ab41-efc116d8ceff"
+      stageUuid: "6fdd5414-9496-8fc3-8467-fc604528151f"
     - stage: boundary
-      stageUuid: "6cd60933-39d8-8ec9-8c31-0869f5c94440"
+      stageUuid: "806f91e1-94b1-83c2-adf9-1dc7e260ecb0"
     - stage: links
-      stageUuid: "73176a51-4a34-835a-9458-86e6a27c3bbc"
+      stageUuid: "17ce8ae8-7dc9-8937-8848-ac15d2c8facf"
     - stage: horo
-      stageUuid: "a0303b02-da46-8c9f-b3d9-54f432b49a31"
+      stageUuid: "f82c11b4-1e10-85d9-bc34-6dd762a69f9e"
     - stage: seal
-      stageUuid: "3826dfa0-a569-8c51-be5f-d11d959b4432"
+      stageUuid: "148a0e14-ebeb-8cf4-a93e-14a08200b14b"
     - stage: uuid
-      stageUuid: "7816cc49-ca55-8e50-b6e5-8a604c1c842e"
+      stageUuid: "25d71a26-8082-8350-8381-40b907bc5f87"
 version: 2
 ---
 # reservation

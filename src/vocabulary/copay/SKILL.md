@@ -1,78 +1,35 @@
 ---
 name: copay
 description: "Use when reasoning about copay as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/copay
-coordinate: copay · 4/weave · ad361fba
-contentUuid: "1f3bd116-67d0-55c3-8f5a-7f5bcd419514"
-diamondUuid: "ea6118d1-b634-8e8b-bdda-3508b78173f4"
-uuid: "ad361fba-cf9a-8d4c-aed8-2ffa8b52cb35"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - health
-    - law
-    - merge
-    - option
-    - plan
-    - sti
-  out:
-    - collapse
-    - health
-    - law
-    - merge
-    - option
-    - plan
-    - sti
+atomPath: "vocabulary/copay"
+coordinate: "vocabulary/copay · 8/crest · 8ca3e54d"
+contentUuid: "7a46df93-dc7d-54e3-a1ce-b0772ca288c2"
+diamondUuid: "dbc29e31-4d49-87eb-bc90-5649a143afa9"
+uuid: "8ca3e54d-d813-8f4d-9718-2401cd9e7efe"
+horo: 8
 typography:
-  partition: copay
+  partition: vocabulary
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - health
-    - law
-    - merge
-    - option
-    - plan
-    - sti
-  matrix:
-    - collapse
-    - health
-    - law
-    - merge
-    - option
-    - plan
-    - sti
-  backlinks:
-    - collapse
-    - health
-    - law
-    - merge
-    - option
-    - plan
-    - sti
 signatures:
-  computationUuid: "fc2c0ccf-389c-80a7-afb2-11f734aa4309"
+  computationUuid: "ed19de50-5c8b-8378-9fb3-b019542a22cf"
   stages:
     - stage: path
-      stageUuid: "65e8271e-310c-8f33-950b-050aa6b1495c"
+      stageUuid: "dcb4936c-2526-88c7-b954-0b787db4c578"
     - stage: trinity
-      stageUuid: "485fb64f-372a-8a68-ba65-4ac1ace559ce"
+      stageUuid: "7575af0f-f43a-8659-95bc-7204f9b12250"
     - stage: boundary
-      stageUuid: "d64d025c-2835-8187-ba13-b17247bbec71"
+      stageUuid: "63075ec9-93b3-82fb-836a-b3c756a62573"
     - stage: links
-      stageUuid: "eeb19dde-f43b-8237-bf44-95064a08626a"
+      stageUuid: "e4aa79cc-3b97-80a5-9999-926cb292411f"
     - stage: horo
-      stageUuid: "c501df08-7326-81d9-8ee6-3e8c924424fe"
+      stageUuid: "0c2d53de-f9e9-8e34-b071-1267a30ff8d4"
     - stage: seal
-      stageUuid: "02f69435-f2f7-8a3c-b36b-d875e871a1c7"
+      stageUuid: "ade2cd68-7f53-8b96-b8e9-95cc963e90fe"
     - stage: uuid
-      stageUuid: "33820372-9dbc-80eb-9c5e-3e0538c69e37"
+      stageUuid: "ee548320-9d3d-8cff-b7c3-b591097392f3"
 version: 2
 ---
 # copay

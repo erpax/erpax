@@ -2,103 +2,34 @@
 name: relocate
 description: "Use when deciding WHERE logic belongs — move it to its gravity well, the heaviest atom it is wired to, the adequate place nearest its users. Computes each atom's gravity centre and the pull toward it, so general logic buried in a specialized module is drawn up to the general atom."
 atomPath: relocate
-coordinate: relocate · 7/descent · 56e5207b
-contentUuid: "d23e5182-dbdb-599a-9eed-0ae1d2ef6618"
-diamondUuid: "27c55e60-06d3-82e3-85f8-25999c30f325"
-uuid: "56e5207b-58f0-8005-8ba1-816b897b2516"
-horo: 7
-bonds:
-  in:
-    - analytics
-    - anchor
-    - balance
-    - collapse
-    - command
-    - cost
-    - gravity
-    - matrix
-    - merge
-    - power
-    - sequence
-    - tamper
-  out:
-    - analytics
-    - anchor
-    - balance
-    - collapse
-    - command
-    - cost
-    - gravity
-    - matrix
-    - merge
-    - power
-    - sequence
-    - tamper
+coordinate: "relocate · 4/weave · c17d07c8"
+contentUuid: "a14596a2-1295-5456-add8-832fc987fe7b"
+diamondUuid: "f76f6181-810f-852d-b4bd-fa2e5d9c3b93"
+uuid: "c17d07c8-92ee-88da-aa0a-166b4ea65c56"
+horo: 4
 typography:
   partition: relocate
   bondDegree: 37
-  neighbors:
-    - analytics
 standards:
-  - "computed over the live uuid-matrix mass ([[gravity]]); never hand-asserted"
-  - gravity — mass curves placement (the DRY / flatten law)
+  - "gravity — mass curves placement (the DRY / flatten law)"
 bindings: []
-neighbors:
-  wikilink:
-    - analytics
-    - anchor
-    - balance
-    - collapse
-    - cost
-    - gravity
-    - matrix
-    - merge
-    - power
-    - sequence
-    - tamper
-  matrix:
-    - analytics
-    - anchor
-    - balance
-    - collapse
-    - command
-    - cost
-    - gravity
-    - matrix
-    - merge
-    - power
-    - sequence
-    - tamper
-  backlinks:
-    - analytics
-    - anchor
-    - balance
-    - collapse
-    - command
-    - cost
-    - gravity
-    - matrix
-    - merge
-    - power
-    - sequence
-    - tamper
 signatures:
-  computationUuid: "4c48566c-e264-8d7c-8132-9fb90cfe4211"
+  computationUuid: "63454c6c-b508-8931-85d4-5406e2767cbd"
   stages:
     - stage: path
       stageUuid: "de9b0ed0-de04-8875-b1f3-521f802f5167"
     - stage: trinity
       stageUuid: "08c46fec-1fe7-84d5-9366-8ea1bf7eb5c9"
     - stage: boundary
-      stageUuid: "aed9780f-e1fa-8a56-a614-e5034df0a578"
+      stageUuid: "72a0bffc-b51d-8e8a-96e9-1cb749436e9a"
     - stage: links
       stageUuid: "aaa1393d-937e-8477-90ad-f42722cd1ac3"
     - stage: horo
-      stageUuid: "f945995b-46b3-8ae4-afeb-fd3ae7f3fbdb"
+      stageUuid: "940782a4-34f5-8966-b7a6-f4b8cdc2e121"
     - stage: seal
-      stageUuid: "46c96c9d-175b-8a0d-b1b6-fef20c77318b"
+      stageUuid: "bf10d036-136b-8e49-b6ed-59fc96d8dbf0"
     - stage: uuid
-      stageUuid: "f144cd3f-048d-8a86-bf10-be0a5d87505c"
+      stageUuid: "51d1a101-0a12-8e08-a640-0ff73baeb657"
 version: 2
 ---
 # relocate — move logic to its gravity well

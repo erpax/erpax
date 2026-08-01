@@ -1,103 +1,35 @@
 ---
 name: application
 description: Use when reasoning about application — An application that can complete the request.
-atomPath: vocabulary/application
-coordinate: application · 4/weave · 2913b3a9
-contentUuid: "25b7195b-cf23-540e-a750-faa03696e44f"
-diamondUuid: "e3c5d403-4b0c-817e-987c-e39de0ffc29b"
-uuid: "2913b3a9-279e-81fc-bac7-a7c8fa5e7f4f"
-horo: 4
-bonds:
-  in:
-    - action
-    - category
-    - contact
-    - date
-    - deadline
-    - law
-    - mobile
-    - software
-    - start
-    - sub
-    - suite
-    - web
-  out:
-    - action
-    - category
-    - contact
-    - date
-    - deadline
-    - law
-    - mobile
-    - software
-    - start
-    - sub
-    - suite
-    - web
+atomPath: "vocabulary/application"
+coordinate: "vocabulary/application · 8/crest · a1789dd7"
+contentUuid: "4316700f-fef9-5cea-b1eb-25e822010e03"
+diamondUuid: "a452de50-7834-8fb4-9d94-34877032ef1b"
+uuid: "a1789dd7-62ca-8b02-a6ad-866353f083cd"
+horo: 8
 typography:
-  partition: application
+  partition: vocabulary
   bondDegree: 44
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - category
-    - contact
-    - date
-    - deadline
-    - law
-    - mobile
-    - software
-    - start
-    - sub
-    - suite
-    - web
-  matrix:
-    - action
-    - category
-    - contact
-    - date
-    - deadline
-    - law
-    - mobile
-    - software
-    - start
-    - sub
-    - suite
-    - web
-  backlinks:
-    - action
-    - category
-    - contact
-    - date
-    - deadline
-    - law
-    - mobile
-    - software
-    - start
-    - sub
-    - suite
-    - web
 signatures:
-  computationUuid: "3b4650dc-caa7-8fb9-ad71-d03023b60221"
+  computationUuid: "01926106-830b-8c6f-bc3f-5c324e7435b9"
   stages:
     - stage: path
-      stageUuid: "3d8f9a54-8949-8f5b-99db-e59b1d6a9546"
+      stageUuid: "5f2ca91b-cc9c-8827-91b9-a41a68bd632c"
     - stage: trinity
-      stageUuid: "4e493a23-5123-8bb9-8abd-ad72b8be15c9"
+      stageUuid: "d047cbea-17c2-810f-a853-57abad8763a4"
     - stage: boundary
-      stageUuid: "0fb1ffbb-1b67-8045-894a-d191042eb265"
+      stageUuid: "e814ecf3-bb6f-8d91-9313-5efa1f84d2e9"
     - stage: links
-      stageUuid: "a72f37ff-0be9-8a41-957b-0aabe6f1a1e0"
+      stageUuid: "85f032d4-ab43-8c79-a6c1-81b0b7243f95"
     - stage: horo
-      stageUuid: "3ff7a40b-27b3-802d-8419-d31e3ac04cac"
+      stageUuid: "c2c4333c-ed29-8348-99f6-008a2dd53d5f"
     - stage: seal
-      stageUuid: "6e9ff336-d131-8949-8760-effe45336513"
+      stageUuid: "1b30b04e-81ab-882d-978b-b1f404d4964e"
     - stage: uuid
-      stageUuid: "d48ac087-397d-8107-b66d-94a9ce387733"
+      stageUuid: "4db627ad-6586-8c48-b771-f2e0c57b59b7"
 version: 2
 ---
 # application

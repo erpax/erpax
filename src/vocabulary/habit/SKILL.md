@@ -1,110 +1,34 @@
 ---
 name: habit
 description: "Use when reasoning about the repetition atom that turns a sale into a market — the loop that makes one transaction many. Without habit a launch spikes and dies; with it, awareness and proof compound. The atom retention and churn measure, and the catch the market needs when the trendsetter's status fades."
-atomPath: vocabulary/habit
-coordinate: habit · 2/share · a0eab2bd
-contentUuid: "ba05383c-5fa1-5566-9734-993749d4c4bc"
-diamondUuid: "c8b58f4f-b978-8737-95e5-10aace5148c7"
-uuid: "a0eab2bd-7977-8c99-8b8f-b75d66313080"
-horo: 2
-bonds:
-  in:
-    - awareness
-    - breath
-    - churn
-    - cohort
-    - desire
-    - diffusion
-    - engagement
-    - friction
-    - law
-    - market
-    - network
-    - proof
-    - retention
-    - trend
-  out:
-    - awareness
-    - breath
-    - churn
-    - cohort
-    - desire
-    - diffusion
-    - engagement
-    - friction
-    - law
-    - market
-    - network
-    - proof
-    - retention
-    - trend
+atomPath: "vocabulary/habit"
+coordinate: "vocabulary/habit · 5/round · e73e0ca0"
+contentUuid: "e6fffd66-0909-57c8-875c-e21717d51673"
+diamondUuid: "8c490975-a4c8-8bbe-b613-bfd273ce054e"
+uuid: "e73e0ca0-7f10-8259-934b-2e97b72ee2d4"
+horo: 5
 typography:
-  partition: habit
+  partition: vocabulary
   bondDegree: 44
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - awareness
-    - breath
-    - churn
-    - cohort
-    - desire
-    - engagement
-    - friction
-    - law
-    - market
-    - proof
-    - retention
-    - trend
-  matrix:
-    - awareness
-    - breath
-    - churn
-    - cohort
-    - desire
-    - diffusion
-    - engagement
-    - friction
-    - law
-    - market
-    - network
-    - proof
-    - retention
-    - trend
-  backlinks:
-    - awareness
-    - breath
-    - churn
-    - cohort
-    - desire
-    - diffusion
-    - engagement
-    - friction
-    - law
-    - market
-    - network
-    - proof
-    - retention
-    - trend
 signatures:
-  computationUuid: "a3e4288c-c5f3-82a3-a9d6-8dd764f2815f"
+  computationUuid: "0fa99898-5e17-8ba0-915c-5443165bacf0"
   stages:
     - stage: path
-      stageUuid: "e9568158-d4a0-894e-9729-bc5d129aba95"
+      stageUuid: "4d648210-1123-805a-ae3f-6f6acafa7714"
     - stage: trinity
-      stageUuid: "8c982c9f-8617-877f-8aaa-4cfd14b698d2"
+      stageUuid: "35609e87-8e13-819f-801c-eb430b68c2f1"
     - stage: boundary
-      stageUuid: "93355623-1f61-89e5-96d2-0a8cb39e3dad"
+      stageUuid: "bd47aa3f-2ecb-8367-95ba-f2560ece2595"
     - stage: links
-      stageUuid: "9f800b19-ab94-8022-808e-3d5acfdbbe05"
+      stageUuid: "467f2412-d3fd-8e8d-a508-707c92323a54"
     - stage: horo
-      stageUuid: "bd6756e9-05e5-8203-a1d8-d4e443e9fdb5"
+      stageUuid: "b560e89b-5e04-861d-89a3-6260a57b61d2"
     - stage: seal
-      stageUuid: "99691851-38f1-8460-aa42-467cbdb5d620"
+      stageUuid: "ce84f617-c7c8-8b3f-a737-63e87e668d9a"
     - stage: uuid
-      stageUuid: "61ec309e-2780-8c87-9b60-db3dee33981b"
+      stageUuid: "589e21e9-3fbf-87ef-846f-a27362e40d3b"
 version: 2
 ---
 # habit — repetition; what turns a sale into a market

@@ -2,107 +2,34 @@
 name: navigation
 description: "Use when reasoning about navigation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: navigation
-coordinate: "navigation · 5/round · 69c1466f"
-contentUuid: "7b6757f7-df59-549f-88e9-825212ef4f6c"
-diamondUuid: "b22be8d2-335d-8201-a3b9-f0b8a420feec"
-uuid: "69c1466f-24d4-878a-9666-b10e848ca8b4"
+coordinate: "navigation · 5/round · 4bb01ba6"
+contentUuid: "9de10209-d104-5a17-8a83-e262f0b4d088"
+diamondUuid: "4895f477-e24f-8629-a8c3-ee984cbbdf19"
+uuid: "4bb01ba6-c39e-8dda-8dbe-45d770b91996"
 horo: 5
-bonds:
-  in:
-    - agent
-    - algebra
-    - build
-    - collapse
-    - conformal
-    - element
-    - horo
-    - law
-    - merge
-    - rodin
-    - rules
-    - site
-    - sti
-    - typography
-  out:
-    - agent
-    - algebra
-    - build
-    - collapse
-    - conformal
-    - element
-    - horo
-    - law
-    - merge
-    - rodin
-    - rules
-    - site
-    - sti
-    - typography
 typography:
   partition: navigation
   bondDegree: 0
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - element
-    - horo
-    - law
-    - merge
-    - rodin
-    - rules
-    - site
-    - sti
-  matrix:
-    - agent
-    - algebra
-    - build
-    - collapse
-    - conformal
-    - element
-    - horo
-    - law
-    - merge
-    - rodin
-    - rules
-    - site
-    - sti
-    - typography
-  backlinks:
-    - agent
-    - algebra
-    - build
-    - collapse
-    - conformal
-    - element
-    - horo
-    - law
-    - merge
-    - rodin
-    - rules
-    - site
-    - sti
-    - typography
 signatures:
-  computationUuid: "a9055dad-9483-8cb3-9d07-6a6962946e14"
+  computationUuid: "0e56f655-80ed-8fe5-9c71-e8017fa148af"
   stages:
     - stage: path
       stageUuid: "88b4b1d3-663f-8f37-860f-f3a6fd284517"
     - stage: trinity
       stageUuid: "baa0e96c-6a5a-8c42-9293-1d6bd3c13f96"
     - stage: boundary
-      stageUuid: "337ba6fe-08a3-8866-899d-92ec0009b023"
+      stageUuid: "d36e7919-07e4-8d65-bc0a-7a991da19300"
     - stage: links
-      stageUuid: "dee619ca-0302-8107-9e52-dcef33407806"
+      stageUuid: "a7fb9708-2632-8433-8886-2fe4a9178a72"
     - stage: horo
-      stageUuid: "7b2dbdd7-f884-8e7f-b7af-07159262d558"
+      stageUuid: "81242228-3d8e-8bf5-8ab7-c7002ce39aeb"
     - stage: seal
       stageUuid: "995ea651-13c9-8b9b-8b56-a9e329f48d9b"
     - stage: uuid
-      stageUuid: "83266148-dfb3-8949-a4a7-f97271c2278a"
+      stageUuid: "048edda6-4eed-82f5-911d-07b250f7d723"
 version: 2
 ---
 # navigation

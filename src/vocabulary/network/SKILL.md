@@ -1,167 +1,34 @@
 ---
 name: network
 description: "Use when a market's desire RISES with its own adoption — network effects, the strongest small-to-big engine. Below critical mass value is negative (anti-network: new users churn, the market collapses to zero — the cold-start problem); above the tipping point growth self-sustains. Seed a dense atomic network, not the whole market; the trendsetter cohort is that first cell."
-atomPath: vocabulary/network
-coordinate: network · 8/crest · 7702fcae
-contentUuid: "df83dcd5-9b7a-59f1-8c26-0cac6be381c2"
-diamondUuid: "16580538-123e-82a9-acfd-be824a36669c"
-uuid: "7702fcae-f691-82ea-830f-3bd7f86858b5"
-horo: 8
-bonds:
-  in:
-    - bottleneck
-    - brain
-    - breath
-    - cohort
-    - collapse
-    - competition
-    - computer
-    - connection
-    - connections
-    - decentralization
-    - desire
-    - diffusion
-    - ecosystem
-    - engagement
-    - habit
-    - includes
-    - law
-    - links
-    - market
-    - mass
-    - merge
-    - mycelium
-    - network
-    - plan
-    - power
-    - science
-    - tier
-  out:
-    - bottleneck
-    - brain
-    - breath
-    - cohort
-    - collapse
-    - competition
-    - computer
-    - connection
-    - connections
-    - decentralization
-    - desire
-    - diffusion
-    - ecosystem
-    - engagement
-    - habit
-    - includes
-    - law
-    - links
-    - market
-    - mass
-    - merge
-    - mycelium
-    - network
-    - plan
-    - power
-    - science
-    - tier
+atomPath: "vocabulary/network"
+coordinate: "vocabulary/network · 5/round · 78f5fc93"
+contentUuid: "b8d2ba37-e15e-5a71-b813-eab742c477a4"
+diamondUuid: "e0a4589a-aa6a-8996-ad2c-d1c23cc45ecf"
+uuid: "78f5fc93-ec3b-85d3-b43a-4237c1f99552"
+horo: 5
 typography:
-  partition: network
-  bondDegree: 92
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 69
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - bottleneck
-    - breath
-    - cohort
-    - competition
-    - connections
-    - decentralization
-    - desire
-    - diffusion
-    - ecosystem
-    - engagement
-    - habit
-    - links
-    - market
-    - mass
-    - merge
-    - network
-    - power
-  matrix:
-    - bottleneck
-    - brain
-    - breath
-    - cohort
-    - collapse
-    - competition
-    - computer
-    - connection
-    - connections
-    - decentralization
-    - desire
-    - diffusion
-    - ecosystem
-    - engagement
-    - habit
-    - includes
-    - law
-    - links
-    - market
-    - mass
-    - merge
-    - mycelium
-    - network
-    - plan
-    - power
-    - science
-    - tier
-  backlinks:
-    - bottleneck
-    - brain
-    - breath
-    - cohort
-    - collapse
-    - competition
-    - computer
-    - connection
-    - connections
-    - decentralization
-    - desire
-    - diffusion
-    - ecosystem
-    - engagement
-    - habit
-    - includes
-    - law
-    - links
-    - market
-    - mass
-    - merge
-    - mycelium
-    - network
-    - plan
-    - power
-    - science
-    - tier
 signatures:
-  computationUuid: "f9f66c31-589f-8ee8-9fa8-df8dad715155"
+  computationUuid: "557530cd-fd42-827c-b5d1-6bfde9fd0aa9"
   stages:
     - stage: path
-      stageUuid: "3c130c91-56ac-8636-85f4-89f131fa70df"
+      stageUuid: "de1a5f86-b406-8900-987c-c42e2bc31f4e"
     - stage: trinity
-      stageUuid: "bad3559a-5826-8d53-890e-2e2d75a1b440"
+      stageUuid: "6696417d-adb7-8a46-b252-233c7b1fb984"
     - stage: boundary
-      stageUuid: "00efb141-8264-80d9-992e-1a0d4a286ce5"
+      stageUuid: "777721c8-1dd1-82e9-add2-c8b4d587e78a"
     - stage: links
-      stageUuid: "050b6296-eb3f-8725-a2bb-9308e063d8f5"
+      stageUuid: "8a8cae04-b7c8-87a8-8f30-57f1ae0e2eeb"
     - stage: horo
-      stageUuid: "3efae3e8-43d2-815b-9081-6e95c7fe5698"
+      stageUuid: "c49d8718-7718-8c35-b5b5-bf1e9143caa7"
     - stage: seal
-      stageUuid: "c17dd504-0439-8ce8-827b-6ff12551372e"
+      stageUuid: "f63bdcb1-287a-8fd1-9f0b-8abcd376ed85"
     - stage: uuid
-      stageUuid: "e5c64994-db64-883d-bb03-e186bab6ed25"
+      stageUuid: "16d2083d-dec1-86a1-80a5-385b080d5ecf"
 version: 2
 ---
 # network — when desire grows with adoption (the self-reinforcing engine)

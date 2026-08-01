@@ -1,73 +1,35 @@
 ---
 name: prepayment
 description: "Use when reasoning about prepayment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/prepayment
-coordinate: prepayment · 2/share · fb83c4cb
-contentUuid: "69172431-105b-5f6b-925d-2b582bbf1cec"
-diamondUuid: "f427552e-5885-823e-8b20-0a99988917d6"
-uuid: "fb83c4cb-2f15-8cd1-b538-83aedb78a123"
+atomPath: "vocabulary/prepayment"
+coordinate: "vocabulary/prepayment · 2/share · 6aabcd8d"
+contentUuid: "a78b5e93-be83-5343-ae75-a28d556af167"
+diamondUuid: "f542aed0-f36c-8b2c-a1ae-ab69fe5e3b73"
+uuid: "6aabcd8d-9a1a-8a1e-9f09-4e8d4b1aa1df"
 horo: 2
-bonds:
-  in:
-    - collapse
-    - early
-    - law
-    - merge
-    - penalty
-    - sti
-  out:
-    - collapse
-    - early
-    - law
-    - merge
-    - penalty
-    - sti
 typography:
-  partition: prepayment
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - early
-    - law
-    - merge
-    - penalty
-    - sti
-  matrix:
-    - collapse
-    - early
-    - law
-    - merge
-    - penalty
-    - sti
-  backlinks:
-    - collapse
-    - early
-    - law
-    - merge
-    - penalty
-    - sti
 signatures:
-  computationUuid: "60c3e5b7-8350-8f75-a6d1-0e9a6e887978"
+  computationUuid: "e9f1080e-265b-8339-a3f2-86244c768015"
   stages:
     - stage: path
-      stageUuid: "f793b190-535f-846a-8d6d-c27fa87068fa"
+      stageUuid: "af0f0186-442e-8dd4-99ae-af92630885a7"
     - stage: trinity
-      stageUuid: "47939f9b-b0be-8b67-99bd-21ae3c14ec9e"
+      stageUuid: "210e2a19-9f83-8273-bda8-f7c43dc39770"
     - stage: boundary
-      stageUuid: "560061e6-06b6-8d81-8b38-c10ea32f4351"
+      stageUuid: "9d67b017-ddfa-8c00-8cd1-9d282e9709a6"
     - stage: links
-      stageUuid: "58494239-70de-8666-a3c2-4e9466609974"
+      stageUuid: "6bddaf98-ad3a-8359-b474-197e61ddbb67"
     - stage: horo
-      stageUuid: "2329fa08-2685-877e-836c-0d9477f967a4"
+      stageUuid: "16ce9146-5452-87af-8746-4af993605b95"
     - stage: seal
-      stageUuid: "69ac80d5-1898-86d3-8bb2-f115151a7d0c"
+      stageUuid: "f0b02d98-bd51-8928-9636-d5eb4ea08e4b"
     - stage: uuid
-      stageUuid: "d1e3cbb9-00ff-8e60-b72b-2643516dc22c"
+      stageUuid: "1c7c00e0-44c8-8746-8846-0db35346e348"
 version: 2
 ---
 # prepayment

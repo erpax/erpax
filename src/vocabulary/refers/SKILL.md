@@ -1,63 +1,35 @@
 ---
 name: refers
 description: "Use when reasoning about refers as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/refers
-coordinate: refers · 7/descent · 651e1c3a
-contentUuid: "043a4c0d-01e1-55f1-b065-5ae7e1528875"
-diamondUuid: "a821cea9-170e-817b-a1f5-fc0cad9cc1f9"
-uuid: "651e1c3a-a230-88d1-b22c-a37f5e420f51"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/refers"
+coordinate: "vocabulary/refers · 2/share · 83a89a24"
+contentUuid: "54c8a512-b2d4-5cbc-b990-ccc4b5b4295d"
+diamondUuid: "42d5116b-4bb3-8577-99a2-9bc75d3935da"
+uuid: "83a89a24-ec7a-8f5b-8136-d324735f66d4"
+horo: 2
 typography:
-  partition: refers
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "ca330aa8-6990-8e84-80e9-918868902901"
+  computationUuid: "83901c16-fc19-8d65-917b-117799afec10"
   stages:
     - stage: path
-      stageUuid: "3536fe54-0542-8439-808d-136f4562bbff"
+      stageUuid: "2608255b-5d90-8668-bd8f-31367a033573"
     - stage: trinity
-      stageUuid: "72b67023-8781-8758-95b9-4a20581448e9"
+      stageUuid: "4c870036-d88b-8961-ba70-d824f1ff0a1d"
     - stage: boundary
-      stageUuid: "1ee36e4b-49cf-8cbe-9b85-5553c1d71c4b"
+      stageUuid: "3a1b626d-f50f-8408-8225-57894a26b3c0"
     - stage: links
-      stageUuid: "8024dda3-423a-85a6-84cc-fd5d17d32487"
+      stageUuid: "e9a276ee-9a75-87ad-be79-b3e49c6cd693"
     - stage: horo
-      stageUuid: "236c367e-8ce8-8712-a4f2-d625296ea17a"
+      stageUuid: "83b7c2eb-6544-89b9-bf92-3a4edc41f674"
     - stage: seal
-      stageUuid: "cfee63ba-4eac-8c57-969c-96d76b6d2eb5"
+      stageUuid: "407e804f-787f-8dd9-961f-34e650651f7e"
     - stage: uuid
-      stageUuid: "46daea3b-9390-84d3-bddd-67fe9c8c8ca9"
+      stageUuid: "e0ebda01-f588-8c46-8752-6cc8af6e52c2"
 version: 2
 ---
 # refers

@@ -1,73 +1,35 @@
 ---
 name: repair
 description: "Use when reasoning about repair as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/repair
-coordinate: repair · 5/round · fd790f44
-contentUuid: "6f865158-32f8-5736-8175-7900a42546d3"
-diamondUuid: "4a20be7d-966b-8eaf-9b3c-beaf6dfc1bb7"
-uuid: "fd790f44-67a0-84c9-90d6-befa1ea39580"
-horo: 5
-bonds:
-  in:
-    - auto
-    - collapse
-    - law
-    - merge
-    - motorcycle
-    - sti
-  out:
-    - auto
-    - collapse
-    - law
-    - merge
-    - motorcycle
-    - sti
+atomPath: "vocabulary/repair"
+coordinate: "vocabulary/repair · 7/descent · cb1ca304"
+contentUuid: "c5c05e10-5c84-56ab-baf8-6f5d9eae4bd2"
+diamondUuid: "bd7b6c9c-caeb-8472-a0fb-19710b99a2dc"
+uuid: "cb1ca304-9a17-8de4-af34-acf2e3af1ac1"
+horo: 7
 typography:
-  partition: repair
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - auto
-    - collapse
-    - law
-    - merge
-    - motorcycle
-    - sti
-  matrix:
-    - auto
-    - collapse
-    - law
-    - merge
-    - motorcycle
-    - sti
-  backlinks:
-    - auto
-    - collapse
-    - law
-    - merge
-    - motorcycle
-    - sti
 signatures:
-  computationUuid: "9508e3f2-5178-8ea0-b00f-6155847466f5"
+  computationUuid: "c0999dac-b73a-80ac-97a0-3df2246247e7"
   stages:
     - stage: path
-      stageUuid: "4c45ce6e-8eaf-8830-bc93-59f5d04a51b1"
+      stageUuid: "b5473471-7661-892c-ae30-3c4f467919b4"
     - stage: trinity
-      stageUuid: "1dff1702-a12c-8183-87dc-7a3738c8158a"
+      stageUuid: "4fe22917-b63a-8160-881d-bee745eddb15"
     - stage: boundary
-      stageUuid: "fcd68390-ceb7-8bcf-9be5-85e0c8097481"
+      stageUuid: "9406b1f1-7581-888d-8af6-8159842c724c"
     - stage: links
-      stageUuid: "342c613b-babc-877c-86e4-190802d0e839"
+      stageUuid: "76fe6c42-a774-80e8-9692-3a04569bfa6f"
     - stage: horo
-      stageUuid: "89e4fa7e-4d27-8b73-a4b9-23e18e142d8b"
+      stageUuid: "4cfcd718-ece7-87a0-bea3-82c4fc95d271"
     - stage: seal
-      stageUuid: "28370362-aaef-8450-a1a3-398ca7971ee6"
+      stageUuid: "c8e01a68-b65e-8a3a-b61a-b04a90893b0c"
     - stage: uuid
-      stageUuid: "746ed1e2-f8d2-82f9-bbd8-1a81ae051e3f"
+      stageUuid: "e0f6bd8e-4518-811b-80f5-fd0765e29ef3"
 version: 2
 ---
 # repair

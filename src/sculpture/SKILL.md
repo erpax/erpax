@@ -2,37 +2,19 @@
 name: sculpture
 description: Use when reasoning about sculpture — A piece of sculpture.
 atomPath: sculpture
-coordinate: sculpture · 4/weave · 1939f897
-contentUuid: "db55dc6d-b2c8-52c7-8ee6-410c4ee81ad5"
-diamondUuid: "13c961fd-a2d4-82ba-886f-283dec5ad40a"
-uuid: "1939f897-08f3-8336-9e5b-de6452f83797"
-horo: 4
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+coordinate: "sculpture · 5/round · 0e0f2bc0"
+contentUuid: "124bb485-5c2d-51a2-b112-4efb4cf38bc0"
+diamondUuid: "e404d4a6-a69c-8f39-b39a-18729be8aaeb"
+uuid: "0e0f2bc0-6a19-8f7f-87d7-0c3a3205478a"
+horo: 5
 typography:
   partition: sculpture
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "fd95083a-7357-81e2-8a0e-f736aa7d4579"
+  computationUuid: "7d629edf-437b-8ba5-a66f-763d6cff17bf"
   stages:
     - stage: path
       stageUuid: "b07346eb-d2f5-8374-81bf-f67d138e76fd"
@@ -43,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "266be243-edea-8669-ab79-a104c1785092"
     - stage: horo
-      stageUuid: "8e2a4709-b0bf-876b-b28a-b70fd9081e3c"
+      stageUuid: "982aecc2-7296-8f6b-a377-11db20c8f30a"
     - stage: seal
-      stageUuid: "e40cd874-8f55-83c0-9901-2d97cf2a5498"
+      stageUuid: "89a7bb1d-bc4f-8ad5-a215-cf314921f75d"
     - stage: uuid
-      stageUuid: "2c1e34e2-cec9-853e-8dc1-8239b8102b7d"
+      stageUuid: "4d19477c-3bac-81aa-a420-09b85fe26dbc"
 version: 2
 ---
 # sculpture

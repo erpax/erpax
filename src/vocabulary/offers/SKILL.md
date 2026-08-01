@@ -1,58 +1,35 @@
 ---
 name: offers
 description: "Use when reasoning about offers — An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use businessFunction to"
-atomPath: vocabulary/offers
-coordinate: offers · 5/round · 009dd2b1
-contentUuid: "329febb8-714d-5fa1-a0cc-5e8bb71e737e"
-diamondUuid: "e551715e-3ed5-88b4-a060-d7f4cafbfa5d"
-uuid: "009dd2b1-077e-8a46-b0dc-cc3c477fe4f8"
-horo: 5
-bonds:
-  in:
-    - law
-    - mail
-    - prescription
-  out:
-    - law
-    - mail
-    - prescription
+atomPath: "vocabulary/offers"
+coordinate: "vocabulary/offers · 4/weave · a65d023d"
+contentUuid: "92b4ef80-becd-5cef-ac90-b7d273d90833"
+diamondUuid: "0498b188-305f-869a-a2b7-9ed96b0b7ce3"
+uuid: "a65d023d-0321-8539-9c0a-a126ecf5a185"
+horo: 4
 typography:
-  partition: offers
-  bondDegree: 11
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 13
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - mail
-    - prescription
-  matrix:
-    - law
-    - mail
-    - prescription
-  backlinks:
-    - law
-    - mail
-    - prescription
 signatures:
-  computationUuid: "5c1cca2f-a3ab-81dd-8197-e04c0af718bd"
+  computationUuid: "9bf1aea1-244c-886e-a5dc-d66a63f05376"
   stages:
     - stage: path
-      stageUuid: "f1e0d763-88d0-8ec2-abe3-fa36c61e3607"
+      stageUuid: "67986d49-d940-89e9-907e-e5ba2ae715af"
     - stage: trinity
-      stageUuid: "dfbec193-4dbf-89c4-9dbd-a34784be12b3"
+      stageUuid: "555ed4b4-a4b7-83d7-ae4b-8e878fa1c413"
     - stage: boundary
-      stageUuid: "6ef24e15-e154-8fcf-a3b1-9e6309c13435"
+      stageUuid: "79a46c04-753b-8d4b-bbb4-9cbd68e876ac"
     - stage: links
-      stageUuid: "73e5573b-45c2-816c-9729-02a8752b153a"
+      stageUuid: "95032aad-88bc-8c5c-a1d9-53534b2490d2"
     - stage: horo
-      stageUuid: "8f15c012-6c36-862f-af2a-7329ff6be420"
+      stageUuid: "64e7607d-8c73-85da-aeaf-50db0d09e35a"
     - stage: seal
-      stageUuid: "9f927117-ee12-8fa9-9b17-c769232e65e0"
+      stageUuid: "fb5b1d8e-9b39-87c0-a745-772ee4242d28"
     - stage: uuid
-      stageUuid: "fc2d5ea1-24d1-8326-9355-83cdcc7e0dce"
+      stageUuid: "4c3554fe-b40c-8d16-ace5-d3a6fe843a5f"
 version: 2
 ---
 # offers

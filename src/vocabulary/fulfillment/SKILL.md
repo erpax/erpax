@@ -1,73 +1,35 @@
 ---
 name: fulfillment
 description: "Use when reasoning about fulfillment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/fulfillment
-coordinate: fulfillment · 2/share · c9596b3c
-contentUuid: "1f8c9104-60d7-571b-8c5c-954472e296bc"
-diamondUuid: "41df72ee-6532-8741-89d3-30151bee639d"
-uuid: "c9596b3c-8eec-8d7b-90be-564b6eef688a"
+atomPath: "vocabulary/fulfillment"
+coordinate: "vocabulary/fulfillment · 2/share · f5f2e12c"
+contentUuid: "95e322ff-a1d0-5405-9906-bbd12b8ed6a7"
+diamondUuid: "d55a80d6-029c-84db-8525-379ab3b4a467"
+uuid: "f5f2e12c-6950-84d3-84e3-e5f10707b68c"
 horo: 2
-bonds:
-  in:
-    - collapse
-    - enumeration
-    - law
-    - merge
-    - sti
-    - type
-  out:
-    - collapse
-    - enumeration
-    - law
-    - merge
-    - sti
-    - type
 typography:
-  partition: fulfillment
-  bondDegree: 19
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 21
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - enumeration
-    - law
-    - merge
-    - sti
-    - type
-  matrix:
-    - collapse
-    - enumeration
-    - law
-    - merge
-    - sti
-    - type
-  backlinks:
-    - collapse
-    - enumeration
-    - law
-    - merge
-    - sti
-    - type
 signatures:
-  computationUuid: "397b6c0f-c7b6-8b84-b315-e5a59a3b311f"
+  computationUuid: "2d956196-1fac-8681-8645-d27e05c1af78"
   stages:
     - stage: path
-      stageUuid: "4bcf17cd-644a-8663-b5b2-8ba7473fe14e"
+      stageUuid: "887ba75c-1941-86b4-a50e-457950624f94"
     - stage: trinity
-      stageUuid: "f2695353-6e04-8702-901b-c4b2bbb42063"
+      stageUuid: "774c6365-6416-8915-8aa8-bff2e6904cfe"
     - stage: boundary
-      stageUuid: "f06e5d3a-46c6-8717-8670-0df7d43ca245"
+      stageUuid: "e376ba2a-9a7e-8279-a70d-cc00ec81ced1"
     - stage: links
-      stageUuid: "da40b540-8e55-88db-8427-f9da9d5ec65a"
+      stageUuid: "cf2e2858-a94f-8228-8af2-a951bc438f74"
     - stage: horo
-      stageUuid: "ff75d631-16a7-8118-9298-1f42c131fbad"
+      stageUuid: "5dfc5e49-a177-88aa-8968-50a71b8b9851"
     - stage: seal
-      stageUuid: "2d3b89ce-27dd-81d9-ae6f-b352f33e73bb"
+      stageUuid: "0af83393-4a5e-8e98-bc24-6cbee915ac92"
     - stage: uuid
-      stageUuid: "a60ba7c8-325c-8426-84a9-b1b9bad71ea9"
+      stageUuid: "12ea8df8-9bd4-88f4-8903-40cca39af50d"
 version: 2
 ---
 # fulfillment

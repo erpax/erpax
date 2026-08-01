@@ -2,40 +2,14 @@
 name: leads
 description: "Use when capturing and qualifying prospects before they become customers — inbound/outbound sourcing, BANT/MEDDIC lead scoring, MQL/SQL progression, and conversion to an opportunity or customer on close-won. The CRM pre-customer lead collection."
 atomPath: leads
-coordinate: "leads · 4/weave · 0c839406"
-contentUuid: "d414ff39-c4e6-5636-8ae2-2b12e4f12b73"
-diamondUuid: "5f2547ca-dc18-845d-9c98-88196a09ad46"
-uuid: "0c839406-eadc-8a4c-affb-24f6bd9fd9c8"
-horo: 4
-bonds:
-  in:
-    - access
-    - accounting
-    - activities
-    - campaign
-    - funnel
-    - law
-    - leadscore
-    - opportunities
-    - pipeline
-    - prospect
-    - standard
-  out:
-    - access
-    - accounting
-    - activities
-    - campaign
-    - funnel
-    - law
-    - leadscore
-    - opportunities
-    - pipeline
-    - prospect
-    - standard
+coordinate: "leads · 2/share · cfd42d99"
+contentUuid: "fb3fc6b0-5efc-5181-998d-ee06243db223"
+diamondUuid: "3fcb919a-dda6-887d-9297-54f15771c03c"
+uuid: "cfd42d99-13ab-8500-af55-9dedc798df8f"
+horo: 2
 typography:
   partition: leads
   bondDegree: 34
-  neighbors: []
 standards:
   - "GDPR Art.5 data-minimisation"
   - "GDPR Art.6(1)(f) legitimate-interest (B2B prospecting)"
@@ -45,39 +19,8 @@ standards:
   - "ISO-8601-1:2019 date-time`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - accounting
-    - law
-    - opportunities
-    - standard
-  matrix:
-    - access
-    - accounting
-    - activities
-    - campaign
-    - funnel
-    - law
-    - leadscore
-    - opportunities
-    - pipeline
-    - prospect
-    - standard
-  backlinks:
-    - access
-    - accounting
-    - activities
-    - campaign
-    - funnel
-    - law
-    - leadscore
-    - opportunities
-    - pipeline
-    - prospect
-    - standard
 signatures:
-  computationUuid: "62bb279a-d6c9-8f57-90e0-a9bf4dba3e8b"
+  computationUuid: "efdd81d4-b413-8ef1-ad49-600781c7c03f"
   stages:
     - stage: path
       stageUuid: "20106496-7c97-85a2-a958-bcd903c96f68"
@@ -88,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "cdf0287d-8ad5-8526-9f42-20918752a6fc"
     - stage: horo
-      stageUuid: "db5a537e-23da-8aa3-a133-6c395116607d"
+      stageUuid: "c49c3287-ad30-8865-a907-9e12a4188d9a"
     - stage: seal
       stageUuid: "f9b927f7-98d2-88cd-b4d5-813287a9fdb1"
     - stage: uuid
-      stageUuid: "6caf008f-1e6b-8536-9b25-3208eaa320fc"
+      stageUuid: "b30ede18-6eb3-8fc3-851e-331e066c2835"
 version: 2
 ---
 # leads

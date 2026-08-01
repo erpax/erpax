@@ -1,73 +1,35 @@
 ---
 name: inflow
 description: "Use when reasoning about inflow as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/inflow
-coordinate: inflow · 2/share · 17ca8199
-contentUuid: "1da84108-8b6d-572e-9f9e-731237caad92"
-diamondUuid: "38e90299-3603-8aed-925c-4662f27576dd"
-uuid: "17ca8199-32d7-84b6-8620-5f83c76296a4"
-horo: 2
-bonds:
-  in:
-    - account
-    - collapse
-    - law
-    - merge
-    - minimum
-    - sti
-  out:
-    - account
-    - collapse
-    - law
-    - merge
-    - minimum
-    - sti
+atomPath: "vocabulary/inflow"
+coordinate: "vocabulary/inflow · 7/descent · b409c808"
+contentUuid: "67d5a5fb-df28-52dd-8cc6-238ee63478b2"
+diamondUuid: "3dbf6902-e014-8288-9507-f7abb072f90b"
+uuid: "b409c808-ce45-8831-93fe-6740e2b8c03b"
+horo: 7
 typography:
-  partition: inflow
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - account
-    - collapse
-    - law
-    - merge
-    - minimum
-    - sti
-  matrix:
-    - account
-    - collapse
-    - law
-    - merge
-    - minimum
-    - sti
-  backlinks:
-    - account
-    - collapse
-    - law
-    - merge
-    - minimum
-    - sti
 signatures:
-  computationUuid: "a0cff10f-3ea5-8191-9b4f-8ce2e64c6e0c"
+  computationUuid: "175178e7-872e-8b45-b587-1275ade3cd77"
   stages:
     - stage: path
-      stageUuid: "46fa868e-c7fa-849e-8af7-d96c3c20de68"
+      stageUuid: "39edd95f-79b7-8d6d-919b-773b252e42a8"
     - stage: trinity
-      stageUuid: "0885b634-d00f-88e8-aa8f-93329644044f"
+      stageUuid: "e0f95d09-d901-8eae-beb3-d16a2ec8c2c2"
     - stage: boundary
-      stageUuid: "031334cb-ba8d-8dcd-9053-611bb65dbee6"
+      stageUuid: "2cfc452e-dc87-841f-96a3-c281d68349f4"
     - stage: links
-      stageUuid: "1d02ea8c-e38a-8f96-9ef9-11858eec663e"
+      stageUuid: "774b1459-d1f6-8552-a732-867d4764d5d6"
     - stage: horo
-      stageUuid: "f31b7fe6-253e-814e-a046-4ecb2bc9844d"
+      stageUuid: "778dbd7c-e5de-8d93-8f92-b7c50b367f00"
     - stage: seal
-      stageUuid: "acd878ce-b18c-86a0-93c2-ac5fc2beca29"
+      stageUuid: "3246fa14-65f5-8e76-8153-210f45f8729f"
     - stage: uuid
-      stageUuid: "ef7da577-b38d-8ac2-9f10-fb82efea9cf0"
+      stageUuid: "aa389115-6552-8de9-9ed6-deaded303f06"
 version: 2
 ---
 # inflow

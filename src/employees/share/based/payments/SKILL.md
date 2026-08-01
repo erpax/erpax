@@ -2,39 +2,14 @@
 name: payments
 description: "Use when recording employee equity grants — stock options, RSUs, RSAs, PSUs, ESPP, SARs — under IFRS 2, tracking equity-settled vs cash-settled treatment, vesting tranches with service/performance/market conditions, cumulative expense recognition, exercises and forfeitures. The IFRS 2 share-based-payment grant register."
 atomPath: "employees/share/based/payments"
-coordinate: "employees/share/based/payments · 5/round · ef64a41c"
-contentUuid: "0b831d37-722a-5013-8d67-d02ddb24a8fd"
-diamondUuid: "65580115-6e50-8bea-88d6-f8a3c71f383b"
-uuid: "ef64a41c-e36a-80f6-8577-55f3d1ab2550"
-horo: 5
-bonds:
-  in:
-    - accounting
-    - allocations
-    - based
-    - dunning
-    - escrow
-    - identity
-    - law
-    - loan
-    - proof
-    - standard
-    - transaction
-  out:
-    - accounting
-    - allocations
-    - dunning
-    - escrow
-    - identity
-    - law
-    - loan
-    - proof
-    - standard
-    - transaction
+coordinate: "employees/share/based/payments · 4/weave · d1a411e9"
+contentUuid: "d80ccc2a-c2c1-5978-bbb4-b6fb2eca3d4f"
+diamondUuid: "d6728ccc-0f2c-8bfa-8588-a0b3b2d05efe"
+uuid: "d1a411e9-f141-8190-a3e9-404f836f141b"
+horo: 4
 typography:
   partition: employees
   bondDegree: 40
-  neighbors: []
 standards:
   - "IFRS IFRS-2 §10-§13 equity-settled-share-based-payment"
   - "IFRS IFRS-2 §10-§13 equity-settled-share-based-payment`"
@@ -54,39 +29,8 @@ standards:
   - "US-GAAP ASC-718 stock-compensation"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - employees
-    - identity
-    - law
-    - proof
-    - standard
-    - transaction
-  matrix:
-    - accounting
-    - allocations
-    - dunning
-    - escrow
-    - identity
-    - law
-    - loan
-    - proof
-    - standard
-    - transaction
-  backlinks:
-    - accounting
-    - allocations
-    - dunning
-    - escrow
-    - identity
-    - law
-    - loan
-    - proof
-    - standard
-    - transaction
 signatures:
-  computationUuid: "da1939f9-15ab-88da-aadb-d5d4273ee0ab"
+  computationUuid: "88ac7a30-cc29-80df-837f-739b2c8a028e"
   stages:
     - stage: path
       stageUuid: "b5564dbb-e5b4-8543-a762-cf24c4531a33"
@@ -97,11 +41,11 @@ signatures:
     - stage: links
       stageUuid: "3056a3ce-5e46-8ac2-9702-961c64a5be1f"
     - stage: horo
-      stageUuid: "daccc861-a826-84af-98e6-3f7383aeb1ff"
+      stageUuid: "874fe1da-f472-8e65-9ffb-38f0312341bd"
     - stage: seal
       stageUuid: "b44c8410-4853-8778-8956-5de437407bf0"
     - stage: uuid
-      stageUuid: "3b853596-b458-8d10-bd82-e01921c4d059"
+      stageUuid: "13a02395-38a4-84c8-a2cf-2acc363eb861"
 version: 2
 ---
 # share-based-payments

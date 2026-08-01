@@ -1,63 +1,35 @@
 ---
 name: keep
 description: "Use when reasoning about keep as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/keep
-coordinate: keep · 7/descent · b5ea9292
-contentUuid: "0324e85e-b736-5d75-8c1c-0292b7d3deb3"
-diamondUuid: "e270a07d-0d20-8932-8848-5ec1e4b68703"
-uuid: "b5ea9292-ef4f-879c-b6e0-826863a7295d"
-horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/keep"
+coordinate: "vocabulary/keep · 8/crest · 7b04d227"
+contentUuid: "aa9fd004-39ed-5c83-8b91-1732272c9e4b"
+diamondUuid: "b1218fe4-239c-8a26-b6a2-7e734738510b"
+uuid: "7b04d227-db32-876d-b35f-256a98e118fc"
+horo: 8
 typography:
-  partition: keep
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "ba20bae3-99ab-81d3-908b-872adb070e4d"
+  computationUuid: "d10c8c28-3369-8f20-a9fc-0508ea5734cd"
   stages:
     - stage: path
-      stageUuid: "f10410d2-d9a7-88b6-966c-1b4393139d46"
+      stageUuid: "f98f08f7-aa39-8b08-b111-593a72f23865"
     - stage: trinity
-      stageUuid: "e6985e5f-7054-8030-b733-f0aec54f38fe"
+      stageUuid: "757d1e43-6273-8bde-a66b-9d3b24ab88fd"
     - stage: boundary
-      stageUuid: "fa57d467-c62e-8239-a109-f7514d5e654a"
+      stageUuid: "19db9d73-cb90-8b17-bcc4-3b929333b81b"
     - stage: links
-      stageUuid: "b0c456ba-33f6-85de-8860-ced4735b5768"
+      stageUuid: "552dca09-15dc-8f60-9601-fa50fc2235d1"
     - stage: horo
-      stageUuid: "96e8110c-2c77-8652-8112-5256328b6aac"
+      stageUuid: "165010a6-3f42-8bd4-935c-2b8e40bbcece"
     - stage: seal
-      stageUuid: "9a1053a2-6fba-87dd-b650-3f6008121b6f"
+      stageUuid: "b764c108-2286-879c-9921-1dc9ef61f4b8"
     - stage: uuid
-      stageUuid: "9f70d238-7acf-86ff-91ce-444329f6ab32"
+      stageUuid: "5ad5d9e1-659a-82a1-a6b1-a53c73afbd53"
 version: 2
 ---
 # keep

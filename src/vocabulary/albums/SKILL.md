@@ -1,58 +1,35 @@
 ---
 name: albums
 description: Use when reasoning about albums — A collection of music albums.
-atomPath: vocabulary/albums
-coordinate: albums · 8/crest · 33cd8521
-contentUuid: "b2a8fbc3-0f7d-5027-b549-5e3b75eada77"
-diamondUuid: "ff2d82f2-30b5-8a2e-aee3-b396261def24"
-uuid: "33cd8521-9972-8017-9357-7ea3af22921f"
-horo: 8
-bonds:
-  in:
-    - law
-    - music
-    - thing
-  out:
-    - law
-    - music
-    - thing
+atomPath: "vocabulary/albums"
+coordinate: "vocabulary/albums · 4/weave · c8a9b62e"
+contentUuid: "e9df195e-530c-5895-947a-88a8ff170137"
+diamondUuid: "3cf334f8-c251-8373-b9cf-d4623f794f5b"
+uuid: "c8a9b62e-c817-8bae-9328-f45e3087009f"
+horo: 4
 typography:
-  partition: albums
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - music
-    - thing
-  matrix:
-    - law
-    - music
-    - thing
-  backlinks:
-    - law
-    - music
-    - thing
 signatures:
-  computationUuid: "ee00d357-bbb3-8db4-a5dd-df4ccea8036c"
+  computationUuid: "a1aa002b-e531-85fc-8a60-8e9f817c36e5"
   stages:
     - stage: path
-      stageUuid: "f49c1b5b-df31-8726-893f-76be525a6aab"
+      stageUuid: "c6d9cffe-f518-8e07-9078-9062c347bdf4"
     - stage: trinity
-      stageUuid: "55d9c0be-1d3a-8e24-a96b-2e4f64c4d416"
+      stageUuid: "75fea41a-1af5-851a-8e76-7b18ec8fc012"
     - stage: boundary
-      stageUuid: "d07d05f4-73c1-8460-95d8-47bcad6140ad"
+      stageUuid: "bb45caac-cce2-86f8-aed7-629c72a801a4"
     - stage: links
-      stageUuid: "ee678a1e-0b45-8ca8-9514-a7bb5fb68da9"
+      stageUuid: "4c982b94-e6c1-8be5-be15-aa6fe7d75aca"
     - stage: horo
-      stageUuid: "aaee0678-7a06-80d2-abad-8c370e271211"
+      stageUuid: "b19ff2fa-0866-8527-b28b-e32db93742e9"
     - stage: seal
-      stageUuid: "612d7355-1a9f-8372-bd1a-c05b38772fcc"
+      stageUuid: "0e38c71b-1ab1-8aec-9d87-59747dab5481"
     - stage: uuid
-      stageUuid: "270a7257-edf9-82d9-8740-d59b1fbe3eb4"
+      stageUuid: "49a524e8-4fd3-83f6-905d-b09f4e448d16"
 version: 2
 ---
 # albums

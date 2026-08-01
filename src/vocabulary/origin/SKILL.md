@@ -1,93 +1,35 @@
 ---
 name: origin
 description: "Use when reasoning about origin as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/origin
-coordinate: origin · 7/descent · f7c8131b
-contentUuid: "23e882a0-3dc6-570b-b661-b6b8485164b0"
-diamondUuid: "73e86758-566b-86fe-b1ce-3fb67a3ed40b"
-uuid: "f7c8131b-b829-8459-b605-16b799a93805"
-horo: 7
-bonds:
-  in:
-    - address
-    - collapse
-    - cost
-    - country
-    - evidence
-    - law
-    - merge
-    - shipping
-    - sti
-    - trip
-  out:
-    - address
-    - collapse
-    - cost
-    - country
-    - evidence
-    - law
-    - merge
-    - shipping
-    - sti
-    - trip
+atomPath: "vocabulary/origin"
+coordinate: "vocabulary/origin · 2/share · db25bcad"
+contentUuid: "a5f336b4-9c73-5b6a-b845-b1171133342f"
+diamondUuid: "2e7c8c53-507c-869b-bcfb-22e7e907c415"
+uuid: "db25bcad-1748-8073-8041-24028a9120a2"
+horo: 2
 typography:
-  partition: origin
+  partition: vocabulary
   bondDegree: 35
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - address
-    - collapse
-    - cost
-    - country
-    - evidence
-    - law
-    - merge
-    - shipping
-    - sti
-    - trip
-  matrix:
-    - address
-    - collapse
-    - cost
-    - country
-    - evidence
-    - law
-    - merge
-    - shipping
-    - sti
-    - trip
-  backlinks:
-    - address
-    - collapse
-    - cost
-    - country
-    - evidence
-    - law
-    - merge
-    - shipping
-    - sti
-    - trip
 signatures:
-  computationUuid: "27f4c3c1-629f-8e06-9e2b-bc90e3208f6e"
+  computationUuid: "d3bc63e0-ee05-85cc-8fcc-c134059e4bf6"
   stages:
     - stage: path
-      stageUuid: "4d4766da-58c1-88c3-aa93-5f91756e794f"
+      stageUuid: "92561b4e-0821-8703-9107-793bde870a94"
     - stage: trinity
-      stageUuid: "f9584024-febb-863a-bd62-e60d1f304bec"
+      stageUuid: "e9c283e3-3122-88b3-bd08-a7850c905701"
     - stage: boundary
-      stageUuid: "78dc83d1-027d-87f4-95e5-52ff827b7b94"
+      stageUuid: "db13ed51-8bc3-8d56-8561-dc4e6822fb88"
     - stage: links
-      stageUuid: "1dbdf9ae-af7a-8009-ac6f-330f76986765"
+      stageUuid: "9ea20e26-46cc-8c95-aa0c-e62bcd95d702"
     - stage: horo
-      stageUuid: "238ac872-ab32-812d-afda-e7f2e8f3ff67"
+      stageUuid: "583d8753-b371-8eeb-9d25-bee9248c5253"
     - stage: seal
-      stageUuid: "4cc31f6c-de50-8503-a83a-35314e1b3488"
+      stageUuid: "45092d1e-7db6-8118-b65a-dfe4ccfb723d"
     - stage: uuid
-      stageUuid: "cc563ab5-66c8-8863-917b-6850881de90c"
+      stageUuid: "40538c05-085f-87cb-8f34-33bcb6107b40"
 version: 2
 ---
 # origin

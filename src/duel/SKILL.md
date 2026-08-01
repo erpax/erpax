@@ -2,60 +2,18 @@
 name: duel
 description: "Use when testing through pairs of inverted development teams — a prover that asserts and builds, and a refuter that takes the exact opposite side and attacks it. They are duals (the anti-claim is the claim's negation), always opposed, and the verdict manifests realtime per round. Popper asymmetry: one refutation falls the claim, no amount of proof verifies it — a claim STANDS as not-yet-refuted, never as proven true."
 atomPath: duel
-coordinate: "duel · 5/round · 9c69d390"
-contentUuid: "4afcfcc7-b60e-5912-9f1e-b513dcb74b8c"
-diamondUuid: "c437c961-4353-8193-999f-b8d548bd2d3c"
-uuid: "9c69d390-a129-8975-a8ae-b6ce5f5b9fa8"
-horo: 5
-bonds:
-  in:
-    - argument
-    - claim
-    - double
-    - horo
-    - law
-    - millennium
-    - rules
-  out:
-    - argument
-    - claim
-    - double
-    - horo
-    - law
-    - millennium
-    - rules
+coordinate: "duel · 8/crest · 767060bd"
+contentUuid: "bedb4826-19e5-575a-9d7e-46b33fc60768"
+diamondUuid: "597d0a44-af04-8879-81fa-dde6a60fc1ee"
+uuid: "767060bd-4708-86be-ab7b-220ea98dd8dd"
+horo: 8
 typography:
   partition: duel
-  bondDegree: 21
-  neighbors: []
+  bondDegree: 23
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - argument
-    - claim
-    - double
-    - horo
-    - law
-    - rules
-  matrix:
-    - argument
-    - claim
-    - double
-    - horo
-    - law
-    - millennium
-    - rules
-  backlinks:
-    - argument
-    - claim
-    - double
-    - horo
-    - law
-    - millennium
-    - rules
 signatures:
-  computationUuid: "604d1108-6f3e-834d-877f-f36dbdf68599"
+  computationUuid: "8685c960-660b-8294-868d-a916ec147be9"
   stages:
     - stage: path
       stageUuid: "03bb6adc-8a46-8305-9452-bee3c72e4ee8"
@@ -66,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "723eb80c-8729-8068-9a64-13803b244c4c"
     - stage: horo
-      stageUuid: "1b302b42-7c44-8c7c-919d-d945902dd2a3"
+      stageUuid: "8cdf3ce2-c1b7-8bb8-8e92-d8b263759b65"
     - stage: seal
       stageUuid: "e3f8c36f-4e40-8e59-a750-ca97362ee051"
     - stage: uuid
-      stageUuid: "e98da1b7-c587-88d5-99a4-9d591f80ec75"
+      stageUuid: "1e01ae87-33bb-864a-b5a7-9ff5e9f304d6"
 version: 2
 ---
 # duel — inverted teams, opposite sides, manifesting realtime

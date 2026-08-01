@@ -1,53 +1,35 @@
 ---
 name: grantee
 description: "Use when reasoning about grantee — The person, organization, contact point, or audience that has been granted this permission."
-atomPath: vocabulary/grantee
-coordinate: grantee · 7/descent · d940cdd7
-contentUuid: "12e678f1-9591-5759-95a1-34dc9e9125dd"
-diamondUuid: "15bf9cca-4a68-87fe-94d0-66be013111ca"
-uuid: "d940cdd7-3102-884f-97e3-d8d7b23f0936"
-horo: 7
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
+atomPath: "vocabulary/grantee"
+coordinate: "vocabulary/grantee · 8/crest · 40258ee3"
+contentUuid: "09cb6219-7418-5929-adf5-9f076a482de6"
+diamondUuid: "43dedb99-7a3c-89a5-8e12-9dc03a44c5d9"
+uuid: "40258ee3-4041-83d6-ae7a-043fce98d434"
+horo: 8
 typography:
-  partition: grantee
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
 signatures:
-  computationUuid: "42020bbe-67e6-83b5-989c-87a1de32cbe0"
+  computationUuid: "061d7054-bce4-843b-9cee-f401e7ac2ac9"
   stages:
     - stage: path
-      stageUuid: "44339f55-e8a0-82a3-aae4-ea2895d8c728"
+      stageUuid: "1b05a753-22bf-8cff-9d8d-f94b2123a69f"
     - stage: trinity
-      stageUuid: "7c45f691-5124-8adc-817e-dca196ea1c7f"
+      stageUuid: "f70c3e71-55ca-8654-b9b9-7aaf4b6b9976"
     - stage: boundary
-      stageUuid: "46c3cc2e-f440-8142-9b50-bcf3a9cd8856"
+      stageUuid: "b4e20865-02c4-802a-8ae3-84819566ba39"
     - stage: links
-      stageUuid: "3090efdc-60b5-841e-996b-96d4fba98111"
+      stageUuid: "7d77121a-eb39-8765-8369-37d303596152"
     - stage: horo
-      stageUuid: "a7bd37b4-18af-8a6d-9d7f-5bf37b3d30e7"
+      stageUuid: "4529577d-145d-8d6f-8737-2f0756d7ed53"
     - stage: seal
-      stageUuid: "582f8600-576a-8c83-a3c6-34fe40e6e45b"
+      stageUuid: "5a4a67a8-0b88-8728-a5a5-325844b1703a"
     - stage: uuid
-      stageUuid: "a749cbfa-6abb-8e89-a639-7ad76de6dca4"
+      stageUuid: "ace62e24-e2c3-8207-89ff-2bb1591fa865"
 version: 2
 ---
 # grantee

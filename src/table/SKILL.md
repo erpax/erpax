@@ -2,41 +2,19 @@
 name: table
 description: Use when reasoning about table — A table on a Web page.
 atomPath: table
-coordinate: table · 2/share · f3ac84be
-contentUuid: "65f5608c-5971-5917-9f43-b98d8ba6031a"
-diamondUuid: "b2be3f40-6154-8406-b0e3-9bbd3497691b"
-uuid: "f3ac84be-2fec-827a-8a0d-1f22f0596452"
+coordinate: "table · 2/share · 544b6ce3"
+contentUuid: "8475a35e-94e8-5f77-9650-d271aacd49a3"
+diamondUuid: "feded4c7-eeed-8667-8880-9fdd4a04a0cd"
+uuid: "544b6ce3-e5ac-8d32-aee4-ddfe25141c05"
 horo: 2
-bonds:
-  in:
-    - law
-    - sql
-    - thing
-  out:
-    - law
-    - sql
-    - thing
 typography:
   partition: table
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - sql
-    - thing
-  backlinks:
-    - law
-    - sql
-    - thing
 signatures:
-  computationUuid: "13d59a8a-9683-8643-bd67-73bb6f77f1c6"
+  computationUuid: "061ec92d-d8ae-8e55-9079-0bd4d76466dc"
   stages:
     - stage: path
       stageUuid: "19f9473c-6995-8ede-b7c8-395037b009a2"
@@ -47,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "63fe80d6-f8f8-8f51-95d3-287bee17f140"
     - stage: horo
-      stageUuid: "c535f61e-d5b4-81d6-a02c-f95c4c67a33d"
+      stageUuid: "8101fa40-8de9-8a93-9e9c-1ae2ee7b9138"
     - stage: seal
-      stageUuid: "1a2d71f9-792e-831e-9452-5d1cac228701"
+      stageUuid: "13135ef3-30a2-8297-8535-c647bd14203e"
     - stage: uuid
-      stageUuid: "745fecd7-2092-8cc5-8cac-4dc9562872a9"
+      stageUuid: "76ba8462-cacc-8d91-8376-e846803642bc"
 version: 2
 ---
 # table

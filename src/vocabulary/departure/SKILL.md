@@ -1,108 +1,35 @@
 ---
 name: departure
 description: "Use when reasoning about departure as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/departure
-coordinate: departure · 2/share · b12a60da
-contentUuid: "94267e41-b4f9-5b28-b28d-60debfcf5ca2"
-diamondUuid: "917ae177-a678-8cf1-8b41-d43bf3f6ba2d"
-uuid: "b12a60da-ee62-8bdd-ad67-583ebdd87ca3"
-horo: 2
-bonds:
-  in:
-    - airport
-    - boat
-    - bus
-    - collapse
-    - gate
-    - law
-    - merge
-    - platform
-    - station
-    - sti
-    - stop
-    - terminal
-    - time
-  out:
-    - airport
-    - boat
-    - bus
-    - collapse
-    - gate
-    - law
-    - merge
-    - platform
-    - station
-    - sti
-    - stop
-    - terminal
-    - time
+atomPath: "vocabulary/departure"
+coordinate: "vocabulary/departure · 7/descent · 59d73579"
+contentUuid: "ba09089d-b353-5634-8a59-56cf2614c89f"
+diamondUuid: "3d413870-100d-8092-9e4f-f6b6eea9c5cb"
+uuid: "59d73579-4d6e-88b0-83d6-997c0540ff8b"
+horo: 7
 typography:
-  partition: departure
+  partition: vocabulary
   bondDegree: 46
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - airport
-    - boat
-    - bus
-    - collapse
-    - gate
-    - law
-    - merge
-    - platform
-    - station
-    - sti
-    - stop
-    - terminal
-    - time
-  matrix:
-    - airport
-    - boat
-    - bus
-    - collapse
-    - gate
-    - law
-    - merge
-    - platform
-    - station
-    - sti
-    - stop
-    - terminal
-    - time
-  backlinks:
-    - airport
-    - boat
-    - bus
-    - collapse
-    - gate
-    - law
-    - merge
-    - platform
-    - station
-    - sti
-    - stop
-    - terminal
-    - time
 signatures:
-  computationUuid: "165dcdf9-2ff3-8568-b9e8-e612a96b5efc"
+  computationUuid: "0c542398-8c44-8117-a6a7-94ade1f11053"
   stages:
     - stage: path
-      stageUuid: "a1389d5f-7cfb-8596-bd66-ab11b333313e"
+      stageUuid: "5682f411-e3d8-8fa1-a8b5-998f8ca7c40a"
     - stage: trinity
-      stageUuid: "e5b76461-3473-841f-bf2e-e105150fec0e"
+      stageUuid: "3878fbdd-ceb3-8b31-82b0-4a47df91b3c9"
     - stage: boundary
-      stageUuid: "a233e705-0299-8c45-829f-c428e372e606"
+      stageUuid: "f137a63e-e16a-874f-84a1-793399964a54"
     - stage: links
-      stageUuid: "6db4e736-8700-8741-8c1e-6cfa5f57311c"
+      stageUuid: "24de7086-3d9d-818f-97c7-0bcd0464735e"
     - stage: horo
-      stageUuid: "803f35f6-aab2-8eb8-958a-09f516da081e"
+      stageUuid: "38121db8-5431-8927-895c-2f13551e4d96"
     - stage: seal
-      stageUuid: "db0fd597-2127-85b8-a684-1f8d4a68466e"
+      stageUuid: "90bc77ec-751d-842e-9417-cbb5291d199e"
     - stage: uuid
-      stageUuid: "206aa012-6422-8a19-a517-5acd3ce92048"
+      stageUuid: "6d78db1f-a93e-8a44-9eca-aba7a0860113"
 version: 2
 ---
 # departure

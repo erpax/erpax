@@ -1,53 +1,35 @@
 ---
 name: playlist
 description: Use when reasoning about playlist — The playlist to which this recording belongs.
-atomPath: vocabulary/playlist
-coordinate: playlist · 1/base · ebb17d07
-contentUuid: "31ac8f01-7130-538e-9949-1685992f3ede"
-diamondUuid: "2f1f8168-8597-8395-b1d3-aa0668da1e45"
-uuid: "ebb17d07-4661-882e-b8e2-48860362513d"
-horo: 1
-bonds:
-  in:
-    - law
-    - music
-  out:
-    - law
-    - music
+atomPath: "vocabulary/playlist"
+coordinate: "vocabulary/playlist · 8/crest · 51691966"
+contentUuid: "a73c2811-aa69-50f9-84b1-efb823eda3f5"
+diamondUuid: "4299692e-a6f9-8713-8ed6-41b8c35aff48"
+uuid: "51691966-3c32-84fa-9eb6-b2c30fd0bd77"
+horo: 8
 typography:
-  partition: playlist
+  partition: vocabulary
   bondDegree: 7
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - music
-  matrix:
-    - law
-    - music
-  backlinks:
-    - law
-    - music
 signatures:
-  computationUuid: "1ff7eccd-371c-85bf-b3c4-26e1e17f5636"
+  computationUuid: "626b0580-0ad6-8880-9869-96231e232100"
   stages:
     - stage: path
-      stageUuid: "f55cfc1f-ca98-8e96-b799-9a4521f15475"
+      stageUuid: "390f65c2-86ef-826f-a9a2-bdcba620de4d"
     - stage: trinity
-      stageUuid: "e53abdf8-ba40-891f-87aa-0f29aab41705"
+      stageUuid: "1acc915f-31d3-82ff-8651-4d8ab33fe197"
     - stage: boundary
-      stageUuid: "a3285329-cda1-8a5a-a864-6a4f92a3b0e0"
+      stageUuid: "c9407313-7b16-84a4-9ff3-2338ac03ee46"
     - stage: links
-      stageUuid: "9076998d-993c-8adc-a31e-20bbfd01f02b"
+      stageUuid: "8f4cf557-b771-89e8-91ad-34ab89df5e09"
     - stage: horo
-      stageUuid: "8533830e-9311-8eb4-aa08-c6e3d89a7bb8"
+      stageUuid: "c2305071-0669-84e8-92d6-c9bac30b942f"
     - stage: seal
-      stageUuid: "7f0aa30e-12cf-86d6-b595-1ded36ca972f"
+      stageUuid: "c1f4bbf6-2e06-8741-be06-a760c17b9592"
     - stage: uuid
-      stageUuid: "e573c46b-2ae7-81dc-ba75-eaff10df0d42"
+      stageUuid: "3d6d8120-2962-8279-b002-f50638e39d4b"
 version: 2
 ---
 # playlist

@@ -1,113 +1,35 @@
 ---
 name: fees
 description: "Use when reasoning about fees as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/fees
-coordinate: fees · 1/base · 233775ed
-contentUuid: "d86fcbd4-438a-593c-93f0-09a0ddaa188e"
-diamondUuid: "7b86d3b0-4325-843f-8f3c-34d3a1a52531"
-uuid: "233775ed-0a7f-8230-a48f-8f00a5f71e0b"
-horo: 1
-bonds:
-  in:
-    - amount
-    - collapse
-    - commissions
-    - customer
-    - defect
-    - enumeration
-    - item
-    - law
-    - merge
-    - remorse
-    - return
-    - shipping
-    - specification
-    - sti
-  out:
-    - amount
-    - collapse
-    - commissions
-    - customer
-    - defect
-    - enumeration
-    - item
-    - law
-    - merge
-    - remorse
-    - return
-    - shipping
-    - specification
-    - sti
+atomPath: "vocabulary/fees"
+coordinate: "vocabulary/fees · 7/descent · 6f5391bf"
+contentUuid: "aed63901-3520-5f21-9d16-1f537e778010"
+diamondUuid: "521203b4-26b0-8036-b60f-48cc2e521d58"
+uuid: "6f5391bf-fb28-8ebb-ad37-57d870313472"
+horo: 7
 typography:
-  partition: fees
-  bondDegree: 49
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 51
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - amount
-    - collapse
-    - commissions
-    - customer
-    - defect
-    - enumeration
-    - item
-    - law
-    - merge
-    - remorse
-    - return
-    - shipping
-    - specification
-    - sti
-  matrix:
-    - amount
-    - collapse
-    - commissions
-    - customer
-    - defect
-    - enumeration
-    - item
-    - law
-    - merge
-    - remorse
-    - return
-    - shipping
-    - specification
-    - sti
-  backlinks:
-    - amount
-    - collapse
-    - commissions
-    - customer
-    - defect
-    - enumeration
-    - item
-    - law
-    - merge
-    - remorse
-    - return
-    - shipping
-    - specification
-    - sti
 signatures:
-  computationUuid: "bc123a93-6868-8f63-91e2-83da8bdbee66"
+  computationUuid: "8d095e2e-95e5-8b94-bc08-598b6ff391af"
   stages:
     - stage: path
-      stageUuid: "7a1935d3-3f30-80ff-9d21-0299c1be54eb"
+      stageUuid: "3d509f0e-a551-8c05-91fb-3e09c8c9f101"
     - stage: trinity
-      stageUuid: "98ad37b3-6500-8f58-9631-972d8f8a1585"
+      stageUuid: "af939548-22d0-8503-8d33-91def3385683"
     - stage: boundary
-      stageUuid: "2e0ccb3e-abcb-8d15-b36d-71815db03602"
+      stageUuid: "a413ef76-09e4-8f91-a95b-c5cf2e70116b"
     - stage: links
-      stageUuid: "07af2d07-4fbe-83fd-9b4d-c0d0f4205d42"
+      stageUuid: "a1f15a77-936a-8d70-a8f8-5694e8e69b37"
     - stage: horo
-      stageUuid: "86dab85d-af93-843d-bff0-79487e885918"
+      stageUuid: "458aad9f-0cb9-87b1-af5c-9cf80c155c5a"
     - stage: seal
-      stageUuid: "2f4146b7-82db-8ff4-91bb-555ec80ddb2e"
+      stageUuid: "b30a4673-7e53-80dd-bd7b-d0c98538eb6a"
     - stage: uuid
-      stageUuid: "f1919952-4e60-8aa6-90ae-977db539ce98"
+      stageUuid: "82e701e4-7b07-846b-8e80-f6b0c74f6e4a"
 version: 2
 ---
 # fees

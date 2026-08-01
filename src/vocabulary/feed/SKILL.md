@@ -1,88 +1,35 @@
 ---
 name: feed
 description: "Use when reasoning about feed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/feed
-coordinate: feed · 8/crest · 94339b5a
-contentUuid: "67633d00-2344-5311-8aca-8c3c27bb297a"
-diamondUuid: "347406b6-8a95-8806-92a6-935282e37a5c"
-uuid: "94339b5a-0f02-8c1c-903c-7a82a740ba79"
-horo: 8
-bonds:
-  in:
-    - collapse
-    - complete
-    - data
-    - element
-    - item
-    - law
-    - merge
-    - sti
-    - web
-  out:
-    - collapse
-    - complete
-    - data
-    - element
-    - item
-    - law
-    - merge
-    - sti
-    - web
+atomPath: "vocabulary/feed"
+coordinate: "vocabulary/feed · 2/share · 49d28846"
+contentUuid: "384bd441-cea5-51db-9f36-d6d870865674"
+diamondUuid: "4327259a-2d0f-8973-9e1d-bb4ad3419e27"
+uuid: "49d28846-8f37-8645-badb-6692f9359d7b"
+horo: 2
 typography:
-  partition: feed
-  bondDegree: 31
-  neighbors: []
+  partition: vocabulary
+  bondDegree: 41
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - complete
-    - data
-    - element
-    - item
-    - law
-    - merge
-    - sti
-    - web
-  matrix:
-    - collapse
-    - complete
-    - data
-    - element
-    - item
-    - law
-    - merge
-    - sti
-    - web
-  backlinks:
-    - collapse
-    - complete
-    - data
-    - element
-    - item
-    - law
-    - merge
-    - sti
-    - web
 signatures:
-  computationUuid: "f4f99a4b-3337-8544-8536-3e7926a2f34e"
+  computationUuid: "37dceb87-bbee-8c36-86f9-1f3c2aaed678"
   stages:
     - stage: path
-      stageUuid: "ea68354b-4806-8db7-9c8c-b8469c85842b"
+      stageUuid: "3164b135-0b80-8518-bbee-cf937f25baec"
     - stage: trinity
-      stageUuid: "7d004f22-e6a3-8a85-a036-511d82f739cc"
+      stageUuid: "b555229a-87f8-867b-a0ce-0f06abf820d7"
     - stage: boundary
-      stageUuid: "fef9ff30-e069-850f-a500-a3f0c3cdedaa"
+      stageUuid: "42b1f407-2e9f-8ea8-8968-180532d6d46b"
     - stage: links
-      stageUuid: "a88a8d9e-057d-8e5c-9a26-d40f720daddd"
+      stageUuid: "1f4305f5-d9a0-85f3-9f7b-1031a0c91801"
     - stage: horo
-      stageUuid: "7f468414-bb87-8cb5-b75a-68d0ccdd5202"
+      stageUuid: "88b1d9a4-e3b9-80af-ae36-01f99ee512d9"
     - stage: seal
-      stageUuid: "5d5fe820-e626-810d-87eb-3f779a474405"
+      stageUuid: "0cc23629-b5a4-8836-be28-6a1b1f7625ad"
     - stage: uuid
-      stageUuid: "d7d8a8cb-fc29-8f34-8089-ce3961186e7b"
+      stageUuid: "de670efe-7377-8a3c-9e3a-cd888a0aa13c"
 version: 2
 ---
 # feed

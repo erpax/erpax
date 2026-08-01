@@ -1,121 +1,34 @@
 ---
 name: permaculture
 description: "Use when designing a whole farm as a self-sustaining ecosystem — permaculture: Mollison & Holmgren's design system (the three ethics earth-care/people-care/fair-share + 12 principles) and agroecology, arranging crops, animals, water, and structures into closed-loop guilds and zones so the system's outputs feed its own inputs. The design philosophy above the individual operations."
-atomPath: vocabulary/permaculture
-coordinate: permaculture · 7/descent · 920d24a7
-contentUuid: "80cb6edd-1138-589e-83ae-5d5bda428287"
-diamondUuid: "3cd4bffc-f462-89c4-9c05-156be978a26a"
-uuid: "920d24a7-0d28-8c1e-874c-e7507fc64929"
-horo: 7
-bonds:
-  in:
-    - agriculture
-    - balance
-    - breath
-    - certification
-    - covercrop
-    - crop
-    - fertility
-    - fractal
-    - irrigation
-    - law
-    - organic
-    - regeneration
-    - rotation
-    - soil
-    - tillage
-    - whole
-  out:
-    - agriculture
-    - balance
-    - breath
-    - certification
-    - covercrop
-    - crop
-    - fertility
-    - fractal
-    - irrigation
-    - law
-    - organic
-    - regeneration
-    - rotation
-    - soil
-    - tillage
-    - whole
+atomPath: "vocabulary/permaculture"
+coordinate: "vocabulary/permaculture · 8/crest · 25e93187"
+contentUuid: "21959304-196e-5452-af1e-431ec97a70e8"
+diamondUuid: "eed1eb2c-f646-8be6-b1d1-33894833ad8b"
+uuid: "25e93187-e903-84b6-9092-5753c14dfc69"
+horo: 8
 typography:
-  partition: permaculture
+  partition: vocabulary
   bondDegree: 49
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - agriculture
-    - balance
-    - breath
-    - certification
-    - covercrop
-    - crop
-    - fertility
-    - fractal
-    - irrigation
-    - law
-    - organic
-    - rotation
-    - soil
-    - tillage
-    - whole
-  matrix:
-    - agriculture
-    - balance
-    - breath
-    - certification
-    - covercrop
-    - crop
-    - fertility
-    - fractal
-    - irrigation
-    - law
-    - organic
-    - regeneration
-    - rotation
-    - soil
-    - tillage
-    - whole
-  backlinks:
-    - agriculture
-    - balance
-    - breath
-    - certification
-    - covercrop
-    - crop
-    - fertility
-    - fractal
-    - irrigation
-    - law
-    - organic
-    - regeneration
-    - rotation
-    - soil
-    - tillage
-    - whole
 signatures:
-  computationUuid: "a2313836-78ab-8ae2-8b98-873de8e22d96"
+  computationUuid: "332d4c8e-5e7b-8ef3-83dc-a90474fc1944"
   stages:
     - stage: path
-      stageUuid: "ad577b15-c8ee-8abc-9034-350c065c7ecf"
+      stageUuid: "bf59f2ca-7eb0-8928-98bc-995fe81d5335"
     - stage: trinity
-      stageUuid: "639ecf0c-0224-8d76-8915-97934d1cc988"
+      stageUuid: "77f1fc11-0a03-8640-8059-70aa93aa672f"
     - stage: boundary
-      stageUuid: "db116ff1-3433-883d-a8b5-6f4a9973a119"
+      stageUuid: "b4b50c3b-22d0-871f-b1ad-19bf925a1b36"
     - stage: links
-      stageUuid: "f592f6f4-e960-8f3a-97bc-9969b1048f78"
+      stageUuid: "349883ba-c225-892f-ad7f-9f01038144bd"
     - stage: horo
-      stageUuid: "6a878c61-2396-8821-ab9b-674f62653361"
+      stageUuid: "cea49e52-9354-8f3e-8d3c-4092096d2b13"
     - stage: seal
-      stageUuid: "312a9fc7-44b6-80a2-8beb-7638f765b636"
+      stageUuid: "0111ce08-1ca3-8f54-8b5f-d7eff0be9166"
     - stage: uuid
-      stageUuid: "72f5ff03-ead7-8001-b284-a9d4a33c926c"
+      stageUuid: "a1acfc78-e217-83c4-8b86-272ac79d12b5"
 version: 2
 ---
 # permaculture — designing the farm as a self-sustaining ecosystem

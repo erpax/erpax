@@ -2,37 +2,19 @@
 name: track
 description: "Use when reasoning about track — A music recording (track)&#x2014;usually a single song. If an ItemList is given, the list should contain items of type MusicRecording."
 atomPath: track
-coordinate: track · 2/share · 1aebd288
-contentUuid: "071cb407-9d29-58a0-962c-d77990a4db25"
-diamondUuid: "a47252e5-d08c-846a-8596-8e1b4ce72b3a"
-uuid: "1aebd288-d143-8c96-953b-8f47c0951c9b"
+coordinate: "track · 2/share · b834ff37"
+contentUuid: "330f3b8b-2748-582a-b1df-736e885c1c25"
+diamondUuid: "f24d8873-6269-85cd-a7d2-7313942680b0"
+uuid: "b834ff37-03fe-8758-b46d-a14ced359aff"
 horo: 2
-bonds:
-  in:
-    - action
-    - law
-  out:
-    - action
-    - law
 typography:
   partition: track
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - action
-    - law
-  matrix:
-    - action
-    - law
-  backlinks:
-    - action
-    - law
 signatures:
-  computationUuid: "22360cbd-0539-8038-988c-afadec79b403"
+  computationUuid: "c32f6bf1-e790-8c93-af92-3fee60bee70a"
   stages:
     - stage: path
       stageUuid: "e2e249c1-7523-82c0-b6ff-7469bb54b8cb"
@@ -43,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "33800914-2ab8-86ab-a760-cfbe9fd721ce"
     - stage: horo
-      stageUuid: "b9c3b0de-391e-84e8-b0b6-df144cd6bc76"
+      stageUuid: "2cbffafa-ad35-839c-819d-1a2f4efc19a4"
     - stage: seal
-      stageUuid: "1f677b9b-e366-8d36-a985-558226327e76"
+      stageUuid: "4eb82b60-a081-8a80-a7f6-c032726b6b53"
     - stage: uuid
-      stageUuid: "82976b52-f916-8688-957a-f133dec365dc"
+      stageUuid: "b70f42e8-92f2-8ac6-b257-bfa6de77628d"
 version: 2
 ---
 # track

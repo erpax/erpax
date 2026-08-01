@@ -2,104 +2,19 @@
 name: pixel
 description: "Use when reasoning about rendering — a pixel is an atom made visible, the content-uuid rendered to a colour (from its digit on the A432 ring); the atom and the pixel are one identity at two scales, so a component is an atom rendered and VitePress is the corpus rendered."
 atomPath: pixel
-coordinate: pixel · 4/weave · c768df74
-contentUuid: "58f89168-d29f-5e83-a3e1-021c3d841de6"
-diamondUuid: "bef434ff-4b1d-877f-9d32-5c5769863bd0"
-uuid: "c768df74-b1a0-8a04-a231-b7433af87cd8"
-horo: 4
-bonds:
-  in:
-    - agent
-    - analog
-    - atom
-    - aura
-    - color
-    - component
-    - design
-    - digit
-    - interactive
-    - law
-    - primitive
-    - render
-    - signal
-    - ui
-    - uuid
-    - vitepress
-  out:
-    - agent
-    - analog
-    - atom
-    - aura
-    - color
-    - component
-    - design
-    - digit
-    - interactive
-    - law
-    - primitive
-    - render
-    - signal
-    - ui
-    - uuid
-    - vitepress
+coordinate: "pixel · 7/descent · 9b2f1c58"
+contentUuid: "3345fb30-621f-5abd-8468-5e82af1fce2c"
+diamondUuid: "0a630739-5b23-89ff-924e-262e2c7c682b"
+uuid: "9b2f1c58-93bf-820e-9df0-4b86379c21dc"
+horo: 7
 typography:
   partition: pixel
-  bondDegree: 51
-  neighbors:
-    - aura
+  bondDegree: 57
 standards:
-  - "colour computed from the uuid's digit (digitalRootOfUuid → colorOf), never hand-assigned"
-  - "colour computed from the uuid's digit, never painted on"
   - "the analog aura — colour/sound/vibration as projections of one content-uuid"
 bindings: []
-neighbors:
-  wikilink:
-    - analog
-    - atom
-    - aura
-    - color
-    - component
-    - digit
-    - law
-    - signal
-    - uuid
-    - vitepress
-  matrix:
-    - agent
-    - analog
-    - atom
-    - aura
-    - color
-    - component
-    - design
-    - digit
-    - interactive
-    - law
-    - primitive
-    - render
-    - signal
-    - ui
-    - uuid
-    - vitepress
-  backlinks:
-    - agent
-    - analog
-    - atom
-    - aura
-    - color
-    - component
-    - design
-    - digit
-    - interactive
-    - law
-    - primitive
-    - render
-    - signal
-    - ui
-    - uuid
-    - vitepress
 signatures:
-  computationUuid: "da750f32-7ce1-8690-bc16-4ee4c1d20912"
+  computationUuid: "9d966a7c-a4df-8752-b9fb-4604442aed76"
   stages:
     - stage: path
       stageUuid: "72173011-3aba-8be6-9d87-1225d12b9448"
@@ -110,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "086f763a-3801-84da-a798-622a49f11b06"
     - stage: horo
-      stageUuid: "d317bd19-1f04-87b8-ad16-503ca75245e1"
+      stageUuid: "919f35cc-a07f-8f3c-8c74-d670ec04e3af"
     - stage: seal
-      stageUuid: "d40f2462-0f39-86ed-ac80-f4b859900120"
+      stageUuid: "9e4c3f42-6155-8a10-8aaf-66a1f6c5fc88"
     - stage: uuid
-      stageUuid: "5e2ffae1-ccec-880e-b3a3-ce1b65274c55"
+      stageUuid: "aaf293bf-abb7-82df-952f-549ee3534e38"
 version: 2
 ---
 # pixel — the atom, rendered

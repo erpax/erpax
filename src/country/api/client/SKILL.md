@@ -2,21 +2,14 @@
 name: client
 description: "Use when calling the public, no-auth and key-based official country APIs (VIES, Companies House, KvK, Brønnøysund, INSEE, BG Търговски Регистър, Peppol, EU/OFAC sanctions, БНБ/ECB FX) and resolving them through the EU national→pan-EU fallback chains."
 atomPath: "country/api/client"
-coordinate: "country/api/client · 7/descent · 50b277e4"
-contentUuid: "a637f95e-5be1-5d16-a410-0e575a2d8444"
-diamondUuid: "209c19d3-c197-85ea-9d8c-b32bd29197c2"
-uuid: "50b277e4-1309-8768-8ca0-2c68a86081f7"
-horo: 7
-bonds:
-  in:
-    - api
-    - law
-  out:
-    - law
+coordinate: "country/api/client · 1/base · b18a5922"
+contentUuid: "5c3a991d-1163-5f0a-90e5-3a667ac26817"
+diamondUuid: "0f91b0d8-9c09-8d81-a060-12b42d5a6379"
+uuid: "b18a5922-e474-89c1-8db4-abeb8f6bf4a3"
+horo: 1
 typography:
   partition: country
   bondDegree: 6
-  neighbors: []
 standards:
   - "AMLD-5 ubo-screening"
   - Berlin Group NextGenPSD2 v1.3
@@ -30,8 +23,6 @@ standards:
   - "EU 2006/112/EC vat-system-directive Art.214"
   - "EU 2014/55 b2g-e-invoicing-mandate"
   - "EU 2580/2001 cfsp-restrictive-measures"
-  - "EU-2017/1132"
-  - "EU-2017/828"
   - "IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates"
   - "ISO-3166-1"
   - "ISO-3166-1:2020 BG country-code"
@@ -51,17 +42,8 @@ standards:
   - "SDMX 2.1 statistical-data-and-metadata-exchange"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - api
-    - country
-    - law
-  matrix:
-    - law
-  backlinks:
-    - law
 signatures:
-  computationUuid: "6bd7cf73-2eff-84b7-88ee-a3d8faff8cb5"
+  computationUuid: "44379180-38c1-86db-82be-9670a0503d33"
   stages:
     - stage: path
       stageUuid: "d3ce08b3-da50-8d31-af4c-395defbcd0df"
@@ -70,13 +52,13 @@ signatures:
     - stage: boundary
       stageUuid: "e2f4b25b-a894-8861-a366-780a0a96f7a2"
     - stage: links
-      stageUuid: "7183e0a6-e1bc-88e1-81ef-5f9e4b6d4cad"
+      stageUuid: "f7cf6607-fbd3-8a32-b0a5-11a417d50e74"
     - stage: horo
-      stageUuid: "4e11aac2-2764-84c7-b856-7c2dd73d1a93"
+      stageUuid: "69c7a3f3-ca1a-8a45-b901-b3fe46065160"
     - stage: seal
       stageUuid: "89e27b10-a662-89eb-82af-d1e2888c0b6c"
     - stage: uuid
-      stageUuid: "424c048f-b00a-876f-8817-6ec58ff8b13f"
+      stageUuid: "59f46072-46ae-82f4-8758-f62a646d1694"
 version: 2
 ---
 # country/api/client — official country API clients (one file per auth pattern)

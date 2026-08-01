@@ -2,128 +2,37 @@
 name: power
 description: "Use when reasoning about how the LIVE network makes erpax harder to forge — usage = entropy = power; realtime clients are the distributed hardware (as Bitcoin's miners are its hashpower), and accumulated use raises the cost to decode the private keys (the inverse projection)."
 atomPath: power
-coordinate: power · 4/weave · fb08259a
-contentUuid: "2967f8f2-1805-507c-bb5f-e7eec0eaba53"
-diamondUuid: "88ad65e6-1098-87a8-a681-95e205228fc7"
-uuid: "fb08259a-2add-883e-98a6-99405fd83e1f"
-horo: 4
-bonds:
-  in:
-    - age
-    - anchor
-    - awareness
-    - collapse
-    - cost
-    - diffusion
-    - duality
-    - history
-    - identity
-    - integrity
-    - law
-    - market
-    - merge
-    - network
-    - proof
-    - relocate
-    - society
-    - zeropoint
-  out:
-    - age
-    - anchor
-    - awareness
-    - collapse
-    - cost
-    - diffusion
-    - duality
-    - history
-    - identity
-    - integrity
-    - law
-    - market
-    - merge
-    - network
-    - proof
-    - relocate
-    - society
-    - zeropoint
+coordinate: "power · 8/crest · a0067e01"
+contentUuid: "edd62013-8185-5db3-a091-fe9aac906c6d"
+diamondUuid: "e747ed0d-4c72-877b-a967-53005f6ebb66"
+uuid: "a0067e01-d3d4-85b9-a101-5ad94d435dd5"
+horo: 8
 typography:
   partition: power
   bondDegree: 55
-  neighbors: []
 standards:
-  - Conservation Law 55 (tamper cost grows with history; audit stays O(N))
-  - Conservation Law 62 (coverage → ∞ ; here driven by live usage)
   - "NIST SP 800-107r1 §5.1 (hash strengths) · NIST SP 800-57 Part 1 r5 §5.6"
+  - "NIST SP 800-107r1 §5.1 (hash strengths) · NIST SP 800-57 Part 1 r5 §5.6`"
   - "NIST-SP-800-57"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - anchor
-    - cost
-    - duality
-    - history
-    - identity
-    - integrity
-    - law
-    - merge
-    - proof
-    - society
-    - zeropoint
-  matrix:
-    - age
-    - anchor
-    - awareness
-    - collapse
-    - cost
-    - diffusion
-    - duality
-    - history
-    - identity
-    - integrity
-    - law
-    - market
-    - merge
-    - network
-    - proof
-    - relocate
-    - society
-    - zeropoint
-  backlinks:
-    - age
-    - anchor
-    - awareness
-    - collapse
-    - cost
-    - diffusion
-    - duality
-    - history
-    - identity
-    - integrity
-    - law
-    - market
-    - merge
-    - network
-    - proof
-    - relocate
-    - society
-    - zeropoint
 signatures:
-  computationUuid: "7b954923-9d3c-8f39-b419-13d240383bf0"
+  computationUuid: "8ffcd586-d621-887a-a03e-692fee441341"
   stages:
     - stage: path
       stageUuid: "94b2b708-165e-8991-b0ee-6dfe6976b46a"
     - stage: trinity
       stageUuid: "1bd0b4a5-ee47-8aee-88ec-06f6fdc4432e"
     - stage: boundary
-      stageUuid: "490ba308-e8ad-8d41-bd3e-71df655736e7"
+      stageUuid: "fc269d7b-f5b7-8b26-9d68-982f58935830"
     - stage: links
       stageUuid: "c24cdc10-59cb-8bb1-9bd8-8a5df98517e1"
     - stage: horo
-      stageUuid: "247275fd-4c17-855b-94d0-55047599da96"
+      stageUuid: "0a0a83da-0fdd-8976-9ffd-7c19bf3414f6"
     - stage: seal
-      stageUuid: "825593dd-d229-80f9-acb9-70aab4aaf177"
+      stageUuid: "798a44a3-dd1e-8c27-9f89-4d9390d46266"
     - stage: uuid
-      stageUuid: "79535cda-a3aa-88b3-8eec-117f1b0a7c35"
+      stageUuid: "e32977ae-1eb3-8730-a8d3-7f40391a8023"
 version: 2
 ---
 # power — usage is entropy is power; the live network is the hardware

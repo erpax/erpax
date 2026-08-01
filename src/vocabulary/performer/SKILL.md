@@ -1,53 +1,35 @@
 ---
 name: performer
 description: "Use when reasoning about performer — A performer at the event&#x2014;for example, a presenter, musician, musical group or actor."
-atomPath: vocabulary/performer
-coordinate: performer · 1/base · ae8b2e54
-contentUuid: "45d10ff6-e86a-542f-9396-9ba889fe3712"
-diamondUuid: "e2d816d4-c474-82f4-a385-b5c836384d85"
-uuid: "ae8b2e54-a4cf-8a68-b282-f411d3bcc955"
-horo: 1
-bonds:
-  in:
-    - law
-    - person
-  out:
-    - law
-    - person
+atomPath: "vocabulary/performer"
+coordinate: "vocabulary/performer · 5/round · 0fa1a5ae"
+contentUuid: "692781db-e3ce-5aab-9ae4-da4515afb7ae"
+diamondUuid: "02c3b8bd-5028-8000-967b-b6448583d3f5"
+uuid: "0fa1a5ae-067f-8ef7-b34e-df6b40af669e"
+horo: 5
 typography:
-  partition: performer
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - person
-  matrix:
-    - law
-    - person
-  backlinks:
-    - law
-    - person
 signatures:
-  computationUuid: "0c92ed43-111b-87a9-af74-3753d03c3a4f"
+  computationUuid: "9f0042c0-39e9-8d52-8715-6e84a7aea4d8"
   stages:
     - stage: path
-      stageUuid: "fbfcd372-7dd0-803b-992f-59ce1bfd2b97"
+      stageUuid: "b1a5eb38-1963-8fa7-a074-c5c5df7086c5"
     - stage: trinity
-      stageUuid: "a7e85ac7-a109-8417-9b80-4b1890e17af3"
+      stageUuid: "98b1b513-140f-811f-95e7-fdc11d864d2f"
     - stage: boundary
-      stageUuid: "bfb3bd82-c2cf-8669-b5b5-a8dbf8863692"
+      stageUuid: "b1c01724-ae90-8e90-9e29-a97777acb200"
     - stage: links
-      stageUuid: "69fd18e7-e3c8-8371-8b18-31a1ca109cdf"
+      stageUuid: "e7f6789d-654c-85d0-8a63-1de28da29d97"
     - stage: horo
-      stageUuid: "1aaae4ea-60a3-8b72-8894-e307d55469a2"
+      stageUuid: "24d933dd-b8c0-8994-9d9a-5f872ee1cb46"
     - stage: seal
-      stageUuid: "e3f664be-f712-8690-854b-6e8e5af70daf"
+      stageUuid: "32e07f8f-f30b-86f6-b627-038cabefe40f"
     - stage: uuid
-      stageUuid: "a87c063e-e567-8dc6-a84f-8fb8bae537aa"
+      stageUuid: "929a50b0-d423-826d-995f-0152de6de6e2"
 version: 2
 ---
 # performer

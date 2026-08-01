@@ -1,68 +1,35 @@
 ---
 name: consolidates
 description: "Use when reasoning about consolidates as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/consolidates
-coordinate: consolidates · 1/base · a96e9433
-contentUuid: "770b25fa-dfec-587d-b22f-7ab4bdb6fc10"
-diamondUuid: "a710a79a-afc4-8bec-8d5c-7cdf70086761"
-uuid: "a96e9433-7950-8e7d-9972-e31ec0ab5dcc"
-horo: 1
-bonds:
-  in:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
+atomPath: "vocabulary/consolidates"
+coordinate: "vocabulary/consolidates · 4/weave · 564fdcb9"
+contentUuid: "9751f9c4-b7f3-594f-82cf-a76c983a500f"
+diamondUuid: "c65a32a5-6d4b-8b2b-b053-938893ffce40"
+uuid: "564fdcb9-fcc3-8624-8210-3bf8aa4ff96c"
+horo: 4
 typography:
-  partition: consolidates
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - legislation
-    - merge
-    - sti
 signatures:
-  computationUuid: "1b1b17b9-209b-88e6-be12-f8f17a24f8b1"
+  computationUuid: "9049664b-f087-8c58-acbb-0a61f9524eb1"
   stages:
     - stage: path
-      stageUuid: "6ca6ad91-efce-898e-b077-acf5b14cbd41"
+      stageUuid: "f45fd02e-1b5c-84fc-9cb9-f75321a31f1e"
     - stage: trinity
-      stageUuid: "c174fa51-c63d-822a-829e-9373bef041cb"
+      stageUuid: "8baecfa6-c7d3-8357-b2cb-9a23cffcf6a1"
     - stage: boundary
-      stageUuid: "23987909-5a74-8721-96c6-0adb4852f925"
+      stageUuid: "5dd81ff0-2c73-83cb-9c5a-bc8bcca40fa5"
     - stage: links
-      stageUuid: "06eeb922-f833-8dcc-949d-915ce05fbbad"
+      stageUuid: "94417fa5-d070-85f4-8b7e-1a2263e7862a"
     - stage: horo
-      stageUuid: "3d664ee9-81b0-86a4-bf11-2184815588fc"
+      stageUuid: "a7025f46-74f1-81d4-a9ad-1507eb77c526"
     - stage: seal
-      stageUuid: "ff0a4dd1-b29e-86ae-9ef9-250de529c92d"
+      stageUuid: "d9ac55d2-b6fe-8e6b-a3e4-84896eb74e3a"
     - stage: uuid
-      stageUuid: "e704037a-6ead-8a50-b3d7-2eb7959820d6"
+      stageUuid: "7028a165-f7c3-8789-abca-eb36ab7c4c6e"
 version: 2
 ---
 # consolidates

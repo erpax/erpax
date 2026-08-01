@@ -1,81 +1,35 @@
 ---
 name: file
 description: "Use when reasoning about file as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/file
-coordinate: file · 4/weave · f3b4734b
-contentUuid: "1a22d6f1-498c-5689-8d16-45c933526967"
-diamondUuid: "831f8823-5c4c-8314-ae72-b119e7c4de79"
-uuid: "f3b4734b-d5dd-8864-a4c9-07a2cdf82ad8"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - format
-    - fs
-    - law
-    - merge
-    - size
-    - snapshot
-    - sti
-  out:
-    - collapse
-    - format
-    - fs
-    - law
-    - merge
-    - size
-    - snapshot
-    - sti
+atomPath: "vocabulary/file"
+coordinate: "vocabulary/file · 5/round · 15723a53"
+contentUuid: "508450ea-40e5-5da6-9b5c-b9d96d9e12d9"
+diamondUuid: "e7f720dd-ac00-803e-a4c1-694468100de3"
+uuid: "15723a53-7734-8307-a0a8-08eeb99979a9"
+horo: 5
 typography:
-  partition: file
+  partition: vocabulary
   bondDegree: 29
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - format
-    - law
-    - merge
-    - size
-    - sti
-  matrix:
-    - collapse
-    - format
-    - fs
-    - law
-    - merge
-    - size
-    - snapshot
-    - sti
-  backlinks:
-    - collapse
-    - format
-    - fs
-    - law
-    - merge
-    - size
-    - snapshot
-    - sti
 signatures:
-  computationUuid: "d11a2be0-385f-881f-b1a8-0e05ad5474b3"
+  computationUuid: "40a64b4e-dbe0-8f21-b21c-7cf60df443f3"
   stages:
     - stage: path
-      stageUuid: "597fe85e-23cd-893b-8f3a-0a498469deb4"
+      stageUuid: "a4f12718-1fc7-8a87-9146-c2f95b25facf"
     - stage: trinity
-      stageUuid: "9e1f0b5f-26d6-8d5f-8286-8516016c3b38"
+      stageUuid: "78c2c610-4998-8d0d-9ffa-c0bcc70f4709"
     - stage: boundary
-      stageUuid: "327a5848-cd9b-8456-ba55-6981e01e04db"
+      stageUuid: "4677a3f8-e06a-8a0d-b75f-67adccfc46e8"
     - stage: links
-      stageUuid: "a510e075-e181-8a5e-bae4-a82ae2b31f3a"
+      stageUuid: "936ea682-e00e-8527-8616-81b481a4a27c"
     - stage: horo
-      stageUuid: "4be558c3-e8c7-87cc-bef5-d0bf07621b5b"
+      stageUuid: "8ced2ab6-7367-80f2-9718-dee0894b5c2d"
     - stage: seal
-      stageUuid: "89c68673-5f30-8815-819f-290ab13e5156"
+      stageUuid: "e90de990-bcc1-800e-ada2-792cb03e4404"
     - stage: uuid
-      stageUuid: "8ea2aebe-0e96-808f-aa56-053a7fcb58e4"
+      stageUuid: "5f89f97b-4352-8a8b-a4f7-a73c8566dd91"
 version: 2
 ---
 # file

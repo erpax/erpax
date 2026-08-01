@@ -2,32 +2,14 @@
 name: adjustments
 description: "Use when recording the small ±0.01 plug entries that reconcile integer-cents ledger totals to presentation-rounded statements — IAS-1 §51(e) rounding plugs and IAS-21 §39 FX-translation fragments by type (presentation, FX, tax, cash-settlement). The rounding-adjustments GL sub-collection."
 atomPath: "journal/entries/rounding/adjustments"
-coordinate: "journal/entries/rounding/adjustments · 4/weave · 2b47dc13"
-contentUuid: "549ec7a5-b68e-5858-b9b0-2b13e72cf695"
-diamondUuid: "08d5619a-a32e-88d5-b2dd-ae8759adac52"
-uuid: "2b47dc13-c5f4-8bcf-9882-22a8da3977c6"
+coordinate: "journal/entries/rounding/adjustments · 4/weave · dd53fcb6"
+contentUuid: "6a532e7b-9307-51e7-be2e-d98cf6f62e74"
+diamondUuid: "93130d1e-27c6-80a0-a9eb-d8b8047aa3a3"
+uuid: "dd53fcb6-8798-87d4-82cd-b4c67de0343c"
 horo: 4
-bonds:
-  in:
-    - accounting
-    - adjustment
-    - entries
-    - horo
-    - law
-    - proof
-    - standard
-  out:
-    - accounting
-    - adjustment
-    - entries
-    - horo
-    - law
-    - proof
-    - standard
 typography:
   partition: journal
   bondDegree: 41
-  neighbors: []
 standards:
   - "IFRS IAS-1 §51(e) level-of-rounding-disclosure"
   - "IFRS IAS-21 §39 foreign-currency-translation"
@@ -39,32 +21,8 @@ standards:
   - "US-GAAP ASC-205-10-45 presentation-rounding"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - accounting
-    - entries
-    - horo
-    - law
-    - proof
-    - standard
-  matrix:
-    - accounting
-    - adjustment
-    - entries
-    - horo
-    - law
-    - proof
-    - standard
-  backlinks:
-    - accounting
-    - adjustment
-    - entries
-    - horo
-    - law
-    - proof
-    - standard
 signatures:
-  computationUuid: "12f6777d-0bbd-8e7d-9371-2260b7894d3d"
+  computationUuid: "5f2055b6-71ed-8fff-a08d-6545aa63b11b"
   stages:
     - stage: path
       stageUuid: "972c7cc8-3cc4-84e5-a7ce-b01a52be8226"
@@ -75,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "cac927e7-8d30-86d6-93b5-2101530981a5"
     - stage: horo
-      stageUuid: "8df4a91d-7c10-8178-9d8c-4b4ea20b9106"
+      stageUuid: "462f6c65-7c97-860b-bd4c-4e1db7211257"
     - stage: seal
       stageUuid: "b4a22329-868e-8bab-841c-f39ffd20bfa8"
     - stage: uuid
-      stageUuid: "438aa7aa-8455-8c44-9ad6-dc549d3604b3"
+      stageUuid: "0551d54a-f87f-85f3-ae7d-9ba331fcb869"
 version: 2
 ---
 # rounding-adjustments

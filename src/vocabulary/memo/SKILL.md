@@ -1,62 +1,34 @@
 ---
 name: memo
 description: Use when modelling one memo — the singular model of the memos collection (the plural store); a brief internal written note.
-atomPath: vocabulary/memo
-coordinate: memo · 7/descent · fbe7c433
-contentUuid: "f562c202-9088-528e-9cc9-0fd6bb6bba2d"
-diamondUuid: "3a425918-71a6-86d3-bb1c-38b53ef25285"
-uuid: "fbe7c433-cfff-8028-acb3-ba70e9504130"
+atomPath: "vocabulary/memo"
+coordinate: "vocabulary/memo · 7/descent · e63cc837"
+contentUuid: "1f090ab9-4392-5b5e-9faa-7d57ca0c371f"
+diamondUuid: "eb2562e8-fd92-8eba-89f9-567f280ca78f"
+uuid: "e63cc837-e3ac-833d-b29c-3b3f29a67382"
 horo: 7
-bonds:
-  in:
-    - balance
-    - law
-    - memos
-    - message
-  out:
-    - balance
-    - law
-    - memos
-    - message
 typography:
-  partition: memo
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - balance
-    - law
-    - memos
-    - message
-  matrix:
-    - balance
-    - law
-    - memos
-    - message
-  backlinks:
-    - balance
-    - law
-    - memos
-    - message
 signatures:
-  computationUuid: "1edb9033-4948-810c-b4c7-be15fdb82fff"
+  computationUuid: "f066af37-4db0-88a3-baa4-b9008d999d0b"
   stages:
     - stage: path
-      stageUuid: "a9902fc3-8992-89f5-a8bd-279186ff4dd5"
+      stageUuid: "be820310-791f-8491-a0ca-f8ff31a2adcb"
     - stage: trinity
-      stageUuid: "a8fd49bd-3c7c-860b-b9cf-fd2ec81ad450"
+      stageUuid: "2bff1921-9113-8bde-a9e9-66c9b67e96c8"
     - stage: boundary
-      stageUuid: "17d6c582-1ce5-88fc-b485-34f77d708ebd"
+      stageUuid: "3602abd0-2c51-87bf-a054-df7d6162f39d"
     - stage: links
-      stageUuid: "d1f10be3-620a-881f-b9d1-36944d9244c5"
+      stageUuid: "35865540-31a9-874c-aff8-f40d6eda1566"
     - stage: horo
-      stageUuid: "7a5b9482-2996-8328-b9ae-977a13888cd0"
+      stageUuid: "30668bf2-6583-8193-86e9-2ef889fa3c9a"
     - stage: seal
-      stageUuid: "5d3d5fc7-63b0-876f-85c6-cc5230453ca0"
+      stageUuid: "0d46e490-f6bf-8cec-9082-0fc45ce985fc"
     - stage: uuid
-      stageUuid: "7a00d075-11fd-8ed4-9fe8-cf746c237f90"
+      stageUuid: "409d5c69-8d1a-88e4-b864-85ec964822cc"
 version: 2
 ---
 # memo — the model of one [[memos]] row

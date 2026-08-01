@@ -1,73 +1,35 @@
 ---
 name: ad
 description: "Use when reasoning about ad as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/ad
-coordinate: ad · 4/weave · 02bc18d1
-contentUuid: "8eaea153-9c5e-5122-8aa1-288429afc0d2"
-diamondUuid: "007a1cbe-c32f-869f-96e1-96fdd933ae17"
-uuid: "02bc18d1-3cec-8fde-8bcb-bfe612fcb6fd"
-horo: 4
-bonds:
-  in:
-    - block
-    - collapse
-    - law
-    - merge
-    - sti
-    - wp
-  out:
-    - block
-    - collapse
-    - law
-    - merge
-    - sti
-    - wp
+atomPath: "vocabulary/ad"
+coordinate: "vocabulary/ad · 1/base · 52dc3d86"
+contentUuid: "65fdf4b7-63cc-5e5b-866e-ea38e3d5eddb"
+diamondUuid: "3bb5f9e1-058d-8cb3-82ec-1782249e60be"
+uuid: "52dc3d86-2187-8035-8a92-32fc98fd9782"
+horo: 1
 typography:
-  partition: ad
+  partition: vocabulary
   bondDegree: 20
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - block
-    - collapse
-    - law
-    - merge
-    - sti
-    - wp
-  matrix:
-    - block
-    - collapse
-    - law
-    - merge
-    - sti
-    - wp
-  backlinks:
-    - block
-    - collapse
-    - law
-    - merge
-    - sti
-    - wp
 signatures:
-  computationUuid: "e0be2ac3-f212-8d3d-b1c8-3222d84b8647"
+  computationUuid: "e14e014f-fb5f-8ce9-97ce-82fbfa08edb2"
   stages:
     - stage: path
-      stageUuid: "01aabcd2-25f6-8bc8-b8d0-1b795e7e7d43"
+      stageUuid: "81ef09b6-aa4d-88bc-b205-aa1ad27fffbd"
     - stage: trinity
-      stageUuid: "412724c9-2e70-88f6-ae7d-4d80f769f64f"
+      stageUuid: "28a46d1c-2f5c-8bd0-a4d3-c7ae8b090ca7"
     - stage: boundary
-      stageUuid: "42fe37a0-e5b2-8f4b-911b-39e7a2ffaeab"
+      stageUuid: "b6a42e48-a60b-850e-a369-139ad8f98f43"
     - stage: links
-      stageUuid: "e68984ab-f766-848b-a048-d29ce4583c30"
+      stageUuid: "154134d1-cbe5-8541-b70e-607709e33aca"
     - stage: horo
-      stageUuid: "9b726a93-d177-825f-847e-0ec37c950ce6"
+      stageUuid: "ee558ca8-0275-81a5-a75d-db8c00d88444"
     - stage: seal
-      stageUuid: "7bdab308-a95d-8001-bca8-0b4d85c8fbdb"
+      stageUuid: "c1d920e7-21d3-8864-b11e-ce3aadfc915f"
     - stage: uuid
-      stageUuid: "5c7e0bd9-36d3-8498-9861-614a89d9a197"
+      stageUuid: "b2481976-b77d-8fea-bca2-29961bf777c9"
 version: 2
 ---
 # ad

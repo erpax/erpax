@@ -1,73 +1,35 @@
 ---
 name: remaining
 description: "Use when reasoning about remaining as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/remaining
-coordinate: remaining · 5/round · 55434124
-contentUuid: "c5e4db21-6a12-534b-974b-82e9cf799a61"
-diamondUuid: "617bd5a3-bc1a-843f-9000-03769c3d29a4"
-uuid: "55434124-2e5d-8852-a4eb-29c1744b8bac"
-horo: 5
-bonds:
-  in:
-    - attendee
-    - capacity
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - attendee
-    - capacity
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/remaining"
+coordinate: "vocabulary/remaining · 7/descent · be3e42e9"
+contentUuid: "992e7f38-5a26-59ec-b874-5f9fbaee5412"
+diamondUuid: "5506e149-0284-8808-8bab-16b92d5f53f7"
+uuid: "be3e42e9-fbdb-891b-b341-c9e32060d0f1"
+horo: 7
 typography:
-  partition: remaining
+  partition: vocabulary
   bondDegree: 19
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - attendee
-    - capacity
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - attendee
-    - capacity
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - attendee
-    - capacity
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "6b38576d-d7b3-873a-97f9-a0e1899284fa"
+  computationUuid: "6dadcb5f-1bdd-85d1-92e9-5c4b1741c3eb"
   stages:
     - stage: path
-      stageUuid: "819e89b0-d5b5-8768-9c39-8d0b5937d494"
+      stageUuid: "c9fbb57d-41a2-81b6-8fbb-a7ec5d8b9867"
     - stage: trinity
-      stageUuid: "081c7bcc-2409-8901-88eb-47e88beedc84"
+      stageUuid: "f67320ae-8b3d-847d-9a7f-d5e2227ef4d7"
     - stage: boundary
-      stageUuid: "4852eb34-4825-8b32-90ac-6929606669c5"
+      stageUuid: "27962c79-ea12-82aa-81ec-673bd575f8f3"
     - stage: links
-      stageUuid: "b12d9a02-f5c1-8f8a-bc61-b26c9bee40ca"
+      stageUuid: "770d5b12-d4b6-8a1a-9cf0-bb19f466938f"
     - stage: horo
-      stageUuid: "3ee6e742-5424-866f-9d79-3abeb88ecef3"
+      stageUuid: "9c99ed86-f453-8ca7-83a8-425572c413dc"
     - stage: seal
-      stageUuid: "b332ffe5-ef8e-8899-84b0-e09e3713101a"
+      stageUuid: "abd875ab-e29d-8cf3-b634-0b2faeea8e01"
     - stage: uuid
-      stageUuid: "c09305a1-6e92-8fd2-bd06-b80835ba193c"
+      stageUuid: "a174366d-19c5-8750-b437-5c757e874e2b"
 version: 2
 ---
 # remaining

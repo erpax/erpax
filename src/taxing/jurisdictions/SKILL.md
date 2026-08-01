@@ -1,50 +1,28 @@
 ---
 name: jurisdictions
 description: "Use when looking up or seeding read-only reference data for tax authority geographies — country, region, local and supranational levels with ISO-3166 codes, primary currency, languages, regulatory characteristics, banking requirements, filing deadlines and applicable compliance frameworks. The super-admin-maintained jurisdiction reference collection."
-atomPath: taxing/jurisdictions
-coordinate: taxing/jurisdictions · 7/descent · 1d1f8607
-contentUuid: "bc4d6d35-a5ab-5ebd-ac9b-937b2b5ffbd0"
-diamondUuid: "26cc3437-8ba5-8482-a42b-eaf5f4615bb2"
-uuid: "1d1f8607-6f0d-847f-805d-c579923e71e4"
-horo: 7
-bonds:
-  in:
-    - codes
-    - items
-    - returns
-  out:
-    - codes
-    - items
-    - returns
+atomPath: "taxing/jurisdictions"
+coordinate: "taxing/jurisdictions · 2/share · cfa6c3e2"
+contentUuid: "c9c3b111-2fdc-5241-9ea4-0a74a5b7e386"
+diamondUuid: "fb7c7dd0-19bf-8794-b498-b9ac95a41143"
+uuid: "cfa6c3e2-0260-808e-9878-3c57085ada42"
+horo: 2
 typography:
   partition: taxing
   bondDegree: 0
-  neighbors: []
 standards:
-  - EU Directive 2006/112/EC VAT
-  - "EU-2006/43"
+  - "EU Directive 2006/112/EC VAT"
   - "EU-ESRS"
   - "EU-VAT-Directive"
   - "ISO-17442-1"
   - "ISO-3166-1:2020 country-codes"
+  - "ISO-3166-1:2020 country-codes`"
   - "OECD tax-jurisdiction"
   - XBRL
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
-neighbors:
-  wikilink:
-    - standards
-    - structures
-    - templates
-  matrix:
-    - codes
-    - items
-    - returns
-  backlinks:
-    - codes
-    - items
-    - returns
 signatures:
-  computationUuid: "fd705c09-6bba-8442-a034-207426e3cc51"
+  computationUuid: "c02ce8db-fd99-8a81-a749-7ed30a4fdfdb"
   stages:
     - stage: path
       stageUuid: "601de279-fc37-8f90-8b0b-b9c5affca0a3"
@@ -55,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "8f53fcb6-edc0-886f-b8b3-8ad8d821b678"
     - stage: horo
-      stageUuid: "e8dd121c-597d-8aab-8f2d-096776b1d82a"
+      stageUuid: "6283e39a-f449-82fa-94bd-d6a5311efc43"
     - stage: seal
       stageUuid: "43be8a2c-e9e2-893f-8b4a-f5d728781f18"
     - stage: uuid
-      stageUuid: "4b783ec2-ccf2-860d-a9db-e46576049c08"
+      stageUuid: "9b3484d0-061f-86b0-b615-ed65f161c604"
 version: 2
 ---
 # taxing-jurisdictions

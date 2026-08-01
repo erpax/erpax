@@ -2,170 +2,18 @@
 name: education
 description: "Use when managing educational institutions — student enrollment, curriculum delivery, academic assessment, teaching schedules, institutional capacity, or education program outcomes in government/nonprofit schools (COFOG 09)."
 atomPath: education
-coordinate: "education · 7/descent · 4a856c57"
-contentUuid: "93752047-ed7f-5f49-bbe4-6502021bc936"
-diamondUuid: "95b81120-2428-87d5-a7fa-6b48d294c113"
-uuid: "4a856c57-5ea4-8e3b-807e-cc289c2ffce6"
-horo: 7
-bonds:
-  in:
-    - access
-    - accounting
-    - akashic
-    - classroom
-    - close
-    - collections
-    - commerce
-    - competencies
-    - competition
-    - derive
-    - duality
-    - experience
-    - fields
-    - flow
-    - fractal
-    - holographic
-    - hooks
-    - identity
-    - law
-    - logic
-    - merge
-    - open
-    - peace
-    - place
-    - self
-    - sequence
-    - standard
-    - train
-    - training
-    - versions
-  out:
-    - access
-    - accounting
-    - akashic
-    - classroom
-    - close
-    - collections
-    - commerce
-    - competencies
-    - competition
-    - derive
-    - duality
-    - experience
-    - fields
-    - flow
-    - fractal
-    - holographic
-    - hooks
-    - identity
-    - law
-    - logic
-    - merge
-    - open
-    - peace
-    - place
-    - self
-    - sequence
-    - standard
-    - train
-    - training
-    - versions
+coordinate: "education · 4/weave · 40b918f9"
+contentUuid: "51fe5c8d-4061-5980-801d-566f35441917"
+diamondUuid: "1d963b0d-3cb2-85c7-8620-bc1c70613dc4"
+uuid: "40b918f9-afa8-8722-bb17-a4271431daaa"
+horo: 4
 typography:
   partition: education
   bondDegree: 92
-  neighbors: []
 standards: []
 bindings: []
-neighbors:
-  wikilink:
-    - access
-    - accounting
-    - akashic
-    - close
-    - collections
-    - commerce
-    - competition
-    - duality
-    - fields
-    - flow
-    - fractal
-    - holographic
-    - hooks
-    - identity
-    - law
-    - logic
-    - merge
-    - open
-    - peace
-    - self
-    - sequence
-    - standard
-    - train
-    - versions
-  matrix:
-    - access
-    - accounting
-    - akashic
-    - classroom
-    - close
-    - collections
-    - commerce
-    - competencies
-    - competition
-    - derive
-    - duality
-    - experience
-    - fields
-    - flow
-    - fractal
-    - holographic
-    - hooks
-    - identity
-    - law
-    - logic
-    - merge
-    - open
-    - peace
-    - place
-    - self
-    - sequence
-    - standard
-    - train
-    - training
-    - versions
-  backlinks:
-    - access
-    - accounting
-    - akashic
-    - classroom
-    - close
-    - collections
-    - commerce
-    - competencies
-    - competition
-    - derive
-    - duality
-    - experience
-    - fields
-    - flow
-    - fractal
-    - holographic
-    - hooks
-    - identity
-    - law
-    - logic
-    - merge
-    - open
-    - peace
-    - place
-    - self
-    - sequence
-    - standard
-    - train
-    - training
-    - versions
 signatures:
-  computationUuid: "8cb5d315-5a99-89e9-84e3-ee5b3c6ce0c2"
+  computationUuid: "939b7afd-101a-8de6-b217-1738caef076f"
   stages:
     - stage: path
       stageUuid: "d1e9c3fd-f4ef-87b8-aedf-0c42b783dcdf"
@@ -176,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5e54324a-8b78-8f9c-847d-4443e0735b5e"
     - stage: horo
-      stageUuid: "05bfda04-99ee-8959-bfc8-51889462002f"
+      stageUuid: "119735c5-088a-8837-9b0f-98edb0963be7"
     - stage: seal
       stageUuid: "67642445-2300-847c-9b04-8881ba880938"
     - stage: uuid
-      stageUuid: "159dc590-a861-8916-9dde-3fb32f063ddd"
+      stageUuid: "edb36165-cc28-8acc-8b91-e03914045ac4"
 version: 2
 ---
 # education — the learning-delivery sector (COFOG 09)

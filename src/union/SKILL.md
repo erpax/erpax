@@ -2,62 +2,19 @@
 name: union
 description: "Use when reasoning about union as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: union
-coordinate: union · 5/round · f4bf0629
-contentUuid: "b95533ef-7e6d-5f63-a32a-532e31791558"
-diamondUuid: "130d20fc-bd6c-8434-aa21-78cff75d7496"
-uuid: "f4bf0629-b417-8571-8c75-73ea81085f9c"
-horo: 5
-bonds:
-  in:
-    - bank
-    - collapse
-    - credit
-    - law
-    - merge
-    - sti
-    - workers
-  out:
-    - bank
-    - collapse
-    - credit
-    - law
-    - merge
-    - sti
-    - workers
+coordinate: "union · 7/descent · 963ddafc"
+contentUuid: "0f80e719-ab07-53f4-9870-0709087178ba"
+diamondUuid: "e774c0ea-6536-8d39-aa6c-76705073bfbf"
+uuid: "963ddafc-4674-899b-afed-95b1bc2897a4"
+horo: 7
 typography:
   partition: union
   bondDegree: 23
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - bank
-    - collapse
-    - credit
-    - law
-    - merge
-    - sti
-    - workers
-  matrix:
-    - bank
-    - collapse
-    - credit
-    - law
-    - merge
-    - sti
-    - workers
-  backlinks:
-    - bank
-    - collapse
-    - credit
-    - law
-    - merge
-    - sti
-    - workers
 signatures:
-  computationUuid: "d14a1c5a-e7e1-8a9e-a2ce-58a291d03cdf"
+  computationUuid: "ec2002f4-09ec-8744-b5a0-1b05a3bbaa03"
   stages:
     - stage: path
       stageUuid: "af3d313d-08e0-87ee-8117-0081eb2197ec"
@@ -68,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8868d785-53fb-8366-ad73-a78c1d6eeebc"
     - stage: horo
-      stageUuid: "4da2f93a-f565-8539-9b93-4d6c62d65059"
+      stageUuid: "6060ff59-4255-8161-8cb8-df63bccc1fc0"
     - stage: seal
-      stageUuid: "bde14b84-d841-834e-b93e-9e1136f26bcf"
+      stageUuid: "51fb41ea-0668-8e3d-9acb-bcca9252950e"
     - stage: uuid
-      stageUuid: "cfd50657-493d-8752-a377-23bb57745334"
+      stageUuid: "29b70248-fe68-804c-83a2-feaaeac9477d"
 version: 2
 ---
 # union

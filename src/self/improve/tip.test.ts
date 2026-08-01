@@ -110,7 +110,7 @@ describe('self/improve/tip — scored feed-scanner', () => {
     })
     const boot = audit.gaps.find((g) => g.kind === 'admin-boot')
     expect(boot).toBeTruthy()
-    expect(boot!.file).toBe('src/quantum/ftl/admin.ts')
+    expect(boot!.file).toBe('src/quantum/ftl/admin/index.ts')
     expect(boot!.factors.cost).toBe(2) // profile-cheap — not a full SSR rewrite
     expect(boot!.prose).toMatch(/TTFB/)
     expect(boot!.prose).toMatch(/chunk shaving low ROI|client stubs/)
@@ -153,21 +153,21 @@ describe('self/improve/tip — scored feed-scanner', () => {
     expect(tip.continuation.stoppedExternally).toBe(true)
   })
 
-  it('physicalFtl true omits quantumise tip', () => {
-    const audit = auditSelfDevGaps({ ...quiet, mathCount: 0, purifyHits: 0, physicalFtl: true })
-    expect(audit.physicalFtl).toBe(true)
+  it('ftlHolds true omits quantumise tip', () => {
+    const audit = auditSelfDevGaps({ ...quiet, mathCount: 0, purifyHits: 0, ftlHolds: true })
+    expect(audit.ftlHolds).toBe(true)
     expect(audit.gaps.some((g) => g.kind === 'quantumise')).toBe(false)
   })
 
-  it('physicalFtl false emits precise quantumise tip', () => {
+  it('ftlHolds false emits precise quantumise tip', () => {
     const audit = auditSelfDevGaps({
       ...quiet,
       mathCount: 0,
       purifyHits: 3,
-      physicalFtl: false,
-      physicalFtlWhy: 'spacetime@fixture: spacetime under reuse',
+      ftlHolds: false,
+      ftlWhy: 'spacetime@fixture: spacetime under reuse',
     })
-    expect(audit.physicalFtl).toBe(false)
+    expect(audit.ftlHolds).toBe(false)
     expect(audit.gaps.some((g) => g.kind === 'purify')).toBe(false) // prose-only downgraded
     const q = audit.gaps.find((g) => g.kind === 'quantumise')
     expect(q).toBeTruthy()
@@ -176,13 +176,13 @@ describe('self/improve/tip — scored feed-scanner', () => {
       ...quiet,
       mathCount: 0,
       purifyHits: 0,
-      physicalFtl: false,
-      physicalFtlWhy: 'spacetime@fixture: spacetime under reuse',
+      ftlHolds: false,
+      ftlWhy: 'spacetime@fixture: spacetime under reuse',
     })
     expect(tip.accepted).toBe(true)
     expect(tip.gap.kind).toBe('quantumise')
-    expect(tip.code).toMatch(/physicalFtlReport|quantum\/ftl/)
-    expect(tip.proof).toMatch(/physicalFtl\(\)\s*===\s*true/)
+    expect(tip.code).toMatch(/ftlReport|quantum\/ftl/)
+    expect(tip.proof).toMatch(/ftlReport\(\).holds\s*===\s*true/)
     expect(isPreciseTip(tip).ok).toBe(true)
   })
 })

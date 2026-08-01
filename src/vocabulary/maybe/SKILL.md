@@ -1,63 +1,35 @@
 ---
 name: maybe
 description: "Use when reasoning about maybe as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/maybe
-coordinate: maybe · 4/weave · a64da8ca
-contentUuid: "d0abef0a-7249-5727-9166-c5d605354599"
-diamondUuid: "24d91ab1-3ab9-8d47-9cb6-3b2592437e02"
-uuid: "a64da8ca-c494-8adb-b4b2-bf8a2e16d419"
+atomPath: "vocabulary/maybe"
+coordinate: "vocabulary/maybe · 4/weave · 4b5ec765"
+contentUuid: "d295297c-458b-57d1-ada9-92338244f271"
+diamondUuid: "60ba1262-cbf1-8030-8b9a-e9a330a69e8d"
+uuid: "4b5ec765-45f4-86d7-b132-cabaa18f9be3"
 horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: maybe
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "5992ac49-2480-84f4-87cb-3037ec9c795a"
+  computationUuid: "a97fb8e7-9211-8b52-ab58-54938c42a4d3"
   stages:
     - stage: path
-      stageUuid: "bac8433e-697f-8852-975a-24de2f1ce01d"
+      stageUuid: "283ad7de-a231-8071-824f-3af188aed68a"
     - stage: trinity
-      stageUuid: "36c81663-1ec6-8c83-9586-b1abdaf02d77"
+      stageUuid: "66dfb346-8e94-880f-818e-c83cbc70f284"
     - stage: boundary
-      stageUuid: "e9da624a-6e58-886b-b3f8-573fe6281569"
+      stageUuid: "9d4e2507-59bf-87b7-8ed8-7f75e1bdadf8"
     - stage: links
-      stageUuid: "022dbafa-cf35-8806-8535-dc1c7e7844a2"
+      stageUuid: "e4c2e244-6a78-8927-beef-cb30cd051d32"
     - stage: horo
-      stageUuid: "1a1d881c-b482-8ce4-831c-69a9295cc9de"
+      stageUuid: "f54337a5-3dda-84af-847b-8d3ad93b7505"
     - stage: seal
-      stageUuid: "c34804b5-455a-814b-900e-4d8e2c995c0b"
+      stageUuid: "b7541a09-d441-8ab2-a8f9-0f16a1048524"
     - stage: uuid
-      stageUuid: "e8e078df-7a4f-81b0-ba59-f201a96eb663"
+      stageUuid: "93f059e2-59b5-8b8f-99c8-0ecbcaeaeb15"
 version: 2
 ---
 # maybe

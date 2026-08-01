@@ -1,63 +1,35 @@
 ---
 name: en13402
 description: "Use when reasoning about en13402 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/en13402
-coordinate: en13402 · 7/descent · 53d70615
-contentUuid: "7241883f-a7b1-5455-91c6-832ffd0a598b"
-diamondUuid: "bf224def-7cac-876c-b694-cd6550023201"
-uuid: "53d70615-824b-830e-b2d2-2a20c9a85c8c"
+atomPath: "vocabulary/en13402"
+coordinate: "vocabulary/en13402 · 7/descent · b8caff55"
+contentUuid: "be39fd4d-acbf-5251-9b3a-b0f03e544c4e"
+diamondUuid: "bdf3ad2d-11c1-8ac4-aa15-73a83be00f82"
+uuid: "b8caff55-e974-82a9-920e-93d34f87cc7c"
 horo: 7
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
 typography:
-  partition: en13402
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "45892b37-bf4b-81af-b73d-5e19ea550b9c"
+  computationUuid: "c5e66c14-15d8-85fd-a9f8-f933f9e18573"
   stages:
     - stage: path
-      stageUuid: "94cb7c53-a92d-84ae-a0a4-cbef9f4cf881"
+      stageUuid: "7eeceb89-c598-8072-9010-a0c9f5d80dd3"
     - stage: trinity
-      stageUuid: "e4a8406c-4fa5-8a94-8a2a-f77f823c92c1"
+      stageUuid: "6f483e8f-5eb1-883a-82a4-bd4b9aa05fcf"
     - stage: boundary
-      stageUuid: "e218b35a-0271-8c7e-80a9-e7d2130b518a"
+      stageUuid: "62464b64-a6d5-87b5-b203-2cf71a156d34"
     - stage: links
-      stageUuid: "661e3508-f561-8381-8d90-803c7ebb57fb"
+      stageUuid: "720aaa0a-c7ae-8663-994d-bb8d1a6a7263"
     - stage: horo
-      stageUuid: "2cf27937-84aa-8b79-9261-8f1437c9353e"
+      stageUuid: "7fbee816-bb8a-8fa4-bd5d-32b4843dc7ed"
     - stage: seal
-      stageUuid: "a51cb4b2-8fec-8987-a999-159108369e2e"
+      stageUuid: "4e3b1d12-ab6f-866e-bcae-69fd75ec7f06"
     - stage: uuid
-      stageUuid: "c4e4ddec-b1a3-85ff-8751-2e3384936d84"
+      stageUuid: "407c014d-519d-8afd-b23d-6df5c30099b3"
 version: 2
 ---
 # en13402

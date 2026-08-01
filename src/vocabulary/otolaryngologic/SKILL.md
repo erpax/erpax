@@ -1,63 +1,35 @@
 ---
 name: otolaryngologic
 description: "Use when reasoning about otolaryngologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/otolaryngologic
-coordinate: otolaryngologic · 5/round · d3e52c39
-contentUuid: "0fefb9c6-f006-5d00-886f-e2409f3d08dc"
-diamondUuid: "b1bd76b3-0b3d-89de-88bf-334530b67599"
-uuid: "d3e52c39-2284-87ae-8253-7c4f6b70738d"
-horo: 5
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/otolaryngologic"
+coordinate: "vocabulary/otolaryngologic · 7/descent · 4e8010e3"
+contentUuid: "4504818f-73a9-5db9-b98b-43733d6231fb"
+diamondUuid: "bea65965-ff9e-8747-909b-71e8102b4cec"
+uuid: "4e8010e3-8563-8c95-a72f-d445bd53b5e4"
+horo: 7
 typography:
-  partition: otolaryngologic
+  partition: vocabulary
   bondDegree: 12
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "aef4501f-3ef1-861e-a988-9770129293df"
+  computationUuid: "690a926f-1305-8c32-839b-cdf2c34cd56e"
   stages:
     - stage: path
-      stageUuid: "b41aac95-dc18-8419-ab34-c3e16e601794"
+      stageUuid: "18806b8f-6cac-860c-89f3-4d52e536eaa1"
     - stage: trinity
-      stageUuid: "92fa6819-da55-82dc-8d63-386ceeee01d5"
+      stageUuid: "d73c7a16-5485-8bd2-985a-856ea92d0f81"
     - stage: boundary
-      stageUuid: "d9ec0603-a438-8fb9-9213-337dd5f8c8d7"
+      stageUuid: "22645bde-15bd-8966-b6f6-2c53f123db3a"
     - stage: links
-      stageUuid: "0a55c59d-af3a-8610-9ea9-c36f0543496b"
+      stageUuid: "c155aff5-70a1-8b96-8271-0b03c213fa92"
     - stage: horo
-      stageUuid: "8570f60a-5784-84d9-859c-8708521239df"
+      stageUuid: "8db8b2f9-7242-856f-8ab9-2e62ee75e395"
     - stage: seal
-      stageUuid: "8600e69f-1c42-847e-a2ec-295bd5eab5d8"
+      stageUuid: "082d9923-5589-8453-a162-8c3a9af2c756"
     - stage: uuid
-      stageUuid: "9e7b84c7-2cca-8a29-9615-f53f6bfebe1a"
+      stageUuid: "23a58bb1-c3b8-8031-9250-7bd07060ea4d"
 version: 2
 ---
 # otolaryngologic

@@ -1,57 +1,35 @@
 ---
 name: drains
 description: Use when reasoning about drains — The vasculature that the vein drains into.
-atomPath: vocabulary/drains
-coordinate: drains · 5/round · 4027d63f
-contentUuid: "bd4e0da8-15c6-5d2a-b71a-ed96a71249db"
-diamondUuid: "48f20402-bc5b-8baf-a0a3-9e8806717af9"
-uuid: "4027d63f-5695-8561-9733-ae063ad8bd9d"
+atomPath: "vocabulary/drains"
+coordinate: "vocabulary/drains · 5/round · c67dc585"
+contentUuid: "059b2e40-b484-5e29-98ee-386ff7798def"
+diamondUuid: "bfa349b1-3ecc-8438-899b-57113c6360a4"
+uuid: "c67dc585-3e65-8f5e-9c46-7e067cb25525"
 horo: 5
-bonds:
-  in:
-    - drain
-    - law
-    - thing
-  out:
-    - drain
-    - law
-    - thing
 typography:
-  partition: drains
+  partition: vocabulary
   bondDegree: 9
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - drain
-    - law
-    - thing
-  backlinks:
-    - drain
-    - law
-    - thing
 signatures:
-  computationUuid: "10a5bf8a-e6fb-8c1b-a69f-236d6967b55a"
+  computationUuid: "6e3acc82-6035-8214-8ba0-4e1dd1641a3e"
   stages:
     - stage: path
-      stageUuid: "64bd6d1d-1361-8a3a-a756-683c02d2d6e8"
+      stageUuid: "511e0887-a032-8453-869f-7e64210bda13"
     - stage: trinity
-      stageUuid: "d9d4ec1f-514e-8dc4-87eb-aa23fdfb12fe"
+      stageUuid: "17dcf8b2-c8fb-8eab-bf71-b5b0e26d1569"
     - stage: boundary
-      stageUuid: "a9d5f948-7c6f-8ffa-b4a4-2fbc55e14b6c"
+      stageUuid: "c1ae289e-9faf-8adf-891d-dea8d42c8529"
     - stage: links
-      stageUuid: "a8833ac5-3677-8f4e-acb5-ce49ebf903c4"
+      stageUuid: "6cb94a8e-e2e7-8686-9961-239cf9686fa3"
     - stage: horo
-      stageUuid: "15453135-9f2d-8bd5-a1f8-68f8be6e6b43"
+      stageUuid: "406c3c24-a16b-8567-b6d6-1cadc9e41ac5"
     - stage: seal
-      stageUuid: "3135f605-dde7-8009-bd6a-b22fa36d8bc8"
+      stageUuid: "e391ccc6-a120-8c0b-bc6a-ce74accbbac8"
     - stage: uuid
-      stageUuid: "cc55d998-d992-8ca7-9588-cdd0cb079633"
+      stageUuid: "5b0f15de-baae-85b7-8cee-3cd1ef952c5e"
 version: 2
 ---
 # drains

@@ -1,68 +1,35 @@
 ---
 name: browser
 description: "Use when reasoning about browser as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/browser
-coordinate: browser · 4/weave · 6ad89fae
-contentUuid: "ea55577f-5a4d-58a0-9b7c-e4426232b8f7"
-diamondUuid: "edd97fdc-2fe6-8ce9-aec5-c6397edc01ea"
-uuid: "6ad89fae-c0ab-814d-847b-63c165d9fc97"
-horo: 4
-bonds:
-  in:
-    - collapse
-    - law
-    - merge
-    - requirements
-    - sti
-  out:
-    - collapse
-    - law
-    - merge
-    - requirements
-    - sti
+atomPath: "vocabulary/browser"
+coordinate: "vocabulary/browser · 7/descent · 588e2c51"
+contentUuid: "303e9c63-2f57-5538-9ac9-84ec45be23c0"
+diamondUuid: "3e72689f-f2c5-8dea-8860-2d5dec369ebb"
+uuid: "588e2c51-169b-8832-855d-1eb5f6912880"
+horo: 7
 typography:
-  partition: browser
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - collapse
-    - law
-    - merge
-    - requirements
-    - sti
-  matrix:
-    - collapse
-    - law
-    - merge
-    - requirements
-    - sti
-  backlinks:
-    - collapse
-    - law
-    - merge
-    - requirements
-    - sti
 signatures:
-  computationUuid: "6f498122-a169-8aa0-959b-37f00798e856"
+  computationUuid: "dc67dba6-b344-81aa-a192-d1efbc006cbc"
   stages:
     - stage: path
-      stageUuid: "6bbe27fb-a003-8d5b-b6ac-2f5bbb86d700"
+      stageUuid: "538b9d1a-f232-8e06-b120-64e24ad29550"
     - stage: trinity
-      stageUuid: "9b796034-2f22-80bd-97c6-bb50c5442f0c"
+      stageUuid: "46c9e1fd-c866-8c89-b9a5-0e7264962dc8"
     - stage: boundary
-      stageUuid: "b0f7fc96-7a6a-82dd-9e9b-2dcd3b47e4ad"
+      stageUuid: "d1982eb5-d57d-87a0-b2b7-b3908f2123a0"
     - stage: links
-      stageUuid: "094d4589-aa01-84a9-99d1-0c9be98e57a0"
+      stageUuid: "a61b386f-4b36-8625-9790-757843ab383e"
     - stage: horo
-      stageUuid: "fc37401f-9786-8335-9820-497571b33fe5"
+      stageUuid: "56116310-10cc-8455-b7dc-4cde23a9fbb2"
     - stage: seal
-      stageUuid: "aca23d65-a273-8e58-8df2-5db84f1d2c92"
+      stageUuid: "5406dee9-be10-89d7-be8a-5d0b77a158e1"
     - stage: uuid
-      stageUuid: "26e4f669-a308-8d35-be5e-e8db83402789"
+      stageUuid: "92023d26-4866-8495-892a-e7e71fcab82c"
 version: 2
 ---
 # browser

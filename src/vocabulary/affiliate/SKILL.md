@@ -1,68 +1,35 @@
 ---
 name: affiliate
 description: "Use when reasoning about affiliate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
-atomPath: vocabulary/affiliate
-coordinate: affiliate · 5/round · f0a06699
-contentUuid: "a958d88c-6d7c-57f8-b4dc-2f73113e4f0b"
-diamondUuid: "cb38ba12-988e-8d73-ab30-aed0625b52a7"
-uuid: "f0a06699-e938-89e6-a794-9b2177aaad8d"
-horo: 5
-bonds:
-  in:
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - sti
-  out:
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - sti
+atomPath: "vocabulary/affiliate"
+coordinate: "vocabulary/affiliate · 2/share · 5ef66e9e"
+contentUuid: "2fd830b8-4f59-5842-a4c5-718f05ad559b"
+diamondUuid: "42204a5a-63da-86e0-bce8-bb36bc559da4"
+uuid: "5ef66e9e-1f67-8e9d-a511-063a2ef73110"
+horo: 2
 typography:
-  partition: affiliate
+  partition: vocabulary
   bondDegree: 16
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - sti
-  matrix:
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - sti
-  backlinks:
-    - broadcast
-    - collapse
-    - law
-    - merge
-    - sti
 signatures:
-  computationUuid: "9eb995f6-5177-8d32-8fb1-e94c5a11cdd4"
+  computationUuid: "fc22ba23-fdd6-8068-9593-10aa124581e2"
   stages:
     - stage: path
-      stageUuid: "c6318f58-3a30-86ef-87d7-e4dec2058210"
+      stageUuid: "5e167968-0eea-8fe5-b88f-dc0b2b0227c7"
     - stage: trinity
-      stageUuid: "ad0a9395-6d45-8a4b-a49a-f5269a84d206"
+      stageUuid: "8b9e66b7-f8d0-8b6f-8de9-6c1dc305a9b8"
     - stage: boundary
-      stageUuid: "24d673c6-a1f1-8e10-8c63-3c6efa1c9de6"
+      stageUuid: "2832bc47-f3ad-82bc-8e56-624080ea4191"
     - stage: links
-      stageUuid: "34f593f3-0d8d-801a-8d49-e2c1f7b5d96b"
+      stageUuid: "b12a6d77-3438-89f5-bc3e-d28e9151f921"
     - stage: horo
-      stageUuid: "fa7e13ad-d0a8-8c98-af11-a89adb8d797f"
+      stageUuid: "f9c1256b-78d7-81d7-a8cb-001d0ae26598"
     - stage: seal
-      stageUuid: "6b2bc94e-ceb7-80a6-a120-82b847e7cd27"
+      stageUuid: "f5dad730-ea0e-8228-8bc2-681b0c7f8d7d"
     - stage: uuid
-      stageUuid: "e0b3d112-e8bc-85b2-afce-fe85cb36cc62"
+      stageUuid: "daeee2cc-5ba9-8cdc-97b3-3b53adce6c2d"
 version: 2
 ---
 # affiliate

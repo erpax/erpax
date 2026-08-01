@@ -1,63 +1,35 @@
 ---
 name: based
 description: Use when reasoning about based — A resource from which this work is derived or from which it is a modification or adaptation.
-atomPath: vocabulary/based
-coordinate: based · 7/descent · ce07dc93
-contentUuid: "f7a1dcdf-765b-58a7-b5e6-7c17b7821b4b"
-diamondUuid: "b3e1a9f9-5935-8b2c-a7af-427bf2994e3b"
-uuid: "ce07dc93-23ac-87e6-b6e1-b82e15e82795"
-horo: 7
-bonds:
-  in:
-    - law
-    - program
-    - url
-    - work
-  out:
-    - law
-    - program
-    - url
-    - work
+atomPath: "vocabulary/based"
+coordinate: "vocabulary/based · 2/share · 16bddf4e"
+contentUuid: "561a3237-bc84-5bdc-abeb-0e63b1a2bd9c"
+diamondUuid: "ee79df0c-a775-8e55-9587-3d40c17282fe"
+uuid: "16bddf4e-d96a-8982-b609-f830195e5364"
+horo: 2
 typography:
-  partition: based
+  partition: vocabulary
   bondDegree: 15
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - program
-    - url
-    - work
-  matrix:
-    - law
-    - program
-    - url
-    - work
-  backlinks:
-    - law
-    - program
-    - url
-    - work
 signatures:
-  computationUuid: "249fc979-199e-8286-9246-6e26527fe127"
+  computationUuid: "e5ae442a-60b3-8dd2-97af-8a18a56d7db8"
   stages:
     - stage: path
-      stageUuid: "10896634-93b8-8cfc-b89c-c0c23cfecc92"
+      stageUuid: "dd39b065-345c-8616-b960-101a13589ba7"
     - stage: trinity
-      stageUuid: "2f9558e0-7ebf-8990-9278-d1bcbbe60239"
+      stageUuid: "15315a1a-0320-8501-8928-ee2d112d42d3"
     - stage: boundary
-      stageUuid: "d35c4185-06b5-85cf-926b-8684e55a2231"
+      stageUuid: "0eeffe5d-c0d7-8fa9-8efa-10eebe3cd1f8"
     - stage: links
-      stageUuid: "d106d804-39ec-821c-8473-2a045395e920"
+      stageUuid: "d6c6ab88-997e-8a07-a8b3-b46c5d3f4edd"
     - stage: horo
-      stageUuid: "4732cb94-dedd-8111-ae26-7922ff8a18e1"
+      stageUuid: "2823fd51-46a5-8d9b-bc1c-afae8270977f"
     - stage: seal
-      stageUuid: "ae25a830-ef07-879d-9462-c2018d0e0267"
+      stageUuid: "ce18a9fc-ad11-8623-8312-7accb08d1ce8"
     - stage: uuid
-      stageUuid: "8e6c2e46-836f-8a79-a86c-b080696bc281"
+      stageUuid: "ee751555-d599-8949-95b9-ca10b737a79b"
 version: 2
 ---
 # based

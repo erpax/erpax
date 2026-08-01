@@ -1,53 +1,35 @@
 ---
 name: carrier
 description: "Use when reasoning about carrier — 'carrier' is an out-dated term indicating the 'provider' for parcel delivery and flights."
-atomPath: vocabulary/carrier
-coordinate: carrier · 8/crest · 3f9aa7ef
-contentUuid: "e45a4f05-566d-5841-8a12-e51d97730270"
-diamondUuid: "d50d5bde-b016-822e-86b2-f7c5c2b11bb3"
-uuid: "3f9aa7ef-25d8-8d28-8a66-1acf41e5ba2d"
-horo: 8
-bonds:
-  in:
-    - law
-    - requirements
-  out:
-    - law
-    - requirements
+atomPath: "vocabulary/carrier"
+coordinate: "vocabulary/carrier · 4/weave · c4eb8b9f"
+contentUuid: "fdb2097b-ddc6-536e-ab75-61036b08d850"
+diamondUuid: "8d9e0640-1165-80cd-98de-12c9597fa749"
+uuid: "c4eb8b9f-73ae-8f73-b07f-3a8cd812ea19"
+horo: 4
 typography:
-  partition: carrier
+  partition: vocabulary
   bondDegree: 6
-  neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
-neighbors:
-  wikilink:
-    - law
-    - requirements
-  matrix:
-    - law
-    - requirements
-  backlinks:
-    - law
-    - requirements
 signatures:
-  computationUuid: "086061fc-6dc6-855d-b666-20a2d0feefb4"
+  computationUuid: "57111f15-ab9d-8726-9380-d4fa0d295961"
   stages:
     - stage: path
-      stageUuid: "29673881-127a-8be4-a416-15a0fc82ef3d"
+      stageUuid: "5f68fe70-0292-8461-9caa-3bac6a97fbd0"
     - stage: trinity
-      stageUuid: "017322b5-e3b4-8a8b-8348-59fd14efc760"
+      stageUuid: "f0d2751c-7fe7-8dac-903c-24783e77b8ad"
     - stage: boundary
-      stageUuid: "07df24ed-6273-8411-8445-a021fa21d2e4"
+      stageUuid: "bdcef94c-d542-8775-ae39-a7be06c471e8"
     - stage: links
-      stageUuid: "a0a92a72-f5b2-82f6-9a33-1a03547eabcf"
+      stageUuid: "0b76a5a1-aea0-8439-8565-5aedb0bfb28e"
     - stage: horo
-      stageUuid: "35ab77af-334c-8cb7-af11-5d5bf5b2bfa9"
+      stageUuid: "0a851946-3999-8dd4-8681-14c397e1a284"
     - stage: seal
-      stageUuid: "06e85b93-ba51-8c93-bf7c-58f41fd304f6"
+      stageUuid: "90e2ff7d-e69a-8b84-a4eb-4297b8abf7df"
     - stage: uuid
-      stageUuid: "59df12ea-5c3e-8577-ad64-e9075e89409c"
+      stageUuid: "5c86a53e-0e60-8eda-9213-3020eed1819f"
 version: 2
 ---
 # carrier
