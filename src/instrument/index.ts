@@ -112,6 +112,14 @@ export const INSTRUMENTS: readonly Instrument[] = [
     paid: true,
   },
   {
+    question: 'did this generated proof prove anything?',
+    wrong: 'the ledger score, or the generator’s own docstring',
+    failure: 'the leftover generator emitted `toMatch(/\\bexport\\b/)` plus a sigil-class check — true of nearly every module — under a docstring reading "not an empty gaming test". It settled the ledger and re-ranked the next-step engine away, having proved nothing',
+    right: 'read the assertions, and ask what deleting the claim would do',
+    because: 'a test that cannot fail for the RIGHT reason is decoration; the metric moving is not evidence that the corpus improved',
+    paid: true,
+  },
+  {
     question: 'is this ratchet ceiling too loose?',
     wrong: 'compare the ceiling to the live violation count',
     failure: 'the gap IS the design — mathCeiling scales live by the axis horo digit, so a ceiling 10× live is the formula, not slack. Three plan items were written against this misreading',

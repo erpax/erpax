@@ -303,6 +303,34 @@ export function deriveLeftoverProof(
       exportCheck = 'expect(src.length).toBeGreaterThan(0)'
     }
     if (!exportCheck) return null
+
+    // Assert each SPECIFIC claim this file makes, never the generic sigil class.
+    //
+    // The generator used to emit `expect(src).toMatch(/@(?:invariant|standard|compliance|audit)/)`
+    // beside `expect(src).toMatch(/\bexport\b/)` — two checks that pass for essentially every
+    // module in the corpus. That settles the leftover ledger, drops the tip score, and re-ranks the
+    // next-step engine away from the file, WHILE PROVING NOTHING. `src/card/index.tsx` claims WCAG
+    // 2.4.4 link-purpose and 2.5.5 target-size; the generated proof showed only that the file
+    // contains the word "export". The docstring it shipped with said "not an empty gaming test",
+    // which is prose the code did not support ([[rules]]/prose, committed by the generator itself).
+    //
+    // Naming each banner makes the credit refutable per claim: deleting WCAG 2.5.5 now fails, where
+    // before any one banner could go as long as one of the four sigils survived anywhere in the file.
+    const claims = [...new Set([...text.matchAll(/@(?:invariant|standard|compliance|audit|rfc)\s+([^\n*]{3,60}?)\s*$/gmu)].map((m) => m[1]!.trim()))]
+    const claimChecks =
+      claims.length > 0
+        ? claims
+            .slice(0, 8)
+            .map((c) => `expect(src).toContain(${JSON.stringify(c)})`)
+            .join('\n    ')
+        : ''
+    // REFUSE rather than emit a tautology. When the only export evidence is the bare `export`
+    // keyword and the file names no specific claim, there is nothing here a test can honestly
+    // credit — and an unsettled leftover that stays visible is worth more than a green one that
+    // proved nothing. `--force` is still available for a human who knows better.
+    const tautology = exportCheck === 'expect(src).toMatch(/\\bexport\\b/)' || exportCheck === 'expect(src.length).toBeGreaterThan(0)'
+    if (!opts.force && tautology && claimChecks === '') return null
+
     body = `
   it('source still exports/binds its claimed surface and claim markers (refutable — deleting them fails)', async () => {
     const { readFileSync } = await import('node:fs')
@@ -312,7 +340,7 @@ export function deriveLeftoverProof(
     const src = readFileSync(join(dir, '${claimFile}'), 'utf8')
     ${exportCheck}
     ${hasMetadata ? 'expect(src).toMatch(/\\bexport\\s+const\\s+metadata\\b/)' : ''}
-    expect(src).toMatch(/@(?:invariant|standard|compliance|audit)\\b/)
+    ${claimChecks}
   })`
   } else if (hasGET) {
     body = `

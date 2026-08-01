@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { leftovers, attraction, seedFloor, powerNextResearch, leftoverSites, waves } from './index'
+import { deriveLeftoverProof, leftovers, attraction, seedFloor, powerNextResearch, leftoverSites, waves } from './index'
 import { ceiling } from '@/think'
 
 // A hermetic corpus: files under src/, each with @invariant claims; a test.ts beside a file settles it (proven,
@@ -191,5 +191,43 @@ describe('chatHealLeftoverWave — settle a field without hand-written tests', (
     expect(exists(join(cwd, 'src/tenant/roles/profile/test.ts'))).toBe(true)
     expect(read(join(cwd, 'src/tenant/roles/profile/test.ts'), 'utf8')).toMatch(/leftover wave proof/)
     rmSync(cwd, { recursive: true, force: true })
+  })
+})
+
+describe('leftover — a derived proof must credit a CLAIM, not the alphabet', () => {
+  const cwd = process.cwd()
+
+  it('asserts each SPECIFIC claim the file makes, never the generic sigil class', () => {
+    const card = leftovers(cwd).filter((l) => l.group === 'card')
+    if (card.length === 0) return // the leftover has been settled since — nothing to assert about
+    const op = deriveLeftoverProof(card[0]!.bit, cwd)!
+    // src/card claims WCAG 2.4.4 and 2.5.5. Before this, the credit asserted only that ONE of
+    // four sigils appeared somewhere in the file — so deleting 2.5.5 kept the test green while
+    // removing the claim it existed to protect.
+    expect(op.contents).toContain('WCAG-2.1 §2.5.5 target-size')
+    expect(op.contents).toContain('WCAG-2.1 §2.4.4 link-purpose-in-context')
+    // the generic alternation must be gone — it passes for essentially every module in the corpus
+    expect(op.contents).not.toMatch(/@\(\?:invariant\|standard\|compliance\|audit\)/)
+  })
+
+  it('REFUSES to emit when the only evidence would be a tautology', () => {
+    // `expect(src).toMatch(/\bexport\b/)` plus a sigil-class check settles the ledger, drops the
+    // tip score, and re-ranks the next-step engine away from the file — while proving nothing.
+    // An unsettled leftover that stays VISIBLE is worth more than a green one that proved nothing.
+    const emitted = leftovers(cwd).filter((l) => deriveLeftoverProof(l.bit, cwd) !== null)
+    const refused = leftovers(cwd).filter((l) => deriveLeftoverProof(l.bit, cwd) === null)
+    expect(refused.length).toBeGreaterThan(0)
+    expect(emitted.length + refused.length).toBe(leftovers(cwd).length)
+    // every emitted proof now names at least one concrete claim or a real export shape
+    for (const l of emitted) {
+      const op = deriveLeftoverProof(l.bit, cwd)!
+      expect(op.contents).not.toMatch(/expect\(src\.length\)\.toBeGreaterThan\(0\)\s*\n\s*\}\)/)
+    }
+  })
+
+  it('--force still lets a human override the refusal', () => {
+    const refused = leftovers(cwd).find((l) => deriveLeftoverProof(l.bit, cwd) === null)
+    if (!refused) return
+    expect(deriveLeftoverProof(refused.bit, cwd, { force: true })).not.toBeNull()
   })
 })
