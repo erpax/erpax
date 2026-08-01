@@ -1,12 +1,12 @@
 ---
 name: polarity
 description: "Use when reasoning about the two directions of the rodin doubling cycle — 3 and 6 are the polarity boundaries: forward helix (×2, cyan, outbound/give) ↔ reverse helix (×5, magenta, inbound/take). The mirror pair the coil winds between. Nested under rodin."
-atomPath: rodin/polarity
-coordinate: rodin/polarity · 2/share · ada85c26
-contentUuid: "71902487-1ce9-5e62-ae98-3cbb4aaf4bd1"
-diamondUuid: "ff0669c0-3239-89f4-9368-0d90cb819070"
-uuid: "ada85c26-adcc-8208-90a5-6d79ca2685b3"
-horo: 2
+atomPath: "rodin/polarity"
+coordinate: "rodin/polarity · 4/weave · dab45768"
+contentUuid: "cb1ac35f-f01b-51f9-ad95-b62e5e5ae0ba"
+diamondUuid: "e7576f90-4590-89da-b95f-4c60bd7afc7e"
+uuid: "dab45768-5d0a-8b27-b2a3-c59eb7484ae7"
+horo: 4
 bonds:
   in:
     - axis
@@ -17,7 +17,6 @@ bonds:
     - decompression
     - duality
     - give
-    - horo
     - rodin
     - signal
     - take
@@ -30,13 +29,12 @@ bonds:
     - decompression
     - duality
     - give
-    - horo
     - rodin
     - signal
     - take
 typography:
   partition: rodin
-  bondDegree: 40
+  bondDegree: 38
   neighbors: []
 standards: []
 bindings: []
@@ -59,7 +57,6 @@ neighbors:
     - decompression
     - duality
     - give
-    - horo
     - rodin
     - signal
     - take
@@ -72,27 +69,26 @@ neighbors:
     - decompression
     - duality
     - give
-    - horo
     - rodin
     - signal
     - take
 signatures:
-  computationUuid: "8f3307db-b6ce-8b6a-ad87-e4b3a8451d8c"
+  computationUuid: "b8d01079-ad1f-8da0-b619-aaf521539354"
   stages:
     - stage: path
       stageUuid: "428e806c-9644-85e1-86f8-0b7e468c0d3d"
     - stage: trinity
-      stageUuid: "464e80b8-e8c3-8231-b92a-702ed78598e9"
+      stageUuid: "ac96a243-f7e1-8de9-a4d8-3c5f06baebb5"
     - stage: boundary
-      stageUuid: "6e61901f-8ac9-8368-aac3-b480c7ce63b9"
+      stageUuid: "f8cd7b27-9551-8652-92ff-9c25b1dbe4a1"
     - stage: links
       stageUuid: "5408e019-8353-85fc-9a92-c97497cd6acc"
     - stage: horo
-      stageUuid: "e8b5bfa3-0a63-8560-8311-9694fe7794ea"
+      stageUuid: "834d561e-190d-837d-bdd5-54acaee6680f"
     - stage: seal
-      stageUuid: "b8f0bf27-b507-8d4c-ade9-756f3db1851a"
+      stageUuid: "cc52bc7e-59e9-8077-aa20-4ddb623d6b9f"
     - stage: uuid
-      stageUuid: "b8ad4bd0-8957-8482-b9e7-b6bd870288ec"
+      stageUuid: "47e11bc8-111e-8d7e-9c22-a8013fa4c5ff"
 version: 2
 ---
 # polarity — the 3↔6 boundary (forward ×2 ↔ reverse ×5)

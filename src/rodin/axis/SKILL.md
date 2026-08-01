@@ -1,12 +1,12 @@
 ---
 name: axis
-description: Use when reasoning about the 3·6·9 control plane of the rodin vortex — three coils 120° out of phase (COIL_A/B/C) that the doubling helix winds around; the governing triad (access/hooks/auth) the flow never lands on. Nested under rodin.
-atomPath: rodin/axis
-coordinate: rodin/axis · 5/round · 93be383e
-contentUuid: "089e229f-38e6-5fb7-961f-91b25c01ee86"
-diamondUuid: "c819f8e4-5985-8189-9a1e-5ac75d425abb"
-uuid: "93be383e-e446-863f-8434-f8538d9fc23e"
-horo: 5
+description: "Use when reasoning about the 3·6·9 control plane of the rodin vortex — three coils 120° out of phase (COIL_A/B/C) that the doubling helix winds around; the governing triad (access/hooks/auth) the flow never lands on. Nested under rodin."
+atomPath: "rodin/axis"
+coordinate: "rodin/axis · 7/descent · 0a0983cb"
+contentUuid: "ea89e7aa-d821-57c1-ad23-1fbe51d7afdf"
+diamondUuid: "5c7e3828-6e1c-89a9-999e-67cc06cf3d1b"
+uuid: "0a0983cb-2f4b-8e81-aae9-852257227cab"
+horo: 7
 bonds:
   in:
     - access
@@ -123,22 +123,22 @@ neighbors:
     - torus
     - unity
 signatures:
-  computationUuid: "6a5e7385-8050-80a8-9c6f-64dfb8fc69bd"
+  computationUuid: "eb30de67-0e85-8757-81f3-6a72f979393c"
   stages:
     - stage: path
       stageUuid: "27e7a0ac-0083-8356-b67d-8a03daca798e"
     - stage: trinity
-      stageUuid: "5ed50eb6-eb37-8609-a328-37823e0054c8"
+      stageUuid: "b8520302-8ab0-8247-9677-91e3e5970bb0"
     - stage: boundary
-      stageUuid: "68e25549-534f-86da-b46b-27e4b007d332"
+      stageUuid: "a71e7681-3f37-8553-9a85-fcfaccf551c1"
     - stage: links
       stageUuid: "212df84e-b488-8525-891d-e455b76289c9"
     - stage: horo
-      stageUuid: "123319a1-031b-8e83-a9e6-1178809b7b70"
+      stageUuid: "a52b8ad3-96a1-89e8-a738-59688cab4a2c"
     - stage: seal
-      stageUuid: "34c20be0-5049-8b20-866b-5dcfd5e28be2"
+      stageUuid: "48e4c350-6fd9-8945-9d90-81293b318493"
     - stage: uuid
-      stageUuid: "fd873776-ea5d-8e49-bca1-17761c58a911"
+      stageUuid: "9c994e3f-1e9b-8766-825a-f00435654480"
 version: 2
 ---
 # axis — the 3·6·9 control plane (three coils, 120° apart)
