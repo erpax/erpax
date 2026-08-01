@@ -114,3 +114,42 @@ describe('instrument — the threshold row, added the day it was paid for', () =
     expect(i.paid).toBe(true)
   })
 })
+
+describe('instrument — the row that fires on a warning, not on a build', () => {
+  it('workerd DO warnings are a property of the local proxy, not of the deploy', () => {
+    const i = instrumentFor('do these "no such Durable Object class is exported" warnings mean the deploy is broken?')!
+    expect(i.wrong).toMatch(/workerd warnings/)
+    expect(i.failure).toMatch(/getPlatformProxy/)
+    expect(i.failure).toMatch(/never loads `main`/)
+    expect(i.right).toMatch(/--dry-run/)
+    expect(i.paid).toBe(true)
+  })
+
+  it('THE FINDING BEHIND IT: the two rows that cover this already existed, and were not consulted', () => {
+    // A register nobody reads at the moment of measuring is prose. Both the minified-grep row and
+    // the build-artifact row were already here, both `paid`, and the wrong instrument was reached
+    // for anyway — so the row is only half the fix; the other half is naming the instrument at the
+    // point the warning appears (src/run/load).
+    expect(instrumentFor('does the deployed bundle export this class?')?.paid).toBe(true)
+    expect(instrumentFor('is this build artifact the thing that ships?')?.paid).toBe(true)
+  })
+
+  it('an unknown question still returns undefined — no default instrument', () => {
+    expect(instrumentFor('is the moon made of cheese?')).toBeUndefined()
+  })
+})
+
+describe('instrument — the lookup itself was the wrong instrument', () => {
+  it('overlapping questions resolve by BEST match, not by array order', () => {
+    // both rows contain "export"; the DO-warning question must reach its own row
+    const warn = instrumentFor('do these "no such Durable Object class is exported" warnings mean the deploy is broken?')
+    const bundle = instrumentFor('does the deployed bundle export this class?')
+    expect(warn?.failure).toMatch(/getPlatformProxy/)
+    expect(bundle?.failure).toMatch(/MINIFIED/)
+    expect(warn).not.toBe(bundle)
+  })
+
+  it('a question matching nothing distinctive still returns undefined', () => {
+    expect(instrumentFor('what colour is it')).toBeUndefined()
+  })
+})

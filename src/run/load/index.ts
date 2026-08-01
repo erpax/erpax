@@ -15,6 +15,20 @@
  * the finding, not a loose end. And the harness that swallowed the boot fails closed now: an unknown migrate
  * failure exits everywhere instead of continuing (`vitest.setup.ts`).
  *
+ * **The workerd warnings this boot prints are NOT a defect.** Five lines of "A DurableObjectNamespace
+ * in the config referenced the class X, but no such Durable Object class is exported from the worker"
+ * appear on every local boot, one per binding, on a healthy tree. They come from `getPlatformProxy`,
+ * which emulates BINDINGS and never loads `main` — so no worker class is ever exported to it, whatever
+ * the code says. The question they raise is answered by bundling `main`:
+ *
+ *   wrangler deploy --dry-run --outdir=/tmp/x   →   export { AuditChain, BucketCachePurge, DOQueueHandler,
+ *                                                    DOShardedTagCache, ErpaxStateDO, JobLock,
+ *                                                    RateLimiter, TenantQuotaCounter, … as default }
+ *
+ * All five erpax classes plus OpenNext's three. This is written HERE, beside the warnings, because the
+ * register that already held the answer ([[instrument]]) was not consulted at the moment of measuring —
+ * twice. A table read after the fact is prose; the note has to sit where the confusing output is.
+ *
  * The proof is test.ts, and it is GREEN because the app boots — not because the question stopped being
  * asked. This face exists so it is addressable and runnable on demand rather than only by the suite.
  *

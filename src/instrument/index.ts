@@ -64,6 +64,16 @@ export const INSTRUMENTS: readonly Instrument[] = [
     paid: true,
   },
   {
+    question: 'do these "no such Durable Object class is exported" warnings mean the deploy is broken?',
+    wrong: 'the workerd warnings printed on every local boot',
+    failure:
+      'they are emitted by `getPlatformProxy`, which emulates BINDINGS and never loads `main` — so every DO namespace is declared with no class, and the warning appears whatever the worker exports. One per binding, always, on a perfectly healthy tree',
+    right: "bundle `main` and read its export tail — `wrangler deploy --dry-run --outdir=…`",
+    because:
+      'the proxy and the deployed worker are different programs; only the one wrangler bundles is evidence about what ships. Measured: the dry-run bundle exports all five erpax classes plus OpenNext\'s three',
+    paid: true,
+  },
+  {
     question: 'is this build artifact the thing that ships?',
     wrong: 'read `.open-next/worker.js`',
     failure: "it is an INPUT to `worker.ts`, not the deploy artifact — code added by the wrangler entry is legitimately absent from it",
@@ -137,16 +147,37 @@ export const INSTRUMENTS: readonly Instrument[] = [
   },
 ]
 
-/** The instrument for a question, matched on its distinctive words. Unknown ⇒ undefined, never a default. */
+const distinctive = (q: string): string[] =>
+  q
+    .toLowerCase()
+    .split(/[^a-z]+/)
+    .filter((w) => w.length > 4)
+
+/**
+ * The instrument for a question — the row matching the MOST of its distinctive words.
+ *
+ * It was `find(… some(…))`: the first row sharing any long word won, so overlapping questions
+ * resolved by array order. Asking whether workerd's "no such Durable Object class is exported"
+ * warnings mean the deploy is broken returned the bundle-grep row instead, because both questions
+ * contain "export" — the register answering with the wrong row, which is precisely the failure it
+ * exists to prevent, committed by the lookup itself.
+ *
+ * Scoring fixes the order-dependence. A tie is left to the earlier row deliberately: two rows that
+ * match a question equally well are a signal the register needs a sharper question, not a reason to
+ * refuse an answer that is probably right.
+ */
 export function instrumentFor(question: string): Instrument | undefined {
   const q = question.toLowerCase()
-  return INSTRUMENTS.find((i) =>
-    i.question
-      .toLowerCase()
-      .split(/[^a-z]+/)
-      .filter((w) => w.length > 4)
-      .some((w) => q.includes(w)),
-  )
+  let best: Instrument | undefined
+  let bestScore = 0
+  for (const i of INSTRUMENTS) {
+    const score = distinctive(i.question).filter((w) => q.includes(w)).length
+    if (score > bestScore) {
+      best = i
+      bestScore = score
+    }
+  }
+  return best
 }
 
 /** The misreadings that actually occurred here — evidence, as distinct from anticipation. */
