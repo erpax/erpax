@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactMin } from '@/algebra'
 /**
  * Anchor — the one external entropy a zero-entropy app borrows to be tamper-proof.
  *
@@ -24,6 +24,8 @@ export type AnchorKind =
   | 'rfc3161-ecdsa-p256'
   | 'eidas-qualified'
   | 'blockchain-pow'
+  | 'slh-dsa-fips205'
+  | 'ml-dsa-fips204'
 
 /** Security strength (bits) to FORGE each anchor. ∞ = practically unforgeable (51% the chain's cumulative work). */
 export const ANCHOR_STRENGTH_BITS: Record<AnchorKind, number> = {
@@ -32,6 +34,54 @@ export const ANCHOR_STRENGTH_BITS: Record<AnchorKind, number> = {
   'rfc3161-ecdsa-p256': 128, // P-256 ≈ 128-bit
   'eidas-qualified': 128, // qualified TSA, P-256 class + legal non-repudiation
   'blockchain-pow': Number.POSITIVE_INFINITY,
+  'slh-dsa-fips205': 128, // SLH-DSA-SHA2-128s — NIST category 1 (≥ AES-128 key search)
+  'ml-dsa-fips204': 192, // ML-DSA-65 — NIST category 3 (≥ AES-192 key search)
+}
+
+// ── Post-quantum: the assumption, and what survives a CRQC ──────────────────────────────────────
+// An anchor's strength is only meaningful beside the ASSUMPTION it rests on. Naming them is not
+// decoration: two anchors resting on the same assumption do not compose into a hedge, and an
+// assumption Shor breaks is worth zero bits the day a cryptographically-relevant quantum computer
+// exists — not fewer bits, ZERO. Hiding that inside a single "strength" number is the over-claim.
+
+/** The hardness assumption each anchor rests on — distinct assumptions are what a hedge needs. */
+export const ANCHOR_ASSUMPTION: Record<AnchorKind, string> = {
+  none: 'none',
+  'rfc3161-rsa2048': 'integer factorisation (RSA) — broken by Shor',
+  'rfc3161-ecdsa-p256': 'elliptic-curve discrete log (ECDLP) — broken by Shor',
+  'eidas-qualified': 'ECDLP/RSA (qualified TSA keys are classical today) — broken by Shor',
+  'blockchain-pow': 'cumulative proof-of-work over a hash — Grover-weakened, not Shor-broken',
+  'slh-dsa-fips205': 'hash preimage/collision only — the SAME assumption as the content digest',
+  'ml-dsa-fips204': 'module lattices (MLWE/MSIS) — a DISTINCT assumption from the digest',
+}
+
+/**
+ * Strength (bits) to forge the anchor for an adversary holding a CRQC. Shor reduces RSA and ECDLP
+ * to polynomial time, so those anchors are worth **0**, not "fewer bits". FIPS 204/205 are the NIST
+ * PQC standards finalized 2024-08-13; proof-of-work is Grover-weakened (quadratic on the hash) but
+ * re-doing cumulative work is not a structural break.
+ */
+export const POST_QUANTUM_STRENGTH_BITS: Record<AnchorKind, number> = {
+  none: 0,
+  'rfc3161-rsa2048': 0,
+  'rfc3161-ecdsa-p256': 0,
+  'eidas-qualified': 0,
+  'blockchain-pow': Number.POSITIVE_INFINITY,
+  'slh-dsa-fips205': 128,
+  'ml-dsa-fips204': 192,
+}
+
+/** The anchors that still bind against a CRQC — a signature anchor must be one of these. */
+export const PQC_ANCHOR_KINDS: readonly AnchorKind[] = ['slh-dsa-fips205', 'ml-dsa-fips204']
+
+/** Does this anchor survive a cryptographically-relevant quantum computer at all? */
+export function isQuantumResistant(anchor: AnchorKind): boolean {
+  return POST_QUANTUM_STRENGTH_BITS[anchor] > 0
+}
+
+/** The tamper-cost floor against a CRQC: min(collide digest, forge anchor post-quantum). */
+export function postQuantumFloorLog2(anchor: AnchorKind, digestBits: number): number {
+  return exactMin(digestBits, POST_QUANTUM_STRENGTH_BITS[anchor])
 }
 
 /** Does the anchor BIND — i.e. is it at least as strong as the content digest? */
