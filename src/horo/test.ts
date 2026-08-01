@@ -25,6 +25,8 @@ import {
   affineStep,
   carryClosure,
   carryRays,
+  cornerLimit,
+  cornerSweep,
   pivotSingularities,
   rayOf,
   renderSequenceSection,
@@ -645,6 +647,31 @@ describe('horo — what a fold CARRIES, and where the carry ends', () => {
       expect([...carryClosure(step)]).toEqual([1, 2, 4, 6, 8])
     }
     expect([...carryClosure(5)]).toEqual([0, 1, 2, 4, 6, 8]) // 5 alone reaches the void
+  })
+
+  it('the right-angle turn admits EXACTLY ZERO speed — the impossible turn, quantified', () => {
+    const vertex = cornerLimit(0, 1000) // any ceiling at all, however large
+    expect(vertex.curvature).toBe(Infinity) // reported, never clamped to a big number
+    expect(vertex.maxSpeed).toBe(0)
+    // and tightening toward it drives the speed down continuously — no discontinuity to hide in
+    const sweep = cornerSweep(1, [1, 0.01, 0.0001, 0])
+    expect(sweep.map((c) => c.maxSpeed)).toEqual([1, 0.1, 0.01, 0])
+    expect(sweep.map((c) => c.curvature)).toEqual([1, 100, 10000, Infinity])
+    for (let i = 1; i < sweep.length; i += 1) expect(sweep[i]!.maxSpeed).toBeLessThan(sweep[i - 1]!.maxSpeed)
+    // v ≤ √(a·r) is the whole content — a bigger ceiling buys speed, but never at r = 0
+    expect(cornerLimit(0.25, 4).maxSpeed).toBe(1)
+    expect(cornerLimit(0, 1e12).maxSpeed).toBe(0)
+  })
+
+  it('folding the 0 into the 8 costs exactly one turn, and the fold sits at the void', () => {
+    // the circle's tangent winds once; the figure-eight's does not wind at all
+    expect(turningNumber(circleLoop)).toBeCloseTo(1, 2)
+    expect(turningNumber(lemniscate)).toBeCloseTo(0, 2)
+    expect(turningNumber(circleLoop) - turningNumber(lemniscate)).toBeCloseTo(1, 2)
+    // the eight passes through the origin — the circle never does. The crossing IS the void.
+    const crossings = Array.from({ length: 4001 }, (_, i) => (i / 4000) * 2 * PI).filter((t) => atVoid(lemniscate(t), 1e-6))
+    expect(crossings.length).toBeGreaterThan(0)
+    expect(Array.from({ length: 4001 }, (_, i) => atVoid(circleLoop((i / 4000) * 2 * PI), 1e-6)).some(Boolean)).toBe(false)
   })
 
   it('THREE independent singularities coincide on 5 — and on nothing else', () => {

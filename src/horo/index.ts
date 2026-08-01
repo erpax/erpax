@@ -1,4 +1,4 @@
-import { exactMax, exactAbs, exactTrunc, algebraCos, algebraSin, algebraAtan2, PI } from '@/algebra'
+import { exactMax, exactAbs, exactTrunc, algebraCos, algebraSin, algebraAtan2, algebraSqrt, PI } from '@/algebra'
 /**
  * horo — the seven-position state ring, the erpax matter-twin of
  * `svilena-me/.vitepress/horo-band.js`.
@@ -663,6 +663,60 @@ export function straddlingSteps(): readonly number[] {
  * @invariant the closure is identical from every step except 5, which additionally reaches the void
  * @invariant no odd digit above 1 is ever a carry — proven by 2n ≤ 18, not sampled
  */
+/**
+ * The impossible turn — and where it becomes possible.
+ *
+ * A corner is a curvature claim. Rounding a turn of radius `r` at speed `v` demands a lateral
+ * acceleration of `v²/r`; the tightest turn a body can hold under a ceiling `a` is therefore
+ * `v ≤ √(a·r)`. Send `r → 0` — a **true right-angle vertex, no rounding at all** — and the ceiling
+ * collapses with it: curvature `1/r` is unbounded, and the only admissible speed is **exactly zero**.
+ *
+ * ```
+ * radius   curvature   max speed (a = 1)
+ * 1        1           1
+ * 0.01     100         0.1
+ * 0.0001   10000       0.01
+ * 0        ∞           0        ← the turn taken only at no speed at all
+ * ```
+ *
+ * This is why the fold and the void are the same place. The circle — the `0` — has turning number
+ * **1**. Twisted into the figure-eight — the `8` — it has turning number **0**, so the fold costs
+ * exactly one full turn. And the eight passes through the origin, twice (`atVoid`), while the circle
+ * never does: the crossing where the direction reverses is the one point with no forward motion.
+ * The turn that cannot be taken at speed is taken at the void, which is the only place it is free.
+ *
+ * **Boundary.** This is Newtonian circular motion plus the rotation index of a plane curve — both
+ * standard, both checkable here. It says nothing about any other kind of speed or any other kind of
+ * turn; `maxSpeed` is a kinematic bound under a stated acceleration ceiling, not a claim about what
+ * a system can do.
+ *
+ * @invariant maxSpeed(0, a) === 0 for every finite ceiling — a true corner admits no speed
+ * @invariant curvature(0) is Infinity, reported rather than clamped
+ * @invariant turning(circle) − turning(figure-eight) === 1 — the fold costs one turn, measured
+ */
+export interface CornerLimit {
+  readonly radius: number
+  /** 1/r — unbounded at a true vertex */
+  readonly curvature: number
+  /** √(a·r) — the fastest a body may take this corner under the given lateral-acceleration ceiling */
+  readonly maxSpeed: number
+}
+
+export function cornerLimit(radius: number, maxLateralAccel: number): CornerLimit {
+  if (radius < 0) throw new Error('cornerLimit: negative radius')
+  if (maxLateralAccel < 0) throw new Error('cornerLimit: negative acceleration ceiling')
+  return {
+    radius,
+    curvature: radius === 0 ? Infinity : 1 / radius,
+    maxSpeed: radius === 0 ? 0 : algebraSqrt(maxLateralAccel * radius),
+  }
+}
+
+/** The corner tightening toward a true vertex — speed falling to zero as curvature runs away. */
+export function cornerSweep(maxLateralAccel: number, radii: readonly number[]): readonly CornerLimit[] {
+  return radii.map((r) => cornerLimit(r, maxLateralAccel))
+}
+
 /**
  * Three independent singularities — and they coincide on one digit.
  *
