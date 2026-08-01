@@ -58,21 +58,34 @@ export interface SystemPrincipal {
  * `admin` appears nowhere. A subsystem that needs it is a subsystem whose job is wrong.
  */
 const CAPABILITY: Readonly<Record<Subsystem, readonly UserRole[]>> = {
-  // seeds create reference data; they never remove a tenant's rows
-  seed: ['user'] as readonly UserRole[],
-  // hooks react to a write already authorised — they extend it, they do not widen it
+  // WRITE. The factory gates create/update on roleScopedAccess('admin', writeRole) where writeRole
+  // defaults to 'accountant'. A `user`-only principal is therefore READ-ONLY against every
+  // factory-built collection — it would be DENIED, and a denied Local API write throws or returns
+  // nothing rather than saying why. The first draft of this map gave every principal `user`, which
+  // made all five read-only by accident; the one migrated site survived only because `tags` is not
+  // factory-built. That was luck, so the write-capable subsystems carry the write role explicitly.
+  seed: ['user', 'accountant'] as readonly UserRole[],
+  import: ['user', 'accountant'] as readonly UserRole[],
+  migration: ['user', 'accountant'] as readonly UserRole[],
+  job: ['user', 'accountant'] as readonly UserRole[],
+  // READ-ONLY, and deliberately so. A hook runs INSIDE a write the caller already authorised; it
+  // observes and derives. Granting it write capability would let a hook widen the very operation
+  // that triggered it, which is the cycle the factory's own access design avoids.
   hook: ['user'] as readonly UserRole[],
-  // background jobs read and write their own artefacts
-  job: ['user'] as readonly UserRole[],
-  // migrations reshape structure; they run once, under review
-  migration: ['user'] as readonly UserRole[],
-  // imports write what an authenticated human handed over
-  import: ['user'] as readonly UserRole[],
 }
+
+/**
+ * DELETE is unreachable for every principal, and that is enforcement rather than convention.
+ *
+ * The factory gates delete on `tenantAdmin`. No principal holds `admin` or `super-admin`, so no
+ * system operation can delete a tenant's rows — not because the map forbids it, but because the
+ * access function will refuse. That is the difference between a policy and a comment.
+ */
+export const NO_PRINCIPAL_MAY_DELETE = true
 
 const SCOPE: Readonly<Record<Subsystem, string>> = {
   seed: 'creates reference data at install; may not delete tenant rows',
-  hook: 'extends a write that was already authorised; may not widen its scope',
+  hook: 'extends a write that was already authorised; READ-ONLY, so it cannot widen it',
   job: 'reads and writes its own artefacts on a schedule; no interactive authority',
   migration: 'reshapes structure once, under review; not a runtime path',
   import: 'writes data an authenticated human supplied; inherits their tenant',

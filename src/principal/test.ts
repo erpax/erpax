@@ -44,6 +44,25 @@ describe('principal — act as someone, never as no one', () => {
     // this migration is done a subsystem at a time rather than swept
   })
 
+  it('CAPABILITY differs by subsystem — not just the name and the tenant', () => {
+    // the first draft gave every principal `user`, which made all five READ-ONLY by accident: the
+    // factory gates create/update on roleScopedAccess('admin', writeRole = 'accountant'). The one
+    // migrated site survived only because `tags` is not factory-built. That was luck.
+    expect(principalMay(asSystem('seed', 't1'), 'accountant' as never)).toBe(true)
+    expect(principalMay(asSystem('job', 't1'), 'accountant' as never)).toBe(true)
+    // a hook runs INSIDE an authorised write; letting it write would let it widen its own trigger
+    expect(principalMay(asSystem('hook', 't1'), 'accountant' as never)).toBe(false)
+  })
+
+  it('DELETE is unreachable for every principal — enforced, not merely declared', () => {
+    // the factory gates delete on tenantAdmin. No principal holds admin, so the access function
+    // refuses; the map does not have to forbid it.
+    for (const p of principals('t1')) {
+      expect(principalMay(p, 'admin' as never)).toBe(false)
+      expect(principalMay(p, 'super-admin' as never)).toBe(false)
+    }
+  })
+
   it('the same subsystem in two tenants is two principals — never one shared identity', () => {
     const a = asSystem('job', 'tenant-a')
     const b = asSystem('job', 'tenant-b')
