@@ -45,10 +45,10 @@ const I18N: Record<string, LocalizedString> = {
     fr: 'Rend une URL ou du HTML brut en PDF/PNG via le binding Browser Rendering. Utilisé pour les PDF de factures, le rendu PAdES et les captures e2e.',
   },
   emailSend: {
-    en: 'Send outbound transactional email via EMAIL_SEND. Tenant-scoped (from-address must be a tenant-verified domain or platform fallback). Audit-trailed per RFC 5321 + GDPR Art.7.',
-    bg: 'Изпраща изходящ транзакционен email през EMAIL_SEND. Tenant-scoped (from-адресът трябва да е верифициран домейн на наемателя или платформа fallback).',
-    de: 'Sendet ausgehende Transaktions-E-Mails über EMAIL_SEND. Mandantengebunden (From-Adresse muss eine verifizierte Mandantendomäne oder Plattform-Fallback sein).',
-    fr: 'Envoie un email transactionnel sortant via EMAIL_SEND. Tenant-scoped (l\'adresse from doit être un domaine vérifié du tenant ou un fallback plateforme).',
+    en: 'Send outbound transactional email via EMAIL_SENDER. Tenant-scoped (from-address must be a tenant-verified domain or platform fallback). Audit-trailed per RFC 5321 + GDPR Art.7.',
+    bg: 'Изпраща изходящ транзакционен email през EMAIL_SENDER. Tenant-scoped (from-адресът трябва да е верифициран домейн на наемателя или платформа fallback).',
+    de: 'Sendet ausgehende Transaktions-E-Mails über EMAIL_SENDER. Mandantengebunden (From-Adresse muss eine verifizierte Mandantendomäne oder Plattform-Fallback sein).',
+    fr: 'Envoie un email transactionnel sortant via EMAIL_SENDER. Tenant-scoped (l\'adresse from doit être un domaine vérifié du tenant ou un fallback plateforme).',
   },
   workflowsCreate: {
     en: 'Trigger a Cloudflare Workflow run via WORKFLOWS. tenantId is auto-stamped on the workflow input.',

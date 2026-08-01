@@ -113,10 +113,13 @@ export interface ErpaxCfEnv {
   // PAdES attestation rendering + e2e walkthrough screenshots.
   readonly BROWSER?: BrowserBinding
   // Analytics Engine datasets (multiple — per the wrangler config).
-  readonly ANALYTICS?: AnalyticsEngineDataset    // legacy alias
+  readonly ANALYTICS?: AnalyticsEngineDataset    // legacy alias — NOT declared in wrangler.jsonc
   readonly ANALYTICS_AI?: AnalyticsEngineDataset
+  readonly ANALYTICS_GL?: AnalyticsEngineDataset
+  readonly ANALYTICS_API?: AnalyticsEngineDataset
+  readonly ANALYTICS_JOBS?: AnalyticsEngineDataset
   // Email worker bindings (send_email destinations).
-  readonly EMAIL_SEND?: EmailSendBinding
+  readonly EMAIL_SENDER?: EmailSendBinding
 }
 
 // Minimal type stubs — Workers types come from @cloudflare/workers-types when wired.
@@ -486,7 +489,7 @@ export async function counterGet(ctx: MediatorContext, scopedKey: string): Promi
 //   3. POST { leaf, payload } to DO /append-linked endpoint
 //   4. DO writes both atomically and updates HEAD → leaf.leafUuid
 //
-// The DO class implementation lands in src/workers/audit-chain-do.ts
+// The DO class implementation lives in src/ai/durable-objects.ts (AuditChain)
 // (already declared in wrangler.jsonc). This mediator function defines
 // the wire protocol the DO must honour.
 
@@ -593,14 +596,29 @@ export async function queueSend(ctx: MediatorContext, event: Record<string, unkn
   })
 }
 
+/** The datasets wrangler declares. `default` keeps the legacy alias for callers that pass nothing. */
+export type AnalyticsDataset = 'default' | 'ai' | 'gl' | 'api' | 'jobs'
+
+const ANALYTICS_SINKS: Record<AnalyticsDataset, (env: ErpaxCfEnv) => AnalyticsEngineDataset | undefined> = {
+  default: (env) => env.ANALYTICS,
+  ai: (env) => env.ANALYTICS_AI,
+  gl: (env) => env.ANALYTICS_GL,
+  api: (env) => env.ANALYTICS_API,
+  jobs: (env) => env.ANALYTICS_JOBS,
+}
+
 /** Analytics sink — passes through redactor before writeDataPoint. */
 export function analyticsWrite(
   ctx: MediatorContext,
   dataPoint: Record<string, unknown>,
   redact?: (dp: Record<string, unknown>) => Record<string, unknown>,
-  dataset: 'default' | 'ai' = 'default',
+  dataset: AnalyticsDataset = 'default',
 ): void {
-  const sink = dataset === 'ai' ? (ctx.env.ANALYTICS_AI ?? ctx.env.ANALYTICS) : ctx.env.ANALYTICS
+  // Every dataset resolves to the binding wrangler DECLARES, falling back to the legacy alias.
+  // It used to read `ctx.env.ANALYTICS` for everything but 'ai' — and ANALYTICS is not declared in
+  // wrangler.jsonc, so `if (!sink) return` made every gl / api / jobs write a silent no-op in
+  // production. That is the SOX §404 monitoring source the config comment claims, writing nothing.
+  const sink = ANALYTICS_SINKS[dataset](ctx.env) ?? ctx.env.ANALYTICS
   if (!sink) return
   const safe = redact ? redact(dataPoint) : dataPoint
   // Tenant tag every data point so the Analytics Engine query can scope.
@@ -616,12 +634,12 @@ export async function vectorizeQuery(
 ): Promise<Array<{ id: string; score: number; metadata?: Record<string, unknown> }>> {
   const idx = ctx.env.VECTORIZE_DOCS
   if (!idx) return []
-  await enforceAuthorized(ctx, { binding: 'VECTORIZE_DOCS' as never, action: 'query', tenantId: ctx.tenantId, user: ctx.user })
+  await enforceAuthorized(ctx, { binding: 'VECTORIZE_DOCS', action: 'query', tenantId: ctx.tenantId, user: ctx.user })
   // Tenant scoping enforced by adding `tenant_id` to the filter — every
   // vector inserted is required to carry tenant_id in metadata.
   const filter = { ...(args.filter ?? {}), tenant_id: ctx.tenantId }
   const res = await idx.query(args.vector, { topK: args.topK, filter })
-  await auditBindingCall(ctx, 'VECTORIZE_DOCS' as never, 'query',
+  await auditBindingCall(ctx, 'VECTORIZE_DOCS', 'query',
     { topK: args.topK, matchCount: res.matches.length })
   return res.matches
 }
@@ -632,7 +650,7 @@ export async function vectorizeInsert(
 ): Promise<void> {
   const idx = ctx.env.VECTORIZE_DOCS
   if (!idx) return
-  await enforceAuthorized(ctx, { binding: 'VECTORIZE_DOCS' as never, action: 'insert', tenantId: ctx.tenantId, user: ctx.user })
+  await enforceAuthorized(ctx, { binding: 'VECTORIZE_DOCS', action: 'insert', tenantId: ctx.tenantId, user: ctx.user })
   // Force tenant_id into every vector's metadata so cross-tenant
   // queries are filterable + audit-trail proves provenance.
   const stamped = vectors.map((v) => ({
@@ -640,7 +658,7 @@ export async function vectorizeInsert(
     metadata: { ...(v.metadata ?? {}), tenant_id: ctx.tenantId },
   }))
   await idx.insert(stamped)
-  await auditBindingCall(ctx, 'VECTORIZE_DOCS' as never, 'insert',
+  await auditBindingCall(ctx, 'VECTORIZE_DOCS', 'insert',
     { count: vectors.length })
 }
 
@@ -670,10 +688,10 @@ export async function queueSendNamed(
 ): Promise<void> {
   const q = namedQueueBinding(ctx.env, queueName)
   if (!q) return
-  await enforceAuthorized(ctx, { binding: 'QUEUE' as never, action: `send:${queueName}`, tenantId: ctx.tenantId, user: ctx.user })
+  await enforceAuthorized(ctx, { binding: 'QUEUE', action: `send:${queueName}`, tenantId: ctx.tenantId, user: ctx.user })
   const stamped = { ...event, tenantId: ctx.tenantId, queue: queueName, mediatorAt: new Date().toISOString() }
   await q.send(stamped)
-  await auditBindingCall(ctx, 'QUEUE' as never, `send:${queueName}`, {
+  await auditBindingCall(ctx, 'QUEUE', `send:${queueName}`, {
     eventType: (event as { eventType?: string }).eventType,
   })
 }
@@ -685,7 +703,7 @@ export async function browserRender(
 ): Promise<ArrayBuffer | null> {
   const b = ctx.env.BROWSER
   if (!b) return null
-  await enforceAuthorized(ctx, { binding: 'BROWSER' as never, action: `render:${args.format}`, tenantId: ctx.tenantId, user: ctx.user })
+  await enforceAuthorized(ctx, { binding: 'BROWSER', action: `render:${args.format}`, tenantId: ctx.tenantId, user: ctx.user })
   // Call into the Browser binding via fetch — the Worker proxy returns
   // the rendered bytes. Auth + tenant scoping handled in the request body.
   const req = new Request('https://browser/render', {
@@ -695,10 +713,10 @@ export async function browserRender(
   })
   const res = await b.fetch(req)
   if (!res.ok) {
-    await auditBindingCall(ctx, 'BROWSER' as never, `render:${args.format}:failed`, { status: res.status })
+    await auditBindingCall(ctx, 'BROWSER', `render:${args.format}:failed`, { status: res.status })
     return null
   }
-  await auditBindingCall(ctx, 'BROWSER' as never, `render:${args.format}`, {
+  await auditBindingCall(ctx, 'BROWSER', `render:${args.format}`, {
     bytes: Number(res.headers.get('content-length') ?? 0),
   })
   return await res.arrayBuffer()
@@ -709,11 +727,11 @@ export async function emailSend(
   ctx: MediatorContext,
   args: { from: string; to: string; raw: string },
 ): Promise<void> {
-  const e = ctx.env.EMAIL_SEND
+  const e = ctx.env.EMAIL_SENDER
   if (!e) return
-  await enforceAuthorized(ctx, { binding: 'EMAIL_SEND' as never, action: 'send', tenantId: ctx.tenantId, user: ctx.user })
+  await enforceAuthorized(ctx, { binding: 'EMAIL_SENDER', action: 'send', tenantId: ctx.tenantId, user: ctx.user })
   await e.send({ from: args.from, to: args.to, raw: args.raw })
-  await auditBindingCall(ctx, 'EMAIL_SEND' as never, 'send', {
+  await auditBindingCall(ctx, 'EMAIL_SENDER', 'send', {
     from: args.from, to: args.to, bytes: args.raw.length,
   })
 }
@@ -725,12 +743,12 @@ export async function workflowsCreate(
 ): Promise<unknown> {
   const w = ctx.env.WORKFLOWS
   if (!w) return null
-  await enforceAuthorized(ctx, { binding: 'WORKFLOWS' as never, action: 'create', tenantId: ctx.tenantId, user: ctx.user })
+  await enforceAuthorized(ctx, { binding: 'WORKFLOWS', action: 'create', tenantId: ctx.tenantId, user: ctx.user })
   const tenantStampedInput = typeof args.input === 'object' && args.input !== null
     ? { ...(args.input as Record<string, unknown>), tenantId: ctx.tenantId }
     : { input: args.input, tenantId: ctx.tenantId }
   const result = await w.create(args.workflowId, tenantStampedInput)
-  await auditBindingCall(ctx, 'WORKFLOWS' as never, 'create', { workflowId: args.workflowId })
+  await auditBindingCall(ctx, 'WORKFLOWS', 'create', { workflowId: args.workflowId })
   return result
 }
 

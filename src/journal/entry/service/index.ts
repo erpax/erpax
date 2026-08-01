@@ -105,9 +105,18 @@ interface EntryDoc {
 const idOf = (v: unknown): string =>
   v && typeof v === 'object' && 'id' in v ? String((v as { id: unknown }).id) : String(v ?? '');
 
+/**
+ * The line's shape WITHOUT glAccount — its only caller resolves that field.
+ *
+ * It used to set `glAccount: l.accountId`, and the caller spread this then set `glAccount` again
+ * from `resolveGlAccount`. Correct only because the later key wins: esbuild flagged it as
+ * `duplicate-object-key` in the deploy bundle, and a reorder would silently write a bare account
+ * CODE into a journal entry where the schema wants a gl-accounts relationship uuid — a posting that
+ * fails validation at best and mis-attributes at worst. Removing the field makes the override
+ * unnecessary rather than merely harmless.
+ */
 const toLine = (l: JournalEntryLine, i: number) => ({
   lineNumber: i + 1,
-  glAccount: l.accountId,
   description: l.description,
   debit: l.debit ?? 0,
   credit: l.credit ?? 0,
