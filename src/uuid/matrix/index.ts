@@ -150,11 +150,37 @@ export const horoCrossed = (atomPath: string, horo: number | null): boolean => {
   return node?.band === 'control' && CONTROL_HORO.has(horo)
 }
 
+/**
+ * Adjacency, indexed ONCE — the fold applied to the matrix itself.
+ *
+ * `neighborsOf` and `backlinksOf` each scanned the whole edge array per call. Called once per atom
+ * across 3,203 atoms, that is O(atoms x edges): the corpus-wide frontmatter sync ran at ~5 MINUTES
+ * PER ATOM (measured: 14:50 CPU for 3 files), which is ~267 hours for the corpus — it could not
+ * finish, and it is the same shape as every other cost measured today. A linear scan to answer
+ * "who is adjacent" is travel; an index is an address.
+ *
+ * Built at module load from the same arrays, in the same order, so the ANSWERS are identical — this
+ * is a hoist, not a change of meaning. The idiom is already in this file: `childrenByParentUuid`
+ * indexes the parent axis exactly this way.
+ *
+ * @invariant same members, same order, as the scan it replaces — proven per atom, not assumed
+ */
+const outByIndex = new Map<number, number[]>()
+const inByIndex = new Map<number, number[]>()
+for (const e of UUID_MATRIX_EDGES) {
+  const out = outByIndex.get(e.f)
+  if (out) out.push(e.t)
+  else outByIndex.set(e.f, [e.t])
+  const inc = inByIndex.get(e.t)
+  if (inc) inc.push(e.f)
+  else inByIndex.set(e.t, [e.f])
+}
+
 /** Atoms this atom path links TO (outgoing edges — path-aware). */
 export const neighborsOf = (atom: string): MatrixNode[] => {
   const i = indexOf(atom)
   if (i === undefined) return []
-  return UUID_MATRIX_EDGES.filter((e) => e.f === i).map((e) => at(e.t)).filter(isNode)
+  return (outByIndex.get(i) ?? []).map((t) => at(t)).filter(isNode)
 }
 
 /**
@@ -204,7 +230,7 @@ export function entanglementOf(atom: string): Entanglement {
 export const backlinksOf = (atom: string): MatrixNode[] => {
   const i = indexOf(atom)
   if (i === undefined) return []
-  return UUID_MATRIX_EDGES.filter((e) => e.t === i).map((e) => at(e.f)).filter(isNode)
+  return (inByIndex.get(i) ?? []).map((f) => at(f)).filter(isNode)
 }
 
 /** The binding-uuid of the edge a→b (path-aware), or undefined if no such edge. */
