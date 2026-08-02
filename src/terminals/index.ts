@@ -2,7 +2,7 @@ import type { CollectionConfig } from 'payload'
 import { autoPopulateTenant } from '@/auto/populate/tenant'
 import { auditTrailAfterChange } from '@/audit/trail/after/change'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/auth'
-import { currencyField, statusField, auditFields } from '@/fields'
+import { currencyField, statusField, auditFields } from '@/field'
 
 /**
  * Terminals — virtual POS terminals for the Наредба Н-18 alternative regime.

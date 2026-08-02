@@ -1,5 +1,5 @@
 /**
- * The two discriminators the collapse reveals — position 1 ([[fields]]) of the
+ * The two discriminators the collapse reveals — position 1 ([[field]]) of the
  * `1·2·4·8` build arc. Every collection that sprawled into bespoke columns
  * folds back through exactly two context-keys on the content-uuid:
  *

@@ -64,4 +64,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 
 **Law — [[law]]: a per-tenant override layer above the platform default — per-locale values within activation windows, each carrying provenance back to the row it overrides ([[balance]]).**
 
-Composes: [[fields]] · [[standard]] · [[identity]] · [[proof]].
+Composes: [[field]] · [[standard]] · [[identity]] · [[proof]].

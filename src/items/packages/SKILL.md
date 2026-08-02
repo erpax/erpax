@@ -64,4 +64,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 
 **Law — [[law]]: a logistic handling unit identified by a unique SSCC, self-nesting (pallet → carton → contents), binding item-lot lines to one shipment.**
 
-Composes: [[collections]] · [[fields]] · [[access]] · [[hooks]] · [[accounting]] · [[standard]].
+Composes: [[collections]] · [[field]] · [[access]] · [[hooks]] · [[accounting]] · [[standard]].

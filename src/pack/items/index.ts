@@ -39,7 +39,7 @@ import type { CollectionConfig, CollectionBeforeChangeHook, Field } from 'payloa
 import { createMembershipAdminMutateAccess } from '@/membership/admin/mutate/access'
 import { tenantScopedCollectionReadAccess } from '@/tenant/scoped/read'
 import { standardCollectionHooks } from '@/standard/collection/hook'
-import { referenceField, auditFields } from '@/fields'
+import { referenceField, auditFields } from '@/field'
 
 const toInt = (v: unknown): number => {
   const n = Number(v)

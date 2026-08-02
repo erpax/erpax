@@ -31,8 +31,8 @@ signatures:
       stageUuid: "d4f4b687-2bb0-89c7-9427-c34f3ba65058"
 version: 2
 ---
-# field — the model of one [[fields]] row
+# field — the model of one [[field]] row
 
-One typed attribute of a record schema. The singular model whose plural store is the [[fields]] collection ([[balance]]: every collection has its model).
+One typed attribute of a record schema. The singular model whose plural store is the [[field]] collection ([[balance]]: every collection has its model).
 
-Composes [[fields]] · [[schema]] · [[balance]].
+Composes [[field]] · [[schema]] · [[balance]].

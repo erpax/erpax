@@ -13,7 +13,7 @@ import {
   taxonomySelect,
   accountTypeField,
   debitCreditField,
-} from '@/fields'
+} from '@/field'
 
 // Fields (position 1) define the document schema AND auto-generate the admin UI
 // from one definition. The factories are pure: same args → same field literal,

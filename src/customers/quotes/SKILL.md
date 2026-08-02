@@ -61,6 +61,6 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls quote-approval
 - ISO-27002 §5.4 segregation-of-duties
 
-Composes: [[fields]] · [[collections]] · [[transaction]] · [[accounting]] · [[identity]] · [[standard]].
+Composes: [[field]] · [[collections]] · [[transaction]] · [[accounting]] · [[identity]] · [[standard]].
 
 **Law — [[law]]: a quote posts no GL entry until accepted, and its issuer can never be its approver.**

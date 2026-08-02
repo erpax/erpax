@@ -38,7 +38,7 @@ version: 2
 ---
 # manufacturing — the all-industries production plugin
 
-Generalizes the etrima (garment) production engine into an industry-agnostic, self-sufficient `@erpax/manufacturing` (textile, food, pharma, electronics, furniture, job-shop, process). Built from two universal primitives — **BOM + Routing** — composed of reusable field-objects (see [[fields]],[[collections]]), referencing OUT polymorphically so [[accounting]]/audit attach without inward deps (see [[plugins]]). Ordered by the [[sequence]].
+Generalizes the etrima (garment) production engine into an industry-agnostic, self-sufficient `@erpax/manufacturing` (textile, food, pharma, electronics, furniture, job-shop, process). Built from two universal primitives — **BOM + Routing** — composed of reusable field-objects (see [[field]],[[collections]]), referencing OUT polymorphically so [[accounting]]/audit attach without inward deps (see [[plugins]]). Ordered by the [[sequence]].
 
 ## The agent society IS the factory — token spend is the work-phase labor (yarn → sweater)
 The same engine runs the agent [[society]]: an agent is a **worker**, and its work transforms inputs into outputs exactly as etrima's workers turn **yarn into sweaters** — one aspect of the infinity. Each agent move is a *work-phase*, and its **token spend IS the labor cost**: `cost = anchor × tokens` is etrima's `cost_per_minute × minutes` ([[allocation]]; the token-[[accounting]] ledger), `price_per_minute − cost_per_minute` is the margin, `minutes_produced / minutes` is the efficiency ([[train]] · [[decompression]]), and `confirmed_at` is the [[horo|gate-first]] release. So **every token spent between agents is a work-phase posting** — the factory's labor ledger, the app ledger complete ([[balance]]).

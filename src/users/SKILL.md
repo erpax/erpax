@@ -81,4 +81,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 
 **Law — [[law]]: a user is the ONE typeless universal actor and [[identity]] root — employee = agent = customer = author — holding cross-tenant membership, competencies, per-user locale/config, and email-login credentials; the type is a role the actor carries, never a separate table.**
 
-Composes: [[train]] · [[identity]] · [[auth]] · [[access]] · [[fields]] · [[config]].
+Composes: [[train]] · [[identity]] · [[auth]] · [[access]] · [[field]] · [[config]].

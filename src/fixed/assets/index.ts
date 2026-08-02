@@ -3,7 +3,7 @@ import { autoPopulateCreatedBy } from '@/auto/populate/created/by';
 import { autoSetTimestamp } from '@/auto/set/timestamp';
 import { auditTrailAfterChange } from '@/audit/trail/after/change';
 import { createAccountingCollection, createGLAccountFields } from '@/factory';
-import { currencyField, statusField, notesField } from '@/fields';
+import { currencyField, statusField, notesField } from '@/field';
 // Slice PPP: depreciationHook removed — delegated to a `req.payload.services?.depreciation`
 // service that doesn't exist in `src/services/` (silent no-op). Depreciation
 // will fold into a scheduled job (Slice ZZ pattern with `dunningJob`) when

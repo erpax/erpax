@@ -10,7 +10,7 @@ import {
   currencyField,
   statusField,
   auditFields,
-} from '@/fields'
+} from '@/field'
 import { validateNotLocked } from '@/utility'
 import { validateBalancedEntry } from './hooks/balanced-entry'
 

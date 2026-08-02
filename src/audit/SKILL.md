@@ -57,7 +57,7 @@ version: 2
 
 Use when capturing compliance/evidence metadata — audit fields (createdBy, createdAt, updatedBy, updatedAt, deletedAt), audit trail events, audit evidence, audit finding. Standard immutable history; drives IFRS/SOX compliance. Often shared across all collections via auditFields() helper.
 
-Composes: [[fields]] · [[accounting]] · [[access]] · [[versions]] · [[description]].
+Composes: [[field]] · [[accounting]] · [[access]] · [[versions]] · [[description]].
 
 ## Standards
 

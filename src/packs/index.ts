@@ -47,7 +47,7 @@ import type {
 import { createMembershipAdminMutateAccess } from '@/membership/admin/mutate/access'
 import { tenantScopedCollectionReadAccess } from '@/tenant/scoped/read'
 import { standardCollectionHooks } from '@/standard/collection/hook'
-import { auditFields } from '@/fields'
+import { auditFields } from '@/field'
 import { HORO_DIGITS, isHoroStep, type HoroStep } from '@/horo'
 
 const toNum = (v: unknown): number => {

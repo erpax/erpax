@@ -36,7 +36,7 @@ version: 2
 
 Use when summing a dimension — line total, invoice total, account total, cumulative amount. A computed or captured aggregate; often read-only (computed from detail lines or GL balance). Carries amount + currency.
 
-Composes: [[amount]] · [[currency]] · [[fields]] · [[calculate]] · [[measure]].
+Composes: [[amount]] · [[currency]] · [[field]] · [[calculate]] · [[measure]].
 
 ## Standards
 

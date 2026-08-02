@@ -65,6 +65,6 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 - ISO-27002 §8.24 use-of-cryptography api-credentials-encryption
 
-Composes: [[standard]] · [[fields]] · [[hooks]] · [[access]] · [[identity]].
+Composes: [[standard]] · [[field]] · [[hooks]] · [[access]] · [[identity]].
 
 **Law — [[law]]: the carrier master is the one normalized [[identity]] for every shipping/freight carrier per tenant — INCOTERMS service levels, hazmat flags, credential refs, effective-date lifecycle — so free-text carrier strings in shipments resolve to a single source.**

@@ -45,7 +45,7 @@ This is the single-folder collection node: `index.ts` (schema + standards banner
 
 ## Composition
 
-The collection schema composes [[auth]] (access control via role-based grants), [[access]] (who can read/write/delete), [[fields]] (subject/body/priority/recipients/parentMessage/relatedDocument/readAt/status/audit), [[hooks]] (collection lifecycle mutations and side effects), and [[collections]] (the Payload collection framework). The thread-chain pattern (`parentMessage` replacing Rails `ancestry`) and multi-recipient addressing (`recipients` with join) are implemented via [[fields]] relationship types; ISO 8601 timestamps and audit-trail fields via [[fields]] base helpers.
+The collection schema composes [[auth]] (access control via role-based grants), [[access]] (who can read/write/delete), [[field]] (subject/body/priority/recipients/parentMessage/relatedDocument/readAt/status/audit), [[hooks]] (collection lifecycle mutations and side effects), and [[collections]] (the Payload collection framework). The thread-chain pattern (`parentMessage` replacing Rails `ancestry`) and multi-recipient addressing (`recipients` with join) are implemented via [[field]] relationship types; ISO 8601 timestamps and audit-trail fields via [[field]] base helpers.
 
 ## Standards
 

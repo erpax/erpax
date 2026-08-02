@@ -85,7 +85,7 @@ import type {
 import { createMembershipAdminMutateAccess } from '@/membership/admin/mutate/access'
 import { tenantScopedCollectionReadAccess } from '@/tenant/scoped/read'
 import { standardCollectionHooks } from '@/standard/collection/hook'
-import { referenceField, auditFields } from '@/fields'
+import { referenceField, auditFields } from '@/field'
 import { HORO_DIGITS, isHoroStep, type HoroStep } from '@/horo'
 
 // ─── The option line (the collapse of the 36 fixed columns) ──────────

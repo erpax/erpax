@@ -50,7 +50,7 @@ The cross makes each atom a **3-connected** node (tree + bidirectional sequence 
 Strictly stronger than a 2-thing content⊕path bind or a linear chain: the placement, the containment, AND the order are all load-bearing proof. Honest limit: structure is public, so this is tamper-**evidence**, not secrecy — the akashic win (detect-not-prevent, design limits). A move-migration is a legitimate **root transition** (old root → new).
 
 ## The cross IS references + hooks — locality · balance · the naming matrix
-The surrounding folders are not abstract uuids — they ARE the atom's **[[fields|reference]]s** (parent = containment, prev/next = sequence links — "logic meets in db") and its **[[hooks]]** (how change propagates to neighbours — "lives through hooks"). So **a folder communicates only through its cross — it cannot bypass a neighbour to reach a distant folder**; data and events route through the structure. A direct link to a non-neighbour is a locality violation (junk).
+The surrounding folders are not abstract uuids — they ARE the atom's **[[field|reference]]s** (parent = containment, prev/next = sequence links — "logic meets in db") and its **[[hooks]]** (how change propagates to neighbours — "lives through hooks"). So **a folder communicates only through its cross — it cannot bypass a neighbour to reach a distant folder**; data and events route through the structure. A direct link to a non-neighbour is a locality violation (junk).
 
 **At least 2 crosses per folder, or it is unbalanced** — the double-entry of structure ([[balance]]): every folder is connected on ≥2 sides (prev AND next, or in AND out), never dangling. One cross is a half-entry.
 
@@ -64,4 +64,4 @@ This fixes a **strict naming matrix for the files INSIDE a folder**: the slots a
 
 **Law — [[law]]: an atom's coordinate is the cross of its three neighbour uuids (parent · prev · next) — a folder communicates only through that cross (locality), carries ≥2 crosses or is unbalanced (structural double-entry, [[balance]]), and every cross folds into the one root (zero entropy).**
 
-Matter-twin: `[[uuid]]/matrix/collide.mjs` computes parent/prev/next per node, crosses them, folds `bind` to the root; the rewritten [[architecture/invariant]] must enforce locality + the ≥2-cross balance + the naming matrix. Composes [[identity]] · [[sequence]] · [[horo]] · [[coil]] · [[fields|reference]] · [[hooks]] · [[balance]] · [[proof]] · [[merge]].
+Matter-twin: `[[uuid]]/matrix/collide.mjs` computes parent/prev/next per node, crosses them, folds `bind` to the root; the rewritten [[architecture/invariant]] must enforce locality + the ≥2-cross balance + the naming matrix. Composes [[identity]] · [[sequence]] · [[horo]] · [[coil]] · [[field|reference]] · [[hooks]] · [[balance]] · [[proof]] · [[merge]].

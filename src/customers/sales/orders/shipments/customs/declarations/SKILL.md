@@ -47,7 +47,7 @@ version: 2
 ---
 # customs-declarations
 
-[[shipments]] + [[items]] — WCO HS-coded export/import declarations structured via [[fields]], [[hooks]], and [[access]].
+[[shipments]] + [[items]] — WCO HS-coded export/import declarations structured via [[field]], [[hooks]], and [[access]].
 
 Collection shape: `index.ts` (schema + standards banners), `seed.ts` (opening data), `index.test.ts` (invariant checks).
 One folder per collection ⇒ no scatter ⇒ no drift.

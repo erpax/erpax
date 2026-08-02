@@ -39,7 +39,7 @@ version: 2
 ---
 # accounting — the universal ledger plugin (anything is accountable)
 
-The archetype self-sufficient `@erpax/accounting`: it references every other domain **polymorphically** and depends on none (see [[plugins]]). Built from the canonical erpax **concerns**, which map one-to-one onto reusable field-objects (see [[fields]]) and lifecycle [[hooks]] — concerns ARE the composable atoms, same as our field-factories and skills. Ordered by the [[sequence]].
+The archetype self-sufficient `@erpax/accounting`: it references every other domain **polymorphically** and depends on none (see [[plugins]]). Built from the canonical erpax **concerns**, which map one-to-one onto reusable field-objects (see [[field]]) and lifecycle [[hooks]] — concerns ARE the composable atoms, same as our field-factories and skills. Ordered by the [[sequence]].
 
 ## All is accountable — so `accounting` is a prefix, and double-entry is a uuid trinity
 **`src` IS the chart of accounts** — every folder is an account, every cross ([[coordinate]]) a posting, the ≥2-cross [[balance]] *is* double-entry. Because *all* is accountable, a dedicated `accounting/` folder is a **useless prefix**: it dissolves ([[refactor]] · [[dissolve]]), its units re-homed to their **standard-given entity words** ([[invoices]], [[payment]] …) — a collection's name comes from the [[standard]] it implements, never a prefix. **Merge the standards and the collections wire themselves at ≈0 cost** (same standard ⇒ same name ⇒ collision ⇒ [[merge]] by design ⇒ creation — the fusion reactor).

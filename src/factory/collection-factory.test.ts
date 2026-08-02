@@ -25,7 +25,7 @@ import {
 import { verifyDiamond, diamondUuid } from '@/diamond'
 import {
   notesField, auditFields, statusField, currencyField,
-} from '@/fields'
+} from '@/field'
 import { HORO_DIGITS, HORO_MEASURE } from '@/horo'
 import type { HoroState } from '@/horo'
 

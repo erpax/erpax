@@ -53,7 +53,7 @@ Migrations are Payload-generated — no hand-written DB backward-compat. Clean s
 - `index: true` on fields; `dbName` on fields/groups/collections to control column/table/enum names.
 
 ## Common mistakes
-- **63-char enum/table name** (SQLite/Drizzle limit): deeply-nested group+select paths overflow → add a short `dbName` to the group or field (see [[recover]],[[fields]]).
+- **63-char enum/table name** (SQLite/Drizzle limit): deeply-nested group+select paths overflow → add a short `dbName` to the group or field (see [[recover]],[[field]]).
 - Running interactive `payload migrate` in non-interactive contexts (CI/tests) — it can hang on a prompt. Use `PAYLOAD_TEST_SKIP_MIGRATE=1` in tests or pre-create migrations.
 - Relying on dev push in production instead of `migrate` (see [[deploy]]).
 

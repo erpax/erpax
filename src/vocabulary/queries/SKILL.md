@@ -65,6 +65,6 @@ where: { and: [ { status: { equals: 'published' } }, { tenant: { equals: id } } 
 Save reusable where+columns+sort per collection (`config.queryPresets`); selectable in the admin list view.
 
 ## Common mistakes
-- Filtering/sorting on un-indexed fields (slow — `index: true`, see [[fields]],[[optimize]]).
+- Filtering/sorting on un-indexed fields (slow — `index: true`, see [[field]],[[optimize]]).
 - High `depth` pulling huge relationship trees — use `depth: 0` + `select`/`populate`.
 - Expecting `like` to be case-insensitive everywhere (adapter-dependent).

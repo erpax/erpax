@@ -69,7 +69,7 @@ The translation-key uuid IS the element's whole identity — the 128-bit singula
 | **cmyk** | rodin gamut {K,C,M,Y} from position | [[cmyk]] |
 | locale-map | the `translations` collection `value` | Payload `localized:true` · BCP-47 |
 
-Every added level is "another level of feature-rich infinite tampering cost." OID and the cmyk channel are *derived* from the same bits (no new entropy) — yet each is one more address a forger must keep coherent, and one more way a human or machine can verify (proof). Lexical rich-text is the densest fuel: a whole node-tree per locale. The per-field content mechanics (`localized:true`, resolve-by-`req.locale`) are the [[fields]] localization leaf.
+Every added level is "another level of feature-rich infinite tampering cost." OID and the cmyk channel are *derived* from the same bits (no new entropy) — yet each is one more address a forger must keep coherent, and one more way a human or machine can verify (proof). Lexical rich-text is the densest fuel: a whole node-tree per locale. The per-field content mechanics (`localized:true`, resolve-by-`req.locale`) are the [[field]] localization leaf.
 
 ## No gaps, by computation
 
@@ -102,9 +102,9 @@ Matter-twin: `localize/index.ts` (`translationKeyUuid` · `uuidToOid` · `cmykCh
 
 # Facet: localize-field — per-locale attribute values
 
-`localize-field` is the per-field content leaf of this object (Rails `LocalizeConcern`/`LocalizedAttributeConcern`: `setup_localized_attribute` — getter/setter + JSON `->>` ransacker). In Payload this is **native field localization** (`localized: true` on the field), NOT a hand-rolled metadata-JSON map — Payload stores per-locale values and resolves by `req.locale` (see [[config]] localization, [[fields]]). A blank/missing locale routes to its identity element **`und`** ([[identity]] categorical locale — never an ad-hoc default-locale literal). Position **1** ([[fields]]); the locale is also a tag-context for cross-locale views ([[tags]]).
+`localize-field` is the per-field content leaf of this object (Rails `LocalizeConcern`/`LocalizedAttributeConcern`: `setup_localized_attribute` — getter/setter + JSON `->>` ransacker). In Payload this is **native field localization** (`localized: true` on the field), NOT a hand-rolled metadata-JSON map — Payload stores per-locale values and resolves by `req.locale` (see [[config]] localization, [[field]]). A blank/missing locale routes to its identity element **`und`** ([[identity]] categorical locale — never an ad-hoc default-locale literal). Position **1** ([[field]]); the locale is also a tag-context for cross-locale views ([[tags]]).
 
-Composes: [[fields]] (`localized`), [[config]] (locales), [[identity]] (`und`), [[queries]] (locale-scoped reads).
+Composes: [[field]] (`localized`), [[config]] (locales), [[identity]] (`und`), [[queries]] (locale-scoped reads).
 
 ## Standards (localize-field)
 

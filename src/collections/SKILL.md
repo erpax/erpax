@@ -40,7 +40,7 @@ version: 2
 | Key | Purpose |
 |---|---|
 | `slug` * | Unique kebab-case id; relationships reference it via `relationTo`. THE connector. |
-| `fields` * | Array of [[fields]]. |
+| `fields` * | Array of [[field]]. |
 | `admin` | `useAsTitle`, `defaultColumns`, `group`, `hidden`, `listSearchableFields`, `pagination`, `components`, `livePreview`. |
 | `access` | create/read/update/delete/readVersions/unlock (see [[access]]). |
 | `hooks` | Lifecycle [[hooks]]. |

@@ -61,8 +61,8 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Composition
 
-The collection schema is built with [[fields]], [[access]], and [[hooks]]:
-- **Schema** ([[fields]]): activity name, purpose, controller/processor role, lawful basis (Art.6), data categories (including Art.9 special categories), data subject categories, recipient categories, third-country transfers (Art.44), retention period, security measures (Art.32).
+The collection schema is built with [[field]], [[access]], and [[hooks]]:
+- **Schema** ([[field]]): activity name, purpose, controller/processor role, lawful basis (Art.6), data categories (including Art.9 special categories), data subject categories, recipient categories, third-country transfers (Art.44), retention period, security measures (Art.32).
 - **Access** ([[access]]): tenant-scoped read, admin-gated create/update, tenant-admin delete.
 - **Lifecycle** ([[hooks]]): standard collection hooks for audit and consistency.
 

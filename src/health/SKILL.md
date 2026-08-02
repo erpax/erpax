@@ -39,12 +39,12 @@ version: 2
 
 **1 · One party, infinite roles.** patient · provider · referrer · prescriber · payer are NOT N FK columns. They are ONE relationship under N **role contexts** — the same "(context, value) presents one collection infinitely" law the corpus uses everywhere ([[duality]]: party↔role). The role IS the context.
 
-**2 · The encounter chain is monotonic; status is DERIVED.** patient → encounter → assessment → treatment plan → medication/procedure → outcome. Track stage counters and timestamps; **never store status** — derive it (`active ⟺ admitted ∧ ¬discharged`; `due ⟺ nextDoseAt < now`). Every worklist is a `where`, not a state machine ([[fields]],[[hooks]]).
+**2 · The encounter chain is monotonic; status is DERIVED.** patient → encounter → assessment → treatment plan → medication/procedure → outcome. Track stage counters and timestamps; **never store status** — derive it (`active ⟺ admitted ∧ ¬discharged`; `due ⟺ nextDoseAt < now`). Every worklist is a `where`, not a state machine ([[field]],[[hooks]]).
 
 **3 · The patient record is content-addressed and recoverable from any part.** Same content ⇒ one id ([[identity]],[[merge]]); the whole chart regenerates from its [[fractal]] sub-records ([[holographic]]). A clinical protocol is a standard's form, not decoration — it is the answer-path, audited against [[standard]] (COFOG 07 / clinical-coding banners must be true). Measured outputs — [[vital]] signs, labs, [[observation]] values — are **[[analog]] results** from the [[emr]] snapshot chain: continuous timelines with supersede semantics, reconstructible at any instant (`analogResults` · `reconstructAt` in `src/quantum/emr/index.ts`).
 
 ## Purity (hold the form, forget the corpus)
-The *which* — which slugs realize patients/encounters/treatments — is **matter**: it lives in the Payload config ([[collections]],[[fields]]) and regenerates on demand. Before creating anything, **diff the live config** (DRY). Access to a chart is row-level by patient/provider role ([[access]]). This skill carries only the *law* that places the next piece and lets you forget the rest.
+The *which* — which slugs realize patients/encounters/treatments — is **matter**: it lives in the Payload config ([[collections]],[[field]]) and regenerates on demand. Before creating anything, **diff the live config** (DRY). Access to a chart is row-level by patient/provider role ([[access]]). This skill carries only the *law* that places the next piece and lets you forget the rest.
 
 ## Common mistakes
 - A provider/prescriber as its own FK instead of one polymorphic party ref (role = context).

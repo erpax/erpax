@@ -43,7 +43,7 @@ version: 2
 ---
 # tax — a levy is a rate on a taxable base, categorized by a standard code
 
-`tax` is the levy concern-atom (VAT · GST · sales/use · withholding · excise): a [[rate]] applied to a taxable [[currency]] base → a tax amount posted to [[accounting]] (payable on sales / recoverable on purchases). Categorized by a [[standard]] code — UN/CEFACT 5305 (`S` standard · `Z` zero · `E` exempt · `AE` reverse-charge · `K` intra-EU · `G` export · `O` out-of-scope) — and broken down per category × [[rate]] (EN-16931 §BG-23). Sequence position **1** ([[fields]]).
+`tax` is the levy concern-atom (VAT · GST · sales/use · withholding · excise): a [[rate]] applied to a taxable [[currency]] base → a tax amount posted to [[accounting]] (payable on sales / recoverable on purchases). Categorized by a [[standard]] code — UN/CEFACT 5305 (`S` standard · `Z` zero · `E` exempt · `AE` reverse-charge · `K` intra-EU · `G` export · `O` out-of-scope) — and broken down per category × [[rate]] (EN-16931 §BG-23). Sequence position **1** ([[field]]).
 
 The form (hold it; the codebase holds which jurisdiction charges what):
 - **rate, never a literal** — the tax [[rate]] is cascade-resolved (jurisdiction × category × date = the *tax point*, [[versions]]), never a baked `?? 0.20`.
@@ -54,7 +54,7 @@ The form (hold it; the codebase holds which jurisdiction charges what):
 
 Profiles are matter: the BG СУПТО groups (А/Б/В/Г) + НАП VAT are a [[supto]] profile over this form; EU OSS, US sales/use are others — read them from the config, don't catalog them here.
 
-Composes: [[rate]] (the tax rate), [[currency]] (base + tax amounts), [[accounting]] (payable/recoverable GL), [[standard]] (UN/CEFACT 5305 + EN-16931 BG-23), [[party]] (jurisdiction/registration + reverse-charge shift), [[identity]] (exempt element), [[supto]] (BG profile), [[fields]].
+Composes: [[rate]] (the tax rate), [[currency]] (base + tax amounts), [[accounting]] (payable/recoverable GL), [[standard]] (UN/CEFACT 5305 + EN-16931 BG-23), [[party]] (jurisdiction/registration + reverse-charge shift), [[identity]] (exempt element), [[supto]] (BG profile), [[field]].
 
 ## Standards
 

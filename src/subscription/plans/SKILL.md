@@ -56,4 +56,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - US-GAAP ASC-606 revenue-from-contracts-with-customers
 - SOX §404 internal-controls
 
-Composes: [[access]] · [[fields]] · [[accounting]] · [[standard]] · [[commerce]].
+Composes: [[access]] · [[field]] · [[accounting]] · [[standard]] · [[commerce]].

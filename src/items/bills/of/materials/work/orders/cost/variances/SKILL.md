@@ -55,7 +55,7 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - [[identity]] — audit trail (ISO-19011:2018)
 - [[proof]] — immutable variance-evidence
 - [[hooks]] — standardCollectionHooks + invariant checks
-- [[fields]] — currencyField, statusField, auditFields, referenceField
+- [[field]] — currencyField, statusField, auditFields, referenceField
 
 ## Standards
 

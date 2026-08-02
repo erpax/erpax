@@ -52,6 +52,6 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-trail
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[fields]] · [[hooks]] · [[access]] · [[identity]] · [[standard]].
+Composes: [[field]] · [[hooks]] · [[access]] · [[identity]] · [[standard]].
 
 **Law — [[law]]: each virtual POS terminal is a content-addressed, tenant-scoped, audit-trailed register row whose terminal number feeds the Наредба Н-18 e-shop declaration; decommission preserves history, never erases it.**

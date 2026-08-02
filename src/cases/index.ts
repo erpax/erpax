@@ -21,7 +21,7 @@
  */
 import type { CollectionBeforeChangeHook, CollectionConfig } from 'payload'
 import { partyRoleAccess, scopedAccess } from '@/auth'
-import { auditFields, countryCodeField, referenceField } from '@/fields'
+import { auditFields, countryCodeField, referenceField } from '@/field'
 import { partyRefField, typeField } from '@/discriminator'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { horoStateField, validateHoroStates, type HoroState } from '@/horo'

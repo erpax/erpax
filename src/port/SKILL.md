@@ -39,15 +39,15 @@ ActiveAdmin is to Rails what Payload is to Next: a declarative layer where ONE r
 | Rails / ActiveAdmin | Payload / Next | skill |
 |---|---|---|
 | `ActiveAdmin.register Model do …end` | `CollectionConfig` | [[collections]] |
-| ActiveRecord model + columns | collection `fields[]` (→ payload-types schema) | [[fields]] |
-| **concern** (mixin: Host/Accountable/Currency/Number…) | **reusable field-factory / field-object** (composable atom) | [[fields]] · [[accounting]] |
+| ActiveRecord model + columns | collection `fields[]` (→ payload-types schema) | [[field]] |
+| **concern** (mixin: Host/Accountable/Currency/Number…) | **reusable field-factory / field-object** (composable atom) | [[field]] · [[accounting]] |
 | `index do; column …end` | `admin.defaultColumns` + cell components | [[admin]] |
-| `form do; f.input …end` (formtastic) | field types (text/select/relationship/array/blocks…) | [[fields]] |
+| `form do; f.input …end` (formtastic) | field types (text/select/relationship/array/blocks…) | [[field]] |
 | `filter :x` / `scope :balanced` | list `where` filters / query presets | [[queries]] |
 | `member_action` / `collection_action` | custom `endpoints[]` | [[api]] |
 | `controller do; before_action…end`, `before_save`/`after_create` | collection `hooks` (beforeChange/afterChange…) | [[hooks]] |
 | CanCan/Pundit `authorize_resource` / `can?` | `access` (read/create/update/delete → bool or Where) | [[access]] |
-| `belongs_to` / `has_many` | `relationship` (`relationTo: 'slug'`, `hasMany`) | [[fields]] |
+| `belongs_to` / `has_many` | `relationship` (`relationTo: 'slug'`, `hasMany`) | [[field]] |
 | polymorphic `belongs_to …, polymorphic: true` | `relationship` `relationTo: [..slugs..]` | [[accounting]] |
 | self-referential `has_many :children` (Account/Invoice trees) | relationship-to-self (`relationTo: <own slug>`) | [[accounting]] |
 | `permit_params` | field-level `access` + validation | [[access]] |

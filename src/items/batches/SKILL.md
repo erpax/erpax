@@ -72,6 +72,6 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls traceability-control TOM-TRACE-01
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[items/quality/inspections]] · [[collections]] · [[fields]] · [[accounting]] · [[standard]].
+Composes: [[items/quality/inspections]] · [[collections]] · [[field]] · [[accounting]] · [[standard]].
 
 **Law — [[law]]: a batch carries lot identity and parent-batch genealogy (one-step-back, one-step-forward) so any unit traces to its sources and forward to its products — the recall and traceability spine (EU 178/2002, GS1 AI(10)).**

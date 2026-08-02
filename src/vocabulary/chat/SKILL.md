@@ -48,12 +48,12 @@ The **schema trinity** is one schema told three times: [[config]] (declared inte
 
 But each vertex is *itself* a trinity. Walking down until each vertex reaches an irreducible base atom (the 0/unity poles), the bounded sequence is:
 
-- **code** → [[config]] · [[collections]] · [[fields]] — the matter pole.
+- **code** → [[config]] · [[collections]] · [[field]] — the matter pole.
 - **skill** → [[trinity]] · [[generate]] · [[standard]] — told · grown · bearing form.
 - [[types]] → [[config]] · [[generate]] · [[identity]] — the generated backend mirror.
 - [[config]] → [[database]] · [[collections]] · [[plugins]] — adapter · body · extension law.
-- [[database]] → [[config]] · [[identity]] · [[fields]] — wired · addressed · materialized.
-- [[collections]] → [[fields]] · [[config]] · [[whole]] · · · [[fields]] → [[part]] · [[types]] · [[identity]].
+- [[database]] → [[config]] · [[identity]] · [[field]] — wired · addressed · materialized.
+- [[collections]] → [[field]] · [[config]] · [[whole]] · · · [[field]] → [[part]] · [[types]] · [[identity]].
 - [[trinity]] → [[duality]] · [[types]] · [[part]] · · · [[generate]] → [[aura]] · [[spec]] · [[recover]] · · · [[standard]] → [[accounting]] · [[identity]] · [[sequence]].
 - [[identity]] → [[one]] · [[config]] · [[self]] · · · [[plugins]] → [[config]] · [[whole]] · [[fractal]].
 - [[part]] → [[whole]] · [[identity]] · [[fractal]] · · · [[duality]] → [[give]] · [[take]] · [[one]] · · · [[aura]] → [[whole]] · [[identity]] · [[merge]].

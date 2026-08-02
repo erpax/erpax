@@ -57,4 +57,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-trail performance-evidence
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[access]] · [[fields]] · [[hooks]] · [[identity]] · [[proof]].
+Composes: [[access]] · [[field]] · [[hooks]] · [[identity]] · [[proof]].

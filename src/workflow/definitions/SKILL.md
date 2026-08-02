@@ -51,7 +51,7 @@ This is the single-folder collection node: `index.ts` (schema + standards banner
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
 One folder per collection ⇒ no scatter ⇒ no drift.
 
-Composes [[collections]], [[fields]], [[hooks]], [[access]], [[standard]], [[proof]].
+Composes [[collections]], [[field]], [[hooks]], [[access]], [[standard]], [[proof]].
 
 Workflow instances are gated by [[horo]] state machine transitions; audit evidence preserved via [[identity]] versioning.
 

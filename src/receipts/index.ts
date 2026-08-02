@@ -10,7 +10,7 @@ import {
   fiscalDeviceNumberField,
   operatorCodeField,
   fiscalQrField,
-} from '@/fields'
+} from '@/field'
 
 /**
  * Receipts (касови бонове / electronic receipts) — the Наредба Н-18 fiscal

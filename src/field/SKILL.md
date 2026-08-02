@@ -1,14 +1,14 @@
 ---
-name: fields
+name: field
 description: "Use when defining or debugging Payload fields — choosing a field type, shared field props (name, required, index, unique, defaultValue, validate, access, hooks, admin), relationships, arrays/blocks/groups/tabs, selects, or virtual/join fields."
-atomPath: fields
-coordinate: "fields · 7/descent · a4709d52"
+atomPath: field
+coordinate: "field · 7/descent · a4709d52"
 contentUuid: "c05b064b-12d1-5fd0-b154-d48552c2045e"
 diamondUuid: "0d7456e4-b559-8e18-85b7-b82fd45db02f"
 uuid: "a4709d52-e6c1-8d5b-af9f-a9396203325b"
 horo: 7
 typography:
-  partition: fields
+  partition: field
   bondDegree: 302
 standards: []
 bindings: []

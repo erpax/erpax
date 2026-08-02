@@ -61,6 +61,6 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls return-approval
 - ISO-27002 §5.4 segregation-of-duties
 
-Composes: [[accounting]] · [[transaction]] · [[proof]] · [[hooks]] · [[fields]] · [[standard]].
+Composes: [[accounting]] · [[transaction]] · [[proof]] · [[hooks]] · [[field]] · [[standard]].
 
 **Law — [[law]]: every authorised return links to the credit memo that reverses its original revenue, and restocked quantity never exceeds what was shipped.**

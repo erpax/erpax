@@ -2,7 +2,7 @@ import type { Access, CollectionConfig } from 'payload'
 import { autoPopulateTenant } from '@/auto/populate/tenant'
 import { auditTrailAfterChange } from '@/audit/trail/after/change'
 import { adminOrAccountant, scopedAccess } from '@/auth'
-import { statusField, auditFields } from '@/fields'
+import { statusField, auditFields } from '@/field'
 
 /**
  * Audit Submissions — the evidence log of each Наредба Н-18 Приложение-38

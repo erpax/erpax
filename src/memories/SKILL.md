@@ -61,6 +61,6 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - Conservation Law 8 content-uuid (per-memory contentUuid)
 - Conservation Law 10 referential-harmony (relatedTo graph)
 
-Composes: [[accounting]] · [[fields]] · [[transaction]] · [[uuid]] · [[proof]] · [[standard]] · [[memory/architecture]] · [[memory/session]].
+Composes: [[accounting]] · [[field]] · [[transaction]] · [[uuid]] · [[proof]] · [[standard]] · [[memory/architecture]] · [[memory/session]].
 
 **Law — [[law]]: memories persist agent substrate rows across restarts keyed by (ownerType, ownerId, kind, key), each content-[[uuid]]'d for federation and joined by relatedTo graph edges — a Payload projection INTO the lattice, not operational memory itself ([[memory/architecture]]).**

@@ -110,7 +110,7 @@ import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/auth'
 import type { UserRole } from '@/types/auth'
 import {
   statusField, notesField, auditFields,
-} from '@/fields'
+} from '@/field'
 // Slice PPPPPPPPP (2026-05-11) — tamper-surface review Batch 1.
 // Factory now injects tamperProofUuidField + tamperProofBeforeChangeHook
 // by default so every accounting collection automatically opts into

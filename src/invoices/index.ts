@@ -12,7 +12,7 @@ import { authenticated } from '@/authenticated'
 import { autoPopulateTenant } from '@/auto/populate/tenant'
 import { auditTrailAfterChange } from '@/audit/trail/after/change'
 import { VAT_CATEGORY_OPTIONS } from '@/un/cefact/5305'
-import { unpField, fiscalDeviceNumberField, operatorCodeField, fiscalQrField, saleStatusOptions } from '@/fields'
+import { unpField, fiscalDeviceNumberField, operatorCodeField, fiscalQrField, saleStatusOptions } from '@/field'
 import { adminFieldVisibleForWrite } from '@/admin/ui'
 import { isIso4217 } from '@/iso/4217'
 

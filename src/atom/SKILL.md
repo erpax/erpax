@@ -37,7 +37,7 @@ erpax has ONE kind of thing: the **atom** — a one-word, content-addressed node
 
 - **Irreducible.** The smallest self-sufficient unit — one word, one concept, one content-uuid. Below it is the void ([[zeropoint]]); split it and it ceases to be itself.
 - **Universal.** The same atom recurs at every scale ([[fractal]]) and across every domain (prefix removed) — `transaction` is one atom in commerce, accounting, and agent-billing alike. Reuse, never re-mint ([[merge]]).
-- **Composed.** A molecule is atoms bonded: a collection is [[fields]] · [[hooks]] · [[access]]; an agent is atoms; the [[whole]] is its [[part]]s; the [[holographic]] law regenerates the whole from any atom.
+- **Composed.** A molecule is atoms bonded: a collection is [[field]] · [[hooks]] · [[access]]; an agent is atoms; the [[whole]] is its [[part]]s; the [[holographic]] law regenerates the whole from any atom.
 - **Conserved.** Minted once, content-addressed, merged on collision ([[balance]] · [[akashic]]) — new knowledge is a new atom or a new bond, never a duplicate.
 
 ## Atoms group into elements — the periodic table (the rodin sequence)

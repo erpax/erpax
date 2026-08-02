@@ -66,4 +66,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 
 **Law — [[law]]: a cost-center is a SECONDARY analytical dimension on GL postings (region·unit·department·project, hierarchical via parent) for segment/departmental P&L — it tags JE lines without polluting the chart of accounts.**
 
-Composes: [[hooks]] · [[access]] · [[fields]] · [[accounting]] · [[identity]] · [[proof]] · [[cost/centers/job/positions]].
+Composes: [[hooks]] · [[access]] · [[field]] · [[accounting]] · [[identity]] · [[proof]] · [[cost/centers/job/positions]].

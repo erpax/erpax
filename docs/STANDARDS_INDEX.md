@@ -5814,7 +5814,7 @@ src/factory/collection-factory.ts:282: * @audit ISO 19011:2018 §6.4.6 — backw
 src/factory/collection-factory.ts:84: * @audit ISO-19011:2018 §6.4.6 audit-trail beforeValidate-tenant-populator
 src/factory/recompute-parent-aggregates.ts:25: * @audit ISO-19011:2018 audit-trail derived-total-provenance
 src/fair/value/measurements/index.ts:19: * @audit ISO 19011:2018 §6.4.6 audit-evidence-fair-value
-src/fields/index.ts:7: * @audit Flat namespace to eliminate circular imports and duplicate definitions.
+src/field/index.ts:7: * @audit Flat namespace to eliminate circular imports and duplicate definitions.
 src/financial/statements/index.ts:29: * @audit ISO-19011:2018 audit-trail
 src/fiscal/devices/index.ts:17: * @audit ISO-19011:2018 audit-trail
 src/fiscal/devices/sales/index.ts:26: * @audit ISO-19011:2018 audit-trail

@@ -64,9 +64,9 @@ Constraint: a referenced block is identical everywhere — cannot be modified pe
 - Dev: add `--turbo`; set `devBundleServerPackages: false` in `withPayload`.
 - Host the DB in the same region as the server.
 
-Composes: [[collections]] · [[fields]] · [[queries]] · [[config]] · [[types]] · [[harden]] · [[deploy]].
+Composes: [[collections]] · [[field]] · [[queries]] · [[config]] · [[types]] · [[harden]] · [[deploy]].
 
-**Law — [[law]]: optimize Payload by shape, not by force — index every filtered/sorted [[fields|field]], cap [[queries|query]] depth/select/limit, and define each block ONCE and reference it by slug so the generated [[types]] and [[config]] stay small.**
+**Law — [[law]]: optimize Payload by shape, not by force — index every filtered/sorted [[field|field]], cap [[queries|query]] depth/select/limit, and define each block ONCE and reference it by slug so the generated [[types]] and [[config]] stay small.**
 
 ## Common mistakes
 - Un-indexed fields used for sort/filter (silent slow scans).

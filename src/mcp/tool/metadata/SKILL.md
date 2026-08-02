@@ -64,4 +64,4 @@ The registry below is read live from the backend (`/api/mcp-tool-metadata`); eac
 
 <McpTools />
 
-Composes: [[accounting]] · [[fields]] · [[identity]].
+Composes: [[accounting]] · [[field]] · [[identity]].

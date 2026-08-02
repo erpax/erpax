@@ -45,7 +45,7 @@ In 20 years of etrima production (N=67 865):
 - `units = Σ option_N_units` holds **100.00%** (67 865/67 865).
 - `units_produced = Σ option_N_units_produced` holds **100.00%**.
 
-So the 12 bespoke `option_N_*` column-families fold into ONE context-keyed `options[]` array ([[fields|discriminator]] — many columns ⇒ one array), and the totals are **DERIVED from the options** by `rollUpLotVariantOptions` (beforeChange): when `options[]` is supplied, `units`/`unitsProduced` are computed as the sum, so they can never silently drift from their parts (computed-not-stored).
+So the 12 bespoke `option_N_*` column-families fold into ONE context-keyed `options[]` array ([[field|discriminator]] — many columns ⇒ one array), and the totals are **DERIVED from the options** by `rollUpLotVariantOptions` (beforeChange): when `options[]` is supplied, `units`/`unitsProduced` are computed as the sum, so they can never silently drift from their parts (computed-not-stored).
 
 ## The invariants (data-verified, encoded as `@invariant` + hook)
 - **roll-up** — `units = Σ options[].units` AND `unitsProduced = Σ options[].produced` (100.00% in etrima). `rollUpLotVariantOptions`.
@@ -57,4 +57,4 @@ So the 12 bespoke `option_N_*` column-families fold into ONE context-keyed `opti
 
 **Law — [[law]]: a variant total IS the [[balance|sum]] of its option postings — `units = Σ options[].units` and `unitsProduced = Σ options[].produced` (100.00% over 67 865 etrima rows), computed-not-stored so the roll-up can never drift from its parts, monotonic down the ordered≥produced≥…≥delivered funnel.**
 
-Matter-twin: `src/lot/variants/index.ts`. Composes [[accounting]] · [[balance]] · [[fields|discriminator]] · [[coordinate]] · [[lots]] · [[lot/work/phases]].
+Matter-twin: `src/lot/variants/index.ts`. Composes [[accounting]] · [[balance]] · [[field|discriminator]] · [[coordinate]] · [[lots]] · [[lot/work/phases]].
