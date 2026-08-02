@@ -20,6 +20,9 @@ import {
   CORE_MATH_SPDX,
   isCoreMathPath,
   erpaxLicenseNote,
+  SOURCE_URL,
+  citation,
+  citationComplies,
   type Algebra,
 } from './index'
 import { FOLD } from './fold'
@@ -157,6 +160,35 @@ describe('algebra/license — USER LAW: core math free; rest via contact', () =>
     expect(isCoreMathPath('src/readme/compute.ts')).toBe(false)
     expect(isCoreMathPath('src/algebraic')).toBe(false)
     expect(isCoreMathPath('LICENSE')).toBe(false)
+  })
+
+  it('citation carries attribution + SPDX tier + source URL + commercial + uuid, and complies', () => {
+    const c = citation({ path: 'src/rules/ask', uuid: '9ed56c0c-52f2-8d11-a64b-9a751bdfdf98' })
+    expect(c).toContain('erpax:src/rules/ask')
+    expect(c).toContain('content-uuid 9ed56c0c-52f2-8d11-a64b-9a751bdfdf98')
+    expect(c).toContain('© erpax')
+    expect(c).toContain(ERPAX_SPDX) // AGPL for non-core matter
+    expect(c).toContain(SOURCE_URL) // AGPL §13 source availability
+    expect(c).toContain(LICENSE_CONTACT) // commercial alternative for the copyleft tier
+    expect(citationComplies(c)).toBe(true)
+  })
+
+  it('citation uses the MIT tier for core math and omits the commercial contact', () => {
+    const c = citation({ path: 'src/algebra/index.ts' })
+    expect(c).toContain(CORE_MATH_SPDX)
+    expect(c).not.toContain(ERPAX_SPDX)
+    expect(c).not.toContain(LICENSE_CONTACT)
+    expect(citationComplies(c)).toBe(true)
+  })
+
+  it('citation states the modification when the matter was changed (AGPL §5a)', () => {
+    const c = citation({ path: 'src/rules/ask', modified: '2026-08-02' })
+    expect(c).toContain('modified 2026-08-02')
+  })
+
+  it('citationComplies rejects a citation missing the source URL or SPDX', () => {
+    expect(citationComplies('erpax:src/rules/ask · © erpax')).toBe(false)
+    expect(citationComplies(`© erpax · ${ERPAX_SPDX}`)).toBe(false)
   })
 
   it('erpaxLicenseNote emits free core + contact for copyleft; nothing for permissive', () => {

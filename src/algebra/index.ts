@@ -469,8 +469,12 @@ export {
   LICENSE_CONTACT,
   ERPAX_SPDX,
   CORE_MATH_SPDX,
+  SOURCE_URL,
   isCoreMathPath,
   erpaxLicenseNote,
+  citation,
+  citationComplies,
+  type CitationInput,
 } from './license'
 
 if (import.meta.url === 'file://' + process.argv[1]) {
