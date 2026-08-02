@@ -808,12 +808,7 @@ export interface AccountReconciliation {
   glAdjustments?:
     | {
         category:
-          | 'unrecorded_interest'
-          | 'unrecorded_fee'
-          | 'classification_error'
-          | 'missing_entry'
-          | 'gl_error'
-          | 'other';
+          'unrecorded_interest' | 'unrecorded_fee' | 'classification_error' | 'missing_entry' | 'gl_error' | 'other';
         description: string;
         amount: number;
         originatedAt: string;
@@ -1158,8 +1153,7 @@ export interface BankStatement {
     id?: string | null;
   }[];
   reconciliationStatus?:
-    | ('unreconciled' | 'matched_exact' | 'matched_fuzzy' | 'in_progress' | 'reconciled' | 'discrepancy')
-    | null;
+    ('unreconciled' | 'matched_exact' | 'matched_fuzzy' | 'in_progress' | 'reconciled' | 'discrepancy') | null;
   matchedTransactions?:
     | {
         bankStatementLineIndex: number;
@@ -2482,16 +2476,7 @@ export interface Activity {
   tenant?: (string | null) | Tenant;
   subject: string;
   activityType:
-    | 'call'
-    | 'email'
-    | 'meeting'
-    | 'demo'
-    | 'task'
-    | 'note'
-    | 'social'
-    | 'document_send'
-    | 'quote_send'
-    | 'site_visit';
+    'call' | 'email' | 'meeting' | 'demo' | 'task' | 'note' | 'social' | 'document_send' | 'quote_send' | 'site_visit';
   direction?: ('outbound' | 'inbound' | 'internal') | null;
   activityDate: string;
   durationMinutes?: number | null;
@@ -2633,8 +2618,7 @@ export interface Opportunity {
   expectedCloseDate: string;
   actualCloseDate?: string | null;
   closeReason?:
-    | ('price' | 'product_fit' | 'timing' | 'competitor' | 'internal_politics' | 'budget_cut' | 'other')
-    | null;
+    ('price' | 'product_fit' | 'timing' | 'competitor' | 'internal_politics' | 'budget_cut' | 'other') | null;
   competitor?: string | null;
   forecastCategory?: ('pipeline' | 'best_case' | 'commit' | 'closed' | 'omitted') | null;
   segment?: (string | null) | CustomerSegment;
@@ -2743,8 +2727,7 @@ export interface Customer {
      * Default payment terms
      */
     paymentTerms?:
-      | ('due_on_receipt' | 'net_7' | 'net_14' | 'net_30' | 'net_45' | 'net_60' | 'net_90' | 'custom')
-      | null;
+      ('due_on_receipt' | 'net_7' | 'net_14' | 'net_30' | 'net_45' | 'net_60' | 'net_90' | 'custom') | null;
     /**
      * Custom net days (used when paymentTerms = custom)
      */
@@ -3106,8 +3089,7 @@ export interface Contract {
       }[]
     | null;
   status?:
-    | ('draft' | 'pending_approval' | 'pending_signatures' | 'active' | 'suspended' | 'completed' | 'terminated')
-    | null;
+    ('draft' | 'pending_approval' | 'pending_signatures' | 'active' | 'suspended' | 'completed' | 'terminated') | null;
   activatedAt?: string | null;
   terminatedAt?: string | null;
   /**
@@ -3319,8 +3301,7 @@ export interface ConsentRecord {
   dataSubject: string | User;
   purpose: 'marketing' | 'analytics' | 'transactional' | 'profiling' | 'third_party_sharing' | 'cookies_optional';
   lawfulBasis?:
-    | ('consent' | 'contract' | 'legal_obligation' | 'vital_interests' | 'public_task' | 'legitimate_interests')
-    | null;
+    ('consent' | 'contract' | 'legal_obligation' | 'vital_interests' | 'public_task' | 'legitimate_interests') | null;
   /**
    * Exact text presented to the data subject at the moment of consent.
    */
@@ -3445,8 +3426,7 @@ export interface Vendor {
      * Default payment terms
      */
     paymentTerms?:
-      | ('due_on_receipt' | 'net_7' | 'net_14' | 'net_30' | 'net_45' | 'net_60' | 'net_90' | 'custom')
-      | null;
+      ('due_on_receipt' | 'net_7' | 'net_14' | 'net_30' | 'net_45' | 'net_60' | 'net_90' | 'custom') | null;
     /**
      * Custom net days (used when paymentTerms = custom)
      */
@@ -3686,8 +3666,7 @@ export interface LegalEntity {
    */
   consolidationMethod?: ('full' | 'equity' | 'proportionate' | 'cost' | 'not_consolidated') | null;
   consolidationStatus?:
-    | ('head' | 'subsidiary' | 'associate' | 'joint_venture' | 'joint_operation' | 'investment')
-    | null;
+    ('head' | 'subsidiary' | 'associate' | 'joint_venture' | 'joint_operation' | 'investment') | null;
   /**
    * Mark the reporting parent — exactly one head per consolidation group; used by `consolidation-eliminations` to anchor eliminations.
    */
@@ -5005,12 +4984,7 @@ export interface BoardAction {
     [k: string]: unknown;
   } | null;
   actionType:
-    | 'resolution'
-    | 'policy-approval'
-    | 'risk-assessment'
-    | 'control-enhancement'
-    | 'committee-report'
-    | 'attestation';
+    'resolution' | 'policy-approval' | 'risk-assessment' | 'control-enhancement' | 'committee-report' | 'attestation';
   meetingDate: string;
   actionDate?: string | null;
   status: 'approved' | 'rejected' | 'tabled' | 'withdrawn';
@@ -7945,8 +7919,7 @@ export interface Space {
     | 'stair'
     | 'other';
   usageCategory?:
-    | ('office' | 'meeting' | 'hospitality' | 'production' | 'storage' | 'retail' | 'common' | 'technical')
-    | null;
+    ('office' | 'meeting' | 'hospitality' | 'production' | 'storage' | 'retail' | 'common' | 'technical') | null;
   /**
    * Floor identifier (e.g. `G`, `1`, `2`, `B1`).
    */
@@ -8504,8 +8477,7 @@ export interface Booking {
    */
   journalEntry?: (string | null) | JournalEntry;
   status?:
-    | ('requested' | 'held' | 'confirmed' | 'checked_in' | 'checked_out' | 'settled' | 'no_show' | 'cancelled')
-    | null;
+    ('requested' | 'held' | 'confirmed' | 'checked_in' | 'checked_out' | 'settled' | 'no_show' | 'cancelled') | null;
   confirmedAt?: string | null;
   checkedInAt?: string | null;
   checkedOutAt?: string | null;
@@ -10116,14 +10088,7 @@ export interface ConsolidationElimination {
    */
   consolidationDate: string;
   eliminationType:
-    | 'investment'
-    | 'ic_balance'
-    | 'ic_pl'
-    | 'unrealised_profit'
-    | 'ic_loan'
-    | 'ic_dividend'
-    | 'fctr'
-    | 'other';
+    'investment' | 'ic_balance' | 'ic_pl' | 'unrealised_profit' | 'ic_loan' | 'ic_dividend' | 'fctr' | 'other';
   /**
    * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
    */
@@ -10199,8 +10164,7 @@ export interface IntercompanyTransaction {
    */
   transactionDate: string;
   pairKind?:
-    | ('transfer' | 'service_charge' | 'goods_transfer' | 'loan' | 'capital' | 'cost_allocation' | 'other')
-    | null;
+    ('transfer' | 'service_charge' | 'goods_transfer' | 'loan' | 'capital' | 'cost_allocation' | 'other') | null;
   /**
    * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
    */
@@ -10505,13 +10469,7 @@ export interface CustomsDeclaration {
    */
   mrn?: string | null;
   declarationType:
-    | 'export'
-    | 'import'
-    | 'reexport'
-    | 'transit'
-    | 'temporary_admission'
-    | 'inward_processing'
-    | 'outward_processing';
+    'export' | 'import' | 'reexport' | 'transit' | 'temporary_admission' | 'inward_processing' | 'outward_processing';
   shipment: string | Shipment;
   declarationDate: string;
   /**
@@ -11133,8 +11091,7 @@ export interface DepreciationSchedule {
    */
   currency?: string | null;
   method?:
-    | ('straight_line' | 'declining_balance' | 'double_declining' | 'units_of_activity' | 'sum_of_years_digits')
-    | null;
+    ('straight_line' | 'declining_balance' | 'double_declining' | 'units_of_activity' | 'sum_of_years_digits') | null;
   status?: ('calculated' | 'posted' | 'reversed') | null;
   postedAt?: string | null;
   journalEntry?: (string | null) | JournalEntry;
@@ -11645,8 +11602,7 @@ export interface ExpenseReport {
   reimbursedViaPayment?: (string | null) | Payment;
   journalEntry?: (string | null) | JournalEntry;
   status?:
-    | ('draft' | 'submitted' | 'in_approval' | 'approved' | 'reimbursed' | 'rejected' | 'returned' | 'cancelled')
-    | null;
+    ('draft' | 'submitted' | 'in_approval' | 'approved' | 'reimbursed' | 'rejected' | 'returned' | 'cancelled') | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -11920,8 +11876,7 @@ export interface PaymentRun {
    */
   bankResponseReasonCode?: string | null;
   status?:
-    | ('draft' | 'pending_review' | 'approved' | 'exported' | 'submitted' | 'settled' | 'rejected' | 'cancelled')
-    | null;
+    ('draft' | 'pending_review' | 'approved' | 'exported' | 'submitted' | 'settled' | 'rejected' | 'cancelled') | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -12448,8 +12403,7 @@ export interface GovernmentGrant {
    */
   recognitionMethod: 'deferred_income' | 'net_against_asset' | 'on_receipt' | 'reduce_expense';
   recognitionPattern?:
-    | ('systematic_useful_life' | 'match_to_costs' | 'straight_line' | 'on_milestones' | 'immediate')
-    | null;
+    ('systematic_useful_life' | 'match_to_costs' | 'straight_line' | 'on_milestones' | 'immediate') | null;
   /**
    * Date of formal award letter / contract.
    */
@@ -13021,8 +12975,7 @@ export interface InvestmentProperty {
    * IAS 40 §57-§65 — change-in-use trigger.
    */
   transferReason?:
-    | ('transfer_to_ppe' | 'transfer_from_ppe' | 'transfer_to_inventory' | 'transfer_from_inventory')
-    | null;
+    ('transfer_to_ppe' | 'transfer_from_ppe' | 'transfer_to_inventory' | 'transfer_from_inventory') | null;
   /**
    * When the IP is leased OUT to a tenant (lessor side).
    */
@@ -16207,8 +16160,7 @@ export interface ProjectMilestone {
    */
   acceptanceDocumentRef?: string | null;
   status?:
-    | ('planned' | 'in_progress' | 'pending_acceptance' | 'achieved' | 'invoiced' | 'rejected' | 'cancelled')
-    | null;
+    ('planned' | 'in_progress' | 'pending_acceptance' | 'achieved' | 'invoiced' | 'rejected' | 'cancelled') | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -16357,8 +16309,7 @@ export interface PurchaseRequisition {
    */
   awardedQuote?: (string | null) | VendorQuote;
   status?:
-    | ('draft' | 'submitted' | 'in_approval' | 'approved' | 'rejected' | 'returned' | 'po_created' | 'cancelled')
-    | null;
+    ('draft' | 'submitted' | 'in_approval' | 'approved' | 'rejected' | 'returned' | 'po_created' | 'cancelled') | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -17044,8 +16995,7 @@ export interface Return {
     id?: string | null;
   }[];
   status?:
-    | ('requested' | 'authorised' | 'in_transit' | 'received' | 'restocked' | 'refunded' | 'closed' | 'rejected')
-    | null;
+    ('requested' | 'authorised' | 'in_transit' | 'received' | 'restocked' | 'refunded' | 'closed' | 'rejected') | null;
   authorisedAt?: string | null;
   receivedAt?: string | null;
   restockedAt?: string | null;
@@ -18779,13 +18729,7 @@ export interface Translation {
    * Namespace of the override. Determines which platform layer this row supersedes.
    */
   scope:
-    | 'mcp-tool'
-    | 'ui-surface'
-    | 'event-label'
-    | 'notification-template'
-    | 'standard-citation'
-    | 'chain-step'
-    | 'other';
+    'mcp-tool' | 'ui-surface' | 'event-label' | 'notification-template' | 'standard-citation' | 'chain-step' | 'other';
   /**
    * Scope-local key. For MCP tools, the tool name (e.g. `erpax.consistency.scan`). For UI, the surface key (e.g. `dashboard.welcome.heading`).
    */
@@ -19184,8 +19128,7 @@ export interface WorkflowInstance {
    */
   errorMessage?: string | null;
   status?:
-    | ('pending_start' | 'in_progress' | 'awaiting_action' | 'escalated' | 'completed' | 'cancelled' | 'errored')
-    | null;
+    ('pending_start' | 'in_progress' | 'awaiting_action' | 'escalated' | 'completed' | 'cancelled' | 'errored') | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;

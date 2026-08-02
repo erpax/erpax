@@ -113,7 +113,7 @@ function b64urlEncode(bytes: Uint8Array): string {
   const b64 = Buffer.from(bytes).toString('base64')
   return b64.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/g, '')
 }
-function b64urlDecode(s: string): Uint8Array {
+function b64urlDecode(s: string): Uint8Array<ArrayBuffer> {
   const pad = s.length % 4 === 0 ? '' : '='.repeat(4 - (s.length % 4))
   const b64 = (s + pad).replace(/-/g, '+').replace(/_/g, '/')
   return new Uint8Array(Buffer.from(b64, 'base64'))
@@ -252,7 +252,7 @@ export async function encryptBytesEnvelope(args: {
     await globalThis.crypto.subtle.encrypt(
       { name: 'AES-GCM', iv, tagLength: 128 },
       dek,
-      args.plaintext,
+      args.plaintext as BufferSource,
     ),
   )
   const ciphertext = result.slice(0, result.length - 16)

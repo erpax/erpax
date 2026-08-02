@@ -7,7 +7,7 @@ const cloudflare = defineCloudflareConfig({})
 // The server Worker never renders UI components, so @payloadcms/ui's .scss/.svg imports are
 // pure dead weight. Webpack's server-side compilation should exclude them, but esbuild still
 // tries to load them. We suppress these specific errors and let esbuild continue.
-const suppressUIAssetErrors = (error) => {
+const suppressUIAssetErrors = (error: { code?: string; message?: string }) => {
   if (error.code !== 'ENOENT' && error.message && error.message.includes('@payloadcms/ui')) {
     // Check if it's a missing asset file or unsupported loader issue
     if (/\.(scss|svg|png|jpg|gif)/.test(error.message)) {

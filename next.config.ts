@@ -82,6 +82,21 @@ const nextConfig = {
   // `require('typescript')` for OpenNext/esbuild to re-resolve into the real
   // 8.6 MiB package. The webpack fold below swaps it for stubs/typescript.js.
   serverExternalPackages: ['jose', 'pg-cloudflare', 'sharp', 'sass'],
+  // …and externalising is only HALF the job, which the artifact proved. `serverExternalPackages`
+  // stops webpack INLINING a package into a chunk; it does not stop Next's file tracing from
+  // COPYING it into the server function's node_modules. Measured on the built Worker:
+  // `server-functions/default/node_modules/.pnpm/sass@1.77.4/…/sass.dart.js` — 4.7 MB, shipped,
+  // while the comment above said it "never ships in the Worker". The claim was true of the
+  // bundler and false of the artifact, and nothing checked the artifact.
+  //
+  // Tracing is the second door. sass is not in dependencies OR devDependencies — it arrives
+  // transitively for .scss compilation at build time, and no runtime code imports it.
+  outputFileTracingExcludes: {
+    '**/*': [
+      '**/node_modules/sass/**',
+      '**/node_modules/.pnpm/sass@*/**',
+    ],
+  },
   // Next's post-compile type-check re-runs tsc over the whole type graph and stack-overflows
   // ("Maximum call stack size exceeded") on this corpus. Types are already gated by `pnpm check`
   // (tsx src/cli gate) and `payload generate:types`; skip the redundant, fragile in-build pass.
@@ -104,7 +119,7 @@ const nextConfig = {
     // CRITICAL: apply on CLIENT too. Admin field components (MatrixBondField → @/uuid/matrix)
     // otherwise pull the full ~4 MiB matrix.generated.ts + seal/diamond createRequire into the
     // browser — measured 14 MiB of /admin HTML-referenced assets, TTFB multi-second. FTL:
-    // reuse(precomputed stub address) ≠ search(full matrix) — see src/quantum/ftl/admin.ts.
+    // reuse(precomputed stub address) ≠ search(full matrix) — see src/quantum/ftl/admin/index.ts.
     if (process.env.NODE_ENV === 'production') {
       const stub = (rel: string) => path.resolve(projectRoot, rel)
       const swap = (pattern: RegExp, rel: string) =>

@@ -25,7 +25,7 @@ interface Invoice { id: string; amount: number; iban: string }
 
 async function importKek(rawBytes: Uint8Array): Promise<CryptoKey> {
   return globalThis.crypto.subtle.importKey(
-    'raw', rawBytes,
+    'raw', rawBytes as BufferSource,
     { name: 'HKDF' },
     /* extractable */ false,
     ['deriveKey'],

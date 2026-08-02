@@ -39,7 +39,7 @@ export function tenantAwareInitiatePayment(
       req.payload.logger.warn({ msg: 'Tenant initiate payment: no Stripe secret' })
       throw apiErr(ERR.PAY_INIT_STRIPE_SECRET_MISSING)
     }
-    const apiVersion = (props?.apiVersion ?? '2026-05-27.dahlia') as '2026-05-27.dahlia'
+    const apiVersion = (props?.apiVersion ?? '2026-07-29.dahlia') as '2026-07-29.dahlia'
     const adapter = stripeAdapter({
       apiVersion,
       appInfo: props?.appInfo,
