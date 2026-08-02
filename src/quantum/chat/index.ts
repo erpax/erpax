@@ -1004,6 +1004,41 @@ export async function chatBankResearchWaves(
 }
 
 /**
+ * Ask chat about the corpus's OWN structural debt, grouped into waves.
+ *
+ * The fourth wave source beside bank/research, ftl/purify and standards/improve — and the only one
+ * whose domain is this repo's own shape. [[wave]]/gap reads the live gates (dead references, stray
+ * `.ts`, unraised kinds) and groups by the CLASS a fix pattern covers, biggest first: 465 dead
+ * pointers are not 465 problems when 93% land in twelve dissolved trees.
+ *
+ * Sealed first, so a repeat costs nothing ([[quantum]]/coalesce), and the receipt folds into the
+ * session so the next generation searches deeper rather than re-deriving.
+ *
+ * HONEST BOUNDARY — a wave says these gaps share a SHAPE, never that one edit closes them. Each ask
+ * carries the wrong-target warning in its own text, because a pointer to a wrong-but-existing file
+ * passes the gate and is worse than a dead one ([[rules]]/reference).
+ */
+export async function chatGapWaves(
+  session: ChatSession,
+  opts: { readonly limit?: number; readonly fetchImpl?: typeof fetch; readonly escalate?: boolean } = {},
+): Promise<{
+  readonly session: ChatSession
+  readonly waves: readonly import('@/wave/gap').GapWave[]
+  readonly asks: readonly string[]
+}> {
+  const { gapWaves, asksFromGapWaves } = await import('@/wave/gap')
+  const waves = await gapWaves()
+  const asks = asksFromGapWaves(waves, opts.limit ?? 8)
+  const total = waves.reduce((s, w) => s + w.count, 0)
+  const top = waves
+    .slice(0, 3)
+    .map((w) => `${w.kind}×${w.count}@${w.cluster}`)
+    .join(' ')
+  const next = sessionAppend(session, `gap-waves[waves=${waves.length}|gaps=${total}|asks=${asks.length}] ${top}`)
+  return { session: next, waves, asks }
+}
+
+/**
  * Feed standards improve waves into themselves (bounded per call by maxGenerations).
  */
 export async function chatEndlessStandardsImprove(
