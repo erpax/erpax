@@ -366,8 +366,10 @@ export default defineConfig({
       // (the image literally IS the skill); og:see_also exposes the path-derived
       // subgraph. These URLs are the addresses the catch-all router resolves
       // (a command IS a URL IS a query IS a skill-invocation — see [[sequence]]).
-      const name = fm.name ?? 'skill'
-      const desc = (pageData.frontmatter as { description?: string }).description ?? ''
+      // String() — a numeric atom name (iso/27002, iso/9362, iso/8601 …) survives YAML as a
+      // NUMBER, and vitepress escapeHtml calls .replace on every head attr value.
+      const name = String(fm.name ?? 'skill')
+      const desc = String((pageData.frontmatter as { description?: string }).description ?? '')
       const url = SITE + route
       const qr = QR_ENDPOINT + encodeURIComponent(url)
       const head = (pageData.frontmatter.head ||= []) as [string, Record<string, string>][]

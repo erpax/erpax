@@ -214,7 +214,9 @@ export function trinityHead(skillDir: string, typesPath: string, section: string
   const node = readTrinity(skillDir, typesPath)
   if (!node) return []
   const head: [string, Record<string, string>][] = [['meta', { property: 'article:section', content: section }]]
-  for (const s of node.standards.slice(0, 24)) head.push(['meta', { property: 'article:tag', content: s }])
+  // String() — a standard id like `9562` survives parsing as a NUMBER, and vitepress's
+  // escapeHtml calls .replace on every attr value (str.replace is not a function otherwise).
+  for (const s of node.standards.slice(0, 24)) head.push(['meta', { property: 'article:tag', content: String(s) }])
   if (node.summary) head.push(['meta', { name: 'erpax:summary', content: node.summary.slice(0, 280) }])
   if (node.slug) {
     head.push(
