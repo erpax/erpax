@@ -8,4 +8,12 @@ export {
   deriveSecretFromPayloadSecret,
   internalSecretPurpose,
   type InternalSecretPurpose,
+  horoPosition,
+  horoLabel,
+  advanceKey,
+  rotateKey,
+  foldDimensions,
+  type HoroDirection,
+  type RotateMode,
+  type RotateSpec,
 } from './kdf'
