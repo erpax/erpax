@@ -12,8 +12,11 @@
  * @see ../fs -- ../github -- ../mcp -- ../api -- ../quantum -- ../integrity -- ./SKILL.md
  */
 import { vocabularyFoldAlias } from '@/navigation/github-folded.generated'
-import { uuid, jcsCanonicalize } from '@/integrity'
-import { parentAtomPath } from '@/seal'
+// Both live in the leaf sub-atom (node:crypto + @/uuid/format only); the @/integrity barrel is
+// inside the import component, so taking them from it kept path/ entangled for no benefit.
+import { uuid, jcsCanonicalize } from '@/integrity/content'
+// THE CUT: one pure string function used to cost the whole @/seal barrel.
+import { parentAtomPath } from '@/seal/parent'
 import { recordPathVisit, type PathCanonicalEntry } from './record'
 import {
   nodeOf,
@@ -65,7 +68,7 @@ function githubUrlPath(input: string): string {
   }
 }
 
-/** Pull the src/-relative segment from a repo or fs path. */
+/** Pull the segment relative to the source root from a repo or fs path. */
 function afterSrc(path: string): string {
   const marker = '/src/'
   const idx = path.indexOf(marker)

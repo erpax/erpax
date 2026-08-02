@@ -54,10 +54,9 @@ import { computedAtAllScalesVerdict } from './computed-at-all-scales'
 const NIL_PARENT = '00000000-0000-8000-8000-000000000000'
 
 /** Immediate parent atom path, or null at root / single-segment paths. */
-export function parentAtomPath(atomPath: string): string | null {
-  const i = atomPath.lastIndexOf('/')
-  return i > 0 ? atomPath.slice(0, i) : null
-}
+// Moved to `./parent`, a module with ZERO imports, so an atom needing only the ancestor no longer
+// inherits this barrel's subtree ([[rules]]/cycle). Re-exported so the surface is unchanged.
+export { parentAtomPath, ancestorPaths } from './parent'
 
 /**
  * Seal propagation — child sealed only when locally sealed AND every ancestor holds.
