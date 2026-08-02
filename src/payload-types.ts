@@ -14795,7 +14795,7 @@ export interface McpToolMetadatum {
 /**
  * Generic persistence layer for MCP tools + DomainAgent in-memory state: fix proposals, strategy decisions, drift-cycle snapshots, agent observations, emerging gaps. Every row is content-uuid'd (Law 8) and can declare relatedTo edges (Law 10).
  *
- * — diamond-uuid: b4bb68c8-c2e4-8737-9132-2c106c97aa08
+ * — diamond-uuid: 480c67e6-e6ef-8b4e-a7cb-7d2e4a566703
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "memories".
@@ -18709,7 +18709,7 @@ export interface TransferPricingFile {
 /**
  * Per-tenant override layer above the platform-default localizations. Resolution order: tenant translation > mcp-tool-metadata > code default. Edit value.<locale> via admin UI; runtime resolver picks it up automatically (Payload i18n).
  *
- * — diamond-uuid: a321ca46-3ae8-85c8-85ba-51a43a103512
+ * — diamond-uuid: bf7ff1e5-da57-8444-b9b3-d2cbb5fe197d
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "translations".
