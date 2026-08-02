@@ -68,8 +68,41 @@ export function deriveSecretFrom(master: string | undefined, purpose: string): s
 // period 6. The secret is the master + HMAC one-wayness. The dance returns
 // (×2 then ×5 ≡ ×1); the key never does (each step chains the KDF).
 
-/** Dance direction: forward doubles (×2), reverse halves (×5, the inverse of 2 mod 9). */
-export type HoroDirection = 'forward' | 'reverse'
+/**
+ * The six dance directions — three axes, each a direction and its inverted reflection,
+ * the navigational pyramid {forward,right,up} entangled to the inverted pyramid
+ * {reverse,left,down} (the merkaba / star tetrahedron). On every axis `+` dances the
+ * doubling sequence [1,2,4,8,7,5] (×2); `−` dances its inverted reflection [1,5,7,8,4,2]
+ * (×5, the inverse of 2 mod 9). The axis makes each pair a DISTINCT key dimension.
+ */
+export type HoroDirection = 'forward' | 'reverse' | 'right' | 'left' | 'up' | 'down'
+
+/** direction → (axis, ring step). `+`=2 (sequence), `−`=5 (its inverted reflection). */
+const DIRECTIONS = {
+  forward: { axis: 'x', step: 2 },
+  reverse: { axis: 'x', step: 5 },
+  right: { axis: 'y', step: 2 },
+  left: { axis: 'y', step: 5 },
+  up: { axis: 'z', step: 2 },
+  down: { axis: 'z', step: 5 },
+} as const satisfies Record<HoroDirection, { axis: string; step: number }>
+
+/** Each direction's inverted reflection — the opposite face on its axis. */
+const OPPOSITE = {
+  forward: 'reverse', reverse: 'forward',
+  right: 'left', left: 'right',
+  up: 'down', down: 'up',
+} as const satisfies Record<HoroDirection, HoroDirection>
+
+/** The opposite direction — its own inverted reflection (a ring inverse on the same axis). */
+export function opposite(direction: HoroDirection): HoroDirection {
+  return OPPOSITE[direction]
+}
+
+/** The apex-out tetrahedron: the three `+` directions (the navigational pyramid). */
+export const PYRAMID = ['forward', 'right', 'up'] as const
+/** The apex-in tetrahedron: the three `−` directions (the inverted pyramid, the reflection). */
+export const INVERTED_PYRAMID = ['reverse', 'left', 'down'] as const
 
 /**
  * ratchet   — Kₑ = KDF(Kₑ₋₁, labelₑ): forward-secret (a leaked key cannot recover past keys).
@@ -77,16 +110,17 @@ export type HoroDirection = 'forward' | 'reverse'
  */
 export type RotateMode = 'ratchet' | 'stateless'
 
-/** The horo ring position at an epoch — period 6: forward [1,2,4,8,7,5], reverse [1,5,7,8,4,2]. Pure, public. */
+/** The horo ring position at an epoch — period 6: `+` dances [1,2,4,8,7,5], `−` its reflection [1,5,7,8,4,2]. Pure, public. */
 export function horoPosition(epoch: number, direction: HoroDirection = 'forward'): number {
-  const ring = orbit(direction === 'forward' ? 2 : 5)
+  const ring = orbit(DIRECTIONS[direction].step)
   const i = ((Math.trunc(epoch) % ring.length) + ring.length) % ring.length
   return ring[i]!
 }
 
-/** The KDF purpose label for one rotation step — structured by the dance, unique per (epoch,dimension,direction). */
+/** The KDF purpose label for one rotation step — structured by the dance (axis ⊕ direction), unique per (epoch,dimension). */
 export function horoLabel(epoch: number, dimension: string | number, direction: HoroDirection): string {
-  return `horo:${direction}:${String(dimension)}:e${Math.trunc(epoch)}:p${horoPosition(epoch, direction)}`
+  const { axis } = DIRECTIONS[direction]
+  return `horo:${axis}:${direction}:${String(dimension)}:e${Math.trunc(epoch)}:p${horoPosition(epoch, direction)}`
 }
 
 export interface RotateSpec {
@@ -125,4 +159,18 @@ export function rotateKey(spec: RotateSpec): string {
 /** Fold N per-dimension keys into one cross-dimension key — order-sensitive (dimensions are distinct). */
 export function foldDimensions(keys: readonly string[]): string {
   return keys.reduce<string>((acc, k, i) => deriveSecretFrom(acc + k, `horo:dim:${i}`), DERIVED_V1)
+}
+
+/**
+ * The merkaba key — the navigational pyramid entangled to its inverted reflection. Derives all six
+ * directions (three axes × sequence/reflection), folds the apex-out tetrahedron {forward,right,up}
+ * and the apex-in tetrahedron {reverse,left,down} each, then folds the two together — so flipping
+ * ANY one direction's key changes the whole (the entanglement is tamper-evident). Stateless per epoch.
+ */
+export function merkaba(master: string | undefined, epoch: number, dimension: string | number = 0): string {
+  const keyFor = (direction: HoroDirection): string =>
+    rotateKey({ master, epoch, dimension, direction, mode: 'stateless' })
+  const outward = foldDimensions(PYRAMID.map(keyFor))
+  const inward = foldDimensions(INVERTED_PYRAMID.map(keyFor))
+  return foldDimensions([outward, inward])
 }

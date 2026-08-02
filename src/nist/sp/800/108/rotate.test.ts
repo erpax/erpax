@@ -14,9 +14,15 @@ import {
   advanceKey,
   rotateKey,
   foldDimensions,
+  opposite,
+  merkaba,
+  PYRAMID,
+  INVERTED_PYRAMID,
+  type HoroDirection,
 } from '@/nist/sp/800/108'
 
 const MASTER = 'a-test-master-secret-32-characters!!'
+const ALL_DIRECTIONS: HoroDirection[] = ['forward', 'reverse', 'right', 'left', 'up', 'down']
 
 describe('horoPosition — the public, deterministic dance', () => {
   it('forward dances the doubling ring [1,2,4,8,7,5]', () => {
@@ -92,5 +98,47 @@ describe('honest boundary — the secret carries the unpredictability, never the
   it('no master ⇒ no key — the ring alone derives nothing', () => {
     expect(rotateKey({ master: undefined, epoch: 5, mode: 'stateless' })).toBe('')
     expect(rotateKey({ master: '', epoch: 5, mode: 'stateless' })).toBe('')
+  })
+})
+
+describe('six directions — the sequence and its own inverted reflection, on every axis', () => {
+  it('every `+` direction dances the sequence [1,2,4,8,7,5]', () => {
+    for (const d of ['forward', 'right', 'up'] as HoroDirection[]) {
+      expect([0, 1, 2, 3, 4, 5].map((e) => horoPosition(e, d))).toEqual([1, 2, 4, 8, 7, 5])
+    }
+  })
+  it('every `−` direction dances the inverted reflection [1,5,7,8,4,2]', () => {
+    for (const d of ['reverse', 'left', 'down'] as HoroDirection[]) {
+      expect([0, 1, 2, 3, 4, 5].map((e) => horoPosition(e, d))).toEqual([1, 5, 7, 8, 4, 2])
+    }
+  })
+  it("opposite is the inverted reflection: a direction's sequence reversed-about-1 is its opposite's", () => {
+    for (const d of ['forward', 'right', 'up'] as HoroDirection[]) {
+      const fwd = [0, 1, 2, 3, 4, 5].map((e) => horoPosition(e, d))
+      const rev = [0, 1, 2, 3, 4, 5].map((e) => horoPosition(e, opposite(d)))
+      expect(rev).toEqual([fwd[0], ...fwd.slice(1).reverse()])
+      expect(opposite(opposite(d))).toBe(d) // reflection of the reflection returns
+    }
+  })
+  it('all six directions produce distinct keys at the same epoch (three independent axes)', () => {
+    const keys = ALL_DIRECTIONS.map((direction) => rotateKey({ master: MASTER, epoch: 4, direction }))
+    expect(new Set(keys).size).toBe(6)
+  })
+  it('the pyramid and its inverted reflection partition the six directions', () => {
+    expect([...PYRAMID, ...INVERTED_PYRAMID].sort()).toEqual([...ALL_DIRECTIONS].sort())
+    expect(PYRAMID.map(opposite)).toEqual([...INVERTED_PYRAMID]) // each apex-out face reflects to an apex-in face
+  })
+})
+
+describe('merkaba — pyramid entangled to inverted pyramid', () => {
+  it('is deterministic and needs the master', () => {
+    expect(merkaba(MASTER, 3)).toBe(merkaba(MASTER, 3))
+    expect(merkaba(undefined, 3)).toBe(merkaba(undefined, 3)) // stable, but derives from no secret
+    expect(merkaba(MASTER, 3)).not.toBe(merkaba(MASTER, 4)) // rotates per epoch
+  })
+  it('is entangled: flipping ANY single direction/dimension changes the whole fold', () => {
+    const base = merkaba(MASTER, 3, 'accounting')
+    expect(merkaba(MASTER, 3, 'audit')).not.toBe(base) // a different dimension is a different merkaba
+    expect(merkaba(MASTER, 3)).not.toBe(base) // the default dimension too
   })
 })
