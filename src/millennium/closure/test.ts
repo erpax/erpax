@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 
 import { judge, type Change } from '@/constitution'
+import { PI, exactAbs } from '@/algebra'
 import { MILLENNIUM } from '@/millennium'
 
 import {
@@ -25,9 +26,9 @@ import {
 
 describe('millennium/closure — the zeta evaluator is verified before it is used', () => {
   it('ζ(2) = π²/6 and ζ(4) = π⁴/90, to double precision', () => {
-    expect(zeta(C(2)).re).toBeCloseTo(Math.PI ** 2 / 6, 12)
-    expect(zeta(C(4)).re).toBeCloseTo(Math.PI ** 4 / 90, 12)
-    expect(Math.abs(zeta(C(2)).im)).toBeLessThan(1e-12)
+    expect(zeta(C(2)).re).toBeCloseTo(PI ** 2 / 6, 12)
+    expect(zeta(C(4)).re).toBeCloseTo(PI ** 4 / 90, 12)
+    expect(exactAbs(zeta(C(2)).im)).toBeLessThan(1e-12)
   })
 
   it('ζ vanishes at each of the first six known nontrivial zeros', () => {
@@ -73,7 +74,7 @@ describe('millennium/closure — refutesRiemann decides a candidate', () => {
     // the decider is exercised on a stub that reports ζ = 0 off the line, so the test shows what
     // the predicate DOES rather than only that it currently says no
     const offLine = C(0.6, 14)
-    const wouldRefute = offLine.re > 0 && offLine.re < 1 && Math.abs(offLine.re - CRITICAL_LINE) > 1e-9
+    const wouldRefute = offLine.re > 0 && offLine.re < 1 && exactAbs(offLine.re - CRITICAL_LINE) > 1e-9
     expect(wouldRefute).toBe(true) // the two structural conditions hold; only |ζ| < ε is missing
     expect(cabs(zeta(offLine))).toBeGreaterThan(1e-9)
   })

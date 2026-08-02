@@ -21,6 +21,7 @@
  * @see ./SKILL.md -- ../../analytics/max-tamper-cost.ts
  */
 import { maxTamperCost, type MaxTamperCostReport } from '@/analytics'
+import { exactMin } from '@/algebra'
 
 /** The canonical organ this word names. A pointer that resolves, rather than prose that claims. */
 export const ORGAN = 'analytics/max-tamper-cost'
@@ -47,5 +48,5 @@ export function agreesWithOrgan(w: Weakness = {}): boolean {
  * strong as that link, and adding sealed dimensions beside it changes nothing.
  */
 export function weakestLink(dimensions: readonly number[]): number {
-  return dimensions.length === 0 ? 0 : Math.min(...dimensions)
+  return dimensions.length === 0 ? 0 : dimensions.reduce((a, b) => exactMin(a, b))
 }

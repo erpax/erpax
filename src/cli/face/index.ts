@@ -26,7 +26,7 @@
  * @invariant derivation never overrides a hand-written entry — explicit beats implicit
  * @see ./SKILL.md -- ../registry.ts -- ../../rules/cycle
  */
-import { existsSync, readFileSync, readdirSync } from 'node:fs'
+import { existsSync, readFileSync, readdirSync, type Dirent } from 'node:fs'
 import { join, relative, sep } from 'node:path'
 
 import ts from 'typescript'
@@ -99,7 +99,10 @@ export function derivedCliFaces(cwd: string = process.cwd()): readonly DerivedFa
   const out: DerivedFace[] = []
 
   const walk = (dir: string): void => {
-    let entries: ReturnType<typeof readdirSync>
+    // @types/node (Node 24) made bare `Dirent` default to `Dirent<Buffer>`; `readdirSync` with
+    // `withFileTypes` and no encoding returns `Dirent<string>[]`, so annotate the string variant —
+    // else `entry.name` is a Buffer and loses `.startsWith`/string comparison.
+    let entries: Dirent<string>[]
     try {
       entries = readdirSync(dir, { withFileTypes: true })
     } catch {

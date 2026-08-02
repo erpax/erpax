@@ -43,6 +43,8 @@
  */
 
 /** A point of the hexagonal lattice A₂, written in the ω-basis: `a + bω`, both integers. */
+import { algebraSqrt } from '@/algebra'
+
 export interface Eisenstein {
   readonly a: number
   readonly b: number
@@ -118,7 +120,7 @@ export const KISSING_NUMBER = 6
 
 /** Cartesian image of a lattice point: ω = 1/2 + i·√3/2. This is where the irrationals live. */
 export function cartesian(p: Eisenstein): { x: number; y: number } {
-  return { x: p.a + p.b / 2, y: (p.b * Math.sqrt(3)) / 2 }
+  return { x: p.a + p.b / 2, y: (p.b * algebraSqrt(3)) / 2 }
 }
 
 /**

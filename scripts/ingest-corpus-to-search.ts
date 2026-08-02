@@ -16,7 +16,7 @@
  *
  *   pnpm exec tsx scripts/ingest-corpus-to-search.ts
  *
- * Pure transform: src/components/search/corpus.ts (tested). Corpus source:
+ * Pure transform: src/search/corpus.ts (tested). Corpus source:
  * .vitepress/corpus.mts (shared with the docs). This file is only the glue.
  */
 import { createRequire } from 'node:module'
@@ -25,7 +25,7 @@ import { config as loadEnv } from 'dotenv'
 
 import { loadCorpus } from '../src/corpus/index'
 import { corpusToSearchDocs, type CorpusAtom } from '@/search'
-import { computeContentUuid } from '@/integrity/content-uuid'
+import { computeContentUuid } from '@/integrity'
 
 ;(globalThis as { require?: unknown }).require ??= createRequire(import.meta.url)
 loadEnv()

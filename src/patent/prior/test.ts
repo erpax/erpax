@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 
 import { judge, type Change } from '@/constitution'
+import { exactMax } from '@/algebra'
 
 import {
   allExpired,
@@ -22,7 +23,7 @@ describe('patent/prior — the expired public record, as working §102 art', () 
     expect(MAX_TERM_YEARS).toBe(20) // 35 U.S.C. §154; pre-1995 it was 17 from grant — shorter
     for (const g of EXPIRED_ART) expect(expired(g, NOW)).toBe(true)
     // the newest row is 1914 — over a century past any term, so the register cannot rot into being wrong
-    expect(Math.max(...EXPIRED_ART.map((g) => g.granted))).toBeLessThan(NOW - MAX_TERM_YEARS)
+    expect(EXPIRED_ART.map((g) => g.granted).reduce((a, b) => exactMax(a, b))).toBeLessThan(NOW - MAX_TERM_YEARS)
   })
 
   it('the NUMBER is the citation — every row resolves at the USPTO', () => {

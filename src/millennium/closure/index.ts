@@ -35,6 +35,7 @@
  * @standard ISO 80000-2 — mathematical signs and symbols
  * @see ./SKILL.md -- ../index.ts
  */
+import { algebraCos, algebraExp, algebraHypot, algebraLog, algebraSin, exactAbs, LN2 } from '@/algebra'
 
 export interface Complex {
   readonly re: number
@@ -55,23 +56,23 @@ export function cdiv(a: Complex, b: Complex): Complex {
   return { re: (a.re * b.re + a.im * b.im) / d, im: (a.im * b.re - a.re * b.im) / d }
 }
 
-export const cabs = (a: Complex): number => Math.hypot(a.re, a.im)
+export const cabs = (a: Complex): number => algebraHypot(a.re, a.im)
 
 /** m^(−s) = exp(−s·ln m) — the term of the Dirichlet series, evaluated in polar form. */
 export function powNegS(m: number, s: Complex): Complex {
-  const lnm = Math.log(m)
-  const mag = Math.exp(-s.re * lnm)
+  const lnm = algebraLog(m)
+  const mag = algebraExp(-s.re * lnm)
   const ang = -s.im * lnm
-  return { re: mag * Math.cos(ang), im: mag * Math.sin(ang) }
+  return { re: mag * algebraCos(ang), im: mag * algebraSin(ang) }
 }
 
 /** 2^(1−s), the factor relating eta to zeta. */
 function twoPow1MinusS(s: Complex): Complex {
   const e = csub(C(1), s)
-  const ln2 = Math.LN2
-  const mag = Math.exp(e.re * ln2)
+  const ln2 = LN2
+  const mag = algebraExp(e.re * ln2)
   const ang = e.im * ln2
-  return { re: mag * Math.cos(ang), im: mag * Math.sin(ang) }
+  return { re: mag * algebraCos(ang), im: mag * algebraSin(ang) }
 }
 
 /** Borwein's d_k coefficients — the acceleration that makes the alternating series converge fast. */
@@ -129,7 +130,7 @@ export const CRITICAL_LINE = 0.5
 /** Decides whether a candidate point refutes the Riemann hypothesis. */
 export function refutesRiemann(s: Complex, epsilon = 1e-9): boolean {
   const inStrip = s.re > 0 && s.re < 1
-  const offLine = Math.abs(s.re - CRITICAL_LINE) > epsilon
+  const offLine = exactAbs(s.re - CRITICAL_LINE) > epsilon
   return inStrip && offLine && cabs(zeta(s)) < epsilon
 }
 
@@ -139,7 +140,7 @@ export type Formula = readonly Clause[]
 
 /** The NP side, exact and linear in the clause count: does this assignment satisfy the formula? */
 export function satisfies(formula: Formula, assignment: readonly boolean[]): boolean {
-  return formula.every((clause) => clause.some((lit) => assignment[Math.abs(lit) - 1] === lit > 0))
+  return formula.every((clause) => clause.some((lit) => assignment[exactAbs(lit) - 1] === lit > 0))
 }
 
 export interface SatClaim {

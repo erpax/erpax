@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 
 import { judge, type Change } from '@/constitution'
+import { PI } from '@/algebra'
 
 import {
   assertPhaseClaim,
@@ -84,7 +85,7 @@ describe('rodin/phase — what the turn does NOT do', () => {
     const h = hexagonRatio()
     expect(h.perimeter / h.diameter).toBe(3)
     expect(h.ratio).toBe(3)
-    expect(Math.PI).not.toBe(3) // transcendental (Lindemann 1882) — it is no rational at all
+    expect(PI).not.toBe(3) // transcendental (Lindemann 1882) — it is no rational at all
     // the true statement is smaller than the claim, and exact: 6r / 2r
     expect(h.perimeter).toBe(6)
     expect(h.diameter).toBe(2)

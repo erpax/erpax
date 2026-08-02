@@ -156,7 +156,7 @@ export async function setTagList(
   assertMayWrite(as, 'reconcile taggings')
   const principal = asSystem(as, String(t.tenantId))
   const desiredNames = parseTagList(list)
-  const desiredIds = await findOrCreateTags(payload, desiredNames, t.tenantId, as)
+  const desiredIds = await findOrCreateTags(payload, desiredNames, String(t.tenantId), as)
 
   const current = await payload.find({
     collection: 'taggings' as CollectionSlug,
