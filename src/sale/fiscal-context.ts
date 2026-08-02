@@ -20,7 +20,8 @@
  *
  * @standard BG Наредба-Н-18 §СУПТО fiscal-device-regime
  * @standard ISO-3166-1:2020 country-codes (jurisdiction) · ISO-4217:2015 currency
- * @see src/utilities/tenant-context.ts · src/config/country/specifics.ts · src/collections/FiscalDevices/index.ts
+ * @see src/plugins/auth/context/tenant-context.ts · src/config/country/specifics/index.ts
+ * @ambiguous resolved to specifics/index (main impl, not test); candidates: specifics/test.ts
  */
 
 import type { Payload, PayloadRequest } from 'payload'

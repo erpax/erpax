@@ -25,9 +25,8 @@
  * @audit ISO-19011:2018 audit-trail address-validation
  * @compliance GDPR Art.5(1)(c) data-minimisation
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
- * @see src/utilities/address-validation.ts
- * @see src/utilities/tenant-context.ts
- * @see src/config/address/formats.ts
+ * @see src/shared/address-validation.ts
+ * @see src/plugins/auth/context/tenant-context.ts
  */
 
 import type { CollectionBeforeValidateHook } from 'payload'
