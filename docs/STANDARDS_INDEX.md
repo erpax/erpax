@@ -1380,7 +1380,7 @@ src/held/for/sale/classifications/index.ts:20: * @standard ISO-8601-1:2019 date-
 src/hero/config/index.ts:4: * @standard W3C HTML5 section-element
 src/hero/config/index.ts:5: * @standard schema.org WebPageElement
 src/hero/config/index.ts:6: * @standard WAI-ARIA 1.2 region-landmark-role
-src/horo/index.ts:21: * @standard ISO-16:1975 a432-tuning-reference (the anchor; value from position)
+src/horo/index.ts:24: * @standard ISO-16:1975 a432-tuning-reference (the anchor; value from position)
 src/i18n/harvest/index.ts:30: * @standard W3C HTTP Content-Language (RFC 7231 §3.1.3.2)
 src/i18n/harvest/index.ts:31: * @standard BCP-47 language tags
 src/i18n/index.ts:11: * @standard ECMA-402 internationalization-api
@@ -6442,6 +6442,6 @@ src/dashboard/nav/index.ts:33: * @quality ISO-25010 usability navigability bound
 src/dashboard/spec/index.ts:24: * @quality ISO-25010 maintainability shared-vocabulary reusability
 src/dashboard/spec/projection.ts:17: * @quality ISO-25010 maintainability shared-vocabulary
 src/discriminator/index.ts:13: * @quality ISO-25010 maintainability single-discriminator-vocabulary
-src/horo/index.ts:22: * @quality ISO-25010 maintainability bounded-stable-state-space
+src/horo/index.ts:25: * @quality ISO-25010 maintainability bounded-stable-state-space
 src/types/sti/index.ts:19: * @quality ISO-25010 maintainability discriminated-subtype-safety
 ```

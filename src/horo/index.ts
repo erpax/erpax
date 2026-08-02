@@ -1,4 +1,7 @@
-import { exactMax, exactAbs, exactTrunc, algebraCos, algebraSin, algebraAtan2, algebraSqrt, PI } from '@/algebra'
+// Relative index-face import (same as corpus → ../navigation → ../horo): this atom is on the
+// vitepress config-load path, where the bundled config runs from node_modules/.vite-temp and
+// tsconfig paths cannot resolve '@/…'. Relative keeps the graph esbuild-inlinable.
+import { exactMax, exactAbs, exactTrunc, algebraCos, algebraSin, algebraAtan2, algebraSqrt, PI } from '../algebra'
 /**
  * horo — the seven-position state ring, the erpax matter-twin of
  * `svilena-me/.vitepress/horo-band.js`.
