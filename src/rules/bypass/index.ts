@@ -30,7 +30,7 @@
  * @standard ISO/IEC 25010:2023 §5.4 — security: confidentiality by default
  * @see ./SKILL.md -- ../../rules -- ../unraised
  */
-import { readdirSync, readFileSync } from 'node:fs'
+import { readdirSync, readFileSync, type Dirent } from 'node:fs'
 import { join } from 'node:path'
 
 import { commentsOf } from '@/syntax'
@@ -62,7 +62,7 @@ export function bypassSites(cwd: string = process.cwd()): readonly BypassSite[] 
   const root = join(cwd, REQUEST_ROOT)
 
   const walk = (dir: string): void => {
-    let entries: ReturnType<typeof readdirSync>
+    let entries: Dirent[]
     try {
       entries = readdirSync(dir, { withFileTypes: true })
     } catch {
@@ -111,7 +111,7 @@ export function bypassSites(cwd: string = process.cwd()): readonly BypassSite[] 
 export function allBypasses(cwd: string = process.cwd()): readonly BypassSite[] {
   const out: BypassSite[] = []
   const walk = (dir: string): void => {
-    let entries: ReturnType<typeof readdirSync>
+    let entries: Dirent[]
     try {
       entries = readdirSync(dir, { withFileTypes: true })
     } catch {
