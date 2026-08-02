@@ -8,8 +8,8 @@
 import type { RatchetAxis } from './baseline-types'
 
 export const RATCHET_GENERATED = {
-  contentUuid: "4cfde71c-0521-8821-ab1e-f97bd8dadd70",
-  sealedAt: "2026-08-01",
+  contentUuid: "61dba2d3-bbed-84a8-beaf-3a7dc996a770",
+  sealedAt: "2026-08-02",
   axes: {
     "folder-name": 47,
     "folder-trinity": 214,
@@ -19,7 +19,7 @@ export const RATCHET_GENERATED = {
     "multi-segment-file": 283,
     "accounting-structure": 0,
     "forbidden-intermediate": 0,
-    "diamond-membership": 349,
+    "diamond-membership": 348,
     "import-purity": 0,
     "logic-concentration": 23,
     "word-matter": 1708,
