@@ -25,6 +25,14 @@ overrides:
   brace-expansion@5: ^5.0.8
   undici@7: ^7.28.0
   vite@8: ^8.0.16
+  # Dependabot 2026-08: remaining three vulnerable transitive instances, keys
+  # range-scoped to the vulnerable major so no direct dependency moves.
+  #   undici@5   (@cursor/sdk → @connectrpc/connect-node) — 8 advisories, patched >=6.27
+  #   vite@5     (vitepress 1.x dev server) — fs.deny bypass + NTLM leak, patched >=6.4.3
+  #   @hono/node-server@1 (@payloadcms/plugin-mcp → MCP sdk) — serveStatic traversal, patched >=2.0.5
+  undici@5: ^6.27.0
+  vite@5: ^6.4.3
+  '@hono/node-server@1': ^2.0.5
 
 allowBuilds:
   '@parcel/watcher': true
