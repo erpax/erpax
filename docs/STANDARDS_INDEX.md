@@ -182,8 +182,8 @@ src/ai/cloudflare-ai.ts:43: * @standard ISO/IEC 42001:2023 ai-management-system
 src/ai/cloudflare-ai.ts:44: * @standard NIST AI-RMF-1.0 ai-risk-management-framework
 src/ai/cloudflare-ai.ts:45: * @standard NIST FIPS-180-4 sha-256 audit-row-hash
 src/ai/cloudflare-ai.ts:46: * @standard ISO 27037:2012 evidence-preservation
-src/ai/document-classification.ts:10: * @standard WCAG 2.1 AA (alt-text on classified images)
-src/ai/document-classification.ts:9: * @standard ISO/IEC 23894:2023 ai-risk-management
+src/ai/document-classification.ts:17: * @standard ISO/IEC 23894:2023 ai-risk-management
+src/ai/document-classification.ts:18: * @standard WCAG 2.1 AA (alt-text on classified images)
 src/ai/durable-objects.ts:175: * @standard FIPS 180-4 sha-256 (leaf hashing)
 src/ai/durable-objects.ts:176: * @standard RFC 8785 JSON canonicalization
 src/ai/durable-objects.ts:18: * @standard ISO/IEC 27001 A.5.23 cloud-service-tenant-isolation
@@ -2635,6 +2635,7 @@ src/skill/router/rating.ts:17: * @standard ISO/IEC 25010 §5.5 testability (pure
 src/skill/router/subgraph.ts:20: * @standard ISO/IEC 25010 §5.5 testability (pure, deterministic)
 src/skin/index.ts:24: * @standard largest organ ≈1.2–2.2 m²; stratum corneum barrier; epidermal turnover ~28 days
 src/social/graph/index.ts:10: * @standard W3C ActivityStreams 2.0 Follow/Accept reciprocity
+src/sparsity/index.ts:37: * @standard ISO/IEC 25010:2023 §5.2 — performance efficiency: resource utilisation
 src/spec/generator/chain-registry-generator.ts:16: * @standard ISO/IEC 25010:2023 §5.4 reusability + §5.5 testability
 src/spec/generator/e2e-spec-extractor.ts:24: * @standard ISO/IEC-29119:2022 software-testing test-evidence
 src/spec/generator/e2e-spec-extractor.ts:25: * @standard ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
@@ -3568,7 +3569,7 @@ src/ai/cloudflare-ai.ts:48: * @compliance GDPR Art.22 automated-individual-decis
 src/ai/cloudflare-ai.ts:49: * @compliance GDPR Art.22(3) right-to-human-intervention
 src/ai/cloudflare-ai.ts:50: * @compliance EU AI Act 2024 transparency-and-risk-classification
 src/ai/cloudflare-ai.ts:51: * @compliance SOX §404 internal-controls ai-assisted-decision
-src/ai/document-classification.ts:11: * @compliance EU AI Act 2024 minimal-risk
+src/ai/document-classification.ts:20: * @compliance EU AI Act 2024 minimal-risk
 src/ai/durable-objects.ts:20: * @compliance SOX §404 internal-controls atomic-state
 src/ai/embed-document.ts:14: * @compliance EU AI Act 2024 minimal-risk
 src/ai/hs-code-suggestion.ts:10: * @compliance EU UCC §6 customs-declaration
@@ -4945,6 +4946,7 @@ src/ai/cloudflare-ai.ts:53: * @security ISO-27001 A.5.34 privacy-and-protection-
 src/ai/cloudflare-ai.ts:54: * @security ISO-27002 §5.34 ai-output-validation
 src/ai/cloudflare-ai.ts:55: * @security OWASP-LLM-Top-10:2025 LLM01 prompt-injection
 src/ai/cloudflare-ai.ts:56: * @security OWASP-LLM-Top-10:2025 LLM02 sensitive-information-disclosure
+src/ai/document-classification.ts:19: * @security ISO-27002 §5.34 ai-output-validation
 src/ai/durable-objects.ts:19: * @security ISO-27002 §5.4 segregation-of-duties race-free
 src/ai/embed-document.ts:13: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/ai/models/index.ts:22: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation

@@ -99,7 +99,7 @@ describe('deriveSecretFrom — one construction, two entry points', () => {
         deriveSecretFromPayloadSecret(internalSecretPurpose.cron),
       )
     } finally {
-      if (prior === undefined) delete process.env.PAYLOAD_SECRET
+      if (prior === undefined) delete (process.env as Record<string, string | undefined>).PAYLOAD_SECRET
       else process.env.PAYLOAD_SECRET = prior
     }
   })
