@@ -234,9 +234,13 @@
   // payload.config.ts autoRun default) to reduce Worker invocations.
   "triggers": {
     "crons": [
-      // Default Payload jobs sweep (dunning-cycle + ad-hoc tasks). The
-      // scheduled() handler in .open-next/worker.js POSTs to
+      // Default Payload jobs sweep (dunning-cycle + ad-hoc tasks). The scheduled()
+      // handler is in worker.ts (logic in src/run/cron) and POSTs to
       // /api/payload-jobs/run with the cron-bearer derived from PAYLOAD_SECRET.
+      // It was NOT in .open-next/worker.js as this comment previously claimed —
+      // that artifact contains no scheduled at all, so these triggers fired into
+      // nothing, silently, because wrangler does not warn about a declared
+      // trigger with no handler.
       "*/15 * * * *",
       // BG BNB rates sync — daily at 01:00 UTC. БНБ publishes the day's
       // fixing around 16:00 EET; 01 UTC captures the prior business day.

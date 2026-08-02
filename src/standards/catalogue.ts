@@ -7007,7 +7007,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "The OAuth 2.0 Authorization Framework: Bearer Token Usage",
     "uuid": "0e908ed6-42bf-898a-bf37-ffce4483f580",
     "color": "hsl(128 57% 60%)",
-    "count": 2,
+    "count": 3,
     "modules": [
       {
         "path": "src/oauth/SKILL.md",
@@ -7016,6 +7016,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/oauth/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/run/cron/index.ts",
+        "section": "§2.1"
       }
     ]
   },

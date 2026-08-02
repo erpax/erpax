@@ -42,7 +42,18 @@ export type InternalSecretPurpose = (typeof internalSecretPurpose)[keyof typeof 
  * Used for all internal auth tokens so only `PAYLOAD_SECRET` must be managed.
  */
 export function deriveSecretFromPayloadSecret(purpose: string): string {
-  const master = process.env.PAYLOAD_SECRET
+  return deriveSecretFrom(process.env.PAYLOAD_SECRET, purpose)
+}
+
+/**
+ * The same derivation, with the master supplied explicitly.
+ *
+ * A Worker handler receives its secrets in the `env` argument, not in `process.env`, so the
+ * `process.env` reader above cannot serve it. Re-deriving the HMAC at the call site would be a
+ * SECOND construction of the same key — and two derivations that can drift is precisely how an
+ * internal token stops matching the endpoint that checks it. One construction, two entry points.
+ */
+export function deriveSecretFrom(master: string | undefined, purpose: string): string {
   if (!master) return ''
   return createHmac('sha256', master).update(DERIVED_V1 + purpose).digest('hex')
 }

@@ -86,3 +86,35 @@ describe('NIST SP-800-108 deriveSecretFromPayloadSecret', () => {
     )
   })
 })
+
+describe('deriveSecretFrom — one construction, two entry points', () => {
+  it('the explicit-master form agrees with the process.env form', async () => {
+    const { deriveSecretFrom, deriveSecretFromPayloadSecret, internalSecretPurpose } = await import('./kdf')
+    const prior = process.env.PAYLOAD_SECRET
+    process.env.PAYLOAD_SECRET = 'a-test-master-secret'
+    try {
+      // A Worker handler gets its secrets in `env`, not process.env. If these two ever disagreed,
+      // the cron token would stop matching the endpoint that checks it — silently, on a schedule.
+      expect(deriveSecretFrom('a-test-master-secret', internalSecretPurpose.cron)).toBe(
+        deriveSecretFromPayloadSecret(internalSecretPurpose.cron),
+      )
+    } finally {
+      if (prior === undefined) delete process.env.PAYLOAD_SECRET
+      else process.env.PAYLOAD_SECRET = prior
+    }
+  })
+
+  it('a missing master yields the empty string, never a derivable-looking token', async () => {
+    const { deriveSecretFrom } = await import('./kdf')
+    expect(deriveSecretFrom(undefined, 'cron')).toBe('')
+    expect(deriveSecretFrom('', 'cron')).toBe('')
+  })
+
+  it('the purpose separates the keys — cron and preview are not the same token', async () => {
+    const { deriveSecretFrom, internalSecretPurpose } = await import('./kdf')
+    const m = 'master'
+    expect(deriveSecretFrom(m, internalSecretPurpose.cron)).not.toBe(
+      deriveSecretFrom(m, internalSecretPurpose.preview),
+    )
+  })
+})

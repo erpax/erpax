@@ -4,6 +4,7 @@
  * @standard NIST SP-800-108 key-derivation-function
  */
 export {
+  deriveSecretFrom,
   deriveSecretFromPayloadSecret,
   internalSecretPurpose,
   type InternalSecretPurpose,
