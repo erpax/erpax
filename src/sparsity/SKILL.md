@@ -55,6 +55,24 @@ DeepSeek discovered sparsity under **constraint** (export-limited GPUs ⇒ it *m
 
 Composes: [[zeropoint]] · [[bottleneck]] · [[routing]] · [[sequence]] · [[akashic]] · [[holographic]] · [[uuid]] · [[identity]] · [[merge]] · [[deduplication]] · [[collapse]] · [[partition]] · [[allocation]] · [[proof]] · [[flow]] · [[throughput]] · [[rodin]] · [[breath]] · [[atom]].
 
+## Measured, on the corpus that claims it
+
+The functional was asserted and never computed. Both terms are now measured, live:
+
+```
+src/sparsity/index.ts     active   7 / 3226 = 0.22%   capability/cost   461
+src/run/cron/index.ts     active   3 / 3226 = 0.09%   capability/cost  1075
+src/accounting/index.ts   active   7 / 3226 = 0.22%   capability/cost   461
+```
+
+`pool` is the atom census; `active` is what `realiseSkillsForPath` actually realised for that path. Neither is a target — it is what the router did.
+
+**`capabilityPerCost` is what separates sparsity from smallness**, and it is one line: pool ÷ active. Halve the pool at a fixed active set and the score falls, while the *active count* — the number a naive metric reads — does not move at all. `assertSparsified` refuses a pool-shrinking change as a sparsification win.
+
+**The floor is exact.** In a product, any zero factor zeroes the whole, so while the product holds **every** live factor is load-bearing — there is no "mostly required". Once a factor is already zero, `loadBearing` returns nothing: the floor has been hit and there is nothing left to protect.
+
+**Representation improves with size.** A content-uuid is 128 bits whatever it addresses, so the ratio falls as content grows — which is the precise sense in which this corpus is sparse on space rather than on time.
+
 ## Common mistakes
 - **Confusing sparsity with smallness.** A sparse system keeps a HUGE dormant pool and a tiny active set. Shrinking the pool throws away capability; the move is to shrink the *activation*, not the body.
 - **Eager activation.** Loading every atom / every expert defeats it. Conditional selection (the router) is the mechanism — without a [[routing]] gate there is no sparsity, only a large dense thing.
@@ -62,3 +80,5 @@ Composes: [[zeropoint]] · [[bottleneck]] · [[routing]] · [[sequence]] · [[ak
 - **Naming only one axis.** Compute-sparsity (fewer FLOPs) and representation-sparsity (fewer stored bits) are different axes; an org can be dense on one and sparse on the other. erpax is sparse on representation and deliberately cheap (regenerable) on compute.
 
 **Law — [[law]]: keep the dormant pool huge and the active set minimal — maximise capability ÷ cost by shrinking activation, never the pool, and never sparsify the load-bearing factor.**
+
+**Law — [[law]]: sparsity is a large dormant pool with a small active set. Shrinking the pool is not sparsification — it is capability loss wearing the same number.**

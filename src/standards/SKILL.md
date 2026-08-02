@@ -73,7 +73,7 @@ Composes: [[accounting]] · [[standard]] · [[identity]] · [[proof]].
 
 <!-- CATALOGUE:START -->
 
-## Catalogue — 157 standards, 6621 citations
+## Catalogue — 157 standards, 6622 citations
 
 <!-- GENERATED from registry.ts ⊕ @standard banners by src/standards/emit.ts. Do not edit by hand. -->
 
@@ -121,7 +121,7 @@ The standards erpax cites are not folders — they are dissolved across `src/` a
 
 ### iec
 
-- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(287 80% 39%)"></span> `ISO/IEC-25010` — Systems & software quality models · 185 · `3c2f1991`
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(287 80% 39%)"></span> `ISO/IEC-25010` — Systems & software quality models · 186 · `3c2f1991`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(355 59% 40%)"></span> `ISO/IEC-29119` — Software testing · 42 · `e69bd662`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(25 66% 53%)"></span> `ISO/IEC-23894` — AI risk management · 16 · `bb2197cf`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(331 67% 50%)"></span> `ISO/IEC-42001` — AI management system · 9 · `a03398fc`
