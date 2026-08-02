@@ -10,7 +10,7 @@ import {
   isTamperProofCollection,
   registerTamperProofCollection,
 } from './tamper-proof-uuid-field'
-import { verifyContentUuid } from './content-uuid'
+import { verifyContentUuid } from './content'
 import { encodeStructured, SLOT_TAGS, CAPABILITIES } from '@/uuid/format'
 
 beforeEach(() => {

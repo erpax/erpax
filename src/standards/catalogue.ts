@@ -1472,7 +1472,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/website/seo-vortex.ts",
+        "path": "src/website/seo/index.ts",
         "section": ""
       }
     ]
@@ -5641,7 +5641,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Secure Hash Standard (SHA-2)",
     "uuid": "6a25a77c-19fb-8d7f-85f3-a4a0fda1fbc4",
     "color": "hsl(173 82% 42%)",
-    "count": 36,
+    "count": 37,
     "modules": [
       {
         "path": "src/agent/harmonics.ts",
@@ -5704,8 +5704,12 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/integrity/content-uuid.ts",
+        "path": "src/integrity/content/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/integrity/content/test.ts",
+        "section": "§5.8"
       },
       {
         "path": "src/integrity/resource-bound.ts",
@@ -5733,10 +5737,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/nist/sp/800/108/kdf.ts",
-        "section": ""
-      },
-      {
-        "path": "src/nist/sp/800/38/aes-gcm.ts",
         "section": ""
       }
     ]
@@ -7413,7 +7413,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "UUID (revised — content/event uuid)",
     "uuid": "01855583-c244-8103-b379-0ad77888d2c4",
     "color": "hsl(29 70% 49%)",
-    "count": 158,
+    "count": 159,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -7837,7 +7837,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "JSON Canonicalization Scheme",
     "uuid": "67e3e4b1-0c62-8840-bab2-fa9bba6e4c0c",
     "color": "hsl(315 73% 47%)",
-    "count": 31,
+    "count": 32,
     "modules": [
       {
         "path": "src/ai/durable-objects.ts",
@@ -7864,8 +7864,12 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/integrity/content-uuid.ts",
+        "path": "src/integrity/content/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/integrity/content/test.ts",
+        "section": "§5.8"
       },
       {
         "path": "src/integrity/tamper-proof-uuid-field.ts",
@@ -7929,10 +7933,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/uuid/chain/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/uuid/kv/index.ts",
         "section": ""
       }
     ]
@@ -9664,7 +9664,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/website/seo-vortex.ts",
+        "path": "src/website/seo/index.ts",
         "section": ""
       }
     ]

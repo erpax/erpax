@@ -57,7 +57,11 @@ import { exactMax } from '@/algebra'
  * @audit ISO 19011:2018 §6.4.6 (every replica audit-trailed by uuid)
  */
 
-import { listFaces } from '@/website'
+// THE TANGLE CUT. `@/website` drags the page/agent/spec subtree into @/integrity — the module that
+// exports uuid and jcsCanonicalize to the whole corpus. `@/website/seo` is a sub-atom with ZERO
+// imports, so the binding is identical and the edge is gone. Lawful: the purity rule permits a
+// sub-atom directory carrying an index.ts; only a bare FILE would be a deep import.
+import { listFaces } from '@/website/seo'
 import { listTypes } from './type-uuid'
 import { listBackends } from '@/storage/independence'
 import { TORUS_DEFAULT_ENVELOPE } from '@/topology'

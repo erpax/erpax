@@ -1430,11 +1430,11 @@ src/insurance/contracts/index.ts:17: * @standard IFRS IFRS-17 §93 disclosure-re
 src/insurance/contracts/index.ts:18: * @standard IFRS IFRS-13 fair-value-input-hierarchy
 src/insurance/contracts/index.ts:19: * @standard ISO-4217:2015 currency-codes
 src/insurance/contracts/index.ts:20: * @standard ISO-8601-1:2019 date-time
-src/integrity/content-uuid.test.ts:4: * @standard RFC 9562 §5.8 + RFC 8785 + FIPS 180-4
-src/integrity/content-uuid.ts:42: * @standard RFC 9562 §5.8 name-based UUID (version 8, custom layout)
-src/integrity/content-uuid.ts:43: * @standard RFC 8785 JSON Canonicalization Scheme (JCS)
-src/integrity/content-uuid.ts:44: * @standard ISO/IEC 10118 hash functions
-src/integrity/content-uuid.ts:45: * @standard NIST FIPS 180-4 SHA-256
+src/integrity/content/index.ts:42: * @standard RFC 9562 §5.8 name-based UUID (version 8, custom layout)
+src/integrity/content/index.ts:43: * @standard RFC 8785 JSON Canonicalization Scheme (JCS)
+src/integrity/content/index.ts:44: * @standard ISO/IEC 10118 hash functions
+src/integrity/content/index.ts:45: * @standard NIST FIPS 180-4 SHA-256
+src/integrity/content/test.ts:4: * @standard RFC 9562 §5.8 + RFC 8785 + FIPS 180-4
 src/integrity/envelope.test.ts:17: * @standard NIST SP 800-38D AES-GCM (AEAD authentication failure case)
 src/integrity/envelope.test.ts:18: * @standard RFC 5869 HKDF (the key derivation step)
 src/integrity/envelope.ts:48: * @standard NIST SP 800-38D AES-GCM
@@ -3107,12 +3107,12 @@ src/website/index.ts:26: * @standard Schema.org Article + WebSite + SoftwareAppl
 src/website/marketing-skills.ts:18: * @standard Schema.org WebPage + Article + SoftwareApplication
 src/website/marketing-skills.ts:19: * @standard W3C HTML5 §4 sectioning + WCAG 2.2 §1.4.3 contrast
 src/website/marketing-skills.ts:20: * @standard Open Graph protocol (Facebook 2010+) + Twitter Cards
-src/website/seo-vortex.ts:27: * @standard Schema.org WebPage + Article + SoftwareApplication +
-src/website/seo-vortex.ts:29: * @standard Open Graph protocol (Facebook 2010+) + Twitter Cards
-src/website/seo-vortex.ts:30: * @standard W3C JSON-LD 1.1 + Microdata 1.1
-src/website/seo-vortex.ts:31: * @standard Sitemap.xml protocol 0.9 (sitemaps.org) + Sitemap-Index
-src/website/seo-vortex.ts:32: * @standard RFC 9694 robots.txt + REP (Robots Exclusion Protocol)
-src/website/seo-vortex.ts:33: * @standard ISO/IEC 25010:2023 §5.3 usability — discoverability
+src/website/seo/index.ts:27: * @standard Schema.org WebPage + Article + SoftwareApplication +
+src/website/seo/index.ts:29: * @standard Open Graph protocol (Facebook 2010+) + Twitter Cards
+src/website/seo/index.ts:30: * @standard W3C JSON-LD 1.1 + Microdata 1.1
+src/website/seo/index.ts:31: * @standard Sitemap.xml protocol 0.9 (sitemaps.org) + Sitemap-Index
+src/website/seo/index.ts:32: * @standard RFC 9694 robots.txt + REP (Robots Exclusion Protocol)
+src/website/seo/index.ts:33: * @standard ISO/IEC 25010:2023 §5.3 usability — discoverability
 src/website/shadcn-components.ts:26: * @standard shadcn/ui (Radix UI + Tailwind CSS)
 src/website/shadcn-components.ts:27: * @standard W3C WAI-ARIA 1.2 + WCAG 2.2 AA
 src/website/shadcn-components.ts:28: * @standard W3C Open Graph + Schema.org (carried by surrounding pages)
@@ -3872,7 +3872,7 @@ src/hero/config/index.ts:7: * @compliance WCAG-2.1 §1.4.3 contrast-minimum hero
 src/hero/config/index.ts:8: * @compliance WCAG-2.1 §2.4.6 headings-and-labels
 src/insurance/contracts/index.ts:22: * @compliance Solvency II / IAIS ICS — actuarial reserving link
 src/insurance/contracts/index.ts:23: * @compliance SOX §404 internal-controls TOM-INS-01
-src/integrity/content-uuid.ts:47: * @compliance SOX §404 internal-controls (Byzantine tamper detection)
+src/integrity/content/index.ts:47: * @compliance SOX §404 internal-controls (Byzantine tamper detection)
 src/integrity/tamper-proof-uuid-field.ts:38: * @compliance SOX §404 (Byzantine tamper detection at the row level)
 src/integrity/uuid-ref.ts:29: * @compliance SOX §404 (referential integrity without cascade rules)
 src/internal/controls/audit/findings/index.ts:9: * @compliance SOX §404 internal-controls deficiency-tracking
@@ -5865,7 +5865,7 @@ src/ifrs/15/types.ts:280: * @audit ISO-19011:2018 audit-trail revenue-evidence
 src/ifrs/16/types.test.ts:13: * @audit ISO-19011:2018 audit-trail
 src/ifrs/16/types.ts:11: * @audit ISO-19011:2018 audit-trail
 src/insurance/contracts/index.ts:21: * @audit ISO 19011:2018 §6.4.6 audit-evidence-insurance-contracts
-src/integrity/content-uuid.ts:46: * @audit ISO 19011:2018 §6.4.6 audit-evidence
+src/integrity/content/index.ts:46: * @audit ISO 19011:2018 §6.4.6 audit-evidence
 src/integrity/envelope.ts:57: * @audit ISO 19011:2018 §6.4.6 (every encrypt/decrypt produces an audit-events row)
 src/integrity/resource-bound.ts:33: * @audit Conservation Law 55 (tamper-reversibility-cost) — physical bound
 src/integrity/signatures.ts:50: * @audit ISO 19011:2018 §6.4.6 (every verification produces an audit-events row)
@@ -6356,7 +6356,7 @@ src/warehouse/locations/consignment/arrangements/consignment/sales/index.ts:25: 
 src/warehouse/locations/consignment/arrangements/index.ts:25: * @audit ISO-19011:2018 audit-trail consignment-arrangement-evidence
 src/warehouse/locations/index.ts:15: * @audit ISO-19011:2018 audit-trail location-master-changes
 src/wave/index.ts:27: * @audit the entropy a wave borrows is read from the live matrix, never hand-asserted
-src/website/seo-vortex.ts:34: * @audit ISO 19011:2018 §6.4.6 (every published SEO artefact audit-trailed)
+src/website/seo/index.ts:34: * @audit ISO 19011:2018 §6.4.6 (every published SEO artefact audit-trailed)
 src/widget/AccountReconciliationsPanel.tsx:9: * @audit ISO-19011:2018 audit-trail period-end-evidence
 src/widget/AuditLogWidget.tsx:18: * @audit ISO-19011:2018 audit-trail viewer
 src/widget/BalanceSheetWidget.tsx:7: * @audit ISO-19011:2018 audit-trail period-end-evidence

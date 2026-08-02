@@ -14,7 +14,7 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs'
 import { join } from 'node:path'
 import { proseOf } from '@/rules/reference'
 import { STANDARDS_REGISTRY, type RegisteredStandard } from '@/standards/registry'
-import { uuid } from '@/integrity/content-uuid'
+import { uuid } from '@/integrity/content'
 import { uuidColor } from '@/uuid/projection'
 import { commentsOf } from '@/syntax'
 

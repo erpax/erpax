@@ -56,7 +56,7 @@
  */
 
 import { z, type ZodTypeAny } from 'zod'
-import { computeContentUuid, jcsCanonicalize } from './content-uuid'
+import { computeContentUuid, jcsCanonicalize } from './content'
 
 const TYPE_REGISTRY_NS = 'erpax-type-registry'
 

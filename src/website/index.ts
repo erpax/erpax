@@ -231,8 +231,8 @@ export {
   bitemporalAnchor,
   validateMicrodata,
   __resetFacesForTests,
-} from './seo-vortex'
-export type { SeoVortexFace, SchemaType, OgType, SchemaEdge, SeoCouplingResult, MicrodataValidation } from './seo-vortex'
+} from './seo'
+export type { SeoVortexFace, SchemaType, OgType, SchemaEdge, SeoCouplingResult, MicrodataValidation } from './seo'
 export {
   deriveSeoMeta,
   deriveKeywords,

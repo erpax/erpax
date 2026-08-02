@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { CONFIRM_GATE_CHECKS } from './index'
 import { randomBytes } from 'node:crypto'
 import { toUuid } from '@/uuid/matrix'
-import { nameUuid } from '@/integrity/content-uuid'
+import { nameUuid } from '@/integrity/content'
 import { ERPAX_DIGEST_BITS, CONTENT_DIGEST_BITS } from './index'
 
 /**

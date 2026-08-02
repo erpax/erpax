@@ -65,7 +65,11 @@
  * @audit ISO 19011:2018 §6.4.6 (cross-backend verification audit-trailed)
  */
 
-import { computeContentUuid } from '@/integrity'
+// THE TANGLE CUT. `@/integrity` is inside the 249-file SCC; `@/integrity/content` is a sub-atom whose
+// only imports are node:crypto and @/uuid/format, so it is a leaf. Same binding, no cycle — and it is
+// lawful because the purity rule permits a sub-atom directory with an index.ts, only a FILE is a deep
+// import. This edge was the return leg keeping integrity/index.ts entangled.
+import { computeContentUuid } from '@/integrity/content'
 
 export type BackendId = 'memory' | 'd1' | 'r2' | 'kv' | 'do' | 'ipfs' | 'arweave' | 'filecoin' | 'peer-erpax' | 'federation' | string
 

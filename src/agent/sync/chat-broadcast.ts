@@ -31,8 +31,10 @@ import { createAgentContext } from '../context'
 import { AGENT_RUNTIME_GRANT, defaultAgentLawState } from '@/agent'
 import { chatEmit, type ChatClient } from './payload-chat'
 
-/** Past this many cascade hops the broadcast stops re-dispatching — runaway guard. */
-export const MAX_BROADCAST_DEPTH = 32
+// The constant moved to `./depth`, a module with ZERO imports, so an atom needing only the number
+// no longer inherits this file's subtree ([[rules]]/cycle). Re-exported here so the surface is
+// unchanged for everything that already reads it from `@/agent/sync`.
+export { MAX_BROADCAST_DEPTH } from './depth'
 
 /** Reconstruct the embedded DomainEvent from a `chat` afterChange doc (null if not a valid event row). */
 export function chatDocToDomainEvent(doc: Record<string, unknown>): DomainEvent | null {

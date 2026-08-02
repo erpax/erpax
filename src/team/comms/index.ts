@@ -18,7 +18,9 @@
 import type { CollectionBeforeChangeHook } from 'payload'
 import { computeContentUuid } from '@/integrity'
 import { issueReceipt, type Decision, type Receipt } from '@/receipt'
-import { MAX_BROADCAST_DEPTH } from '@/agent/sync'
+// THE CUT: one symbol used to cost the whole @/agent/sync barrel, which re-exports chat-broadcast
+// and its subtree. The sub-atom holds the same constant with no imports at all.
+import { MAX_BROADCAST_DEPTH } from '@/agent/sync/depth'
 import type { Team } from '@/agent/team'
 import { teamUuid } from '@/agent/team'
 import { getUserTenantIDs } from '@/get/user/tenant/i/ds'

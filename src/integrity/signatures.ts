@@ -52,7 +52,7 @@
  * @see ./content-uuid.ts (computeContentUuid)
  * @see ./envelope.ts (CipherEnvelope — sister type for at-rest secrecy)
  */
-import type { ContentUuid } from './content-uuid'
+import type { ContentUuid } from './content'
 
 /**
  * Allowed signature algorithms. Mirrors RFC 7515 §3.1 `alg` Header

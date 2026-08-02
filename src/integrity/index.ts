@@ -1,12 +1,12 @@
 /**
  * Content-addressable integrity — barrel.
  */
-export type { ContentUuid } from './content-uuid'
+export type { ContentUuid } from './content'
 export {
   computeContentUuid, verifyContentUuid, computeContentDigest,
   jcsCanonicalize, stripNonContentFields, uuid, nameDigest, nameUuid,
   tenantNamespace, ERPAX_NAMESPACE_ROOT, NON_CONTENT_FIELDS,
-} from './content-uuid'
+} from './content'
 
 export {
   TAMPER_PROOF_COLLECTIONS_REGISTRY, registerTamperProofCollection,
