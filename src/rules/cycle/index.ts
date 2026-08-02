@@ -286,26 +286,50 @@ export function topLevelUses(file: string, cwd: string = process.cwd(), within?:
   )
   if (names.size === 0) return []
 
+  // PARSED, not matched — and this atom of all atoms had to be the one to learn it twice.
+  //
+  // The line-based scanner this replaces read a CONCISE ARROW BODY as a bare top-level call:
+  //
+  //     export const p = (): string =>
+  //       toAtomPath(somePath, 'fs') || 'fallback'      ← counted as fatal
+  //
+  // Line 1's initialiser starts with `(`, so it was correctly skipped as deferred. But a concise
+  // arrow body opens NO BRACE, so the brace-depth counter stayed at 0 and line 2 matched the
+  // "bare call statement" branch. The continuation line of a deferred function was reported as
+  // running at load time. Seven of twenty-four "fatal" uses were that shape and cannot throw.
+  //
+  // Ancestry is the theorem: a call is evaluated at load time iff no ancestor is function-like.
+  // No brace counting, no line seams, no multi-line blind spot ([[rules]]/cycle's own law — the
+  // grammar is the theorem, a pattern that resembles it is a guess).
+  // Parse the ORIGINAL text, never the comment-stripped `code`. That stripping exists for the
+  // line scanner; feeding it to the parser corrupts the source, because the `//` rule also deletes
+  // lines where `//` sits inside a string literal. The tree then recovers badly, function
+  // boundaries are lost, and calls inside function bodies read as top-level. Measured: doing that
+  // reported 14 sites in one barrel that are all inside functions. A parser does not need help
+  // recognising a comment — that is what makes it a parser.
   const out: TopLevelUse[] = []
-  const lines = code.split('\n')
-  let depth = 0
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i]!
-    if (depth === 0) {
-      const decl = line.match(/^\s*(?:export\s+)?(?:const|let|var)\s+[\w$]+(?:\s*:[^=]+)?\s*=\s*(.*)$/)
-      const init = decl?.[1] ?? (/^\s*[\w$]+\s*\(/.test(line) ? line : undefined) // bare call statement
-      // a value that IS a function is deferred — it runs long after initialisation
-      if (init !== undefined && !/^(?:async\s*)?(?:\(|function\b|[\w$]+\s*=>)/.test(init.trim())) {
-        for (const m of init.matchAll(/([\w$]+)\s*\(/g)) {
-          if (names.has(m[1]!)) out.push({ file: relative(cwd, file).replace(/\\/g, '/'), binding: m[1]!, line: i + 1 })
-        }
-      }
+  const sf = ts.createSourceFile(file, text, ts.ScriptTarget.Latest, true)
+  const deferred = (n: ts.Node): boolean => {
+    for (let p: ts.Node | undefined = n.parent; p; p = p.parent) {
+      if (
+        ts.isFunctionDeclaration(p) || ts.isFunctionExpression(p) || ts.isArrowFunction(p) ||
+        ts.isMethodDeclaration(p) || ts.isConstructorDeclaration(p) ||
+        ts.isGetAccessorDeclaration(p) || ts.isSetAccessorDeclaration(p)
+      ) return true
     }
-    for (const ch of line) {
-      if (ch === '{' || ch === '(' || ch === '[') depth++
-      else if (ch === '}' || ch === ')' || ch === ']') depth = exactMax(0, depth - 1)
-    }
+    return false
   }
+  const visit = (n: ts.Node): void => {
+    if (ts.isCallExpression(n) && ts.isIdentifier(n.expression) && names.has(n.expression.text) && !deferred(n)) {
+      out.push({
+        file: relative(cwd, file).replace(/\\/g, '/'),
+        binding: n.expression.text,
+        line: sf.getLineAndCharacterOfPosition(n.getStart(sf)).line + 1,
+      })
+    }
+    ts.forEachChild(n, visit)
+  }
+  visit(sf)
   return out
 }
 

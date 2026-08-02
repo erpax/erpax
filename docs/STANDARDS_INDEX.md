@@ -2398,6 +2398,7 @@ src/rules/reference/index.ts:22: * @standard ZDDS — BG Value Added Tax Act; st
 src/rules/refutable/index.ts:28: * @standard Popper — a proposition that forbids nothing explains nothing
 src/rules/refutable/index.ts:29: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/rules/unfolded/index.ts:19: * @standard ISO/IEC 25010:2023 §5.5 — reusability: a function called once is inlined, deleted, or reused
+src/run/cron/index.ts:24: * @standard RFC 6750 §2.1 — Bearer token in the Authorization header
 src/saf/t/export/service/index.test.ts:8: * @standard ISO/IEC-29119:2022 software-testing
 src/saf/t/export/service/index.test.ts:9: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
 src/saf/t/export/service/index.ts:1247: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax

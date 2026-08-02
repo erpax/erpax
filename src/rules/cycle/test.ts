@@ -159,6 +159,43 @@ describe('rules/cycle — an import loop decides initialisation order', () => {
       rmSync(cwd, { recursive: true, force: true })
     })
 
+    /**
+     * A MULTI-LINE concise arrow body is deferred, and the line scanner said otherwise.
+     *
+     * `export const p = (): string =>\n  make()` — line one's initialiser starts with `(`, so it
+     * was correctly skipped; but a concise arrow body opens NO BRACE, so the brace-depth counter
+     * stayed at 0 and line two matched the "bare call statement" branch. The continuation line of
+     * a deferred function was reported as running at load time. Seven live sites had this shape.
+     */
+    it('does NOT flag a MULTI-LINE concise arrow body — the continuation line is still deferred', () => {
+      const cwd = corpus({
+        'src/a/index.ts': "import { make } from '@/b'\nexport const build = (): string =>\n  make() || 'fallback'",
+        'src/b/index.ts': "import { build } from '@/a'\nexport const make = () => build",
+      })
+      expect(fatalCycleUses(cwd)).toHaveLength(0)
+      rmSync(cwd, { recursive: true, force: true })
+    })
+
+    /**
+     * The worse bug, and the reason this is parsed rather than matched.
+     *
+     * The line scanner only judged depth 0, so EVERY top-level `if` / `try` / `for` block was
+     * invisible to it — a call that genuinely runs at module load, reported green. A false
+     * negative in a gate is worse than a false positive: it reports clean over the exact case the
+     * gate exists for. Ancestry is the theorem — a call is evaluated at load time iff no ancestor
+     * is function-like.
+     */
+    it('DOES flag a call inside a top-level block — depth is not deferral', () => {
+      const cwd = corpus({
+        'src/a/index.ts': "import { make } from '@/b'\nexport let built\nif (process.env.X) {\n  built = make()\n}",
+        'src/b/index.ts': "import { built } from '@/a'\nexport const make = () => built",
+      })
+      const uses = fatalCycleUses(cwd)
+      expect(uses).toHaveLength(1)
+      expect(uses[0]).toMatchObject({ file: 'src/a/index.ts', binding: 'make' })
+      rmSync(cwd, { recursive: true, force: true })
+    })
+
     // The scan reported 49 uses until this check existed; ~44 were `join`, `existsSync`, `createRequire` —
     // node builtins, fully initialised before our graph starts and incapable of the failure being hunted.
     it('does NOT flag a builtin called at top level — node:path cannot be in a dead zone', () => {
