@@ -56,18 +56,32 @@ export function sealedExists(path: string): boolean {
   return sealedPaths().has(path)
 }
 
-/** Read a path's SEALED committed content (git blob, SHA-addressed); '' when absent. The sealed `readFileSync`. */
+const sealedReadCache = new Map<string, string>()
+
+/**
+ * Read a path's SEALED committed content (git blob, SHA-addressed); '' when absent. The sealed
+ * `readFileSync`. Memoized — a sealed blob is content-addressed, so its bytes never change within a
+ * run: spend the `git show` once, reuse forever (the FTL law, applied to the reader itself — O(1)
+ * amortized instead of one process per call).
+ */
 export function sealedRead(path: string): string {
-  if (!sealedExists(path)) return ''
-  try {
-    return execFileSync('git', ['show', `HEAD:${path}`], {
-      encoding: 'utf8',
-      maxBuffer: 1 << 28,
-      stdio: ['ignore', 'pipe', 'ignore'],
-    })
-  } catch {
-    return ''
-  }
+  const hit = sealedReadCache.get(path)
+  if (hit !== undefined) return hit
+  const out = sealedExists(path)
+    ? (() => {
+        try {
+          return execFileSync('git', ['show', `HEAD:${path}`], {
+            encoding: 'utf8',
+            maxBuffer: 1 << 28,
+            stdio: ['ignore', 'pipe', 'ignore'],
+          })
+        } catch {
+          return ''
+        }
+      })()
+    : ''
+  sealedReadCache.set(path, out)
+  return out
 }
 
 /** The tamper-cost chain's leaf inputs — the conventions @/collider composes into the forge-cost. */
