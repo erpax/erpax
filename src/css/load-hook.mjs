@@ -19,6 +19,14 @@ registerHooks({
         source: 'export default {}\n',
       }
     }
+    // A `node:` builtin can arrive tsx-namespaced (e.g. `node:stream?tsx-namespace=1785635319179`).
+    // The default loader then `readFileSync`s that full URL as a path → ENOENT, which crashed
+    // `payload generate:types` in the Cloudflare (Node 24) Workers build. Only for a query-tagged
+    // node: URL, strip the cache-buster and load the clean builtin. Untagged node: (the common case,
+    // and the only form seen locally) is untouched, so behaviour is unchanged everywhere else.
+    if (url.startsWith('node:') && url.includes('?')) {
+      return nextLoad(url.slice(0, url.indexOf('?')), context)
+    }
     return nextLoad(url, context)
   },
 })

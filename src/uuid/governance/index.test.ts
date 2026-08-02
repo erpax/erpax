@@ -136,7 +136,7 @@ describe('verifyGovernance — chain walk + capability read-back', () => {
     // Genesis leaf needs to be persisted by the test.
     // We synthesise it from the scope's metadata.
     const genesis = await import('@/uuid/chain').then(async (m) => m.forgeGenesisLink<TestEntity>({
-      payloadUuid: (await import('@/integrity/content-uuid').then((c) => c.computeContentUuid(
+      payloadUuid: (await import('@/integrity').then((c) => c.computeContentUuid(
         { entity: { kind: 'tenant', name: 'acme' }, capabilities: scope.capabilities, schemaVersion: 1, establishedAt: '2026-05-11T08:00:00.000Z' },
         TENANT,
       ))) as never,

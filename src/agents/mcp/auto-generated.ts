@@ -100,7 +100,7 @@ function toolsForCollections(): ErpaxMcpTool[] {
     description: `[generated] Conservation Law 8 — recompute the content uuid for one row of '${slug}' and report match/mismatch. Pass the row JSON + tenantId.`,
     parameters: { row: z.record(z.unknown()), tenantId: z.string() } as z.ZodRawShape,
     async handler({ row, tenantId }) {
-      const { verifyContentUuid } = await import('@/integrity/content-uuid')
+      const { verifyContentUuid } = await import('@/integrity')
       return json(verifyContentUuid(row as Record<string, unknown>, tenantId as string))
     },
   }))
