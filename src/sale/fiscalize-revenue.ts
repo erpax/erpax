@@ -16,7 +16,7 @@
  * @standard BG Наредба-Н-18 §СУПТО sale-register · §чл.3-ал.1 fiscalization-scope
  * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
  * @audit ISO-19011:2018 audit-trail event-driven
- * @see src/services/sales/order-fiscalization.ts · src/services/sales/subscription-fiscalization.ts
+ * @see src/sale/order-fiscalization.ts · src/sale/subscription-fiscalization.ts
  */
 
 import type { Payload, PayloadRequest } from 'payload'

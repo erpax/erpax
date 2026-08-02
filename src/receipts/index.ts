@@ -22,7 +22,7 @@ import {
  * @standard BG Наредба-Н-18 §СУПТО касов-бон · §алтернативен-режим e-receipt
  * @audit ISO-19011:2018 audit-trail
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
- * @see src/services/sales/fiscal-receipt.ts · src/services/sales/virtual-device.ts
+ * @see src/sale/fiscal-receipt.ts · src/sale/virtual-device.ts
  */
 const neverDelete: Access = () => false
 

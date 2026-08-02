@@ -7,7 +7,7 @@
  *
  * @standard BG Наредба-Н-18 §СУПТО касов-бон issuance-on-close
  * @audit ISO-19011:2018 audit-trail event-driven
- * @see src/services/sales/fiscal-receipt.ts · src/services/sales/sale-event.ts
+ * @see src/sale/fiscal-receipt.ts · src/sale/sale-event.ts
  */
 
 import type { Payload, PayloadRequest } from 'payload'

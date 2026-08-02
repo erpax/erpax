@@ -11,7 +11,7 @@ import { exactRound } from '@/algebra'
  * @standard BG Наредба-Н-18 §СУПТО sale-register e-shop-alternative-regime
  * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
  * @audit ISO-19011:2018 audit-trail event-driven
- * @see src/services/sales/fiscalize-revenue.ts · src/ecommerce/hooks/emitOrderLifecycleEvents.ts
+ * @see src/sale/fiscalize-revenue.ts · src/ecommerce/hooks/emitOrderLifecycleEvents.ts
  */
 
 import type { Payload, PayloadRequest } from 'payload'

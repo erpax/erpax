@@ -15,7 +15,7 @@ import { exactFloor } from '@/algebra'
  * @standard BG Наредба-Н-18 §СУПТО sale-register · §чл.3-ал.1 card-payment-in-scope
  * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers performance-obligation
  * @audit ISO-19011:2018 audit-trail event-driven
- * @see src/services/sales/fiscalize-revenue.ts · src/services/sales/fiscal-context.ts
+ * @see src/sale/fiscalize-revenue.ts · src/sale/fiscal-context.ts
  */
 
 import type { Payload, PayloadRequest } from 'payload'

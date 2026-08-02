@@ -13,7 +13,7 @@
  *
  * @standard BG Наредба-Н-18 §дневен-отчет · §Приложение-1 tax-groups
  * @audit ISO-19011:2018 §6.4 audit-evidence
- * @see src/services/sales/fiscal-receipt.ts (the shared VAT engine) · src/services/sales/audit-file.ts
+ * @see src/sale/fiscal-receipt.ts (the shared VAT engine) · src/sale/audit-file.ts
  */
 
 import { vatBreakdownForItems, type FiscalVatSubtotal } from './fiscal-receipt'

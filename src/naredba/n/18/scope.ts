@@ -19,7 +19,7 @@
  * @standard BG Наредба-Н-18 §чл.3-ал.1 fiscalization-scope-by-payment
  * @standard BG ЗДДС §118 fiscal-receipt-obligation
  * @standard BG ЗПУПС payment-services (PSP transfers)
- * @see src/services/sales/unp-sequence.ts · src/services/sales/order-fiscalization.ts
+ * @see src/sale/unp-sequence.ts · src/sale/order-fiscalization.ts
  */
 
 /** Payment methods that REQUIRE a касов бон (СУПТО-scope). */

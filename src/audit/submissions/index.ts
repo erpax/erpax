@@ -15,7 +15,7 @@ import { statusField, auditFields } from '@/fields'
  * @audit ISO-19011:2018 §6.4 audit-evidence
  * @compliance SOX §404 internal-controls
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
- * @see src/services/sales/submit-audit-file.ts · src/jobs/salesAuditFileJob.ts
+ * @see src/sale/submit-audit-file.ts · src/jobs/salesAuditFileJob.ts
  */
 const neverDelete: Access = () => false
 
