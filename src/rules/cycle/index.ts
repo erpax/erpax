@@ -316,6 +316,19 @@ export function topLevelUses(file: string, cwd: string = process.cwd(), within?:
         ts.isMethodDeclaration(p) || ts.isConstructorDeclaration(p) ||
         ts.isGetAccessorDeclaration(p) || ts.isSetAccessorDeclaration(p)
       ) return true
+      // The CLI main-guard is deferral too, and missing it cost 34 of 46 reported sites.
+      //
+      //     if (import.meta.url === `file://${process.argv[1]}`) { … }
+      //
+      // The `if` statement is at module scope, so "no function ancestor" is literally true — and
+      // the wrong question. That body runs ONLY when the file is the process entry point, never on
+      // import, so it cannot sit in an import cycle's dead zone: by the time a CLI entry executes,
+      // every module it imported has finished initialising. A rule right in general and wrong for
+      // one idiom is how the line scanner failed too; this is the same lesson at the next depth.
+      if (ts.isIfStatement(p)) {
+        const cond = p.expression.getText(sf)
+        if (/import\.meta\.url/.test(cond) && /process\.argv/.test(cond)) return true
+      }
     }
     return false
   }

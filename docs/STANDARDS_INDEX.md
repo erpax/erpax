@@ -697,6 +697,7 @@ src/cloudflare/plugin-access.ts:42: * @standard ISO 27002 §5.4 segregation-of-d
 src/cloudflare/plugin-helper.ts:27: * @standard ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/cloudflare/seal.ts:10: * @standard NIST SP-800-38D AES-GCM
 src/cloudflare/seal.ts:9: * @standard NIST SP-800-108 key-derivation-function
+src/cloudflare/surface/index.ts:33: * @standard ISO/IEC 25010:2023 §5.3 — compatibility: co-existence with the platform's contract
 src/cmspage/access/superAdminOrTenantAdmin.ts:6: * @standard NIST INCITS-359-2012 role-based-access-control
 src/cmspage/hooks/beforeChange.ts:8: * @standard ISO-8601-1:2019 date-time published-at
 src/cmspage/hooks/revalidatePage.ts:10: * @standard W3C HTML5 Living Standard

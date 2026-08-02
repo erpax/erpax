@@ -185,6 +185,24 @@ describe('rules/cycle — an import loop decides initialisation order', () => {
      * gate exists for. Ancestry is the theorem — a call is evaluated at load time iff no ancestor
      * is function-like.
      */
+    /**
+     * The CLI main-guard is deferral, and missing it cost 34 of 46 reported sites.
+     *
+     * `if (import.meta.url === \`file://${process.argv[1]}\`)` sits at module scope, so "no
+     * function ancestor" is literally true and the wrong question: that body runs ONLY when the
+     * file is the process entry point, never on import. It cannot be in an import cycle's dead
+     * zone, because by the time a CLI entry executes every module it imported has initialised.
+     */
+    it('does NOT flag a call inside the CLI main-guard — it never runs on import', () => {
+      const guard = 'if (import.meta.url === `file://${process.argv[1]}`) {\n  make()\n}'
+      const cwd = corpus({
+        'src/a/index.ts': `import { make } from '@/b'\n${guard}`,
+        'src/b/index.ts': "import { a } from '@/a'\nexport const make = () => a",
+      })
+      expect(fatalCycleUses(cwd)).toHaveLength(0)
+      rmSync(cwd, { recursive: true, force: true })
+    })
+
     it('DOES flag a call inside a top-level block — depth is not deferral', () => {
       const cwd = corpus({
         'src/a/index.ts': "import { make } from '@/b'\nexport let built\nif (process.env.X) {\n  built = make()\n}",
