@@ -14,7 +14,7 @@ overrides:
   form-data: ^4.0.6
   ws: ^8.21.0
   js-yaml: ^4.3.0
-  hono: ^4.12.27
+  hono: ^4.12.34
   immutable: ^4.3.9
   fast-uri: ^3.1.4
   sharp: ^0.35.0
@@ -1381,7 +1381,7 @@ packages:
     resolution: {integrity: sha512-eWpQYr67tqJLeaSUl0Q+TquuYfUdTibpOJlUMV2FfUP7+KqCC5TufnwnlXL6mobZBJbGAYRd7ZvEBDCbLInjhg==}
     engines: {node: '>=20'}
     peerDependencies:
-      hono: ^4.12.27
+      hono: ^4.12.34
 
   '@hookform/resolvers@5.5.7':
     resolution: {integrity: sha512-CyPCYV8/KlXfEXLWj8HHHhVsR/IZ6Ckm3b/a4fWtO/lRnRK1huqncb8LlAWrmpPRsse5glF5aVuDRMHEr3UGag==}
@@ -4640,8 +4640,8 @@ packages:
   dom-helpers@5.2.1:
     resolution: {integrity: sha512-nRCa7CK3VTrM2NmGkIy4cbK7IZlgBE/PYMn55rrXefr5xXDP0LdtfPnblFDoVdcAfslJ7or6iqAUnx0CCGIWQA==}
 
-  dompurify@3.4.12:
-    resolution: {integrity: sha512-zQvGet8Z2sWbQhCmfFz/T5QWH2oBmjnqK3qvOjaqaNLrLEF912WamU+ohnTp0TCep/MFVHpdJuCZEdFOdTnEFg==}
+  dompurify@3.4.13:
+    resolution: {integrity: sha512-2vmYIoqjze2d+kakP8S/nS5shfsl587kzwEjcGlTdiksUVgFHnFCsLYDVj/JNqJVOQZGSYBTmuycv0PodwmnMQ==}
 
   dotenv@16.6.1:
     resolution: {integrity: sha512-uBq4egWHTcTt33a72vpSG0z3HnPuIl6NqYcTrKEg2azoEyl2hpW0zqlxysq2pK9HlDIHyHyakeYaYnSAwd8bow==}
@@ -5503,8 +5503,8 @@ packages:
     resolution: {integrity: sha512-eSmmWE5bZTK2Nou4g0AI3zZ9rswp7GRKoKXS1BLUkvPviOqs4YTN1djQIqrXy9k5gEtdLPy86JjRwsNM9tnDcA==}
     engines: {node: '>=0.10.0'}
 
-  hono@4.12.33:
-    resolution: {integrity: sha512-+SwvkaiJtxsiPjhy9LivY/1m7UsNqCJetM1BrZl9A5DkQhlbHQDU730mMiDPWjnoCYOM8Chf3WrCJw27kNTPFQ==}
+  hono@4.13.0:
+    resolution: {integrity: sha512-jhunvfHWxd7J5EFfSgH4xsYJzSe/lfqbUCxiyyeaQasUsXeEHXtzVid+7EOGByc5JnFa23SSFL3Y2RV/z1T+eQ==}
     engines: {node: '>=16.9.0'}
 
   hookable@5.5.3:
@@ -9330,9 +9330,9 @@ snapshots:
     dependencies:
       '@formatjs/fast-memoize': 3.1.7
 
-  '@hono/node-server@2.0.12(hono@4.12.33)':
+  '@hono/node-server@2.0.12(hono@4.13.0)':
     dependencies:
-      hono: 4.12.33
+      hono: 4.13.0
 
   '@hookform/resolvers@5.5.7(@standard-schema/spec@1.1.0)(ajv@8.20.0)(react-hook-form@7.84.0(react@19.2.8))(zod@3.25.76)':
     dependencies:
@@ -9673,7 +9673,7 @@ snapshots:
 
   '@modelcontextprotocol/sdk@1.27.1(zod@3.25.76)':
     dependencies:
-      '@hono/node-server': 2.0.12(hono@4.12.33)
+      '@hono/node-server': 2.0.12(hono@4.13.0)
       ajv: 8.20.0
       ajv-formats: 3.0.1(ajv@8.20.0)
       content-type: 1.0.5
@@ -9683,7 +9683,7 @@ snapshots:
       eventsource-parser: 3.1.0
       express: 5.2.1
       express-rate-limit: 8.5.2(express@5.2.1)
-      hono: 4.12.33
+      hono: 4.13.0
       jose: 6.2.3
       json-schema-typed: 8.0.2
       pkce-challenge: 5.0.1
@@ -12802,7 +12802,7 @@ snapshots:
       '@babel/runtime': 7.29.7
       csstype: 3.2.3
 
-  dompurify@3.4.12:
+  dompurify@3.4.13:
     optionalDependencies:
       '@types/trusted-types': 2.0.7
 
@@ -13894,7 +13894,7 @@ snapshots:
     dependencies:
       parse-passwd: 1.0.0
 
-  hono@4.12.33: {}
+  hono@4.13.0: {}
 
   hookable@5.5.3: {}
 
@@ -14730,7 +14730,7 @@ snapshots:
 
   monaco-editor@0.55.1:
     dependencies:
-      dompurify: 3.4.12
+      dompurify: 3.4.13
       marked: 14.0.0
 
   ms@2.1.3: {}
