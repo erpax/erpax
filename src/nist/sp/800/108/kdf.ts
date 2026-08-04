@@ -20,6 +20,7 @@
 
 import { createHmac } from 'node:crypto'
 import { orbit } from '@/rodin'
+import { exactMax, exactTrunc } from '@/algebra'
 
 /** Prefix isolates purposes and allows rotating derivation without changing master secret semantics */
 const DERIVED_V1 = 'erpax:derived:v1:'
@@ -113,14 +114,14 @@ export type RotateMode = 'ratchet' | 'stateless'
 /** The horo ring position at an epoch — period 6: `+` dances [1,2,4,8,7,5], `−` its reflection [1,5,7,8,4,2]. Pure, public. */
 export function horoPosition(epoch: number, direction: HoroDirection = 'forward'): number {
   const ring = orbit(DIRECTIONS[direction].step)
-  const i = ((Math.trunc(epoch) % ring.length) + ring.length) % ring.length
+  const i = ((exactTrunc(epoch) % ring.length) + ring.length) % ring.length
   return ring[i]!
 }
 
 /** The KDF purpose label for one rotation step — structured by the dance (axis ⊕ direction), unique per (epoch,dimension). */
 export function horoLabel(epoch: number, dimension: string | number, direction: HoroDirection): string {
   const { axis } = DIRECTIONS[direction]
-  return `horo:${axis}:${direction}:${String(dimension)}:e${Math.trunc(epoch)}:p${horoPosition(epoch, direction)}`
+  return `horo:${axis}:${direction}:${String(dimension)}:e${exactTrunc(epoch)}:p${horoPosition(epoch, direction)}`
 }
 
 export interface RotateSpec {
@@ -149,7 +150,7 @@ export function advanceKey(
 /** Derive the rotated key for (epoch, dimension) — configurable ratchet|stateless, DRY over the SP 800-108 KDF. */
 export function rotateKey(spec: RotateSpec): string {
   const { master, epoch, dimension = 0, direction = 'forward', mode = 'ratchet' } = spec
-  const e = Math.max(0, Math.trunc(epoch))
+  const e = exactMax(0, exactTrunc(epoch))
   if (mode === 'stateless') return deriveSecretFrom(master, horoLabel(e, dimension, direction))
   let key = master ?? ''
   for (let i = 1; i <= e; i++) key = advanceKey(key, i, dimension, direction)

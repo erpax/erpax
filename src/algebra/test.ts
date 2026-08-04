@@ -147,7 +147,7 @@ describe('algebra/license — USER LAW: core math free; rest via contact', () =>
   it('CORE_MATH_GLOB and LICENSE_CONTACT are the sealed constants', () => {
     expect(CORE_MATH_GLOB).toBe('src/algebra/**')
     expect(LICENSE_CONTACT).toBe('license@erpax.com')
-    expect(ERPAX_SPDX).toBe('AGPL-3.0-or-later')
+    expect(ERPAX_SPDX).toBe('CC-BY-NC-ND-4.0')
     expect(CORE_MATH_SPDX).toBe('MIT')
   })
 
@@ -167,9 +167,9 @@ describe('algebra/license — USER LAW: core math free; rest via contact', () =>
     expect(c).toContain('erpax:src/rules/ask')
     expect(c).toContain('content-uuid 9ed56c0c-52f2-8d11-a64b-9a751bdfdf98')
     expect(c).toContain('© erpax')
-    expect(c).toContain(ERPAX_SPDX) // AGPL for non-core matter
-    expect(c).toContain(SOURCE_URL) // AGPL §13 source availability
-    expect(c).toContain(LICENSE_CONTACT) // commercial alternative for the copyleft tier
+    expect(c).toContain(ERPAX_SPDX) // BY-NC-ND for non-core matter
+    expect(c).toContain(SOURCE_URL) // BY-NC-ND §3(a)(1) attribution source link
+    expect(c).toContain(LICENSE_CONTACT) // commercial alternative for the NC tier
     expect(citationComplies(c)).toBe(true)
   })
 
@@ -181,7 +181,7 @@ describe('algebra/license — USER LAW: core math free; rest via contact', () =>
     expect(citationComplies(c)).toBe(true)
   })
 
-  it('citation states the modification when the matter was changed (AGPL §5a)', () => {
+  it('citation states the modification when the matter was changed (BY-NC-ND §3(a)(1)(B))', () => {
     const c = citation({ path: 'src/rules/ask', modified: '2026-08-02' })
     expect(c).toContain('modified 2026-08-02')
   })
@@ -191,8 +191,8 @@ describe('algebra/license — USER LAW: core math free; rest via contact', () =>
     expect(citationComplies(`© erpax · ${ERPAX_SPDX}`)).toBe(false)
   })
 
-  it('erpaxLicenseNote emits free core + contact for copyleft; nothing for permissive', () => {
-    const note = erpaxLicenseNote('AGPL-3.0-or-later').join('\n')
+  it('erpaxLicenseNote emits free core + contact for the restricted tier; nothing for permissive', () => {
+    const note = erpaxLicenseNote('CC-BY-NC-ND-4.0').join('\n')
     expect(note).toMatch(/free for all/)
     expect(note).toMatch(/src\/algebra\/\*\*/)
     expect(note).toMatch(/@erpax\/algebra/)

@@ -14,7 +14,7 @@ export const CORE_MATH_GLOB = 'src/algebra/**' as const
 export const LICENSE_CONTACT = 'license@erpax.com' as const
 
 /** Package SPDX for everything outside core math. */
-export const ERPAX_SPDX = 'AGPL-3.0-or-later' as const
+export const ERPAX_SPDX = 'CC-BY-NC-ND-4.0' as const
 
 /** SPDX for the publishable free core-math package (`@erpax/algebra`). */
 export const CORE_MATH_SPDX = 'MIT' as const
@@ -27,10 +27,10 @@ export function isCoreMathPath(repoPath: string): boolean {
 
 /**
  * README license body — GENERATED from this law so the diamond cannot drift.
- * Copyleft SPDX emits the note; permissive emits nothing (no dual-license playbook).
+ * A restricted SPDX (copyleft or NC/ND) emits the note; permissive emits nothing.
  */
 export function erpaxLicenseNote(license: string): string[] {
-  if (!/AGPL|GPL/i.test(license)) return []
+  if (!/AGPL|GPL|CC-BY/i.test(license)) return []
   return [
     `**Core math** (\`${CORE_MATH_GLOB}\` · exact* / algebra* · \`@erpax/algebra\` · ${CORE_MATH_SPDX}): free for all.`,
     `Everything else — ([${ERPAX_SPDX}](LICENSE) / commercial) via \`${LICENSE_CONTACT}\`.`,
@@ -38,7 +38,7 @@ export function erpaxLicenseNote(license: string): string[] {
   ]
 }
 
-/** Where the Corresponding Source lives — AGPL §13 requires it be reachable when the work is used over a network. */
+/** Where the licensed material lives — CC BY-NC-ND §3(a)(1) attribution requires the source link. */
 export const SOURCE_URL = 'https://github.com/erpax/erpax' as const
 
 /** What an agent needs to cite one piece of corpus matter in license compliance. */
@@ -47,7 +47,7 @@ export interface CitationInput {
   readonly path: string
   /** The matter's content-uuid — the corpus's own citation primitive (cite by uuid, never by copy). */
   readonly uuid?: string
-  /** ISO date, set only if the citing work MODIFIED the matter (AGPL §5a: state the change + its date). */
+  /** ISO date, set only if the citing work MODIFIED the matter (CC BY-NC-ND §3(a)(1)(B): indicate modifications; §2(a)(1) NoDerivatives — modified matter may be produced but NOT shared). */
   readonly modified?: string
 }
 
@@ -55,13 +55,14 @@ export interface CitationInput {
  * The one line an agent emits to cite corpus matter in COMPLIANCE with the license.
  *
  * It carries every element the license requires: attribution (© erpax), the SPDX for the
- * matter's TIER (MIT for core math via isCoreMathPath, else AGPL-3.0-or-later), the source
- * URL (AGPL §13 — Corresponding Source must be reachable), the commercial alternative for the
- * copyleft tier, and — when the matter was changed — the modification notice (§5a). The
- * content-uuid is the corpus's citation primitive: an agent cites BY uuid, it does not copy.
+ * matter's TIER (MIT for core math via isCoreMathPath, else CC-BY-NC-ND-4.0), the source
+ * URL (BY-NC-ND §3(a)(1) — attribution with the source link), the commercial alternative for
+ * the restricted tier (NC — commercial use needs the separate licence), and — when the matter
+ * was changed — the modification notice (§3(a)(1)(B)). The content-uuid is the corpus's
+ * citation primitive: an agent cites BY uuid, it does not copy.
  *
  * @example citation({ path: 'src/rules/ask', uuid: '9ed5…' })
- *   → 'erpax:src/rules/ask · content-uuid 9ed5… · © erpax · AGPL-3.0-or-later · source https://github.com/erpax/erpax · commercial license@erpax.com'
+ *   → 'erpax:src/rules/ask · content-uuid 9ed5… · © erpax · CC-BY-NC-ND-4.0 · source https://github.com/erpax/erpax · commercial license@erpax.com'
  */
 export function citation(input: CitationInput): string {
   const spdx = isCoreMathPath(input.path) ? CORE_MATH_SPDX : ERPAX_SPDX
