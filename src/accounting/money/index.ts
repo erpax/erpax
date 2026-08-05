@@ -12,7 +12,6 @@
  * @accounting US-GAAP ASC-210 balance-sheet
  * @audit ISO-19011:2018 audit-trail integer-only-arithmetic
  * @see docs/STANDARDS.md §4.2
- * @see src/standards/_money/
  */
 
 import { exactAbs, exactRound } from '@/algebra'
@@ -26,16 +25,12 @@ export const createAmountField = (fieldName: string = 'amount') => {
       description: `Monetary amount in cents (${fieldName} = cents, divide by 100 for display)`,
     },
     validate: (value: number) => {
-      // Value must be an integer (cents)
       if (!Number.isInteger(value)) {
         return 'Amount must be stored as integer cents (e.g., 9999 for $99.99)'
       }
-
-      // Value must be within reasonable limits (up to $9,999,999.99)
       if (exactAbs(value) > 999999999) {
         return 'Amount exceeds maximum allowed value'
       }
-
       return true
     },
     hooks: {

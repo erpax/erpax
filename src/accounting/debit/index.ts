@@ -43,21 +43,8 @@ export interface ValidatedEntry {
   variance: number
 }
 
-/**
- * CANONICAL DEBIT/CREDIT RULES
- * Source: Accounting fundamentals (double-entry bookkeeping)
- */
 export class DebitCreditLogic {
-  /**
-   * Account type rules (fundamental accounting equation)
-   *
-   * Assets:        Normal = Debit (increased by debit, decreased by credit)
-   * Liabilities:   Normal = Credit (increased by credit, decreased by debit)
-   * Equity:        Normal = Credit (increased by credit, decreased by debit)
-   * Income:        Normal = Credit (increased by credit, decreased by debit)
-   * Expense:       Normal = Debit (increased by debit, decreased by credit)
-   * COGS:          Normal = Debit (increased by debit, decreased by credit)
-   */
+  // Debit/credit rules per account type (fundamental accounting equation)
   private static readonly RULES: Record<AccountType, DebitCreditRule> = {
     asset: {
       accountType: 'asset',

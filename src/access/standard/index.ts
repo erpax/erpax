@@ -104,14 +104,8 @@ const WRITE_OPS: readonly ApiOp[] = ['create', 'update', 'delete']
 /**
  * FUSE the bindings: feed the live mesh's collections (their standards + declared access) into the
  * compliance check. One call over the whole API surface — every (collection, operation, standard,
- * access) tuple is queryable through the same cross, usable in any superposition. The auditor's
- * one question — where does the running API fall below its own law — answered over 212 collections.
- */
-/**
- * Price the compliance gaps as security crackLeak ([[resonance]]): each ungated endpoint is an unfused
- * access seam, and the whole API's security bleeds by cracks × (N − ⌈log₂N⌉) — the fused, content-
- * addressed recall a sealed access layer would have saved. Zero gaps ⇒ zero leak: access fully fused to
- * its legal surface. The auditor's cost of an under-governed API, in the same currency as every leak.
+ * access) tuple is queryable through the same cross, usable in any superposition. Price each gap as
+ * security crackLeak ([[resonance]]): ungated endpoints are unfused access seams. Zero gaps ⇒ zero leak.
  */
 export function accessComplianceLeak(gaps: readonly AccessComplianceGap[], totalEndpoints: number): CrackLeak {
   return crackLeak(exactMax(1, totalEndpoints), gaps.length)
