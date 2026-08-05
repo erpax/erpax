@@ -1,7 +1,7 @@
 ---
-name: engine
+name: fulfillment
 description: Child atom extracted from hub
-atomPath: workflow/engine
+atomPath: commerce/fulfillment
 coordinate: ""
 contentUuid: ""
 diamondUuid: ""

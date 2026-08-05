@@ -1,7 +1,7 @@
 ---
-name: engine
+name: seal
 description: Child atom extracted from hub
-atomPath: workflow/engine
+atomPath: diamond/seal
 coordinate: ""
 contentUuid: ""
 diamondUuid: ""

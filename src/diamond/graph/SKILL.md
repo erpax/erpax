@@ -1,7 +1,7 @@
 ---
-name: engine
+name: graph
 description: Child atom extracted from hub
-atomPath: workflow/engine
+atomPath: diamond/graph
 coordinate: ""
 contentUuid: ""
 diamondUuid: ""

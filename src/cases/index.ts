@@ -19,60 +19,18 @@
  * @audit ISO-19011:2018 audit-trail file·hear·rule·seal
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation party-scoped-read
  */
-import type { CollectionBeforeChangeHook, CollectionConfig } from 'payload'
+import type { CollectionConfig } from 'payload'
 import { partyRoleAccess, scopedAccess } from '@/auth'
 import { auditFields, countryCodeField, referenceField } from '@/field'
 import { partyRefField, typeField } from '@/discriminator'
 import { standardCollectionHooks } from '@/standard/collection/hook'
-import { horoStateField, validateHoroStates, type HoroState } from '@/horo'
+import { horoStateField } from '@/horo'
+import { CASE_RING, type HoroState } from './lifecycle/index'
+import { requireJudgmentToSeal, neverDelete } from './validator/index'
 
-/**
- * The case lifecycle, pinned to the seven-position horo ring `[1,2,4,8,7,5,9]`.
- * The justice skill's `filed → heard → adjudicated → sealed` opens into the full
- * ring so a matter is "solved in harmony" by construction: every position is a
- * ring slot, and any off-ring status is an escape the validator rejects below.
- *
- *   1 base    filed       — the matter opens (the docket node is born)
- *   2 share   served      — the charge is served on the respondent (the two-fold opens)
- *   4 weave   discovery   — evidence is woven into the chain of custody
- *   8 crest   heard       — the proceeding: charge·evidence·defence converge (the merge crest)
- *   7 descent adjudicated — the judgment descends (the ruling)
- *   5 round   remedied    — the sanction/remedy is applied; the matter rounds to balance
- *   9 unity   sealed      — closed; the precedent the next matter departs from (the new 0)
- */
-const CASE_RING: readonly HoroState[] = [
-  { step: 1, code: 'filed', label: 'Filed' },
-  { step: 2, code: 'served', label: 'Served' },
-  { step: 4, code: 'discovery', label: 'In Discovery' },
-  { step: 8, code: 'heard', label: 'Heard' },
-  { step: 7, code: 'adjudicated', label: 'Adjudicated' },
-  { step: 5, code: 'remedied', label: 'Remedied' },
-  { step: 9, code: 'sealed', label: 'Sealed' },
-]
-
-// Harmony gate — a disharmonious ring is a build-time failure, not a runtime one.
-const ring = validateHoroStates(CASE_RING)
-if (!ring.ok) throw new Error(`cases: horo disharmony — ${ring.errors.join('; ')}`)
-
-/** A matter is sealed, never deleted (the append-only / no-erasure law). */
-const neverDelete = () => false
-
-/**
- * The balance law as a guard: a matter SEALS (step 9, unity) only once
- * charge↔defence have balanced into a judgment — the ledger closing rule
- * applied to public order. Without the judgment the books do not balance, so
- * the matter cannot close.
- */
-export const requireJudgmentToSeal: CollectionBeforeChangeHook = ({ data }) => {
-  const status = (data as { status?: unknown })?.status
-  const judgment = String((data as { judgment?: unknown })?.judgment ?? '').trim()
-  if (status === 'sealed' && !judgment) {
-    throw new Error(
-      'cases: a matter seals only when charge↔defence balance into a judgment — set `judgment` before sealing (justice balances like a ledger).',
-    )
-  }
-  return data
-}
+// Re-export for convenience
+export { CASE_RING, type HoroState } from './lifecycle/index'
+export { requireJudgmentToSeal, validateCaseTransition } from './validator/index'
 
 export const Cases: CollectionConfig = {
   slug: 'cases',

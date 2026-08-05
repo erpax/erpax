@@ -1,7 +1,7 @@
 ---
-name: engine
+name: pricing
 description: Child atom extracted from hub
-atomPath: workflow/engine
+atomPath: commerce/pricing
 coordinate: ""
 contentUuid: ""
 diamondUuid: ""
