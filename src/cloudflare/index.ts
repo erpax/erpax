@@ -1,12 +1,16 @@
+// cloudflare facade — constants first
+export {
+  CLOUDFLARE_SEAL_KID,
+  WRANGLER_SECRET_ENV_KEYS,
+  WRANGLER_BINDING_ENV_KEYS,
+} from './constants'
+
 export {
   sealCloudflareConfig,
   decryptCloudflareIfUuid,
   canonicalizeCloudflareConfig,
   cloudflareConfigContentUuid,
   wranglerEnvToCloudflareConfig,
-  CLOUDFLARE_SEAL_KID,
-  WRANGLER_SECRET_ENV_KEYS,
-  WRANGLER_BINDING_ENV_KEYS,
   type CloudflareConfigPlain,
   type SealedCloudflareConfig,
 } from './seal'

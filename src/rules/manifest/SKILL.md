@@ -8,7 +8,9 @@ diamondUuid: "fa8d2612-ba2b-881b-9b8a-bdc88cbe050d"
 typography:
   partition: rules
   bondDegree: 8
-standards: []
+standards:
+  - ISO/IEC 25010:2023 §5.6 — maintainability: a change is reviewable when its intent is attached to it
+  - ISO-19011:2018 §6.4 — audit evidence: the reason is what a reviewer reads
 bindings: []
 signatures:
   computationUuid: "05e4e77e-9b40-8c90-b094-a88d04c4f1fc"
@@ -52,6 +54,12 @@ An **empty reason is not a reason** (the scalpel's own refusal, restated here so
 This proves a mass edit was **planned and reasoned**, never that the plan was **wise** — a well-formed manifest can encode a bad idea, which the [[scalpel]] says of itself too, and the reason line is where a human catches it. It also reads a **changeset**, so bytes written by a route outside the repo's own tooling are invisible to it until they land: it closes the door that was standing open, not every door. `SWEEP_THRESHOLD` is **declared** in the open so it can be argued with, not derived.
 
 **Law — [[law]]: a changeset above the sweep threshold carries a scalpel manifest — every cut named with its reason before a byte moves — or it is a sweep, and a sweep is refused.**
+
+## Code
+
+entry `@/rules/manifest` · sealed `1` · trinity `1·1·1`
+exports const · function · interface
+imports —
 
 ## Standards
 

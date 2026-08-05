@@ -1,3 +1,24 @@
+// quantum/chat facade — barrel re-export semantic children
+export {
+  threadUuid,
+  appended,
+  messageUuid,
+  isNovel,
+} from './merkle'
+
+export {
+  nextAsk,
+  coverage,
+} from './coverage'
+
+export {
+  improve,
+  ChatSession,
+  startSession,
+  sessionAppend,
+  sealSession,
+} from './routing'
+
 import { algebraLog2, exactCeil, exactMax, exactTrunc } from '@/algebra'
 /**
  * quantum/chat — a chat thread as a merkle chain: each message is a content-uuid, and the thread
@@ -42,76 +63,6 @@ import {
   type Chat,
   type SealBook,
 } from '@/quantum/ftl'
-
-const SEED = toUuid(Buffer.from('chat:thread', 'utf8'))
-
-/** Fold a thread's message-uuids into one chain-uuid (merkle) — the tamper-evident history. */
-export const threadUuid = (messageUuids: readonly string[]): string => messageUuids.reduce((acc, u) => merge(acc, u), SEED)
-
-/** Appending a message changes the thread-uuid (the history cannot be silently rewritten). */
-export const appended = (before: readonly string[], message: string): boolean => threadUuid([...before, message]) !== threadUuid(before)
-
-/** A message's content-uuid — the leaf the thread folds. */
-export const messageUuid = (message: string): string => toUuid(Buffer.from(message, 'utf8'))
-
-/** NOVEL iff its content-uuid is not already a leaf of the thread (a real new answer, not a repeat). */
-export const isNovel = (messageUuids: readonly string[], message: string): boolean =>
-  !messageUuids.includes(messageUuid(message))
-
-/**
- * ASK: of the candidate questions, the next whose answer would be NOVEL to the thread —
- * the first not yet covered. Returns undefined when the thread already covers every
- * candidate (nothing left to improve over this space). The chat that greets a visitor
- * and chats to infinity always has a next uncovered thing to ask, until coverage = 1.
- *
- * HONEST BOUNDARY: this SELECTS the next uncovered question from a given set; it does
- * not GENERATE questions (no LLM in the fold). The intelligence is which-is-novel.
- */
-export const nextAsk = (messageUuids: readonly string[], candidates: readonly string[]): string | undefined =>
-  candidates.find((q) => isNovel(messageUuids, q))
-
-/**
- * IMPROVE: fold a message into the thread. `improved` is true iff it was novel — the
- * distinct coverage grew. A duplicate answer re-folds the chain (history still moves)
- * but does not improve coverage.
- *
- * HONEST BOUNDARY: improvement = coverage grew, NOT answer correctness — a novel but
- * wrong answer still counts as covered; quality is a separate judgement.
- */
-export const improve = (
-  messageUuids: readonly string[],
-  message: string,
-): { readonly thread: string; readonly messageUuids: readonly string[]; readonly improved: boolean } => {
-  const improved = isNovel(messageUuids, message)
-  const next = [...messageUuids, messageUuid(message)]
-  return { thread: threadUuid(next), messageUuids: next, improved }
-}
-
-/** Coverage of a candidate space: the fraction of candidate questions the thread has answered. */
-export const coverage = (messageUuids: readonly string[], candidates: readonly string[]): number =>
-  candidates.length === 0 ? 1 : candidates.filter((q) => messageUuids.includes(messageUuid(q))).length / candidates.length
-
-// ── 1 bit per referral direction — the dyadic state space, distributed to the bit ──
-// A referral is a directed Möbius 0↔∞ gateway; its only free choice is the direction of
-// passage, so gatewayBits = log₂2 = 1 (one bit per referral direction). n directed referrals
-// therefore span a DYADIC state space of 2^n — and 1024 = 2^10 is exactly TEN referral
-// directions, not a ternary sum (432×3 = 1296 ≠ 1024, and 3N is never a power of two).
-// Distributing an amount "in the same proportions down to the bit" = splitting it equally
-// across those 2^n states. HONEST BOUNDARY: the corpus's own nav cross (bind4) is a FOUR-key
-// cross ⇒ 2^4 = 16 states; 1024 needs a 10-referral structure — a chosen 10-bit encoding, not
-// the current 4-key one. Real dyadic math; the 1024 sizing is a re-modelling, named as such.
-
-/** One bit per referral direction — the Möbius gateway's only free choice (log₂2). */
-export const GATEWAY_BITS = 1
-
-/** The dyadic state space of an n-referral cross: 1 direction bit each ⇒ 2^n states. */
-export const crossStates = (referrals: number): number => 2 ** exactMax(0, exactTrunc(referrals))
-
-/** Referral directions needed to span `states` (the inverse: log₂). 1024 ⇒ 10. */
-export const referralsFor = (states: number): number => (states > 0 ? exactCeil(algebraLog2(states)) : 0)
-
-/** Distribute an amount equally across a cross's states — the same proportion down to each state/bit. */
-export const distributeToStates = (amount: number, referrals: number): number => amount / crossStates(referrals)
 
 // ── the quantum composer: content folded into music ──────────────────────────
 // A content-uuid is a fixed byte-string; the corpus already tunes to A432 with 5-limit

@@ -2,6 +2,9 @@
 name: bypass
 description: "Use when checking that a request-reachable handler cannot disable access control silently — Payload's Local API defaults to overrideAccess:true, so bypass is the ambient condition a route inherits by writing nothing. Judges only src/app, because a hook or seed is not routed; a bypass named in a comment is prose, not a use. Baseline is a theorem at zero: one handler bypasses and it authenticates first, so there is no threshold to raise as the corpus grows."
 atomPath: "rules/bypass"
+standards:
+  - ISO/IEC 27001 A.5.23 — cloud-service tenant isolation
+  - ISO/IEC 25010:2023 §5.4 — security: confidentiality by default
 ---
 
 # rules/bypass — a route may not disable the check silently
@@ -32,6 +35,12 @@ This proves a bypassing handler **also calls `payload.auth` somewhere in the sam
 The baseline is **0 and it is a theorem**, not a ratchet toward one: there is no acceptable number of request-reachable handlers that disable access control without authenticating, so there is nothing to raise later.
 
 **Law — [[law]]: on a request-reachable path, access control is on by default — a call that disables it must sit in a handler that authenticated the caller first.**
+
+## Code
+
+entry `@/rules/bypass` · sealed `1` · trinity `1·1·1`
+exports function · interface
+imports @/syntax
 
 ## Standards
 

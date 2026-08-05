@@ -688,9 +688,9 @@ src/closing/period/checker/index.ts:16: * @standard SAF-T:3.0.2 (period coding, 
 src/cloudflare/ai.ts:8: * @standard Cloudflare Workers AI binding
 src/cloudflare/capacity/index.ts:15: * @standard Cloudflare Workers/D1/R2/Durable Objects platform limits (2025) — the production ceiling
 src/cloudflare/capacity/test.ts:2: * @standard ISO/IEC-25010:2023 §5.7 resource-utilisation (production hardware fit)
-src/cloudflare/index.ts:158: * @standard ISO/IEC 25010:2023 §5.2 reliability — fail-fast at boot
-src/cloudflare/index.ts:62: * @standard Cloudflare Workers Runtime API
-src/cloudflare/index.ts:63: * @standard W3C Service Worker §4 (Workers compat)
+src/cloudflare/index.ts:162: * @standard ISO/IEC 25010:2023 §5.2 reliability — fail-fast at boot
+src/cloudflare/index.ts:66: * @standard Cloudflare Workers Runtime API
+src/cloudflare/index.ts:67: * @standard W3C Service Worker §4 (Workers compat)
 src/cloudflare/mediator-uuid-crypto.test.ts:20: * @standard RFC 8032 EdDSA, NIST SP 800-38D AES-GCM, NIST SP 800-57 §5.6
 src/cloudflare/plugin-access.ts:41: * @standard ISO 27001 A.5.15 access-control
 src/cloudflare/plugin-access.ts:42: * @standard ISO 27002 §5.4 segregation-of-duties (TypeScript-enforced)
@@ -1380,7 +1380,7 @@ src/held/for/sale/classifications/index.ts:20: * @standard ISO-8601-1:2019 date-
 src/hero/config/index.ts:4: * @standard W3C HTML5 section-element
 src/hero/config/index.ts:5: * @standard schema.org WebPageElement
 src/hero/config/index.ts:6: * @standard WAI-ARIA 1.2 region-landmark-role
-src/horo/index.ts:24: * @standard ISO-16:1975 a432-tuning-reference (the anchor; value from position)
+src/horo/index.ts:23: * @standard ISO-16:1975 a432-tuning-reference (the anchor; value from position)
 src/i18n/harvest/index.ts:30: * @standard W3C HTTP Content-Language (RFC 7231 §3.1.3.2)
 src/i18n/harvest/index.ts:31: * @standard BCP-47 language tags
 src/i18n/index.ts:11: * @standard ECMA-402 internationalization-api
@@ -2266,7 +2266,7 @@ src/quantum/aura/index.ts:19: * @standard Baumgratz, Cramer & Plenio, "Quantifyi
 src/quantum/bindings/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/quantum/cache/index.ts:9: * @standard RFC 9562 §5.8 content-uuid (the cache key)
 src/quantum/calculator/index.ts:9: * @standard the digital-root / mod-9 group ([[rodin]])
-src/quantum/chat/index.ts:9: * @standard merkle hash-chain; RFC 9562 §5.8 content-uuid
+src/quantum/chat/index.ts:30: * @standard merkle hash-chain; RFC 9562 §5.8 content-uuid
 src/quantum/communication/index.ts:10: * @standard no-cloning (Wootters–Zurek 1982); RFC 9562 §5.8 content-uuid
 src/quantum/communication/key/index.ts:10: * @standard BB84 (Bennett–Brassard 1984) / E91 (Ekert 1991); no-cloning (Wootters–Zurek 1982)
 src/quantum/communication/superdense/index.ts:9: * @standard superdense coding (Bennett–Wiesner 1992); RFC 9562 §5.8 content-uuid
@@ -6441,6 +6441,6 @@ src/dashboard/nav/index.ts:33: * @quality ISO-25010 usability navigability bound
 src/dashboard/spec/index.ts:24: * @quality ISO-25010 maintainability shared-vocabulary reusability
 src/dashboard/spec/projection.ts:17: * @quality ISO-25010 maintainability shared-vocabulary
 src/discriminator/index.ts:13: * @quality ISO-25010 maintainability single-discriminator-vocabulary
-src/horo/index.ts:25: * @quality ISO-25010 maintainability bounded-stable-state-space
+src/horo/index.ts:24: * @quality ISO-25010 maintainability bounded-stable-state-space
 src/types/sti/index.ts:19: * @quality ISO-25010 maintainability discriminated-subtype-safety
 ```

@@ -1,4 +1,29 @@
-import { algebraLog2, exactMax, exactTrunc } from '@/algebra'
+// quantum/ftl facade — barrel re-export constants and metrics
+export {
+  atomPath,
+  ORIGIN,
+  LANE,
+  PROXY,
+  BOUNDARY,
+  type Boundary,
+  PHYSICAL_FTL_DEFAULTS,
+} from './constants'
+
+export {
+  reuse,
+  amortize,
+  type Reuse,
+  type Amortize,
+} from './metrics'
+
+export {
+  Crack,
+  boundary,
+  crack,
+  cracks,
+  type CrackPattern,
+} from './crack'
+
 /**
  * quantum/ftl — reuse · amortize · crack · boundary · seal · chat · research.
  * Each name-token is a fold (see ./map). Combinations compose tools, not prose.
@@ -8,121 +33,9 @@ import { algebraLog2, exactMax, exactTrunc } from '@/algebra'
  * @see ./map · ../computer · ../chat · ./SKILL.md
  */
 import { uuid as toUuid } from '@/integrity'
-import { type CrackKind, CRACK_FLAGS, type Seal, type Boundary } from './map'
+import { type CrackKind, CRACK_FLAGS, type Seal } from './map'
 
-export { TOKENS, ENTANGLE, API, CRACK_FLAGS, type Token, type CrackKind, type Seal, type Boundary } from './map'
-
-export const atomPath = 'quantum/ftl' as const
-
-export const ORIGIN = 'https://ceccec.psg.bg' as const
-export const LANE = 'https://text.pollinations.ai/openai' as const
-export const PROXY = `${ORIGIN}/api/ai` as const
-
-export interface Crack {
-  readonly kind: CrackKind
-  readonly where: string
-  readonly why: string
-}
-
-export function boundary(cs: readonly Crack[] = []): Boundary {
-  const count = (k: CrackKind) => cs.filter((c) => c.kind === k).length
-  const b = {
-    scan: count('scan'),
-    rederive: count('rederive'),
-    spend: count('spend'),
-    qpu: count('qpu'),
-    spacetime: count('spacetime'),
-  }
-  return { ...b, empty: cs.length === 0 }
-}
-
-export const BOUNDARY: Boundary = boundary([])
-
-export interface Reuse {
-  readonly query: string
-  readonly address: string
-  readonly foldOps: 1
-  readonly searchOps: number
-  readonly speedupLog2: number
-  readonly precomputed: true
-}
-
-/** reuse ≠ search: foldOps=1 · searchOps=n · speedupLog2=log₂(n). */
-export function reuse(query: string, spaceSize: number): Reuse {
-  const searchOps = exactMax(1, exactTrunc(spaceSize))
-  return {
-    query,
-    address: toUuid(query),
-    foldOps: 1,
-    searchOps,
-    speedupLog2: algebraLog2(searchOps),
-    precomputed: true,
-  }
-}
-
-export interface Amortize {
-  readonly answers: number
-  readonly tokens: number
-  readonly efficiency: number
-  readonly amortizedCost: number
-  readonly scalesToInfinity: boolean
-}
-
-/** answers÷tokens → ∞ when tokens=0 ∧ answers>0; amortizedCost=c₀/(m+1)→0. */
-export function amortize(
-  answers: number,
-  tokens: number,
-  opts: { readonly firstComputeCost?: number; readonly reuses?: number } = {},
-): Amortize {
-  const a = exactMax(0, answers)
-  const t = exactMax(0, tokens)
-  const c0 = exactMax(0, opts.firstComputeCost ?? 1)
-  const m = exactMax(0, exactTrunc(opts.reuses ?? 0))
-  const efficiency = t === 0 ? (a > 0 ? Infinity : 0) : a / t
-  return {
-    answers: a,
-    tokens: t,
-    efficiency,
-    amortizedCost: c0 / (m + 1),
-    scalesToInfinity: t === 0 && a > 0,
-  }
-}
-
-export type CrackPattern = {
-  readonly where: string
-  readonly scans?: boolean
-  readonly address?: boolean
-  readonly rederives?: boolean
-  readonly memo?: boolean
-  readonly spends?: boolean
-  readonly seal?: boolean
-  readonly qpu?: boolean
-  readonly spacetime?: boolean
-}
-
-/** Discover one crack from pattern flags (CRACK_FLAGS). */
-export function crack(pattern: CrackPattern): Crack | null {
-  if (pattern.scans && pattern.address) {
-    return { kind: 'scan', where: pattern.where, why: 'reuse: scan∧address' }
-  }
-  if (pattern.rederives && pattern.memo) {
-    return { kind: 'rederive', where: pattern.where, why: 'amortize: rederive∧memo' }
-  }
-  if (pattern.spends && pattern.seal) {
-    return { kind: 'spend', where: pattern.where, why: 'seal: spend∧seal' }
-  }
-  if (pattern.qpu) {
-    return { kind: 'qpu', where: pattern.where, why: 'qpu under address fold' }
-  }
-  if (pattern.spacetime) {
-    return { kind: 'spacetime', where: pattern.where, why: 'spacetime under reuse' }
-  }
-  return null
-}
-
-export function cracks(patterns: readonly CrackPattern[]): readonly Crack[] {
-  return patterns.map(crack).filter((c): c is Crack => c != null)
-}
+export { TOKENS, ENTANGLE, API, CRACK_FLAGS, type Token, type CrackKind, type Seal } from './map'
 
 export interface Ftl {
   readonly holds: boolean
