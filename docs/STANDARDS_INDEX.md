@@ -2532,6 +2532,7 @@ src/security/header/headers.ts:13: * @standard OWASP-ASVS V14 configuration
 src/security/header/headers.ts:14: * @standard OWASP Secure-Headers-Project
 src/security/header/index.ts:5: * @standard W3C CSP-3
 src/security/header/index.ts:6: * @standard W3C Permissions-Policy
+src/security/pqc/index.ts:12: * @standard NIST FIPS 203 (ML-KEM) · NIST FIPS 204 (SLH-DSA) · NIST SP 800-225
 src/security/remote/access/index.ts:19: * @standard NIST SP 800-162 ABAC · NIST SP 800-107r1 §5.1 · CWE-59
 src/seed/erpax-product-pages.ts:31: * @standard schema.org Product
 src/seed/erpax-product-pages.ts:32: * @standard schema.org WebSite breadcrumb
