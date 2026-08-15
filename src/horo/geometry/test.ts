@@ -9,6 +9,7 @@ import {
   cornerLimit,
   cornerSweep,
   isMergePoint,
+  pivotSingularities,
 } from './index'
 
 describe('horo/geometry', () => {
@@ -102,6 +103,34 @@ describe('horo/geometry', () => {
       expect(limits[0].radius).toBe(10)
       expect(limits[1].radius).toBe(20)
       expect(limits[2].radius).toBe(30)
+    })
+  })
+
+  describe('pivotSingularities — one theorem, not three coincidences', () => {
+    it('fixedByMirror ⟺ inverseOfDoubling for EVERY digit — the same congruence 2n ≡ 1 (mod 9)', () => {
+      for (const s of pivotSingularities()) {
+        expect(s.fixedByMirror).toBe(s.inverseOfDoubling)
+      }
+    })
+
+    it('counts are 0 or 3 only — nothing holds exactly one or two of the three', () => {
+      for (const s of pivotSingularities()) {
+        expect([0, 3]).toContain(s.count)
+      }
+      expect(pivotSingularities().filter((s) => s.count === 3).map((s) => s.digit)).toEqual([5])
+    })
+
+    it('the pivot of base b is b/2 — 2·(b/2) = b ≡ 1 (mod b−1), for every even base 4–16', () => {
+      for (const b of [4, 6, 8, 10, 12, 14, 16]) {
+        const m = b - 1
+        const digits = [...Array(b - 1).keys()].map((i) => i + 1)
+        const mirrorFixed = digits.filter((n) => ((((1 - n) % m) + m) % m) === n % m)
+        const inverseOf2 = digits.filter((n) => (2 * n) % m === 1)
+        const carryVoid = digits.filter((n) => (2 * n) % b === 0) // double written `10` in base b
+        expect(mirrorFixed).toEqual([b / 2])
+        expect(inverseOf2).toEqual([b / 2])
+        expect(carryVoid).toEqual([b / 2])
+      }
     })
   })
 

@@ -225,14 +225,27 @@ export function cornerSweep(maxLateralAccel: number, radii: readonly number[]): 
 }
 
 /**
- * Three independent singularities — and they coincide on one digit.
+ * Three singularities coincide on one digit — and the coincidence is ONE THEOREM, not three.
  *
- * Each is defined without reference to the others: being fixed by the mirror is a statement about
- * `throughVoid`; carrying a zero is a statement about base-10 doubling; being `2⁻¹` is a statement
- * about the group. Nothing forces them to agree. **5 has all three. No other digit has even two.**
+ * They read as independent: being fixed by the mirror is a statement about `throughVoid`; carrying a
+ * zero is a statement about base-10 doubling; being `2⁻¹` is a statement about the group. But all
+ * three are the single identity **`2·(b/2) = b ≡ 1 (mod b−1)`** — the defining relation of digital
+ * roots, read at digit scale. In base 10: `2·5 = 10 ≡ 1 (mod 9)`, so in one equation 5 is `2⁻¹`
+ * (that IS `2n ≡ 1`), the mirror's fixed point (`n ≡ 1−n` ⟺ `2n ≡ 1` — the same congruence), and
+ * the digit whose double is written `10` (the carry `1,0` — the void reached, the octave reopened).
+ * The pivot of base b is always `b/2`: base 8 pivots on 4, base 12 on 6 — proven in test.ts across
+ * every even base 4–16. **The singularity of 5 is the equation `10 ≡ 1` itself.**
  *
- * @invariant exactly one digit satisfies all three, and it is VOID_PIVOT
- * @invariant no digit satisfies exactly two — the properties do not partially overlap anywhere
+ * This corrects the pre-split prose, which called the three "independent" with "nothing forcing them
+ * to agree" — mirror-fixed and `2⁻¹` are LITERALLY the same congruence, so they could never disagree,
+ * and the carry lands with them because `b ≡ 1` is what a digital root is.
+ *
+ * **Boundary.** One identity in modular arithmetic plus base-b spelling — real, checkable, and
+ * claiming nothing outside arithmetic.
+ *
+ * @invariant exactly one digit satisfies all three, and it is VOID_PIVOT = b/2 for b = 10
+ * @invariant fixedByMirror ⟺ inverseOfDoubling for EVERY digit — the same congruence 2n ≡ 1 (mod 9)
+ * @invariant counts are 0 or 3 only — nothing can hold exactly two, because two of the three are one
  */
 export interface Singularity {
   readonly digit: number
