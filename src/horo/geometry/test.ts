@@ -38,9 +38,12 @@ describe('horo/geometry', () => {
       const p0 = lemniscate(0)
       expect(p0.x).toBeCloseTo(1)
 
+      // Gerono: y = sin(2t)/2, so at t = π/2 the eight CROSSES THE VOID — y is 0, not a lobe height.
       const pHalf = lemniscate(Math.PI / 2)
       expect(pHalf.x).toBeCloseTo(0, 9)
-      expect(pHalf.y).toBeCloseTo(0.5)
+      expect(pHalf.y).toBeCloseTo(0, 9)
+      const pLobe = lemniscate(Math.PI / 4)
+      expect(pLobe.y).toBeCloseTo(0.5)
     })
 
     it('crosses the void at fold points', () => {
@@ -73,12 +76,12 @@ describe('horo/geometry', () => {
   })
 
   describe('sequences', () => {
-    it('forward sequence is doubling orbit', () => {
-      expect(sequenceForward()).toEqual([1, 2, 4, 8, 7, 5])
+    it('forward sequence threads flow, axis, pole, void and reopening', () => {
+      expect(sequenceForward()).toEqual([1, 2, 4, 8, 7, 5, 3, 6, 9, 0, 1])
     })
 
-    it('reflected sequence is halving orbit', () => {
-      expect(sequenceReflected()).toEqual([1, 5, 7, 8, 4, 2])
+    it('reflected sequence is the forward nine through the void, 0 held, 1 → 9', () => {
+      expect(sequenceReflected()).toEqual([9, 8, 6, 2, 3, 5, 7, 4, 1, 0, 9])
     })
   })
 
@@ -86,7 +89,7 @@ describe('horo/geometry', () => {
     it('computes max speed for corner', () => {
       const limit = cornerLimit(10, 1)
       expect(limit.radius).toBe(10)
-      expect(limit.maxLateralAccel).toBe(1)
+      expect(limit.curvature).toBeCloseTo(0.1)
       expect(limit.maxSpeed).toBeGreaterThan(0)
       expect(limit.maxSpeed).toBeCloseTo(Math.sqrt(10))
     })
@@ -103,10 +106,12 @@ describe('horo/geometry', () => {
   })
 
   describe('isMergePoint', () => {
-    it('detects 9 → 1 transition', () => {
-      expect(isMergePoint(9, 1)).toBe(true)
-      expect(isMergePoint(1, 2)).toBe(false)
-      expect(isMergePoint(5, 9)).toBe(false)
+    it('true iff the composed step is 1 or 9', () => {
+      expect(isMergePoint(9, 1)).toBe(true) // 9×1 → 9
+      expect(isMergePoint(1, 2)).toBe(false) // → 2
+      expect(isMergePoint(5, 9)).toBe(true) // 45 → 9: the pole composes to a merge from anywhere
+      expect(isMergePoint(1, 1)).toBe(true) // → 1
+      expect(isMergePoint(2, 4)).toBe(false) // → 8
     })
   })
 })

@@ -10,9 +10,11 @@
  */
 
 import type { CollectionBeforeChangeHook, Field } from 'payload'
-import { exactMax, exactAbs, algebraCos, algebraSin, algebraAtan2, algebraSqrt, PI } from '../../algebra'
+import { exactMax, exactAbs, exactTrunc, algebraCos, algebraSin, algebraAtan2, algebraSqrt, PI } from '../../algebra'
 import { type Loop2D } from '../constants'
-import { HORO_DIGITS, isHoroStep, type HoroStep } from '../constants'
+import { HORO_DIGITS, INNER_CIRCUIT, POLE, isHoroStep, type HoroStep } from '../constants'
+import { composeSteps, throughVoid, digitalRoot } from '../arithmetic'
+import { orbitOf, carryRays } from '../ring'
 
 /** A point on a planar loop. */
 export interface Loop2D {
@@ -76,79 +78,217 @@ export function turningNumber(loop: (t: number) => Loop2D, samples = 20000): num
   return total / (2 * PI)
 }
 
-/** A step in the breath sequence: position, magnitude, and direction. */
+/** One step of the full breath — the digit, and the slope to it (`up` = larger than the last, `down` = smaller). */
 export interface BreathStep {
   readonly step: number
-  readonly magnitude: number
-  readonly direction: 'in' | 'out'
+  /** the direction written as `\\` (up) or `/` (down) — the local slope of the wave. */
+  readonly slope: 'up' | 'down'
 }
 
 /**
- * The full breath — the complete sequence of inhale and exhale steps.
- * (Placeholder stub for now.)
+ * The FULL BREATH through all of ℤ/9 — `0\\1\\2\\4\\8/7/5/3\\6\\9/0\\1`.
+ *
+ * The measure ring `HORO_DIGITS` is the flow plus the pole (`[1,2,4,8,7,5,9]`); it OMITS the void `0` and the
+ * inner axis `3,6`. This is the complete walk that threads them all in, assembled from the parts already here —
+ * the void, then the three orbits (flow `[1,2,4,8,7,5]` → inner `[3,6]` → pole `[9]`), back through
+ * the void, reopening at `1`. Nothing new is derived: it REUSES `orbitOf`; it only names the whole the
+ * pieces already spelt. The `\\`/`/` in the notation is the slope — `up` when the next digit is larger, `down`
+ * when smaller — so the slashes draw the wave: two crests (`8`, `9`), two valleys at the void (`0`).
+ *
+ * @invariant the digits are 0 · the doubling flow orbit · the inner axis · the pole · 0 · 1 — the closed breath
+ * @invariant each slope is `up` iff its digit is larger than the previous — the wave the slashes draw
  */
 export function fullBreath(): readonly BreathStep[] {
-  return []
+  const [pole, inner, flow] = [[POLE], [...INNER_CIRCUIT], orbitOf(1)]
+  const digits = [0, ...flow, ...inner, ...pole, 0, 1]
+  return digits.map((step, i) => ({ step, slope: i === 0 || step > digits[i - 1]! ? 'up' : 'down' }))
 }
 
-/** Forward sequence: 1 → 2 → 4 → 8 → 7 → 5 (the doubling orbit). */
+/**
+ * The forward sequence as it is spelt — `1\\2\\4\\8/7/5 · 3\\6\\9 · 0\\1`: the flow orbit, the axis, then the void
+ * and the reopening. ASSEMBLED from `orbitOf(1)` · `INNER_CIRCUIT` · `POLE`, never typed out, so the spelling
+ * cannot drift from the arithmetic it claims to spell.
+ */
 export function sequenceForward(): readonly number[] {
-  return [1, 2, 4, 8, 7, 5]
+  return [...orbitOf(1), ...INNER_CIRCUIT, POLE, 0, 1]
 }
 
-/** Reflected sequence: the forward sequence reversed (halving orbit). */
+/**
+ * The sequence THROUGH ITS REFLECTION — `9/8/6/2\\3\\5 · 7/4/1 · 0\\9`. Computed as `throughVoid` applied to the nine,
+ * with the `0` held — it is the pivot the mirror turns on — while the reopening `1` maps like every other digit, to `9`.
+ *
+ * @invariant reflecting the reflection returns the sequence — `throughVoid` is an involution, fixed only at 5
+ * @invariant the reflected nine is a permutation of the forward nine — the same ring, read through the void
+ */
 export function sequenceReflected(): readonly number[] {
-  return [1, 5, 7, 8, 4, 2]
+  const [...nine] = sequenceForward().slice(0, 9)
+  // The tail is `0\\1`: the VOID and the REOPENING, and they are not the same kind of thing. `0` is the
+  // pivot the mirror turns on, so it is held. `1` is not the pivot — it is the next octave's first step,
+  // and the map has an answer for it: `throughVoid(1) = 0 mod 9 → 9`. Holding it too would print a
+  // reflected line whose last digit contradicts the very function that produced every other digit in it.
+  return [...nine.map(throughVoid), 0, throughVoid(1)]
 }
 
-/** Render a section of the sequence as readable strings. */
+/**
+ * The sequence and its reflection, rendered for the corpus landing page.
+ *
+ * It is here rather than in [[readme]] because a rendering typed beside the prose can drift from the
+ * arithmetic; every number below is CALLED, so the page cannot say something the math does not.
+ *
+ * @invariant every digit printed comes from sequenceForward/sequenceReflected — none is typed
+ * @invariant the pair table is generated from throughVoid, so a wrong pair is impossible to print
+ */
 export function renderSequenceSection(): readonly string[] {
-  return []
+  const fwd = sequenceForward()
+  const ref = sequenceReflected()
+  const nine = fwd.slice(0, 9)
+  const pairs = nine.map((n) => `\`${n}↔${throughVoid(n)}\``).join(' · ')
+  // the SLOPE is computed too: `\\` where the digit rises, `/` where it falls. Typing the marks by
+  // hand is how a spelling drifts from its arithmetic — this reproduces both spellings exactly.
+  const spell = (xs: readonly number[]): string => xs.map((n, i) => (i === 0 ? `${n}` : `${n > xs[i - 1]! ? '\\' : '/'}${n}`)).join('')
+  const line = (xs: readonly number[]): string => [spell(xs.slice(0, 6)), spell(xs.slice(6, 9)), spell(xs.slice(9))].join(' · ')
+  return [
+    '## the sequence, and its reflection',
+    '',
+    'One structure, read twice — forward, and through the void. Both lines are **computed**, never typed:',
+    '',
+    '```',
+    `forward     ${line(fwd)}`,
+    `reflected   ${line(ref)}`,
+    '```',
+    '',
+    `Fold through zero — \`throughVoid(n) = 1 − n mod 9\`, an involution fixed only at 5: ${pairs}. ` +
+      'Each pair sums to 10; the flow orbit and the axis are the same structure mirrored, not two lists.',
+    '',
+    'The two are **entangled**, in three senses this atom proves rather than asserts:',
+    '',
+    '- **They exchange halves.** The flow `1,2,4,8,7,5` reflects onto digits carrying the axis, and the axis ' +
+      '`3,6,9` reflects onto units. Neither half is prior; each is the other\'s image.',
+    '- **Neither reaches the other alone.** Doubling covers exactly `{1,2,4,8,7,5}`, and its gap is exactly ' +
+      '`{3,6,9}` — no iteration count closes it. The mirror is the only bridge.',
+    '- **Commuted, they count.** `D∘M∘D⁻¹∘M = x ↦ x+1`, and `⟨D,M⟩ = AGL(1,ℤ/9)` has order **54** against ' +
+      '`6·2 = 12` apart. The excess over the product *is* the entanglement: their failure to commute.',
+    '',
+    '> **Boundary.** This is proven group theory over (ℤ/9ℤ) — the doubling cycle, the axis as its complement, ' +
+      'and the order of the group they generate. It is used here as the corpus\'s **order of work** (build the ' +
+      'axis before the branches; fold, do not climb). No claim is made that it explains anything outside ' +
+      'arithmetic. Run it: `tsx src/horo/index.ts`.',
+    '',
+  ]
 }
 
-/** Reflect a numeral through the void mirror. */
+/**
+ * A numeral has TWO reflections, and they land in different places. Reflect it as a VALUE (fold to its
+ * digital root first, then mirror) and `14` gives **5** — the pivot. Reflect it as DIGITS (mirror each
+ * decimal digit) and `14` gives **9, 6** — both on the axis `{3,6,9}`, the set doubling can never reach.
+ *
+ * @invariant the value reflection is `throughVoid(digitalRoot(n))` — a single step, fixed only at 5
+ * @invariant the digit reflection is `throughVoid` per decimal digit — length-preserving, order-preserving
+ */
 export function reflectNumeral(n: number): { readonly asValue: number; readonly asDigits: readonly number[] } {
-  return { asValue: 0, asDigits: [] }
+  const digits = [...`${exactAbs(exactTrunc(n))}`].map((d) => Number(d))
+  return { asValue: throughVoid(digitalRoot(n)), asDigits: digits.map(throughVoid) }
 }
 
-/** Corner mechanics for curved motion: radius and lateral acceleration. */
+/**
+ * The impossible turn — and where it becomes possible.
+ *
+ * A corner is a curvature claim. Rounding a turn of radius `r` at speed `v` demands a lateral
+ * acceleration of `v²/r`; the tightest turn a body can hold under a ceiling `a` is therefore
+ * `v ≤ √(a·r)`. Send `r → 0` — a true right-angle vertex, no rounding at all — and the ceiling
+ * collapses with it: curvature `1/r` is unbounded, and the only admissible speed is exactly zero.
+ *
+ * @invariant maxSpeed(0, a) === 0 for every finite ceiling — a true corner admits no speed
+ * @invariant curvature(0) is Infinity, reported rather than clamped
+ */
 export interface CornerLimit {
   readonly radius: number
-  readonly maxLateralAccel: number
+  /** 1/r — unbounded at a true vertex */
+  readonly curvature: number
+  /** √(a·r) — the fastest a body may take this corner under the given lateral-acceleration ceiling */
   readonly maxSpeed: number
 }
 
-/** Compute corner limit for a given radius and max lateral acceleration. */
 export function cornerLimit(radius: number, maxLateralAccel: number): CornerLimit {
-  const maxSpeed = algebraSqrt(radius * maxLateralAccel)
-  return { radius, maxLateralAccel, maxSpeed }
+  if (radius < 0) throw new Error('cornerLimit: negative radius')
+  if (maxLateralAccel < 0) throw new Error('cornerLimit: negative acceleration ceiling')
+  return {
+    radius,
+    curvature: radius === 0 ? Infinity : 1 / radius,
+    maxSpeed: radius === 0 ? 0 : algebraSqrt(maxLateralAccel * radius),
+  }
 }
 
-/** Sweep corner limits across a range of radii. */
+/** The corner tightening toward a true vertex — speed falling to zero as curvature runs away. */
 export function cornerSweep(maxLateralAccel: number, radii: readonly number[]): readonly CornerLimit[] {
   return radii.map((r) => cornerLimit(r, maxLateralAccel))
 }
 
-/** A singularity or special point in the ring. */
+/**
+ * Three independent singularities — and they coincide on one digit.
+ *
+ * Each is defined without reference to the others: being fixed by the mirror is a statement about
+ * `throughVoid`; carrying a zero is a statement about base-10 doubling; being `2⁻¹` is a statement
+ * about the group. Nothing forces them to agree. **5 has all three. No other digit has even two.**
+ *
+ * @invariant exactly one digit satisfies all three, and it is VOID_PIVOT
+ * @invariant no digit satisfies exactly two — the properties do not partially overlap anywhere
+ */
 export interface Singularity {
-  readonly at: number
-  readonly type: 'pole' | 'fixed' | 'focus'
-  readonly order: number
+  readonly digit: number
+  /** `throughVoid(d) === d` — the mirror moves everything but this */
+  readonly fixedByMirror: boolean
+  /** the carry digits of `2d` include 0 — only `2·5 = 10` does */
+  readonly carryReachesVoid: boolean
+  /** `2d ≡ 1 (mod 9)` — the inverse of the doubling generator */
+  readonly inverseOfDoubling: boolean
+  readonly count: number
 }
 
-/** Pivot singularities: poles, fixed points, and foci. */
 export function pivotSingularities(): readonly Singularity[] {
-  return []
+  const carries = carryRays()
+  return [...orbitOf(1), ...INNER_CIRCUIT, POLE].map((digit) => {
+    const fixedByMirror = throughVoid(digit) === digit
+    const carryReachesVoid = carries.find((c) => c.step === digit)?.digits.includes(0) ?? false
+    const inverseOfDoubling = (2 * digit) % 9 === 1
+    return {
+      digit,
+      fixedByMirror,
+      carryReachesVoid,
+      inverseOfDoubling,
+      count: [fixedByMirror, carryReachesVoid, inverseOfDoubling].filter(Boolean).length,
+    }
+  })
 }
 
-/** Closure under carry: all steps reachable by carry from a seed. */
+/**
+ * The carry, taken to its end: double a step, keep its digits, double THOSE, and keep going. It CLOSES,
+ * on the same five digits from every starting step — `{1,2,4,6,8}` (5 additionally reaches the void).
+ * For a single digit `n`, `2n ∈ [2, 18]`: units even, tens at most `1` — no odd digit above 1 is ever
+ * a carry, so the attractor is forced by the arithmetic, not discovered by search.
+ *
+ * @invariant the closure is identical from every step except 5, which additionally reaches the void
+ * @invariant no odd digit above 1 is ever a carry — proven by 2n ≤ 18, not sampled
+ */
 export function carryClosure(seed: number): readonly number[] {
-  return []
+  const seen = new Set<number>()
+  const queue = [digitalRoot(seed)]
+  while (queue.length > 0) {
+    const n = queue.shift()!
+    for (const d of String(n * 2).split('').map(Number)) {
+      if (!seen.has(d)) {
+        seen.add(d)
+        queue.push(d)
+      }
+    }
+  }
+  return [...seen].sort((a, b) => a - b)
 }
 
 /** Is this a merge point (9 → 1 transition)? */
 export function isMergePoint(a: number, b: number): boolean {
-  return a === 9 && b === 1
+  const c = composeSteps(a, b)
+  return c === 1 || c === 9
 }
 
 /** One state band: a code/name pinned to a horo position. */

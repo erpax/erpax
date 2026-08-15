@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { HORO_DIGITS, HORO_MEASURE, isHoroStep, horoMeasureOf, VOID_PIVOT, CENTROID, POLE, INNER_CIRCUIT, CONSTANTS_DEFINED } from './index'
+import { HORO_DIGITS, HORO_MEASURE, isHoroStep, horoMeasureOf, VOID_PIVOT, CENTROID, POLE, INNER_CIRCUIT } from './index'
 
 describe('horo/constants', () => {
   it('exports seven horo digits in measure-walk order', () => {
@@ -38,7 +38,8 @@ describe('horo/constants', () => {
     expect(INNER_CIRCUIT).toEqual([3, 6])
   })
 
-  it('module exports defined constant', () => {
-    expect(CONSTANTS_DEFINED).toBe(true)
+  it('the pole and inner circuit are the axis split doubling proves', () => {
+    expect(POLE).toBe(9)
+    expect(INNER_CIRCUIT).toEqual([3, 6])
   })
 })

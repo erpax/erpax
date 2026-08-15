@@ -10,7 +10,7 @@
  */
 
 import { type HoroStep, HORO_DIGITS, VOID_PIVOT, CENTROID, POLE, INNER_CIRCUIT, type FiveRoles, type Ray } from '../constants'
-import { throughVoid } from '../arithmetic'
+import { throughVoid, digitalRoot } from '../arithmetic'
 
 /**
  * THE ORBITS OF DOUBLING — the closed circuits the flow cannot leave. **Computed, never listed.**
@@ -49,21 +49,15 @@ export function doublingOrbits(): number[][] {
  */
 export function trinities(): { readonly flowEast: number[]; readonly flowWest: number[]; readonly axis: number[] } {
   const cls = (r: number): number[] => [r, r + 3, r + 6].map((x) => (x % 9) || 9)
-  return { flowEast: cls(1), flowWest: cls(2), axis: cls(0) }
+  return { flowEast: cls(1), flowWest: cls(2), axis: cls(0).sort((a, b) => a - b) }
 }
 
 /**
  * The orbit of a digit under doubling (⟨2⟩): all positions reachable by repeated doubling.
  */
 export function orbitOf(step: number): number[] {
-  const start = (((Number(step) || 0) % 9) + 9) % 9 || 9
-  const out: number[] = []
-  let x = start
-  do {
-    out.push(x)
-    x = (x * 2) % 9 || 9
-  } while (x !== start)
-  return out
+  const n = (((Number(step) % 9) + 9) % 9) || 9
+  return doublingOrbits().find((o) => o.includes(n)) ?? []
 }
 
 /**
@@ -73,10 +67,8 @@ export function orbitOf(step: number): number[] {
  *   'void'  — 0, the reflection point
  */
 export function rayOf(digit: number): Ray {
-  const d = ((Number(digit) || 0) % 9 + 9) % 9
-  if (d === 0) return 'void'
-  const ringOrbit = new Set(orbitOf(1))
-  return ringOrbit.has(d) ? 'ring' : 'axis'
+  if (digit === 0) return 'void'
+  return orbitOf(1).includes(digit) ? 'ring' : 'axis'
 }
 
 /**
@@ -86,9 +78,13 @@ export function rayOf(digit: number): Ray {
  * Computed via the inverse generator ⟨5⟩.
  */
 export function antimatter(step: number): number {
+  const r = ((Number(step) % 9) + 9) % 9
+  return ((9 - r) % 9) || 9
+}
+
+/** UNUSED remnant of the facade-split's multiplicative rewrite — kept out of the surface. */
+function _multiplicativeInverseOf(step: number): number {
   const n = (((Number(step) || 0) % 9) + 9) % 9 || 9
-  // The inverse of n under composition is the one that makes n × inv ≡ 9 ≡ 0 (mod 9)
-  // For the ring {1,2,4,8,7,5}, this is unique; for axis & pole, it's themselves or 9.
   if (n === 9) return 9
   for (let m = 1; m <= 9; m++) {
     if (((n * m) % 9 || 9) === 9) return m
@@ -116,21 +112,37 @@ export function fiveRoles(): FiveRoles {
 }
 
 /**
- * Which steps can be reached from `from` by following a carry-ray chain?
- * (Placeholder for now; full definition in geometry/carry-rays.)
+ * The doubling carries, read digit by digit — which ray each carry digit lives on, and where the
+ * fold lands. Exactly one step straddles both rays in one fold: `8` (`2·8 = 16` carries `1` ring +
+ * `6` axis), the seam the two halves meet at.
+ *
+ * @invariant every carry's digits sum, under digitalRoot, to the step it lands on
+ * @invariant exactly one step straddles — `straddlingSteps()` is `[8]`, computed, never typed
  */
 export interface CarryRay {
-  readonly from: number
-  readonly to: number
-  readonly via: readonly number[]
+  readonly step: number
+  readonly doubled: number
+  readonly digits: readonly number[]
+  readonly rays: readonly Ray[]
+  readonly lands: number
+  /** true when the carry holds one ring digit AND one axis digit — the two rays met in one fold */
+  readonly straddles: boolean
 }
 
-/**
- * The carry rays: structured paths through the ring.
- * (Placeholder stub; full implementation in ../geometry/index.ts.)
- */
 export function carryRays(): readonly CarryRay[] {
-  return []
+  return [...orbitOf(1), ...INNER_CIRCUIT, POLE].map((step) => {
+    const doubled = step * 2
+    const digits = String(doubled).split('').map(Number)
+    const rays = digits.map(rayOf)
+    return {
+      step,
+      doubled,
+      digits,
+      rays,
+      lands: digitalRoot(doubled),
+      straddles: rays.includes('ring') && rays.includes('axis'),
+    }
+  })
 }
 
 /**
@@ -138,5 +150,5 @@ export function carryRays(): readonly CarryRay[] {
  * (Placeholder stub; full implementation in ../geometry/index.ts.)
  */
 export function straddlingSteps(): readonly number[] {
-  return []
+  return carryRays().filter((c) => c.straddles).map((c) => c.step)
 }

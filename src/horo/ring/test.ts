@@ -46,11 +46,12 @@ describe('horo/ring', () => {
       expect(orbitOf(9)).toEqual([9])
     })
 
-    it('always returns to start', () => {
+    it('is canonical and closed — every step belongs to its orbit, and doubling the last returns to the first', () => {
       for (let n = 1; n <= 9; n++) {
         const orbit = orbitOf(n)
-        expect(orbit[0]).toBe(n)
-        expect(orbit[orbit.length - 1] * 2 % 9 || 9).toBe(n)
+        expect(orbit).toContain(n) // membership, not entry order — the orbit is CANONICAL
+        expect(orbitOf(orbit[0]!)).toEqual(orbit) // same orbit from any of its members
+        expect((orbit[orbit.length - 1]! * 2) % 9 || 9).toBe(orbit[0]) // the cycle closes
       }
     })
   })
@@ -69,8 +70,8 @@ describe('horo/ring', () => {
 
   describe('antimatter', () => {
     it('finds the complement step', () => {
-      // antimatter pairs with a step to close (compose to 9)
-      expect(antimatter(1)).toBe(9)
+      // antimatter is the ADDITIVE inverse: n + antimatter(n) ≡ 0 (mod 9); the void 9 is its own
+      expect(antimatter(1)).toBe(8)
       expect(antimatter(9)).toBe(9)
       // For ring elements, verify pairing exists
       for (let n of [1, 2, 4, 5, 7, 8]) {
