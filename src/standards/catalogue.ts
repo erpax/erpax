@@ -7417,7 +7417,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "UUID (revised — content/event uuid)",
     "uuid": "01855583-c244-8103-b379-0ad77888d2c4",
     "color": "hsl(29 70% 49%)",
-    "count": 159,
+    "count": 158,
     "modules": [
       {
         "path": "src/agent/SKILL.md",

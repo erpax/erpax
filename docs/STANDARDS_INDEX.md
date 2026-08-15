@@ -2532,7 +2532,6 @@ src/security/header/headers.ts:13: * @standard OWASP-ASVS V14 configuration
 src/security/header/headers.ts:14: * @standard OWASP Secure-Headers-Project
 src/security/header/index.ts:5: * @standard W3C CSP-3
 src/security/header/index.ts:6: * @standard W3C Permissions-Policy
-src/security/pqc/index.ts:12: * @standard NIST FIPS 203 (ML-KEM) · NIST FIPS 204 (SLH-DSA) · NIST SP 800-225
 src/security/remote/access/index.ts:19: * @standard NIST SP 800-162 ABAC · NIST SP 800-107r1 §5.1 · CWE-59
 src/seed/erpax-product-pages.ts:31: * @standard schema.org Product
 src/seed/erpax-product-pages.ts:32: * @standard schema.org WebSite breadcrumb
@@ -3001,7 +3000,7 @@ src/uuid/kv/index.ts:54: * @standard NIST FIPS 180-4 SHA-256
 src/uuid/llm/index.ts:21: * @standard RFC 9562 §5.8 (uuidv8 structured content-uuid — the decode source)
 src/uuid/llm/index.ts:22: * @standard ITU-T X.667 (uuid ↔ 2.25 OID, via localize)
 src/uuid/llm/index.ts:23: * @standard ISO-16:1975 a432 (the signal anchor — color+sound from position)
-src/uuid/matrix/index.ts:42: * @standard RFC 9562 §5.8 (uuidv8 content-uuid) + §4.1 variant
+src/uuid/matrix/index.ts:48: * @standard RFC 9562 §5.8 (uuidv8 content-uuid) + §4.1 variant
 src/uuid/matrix/matrix.generated.ts:10: * @standard RFC 9562 §5.8 (uuidv8 content-uuid) + the horo digital-root ring
 src/uuid/projection/index.ts:10: * @standard CSS Color 4 hsl() (the colour facet)
 src/uuid/projection/index.ts:9: * @standard RFC 9562 §5.8 content-addressed uuidv8 (the identity the facets hang on)
@@ -3102,7 +3101,7 @@ src/warehouse/locations/index.ts:10: * @standard ISO-3166-2:2020 subdivision-cod
 src/warehouse/locations/index.ts:11: * @standard ISO-6346:2022 freight-container-coding-and-marking
 src/warehouse/locations/index.ts:12: * @standard EN-16931:2017 §BG-15 deliver-to-information
 src/warehouse/locations/index.ts:9: * @standard ISO-3166-1:2020 country-codes location-country
-src/wave/index.ts:28: * @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring
+src/wave/horo.ts:28: * @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring
 src/wco/hs/index.ts:10: * @standard EU CN Code (Combined Nomenclature) Regulation (EEC) 2658/87
 src/wco/hs/index.ts:11: * @standard US HTS (Harmonized Tariff Schedule)
 src/wco/hs/index.ts:9: * @standard WCO Harmonised System Convention (effective 1988, latest revision 2022)
@@ -6359,7 +6358,7 @@ src/warehouse/locations/consignment/arrangements/consignment/inventories/index.t
 src/warehouse/locations/consignment/arrangements/consignment/sales/index.ts:25: * @audit ISO-19011:2018 audit-trail consignment-sale-evidence
 src/warehouse/locations/consignment/arrangements/index.ts:25: * @audit ISO-19011:2018 audit-trail consignment-arrangement-evidence
 src/warehouse/locations/index.ts:15: * @audit ISO-19011:2018 audit-trail location-master-changes
-src/wave/index.ts:27: * @audit the entropy a wave borrows is read from the live matrix, never hand-asserted
+src/wave/horo.ts:27: * @audit the entropy a wave borrows is read from the live matrix, never hand-asserted
 src/website/seo/index.ts:34: * @audit ISO 19011:2018 §6.4.6 (every published SEO artefact audit-trailed)
 src/widget/AccountReconciliationsPanel.tsx:9: * @audit ISO-19011:2018 audit-trail period-end-evidence
 src/widget/AuditLogWidget.tsx:18: * @audit ISO-19011:2018 audit-trail viewer

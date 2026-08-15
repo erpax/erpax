@@ -9,8 +9,10 @@
  * @see ../arithmetic/index.ts (doubling, void reflection)
  */
 
+import type { CollectionBeforeChangeHook, Field } from 'payload'
 import { exactMax, exactAbs, algebraCos, algebraSin, algebraAtan2, algebraSqrt, PI } from '../../algebra'
 import { type Loop2D } from '../constants'
+import { HORO_DIGITS, isHoroStep, type HoroStep } from '../constants'
 
 /** A point on a planar loop. */
 export interface Loop2D {
@@ -149,24 +151,91 @@ export function isMergePoint(a: number, b: number): boolean {
   return a === 9 && b === 1
 }
 
-/** A horo state: a position on the ring with optional metadata. */
+/** One state band: a code/name pinned to a horo position. */
 export interface HoroState {
-  readonly step: number
-  readonly measure?: string
+  readonly code: string
+  readonly step: HoroStep
   readonly label?: string
 }
 
-/** Build a Payload field for horo state selection. */
-export function horoStateField(name: string = 'state') {
-  return {}
+/**
+ * Build a Payload `select` field for a state ring. Options are emitted in
+ * measure order; the stored value is the `code`. Pair with the `type`
+ * discriminator (sti) — `type` is what a thing IS, the horo step is where it is
+ * in the flow.
+ */
+export function horoStateField(
+  name: string,
+  states: ReadonlyArray<HoroState>,
+  opts: { defaultValue?: string; required?: boolean; description?: string } = {},
+): Field {
+  const ordered = [...states].sort(
+    (a, b) => HORO_DIGITS.indexOf(a.step) - HORO_DIGITS.indexOf(b.step),
+  )
+  return {
+    name,
+    type: 'select',
+    index: true,
+    required: opts.required ?? true,
+    options: ordered.map((s) => ({ label: s.label ?? s.code, value: s.code })),
+    ...(opts.defaultValue !== undefined ? { defaultValue: opts.defaultValue } : {}),
+    admin: {
+      description: opts.description ?? 'Horo state — a position on the 1·2·4·8·7·5·9 ring.',
+    },
+  }
 }
 
-/** Validate an array of horo states. */
-export function validateHoroStates(states: ReadonlyArray<HoroState>) {
-  return { valid: true, errors: [] as string[] }
+/**
+ * Validate a state ring's harmony: exactly 7 states, in measure order
+ * `[1,2,4,8,7,5,9]`, no duplicate codes. Off-ring or out-of-order ⇒ escape.
+ * The erpax analog of `validateHoroBand`.
+ */
+export function validateHoroStates(states: ReadonlyArray<HoroState>): {
+  ok: boolean
+  errors: string[]
+} {
+  const errors: string[] = []
+  if (states.length !== 7) errors.push(`expected 7 states, got ${states.length}`)
+  const steps = states.map((s) => s.step)
+  if (JSON.stringify(steps) !== JSON.stringify([...HORO_DIGITS])) {
+    errors.push(`expected measure order ${HORO_DIGITS.join(',')}, got ${steps.join(',')}`)
+  }
+  const codes = new Set<string>()
+  for (const s of states) {
+    if (!isHoroStep(s.step)) errors.push(`state ${s.code}: step ${s.step} is off-ring (escape)`)
+    if (codes.has(s.code)) errors.push(`duplicate state code ${s.code}`)
+    codes.add(s.code)
+  }
+  return { ok: errors.length === 0, errors }
 }
 
-/** Before-change hook for payload: ensure states stay on the ring. */
-export function horoStateBeforeChange() {
-  return async () => {}
+/**
+ * Collection-level `beforeChange` hook — harmony enforced at the WRITE.
+ *
+ * The `horoStateField` select already constrains the admin form and REST
+ * validation, but the programmatic path (seeds, imports, migrations, direct
+ * `payload.create`) can still slip an off-ring value past the UI. This hook
+ * closes that gap: any write that sets the state field to a code outside the
+ * declared ring throws — the runtime twin of the build-time `validateHoroStates`
+ * gate, exactly as `tamperProofBeforeChangeHook` is the runtime twin of the
+ * content-uuid field. Absent / empty values pass through (presence is the
+ * field's own `required` concern, not harmony's).
+ */
+export function horoStateBeforeChange(
+  fieldName: string,
+  states: ReadonlyArray<HoroState>,
+): CollectionBeforeChangeHook {
+  const codes = new Set(states.map((s) => s.code))
+  return ({ data }) => {
+    const record = data as Record<string, unknown> | undefined
+    const value = record?.[fieldName]
+    if (value === undefined || value === null || value === '') return data
+    if (typeof value !== 'string' || !codes.has(value)) {
+      throw new Error(
+        `horo escape: ${fieldName}='${String(value)}' is off the 1·2·4·8·7·5·9 ring. ` +
+          `Allowed states: ${[...codes].join(', ')}.`,
+      )
+    }
+    return data
+  }
 }
