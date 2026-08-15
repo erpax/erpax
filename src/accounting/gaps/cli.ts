@@ -1,5 +1,5 @@
 import { startProgressHeartbeat } from '@/cli/progress-heartbeat'
-import { accountingGapsInWaves, fixAccountingGapsOnP0, formatAccountingGapsReport } from './gaps'
+import { accountingGapsInWaves, fixAccountingGapsOnP0, formatAccountingGapsReport } from './index'
 
 const args = process.argv.slice(2)
 const fix = args.includes('--fix')

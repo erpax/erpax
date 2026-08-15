@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { accountCodeOf } from '@/accounting'
+import { accountCodeOf } from '@/accounting/coa'
 import { ATOM_LEDGER_PATHS, atomPathHasLedgerHook, ledgerForAtomPaths } from '@/path/hub'
 import { proveLedgerHubCoverage, renderDomainTable } from '@/apply/report'
 

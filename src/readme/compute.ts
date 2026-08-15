@@ -334,7 +334,9 @@ export type QuantumComputerSectionReport = {
   readonly boundaryEmpty: boolean
 }
 
-const requireReadme = createRequire(import.meta.url)
+/** Lazy: a top-level createRequire call is a side effect that pins this whole
+ * module into every bundle importing any of its exports — created on first use. */
+const requireReadme = (id: string): unknown => createRequire(import.meta.url)(id)
 
 /** Live ftlHolds report for the README gateway — fail-closed if unloadable. */
 export function computeQuantumComputerReport(

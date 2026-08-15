@@ -7,7 +7,7 @@ import { exactMax } from '@/algebra'
  *
  * @see ./cost-policy · ../skill/router/lazy-load · ./strict-apply · ./SKILL.md
  */
-import { accountCodeOf } from '@/accounting'
+import { accountCodeOf } from '@/accounting/coa'
 import { pathComparableUnits } from '@/wave/load'
 import type { SealedSkillExcerpt, LazySkillLoadOpts } from '@/skill/router/lazy-load'
 import { loadSealedSkill } from './skill-context'

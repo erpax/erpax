@@ -10,7 +10,7 @@
  */
 import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { accountCodeOf } from '@/accounting'
+import { accountCodeOf } from '@/accounting/coa'
 import type { SessionArtifact } from '@/memory/session'
 import { pathComparableUnits } from '@/wave/load'
 import { recordOnPath, type PathCanonicalEntry } from '@/path'

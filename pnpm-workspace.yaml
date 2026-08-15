@@ -1,6 +1,6 @@
 packages:
   - '.'
-  - 'packages/algebra'
+  - 'packages/*'
 
 overrides:
   dompurify: latest

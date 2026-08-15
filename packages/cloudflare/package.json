@@ -1,0 +1,45 @@
+{
+  "name": "@erpax/cloudflare",
+  "version": "0.1.0",
+  "description": "erpax cloudflare — sequence 7·5 (surface): edge runtime, bindings, agents/MCP, deploy. Core math (@erpax/algebra) is MIT; this package is CC-BY-NC-ND-4.0 or commercial via license@erpax.com.",
+  "license": "CC-BY-NC-ND-4.0",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/types/cloudflare/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/cloudflare/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erpax/erpax.git",
+    "directory": "packages/cloudflare"
+  },
+  "homepage": "https://github.com/erpax/erpax/tree/main/packages/cloudflare",
+  "engines": {
+    "node": ">=18.20.2"
+  },
+  "scripts": {
+    "build": "node ../build.mjs cloudflare",
+    "prepublishOnly": "node ../build.mjs cloudflare"
+  },
+  "erpax": {
+    "closureCeiling": 71
+  },
+  "dependencies": {
+    "typescript": "5.9.3",
+    "zod": "3.25.76"
+  }
+}

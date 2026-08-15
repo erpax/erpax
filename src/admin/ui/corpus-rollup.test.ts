@@ -1,7 +1,7 @@
 import { afterEach, describe, expect, it, vi } from 'vitest'
 
 import * as accounting from '@/accounting'
-import { erpaxSelfAccount } from '@/accounting'
+import { erpaxSelfAccount } from '@/accounting/corpus'
 import * as readme from '@/readme'
 import { buildReadmeCorpusContext, buildReadmeTypographyGraph, deriveFolderModel } from '@/readme'
 import {

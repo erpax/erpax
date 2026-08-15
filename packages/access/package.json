@@ -1,0 +1,44 @@
+{
+  "name": "@erpax/access",
+  "version": "0.1.0",
+  "description": "erpax access — sequence 3·9 (control): RBAC, multi-tenancy, auth — the control plane. Core math (@erpax/algebra) is MIT; this package is CC-BY-NC-ND-4.0 or commercial via license@erpax.com.",
+  "license": "CC-BY-NC-ND-4.0",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/types/access/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/access/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erpax/erpax.git",
+    "directory": "packages/access"
+  },
+  "homepage": "https://github.com/erpax/erpax/tree/main/packages/access",
+  "engines": {
+    "node": ">=18.20.2"
+  },
+  "scripts": {
+    "build": "node ../build.mjs access",
+    "prepublishOnly": "node ../build.mjs access"
+  },
+  "erpax": {
+    "closureCeiling": 23
+  },
+  "dependencies": {
+    "zod": "3.25.76"
+  }
+}

@@ -10,7 +10,7 @@ import {
   milliEbToEb,
   type CorpusJournalEntryDocument,
   type CorpusJournalLine,
-} from '@/accounting'
+} from '@/accounting/corpus'
 import { reciprocity } from '@/entanglement'
 import {
   buildReadmeCorpusContext,

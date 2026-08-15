@@ -12,7 +12,7 @@ import { exactMin } from '@/algebra'
  * @see ../index.ts — @/rules — @/readme/entropy — ./realtime.ts
  */
 import { join } from 'node:path'
-import { accountCodeOf } from '@/accounting'
+import { accountCodeOf } from '@/accounting/coa'
 import { deriveDiamond } from '@/diamond'
 import { jcsCanonicalize, uuid } from '@/integrity'
 import { folderViolations, alphanumericNameViolations } from '@/law/folder'

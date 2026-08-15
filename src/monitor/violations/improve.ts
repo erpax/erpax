@@ -10,7 +10,7 @@
 import { existsSync, mkdirSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { applySessionLawBatch } from '@/apply/batch'
-import { postSealOnPath } from '@/accounting'
+import { postSealOnPath } from '@/accounting/coa'
 import { jcsCanonicalize, uuid } from '@/integrity'
 import { recordPathVisit, recordOnPath, type PathCanonicalEntry } from '@/path'
 import { pivotIndexTsWithReexport } from '@/law/folder/word'

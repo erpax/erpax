@@ -25,7 +25,9 @@ import { createRequire } from 'node:module'
 import { existsSync, readFileSync } from 'node:fs'
 import { join, relative } from 'node:path'
 
-const requireAtom = createRequire(import.meta.url)
+/** Lazy: a top-level createRequire call is a side effect that pins this whole
+ * module (and its readme subtree) into every bundle — created on first use. */
+const requireAtom = (id: string): unknown => createRequire(import.meta.url)(id)
 import { toAtomPath } from '@/path'
 import {
   deriveFolderModel,
@@ -33,7 +35,7 @@ import {
   buildReadmeTypographyGraph,
   type FolderReadmeContext,
   type FolderReadmeModel,
-} from '@/readme'
+} from '@/readme/compute'
 import type { AnalysisTypographyGraph } from '@/typography/analysis-graph'
 import { methodPath, atomPathOf, parseMethodExports, type MethodDiamond } from '@/method'
 import { computeBoundary, type FileBoundary } from '@/quantum/boundary'
@@ -629,40 +631,4 @@ export function deriveCollectionDiamond(
   cwd: string = process.cwd(),
 ): CollectionDiamondModel {
   return computeDiamond({ kind: 'collection', opts, cwd }).model as CollectionDiamondModel
-}
-
-if (import.meta.url === `file://${process.argv[1]}`) {
-  if (process.argv.includes('--audit-files')) {
-    const violations = diamondFileViolations()
-    const verdict = diamondFilesGuardian(violations.length)
-    const byReason = new Map<string, number>()
-    for (const v of violations) byReason.set(v.reason, (byReason.get(v.reason) ?? 0) + 1)
-    console.log(`diamond/files — ${violations.length} violation(s) across atom folders`)
-    console.log(
-      '  allowed vocabulary:',
-      [...ALLOWED_DIAMOND_FILES.vocabulary].sort().join(' · '),
-    )
-    console.log('  allowed code:', [...ALLOWED_DIAMOND_FILES.code].sort().join(' · '))
-    console.log(
-      '  by reason:',
-      [...byReason.entries()]
-        .sort((a, b) => b[1] - a[1])
-        .map(([k, n]) => `${k}:${n}`)
-        .join(' '),
-    )
-    for (const v of violations.slice(0, 20)) {
-      console.log(`   ${v.atomPath} → ${v.file} (${v.reason})`)
-    }
-    if (violations.length > 20) console.log(`   … ${violations.length - 20} more`)
-    console.log((verdict.sealed ? '✓ ' : '✗ ') + verdict.guardians[0]!.reason)
-    process.exit(verdict.sealed ? 0 : 1)
-  }
-  const target = process.argv[2] ?? 'diamond'
-  const { model, stages, computationUuid: compUuid } = computeDiamond({ kind: 'path', path: target })
-  const v = verifyDiamond(model)
-  console.log(`diamond — ${model.kind} @ ${model.atomPath}`)
-  console.log(`  uuid: ${diamondUuid(model)}`)
-  console.log(`  computation: ${compUuid} (${stages.length} stages)`)
-  console.log(`  trinity: ${model.trinity.form}·${model.trinity.code}·${model.trinity.proof}`)
-  console.log(`  sealed: ${v.sealed}${v.impurities.length ? ' — ' + v.impurities.join('; ') : ''}`)
 }

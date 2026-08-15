@@ -16,7 +16,7 @@
  */
 import { describe, it, expect } from 'vitest'
 import { join } from 'node:path'
-import { erpaxSelfAccount } from '@/accounting'
+import { erpaxSelfAccount } from '@/accounting/corpus'
 import {
   deriveModel,
   renderReadme,

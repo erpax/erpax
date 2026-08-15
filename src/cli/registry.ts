@@ -30,7 +30,7 @@ export const AURA_SCAN_PATH = 'src/aura/scan.mjs'
 
 export const CLI_REGISTRY: Record<string, CliDomain> = {
   seal: {
-    default: { desc: 'The 4-seal gate — fail closed unless every atom is signed by its 4-key bind', cmd: `${TSX} src/uuid/matrix/index.ts` },
+    default: { desc: 'The 4-seal gate — fail closed unless every atom is signed by its 4-key bind', cmd: `${TSX} src/uuid/matrix/gate.ts` },
   },
   readme: {
     default: { desc: 'Regenerate README + computed faces', cmd: `${HEAVY_TSX} src/readme/index.ts` },
@@ -84,8 +84,8 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     },
   },
   accounting: {
-    gaps: { desc: 'Wave-batch entropy gap scan', cmd: `${TSX} src/accounting/gaps-cli.ts` },
-    'gaps-fix': { desc: 'P0 accounting gap fixes + regen', cmd: `${TSX} src/accounting/gaps-cli.ts --fix` },
+    gaps: { desc: 'Wave-batch entropy gap scan', cmd: `${TSX} src/accounting/gaps/cli.ts` },
+    'gaps-fix': { desc: 'P0 accounting gap fixes + regen', cmd: `${TSX} src/accounting/gaps/cli.ts --fix` },
   },
   rules: {
     default: { desc: 'Rules ratchet check (+ failure summary)', cmd: '__rules_check__' },

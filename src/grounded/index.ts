@@ -25,7 +25,7 @@
  */
 import { execFileSync } from 'node:child_process'
 
-import { postGapOnPath, postSealOnPath } from '@/accounting'
+import { postGapOnPath, postSealOnPath } from '@/accounting/coa'
 import type { JournalEntryLine } from '@/accounting'
 
 // ── sealed-source primitives — the ONLY way a trust computation reads matter ────────────────────

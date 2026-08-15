@@ -50,49 +50,9 @@ export type {
   ValidatedEntry,
 } from './debit'
 
-// Path-keyed chart of accounts + corpus self-accounting (eb currency).
-export {
-  accountCodeOf,
-  accountCoordinateOf,
-  postEntry,
-  postGapOnPath,
-  postSealOnPath,
-  entropyLinesToPathEntry,
-  balanceByPath,
-  ENTROPY_CONTRA_PATH,
-  SEAL_CONTRA_PATH,
-  BALANCE_CONTRA_PATH,
-} from './coa'
-export {
-  erpaxSelfAccount,
-  accountCorpusEntropy,
-  bondStatementToJournalEntry,
-  folderEntropyJournalEntry,
-  entropyToValidatedEntry,
-  ebToMilliEb,
-  milliEbToEb,
-  ENTROPY_CURRENCY,
-  ENTROPY_CURRENCY_NAME,
-  ENTROPY_CURRENCY_SYMBOL,
-  CORPUS_JOURNAL_COLLECTION,
-  CORPUS_ENTROPY_SOURCE_TYPE,
-} from './corpus'
-export type { CorpusJournalEntryDocument, CorpusJournalLine } from './corpus'
-export {
-  accountingGapsInWaves,
-  waveAccountingGapViolations,
-  fixAccountingGapsOnP0,
-  formatAccountingGapsReport,
-  p0AccountingStatus,
-  P0_ACCOUNTING_ROOT,
-  P0_ACCOUNTING_LEAVES,
-} from './gaps'
-export type {
-  WaveAccountingImpurity,
-  WaveAccountingImpurityKind,
-  WaveAccountingGapBatch,
-  P0AccountingStatus,
-  AccountingGapsInWavesVerdict,
-  AccountingGapsInWavesOpts,
-  FixAccountingGapsResult,
-} from './gaps'
+// Corpus SELF-accounting lives at its child-atom faces — `@/accounting/coa`
+// (eb-currency path ledger), `@/accounting/corpus` (journal projection), and
+// `@/accounting/gaps` (wave-batch entropy scan) — the rules registry's own
+// nesting. The mountable domain face re-exports none of it: a host app has no
+// corpus to scan, and these edges pinned readme/compute plus the 4MB generated
+// UUID matrix into every accounting bundle.

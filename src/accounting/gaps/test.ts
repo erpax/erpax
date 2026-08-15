@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { deriveFolderModel } from '@/readme/compute'
-import { P0_ACCOUNTING_LEAVES, P0_ACCOUNTING_ROOT, p0AccountingStatus, formatAccountingGapsReport } from './gaps'
+import { P0_ACCOUNTING_LEAVES, P0_ACCOUNTING_ROOT, p0AccountingStatus, formatAccountingGapsReport } from './index'
 
 describe('accounting/gaps', () => {
   it('P0 accounting subtree has parent + 9 leaves', () => {

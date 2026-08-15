@@ -589,13 +589,6 @@ export {
 } from './record'
 
 export {
-  recordedAndImplementedVerdict,
-  assertRecordedAndImplemented,
-  type RecordedImplementedVerdict,
-  type RecordedImplementedBatchVerdict,
-} from '@/seal'
-
-export {
   ATOM_LEDGER_PATHS,
   recordAtomOnPath,
   atomPathHasLedgerHook,
@@ -624,22 +617,4 @@ export function recordPathOnPath(
   seq?: number,
 ): PathCanonicalEntry {
   return recordPathVisit('path', { kind: 'path.self', payload }, at, prevEntryUuid, seq)
-}
-
-if (import.meta.url === 'file://' + process.argv[1]) {
-  const sample = process.argv[2] ?? 'law/folder'
-  console.log('path — all surfaces merge:')
-  for (const s of PATH_SURFACES) {
-    const examples: Record<PathSurface, string> = {
-      fs: `src/${sample}/index.ts`,
-      url: `/${sample}/SKILL`,
-      github: `https://github.com/erpax/erpax/blob/main/src/${sample}/SKILL.md`,
-      mcp: `erpax://${sample}`,
-      api: `/api/corpus/${sample}`,
-      http: `https://docs.erpax.dev/${sample}/SKILL`,
-      cloudflare: `r2://erpax/t:tenant/${sample}/report.pdf`,
-    }
-    console.log(`  ${s.padEnd(7)}`, toAtomPath(examples[s], s))
-  }
-  console.log('  uuid:   ', atomPathUuid(sample, 'fs'))
 }

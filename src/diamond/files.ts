@@ -26,7 +26,7 @@ import {
   lawLineForAtom,
   listAtomPaths,
   type FolderReadmeModel,
-} from '@/readme'
+} from '@/readme/compute'
 import {
   ALLOWED_DIAMOND_FILES,
   CODE_MARKERS,

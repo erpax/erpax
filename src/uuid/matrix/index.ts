@@ -7,7 +7,13 @@
  * folder path IS the matrix address — one node per src/{atomPath}/, not leaf-only
  * collision. The data is generated; this barrel is the stable API over it.
  *
- * @see ./matrix.generated.ts (the data) · ./collide.mjs (the collider)
+ * The lookup tables are built LAZILY on first query (confine: handle the field,
+ * never hold every particle at load). A consumer that needs only the pure fold
+ * (toUuid/merge) never evaluates the 3,193-node data, so bundlers tree-shake
+ * ./matrix.generated out entirely — same members, same order, same answers as
+ * the eager build this replaces. The CLI 4-seal lane lives in ./gate.ts.
+ *
+ * @see ./matrix.generated.ts (the data) · ./collide.mjs (the collider) · ./gate.ts (the 4-seal lane)
  */
 import { createHash } from 'node:crypto'
 // `norm` is a trivial pure normaliser; importing it from `@/corpus` dragged the fs-based dev corpus
@@ -35,7 +41,7 @@ export type { MatrixNode, MatrixEdge }
  * emits the bind/cross/root, this recomputes them to verify. The index.test
  * pins the agreement against a known collide output (the `coordinate` node).
  *
- * NOT the same primitive as src/integrity/content-uuid.ts#nameUuid — that one
+ * NOT the same primitive as src/integrity/content/index.ts#nameUuid — that one
  * prefixes a namespace UUID into the hash (name-based v8); the matrix coil
  * hashes the bare bytes (no namespace), matching the collider exactly.
  *
@@ -52,8 +58,6 @@ const ubytes = (u: string): Buffer => Buffer.from(u.replace(/-/g, ''), 'hex')
 /** Collision: two uuids → a third (concat their 16 bytes, content-hash). */
 export const merge = (a: string, b: string): string => toUuid(Buffer.concat([ubytes(a), ubytes(b)]))
 
-const byAtom = new Map<string, number>()
-const byPath = new Map<string, number>()
 /** When homonym leaves share an atom key, prefer root path then shortest path. */
 const preferAtomIndex = (current: number, candidate: number): number => {
   const ca = UUID_MATRIX_NODES[current]!
@@ -67,16 +71,68 @@ const preferAtomIndex = (current: number, candidate: number): number => {
   if (pa.includes('/') && !pb.includes('/')) return candidate
   return pa.localeCompare(pb) <= 0 ? current : candidate
 }
-UUID_MATRIX_NODES.forEach((n, i) => {
-  const prev = byAtom.get(n.atom)
-  byAtom.set(n.atom, prev === undefined ? i : preferAtomIndex(prev, i))
-  if (n.path) byPath.set(n.path, i)
-})
 
 const NIL_PARENT = '00000000-0000-8000-8000-000000000000'
 
+/**
+ * Every lookup table, indexed ONCE, lazily — the fold applied to the matrix itself.
+ *
+ * `neighborsOf` and `backlinksOf` each scanned the whole edge array per call. Called once per atom
+ * across 3,203 atoms, that is O(atoms x edges): the corpus-wide frontmatter sync ran at ~5 MINUTES
+ * PER ATOM (measured: 14:50 CPU for 3 files), which is ~267 hours for the corpus — it could not
+ * finish, and it is the same shape as every other cost measured today. A linear scan to answer
+ * "who is adjacent" is travel; an index is an address.
+ *
+ * Built on FIRST QUERY from the same arrays, in the same order, so the ANSWERS are identical —
+ * a hoist made lazy, not a change of meaning. Laziness is what lets a toUuid-only consumer
+ * (e.g. @erpax/identity's merge face) ship without the 4MB generated matrix.
+ *
+ * @invariant same members, same order, as the eager build it replaces — proven per atom, not assumed
+ */
+interface MatrixTables {
+  readonly byAtom: Map<string, number>
+  readonly byPath: Map<string, number>
+  readonly childrenByParentUuid: Map<string, string[]>
+  readonly byUuid: Map<string, number>
+  readonly outByIndex: Map<number, number[]>
+  readonly inByIndex: Map<number, number[]>
+}
+let _tables: MatrixTables | undefined
+const tables = (): MatrixTables => {
+  if (_tables) return _tables
+  const byAtom = new Map<string, number>()
+  const byPath = new Map<string, number>()
+  const childrenByParentUuid = new Map<string, string[]>()
+  const byUuid = new Map<string, number>()
+  UUID_MATRIX_NODES.forEach((n, i) => {
+    const prev = byAtom.get(n.atom)
+    byAtom.set(n.atom, prev === undefined ? i : preferAtomIndex(prev, i))
+    if (n.path) byPath.set(n.path, i)
+    if (n.parent && n.parent !== NIL_PARENT) {
+      const arr = childrenByParentUuid.get(n.parent) ?? []
+      arr.push(n.path)
+      childrenByParentUuid.set(n.parent, arr)
+    }
+    // First-wins on the rare merged-account collision; the NIL parent uuid never indexes.
+    if (!byUuid.has(n.uuid)) byUuid.set(n.uuid, i)
+  })
+  const outByIndex = new Map<number, number[]>()
+  const inByIndex = new Map<number, number[]>()
+  for (const e of UUID_MATRIX_EDGES) {
+    const out = outByIndex.get(e.f)
+    if (out) out.push(e.t)
+    else outByIndex.set(e.f, [e.t])
+    const inc = inByIndex.get(e.t)
+    if (inc) inc.push(e.f)
+    else inByIndex.set(e.t, [e.f])
+  }
+  _tables = { byAtom, byPath, childrenByParentUuid, byUuid, outByIndex, inByIndex }
+  return _tables
+}
+
 /** Resolve a node index: full path → atom key (prefer root when homonym). */
 export const nodeIndexOf = (key: string): number | undefined => {
+  const { byAtom, byPath } = tables()
   const pathKey = key.replace(/\\/g, '/')
   if (pathKey.includes('/')) {
     const pi = byPath.get(pathKey)
@@ -90,29 +146,15 @@ export const nodeIndexOf = (key: string): number | undefined => {
 /** Resolve a node index for edge/cross queries — path-first. */
 const indexOf = (key: string): number | undefined => nodeIndexOf(key)
 
-/** Direct children on the folder tree axis (parent↔child bidirectional cross). */
-const childrenByParentUuid = new Map<string, string[]>()
-UUID_MATRIX_NODES.forEach((n) => {
-  if (n.parent && n.parent !== NIL_PARENT) {
-    const arr = childrenByParentUuid.get(n.parent) ?? []
-    arr.push(n.path)
-    childrenByParentUuid.set(n.parent, arr)
-  }
-})
-
-/**
- * Resolve a node by its content-uuid (the neighbour pointers — parent/prev/next
- * — are stored AS uuids, not atom names). First-wins on the rare merged-account
- * collision; the NIL parent uuid never indexes (no node carries it).
- */
-const byUuid = new Map<string, number>()
-UUID_MATRIX_NODES.forEach((n, i) => { if (!byUuid.has(n.uuid)) byUuid.set(n.uuid, i) })
-
 const at = (i: number): MatrixNode | undefined => UUID_MATRIX_NODES[i]
 const isNode = (n: MatrixNode | undefined): n is MatrixNode => n !== undefined
+/**
+ * Resolve a node by its content-uuid (the neighbour pointers — parent/prev/next
+ * — are stored AS uuids, not atom names).
+ */
 const nodeByUuid = (u: string | undefined): MatrixNode | undefined => {
   if (u === undefined) return undefined
-  const i = byUuid.get(u)
+  const i = tables().byUuid.get(u)
   return i === undefined ? undefined : at(i)
 }
 
@@ -150,37 +192,11 @@ export const horoCrossed = (atomPath: string, horo: number | null): boolean => {
   return node?.band === 'control' && CONTROL_HORO.has(horo)
 }
 
-/**
- * Adjacency, indexed ONCE — the fold applied to the matrix itself.
- *
- * `neighborsOf` and `backlinksOf` each scanned the whole edge array per call. Called once per atom
- * across 3,203 atoms, that is O(atoms x edges): the corpus-wide frontmatter sync ran at ~5 MINUTES
- * PER ATOM (measured: 14:50 CPU for 3 files), which is ~267 hours for the corpus — it could not
- * finish, and it is the same shape as every other cost measured today. A linear scan to answer
- * "who is adjacent" is travel; an index is an address.
- *
- * Built at module load from the same arrays, in the same order, so the ANSWERS are identical — this
- * is a hoist, not a change of meaning. The idiom is already in this file: `childrenByParentUuid`
- * indexes the parent axis exactly this way.
- *
- * @invariant same members, same order, as the scan it replaces — proven per atom, not assumed
- */
-const outByIndex = new Map<number, number[]>()
-const inByIndex = new Map<number, number[]>()
-for (const e of UUID_MATRIX_EDGES) {
-  const out = outByIndex.get(e.f)
-  if (out) out.push(e.t)
-  else outByIndex.set(e.f, [e.t])
-  const inc = inByIndex.get(e.t)
-  if (inc) inc.push(e.f)
-  else inByIndex.set(e.t, [e.f])
-}
-
 /** Atoms this atom path links TO (outgoing edges — path-aware). */
 export const neighborsOf = (atom: string): MatrixNode[] => {
   const i = indexOf(atom)
   if (i === undefined) return []
-  return (outByIndex.get(i) ?? []).map((t) => at(t)).filter(isNode)
+  return (tables().outByIndex.get(i) ?? []).map((t) => at(t)).filter(isNode)
 }
 
 /**
@@ -230,7 +246,7 @@ export function entanglementOf(atom: string): Entanglement {
 export const backlinksOf = (atom: string): MatrixNode[] => {
   const i = indexOf(atom)
   if (i === undefined) return []
-  return (inByIndex.get(i) ?? []).map((f) => at(f)).filter(isNode)
+  return (tables().inByIndex.get(i) ?? []).map((f) => at(f)).filter(isNode)
 }
 
 /** The binding-uuid of the edge a→b (path-aware), or undefined if no such edge. */
@@ -284,7 +300,7 @@ export const nextOf = (atom: string): MatrixNode | undefined => nodeByUuid(nodeO
 export const childrenOf = (atom: string): MatrixNode[] => {
   const n = nodeOf(atom)
   if (!n) return []
-  const paths = childrenByParentUuid.get(n.uuid) ?? []
+  const paths = tables().childrenByParentUuid.get(n.uuid) ?? []
   return paths.map((p) => nodeOf(p)).filter(isNode)
 }
 
@@ -396,15 +412,4 @@ export function assertMatrixSigned(): { signed: number } {
     throw new Error(`✗ 4-seal gate: matrix root does not fold to UUID_MATRIX_ROOT (got ${root.slice(0, 16)}…) — the holographic collapse is broken`)
   }
   return { signed: UUID_MATRIX_NODES.length }
-}
-
-if (import.meta.url === `file://${process.argv[1]}`) {
-  // The 4-seal gate lane — fail closed (exit 1) unless every atom is signed by its 4-key bind.
-  try {
-    const { signed } = assertMatrixSigned()
-    console.log(`✓ 4-seal gate — ${signed} atoms signed (uuid⊕parent⊕prev⊕next binds recompute · root folds to UUID_MATRIX_ROOT)`)
-  } catch (e) {
-    console.error((e as Error).message)
-    process.exit(1)
-  }
 }

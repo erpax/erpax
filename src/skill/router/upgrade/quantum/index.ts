@@ -8,7 +8,7 @@
  *
  * @see ../index.ts — ../../../../quantum — ../../../../accounting/coa — ../../../../path/record
  */
-import { accountCodeOf } from '@/accounting'
+import { accountCodeOf } from '@/accounting/coa'
 import { linksOf } from '@/typography'
 import { entangledFieldsFromRegistry } from '@/quantum/entanglement/registry'
 import {

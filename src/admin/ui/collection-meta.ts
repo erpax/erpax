@@ -1,7 +1,7 @@
 /**
  * admin/ui/collection-meta — atom path · horo · seal from collection config.
  */
-import { accountCodeOf } from '@/accounting'
+import { accountCodeOf } from '@/accounting/coa'
 import { COLLECTION_DIAMOND_KEY } from '@/factory/collection-factory'
 import type { CollectionConfig } from 'payload'
 import { nodeOf } from '@/uuid/matrix'
