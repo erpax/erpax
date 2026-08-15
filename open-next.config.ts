@@ -22,5 +22,6 @@ export default {
   // `pnpm build` re-runs wrangler types + payload generate:types + importmap + sitemap.
   // Those artefacts are committed; CI `payload verify-types` is the freshness gate.
   // Deploy wall-clock is dominated by Next + Worker pack — keep only that here.
-  buildCommand: 'node scripts/ensure-mcp-patch.mjs && pnpm build:next && node scripts/stub-bundle-leaves.mjs',
+  buildCommand:
+    'node scripts/ensure-mcp-patch.mjs && node scripts/ensure-image-size-patch.mjs && pnpm build:next && node scripts/stub-bundle-leaves.mjs',
 }
