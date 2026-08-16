@@ -40,6 +40,13 @@ bash scripts/auto-heal-generated-artefacts.sh
 cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/cli/index.ts approve
 
 # ── 2. Verify gates (must pass after auto-heal) ─────────────────────
+# Security-first: the image-size DoS patch (CVE-2025-71329/71330, no upstream
+# fix) is a `pnpm patch` — it fixes behaviour without changing the version, so
+# nothing else catches its silent removal. Fail the push if any loadable copy
+# lost its zero-advance guards. The build-time twin runs in open-next.config.ts;
+# this is the earlier tripwire so a dropped patch never reaches deploy. Fast
+# (~50ms) and fail-closed under `set -e`.
+node scripts/ensure-image-size-patch.mjs
 # Cheapest gate first: malformed @standard / @rfc / @compliance banners.
 bash scripts/standards-citation-index.sh --check
 # Every src/standards/<id>/ + tests/standards/<id>/ file MUST cite a standard.

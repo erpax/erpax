@@ -18,4 +18,7 @@ cd "$(dirname "$0")/.." || exit 1
 export PATH="$PWD/node_modules/.bin:$PATH"
 export NODE_OPTIONS=--no-deprecation
 set -e
+# Security guard rides every push path — a dropped image-size DoS patch
+# (CVE-2025-71329/71330) must fail here too, not only the full pre-push stack.
+node scripts/ensure-image-size-patch.mjs
 pnpm erpax confirm uuid
