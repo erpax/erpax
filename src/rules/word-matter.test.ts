@@ -46,4 +46,17 @@ describe('rules/word-matter — heuristics', () => {
     expect(IDENTIFIER_MAX_LEN).toBe(28)
     expect(IDENTIFIER_MAX_TOKENS).toBe(4)
   })
+
+  it('duplicate-prefix is the accessor family, not any lexical prefix', () => {
+    // The old scan flagged ANY name that is a string-prefix of another — 960 hits,
+    // ZERO of them the get/getX family the law names. A shared root is cohesion
+    // (`Lease`/`LeaseStatus`, `merge`/`mergeCorpusEntropy`, `Provider`/`Props`), never
+    // duplication. Pin the fix: every duplicate-prefix violation's base is a real
+    // accessor verb (get/is/has/set/…), so cohesive domain naming can never regress in.
+    const dup = wordMatterViolations().filter((r) => r.kind === 'duplicate-prefix')
+    for (const r of dup) {
+      const prefix = /duplicates prefix (\S+)/.exec(r.reason)?.[1] ?? ''
+      expect(prefix).toMatch(/^(get|set|is|has|fetch|find|load|read|list)[A-Z]/)
+    }
+  })
 })

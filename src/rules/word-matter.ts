@@ -1,9 +1,14 @@
 /**
  * rules/word-matter — identifiers and comments must earn their place.
  *
- * Heuristics: long/verbose names · comment/code bloat · duplicate get/getX prefixes ·
- * helper/util/common filenames. Coordinates alphanumeric-name (5df78a5a) and
- * logic-concentration (4f811289) — matter quality on the deployment axis.
+ * Heuristics: long/verbose names · comment/code bloat · duplicate get/getX ACCESSOR
+ * families · helper/util/common filenames. Coordinates alphanumeric-name (5df78a5a)
+ * and logic-concentration (4f811289) — matter quality on the deployment axis.
+ *
+ * NB: duplicate-prefix is the redundant-accessor family (getUserById · …ByEmail →
+ * getUser(by)), NOT any lexical prefix. A shared root is cohesion (`Lease`/`LeaseStatus`,
+ * `merge`/`mergeCorpusEntropy`), never a defect — the old `startsWith` scan measured
+ * good naming as bad and was 100% false positives against this docstring.
  *
  * @see ./index.ts — ../seal/cross-concept
  */
@@ -116,16 +121,46 @@ const collectIdentifiers = (content: string): Array<{ name: string; line: number
   return out
 }
 
+/** Accessor verbs — the `get/getX` families the law names (get · is · has · set · fetch · find · load · read · list). */
+const ACCESSOR_PREFIX = /^(get|set|is|has|fetch|find|load|read|list)(?=[A-Z])/
+
+/**
+ * Idiomatic type/const companions — a base and its `…Props/…Kind/…Opts/…Value/…Row/
+ * …_NAME` are ONE concept expressed twice by the language's own convention, never
+ * duplication. `ViolationMonitorProvider`/`…Props` and `Lease`/`LeaseStatus` are
+ * cohesion, not redundancy.
+ */
+const COMPANION_SUFFIX =
+  /^(?:props|kind|opts|option|options|value|values|result|results|input|inputs|output|outputs|row|rows|args|arg|config|context|state|ref|map|set|list|handler|handlers|event|events|entry|entries|name|names|symbol|batch|cache|key|keys|id|ids|type|types|snapshot|meta|metadata|data|def|defs|fn|impl|provider|consumer|schema|model|verdict|report|summary|spec|label|labels|coverage|members?|axis|descriptor|lines?|select|selects)$/i
+
+const isCompanionExtension = (base: string, longer: string): boolean =>
+  COMPANION_SUFFIX.test(longer.slice(base.length).replace(/^_+/, ''))
+
+/**
+ * A DUPLICATE-PREFIX family is the `get/getX` redundancy the law names — an
+ * accessor base with 2+ specialisations that should collapse to one parameterised
+ * call (`getUserById · getUserByEmail · getUserByPhone` → `getUser(by)`).
+ *
+ * The prior scan flagged ANY name that is a lexical prefix of another
+ * (`b.startsWith(a)`), which is the signature of GOOD cohesive naming, not
+ * duplication: it read `merge`→`mergeCorpusEntropy`, `Lease`→`LeaseStatus`,
+ * `Provider`→`ProviderProps` as violations. Measured against its own docstring it
+ * was 100% false positives — 960 flagged, ZERO were accessor families. A shared
+ * root is cohesion; only a redundant accessor family is the defect. Requires the
+ * base to be a real accessor, exempts idiomatic companions, needs a true family.
+ */
 const duplicatePrefixPairs = (names: readonly string[]): Array<{ longer: string; prefix: string }> => {
-  const uniq = [...new Set(names)].sort((a, b) => a.length - b.length)
+  const uniq = new Set(names)
+  const bases = [...uniq].sort((a, b) => a.length - b.length)
   const out: Array<{ longer: string; prefix: string }> = []
-  for (let i = 0; i < uniq.length; i++) {
-    const a = uniq[i]!
-    for (let j = i + 1; j < uniq.length; j++) {
-      const b = uniq[j]!
-      if (b.startsWith(a) && b.length - a.length >= DUPLICATE_PREFIX_MIN && a.length >= DUPLICATE_PREFIX_MIN) {
-        out.push({ longer: b, prefix: a })
-      }
+  for (const base of bases) {
+    if (base.length < DUPLICATE_PREFIX_MIN || !ACCESSOR_PREFIX.test(base)) continue
+    const family = [...uniq].filter(
+      (b) => b !== base && b.startsWith(base) && b.length - base.length >= DUPLICATE_PREFIX_MIN && !isCompanionExtension(base, b),
+    )
+    // A lone specialisation of an accessor is fine; a FAMILY (2+) is the parameterise-me smell.
+    if (family.length >= 2) {
+      for (const longer of family) out.push({ longer, prefix: base })
     }
   }
   return out
