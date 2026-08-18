@@ -11,11 +11,17 @@
  */
 import { readFileSync, readdirSync, statSync } from 'node:fs'
 import { join, relative } from 'node:path'
+import ts from 'typescript'
 
 /** Matrix constants-audit coordinate — lawful vs crack categorization anchor. */
 export const CONSTANTS_AUDIT_COORDINATE = '82bdf99d' as const
 
-export type ConstantCategory = 'lawful-physical' | 'lawful-binding' | 'seal-debt' | 'crack'
+export type ConstantCategory =
+  | 'lawful-physical'
+  | 'lawful-binding'
+  | 'lawful-code'
+  | 'seal-debt'
+  | 'crack'
 
 export interface ConstantAuditEntry {
   readonly file: string
@@ -42,8 +48,6 @@ export interface MatrixCrackViolation {
 }
 
 const SRC = 'src'
-
-const EXPORT_CONST_RE = /export\s+const\s+([A-Za-z_][A-Za-z0-9_]*)\s*=/g
 
 /** Physical ratios and ring digits — lawful numeric literals. */
 const LAWFUL_PHYSICAL = new Set(['HORO_DIGITS', 'HORO_MEASURE', 'LANDAUER_BIT', 'COMPARABLE_UNIT'])
@@ -101,11 +105,102 @@ const atomPathOf = (relFile: string): string => {
   return i > 0 ? underSrc.slice(0, i) : underSrc.replace(/\.[^.]+$/, '')
 }
 
-const categorize = (constName: string): ConstantCategory => {
+/** Unwrap `as const` / `satisfies` / parens / type-assertion to the real expression. */
+const unwrap = (n: ts.Expression): ts.Expression => {
+  let e = n
+  while (
+    ts.isAsExpression(e) ||
+    ts.isSatisfiesExpression(e) ||
+    ts.isParenthesizedExpression(e) ||
+    ts.isTypeAssertionExpression(e)
+  ) {
+    e = e.expression
+  }
+  return e
+}
+
+/**
+ * Is this initializer a DATA LITERAL — a hardcoded value — or CODE?
+ *
+ * The axis's law: "export const is seal-debt; compute from sealed state instead."
+ * That indicts a hardcoded VALUE, never a function or a computed expression. A
+ * regex over `export const X =` cannot tell `export const RATE = 0.2` (a static
+ * datum — the real crack) from `export const exactMax = (a, b) => …` (a pure
+ * function — CODE, not seal-debt). It counted both, so 57% of the "cracks" were
+ * arrow functions. The grammar is the theorem: a const bound to a function or a
+ * call/expression is code that already computes; only a bare data literal is a
+ * static a theorem could fold. Unwrap `as const` / `satisfies` / parentheses to
+ * reach the real initializer.
+ */
+const isDataLiteral = (node: ts.Expression): boolean => {
+  const n = unwrap(node)
+  // A prefixed numeric literal (e.g. -1) is still a hardcoded datum.
+  if (ts.isPrefixUnaryExpression(n)) return ts.isNumericLiteral(n.operand)
+  return (
+    ts.isNumericLiteral(n) ||
+    ts.isBigIntLiteral(n) ||
+    ts.isStringLiteral(n) ||
+    ts.isNoSubstitutionTemplateLiteral(n) ||
+    ts.isArrayLiteralExpression(n) ||
+    ts.isObjectLiteralExpression(n) ||
+    n.kind === ts.SyntaxKind.TrueKeyword ||
+    n.kind === ts.SyntaxKind.FalseKeyword
+  )
+}
+
+/**
+ * An IDENTITY SEED is a string const whose value is its own name or its atom's
+ * leaf — `export const abdomen = 'abdomen'`. The axis's own test calls these
+ * "correctly axioms, s > 0": the assumed base a theorem is proven FROM, not a
+ * derivable static. Irreducible, so lawful.
+ */
+const isIdentitySeed = (name: string, init: ts.Expression, atomLeaf: string): boolean => {
+  const e = unwrap(init)
+  return ts.isStringLiteral(e) && (e.text === name || e.text === atomLeaf)
+}
+
+const categorize = (
+  constName: string,
+  initializer: ts.Expression | undefined,
+  atomLeaf: string,
+): ConstantCategory => {
   if (LAWFUL_PHYSICAL.has(constName)) return 'lawful-physical'
   if (LAWFUL_BINDING_NAMES.has(constName) || LAWFUL_BINDING_RE.test(constName)) return 'lawful-binding'
   if (BASELINE_RE.test(constName)) return 'seal-debt'
+  // Per-atom i18n data (`export const translations = {…}`) is irreducible source
+  // content, not a derivable static — one per atom, lawful like the identity seed.
+  if (constName === 'translations') return 'lawful-binding'
+  if (initializer && isIdentitySeed(constName, initializer, atomLeaf)) return 'lawful-binding'
+  // No initializer (declare const) or a function/computed expression is CODE — it
+  // already computes; it is not a static value a theorem could fold.
+  if (!initializer || !isDataLiteral(initializer)) return 'lawful-code'
   return 'crack'
+}
+
+/** The atom leaf for a repo-relative file — the folder name that owns it. */
+const atomLeafOf = (relFile: string): string => {
+  const parts = relFile.replace(/^src\//, '').split('/')
+  return parts.length > 1 ? parts[parts.length - 2]! : parts[0]!.replace(/\.[^.]+$/, '')
+}
+
+/** Every exported `const` name + its initializer, read from the grammar (not a regex). */
+function exportedConsts(file: string, text: string): ReadonlyArray<{ name: string; init: ts.Expression | undefined }> {
+  const sf = ts.createSourceFile(file, text, ts.ScriptTarget.Latest, true)
+  const out: { name: string; init: ts.Expression | undefined }[] = []
+  const visit = (node: ts.Node): void => {
+    if (
+      ts.isVariableStatement(node) &&
+      node.declarationList.flags & ts.NodeFlags.Const &&
+      node.modifiers?.some((m) => m.kind === ts.SyntaxKind.ExportKeyword)
+    ) {
+      for (const decl of node.declarationList.declarations) {
+        if (ts.isIdentifier(decl.name)) out.push({ name: decl.name.text, init: decl.initializer })
+      }
+    }
+    ts.forEachChild(node, visit)
+  }
+  visit(sf)
+  return out
 }
 
 /** Scan all src TypeScript for exported const — categorize lawful vs crack. */
@@ -117,6 +212,7 @@ export function auditConstants(cwd: string = process.cwd()): ConstantAuditReport
   const byCategory: Record<ConstantCategory, number> = {
     'lawful-physical': 0,
     'lawful-binding': 0,
+    'lawful-code': 0,
     'seal-debt': 0,
     crack: 0,
   }
@@ -126,12 +222,12 @@ export function auditConstants(cwd: string = process.cwd()): ConstantAuditReport
   for (const rel of files.sort()) {
     const content = readFileSync(join(cwd, rel), 'utf8')
     const atomPath = atomPathOf(rel)
-    for (const match of content.matchAll(EXPORT_CONST_RE)) {
-      const constName = match[1]!
-      const category = categorize(constName)
+    const atomLeaf = atomLeafOf(rel)
+    for (const { name: constName, init } of exportedConsts(rel, content)) {
+      const category = categorize(constName, init, atomLeaf)
       entries.push({ file: rel, atomPath, constName, category })
       byCategory[category]++
-      if (category === 'lawful-physical' || category === 'lawful-binding') {
+      if (category !== 'crack' && category !== 'seal-debt') {
         lawfulNames.add(constName)
       }
       if (category === 'crack') {

@@ -24,28 +24,31 @@ describe('matrix constants-audit — auditConstants', () => {
     }
   })
 
-  it('matrixCrackViolations holds at the PINNED level (the generated ceiling is a telos, not a wall)', () => {
+  it('a crack is a DATA literal only — a function-valued export const is code, not seal-debt', () => {
+    // The scanner PARSES (ts.createSourceFile), never a regex. A regex over `export const X =`
+    // cannot tell `export const RATE = 0.2` from `export const exactMax = (a,b) => …`, and counted
+    // both: 57% of the old 1891 "cracks" were arrow functions. Pin the fix so it cannot regress.
+    const entries = auditConstants().entries
+    const exactMax = entries.find((e) => e.constName === 'exactMax')
+    expect(exactMax?.category).toBe('lawful-code') // arrow function — computes, not a static datum
+    // Per-atom i18n data and identity seeds are irreducible source, lawful (the test's own axioms).
+    const translations = entries.filter((e) => e.constName === 'translations')
+    expect(translations.length).toBeGreaterThan(0)
+    for (const t of translations) expect(t.category).not.toBe('crack')
+  })
+
+  it('matrixCrackViolations holds below the telos — every crack is a genuine static datum', () => {
     const v = matrixCrackViolations()
-    // The ratchet.generated ceiling (1297) was sealed 2026-06-09 against a 501-node matrix; the matrix
-    // is now 3157 nodes and down-only cannot follow deliberate growth. The user's pin (below) declared
-    // the measured level the ratchet start — this test asserts NO-GROWTH from the pin, while the rules
-    // gate keeps reporting the 1297 telos as standing debt (folding statics → theorems, per-case).
-    expect(v.length).toBeLessThanOrEqual(1722)
+    // Parser-honest count (2026-08-18): 791 real data-literal statics, well under the 1297 telos.
+    // The old regex read 1891 (RED) — an artifact, not debt: it missed type-annotated data consts
+    // and counted every arrow function. Down-only from here; a RISE fails closed.
+    expect(v.length).toBeLessThanOrEqual(computedBaseline('matrix-crack'))
     console.log(
-      `matrix cracks: ${v.length} (pin ≤1722 · telos ${computedBaseline('matrix-crack')}) · lawful ${auditConstants().lawfulNames.length}`,
+      `matrix cracks: ${v.length} (telos ${computedBaseline('matrix-crack')}) · lawful ${auditConstants().lawfulNames.length}`,
     )
   })
 
-  // The TOTAL count of static constants — axioms not yet folded to theorems (statics → dynamics). The number
-  // lives HERE, in a comment, tested from here — never as a live code constant that drifts silently.
-  //   crackTotal measured 2026-07-26 = 1722   (was 1693; +29 as the wave's remaining atoms settled on the
-  //   clean-DB re-validation — per-atom identity seed constants (const <atom> = '<atom>', s>0, correctly
-  //   axioms). Each rise acknowledged here as the pin demands; the down-only WALL is the rules gate's
-  //   1297 telos (matrix-crack), unchanged — this snapshot only forbids GROWTH, it does not skip the telos.
-  // Lower the ceiling as each DERIVABLE static becomes a computed theorem; a RISE fails closed. Some cracks are
-  // seeds (s>0 — the assumed base a theorem is proven from) and correctly stay axioms; this pins the ceiling, it
-  // does not demand zero.
-  it('the static-constant (crack) total does not grow — numbers in the comment, tested from here', () => {
-    expect(auditConstants().crackTotal).toBeLessThanOrEqual(1722)
+  it('the static-constant (crack) total does not grow beyond the sealed telos', () => {
+    expect(auditConstants().crackTotal).toBeLessThanOrEqual(computedBaseline('matrix-crack'))
   })
 })
