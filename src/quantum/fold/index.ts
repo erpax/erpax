@@ -15,6 +15,25 @@ import { nodeOf, merge, neighborsOf, backlinksOf, UUID_MATRIX_ROOT } from '@/uui
 import { digitAddress } from '@/digit'
 import { wordTokenUuid } from '@/word'
 import { interact64, combineArchitectures, architectureMask } from '@/quantum/word'
+import { commentSites } from '@/syntax'
+
+/**
+ * CODE with comment ranges blanked — a doc comment that WRITES the ring literal
+ * (`the ring is [1,2,4,8,7,5,9]`) is prose describing the constant, never code
+ * re-typing it. 14 of 16 horoDigits hits were the ring named in a docstring; the
+ * corpus's law is emphatic (a comment is data, [[syntax]]), so match the grammar,
+ * not the bytes. Whitespace-fills each comment so line/offset positions are kept.
+ */
+const codeOnly = (file: string, text: string): string => {
+  // ts comment positions are UTF-16 offsets — use slice (UTF-16), never a code-point array.
+  let out = text
+  for (const c of commentSites(file, text)) {
+    const end = c.pos + c.text.length
+    const blank = c.text.replace(/[^\n]/g, ' ')
+    out = out.slice(0, c.pos) + blank + out.slice(end)
+  }
+  return out
+}
 
 const hexOf = (uuid: string): string => uuid.replace(/[^0-9a-fA-F]/g, '')
 
@@ -140,7 +159,11 @@ export interface ApplyLinearFoldsResult {
 const LINEAR_SRC = 'src'
 const LINEAR_SKIP_TREES = new Set(['app', 'migrations'])
 const LINEAR_TS_EXT = /\.tsx?$/i
-const LINEAR_SKIP_FILE = /\.(generated|d\.ts|test)$/i
+// Skip generated · declaration · TEST files. The prior `/\.(…|test)$/` never matched a
+// real test: `test.ts` / `x.test.ts` end in `.ts`, not `.test`, so every test file that
+// asserts the ring literal (`[1,2,4,8,7,5,9]`) was flagged as re-typing it — but a test
+// pinning a constant to its literal is the proof, not linear logic. Anchor on the extension.
+const LINEAR_SKIP_FILE = /(?:^|\.)(?:test|generated)\.tsx?$|\.d\.ts$/i
 
 const shapeFold64 = (shape: string): bigint => uuidFold64(shape) & architectureMask()
 const linearBondOf = (a: string, b: string): string =>
@@ -151,10 +174,14 @@ const linearIdOf = (path: string, shape: string): string =>
 const FOLD_REGISTRY: Readonly<
   Record<string, { readonly export: string; readonly target: string; readonly runner: string }>
 > = {
-  measureOf: { export: 'horoMeasureOf', target: 'horo/index.ts', runner: '@/horo' },
+  // The definition sites — excluded from their own axis. HORO_DIGITS / horoMeasureOf moved
+  // to horo/constants/index.ts in the facade split (967bc70a7); the stale `horo/index.ts`
+  // target stopped excluding the real definition, so the ring's home was flagged for
+  // containing the ring. The runner stays the `@/horo` barrel, which re-exports both.
+  measureOf: { export: 'horoMeasureOf', target: 'horo/constants/index.ts', runner: '@/horo' },
   trinityOf: { export: 'trinityFlagsOf', target: 'pivot/horo-table.ts', runner: '@/pivot/compute' },
   sealedFromReadme: { export: 'sealedFromReadme', target: 'pivot/horo-table.ts', runner: '@/pivot/compute' },
-  horoDigits: { export: 'HORO_DIGITS', target: 'horo/index.ts', runner: '@/horo' },
+  horoDigits: { export: 'HORO_DIGITS', target: 'horo/constants/index.ts', runner: '@/horo' },
 }
 
 const HELPER_PATTERNS: ReadonlyArray<{ readonly name: string; readonly re: RegExp }> = [
@@ -201,8 +228,9 @@ const scanDuplicateHelpers = (cwd: string): LinearSegment[] => {
         continue
       }
       const rel = relative(src, p).replace(/\\/g, '/')
+      const code = codeOnly(rel, content)
       for (const { name, re } of HELPER_PATTERNS) {
-        if (!re.test(content)) continue
+        if (!re.test(code)) continue
         const fold = FOLD_REGISTRY[name]!
         if (rel === fold.target) continue
         hits.push({
@@ -244,8 +272,8 @@ const scanHandArrays = (cwd: string): LinearSegment[] => {
         continue
       }
       const rel = relative(src, p).replace(/\\/g, '/')
-      if (rel === 'horo/index.ts') continue
-      if (!HORO_ARRAY_RE.test(content)) continue
+      if (rel === FOLD_REGISTRY.horoDigits.target) continue // the ring's definition site
+      if (!HORO_ARRAY_RE.test(codeOnly(rel, content))) continue // the ring in CODE, not a docstring
       hits.push({
         linearId: linearIdOf(rel, 'horoDigits'),
         path: rel,
