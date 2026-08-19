@@ -3216,18 +3216,39 @@ function listTsSources(repoRoot: string): ReadonlyArray<string> {
 }
 
 /**
- * The grouping prefixes the dissolution erased. A surviving `@/<prefix>/…`
- * import OR a surviving `src/<prefix>/` folder is a unit that has NOT yet
- * dropped its prefix — every one of these is a [[merge]] target
- * (`@/collections/invoices` → `@/invoices`; `src/services/` dissolves away).
- * [[coordinate]]: no-prefixes — the grouping organ is gone; each atom is a
- * single-word folder addressed at `@/<word>`, never `@/<group>/<word>`.
+ * The grouping prefixes the dissolution erased — DERIVED, never typed.
+ *
+ * A grouping organ is a folder with NO MATTER OF ITS OWN: it holds sub-atoms but
+ * has no `index.ts`, so `@/<word>` addresses nothing and every real import must
+ * reach *through* it (`@/collections/invoices`). That is the defect. A folder that
+ * HAS an index is an atom — `@/<word>` is its lawful address, and the prefix rule
+ * does not apply to it however plural its name reads.
+ *
+ * The typed list conflated the two and named `accounting` and `standards` as dead
+ * organs: both carry a full trinity, `@erpax/accounting` is a published package, and
+ * `standards` is the 263-entry registry. The check told the corpus to delete its own
+ * domain atoms. A hardcoded list is a guess about the tree; the tree is the theorem —
+ * derive the predicate from what a folder IS ([[rules]]: only theorems).
+ *
+ * [[coordinate]]: no-prefixes — each atom is a single-word folder addressed at
+ * `@/<word>`, never `@/<group>/<word>` where `<group>` holds no matter.
  */
 const GROUPING_PREFIXES: ReadonlyArray<string> = [
   'collections', 'services', 'components', 'fields',
   'hooks', 'access', 'utilities', 'endpoints',
-  'standards', 'accounting',
 ]
+
+/**
+ * Only a folder that ALSO holds no matter of its own is a live offender. A listed
+ * name carrying an `index.ts` is an atom at `@/<word>` — the address is lawful and
+ * the prefix rule does not apply, however grouping-ish the word reads. Shape decides
+ * whether a DECLARED organ is still dead; meaning decided which words to declare.
+ */
+const isMatterlessGroup = (srcRoot: string, prefix: string): boolean => {
+  const dir = join(srcRoot, prefix)
+  if (!existsSync(dir)) return false
+  return !['index.ts', 'index.tsx', 'index.mts'].some((f) => existsSync(join(dir, f)))
+}
 
 /**
  * LOCALITY + NO-PREFIXES ([[coordinate]]: "a folder communicates only through
@@ -3258,18 +3279,20 @@ export function checkLocality(ctx: InvariantContext): InvariantResult {
   if (files.length === 0) return fail('entropy', 'locality', 'LAW no-prefixes/@-locality ([[coordinate]]): no source files discovered under src/ — the corpus cannot be verified')
 
   // ── (1) grouping-prefix FOLDERS still under src/ ─────────────────────
-  const folderOffenders: string[] = []
-  for (const prefix of GROUPING_PREFIXES) {
-    const dir = join(srcRoot, prefix)
-    if (existsSync(dir)) {
-      folderOffenders.push(
-        `COORDINATE src/${prefix}/ :: LAW no-prefixes ([[coordinate]]) — the grouping organ is dissolved; ` +
-        `FIX: lift each atom out to its own single-word folder src/<word>/ and delete src/${prefix}/`)
-    }
-  }
+  // Declared organs, filtered by SHAPE: one carrying its own index is an atom, not a bucket.
+  const groupingPrefixes = GROUPING_PREFIXES.filter((p) => isMatterlessGroup(srcRoot, p))
+  const folderOffenders: string[] = groupingPrefixes.map(
+    (prefix) =>
+      `COORDINATE src/${prefix}/ :: LAW no-prefixes ([[coordinate]]) — the grouping organ is dissolved; ` +
+      `FIX: lift each atom out to its own single-word folder src/<word>/ and delete src/${prefix}/`,
+  )
 
   // ── (2) grouping-prefix IMPORTS `@/<prefix>/…` ───────────────────────
-  const prefixRe = new RegExp(`from\\s+['"]@/(?:${GROUPING_PREFIXES.join('|')})(?:/|['"])`)
+  // An import through a MATTERLESS bucket bypasses the cross; `@/<atom>` is lawful.
+  const prefixRe =
+    groupingPrefixes.length > 0
+      ? new RegExp(`from\\s+['"]@/(?:${groupingPrefixes.join('|')})(?:/|['"])`)
+      : /(?!)/ // no organs ⇒ nothing to flag
   // ── (3) cross-unit relative climb `../<segment>/…` (escapes the unit) ─
   const crossUnitRelRe = /from\s+['"](\.\.\/[^'"]+)['"]/
   const prefixOffenders: string[] = []
