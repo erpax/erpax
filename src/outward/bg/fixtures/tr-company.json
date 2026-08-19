@@ -1,6 +1,67 @@
-{
-  "_comment": "RECONSTRUCTED from the shape src/country/api/client/index.ts parses (name + status) — NOT captured live: /api/public/companies/{eik} answers HTTP 404 as of 2026-08-19.",
-  "eik": "000694622",
-  "name": "БЪЛГАРСКА НАРОДНА БАНКА",
-  "status": "active"
-}
+[
+  {
+    "incomingNumberWithCtx": "ODMxNjQxNzkxJjIwMjYwODE3MTAyOTExJmVyRyxeoe7FN-vg5ZefOrW-tAKed6th5cLvFo6ibxincQ",
+    "incomingNumber": "20260817102911",
+    "applicationTypeName": "Заявление Г1 ",
+    "applicationType": 119,
+    "applicationStatus": 6,
+    "passedFrom": 2,
+    "applicationState": 0,
+    "registrationDate": "2026-08-17T10:29:11",
+    "resultHTML": "Обработва се",
+    "incomingLinkedDeeds": [
+      {
+        "uic": "831641791",
+        "companyName": "ИНФОРМАЦИОННО ОБСЛУЖВАНЕ",
+        "companyFullName": "\"ИНФОРМАЦИОННО ОБСЛУЖВАНЕ\" АД",
+        "legalForm": 5,
+        "status": 2,
+        "courtNumber": 110,
+        "caseNumber": "25464",
+        "caseYear": 1991,
+        "createdOn": "2008-01-29T17:16:18"
+      }
+    ],
+    "hasRequestsForCorrectionForScanning": false
+  },
+  {
+    "incomingNumberWithCtx": "ODMxNjQxNzkxJjIwMjYwNzIxMTcwNTE5JmUEBJ4i_ZjHsNP4Xsb7id5SIk64tOvga-2CnaGY9klZYw",
+    "incomingNumber": "20260721170519",
+    "applicationTypeName": "Заявление Б2 ",
+    "applicationType": 110,
+    "applicationStatus": 20,
+    "passedFrom": 2,
+    "applicationState": 1,
+    "entryDate": "2026-08-03T07:51:00",
+    "registrationDate": "2026-07-21T17:05:19",
+    "entryNumber": "20260803075100",
+    "resultHTML": "Вписване 20260803075100",
+    "incomingLinkedDeeds": [
+      {
+        "uic": "831641791",
+        "companyName": "ИНФОРМАЦИОННО ОБСЛУЖВАНЕ",
+        "companyFullName": "\"ИНФОРМАЦИОННО ОБСЛУЖВАНЕ\" АД",
+        "legalForm": 5,
+        "status": 2,
+        "courtNumber": 110,
+        "caseNumber": "25464",
+        "caseYear": 1991,
+        "createdOn": "2008-01-29T17:16:18"
+      }
+    ],
+    "entryDeeds": [
+      {
+        "uic": "831641791",
+        "companyName": "ИНФОРМАЦИОННО ОБСЛУЖВАНЕ",
+        "companyFullName": "\"ИНФОРМАЦИОННО ОБСЛУЖВАНЕ\" АД",
+        "legalForm": 5,
+        "status": 2,
+        "courtNumber": 110,
+        "caseNumber": "25464",
+        "caseYear": 1991,
+        "createdOn": "2008-01-29T17:16:18"
+      }
+    ],
+    "hasRequestsForCorrectionForScanning": false
+  }
+]

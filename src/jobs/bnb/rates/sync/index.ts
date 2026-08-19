@@ -99,10 +99,16 @@ export async function processBnbRatesSync(payload: Payload): Promise<BnbRatesSyn
         continue
       }
 
-      // Normalise: publishers vary on the `units` denominator (БНБ uses
-      // "X BGN per <units> <fromCurrency>"; ECB always uses 1 unit).
-      // Dividing by `units` gives the rate-per-unit consumers expect.
-      const ratePerUnit = lookup.data.rate / exactMax(1, lookup.data.units)
+      // `quotePerUnit` is the ONE field that means the same thing from both
+      // publishers: quote-currency per 1 unit of `fromCurrency`. Reading `rate`
+      // here would silently invert every row whenever the ECB fallback fired,
+      // because БНБ quotes EUR-per-foreign and the ECB quotes foreign-per-EUR.
+      const ratePerUnit = lookup.data.quotePerUnit / exactMax(1, lookup.data.units)
+
+      // The quote currency is whatever the publisher actually quoted in. БНБ
+      // stopped quoting the lev when Bulgaria adopted the euro, so a hardcoded
+      // 'BGN' here would label euro-denominated fixings as lev.
+      const quoteCurrency = lookup.data.quote
 
       // currency-rates row shape mirrors `SEED_VALIDATION_REGISTRY['currency-rates']`.
       try {
@@ -113,7 +119,7 @@ export async function processBnbRatesSync(payload: Payload): Promise<BnbRatesSyn
             and: [
               { tenant: { equals: tenant.id } },
               { fromCurrency: { equals: fromCurrency } },
-              { toCurrency: { equals: 'BGN' } },
+              { toCurrency: { equals: quoteCurrency } },
               { rateDate: { equals: lookup.data.date } },
             ],
           },
@@ -133,7 +139,7 @@ export async function processBnbRatesSync(payload: Payload): Promise<BnbRatesSyn
               tenant: String(tenant.id),
               rateId: `${fromCurrency}-BGN-${lookup.data.date}`,
               fromCurrency,
-              toCurrency: 'BGN',
+              toCurrency: quoteCurrency,
               rate: ratePerUnit,
               rateDate: lookup.data.date,
               // exact publisher (БНБ/ECB) is on the api-audit-events trail; the

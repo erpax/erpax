@@ -36,8 +36,13 @@ describe('lookupEcbExchangeRate — daily reference fixing', () => {
     expect(result.source).toBe('ECB')
     expect(result.data).toEqual({
       currency: 'USD',
+      quote: 'EUR',
       units: 1,
       rate: 1.0823,
+      // `quotePerUnit` is EUR per 1 USD — the INVERSE of the SDMX `rate`.
+      // The ECB and БНБ quote in opposite directions, so this is the only
+      // field a fallback consumer can read without silently inverting.
+      quotePerUnit: 1 / 1.0823,
       date: '2026-05-09',
     })
   })
@@ -69,9 +74,14 @@ describe('lookupEuFallbackRate — national → ECB chain', () => {
   afterEach(() => vi.restoreAllMocks())
 
   it('returns the national fixing when available (BG → БНБ)', async () => {
+    // The euro-era БНБ shape: RATIO is gone, REVERSERATE is EUR-per-unit,
+    // and the fixing dates as DD.MM.YYYY.
     const bnbXml =
       '<?xml version="1.0"?><ROWSET>' +
-      '<ROW><CODE>USD</CODE><RATIO>1</RATIO><RATE>1.83456</RATE></ROW>' +
+      '<ROW><F_ORDER>0</F_ORDER><CODE>Code</CODE><REVERSERATE>Euro per unit</REVERSERATE>' +
+      '<RATE>Foreign per euro</RATE><CURR_DATE>Date</CURR_DATE></ROW>' +
+      '<ROW><CODE>USD</CODE><REVERSERATE>0.8639</REVERSERATE><RATE>1.1576</RATE>' +
+      '<CURR_DATE>09.05.2026</CURR_DATE></ROW>' +
       '</ROWSET>'
     vi.spyOn(globalThis, 'fetch').mockResolvedValueOnce(
       new Response(bnbXml, { status: 200 }),

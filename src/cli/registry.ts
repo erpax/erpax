@@ -93,6 +93,7 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     write: { desc: 'Record the current authority addresses into outward-receipts.json', cmd: `${TSX} src/outward/eu/cli.ts --write` },
     contract: { desc: 'Check the LIVE authorities against the same contract the gate checks offline', cmd: `${TSX} src/outward/eu/cli.ts --contract` },
     coverage: { desc: 'Which external rails erpax claims to speak vs can prove (pure, no network)', cmd: `${TSX} src/outward/eu/cli.ts --coverage` },
+    bg: { desc: 'Check the two BG rails (БНБ fixing · Търговски Регистър дело) offline, or --online', cmd: `${TSX} src/outward/bg/cli.ts` },
   },
   rules: {
     default: { desc: 'Rules ratchet check (+ failure summary)', cmd: '__rules_check__' },

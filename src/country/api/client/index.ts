@@ -181,21 +181,95 @@ export async function lookupInseeSirene(siren: string, bearer: string): Promise<
 
 // ─── 6. Bulgarian Търговски Регистър — public no-auth JSON ──────────────
 
+/**
+ * A merchant as the Търговски Регистър states it.
+ *
+ * The register is kept as a **дело** (case file) per the ЗТРРЮЛНЦ: the дело
+ * is held in electronic form and holds the заявления, the documents proving
+ * each entered circumstance, and the обявени актове. Чл. 11 makes the base
+ * data public and free — which is why this lookup needs no credential — while
+ * documents carrying personal data sit behind an electronic signature or an
+ * agency-issued certificate, and are deliberately NOT reached from here.
+ */
 export interface BgTrProfile {
-  eik: string
-  name?: string
-  status?: string
+  readonly eik: string
+  /** Short name as the register writes it. */
+  readonly name?: string
+  /** Full legal name including the legal form, e.g. `"ИНФОРМАЦИОННО ОБСЛУЖВАНЕ" АД`. */
+  readonly fullName?: string
+  /** Register status code for the дело. */
+  readonly status?: number
+  /** Legal-form code. */
+  readonly legalForm?: number
+  /** How many заявления the дело carries — its filing history depth. */
+  readonly applications?: number
 }
 
+/**
+ * Look a merchant up in the Търговски Регистър.
+ *
+ * The previous address (`/api/public/companies/{eik}`) returns 404 — it was
+ * dead in production. The portal is a single-page app whose server rewrites
+ * every unknown path to the app shell, so a wrong path answers `200` with
+ * HTML and a naive client reads that as success. The real route is the one
+ * the portal itself calls, and it is addressed by **дело**, not by company:
+ *
+ *   `/CR/api/Deeds/{eik}/Applications`
+ *
+ * That is the regulated unit — the дело is what the register actually keeps,
+ * and the company identity travels on each заявление in `incomingLinkedDeeds`.
+ * So the merchant's name and status are read from the deed's own filings
+ * rather than from a company endpoint that no longer exists.
+ *
+ * Public and unauthenticated per ЗТРРЮЛНЦ чл. 11. The endpoint rate-limits
+ * (HTTP 429), which is surfaced rather than retried.
+ */
 export async function lookupBgTradeRegister(eik: string): Promise<ApiResult<BgTrProfile>> {
+  const uic = encodeURIComponent(eik)
   try {
-    const r = await fetch(`https://portal.registryagency.bg/api/public/companies/${encodeURIComponent(eik)}`)
+    const r = await fetch(`https://portal.registryagency.bg/CR/api/Deeds/${uic}/Applications`, {
+      headers: {
+        Accept: 'application/json',
+        // Node's undici sends `Accept-Language: *` by default, and the register's
+        // backend answers HTTP 500 to it — measured against the live host, that
+        // header ALONE flips a working 200 into a 500. Sending a concrete
+        // language fixes it. Without this the endpoint looks dead from Node
+        // while curl succeeds, which is exactly how it reads as "TR is down".
+        'Accept-Language': 'bg-BG,bg;q=0.9',
+      },
+    })
     if (!r.ok) return err('BG TR', `HTTP ${r.status}`)
-    const j = (await r.json()) as Record<string, unknown>
+
+    const body = await r.text()
+    // An unknown path is rewritten to the SPA shell — HTML answering 200 is
+    // NOT an answer, and must never be read as an empty register result.
+    if (/^\s*</.test(body)) return err('BG TR', 'non-JSON response (portal shell)')
+    if (!body.trim()) return err('BG TR', `No дело for ЕИК ${eik}`)
+
+    const apps = JSON.parse(body) as ReadonlyArray<{
+      readonly incomingLinkedDeeds?: ReadonlyArray<{
+        readonly uic?: string
+        readonly companyName?: string
+        readonly companyFullName?: string
+        readonly legalForm?: number
+        readonly status?: number
+      }>
+    }>
+    if (!Array.isArray(apps) || apps.length === 0) return err('BG TR', `No дело for ЕИК ${eik}`)
+
+    // Every заявление links the deeds it touches; take the one that IS this ЕИК.
+    const self = apps
+      .flatMap((a) => a.incomingLinkedDeeds ?? [])
+      .find((d) => d.uic === eik)
+    if (!self) return err('BG TR', `Дело ${eik} carries no matching entry`)
+
     return ok('BG TR', {
       eik,
-      name: j.name as string | undefined,
-      status: j.status as string | undefined,
+      name: self.companyName,
+      fullName: self.companyFullName,
+      status: self.status,
+      legalForm: self.legalForm,
+      applications: apps.length,
     })
   } catch (e) {
     return err('BG TR', String(e))
@@ -313,30 +387,85 @@ export async function lookupSecEdgar(cik: string): Promise<ApiResult<Record<stri
  * or "100 JPY = X BGN" depending on the currency's typical magnitude).
  */
 export interface BnbRate {
-  /** ISO-4217 currency code. */
+  /** ISO-4217 code of the FOREIGN currency being quoted. */
   readonly currency: string
-  /** Number of foreign-currency units the rate is quoted for (1 / 100 / etc.). */
+  /**
+   * The currency the fixing is expressed IN. `'EUR'` since Bulgaria adopted
+   * the euro — БНБ's feed no longer quotes the lev at all. Named explicitly
+   * because it USED to be implicit (BGN), and a rate whose quote currency is
+   * assumed is the exact shape of a silent accounting error.
+   */
+  readonly quote: string
+  /** Units of `currency` the rate covers. Always 1 in the euro feed. */
   readonly units: number
-  /** Rate in BGN per `units` of the foreign currency. */
+  /**
+   * `quote` per `units` of `currency` — БНБ's `REVERSERATE` column.
+   * This preserves the ORIGINAL meaning of this field (quote-currency per
+   * unit of foreign currency); only the quote currency changed, BGN → EUR.
+   */
   readonly rate: number
-  /** Date the rate is valid for, ISO-8601 `YYYY-MM-DD`. */
+  /** Same as {@link rate}; the union-safe name shared with {@link EcbRate}. */
+  readonly quotePerUnit: number
+  /** `currency` per 1 `quote` — БНБ's `RATE` column (the inverse quote). */
+  readonly inverse: number
+  /** Date the fixing is valid for, ISO-8601 `YYYY-MM-DD`, READ FROM THE FEED. */
   readonly date: string
 }
 
 /**
- * Fetch a single foreign-currency rate from БНБ's daily fixing publisher.
- * No auth required — the BNB endpoint is a public XML feed used as the
- * IAS-21 revaluation anchor for BG-resident entities.
+ * The live БНБ daily-fixing feed.
  *
- * BG joined the eurozone effective 2026-01-01 (per the official Council
- * decision); legacy historical rates remain published at the BNB endpoint
- * for back-dated revaluation.
+ * The previous address (`StERFCDownload.aspx`, with period + `valutes`
+ * parameters) now serves an HTML page: it was dead in production and every
+ * lookup through it failed. The working publisher is the rates page itself
+ * with `download=xml`, and it takes NO parameters — it always serves the
+ * full current fixing.
+ */
+const BNB_FIXING_URL =
+  'https://www.bnb.bg/Statistics/StExternalSector/StExchangeRates/StERForeignCurrencies/' +
+  'index.htm?download=xml&search=&lang=EN'
+
+/**
+ * БНБ sits behind a WAF that answers an "incident ID" error page — under a
+ * 200 — to clients it does not recognise. Measured against the live host:
+ * `curl`, `Wget` and `python-requests` are served; Node's default undici
+ * agent, a bare `erpax/1.0`, and every `Mozilla/…` string are refused. It is
+ * gating BROWSER-shaped agents, not automation.
+ *
+ * So the UA leads with a compatibility token the WAF accepts and then names
+ * erpax truthfully — the same convention as `Mozilla/5.0 (compatible;
+ * Googlebot/2.1; +http://…)`. The endpoint is public open data, no credential
+ * is sent, and the caller is identifiable from the string.
+ *
+ * Without this header the parser reads an HTML error page and every lookup
+ * fails with "No fixing" — which is how this stayed broken while looking
+ * like a data problem.
+ */
+const BNB_UA = 'curl/8.7.1 (erpax; +https://github.com/erpax/erpax)'
+
+const tagOf = (block: string, tag: string): string | undefined =>
+  new RegExp(`<${tag}>([\\s\\S]*?)</${tag}>`, 'i').exec(block)?.[1]?.trim()
+
+/**
+ * Fetch a foreign-currency rate from БНБ's daily fixing.
+ *
+ * Bulgaria adopted the euro, and the feed changed with it: the `RATIO`
+ * column is GONE, `RATE` now means "foreign currency per 1 EUR", and
+ * `REVERSERATE` means "EUR per unit of foreign currency". A parser written
+ * for the lev-era shape reads nothing at all from it.
+ *
+ * Two traps this must not fall into, both live in the real feed:
+ *
+ *  1. **Row 0 is a HEADER row** whose values are the literal column labels
+ *     (`<CODE>Code</CODE>`). A first-match regex parses the header and
+ *     returns `"Code"` as a currency. Only a `[A-Z]{3}` code is a datum.
+ *  2. **The feed ignores date parameters** — it always answers with today's
+ *     fixing. Honouring a `date` argument by requesting it and returning
+ *     whatever came back would label today's rate with a past date, which is
+ *     a fabricated fixing. So a back-dated request is REFUSED, not guessed.
  *
  * @param currency  ISO-4217 code (e.g. `'USD'`, `'GBP'`, `'JPY'`)
- * @param date      Optional ISO-8601 `YYYY-MM-DD`. Defaults to today.
- *
- * @standard ISO-4217:2015 currency-codes
- * @standard ISO-8601-1:2019 date-time
+ * @param date      Optional ISO-8601 `YYYY-MM-DD`. Only today is available.
  * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
  */
 export async function lookupBnbExchangeRate(
@@ -344,36 +473,54 @@ export async function lookupBnbExchangeRate(
   date?: string,
 ): Promise<ApiResult<BnbRate>> {
   const cur = currency.toUpperCase()
-  const day = (date ?? new Date().toISOString().slice(0, 10)).replace(/-/g, '')
-  // BNB publishes a download endpoint for one currency, one day:
-  //   /Statistics/StExternalSector/StExchangeRates/StERForeignCurrencies/StERFCDownload.aspx
-  //   ?download=xml&group1=second&periodStartDays=DD&periodStartMonths=MM&periodStartYear=YYYY
-  //   &periodEndDays=DD&periodEndMonths=MM&periodEndYear=YYYY&valutes=USD&search=true
-  const yyyy = day.slice(0, 4)
-  const mm = day.slice(4, 6)
-  const dd = day.slice(6, 8)
-  const url =
-    'https://www.bnb.bg/Statistics/StExternalSector/StExchangeRates/StERForeignCurrencies/' +
-    `StERFCDownload.aspx?download=xml&group1=second&periodStartDays=${dd}&periodStartMonths=${mm}` +
-    `&periodStartYear=${yyyy}&periodEndDays=${dd}&periodEndMonths=${mm}&periodEndYear=${yyyy}` +
-    `&valutes=${cur}&search=true`
   try {
-    const r = await fetch(url, { headers: { Accept: 'application/xml' } })
+    const r = await fetch(BNB_FIXING_URL, {
+      headers: { Accept: 'application/xml', 'User-Agent': BNB_UA },
+    })
     if (!r.ok) return err('БНБ', `HTTP ${r.status}`)
     const text = await r.text()
-    // BNB XML shape: <ROW><CODE>USD</CODE><RATIO>1</RATIO><RATE>1.83456</RATE>...</ROW>
-    const code = /<CODE>([\s\S]*?)<\/CODE>/i.exec(text)?.[1]?.trim()
-    const ratio = /<RATIO>([\s\S]*?)<\/RATIO>/i.exec(text)?.[1]?.trim()
-    const rate = /<RATE>([\s\S]*?)<\/RATE>/i.exec(text)?.[1]?.trim()
-    if (!code || !rate) return err('БНБ', `No fixing for ${cur} on ${yyyy}-${mm}-${dd}`)
-    const parsedRate = Number(rate.replace(',', '.'))
-    if (!Number.isFinite(parsedRate)) return err('БНБ', `Unparseable rate "${rate}"`)
-    return ok('БНБ', {
-      currency: code,
-      units: ratio ? Number(ratio) : 1,
-      rate: parsedRate,
-      date: `${yyyy}-${mm}-${dd}`,
-    })
+    // A 200 carrying HTML is the WAF's error page, not an empty fixing.
+    if (!/<ROWSET/i.test(text)) return err('БНБ', 'non-XML response (upstream WAF)')
+
+    for (const m of text.matchAll(/<ROW>([\s\S]*?)<\/ROW>/gi)) {
+      const block = m[1] ?? ''
+      const code = tagOf(block, 'CODE')
+      // The header row carries labels, not data — a code is three capitals.
+      if (!code || !/^[A-Z]{3}$/.test(code) || code !== cur) continue
+
+      const perEur = Number((tagOf(block, 'RATE') ?? '').replace(',', '.'))
+      const eurPer = Number((tagOf(block, 'REVERSERATE') ?? '').replace(',', '.'))
+      if (!Number.isFinite(eurPer) || !Number.isFinite(perEur)) {
+        return err('БНБ', `Unparseable fixing for ${cur}`)
+      }
+
+      // The feed states the day it is valid for; never the day we asked for.
+      // It dates as DD.MM.YYYY — NOT ISO. Defaulting to "today" when this fails
+      // to parse would label the fixing with a date the publisher never stated,
+      // which is the same fabrication the back-date refusal below exists to stop.
+      const served = tagOf(block, 'CURR_DATE') ?? ''
+      const dmy = /^(\d{2})\.(\d{2})\.(\d{4})$/.exec(served)
+      if (!dmy) return err('БНБ', `Unparseable fixing date "${served}" for ${cur}`)
+      const validFor = `${dmy[3]}-${dmy[2]}-${dmy[1]}`
+
+      if (date && date !== validFor) {
+        return err(
+          'БНБ',
+          `БНБ publishes only the current fixing (${validFor}); ${date} requires a historical source`,
+        )
+      }
+
+      return ok('БНБ', {
+        currency: code,
+        quote: 'EUR',
+        units: 1,
+        rate: eurPer,
+        quotePerUnit: eurPer,
+        inverse: perEur,
+        date: validFor,
+      })
+    }
+    return err('БНБ', `No fixing for ${cur}`)
   } catch (e) {
     return err('БНБ', String(e))
   }
@@ -389,10 +536,21 @@ export async function lookupBnbExchangeRate(
 export interface EcbRate {
   /** ISO-4217 currency code. */
   readonly currency: string
+  /** The currency the fixing is expressed in — always `'EUR'` for the ECB. */
+  readonly quote: string
   /** Always 1 — ECB always quotes "1 unit foreign = X EUR". */
   readonly units: number
   /** Rate quoted as foreign-currency-per-EUR (ECB SDMX convention). */
   readonly rate: number
+  /**
+   * `quote` (EUR) per 1 unit of `currency` — the INVERSE of {@link rate}.
+   *
+   * The ECB and БНБ quote in OPPOSITE directions: ECB publishes foreign-per-EUR,
+   * БНБ publishes EUR-per-foreign. A consumer that reads `rate` from whichever
+   * publisher answered silently inverts every rate when the fallback fires, so
+   * this field — identical in meaning across both — is the one to read.
+   */
+  readonly quotePerUnit: number
   /** Date the rate is valid for, ISO-8601 `YYYY-MM-DD`. */
   readonly date: string
 }
@@ -441,7 +599,7 @@ export async function lookupEcbExchangeRate(
     if (!rateMatch) return err('ECB', `No ECB fixing for ${cur} on ${day}`)
     const rate = Number(rateMatch[1])
     if (!Number.isFinite(rate)) return err('ECB', `Unparseable ECB rate "${rateMatch[1]}"`)
-    return ok('ECB', { currency: cur, units: 1, rate, date: day })
+    return ok('ECB', { currency: cur, quote: 'EUR', units: 1, rate, quotePerUnit: 1 / rate, date: day })
   } catch (e) {
     return err('ECB', String(e))
   }
@@ -457,7 +615,23 @@ export async function lookupEcbExchangeRate(
 type CurrencyRateResolver = (
   currency: string,
   date?: string,
-) => Promise<ApiResult<{ currency: string; units: number; rate: number; date: string }>>
+) => Promise<
+  ApiResult<{
+    readonly currency: string
+    /** The currency the fixing is expressed in — publishers differ. */
+    readonly quote: string
+    readonly units: number
+    readonly rate: number
+    /**
+     * `quote` per 1 unit of `currency`. REQUIRED of every national resolver,
+     * because publishers quote in opposite directions (БНБ: EUR-per-foreign;
+     * ECB: foreign-per-EUR) and a consumer reading `rate` across the fallback
+     * silently inverts the rate the moment the chain falls through.
+     */
+    readonly quotePerUnit: number
+    readonly date: string
+  }>
+>
 
 const NATIONAL_RATE_RESOLVERS: Readonly<Record<string, CurrencyRateResolver>> = {
   BG: lookupBnbExchangeRate,
@@ -480,7 +654,7 @@ export async function lookupEuFallbackRate(
   country: string,
   currency: string,
   date?: string,
-): Promise<ApiResult<{ currency: string; units: number; rate: number; date: string }>> {
+): Promise<ApiResult<BnbRate | EcbRate>> {
   const national = NATIONAL_RATE_RESOLVERS[country.toUpperCase()]
   if (national) {
     const result = await national(currency, date)

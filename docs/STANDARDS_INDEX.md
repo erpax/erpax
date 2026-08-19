@@ -184,6 +184,7 @@ src/ai/cloudflare-ai.ts:45: * @standard NIST FIPS-180-4 sha-256 audit-row-hash
 src/ai/cloudflare-ai.ts:46: * @standard ISO 27037:2012 evidence-preservation
 src/ai/document-classification.ts:17: * @standard ISO/IEC 23894:2023 ai-risk-management
 src/ai/document-classification.ts:18: * @standard WCAG 2.1 AA (alt-text on classified images)
+src/ai/durable-objects.test.ts:24: * @standard RFC 9562 §5.8 content-uuid · ISO 19011:2018 §6.4 audit evidence
 src/ai/durable-objects.ts:175: * @standard FIPS 180-4 sha-256 (leaf hashing)
 src/ai/durable-objects.ts:176: * @standard RFC 8785 JSON canonicalization
 src/ai/durable-objects.ts:18: * @standard ISO/IEC 27001 A.5.23 cloud-service-tenant-isolation
@@ -343,10 +344,10 @@ src/architecture/invariant/checks.ts:2928: * @standard ISO 27001 A.5.15 access-c
 src/architecture/invariant/checks.ts:2929: * @standard ISO 27002 §5.4 segregation-of-duties (TypeScript-enforced)
 src/architecture/invariant/checks.ts:3034: * @standard ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/architecture/invariant/checks.ts:3035: * @standard ISO 27002 §5.4 segregation-of-duties (single-surface audit)
-src/architecture/invariant/checks.ts:3251: * @standard ISO/IEC 25010:2023 §5.4 modularity — locality of reference
-src/architecture/invariant/checks.ts:3343: * @standard ISO/IEC 25010:2023 §5 modularity — naming uniformity (one word)
-src/architecture/invariant/checks.ts:3411: * @standard ISO/IEC 25010:2023 §5 modularity — naming uniformity
-src/architecture/invariant/checks.ts:3457: * @standard ISO/IEC 25010:2023 §5.4 modularity — every unit connected
+src/architecture/invariant/checks.ts:3272: * @standard ISO/IEC 25010:2023 §5.4 modularity — locality of reference
+src/architecture/invariant/checks.ts:3366: * @standard ISO/IEC 25010:2023 §5 modularity — naming uniformity (one word)
+src/architecture/invariant/checks.ts:3434: * @standard ISO/IEC 25010:2023 §5 modularity — naming uniformity
+src/architecture/invariant/checks.ts:3480: * @standard ISO/IEC 25010:2023 §5.4 modularity — every unit connected
 src/architecture/invariant/checks.ts:738: * @standard ISO 27002:2022 §5.4 + COBIT 5 PO4.11 + ISO 19011 §6.4.6
 src/architecture/invariant/checks.ts:755: * @standard ISO 27002:2022 §5.4 segregation-of-duties
 src/architecture/invariant/checks.ts:756: * @standard COBIT 5 PO4.11
@@ -829,25 +830,23 @@ src/cost/centers/purchase/requisitions/index.ts:11: * @standard ISO-8601-1:2019 
 src/cost/centers/purchase/requisitions/index.ts:12: * @standard ISO-4217:2015 currency-codes
 src/cost/index.ts:11: * @standard ISO/IEC 25010:2023 §5.3 resource-utilisation (output per resource spent)
 src/country/api/client/index.ts:15: * @standard ISO-3166-1:2020 country-codes alpha-2 dispatch-key
-src/country/api/client/index.ts:338: * @standard ISO-4217:2015 currency-codes
-src/country/api/client/index.ts:339: * @standard ISO-8601-1:2019 date-time
-src/country/api/client/index.ts:410: * @standard ISO-4217:2015 currency-codes
-src/country/api/client/index.ts:411: * @standard SDMX 2.1 statistical-data-and-metadata-exchange
-src/country/api/client/index.ts:412: * @standard ISO-8601-1:2019 date-time
-src/country/api/client/index.ts:474: * @standard ISO-4217:2015 currency-codes
-src/country/api/client/index.ts:475: * @standard ISO-3166-1:2020 country-codes alpha-2
-src/country/api/client/index.ts:514: * @standard ISO-4217:2015 currency-codes
-src/country/api/client/index.ts:515: * @standard ISO-3166-1:2020 country-codes alpha-2
-src/country/api/client/index.ts:579: * @standard EN-16931:2017 §B2G semantic-model
-src/country/api/client/index.ts:580: * @standard Peppol-BIS-3.0 billing
-src/country/api/client/index.ts:602: * @standard ISO-3166-1:2020 BG country-code
-src/country/api/client/index.ts:603: * @standard EN-16931:2017 §BT-31 seller-vat-identifier
-src/country/api/client/index.ts:618: * @standard ISO-3166-1:2020 BG country-code
-src/country/api/client/index.ts:632: * @standard PSD2 EU 2015/2366 ais-pis
-src/country/api/client/index.ts:633: * @standard Berlin Group NextGenPSD2 v1.3
-src/country/api/index.ts:136: * @standard ISO-4217:2015 currency-codes
-src/country/api/index.ts:137: * @standard SDMX 2.1 statistical-data-and-metadata-exchange
-src/country/api/index.ts:138: * @standard ISO-8601-1:2019 date-time
+src/country/api/client/index.ts:568: * @standard ISO-4217:2015 currency-codes
+src/country/api/client/index.ts:569: * @standard SDMX 2.1 statistical-data-and-metadata-exchange
+src/country/api/client/index.ts:570: * @standard ISO-8601-1:2019 date-time
+src/country/api/client/index.ts:648: * @standard ISO-4217:2015 currency-codes
+src/country/api/client/index.ts:649: * @standard ISO-3166-1:2020 country-codes alpha-2
+src/country/api/client/index.ts:688: * @standard ISO-4217:2015 currency-codes
+src/country/api/client/index.ts:689: * @standard ISO-3166-1:2020 country-codes alpha-2
+src/country/api/client/index.ts:753: * @standard EN-16931:2017 §B2G semantic-model
+src/country/api/client/index.ts:754: * @standard Peppol-BIS-3.0 billing
+src/country/api/client/index.ts:776: * @standard ISO-3166-1:2020 BG country-code
+src/country/api/client/index.ts:777: * @standard EN-16931:2017 §BT-31 seller-vat-identifier
+src/country/api/client/index.ts:792: * @standard ISO-3166-1:2020 BG country-code
+src/country/api/client/index.ts:806: * @standard PSD2 EU 2015/2366 ais-pis
+src/country/api/client/index.ts:807: * @standard Berlin Group NextGenPSD2 v1.3
+src/country/api/eu/index.ts:69: * @standard ISO-4217:2015 currency-codes
+src/country/api/eu/index.ts:70: * @standard SDMX 2.1 statistical-data-and-metadata-exchange
+src/country/api/eu/index.ts:71: * @standard ISO-8601-1:2019 date-time
 src/country/api/index.ts:24: * @standard ISO-3166-1:2020 country-codes alpha-2
 src/country/api/index.ts:25: * @standard ISO-20022 financial-messages cross-references
 src/country/client/berlin-group-psd2.ts:113: * @standard Berlin Group NextGenPSD2 v1.3 §5.1.1 read-account-list
@@ -1921,6 +1920,8 @@ src/maintenance/work/orders/index.ts:14: * @standard ISO-55001:2014 asset-manage
 src/maintenance/work/orders/index.ts:15: * @standard ISO-14224:2016 reliability-and-maintenance-data
 src/maintenance/work/orders/index.ts:16: * @standard EN-13306:2017 maintenance-terminology
 src/maintenance/work/orders/index.ts:17: * @standard ISO-8601-1:2019 date-time scheduled-actual
+src/match/index.ts:24: * @standard schema.org Offer / Demand / PriceSpecification / QuantitativeValue
+src/match/index.ts:25: * @standard GS1 GTIN — product identity when both sides declare it
 src/mcp/tool/metadata/index.ts:29: * @standard W3C HTTP Content-Language (RFC 7231 §3.1.3.2)
 src/mcp/tool/metadata/index.ts:30: * @standard BCP-47 language tags
 src/mcp/tool/metadata/index.ts:31: * @standard EU 1958/1 official-languages-of-the-european-union
@@ -2070,6 +2071,10 @@ src/oecd/tpg/index.ts:6: * @standard OECD BEPS Action 13 master-file-local-file-
 src/oecd/tpg/index.ts:7: * @standard EU DAC-4 country-by-country-reporting
 src/oecd/tpg/index.ts:8: * @standard OECD Pillar Two GloBE 15% global minimum tax (companion)
 src/operators/index.ts:13: * @standard BG Наредба-Н-18 §СУПТО operator-nomenclature
+src/outward/eu/contract.ts:23: * @standard ISO 19011:2018 §6.4 — audit evidence
+src/outward/eu/index.ts:33: * @standard ISO 19011:2018 §6.4 — audit evidence: the receipt IS the evidence
+src/outward/index.ts:30: * @standard RFC 9562 §5.8 — v8 content-uuid (the address)
+src/outward/index.ts:31: * @standard ISO 19011:2018 §6.4 — audit evidence: the receipt IS the evidence
 src/pack/items/index.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/pack/items/index.ts:29: * @standard ISA-95:2013 §B.5 production-operations dispatch line
 src/pack/items/index.ts:30: * @standard UN/CEFACT Rec20 mass (gram) per-unit
@@ -2270,7 +2275,7 @@ src/quantum/aura/index.ts:19: * @standard Baumgratz, Cramer & Plenio, "Quantifyi
 src/quantum/bindings/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/quantum/cache/index.ts:9: * @standard RFC 9562 §5.8 content-uuid (the cache key)
 src/quantum/calculator/index.ts:9: * @standard the digital-root / mod-9 group ([[rodin]])
-src/quantum/chat/index.ts:30: * @standard merkle hash-chain; RFC 9562 §5.8 content-uuid
+src/quantum/chat/index.ts:38: * @standard merkle hash-chain; RFC 9562 §5.8 content-uuid
 src/quantum/communication/index.ts:10: * @standard no-cloning (Wootters–Zurek 1982); RFC 9562 §5.8 content-uuid
 src/quantum/communication/key/index.ts:10: * @standard BB84 (Bennett–Brassard 1984) / E91 (Ekert 1991); no-cloning (Wootters–Zurek 1982)
 src/quantum/communication/superdense/index.ts:9: * @standard superdense coding (Bennett–Wiesner 1992); RFC 9562 §5.8 content-uuid
@@ -3713,10 +3718,10 @@ src/cost/centers/job/positions/recruiting/pipelines/index.ts:11: * @compliance G
 src/cost/centers/job/positions/recruiting/pipelines/index.ts:12: * @compliance EU Equal Treatment Directive 2000/78
 src/cost/centers/job/positions/recruiting/pipelines/index.ts:13: * @compliance ADA / EEOC US-equal-opportunity
 src/cost/centers/purchase/requisitions/index.ts:13: * @compliance SOX §404 internal-controls four-eyes
-src/country/api/client/index.ts:516: * @compliance EU 2006/112/EC vat-system-directive Art.214
-src/country/api/client/index.ts:548: * @compliance AMLD-5 ubo-screening
-src/country/api/client/index.ts:549: * @compliance EU 2580/2001 cfsp-restrictive-measures
-src/country/api/client/index.ts:581: * @compliance EU 2014/55 b2g-e-invoicing-mandate
+src/country/api/client/index.ts:690: * @compliance EU 2006/112/EC vat-system-directive Art.214
+src/country/api/client/index.ts:722: * @compliance AMLD-5 ubo-screening
+src/country/api/client/index.ts:723: * @compliance EU 2580/2001 cfsp-restrictive-measures
+src/country/api/client/index.ts:755: * @compliance EU 2014/55 b2g-e-invoicing-mandate
 src/country/api/index.ts:26: * @compliance EU 2014/55 b2g-e-invoicing portals
 src/country/api/index.ts:27: * @compliance AMLD-5 ubo-registry-access
 src/country/client/berlin-group-psd2.ts:21: * @compliance EU 2015/2366 strong-customer-authentication
@@ -4319,10 +4324,10 @@ src/cost/centers/index.ts:16: * @accounting IFRS IAS-1 §99 statement-of-compreh
 src/cost/centers/index.ts:17: * @accounting IFRS IFRS-8 operating-segments
 src/cost/centers/index.ts:18: * @accounting US-GAAP ASC-280 segment-reporting
 src/cost/centers/job/positions/index.ts:10: * @accounting IFRS IAS-19 employee-benefits (planned-headcount accruals)
-src/country/api/client/index.ts:340: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
-src/country/api/client/index.ts:413: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
-src/country/api/client/index.ts:476: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
-src/country/api/index.ts:139: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/country/api/client/index.ts:469: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/country/api/client/index.ts:571: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/country/api/client/index.ts:650: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/country/api/eu/index.ts:72: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/country/client/bg-vat.ts:19: * @accounting IFRS IAS-1 presentation-rounding
 src/csrd/disclosures/index.ts:20: * @accounting IFRS S1 general-sustainability-disclosure
 src/csrd/disclosures/index.ts:21: * @accounting IFRS S2 climate-disclosures
@@ -5558,10 +5563,10 @@ src/architecture/invariant/checks.ts:2806: * @audit ISO 19011:2018 §6.4.6 (pers
 src/architecture/invariant/checks.ts:2867: * @audit Conservation Law 38 mcp-tool-standardization
 src/architecture/invariant/checks.ts:2930: * @audit Conservation Law 38 mcp-tool-standardization
 src/architecture/invariant/checks.ts:3036: * @audit ISO 19011:2018 §6.4.6 tamper-evident audit-trail (single path)
-src/architecture/invariant/checks.ts:3252: * @audit Law 10 referential-harmony
-src/architecture/invariant/checks.ts:3344: * @audit generic-naming-law — one concatenated word per atom
-src/architecture/invariant/checks.ts:3412: * @audit [[config]] — collections are plural, models/pages singular
-src/architecture/invariant/checks.ts:3458: * @audit double-entry of structure ([[balance]])
+src/architecture/invariant/checks.ts:3273: * @audit Law 10 referential-harmony
+src/architecture/invariant/checks.ts:3367: * @audit generic-naming-law — one concatenated word per atom
+src/architecture/invariant/checks.ts:3435: * @audit [[config]] — collections are plural, models/pages singular
+src/architecture/invariant/checks.ts:3481: * @audit double-entry of structure ([[balance]])
 src/architecture/invariant/checks.ts:817: * @audit ISO 19011:2018 §6.4 audit-evidence
 src/architecture/invariant/checks.ts:911: * @audit ISO 19011:2018 §6.4 audit-evidence
 src/architecture/invariant/index.ts:19: * @audit ISO-19011:2018 §6.4 audit-evidence-invariants
@@ -5701,10 +5706,10 @@ src/cost/centers/job/positions/index.ts:11: * @audit ISO-19011:2018 audit-trail 
 src/cost/centers/job/positions/recruiting/pipelines/index.ts:14: * @audit ISO-19011:2018 audit-trail recruiting-evidence
 src/cost/centers/purchase/requisitions/index.ts:15: * @audit ISO-19011:2018 audit-trail requisition-evidence
 src/country/api/client/index.ts:16: * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/country/api/client/index.ts:477: * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/country/api/client/index.ts:517: * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/country/api/client/index.ts:550: * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/country/api/client/index.ts:582: * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/country/api/client/index.ts:651: * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/country/api/client/index.ts:691: * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/country/api/client/index.ts:724: * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/country/api/client/index.ts:756: * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/country/client/berlin-group-psd2.ts:18: * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/country/client/bg-bank-statement-pdf.ts:34: * @audit ISO-19011:2018 audit-trail bank-statement-evidence
 src/country/client/bg-holidays.ts:18: * @audit ISO-19011:2018 audit-trail business-day-evidence
