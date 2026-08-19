@@ -3169,6 +3169,7 @@ src/workflow/definitions/seed.ts:16: * @standard EN-16931 e-invoicing ISO-20022 
 src/workflow/definitions/seed.ts:17: * @standard ISO-19011 audit ActivityPub social-federation
 src/workflow/definitions/workflow/instances/index.ts:13: * @standard ISO/IEC 19510:2013 BPMN-2.0
 src/workflow/definitions/workflow/instances/index.ts:14: * @standard ISO-8601-1:2019 date-time
+src/workflow/engine/index.ts:13: * @standard OMG BPMN 2.0 process-execution-semantics
 src/workflow/index.ts:22: * @standard ISO/IEC 19510:2013 BPMN-2.0
 src/xml/escape/index.ts:8: * @standard XML-1.0 §2.4 predefined-entities
 tests/e2e/admin-evidence.e2e.spec.ts:25: * @standard ISO/IEC-29119:2022 software-testing system-test-level
