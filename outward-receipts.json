@@ -1,0 +1,9 @@
+{
+  "law": "Each entry is the content-address of one external answer. A later run VERIFIES the address instead of re-reading the world; only a MOVED address costs attention. Unreachable keeps the last receipt — the boundary is allowed to be down.",
+  "probes": 3,
+  "receipts": {
+    "vies": "6bb847e2-6069-8f75-9451-d43647b445f1",
+    "ecb": "543b2fc8-2716-80c0-af35-a3f069a78f91",
+    "peppol": "4040972d-4fa5-8b8a-aa65-dac274b47a19"
+  }
+}

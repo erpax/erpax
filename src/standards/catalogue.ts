@@ -3441,7 +3441,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Auditing management systems",
     "uuid": "85eb43b8-8305-8b77-948c-93e96eba62e4",
     "color": "hsl(83 87% 54%)",
-    "count": 91,
+    "count": 92,
     "modules": [
       {
         "path": "src/accounting/proof/index.ts",

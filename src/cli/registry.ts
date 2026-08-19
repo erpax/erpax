@@ -87,6 +87,11 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     gaps: { desc: 'Wave-batch entropy gap scan', cmd: `${TSX} src/accounting/gaps/cli.ts` },
     'gaps-fix': { desc: 'P0 accounting gap fixes + regen', cmd: `${TSX} src/accounting/gaps/cli.ts --fix` },
   },
+  outward: {
+    default: { desc: 'Check the four pan-EU authorities against their receipts', cmd: `${TSX} src/outward/eu/cli.ts` },
+    eu: { desc: 'Check the four pan-EU authorities (VIES · ECB · Peppol · sanctions)', cmd: `${TSX} src/outward/eu/cli.ts` },
+    write: { desc: 'Record the current authority addresses into outward-receipts.json', cmd: `${TSX} src/outward/eu/cli.ts --write` },
+  },
   rules: {
     default: { desc: 'Rules ratchet check (+ failure summary)', cmd: '__rules_check__' },
     check: { desc: 'Rules ratchet check (+ failure summary)', cmd: '__rules_check__' },
