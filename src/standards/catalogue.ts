@@ -8701,7 +8701,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Global Trade Item Number",
     "uuid": "74c424f5-91d7-89f4-a01e-b807d14807da",
     "color": "hsl(12 56% 43%)",
-    "count": 6,
+    "count": 7,
     "modules": [
       {
         "path": "src/app/(frontend)/[locale]/products/[slug]/page.tsx",
@@ -8721,6 +8721,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/items/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/match/index.ts",
         "section": ""
       },
       {
@@ -9091,7 +9095,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Linked-data type vocabulary",
     "uuid": "9cff4f7f-f5d5-8924-99c4-0d564a3735fb",
     "color": "hsl(231 64% 45%)",
-    "count": 1986,
+    "count": 1987,
     "modules": [
       {
         "path": "src/abdomen/SKILL.md",
