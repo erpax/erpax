@@ -118,6 +118,24 @@ jobs:
           set -euo pipefail
           pnpm exec cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/run/load/index.ts
 
+      # The twelve external rails erpax codes against, checked OFFLINE against frozen
+      # captures. This is deliberately the half that cannot flake: it imports only the
+      # *Offline functions, so a release can never be failed by an authority rebooting.
+      # (That is not hypothetical — a correct erpax would have failed here when the EU
+      # sanctions host answered 403, and that 403 turned out to be OUR missing token.)
+      #
+      # It also fails closed when the coverage ledger cannot resolve its own contracted
+      # endpoints — the defect that let a working ECB contract mark nothing as covered —
+      # and when a new rail claims a client with no contract beside it.
+      #
+      # HONEST BOUNDARY: green means erpax's parsers agree with CAPTURES, never that an
+      # authority is up or still sending that shape. Only `erpax outward eu|bg|world
+      # --online` speaks to the present, and it stays out of the release path.
+      - name: Contract gate — erpax parses what the external rails send
+        run: |
+          set -euo pipefail
+          pnpm exec cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/outward/gate/index.ts
+
       - name: Assert tag matches package version
         if: startsWith(github.ref, 'refs/tags/')
         run: |

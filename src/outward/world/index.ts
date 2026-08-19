@@ -199,3 +199,22 @@ export async function worldContractOnline(): Promise<readonly ContractCheck[]> {
   }
   return out
 }
+
+/**
+ * CLI — `erpax outward world` (add `--online` for the live hosts).
+ *
+ * A LANE, never a gate: nothing in the push path may depend on the network. The
+ * offline half is what the release gate runs ([[outward]]/gate).
+ */
+if (import.meta.url === 'file://' + process.argv[1]) {
+  const online = process.argv.includes('--online')
+  const checks = online ? await worldContractOnline() : worldContractOffline()
+  for (const c of checks) console.log(`  ${c.holds ? '✓' : '✗'} ${c.rail.padEnd(12)} ${c.detail}`)
+  const broken = checks.filter((c) => !c.holds)
+  console.log(
+    broken.length
+      ? `\n✗ ${broken.length} contract break(s) — ${online ? 'the captures are now stale' : 'the parser disagrees with its own capture'}`
+      : `\n✓ all world rails satisfy the contract (${online ? 'live' : 'offline'})`,
+  )
+  if (broken.length) process.exit(1)
+}

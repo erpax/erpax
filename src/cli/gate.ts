@@ -32,6 +32,13 @@ export const GATE_LANES: readonly (readonly [string, string])[] = [
   // false statement about security, and there is no acceptable count of those. The RATIO is reported
   // and never ratcheted — forcing it upward would only push honest compasses into dishonest verdicts.
   ['integrity', 'tsx src/convention/discern/corpus/index.ts'],
+  // OUTWARD CONTRACTS — erpax's parsers against FROZEN captures of the twelve external
+  // rails it codes against. Offline BY CONSTRUCTION (only *Offline functions are
+  // imported), because a correct erpax must never fail its own gate because someone
+  // else's server is rebooting — the live halves stay behind `--online`. It also fails
+  // closed when the coverage ledger cannot resolve its own contracted endpoints, which
+  // is how a working ECB contract marked nothing covered for as long as it existed.
+  ['outward', 'pnpm erpax outward gate'],
   ['readme:check', 'pnpm erpax readme check'],
   ['payload-types', 'bash scripts/payload-verify-types.sh'],
   ['lint', 'pnpm erpax lint'],

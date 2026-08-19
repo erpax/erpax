@@ -2073,6 +2073,7 @@ src/oecd/tpg/index.ts:8: * @standard OECD Pillar Two GloBE 15% global minimum ta
 src/operators/index.ts:13: * @standard BG Наредба-Н-18 §СУПТО operator-nomenclature
 src/outward/eu/contract.ts:23: * @standard ISO 19011:2018 §6.4 — audit evidence
 src/outward/eu/index.ts:33: * @standard ISO 19011:2018 §6.4 — audit evidence: the receipt IS the evidence
+src/outward/gate/index.ts:25: * @standard ISO 19011:2018 §6.4 — audit evidence: the contract IS the evidence
 src/outward/index.ts:30: * @standard RFC 9562 §5.8 — v8 content-uuid (the address)
 src/outward/index.ts:31: * @standard ISO 19011:2018 §6.4 — audit evidence: the receipt IS the evidence
 src/pack/items/index.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
