@@ -1,0 +1,6 @@
+{
+  "_comment": "RECONSTRUCTED from the shape src/country/api/client/index.ts parses (name + status) — NOT captured live: /api/public/companies/{eik} answers HTTP 404 as of 2026-08-19.",
+  "eik": "000694622",
+  "name": "БЪЛГАРСКА НАРОДНА БАНКА",
+  "status": "active"
+}

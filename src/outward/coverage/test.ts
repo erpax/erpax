@@ -7,7 +7,7 @@ import { railCoverage, coverageReport, assertCoverageRatchet, CONTRACTED_RAILS }
  */
 
 /** Unproven claims on 2026-08-19. Lower this with every contract written; never raise it. */
-const UNCOVERED_CEILING = 50
+const UNCOVERED_CEILING = 48
 
 describe('outward/coverage — the ledger', () => {
   it('covers every catalogued rail exactly once, with a state', () => {

@@ -31,6 +31,11 @@ export const CONTRACTED_RAILS: ReadonlySet<string> = new Set([
   'VIES VAT Number Validation',
   'ECB Euro Reference Rates',
   'Peppol Directory',
+  // ../bg — contracts pin what the CLIENT parses. Both live endpoints have MOVED
+  // (БНБ serves HTML, TR 404s), so `covered` here means the parser has a refutable
+  // specification, NOT that the integration currently works. The online lane says that.
+  'БНБ — Daily Exchange Rates',
+  'Търговски Регистър (TR)',
 ])
 
 export interface RailCoverage {

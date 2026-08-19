@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- RECONSTRUCTED from the row shape src/country/api/client#bgBnbRate parses, NOT
+     captured live: as of 2026-08-19 the БНБ StERFCDownload.aspx endpoint answers an
+     HTML page, so no live body of this shape exists to freeze. This fixture pins OUR
+     PARSER's expectation; the online lane reports that the world stopped sending it.
+     (Provenance kept free of the element names — a literal tag in a comment is data
+     the parser will happily match, which is exactly how this file first failed.) -->
+<ROWSET>
+  <ROW><CODE>USD</CODE><RATIO>1</RATIO><RATE>1.68923</RATE><CURR_NAME>US Dollar</CURR_NAME></ROW>
+  <ROW><CODE>JPY</CODE><RATIO>100</RATIO><RATE>1.05784</RATE><CURR_NAME>Japanese Yen</CURR_NAME></ROW>
+</ROWSET>
