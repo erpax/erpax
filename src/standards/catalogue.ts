@@ -146,7 +146,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "count": 20,
     "modules": [
       {
-        "path": "src/agents/registered/legal.agent.ts",
+        "path": "src/agents/registered/legal/agent.ts",
         "section": ""
       },
       {
@@ -820,11 +820,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/export/standards-import.ts",
+        "path": "src/export/standards/import.ts",
         "section": ""
       },
       {
-        "path": "src/export/standards.service.ts",
+        "path": "src/export/standards/service.ts",
         "section": ""
       },
       {
@@ -1883,7 +1883,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "count": 31,
     "modules": [
       {
-        "path": "src/agents/registered/legal.agent.ts",
+        "path": "src/agents/registered/legal/agent.ts",
         "section": ""
       },
       {
@@ -3476,7 +3476,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§404"
       },
       {
-        "path": "src/agents/registered/legal.conflict.ts",
+        "path": "src/agents/registered/legal/conflict.ts",
         "section": ""
       },
       {
@@ -3622,11 +3622,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/cloudflare/plugin-access.ts",
+        "path": "src/cloudflare/plugin/access.ts",
         "section": ""
       },
       {
-        "path": "src/cloudflare/plugin-helper.ts",
+        "path": "src/cloudflare/plugin/helper.ts",
         "section": ""
       },
       {
@@ -3728,11 +3728,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/cloudflare/plugin-access.ts",
+        "path": "src/cloudflare/plugin/access.ts",
         "section": ""
       },
       {
-        "path": "src/cloudflare/plugin-helper.ts",
+        "path": "src/cloudflare/plugin/helper.ts",
         "section": ""
       },
       {
@@ -3990,7 +3990,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/cloudflare/plugin-access.ts",
+        "path": "src/cloudflare/plugin/access.ts",
         "section": "§5.4"
       },
       {
@@ -4084,7 +4084,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/cloudflare/plugin-access.ts",
+        "path": "src/cloudflare/plugin/access.ts",
         "section": "§5.4"
       },
       {
@@ -6197,7 +6197,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/export/standards.service.ts",
+        "path": "src/export/standards/service.ts",
         "section": ""
       },
       {
@@ -6792,7 +6792,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/agents/registered/hr.training.ts",
+        "path": "src/agents/registered/hr/training.ts",
         "section": ""
       },
       {
@@ -8530,7 +8530,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/export/standards.service.ts",
+        "path": "src/export/standards/service.ts",
         "section": ""
       },
       {
@@ -8576,7 +8576,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/export/standards.service.ts",
+        "path": "src/export/standards/service.ts",
         "section": ""
       },
       {
