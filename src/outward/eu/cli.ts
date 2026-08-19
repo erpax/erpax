@@ -10,8 +10,20 @@
  * is not erpax's failure, and a lane that reddens for it gets ignored ([[outward]]).
  */
 import { checkEu, writeBook, RECEIPTS_REL } from './index'
+import { contractOnline } from './contract'
 
 const write = process.argv.includes('--write')
+
+// `--contract` runs the SAME checks the release gate runs offline, against the LIVE
+// hosts. A disagreement between the two is the finding: the fixture says what erpax
+// was built for, the live answer says what the world now sends.
+if (process.argv.includes('--contract')) {
+  const checks = await contractOnline()
+  for (const c of checks) console.log(`  ${c.holds ? '✓' : '✗'} ${c.rail.padEnd(10)} ${c.detail}`)
+  const broken = checks.filter((c) => !c.holds)
+  console.log(broken.length ? `\n✗ ${broken.length} contract break(s) — the offline fixtures are now stale` : '\n✓ live responses satisfy the same contract the gate checks offline')
+  process.exit(broken.length ? 1 : 0)
+}
 
 const { verdict, book, prior } = await checkEu()
 
