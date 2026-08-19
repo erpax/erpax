@@ -3111,7 +3111,7 @@ src/warehouse/locations/index.ts:10: * @standard ISO-3166-2:2020 subdivision-cod
 src/warehouse/locations/index.ts:11: * @standard ISO-6346:2022 freight-container-coding-and-marking
 src/warehouse/locations/index.ts:12: * @standard EN-16931:2017 §BG-15 deliver-to-information
 src/warehouse/locations/index.ts:9: * @standard ISO-3166-1:2020 country-codes location-country
-src/wave/horo.ts:28: * @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring
+src/wave/horo/index.ts:28: * @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring
 src/wco/hs/index.ts:10: * @standard EU CN Code (Combined Nomenclature) Regulation (EEC) 2658/87
 src/wco/hs/index.ts:11: * @standard US HTS (Harmonized Tariff Schedule)
 src/wco/hs/index.ts:9: * @standard WCO Harmonised System Convention (effective 1988, latest revision 2022)
@@ -6369,7 +6369,7 @@ src/warehouse/locations/consignment/arrangements/consignment/inventories/index.t
 src/warehouse/locations/consignment/arrangements/consignment/sales/index.ts:25: * @audit ISO-19011:2018 audit-trail consignment-sale-evidence
 src/warehouse/locations/consignment/arrangements/index.ts:25: * @audit ISO-19011:2018 audit-trail consignment-arrangement-evidence
 src/warehouse/locations/index.ts:15: * @audit ISO-19011:2018 audit-trail location-master-changes
-src/wave/horo.ts:27: * @audit the entropy a wave borrows is read from the live matrix, never hand-asserted
+src/wave/horo/index.ts:27: * @audit the entropy a wave borrows is read from the live matrix, never hand-asserted
 src/website/seo/index.ts:34: * @audit ISO 19011:2018 §6.4.6 (every published SEO artefact audit-trailed)
 src/widget/AccountReconciliationsPanel.tsx:9: * @audit ISO-19011:2018 audit-trail period-end-evidence
 src/widget/AuditLogWidget.tsx:18: * @audit ISO-19011:2018 audit-trail viewer

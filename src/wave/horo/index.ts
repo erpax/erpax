@@ -33,7 +33,7 @@ import { entropy } from '@/entropy'
 import { toUuid, merge } from '@/uuid/matrix'
 import { TRINITY_FILES } from '@/trinity'
 import { dualOf } from '@/duality'
-import type { WaveBatch } from './load'
+import type { WaveBatch } from '../load'
 
 /** The horo position whose composed step is unity — where a wave closes and the collide opens. */
 export const UNITY: HoroStep = 9
@@ -130,7 +130,7 @@ export {
   type SelfBalancingWaveLoadOpts,
   type WaveDispatchCostOpts,
   type WaveTamperCostOpts,
-} from './load'
+} from '../load'
 
 /** Development wave descriptor for a batch (exhale unit per horo step). */
 export function waveOfBatch<T>(batch: WaveBatch<T>): Wave {
@@ -147,7 +147,7 @@ export {
   isWaveSessionReady,
   type WaveSession,
   type WaveSessionVerdict,
-} from './session'
+} from '../session'
 
 export {
   scheduleCorpusPathsInWaves,
@@ -156,7 +156,7 @@ export {
   corpusPathWaveBatches,
   runCorpusWaveChunks,
   type CorpusWaveScheduleOpts,
-} from './scheduler'
+} from '../scheduler'
 
 export {
   maxWorkTamperPolicy,
@@ -172,4 +172,4 @@ export {
   type WorkUnit,
   type WorkTamperProductVerdict,
   type ImproveReceiptTamperOpts,
-} from './policy'
+} from '../policy'

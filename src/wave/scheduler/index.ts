@@ -13,13 +13,13 @@ import {
   type SelfBalancingWaveLoadOpts,
   type SelfBalancingWavePlan,
   type WaveBatch,
-} from './load'
+} from '../load'
 import {
   maxWorkTamperPolicy,
   literaryWordWavePriority,
   isP0BlockingAtom,
   type MaxWorkTamperPolicy,
-} from './policy'
+} from '../policy'
 import { buildImportIndex, caseOf } from '@/rules/word-without-logic'
 
 export interface CorpusWaveScheduleOpts extends SelfBalancingWaveLoadOpts<string> {

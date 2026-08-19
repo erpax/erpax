@@ -7,8 +7,8 @@
  */
 import type { Receipt } from '@/receipt'
 import { issueReceipt, type Decision } from '@/receipt'
-import type { SelfBalancingWavePlan } from './load'
-import { tamperCostForWave } from './load'
+import type { SelfBalancingWavePlan } from '../load'
+import { tamperCostForWave } from '../load'
 
 /** Mutable session — wave completion + append-only receipt chain. */
 export interface WaveSession<T = string> {

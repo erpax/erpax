@@ -16,10 +16,10 @@ import {
   literaryWordWavePriority,
   isP0BlockingAtom,
   type WorkUnit,
-} from './policy'
-import { selfBalancingWaveLoad, pathComparableUnits } from './load'
-import { scheduleCorpusPathsInWaves } from './scheduler'
-import { UNITY } from './index'
+} from './index'
+import { selfBalancingWaveLoad, pathComparableUnits } from '../load'
+import { scheduleCorpusPathsInWaves } from '../scheduler'
+import { UNITY } from '../index'
 
 describe('maxWorkTamperPolicy — dual objective knobs', () => {
   it('defaults to 7 horo waves, full receipt chain, unity rest', () => {
