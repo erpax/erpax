@@ -32,6 +32,8 @@ import type { ScalpelOp } from '@/scalpel'
 const SRC = 'src'
 const CODE = /\.(ts|tsx)$/
 const SKIP_DIR = new Set(['node_modules', 'app', 'migrations'])
+/** Machine-written faces — an emitter hardcodes their path, so a rename needs the emitter too. */
+const GENERATED = /\.generated\.tsx?$/i
 
 export interface HyphenRename {
   /** repo-relative, e.g. `src/ai/ai-security.ts` */
@@ -80,6 +82,61 @@ export function viableRenames(cwd: string = process.cwd()): HyphenRename[] {
     const to = `${dir}/${word}${isTest ? '.test' : ''}${ext}`
     if (to === file || existsSync(join(cwd, to))) continue
     out.push({ from: file, to, word })
+  }
+  return out
+}
+
+/**
+ * Cluster renames — the SECOND lawful class, and the last mechanical one.
+ *
+ * When two or more hyphenated siblings share a leading word, that word names a REAL
+ * grouping (`rfc/9110/get-document` · `get-globals` · `get-redirects` → `get/`), so
+ * the folder is discovered rather than invented and one authored SKILL covers it.
+ *
+ * Restricted to FLAT clusters — every member must have exactly one word left after
+ * the shared one. A deeper member would need intermediate folders that no measurement
+ * justifies, and inventing those is the theatre this atom refuses. Measured on the
+ * live corpus: 214 first-level folders are proposable, only 21 are shared at all, and
+ * only 7 are flat. That ratio IS the finding — the hyphen campaign is mostly
+ * per-file judgement, not a sweep.
+ */
+export function clusterRenames(cwd: string = process.cwd()): HyphenRename[] {
+  interface Cell { readonly rest: string; readonly file: string; readonly isTest: boolean; readonly ext: string }
+  const clusters = new Map<string, Cell[]>()
+  for (const file of codeFiles(cwd)) {
+    const base = file.slice(file.lastIndexOf('/') + 1)
+    const isTest = /\.test\.tsx?$/.test(base)
+    const ext = base.endsWith('.tsx') ? '.tsx' : '.ts'
+    const stem = base.replace(/\.test\.tsx?$/, '').replace(/\.tsx?$/, '')
+    if (/^[a-z0-9]+$/.test(stem)) continue
+    // A GENERATED file is written by an emitter to a path assembled from string
+    // fragments (`join(cwd,'src','law','folder','ratchet.generated.ts')`), which no
+    // import rewrite can see — moving it would leave the emitter recreating the old
+    // path and two divergent copies. The emitter must change in the same diff, and
+    // that is a human's call.
+    if (GENERATED.test(base)) continue
+    const dir = file.slice(0, file.lastIndexOf('/'))
+    const segs = new Set(dir.split('/'))
+    const kept = stem.split(/[-.]/).filter((w) => w && !segs.has(w))
+    if (kept.length < 2) continue
+    if (!kept.every((w) => /^[a-z0-9]+$/.test(w))) continue
+    const key = `${dir}/${kept[0]}`
+    // A member with MORE than one surviving word is recorded with an empty rest so the
+    // cluster can be disqualified below — it would need intermediate folders.
+    clusters.set(key, [...(clusters.get(key) ?? []), { rest: kept.length === 2 ? kept[1]! : '', file, isTest, ext }])
+  }
+  const out: HyphenRename[] = []
+  for (const [key, cells] of clusters) {
+    // NEVER half-migrate a cluster. If any sibling sharing this prefix is deep, moving
+    // only the flat ones leaves the rest behind AND mints a folder covering part of a
+    // concept — worse than leaving the whole cluster for a human.
+    if (cells.some((c) => c.rest === '')) continue
+    if (new Set(cells.map((c) => c.rest)).size < 2) continue // one member ⇒ an invented folder
+    for (const c of cells) {
+      const to = `${key}/${c.rest}${c.isTest ? '.test' : ''}${c.ext}`
+      if (to === c.file || existsSync(join(cwd, to))) continue
+      out.push({ from: c.file, to, word: c.rest })
+    }
   }
   return out
 }
@@ -146,6 +203,57 @@ export function renameManifest(
           find: line,
           replace: line.split(`'${spec}'`).join(`'${nextSpec}'`),
           reason: `${target} → ${r.to} (the path already says "${oldStem.split(/[-.]/).filter((w) => w !== r.word).join('/')}")`,
+        })
+      }
+    }
+  }
+  return ops
+}
+
+/**
+ * Ops for the specifiers INSIDE a moved file whose depth changed.
+ *
+ * The first campaign renamed within one directory (`ai/ai-security.ts` →
+ * `ai/security.ts`), so a moved file's own `./x` still resolved. A CLUSTER rename
+ * moves the file DOWN a level, and every relative specifier it carries must gain a
+ * `../` or it dangles. The ring caught this by reddening a whole batch and rolling
+ * back to the byte — which is the argument for having a ring at all.
+ *
+ * Alias (`@/…`) specifiers are depth-independent and are left alone.
+ */
+export function depthManifest(
+  renames: readonly HyphenRename[],
+  cwd: string = process.cwd(),
+): ScalpelOp[] {
+  const ops: ScalpelOp[] = []
+  for (const r of renames) {
+    const fromDir = dirname(r.from)
+    const toDir = dirname(r.to)
+    if (fromDir === toDir) continue
+    let text: string
+    try {
+      text = readFileSync(join(cwd, r.from), 'utf8')
+    } catch {
+      continue
+    }
+    const lines = text.split('\n')
+    const emitted = new Set<string>()
+    for (const spec of new Set(importSpecifiersOf(r.from, text))) {
+      if (!spec.startsWith('.')) continue
+      const target = resolveSpec(r.from, spec, cwd)
+      if (!target) continue
+      // Re-express the SAME target from the new directory.
+      let next = posix.relative(toDir, target).replace(/\.tsx?$/, '').replace(/\/index$/, '')
+      if (!next.startsWith('.')) next = `./${next}`
+      if (next === spec) continue
+      for (const line of lines) {
+        if (!line.includes(`'${spec}'`) || emitted.has(line)) continue
+        emitted.add(line)
+        ops.push({
+          file: r.to, // the op lands AFTER the move
+          find: line,
+          replace: line.split(`'${spec}'`).join(`'${next}'`),
+          reason: `${r.from} moved to ${r.to}; "${spec}" must be re-expressed from the new depth`,
         })
       }
     }
@@ -231,11 +339,15 @@ export async function runHyphenCampaign(opts: {
   for (let b = 0; b * size < all.length; b++) {
     const slice = all.slice(b * size, (b + 1) * size)
     const moved = new Map(slice.map((r) => [r.from, r.to]))
-    const ops = renameManifest(slice, cwd).map((op) => ({
-      ...op,
-      // An op's own file may itself be moving in this batch — aim at where it lands.
-      file: moved.get(op.file) ?? op.file,
-    }))
+    const ops = [
+      ...renameManifest(slice, cwd).map((op) => ({
+        ...op,
+        // An op's own file may itself be moving in this batch — aim at where it lands.
+        file: moved.get(op.file) ?? op.file,
+      })),
+      // …and the moved file's OWN relative specifiers, re-expressed from the new depth.
+      ...depthManifest(slice, cwd),
+    ]
 
     if (!opts.apply) {
       // Plan against the CURRENT tree: ops on files that are about to move read as
