@@ -39,6 +39,26 @@ const git = (...a) => execFileSync('git', a, { cwd: repo, encoding: 'utf8' }).tr
 /** The app's real roots — every module the deploy actually pulls in starts here. */
 const ENTRY_POINTS = ['src/payload.config.ts']
 
+// Sweep droppings from any PREVIOUS run before starting. The `finally` below
+// removes this run's worktree, but a SIGKILL (a timeout, a Ctrl-C at the wrong
+// moment) never reaches it — and two orphans had accumulated that way, each
+// pinning an old commit and confusing `git worktree list`. A gate that litters
+// the tree it guards teaches people to ignore its output.
+try {
+  const stale = execFileSync('git', ['worktree', 'list', '--porcelain'], { cwd: repo, encoding: 'utf8' })
+    .split('\n')
+    .filter((l) => l.startsWith('worktree '))
+    .map((l) => l.slice('worktree '.length))
+    .filter((p) => p.includes('erpax-committed-'))
+  for (const p of stale) {
+    execFileSync('git', ['worktree', 'remove', '--force', p], { cwd: repo, stdio: 'ignore' })
+    rmSync(p, { recursive: true, force: true })
+  }
+  if (stale.length) console.log(`committed-tree gate: pruned ${stale.length} orphaned worktree(s) from a killed run`)
+} catch {
+  // Never let cleanup of someone else's mess block the gate itself.
+}
+
 const work = mkdtempSync(join(tmpdir(), 'erpax-committed-'))
 let added = false
 try {
