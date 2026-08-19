@@ -3547,7 +3547,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Information security management system",
     "uuid": "55e0dd80-ff9d-877e-926f-f0e8e91c9254",
     "color": "hsl(24 66% 46%)",
-    "count": 62,
+    "count": 61,
     "modules": [
       {
         "path": "src/access/index.ts",
@@ -3622,10 +3622,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/cloudflare/plugin/access.ts",
-        "section": ""
-      },
-      {
         "path": "src/cloudflare/plugin/mediator.ts",
         "section": ""
       },
@@ -3644,6 +3640,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/fiscal/devices/sales/SKILL.md",
         "section": ""
+      },
+      {
+        "path": "src/integrity/envelope.ts",
+        "section": "Annex A"
       }
     ]
   },
@@ -3653,7 +3653,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "ISO/IEC 27001:2022 — Information security, cybersecurity and privacy protection — Information security management systems — Requirements",
     "uuid": "1f8df678-adff-8feb-9e78-aaa58e7b0fb4",
     "color": "hsl(157 56% 38%)",
-    "count": 62,
+    "count": 61,
     "modules": [
       {
         "path": "src/access/index.ts",
@@ -3728,10 +3728,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/cloudflare/plugin/access.ts",
-        "section": ""
-      },
-      {
         "path": "src/cloudflare/plugin/mediator.ts",
         "section": ""
       },
@@ -3750,6 +3746,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/fiscal/devices/sales/SKILL.md",
         "section": ""
+      },
+      {
+        "path": "src/integrity/envelope.ts",
+        "section": "Annex A"
       }
     ]
   },
@@ -3971,7 +3971,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Information security controls",
     "uuid": "2336192c-67ba-894a-952a-a8d58eab9efb",
     "color": "hsl(14 80% 58%)",
-    "count": 27,
+    "count": 26,
     "modules": [
       {
         "path": "src/agents/mcp/tool/_guards.ts",
@@ -3988,10 +3988,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/beyond/agent-capability.ts",
         "section": ""
-      },
-      {
-        "path": "src/cloudflare/plugin/access.ts",
-        "section": "§5.4"
       },
       {
         "path": "src/cross/SKILL.md",
@@ -4065,7 +4061,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "ISO/IEC 27002:2022 — Information security, cybersecurity and privacy protection — Information security controls",
     "uuid": "e11210de-9c7d-86fe-b16b-e0dfbd5b6607",
     "color": "hsl(18 71% 44%)",
-    "count": 27,
+    "count": 26,
     "modules": [
       {
         "path": "src/agents/mcp/tool/_guards.ts",
@@ -4082,10 +4078,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/beyond/agent-capability.ts",
         "section": ""
-      },
-      {
-        "path": "src/cloudflare/plugin/access.ts",
-        "section": "§5.4"
       },
       {
         "path": "src/cross/SKILL.md",
