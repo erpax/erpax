@@ -1,6 +1,8 @@
 import { afterEach, describe, expect, it, vi } from 'vitest'
 
-import * as accounting from '@/accounting'
+// `erpaxSelfAccount` lives in @/accounting/corpus, NOT the @/accounting barrel —
+// spying on the barrel silently found no such property and failed the suite.
+import * as accountingCorpus from '@/accounting/corpus'
 import { erpaxSelfAccount } from '@/accounting/corpus'
 import * as readme from '@/readme'
 import { buildReadmeCorpusContext, buildReadmeTypographyGraph, deriveFolderModel } from '@/readme'
@@ -62,7 +64,7 @@ function mockRollupDeps(): void {
   vi.spyOn(readme, 'buildReadmeTypographyGraph').mockReturnValue({} as never)
   vi.spyOn(readme, 'buildReadmeCorpusContext').mockReturnValue({} as never)
   vi.spyOn(readme, 'deriveFolderModel').mockReturnValue(FIXTURE_FOLDER as never)
-  vi.spyOn(accounting, 'erpaxSelfAccount').mockReturnValue(FIXTURE_ACCOUNT as never)
+  vi.spyOn(accountingCorpus, 'erpaxSelfAccount').mockReturnValue(FIXTURE_ACCOUNT as never)
 }
 
 afterEach(() => {
