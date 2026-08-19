@@ -6,7 +6,7 @@ import { adminOrAccountant, scopedAccess } from '@/auth'
 import { currencyField, statusField, auditFields, unpField, fiscalDeviceNumberField, operatorCodeField, saleStatusOptions } from '@/field'
 import { assignSaleUnpHook } from '@/sale'
 import { deriveSaleOperatorCodeHook } from '@/sale'
-import { validateSaleFiscalRefsHook } from '@/sale'
+import { validateRefsHook } from '@/sale'
 import { enforceSaleImmutability } from '@/sale'
 import { emitSaleClosedHook } from '@/sale'
 
@@ -114,7 +114,7 @@ const Sales: CollectionConfig = {
   hooks: {
     beforeValidate: [autoPopulateTenant],
     beforeChange: [
-      validateSaleFiscalRefsHook(),
+      validateRefsHook(),
       deriveSaleOperatorCodeHook('operators'),
       assignSaleUnpHook('sales'),
       enforceSaleImmutability,

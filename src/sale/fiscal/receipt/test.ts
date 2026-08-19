@@ -13,7 +13,7 @@ import {
   issueReceiptForSale,
   noopFiscalDeviceDriver,
   type FiscalSaleInput,
-} from './fiscal-receipt'
+} from './index'
 
 const SALE: FiscalSaleInput = {
   unp: '12345678-0042-0000001',

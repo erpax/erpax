@@ -9,7 +9,7 @@
 
 import { describe, it, expect, vi } from 'vitest'
 import type { Payload } from 'payload'
-import { reverseSale } from './reverse-sale'
+import { reverseSale } from './index'
 
 const ORIGINAL = {
   id: 'sale-1',

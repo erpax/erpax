@@ -20,8 +20,8 @@ import { exactFloor } from '@/algebra'
 
 import type { Payload, PayloadRequest } from 'payload'
 import { eventEmitter, type EventEmitterService } from '@/event/emitter/service'
-import { fiscalizeRevenue, type RevenueInput } from './fiscalize-revenue'
-import { resolveFiscalContext } from './fiscal-context'
+import { fiscalizeRevenue, type RevenueInput } from './fiscal/revenue'
+import { resolveFiscalContext } from './fiscal/context'
 
 /** `subscription:invoiced` payload (see `src/types/events.ts`). */
 export interface SubscriptionInvoicedPayload {

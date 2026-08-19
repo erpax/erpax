@@ -8,7 +8,7 @@
  */
 
 import { describe, it, expect, vi } from 'vitest'
-import { buildFiscalReceipt, type FiscalSaleInput } from './fiscal-receipt'
+import { buildFiscalReceipt, type FiscalSaleInput } from './fiscal/receipt'
 import { buildReceiptQrData, buildElectronicReceipt, virtualFiscalDeviceDriver } from './virtual-device'
 
 const SALE: FiscalSaleInput = {
@@ -60,7 +60,7 @@ describe('virtualFiscalDeviceDriver', () => {
   })
 
   it('plugs into issueReceiptForSale as a drop-in FiscalDeviceDriver', async () => {
-    const { issueReceiptForSale } = await import('./fiscal-receipt')
+    const { issueReceiptForSale } = await import('./fiscal/receipt')
     const driver = virtualFiscalDeviceDriver({ virtualPosTerminal: 'VPOS-001' })
     const { receiptNumber } = await issueReceiptForSale(SALE, driver, '2026-04-10T09:30:15Z')
     expect(receiptNumber).toBe('12345678-0042-0000001')

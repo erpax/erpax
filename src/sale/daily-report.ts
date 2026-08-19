@@ -16,7 +16,7 @@
  * @see src/sale/fiscal-receipt.ts (the shared VAT engine) · src/sale/audit-file.ts
  */
 
-import { vatBreakdownForItems, type FiscalVatSubtotal } from './fiscal-receipt'
+import { vatBreakdownForItems, type FiscalVatSubtotal } from './fiscal/receipt'
 
 export interface DailySaleInput {
   readonly fiscalDeviceNumber: string

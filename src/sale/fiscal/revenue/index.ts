@@ -1,28 +1,18 @@
 /**
- * Generic revenue → СУПТО fiscal-sale membrane (the `event` skill).
- *
- * One projection from *any* revenue source (ecommerce order, subscription
- * charge, future POS/invoice) into the Наредба Н-18 fiscal `sales` register.
- * Every source-specific bridge (`order-fiscalization`, `subscription-fiscalization`)
- * is a thin adapter that maps its event payload into a `RevenueInput` and
- * delegates here — so the no-bypass invariant, the чл. 3 ал. 1 scope rule, the
- * ФУ resolution, idempotency, and the сторно logic live in exactly ONE place
- * (DRY). A sale records its origin in a polymorphic `source` group
- * (`{type, ref}` — the [[sti]] discriminator), which keys idempotency + сторно.
- *
- * The source document is the *mutable* commercial record; the fiscal sale is the
- * *immutable*, gapless-УНП register entry — joined by this membrane.
+ * Generic revenue → СУПТО fiscal-sale membrane. One projection from ANY revenue
+ * source into the Наредба Н-18 `sales` register, so no-bypass, the чл. 3 ал. 1 scope
+ * rule, ФУ resolution, idempotency and сторно live in ONE place. See ./SKILL.md.
  *
  * @standard BG Наредба-Н-18 §СУПТО sale-register · §чл.3-ал.1 fiscalization-scope
  * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
  * @audit ISO-19011:2018 audit-trail event-driven
- * @see src/sale/order-fiscalization.ts · src/sale/subscription-fiscalization.ts
+ * @see ./SKILL.md · src/sale/order-fiscalization.ts · src/sale/subscription-fiscalization.ts
  */
 
 import type { Payload, PayloadRequest } from 'payload'
 import { requiresFiscalization } from '@/naredba/n/18'
-import { resolveFiscalContext, type FiscalContext } from './fiscal-context'
-import { reverseSale } from './reverse-sale'
+import { resolveFiscalContext, type FiscalContext } from '../context'
+import { reverseSale } from '../../reverse'
 
 /** The fiscal sale payment types (Наредба Н-18 / касов бон). */
 export type FiscalPaymentType = 'cash' | 'card' | 'bank_transfer' | 'voucher'
@@ -117,9 +107,8 @@ export async function fiscalizeRevenue(
     data: {
       source: { type: input.sourceType, ref: input.sourceId },
       fiscalDeviceNumber: fiscal.deviceNumber,
-      // Cascade-resolved default operator + virtual-POS terminal for automated
-      // sales (the УНП hook derives ZZZZ from `operator`; the receipt picks up
-      // `terminal`). A future explicit per-source value would override here.
+      // Cascade-resolved operator + virtual-POS terminal for automated sales
+      // (the УНП hook derives ZZZZ from `operator`; the receipt picks up `terminal`).
       ...(fiscal.operatorId ? { operator: fiscal.operatorId } : {}),
       ...(fiscal.terminalId ? { terminal: fiscal.terminalId } : {}),
       saleDate: (input.occurredAt ? new Date(input.occurredAt) : new Date()).toISOString(),

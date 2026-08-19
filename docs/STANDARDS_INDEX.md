@@ -2464,16 +2464,23 @@ src/sale/audit-file.ts:18: * @standard OECD SAF-T 2.0 (universal base profile)
 src/sale/daily-report.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/sale/daily-report.test.ts:6: * @standard BG Наредба-Н-18 §дневен-отчет · §Приложение-1
 src/sale/daily-report.ts:14: * @standard BG Наредба-Н-18 §дневен-отчет · §Приложение-1 tax-groups
-src/sale/fiscal-context.test.ts:6: * @standard ISO/IEC-29119:2022 software-testing
-src/sale/fiscal-context.test.ts:7: * @standard BG Наредба-Н-18 §СУПТО fiscal-device-regime
-src/sale/fiscal-context.ts:21: * @standard BG Наредба-Н-18 §СУПТО fiscal-device-regime
-src/sale/fiscal-context.ts:22: * @standard ISO-3166-1:2020 country-codes (jurisdiction) · ISO-4217:2015 currency
-src/sale/fiscal-receipt.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
-src/sale/fiscal-receipt.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО касов-бон
-src/sale/fiscal-receipt.ts:14: * @standard BG Наредба-Н-18 §СУПТО касов-бон УНП-on-receipt
-src/sale/fiscalize-revenue.test.ts:6: * @standard ISO/IEC-29119:2022 software-testing
-src/sale/fiscalize-revenue.test.ts:7: * @standard BG Наредба-Н-18 §СУПТО sale-register · §чл.3-ал.1
-src/sale/fiscalize-revenue.ts:16: * @standard BG Наредба-Н-18 §СУПТО sale-register · §чл.3-ал.1 fiscalization-scope
+src/sale/event/index.ts:8: * @standard BG Наредба-Н-18 §СУПТО sale-lifecycle
+src/sale/fiscal/context/index.ts:21: * @standard BG Наредба-Н-18 §СУПТО fiscal-device-regime
+src/sale/fiscal/context/index.ts:22: * @standard ISO-3166-1:2020 country-codes (jurisdiction) · ISO-4217:2015 currency
+src/sale/fiscal/context/test.ts:6: * @standard ISO/IEC-29119:2022 software-testing
+src/sale/fiscal/context/test.ts:7: * @standard BG Наредба-Н-18 §СУПТО fiscal-device-regime
+src/sale/fiscal/receipt/index.ts:14: * @standard BG Наредба-Н-18 §СУПТО касов-бон УНП-on-receipt
+src/sale/fiscal/receipt/test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
+src/sale/fiscal/receipt/test.ts:6: * @standard BG Наредба-Н-18 §СУПТО касов-бон
+src/sale/fiscal/refs/index.ts:13: * @standard BG Наредба-Н-18 §СУПТО fiscal-device-register · operator-nomenclature
+src/sale/fiscal/refs/test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
+src/sale/fiscal/refs/test.ts:6: * @standard BG Наредба-Н-18 §СУПТО fiscal-device-register · operator-nomenclature
+src/sale/fiscal/revenue/index.ts:6: * @standard BG Наредба-Н-18 §СУПТО sale-register · §чл.3-ал.1 fiscalization-scope
+src/sale/fiscal/revenue/test.ts:6: * @standard ISO/IEC-29119:2022 software-testing
+src/sale/fiscal/revenue/test.ts:7: * @standard BG Наредба-Н-18 §СУПТО sale-register · §чл.3-ал.1
+src/sale/immutability/index.ts:13: * @standard BG Наредба-Н-18 §СУПТО no-delete · reversal-only · data-preservation
+src/sale/immutability/test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
+src/sale/immutability/test.ts:6: * @standard BG Наредба-Н-18 §СУПТО no-delete · reversal-only
 src/sale/operator-code.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/sale/operator-code.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО operator-nomenclature
 src/sale/operator-code.ts:12: * @standard BG Наредба-Н-18 §СУПТО operator-nomenclature УНП-second-segment
@@ -2483,13 +2490,9 @@ src/sale/order-fiscalization.ts:11: * @standard BG Наредба-Н-18 §СУП
 src/sale/receipt-subscriber.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/sale/receipt-subscriber.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО касов-бон
 src/sale/receipt-subscriber.ts:8: * @standard BG Наредба-Н-18 §СУПТО касов-бон issuance-on-close
-src/sale/reverse-sale.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
-src/sale/reverse-sale.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО сторно
-src/sale/reverse-sale.ts:12: * @standard BG Наредба-Н-18 §СУПТО сторно reversal-preserves-original
-src/sale/sale-event.ts:8: * @standard BG Наредба-Н-18 §СУПТО sale-lifecycle
-src/sale/sale-immutability.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
-src/sale/sale-immutability.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО no-delete · reversal-only
-src/sale/sale-immutability.ts:13: * @standard BG Наредба-Н-18 §СУПТО no-delete · reversal-only · data-preservation
+src/sale/reverse/index.ts:12: * @standard BG Наредба-Н-18 §СУПТО сторно reversal-preserves-original
+src/sale/reverse/test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
+src/sale/reverse/test.ts:6: * @standard BG Наредба-Н-18 §СУПТО сторно
 src/sale/submit-audit-file.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/sale/submit-audit-file.test.ts:6: * @standard BG Наредба-Н-18 §Приложение-38
 src/sale/submit-audit-file.ts:8: * @standard BG Наредба-Н-18 §Приложение-38 audit-file-submission
@@ -2500,9 +2503,6 @@ src/sale/subscription-fiscalization.ts:15: * @standard BG Наредба-Н-18 �
 src/sale/unp-sequence.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/sale/unp-sequence.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО УНП
 src/sale/unp-sequence.ts:16: * @standard BG Наредба-Н-18 §СУПТО УНП per-fiscal-device-gapless-sequence
-src/sale/validate-fiscal-refs.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
-src/sale/validate-fiscal-refs.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО fiscal-device-register · operator-nomenclature
-src/sale/validate-fiscal-refs.ts:13: * @standard BG Наредба-Н-18 §СУПТО fiscal-device-register · operator-nomenclature
 src/sale/virtual-device.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/sale/virtual-device.test.ts:6: * @standard BG Наредба-Н-18 §алтернативен-режим
 src/sale/virtual-device.ts:15: * @standard BG Наредба-Н-18 §алтернативен-режим e-shop-card-payments
@@ -4071,7 +4071,7 @@ src/roles/user/roles/hooks/preventDuplicateAssignment.ts:16: * @compliance SOX �
 src/roles/user/roles/index.ts:15: * @compliance SOC-2 CC6.3 access-removal
 src/saf/t/export/service/index.ts:36: * @compliance SOX §404 internal-controls
 src/saf/t/types.ts:19: * @compliance SOX §404 internal-controls
-src/sale/sale-immutability.ts:15: * @compliance SOX §404 internal-controls
+src/sale/immutability/index.ts:15: * @compliance SOX §404 internal-controls
 src/scheduled/task/registry.ts:23: * @compliance SOX §404 internal-controls automated-controls
 src/scheduled/task/registry.ts:24: * @compliance GDPR Art.5(1)(e) storage-limitation (retention purges)
 src/scheduled/task/runner.ts:16: * @compliance SOX §404 internal-controls automated-controls
@@ -4763,7 +4763,7 @@ src/receivable/workflow.service.ts:8: * @accounting IFRS IFRS-15 revenue-from-co
 src/receivable/workflow.service.ts:9: * @accounting IFRS IFRS-9 written_off impairment
 src/saf/t/types.ts:16: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/saf/t/types.ts:17: * @accounting US-GAAP ASC-205 presentation
-src/sale/fiscalize-revenue.ts:17: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/sale/fiscal/revenue/index.ts:7: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/sale/order-fiscalization.ts:12: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/sale/subscription-fiscalization.ts:16: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers performance-obligation
 src/seeding/seedSubscriptionPlans.test.ts:6: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
@@ -6183,18 +6183,18 @@ src/safety/mode/index.test.ts:15: * @audit Conservation Law 58 uuid-self-protect
 src/safety/mode/index.ts:45: * @audit Conservation Law 58 uuid-self-protection
 src/sale/audit-file.ts:19: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/sale/daily-report.ts:15: * @audit ISO-19011:2018 §6.4 audit-evidence
-src/sale/fiscal-receipt.ts:15: * @audit ISO-19011:2018 audit-trail
-src/sale/fiscalize-revenue.ts:18: * @audit ISO-19011:2018 audit-trail event-driven
+src/sale/event/index.ts:9: * @audit ISO-19011:2018 audit-trail event-driven
+src/sale/fiscal/receipt/index.ts:15: * @audit ISO-19011:2018 audit-trail
+src/sale/fiscal/refs/index.ts:14: * @audit ISO-19011:2018 audit-trail
+src/sale/fiscal/revenue/index.ts:8: * @audit ISO-19011:2018 audit-trail event-driven
+src/sale/immutability/index.ts:14: * @audit ISO-19011:2018 audit-trail
 src/sale/operator-code.ts:13: * @audit ISO-19011:2018 audit-trail
 src/sale/order-fiscalization.ts:13: * @audit ISO-19011:2018 audit-trail event-driven
 src/sale/receipt-subscriber.ts:9: * @audit ISO-19011:2018 audit-trail event-driven
-src/sale/reverse-sale.ts:13: * @audit ISO-19011:2018 audit-trail
-src/sale/sale-event.ts:9: * @audit ISO-19011:2018 audit-trail event-driven
-src/sale/sale-immutability.ts:14: * @audit ISO-19011:2018 audit-trail
+src/sale/reverse/index.ts:13: * @audit ISO-19011:2018 audit-trail
 src/sale/submit-audit-file.ts:10: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/sale/subscription-fiscalization.ts:17: * @audit ISO-19011:2018 audit-trail event-driven
 src/sale/unp-sequence.ts:17: * @audit ISO-19011:2018 audit-trail
-src/sale/validate-fiscal-refs.ts:14: * @audit ISO-19011:2018 audit-trail
 src/sale/virtual-device.ts:17: * @audit ISO-19011:2018 audit-trail
 src/scheduled/task/index.ts:7: * @audit ISO-19011:2018 §6.4.6 audit-evidence-scheduled-actions
 src/scheduled/task/registry.ts:22: * @audit ISO-19011:2018 §6.4.6 audit-evidence-scheduled-actions

@@ -13,14 +13,20 @@ export const NAME_FOLDER_EXCEPTIONS = new Set([
   'src/fiscal/periods/earnings/per/shares/SKILL.md',
 ])
 
-export const HYPHENATED_FOLDER_GRANDFATHER = new Set([
-  'audit-right',
-  'data-protection',
-  'dispute-resolution',
-  'force-majeure',
-  'governing-law',
-  'lead-score',
-])
+/**
+ * EMPTY — and it must stay that way.
+ *
+ * These six vocabulary atoms were grandfathered "with a rename plan"; the plan is
+ * now executed. Each is nested under the word it qualifies (`force-majeure` →
+ * `vocabulary/force/majeure`), so every folder is one word and the hyphen is a
+ * SLASH — which is what the path was always saying.
+ *
+ * Their wikilinks are FULL PATHS rather than bare leaves, deliberately: nesting
+ * makes the leaf `law`, `resolution` and `score`, each of which already names a
+ * different atom (`src/law`, `src/resolution`, `src/score`). A bare `[[law]]` would
+ * silently resolve to the wrong one.
+ */
+export const HYPHENATED_FOLDER_GRANDFATHER = new Set<string>([])
 
 export interface FrontmatterGateResult {
   ok: boolean
