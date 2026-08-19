@@ -2,43 +2,100 @@ import { algebraLog2 } from '@/algebra'
 /**
  * Public tamper-cost surfacing — the proof bundle self-describes its forge≫verify
  * asymmetry from its OWN invariant count, deepseek-amplified. Pure (no DB), so a
- * peer recomputes the exact claim. @see ./dry.ts, src/services/tamper-cost
+ * peer recomputes the exact claim.
+ *
+ * This is the atom's trinity test AND the test for `./dry.ts`. It used to be two
+ * files — `test.ts` and a near-duplicate `dry.test.ts` — that shared nine identical
+ * cases and quietly disagreed on the tenth. Duplication is camouflage: while the
+ * same law is asserted in two places, nothing can show a third is missing it, and
+ * the two copies drift. Folded here with every distinct assertion preserved.
+ *
+ * @see ./dry.ts · src/tamper/cost
  */
 import { describe, it, expect } from 'vitest'
 import { proofTamperCost, empiricalProofs } from './dry'
 import { jcsCanonicalize } from '@/integrity'
+import { corpusCollider } from '@/collider'
 
 describe('dry-proof: public tamper-cost surfaces the deepseek amplifiers', () => {
-  it('without coverage, reports the honest forge floor (2^112, the anchor path — cheaper than the digest since it rose to 122), tamper-evident', () => {
+  it('without coverage, reports the honest weakest-link floor (2^112 — the anchor, cheaper than the digest since it rose to 122), tamper-evident, echoing the invariant count it ran', () => {
     const t = proofTamperCost({ invariantsChecked: 43 })
-    // crackVerdict surfaces min(collision, second-preimage, anchor). The digest second-preimage rose
-    // 106→122 with the fixpoint correction (ERPAX_DIGEST_BITS = 122), so the anchor path (112) is now the
-    // cheapest honest floor and the binding follows it. Not a regression — the proof re-picked the min.
+    // crackVerdict surfaces min(collision, second-preimage, anchor). The digest
+    // second-preimage rose 106→122 with the fixpoint correction (ERPAX_DIGEST_BITS =
+    // 122), so the RSA-2048 anchor path (112) is now the cheapest honest floor and the
+    // binding follows it. Not a regression — the proof re-picked the min.
     expect(t.crackCostLog2).toBe(112)
-    expect(t.binding).toBe('anchor')
+    expect(t.binding).toBe('anchor') // the binding NAMES the weakest link
     expect(t.tamperEvident).toBe(true)
     expect(t.invariantsChecked).toBe(43)
     expect(t.replicas).toBe(1)
     expect(t.strongConsistency).toBe(false)
   })
+
   it('the invariant count (DeepSeek-Prover gates) raises the cost under coverage', () => {
     const none = proofTamperCost({ invariantsChecked: 0, coverage: 0.99 })
     const many = proofTamperCost({ invariantsChecked: 43, coverage: 0.99 })
     expect(many.crackCostLog2).toBeGreaterThan(none.crackCostLog2)
   })
+
   it('CRAQ replicas (3FS) multiply the cost; eventual consistency does not', () => {
     const craq = proofTamperCost({ invariantsChecked: 43, coverage: 0.99, replicas: 5, strongConsistency: true })
     const eventual = proofTamperCost({ invariantsChecked: 43, coverage: 0.99, replicas: 5, strongConsistency: false })
     expect(craq.crackCostLog2).toBeGreaterThan(eventual.crackCostLog2)
   })
-  it('100% coverage by architecture ⇒ ∞ (uncrackable), surfaced publicly', () => {
+
+  it('a MEASURED 100% coverage ⇒ ∞ (uncrackable) — and the note names the measured axis + source, never a bare "by architecture"', () => {
+    const t = proofTamperCost({
+      invariantsChecked: 43,
+      coverage: 1,
+      coverageAxis: 'convention coverage (import purity)',
+    })
+    expect(t.crackCostLog2).toBe(Number.POSITIVE_INFINITY)
+    // ground-don't-assert: the ∞ note must surface the coverage AXIS + a measured-source
+    // token so a future bare-∞ "by architecture" claim with no grounded axis fails here.
+    expect(t.note).toMatch(/coverage/i)
+    expect(t.note).toMatch(/measured/i)
+    expect(t.note).toMatch(/convention coverage \(import purity\)/)
+  })
+
+  it('a MEASURED ∞ with NO named axis is flagged UNNAMED — the claim is not silently grounded, and the public 100%-coverage line still stands', () => {
     const t = proofTamperCost({ invariantsChecked: 43, coverage: 1 })
     expect(t.crackCostLog2).toBe(Number.POSITIVE_INFINITY)
+    expect(t.note).toMatch(/UNNAMED|supply coverageAxis/)
+    // The surfaced claim keeps its public tail even when the axis is unnamed — the two
+    // folded files asserted these separately about the SAME call, so both are kept.
     expect(t.note).toMatch(/100% coverage/)
   })
+
   it('echoes the amplifier inputs so a peer can recompute the claim (verify, do not trust)', () => {
     const t = proofTamperCost({ invariantsChecked: 43, coverage: 0.999, replicas: 3, strongConsistency: true })
     expect(t).toMatchObject({ invariantsChecked: 43, replicas: 3, strongConsistency: true, coverage: 0.999 })
+  })
+})
+
+describe('dry-proof: tamper-cost coverage is GROUNDED in the live corpus collider (wiring lock)', () => {
+  // Locks the self-proof-cluster → proof wiring: the proof's coverage must come
+  // from the LIVE joint convention coverage (corpusCollider), not a hardcoded
+  // floor. A future edit that drops the coverage arg (reverting to the bare anchor-bit
+  // floor) makes this fail in CI.
+  it('the live collider yields a residual coverage in (0,1] that raises crackCost STRICTLY above the 2^112 floor', () => {
+    const collider = corpusCollider()
+    // Real corpus has residue ⇒ coverage strictly between 0 and 1 (never an
+    // assumed perfect 1, which would mint an ungrounded ∞ — identity/JCS hazard).
+    expect(collider.coverage).toBeGreaterThan(0)
+    expect(collider.coverage).toBeLessThanOrEqual(1)
+
+    const grounded = proofTamperCost({
+      invariantsChecked: 43,
+      coverage: collider.coverage,
+      coverageAxis: 'joint convention coverage (∏ live convention coverages — @/collider)',
+    })
+    const floor = proofTamperCost({ invariantsChecked: 43 }) // no coverage ⇒ the 2^112 anchor floor
+    expect(floor.crackCostLog2).toBe(112)
+    // The whole point: wiring the live coverage in lifts the cost above the floor.
+    expect(grounded.crackCostLog2).toBeGreaterThan(106)
+    expect(grounded.coverage).toBe(collider.coverage)
+    expect(grounded.note).toMatch(/convention coverage/)
   })
 })
 
