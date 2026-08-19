@@ -33,7 +33,16 @@ export {
  * @see ./map · ../computer · ../chat · ./SKILL.md
  */
 import { uuid as toUuid } from '@/integrity'
-import { type CrackKind, CRACK_FLAGS, type Seal } from './map'
+import { CRACK_FLAGS, type Seal } from './map'
+// A re-export NAMES nothing at runtime: `export { BOUNDARY } from './constants'`
+// serves consumers, but this module's own scope stays empty — so chatLocal hit
+// `ReferenceError: BOUNDARY is not defined` with zero type errors (the facade split
+// turned the definitions into re-exports while this file kept calling them).
+// Import what this file USES, alongside what it re-exports.
+import { BOUNDARY, LANE, PHYSICAL_FTL_DEFAULTS } from './constants'
+import { amortize, reuse } from './metrics'
+import { cracks, boundary, crack } from './crack'
+import { exactMax } from '@/algebra'
 
 export { TOKENS, ENTANGLE, API, CRACK_FLAGS, type Token, type CrackKind, type Seal } from './map'
 

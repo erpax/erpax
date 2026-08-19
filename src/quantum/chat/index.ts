@@ -11,13 +11,21 @@ export {
   coverage,
 } from './coverage'
 
-export {
-  improve,
-  ChatSession,
-  startSession,
-  sessionAppend,
-  sealSession,
-} from './routing'
+// ChatSession is an INTERFACE — erased at runtime, so re-exporting it in a value
+// block makes ESM demand a runtime binding that cannot exist ("does not provide an
+// export named 'ChatSession'"), and the whole barrel fails to load. Types leave by
+// `export type`; values by `export`.
+export type { ChatSession } from './routing'
+export { improve, startSession, sessionAppend, sealSession } from './routing'
+
+// A re-export NAMES nothing at runtime (the hazard this file already records for
+// `ftlReport`): `export { improve } from './routing'` serves CONSUMERS, but this
+// module's own scope stays empty, so the barrel's own functions hit
+// `ReferenceError: improve is not defined` with zero type errors. The facade split
+// turned these definitions into re-exports while the parent kept calling them.
+// Import what this file USES, alongside what it re-exports.
+import { improve, sessionAppend } from './routing'
+import { threadUuid } from './merkle'
 
 import { algebraLog2, exactCeil, exactMax, exactTrunc } from '@/algebra'
 /**
@@ -30,7 +38,7 @@ import { algebraLog2, exactCeil, exactMax, exactTrunc } from '@/algebra'
  * @standard merkle hash-chain; RFC 9562 §5.8 content-uuid
  * @see ../../chat -- ../../uuid/matrix (merge) -- ../communication -- ./SKILL.md
  */
-import { merge, toUuid } from '@/uuid/matrix'
+import { toUuid } from '@/uuid/matrix'
 import { A432, NOTES } from '@/signal'
 import { HORO_DIGITS, type HoroStep } from '@/horo'
 import {
@@ -246,6 +254,31 @@ export interface ChatSession {
   readonly thread: string
   readonly sealed: boolean
 }
+
+
+// ── the dyadic referral gateway — RESTORED ─────────────────────────────────
+// Dropped by the facade split (967bc70a7) while test.ts still imported all four,
+// so 30 suites failed on `referralsFor is not a function`. Verbatim from 967bc70a7~1.
+// A referral is a directed Möbius 0↔∞ gateway; its only free choice is the direction of
+// passage, so gatewayBits = log₂2 = 1 (one bit per referral direction). n directed referrals
+// therefore span a DYADIC state space of 2^n — and 1024 = 2^10 is exactly TEN referral
+// directions, not a ternary sum (432×3 = 1296 ≠ 1024, and 3N is never a power of two).
+// Distributing an amount "in the same proportions down to the bit" = splitting it equally
+// across those 2^n states. HONEST BOUNDARY: the corpus's own nav cross (bind4) is a FOUR-key
+// cross ⇒ 2^4 = 16 states; 1024 needs a 10-referral structure — a chosen 10-bit encoding, not
+// the current 4-key one. Real dyadic math; the 1024 sizing is a re-modelling, named as such.
+
+/** One bit per referral direction — the Möbius gateway's only free choice (log₂2). */
+export const GATEWAY_BITS = 1
+
+/** The dyadic state space of an n-referral cross: 1 direction bit each ⇒ 2^n states. */
+export const crossStates = (referrals: number): number => 2 ** exactMax(0, exactTrunc(referrals))
+
+/** Referral directions needed to span `states` (the inverse: log₂). 1024 ⇒ 10. */
+export const referralsFor = (states: number): number => (states > 0 ? exactCeil(algebraLog2(states)) : 0)
+
+/** Distribute an amount equally across a cross's states — the same proportion down to each state/bit. */
+export const distributeToStates = (amount: number, referrals: number): number => amount / crossStates(referrals)
 
 // startSession · sessionAppend · sealSession live in ./routing (the facade split's
 // child) and are re-exported at the top of this barrel. They were ALSO re-declared
