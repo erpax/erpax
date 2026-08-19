@@ -23,4 +23,6 @@ set -e
 node scripts/ensure-image-size-patch.mjs
 # Committed matter must be self-contained (untracked @/<atom> import ⇒ CI build death).
 node scripts/ensure-tracked-imports.mjs
+# The committed tree must BUILD (esbuild over a pristine HEAD worktree).
+node scripts/ensure-committed-tree-builds.mjs
 pnpm erpax confirm uuid

@@ -51,6 +51,11 @@ node scripts/ensure-image-size-patch.mjs
 # A file committed while the atom it imports stays untracked builds locally and dies
 # in CI (ERR_MODULE_NOT_FOUND) — exactly how the Cloudflare production build broke.
 node scripts/ensure-tracked-imports.mjs
+# Bundle the COMMITTED tree (a pristine HEAD worktree) with the SAME bundler the
+# deploy uses. The working tree is not the shipped tree: `tsx` tolerates a duplicate
+# export that esbuild refuses, and an uncommitted atom resolves locally but not in a
+# clone — both broke Cloudflare today. ~2s, fail-closed.
+node scripts/ensure-committed-tree-builds.mjs
 # Cheapest gate first: malformed @standard / @rfc / @compliance banners.
 bash scripts/standards-citation-index.sh --check
 # Every src/standards/<id>/ + tests/standards/<id>/ file MUST cite a standard.

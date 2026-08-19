@@ -247,20 +247,10 @@ export interface ChatSession {
   readonly sealed: boolean
 }
 
-/** Open a session on a topic — the seed folds the topic (deterministic). */
-export const startSession = (topic: string): ChatSession => {
-  const seed = [messageUuid(`session:${topic}`)]
-  return { topic, messageUuids: seed, thread: threadUuid(seed), sealed: false }
-}
-
-/** Fold a message (an improvement, a tool result) into the session. */
-export const sessionAppend = (s: ChatSession, message: string): ChatSession => {
-  const r = improve(s.messageUuids, message)
-  return { ...s, messageUuids: r.messageUuids, thread: r.thread }
-}
-
-/** Seal the session — its thread-uuid is the tamper-evident record persisted to Payload. */
-export const sealSession = (s: ChatSession): ChatSession => ({ ...s, sealed: true })
+// startSession · sessionAppend · sealSession live in ./routing (the facade split's
+// child) and are re-exported at the top of this barrel. They were ALSO re-declared
+// here — byte-identical copies — which esbuild refuses as a duplicate export and
+// which broke the production build. One definition, re-exported once.
 
 /**
  * Let all develop itself through the chat in COLLABORATIVE TEAMS: a proposal folds into the
