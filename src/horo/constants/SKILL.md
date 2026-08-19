@@ -21,7 +21,7 @@ if (isHoroStep(digit)) {
 ## code
 
 entry `@/horo/constants` · sealed `0` (refactoring in progress) · trinity `1·1·1`
-exports HORO_DIGITS · HORO_MEASURE · VOID_PIVOT · CENTROID · POLE · INNER_CIRCUIT · AFFINE_ORDER · type HoroStep · type FiveRoles · type InverseClosure · type Ray · type CarryRay · type Loop2D · type BreathStep · type CornerLimit · type Singularity · type HoroState
+exports HORO_DIGITS · HORO_MEASURE · VOID_PIVOT · CENTROID · POLE · INNER_CIRCUIT · AFFINE_ORDER · type HoroStep · type FiveRoles · type InverseClosure · type Ray · type CarryRay · type Loop2D · type BreathStep · type CornerLimit · type Singularity
 imports ../index (re-exports during refactoring)
 
 ---

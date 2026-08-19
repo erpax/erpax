@@ -84,7 +84,3 @@ export interface Singularity {
   readonly weight: number
 }
 
-export interface HoroState {
-  readonly step: HoroStep
-  readonly octave: number
-}
