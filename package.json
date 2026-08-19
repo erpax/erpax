@@ -19,6 +19,8 @@
     "setup": "node scripts/setup-env.mjs",
     "check": "cross-env NODE_OPTIONS=\"--no-deprecation --import=tsx/esm\" tsx src/cli/index.ts gate",
     "build:packages": "node packages/build.mjs all",
+    "db:seed": "cross-env PAYLOAD_DEV_PUSH=true NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs\" vitest run src/payload.config.api.test.ts --config ./vitest.config.mts",
+    "db:reset": "rm -rf .wrangler/state/v3/d1 node_modules/.cache/erpax/schema.pushed node_modules/.cache/erpax/migrate.sentinel",
     "release": "node packages/release.mjs",
     "release:write": "node packages/release.mjs --write",
     "release:check": "node packages/release.mjs --check",
