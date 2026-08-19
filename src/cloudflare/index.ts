@@ -1,9 +1,17 @@
-// cloudflare facade — constants first
+// cloudflare facade.
+//
+// The PLATFORM constants come from ./seal — the module that actually uses them.
+// They used to be re-exported from ./constants, which held DIFFERENT values under
+// the same names, so the facade published a kid and a secret-key list that
+// disagreed with what the sealing code stamped and read.
 export {
   CLOUDFLARE_SEAL_KID,
   WRANGLER_SECRET_ENV_KEYS,
   WRANGLER_BINDING_ENV_KEYS,
-} from './constants'
+} from './seal'
+
+// erpax's own Worker env names — a different set, now under a different name.
+export { ERPAX_SECRET_ENV_KEYS, ERPAX_BINDING_ENV_KEYS } from './constants'
 
 export {
   sealCloudflareConfig,

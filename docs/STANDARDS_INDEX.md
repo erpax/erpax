@@ -689,9 +689,9 @@ src/closing/period/checker/index.ts:16: * @standard SAF-T:3.0.2 (period coding, 
 src/cloudflare/ai.ts:8: * @standard Cloudflare Workers AI binding
 src/cloudflare/capacity/index.ts:15: * @standard Cloudflare Workers/D1/R2/Durable Objects platform limits (2025) — the production ceiling
 src/cloudflare/capacity/test.ts:2: * @standard ISO/IEC-25010:2023 §5.7 resource-utilisation (production hardware fit)
-src/cloudflare/index.ts:162: * @standard ISO/IEC 25010:2023 §5.2 reliability — fail-fast at boot
-src/cloudflare/index.ts:66: * @standard Cloudflare Workers Runtime API
-src/cloudflare/index.ts:67: * @standard W3C Service Worker §4 (Workers compat)
+src/cloudflare/index.ts:170: * @standard ISO/IEC 25010:2023 §5.2 reliability — fail-fast at boot
+src/cloudflare/index.ts:74: * @standard Cloudflare Workers Runtime API
+src/cloudflare/index.ts:75: * @standard W3C Service Worker §4 (Workers compat)
 src/cloudflare/mediator-uuid-crypto.test.ts:20: * @standard RFC 8032 EdDSA, NIST SP 800-38D AES-GCM, NIST SP 800-57 §5.6
 src/cloudflare/plugin/mediator.ts:27: * @standard ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/cloudflare/seal.ts:10: * @standard NIST SP-800-38D AES-GCM

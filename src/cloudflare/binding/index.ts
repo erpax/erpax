@@ -5,8 +5,7 @@
  * MUST flow through one of these mediator wrappers — never `env.<BINDING>` directly.
  */
 
-import type { MediatorContext as BaseContext, MediatorAuthorizer as BaseAuthorizer } from '../index'
-import { auditBindingCall } from './audit'
+import type { MediatorContext as BaseContext, MediatorAuthorizer as BaseAuthorizer, ErpaxCfEnv } from '../index'
 
 export type MediatorContext = BaseContext
 export type MediatorAuthorizer = BaseAuthorizer
@@ -19,7 +18,10 @@ export type MediatorAuthorizer = BaseAuthorizer
  */
 export async function enforceAuthorized(
   ctx: MediatorContext,
-  op: { binding: string; action: string; tenantId: string; user?: { id: string; role?: string } },
+  // `keyof ErpaxCfEnv`, never `string`: a fail-closed authorizer must not be handed a
+  // binding name that is not a real binding. The parent mediator narrows it the same
+  // way; this copy had widened it, which is why it could not call ctx.authorize.
+  op: { binding: keyof ErpaxCfEnv; action: string; tenantId: string; user?: { id: string; role?: string } },
 ): Promise<void> {
   if (!ctx.authorize) {
     throw new Error(
