@@ -31,7 +31,7 @@
  *   - Slice LLLLLLLLL currency-fallback — same template; the two
  *     identity elements (`XXX`, `und`) plug into the same identity-
  *     element machinery.
- *   - Slice MMMMMMMMM currency-uuid bridge — `computeLocaleUuid` is
+ *   - Slice MMMMMMMMM currency/fallback/uuid bridge — `computeLocaleUuid` is
  *     `ContentUuid<{ localeCode }>`, per-tenant namespaced. Same
  *     uuid-family laws apply.
  *
@@ -44,7 +44,7 @@
  * @audit Conservation Law 54 universal-identity-element (this is the locale instance)
  * @feature locale_fallback
  * @see ../currency-fallback/index.ts — the template this mirrors
- * @see ../currency-fallback/currency-uuid.ts — uuid-bridge pattern
+ * @see ../../currency/fallback/uuid.ts — uuid-bridge pattern
  * @see /src/i18n/localization.ts — supportedLocales + SupportedLocale type
  */
 

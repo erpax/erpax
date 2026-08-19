@@ -181,7 +181,7 @@ export interface BuildProofArgs {
 
 /**
  * Replace any non-finite number in a self-proof block with `null` so the bundle
- * stays JCS-serializable (JCS rejects Infinity/NaN — see dry-proof.test). A
+ * stays JCS-serializable (JCS rejects Infinity/NaN — see ./dry.test.ts). A
  * perfect-DRY corpus yields strength/tamperCost = ∞; we TAG it as null rather than
  * leak a raw Infinity into the content-uuid'd body (same discipline as projection).
  */

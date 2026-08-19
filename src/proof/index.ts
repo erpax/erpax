@@ -7,7 +7,7 @@ export type {
   BuildProofArgs,
   DryProofPublishedResult,
   FederationEnvelope,
-} from './dry-proof'
+} from './dry'
 export {
   MAX_PROOF_AGE_HOURS,
   empiricalProofs,
@@ -17,4 +17,4 @@ export {
   getCurrentProofBundle,
   checkDryProofPublished,
   asFederationEnvelope,
-} from './dry-proof'
+} from './dry'

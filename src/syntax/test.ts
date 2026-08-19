@@ -129,6 +129,22 @@ describe('commentSites + lineColumnOf — the exact address of prose', () => {
       const text = "import type { T } from '@/deep/file'\nimport { type U } from '@/other'"
       expect(importSpecifiersOf(f, text)).toEqual(['@/deep/file', '@/other'])
     })
+
+    it('`typeof import(...)` in TYPE position is an import — it was invisible, and that cost a rename', () => {
+      // An ImportTypeNode is NOT a CallExpression, so this form was never visited.
+      // A hyphen rename left `typeof import('@/proof/dry-proof')` dangling in two
+      // files: the ring built on this reported GREEN and only `tsc` disagreed.
+      // A false negative in a gate is worse than a false positive.
+      const text = "const d: typeof import('@/proof/dry') = x\nimport z from './c'"
+      expect(importSpecifiersOf(f, text)).toEqual(['@/proof/dry', './c'])
+    })
+
+    it('a string handed to a custom loader is NOT an import — and cannot be', () => {
+      // `safeLoad('@/x')` couples the file to a path, but nothing in the grammar says
+      // so: deciding it needs safeLoad's semantics. This is exactly why `tsc` is the
+      // complement to the ring rather than a redundancy.
+      expect(importSpecifiersOf(f, "const m = safeLoad('@/proof/dry')")).toEqual([])
+    })
   })
 })
 

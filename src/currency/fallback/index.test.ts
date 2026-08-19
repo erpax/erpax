@@ -307,7 +307,7 @@ describe('ISO 4217 numeric-code mapping', () => {
 
 describe('Currency primitives are uuid primitives (Slice LLLLLLLLL-cut4)', () => {
   it('computeCurrencyUuid is stable for same (code, tenantId)', async () => {
-    const { computeCurrencyUuid } = await import('@/currency/fallback/currency-uuid')
+    const { computeCurrencyUuid } = await import('@/currency/fallback/uuid')
     const u1 = computeCurrencyUuid('EUR', 'tenant-1')
     const u2 = computeCurrencyUuid('EUR', 'tenant-1')
     expect(u1).toBe(u2)
@@ -315,12 +315,12 @@ describe('Currency primitives are uuid primitives (Slice LLLLLLLLL-cut4)', () =>
   })
 
   it('computeCurrencyUuid differs across tenants for the same code', async () => {
-    const { computeCurrencyUuid } = await import('@/currency/fallback/currency-uuid')
+    const { computeCurrencyUuid } = await import('@/currency/fallback/uuid')
     expect(computeCurrencyUuid('EUR', 'tenant-1')).not.toBe(computeCurrencyUuid('EUR', 'tenant-2'))
   })
 
   it('computeRateQuoteUuid is stable for same (from, to, asOf, tenant) — replay-safe', async () => {
-    const { computeRateQuoteUuid } = await import('@/currency/fallback/currency-uuid')
+    const { computeRateQuoteUuid } = await import('@/currency/fallback/uuid')
     const args = {
       fromCurrency: 'EUR', toCurrency: 'JPY',
       asOf: '2026-05-11T08:00:00.000Z',
@@ -330,7 +330,7 @@ describe('Currency primitives are uuid primitives (Slice LLLLLLLLL-cut4)', () =>
   })
 
   it('computeRateQuoteUuid does NOT include the rate value — peers disagreeing on rate share the query identity', async () => {
-    const { computeRateQuoteUuid } = await import('@/currency/fallback/currency-uuid')
+    const { computeRateQuoteUuid } = await import('@/currency/fallback/uuid')
     // Even though one peer might quote 170 and another 171 for the
     // same EUR/JPY pair at the same asOf, the QUOTE IDENTITY (the
     // uuid the consensus algorithm groups by) is the same.
@@ -343,7 +343,7 @@ describe('Currency primitives are uuid primitives (Slice LLLLLLLLL-cut4)', () =>
   })
 
   it('computeExchangeUuid is stable for same params — idempotent exchange', async () => {
-    const { computeExchangeUuid } = await import('@/currency/fallback/currency-uuid')
+    const { computeExchangeUuid } = await import('@/currency/fallback/uuid')
     const args = {
       fromWalletId: 'w1', toWalletId: 'w2', amountMinor: 10000,
       asOf: '2026-05-11T08:00:00.000Z', tenantId: 't',
@@ -353,7 +353,7 @@ describe('Currency primitives are uuid primitives (Slice LLLLLLLLL-cut4)', () =>
 
   it('realtimeRate auto-attaches a provenanceUuid derived from computeRateQuoteUuid', async () => {
     const { realtimeRate } = await import('@/currency/fallback')
-    const { computeRateQuoteUuid } = await import('@/currency/fallback/currency-uuid')
+    const { computeRateQuoteUuid } = await import('@/currency/fallback/uuid')
     const asOf = '2026-05-11T08:00:00.000Z'
     const q = await realtimeRate('EUR', 'EUR', { tenantId: 't', asOf })
     const expected = computeRateQuoteUuid({

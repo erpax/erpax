@@ -56,7 +56,7 @@ import { checkTorusBounded } from '@/topology'
 // Lazy — `proof/dry-proof.ts` imports `runAllInvariants` from this
 // module's barrel, so a static import here would close the cycle.
 async function loadCheckDryProofPublished(origin: string) {
-  const m = await import('@/proof/dry-proof')
+  const m = await import('@/proof/dry')
   return m.checkDryProofPublished(origin)
 }
 import { checkAgentLawCoverage } from './by-agent'

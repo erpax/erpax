@@ -226,6 +226,12 @@ export function importSpecifiersOf(file: string, text: string): string[] {
       const arg = n.arguments[0]
       if (arg && ts.isStringLiteral(arg)) out.push(arg.text)
     }
+    // `typeof import('x')` in TYPE position is an ImportTypeNode, NOT a call — it was
+    // invisible here, so a rename could leave one dangling and every gate built on this
+    // reported green. Found the hard way: the ring passed and `tsc` did not.
+    else if (ts.isImportTypeNode(n) && ts.isLiteralTypeNode(n.argument) && ts.isStringLiteral(n.argument.literal)) {
+      out.push(n.argument.literal.text)
+    }
     ts.forEachChild(n, visit)
   }
   visit(src)

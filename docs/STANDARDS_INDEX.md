@@ -915,9 +915,6 @@ src/csrd/disclosures/index.ts:17: * @standard EU ESRS 2 General Disclosures
 src/csrd/disclosures/index.ts:18: * @standard ISO 14064-1:2018 ghg-quantification (basis for ESRS E1)
 src/csrd/disclosures/index.ts:19: * @standard EU EFRAG ESRS-XBRL taxonomy
 src/css/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
-src/currency/fallback/currency-uuid.ts:57: * @standard RFC 9562 §5.8 uuidv8 (the bottom-half hash family)
-src/currency/fallback/currency-uuid.ts:58: * @standard RFC 8785 JCS (the canonicalisation that makes equivalence work)
-src/currency/fallback/currency-uuid.ts:59: * @standard ISO 4217 §6.5 (X-codes — the currency identity layer)
 src/currency/fallback/index.test.ts:19: * @standard ISO 4217 §6.5 "No currency" (XXX numeric 999)
 src/currency/fallback/index.ts:449: * @standard IFRS 7 §22 fair-value hierarchy (each quote's source maps to a level)
 src/currency/fallback/index.ts:450: * @standard IAS 21 §38 presentation-currency translation
@@ -925,6 +922,9 @@ src/currency/fallback/index.ts:56: * @standard ISO 4217 §6.5 "No currency" — 
 src/currency/fallback/index.ts:57: * @standard EN 16931 §BG-7 currency-code element (XXX accepted)
 src/currency/fallback/index.ts:58: * @standard ISO 20022 pacs.008.001.10 §Ccy attribute (XXX accepted)
 src/currency/fallback/index.ts:59: * @standard IFRS 1 §IG7 non-monetary items presentation
+src/currency/fallback/uuid.ts:57: * @standard RFC 9562 §5.8 uuidv8 (the bottom-half hash family)
+src/currency/fallback/uuid.ts:58: * @standard RFC 8785 JCS (the canonicalisation that makes equivalence work)
+src/currency/fallback/uuid.ts:59: * @standard ISO 4217 §6.5 (X-codes — the currency identity layer)
 src/currency/rates/index.ts:14: * @standard ISO-4217:2015 currency-codes from-currency to-currency
 src/currency/rates/index.ts:15: * @standard ISO-8601-1:2019 date-time rate-date
 src/currency/reconciliation/index.ts:15: * @standard ISO-4217:2023 (currency codes, decimal places)
@@ -2233,10 +2233,10 @@ src/product/price/index.ts:20: * @standard ISO-4217:2015 currency-codes
 src/proof/bitcoin/genesi/index.ts:24: * @standard Nakamoto (2008) "Bitcoin: A Peer-to-Peer Electronic Cash System" §§3–4 (PoW + chain)
 src/proof/bitcoin/genesi/index.ts:25: * @standard NIST FIPS 180-4 SHA-256 (double-SHA256 block hash)
 src/proof/bitcoin/genesi/index.ts:26: * @standard Bitcoin Core — genesis block (height 0, hash 000000000019d6…ce26f)
-src/proof/dry-proof.ts:35: * @standard W3C JSON-LD 1.1 + Schema.org Dataset vocabulary
-src/proof/dry-proof.ts:36: * @standard W3C VC Data Model 2.0 (proof-as-verifiable-claim)
-src/proof/dry-proof.ts:37: * @standard ISO/IEC 25010:2023 §5.5 testability + §5.7 modularity
-src/proof/dry-proof.ts:38: * @standard ISO 19011:2018 §6.4.6 (audit-evidence + traceability)
+src/proof/dry.ts:35: * @standard W3C JSON-LD 1.1 + Schema.org Dataset vocabulary
+src/proof/dry.ts:36: * @standard W3C VC Data Model 2.0 (proof-as-verifiable-claim)
+src/proof/dry.ts:37: * @standard ISO/IEC 25010:2023 §5.5 testability + §5.7 modularity
+src/proof/dry.ts:38: * @standard ISO 19011:2018 §6.4.6 (audit-evidence + traceability)
 src/proof/merkle/dag/index.ts:21: * @standard Git object model — SHA-1 over `"<type> <len>\0<content>"` (commits include parent)
 src/proof/merkle/dag/index.ts:22: * @standard NIST FIPS 180-4 (the underlying hash); RFC 9562 §5.8 (the erpax content-uuid twin)
 src/proof/projection/index.ts:29: * @standard RFC 9562 §5.8 (content-uuid v8, the forward projection) · RFC 8785 (JCS)
@@ -5728,12 +5728,12 @@ src/country/fallback/index.test.ts:17: * @audit Conservation Law 54 universal-id
 src/country/fallback/index.ts:53: * @audit Conservation Law 54 universal-identity-element (country instance)
 src/crown/index.ts:11: * @audit note, colour and uuid computed from the position math, never hand-asserted
 src/csrd/disclosures/index.ts:22: * @audit ISAE 3000 limited-assurance (rises to reasonable-assurance under CSRD by 2028)
-src/currency/fallback/currency-uuid.ts:60: * @audit Conservation Law 8  content-addressable integrity
-src/currency/fallback/currency-uuid.ts:61: * @audit Conservation Law 47 type-level uuid
-src/currency/fallback/currency-uuid.ts:62: * @audit Conservation Law 53 self-referential-closure (XXX identity)
-src/currency/fallback/currency-uuid.ts:63: * @audit Conservation Law 54 universal identity element (this module formalises it for currency)
 src/currency/fallback/index.test.ts:20: * @audit Conservation Law 53 self-referential-closure (currency identity element)
 src/currency/fallback/index.ts:60: * @audit Conservation Law 53 self-referential-closure (currency identity element)
+src/currency/fallback/uuid.ts:60: * @audit Conservation Law 8  content-addressable integrity
+src/currency/fallback/uuid.ts:61: * @audit Conservation Law 47 type-level uuid
+src/currency/fallback/uuid.ts:62: * @audit Conservation Law 53 self-referential-closure (XXX identity)
+src/currency/fallback/uuid.ts:63: * @audit Conservation Law 54 universal identity element (this module formalises it for currency)
 src/currency/rates/index.ts:18: * @audit ISO-19011:2018 audit-trail rate-update
 src/customer/segments/index.ts:12: * @audit ISO-19011:2018 audit-trail crm-segmentation
 src/customers/contracts/contract/amendments/index.ts:30: * @audit ISO-19011:2018 audit-trail amendment-lifecycle
@@ -6090,7 +6090,7 @@ src/posts/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-modul
 src/power/index.ts:33: * @audit Conservation Law 55 (tamper cost grows with history; audit stays O(N))
 src/power/index.ts:34: * @audit Conservation Law 62 (coverage → ∞ ; here driven by live usage)
 src/proof/bitcoin/genesi/index.ts:27: * @audit Conservation Law 55 (tamper cost grows with history; audit stays O(N))
-src/proof/dry-proof.ts:39: * @audit ISO/IEC 27001 §A.18.2 (independent review of conformance)
+src/proof/dry.ts:39: * @audit ISO/IEC 27001 §A.18.2 (independent review of conformance)
 src/proof/merkle/dag/index.ts:23: * @audit Conservation Law 55 (tamper cost grows with history; audit stays O(N))
 src/proof/projection/index.ts:32: * @audit Conservation Law 55/62 (forge ≫ verify; coverage → ∞ at the anchor)
 src/properties/index.ts:22: * @audit ISO-19011:2018 audit-trail property-master-changes

@@ -2,12 +2,12 @@
  * rules — bindings face + computed gate registry.
  *
  * Wire points: ACCOUNTING_NEST_MAP · FORBIDDEN_INTERMEDIATE_SEGMENTS · ROOT_TS_ALLOWED.
- * All scan logic and baselines live in ./compute-rules.ts (ratchet-derived).
+ * All scan logic and baselines live in ./compute.ts (ratchet-derived).
  *
  *   tsx src/rules/index.ts --check      # exit 1 when any guardian UNSEALED
  *   pnpm rules:check
  *
- * @see ./compute-rules.ts — ./bindings.ts — ../law/folder/ratchet.generated
+ * @see ./compute.ts — ./bindings.ts — ../law/folder/ratchet.generated
  * @see ./SKILL.md#agent-laws — the working discipline this registry must fail-close on
  *   (shapeRatchetVerdict gates in the `corpus` lane of cli/gate.ts via `erpax doctor corpus`).
  */
@@ -26,7 +26,7 @@ import { matrixCrackViolations } from '@/matrix'
 import { linearGapCount, linearLogicCount } from '@/quantum'
 import { engineeringConformance } from '@/engineering'
 import { frameworkCollisions } from './compatibility'
-import { computeRulesOf, type RulesSnapshot } from './compute-rules'
+import { computeRulesOf, type RulesSnapshot } from './compute'
 
 export {
   ACCOUNTING_NEST_MAP,
@@ -48,7 +48,7 @@ export {
   type TightenedViolation,
   type RuleAxis,
   type RulesSnapshot,
-} from './compute-rules'
+} from './compute'
 
 /** Default TTL for cached `rulesOf` snapshot (agent dispatch warm path). */
 export const RULES_CACHE_TTL_MS = 5 * 60 * 1000

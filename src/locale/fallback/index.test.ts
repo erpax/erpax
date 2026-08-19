@@ -13,7 +13,7 @@
  *   4. `isSupportedLocale` strict; `resolveLocale` lenient.
  *   5. `formatForLocale` never throws.
  *   6. `computeLocaleUuid` is stable + per-tenant namespaced
- *      (same shape as currency-uuid bridge).
+ *      (same shape as currency/fallback/uuid bridge).
  *
  * @standard RFC 5646 §4.1 'und' undetermined language subtag
  * @audit Conservation Law 54 universal-identity-element

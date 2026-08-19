@@ -51,7 +51,7 @@ export const MetaSkillAgent: DomainAgent = {
     try {
       const { runAllInvariants } = await import('@/architecture/invariant')
       const { processInvariantResults } = await import('@/meta/automation')
-      const { publishDryProofBundle } = await import('@/proof/dry-proof')
+      const { publishDryProofBundle } = await import('@/proof/dry')
       const { rollUpToTrinity } = await import('@/architecture/invariant/trinity')
       const { buildErpaxMcpTools } = await import('@/agents/mcp/tool-defs')
       const { agentRegistry } = await import('@/agent/bootstrap')

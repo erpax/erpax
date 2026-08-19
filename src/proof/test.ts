@@ -2,10 +2,10 @@ import { algebraLog2 } from '@/algebra'
 /**
  * Public tamper-cost surfacing — the proof bundle self-describes its forge≫verify
  * asymmetry from its OWN invariant count, deepseek-amplified. Pure (no DB), so a
- * peer recomputes the exact claim. @see ./dry-proof.ts, src/services/tamper-cost
+ * peer recomputes the exact claim. @see ./dry.ts, src/services/tamper-cost
  */
 import { describe, it, expect } from 'vitest'
-import { proofTamperCost, empiricalProofs } from './dry-proof'
+import { proofTamperCost, empiricalProofs } from './dry'
 import { jcsCanonicalize } from '@/integrity'
 
 describe('dry-proof: public tamper-cost surfaces the deepseek amplifiers', () => {

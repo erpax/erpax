@@ -294,7 +294,7 @@ export function auditSelfDevGaps(opts: TipEmitOpts = {}): SelfDevAudit {
 
   let dryProofOk = opts.dryProofOk ?? true
   if (opts.dryProofOk == null) {
-    const dry = safeLoad<typeof import('@/proof/dry-proof')>('@/proof/dry-proof')
+    const dry = safeLoad<typeof import('@/proof/dry')>('@/proof/dry')
     if (dry) {
       const r = dry.checkDryProofPublished(process.env.ERPAX_ORIGIN ?? 'https://erpax.ceci.workers.dev')
       dryProofOk = r.ok
@@ -502,7 +502,7 @@ export function planTrinity(gap: SelfDevGap): Omit<TrinityTip, 'continuation' | 
     case 'dry-proof':
       return {
         form: `Publish a fresh dry-proof bundle (Law 44) from src/proof/dry-proof.ts.`,
-        code: `tsx -e "import { buildDryProofBundle, publishDryProofBundle, checkDryProofPublished } from '@/proof/dry-proof'" ; pnpm erpax doctor dry-proof`,
+        code: `tsx -e "import { buildDryProofBundle, publishDryProofBundle, checkDryProofPublished } from '@/proof/dry'" ; pnpm erpax doctor dry-proof`,
         proof: `checkDryProofPublished(origin).ok === true`,
         gap,
         nextAsks,

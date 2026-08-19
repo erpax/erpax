@@ -25,7 +25,7 @@ import { algebraLog2 } from '@/algebra'
  * @standard NIST FIPS 180-4 SHA-256 (double-SHA256 block hash)
  * @standard Bitcoin Core — genesis block (height 0, hash 000000000019d6…ce26f)
  * @audit Conservation Law 55 (tamper cost grows with history; audit stays O(N))
- * @see ../../dry-proof.ts ../../merkle/dag src/services/tamper-cost
+ * @see ../../dry.ts ../../merkle/dag src/services/tamper-cost
  */
 
 import { createHash } from 'node:crypto'

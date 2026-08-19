@@ -17,7 +17,7 @@ import { exactMax } from '@/algebra'
  *
  * `accumulatePower` calls `crackVerdict` ONCE with the raw usage so the amplifiers
  * run inside it (never re-adding terms) — exactly as the shipped `proofTamperCost`
- * (services/proof/dry-proof) is itself a thin `crackVerdict` wrapper. The MAXIMUM it
+ * (proof/dry) is itself a thin `crackVerdict` wrapper. The MAXIMUM it
  * reports is the inverse projection (`projectionProof`): decrypt the private key,
  * blockchain-pow ⇒ unbounded. The 106-bit digest floor (`ERPAX_DIGEST_BITS`) is only
  * the cheaper hash-collision path.

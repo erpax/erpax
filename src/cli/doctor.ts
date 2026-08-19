@@ -97,7 +97,7 @@ export function collectDoctorReport(cwd: string = process.cwd(), opts?: { readon
   let dryProof: DoctorReport['dryProof'] = { ok: false, reasons: ['dry-proof checker unavailable'] }
   try {
     // Deferred — dry-proof pulls invariant/MCP surface; quick doctor still stays under rung.
-    const { checkDryProofPublished } = createRequire(import.meta.url)('@/proof/dry-proof') as typeof import('@/proof/dry-proof')
+    const { checkDryProofPublished } = createRequire(import.meta.url)('@/proof/dry') as typeof import('@/proof/dry')
     const r = checkDryProofPublished(process.env.ERPAX_ORIGIN ?? 'https://erpax.ceci.workers.dev')
     dryProof = { ok: r.ok, reasons: r.reasons }
   } catch {
@@ -282,8 +282,8 @@ export function runDoctorDryProof(): number {
   console.log('erpax doctor dry-proof — Law 44 publish gate\n')
   try {
     const { checkDryProofPublished, getCurrentProofBundle } = createRequire(import.meta.url)(
-      '@/proof/dry-proof',
-    ) as typeof import('@/proof/dry-proof')
+      '@/proof/dry',
+    ) as typeof import('@/proof/dry')
     const origin = process.env.ERPAX_ORIGIN ?? 'https://erpax.ceci.workers.dev'
     const r = checkDryProofPublished(origin)
     const current = getCurrentProofBundle()

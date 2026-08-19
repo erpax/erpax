@@ -267,6 +267,10 @@ export async function runHyphenCampaign(opts: {
 }
 
 if (import.meta.url === 'file://' + process.argv[1]) {
+  // An async IIFE, NOT top-level await: a top-level await here compiles away
+  // under a CJS transform and makes the whole module un-importable — which broke
+  // every `tsx -e` that merely wanted to READ the manifest.
+  void (async () => {
   const apply = process.argv.includes('--apply')
   const renames = viableRenames()
   console.log(`hyphen — ${renames.length} viable rename(s); dry-run is the default\n`)
@@ -280,4 +284,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   }
   console.log(apply ? `\n${res.complete ? '✓ campaign complete' : '✗ a batch reddened — rolled back to the byte'}` : `\n(dry-run) — \`tsx src/rules/hyphen/index.ts --apply\` to cut.`)
   process.exit(res.complete || !apply ? 0 : 1)
+  })()
 }
