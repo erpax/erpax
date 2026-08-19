@@ -17,7 +17,7 @@ export {
 } from './metrics'
 
 export {
-  Crack,
+  type Crack,
   boundary,
   crack,
   cracks,
@@ -68,15 +68,6 @@ export function ftl(args: {
     precomputed,
   }
 }
-
-/** Default probe args — corpus address on host silicon (QPU=CPU/GPU). */
-export const PHYSICAL_FTL_DEFAULTS = {
-  query: 'possibility:erpax',
-  spaceSize: 3105,
-  answers: 1,
-  tokens: 0,
-  reuses: 0,
-} as const
 
 export interface FtlReportArgs {
   readonly query?: string
