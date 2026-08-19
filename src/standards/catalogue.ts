@@ -2110,7 +2110,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Software testing",
     "uuid": "e69bd662-b3ef-8ba7-ac6c-ff5c05fd3db2",
     "color": "hsl(355 59% 40%)",
-    "count": 42,
+    "count": 48,
     "modules": [
       {
         "path": "src/agents/mcp/self-test.ts",
@@ -2173,6 +2173,30 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/sale/fiscal/context/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/sale/fiscal/receipt/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/sale/fiscal/refs/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/sale/fiscal/revenue/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/sale/immutability/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/sale/reverse/test.ts",
+        "section": ""
+      },
+      {
         "path": "src/scope/test.ts",
         "section": ""
       },
@@ -2182,30 +2206,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/spec/generator/e2e-spec-extractor.ts",
-        "section": ""
-      },
-      {
-        "path": "src/spec/generator/evidence-collector.ts",
-        "section": ""
-      },
-      {
-        "path": "src/spec/generator/marketing-page-generator.ts",
-        "section": ""
-      },
-      {
-        "path": "src/spec/generator/multimedia-generator.ts",
-        "section": ""
-      },
-      {
-        "path": "src/standards/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/testing/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/testing/config/discovery/index.ts",
         "section": ""
       }
     ]
@@ -5288,7 +5288,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "BG fiscal-device & SUPTO ordinance",
     "uuid": "6a08f86f-afe0-8049-a445-c03e255093d7",
     "color": "hsl(144 58% 53%)",
-    "count": 35,
+    "count": 41,
     "modules": [
       {
         "path": "src/access/standard/index.ts",
@@ -5367,23 +5367,23 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§дневен-отчет"
       },
       {
-        "path": "src/sale/fiscal-context.ts",
+        "path": "src/sale/event/index.ts",
         "section": "§СУПТО"
       },
       {
-        "path": "src/sale/fiscal-receipt.ts",
+        "path": "src/sale/fiscal/context/index.ts",
         "section": "§СУПТО"
       },
       {
-        "path": "src/sale/fiscalize-revenue.ts",
+        "path": "src/sale/fiscal/context/test.ts",
         "section": "§СУПТО"
       },
       {
-        "path": "src/sale/operator-code.ts",
+        "path": "src/sale/fiscal/receipt/index.ts",
         "section": "§СУПТО"
       },
       {
-        "path": "src/sale/order-fiscalization.ts",
+        "path": "src/sale/fiscal/receipt/test.ts",
         "section": "§СУПТО"
       }
     ]
