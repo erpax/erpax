@@ -61,6 +61,21 @@ describe('rules/hyphen — specifiers are resolved, not guessed', () => {
     expect(resolveSpec('src/ai/anomaly.ts', 'payload', root)).toBeUndefined()
   })
 
+  it('resolves a `.js` specifier to its `.ts` SOURCE — TypeScript imports the emitted name', () => {
+    // Without this the resolver reports a phantom dangle. A phantom in the ring's
+    // BASELINE is not cosmetic: the ring compares a COUNT, so one phantom silently
+    // buys one real dangle. Found on payload.config.api.test.ts → seedUser.js, which
+    // tsc resolved happily and the suite passed.
+    write('ai/emitted.ts', 'export const e = 1\n')
+    expect(resolveSpec('src/ai/anomaly.ts', './emitted.js', root)).toBe('src/ai/emitted.ts')
+    expect(resolveSpec('src/ai/anomaly.ts', './emitted.mjs', root)).toBe('src/ai/emitted.ts')
+  })
+
+  it('still prefers a REAL .js file when one exists', () => {
+    // The mapping must not shadow an actual emitted file that is genuinely present.
+    expect(resolveSpec('src/ai/anomaly.ts', './nothing-here.js', root)).toBeUndefined()
+  })
+
   it('sees every code file under src', () => {
     expect(codeFiles(root).length).toBeGreaterThan(4)
   })

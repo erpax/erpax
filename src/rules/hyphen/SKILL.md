@@ -45,8 +45,11 @@ mechanically would be prose with nothing behind it, which [[rules]]/prose refuse
 A batch is a set of **renames**, never a set of files: the move and the specifier
 rewrites must land together or the ring reddens on work that is merely half-done.
 The ring is `danglingSpecifiers` measured against the count that existed **before**
-the run — the corpus already carries 2, and a gate demanding someone else's debt be
-cleared first is a gate nobody can run.
+the run, so a gate does not demand someone else's debt be cleared first. That count
+is now **0**: the two it once carried were one real dead import and one PHANTOM —
+`./x.js` naming a `.ts` source, which TypeScript resolves and this resolver did not.
+A phantom in a baseline is not cosmetic; the ring compares a **count**, so each one
+silently buys a real dangle.
 
 **Honest boundary.** A green ring proves every specifier **resolves**, never that the
 new name is **better** — it proves only that the path already said the word being

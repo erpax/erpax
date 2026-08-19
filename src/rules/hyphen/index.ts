@@ -147,7 +147,16 @@ export function resolveSpec(fromFile: string, spec: string, cwd: string = proces
   if (spec.startsWith('@/')) base = `${SRC}/${spec.slice(2)}`
   else if (spec.startsWith('.')) base = posix.normalize(posix.join(dirname(fromFile), spec))
   else return undefined
-  for (const c of [base, `${base}.ts`, `${base}.tsx`, `${base}/index.ts`, `${base}/index.tsx`]) {
+  // TypeScript's own convention: a `.ts` source is imported under its EMITTED name
+  // (`./x.js`). Without this the resolver reports a phantom dangle — and a phantom in
+  // the ring's baseline silently grants one free REAL dangle, because the ring compares
+  // against a count rather than a set.
+  const jsAsTs = base.replace(/\.(js|jsx|mjs|cjs)$/, '')
+  const candidates =
+    jsAsTs === base
+      ? [base, `${base}.ts`, `${base}.tsx`, `${base}/index.ts`, `${base}/index.tsx`]
+      : [`${jsAsTs}.ts`, `${jsAsTs}.tsx`, base, `${jsAsTs}/index.ts`, `${jsAsTs}/index.tsx`]
+  for (const c of candidates) {
     if (existsSync(join(cwd, c)) && statSync(join(cwd, c)).isFile()) return c
   }
   return undefined
