@@ -8,7 +8,7 @@
  */
 import { computeDiamond, verifyDiamond } from './index'
 import { diamondFileViolations, diamondFilesGuardian } from './files'
-import { ALLOWED_DIAMOND_FILES } from './membership'
+import { ALLOWED_DIAMOND_FILES, FIXTURE_DIR, TRINITY_FORM } from './membership'
 import { diamondUuid } from './projection'
 
 if (process.argv.includes('--audit-files')) {
@@ -22,6 +22,9 @@ if (process.argv.includes('--audit-files')) {
     [...ALLOWED_DIAMOND_FILES.vocabulary].sort().join(' · '),
   )
   console.log('  allowed code:', [...ALLOWED_DIAMOND_FILES.code].sort().join(' · '))
+  // A `fixtures/` dir is lawful WITHOUT a SKILL.md — captured evidence is not a child
+  // atom, and it is content-checked (flat, non-empty, data only), never name-only.
+  console.log(`  allowed dirs: child atoms (${TRINITY_FORM}) · ${FIXTURE_DIR}/ (flat, data only)`)
   console.log(
     '  by reason:',
     [...byReason.entries()]

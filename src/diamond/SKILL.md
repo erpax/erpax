@@ -91,6 +91,28 @@ Every diamond — repository, folder, file, method, README, CSS facet, Payload *
 
 **Law (additive) — [[law]]: all diamonds share ONE DiamondModel — folders, files, methods, READMEs, and Payload collections in every [[dimension]] project the same shape; one verifier, one uuid pipeline; forging any diamond requires forging the whole model.**
 
+## `fixtures/` — captured evidence has a home
+
+A directory is lawful when it is a **child atom** (it has a `SKILL.md`) — and there was
+no third option, so a `fixtures/` dir of captured API responses read as **stray matter**.
+Giving it a `SKILL.md` made it worse: it became an atom whose data files were then all
+stray *files*, one violation traded for N.
+
+Evidence is the one thing a contract gate cannot inline without destroying what makes it
+evidence — a byte-real capture you can diff and re-take ([[outward]]/gate). So a second
+lawful directory shape exists, and it is **content-checked, never name-only**:
+
+| requirement | why |
+| --- | --- |
+| named `fixtures` | one name, so the allowance cannot spread by accident |
+| non-empty | an empty dir is clutter, not evidence |
+| no subdirectories | flat, so it cannot grow a tree nobody audits |
+| data extensions only | `json · jsonl · ndjson · xml · wsdl · csv · tsv · txt · yaml` |
+
+It fails **closed**: a single `.ts` inside makes it a stray dir again, so code cannot
+hide in a fixtures pocket. `isCapturedFixturesDir` is proven on hermetic temp trees for
+each refusal — code, nesting, emptiness, and a different directory name.
+
 **Law — [[law]]: empty or incomplete folders are NOT sealed — stray matter without a nested child atom fails diamond membership; partial trinity fails folder matter; README `sealed` and guardians fail closed.** Tightened stray-ts and multi-segment axes: [[rules]] · `pnpm rules:check`.
 
 **Operational memory IS the diamond lattice** ([[memory/architecture]]): walking `deriveDiamond` / `verifyDiamond` on the sealed tree IS what the system remembers — not chat, not Memories rows, not agent context. `operationalMemoryFacet(atomPath)` is the live-tree memory vertex; `architectureMemoryDigest` stable ⇒ memory stable ([[akashic]] · [[thought]]).

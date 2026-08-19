@@ -29,6 +29,23 @@ const MODULE_SCRIPT = /\.mts$/i
 /** Framework asset extensions — seed images · admin styles (aligned with quaternary ASSET_EXT). */
 const ASSET_EXT = /\.(scss|webp|mdc)$/i
 
+/**
+ * A `fixtures/` directory holds CAPTURED EVIDENCE — real responses frozen so a gate
+ * can check erpax's parsers without reaching the network ([[outward]]/gate).
+ *
+ * The corpus had no home for it: a data directory is not a child atom (no SKILL.md),
+ * so it read as `stray-dir`, and giving it a SKILL.md only traded one stray-dir for N
+ * stray-files, because captured data is not a permitted atom file. Evidence is the
+ * one thing a contract gate cannot inline without destroying what makes it evidence —
+ * a byte-real capture you can diff and re-take.
+ *
+ * So the allowance is NARROW and content-checked, never name-only: the directory must
+ * be named `fixtures`, be non-empty, contain NO subdirectories, and hold ONLY data.
+ * A `fixtures/` with a single `.ts` in it is still a stray dir — code cannot hide here.
+ */
+export const FIXTURE_DIR = 'fixtures' as const
+const FIXTURE_DATA_EXT = /\.(json|jsonl|ndjson|xml|wsdl|csv|tsv|txt|ya?ml)$/i
+
 export const COLOCATED = [
   'index.tsx',
   'index.test.ts',
@@ -83,6 +100,22 @@ export function isChildAtomDir(parentDir: string, name: string): boolean {
   return existsSync(join(parentDir, name, TRINITY_FORM))
 }
 
+/**
+ * A captured-evidence directory: named `fixtures`, non-empty, flat, data only.
+ *
+ * Fails CLOSED — an empty dir, a nested dir, or any non-data file makes it a stray
+ * dir again, so this cannot become a pocket where code or clutter accumulates.
+ */
+export function isCapturedFixturesDir(parentDir: string, name: string): boolean {
+  if (name !== FIXTURE_DIR) return false
+  const dir = join(parentDir, name)
+  const entries = basenames(dir)
+  if (entries.length === 0) return false
+  return entries.every(
+    (e) => !isDir(join(dir, e)) && (e === '.gitkeep' || FIXTURE_DATA_EXT.test(e)),
+  )
+}
+
 const isAllowedFile = (name: string, kind: DiamondAtomKind): boolean => {
   if (FORBIDDEN_NAME.test(name)) return false
   if (name.startsWith('.') && name !== '.gitkeep') return false
@@ -115,7 +148,8 @@ export function diamondMembershipViolations(
   for (const e of entries) {
     const p = join(dir, e)
     if (isDir(p)) {
-      if (!isChildAtomDir(dir, e)) violations.push({ atomPath, file: e + '/', reason: 'stray-dir' })
+      const lawful = isChildAtomDir(dir, e) || isCapturedFixturesDir(dir, e)
+      if (!lawful) violations.push({ atomPath, file: e + '/', reason: 'stray-dir' })
       continue
     }
     if (FORBIDDEN_NAME.test(e)) {
