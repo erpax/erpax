@@ -1,5 +1,5 @@
 import { startProgressHeartbeat } from '@/cli/progress-heartbeat'
-import { accountingGapsInWaves, fixAccountingGapsOnP0, formatAccountingGapsReport } from './index'
+import { accountingGapsInWaves, fixGapsOnP0, formatAccountingGapsReport } from './index'
 
 const args = process.argv.slice(2)
 const fix = args.includes('--fix')
@@ -11,7 +11,7 @@ const stop = startProgressHeartbeat('accounting:gaps')
 const verdict = accountingGapsInWaves(process.cwd(), { maxWaves, topPerWave: 20 })
 console.log(formatAccountingGapsReport(verdict))
 if (fix) {
-  const r = fixAccountingGapsOnP0(process.cwd(), { dryRun })
+  const r = fixGapsOnP0(process.cwd(), { dryRun })
   console.log(`\nfixes: ${r.fixesApplied} · ${r.paths.join(', ') || '—'}`)
 }
 stop()

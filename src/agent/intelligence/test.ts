@@ -19,7 +19,7 @@ import {
   type Synapses,
 } from './index'
 import { linearGaps } from '@/quantum'
-import { resetSecurityMonitorForTests } from '@/agent/security'
+import { resetMonitorForTests } from '@/agent/security'
 import { __resetWaveRunnerForTests } from '@/apply/wave'
 
 vi.mock('@/payload/approval', () => ({
@@ -30,7 +30,7 @@ describe('agent/intelligence', () => {
   beforeEach(() => {
     __resetWaveRunnerForTests()
     __resetIntelligenceReceiptHeadForTests()
-    resetSecurityMonitorForTests()
+    resetMonitorForTests()
   })
 
   it('quantumIntelligenceOf is a pure number', () => {

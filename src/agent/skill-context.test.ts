@@ -6,10 +6,10 @@ import { join } from 'node:path'
 import { cheapAgentDispatch, fullSkillIndexContextBytes } from '@/agent/cheap-dispatch'
 import {
   MAX_AGENT_SKILL_CONTEXT_BYTES,
-  agentSkillContextForDispatch,
+  skillContextForDispatch,
   atomPathFromInput,
   bondedNeighborPaths,
-  clearAgentSkillContextCache,
+  clearSkillContextCache,
   domainHubFor,
   loadSealedSkill,
   realiseSkillsForPath,
@@ -18,7 +18,7 @@ import {
   skillBearingAtomPath,
   skillsForImport,
 } from '@/agent/skill-context'
-import { strictApplyDispatch, createPathSession, agentLawWithPathSession, AGENT_RUNTIME_GRANT } from '@/agent'
+import { strictApplyDispatch, createPathSession, lawWithPathSession, AGENT_RUNTIME_GRANT } from '@/agent'
 import type { AgentContext } from '@/agent/types'
 import { clearRulesCache } from '@/rules'
 import { sealSkillExcerpt } from '@/skill/router/lazy-load'
@@ -30,7 +30,7 @@ const SKILL_INDEX_PATH = join(cwd, 'src/skill/router/skills.index.ts')
 const TS = '2026-06-08T12:00:00.000Z'
 
 afterEach(() => {
-  clearAgentSkillContextCache()
+  clearSkillContextCache()
   clearRulesCache()
 })
 
@@ -162,8 +162,8 @@ describe('agent skill load — realiseSkillsForPath', () => {
 })
 
 describe('agent skill load — strict-apply dispatch hook', () => {
-  it('agentSkillContextForDispatch builds context from visited paths', () => {
-    const ctx = agentSkillContextForDispatch([DERIVE_NUMBER, 'path'], { cwd })
+  it('skillContextForDispatch builds context from visited paths', () => {
+    const ctx = skillContextForDispatch([DERIVE_NUMBER, 'path'], { cwd })
     expect(ctx).not.toBeNull()
     expect(ctx!.focalAtomPath).toBe('invoices/hooks')
     expect(ctx!.atomCount).toBeGreaterThanOrEqual(1)
@@ -171,7 +171,7 @@ describe('agent skill load — strict-apply dispatch hook', () => {
 
   it('strictApplyDispatch attaches skillContext on law for effect gate reuse', () => {
     const session = createPathSession()
-    const law = agentLawWithPathSession(session, { depth: 0, actor: 'agent-a', grant: AGENT_RUNTIME_GRANT })
+    const law = lawWithPathSession(session, { depth: 0, actor: 'agent-a', grant: AGENT_RUNTIME_GRANT })
     const ctx: AgentContext = {
       payload: {} as AgentContext['payload'],
       tenantId: 'tenant-a',

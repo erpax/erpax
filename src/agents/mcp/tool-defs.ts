@@ -544,13 +544,13 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       },
       async handler({ event }, req) {
         const { agentRuntime } = await import('@/agent/bootstrap')
-        const { createInProcessMcpClient } = await import('@/agents/mcp/in-process-client')
+        const { createInProcessClient } = await import('@/agents/mcp/in-process-client')
         const e = event as { id: string; tenantId: string; payload: Record<string, unknown> }
         const ctx = createAgentContext({
           runtime: agentRuntime,
           payload: req.payload,
           tenantId: e.tenantId,
-          mcp: createInProcessMcpClient(buildErpaxMcpTools(registry), req),
+          mcp: createInProcessClient(buildErpaxMcpTools(registry), req),
         })
         const effects = await agentRuntime.dispatchEvent(ctx, {
           id: e.id, tenantId: e.tenantId, payload: e.payload,
@@ -2368,7 +2368,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
         if (!env?.AUDIT_CHAIN_DO) {
           return text('AUDIT_CHAIN_DO binding not available in this runtime')
         }
-        const { erpaxMediator } = await import('@/cloudflare/plugin/helper')
+        const { erpaxMediator } = await import('@/cloudflare/plugin/mediator')
         const m = erpaxMediator(req)
         const leaf = await m.auditChainAppendLinked(payload as Record<string, unknown>)
         return json(leaf)
@@ -2383,7 +2383,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
         if (!env?.AUDIT_CHAIN_DO) {
           return text('AUDIT_CHAIN_DO binding not available in this runtime')
         }
-        const { erpaxMediator } = await import('@/cloudflare/plugin/helper')
+        const { erpaxMediator } = await import('@/cloudflare/plugin/mediator')
         const m = erpaxMediator(req)
         const result = await m.auditChainVerify({
           fromSeq: fromSeq as number | undefined,

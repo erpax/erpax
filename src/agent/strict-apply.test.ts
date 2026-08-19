@@ -7,7 +7,7 @@ import {
   AGENT_RUNTIME_GRANT,
   defaultAgentLawState,
   createPathSession,
-  agentLawWithPathSession,
+  lawWithPathSession,
   dispatchPathsFrom,
   strictApplyDispatch,
   strictApplyEffect,
@@ -92,7 +92,7 @@ describe('strict-apply — dispatch gate', () => {
   it('records pathsVisited + pathLedger on compliant dispatch', () => {
     const session = createPathSession()
     const ctx = mockCtx({
-      law: agentLawWithPathSession(session, { depth: 0, actor: 'agent-a', grant: AGENT_RUNTIME_GRANT }),
+      law: lawWithPathSession(session, { depth: 0, actor: 'agent-a', grant: AGENT_RUNTIME_GRANT }),
     })
     const v = strictApplyDispatch(
       ctx,

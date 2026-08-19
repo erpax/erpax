@@ -3,7 +3,7 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { describe, it, expect } from 'vitest'
 import { scanEducateGaps, selfEducateCycle } from './educate'
-import { resetSecurityMonitorForTests } from '@/agent/security'
+import { resetMonitorForTests } from '@/agent/security'
 
 // HERMETIC: both ran against the REAL corpus, so scanEducateGaps → waveAccountingGapViolations
 // (the 166s accounting-wave scan, tracked as its own debt) made 'scan' slow + over threshold and
@@ -34,7 +34,7 @@ describe('educate', () => {
   // real corpus (task #17) — it PASSES (aborted:false), just slow. Bounded at 10 min so it is not
   // killed; the real speedup is threading cwd through the wave scheduler (#17, coupled to #5).
   it('cycle does not abort', () => {
-    resetSecurityMonitorForTests()
+    resetMonitorForTests()
     const cwd = fixtureCwd()
     try {
       expect(selfEducateCycle({ batch: 5, dryRun: true, cwd }).wave.aborted).toBe(false)

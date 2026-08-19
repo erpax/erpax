@@ -133,7 +133,7 @@ export function trainingAfterChange(): CollectionAfterChangeHook {
       })
       if (!ev) return doc
       const { agentRuntime } = await import('@/agent/bootstrap')
-      const { createInProcessMcpClient } = await import('@/agents/mcp/in-process-client')
+      const { createInProcessClient } = await import('@/agents/mcp/in-process-client')
       const law = defaultAgentLawState({
         depth: 1,
         actor: 'training-broadcast',
@@ -152,7 +152,7 @@ export function trainingAfterChange(): CollectionAfterChangeHook {
         payload: req.payload,
         tenantId,
         law,
-        mcp: createInProcessMcpClient(tools, req, { law }),
+        mcp: createInProcessClient(tools, req, { law }),
         emit: chatEmit(req.payload as unknown as ChatClient, 1), // the priced plan broadcasts as a society row
       })
       const effects = await agentRuntime.dispatchEvent(ctx, ev)

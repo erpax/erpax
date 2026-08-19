@@ -62,7 +62,7 @@ export interface P0AccountingStatus {
   readonly leaves: readonly { readonly path: string; readonly sealed: boolean; readonly netEb: number; readonly gapEb: number }[]
 }
 
-export interface AccountingGapsInWavesVerdict {
+export interface GapsInWavesVerdict {
   readonly waves: readonly WaveAccountingGapBatch[]
   readonly corpusGapEb: number
   readonly corpusSealEb: number
@@ -73,7 +73,7 @@ export interface AccountingGapsInWavesVerdict {
   readonly topGapsByWave: Readonly<Record<number, readonly string[]>>
 }
 
-export interface AccountingGapsInWavesOpts {
+export interface GapsInWavesOpts {
   readonly maxWaves?: number
   readonly topPerWave?: number
 }
@@ -123,7 +123,7 @@ const impuritiesForModel = (
 const topGapPaths = (impurities: readonly WaveAccountingImpurity[], limit: number): string[] =>
   [...new Set(impurities.filter((i) => i.eb && i.eb > 0).sort((a, b) => (b.eb ?? 0) - (a.eb ?? 0)).map((i) => i.path))].slice(0, limit)
 
-export function accountingGapsInWaves(cwd = process.cwd(), opts: AccountingGapsInWavesOpts = {}): AccountingGapsInWavesVerdict {
+export function accountingGapsInWaves(cwd = process.cwd(), opts: GapsInWavesOpts = {}): GapsInWavesVerdict {
   const maxWaves = opts.maxWaves ?? Number.POSITIVE_INFINITY
   const topPerWave = opts.topPerWave ?? 20
   const { graph, ctx } = buildReadmeCorpusFrozenInputs(cwd)
@@ -180,7 +180,7 @@ export function waveAccountingGapViolations(cwd = process.cwd()) {
   return { count: verdict.gapPathCount, netEb: verdict.corpusNetEb, verdict }
 }
 
-export function fixAccountingGapsOnP0(cwd = process.cwd(), opts: { readonly dryRun?: boolean } = {}): FixAccountingGapsResult {
+export function fixGapsOnP0(cwd = process.cwd(), opts: { readonly dryRun?: boolean } = {}): FixAccountingGapsResult {
   const targets = [P0_ACCOUNTING_ROOT, ...P0_ACCOUNTING_LEAVES]
   const paths: string[] = []
   let fixes = 0
@@ -192,7 +192,7 @@ export function fixAccountingGapsOnP0(cwd = process.cwd(), opts: { readonly dryR
   return { fixesApplied: fixes, paths: [...new Set(paths)] }
 }
 
-export function formatAccountingGapsReport(v: AccountingGapsInWavesVerdict): string {
+export function formatAccountingGapsReport(v: GapsInWavesVerdict): string {
   const L = [`accounting gaps — horo wave scan`, ``, `corpus gap ${v.corpusGapEb} eb · seal ${v.corpusSealEb} eb · net ${v.corpusNetEb} eb`, `delta potential ${v.corpusNetEbDeltaPotential} eb · gap paths ${v.gapPathCount}`, ``, `P0 parent sealed ${v.p0Accounting.parentSealed ? '✓' : '✗'} · net ${v.p0Accounting.parentNetEb} eb`]
   for (const leaf of v.p0Accounting.leaves) L.push(`  ${leaf.sealed ? '✓' : '✗'} ${leaf.path} · net ${leaf.netEb} eb`)
   L.push('', 'wave batches:')

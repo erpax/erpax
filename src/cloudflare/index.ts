@@ -264,7 +264,7 @@ function nsKey(tenantId: string, key: string): string {
  *
  * This helper DENIES (throws) when no authorizer is installed, so the
  * only way to touch a binding is to have explicitly wired an authorizer
- * (e.g. plugin/helper's defaultAuthorize, or a tighter per-plugin one).
+ * (e.g. plugin/mediator's defaultAuthorize, or a tighter per-plugin one).
  * On uncertainty we deny — never allow.
  */
 async function enforceAuthorized(
@@ -280,7 +280,7 @@ async function enforceAuthorized(
     throw new Error(
       `[cloudflare-mediator] DENIED ${String(op.binding)}/${op.action} — ` +
         `no authorizer installed on the mediator context. A MediatorAuthorizer ` +
-        `MUST be supplied (see plugin/helper.erpaxMediator); binding access ` +
+        `MUST be supplied (see plugin/mediator.erpaxMediator); binding access ` +
         `cannot proceed un-gated (fail-closed).`,
     )
   }

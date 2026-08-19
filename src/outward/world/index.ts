@@ -2,32 +2,10 @@ import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import type { ContractCheck } from '@/outward/eu/contract'
 /**
- * outward/world — the public, parser-backed rails beyond the EU four and the BG two.
+ * outward/world — the public, parser-backed rails beyond the EU four and the BG two,
+ * each contracted against a capture taken with the exact request its client makes.
  *
- * A contract here pins WHAT THE CLIENT PARSES, read from the live client code —
- * never a guess at what the authority "should" send. That discipline is the whole
- * point: a fixture asserting a shape nothing reads is coverage theatre
- * ([[outward]]/coverage), so only rails with a real `fetch` + parse site are here.
- *
- *   lookupBrreg                 navn · organisasjonsform.kode · registrertIMvaregisteret
- *   fetchOfacSdnXml             raw text — so the shape check is the SDN root + header
- *   lookupSecEdgar              the whole submissions record — cik · filings.recent
- *   fetchFrankfurterRates       base · date · rates
- *   fetchExchangeRateApiRates   result · base_code · rates
- *   lookupOpenFoodFactsProduct  status + product{code,product_name,brands,…}
- *
- * TWO TRAPS THIS PINS, both of which make a live endpoint read as no data:
- *
- *   1. **Open Food Facts answers HTTP 200 with `status: 0`** for an unknown
- *      barcode. `r.ok` is TRUE on a miss, so a client that trusts the status code
- *      returns an empty product as success.
- *   2. **ExchangeRate-API answers HTTP 200 with `result: "error"`.** Same shape of
- *      defect — the transport succeeded and the answer is a failure.
- *
- * Both are the family this layer exists for: a 200 carrying the wrong body reads as
- * absence, not breakage — the same defect that hid two dead BG rails ([[outward]]/bg).
- *
- * @see ../eu/contract.ts (the pattern) · ../bg (the BG pair) · ../coverage (the ledger)
+ * The trap it exists for — a 200 carrying a failure in the body — is in ./SKILL.md.
  */
 
 const ok = (rail: string, detail: string): ContractCheck => ({ rail, holds: true, detail })

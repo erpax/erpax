@@ -22,7 +22,7 @@ export function fieldAccessFromComputed(op: CrudOp = 'read'): FieldAccess {
  * Payload `admin.condition` — hide when actor lacks update capability.
  * Use on fiscal / admin-only fields alongside field-level access.
  */
-export function adminFieldVisibleForUpdate(
+export function fieldVisibleForUpdate(
   data: Record<string, unknown>,
   siblingData: Record<string, unknown>,
   ctx: { user?: unknown },
@@ -34,7 +34,7 @@ export function adminFieldVisibleForUpdate(
 }
 
 /** Hide sensitive fields from read-only actors (merged cross < write). */
-export function adminFieldVisibleForWrite(
+export function fieldVisibleForWrite(
   data: Record<string, unknown>,
   siblingData: Record<string, unknown>,
   ctx: { user?: unknown },

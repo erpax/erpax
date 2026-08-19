@@ -101,7 +101,7 @@ An agent reaching a peer is how the society covers its own gaps: where `emit` br
 
 - **Dispatch** (`runtime.dispatchEvent` / `dispatchTo`) — `assertStrictDispatch` runs before any agent `onEvent`: `cascadeDepthVerdict` caps society cascade hops; `trustBoundaryVerdict` pre-flights untrusted payloads (prompt-injection); cross-tenant events are rejected; every gate emits a uuid-chained [[receipt]].
 - **Effects** (`processEffect`) — `assertStrictEffect` runs before substrate I/O: Payload `create`/`update` use `overrideAccess:false` (the actor's [[access]] scope IS the boundary — never widen); `emit`/`call` reject cross-tenant targets; `call` respects depth cap.
-- **MCP** (`createInProcessMcpClient`) — every `callTool` passes `groundToolCall` + `trustBoundaryVerdict` via `assertStrictMcpCall`; ungrounded capability or injection ⇒ `StrictApplyViolation`, handler never runs.
+- **MCP** (`createInProcessClient`) — every `callTool` passes `groundToolCall` + `trustBoundaryVerdict` via `assertStrictMcpCall`; ungrounded capability or injection ⇒ `StrictApplyViolation`, handler never runs.
 - **Society breath** (`chat-broadcast`) — threads `AgentLawState` (depth, grant, untrusted payload) into `createAgentContext` and the in-process MCP client; `cascadeDepthVerdict` stops runaway loops before dispatch.
 
 Matter-twin: `src/agent/index.ts` (the strict-apply gates — `StrictApplyViolation` · `strictApplyDispatch`) wired through `effect-processor.ts`, `runtime.ts`, `agents/mcp/in-process-client.ts`, `sync/chat-broadcast.ts`. Remedies from `src/ai/industry/` (`groundToolCall`, `trustBoundaryVerdict`, `cascadeDepthVerdict`). Proven by `strict-apply.test.ts` + `agents/mcp/test.ts`.
@@ -118,13 +118,13 @@ Matter-twin: `src/agent/index.ts` (the strict-apply gates — `StrictApplyViolat
 
 **Skill realisation — any path touched, all skills realised.** `realiseSkillsForPath(filePath | atomPath)` lazy-loads the ordered bundle: ancestors · self (skill-bearing atom) · bonded neighbors (`parseQuantumSkill` bonds ∪ matrix `neighborsOf`/`backlinksOf`) · domain hub (`adminGroupOf`) · 1-hop `skillsForImport(@/foo)` from source files. Each entry carries sealed SKILL excerpt · compact quantum block · eb balance; one cached `compactRulesSnapshot()` (TTL `rulesOf`) caps the payload at **50KB**. `strictApplyDispatch` attaches `skillContext` on every compliant dispatch when paths are declared; effect gates reuse that snapshot (no second `rulesOf` scan). IDE agents should call `realiseSkillsForPath` on first file open. **CS prompts:** touch `computer/<concept>` (algorithm · complexity · graph · queue · stack · finite · memory) — imports resolve to `@/computer/*` executables (`classifyComplexity`, `adjacencyFromAtom`, `FifoQueue`, `binarySearch`, `SEAL_CHECK_FSM`, `AddressSpace`), not glossary prose.
 
-**Unified load API.** `loadSealedSkill(atomPath)` · `resolveSkillLoadOpts()` · `compactRulesSnapshot()` · `realiseSkillsForPath()` · `cheapAgentDispatch()` · `agentSkillContextForDispatch()` — one lazy-load face (`src/skill/router/lazy-load.ts`), one excerpt cap (4096 chars), one horo wave atom cap (`agentCostPolicy.maxContextAtoms`).
+**Unified load API.** `loadSealedSkill(atomPath)` · `resolveSkillLoadOpts()` · `compactRulesSnapshot()` · `realiseSkillsForPath()` · `cheapAgentDispatch()` · `skillContextForDispatch()` — one lazy-load face (`src/skill/router/lazy-load.ts`), one excerpt cap (4096 chars), one horo wave atom cap (`agentCostPolicy.maxContextAtoms`).
 
 **skills.index — Worker-only debt.** The 77MB `skills.index.ts` bundle remains imported only by Cloudflare Workers / build-time catalogue generation (`atom-catalogue-lazy` defers until first MCP lookup). Agent dispatch, strict-apply, and IDE skill realisation never import it — runtime loads sealed SKILL.md excerpts from disk via `loadSealedSkill`. Removing the Worker import path is tracked debt ([[convention/baked]] · `skill/router/build`).
 
 Matter-twin: `src/agent/cost-policy.ts` · `src/agent/cheap-dispatch.ts` · `src/agent/skill-context.ts` · `src/skill/router/lazy-load.ts` · `src/agents/mcp/atom-catalogue-lazy.ts`. Composes: [[cost]] · [[wave]] · [[path]] · [[accounting]] · [[seal]] · [[rules]] · [[navigation]] · [[mcp]] · [[chat]] · [[convention/baked]].
 
-**Law — [[law]]: any agent opening any part of the code must immediately realise all needed skills — ancestors, bonds, quantum env, entanglement, rules — via `realiseSkillsForPath` / `agentSkillContextForDispatch`; lazy disk load only, never `skills.index`.**
+**Law — [[law]]: any agent opening any part of the code must immediately realise all needed skills — ancestors, bonds, quantum env, entanglement, rules — via `realiseSkillsForPath` / `skillContextForDispatch`; lazy disk load only, never `skills.index`.**
 
 ## Standards
 

@@ -27,15 +27,15 @@ export interface McpClient {
   callTool(name: string, args: Record<string, unknown>): Promise<string>
 }
 
-export interface InProcessMcpClientOptions {
+export interface InProcessClientOptions {
   /** Law state for strict-apply gates on every tool call. */
   readonly law?: AgentLawState
 }
 
-export function createInProcessMcpClient(
+export function createInProcessClient(
   tools: ReadonlyArray<ErpaxMcpTool>,
   req: PayloadRequest,
-  options?: InProcessMcpClientOptions,
+  options?: InProcessClientOptions,
 ): McpClient {
   const byName = new Map(tools.map((t) => [t.name, t]))
   const law = options?.law ?? defaultAgentLawState()

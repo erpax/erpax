@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest'
-import { createInProcessMcpClient } from './in-process-client'
+import { createInProcessClient } from './in-process-client'
 import { CANONICAL_AREAS } from './standardization'
 import { checkMcpDryCleanliness } from './dry-clean'
 import { AGENT_RUNTIME_GRANT, StrictApplyViolation, defaultAgentLawState } from '@/agent'
@@ -20,7 +20,7 @@ function fakeTool(name: string): ErpaxMcpTool {
 
 describe('agents/mcp — trinity proof (colocated modules)', () => {
   it('in-process client lists tools without handler leak', () => {
-    const client = createInProcessMcpClient([], {} as never)
+    const client = createInProcessClient([], {} as never)
     expect(client.listTools()).toEqual([])
   })
 
@@ -45,7 +45,7 @@ describe('agents/mcp — strict-apply (law at runtime)', () => {
   it('compliant tool call proceeds after sandbox + receipt gate', async () => {
     const tool = fakeTool('erpax.events.list')
     const law = defaultAgentLawState({ grant: AGENT_RUNTIME_GRANT, actor: 'agent-test' })
-    const client = createInProcessMcpClient([tool], fakeReq, { law })
+    const client = createInProcessClient([tool], fakeReq, { law })
     const out = await client.callTool('erpax.events.list', { tenantId: 't1' })
     expect(out).toBe('ok')
     expect(tool.handler).toHaveBeenCalled()
@@ -57,7 +57,7 @@ describe('agents/mcp — strict-apply (law at runtime)', () => {
       grant: { ...AGENT_RUNTIME_GRANT, capabilities: ['read'] },
       actor: 'agent-test',
     })
-    const client = createInProcessMcpClient([tool], fakeReq, { law })
+    const client = createInProcessClient([tool], fakeReq, { law })
     await expect(client.callTool('erpax.events.list', {})).rejects.toThrow(StrictApplyViolation)
     expect(tool.handler).not.toHaveBeenCalled()
   })
@@ -65,7 +65,7 @@ describe('agents/mcp — strict-apply (law at runtime)', () => {
   it('prompt-injection in tool args is blocked with receipt', async () => {
     const tool = fakeTool('erpax.events.list')
     const law = defaultAgentLawState({ grant: AGENT_RUNTIME_GRANT, actor: 'agent-test' })
-    const client = createInProcessMcpClient([tool], fakeReq, { law })
+    const client = createInProcessClient([tool], fakeReq, { law })
     await expect(
       client.callTool('erpax.events.list', {
         tenantId: 't1',

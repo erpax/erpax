@@ -18,8 +18,8 @@ export {
 } from './corpus-rollup'
 export {
   fieldAccessFromComputed,
-  adminFieldVisibleForUpdate,
-  adminFieldVisibleForWrite,
+  fieldVisibleForUpdate,
+  fieldVisibleForWrite,
 } from './visibility'
 export {
   ViolationMonitorProvider,

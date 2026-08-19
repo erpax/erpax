@@ -9,7 +9,7 @@ import { publish, subscribe, violationsWatchPath } from '@/agent/communication/r
 import { interruptTokenFor, isDirectionStale, type InterruptToken } from '@/quantum/entanglement/direction'
 import { quantumModeDefault } from '@/quantum/bindings'
 import { withQuantumContext } from '@/quantum/context'
-import { fixAccountingGapsOnP0, waveAccountingGapViolations } from '@/accounting/gaps'
+import { fixGapsOnP0, waveAccountingGapViolations } from '@/accounting/gaps'
 import { computedBaseline } from '@/law/folder/baseline'
 import type { RatchetAxis } from '@/law/folder/baseline-types'
 import { userWordUnprovenViolations } from '@/law/folder'
@@ -108,7 +108,7 @@ export function proposeWaveSealActions(allocated: readonly WaveAxisDebt[], cwd =
 const execAction = (a: WaveSealAction, cwd: string, dryRun: boolean): readonly string[] => {
   if (dryRun) return a.paths
   if (a.kind === 'materialize-faces' && a.paths.length) { materializeComputedFacesForPathsStable(a.paths, cwd); return a.paths }
-  if (a.kind === 'accounting-fix') return fixAccountingGapsOnP0(cwd, { dryRun: false }).paths
+  if (a.kind === 'accounting-fix') return fixGapsOnP0(cwd, { dryRun: false }).paths
   return []
 }
 

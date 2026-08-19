@@ -693,9 +693,7 @@ src/cloudflare/index.ts:162: * @standard ISO/IEC 25010:2023 §5.2 reliability �
 src/cloudflare/index.ts:66: * @standard Cloudflare Workers Runtime API
 src/cloudflare/index.ts:67: * @standard W3C Service Worker §4 (Workers compat)
 src/cloudflare/mediator-uuid-crypto.test.ts:20: * @standard RFC 8032 EdDSA, NIST SP 800-38D AES-GCM, NIST SP 800-57 §5.6
-src/cloudflare/plugin/access.ts:41: * @standard ISO 27001 A.5.15 access-control
-src/cloudflare/plugin/access.ts:42: * @standard ISO 27002 §5.4 segregation-of-duties (TypeScript-enforced)
-src/cloudflare/plugin/helper.ts:27: * @standard ISO 27001 A.5.23 cloud-service-tenant-isolation
+src/cloudflare/plugin/mediator.ts:27: * @standard ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/cloudflare/seal.ts:10: * @standard NIST SP-800-38D AES-GCM
 src/cloudflare/seal.ts:9: * @standard NIST SP-800-108 key-derivation-function
 src/cloudflare/surface/index.ts:33: * @standard ISO/IEC 25010:2023 §5.3 — compatibility: co-existence with the platform's contract
@@ -5666,8 +5664,7 @@ src/cloning/boot.ts:21: * @audit ISO 19011:2018 §6.4.6 (clone provenance preser
 src/cloning/index.ts:10: * @audit ISO 19011:2018 §6.4.6 (clone provenance + Conservation Law 24)
 src/cloning/verify.ts:11: * @audit ISO 19011:2018 §6.4.6
 src/cloudflare/mediator-uuid-crypto.test.ts:21: * @audit Conservation Law 8 + Law 47 (uuid-anchored crypto)
-src/cloudflare/plugin/access.ts:43: * @audit Conservation Law 38 mcp-tool-standardization
-src/cloudflare/plugin/helper.ts:28: * @audit Conservation Law 38 mcp-tool-standardization
+src/cloudflare/plugin/mediator.ts:28: * @audit Conservation Law 38 mcp-tool-standardization
 src/cmspage/access/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/cmspage/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/coherence/index.ts:20: * @audit computed from the input trace, never hand-asserted

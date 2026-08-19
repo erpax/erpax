@@ -45,7 +45,7 @@ export function isAllowlistedSource(source: string): boolean {
   return PARSE_SOURCE_ALLOWLIST.some((p) => source.startsWith(`${p}:`))
 }
 
-export function resetSecurityMonitorForTests(): void {
+export function resetMonitorForTests(): void {
   events.length = 0
   head = null
 }

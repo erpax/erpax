@@ -1,15 +1,15 @@
 import { describe, expect, it } from 'vitest'
 
-import { adminFieldVisibleForWrite } from './index'
+import { fieldVisibleForWrite } from './index'
 
 describe('admin/ui/visibility — computed access conditions', () => {
   it('internal context sees write fields', () => {
-    expect(adminFieldVisibleForWrite({}, {}, {})).toBe(true)
+    expect(fieldVisibleForWrite({}, {}, {})).toBe(true)
   })
 
   it('read-only role hides write-gated fields', () => {
     expect(
-      adminFieldVisibleForWrite(
+      fieldVisibleForWrite(
         {},
         {},
         { user: { tenant: 't1', roles: ['viewer'] } },
@@ -19,7 +19,7 @@ describe('admin/ui/visibility — computed access conditions', () => {
 
   it('accountant role sees write-gated fields', () => {
     expect(
-      adminFieldVisibleForWrite(
+      fieldVisibleForWrite(
         {},
         {},
         { user: { tenant: 't1', roles: ['accountant'] } },

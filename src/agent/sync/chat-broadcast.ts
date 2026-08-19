@@ -81,7 +81,7 @@ export function chatBroadcastAfterChange(): CollectionAfterChangeHook {
     if (!depthVerdict.allowed) return doc // runaway-loop guard (ai/industry remedy)
     try {
       const { agentRuntime } = await import('@/agent/bootstrap')
-      const { createInProcessMcpClient } = await import('@/agents/mcp/in-process-client')
+      const { createInProcessClient } = await import('@/agents/mcp/in-process-client')
       const client = req.payload as unknown as ChatClient
       const law = defaultAgentLawState({
         depth,
@@ -104,7 +104,7 @@ export function chatBroadcastAfterChange(): CollectionAfterChangeHook {
         payload: req.payload,
         tenantId: ev.tenantId,
         law,
-        mcp: createInProcessMcpClient(tools, req, { law }),
+        mcp: createInProcessClient(tools, req, { law }),
         emit: chatEmit(client, depth + 1), // a reaction becomes the next row (one hop deeper)
       })
       const effects = await broadcastChatRow(agentRuntime, ctx, row)

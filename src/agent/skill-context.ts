@@ -90,11 +90,11 @@ interface SkillContextCacheEntry {
 
 const skillContextCache = new Map<string, SkillContextCacheEntry>()
 
-export function clearAgentSkillContextCache(): void {
+export function clearSkillContextCache(): void {
   skillContextCache.clear()
 }
 
-export function getAgentSkillContextCache(key: string): AgentSkillContext | null {
+export function getSkillContextCache(key: string): AgentSkillContext | null {
   const entry = skillContextCache.get(key)
   if (!entry || Date.now() >= entry.expiresAt) {
     if (entry) skillContextCache.delete(key)
@@ -466,7 +466,7 @@ export function realiseSkillsForPath(input: string, opts: RealiseSkillsOpts = {}
   const ttlMs = opts.cacheTtlMs ?? AGENT_SKILL_CONTEXT_CACHE_TTL_MS
 
   if (!opts.force) {
-    const cached = getAgentSkillContextCache(cacheKey)
+    const cached = getSkillContextCache(cacheKey)
     if (cached) return cached
   }
 
@@ -515,7 +515,7 @@ export function realiseSkillsForPath(input: string, opts: RealiseSkillsOpts = {}
 }
 
 /** Build dispatch skill context for strict-apply path visits (primary path first). */
-export function agentSkillContextForDispatch(
+export function skillContextForDispatch(
   paths: readonly string[],
   opts: RealiseSkillsOpts = {},
 ): AgentSkillContext | null {

@@ -1,51 +1,10 @@
 /**
- * Plugin typed access surfaces — Slice EEEEEEEEE (2026-05-11).
- *
- * Per user "all plugins have access specific types". Instead of every
- * plugin importing the full `erpaxMediator(req)` (16 methods, every
- * CF binding), each plugin declares a `PluginAccess<K>` type listing
- * the bindings it needs. The returned object exposes ONLY those
- * methods — narrower TypeScript surface, principle of least
- * privilege enforced at compile time (NOT just runtime RBAC).
- *
- * Pattern:
- *
- *   // Plugin declares its capability set:
- *   export type MarketingPluginAccess = PluginAccess<'emailSend' | 'browserRender' | 'analyticsWrite'>
- *
- *   // Plugin's mediator factory:
- *   import { pluginMediator } from './plugin-access'
- *
- *   export function marketingMediator(req: PayloadRequest): MarketingPluginAccess {
- *     return pluginMediator(req, ['emailSend', 'browserRender', 'analyticsWrite'])
- *   }
- *
- *   // Plugin code now CANNOT call m.aiRun() / m.r2Put() / etc. — TS errors.
- *
- * The runtime side enforces the same: methods outside the declared
- * set throw at construction. Auditors (and the static invariant
- * `checkPluginsDeclareAccess`) verify each plugin's actual usage
- * matches its declared type set.
- *
- * Canonical per-plugin maps (Slice EEEEEEEEE seed):
- *
- *   accounting → 'queueSendNamed' | 'auditChainAppendLinked' | 'r2Put' | 'r2Get'
- *   marketing  → 'emailSend' | 'browserRender' | 'analyticsWrite' | 'aiRun'
- *   auth       → 'kvGet' | 'kvPut' | 'auditChainAppendLinked'
- *   ai         → 'aiRun' | 'vectorizeQuery' | 'vectorizeInsert' | 'analyticsWrite'
- *   mcp        → ALL (the MCP plugin is the catalog itself — narrowest is hard)
- *
- * Plugin authors extend the per-plugin type at the top of their plugin
- * directory; the static invariant flags drift.
- *
- * @standard ISO 27001 A.5.15 access-control
- * @standard ISO 27002 §5.4 segregation-of-duties (TypeScript-enforced)
- * @audit Conservation Law 38 mcp-tool-standardization
- * @see ./helper.ts erpaxMediator (full surface)
- * @see ./index.ts makeMediator
+ * Typed per-plugin access surfaces — a plugin declares `PluginAccess<K>` and receives
+ * ONLY the bindings it names, instead of the full mediator. Why that matters, and what
+ * a plugin may and may not reach, is in ./SKILL.md.
  */
 import type { PayloadRequest } from 'payload'
-import { erpaxMediator } from './helper'
+import { erpaxMediator } from './mediator'
 import type { ErpaxCfEnv } from '@/cloudflare'
 
 /** The complete mediator surface — derived from `makeMediator`'s return shape. */

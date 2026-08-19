@@ -6,7 +6,7 @@
  * bindings". Instead of each plugin re-deriving the (env, tenantId,
  * payload, user) context, every plugin imports this helper:
  *
- *   import { erpaxMediator } from './helper'
+ *   import { erpaxMediator } from './mediator'
  *
  *   async function someHandler(req) {
  *     const m = erpaxMediator(req)

@@ -2,31 +2,13 @@ import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import type { ContractCheck } from '@/outward/eu/contract'
 /**
- * outward/bg — the two Bulgarian rails erpax codes against, contracted.
+ * outward/bg — the two Bulgarian rails, contracted.
  *
- * Both are declared `clientImplemented: true` in country/api, so both are
- * promises that erpax parses their answers ([[outward]]/coverage).
- *
- * WHAT THE CLIENT PARSES (the contract, read from the live client code):
  *   БНБ  index.htm?download=xml → <ROW><CODE><REVERSERATE><RATE><CURR_DATE>
- *   TR   /CR/api/Deeds/{eik}/Applications → [{ incomingLinkedDeeds: [{ uic,
- *        companyName, companyFullName, status, legalForm }] }]
+ *   TR   /CR/api/Deeds/{eik}/Applications → incomingLinkedDeeds[]
  *
- * BOTH ADDRESSES WERE DEAD AND ARE NOW FIXED (2026-08-19). The previous
- * `StERFCDownload.aspx` served HTML and `/api/public/companies/{eik}` served
- * 404, so every lookup through them failed. The fixtures here are now REAL
- * CAPTURES from the working endpoints, not reconstructions.
- *
- * Two live traps this contract exists to pin, because each one turns a
- * working endpoint into a silent "no data":
- *
- *   1. БНБ's WAF answers an HTML error page UNDER A 200 to unrecognised
- *      clients — so the XML check must reject non-XML explicitly.
- *   2. The БНБ feed's FIRST ROW is a header whose values are column labels
- *      (`<CODE>Code</CODE>`), so a first-match parse reads `"Code"` as a
- *      currency.
- *
- * @see ../eu/contract.ts (the pattern) · ../coverage (the ledger) · ./test.ts
+ * Both addresses were dead until 2026-08-19; the fixtures are real captures. The three
+ * traps that make a WORKING endpoint read as no data are in ./SKILL.md.
  */
 
 const ok = (rail: string, detail: string): ContractCheck => ({ rail, holds: true, detail })

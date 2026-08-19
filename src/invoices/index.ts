@@ -13,7 +13,7 @@ import { autoPopulateTenant } from '@/auto/populate/tenant'
 import { auditTrailAfterChange } from '@/audit/trail/after/change'
 import { VAT_CATEGORY_OPTIONS } from '@/un/cefact/5305'
 import { unpField, fiscalDeviceNumberField, operatorCodeField, fiscalQrField, saleStatusOptions } from '@/field'
-import { adminFieldVisibleForWrite } from '@/admin/ui'
+import { fieldVisibleForWrite } from '@/admin/ui'
 import { isIso4217 } from '@/iso/4217'
 
 /**
@@ -724,7 +724,7 @@ export const Invoices: CollectionConfig = {
       label: 'Fiscal (Наредба Н-18 / СУПТО)',
       admin: {
         description: 'СУПТО фискализация — касов бон / УНП, издаден при плащане в обхват.',
-        condition: adminFieldVisibleForWrite,
+        condition: fieldVisibleForWrite,
       },
       fields: [
         unpField(), // УНП — уникален номер на продажба

@@ -25,7 +25,7 @@ import {
 import { crossViolationFromStrictApply } from '@/monitor/violations'
 import { waveSessionVerdict } from '@/wave'
 import {
-  agentSkillContextForDispatch,
+  skillContextForDispatch,
   compactRulesSnapshot,
   type AgentSkillContext,
 } from './skill-context'
@@ -78,7 +78,7 @@ export function createPathSession(): PathSession {
   return { pathsVisited: new Set(), pathLedger: [] }
 }
 
-export function agentLawWithPathSession(
+export function lawWithPathSession(
   session: PathSession,
   overrides: Partial<AgentLawState> = {},
 ): AgentLawState {
@@ -193,7 +193,7 @@ export function strictApplyDispatch(
   }
   const visitedPaths = dispatchPathsFrom(ev, opts)
   recordPathVisits(law, visitedPaths, ev.emittedAt || new Date().toISOString(), ev.id)
-  const skillContext = agentSkillContextForDispatch(visitedPaths) ?? undefined
+  const skillContext = skillContextForDispatch(visitedPaths) ?? undefined
   attachSkillContext(law, skillContext)
   return { allowed: true, receipt: boundary.receipt, skillContext }
 }
@@ -441,13 +441,13 @@ export {
   AGENT_SKILL_CONTEXT_CACHE_TTL_MS,
   realiseSkillsForPath,
   skillsForImport,
-  agentSkillContextForDispatch,
+  skillContextForDispatch,
   atomPathFromInput,
   skillBearingAtomPath,
   domainHubFor,
   bondedNeighborPaths,
-  clearAgentSkillContextCache,
-  getAgentSkillContextCache,
+  clearSkillContextCache,
+  getSkillContextCache,
   skillContextCacheKey,
   loadSealedSkill,
   resolveSkillLoadOpts,
@@ -483,7 +483,7 @@ export { createAgentRuntime } from './runtime'
 export { conveneAgentSociety, disbandAgentSociety } from './coil'
 
 export type { McpClient, McpToolDescriptor } from '@/agents/mcp'
-export { createInProcessMcpClient } from '@/agents/mcp'
+export { createInProcessClient } from '@/agents/mcp'
 export type { ErpaxMcpTool } from '@/agents/mcp'
 export { buildErpaxMcpTools } from '@/agents/mcp'
 export type { ErpaxMcpResource } from '@/agents/mcp'

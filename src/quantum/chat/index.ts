@@ -400,7 +400,7 @@ export const openChatMessage = (
 
 // ── all quantum in chat — by REACH, not by copy ──────────────────────────────
 // Every atom already exposes tools through the MCP surface (erpaxMcpTools →
-// createInProcessMcpClient). The chat REACHES all of them through one bridge that
+// createInProcessClient). The chat REACHES all of them through one bridge that
 // invokes a tool and folds its result into the thread (ask→improve). `invoke` is
 // the in-process client's callTool, supplied by the runtime (dependency injection),
 // so the chat never IMPORTS the collection graph — no re-entangling, no duplication.
@@ -513,7 +513,7 @@ export async function chatInvokeByStandard(
 /**
  * Invoke any quantum tool from the chat and fold its result into the thread. The
  * result becomes a normal message, so tool outputs join the ask→improve loop like
- * any other. `invoke` is the runtime-supplied MCP callTool (createInProcessMcpClient),
+ * any other. `invoke` is the runtime-supplied MCP callTool (createInProcessClient),
  * keeping this a pure, cycle-free bridge.
  */
 export async function chatInvoke(

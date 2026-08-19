@@ -3626,7 +3626,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/cloudflare/plugin/helper.ts",
+        "path": "src/cloudflare/plugin/mediator.ts",
         "section": ""
       },
       {
@@ -3732,7 +3732,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/cloudflare/plugin/helper.ts",
+        "path": "src/cloudflare/plugin/mediator.ts",
         "section": ""
       },
       {

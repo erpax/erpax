@@ -148,7 +148,7 @@ export function buildEventsTools(registry: { all: () => ReadonlyArray<{ id: stri
         })) as Record<string, unknown>
         if (!doc) return text(`audit-event ${String(eventDocId)} not found`)
         const { agentRuntime } = await import('@/agent/bootstrap')
-        const { createInProcessMcpClient } = await import('@/agents/mcp/in-process-client')
+        const { createInProcessClient } = await import('@/agents/mcp/in-process-client')
         const { buildErpaxMcpTools } = await import('../tool-defs')
         const { conveneAgentSociety } = await import('@/agent/coil')
         const tenantId = typeof doc.tenant === 'string' ? doc.tenant : 'unknown'
@@ -156,7 +156,7 @@ export function buildEventsTools(registry: { all: () => ReadonlyArray<{ id: stri
           runtime: agentRuntime,
           payload: req.payload,
           tenantId,
-          mcp: createInProcessMcpClient(buildErpaxMcpTools(registry as never), req),
+          mcp: createInProcessClient(buildErpaxMcpTools(registry as never), req),
         })
         // Wire every agent to the coil: convene the shared runtime to this
         // tenant's room (idempotent + guarded — no-op without a WebSocket runtime).

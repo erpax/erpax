@@ -16,7 +16,7 @@
  * @standard ISO/IEC 25010:2023 §5.5 testability
  */
 import { describe, it, expect, vi } from 'vitest'
-import { createInProcessMcpClient } from './in-process-client'
+import { createInProcessClient } from './in-process-client'
 import type { ErpaxMcpTool } from './tool-defs'
 import type { PayloadRequest } from 'payload'
 
@@ -34,11 +34,11 @@ function fakeTool(name: string, description: string, output: string): ErpaxMcpTo
 
 const fakeReq = {} as unknown as PayloadRequest
 
-describe('createInProcessMcpClient', () => {
+describe('createInProcessClient', () => {
   it('listTools projects every tool to a public descriptor', () => {
     const t1 = fakeTool('erpax.consistency.scan', 'desc-1', 'ok')
     const t2 = fakeTool('erpax.events.list',      'desc-2', 'ok')
-    const client = createInProcessMcpClient([t1, t2], fakeReq)
+    const client = createInProcessClient([t1, t2], fakeReq)
     const out = client.listTools()
     expect(out).toEqual([
       { name: 'erpax.consistency.scan', description: 'desc-1' },
@@ -66,7 +66,7 @@ describe('createInProcessMcpClient', () => {
         ],
       })),
     }
-    const client = createInProcessMcpClient([t1, t2], fakeReq)
+    const client = createInProcessClient([t1, t2], fakeReq)
     const out = await client.callTool('erpax.events.list', { foo: 'bar' })
     expect(out).toBe('A\nB\nC')
     expect(t2.handler).toHaveBeenCalledWith({ foo: 'bar' }, fakeReq)
@@ -74,7 +74,7 @@ describe('createInProcessMcpClient', () => {
   })
 
   it('callTool with an unknown name throws a clear error', async () => {
-    const client = createInProcessMcpClient([fakeTool('erpax.x.y', 'd', '')], fakeReq)
+    const client = createInProcessClient([fakeTool('erpax.x.y', 'd', '')], fakeReq)
     await expect(client.callTool('erpax.nope', {})).rejects.toThrow(
       /unknown MCP tool: erpax\.nope/,
     )

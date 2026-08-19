@@ -10,7 +10,7 @@ import { exactRound } from '@/algebra'
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname } from 'node:path'
 import { join } from 'node:path'
-import { realiseSkillsForPath, clearAgentSkillContextCache } from '@/agent/skill-context'
+import { realiseSkillsForPath, clearSkillContextCache } from '@/agent/skill-context'
 import { alcapsBaselineViolations } from '@/seal/baseline-debt'
 import { clearRulesCache, rulesOf } from '@/rules'
 import { topConcentrations } from '@/rules/concentration'
@@ -143,7 +143,7 @@ export function measureRulesOfMs(cwd: string = process.cwd()): number {
 
 /** Measure agent skill-context bytes for canonical probe path. */
 export function measureSkillContextBytes(cwd: string = process.cwd()): number {
-  clearAgentSkillContextCache()
+  clearSkillContextCache()
   clearRulesCache()
   const ctx = realiseSkillsForPath(EFFICIENCY_SKILL_PROBE, { cwd, force: true })
   return ctx.contextBytes

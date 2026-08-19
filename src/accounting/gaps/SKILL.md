@@ -1,6 +1,6 @@
 ---
 name: gaps
-description: "Use when scanning the corpus's own accounting for entropy gaps — waveAccountingGapViolations walks the README model in OOM-safe horo waves; fixAccountingGapsOnP0 applies P0 fixes. Corpus SELF-accounting dev tooling, nested off the mountable @erpax/accounting face."
+description: "Use when scanning the corpus's own accounting for entropy gaps — waveAccountingGapViolations walks the README model in OOM-safe horo waves; fixGapsOnP0 applies P0 fixes. Corpus SELF-accounting dev tooling, nested off the mountable @erpax/accounting face."
 atomPath: accounting/gaps
 ---
 
@@ -8,7 +8,7 @@ atomPath: accounting/gaps
 
 Corpus **self**-accounting, not ERP accounting: `waveAccountingGapViolations` walks the
 README corpus model in OOM-safe horo waves and reports the entropy gaps (unbalanced
-atoms) as violations; `fixAccountingGapsOnP0` applies the P0 fixes + regen;
+atoms) as violations; `fixGapsOnP0` applies the P0 fixes + regen;
 `accountingGapsInWaves`/`formatAccountingGapsReport` are the scan + report faces.
 CLI lane: `erpax accounting gaps` (`./cli.ts`).
 

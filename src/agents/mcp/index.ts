@@ -13,7 +13,7 @@
  * @see ./in-process-client -- ./tool-defs
  */
 
-export { createInProcessMcpClient } from './in-process-client'
+export { createInProcessClient } from './in-process-client'
 export type { McpClient, McpToolDescriptor } from './in-process-client'
 export type { ErpaxMcpTool } from './tool-defs'
 export { buildErpaxMcpTools } from './tool-defs'

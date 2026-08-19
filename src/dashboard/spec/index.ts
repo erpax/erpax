@@ -254,8 +254,8 @@ export async function resolveDashboard(
   let client: McpClient | null = null
   const mcp = async (): Promise<McpClient> => {
     if (!client) {
-      const { createInProcessMcpClient } = await import('@/agents/mcp')
-      client = createInProcessMcpClient(mcpTools, ctx.req)
+      const { createInProcessClient } = await import('@/agents/mcp')
+      client = createInProcessClient(mcpTools, ctx.req)
     }
     return client
   }
