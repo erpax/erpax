@@ -7860,7 +7860,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§5.8"
       },
       {
-        "path": "src/currency/fallback/currency-uuid.ts",
+        "path": "src/currency/fallback/uuid.ts",
         "section": ""
       },
       {
@@ -9644,7 +9644,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/proof/dry-proof.ts",
+        "path": "src/proof/dry.ts",
         "section": ""
       },
       {
