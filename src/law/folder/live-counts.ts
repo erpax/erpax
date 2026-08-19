@@ -20,7 +20,7 @@ import { indexCrossViolationCount } from './index-cross'
 import { linearGapCount, linearLogicCount } from '@/quantum'
 import { handMaintainedViolations } from '@/readme'
 import type { RatchetAxis } from './baseline-types'
-import { RATCHET_AXES } from './ratchet-math'
+import { RATCHET_AXES } from './ratchet/math'
 
 export const PARALLEL_SCAN_AXES = RATCHET_AXES.filter(
   (axis): axis is RatchetAxis =>

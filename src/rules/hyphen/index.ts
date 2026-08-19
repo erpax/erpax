@@ -153,6 +153,24 @@ export function resolveSpec(fromFile: string, spec: string, cwd: string = proces
   return undefined
 }
 
+/**
+ * Re-express `target` as a specifier of the same FORM the author used.
+ *
+ * Deriving this from the destination PATH is the only correct way. An earlier version
+ * spliced the surviving word into the old specifier — which is right only when the
+ * file stays in its directory. A cluster rename moves it INTO a folder, so
+ * `@/law/folder/ratchet-compute` had to become `@/law/folder/ratchet/compute` and the
+ * splice produced `@/law/folder/compute`, a path nobody has. The ring reddened the
+ * whole batch and rolled back to the byte, which is how this was caught.
+ */
+export function specFor(fromFile: string, target: string, alias: boolean): string {
+  const bare = target.replace(/\.tsx?$/, '').replace(/\/index$/, '')
+  if (alias) return `@/${bare.replace(/^src\//, '')}`
+  let rel = posix.relative(dirname(fromFile), bare)
+  if (!rel.startsWith('.')) rel = `./${rel}`
+  return rel
+}
+
 const stemOf = (path: string): string =>
   path.slice(path.lastIndexOf('/') + 1).replace(/\.test\.tsx?$/, '').replace(/\.tsx?$/, '')
 
@@ -184,10 +202,11 @@ export function renameManifest(
       if (!target) continue
       const r = byFrom.get(target)
       if (!r) continue
-      const oldStem = stemOf(target)
-      const i = spec.lastIndexOf(oldStem)
-      if (i < 0) continue
-      const nextSpec = spec.slice(0, i) + r.word + spec.slice(i + oldStem.length)
+      // The importer may ALSO be moving in this batch — express the new specifier
+      // from where the importer lands, not from where it sits now.
+      const importerAfter = byFrom.get(file)?.to ?? file
+      const nextSpec = specFor(importerAfter, r.to, spec.startsWith('@/'))
+      if (nextSpec === spec) continue
 
       // The bare specifier is NOT a safe `find`: the same module is commonly both
       // imported and re-exported, so `'./x'` matches twice and the scalpel refuses
@@ -202,7 +221,7 @@ export function renameManifest(
           file,
           find: line,
           replace: line.split(`'${spec}'`).join(`'${nextSpec}'`),
-          reason: `${target} → ${r.to} (the path already says "${oldStem.split(/[-.]/).filter((w) => w !== r.word).join('/')}")`,
+          reason: `${target} → ${r.to} — specifier re-expressed from the destination path`,
         })
       }
     }
@@ -243,8 +262,7 @@ export function depthManifest(
       const target = resolveSpec(r.from, spec, cwd)
       if (!target) continue
       // Re-express the SAME target from the new directory.
-      let next = posix.relative(toDir, target).replace(/\.tsx?$/, '').replace(/\/index$/, '')
-      if (!next.startsWith('.')) next = `./${next}`
+      const next = specFor(r.to, target, false)
       if (next === spec) continue
       for (const line of lines) {
         if (!line.includes(`'${spec}'`) || emitted.has(line)) continue

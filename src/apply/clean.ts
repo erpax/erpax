@@ -31,13 +31,13 @@ import { quantumModeDefault } from '@/quantum/bindings'
 import { withQuantumContext } from '@/quantum/context'
 
 export { cleanDirectionPath } from '@/agent/communication/realtime'
-import { bypassMathViolations } from '@/law/folder/ratchet-compute'
+import { bypassMathViolations } from '@/law/folder/ratchet/compute'
 import { computedBaseline } from '@/law/folder/baseline'
 import { concentrationViolations } from '@/rules/concentration'
 import { wordMatterViolations } from '@/rules/word-matter'
 import { strayTsViolations } from '@/rules/tightened-scans'
 import { liveViolationCounts } from '@/law/folder/live-counts'
-import { RATCHET_AXES } from '@/law/folder/ratchet-math'
+import { RATCHET_AXES } from '@/law/folder/ratchet/math'
 import {
   efficiencyRatchet,
   efficiencySnapshot,

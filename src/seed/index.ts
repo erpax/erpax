@@ -14,8 +14,8 @@
 import type { Payload, PayloadRequest, File } from 'payload'
 
 import { codedFromRegistry, ERR } from '@/error'
-import { contactForm as contactFormData } from './contact-form'
-import { contact as contactPageData } from './contact-page'
+import { contactForm as contactFormData } from './contact/form'
+import { contact as contactPageData } from './contact/page'
 import { home } from './home'
 export { homeStatic } from './home-static'
 export { SEED_COLLECTION_SLUGS, SEED_GLOBAL_SLUGS } from './slugs'
@@ -23,9 +23,9 @@ import { SEED_COLLECTION_SLUGS, SEED_GLOBAL_SLUGS } from './slugs'
 import { image1 } from './image-1'
 import { image2 } from './image-2'
 import { imageHero1 } from './image-hero-1'
-import { post1 } from './post-1'
-import { post2 } from './post-2'
-import { post3 } from './post-3'
+import { post1 } from './post/1'
+import { post2 } from './post/2'
+import { post3 } from './post/3'
 
 const collections = [...SEED_COLLECTION_SLUGS]
 const globals = [...SEED_GLOBAL_SLUGS]

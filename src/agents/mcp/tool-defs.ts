@@ -2368,7 +2368,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
         if (!env?.AUDIT_CHAIN_DO) {
           return text('AUDIT_CHAIN_DO binding not available in this runtime')
         }
-        const { erpaxMediator } = await import('@/cloudflare/plugin-helper')
+        const { erpaxMediator } = await import('@/cloudflare/plugin/helper')
         const m = erpaxMediator(req)
         const leaf = await m.auditChainAppendLinked(payload as Record<string, unknown>)
         return json(leaf)
@@ -2383,7 +2383,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
         if (!env?.AUDIT_CHAIN_DO) {
           return text('AUDIT_CHAIN_DO binding not available in this runtime')
         }
-        const { erpaxMediator } = await import('@/cloudflare/plugin-helper')
+        const { erpaxMediator } = await import('@/cloudflare/plugin/helper')
         const m = erpaxMediator(req)
         const result = await m.auditChainVerify({
           fromSeq: fromSeq as number | undefined,

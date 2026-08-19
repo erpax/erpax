@@ -3,7 +3,7 @@
  */
 import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { bypassMathViolations } from '@/law/folder/ratchet-compute'
+import { bypassMathViolations } from '@/law/folder/ratchet/compute'
 import { atomPathHasLedgerHook } from '@/path'
 import {
   buildReadmeCorpusFrozenInputs,

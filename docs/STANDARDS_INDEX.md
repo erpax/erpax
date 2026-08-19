@@ -159,11 +159,11 @@ src/agents/registered/consistency.agent.ts:22: * @standard ISO/IEC 25010:2023 §
 src/agents/registered/data.agent.ts:5: * @standard ISO 20022 + ECB FX-rates
 src/agents/registered/design.agent.ts:6: * @standard WCAG 2.2 + WAI-ARIA 1.2 + ISO 9241-110 dialogue-principles
 src/agents/registered/engineering.agent.ts:5: * @standard SOX §404 + ISO 19011:2018 §6.4.6 + COSO 2013
-src/agents/registered/hr.agent.ts:5: * @standard ISO IAS-19 employee-benefits + IAS-26 retirement-benefits
-src/agents/registered/hr.training.ts:19: * @standard SFIA 8 responsibility-levels (the level → M-value depth)
-src/agents/registered/legal.agent.ts:5: * @standard GDPR Art-7 consent + Art-15 access + Art-17 erasure
-src/agents/registered/legal.agent.ts:6: * @standard eIDAS qualified-trust-services
-src/agents/registered/legal.conflict.ts:19: * @standard ISO 19011 — the verdict is a deterministic function of the party graph
+src/agents/registered/hr/agent.ts:5: * @standard ISO IAS-19 employee-benefits + IAS-26 retirement-benefits
+src/agents/registered/hr/training.ts:19: * @standard SFIA 8 responsibility-levels (the level → M-value depth)
+src/agents/registered/legal/agent.ts:5: * @standard GDPR Art-7 consent + Art-15 access + Art-17 erasure
+src/agents/registered/legal/agent.ts:6: * @standard eIDAS qualified-trust-services
+src/agents/registered/legal/conflict.ts:19: * @standard ISO 19011 — the verdict is a deterministic function of the party graph
 src/agents/registered/marketing.agent.ts:5: * @standard GDPR consent-tracking @feature marketing
 src/agents/registered/ops.agent.ts:5: * @standard ISO 41001 facility-management + ISO 55000 asset-management
 src/agents/registered/product.agent.ts:5: * @standard PMI PMBOK 7th-edition project-management
@@ -693,9 +693,9 @@ src/cloudflare/index.ts:162: * @standard ISO/IEC 25010:2023 §5.2 reliability �
 src/cloudflare/index.ts:66: * @standard Cloudflare Workers Runtime API
 src/cloudflare/index.ts:67: * @standard W3C Service Worker §4 (Workers compat)
 src/cloudflare/mediator-uuid-crypto.test.ts:20: * @standard RFC 8032 EdDSA, NIST SP 800-38D AES-GCM, NIST SP 800-57 §5.6
-src/cloudflare/plugin-access.ts:41: * @standard ISO 27001 A.5.15 access-control
-src/cloudflare/plugin-access.ts:42: * @standard ISO 27002 §5.4 segregation-of-duties (TypeScript-enforced)
-src/cloudflare/plugin-helper.ts:27: * @standard ISO 27001 A.5.23 cloud-service-tenant-isolation
+src/cloudflare/plugin/access.ts:41: * @standard ISO 27001 A.5.15 access-control
+src/cloudflare/plugin/access.ts:42: * @standard ISO 27002 §5.4 segregation-of-duties (TypeScript-enforced)
+src/cloudflare/plugin/helper.ts:27: * @standard ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/cloudflare/seal.ts:10: * @standard NIST SP-800-38D AES-GCM
 src/cloudflare/seal.ts:9: * @standard NIST SP-800-108 key-derivation-function
 src/cloudflare/surface/index.ts:33: * @standard ISO/IEC 25010:2023 §5.3 — compatibility: co-existence with the platform's contract
@@ -1201,15 +1201,15 @@ src/evidence/attestations/index.ts:15: * @standard ETSI-EN-319-142-1 v1.1.1 pade
 src/evidence/attestations/index.ts:16: * @standard ISO-19011:2018 audit-trail visual-evidence
 src/exchange/index.ts:6: * @standard ISO/IEC 27001 A.5.14 information-transfer (controlled cross-boundary exchange)
 src/exchange/index.ts:7: * @standard GDPR Art.5(1)(c) data-minimisation (release only the granted fields)
-src/export/standards-import.ts:17: * @standard ISO-20022 camt.052 · camt.053 · camt.054 · pain.002 · pacs.004
-src/export/standards-import.ts:18: * @standard Peppol-BIS-3.0 billing
-src/export/standards.service.ts:124: * @standard RFC-6838 mime-type
-src/export/standards.service.ts:20: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
-src/export/standards.service.ts:21: * @standard Peppol-BIS-3.0 billing
-src/export/standards.service.ts:22: * @standard UBL-2.1 universal-business-language
-src/export/standards.service.ts:23: * @standard UN-EDIFACT D.96A
-src/export/standards.service.ts:24: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
-src/export/standards.service.ts:25: * @standard ISO-9735:2002 edifact-syntax-rules
+src/export/standards/import.ts:17: * @standard ISO-20022 camt.052 · camt.053 · camt.054 · pain.002 · pacs.004
+src/export/standards/import.ts:18: * @standard Peppol-BIS-3.0 billing
+src/export/standards/service.ts:124: * @standard RFC-6838 mime-type
+src/export/standards/service.ts:20: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
+src/export/standards/service.ts:21: * @standard Peppol-BIS-3.0 billing
+src/export/standards/service.ts:22: * @standard UBL-2.1 universal-business-language
+src/export/standards/service.ts:23: * @standard UN-EDIFACT D.96A
+src/export/standards/service.ts:24: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
+src/export/standards/service.ts:25: * @standard ISO-9735:2002 edifact-syntax-rules
 src/export/types.ts:13: * @standard ISO-8601-1:2019 date-time (asOfDate)
 src/export/types.ts:14: * @standard ISO/IEC-29500:2016 office-open-xml (xlsx)
 src/export/types.ts:15: * @standard ISO-19005-2:2011 pdf-a-2 (archival — see @/standards/iso-19005)
@@ -2369,11 +2369,11 @@ src/rfc/6585/rate-limit.ts:12: * @standard NIST SP-800-63B §5.2.2 rate-limiting
 src/rfc/9110/cache.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/rfc/9110/cache.ts:8: * @standard W3C HTTP-Cache stale-while-revalidate
 src/rfc/9110/cache.ts:9: * @standard BCP-47 language-tag locale-keyed-cache
-src/rfc/9110/get-document.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
-src/rfc/9110/get-document.test.ts:6: * @standard BCP-47 language-tag locale-keyed-cache
-src/rfc/9110/get-globals.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
-src/rfc/9110/get-globals.ts:6: * @standard BCP-47 language-tag locale-keyed-cache
-src/rfc/9110/get-redirects.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
+src/rfc/9110/get/document.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
+src/rfc/9110/get/document.test.ts:6: * @standard BCP-47 language-tag locale-keyed-cache
+src/rfc/9110/get/globals.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
+src/rfc/9110/get/globals.ts:6: * @standard BCP-47 language-tag locale-keyed-cache
+src/rfc/9110/get/redirects.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/rich/text/index.tsx:4: * @standard W3C HTML5 Living Standard rich-text-output
 src/rich/text/index.tsx:5: * @standard CommonMark 0.31 markdown-fallback
 src/rich/text/index.tsx:6: * @standard schema.org HTMLRichText
@@ -3389,7 +3389,7 @@ src/error/index.ts:9: * @rfc 9110 §15 status-codes
 src/error/registry.ts:8: * @rfc 7807 problem-details-for-http-apis
 src/error/registry.ts:9: * @rfc 9110 §15 status-codes
 src/event/emitter/service/index.ts:9: * @rfc 9562 uuid event-id
-src/export/standards.service.ts:26: * @rfc 6838 mime-type
+src/export/standards/service.ts:26: * @rfc 6838 mime-type
 src/fetch/remote/file/index.ts:10: * @rfc 9110 §15.4 redirection-3xx
 src/fetch/remote/file/index.ts:11: * @rfc 3986 uri filename-extraction
 src/fetch/remote/file/index.ts:12: * @rfc 6838 media-type-registration
@@ -3487,17 +3487,17 @@ src/rfc/9110/cache.test.ts:6: * @rfc 9111 http-caching
 src/rfc/9110/cache.ts:5: * @rfc 9110 §13 caching
 src/rfc/9110/cache.ts:6: * @rfc 9111 http-caching
 src/rfc/9110/cache.ts:7: * @rfc 7234 http-1.1-caching obsolete-but-cited
-src/rfc/9110/get-document.test.ts:5: * @rfc 9110 §13 caching
-src/rfc/9110/get-document.ts:4: * @rfc 9110 §13 caching
-src/rfc/9110/get-document.ts:5: * @rfc 9111 http-caching
-src/rfc/9110/get-globals.test.ts:5: * @rfc 9110 §13 caching
-src/rfc/9110/get-globals.ts:4: * @rfc 9110 §13 caching
-src/rfc/9110/get-globals.ts:5: * @rfc 9111 http-caching
-src/rfc/9110/get-redirects.test.ts:5: * @rfc 9110 §15.4 redirection-3xx
-src/rfc/9110/get-redirects.test.ts:6: * @rfc 9110 §15.4.2 301-moved-permanently
-src/rfc/9110/get-redirects.test.ts:7: * @rfc 9110 §15.4.3 302-found
-src/rfc/9110/get-redirects.ts:4: * @rfc 9110 §13 caching
-src/rfc/9110/get-redirects.ts:5: * @rfc 9110 §15.4 redirection-3xx
+src/rfc/9110/get/document.test.ts:5: * @rfc 9110 §13 caching
+src/rfc/9110/get/document.ts:4: * @rfc 9110 §13 caching
+src/rfc/9110/get/document.ts:5: * @rfc 9111 http-caching
+src/rfc/9110/get/globals.test.ts:5: * @rfc 9110 §13 caching
+src/rfc/9110/get/globals.ts:4: * @rfc 9110 §13 caching
+src/rfc/9110/get/globals.ts:5: * @rfc 9111 http-caching
+src/rfc/9110/get/redirects.test.ts:5: * @rfc 9110 §15.4 redirection-3xx
+src/rfc/9110/get/redirects.test.ts:6: * @rfc 9110 §15.4.2 301-moved-permanently
+src/rfc/9110/get/redirects.test.ts:7: * @rfc 9110 §15.4.3 302-found
+src/rfc/9110/get/redirects.ts:4: * @rfc 9110 §13 caching
+src/rfc/9110/get/redirects.ts:5: * @rfc 9110 §15.4 redirection-3xx
 src/rfc/9110/index.ts:4: * @rfc 9110 §13 caching
 src/sale/audit-file.ts:20: * @rfc 8259 json
 src/security/header/headers.test.ts:5: * @rfc 6797 hsts http-strict-transport-security
@@ -5516,8 +5516,8 @@ src/agents/mcp/tool/kv.ts:20: * @audit Conservation Law 8 + 47 + 57 (universal u
 src/agents/mcp/tool/security.ts:19: * @audit Conservation Law 58 uuid-self-protection
 src/agents/mcp/tool/share.ts:15: * @audit Conservation Law 59 uuid-based-sharing-with-rbac
 src/agents/registered/consistency.agent.ts:23: * @audit ISO 19011:2018 §6.4.6 (proposal + resolution audit-trailed)
-src/agents/registered/hr.training.ts:20: * @audit ISO 19011 — the plan, the rate and the debt are deterministic functions of the gap
-src/agents/registered/legal.conflict.ts:20: * @audit ABA Model Rule 1.7 conflict-of-interest (named; the form is the merge law)
+src/agents/registered/hr/training.ts:20: * @audit ISO 19011 — the plan, the rate and the debt are deterministic functions of the gap
+src/agents/registered/legal/conflict.ts:20: * @audit ABA Model Rule 1.7 conflict-of-interest (named; the form is the merge law)
 src/ai/anomaly-detection.ts:12: * @audit ISO-19011:2018 §6.4.6 audit-evidence
 src/ai/audit-summarisation.ts:11: * @audit ISO 19011:2018 §6.4.6 audit-evidence
 src/ai/cloudflare.ts:52: * @audit ISO-19011:2018 §6.4.6 audit-evidence ai-inference-trail
@@ -5666,8 +5666,8 @@ src/cloning/boot.ts:21: * @audit ISO 19011:2018 §6.4.6 (clone provenance preser
 src/cloning/index.ts:10: * @audit ISO 19011:2018 §6.4.6 (clone provenance + Conservation Law 24)
 src/cloning/verify.ts:11: * @audit ISO 19011:2018 §6.4.6
 src/cloudflare/mediator-uuid-crypto.test.ts:21: * @audit Conservation Law 8 + Law 47 (uuid-anchored crypto)
-src/cloudflare/plugin-access.ts:43: * @audit Conservation Law 38 mcp-tool-standardization
-src/cloudflare/plugin-helper.ts:28: * @audit Conservation Law 38 mcp-tool-standardization
+src/cloudflare/plugin/access.ts:43: * @audit Conservation Law 38 mcp-tool-standardization
+src/cloudflare/plugin/helper.ts:28: * @audit Conservation Law 38 mcp-tool-standardization
 src/cmspage/access/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/cmspage/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/coherence/index.ts:20: * @audit computed from the input trace, never hand-asserted
@@ -5817,7 +5817,7 @@ src/evidence/attestation/index.ts:25: * @audit ISO-19011:2018 audit-trail visual
 src/evidence/attestations/index.ts:17: * @audit ISO-19011:2018 audit-trail attestation-evidence
 src/expand/index.ts:23: * @audit composed from @/entropy + @/uuid/matrix (the live-matrix readings); re-proves nothing
 src/expense/index.ts:14: * @audit entropy read live from @/entropy + @/tamper/import; billed as a balanced double-entry, never asserted
-src/export/standards.service.ts:27: * @audit ISO-19011:2018 audit-trail
+src/export/standards/service.ts:27: * @audit ISO-19011:2018 audit-trail
 src/factory/auto-populate-tenant.ts:9: * @audit ISO-19011:2018 audit-trail before-validate-hooks
 src/factory/collection.test.ts:14: * @audit ISO 19011:2018 §6.4.6 — regression-guard for shared-field collision
 src/factory/collection.ts:282: * @audit ISO 19011:2018 §6.4.6 — backwards-compat path for collections

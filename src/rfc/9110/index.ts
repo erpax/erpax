@@ -13,6 +13,6 @@ export {
   getCachedPayloadLocalizedDocument,
 } from './cache'
 
-export { getCachedDocument } from './get-document'
-export { getCachedGlobal } from './get-globals'
-export { getCachedRedirects } from './get-redirects'
+export { getCachedDocument } from './get/document'
+export { getCachedGlobal } from './get/globals'
+export { getCachedRedirects } from './get/redirects'

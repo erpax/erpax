@@ -10,8 +10,8 @@ import {
   priorAxesForEmit,
   ratchetContentUuid,
   recomputeRatchetSnapshot,
-} from './ratchet-compute'
-import { RATCHET_AXES } from './ratchet-math'
+} from './ratchet/compute'
+import { RATCHET_AXES } from './ratchet/math'
 import type { RatchetAxis } from './baseline-types'
 
 const OUT = join(process.cwd(), 'src', 'law', 'folder', 'ratchet.generated.ts')

@@ -11,7 +11,7 @@ import { horoRatio, type HoroStep } from '@/horo'
 
 /** Landauer floor — inlined to avoid readme ↔ accounting init cycle at emit. */
 const LANDAUER_BIT = algebraLog2(2)
-import type { RatchetAxis } from './baseline-types'
+import type { RatchetAxis } from '../baseline-types'
 
 /** Every gate axis — order stable for content-uuid seal. */
 export const RATCHET_AXES: readonly RatchetAxis[] = [

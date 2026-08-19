@@ -17,7 +17,7 @@ import { waveAccountingGapViolations } from '@/accounting/gaps'
 import { guardian } from '@/guardian'
 import { seal, type SealVerdict } from '@/seal'
 import { folderGuardians, computedBaseline } from '@/law/folder'
-import { bypassMathViolations } from '@/law/folder/ratchet-compute'
+import { bypassMathViolations } from '@/law/folder/ratchet/compute'
 import {
   exactMax,
   hostMathViolations,

@@ -7,7 +7,7 @@
  */
 import type { DomainAgent, AgentEffect, DomainEvent } from '@/agent'
 import type { SpecChainStep } from '@/spec/generator'
-import { planTrainingEffects, TRAINING_EMIT, TRAINING_TRIGGER } from './hr.training'
+import { planTrainingEffects, TRAINING_EMIT, TRAINING_TRIGGER } from './training'
 
 export const HrAgent: DomainAgent = {
   id: 'hr',

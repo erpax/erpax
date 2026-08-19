@@ -41,11 +41,11 @@
  * @standard ISO 27001 A.5.15 access-control
  * @standard ISO 27002 §5.4 segregation-of-duties (TypeScript-enforced)
  * @audit Conservation Law 38 mcp-tool-standardization
- * @see ./plugin-helper.ts erpaxMediator (full surface)
+ * @see ./helper.ts erpaxMediator (full surface)
  * @see ./index.ts makeMediator
  */
 import type { PayloadRequest } from 'payload'
-import { erpaxMediator } from './plugin-helper'
+import { erpaxMediator } from './helper'
 import type { ErpaxCfEnv } from '@/cloudflare'
 
 /** The complete mediator surface — derived from `makeMediator`'s return shape. */

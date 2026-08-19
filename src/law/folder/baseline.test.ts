@@ -8,12 +8,12 @@ import {
   RATCHET_AXES,
   BYPASS_MATH_COORDINATE,
   AXIS_HORO,
-} from './ratchet-math'
+} from './ratchet/math'
 import {
   bypassMathViolations,
   ratchetContentUuid,
   recomputeRatchetSnapshot,
-} from './ratchet-compute'
+} from './ratchet/compute'
 import { liveViolationCounts, PARALLEL_SCAN_AXES } from './live-counts'
 import { LANDAUER_BIT } from '@/readme/entropy'
 import { horoRatio } from '@/horo'

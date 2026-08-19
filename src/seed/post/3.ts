@@ -1,38 +1,19 @@
 import { RequiredDataFromCollectionSlug } from 'payload'
-import type { PostArgs } from './post-1'
+import type { PostArgs } from './1'
 
-export const post2: (args: PostArgs) => RequiredDataFromCollectionSlug<'posts'> = ({
+export const post3: (args: PostArgs) => RequiredDataFromCollectionSlug<'posts'> = ({
   heroImage,
   blockImage,
   author,
 }) => {
   return {
-    slug: 'global-gaze',
+    slug: 'dollar-and-sense-the-financial-forecast',
     _status: 'published',
     authors: [author],
     content: {
       root: {
         type: 'root',
         children: [
-          {
-            type: 'heading',
-            children: [
-              {
-                type: 'text',
-                detail: 0,
-                format: 0,
-                mode: 'normal',
-                style: '',
-                text: 'Explore the untold and overlooked. A magnified view into the corners of the world, where every story deserves its spotlight.',
-                version: 1,
-              },
-            ],
-            direction: 'ltr',
-            format: '',
-            indent: 0,
-            tag: 'h2',
-            version: 1,
-          },
           {
             type: 'block',
             fields: {
@@ -51,7 +32,7 @@ export const post2: (args: PostArgs) => RequiredDataFromCollectionSlug<'posts'> 
                           format: 1,
                           mode: 'normal',
                           style: '',
-                          text: 'Disclaimer:',
+                          text: 'Disclaimer: ',
                           version: 1,
                         },
                         {
@@ -60,7 +41,7 @@ export const post2: (args: PostArgs) => RequiredDataFromCollectionSlug<'posts'> 
                           format: 0,
                           mode: 'normal',
                           style: '',
-                          text: ' This content is fabricated and for demonstration purposes only. To edit this post, ',
+                          text: 'This content is fabricated and for demonstration purposes only. To edit this post, ',
                           version: 1,
                         },
                         {
@@ -114,7 +95,25 @@ export const post2: (args: PostArgs) => RequiredDataFromCollectionSlug<'posts'> 
                 format: 0,
                 mode: 'normal',
                 style: '',
-                text: 'The Power of Resilience: Stories of Recovery and Hope',
+                text: "Money isn't just currency; ",
+                version: 1,
+              },
+              {
+                type: 'text',
+                detail: 0,
+                format: 2,
+                mode: 'normal',
+                style: '',
+                text: "it's a language. ",
+                version: 1,
+              },
+              {
+                type: 'text',
+                detail: 0,
+                format: 0,
+                mode: 'normal',
+                style: '',
+                text: 'Dive deep into its nuances, where strategy meets intuition in the vast sea of finance.',
                 version: 1,
               },
             ],
@@ -133,7 +132,7 @@ export const post2: (args: PostArgs) => RequiredDataFromCollectionSlug<'posts'> 
                 format: 0,
                 mode: 'normal',
                 style: '',
-                text: "Throughout history, regions across the globe have faced the devastating impact of natural disasters, the turbulence of political unrest, and the challenging ripples of economic downturns. In these moments of profound crisis, an often-underestimated force emerges: the indomitable resilience of the human spirit. These aren't just tales of mere survival, but stories of communities forging bonds, uniting with a collective purpose, and demonstrating an innate ability to overcome.",
+                text: "Money, in its essence, transcends the mere concept of coins and paper notes; it becomes a profound language that speaks of value, trust, and societal structures. Like any language, it possesses intricate nuances and subtleties that require a discerning understanding. It's in these depths where the calculated world of financial strategy collides with the raw, instinctive nature of human intuition. Just as a seasoned linguist might dissect the syntax and semantics of a sentence, a financial expert navigates the vast and tumultuous ocean of finance, guided not only by logic and data but also by gut feelings and foresight. Every transaction, investment, and financial decision becomes a dialogue in this expansive lexicon of commerce and value.",
                 version: 1,
               },
             ],
@@ -154,6 +153,25 @@ export const post2: (args: PostArgs) => RequiredDataFromCollectionSlug<'posts'> 
             version: 2,
           },
           {
+            type: 'heading',
+            children: [
+              {
+                type: 'text',
+                detail: 0,
+                format: 0,
+                mode: 'normal',
+                style: '',
+                text: 'Stock Market Dynamics: Bulls, Bears, and the Uncertain Middle',
+                version: 1,
+              },
+            ],
+            direction: 'ltr',
+            format: '',
+            indent: 0,
+            tag: 'h2',
+            version: 1,
+          },
+          {
             type: 'paragraph',
             children: [
               {
@@ -162,7 +180,26 @@ export const post2: (args: PostArgs) => RequiredDataFromCollectionSlug<'posts'> 
                 format: 0,
                 mode: 'normal',
                 style: '',
-                text: 'From neighbors forming makeshift rescue teams during floods to entire cities rallying to rebuild after economic collapse, the essence of humanity is most evident in these acts of solidarity. As we delve into these narratives, we witness the transformative power of community spirit, where adversity becomes a catalyst for growth, unity, and a brighter, rebuilt future.',
+                text: 'The stock market is a realm of vast opportunity but also poses risks. Discover the forces that drive market trends and the strategies employed by top traders to navigate this complex ecosystem. From market analysis to understanding investor psychology, get a comprehensive insight into the world of stocks.',
+                version: 1,
+              },
+            ],
+            direction: 'ltr',
+            format: '',
+            indent: 0,
+            textFormat: 0,
+            version: 1,
+          },
+          {
+            type: 'paragraph',
+            children: [
+              {
+                type: 'text',
+                detail: 0,
+                format: 0,
+                mode: 'normal',
+                style: '',
+                text: "The stock market, often visualized as a bustling arena of numbers and ticker tapes, is as much about human behavior as it is about economics. It's a place where optimism, represented by the bullish rally, meets the caution of bearish downturns, with each vying to dictate the market's direction. But between these two extremes lies an uncertain middle ground, a zone populated by traders and investors who constantly weigh hope against fear. Successful navigation requires more than just financial acumen; it demands an understanding of collective sentiments and the ability to predict not just market movements, but also the reactions of other market participants. In this intricate dance of numbers and nerves, the most astute players are those who master both the hard data and the soft nuances of human behavior.",
                 version: 1,
               },
             ],
@@ -221,12 +258,11 @@ export const post2: (args: PostArgs) => RequiredDataFromCollectionSlug<'posts'> 
     },
     heroImage: heroImage.id,
     meta: {
-      description:
-        'Explore the untold and overlooked. A magnified view into the corners of the world, where every story deserves its spotlight.',
+      description: `Money isn't just currency; it's a language. Dive deep into its nuances, where strategy meets intuition in the vast sea of finance.`,
       image: heroImage.id,
-      title: 'Global Gaze: Beyond the Headlines',
+      title: 'Dollar and Sense: The Financial Forecast',
     },
     relatedPosts: [], // this is populated by the seed script
-    title: 'Global Gaze: Beyond the Headlines',
+    title: 'Dollar and Sense: The Financial Forecast',
   }
 }

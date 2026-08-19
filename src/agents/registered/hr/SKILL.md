@@ -11,4 +11,4 @@ The **H2R** (hire-to-retire) agent. `agent` owns the chain — employees, payrol
 - **ISO IAS-19** — employee benefits.
 - **IAS-26** — retirement benefits.
 
-Composes: [[agents]] · [[law]].
+Composes: [[train]] · [[law]].

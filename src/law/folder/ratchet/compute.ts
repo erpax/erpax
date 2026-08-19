@@ -7,10 +7,10 @@
 import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { computeContentUuid } from '@/integrity'
-import { liveViolationCounts } from './live-counts'
-import type { RatchetAxis, RatchetSnapshot } from './baseline-types'
-import { RATCHET_GENERATED } from './ratchet.generated'
-import { RATCHET_AXES, ratchetDown, mathCeiling, BYPASS_MATH_COORDINATE } from './ratchet-math'
+import { liveViolationCounts } from '../live-counts'
+import type { RatchetAxis, RatchetSnapshot } from '../baseline-types'
+import { RATCHET_GENERATED } from '../ratchet.generated'
+import { RATCHET_AXES, ratchetDown, mathCeiling, BYPASS_MATH_COORDINATE } from './math'
 
 const RATCHET_TENANT = 'erpax' as const
 const HAND_RATCHET_REL = join('src', 'law', 'folder', 'ratchet.json')

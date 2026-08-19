@@ -7,4 +7,4 @@ atomPath: "rfc/9110/get"
 
 The **read** side of RFC 9110 §13 caching. Each member fetches one resource kind and caches it: `document` (a collection doc by slug), `globals` (a global by slug, per locale), `redirects` (the redirect set). They share a cache and differ only in what they address, which is why they are siblings rather than one module with a discriminator.
 
-Composes: [[rfc]] · [[law]].
+Composes: [[law]].

@@ -9,4 +9,4 @@ The two directions of one boundary. `service` **gives** — it emits the canonic
 
 They are siblings because they must agree on the same formats: a give that the take cannot parse is a boundary that only works outward.
 
-Composes: [[export]] · [[standards]] · [[law]].
+Composes: [[standards]] · [[law]].
