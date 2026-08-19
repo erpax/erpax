@@ -6,7 +6,7 @@ import { autoSetTimestamp } from '@/auto/set/timestamp';
 import { auditTrailAfterChange } from '@/audit/trail/after/change';
 import { currencyField } from '@/base/accounting/field';
 import { validateNotLocked } from '@/utility';
-import { bankStatementImportedHook } from './hooks/bank-statement';
+import { bankStatementImportedHook } from './hooks/statement';
 
 /**
  * Bank Statements — imported / matched bank statements feeding reconciliation.

@@ -22,8 +22,8 @@ export {
 // Side-effect imports — register the 5 reference profiles at module load.
 // Order matters: parents before children
 // (business → payment-provider → bank ; business → government → country).
-import '../roles/profile/business.profile'
+import '../roles/profile/business'
 import '../roles/profile/payment-provider.profile'
-import '../roles/profile/bank.profile'
-import '../roles/profile/government.profile'
-import '../roles/profile/country.profile'
+import '../roles/profile/bank'
+import '../roles/profile/government'
+import '../roles/profile/country'

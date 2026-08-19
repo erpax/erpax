@@ -68,7 +68,7 @@ import {
   validateAiOutput,
   hashAuditRow,
   deriveAiCacheKey,
-} from './ai-security'
+} from './security'
 import { isEuAiActRiskClass, type EuAiActRiskClass } from '@/eu/ai/act'
 
 /** Cloudflare Workers AI binding shape. */

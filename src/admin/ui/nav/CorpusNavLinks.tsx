@@ -1,7 +1,7 @@
 'use client'
 
 import { navigationGroupsFromPaths } from '@/navigation'
-import { COLLECTION_DIAMOND_KEY } from '@/factory/collection-factory'
+import { COLLECTION_DIAMOND_KEY } from '@/factory/collection'
 import { Separator } from '@/ui'
 import { useConfig, Link } from '@payloadcms/ui'
 import React, { useMemo } from 'react'

@@ -209,7 +209,7 @@ export function runDoctorStalls(): number {
  * Computes once, seals node_modules/.cache/erpax/audit.json — the matrix is the cache. */
 export async function runDoctorCorpus(cwd: string = process.cwd()): Promise<number> {
   const all = await import('@/collections')
-  const { auditCorpus, foldCollectionLifecycle, shapeRatchetVerdict, ROSETTA_BASELINE } = await import('@/factory/collection-factory')
+  const { auditCorpus, foldCollectionLifecycle, shapeRatchetVerdict, ROSETTA_BASELINE } = await import('@/factory/collection')
   const { theoremReceipts } = await import('@/standards/registry')
   const configs = Object.values(all)
     .filter(

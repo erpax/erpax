@@ -6,7 +6,7 @@
  */
 import type { CollectionConfig, Config, Field, Plugin } from 'payload'
 
-import { COLLECTION_DIAMOND_KEY } from '@/factory/collection-factory'
+import { COLLECTION_DIAMOND_KEY } from '@/factory/collection'
 import { ERPAX_LIST_COLUMNS, erpaxMetaOf } from '@/admin/ui'
 import {
   FIELD_ENTANGLEMENT_REGISTRY,

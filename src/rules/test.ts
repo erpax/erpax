@@ -147,7 +147,7 @@ describe('rules — tightened gate registry', () => {
     const { GATE_LANES } = await import('@/cli/gate')
     const corpusLane = GATE_LANES.find(([label]) => label === 'corpus')
     expect(corpusLane?.[1]).toContain('doctor corpus')
-    const { shapeRatchetVerdict, ROSETTA_BASELINE } = await import('@/factory/collection-factory')
+    const { shapeRatchetVerdict, ROSETTA_BASELINE } = await import('@/factory/collection')
     const atLine = { collections: ROSETTA_BASELINE.collections, basisOccupancy: ROSETTA_BASELINE.signatures }
     expect(shapeRatchetVerdict(atLine, ROSETTA_BASELINE).ok).toBe(true)
     expect(shapeRatchetVerdict({ ...atLine, collections: atLine.collections + 1 }, ROSETTA_BASELINE).ok).toBe(false)

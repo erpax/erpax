@@ -23,7 +23,7 @@
 
 import type { PayloadRequest } from 'payload'
 import { AI_AUTO_ACCEPT_ROUTING } from './confidence'
-import { callWorkersAi, type WorkersAiBinding, type AiCallResult } from './cloudflare-ai'
+import { callWorkersAi, type WorkersAiBinding, type AiCallResult } from './cloudflare'
 
 /**
  * Every document kind the classifier can return — the single source of truth.

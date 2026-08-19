@@ -5,5 +5,5 @@
  * @see docs/STANDARDS.md §4.2
  */
 
-export * from './collection-factory';
+export * from './collection';
 export * from './recompute-parent-aggregates';

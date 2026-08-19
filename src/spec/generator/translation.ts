@@ -79,7 +79,7 @@ import {
   collectionKeys, chainKeys, chainStepKey,
   workflowKeys, workflowStepKey, humaniseSlug,
 } from './i18n-keys'
-import { SPEC_TEMPLATES, templateKey, compose, allTemplateKeys, type SpecTypeKind } from './spec-templates'
+import { SPEC_TEMPLATES, templateKey, compose, allTemplateKeys, type SpecTypeKind } from './templates'
 
 /** Output of `generateTranslations()` — flat key→default-English map. */
 export interface GeneratedTranslations {

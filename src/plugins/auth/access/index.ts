@@ -20,4 +20,4 @@
 export { isSuperAdmin, authenticated, tenantScoped, adminOnly } from './predicates'
 export type { }
 
-export { tenantFieldAccess, readOnlyExceptSuperAdmin } from './field-access'
+export { tenantFieldAccess, readOnlyExceptSuperAdmin } from './field'

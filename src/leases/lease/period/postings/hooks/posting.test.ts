@@ -31,7 +31,7 @@
  */
 
 import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { leasePeriodPostingHook } from './lease-period-posting'
+import { leasePeriodPostingHook } from './posting'
 import { journalEntryService } from '@/journal/entry/service'
 import * as glResolver from '@/gl/account/resolver'
 

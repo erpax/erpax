@@ -14,7 +14,7 @@
 
 import type { Payload } from 'payload'
 import type { BusinessChain, ChainRunResult } from './types'
-import type { ChainContext } from './chain-context'
+import type { ChainContext } from './context'
 
 /**
  * Per-step implementation fn. Returns the emitted event id when the

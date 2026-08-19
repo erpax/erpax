@@ -18,7 +18,7 @@
 
 import type { PayloadRequest } from 'payload'
 import { AI_AUTO_ACCEPT_BANK } from './confidence'
-import { callWorkersAi, type WorkersAiBinding, type AiCallResult } from './cloudflare-ai'
+import { callWorkersAi, type WorkersAiBinding, type AiCallResult } from './cloudflare'
 
 export interface BankMatchInput {
   readonly bankTransactionId: string

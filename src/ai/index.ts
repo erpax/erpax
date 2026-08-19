@@ -12,7 +12,7 @@
  * @see ./cloudflare-ai.ts
  */
 
-export { detectPromptInjection, sanitisePiiForAi } from './ai-security'
+export { detectPromptInjection, sanitisePiiForAi } from './security'
 
 // Canonical entry point — every AI inference goes through here.
 export {
@@ -20,7 +20,7 @@ export {
   type AiCallOptions,
   type AiCallResult,
   type WorkersAiBinding,
-} from './cloudflare-ai'
+} from './cloudflare'
 
 // Per-feature thin wrappers (one per FEATURE_REGISTRY ai_* entry).
 export { extractInvoiceFromScan, type InvoiceOcrInput, type InvoiceOcrOutput } from './invoice-ocr'

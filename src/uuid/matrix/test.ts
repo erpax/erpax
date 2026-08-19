@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 
 import { backlinksOf, neighborsOf } from './index'
-import { UUID_MATRIX_EDGES, UUID_MATRIX_NODES } from './matrix.generated'
+import { UUID_MATRIX_EDGES, UUID_MATRIX_NODES } from './generated'
 
 /**
  * The adjacency index, pinned against the scan it replaced.

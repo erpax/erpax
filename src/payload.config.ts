@@ -83,7 +83,7 @@ import {
 } from '@/i18n'
 
 import { adminGroupOf } from '@/navigation'
-import { COLLECTION_DIAMOND_KEY, foldCollectionLifecycle } from '@/factory/collection-factory'
+import { COLLECTION_DIAMOND_KEY, foldCollectionLifecycle } from '@/factory/collection'
 import type { Config } from '@/types'
 
 /** Payload admin.group — first path segment of the collection atom (computed, never hand-set). */

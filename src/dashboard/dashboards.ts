@@ -423,7 +423,7 @@ export function shapeWidgetSpec(config: CollectionConfig): WidgetSpec<ShapePanel
     source: {
       kind: 'localApi',
       load: async (ctx): Promise<ShapePanelVM> => {
-        const { collectionSignature } = await import('@/factory/collection-factory')
+        const { collectionSignature } = await import('@/factory/collection')
         const { key } = await import('@/quantum/cache')
         const { uuidSignalCssVars } = await import('@/signal')
         const signature = collectionSignature(config)

@@ -17,7 +17,7 @@
  */
 
 import { describe, it, expect, beforeAll } from 'vitest'
-import { periodEndAdjustmentPostingHook } from './period-end-adjustment'
+import { periodEndAdjustmentPostingHook } from './adjustment'
 import { journalEntryService } from '@/journal/entry/service'
 
 /** Invoke the afterChange hook with a partial args shape (tests supply only the doc/op surface). */

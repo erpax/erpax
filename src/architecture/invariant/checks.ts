@@ -408,7 +408,7 @@ export function checkCoreChainsRunnableOnFree(_ctx: InvariantContext): Invariant
 export async function checkAiFallbackReturnsError(ctx: InvariantContext): Promise<InvariantResult> {
   if (!ctx.payload) return warn('fallback', 'ai-binding-fallback', 'no payload context — skipped')
   try {
-    const mod = await import('@/ai/cloudflare-ai')
+    const mod = await import('@/ai/cloudflare')
     // Pass null binding — the chokepoint must NOT throw.
     const result = await mod.callWorkersAi(
       { payload: ctx.payload } as never,

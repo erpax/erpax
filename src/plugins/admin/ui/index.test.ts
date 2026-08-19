@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { createAccountingCollection } from '@/factory/collection-factory'
+import { createAccountingCollection } from '@/factory/collection'
 import type { Config } from 'payload'
 import { adminUiPlugin } from './index'
 

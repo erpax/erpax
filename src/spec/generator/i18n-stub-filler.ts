@@ -12,7 +12,7 @@
  */
 
 import type { Bundles, I18nAuditReport } from './i18n-audit'
-import type { GeneratedTranslations } from './translation-generator'
+import type { GeneratedTranslations } from './translation'
 import { STUB_PREFIX } from './i18n-keys'
 
 export interface StubFillResult {

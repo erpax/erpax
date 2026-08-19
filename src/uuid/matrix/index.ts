@@ -28,7 +28,7 @@ import {
   UUID_MATRIX_DIMS,
   type MatrixNode,
   type MatrixEdge,
-} from './matrix.generated'
+} from './generated'
 
 export { UUID_MATRIX_NODES, UUID_MATRIX_EDGES, UUID_MATRIX_ROOT, UUID_MATRIX_DIMS }
 export type { MatrixNode, MatrixEdge }

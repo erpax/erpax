@@ -43,7 +43,7 @@ import {
   auditFields,
 } from '@/base/accounting/field'
 import { validateNotLocked } from '@/utility'
-import { leasePeriodPostingHook } from './hooks/lease-period-posting'
+import { leasePeriodPostingHook } from './hooks/posting'
 
 const LeasePeriodPostings: CollectionConfig = {
   slug: 'lease-period-postings',
