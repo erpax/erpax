@@ -370,7 +370,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "path": "src/bank/accounts/payroll/runs/hooks/disbursement.ts",
         "section": ""
       }
     ]
@@ -432,7 +432,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "path": "src/bank/accounts/payroll/runs/hooks/disbursement.ts",
         "section": ""
       },
       {
@@ -464,7 +464,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/business/chain/chain-context.ts",
+        "path": "src/business/chain/context.ts",
         "section": ""
       },
       {
@@ -2231,7 +2231,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/ai/cloudflare-ai.ts",
+        "path": "src/ai/cloudflare.ts",
         "section": ""
       },
       {
@@ -2297,7 +2297,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/ai/cloudflare-ai.ts",
+        "path": "src/ai/cloudflare.ts",
         "section": ""
       },
       {
@@ -2359,7 +2359,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/spec/generator/translation-generator.ts",
+        "path": "src/spec/generator/translation.ts",
         "section": ""
       },
       {
@@ -2877,7 +2877,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/tenant/roles/profile/bank.profile.ts",
+        "path": "src/tenant/roles/profile/bank.ts",
         "section": ""
       },
       {
@@ -3108,11 +3108,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "path": "src/bank/accounts/payroll/runs/hooks/disbursement.ts",
         "section": ""
       },
       {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-run.ts",
+        "path": "src/bank/accounts/payroll/runs/hooks/run.ts",
         "section": ""
       }
     ]
@@ -3210,11 +3210,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "path": "src/bank/accounts/payroll/runs/hooks/disbursement.ts",
         "section": ""
       },
       {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-run.ts",
+        "path": "src/bank/accounts/payroll/runs/hooks/run.ts",
         "section": ""
       },
       {
@@ -3276,7 +3276,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "path": "src/bank/accounts/payroll/runs/hooks/disbursement.ts",
         "section": ""
       },
       {
@@ -3358,7 +3358,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/business/chain/chain-context.ts",
+        "path": "src/business/chain/context.ts",
         "section": ""
       },
       {
@@ -3790,7 +3790,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "path": "src/bank/accounts/payroll/runs/hooks/disbursement.ts",
         "section": ""
       },
       {
@@ -3896,7 +3896,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "path": "src/bank/accounts/payroll/runs/hooks/disbursement.ts",
         "section": ""
       },
       {
@@ -3944,7 +3944,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/gl/accounts/bank/statements/hooks/bank-statement.ts",
+        "path": "src/gl/accounts/bank/statements/hooks/statement.ts",
         "section": ""
       },
       {
@@ -5028,11 +5028,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "count": 8,
     "modules": [
       {
-        "path": "src/ai/ai-security.ts",
+        "path": "src/ai/cloudflare.ts",
         "section": ""
       },
       {
-        "path": "src/ai/cloudflare-ai.ts",
+        "path": "src/ai/security.ts",
         "section": ""
       },
       {
@@ -5648,15 +5648,15 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/ai/ai-security.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/cloudflare-ai.ts",
+        "path": "src/ai/cloudflare.ts",
         "section": ""
       },
       {
         "path": "src/ai/durable-objects.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/security.ts",
         "section": ""
       },
       {
@@ -6130,7 +6130,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "count": 5,
     "modules": [
       {
-        "path": "src/ai/cloudflare-ai.ts",
+        "path": "src/ai/cloudflare.ts",
         "section": ""
       },
       {
@@ -6333,7 +6333,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/tenant/roles/profile/country.profile.ts",
+        "path": "src/tenant/roles/profile/country.ts",
         "section": ""
       },
       {
@@ -6974,7 +6974,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§3"
       },
       {
-        "path": "src/tenant/roles/profile/country.profile.ts",
+        "path": "src/tenant/roles/profile/country.ts",
         "section": ""
       }
     ]
@@ -8678,7 +8678,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/tenant/roles/profile/country.profile.ts",
+        "path": "src/tenant/roles/profile/country.ts",
         "section": ""
       },
       {
@@ -8750,7 +8750,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/tenant/roles/profile/country.profile.ts",
+        "path": "src/tenant/roles/profile/country.ts",
         "section": ""
       },
       {
@@ -9296,7 +9296,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/link/cms-link.tsx",
+        "path": "src/link/cms.tsx",
         "section": ""
       }
     ]
@@ -9826,7 +9826,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/tenant/roles/profile/country.profile.ts",
+        "path": "src/tenant/roles/profile/country.ts",
         "section": ""
       },
       {
@@ -9924,55 +9924,55 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/chains/bulk/import/cycle/bulk-import-cycle-page.tsx",
+        "path": "src/chains/bulk/import/cycle/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/consignment/cycle/consignment-cycle-page.tsx",
+        "path": "src/chains/consignment/cycle/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/crm/lead/to/cash/crm-lead-to-cash-page.tsx",
+        "path": "src/chains/crm/lead/to/cash/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/esg/reporting/cycle/esg-reporting-cycle-page.tsx",
+        "path": "src/chains/esg/reporting/cycle/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/facility/maintenance/cycle/facility-maintenance-cycle-page.tsx",
+        "path": "src/chains/facility/maintenance/cycle/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/h2r/hire/to/retire/h2r-hire-to-retire-page.tsx",
+        "path": "src/chains/h2r/hire/to/retire/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/ifrs16/lease/cycle/ifrs16-lease-cycle-page.tsx",
+        "path": "src/chains/ifrs16/lease/cycle/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/intercompany/consolidation/intercompany-consolidation-page.tsx",
+        "path": "src/chains/intercompany/consolidation/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/kyc/sanctions/review/kyc-sanctions-review-page.tsx",
+        "path": "src/chains/kyc/sanctions/review/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/manufacturing/cycle/manufacturing-cycle-page.tsx",
+        "path": "src/chains/manufacturing/cycle/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/multi/invoice/payment/allocation/multi-invoice-payment-allocation-page.tsx",
+        "path": "src/chains/multi/invoice/payment/allocation/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/multi/vendor/pr/split/award/multi-vendor-pr-split-award-page.tsx",
+        "path": "src/chains/multi/vendor/pr/split/award/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/notification/dispatch/notification-dispatch-page.tsx",
+        "path": "src/chains/notification/dispatch/page.tsx",
         "section": ""
       },
       {
@@ -9980,15 +9980,15 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/chains/o2c/services/over/time/o2c-services-over-time-page.tsx",
+        "path": "src/chains/o2c/services/over/time/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/procure/to/pay/procure-to-pay-page.tsx",
+        "path": "src/chains/procure/to/pay/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/provision/lifecycle/provision-lifecycle-page.tsx",
+        "path": "src/chains/provision/lifecycle/page.tsx",
         "section": ""
       }
     ]
@@ -10010,55 +10010,55 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/chains/bulk/import/cycle/bulk-import-cycle-page.tsx",
+        "path": "src/chains/bulk/import/cycle/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/consignment/cycle/consignment-cycle-page.tsx",
+        "path": "src/chains/consignment/cycle/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/crm/lead/to/cash/crm-lead-to-cash-page.tsx",
+        "path": "src/chains/crm/lead/to/cash/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/esg/reporting/cycle/esg-reporting-cycle-page.tsx",
+        "path": "src/chains/esg/reporting/cycle/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/facility/maintenance/cycle/facility-maintenance-cycle-page.tsx",
+        "path": "src/chains/facility/maintenance/cycle/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/h2r/hire/to/retire/h2r-hire-to-retire-page.tsx",
+        "path": "src/chains/h2r/hire/to/retire/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/ifrs16/lease/cycle/ifrs16-lease-cycle-page.tsx",
+        "path": "src/chains/ifrs16/lease/cycle/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/intercompany/consolidation/intercompany-consolidation-page.tsx",
+        "path": "src/chains/intercompany/consolidation/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/kyc/sanctions/review/kyc-sanctions-review-page.tsx",
+        "path": "src/chains/kyc/sanctions/review/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/manufacturing/cycle/manufacturing-cycle-page.tsx",
+        "path": "src/chains/manufacturing/cycle/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/multi/invoice/payment/allocation/multi-invoice-payment-allocation-page.tsx",
+        "path": "src/chains/multi/invoice/payment/allocation/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/multi/vendor/pr/split/award/multi-vendor-pr-split-award-page.tsx",
+        "path": "src/chains/multi/vendor/pr/split/award/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/notification/dispatch/notification-dispatch-page.tsx",
+        "path": "src/chains/notification/dispatch/page.tsx",
         "section": ""
       },
       {
@@ -10066,31 +10066,31 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/chains/o2c/services/over/time/o2c-services-over-time-page.tsx",
+        "path": "src/chains/o2c/services/over/time/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/procure/to/pay/procure-to-pay-page.tsx",
+        "path": "src/chains/procure/to/pay/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/provision/lifecycle/provision-lifecycle-page.tsx",
+        "path": "src/chains/provision/lifecycle/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/record/to/report/record-to-report-page.tsx",
+        "path": "src/chains/record/to/report/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/resource/booking/cycle/resource-booking-cycle-page.tsx",
+        "path": "src/chains/resource/booking/cycle/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/subscription/billing/cycle/subscription-billing-cycle-page.tsx",
+        "path": "src/chains/subscription/billing/cycle/page.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/workflow/approval/cycle/workflow-approval-cycle-page.tsx",
+        "path": "src/chains/workflow/approval/cycle/page.tsx",
         "section": ""
       },
       {
