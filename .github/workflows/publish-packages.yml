@@ -96,6 +96,20 @@ jobs:
           node packages/build.mjs all
           node packages/release.mjs --check
 
+      # A package that builds but whose Payload config cannot BOOT is not stable —
+      # "a corpus that cannot load has no other properties" ([[rules]]). run/load exits
+      # non-zero unless the live config loads every collection, so a broken config
+      # blocks the publish instead of shipping a package that serves a dead app.
+      #
+      # HONEST BOUNDARY: this proves the config BOOTS, not that the payload.config.*
+      # suites pass — they are currently blocked by the architecture-invariants
+      # locality regression (the dissolution campaign). Boot is the property this
+      # gate can honestly certify today; the suites join it when that clears.
+      - name: Boot gate — the Payload config loads
+        run: |
+          set -euo pipefail
+          pnpm exec cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/run/load/index.ts
+
       - name: Assert tag matches package version
         if: startsWith(github.ref, 'refs/tags/')
         run: |
