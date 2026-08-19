@@ -1,0 +1,48 @@
+---
+name: coverage
+description: "Use when asking which external rails erpax can PROVE it speaks. 178 catalogued rails (97 country/bank + 81 trading); a rail declaring clientImplemented is a promise erpax parses its answers, and a promise with no contract check is a claim nothing can contradict. Ratchets the claimed-but-unproven count down; never counts catalogue-only rails as covered."
+atomPath: outward/coverage
+---
+
+# outward/coverage — a claimed client with no contract is an unrefutable promise
+
+erpax catalogues **178** external rails. Extending the contract pattern across all of
+them by hand would mean 178 fixtures — and most would be **fiction**: only 5 of the 81
+trading entries declare `clientImplemented`, so for the other 76 there is no parser,
+hence **no contract to test**. A fixture there would assert that a body we never read
+has a shape we never parse. That is coverage theatre, and it is worse than a gap
+because it reads as safety.
+
+What is measurable — and what actually bites — is the **gap**:
+
+| state | meaning |
+| --- | --- |
+| `claimed` | the rail says erpax has a client for it |
+| `covered` | an offline contract check exists (runs in the gate) |
+| **`uncovered`** | **claimed but unproven — the debt** |
+| `catalogue` | no client claimed; honestly out of scope, never counted as covered |
+
+Measured 2026-08-19: **178 rails · 68 claim a client · 18 covered · 50 unproven ·
+110 catalogue-only.**
+
+A rail declaring `clientImplemented: true` is a promise that erpax parses its answers.
+With no contract beside it, that promise is exactly the corpus's own defect — a claim
+nothing can contradict ([[rules]]/refutable), guarding a case that never runs
+([[rules]]/unraised).
+
+## The ratchet is the gate
+
+Pure registry derivation — **no network** — so it runs in CI and cannot flake. It does
+not demand 178 contracts; it forbids the gap from **growing**. Every new rail that
+claims a client must arrive with a contract, and every contract written lowers the
+ceiling. Zero is the horizon.
+
+**Honest boundary.** This counts contracts, never their quality: a rail can be
+`covered` by a check that asserts something trivial. It also cannot see an
+authenticated rail's shape at all — 38 of the claimed rails need credentials, and this
+atom holds none, so their contracts must be built from recorded samples, not probes.
+
+**Law — [[law]]: a rail that claims a client owes a contract. Coverage counts what can
+be refuted offline; a catalogue entry is never counted as covered.**
+
+Composes: [[outward]] · [[country]] · [[trading]] · [[rules]].

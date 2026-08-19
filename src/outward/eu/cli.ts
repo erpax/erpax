@@ -11,12 +11,25 @@
  */
 import { checkEu, writeBook, RECEIPTS_REL } from './index'
 import { contractOnline } from './contract'
+import { coverageReport } from '@/outward/coverage'
 
 const write = process.argv.includes('--write')
 
 // `--contract` runs the SAME checks the release gate runs offline, against the LIVE
 // hosts. A disagreement between the two is the finding: the fixture says what erpax
 // was built for, the live answer says what the world now sends.
+// `--coverage` — which rails erpax CLAIMS to speak vs can PROVE (pure, no network).
+if (process.argv.includes('--coverage')) {
+  const rep = coverageReport()
+  console.log(rep.summary)
+  const byRegistry = new Map<string, number>()
+  for (const r of rep.uncovered) byRegistry.set(r.registry, (byRegistry.get(r.registry) ?? 0) + 1)
+  for (const [reg, n] of [...byRegistry].sort((a, b) => b[1] - a[1])) console.log(`  ${String(n).padStart(3)} unproven in ${reg}`)
+  console.log('\nfirst unproven:')
+  for (const r of rep.uncovered.slice(0, 8)) console.log(`  · ${r.name.slice(0, 46).padEnd(46)} ${r.auth === 'none' ? 'public' : r.auth}`)
+  process.exit(0)
+}
+
 if (process.argv.includes('--contract')) {
   const checks = await contractOnline()
   for (const c of checks) console.log(`  ${c.holds ? '✓' : '✗'} ${c.rail.padEnd(10)} ${c.detail}`)

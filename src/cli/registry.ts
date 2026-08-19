@@ -91,6 +91,8 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     default: { desc: 'Check the four pan-EU authorities against their receipts', cmd: `${TSX} src/outward/eu/cli.ts` },
     eu: { desc: 'Check the four pan-EU authorities (VIES · ECB · Peppol · sanctions)', cmd: `${TSX} src/outward/eu/cli.ts` },
     write: { desc: 'Record the current authority addresses into outward-receipts.json', cmd: `${TSX} src/outward/eu/cli.ts --write` },
+    contract: { desc: 'Check the LIVE authorities against the same contract the gate checks offline', cmd: `${TSX} src/outward/eu/cli.ts --contract` },
+    coverage: { desc: 'Which external rails erpax claims to speak vs can prove (pure, no network)', cmd: `${TSX} src/outward/eu/cli.ts --coverage` },
   },
   rules: {
     default: { desc: 'Rules ratchet check (+ failure summary)', cmd: '__rules_check__' },
