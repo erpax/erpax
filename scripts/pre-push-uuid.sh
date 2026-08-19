@@ -21,4 +21,6 @@ set -e
 # Security guard rides every push path — a dropped image-size DoS patch
 # (CVE-2025-71329/71330) must fail here too, not only the full pre-push stack.
 node scripts/ensure-image-size-patch.mjs
+# Committed matter must be self-contained (untracked @/<atom> import ⇒ CI build death).
+node scripts/ensure-tracked-imports.mjs
 pnpm erpax confirm uuid

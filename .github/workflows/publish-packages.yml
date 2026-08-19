@@ -88,6 +88,14 @@ jobs:
             console.log('✔ root private — will not publish the app')
           "
 
+      - name: Self-contained gate — every imported atom is tracked
+        run: |
+          set -euo pipefail
+          # A committed file importing an atom that never got `git add`ed builds on the
+          # author's disk and dies here with ERR_MODULE_NOT_FOUND. Catch it before the
+          # build burns, not after (this is how the Cloudflare production build broke).
+          node scripts/ensure-tracked-imports.mjs
+
       - name: Compliance gate — folder law + content-manifest in sync
         run: |
           set -euo pipefail

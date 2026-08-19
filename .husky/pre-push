@@ -47,6 +47,10 @@ cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/cli/index.ts 
 # this is the earlier tripwire so a dropped patch never reaches deploy. Fast
 # (~50ms) and fail-closed under `set -e`.
 node scripts/ensure-image-size-patch.mjs
+# Committed code must be SELF-CONTAINED: every `@/<atom>` it imports must be tracked.
+# A file committed while the atom it imports stays untracked builds locally and dies
+# in CI (ERR_MODULE_NOT_FOUND) — exactly how the Cloudflare production build broke.
+node scripts/ensure-tracked-imports.mjs
 # Cheapest gate first: malformed @standard / @rfc / @compliance banners.
 bash scripts/standards-citation-index.sh --check
 # Every src/standards/<id>/ + tests/standards/<id>/ file MUST cite a standard.
