@@ -309,10 +309,23 @@ export async function lookupPeppolParticipant(participantId: string): Promise<Ap
 
 // ─── 8. EU Sanctions — daily XML ─────────────────────────────────────────
 
+/**
+ * The EU FSD sanctions download requires a `token` query parameter. It is the
+ * Commission's PUBLIC, documented access token for the consolidated list — not a
+ * credential, not per-user, and the same string for everyone.
+ *
+ * Without it the endpoint answers **403**, which is how this client was dead: it
+ * fetched the URL bare, so every sanctions screen failed. A failing sanctions
+ * fetch is the worst shape of this defect — a counterparty check that cannot run
+ * is not a clean counterparty.
+ */
+const EU_SANCTIONS_TOKEN = 'dG9rZW4tMjAxNw'
+
 export async function fetchEuSanctionsXml(): Promise<ApiResult<string>> {
   try {
     const r = await fetch(
-      'https://webgate.ec.europa.eu/fsd/fsf/public/files/xmlFullSanctionsList_1_1/content',
+      'https://webgate.ec.europa.eu/fsd/fsf/public/files/xmlFullSanctionsList_1_1/content' +
+        `?token=${EU_SANCTIONS_TOKEN}`,
     )
     if (!r.ok) return err('EU CFSP', `HTTP ${r.status}`)
     return ok('EU CFSP', await r.text())

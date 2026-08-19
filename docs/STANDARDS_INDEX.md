@@ -830,20 +830,20 @@ src/cost/centers/purchase/requisitions/index.ts:11: * @standard ISO-8601-1:2019 
 src/cost/centers/purchase/requisitions/index.ts:12: * @standard ISO-4217:2015 currency-codes
 src/cost/index.ts:11: * @standard ISO/IEC 25010:2023 §5.3 resource-utilisation (output per resource spent)
 src/country/api/client/index.ts:15: * @standard ISO-3166-1:2020 country-codes alpha-2 dispatch-key
-src/country/api/client/index.ts:568: * @standard ISO-4217:2015 currency-codes
-src/country/api/client/index.ts:569: * @standard SDMX 2.1 statistical-data-and-metadata-exchange
-src/country/api/client/index.ts:570: * @standard ISO-8601-1:2019 date-time
-src/country/api/client/index.ts:648: * @standard ISO-4217:2015 currency-codes
-src/country/api/client/index.ts:649: * @standard ISO-3166-1:2020 country-codes alpha-2
-src/country/api/client/index.ts:688: * @standard ISO-4217:2015 currency-codes
-src/country/api/client/index.ts:689: * @standard ISO-3166-1:2020 country-codes alpha-2
-src/country/api/client/index.ts:753: * @standard EN-16931:2017 §B2G semantic-model
-src/country/api/client/index.ts:754: * @standard Peppol-BIS-3.0 billing
-src/country/api/client/index.ts:776: * @standard ISO-3166-1:2020 BG country-code
-src/country/api/client/index.ts:777: * @standard EN-16931:2017 §BT-31 seller-vat-identifier
-src/country/api/client/index.ts:792: * @standard ISO-3166-1:2020 BG country-code
-src/country/api/client/index.ts:806: * @standard PSD2 EU 2015/2366 ais-pis
-src/country/api/client/index.ts:807: * @standard Berlin Group NextGenPSD2 v1.3
+src/country/api/client/index.ts:581: * @standard ISO-4217:2015 currency-codes
+src/country/api/client/index.ts:582: * @standard SDMX 2.1 statistical-data-and-metadata-exchange
+src/country/api/client/index.ts:583: * @standard ISO-8601-1:2019 date-time
+src/country/api/client/index.ts:661: * @standard ISO-4217:2015 currency-codes
+src/country/api/client/index.ts:662: * @standard ISO-3166-1:2020 country-codes alpha-2
+src/country/api/client/index.ts:701: * @standard ISO-4217:2015 currency-codes
+src/country/api/client/index.ts:702: * @standard ISO-3166-1:2020 country-codes alpha-2
+src/country/api/client/index.ts:766: * @standard EN-16931:2017 §B2G semantic-model
+src/country/api/client/index.ts:767: * @standard Peppol-BIS-3.0 billing
+src/country/api/client/index.ts:789: * @standard ISO-3166-1:2020 BG country-code
+src/country/api/client/index.ts:790: * @standard EN-16931:2017 §BT-31 seller-vat-identifier
+src/country/api/client/index.ts:805: * @standard ISO-3166-1:2020 BG country-code
+src/country/api/client/index.ts:819: * @standard PSD2 EU 2015/2366 ais-pis
+src/country/api/client/index.ts:820: * @standard Berlin Group NextGenPSD2 v1.3
 src/country/api/eu/index.ts:69: * @standard ISO-4217:2015 currency-codes
 src/country/api/eu/index.ts:70: * @standard SDMX 2.1 statistical-data-and-metadata-exchange
 src/country/api/eu/index.ts:71: * @standard ISO-8601-1:2019 date-time
@@ -3718,10 +3718,10 @@ src/cost/centers/job/positions/recruiting/pipelines/index.ts:11: * @compliance G
 src/cost/centers/job/positions/recruiting/pipelines/index.ts:12: * @compliance EU Equal Treatment Directive 2000/78
 src/cost/centers/job/positions/recruiting/pipelines/index.ts:13: * @compliance ADA / EEOC US-equal-opportunity
 src/cost/centers/purchase/requisitions/index.ts:13: * @compliance SOX §404 internal-controls four-eyes
-src/country/api/client/index.ts:690: * @compliance EU 2006/112/EC vat-system-directive Art.214
-src/country/api/client/index.ts:722: * @compliance AMLD-5 ubo-screening
-src/country/api/client/index.ts:723: * @compliance EU 2580/2001 cfsp-restrictive-measures
-src/country/api/client/index.ts:755: * @compliance EU 2014/55 b2g-e-invoicing-mandate
+src/country/api/client/index.ts:703: * @compliance EU 2006/112/EC vat-system-directive Art.214
+src/country/api/client/index.ts:735: * @compliance AMLD-5 ubo-screening
+src/country/api/client/index.ts:736: * @compliance EU 2580/2001 cfsp-restrictive-measures
+src/country/api/client/index.ts:768: * @compliance EU 2014/55 b2g-e-invoicing-mandate
 src/country/api/index.ts:26: * @compliance EU 2014/55 b2g-e-invoicing portals
 src/country/api/index.ts:27: * @compliance AMLD-5 ubo-registry-access
 src/country/client/berlin-group-psd2.ts:21: * @compliance EU 2015/2366 strong-customer-authentication
@@ -4324,9 +4324,9 @@ src/cost/centers/index.ts:16: * @accounting IFRS IAS-1 §99 statement-of-compreh
 src/cost/centers/index.ts:17: * @accounting IFRS IFRS-8 operating-segments
 src/cost/centers/index.ts:18: * @accounting US-GAAP ASC-280 segment-reporting
 src/cost/centers/job/positions/index.ts:10: * @accounting IFRS IAS-19 employee-benefits (planned-headcount accruals)
-src/country/api/client/index.ts:469: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
-src/country/api/client/index.ts:571: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
-src/country/api/client/index.ts:650: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/country/api/client/index.ts:482: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/country/api/client/index.ts:584: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/country/api/client/index.ts:663: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/country/api/eu/index.ts:72: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/country/client/bg-vat.ts:19: * @accounting IFRS IAS-1 presentation-rounding
 src/csrd/disclosures/index.ts:20: * @accounting IFRS S1 general-sustainability-disclosure
@@ -5706,10 +5706,10 @@ src/cost/centers/job/positions/index.ts:11: * @audit ISO-19011:2018 audit-trail 
 src/cost/centers/job/positions/recruiting/pipelines/index.ts:14: * @audit ISO-19011:2018 audit-trail recruiting-evidence
 src/cost/centers/purchase/requisitions/index.ts:15: * @audit ISO-19011:2018 audit-trail requisition-evidence
 src/country/api/client/index.ts:16: * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/country/api/client/index.ts:651: * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/country/api/client/index.ts:691: * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/country/api/client/index.ts:724: * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/country/api/client/index.ts:756: * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/country/api/client/index.ts:664: * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/country/api/client/index.ts:704: * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/country/api/client/index.ts:737: * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/country/api/client/index.ts:769: * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/country/client/berlin-group-psd2.ts:18: * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/country/client/bg-bank-statement-pdf.ts:34: * @audit ISO-19011:2018 audit-trail bank-statement-evidence
 src/country/client/bg-holidays.ts:18: * @audit ISO-19011:2018 audit-trail business-day-evidence

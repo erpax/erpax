@@ -94,6 +94,7 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     contract: { desc: 'Check the LIVE authorities against the same contract the gate checks offline', cmd: `${TSX} src/outward/eu/cli.ts --contract` },
     coverage: { desc: 'Which external rails erpax claims to speak vs can prove (pure, no network)', cmd: `${TSX} src/outward/eu/cli.ts --coverage` },
     bg: { desc: 'Check the two BG rails (БНБ fixing · Търговски Регистър дело) offline, or --online', cmd: `${TSX} src/outward/bg/cli.ts` },
+    world: { desc: 'Check the public world rails (brreg · OFAC · SEC · FX · OFF) offline, or --online', cmd: `${TSX} src/outward/world/cli.ts` },
   },
   rules: {
     default: { desc: 'Rules ratchet check (+ failure summary)', cmd: '__rules_check__' },

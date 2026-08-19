@@ -42,7 +42,11 @@ export const WORLD_COUNTRY_APIS: Readonly<Record<string, ReadonlyArray<CountryAp
       format: 'json',
       documentation: 'https://receitaws.com.br/',
       description: 'CNPJ lookup (community proxy over RF data).',
-      clientImplemented: true,
+      // No client module ships for this rail — `clientImplemented` means
+      // "src/country/api/client/ ships a working module", and none fetches this
+      // endpoint. It was `true`, which counted the rail as a promise erpax had
+      // not made: catalogue-only is the honest state ([[outward]]/coverage).
+      clientImplemented: false,
     },
     {
       kind: 'e_invoicing',

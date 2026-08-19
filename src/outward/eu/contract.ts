@@ -80,6 +80,29 @@ export function checkPeppol(body: string): ContractCheck {
   return ok('peppol', `matches[] present; total-result-count numeric; version ${String(json.version ?? '?')}`)
 }
 
+
+/**
+ * EU consolidated sanctions: erpax screens counterparties against this list, so the
+ * contract is the export's own header — root element, generation date, and at least
+ * one entity.
+ *
+ * A ZERO-entity list must never read as clean: an empty sanctions file screens every
+ * counterparty as unsanctioned, which is the most dangerous silent pass in the corpus.
+ * The client was ALSO dead here — it fetched without the Commission's public `token`
+ * parameter and got 403 on every call.
+ */
+export function checkSanctions(xml: string): ContractCheck {
+  if (!/<export[\s>]/i.test(xml)) {
+    return no('sanctions', 'no <export> root — a 403/error body, not the consolidated list')
+  }
+  const generated = /generationDate="([^"]+)"/i.exec(xml)?.[1]
+  if (!generated) return no('sanctions', 'generationDate absent — the list carries no issue date')
+  if (!/<sanctionEntity[\s>]/i.test(xml)) {
+    return no('sanctions', 'no <sanctionEntity> — an empty list screens everyone as clean')
+  }
+  return ok('sanctions', `consolidated list generated ${generated}`)
+}
+
 const FIXTURES = join(new URL('.', import.meta.url).pathname, 'fixtures')
 const fixture = (name: string): string => readFileSync(join(FIXTURES, name), 'utf8')
 
@@ -89,6 +112,7 @@ export function contractOffline(): readonly ContractCheck[] {
     checkVies(fixture('vies.wsdl.xml')),
     checkEcb(fixture('ecb-daily.xml')),
     checkPeppol(fixture('peppol-search.json')),
+    checkSanctions(fixture('sanctions-head.xml')),
   ]
 }
 
@@ -113,5 +137,12 @@ export async function contractOnline(fetchImpl: typeof fetch = fetch): Promise<r
     probe('vies', 'https://ec.europa.eu/taxation_customs/vies/services/checkVatService.wsdl', checkVies),
     probe('ecb', 'https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml', checkEcb),
     probe('peppol', 'https://directory.peppol.eu/search/1.0/json?q=*&rpc=1', checkPeppol),
+    // The `token` is the Commission's PUBLIC access token — without it this 403s,
+    // which is exactly how the sanctions client was dead.
+    probe(
+      'sanctions',
+      'https://webgate.ec.europa.eu/fsd/fsf/public/files/xmlFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw',
+      checkSanctions,
+    ),
   ])
 }

@@ -4,7 +4,9 @@ import { contractOffline, checkVies, checkEcb, checkPeppol } from './contract'
 /**
  * The RELEASE-GATE half: our parsers against frozen fixtures. Deterministic, offline,
  * cannot flake — a correct erpax must never fail its own release because someone
- * else's server is down (which is precisely what happened live: sanctions → 403).
+ * else's server is down. The sanctions 403 that first motivated this split turned out
+ * to be OUR bug (a missing public token), which is the case FOR the split, not against
+ * it: the offline half kept the release honest while the live half named the break.
  */
 
 describe('outward/eu contract — the frozen fixtures satisfy what erpax parses', () => {
@@ -15,7 +17,7 @@ describe('outward/eu contract — the frozen fixtures satisfy what erpax parses'
   })
 
   it('covers each reachable rail exactly once', () => {
-    expect(contractOffline().map((c) => c.rail).sort()).toEqual(['ecb', 'peppol', 'vies'])
+    expect(contractOffline().map((c) => c.rail).sort()).toEqual(['ecb', 'peppol', 'sanctions', 'vies'])
   })
 })
 

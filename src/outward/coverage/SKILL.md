@@ -22,8 +22,36 @@ What is measurable — and what actually bites — is the **gap**:
 | **`uncovered`** | **claimed but unproven — the debt** |
 | `catalogue` | no client claimed; honestly out of scope, never counted as covered |
 
-Measured 2026-08-19: **178 rails · 68 claim a client · 18 covered · 50 unproven ·
-110 catalogue-only.**
+Measured 2026-08-19, after extending the pattern across every public rail:
+**178 rails · 64 claim a client · 44 covered · 20 unproven · 114 catalogue-only.**
+
+**Zero PUBLIC rails are unproven.** All 20 remaining need credentials (oauth2 11 ·
+api_key 5 · mtls 2 · basic 2), so the floor is now provisioning, not effort — a
+distinction the ledger makes explicitly, because "20 left" otherwise reads as
+undone work.
+
+## The ledger was under-reporting itself
+
+`CONTRACTED_RAILS` was keyed by **display name**, and it held
+`'ECB Euro Reference Rates'` — a name matching **zero** rails; the registry calls it
+`'ECB Reference Exchange Rates'`. So a contract that had existed all along marked
+nothing as covered, and 9 rows sat in the debt column. The ledger's own instrument was
+the defect it exists to name: a membership test against a key nobody has **fails open**
+and reports the wrong number forever, with nothing to contradict it
+([[rules]]/unraised).
+
+Coverage is now keyed by **endpoint** — a rail's actual address, which cannot drift
+from a label — and `assertContractedRailsResolve` fails closed if any contracted
+endpoint matches no catalogued rail.
+
+## Four rails claimed a client that did not exist
+
+`clientImplemented` is defined as *"`src/country/api/client/` ships a working module"*.
+KRS, CNPJ Receita Federal, the XRechnung Validator and the БНБ payment-institutions
+register all declared `true` with **no fetch site anywhere** — the flag was counting
+promises erpax had never made. They are now `false`: catalogue-only is the honest
+state, and writing fixtures for them instead would have been exactly the theatre this
+atom refuses.
 
 A rail declaring `clientImplemented: true` is a promise that erpax parses its answers.
 With no contract beside it, that promise is exactly the corpus's own defect — a claim

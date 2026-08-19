@@ -95,7 +95,11 @@ export const BANK_APIS: Readonly<Record<string, ReadonlyArray<CountryApi>>> = {
       format: 'mixed',
       documentation: 'https://www.bnb.bg/RegistersAndServices/index.htm',
       description: 'BNB register of authorised BG ASPSPs (PSD2 + e-money institutions).',
-      clientImplemented: true,
+      // No client module ships for this rail — `clientImplemented` means
+      // "src/country/api/client/ ships a working module", and none fetches this
+      // endpoint. It was `true`, which counted the rail as a promise erpax had
+      // not made: catalogue-only is the honest state ([[outward]]/coverage).
+      clientImplemented: false,
     },
     // Major BG banks — top 10 by deposits, all PSD2-licensed AISPs/PISPs.
     // Endpoints follow the Berlin Group NextGenPSD2 v1.3 contract; per-bank

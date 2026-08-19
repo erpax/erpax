@@ -120,14 +120,27 @@ describe('BG implementation — pillar #3 + #4: every BG endpoint has clientImpl
     ).toEqual([])
   })
 
-  it('BANK_APIS.BG — 100% clientImplemented (Berlin Group generic dispatcher covers all 10 ASPSPs)', () => {
-    const banks = BANK_APIS['BG'] ?? []
-    expect(banks.length).toBeGreaterThan(0)
-    const unimplemented = banks.filter((b) => !b.clientImplemented).map((b) => b.name)
+  it('BANK_APIS.BG — 100% of the ASPSPs (the Berlin Group dispatcher covers all 10)', () => {
+    // Scoped to `open_banking`, which is what the dispatcher actually covers.
+    // This used to assert EVERY BG bank entry had a client, and passed only because
+    // the БНБ payment-institutions register carried `clientImplemented: true` while
+    // no module fetches it — a false flag propping up a too-broad claim.
+    const aspsps = (BANK_APIS['BG'] ?? []).filter((b) => b.kind === 'open_banking')
+    expect(aspsps).toHaveLength(10)
+    const unimplemented = aspsps.filter((b) => !b.clientImplemented).map((b) => b.name)
     expect(
       unimplemented,
-      `BG bank APIs without a client: ${unimplemented.join(', ')}`,
+      `BG ASPSPs without a client: ${unimplemented.join(', ')}`,
     ).toEqual([])
+  })
+
+  it('the БНБ payment-institutions register is catalogue-only, not a claimed client', () => {
+    // A directory is not an ASPSP: `discoverBgAspsps` reads the LOCAL catalogue and
+    // never fetches this endpoint, so claiming a client for it is a promise erpax
+    // has not made ([[outward]]/coverage).
+    const directory = (BANK_APIS['BG'] ?? []).filter((b) => b.kind === 'bank_directory')
+    expect(directory.length).toBeGreaterThan(0)
+    for (const d of directory) expect(d.clientImplemented, d.name).toBe(false)
   })
 })
 
