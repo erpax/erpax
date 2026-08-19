@@ -45,7 +45,10 @@ const walk = (dir: string, acc: string[] = []): string[] => {
   }
   return acc
 }
-const allSuites = walk(join(ROOT, 'src'))
+// `packages` carries the release-pipeline suite (packages/test.ts — the content-addressed
+// version manifest + build reproducibility). A suite outside the runner's globs is a check
+// that cannot fire ([[rules]]/unraised), so the release gate is discovered here too.
+const allSuites = [...walk(join(ROOT, 'src')), ...walk(join(ROOT, 'packages'))]
 /** Does a suite touch the Payload runtime — directly, or through its OWN atom's code? A suite imports
  *  local helpers (`./index` → bootVerdict, runAllInvariants) that boot Payload without the test file
  *  ever naming it, so the shallow scan misses them. Read the suite PLUS every sibling `.ts` in its

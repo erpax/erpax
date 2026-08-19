@@ -1,0 +1,133 @@
+# Publish the split @erpax/* packages (access · accounting · cloudflare · commerce · identity).
+#
+# The providers publish THEMSELVES on each release — this workflow only builds the
+# green tree and cuts the release; npm, GitHub and Zenodo do the rest:
+#   • npm     — trusted publishing (OIDC, no token). Configure per package at
+#               npmjs.com → @erpax/<pkg> → Settings → Trusted Publisher:
+#               org erpax · repo erpax · workflow publish-packages.yml
+#   • GitHub  — the Release this workflow creates IS the GitHub artifact
+#   • Zenodo  — enable the GitHub↔Zenodo integration for erpax/erpax once; every
+#               GitHub Release then auto-mints a citable DOI (zero code here)
+#
+# Versioning is CONTENT-ADDRESSED (packages/release.mjs): a package releases only
+# when its BUILT content-uuid changed. Cut a release:
+#   node packages/release.mjs --write   # bump changed package.json + released.json
+#   git commit -am 'release: <pkgs>' && git push
+#   git tag <pkg>-v<version> && git push --tags   # per changed package → fires this
+#
+# algebra (MIT tier) releases through its own publish-algebra.yml — excluded here.
+
+name: Publish packages
+
+on:
+  push:
+    tags:
+      - 'access-v*'
+      - 'accounting-v*'
+      - 'cloudflare-v*'
+      - 'commerce-v*'
+      - 'identity-v*'
+  workflow_dispatch:
+    inputs:
+      package:
+        description: 'Package leaf to publish (access|accounting|cloudflare|commerce|identity)'
+        required: true
+
+permissions:
+  contents: write # create the GitHub Release (Zenodo webhook fires on it)
+  id-token: write # npm trusted publishing (OIDC)
+
+concurrency:
+  group: npm-publish-packages-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Publish @erpax package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Resolve target package from tag or dispatch
+        id: pkg
+        run: |
+          if [ -n "${{ github.event.inputs.package }}" ]; then
+            LEAF="${{ github.event.inputs.package }}"
+          else
+            LEAF="${GITHUB_REF_NAME%%-v*}"
+          fi
+          case "$LEAF" in
+            access|accounting|cloudflare|commerce|identity) ;;
+            *) echo "::error::unknown package leaf '$LEAF'"; exit 1 ;;
+          esac
+          echo "leaf=$LEAF" >> "$GITHUB_OUTPUT"
+          echo "dir=packages/$LEAF" >> "$GITHUB_OUTPUT"
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          registry-url: 'https://registry.npmjs.org'
+          cache: pnpm
+
+      - name: Ensure modern npm (trusted publishing needs >= 11.5.1)
+        run: npm install -g npm@latest
+
+      - name: Install (workspace)
+        run: pnpm install --frozen-lockfile
+
+      - name: Assert root stays private (never publish the licensed app)
+        run: |
+          node -e "
+            const p = require('./package.json')
+            if (p.private !== true || p.name !== 'erpax') { console.error('✖ root must be private erpax'); process.exit(1) }
+            console.log('✔ root private — will not publish the app')
+          "
+
+      - name: Compliance gate — folder law + content-manifest in sync
+        run: |
+          set -euo pipefail
+          # The package's own build enforces its closureCeiling ratchet; release.mjs --check
+          # asserts the content-addressed version manifest matches the built content (no drift).
+          node packages/build.mjs all
+          node packages/release.mjs --check
+
+      - name: Assert tag matches package version
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          TAG="${GITHUB_REF_NAME##*-v}"
+          PKG="$(node -p "JSON.parse(require('fs').readFileSync('${{ steps.pkg.outputs.dir }}/package.json','utf8')).version")"
+          if [ "$TAG" != "$PKG" ]; then
+            echo "::error::Tag ${GITHUB_REF_NAME} does not match version ${PKG}"; exit 1
+          fi
+
+      - name: Fail if version already on npm
+        run: |
+          set -euo pipefail
+          NAME="$(node -p "JSON.parse(require('fs').readFileSync('${{ steps.pkg.outputs.dir }}/package.json','utf8')).name")"
+          VER="$(node -p "JSON.parse(require('fs').readFileSync('${{ steps.pkg.outputs.dir }}/package.json','utf8')).version")"
+          RAW="$(npm view "$NAME" versions --json 2>/dev/null || echo '[]')"
+          echo "$RAW" | node -e "
+            let d=''; process.stdin.on('data',c=>d+=c); process.stdin.on('end',()=>{
+              let v=[]; try{const j=JSON.parse(d||'[]'); v=Array.isArray(j)?j:(typeof j==='string'?[j]:[])}catch{}
+              if (v.includes('$VER')) { console.error('✖ $NAME@$VER already on npm — bump via release.mjs'); process.exit(2) }
+              console.log('✔ $NAME@$VER not yet published')
+            })"
+
+      - name: Publish to npm (provider publishes itself via OIDC)
+        working-directory: ${{ steps.pkg.outputs.dir }}
+        run: npm publish --access public --provenance
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # fallback only; prefer trusted publisher
+
+      - name: Create GitHub Release (fires the Zenodo DOI webhook)
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: ${{ github.ref_name }}
+          generate_release_notes: true
