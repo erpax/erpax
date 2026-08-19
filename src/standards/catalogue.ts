@@ -5524,7 +5524,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§5.1"
       },
       {
-        "path": "src/cost/index.ts",
+        "path": "src/cost/bits/index.ts",
         "section": "§5.1"
       }
     ]
@@ -9444,7 +9444,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/cost/index.ts",
+        "path": "src/cost/bits/index.ts",
         "section": ""
       },
       {

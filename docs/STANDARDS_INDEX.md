@@ -814,16 +814,20 @@ src/convention/reciprocal/index.ts:27: * @standard schema.org — the type vocab
 src/convention/sourced/index.ts:22: * @standard schema.org — the type vocabulary, collided to single words
 src/convention/triggered/index.ts:28: * @standard schema.org — the type vocabulary, collided to single words
 src/convention/twinned/index.ts:34: * @standard schema.org — the type vocabulary, collided to single words
+src/cost/bits/index.ts:128: * @standard CRAQ — Terrace & Freedman, USENIX ATC 2009
+src/cost/bits/index.ts:138: * @standard DeepSeek-Prover-V2 (recursive subgoal decomposition; Lean 4 kernel-checked)
+src/cost/bits/index.ts:13: * @standard NIST SP 800-107r1 §5.1 — 2nd-preimage ≈ L bits, collision ≈ L/2
+src/cost/bits/index.ts:14: * @standard RFC 9562 §8 — UUID security considerations
+src/cost/bits/index.ts:15: * @standard CRAQ (Terrace & Freedman, USENIX ATC 2009) — strong-consistency chain replication
+src/cost/bits/index.ts:16: * @standard DeepSeek-Prover-V2 — recursive, kernel-checked invariants
+src/cost/bits/index.ts:46: * @standard RFC 9562 §5.8 (uuidv8) · §4.1 (variant)
 src/cost/centers/index.ts:14: * @standard ISO-3166-1:2020 country-codes geographic-segment-tagging
 src/cost/centers/index.ts:15: * @standard ISO-4217:2015 currency-codes
 src/cost/centers/job/positions/index.ts:9: * @standard ISO-8601-1:2019 date-time
 src/cost/centers/job/positions/recruiting/pipelines/index.ts:9: * @standard ISO-8601-1:2019 date-time
 src/cost/centers/purchase/requisitions/index.ts:11: * @standard ISO-8601-1:2019 date-time
 src/cost/centers/purchase/requisitions/index.ts:12: * @standard ISO-4217:2015 currency-codes
-src/cost/index.ts:107: * @standard RFC 9562 §5.8 (uuidv8) · §4.1 (variant)
 src/cost/index.ts:11: * @standard ISO/IEC 25010:2023 §5.3 resource-utilisation (output per resource spent)
-src/cost/index.ts:189: * @standard CRAQ — Terrace & Freedman, USENIX ATC 2009
-src/cost/index.ts:199: * @standard DeepSeek-Prover-V2 (recursive subgoal decomposition; Lean 4 kernel-checked)
 src/country/api/client/index.ts:15: * @standard ISO-3166-1:2020 country-codes alpha-2 dispatch-key
 src/country/api/client/index.ts:338: * @standard ISO-4217:2015 currency-codes
 src/country/api/client/index.ts:339: * @standard ISO-8601-1:2019 date-time
@@ -5691,6 +5695,7 @@ src/convention/import/index.ts:15: * @audit coverage = importPurity() from @/tam
 src/convention/index.ts:8: * @audit each coverage is a live computation in its atom; this file only collects them, no logic
 src/convention/sealed/index.ts:20: * @audit catches + leaks scanned live from the SEALED git tree; coverage = (catches − leaks)/catches
 src/convention/shallow/index.ts:16: * @audit coverage = importPurity() read live from @/tamper/import; never re-implemented, never defaulted
+src/cost/bits/index.ts:17: * @audit Conservation Law 62 (coverage) — the all-directions cascade
 src/cost/centers/index.ts:19: * @audit ISO-19011:2018 audit-trail
 src/cost/centers/job/positions/index.ts:11: * @audit ISO-19011:2018 audit-trail headcount-evidence
 src/cost/centers/job/positions/recruiting/pipelines/index.ts:14: * @audit ISO-19011:2018 audit-trail recruiting-evidence
