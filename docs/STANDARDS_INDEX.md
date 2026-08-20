@@ -2274,7 +2274,7 @@ src/quantum/aura/index.ts:19: * @standard Baumgratz, Cramer & Plenio, "Quantifyi
 src/quantum/bindings/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/quantum/cache/index.ts:9: * @standard RFC 9562 §5.8 content-uuid (the cache key)
 src/quantum/calculator/index.ts:9: * @standard the digital-root / mod-9 group ([[rodin]])
-src/quantum/chat/index.ts:39: * @standard merkle hash-chain; RFC 9562 §5.8 content-uuid
+src/quantum/chat/index.ts:62: * @standard merkle hash-chain; RFC 9562 §5.8 content-uuid
 src/quantum/communication/index.ts:10: * @standard no-cloning (Wootters–Zurek 1982); RFC 9562 §5.8 content-uuid
 src/quantum/communication/key/index.ts:10: * @standard BB84 (Bennett–Brassard 1984) / E91 (Ekert 1991); no-cloning (Wootters–Zurek 1982)
 src/quantum/communication/superdense/index.ts:9: * @standard superdense coding (Bennett–Wiesner 1992); RFC 9562 §5.8 content-uuid

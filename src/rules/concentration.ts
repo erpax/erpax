@@ -322,6 +322,13 @@ export interface AttributableExport {
    * too, or the move leaves a dangling reference.
    */
   readonly carries: readonly string[]
+  /**
+   * the subset of `carries` that NOTHING left behind still needs — every other
+   * referrer is itself moving. Those travel with the declaration as one cluster
+   * and the cut stays lawful; the rest are shared matter that must stay put or
+   * be rehomed deliberately.
+   */
+  readonly carriesExclusive: readonly string[]
 }
 
 /**
@@ -381,14 +388,31 @@ export function attributableExports(atomPath: string, cwd: string = process.cwd(
   const sf = ts.createSourceFile(indexPath, text, ts.ScriptTarget.Latest, true)
   const out: AttributableExport[] = []
 
-  // every name this index declares at top level — the matter a move might drag
+  const identifiersIn = (node: ts.Node): Set<string> => {
+    const seen = new Set<string>()
+    const scan = (n: ts.Node): void => {
+      if (ts.isIdentifier(n)) seen.add(n.text)
+      ts.forEachChild(n, scan)
+    }
+    ts.forEachChild(node, scan)
+    return seen
+  }
+
+  // every name this index declares at top level — the matter a move might drag —
+  // and the declaration behind each, so a carried symbol's own deps can be followed
+  const declText = new Map<string, ts.Node>()
   const moduleLocals = new Set<string>()
   for (const st of sf.statements) {
     if ((ts.isFunctionDeclaration(st) || ts.isClassDeclaration(st) || ts.isInterfaceDeclaration(st) ||
-      ts.isTypeAliasDeclaration(st) || ts.isEnumDeclaration(st)) && st.name && ts.isIdentifier(st.name))
+      ts.isTypeAliasDeclaration(st) || ts.isEnumDeclaration(st)) && st.name && ts.isIdentifier(st.name)) {
       moduleLocals.add(st.name.text)
-    else if (ts.isVariableStatement(st))
-      for (const d of st.declarationList.declarations) if (ts.isIdentifier(d.name)) moduleLocals.add(d.name.text)
+      declText.set(st.name.text, st)
+    } else if (ts.isVariableStatement(st))
+      for (const d of st.declarationList.declarations)
+        if (ts.isIdentifier(d.name)) {
+          moduleLocals.add(d.name.text)
+          declText.set(d.name.text, st)
+        }
   }
 
   for (const st of sf.statements) {
@@ -428,13 +452,80 @@ export function attributableExports(atomPath: string, cwd: string = process.cwd(
       ts.forEachChild(n, bind)
     }
     ts.forEachChild(st, bind)
-    const carries = [...used]
-      .filter((u) => u !== name && !bound.has(u) && moduleLocals.has(u) && !byChild.get(hits[0]!.child)?.has(u))
-      .sort()
+    // Carried matter has its OWN dependencies. ClaimVerdict drags ClaimStatus and
+    // crackTheorem drags TheoremCrack, neither of which the exported declaration
+    // mentions — so a one-level scan reports a cut that dangles the moment it lands.
+    // The set closes transitively before it is reported.
+    const owned = hits[0]!.child
+    const direct = (names: ReadonlySet<string>): string[] =>
+      [...names].filter((u) => u !== name && !bound.has(u) && moduleLocals.has(u) && !byChild.get(owned)?.has(u))
+    const carrySet = new Set(direct(used))
+    for (let grew = true; grew; ) {
+      grew = false
+      for (const c of [...carrySet]) {
+        const decl = declText.get(c)
+        if (!decl) continue
+        for (const dep of direct(identifiersIn(decl))) {
+          if (dep === name || carrySet.has(dep)) continue
+          carrySet.add(dep)
+          grew = true
+        }
+      }
+    }
+    const carries = [...carrySet].sort()
 
-    out.push({ name, child: hits[0]!.child, via: hits[0]!.via.sort(), carries })
+    out.push({ name, child: hits[0]!.child, via: hits[0]!.via.sort(), carries, carriesExclusive: [] })
   }
-  return out
+
+  // Exclusivity is a property of the WHOLE manifest, so it is decided once every
+  // mover is known: a carried declaration travels freely when its only remaining
+  // referrers are movers themselves (its own declaration does not count as a use).
+  const movers = new Set(out.map((m) => m.name))
+  const referrers = new Map<string, Set<string>>()
+  for (const st of sf.statements) {
+    const owner =
+      ts.isFunctionDeclaration(st) || ts.isClassDeclaration(st) || ts.isInterfaceDeclaration(st) ||
+      ts.isTypeAliasDeclaration(st) || ts.isEnumDeclaration(st)
+        ? st.name && ts.isIdentifier(st.name) ? st.name.text : undefined
+        : ts.isVariableStatement(st) && st.declarationList.declarations[0] &&
+          ts.isIdentifier(st.declarationList.declarations[0].name)
+          ? st.declarationList.declarations[0].name.text
+          : undefined
+    if (!owner) continue
+    const seen = new Set<string>()
+    const scan = (n: ts.Node): void => {
+      if (ts.isIdentifier(n)) seen.add(n.text)
+      ts.forEachChild(n, scan)
+    }
+    ts.forEachChild(st, scan)
+    for (const u of seen) {
+      if (u === owner) continue
+      if (!referrers.has(u)) referrers.set(u, new Set())
+      referrers.get(u)!.add(owner)
+    }
+  }
+  // A cluster closes on itself: a symbol whose only referrer is ANOTHER symbol in the
+  // same cluster is still exclusive to it. So the travelling set grows until it stops
+  // growing — one pass would call ChatFtl shared with ChatMachine while ChatMachine is
+  // moving too.
+  const travelling = new Set(movers)
+  for (let grew = true; grew; ) {
+    grew = false
+    for (const m of out)
+      for (const c of m.carries) {
+        if (travelling.has(c)) continue
+        if ([...(referrers.get(c) ?? [])].every((r) => r === m.name || travelling.has(r))) {
+          travelling.add(c)
+          grew = true
+        }
+      }
+  }
+  return out.map((m) => ({
+    ...m,
+    carriesExclusive: m.carries.filter((c) =>
+      [...(referrers.get(c) ?? [])].every((r) => r === m.name || travelling.has(r)),
+    ),
+  }))
 }
 
 /** Every hub's computed split, largest first — the campaign as a manifest, not a suggestion. */

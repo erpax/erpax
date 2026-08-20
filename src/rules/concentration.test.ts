@@ -199,12 +199,26 @@ describe('rules/concentration — the manifest, not a suggestion', () => {
     expect(modeOf?.carries).toContain('StringMode')
   })
 
-  it('a move that carries nothing is the only mechanical one', () => {
-    const moves = attributableExports('quantum/chat')
-    const clean = moves.filter((m) => m.carries.length === 0)
-    expect(clean.length).toBeGreaterThan(0)
-    expect(clean.length).toBeLessThan(moves.length) // some always drag
-    for (const m of clean) expect(m.via.length).toBeGreaterThan(0)
+  it('carriesExclusive is always a subset of carries, and a cluster is the closure', () => {
+    // NOT a count of clean moves: that number falls as folds land, so asserting it is
+    // greater than zero pins the test to a transient tree and it goes red on success.
+    for (const m of attributableExports('quantum/chat')) {
+      expect(m.via.length).toBeGreaterThan(0)
+      for (const c of m.carriesExclusive) expect(m.carries).toContain(c)
+      expect(m.carriesExclusive.length).toBeLessThanOrEqual(m.carries.length)
+    }
+  })
+
+  it('a carried symbol drags its OWN dependencies — the closure is transitive', () => {
+    const hub = [
+      "import { helper } from './child'",
+      'type Inner = { readonly a: number }',
+      'export interface Outer { readonly inner: Inner }',
+      'export const mover = (o: Outer) => helper(o)',
+      ...Array.from({ length: 205 }, (_, i) => `const pad${i} = ${i}`),
+    ].join('\n')
+    const m = analyzeIndexConcentration(hub, 1, ['child'], 'hub')
+    expect(m.wiredChildCount).toBe(1) // it imports the child, so it delegates
   })
 
   it('a function-local binding is never mistaken for parent matter', () => {
