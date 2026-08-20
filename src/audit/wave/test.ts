@@ -1,5 +1,9 @@
 import { describe, it, expect } from 'vitest'
-import { trendOf, sequenceOf, type AuditWaveEntry } from '@/audit/wave'
+import { mkdtempSync, rmSync } from 'node:fs'
+import { tmpdir } from 'node:os'
+import { join } from 'node:path'
+
+import { trendOf, sequenceOf, trendWindow, type AuditWaveEntry } from '@/audit/wave'
 
 describe('audit/waves — the self-improving sequence', () => {
   it('trendOf reads the trajectory — new, regression, improving, stuck', () => {
@@ -32,5 +36,22 @@ describe('audit/waves — the self-improving sequence', () => {
       { axis: 'b', count: 100, prev: 50, trend: 'regression' },
     ]
     expect(sequenceOf(entries)[0]!.axis).toBe('b')
+  })
+
+  it('a trend states the window it is measured against', () => {
+    const w = trendWindow()
+    expect(w.to).toMatch(/^[0-9a-f]{40}$|^unknown$/)
+    // `from` null means the previous run recorded no commit — and then `commits`
+    // must be null too, never a number implying a known span
+    if (w.from === null) expect(w.commits).toBeNull()
+    else expect(w.from).toMatch(/^[0-9a-f]{7,40}$/)
+  })
+
+  it('outside a git tree the window degrades to unknown rather than throwing', () => {
+    const outside = mkdtempSync(join(tmpdir(), 'erpax-nogit-'))
+    const w = trendWindow(outside)
+    expect(w.from).toBeNull()
+    expect(w.commits).toBeNull()
+    rmSync(outside, { recursive: true, force: true })
   })
 })

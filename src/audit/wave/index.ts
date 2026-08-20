@@ -13,6 +13,7 @@
  * @audit counts measured by the gates' own scans — never transcribed; history is a cache of
  *        measurements (losing it only resets trends to 'new')
  */
+import { execSync } from 'node:child_process'
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { pathWireViolations } from '@/index/cross'
@@ -32,11 +33,63 @@ export interface AuditWaveEntry {
   readonly trend: AuditTrend
 }
 
+/**
+ * What a trend is measured AGAINST.
+ *
+ * The history is a ring in node_modules/.cache, so `prev` is whatever the last
+ * person to run this measured — which may be one commit ago or a hundred. A run
+ * once reported gravity-oneway at 2251 "was 2202" and the natural reading, +49
+ * introduced now, was wrong: the corpus stood at 2591 before that session began
+ * and exactly 3 were new. A trend that cannot say what it compares to invites
+ * that reading every time.
+ *
+ * The SHA is recorded beside each measurement so the window is stated rather
+ * than assumed. An absent SHA means the snapshot predates this record and the
+ * window is genuinely unknown — which is itself the honest answer.
+ */
+export interface TrendWindow {
+  /** the commit the previous measurement was taken at, if it was recorded */
+  readonly from: string | null
+  /** the commit this measurement is taken at */
+  readonly to: string
+  /** commits between the two, or null when `from` is unknown */
+  readonly commits: number | null
+}
+
+export function trendWindow(cwd: string = process.cwd()): TrendWindow {
+  const at = (args: string): string | null => {
+    try {
+      return execSync(args, { cwd, encoding: 'utf8', stdio: 'pipe' }).trim() || null
+    } catch {
+      return null
+    }
+  }
+  const to = at('git rev-parse HEAD') ?? 'unknown'
+  const from = readShaHistory(cwd)
+  if (!from) return { from: null, to, commits: null }
+  const span = at(`git rev-list --count ${from}..${to}`)
+  return { from, to, commits: span === null ? null : Number(span) }
+}
+
 const HISTORY_RING = 20
 const historyPath = (cwd: string): string =>
   join(cwd, 'node_modules', '.cache', 'erpax', 'audit-waves.json')
 
 type History = Record<string, number[]>
+
+/** The SHA the previous run was taken at — absent in a history written before this. */
+const SHA_KEY = '__sha'
+
+const readShaHistory = (cwd: string): string | null => {
+  try {
+    const parsed: unknown = JSON.parse(readFileSync(historyPath(cwd), 'utf8'))
+    if (typeof parsed !== 'object' || parsed === null) return null
+    const sha = (parsed as Record<string, unknown>)[SHA_KEY]
+    return typeof sha === 'string' && sha.length > 0 ? sha : null
+  } catch {
+    return null
+  }
+}
 
 const readHistory = (cwd: string): History => {
   try {
@@ -44,6 +97,7 @@ const readHistory = (cwd: string): History => {
     if (typeof parsed !== 'object' || parsed === null) return {}
     const out: History = {}
     for (const [k, v] of Object.entries(parsed)) {
+      if (k === SHA_KEY) continue
       if (Array.isArray(v)) out[k] = v.filter((n): n is number => typeof n === 'number' && Number.isFinite(n))
     }
     return out
@@ -103,7 +157,10 @@ export function auditWaves(cwd: string = process.cwd()): AuditWaveEntry[] {
   }
   try {
     mkdirSync(dirname(historyPath(cwd)), { recursive: true })
-    writeFileSync(historyPath(cwd), JSON.stringify(history))
+    // stamp the commit, so the NEXT run can say what its trend is measured against
+    const stamped: Record<string, unknown> = { ...history }
+    stamped[SHA_KEY] = trendWindow(cwd).to
+    writeFileSync(historyPath(cwd), JSON.stringify(stamped))
   } catch {
     /* lost history only resets trends to 'new' */
   }
@@ -111,8 +168,14 @@ export function auditWaves(cwd: string = process.cwd()): AuditWaveEntry[] {
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
+  const window = trendWindow()
   const seq = auditWaves()
-  console.log('audit/waves — all dimensions, self-improving sequence\n')
+  console.log('audit/waves — all dimensions, self-improving sequence')
+  console.log(
+    window.from === null
+      ? '  trend window: UNKNOWN — the previous run recorded no commit, so "was" spans an unmeasured stretch\n'
+      : `  trend window: ${window.from.slice(0, 9)}..${window.to.slice(0, 9)} (${window.commits ?? '?'} commit(s))\n`,
+  )
   const mark: Record<AuditTrend, string> = { regression: '✗↑', stuck: '≍', improving: '✓↓', new: '·' }
   for (const e of seq) {
     const delta = e.prev === null ? '' : ` (was ${e.prev})`
