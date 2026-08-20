@@ -85,3 +85,33 @@ export function storageYield(eff: CycleEfficiency): {
   const v = cycleMole(eff)
   return { storedKJ: v.inKJ * MOL_PER_LITRE, recoverableKJ: v.outKJ * MOL_PER_LITRE, potableLitres: 1 }
 }
+
+// NIST / CODATA. Units live in the NAMES, not in comments beside them — a physical
+// constant read at a call site should carry its unit where it cannot be missed.
+export const SPLIT_GIBBS_KJ_PER_MOL = 237.13  // quantum scale: this IS the electronic-structure answer
+export const FARADAY_C_PER_MOL = 96485
+export const BOLTZMANN_J_PER_K = 1.380649e-23
+export const AVOGADRO_PER_MOL = 6.02214076e23
+
+/** The reversible cell voltage — ΔG/(2F). Every real cell needs more. */
+export function reversibleVoltage(): number {
+  return (SPLIT_GIBBS_KJ_PER_MOL * 1000) / (2 * FARADAY_C_PER_MOL)
+}
+
+/** Landauer floor per mole of erased bits — the demon pays kT ln2 and mints nothing. */
+export function landauerKJPerMol(kelvin = 298): number {
+  return (BOLTZMANN_J_PER_K * kelvin * Math.LN2 * AVOGADRO_PER_MOL) / 1000
+}
+
+export interface PhotonPath {
+  /** solar-to-hydrogen; twoStep is the PV → electricity → electrolyser it replaces */
+  readonly sth: number
+  readonly twoStep: number
+  readonly beatsTwoStep: boolean
+}
+
+/** Photocatalysis — photons split directly, skipping two conversions. The sun still pays. */
+export function photonPath(sth: number, pv = 0.22, electrolyser = 0.8): PhotonPath {
+  const twoStep = pv * electrolyser
+  return { sth, twoStep, beatsTwoStep: sth > twoStep }
+}

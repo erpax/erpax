@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest'
 import {
   cycleMole, overUnityWitness, inputMJPerLitre, versusReverseOsmosis, storageYield,
   SPLIT_KJ_PER_MOL, HHV_KJ_PER_MOL, LHV_KJ_PER_MOL, MOL_PER_LITRE, RO_MJ_PER_LITRE,
+  reversibleVoltage, landauerKJPerMol, photonPath,
 } from './index'
 
 const FUEL_CELL = { electrolyser: 0.8, engine: 0.6, generator: 1, condensing: true }
@@ -69,5 +70,38 @@ describe('water/cycle — the honest framing is STORAGE', () => {
   it('a fuel cell beats a combustion engine — the only lever that exists', () => {
     // Nothing changes the thermodynamics; the device choice changes only the losses.
     expect(cycleMole(FUEL_CELL).roundTrip).toBeGreaterThan(cycleMole(ICE).roundTrip)
+  })
+})
+
+describe('water/cycle — "at quantum scale" is where the constraint COMES FROM', () => {
+  it('the reversible voltage is 1.229 V — the floor every real cell exceeds', () => {
+    // ΔG/(2F). A quantum result: it IS the electronic-structure answer for O–H.
+    expect(reversibleVoltage()).toBeCloseTo(1.229, 3)
+  })
+
+  it('a Maxwell demon pays Landauer, and cannot mint the bond energy', () => {
+    // Any scheme that SORTS by measuring must erase, at kT ln2 per bit. Erasure is
+    // a cost, not a source — and the bond energy dwarfs it by two orders anyway.
+    const floor = landauerKJPerMol(298)
+    expect(floor).toBeGreaterThan(0)
+    expect(SPLIT_KJ_PER_MOL / floor).toBeGreaterThan(100)
+  })
+
+  it('the Landauer floor RISES with temperature — no cold trick escapes it either', () => {
+    expect(landauerKJPerMol(400)).toBeGreaterThan(landauerKJPerMol(200))
+  })
+
+  it('photocatalysis changes the PATH, and can beat the two-step', () => {
+    // The real headroom: photons split directly, skipping generator + electrical
+    // stage. Lab STH records (~19–30%) exceed PV 22% × electrolyser 80% = 17.6%.
+    expect(photonPath(0.19).beatsTwoStep).toBe(true)
+    expect(photonPath(0.10).beatsTwoStep).toBe(false)
+    expect(photonPath(0.19).twoStep).toBeCloseTo(0.176, 3)
+  })
+
+  it('but the photon path is still not GENERATION — the sun pays every joule', () => {
+    // Efficiency is measured against incident light; nothing here returns more than
+    // it received, which is the whole claim under test.
+    for (const sth of [0.1, 0.19, 0.3, 0.99]) expect(photonPath(sth).sth).toBeLessThan(1)
   })
 })

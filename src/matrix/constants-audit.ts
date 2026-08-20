@@ -50,7 +50,14 @@ export interface MatrixCrackViolation {
 const SRC = 'src'
 
 /** Physical ratios and ring digits — lawful numeric literals. */
-const LAWFUL_PHYSICAL = new Set(['HORO_DIGITS', 'HORO_MEASURE', 'LANDAUER_BIT', 'COMPARABLE_UNIT'])
+// Measured constants of nature and NIST enthalpies. The audit's own rule already
+// names "physical ratios" as lawful: these are not statics a theorem could fold —
+// they are what the theorems are computed FROM.
+const LAWFUL_PHYSICAL = new Set([
+  'HORO_DIGITS', 'HORO_MEASURE', 'LANDAUER_BIT', 'COMPARABLE_UNIT',
+  'FARADAY_C_PER_MOL', 'BOLTZMANN_J_PER_K', 'AVOGADRO_PER_MOL',
+  'SPLIT_KJ_PER_MOL', 'HHV_KJ_PER_MOL', 'LHV_KJ_PER_MOL', 'SPLIT_GIBBS_KJ_PER_MOL', 'MOL_PER_LITRE',
+])
 
 /** Explicit binding tables — wrangler TYPE_LINKS and kin. */
 const LAWFUL_BINDING_NAMES = new Set([

@@ -48,6 +48,30 @@ Note the shape of that: the purification cost depends **only on splitting**, so 
 engine recovers more energy but does not make the water any cheaper. Engine choice moves
 the round-trip, never the litre.
 
+## "At quantum scale" is where the constraint comes FROM
+
+285.83 kJ/mol **is** a quantum result — the O–H bond energy from electronic structure.
+The reversible cell voltage falls straight out of it: ΔG/(2F) = **1.229 V**, the floor
+every real cell exceeds. So invoking quantum scale names the origin of the limit, not
+an exit from it.
+
+What quantum effects genuinely change is the **path** and the **rate**, never the state
+function. Catalysis and tunnelling lower activation barriers — they make the reaction
+*faster*, not *cheaper*. Zero-point energy has no lower state to fall to.
+
+**The demon pays too.** Any scheme that sorts molecules by measuring them — however
+quantum — must eventually erase what it learned, at `kT ln 2` per bit. That is
+**1.72 kJ/mol** at 298 K: a cost, not a source, and 166× smaller than the bond energy
+it would need to mint. `landauerKJPerMol` makes that explicit, and it *rises* with
+temperature, so no cold trick escapes it either.
+
+**The one real gain is photocatalysis.** A sufficiently energetic photon drives the
+split directly, skipping both the generator and the electrolyser's electrical stage.
+Lab solar-to-hydrogen records (~19–30%) beat the two-step PV 22% × electrolyser 80% =
+**17.6%** — a genuine advantage, and `photonPath` computes which side wins. It removes
+conversions; it does not remove the sun. Efficiency there is measured against incident
+light, so nothing returns more than it received.
+
 ## Where it wins
 
 Off-grid, with surplus input and a need for *both* outputs: dispatchable energy and
