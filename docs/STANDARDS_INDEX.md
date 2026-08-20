@@ -3009,7 +3009,7 @@ src/uuid/llm/index.ts:21: * @standard RFC 9562 §5.8 (uuidv8 structured content-
 src/uuid/llm/index.ts:22: * @standard ITU-T X.667 (uuid ↔ 2.25 OID, via localize)
 src/uuid/llm/index.ts:23: * @standard ISO-16:1975 a432 (the signal anchor — color+sound from position)
 src/uuid/matrix/generated.ts:10: * @standard RFC 9562 §5.8 (uuidv8 content-uuid) + the horo digital-root ring
-src/uuid/matrix/index.ts:48: * @standard RFC 9562 §5.8 (uuidv8 content-uuid) + §4.1 variant
+src/uuid/matrix/index.ts:50: * @standard RFC 9562 §5.8 (uuidv8 content-uuid) + §4.1 variant
 src/uuid/projection/index.ts:10: * @standard CSS Color 4 hsl() (the colour facet)
 src/uuid/projection/index.ts:9: * @standard RFC 9562 §5.8 content-addressed uuidv8 (the identity the facets hang on)
 src/uuid/share/index.ts:47: * @standard NIST SP 800-162 ABAC

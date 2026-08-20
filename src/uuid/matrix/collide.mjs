@@ -240,7 +240,12 @@ if (EMIT) {
     ']',
     '',
   ]
-  const file = join(dir, 'matrix.generated.ts')
+  // `generated.ts` — NOT `matrix.generated.ts`. The file was renamed (the path
+  // already says `matrix`) and the TS importers were rewritten, but this emitter is
+  // a .mjs and the rename scan only walked .ts/.tsx, so it kept writing a name
+  // nothing reads. Every regeneration between then and now was discarded silently,
+  // while the seal gate validated the stale snapshot against its own root and passed.
+  const file = join(dir, 'generated.ts')
   writeFileSync(file, out.join('\n'))
   console.log(`\nemitted ${relative(process.cwd(), file)} — ${nodes.length} nodes, ${fmt(edges.length)} edges, root ${root}`)
 }

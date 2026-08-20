@@ -288,6 +288,57 @@ export function depthManifest(
   return ops
 }
 
+/**
+ * Files that name a module as a STRING, outside the TypeScript import graph.
+ *
+ * The researcher walks `.ts`/`.tsx` and parses import specifiers, so a `.mjs` script
+ * holding `join(dir, 'matrix.generated.ts')` is invisible to it — and that is not
+ * hypothetical: renaming `matrix.generated.ts` → `generated.ts` rewrote both TS
+ * importers and left the emitter writing a filename nothing read. Every matrix
+ * regeneration after that was discarded, and the 4-seal gate went on validating a
+ * stale snapshot against its own root, reporting green over 59 unsigned atoms.
+ *
+ * No parser can resolve such a reference (it is assembled from fragments), so the
+ * only honest response is to REFUSE the rename and name the file that must change
+ * with it — the same rule the campaign already applies to an ambiguous op.
+ */
+export function stringReferrers(file: string, cwd: string = process.cwd()): string[] {
+  const base = file.slice(file.lastIndexOf('/') + 1)
+  const out: string[] = []
+  const walk = (dir: string): void => {
+    let entries: string[]
+    try {
+      entries = readdirSync(dir)
+    } catch {
+      return
+    }
+    for (const e of entries) {
+      if (e.startsWith('.') || e === 'node_modules') continue
+      const p = join(dir, e)
+      let dirFlag = false
+      try {
+        dirFlag = statSync(p).isDirectory()
+      } catch {
+        continue
+      }
+      if (dirFlag) {
+        if (!SKIP_DIR.has(e)) walk(p)
+        continue
+      }
+      // Only NON-TypeScript carriers — the .ts graph is already handled by parsing.
+      if (!/\.(mjs|cjs|js|json|sh|ya?ml)$/i.test(e)) continue
+      try {
+        if (readFileSync(p, 'utf8').includes(`'${base}'`)) out.push(p.slice(cwd.length + 1))
+      } catch {
+        /* unreadable */
+      }
+    }
+  }
+  walk(join(cwd, SRC))
+  walk(join(cwd, 'scripts'))
+  return out
+}
+
 /** Every `@/` or relative specifier in src resolves — the ring a batch is verified by. */
 export function danglingSpecifiers(cwd: string = process.cwd()): string[] {
   const bad: string[] = []
@@ -352,6 +403,13 @@ export async function runHyphenCampaign(opts: {
   // the op ([[scalpel]]).
   const withheld: string[] = []
   const all = candidates.filter((r) => {
+    // A non-TS file naming this module as a literal cannot be rewritten by parsing,
+    // and moving without it silently breaks whatever that script writes or reads.
+    const carriers = stringReferrers(r.from, cwd)
+    if (carriers.length > 0) {
+      withheld.push(`${r.from} — named as a string by ${carriers.join(', ')}; that file must change in the same diff`)
+      return false
+    }
     const bad = planScalpel(renameManifest([r], cwd), cwd).verdicts.filter((v) => v.state !== 'cuts')
     if (bad.length === 0) return true
     withheld.push(`${r.from} — ${bad.length} op(s) refuse (${bad[0]!.state}); needs a human`)

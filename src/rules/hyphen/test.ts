@@ -2,7 +2,7 @@ import { describe, it, expect, afterAll } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { viableRenames, resolveSpec, renameManifest, danglingSpecifiers, codeFiles } from './index'
+import { viableRenames, resolveSpec, renameManifest, danglingSpecifiers, codeFiles, stringReferrers } from './index'
 import { planScalpel } from '@/scalpel'
 
 /**
@@ -112,5 +112,27 @@ describe('rules/hyphen — the ring', () => {
     write('ai/orphan.ts', "import { gone } from './not-here'\nexport const o = gone\n")
     expect(danglingSpecifiers(root).some((d) => d.includes('not-here'))).toBe(true)
     rmSync(join(root, 'src/ai/orphan.ts'))
+  })
+})
+
+describe('rules/hyphen — a module named as a STRING outside the import graph', () => {
+  it('finds a non-TS carrier and would withhold the rename', () => {
+    // The real failure: renaming matrix.generated.ts → generated.ts rewrote both TS
+    // importers and left collide.mjs writing a filename nothing read. Every matrix
+    // regeneration after that was discarded and the 4-seal gate validated a stale
+    // snapshot against its own root — green over 59 unsigned atoms.
+    write('tool/runner.mjs', "const out = join(dir, 'target.ts')\n")
+    write('tool/target.ts', 'export const t = 1\n')
+    expect(stringReferrers('src/tool/target.ts', root)).toContain('src/tool/runner.mjs')
+  })
+
+  it('does not flag a TypeScript importer — parsing already covers those', () => {
+    write('tool/ordinary.ts', 'export const o = 1\n')
+    write('tool/user.ts', "import { o } from './ordinary'\nexport const u = o\n")
+    expect(stringReferrers('src/tool/ordinary.ts', root)).toEqual([])
+  })
+
+  it('the live matrix emitter is caught — this is the case that was missed', () => {
+    expect(stringReferrers('src/uuid/matrix/generated.ts')).toContain('src/uuid/matrix/collide.mjs')
   })
 })

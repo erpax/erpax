@@ -16,6 +16,8 @@
  * @see ./matrix.generated.ts (the data) · ./collide.mjs (the collider) · ./gate.ts (the 4-seal lane)
  */
 import { createHash } from 'node:crypto'
+import { existsSync, readdirSync, statSync } from 'node:fs'
+import { join } from 'node:path'
 // `norm` is a trivial pure normaliser; importing it from `@/corpus` dragged the fs-based dev corpus
 // walker (index.mts: loadCorpus/walk) into the app + admin bundle (Worker-unsafe, unparseable .mts).
 // Inline it — behaviour-identical, and it severs the corpus-dev-tooling → matrix → admin-field edge.
@@ -400,6 +402,41 @@ export const tamperedAtoms = (): string[] =>
  * generated matrix is caught by the diamond-membership / readme lane (unfolded matter), not here. Tamper-
  * EVIDENT at the 2^128 coverage limit, never literally impossible (see @/merge bind4).
  */
+/**
+ * Atom folders on disk — a SKILL.md-bearing directory under src.
+ *
+ * Deliberately a LOCAL walk with no imports: the matrix must be able to check its
+ * own coverage without depending on the rules registry, which depends on the matrix.
+ */
+function liveAtomPaths(cwd: string = process.cwd()): string[] {
+  const root = join(cwd, 'src')
+  const out: string[] = []
+  const walk = (dir: string, rel: string): void => {
+    let entries: string[]
+    try {
+      entries = readdirSync(dir)
+    } catch {
+      return
+    }
+    for (const e of entries) {
+      if (e.startsWith('.') || e === 'node_modules') continue
+      const p = join(dir, e)
+      let isDir = false
+      try {
+        isDir = statSync(p).isDirectory()
+      } catch {
+        continue
+      }
+      if (!isDir) continue
+      const childRel = rel ? `${rel}/${e}` : e
+      if (existsSync(join(p, 'SKILL.md'))) out.push(childRel)
+      walk(p, childRel)
+    }
+  }
+  walk(root, '')
+  return out
+}
+
 export function assertMatrixSigned(): { signed: number } {
   const tampered = tamperedAtoms()
   if (tampered.length > 0) {
@@ -410,6 +447,19 @@ export function assertMatrixSigned(): { signed: number } {
   const { ok, root } = verifyRoot()
   if (!ok) {
     throw new Error(`✗ 4-seal gate: matrix root does not fold to UUID_MATRIX_ROOT (got ${root.slice(0, 16)}…) — the holographic collapse is broken`)
+  }
+  // COVERAGE. Everything above verifies the matrix against ITSELF, so a stale
+  // snapshot is perfectly self-consistent and passes while atoms added since are
+  // simply absent. That is exactly what happened: the emitter was writing a filename
+  // nothing read, and this gate reported "3249 atoms signed" over a 3308-atom corpus
+  // for a fortnight. A seal that cannot see what it is missing seals nothing.
+  const signedPaths = new Set(UUID_MATRIX_NODES.map((n) => n.path))
+  const unsigned = liveAtomPaths().filter((a) => !signedPaths.has(a))
+  if (unsigned.length > 0) {
+    throw new Error(
+      `✗ 4-seal gate: ${unsigned.length} live atom(s) are NOT IN THE MATRIX — the snapshot is stale, ` +
+        `regenerate with \`pnpm erpax corpus matrix\`: ${unsigned.slice(0, 8).join(', ')}${unsigned.length > 8 ? '…' : ''}`,
+    )
   }
   return { signed: UUID_MATRIX_NODES.length }
 }

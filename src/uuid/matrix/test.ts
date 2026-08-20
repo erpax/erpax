@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest'
 
-import { backlinksOf, neighborsOf } from './index'
+import { existsSync, readdirSync, statSync } from 'node:fs'
+import { join } from 'node:path'
+import { assertMatrixSigned, backlinksOf, neighborsOf } from './index'
 import { UUID_MATRIX_EDGES, UUID_MATRIX_NODES } from './generated'
 
 /**
@@ -67,5 +69,36 @@ describe('uuid/matrix — adjacency by address', () => {
       backlinksOf(n.atom)
     }
     expect(Date.now() - t0).toBeLessThan(5_000)
+  })
+})
+
+describe('uuid/matrix — the seal must see what it is MISSING', () => {
+  it('every live atom is in the matrix', () => {
+    // Everything else in the 4-seal gate verifies the matrix against ITSELF: the
+    // binds recompute and the root folds. A stale snapshot satisfies both perfectly
+    // while atoms added since are simply absent — which is what happened. The
+    // emitter was writing `matrix.generated.ts` after the file was renamed to
+    // `generated.ts`, so every regeneration was discarded, and the gate reported
+    // "3249 atoms signed" over a 3308-atom corpus for a fortnight.
+    const signed = new Set(UUID_MATRIX_NODES.map((n) => n.path))
+    const live: string[] = []
+    const walk = (dir: string, rel: string): void => {
+      for (const e of readdirSync(dir)) {
+        if (e.startsWith('.') || e === 'node_modules') continue
+        const p = join(dir, e)
+        if (!statSync(p).isDirectory()) continue
+        const child = rel ? `${rel}/${e}` : e
+        if (existsSync(join(p, 'SKILL.md'))) live.push(child)
+        walk(p, child)
+      }
+    }
+    walk(join(process.cwd(), 'src'), '')
+    expect(live.filter((a) => !signed.has(a))).toEqual([])
+  })
+
+  it('assertMatrixSigned REFUSES a matrix that does not cover the corpus', () => {
+    // Fail-closed on staleness, not just on tampering.
+    expect(() => assertMatrixSigned()).not.toThrow()
+    expect(assertMatrixSigned().signed).toBe(UUID_MATRIX_NODES.length)
   })
 })
