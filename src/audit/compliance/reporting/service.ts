@@ -32,6 +32,24 @@ interface AuditFileMetadata {
   generatorCode: string
   auditFileCountry: string
   defaultCurrencyCode: string
+  /**
+   * SAF-T 3.0.2 §1 Header identity — the taxpayer the file is filed for.
+   *
+   * These fields did not exist, and the header carried the literal strings
+   * 'Consolidated Group', 'Address', 'Contact' and 'Tax ID': a fabricated identity
+   * in a tax-authority submission, read by the auditor and the revenue inspector
+   * and by nobody else who could tell it was invented.
+   *
+   * `companyName` and `companyTaxId` IDENTIFY the taxpayer and are refused when
+   * absent. `companyAddress` and `companyContact` are required by §1 too, but the
+   * tenant does not model them yet — so they pass through and land EMPTY rather
+   * than invented. An empty element is an incomplete file; a filled one that says
+   * 'Address' is a false one, and only the second is indistinguishable from real.
+   */
+  companyName: string
+  companyTaxId: string
+  companyAddress?: string
+  companyContact?: string
 }
 
 interface RegulatoryFilingMetadata {
@@ -130,7 +148,23 @@ export class AuditComplianceReporting {
     taxPeriodData: Record<string, unknown>,
     journalEntries: JournalEntry[],
   ): AuditReport {
-    // Simplified: construct SAF-T XML structure as nested JSON
+    // FAIL-CLOSED: an audit file identifies the taxpayer it is filed for. A missing
+    // identity is refused, never defaulted — a submission carrying a placeholder where
+    // a tax number belongs is worse than no submission, because it looks like one.
+    const identity: readonly [keyof AuditFileMetadata, string][] = [
+      ['companyName', metadata.companyName],
+      ['companyTaxId', metadata.companyTaxId],
+    ]
+    const missing = identity.filter(([, v]) => !v || v.trim() === '').map(([k]) => k)
+    if (missing.length > 0) {
+      throw new Error(
+        `[generateAuditFile] refusing to build a SAF-T ${metadata.auditFileVersion} file with no taxpayer identity: ${missing.join(', ')} — SAF-T 3.0.2 §1 Header`,
+      )
+    }
+
+    // The structure below is SAF-T shaped but is stored as JSON; XSD-validated XML
+    // needs a serializer this corpus does not yet have for SAF-T (saf/t/types.ts:498
+    // says so, and sale/audit-file.ts shows the shape one takes for the BG СУПТО file).
     const auditFileStructure = {
       AuditFile: {
         Header: {
@@ -138,10 +172,10 @@ export class AuditComplianceReporting {
           AuditingStandard: metadata.auditingStandard,
           AuditFileDate: metadata.generatedDate,
           CompanyID: metadata.generatorCode,
-          CompanyName: 'Consolidated Group',
-          CompanyAddress: 'Address',
-          CompanyContact: 'Contact',
-          CompanyTaxID: 'Tax ID',
+          CompanyName: metadata.companyName,
+          CompanyAddress: metadata.companyAddress ?? '',
+          CompanyContact: metadata.companyContact ?? '',
+          CompanyTaxID: metadata.companyTaxId,
           AuditFileCountry: metadata.auditFileCountry,
           DefaultCurrencyCode: metadata.defaultCurrencyCode,
           DateCreated: new Date().toISOString(),

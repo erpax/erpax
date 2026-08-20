@@ -12,6 +12,8 @@ describe('audit/compliance/reporting — AuditComplianceReporting', () => {
     generatorCode: 'CO-1',
     auditFileCountry: 'BG',
     defaultCurrencyCode: 'EUR',
+    companyName: 'Тест ЕООД',
+    companyTaxId: 'BG123456789',
   }
 
   describe('generateAuditFile — SAF-T 3.0.2', () => {
@@ -33,6 +35,45 @@ describe('audit/compliance/reporting — AuditComplianceReporting', () => {
     })
     it('fileSize equals the serialized content length (positive)', () => {
       expect(report.fileSize).toBeGreaterThan(0)
+    })
+  })
+
+  describe('generateAuditFile — the taxpayer identity is refused, never defaulted', () => {
+    it('refuses a file with no legal name — SAF-T 3.0.2 §1 Header', () => {
+      expect(() =>
+        AuditComplianceReporting.generateAuditFile({ ...metadata, companyName: '' }, {}, {}, []),
+      ).toThrow(/taxpayer identity: companyName/)
+    })
+
+    it('refuses a file with no tax registration', () => {
+      expect(() =>
+        AuditComplianceReporting.generateAuditFile({ ...metadata, companyTaxId: '  ' }, {}, {}, []),
+      ).toThrow(/taxpayer identity: companyTaxId/)
+    })
+
+    it('names every missing field at once rather than the first', () => {
+      expect(() =>
+        AuditComplianceReporting.generateAuditFile(
+          { ...metadata, companyName: '', companyTaxId: '' },
+          {},
+          {},
+          [],
+        ),
+      ).toThrow(/companyName, companyTaxId/)
+    })
+
+    it('the identity reaches the serialized file — it is not decoration on the call', () => {
+      // the report exposes size and checksum, not content, so the refutable claim is
+      // that a DIFFERENT taxpayer produces a different file
+      const a = AuditComplianceReporting.generateAuditFile(metadata, {}, {}, [])
+      const b = AuditComplianceReporting.generateAuditFile(
+        { ...metadata, companyName: 'Друго ЕООД с по-дълго име', companyTaxId: 'BG987654321' },
+        {},
+        {},
+        [],
+      )
+      expect(b.fileSize).not.toBe(a.fileSize)
+      expect(b.fileChecksum).not.toBe(a.fileChecksum)
     })
   })
 

@@ -196,14 +196,31 @@ export const validateAuditComplianceReporting: CollectionBeforeValidateHook<Audi
 
   if (data.reportType === 'saf-t' || data.reportType === 'optimization-analysis') {
     try {
+      // SAF-T 3.0.2 §1 Header names the TAXPAYER. It is read from the tenant's own
+      // declared identity — never defaulted, and the generator refuses outright if a
+      // field is empty, because a submission carrying a placeholder where a tax number
+      // belongs looks exactly like a real one to the only two readers it has.
+      // An API key has no tenant (rules/bypass names this), so identity stays absent
+      // and the generator refuses rather than filing for nobody.
+      const principal = req.user && 'tenants' in req.user ? req.user : undefined
+      const first = principal?.tenants?.[0]?.tenant
+      const tenantId = typeof first === 'string' ? first : first?.id
+      const tenant = tenantId
+        ? await payload.findByID({ collection: 'tenants', id: tenantId, depth: 0 }).catch(() => null)
+        : null
+      const identity = (tenant as { config?: { identity?: Record<string, string> } } | null)?.config
+        ?.identity
+
       auditFileReport = AuditComplianceReporting.generateAuditFile(
         {
           auditFileVersion: '3.0.2',
           auditingStandard: 'SAF-T',
           generatedDate: new Date().toISOString().split('T')[0],
           generatorCode: 'ERPax-B6',
-          auditFileCountry: jurisdictions[0] || 'BG',
+          auditFileCountry: identity?.country || jurisdictions[0] || 'BG',
           defaultCurrencyCode: consolidationData?.consolidationCurrency || 'EUR',
+          companyName: identity?.legalName ?? '',
+          companyTaxId: identity?.taxRegistration ?? '',
         },
         (consolidationData || {}) as unknown as Record<string, unknown>,
         taxPeriods.reduce((acc, tp) => ({ ...acc, [tp.taxJurisdiction]: tp }), {}),
