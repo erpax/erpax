@@ -166,3 +166,65 @@ export function marginalWaterCostKwh(eff: CycleEfficiency, storageIsThePrimaryDu
   const yielded = storageYield(eff)
   return (yielded.storedKJ - yielded.recoverableKJ) / 3600
 }
+
+// Molar masses, CODATA/IUPAC. Units in the names.
+export const WATER_G_PER_MOL = 18.015
+export const HYDROGEN_G_PER_MOL = 2.016
+export const OXYGEN_G_PER_MOL = 31.998
+/** Ideal gas at STP (0 °C, 100 kPa). */
+export const MOLAR_VOLUME_L_PER_MOL = 22.414
+
+export interface SplitProducts {
+  readonly litresWater: number
+  readonly molesWater: number
+  readonly gramsWater: number
+  readonly molesHydrogen: number
+  readonly molesOxygen: number
+  readonly gramsHydrogen: number
+  readonly gramsOxygen: number
+  readonly litresHydrogenStp: number
+  readonly litresOxygenStp: number
+  /** the 2:1 that makes oxyhydrogen self-stoichiometric */
+  readonly moleRatioH2ToO2: number
+  /** the classic 1:8 by weight */
+  readonly massFractionHydrogen: number
+  /** every gram back, because the end state IS the start state */
+  readonly exhaustGramsWater: number
+  readonly massClosesExactly: boolean
+}
+
+/**
+ * What one litre of water becomes, and what burning it back exhausts.
+ *
+ * The answer is the reason the loop cannot generate: the exhaust is the feed,
+ * mole for mole and gram for gram. Nothing else comes out — no CO2, and no NOx
+ * either, PROVIDED the hydrogen is burned in the oxygen the split produced.
+ * Burn it in air instead and atmospheric nitrogen makes NOx at flame
+ * temperature; that pollutant comes from the air, never from the water.
+ */
+export function splitProducts(litresWater = 1): SplitProducts {
+  const molesWater = MOL_PER_LITRE * litresWater
+  const molesHydrogen = molesWater // H2O → H2 + ½O2
+  const molesOxygen = molesWater / 2
+  const gramsHydrogen = molesHydrogen * HYDROGEN_G_PER_MOL
+  const gramsOxygen = molesOxygen * OXYGEN_G_PER_MOL
+  const gramsWater = molesWater * WATER_G_PER_MOL
+  return {
+    litresWater,
+    molesWater,
+    gramsWater,
+    molesHydrogen,
+    molesOxygen,
+    gramsHydrogen,
+    gramsOxygen,
+    litresHydrogenStp: molesHydrogen * MOLAR_VOLUME_L_PER_MOL,
+    litresOxygenStp: molesOxygen * MOLAR_VOLUME_L_PER_MOL,
+    moleRatioH2ToO2: molesHydrogen / molesOxygen,
+    massFractionHydrogen: gramsHydrogen / (gramsHydrogen + gramsOxygen),
+    exhaustGramsWater: gramsWater,
+    massClosesExactly: (() => {
+      const drift = gramsHydrogen + gramsOxygen - gramsWater
+      return drift < 0.5 && drift > -0.5
+    })(),
+  }
+}

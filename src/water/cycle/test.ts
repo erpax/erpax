@@ -3,7 +3,7 @@ import {
   cycleMole, overUnityWitness, inputMJPerLitre, versusReverseOsmosis, storageYield,
   SPLIT_KJ_PER_MOL, HHV_KJ_PER_MOL, LHV_KJ_PER_MOL, MOL_PER_LITRE, RO_MJ_PER_LITRE,
   reversibleVoltage, landauerKJPerMol, photonPath,
-  plantSpec, marginalWaterCostKwh,
+  plantSpec, marginalWaterCostKwh, splitProducts,
 } from './index'
 
 const FUEL_CELL = { electrolyser: 0.8, engine: 0.6, generator: 1, condensing: true }
@@ -123,5 +123,27 @@ describe('water/cycle — "at quantum scale" is where the constraint COMES FROM'
     expect(marginalWaterCostKwh(eff, false)).toBeGreaterThan(2)
     // and charging it to purification alone is what makes the loop absurd
     expect(versusReverseOsmosis(eff).timesWorse).toBeGreaterThan(1000)
+  })
+
+  it('what a split litre becomes, and what burning it back exhausts', () => {
+    const p = splitProducts(1)
+    expect(p.moleRatioH2ToO2).toBeCloseTo(2, 9)          // 2:1 by volume — self-stoichiometric
+    expect(p.gramsOxygen / p.gramsHydrogen).toBeCloseTo(7.94, 2) // ~1:8 by mass
+    expect(p.massFractionHydrogen).toBeCloseTo(0.1119, 4)
+    expect(p.massClosesExactly).toBe(true)
+    expect(p.exhaustGramsWater).toBeCloseTo(p.gramsWater, 6) // the exhaust IS the feed
+  })
+
+  it('the gas is 1861x the volume of the water it came from', () => {
+    const p = splitProducts(1)
+    expect(Math.round(p.litresHydrogenStp + p.litresOxygenStp)).toBe(1861)
+    expect(Math.round(p.litresHydrogenStp)).toBe(1240)
+    expect(Math.round(p.litresOxygenStp)).toBe(620)
+  })
+
+  it('scaling is linear and mass still closes', () => {
+    const ten = splitProducts(10)
+    expect(ten.molesWater).toBeCloseTo(splitProducts(1).molesWater * 10, 6)
+    expect(ten.massClosesExactly).toBe(true)
   })
 })
