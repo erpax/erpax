@@ -9,6 +9,7 @@
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
 import { join } from 'node:path'
 import { TRINITY_FORM } from '@/diamond/membership'
+import ts from 'typescript'
 import { moduleShape } from '@/syntax'
 
 const SRC = 'src'
@@ -250,4 +251,109 @@ export function topConcentrations(cwd: string = process.cwd(), limit = 10): read
         b.metrics.lineCount - a.metrics.lineCount,
     )
     .slice(0, limit)
+}
+
+/** One inline export the hub could move, and the child atom its own dependencies name. */
+export interface AttributableExport {
+  readonly name: string
+  /** the child atom whose exports this declaration uses — the only one */
+  readonly child: string
+  /** the symbols it borrows from that child — the evidence for the attribution */
+  readonly via: readonly string[]
+}
+
+/**
+ * Exported NAMES of a module — parsed.
+ *
+ * `moduleShape` returns counts, not names, which is why the first version of this
+ * attributed nothing: every child's symbol set was empty and every hit list was
+ * therefore empty too. A zero from an instrument is a claim like any other.
+ */
+const exportedNames = (file: string, text: string): Set<string> => {
+  const sf = ts.createSourceFile(file, text, ts.ScriptTarget.Latest, true)
+  const names = new Set<string>()
+  for (const st of sf.statements) {
+    const exported = ts.canHaveModifiers(st) && ts.getModifiers(st)?.some((m) => m.kind === ts.SyntaxKind.ExportKeyword)
+    if (!exported) continue
+    if ((ts.isFunctionDeclaration(st) || ts.isClassDeclaration(st) || ts.isInterfaceDeclaration(st) || ts.isTypeAliasDeclaration(st)) && st.name) {
+      names.add(st.name.text)
+    } else if (ts.isVariableStatement(st)) {
+      for (const d of st.declarationList.declarations) if (ts.isIdentifier(d.name)) names.add(d.name.text)
+    }
+  }
+  return names
+}
+
+const childExportNames = (atomPath: string, child: string, cwd: string): Set<string> => {
+  const p = join(cwd, SRC, atomPath, child, 'index.ts')
+  if (!existsSync(p)) return new Set()
+  try {
+    return exportedNames('index.ts', readFileSync(p, 'utf8'))
+  } catch {
+    return new Set()
+  }
+}
+
+/**
+ * The COMPUTED half of a hub split: inline exports whose own dependencies name
+ * exactly one existing child atom.
+ *
+ * `fixSuggestion` says "split 87 inline exports to child atoms" and stops — which is
+ * where the tool needed updating, not where the human takes over. A declaration that
+ * borrows symbols from exactly ONE child already belongs there: the move is mechanical
+ * and invents no name, exactly as a rename is mechanical when the path already says
+ * the word ([[rules]]/hyphen).
+ *
+ * What it deliberately does NOT compute: a declaration using two children (a genuine
+ * seam, and a judgement), or one using none (a new child atom, which needs a name and
+ * a SKILL — the wall this corpus refuses to sweep past).
+ */
+export function attributableExports(atomPath: string, cwd: string = process.cwd()): AttributableExport[] {
+  const indexPath = join(cwd, SRC, atomPath, 'index.ts')
+  if (!existsSync(indexPath)) return []
+  const children = childAtomDirs(atomPath, cwd)
+  if (children.length === 0) return []
+
+  const byChild = new Map(children.map((c) => [c, childExportNames(atomPath, c, cwd)]))
+  const text = readFileSync(indexPath, 'utf8')
+  const sf = ts.createSourceFile(indexPath, text, ts.ScriptTarget.Latest, true)
+  const out: AttributableExport[] = []
+
+  for (const st of sf.statements) {
+    const exported = ts.canHaveModifiers(st) && ts.getModifiers(st)?.some((m) => m.kind === ts.SyntaxKind.ExportKeyword)
+    if (!exported) continue
+    const name = ts.isFunctionDeclaration(st) || ts.isClassDeclaration(st)
+      ? st.name?.text
+      : ts.isVariableStatement(st)
+        ? st.declarationList.declarations[0] && ts.isIdentifier(st.declarationList.declarations[0].name)
+          ? st.declarationList.declarations[0].name.text
+          : undefined
+        : undefined
+    if (!name) continue
+
+    const used = new Set<string>()
+    const visit = (n: ts.Node): void => {
+      if (ts.isIdentifier(n)) used.add(n.text)
+      ts.forEachChild(n, visit)
+    }
+    ts.forEachChild(st, visit)
+
+    const hits = [...byChild].map(([child, names]) => ({ child, via: [...used].filter((u) => names.has(u)) }))
+      .filter((h) => h.via.length > 0)
+    // EXACTLY one child, or it is a seam rather than a misplacement.
+    if (hits.length === 1) out.push({ name, child: hits[0]!.child, via: hits[0]!.via.sort() })
+  }
+  return out
+}
+
+/** Every hub's computed split, largest first — the campaign as a manifest, not a suggestion. */
+export function concentrationManifest(cwd: string = process.cwd()): ReadonlyArray<{
+  readonly atomPath: string
+  readonly movable: readonly AttributableExport[]
+  readonly inlineExports: number
+}> {
+  return concentrationViolations(cwd)
+    .map((v) => ({ atomPath: v.atomPath, movable: attributableExports(v.atomPath, cwd), inlineExports: v.metrics.inlineExportCount }))
+    .filter((r) => r.movable.length > 0)
+    .sort((a, b) => b.movable.length - a.movable.length)
 }

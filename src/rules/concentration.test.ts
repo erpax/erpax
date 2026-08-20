@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { attributableExports, concentrationManifest } from './concentration'
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import {
@@ -80,5 +81,39 @@ describe('rules/concentration — live corpus scan', () => {
     expect(m.reExportCount).toBeGreaterThan(0) // it IS a barrel
     expect(m.concentrationScore).toBeLessThan(CONCENTRATION_SCORE_THRESHOLD)
     expect(isConcentrationViolation(m)).toBe(false) // a well-folded hub is not concentrated
+  })
+})
+
+describe('rules/concentration — the manifest, not a suggestion', () => {
+  it('attributes an inline export to the ONE child whose symbols it uses', () => {
+    // cloudflare/index.ts holds kvGet/kvPut/r2Put, and each borrows MediatorContext,
+    // auditBindingCall and enforceAuthorized from cloudflare/binding — whose own SKILL
+    // says every binding access MUST flow through those wrappers. The wrappers live
+    // outside the atom that defines their machinery, and the dependency says so.
+    const moves = attributableExports('cloudflare')
+    expect(moves.length).toBeGreaterThan(0)
+    const kv = moves.find((m) => m.name === 'kvGet')
+    expect(kv?.child).toBe('binding')
+    expect(kv?.via).toContain('auditBindingCall')
+  })
+
+  it('every attribution names exactly one child and cites the symbols it borrows', () => {
+    for (const m of attributableExports('cloudflare')) {
+      expect(m.child).toBeTruthy()
+      expect(m.via.length).toBeGreaterThan(0)
+    }
+  })
+
+  it('an atom with no child atoms has nothing to attribute', () => {
+    expect(attributableExports('rules/hyphen')).toEqual([])
+  })
+
+  it('the manifest covers only hubs with a computable move', () => {
+    const manifest = concentrationManifest()
+    for (const h of manifest) expect(h.movable.length).toBeGreaterThan(0)
+    // Sorted largest-first so the campaign has an order.
+    for (let i = 1; i < manifest.length; i++) {
+      expect(manifest[i - 1]!.movable.length).toBeGreaterThanOrEqual(manifest[i]!.movable.length)
+    }
   })
 })
