@@ -26,7 +26,7 @@ export interface Effluent {
   readonly codGramsPerLitre: number
 }
 
-/** Representative loads, declared so they can be argued with rather than inferred. */
+/** Representative loads, declared so they can be argued with. */
 export const EFFLUENTS: readonly Effluent[] = [
   { name: 'municipal sewage', codGramsPerLitre: 0.5 },
   { name: 'food processing', codGramsPerLitre: 5 },
@@ -38,16 +38,13 @@ export interface HarvestRoute {
   readonly name: string
   /** chemical energy → electricity */
   readonly electrical: number
-  /** what fraction of the COD the route can actually reach */
+  /** the fraction of COD this route can reach */
   readonly biodegradable: number
 }
 
 export const ROUTES: readonly HarvestRoute[] = [
-  // low current density is why this is not deployed at scale, not low efficiency
   { name: 'microbial fuel cell', electrical: 0.2, biodegradable: 0.7 },
-  // mature, deployed, and the reason a treatment works can already be energy-neutral
   { name: 'digestion + CHP', electrical: 0.35, biodegradable: 0.7 },
-  // reaches the refractory fraction a microbe cannot, at the cost of heat and pressure
   { name: 'supercritical oxidation', electrical: 0.3, biodegradable: 1 },
 ]
 
@@ -63,7 +60,7 @@ export interface Harvest {
   readonly harvestedKwh: number
   readonly treatmentKwh: number
   readonly netKwh: number
-  /** unlike the cycle, this CAN be true — and that is the whole finding */
+  /** unlike the cycle, this CAN be true */
   readonly generatesNet: boolean
   /** harvested ÷ what conventional treatment spends */
   readonly timesAeration: number
@@ -84,18 +81,14 @@ export function harvest(effluent: Effluent, route: HarvestRoute): Harvest {
   }
 }
 
-/**
- * The threshold the whole design turns on: the COD at which a litre pays for
- * its own treatment. Below it the plant consumes; above it, it exports.
- */
-export function breakEvenCodGramsPerLitre(route: HarvestRoute): number {
+/** The COD (g/L) at which a litre pays for its own treatment. */
+export function breakEvenCod(route: HarvestRoute): number {
   return (AERATION_KWH_PER_LITRE * 3600) / (COD_KJ_PER_G * route.biodegradable * route.electrical)
 }
 
 /**
- * A witness that this loop DOES generate — the exact search that returns
- * undefined for the splitting cycle. Named so the contrast is refutable
- * rather than asserted.
+ * A witness that this loop DOES generate — the search that returns undefined
+ * for the splitting cycle.
  *
  * @invariant ∃ effluent, route : harvested > treatment cost
  */
@@ -120,5 +113,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   }
   console.log('\n  break-even COD:')
   for (const r of ROUTES)
-    console.log(`    ${r.name.padEnd(24)} ${breakEvenCodGramsPerLitre(r).toFixed(3)} g/L`)
+    console.log(`    ${r.name.padEnd(24)} ${breakEvenCod(r).toFixed(3)} g/L`)
 }

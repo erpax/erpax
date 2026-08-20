@@ -57,6 +57,10 @@ const LAWFUL_PHYSICAL = new Set([
   'HORO_DIGITS', 'HORO_MEASURE', 'LANDAUER_BIT', 'COMPARABLE_UNIT',
   'FARADAY_C_PER_MOL', 'BOLTZMANN_J_PER_K', 'AVOGADRO_PER_MOL',
   'SPLIT_KJ_PER_MOL', 'HHV_KJ_PER_MOL', 'LHV_KJ_PER_MOL', 'SPLIT_GIBBS_KJ_PER_MOL', 'MOL_PER_LITRE',
+  // CODATA/IUPAC molar masses and molar volume — measured, not derivable from any seal
+  'WATER_G_PER_MOL', 'HYDROGEN_G_PER_MOL', 'OXYGEN_G_PER_MOL', 'MOLAR_VOLUME_L_PER_MOL',
+  // oxidation enthalpy per gram COD, and the measured energy an aeration basin spends
+  'COD_KJ_PER_G', 'AERATION_KWH_PER_LITRE',
 ])
 
 /** Explicit binding tables — wrangler TYPE_LINKS and kin. */

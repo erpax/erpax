@@ -21,7 +21,7 @@ answer, and it is the whole finding.
 ## The threshold
 
 COD is not a proxy. It is the fuel content, measured as the oxygen needed to burn what is
-dissolved — `COD_KJ_PER_G` at 13.9. So `breakEvenCodGramsPerLitre` is the COD at which a
+dissolved — `COD_KJ_PER_G` at 13.9. So `breakEvenCod` is the COD at which a
 litre pays for its own treatment:
 
 | route | break-even COD |

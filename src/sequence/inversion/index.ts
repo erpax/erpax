@@ -187,12 +187,15 @@ export function renderEquilibriumSection(): readonly string[] {
 /** Every horo digit including unity — the ring closes on 9, which is the axis it cannot double into. */
 export const RING_WITH_UNITY: readonly number[] = [...HORO_DIGITS]
 
-/** The singularity — the digit doubling cannot move. */
-export const SINGULARITY = 9
+/** The digit doubling cannot move — computed, never declared. */
+export function singularity(): number {
+  for (let d = 1; d <= 9; d++) if (doubleDigit(d) === d) return d
+  throw new Error('no fixed point under doubling')
+}
 
-/** The seven states: the six-cycle plus the fixed point it turns around. */
+/** Six-cycle plus its fixed point. */
 export function sevenStates(): readonly number[] {
-  return [...forward(), SINGULARITY]
+  return [...forward(), singularity()]
 }
 
 const iterate = (step: (n: number) => number, times: number) => (start: number): number => {
@@ -207,7 +210,7 @@ const doubleDigit = (n: number): number => {
   return doubled === 0 ? 9 : doubled
 }
 
-/** The smallest number of doublings that returns every state to itself. */
+/** Smallest number of doublings returning every state to itself. */
 export function closurePeriod(states: readonly number[] = sevenStates(), limit = 200): number {
   for (let k = 1; k <= limit; k++) {
     const step = iterate(doubleDigit, k)
@@ -216,11 +219,7 @@ export function closurePeriod(states: readonly number[] = sevenStates(), limit =
   return -1
 }
 
-/**
- * Every power of doubling that is a NON-trivial involution — a map that undoes
- * itself without being the identity. They are the odd multiples of half the
- * period, and each one is the antipode.
- */
+/** Powers of doubling that undo themselves without being the identity. */
 export function involutionPowers(limit = 42, states: readonly number[] = sevenStates()): readonly number[] {
   const found: number[] = []
   for (let k = 1; k < limit; k++) {
@@ -232,7 +231,7 @@ export function involutionPowers(limit = 42, states: readonly number[] = sevenSt
   return found
 }
 
-/** What doubling `times` over does to each state — the map, not a claim about it. */
+/** What doubling `times` over does to each state. */
 export function afterDoublings(times: number, states: readonly number[] = sevenStates()): readonly (readonly [number, number])[] {
   const step = iterate(doubleDigit, times)
   return states.map((d) => [d, step(d)] as const)

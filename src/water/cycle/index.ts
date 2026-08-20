@@ -131,7 +131,7 @@ export interface PlantSpec {
   readonly peopleServed: number
 }
 
-export const DRINKING_LITRES_PER_PERSON_DAY = 20
+export const DRINKING_LITRES_PER_DAY = 20
 
 export function plantSpec(
   megawatts: number,
@@ -149,7 +149,7 @@ export function plantSpec(
     kwhCharged,
     kwhReturned: litresPerDay * kwhPerLitreOut,
     litresPerDay,
-    peopleServed: litresPerDay / DRINKING_LITRES_PER_PERSON_DAY,
+    peopleServed: litresPerDay / DRINKING_LITRES_PER_DAY,
   }
 }
 

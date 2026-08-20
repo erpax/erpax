@@ -6,7 +6,7 @@ import {
   COD_KJ_PER_G,
   EFFLUENTS,
   ROUTES,
-  breakEvenCodGramsPerLitre,
+  breakEvenCod,
   chemicalKJPerLitre,
   harvest,
   netPositiveWitness,
@@ -56,7 +56,7 @@ describe('water/fuel — the contaminant is the fuel', () => {
 
   it('break-even COD is the threshold the whole design turns on', () => {
     for (const r of ROUTES) {
-      const cod = breakEvenCodGramsPerLitre(r)
+      const cod = breakEvenCod(r)
       const at = harvest({ name: 'at', codGramsPerLitre: cod }, r)
       expect(at.harvestedKwh).toBeCloseTo(AERATION_KWH_PER_LITRE, 9)
       expect(harvest({ name: 'below', codGramsPerLitre: cod * 0.9 }, r).generatesNet).toBe(false)
@@ -65,8 +65,8 @@ describe('water/fuel — the contaminant is the fuel', () => {
   })
 
   it('a better route lowers the threshold — it does not raise the ceiling on a clean feed', () => {
-    const mfc = breakEvenCodGramsPerLitre(routeNamed('microbial fuel cell'))
-    const sco = breakEvenCodGramsPerLitre(routeNamed('supercritical oxidation'))
+    const mfc = breakEvenCod(routeNamed('microbial fuel cell'))
+    const sco = breakEvenCod(routeNamed('supercritical oxidation'))
     expect(sco).toBeLessThan(mfc)
     // distilled water has no COD, so no route makes it a fuel
     expect(harvest({ name: 'distilled', codGramsPerLitre: 0 }, routeNamed('supercritical oxidation')).generatesNet).toBe(false)

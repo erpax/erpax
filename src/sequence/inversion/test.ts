@@ -15,7 +15,7 @@ import {
   renderEquilibriumSection,
   reverse,
   STEP_DEGREES,
-  SINGULARITY,
+  singularity,
   afterDoublings,
   closurePeriod,
   involutionPowers,
@@ -151,9 +151,13 @@ describe('sequence/inversion — judged by the constitution', () => {
 })
 
 describe('inversion — closure, the halfway involution, and the fixed singularity', () => {
+  it('the singularity is COMPUTED as the fixed point, not declared', () => {
+    expect(singularity()).toBe(9)
+  })
+
   it('the singularity is the one state doubling cannot move', () => {
-    expect(afterDoublings(1, [SINGULARITY])).toEqual([[9, 9]])
-    expect(afterDoublings(21, [SINGULARITY])).toEqual([[9, 9]])
+    expect(afterDoublings(1, [singularity()])).toEqual([[9, 9]])
+    expect(afterDoublings(21, [singularity()])).toEqual([[9, 9]])
   })
 
   it('42 doublings close on the identity across all seven states', () => {

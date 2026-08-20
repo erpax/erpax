@@ -148,6 +148,28 @@ export function analyzeIndexConcentration(
   }
 }
 
+
+/**
+ * Does this atom fail ONLY because it has children it never wires? That alone
+ * is adjacency, not concentration — the normal shape of a nested atom. See
+ * SKILL.md for the `entropy` case that showed it.
+ */
+export function isAdjacencyOnly(metrics: ConcentrationMetrics): boolean {
+  const unwired =
+    metrics.childAtomCount > 0 &&
+    metrics.lineCount >= 200 &&
+    metrics.reExportRatio < CONCENTRATION_REEXPORT_RATIO_MIN &&
+    metrics.wiredChildCount < metrics.childAtomCount
+  if (!unwired) return false
+  return (
+    metrics.concentrationScore < CONCENTRATION_SCORE_THRESHOLD &&
+    metrics.lineCount < CONCENTRATION_LINE_THRESHOLD &&
+    !(metrics.childAtomCount >= 2 && metrics.inlineExportCount >= CONCENTRATION_EXPORT_THRESHOLD) &&
+    metrics.functionCount + metrics.classCount < 15 &&
+    !(metrics.domainImportCount >= 5 && metrics.lineCount >= 300)
+  )
+}
+
 export function isConcentrationViolation(metrics: ConcentrationMetrics): boolean {
   if (metrics.concentrationScore >= CONCENTRATION_SCORE_THRESHOLD) return true
   if (metrics.lineCount >= CONCENTRATION_LINE_THRESHOLD) return true
@@ -211,7 +233,16 @@ export function concentrationViolations(cwd: string = process.cwd()): Concentrat
       const normalizedPath = atomPath === '.' ? '' : atomPath
       const content = readFileSync(indexPath, 'utf8')
       const metrics = analyzeIndexConcentration(content, childAtoms.length, childAtoms, atomPath)
-      if (isConcentrationViolation(metrics)) {
+      // A rule must be able to name the fix it demands. When the ONLY failing
+      // condition is unwired children, the suggestion says "split N inline
+      // exports to child atoms under {children}" — so if nothing the parent
+      // exports depends on any child, that sentence names a destination the
+      // matter does not belong to, and there is no lawful edit that clears it.
+      // Evidence first: no attribution, no demand.
+      const adjacencyOnly =
+        isAdjacencyOnly(metrics) &&
+        attributableExports(normalizedPath || '', cwd).length === 0
+      if (isConcentrationViolation(metrics) && !adjacencyOnly) {
         const file = normalizedPath ? `${normalizedPath}/index.ts` : 'index.ts'
         const row: ConcentrationViolation = {
           atomPath: normalizedPath || 'src',

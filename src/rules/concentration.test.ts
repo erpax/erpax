@@ -5,6 +5,7 @@ import { join } from 'node:path'
 import {
   analyzeIndexConcentration,
   childAtomDirs,
+  isAdjacencyOnly,
   concentrationFixSuggestion,
   concentrationViolations,
   CONCENTRATION_LINE_THRESHOLD,
@@ -155,5 +156,37 @@ describe('rules/concentration — the manifest, not a suggestion', () => {
       'export const Thing = { access: readAccess }',
     ].join('\n')
     expect(analyzeIndexConcentration(rel, 1, ['access'], 'thing').wiredChildCount).toBe(1)
+  })
+
+  it('adjacency alone is not concentration — a nested atom is a normal shape', () => {
+    const parent = [
+      ...Array.from({ length: 205 }, (_, i) => `const local${i} = ${i}`),
+      ...Array.from({ length: 5 }, (_, i) => `export const own${i} = local${i}`),
+    ].join('\n')
+    const m = analyzeIndexConcentration(parent, 2, ['source', 'threshold'], 'entropy')
+    expect(m.wiredChildCount).toBe(0)
+    expect(isConcentrationViolation(m)).toBe(true)
+    expect(isAdjacencyOnly(m)).toBe(true) // ← the only reason it fired
+  })
+
+  it('a REAL hub does not get the adjacency pass — another condition still holds it', () => {
+    const hub = [
+      ...Array.from({ length: 600 }, (_, i) => `const local${i} = ${i}`),
+      ...Array.from({ length: 30 }, (_, i) => `export function f${i}() { return local${i} }`),
+    ].join('\n')
+    const m = analyzeIndexConcentration(hub, 2, ['a', 'b'], 'hub')
+    expect(isConcentrationViolation(m)).toBe(true)
+    expect(isAdjacencyOnly(m)).toBe(false) // lines + score + fns all fire
+  })
+
+  it('an atom that wires its children never reaches the adjacency question', () => {
+    const wired = [
+      "import { x } from './a'",
+      "import { y } from './b'",
+      ...Array.from({ length: 205 }, (_, i) => `const local${i} = ${i}`),
+      'export const composed = { x, y }',
+    ].join('\n')
+    const m = analyzeIndexConcentration(wired, 2, ['a', 'b'], 'hub')
+    expect(isAdjacencyOnly(m)).toBe(false)
   })
 })
