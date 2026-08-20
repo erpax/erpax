@@ -1,106 +1,24 @@
 /**
- * cloudflare/binding — mediator framework for tenant-scoped binding access.
+ * cloudflare/binding — the mediator boundary, re-exported from its ONE implementation.
  *
- * Per spec Slice SSSSSSSS (2026-05-11): every binding access in MCP handlers
- * MUST flow through one of these mediator wrappers — never `env.<BINDING>` directly.
- */
-
-import type { MediatorContext as BaseContext, MediatorAuthorizer as BaseAuthorizer, ErpaxCfEnv } from '../index'
-
-export type MediatorContext = BaseContext
-export type MediatorAuthorizer = BaseAuthorizer
-
-/**
- * Enforce authorization on a binding op — FAIL-CLOSED.
+ * This atom used to hold a SECOND copy of the fail-closed mediator, and the copies had
+ * diverged badly. `makeMediator` here returned only `{ enforceAuthorized,
+ * auditBindingCall }` — no kvGet, no r2Get, no audit chain — against the real one's
+ * full typed surface, and it took `op: any`, erasing the very narrowing that stops a
+ * caller handing the authorizer a name that is not a binding.
  *
- * Denies when no authorizer is installed, ensuring the only way to touch a binding
- * is to have explicitly wired an authorizer.
- */
-export async function enforceAuthorized(
-  ctx: MediatorContext,
-  // `keyof ErpaxCfEnv`, never `string`: a fail-closed authorizer must not be handed a
-  // binding name that is not a real binding. The parent mediator narrows it the same
-  // way; this copy had widened it, which is why it could not call ctx.authorize.
-  op: { binding: keyof ErpaxCfEnv; action: string; tenantId: string; user?: { id: string; role?: string } },
-): Promise<void> {
-  if (!ctx.authorize) {
-    throw new Error(
-      `[cloudflare-mediator] DENIED ${op.binding}/${op.action} — no authorizer installed. ` +
-      `A MediatorAuthorizer MUST be supplied; binding access cannot proceed un-gated (fail-closed).`,
-    )
-  }
-  await ctx.authorize(op)
-}
-
-/**
- * Audit-trail one mediator call. Never swallows failures silently.
- */
-export async function auditBindingCall(
-  ctx: MediatorContext,
-  binding: string,
-  action: string,
-  detail: Record<string, unknown>,
-): Promise<void> {
-  if (!ctx.payload) {
-    reportAuditDrop({ binding, action, tenantId: ctx.tenantId, reason: 'no-payload-sink' })
-    return
-  }
-  try {
-    await ctx.payload.create({
-      collection: 'audit-events',
-      data: {
-        eventType: `cf:${binding.toLowerCase()}:${action}`,
-        tenant: ctx.tenantId,
-        aggregateType: 'order' as never,
-        aggregateId: 'binding-call',
-        payload: { binding, action, ...detail },
-        userId: ctx.user?.id ?? 'system',
-      },
-    })
-  } catch (err) {
-    reportAuditDrop({
-      binding,
-      action,
-      tenantId: ctx.tenantId,
-      reason: 'audit-write-failed',
-      error: err,
-    })
-  }
-}
-
-/**
- * Surface a dropped audit receipt. NEVER swallows it silently.
- */
-export function reportAuditDrop(info: {
-  binding: string
-  action: string
-  tenantId: string
-  reason: 'no-payload-sink' | 'audit-write-failed'
-  error?: unknown
-}): void {
-  const msg =
-    `[cloudflare-mediator] AUDIT RECEIPT DROPPED — binding=${info.binding} ` +
-    `action=${info.action} tenant=${info.tenantId} reason=${info.reason}` +
-    (info.error !== undefined ? ` error=${String((info.error as { message?: unknown })?.message ?? info.error)}` : '')
-  try {
-    console.warn(msg)
-  } catch {
-    /* console unavailable */
-  }
-}
-
-/**
- * Convenience builder for MCP handlers.
+ * Nothing imported it, so nothing was harmed. But it was ADDRESSABLE, it carried a
+ * SKILL saying every binding access MUST flow through these wrappers, and it handed
+ * out a tenth of the boundary to anyone who believed that. A duplicated security
+ * boundary is not two safeguards; it is one safeguard and one decoy.
  *
- * Usage:
- *   const m = makeMediator({ env: req.env, tenantId, payload: req.payload, user: req.user })
- *   await m.kvPut('cache:key', JSON.stringify(value))
+ * @see ../index.ts — the implementation · ./SKILL.md
  */
-export function makeMediator(ctx: MediatorContext) {
-  // Delegates to storage for the actual implementations
-  return {
-    enforceAuthorized: (op: any) => enforceAuthorized(ctx, op),
-    auditBindingCall: (binding: string, action: string, detail: Record<string, unknown>) =>
-      auditBindingCall(ctx, binding, action, detail),
-  }
-}
+export {
+  makeMediator,
+  enforceAuthorized,
+  auditBindingCall,
+  reportAuditDrop,
+  type MediatorContext,
+  type MediatorAuthorizer,
+} from '../index'

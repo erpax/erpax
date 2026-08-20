@@ -275,7 +275,7 @@ function nsKey(tenantId: string, key: string): string {
  * (e.g. plugin/mediator's defaultAuthorize, or a tighter per-plugin one).
  * On uncertainty we deny — never allow.
  */
-async function enforceAuthorized(
+export async function enforceAuthorized(
   ctx: MediatorContext,
   op: {
     binding: keyof ErpaxCfEnv
@@ -307,7 +307,7 @@ async function enforceAuthorized(
  *   - no payload bound (the receipt sink is absent entirely)
  *   - the payload.create threw (sink present but the write failed)
  */
-async function auditBindingCall(
+export async function auditBindingCall(
   ctx: MediatorContext,
   binding: keyof ErpaxCfEnv,
   action: string,
@@ -350,7 +350,7 @@ async function auditBindingCall(
  * call-site. NEVER throws (it is itself the last line of defence) but it
  * NEVER stays silent either — a swallowed receipt is a law violation.
  */
-function reportAuditDrop(info: {
+export function reportAuditDrop(info: {
   binding: keyof ErpaxCfEnv
   action: string
   tenantId: string
