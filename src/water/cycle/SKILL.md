@@ -83,6 +83,37 @@ fouling by the very contaminants being removed, brine handling and hydrogen stor
 are all real and none are here. It proves the loop cannot generate; it does not prove any
 particular device works.
 
+## The plant — where the design stops being absurd
+
+Charged to purification alone, the loop is **~1,600× worse than reverse osmosis**
+(`versusReverseOsmosis`). That is the number that kills the naive reading, and it is
+correct. But it charges the whole split enthalpy to the water, and that is the wrong
+ledger for a plant that would be electrolysing anyway.
+
+`marginalWaterCostKwh` makes the split explicit. If storage is the reason the plant runs
+— a duty grids already pay for — the distillate costs **zero at the margin**. Same
+hardware, same physics; only the accounting question changed.
+
+`plantSpec` sizes it from the storage duty:
+
+| duty | charged | distillate | people @20 L | electricity back |
+| --- | ---: | ---: | ---: | ---: |
+| 0.5 MW × 8 h | 4,000 kWh/day | 728 L | 36 | 48% |
+| 5 MW × 8 h | 40,000 kWh/day | 7,283 L | 364 | 48% |
+| 100 MW × 8 h | 800,000 kWh/day | 145,658 L | 7,283 | 48% |
+
+**What the membrane buys that a filter cannot.** Only H⁺ crosses. Salts, metals,
+pathogens, PFAS and pharmaceuticals cannot follow a proton through the membrane, so the
+exhaust purity is **independent of how filthy the feed was** — there is no rejection
+ratio to degrade, because nothing is being rejected. That is a molecular separation, not
+a sieve, and it is the one property RO cannot match at any pressure.
+
+**What that does not fix.** Chloride in the feed evolves chlorine at the anode in
+competition with oxygen; the reject brine still concentrates and still has to go
+somewhere; and electrode fouling by the contaminants is exactly the failure mode the
+energy model above does not contain. The separation is clean in principle and the cell
+is where the engineering lives.
+
 **Law — [[law]]: a closed loop cannot pay for itself. Splitting and recombining share a
 start and an end state, so the enthalpies cancel — the cycle purifies, it stores, and it
 never generates.**

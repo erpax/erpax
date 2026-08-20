@@ -115,3 +115,54 @@ export function photonPath(sth: number, pv = 0.22, electrolyser = 0.8): PhotonPa
   const twoStep = pv * electrolyser
   return { sth, twoStep, beatsTwoStep: sth > twoStep }
 }
+
+/**
+ * The plant, sized by its STORAGE duty. Water is the byproduct, and that is
+ * the whole design: charge the electrolyser because the grid needs storage,
+ * and the distillate arrives at no additional energy cost.
+ */
+export interface PlantSpec {
+  readonly megawatts: number
+  readonly hoursPerDay: number
+  readonly kwhCharged: number
+  readonly kwhReturned: number
+  readonly litresPerDay: number
+  /** at the WHO minimum for drinking and cooking */
+  readonly peopleServed: number
+}
+
+export const DRINKING_LITRES_PER_PERSON_DAY = 20
+
+export function plantSpec(
+  megawatts: number,
+  hoursPerDay: number,
+  eff: CycleEfficiency,
+): PlantSpec {
+  const yielded = storageYield(eff)
+  const kwhPerLitreIn = yielded.storedKJ / 3600
+  const kwhPerLitreOut = yielded.recoverableKJ / 3600
+  const kwhCharged = megawatts * 1000 * hoursPerDay
+  const litresPerDay = kwhCharged / kwhPerLitreIn
+  return {
+    megawatts,
+    hoursPerDay,
+    kwhCharged,
+    kwhReturned: litresPerDay * kwhPerLitreOut,
+    litresPerDay,
+    peopleServed: litresPerDay / DRINKING_LITRES_PER_PERSON_DAY,
+  }
+}
+
+/**
+ * What the litre costs, and the answer depends entirely on why the plant runs.
+ *
+ * Charged to purification alone the loop is absurd — three orders of magnitude
+ * worse than reverse osmosis. Charged to storage, which is a duty the grid
+ * pays for anyway, the water is free at the margin. Same hardware, same
+ * physics; only the accounting question changes.
+ */
+export function marginalWaterCostKwh(eff: CycleEfficiency, storageIsThePrimaryDuty: boolean): number {
+  if (storageIsThePrimaryDuty) return 0
+  const yielded = storageYield(eff)
+  return (yielded.storedKJ - yielded.recoverableKJ) / 3600
+}

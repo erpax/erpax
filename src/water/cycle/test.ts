@@ -3,6 +3,7 @@ import {
   cycleMole, overUnityWitness, inputMJPerLitre, versusReverseOsmosis, storageYield,
   SPLIT_KJ_PER_MOL, HHV_KJ_PER_MOL, LHV_KJ_PER_MOL, MOL_PER_LITRE, RO_MJ_PER_LITRE,
   reversibleVoltage, landauerKJPerMol, photonPath,
+  plantSpec, marginalWaterCostKwh,
 } from './index'
 
 const FUEL_CELL = { electrolyser: 0.8, engine: 0.6, generator: 1, condensing: true }
@@ -103,5 +104,24 @@ describe('water/cycle — "at quantum scale" is where the constraint COMES FROM'
     // Efficiency is measured against incident light; nothing here returns more than
     // it received, which is the whole claim under test.
     for (const sth of [0.1, 0.19, 0.3, 0.99]) expect(photonPath(sth).sth).toBeLessThan(1)
+  })
+
+  it('the plant is sized by storage duty and the water follows from it', () => {
+    const eff = { electrolyser: 0.8, engine: 0.6, generator: 1, condensing: true }
+    const spec = plantSpec(100, 8, eff)
+    expect(spec.kwhCharged).toBe(800_000)
+    expect(Math.round(spec.litresPerDay)).toBe(145_658)
+    expect(Math.round(spec.peopleServed)).toBe(7283)
+    // returned is the round-trip fraction of charged — no energy appears
+    expect(spec.kwhReturned).toBeLessThan(spec.kwhCharged)
+    expect(spec.kwhReturned / spec.kwhCharged).toBeCloseTo(cycleMole(eff).roundTrip, 6)
+  })
+
+  it('the litre is free at the margin ONLY when storage is the reason the plant runs', () => {
+    const eff = { electrolyser: 0.8, engine: 0.6, generator: 1, condensing: true }
+    expect(marginalWaterCostKwh(eff, true)).toBe(0)
+    expect(marginalWaterCostKwh(eff, false)).toBeGreaterThan(2)
+    // and charging it to purification alone is what makes the loop absurd
+    expect(versusReverseOsmosis(eff).timesWorse).toBeGreaterThan(1000)
   })
 })
