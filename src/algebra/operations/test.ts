@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest'
-import { isClosed, THEOREMS } from '../constants'
+import { THEOREMS } from '../constants'
+import { isClosed } from './index'
 
 describe('algebra/operations', () => {
   it('doubling is closed', () => {

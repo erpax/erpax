@@ -74,6 +74,17 @@ jobs:
             console.log('✔ root private — will not publish licensed app')
           "
 
+      # TESTED RELEASE. This workflow published @erpax/algebra — the MIT core-math
+      # package other people consume — with NO test and NO gate: checkout, build,
+      # assert tag, publish. It would ship red today (the facade split left the
+      # barrel using THEOREMS/isClosed/movie/product without importing them, and the
+      # host-math ban is failing). A publisher that cannot fail is not a release.
+      - name: Test the package being published
+        run: pnpm exec vitest run src/algebra --config ./vitest.config.mts
+
+      - name: Math-ban gate — every theorem is algebra, never host Math.*
+        run: pnpm exec cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/algebra/host/index.ts
+
       - name: Build free core math
         run: pnpm build
 

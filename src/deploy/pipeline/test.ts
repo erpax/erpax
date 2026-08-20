@@ -2,7 +2,7 @@ import { describe, it, expect, afterAll } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync, readFileSync, cpSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { pipelineViolations, releaseGuards, assertPipelineOrder, stepsOf } from './index'
+import { pipelineViolations, releaseGuards, assertPipelineOrder, stepsOf, testedBeforePublish } from './index'
 
 /** A temp repo carrying a copy of the real workflows, so each law can be broken in isolation. */
 const dirs: string[] = []
@@ -79,5 +79,42 @@ describe('deploy/pipeline — the release refuses a mismatched tag', () => {
     const publish = steps.findIndex((n) => /Publish to npm/i.test(n))
     expect(assertTag).toBeGreaterThanOrEqual(0)
     expect(assertTag).toBeLessThan(publish)
+  })
+})
+
+describe('deploy/pipeline — a publisher that cannot fail is not a release', () => {
+  it('every publish workflow tests or gates before it publishes', () => {
+    expect(testedBeforePublish()).toEqual([])
+  })
+
+  it('CATCHES a publisher with no test step — the state publish-algebra shipped in', () => {
+    // It published @erpax/algebra, the MIT package others consume, with no test and
+    // no gate: checkout → build → assert tag → publish. Synthetic rather than a
+    // mutation of the real file, so the law is tested and not the formatting.
+    const d = repo()
+    writeFileSync(join(d, '.github', 'workflows', 'publish-naked.yml'), [
+      'name: Naked', 'on: { workflow_dispatch: null }', 'jobs:', '  publish:', '    steps:',
+      '      - name: Checkout', '      - name: Build', '      - name: Publish to npm', '',
+    ].join('\n'))
+    const v = testedBeforePublish(d)
+    expect(v.some((x) => x.workflow === 'publish-naked.yml' && x.law === 'tested-before-publish')).toBe(true)
+  })
+
+  it('a gate AFTER the publish does not count', () => {
+    const d = repo()
+    writeFileSync(join(d, '.github', 'workflows', 'publish-late.yml'), [
+      'name: Late', 'on: { workflow_dispatch: null }', 'jobs:', '  publish:', '    steps:',
+      '      - name: Publish to npm', '      - name: Test the package', '',
+    ].join('\n'))
+    expect(testedBeforePublish(d).some((x) => x.workflow === 'publish-late.yml')).toBe(true)
+  })
+
+  it('accepts a publisher that gates FIRST', () => {
+    const d = repo()
+    writeFileSync(join(d, '.github', 'workflows', 'publish-good.yml'), [
+      'name: Good', 'on: { workflow_dispatch: null }', 'jobs:', '  publish:', '    steps:',
+      '      - name: Test the package', '      - name: Publish to npm', '',
+    ].join('\n'))
+    expect(testedBeforePublish(d).filter((x) => x.workflow === 'publish-good.yml')).toEqual([])
   })
 })

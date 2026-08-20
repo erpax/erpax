@@ -1,4 +1,4 @@
-import { existsSync, readFileSync } from 'node:fs'
+import { existsSync, readFileSync, readdirSync } from 'node:fs'
 import { join } from 'node:path'
 import { parse } from 'yaml'
 /**
@@ -113,9 +113,37 @@ export function releaseGuards(cwd: string = process.cwd()): PipelineViolation[] 
   return out
 }
 
+/**
+ * Every PUBLISHING workflow must test what it publishes, before it publishes.
+ *
+ * publish-algebra shipped @erpax/algebra — the MIT core-math package others consume —
+ * with no test and no gate at all: checkout, build, assert tag, publish. A publisher
+ * that cannot fail is not a release; it is a copy.
+ */
+export function testedBeforePublish(cwd: string = process.cwd()): PipelineViolation[] {
+  const out: PipelineViolation[] = []
+  const dir = join(cwd, '.github', 'workflows')
+  if (!existsSync(dir)) return out
+  for (const file of readdirSync(dir).filter((f) => /^publish-.*\.ya?ml$/.test(f))) {
+    const doc = parse(readFileSync(join(dir, file), 'utf8')) as {
+      jobs?: Record<string, { steps?: { name?: string }[] }>
+    }
+    for (const [jobName, job] of Object.entries(doc.jobs ?? {})) {
+      const steps = (job.steps ?? []).map((x, i) => ({ name: x.name ?? '', index: i })).filter((x) => x.name)
+      const publish = posOf(steps, /publish to npm/i)
+      if (publish < 0) continue
+      const verified = steps.filter((x) => /\bgate\b|\btest\b/i.test(x.name) && x.index < publish)
+      if (verified.length === 0) {
+        out.push({ workflow: file, law: 'tested-before-publish', reason: `job "${jobName}" publishes with no test or gate step before it` })
+      }
+    }
+  }
+  return out
+}
+
 /** Fail closed. Zero is a theorem: there is no acceptable number of these. */
 export function assertPipelineOrder(cwd: string = process.cwd()): void {
-  const all = [...pipelineViolations(cwd), ...releaseGuards(cwd)]
+  const all = [...pipelineViolations(cwd), ...releaseGuards(cwd), ...testedBeforePublish(cwd)]
   if (all.length === 0) return
   throw new Error(
     `✗ deploy pipeline order:\n${all.map((v) => `  [${v.law}] ${v.workflow} — ${v.reason}`).join('\n')}`,

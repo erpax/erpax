@@ -25,6 +25,7 @@
  * @standard GS1 GTIN — product identity when both sides declare it
  * @see ./SKILL.md · ../ai/semantic-search · ../commerce
  */
+import { algebraSqrt, exactMax, exactMin } from '@/algebra'
 
 /** The two poles of trade — one shape, opposite polarity ([[party]]/perspective). */
 export type TradeSide = 'offer' | 'demand'
@@ -115,8 +116,8 @@ const rangesOverlap = (
   aMin: number | undefined, aMax: number | undefined,
   bMin: number | undefined, bMax: number | undefined,
 ): boolean => {
-  const lo = Math.max(aMin ?? Number.NEGATIVE_INFINITY, bMin ?? Number.NEGATIVE_INFINITY)
-  const hi = Math.min(aMax ?? Number.POSITIVE_INFINITY, bMax ?? Number.POSITIVE_INFINITY)
+  const lo = exactMax(aMin ?? Number.NEGATIVE_INFINITY, bMin ?? Number.NEGATIVE_INFINITY)
+  const hi = exactMin(aMax ?? Number.POSITIVE_INFINITY, bMax ?? Number.POSITIVE_INFINITY)
   return lo <= hi
 }
 
@@ -235,7 +236,7 @@ export function rankMatches(seeking: TradePosition, candidates: readonly Candida
       const verdict = scoreMatch(seeking, c.position)
       // The geometric mean keeps a strong-on-one/weak-on-other pair from ranking
       // above one that is good on both.
-      const rank = verdict.viable ? Math.sqrt(Math.max(verdict.score, 0) * Math.max(c.similarity, 0)) : 0
+      const rank = verdict.viable ? algebraSqrt(exactMax(verdict.score, 0) * exactMax(c.similarity, 0)) : 0
       return { position: c.position, similarity: c.similarity, verdict, rank }
     })
     .filter((m) => m.verdict.viable)

@@ -1,4 +1,12 @@
-// algebra facade — barrel re-export semantic children
+// algebra facade — barrel re-export semantic children.
+//
+// The IMPORTS below are not redundant with the re-exports. A re-export creates no
+// local binding, and this file USES THEOREMS, Algebra, isClosed, movie and product in
+// its own code — so after the facade split they were undefined at runtime and the
+// whole atom's tests went red. Same defect the quantum/chat barrel had.
+import { THEOREMS, type Algebra } from './constants'
+import { isClosed, movie, product } from './operations'
+
 export {
   THEOREMS,
   type Algebra,
