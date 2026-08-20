@@ -52,3 +52,35 @@ describe('matrix constants-audit — auditConstants', () => {
     expect(auditConstants().crackTotal).toBeLessThanOrEqual(computedBaseline('matrix-crack'))
   })
 })
+
+describe('matrix constants-audit — what is NOT corpus matter', () => {
+  // A crack is a HAND-WRITTEN static a theorem could have folded. Two kinds of file
+  // can never be that, and both were counted until 2026-08-20.
+  const cracks = matrixCrackViolations()
+
+  it('excludes GENERATED faces — telling them to "compute from sealed state" is vacuous', () => {
+    // They ARE the computed state. The old pattern needed a dot before "generated",
+    // so a bare `generated.ts` (uuid/matrix) slipped through with 3 cracks.
+    const generated = cracks.filter((c) =>
+      /(^|\/)(catalogue|skills\.index|payload-types|generated)\.tsx?$/.test(c.file),
+    )
+    expect(generated).toEqual([])
+  })
+
+  it('excludes the Next App Router tree — those export names belong to the framework', () => {
+    // `dynamic` · `revalidate` · `metadata` · `maxDuration` are read by exact
+    // spelling by Next; erpax cannot derive them. Same reason rules/echo excludes
+    // app/ and rules/compatibility refuses to model the framework's namespace.
+    expect(cracks.filter((c) => c.file.startsWith('src/app/'))).toEqual([])
+  })
+
+  it('still audits a NESTED app folder — only the framework root is exempt', () => {
+    // The exemption must not become "any folder called app".
+    const nested = cracks.filter((c) => c.file.includes('/app/') && !c.file.startsWith('src/app/'))
+    expect(nested.length).toBeGreaterThan(0)
+  })
+
+  it('still audits ordinary hand-written constants — the axis has not been hollowed out', () => {
+    expect(cracks.length).toBeGreaterThan(700)
+  })
+})

@@ -67,7 +67,26 @@ const LAWFUL_BINDING_RE =
 
 const BASELINE_RE = /^[A-Z][A-Z0-9_]*_BASELINE$/
 
-const SKIP_FILES = /\.(test|generated)\.tsx?$/
+/**
+ * Not corpus matter, so not a crack.
+ *
+ * A crack is a HAND-WRITTEN static a theorem could have folded. Two kinds of file
+ * can never be that, and both were being counted:
+ *
+ *  · GENERATED faces — `skills.index.ts`, `catalogue.ts`, `uuid/matrix/generated.ts`.
+ *    Telling a generated file to "compute from sealed state" is vacuous: it IS the
+ *    computed state. The old pattern required a dot before "generated", so a bare
+ *    `generated.ts` slipped through. Generated bundles are not evidence — the same
+ *    law rules/unfolded, rules/canonical and rules/collapse all apply.
+ *  · the Next App Router tree — `export const dynamic|revalidate|metadata|maxDuration`
+ *    are names the FRAMEWORK reserves and reads by exact spelling. They are not
+ *    erpax's to derive, exactly as rules/echo excludes `app/` from the echo law and
+ *    rules/compatibility states that the framework's namespace is not in this
+ *    corpus's model.
+ */
+const SKIP_FILES = /\.(test|generated)\.tsx?$|^(generated|catalogue|skills\.index|payload-types)\.tsx?$/
+/** Next.js owns this tree; its route-segment exports are the framework's, not ours. */
+const SKIP_DIRS = new Set(['app'])
 
 const isFile = (p: string): boolean => {
   try {
@@ -86,6 +105,8 @@ const walkTs = (dir: string, cwd: string, out: string[]): void => {
   }
   for (const e of entries) {
     if (e.startsWith('.') || e === 'node_modules') continue
+    // Only at the src root: a nested `app` folder is ordinary corpus matter.
+    if (SKIP_DIRS.has(e) && relative(cwd, dir) === SRC) continue
     const p = join(dir, e)
     if (!isFile(p)) {
       try {

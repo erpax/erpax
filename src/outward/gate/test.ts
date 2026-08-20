@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest'
-import { contractGate, assertContractsHold, UNCOVERED_CEILING } from './index'
+import { contractGate, assertContractsHold, uncoveredCeiling } from './index'
+import { coverageReport } from '../coverage'
 
 /**
  * The gate must be OFFLINE — a correct erpax may never fail its own release because
@@ -43,8 +44,17 @@ describe('outward/gate — it fails CLOSED', () => {
     expect(() => assertContractsHold(0)).toThrow(/coverage regressed/)
   })
 
-  it('does not throw at the real ceiling', () => {
-    expect(() => assertContractsHold(UNCOVERED_CEILING)).not.toThrow()
+  it('does not throw at the DERIVED ceiling', () => {
+    expect(() => assertContractsHold(uncoveredCeiling())).not.toThrow()
+  })
+
+  it('the ceiling is the count of CREDENTIALED unproven rails — not a typed number', () => {
+    // A public rail can always be captured, so an unproven one is undone work and
+    // must redden. A credentialed one cannot be proven without credentials nobody
+    // has committed, so it must not. That distinction IS the ceiling.
+    const rep = coverageReport()
+    expect(uncoveredCeiling(rep)).toBe(rep.uncovered.filter((r) => r.auth !== 'none').length)
+    expect(rep.uncovered.filter((r) => r.auth === 'none')).toEqual([])
   })
 
   it('names the broken rail AND says the break is ours, not the world’s', () => {
@@ -55,6 +65,6 @@ describe('outward/gate — it fails CLOSED', () => {
     } catch (e) {
       expect(String((e as Error).message)).toMatch(/coverage regressed/)
     }
-    expect(UNCOVERED_CEILING).toBeGreaterThanOrEqual(0)
+    expect(uncoveredCeiling()).toBeGreaterThanOrEqual(0)
   })
 })

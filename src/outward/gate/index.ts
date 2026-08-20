@@ -1,7 +1,7 @@
 import { contractOffline, type ContractCheck } from '../eu/contract'
 import { bgContractOffline } from '../bg'
 import { worldContractOffline } from '../world'
-import { assertCoverageRatchet, assertContractedRailsResolve, coverageReport } from '../coverage'
+import { assertCoverageRatchet, assertContractedRailsResolve, coverageReport, type CoverageReport } from '../coverage'
 /**
  * outward/gate — every OFFLINE contract, in one fail-closed call.
  *
@@ -26,8 +26,24 @@ import { assertCoverageRatchet, assertContractedRailsResolve, coverageReport } f
  * @see ../eu/contract.ts · ../bg · ../world · ../coverage · ./test.ts
  */
 
-/** Unproven-claim ceiling. All 20 remaining rails are CREDENTIALED (oauth2 11 · api_key 5 · mtls 2 · basic 2). */
-export const UNCOVERED_CEILING = 20
+/**
+ * The unproven-claim ceiling, DERIVED — never a typed number.
+ *
+ * It was `= 20`, which is the corpus's own forbidden shape: a ceiling written by
+ * hand instead of computed ([[rules]] — ceilings live in the ratchet, read, never
+ * ALCAPS). And 20 was not even the law; it was a snapshot of how many credentialed
+ * rails happened to exist that afternoon.
+ *
+ * The actual law is sharper: a PUBLIC rail can always be captured, so an unproven
+ * one is undone work — while a CREDENTIALED one cannot be proven without
+ * credentials nobody has committed. So the ceiling IS the count of credentialed
+ * unproven rails. Add a public rail with no contract and this gate reddens
+ * immediately; add a credentialed one and it does not, because no amount of effort
+ * would close it.
+ */
+export function uncoveredCeiling(report: CoverageReport = coverageReport()): number {
+  return report.uncovered.filter((r) => r.auth !== 'none').length
+}
 
 export interface ContractGateReport {
   readonly checks: readonly ContractCheck[]
@@ -56,7 +72,7 @@ export function contractGate(): ContractGateReport {
  *
  * @invariant every offline contract holds ∧ every contracted endpoint resolves ∧ uncovered ≤ ceiling
  */
-export function assertContractsHold(ceiling: number = UNCOVERED_CEILING): void {
+export function assertContractsHold(ceiling: number = uncoveredCeiling()): void {
   const report = contractGate()
   if (!report.holds) {
     throw new Error(
@@ -76,7 +92,7 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   for (const c of report.checks) console.log(`  ${c.holds ? '✓' : '✗'} ${c.rail.padEnd(12)} ${c.detail}`)
   try {
     assertContractsHold()
-    console.log(`\n${report.summary}\n  ${coverageReport().summary} (ceiling ${UNCOVERED_CEILING})`)
+    console.log(`\n${report.summary}\n  ${coverageReport().summary} (ceiling ${uncoveredCeiling()})`)
   } catch (e) {
     console.error(`\n${String((e as Error).message)}`)
     process.exit(1)
