@@ -2,7 +2,7 @@
   "name": "erpax",
   "version": "1.0.0",
   "private": true,
-  "description": "Source-available multi-tenant ERP & double-entry accounting on Payload CMS v4 + Cloudflare (D1 + R2 + Workers via OpenNext) \u2014 content-addressed, tamper-evident, standards-bound",
+  "description": "Source-available multi-tenant ERP & double-entry accounting on Payload CMS v4 + Cloudflare (D1 + R2 + Workers via OpenNext) — content-addressed, tamper-evident, standards-bound",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",
   "packageManager": "pnpm@11.0.8",
@@ -139,7 +139,8 @@
     "vite": "^8.2.0",
     "vitepress": "^1.6.4",
     "vitest": "^4.1.10",
-    "wrangler": "^4.118.0"
+    "wrangler": "^4.118.0",
+    "yaml": "^2.9.0"
   },
   "engines": {
     "node": "^18.20.2 || >=20.9.0",

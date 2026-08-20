@@ -11,7 +11,13 @@
 name: Cloudflare
 
 on:
-  push:
+  # DEPLOY WAITS FOR CI. Both used to trigger on `push: main` independently, so they
+  # RACED: a commit whose tests were failing still deployed, because nothing connected
+  # them. workflow_run fires only when CI has finished, and the guard below refuses
+  # anything but a green conclusion.
+  workflow_run:
+    workflows: ['CI']
+    types: [completed]
     branches: [main, master]
   workflow_dispatch:
 
@@ -23,6 +29,11 @@ jobs:
   deploy:
     name: Deploy + UI smoke
     runs-on: ubuntu-latest
+    # Green-only. A manual dispatch is still allowed; a CI run that did not succeed
+    # never reaches the deploy step.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
     timeout-minutes: 45
     env:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -31,6 +42,10 @@ jobs:
       PAYLOAD_BUILD_USE_REMOTE_D1: 'true'
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The exact commit CI verified — NOT whatever main points at now. Without
+          # this, a push landing during the CI run would deploy code nothing tested.
+          ref: ${{ github.event.workflow_run.head_sha || github.ref }}
 
       # Fail before pnpm install when secrets are missing (saves minutes on every red run).
       - name: Require Cloudflare secrets
@@ -67,14 +82,29 @@ jobs:
         if: steps.pw-cache.outputs.cache-hit == 'true'
         run: pnpm exec playwright install chromium
 
+      # The offline half of the outward contracts + the boot gate. Both are
+      # deterministic and cannot flake on someone else's uptime, so they belong in
+      # front of a deploy rather than after it.
+      - name: Contract gate — erpax parses what the external rails send
+        run: pnpm exec cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/outward/gate/index.ts
+
+      - name: Boot gate — the Payload config loads
+        run: pnpm exec cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/run/load/index.ts
+
+      # MIGRATE AFTER THE BUILD COMPILES. This ran first, so a build that failed left
+      # the PRODUCTION database already migrated for a Worker that never shipped —
+      # schema ahead of code, and nothing to roll it back.
+      - name: Build (OpenNext → Workers, lean next build)
+        run: pnpm exec opennextjs-cloudflare build
+
       - name: Migrate remote D1
         run: pnpm erpax deploy db
 
-      - name: Build + deploy (OpenNext → Workers, lean next build)
+      - name: Deploy
         id: deploy
         run: |
           set -o pipefail
-          pnpm erpax deploy app 2>&1 | tee /tmp/cf-deploy.log
+          pnpm exec opennextjs-cloudflare deploy 2>&1 | tee /tmp/cf-deploy.log
           if [ -n "${{ vars.STAGING_URL }}" ]; then
             BASE="${{ vars.STAGING_URL }}"
           else

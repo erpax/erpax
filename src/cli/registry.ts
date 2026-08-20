@@ -257,6 +257,7 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     },
   },
   deploy: {
+    pipeline: { desc: 'Deploy/release workflow ORDER — green CI, build before migrate, gates before ship', cmd: `${TSX} src/deploy/pipeline/index.ts` },
     db: {
       desc: 'Migrate remote D1 + optimize',
       cmd: 'cross-env NODE_ENV=production PAYLOAD_SECRET=ignore NODE_OPTIONS="--no-deprecation --import=./src/css/load-hook.mjs" payload migrate && wrangler d1 execute D1 --command \'PRAGMA optimize\' --remote',

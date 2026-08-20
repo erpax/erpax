@@ -44,6 +44,10 @@ export const GATE_LANES: readonly (readonly [string, string])[] = [
   // Measured once at 11 orphans, four of them STANDING feedback, all four violated in
   // the session that found them. Zero is a theorem here, not a ratchet.
   ['memory', 'pnpm erpax memory drift'],
+  // PIPELINE ORDER — ci.yml and cloudflare.yml once raced on `push: main`, so a
+  // commit with failing tests deployed anyway; and D1 migrated BEFORE the build, so a
+  // failed build left production schema ahead of a Worker that never shipped.
+  ['pipeline', 'pnpm erpax deploy pipeline'],
   ['readme:check', 'pnpm erpax readme check'],
   ['payload-types', 'bash scripts/payload-verify-types.sh'],
   ['lint', 'pnpm erpax lint'],
