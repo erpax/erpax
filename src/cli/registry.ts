@@ -272,6 +272,28 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
   db: {
     regenerate: { desc: 'Regenerate database artefacts', cmd: 'bash scripts/db-regenerate.sh' },
     audit: { desc: 'D1 column audit', cmd: 'node src/database/d1-column-audit.mjs' },
+    seed: {
+      desc: 'Seed the local D1 so the payload.config suites run',
+      cmd: 'cross-env PAYLOAD_DEV_PUSH=true NODE_OPTIONS="--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs" vitest run src/payload.config.api.test.ts --config ./vitest.config.mts',
+    },
+    reset: {
+      desc: 'Drop local D1 + the push/migrate sentinels (greenfield)',
+      cmd: 'rm -rf .wrangler/state/v3/d1 node_modules/.cache/erpax/schema.pushed node_modules/.cache/erpax/migrate.sentinel',
+    },
+  },
+  // The @erpax/* package lanes. These were four package.json scripts; the registry is
+  // the one surface, so a script that merely re-spells a lane is duplication.
+  // VitePress lanes — three package.json scripts folded into the one surface.
+  docs: {
+    dev: { desc: 'VitePress docs — dev', cmd: "vitepress dev" },
+    build: { desc: 'VitePress docs — build', cmd: "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=24000\" vitepress build" },
+    preview: { desc: 'VitePress docs — preview', cmd: "vitepress preview" },
+  },
+  packages: {
+    build: { desc: 'Build every @erpax/* package (esbuild + types + closure ratchet)', cmd: 'node packages/build.mjs all' },
+    release: { desc: 'Content-addressed version manifest (dry-run)', cmd: 'node packages/release.mjs' },
+    write: { desc: 'Write the version manifest', cmd: 'node packages/release.mjs --write' },
+    check: { desc: 'Assert the manifest matches built content — no drift', cmd: 'node packages/release.mjs --check' },
   },
   import: {
     blogger: { desc: 'Blogger → JSON', cmd: 'tsx src/services/ingest/blogger-to-json.ts' },
