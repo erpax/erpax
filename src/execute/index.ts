@@ -1,5 +1,6 @@
 import { recursiveAndObserve, observationLog, WaveObservation } from '@/recursive'
 import { randomUUID } from 'node:crypto'
+import { exactMaxOf } from '@/algebra'
 
 export interface ExecutionResult {
   readonly executionId: string
@@ -110,7 +111,7 @@ export async function captureWaveTree(rootProblem: string): Promise<WaveTree> {
 
   return {
     root: rootProblem,
-    depth: Math.max(...result.waves.map(w => w.depth), 0),
+    depth: exactMaxOf([...result.waves.map((w) => w.depth), 0]),
     nodes: result.waves.length,
     edges,
     convergenceMap,

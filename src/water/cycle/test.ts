@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { exactRound } from '@/algebra'
 import {
   cycleMole, overUnityWitness, inputMJPerLitre, versusReverseOsmosis, storageYield,
   SPLIT_KJ_PER_MOL, HHV_KJ_PER_MOL, LHV_KJ_PER_MOL, MOL_PER_LITRE, RO_MJ_PER_LITRE,
@@ -110,8 +111,8 @@ describe('water/cycle — "at quantum scale" is where the constraint COMES FROM'
     const eff = { electrolyser: 0.8, engine: 0.6, generator: 1, condensing: true }
     const spec = plantSpec(100, 8, eff)
     expect(spec.kwhCharged).toBe(800_000)
-    expect(Math.round(spec.litresPerDay)).toBe(145_658)
-    expect(Math.round(spec.peopleServed)).toBe(7283)
+    expect(exactRound(spec.litresPerDay)).toBe(145_658)
+    expect(exactRound(spec.peopleServed)).toBe(7283)
     // returned is the round-trip fraction of charged — no energy appears
     expect(spec.kwhReturned).toBeLessThan(spec.kwhCharged)
     expect(spec.kwhReturned / spec.kwhCharged).toBeCloseTo(cycleMole(eff).roundTrip, 6)
@@ -136,9 +137,9 @@ describe('water/cycle — "at quantum scale" is where the constraint COMES FROM'
 
   it('the gas is 1861x the volume of the water it came from', () => {
     const p = splitProducts(1)
-    expect(Math.round(p.litresHydrogenStp + p.litresOxygenStp)).toBe(1861)
-    expect(Math.round(p.litresHydrogenStp)).toBe(1240)
-    expect(Math.round(p.litresOxygenStp)).toBe(620)
+    expect(exactRound(p.litresHydrogenStp + p.litresOxygenStp)).toBe(1861)
+    expect(exactRound(p.litresHydrogenStp)).toBe(1240)
+    expect(exactRound(p.litresOxygenStp)).toBe(620)
   })
 
   it('scaling is linear and mass still closes', () => {

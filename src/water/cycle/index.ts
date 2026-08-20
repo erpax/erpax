@@ -1,3 +1,4 @@
+import { LN2 } from '@/algebra'
 /**
  * water/cycle — split water, burn it back. It purifies and stores; it cannot
  * generate. Why, and what the numbers mean, is in ./SKILL.md.
@@ -100,7 +101,7 @@ export function reversibleVoltage(): number {
 
 /** Landauer floor per mole of erased bits — the demon pays kT ln2 and mints nothing. */
 export function landauerKJPerMol(kelvin = 298): number {
-  return (BOLTZMANN_J_PER_K * kelvin * Math.LN2 * AVOGADRO_PER_MOL) / 1000
+  return (BOLTZMANN_J_PER_K * kelvin * LN2 * AVOGADRO_PER_MOL) / 1000
 }
 
 export interface PhotonPath {

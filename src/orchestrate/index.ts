@@ -133,12 +133,17 @@ async function executeTask(task: SubproblemTask): Promise<ComputationResult> {
     Buffer.from(task.quantumOps.join(','), 'utf8'),
   ])
 
-  const outcome =
-    Math.random() > 0.7
-      ? ('convergent' as const)
-      : Math.random() > 0.5
-        ? ('inconclusive' as const)
-        : ('divergent' as const)
+  // No evaluator is wired to this task yet, so this function does not know whether
+  // the problem converged. It used to decide by coin flip — Math.random() > 0.7 for
+  // convergent, another flip for inconclusive — and computeConvergence averaged those
+  // into a convergence score, so an orchestration reported convergence roughly a third
+  // of the time on no evidence at all. A fabricated verdict reads exactly like a
+  // measured one, which is the shape every catastrophe in this corpus has taken.
+  //
+  // `inconclusive` is what is actually known. It is a confessed stub — rules/audience
+  // counts it, and that is the point: it is visible, and it cannot be mistaken for a
+  // result. Wire a real evaluator and this line is where it goes.
+  const outcome = 'inconclusive' as const
 
   return {
     taskId: task.id,

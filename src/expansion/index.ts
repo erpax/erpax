@@ -1,4 +1,5 @@
 import { createHmac, randomBytes } from 'node:crypto'
+import { exactCeil } from '@/algebra'
 
 export interface QuantumFoldCipherKey {
   readonly salt: Buffer
@@ -23,7 +24,7 @@ export function expandKeySync(ikm: Buffer, salt?: Buffer, info?: Buffer, length:
   hmacExtract.update(ikm)
   const prk = hmacExtract.digest()
 
-  const n = Math.ceil(length / 32)
+  const n = exactCeil(length / 32)
   let t = Buffer.alloc(0)
   const output: Buffer[] = []
 

@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { PI, algebraSqrt } from '@/algebra'
 import {
   circleLoop,
   lemniscate,
@@ -19,7 +20,7 @@ describe('horo/geometry', () => {
       expect(p0.x).toBeCloseTo(1)
       expect(p0.y).toBeCloseTo(0)
 
-      const pHalf = circleLoop(Math.PI / 2)
+      const pHalf = circleLoop(PI / 2)
       expect(pHalf.x).toBeCloseTo(0, 9)
       expect(pHalf.y).toBeCloseTo(1)
     })
@@ -27,7 +28,7 @@ describe('horo/geometry', () => {
     it('never reaches the void', () => {
       const samples = 100
       for (let i = 0; i < samples; i++) {
-        const t = (i / samples) * 2 * Math.PI
+        const t = (i / samples) * 2 * PI
         const p = circleLoop(t)
         expect(atVoid(p)).toBe(false)
       }
@@ -40,18 +41,18 @@ describe('horo/geometry', () => {
       expect(p0.x).toBeCloseTo(1)
 
       // Gerono: y = sin(2t)/2, so at t = π/2 the eight CROSSES THE VOID — y is 0, not a lobe height.
-      const pHalf = lemniscate(Math.PI / 2)
+      const pHalf = lemniscate(PI / 2)
       expect(pHalf.x).toBeCloseTo(0, 9)
       expect(pHalf.y).toBeCloseTo(0, 9)
-      const pLobe = lemniscate(Math.PI / 4)
+      const pLobe = lemniscate(PI / 4)
       expect(pLobe.y).toBeCloseTo(0.5)
     })
 
     it('crosses the void at fold points', () => {
-      const pFold1 = lemniscate(Math.PI / 2)
+      const pFold1 = lemniscate(PI / 2)
       expect(atVoid(pFold1)).toBe(true)
 
-      const pFold2 = lemniscate((3 * Math.PI) / 2)
+      const pFold2 = lemniscate((3 * PI) / 2)
       expect(atVoid(pFold2)).toBe(true)
     })
   })
@@ -92,7 +93,7 @@ describe('horo/geometry', () => {
       expect(limit.radius).toBe(10)
       expect(limit.curvature).toBeCloseTo(0.1)
       expect(limit.maxSpeed).toBeGreaterThan(0)
-      expect(limit.maxSpeed).toBeCloseTo(Math.sqrt(10))
+      expect(limit.maxSpeed).toBeCloseTo(algebraSqrt(10))
     })
   })
 

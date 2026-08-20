@@ -3109,7 +3109,7 @@ src/warehouse/locations/index.ts:10: * @standard ISO-3166-2:2020 subdivision-cod
 src/warehouse/locations/index.ts:11: * @standard ISO-6346:2022 freight-container-coding-and-marking
 src/warehouse/locations/index.ts:12: * @standard EN-16931:2017 §BG-15 deliver-to-information
 src/warehouse/locations/index.ts:9: * @standard ISO-3166-1:2020 country-codes location-country
-src/water/cycle/index.ts:5: * @standard NIST — ΔH°f H2O(l) = −285.83 kJ/mol · H2O(g) = −241.83 kJ/mol
+src/water/cycle/index.ts:6: * @standard NIST — ΔH°f H2O(l) = −285.83 kJ/mol · H2O(g) = −241.83 kJ/mol
 src/wave/horo/index.ts:28: * @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring
 src/wco/hs/index.ts:10: * @standard EU CN Code (Combined Nomenclature) Regulation (EEC) 2658/87
 src/wco/hs/index.ts:11: * @standard US HTS (Harmonized Tariff Schedule)

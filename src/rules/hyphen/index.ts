@@ -2,6 +2,7 @@ import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs'
 import { join, dirname, posix } from 'node:path'
 import { importSpecifiersOf } from '@/syntax'
 import type { ScalpelOp } from '@/scalpel'
+import { exactMax } from '@/algebra'
 /**
  * rules/hyphen — the hyphen campaign, computed as a MANIFEST instead of swept.
  *
@@ -394,7 +395,7 @@ export async function runHyphenCampaign(opts: {
   const { planScalpel, applyScalpel } = await import('@/scalpel')
   const { renameSync } = await import('node:fs')
   const candidates = opts.renames ?? viableRenames(cwd)
-  const size = Math.max(1, opts.batchSize ?? 30)
+  const size = exactMax(1, opts.batchSize ?? 30)
 
   // A rename is only in the run if EVERY op it needs cuts cleanly. If one specifier
   // sits on a line that occurs twice, the scalpel refuses it — and moving the file

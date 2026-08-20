@@ -1,3 +1,5 @@
+import { CONVERGENCE_THRESHOLD, gte, rational } from '@/exact'
+
 import { describe, it, expect } from 'vitest'
 import { spawnRecursiveWave, spawnAndObserve, observationLog, recursiveAndObserve } from './index'
 
@@ -33,5 +35,19 @@ describe('recursive', () => {
     const wave = await spawnAndObserve('Riemann Hypothesis', 0)
     const hasConvergence = wave.observed.some(o => o.action === 'converged')
     expect([true, false]).toContain(hasConvergence) // Either converged or not, both valid
+  })
+
+  it('convergence is UNREACHABLE while confidences are hardcoded below the threshold', () => {
+    // Every observation confidence in spawnAndObserve is a literal: 1/10, 5/10, 15/20.
+    // CONVERGENCE_THRESHOLD is 19/20. The check reads the LAST observation, so the best
+    // case is 15/20 = 0.75 against 0.95 and `converged` can never be true — which means
+    // recursiveAndObserve never descends and every wave tree is depth 0.
+    //
+    // This is a refutable statement of a real limit, not an endorsement of it: wire a
+    // computed confidence and this test goes red, which is the signal to revisit
+    // execute/test.ts's depth expectation too.
+    expect(gte(rational(15n, 20n), CONVERGENCE_THRESHOLD)).toBe(false)
+    expect(gte(rational(5n, 10n), CONVERGENCE_THRESHOLD)).toBe(false)
+    expect(gte(rational(1n, 10n), CONVERGENCE_THRESHOLD)).toBe(false)
   })
 })

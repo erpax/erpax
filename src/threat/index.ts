@@ -1,3 +1,4 @@
+import { algebraSqrt } from '@/algebra'
 export type ThreatType = 'immediate-retire' | 'quantum-accelerated' | 'quantum-safe'
 
 export interface ThreatModel {
@@ -25,13 +26,13 @@ const THREAT_REGISTRY: readonly ThreatModel[] = [
     algorithm: 'AES-256',
     keyBits: 256,
     threatType: 'quantum-accelerated',
-    groverAcceleration: Math.sqrt(2 ** 256),
+    groverAcceleration: algebraSqrt(2 ** 256),
   },
   {
     algorithm: 'SHA-256',
     keyBits: 256,
     threatType: 'quantum-accelerated',
-    groverAcceleration: Math.sqrt(2 ** 256),
+    groverAcceleration: algebraSqrt(2 ** 256),
   },
 ]
 
@@ -49,7 +50,7 @@ export function assertThreatClassificationHonest(): void {
 
   const withGrover = THREAT_REGISTRY.filter(t => t.groverAcceleration)
   for (const threat of withGrover) {
-    const expectedSqrt = Math.sqrt(2 ** threat.keyBits)
+    const expectedSqrt = algebraSqrt(2 ** threat.keyBits)
     if (threat.groverAcceleration !== expectedSqrt) {
       throw new Error(
         `${threat.algorithm}: Grover must be sqrt(2^${threat.keyBits}), not 2^(${threat.keyBits}/2)`,
