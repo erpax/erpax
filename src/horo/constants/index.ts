@@ -47,40 +47,22 @@ export interface FiveRoles {
   readonly isAttractor: boolean
 }
 
-export interface InverseClosure {
-  readonly order: number
-  readonly covers: readonly number[]
-  readonly gaps: readonly number[]
-  readonly voidCloses: boolean
-}
-
-export interface CarryRay {
-  readonly step: number
-  readonly doubled: number
-  readonly digits: readonly number[]
-  readonly rays: readonly Ray[]
-  readonly lands: number
-  readonly straddles: boolean
-}
-
-export interface Loop2D {
-  readonly x: number
-  readonly y: number
-}
-
-export interface BreathStep {
-  readonly step: number
-  readonly slope: 'up' | 'down'
-}
-
-export interface CornerLimit {
-  readonly corner: number
-  readonly limit: number
-  readonly taper: number
-}
-
-export interface Singularity {
-  readonly step: number
-  readonly weight: number
-}
+// The six interfaces that stood here were STRIPPED COPIES of types the semantic
+// children already own — dropped in when 967bc70a7 split this hub, and left behind in
+// both places. TypeScript excluded every one from the @/horo barrel as ambiguous
+// (TS2308), so the facade offered NONE of the six.
+//
+// CornerLimit had also diverged: `{ corner, limit, taper }` here against
+// `{ radius, curvature, maxSpeed }` in horo/geometry, which is the shape every real
+// caller uses. Same name, unrelated meaning — a decoy, not a duplicate.
+//
+// The declarations are gone; the NAMES stay, re-exported from the child that owns
+// each one. Deleting them outright would have dropped six names from this atom's
+// face, and a consumer may lawfully import `@/horo/constants` — erpax ships as
+// packages, so an out-of-repo caller is not hypothetical. `export type` is erased at
+// compile time, so pointing back at a child that imports from here costs no runtime
+// edge and makes no cycle.
+export type { InverseClosure } from '../arithmetic'
+export type { CarryRay } from '../ring'
+export type { Loop2D, BreathStep, CornerLimit, Singularity } from '../geometry'
 

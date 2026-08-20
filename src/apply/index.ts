@@ -101,7 +101,10 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.log(renderDomainTable(inv))
     if (report) {
       const hub = proveLedgerHubCoverage()
-      const { accountCodeOf } = await import('@/accounting')
+      // @/accounting deliberately does NOT re-export the corpus surface — pulling it in
+      // pins readme/compute and a 4MB generated file. accountCodeOf lives on @/accounting/coa,
+      // which is a barrel, so this stays index-only.
+      const { accountCodeOf } = await import('@/accounting/coa')
       const {
         recordEfficiencyPass,
         formatEfficiencySummary,

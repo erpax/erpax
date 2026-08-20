@@ -39,9 +39,9 @@ import { CRACK_FLAGS, type Seal } from './map'
 // `ReferenceError: BOUNDARY is not defined` with zero type errors (the facade split
 // turned the definitions into re-exports while this file kept calling them).
 // Import what this file USES, alongside what it re-exports.
-import { BOUNDARY, LANE, PHYSICAL_FTL_DEFAULTS } from './constants'
-import { amortize, reuse } from './metrics'
-import { cracks, boundary, crack } from './crack'
+import { BOUNDARY, type Boundary, LANE, PHYSICAL_FTL_DEFAULTS } from './constants'
+import { type Amortize, amortize, type Reuse, reuse } from './metrics'
+import { boundary, type Crack, crack, type CrackPattern, cracks } from './crack'
 import { exactMax } from '@/algebra'
 
 export { TOKENS, ENTANGLE, API, CRACK_FLAGS, type Token, type CrackKind, type Seal } from './map'

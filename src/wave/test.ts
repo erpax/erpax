@@ -1,3 +1,5 @@
+import { CONVERGENCE_THRESHOLD, rational } from '@/exact'
+
 import { describe, it, expect } from 'vitest'
 import { initWave, recordFinding, streamPublish, ledgerRecord, runWave, waveStats } from './index'
 
@@ -14,11 +16,11 @@ describe('wave', () => {
 
   it('records finding with outcome and confidence', async () => {
     const wave = await initWave(['P vs NP'])
-    const record = await recordFinding(wave, 'P vs NP', 'convergent', 0.85)
+    const record = await recordFinding(wave, 'P vs NP', 'convergent', rational(17n, 20n))
 
     expect(record.problem).toBe('P vs NP')
     expect(record.outcome).toBe('convergent')
-    expect(record.confidence).toBe(0.85)
+    expect(record.confidence).toEqual(rational(17n, 20n))
     expect(record.doi).toBeUndefined()
   })
 
@@ -27,10 +29,10 @@ describe('wave', () => {
       timestamp: Date.now(),
       problem: 'Riemann Hypothesis',
       outcome: 'convergent' as const,
-      confidence: 0.97,
+      confidence: rational(97n, 100n),
     }
 
-    const publication = await streamPublish(record, 0.95)
+    const publication = await streamPublish(record, CONVERGENCE_THRESHOLD)
     expect(publication).toBeDefined()
     expect(publication?.doi).toMatch(/10\.5281\/zenodo\.\d+/)
     expect(publication?.zenodoId).toMatch(/zenodo-[a-z0-9]+/)
@@ -41,17 +43,17 @@ describe('wave', () => {
       timestamp: Date.now(),
       problem: 'Yang-Mills',
       outcome: 'inconclusive' as const,
-      confidence: 0.5,
+      confidence: rational(1n, 2n),
     }
 
-    const publication = await streamPublish(record, 0.95)
+    const publication = await streamPublish(record, CONVERGENCE_THRESHOLD)
     expect(publication).toBeNull()
   })
 
   it('adds records to ledger with optional publication', async () => {
     const wave = await initWave(['P vs NP'])
-    const record = await recordFinding(wave, 'P vs NP', 'convergent', 0.96)
-    const publication = await streamPublish(record, 0.95)
+    const record = await recordFinding(wave, 'P vs NP', 'convergent', rational(24n, 25n))
+    const publication = await streamPublish(record, CONVERGENCE_THRESHOLD)
 
     const updatedState = await ledgerRecord(wave, record, publication || undefined)
     expect(updatedState.ledger).toHaveLength(1)
@@ -61,8 +63,8 @@ describe('wave', () => {
 
   it('detects convergence at high confidence', async () => {
     const wave = await initWave(['Navier-Stokes'])
-    const record = await recordFinding(wave, 'Navier-Stokes', 'convergent', 0.97)
-    const publication = await streamPublish(record, 0.95)
+    const record = await recordFinding(wave, 'Navier-Stokes', 'convergent', rational(97n, 100n))
+    const publication = await streamPublish(record, CONVERGENCE_THRESHOLD)
     const updatedState = await ledgerRecord(wave, record, publication || undefined)
 
     expect(updatedState.converged).toBe(true)
@@ -70,7 +72,7 @@ describe('wave', () => {
 
   it('runs full wave with multiple iterations', async () => {
     const problems = ['P vs NP', 'Riemann Hypothesis']
-    const wave = await runWave(problems, 50, 0.95)
+    const wave = await runWave(problems, 50, CONVERGENCE_THRESHOLD)
 
     expect(wave.state.ledger.length).toBeGreaterThan(0)
     expect(wave.state.terminationReason).toBeDefined()
@@ -78,11 +80,13 @@ describe('wave', () => {
   })
 
   it('collects wave statistics', async () => {
-    const wave = await runWave(['Hodge Conjecture'], 30, 0.95)
+    const wave = await runWave(['Hodge Conjecture'], 30, CONVERGENCE_THRESHOLD)
     const stats = await waveStats(wave)
 
     expect(stats.totalRecords).toBeGreaterThan(0)
     expect(stats.converged + stats.diverged + stats.inconclusive).toBe(stats.totalRecords)
-    expect(stats.timeElapsed).toBeGreaterThan(0)
+    // Date.now() - startTime inside a synchronous test is 0 whenever the run fits in
+    // one millisecond; the refutable claim is that elapsed time is never negative.
+    expect(stats.timeElapsed).toBeGreaterThanOrEqual(0)
   })
 })

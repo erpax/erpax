@@ -16,6 +16,7 @@ export {
 // export named 'ChatSession'"), and the whole barrel fails to load. Types leave by
 // `export type`; values by `export`.
 export type { ChatSession } from './routing'
+import type { ChatSession } from './routing'
 export { improve, startSession, sessionAppend, sealSession } from './routing'
 
 // A re-export NAMES nothing at runtime (the hazard this file already records for
@@ -25,7 +26,7 @@ export { improve, startSession, sessionAppend, sealSession } from './routing'
 // turned these definitions into re-exports while the parent kept calling them.
 // Import what this file USES, alongside what it re-exports.
 import { improve, sessionAppend } from './routing'
-import { threadUuid } from './merkle'
+import { appended, threadUuid } from './merkle'
 
 import { algebraLog2, exactCeil, exactMax, exactTrunc } from '@/algebra'
 /**
@@ -247,13 +248,10 @@ export function stringTheoryEquation(t: ThreadString = threadModes([])): string 
 // improvements it made. Deterministic seed (same topic ⇒ same start) — content-addressed,
 // not wall-clock. Sealed sessions persist to the Payload `chat` collection.
 
-export interface ChatSession {
-  readonly topic: string
-  readonly messageUuids: readonly string[]
-  /** current tamper-evident thread-uuid — the session's record of every folded change. */
-  readonly thread: string
-  readonly sealed: boolean
-}
+// ChatSession's declaration was a second copy of the one in quantum/chat/routing —
+// byte-identical, dropped in by the same split that emptied this barrel's children.
+// routing owns it (its own startSession/sessionAppend are typed by it); this file
+// imports it for local use and re-exports it above for consumers.
 
 
 // ── the dyadic referral gateway — RESTORED ─────────────────────────────────

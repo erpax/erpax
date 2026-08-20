@@ -11,7 +11,6 @@
 
 import type { CollectionBeforeChangeHook, Field } from 'payload'
 import { exactMax, exactAbs, exactTrunc, algebraCos, algebraSin, algebraAtan2, algebraSqrt, PI } from '../../algebra'
-import { type Loop2D } from '../constants'
 import { HORO_DIGITS, INNER_CIRCUIT, POLE, isHoroStep, type HoroStep } from '../constants'
 import { composeSteps, throughVoid, digitalRoot } from '../arithmetic'
 import { orbitOf, carryRays } from '../ring'

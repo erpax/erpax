@@ -89,7 +89,13 @@ export async function ledgerRecord(
 
   const newLedger = [...wave.state.ledger, updatedRecord]
   const publishedCount = newLedger.filter(r => r.doi).length
-  const isConverged = newLedger.some(r => r.outcome === 'convergent' && r.confidence > 0.95)
+  // `r.confidence > 0.95` compared a Rational OBJECT against a number: JS coerces the
+  // object to "[object Object]", the comparison is NaN, and it read false for every
+  // record ever written — a confidence of exactly 1 included. The atom already owns the
+  // right comparison and uses it in streamPublish; this is the same one.
+  const isConverged = newLedger.some(
+    (r) => r.outcome === 'convergent' && gte(r.confidence, CONVERGENCE_THRESHOLD),
+  )
 
   const newState: WaveState = {
     ...wave.state,
