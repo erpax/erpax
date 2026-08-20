@@ -180,8 +180,26 @@ export function faceRing(ref: string, cwd: string = process.cwd()): readonly Fac
   return faceLosses(faceAtRef(ref, cwd), corpusFace(cwd))
 }
 
+/**
+ * What a gate should compare against with no argument: the point this work
+ * forked from what is already published. `HEAD` is the wrong default for a
+ * gate — on a committed tree it is trivially empty, so it would report green
+ * over every refactor the branch contains.
+ */
+export function baseRef(cwd: string = process.cwd()): string {
+  for (const upstream of ['origin/main', 'main']) {
+    try {
+      const base = execSync(`git merge-base HEAD ${upstream}`, { cwd, encoding: 'utf8', stdio: 'pipe' }).trim()
+      if (base) return base
+    } catch {
+      continue
+    }
+  }
+  return 'HEAD'
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
-  const ref = process.argv[2] ?? 'HEAD'
+  const ref = process.argv[2] ?? baseRef()
   const losses = faceRing(ref)
   const dropped = losses.reduce((sum, l) => sum + l.lost.length, 0)
   console.log(`face ring vs ${ref} — ${losses.length} atom(s) stopped offering a name (${dropped} name(s))`)

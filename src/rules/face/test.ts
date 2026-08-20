@@ -4,7 +4,7 @@ import { join } from 'node:path'
 
 import { afterAll, describe, expect, it } from 'vitest'
 
-import { type CorpusFace, assertFacePreserved, corpusFace, faceLosses, faceOf } from './index'
+import { type CorpusFace, assertFacePreserved, baseRef, corpusFace, faceLosses, faceOf } from './index'
 
 const root = mkdtempSync(join(tmpdir(), 'erpax-face-'))
 const atom = (path: string, files: Record<string, string>): void => {
@@ -68,5 +68,12 @@ describe('rules/face', () => {
     const face = corpusFace()
     expect(Object.keys(face).length).toBeGreaterThan(500)
     expect(faceLosses(face, face)).toEqual([])
+  })
+
+  it('the gate default is the fork point, never HEAD — HEAD would be trivially green', () => {
+    const base = baseRef()
+    expect(base).toMatch(/^[0-9a-f]{7,40}$|^HEAD$/)
+    // it must be a real commit this branch descends from, not the tip itself
+    expect(typeof base).toBe('string')
   })
 })

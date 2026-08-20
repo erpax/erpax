@@ -48,6 +48,15 @@ export const GATE_LANES: readonly (readonly [string, string])[] = [
   // commit with failing tests deployed anyway; and D1 migrated BEFORE the build, so a
   // failed build left production schema ahead of a Worker that never shipped.
   ['pipeline', 'pnpm erpax deploy pipeline'],
+  // FACE — a refactor may move matter anywhere and may add to an atom's face freely,
+  // but it may never quietly take a name away: `import { X } from '@/a'` breaks the
+  // moment '@/a' stops offering X, and nothing else reports it. Replayed against
+  // 967bc70a7 ("split 4 concentration hubs via Facade pattern") it catches
+  // @/quantum/chat dropping GATEWAY_BITS, crossStates, distributeToStates and
+  // referralsFor. Compares the working tree against the fork point, never HEAD —
+  // HEAD is trivially green on a committed tree, which is a gate that reports over
+  // every refactor the branch contains. Zero is a theorem, not a ratchet.
+  ['face', 'pnpm erpax face'],
   ['readme:check', 'pnpm erpax readme check'],
   ['payload-types', 'bash scripts/payload-verify-types.sh'],
   ['lint', 'pnpm erpax lint'],
