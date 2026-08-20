@@ -80,7 +80,17 @@ const GENERATED = /skills\.index\.ts$|payload-types\.ts$|\.generated\.ts$|catalo
 const IS_TEST = /(?:^|[/.])test\.tsx?$|\.test\.tsx?$/
 const CLAIM = /@invariant\s+([^\n*]+)/g
 /** The code's own confession — the marker class that surfaced the fabricated cash flow statement. */
-const STUB = /\b(?:simplified|placeholder|in production|for now|would parse|would use|not implemented)\b/i
+/**
+ * A confession is PROSE about this code, never a SLUG. IFRS 9 §5.5 names its own
+ * measurement model `simplified-approach` and IFRS 17 §53 names PAA
+ * `premium-allocation-approach-simplified`; a work order's step code is
+ * `in-production`. Matching inside a hyphenated compound reported the standard's
+ * own vocabulary as an admission of incompleteness — the domain-collision class
+ * that took rules/prose from 1,261 to 15. The guards require a non-hyphen on
+ * both sides.
+ */
+const STUB =
+  /(?<![\w-])(?:simplified|placeholder|in production|for now|would parse|would use|not implemented)(?![\w-])/i
 
 const proofBeside = (file: string): boolean =>
   ['test.ts', 'test.tsx', 'index.test.ts'].some((n) => existsSync(join(dirname(file), n)))
@@ -114,9 +124,20 @@ const sources = (root: string): string[] => {
  * reader: a standard's name inside a string literal is data, and reading it as an address is the lie
  * [[rules]]/reference and [[standards]]/emit each paid for. [[syntax]] settles what a comment is.
  */
+/**
+ * The file that DECLARES this vocabulary cannot be judged by it. ROLE_CONCERN
+ * names every standard, and STUB names every confession word, so this atom's own
+ * prose matches itself for all eight readers — eight claims that are the law
+ * being written down rather than anything asserted about the corpus. The same
+ * exemption rules/echo makes for the framework namespace and rules/prose makes
+ * for a lexicon atom: declared here, in the open, so it can be argued with.
+ */
+const DECLARES_THE_VOCABULARY = 'src/rules/audience/index.ts'
+
 export function claimsFacing(cwd: string = process.cwd()): FacingClaim[] {
   const out: FacingClaim[] = []
   for (const f of sources(join(cwd, 'src'))) {
+    if (relative(cwd, f).replace(/\\/g, '/') === DECLARES_THE_VOCABULARY) continue
     let text: string
     try {
       text = readFileSync(f, 'utf8')

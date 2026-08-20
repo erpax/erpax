@@ -210,7 +210,7 @@ export const minutesRemaining = (doc: WorkorderShape): number => {
 /**
  * @invariant Header totals = Σ options (the double-entry). Recompute the three
  * totals from the array on every write so the books can never drift from the
- * entries — exactly the property AUDIT found held at 100.0000% in production.
+ * entries — exactly the property AUDIT found held at 100.0000% against live data.
  */
 export const assertTotalsBalance: CollectionBeforeChangeHook = ({ data }) => {
   const d = data as WorkorderShape

@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
-import { join } from 'node:path'
+import { dirname, join } from 'node:path'
 import { claimsFacing, facing, assertNothingUnprovenFacing, ROLE_CONCERN } from './index'
 
 const corpus = (files: Record<string, string>): string => {
@@ -96,5 +96,32 @@ describe('the security posture is disclosed — super-admin holds the ISO 27000 
     expect(ROLE_CONCERN['super-admin']).toContain('ISO-27001')
     expect(ROLE_CONCERN['super-admin']).toContain('ISO/IEC-27017') // cloud — the corpus runs on Workers
     expect(ROLE_CONCERN['super-admin']).toContain('ISO/IEC-27701') // privacy information management
+  })
+
+  it('a confession is PROSE, never a slug — the standard\'s own vocabulary is not an admission', () => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-audience-'))
+    const write = (rel: string, body: string): void => {
+      mkdirSync(join(root, 'src', dirname(rel)), { recursive: true })
+      writeFileSync(join(root, 'src', rel), body)
+    }
+    // IFRS 9 §5.5 NAMES its model `simplified-approach`; a work order step code is
+    // `in-production`. Neither says this code is incomplete.
+    write('slug/index.ts', [
+      '/** @standard SOX §302 — expected-credit-loss simplified-approach, step in-production */',
+      'export const STEPS = 1',
+    ].join('\n'))
+    expect(claimsFacing(root).filter((c) => c.file.includes('slug'))).toEqual([])
+
+    // the same word as prose about the implementation IS a confession
+    write('prose/index.ts', [
+      '/** @standard SOX §302 — simplified for now, the real curve is not implemented */',
+      'export const x = 1',
+    ].join('\n'))
+    expect(claimsFacing(root).filter((c) => c.file.includes('prose')).length).toBeGreaterThan(0)
+    rmSync(root, { recursive: true, force: true })
+  })
+
+  it('the atom that DECLARES the vocabulary is not judged by it', () => {
+    expect(claimsFacing().some((c) => c.file === 'src/rules/audience/index.ts')).toBe(false)
   })
 })

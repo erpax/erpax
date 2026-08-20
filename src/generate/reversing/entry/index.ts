@@ -106,9 +106,12 @@ export const generateReversingEntries: CollectionAfterChangeHook<ClosingEntryDat
   }
   const _periodType = periodTypeMap[data.closingType || 'monthly'] || 'monthly'
 
-  // Validate next period is open for reversals
-  // For now, we defer this check to the next period's PeriodLock status
-  // In production, query PeriodLocks collection
+  // Validate next period is open for reversals. This IS the check: it queries
+  // period-locks and refuses on a failed query (see the fail-closed catch below).
+  // The comment that stood here described the check as deferred to a later build.
+  // That stopped being true when the query landed and was never corrected — prose
+  // reading as a confession over code that is already fail-closed, which is a false
+  // statement about something real and precisely what rules/audience reports.
   let nextPeriodOpenForReversals = true
   try {
     const nextPeriodLockQuery = await payload.find({

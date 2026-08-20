@@ -3,7 +3,7 @@
  *
  * Slice BBBBB-prep (2026-05-11): each row is one insurance contract group
  * measured under IFRS 17 §32-§52 (General Measurement Model — GMM),
- * §53-§59 (Premium Allocation Approach — PAA, simplified for short-
+ * §53-§59 (Premium Allocation Approach — PAA, the standard's model for short-
  * coverage), or §B100-§B118 (Variable Fee Approach — VFA, for direct
  * participation contracts). Captures the §32 building blocks: future
  * cash-flow estimate, risk adjustment, contractual service margin (CSM),
