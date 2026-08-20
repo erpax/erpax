@@ -97,6 +97,10 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     world: { desc: 'Check the public world rails (brreg · OFAC · SEC · FX · OFF) offline, or --online', cmd: `${TSX} src/outward/world/index.ts` },
     gate: { desc: 'Every OFFLINE contract, fail-closed — what CI and pre-push run (no network)', cmd: `${TSX} src/outward/gate/index.ts` },
   },
+  memory: {
+    default: { desc: 'Agent-memory index vs files — a memory off MEMORY.md is never loaded', cmd: `${TSX} src/memory/drift/index.ts` },
+    drift: { desc: 'Agent-memory index vs files — fails closed on orphans and dead entries', cmd: `${TSX} src/memory/drift/index.ts` },
+  },
   rules: {
     default: { desc: 'Rules ratchet check (+ failure summary)', cmd: '__rules_check__' },
     check: { desc: 'Rules ratchet check (+ failure summary)', cmd: '__rules_check__' },

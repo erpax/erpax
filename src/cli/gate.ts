@@ -39,6 +39,11 @@ export const GATE_LANES: readonly (readonly [string, string])[] = [
   // closed when the coverage ledger cannot resolve its own contracted endpoints, which
   // is how a working ECB contract marked nothing covered for as long as it existed.
   ['outward', 'pnpm erpax outward gate'],
+  // MEMORY — MEMORY.md is the load surface; a memory file absent from it is written
+  // but never read, so a standing instruction can sit on disk and silently not apply.
+  // Measured once at 11 orphans, four of them STANDING feedback, all four violated in
+  // the session that found them. Zero is a theorem here, not a ratchet.
+  ['memory', 'pnpm erpax memory drift'],
   ['readme:check', 'pnpm erpax readme check'],
   ['payload-types', 'bash scripts/payload-verify-types.sh'],
   ['lint', 'pnpm erpax lint'],
