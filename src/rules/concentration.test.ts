@@ -189,4 +189,29 @@ describe('rules/concentration — the manifest, not a suggestion', () => {
     const m = analyzeIndexConcentration(wired, 2, ['a', 'b'], 'hub')
     expect(isAdjacencyOnly(m)).toBe(false)
   })
+
+  it('a destination is not a cut size — the manifest reports what a move DRAGS', () => {
+    const moves = attributableExports('quantum/chat')
+    const modeOf = moves.find((m) => m.name === 'modeOf')
+    expect(modeOf?.child).toBe('merkle')
+    // it borrows one symbol from merkle, but leans on a parent-local type
+    expect(modeOf?.via).toContain('messageUuid')
+    expect(modeOf?.carries).toContain('StringMode')
+  })
+
+  it('a move that carries nothing is the only mechanical one', () => {
+    const moves = attributableExports('quantum/chat')
+    const clean = moves.filter((m) => m.carries.length === 0)
+    expect(clean.length).toBeGreaterThan(0)
+    expect(clean.length).toBeLessThan(moves.length) // some always drag
+    for (const m of clean) expect(m.via.length).toBeGreaterThan(0)
+  })
+
+  it('a function-local binding is never mistaken for parent matter', () => {
+    // parameters and locals shadow; only true outer references can be dragged
+    for (const m of attributableExports('quantum/chat')) {
+      expect(m.carries).not.toContain(m.name)
+      expect(m.carries.every((c) => typeof c === 'string' && c.length > 0)).toBe(true)
+    }
+  })
 })

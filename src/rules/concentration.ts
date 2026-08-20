@@ -316,6 +316,12 @@ export interface AttributableExport {
   readonly child: string
   /** the symbols it borrows from that child — the evidence for the attribution */
   readonly via: readonly string[]
+  /**
+   * parent-local declarations the move would DRAG with it — types, helpers and
+   * constants with no home below. A destination is not a cut size: these travel
+   * too, or the move leaves a dangling reference.
+   */
+  readonly carries: readonly string[]
 }
 
 /**
@@ -375,6 +381,16 @@ export function attributableExports(atomPath: string, cwd: string = process.cwd(
   const sf = ts.createSourceFile(indexPath, text, ts.ScriptTarget.Latest, true)
   const out: AttributableExport[] = []
 
+  // every name this index declares at top level — the matter a move might drag
+  const moduleLocals = new Set<string>()
+  for (const st of sf.statements) {
+    if ((ts.isFunctionDeclaration(st) || ts.isClassDeclaration(st) || ts.isInterfaceDeclaration(st) ||
+      ts.isTypeAliasDeclaration(st) || ts.isEnumDeclaration(st)) && st.name && ts.isIdentifier(st.name))
+      moduleLocals.add(st.name.text)
+    else if (ts.isVariableStatement(st))
+      for (const d of st.declarationList.declarations) if (ts.isIdentifier(d.name)) moduleLocals.add(d.name.text)
+  }
+
   for (const st of sf.statements) {
     const exported = ts.canHaveModifiers(st) && ts.getModifiers(st)?.some((m) => m.kind === ts.SyntaxKind.ExportKeyword)
     if (!exported) continue
@@ -397,7 +413,26 @@ export function attributableExports(atomPath: string, cwd: string = process.cwd(
     const hits = [...byChild].map(([child, names]) => ({ child, via: [...used].filter((u) => names.has(u)) }))
       .filter((h) => h.via.length > 0)
     // EXACTLY one child, or it is a seam rather than a misplacement.
-    if (hits.length === 1) out.push({ name, child: hits[0]!.child, via: hits[0]!.via.sort() })
+    if (hits.length !== 1) continue
+
+    // Naming a destination is not the same as knowing the size of the cut. A function
+    // may borrow one symbol from a child and still lean on a dozen declarations that
+    // live HERE — types, helpers, constants with no home below. Those travel with it or
+    // the move leaves a dangling reference, so the manifest reports them.
+    const bound = new Set<string>()
+    const bind = (n: ts.Node): void => {
+      if (ts.isParameter(n) && ts.isIdentifier(n.name)) bound.add(n.name.text)
+      else if (ts.isVariableDeclaration(n) && ts.isIdentifier(n.name)) bound.add(n.name.text)
+      else if (ts.isBindingElement(n) && ts.isIdentifier(n.name)) bound.add(n.name.text)
+      else if (ts.isTypeParameterDeclaration(n)) bound.add(n.name.text)
+      ts.forEachChild(n, bind)
+    }
+    ts.forEachChild(st, bind)
+    const carries = [...used]
+      .filter((u) => u !== name && !bound.has(u) && moduleLocals.has(u) && !byChild.get(hits[0]!.child)?.has(u))
+      .sort()
+
+    out.push({ name, child: hits[0]!.child, via: hits[0]!.via.sort(), carries })
   }
   return out
 }
