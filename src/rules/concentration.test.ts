@@ -86,15 +86,22 @@ describe('rules/concentration — live corpus scan', () => {
 
 describe('rules/concentration — the manifest, not a suggestion', () => {
   it('attributes an inline export to the ONE child whose symbols it uses', () => {
-    // cloudflare/index.ts holds kvGet/kvPut/r2Put, and each borrows MediatorContext,
-    // auditBindingCall and enforceAuthorized from cloudflare/binding — whose own SKILL
-    // says every binding access MUST flow through those wrappers. The wrappers live
-    // outside the atom that defines their machinery, and the dependency says so.
-    const moves = attributableExports('cloudflare')
+    // quantum/chat holds modeOf and threadModes inline while the uuid machinery they
+    // borrow lives in quantum/chat/merkle — the dependency says where they belong.
+    const moves = attributableExports('quantum/chat')
     expect(moves.length).toBeGreaterThan(0)
-    const kv = moves.find((m) => m.name === 'kvGet')
-    expect(kv?.child).toBe('binding')
-    expect(kv?.via).toContain('auditBindingCall')
+    const mode = moves.find((m) => m.name === 'modeOf')
+    expect(mode?.child).toBe('merkle')
+    expect(mode?.via.length).toBeGreaterThan(0)
+  })
+
+  it('a child collapsed to a pure re-export offers no seam, and none is invented', () => {
+    // cloudflare/binding once held a DIVERGED second mediator and was collapsed to a
+    // re-export of the one implementation. Nothing is defined there any more, so
+    // nothing can be attributed to it — an empty manifest is the correct answer, not
+    // a failure to look.
+    expect(childAtomDirs('cloudflare')).toContain('binding')
+    expect(attributableExports('cloudflare')).toEqual([])
   })
 
   it('every attribution names exactly one child and cites the symbols it borrows', () => {
@@ -115,5 +122,38 @@ describe('rules/concentration — the manifest, not a suggestion', () => {
     for (let i = 1; i < manifest.length; i++) {
       expect(manifest[i - 1]!.movable.length).toBeGreaterThanOrEqual(manifest[i]!.movable.length)
     }
+  })
+
+  it('a parent that COMPOSES its children is delegating, not concentrating', () => {
+    const composed = [
+      "import type { CollectionConfig } from 'payload'",
+      "import { readAccess } from '@/thing/access'",
+      "import { ensureUnique } from '@/thing/hooks'",
+      ...Array.from({ length: 220 }, (_, i) => `const field${i} = { name: 'f${i}' }`),
+      'export const Thing: CollectionConfig = { slug: "thing", access: { read: readAccess }, hooks: { beforeChange: [ensureUnique] } }',
+    ].join('\n')
+    const m = analyzeIndexConcentration(composed, 2, ['access', 'hooks'], 'thing')
+    expect(m.wiredChildCount).toBe(2)
+    expect(m.reExportRatio).toBeLessThan(0.65) // composition never raises the ratio
+    expect(isConcentrationViolation(m)).toBe(false)
+  })
+
+  it('a parent that ignores its children is still concentrating', () => {
+    const ignored = [
+      ...Array.from({ length: 220 }, (_, i) => `const field${i} = { name: 'f${i}' }`),
+      'export const Thing = { slug: "thing" }',
+    ].join('\n')
+    const m = analyzeIndexConcentration(ignored, 2, ['access', 'hooks'], 'thing')
+    expect(m.wiredChildCount).toBe(0)
+    expect(isConcentrationViolation(m)).toBe(true)
+  })
+
+  it('a relative specifier counts as wiring just as an alias does', () => {
+    const rel = [
+      "import { readAccess } from './access'",
+      ...Array.from({ length: 220 }, (_, i) => `const field${i} = { name: 'f${i}' }`),
+      'export const Thing = { access: readAccess }',
+    ].join('\n')
+    expect(analyzeIndexConcentration(rel, 1, ['access'], 'thing').wiredChildCount).toBe(1)
   })
 })

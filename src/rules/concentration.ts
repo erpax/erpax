@@ -10,7 +10,7 @@ import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
 import { join } from 'node:path'
 import { TRINITY_FORM } from '@/diamond/membership'
 import ts from 'typescript'
-import { moduleShape } from '@/syntax'
+import { importSpecifiersOf, moduleShape } from '@/syntax'
 
 const SRC = 'src'
 
@@ -28,6 +28,8 @@ export interface ConcentrationMetrics {
   readonly classCount: number
   readonly childAtomCount: number
   readonly domainImportCount: number
+  /** child atoms the index actually delegates to — re-exported OR imported and composed */
+  readonly wiredChildCount: number
   readonly reExportRatio: number
   readonly concentrationScore: number
 }
@@ -77,6 +79,8 @@ export function childAtomDirs(atomPath: string, cwd: string = process.cwd()): re
 export function analyzeIndexConcentration(
   content: string,
   childAtomCount: number,
+  childAtoms: readonly string[] = [],
+  atomPath = '',
 ): ConcentrationMetrics {
   const lines = content.split('\n')
   const lineCount = lines.filter((l) => l.trim().length > 0 && !l.trim().startsWith('//')).length
@@ -94,10 +98,29 @@ export function analyzeIndexConcentration(
 
   const reExportRatio = exportCount > 0 ? reExportCount / exportCount : 1
 
+  // A child the parent IMPORTS and composes is distributed matter just as much as one it
+  // re-exports. Counting only re-exports made the lawful shape unreachable: a Payload
+  // collection holds its hooks and access in children, imports them, and assembles one
+  // config — correct by this atom's own law, and permanently red, because composition
+  // never raises the ratio. The only way past was `export *` on children nothing should
+  // import, which is gaming the gate rather than obeying it.
+  const specifiers = importSpecifiersOf('index.ts', content)
+  const wiredChildCount = childAtoms.filter((child) =>
+    specifiers.some(
+      (spec) =>
+        spec === `./${child}` ||
+        spec.startsWith(`./${child}/`) ||
+        (atomPath !== '' && (spec === `@/${atomPath}/${child}` || spec.startsWith(`@/${atomPath}/${child}/`))),
+    ),
+  ).length
+  const delegatesToEveryChild = childAtomCount > 0 && wiredChildCount >= childAtomCount
+
   const lineFactor = lineCount / CONCENTRATION_LINE_THRESHOLD
   const inlineFactor = inlineExportCount / CONCENTRATION_EXPORT_THRESHOLD
   const hubDebt =
-    childAtomCount > 0 && lineCount > 150 && reExportRatio < CONCENTRATION_REEXPORT_RATIO_MIN ? 0.25 : 0
+    childAtomCount > 0 && lineCount > 150 && reExportRatio < CONCENTRATION_REEXPORT_RATIO_MIN && !delegatesToEveryChild
+      ? 0.25
+      : 0
   const matterFactor =
     childAtomCount > 0 && functionCount + classCount >= 8 ? 0.15 : 0
   const domainFactor = domainImportCount >= 5 && lineCount >= 300 ? 0.2 : 0
@@ -119,6 +142,7 @@ export function analyzeIndexConcentration(
     classCount,
     childAtomCount,
     domainImportCount,
+    wiredChildCount,
     reExportRatio,
     concentrationScore,
   }
@@ -130,7 +154,8 @@ export function isConcentrationViolation(metrics: ConcentrationMetrics): boolean
   if (
     metrics.childAtomCount > 0 &&
     metrics.lineCount >= 200 &&
-    metrics.reExportRatio < CONCENTRATION_REEXPORT_RATIO_MIN
+    metrics.reExportRatio < CONCENTRATION_REEXPORT_RATIO_MIN &&
+    metrics.wiredChildCount < metrics.childAtomCount
   ) {
     return true
   }
@@ -185,7 +210,7 @@ export function concentrationViolations(cwd: string = process.cwd()): Concentrat
       const childAtoms = childAtomDirs(atomPath === '.' ? '' : atomPath, cwd)
       const normalizedPath = atomPath === '.' ? '' : atomPath
       const content = readFileSync(indexPath, 'utf8')
-      const metrics = analyzeIndexConcentration(content, childAtoms.length)
+      const metrics = analyzeIndexConcentration(content, childAtoms.length, childAtoms, atomPath)
       if (isConcentrationViolation(metrics)) {
         const file = normalizedPath ? `${normalizedPath}/index.ts` : 'index.ts'
         const row: ConcentrationViolation = {
@@ -233,7 +258,7 @@ export function topConcentrations(cwd: string = process.cwd(), limit = 10): read
       const normalizedPath = atomPath === '.' ? 'src' : atomPath
       const childAtoms = childAtomDirs(atomPath === '.' ? '' : atomPath, cwd)
       const content = readFileSync(indexPath, 'utf8')
-      const metrics = analyzeIndexConcentration(content, childAtoms.length)
+      const metrics = analyzeIndexConcentration(content, childAtoms.length, childAtoms, atomPath)
       ranked.push({ atomPath: normalizedPath, file: `${normalizedPath}/index.ts`, metrics })
     }
     for (const e of entries) {
