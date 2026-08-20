@@ -186,3 +186,54 @@ export function renderEquilibriumSection(): readonly string[] {
 
 /** Every horo digit including unity — the ring closes on 9, which is the axis it cannot double into. */
 export const RING_WITH_UNITY: readonly number[] = [...HORO_DIGITS]
+
+/** The singularity — the digit doubling cannot move. */
+export const SINGULARITY = 9
+
+/** The seven states: the six-cycle plus the fixed point it turns around. */
+export function sevenStates(): readonly number[] {
+  return [...forward(), SINGULARITY]
+}
+
+const iterate = (step: (n: number) => number, times: number) => (start: number): number => {
+  let x = start
+  for (let i = 0; i < times; i++) x = step(x)
+  return x
+}
+
+const doubleDigit = (n: number): number => {
+  const d = ((n % 9) + 9) % 9
+  const doubled = (d * 2) % 9
+  return doubled === 0 ? 9 : doubled
+}
+
+/** The smallest number of doublings that returns every state to itself. */
+export function closurePeriod(states: readonly number[] = sevenStates(), limit = 200): number {
+  for (let k = 1; k <= limit; k++) {
+    const step = iterate(doubleDigit, k)
+    if (states.every((d) => step(d) === d)) return k
+  }
+  return -1
+}
+
+/**
+ * Every power of doubling that is a NON-trivial involution — a map that undoes
+ * itself without being the identity. They are the odd multiples of half the
+ * period, and each one is the antipode.
+ */
+export function involutionPowers(limit = 42, states: readonly number[] = sevenStates()): readonly number[] {
+  const found: number[] = []
+  for (let k = 1; k < limit; k++) {
+    const step = iterate(doubleDigit, k)
+    const undoesItself = states.every((d) => step(step(d)) === d)
+    const isIdentity = states.every((d) => step(d) === d)
+    if (undoesItself && !isIdentity) found.push(k)
+  }
+  return found
+}
+
+/** What doubling `times` over does to each state — the map, not a claim about it. */
+export function afterDoublings(times: number, states: readonly number[] = sevenStates()): readonly (readonly [number, number])[] {
+  const step = iterate(doubleDigit, times)
+  return states.map((d) => [d, step(d)] as const)
+}

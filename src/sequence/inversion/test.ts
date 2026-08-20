@@ -15,6 +15,10 @@ import {
   renderEquilibriumSection,
   reverse,
   STEP_DEGREES,
+  SINGULARITY,
+  afterDoublings,
+  closurePeriod,
+  involutionPowers,
 } from './index'
 
 describe('sequence/inversion — one ring, two orientations', () => {
@@ -143,5 +147,42 @@ describe('sequence/inversion — judged by the constitution', () => {
     const v = judge(change)
     expect(v.verdicts.filter((x) => !x.holds)).toEqual([])
     expect(v.sealed).toBe(true)
+  })
+})
+
+describe('inversion — closure, the halfway involution, and the fixed singularity', () => {
+  it('the singularity is the one state doubling cannot move', () => {
+    expect(afterDoublings(1, [SINGULARITY])).toEqual([[9, 9]])
+    expect(afterDoublings(21, [SINGULARITY])).toEqual([[9, 9]])
+  })
+
+  it('42 doublings close on the identity across all seven states', () => {
+    expect(afterDoublings(42).every(([from, to]) => from === to)).toBe(true)
+  })
+
+  it('but 42 is a MULTIPLE of the period, not the period — that is 6', () => {
+    expect(closurePeriod()).toBe(6)
+    expect(42 % closurePeriod()).toBe(0)
+  })
+
+  it('exactly half of 42 is a non-trivial involution — the antipode, singularity fixed', () => {
+    const half = afterDoublings(21)
+    expect(half).toEqual([
+      [1, 8],
+      [2, 7],
+      [4, 5],
+      [8, 1],
+      [7, 2],
+      [5, 4],
+      [9, 9],
+    ])
+    for (const [from] of half) expect(antipodeOf(from)).toBe(half.find(([f]) => f === from)![1])
+  })
+
+  it('21 is not the only involution power — every odd multiple of 3 is', () => {
+    expect(involutionPowers(42)).toEqual([3, 9, 15, 21, 27, 33, 39])
+    // 21 is distinguished only by sitting at exactly half of 42
+    expect(involutionPowers(42)).toContain(21)
+    expect(21 * 2).toBe(42)
   })
 })
