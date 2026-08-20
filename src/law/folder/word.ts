@@ -5,7 +5,7 @@ import { exactRound } from '@/algebra'
  * Extends folder law: vocabulary-only atoms (SKILL.md without index.ts + test.ts)
  * are violations until matter lands or a hub pivot nests the word under its parent.
  *
- *   wordFolderViolations(cwd)  — scan bonds/wikilinks vs filesystem
+ *   wordFolderViolations(cwd)  — scan PROSE wikilinks vs filesystem (never injected bonds)
  *   wordDiamondViolations(cwd) — useless words without complete diamond (trinity+sealed+crossed)
  *   matterForWord(word)        — pivot hub/word or collapse to root canonical
  *
@@ -163,11 +163,14 @@ function collectReferencedWords(cwd: string): Map<string, Set<string>> {
       const skill = join(p, 'SKILL.md')
       if (existsSync(skill)) {
         const text = readFileSync(skill, 'utf8')
-        const fm = text.match(/^---\n([\s\S]*?)\n---/)?.[1] ?? ''
-        for (const w of parseYamlSubList(fm, 'bonds', 'in')) note(w, childRel)
-        for (const w of parseYamlSubList(fm, 'bonds', 'out')) note(w, childRel)
-        for (const w of parseYamlSubList(fm, 'neighbors', 'wikilink')) note(w, childRel)
-        for (const w of linksOf(text)) note(w, childRel)
+        // PROSE ONLY. The `bonds` / `neighbors` frontmatter is INJECTED by the readme
+        // generator from the bond graph — counting it made this axis measure the
+        // generator rather than the corpus, and made a down-only ratchet grow every
+        // time a lawful atom was added (1592 → 1594 across three correct commits).
+        // 1050 words were cited there and by no human. A reader follows a prose
+        // wikilink; nobody follows a frontmatter bond.
+        const body = text.replace(/^---\n[\s\S]*?\n---/, '')
+        for (const w of linksOf(body)) note(w, childRel)
       }
       walk(p, childRel)
     }
@@ -197,7 +200,7 @@ const hubBondIndex = (cwd: string): Map<string, DistributeHub[]> => {
   return index
 }
 
-/** Scan SKILL bonds/wikilinks vs filesystem — words without executable matter. */
+/** Scan SKILL PROSE wikilinks vs filesystem — words without executable matter. */
 export function wordFolderViolations(cwd: string = process.cwd()): WordFolderAudit {
   const referenced = collectReferencedWords(cwd)
   let withCode = 0
