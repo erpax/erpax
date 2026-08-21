@@ -59,7 +59,9 @@ import type { ShortUuidKind } from '@/integrity'
 /** Identifier kinds the resolver can recognise. */
 export type IdentifierKind =
   | 'content-uuid'   // 36-char RFC 9562 §5.8 (uuidv8)
-  | 'jws'            // 3-segment base64url RFC 7515 — signature recovers contentUuid
+  // 'jws' stood here unraised: a JWS input IS resolved (JWS_RE → fromJws), but the
+  // RESULT is a content-uuid and the provenance rides in matchedRule
+  // ('jws:recovered-contentUuid'). The kind added nothing the record did not carry.
   | 'did'            // W3C DID — did:erpax:<tenant>:<uuid>
   | 'short-uuid'     // FFFFFFF kind-prefixed (aud_/inv_/std_/…)
   | 'payload-id'     // raw db row id (when collection is known)

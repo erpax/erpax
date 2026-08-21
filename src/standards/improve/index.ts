@@ -64,7 +64,9 @@ export function standardByIdScan(
 }
 
 export type StandardsFtlGapKind =
-  | 'linear-catalogue-lookup'
+  // 'linear-catalogue-lookup' stood here and nothing ever built one: the union already
+  // admits Crack['kind'], and a linear scan arrives as 'scan' from the crack scanner.
+  // Two names for one defect, only one of them raised.
   | 'ungated-mandatory'
   | 'uncited'
   | 'prose-only'

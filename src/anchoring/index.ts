@@ -32,7 +32,10 @@
 
 import { computeContentDigest, uuid } from '@/integrity'
 
-export type ChainKind = 'bitcoin-opreturn' | 'ethereum-l2' | 'cardano-metadata' | 'atproto' | 'notary-signature'
+// 'cardano-metadata' and 'atproto' were declared here and never constructed — anchors
+// for chains this corpus does not write to. Sealed as intents in [[think]] rather than
+// dropped from memory; a kind nothing raises is a check that cannot fire.
+export type ChainKind = 'bitcoin-opreturn' | 'ethereum-l2' | 'notary-signature'
 
 export interface AnchorReceipt {
   readonly chainKind: ChainKind
