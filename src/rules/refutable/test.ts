@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { claimSurface, assertClaimsRefutable } from './index'
+import { claimSurface, assertClaimsRefutable , hollowProofs, assertProofsForbidSomething} from './index'
 
 const corpus = (files: Record<string, string>): string => {
   const cwd = mkdtempSync(join(tmpdir(), 'erpax-refutable-'))
@@ -66,5 +66,32 @@ describe('rules/refutable — a claim nothing can refute is where a lie lives', 
     expect(() => assertClaimsRefutable(cwd, 1)).not.toThrow()
     expect(() => assertClaimsRefutable(cwd, 0)).toThrow(/nothing can refute/)
     rmSync(cwd, { recursive: true, force: true })
+  })
+})
+
+describe('hollow proofs — a test that cannot fail', () => {
+  it('flags a file whose every assertion is a tautology', () => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-hollow-'))
+    mkdirSync(join(root, 'src', 'a'), { recursive: true })
+    writeFileSync(join(root, 'src', 'a', 'test.ts'), "it('x', () => { expect(true).toBe(true) })")
+    expect(hollowProofs(root).map((h) => h.file)).toEqual(['src/a/test.ts'])
+    rmSync(root, { recursive: true, force: true })
+  })
+
+  it('one real assertion beside a tautology is NOT hollow — the proof still forbids something', () => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-hollow2-'))
+    mkdirSync(join(root, 'src', 'b'), { recursive: true })
+    writeFileSync(
+      join(root, 'src', 'b', 'test.ts'),
+      "it('x', () => { expect(true).toBe(true); expect(sum(1,1)).toBe(2) })",
+    )
+    expect(hollowProofs(root)).toEqual([])
+    rmSync(root, { recursive: true, force: true })
+  })
+
+  it('the live corpus count is the ratchet, and it fails closed above it', () => {
+    const live = hollowProofs().length
+    expect(() => assertProofsForbidSomething(process.cwd(), live)).not.toThrow()
+    expect(() => assertProofsForbidSomething(process.cwd(), live - 1)).toThrow(/hollow proof/)
   })
 })

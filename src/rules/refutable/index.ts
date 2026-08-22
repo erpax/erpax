@@ -30,6 +30,7 @@
  *
  * Composes [[rules]] · [[law]].
  */
+import { execSync } from 'node:child_process'
 import { readFileSync, readdirSync, existsSync, type Dirent } from 'node:fs'
 import { join, dirname, relative } from 'node:path'
 
@@ -130,4 +131,62 @@ if (import.meta.url === 'file://' + process.argv[1]) {
     `refutable — ${r.claims} @invariant claim(s) · ${r.refutable} refutable · ${r.unrefutable.length} that NOTHING can contradict`,
   )
   for (const u of r.unrefutable.slice(0, 10)) console.log(`  ${u.from}\n     ${u.claim}`)
+}
+
+/**
+ * A test that cannot fail is the proof leg of a trinity, forged.
+ *
+ * `expect(true).toBe(true)` passes for every possible state of the code it sits
+ * beside, so it forbids nothing — the same defect as an `@invariant` with no
+ * proof, one layer up. It is worse in one way: [[law]]/folder counts the file
+ * and reports the trinity COMPLETE, so the atom reads as proven.
+ */
+const TAUTOLOGY = /expect\(\s*(?:true|1|''|""|\[\]|\{\})\s*\)\.(?:toBe|toEqual|toBeTruthy|toBeDefined)\(/
+const ASSERTION = /expect\([^)]*\)\.\w+\(/g
+
+export interface HollowProof {
+  readonly file: string
+  readonly assertions: number
+  readonly tautologies: number
+}
+
+/** Test files whose every assertion is a tautology — a proof that forbids nothing. */
+export function hollowProofs(cwd: string = process.cwd()): readonly HollowProof[] {
+  const files = execSync(`find src -name '*test*.ts' -o -name '*test*.tsx'`, {
+    cwd,
+    encoding: 'utf8',
+  })
+    .trim()
+    .split('\n')
+    .filter(Boolean)
+  const out: HollowProof[] = []
+  for (const rel of files) {
+    let text: string
+    try {
+      text = readFileSync(join(cwd, rel), 'utf8')
+    } catch {
+      continue
+    }
+    const assertions = [...text.matchAll(ASSERTION)].map((m) => m[0])
+    if (assertions.length === 0) continue
+    const tautologies = assertions.filter((a) => TAUTOLOGY.test(a)).length
+    if (tautologies === assertions.length) out.push({ file: rel, assertions: assertions.length, tautologies })
+  }
+  return out.sort((a, b) => a.file.localeCompare(b.file))
+}
+
+/** Ratchets — a proof leg may not become hollower than it already is. */
+export function assertProofsForbidSomething(cwd: string = process.cwd(), ceiling: number): void {
+  const hollow = hollowProofs(cwd)
+  if (hollow.length <= ceiling) return
+  throw new Error(
+    `✖ hollow proof: ${hollow.length} test file(s) assert only tautologies (ceiling ${ceiling}):\n` +
+      hollow.map((h) => `  ${h.file}  ${h.tautologies}/${h.assertions}`).join('\n'),
+  )
+}
+
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const hollow = hollowProofs()
+  console.log(`hollow proofs — ${hollow.length} test file(s) whose every assertion is a tautology`)
+  for (const h of hollow) console.log(`  ${h.file}`)
 }
