@@ -141,8 +141,11 @@ if (import.meta.url === 'file://' + process.argv[1]) {
  * proof, one layer up. It is worse in one way: [[law]]/folder counts the file
  * and reports the trinity COMPLETE, so the atom reads as proven.
  */
-const TAUTOLOGY = /expect\(\s*(?:true|1|''|""|\[\]|\{\})\s*\)\.(?:toBe|toEqual|toBeTruthy|toBeDefined)\(/
-const ASSERTION = /expect\([^)]*\)\.\w+\(/g
+const TAUTOLOGY = /\bexpect\(\s*(?:true|1|''|""|\[\]|\{\})\s*\)\.(?:toBe|toEqual|toBeTruthy|toBeDefined)\(/g
+// `expect(` is counted directly: a bracket-matching pattern cannot cross a nested
+// call, so /expect\([^)]*\)\.\w+\(/ misses expect(sum(1,1)).toBe(2) entirely and a
+// file holding one tautology beside it reads as wholly hollow.
+const ASSERTION = /\bexpect\(/g
 
 export interface HollowProof {
   readonly file: string
@@ -167,10 +170,10 @@ export function hollowProofs(cwd: string = process.cwd()): readonly HollowProof[
     } catch {
       continue
     }
-    const assertions = [...text.matchAll(ASSERTION)].map((m) => m[0])
-    if (assertions.length === 0) continue
-    const tautologies = assertions.filter((a) => TAUTOLOGY.test(a)).length
-    if (tautologies === assertions.length) out.push({ file: rel, assertions: assertions.length, tautologies })
+    const assertions = [...text.matchAll(ASSERTION)].length
+    if (assertions === 0) continue
+    const tautologies = [...text.matchAll(TAUTOLOGY)].length
+    if (tautologies === assertions) out.push({ file: rel, assertions, tautologies })
   }
   return out.sort((a, b) => a.file.localeCompare(b.file))
 }
