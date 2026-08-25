@@ -25,6 +25,7 @@ import {
 import { matrixCrackViolations } from '@/matrix'
 import { linearGapCount, linearLogicCount } from '@/quantum'
 import { engineeringConformance } from '@/engineering'
+import { staleFolds } from '@/deploy/fold'
 import { frameworkCollisions } from './compatibility'
 import { computeRulesOf, type RulesSnapshot } from './compute'
 
@@ -205,6 +206,10 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
   // real #13 co-existence break now ENFORCED as a gate, ratcheting to 0 when pages is renamed to a data slug.
   const compatibilitySeal = seal([
     guardian({ axis: 'compatibility', violations: frameworkCollisions(cwd).length, baseline: 0 }),
+    // production-fold — a next.config module swap whose pattern no longer matches its matter
+    // ([[deploy]]/fold). Baseline 0 is a THEOREM: a fold that folds nothing is silent by design,
+    // which is how ~4 MiB of corpus matrix shipped until Cloudflare refused the upload.
+    guardian({ axis: 'production-fold', violations: staleFolds(cwd).length, baseline: 0 }),
   ])
   const provenSeal = seal([
     guardian({

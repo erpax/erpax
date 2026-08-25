@@ -6,6 +6,7 @@ import { withPayload } from '@payloadcms/next/withPayload'
 import createNextIntlPlugin from 'next-intl/plugin'
 
 import { redirects } from './redirects'
+import { PRODUCTION_FOLDS } from './src/deploy/fold'
 
 const withNextIntl = createNextIntlPlugin('./src/i18n/request/index.ts')
 
@@ -124,10 +125,15 @@ const nextConfig = {
       const stub = (rel: string) => path.resolve(projectRoot, rel)
       const swap = (pattern: RegExp, rel: string) =>
         webpackConfig.plugins.push(new webpack.NormalModuleReplacementPlugin(pattern, stub(rel)))
-      swap(/uuid[\\/]matrix[\\/]matrix\.generated(\.ts)?$/, 'stubs/matrix.generated.js')
-      swap(/[\\/]translations[\\/]catalogue(\.ts)?$/, 'stubs/translations-catalogue.js')
-      swap(/agents[\\/]mcp[\\/]tool-defs(\.ts)?$/, 'stubs/tool-defs.js')
-      swap(/agents[\\/]mcp[\\/]atom-catalogue\.generated(\.ts)?$/, 'stubs/atom-catalogue.js')
+      // Every src-path fold lives in src/deploy/fold, beside a test that re-derives each
+      // pattern against the tree. A pattern is a CLAIM about a path, and the path moves:
+      // `matrix.generated.ts` became `matrix/generated.ts` in the 49-rename scalpel pass and
+      // the pattern kept naming the old one — so the fold silently stopped folding and ~4 MiB
+      // of corpus matrix shipped until Cloudflare refused the upload.
+      for (const fold of PRODUCTION_FOLDS) {
+        if (fold.side === 'client' && isServer) continue
+        swap(fold.pattern, fold.stub)
+      }
       // Alias beats NormalModuleReplacement for package-name externals — Next was leaving
       // `require("typescript")` unresolved so OpenNext/esbuild re-pulled the real 8.6 MiB package.
       webpackConfig.resolve.alias = {
@@ -142,14 +148,6 @@ const nextConfig = {
       swap(/[\\/]next[\\/]og([\\/]index)?$/, 'stubs/next-og.js')
       swap(/[\\/]@vercel[\\/]og([\\/]index\.edge)?$/, 'stubs/next-og.js')
       swap(/next[\\/]dist[\\/]compiled[\\/]@vercel[\\/]og[\\/]index\.edge\.js$/, 'stubs/next-og.js')
-      // Client seal leak: seal/diamond use createRequire(node:module) — never execute in browser.
-      // Anchor on src/ so skill/router/upgrade/seal etc. are not swapped.
-      if (!isServer) {
-        swap(/[\\/]src[\\/]seal[\\/]index(\.ts)?$/, 'stubs/seal-client.js')
-        swap(/[\\/]src[\\/]diamond[\\/]index(\.ts)?$/, 'stubs/diamond-client.js')
-        swap(/[\\/]src[\\/]css[\\/]index(\.ts)?$/, 'stubs/css-index-client.js')
-        swap(/[\\/]src[\\/]skill[\\/]router[\\/]skills\.index(\.ts)?$/, 'stubs/skills-index.js')
-      }
     }
 
     // Payload admin client components transitively import the server `payload` package (via
