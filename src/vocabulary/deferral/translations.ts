@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when deferring the recognition of revenue or expense to future periods pending contract performance, delivery, or time passage — the dual of accrual and core to IFRS-15 revenue recognition",
-    "uuid": "6001023d-0c3d-84b8-a937-0da6dfcc55e7",
+    "uuid": "ed0c1ddd-e135-832d-b752-c1c8c39d9bf6",
     "words": [
       "use",
       "when",

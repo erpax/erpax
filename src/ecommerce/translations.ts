@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ecommerce",
-    "uuid": "0f7afc84-3f35-8795-8e8f-d37dd96d2cf2",
+    "uuid": "e9f08129-22ac-8972-bc66-ed2ea9744f50",
     "words": [
       "ecommerce"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when wiring or debugging the storefront — per-tenant Stripe payments, cart/order/product/address overrides, checkout stock validation, the order-to-GL bridge, or the \\\"data is money\\\" seam — the erpax configuration of the official @payloadcms/plugin-ecommerce.",
-    "uuid": "23486cee-7d51-8676-a0e6-215e3f803716",
+    "uuid": "6c1c380b-655b-82a7-9c1b-c1d612cb0c8b",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling a living network with NO center — mycelium is the fungal body as a self-organizing web of hyphae that explores, connects, and transports nutrients with no brain and no coordinator; the literal decentralization and the substrate of the mycorrhizal trade. Nature's proof of the wired whole — but the 'wood wide web' is real as a network while its 'mother tree' resource-sharing is contested.",
-    "uuid": "f09fdce9-6c66-8dbf-b1c8-23a32ee18104",
+    "uuid": "cb5eddf6-3f09-81a7-b672-ef2af8e83c69",
     "words": [
       "use",
       "when",

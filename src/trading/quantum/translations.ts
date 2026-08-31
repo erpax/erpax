@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when wiring quantum realtime trading — quotes in superposition collapse to sealed content-uuid trades, emit on the team/comms secure wave envelope, and settle via conserved double-entry postings.",
-    "uuid": "b053b455-f5fd-866c-a37e-ec2d96404373",
+    "uuid": "62d15980-f15d-8b38-8d9e-865963bbfcce",
     "words": [
       "use",
       "when",

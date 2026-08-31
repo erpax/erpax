@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when caching or deduping SQL queries by identity — the canonical normalized query hashes to a content-uuid, so equivalent queries share one identity and a changed query invalidates by content-address.",
-    "uuid": "bd14eccd-726a-868b-8e87-4a4f2e0783a8",
+    "uuid": "bb328ba5-02fd-8a9e-98ea-4ae98678a137",
     "words": [
       "use",
       "when",

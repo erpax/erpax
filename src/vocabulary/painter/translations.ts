@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about painter — A schema.org component word, collided out of schema.org compounds — fused from HousePainter (sti · collapse · merge).",
-    "uuid": "2fa73439-0ee7-8381-93c9-96c221c521ad",
+    "uuid": "69cf171a-dc49-862a-bae3-a0bbae6aa698",
     "words": [
       "use",
       "when",

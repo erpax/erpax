@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about completion in erpax — period end, lifecycle seal, the wave's return to a new 0. The universal root of completion; dual of begin (and identical to it one dimension up).",
-    "uuid": "37bbe5e7-118f-8b4a-82ce-25a11db01db6",
+    "uuid": "30f39d00-4125-8315-94dc-22a3931708fa",
     "words": [
       "use",
       "when",

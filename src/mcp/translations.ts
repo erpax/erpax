@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when configuring the erpax agent gateway — it IS the official @payloadcms/plugin-mcp; every collection becomes find/create/update/delete tools at /api/mcp, computed from the barrel never hand-listed; Bearer API-key auth inherits the key owner's access and tenant scope; custom tools added via the plugin mcp config.",
-    "uuid": "021c3582-1189-84cf-95d7-5b7e7c8cef99",
+    "uuid": "5f83bd73-24b4-8380-a829-1f5053f9e791",
     "words": [
       "use",
       "when",

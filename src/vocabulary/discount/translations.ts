@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when applying promotional/volume/loyalty price reductions — percent or fixed amount, scope (item/order/customer), validity period, approval workflow.",
-    "uuid": "b69766a4-bf59-8cb1-b646-e4a02e3b514e",
+    "uuid": "1a5e9034-3fa7-8fb4-94e8-bede77f4689e",
     "words": [
       "use",
       "when",

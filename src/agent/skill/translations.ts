@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an agent loads a capability — the agent's competence is the union of its loaded skills (a skill one agent loads, the team has); loading is idempotent.",
-    "uuid": "983a06a2-f460-8d8a-b15c-6f88d632a748",
+    "uuid": "ea0e25e7-1b20-8e62-96cd-065b22b18379",
     "words": [
       "use",
       "when",

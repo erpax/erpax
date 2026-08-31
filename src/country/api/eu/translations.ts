@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "eu",
-    "uuid": "debc96a7-4de0-8c44-8df5-5237bb8d5da7",
+    "uuid": "c53535e8-fe4f-8337-873d-de11e513c7c5",
     "words": [
       "eu"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use for pan-EU authority APIs (VIES VAT validation, EU sanctions, Peppol directory, ECB rates) and the EU member-state registry — BG/DE/ES/FR/IT/NL/PL/PT/RO. The EU slice of the country-authority registry.",
-    "uuid": "f7bb4895-13c8-808b-af4a-eede129a040f",
+    "uuid": "8df84a24-4d92-8450-9231-12be2003560e",
     "words": [
       "use",
       "for",

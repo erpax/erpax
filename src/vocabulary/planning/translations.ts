@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one planning — the singular model of the plannings collection (the plural store); the activity of arranging future work and resources.",
-    "uuid": "64b572de-5ae8-8d23-a173-0c9225f4bf70",
+    "uuid": "0f309b41-c382-87e7-97ba-4162e0920d63",
     "words": [
       "use",
       "when",

@@ -3,7 +3,7 @@ import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactT
  * writing/computed — computed writing metrics from sealed coordinates.
  */
 import { describe, it, expect } from 'vitest'
-import { readFileSync } from 'node:fs'
+import { readFileSync, existsSync } from 'node:fs'
 import { nodeOf } from '@/uuid/matrix'
 import { computedWritingForPath, writingScore } from '@/writing/computed'
 import { improveWritingSkill } from '@/writing/skills'
@@ -31,18 +31,23 @@ describe('computedWritingForPath — diamond-derived prose metrics', () => {
     // computed corpus. That is a real gap for the skill-upgrade wave; it is not this suite's to
     // paper over, and pinning the STALE value (which is what `toBe(2)` did) hid it completely.
     expect(w.horo).toBe(nodeOf('quantum/emr')?.horo)
-    expect(w.wordCount).toBeGreaterThan(500)
+    // The count reads SKILL + README + LLM, and the last two are GENERATED faces — gitignored,
+    // and absent on a fresh checkout, which is the shape CI runs. Asserted in both: the prose is
+    // there either way, and only its measured volume depends on whether the faces were built.
+    const facesBuilt = existsSync('src/quantum/emr/README.md')
+    expect(w.wordCount).toBeGreaterThan(facesBuilt ? 500 : 200)
     expect(w.lawLines).toBeGreaterThanOrEqual(1)
     expect(w.wikilinkCount).toBeGreaterThan(20)
     expect(w.debitTotal).toBe(w.creditTotal)
     expect(w.ebPerWord).toBeGreaterThan(0)
     expect(w.trinity).toEqual({ form: 1, code: 1, proof: 1 })
+    // The SHAPE is pinned; the three face-dependent measures are not. ebPerWord · score ·
+    // wikilinkDensity all divide by a word count that reads the GENERATED README/LLM faces, so
+    // they read one way with the faces built and another on a fresh checkout — the snapshot was
+    // pinning "was this corpus regenerated on this machine", never the atom.
     expect({
       atomPath: w.atomPath,
-      score: w.score,
       lawLines: w.lawLines,
-      wikilinkDensity: w.wikilinkDensity,
-      ebPerWord: w.ebPerWord,
       balanced: w.balanced,
       variance: w.variance,
       proseRatio: exactRound(w.proseRatio * 100) / 100,
@@ -50,14 +55,19 @@ describe('computedWritingForPath — diamond-derived prose metrics', () => {
       {
         "atomPath": "quantum/emr",
         "balanced": false,
-        "ebPerWord": 0.0026,
         "lawLines": 1,
         "proseRatio": 0.82,
-        "score": 41,
         "variance": 1,
-        "wikilinkDensity": 2.77,
       }
     `)
+    // Face-dependent, so asserted as relations that hold in both shapes.
+    expect(w.score).toBeGreaterThan(0)
+    expect(w.wikilinkDensity).toBeGreaterThan(0)
+    expect(w.ebPerWord).toBeGreaterThan(0)
+    if (facesBuilt) {
+      expect(w.score).toBe(41)
+      expect(w.wikilinkDensity).toBeCloseTo(2.77, 2)
+    }
   })
 
   it('writingScore penalises high prose ratio and variance', () => {
@@ -84,7 +94,11 @@ describe('computedWritingForPath — diamond-derived prose metrics', () => {
 describe('improveWritingSkill — scored exercise', () => {
   it('quantum/emr surfaces prose and balance gaps deterministically', () => {
     const r = improveWritingSkill({ atomPath: 'quantum/emr' })
-    expect(r.score).toBe(41)
+    // The score folds the same face-dependent measures, so it is pinned only where the faces are
+    // built; everywhere else the GAPS are the claim — they name what the atom still owes, and they
+    // must be the same gaps in both shapes.
+    if (existsSync('src/quantum/emr/README.md')) expect(r.score).toBe(41)
+    else expect(r.score).toBeGreaterThan(0)
     expect(r.computed.trinity).toEqual({ form: 1, code: 1, proof: 1 })
     expect(r.gaps.some((g) => g.includes('prose ratio'))).toBe(true)
     expect(r.gaps.some((g) => g.includes('variance'))).toBe(true)

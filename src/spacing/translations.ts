@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when plant geometry sets density and yield — in-row × between-row spacing and rows-per-bed determine plants per area (plants/acre = rows ÷ in-row-spacing ÷ bed-center × 43,560), which sets seed/transplant counts and, with per-plant yield, total yield. Tighter is not linearly more: beyond an optimum, plants compete and per-plant size falls.",
-    "uuid": "2e734c3f-b527-8b4f-b62c-2b4bd65e1196",
+    "uuid": "2ccf4da5-0c62-8cb3-aa87-387697a8f933",
     "words": [
       "use",
       "when",

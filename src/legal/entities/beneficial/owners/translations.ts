@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when registering ultimate beneficial owners of a legal entity — direct/indirect ownership percent, control type, PEP status, KYC check link, and AMLD-5/CTA-required identification. The AML/Corporate-Transparency-Act UBO register.",
-    "uuid": "07ca1323-266a-8ace-bf2c-7172a1bf2a6e",
+    "uuid": "da021d31-857f-897e-b3df-c54038b84691",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when dispatching goods against a sales order — recording carrier, tracking number and URL, line items shipped, ship-from/to addresses, and progressing through picked → packed → shipped → delivered states. The fulfillment and carrier-tracking collection per EN-16931 §BG-13.",
-    "uuid": "32c45001-ec8a-801a-8572-31cf381a5192",
+    "uuid": "a14e72fb-4c27-874c-9373-e855d36ba687",
     "words": [
       "use",
       "when",

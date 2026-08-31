@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling the packing hierarchy for a shipment — GS1 SSCC serial shipping container codes, self-referential nesting (pallet → carton → contents), dimensions/weight, item-lot lines, and UN/CEFACT packaging codes. The logistic handling-unit collection that links line items to a shipment.",
-    "uuid": "b799992f-a90a-8741-88b0-5943ba1b8465",
+    "uuid": "498de051-2a6b-87f5-8f62-4f9af0090767",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when working with algebra/host.",
-    "uuid": "bf99ea5b-ce00-8e40-bbca-bf5ee5a5dee0",
+    "uuid": "ba331e6e-e692-8d7c-9954-297eec547156",
     "words": [
       "use",
       "when",

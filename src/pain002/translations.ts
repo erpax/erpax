@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when parsing ISO 20022 pain.002 CustomerPaymentStatusReport — status report for pain.001/008 initiations.",
-    "uuid": "e7e94361-babc-8b26-848b-7d1d67735c0e",
+    "uuid": "c12197a0-9576-8346-b0b4-fbab50b4b9de",
     "words": [
       "use",
       "when",

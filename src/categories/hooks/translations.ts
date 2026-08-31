@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hooks",
-    "uuid": "60432e1c-1de7-8ab6-9bef-f2e7748136c1",
+    "uuid": "30d3d01f-28a2-88f1-b57b-d8f6363fdfc0",
     "words": [
       "hooks"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when wiring the Categories collection's lifecycle — the beforeChange barrel that pins every category row to the active tenant so multi-tenant isolation holds at the collection boundary.",
-    "uuid": "194161c8-1f6a-82fc-a2af-1ebdd735101c",
+    "uuid": "6bd9a78c-5155-8f73-b585-d19caa87e246",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Algebra operations — closed, movie, product, allAlgebra",
-    "uuid": "22d5bed2-311a-8087-a0e2-229e709e6c27",
+    "uuid": "d9519f85-c187-8788-b04d-9c9417532eda",
     "words": [
       "algebra",
       "operations",

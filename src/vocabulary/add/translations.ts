@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about add — An additional offer that can only be obtained in combination with the first base offer (e.g. supplements and extensions that are available for a surcharge).",
-    "uuid": "99ca3b5d-e323-8680-b125-7f5c732df41f",
+    "uuid": "2575ab7d-475b-89c8-9421-8db8c4a0a536",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "access",
-    "uuid": "b3c3bdbd-f94f-8581-90b3-d6ac463eceaa",
+    "uuid": "f73f5bb6-0410-8865-a2da-b20e647a1433",
     "words": [
       "access"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when proving a remote-access product's PUBLIC vulnerability classes with erpax's own trust primitives — each flaw is a missing primitive and the verdict is a receipted, content-addressed proof. The AnyDesk case (SYSTEM file-read LPE, a stolen code-signing cert, coarse unattended-access) folded onto sandbox, tamper-cost and the receipt. Defensive modeling over public CVEs, never an exploit.",
-    "uuid": "0423a7b4-0c30-8987-b115-0cfc1a5bce5e",
+    "uuid": "9fd7eecf-4939-8fe1-8ec5-495360644a60",
     "words": [
       "use",
       "when",

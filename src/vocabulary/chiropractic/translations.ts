@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about chiropractic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "5dacb36e-95f2-8668-8441-121d10ad3bbd",
+    "uuid": "e35da7f2-d76c-838c-ad21-ef3ca3c96e1f",
     "words": [
       "use",
       "when",

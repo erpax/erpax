@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the VERIFY nucleus — the O(N), trustless cost to audit a content-addressed store, dual to tamper-cost (forge). The public DRY proof bundle peers verify without trusting us; the released asymmetry (forge ≫ verify) IS the trust. Matter-twin services/proof + integrity/tamper-reverse-cost.",
-    "uuid": "73c5c0a0-30fb-8a29-928c-cc81be7a8182",
+    "uuid": "3ed3849d-7086-8b3e-91f7-73e67a1fe239",
     "words": [
       "use",
       "when",

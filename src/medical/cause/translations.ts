@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about cause as a medical facet of [[medical]] — vocabulary pivot to @/cause; nested not duplicated.",
-    "uuid": "a017e138-aff3-811d-bde2-cd07002251ae",
+    "uuid": "a23c1eab-9c84-81fd-aeb3-73101a1777a9",
     "words": [
       "use",
       "when",

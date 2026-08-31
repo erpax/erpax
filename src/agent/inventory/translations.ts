@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about agent/inventory — agent inventory scan, emit, and monitor for stale or duplicate agents.",
-    "uuid": "9f43a83d-0f29-8b41-82e3-81cac3b184e1",
+    "uuid": "6de2b781-250e-8ccb-866f-21c38f5907e8",
     "words": [
       "use",
       "when",

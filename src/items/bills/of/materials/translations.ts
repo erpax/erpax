@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining or querying the component recipe for a finished good — BOM lines, component quantities, version control per ECO, effective date ranges, and IAS-2 §10 cost-of-conversion lookup. The versioned bill-of-materials collection that seeds work-order execution and overhead absorption.",
-    "uuid": "2b6c56c8-7c5b-8319-aed0-910e0c540ee6",
+    "uuid": "aae5b765-a317-8d64-bba6-78ee9fa9bef2",
     "words": [
       "use",
       "when",

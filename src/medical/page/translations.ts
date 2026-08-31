@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about page as a medical facet of [[medical]] — vocabulary pivot to @/page; nested not duplicated.",
-    "uuid": "84637bf8-6c4e-8e16-8a62-728f3cf451d4",
+    "uuid": "af8ef33f-1baa-82f1-b545-b918f20ce2a9",
     "words": [
       "use",
       "when",

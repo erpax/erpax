@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about interval as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "144f20ca-fd69-8179-9439-ff14eaf7ce60",
+    "uuid": "ce60da01-66a3-83d4-b05c-753e0ad2631a",
     "words": [
       "use",
       "when",

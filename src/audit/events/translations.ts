@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when persisting or querying the durable ISO 19011 / SOX §404 evidence trail — every canonical write (orders, invoices, payments, journal entries, period locks) lands one append-only row queryable by tenant/collection/operation/user/timestamp; Merkle hash chain for tamper-evidence; no log-scraping required for auditors. The canonical audit-evidence collection.",
-    "uuid": "ab0ec18b-1ede-8873-9a1e-fd00009d97a9",
+    "uuid": "974b5a4e-8807-808c-a1e8-217f7315284c",
     "words": [
       "use",
       "when",

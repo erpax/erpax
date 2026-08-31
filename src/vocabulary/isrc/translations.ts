@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about isrc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "02bb621a-dfb8-8acd-948d-54749de60306",
+    "uuid": "fba813f5-d595-8d04-a67c-a02701905180",
     "words": [
       "use",
       "when",

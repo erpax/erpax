@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when parsing ISO 20022 camt.053 BankToCustomerStatement — end-of-day account statement (Stmt).",
-    "uuid": "46e209e8-0a54-81c6-a566-27457a18b2b8",
+    "uuid": "65b91dd7-a6f4-83f2-80fa-867e1aca1190",
     "words": [
       "use",
       "when",

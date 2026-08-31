@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a stylesheet is imported, stubbed, or reasoned about in build or typegen — CSS is the form facet of the styling/visual dimension (glyph ⊕ style), a complete diamond atom: each file content-addressed and sealed; Node must recognize .css as a valid diamond surface, never ERR_UNKNOWN_FILE_EXTENSION off-ring escape.",
-    "uuid": "7b8ad7e8-69e0-81b9-aa5f-4a273e5adc20",
+    "uuid": "32ce0121-bdec-8cb8-8fdc-5ef29c9de43a",
     "words": [
       "use",
       "when",

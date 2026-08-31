@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when auditing everything at once — every cheap gate measured as one dimension, trended against its own history, sequenced self-improvingly: regressions first, stuck escalates, improving keeps its plan.",
-    "uuid": "2377c3c3-fd2a-8531-ab88-f9a5cf0972e2",
+    "uuid": "416367b6-e4ad-821e-95e8-f950f2c6588f",
     "words": [
       "use",
       "when",

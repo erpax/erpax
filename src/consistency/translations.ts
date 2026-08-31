@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when enforcing or auditing data consistency — ACID properties, eventual consistency vs strong consistency, consistency models (read-after-write, causal), constraint enforcement, synchronization guarantees across replicas or shards.",
-    "uuid": "ff425244-da84-8bd6-8102-67a564b5f345",
+    "uuid": "79d81a9d-1f3b-8fa1-b98d-cbad390bc32a",
     "words": [
       "use",
       "when",

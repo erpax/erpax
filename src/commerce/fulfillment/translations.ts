@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fulfillment",
-    "uuid": "f1d82227-de7d-872e-a9a9-8b3a3a69afba",
+    "uuid": "165d0d4a-8f9b-87d7-8e27-0a84a98c6d49",
     "words": [
       "fulfillment"
     ],
@@ -17,17 +17,49 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Child atom extracted from hub",
-    "uuid": "273f6c55-1f6c-8e83-8e05-2fa30287e13d",
+    "source": "Use when reaching the fulfillment side of commerce — provisioning and delivering what a checkout bought — through its own namespace; the face re-exports the commerce barrel while the matter is still being lifted out of the hub.",
+    "uuid": "df106ac1-24f6-86dc-b094-8b44db0a38fb",
     "words": [
-      "child",
-      "atom",
-      "extracted",
-      "from",
+      "use",
+      "when",
+      "reaching",
+      "the",
+      "fulfillment",
+      "side",
+      "of",
+      "commerce",
+      "provisioning",
+      "and",
+      "delivering",
+      "what",
+      "a",
+      "checkout",
+      "bought",
+      "through",
+      "its",
+      "own",
+      "namespace",
+      "the",
+      "face",
+      "re",
+      "exports",
+      "the",
+      "commerce",
+      "barrel",
+      "while",
+      "the",
+      "matter",
+      "is",
+      "still",
+      "being",
+      "lifted",
+      "out",
+      "of",
+      "the",
       "hub"
     ],
     "values": {
-      "en": "Child atom extracted from hub"
+      "en": "Use when reaching the fulfillment side of commerce — provisioning and delivering what a checkout bought — through its own namespace; the face re-exports the commerce barrel while the matter is still being lifted out of the hub."
     }
   }
 ]

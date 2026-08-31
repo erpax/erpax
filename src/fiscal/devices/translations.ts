@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when registering or managing СУПТО fiscal hardware — each device carries an 8-digit ФУ number (first УНП segment), per-device currency and VAT tax groups, default operator and terminal for automated sales, and decommission lifecycle per Наредба Н-18. The fiscal-device registry.",
-    "uuid": "9d50ebed-4093-8af4-b9e3-4dade9941971",
+    "uuid": "213bd4cf-4418-80e3-a5d5-5f873e73466d",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about djmix as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "e0086b0f-5595-8cd7-b838-f8d8517e81b9",
+    "uuid": "fc425e85-2c57-8241-97e7-bd1c0b2175fc",
     "words": [
       "use",
       "when",

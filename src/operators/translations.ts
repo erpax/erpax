@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing СУПТО operators — assigning or decommissioning the 4-digit codes that form the second segment of every УНП — mapped to a user; audit trail preserved on decommission. The Наредба Н-18 operator register.",
-    "uuid": "411a3488-6be2-8166-a3b9-b92af2e0a293",
+    "uuid": "d6043aeb-2941-82a3-9397-c635e461e555",
     "words": [
       "use",
       "when",

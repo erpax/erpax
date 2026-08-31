@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when holding value — a balance under an owner identity; double-entry and content-addressed, so the wallet state is tamper-evident and every move balances.",
-    "uuid": "92183475-4062-88d7-9fdf-0df4f673d63c",
+    "uuid": "324feeb7-10ee-81b3-9a4a-6b5665f56c91",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about translator — Organization or person who adapts a creative work to different languages, regional differences and technical requirements of a target market, or that translates during some event.",
-    "uuid": "1a1edfcd-3876-8a91-8e1d-6c4817a59782",
+    "uuid": "bcfcd999-0156-851f-8e26-665a0c9b6a29",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when measuring the vortex helix as a qubit fold — ⟨2⟩ ≅ e^{2πik/6}, slash interference nodes, collapse phase→digit→bit. Holds is computed; no hand-asserted physics claims.",
-    "uuid": "b2411e62-5664-83fa-8836-9be658713648",
+    "uuid": "e98bd5c2-644f-85d8-8f4a-516cf8aa4e70",
     "words": [
       "use",
       "when",

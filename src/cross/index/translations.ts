@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "index",
-    "uuid": "21239699-ac0a-84ff-ad57-f46b7b35569a",
+    "uuid": "f743eec2-0ec4-8fd2-9cc8-d860ea1e07ab",
     "words": [
       "index"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about index — Reciprocal cross of index/cross — path double-wire B/A face.",
-    "uuid": "d4087fa1-d7c2-86c5-9611-e730b0478daa",
+    "uuid": "6186a334-3f6b-8c37-945d-dfbeae03fcc2",
     "words": [
       "use",
       "when",

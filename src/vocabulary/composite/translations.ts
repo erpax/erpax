@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about composite as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "33322979-fb4f-8502-b869-addca1532ec4",
+    "uuid": "db910d19-c178-866d-997b-eccdc6cb2e02",
     "words": [
       "use",
       "when",

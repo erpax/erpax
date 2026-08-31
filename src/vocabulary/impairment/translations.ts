@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an asset's fair value or recoverable amount falls permanently below book value, triggering writedown testing and loss recognition — mandatory under IAS-36 for all assets",
-    "uuid": "587e35b2-b442-8bc9-8ddf-0be5ba664f46",
+    "uuid": "d79ea2de-4900-89ec-b7c1-84e96173d4c5",
     "words": [
       "use",
       "when",

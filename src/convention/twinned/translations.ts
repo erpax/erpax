@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking whether every antimatter names its matter — the computed convention that each SKILL.md's `Matter-twin:` line points to a real index.ts, measured live as coverage = pointing / total over the real tree.",
-    "uuid": "a2d739a7-8492-8879-b9ef-579b2f1f4945",
+    "uuid": "2ce337dc-0cc0-8adc-9544-4fedb276d678",
     "words": [
       "use",
       "when",

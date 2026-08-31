@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when calling Payload data operations — Local API (payload.find/create/update/delete), REST endpoints, or GraphQL — or deciding which to use, passing depth/select/where/overrideAccess, or running ops inside hooks/server components.",
-    "uuid": "187adf26-ab8f-8f5d-ac50-ddeed320bed3",
+    "uuid": "930f2d23-87c6-881e-8a62-3470f34aae65",
     "words": [
       "use",
       "when",

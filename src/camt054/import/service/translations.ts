@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when parsing camt.054 debit-credit notification import parser.",
-    "uuid": "805d9ed6-d67a-86f0-bc6a-00f679ea9fd8",
+    "uuid": "5035ead6-351a-8f26-86d6-fdfefe4eda48",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when resolving which fiscal device, tenant and operator apply to a sale — the context every downstream fiscal step is computed against, so a wrong context silently fiscalises against the wrong device.",
-    "uuid": "159afd3d-ae45-8237-8fb7-ab33605383b8",
+    "uuid": "8c3054c6-c3d4-8eaf-ba57-7beb37ece45c",
     "words": [
       "use",
       "when",

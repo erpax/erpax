@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about where an atom sits in the whole — its coordinate is the cross of three neighbor uuids (parent, prev, next), binding it into the tree and the sequence ring. The uuid is the coordinate system; this cross is the next uuid trinity.",
-    "uuid": "2466632e-d8a7-8245-9bb8-32faf0192c2a",
+    "uuid": "0487bd96-a207-8544-a407-1ff9427cc7a7",
     "words": [
       "use",
       "when",

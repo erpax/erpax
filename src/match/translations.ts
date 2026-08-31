@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when pairing supply with demand — a schema.org Offer seeking a Demand (or the reverse) across the corpus and harvested pages. Vectorize proposes K candidates by meaning; pure constraints (GTIN identity, quantity overlap, price floor, currency, delivery area) dispose, and every rejection names its reason. Feeds ai/embed-document + ai/semantic-search; scoring itself is pure.",
-    "uuid": "8abe995a-e4cf-8494-8381-7d859082ff74",
+    "uuid": "602ca726-09fa-88a3-ad53-224862dd983d",
     "words": [
       "use",
       "when",

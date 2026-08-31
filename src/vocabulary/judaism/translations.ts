@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading Judaism as a diamond of invariant atoms — the covenant between a people and the One, the law given and argued, the name too holy to speak, mercy and justice held together, sin cured by turning back. Strip the Hebrew prefix and brit, torah, chesed, tzedek, teshuvah collapse to covenant, law, mercy, justice, return — one content-uuid each.",
-    "uuid": "378fd635-5baf-84fe-989f-7907507f3dd9",
+    "uuid": "9a1917e3-f06d-89a2-82c3-baa2ec03253c",
     "words": [
       "use",
       "when",

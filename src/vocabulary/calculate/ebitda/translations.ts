@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about ebitda — ports the EBITDA calculator verbatim (calculate, port): EBITDA = operating profit + depreciation + amortization (equivalently net income + interest + tax + D&A). Pure function over",
-    "uuid": "3b74a757-526d-8b75-ac85-aa6e2a760686",
+    "uuid": "e960b9ed-8e24-816b-ab54-9b4a842ad0af",
     "words": [
       "use",
       "when",

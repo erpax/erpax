@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pricing",
-    "uuid": "7f6d5e5e-45b5-8edd-a48f-311db7899478",
+    "uuid": "32114108-2832-87be-ad69-5be06473667b",
     "words": [
       "pricing"
     ],
@@ -17,17 +17,46 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Child atom extracted from hub",
-    "uuid": "273f6c55-1f6c-8e83-8e05-2fa30287e13d",
+    "source": "Use when reaching the pricing side of commerce — tiers, subscriptions, metered usage — through its own namespace; the face re-exports the commerce barrel while the matter is still being lifted out of the hub.",
+    "uuid": "442cd290-44cd-8947-a5b2-5504b6358a38",
     "words": [
-      "child",
-      "atom",
-      "extracted",
-      "from",
+      "use",
+      "when",
+      "reaching",
+      "the",
+      "pricing",
+      "side",
+      "of",
+      "commerce",
+      "tiers",
+      "subscriptions",
+      "metered",
+      "usage",
+      "through",
+      "its",
+      "own",
+      "namespace",
+      "the",
+      "face",
+      "re",
+      "exports",
+      "the",
+      "commerce",
+      "barrel",
+      "while",
+      "the",
+      "matter",
+      "is",
+      "still",
+      "being",
+      "lifted",
+      "out",
+      "of",
+      "the",
       "hub"
     ],
     "values": {
-      "en": "Child atom extracted from hub"
+      "en": "Use when reaching the pricing side of commerce — tiers, subscriptions, metered usage — through its own namespace; the face re-exports the commerce barrel while the matter is still being lifted out of the hub."
     }
   }
 ]

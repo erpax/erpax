@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about character — Fictional person connected with a creative work.",
-    "uuid": "991ee883-d56e-8b5a-a2d9-f6145fd064ad",
+    "uuid": "e4dce937-9eda-8923-a338-eb1420a18846",
     "words": [
       "use",
       "when",

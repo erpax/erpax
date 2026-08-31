@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about icubeds as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "8aee3ecf-0f8b-863d-ba29-19c5abd299dd",
+    "uuid": "49d5ee3c-8cc4-88dd-adec-5690618465e5",
     "words": [
       "use",
       "when",

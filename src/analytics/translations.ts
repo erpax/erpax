@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when you need one computed read-out of the whole erpax corpus across every aspect — structure, entropy, coverage, harmony, trust, and economic health. The all-aspects analyzer; it composes the measures already minted on the live uuid-matrix, never re-deriving them.",
-    "uuid": "1e993476-5b0c-89e7-84d9-43c08a662918",
+    "uuid": "6ae941b6-0bf1-8c63-b768-94af8ee39fb0",
     "words": [
       "use",
       "when",

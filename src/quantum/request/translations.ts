@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an agent calls an external system — quantum-compress the request to its most compact and cheapest form; content-address it so the uuid is the idempotency key, dedup against the cache, batch, and send the hash not the payload when the other side has seen it; squeeze the request to a point and the external cost drops toward zero.",
-    "uuid": "1fa3cac6-ebdc-8b91-a4b4-8e64fe6b27b8",
+    "uuid": "8314ae03-9b5d-8cc3-8922-4c117752adab",
     "words": [
       "use",
       "when",

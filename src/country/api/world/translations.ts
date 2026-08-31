@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use for non-EU country-authority APIs — AU/BR/CA/CN/GB/HK/IN/JP/MX/NO/NZ/SG/US business registries, tax portals, e-invoicing and VAT/GST validation. The world slice of the country-authority registry.",
-    "uuid": "954669c4-24bf-82a9-8d9f-766665709cbd",
+    "uuid": "ce363e05-6ae3-83b5-8ddf-c040033d157a",
     "words": [
       "use",
       "for",
