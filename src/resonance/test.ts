@@ -19,8 +19,22 @@ describe('resonance — the address collapses O(N²) to O(N), in orders of magni
       const r = resonanceMagnitude(n)
       expect(r.pairwise).toBe((n * (n - 1)) / 2)
       expect(r.ratio).toBe((n - 1) / 2)
-      expect(r.orders).toBeCloseTo(algebraLog10((n - 1) / 2), 9)
     }
+  })
+
+  it('orders is the log of the ratio wherever there IS a collapse, and floors at zero where there is not', () => {
+    // `orders` is log₁₀(max(1, ratio)) — deliberately floored. At N=2 the ratio is 0.5: one pair
+    // against two addresses, so addressing saves NOTHING, and the unfloored log would report
+    // "−0.3 orders of collapse", which is not a smaller collapse but a meaningless one. The identity
+    // is asserted where the collapse exists (N ≥ 3); the floor is asserted as the floor.
+    for (const n of [3, 10, 764, 3151]) {
+      expect(resonanceMagnitude(n).orders).toBeCloseTo(algebraLog10((n - 1) / 2), 9)
+    }
+    expect(resonanceMagnitude(2).orders).toBe(0)
+    expect(resonanceMagnitude(1).orders).toBe(0)
+    // N=3 is the break-even: ratio 1, log 0 — the collapse only starts paying above it.
+    expect(resonanceMagnitude(3).orders).toBe(0)
+    expect(resonanceMagnitude(4).orders).toBeGreaterThan(0)
   })
 
   it('the order grows with N without bound — scale-invariant, a larger corpus resonates harder', () => {

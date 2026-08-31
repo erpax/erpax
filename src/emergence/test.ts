@@ -12,9 +12,28 @@ describe('emergence — the third revealed (duality completing to a trinity)', (
     expect(emerged.length).toBeGreaterThan(0)
   })
 
-  it('every emerged step lands ON the horo ring — two poles compose to a real third', () => {
+  it('the ring is CLOSED under composition, and the {3,6,9} axis is not the ring', () => {
+    // composeSteps is digitalRoot(a×b), so the doubling ring {1,2,4,8,7,5} is the multiplicative
+    // subgroup ⟨2⟩ of (ℤ/9ℤ)* — CLOSED: two ring poles compose to a ring third, always. The other
+    // residues {3,6} are the axis (non-units, 9 ≡ 0 is the void), and a pair touching the axis
+    // composes ONTO the axis — it cannot come back. The corpus carries 22 axis atoms (access, auth
+    // …), so "every third lands on the ring" was never true of the data; this is the law that is.
     const ring = new Set<number>(HORO_DIGITS)
-    for (const e of emerge()) expect(ring.has(e.step)).toBe(true)
+    const axis = new Set<number>([3, 6, 9])
+    let closed = 0
+    for (const e of emerge()) {
+      const a = nodeOf(e.a)?.horo ?? 0
+      const b = nodeOf(e.b)?.horo ?? 0
+      const bothOnRing = ring.has(a) && ring.has(b) && a !== 9 && b !== 9
+      if (bothOnRing) {
+        expect(ring.has(e.step), `${e.a}⊗${e.b}: ${a}×${b} left the ring at ${e.step}`).toBe(true)
+        expect(e.step).not.toBe(9)
+        closed++
+      } else {
+        expect(axis.has(e.step), `${e.a}⊗${e.b}: an axis pole composed off the axis at ${e.step}`).toBe(true)
+      }
+    }
+    expect(closed).toBeGreaterThan(0)
   })
 
   it("emergeOne's step is exactly composeSteps of the two poles' horo positions (computed, not asserted)", () => {

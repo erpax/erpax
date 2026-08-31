@@ -214,9 +214,28 @@ describe('leftover — a derived proof must credit a CLAIM, not the alphabet', (
     // `expect(src).toMatch(/\bexport\b/)` plus a sigil-class check settles the ledger, drops the
     // tip score, and re-ranks the next-step engine away from the file — while proving nothing.
     // An unsettled leftover that stays VISIBLE is worth more than a green one that proved nothing.
+    //
+    // Proved on a FIXTURE, never on whatever the live ledger happens to hold. This demanded a live
+    // refusal, and the corpus settled its last tautology-only leftover — so the law stopped being
+    // checked at the moment it started holding everywhere, and the suite went red for SUCCESS.
+    // That is the [[rules]]/unraised shape: a case nothing constructs is a check that cannot fire.
+    const root = mkdtempSync(join(tmpdir(), 'erpax-leftover-'))
+    const write = (rel: string, body: string): void => {
+      mkdirSync(join(root, rel, '..'), { recursive: true })
+      writeFileSync(join(root, rel), body)
+    }
+    write('src/thin/leaf.ts', 'export const x = 1\n')
+    write('src/rich/leaf.ts', '/**\n * @standard WCAG-2.1 §2.4.4 link-purpose-in-context\n */\nexport const y = 2\n')
+    // bare export, no claim → the only credit would be a tautology, so it refuses
+    expect(deriveLeftoverProof('src/thin/leaf.ts', root)).toBeNull()
+    // one concrete claim → there is something to forbid, so it emits
+    expect(deriveLeftoverProof('src/rich/leaf.ts', root)).not.toBeNull()
+    // and the human override still overrides
+    expect(deriveLeftoverProof('src/thin/leaf.ts', root, { force: true })).not.toBeNull()
+    rmSync(root, { recursive: true, force: true })
+
     const emitted = leftovers(cwd).filter((l) => deriveLeftoverProof(l.bit, cwd) !== null)
     const refused = leftovers(cwd).filter((l) => deriveLeftoverProof(l.bit, cwd) === null)
-    expect(refused.length).toBeGreaterThan(0)
     expect(emitted.length + refused.length).toBe(leftovers(cwd).length)
     // every emitted proof now names at least one concrete claim or a real export shape
     for (const l of emitted) {

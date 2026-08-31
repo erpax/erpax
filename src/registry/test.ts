@@ -14,6 +14,10 @@ const UUID_V8_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9
 
 // Standards-as-live-objects: each (body,id,version) is a uuid-keyed vortex;
 // citations/conflicts/supersessions are the coupling forces between them.
+// Each test names its OWN tenant. They used to build one from `Date.now()`, and the registry is a
+// module-global store: five tests inside the same millisecond share one id, so the "no conflicting
+// subscriptions" tenant inherited the conflicting pair from the test above it and the suite failed on
+// a FAST machine — a clock is not an identity.
 describe('registry — standards as uuid-keyed live objects', () => {
   it('familyOf classifies bodies; unknown bodies default to iso', () => {
     expect(familyOf('IFRS')).toBe('ifrs-ias')
@@ -39,7 +43,7 @@ describe('registry — standards as uuid-keyed live objects', () => {
   })
 
   it('subscribeTenant is idempotent per uuid', () => {
-    const t = `tenant-${Date.now()}`
+    const t = 'tenant-idempotent'
     subscribeTenant(t, 'u1')
     subscribeTenant(t, 'u1')
     subscribeTenant(t, 'u2')
@@ -62,7 +66,7 @@ describe('registry — standards as uuid-keyed live objects', () => {
   })
 
   it('Law 27 — a tenant subscribed to a conflicting pair is flagged', () => {
-    const t = `tenant-${Date.now()}`
+    const t = 'tenant-conflicting-pair'
     declareConflict('c1', 'c2')
     subscribeTenant(t, 'c1')
     subscribeTenant(t, 'c2')
@@ -72,7 +76,7 @@ describe('registry — standards as uuid-keyed live objects', () => {
   })
 
   it('a tenant with no conflicting subscriptions is consistent', () => {
-    const t = `tenant-${Date.now()}`
+    const t = 'tenant-lone'
     subscribeTenant(t, 'lone')
     expect(checkStandardCitationsConsistent(t).ok).toBe(true)
   })
@@ -85,7 +89,7 @@ describe('registry — standards as uuid-keyed live objects', () => {
   })
 
   it('Law 28 — a subscription whose uuid was superseded becomes pending', () => {
-    const t = `tenant-${Date.now()}`
+    const t = 'tenant-superseded'
     declareSupersession({ oldUuid: 's-old', newUuid: 's-new', jurisdiction: 'global', effectiveDate: '2026-01-01' })
     subscribeTenant(t, 's-old')
     const res = checkStandardSupersessionsResolved(t, 'DE')
@@ -94,7 +98,7 @@ describe('registry — standards as uuid-keyed live objects', () => {
   })
 
   it('findSupersededSubscriptions proposes the rebind via supersedes link', () => {
-    const t = `tenant-${Date.now()}`
+    const t = 'tenant-rebind'
     const oldStd = publishStandard({ body: 'ISO', id: 'ISO-1', version: '1', bodyText: 'a', publisherDid: 'did:erpax:t:p' })
     const newStd = publishStandard({ body: 'ISO', id: 'ISO-1', version: '2', bodyText: 'b', publisherDid: 'did:erpax:t:p', supersedes: oldStd.uuid })
     subscribeTenant(t, oldStd.uuid)

@@ -31,7 +31,7 @@ export const GATE_LANES: readonly (readonly [string, string])[] = [
   // or a compass (open, with an owner). Fails closed on a verdict whose own proof is red: that is a
   // false statement about security, and there is no acceptable count of those. The RATIO is reported
   // and never ratcheted — forcing it upward would only push honest compasses into dishonest verdicts.
-  ['integrity', 'tsx src/convention/discern/corpus/index.ts'],
+  ['integrity', 'pnpm erpax integrity'],
   // OUTWARD CONTRACTS — erpax's parsers against FROZEN captures of the twelve external
   // rails it codes against. Offline BY CONSTRUCTION (only *Offline functions are
   // imported), because a correct erpax must never fail its own gate because someone

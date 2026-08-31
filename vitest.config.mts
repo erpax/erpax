@@ -94,7 +94,16 @@ const shared = {
   // Vitest 4: execArgv is top-level (poolOptions removed).
   pool: 'forks' as const,
   execArgv: ['--import', './src/css/load-hook.mjs'],
-  server: { deps: { external: [/[/\\]skills\.index(?:\.ts)?$/] } },
+  // next-intl is INLINED so Vite resolves its imports; `next` ships no `exports` map, so a
+  // bare `import 'next/navigation'` is unresolvable under Node's ESM loader (no extension search)
+  // and every suite that reaches a next-intl navigation helper died on ERR_MODULE_NOT_FOUND —
+  // in the app the bundler resolves it, so the break is visible only here.
+  server: {
+    deps: {
+      external: [/[/\\]skills\.index(?:\.ts)?$/],
+      inline: [/[/\\]next-intl[/\\]/],
+    },
+  },
   exclude: [...configDefaults.exclude, 'src/skills/**'],
 }
 

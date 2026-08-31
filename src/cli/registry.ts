@@ -256,6 +256,12 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
       cmd: 'cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs" payload jobs:run --all-queues --limit 50',
     },
   },
+  integrity: {
+    default: {
+      desc: 'Security-claim integrity — every claim a measured verdict or an owned compass; fails closed on a verdict whose own proof is red',
+      cmd: `${TSX} src/convention/discern/corpus/index.ts`,
+    },
+  },
   deploy: {
     pipeline: { desc: 'Deploy/release workflow ORDER — green CI, build before migrate, gates before ship', cmd: `${TSX} src/deploy/pipeline/index.ts` },
     fold: { desc: 'Production module folds still match their matter + the built Worker fits the 10 MiB ceiling', cmd: `${TSX} src/deploy/fold/index.ts` },

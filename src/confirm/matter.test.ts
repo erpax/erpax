@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { join } from 'node:path'
 import { mkdtempSync, writeFileSync, rmSync, existsSync, readFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
-import { CLI_REGISTRY } from '@/cli/registry'
+import { resolveAction } from '@/cli/registry'
 import { BUILD_GATE_CHECKS, folderNameWarnings, touchesStandardBanner, outsideMatter, CONFIRM_CHECK_AXES } from './matter'
 
 const ROOT = process.cwd()
@@ -66,11 +66,14 @@ describe('confirm/matter — scoped + full gate', () => {
       const script = cmd.match(/^bash (scripts\/\S+)/)
       if (erpax) {
         const [, domain, action] = erpax
-        expect(CLI_REGISTRY[domain!], `lane ${label}: erpax domain '${domain}' is not in CLI_REGISTRY`).toBeDefined()
+        // Ask the RESOLVER, never the static map: `resolveAction` is what the dispatcher calls, and it
+        // also reaches DERIVED domains (an atom face — `erpax face` resolves to rules/face). Asserting
+        // against CLI_REGISTRY alone reported a working lane as missing, which is the false negative
+        // this lane exists to prevent, aimed at itself.
         if (!freeForm.has(domain!))
           expect(
-            CLI_REGISTRY[domain!]![action ?? 'default'],
-            `lane ${label}: 'erpax ${domain} ${action ?? ''}' has no registry entry`,
+            resolveAction(domain!, action),
+            `lane ${label}: 'erpax ${domain} ${action ?? ''}' resolves to no command`,
           ).toBeDefined()
       } else if (script) {
         expect(existsSync(join(ROOT, script[1]!)), `lane ${label}: ${script[1]} does not exist`).toBe(true)
