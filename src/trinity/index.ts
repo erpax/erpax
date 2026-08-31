@@ -72,11 +72,20 @@ export const MD_INFRA: ReadonlySet<string> = new Set([
   'docs/STANDARDS_INDEX.md',
 ])
 
+/**
+ * A published package's README is the REGISTRY FACE — the page npm renders for
+ * `@erpax/<name>`. It is not a stray doc beside code: without it the package ships blank
+ * to every consumer, and there is no atom it could fold into (an atom's SKILL.md is not
+ * what the registry reads). One per workspace package, and nothing deeper.
+ */
+const PACKAGE_FACE = /^packages\/[a-z0-9-]+\/README\.md$/
+
 /** Is this repo-relative `.md` path a STRAY — markdown that is not an atom's SKILL.md, nor root infra? */
 export function isMdStray(relPath: string): boolean {
   if (!/\.md$/i.test(relPath)) return false
   const base = relPath.slice(relPath.lastIndexOf('/') + 1)
   if (base === 'SKILL.md') return false
+  if (PACKAGE_FACE.test(relPath)) return false
   return !MD_INFRA.has(relPath)
 }
 
