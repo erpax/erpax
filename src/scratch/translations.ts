@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "scratch",
-    "uuid": "2743cb2a-3fe4-8a36-89ac-e0b8464c3dcc",
+    "uuid": "639b666e-8cde-83de-99c4-89dc1e44a98d",
     "words": [
       "scratch"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an ad-hoc measurement or throwaway tsx -e script would otherwise be run inline and discarded — save it here content-addressed instead. A throwaway is a proto-tool: identical scripts merge (same content ⇒ same address ⇒ the fold), the store accretes distinct measurements, and a script that has proven useful graduates into a tested src atom. Single-use code is entropy only if you delete it; saved, it quantomises in time.",
-    "uuid": "2d34f36f-c074-824d-90c9-cbe56ce332e8",
+    "uuid": "7a674cb8-e5d2-8b0d-8780-73583de4ec1e",
     "words": [
       "use",
       "when",

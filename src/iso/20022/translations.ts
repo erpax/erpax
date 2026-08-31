@@ -16,7 +16,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing ISO 20022 — Universal financial industry message scheme.",
-    "uuid": "ff96065c-0b7e-83e6-8348-027ea59a3e30",
+    "uuid": "b73c168e-6a25-8541-8a81-a8067e9ffeb2",
     "words": [
       "use",
       "when",

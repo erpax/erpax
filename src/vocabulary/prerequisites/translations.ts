@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "prerequisites",
-    "uuid": "ca004024-52f7-892d-a734-7efafb4ba385",
+    "uuid": "b23f2598-39ff-8d03-b0dc-6090d9849b49",
     "words": [
       "prerequisites"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about prerequisites as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "56069943-6010-8d2b-8a1e-11adb2f0cb89",
+    "uuid": "fe1b79eb-75a5-8894-9a6a-dc94799d76d8",
     "words": [
       "use",
       "when",

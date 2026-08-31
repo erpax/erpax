@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tenant",
-    "uuid": "ecd4b8b7-e437-85ac-bff0-d0d311dbb6d2",
+    "uuid": "3a983f41-ced1-85da-a761-43785f013245",
     "words": [
       "tenant"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when resolving which tenants expose published content to anonymous callers — the TTL-cached lookup of tenant ids flagged `allowPublicRead = true`, minimizing D1 row-reads on cold anonymous paths.",
-    "uuid": "9a7fbc88-8082-89e6-9abe-eeed71e363f0",
+    "uuid": "33b4af7c-a384-826f-8cdb-58ded6459362",
     "words": [
       "use",
       "when",

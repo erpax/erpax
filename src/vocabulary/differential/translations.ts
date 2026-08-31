@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "differential",
-    "uuid": "27a24ad8-6ce0-821b-b1de-c9e8fb038bca",
+    "uuid": "fa357e5b-0a3c-83e3-9b29-3fccad0f7a56",
     "words": [
       "differential"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about differential — A schema.org component word, collided out of schema.org compounds — fused from differentialDiagnosis (sti · collapse · merge).",
-    "uuid": "38bee6a5-fa91-8aaa-8167-2bbfc0c4b499",
+    "uuid": "6f91d78d-3e16-81fc-bf1d-918bd0fb1277",
     "words": [
       "use",
       "when",

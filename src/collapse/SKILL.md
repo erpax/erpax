@@ -1,6 +1,6 @@
 ---
 name: collapse
-description: "Use when reducing collection/table sprawl to its canonical minimum — collapse every collection to one of four sinks (an official Payload plugin/template, the trinity node store, a Lexical content block, or a dimension/state/role of an existing node). The \\\\\\\\\\\\\\\"collapse all to Payload\\\\\\\\\\\\\\\" law; one name across every dimension, drawn from the standards."
+description: "Use when reducing collection/table sprawl to its canonical minimum — collapse every collection to one of four sinks (an official Payload plugin/template, the trinity node store, a Lexical content block, or a dimension/state/role of an existing node). The \"collapse all to Payload\" law; one name across every dimension, drawn from the standards."
 atomPath: collapse
 coordinate: "collapse · 4/weave · 59a66e10"
 contentUuid: "d524353f-e553-5491-8060-95a3403d7d26"

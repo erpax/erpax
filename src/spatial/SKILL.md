@@ -1,6 +1,6 @@
 ---
 name: spatial
-description: "Use when reasoning about spatial — The \\\\\\\"spatial\\\\\\\" property can be used in cases when more specific properties (e.g. locationCreated, spatialCoverage, contentLocation) are not known to be appropriate."
+description: "Use when reasoning about spatial — The \"spatial\" property can be used in cases when more specific properties (e.g. locationCreated, spatialCoverage, contentLocation) are not known to be appropriate."
 atomPath: spatial
 coordinate: "spatial · 1/base · 8e3fec56"
 contentUuid: "9abe35f0-5448-5373-b7c4-5e0581b00490"

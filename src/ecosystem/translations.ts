@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ecosystem",
-    "uuid": "e0ca1c1a-6245-8c00-88f7-127fbc67b5db",
+    "uuid": "f976068a-43b1-82f6-b898-800e2f24fb9b",
     "words": [
       "ecosystem"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when sustainability and decentralisation must be seen as ONE — a food web is a coordinator-free network (decentralised) that wastes nothing (sustainable) for the SAME reason: local agents posting balanced metabolic exchanges, every output another's input, so global conservation and global order both emerge from local balance. erpax IS an ecosystem; nature is the empirical proof of the law.",
-    "uuid": "6d7cda6b-104c-88f0-a8f5-e8456f7dcb9d",
+    "uuid": "163011bf-874c-8250-835c-5b740db8cb0e",
     "words": [
       "use",
       "when",

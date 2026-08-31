@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "verification",
-    "uuid": "ccea5521-78d6-8708-b4d8-6d00f91e0c5f",
+    "uuid": "1b79ea93-de3a-862c-9eb8-c074113886b1",
     "words": [
       "verification"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when proving a claim by content-uuid — the verifier re-derives the uuid and matches; because the token IS the content's identity, any change requires re-verification by architecture (the ACME DNS-01 pattern).",
-    "uuid": "6780c8e6-361f-874d-8751-584aae7788fd",
+    "uuid": "c049f5f7-3407-889b-848e-a50ef401866a",
     "words": [
       "use",
       "when",

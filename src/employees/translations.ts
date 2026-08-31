@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "employees",
-    "uuid": "039f1673-9515-87f3-9aec-8dd66fcd98c4",
+    "uuid": "d957cf91-15f9-8d47-8e44-088bbcc1ab9a",
     "words": [
       "employees"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing workforce records — onboarding an employee, recording compensation (IAS 19 base salary, FTE ratio, bonus, pension, PTO), storing GDPR-classified identity and payroll bank account, linking to the actor-party user, and driving the payroll cycle via time-entries and payroll runs. The GDPR-protected workforce master (admin/payroll-officer access only).",
-    "uuid": "ed7dcab3-6cb9-8605-bc67-71f9e226708f",
+    "uuid": "f9cb33b8-635d-8474-8ed9-e04e075807f2",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pickup",
-    "uuid": "ae8e1bf6-53aa-821b-8c56-2d6dbaa7bd8f",
+    "uuid": "26835157-e912-8774-90e6-3605eb4ee60e",
     "words": [
       "pickup"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a buyer collects pre-ordered goods at a point rather than having them delivered — the CSA pickup/drop site, on-farm pickup, host-site/neighborhood pod, and the generic click-and-collect (BOPIS) locker. A collection node in distribution: the seller aggregates to a point, the buyer covers the last mile — lower cost than home delivery, at the buyer's travel friction.",
-    "uuid": "0fec1470-fa87-8a9e-9107-62c1481e8f88",
+    "uuid": "b3ec47eb-5cad-813c-b342-4e28a1871901",
     "words": [
       "use",
       "when",

@@ -1,6 +1,6 @@
 ---
 name: port
-description: "Use when re-porting upstreams safely — a source ports to a content-uuid, so re-porting is idempotent (unchanged sources merge, only changed ones re-port); how to run \\\\\\\\\\\\\\\"port all upstreams again\\\\\\\\\\\\\\\" repeatedly."
+description: "Use when re-porting upstreams safely — a source ports to a content-uuid, so re-porting is idempotent (unchanged sources merge, only changed ones re-port); how to run \"port all upstreams again\" repeatedly."
 atomPath: "quantum/port"
 coordinate: "quantum/port · 1/base · 7a4bf7ee"
 contentUuid: "ad037307-8031-5275-ae22-6749e6748cf9"

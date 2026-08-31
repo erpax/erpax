@@ -1,6 +1,6 @@
 ---
 name: hooks
-description: "Use when adding or debugging Payload lifecycle hooks — mutating data before/after read or change, encryption, side effects, third-party integration, auto-populating fields, or \\\\\\\\\\\\\\\"my hook didn't run / ran at the wrong time\\\\\\\\\\\\\\\"."
+description: "Use when adding or debugging Payload lifecycle hooks — mutating data before/after read or change, encryption, side effects, third-party integration, auto-populating fields, or \"my hook didn't run / ran at the wrong time\"."
 atomPath: hooks
 coordinate: "hooks · 6/6 · dad720b8"
 contentUuid: "16ab8f22-060e-5f0b-ba84-2588b49d207b"

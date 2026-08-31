@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "rodin",
-    "uuid": "7edd50db-9a65-8da0-a900-e3ee5fa809de",
+    "uuid": "12111c38-4e1a-8bb4-995b-2925fc021d1e",
     "words": [
       "rodin"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the number substrate under erpax's state/sequence math — the Rodin vortex sequence 0·3·6·9·1·2·4·8·7·5 over the A432 anchor, digital-root (mod-9) arithmetic, the 3·6·9 triad axis vs the 1·2·4·8·7·5 doubling helix. The root the horo ring and the sequence both express.",
-    "uuid": "5fc4516e-f237-83f8-a5ad-068263e36277",
+    "uuid": "a21458b8-d48c-87d3-a1a8-276cb8b3c9c1",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "descent",
-    "uuid": "fe90826d-e85a-85e5-b8ea-4096c1c8b56a",
+    "uuid": "93e1938f-52e6-8f98-bfb1-476f0b2691df",
     "words": [
       "descent"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about the fifth position of the horo state ring — digit 7, \\\\\\\"the wave returns\\\\\\\", the binding step where a built flow begins its return (shipped, dispatched, posted out). First of the descent/return arc; nested under horo.",
-    "uuid": "be761586-5dbc-8b19-b647-f86c3f8bac4c",
+    "source": "Use when reasoning about the fifth position of the horo state ring — digit 7, \\\"the wave returns\\\", the binding step where a built flow begins its return (shipped, dispatched, posted out). First of the descent/return arc; nested under horo.",
+    "uuid": "460efe39-04f3-8280-b884-5521de299fab",
     "words": [
       "use",
       "when",
@@ -61,7 +61,7 @@ export const translations: readonly Translation[] = [
       "horo"
     ],
     "values": {
-      "en": "Use when reasoning about the fifth position of the horo state ring — digit 7, \\\\\\\"the wave returns\\\\\\\", the binding step where a built flow begins its return (shipped, dispatched, posted out). First of the descent/return arc; nested under horo."
+      "en": "Use when reasoning about the fifth position of the horo state ring — digit 7, \\\"the wave returns\\\", the binding step where a built flow begins its return (shipped, dispatched, posted out). First of the descent/return arc; nested under horo."
     }
   }
 ]

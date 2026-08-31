@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "peace",
-    "uuid": "282a9bb8-3381-857c-b576-eadd29ff282a",
+    "uuid": "b0f95b36-b4cd-8151-8fe6-b1fabd58c186",
     "words": [
       "peace"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about why the erpax uuid model makes war useless — destruction is futile (content-addressed + holographic ⇒ any survivor regenerates the whole), coercion is supra-resource (forging the record costs beyond the universe), and force cannot dominate (competition selects fastest-correct, not strongest). War is strictly dominated by building, for human and machine alike — an arithmetic and thermodynamic theorem of the model, not a moral plea.",
-    "uuid": "05027e94-7733-8b4e-b05d-e31798de5d34",
+    "uuid": "0fb8eef4-f035-8a63-a51d-c97fcda275c7",
     "words": [
       "use",
       "when",

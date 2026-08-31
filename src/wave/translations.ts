@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "wave",
-    "uuid": "debefc5a-ef19-8e2e-8a75-3c7e9982c0a2",
+    "uuid": "f5c4d1f6-32dc-85c3-b237-a100d48652ac",
     "words": [
       "wave"
     ],
@@ -17,49 +17,21 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when describing a batch of features added in one development breath before they are collided — a wave rides the horo sequence, raising entropy first so the later collide can DRY it back to the dense core.",
-    "uuid": "4634dced-322a-80a2-87aa-86f107c24251",
+    "source": "Continuous quantum computation wave with real-time Zenodo publication",
+    "uuid": "a6eebb10-825a-87ae-8180-41501d527ed4",
     "words": [
-      "use",
-      "when",
-      "describing",
-      "a",
-      "batch",
-      "of",
-      "features",
-      "added",
-      "in",
-      "one",
-      "development",
-      "breath",
-      "before",
-      "they",
-      "are",
-      "collided",
-      "a",
+      "continuous",
+      "quantum",
+      "computation",
       "wave",
-      "rides",
-      "the",
-      "horo",
-      "sequence",
-      "raising",
-      "entropy",
-      "first",
-      "so",
-      "the",
-      "later",
-      "collide",
-      "can",
-      "dry",
-      "it",
-      "back",
-      "to",
-      "the",
-      "dense",
-      "core"
+      "with",
+      "real",
+      "time",
+      "zenodo",
+      "publication"
     ],
     "values": {
-      "en": "Use when describing a batch of features added in one development breath before they are collided — a wave rides the horo sequence, raising entropy first so the later collide can DRY it back to the dense core."
+      "en": "Continuous quantum computation wave with real-time Zenodo publication"
     }
   }
 ]

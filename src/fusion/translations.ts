@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fusion",
-    "uuid": "7e12496a-81d8-8409-aa33-3b28289a57de",
+    "uuid": "6b1a0191-57ca-882e-b72c-b0b0055c220a",
     "words": [
       "fusion"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the reactor that builds erpax — gravity-driven merge that fuses atoms (and the entropy between them) into the one content-uuid matrix. Each fusion is a content-uuid collision (merge(a,b)→c); DRY collapse fuses duplication out ⇒ entropy↓, mass↑, tamper-cost↑. The reactor = collide.mjs (matrix:generate) + the society self-build loop, running the breath toward the zero-entropy one root.",
-    "uuid": "31d477a6-4aaf-80e7-be84-6ec65af8afc9",
+    "uuid": "2ea97e35-5972-84d4-8656-eb3e4be5048d",
     "words": [
       "use",
       "when",

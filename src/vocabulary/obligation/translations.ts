@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "obligation",
-    "uuid": "046eea64-fcdb-8090-8b56-5969e03e4e96",
+    "uuid": "650c18ef-396c-892a-8bf7-64638af94d91",
     "words": [
       "obligation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one obligation — the singular model of the obligations collection (the plural store); a duty to transfer value or perform under an arrangement.",
-    "uuid": "a34c6f98-649c-86b4-a84b-7671ae3ccd3b",
+    "uuid": "1185bbfe-17f3-85d4-a7da-6bcfe4728b00",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bindings",
-    "uuid": "9eee0b75-9852-85b6-99d7-3246ada8aa20",
+    "uuid": "fad34dae-78a9-84c7-9d46-7dcc2c7a8e21",
     "words": [
       "bindings"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindings — D1, R2, KV, Durable Objects, Queues, Workers AI, Vectorize, Analytics Engine, Browser, service self-reference, Hyperdrive, cron — or when a binding \\\\\\\"works in config but fails at runtime\\\\\\\" (e.g. \\\\\\\"no such Durable Object class is exported from the worker\\\\\\\"). The map of binding ↔ capability ↔ cost lever ↔ gap for the self-managed edge app.",
-    "uuid": "36b24fcc-af97-8370-9dcb-bc8309bb6d0f",
+    "source": "Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindings — D1, R2, KV, Durable Objects, Queues, Workers AI, Vectorize, Analytics Engine, Browser, service self-reference, Hyperdrive, cron — or when a binding \\\"works in config but fails at runtime\\\" (e.g. \\\"no such Durable Object class is exported from the worker\\\"). The map of binding ↔ capability ↔ cost lever ↔ gap for the self-managed edge app.",
+    "uuid": "b858830c-5edd-86ae-805d-372af71a9a0a",
     "words": [
       "use",
       "when",
@@ -87,7 +87,7 @@ export const translations: readonly Translation[] = [
       "app"
     ],
     "values": {
-      "en": "Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindings — D1, R2, KV, Durable Objects, Queues, Workers AI, Vectorize, Analytics Engine, Browser, service self-reference, Hyperdrive, cron — or when a binding \\\\\\\"works in config but fails at runtime\\\\\\\" (e.g. \\\\\\\"no such Durable Object class is exported from the worker\\\\\\\"). The map of binding ↔ capability ↔ cost lever ↔ gap for the self-managed edge app."
+      "en": "Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindings — D1, R2, KV, Durable Objects, Queues, Workers AI, Vectorize, Analytics Engine, Browser, service self-reference, Hyperdrive, cron — or when a binding \\\"works in config but fails at runtime\\\" (e.g. \\\"no such Durable Object class is exported from the worker\\\"). The map of binding ↔ capability ↔ cost lever ↔ gap for the self-managed edge app."
     }
   }
 ]

@@ -1,6 +1,6 @@
 ---
 name: temporal
-description: "Use when reasoning about temporal — The \\\\\\\"temporal\\\\\\\" property can be used in cases where more specific properties (e.g. temporalCoverage, dateCreated, dateModified, datePublished) are not known to be appropriate."
+description: "Use when reasoning about temporal — The \"temporal\" property can be used in cases where more specific properties (e.g. temporalCoverage, dateCreated, dateModified, datePublished) are not known to be appropriate."
 atomPath: temporal
 coordinate: "temporal · 4/weave · 91f5aca3"
 contentUuid: "c5c0f4de-2a15-59ad-a280-9c461f0d1bec"

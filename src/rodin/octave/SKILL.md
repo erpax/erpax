@@ -1,6 +1,6 @@
 ---
 name: octave
-description: "Use when reasoning about scale-lift in erpax — ×10 preserves the digit (10≡1 mod 9), so the same position recurs at the next order of magnitude; the canonical \\\\\\\"next octave\\\\\\\" (NOT +1, which crosses close→open within a scale). The fractal step. Nested under rodin."
+description: "Use when reasoning about scale-lift in erpax — ×10 preserves the digit (10≡1 mod 9), so the same position recurs at the next order of magnitude; the canonical \"next octave\" (NOT +1, which crosses close→open within a scale). The fractal step. Nested under rodin."
 atomPath: "rodin/octave"
 coordinate: "rodin/octave · 5/round · 9fb82d10"
 contentUuid: "a537f5e6-5f3f-5aef-b9bf-df91dca31106"

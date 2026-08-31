@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cooperative",
-    "uuid": "c51e9432-d42b-863f-8aff-78a7a02a76fd",
+    "uuid": "9f702d9c-c93d-842f-b164-3c8487373732",
     "words": [
       "cooperative"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about cooperative — An organization that is a joint project of multiple organizations or persons.",
-    "uuid": "e324efad-efc9-8d40-99ea-5fee0dafc7f8",
+    "uuid": "5f1fd82f-f185-8ac8-b4d0-a953420d3d22",
     "words": [
       "use",
       "when",

@@ -1,6 +1,6 @@
 ---
 name: fallback
-description: "Use when a country slot is blank or unknown — CLDR ZZ (\\\\\\\\\\\\\\\"Unknown Region\\\\\\\\\\\\\\\") is the country identity element, the universal value that is compatible with every real country and resolves any nullish input to a non-null code."
+description: "Use when a country slot is blank or unknown — CLDR ZZ (\"Unknown Region\") is the country identity element, the universal value that is compatible with every real country and resolves any nullish input to a non-null code."
 atomPath: "country/fallback"
 coordinate: "country/fallback · 7/descent · 424d1d29"
 contentUuid: "f7f4bbd1-2d79-5b78-a7ad-9d5d60b2967e"

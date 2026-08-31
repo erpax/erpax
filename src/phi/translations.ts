@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "phi",
-    "uuid": "b7bcd0c8-9363-8e5e-a3f4-df552eabf4b6",
+    "uuid": "e74d686b-d88c-83d7-9637-6c82bf27887b",
     "words": [
       "phi"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when φ must be read as the self-address constant — the number that is its own fold, computed not stored. Where pi is a finite seed unfolding to an infinite tail, φ is the fixed point: x = 1 + 1/x, the value the fold returns unchanged. Iterate the fold from any seed and it converges to φ; Fibonacci ratios sharpen toward it at every step. The arithmetic instance of concept.self.address.",
-    "uuid": "f54f29c9-4a98-8865-b4d4-6ce2072a1ba8",
+    "uuid": "e4d3a251-b6e5-8c65-be63-74c91e0140ab",
     "words": [
       "use",
       "when",

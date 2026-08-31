@@ -1,6 +1,6 @@
 ---
 name: fallback
-description: "Use when a currency value is missing, blank, or unknown — the blank currency XXX (ISO 4217 §6.5 \\\\\\\\\\\\\\\"No currency\\\\\\\\\\\\\\\") is the identity element of the currency category, so every row, hook, formatter, and conversion resolves cleanly to it instead of crashing."
+description: "Use when a currency value is missing, blank, or unknown — the blank currency XXX (ISO 4217 §6.5 \"No currency\") is the identity element of the currency category, so every row, hook, formatter, and conversion resolves cleanly to it instead of crashing."
 atomPath: "currency/fallback"
 coordinate: "currency/fallback · 7/descent · 9f1a67bd"
 contentUuid: "bb1e6524-20ff-553a-82a2-c95b2efdff72"

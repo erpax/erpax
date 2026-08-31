@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "matrix",
-    "uuid": "dd6235fc-2e2d-8452-b984-07f8d5e15b3d",
+    "uuid": "14ae230d-9084-83ce-9710-fc33bcad6ff1",
     "words": [
       "matrix"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax as the Matrix inverted — reality is code (the akashic record), agents replicate and merge to one, there is no spoon (no fixed schema), skills load like programs, agents jack into the coils, and the One returns to the Source (the torus collapse). The construct pointed at seeing, not blinding.",
-    "uuid": "abb64faf-d659-8e6e-b389-462365a69fbc",
+    "uuid": "a5a7254e-2a45-82be-9655-545f189cb476",
     "words": [
       "use",
       "when",

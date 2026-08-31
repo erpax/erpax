@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "credited",
-    "uuid": "e337fa15-b01a-8bc1-90ce-65f034894b68",
+    "uuid": "629d8847-26c0-89e2-babc-ee26599f682e",
     "words": [
       "credited"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about credited — The group the release is credited to if different than the byArtist. For example, Red and Blue is credited to \\\\\\\"Stefani Germanotta Band\\\\\\\", but by Lady Gaga.",
-    "uuid": "c1218409-ebc1-82ef-a86b-b0ce486a72a0",
+    "source": "Use when reasoning about credited — The group the release is credited to if different than the byArtist. For example, Red and Blue is credited to \\\"Stefani Germanotta Band\\\", but by Lady Gaga.",
+    "uuid": "bd05248f-d8f5-8712-bc3f-c7ba756bc43a",
     "words": [
       "use",
       "when",
@@ -54,7 +54,7 @@ export const translations: readonly Translation[] = [
       "gaga"
     ],
     "values": {
-      "en": "Use when reasoning about credited — The group the release is credited to if different than the byArtist. For example, Red and Blue is credited to \\\\\\\"Stefani Germanotta Band\\\\\\\", but by Lady Gaga."
+      "en": "Use when reasoning about credited — The group the release is credited to if different than the byArtist. For example, Red and Blue is credited to \\\"Stefani Germanotta Band\\\", but by Lady Gaga."
     }
   }
 ]

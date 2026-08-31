@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fingerprint",
-    "uuid": "e533bea9-3ba2-8073-9783-166d596bcb19",
+    "uuid": "11bad583-d0b7-8edb-9c11-2765f0052239",
     "words": [
       "fingerprint"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a whole-corpus derivation (rules snapshot, readme graph, corpus context) is computed by many callers — corpusFingerprint + memoByFingerprint reuse the one scan across siblings, the compute-tier of learn-by-shared-experience and the buildable AI-bill lever.",
-    "uuid": "1b0d3ac0-0bf0-8b7f-b713-bc36e3d2f914",
+    "uuid": "14755643-3637-8578-9272-0edf72d702d9",
     "words": [
       "use",
       "when",

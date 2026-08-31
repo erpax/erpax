@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "engine",
-    "uuid": "f5f5baab-dcaa-84e9-a4eb-fc9000c3d5b4",
+    "uuid": "23770295-f076-8b60-ab6e-268f252138de",
     "words": [
       "engine"
     ],
@@ -17,29 +17,17 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when executing or validating finite-state machines — gating transitions, detecting dead-ends, or auditing workflow harmony.",
-    "uuid": "a08c8f47-7a5f-81de-a875-19799e24b89a",
+    "source": "Child atom extracted from hub",
+    "uuid": "273f6c55-1f6c-8e83-8e05-2fa30287e13d",
     "words": [
-      "use",
-      "when",
-      "executing",
-      "or",
-      "validating",
-      "finite",
-      "state",
-      "machines",
-      "gating",
-      "transitions",
-      "detecting",
-      "dead",
-      "ends",
-      "or",
-      "auditing",
-      "workflow",
-      "harmony"
+      "child",
+      "atom",
+      "extracted",
+      "from",
+      "hub"
     ],
     "values": {
-      "en": "Use when executing or validating finite-state machines — gating transitions, detecting dead-ends, or auditing workflow harmony."
+      "en": "Child atom extracted from hub"
     }
   }
 ]

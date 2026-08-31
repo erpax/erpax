@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "conventional",
-    "uuid": "e66a513d-a9cb-8927-92fd-85595cdc3206",
+    "uuid": "f89faf0a-1b27-84b5-8cce-0cc4636ae1c5",
     "words": [
       "conventional"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about conventional as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "114c1162-f92c-8e86-9307-9268d733895c",
+    "uuid": "793c8593-a984-8585-a80b-b2b7fba0b8da",
     "words": [
       "use",
       "when",

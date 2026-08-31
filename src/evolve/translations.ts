@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "evolve",
-    "uuid": "b6a64a06-3047-8617-916b-fb88f32c492d",
+    "uuid": "732b2a6d-40f7-8b5f-be4d-ef6e9c1e930a",
     "words": [
       "evolve"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the paradox bites — to evolve you must invert what you are sure about, but you cannot invert everything at once (you need ground to stand on). The resolution: invert the FRAGILE certainties through the void (throughVoid is an involution, 9→1 reopens), stand on the INVARIANT keel (what survives every inversion — a theorem, the conformal angle). Survives iff a keel remains; a mind of only certainties is pulled wholly to 0.",
-    "uuid": "0a2cb4aa-5be9-8d44-9b32-5f2c59966dab",
+    "uuid": "64af758c-c656-852e-b0fc-6f78065641e2",
     "words": [
       "use",
       "when",

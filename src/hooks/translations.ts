@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hooks",
-    "uuid": "5d426d62-4dbd-82be-a2ab-9e58cbd4913f",
+    "uuid": "60432e1c-1de7-8ab6-9bef-f2e7748136c1",
     "words": [
       "hooks"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when adding or debugging Payload lifecycle hooks — mutating data before/after read or change, encryption, side effects, third-party integration, auto-populating fields, or \\\\\\\"my hook didn't run / ran at the wrong time\\\\\\\".",
-    "uuid": "c37aece3-09c6-86ca-9fa7-0ea937bd7800",
+    "source": "Use when adding or debugging Payload lifecycle hooks — mutating data before/after read or change, encryption, side effects, third-party integration, auto-populating fields, or \\\"my hook didn't run / ran at the wrong time\\\".",
+    "uuid": "1d2fec7a-5855-8ec0-9226-f7a0566cd267",
     "words": [
       "use",
       "when",
@@ -57,7 +57,7 @@ export const translations: readonly Translation[] = [
       "time"
     ],
     "values": {
-      "en": "Use when adding or debugging Payload lifecycle hooks — mutating data before/after read or change, encryption, side effects, third-party integration, auto-populating fields, or \\\\\\\"my hook didn't run / ran at the wrong time\\\\\\\"."
+      "en": "Use when adding or debugging Payload lifecycle hooks — mutating data before/after read or change, encryption, side effects, third-party integration, auto-populating fields, or \\\"my hook didn't run / ran at the wrong time\\\"."
     }
   }
 ]

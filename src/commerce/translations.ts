@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "commerce",
-    "uuid": "2fe6d5cf-1e92-8cb7-8ae8-ab0d17a3f756",
+    "uuid": "1129ccd9-d4ec-816a-b8e8-7ec3d8750ede",
     "words": [
       "commerce"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when designing or porting the erpax commerce/trade domain to Payload — parties under many roles (seller/buyer/agent/supplier/consignee/carrier), the cart→quote→order→invoice→note document chain, payments/allocations/refunds, subscriptions & metered usage, inventory/stock movement, packing & shipment, dunning/credit terms. The transactional-flow `@erpax/commerce` twin (sequence 4·8).",
-    "uuid": "aa2fba29-554f-81ec-a84e-90a077bf4b5d",
+    "uuid": "22356a5b-159b-81a8-b6e8-8bbc4bfd8da1",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "float",
-    "uuid": "21572aba-6de8-896f-b92a-852a82e0c7d5",
+    "uuid": "d59cc3d2-44f7-86b6-8dcf-c1c6c319c721",
     "words": [
       "float"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about float — Data type: Floating number.",
-    "uuid": "34831a8c-9c37-867e-b2f0-1ad0f599816a",
+    "uuid": "8cfa3287-b6ae-8f4e-8597-70baa75e9cc0",
     "words": [
       "use",
       "when",

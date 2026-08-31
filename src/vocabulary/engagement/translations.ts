@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "engagement",
-    "uuid": "ed805f9a-e0f6-8a60-8f06-be033ee723ea",
+    "uuid": "9757bffd-2e6a-8c71-9059-e120006486e3",
     "words": [
       "engagement"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when measuring or improving involvement/participation — employee engagement, customer engagement, learning engagement. The observed commitment/interaction level.",
-    "uuid": "08a9a012-a6f0-809e-aed9-d84ce8f69db6",
+    "uuid": "8425e0d9-2cce-85e1-9de7-54035933ee44",
     "words": [
       "use",
       "when",

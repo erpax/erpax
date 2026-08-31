@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "orders",
-    "uuid": "82f9e9bb-9d7f-8a5c-bc92-ed038b8916f9",
+    "uuid": "bfb22926-59ac-8695-9b93-c2936fe00bc9",
     "words": [
       "orders"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording or progressing a customer order — from quote conversion through confirmation, partial fulfillment, invoicing, and closure; track order lines, delivery dates, shipping and billing addresses, and fulfillment progress. The O2C customer-order register (UBL-2.1 / UN-EDIFACT ORDERS / Peppol BIS-3.0), distinct from purchase-orders (P2P).",
-    "uuid": "98e2269d-b213-8e3e-9d0b-05e0ab454739",
+    "uuid": "77f1ab56-d3ec-8d4b-bd71-93bbe4ebe27d",
     "words": [
       "use",
       "when",

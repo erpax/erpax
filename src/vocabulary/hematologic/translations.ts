@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hematologic",
-    "uuid": "34fad324-8133-8538-b896-4f76f6202f18",
+    "uuid": "b588cbb4-2925-8699-81fc-489805fe1821",
     "words": [
       "hematologic"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hematologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "226edbf5-29fc-801e-833a-3a805000ee2f",
+    "uuid": "401a1e55-8ccc-8620-86f0-5fec12be7545",
     "words": [
       "use",
       "when",

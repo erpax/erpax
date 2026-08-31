@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "aura",
-    "uuid": "cc1db491-1f4d-88bc-9909-6d2406aff552",
+    "uuid": "d9a3e08b-9e81-87b1-a146-fafb7471b559",
     "words": [
       "aura"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading the aura as quantum coherence — the gapless link-field as the coherent in-phase state, a dead link or orphan as decoherence; coherence is the resource the corpus maximizes toward zero entropy.",
-    "uuid": "22155f23-0e0e-8839-8b80-1469a67f2414",
+    "uuid": "5224e8f5-b5cb-8143-9c8d-c9ad6404b641",
     "words": [
       "use",
       "when",

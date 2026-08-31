@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "siblings",
-    "uuid": "c34f1376-0d39-8909-b6df-49c92d3c692c",
+    "uuid": "5a1fd59c-8857-8732-afc7-be84fdd6d5ad",
     "words": [
       "siblings"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about siblings — The person's siblings — see sibling (the singular). A dimension of one relation: siblings is the collection, sibling the unit; the text lives once, in sibling.",
-    "uuid": "09a55140-be21-86af-a38c-484847b59bdb",
+    "uuid": "a12808a7-2017-8bfa-9c76-db3502932529",
     "words": [
       "use",
       "when",

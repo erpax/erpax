@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "recover",
-    "uuid": "72b82814-c56c-8d70-9388-65458eb11170",
+    "uuid": "10ad3ec7-9dc0-821e-8733-34e4f8dd403a",
     "words": [
       "recover"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when a Payload collection/config reorg or rename leaves the build broken — `tsc` crashes with \\\\\\\"Maximum call stack size exceeded\\\\\\\", hundreds of type errors after moving collections, or `payload generate:types` fails with InvalidFieldRelationship, DuplicateFieldName, \\\\\\\"does not provide an export named 'default'\\\\\\\", or ERR_MODULE_NOT_FOUND.",
-    "uuid": "040285d3-a264-8eea-85d6-b1a96e4e190a",
+    "source": "Use when a Payload collection/config reorg or rename leaves the build broken — `tsc` crashes with \\\"Maximum call stack size exceeded\\\", hundreds of type errors after moving collections, or `payload generate:types` fails with InvalidFieldRelationship, DuplicateFieldName, \\\"does not provide an export named 'default'\\\", or ERR_MODULE_NOT_FOUND.",
+    "uuid": "3f47470d-71b8-8add-b545-585c02927364",
     "words": [
       "use",
       "when",
@@ -70,7 +70,7 @@ export const translations: readonly Translation[] = [
       "found"
     ],
     "values": {
-      "en": "Use when a Payload collection/config reorg or rename leaves the build broken — `tsc` crashes with \\\\\\\"Maximum call stack size exceeded\\\\\\\", hundreds of type errors after moving collections, or `payload generate:types` fails with InvalidFieldRelationship, DuplicateFieldName, \\\\\\\"does not provide an export named 'default'\\\\\\\", or ERR_MODULE_NOT_FOUND."
+      "en": "Use when a Payload collection/config reorg or rename leaves the build broken — `tsc` crashes with \\\"Maximum call stack size exceeded\\\", hundreds of type errors after moving collections, or `payload generate:types` fails with InvalidFieldRelationship, DuplicateFieldName, \\\"does not provide an export named 'default'\\\", or ERR_MODULE_NOT_FOUND."
     }
   }
 ]

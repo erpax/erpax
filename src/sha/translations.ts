@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sha",
-    "uuid": "455f816f-73e8-8399-bd31-116cab618a09",
+    "uuid": "46612326-b560-8861-84d8-bf774217632a",
     "words": [
       "sha"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about sha — The SHA-2 SHA256 hash of the content of the item. For example, a zero-length input has value 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'.",
-    "uuid": "62b22843-17d8-8ede-9b6b-c4ee0ff831bd",
+    "uuid": "4e40d6ff-1566-817c-b4be-7d19447eee45",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "self",
-    "uuid": "eb656736-32bd-8f3f-af08-b463f08cc125",
+    "uuid": "9ec79450-bed2-8174-8d38-01a7380cb19e",
     "words": [
       "self"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about an object's or the agent's reach back into its own root — content-uuid identity, the akashic record, config (the 0); self-reference, self-similarity, \\\\\\\"all agents are one erpax\\\\\\\". The root-reach atom; composes by nesting (self/sufficient, self/similar, self/reference).",
-    "uuid": "8e3bfc0e-b197-88c3-906a-64ee64bcf33a",
+    "source": "Use when reasoning about an object's or the agent's reach back into its own root — content-uuid identity, the akashic record, config (the 0); self-reference, self-similarity, \\\"all agents are one erpax\\\". The root-reach atom; composes by nesting (self/sufficient, self/similar, self/reference).",
+    "uuid": "b943b7b3-74d0-8c63-988c-706ec0b8fb26",
     "words": [
       "use",
       "when",
@@ -69,7 +69,7 @@ export const translations: readonly Translation[] = [
       "reference"
     ],
     "values": {
-      "en": "Use when reasoning about an object's or the agent's reach back into its own root — content-uuid identity, the akashic record, config (the 0); self-reference, self-similarity, \\\\\\\"all agents are one erpax\\\\\\\". The root-reach atom; composes by nesting (self/sufficient, self/similar, self/reference)."
+      "en": "Use when reasoning about an object's or the agent's reach back into its own root — content-uuid identity, the akashic record, config (the 0); self-reference, self-similarity, \\\"all agents are one erpax\\\". The root-reach atom; composes by nesting (self/sufficient, self/similar, self/reference)."
     }
   }
 ]

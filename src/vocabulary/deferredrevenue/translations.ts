@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "deferredrevenue",
-    "uuid": "0428d9df-7853-8b2d-a99e-a7b1575e709a",
+    "uuid": "67f7e792-4b91-8e92-9a6d-930bc7cc5421",
     "words": [
       "deferredrevenue"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about deferredrevenue — Use for customer advance payments or contract-liability positions — amounts received before performance is satisfied; net against contract assets to determine net contract position",
-    "uuid": "663e9bf3-565d-8878-820f-ca1129283a3d",
+    "uuid": "9f5b4d19-d8cf-8590-bcd8-f7da2544790a",
     "words": [
       "use",
       "when",

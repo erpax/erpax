@@ -1,6 +1,6 @@
 ---
 name: cross
-description: "Use when authorising \\\\\\\\\\\\\\\"who can do what\\\\\\\\\\\\\\\" — the agnostic Payload Access factory that attaches capability to roles (not users), merges role reach by lattice max, and decides an operation iff the merged capability reaches the op's required role."
+description: "Use when authorising \"who can do what\" — the agnostic Payload Access factory that attaches capability to roles (not users), merges role reach by lattice max, and decides an operation iff the merged capability reaches the op's required role."
 atomPath: cross
 coordinate: "cross · 7/descent · 81c2b961"
 contentUuid: "2b4b6789-7544-58e0-a7e2-3b0c3d818064"

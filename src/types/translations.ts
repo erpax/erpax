@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "types",
-    "uuid": "437d61a0-1223-8c37-ad25-b5586f019497",
+    "uuid": "606cf5da-abf4-8804-8ef8-847def6725f8",
     "words": [
       "types"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when working with Payload's generated TypeScript types — payload-types.ts, generate:types, GeneratedTypes, CollectionSlug, typing Local API results, or fixing stale-type errors after schema changes.",
-    "uuid": "43a66526-cf7a-8722-9efc-1ae4d0f6c7aa",
+    "uuid": "c9f1a499-868c-8340-a495-9539b28c5716",
     "words": [
       "use",
       "when",

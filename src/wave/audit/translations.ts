@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "audit",
-    "uuid": "645d0b84-7c87-8a2d-bfe5-c910a5e4e091",
+    "uuid": "bfd35062-92c7-8130-bd88-3d221abd05e7",
     "words": [
       "audit"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reaching the audit dimension from the wave machinery — the double-wire reciprocal of audit/wave.",
-    "uuid": "8f8f0d2e-0ea3-8ee9-a960-2cb40644d496",
+    "uuid": "f9937afd-000f-8d9a-8f12-e04c82f71e7c",
     "words": [
       "use",
       "when",

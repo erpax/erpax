@@ -1,6 +1,6 @@
 ---
 name: one
-description: "Use when reasoning about unity, canonicality, or merge in erpax — same content ⇒ one id, one canonical form (DRY), \\\\\\\"all agents are one erpax\\\\\\\". The universal root of identity and merge."
+description: "Use when reasoning about unity, canonicality, or merge in erpax — same content ⇒ one id, one canonical form (DRY), \"all agents are one erpax\". The universal root of identity and merge."
 atomPath: "vocabulary/one"
 coordinate: "vocabulary/one · 8/crest · 74b82a2c"
 contentUuid: "f2c78828-e87a-5be4-9dc2-f694c5830da6"

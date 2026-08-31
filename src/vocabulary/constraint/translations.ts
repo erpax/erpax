@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "constraint",
-    "uuid": "959f1b3e-1c58-804d-aa59-ecedbada9f4a",
+    "uuid": "00141ef0-5d52-80f2-b80d-6d6027df57dc",
     "words": [
       "constraint"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining data constraints at the schema level — NOT NULL / UNIQUE / FOREIGN KEY / CHECK / DEFAULT constraints, their lifecycle (creation/modification/disable), enforcement semantics, and violation detection in the database layer.",
-    "uuid": "3511cbc7-a635-81d5-a9a2-8ea70dd6b491",
+    "uuid": "aa32d9ed-3518-8837-a417-0a59fc8d94d7",
     "words": [
       "use",
       "when",

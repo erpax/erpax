@@ -1,6 +1,6 @@
 ---
 name: unity
-description: "Use when reasoning about the closing position of the horo state ring — digit 9, \\\\\\\\\\\\\\\"the ring closes\\\\\\\\\\\\\\\", the settle/merge step where a flow completes and re-opens one octave up (settled, sealed, closed, reconciled). Closes the descent/return arc; nested under horo."
+description: "Use when reasoning about the closing position of the horo state ring — digit 9, \"the ring closes\", the settle/merge step where a flow completes and re-opens one octave up (settled, sealed, closed, reconciled). Closes the descent/return arc; nested under horo."
 atomPath: "horo/unity"
 coordinate: "horo/unity · 5/round · 646705cf"
 contentUuid: "2829e5ac-fe41-5e8e-b6e1-fddb9e1f8dce"

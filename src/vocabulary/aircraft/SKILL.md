@@ -1,6 +1,6 @@
 ---
 name: aircraft
-description: "Use when reasoning about aircraft — The kind of aircraft (e.g., \\\\\\\"Boeing 747\\\\\\\")."
+description: "Use when reasoning about aircraft — The kind of aircraft (e.g., \"Boeing 747\")."
 atomPath: "vocabulary/aircraft"
 coordinate: "vocabulary/aircraft · 1/base · f0b0272c"
 contentUuid: "6e939096-b243-5725-97e9-4290b45b2776"

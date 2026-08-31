@@ -1,6 +1,6 @@
 ---
 name: perspective
-description: "Use when the SAME content-uuid node must read differently per party — a transfer is give for the payer and take for the payee, a supplier edge is \\\\\\\"my customer\\\\\\\" from the other end, an invoice is AR for the seller and AP for the buyer. The point-of-view projection."
+description: "Use when the SAME content-uuid node must read differently per party — a transfer is give for the payer and take for the payee, a supplier edge is \"my customer\" from the other end, an invoice is AR for the seller and AP for the buyer. The point-of-view projection."
 atomPath: perspective
 coordinate: "perspective · 4/weave · 66720159"
 contentUuid: "edecd533-de4d-5274-890f-c4a7d3306427"

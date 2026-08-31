@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "verified",
-    "uuid": "b3857b40-ba03-80d6-9d51-4837637ee9c3",
+    "uuid": "f410fddf-9122-895c-adad-b0f1e8103dbc",
     "words": [
       "verified"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when you need the sense-verified translation seed and its computed renderings — only the concept→Qid judgment is stored (58 unambiguous concept atoms, each admitted because a candidate's description sense-matched the atom's meaning); the per-locale labels are a computed projection of each Qid, sealed content-addressed in the gitignored cache. Theorems replace hardcoded values: the seed is data, the renderings are a read. Nothing fabricated; unsure senses stay gaps.",
-    "uuid": "927fb834-f98b-83b2-b360-1b89c41ea094",
+    "uuid": "9fafc6a8-4a4f-8f0e-a7eb-50e6850f7cf0",
     "words": [
       "use",
       "when",

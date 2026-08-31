@@ -1,6 +1,6 @@
 ---
 name: access
-description: "Use when defining or debugging Payload access control — who can create/read/update/delete a collection, global, or field; RBAC, row-level filtering, admin visibility; \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"access denied\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"/\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"document hidden\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\". In erpax access is the society's \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"who can do what\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" — the 3·6·9 governing axis: capabilities attach to ROLES (the angelic hierarchy), users inherit them through role membership, and the content-uuid cross decides, adding tamper-cost."
+description: "Use when defining or debugging Payload access control — who can create/read/update/delete a collection, global, or field; RBAC, row-level filtering, admin visibility; \"access denied\"/\"document hidden\". In erpax access is the society's \"who can do what\" — the 3·6·9 governing axis: capabilities attach to ROLES (the angelic hierarchy), users inherit them through role membership, and the content-uuid cross decides, adding tamper-cost."
 atomPath: access
 coordinate: "access · 3/3 · 3a007338"
 contentUuid: "f30de8a2-432d-5fd3-8446-70c3edb18769"

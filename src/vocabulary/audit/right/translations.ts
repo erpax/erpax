@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "audit-right",
-    "uuid": "8679a28e-3038-877d-95d2-b51f4fac655d",
+    "source": "right",
+    "uuid": "14d141c5-126c-8c41-811d-9749bae328ca",
     "words": [
-      "audit",
       "right"
     ],
     "values": {
-      "en": "audit-right"
+      "en": "right"
     }
   },
   {
     "key": "description",
     "source": "Use when a contract grants audit rights — auditor identity, audit scope (books, records, systems), frequency, notice requirement, cost allocation, remedies for non-access.",
-    "uuid": "8e77c960-54ee-8616-83e7-fb79f6a7d563",
+    "uuid": "3b60579c-7ea1-8679-8e12-6f78af37f45c",
     "words": [
       "use",
       "when",

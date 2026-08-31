@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bed",
-    "uuid": "5689f27e-c6e3-8714-91c3-f834362c47d4",
+    "uuid": "49453da8-a2b3-8c27-bfc0-f7fce75d0b2d",
     "words": [
       "bed"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about bed — The type of bed or beds included in the accommodation. For the single case of just one bed of a certain type, you use bed directly with a text. If you want to indicate the quantity",
-    "uuid": "e82827e1-8688-8cb3-8ba2-a282b1485563",
+    "uuid": "28762507-752e-8be4-b3ce-fa7c9e6b4180",
     "words": [
       "use",
       "when",

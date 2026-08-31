@@ -1,6 +1,6 @@
 ---
 name: ecommerce
-description: "Use when wiring or debugging the storefront — per-tenant Stripe payments, cart/order/product/address overrides, checkout stock validation, the order-to-GL bridge, or the \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"data is money\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" seam — the erpax configuration of the official @payloadcms/plugin-ecommerce."
+description: "Use when wiring or debugging the storefront — per-tenant Stripe payments, cart/order/product/address overrides, checkout stock validation, the order-to-GL bridge, or the \"data is money\" seam — the erpax configuration of the official @payloadcms/plugin-ecommerce."
 atomPath: ecommerce
 coordinate: "ecommerce · 1/base · d7bca145"
 contentUuid: "aff0feff-ee4d-5734-b5f4-f0d2dc68ae77"

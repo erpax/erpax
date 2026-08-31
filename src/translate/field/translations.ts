@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "field",
-    "uuid": "c814b397-82d1-830d-98d0-a017a6c9ace6",
+    "uuid": "b8ec429b-9c51-8b84-8b35-c40847d7b692",
     "words": [
       "field"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when Payload should self-translate a field on read — an afterRead field hook that projects the stored source value into req.locale through the shared messaging-uuid (the rosetta pivot), so a locale renders without per-locale storage. Falls back to the source where a rendering is the unregistered seed; never fabricates. This is how the CMS becomes self-translating: write once, any language/dialect is a computed projection.",
-    "uuid": "c2abd9d3-6ea1-8abd-809b-683b2ed9c069",
+    "uuid": "53669f45-179f-8b50-b145-14fecc552280",
     "words": [
       "use",
       "when",

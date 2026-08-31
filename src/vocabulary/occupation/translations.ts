@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "occupation",
-    "uuid": "7c35a3e6-411b-82d2-9dea-3614368d3099",
+    "uuid": "04ec7586-8920-8fdd-b660-a2c5547d76e6",
     "words": [
       "occupation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about occupation — A profession, may involve prolonged training and/or a formal qualification.",
-    "uuid": "cce38869-b7ff-87ef-b94f-86321387c48a",
+    "uuid": "1ad4b1de-ee7f-8738-a097-3ab23fba2927",
     "words": [
       "use",
       "when",

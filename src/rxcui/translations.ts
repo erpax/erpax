@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "rxcui",
-    "uuid": "567aa6d0-fc53-88b0-b46d-110dfe56ab62",
+    "uuid": "6f044524-0775-80ff-ac21-607c9f1dcc27",
     "words": [
       "rxcui"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about rxcui — The RxCUI drug identifier from RXNORM.",
-    "uuid": "618ef82a-7026-8977-a256-d26c9ab3d4df",
+    "uuid": "9ca81f5e-a9eb-8321-8965-669558d2fa3b",
     "words": [
       "use",
       "when",

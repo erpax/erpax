@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cross",
-    "uuid": "c85598dd-0e6f-87b5-8c58-9d32b2af4394",
+    "uuid": "5ee74f8f-ebf8-8bb5-b73e-eb2fa9d5a085",
     "words": [
       "cross"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when authorising \\\\\\\"who can do what\\\\\\\" — the agnostic Payload Access factory that attaches capability to roles (not users), merges role reach by lattice max, and decides an operation iff the merged capability reaches the op's required role.",
-    "uuid": "0a0e9319-0a86-8feb-8645-f9b2f689a902",
+    "source": "Use when authorising \\\"who can do what\\\" — the agnostic Payload Access factory that attaches capability to roles (not users), merges role reach by lattice max, and decides an operation iff the merged capability reaches the op's required role.",
+    "uuid": "e8f1fc03-4531-8a80-a0f4-3c1017135929",
     "words": [
       "use",
       "when",
@@ -61,7 +61,7 @@ export const translations: readonly Translation[] = [
       "role"
     ],
     "values": {
-      "en": "Use when authorising \\\\\\\"who can do what\\\\\\\" — the agnostic Payload Access factory that attaches capability to roles (not users), merges role reach by lattice max, and decides an operation iff the merged capability reaches the op's required role."
+      "en": "Use when authorising \\\"who can do what\\\" — the agnostic Payload Access factory that attaches capability to roles (not users), merges role reach by lattice max, and decides an operation iff the merged capability reaches the op's required role."
     }
   }
 ]

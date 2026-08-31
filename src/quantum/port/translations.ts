@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "port",
-    "uuid": "86b03c2d-65ba-8acd-8c36-de9e5d79ce87",
+    "uuid": "fab1e306-0f41-8026-84db-d2e2349d324e",
     "words": [
       "port"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when re-porting upstreams safely — a source ports to a content-uuid, so re-porting is idempotent (unchanged sources merge, only changed ones re-port); how to run \\\\\\\\\\\\\\\"port all upstreams again\\\\\\\\\\\\\\\" repeatedly.",
-    "uuid": "5f1a5058-e81e-86ee-bc0d-4e814fd0520f",
+    "source": "Use when re-porting upstreams safely — a source ports to a content-uuid, so re-porting is idempotent (unchanged sources merge, only changed ones re-port); how to run \\\"port all upstreams again\\\" repeatedly.",
+    "uuid": "370a276d-8e9b-825f-be00-0ba31020c3f6",
     "words": [
       "use",
       "when",
@@ -56,7 +56,7 @@ export const translations: readonly Translation[] = [
       "repeatedly"
     ],
     "values": {
-      "en": "Use when re-porting upstreams safely — a source ports to a content-uuid, so re-porting is idempotent (unchanged sources merge, only changed ones re-port); how to run \\\\\\\\\\\\\\\"port all upstreams again\\\\\\\\\\\\\\\" repeatedly."
+      "en": "Use when re-porting upstreams safely — a source ports to a content-uuid, so re-porting is idempotent (unchanged sources merge, only changed ones re-port); how to run \\\"port all upstreams again\\\" repeatedly."
     }
   }
 ]

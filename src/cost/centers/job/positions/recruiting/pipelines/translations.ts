@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pipelines",
-    "uuid": "f5c2252e-f502-85df-9a54-81ae3f6390c5",
+    "uuid": "1c7b16d0-84f8-8d8a-bb9f-cfac7de6c4ed",
     "words": [
       "pipelines"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tracking candidate applications, interview stages, offers, and hiring decisions per position — GDPR-compliant funnel (applied→screening→interview→offer→hired/rejected), sourcing, skill-match, and recruiter activity. The GDPR Art.6(1)(b) candidate-pipeline collection.",
-    "uuid": "54a9c769-1fa5-89c6-8fb3-c66b647ef3d3",
+    "uuid": "f2e87cfc-fb11-83f8-a60b-66ffdfef1f6b",
     "words": [
       "use",
       "when",

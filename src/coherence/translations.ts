@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "coherence",
-    "uuid": "885294cc-abd1-813b-955d-9294389b6d60",
+    "uuid": "36b9011d-e820-88d6-a0e8-7ed81c79bdac",
     "words": [
       "coherence"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about wholeness as a MEASURABLE quantity — coherence is the scientific name for what erpax renders as harmony: phase-alignment across a signal. Physics/DSP coherence (phase-locked waves, 0..1), HRV 'psychophysiological coherence' (a real, measured intra-body state) and Popp's contested biophoton coherence; the inter-personal 'field coherence' aura claim is refuted. Wholeness renders as coherence, a gap or tamper as decoherence.",
-    "uuid": "e1fda152-aa94-837a-b772-d5d30faf964e",
+    "uuid": "82187173-a17e-8e01-ba82-511c7786a531",
     "words": [
       "use",
       "when",

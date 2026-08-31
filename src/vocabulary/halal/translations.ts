@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "halal",
-    "uuid": "1c9b4198-d889-838f-baeb-41f531dc1fae",
+    "uuid": "9fb2e687-cc59-8c9f-b5bc-17958dac31af",
     "words": [
       "halal"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about halal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "c99512ca-9c5a-83e5-8c3b-12b9a303ead7",
+    "uuid": "051da0c6-ff84-8390-8fa5-0d252dfb0cf6",
     "words": [
       "use",
       "when",

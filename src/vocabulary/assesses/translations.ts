@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "assesses",
-    "uuid": "ebe27271-5499-859b-9b63-b2c43425e010",
+    "uuid": "f8630e2d-43a5-8404-8875-6e4808657ea2",
     "words": [
       "assesses"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about assesses — The item being described is intended to assess the competency or learning outcome defined by the referenced term.",
-    "uuid": "f00eac04-59a5-87a2-8dde-0edc05f86718",
+    "uuid": "21c91670-c07b-811d-ba1b-c58d84b5541f",
     "words": [
       "use",
       "when",

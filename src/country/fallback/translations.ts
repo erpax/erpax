@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fallback",
-    "uuid": "157d8c7f-b9b6-8a65-abfd-e297148638f8",
+    "uuid": "b82b6c3d-3cf8-83d1-afb5-7f1c259afb06",
     "words": [
       "fallback"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when a country slot is blank or unknown — CLDR ZZ (\\\\\\\"Unknown Region\\\\\\\") is the country identity element, the universal value that is compatible with every real country and resolves any nullish input to a non-null code.",
-    "uuid": "b2012aff-c7df-858b-8746-fbe7449e0f91",
+    "source": "Use when a country slot is blank or unknown — CLDR ZZ (\\\"Unknown Region\\\") is the country identity element, the universal value that is compatible with every real country and resolves any nullish input to a non-null code.",
+    "uuid": "8c630321-adc1-85c4-94f6-70bade50bd50",
     "words": [
       "use",
       "when",
@@ -60,7 +60,7 @@ export const translations: readonly Translation[] = [
       "code"
     ],
     "values": {
-      "en": "Use when a country slot is blank or unknown — CLDR ZZ (\\\\\\\"Unknown Region\\\\\\\") is the country identity element, the universal value that is compatible with every real country and resolves any nullish input to a non-null code."
+      "en": "Use when a country slot is blank or unknown — CLDR ZZ (\\\"Unknown Region\\\") is the country identity element, the universal value that is compatible with every real country and resolves any nullish input to a non-null code."
     }
   }
 ]

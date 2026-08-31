@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "lead-score",
-    "uuid": "e832ebca-41d3-8b25-873d-a8e280897a22",
+    "source": "score",
+    "uuid": "762134f5-12f9-898f-8af9-c3f40a783306",
     "words": [
-      "lead",
       "score"
     ],
     "values": {
-      "en": "lead-score"
+      "en": "score"
     }
   },
   {
     "key": "description",
     "source": "Use when ranking prospect/lead quality — behavioral signals, firmographic attributes, scoring model, threshold for handoff to sales.",
-    "uuid": "dcf01470-4008-8fb9-9f57-1f8fcfeafbdf",
+    "uuid": "963a5a8f-20be-8e30-a976-889d107da938",
     "words": [
       "use",
       "when",

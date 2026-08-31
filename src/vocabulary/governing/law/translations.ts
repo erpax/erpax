@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "governing-law",
-    "uuid": "32c933ea-fd9b-8a87-86d3-969101e52640",
+    "source": "law",
+    "uuid": "d460fc10-11bd-8d44-9e0d-2893379547aa",
     "words": [
-      "governing",
       "law"
     ],
     "values": {
-      "en": "governing-law"
+      "en": "law"
     }
   },
   {
     "key": "description",
     "source": "Use when a contract is subject to a specific jurisdiction's law — codified by choice-of-law clause, determines interpretation (UCC vs. Common Law), applicable standards, dispute resolution.",
-    "uuid": "95af2b92-3742-8a38-af98-74e84a249c51",
+    "uuid": "4c2e3a6a-1a3c-8f72-8463-e0eaa9a28b06",
     "words": [
       "use",
       "when",

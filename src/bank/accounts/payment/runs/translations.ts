@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "runs",
-    "uuid": "d10d1c24-4f84-8225-bb35-45c41d610e25",
+    "uuid": "771995b5-d910-8945-ae2d-b685708cdbf8",
     "words": [
       "runs"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when assembling, authorising, exporting, or reconciling an ISO 20022 batch payment — pain.001 AP credit-transfer or pain.008 AR direct-debit; draft → pending-review → approved → exported → submitted → settled lifecycle; SOX §404 preparer-authoriser segregation of duties. The treasury batch-payment initiation collection.",
-    "uuid": "393d5cac-2ff1-8575-843f-dc9338c5ce06",
+    "uuid": "c6413c4c-a9d6-8c04-b79c-f1ffe5708087",
     "words": [
       "use",
       "when",

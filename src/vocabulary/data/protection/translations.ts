@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "data-protection",
-    "uuid": "89c10c56-a8f3-8d17-a196-59a268f26549",
+    "source": "protection",
+    "uuid": "b8f23d2a-b6e8-8c33-8731-c2ead9840023",
     "words": [
-      "data",
       "protection"
     ],
     "values": {
-      "en": "data-protection"
+      "en": "protection"
     }
   },
   {
     "key": "description",
     "source": "Use when a contract or processing agreement specifies data-protection obligations — processor/controller roles, permitted uses, security measures (encryption, access controls, breach notification), DPA terms.",
-    "uuid": "81d62abb-44aa-857f-8a4d-3cf182e3cc09",
+    "uuid": "e59eed0b-347c-8411-8d02-7dde89553859",
     "words": [
       "use",
       "when",

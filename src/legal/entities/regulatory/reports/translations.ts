@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reports",
-    "uuid": "9f131474-631b-87ab-8044-fe8ebb5cf572",
+    "uuid": "4a66d2f6-633d-8c82-83a4-a971940fa326",
     "words": [
       "reports"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when submitting or tracking statutory filings — 10-K/20-F, 10-Q, SOX attestations, annual compliance reports — per legal entity per jurisdiction — filing status, due dates, regulator feedback, and linked audit findings. The regulatory-filing register.",
-    "uuid": "a82e97e0-6142-8e9f-90e2-1b2ead937888",
+    "uuid": "5c7ce7fb-cfd1-8bb1-a676-a59d3088ee3b",
     "words": [
       "use",
       "when",

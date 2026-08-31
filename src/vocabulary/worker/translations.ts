@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "worker",
-    "uuid": "44cc6357-b244-8962-ba80-24cc4ba4cab5",
+    "uuid": "b1ec73bd-ef42-849a-ae1e-47417ddef467",
     "words": [
       "worker"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one worker — the singular model of the workers collection (the plural store); a person who performs labor for the organization. AND when naming the autonomous deployment face of a [[diamond]] — hook bodies, CLIs, guardians, agents, MCP handlers that run without a human in the loop.",
-    "uuid": "b65e67f8-62a5-82b4-bfc4-0ab1396e506b",
+    "uuid": "8353b1b0-8d61-8c05-ac86-c0b54c72261b",
     "words": [
       "use",
       "when",

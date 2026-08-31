@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "redirects",
-    "uuid": "ba07635b-9fd5-8b44-8b95-2a3a42d49aa1",
+    "uuid": "427a3499-691b-8e60-80de-e649a3fcbd7f",
     "words": [
       "redirects"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when a moved/renamed URL must resolve to its new target (301/302) — the official @payloadcms/plugin-redirects `redirects` collection + the SSR PayloadRedirects resolver. Read before wiring URL redirection, or when a `'redirects'` slug is \\\\\\\"not assignable to CollectionSlug\\\\\\\" (the plugin isn't registered).",
-    "uuid": "ac60d536-c484-8227-bc37-cd5f96a8954e",
+    "source": "Use when a moved/renamed URL must resolve to its new target (301/302) — the official @payloadcms/plugin-redirects `redirects` collection + the SSR PayloadRedirects resolver. Read before wiring URL redirection, or when a `'redirects'` slug is \\\"not assignable to CollectionSlug\\\" (the plugin isn't registered).",
+    "uuid": "fca096d6-2447-816e-8b3d-d983d7205790",
     "words": [
       "use",
       "when",
@@ -65,7 +65,7 @@ export const translations: readonly Translation[] = [
       "registered"
     ],
     "values": {
-      "en": "Use when a moved/renamed URL must resolve to its new target (301/302) — the official @payloadcms/plugin-redirects `redirects` collection + the SSR PayloadRedirects resolver. Read before wiring URL redirection, or when a `'redirects'` slug is \\\\\\\"not assignable to CollectionSlug\\\\\\\" (the plugin isn't registered)."
+      "en": "Use when a moved/renamed URL must resolve to its new target (301/302) — the official @payloadcms/plugin-redirects `redirects` collection + the SSR PayloadRedirects resolver. Read before wiring URL redirection, or when a `'redirects'` slug is \\\"not assignable to CollectionSlug\\\" (the plugin isn't registered)."
     }
   }
 ]

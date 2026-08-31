@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "valid",
-    "uuid": "690f89e1-29c1-837a-b85e-aab970687b7e",
+    "uuid": "e302f430-16f3-86ec-ab50-928c4210bef0",
     "words": [
       "valid"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about valid — The duration of validity of a permit or similar thing.",
-    "uuid": "dd87b888-fb53-8b8d-92dd-922fdee5793e",
+    "uuid": "c2efdae2-e606-80b5-a24c-ac0f86023f3d",
     "words": [
       "use",
       "when",

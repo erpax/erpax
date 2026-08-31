@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pattern",
-    "uuid": "88ed768a-fa8b-8b80-b5ce-4fed71b691da",
+    "uuid": "b3bd4510-1b7d-83ac-9fdb-51964defb037",
     "words": [
       "pattern"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about pattern — A pattern that something has, for example 'polka dot', 'striped', 'Canadian flag'. Values are typically expressed as text, although links to controlled value schemes are also suppo",
-    "uuid": "143755d3-244a-8267-a3c3-b68e9e061eae",
+    "uuid": "f4501c5b-337d-8514-883b-b2ff68365217",
     "words": [
       "use",
       "when",

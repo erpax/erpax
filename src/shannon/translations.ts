@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "shannon",
-    "uuid": "5ca30bfc-9267-897f-8d16-4d3d5103c453",
+    "uuid": "7f6bde3e-8dc4-887f-9be9-5fd303cdfd7e",
     "words": [
       "shannon"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about information entropy — Shannon's H = −Σ pᵢ·log₂(pᵢ) bits, the expected surprisal of a distribution: the average bits per symbol and the irreducible limit of lossless compression. Zero when one outcome is certain, maximal (log₂ n) when all n outcomes are equally likely. It is the information twin of thermodynamic entropy (same −Σp ln p, different constant) — the bits a message carries and the bits a tamper must reproduce.",
-    "uuid": "c5fc49d3-317d-85bc-aefe-30b41fa0e661",
+    "uuid": "17252366-b816-85c2-9fb2-acfdd84d9097",
     "words": [
       "use",
       "when",

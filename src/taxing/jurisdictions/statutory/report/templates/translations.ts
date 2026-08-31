@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "templates",
-    "uuid": "722eabcd-a85e-84f5-8b5d-20024e918ece",
+    "uuid": "99539ee3-55ea-82ef-9358-bb547704b597",
     "words": [
       "templates"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining or retrieving jurisdiction-scoped statutory filing templates — annual reports, tax returns, regulatory filings, financial statements, audit reports — with section sequences and effective dates. The per-jurisdiction statutory filing template node.",
-    "uuid": "cf94eed4-87b7-83f2-abd6-a3e26a2f48d9",
+    "uuid": "9841a556-f605-8df6-9f8e-28c9bae463d2",
     "words": [
       "use",
       "when",

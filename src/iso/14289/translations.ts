@@ -16,7 +16,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing `src/standards/iso-14289/`.",
-    "uuid": "f8b042e1-cf3f-8942-847d-2752d67d9732",
+    "uuid": "89f9f11d-75c2-89d0-9c57-e5e6e6533921",
     "words": [
       "use",
       "when",

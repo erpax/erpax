@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "merge",
-    "uuid": "7e40bf96-d40d-83f9-b83a-1d2333d9b3b8",
+    "uuid": "784d68f4-0aa8-8a59-8cfb-f9af8d4913b8",
     "words": [
       "merge"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about convergence/federation in erpax — same content ⇒ same id (content-uuid), same (domain×position×element) ⇒ same path; data and structure set-union with no coordination. Federation, dedup, \\\\\\\"all agents one erpax\\\\\\\".",
-    "uuid": "c9bfdf69-2ccf-84b4-8f81-dc40dd0d9233",
+    "source": "Use when reasoning about convergence/federation in erpax — same content ⇒ same id (content-uuid), same (domain×position×element) ⇒ same path; data and structure set-union with no coordination. Federation, dedup, \\\"all agents one erpax\\\".",
+    "uuid": "adf879bc-3fa8-8186-a07c-56869dd5550a",
     "words": [
       "use",
       "when",
@@ -56,7 +56,7 @@ export const translations: readonly Translation[] = [
       "erpax"
     ],
     "values": {
-      "en": "Use when reasoning about convergence/federation in erpax — same content ⇒ same id (content-uuid), same (domain×position×element) ⇒ same path; data and structure set-union with no coordination. Federation, dedup, \\\\\\\"all agents one erpax\\\\\\\"."
+      "en": "Use when reasoning about convergence/federation in erpax — same content ⇒ same id (content-uuid), same (domain×position×element) ⇒ same path; data and structure set-union with no coordination. Federation, dedup, \\\"all agents one erpax\\\"."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "index",
-    "uuid": "eda2c13b-464e-84c7-b648-42edd24d77b7",
+    "uuid": "21239699-ac0a-84ff-ad57-f46b7b35569a",
     "words": [
       "index"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Reciprocal cross of index/cross — path double-wire B/A face.",
-    "uuid": "72177b00-4ebc-846c-bc93-7d019dd4087b",
+    "source": "Use when reasoning about index — Reciprocal cross of index/cross — path double-wire B/A face.",
+    "uuid": "d4087fa1-d7c2-86c5-9611-e730b0478daa",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "index",
       "reciprocal",
       "cross",
       "of",
@@ -33,7 +38,7 @@ export const translations: readonly Translation[] = [
       "face"
     ],
     "values": {
-      "en": "Reciprocal cross of index/cross — path double-wire B/A face."
+      "en": "Use when reasoning about index — Reciprocal cross of index/cross — path double-wire B/A face."
     }
   }
 ]

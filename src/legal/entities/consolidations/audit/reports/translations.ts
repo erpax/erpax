@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reports",
-    "uuid": "9f131474-631b-87ab-8044-fe8ebb5cf572",
+    "uuid": "4a66d2f6-633d-8c82-83a4-a971940fa326",
     "words": [
       "reports"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when generating or tracking immutable audit reports and regulatory filings — SAF-T 3.0.2 audit files, jurisdiction-specific tax filings, transfer-pricing documentation packages, and cross-jurisdiction optimization analysis per ISA-700 / SOX §404. The audit-report generation and submission collection.",
-    "uuid": "c04d4f8d-87a8-8c1e-ada5-6cd6627d27ac",
+    "uuid": "bce38324-5026-8455-a7d6-843a82db71ae",
     "words": [
       "use",
       "when",

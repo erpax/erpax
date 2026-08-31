@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ritual",
-    "uuid": "c6e648eb-1e0f-8988-b23e-2493c23dac9e",
+    "uuid": "25c4f911-3f90-8e6a-86a9-6b96f4b10309",
     "words": [
       "ritual"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the patterned sacred repeat — the enacted cycle that re-tunes the part to the whole on a fixed period. The communal, outward twin of prayer's inward breath: where prayer is the self attuning, ritual is the rite performed, idempotent so the same act collapses to the same sealed alignment.",
-    "uuid": "2cf6e527-2a4e-84f5-847e-7f070c545666",
+    "uuid": "804ca38e-98d0-8526-b338-938fcd82b86c",
     "words": [
       "use",
       "when",

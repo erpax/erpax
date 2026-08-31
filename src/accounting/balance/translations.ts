@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "balance",
-    "uuid": "23e2effd-849e-8073-b491-07294dbe07b5",
+    "uuid": "c8d8a3c7-6a3d-856b-b6a8-0e64addaa827",
     "words": [
       "balance"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Debit and credit meet in balance; every fold meets the same law at seal.",
-    "uuid": "3a1bb3d6-6963-87bc-943a-61db60ea70c5",
+    "source": "Use when reasoning about balance — Debit and credit meet in balance; every fold meets the same law at seal.",
+    "uuid": "56c89422-c1fa-8443-9d36-0d4d4c9ac9ca",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "balance",
       "debit",
       "and",
       "credit",
@@ -36,7 +41,7 @@ export const translations: readonly Translation[] = [
       "seal"
     ],
     "values": {
-      "en": "Debit and credit meet in balance; every fold meets the same law at seal."
+      "en": "Use when reasoning about balance — Debit and credit meet in balance; every fold meets the same law at seal."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "virtual",
-    "uuid": "e7e209bc-83b3-84c7-961e-4e5b27203917",
+    "uuid": "3f99b979-e8df-87e3-a6d1-fd8aa0c799e1",
     "words": [
       "virtual"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about virtual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "e4abc98c-84ed-85fe-ad18-ae91c5a0ced9",
+    "uuid": "2472b63f-2902-8535-ad6b-bef8ae8cd692",
     "words": [
       "use",
       "when",

@@ -16,7 +16,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing INCOTERMS 2020.",
-    "uuid": "88c32081-343c-8c86-a0e6-72c279920a8b",
+    "uuid": "16e0566a-a036-822e-af70-1c9bbe422e00",
     "words": [
       "use",
       "when",

@@ -6,19 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "pages",
-    "uuid": "6ba73b2e-3590-8783-bb72-8415c999332b",
+    "source": "cmspage",
+    "uuid": "28758ec0-8248-8e3a-9316-b1e4a1c01eb9",
     "words": [
-      "pages"
+      "cmspage"
     ],
     "values": {
-      "en": "pages"
+      "en": "cmspage"
     }
   },
   {
     "key": "description",
     "source": "Use when creating or managing CMS pages — hero blocks, content blocks, forms, SEO meta — with per-tenant unique slugs, versioned drafts, breadcrumb hierarchy, and i18n routing. The Payload CMS page collection.",
-    "uuid": "395d1989-95cd-8063-89d1-b32252341067",
+    "uuid": "8b3f9feb-ae93-8d32-96e7-8e6cfb43d4aa",
     "words": [
       "use",
       "when",

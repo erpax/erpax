@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "queue",
-    "uuid": "3a2dc6f9-943d-8533-9123-d2f4b12d270b",
+    "uuid": "ab41e089-fa40-8897-aa48-de337d27b3a2",
     "words": [
       "queue"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when ordering work FIFO under the machine model — executable queue nested under [[computer]]; distinct from top-level @/queue vocabulary.",
-    "uuid": "e67c4b62-648f-850b-b035-1bae942cc86f",
+    "uuid": "55263c72-f1be-8bd9-a6b0-5f15f8b9e0f0",
     "words": [
       "use",
       "when",

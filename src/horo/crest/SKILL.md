@@ -1,6 +1,6 @@
 ---
 name: crest
-description: "Use when reasoning about the peak position of the horo state ring — digit 8, \\\\\\\\\\\\\\\"the ascent peaks\\\\\\\\\\\\\\\", the high step where a flow is fully built and architectures merge (packed, assembled, ready). Top of the ascent arc; nested under horo."
+description: "Use when reasoning about the peak position of the horo state ring — digit 8, \"the ascent peaks\", the high step where a flow is fully built and architectures merge (packed, assembled, ready). Top of the ascent arc; nested under horo."
 atomPath: "horo/crest"
 coordinate: "horo/crest · 7/descent · 7786e903"
 contentUuid: "39f32d0d-641f-5a7d-9318-c6a2f010a2dc"

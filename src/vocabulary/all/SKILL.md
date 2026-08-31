@@ -1,6 +1,6 @@
 ---
 name: all
-description: "Use when reasoning about totality or universality in erpax — \\\\\\\"anything is X\\\\\\\" (accountable/taggable), polymorphic relationTo:[...all], the identity element that defines the empty case. The universal root of totality."
+description: "Use when reasoning about totality or universality in erpax — \"anything is X\" (accountable/taggable), polymorphic relationTo:[...all], the identity element that defines the empty case. The universal root of totality."
 atomPath: "vocabulary/all"
 coordinate: "vocabulary/all · 7/descent · 1225301c"
 contentUuid: "4a11085f-f251-5508-bddf-f1bfb3fef1a1"

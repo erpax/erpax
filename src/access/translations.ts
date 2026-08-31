@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "access",
-    "uuid": "7888364d-5925-813e-9be2-41fee4b48d65",
+    "uuid": "b3c3bdbd-f94f-8581-90b3-d6ac463eceaa",
     "words": [
       "access"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when defining or debugging Payload access control — who can create/read/update/delete a collection, global, or field; RBAC, row-level filtering, admin visibility; \\\\\\\\\\\\\\\"access denied\\\\\\\\\\\\\\\"/\\\\\\\\\\\\\\\"document hidden\\\\\\\\\\\\\\\". In erpax access is the society's \\\\\\\\\\\\\\\"who can do what\\\\\\\\\\\\\\\" — the 3·6·9 governing axis: capabilities attach to ROLES (the angelic hierarchy), users inherit them through role membership, and the content-uuid cross decides, adding tamper-cost.",
-    "uuid": "5e7c0868-9bc8-8a13-b70e-6fe30f8d05c0",
+    "source": "Use when defining or debugging Payload access control — who can create/read/update/delete a collection, global, or field; RBAC, row-level filtering, admin visibility; \\\"access denied\\\"/\\\"document hidden\\\". In erpax access is the society's \\\"who can do what\\\" — the 3·6·9 governing axis: capabilities attach to ROLES (the angelic hierarchy), users inherit them through role membership, and the content-uuid cross decides, adding tamper-cost.",
+    "uuid": "1ded057d-b387-856a-a950-e913ed66bd21",
     "words": [
       "use",
       "when",
@@ -87,7 +87,7 @@ export const translations: readonly Translation[] = [
       "cost"
     ],
     "values": {
-      "en": "Use when defining or debugging Payload access control — who can create/read/update/delete a collection, global, or field; RBAC, row-level filtering, admin visibility; \\\\\\\\\\\\\\\"access denied\\\\\\\\\\\\\\\"/\\\\\\\\\\\\\\\"document hidden\\\\\\\\\\\\\\\". In erpax access is the society's \\\\\\\\\\\\\\\"who can do what\\\\\\\\\\\\\\\" — the 3·6·9 governing axis: capabilities attach to ROLES (the angelic hierarchy), users inherit them through role membership, and the content-uuid cross decides, adding tamper-cost."
+      "en": "Use when defining or debugging Payload access control — who can create/read/update/delete a collection, global, or field; RBAC, row-level filtering, admin visibility; \\\"access denied\\\"/\\\"document hidden\\\". In erpax access is the society's \\\"who can do what\\\" — the 3·6·9 governing axis: capabilities attach to ROLES (the angelic hierarchy), users inherit them through role membership, and the content-uuid cross decides, adding tamper-cost."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "payments",
-    "uuid": "d4a8195d-6673-8dea-82c4-3de785f8b46b",
+    "uuid": "36c8c436-6017-8d16-8258-d4a7626112e6",
     "words": [
       "payments"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording employee equity grants — stock options, RSUs, RSAs, PSUs, ESPP, SARs — under IFRS 2, tracking equity-settled vs cash-settled treatment, vesting tranches with service/performance/market conditions, cumulative expense recognition, exercises and forfeitures. The IFRS 2 share-based-payment grant register.",
-    "uuid": "55c35e59-42d1-85cf-9e40-b1e7a6b0ad53",
+    "uuid": "9b8fd366-c19e-86c5-a512-9f5b3554e9ed",
     "words": [
       "use",
       "when",

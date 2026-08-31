@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "scale",
-    "uuid": "f1d3a2d8-4d43-8fff-8e7b-18612815047a",
+    "uuid": "23cb90ef-dcdb-869d-90f9-0893f1f9ad26",
     "words": [
       "scale"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about scale as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "3549987a-e485-86b6-b5f0-b0799569629a",
+    "uuid": "a288788b-3310-84c9-b8aa-3e19dfb76036",
     "words": [
       "use",
       "when",

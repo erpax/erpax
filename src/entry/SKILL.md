@@ -1,6 +1,6 @@
 ---
 name: entry
-description: "Use when reasoning about the universal double-entry in erpax — every value movement (any direction, any parties) reduces to a balanced (debit, credit) pair; the reverse is inherent, direction is a viewpoint, N plugin mounts consolidate (intercompany nets to zero). The debit/credit closure operator over the whole mesh — \\\\\\\\\\\\\\\"all accounted in all directions ⇒ the wiring is complete\\\\\\\\\\\\\\\"."
+description: "Use when reasoning about the universal double-entry in erpax — every value movement (any direction, any parties) reduces to a balanced (debit, credit) pair; the reverse is inherent, direction is a viewpoint, N plugin mounts consolidate (intercompany nets to zero). The debit/credit closure operator over the whole mesh — \"all accounted in all directions ⇒ the wiring is complete\"."
 atomPath: entry
 coordinate: "entry · 1/base · 3edb606c"
 contentUuid: "4c8a5a6e-eadb-5e3c-924b-ef52373c8969"

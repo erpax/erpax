@@ -1,6 +1,6 @@
 ---
 name: base
-description: "Use when reasoning about the entry position of the horo state ring — digit 1, \\\\\\\\\\\\\\\"entering the ring\\\\\\\\\\\\\\\", the origin step of a flow/lifecycle (on-hand, draft, opened). First of the ascent arc; nested under horo."
+description: "Use when reasoning about the entry position of the horo state ring — digit 1, \"entering the ring\", the origin step of a flow/lifecycle (on-hand, draft, opened). First of the ascent arc; nested under horo."
 atomPath: "horo/base"
 coordinate: "horo/base · 1/base · 0aef2d26"
 contentUuid: "3aa131d7-e126-54e3-827b-ecb178d9c40a"

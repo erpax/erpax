@@ -1,6 +1,6 @@
 ---
 name: xpath
-description: "Use when reasoning about xpath — An XPath, e.g. of a SpeakableSpecification or WebPageElement. In the latter case, multiple matches within a page can constitute a single conceptual \\\\\\\"Web page element\\\\\\\"."
+description: "Use when reasoning about xpath — An XPath, e.g. of a SpeakableSpecification or WebPageElement. In the latter case, multiple matches within a page can constitute a single conceptual \"Web page element\"."
 atomPath: xpath
 coordinate: "xpath · 5/round · fa1446e3"
 contentUuid: "c1300857-3f84-59f5-aa0a-f9620ee01171"

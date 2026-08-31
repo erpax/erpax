@@ -1,6 +1,6 @@
 ---
 name: round
-description: "Use when reasoning about the sixth position of the horo state ring — digit 5, \\\\\\\\\\\\\\\"the ring breathes\\\\\\\\\\\\\\\", the completing turn that brings a returning flow to rest (delivered, received, reconciled). Descent/return arc; nested under horo."
+description: "Use when reasoning about the sixth position of the horo state ring — digit 5, \"the ring breathes\", the completing turn that brings a returning flow to rest (delivered, received, reconciled). Descent/return arc; nested under horo."
 atomPath: "horo/round"
 coordinate: "horo/round · 4/weave · 633106e1"
 contentUuid: "366061fc-9ace-524c-8d46-7a901363baa2"

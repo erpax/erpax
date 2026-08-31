@@ -1,6 +1,6 @@
 ---
 name: recover
-description: "Use when a Payload collection/config reorg or rename leaves the build broken — `tsc` crashes with \\\\\\\"Maximum call stack size exceeded\\\\\\\", hundreds of type errors after moving collections, or `payload generate:types` fails with InvalidFieldRelationship, DuplicateFieldName, \\\\\\\"does not provide an export named 'default'\\\\\\\", or ERR_MODULE_NOT_FOUND."
+description: "Use when a Payload collection/config reorg or rename leaves the build broken — `tsc` crashes with \"Maximum call stack size exceeded\", hundreds of type errors after moving collections, or `payload generate:types` fails with InvalidFieldRelationship, DuplicateFieldName, \"does not provide an export named 'default'\", or ERR_MODULE_NOT_FOUND."
 atomPath: "vocabulary/recover"
 coordinate: "vocabulary/recover · 2/share · 9f55af3f"
 contentUuid: "7bbf516e-a8aa-5fb1-91c7-f35c35187795"

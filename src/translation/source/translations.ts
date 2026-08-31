@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "source",
-    "uuid": "4e640ead-ed0f-8171-9199-94b19702226f",
+    "uuid": "4bebd269-2bbf-8912-ba8a-9e506f67d6a7",
     "words": [
       "source"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the translation intelligence must be trained with REAL renderings, not fabricated ones — fetches a word's community-maintained labels in every language from Wikidata (CC0), the zero-cost self-training source. Returns the concept id + description so the sense is verified before registering; returns null when no concept exists. Same pattern as the live sanctions check: a real authoritative endpoint, actually fetched, never invented.",
-    "uuid": "89d4eff7-0e57-82c6-b397-1be97cff5e39",
+    "uuid": "4717df80-3228-84de-a3ac-0fb3d9873571",
     "words": [
       "use",
       "when",

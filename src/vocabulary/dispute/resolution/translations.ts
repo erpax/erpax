@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "dispute-resolution",
-    "uuid": "ea2a6aa2-8126-8212-b629-ec66b9f1e89d",
+    "source": "resolution",
+    "uuid": "99c0e837-ef02-80e7-b48c-fb48ec98e6c2",
     "words": [
-      "dispute",
       "resolution"
     ],
     "values": {
-      "en": "dispute-resolution"
+      "en": "resolution"
     }
   },
   {
     "key": "description",
     "source": "Use when a contract specifies dispute handling — mechanism (litigation, arbitration, mediation), forum/arbitrator, procedural rules (discovery, evidence, cost allocation), escalation (negotiation→mediation→arbitration).",
-    "uuid": "37021237-c8d4-8f61-b554-e749f1072fd3",
+    "uuid": "4368a18c-ed92-83ec-8ca3-84fc4baca685",
     "words": [
       "use",
       "when",

@@ -1,6 +1,6 @@
 ---
 name: weave
-description: "Use when reasoning about the third position of the horo state ring — digit 4, \\\\\\\\\\\\\\\"four hands meeting\\\\\\\\\\\\\\\", the interlinking step where a flow is being worked/woven (in-production, in-progress, related). Ascent arc; nested under horo."
+description: "Use when reasoning about the third position of the horo state ring — digit 4, \"four hands meeting\", the interlinking step where a flow is being worked/woven (in-production, in-progress, related). Ascent arc; nested under horo."
 atomPath: "horo/weave"
 coordinate: "horo/weave · 5/round · 9abc0b24"
 contentUuid: "d7d29bcf-df04-5fed-b0fd-8ff530735567"

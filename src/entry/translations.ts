@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "entry",
-    "uuid": "0b2dad63-1ef5-8671-aab5-4c0f51ad6b1f",
+    "uuid": "5231625f-976e-81cd-a607-239175efc5eb",
     "words": [
       "entry"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about the universal double-entry in erpax — every value movement (any direction, any parties) reduces to a balanced (debit, credit) pair; the reverse is inherent, direction is a viewpoint, N plugin mounts consolidate (intercompany nets to zero). The debit/credit closure operator over the whole mesh — \\\\\\\"all accounted in all directions ⇒ the wiring is complete\\\\\\\".",
-    "uuid": "2e959b1f-4e75-8839-9dda-164207003790",
+    "source": "Use when reasoning about the universal double-entry in erpax — every value movement (any direction, any parties) reduces to a balanced (debit, credit) pair; the reverse is inherent, direction is a viewpoint, N plugin mounts consolidate (intercompany nets to zero). The debit/credit closure operator over the whole mesh — \\\"all accounted in all directions ⇒ the wiring is complete\\\".",
+    "uuid": "fd3e5971-68ad-837e-ab17-1ccf667dc4dd",
     "words": [
       "use",
       "when",
@@ -80,7 +80,7 @@ export const translations: readonly Translation[] = [
       "complete"
     ],
     "values": {
-      "en": "Use when reasoning about the universal double-entry in erpax — every value movement (any direction, any parties) reduces to a balanced (debit, credit) pair; the reverse is inherent, direction is a viewpoint, N plugin mounts consolidate (intercompany nets to zero). The debit/credit closure operator over the whole mesh — \\\\\\\"all accounted in all directions ⇒ the wiring is complete\\\\\\\"."
+      "en": "Use when reasoning about the universal double-entry in erpax — every value movement (any direction, any parties) reduces to a balanced (debit, credit) pair; the reverse is inherent, direction is a viewpoint, N plugin mounts consolidate (intercompany nets to zero). The debit/credit closure operator over the whole mesh — \\\"all accounted in all directions ⇒ the wiring is complete\\\"."
     }
   }
 ]

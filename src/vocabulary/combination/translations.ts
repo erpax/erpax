@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "combination",
-    "uuid": "834fa5e5-9cd5-8e9d-9efd-d4e9fa5b26d5",
+    "uuid": "dcd5955d-2aee-8cd5-8551-e411e61efff5",
     "words": [
       "combination"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one combination — the singular model of the combinations collection (the plural store); a specific grouping of selected options or parts.",
-    "uuid": "46dc1c11-46ab-8ca9-92c5-4372c4c38492",
+    "uuid": "212e27db-377c-8703-9aa9-dc569eba7bbf",
     "words": [
       "use",
       "when",

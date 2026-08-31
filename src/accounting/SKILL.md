@@ -1,6 +1,6 @@
 ---
 name: accounting
-description: "Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything \\\\\\\\\\\\\\\"accountable\\\\\\\\\\\\\\\" polymorphically. The self-sufficient `@erpax/accounting` archetype."
+description: "Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything \"accountable\" polymorphically. The self-sufficient `@erpax/accounting` archetype."
 atomPath: accounting
 coordinate: "accounting · 4/weave · bf3c0b3a"
 contentUuid: "81cf3a32-096c-5540-a8f2-990e784881b9"

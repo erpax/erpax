@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "items",
-    "uuid": "17839cef-7e07-8956-b1c2-ebc3141f8f80",
+    "uuid": "f96719c9-cdba-8225-9502-b56891e6f70c",
     "words": [
       "items"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modeling a pack line — the units of one produced lot-variant packed into one carton; header-primary with an optional option breakdown whose double-entry holds when supplied. Evolved from 200,993 rows of etrima pack_items.",
-    "uuid": "6d62c7bf-68a8-8cf1-8745-3aca6fe5d23c",
+    "uuid": "03409a8f-45b4-8f18-8ba2-a64cf8c80567",
     "words": [
       "use",
       "when",

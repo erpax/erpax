@@ -1,6 +1,6 @@
 ---
 name: pagination
-description: "Use when reasoning about pagination — Any description of pages that is not separated into pageStart and pageEnd; for example, \\\\\\\"1-6, 9, 55\\\\\\\" or \\\\\\\"10-12, 46-49\\\\\\\"."
+description: "Use when reasoning about pagination — Any description of pages that is not separated into pageStart and pageEnd; for example, \"1-6, 9, 55\" or \"10-12, 46-49\"."
 atomPath: pagination
 coordinate: "pagination · 5/round · 6f44d843"
 contentUuid: "b8ec4ecf-384e-5c40-b12e-b50b814a19eb"

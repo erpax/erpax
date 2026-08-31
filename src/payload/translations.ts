@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "payload",
-    "uuid": "e73a5077-1054-8169-a299-8e4dd6444ed9",
+    "uuid": "908ccaf3-eccf-8f6b-896b-1526cbe9f4a4",
     "words": [
       "payload"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the matter coil — Payload is the half of every atom that becomes a collection, fields, hooks, access, and a database table; the index.ts twin the SKILL.md form is bound to by content-uuid.",
-    "uuid": "7395ea4c-dea0-83f6-8ce6-32fd056d55f1",
+    "uuid": "05c39072-c90c-8331-bc11-82ee362a85f1",
     "words": [
       "use",
       "when",

@@ -1,6 +1,6 @@
 ---
 name: varies
-description: "Use when reasoning about varies — Indicates the property or properties by which the variants in a ProductGroup vary, e.g. their size, color etc. Schema.org properties can be referenced by their short name e.g. \\\\\\\"col"
+description: "Use when reasoning about varies — Indicates the property or properties by which the variants in a ProductGroup vary, e.g. their size, color etc. Schema.org properties can be referenced by their short name e.g. \"col"
 atomPath: varies
 coordinate: "varies · 7/descent · 4f0890a2"
 contentUuid: "735825e4-355e-56c0-802d-2769da00df72"

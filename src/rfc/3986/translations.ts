@@ -16,7 +16,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing RFC 3986 — Uniform Resource Identifier.",
-    "uuid": "0ce6e768-2b11-8804-87f7-7b58519073f1",
+    "uuid": "0f53d908-a1d6-894a-a6bf-0b84cdc9e5a7",
     "words": [
       "use",
       "when",

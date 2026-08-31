@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ledger",
-    "uuid": "8e865d7f-5a59-80b1-9786-b0905a4bd1bc",
+    "uuid": "ba830fbc-f2e3-85fc-8486-d929d5d6c3bd",
     "words": [
       "ledger"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about accounting/ledger — token ledger — path-keyed postings and balance by path.",
-    "uuid": "e2879e44-ed52-8ae9-abdb-88e18281a577",
+    "uuid": "95125bb2-52c1-89cb-9165-367a669d62ed",
     "words": [
       "use",
       "when",

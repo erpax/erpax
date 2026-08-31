@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "escalation",
-    "uuid": "65537797-ab0e-8538-a846-983914204405",
+    "uuid": "4426fd49-c61d-8d96-8a5f-b9b85318746b",
     "words": [
       "escalation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a ticket, issue, or complaint requires urgency upgrade — SLA breach, priority elevation, management review, or handoff to higher authority. The action of moving a matter up the hierarchy by severity/urgency.",
-    "uuid": "dec95ce3-3472-8fa2-9298-630b2b794b7c",
+    "uuid": "3d74f81b-7cc2-830f-be3a-c854df822b38",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "quaternary",
-    "uuid": "4af333b5-6089-8270-ae79-507fc6fbb853",
+    "uuid": "f3957875-0cca-8888-86db-f33a74a9efe0",
     "words": [
       "quaternary"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when enforcing the four-file folder law — an atom folder holds only SKILL.md, index.ts, test.ts, translations.ts; any other file is a violation to collide into its own atom.",
-    "uuid": "50317031-2366-86bc-8c95-528170f5d311",
+    "uuid": "3246e5e1-04b9-856b-a60f-569092e7dc4d",
     "words": [
       "use",
       "when",

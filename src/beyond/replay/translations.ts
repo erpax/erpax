@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "replay",
-    "uuid": "b812a842-15be-857d-a43e-d67958208b65",
+    "uuid": "7ae1239c-db95-8171-b94b-dd09ac12fcf5",
     "words": [
       "replay"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when an auditor demands \\\\\\\"show me how this number was computed and reproduce it\\\\\\\" — deterministic replay re-runs a chain step and proves byte-identical output by hashing the AgentEffect sequence (timestamps stripped) and matching it against the leaf's recorded outputHash.",
-    "uuid": "2b6374a8-ae48-87a9-9cf2-d6b8f68ab6fc",
+    "source": "Use when an auditor demands \\\"show me how this number was computed and reproduce it\\\" — deterministic replay re-runs a chain step and proves byte-identical output by hashing the AgentEffect sequence (timestamps stripped) and matching it against the leaf's recorded outputHash.",
+    "uuid": "4d1b9a1a-a705-8a8f-b2b4-20dfe0d6f6f4",
     "words": [
       "use",
       "when",
@@ -65,7 +65,7 @@ export const translations: readonly Translation[] = [
       "outputhash"
     ],
     "values": {
-      "en": "Use when an auditor demands \\\\\\\"show me how this number was computed and reproduce it\\\\\\\" — deterministic replay re-runs a chain step and proves byte-identical output by hashing the AgentEffect sequence (timestamps stripped) and matching it against the leaf's recorded outputHash."
+      "en": "Use when an auditor demands \\\"show me how this number was computed and reproduce it\\\" — deterministic replay re-runs a chain step and proves byte-identical output by hashing the AgentEffect sequence (timestamps stripped) and matching it against the leaf's recorded outputHash."
     }
   }
 ]

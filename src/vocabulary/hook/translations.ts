@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hook",
-    "uuid": "b02eac54-b849-832b-b8d7-52c5080e8fa2",
+    "uuid": "b822b44b-73dc-8fc4-9956-399b140f8a6c",
     "words": [
       "hook"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one hook — the singular model of the hooks collection (the plural store); a lifecycle gateway where logic runs on a record event.",
-    "uuid": "c63378fb-d747-8c3a-814c-a77881c42001",
+    "uuid": "dd9b3df4-78fa-83aa-8699-866ee98f9e6a",
     "words": [
       "use",
       "when",

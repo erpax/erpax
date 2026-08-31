@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "normalize",
-    "uuid": "b1223e67-f37d-8793-8e14-46a01219c56e",
+    "uuid": "4d9fa7a7-60df-8dec-9d61-ae0ae5777820",
     "words": [
       "normalize"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when rewriting cross-unit relative imports to the uniform @/ alias before a move — so the single-word-folder migration becomes a pure @/old→@/new remap with no relative-depth that silently breaks. The address-law dry-clean; the matter is index.mjs.",
-    "uuid": "d3e3f8ea-f8d1-88ea-9d67-ecfc951d3a82",
+    "uuid": "7750e84c-cb57-8859-a242-dd32a1837de7",
     "words": [
       "use",
       "when",

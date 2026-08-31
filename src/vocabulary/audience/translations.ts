@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "audience",
-    "uuid": "1ad5f4a5-8b01-8137-b548-79efa1d40c2f",
+    "uuid": "e028744c-b7a4-8867-940b-7cb7c289bc8e",
     "words": [
       "audience"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about audience — Intended audience for an item, i.e. the group for whom the item was created.",
-    "uuid": "b73fa305-2cf3-861d-b36f-585618cd07c2",
+    "uuid": "78b26c24-c2bd-82f9-a225-afad4cc17e75",
     "words": [
       "use",
       "when",

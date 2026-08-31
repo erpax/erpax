@@ -1,6 +1,6 @@
 ---
 name: triggered
-description: "Use when checking whether every skill leads with its Use-when trigger — the computed convention that a SKILL.md frontmatter description starts with \\\\\\\\\\\\\\\"Use when\\\\\\\\\\\\\\\", measured live as coverage = triggered / total over the real tree."
+description: "Use when checking whether every skill leads with its Use-when trigger — the computed convention that a SKILL.md frontmatter description starts with \"Use when\", measured live as coverage = triggered / total over the real tree."
 atomPath: "convention/triggered"
 coordinate: "convention/triggered · 4/weave · 80cfb119"
 contentUuid: "46d202d4-c18d-5bae-980e-23854b61bfea"

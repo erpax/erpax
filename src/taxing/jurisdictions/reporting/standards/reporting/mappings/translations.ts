@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mappings",
-    "uuid": "94499806-5665-8040-900d-dddbe4a62816",
+    "uuid": "bb993494-7c35-8325-b82e-89064ec4756a",
     "words": [
       "mappings"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when translating elements across reporting frameworks — account/line-item/disclosure/metric mappings between a source and target standard (XBRL-GL, IFRS-Taxonomy, SAF-T). The cross-standard element-mapping node.",
-    "uuid": "c3a2e4f9-ac1d-85f8-9535-0eba2cbf829d",
+    "uuid": "3e11f7fa-797a-8758-98a0-087455cad832",
     "words": [
       "use",
       "when",

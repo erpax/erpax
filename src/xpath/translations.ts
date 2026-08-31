@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "xpath",
-    "uuid": "fa1446e3-1641-8b28-88b0-bac299f4881d",
+    "uuid": "516b5596-59b3-80b1-aa89-04f59e1b93d3",
     "words": [
       "xpath"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about xpath — An XPath, e.g. of a SpeakableSpecification or WebPageElement. In the latter case, multiple matches within a page can constitute a single conceptual \\\\\\\"Web page element\\\\\\\".",
-    "uuid": "21f74c0e-a7cf-86d4-8196-31177d4bfdca",
+    "source": "Use when reasoning about xpath — An XPath, e.g. of a SpeakableSpecification or WebPageElement. In the latter case, multiple matches within a page can constitute a single conceptual \\\"Web page element\\\".",
+    "uuid": "2f94202d-393d-8846-aba2-eb8d27ebe36f",
     "words": [
       "use",
       "when",
@@ -53,7 +53,7 @@ export const translations: readonly Translation[] = [
       "element"
     ],
     "values": {
-      "en": "Use when reasoning about xpath — An XPath, e.g. of a SpeakableSpecification or WebPageElement. In the latter case, multiple matches within a page can constitute a single conceptual \\\\\\\"Web page element\\\\\\\"."
+      "en": "Use when reasoning about xpath — An XPath, e.g. of a SpeakableSpecification or WebPageElement. In the latter case, multiple matches within a page can constitute a single conceptual \\\"Web page element\\\"."
     }
   }
 ]

@@ -16,7 +16,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing ISO 4217 — Currency codes.",
-    "uuid": "6388331e-8378-8f80-8950-406755895727",
+    "uuid": "1bc36bb8-cffe-8288-922f-194599434d70",
     "words": [
       "use",
       "when",

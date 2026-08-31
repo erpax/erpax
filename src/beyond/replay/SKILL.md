@@ -1,6 +1,6 @@
 ---
 name: replay
-description: "Use when an auditor demands \\\\\\\\\\\\\\\"show me how this number was computed and reproduce it\\\\\\\\\\\\\\\" — deterministic replay re-runs a chain step and proves byte-identical output by hashing the AgentEffect sequence (timestamps stripped) and matching it against the leaf's recorded outputHash."
+description: "Use when an auditor demands \"show me how this number was computed and reproduce it\" — deterministic replay re-runs a chain step and proves byte-identical output by hashing the AgentEffect sequence (timestamps stripped) and matching it against the leaf's recorded outputHash."
 atomPath: "beyond/replay"
 coordinate: "beyond/replay · 2/share · c3989a49"
 contentUuid: "262b12f5-3336-5b63-b6c1-1b00e7eebe37"

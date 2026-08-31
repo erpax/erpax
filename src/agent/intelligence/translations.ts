@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "intelligence",
-    "uuid": "d93107c2-2b20-8f44-980a-88769490ff4a",
+    "uuid": "6246db7a-7f53-8aed-bbf5-f8d3b5e2f0a8",
     "words": [
       "intelligence"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Self-improving agent intelligence via measure, fold, seal, and balance cycles.",
-    "uuid": "9d6705c4-4d23-88ec-8186-b249e2eb11f4",
+    "source": "Use when reasoning about intelligence — Self-improving agent intelligence via measure, fold, seal, and balance cycles.",
+    "uuid": "93c9846e-e936-85e6-b802-db3b6e64bc8d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "intelligence",
       "self",
       "improving",
       "agent",
@@ -33,7 +38,7 @@ export const translations: readonly Translation[] = [
       "cycles"
     ],
     "values": {
-      "en": "Self-improving agent intelligence via measure, fold, seal, and balance cycles."
+      "en": "Use when reasoning about intelligence — Self-improving agent intelligence via measure, fold, seal, and balance cycles."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dentist",
-    "uuid": "5e0d83af-cb1c-81ae-92bc-0ba20c4c8d6b",
+    "uuid": "b4f473fa-cc7c-883e-86c8-839e952f3f3d",
     "words": [
       "dentist"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about dentist — A dentist.",
-    "uuid": "ac4457e2-18be-88fd-b5a7-90f49fc70d6b",
+    "uuid": "acf13eb9-e4cb-87b5-858b-e5b99f18260c",
     "words": [
       "use",
       "when",

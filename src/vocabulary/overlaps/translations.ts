@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "overlaps",
-    "uuid": "6f7af301-cb04-87d2-a2e8-6ac597c073a8",
+    "uuid": "1be643d1-d6d3-8a37-84be-2ee1a692a0c8",
     "words": [
       "overlaps"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about overlaps as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "afbd8eff-db62-8b14-ac2a-6b029fc900a0",
+    "uuid": "f996b4d6-ef80-8edf-ac12-bc0db3036cf5",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "branch",
-    "uuid": "cfe86a6e-179c-80c0-813e-5785204b7e0c",
+    "uuid": "3d57bc45-f5da-8042-b0f3-fa72ff8537d1",
     "words": [
       "branch"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about branch — The branches that delineate from the nerve bundle. Not to be confused with branchOf.",
-    "uuid": "0ae4fd1f-cdf1-838f-be29-3e5255b04f53",
+    "uuid": "df527aa3-e15e-88f1-909e-4cc74ff85f64",
     "words": [
       "use",
       "when",

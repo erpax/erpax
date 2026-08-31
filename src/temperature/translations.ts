@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "temperature",
-    "uuid": "7d223ee4-dd62-8d93-8ccd-c707bf7be578",
+    "uuid": "fd8204ca-9a37-8f52-8aaf-2acf39dbce92",
     "words": [
       "temperature"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about temperature as the exchange rate between energy and order (1/T = ∂S/∂E). It sets level populations via the Boltzmann factor e^(−E/kT), normalised by the partition function Z = Σ e^(−Eₙ/kT). Cold (T→0) falls to the ground state; hot (T→∞) makes every level equally likely (maximum entropy). The equilibrium distribution pᵢ = e^(−Eᵢ/kT)/Z is the max-entropy distribution at fixed average energy — the balance the ledger settles to.",
-    "uuid": "8a359395-fe6e-8cda-8afe-b19badebb41d",
+    "uuid": "b11abf0a-5f5d-8533-aec4-16f01bfbad43",
     "words": [
       "use",
       "when",

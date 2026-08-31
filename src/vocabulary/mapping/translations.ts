@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mapping",
-    "uuid": "f33d48b4-5391-8d0c-831b-6bc5dcc662b1",
+    "uuid": "dd9faedc-2829-8748-82bc-d19183285b03",
     "words": [
       "mapping"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one mapping — the singular model of the mappings collection (the plural store); a correspondence from one set of values to another.",
-    "uuid": "f15713be-aa98-879b-8960-45ea624b8dce",
+    "uuid": "1f268d9b-e840-8c6d-8268-46e766b7e88f",
     "words": [
       "use",
       "when",

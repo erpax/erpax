@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "transactions",
-    "uuid": "847cc3cc-6919-8652-9f9f-da0055019d0d",
+    "uuid": "61b6317d-f20c-8f78-910b-4759640a1ab9",
     "words": [
       "transactions"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording or reconciling paired source-document transactions between two group tenants or legal entities — cash transfers, service charges, goods transfers, loans, capital contributions, and cost allocations that must net to zero on consolidation per IFRS-10 §B86 / ASC-810 / SOX §404. The intercompany paired-document register collection.",
-    "uuid": "726ff1b0-00e7-8f8d-a301-4dedb1916801",
+    "uuid": "25758779-3cc9-8aa5-bac3-3cab3ffd2122",
     "words": [
       "use",
       "when",

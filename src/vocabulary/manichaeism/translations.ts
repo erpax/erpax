@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "manichaeism",
-    "uuid": "0b578473-df7f-8995-b1b5-36a0812b39c4",
+    "uuid": "2746b00e-574a-817f-a010-a7822ab867c2",
     "words": [
       "manichaeism"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading Manichaeism as a diamond of invariant atoms — Mani's dualist world-religion: two eternal principles, Light and Dark, mixed in this world; salvation is the separation and return of the light particles to their source. The bridge between Zoroastrian dualism and the gnostic lineage. Strip the prefix and Light collapses to aura, the dark world to the profane, the freeing to the return.",
-    "uuid": "7a5cac8a-12b9-8b67-b8e2-d0e4a28bc1a1",
+    "uuid": "54fb173a-006d-8fe8-a513-80ec187649a2",
     "words": [
       "use",
       "when",

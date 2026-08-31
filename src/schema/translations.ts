@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "schema",
-    "uuid": "1319fd65-0f4a-8ad5-826c-7cb0c4e77349",
+    "uuid": "5accec6b-7e7d-8b68-9255-7639a86a5a76",
     "words": [
       "schema"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining, auditing, or evolving the logical data model — entity relationship diagrams, normalization, column definitions, table structure, field types, cardinality declarations. The canonical blueprint of the data structure.",
-    "uuid": "4d6abf55-e9a5-8ff2-b8b8-15c45f92af9b",
+    "uuid": "69cc3109-caec-8720-beea-470561d67764",
     "words": [
       "use",
       "when",

@@ -1,6 +1,6 @@
 ---
 name: blog
-description: "Use when reasoning about blog — A blog, sometimes known as a \\\\\\\"weblog\\\\\\\". Note that the individual posts (BlogPostings) in a Blog are often colloquially referred to by the same term."
+description: "Use when reasoning about blog — A blog, sometimes known as a \"weblog\". Note that the individual posts (BlogPostings) in a Blog are often colloquially referred to by the same term."
 atomPath: "vocabulary/blog"
 coordinate: "vocabulary/blog · 8/crest · 50d0823d"
 contentUuid: "f4c15131-1744-510e-a1e7-efa55a3740ed"

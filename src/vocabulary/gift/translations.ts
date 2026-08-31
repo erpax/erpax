@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gift",
-    "uuid": "0acff3e6-f9c4-82b7-a86c-ee5db5813c85",
+    "uuid": "7f9a51d1-2646-8537-a9e5-f1639f5dee74",
     "words": [
       "gift"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about gift — Indicates whether the offer was accepted as a gift for someone other than the buyer.",
-    "uuid": "888289b2-607e-8017-9dee-c552ebbd69d6",
+    "uuid": "75452344-bac7-8ea1-81b1-1b8a237f9b8d",
     "words": [
       "use",
       "when",

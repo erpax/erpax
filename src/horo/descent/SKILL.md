@@ -1,6 +1,6 @@
 ---
 name: descent
-description: "Use when reasoning about the fifth position of the horo state ring — digit 7, \\\\\\\\\\\\\\\"the wave returns\\\\\\\\\\\\\\\", the binding step where a built flow begins its return (shipped, dispatched, posted out). First of the descent/return arc; nested under horo."
+description: "Use when reasoning about the fifth position of the horo state ring — digit 7, \"the wave returns\", the binding step where a built flow begins its return (shipped, dispatched, posted out). First of the descent/return arc; nested under horo."
 atomPath: "horo/descent"
 coordinate: "horo/descent · 5/round · 7c566d6c"
 contentUuid: "e7e5dcfb-52ad-58fa-8d03-1129f7dcdf1d"

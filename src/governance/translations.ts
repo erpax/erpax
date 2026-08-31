@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "governance",
-    "uuid": "4a14bc37-1603-8ff3-b0ba-9361c52723cc",
+    "uuid": "1744245f-4244-83a1-9820-3accb816d6b3",
     "words": [
       "governance"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the polity decides — tallying ballots into a binding verdict, setting quorum and threshold, or proving the count is unstuffable; the judgment a formal system cannot generate for itself, supplied from outside by the society.",
-    "uuid": "94a6b5f0-5530-8714-b678-0f0bf0365dbf",
+    "uuid": "96dff684-4a84-82b9-95ff-34612f785625",
     "words": [
       "use",
       "when",

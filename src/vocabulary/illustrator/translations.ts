@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "illustrator",
-    "uuid": "a2a11574-aad2-8925-8e9f-dc165e701756",
+    "uuid": "d68179ec-8ae7-8c0a-bec1-7c3440dc7d9b",
     "words": [
       "illustrator"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about illustrator — The illustrator of the book.",
-    "uuid": "82468ae6-fa6d-8fa1-8570-2c257a067419",
+    "uuid": "7ef7c598-9473-8322-bdf5-9f852ba1e066",
     "words": [
       "use",
       "when",

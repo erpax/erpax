@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "palliative",
-    "uuid": "b26b4312-fa94-8ab4-85f1-03bb119d61a3",
+    "uuid": "6ee20e46-fff3-8ba1-b3cf-8f362ca53c51",
     "words": [
       "palliative"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about palliative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "a8f8c497-7183-87c4-961e-962952b15c28",
+    "uuid": "0d767665-13ad-8737-8701-a987a054a117",
     "words": [
       "use",
       "when",

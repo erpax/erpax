@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "casino",
-    "uuid": "82a6de29-7eff-8d12-a5ac-6e60c6631ce8",
+    "uuid": "13f0af25-f6ce-8cb4-be95-ad6f014e1ae3",
     "words": [
       "casino"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about casino — A casino.",
-    "uuid": "a97f2bf3-c354-8376-8934-4796b33dbce4",
+    "uuid": "2d242216-9456-807d-ba57-d6599f50bbbe",
     "words": [
       "use",
       "when",

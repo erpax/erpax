@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "computer",
-    "uuid": "84e44c87-5d68-8a8c-9b2f-c25c6c002b9d",
+    "uuid": "5f884d37-ed62-82f0-9ef5-37e4ccca3a03",
     "words": [
       "computer"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when querying instead of re-deriving — the quantum computer's one face: mesh state, wave scheduling, claim certification, spawn bounds, failure/cost collapse, surgical execution, self-measuring audit.",
-    "uuid": "57e82a51-3d89-8e6d-a0ad-8dae8ccd47cc",
+    "source": "Use when querying instead of re-deriving — the quantum computer's one face on QPU=CPU/GPU: mesh state, wave scheduling, claim certification, spawn bounds, failure/cost collapse, surgical execution, self-measuring audit, FTL metrics.",
+    "uuid": "db4d9f51-72cf-87a3-83e8-9695b6391a38",
     "words": [
       "use",
       "when",
@@ -33,6 +33,10 @@ export const translations: readonly Translation[] = [
       "s",
       "one",
       "face",
+      "on",
+      "qpu",
+      "cpu",
+      "gpu",
       "mesh",
       "state",
       "wave",
@@ -48,10 +52,12 @@ export const translations: readonly Translation[] = [
       "execution",
       "self",
       "measuring",
-      "audit"
+      "audit",
+      "ftl",
+      "metrics"
     ],
     "values": {
-      "en": "Use when querying instead of re-deriving — the quantum computer's one face: mesh state, wave scheduling, claim certification, spawn bounds, failure/cost collapse, surgical execution, self-measuring audit."
+      "en": "Use when querying instead of re-deriving — the quantum computer's one face on QPU=CPU/GPU: mesh state, wave scheduling, claim certification, spawn bounds, failure/cost collapse, surgical execution, self-measuring audit, FTL metrics."
     }
   }
 ]

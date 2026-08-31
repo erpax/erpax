@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "drug",
-    "uuid": "6a9edae6-ba5a-8cd5-ba24-fe48c6e67414",
+    "uuid": "8f1af401-1325-8004-ac2d-c331958aa51d",
     "words": [
       "drug"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about drug — A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism. Here the term drug is used interchangeably with the term medicine altho",
-    "uuid": "4ace3108-7edd-8b70-8d44-17de879c4831",
+    "uuid": "a55df7b3-a65b-835b-8d80-672e18305ecc",
     "words": [
       "use",
       "when",

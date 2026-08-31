@@ -1,6 +1,6 @@
 ---
 name: merge
-description: "Use when reasoning about convergence/federation in erpax — same content ⇒ same id (content-uuid), same (domain×position×element) ⇒ same path; data and structure set-union with no coordination. Federation, dedup, \\\\\\\\\\\\\\\"all agents one erpax\\\\\\\\\\\\\\\"."
+description: "Use when reasoning about convergence/federation in erpax — same content ⇒ same id (content-uuid), same (domain×position×element) ⇒ same path; data and structure set-union with no coordination. Federation, dedup, \"all agents one erpax\"."
 atomPath: merge
 coordinate: "merge · 5/round · 0d2280cd"
 contentUuid: "ffcecad3-2985-557b-93fd-2c3363e510df"

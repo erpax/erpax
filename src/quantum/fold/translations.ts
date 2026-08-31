@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fold",
-    "uuid": "ce5a9b31-6d1a-8c67-9eaf-ebde520f9b8e",
+    "uuid": "456181e4-c8c0-8faf-84a6-098707e46a7e",
     "words": [
       "fold"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Double fold is mandatory for quantum mentality: word ⊗ digit; 2D documents present both sheets until seal.",
-    "uuid": "daa8b595-1bef-8ea2-8e4a-d99c049d4e54",
+    "source": "Use when reasoning about fold — Double fold is mandatory for quantum mentality: word ⊗ digit; 2D documents present both sheets until seal.",
+    "uuid": "8d5fc119-8d5d-8cf6-9a98-7cf3e6b15ee4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "fold",
       "double",
       "fold",
       "is",
@@ -38,7 +43,7 @@ export const translations: readonly Translation[] = [
       "seal"
     ],
     "values": {
-      "en": "Double fold is mandatory for quantum mentality: word ⊗ digit; 2D documents present both sheets until seal."
+      "en": "Use when reasoning about fold — Double fold is mandatory for quantum mentality: word ⊗ digit; 2D documents present both sheets until seal."
     }
   }
 ]

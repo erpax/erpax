@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "checklist",
-    "uuid": "4aa1ba42-3859-8c15-a0f5-df0dac0cf63e",
+    "uuid": "19278819-5df1-8f3f-bb31-54a244790c81",
     "words": [
       "checklist"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one checklist — the singular model of the checklists collection (the plural store); an ordered set of items to verify or complete.",
-    "uuid": "6fc84fac-f256-84a6-ab56-3eec7c0c489c",
+    "uuid": "c510c9f8-69c5-86f5-8bcb-bfa5dc216c14",
     "words": [
       "use",
       "when",

@@ -1,6 +1,6 @@
 ---
 name: credited
-description: "Use when reasoning about credited — The group the release is credited to if different than the byArtist. For example, Red and Blue is credited to \\\\\\\\\\\\\\\"Stefani Germanotta Band\\\\\\\\\\\\\\\", but by Lady Gaga."
+description: "Use when reasoning about credited — The group the release is credited to if different than the byArtist. For example, Red and Blue is credited to \"Stefani Germanotta Band\", but by Lady Gaga."
 atomPath: credited
 coordinate: "credited · 1/base · dc700d7a"
 contentUuid: "cda39006-2d39-5dbf-8554-4a6903d952bc"

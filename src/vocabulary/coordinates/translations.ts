@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "coordinates",
-    "uuid": "0224215d-ad91-887e-b234-e23a9be2c08b",
+    "uuid": "6776d76f-28e8-86fd-918f-f32e8bcd520a",
     "words": [
       "coordinates"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about coordinates as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "0c0cf3a3-94a8-81bd-8677-4d38792d875a",
+    "uuid": "761e1959-0684-884f-80bc-1cf5e658e112",
     "words": [
       "use",
       "when",

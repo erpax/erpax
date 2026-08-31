@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "maxtampercost",
-    "uuid": "a37ab31d-dd8e-8d43-8af9-38cb64074d3f",
+    "uuid": "0321e41d-8597-8a87-8a38-bbcdfc9ab392",
     "words": [
       "maxtampercost"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about max tamper-cost — the weakest-link minimum across all dimensions; alias for analytics/max-tamper-cost lever vocabulary.",
-    "uuid": "7b5f63ca-ec57-848c-bc0d-e2343cd56692",
+    "uuid": "72c24ec5-4fca-8eb2-a3e6-31eb140f02c2",
     "words": [
       "use",
       "when",

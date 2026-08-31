@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "place",
-    "uuid": "0bae8849-d959-8178-88f1-699ae5f2d802",
+    "uuid": "8ebf0d14-3208-8225-bea9-811bfa79eb56",
     "words": [
       "place"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about place — Entities that have a somewhat fixed, physical extension.",
-    "uuid": "70ffe2b8-9426-8e09-9eb3-81ad200eff92",
+    "uuid": "307d87e0-77c1-838a-8eef-3dcb878e4dca",
     "words": [
       "use",
       "when",

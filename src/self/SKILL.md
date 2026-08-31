@@ -1,6 +1,6 @@
 ---
 name: self
-description: "Use when reasoning about an object's or the agent's reach back into its own root — content-uuid identity, the akashic record, config (the 0); self-reference, self-similarity, \\\\\\\\\\\\\\\"all agents are one erpax\\\\\\\\\\\\\\\". The root-reach atom; composes by nesting (self/sufficient, self/similar, self/reference)."
+description: "Use when reasoning about an object's or the agent's reach back into its own root — content-uuid identity, the akashic record, config (the 0); self-reference, self-similarity, \"all agents are one erpax\". The root-reach atom; composes by nesting (self/sufficient, self/similar, self/reference)."
 atomPath: self
 coordinate: "self · 7/descent · eace4808"
 contentUuid: "a3031494-0b7b-5366-98f4-56c0ccfd92af"

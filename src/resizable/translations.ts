@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "resizable",
-    "uuid": "1c9071a9-d9eb-80e3-b029-523bda9b683f",
+    "uuid": "6bf8c14c-da80-8826-9401-3b0dd69bc361",
     "words": [
       "resizable"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about resizable — Whether the 3DModel allows resizing. For example, room layout applications often do not allow 3DModel elements to be resized to reflect reality.",
-    "uuid": "5317bd7d-9b62-8c5f-ba2c-1488b911cd26",
+    "uuid": "2c529ea1-f1cc-86ae-b884-76fffc613a9a",
     "words": [
       "use",
       "when",

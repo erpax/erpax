@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tool",
-    "uuid": "0a757dc1-5bdb-83a0-8f96-9abf775b795e",
+    "uuid": "1dad60e0-7d03-8320-91b9-0c3c5d703a96",
     "words": [
       "tool"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when assembling the MCP tool surface from per-area builders — each area file is self-contained (own I18N, zod schemas, handlers) and exports one buildXxxTools factory whose tools all carry the erpax.<area>.* name prefix.",
-    "uuid": "7d8b1a98-2049-8602-843b-7b34346827c9",
+    "uuid": "9be7b6a2-1760-86ff-a602-5c4a04e89264",
     "words": [
       "use",
       "when",

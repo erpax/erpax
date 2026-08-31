@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "security",
-    "uuid": "9137e0ee-3e0b-87b4-b3eb-90d4f80a4e2b",
+    "uuid": "90d1733a-83c4-8eb7-a1c4-ba56d8c821af",
     "words": [
       "security"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Parse allowlist and security monitor for agent inputs (fail closed).",
-    "uuid": "a774c607-bf0a-813f-a5da-921d34a99dda",
+    "source": "Use when reasoning about security — Parse allowlist and security monitor for agent inputs (fail closed).",
+    "uuid": "6a778235-c954-8403-918c-ad680856b98c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "security",
       "parse",
       "allowlist",
       "and",
@@ -32,7 +37,7 @@ export const translations: readonly Translation[] = [
       "closed"
     ],
     "values": {
-      "en": "Parse allowlist and security monitor for agent inputs (fail closed)."
+      "en": "Use when reasoning about security — Parse allowlist and security monitor for agent inputs (fail closed)."
     }
   }
 ]

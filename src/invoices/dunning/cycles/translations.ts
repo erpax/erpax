@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cycles",
-    "uuid": "088e98cb-2442-843e-871f-425b1e215f24",
+    "uuid": "857c9433-974f-899d-92e4-c0fd4cb4c619",
     "words": [
       "cycles"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tracking or auditing the collections process for an overdue invoice — reminder→demand→legal-handover→write-off stages, ECL allowance evidence (IFRS 9 §5.5 / ASC 326-20 CECL), manual overrides and SOX §404 bad-debt evidence. The dunning-cycles collection.",
-    "uuid": "fe1bb212-9a97-8dfe-bfe3-64a10d7e70e2",
+    "uuid": "32fb7441-e69b-85af-8373-a48e59f820fb",
     "words": [
       "use",
       "when",

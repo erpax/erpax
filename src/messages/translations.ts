@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "messages",
-    "uuid": "fed6a730-c75e-8054-942a-e5ff63da423b",
+    "uuid": "d2d16593-84b1-85a7-9174-1ffa014d790c",
     "words": [
       "messages"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when sending or querying internal addressed messages between users — subject/body, priority (high/normal/low), multi-recipient addressing, threaded replies via parentMessage, optional attachment to invoices/customers/vendors/orders, and read-at tracking. The internal user-to-user messaging collection.",
-    "uuid": "a4eff997-50e0-8943-8d77-6cb43f78950e",
+    "uuid": "92a77192-55cc-821a-943e-fd61a697ac58",
     "words": [
       "use",
       "when",

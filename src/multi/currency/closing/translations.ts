@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "closing",
-    "uuid": "a3fe5250-53b0-8f15-983c-ca2bb6f7c222",
+    "uuid": "90d675b7-c99d-8b09-80d5-b1fe87a2d864",
     "words": [
       "closing"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing Multi-Currency Closing Standard.",
-    "uuid": "29660d58-a6fa-83ab-81a8-838813c9297d",
+    "uuid": "a790bd26-3e2e-809d-b64f-8633c3307731",
     "words": [
       "use",
       "when",

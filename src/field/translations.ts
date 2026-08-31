@@ -6,19 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "fields",
-    "uuid": "53ab2ad0-77f1-841b-84c4-fde4ba2f3b61",
+    "source": "field",
+    "uuid": "b8ec429b-9c51-8b84-8b35-c40847d7b692",
     "words": [
-      "fields"
+      "field"
     ],
     "values": {
-      "en": "fields"
+      "en": "field"
     }
   },
   {
     "key": "description",
     "source": "Use when defining or debugging Payload fields — choosing a field type, shared field props (name, required, index, unique, defaultValue, validate, access, hooks, admin), relationships, arrays/blocks/groups/tabs, selects, or virtual/join fields.",
-    "uuid": "264e2d55-6c9a-8f0d-b4fa-09973598f425",
+    "uuid": "813c0a30-0b05-8c1e-a694-ee28778c560d",
     "words": [
       "use",
       "when",

@@ -1,6 +1,6 @@
 ---
 name: bindings
-description: "Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindings — D1, R2, KV, Durable Objects, Queues, Workers AI, Vectorize, Analytics Engine, Browser, service self-reference, Hyperdrive, cron — or when a binding \\\\\\\"works in config but fails at runtime\\\\\\\" (e.g. \\\\\\\"no such Durable Object class is exported from the worker\\\\\\\"). The map of binding ↔ capability ↔ cost lever ↔ gap for the self-managed edge app."
+description: "Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindings — D1, R2, KV, Durable Objects, Queues, Workers AI, Vectorize, Analytics Engine, Browser, service self-reference, Hyperdrive, cron — or when a binding \"works in config but fails at runtime\" (e.g. \"no such Durable Object class is exported from the worker\"). The map of binding ↔ capability ↔ cost lever ↔ gap for the self-managed edge app."
 atomPath: "vocabulary/bindings"
 coordinate: "vocabulary/bindings · 2/share · b5e963ee"
 contentUuid: "bbaaa022-1be0-5352-801f-8496d2001e0c"
