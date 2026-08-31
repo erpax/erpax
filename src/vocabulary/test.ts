@@ -29,7 +29,11 @@ describe('vocabulary — every word from the shared vocabulary (0 entropy)', () 
   // with its computed solution attached; the ceiling ONLY ratchets DOWN as strays are grounded
   // (vocab-gen extends the vocabulary, or the atom is renamed/merged). Zero is the horizon — the
   // maximum-tamper-cost state where every word is grounded. Baseline measured 2026-07-26.
-  const VOCAB_ENTROPY_CEILING = 545
+  // 545 → 0. The 610 flagged words were never the corpus's: words.ts had been emitted on a machine
+  // where its declared dictionary source was missing, so the shared set held schema.org and standard
+  // codes and no English roots — `ledger`, `debit`, `algebra`, `wave` read as ungrounded. Re-emitted from
+  // all its sources (2,943 roots), every atom grounds. Zero is a theorem now, not a ceiling to approach.
+  const VOCAB_ENTROPY_CEILING = 0
   it('vocabulary entropy ratchets toward zero (down-only)', () => {
     const r = audit(UUID_MATRIX_NODES.map((n) => n.atom))
     if (r.flagged.length > VOCAB_ENTROPY_CEILING) {

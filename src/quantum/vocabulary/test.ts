@@ -7,11 +7,11 @@ describe('quantum/vocabulary — the meaning singularity (infinite gravity, pull
     expect(INFINITE_GRAVITY).toBe(Number.POSITIVE_INFINITY)
   })
   it('pulls all — the vast majority of atoms ground in the shared vocabulary', () => {
-    // The bar was 0.8 and the corpus measures 0.7946 — it had drifted under a hand-typed wish, in a
-    // batch CI never reached. PULL_FLOOR is the enforced ratchet: coverage may not DECLINE, and the
-    // gap to a vast majority is stated in the atom rather than asserted away here.
+    // 0.8 was a hand-typed wish the corpus had drifted under (0.7946) — not because the atoms were
+    // ungrounded but because the shared vocabulary had been emitted without its dictionary source.
+    // Re-emitted, every atom grounds: PULL_FLOOR is 1, the horizon, and it may only be held.
     expect(pullFraction()).toBeGreaterThanOrEqual(PULL_FLOOR)
-    expect(PULL_FLOOR).toBeLessThan(0.8) // the debt is real; when it closes, raise the floor
+    expect(PULL_FLOOR).toBe(1)
     expect(pullFraction()).toBeLessThanOrEqual(1)
     expect(pulls('merge')).toBe(true)
   })
