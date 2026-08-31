@@ -33,9 +33,16 @@ long as nobody weighed the artifact.
   there is no acceptable number of folds that fold nothing.
 - **`foldWeight`** — what each fold keeps out, raw and gzipped, largest first. It is
   what a stale fold costs, in the units Cloudflare bills.
-- **`workerBudget` / `assertWorkerFitsBudget`** — the built artifact against the paid
-  `10 MiB` compressed ceiling, naming the heaviest modules. Nothing weighed the Worker
-  before; the first measurement was the API error.
+- **`workerBudget` / `assertWorkerFitsBudget`** — the packed artifact against the paid
+  `10 MiB` compressed ceiling. Nothing weighed the Worker before; the first measurement
+  was the API error. It reads the bundle `PACK_COMMAND` writes and gzips that one file,
+  which is why it agrees with wrangler to 12 bytes.
+
+  It is deliberately **NOT** on the deploy chain. Putting it there made the builder bundle
+  the Worker twice — a `--dry-run` pack and then the upload — doubling peak memory and disk
+  in an environment nothing here can measure. A gate is worth a fast local answer, never a
+  second failure mode on the path it is supposed to protect. Run it beside a build:
+  `pnpm erpax deploy fold`.
 
 `next.config` imports `PRODUCTION_FOLDS` and drives the swaps from it, so the patterns
 have **one home** — the registry the test re-derives, never a second copy in a config.

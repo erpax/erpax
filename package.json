@@ -13,7 +13,7 @@
     "build": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts && cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=tsx/esm --import=./src/css/load-hook.mjs\" payload generate:types && cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=tsx/esm --import=./src/css/load-hook.mjs\" payload generate:importmap && pnpm build:next",
     "postbuild": "next-sitemap --config next-sitemap.config.cjs",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "cross-env NODE_ENV=production PAYLOAD_SECRET=ignore NODE_OPTIONS=\"--no-deprecation --import=tsx/esm --import=./src/css/load-hook.mjs\" payload migrate && wrangler d1 execute D1 --command 'PRAGMA optimize' --remote && opennextjs-cloudflare build && node scripts/cleanup-ui-assets.mjs && wrangler deploy --dry-run --outdir .open-next/packed && pnpm erpax deploy fold && opennextjs-cloudflare deploy",
+    "deploy": "cross-env NODE_ENV=production PAYLOAD_SECRET=ignore NODE_OPTIONS=\"--no-deprecation --import=tsx/esm --import=./src/css/load-hook.mjs\" payload migrate && wrangler d1 execute D1 --command 'PRAGMA optimize' --remote && opennextjs-cloudflare build && node scripts/cleanup-ui-assets.mjs && opennextjs-cloudflare deploy",
     "payload": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=tsx/esm --import=./src/css/load-hook.mjs\" payload",
     "prepare": "node scripts/setup-env.mjs --if-needed && husky",
     "setup": "node scripts/setup-env.mjs",
