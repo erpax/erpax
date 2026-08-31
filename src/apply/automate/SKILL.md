@@ -46,4 +46,4 @@ Composes — [[apply]] · [[apply]]/efficiency · [[apply]]/inventory · [[wave]
 
 @standard erpax — automate orchestration loop
 
-Composes: [[efficiency]].
+Composes: [[vocabulary/efficiency]].

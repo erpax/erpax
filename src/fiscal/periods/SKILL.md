@@ -58,6 +58,9 @@ signatures:
     - stage: uuid
       stageUuid: "0f613ed6-40fd-82a7-a792-5b7bacc61913"
 version: 2
+neighbors:
+  wikilink:
+    - "[[fiscal/periods/earnings/per/shares]]"
 ---
 # fiscal-periods
 
@@ -89,9 +92,3 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 Composes: [[horo/share]] · [[fiscal/periods/fiscal/period/snapshots]] · [[fiscal/periods/post/balance/sheet/events]] · [[fiscal/periods/prior/period/adjustments]] · [[fiscal/periods/tax/periods]].
 
 **Law — [[law]]: a fiscal period moves open → closed → locked and never backward freely — once locked, GL writes are blocked, and every transition requires four-eyes segregation (closer ≠ creator, locker ≠ creator); the accounting calendar is a gated lifecycle, not a free date range.**
-
-## atoms
-
-The children this atom carries — named here so none is an orphan in the fold:
-
-- [[fiscal/periods/earnings/per/shares]]

@@ -63,4 +63,4 @@ Every Payload field named `country` (collections: `Tenants`, `Customers`,
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard ISO-3166-1:2020 country-codes`
 
-Composes: [[iso]] · [[standards]] · [[country]].
+Composes: [[standards]].

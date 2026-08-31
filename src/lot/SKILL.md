@@ -33,6 +33,9 @@ signatures:
     - stage: uuid
       stageUuid: "49aef35d-1343-8b56-9675-00b0f2e60a71"
 version: 2
+neighbors:
+  wikilink:
+    - "[[lot/work/phases]]"
 ---
 # lot — the model of one [[lots]] row
 
@@ -41,9 +44,3 @@ A tracked batch of like units produced or handled together. The singular model w
 **Law — [[law]]: a lot is the singular model of one row — a tracked batch of like units produced or handled together — whose plural store is the [[lots]] collection ([[balance]]: every collection has its model).**
 
 Composes [[lots]] · [[manufacturing]] · [[balance]].
-
-## atoms
-
-The children this atom carries — named here so none is an orphan in the fold:
-
-- [[lot/work/phases]]

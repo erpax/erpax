@@ -54,6 +54,11 @@ quantum:
     computationUuid: "b08c8a38-0f5b-8ad1-a294-c354bf8f09c5"
     contentUuid: "bad68bae-1620-51bf-aa11-41d813017bd4"
 version: 2
+neighbors:
+  wikilink:
+    - "[[quantum/ftl/constants]]"
+    - "[[quantum/ftl/crack]]"
+    - "[[quantum/ftl/metrics]]"
 ---
 # quantum/ftl
 
@@ -77,11 +82,3 @@ version: 2
 Composes [[quantum/computer]] · [[quantum/chat]] · [[algebra]] · [[wave/feed]].
 
 <sub>content-uuid `bad68bae-1620-51bf-aa11-41d813017bd4` · account `quantum/ftl` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
-
-## atoms
-
-The children this atom carries — named here so none is an orphan in the fold:
-
-- [[quantum/ftl/constants]]
-- [[quantum/ftl/crack]]
-- [[quantum/ftl/metrics]]

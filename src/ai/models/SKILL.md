@@ -78,4 +78,4 @@ gate + per-tenant featureGuard + audit).
 Composes: [[ai/suggestions]] · [[access]] · [[hooks]] · [[field]] · [[standard]] · [[identity]].
 See also: [[ai|cloudflare-ai]] (`callWorkersAi` — the single gated entrypoint that consumes the registry).
 
-Composes: [[ai]] · [[ai]] · [[model]].
+Composes: [[ai]] · [[ai]] · [[vocabulary/model]].

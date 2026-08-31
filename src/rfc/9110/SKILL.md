@@ -65,4 +65,4 @@ version: 2
 - ETag / `Last-Modified` validators — Next.js handles those automatically
   for static / revalidated routes; not implemented here.
 
-Composes: [[standards]] · [[http]].
+Composes: [[standards]].

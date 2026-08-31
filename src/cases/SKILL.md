@@ -36,6 +36,10 @@ signatures:
     - stage: uuid
       stageUuid: "66d31dbf-6b67-8083-985c-c2b18a1a6167"
 version: 2
+neighbors:
+  wikilink:
+    - "[[cases/lifecycle]]"
+    - "[[cases/validator]]"
 ---
 # Cases
 
@@ -71,10 +75,3 @@ The answer-path principle: modelling a matter on this docket IS placing it under
 - **RFC 9562 §5.8** — content-uuid exhibit identity (same content ⇒ same id).
 
 **Law — [[law]]: a case is a docket whose status moves along the closed [[horo]] ring `1·2·4·8·7·5·9` (anything off-ring is rejected); evidence is append-only ([[identity]]) and a matter seals ONLY when a judgment exists — charge ↔ defence balance into one judgment, the [[accounting]] double-entry of [[justice]].**
-
-## atoms
-
-The children this atom carries — named here so none is an orphan in the fold:
-
-- [[cases/lifecycle]]
-- [[cases/validator]]

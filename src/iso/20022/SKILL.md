@@ -113,4 +113,4 @@ Now they all reference the canonical `Camt053Statement` / `Camt053Transaction` t
 - ISO 13616-1:2020 — IBAN structure (consumed via `@/standards/iso-13616`).
 - ISO 9362:2022 — BIC structure (consumed via `@/standards/iso-9362`).
 
-Composes: [[iso]] · [[standards]] · [[money]].
+Composes: [[standards]] · [[money]].

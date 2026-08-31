@@ -96,4 +96,4 @@ log aggregator emits.
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard ISO-19011:2018 audit-trail`
 
-Composes: [[iso]] · [[standards]] · [[audit]].
+Composes: [[standards]].

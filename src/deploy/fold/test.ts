@@ -5,7 +5,6 @@ import { tmpdir } from 'node:os'
 import { dirname, join } from 'node:path'
 import {
   PACKED_WORKER_DIR,
-  PACK_COMMAND,
   PRODUCTION_FOLDS,
   WORKER_LIMIT_BYTES,
   assertFoldsHold,
@@ -123,7 +122,10 @@ describe('deploy/fold — the packed artifact is weighed against the paid ceilin
     expect(workerBudget(root).fits).toBe(true)
   })
 
-  it('the pack command names the directory the budget reads', () => {
-    expect(PACK_COMMAND).toContain(PACKED_WORKER_DIR)
+  it('the packed directory is where the budget looks — not a second spelling of it', () => {
+    // PACKED_WORKER_DIR is the ONE spelling: the budget reads it and the CLI prints the command
+    // around it. A second exported const holding the same command was seal-debt saying nothing new.
+    expect(PACKED_WORKER_DIR).toBe('.open-next/packed')
+    expect(workerBudget(tmp(), PACKED_WORKER_DIR).packed).toBe(false)
   })
 })

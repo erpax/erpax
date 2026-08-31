@@ -78,4 +78,4 @@ Composes: [[fiscal/periods]] · [[accounting]] · [[identity]] · [[proof]] · [
 
 **Law — [[law]]: EPS is earnings over the weighted-average ordinary shares for the period — diluted EPS must reflect every dilutive option/convertible/grant and can never exceed basic, and continuing operations are reported separately from discontinued (IAS-33).**
 
-Composes: [[fiscal]] · [[period]].
+Composes: [[sale/fiscal]].

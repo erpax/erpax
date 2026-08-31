@@ -68,4 +68,4 @@ deployments, swap the `Map<>` for KV / Redis so the limit window is shared.
 - `431 Request Header Fields Too Large` — RFC 6585 §5; not used.
 - `511 Network Authentication Required` — RFC 6585 §6; not used.
 
-Composes: [[standards]] · [[http]].
+Composes: [[standards]].

@@ -89,4 +89,4 @@ The double-entry law is the invariant an ERP exists to guarantee, and it is exac
 
 Composes: [[rules]]/refutable · [[double]] · [[law]].
 
-Composes: [[balance]] · [[ledger]].
+Composes: [[balance]] · [[accounting]].

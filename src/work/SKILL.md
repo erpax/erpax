@@ -34,6 +34,9 @@ signatures:
     - stage: uuid
       stageUuid: "4a350ea7-6162-88ab-8d3a-395bd0b88e2f"
 version: 2
+neighbors:
+  wikilink:
+    - "[[shift]]"
 ---
 # work
 
@@ -48,13 +51,5 @@ Attested in schema.org — CreativeWork · CreativeWorkSeason · CreativeWorkSer
 @standard schema.org — the type vocabulary, collided to single words
 
 ## atoms
-
-Woven here so no member is an orphan — each is reachable from this page and links back out:
-
-- [[shift]]
-
-## atoms
-
-The children this atom carries — named here so none is an orphan in the fold:
 
 - [[work/phases]]

@@ -59,6 +59,9 @@ signatures:
     - stage: uuid
       stageUuid: "49e0ad26-e698-860e-9c23-d437d7b9fb70"
 version: 2
+neighbors:
+  wikilink:
+    - "[[ai/models]]"
 ---
 # ai — the AI services barrel
 
@@ -83,9 +86,3 @@ Industry failure modes (hallucination · audit fragmentation · prompt injection
 - **ISO/IEC 42001:2023** — ai-management-system. Every `callWorkersAi` invocation produces an audit row.
 - **GDPR Art. 22(3)** — right-to-human-intervention. High-risk AI decisions require a human gate; auto-accept is refused.
 - **EU AI Act 2024** — transparency-and-risk-classification. Each model call carries a risk class that drives the decision path.
-
-## atoms
-
-The children this atom carries — named here so none is an orphan in the fold:
-
-- [[ai/models]]

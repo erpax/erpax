@@ -36,6 +36,9 @@ signatures:
     - stage: uuid
       stageUuid: "1d3da05d-66c4-8103-a4b4-bf8f0bbbbcf9"
 version: 2
+neighbors:
+  wikilink:
+    - "[[commerce/pricing]]"
 ---
 # commerce — the transactional-flow plugin (one party, infinite roles)
 
@@ -74,9 +77,3 @@ Composes: [[items/inventory/movements]] · [[payment/methods]] · [[dunning]] ·
 
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard W3C Verifiable Credentials Data Model 2.0 (subscription receipts)`
-
-## atoms
-
-The children this atom carries — named here so none is an orphan in the fold:
-
-- [[commerce/pricing]]

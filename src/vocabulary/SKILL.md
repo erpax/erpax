@@ -41,6 +41,11 @@ signatures:
     - stage: uuid
       stageUuid: "1b1b0df5-5785-82ae-8ede-c8dd16169008"
 version: 2
+neighbors:
+  wikilink:
+    - "[[vocabulary/binding]]"
+    - "[[vocabulary/four]]"
+    - "[[vocabulary/reconciliation]]"
 ---
 # vocabulary — words only from the shared scheme
 
@@ -60,11 +65,3 @@ Matter-twin: `src/vocabulary/index.ts`. Composes [[entropy]] · [[tamper]] · [[
 - `@standard ISO 25964 / SKOS — a controlled vocabulary: terms from one shared scheme`
 
 - ISO 25964 / W3C SKOS — a controlled vocabulary (terms from one shared concept scheme)
-
-## atoms
-
-The children this atom carries — named here so none is an orphan in the fold:
-
-- [[vocabulary/binding]]
-- [[vocabulary/four]]
-- [[vocabulary/reconciliation]]

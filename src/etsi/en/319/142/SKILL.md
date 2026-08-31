@@ -81,4 +81,4 @@ When extending:
 - `@standard ETSI-EN-319-142-1 v1.1.1 pades-baseline-profile`
 - `@standard ISO-32000-1:2008 §12.8 pdf-signature-dictionary`
 
-Composes: [[standards]] · [[signature]].
+Composes: [[standards]].

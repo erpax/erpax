@@ -8,4 +8,4 @@ description: "Quantum FTL metrics — reuse and amortization calculations"
 
 Quantum FTL metrics — reuse and amortization calculations.
 
-Composes: [[quantum/ftl]] · [[quantum]] · [[efficiency]].
+Composes: [[quantum/ftl]] · [[quantum]] · [[vocabulary/efficiency]].

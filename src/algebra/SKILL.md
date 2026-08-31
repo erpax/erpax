@@ -30,6 +30,12 @@ signatures:
     - stage: uuid
       stageUuid: "eae92ab8-5308-80ad-8c4f-f5294efb5cd9"
 version: 2
+neighbors:
+  wikilink:
+    - "[[exact]]"
+neighbors:
+  wikilink:
+    - "[[algebra/constants]]"
 ---
 # algebra — all theorems are algebra only; the theorems draw the movie
 
@@ -66,14 +72,3 @@ Apply a generator and it traces an **orbit** — a sequence of frames. `movie(do
 
 Composes: [[merge]] · [[horo]] · [[navigation]] · [[rosetta]] · [[theorem]] · [[law]].
 
-## atoms
-
-Woven here so no member is an orphan — each is reachable from this page and links back out:
-
-- [[exact]]
-
-## atoms
-
-The children this atom carries — named here so none is an orphan in the fold:
-
-- [[algebra/constants]]

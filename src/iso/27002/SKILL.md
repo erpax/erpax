@@ -125,4 +125,4 @@ Add controls (5.X, 6.X, 7.X, 8.X) as they're cited.
 - `@standard ISO-27002:2022 information-security-controls`
 - `@standard ISO-27001:2022 isms-annex-a-controls`
 
-Composes: [[iso]] · [[standards]] · [[security]].
+Composes: [[standards]].

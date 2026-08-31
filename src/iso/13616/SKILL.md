@@ -59,4 +59,4 @@ Bank-account fields on `BankStatements`, `PaymentMethods`, `Payments`,
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard ISO-13616-1:2020 iban`
 
-Composes: [[iso]] · [[standards]] · [[identity]].
+Composes: [[standards]] · [[identity]].

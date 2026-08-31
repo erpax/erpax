@@ -29,4 +29,4 @@ imports @/horo
 
 <sub>skeleton — run `pnpm erpax corpus refresh` to seal</sub>
 
-Composes: [[cases]] · [[horo]] · [[case]].
+Composes: [[cases]] · [[horo]].

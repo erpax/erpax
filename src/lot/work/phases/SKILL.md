@@ -65,4 +65,4 @@ Matter-twin: `src/lot/work/phases/index.ts`. Composes [[coordinate]] · [[sequen
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard ISO-22400-2:2014 manufacturing-operations efficiency throughput`
 
-Composes: [[lot]] · [[work]] · [[wave]].
+Composes: [[wave]].

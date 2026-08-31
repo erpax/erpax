@@ -68,4 +68,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 
 **Law — [[law]]: each row is a `(granteeUuid, accessRole, targetUuid)` grant per tenant that `checkShare` reads as the read-time access source of truth; every grant/revoke is chain-attested and revocation is a soft flag, never a delete.**
 
-Composes: [[access]] · [[tenant]] · [[role]].
+Composes: [[access]] · [[tenant]].

@@ -35,6 +35,9 @@ signatures:
     - stage: uuid
       stageUuid: "74e7c994-245b-8bec-b4ae-14a92248a24f"
 version: 2
+neighbors:
+  wikilink:
+    - "[[cross/index]]"
 ---
 # cross — the agnostic access factory (the 3·6·9 governing axis)
 
@@ -46,9 +49,3 @@ Matter-twin: `src/cross/index.ts` (`crossAccess` ⊕ `crossAccessSet` · `decide
 
 @standard NIST INCITS-359 role-based-access-control
 @standard ISO 27002 §5.15 access-control + §5.3 segregation-of-duties
-
-## atoms
-
-The children this atom carries — named here so none is an orphan in the fold:
-
-- [[cross/index]]

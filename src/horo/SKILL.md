@@ -33,6 +33,11 @@ signatures:
     - stage: uuid
       stageUuid: "9e9fbb24-fe22-8522-a091-b13e121d6ad3"
 version: 2
+neighbors:
+  wikilink:
+    - "[[horo/arithmetic]]"
+    - "[[horo/constants]]"
+    - "[[horo/ring]]"
 ---
 # horo — the seven-position state ring
 
@@ -143,11 +148,3 @@ The repeated cyclic devotion every tradition keeps time by — the ring's "simpl
 
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard ISO-16:1975 a432-tuning-reference (the anchor; value from position)`
-
-## atoms
-
-The children this atom carries — named here so none is an orphan in the fold:
-
-- [[horo/arithmetic]]
-- [[horo/constants]]
-- [[horo/ring]]

@@ -52,6 +52,10 @@ signatures:
     - stage: uuid
       stageUuid: "16903d4e-a1db-8af6-9ae9-049b635081cb"
 version: 2
+neighbors:
+  wikilink:
+    - "[[anchoring]]"
+    - "[[notification]]"
 ---
 # audit
 
@@ -66,10 +70,3 @@ Composes: [[field]] · [[accounting]] · [[access]] · [[versions]] · [[descrip
 
 - ISO-19011:2018
 - IFRS-IAS-1
-
-## atoms
-
-Woven here so no member is an orphan — each is reachable from this page and links back out:
-
-- [[anchoring]]
-- [[notification]]

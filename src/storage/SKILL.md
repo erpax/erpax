@@ -34,6 +34,9 @@ signatures:
     - stage: uuid
       stageUuid: "1fd6ab69-5754-88b9-9a30-81062af631cd"
 version: 2
+neighbors:
+  wikilink:
+    - "[[archival]]"
 ---
 # storage
 
@@ -46,9 +49,3 @@ Attested in schema.org — SelfStorage · storageRequirements
 **Law — [[law]]: storage is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
 
 @standard schema.org — the type vocabulary, collided to single words
-
-## atoms
-
-Woven here so no member is an orphan — each is reachable from this page and links back out:
-
-- [[archival]]

@@ -59,4 +59,4 @@ Method enumeration (CUP / Resale Price / Cost Plus / TNMM / Profit Split / Other
 - EU DAC-4 — Council Directive (EU) 2016/881 (administrative cooperation in tax — CbCR)
 - OECD Pillar Two GloBE Rules (Model Rules 2021)
 
-Composes: [[standards]] · [[tax]].
+Composes: [[standards]].

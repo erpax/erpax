@@ -36,6 +36,9 @@ signatures:
     - stage: uuid
       stageUuid: "cfa9ff01-d43e-8a67-8e6f-00229ba8e7de"
 version: 2
+neighbors:
+  wikilink:
+    - "[[intercompany/reconciliation]]"
 ---
 # accounting — the universal ledger plugin (anything is accountable)
 
@@ -122,9 +125,3 @@ Composes: [[budget/plannings]] · [[financial/statements]] · [[government/grant
 **Law — [[law]]: wave gaps must → 0 per horo batch before the next wave starts** — `accountingGapsInWaves(cwd)` · `pnpm erpax accounting gaps` · `pnpm erpax rules check --axis accounting-wave`.
 
 **Law — [[law]]: debit and credit meet in balance; every fold meets the same law at seal.** Typography partition (Σdebit − Σcredit = 0), corpus entropy (Σgap − Σseal = netEb), and quantum double fold (wordHalf ⊗ digitHalf = combined128) resolve through `allMeetsInBalance` in `src/accounting/balance/index.ts`; README pivot projects debit·credit · gap·seal · word·digit — **all meet in balance**.
-
-## atoms
-
-Woven here so no member is an orphan — each is reachable from this page and links back out:
-
-- [[intercompany/reconciliation]]

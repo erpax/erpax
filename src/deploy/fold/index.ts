@@ -154,14 +154,8 @@ export function assertFoldsHold(cwd: string = process.cwd()): void {
  */
 export const WORKER_LIMIT_BYTES = 10 * 1024 * 1024
 
-/** The share of the ceiling at which the next feature is the one that crosses it. */
-export const WORKER_WARN_SHARE = 0.9
-
 /** Where `wrangler deploy --dry-run --outdir` puts the exact bundle it would upload. */
 export const PACKED_WORKER_DIR = '.open-next/packed'
-
-/** The command that produces it — one pack, then weighed; never a sum of parts that guesses. */
-export const PACK_COMMAND = `wrangler deploy --dry-run --outdir ${PACKED_WORKER_DIR}`
 
 export interface WorkerBudget {
   readonly packed: boolean
@@ -183,7 +177,7 @@ export interface WorkerBudget {
  * difference in gzip settings.
  *
  * HONEST BOUNDARY: it weighs what is on disk. A stale pack weighs a stale Worker, which
- * is why `PACK_COMMAND` runs immediately before it on the deploy path. The sourcemap
+ * is why the wrangler dry-run pack runs immediately before it. The sourcemap
  * beside it is not uploaded and is not counted.
  */
 export function workerBudget(cwd: string = process.cwd(), dir: string = PACKED_WORKER_DIR): WorkerBudget {
@@ -232,13 +226,15 @@ if (import.meta.url === 'file://' + process.argv[1]) {
     for (const w of weight) console.log(`  ${kib(w.gzip).padStart(11)} gz  ${w.target}`)
     const b = workerBudget()
     if (!b.packed) {
-      console.log(`  (nothing packed to weigh — run \`${PACK_COMMAND}\` after an OpenNext build)`)
+      console.log(`  (nothing packed to weigh — run \`wrangler deploy --dry-run --outdir ${PACKED_WORKER_DIR}\` after an OpenNext build)`)
     } else {
       assertWorkerFitsBudget()
       console.log(
         `✓ worker ${kib(b.gzip)} gz of the ${kib(b.limit)} ceiling — ${(b.share * 100).toFixed(1)}% used, ${kib(b.headroom)} spare`,
       )
-      if (b.share >= WORKER_WARN_SHARE) {
+      // 90% of the ceiling: the next heavy leaf is the one that crosses it. Spelled here, once,
+      // where it is read — an exported constant with a single caller is seal-debt, not a law.
+      if (b.share >= 0.9) {
         console.warn(`! ${(b.share * 100).toFixed(1)}% of the ceiling — the next heavy leaf is the one that crosses it`)
       }
     }

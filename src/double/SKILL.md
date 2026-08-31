@@ -32,6 +32,9 @@ signatures:
     - stage: uuid
       stageUuid: "b3b1fca8-1177-836e-8457-f7293f21560d"
 version: 2
+neighbors:
+  wikilink:
+    - "[[double/entry/validator]]"
 ---
 # double
 
@@ -40,9 +43,3 @@ A schema.org vocabulary word, collided from the schema.org compounds that contai
 **Law — [[law]]: double is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
 
 @standard schema.org — the type vocabulary, collided to single words
-
-## atoms
-
-The children this atom carries — named here so none is an orphan in the fold:
-
-- [[double/entry/validator]]

@@ -64,4 +64,4 @@ etc.) and the `_money/Money` value type.
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard ISO-4217:2015 currency-codes`
 
-Composes: [[iso]] · [[standards]] · [[currency]].
+Composes: [[standards]] · [[currency]].

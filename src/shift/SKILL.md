@@ -50,4 +50,3 @@ Composes: [[shifts]] · [[work/shifts]] · [[employee]] · [[accounting]] · [[e
 
 - ISO-22400-2 (manufacturing operations KPIs — efficiency, presence/produced time)
 
-Composes: [[work]].

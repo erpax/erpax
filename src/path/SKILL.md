@@ -34,6 +34,9 @@ signatures:
     - stage: uuid
       stageUuid: "9e603fa6-f998-8995-851a-7e1c83ef1e1f"
 version: 2
+neighbors:
+  wikilink:
+    - "[[index]]"
 ---
 # path — all meet computationally in THE path
 
@@ -83,9 +86,3 @@ Matter-twin: `src/path/index.ts` (`PATH_SURFACES` · `toAtomPath` · `urlForAtom
 
 @standard schema.org — XPathType vocabulary word (collided via [[sti]])
 @see [[fs]] · [[github]] · [[mcp]] · [[api]] · [[dimension]] · [[integrity]] · [[quantum]] · [[merge]] · [[identity]] · [[accounting]]
-
-## atoms
-
-Woven here so no member is an orphan — each is reachable from this page and links back out:
-
-- [[index]]

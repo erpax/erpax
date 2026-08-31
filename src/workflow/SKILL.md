@@ -39,6 +39,9 @@ signatures:
     - stage: uuid
       stageUuid: "525de210-b38e-82ac-b93c-5c41b1b6f627"
 version: 2
+neighbors:
+  wikilink:
+    - "[[workflow/sealed/selfeducate]]"
 ---
 # process — the running approval chain, BPMN execution made live
 
@@ -66,9 +69,3 @@ Composes: [[workflow/engine]] (the legality gate it drives) · [[flow]] (value/d
 - ISO/IEC 19510:2013 BPMN-2.0
 - Audit: ISO-19011:2018 §6.4.6 audit-evidence-workflow
 - Compliance: SOX §404 internal-controls workflow-execution
-
-## atoms
-
-The children this atom carries — named here so none is an orphan in the fold:
-
-- [[workflow/sealed/selfeducate]]

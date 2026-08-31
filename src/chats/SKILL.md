@@ -64,4 +64,4 @@ Entangled with — [[content]] · [[thing]]
 - RFC 9562 §5.8 content-uuid event-identity (idempotency key)
 - ISO-27001 A.5.23 cloud-service-tenant-isolation (room per tenant)
 
-Composes: [[chat]] · [[agent]] · [[tenant]].
+Composes: [[agent/chat]] · [[agent]] · [[tenant]].

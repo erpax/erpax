@@ -44,6 +44,31 @@ signatures:
     - stage: uuid
       stageUuid: "20b0ead5-cb17-87e9-a73f-ba4dbe60fbdb"
 version: 2
+neighbors:
+  wikilink:
+    - "[[iso/13616]]"
+    - "[[iso/14289]]"
+    - "[[iso/19005]]"
+    - "[[iso/19011]]"
+    - "[[iso/20022]]"
+    - "[[iso/27002]]"
+    - "[[iso/3166/1]]"
+    - "[[iso/3166/2]]"
+    - "[[iso/4217]]"
+    - "[[iso/8601]]"
+    - "[[iso/9362]]"
+    - "[[rfc/3986]]"
+    - "[[rfc/6585]]"
+    - "[[rfc/9110]]"
+    - "[[ifrs/15]]"
+    - "[[ifrs/16]]"
+    - "[[incoterms/2020]]"
+    - "[[peppol/bis/3]]"
+    - "[[nist/incits/359]]"
+    - "[[etsi/en/319/142]]"
+    - "[[oecd/tpg]]"
+    - "[[un/cefact/5305]]"
+    - "[[eu/ai/act]]"
 ---
 # standards
 
@@ -402,31 +427,3 @@ Known canonical standards in the registry not yet cited by code — e.g. the ups
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(201 82% 45%)"></span> `SEC-Rule-10A-3` — SEC Rule 10A-3 — Listed Company Audit Committees (Exchange Act §10A(m))
 
 <!-- CATALOGUE:END -->
-
-## atoms
-
-Woven here so no member is an orphan — each is reachable from this page and links back out:
-
-- [[iso/13616]]
-- [[iso/14289]]
-- [[iso/19005]]
-- [[iso/19011]]
-- [[iso/20022]]
-- [[iso/27002]]
-- [[iso/3166/1]]
-- [[iso/3166/2]]
-- [[iso/4217]]
-- [[iso/8601]]
-- [[iso/9362]]
-- [[rfc/3986]]
-- [[rfc/6585]]
-- [[rfc/9110]]
-- [[ifrs/15]]
-- [[ifrs/16]]
-- [[incoterms/2020]]
-- [[peppol/bis/3]]
-- [[nist/incits/359]]
-- [[etsi/en/319/142]]
-- [[oecd/tpg]]
-- [[un/cefact/5305]]
-- [[eu/ai/act]]

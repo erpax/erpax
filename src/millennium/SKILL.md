@@ -30,6 +30,17 @@ signatures:
     - stage: uuid
       stageUuid: "553bb2af-e3d5-85b4-8f67-564078031e26"
 version: 2
+neighbors:
+  wikilink:
+    - "[[basis]]"
+    - "[[continuum]]"
+    - "[[fermat]]"
+    - "[[four]]"
+    - "[[goldbach]]"
+    - "[[recursive]]"
+    - "[[automate]]"
+    - "[[orchestrate]]"
+    - "[[execute]]"
 ---
 # millennium — the Clay problems as a testing ground; the waves classify, they do not solve
 
@@ -74,17 +85,3 @@ You do not solve one of these by asserting it. You solve it by **surviving its i
 - **Popper / Cook–Levin** — P vs NP is the verify/derive asymmetry made precise; a resonance is not a separation.
 
 Composes: [[coincidence]] · [[theorem]] · [[seeing]] · [[duel]] · [[quantum]]/gaps · [[rules]]/refutable · [[law]].
-
-## atoms
-
-Woven here so no member is an orphan — each is reachable from this page and links back out:
-
-- [[basis]]
-- [[continuum]]
-- [[fermat]]
-- [[four]]
-- [[goldbach]]
-- [[recursive]]
-- [[automate]]
-- [[orchestrate]]
-- [[execute]]

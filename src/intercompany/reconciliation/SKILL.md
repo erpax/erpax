@@ -56,4 +56,4 @@ This was a bare **axiom** — the `@invariant "payable = receivable, net"` asser
 
 Composes: [[conservation]] · [[rules]]/refutable · [[law]].
 
-Composes: [[accounting]] · [[reconciliation]].
+Composes: [[accounting]] · [[currency/reconciliation]].

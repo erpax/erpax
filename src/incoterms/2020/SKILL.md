@@ -61,4 +61,4 @@ This module exports the canonical 11-code set + the family split (multimodal vs 
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard ISO 6346 freight-container-code (related)`
 
-Composes: [[standards]] · [[delivery]].
+Composes: [[standards]] · [[vocabulary/delivery]].

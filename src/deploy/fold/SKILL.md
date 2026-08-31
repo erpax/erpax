@@ -35,7 +35,7 @@ long as nobody weighed the artifact.
   what a stale fold costs, in the units Cloudflare bills.
 - **`workerBudget` / `assertWorkerFitsBudget`** — the packed artifact against the paid
   `10 MiB` compressed ceiling. Nothing weighed the Worker before; the first measurement
-  was the API error. It reads the bundle `PACK_COMMAND` writes and gzips that one file,
+  was the API error. It reads the bundle a wrangler dry-run pack writes and gzips that one file,
   which is why it agrees with wrangler to 12 bytes.
 
   It is deliberately **NOT** on the deploy chain. Putting it there made the builder bundle
