@@ -128,7 +128,7 @@ export const BANK_RESEARCH_BOOK = seal([
   ],
   [
     'how to invert banking and fill the gaps',
-    'invertBanking: for each banking pole (export/give · EOD camt.053 · pain.001) name its dual (import/take · camt.052 · pain.002 · pacs.008 · pacs.004) and mark atom present/missing. Fill open gaps: camt052/import · pacs004/import · Pacs008 types · standards-import routes. Never claim present without the dual on disk.',
+    'invertBanking: for each banking pole (export/give · EOD camt.053 · pain.001) name its dual (import/take · camt.052 · pain.002 · pacs.008 · pacs.004) and mark atom present/missing. Fill open gaps: camt052/import · pacs004/import · Pacs008 types · standards/import routes. Never claim present without the dual on disk.',
   ],
   [
     'how should banks chat with each other',
@@ -279,13 +279,13 @@ const BANKING_INVERT_SPEC: readonly {
     pole: 'camt.053 import (EOD statement)',
     dual: 'camt.052 import (intraday report)',
     atom: 'src/camt052/import/service/index.ts',
-    develop: 'land parseCamt052 + standards-import route camt.052',
+    develop: 'land parseCamt052 + standards/import route camt.052',
   },
   {
     pole: 'camt.053 import (EOD statement)',
     dual: 'camt.054 import (debit/credit notification)',
     atom: 'src/camt054/import/service/index.ts',
-    develop: 'land parseCamt054 + standards-import route camt.054',
+    develop: 'land parseCamt054 + standards/import route camt.054',
   },
   {
     pole: 'pain.001 export (customer credit transfer)',
@@ -312,16 +312,16 @@ const BANKING_INVERT_SPEC: readonly {
     pole: 'pacs.008 / pain.001 outbound',
     dual: 'pacs.004 import (payment return)',
     atom: 'src/pacs004/import/service/index.ts',
-    develop: 'land parsePacs004 + standards-import route pacs.004',
+    develop: 'land parsePacs004 + standards/import route pacs.004',
   },
   {
     pole: 'standards export (give)',
     dual: 'standards import routes inverted banking formats',
-    atom: 'src/export/standards-import.ts',
+    atom: 'src/export/standards/import.ts',
     develop: 'route camt.052 · camt.054 · pain.002 · pacs.004 in importStandards',
     prove: (cwd) => {
       try {
-        const t = readFileSync(join(cwd, 'src/export/standards-import.ts'), 'utf8')
+        const t = readFileSync(join(cwd, 'src/export/standards/import.ts'), 'utf8')
         return (
           /'camt\.052'/.test(t) &&
           /'camt\.054'/.test(t) &&
