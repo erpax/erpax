@@ -64,7 +64,7 @@ export function turningNumber(loop: (t: number) => Loop2D, samples = 20000): num
     const p_h = loop(t + h)
     const dx = p_h.x - p.x
     const dy = p_h.y - p.y
-    let angle = algebraAtan2(dy, dx)
+    const angle = algebraAtan2(dy, dx)
     if (!isNaN(prev)) {
       let delta = angle - prev
       // Unwrap the angle to shortest path

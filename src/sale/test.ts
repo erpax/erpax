@@ -14,7 +14,7 @@ const OFFERED = [
   "emitSaleClosedHook",
   "enforceSaleImmutability",
   "submitSalesAuditFile",
-  "validateRefsHook"
+  "validateReferenceHook"
 ] as const
 
 describe('sale — the face it owes its callers', () => {

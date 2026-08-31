@@ -2181,7 +2181,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/sale/fiscal/refs/test.ts",
+        "path": "src/sale/fiscal/reference/test.ts",
         "section": ""
       },
       {

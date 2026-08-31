@@ -46,7 +46,7 @@ async function assertNotDecommissioned(
  * beforeChange hook factory. Validates the sale's `fiscalDevice` + `operator`
  * relationships are not decommissioned. Slugs default to the registers.
  */
-export const validateRefsHook =
+export const validateReferenceHook =
   (opts: { devicesSlug?: string; operatorsSlug?: string } = {}): CollectionBeforeChangeHook =>
   async ({ data, operation, req }) => {
     if (operation !== 'create') return data

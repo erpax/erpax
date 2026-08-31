@@ -8,9 +8,9 @@
  */
 
 import { describe, it, expect, vi } from 'vitest'
-import { validateRefsHook } from './index'
+import { validateReferenceHook } from './index'
 
-type HookArgs = Parameters<ReturnType<typeof validateRefsHook>>[0]
+type HookArgs = Parameters<ReturnType<typeof validateReferenceHook>>[0]
 
 function run(
   data: Record<string, unknown>,
@@ -21,10 +21,10 @@ function run(
     Promise.resolve(statuses[id] ? { id, status: statuses[id] } : { id, status: 'active' }),
   )
   const args = { data, operation, req: { payload: { findByID } } } as unknown as HookArgs
-  return { promise: validateRefsHook()(args), findByID }
+  return { promise: validateReferenceHook()(args), findByID }
 }
 
-describe('validateRefsHook', () => {
+describe('validateReferenceHook', () => {
   it('passes when device + operator are active', async () => {
     const { promise } = run({ fiscalDevice: 'fd-1', operator: 'op-1' }, { 'fd-1': 'active', 'op-1': 'active' })
     await expect(promise).resolves.toBeDefined()

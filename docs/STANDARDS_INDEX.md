@@ -2470,9 +2470,9 @@ src/sale/fiscal/context/test.ts:7: * @standard BG Наредба-Н-18 §СУП�
 src/sale/fiscal/receipt/index.ts:14: * @standard BG Наредба-Н-18 §СУПТО касов-бон УНП-on-receipt
 src/sale/fiscal/receipt/test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/sale/fiscal/receipt/test.ts:6: * @standard BG Наредба-Н-18 §СУПТО касов-бон
-src/sale/fiscal/refs/index.ts:13: * @standard BG Наредба-Н-18 §СУПТО fiscal-device-register · operator-nomenclature
-src/sale/fiscal/refs/test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
-src/sale/fiscal/refs/test.ts:6: * @standard BG Наредба-Н-18 §СУПТО fiscal-device-register · operator-nomenclature
+src/sale/fiscal/reference/index.ts:13: * @standard BG Наредба-Н-18 §СУПТО fiscal-device-register · operator-nomenclature
+src/sale/fiscal/reference/test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
+src/sale/fiscal/reference/test.ts:6: * @standard BG Наредба-Н-18 §СУПТО fiscal-device-register · operator-nomenclature
 src/sale/fiscal/revenue/index.ts:6: * @standard BG Наредба-Н-18 §СУПТО sale-register · §чл.3-ал.1 fiscalization-scope
 src/sale/fiscal/revenue/test.ts:6: * @standard ISO/IEC-29119:2022 software-testing
 src/sale/fiscal/revenue/test.ts:7: * @standard BG Наредба-Н-18 §СУПТО sale-register · §чл.3-ал.1
@@ -6184,7 +6184,7 @@ src/sale/audit-file.ts:19: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/sale/daily-report.ts:15: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/sale/event/index.ts:9: * @audit ISO-19011:2018 audit-trail event-driven
 src/sale/fiscal/receipt/index.ts:15: * @audit ISO-19011:2018 audit-trail
-src/sale/fiscal/refs/index.ts:14: * @audit ISO-19011:2018 audit-trail
+src/sale/fiscal/reference/index.ts:14: * @audit ISO-19011:2018 audit-trail
 src/sale/fiscal/revenue/index.ts:8: * @audit ISO-19011:2018 audit-trail event-driven
 src/sale/immutability/index.ts:14: * @audit ISO-19011:2018 audit-trail
 src/sale/operator-code.ts:13: * @audit ISO-19011:2018 audit-trail

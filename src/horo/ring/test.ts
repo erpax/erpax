@@ -74,7 +74,7 @@ describe('horo/ring', () => {
       expect(antimatter(1)).toBe(8)
       expect(antimatter(9)).toBe(9)
       // For ring elements, verify pairing exists
-      for (let n of [1, 2, 4, 5, 7, 8]) {
+      for (const n of [1, 2, 4, 5, 7, 8]) {
         const m = antimatter(n)
         expect(m).toBeGreaterThanOrEqual(1)
         expect(m).toBeLessThanOrEqual(9)

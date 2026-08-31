@@ -77,6 +77,12 @@ export const PLURAL_ONLY: ReadonlySet<string> = new Set([
   // entity stores: a singular model would be the actual error (model-lessness is
   // correct). The plural is a quantity on another type, never a collection.
   'airbags', 'axles', 'bathrooms', 'bedrooms', 'calories', 'gears', 'guests', 'pats',
+  // UNITS and inherently-aggregate bags — same class as `calories` and `settings` above.
+  // `bits` is the entropy-BIT of [[cost]]/bits: a log₂ QUANTITY, never a row — "a bit"
+  // is a unit of measure, so a singular model would be the category error. `constants`
+  // is a bag of named values (algebra · horo · cloudflare); a `constant` entity store
+  // is the error, exactly as a `setting` store would be.
+  'bits', 'constants',
 ])
 
 /**
