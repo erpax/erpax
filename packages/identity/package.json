@@ -1,6 +1,6 @@
 {
   "name": "@erpax/identity",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "erpax identity — sequence 0 (axis): content-uuid identity, config, federation/merge — the axis every other package depends on. Core math (@erpax/algebra) is MIT; this package is CC-BY-NC-ND-4.0 or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",
