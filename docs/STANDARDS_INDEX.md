@@ -2069,7 +2069,7 @@ src/oecd/tpg/index.ts:6: * @standard OECD BEPS Action 13 master-file-local-file-
 src/oecd/tpg/index.ts:7: * @standard EU DAC-4 country-by-country-reporting
 src/oecd/tpg/index.ts:8: * @standard OECD Pillar Two GloBE 15% global minimum tax (companion)
 src/operators/index.ts:13: * @standard BG Наредба-Н-18 §СУПТО operator-nomenclature
-src/outward/eu/contract.ts:26: * @standard ISO 19011:2018 §6.4 — audit evidence
+src/outward/eu/contract.ts:23: * @standard ISO 19011:2018 §6.4 — audit evidence
 src/outward/eu/index.ts:33: * @standard ISO 19011:2018 §6.4 — audit evidence: the receipt IS the evidence
 src/outward/gate/index.ts:25: * @standard ISO 19011:2018 §6.4 — audit evidence: the contract IS the evidence
 src/outward/index.ts:30: * @standard RFC 9562 §5.8 — v8 content-uuid (the address)

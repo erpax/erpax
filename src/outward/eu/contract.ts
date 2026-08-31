@@ -1,6 +1,3 @@
-import { ECB_DAILY_XML } from './fixtures/ecb/daily'
-import { SANCTIONS_HEAD_XML } from './fixtures/sanctions/head'
-import { VIES_WSDL_XML } from './fixtures/vies/wsdl'
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 /**
@@ -108,14 +105,18 @@ export function checkSanctions(xml: string): ContractCheck {
 
 const FIXTURES = join(new URL('.', import.meta.url).pathname, 'fixtures')
 const fixture = (name: string): string => readFileSync(join(FIXTURES, name), 'utf8')
+/** A captured NON-JSON rail response (XML/WSDL), carried as a JSON string so the fold can address
+ *  it: `fixtures/` may hold only data ([[diamond]]/membership) and src only collidable kinds
+ *  ([[schema]]/test), and .json is where those two laws meet. The bytes are the capture, exactly. */
+const capture = (name: string): string => JSON.parse(fixture(name)) as string
 
 /** The contract against the FROZEN fixtures — deterministic, offline, CI-safe. */
 export function contractOffline(): readonly ContractCheck[] {
   return [
-    checkVies(VIES_WSDL_XML),
-    checkEcb(ECB_DAILY_XML),
+    checkVies(capture('vies.json')),
+    checkEcb(capture('ecb.json')),
     checkPeppol(fixture('peppol-search.json')),
-    checkSanctions(SANCTIONS_HEAD_XML),
+    checkSanctions(capture('sanctions.json')),
   ]
 }
 
