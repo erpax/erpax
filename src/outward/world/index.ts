@@ -1,3 +1,4 @@
+import { OFAC_SDN_HEAD_XML } from './fixtures/ofac/sdn'
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import type { ContractCheck } from '@/outward/eu/contract'
@@ -110,7 +111,7 @@ const fixture = (f: string): string => readFileSync(join(FIXTURES, f), 'utf8')
 export function worldContractOffline(): readonly ContractCheck[] {
   return [
     checkBrreg(fixture('brreg.json')),
-    checkOfac(fixture('ofac-sdn-head.xml')),
+    checkOfac(OFAC_SDN_HEAD_XML),
     checkSecEdgar(fixture('sec-edgar.json')),
     checkFrankfurter(fixture('frankfurter.json')),
     checkExchangeRateApi(fixture('erapi.json')),

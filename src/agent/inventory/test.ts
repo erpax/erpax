@@ -26,6 +26,8 @@ describe('agent/inventory', () => {
     delete process.env.CURSOR_AGENT_TRANSCRIPTS
   })
 
+  /** Fixtures are STORED as .json (src may hold only collidable kinds — [[schema]]/test) and copied
+   *  to the .jsonl name the transcript scanner globs; the bytes are the transcript either way. */
   const seed = (name: string, dest: string, mtimeOffsetSec: number): void => {
     copyFileSync(join(FIXTURES, name), join(transcriptsRoot, 'subagents', dest))
     const path = join(transcriptsRoot, 'subagents', dest)
@@ -38,15 +40,15 @@ describe('agent/inventory', () => {
     rows.map((r) => r.status)
 
   it('classifies done transcript', () => {
-    seed('done-agent.jsonl', 'aaa11111-done.jsonl', 60)
+    seed('done-agent.json', 'aaa11111-done.jsonl', 60)
     process.env.CURSOR_AGENT_TRANSCRIPTS = join(tmp, 'agent-transcripts')
     const result = taskInventory({ cwd: tmp, includeDone: true, staleAfterSec: 30 })
     expect(statuses(result.rows)).toContain('done')
   })
 
   it('classifies active vs stale by mtime idle', () => {
-    seed('active-agent.jsonl', 'bbb22222-active.jsonl', 10)
-    seed('stale-agent.jsonl', 'ccc33333-stale.jsonl', 4000)
+    seed('active-agent.json', 'bbb22222-active.jsonl', 10)
+    seed('stale-agent.json', 'ccc33333-stale.jsonl', 4000)
     process.env.CURSOR_AGENT_TRANSCRIPTS = join(tmp, 'agent-transcripts')
     const result = taskInventory({ cwd: tmp, staleAfterSec: 1800 })
     const byId = Object.fromEntries(result.rows.map((r) => [r.id, r.status]))
@@ -56,8 +58,8 @@ describe('agent/inventory', () => {
   })
 
   it('marks younger duplicate title as duplicate', () => {
-    seed('active-agent.jsonl', 'ddd44444-older.jsonl', 5000)
-    seed('duplicate-younger.jsonl', 'eee55555-younger.jsonl', 100)
+    seed('active-agent.json', 'ddd44444-older.jsonl', 5000)
+    seed('duplicate-younger.json', 'eee55555-younger.jsonl', 100)
     process.env.CURSOR_AGENT_TRANSCRIPTS = join(tmp, 'agent-transcripts')
     const result = taskInventory({ cwd: tmp, staleAfterSec: 1800 })
     const older = result.rows.find((r) => r.id === 'ddd44444')
@@ -68,15 +70,15 @@ describe('agent/inventory', () => {
   })
 
   it('sorts oldest first', () => {
-    seed('active-agent.jsonl', 'fff66666-old.jsonl', 9000)
-    seed('active-agent.jsonl', 'ggg77777-new.jsonl', 30)
+    seed('active-agent.json', 'fff66666-old.jsonl', 9000)
+    seed('active-agent.json', 'ggg77777-new.jsonl', 30)
     process.env.CURSOR_AGENT_TRANSCRIPTS = join(tmp, 'agent-transcripts')
     const result = taskInventory({ cwd: tmp, staleAfterSec: 1800 })
     expect(result.rows[0]!.id).toBe('fff66666')
   })
 
   it('inventoryReport renders markdown table', () => {
-    seed('active-agent.jsonl', 'hhh88888-row.jsonl', 20)
+    seed('active-agent.json', 'hhh88888-row.jsonl', 20)
     process.env.CURSOR_AGENT_TRANSCRIPTS = join(tmp, 'agent-transcripts')
     const md = inventoryReport({ cwd: tmp, staleAfterSec: 1800 })
     expect(md).toContain('| id | age | status | title | speed-up hint |')
@@ -108,7 +110,7 @@ describe('agent/inventory', () => {
   })
 
   it('buildInventorySnapshot carries contentUuid', () => {
-    seed('done-agent.jsonl', 'iii99999-done.jsonl', 10)
+    seed('done-agent.json', 'iii99999-done.jsonl', 10)
     process.env.CURSOR_AGENT_TRANSCRIPTS = join(tmp, 'agent-transcripts')
     const snap = buildInventorySnapshot(tmp)
     expect(snap.contentUuid).toMatch(

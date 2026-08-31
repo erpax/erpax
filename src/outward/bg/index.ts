@@ -1,3 +1,4 @@
+import { BNB_RATE_XML } from './fixtures/bnb/rate'
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import type { ContractCheck } from '@/outward/eu/contract'
@@ -82,7 +83,7 @@ const FIXTURES = join(new URL('.', import.meta.url).pathname, 'fixtures')
 /** The BG contracts against their frozen fixtures — deterministic, offline, CI-safe. */
 export function bgContractOffline(): readonly ContractCheck[] {
   return [
-    checkBnb(readFileSync(join(FIXTURES, 'bnb-rate.xml'), 'utf8')),
+    checkBnb(BNB_RATE_XML),
     checkTr(readFileSync(join(FIXTURES, 'tr-company.json'), 'utf8')),
   ]
 }

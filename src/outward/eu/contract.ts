@@ -1,3 +1,6 @@
+import { ECB_DAILY_XML } from './fixtures/ecb/daily'
+import { SANCTIONS_HEAD_XML } from './fixtures/sanctions/head'
+import { VIES_WSDL_XML } from './fixtures/vies/wsdl'
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 /**
@@ -109,10 +112,10 @@ const fixture = (name: string): string => readFileSync(join(FIXTURES, name), 'ut
 /** The contract against the FROZEN fixtures — deterministic, offline, CI-safe. */
 export function contractOffline(): readonly ContractCheck[] {
   return [
-    checkVies(fixture('vies.wsdl.xml')),
-    checkEcb(fixture('ecb-daily.xml')),
+    checkVies(VIES_WSDL_XML),
+    checkEcb(ECB_DAILY_XML),
     checkPeppol(fixture('peppol-search.json')),
-    checkSanctions(fixture('sanctions-head.xml')),
+    checkSanctions(SANCTIONS_HEAD_XML),
   ]
 }
 
