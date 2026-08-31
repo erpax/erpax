@@ -22,12 +22,17 @@ import type { Payload } from 'payload';
  */
 class MockPayload {
   private documents: Map<string, Map<string, Record<string, unknown>>> = new Map();
+  /** Monotonic, NOT a clock: `Date.now()` gave every document created inside the same millisecond
+   *  the same id, so a Map keyed on it kept ONE — "create 3, expect 3" read back 1 and eight tests
+   *  failed on a fast machine while the code under test was fine. A clock is not an identity. */
+  private seq = 0;
 
   async create({ collection, data }: { collection: string; data: Record<string, unknown> }) {
     if (!this.documents.has(collection)) {
       this.documents.set(collection, new Map());
     }
-    const id = `${collection}-${Date.now().toString(36).substr(2, 9)}`;
+    this.seq += 1;
+    const id = `${collection}-${this.seq.toString(36).padStart(6, '0')}`;
     const doc = { ...data, id };
     this.documents.get(collection)!.set(id, doc);
     return doc;
