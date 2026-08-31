@@ -61,6 +61,6 @@ peerDependencyRules:
     'mcp-handler>@modelcontextprotocol/sdk': '1'
 
 patchedDependencies:
-  '@payloadcms/drizzle@4.0.0-internal.38b7f1d': patches/@payloadcms__drizzle@4.0.0-internal.38b7f1d.patch
-  '@payloadcms/plugin-mcp@4.0.0-internal.38b7f1d': patches/@payloadcms__plugin-mcp@4.0.0-internal.38b7f1d.patch
-  image-size@2.0.2: patches/image-size@2.0.2.patch
+  '@payloadcms/drizzle@4.0.0-internal.38b7f1d': .patches/@payloadcms__drizzle@4.0.0-internal.38b7f1d.patch
+  '@payloadcms/plugin-mcp@4.0.0-internal.38b7f1d': .patches/@payloadcms__plugin-mcp@4.0.0-internal.38b7f1d.patch
+  image-size@2.0.2: .patches/image-size@2.0.2.patch

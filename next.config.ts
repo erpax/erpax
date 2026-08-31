@@ -81,7 +81,7 @@ const nextConfig = {
   // Externalize it (with jose/pg/sharp) so it never ships in the Worker.
   // `typescript` is NOT listed here — listing it as external would leave
   // `require('typescript')` for OpenNext/esbuild to re-resolve into the real
-  // 8.6 MiB package. The webpack fold below swaps it for stubs/typescript.js.
+  // 8.6 MiB package. The webpack fold below swaps it for .stubs/typescript.js.
   serverExternalPackages: ['jose', 'pg-cloudflare', 'sharp', 'sass'],
   // …and externalising is only HALF the job, which the artifact proved. `serverExternalPackages`
   // stops webpack INLINING a package into a chunk; it does not stop Next's file tracing from
@@ -138,16 +138,16 @@ const nextConfig = {
       // `require("typescript")` unresolved so OpenNext/esbuild re-pulled the real 8.6 MiB package.
       webpackConfig.resolve.alias = {
         ...(webpackConfig.resolve.alias ?? {}),
-        typescript$: stub('stubs/typescript.js'),
-        typescript: stub('stubs/typescript.js'),
-        'next/og$': stub('stubs/next-og.js'),
-        'next/og': stub('stubs/next-og.js'),
-        'next/dist/compiled/@vercel/og/index.edge.js': stub('stubs/next-og.js'),
+        typescript$: stub('.stubs/typescript.js'),
+        typescript: stub('.stubs/typescript.js'),
+        'next/og$': stub('.stubs/next-og.js'),
+        'next/og': stub('.stubs/next-og.js'),
+        'next/dist/compiled/@vercel/og/index.edge.js': stub('.stubs/next-og.js'),
       }
-      swap(/^typescript$/, 'stubs/typescript.js')
-      swap(/[\\/]next[\\/]og([\\/]index)?$/, 'stubs/next-og.js')
-      swap(/[\\/]@vercel[\\/]og([\\/]index\.edge)?$/, 'stubs/next-og.js')
-      swap(/next[\\/]dist[\\/]compiled[\\/]@vercel[\\/]og[\\/]index\.edge\.js$/, 'stubs/next-og.js')
+      swap(/^typescript$/, '.stubs/typescript.js')
+      swap(/[\\/]next[\\/]og([\\/]index)?$/, '.stubs/next-og.js')
+      swap(/[\\/]@vercel[\\/]og([\\/]index\.edge)?$/, '.stubs/next-og.js')
+      swap(/next[\\/]dist[\\/]compiled[\\/]@vercel[\\/]og[\\/]index\.edge\.js$/, '.stubs/next-og.js')
     }
 
     // Payload admin client components transitively import the server `payload` package (via

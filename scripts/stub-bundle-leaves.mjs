@@ -10,10 +10,10 @@ import { fileURLToPath } from 'node:url'
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..')
 
-/** CJS factory matching stubs/typescript.js — no filesystem resolve for esbuild. */
+/** CJS factory matching .stubs/typescript.js — no filesystem resolve for esbuild. */
 const TS_INLINE = `(()=>{const ScriptTarget={ESNext:99,Latest:99};const SyntaxKind={};function createSourceFile(fileName="",sourceText=""){return{fileName,text:sourceText,statements:[],getFullText:()=>sourceText,getLineAndCharacterOfPosition:()=>({line:0,character:0})}}function forEachChild(){}const ts={ScriptTarget,SyntaxKind,createSourceFile,forEachChild,sys:{}};ts.default=ts;ts.__esModule=true;return ts})()`
 
-/** CJS factory matching stubs/next-og.js */
+/** CJS factory matching .stubs/next-og.js */
 const OG_INLINE = `(()=>{class ImageResponse extends Response{constructor(){super("OG image rendering is disabled in the Cloudflare Worker build",{status:501})}}function experimental_createImageStream(){throw new Error("OG image rendering is disabled in the Cloudflare Worker build")}return{ImageResponse,experimental_createImageStream,__esModule:true,default:{ImageResponse,experimental_createImageStream}}})()`
 
 function walk(dir, out = []) {

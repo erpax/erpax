@@ -50,7 +50,7 @@ describe('deploy/fold — the detector CATCHES the regression it was written for
     const stale = staleFolds(process.cwd(), [
       {
         target: 'src/uuid/matrix/generated.ts',
-        stub: 'stubs/matrix.generated.js',
+        stub: '.stubs/matrix.generated.js',
         pattern: /uuid[\\/]matrix[\\/]matrix\.generated(\.ts)?$/,
         side: 'both',
         why: 'the historical pattern',
