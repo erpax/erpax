@@ -54,6 +54,12 @@ jobs:
     env:
       PAYLOAD_SECRET: test-secret-not-for-production-32-characters
       PAYLOAD_TEST_SKIP_MIGRATE: '1'
+      # Migrations are SKIPPED here and the schema is pushed from the live config instead — the
+      # greenfield path vitest.globalsetup.ts exists for. Without this, skip-migrate ⊕ no-push left
+      # the integration lane running against a database with NO TABLES: every suite that actually
+      # writes died on "no such table: tenants", and the ones that do not write reported green over
+      # nothing. Pushed ONCE per job (a sentinel in node_modules/.cache); later batches reuse it.
+      PAYLOAD_DEV_PUSH: 'true'
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
