@@ -1,3 +1,8 @@
+---
+name: arithmetic
+description: "Use when performing mathematical operations on horo digits — digital roots, composition, ratios, void mechanics, inverse orbits, and affine transformations. All functions are pure and side-effect-free."
+atomPath: horo/arithmetic
+---
 # horo/arithmetic
 
 ## when

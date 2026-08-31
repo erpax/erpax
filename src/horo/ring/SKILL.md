@@ -1,3 +1,8 @@
+---
+name: ring
+description: "Use when analyzing the ring's structure — which elements compose to what, which orbits exist, how trinities move under doubling, where each digit lives (ring / axis / void), and the split between balance (5) and attraction (9)."
+atomPath: horo/ring
+---
 # horo/ring
 
 ## when

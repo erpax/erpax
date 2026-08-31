@@ -1,3 +1,8 @@
+---
+name: constants
+description: "Use when referencing the horo ring's static definition — the seven positions, measure names, type guards, and mathematical constants that define the state ring's fixed structure."
+atomPath: horo/constants
+---
 # horo/constants
 
 ## when

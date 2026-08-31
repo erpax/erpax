@@ -1,3 +1,8 @@
+---
+name: geometry
+description: "Use when generating visual representations, sequences, and spatial mechanics from the horo ring — loops (circles, lemniscates), breath sequences, turning numbers, corner limits, carry closures, and state validation."
+atomPath: horo/geometry
+---
 # horo/geometry
 
 ## when

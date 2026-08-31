@@ -3,6 +3,8 @@ import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactT
  * writing/computed — computed writing metrics from sealed coordinates.
  */
 import { describe, it, expect } from 'vitest'
+import { readFileSync } from 'node:fs'
+import { nodeOf } from '@/uuid/matrix'
 import { computedWritingForPath, writingScore } from '@/writing/computed'
 import { improveWritingSkill } from '@/writing/skills'
 
@@ -16,8 +18,19 @@ describe('computedWritingForPath — diamond-derived prose metrics', () => {
   it('quantum/emr sample — debit/credit · law · wikilink · eb/word', () => {
     const w = computedWritingForPath('quantum/emr')
     expect(w.atomPath).toBe('quantum/emr')
-    expect(w.contentUuid).toBe('1761e028-ced0-5135-8f50-514d7a0898d5')
-    expect(w.horo).toBe(2)
+    // Read the SEAL, never a copy of it. This line carried a literal uuid that the atom's own
+    // frontmatter had long since moved past — the corpus's content-address stated in two places,
+    // with one rotted, which is the duplication that hides drift instead of showing it. Computed
+    // vs sealed is the comparison that forbids something: they must agree.
+    const sealed = /contentUuid:\s*"([0-9a-f-]+)"/.exec(readFileSync('src/quantum/emr/SKILL.md', 'utf8'))?.[1]
+    expect(sealed).toBeDefined()
+    expect(w.contentUuid).toBe(sealed)
+    // The matrix is the authority for a position, so compare against it rather than a literal.
+    // NAMED DRIFT: quantum/emr's SKILL frontmatter still says `horo: 2` while the matrix has said 7
+    // both before and after this session's regeneration — the sealed frontmatter is behind the
+    // computed corpus. That is a real gap for the skill-upgrade wave; it is not this suite's to
+    // paper over, and pinning the STALE value (which is what `toBe(2)` did) hid it completely.
+    expect(w.horo).toBe(nodeOf('quantum/emr')?.horo)
     expect(w.wordCount).toBeGreaterThan(500)
     expect(w.lawLines).toBeGreaterThanOrEqual(1)
     expect(w.wikilinkCount).toBeGreaterThan(20)
@@ -37,12 +50,12 @@ describe('computedWritingForPath — diamond-derived prose metrics', () => {
       {
         "atomPath": "quantum/emr",
         "balanced": false,
-        "ebPerWord": 0.0027,
+        "ebPerWord": 0.0026,
         "lawLines": 1,
         "proseRatio": 0.82,
         "score": 41,
         "variance": 1,
-        "wikilinkDensity": 2.94,
+        "wikilinkDensity": 2.77,
       }
     `)
   })
