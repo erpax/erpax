@@ -73,11 +73,6 @@ export {
   computationUuid,
   renderDiamondJson,
 } from './projection'
-import {
-  ALLOWED_DIAMOND_FILES,
-  diamondFileViolations,
-  diamondFilesGuardian,
-} from './files'
 export {
   ALLOWED_DIAMOND_FILES,
   TRINITY_FORM,

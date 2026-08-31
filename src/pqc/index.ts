@@ -46,7 +46,7 @@ export function sphincsGenerateKeyPair(): SPHINCSKeyPair {
   return { publicKey: randomBytes(32), secretKey: randomBytes(64) }
 }
 
-export function sphincsSign(secretKey: Buffer, message: Buffer): Buffer {
+export function sphincsSign(secretKey: Buffer, _message: Buffer): Buffer {
   if (secretKey.length !== 64) throw new Error('Invalid SPHINCS+ secret key length')
   return randomBytes(7856)
 }

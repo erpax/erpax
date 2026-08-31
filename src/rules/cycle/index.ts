@@ -1,4 +1,4 @@
-import { exactMax, exactMin } from '@/algebra'
+import { exactMin } from '@/algebra'
 /**
  * cycle — an import loop is a lie the module graph tells at runtime.
  *

@@ -9,7 +9,7 @@
  * @see ../geometry/index.ts (carry rays, straddling steps, corner mechanics)
  */
 
-import { type HoroStep, HORO_DIGITS, VOID_PIVOT, CENTROID, POLE, INNER_CIRCUIT, type FiveRoles, type Ray } from '../constants'
+import { CENTROID, POLE, INNER_CIRCUIT, type FiveRoles, type Ray } from '../constants'
 import { throughVoid, digitalRoot } from '../arithmetic'
 
 /**

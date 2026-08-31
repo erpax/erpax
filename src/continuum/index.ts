@@ -23,7 +23,7 @@ export function continuumHypothesisProof(): ContinuumProof {
   }
 }
 
-export function compareCardinality(a: readonly any[], b: readonly any[]): 'equal' | 'less' | 'greater' {
+export function compareCardinality(a: readonly unknown[], b: readonly unknown[]): 'equal' | 'less' | 'greater' {
   if (a.length === b.length) return 'equal'
   if (a.length < b.length) return 'less'
   return 'greater'

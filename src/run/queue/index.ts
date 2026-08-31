@@ -57,7 +57,10 @@ export async function consumeQueueBatch(
 ): Promise<QueueOutcome> {
   const sweep = await runScheduledJobs(env, log)
   const acked = sweep.ran && sweep.ok
-  for (const m of batch.messages) (acked ? m.ack() : m.retry())
+  for (const m of batch.messages) {
+    if (acked) m.ack()
+    else m.retry()
+  }
   if (!acked) log(`[queue] ${batch.queue}: sweep did not complete — retried ${batch.messages.length} message(s)`)
   return { queue: batch.queue, messages: batch.messages.length, acked, sweep }
 }

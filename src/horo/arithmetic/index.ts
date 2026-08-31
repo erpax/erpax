@@ -8,8 +8,8 @@
  * @see ../geometry/index.ts (loops, sequences)
  */
 
-import { exactMax, exactAbs, exactTrunc } from '../../algebra'
-import { type HoroStep, VOID_PIVOT, CENTROID, POLE } from '../constants'
+import { exactAbs, exactTrunc } from '../../algebra'
+import { type HoroStep, VOID_PIVOT } from '../constants'
 
 /**
  * Digital root (base-10) of an integer → 1..9 (0 only for 0): repeated digit-sum = reduction mod 9.

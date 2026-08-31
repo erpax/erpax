@@ -181,9 +181,6 @@ export function specFor(fromFile: string, target: string, alias: boolean): strin
   return rel
 }
 
-const stemOf = (path: string): string =>
-  path.slice(path.lastIndexOf('/') + 1).replace(/\.test\.tsx?$/, '').replace(/\.tsx?$/, '')
-
 /**
  * The scalpel manifest: one op per import specifier that names a renamed file.
  *

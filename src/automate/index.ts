@@ -52,7 +52,7 @@ export function refineHypothesis(loop: AutomationLoop, evidence: Buffer): LoopSt
   return newState
 }
 
-export function detectDivergence(loop: AutomationLoop, evidence: Buffer): boolean {
+export function detectDivergence(loop: AutomationLoop, _evidence: Buffer): boolean {
   if (loop.states.length < 3) return false
 
   const recent = loop.states.slice(-3)

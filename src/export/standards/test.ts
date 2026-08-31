@@ -13,7 +13,7 @@ import { importSpecifiersOf } from '@/syntax'
  */
 const dir = join(import.meta.dirname, '.')
 const members = readdirSync(dir)
-  .filter((f) => f.endsWith('.ts') && f !== 'index.ts' && f !== 'test.ts' && !f.endsWith('.test.ts'))
+  .filter((f) => f.endsWith('.ts') && f !== 'index.ts' && f !== 'test.ts' && f !== 'translations.ts' && !f.endsWith('.test.ts'))
   .map((f) => f.replace(/\.ts$/, ''))
   .sort()
 const faced = importSpecifiersOf('index.ts', readFileSync(join(dir, 'index.ts'), 'utf8'))

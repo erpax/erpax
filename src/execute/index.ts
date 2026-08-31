@@ -1,4 +1,4 @@
-import { recursiveAndObserve, observationLog, WaveObservation } from '@/recursive'
+import { recursiveAndObserve, observationLog } from '@/recursive'
 import { randomUUID } from 'node:crypto'
 import { exactMaxOf } from '@/algebra'
 

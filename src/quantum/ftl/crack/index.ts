@@ -1,5 +1,5 @@
-import { type CrackKind, CRACK_FLAGS, type Seal } from '../map'
-import { BOUNDARY, type Boundary } from '../constants'
+import { type CrackKind } from '../map'
+import { type Boundary } from '../constants'
 
 export interface Crack {
   readonly kind: CrackKind

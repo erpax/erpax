@@ -74,13 +74,13 @@ import {
   type BandHarmony,
 } from '@/harmony'
 import { bind4 } from '@/merge'
-import { coalescer } from '@/quantum/coalesce'
-import { clock, type Tick } from '@/quantum/clock'
+import { coalescer as _coalescer } from '@/quantum/coalesce'
+import { clock as _clock, type Tick as _Tick } from '@/quantum/clock'
 // A re-export NAMES nothing at runtime — `export { x } from '…'` gave tsc a resolution while the
 // module scope had no binding, so `ftlReport` was a ReferenceError with zero type errors.
-import { ftlReport } from '@/quantum/ftl'
+import { ftlReport as _ftlReport } from '@/quantum/ftl'
 import { ERPAX_DIGEST_BITS, secondPreimageLog2, bhtCollisionLog2 } from '@/cost'
-import { consensusProof } from '@/theorem'
+import { consensusProof as _consensusProof } from '@/theorem'
 import {
   sealSecret,
   decryptIfUuid,
@@ -90,10 +90,10 @@ import {
   type SecretIdentityContent,
 } from '@/secret'
 import {
-  chat,
-  BOOK,
-  type Chat,
-  type SealBook,
+  chat as _chat,
+  BOOK as _BOOK,
+  type Chat as _Chat,
+  type SealBook as _SealBook,
 } from '@/quantum/ftl'
 
 // ── the quantum composer: content folded into music ──────────────────────────

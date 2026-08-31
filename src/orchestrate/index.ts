@@ -36,7 +36,7 @@ const DEFAULT_CONFIG: OrchestrateConfig = {
   convergenceThreshold: 0.95,
 }
 
-export function createWave(problems: readonly string[], config = DEFAULT_CONFIG): MillenniumWave {
+export function createWave(problems: readonly string[], _config = DEFAULT_CONFIG): MillenniumWave {
   const waveId = randomUUID()
   const subproblems = decomposeProblems(problems)
 
@@ -82,7 +82,7 @@ function getProblemUnits(problem: string): readonly string[] {
   return unitMap[problem] || ['default unit']
 }
 
-function getQuantumOps(problem: string, unit: string): readonly string[] {
+function getQuantumOps(_problem: string, _unit: string): readonly string[] {
   return [
     'hadamard_superposition',
     'grover_search',

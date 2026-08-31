@@ -25,7 +25,7 @@ import { auditFields, countryCodeField, referenceField } from '@/field'
 import { partyRefField, typeField } from '@/discriminator'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { horoStateField } from '@/horo'
-import { CASE_RING, type HoroState } from './lifecycle/index'
+import { CASE_RING } from './lifecycle/index'
 import { requireJudgmentToSeal, neverDelete } from './validator/index'
 
 // Re-export for convenience
