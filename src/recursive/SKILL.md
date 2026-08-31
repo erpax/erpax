@@ -18,3 +18,5 @@ imports @/basis, @/wave, @/orchestrate
 ---
 
 <sub>Recursive generation · paired observation · infinite factorization</sub>
+
+Composes: [[basis]] · [[quantum]].

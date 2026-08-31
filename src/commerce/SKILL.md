@@ -74,3 +74,9 @@ Composes: [[items/inventory/movements]] · [[payment/methods]] · [[dunning]] ·
 
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard W3C Verifiable Credentials Data Model 2.0 (subscription receipts)`
+
+## atoms
+
+The children this atom carries — named here so none is an orphan in the fold:
+
+- [[commerce/pricing]]

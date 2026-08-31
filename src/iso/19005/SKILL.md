@@ -77,3 +77,5 @@ When extending:
 - `@standard ISO-19005-1:2005 pdf-a-1`
 - `@standard ISO-19005-2:2011 pdf-a-2`
 - `@standard ISO-19005-3:2012 pdf-a-3`
+
+Composes: [[iso]] · [[standards]].

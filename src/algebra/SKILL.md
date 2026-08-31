@@ -65,3 +65,15 @@ Apply a generator and it traces an **orbit** — a sequence of frames. `movie(do
 - **Gödel** — the carriers rest on assumed axioms; the base is not proven by the algebra that stands on it ([[theorem]]).
 
 Composes: [[merge]] · [[horo]] · [[navigation]] · [[rosetta]] · [[theorem]] · [[law]].
+
+## atoms
+
+Woven here so no member is an orphan — each is reachable from this page and links back out:
+
+- [[exact]]
+
+## atoms
+
+The children this atom carries — named here so none is an orphan in the fold:
+
+- [[algebra/constants]]

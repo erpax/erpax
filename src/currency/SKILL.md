@@ -71,3 +71,9 @@ Applying this skill *is* how these standards are implemented — the field-facto
 - An ad-hoc default currency (`?? 'EUR'`) — route blanks to `XXX` (the identity element).
 - Hardcoding 2 decimals on any money-rounding path — honour each currency's ISO 4217 minor-unit (`JPY`=0, `BHD`=3); this, not the citation year, is the real conformance gap.
 - A bare "ISO 13616" / "ISO 9362" citation — the `-1` part suffix on 13616 is load-bearing; pin the year on both.
+
+## atoms
+
+The children this atom carries — named here so none is an orphan in the fold:
+
+- [[currency/reconciliation]]

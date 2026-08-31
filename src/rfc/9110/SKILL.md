@@ -64,3 +64,5 @@ version: 2
   `Response`. This folder is *only* the cache layer.
 - ETag / `Last-Modified` validators — Next.js handles those automatically
   for static / revalidated routes; not implemented here.
+
+Composes: [[standards]] · [[http]].

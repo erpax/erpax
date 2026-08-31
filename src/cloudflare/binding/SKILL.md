@@ -14,3 +14,5 @@ Every binding access must flow through mediator wrappers—never `env.*` directl
 ---
 
 <sub>skeleton — run `pnpm erpax corpus refresh` to seal</sub>
+
+Composes: [[cloudflare]] · [[tenant]] · [[access]].

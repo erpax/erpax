@@ -55,3 +55,5 @@ vendors, and tax-jurisdiction master records.
 
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard ISO-3166-2:2020 subdivision-codes`
+
+Composes: [[iso]] · [[standards]] · [[country]].

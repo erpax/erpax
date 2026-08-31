@@ -34,3 +34,5 @@ imports @/horo/arithmetic (throughVoid) · @/horo/constants (type guards, consta
 ---
 
 <sub>content-uuid `—` · refactoring atom · sealed `0`</sub>
+
+Composes: [[horo]] · [[horo]] · [[wave]].

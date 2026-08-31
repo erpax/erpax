@@ -61,3 +61,5 @@ canonical wire form throughout erpax.
 
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard ISO-8601-1:2019 date-time`
+
+Composes: [[iso]] · [[standards]] · [[time]].

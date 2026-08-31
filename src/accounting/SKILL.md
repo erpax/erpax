@@ -122,3 +122,9 @@ Composes: [[budget/plannings]] · [[financial/statements]] · [[government/grant
 **Law — [[law]]: wave gaps must → 0 per horo batch before the next wave starts** — `accountingGapsInWaves(cwd)` · `pnpm erpax accounting gaps` · `pnpm erpax rules check --axis accounting-wave`.
 
 **Law — [[law]]: debit and credit meet in balance; every fold meets the same law at seal.** Typography partition (Σdebit − Σcredit = 0), corpus entropy (Σgap − Σseal = netEb), and quantum double fold (wordHalf ⊗ digitHalf = combined128) resolve through `allMeetsInBalance` in `src/accounting/balance/index.ts`; README pivot projects debit·credit · gap·seal · word·digit — **all meet in balance**.
+
+## atoms
+
+Woven here so no member is an orphan — each is reachable from this page and links back out:
+
+- [[intercompany/reconciliation]]

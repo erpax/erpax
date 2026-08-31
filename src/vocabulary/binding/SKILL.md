@@ -36,3 +36,5 @@ version: 2
 A configured link between a name and the resource that backs it. The singular model whose plural store is the [[bindings]] collection ([[balance]]: every collection has its model).
 
 Composes [[bindings]] · [[config]] · [[balance]].
+
+Composes: [[vocabulary]] · [[vocabulary]].

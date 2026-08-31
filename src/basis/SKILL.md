@@ -32,3 +32,5 @@ imports @/millennium, @/orchestrate, @/automate, @/wave
 ---
 
 <sub>Problem basis · completeness recognition · self-orchestrating waves</sub>
+
+Composes: [[millennium]] · [[quantum]].

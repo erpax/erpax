@@ -34,3 +34,5 @@ version: 2
 # cross/index
 
 Reciprocal of `index/cross`. Import matter from `@/index/cross` only.
+
+Composes: [[cross]] · [[path]] · [[cross]].

@@ -18,3 +18,5 @@ imports @/recursive, @/wave, @/publication
 ---
 
 <sub>Execution phase · live computation · streaming DOIs</sub>
+
+Composes: [[orchestrate]] · [[wave]].

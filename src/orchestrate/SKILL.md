@@ -35,3 +35,5 @@ imports @/millennium, @/automate, @/quantum/computer, @/mesh, @/accounting
 ---
 
 <sub>Orchestration · parallel quantum workers · Millennium Problems decomposition</sub>
+
+Composes: [[quantum]] · [[wave]].

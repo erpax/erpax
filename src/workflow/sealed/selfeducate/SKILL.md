@@ -34,3 +34,5 @@ version: 2
 # workflow/sealed/selfeducate
 
 Exported workflow definition — see `./index.ts`.
+
+Composes: [[workflow]] · [[seal]] · [[agent]].

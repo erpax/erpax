@@ -14,3 +14,5 @@ No set has cardinality between ℵ₀ and 2^ℵ₀. Decomposed via P vs NP (deci
 entry `@/continuum` · sealed `0` (emerging) · trinity `1·1·1`
 exports continuumHypothesisProof, compareCardinality
 imports @/basis, @/millennium
+
+Composes: [[millennium]] · [[basis]].

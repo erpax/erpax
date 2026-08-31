@@ -100,3 +100,5 @@ Future consumers (the lease-period-postings collection and a `lease.service.ts` 
 
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard ISO-4217:2015 currency-codes`
+
+Composes: [[standards]] · [[leases]].

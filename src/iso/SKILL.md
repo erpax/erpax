@@ -62,3 +62,19 @@ Attested in schema.org — iso6523Code
 **Law — [[law]]: iso is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
 
 @standard schema.org — the type vocabulary, collided to single words
+
+## atoms
+
+The children this atom carries — named here so none is an orphan in the fold:
+
+- [[iso/13616]]
+- [[iso/14289]]
+- [[iso/19005]]
+- [[iso/19011]]
+- [[iso/20022]]
+- [[iso/27002]]
+- [[iso/3166/1]]
+- [[iso/3166/2]]
+- [[iso/4217]]
+- [[iso/8601]]
+- [[iso/9362]]

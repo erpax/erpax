@@ -34,3 +34,5 @@ version: 2
 # agent/intelligence
 
 Wave-coordinated improve cycles — see `./index.ts`.
+
+Composes: [[agent]] · [[seal]] · [[efficiency]].

@@ -7,3 +7,5 @@ description: "Quantum FTL constants — paths, endpoints, boundary, defaults"
 # quantum/ftl/constants
 
 Quantum FTL constants — paths, endpoints, boundary, defaults.
+
+Composes: [[quantum/ftl]] · [[quantum]].

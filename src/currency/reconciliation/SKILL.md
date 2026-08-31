@@ -59,3 +59,5 @@ Matter-twin: `src/currency/reconciliation/index.ts` (`CurrencyReconciliation` st
 - `@standard ISO-4217:2023 (currency codes, decimal places)`
 - `@standard IFRS-21:2023 (translation of foreign operations)`
 - `@standard IFRS-9:2023 (foreign exchange gains/losses)`
+
+Composes: [[reconciliation]] · [[period]].

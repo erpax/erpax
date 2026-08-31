@@ -104,3 +104,5 @@ Files:
 
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard ISO-4217:2015 currency-codes`
+
+Composes: [[standards]] · [[revenue]].

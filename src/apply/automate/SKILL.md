@@ -45,3 +45,5 @@ version: 2
 Composes — [[apply]] · [[apply]]/efficiency · [[apply]]/inventory · [[wave]]/policy · [[quantum/entanglement]]
 
 @standard erpax — automate orchestration loop
+
+Composes: [[efficiency]].

@@ -51,3 +51,5 @@ Matter-twin: src/beyond/explainability/index.ts (`autoExplain` · `isExplanation
 
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard ISO/IEC 23053 AI-systems-with-machine-learning (explainability)`
+
+Composes: [[standards]] · [[proof]].

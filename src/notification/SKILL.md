@@ -62,3 +62,5 @@ This is the outward-speech organ of the [[society]] — the same organ every cul
 - **GDPR Art.7** — transactional-email-consent. The marketing category is gated on a granted consent record; transactional is not.
 - **ISO-19011:2018 §6.4.6** — audit-evidence. One notification audit row per multi-channel send.
 - **ISO-27001 A.5.23** — cloud-service-tenant-isolation. The tenant id is the single source of truth for routing + branding.
+
+Composes: [[audit]].

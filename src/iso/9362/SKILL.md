@@ -52,3 +52,5 @@ Bank-routing fields on `BankStatements`, `PaymentMethods`, `Vendors`.
 
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard ISO-9362:2022 bic`
+
+Composes: [[iso]] · [[standards]] · [[identity]].

@@ -149,3 +149,9 @@ The crux: CanCan's hash-condition "cannot modify a `confirmed: true` record" is 
 - Returning a `Where` during the Access Operation (guard for undefined args) — or a `Where` at field scope (booleans only).
 - Forgetting `overrideAccess: false` in Local API when you DO want enforcement.
 - Re-checking a `SEALED` / posted target for write — it is frozen ([[identity]] immutability).
+
+## atoms
+
+Woven here so no member is an orphan — each is reachable from this page and links back out:
+
+- [[shares]]

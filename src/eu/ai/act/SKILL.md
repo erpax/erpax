@@ -75,3 +75,5 @@ This module exports the 4-class risk taxonomy (`minimal`, `limited`, `high`, `pr
 - `@standard ISO/IEC 23894:2023 ai-risk-management`
 - `@standard ISO/IEC 42001:2023 ai-management-system`
 - `@standard NIST AI-RMF-1.0 ai-risk-management-framework`
+
+Composes: [[eu]] · [[standards]] · [[ai]].

@@ -54,3 +54,9 @@ Attested in schema.org — EUEnergyEfficiencyEnumeration
 **Law — [[law]]: eu is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
 
 @standard schema.org — the type vocabulary, collided to single words
+
+## atoms
+
+The children this atom carries — named here so none is an orphan in the fold:
+
+- [[eu/ai/act]]

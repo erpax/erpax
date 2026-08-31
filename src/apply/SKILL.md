@@ -51,3 +51,9 @@ Attested in schema.org — ApplyAction · directApply
 **Law — automate all:** `automateCycle()` — inventory → abort stale → dry-clean → rules light scan → entropy/freeEnergy measure → efficiencyRatchet → emit → tamperCostReport. Tamper cost rises as entropy falls. `pnpm erpax automate` · `pnpm erpax automate watch`.
 
 @standard schema.org — the type vocabulary, collided to single words
+
+## atoms
+
+The children this atom carries — named here so none is an orphan in the fold:
+
+- [[apply/automate]]

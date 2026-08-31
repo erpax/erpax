@@ -22,3 +22,5 @@ imports @/orchestrate, @/quantum/computer
 ---
 
 <sub>Automation · feedback loops · convergence detection</sub>
+
+Composes: [[quantum]] · [[wave]].

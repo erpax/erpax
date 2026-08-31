@@ -73,3 +73,5 @@ URL building, ecommerce client `serverURL`, admin live-preview signing.
 - Per-tenant URL signing — see `getPreviewSecret` (uses
   `@/standards/nist-sp-800-108` HKDF) and the Stripe webhook signature
   verification (`@/ecommerce/stripe/tenantStripeWebhook.ts`).
+
+Composes: [[standards]] · [[path]].

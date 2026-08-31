@@ -7,3 +7,5 @@ description: "Cloudflare constants — KIDs, environment keys, binding names"
 # cloudflare/constants
 
 Cloudflare integration constants — KIDs, environment keys, binding names.
+
+Composes: [[cloudflare]] · [[cloudflare]].

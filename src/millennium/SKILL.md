@@ -74,3 +74,17 @@ You do not solve one of these by asserting it. You solve it by **surviving its i
 - **Popper / Cook–Levin** — P vs NP is the verify/derive asymmetry made precise; a resonance is not a separation.
 
 Composes: [[coincidence]] · [[theorem]] · [[seeing]] · [[duel]] · [[quantum]]/gaps · [[rules]]/refutable · [[law]].
+
+## atoms
+
+Woven here so no member is an orphan — each is reachable from this page and links back out:
+
+- [[basis]]
+- [[continuum]]
+- [[fermat]]
+- [[four]]
+- [[goldbach]]
+- [[recursive]]
+- [[automate]]
+- [[orchestrate]]
+- [[execute]]

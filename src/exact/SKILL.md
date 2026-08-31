@@ -22,3 +22,5 @@ imports —
 ---
 
 <sub>Exact arithmetic · zero approximations · rational confidence</sub>
+
+Composes: [[algebra]] · [[number]].

@@ -14,3 +14,5 @@ Every even integer > 2 is sum of two primes. Decomposed via Riemann (distributio
 entry `@/goldbach` · sealed `0` (emerging) · trinity `1·1·1`
 exports goldbachConjecture, verifyGoldbach
 imports @/basis, @/millennium
+
+Composes: [[millennium]] · [[basis]].

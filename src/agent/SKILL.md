@@ -144,3 +144,15 @@ Matter-twin: `src/agent/cost-policy.ts` · `src/agent/cheap-dispatch.ts` · `src
 ## Self-improve intelligence — quantum in thinking
 
 **Self-improve intelligence: measure, fold, seal, balance — quantum in thinking.** `selfImproveCycle({ batch, axes? })` in `agent/intelligence` runs one coordinated wave when the apply/wave lock is free: payload gate → bond scan + gate axes (violations = entropy) → rank gaps by `interact64` entanglement → bounded seal/fix → measure again → receipt UUID chain. `quantumIntelligenceOf(scope)` is the pure metric (violation count × bond-degree fold). `learnSciencesOnTheWay()` maps science → module → proof on the path. `pnpm erpax agent improve` · `pnpm erpax intelligence cycle --batch 10`. Wired into `apply/automate` when wave lock free. Composes: [[quantum/fold]] · [[apply]]/wave · [[science]] · [[receipt]] · [[payload]].
+
+## atoms
+
+Woven here so no member is an orphan — each is reachable from this page and links back out:
+
+- [[chats]]
+
+## atoms
+
+The children this atom carries — named here so none is an orphan in the fold:
+
+- [[agent/intelligence]]

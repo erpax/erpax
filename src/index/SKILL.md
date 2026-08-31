@@ -34,3 +34,5 @@ version: 2
 # index
 
 Path lattice seal: `index/cross` audits and migrates stray siblings into distributed `index.ts` crosses.
+
+Composes: [[path]] · [[cross]] · [[seal]].

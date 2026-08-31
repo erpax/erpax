@@ -45,3 +45,9 @@ Attested in schema.org — UnRegisterAction
 **Law — [[law]]: the un- prefix inverts its action — applying it twice returns the original state (an involution).**
 
 @standard schema.org — the type vocabulary, collided to single words
+
+## atoms
+
+The children this atom carries — named here so none is an orphan in the fold:
+
+- [[un/cefact/5305]]

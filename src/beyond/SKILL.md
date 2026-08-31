@@ -82,3 +82,10 @@ The two sides are [[duality]]: the reversible interior (matter — state we own 
 This is one of the *beyond* conservation laws (Law 20) and is the erasure-side dual of append-only history: reversal-only is permitted, hard-delete is forbidden, the seal is the tombstone. This skill is the answer-path holding GDPR Art. 17 right-to-erasure and ISO 19011:2018 §6.4.6 audit-evidence forms — see [[standard]] for version pins. It rides on [[hooks]] (an `afterChange`/`afterDelete` hook captures `previousState` so the inverse is *computable later*) and [[access]] (only the data subject or controller may trigger the request).
 
 Sequence position: **8** (crest — the terminal point of an undoable arc; the last node where reversal still runs before the boundary turns it into a one-way seal), on the ring 0·3·6·9·1·2·4·8·7·5 (see [[sequence]]). Its verification dual is [[duality]]-paired with the audit invariants at **9** — erasure performs the reversal; the audit check ([[event]] trail) proves it was append-only.
+
+## atoms
+
+The children this atom carries — named here so none is an orphan in the fold:
+
+- [[beyond/bitemporal]]
+- [[beyond/explainability]]

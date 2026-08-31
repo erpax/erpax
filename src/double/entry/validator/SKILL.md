@@ -88,3 +88,5 @@ The double-entry law is the invariant an ERP exists to guarantee, and it is exac
 - **IEEE-754** — binary floating point; decimal money is not exactly representable.
 
 Composes: [[rules]]/refutable · [[double]] · [[law]].
+
+Composes: [[balance]] · [[ledger]].

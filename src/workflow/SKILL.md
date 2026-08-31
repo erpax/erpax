@@ -66,3 +66,9 @@ Composes: [[workflow/engine]] (the legality gate it drives) · [[flow]] (value/d
 - ISO/IEC 19510:2013 BPMN-2.0
 - Audit: ISO-19011:2018 §6.4.6 audit-evidence-workflow
 - Compliance: SOX §404 internal-controls workflow-execution
+
+## atoms
+
+The children this atom carries — named here so none is an orphan in the fold:
+
+- [[workflow/sealed/selfeducate]]

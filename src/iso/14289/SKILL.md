@@ -74,3 +74,5 @@ When extending:
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard ISO-14289-1:2014 pdf-ua-1`
 - `@standard ISO-14289-2:2024 pdf-ua-2`
+
+Composes: [[iso]] · [[standards]].

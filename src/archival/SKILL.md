@@ -48,3 +48,5 @@ Matter-twin: `src/archival/index.ts` — `pinForRetention` · `tenantPins` · `v
 
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard W3C IPFS CID v1 — sha-256 maps to ERPax content-uuid`
+
+Composes: [[storage]] · [[tenant]].

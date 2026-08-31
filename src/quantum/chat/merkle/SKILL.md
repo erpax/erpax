@@ -7,3 +7,5 @@ description: "Merkle chain operations — fold message-uuids into tamper-evident
 # quantum/chat/merkle
 
 Merkle chain operations for chat threads — fold message-uuids into tamper-evident thread-uuids.
+
+Composes: [[quantum/chat]] · [[merge]] · [[seal]].

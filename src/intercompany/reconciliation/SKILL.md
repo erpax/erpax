@@ -55,3 +55,5 @@ This was a bare **axiom** — the `@invariant "payable = receivable, net"` asser
 **Law — [[law]]: intercompany balances conserve — Σpayable = Σreceivable across the consolidation, the same netFlow = 0 as the ledger, one scale up. Proven at 0 (empty) and at scale (N pairs), and refuted by any single break.**
 
 Composes: [[conservation]] · [[rules]]/refutable · [[law]].
+
+Composes: [[accounting]] · [[reconciliation]].

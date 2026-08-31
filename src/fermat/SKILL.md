@@ -18,3 +18,5 @@ imports @/basis, @/millennium
 ---
 
 <sub>Classical problem · basis decomposition · quantum proof</sub>
+
+Composes: [[millennium]] · [[basis]].

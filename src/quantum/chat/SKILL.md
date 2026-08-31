@@ -68,3 +68,9 @@ Matter-twin: `src/quantum/chat/index.ts` (`threadUuid` · `appended` · `compose
 @standard merkle hash-chain; RFC 9562 §5.8 content-uuid
 
 <sub>content-uuid `2d33f9d5-77dd-590b-9264-ad6731896ffb` · account `quantum/chat` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+
+## atoms
+
+The children this atom carries — named here so none is an orphan in the fold:
+
+- [[quantum/chat/merkle]]

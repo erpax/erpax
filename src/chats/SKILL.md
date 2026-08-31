@@ -63,3 +63,5 @@ Entangled with — [[content]] · [[thing]]
 - W3C ActivityPub server-to-server activity-distribution (the model)
 - RFC 9562 §5.8 content-uuid event-identity (idempotency key)
 - ISO-27001 A.5.23 cloud-service-tenant-isolation (room per tenant)
+
+Composes: [[chat]] · [[agent]] · [[tenant]].

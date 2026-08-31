@@ -54,3 +54,5 @@ Closing a tax period requires two things to hold: the tax period must **align** 
 **Law — [[law]]: a tax period aligns with its fiscal period and its transfer-pricing adjustments are documented to a real completeness threshold — each invariant refutable, so each forbids something, rather than a bare claim nothing can contradict.**
 
 Composes: [[tax]] · [[rules]]/refutable · [[law]].
+
+Composes: [[reconciliation]] · [[period]].

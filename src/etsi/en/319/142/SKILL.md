@@ -80,3 +80,5 @@ When extending:
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard ETSI-EN-319-142-1 v1.1.1 pades-baseline-profile`
 - `@standard ISO-32000-1:2008 §12.8 pdf-signature-dictionary`
+
+Composes: [[standards]] · [[signature]].

@@ -33,3 +33,5 @@ imports @/algebra (exactAbs, exactTrunc) · @/horo/constants (re-exported from p
 ---
 
 <sub>content-uuid `—` · refactoring atom · sealed `0`</sub>
+
+Composes: [[horo]] · [[horo]] · [[algebra]].

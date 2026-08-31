@@ -61,3 +61,5 @@ The 9 codes EN-16931 admits in the EU VAT context (`S`, `Z`, `E`, `AE`, `K`, `G`
 
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard EN-16931:2017 BT-151 vat-category-code (subset that EN-16931 admits)`
+
+Composes: [[un]] · [[standards]].

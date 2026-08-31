@@ -78,3 +78,9 @@ The answer-path principle: applying this skill *implements* the standard — a c
 - A stored `taxIncluded?` boolean without the back-out [[rate]] — derive net from gross.
 
 **Law — [[law]]: a tax is a [[rate]] on a taxable [[currency]] base, categorized by a [[standard]] code (UN/CEFACT 5305) — the rate is cascade-resolved at the tax point (never a baked literal) and one engine feeds the receipt, the total, and the SAF-T file (never re-computed per surface).**
+
+## atoms
+
+The children this atom carries — named here so none is an orphan in the fold:
+
+- [[tax/period/reconciliation]]

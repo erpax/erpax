@@ -15,3 +15,5 @@ namespaced view, not a separate implementation ([[rules]]/concentration — matt
 child, and here it still sits in the hub).
 
 Composes: [[commerce]].
+
+Composes: [[money]].

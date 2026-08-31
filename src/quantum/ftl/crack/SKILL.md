@@ -7,3 +7,5 @@ description: "Quantum FTL crack detection — boundaries, crack patterns, discov
 # quantum/ftl/crack
 
 Quantum FTL crack detection — boundaries, crack patterns, discovery.
+
+Composes: [[quantum/ftl]] · [[quantum]] · [[theorem]].

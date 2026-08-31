@@ -57,3 +57,5 @@ Matter-twin: `src/anchoring/index.ts` — `anchorLeaf` · `anchorRoot` · `verif
 - `@standard W3C Verifiable Credentials Data Model 2.0`
 - `@standard ISO 19011:2018 §6.4.6 (third-party-verifiable audit trail)`
 - `@standard RFC 3161 (TSA) · eIDAS (EU 910/2014) — the real external anchors`
+
+Composes: [[seal]].

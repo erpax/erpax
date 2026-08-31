@@ -28,3 +28,5 @@ imports payload
 ---
 
 <sub>skeleton — run `pnpm erpax corpus refresh` to seal</sub>
+
+Composes: [[cases]] · [[balance]] · [[seal]].

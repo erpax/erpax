@@ -71,3 +71,10 @@ The answer-path principle: modelling a matter on this docket IS placing it under
 - **RFC 9562 §5.8** — content-uuid exhibit identity (same content ⇒ same id).
 
 **Law — [[law]]: a case is a docket whose status moves along the closed [[horo]] ring `1·2·4·8·7·5·9` (anything off-ring is rejected); evidence is append-only ([[identity]]) and a matter seals ONLY when a judgment exists — charge ↔ defence balance into one judgment, the [[accounting]] double-entry of [[justice]].**
+
+## atoms
+
+The children this atom carries — named here so none is an orphan in the fold:
+
+- [[cases/lifecycle]]
+- [[cases/validator]]

@@ -59,3 +59,5 @@ Matter-twin: `src/work/phases/index.ts`. Composes [[coordinate]] · [[accounting
 
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard ISO-22400-2:2014 manufacturing-operations KPIs standard-time`
+
+Composes: [[work]] · [[work]] · [[wave]].

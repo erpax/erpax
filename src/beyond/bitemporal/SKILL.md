@@ -48,3 +48,5 @@ Matter-twin: src/beyond/bitemporal/index.ts (`asOf` · `isHistoricalQuery`) — 
 
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard ISO/IEC 9075-2:2016 §4.15.10 temporal-tables`
+
+Composes: [[time]] · [[period]].

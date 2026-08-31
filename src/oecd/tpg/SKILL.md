@@ -58,3 +58,5 @@ Method enumeration (CUP / Resale Price / Cost Plus / TNMM / Profit Split / Other
 - OECD BEPS Action 13 — Transfer Pricing Documentation and Country-by-Country Reporting (2015 + 2017 update)
 - EU DAC-4 — Council Directive (EU) 2016/881 (administrative cooperation in tax — CbCR)
 - OECD Pillar Two GloBE Rules (Model Rules 2021)
+
+Composes: [[standards]] · [[tax]].

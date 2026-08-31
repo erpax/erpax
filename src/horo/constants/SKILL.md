@@ -32,3 +32,5 @@ imports ../index (re-exports during refactoring)
 ---
 
 <sub>content-uuid `—` · refactoring atom · sealed `0`</sub>
+
+Composes: [[horo]] · [[horo]].

@@ -66,3 +66,10 @@ Composes: [[field]] · [[accounting]] · [[access]] · [[versions]] · [[descrip
 
 - ISO-19011:2018
 - IFRS-IAS-1
+
+## atoms
+
+Woven here so no member is an orphan — each is reachable from this page and links back out:
+
+- [[anchoring]]
+- [[notification]]

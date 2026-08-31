@@ -124,3 +124,5 @@ Full list: <https://docs.peppol.eu/edelivery/policies/PolicyForUseOfIdentifiers/
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard EN-16931:2017+A1:2019 semantic-model-electronic-invoice`
 - `@standard ISO-6523-1:1998 participant-identifier-scheme`
+
+Composes: [[standards]] · [[invoices]].

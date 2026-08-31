@@ -131,3 +131,10 @@ Matter-twin: `index.ts` · `ai.ts` · `bindings.ts` · `wrangler.ts` · `seal.ts
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard W3C Service Worker §4 (Workers compat)`
 - `@standard ISO/IEC 25010:2023 §5.2 reliability — fail-fast at boot`
+
+## atoms
+
+The children this atom carries — named here so none is an orphan in the fold:
+
+- [[cloudflare/binding]]
+- [[cloudflare/constants]]

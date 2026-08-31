@@ -14,3 +14,5 @@ Any planar graph is 4-colorable. Decomposed via Hodge Conjecture (geometry) and 
 entry `@/four` · sealed `0` (emerging) · trinity `1·1·1`
 exports fourColorTheoremProof, verifyColoring
 imports @/basis, @/millennium
+
+Composes: [[millennium]] · [[basis]].

@@ -77,3 +77,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 Composes: [[fiscal/periods]] · [[accounting]] · [[identity]] · [[proof]] · [[standard]].
 
 **Law — [[law]]: EPS is earnings over the weighted-average ordinary shares for the period — diluted EPS must reflect every dilutive option/convertible/grant and can never exceed basic, and continuing operations are reported separately from discontinued (IAS-33).**
+
+Composes: [[fiscal]] · [[period]].
