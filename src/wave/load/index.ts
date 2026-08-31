@@ -100,12 +100,27 @@ export function selfBalancingWaveLoad<T>(
   type Bucket = { items: T[]; units: number }
   const buckets: Bucket[] = []
 
+  // OPEN EVERY WAVE FIRST. Buckets used to be created lazily — one, filled to `maxItems`, then the
+  // next — so a uniform-weight partition came out FULL, FULL, …, remainder: 3315 paths landed as
+  // 474×6 + 471, a spread of 3 where the law (and the atom's own name) says at most 1. Nothing was
+  // balancing; the first bucket was simply always the lightest until it was full. Planning the wave
+  // count up front (the same ceil the lazy path arrived at) lets the greedy assignment spread the
+  // remainder instead of dumping it in the last wave.
+  const planned = Number.isFinite(maxItems) ? exactMax(1, exactCeil(items.length / maxItems)) : 1
+  for (let i = 0; i < planned; i++) buckets.push({ items: [], units: 0 })
+
   const canAccept = (b: Bucket, w: number): boolean =>
     b.items.length < maxItems && b.units + w <= maxUnits + 1e-9
 
+  /** Lightest by weight; a WEIGHT TIE breaks on item count, or a uniform partition never spreads. */
   const lightest = (): Bucket | undefined => {
-    if (buckets.length === 0) return undefined
-    return buckets.reduce((a, b) => (a.units <= b.units ? a : b))
+    let best: Bucket | undefined
+    for (const b of buckets) {
+      if (!best) { best = b; continue }
+      if (b.units < best.units) best = b
+      else if (b.units === best.units && b.items.length < best.items.length) best = b
+    }
+    return best
   }
 
   for (const { item, weight } of weighted) {

@@ -23,12 +23,17 @@ describe('skill/router/upgrade/quantum — parseQuantumSkill', () => {
     expect(parsed.atomPath).toBe('quantum/emr')
     expect(parsed.pathAccountCode).toBe('quantum/emr')
     expect(parsed.law).toMatch(/\[\[analog\]\] results/)
-    expect(parsed.bonds.in).toContain('patient')
-    expect(parsed.bonds.in).toContain('quantum')
+    // NOT bonds: no SKILL.md in the corpus carries a `bonds:` frontmatter key any more (measured:
+    // 0 of 3315) — the format moved to typography/quantum blocks, and asserting the old shape against
+    // a live atom asserted a field that cannot exist. The parser's bonds/neighbors handling is proved
+    // on a fixture below, where the case can actually be constructed ([[rules]]/unraised).
+    expect(parsed.bonds.in).toEqual([])
+    expect(parsed.body).toMatch(/\[\[patient\]\]/)
     expect(parsed.collapseTriggers.some((t) => /Use when/i.test(t))).toBe(true)
     expect(parsed.environment.seal.analogResults).toBe(true)
     expect(parsed.environment.seal.pathFollow).toBe(true)
     expect(parsed.entangledFields.some((f) => f.field === 'neighbors.wikilink')).toBe(true)
+    expect(parsed.entangledFields.some((f) => f.field === 'bonds.in')).toBe(true)
   })
 
   it('extracts device collapse triggers and measurement boundary law', () => {
@@ -41,12 +46,24 @@ describe('skill/router/upgrade/quantum — parseQuantumSkill', () => {
   })
 
   it('detects wikilink entanglement drift between frontmatter and body', () => {
-    const fm = readSkill('quantum/emr').match(/^---\n([\s\S]*?)\n---/)?.[1] ?? ''
-    const body = readSkill('quantum/emr').replace(/^---[\s\S]*?---\n?/, '')
+    // On a FIXTURE, because the live corpus no longer writes `neighbors.wikilink` into frontmatter
+    // (0 of 3315 SKILL.md), so reading a live atom made this assert 0 partners and prove nothing —
+    // the drift detector would keep passing after it stopped detecting anything at all.
+    const fm = ['neighbors:', '  wikilink:', '    - patient', '    - health', '    - ghost', 'standards: []'].join('\n')
+    const body = 'The [[patient]] and their [[health]], with no third partner in the prose.'
     const fields = entangledFieldsOf(fm, body)
     const wikilink = fields.find((f) => f.field === 'neighbors.wikilink')
     expect(wikilink?.hookless).toBe(true)
+    expect(wikilink?.partners).toContain('patient')
     expect(wikilink?.partners.length).toBeGreaterThan(0)
+    // the partner the frontmatter claims and the body never links IS the drift
+    expect(wikilink?.drift).toContain('fm-missing:ghost')
+
+    // and the live atom is clean of that field entirely — stated, not silently skipped
+    const liveFm = readSkill('quantum/emr').match(/^---\n([\s\S]*?)\n---/)?.[1] ?? ''
+    const liveBody = readSkill('quantum/emr').replace(/^---[\s\S]*?---\n?/, '')
+    const live = entangledFieldsOf(liveFm, liveBody).find((f) => f.field === 'neighbors.wikilink')
+    expect(live?.partners).toEqual([])
   })
 
   it('merges collection registry fields when parsing invoices atom', () => {
