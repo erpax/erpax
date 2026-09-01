@@ -19,6 +19,7 @@
  */
 import type { GuardianVerdict } from '@/guardian'
 import { createRequire } from 'node:module'
+import { join } from 'node:path'
 import {
   deriveDiamond,
   verifyDiamond,
@@ -49,6 +50,7 @@ import {
   type FolderEntropyAccounting,
 } from '@/readme/entropy'
 import { computedAtAllScalesVerdict } from './computed-at-all-scales'
+import { hasVocabularyException } from '@/rules/word-without-logic'
 
 /** NIL parent uuid on the matrix tree axis — not a resolved atom parent. */
 const NIL_PARENT = '00000000-0000-8000-8000-000000000000'
@@ -201,11 +203,39 @@ export interface FinishedIdeaVerdict {
   readonly impurities: string[]
 }
 
+/**
+ * A LEXICON atom is prose by design and is not missing code — it has none to miss.
+ *
+ * The corpus declares this exemption in four places and this check knew none of them:
+ * `rules/word-without-logic` exempts the `vocabulary/` namespace and any SKILL carrying
+ * `vocabularyException: true` ("prose by design"); `rules/prose` judges only a SKILL
+ * beside an index.ts; `law/folder`'s trinity guardian waits for matter to appear; and
+ * the double-entry statement already books `codeRequired = code ? 1 : 0`, so it never
+ * charged a form-only atom either.
+ *
+ * This one charged all 3,404 atoms unconditionally — booking 2,182 code gaps and 2,185
+ * proof gaps against declared vocabulary, then unsealing them, then cascading that
+ * through 2,138 ancestors. One unconditional check, ~6,500 booked gaps, none of them
+ * debt the corpus actually owes.
+ *
+ * An atom WITH code still owes its proof: the exemption is for atoms that claim no code,
+ * never for one that has code and no test.
+ */
+const isLexiconAtom = (atomPath: string, cwd: string = process.cwd()): boolean =>
+  atomPath.startsWith('vocabulary/') ||
+  atomPath === 'vocabulary' ||
+  hasVocabularyException(join(cwd, 'src', atomPath))
+
 function trinityImpurities(model: DiamondModel | CollectionDiamondModel): string[] {
   const impurities: string[] = []
   const { trinity } = model
   if (!trinity.form) impurities.push('trinity.form missing (SKILL.md)')
-  if (!trinity.code) impurities.push('trinity.code missing (index.ts)')
+  if (trinity.code) {
+    if (!trinity.proof) impurities.push('trinity.proof missing (test.ts)')
+    return impurities
+  }
+  if (isLexiconAtom(model.atomPath)) return impurities
+  impurities.push('trinity.code missing (index.ts)')
   if (!trinity.proof) impurities.push('trinity.proof missing (test.ts)')
   return impurities
 }
