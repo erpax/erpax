@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use erpax, cite it by its content-addressed release DOI."
+title: "erpax — a zero-entropy, content-addressed ERP corpus"
+abstract: >-
+  erpax is an ERP corpus in which every folder under src/ is one irreducible atom
+  told three ways (form · code · proof), wired through a single content-uuid.
+  Its law is zero entropy ⇒ infinite tamper-cost: a claim is enforced by a gate
+  that blocks its violation, never by prose that asks for compliance.
+type: software
+authors:
+  - family-names: Rouschev
+    given-names: Tsvetan
+    orcid: "https://orcid.org/0009-0000-7312-9778"
+repository-code: "https://github.com/erpax/erpax"
+url: "https://github.com/erpax/erpax"
+license: CC-BY-NC-ND-4.0
+license-url: "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+version: 1.0.0
+keywords:
+  - ERP
+  - content-addressing
+  - double-entry accounting
+  - provenance
+  - tamper-evidence
+  - compliance-as-code

@@ -1,5 +1,5 @@
 name: Setup erpax
-description: Node 22 + pnpm install + empty skills.index stub (fits Worker limits; skips 80MB emit)
+description: Node 22 + pnpm install + empty skills.index stub (fits Worker limits; skips 80MB emit). skill-index=none · registry-url · npm-latest serve the publish lane.
 
 inputs:
   skill-index:
@@ -10,6 +10,14 @@ inputs:
     description: 'Install ripgrep (needed for standards emit / CI; skip on Cloudflare deploy)'
     required: false
     default: 'true'
+  registry-url:
+    description: 'npm registry to authenticate against (publish jobs only; empty = no registry auth)'
+    required: false
+    default: ''
+  npm-latest:
+    description: 'Upgrade npm globally — trusted publishing (OIDC) needs npm >= 11.5.1'
+    required: false
+    default: 'false'
 
 runs:
   using: composite
@@ -22,6 +30,12 @@ runs:
       with:
         node-version: '22'
         cache: pnpm
+        registry-url: ${{ inputs.registry-url }}
+
+    - name: Ensure modern npm (trusted publishing needs >= 11.5.1)
+      if: inputs.npm-latest == 'true'
+      shell: bash
+      run: npm install -g npm@latest
 
     - name: Install ripgrep
       if: inputs.ripgrep == 'true'
@@ -36,6 +50,7 @@ runs:
       run: pnpm install --frozen-lockfile
 
     - name: Emit skills.index
+      if: inputs.skill-index != 'none'
       shell: bash
       run: |
         if [ "${{ inputs.skill-index }}" = "full" ]; then

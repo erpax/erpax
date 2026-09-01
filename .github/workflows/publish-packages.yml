@@ -1,27 +1,36 @@
-# Publish the split @erpax/* packages (access · accounting · cloudflare · commerce · identity).
+# THE publish lane — one workflow, three kinds of release, routed by the tag.
 #
-# The providers publish THEMSELVES on each release — this workflow only builds the
-# green tree and cuts the release; npm, GitHub and Zenodo do the rest:
-#   • npm     — trusted publishing (OIDC, no token). Configure per package at
-#               npmjs.com → @erpax/<pkg> → Settings → Trusted Publisher:
-#               org erpax · repo erpax · workflow publish-packages.yml
-#   • GitHub  — the Release this workflow creates IS the GitHub artifact
-#   • Zenodo  — enable the GitHub↔Zenodo integration for erpax/erpax once; every
-#               GitHub Release then auto-mints a citable DOI (zero code here)
+#   v*            → the CORPUS release. Cuts the GitHub Release that Zenodo archives
+#                   and mints a citable DOI from (.zenodo.json · CITATION.cff).
+#   algebra-v*    → @erpax/algebra — the MIT free core math.
+#   <leaf>-v*     → @erpax/<leaf> for access · accounting · cloudflare · commerce · identity.
 #
-# Versioning is CONTENT-ADDRESSED (packages/release.mjs): a package releases only
-# when its BUILT content-uuid changed. Cut a release:
-#   node packages/release.mjs --write   # bump changed package.json + released.json
+# THE FILENAME IS LOAD-BEARING. npm trusted publishing (OIDC) is configured per package
+# against a WORKFLOW FILE, not a workflow name — npmjs.com → @erpax/<pkg> → Settings →
+# Trusted Publisher → org erpax · repo erpax · workflow publish-packages.yml. Renaming
+# this file silently breaks OIDC publishing for every package pinned to it, so the name
+# stays even though the lane now does more than packages.
+#   ⚠ ONE SETTING TO UPDATE: @erpax/algebra was pinned to publish-algebra.yml, which this
+#     workflow absorbs. Repoint its trusted publisher to publish-packages.yml.
+#
+# Zenodo: enable the GitHub↔Zenodo integration for erpax/erpax once (zenodo.org → GitHub →
+# flip erpax/erpax ON). Every Release created here is then archived with a versioned DOI
+# plus a concept DOI that always resolves to the newest version. No code, no token here.
+#
+# Cut a release:
+#   node packages/release.mjs --write     # content-addressed bump of what actually changed
 #   git commit -am 'release: <pkgs>' && git push
-#   git tag <pkg>-v<version> && git push --tags   # per changed package → fires this
+#   git tag accounting-v2.1.0 && git push origin accounting-v2.1.0
+#   git tag v1.1.0            && git push origin v1.1.0     # corpus + DOI
 #
-# algebra (MIT tier) releases through its own publish-algebra.yml — excluded here.
-
-name: Publish packages
+# A tag is the human in the loop: nothing here fires on a plain push to main.
+name: Publish
 
 on:
   push:
     tags:
+      - 'v*'
+      - 'algebra-v*'
       - 'access-v*'
       - 'accounting-v*'
       - 'cloudflare-v*'
@@ -29,145 +38,179 @@ on:
       - 'identity-v*'
   workflow_dispatch:
     inputs:
-      package:
-        description: 'Package leaf to publish (access|accounting|cloudflare|commerce|identity)'
+      tag:
+        description: 'Existing tag to publish (v1.1.0 · algebra-v0.1.2 · accounting-v2.0.0)'
         required: true
 
 permissions:
-  contents: write # create the GitHub Release (Zenodo webhook fires on it)
+  contents: write # create the Release — the object the Zenodo webhook fires on
   id-token: write # npm trusted publishing (OIDC)
 
 concurrency:
-  group: npm-publish-packages-${{ github.ref }}
+  group: publish-${{ github.event.inputs.tag || github.ref }}
   cancel-in-progress: false
 
+env:
+  TAG: ${{ github.event.inputs.tag || github.ref_name }}
+
 jobs:
-  publish:
-    name: Publish @erpax package
+  # Which release is this? Computed from the tag, once, so no job re-derives it.
+  route:
+    name: Route the tag
+    runs-on: ubuntu-latest
+    outputs:
+      kind: ${{ steps.r.outputs.kind }}
+      dir: ${{ steps.r.outputs.dir }}
+    steps:
+      - id: r
+        run: |
+          set -euo pipefail
+          case "$TAG" in
+            algebra-v*)                                          KIND=algebra; DIR=packages/algebra ;;
+            access-v*|accounting-v*|cloudflare-v*|commerce-v*|identity-v*)
+                                                                 KIND=package; DIR="packages/${TAG%%-v*}" ;;
+            v*)                                                  KIND=corpus;  DIR=. ;;
+            *) echo "::error::tag '$TAG' matches no release kind"; exit 1 ;;
+          esac
+          echo "kind=$KIND" >> "$GITHUB_OUTPUT"
+          echo "dir=$DIR"   >> "$GITHUB_OUTPUT"
+          echo "✔ $TAG → $KIND ($DIR)"
+
+  # The corpus itself — the artifact a citation points at.
+  corpus:
+    name: Corpus release (Zenodo DOI)
+    needs: route
+    if: needs.route.outputs.kind == 'corpus'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with: { ref: '${{ github.event.inputs.tag || github.ref }}', fetch-depth: 0 }
 
-      - name: Resolve target package from tag or dispatch
-        id: pkg
-        run: |
-          if [ -n "${{ github.event.inputs.package }}" ]; then
-            LEAF="${{ github.event.inputs.package }}"
-          else
-            LEAF="${GITHUB_REF_NAME%%-v*}"
-          fi
-          case "$LEAF" in
-            access|accounting|cloudflare|commerce|identity) ;;
-            *) echo "::error::unknown package leaf '$LEAF'"; exit 1 ;;
-          esac
-          echo "leaf=$LEAF" >> "$GITHUB_OUTPUT"
-          echo "dir=packages/$LEAF" >> "$GITHUB_OUTPUT"
+      # A DOI cannot be recalled, only superseded — so the citation metadata is checked
+      # BEFORE the Release object exists, never after.
+      - name: Citation gate — .zenodo.json ⊗ CITATION.cff ⊗ package.json agree
+        run: node scripts/citation-consistent.mjs
+      - name: Tag names the version it releases
+        run: node scripts/assert-tag-version.mjs "$TAG" .
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-          registry-url: 'https://registry.npmjs.org'
-          cache: pnpm
-
-      - name: Ensure modern npm (trusted publishing needs >= 11.5.1)
-        run: npm install -g npm@latest
-
-      - name: Install (workspace)
-        run: pnpm install --frozen-lockfile
-
-      - name: Assert root stays private (never publish the licensed app)
-        run: |
-          node -e "
-            const p = require('./package.json')
-            if (p.private !== true || p.name !== 'erpax') { console.error('✖ root must be private erpax'); process.exit(1) }
-            console.log('✔ root private — will not publish the app')
-          "
+      - uses: ./.github/actions/setup
+        with: { skill-index: none, ripgrep: 'false' }
 
       - name: Self-contained gate — every imported atom is tracked
-        run: |
-          set -euo pipefail
-          # A committed file importing an atom that never got `git add`ed builds on the
-          # author's disk and dies here with ERR_MODULE_NOT_FOUND. Catch it before the
-          # build burns, not after (this is how the Cloudflare production build broke).
-          node scripts/ensure-tracked-imports.mjs
+        run: node scripts/ensure-tracked-imports.mjs
+      - name: Boot gate — the Payload config loads
+        run: pnpm exec cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/run/load/index.ts
 
+      - name: Create GitHub Release (fires the Zenodo DOI webhook)
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ env.TAG }}
+          name: ${{ env.TAG }}
+          generate_release_notes: true
+          files: |
+            CITATION.cff
+            .zenodo.json
+
+  # @erpax/algebra — the MIT core. Fold magma and every licensed surface are excluded
+  # by packages/algebra/build.mjs; this lane only proves and ships what is free.
+  algebra:
+    name: Publish @erpax/algebra
+    needs: route
+    if: needs.route.outputs.kind == 'algebra'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: '${{ github.event.inputs.tag || github.ref }}' }
+      - uses: ./.github/actions/setup
+        with: { skill-index: none, ripgrep: 'false', registry-url: 'https://registry.npmjs.org', npm-latest: 'true' }
+
+      - name: Assert root stays private
+        run: node scripts/assert-root-private.mjs
+
+      # A TESTED release. This package shipped for a while with no test and no gate —
+      # checkout, build, assert tag, publish. A publisher that cannot fail is not a release.
+      - name: Test the package being published
+        run: pnpm exec vitest run src/algebra --config ./vitest.config.mts
+      - name: Math-ban gate — every theorem is algebra, never host Math.*
+        run: pnpm exec cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/algebra/host/index.ts
+      - name: Build free core math
+        working-directory: packages/algebra
+        run: pnpm build
+
+      - name: Tag names the version it releases
+        run: node scripts/assert-tag-version.mjs "$TAG" packages/algebra
+      - name: Version is not already burned on npm
+        run: node scripts/assert-version-unpublished.mjs packages/algebra
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # scoped packuments may 404 without auth
+
+      - name: Publish to npm
+        working-directory: packages/algebra
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # fallback only; prefer trusted publisher
+
+  # The split @erpax/* providers. Versioning is CONTENT-ADDRESSED (packages/release.mjs):
+  # a package releases only when its BUILT content-uuid changed.
+  package:
+    name: Publish @erpax package
+    needs: route
+    if: needs.route.outputs.kind == 'package'
+    runs-on: ubuntu-latest
+    env:
+      DIR: ${{ needs.route.outputs.dir }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: '${{ github.event.inputs.tag || github.ref }}' }
+      - uses: ./.github/actions/setup
+        with: { skill-index: none, ripgrep: 'false', registry-url: 'https://registry.npmjs.org', npm-latest: 'true' }
+
+      - name: Assert root stays private
+        run: node scripts/assert-root-private.mjs
+      # A committed file importing an atom that never got `git add`ed builds on the
+      # author's disk and dies here with ERR_MODULE_NOT_FOUND — how the Cloudflare
+      # production build broke. Catch it before the build burns, not after.
+      - name: Self-contained gate — every imported atom is tracked
+        run: node scripts/ensure-tracked-imports.mjs
       - name: Compliance gate — folder law + content-manifest in sync
         run: |
-          set -euo pipefail
-          # The package's own build enforces its closureCeiling ratchet; release.mjs --check
-          # asserts the content-addressed version manifest matches the built content (no drift).
           node packages/build.mjs all
           node packages/release.mjs --check
 
-      # A package that builds but whose Payload config cannot BOOT is not stable —
-      # "a corpus that cannot load has no other properties" ([[rules]]). run/load exits
-      # non-zero unless the live config loads every collection, so a broken config
-      # blocks the publish instead of shipping a package that serves a dead app.
+      # A package that builds but whose Payload config cannot BOOT is not stable — a
+      # corpus that cannot load has no other properties.
       #
       # HONEST BOUNDARY: this proves the config BOOTS, not that the payload.config.*
-      # suites pass — they are currently blocked by the architecture-invariants
-      # locality regression (the dissolution campaign). Boot is the property this
-      # gate can honestly certify today; the suites join it when that clears.
+      # suites pass — they are blocked by the locality regression of the dissolution
+      # campaign. Boot is what this gate can honestly certify today.
       - name: Boot gate — the Payload config loads
-        run: |
-          set -euo pipefail
-          pnpm exec cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/run/load/index.ts
+        run: pnpm exec cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/run/load/index.ts
 
       # The twelve external rails erpax codes against, checked OFFLINE against frozen
-      # captures. This is deliberately the half that cannot flake: it imports only the
-      # *Offline functions, so a release can never be failed by an authority rebooting.
-      # (That is not hypothetical — a correct erpax would have failed here when the EU
-      # sanctions host answered 403, and that 403 turned out to be OUR missing token.)
-      #
-      # It also fails closed when the coverage ledger cannot resolve its own contracted
-      # endpoints — the defect that let a working ECB contract mark nothing as covered —
-      # and when a new rail claims a client with no contract beside it.
+      # captures — deliberately the half that cannot flake: it imports only the *Offline
+      # functions, so a release can never be failed by an authority rebooting.
       #
       # HONEST BOUNDARY: green means erpax's parsers agree with CAPTURES, never that an
-      # authority is up or still sending that shape. Only `erpax outward eu|bg|world
-      # --online` speaks to the present, and it stays out of the release path.
+      # authority is up or still sending that shape.
       - name: Contract gate — erpax parses what the external rails send
-        run: |
-          set -euo pipefail
-          pnpm exec cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/outward/gate/index.ts
+        run: pnpm exec cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/outward/gate/index.ts
 
-      - name: Assert tag matches package version
-        if: startsWith(github.ref, 'refs/tags/')
-        run: |
-          TAG="${GITHUB_REF_NAME##*-v}"
-          PKG="$(node -p "JSON.parse(require('fs').readFileSync('${{ steps.pkg.outputs.dir }}/package.json','utf8')).version")"
-          if [ "$TAG" != "$PKG" ]; then
-            echo "::error::Tag ${GITHUB_REF_NAME} does not match version ${PKG}"; exit 1
-          fi
-
-      - name: Fail if version already on npm
-        run: |
-          set -euo pipefail
-          NAME="$(node -p "JSON.parse(require('fs').readFileSync('${{ steps.pkg.outputs.dir }}/package.json','utf8')).name")"
-          VER="$(node -p "JSON.parse(require('fs').readFileSync('${{ steps.pkg.outputs.dir }}/package.json','utf8')).version")"
-          RAW="$(npm view "$NAME" versions --json 2>/dev/null || echo '[]')"
-          echo "$RAW" | node -e "
-            let d=''; process.stdin.on('data',c=>d+=c); process.stdin.on('end',()=>{
-              let v=[]; try{const j=JSON.parse(d||'[]'); v=Array.isArray(j)?j:(typeof j==='string'?[j]:[])}catch{}
-              if (v.includes('$VER')) { console.error('✖ $NAME@$VER already on npm — bump via release.mjs'); process.exit(2) }
-              console.log('✔ $NAME@$VER not yet published')
-            })"
+      - name: Tag names the version it releases
+        run: node scripts/assert-tag-version.mjs "$TAG" "$DIR"
+      - name: Version is not already burned on npm
+        run: node scripts/assert-version-unpublished.mjs "$DIR"
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish to npm (provider publishes itself via OIDC)
-        working-directory: ${{ steps.pkg.outputs.dir }}
+        working-directory: ${{ needs.route.outputs.dir }}
         run: npm publish --access public --provenance
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # fallback only; prefer trusted publisher
 
-      - name: Create GitHub Release (fires the Zenodo DOI webhook)
-        if: startsWith(github.ref, 'refs/tags/')
+      - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.ref_name }}
-          name: ${{ github.ref_name }}
+          tag_name: ${{ env.TAG }}
+          name: ${{ env.TAG }}
           generate_release_notes: true

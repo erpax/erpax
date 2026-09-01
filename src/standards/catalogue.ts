@@ -2012,7 +2012,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Systems & software quality models",
     "uuid": "3c2f1991-7fa2-8419-9109-b0150b5780ab",
     "color": "hsl(287 80% 39%)",
-    "count": 192,
+    "count": 190,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -2118,7 +2118,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Software testing",
     "uuid": "e69bd662-b3ef-8ba7-ac6c-ff5c05fd3db2",
     "color": "hsl(355 59% 40%)",
-    "count": 82,
+    "count": 81,
     "modules": [
       {
         "path": "src/agents/mcp/self-test.ts",
@@ -3453,7 +3453,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Auditing management systems",
     "uuid": "85eb43b8-8305-8b77-948c-93e96eba62e4",
     "color": "hsl(83 87% 54%)",
-    "count": 97,
+    "count": 95,
     "modules": [
       {
         "path": "src/accounting/proof/index.ts",
@@ -7787,7 +7787,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Uniform Resource Identifier (URI): Generic Syntax",
     "uuid": "6538af56-2a38-8326-b7ab-261a9fd42e3d",
     "color": "hsl(352 55% 52%)",
-    "count": 45,
+    "count": 44,
     "modules": [
       {
         "path": "src/app/(frontend)/(sitemaps)/pages-sitemap.xml/route.ts",
@@ -9953,7 +9953,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Accessible Rich Internet Applications",
     "uuid": "a46dba6c-64b6-81af-b328-04d4369fa69b",
     "color": "hsl(333 66% 50%)",
-    "count": 63,
+    "count": 62,
     "modules": [
       {
         "path": "src/admin/bar/index.tsx",
