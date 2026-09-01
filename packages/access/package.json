@@ -1,6 +1,6 @@
 {
   "name": "@erpax/access",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "erpax access — sequence 3·9 (control): RBAC, multi-tenancy, auth — the control plane. Core math (@erpax/algebra) is MIT; this package is CC-BY-NC-ND-4.0 or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",
