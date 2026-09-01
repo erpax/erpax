@@ -24,7 +24,7 @@ import type { PathCanonicalEntry } from '@/path'
 import type { Receipt } from '@/receipt'
 import type { ToolGrant } from '@/sandbox'
 import type { WaveSession } from '@/wave'
-import type { AgentSkillContext } from './skill-context'
+import type { AgentSkillContext } from '../skill-context'
 
 export type AgentId =
   | 'finance' | 'sales' | 'marketing' | 'hr' | 'legal'

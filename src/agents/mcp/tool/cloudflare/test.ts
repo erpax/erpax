@@ -9,7 +9,7 @@
  * @audit Conservation Law 38 mcp-tool-standardization
  */
 import { describe, it, expect } from 'vitest'
-import { buildCloudflareTools } from './cloudflare'
+import { buildCloudflareTools } from './index'
 
 const vq = buildCloudflareTools().find((t) => t.name === 'erpax.cloudflare.vectorizeQuery')!
 

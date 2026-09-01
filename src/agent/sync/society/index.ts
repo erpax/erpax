@@ -26,7 +26,7 @@
 import { connectAgentSync } from '@/agent/sync'
 import type { AgentSync, ErpaxEvent } from '@/agent/sync'
 import { computeContentUuid, uuid } from '@/integrity'
-import type { AgentContext, AgentRuntime, DomainEvent } from '../types'
+import type { AgentContext, AgentRuntime, DomainEvent } from '../../types'
 
 /**
  * Canonical fallback host for the hosted erpax society. Lives here (this

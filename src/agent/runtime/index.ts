@@ -11,10 +11,10 @@
 
 import type {
   AgentContext, AgentEffect, AgentId, AgentRegistry, AgentRuntime, DomainAgent, DomainEvent,
-} from './types'
+} from '../types'
 import type { SpecChainStep } from '@/spec/generator'
-import { processEffects } from './effect-processor'
-import { assertStrictDispatch } from './index'
+import { processEffects } from '../effect-processor'
+import { assertStrictDispatch } from '..'
 
 /**
  * Run one agent's `onEvent` and process its effects — the single per-agent body

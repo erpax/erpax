@@ -46,44 +46,44 @@ src/agent/blocks.ts:38: * @standard W3C Web Components (composition pattern)
 src/agent/blocks.ts:39: * @standard ISO/IEC 25010:2023 §5.4 reusability + §5.7 modularity
 src/agent/bootstrap.ts:11: * @standard ISO/IEC 25010:2023 §5.4 reusability (single-source-of-truth registry)
 src/agent/coil.ts:15: * @standard ISO/IEC 25010:2023 §5.4 reusability (single shared society per tenant)
-src/agent/context.ts:23: * @standard ISO/IEC 25010:2023 §5.4 reusability (single-source-of-truth context)
-src/agent/context.ts:24: * @standard ISO/IEC 12207 software-life-cycle (one substrate seam)
+src/agent/context/index.ts:23: * @standard ISO/IEC 25010:2023 §5.4 reusability (single-source-of-truth context)
+src/agent/context/index.ts:24: * @standard ISO/IEC 12207 software-life-cycle (one substrate seam)
 src/agent/effect-processor.test.ts:6: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/agent/effect-processor.ts:25: * @standard ISO/IEC 25010:2023 §5.4 reusability + §5.5 testability
 src/agent/effect-processor.ts:26: * @standard ISO/IEC 12207 software-life-cycle (single substrate seam)
-src/agent/harmonics.ts:24: * @standard NIST FIPS 180-4 sha-256 (the content-uuid digest)
+src/agent/harmonics/index.ts:24: * @standard NIST FIPS 180-4 sha-256 (the content-uuid digest)
 src/agent/index.ts:6: * @standard NIST SP 800-162 ABAC · OWASP-LLM-Top-10:2025 LLM01
 src/agent/memory-writer.ts:26: * @standard ISO 19011:2018 §6.4.6 audit-evidence (per-cycle history)
 src/agent/population.ts:18: * @standard ISO/IEC 25010 §5.5 testability + §5.8 resource-utilisation (bounded)
-src/agent/registry.test.ts:5: * @standard ISO/IEC 25010:2023 §5.5 testability
-src/agent/registry.ts:13: * @standard ISO/IEC 25010:2023 §5.4 reusability
-src/agent/registry.ts:14: * @standard ISO/IEC 12207 software-life-cycle (single-source-of-truth)
+src/agent/registry/index.ts:13: * @standard ISO/IEC 25010:2023 §5.4 reusability
+src/agent/registry/index.ts:14: * @standard ISO/IEC 12207 software-life-cycle (single-source-of-truth)
+src/agent/registry/test.ts:5: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/agent/research/index.ts:21: * @standard RFC 9562 §5.8 content-addressed identity (agent uuid, finding uuid)
-src/agent/runtime.test.ts:6: * @standard ISO/IEC 25010:2023 §5.5 testability
-src/agent/runtime.ts:9: * @standard ISO/IEC 25010:2023 §5.4 reusability
+src/agent/runtime/index.ts:9: * @standard ISO/IEC 25010:2023 §5.4 reusability
+src/agent/runtime/test.ts:6: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/agent/service.ts:20: * @standard RFC 9562 §5.8 name-based UUIDv8 (tenant-scoped content-addressed agent identity)
 src/agent/sync/chat-broadcast.ts:22: * @standard RFC 9562 §5.8 content-uuid event-identity (idempotency key)
 src/agent/sync/chat-broadcast.ts:23: * @standard ISO-27001 A.5.23 cloud-service-tenant-isolation (room per tenant)
 src/agent/sync/discovery.ts:20: * @standard W3C ActivityPub server-to-server activity-distribution (the model)
 src/agent/sync/discovery.ts:21: * @standard RFC 9562 §5.8 content-uuid contribution-identity (the merge key)
-src/agent/sync/horo.ts:27: * @standard W3C ActivityPub server-to-server activity-distribution (the model)
-src/agent/sync/horo.ts:28: * @standard RFC 9562 §5.8 content-uuid team identity (the room presence)
-src/agent/sync/horo.ts:29: * @standard ISO/IEC 27001 A.5.23 cloud-service-tenant-isolation (room per tenant)
+src/agent/sync/horo/index.ts:27: * @standard W3C ActivityPub server-to-server activity-distribution (the model)
+src/agent/sync/horo/index.ts:28: * @standard RFC 9562 §5.8 content-uuid team identity (the room presence)
+src/agent/sync/horo/index.ts:29: * @standard ISO/IEC 27001 A.5.23 cloud-service-tenant-isolation (room per tenant)
 src/agent/sync/index.ts:15: * @standard W3C ActivityPub server-to-server activity-distribution (the model)
 src/agent/sync/index.ts:16: * @standard RFC-6455 websocket
 src/agent/sync/index.ts:17: * @standard RFC-4122 §4.3 content-uuid event-identity (idempotency key)
 src/agent/sync/index.ts:52: * @standard RFC 9562 §5.8 content-uuid event-identity (idempotency key)
 src/agent/sync/payload-chat.ts:20: * @standard RFC 9562 §5.8 content-uuid event-identity (idempotency key)
 src/agent/sync/payload-chat.ts:21: * @standard ISO-27001 A.5.23 cloud-service-tenant-isolation (room per tenant)
-src/agent/sync/society.ts:21: * @standard W3C ActivityPub server-to-server activity-distribution (the model)
-src/agent/sync/society.ts:22: * @standard ISO/IEC 27001 A.5.23 cloud-service-tenant-isolation (room per tenant)
-src/agent/sync/society.ts:23: * @standard RFC 9562 §5.8 content-uuid event-identity (idempotency key)
+src/agent/sync/society/index.ts:21: * @standard W3C ActivityPub server-to-server activity-distribution (the model)
+src/agent/sync/society/index.ts:22: * @standard ISO/IEC 27001 A.5.23 cloud-service-tenant-isolation (room per tenant)
+src/agent/sync/society/index.ts:23: * @standard RFC 9562 §5.8 content-uuid event-identity (idempotency key)
 src/agent/sync/training-broadcast.ts:19: * @standard SFIA 8 responsibility-levels (the level → M-value depth)
 src/agent/sync/training-broadcast.ts:20: * @standard ISO 30405:2016 essential-vs-desirable (mandatory gates the surface)
 src/agent/team.ts:18: * @standard RFC 9562 §5.8 content-addressed identity (agent + team uuid)
-src/agent/types.test.ts:9: * @standard ISO/IEC 25010:2023 §5.5 testability
-src/agent/types.ts:14: * @standard ISO/IEC 25010:2023 §5.4 reusability + §5.5 testability
-src/agent/types.ts:15: * @standard ISO/IEC 12207 software-life-cycle (single-source-of-truth)
+src/agent/types/index.ts:14: * @standard ISO/IEC 25010:2023 §5.4 reusability + §5.5 testability
+src/agent/types/index.ts:15: * @standard ISO/IEC 12207 software-life-cycle (single-source-of-truth)
+src/agent/types/test.ts:9: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/agents/accounting/finance.agent.test.ts:8: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/agents/accounting/finance.agent.ts:17: * @standard IFRS IFRS-15 §38 point-in-time-control-transfer
 src/agents/accounting/finance.agent.ts:18: * @standard IFRS IAS-7 statement-of-cash-flows
@@ -94,12 +94,12 @@ src/agents/mcp/auto-generated.ts:44: * @standard ISO/IEC 25010:2023 §5.4 reusab
 src/agents/mcp/dry-clean.test.ts:16: * @standard ISO/IEC 25010:2023 §5.4 reusability (DRY by detection)
 src/agents/mcp/dry-clean.ts:31: * @standard ISO/IEC 25010:2023 §5.4 reusability — DRY by detection
 src/agents/mcp/dry-clean.ts:32: * @standard ISO/IEC 25010:2023 §5.7 modularity
-src/agents/mcp/i18n.test.ts:13: * @standard BCP-47 — language tag region stripping
-src/agents/mcp/i18n.test.ts:14: * @standard W3C HTTP Content-Language (RFC 7231 §3.1.3.2)
-src/agents/mcp/i18n.ts:32: * @standard W3C HTTP Content-Language (RFC 7231 §3.1.3.2)
-src/agents/mcp/i18n.ts:33: * @standard ECMA-402 internationalization-api
-src/agents/mcp/i18n.ts:34: * @standard BCP-47 language tags
-src/agents/mcp/i18n.ts:35: * @standard EU 1958/1 official-languages-of-the-european-union
+src/agents/mcp/i18n/index.ts:32: * @standard W3C HTTP Content-Language (RFC 7231 §3.1.3.2)
+src/agents/mcp/i18n/index.ts:33: * @standard ECMA-402 internationalization-api
+src/agents/mcp/i18n/index.ts:34: * @standard BCP-47 language tags
+src/agents/mcp/i18n/index.ts:35: * @standard EU 1958/1 official-languages-of-the-european-union
+src/agents/mcp/i18n/test.ts:13: * @standard BCP-47 — language tag region stripping
+src/agents/mcp/i18n/test.ts:14: * @standard W3C HTTP Content-Language (RFC 7231 §3.1.3.2)
 src/agents/mcp/in-process-client.test.ts:15: * @standard MCP 0.6 (tools/list + tools/call)
 src/agents/mcp/in-process-client.test.ts:16: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/agents/mcp/in-process-client.ts:10: * @standard MCP 0.6 — Model Context Protocol tools/list + tools/call
@@ -138,8 +138,8 @@ src/agents/mcp/tool/batch.ts:19: * @standard MCP 0.6 — tools/list + tools/call
 src/agents/mcp/tool/batch.ts:20: * @standard ISO 19011:2018 §6.4.6 audit-evidence (per-row ok/error summary)
 src/agents/mcp/tool/batch.ts:21: * @standard ISO/IEC 27002 §5.4 segregation-of-duties (admin-gated bulk mutation)
 src/agents/mcp/tool/chain.ts:14: * @standard MCP 0.6 + ISO/IEC 23257-1 blockchain reference architecture
-src/agents/mcp/tool/cloudflare.test.ts:8: * @standard ISO 27001 A.9.4.1 access-control-to-information (fail-closed authz)
-src/agents/mcp/tool/cloudflare.ts:8: * @standard ISO 27001 A.5.23 cloud-service-tenant-isolation
+src/agents/mcp/tool/cloudflare/index.ts:8: * @standard ISO 27001 A.5.23 cloud-service-tenant-isolation
+src/agents/mcp/tool/cloudflare/test.ts:8: * @standard ISO 27001 A.9.4.1 access-control-to-information (fail-closed authz)
 src/agents/mcp/tool/consistency.ts:20: * @standard ISO/IEC 25010:2023 §5.7 modularity
 src/agents/mcp/tool/error.ts:13: * @standard MCP 0.6
 src/agents/mcp/tool/events.ts:8: * @standard ISO 19011:2018 §6.4.6 audit-evidence (event-graph traceability)
@@ -160,7 +160,7 @@ src/agents/registered/data.agent.ts:5: * @standard ISO 20022 + ECB FX-rates
 src/agents/registered/design.agent.ts:6: * @standard WCAG 2.2 + WAI-ARIA 1.2 + ISO 9241-110 dialogue-principles
 src/agents/registered/engineering.agent.ts:5: * @standard SOX §404 + ISO 19011:2018 §6.4.6 + COSO 2013
 src/agents/registered/hr/agent.ts:5: * @standard ISO IAS-19 employee-benefits + IAS-26 retirement-benefits
-src/agents/registered/hr/training.ts:19: * @standard SFIA 8 responsibility-levels (the level → M-value depth)
+src/agents/registered/hr/training/index.ts:19: * @standard SFIA 8 responsibility-levels (the level → M-value depth)
 src/agents/registered/legal/agent.ts:5: * @standard GDPR Art-7 consent + Art-15 access + Art-17 erasure
 src/agents/registered/legal/agent.ts:6: * @standard eIDAS qualified-trust-services
 src/agents/registered/legal/conflict.ts:19: * @standard ISO 19011 — the verdict is a deterministic function of the party graph
@@ -5480,20 +5480,20 @@ src/address/validation/index.ts:20: * @audit ISO-19011:2018 audit-trail address-
 src/admin/TenantManagement.tsx:8: * @audit ISO-19011:2018 audit-trail admin-actions
 src/agent/access/index.ts:14: * @audit the reached uuid is content-addressed (modality-free); trustNative marks the MCP door only
 src/agent/blocks.ts:40: * @audit ISO 19011:2018 §6.4.6 (every block composition audit-trailed)
-src/agent/harmonics.ts:25: * @audit Conservation Law 55 (tamper-reversibility-cost) — the fight is priced, not forbidden
+src/agent/harmonics/index.ts:25: * @audit Conservation Law 55 (tamper-reversibility-cost) — the fight is priced, not forbidden
 src/agent/memory-writer.ts:27: * @audit Conservation Law 8 content-uuid
 src/agent/memory-writer.ts:28: * @audit Conservation Law 10 referential-harmony
 src/agent/sync/discovery.ts:22: * @audit Conservation Law 8 content-uuid · Law 62 coverage (each fill ↑ coverage)
-src/agent/sync/horo.ts:30: * @audit Conservation Law 8 content-uuid · merge (many members, one breath/dedupe)
+src/agent/sync/horo/index.ts:30: * @audit Conservation Law 8 content-uuid · merge (many members, one breath/dedupe)
 src/agent/team.ts:19: * @audit Conservation Law 8 content-uuid · merge set-union (no coordination)
-src/agent/types.ts:16: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
+src/agent/types/index.ts:16: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
 src/agent/ui/index.ts:11: * @audit every facet computed from the atom's content-uuid; coverage read live from the matrix
 src/agents/accounting/finance.agent.ts:20: * @audit ISO-19011:2018 §6.4.6 audit-evidence
 src/agents/mcp/atom-catalogue.generated.ts:10: * @audit ISO 19011:2018 §6.4.6 (catalogue traceable to the SKILL.md corpus)
 src/agents/mcp/auto-generated.ts:45: * @audit ISO 19011:2018 §6.4.6 (auto-generation traceable to spec)
 src/agents/mcp/dry-clean.test.ts:17: * @audit Conservation Law 50 mcp-dry-cleanliness
 src/agents/mcp/dry-clean.ts:33: * @audit ISO 19011:2018 §6.4.6 (every duplication finding audit-trailed)
-src/agents/mcp/i18n.ts:36: * @audit ISO 19011:2018 §6.4.6 (audit-evidence available in user's locale)
+src/agents/mcp/i18n/index.ts:36: * @audit ISO 19011:2018 §6.4.6 (audit-evidence available in user's locale)
 src/agents/mcp/index.ts:11: * @audit re-exports only; the truth lives in ./in-process-client and ./tool-defs
 src/agents/mcp/presentation.ts:36: * @audit ISO 19011:2018 §6.4.6 (MCP surface SEO-traceable)
 src/agents/mcp/rebuild-from-source.ts:38: * @audit ISO 19011:2018 §6.4.6 (rebuild plan audit-trailed)
@@ -5504,8 +5504,8 @@ src/agents/mcp/tool/_guards.test.ts:28: * @audit ISO 19011:2018 §6.4.6 (securit
 src/agents/mcp/tool/_guards.ts:35: * @audit Conservation Law 58 uuid-self-protection (tenant-scope branch)
 src/agents/mcp/tool/batch.ts:22: * @audit Conservation Law 4 event-graph-closure (emitOnStatusTransition fires per row)
 src/agents/mcp/tool/chain.ts:15: * @audit Conservation Law 60 binding-uuid-is-blockchain-leaf
-src/agents/mcp/tool/cloudflare.test.ts:9: * @audit Conservation Law 38 mcp-tool-standardization
-src/agents/mcp/tool/cloudflare.ts:9: * @audit Conservation Law 38 mcp-tool-standardization
+src/agents/mcp/tool/cloudflare/index.ts:9: * @audit Conservation Law 38 mcp-tool-standardization
+src/agents/mcp/tool/cloudflare/test.ts:9: * @audit Conservation Law 38 mcp-tool-standardization
 src/agents/mcp/tool/consistency.ts:21: * @audit Conservation Law 38 mcp-tool-standardization (per-area boundaries)
 src/agents/mcp/tool/error.ts:14: * @audit Conservation Law 64 errors-are-first-class-uuids
 src/agents/mcp/tool/events.ts:9: * @audit Conservation Law 4 event-graph-closure
@@ -5516,7 +5516,7 @@ src/agents/mcp/tool/kv.ts:20: * @audit Conservation Law 8 + 47 + 57 (universal u
 src/agents/mcp/tool/security.ts:19: * @audit Conservation Law 58 uuid-self-protection
 src/agents/mcp/tool/share.ts:15: * @audit Conservation Law 59 uuid-based-sharing-with-rbac
 src/agents/registered/consistency.agent.ts:23: * @audit ISO 19011:2018 §6.4.6 (proposal + resolution audit-trailed)
-src/agents/registered/hr/training.ts:20: * @audit ISO 19011 — the plan, the rate and the debt are deterministic functions of the gap
+src/agents/registered/hr/training/index.ts:20: * @audit ISO 19011 — the plan, the rate and the debt are deterministic functions of the gap
 src/agents/registered/legal/conflict.ts:20: * @audit ABA Model Rule 1.7 conflict-of-interest (named; the form is the merge law)
 src/ai/anomaly-detection.ts:12: * @audit ISO-19011:2018 §6.4.6 audit-evidence
 src/ai/audit-summarisation.ts:11: * @audit ISO 19011:2018 §6.4.6 audit-evidence

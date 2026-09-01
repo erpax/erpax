@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { readdirSync, readFileSync } from 'node:fs'
+import { readdirSync, readFileSync, statSync, existsSync } from 'node:fs'
 import { join } from 'node:path'
 import { importSpecifiersOf } from '@/syntax'
 
@@ -12,8 +12,14 @@ import { importSpecifiersOf } from '@/syntax'
  * by a rename campaign, which is exactly when that happens.
  */
 const dir = join(import.meta.dirname, '.')
+const isChildAtom = (name: string): boolean =>
+  statSync(join(dir, name)).isDirectory() && existsSync(join(dir, name, 'index.ts'))
 const members = readdirSync(dir)
-  .filter((f) => f.endsWith('.ts') && f !== 'index.ts' && f !== 'test.ts' && f !== 'translations.ts' && !f.endsWith('.test.ts'))
+  .filter(
+    (f) =>
+      (f.endsWith('.ts') && f !== 'index.ts' && f !== 'test.ts' && f !== 'translations.ts' && !f.endsWith('.test.ts')) ||
+      (!f.includes('.') && isChildAtom(f)),
+  )
   .map((f) => f.replace(/\.ts$/, ''))
   .sort()
 const faced = importSpecifiersOf('index.ts', readFileSync(join(dir, 'index.ts'), 'utf8'))

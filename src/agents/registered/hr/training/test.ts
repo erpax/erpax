@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { planTrainingEffects, TRAINING_EMIT, TRAINING_TRIGGER } from './training'
+import { planTrainingEffects, TRAINING_EMIT, TRAINING_TRIGGER } from './index'
 import type { DomainEvent } from '@/agent'
 import { ANCHOR } from '@/allocation'
 import { levelCeiling } from '@/decompression'

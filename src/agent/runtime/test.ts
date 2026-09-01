@@ -6,9 +6,9 @@
  * @standard ISO/IEC 25010:2023 §5.5 testability
  */
 import { describe, it, expect, vi } from 'vitest'
-import { createAgentRuntime } from './runtime'
-import { createAgentRegistry } from './registry'
-import type { AgentContext, AgentEffect, DomainAgent, DomainEvent } from './types'
+import { createAgentRuntime } from './index'
+import { createAgentRegistry } from '../registry'
+import type { AgentContext, AgentEffect, DomainAgent, DomainEvent } from '../types'
 
 function mockCtx(): AgentContext {
   return {

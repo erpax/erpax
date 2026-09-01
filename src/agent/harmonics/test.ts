@@ -5,8 +5,8 @@ import {
   lockInUuid,
   isUuidLocked,
   assertUuidLocked,
-} from './harmonics'
-import type { AgentDef, ClonedAgent } from './service'
+} from './index'
+import type { AgentDef, ClonedAgent } from '../service'
 
 const DEF: AgentDef = { name: 'finance-1', skills: ['/accounting/SKILL'], purpose: 'post journals' }
 
