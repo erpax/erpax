@@ -15,7 +15,7 @@ repository-code: "https://github.com/erpax/erpax"
 url: "https://github.com/erpax/erpax"
 license: CC-BY-NC-ND-4.0
 license-url: "https://creativecommons.org/licenses/by-nc-nd/4.0/"
-version: 1.0.1
+version: 1.0.2
 keywords:
   - ERP
   - content-addressing

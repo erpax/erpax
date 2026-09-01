@@ -25,7 +25,12 @@ const cff = readFileSync('CITATION.cff', 'utf8')
 // needs an install is a gate that gets skipped ([[rules]]: a gate that can be skipped
 // is prose). The fields checked are single-line scalars, so a line read is exact.
 const cffField = (key) => {
-  const line = cff.split('\n').find((l) => l.trimStart().startsWith(`${key}:`))
+  // A list item carries its key behind a dash — `  - family-names: Rouschev`. Reading
+  // only the un-dashed form returned '' for it, and an empty read compares equal to
+  // nothing rather than failing: the check would have passed over a missing author.
+  const line = cff
+    .split('\n')
+    .find((l) => l.trimStart().replace(/^-\s*/, '').startsWith(`${key}:`))
   return line ? line.slice(line.indexOf(':') + 1).trim().replace(/^["']|["']$/g, '') : ''
 }
 
@@ -46,6 +51,20 @@ if (!cffField('orcid').endsWith(ORCID)) {
 }
 if (zen.upload_type !== 'software') fail(`.zenodo.json upload_type must be "software"`)
 
+// npm carries the same identity the DOI record will. An author named in two of three
+// faces and absent from the third is the drift this gate exists to refuse.
+if (!String(pkg.author?.url ?? '').endsWith(ORCID)) {
+  fail(`package.json author.url ${pkg.author?.url ?? '(none)'} does not carry ORCID ${ORCID}`)
+}
+const given = cffField('given-names')
+const family = cffField('family-names')
+const cffName = `${given} ${family}`.trim()
+if (cffName && pkg.author?.name && cffName !== pkg.author.name) {
+  fail(`CITATION.cff author "${cffName}" ≠ package.json author "${pkg.author.name}"`)
+}
+
 if (!process.exitCode) {
-  console.log(`✔ citation consistent — v${pkg.version} · ${pkg.license} · ORCID ${ORCID}`)
+  console.log(
+    `✔ citation consistent — v${pkg.version} · ${pkg.license} · ${pkg.author.name} · ORCID ${ORCID}`,
+  )
 }

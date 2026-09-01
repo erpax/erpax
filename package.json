@@ -1,8 +1,12 @@
 {
   "name": "erpax",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "description": "Source-available multi-tenant ERP & double-entry accounting on Payload CMS v4 + Cloudflare (D1 + R2 + Workers via OpenNext) — content-addressed, tamper-evident, standards-bound",
+  "author": {
+    "name": "Tsvetan Rouschev",
+    "url": "https://orcid.org/0009-0000-7312-9778"
+  },
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",
   "packageManager": "pnpm@11.0.8",
