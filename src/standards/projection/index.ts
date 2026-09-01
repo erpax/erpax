@@ -1,6 +1,8 @@
 /**
  * standards/projection — the catalogue, seen three ways: coverage, UI waves, lookup.
  * Each memoized on the catalogue's own content-address. @see ./SKILL.md
+ *
+ * @standard ISO/IEC-25010:2023 §5.1 functional-completeness (every standard is covered)
  */
 import { STANDARDS_CATALOGUE as CATALOGUE } from '../catalogue'
 import { merge, foldToRoot } from '@/merge'

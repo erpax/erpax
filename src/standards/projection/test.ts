@@ -1,3 +1,11 @@
+/**
+ * Projection soundness — coverage accounts for every standard, the waves are ordered
+ * by impact and sealed by content, and a lookup REFUSES an id the catalogue does not
+ * hold. Each answer is memoized on the catalogue root: same catalogue, same answer.
+ *
+ * @standard ISO-19011:2018 audit-evidence (a coverage claim names its own gaps)
+ * @standard ISO/IEC-25010:2023 §5.1 functional-completeness
+ */
 import { describe, it, expect } from 'vitest'
 import { schemaCoverage, standardsUiWaves, standardsIndex, lookupStandard } from './index'
 

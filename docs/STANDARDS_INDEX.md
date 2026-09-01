@@ -2700,6 +2700,9 @@ src/standards/index.ts:26: * @standard ISO/IEC 25010:2023 §5.1 functional-compl
 src/standards/index.ts:27: * @standard ISO 19011:2018 §6.4.6 audit-evidence (citation changes audit-trailed)
 src/standards/index.ts:28: * @standard W3C JSON-LD 1.1 (citation as live linked-data)
 src/standards/ported.ts:8: * @standard ISO-19011:2018 §6.4 audit-evidence (every entry sourced)
+src/standards/projection/index.ts:5: * @standard ISO/IEC-25010:2023 §5.1 functional-completeness (every standard is covered)
+src/standards/projection/test.ts:6: * @standard ISO-19011:2018 audit-evidence (a coverage claim names its own gaps)
+src/standards/projection/test.ts:7: * @standard ISO/IEC-25010:2023 §5.1 functional-completeness
 src/standards/registry/index.ts:17: * @standard ISO-19011:2018 audit-evidence (a curated register of cited norms)
 src/standards/registry/index.ts:18: * @standard ISO/IEC-25010:2023 §5.1 functional-completeness
 src/standards/registry/test.ts:7: * @standard ISO/IEC-29119:2022 software-testing (invariant coverage)
