@@ -54,3 +54,5 @@ export function crack(pattern: CrackPattern): Crack | null {
 export function cracks(patterns: readonly CrackPattern[]): readonly Crack[] {
   return patterns.map(crack).filter((c): c is Crack => c != null)
 }
+
+/** @index-cross.foldback child=quantum/ftl/crack parent=quantum/ftl — this cross folds back into its parent. */

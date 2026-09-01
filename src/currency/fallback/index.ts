@@ -499,3 +499,5 @@ export async function aggregateBalancesAcrossCurrencies(
     asOf,
   }
 }
+
+/** @index-cross.foldback child=currency/fallback parent=currency — this cross folds back into its parent. */

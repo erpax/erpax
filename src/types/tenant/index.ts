@@ -68,7 +68,6 @@ export interface Tenant {
   seedsLoaded: boolean;
 }
 
-/** Tenant create DTO. */
 export interface CreateTenantRequest {
   name: string;
   slug?: string;
@@ -83,7 +82,6 @@ export interface CreateTenantRequest {
   seedTemplate?: string;
 }
 
-/** Tenant update DTO. */
 export interface UpdateTenantRequest {
   name?: string;
   description?: string;
@@ -95,14 +93,12 @@ export interface UpdateTenantRequest {
   customAccountingRules?: Record<string, unknown>;
 }
 
-/** Tenant batch operation request. */
 export interface BatchTenantActionRequest {
   tenantIds: string[];
   action: 'activate' | 'suspend' | 'resetStatus' | 'enableSSL' | 'disableSSL' | 'archive';
   reason?: string; // For audit trail
 }
 
-/** Tenant batch operation response. */
 export interface BatchTenantActionResponse {
   action: string;
   totalRequested: number;
@@ -112,7 +108,6 @@ export interface BatchTenantActionResponse {
   timestamp: Date;
 }
 
-/** Tenant statistics snapshot. */
 export interface TenantStatistics {
   tenantId: string;
   status: TenantStatus;
@@ -154,7 +149,6 @@ export interface TenantPaginationOptions {
   sortOrder?: 'asc' | 'desc';
 }
 
-/** Tenant list response envelope. */
 export interface TenantListResponse {
   tenants: Tenant[];
   total: number;
@@ -213,3 +207,5 @@ export const COUNTRY_TO_CURRENCY: Record<string, string> = Object.fromEntries(
 export const COUNTRY_TO_LOCALE: Record<string, string> = Object.fromEntries(
   Object.entries(COUNTRY_PROFILES).map(([country, p]) => [country, p.locale]),
 );
+
+/** @index-cross.foldback child=types/tenant parent=types — this cross folds back into its parent. */

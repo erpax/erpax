@@ -79,3 +79,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   console.log(`rules/compatibility — ${collisions.length} framework-namespace collision(s)`)
   for (const c of collisions) console.log(`  ✗ ${c.atom} ↔ ${c.reserved}: ${c.why}`)
 }
+
+/** @index-cross.foldback child=rules/compatibility parent=rules — this cross folds back into its parent. */

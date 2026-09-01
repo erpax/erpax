@@ -155,3 +155,5 @@ function run(): void {
 }
 
 run()
+
+/** @index-cross.foldback child=confirm/push parent=confirm — this cross folds back into its parent. */

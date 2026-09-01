@@ -358,3 +358,5 @@ export function waveInSecureComms(opts: {
     }),
   }
 }
+
+/** @index-cross.foldback child=team/comms parent=team — this cross folds back into its parent. */

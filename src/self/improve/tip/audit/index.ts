@@ -337,3 +337,5 @@ export function auditSelfDevGaps(opts: TipEmitOpts = {}): SelfDevAudit {
 }
 
 /** Plan form · code · proof — concrete paths/commands/signals only. */
+
+/** @index-cross.foldback child=self/improve/tip/audit parent=self/improve/tip — this cross folds back into its parent. */

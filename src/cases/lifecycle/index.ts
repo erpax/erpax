@@ -50,3 +50,5 @@ export function nextCaseStep(current: number): number | undefined {
   if (idx < 0 || idx >= CASE_RING.length - 1) return undefined
   return CASE_RING[idx + 1]?.step
 }
+
+/** @index-cross.foldback child=cases/lifecycle parent=cases — this cross folds back into its parent. */

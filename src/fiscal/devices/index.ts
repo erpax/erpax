@@ -97,3 +97,5 @@ const FiscalDevices: CollectionConfig = {
 }
 
 export default FiscalDevices
+
+/** @index-cross.foldback child=fiscal/devices parent=fiscal — this cross folds back into its parent. */

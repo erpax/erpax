@@ -25,3 +25,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   const c = say(say([], 'a', 'b', 'u1'), 'b', 'a', 'u2')
   console.log('agent/chat — ' + c.length + ' messages · participants ' + participants(c).join(','))
 }
+
+/** @index-cross.foldback child=agent/chat parent=agent — this cross folds back into its parent. */

@@ -179,3 +179,7 @@ export const EVIDENCE: readonly EvidenceSource[] = [
     wouldFailIf: 'reachableSecrets returned fewer than 256 — the shares would then leak',
   },
 ]
+
+/** @index-cross.foldback child=entropy/threshold parent=entropy — this cross folds back into its parent. */
+
+export * from './split'

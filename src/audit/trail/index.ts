@@ -6,3 +6,5 @@ export type {
   WriteAuditEventResult,
 } from './write-audit-event'
 export { writeAuditEvent } from './write-audit-event'
+
+export * from './access'

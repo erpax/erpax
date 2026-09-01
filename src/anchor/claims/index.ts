@@ -166,3 +166,5 @@ export const EVIDENCE: readonly EvidenceSource[] = [
     wouldFailIf: 'citationIsPinned accepted "FIPS 203" without its revision',
   },
 ]
+
+/** @index-cross.foldback child=anchor/claims parent=anchor — this cross folds back into its parent. */

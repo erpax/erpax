@@ -57,3 +57,5 @@ export const defaultLexical = lexicalEditor({
     }),
   ],
 })
+
+/** @index-cross.foldback child=default/lexical parent=default — this cross folds back into its parent. */

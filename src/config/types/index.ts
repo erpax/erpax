@@ -110,3 +110,5 @@ export interface TranslatedField {
  */
 export type FeatureLimit = number | null | boolean
 export type FeatureLimits = Record<string, FeatureLimit>
+
+/** @index-cross.foldback child=config/types parent=config — this cross folds back into its parent. */

@@ -102,3 +102,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log(`  RESIDUAL (unproven surface)    ${l.residual}`)
   console.log(`  BALANCE                        ${(100 * l.balance).toFixed(1)}%  ${l.residual === 0 ? '· settled — the gravitational floor' : '· gravity pulls toward 100%'}`)
 }
+
+/** @index-cross.foldback child=accounting/proof parent=accounting — this cross folds back into its parent. */

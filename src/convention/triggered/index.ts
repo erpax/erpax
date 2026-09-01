@@ -80,3 +80,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
     'convention/triggered: total=' + total() + ' triggered=' + triggered() + ' coverage=' + coverage(),
   )
 }
+
+/** @index-cross.foldback child=convention/triggered parent=convention — this cross folds back into its parent. */

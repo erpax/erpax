@@ -42,3 +42,5 @@ export function recordComputerGraphOnPath(
 ): PathCanonicalEntry {
   return recordPathVisit('computer/graph', { kind: 'computer.graph.step', payload }, at, prevEntryUuid, seq)
 }
+
+/** @index-cross.foldback child=computer/graph parent=computer — this cross folds back into its parent. */

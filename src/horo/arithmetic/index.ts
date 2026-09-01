@@ -145,3 +145,5 @@ export function inverseClosure(seed: number = 1): InverseClosure {
 export function affineStep(x: number, a: number, b: number): number {
   return (((Number(a) * Number(x) + Number(b)) % 9) + 9) % 9 || 9
 }
+
+/** @index-cross.foldback child=horo/arithmetic parent=horo — this cross folds back into its parent. */

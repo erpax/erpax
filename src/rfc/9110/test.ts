@@ -7,7 +7,7 @@ describe('src/rfc/9110/cache/index.ts — leftover wave proof', () => {
     const { fileURLToPath } = await import('node:url')
     const { dirname, join } = await import('node:path')
     const dir = dirname(fileURLToPath(import.meta.url))
-    const src = readFileSync(join(dir, 'cache.ts'), 'utf8')
+    const src = readFileSync(join(dir, 'cache', 'index.ts'), 'utf8')
     expect(src).toMatch(/\bexport\b/)
     
     expect(src).toMatch(/@(?:invariant|standard|compliance|audit)\b/)

@@ -84,3 +84,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  singularity (top centrality): ' + centralityRank(1)[0]?.atom + ' = ' + centrality(well().atom))
   console.log('  cross(access,all)===cross(all,access): ' + (cross('access', 'all') === cross('all', 'access')) + ' · bidirectionalCross(access,all)=' + bidirectionalCross('access', 'all'))
 }
+
+/** @index-cross.foldback child=quantum/matrix parent=quantum — this cross folds back into its parent. */

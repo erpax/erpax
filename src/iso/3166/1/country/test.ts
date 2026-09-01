@@ -7,7 +7,7 @@ describe('src/iso/3166/1/country/bg/index.ts — leftover wave proof', () => {
     const { fileURLToPath } = await import('node:url')
     const { dirname, join } = await import('node:path')
     const dir = dirname(fileURLToPath(import.meta.url))
-    const src = readFileSync(join(dir, 'bg.ts'), 'utf8')
+    const src = readFileSync(join(dir, 'bg', 'index.ts'), 'utf8')
     expect(src).toMatch(/\bexport\b/)
     
     expect(src).toMatch(/@(?:invariant|standard|compliance|audit)\b/)

@@ -46,3 +46,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   const q = { action: 'lookup', hs: '8471' }
   console.log('quantum/request — uuid=' + requestUuid(q) + ' · cached=' + compressedPayload(true, q))
 }
+
+/** @index-cross.foldback child=quantum/request parent=quantum — this cross folds back into its parent. */

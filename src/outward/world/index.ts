@@ -196,3 +196,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   )
   if (broken.length) process.exit(1)
 }
+
+/** @index-cross.foldback child=outward/world parent=outward — this cross folds back into its parent. */

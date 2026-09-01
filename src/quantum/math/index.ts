@@ -30,3 +30,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/math — math on the uuid/matrix substrate:')
   console.log('  root(12345)=' + root(12345) + '  closedUnderAdd(7,5)=' + closedUnderAdd(7, 5))
 }
+
+/** @index-cross.foldback child=quantum/math parent=quantum — this cross folds back into its parent. */

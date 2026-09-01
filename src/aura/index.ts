@@ -157,3 +157,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   for (const c of crosses) console.log(`  ${c.sealed ? '✓' : '✗'} ${c.base}: ${c.reason}`)
   process.exit(unsealed.length === 0 ? 0 : 1)
 }
+
+export * from './live'

@@ -30,3 +30,5 @@ export const COUNTRY_BUNDLES: Readonly<Record<string, CountryBundle>> = {
 export function getCountryBundle(code: string): CountryBundle | null {
   return COUNTRY_BUNDLES[code] ?? null;
 }
+
+/** @index-cross.foldback child=iso/3166/1/country parent=iso/3166/1 — this cross folds back into its parent. */

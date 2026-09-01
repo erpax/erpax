@@ -40,3 +40,5 @@ export function verifyPqc(_args: {
 export function isApprovedPqc(algorithm: PqcAlgorithm): boolean {
   return ['ML-DSA-44', 'ML-DSA-65', 'ML-DSA-87', 'SLH-DSA-128'].includes(algorithm)
 }
+
+/** @index-cross.foldback child=beyond/pqc parent=beyond — this cross folds back into its parent. */

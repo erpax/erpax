@@ -45,3 +45,5 @@ export const PDF_UA_DEFAULT: PdfUaProfile = { part: 1 }
 export function pdfUaProfileToXmp(profile: PdfUaProfile): { part: string } {
   return { part: String(profile.part) }
 }
+
+/** @index-cross.foldback child=iso/14289/profile parent=iso/14289 — this cross folds back into its parent. */

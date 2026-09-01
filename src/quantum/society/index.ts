@@ -47,3 +47,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   const vote = { kind: 'vote', payload: { ballot: 'a' }, debit: 1, credit: 1 }
   console.log('quantum/society — uuid=' + socialFactUuid(vote) + ' · balanced=' + doubleEntryBalanced(vote))
 }
+
+/** @index-cross.foldback child=quantum/society parent=quantum — this cross folds back into its parent. */

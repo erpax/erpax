@@ -391,3 +391,5 @@ export function horoStateBeforeChange(
     return data
   }
 }
+
+/** @index-cross.foldback child=horo/geometry parent=horo — this cross folds back into its parent. */

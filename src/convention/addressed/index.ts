@@ -77,3 +77,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
     'convention/addressed: total=' + total() + ' addressed=' + addressed() + ' coverage=' + coverage(),
   )
 }
+
+/** @index-cross.foldback child=convention/addressed parent=convention — this cross folds back into its parent. */

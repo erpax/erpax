@@ -9,3 +9,5 @@
  */
 
 export * from './validateRoleDefinition'
+
+/** @index-cross.foldback child=roles/hooks parent=roles — this cross folds back into its parent. */

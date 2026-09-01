@@ -26,3 +26,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   const a = load(load(agentSkills('claude'), 'merge'), 'merge')
   console.log('agent/skill — has("merge")=' + has(a, 'merge') + ' · count=' + a.skills.size + ' (idempotent)')
 }
+
+/** @index-cross.foldback child=agent/skill parent=agent — this cross folds back into its parent. */

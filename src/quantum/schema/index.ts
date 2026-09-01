@@ -28,3 +28,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/schema — schema identity = content-uuid:')
   console.log('  v1=' + v1.slice(0, 8) + '… · sameSchema(same)=' + sameSchema('{name,price}', '{name,price}') + ' · drifted after add field=' + drifted(v1, '{name,price,tax}'))
 }
+
+/** @index-cross.foldback child=quantum/schema parent=quantum — this cross folds back into its parent. */

@@ -102,3 +102,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   discardExperiment(e)
   console.log('  discarded — no droppings')
 }
+
+/** @index-cross.foldback child=sandbox/experiment parent=sandbox — this cross folds back into its parent. */

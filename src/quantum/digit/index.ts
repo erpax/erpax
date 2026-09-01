@@ -48,3 +48,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
       offSequence().length,
   )
 }
+
+/** @index-cross.foldback child=quantum/digit parent=quantum — this cross folds back into its parent. */

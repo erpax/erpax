@@ -39,3 +39,5 @@ export const auditTrailCreate: Access<'create'> = ({ req }) => {
 export const auditTrailModifyDenied: Access = () => {
   return false
 }
+
+/** @index-cross.foldback child=audit/trail/access parent=audit/trail — this cross folds back into its parent. */

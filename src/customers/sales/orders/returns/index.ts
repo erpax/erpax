@@ -87,3 +87,5 @@ const Returns: CollectionConfig = {
 }
 
 export default Returns
+
+/** @index-cross.foldback child=customers/sales/orders/returns parent=customers/sales/orders — this cross folds back into its parent. */

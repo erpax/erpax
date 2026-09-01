@@ -340,3 +340,5 @@ export function verifyStructured(args: {
   })
   return expected === args.uuid
 }
+
+/** @index-cross.foldback child=uuid/format parent=uuid — this cross folds back into its parent. */

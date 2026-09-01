@@ -42,3 +42,5 @@ export function spreadWitness<T>(domain: readonly T[], n: number = WITNESS_SIZE)
   for (let i = 0; i < domain.length && out.length < n; i += step) out.push(domain[i]!)
   return out
 }
+
+/** @index-cross.foldback child=testing/witness parent=testing — this cross folds back into its parent. */

@@ -160,3 +160,5 @@ export function qtspAdapter(
     },
   }
 }
+
+/** @index-cross.foldback child=notary/check/qtsp parent=notary/check — this cross folds back into its parent. */

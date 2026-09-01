@@ -33,3 +33,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  shallow-import coverage (index-only fraction) = ' + (100 * c).toFixed(1) + '%')
   console.log('  ' + (c === 1 ? 'sealed — every import is shallow' : 'a deep import is open — coverage < 1'))
 }
+
+/** @index-cross.foldback child=convention/shallow parent=convention — this cross folds back into its parent. */

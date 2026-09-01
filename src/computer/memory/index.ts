@@ -52,3 +52,5 @@ export function recordComputerMemoryOnPath(
 ): PathCanonicalEntry {
   return recordPathVisit('computer/memory', { kind: 'computer.memory.step', payload }, at, prevEntryUuid, seq)
 }
+
+/** @index-cross.foldback child=computer/memory parent=computer — this cross folds back into its parent. */

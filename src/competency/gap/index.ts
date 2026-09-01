@@ -72,3 +72,5 @@ export function competencyGap(held: HeldLine[], required: RequiredLine[]): GapRe
 
   return { gaps, meetsAllMandatory, matchScore }
 }
+
+/** @index-cross.foldback child=competency/gap parent=competency — this cross folds back into its parent. */

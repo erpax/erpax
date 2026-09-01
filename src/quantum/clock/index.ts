@@ -107,3 +107,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   forged[1] = { ...forged[1]!, contentUuid: toUuid({ event: 'tampered' }) }
   console.log(`forged chain verifies: ${verifyChain(forged)}  ← one edited tick breaks every later address`)
 }
+
+/** @index-cross.foldback child=quantum/clock parent=quantum — this cross folds back into its parent. */

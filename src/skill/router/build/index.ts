@@ -259,3 +259,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   else if (stub) buildSkillIndexStub()
   else buildSkillIndex()
 }
+
+/** @index-cross.foldback child=skill/router/build parent=skill/router — this cross folds back into its parent. */

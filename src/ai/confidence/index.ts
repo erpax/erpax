@@ -20,3 +20,5 @@ export const AI_AUTO_ACCEPT_INVOICE = imperialRatio(19, 20)
 
 /** Tax classification — 9/10 + 7/100 = 97/100 (was 0.97 literal; fines risk). */
 export const AI_AUTO_ACCEPT_TAX = horoRatio(9) + horoRatio(7, 100)
+
+/** @index-cross.foldback child=ai/confidence parent=ai — this cross folds back into its parent. */

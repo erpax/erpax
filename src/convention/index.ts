@@ -50,3 +50,7 @@ export const CONVENTIONS: ReadonlyArray<{ readonly law: string; readonly coverag
 /** The live convention checks — each law and its computed coverage. The collider's factors. */
 export const conventionChecks = (): { law: string; coverage: number }[] =>
   CONVENTIONS.map((c) => ({ law: c.law, coverage: c.coverage() }))
+
+export * from './addressed'
+
+export * from './discern'

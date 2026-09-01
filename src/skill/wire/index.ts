@@ -79,3 +79,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   const r = wireFromRepoUrl('https://github.com/erpax/erpax')
   console.log('skill/wire — entry: ' + (r.ok ? r.entryPoint + ' · ' + r.contentUuid.slice(0, 8) + '…' : r.reason))
 }
+
+/** @index-cross.foldback child=skill/wire parent=skill — this cross folds back into its parent. */

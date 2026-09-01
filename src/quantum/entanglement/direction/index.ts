@@ -126,3 +126,5 @@ export function entangledChannelCount(): number {
 export function __resetDirectionBusForTests(): void {
   channels.clear()
 }
+
+/** @index-cross.foldback child=quantum/entanglement/direction parent=quantum/entanglement — this cross folds back into its parent. */

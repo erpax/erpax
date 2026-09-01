@@ -214,3 +214,5 @@ export const Consolidations: CollectionConfig = {
     },
   ],
 }
+
+/** @index-cross.foldback child=legal/entities/consolidations parent=legal/entities — this cross folds back into its parent. */

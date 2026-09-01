@@ -34,3 +34,5 @@ export function checkErpaxObservesItself(): { ok: boolean; missing: ReadonlyArra
   if (!agentRegistry.byId('engineering')) missing.push('agent:engineering')
   return { ok: missing.length === 0, missing }
 }
+
+/** @index-cross.foldback child=self/reference parent=self — this cross folds back into its parent. */

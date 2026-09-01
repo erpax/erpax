@@ -192,3 +192,5 @@ export function buildCloudflareTools(): ReadonlyArray<ErpaxMcpTool> {
     },
   ]
 }
+
+/** @index-cross.foldback child=agents/mcp/tool/cloudflare parent=agents/mcp/tool — this cross folds back into its parent. */

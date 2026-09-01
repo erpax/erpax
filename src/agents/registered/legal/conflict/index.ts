@@ -1,15 +1,10 @@
 /**
  * legal.conflict — the LegalAgent's conflict-of-interest check as a PURE transform.
  *
- * The autonomy half of [[matter]] intake (#3 of go-all): a `matter:opening` event
- * (a client party + the client's related entities + the firm's adverse-party set)
- * becomes the clearance verdict. The check IS the [[merge]]/[[identity]] law —
- * same entity ⇒ same content-uuid — so a collision is an id in
- * {client ∪ related} ∩ {adverse the firm already serves}. Detection, not
- * prevention ([[conflict]]): a collision BARS the matter behind a [[privilege]]
- * wall and routes to the installed `legal:vendor-check` work-skill (investigate the
- * adversity); a clear check PROCEEDS to `legal:review-contract`. Returns
- * emit · audit · route, mirroring `hr.training` — the same pure/injected split.
+ * A collision is an id in {client ∪ related} ∩ {adverse the firm already serves} —
+ * the [[merge]]/[[identity]] law: same entity ⇒ same content-uuid. Detection, not
+ * prevention: a collision BARS the matter and routes to investigation.
+ * @see ./SKILL.md
  *
  * Pure: everything is read from the event payload (the impure hook resolves the
  * party graph), so this is trivially testable. Wiring it live = register the
@@ -117,3 +112,5 @@ export function planConflictEffects(ev: DomainEvent): AgentEffect[] {
   }
   return effects
 }
+
+/** @index-cross.foldback child=agents/registered/legal/conflict parent=agents/registered/legal — this cross folds back into its parent. */

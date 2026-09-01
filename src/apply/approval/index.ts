@@ -262,3 +262,5 @@ export function runPackageApprovalCli(argv: readonly string[] = process.argv.sli
   console.log(formatPackageApprovalMatrix(result, list ? undefined : 20))
   return result.approved ? 0 : 1
 }
+
+/** @index-cross.foldback child=apply/approval parent=apply — this cross folds back into its parent. */

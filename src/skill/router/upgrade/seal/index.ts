@@ -142,3 +142,5 @@ export function upgradeSkillText(text: string, fm: ConnectedFrontmatter): string
 }
 
 export { yamlQuote }
+
+/** @index-cross.foldback child=skill/router/upgrade/seal parent=skill/router/upgrade — this cross folds back into its parent. */

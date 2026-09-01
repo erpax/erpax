@@ -104,3 +104,5 @@ export function assertNoSweeps(changesets: readonly Changeset[], ceiling: number
     )
   }
 }
+
+/** @index-cross.foldback child=rules/manifest parent=rules — this cross folds back into its parent. */

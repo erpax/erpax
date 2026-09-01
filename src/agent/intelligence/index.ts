@@ -504,3 +504,5 @@ export function recall(
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) process.exit(runIntelligenceCli())
+
+/** @index-cross.foldback child=agent/intelligence parent=agent — this cross folds back into its parent. */

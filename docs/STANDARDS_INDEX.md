@@ -163,7 +163,7 @@ src/agents/registered/hr/agent.ts:5: * @standard ISO IAS-19 employee-benefits + 
 src/agents/registered/hr/training/index.ts:19: * @standard SFIA 8 responsibility-levels (the level → M-value depth)
 src/agents/registered/legal/agent.ts:5: * @standard GDPR Art-7 consent + Art-15 access + Art-17 erasure
 src/agents/registered/legal/agent.ts:6: * @standard eIDAS qualified-trust-services
-src/agents/registered/legal/conflict/index.ts:19: * @standard ISO 19011 — the verdict is a deterministic function of the party graph
+src/agents/registered/legal/conflict/index.ts:14: * @standard ISO 19011 — the verdict is a deterministic function of the party graph
 src/agents/registered/marketing.agent.ts:5: * @standard GDPR consent-tracking @feature marketing
 src/agents/registered/ops.agent.ts:5: * @standard ISO 41001 facility-management + ISO 55000 asset-management
 src/agents/registered/product.agent.ts:5: * @standard PMI PMBOK 7th-edition project-management
@@ -5516,7 +5516,7 @@ src/agents/mcp/tool/security.ts:19: * @audit Conservation Law 58 uuid-self-prote
 src/agents/mcp/tool/share.ts:15: * @audit Conservation Law 59 uuid-based-sharing-with-rbac
 src/agents/registered/consistency.agent.ts:23: * @audit ISO 19011:2018 §6.4.6 (proposal + resolution audit-trailed)
 src/agents/registered/hr/training/index.ts:20: * @audit ISO 19011 — the plan, the rate and the debt are deterministic functions of the gap
-src/agents/registered/legal/conflict/index.ts:20: * @audit ABA Model Rule 1.7 conflict-of-interest (named; the form is the merge law)
+src/agents/registered/legal/conflict/index.ts:15: * @audit ABA Model Rule 1.7 conflict-of-interest (named; the form is the merge law)
 src/ai/anomaly-detection.ts:12: * @audit ISO-19011:2018 §6.4.6 audit-evidence
 src/ai/audit-summarisation.ts:11: * @audit ISO 19011:2018 §6.4.6 audit-evidence
 src/ai/cloudflare.ts:52: * @audit ISO-19011:2018 §6.4.6 audit-evidence ai-inference-trail

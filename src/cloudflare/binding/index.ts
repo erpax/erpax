@@ -22,3 +22,5 @@ export {
   type MediatorContext,
   type MediatorAuthorizer,
 } from '../index'
+
+/** @index-cross.foldback child=cloudflare/binding parent=cloudflare — this cross folds back into its parent. */

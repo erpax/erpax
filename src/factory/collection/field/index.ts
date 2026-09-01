@@ -54,3 +54,5 @@ export const createLineItemArray = (
     fields: lineItemFields,
   }
 }
+
+/** @index-cross.foldback child=factory/collection/field parent=factory/collection — this cross folds back into its parent. */

@@ -328,3 +328,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   )
   process.exit(sealed ? 0 : 1)
 }
+
+/** @index-cross.foldback child=confirm/uuid parent=confirm — this cross folds back into its parent. */

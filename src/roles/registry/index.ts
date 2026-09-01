@@ -232,3 +232,5 @@ export function validateUserRoleSet(userRoles: ReadonlyArray<UserRole>): {
   }
   return { ok: violations.length === 0, violations }
 }
+
+/** @index-cross.foldback child=roles/registry parent=roles — this cross folds back into its parent. */

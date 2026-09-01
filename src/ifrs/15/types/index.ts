@@ -364,3 +364,5 @@ export interface RefundLiability {
     | 'rebate_program'
   recognizedAt: Date | string
 }
+
+/** @index-cross.foldback child=ifrs/15/types parent=ifrs/15 — this cross folds back into its parent. */

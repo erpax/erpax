@@ -56,3 +56,5 @@ export {
   PLATFORM_TENANT_KEY,
 } from './i18n'
 export type { LocalizedString } from './i18n'
+
+export * from './atom-catalogue.generated'

@@ -282,3 +282,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   console.log(`\n${trainingPrompt(SESSION_2026_08_01)}`)
 }
 /* c8 ignore stop */
+
+/** @index-cross.foldback child=agent/receipt parent=agent — this cross folds back into its parent. */

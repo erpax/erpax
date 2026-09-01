@@ -93,3 +93,5 @@ export function incrementUnp(prev: string): string {
 export function firstUnp(fiscalDeviceId: string, operatorCode: string | number): string {
   return formatUnp({ fiscalDeviceId, operatorCode, sequence: UNP_FIRST_SEQUENCE })
 }
+
+/** @index-cross.foldback child=naredba/n/18/unp parent=naredba/n/18 — this cross folds back into its parent. */

@@ -199,3 +199,5 @@ export function formatAccountingGapsReport(v: GapsInWavesVerdict): string {
   for (const w of v.waves) { L.push(`  wave ${w.wave}: net ${w.netEb} eb · ${w.paths.length} path(s)`); const t = v.topGapsByWave[w.wave] ?? []; if (t.length) L.push(`    top: ${t.slice(0, 10).join(', ')}`) }
   return L.join('\n')
 }
+
+/** @index-cross.foldback child=accounting/gaps parent=accounting — this cross folds back into its parent. */

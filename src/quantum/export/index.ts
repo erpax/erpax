@@ -45,3 +45,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   const body = 'export const x = 1\nexport function y() {}\n'
   console.log('quantum/export — symbols: ' + parseTsExports(body).join(', '))
 }
+
+/** @index-cross.foldback child=quantum/export parent=quantum — this cross folds back into its parent. */

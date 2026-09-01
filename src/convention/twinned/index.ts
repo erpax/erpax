@@ -105,3 +105,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  total=' + total() + ' pointing=' + pointing() + ' coverage=' + (100 * coverage()).toFixed(2) + '%')
   console.log('  (1 ⇒ every antimatter names a matter that exists; the convention holds with zero entropy)')
 }
+
+/** @index-cross.foldback child=convention/twinned parent=convention — this cross folds back into its parent. */

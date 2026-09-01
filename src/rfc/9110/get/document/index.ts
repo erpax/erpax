@@ -20,3 +20,5 @@ type Collection = keyof Config['collections']
  */
 export const getCachedDocument = (collection: Collection, slug: string) =>
   getCachedPayloadDocument(collection, slug)
+
+/** @index-cross.foldback child=rfc/9110/get/document parent=rfc/9110/get — this cross folds back into its parent. */

@@ -50,3 +50,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  root=' + r.root + '  well=[[' + r.well.atom + ']] mass=' + r.well.mass)
   console.log('  concentration(Gini)=' + r.concentration.toFixed(3) + '  entropy=' + r.entropy.toFixed(4) + '  collapse=' + r.collapse + '  quantized=' + r.quantized)
 }
+
+/** @index-cross.foldback child=fusion/reactor parent=fusion — this cross folds back into its parent. */

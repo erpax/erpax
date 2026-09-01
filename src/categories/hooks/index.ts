@@ -9,3 +9,5 @@
  */
 
 export * from './beforeChange'
+
+/** @index-cross.foldback child=categories/hooks parent=categories — this cross folds back into its parent. */

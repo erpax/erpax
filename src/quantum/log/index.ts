@@ -45,3 +45,5 @@ export async function verifyAgentTrail(
 }
 
 export type { Receipt, Decision } from '@/receipt'
+
+/** @index-cross.foldback child=quantum/log parent=quantum — this cross folds back into its parent. */

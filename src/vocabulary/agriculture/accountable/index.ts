@@ -94,3 +94,5 @@ export function fxGainLossEntry(input: {
 export function conversionConserves(kind: 'unit' | 'currency', rateMoved = false): boolean {
   return kind === 'unit' || !rateMoved
 }
+
+/** @index-cross.foldback child=vocabulary/agriculture/accountable parent=vocabulary/agriculture — this cross folds back into its parent. */

@@ -94,3 +94,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   )
   for (const i of invisible.slice(0, 12)) console.log(`  ${i.formless ? 'NO-FORM' : 'form   '}  ${i.path}`)
 }
+
+/** @index-cross.foldback child=rules/invisible parent=rules — this cross folds back into its parent. */

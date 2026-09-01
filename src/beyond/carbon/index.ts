@@ -39,3 +39,5 @@ export function recordCarbon(tenantId: string, est: CarbonEstimate): { totalGram
 
 export function getTenantCarbon(tenantId: string): number { return TENANT_CARBON.get(tenantId) ?? 0 }
 export function __resetCarbon(): void { TENANT_CARBON.clear() }
+
+/** @index-cross.foldback child=beyond/carbon parent=beyond — this cross folds back into its parent. */

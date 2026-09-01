@@ -222,3 +222,7 @@ export const FiscalPeriods: CollectionConfig = {
   ],
   timestamps: true,
 }
+
+/** @index-cross.foldback child=fiscal/periods parent=fiscal — this cross folds back into its parent. */
+
+export * from './provisions'

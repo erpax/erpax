@@ -393,3 +393,5 @@ export function standardsSatisfiedComputationally(
     }),
   )
 }
+
+/** @index-cross.foldback child=standards/registry parent=standards — this cross folds back into its parent. */

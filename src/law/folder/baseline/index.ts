@@ -34,3 +34,5 @@ export function loadRatchet(_cwd: string = process.cwd()): RatchetSnapshot {
 export function clearRatchetCache(): void {
   /* generated const — nothing to clear */
 }
+
+/** @index-cross.foldback child=law/folder/baseline parent=law/folder — this cross folds back into its parent. */

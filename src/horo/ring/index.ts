@@ -152,3 +152,5 @@ export function carryRays(): readonly CarryRay[] {
 export function straddlingSteps(): readonly number[] {
   return carryRays().filter((c) => c.straddles).map((c) => c.step)
 }
+
+/** @index-cross.foldback child=horo/ring parent=horo — this cross folds back into its parent. */

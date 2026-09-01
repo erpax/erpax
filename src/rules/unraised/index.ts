@@ -122,3 +122,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   for (const u of list) console.log(`  ${u.kind}.${u.member}  ${u.where}`)
   process.exit(0)
 }
+
+/** @index-cross.foldback child=rules/unraised parent=rules — this cross folds back into its parent. */

@@ -47,3 +47,5 @@ export type {
 
 export { InternalSearchProvider } from './search'
 export type { SearchParams, SearchResult } from './search'
+
+/** @index-cross.foldback child=self/closure/provider parent=self/closure — this cross folds back into its parent. */

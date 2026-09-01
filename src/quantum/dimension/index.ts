@@ -218,3 +218,5 @@ export function quantumInAllDimensions(cwd = process.cwd()): {
 
   return { ok: dimensions.every((d) => d.holds), dimensions }
 }
+
+/** @index-cross.foldback child=quantum/dimension parent=quantum — this cross folds back into its parent. */

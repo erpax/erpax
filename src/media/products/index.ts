@@ -232,3 +232,5 @@ export const ProductsCollection: CollectionOverride = ({ defaultCollection }) =>
     beforeChange: productsBeforeChange(defaultCollection),
   },
 })
+
+/** @index-cross.foldback child=media/products parent=media — this cross folds back into its parent. */

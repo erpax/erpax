@@ -127,3 +127,5 @@ const EmployeeContracts: CollectionConfig = {
 }
 
 export default EmployeeContracts
+
+/** @index-cross.foldback child=employees/contracts parent=employees — this cross folds back into its parent. */

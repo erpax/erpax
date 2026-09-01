@@ -201,3 +201,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
       at10.get('8480-6')?.value,
   )
 }
+
+/** @index-cross.foldback child=quantum/emr parent=quantum — this cross folds back into its parent. */

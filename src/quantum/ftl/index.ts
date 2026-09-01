@@ -495,3 +495,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.log(`  adminBoot: holds=${boot.ftl.holds} · defer=${boot.deferHeavyProviders} · addr=${boot.address.slice(0, 8)}`)
   })
 }
+
+/** @index-cross.foldback child=quantum/ftl parent=quantum — this cross folds back into its parent. */

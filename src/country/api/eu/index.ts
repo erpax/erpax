@@ -365,3 +365,5 @@ export const EU_COUNTRY_APIS: Readonly<Record<string, ReadonlyArray<CountryApi>>
     VIES, PEPPOL_DIRECTORY, EU_SANCTIONS, ECB_RATES,
   ],
 }
+
+/** @index-cross.foldback child=country/api/eu parent=country/api — this cross folds back into its parent. */

@@ -57,3 +57,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/bindings — attach-all inventory: ' + inv.length + ' senses')
   console.log('  ' + inv.join(', '))
 }
+
+/** @index-cross.foldback child=quantum/bindings parent=quantum — this cross folds back into its parent. */

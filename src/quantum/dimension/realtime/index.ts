@@ -313,3 +313,5 @@ export function appendDimensionToLog<T extends DimensionRealtimeEvent>(
 
 /** Re-export advance for cursor-based tail tests. */
 export { advance as dimensionLogAdvance } from '@/realtime'
+
+/** @index-cross.foldback child=quantum/dimension/realtime parent=quantum/dimension — this cross folds back into its parent. */

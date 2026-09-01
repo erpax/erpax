@@ -229,3 +229,5 @@ export function integrity(manifests: readonly Manifest[], run: MeasureRun): numb
   }
   return total === 0 ? 0 : passing / total
 }
+
+/** @index-cross.foldback child=convention/discern parent=convention — this cross folds back into its parent. */

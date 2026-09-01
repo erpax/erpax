@@ -50,3 +50,5 @@ export {
   type FrontmatterSignatures,
   type FrontmatterStageSignature,
 } from './upgrade'
+
+/** @index-cross.foldback child=skill/router parent=skill — this cross folds back into its parent. */

@@ -45,3 +45,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   for (const f of a) console.log('  step ' + f.step + ' · ' + f.atoms + ' atoms · ' + JSON.stringify(f.signal).slice(0, 56))
   console.log('  join("pixel") = horo ' + join('pixel') + ' (the frame it enters)')
 }
+
+/** @index-cross.foldback child=aura/live parent=aura — this cross folds back into its parent. */

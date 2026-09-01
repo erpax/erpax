@@ -319,3 +319,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
     if (sample) console.log('  sample ' + sample.file + ' uuid=' + sample.boundaryUuid.slice(0, 8) + '… imports=' + sample.imports.slice(0, 3).join(', '))
   }
 }
+
+/** @index-cross.foldback child=quantum/boundary parent=quantum — this cross folds back into its parent. */

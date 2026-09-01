@@ -178,3 +178,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const a = assertEvidenceRefutable()
   console.log(`\nempirical claims with no refutation condition: ${a.bad.length}`)
 }
+
+/** @index-cross.foldback child=quantum/evidence parent=quantum — this cross folds back into its parent. */

@@ -94,3 +94,5 @@ const Taggings: CollectionConfig = {
 }
 
 export default Taggings
+
+/** @index-cross.foldback child=tags/taggings parent=tags — this cross folds back into its parent. */

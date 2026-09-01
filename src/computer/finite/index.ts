@@ -58,3 +58,5 @@ export function recordComputerFiniteOnPath(
 ): PathCanonicalEntry {
   return recordPathVisit('computer/finite', { kind: 'computer.finite.step', payload }, at, prevEntryUuid, seq)
 }
+
+/** @index-cross.foldback child=computer/finite parent=computer — this cross folds back into its parent. */

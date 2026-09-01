@@ -386,3 +386,5 @@ export async function trackSpeedy(args: {
     return err('Speedy', e instanceof Error ? e.message : String(e))
   }
 }
+
+/** @index-cross.foldback child=trading/api/client parent=trading/api — this cross folds back into its parent. */

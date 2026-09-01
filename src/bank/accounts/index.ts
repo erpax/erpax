@@ -103,3 +103,5 @@ const BankAccounts: CollectionConfig = {
 }
 
 export default BankAccounts
+
+/** @index-cross.foldback child=bank/accounts parent=bank — this cross folds back into its parent. */

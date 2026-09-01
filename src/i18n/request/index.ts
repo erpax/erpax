@@ -34,3 +34,5 @@ export default getRequestConfig(async ({ requestLocale }) => {
     messages: nestedMessages[locale],
   }
 })
+
+/** @index-cross.foldback child=i18n/request parent=i18n — this cross folds back into its parent. */

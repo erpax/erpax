@@ -5,3 +5,5 @@ export const PART = 'disease' as const
 export const CANONICAL = 'disease' as const
 export const PARENT = 'medical' as const
 export const atomPath = 'medical/disease' as const
+
+/** @index-cross.foldback child=medical/disease parent=medical — this cross folds back into its parent. */

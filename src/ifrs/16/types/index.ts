@@ -263,3 +263,5 @@ export interface Lease {
   // ── Optional payment schedule (period-by-period evidence) ──
   paymentSchedule?: LeasePayment[]
 }
+
+/** @index-cross.foldback child=ifrs/16/types parent=ifrs/16 — this cross folds back into its parent. */

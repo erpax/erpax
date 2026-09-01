@@ -154,3 +154,5 @@ const Provisions: CollectionConfig = {
 }
 
 export default Provisions
+
+/** @index-cross.foldback child=fiscal/periods/provisions parent=fiscal/periods — this cross folds back into its parent. */

@@ -195,3 +195,5 @@ export function verifySkillFrontmatter(
   }
   return { ok: drift.length === 0, drift }
 }
+
+/** @index-cross.foldback child=skill/router/upgrade/connect parent=skill/router/upgrade — this cross folds back into its parent. */

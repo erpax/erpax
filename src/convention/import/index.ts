@@ -30,3 +30,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('convention/import — every import is from an atom index (@/x), never a deep/relative path:')
   console.log('  import-convention coverage = ' + (100 * c).toFixed(1) + '%  (1 ⇒ the convention holds with zero entropy)')
 }
+
+/** @index-cross.foldback child=convention/import parent=convention — this cross folds back into its parent. */

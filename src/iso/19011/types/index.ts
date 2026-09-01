@@ -154,3 +154,5 @@ export interface AuditEntry {
  * `AuditEntry`. The emitter fills in `id` (uuid) and `timestamp` (now).
  */
 export type AuditEntryInput = Omit<AuditEntry, 'id' | 'timestamp'>
+
+/** @index-cross.foldback child=iso/19011/types parent=iso/19011 — this cross folds back into its parent. */

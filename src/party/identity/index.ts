@@ -95,3 +95,5 @@ export function rolesOf(
   }
   return out
 }
+
+/** @index-cross.foldback child=party/identity parent=party — this cross folds back into its parent. */

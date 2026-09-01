@@ -469,3 +469,5 @@ export class AccountQueries {
     return exactAbs(assets - (liabilities + equity)) < 1 // Allow 1 cent variance
   }
 }
+
+/** @index-cross.foldback child=accounting/debit parent=accounting — this cross folds back into its parent. */

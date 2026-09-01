@@ -28,3 +28,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/app — every atom is a quantum app:')
   console.log('  ' + quantumApps() + '/' + N.length + ' folders are quantum apps · proof = ' + everyFolderIsQuantumApp())
 }
+
+/** @index-cross.foldback child=quantum/app parent=quantum — this cross folds back into its parent. */

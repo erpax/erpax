@@ -844,3 +844,5 @@ export function runAutomateCli(argv: readonly string[] = process.argv.slice(2)):
 if (import.meta.url === `file://${process.argv[1]}`) {
   process.exit(runAutomateCli())
 }
+
+/** @index-cross.foldback child=apply/automate parent=apply — this cross folds back into its parent. */

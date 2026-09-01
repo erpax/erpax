@@ -24,3 +24,5 @@ export { FiscalPeriodResolver } from '@/fiscal/period/resolver'
 
 // Type definitions (if needed for external consumption)
 // export type { PeriodResolution, FiscalPeriodConfig, ... } from '@/fiscal/period/resolver'
+
+/** @index-cross.foldback child=fiscal/period parent=fiscal — this cross folds back into its parent. */

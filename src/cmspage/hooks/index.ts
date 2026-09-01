@@ -10,3 +10,5 @@
 
 export * from './beforeChange'
 export * from './revalidatePage'
+
+/** @index-cross.foldback child=cmspage/hooks parent=cmspage — this cross folds back into its parent. */

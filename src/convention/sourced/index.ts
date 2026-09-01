@@ -80,3 +80,5 @@ export function coverage(): number {
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('convention/sourced: total=' + total() + ' sourced=' + sourced() + ' coverage=' + coverage())
 }
+
+/** @index-cross.foldback child=convention/sourced parent=convention — this cross folds back into its parent. */

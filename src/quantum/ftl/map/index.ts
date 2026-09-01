@@ -144,3 +144,5 @@ export interface Seal {
   readonly text: string
   readonly followUps?: readonly string[]
 }
+
+/** @index-cross.foldback child=quantum/ftl/map parent=quantum/ftl — this cross folds back into its parent. */

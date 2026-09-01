@@ -135,3 +135,5 @@ export function checkSelfAccountingComplete(platformTenantId: string): {
     overdueObligations,
   }
 }
+
+/** @index-cross.foldback child=self/accounting parent=self — this cross folds back into its parent. */

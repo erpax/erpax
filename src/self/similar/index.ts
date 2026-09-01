@@ -59,3 +59,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  PROOF: ' + Object.entries(p).map(([k, v]) => k + '=' + v).join('  '))
   if (!Object.values(p).every(Boolean)) process.exit(1)
 }
+
+/** @index-cross.foldback child=self/similar parent=self — this cross folds back into its parent. */

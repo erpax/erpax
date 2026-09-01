@@ -47,3 +47,5 @@ export function coverage(): number {
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('convention/dry: atoms=' + atoms() + ' dup=' + dup() + ' coverage=' + coverage())
 }
+
+/** @index-cross.foldback child=convention/dry parent=convention — this cross folds back into its parent. */

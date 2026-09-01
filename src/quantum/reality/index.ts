@@ -21,3 +21,5 @@ export const eigenstate = (): string => realityRoot()
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/reality — collapsed=' + collapsed() + ' · eigenstate=' + eigenstate())
 }
+
+/** @index-cross.foldback child=quantum/reality parent=quantum — this cross folds back into its parent. */

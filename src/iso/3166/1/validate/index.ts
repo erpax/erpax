@@ -23,3 +23,5 @@ export const isIso3166Alpha2 = (s: unknown): s is string =>
  */
 export const isIso3166Alpha3 = (s: unknown): s is string =>
   typeof s === 'string' && RE_ALPHA3.test(s)
+
+/** @index-cross.foldback child=iso/3166/1/validate parent=iso/3166/1 — this cross folds back into its parent. */

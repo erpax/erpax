@@ -5,3 +5,5 @@ export const PART = 'hand' as const
 export const CANONICAL = 'hand' as const
 export const PARENT = 'body' as const
 export const atomPath = 'body/hand' as const
+
+/** @index-cross.foldback child=body/hand parent=body — this cross folds back into its parent. */

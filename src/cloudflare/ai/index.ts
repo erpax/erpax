@@ -19,3 +19,5 @@ export {
   AI_GATEWAY_VAR_KEYS,
   aiSecretIdentity,
 } from '../ai'
+
+/** @index-cross.foldback child=cloudflare/ai parent=cloudflare — this cross folds back into its parent. */

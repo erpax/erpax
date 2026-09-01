@@ -112,3 +112,5 @@ const Quotes: CollectionConfig = {
 }
 
 export default Quotes
+
+/** @index-cross.foldback child=customers/quotes parent=customers — this cross folds back into its parent. */

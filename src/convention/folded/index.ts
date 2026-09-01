@@ -83,3 +83,5 @@ export function coverage(root = SRC): number {
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('convention/folded: total=' + total() + ' folded=' + folded() + ' coverage=' + coverage())
 }
+
+/** @index-cross.foldback child=convention/folded parent=convention — this cross folds back into its parent. */

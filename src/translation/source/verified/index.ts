@@ -168,3 +168,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
     )
   })
 }
+
+/** @index-cross.foldback child=translation/source/verified parent=translation/source — this cross folds back into its parent. */

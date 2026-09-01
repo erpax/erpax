@@ -60,3 +60,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
     console.log('  ' + r.agent + ': cost ' + researchCost(r) + ' · value ' + r.entropyReduced + ' · worth ' + l.worth + ' · worthwhile=' + l.worthwhile + ' · ledger balances(net=' + net(l.entry) + ')')
   }
 }
+
+/** @index-cross.foldback child=quantum/research parent=quantum — this cross folds back into its parent. */

@@ -39,3 +39,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
       carries('bob', 'alice', b),
   )
 }
+
+/** @index-cross.foldback child=quantum/communication/superdense parent=quantum/communication — this cross folds back into its parent. */

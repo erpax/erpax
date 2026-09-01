@@ -103,3 +103,5 @@ export async function reverseSale(
 
   return { reversal, original: sealed }
 }
+
+/** @index-cross.foldback child=sale/reverse parent=sale — this cross folds back into its parent. */

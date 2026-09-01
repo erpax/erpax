@@ -101,3 +101,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.log('whole — every atom is named for its path. zero naming entropy.')
   }
 }
+
+/** @index-cross.foldback child=convention/named parent=convention — this cross folds back into its parent. */

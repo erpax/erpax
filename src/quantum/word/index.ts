@@ -163,3 +163,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  architectureBond stable=' + architectureBondStable())
   console.log('  fold paths=' + architectureFoldPaths().length)
 }
+
+/** @index-cross.foldback child=quantum/word parent=quantum — this cross folds back into its parent. */

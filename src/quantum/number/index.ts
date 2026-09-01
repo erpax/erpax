@@ -53,3 +53,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
       decimalTerminates(1, 7),
   )
 }
+
+/** @index-cross.foldback child=quantum/number parent=quantum — this cross folds back into its parent. */

@@ -80,3 +80,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   )
   console.log('  (1 ⇒ every atom is addressable-by-name and selectable-by-trigger; zero entropy)')
 }
+
+/** @index-cross.foldback child=convention/fronted parent=convention — this cross folds back into its parent. */

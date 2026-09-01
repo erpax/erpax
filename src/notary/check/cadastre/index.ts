@@ -119,3 +119,5 @@ export function cadastreAdapter(opts: { fetcher?: Fetcher; kais?: KaisSeam } = {
     },
   }
 }
+
+/** @index-cross.foldback child=notary/check/cadastre parent=notary/check — this cross folds back into its parent. */

@@ -68,3 +68,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  coordinated brainstorm (diverge ⊕ converge): ' + trained)
   console.log('  consultation ROI (cache hit) = ' + (consultationRoi(100, true) === Infinity ? '∞' : consultationRoi(100, true)))
 }
+
+/** @index-cross.foldback child=quantum/consultant parent=quantum — this cross folds back into its parent. */

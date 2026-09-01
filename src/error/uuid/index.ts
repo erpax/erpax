@@ -178,3 +178,5 @@ export function wrapError<Code extends string = string>(args: {
   })
   return { errorUuid, info }
 }
+
+/** @index-cross.foldback child=error/uuid parent=error — this cross folds back into its parent. */

@@ -72,3 +72,5 @@ export function provenanceUuid(prov: Provenance, tenantId: string): string {
 
 /** Test-only — never call in prod. */
 export function __resetProvenanceRegistry(): void { PROVENANCE_REGISTRY.clear() }
+
+/** @index-cross.foldback child=beyond/provenance parent=beyond — this cross folds back into its parent. */

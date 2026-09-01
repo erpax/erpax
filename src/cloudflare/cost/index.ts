@@ -300,3 +300,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   for (const [i, l] of LEVERS.entries()) console.log(`  ${i + 1}. ${l.lever}  → ${l.dimension}`)
   console.log('\n  the prices are the refutable input; the bill is the truth. magnitudes need the CF dashboard.')
 }
+
+/** @index-cross.foldback child=cloudflare/cost parent=cloudflare — this cross folds back into its parent. */

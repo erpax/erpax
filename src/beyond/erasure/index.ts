@@ -79,3 +79,5 @@ export function open(
 export function shred(keyId: string, vault: KeyVault): { erased: boolean } {
   return { erased: vault.delete(keyId) }
 }
+
+/** @index-cross.foldback child=beyond/erasure parent=beyond — this cross folds back into its parent. */

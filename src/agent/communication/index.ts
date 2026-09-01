@@ -46,3 +46,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   const m = send('a', 'b', 'u1')
   console.log('agent/communication — relay preserves the uuid: ' + sameMessage(m, relay(m, 'c')))
 }
+
+/** @index-cross.foldback child=agent/communication parent=agent — this cross folds back into its parent. */

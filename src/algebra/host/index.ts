@@ -179,3 +179,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   for (const x of v.slice(0, 40)) console.log(`  · ${x.reason}`)
   if (v.length > 0) process.exitCode = 1
 }
+
+/** @index-cross.foldback child=algebra/host parent=algebra — this cross folds back into its parent. */

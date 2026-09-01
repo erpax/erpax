@@ -193,3 +193,5 @@ export function trelloPlugin(pluginConfig: TrelloPluginConfig): (incoming: Confi
     }
   }
 }
+
+/** @index-cross.foldback child=trello/plugin parent=trello — this cross folds back into its parent. */

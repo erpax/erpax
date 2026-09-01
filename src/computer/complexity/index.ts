@@ -58,3 +58,5 @@ export function recordComputerComplexityOnPath(
 ): PathCanonicalEntry {
   return recordPathVisit('computer/complexity', { kind: 'computer.complexity.step', payload }, at, prevEntryUuid, seq)
 }
+
+/** @index-cross.foldback child=computer/complexity parent=computer — this cross folds back into its parent. */

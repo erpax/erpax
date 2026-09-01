@@ -61,3 +61,5 @@ export const isPayloadUser = (user: unknown): user is {
     u.roles.every((r) => typeof r === 'string')
   )
 }
+
+/** @index-cross.foldback child=types/auth parent=types — this cross folds back into its parent. */

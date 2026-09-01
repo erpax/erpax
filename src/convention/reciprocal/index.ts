@@ -78,3 +78,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   if (t.oneWay.length) console.log(`one-way residue: ${t.oneWay.length} edges (e.g. ${t.oneWay.slice(0, 5).map(([f, x]) => `${f}→${x}`).join(' · ')})`)
   else console.log('whole — every directed edge is reciprocated. zero directed-wiring entropy.')
 }
+
+/** @index-cross.foldback child=convention/reciprocal parent=convention — this cross folds back into its parent. */

@@ -11,3 +11,5 @@
 export * from './beforeValidate'
 export * from './recomputeInvoiceTotals'
 export * from './recomputeItemInventory'
+
+/** @index-cross.foldback child=invoices/invoice/lines/hooks parent=invoices/invoice/lines — this cross folds back into its parent. */

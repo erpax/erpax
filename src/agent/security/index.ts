@@ -98,3 +98,5 @@ export function formatSecurityMonitorLine(): string {
   const s = securityMonitor()
   return `security parse allowed=${s.allowed} blocked=${s.blocked}`
 }
+
+/** @index-cross.foldback child=agent/security parent=agent — this cross folds back into its parent. */

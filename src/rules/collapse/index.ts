@@ -205,3 +205,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  naming a pair by meaning is NOT a merge — the shapes decide; the theorem refutes the eye.')
   console.log('  A collection erpax does not own (payload-*, plugin tables) is not erpax\'s to collapse.')
 }
+
+/** @index-cross.foldback child=rules/collapse parent=rules — this cross folds back into its parent. */

@@ -64,3 +64,5 @@ export const PHASE_DEGREES = 120
 export function closesCircle(): boolean {
   return TRIAD.length * PHASE_DEGREES === 360
 }
+
+/** @index-cross.foldback child=rodin/axis parent=rodin — this cross folds back into its parent. */

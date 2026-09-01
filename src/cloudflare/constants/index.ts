@@ -11,3 +11,5 @@
  */
 export const ERPAX_SECRET_ENV_KEYS = ['ERPAX_SEAL_KEY', 'ERPAX_CIPHER_KEY'] as const
 export const ERPAX_BINDING_ENV_KEYS = ['ERPAX_DO', 'ERPAX_KV', 'ERPAX_R2'] as const
+
+/** @index-cross.foldback child=cloudflare/constants parent=cloudflare — this cross folds back into its parent. */

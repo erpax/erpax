@@ -139,3 +139,5 @@ export function toValues(labels: Pick<Labels, 'labels'>, locales: readonly strin
   for (const l of locales) if (labels.labels[l]) out[l] = labels.labels[l]!
   return out
 }
+
+/** @index-cross.foldback child=translation/source parent=translation — this cross folds back into its parent. */

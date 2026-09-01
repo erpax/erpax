@@ -102,3 +102,5 @@ const Opportunities: CollectionConfig = {
 }
 
 export default Opportunities
+
+/** @index-cross.foldback child=leads/opportunities parent=leads — this cross folds back into its parent. */

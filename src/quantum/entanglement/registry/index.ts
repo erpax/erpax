@@ -669,3 +669,5 @@ export function entangledFieldsFromRegistry(atomPath: string): Array<{
       collapse: e.collapse,
     }))
 }
+
+/** @index-cross.foldback child=quantum/entanglement/registry parent=quantum/entanglement — this cross folds back into its parent. */

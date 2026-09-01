@@ -201,3 +201,5 @@ export function assertPhaseClaim(claim: string): void {
     if (subject && assertion) throw new PhaseOverClaim(claim, r.refutedBy)
   }
 }
+
+/** @index-cross.foldback child=rodin/phase parent=rodin — this cross folds back into its parent. */

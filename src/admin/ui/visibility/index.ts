@@ -56,3 +56,5 @@ function actorFromUser(user: unknown): AccessActor {
     internal: false,
   }
 }
+
+/** @index-cross.foldback child=admin/ui/visibility parent=admin/ui — this cross folds back into its parent. */

@@ -8,3 +8,5 @@ export const atomPath = 'computer/language' as const
 
 /** Re-export stub — canonical vocabulary at @/language. */
 export const reexportFrom = '@/language' as const
+
+/** @index-cross.foldback child=computer/language parent=computer — this cross folds back into its parent. */

@@ -196,3 +196,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
     console.log(`  ${String(cs.length).padStart(3)}  ${role.padEnd(20)} ${files} file(s) · ${stubs} confessed stub(s)`)
   }
 }
+
+/** @index-cross.foldback child=rules/audience parent=rules — this cross folds back into its parent. */

@@ -126,3 +126,5 @@ const Sales: CollectionConfig = {
 }
 
 export default Sales
+
+/** @index-cross.foldback child=fiscal/devices/sales parent=fiscal/devices — this cross folds back into its parent. */

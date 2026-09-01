@@ -33,3 +33,5 @@ export function isIban(s: unknown): s is string {
   }
   return r === 1
 }
+
+/** @index-cross.foldback child=iso/13616/iban parent=iso/13616 — this cross folds back into its parent. */

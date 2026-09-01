@@ -122,3 +122,5 @@ export function expand(uuid: string): PromptFrame {
   const prompt = renderPrompt({ uuid, identity, signal, atom, dim, neighbors, backlinks })
   return { uuid, identity, signal, atom, dim, neighbors, backlinks, prompt }
 }
+
+/** @index-cross.foldback child=uuid/llm parent=uuid — this cross folds back into its parent. */

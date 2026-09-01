@@ -480,3 +480,5 @@ export function inventoryGateWarnings(cwd: string = process.cwd()): readonly str
   }
   return out
 }
+
+/** @index-cross.foldback child=agent/inventory parent=agent — this cross folds back into its parent. */

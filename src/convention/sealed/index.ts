@@ -61,3 +61,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  ' + catches + ' catches · ' + leaks + ' detectable leaks (swallow/default)')
   console.log('  seal coverage = ' + (100 * coverage()).toFixed(2) + '% (upper bound — real leaks ≥ detected)')
 }
+
+/** @index-cross.foldback child=convention/sealed parent=convention — this cross folds back into its parent. */

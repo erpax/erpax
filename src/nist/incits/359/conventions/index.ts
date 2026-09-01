@@ -70,3 +70,5 @@ export function permissionStringToTriplet(s: string): PermissionTriplet | null {
     other: parseTriple(6),
   }
 }
+
+/** @index-cross.foldback child=nist/incits/359/conventions parent=nist/incits/359 — this cross folds back into its parent. */

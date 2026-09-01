@@ -194,3 +194,5 @@ const CostCenters: CollectionConfig = {
 }
 
 export default CostCenters
+
+/** @index-cross.foldback child=cost/centers parent=cost — this cross folds back into its parent. */

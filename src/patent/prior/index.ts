@@ -192,3 +192,5 @@ export function assertGrantClaim(claim: string): void {
   const works = /prov(es|en)|works|demonstrat|therefore real|free energy|unlimited/.test(lowered)
   if (patented && works) throw new GrantOverClaim(claim)
 }
+
+/** @index-cross.foldback child=patent/prior parent=patent — this cross folds back into its parent. */

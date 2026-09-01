@@ -52,3 +52,5 @@ export function recordComputerAlgorithmOnPath(
 ): PathCanonicalEntry {
   return recordPathVisit('computer/algorithm', { kind: 'computer.algorithm.step', payload }, at, prevEntryUuid, seq)
 }
+
+/** @index-cross.foldback child=computer/algorithm parent=computer — this cross folds back into its parent. */

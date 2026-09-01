@@ -236,3 +236,5 @@ export function afterDoublings(times: number, states: readonly number[] = sevenS
   const step = iterate(doubleDigit, times)
   return states.map((d) => [d, step(d)] as const)
 }
+
+/** @index-cross.foldback child=sequence/inversion parent=sequence — this cross folds back into its parent. */

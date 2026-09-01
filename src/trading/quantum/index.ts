@@ -307,3 +307,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  side=' + trade.side + ' price=' + trade.price)
   console.log('  conserves=' + settlement.conserves + ' trialBalance=' + settlement.trialBalance)
 }
+
+/** @index-cross.foldback child=trading/quantum parent=trading — this cross folds back into its parent. */

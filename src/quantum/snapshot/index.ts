@@ -48,3 +48,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   const s = { v: 1 }
   console.log('quantum/snapshot — uuid=' + snapshotUuid(s))
 }
+
+/** @index-cross.foldback child=quantum/snapshot parent=quantum — this cross folds back into its parent. */

@@ -318,3 +318,5 @@ export function bestLeadTeam(candidates: readonly Candidate[]): LeadAssignment |
 export function computedLeader(candidates: readonly Candidate[]): Candidate | null {
   return bestLeadTeam(candidates)?.leader ?? null
 }
+
+/** @index-cross.foldback child=agent/team parent=agent — this cross folds back into its parent. */

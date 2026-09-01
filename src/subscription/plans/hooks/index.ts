@@ -13,3 +13,5 @@
  */
 
 export {}
+
+/** @index-cross.foldback child=subscription/plans/hooks parent=subscription/plans — this cross folds back into its parent. */

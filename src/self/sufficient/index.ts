@@ -182,3 +182,5 @@ export function nextDirection(intents: readonly string[]): Direction[] {
     })
     .sort((a, b) => b.rank - a.rank)
 }
+
+/** @index-cross.foldback child=self/sufficient parent=self — this cross folds back into its parent. */

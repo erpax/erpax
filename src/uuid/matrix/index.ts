@@ -463,3 +463,5 @@ export function assertMatrixSigned(): { signed: number } {
   }
   return { signed: UUID_MATRIX_NODES.length }
 }
+
+/** @index-cross.foldback child=uuid/matrix parent=uuid — this cross folds back into its parent. */

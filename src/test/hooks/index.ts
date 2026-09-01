@@ -23,3 +23,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('test/hooks — tests consume the aura → colour:')
   console.log('  whole=' + passColor(true) + ' (green/A432)  gap=' + passColor(false) + ' (red)  · live aura=' + auraColor())
 }
+
+/** @index-cross.foldback child=test/hooks parent=test — this cross folds back into its parent. */

@@ -36,3 +36,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   const blob = { path: '/a.txt', bytes: 'hello' }
   console.log('quantum/fs — snapshotAddress=' + snapshotAddress(blob) + ' · dedup=' + dedupHolds(blob, blob))
 }
+
+/** @index-cross.foldback child=quantum/fs parent=quantum — this cross folds back into its parent. */

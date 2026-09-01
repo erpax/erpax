@@ -197,3 +197,76 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  double-torus: 2×' + TORUS_BITS + 'b=' + DOUBLE_TORUS_BITS + 'b · single floor 2^' + singleTorusFloorLog2().toFixed(1) + ' · no-gap cost ' + (doubleTorusCostLog2(0) === Infinity ? '∞' : doubleTorusCostLog2(0).toFixed(1)))
 }
 
+export * from './accounting'
+
+export * from './app'
+
+export * from './aura'
+
+export * from './boundary'
+
+export * from './cache'
+
+export * from './chart'
+
+export * from './clock'
+
+export * from './communication'
+
+export * from './deploy'
+
+export * from './development'
+
+export * from './device'
+
+export * from './evidence'
+
+export * from './fs'
+
+export * from './gaps'
+
+export * from './generator'
+
+export * from './graph'
+
+export * from './karma'
+
+export * from './law'
+
+export * from './literature'
+
+export * from './log'
+
+export * from './marine'
+
+export * from './math'
+
+export * from './mcp'
+
+export * from './number'
+
+export * from './particle'
+
+export * from './pi'
+
+export * from './port'
+
+export * from './query'
+
+export * from './reality'
+
+export * from './research'
+
+export * from './schema'
+
+export * from './security'
+
+export * from './snapshot'
+
+export * from './society'
+
+export * from './train'
+
+export * from './type'
+
+export * from './vocabulary'

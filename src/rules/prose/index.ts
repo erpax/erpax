@@ -152,3 +152,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log(`prose — ${dead.length} cited symbol(s) that nothing in src defines`)
   for (const d of dead.slice(0, 12)) console.log(`  ${d.from} → \`${d.symbol}\``)
 }
+
+/** @index-cross.foldback child=rules/prose parent=rules — this cross folds back into its parent. */

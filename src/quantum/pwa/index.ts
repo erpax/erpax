@@ -30,3 +30,5 @@ export const offlineRoundtrip = (url: string, content: string): boolean => {
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/pwa — corpus as a PWA of ' + appCount() + ' quantum apps · installable=' + installable() + ' · offline-roundtrip=' + offlineRoundtrip('/x.json', '{"a":1}'))
 }
+
+/** @index-cross.foldback child=quantum/pwa parent=quantum — this cross folds back into its parent. */

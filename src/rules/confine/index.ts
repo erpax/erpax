@@ -107,3 +107,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   )
   process.exit(touches.length === 0 ? 0 : 1)
 }
+
+/** @index-cross.foldback child=rules/confine parent=rules — this cross folds back into its parent. */

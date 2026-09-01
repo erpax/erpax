@@ -304,3 +304,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   console.log(`  atoms: ${remedy.atoms.join(' · ')}`)
   console.log(`  law: ${remedy.law}`)
 }
+
+/** @index-cross.foldback child=ai/industry parent=ai — this cross folds back into its parent. */

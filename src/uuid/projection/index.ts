@@ -105,3 +105,5 @@ export function project<T extends Record<string, unknown>>(record: T, tenantId: 
   const uuid = computeContentUuid(record, tenantId) as string
   return { uuid, searchText: searchableText(record), color: uuidColor(uuid), cssVars: uuidCssVars(uuid) }
 }
+
+/** @index-cross.foldback child=uuid/projection parent=uuid — this cross folds back into its parent. */

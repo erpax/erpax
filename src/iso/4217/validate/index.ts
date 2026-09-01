@@ -17,3 +17,5 @@ const RE_ISO_4217 = /^[A-Z]{3}$/
  */
 export const isIso4217 = (s: unknown): s is string =>
   typeof s === 'string' && RE_ISO_4217.test(s)
+
+/** @index-cross.foldback child=iso/4217/validate parent=iso/4217 — this cross folds back into its parent. */

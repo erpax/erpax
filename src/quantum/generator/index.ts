@@ -31,3 +31,5 @@ export function recordGeneratorOnPath(
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/generator — manifest(merge)=' + manifest('merge') + ' · same=' + sameManifest('x', 'x'))
 }
+
+/** @index-cross.foldback child=quantum/generator parent=quantum — this cross folds back into its parent. */

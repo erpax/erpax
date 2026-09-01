@@ -50,3 +50,5 @@ export function amortize(
     scalesToInfinity: t === 0 && a > 0,
   }
 }
+
+/** @index-cross.foldback child=quantum/ftl/metrics parent=quantum/ftl — this cross folds back into its parent. */

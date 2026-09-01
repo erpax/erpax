@@ -8,3 +8,5 @@ export {
   type ImproveResult,
 } from './ViolationMonitorProvider'
 export { default as ViolationMonitorPanel } from './ViolationMonitorPanel'
+
+/** @index-cross.foldback child=admin/ui/violations parent=admin/ui — this cross folds back into its parent. */

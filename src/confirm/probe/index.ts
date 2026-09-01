@@ -5,3 +5,5 @@ import { guardian } from '@/guardian'
 import { seal } from '@/seal'
 
 export const UUID_SUBSTRATE_PROBE = seal([guardian({ axis: 'probe', violations: 0, baseline: 0 })]).sealed
+
+/** @index-cross.foldback child=confirm/probe parent=confirm — this cross folds back into its parent. */

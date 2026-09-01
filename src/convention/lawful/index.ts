@@ -55,3 +55,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  total=' + total() + ' lawful=' + lawful() + ' coverage=' + (100 * coverage()).toFixed(1) + '%')
   console.log('  (1 ⇒ every atom is accountable; the convention holds with zero entropy)')
 }
+
+/** @index-cross.foldback child=convention/lawful parent=convention — this cross folds back into its parent. */

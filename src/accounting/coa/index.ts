@@ -111,3 +111,5 @@ export function balanceByPath(entry: ValidatedEntry): Record<string, number> {
   }
   return bal
 }
+
+/** @index-cross.foldback child=accounting/coa parent=accounting — this cross folds back into its parent. */

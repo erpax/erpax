@@ -239,3 +239,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log(`  every atom real on disk: ${resolved.every((r) => r.exists)} (${resolved.map((r) => r.atom).join(', ')})`)
   console.log('\n  the loop consumes its own output — the dependency graph of improvement terminates at erpax itself.')
 }
+
+/** @index-cross.foldback child=self/improve parent=self — this cross folds back into its parent. */

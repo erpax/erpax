@@ -120,3 +120,5 @@ export function registryAdapter(opts: { fetcher?: Fetcher; register?: RegisterSe
     },
   }
 }
+
+/** @index-cross.foldback child=notary/check/registry parent=notary/check — this cross folds back into its parent. */

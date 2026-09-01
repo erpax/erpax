@@ -45,3 +45,5 @@ export function recordComputerStackOnPath(
 ): PathCanonicalEntry {
   return recordPathVisit('computer/stack', { kind: 'computer.stack.step', payload }, at, prevEntryUuid, seq)
 }
+
+/** @index-cross.foldback child=computer/stack parent=computer — this cross folds back into its parent. */

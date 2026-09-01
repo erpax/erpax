@@ -6,3 +6,5 @@ export { CallToAction } from '../call/to/action/config'
 export { FormBlock } from '../form/config'
 export { MediaBlock } from '../media/block/config'
 export { Archive } from '../archive/block/config'
+
+/** @index-cross.foldback child=blocks/config parent=blocks — this cross folds back into its parent. */

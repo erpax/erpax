@@ -56,3 +56,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  ' + COMMANDS.length + ' commands → root ' + foldCommands().slice(0, 18) + '…')
   console.log('  both sides: migrate ↔ ' + inverseOf('migrate') + ' · migrate:fresh ↔ ' + inverseOf('migrate:fresh') + ' · generate:types ↔ ' + inverseOf('generate:types'))
 }
+
+/** @index-cross.foldback child=payload/command parent=payload — this cross folds back into its parent. */

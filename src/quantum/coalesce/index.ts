@@ -7,11 +7,9 @@ import { requestUuid } from '@/quantum/request'
 import { exactMax, exactTrunc } from '@/algebra'
 
 export interface CoalesceStats {
-  /** logical requests accepted from callers */
   readonly requests: number
   /** calls actually made upstream — the only number that costs anything */
   readonly upstream: number
-  /** requests answered from an in-flight or settled fold */
   readonly reuses: number
   /** highest simultaneous upstream calls — never exceeds `concurrency` */
   readonly peak: number
@@ -129,3 +127,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.log(`collapse ratio ${(s.requests / exactMax(1, s.upstream)).toFixed(1)}×`)
   })
 }
+
+/** @index-cross.foldback child=quantum/coalesce parent=quantum — this cross folds back into its parent. */

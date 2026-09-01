@@ -226,3 +226,5 @@ export function computeIdentityUuid<C extends string = string>(
     tenantId,
   ) as ContentUuid<{ slot: string; code: C }>
 }
+
+/** @index-cross.foldback child=identity/element parent=identity — this cross folds back into its parent. */

@@ -157,3 +157,5 @@ export function assertCorrespondenceClaim(claim: string): void {
     )
   }
 }
+
+/** @index-cross.foldback child=millennium/correspondence parent=millennium — this cross folds back into its parent. */

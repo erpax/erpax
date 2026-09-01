@@ -627,3 +627,5 @@ export function chatStringTheory(session: ChatSession): {
   )
   return { session: next, theory }
 }
+
+/** @index-cross.foldback child=quantum/chat parent=quantum — this cross folds back into its parent. */

@@ -23,3 +23,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   const b = { table: 'u', columns: ['b', 'a'] }
   console.log('quantum/sql — equivalent queries share one uuid: ' + sameQuery(a, b))
 }
+
+/** @index-cross.foldback child=quantum/sql parent=quantum — this cross folds back into its parent. */

@@ -66,3 +66,4 @@ export type { InverseClosure } from '../arithmetic'
 export type { CarryRay } from '../ring'
 export type { Loop2D, BreathStep, CornerLimit, Singularity } from '../geometry'
 
+/** @index-cross.foldback child=horo/constants parent=horo — this cross folds back into its parent. */

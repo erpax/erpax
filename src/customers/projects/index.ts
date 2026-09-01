@@ -126,3 +126,5 @@ const Projects: CollectionConfig = {
 }
 
 export default Projects
+
+/** @index-cross.foldback child=customers/projects parent=customers — this cross folds back into its parent. */

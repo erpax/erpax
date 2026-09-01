@@ -129,3 +129,5 @@ export async function checkEu(opts: { readonly cwd?: string; readonly fetchImpl?
   const rows = await runOutward(euProbes(opts.fetchImpl ?? fetch), prior)
   return { verdict: outwardVerdict(rows), book: nextBook(prior, rows), prior }
 }
+
+/** @index-cross.foldback child=outward/eu parent=outward — this cross folds back into its parent. */

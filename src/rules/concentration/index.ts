@@ -539,3 +539,5 @@ export function concentrationManifest(cwd: string = process.cwd()): ReadonlyArra
     .filter((r) => r.movable.length > 0)
     .sort((a, b) => b.movable.length - a.movable.length)
 }
+
+/** @index-cross.foldback child=rules/concentration parent=rules — this cross folds back into its parent. */

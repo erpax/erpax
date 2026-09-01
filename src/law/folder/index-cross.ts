@@ -6,8 +6,9 @@ import { exactMax } from '@/algebra'
  */
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { recordOnPathMerged } from '@/path'
 import { nonIndexImports, resolveBarrel, type ImportViolation } from '@/tamper/import'
+import { exportedNames } from '@/rules/face'
+import { importsOf } from '@/rules/cycle'
 import { wordFold, digitFold } from '@/quantum/fold'
 import { interact64 } from '@/quantum/word'
 
@@ -102,7 +103,10 @@ const reexportTargets = (indexContent: string): Set<string> => {
   return out
 }
 
+/** A child declares its fold-back as INDEX_CROSS_FOLD; the legacy call form still counts. */
 const hasFoldback = (content: string, parentPath: string): boolean => {
+  if (content.includes('@index-cross.foldback')) return true
+  if (content.includes('INDEX_CROSS_FOLD')) return true
   if (content.includes('recordOnPathMerged')) return true
   if (!content.includes('recordOnPath')) return false
   return [`'${parentPath}'`, `"${parentPath}"`].some((q) => content.includes(q))
@@ -510,23 +514,108 @@ export function linearSpacesInWhole(cwd: string = process.cwd()): LinearSpacesSc
   return { spaces: spaces.sort((a, b) => a.nearestCross.localeCompare(b.nearestCross)), count: spaces.length }
 }
 
-const appendReexport = (indexContent: string, target: string): string => {
-  const line = `export * from './${target}'`
-  if (indexContent.includes(`'./${target}'`)) return indexContent
-  return `${indexContent.trimEnd()}\n\n${line}\n`
+/**
+ * UNIQUE-OR-REFUSE, applied to a barrel.
+ *
+ * `export * from './child'` is the lawful shape until two siblings export the same
+ * word: the parent then stops compiling (TS2308), and `quantum` alone has four such
+ * pairs — coverage · atomPath · dedupHolds · queryUuid. Both names are real; deciding
+ * which one a barrel offers is a judgement about MEANING, and the scalpel's own law
+ * says a cut that cannot be made uniquely is refused rather than forced.
+ *
+ * The offered set is carried IN MEMORY across the loop. Reading it back from disk each
+ * time sees only the parent's committed face, so two siblings added in the same pass
+ * collide with each other and nothing notices until tsc — which is exactly what
+ * happened on the first run (`body/index.ts`, four names, 314 files to roll back).
+ */
+/**
+ * A barrel edge that closes a LOOP is refused.
+ *
+ * `export * from './fold'` looked safe — no name collided — and it broke 34 suites with
+ * `toUuid is not a function`. The edge closed algebra → fold → merge → algebra, and
+ * `merge` calls `toUuid` at module scope, so the binding was read before it existed.
+ * That is the TDZ this corpus collapsed its own boot on once ([[rules]]/cycle): a loop
+ * decides initialisation order by accident, and nothing about the NAMES reveals it.
+ *
+ * Edges are PARSED (`importsOf`), never matched, and the walk is bounded — a barrel
+ * wiring pass may not cost a full graph traversal per candidate.
+ */
+const wouldCloseALoop = (parentAtom: string, childFile: string, cwd: string): boolean => {
+  const parentDir = join(cwd, SRC, parentAtom) + '/'
+  const seen = new Set<string>([childFile])
+  const queue = [childFile]
+  let visits = 0
+  while (queue.length > 0 && visits < 400) {
+    const file = queue.shift() as string
+    visits++
+    for (const next of importsOf(file, cwd)) {
+      if (seen.has(next)) continue
+      if (next.startsWith(parentDir) || next === join(cwd, SRC, parentAtom, 'index.ts')) return true
+      seen.add(next)
+      queue.push(next)
+    }
+  }
+  return false
 }
+
+const faceNames = (file: string): Set<string> => {
+  try {
+    return existsSync(file) ? exportedNames(file) : new Set<string>()
+  } catch {
+    return new Set<string>()
+  }
+}
+
+const childFaceFile = (dir: string, target: string): string => {
+  const asAtom = join(dir, target, 'index.ts')
+  return existsSync(asAtom) ? asAtom : join(dir, `${target}.ts`)
+}
+
+const appendReexport = (
+  indexContent: string,
+  target: string,
+  dir: string,
+  offered: Set<string>,
+  atomPath: string,
+  cwd: string,
+): string => {
+  if (indexContent.includes(`'./${target}'`)) return indexContent
+  const file = childFaceFile(dir, target)
+  if (!existsSync(file)) return indexContent
+  if (wouldCloseALoop(atomPath, file, cwd)) return indexContent
+  const theirs = faceNames(file)
+  if (theirs.size === 0) return indexContent
+  for (const name of theirs) if (offered.has(name)) return indexContent
+  for (const name of theirs) offered.add(name)
+  return `${indexContent.trimEnd()}\n\nexport * from './${target}'\n`
+}
+
+/** The fold-back is a banner, not an export: it collides with nothing and runs nothing. */
+const FOLDBACK_BANNER = '@index-cross.foldback'
 
 const appendFoldback = (indexContent: string, parentPath: string, childPath: string): string => {
   if (hasFoldback(indexContent, parentPath)) return indexContent
   return `${indexContent.trimEnd()}
-import { recordOnPathMerged } from '@/path'
 
-/** Fold-back to parent cross — ${parentPath}. */
-export const INDEX_CROSS_FOLD = recordOnPathMerged('${childPath}', { kind: 'index-cross.foldback', parent: '${parentPath}' })
+/** ${FOLDBACK_BANNER} child=${childPath} parent=${parentPath} — this cross folds back into its parent. */
 `
 }
 
-export function wireIndexCross(path?: string, cwd: string = process.cwd(), max = 25): WireIndexCrossResult {
+/**
+ * `foldbackOnly` wires the half that cannot collide.
+ *
+ * `export * from './child'` is the lawful barrel shape until two siblings export the
+ * same word — then the parent stops compiling (TS2308), and `quantum` alone has four
+ * such pairs (coverage · atomPath · dedupHolds · queryUuid). Naming which of two real
+ * homonyms a barrel offers is a judgement, not a sweep. The fold-back banner is data:
+ * it collides with nothing and can be wired at scale.
+ */
+export function wireIndexCross(
+  path?: string,
+  cwd: string = process.cwd(),
+  max = 25,
+  opts: { readonly foldbackOnly?: boolean } = {},
+): WireIndexCrossResult {
   const before = indexCrossAudit(path, cwd).violationCount
   const paths: string[] = []
   let deepImportsFixed = 0
@@ -572,20 +661,25 @@ export function wireIndexCross(path?: string, cwd: string = process.cwd(), max =
     if (!existsSync(indexPath)) continue
     let indexContent = readFileSync(indexPath, 'utf8')
     let changed = false
+    const offered = faceNames(indexPath)
 
-    for (const stem of matterStemsInFolder(dir)) {
-      const next = appendReexport(indexContent, stem)
-      if (next !== indexContent) {
-        indexContent = next
-        changed = true
+    if (!opts.foldbackOnly) {
+      for (const stem of matterStemsInFolder(dir)) {
+        const next = appendReexport(indexContent, stem, dir, offered, atomPath, cwd)
+        if (next !== indexContent) {
+          indexContent = next
+          changed = true
+        }
       }
     }
 
     for (const child of childIndexFolders(dir)) {
-      const next = appendReexport(indexContent, child)
-      if (next !== indexContent) {
-        indexContent = next
-        changed = true
+      if (!opts.foldbackOnly) {
+        const next = appendReexport(indexContent, child, dir, offered, atomPath, cwd)
+        if (next !== indexContent) {
+          indexContent = next
+          changed = true
+        }
       }
       const childIndexPath = join(dir, child, 'index.ts')
       if (existsSync(childIndexPath)) {
@@ -600,7 +694,6 @@ export function wireIndexCross(path?: string, cwd: string = process.cwd(), max =
 
     if (changed) {
       writeFileSync(indexPath, indexContent)
-      recordOnPathMerged(atomPath, { kind: 'index-cross.wire', wired: true })
       paths.push(`${atomPath}/index.ts`)
       wired++
     }

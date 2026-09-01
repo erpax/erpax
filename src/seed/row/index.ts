@@ -76,3 +76,5 @@ export function seedAddress<T>(rows: readonly SeedRow<T>[]): string {
 export function unboundRows<T>(rows: readonly SeedRow<T>[], atomUuid: string): readonly SeedRow<T>[] {
   return rows.filter((r) => r.uuid !== merge(atomUuid, contentAddress(r.value)) || r.content !== contentAddress(r.value))
 }
+
+/** @index-cross.foldback child=seed/row parent=seed — this cross folds back into its parent. */

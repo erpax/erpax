@@ -74,3 +74,5 @@ console.log('schema.org → single-word atoms (collided with itself)')
 console.log(`  distinct single words ${collision.words.size}`)
 console.log(`  ${EMIT ? 'MINTED' : 'would mint'} ${minted} · skipped ${skipped} foreign/reserved (merge-safe)`)
 if (!EMIT) console.log('  (dry — pass --emit)')
+
+/** @index-cross.foldback child=sti/vocabulary parent=sti — this cross folds back into its parent. */

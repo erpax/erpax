@@ -141,3 +141,5 @@ export function applySecurityHeaders(
 
   return newResponse
 }
+
+/** @index-cross.foldback child=security/header/headers parent=security/header — this cross folds back into its parent. */

@@ -180,3 +180,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   for (const e of r.dead.slice(0, 10)) console.log(`  dead   ${e.name}  (${e.file})`)
   for (const e of r.single.slice(0, 5)) console.log(`  single ${e.name}  (${e.file})`)
 }
+
+/** @index-cross.foldback child=rules/unfolded parent=rules — this cross folds back into its parent. */

@@ -55,3 +55,5 @@ export function createAgentRegistry(agents: ReadonlyArray<DomainAgent>): AgentRe
     all: () => agents,
   }
 }
+
+/** @index-cross.foldback child=agent/registry parent=agent — this cross folds back into its parent. */

@@ -258,3 +258,5 @@ export async function identityBindings(): Promise<IdentityBinding[]> {
   }
   return cachedBindings
 }
+
+/** @index-cross.foldback child=self/research parent=self — this cross folds back into its parent. */

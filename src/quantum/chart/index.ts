@@ -18,3 +18,5 @@ export const colors = (c: Chart): string[] => c.series.map((v) => colorOf(1 + ex
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/chart — colours: ' + colors(chart([1, 3, 5])).join(' '))
 }
+
+/** @index-cross.foldback child=quantum/chart parent=quantum — this cross folds back into its parent. */

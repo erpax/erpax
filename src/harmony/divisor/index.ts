@@ -124,3 +124,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.log(`    ${String(d).padStart(3)} = 2^${a}·3^${b}  →  ${d}/432 = 1/${invert(d)}`)
   }
 }
+
+/** @index-cross.foldback child=harmony/divisor parent=harmony — this cross folds back into its parent. */

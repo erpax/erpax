@@ -113,3 +113,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  import tamper-cost = ' + (importCostLog2() === Infinity ? '∞ (sealed)' : importCostLog2().toFixed(1) + ' (a gap is open)'))
   console.log('  sample violations: ' + s.violations.slice(0, 6).map((v) => v.spec).join(', '))
 }
+
+/** @index-cross.foldback child=tamper/import parent=tamper — this cross folds back into its parent. */

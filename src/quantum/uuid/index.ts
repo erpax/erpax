@@ -37,3 +37,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   console.log(`  deterministic: ${collapseDeterministic(sample, sample)}`)
   console.log(`  no-cloning: ${noCloningHolds()}  merkle: ${merkleCollapseHolds()}`)
 }
+
+/** @index-cross.foldback child=quantum/uuid parent=quantum — this cross folds back into its parent. */

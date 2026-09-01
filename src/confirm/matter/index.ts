@@ -501,3 +501,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   if (FULL) process.exit(fullConfirm(yaml) ? 0 : 1)
   process.exit(runScopedConfirm(args, HOOK, yaml))
 }
+
+/** @index-cross.foldback child=confirm/matter parent=confirm — this cross folds back into its parent. */

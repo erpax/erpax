@@ -201,3 +201,5 @@ export function toolI18nCoverage(): {
   }
   return { totalTools: TOOL_I18N_REGISTRY.size, byLocale, unlocalized }
 }
+
+/** @index-cross.foldback child=agents/mcp/i18n parent=agents/mcp — this cross folds back into its parent. */

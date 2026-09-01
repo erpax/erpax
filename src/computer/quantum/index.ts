@@ -12,3 +12,5 @@ export {
   auditWaves,
 } from '@/quantum/computer'
 export const atomPath = 'computer/quantum' as const
+
+/** @index-cross.foldback child=computer/quantum parent=computer — this cross folds back into its parent. */

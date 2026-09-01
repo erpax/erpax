@@ -142,3 +142,5 @@ export interface DaysPayableOutstanding {
   isOverdue: boolean
   daysOverdue?: number
 }
+
+/** @index-cross.foldback child=types/receivables parent=types — this cross folds back into its parent. */

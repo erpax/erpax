@@ -281,3 +281,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     }),
   )
 }
+
+/** @index-cross.foldback child=quantum/ftl/purify parent=quantum/ftl — this cross folds back into its parent. */

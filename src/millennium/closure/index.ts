@@ -218,3 +218,5 @@ export const DECIDERS: readonly Decider[] = [
 ]
 
 export const IMPLEMENTED = DECIDERS.filter((d) => d.decides !== '').length
+
+/** @index-cross.foldback child=millennium/closure parent=millennium — this cross folds back into its parent. */

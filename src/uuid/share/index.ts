@@ -495,3 +495,5 @@ export async function listShares(
     sealed: (row.sealed as boolean) ?? false,
   }))
 }
+
+/** @index-cross.foldback child=uuid/share parent=uuid — this cross folds back into its parent. */

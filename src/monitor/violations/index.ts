@@ -714,3 +714,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     })
   }
 }
+
+/** @index-cross.foldback child=monitor/violations parent=monitor — this cross folds back into its parent. */

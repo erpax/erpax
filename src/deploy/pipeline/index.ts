@@ -161,3 +161,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
     }
   })()
 }
+
+/** @index-cross.foldback child=deploy/pipeline parent=deploy — this cross folds back into its parent. */

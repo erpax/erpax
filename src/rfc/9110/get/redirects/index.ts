@@ -16,3 +16,5 @@ import { getCachedPayloadCollectionAll } from '@/rfc/9110/cache'
  */
 export const getCachedRedirects = () =>
   getCachedPayloadCollectionAll('redirects')
+
+/** @index-cross.foldback child=rfc/9110/get/redirects parent=rfc/9110/get — this cross folds back into its parent. */

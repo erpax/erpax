@@ -205,3 +205,5 @@ export async function applyI18nHarvestToPayload(args: {
   }
   return { inserted, updated, skipped }
 }
+
+/** @index-cross.foldback child=i18n/harvest parent=i18n — this cross folds back into its parent. */

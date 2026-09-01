@@ -126,3 +126,5 @@ const AiModels: CollectionConfig = {
 }
 
 export default AiModels
+
+/** @index-cross.foldback child=ai/models parent=ai — this cross folds back into its parent. */

@@ -113,3 +113,5 @@ export function assertUuidLocked(agent: ClonedAgent, tenantId = ''): ClonedAgent
   }
   return agent
 }
+
+/** @index-cross.foldback child=agent/harmonics parent=agent — this cross folds back into its parent. */

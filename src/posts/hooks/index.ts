@@ -11,3 +11,5 @@
 export * from './beforeChange'
 export * from './populateAuthors'
 export * from './revalidatePost'
+
+/** @index-cross.foldback child=posts/hooks parent=posts — this cross folds back into its parent. */

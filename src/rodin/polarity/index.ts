@@ -52,3 +52,5 @@ export function helices(): { readonly forward: readonly number[]; readonly rever
 export function mirrored(): { readonly [k: number]: number } {
   return { [FORWARD]: throughVoid(FORWARD), [REVERSE]: throughVoid(REVERSE), [FIXED]: throughVoid(FIXED) }
 }
+
+/** @index-cross.foldback child=rodin/polarity parent=rodin — this cross folds back into its parent. */

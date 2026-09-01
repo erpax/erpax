@@ -15,3 +15,5 @@ export const heartColor = (): string => GREEN
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('heart/color — green = ' + heartColor())
 }
+
+/** @index-cross.foldback child=heart/color parent=heart — this cross folds back into its parent. */

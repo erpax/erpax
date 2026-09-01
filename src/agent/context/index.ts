@@ -78,3 +78,5 @@ export function createAgentContext(spec: AgentContextSpec): AgentContext {
   }
   return ctx
 }
+
+/** @index-cross.foldback child=agent/context parent=agent — this cross folds back into its parent. */

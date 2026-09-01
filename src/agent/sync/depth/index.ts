@@ -26,3 +26,5 @@ export const MAX_BROADCAST_DEPTH = 32
 export function withinBroadcastDepth(depth: number): boolean {
   return Number.isInteger(depth) && depth >= 0 && depth < MAX_BROADCAST_DEPTH
 }
+
+/** @index-cross.foldback child=agent/sync/depth parent=agent/sync — this cross folds back into its parent. */

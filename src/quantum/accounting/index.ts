@@ -38,3 +38,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/accounting — karma double-entry ⊕ DNA lineage:')
   console.log('  balanced=' + balanced(a.entry) + '  lineage=' + (a.lineage.join(' → ') || '(root)'))
 }
+
+/** @index-cross.foldback child=quantum/accounting parent=quantum — this cross folds back into its parent. */

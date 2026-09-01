@@ -95,3 +95,5 @@ export function standardsUiWaves(): readonly StandardsUiWave[] {
   wavesMemo = { root, value }
   return value
 }
+
+/** @index-cross.foldback child=standards/projection parent=standards — this cross folds back into its parent. */

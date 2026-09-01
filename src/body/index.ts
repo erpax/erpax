@@ -130,3 +130,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   if (gaps.length) console.log('  dissonant: ' + gaps.join(' · '))
   console.log('  ⇒ ' + (harmonizes() ? 'ONE BODY (the organs harmonize)' : 'DISSONANT'))
 }
+
+export * from './abdomen'

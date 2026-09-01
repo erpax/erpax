@@ -90,3 +90,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const patches = connectCorpus(cwd)
   console.log(`skill:upgrade — ${patches.size} atoms (dry-run; use --sync to materialize)`)
 }
+
+/** @index-cross.foldback child=skill/router/upgrade parent=skill/router — this cross folds back into its parent. */

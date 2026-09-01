@@ -188,3 +188,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log(`reference — ${dead.length} dead src/… pointer(s)`)
   for (const d of dead.slice(0, 20)) console.log(`  ${d.from} → ${d.target}`)
 }
+
+/** @index-cross.foldback child=rules/reference parent=rules — this cross folds back into its parent. */

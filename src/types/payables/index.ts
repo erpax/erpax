@@ -127,3 +127,5 @@ export interface VendorPerformance {
   discountRate: number // percentage
   onTimePaymentRate: number // percentage
 }
+
+/** @index-cross.foldback child=types/payables parent=types — this cross folds back into its parent. */

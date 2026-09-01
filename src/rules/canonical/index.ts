@@ -125,3 +125,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log(`canonical — ${unwired.length} installed-but-never-called package(s):`)
   for (const u of unwired) console.log(`  ${u.dep} (exports: ${u.api.slice(0, 5).join(', ')})`)
 }
+
+/** @index-cross.foldback child=rules/canonical parent=rules — this cross folds back into its parent. */

@@ -17,3 +17,5 @@ const RE_SWIFT_BIC = /^[A-Z]{6}[A-Z0-9]{2}([A-Z0-9]{3})?$/
  */
 export const isSwiftBic = (s: unknown): s is string =>
   typeof s === 'string' && RE_SWIFT_BIC.test(s)
+
+/** @index-cross.foldback child=iso/9362/bic parent=iso/9362 — this cross folds back into its parent. */

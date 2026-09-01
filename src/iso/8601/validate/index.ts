@@ -34,3 +34,5 @@ export const isIso8601 = (s: unknown): s is string => {
   const dd = String(d.getUTCDate()).padStart(2, '0')
   return `${yyyy}-${mm}-${dd}` === datePrefix
 }
+
+/** @index-cross.foldback child=iso/8601/validate parent=iso/8601 — this cross folds back into its parent. */

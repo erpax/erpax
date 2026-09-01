@@ -367,3 +367,5 @@ export const createAccountingCollection = (
 }
 
 /** Set when a collection already wired explicit structured emits — the spine fold skips it. */
+
+/** @index-cross.foldback child=factory/collection/base parent=factory/collection — this cross folds back into its parent. */

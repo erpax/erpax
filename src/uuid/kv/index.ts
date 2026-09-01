@@ -211,3 +211,5 @@ export function resolveKeyUuid(args: {
     args.tenantId,
   ) as ContentUuid<{ slot: string; key: string }>
 }
+
+/** @index-cross.foldback child=uuid/kv parent=uuid — this cross folds back into its parent. */

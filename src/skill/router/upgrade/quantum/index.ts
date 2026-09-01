@@ -426,3 +426,5 @@ export function upgradeQuantumSkillText(text: string, fm: ConnectedFrontmatter):
   const fmPart = pass2.match(FRONTMATTER)?.[0] ?? `---\n${renderFrontmatter({ ...fm, contentUuid: uuid }).trimEnd()}\n---\n`
   return `${fmPart}${bodyOut}\n\n${renderContentUuidFooter(uuid, account)}\n`
 }
+
+/** @index-cross.foldback child=skill/router/upgrade/quantum parent=skill/router/upgrade — this cross folds back into its parent. */

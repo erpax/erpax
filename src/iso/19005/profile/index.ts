@@ -57,3 +57,5 @@ export function pdfAProfileToXmp(profile: PdfAProfile): {
     conformance: profile.conformance.toUpperCase(),
   }
 }
+
+/** @index-cross.foldback child=iso/19005/profile parent=iso/19005 — this cross folds back into its parent. */

@@ -188,3 +188,5 @@ export interface AgentRuntime {
    *  processes its effects, returns them. `dispatchEvent` is the broadcast dual. */
   dispatchTo       (ctx: AgentContext, agentId: AgentId, ev: DomainEvent): Promise<AgentEffect[]>
 }
+
+/** @index-cross.foldback child=agent/types parent=agent — this cross folds back into its parent. */

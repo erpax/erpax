@@ -215,3 +215,5 @@ export function promptOnlyOptionVerdict(ctx: ManualDevelopmentContext): PromptOn
     reason: `Manual forge remains finite (${price.ratio.toExponential(2)}× verify) — prompt→erpax is cheaper but not yet the only option.`,
   }
 }
+
+export * from './centers'

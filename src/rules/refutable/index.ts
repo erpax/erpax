@@ -193,3 +193,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   console.log(`hollow proofs — ${hollow.length} test file(s) whose every assertion is a tautology`)
   for (const h of hollow) console.log(`  ${h.file}`)
 }
+
+/** @index-cross.foldback child=rules/refutable parent=rules — this cross folds back into its parent. */

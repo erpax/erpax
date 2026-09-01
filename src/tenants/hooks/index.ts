@@ -10,3 +10,5 @@
 
 export * from './initializeTrial'
 export * from './normalizeRouting'
+
+/** @index-cross.foldback child=tenants/hooks parent=tenants — this cross folds back into its parent. */

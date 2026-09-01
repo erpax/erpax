@@ -3,7 +3,7 @@
 
 # erpax
 
-> Open-source multi-tenant ERP & double-entry accounting on Payload CMS v4 + Cloudflare (D1 + R2 + Workers via OpenNext) — content-addressed, tamper-evident, standards-bound
+> Source-available multi-tenant ERP & double-entry accounting on Payload CMS v4 + Cloudflare (D1 + R2 + Workers via OpenNext) — content-addressed, tamper-evident, standards-bound
 
 [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https%3A%2F%2Fgithub.com%2Ferpax%2Ferpax)
 
@@ -121,52 +121,52 @@ Recompute: `tsx src/millennium/index.ts` · `pnpm vitest run src/millennium`
 
 ## the diamond
 
-**3193** atoms · **37854** bonds · corpus `0a5c3176-3c96-8475-8a44-6ad97437425d` · README `8195370e-bd2d-8876-932d-bab9ffaecd8e` · sealed **1116**/**3216** · **11** [[cloudflare]] · **2451** [[standards]]
+**3391** atoms · **38207** bonds · corpus `dca44380-5e7e-82ef-b23b-f94ba7e71f4f` · README `825c5b28-4369-84b0-9ada-a0fe5200a822` · sealed **1266**/**3391** · **11** [[cloudflare]] · **2701** [[standards]]
 
 ## [[pivot]]
 
-7 horo · form **3215** · code **1198** · proof **1218**
+7 horo · form **3403** · code **1382** · proof **1402**
 
 ### the horo ring — the diamond's facets
 
-Measure-walk `1·2·4·8·7·5·9` · **7** facets · **3173** ring atoms — principal facets ranked by bond in-degree.
+Measure-walk `1·2·4·8·7·5·9` · **7** facets · **3370** ring atoms — principal facets ranked by bond in-degree.
 
 | digit | measure | atoms | principal facets |
 | ----: | ------- | ----: | ---------------- |
-| 1 | base | 497 | `quantum` · `duality` · `diamond` · `cost` · `tamper` · `science` |
-| 2 | share | 554 | `thing` · `action` · `entropy` · `matrix` · `transaction` · `religion` |
-| 4 | weave | 532 | `law` · `collapse` · `accounting` · `proof` · `atom` · `rodin` |
-| 8 | crest | 526 | `horo` · `sequence` · `aura` · `akashic` · `rules` · `breath` |
-| 7 | descent | 536 | `sti` · `balance` · `standard` · `society` · `self` · `medical` |
-| 5 | round | 514 | `merge` · `uuid` · `fractal` · `type` · `holographic` · `number` |
-| 9 | unity | 14 | `identity` · `whole` · `zeropoint` · `auth` · `signal` · `whole` |
+| 1 | base | 571 | `law` · `merge` · `uuid` · `quantum` · `action` · `entropy` |
+| 2 | share | 560 | `sti` · `horo` · `tamper` · `rodin` · `archangel` · `rate` |
+| 4 | weave | 554 | `standard` · `society` · `diamond` · `duality` · `cost` · `self` |
+| 8 | crest | 549 | `thing` · `balance` · `proof` · `gate` · `trinity` · `agent` |
+| 7 | descent | 561 | `collapse` · `accounting` · `fractal` · `atom` · `matrix` · `holographic` |
+| 5 | round | 562 | `rules` · `sequence` · `medical` · `aura` · `field` · `transaction` |
+| 9 | unity | 13 | `identity` · `whole` · `hooks` · `zeropoint` · `signal` · `whole` |
 
-> The control axis governs off the flow ring — `3` access · `6` hooks (3: 9 atoms · 6: 11 atoms), `9` unity closes and `0` is the zeropoint root.
+> The control axis governs off the flow ring — `3` access · `6` hooks (3: 13 atoms · 6: 8 atoms), `9` unity closes and `0` is the zeropoint root.
 
 
-Cross-tab of **3216** folder README models — state × count per axis.
+Cross-tab of **3391** folder README models — state × count per axis.
 
 ### [[seal]]
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| unsealed | 2100 | 65.3 |
-| sealed | 1116 | 34.7 |
-| **Σ** | **3216** | **100** |
+| unsealed | 2125 | 62.67 |
+| sealed | 1266 | 37.33 |
+| **Σ** | **3391** | **100** |
 
 ### [[balance]]
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| balanced | 3042 | 94.59 |
-| unbalanced | 174 | 5.41 |
-| **Σ** | **3216** | **100** |
+| balanced | 3233 | 95.34 |
+| unbalanced | 158 | 4.66 |
+| **Σ** | **3391** | **100** |
 
 
 ## corpus entropy
 
-- gap `9693.015` eb · seal `33831.26` eb · net `-24138.245` eb · ratio `3.49`
-- sealed `1116` · unsealed `2100`
+- gap `9704.695` eb · seal `36116.91` eb · net `-26412.215` eb · ratio `3.722`
+- sealed `1266` · unsealed `2125`
 
 
 ## scripts
@@ -178,9 +178,6 @@ Cross-tab of **3216** folder README models — state × count per axis.
 - `pnpm deploy` — `payload migrate && wrangler d1 execute D1 --command 'PRAGMA optimize' --remote && opennextjs-cloudflare build && node scripts/cleanup-ui-assets.mjs && opennextjs-cloudflare deploy`
 - `pnpm dev` — `next dev`
 - `pnpm dev:clean` — `rm -rf .next .open-next && pnpm dev`
-- `pnpm docs:build` — `vitepress build`
-- `pnpm docs:dev` — `vitepress dev`
-- `pnpm docs:preview` — `vitepress preview`
 - `pnpm erpax` — `tsx src/cli/index.ts`
 - `pnpm payload` — `payload`
 - `pnpm payload:migrate:create` — `payload migrate:create`
@@ -199,17 +196,17 @@ Cross-tab of **3216** folder README models — state × count per axis.
 
 ## stack
 
-`@hookform/resolvers ^5.4.0` · `@opennextjs/cloudflare ^1.19.11` · `@radix-ui/react-accordion ^1.2.13` · `@radix-ui/react-alert-dialog ^1.1.16` · `@radix-ui/react-aspect-ratio ^1.1.9` · `@radix-ui/react-avatar ^1.1.12` · `@radix-ui/react-checkbox ^1.3.3` · `@radix-ui/react-collapsible ^1.1.13` · `@radix-ui/react-context-menu ^2.3.0` · `@radix-ui/react-dialog ^1.1.15` · `@radix-ui/react-dropdown-menu ^2.1.17` · `@radix-ui/react-hover-card ^1.1.16` · `@radix-ui/react-label ^2.1.8` · `@radix-ui/react-menubar ^1.1.17` · `@radix-ui/react-navigation-menu ^1.2.15` · `@radix-ui/react-popover ^1.1.16` · `@radix-ui/react-progress ^1.1.9` · `@radix-ui/react-radio-group ^1.4.0` · `@radix-ui/react-scroll-area ^1.2.11` · `@radix-ui/react-select ^2.2.6` · `@radix-ui/react-separator ^1.1.9` · `@radix-ui/react-slider ^1.4.0` · `@radix-ui/react-slot ^1.2.4` · `@radix-ui/react-switch ^1.3.0` · `@radix-ui/react-tabs ^1.1.14` · `@radix-ui/react-toggle ^1.1.11` · `@radix-ui/react-toggle-group ^1.1.12` · `@radix-ui/react-tooltip ^1.2.9` · `@stripe/react-stripe-js ^6.6.0` · `@stripe/stripe-js ^9.7.0` · `class-variance-authority ^0.7.1` · `clsx ^2.1.1` · `cmdk ^0.2.1` · `cross-env ^10.1.0` · `date-fns ^4.4.0` · `dotenv ^17.4.2` · `embla-carousel-react ^8.6.0` · `geist ^1.7.2` · `graphql ^16.14.1` · `input-otp ^1.4.2` · `lucide-react ^1.17.0` · `next ^16.2.12` · `next-intl ^4.13.0` · `next-sitemap ^4.2.3` · `next-themes ^0.4.6` · `prism-react-renderer ^2.4.1` · `react ^19.2.7` · `react-day-picker ^10.0.1` · `react-dom ^19.2.7` · `react-hook-form ^7.77.0` · `react-resizable-panels ^4.11.2` · `recharts 2.15.4` · `sharp ^0.35.0` · `sonner ^2.0.7` · `stripe ^22.2.0` · `tailwind-merge ^3.6.0` · `tailwindcss-animate ^1.0.7` · `uuid latest` · `vaul ^1.1.2` · `zod 3.25.76`
+`@hookform/resolvers ^5.5.7` · `@opennextjs/cloudflare ^1.20.2` · `@radix-ui/react-accordion ^1.2.20` · `@radix-ui/react-alert-dialog ^1.1.23` · `@radix-ui/react-aspect-ratio ^1.1.15` · `@radix-ui/react-avatar ^1.2.6` · `@radix-ui/react-checkbox ^1.3.11` · `@radix-ui/react-collapsible ^1.1.20` · `@radix-ui/react-context-menu ^2.3.7` · `@radix-ui/react-dialog ^1.1.23` · `@radix-ui/react-dropdown-menu ^2.1.24` · `@radix-ui/react-hover-card ^1.1.23` · `@radix-ui/react-label ^2.1.15` · `@radix-ui/react-menubar ^1.1.24` · `@radix-ui/react-navigation-menu ^1.2.22` · `@radix-ui/react-popover ^1.1.23` · `@radix-ui/react-progress ^1.1.16` · `@radix-ui/react-radio-group ^1.4.7` · `@radix-ui/react-scroll-area ^1.2.18` · `@radix-ui/react-select ^2.3.7` · `@radix-ui/react-separator ^1.1.15` · `@radix-ui/react-slider ^1.4.7` · `@radix-ui/react-slot ^1.3.3` · `@radix-ui/react-switch ^1.3.7` · `@radix-ui/react-tabs ^1.1.21` · `@radix-ui/react-toggle ^1.1.18` · `@radix-ui/react-toggle-group ^1.1.19` · `@radix-ui/react-tooltip ^1.2.16` · `@stripe/react-stripe-js ^6.8.0` · `@stripe/stripe-js ^9.12.1` · `class-variance-authority ^0.7.1` · `clsx ^2.1.1` · `cmdk ^1.1.1` · `cross-env ^10.1.0` · `date-fns ^4.4.0` · `dotenv ^17.4.2` · `embla-carousel-react ^8.6.0` · `geist ^1.7.2` · `graphql ^17.0.2` · `input-otp ^1.4.2` · `lucide-react ^1.28.0` · `next ^16.2.12` · `next-intl ^4.13.4` · `next-sitemap ^4.2.3` · `next-themes ^0.4.6` · `prism-react-renderer ^2.4.1` · `react ^19.2.8` · `react-day-picker ^10.0.1` · `react-dom ^19.2.8` · `react-hook-form ^7.84.0` · `react-resizable-panels ^4.12.2` · `recharts 2.15.4` · `sharp ^0.35.3` · `sonner ^2.0.7` · `stripe ^22.4.0` · `tailwind-merge ^3.6.0` · `tailwindcss-animate ^1.0.7` · `uuid latest` · `vaul ^1.1.2` · `zod 3.25.76`
 
 `node ^18.20.2 || >=20.9.0 · pnpm >=9`
 
 ## license
 
-`1.0.0` · `AGPL-3.0-or-later`
+`1.0.0` · `CC-BY-NC-ND-4.0`
 
 **Core math** (`src/algebra/**` · exact* / algebra* · `@erpax/algebra` · MIT): free for all.
-Everything else — ([AGPL-3.0-or-later](LICENSE) / commercial) via `license@erpax.com`.
+Everything else — ([CC-BY-NC-ND-4.0](LICENSE) / commercial) via `license@erpax.com`.
 
 ---
 
-<sub>generated by `pnpm readme` · verified by `pnpm readme:check` · this README is a diamond — content-uuid `8195370e-bd2d-8876-932d-bab9ffaecd8e`, regenerated from the live tree; any drift fails the gate.</sub>
+<sub>generated by `pnpm readme` · verified by `pnpm readme:check` · this README is a diamond — content-uuid `825c5b28-4369-84b0-9ada-a0fe5200a822`, regenerated from the live tree; any drift fails the gate.</sub>

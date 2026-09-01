@@ -179,3 +179,5 @@ export * from './payload-chat'
 export * from './chat-broadcast'
 // Training lifecycle — job-positions afterChange fans out to the agent room.
 export * from './training-broadcast'
+
+/** @index-cross.foldback child=agent/sync parent=agent — this cross folds back into its parent. */

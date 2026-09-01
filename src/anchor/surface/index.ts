@@ -201,3 +201,5 @@ export function groundInBindings(
     }
   })
 }
+
+/** @index-cross.foldback child=anchor/surface parent=anchor — this cross folds back into its parent. */

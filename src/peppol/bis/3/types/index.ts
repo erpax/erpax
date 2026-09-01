@@ -137,3 +137,5 @@ export interface PeppolBillingMessage {
   totals: DocumentTotals
   vatBreakdown: VatBreakdown[]
 }
+
+/** @index-cross.foldback child=peppol/bis/3/types parent=peppol/bis/3 — this cross folds back into its parent. */

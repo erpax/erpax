@@ -14,3 +14,5 @@ export * from './encryptSensitiveFields'
 // invoices carry the `bill` kind, so bill.hook co-locates here too).
 export * from './invoice'
 export * from './bill'
+
+/** @index-cross.foldback child=invoices/hooks parent=invoices — this cross folds back into its parent. */

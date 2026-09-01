@@ -270,3 +270,5 @@ const Contracts: CollectionConfig = {
 }
 
 export default Contracts
+
+/** @index-cross.foldback child=customers/contracts parent=customers — this cross folds back into its parent. */

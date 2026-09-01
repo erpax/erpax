@@ -79,3 +79,5 @@ if (RUN_DIRECTLY) {
   if (!apply) for (const m of moves.slice(0, 12)) console.log('    ' + m.from + ' -> ' + m.to)
   for (const f of flags.slice(0, 12)) console.log('    FLAG ' + f.folder + ': ' + f.reason)
 }
+
+/** @index-cross.foldback child=migrate/names parent=migrate — this cross folds back into its parent. */

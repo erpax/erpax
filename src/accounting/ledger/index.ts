@@ -73,3 +73,5 @@ export function tokenLedger(spends: readonly TokenSpend[], anchor: number = ANCH
     balanced: entries.every((e) => e.balanced) && sumDebits === sumCredits,
   }
 }
+
+/** @index-cross.foldback child=accounting/ledger parent=accounting — this cross folds back into its parent. */

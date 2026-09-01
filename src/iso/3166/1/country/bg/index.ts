@@ -62,3 +62,5 @@ export const BG_COUNTRY_BUNDLE: CountryBundle = {
     'OECD SAF-T 2.0 (BG-SAF-T submission)',
   ],
 };
+
+/** @index-cross.foldback child=iso/3166/1/country/bg parent=iso/3166/1/country — this cross folds back into its parent. */

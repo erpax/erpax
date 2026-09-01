@@ -48,3 +48,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/aura — coherence (Baumgratz–Cramer–Plenio) / decoherence (Zurek):')
   console.log('  edge-coherence ' + (100 * coherence()).toFixed(1) + '% (isCoherent=' + isCoherent() + ') · coherent-nodes ' + (100 * coherentFraction()).toFixed(1) + '% · decohered ' + decohered().length + ' · FULLY-coherent=' + isFullyCoherent())
 }
+
+/** @index-cross.foldback child=quantum/aura parent=quantum — this cross folds back into its parent. */

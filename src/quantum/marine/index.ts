@@ -58,3 +58,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   const ga = generalAverage(90, [300, 600]) // jettison worth 90, shared over ship 300 + cargo 600
   console.log('  general average: loss 90 over [300,600] ⇒ [' + ga.join(', ') + ']  (Σ=' + (ga[0]! + ga[1]!) + ' = the loss)')
 }
+
+/** @index-cross.foldback child=quantum/marine parent=quantum — this cross folds back into its parent. */

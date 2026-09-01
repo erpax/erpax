@@ -32,3 +32,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
     console.log('  ' + a + ': render → recover → ' + (balanced(a) ? 'returns to ' + a + ' ✓ (balanced)' : 'UNBALANCED'))
   }
 }
+
+/** @index-cross.foldback child=ui/agent parent=ui — this cross folds back into its parent. */

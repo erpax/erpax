@@ -135,3 +135,5 @@ export function safeLoad<T>(id: string): T | null {
     return null
   }
 }
+
+/** @index-cross.foldback child=self/improve/tip/model parent=self/improve/tip — this cross folds back into its parent. */

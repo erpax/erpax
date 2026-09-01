@@ -98,3 +98,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   if (t.dead.length) console.log(`dead (mint queue): ${t.dead.map((w) => `[[${w}]]`).join(' · ')}`)
   else console.log('whole — every [[link]] resolves to a real atom. zero dead-wire entropy.')
 }
+
+/** @index-cross.foldback child=convention/link parent=convention — this cross folds back into its parent. */

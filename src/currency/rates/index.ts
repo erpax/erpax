@@ -69,3 +69,5 @@ const CurrencyRates: CollectionConfig = {
 }
 
 export default CurrencyRates
+
+/** @index-cross.foldback child=currency/rates parent=currency — this cross folds back into its parent. */

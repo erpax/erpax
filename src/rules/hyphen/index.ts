@@ -481,3 +481,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   process.exit(res.complete || !apply ? 0 : 1)
   })()
 }
+
+/** @index-cross.foldback child=rules/hyphen parent=rules — this cross folds back into its parent. */

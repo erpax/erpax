@@ -134,3 +134,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  verified hits -> sepa: ' + sepa.length + ' | kyc: ' + kyc.length)
   for (const [f, n] of [...byFile.entries()].sort((a, b) => b[1] - a[1]).slice(0, 20)) console.log('  ' + f + '  (' + n + ')')
 }
+
+/** @index-cross.foldback child=standard/truth parent=standard — this cross folds back into its parent. */

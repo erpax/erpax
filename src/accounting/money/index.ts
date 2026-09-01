@@ -132,3 +132,5 @@ export class MoneyFormatter {
  * ALTER TABLE entries MODIFY credit INT NOT NULL DEFAULT 0;
  * UPDATE entries SET debit = ROUND(debit * 100), credit = ROUND(credit * 100);
  */
+
+/** @index-cross.foldback child=accounting/money parent=accounting — this cross folds back into its parent. */

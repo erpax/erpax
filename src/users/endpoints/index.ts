@@ -9,3 +9,5 @@
  */
 
 export * from './externalUsersLogin'
+
+/** @index-cross.foldback child=users/endpoints parent=users — this cross folds back into its parent. */

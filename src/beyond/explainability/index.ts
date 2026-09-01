@@ -50,3 +50,5 @@ export function isExplanationComplete(exp: Explanation): boolean {
   if (exp.standardsCited.length === 0) return false
   return true
 }
+
+/** @index-cross.foldback child=beyond/explainability parent=beyond — this cross folds back into its parent. */

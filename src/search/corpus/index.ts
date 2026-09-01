@@ -73,3 +73,5 @@ export function corpusAtomToSearchDoc(atom: CorpusAtom): CorpusSearchDoc {
 export function corpusToSearchDocs(atoms: readonly CorpusAtom[]): CorpusSearchDoc[] {
   return atoms.map(corpusAtomToSearchDoc)
 }
+
+/** @index-cross.foldback child=search/corpus parent=search — this cross folds back into its parent. */

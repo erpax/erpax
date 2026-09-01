@@ -367,3 +367,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.log(`  develop → ${r.develop.join(' · ')}`)
   })
 }
+
+/** @index-cross.foldback child=bank/chat parent=bank — this cross folds back into its parent. */

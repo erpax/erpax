@@ -11,3 +11,5 @@ export const nextAsk = (messageUuids: readonly string[], candidates: readonly st
 /** Coverage of a candidate space: the fraction of candidate questions the thread has answered. */
 export const coverage = (messageUuids: readonly string[], candidates: readonly string[]): number =>
   candidates.length === 0 ? 1 : candidates.filter((q) => messageUuids.includes(messageUuid(q))).length / candidates.length
+
+/** @index-cross.foldback child=quantum/chat/coverage parent=quantum/chat — this cross folds back into its parent. */

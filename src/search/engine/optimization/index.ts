@@ -48,3 +48,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('search/engine/optimization — ' + KEYWORDS.length + ' keywords, ' + TOPICS.length + ' topics')
   console.log('  relevance("multi-tenant erp accounting in typescript") = ' + relevance('multi-tenant erp accounting in typescript').toFixed(2))
 }
+
+/** @index-cross.foldback child=search/engine/optimization parent=search/engine — this cross folds back into its parent. */

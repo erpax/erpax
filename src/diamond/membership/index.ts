@@ -172,3 +172,5 @@ export function diamondMembershipViolations(
 export function diamondMembershipOk(atomPath: string, cwd: string = process.cwd()): boolean {
   return diamondMembershipViolations(atomPath, cwd).length === 0
 }
+
+/** @index-cross.foldback child=diamond/membership parent=diamond — this cross folds back into its parent. */

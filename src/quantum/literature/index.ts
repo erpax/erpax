@@ -37,3 +37,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   const t = 'To be or not to be'
   console.log('quantum/literature — workUuid=' + workUuid(t) + ' · sameWork=' + sameWork(t, t))
 }
+
+/** @index-cross.foldback child=quantum/literature parent=quantum — this cross folds back into its parent. */

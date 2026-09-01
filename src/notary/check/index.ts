@@ -144,3 +144,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
     console.log(`${dt.padEnd(14)} needs ${a.required} checks via ${providersFor(dt).length} providers; gaps now: ${a.gaps.length}`)
   }
 }
+
+/** @index-cross.foldback child=notary/check parent=notary — this cross folds back into its parent. */

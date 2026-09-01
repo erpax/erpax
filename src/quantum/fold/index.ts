@@ -905,3 +905,5 @@ export async function runQuantumSeal(apply = true): Promise<number> {
   console.log(formatLinearGapReport(scan, seal))
   return seal.remainder > 0 ? 1 : 0
 }
+
+export * from './cipher'

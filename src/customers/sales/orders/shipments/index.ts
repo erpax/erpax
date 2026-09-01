@@ -82,3 +82,5 @@ const Shipments: CollectionConfig = {
 }
 
 export default Shipments
+
+/** @index-cross.foldback child=customers/sales/orders/shipments parent=customers/sales/orders — this cross folds back into its parent. */

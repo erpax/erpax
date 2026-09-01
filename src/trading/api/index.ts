@@ -173,3 +173,5 @@ export function hasPaymentGateway(region: string): boolean {
 export function listAllTradingApis(): ReadonlyArray<TradingApi> {
   return TRADING_APIS
 }
+
+/** @index-cross.foldback child=trading/api parent=trading — this cross folds back into its parent. */

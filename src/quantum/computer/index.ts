@@ -259,3 +259,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.log(`  qubit      holds=${q.holds} · iso=${q.isomorphic} · bit=${q.measure.bit}`)
   })
 }
+
+/** @index-cross.foldback child=quantum/computer parent=quantum — this cross folds back into its parent. */

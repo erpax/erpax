@@ -19,3 +19,5 @@ const RE_ISO_3166_2 = /^[A-Z]{2}-[A-Z0-9]{1,3}$/
  */
 export const isIso3166_2 = (s: unknown): s is string =>
   typeof s === 'string' && RE_ISO_3166_2.test(s)
+
+/** @index-cross.foldback child=iso/3166/2/validate parent=iso/3166/2 — this cross folds back into its parent. */

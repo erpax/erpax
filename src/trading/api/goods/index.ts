@@ -369,3 +369,5 @@ export const GOODS_TRADING_APIS: ReadonlyArray<TradingApi> = [
     notes: 'Canonical free validator; SOAP (WSDL). Best-effort uptime — confirm an arrangement before prod reliance.',
   },
 ]
+
+/** @index-cross.foldback child=trading/api/goods parent=trading/api — this cross folds back into its parent. */

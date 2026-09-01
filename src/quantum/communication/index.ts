@@ -22,3 +22,5 @@ export const noCloningHolds = (): boolean => noCloning()
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/communication — no-cloning holds=' + noCloningHolds())
 }
+
+/** @index-cross.foldback child=quantum/communication parent=quantum — this cross folds back into its parent. */

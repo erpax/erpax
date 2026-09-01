@@ -49,3 +49,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  quantum atoms ' + all.length + ' · lawful ' + lawful().length + ' · lawless ' + out.length)
   console.log('  lawless: ' + out.slice(0, 24).join(', ') + (out.length > 24 ? ' …' : ''))
 }
+
+/** @index-cross.foldback child=quantum/law parent=quantum — this cross folds back into its parent. */

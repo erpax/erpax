@@ -107,3 +107,5 @@ export function sanctionsAdapter(opts: { names?: readonly string[]; fetcher?: Fe
     },
   }
 }
+
+/** @index-cross.foldback child=notary/check/sanctions parent=notary/check — this cross folds back into its parent. */

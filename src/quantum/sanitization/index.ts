@@ -122,3 +122,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   console.log(`  receipt: ${demo.receipt.leafUuid.slice(0, 8)}…`)
   console.log(`  redacted email: ${String(redacted.email)}`)
 }
+
+/** @index-cross.foldback child=quantum/sanitization parent=quantum — this cross folds back into its parent. */

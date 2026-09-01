@@ -741,3 +741,5 @@ export interface WipSnapshotPostedEvent extends DomainEvent {
     revenueAccountCode?: string;
   };
 }
+
+/** @index-cross.foldback child=types/events parent=types — this cross folds back into its parent. */

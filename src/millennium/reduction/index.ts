@@ -111,3 +111,5 @@ export function readyToAttempt(claim: string, graph: readonly Theorem[] = DECODE
 export function distanceToAttempt(claim: string, graph: readonly Theorem[] = DECODED): number {
   return reductionFrontier(claim, graph).length
 }
+
+/** @index-cross.foldback child=millennium/reduction parent=millennium — this cross folds back into its parent. */

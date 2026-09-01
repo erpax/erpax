@@ -189,3 +189,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   process.exitCode = bad.length === 0 ? 0 : 1
 }
 /* c8 ignore stop */
+
+/** @index-cross.foldback child=rules/bypass parent=rules — this cross folds back into its parent. */

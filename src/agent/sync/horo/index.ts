@@ -131,3 +131,5 @@ export function joinHoro(team: Team, opts: JoinHoroOpts): HoroPresence {
     close: () => breath.close(),
   }
 }
+
+/** @index-cross.foldback child=agent/sync/horo parent=agent/sync — this cross folds back into its parent. */

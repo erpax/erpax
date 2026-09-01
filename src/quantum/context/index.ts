@@ -227,3 +227,5 @@ export function withQuantumContext<T>(
 }
 
 export const runInQuantumContext = withQuantumContext
+
+/** @index-cross.foldback child=quantum/context parent=quantum — this cross folds back into its parent. */

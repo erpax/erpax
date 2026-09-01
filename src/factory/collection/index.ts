@@ -31,3 +31,5 @@ export {
   auditCorpus,
 } from './shape'
 export type { ShapeAxis, ShapeCatalogue, CollapseCluster, CorpusAudit } from './shape'
+
+/** @index-cross.foldback child=factory/collection parent=factory — this cross folds back into its parent. */

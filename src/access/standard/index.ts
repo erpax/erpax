@@ -175,3 +175,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.log(`  ✗ ${g.slug}.${g.operation} — ${g.declared} < ${g.required} (${g.standard}): ${g.why}`)
   }
 }
+
+/** @index-cross.foldback child=access/standard parent=access — this cross folds back into its parent. */

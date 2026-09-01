@@ -178,3 +178,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log(`  ledger root ${protocolRoot(loadReceipt()?.protocol ?? []).slice(0, 12)}…`)
   process.exit(v.pass ? 0 : 1)
 }
+
+/** @index-cross.foldback child=gate/rosetta parent=gate — this cross folds back into its parent. */

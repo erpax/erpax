@@ -164,3 +164,5 @@ const Bookings: CollectionConfig = {
 }
 
 export default Bookings
+
+/** @index-cross.foldback child=bookable/resources/bookings parent=bookable/resources — this cross folds back into its parent. */

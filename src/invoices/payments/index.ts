@@ -233,3 +233,5 @@ export const Payments: CollectionConfig = {
     },
   ],
 }
+
+/** @index-cross.foldback child=invoices/payments parent=invoices — this cross folds back into its parent. */

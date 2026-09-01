@@ -254,3 +254,5 @@ export function renderBookIndexDocument(model: BookIndexModel = computeBookIndex
     '',
   ].join('\n')
 }
+
+/** @index-cross.foldback child=book/compute parent=book — this cross folds back into its parent. */

@@ -17,3 +17,5 @@ export const THEOREMS: readonly Algebra<number>[] = [
   { name: 'doubling', carrier: [1, 2, 4, 5, 7, 8], op: (a, b) => dr9(a * b), identity: 1, overlay: 'the moving double torus' },
   { name: 'additive', carrier: [1, 2, 3, 4, 5, 6, 7, 8, 9], op: (a, b) => dr9(a + b), identity: 9, overlay: 'matter/antimatter annihilation to the void' },
 ]
+
+/** @index-cross.foldback child=algebra/constants parent=algebra — this cross folds back into its parent. */

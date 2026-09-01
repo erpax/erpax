@@ -22,3 +22,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   const known = new Set([portUuid('users')])
   console.log('quantum/port — alreadyPorted("users")=' + alreadyPorted('users', known) + ' · "invoices"=' + alreadyPorted('invoices', known))
 }
+
+/** @index-cross.foldback child=quantum/port parent=quantum — this cross folds back into its parent. */

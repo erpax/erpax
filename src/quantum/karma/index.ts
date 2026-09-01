@@ -33,3 +33,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  inheritedKarma (1 per atom in lineage) = ' + inheritedKarma(a, () => 1))
   console.log('  lineageKarma (create 3, destroy 1 each) = ' + lineageKarma(a, () => 3, () => 1))
 }
+
+/** @index-cross.foldback child=quantum/karma parent=quantum — this cross folds back into its parent. */

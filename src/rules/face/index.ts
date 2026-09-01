@@ -206,3 +206,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   for (const l of losses) console.log(`  @/${l.atom}  lost ${l.lost.join(', ')}`)
   if (losses.length > 0) process.exitCode = 1
 }
+
+/** @index-cross.foldback child=rules/face parent=rules — this cross folds back into its parent. */

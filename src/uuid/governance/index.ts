@@ -260,3 +260,5 @@ export function governanceHasCapability<E>(
 ): boolean {
   return hasCapability(scope.rootUuid, CAPABILITIES[cap])
 }
+
+/** @index-cross.foldback child=uuid/governance parent=uuid — this cross folds back into its parent. */

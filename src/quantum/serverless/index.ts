@@ -342,3 +342,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.log(`  ${s.stage}: sealed=${s.sealed} holds=${s.holds}`)
   }
 }
+
+/** @index-cross.foldback child=quantum/serverless parent=quantum — this cross folds back into its parent. */

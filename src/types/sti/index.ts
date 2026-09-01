@@ -78,3 +78,5 @@ export function matchStiType<U extends StiDoc, R>(
   const handler = handlers[doc.type as StiTypeOf<U>] as (d: U) => R
   return handler(doc)
 }
+
+/** @index-cross.foldback child=types/sti parent=types — this cross folds back into its parent. */

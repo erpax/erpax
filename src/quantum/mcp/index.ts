@@ -43,3 +43,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
       projectionMatchesCorpus(10, 10),
   )
 }
+
+/** @index-cross.foldback child=quantum/mcp parent=quantum — this cross folds back into its parent. */

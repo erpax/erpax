@@ -73,3 +73,5 @@ export const generateMeta = async (args: {
     title,
   }
 }
+
+/** @index-cross.foldback child=generate/meta parent=generate — this cross folds back into its parent. */

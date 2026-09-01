@@ -140,3 +140,5 @@ export interface AiProvenance {
   /** Required by EU AI Act Art. 13 — role of the human reviewer (if any). */
   readonly humanReview?: { reviewerId: string; decision: 'approved' | 'overridden'; reason?: string }
 }
+
+/** @index-cross.foldback child=beyond/types parent=beyond — this cross folds back into its parent. */

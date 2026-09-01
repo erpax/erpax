@@ -34,3 +34,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   for (const m of MODALITIES) console.log('  reach("x", ' + m + ') = ' + reachVia('x', m).slice(0, 12) + '… · trust-native=' + trustNative(m))
   console.log('  MCP ≡ fs (same content-uuid): ' + equivalent('any content'))
 }
+
+/** @index-cross.foldback child=agent/access parent=agent — this cross folds back into its parent. */

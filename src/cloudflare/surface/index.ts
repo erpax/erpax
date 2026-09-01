@@ -96,3 +96,5 @@ export function assertBindingSurface(cwd: string = process.cwd(), ceiling: numbe
     )
   }
 }
+
+/** @index-cross.foldback child=cloudflare/surface parent=cloudflare — this cross folds back into its parent. */

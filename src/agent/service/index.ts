@@ -89,3 +89,5 @@ export function distinctAgents(swarm: ReadonlyArray<AgentDef>, tenantId = ''): C
 
 // The team scale — multiple agents sharing skills (the competence union).
 export * from '@/agent/team'
+
+/** @index-cross.foldback child=agent/service parent=agent — this cross folds back into its parent. */

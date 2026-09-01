@@ -346,3 +346,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   const m = merkaba(sample)
   console.log('  merkaba center:', m.center, '· spins', m.descend.length)
 }
+
+export * from './github-folded.generated'

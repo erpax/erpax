@@ -281,3 +281,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   console.log(`\nprovenance — ${SEQUENCE_PROVENANCE.repo} ${SEQUENCE_PROVENANCE.commit} ${SEQUENCE_PROVENANCE.date}`)
 }
 /* c8 ignore stop */
+
+/** @index-cross.foldback child=agent/benchmark parent=agent — this cross folds back into its parent. */

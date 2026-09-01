@@ -53,3 +53,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const scopes = args.length ? args : ['medical']
   regenFaces(scopes)
 }
+
+/** @index-cross.foldback child=readme/regen parent=readme — this cross folds back into its parent. */

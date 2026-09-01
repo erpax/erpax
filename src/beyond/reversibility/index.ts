@@ -58,3 +58,5 @@ export function isFullyReversible(
     return inv.kind !== 'cannot-invert'
   })
 }
+
+/** @index-cross.foldback child=beyond/reversibility parent=beyond — this cross folds back into its parent. */

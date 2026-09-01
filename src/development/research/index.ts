@@ -21,3 +21,5 @@ export const direction = 'research → development (applied)' as const
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('development/research — ' + direction + ' · cross=' + cross().slice(0, 8) + '…')
 }
+
+/** @index-cross.foldback child=development/research parent=development — this cross folds back into its parent. */

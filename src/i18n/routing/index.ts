@@ -28,3 +28,5 @@ export const routing = defineRouting({
 export const { Link, redirect, usePathname, useRouter } = createNavigation(routing)
 
 export type Locale = (typeof routing.locales)[number]
+
+/** @index-cross.foldback child=i18n/routing parent=i18n — this cross folds back into its parent. */

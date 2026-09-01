@@ -387,3 +387,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
     console.log()
   }
 }
+
+/** @index-cross.foldback child=rules/cycle parent=rules — this cross folds back into its parent. */

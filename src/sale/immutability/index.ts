@@ -62,3 +62,5 @@ export const enforceSaleImmutability: CollectionBeforeChangeHook = ({ data, oper
 
   return data
 }
+
+/** @index-cross.foldback child=sale/immutability parent=sale — this cross folds back into its parent. */

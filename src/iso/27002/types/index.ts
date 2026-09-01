@@ -117,3 +117,5 @@ export const ISO_27002_CATALOG: ReadonlyArray<{
   title: TITLES[id],
   theme: THEMES[id],
 }))
+
+/** @index-cross.foldback child=iso/27002/types parent=iso/27002 — this cross folds back into its parent. */

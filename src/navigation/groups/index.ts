@@ -188,3 +188,5 @@ export function navPathsForGrouping(atomPaths: readonly string[]): readonly stri
   }
   return out
 }
+
+/** @index-cross.foldback child=navigation/groups parent=navigation — this cross folds back into its parent. */

@@ -75,3 +75,5 @@ export function createAgentRuntime(registry: AgentRegistry): AgentRuntime {
     },
   }
 }
+
+/** @index-cross.foldback child=agent/runtime parent=agent — this cross folds back into its parent. */

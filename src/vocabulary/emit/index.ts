@@ -163,3 +163,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.log(`emitted src/vocabulary/words.ts — ${n} roots`)
   }
 }
+
+/** @index-cross.foldback child=vocabulary/emit parent=vocabulary — this cross folds back into its parent. */

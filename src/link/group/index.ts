@@ -35,3 +35,5 @@ export const linkGroup: LinkGroupType = ({ appearances, overrides = {} } = {}) =
 
   return deepMerge(generatedLinkGroup, overrides)
 }
+
+/** @index-cross.foldback child=link/group parent=link — this cross folds back into its parent. */

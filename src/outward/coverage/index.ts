@@ -170,3 +170,5 @@ export function assertContractedRailsResolve(rails: readonly RailCoverage[] = ra
     )
   }
 }
+
+/** @index-cross.foldback child=outward/coverage parent=outward — this cross folds back into its parent. */

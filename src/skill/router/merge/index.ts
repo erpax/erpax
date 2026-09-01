@@ -96,3 +96,5 @@ export function skillsForAgent(agentId: string, index: readonly SkillNode[]): st
     .map((n) => n.route)
     .sort()
 }
+
+/** @index-cross.foldback child=skill/router/merge parent=skill/router — this cross folds back into its parent. */

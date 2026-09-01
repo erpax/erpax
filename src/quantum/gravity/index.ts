@@ -37,3 +37,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  heaviest (most-entangled) atoms:')
   for (const h of heaviest(5)) console.log('    ' + h.atom.padEnd(14) + ' mass ' + h.mass)
 }
+
+/** @index-cross.foldback child=quantum/gravity parent=quantum — this cross folds back into its parent. */

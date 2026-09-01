@@ -283,3 +283,5 @@ export const WORLD_COUNTRY_APIS: Readonly<Record<string, ReadonlyArray<CountryAp
     },
   ],
 }
+
+/** @index-cross.foldback child=country/api/world parent=country/api — this cross folds back into its parent. */

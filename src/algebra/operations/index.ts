@@ -42,3 +42,5 @@ export function product<A, B>(x: Algebra<A>, y: Algebra<B>): Algebra<[A, B]> {
 export function allAlgebra(): boolean {
   return THEOREMS.every((t) => isClosed(t))
 }
+
+/** @index-cross.foldback child=algebra/operations parent=algebra — this cross folds back into its parent. */

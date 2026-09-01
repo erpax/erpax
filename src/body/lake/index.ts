@@ -8,3 +8,5 @@ export const atomPath = 'body/lake' as const
 
 /** Re-export stub — canonical vocabulary at @/lake. */
 export const reexportFrom = '@/lake' as const
+
+/** @index-cross.foldback child=body/lake parent=body — this cross folds back into its parent. */

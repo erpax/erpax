@@ -26,3 +26,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   const en = ['hello', 'world']
   console.log('realtime/translator — interlingua tail of ' + JSON.stringify(en) + ' = ' + interlinguaTail(en, 0).length + ' meaning-uuids')
 }
+
+/** @index-cross.foldback child=realtime/translator parent=realtime — this cross folds back into its parent. */

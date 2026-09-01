@@ -186,3 +186,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     process.exit(verdict.sealed ? 0 : 1)
   }
 }
+
+/** @index-cross.foldback child=law/folder parent=law — this cross folds back into its parent. */

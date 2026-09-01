@@ -264,3 +264,5 @@ export class CurrencyReconciliation {
     return chainLeaf(reconciliationData, priorChainLeaf)
   }
 }
+
+/** @index-cross.foldback child=currency/reconciliation parent=currency — this cross folds back into its parent. */

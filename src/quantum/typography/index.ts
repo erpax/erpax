@@ -24,3 +24,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   const full = '# h\n**b** *i* `c`\n```\nx\n```\n[l](x)\n- a\n| a | b |\n> q\n::: tip\n:::\n$x$\n'
   console.log('quantum/typography — depth=' + depth(full) + '/' + FEATURES.length + ' · gapless=' + isGapless(full))
 }
+
+/** @index-cross.foldback child=quantum/typography parent=quantum — this cross folds back into its parent. */

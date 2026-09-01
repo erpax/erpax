@@ -38,3 +38,5 @@ export function validateCaseTransition(fromStep: number, toStep: number): boolea
   // Allow forward transitions only
   return toStep > fromStep
 }
+
+/** @index-cross.foldback child=cases/validator parent=cases — this cross folds back into its parent. */

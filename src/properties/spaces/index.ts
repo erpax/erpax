@@ -134,3 +134,5 @@ const Spaces: CollectionConfig = {
 }
 
 export default Spaces
+
+/** @index-cross.foldback child=properties/spaces parent=properties — this cross folds back into its parent. */

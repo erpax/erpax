@@ -187,3 +187,5 @@ export {
   topNavAnchorsFromSequence,
 } from '../navigation'
 export type { NavGroup, NavManifestEntry, PathNavMeta } from '../navigation'
+
+export * from './words'

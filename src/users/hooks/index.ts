@@ -11,3 +11,5 @@
 export * from './ensureUniqueUsername'
 export * from './firstUserSuperAdmin'
 export * from './setCookieBasedOnDomain'
+
+/** @index-cross.foldback child=users/hooks parent=users — this cross folds back into its parent. */

@@ -124,3 +124,5 @@ const Batches: CollectionConfig = {
 }
 
 export default Batches
+
+/** @index-cross.foldback child=items/batches parent=items — this cross folds back into its parent. */

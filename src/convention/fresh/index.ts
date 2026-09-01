@@ -135,3 +135,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   if (t.stale.length) for (const s of t.stale) console.log(`  STALE  ${s.spec}  <- ${s.file}`)
   else console.log('  whole — every import target exists on disk. zero stale-wire entropy.')
 }
+
+/** @index-cross.foldback child=convention/fresh parent=convention — this cross folds back into its parent. */

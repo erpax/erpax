@@ -128,3 +128,5 @@ export function runSkillFrontmatterGate(cwd: string = process.cwd()): void {
 if (import.meta.url === `file://${process.argv[1]}`) {
   runSkillFrontmatterGate()
 }
+
+/** @index-cross.foldback child=skill/frontmatter parent=skill — this cross folds back into its parent. */

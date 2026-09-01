@@ -9,3 +9,5 @@
  */
 
 export * from './superAdminOrTenantAdmin'
+
+/** @index-cross.foldback child=cmspage/access parent=cmspage — this cross folds back into its parent. */

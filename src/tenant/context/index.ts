@@ -360,3 +360,5 @@ export async function getCountryContextFromReq(
   const cfg = await resolveRequestConfig(req)
   return cfg.countryContext
 }
+
+/** @index-cross.foldback child=tenant/context parent=tenant — this cross folds back into its parent. */

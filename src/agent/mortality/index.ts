@@ -96,3 +96,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   console.log(`  fold vs regen: ${mortalityOf(1, 3300)} · regen vs fold: ${mortalityOf(3300, 1)}`)
   console.log(`  reuse cost — saved in src (1 derive / ∞ reuse): →${reuseCost(1, 1e9).toFixed(9)} · re-derived each time: ${reuseCost(100, 100)}`)
 }
+
+/** @index-cross.foldback child=agent/mortality parent=agent — this cross folds back into its parent. */

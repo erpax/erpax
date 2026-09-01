@@ -118,3 +118,5 @@ export function chainReceipts(receipts: readonly QuantumFoldReceipt[]): ReceiptC
  * plaintext, only from its encrypted form. Examining receipts cannot
  * leak plaintext bytes or structure.
  */
+
+/** @index-cross.foldback child=quantum/fold/cipher parent=quantum/fold — this cross folds back into its parent. */

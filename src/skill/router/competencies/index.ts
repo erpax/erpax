@@ -94,3 +94,5 @@ export function isCompetencyRoute(skillRoute: string): boolean {
 export function competencyRouteOptions(): Array<{ label: string; value: string }> {
   return competencyCatalogue().map((c) => ({ label: c.name, value: c.skillRoute }))
 }
+
+/** @index-cross.foldback child=skill/router/competencies parent=skill/router — this cross folds back into its parent. */

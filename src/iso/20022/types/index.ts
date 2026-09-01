@@ -524,3 +524,5 @@ export interface Pacs004ReturnTransaction {
   readonly reasonCode?: string
   readonly reasonAdditionalInformation?: string
 }
+
+/** @index-cross.foldback child=iso/20022/types parent=iso/20022 — this cross folds back into its parent. */

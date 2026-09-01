@@ -133,3 +133,5 @@ export function assertOrients(text: string, floor: number): void {
     )
   }
 }
+
+/** @index-cross.foldback child=readme/orientation parent=readme — this cross folds back into its parent. */

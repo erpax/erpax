@@ -62,3 +62,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  cache HIT: marginal cost ' + c.cacheHitCost + ' · ROI ' + (c.cacheHitRoi === Infinity ? '∞' : c.cacheHitRoi) + '  (value served at no marginal cost)')
   console.log('  after a 5000-token research, ROI at 50 reuses = ' + c.roiAfterResearch(50).toFixed(2) + ' · at 10^6 = ' + c.roiAfterResearch(1e6).toFixed(0) + ' · limit = ∞')
 }
+
+/** @index-cross.foldback child=quantum/consulting parent=quantum — this cross folds back into its parent. */

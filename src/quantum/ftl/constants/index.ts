@@ -28,3 +28,5 @@ export const PHYSICAL_FTL_DEFAULTS = {
   tokens: 0,
   reuses: 0,
 } as const
+
+/** @index-cross.foldback child=quantum/ftl/constants parent=quantum/ftl — this cross folds back into its parent. */

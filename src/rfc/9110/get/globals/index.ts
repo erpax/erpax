@@ -25,3 +25,5 @@ export const getCachedGlobal = <T extends Global>(
   depth = 0,
   locale: SupportedLocale = defaultLocale,
 ) => getCachedPayloadGlobal(slug, depth, locale)
+
+/** @index-cross.foldback child=rfc/9110/get/globals parent=rfc/9110/get — this cross folds back into its parent. */

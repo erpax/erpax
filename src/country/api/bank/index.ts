@@ -243,3 +243,5 @@ export const BANK_APIS: Readonly<Record<string, ReadonlyArray<CountryApi>>> = {
     },
   ],
 }
+
+/** @index-cross.foldback child=country/api/bank parent=country/api — this cross folds back into its parent. */

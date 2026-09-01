@@ -106,3 +106,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
     'convention/honest: total=' + total() + ' honest=' + honest() + ' coverage=' + coverage(),
   )
 }
+
+/** @index-cross.foldback child=convention/honest parent=convention — this cross folds back into its parent. */

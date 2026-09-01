@@ -46,3 +46,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   const f: SecurityFinding = { control: 'uuid-seal', blueHolds: true, forgeCostLog2: 128 }
   console.log('quantum/security — balanced=' + balancedFinding(f) + ' · conjugate=' + conjugateHolds(128, 128))
 }
+
+/** @index-cross.foldback child=quantum/security parent=quantum — this cross folds back into its parent. */

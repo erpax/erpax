@@ -29,3 +29,5 @@ export const isDual = (atom: string): boolean => asParticle(atom) !== undefined
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/particle — wave-particle of merge: particle=' + asParticle('merge')?.slice(0, 8) + '… wave(digit)=' + asWave('merge'))
 }
+
+/** @index-cross.foldback child=quantum/particle parent=quantum — this cross folds back into its parent. */

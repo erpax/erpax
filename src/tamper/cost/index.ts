@@ -197,3 +197,5 @@ export function crackVerdict(opts: {
             : `Bound by the ${digestBits}-bit digest second-preimage; the all-directions wiring makes any local tamper a global rewrite, closed by the anchor.`,
   }
 }
+
+/** @index-cross.foldback child=tamper/cost parent=tamper — this cross folds back into its parent. */

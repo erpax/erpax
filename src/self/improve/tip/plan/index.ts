@@ -206,3 +206,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   console.log(formatNextTip(tip, audit))
   if (!tip.accepted) process.exitCode = 1
 }
+
+/** @index-cross.foldback child=self/improve/tip/plan parent=self/improve/tip — this cross folds back into its parent. */

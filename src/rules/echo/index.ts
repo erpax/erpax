@@ -101,3 +101,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log(`echo — ${paths} path(s) restate a meaning-word (the path says it twice):\n`)
   for (const e of found.slice(0, 12)) console.log(`  ${e.path}  ↺ ${e.word}×${e.times}`)
 }
+
+/** @index-cross.foldback child=rules/echo parent=rules — this cross folds back into its parent. */

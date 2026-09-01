@@ -341,3 +341,5 @@ export interface EdifactInterchange {
   readonly messages: ReadonlyArray<EdifactInvoic | EdifactDesadv | EdifactPaymul>
   readonly unz: EdifactUNZ
 }
+
+/** @index-cross.foldback child=un/edifact/types parent=un/edifact — this cross folds back into its parent. */

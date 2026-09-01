@@ -20,3 +20,5 @@ export const sameKey = (a: string, b: string): boolean => key(a) === key(b)
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/cache — same content ⇒ same key: ' + sameKey('x', 'x') + ' · "x" vs "y": ' + sameKey('x', 'y'))
 }
+
+/** @index-cross.foldback child=quantum/cache parent=quantum — this cross folds back into its parent. */

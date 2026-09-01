@@ -713,3 +713,5 @@ export class FiscalPeriodResolver {
     return merge(payload, priorLeaf)
   }
 }
+
+/** @index-cross.foldback child=fiscal/period/resolver parent=fiscal/period — this cross folds back into its parent. */

@@ -563,3 +563,5 @@ export async function chatEndlessResearchWaves(
   )
   return { session: next, report }
 }
+
+/** @index-cross.foldback child=quantum/chat/routing parent=quantum/chat — this cross folds back into its parent. */

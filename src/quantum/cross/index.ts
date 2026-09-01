@@ -6,3 +6,5 @@
  * @see ../../dual/torus/fusion -- ./SKILL.md
  */
 export * from '@/dual/torus/fusion'
+
+/** @index-cross.foldback child=quantum/cross parent=quantum — this cross folds back into its parent. */

@@ -436,3 +436,5 @@ export async function generateAPAgingReport(
     generatedAt: new Date().toISOString(),
   }
 }
+
+/** @index-cross.foldback child=accounting/reports parent=accounting — this cross folds back into its parent. */

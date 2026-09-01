@@ -495,3 +495,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
       obs.map((o) => o.code).join('+'),
   )
 }
+
+/** @index-cross.foldback child=medical/device parent=medical — this cross folds back into its parent. */

@@ -56,3 +56,9 @@ export type {
 // nesting. The mountable domain face re-exports none of it: a host app has no
 // corpus to scan, and these edges pinned readme/compute plus the 4MB generated
 // UUID matrix into every accounting bundle.
+
+export * from './margin'
+
+export * from './money'
+
+export * from './proof'

@@ -156,3 +156,5 @@ export function mergeDerivedFaces<T extends Record<string, unknown>>(
   }
   return merged
 }
+
+/** @index-cross.foldback child=cli/face parent=cli — this cross folds back into its parent. */

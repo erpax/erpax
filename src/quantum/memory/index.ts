@@ -67,3 +67,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   console.log(`  dedup holds (no-cloning): ${dedupHolds()}`)
   process.exit(sealed ? 0 : 1)
 }
+
+/** @index-cross.foldback child=quantum/memory parent=quantum — this cross folds back into its parent. */

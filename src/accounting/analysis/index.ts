@@ -557,3 +557,5 @@ export class FinancialAnalysisEngine {
 }
 
 export default FinancialAnalysisEngine;
+
+/** @index-cross.foldback child=accounting/analysis parent=accounting — this cross folds back into its parent. */

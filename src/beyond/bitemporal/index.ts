@@ -22,3 +22,5 @@ export async function asOf(_args: {
 export function isHistoricalQuery(coords: BitemporalCoordinates): boolean {
   return new Date(coords.recordedAt).getTime() < Date.now()
 }
+
+/** @index-cross.foldback child=beyond/bitemporal parent=beyond — this cross folds back into its parent. */

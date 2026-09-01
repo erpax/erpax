@@ -140,3 +140,5 @@ const AiSuggestions: CollectionConfig = {
 }
 
 export default AiSuggestions
+
+/** @index-cross.foldback child=ai/suggestions parent=ai — this cross folds back into its parent. */

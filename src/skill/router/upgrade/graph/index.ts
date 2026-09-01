@@ -127,3 +127,5 @@ export function graphConnectivity(
   }
   return { connected: components === 1 && orphans.length === 0, orphans, components }
 }
+
+/** @index-cross.foldback child=skill/router/upgrade/graph parent=skill/router/upgrade — this cross folds back into its parent. */

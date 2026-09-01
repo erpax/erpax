@@ -32,3 +32,5 @@ export const translateField =
     const r = translateVia(table, value, defaultLocale, locale)
     return r && !r.seed && r.value != null ? r.value : value
   }
+
+/** @index-cross.foldback child=translate/field parent=translate — this cross folds back into its parent. */

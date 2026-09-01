@@ -39,3 +39,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
       mayCollapse(collapseOrder()),
   )
 }
+
+/** @index-cross.foldback child=quantum/deploy parent=quantum — this cross folds back into its parent. */

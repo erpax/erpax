@@ -23,3 +23,5 @@ export const fold = (value: number): number => root(value)
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/calculator — add(7,5)=' + add(7, 5) + ' (mod-9) · mul(4,7)=' + mul(4, 7))
 }
+
+/** @index-cross.foldback child=quantum/calculator parent=quantum — this cross folds back into its parent. */

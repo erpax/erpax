@@ -142,3 +142,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     process.exit(1)
   }
 }
+
+/** @index-cross.foldback child=convention/discern/corpus parent=convention/discern — this cross folds back into its parent. */

@@ -120,3 +120,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   once()
   console.log(`cache/fingerprint — fingerprint ${corpusFingerprint()} · compute ran ${ran}× for 2 calls (reuse)`)
 }
+
+/** @index-cross.foldback child=cache/fingerprint parent=cache — this cross folds back into its parent. */

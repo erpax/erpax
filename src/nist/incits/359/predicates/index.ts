@@ -190,3 +190,5 @@ export function hasAllRoles(definitions: RoleDefinition[], ...specs: RoleMatch[]
 
 /** Same as {@link hasRole}; use when definitions are already loaded. */
 export const hasCachedRole = hasRole
+
+/** @index-cross.foldback child=nist/incits/359/predicates parent=nist/incits/359 — this cross folds back into its parent. */

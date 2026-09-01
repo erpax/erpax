@@ -10,3 +10,5 @@
 
 export * from './emitLifecycleEvents'
 export * from './encryptSensitiveFields'
+
+/** @index-cross.foldback child=subscription/plans/subscriptions/hooks parent=subscription/plans/subscriptions — this cross folds back into its parent. */

@@ -135,3 +135,5 @@ export function auditCorpus(configs: ReadonlyArray<CollectionConfig>, collapseTh
     compressionHeadroom: cat.basisOccupancy > 0 ? cat.collections / cat.basisOccupancy : 0,
   }
 }
+
+/** @index-cross.foldback child=factory/collection/shape parent=factory/collection — this cross folds back into its parent. */

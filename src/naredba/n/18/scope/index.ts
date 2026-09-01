@@ -43,3 +43,5 @@ const EXEMPT = new Set<string>(SUPTO_EXEMPT_PAYMENT_TYPES)
 export function requiresFiscalization(paymentType?: string): boolean {
   return !EXEMPT.has((paymentType ?? '').toLowerCase())
 }
+
+/** @index-cross.foldback child=naredba/n/18/scope parent=naredba/n/18 — this cross folds back into its parent. */

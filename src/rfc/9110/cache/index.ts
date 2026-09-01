@@ -235,3 +235,5 @@ export function getCachedPayloadLocalizedDocument<T extends Collection>(
     },
   )
 }
+
+/** @index-cross.foldback child=rfc/9110/cache parent=rfc/9110 — this cross folds back into its parent. */

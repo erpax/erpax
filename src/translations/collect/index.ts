@@ -165,3 +165,5 @@ if (VERIFY) {
   writeFileSync(join(ROOT, 'translations', 'catalogue.ts'), catalogueFile(atoms))
   console.log(`translations: wrote ${selected.length} folder projection(s) + catalogue (${atoms.length} atoms). coverage ${coverage}%.`)
 }
+
+/** @index-cross.foldback child=translations/collect parent=translations — this cross folds back into its parent. */

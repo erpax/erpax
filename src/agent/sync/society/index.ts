@@ -139,3 +139,5 @@ export function connectAgentSociety(opts: {
     close: () => sync.close(),
   }
 }
+
+/** @index-cross.foldback child=agent/sync/society parent=agent/sync — this cross folds back into its parent. */

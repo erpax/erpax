@@ -203,3 +203,5 @@ export const crossAccessResolved =
     const cap = await actorCapabilityResolved(req)
     return cap === null ? false : rolesCompatible(cap, roleForOperation(op))
   }
+
+export * from './index'

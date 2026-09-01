@@ -607,3 +607,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     }
   })()
 }
+
+/** @index-cross.foldback child=bank/research parent=bank — this cross folds back into its parent. */

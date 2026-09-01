@@ -14,3 +14,5 @@ export function runQuantumStatus(): number {
 if (import.meta.url === `file://${process.argv[1]}`) {
   process.exit(runQuantumStatus())
 }
+
+/** @index-cross.foldback child=quantum/status parent=quantum — this cross folds back into its parent. */

@@ -76,3 +76,5 @@ export function rateAll(index: readonly SkillNode[]): Rating[] {
     .map(([subject, set]) => ({ subject, confirmations: set.size, rating: set.size / max, tamperCost: set.size }))
     .sort((a, b) => b.confirmations - a.confirmations || a.subject.localeCompare(b.subject))
 }
+
+/** @index-cross.foldback child=skill/router/rating parent=skill/router — this cross folds back into its parent. */

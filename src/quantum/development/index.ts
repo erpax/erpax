@@ -37,3 +37,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   for (const d of ranked(QUANTUM_ROADMAP)) console.log('  [' + d.feasibility.toUpperCase().padEnd(8) + '] ' + d.name)
   console.log('  THE ONE MOVE: ' + theOneMove()?.name)
 }
+
+/** @index-cross.foldback child=quantum/development parent=quantum — this cross folds back into its parent. */

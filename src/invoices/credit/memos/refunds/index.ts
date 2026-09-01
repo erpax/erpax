@@ -92,3 +92,5 @@ const Refunds: CollectionConfig = {
 }
 
 export default Refunds
+
+/** @index-cross.foldback child=invoices/credit/memos/refunds parent=invoices/credit/memos — this cross folds back into its parent. */

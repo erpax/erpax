@@ -45,3 +45,5 @@ export function recordComputerQueueOnPath(
 ): PathCanonicalEntry {
   return recordPathVisit('computer/queue', { kind: 'computer.queue.step', payload }, at, prevEntryUuid, seq)
 }
+
+/** @index-cross.foldback child=computer/queue parent=computer — this cross folds back into its parent. */

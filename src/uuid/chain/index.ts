@@ -308,3 +308,5 @@ export async function *walkChain<P>(args: {
     cursor = link.prevUuid
   }
 }
+
+/** @index-cross.foldback child=uuid/chain parent=uuid — this cross folds back into its parent. */

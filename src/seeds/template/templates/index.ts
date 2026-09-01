@@ -202,3 +202,5 @@ export function getCuratedComplianceCountries(): string[] {
 export function getEInvoicingMandatedTemplates(): IndustryTemplate[] {
   return Object.values(INDUSTRY_TEMPLATES).filter((t) => t.compliance.eInvoicingMandate)
 }
+
+/** @index-cross.foldback child=seeds/template/templates parent=seeds/template — this cross folds back into its parent. */

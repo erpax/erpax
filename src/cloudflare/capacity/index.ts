@@ -177,3 +177,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.log(`  ${mark} ${f.resource.padEnd(22)} ${String(f.demand).padStart(6)}${f.unit} / ${f.limit}${f.unit}  ${f.note}`)
   }
 }
+
+/** @index-cross.foldback child=cloudflare/capacity parent=cloudflare — this cross folds back into its parent. */

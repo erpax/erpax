@@ -182,3 +182,5 @@ export const EVIDENCE: readonly EvidenceSource[] = [
     wouldFailIf: 'admit() accepted a tag the hardware key does not produce',
   },
 ]
+
+/** @index-cross.foldback child=entropy/source parent=entropy — this cross folds back into its parent. */

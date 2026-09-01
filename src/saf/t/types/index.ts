@@ -505,3 +505,5 @@ export interface SafTAuditFile {
   readonly generalLedgerEntries?: SafTGeneralLedgerEntries
   readonly sourceDocuments?: SafTSourceDocuments
 }
+
+/** @index-cross.foldback child=saf/t/types parent=saf/t — this cross folds back into its parent. */

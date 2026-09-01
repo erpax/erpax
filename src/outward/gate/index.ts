@@ -98,3 +98,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
     process.exit(1)
   }
 }
+
+/** @index-cross.foldback child=outward/gate parent=outward — this cross folds back into its parent. */

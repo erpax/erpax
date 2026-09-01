@@ -93,3 +93,5 @@ const TransactionFailures: CollectionConfig = {
 }
 
 export default TransactionFailures
+
+/** @index-cross.foldback child=transaction/failures parent=transaction — this cross folds back into its parent. */

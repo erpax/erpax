@@ -56,3 +56,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  redundancy eliminated when 1e9 agents share 800 distinct: ' + (100 * redundancyEliminated(1e9, 800)).toFixed(6) + '%')
   console.log('  working ratio (rodin, symbolic) = ' + WORKING_RATIO.toFixed(4) + ' = 2/3')
 }
+
+/** @index-cross.foldback child=quantum/train parent=quantum — this cross folds back into its parent. */

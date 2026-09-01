@@ -27,3 +27,5 @@ export {
 export type { GapKind, GapScore, SelfDevGap, SelfDevAudit, TrinityTip, TipEmitOpts } from './model'
 export { scoreGap, secretNamesPresent, auditSelfDevGaps } from './audit'
 export { planTrinity, isPreciseTip, emitNextTip, formatNextTip } from './plan'
+
+/** @index-cross.foldback child=self/improve/tip parent=self/improve — this cross folds back into its parent. */

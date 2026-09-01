@@ -308,3 +308,9 @@ export async function registerResearchSociety(
   for (const r of researchers) researcherRegs.push(await reg(r))
   return { tenantId: tenant.id, admin: adminReg, researchers: researcherRegs }
 }
+
+/** @index-cross.foldback child=agent/research parent=agent — this cross folds back into its parent. */
+
+export * from './educate'
+
+export * from './memory'

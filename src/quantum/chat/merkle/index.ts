@@ -14,3 +14,5 @@ export const messageUuid = (message: string): string => toUuid(Buffer.from(messa
 /** NOVEL iff its content-uuid is not already a leaf of the thread (a real new answer, not a repeat). */
 export const isNovel = (messageUuids: readonly string[], message: string): boolean =>
   !messageUuids.includes(messageUuid(message))
+
+/** @index-cross.foldback child=quantum/chat/merkle parent=quantum/chat — this cross folds back into its parent. */

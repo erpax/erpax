@@ -26,3 +26,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/wallet — state-uuid + balanced transfer:')
   console.log('  balanced(transfer alice→bob 30) = ' + balanced(transfer('alice', 'bob', 30)))
 }
+
+/** @index-cross.foldback child=quantum/wallet parent=quantum — this cross folds back into its parent. */

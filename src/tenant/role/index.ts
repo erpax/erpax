@@ -27,3 +27,5 @@ import '../roles/profile/payment-provider.profile'
 import '../roles/profile/bank'
 import '../roles/profile/government'
 import '../roles/profile/country'
+
+/** @index-cross.foldback child=tenant/role parent=tenant — this cross folds back into its parent. */

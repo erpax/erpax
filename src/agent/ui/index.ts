@@ -44,3 +44,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  trained on ' + t.atoms + ' atoms · coverage ' + (100 * t.coverage).toFixed(1) + '%')
   if (s) console.log('  render(pixel) → page ' + s.page.route + ' · render keys ' + Object.keys(s.render).join(','))
 }
+
+/** @index-cross.foldback child=agent/ui parent=agent — this cross folds back into its parent. */

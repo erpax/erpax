@@ -378,3 +378,5 @@ export const MONEY_TRADING_APIS: ReadonlyArray<TradingApi> = [
     notes: 'Indicative spot only.',
   },
 ]
+
+/** @index-cross.foldback child=trading/api/money parent=trading/api — this cross folds back into its parent. */

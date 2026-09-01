@@ -152,3 +152,5 @@ export const link: LinkType = ({ appearances, disableLabel = false, overrides = 
 
   return deepMerge(linkResult, overrides)
 }
+
+/** @index-cross.foldback child=link/field parent=link — this cross folds back into its parent. */

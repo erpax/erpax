@@ -39,3 +39,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   const { barrels, escapes } = classifyImports(['@/digit', '@/no/such/deep/path'])
   console.log('quantum/import — barrels=' + barrels.join(',') + ' · escapes=' + escapes.join(','))
 }
+
+/** @index-cross.foldback child=quantum/import parent=quantum — this cross folds back into its parent. */

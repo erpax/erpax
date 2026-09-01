@@ -128,3 +128,5 @@ export const Subscriptions: CollectionConfig = {
     },
   ],
 }
+
+/** @index-cross.foldback child=subscription/plans/subscriptions parent=subscription/plans — this cross folds back into its parent. */

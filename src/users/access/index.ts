@@ -12,3 +12,5 @@ export * from './create'
 export * from './isAccessingSelf'
 export * from './read'
 export * from './updateAndDelete'
+
+/** @index-cross.foldback child=users/access parent=users — this cross folds back into its parent. */

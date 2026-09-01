@@ -188,3 +188,5 @@ export class TenantService {
 
 // Singleton instance
 export const tenantService = new TenantService();
+
+/** @index-cross.foldback child=tenant/service parent=tenant — this cross folds back into its parent. */

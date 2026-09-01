@@ -9,3 +9,5 @@
  */
 
 export * from './updateAndDelete'
+
+/** @index-cross.foldback child=tenants/access parent=tenants — this cross folds back into its parent. */

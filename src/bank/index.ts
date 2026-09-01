@@ -47,3 +47,5 @@ export {
 } from './chat'
 
 export const atomPath = 'bank' as const
+
+export * from './accounts'

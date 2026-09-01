@@ -108,3 +108,5 @@ const Packages: CollectionConfig = {
 }
 
 export default Packages
+
+/** @index-cross.foldback child=items/packages parent=items — this cross folds back into its parent. */

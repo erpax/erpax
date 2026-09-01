@@ -7,3 +7,5 @@ export {
   type SuitePlan,
 } from '@/gate/receipt'
 export const atomPath = 'receipt/gate' as const
+
+/** @index-cross.foldback child=receipt/gate parent=receipt — this cross folds back into its parent. */

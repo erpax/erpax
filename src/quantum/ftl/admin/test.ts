@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { existsSync } from 'node:fs'
+import { existsSync, readdirSync } from 'node:fs'
 import { join } from 'node:path'
 import { readFileSync } from 'node:fs'
 import { adminBootShell, adminBootFtl, adminBootCrackPatterns, ADMIN_BOOT_QUERY, ADMIN_COLLECTION_SPACE } from './index'
@@ -44,7 +44,21 @@ describe('quantum/ftl/admin — admin boot as reuse, not a search', () => {
    */
   it('every path self/improve/tip probes for this atom resolves', () => {
     const cwd = process.cwd()
-    const tip = readFileSync(join(cwd, 'src/self/improve/tip/index.ts'), 'utf8')
+    // The ATOM, not one file: the tip split into model · audit · plan, and the probes
+    // moved with the scanner. A guard pinned to a single path proves whatever that path
+    // happens to hold today.
+    const tipDir = join(cwd, 'src/self/improve/tip')
+    const tip = readdirSync(tipDir, { withFileTypes: true })
+      .flatMap((e) =>
+        e.isDirectory()
+          ? [join(tipDir, e.name, 'index.ts')]
+          : e.name.endsWith('.ts')
+            ? [join(tipDir, e.name)]
+            : [],
+      )
+      .filter((f) => existsSync(f))
+      .map((f) => readFileSync(f, 'utf8'))
+      .join('\n')
     const probes = [...tip.matchAll(/'(src\/quantum\/ftl\/admin[\w/.-]*)'/g)].map((m) => m[1]!)
     expect(probes.length).toBeGreaterThan(0)
     for (const p of new Set(probes)) {

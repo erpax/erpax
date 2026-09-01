@@ -68,3 +68,5 @@ export function invoiceMargin(lines: readonly InvoiceLineInput[]): LineMargin {
   const grossMargin = t.revenue - t.cost
   return { revenue: t.revenue, cost: t.cost, grossMargin, marginPct: t.revenue > 0 ? grossMargin / t.revenue : 0 }
 }
+
+/** @index-cross.foldback child=accounting/margin parent=accounting — this cross folds back into its parent. */

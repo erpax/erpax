@@ -147,3 +147,5 @@ export function sharedTetrahedra(
     .filter(([, who]) => who.length > 1)
     .map(([tetra, who]) => ({ tetra, figures: who }))
 }
+
+/** @index-cross.foldback child=horo/merkaba parent=horo — this cross folds back into its parent. */

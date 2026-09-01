@@ -36,3 +36,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  collapse("merge") = ' + collapse('merge').slice(0, 8) + '… · meaning-is-unique (no-cloning) = ' + meaningIsUnique())
   console.log('  "merge" and "merge" collapse to one eigenstate: ' + areTranslations('merge', 'merge'))
 }
+
+/** @index-cross.foldback child=quantum/translator parent=quantum — this cross folds back into its parent. */

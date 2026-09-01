@@ -75,3 +75,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
     for (const p of proposals.slice(0, 12)) console.log('    [[' + p.orphan + ']] <- ' + p.target)
   }
 }
+
+/** @index-cross.foldback child=aura/propose parent=aura — this cross folds back into its parent. */

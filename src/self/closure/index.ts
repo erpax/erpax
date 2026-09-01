@@ -187,3 +187,5 @@ export function __resetInternalProviderRegistryForTests(): void {
   requireSafetyMode(['test', 'dev'], '__resetInternalProviderRegistryForTests')
   REGISTRY.clear()
 }
+
+/** @index-cross.foldback child=self/closure parent=self — this cross folds back into its parent. */

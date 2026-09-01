@@ -841,3 +841,5 @@ export function listAllCountryApis(country: string) {
     ...(BANK_APIS.GLOBAL ?? []),
   ]
 }
+
+/** @index-cross.foldback child=country/api/client parent=country/api — this cross folds back into its parent. */

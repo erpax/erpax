@@ -67,3 +67,5 @@ export function isReplayStable(effects: ReadonlyArray<AgentEffect>): { ok: boole
   }
   return { ok: true }
 }
+
+/** @index-cross.foldback child=beyond/replay parent=beyond — this cross folds back into its parent. */

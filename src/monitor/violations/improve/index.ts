@@ -483,3 +483,5 @@ export function improveInRealtime(
     monitorEntry,
   }
 }
+
+/** @index-cross.foldback child=monitor/violations/improve parent=monitor/violations — this cross folds back into its parent. */

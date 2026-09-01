@@ -20,3 +20,5 @@ export const sameQuery = (a: string, b: string): boolean => queryUuid(a) === que
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/query — "SELECT 1 " == " select 1": ' + sameQuery('SELECT 1 ', ' select 1'))
 }
+
+/** @index-cross.foldback child=quantum/query parent=quantum — this cross folds back into its parent. */

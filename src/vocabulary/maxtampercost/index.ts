@@ -50,3 +50,5 @@ export function agreesWithOrgan(w: Weakness = {}): boolean {
 export function weakestLink(dimensions: readonly number[]): number {
   return dimensions.length === 0 ? 0 : dimensions.reduce((a, b) => exactMin(a, b))
 }
+
+/** @index-cross.foldback child=vocabulary/maxtampercost parent=vocabulary — this cross folds back into its parent. */

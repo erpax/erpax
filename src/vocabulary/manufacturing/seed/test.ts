@@ -7,7 +7,7 @@ describe('src/vocabulary/manufacturing/seed/operations/index.ts — leftover wav
     const { fileURLToPath } = await import('node:url')
     const { dirname, join } = await import('node:path')
     const dir = dirname(fileURLToPath(import.meta.url))
-    const src = readFileSync(join(dir, 'operations.ts'), 'utf8')
+    const src = readFileSync(join(dir, 'operations', 'index.ts'), 'utf8')
     expect(src).toMatch(/\bexport\b/)
     
     expect(src).toMatch(/@(?:invariant|standard|compliance|audit)\b/)

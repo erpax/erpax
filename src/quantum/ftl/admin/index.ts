@@ -134,3 +134,5 @@ export function adminBootShell(opts: AdminBootOpts = {}): AdminBootShell {
     address: proof.reuse.address,
   }
 }
+
+/** @index-cross.foldback child=quantum/ftl/admin parent=quantum/ftl — this cross folds back into its parent. */

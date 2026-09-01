@@ -9,3 +9,5 @@
  */
 
 export * from './beforeChange'
+
+/** @index-cross.foldback child=media/products/hooks parent=media/products — this cross folds back into its parent. */

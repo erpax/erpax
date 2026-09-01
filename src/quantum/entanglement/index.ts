@@ -92,3 +92,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/entanglement — the physics facet (EPR/Bell/CKW/ER=EPR):')
   console.log('  reciprocity ' + (100 * r.reciprocity).toFixed(1) + '% (' + r.reciprocal + '/' + r.edges + ') · no-cloning=' + r.noCloning + ' · maximally-entangled=' + r.maximal)
 }
+
+/** @index-cross.foldback child=quantum/entanglement parent=quantum — this cross folds back into its parent. */

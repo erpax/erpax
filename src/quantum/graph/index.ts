@@ -29,3 +29,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   ])
   console.log('quantum/graph — reciprocal=' + isReciprocal(g) + ' · entangled(c)=' + [...entangled(g, 'c')].join(','))
 }
+
+/** @index-cross.foldback child=quantum/graph parent=quantum — this cross folds back into its parent. */

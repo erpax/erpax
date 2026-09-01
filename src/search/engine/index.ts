@@ -26,3 +26,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('search/engine — rank("quantum"): ' + rank('quantum').slice(0, 8).join(' '))
   console.log('  matches for "cost": ' + search('cost').length)
 }
+
+/** @index-cross.foldback child=search/engine parent=search — this cross folds back into its parent. */

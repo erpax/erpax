@@ -8,3 +8,5 @@ export const atomPath = 'medical/organization' as const
 
 /** Re-export stub — canonical vocabulary at @/organization. */
 export const reexportFrom = '@/organization' as const
+
+/** @index-cross.foldback child=medical/organization parent=medical — this cross folds back into its parent. */

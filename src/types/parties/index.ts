@@ -75,3 +75,5 @@ export interface PartyDocument {
  * Use `validateTransition` to assert legality before applying a status change.
  */
 export type TransitionTable<S extends string> = Record<S, readonly S[]>
+
+/** @index-cross.foldback child=types/parties parent=types — this cross folds back into its parent. */

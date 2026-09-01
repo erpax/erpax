@@ -115,3 +115,5 @@ export function planTrainingEffects(ev: DomainEvent): AgentEffect[] {
   }
   return effects
 }
+
+/** @index-cross.foldback child=agents/registered/hr/training parent=agents/registered/hr — this cross folds back into its parent. */

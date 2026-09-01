@@ -16,3 +16,5 @@ export {
   counterIncrement,
   counterGet,
 } from '../index'
+
+/** @index-cross.foldback child=cloudflare/storage parent=cloudflare — this cross folds back into its parent. */

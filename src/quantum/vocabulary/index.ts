@@ -42,3 +42,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/vocabulary — the meaning singularity (infinite gravity):')
   console.log('  pull coverage = ' + (100 * pullFraction()).toFixed(1) + '% · pulls("merge")=' + pulls('merge'))
 }
+
+/** @index-cross.foldback child=quantum/vocabulary parent=quantum — this cross folds back into its parent. */

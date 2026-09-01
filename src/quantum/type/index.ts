@@ -24,3 +24,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/type — type identity = shape content-uuid:')
   console.log('  sameType("{x:number}","{x:number}")=' + sameType('{x:number}', '{x:number}') + '  vs "{x:string}"=' + sameType('{x:number}', '{x:string}'))
 }
+
+/** @index-cross.foldback child=quantum/type parent=quantum — this cross folds back into its parent. */

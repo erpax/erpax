@@ -9,3 +9,5 @@
  */
 
 export * from './preventDuplicateAssignment'
+
+/** @index-cross.foldback child=roles/user/roles/hooks parent=roles/user/roles — this cross folds back into its parent. */

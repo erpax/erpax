@@ -37,3 +37,5 @@ export function getBudget(tenantId: string): { spentMicroUsd: number; capMicroUs
 }
 
 export function __resetBudgets(): void { TENANT_BUDGETS.clear() }
+
+/** @index-cross.foldback child=beyond/cost parent=beyond — this cross folds back into its parent. */

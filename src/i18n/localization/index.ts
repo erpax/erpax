@@ -89,3 +89,5 @@ const localization = {
 }
 
 export default localization
+
+/** @index-cross.foldback child=i18n/localization parent=i18n — this cross folds back into its parent. */

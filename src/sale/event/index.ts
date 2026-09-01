@@ -61,3 +61,5 @@ export const emitSaleClosedHook: CollectionAfterChangeHook = async ({ doc, previ
 
   return doc
 }
+
+/** @index-cross.foldback child=sale/event parent=sale — this cross folds back into its parent. */

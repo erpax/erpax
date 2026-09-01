@@ -104,3 +104,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   console.log('  by ext:', [...byExt.entries()].sort((a, b) => b[1] - a[1]).map(([k, n]) => `${k}:${n}`).join(' '))
   console.log('  by name:', [...byName.entries()].sort((a, b) => b[1] - a[1]).slice(0, 14).map(([k, n]) => `${k}:${n}`).join(' '))
 }
+
+/** @index-cross.foldback child=migrate/quaternary parent=migrate — this cross folds back into its parent. */

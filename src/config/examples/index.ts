@@ -303,3 +303,5 @@ export function getConfigByBusinessModel(model: string): TenantConfig | null {
 export function listExampleConfigs(): TenantConfig[] {
   return [courseBuilderConfig, newsletterConfig, marketplaceConfig]
 }
+
+/** @index-cross.foldback child=config/examples parent=config — this cross folds back into its parent. */

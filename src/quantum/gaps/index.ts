@@ -1,13 +1,9 @@
 /**
  * quantum/gaps — the open gaps in quantum mechanics, taught honestly: lenses, never fillings.
  *
- * Asked to "fill the gaps in quantum mechanics," the only honest toolbox is one that NAMES them and refuses to
- * fill them. The measurement problem, the Born rule, the preferred basis, quantum gravity — these are genuinely
- * OPEN in physics, and the corpus's math (ℤ/9, the double torus, the fold) does NOT close them. Claiming it does
- * is the exact coincidence-dressed-as-theorem this session built [[coincidence]] · [[theorem]] · [[seeing]] to
- * refuse. So this register is honest BY CONSTRUCTION: every gap's `fills` field is the literal type `false`, so
- * the code itself cannot assert a gap is filled. It offers the corpus tools as LENSES — structural analogies you
- * can learn the concept through — and states, for each, why the lens is not a solution.
+ * Honest BY CONSTRUCTION: every gap's `fills` field is the literal type `false`, so the
+ * code cannot assert a gap is filled. The corpus tools are offered as LENSES — structural
+ * analogies to learn the concept through — never as solutions. @see ./SKILL.md
  *
  * The tutorial in each entry is the honest map: what QM leaves open, the corpus tool that structurally mirrors
  * it, and the exact reason the mirror is not the thing. HARMONY ≠ TRUTH: a lens that resonates teaches; it does
@@ -98,3 +94,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   }
   console.log(`\n  does the corpus fill any gap? ${fillsAnyGap()}. It offers lenses to LEARN through, not solutions. HARMONY ≠ TRUTH.`)
 }
+
+/** @index-cross.foldback child=quantum/gaps parent=quantum — this cross folds back into its parent. */

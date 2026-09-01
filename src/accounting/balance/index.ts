@@ -231,3 +231,5 @@ export function renderQuantumFoldSection(model: FolderReadmeModel): string {
   L.push('')
   return L.join('\n')
 }
+
+/** @index-cross.foldback child=accounting/balance parent=accounting — this cross folds back into its parent. */

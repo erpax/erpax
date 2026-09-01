@@ -52,3 +52,5 @@ export function foldCollectionLifecycle<T extends CollectionConfig>(c: T): T {
     hooks: { ...c.hooks, afterChange: [...(c.hooks?.afterChange ?? []), ...producers] },
   }
 }
+
+/** @index-cross.foldback child=factory/collection/lifecycle parent=factory/collection — this cross folds back into its parent. */

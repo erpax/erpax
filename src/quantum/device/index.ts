@@ -96,3 +96,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
       mayReport('biofield'),
   )
 }
+
+/** @index-cross.foldback child=quantum/device parent=quantum — this cross folds back into its parent. */

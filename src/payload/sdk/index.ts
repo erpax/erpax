@@ -45,3 +45,5 @@ export function getPayloadSdk(): PayloadSDK<Config> {
     baseURL: apiBaseURL(),
   })
 }
+
+/** @index-cross.foldback child=payload/sdk parent=payload — this cross folds back into its parent. */

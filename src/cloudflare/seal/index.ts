@@ -190,3 +190,5 @@ export async function decryptCloudflareIfUuid<T extends CloudflareConfigPlain = 
     return null
   }
 }
+
+/** @index-cross.foldback child=cloudflare/seal parent=cloudflare — this cross folds back into its parent. */

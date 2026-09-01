@@ -162,3 +162,5 @@ export function reachableSecrets(held: readonly Piece[], byteIndex = 0): Readonl
   }
   return reached
 }
+
+/** @index-cross.foldback child=entropy/threshold/split parent=entropy/threshold — this cross folds back into its parent. */

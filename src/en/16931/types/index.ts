@@ -305,3 +305,5 @@ export interface InvoiceHeader {
   /** BT-10 — Buyer reference (often required for B2G). */
   buyerReference?: string
 }
+
+/** @index-cross.foldback child=en/16931/types parent=en/16931 — this cross folds back into its parent. */

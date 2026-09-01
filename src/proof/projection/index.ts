@@ -108,3 +108,5 @@ export function projectionProof(anchorKind: AnchorKind = 'blockchain-pow'): Proj
       `Forward (project) is free + deterministic; the inverse (decrypt the private key / forge the anchor — the analog negative) costs ${inverseCost} under the supplied ${anchorKind} anchor. The honest overall forge floor is min(122-bit digest, anchor) = 2^${anchoredFloorLog2(anchorKind, ERPAX_DIGEST_BITS)}. The 122-bit digest second-preimage is the cheaper hash-collision path${unbounded ? ' — and only this cumulative-proof-of-work anchor makes the inverse the unbounded maximum' : '; this finite anchor is the maximum, NOT a default-infinity'}.`,
   }
 }
+
+/** @index-cross.foldback child=proof/projection parent=proof — this cross folds back into its parent. */

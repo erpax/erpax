@@ -207,3 +207,5 @@ export function bondStatementToJournalEntry(
 ): CorpusJournalEntryDocument {
   return erpaxSelfAccount(model, options)
 }
+
+/** @index-cross.foldback child=accounting/corpus parent=accounting — this cross folds back into its parent. */
