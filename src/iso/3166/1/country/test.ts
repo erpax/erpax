@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 
-/** Credit for claims in src/iso/3166/1/country/bg.ts — chatHealLeftoverWave; not an empty gaming test. */
-describe('src/iso/3166/1/country/bg.ts — leftover wave proof', () => {
+/** Credit for claims in src/iso/3166/1/country/bg/index.ts — chatHealLeftoverWave; not an empty gaming test. */
+describe('src/iso/3166/1/country/bg/index.ts — leftover wave proof', () => {
   it('source still exports/binds its claimed surface and claim markers (refutable — deleting them fails)', async () => {
     const { readFileSync } = await import('node:fs')
     const { fileURLToPath } = await import('node:url')

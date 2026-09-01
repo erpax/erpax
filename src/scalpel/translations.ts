@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when many agents must edit in thousands without fabricating — read-only researchers emit op manifests (file · find · replace · reason); one executor cuts in ≤30-file batches, unique-match-or-refuse, ring-verified, red rolls back to the byte.",
-    "uuid": "708e167f-0943-8dd4-bb74-8371312e1fb1",
+    "uuid": "e1cd6faf-cab8-8a4e-b213-00539af5d45d",
     "words": [
       "use",
       "when",

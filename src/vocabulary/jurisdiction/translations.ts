@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a contract or matter specifies the governing law and venue — choice of law (which country/state), exclusive vs. non-exclusive forum, dispute resolution (courts, arbitration, mediation).",
-    "uuid": "a8b00180-e1f8-8914-942e-f9c110520779",
+    "uuid": "0e873e5f-c82c-8e1c-844b-16b58cc6d477",
     "words": [
       "use",
       "when",

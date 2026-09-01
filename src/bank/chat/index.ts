@@ -164,7 +164,7 @@ export const QUANTUM_SECURE_BANKING_BOOK = seal([
 const QSB_RELATED: readonly string[] = [
   'src/bank/chat/index.ts',
   'src/beyond/pqc/index.ts',
-  'src/iso/20022/types.ts',
+  'src/iso/20022/types/index.ts',
   'src/pacs004/import/service/index.ts',
   'src/pain002/import/service/index.ts',
   'src/quantum/chat/index.ts',

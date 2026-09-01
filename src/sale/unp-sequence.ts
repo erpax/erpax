@@ -15,7 +15,7 @@
  *
  * @standard BG Наредба-Н-18 §СУПТО УНП per-fiscal-device-gapless-sequence
  * @audit ISO-19011:2018 audit-trail
- * @see src/naredba/n/18/unp.ts
+ * @see src/naredba/n/18/unp/index.ts
  * @see .claude/skills/supto/SKILL.md · .claude/skills/number/SKILL.md
  */
 

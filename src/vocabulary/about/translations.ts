@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about about — The subject matter of an object.",
-    "uuid": "47e70770-0d29-8bd4-a70b-d1c00481d3fa",
+    "uuid": "24047b94-90a6-8613-a374-b16cad2ead76",
     "words": [
       "use",
       "when",

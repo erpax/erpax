@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when banks chat FI↔FI — BIC sessions, QuantumSecureEnvelope (classical⊕FIPS 203/204), collaborate@2f+1; holds=isApprovedPqc∧digests; verify fail-closed until liboqs.",
-    "uuid": "c118ecf7-7c0a-801f-a462-e3090356df32",
+    "uuid": "6517d0c5-e52b-8878-82a0-216f8b7b0da3",
     "words": [
       "use",
       "when",

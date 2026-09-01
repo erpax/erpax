@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when scoring or reviewing vendor performance — OTD%, quality acceptance rate, price accuracy, response time, cybersecurity/ESG scores — driving ISO 9001 §8.4 renewal, probation, or de-listing recommendations. The periodic vendor performance evaluation and re-approval node.",
-    "uuid": "fe9851f7-1060-8757-8576-049479440450",
+    "uuid": "c91ffdde-534d-87c1-993a-dd5d5003ca34",
     "words": [
       "use",
       "when",

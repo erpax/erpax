@@ -26,7 +26,7 @@ import { emitSaleClosedHook } from '@/sale'
  * @audit ISO-19011:2018 audit-trail
  * @compliance SOX §404 internal-controls
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
- * @see .claude/skills/supto/SKILL.md · src/sale/* · src/naredba/n/18/unp.ts
+ * @see .claude/skills/supto/SKILL.md · src/sale/* · src/naredba/n/18/unp/index.ts
  */
 
 /** Наредба Н-18: a sale is never deleted — it is reversed (сторно), preserving the record. */

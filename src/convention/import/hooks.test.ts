@@ -47,7 +47,7 @@ describe('the import-purity ratchet is wired into the gate (the wire is connecte
 })
 
 describe('confirm:full is a true SUPERSET of `pnpm check` (no docs-only false-green)', () => {
-  const matterSrc = read('src/confirm/matter.ts')
+  const matterSrc = read('src/confirm/matter/index.ts')
 
   for (const token of ['standards', 'lint:src', 'lint:imports', 'typecheck', 'test:int']) {
     it(`confirm:full references the build gate \`${token}\``, () => {

@@ -175,7 +175,7 @@ const RELATED_SPEC: readonly {
     title: 'Cash management — camt.052/053/054',
     atoms: [
       'src/iso/20022/index.ts',
-      'src/iso/20022/types.ts',
+      'src/iso/20022/types/index.ts',
       'src/camt052/import/service/index.ts',
       'src/camt053/import/service/index.ts',
       'src/camt054/import/service/index.ts',
@@ -186,7 +186,7 @@ const RELATED_SPEC: readonly {
     domain: 'iso-20022-pain',
     title: 'Customer initiation — pain.001/002/008',
     atoms: [
-      'src/iso/20022/types.ts',
+      'src/iso/20022/types/index.ts',
       'src/pain002/import/service/index.ts',
       'src/bank/accounts/payment/runs/index.ts',
       'src/bank/accounts/payroll/runs/index.ts',
@@ -196,7 +196,7 @@ const RELATED_SPEC: readonly {
     domain: 'iso-20022-pacs',
     title: 'FI transfers / returns — pacs.008/004',
     atoms: [
-      'src/iso/20022/types.ts',
+      'src/iso/20022/types/index.ts',
       'src/pacs004/import/service/index.ts',
       'src/invoices/credit/memos/refunds',
     ],
@@ -219,7 +219,7 @@ const RELATED_SPEC: readonly {
   {
     domain: 'swift-mt-mx',
     title: 'SWIFT MT ↔ MX coexistence',
-    atoms: ['src/iso/20022/index.ts', 'src/standards/registry.ts'],
+    atoms: ['src/iso/20022/index.ts', 'src/standards/registry/index.ts'],
   },
   {
     domain: 'aml-transfers',
@@ -296,12 +296,12 @@ const BANKING_INVERT_SPEC: readonly {
   {
     pole: 'pain.001 export (customer credit transfer)',
     dual: 'pacs.008 types (FI-to-FI credit transfer)',
-    atom: 'src/iso/20022/types.ts',
+    atom: 'src/iso/20022/types/index.ts',
     develop: 'export Pacs008CreditTransfer · Pacs008Transaction beside pain.001',
     prove: (cwd) => {
       try {
         return /export interface Pacs008CreditTransfer\b/.test(
-          readFileSync(join(cwd, 'src/iso/20022/types.ts'), 'utf8'),
+          readFileSync(join(cwd, 'src/iso/20022/types/index.ts'), 'utf8'),
         )
       } catch {
         return false

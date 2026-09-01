@@ -44,7 +44,7 @@ describe('quantum/ftl/admin — admin boot as reuse, not a search', () => {
    */
   it('every path self/improve/tip probes for this atom resolves', () => {
     const cwd = process.cwd()
-    const tip = readFileSync(join(cwd, 'src/self/improve/tip.ts'), 'utf8')
+    const tip = readFileSync(join(cwd, 'src/self/improve/tip/index.ts'), 'utf8')
     const probes = [...tip.matchAll(/'(src\/quantum\/ftl\/admin[\w/.-]*)'/g)].map((m) => m[1]!)
     expect(probes.length).toBeGreaterThan(0)
     for (const p of new Set(probes)) {

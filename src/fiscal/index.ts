@@ -6,7 +6,7 @@
  * `supto-operators`, `virtual-pos-terminals`.
  *
  * @standard BG Наредба-Н-18 §СУПТО
- * @see .claude/skills/supto/SKILL.md · src/naredba/n/18/unp.ts
+ * @see .claude/skills/supto/SKILL.md · src/naredba/n/18/unp/index.ts
  */
 
 import type { Field } from 'payload'

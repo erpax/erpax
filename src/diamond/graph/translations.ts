@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reaching the diamond as a GRAPH — atoms and the bonds between them — through its own namespace; the face re-exports the diamond barrel while the matter is still being lifted out of the hub.",
-    "uuid": "6acedc9d-dfaa-8c56-a882-67a212c81000",
+    "uuid": "3973c0fa-d319-8369-bff8-b9a86537d2c0",
     "words": [
       "use",
       "when",

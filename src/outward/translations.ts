@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when erpax depends on an answer it does not own — VIES, ECB rates, the Peppol directory, a standards clause, a harvested page. Fetch once, fold the answer to a content-uuid, and verify the ADDRESS on every later pass instead of re-reading the world. Only a moved address is news; an unreachable boundary keeps its last receipt and is never a failure.",
-    "uuid": "baeb02c5-a5c0-8115-b837-8f1e562ebdae",
+    "uuid": "2fd35b7b-6fea-846a-acf2-ac17ea218daa",
     "words": [
       "use",
       "when",

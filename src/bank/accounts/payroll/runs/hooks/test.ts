@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 
-/** Credit for claims in src/bank/accounts/payroll/runs/hooks/disbursement.ts — chatHealLeftoverWave; not an empty gaming test. */
-describe('src/bank/accounts/payroll/runs/hooks/disbursement.ts — leftover wave proof', () => {
+/** Credit for claims in src/bank/accounts/payroll/runs/hooks/disbursement/index.ts — chatHealLeftoverWave; not an empty gaming test. */
+describe('src/bank/accounts/payroll/runs/hooks/disbursement/index.ts — leftover wave proof', () => {
   it('source still exports/binds its claimed surface and claim markers (refutable — deleting them fails)', async () => {
     const { readFileSync } = await import('node:fs')
     const { fileURLToPath } = await import('node:url')

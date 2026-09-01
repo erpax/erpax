@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tracking approval state or flag — approved flag on invoice (boolean), approved amount (in multi-step approval workflows), approved by (user reference), approved at (date). Workflow checkpoint status value.",
-    "uuid": "7220621f-cd68-891a-926f-19b3a55a8318",
+    "uuid": "fe5b4334-5853-8f2c-93c7-a3be53a10163",
     "words": [
       "use",
       "when",

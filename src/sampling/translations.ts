@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when selecting a representative subset — random sampling, stratified sampling, systematic sampling, sample size calculation, sampling error/confidence intervals, weighted sampling for survey design.",
-    "uuid": "ea54ec6a-39e9-8dc4-a9a7-806e0f131602",
+    "uuid": "bff36ae1-27a9-86a1-a40d-6cfb29412e6d",
     "words": [
       "use",
       "when",

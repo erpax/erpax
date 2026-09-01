@@ -53,7 +53,7 @@ const channelOf = (path: string): ChannelState => {
 
 /** Atom path for improve-loop direction — derived from improve facet location. */
 export const improveDirectionPath = (): string =>
-  toAtomPath('src/monitor/violations/improve.ts', 'fs') || 'monitor/violations/improve'
+  toAtomPath('src/monitor/violations/improve/index.ts', 'fs') || 'monitor/violations/improve'
 
 /** Atom path for dry-clean cycle direction — parent may redirect mid-pass. */
 export const cleanDirectionPath = (): string =>

@@ -38,7 +38,7 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     waves: { desc: 'Regenerate in horo waves (OOM-safe)', cmd: `${HEAVY_TSX} src/readme/index.ts --waves` },
     check: { desc: 'Verify readme + faces (waves)', cmd: `${HEAVY_TSX} src/readme/index.ts --verify --waves` },
     'check-full': { desc: 'Verify full corpus readme + faces', cmd: `${HEAVY_TSX} src/readme/index.ts --verify` },
-    regen: { desc: 'Focused face regen for atom path(s)', cmd: `${TSX} src/readme/regen.ts` },
+    regen: { desc: 'Focused face regen for atom path(s)', cmd: `${TSX} src/readme/regen/index.ts` },
     paths: {
       desc: 'Explicit atom paths only (--paths a,b · also: erpax readme --paths)',
       cmd: `${TSX} src/readme/index.ts --paths`,
@@ -145,8 +145,8 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     },
   },
   confirm: {
-    default: { desc: 'Scoped confirm (payload ⊕ vitepress)', cmd: `${TSX} src/confirm/matter.ts` },
-    full: { desc: 'Full corpus confirm (= gate superset)', cmd: `${TSX} src/confirm/matter.ts --full` },
+    default: { desc: 'Scoped confirm (payload ⊕ vitepress)', cmd: `${TSX} src/confirm/matter/index.ts` },
+    full: { desc: 'Full corpus confirm (= gate superset)', cmd: `${TSX} src/confirm/matter/index.ts --full` },
     uuid: { desc: 'Uuid-pure gate stack (no Payload typegen)', cmd: `${TSX} src/confirm/index.ts` },
   },
   apply: {
@@ -275,7 +275,7 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     },
   },
   plugin: {
-    claude: { desc: 'Emit Claude Code plugin manifests', cmd: `${TSX} src/plugins/emit.ts` },
+    claude: { desc: 'Emit Claude Code plugin manifests', cmd: `${TSX} src/plugins/emit/index.ts` },
   },
   db: {
     regenerate: { desc: 'Regenerate database artefacts', cmd: 'bash scripts/db-regenerate.sh' },

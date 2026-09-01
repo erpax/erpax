@@ -64,7 +64,7 @@ import { isIso4217 } from '@/iso/4217'
  * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
  * @compliance SOX §404 internal-controls
  * @audit ISO-19011:2018 audit-trail
- * @see src/en/16931/types.ts
+ * @see src/en/16931/types/index.ts
  */
 export const Invoices: CollectionConfig = {
   slug: 'invoices',

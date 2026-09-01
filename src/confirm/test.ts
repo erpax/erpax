@@ -54,7 +54,7 @@ describe('confirm:uuid — substrate-independent gate stack (no Payload typegen)
   })
 
   it('confirm:full remains separate — still references payload-verify-types', () => {
-    const matter = readFileSync(join(ROOT, 'src/confirm/matter.ts'), 'utf8')
+    const matter = readFileSync(join(ROOT, 'src/confirm/matter/index.ts'), 'utf8')
     expect(matter).toMatch(/payload-verify-types/)
     expect(readFileSync(join(ROOT, 'src/confirm/index.ts'), 'utf8')).toMatch(/confirm:uuid/)
   })

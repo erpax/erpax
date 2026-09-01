@@ -182,7 +182,7 @@ export function globalsCssFallbackViolations(cwd: string = process.cwd()): reado
 const SKILLS_INDEX_ALLOWED = new Set([
   'src/skill/router/index.ts',
   'src/skill/router/plugin.ts',
-  'src/skill/router/competencies.ts',
+  'src/skill/router/competencies/index.ts',
   'src/skill/router/skills.index.ts',
 ])
 

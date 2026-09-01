@@ -14,7 +14,7 @@ It was the **last loose `.ts`** beside the quantum barrel. With it nested, the p
 
 Nine importers, every one using the alias `@/quantum/context` — which resolves to `context/index.ts` unchanged. Zero repoints.
 
-That was established rather than assumed, because a first scan said otherwise. `from './context'` matched siblings in other directories, and `src/agent/context.ts` is a **different atom** that happens to share a word. The same false positive had already appeared twice in this partition's other moves, on `./registry` and `./dimensions`.
+That was established rather than assumed, because a first scan said otherwise. `from './context'` matched siblings in other directories, and `src/agent/context/index.ts` is a **different atom** that happens to share a word. The same false positive had already appeared twice in this partition's other moves, on `./registry` and `./dimensions`.
 
 The four checks that make a move safe here, each earned by a failure elsewhere in the corpus:
 

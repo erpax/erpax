@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the structural gate is too slow to run every push — the rosetta gate folds the corpus to one root (corpusRoot) and reuses it: unchanged root ⇒ O(1) structural PASS, changed ⇒ verify only the changed atoms; the notary chain is the tamper-evident gate ledger. Fold-first for structure; tsc + tests remain the semantic complement.",
-    "uuid": "e5bf4d55-8547-8d9e-a997-2032351fc818",
+    "uuid": "75f1a88b-cc9c-8fe5-8dab-c2e74f5933ed",
     "words": [
       "use",
       "when",

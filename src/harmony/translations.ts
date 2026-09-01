@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking whether an interval — or a whole band of horo positions — is consonant. The seven positions ARE the diatonic scale (just intonation over the A432 anchor); harmony is the smallness of the ratio (Tenney height). The harmony-check the horo state-bands need. Matter-twin harmony/index.ts.",
-    "uuid": "511176ec-2c58-883f-b29c-0cfee8b56836",
+    "uuid": "99eded2a-4ab3-834a-959a-6f75bd2380ff",
     "words": [
       "use",
       "when",

@@ -16,7 +16,7 @@
  *
  *   pnpm exec tsx scripts/ingest-corpus-to-search.ts
  *
- * Pure transform: src/search/corpus.ts (tested). Corpus source:
+ * Pure transform: src/search/corpus/index.ts (tested). Corpus source:
  * .vitepress/corpus.mts (shared with the docs). This file is only the glue.
  */
 import { createRequire } from 'node:module'

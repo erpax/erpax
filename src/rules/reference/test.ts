@@ -30,8 +30,8 @@ describe('rules/reference — the statute→code trace must resolve', () => {
 
   it('a reference that resolves is not flagged (the repaired trace)', () => {
     const cwd = corpus({
-      'src/supto/SKILL.md': 'УНП format — `src/naredba/n/18/unp.ts`.',
-      'src/naredba/n/18/unp.ts': 'export const UNP_RE = /x/',
+      'src/supto/SKILL.md': 'УНП format — `src/naredba/n/18/unp/index.ts`.',
+      'src/naredba/n/18/unp/index.ts': 'export const UNP_RE = /x/',
     })
     expect(deadReferences(cwd)).toHaveLength(0)
     rmSync(cwd, { recursive: true, force: true })

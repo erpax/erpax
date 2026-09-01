@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when SKILL.md frontmatter in the quantum partition needs parse · generate · upgrade — parseQuantumSkill, generateQuantumSkill, and upgradeQuantumSkillText fold superposition, collapse, seal, and path-account into quantum SKILL.md.",
-    "uuid": "384e772d-768b-8a22-8338-18547d275fc0",
+    "uuid": "b6112bd4-b591-8a38-a54d-d0a0ccfe71ed",
     "words": [
       "use",
       "when",
