@@ -159,13 +159,30 @@ class JournalEntryService {
   }
 
   /** Next per-tenant entry number (sequence by count; unique constraint + JOB_LOCK guard races). */
+  /**
+   * The next entry number for this tenant — the HIGHEST allocated, plus one.
+   *
+   * It was `count + 1`, and a count is not a sequence: delete one entry and the next create
+   * REUSES its number, which in a journal is a re-used audit reference, not a cosmetic clash.
+   * Reading the maximum is the convention the corpus already uses for invoice numbers
+   * (invoices/hooks/deriveNumber — sort descending, parse, max + 1), so both documents allocate
+   * the same way. Scoped per tenant, matching the per-tenant unique index on the collection.
+   */
   private async generateEntryNumber(payload: Payload, tenantId: string): Promise<string> {
-    const { totalDocs } = await payload.count({
+    const prefix = `JE-${new Date().getFullYear()}-`;
+    const prior = await payload.find({
       collection: 'journal-entries',
-      where: { tenant: { equals: tenantId } },
+      where: { and: [{ tenant: { equals: tenantId } }, { entryNumber: { like: `${prefix}%` } }] },
+      sort: '-entryNumber',
+      limit: 50,
       overrideAccess: true,
     });
-    return `JE-${new Date().getFullYear()}-${String(totalDocs + 1).padStart(6, '0')}`;
+    let max = 0;
+    for (const doc of prior.docs as { entryNumber?: unknown }[]) {
+      const seq = Number(String(doc.entryNumber ?? '').slice(prefix.length));
+      if (Number.isFinite(seq) && seq > max) max = seq;
+    }
+    return `${prefix}${String(max + 1).padStart(6, '0')}`;
   }
 
   /**
@@ -174,7 +191,6 @@ class JournalEntryService {
    */
   async createEntry(tenantId: string, request: CreateJournalEntryRequest): Promise<JournalEntry> {
     const payload = await this.db();
-    const entryNumber = await this.generateEntryNumber(payload, tenantId);
     // Resolve each caller accountId (a canonical role or account code) to the tenant's actual
     // gl-accounts uuid — the schema's glAccount is a relationship, so a bare code never validates.
     const resolvedLines = await Promise.all(
@@ -183,7 +199,43 @@ class JournalEntryService {
         glAccount: String(await resolveGlAccount(payload, tenantId, l.accountId)),
       })),
     );
-    const doc = (await payload.create({
+    /**
+     * Allocate, attempt, and let the INDEX arbitrate.
+     *
+     * The number is read-then-written, so two concurrent postings can read the same maximum and
+     * both try to write it — and the per-tenant unique index then rejects the loser with a hard
+     * error rather than a retry. There is no lock to take here and no coordinator to ask: the
+     * cheap, correct move is to re-read and try again, bounded, with the constraint as the
+     * referee. (The identity of a document needs no such dance — a content-address is derived,
+     * never allocated, which is why it costs a fold and not a round trip; a LEGAL sequence is the
+     * one thing that cannot be derived from content, so this is where the coordination stays.)
+     */
+    const isDuplicateNumber = (e: unknown): boolean =>
+      /UNIQUE constraint failed|duplicate key|entry_number/i.test(String((e as Error)?.message ?? ''));
+    let doc: EntryDoc | null = null;
+    let lastError: unknown = null;
+    for (let attempt = 0; attempt < 5 && doc === null; attempt++) {
+      const entryNumber = await this.generateEntryNumber(payload, tenantId);
+      try {
+        doc = (await this.writeEntry(payload, tenantId, entryNumber, request, resolvedLines)) as EntryDoc;
+      } catch (e) {
+        if (!isDuplicateNumber(e)) throw e;
+        lastError = e;
+      }
+    }
+    if (doc === null) throw lastError instanceof Error ? lastError : new Error('journal entry number could not be allocated');
+    return fromDoc(doc);
+  }
+
+  /** The write itself — one attempt, so the allocation loop above stays readable. */
+  private async writeEntry(
+    payload: Payload,
+    tenantId: string,
+    entryNumber: string,
+    request: CreateJournalEntryRequest,
+    resolvedLines: unknown[],
+  ): Promise<unknown> {
+    return (await payload.create({
       collection: 'journal-entries',
       overrideAccess: true,
       data: {
@@ -200,7 +252,6 @@ class JournalEntryService {
         createdBy: request.userId,
       } as unknown as RequiredDataFromCollectionSlug<'journal-entries'>,
     })) as unknown as EntryDoc;
-    return fromDoc(doc);
   }
 
   /**

@@ -30,20 +30,60 @@ const runHook = (args: Partial<HookArgs>) => periodEndAdjustmentPostingHook(args
 let tenant: string
 let user: string
 
+/**
+ * The suite's fixtures are FOUND-OR-CREATED, and named deterministically.
+ *
+ * They used to be created unconditionally, with `Date.now()` in the tenant slug and the user
+ * email and FIXED gl-account ids + account numbers (6100 · 1590 · 7100 · 2150 · 5150 · 1300).
+ * The account ids are the natural key the hook resolves by, so they cannot be randomised — which
+ * meant the suite could only pass against a database it had never run against. On a fresh CI
+ * database it passed; the second run anywhere died on
+ * `UNIQUE constraint failed: gl_accounts.account_number`, and the whole payload-integration lane
+ * shares ONE D1 across ~1,800 suites, so "never run before" is not a property a suite may assume.
+ *
+ * Find-or-create is idempotent in both directions: it seeds a fresh database and reuses a warm
+ * one, with no clock anywhere ([[registry]] and the seed factory learned the same lesson — a
+ * clock is not an identity, and two suites inside one millisecond share it).
+ */
+const TENANT_SLUG = 'tenant-period-end-adjustments'
+const USER_EMAIL = 'period-end-adjustments@test.local'
+
 beforeAll(async () => {
   const { getPayload } = await import('payload')
   const config = (await import('@payload-config')).default
   const payload = await getPayload({ config })
-  const t = await payload.create({
-    collection: 'tenants',
-    data: { name: 'Period-End Test', slug: `tenant-pe-${Date.now()}` } as never,
-  })
-  tenant = String((t as { id: unknown }).id)
-  const u = await payload.create({
-    collection: 'users',
-    data: { email: `pe-${Date.now()}@test.local`, password: 'test-pass-1234', roles: ['admin'] } as never,
-  })
-  user = String((u as { id: unknown }).id)
+
+  /** The row with this natural key, or a newly created one — never a duplicate. */
+  const findOrCreate = async (
+    collection: string,
+    where: Record<string, unknown>,
+    data: Record<string, unknown>,
+    /** Fields a REUSED row must carry for this run (a warm database may hold older values). */
+    reconcile?: Record<string, unknown>,
+  ): Promise<string> => {
+    const found = await payload.find({ collection: collection as never, where: where as never, limit: 1, depth: 0 })
+    const hit = (found as { docs?: Record<string, unknown>[] }).docs?.[0]
+    if (hit?.id !== undefined) {
+      const id = String(hit.id)
+      if (reconcile && Object.entries(reconcile).some(([k, v]) => String(hit[k] ?? '') !== String(v))) {
+        await payload.update({ collection: collection as never, id, data: reconcile as never })
+      }
+      return id
+    }
+    const made = await payload.create({ collection: collection as never, data: data as never })
+    return String((made as { id: unknown }).id)
+  }
+
+  tenant = await findOrCreate(
+    'tenants',
+    { slug: { equals: TENANT_SLUG } },
+    { name: 'Period-End Test', slug: TENANT_SLUG },
+  )
+  user = await findOrCreate(
+    'users',
+    { email: { equals: USER_EMAIL } },
+    { email: USER_EMAIL, password: 'test-pass-1234', roles: ['admin'] },
+  )
   const accounts: ReadonlyArray<[string, 'asset' | 'liability' | 'expense', 'debit' | 'credit', string]> = [
     ['depreciation_expense', 'expense', 'debit', '6100'],
     ['accumulated_depreciation', 'asset', 'credit', '1590'],
@@ -53,10 +93,16 @@ beforeAll(async () => {
     ['inventory', 'asset', 'debit', '1300'],
   ]
   for (const [id, accountType, normalBalance, accountNumber] of accounts) {
-    await payload.create({
-      collection: 'gl-accounts',
-      data: { id, tenant, accountType, normalBalance, accountNumber, accountName: id } as never,
-    })
+    // The id IS the key the hook resolves by, so it stays fixed and the row is reused when it
+    // is already there — the account number is unique-constrained and would collide otherwise.
+    // A reused row is also REBOUND to this run's tenant: a warm database can hold the account
+    // under a tenant an earlier run minted, and then the hook's line validation rejects it.
+    await findOrCreate(
+      'gl-accounts',
+      { id: { equals: id } },
+      { id, tenant, accountType, normalBalance, accountNumber, accountName: id },
+      { tenant },
+    )
   }
 }, 120_000)
 

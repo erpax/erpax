@@ -63,6 +63,9 @@ const enforcePostedImmutable: CollectionBeforeChangeHook = ({ req, data, operati
 const JournalEntries: CollectionConfig = {
   slug: 'journal-entries',
   labels: { singular: 'Journal Entry', plural: 'Journal Entries' },
+  // The sequence is per tenant, so the uniqueness is too — one entry number per tenant, and two
+  // tenants may each hold their own JE-2026-000001 ([[tenant]] isolation, ISO-27001 A.5.23).
+  indexes: [{ fields: ['tenant', 'entryNumber'], unique: true }],
   admin: {
     useAsTitle: 'entryNumber',
     defaultColumns: ['entryNumber', 'entryDate', 'description', 'status', 'debitTotal', 'creditTotal'],
@@ -74,7 +77,12 @@ const JournalEntries: CollectionConfig = {
     delete: tenantAdmin,
   },
   fields: [
-    { name: 'entryNumber', type: 'text', required: true, unique: true },
+    // NOT globally unique — unique PER TENANT (the compound index below). A global constraint
+    // and a per-tenant sequence cannot both hold: the generator numbers each tenant from its own
+    // first entry, so tenant B's JE-YYYY-000001 collided with tenant A's and the second tenant in
+    // a database could never post its first journal entry. Measured as a UNIQUE violation on
+    // journal_entries.entry_number.
+    { name: 'entryNumber', type: 'text', required: true, index: true },
     { name: 'entryDate', type: 'date', required: true },
     { name: 'postedDate', type: 'date' },
     { name: 'description', type: 'textarea', localized: true, required: true },
