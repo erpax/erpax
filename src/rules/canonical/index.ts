@@ -90,7 +90,24 @@ const sourceText = (cwd: string): string => {
 
 /**
  * Governed packages that are installed but never called — each is dead weight or a re-implementation.
- * A package counts as used when ANY of its own exports appears as a call in hand-written `src/`.
+ *
+ * A package counts as used when ANY of its own exports is CALLED in hand-written `src/`, or when
+ * src imports one of its documented SUBPATHS.
+ *
+ * Both allowances are corrections, not leniency — the gate reported three unwired packages and two
+ * of them were wired:
+ *
+ *   `multiTenantPlugin<Config>({…})`  a generic call is still a call, and `\bname\s*\(` cannot see
+ *                                     past the type arguments. The plugin was fully wired, with a
+ *                                     computed collection map and cookie-derived tenant defaults.
+ *   `@payloadcms/plugin-seo/fields`   the plugin's OWN documentation offers direct field use as the
+ *                                     alternative to calling it ("If you need more flexibility you
+ *                                     can insert the fields manually"). `pages` and `posts` take
+ *                                     exactly that path.
+ *
+ * A gate that flags canonical use as a violation teaches people to ignore it. Only
+ * `plugin-import-export` was genuinely unwired — installed, documented in two SKILLs as the import
+ * route, and never registered, so the Admin had no Imports panel at all.
  */
 export function unwiredPackages(cwd: string = process.cwd()): UnwiredPackage[] {
   const pkg = JSON.parse(readFileSync(join(cwd, 'package.json'), 'utf8')) as {
@@ -101,8 +118,10 @@ export function unwiredPackages(cwd: string = process.cwd()): UnwiredPackage[] {
   for (const dep of Object.keys(pkg.dependencies ?? {}).filter(GOVERNED)) {
     const api = exportNamesOf(join(cwd, 'node_modules', dep))
     if (api.length === 0) continue // no readable API face — cannot judge, never guess
-    const used = api.some((name) => new RegExp(`\\b${name}\\s*\\(`).test(src))
-    if (!used) out.push({ dep, api })
+    // `name(`, `name<T>(` — the type arguments are erased at runtime and change nothing about the call
+    const called = api.some((name) => new RegExp(`\\b${name}\\s*(?:<[^()]*>)?\\s*\\(`).test(src))
+    const subpathUsed = new RegExp(`from '${dep.replace(/[/@-]/g, (c) => '\\' + c)}/`).test(src)
+    if (!called && !subpathUsed) out.push({ dep, api })
   }
   return out.sort((a, b) => (a.dep < b.dep ? -1 : 1))
 }

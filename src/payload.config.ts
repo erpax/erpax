@@ -11,6 +11,7 @@ import { mcpPlugin } from '@payloadcms/plugin-mcp'
 import { formBuilderPlugin } from '@payloadcms/plugin-form-builder'
 import { searchPlugin } from '@payloadcms/plugin-search'
 import { redirectsPlugin } from '@payloadcms/plugin-redirects'
+import { importExportPlugin } from '@payloadcms/plugin-import-export'
 import { nestedDocsPlugin } from '@payloadcms/plugin-nested-docs'
 import { r2Storage } from '@payloadcms/storage-r2'
 import { uuidPlugin } from '@/uuid'
@@ -57,7 +58,7 @@ import { isSuperAdmin } from '@/is/super/admin'
 // No domain silos: organizing by actual data type/concern, not business domain.
 // Collections are self-contained with clear boundaries for future plugin extraction.
 import * as allCollections from '@/collections'
-import { tenantCollectionsConfig } from '@/tenants'
+import { tenantCollectionsConfig, tenantScopedSlugs } from '@/tenants'
 import type { CollectionSlug, CollectionConfig } from 'payload'
 import { Footer } from './footer/config'
 import { Header } from './header/config'
@@ -379,6 +380,23 @@ export default buildConfig({
           ...searchFields,
         ],
       },
+    }),
+    // Import/Export — the panel the corpus already documents and never had.
+    //
+    // `src/ingest/blogger-to-json.ts` tells a reader to go "Payload Admin → Imports →
+    // posts (JSON), using @payloadcms/plugin-import-export", and [[port]]'s SKILL says
+    // the etrima dump is emitted "for @payloadcms/plugin-import-export to import". Both
+    // described a door that was never fitted: the package was installed and never
+    // registered, so the Admin had no Imports panel at all.
+    //
+    // COMPUTED, not a hand-map — the same rule the tenant plugin uses. What a port or an
+    // ingest moves is TENANT DATA, so the import/export surface is exactly the
+    // tenant-scoped set: a new collection gets the panel automatically, and the GLOBAL_SPINE
+    // (the shared, non-tenant tables) deliberately does not.
+    importExportPlugin({
+      collections: tenantScopedSlugs(Object.values(allCollections) as Array<{ slug: string }>).map(
+        (slug) => ({ slug: slug as CollectionSlug }),
+      ),
     }),
     multiTenantPlugin<Config>({
       // COMPUTED, not a 201-slug hand-map: every collection is tenant-scoped
