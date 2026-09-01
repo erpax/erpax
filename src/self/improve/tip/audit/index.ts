@@ -10,10 +10,9 @@
  */
 import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { exactMax, exactMaxOf, exactDivFloor } from '@/algebra'
+import { exactMax, exactDivFloor } from '@/algebra'
 import { attraction, leftoverSites, waves, type Attraction, type Wave } from '@/leftover'
 import {
-  atomPath,
   ADMIN_TTFB_MS_RESIDUAL,
   ADMIN_TTFB_MS_OK,
   type GapKind,

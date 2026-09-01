@@ -18,7 +18,7 @@ import { autoPopulateCreatedBy } from '@/auto/populate/created/by'
 import { auditTrailAfterChange } from '@/audit/trail/after/change'
 import { adminGroupOf } from '@/navigation'
 import {
-  emitOnStatusTransition, emitOnCreate, AGGREGATE_TYPES, type AggregateType,
+  emitOnStatusTransition, emitOnCreate, type AggregateType,
 } from '@/chain/event/emitter'
 import { wireChainProducersFor } from '@/business/chain'
 import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/auth'

@@ -8,12 +8,9 @@
  *
  * @see ./SKILL.md
  */
-import { existsSync, readFileSync } from 'node:fs'
-import { join } from 'node:path'
 import { exactMaxOf } from '@/algebra'
-import { shouldContinue, type Continuation } from '@/self/improve'
+import { shouldContinue } from '@/self/improve'
 import {
-  atomPath,
   ADMIN_TTFB_MS_RESIDUAL,
   ADMIN_TTFB_MS_OK,
   VAGUE_TIP_RE,
