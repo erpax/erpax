@@ -106,5 +106,3 @@ export function scanTransaction(tx: {
   if (!bal.balanced) findings.push(`unbalanced posting: Σdebit−Σcredit = ${bal.delta}`)
   return { clean: findings.length === 0, findings }
 }
-
-export * from './cross-entity'

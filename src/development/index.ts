@@ -43,5 +43,3 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   ]
   console.log('development — roadmap mechanics: nextMove = ' + nextMove(demo)?.name + ' (now-first)')
 }
-
-export * from './research'

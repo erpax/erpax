@@ -3,7 +3,10 @@
 #   v*            → the CORPUS release. Cuts the GitHub Release that Zenodo archives
 #                   and mints a citable DOI from (.zenodo.json · CITATION.cff).
 #   algebra-v*    → @erpax/algebra — the MIT free core math.
-#   <leaf>-v*     → @erpax/<leaf> for access · accounting · cloudflare · commerce · identity.
+#   <leaf>-v*     → @erpax/<leaf> for erpax · access · accounting · cloudflare · commerce · identity.
+#
+# `erpax-v*` publishes @erpax/erpax, the ORIENTATION face — the wire, not the app. It is a
+# built package like any other; the root stays private and assert-root-private enforces it.
 #
 # THE FILENAME IS LOAD-BEARING. npm trusted publishing (OIDC) is configured per package
 # against a WORKFLOW FILE, not a workflow name — npmjs.com → @erpax/<pkg> → Settings →
@@ -35,6 +38,7 @@ on:
     tags:
       - 'v*'
       - 'algebra-v*'
+      - 'erpax-v*'
       - 'access-v*'
       - 'accounting-v*'
       - 'cloudflare-v*'
@@ -72,7 +76,7 @@ jobs:
           set -euo pipefail
           case "$TAG" in
             algebra-v*)                                          KIND=algebra; DIR=packages/algebra ;;
-            access-v*|accounting-v*|cloudflare-v*|commerce-v*|identity-v*)
+            erpax-v*|access-v*|accounting-v*|cloudflare-v*|commerce-v*|identity-v*)
                                                                  KIND=package; DIR="packages/${TAG%%-v*}" ;;
             v*)                                                  KIND=corpus;  DIR=. ;;
             *) echo "::error::tag '$TAG' matches no release kind"; exit 1 ;;

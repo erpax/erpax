@@ -1,0 +1,35 @@
+/**
+ * skill/wire — validate an erpax GitHub URL and return the canonical skill entry paths.
+ *
+ *   tsx src/skill/wire/index.ts
+ *
+ * @see ../../skills/SKILL.md — ../../agent/skill-context — ./SKILL.md
+ */
+/** Canonical erpax repository URL. */
+export declare const ERPAX_CANONICAL_REPO: "https://github.com/erpax/erpax";
+/** Root skill entry — the ONE file every orientation surface points to. */
+export declare const ERPAX_SKILL_ENTRY: ".claude/skills/SKILL.md";
+/** Same entry via the src/ face (.claude → src symlink). */
+export declare const ERPAX_SKILL_ENTRY_ALT: "src/skills/SKILL.md";
+/** content-uuid of the root skills SKILL.md (sealed). */
+export declare const ERPAX_SKILL_ENTRY_CONTENT_UUID: "29c9640e-0e90-566b-96ac-988d0580776b";
+/** Orientation surfaces that all reference ERPAX_SKILL_ENTRY (IDE, browser, clone). */
+export declare const ERPAX_AGENT_SURFACES: readonly ["AGENTS.md", "CLAUDE.md", ".github/copilot-instructions.md", "README.md", ".cursor/rules/erpax.mdc", ".well-known/ai-skills.json", "skills.json"];
+export interface WireFromRepoUrlResult {
+    readonly ok: true;
+    readonly repoUrl: typeof ERPAX_CANONICAL_REPO;
+    readonly entryPoint: typeof ERPAX_SKILL_ENTRY;
+    readonly entryPointAlt: typeof ERPAX_SKILL_ENTRY_ALT;
+    readonly contentUuid: typeof ERPAX_SKILL_ENTRY_CONTENT_UUID;
+    readonly surfaces: readonly string[];
+}
+export interface WireFromRepoUrlError {
+    readonly ok: false;
+    readonly reason: string;
+}
+export type WireFromRepoUrl = WireFromRepoUrlResult | WireFromRepoUrlError;
+/** Normalize accepted erpax GitHub URLs to the canonical repo URL, or null if not erpax. */
+export declare function normalizeErpaxRepoUrl(url: string): string | null;
+/** Validate github.com/erpax/erpax and return sealed skill corpus entry paths (any reader). */
+export declare function wireFromRepoUrl(url: string): WireFromRepoUrl;
+/** @index-cross.foldback child=skill/wire parent=skill — this cross folds back into its parent. */

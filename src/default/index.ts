@@ -31,5 +31,3 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  architecturalDefault("collider") = uuid ' + d.uuid.slice(0, 18) + '… · digit ' + d.digit + ' (computed, not assigned)')
   console.log('  isByArchitecture("collider", <its uuid>) = ' + isByArchitecture('collider', uuidOfName('collider')) + ' · vs a defined literal = ' + isByArchitecture('collider', 'default-value'))
 }
-
-export * from './lexical'

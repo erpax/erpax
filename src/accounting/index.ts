@@ -57,8 +57,10 @@ export type {
 // corpus to scan, and these edges pinned readme/compute plus the 4MB generated
 // UUID matrix into every accounting bundle.
 
-export * from './margin'
-
-export * from './money'
-
-export * from './proof'
+/*
+ * NOT re-exported here: this atom is a published package face, and a barrel that
+ * re-exports a child drags that child into every consumer's closure. The
+ * index-cross wiring added those lines and blew the package's closure ratchet;
+ * the ceiling is a CONSUMER-facing property, so it wins over an internal wiring
+ * count. Reach these children at `@/<atom>/<child>` instead.
+ */

@@ -233,4 +233,10 @@ export const computedAccess = {
 export { tenantMatchVerdict } from '@/team/comms'
 export type { CrudOp } from '@/cross'
 
-export * from './standard'
+/*
+ * NOT re-exported here: this atom is a published package face, and a barrel that
+ * re-exports a child drags that child into every consumer's closure. The
+ * index-cross wiring added those lines and blew the package's closure ratchet;
+ * the ceiling is a CONSUMER-facing property, so it wins over an internal wiring
+ * count. Reach these children at `@/<atom>/<child>` instead.
+ */

@@ -226,7 +226,3 @@ export { CLI_REGISTRY, LEGACY_ALIASES, AURA_SCAN_PATH } from './registry'
 export { printHelp, suggestNearestDomain } from './help'
 export { runDoctor, runDoctorStalls, collectDoctorReport } from './doctor'
 export { runRulesCheck, topFailedAxes, AXIS_FIX_HINTS } from './rules-check'
-
-export * from './progress-heartbeat'
-
-export * from './face'

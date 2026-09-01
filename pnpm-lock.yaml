@@ -397,6 +397,8 @@ importers:
 
   packages/commerce: {}
 
+  packages/erpax: {}
+
   packages/identity:
     dependencies:
       zod:

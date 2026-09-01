@@ -165,5 +165,3 @@ export const Customers: CollectionConfig = {
     { name: 'metadata', type: 'json', admin: { description: 'Additional metadata' } },
   ],
 }
-
-export * from './contracts'

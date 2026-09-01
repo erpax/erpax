@@ -113,7 +113,3 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   if (gaps.length) console.log('  failing: ' + gaps.join(' · '))
   console.log('  ⇒ ' + (operates() ? 'OPERATIONAL' : 'DEGRADED'))
 }
-
-export * from './component'
-
-export * from './hardware'

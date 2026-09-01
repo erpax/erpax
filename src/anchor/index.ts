@@ -153,7 +153,3 @@ export function fusionResilience(keys = 4, digestBits = ERPAX_DIGEST_BITS): Fusi
     orientationBits: keys,
   }
 }
-
-export * from './claims'
-
-export * from './surface'

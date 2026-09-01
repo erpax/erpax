@@ -140,7 +140,3 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   }
   void main()
 }
-
-export * from './emit-efficiency'
-
-export * from './stall-watch'

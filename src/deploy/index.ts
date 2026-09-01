@@ -39,7 +39,3 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  band ' + deployBand().join('·') + '  ·  harmonized(true order)=' + harmonized(DEPLOY.map((d) => d.step)) + '  ·  harmonized(build-first)=' + harmonized(['build', 'gate', 'migrate', 'push']))
   console.log('  band harmony: ' + JSON.stringify(deployHarmony()).slice(0, 140))
 }
-
-export * from './fold'
-
-export * from './pipeline'
