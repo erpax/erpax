@@ -18,10 +18,14 @@
 # plus a concept DOI that always resolves to the newest version. No code, no token here.
 #
 # Cut a release:
-#   node packages/release.mjs --write     # content-addressed bump of what actually changed
-#   git commit -am 'release: <pkgs>' && git push
+#   node packages/release.mjs --write        # the @erpax/* packages, by built content
+#   node scripts/release-corpus.mjs --write  # the corpus itself, by tracked content
+#   git commit -am 'release: v<version>' && git push
 #   git tag accounting-v2.1.0 && git push origin accounting-v2.1.0
 #   git tag v1.1.0            && git push origin v1.1.0     # corpus + DOI
+#
+# Neither bump is a judgement call: a release happens when the CONTENT changed, and the
+# scripts refuse to invent one when it did not.
 #
 # A tag is the human in the loop: nothing here fires on a plain push to main.
 name: Publish
@@ -92,6 +96,11 @@ jobs:
         run: node scripts/citation-consistent.mjs
       - name: Tag names the version it releases
         run: node scripts/assert-tag-version.mjs "$TAG" .
+      # The version is the corpus's CONTENT ADDRESS: released.json must address the tree
+      # being tagged. A DOI is permanent, so a version that resolves to different content
+      # than it claims is the one failure that cannot be taken back.
+      - name: Content gate — released.json addresses this corpus
+        run: node scripts/release-corpus.mjs --check
 
       - uses: ./.github/actions/setup
         with: { skill-index: none, ripgrep: 'false' }
