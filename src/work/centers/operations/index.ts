@@ -61,3 +61,5 @@ const Operations: CollectionConfig = {
 }
 
 export default Operations
+
+/** @index-cross.foldback child=work/centers/operations parent=work/centers — this cross folds back into its parent. */

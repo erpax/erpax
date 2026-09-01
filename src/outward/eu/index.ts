@@ -131,3 +131,5 @@ export async function checkEu(opts: { readonly cwd?: string; readonly fetchImpl?
 }
 
 /** @index-cross.foldback child=outward/eu parent=outward — this cross folds back into its parent. */
+
+export * from './contract'

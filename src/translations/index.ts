@@ -178,3 +178,5 @@ export default createAccountingCollection({
     },
   ],
 })
+
+export * from './catalogue'

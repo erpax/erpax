@@ -151,3 +151,5 @@ const WorkflowDefinitions: CollectionConfig = {
 }
 
 export default WorkflowDefinitions
+
+/** @index-cross.foldback child=workflow/definitions parent=workflow — this cross folds back into its parent. */

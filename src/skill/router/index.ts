@@ -52,3 +52,15 @@ export {
 } from './upgrade'
 
 /** @index-cross.foldback child=skill/router parent=skill — this cross folds back into its parent. */
+
+export * from './installed.catalogue'
+
+export * from './prose-entropy'
+
+export * from './resolve'
+
+export * from './serialize'
+
+export * from './merge'
+
+export * from './rating'

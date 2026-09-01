@@ -146,3 +146,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
 }
 
 /** @index-cross.foldback child=notary/check parent=notary — this cross folds back into its parent. */
+
+export * from './cadastre'

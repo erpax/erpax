@@ -96,3 +96,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  act #1 authentic:', authenticate(protocol, 0), '· chain intact:', chainIntact(protocol))
   console.log('  seal binds the chain — merge is the notarial ink:', merge('a', 'b').slice(0, 8) + '…')
 }
+
+export * from './check'

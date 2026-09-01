@@ -173,3 +173,5 @@ export {
   type WorkTamperProductVerdict,
   type ImproveReceiptTamperOpts,
 } from '../policy'
+
+/** @index-cross.foldback child=wave/horo parent=wave — this cross folds back into its parent. */

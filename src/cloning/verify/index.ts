@@ -52,3 +52,5 @@ export function checkCloneIntegrity(args: {
 
   return { ok: false, expected, actual, reason, divergentSections: divergent }
 }
+
+/** @index-cross.foldback child=cloning/verify parent=cloning — this cross folds back into its parent. */

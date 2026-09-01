@@ -79,3 +79,5 @@ export function singularOf(plural: string): string {
 export function isStrictPair(model: string, collection: string): boolean {
   return pluralOf(model) === collection
 }
+
+export * from './field'

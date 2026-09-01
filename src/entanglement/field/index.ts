@@ -82,3 +82,5 @@ export function fieldEntanglementOf(
 
   return warnings
 }
+
+/** @index-cross.foldback child=entanglement/field parent=entanglement — this cross folds back into its parent. */

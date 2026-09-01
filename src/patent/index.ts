@@ -76,3 +76,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  prior art anchored @100 < filing @200, anchor binds ⇒ anticipated=' + !!anticipatedBy(p, art))
   console.log('  challengeable=' + r.invalid + ' on: ' + r.grounds.join('  ·  '))
 }
+
+export * from './prior'

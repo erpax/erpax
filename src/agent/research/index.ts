@@ -310,3 +310,7 @@ export async function registerResearchSociety(
 }
 
 /** @index-cross.foldback child=agent/research parent=agent — this cross folds back into its parent. */
+
+export * from './educate'
+
+export * from './memory'

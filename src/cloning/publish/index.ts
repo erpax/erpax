@@ -57,3 +57,5 @@ export function publishSelf(args: PublishSelfArgs): GenomePublication {
     merkleAnchor: args.merkleAnchor,
   }
 }
+
+/** @index-cross.foldback child=cloning/publish parent=cloning — this cross folds back into its parent. */

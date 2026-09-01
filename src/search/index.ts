@@ -8,3 +8,5 @@ export * from './corpus'
 export * from './fieldOverrides'
 export * from './beforeSync'
 export { Search } from './Component'
+
+export * from './engine'

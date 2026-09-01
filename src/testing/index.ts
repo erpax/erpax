@@ -64,3 +64,5 @@ export {
   type AccessConfig,
   type RelationshipInfo,
 } from '@/testing/config/discovery'
+
+export * from './witness'

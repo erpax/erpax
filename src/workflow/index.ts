@@ -254,3 +254,9 @@ function evaluateJsonLogic(_expression: string, _data: Record<string, unknown>):
   // `import jsonLogic from 'json-logic-js'` when the dep lands.
   return true
 }
+
+export * from './concatenate'
+
+export * from './definitions'
+
+export * from './engine'

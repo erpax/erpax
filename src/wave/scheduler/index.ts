@@ -131,3 +131,5 @@ export function runCorpusWaveChunks<T>(
   }
   return results
 }
+
+/** @index-cross.foldback child=wave/scheduler parent=wave — this cross folds back into its parent. */

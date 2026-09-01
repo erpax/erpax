@@ -85,3 +85,5 @@ export function bandHarmony(steps: readonly HoroStep[]): BandHarmony {
     meanTenney: tenneys.length ? tenneys.reduce((a, b) => a + b, 0) / tenneys.length : 0,
   }
 }
+
+export * from './divisor'

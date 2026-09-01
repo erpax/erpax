@@ -77,3 +77,5 @@ export const judgeWire = (judge: Judge, decode: (wire: string) => string, wire: 
 /** Law 3, quantum half — a superposition of readings fails CLOSED: one refusing branch refuses all. */
 export const judgeSuperposed = (judge: Judge, branches: readonly string[]): Verdict =>
   branches.some((branch) => judge(branch) === 'refuse') ? 'refuse' : 'allow'
+
+/** @index-cross.foldback child=message/local parent=message — this cross folds back into its parent. */

@@ -118,3 +118,5 @@ export const Roles: CollectionConfig = {
     beforeValidate: [validateRoleDefinition],
   },
 }
+
+export * from './registry'

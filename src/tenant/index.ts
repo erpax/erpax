@@ -12,3 +12,7 @@
  */
 
 export { tenantIdFromRelation } from './remote/secret'
+
+export * from './context'
+
+export * from './service'

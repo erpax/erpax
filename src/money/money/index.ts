@@ -19,3 +19,5 @@ export function isMoney(o: unknown): o is { amountCents: number; currency: strin
   const r = o as Record<string, unknown>
   return Number.isInteger(r.amountCents) && isIso4217(r.currency)
 }
+
+/** @index-cross.foldback child=money/money parent=money — this cross folds back into its parent. */

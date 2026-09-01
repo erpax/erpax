@@ -178,3 +178,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   const composed = concatenate(WORKFLOWS['grow-to-whole']!, WORKFLOWS['ground-vocabulary']!)
   console.log('  concatenate(grow-to-whole, ground-vocabulary) = ' + composed.length + ' steps; first step-uuid ' + stepUuid(composed[0]!).slice(0, 8))
 }
+
+/** @index-cross.foldback child=workflow/concatenate parent=workflow — this cross folds back into its parent. */

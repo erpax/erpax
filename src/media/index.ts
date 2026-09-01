@@ -78,3 +78,5 @@ export const Media: CollectionConfig = {
 // is surfaced here under an alias to avoid clobbering the collection symbol).
 // Canonical component import path stays `@/media/Component`.
 export { Media as MediaComponent } from './Component'
+
+export * from './types'

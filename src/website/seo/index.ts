@@ -264,3 +264,5 @@ export function validateMicrodata(face: SeoVortexFace): MicrodataValidation {
 
 /** Test-only — never call in prod. */
 export function __resetFacesForTests(): void { FACES_BY_URL.clear() }
+
+/** @index-cross.foldback child=website/seo parent=website — this cross folds back into its parent. */

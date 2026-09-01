@@ -253,3 +253,5 @@ export function verifyContentUuid<T extends Record<string, unknown>>(
   if (typeof actual === 'string' && actual === hashExpected) return { ok: true }
   return { ok: false, expected: structuredExpected, actual: typeof actual === 'string' ? actual : undefined }
 }
+
+/** @index-cross.foldback child=integrity/content parent=integrity — this cross folds back into its parent. */

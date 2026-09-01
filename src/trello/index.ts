@@ -250,3 +250,5 @@ export function createTrelloClient(config: TrelloConfig): TrelloClient {
       request<{ id: string }>('POST', `/cards/${cardId}/actions/comments`, { text }),
   }
 }
+
+export * from './plugin'

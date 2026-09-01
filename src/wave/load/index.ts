@@ -257,3 +257,5 @@ export function tamperCostForWave<T>(
   if (!Number.isFinite(torus) || !Number.isFinite(chain)) return Number.POSITIVE_INFINITY
   return torus + chain + itemAmp
 }
+
+/** @index-cross.foldback child=wave/load parent=wave — this cross folds back into its parent. */

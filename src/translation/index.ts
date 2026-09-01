@@ -151,3 +151,5 @@ export function roundTrips(
   const back = translateVia(table, there.value, b, a)
   return back != null && !back.seed && back.value === renderIn(resolveByWord(table, word, a)!, a)
 }
+
+export * from './source'

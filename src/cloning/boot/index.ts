@@ -134,3 +134,5 @@ export async function bootFromFederation(args: {
     reason: 'Production boot path requires registry register*FromBundle APIs (follow-up cut). Use sandbox: true to validate the genome.',
   }
 }
+
+/** @index-cross.foldback child=cloning/boot parent=cloning — this cross folds back into its parent. */

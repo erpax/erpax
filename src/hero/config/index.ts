@@ -84,3 +84,5 @@ export const hero: Field = {
   ],
   label: false,
 }
+
+/** @index-cross.foldback child=hero/config parent=hero — this cross folds back into its parent. */

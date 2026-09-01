@@ -9,3 +9,5 @@
  * Reach the router through its own path — `@/skill/router/...` — never through here.
  */
 export * from './frontmatter'
+
+export * from './wire'

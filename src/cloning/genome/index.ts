@@ -135,3 +135,5 @@ export function computeGenomeUuid(bundle: GenomeBundle, tenantId: string): strin
   const { publishedAt: _publishedAt, ...rest } = bundle
   return computeContentUuid(rest as unknown as Record<string, unknown>, tenantId)
 }
+
+/** @index-cross.foldback child=cloning/genome parent=cloning — this cross folds back into its parent. */

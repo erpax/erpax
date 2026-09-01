@@ -293,3 +293,5 @@ export async function decryptBytesEnvelope(args: {
     )
   }
 }
+
+/** @index-cross.foldback child=integrity/envelope parent=integrity — this cross folds back into its parent. */

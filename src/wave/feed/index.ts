@@ -204,3 +204,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     }
   })
 }
+
+/** @index-cross.foldback child=wave/feed parent=wave — this cross folds back into its parent. */

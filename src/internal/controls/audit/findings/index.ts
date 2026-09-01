@@ -41,3 +41,5 @@ export const AuditFindings: CollectionConfig = {
     { name: 'isActive', type: 'checkbox', defaultValue: true },
   ],
 }
+
+export * from './court-docket'

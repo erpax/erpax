@@ -264,3 +264,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   console.log(formatCrossReport())
   process.exit(pathWireViolations().length > 0 ? 1 : 0)
 }
+
+/** @index-cross.foldback child=index/cross parent=index — this cross folds back into its parent. */

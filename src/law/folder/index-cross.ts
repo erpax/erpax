@@ -325,12 +325,18 @@ export function sealPathDoubleWire(cwd: string = process.cwd(), max = 30): SealP
 const auditFolder = (atomPath: string, cwd: string): IndexCrossViolation[] => {
   const violations: IndexCrossViolation[] = []
   const dir = join(cwd, SRC, atomPath)
-  const indexPath = existsSync(join(dir, 'index.ts')) ? join(dir, 'index.ts') : null
+  // `index.tsx` IS a cross. A React component folder crosses through the same door with a
+  // different extension, and this check looked only for `.ts` — so `admin/bar`,
+  // `before/login`, every `blocks/form/*` and 32 more were reported as having no cross
+  // while holding one. The corpus's own COLOCATED set has always listed both.
+  const indexPath = ['index.ts', 'index.tsx']
+    .map((n) => join(dir, n))
+    .find((p) => existsSync(p)) ?? null
   if (!indexPath) {
     violations.push({
       atomPath,
       kind: 'unwired-cross',
-      detail: 'code folder missing index.ts cross',
+      detail: 'code folder missing index cross (index.ts / index.tsx)',
       interact64: bondHex(atomPath),
     })
     return violations
@@ -578,7 +584,9 @@ const appendReexport = (
   offered: Set<string>,
   atomPath: string,
   cwd: string,
+  protectedIndexes?: ReadonlySet<string>,
 ): string => {
+  if (protectedIndexes?.has(`${SRC}/${atomPath}/index.ts`)) return indexContent
   if (indexContent.includes(`'./${target}'`)) return indexContent
   const file = childFaceFile(dir, target)
   if (!existsSync(file)) return indexContent
@@ -614,19 +622,43 @@ export function wireIndexCross(
   path?: string,
   cwd: string = process.cwd(),
   max = 25,
-  opts: { readonly foldbackOnly?: boolean } = {},
+  opts: {
+    readonly foldbackOnly?: boolean
+    /**
+     * Barrels a published package BUNDLES — repo-relative, e.g. `src/accounting/index.ts`.
+     *
+     * `export * from './child'` on one of these drags the child into every consumer's
+     * install: wiring 89 such edges blind took @erpax/cloudflare from 73 to 92 atoms,
+     * +68 files and +193KB, and blew three closure ratchets. Outside a package closure
+     * the identical edge costs a stranger nothing.
+     *
+     * The caller computes this from the SAME esbuild bundle the closure ratchet measures
+     * with, so the refusal and the ceiling are one measurement rather than two opinions.
+     */
+    readonly protectedIndexes?: ReadonlySet<string>
+  } = {},
 ): WireIndexCrossResult {
   const before = indexCrossAudit(path, cwd).violationCount
   const paths: string[] = []
   let deepImportsFixed = 0
   let wired = 0
 
+  // The fold-back pass visits EVERY parent that has children.
+  //
+  // It used to inherit the re-export pass's target list — priority hubs plus the
+  // `unwiredCrosses` — so a parent that was already wired never had its children
+  // bannered, and 393 fold-backs the tool could have written for free sat there while
+  // the sweep reported "0 files" and stopped. A banner is a comment: it collides with
+  // nothing, closes no loop, and costs no consumer a byte, so there is no reason to
+  // ration it to the folders some other pass happened to select.
   const targetFolders = path
     ? [normalize(path)]
-    : [
-        ...INDEX_CROSS_PRIORITY.filter((p) => existsSync(join(cwd, SRC, p))),
-        ...indexCrossAudit(path, cwd).unwiredCrosses.filter((p) => !INDEX_CROSS_PRIORITY.includes(p)),
-      ]
+    : opts.foldbackOnly
+      ? listIndexFolders(cwd)
+      : [
+          ...INDEX_CROSS_PRIORITY.filter((p) => existsSync(join(cwd, SRC, p))),
+          ...indexCrossAudit(path, cwd).unwiredCrosses.filter((p) => !INDEX_CROSS_PRIORITY.includes(p)),
+        ]
 
   const deepBySpec = new Map<string, ImportViolation[]>()
   for (const v of indexCrossAudit(path, cwd).deepImports) {
@@ -665,7 +697,7 @@ export function wireIndexCross(
 
     if (!opts.foldbackOnly) {
       for (const stem of matterStemsInFolder(dir)) {
-        const next = appendReexport(indexContent, stem, dir, offered, atomPath, cwd)
+        const next = appendReexport(indexContent, stem, dir, offered, atomPath, cwd, opts.protectedIndexes)
         if (next !== indexContent) {
           indexContent = next
           changed = true
@@ -675,7 +707,7 @@ export function wireIndexCross(
 
     for (const child of childIndexFolders(dir)) {
       if (!opts.foldbackOnly) {
-        const next = appendReexport(indexContent, child, dir, offered, atomPath, cwd)
+        const next = appendReexport(indexContent, child, dir, offered, atomPath, cwd, opts.protectedIndexes)
         if (next !== indexContent) {
           indexContent = next
           changed = true

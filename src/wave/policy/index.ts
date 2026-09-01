@@ -200,3 +200,5 @@ export function workUnitFromWaveBatch(opts: {
     receiptSeq: opts.receiptSeq,
   }
 }
+
+/** @index-cross.foldback child=wave/policy parent=wave — this cross folds back into its parent. */

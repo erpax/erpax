@@ -97,3 +97,5 @@ export function assertMigration(paths: readonly string[], rule: (tree: readonly 
     throw new NotAMigration('oscillating', 'the rule still has work to do on the tree it produced — it never settles')
   }
 }
+
+export * from './quaternary'

@@ -125,3 +125,5 @@ export function isWaveSessionReady<T>(session: WaveSession<T>): boolean {
   const v = waveSessionVerdict(session)
   return v.complete && v.balanced
 }
+
+/** @index-cross.foldback child=wave/session parent=wave — this cross folds back into its parent. */

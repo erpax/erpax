@@ -181,3 +181,5 @@ export const EVIDENCE: readonly EvidenceSource[] = [
 ]
 
 /** @index-cross.foldback child=entropy/threshold parent=entropy — this cross folds back into its parent. */
+
+export * from './split'

@@ -233,3 +233,5 @@ export function fromJws<T>(jws: string): SignedUuid<T> {
     signedAt: header.iat ?? new Date(0).toISOString(),
   }
 }
+
+/** @index-cross.foldback child=integrity/signatures parent=integrity — this cross folds back into its parent. */

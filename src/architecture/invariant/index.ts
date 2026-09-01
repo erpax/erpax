@@ -233,3 +233,5 @@ export function formatInvariantResult(suite: InvariantSuiteResult): string {
   }
   return lines.join('\n')
 }
+
+/** @index-cross.foldback child=architecture/invariant parent=architecture — this cross folds back into its parent. */

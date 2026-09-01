@@ -81,3 +81,7 @@ export function emittedEvents(sm: StateMachine): string[] {
 export function crossDomainEdges(sm: StateMachine): SMTransition[] {
   return sm.transitions.filter((t) => t.crossDomain)
 }
+
+/** @index-cross.foldback child=workflow/engine parent=workflow — this cross folds back into its parent. */
+
+export * from './fixtures'

@@ -27,3 +27,5 @@ export function ancestorPaths(atomPath: string): readonly string[] {
   for (let p = parentAtomPath(atomPath); p; p = parentAtomPath(p)) out.push(p)
   return out
 }
+
+/** @index-cross.foldback child=seal/parent parent=seal — this cross folds back into its parent. */
