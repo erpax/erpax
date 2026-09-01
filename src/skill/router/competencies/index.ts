@@ -19,7 +19,7 @@
 import type { SkillNode } from '../resolve'
 import { SKILL_INDEX } from '../skills.index'
 import { INSTALLED_CATALOGUE } from '../installed.catalogue'
-import { mergeCatalogue } from '../merge'
+import { mergeCatalogue } from '@/skill/router/merge'
 
 /** ESCO Skills-pillar sub-classification (mono-hierarchy: one group per concept). */
 export type CompetencySubClassification = 'knowledge' | 'language' | 'skill' | 'transversal'

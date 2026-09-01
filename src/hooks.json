@@ -3,7 +3,7 @@
   "hooks": {
     "stop": [
       {
-        "command": "node --import tsx/esm src/confirm/seal-and-push.ts",
+        "command": "node --import tsx/esm src/confirm/push/index.ts",
         "timeout": 30
       }
     ]

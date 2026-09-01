@@ -16,7 +16,7 @@
  * @standard RFC 7515 JWS compact serialization
  */
 import { describe, it, expect } from 'vitest'
-import type { ContentUuid } from '../content'
+import type { ContentUuid } from '@/integrity/content'
 import {
   signContentUuid,
   verifyContentUuidSignature,

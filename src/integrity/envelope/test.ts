@@ -18,7 +18,7 @@
  * @standard RFC 5869 HKDF (the key derivation step)
  */
 import { describe, it, expect } from 'vitest'
-import type { ContentUuid } from '../content'
+import type { ContentUuid } from '@/integrity/content'
 import { encryptEnvelope, decryptEnvelope } from './index'
 
 interface Invoice { id: string; amount: number; iban: string }

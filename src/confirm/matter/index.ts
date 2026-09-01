@@ -1,11 +1,11 @@
 /**
  * confirm/matter — payload twin ⊕ vitepress twin ⊕ build lane (scoped + --full).
  *
- *   tsx src/confirm/matter.ts <file...>
- *   tsx src/confirm/matter.ts --hook
- *   tsx src/confirm/matter.ts --full
+ *   tsx src/confirm/matter/index.ts <file...>
+ *   tsx src/confirm/matter/index.ts --hook
+ *   tsx src/confirm/matter/index.ts --full
  *
- * Uuid-pure stack lives in ./index.ts (`pnpm confirm:uuid`).
+ * Uuid-pure stack lives in @/confirm/uuid (`pnpm confirm:uuid`).
  */
 import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs'
 import { join, basename, relative, resolve } from 'node:path'

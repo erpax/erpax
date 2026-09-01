@@ -10,7 +10,7 @@ import {
   ADMIN_TTFB_MS_OK,
   ADMIN_TTFB_MS_RESIDUAL,
   type SelfDevGap,
-} from './tip'
+} from './index'
 
 function gap(partial: Partial<SelfDevGap> & Pick<SelfDevGap, 'kind'>): SelfDevGap {
   const factors = partial.factors ?? { unblock: 40, cost: 2, risk: 1 }

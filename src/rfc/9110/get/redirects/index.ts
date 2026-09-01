@@ -6,7 +6,7 @@
  * @see ./cache.ts
  */
 
-import { getCachedPayloadCollectionAll } from '../../cache'
+import { getCachedPayloadCollectionAll } from '@/rfc/9110/cache'
 
 /**
  * Get all redirects (cached). Uses centralized caching from `cache.ts`.

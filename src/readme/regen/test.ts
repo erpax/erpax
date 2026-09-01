@@ -68,7 +68,7 @@ describe('readme — atom basis scan (generators vs rosetta combinations)', () =
     }
     try {
       atom('prose')                                            // vocab-only (no index) — combination
-      atom('barrel', `export { x } from '../child'\n`)          // barrel — combination
+      atom('barrel', `export { x } from './child'\n`)          // barrel — combination
       atom('wire', `import { a } from '@/a'\nconsole.log(a)\n`)   // compose-no-logic (no own def) — combination
       atom('gen', `export function real(n: number) { return n * 2 }\n`) // own logic — basis
       const b = atomBasisScan(cwd)
@@ -96,7 +96,7 @@ describe('readme — rosetta math (is basis+fold the most efficient AND infinite
       atom('genA', `export function a(n: number) { return n * 2 }\n`) // basis
       atom('genB', `export function b(n: number) { return n + 1 }\n`) // basis
       atom('vocab') // combination (vocab-only)
-      atom('barrel', `export { x } from '../child'\n`) // combination (barrel)
+      atom('barrel', `export { x } from './child'\n`) // combination (barrel)
       const r = rosettaMath(cwd)
       expect(r.atoms).toBe(4)
       expect(r.basis).toBe(2)

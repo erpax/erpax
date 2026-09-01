@@ -11,7 +11,7 @@
 
 import type {
   AgentContext, AgentEffect, AgentId, AgentRegistry, AgentRuntime, DomainAgent, DomainEvent,
-} from '../types'
+} from '@/agent/types'
 import type { SpecChainStep } from '@/spec/generator'
 import { processEffects } from '../effect-processor'
 import { assertStrictDispatch } from '..'

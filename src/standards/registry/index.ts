@@ -18,7 +18,7 @@
  * @standard ISO/IEC-25010:2023 §5.1 functional-completeness
  */
 
-import { PORTED_STANDARDS } from './ported'
+import { PORTED_STANDARDS } from '../ported'
 import * as nodeFs from 'node:fs'
 import * as nodePath from 'node:path'
 import * as nodeCrypto from 'node:crypto'

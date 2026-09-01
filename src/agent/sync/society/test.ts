@@ -6,7 +6,7 @@ import {
   domainToErpaxEvent,
   erpaxToDomainEvent,
 } from './index'
-import type { DomainEvent } from '../../types'
+import type { DomainEvent } from '@/agent/types'
 
 const dev: DomainEvent = {
   id: 'invoice:activated',

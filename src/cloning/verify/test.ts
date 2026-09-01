@@ -3,7 +3,7 @@
  * Slice HHHHHH (TDD).
  */
 import { describe, it, expect } from 'vitest'
-import { publishSelf } from '../publish'
+import { publishSelf } from '@/cloning/publish'
 import { checkCloneIntegrity, type CloneIntegrityResult } from './index'
 
 /** Narrow the discriminated result to its failure branch for assertions. */

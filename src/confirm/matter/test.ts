@@ -3,7 +3,7 @@ import { join } from 'node:path'
 import { mkdtempSync, writeFileSync, rmSync, existsSync, readFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { resolveAction } from '@/cli/registry'
-import { BUILD_GATE_CHECKS, folderNameWarnings, touchesStandardBanner, outsideMatter, CONFIRM_CHECK_AXES } from './matter'
+import { BUILD_GATE_CHECKS, folderNameWarnings, touchesStandardBanner, outsideMatter, CONFIRM_CHECK_AXES } from './index'
 
 const ROOT = process.cwd()
 

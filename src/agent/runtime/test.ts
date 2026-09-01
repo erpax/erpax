@@ -7,8 +7,8 @@
  */
 import { describe, it, expect, vi } from 'vitest'
 import { createAgentRuntime } from './index'
-import { createAgentRegistry } from '../registry'
-import type { AgentContext, AgentEffect, DomainAgent, DomainEvent } from '../types'
+import { createAgentRegistry } from '@/agent/registry'
+import type { AgentContext, AgentEffect, DomainAgent, DomainEvent } from '@/agent/types'
 
 function mockCtx(): AgentContext {
   return {

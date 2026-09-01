@@ -8,7 +8,7 @@
  * @standard ISO-19011:2018 §6.4 audit-evidence (no duplicate identity)
  */
 import { describe, it, expect } from 'vitest'
-import { STANDARDS_REGISTRY, normalizeFamily, STANDARD_FAMILIES } from './registry'
+import { STANDARDS_REGISTRY, normalizeFamily, STANDARD_FAMILIES } from './index'
 import collectionConfig from '@/standards'
 
 // The allowed family set, DERIVED from the live collection config (not the

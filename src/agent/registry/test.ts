@@ -6,7 +6,7 @@
  */
 import { describe, it, expect } from 'vitest'
 import { createAgentRegistry } from './index'
-import type { DomainAgent } from '../types'
+import type { DomainAgent } from '@/agent/types'
 
 const finance: DomainAgent = {
   id: 'finance',

@@ -7,7 +7,7 @@
  * suite is deterministic.
  */
 import { describe, it, expect } from 'vitest'
-import { publishSelf } from '../publish'
+import { publishSelf } from '@/cloning/publish'
 import { bootFromFederation, type BootOutcome } from './index'
 
 /** Narrow the discriminated boot outcome to its failure branch for assertions. */

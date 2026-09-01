@@ -70,7 +70,7 @@ describe('rules/concentration — live corpus scan', () => {
     )
   })
 
-  // Parsed truth (AST, not regex): readme/index.ts is a clean BARREL — its big `export {…} from '../compute'`
+  // Parsed truth (AST, not regex): readme/index.ts is a clean BARREL — its big `export {…} from './compute'`
   // block is RE-EXPORTS, the hub pattern the concentration law WANTS, not inlined matter. The former regex
   // mis-counted those multi-line re-exports as inline exports and falsely ranked readme a top concentration;
   // moduleShape classifies them correctly, so readme is (rightly) not concentrated. A fast targeted check
@@ -151,7 +151,7 @@ describe('rules/concentration — the manifest, not a suggestion', () => {
 
   it('a relative specifier counts as wiring just as an alias does', () => {
     const rel = [
-      "import { readAccess } from '../access'",
+      "import { readAccess } from './access'",
       ...Array.from({ length: 220 }, (_, i) => `const field${i} = { name: 'f${i}' }`),
       'export const Thing = { access: readAccess }',
     ].join('\n')
@@ -181,8 +181,8 @@ describe('rules/concentration — the manifest, not a suggestion', () => {
 
   it('an atom that wires its children never reaches the adjacency question', () => {
     const wired = [
-      "import { x } from '../a'",
-      "import { y } from '../b'",
+      "import { x } from './a'",
+      "import { y } from './b'",
       ...Array.from({ length: 205 }, (_, i) => `const local${i} = ${i}`),
       'export const composed = { x, y }',
     ].join('\n')
@@ -211,7 +211,7 @@ describe('rules/concentration — the manifest, not a suggestion', () => {
 
   it('a carried symbol drags its OWN dependencies — the closure is transitive', () => {
     const hub = [
-      "import { helper } from '../child'",
+      "import { helper } from './child'",
       'type Inner = { readonly a: number }',
       'export interface Outer { readonly inner: Inner }',
       'export const mover = (o: Outer) => helper(o)',

@@ -61,7 +61,7 @@ src/agent/registry/test.ts:5: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/agent/research/index.ts:21: * @standard RFC 9562 §5.8 content-addressed identity (agent uuid, finding uuid)
 src/agent/runtime/index.ts:9: * @standard ISO/IEC 25010:2023 §5.4 reusability
 src/agent/runtime/test.ts:6: * @standard ISO/IEC 25010:2023 §5.5 testability
-src/agent/service.ts:20: * @standard RFC 9562 §5.8 name-based UUIDv8 (tenant-scoped content-addressed agent identity)
+src/agent/service/index.ts:20: * @standard RFC 9562 §5.8 name-based UUIDv8 (tenant-scoped content-addressed agent identity)
 src/agent/sync/chat-broadcast.ts:22: * @standard RFC 9562 §5.8 content-uuid event-identity (idempotency key)
 src/agent/sync/chat-broadcast.ts:23: * @standard ISO-27001 A.5.23 cloud-service-tenant-isolation (room per tenant)
 src/agent/sync/discovery.ts:20: * @standard W3C ActivityPub server-to-server activity-distribution (the model)
@@ -80,7 +80,7 @@ src/agent/sync/society/index.ts:22: * @standard ISO/IEC 27001 A.5.23 cloud-servi
 src/agent/sync/society/index.ts:23: * @standard RFC 9562 §5.8 content-uuid event-identity (idempotency key)
 src/agent/sync/training-broadcast.ts:19: * @standard SFIA 8 responsibility-levels (the level → M-value depth)
 src/agent/sync/training-broadcast.ts:20: * @standard ISO 30405:2016 essential-vs-desirable (mandatory gates the surface)
-src/agent/team.ts:18: * @standard RFC 9562 §5.8 content-addressed identity (agent + team uuid)
+src/agent/team/index.ts:18: * @standard RFC 9562 §5.8 content-addressed identity (agent + team uuid)
 src/agent/types/index.ts:14: * @standard ISO/IEC 25010:2023 §5.4 reusability + §5.5 testability
 src/agent/types/index.ts:15: * @standard ISO/IEC 12207 software-life-cycle (single-source-of-truth)
 src/agent/types/test.ts:9: * @standard ISO/IEC 25010:2023 §5.5 testability
@@ -776,8 +776,8 @@ src/config/types/index.ts:6: * @standard ISO-3166-1:2020 country-codes
 src/config/types/index.ts:7: * @standard ISO-4217:2015 currency-codes
 src/config/types/index.ts:8: * @standard ISO-17442-1:2020 lei
 src/config/types/index.ts:9: * @standard BCP-47 language-tag
-src/confirm/index.ts:16: * @standard ISO/IEC 25010:2023 §5.5 testability — gate decisions are pure fns + shell only where unavoidable
-src/confirm/seal-and-push.ts:17: * @standard ISO-19011:2018 audit-trail self-heal-visible-in-git-log
+src/confirm/push/index.ts:17: * @standard ISO-19011:2018 audit-trail self-heal-visible-in-git-log
+src/confirm/uuid/index.ts:16: * @standard ISO/IEC 25010:2023 §5.5 testability — gate decisions are pure fns + shell only where unavoidable
 src/connections/index.ts:20: * @standard W3C ActivityStreams 2.0 social-graph-vocabulary (Follow/Block/Like)
 src/connections/index.ts:21: * @standard W3C ActivityPub server-to-server federation (the cross-platform sync)
 src/connections/index.ts:22: * @standard OASIS UBL 2.1 business-relationship (B2B trade edges)
@@ -1212,8 +1212,7 @@ src/export/types.ts:13: * @standard ISO-8601-1:2019 date-time (asOfDate)
 src/export/types.ts:14: * @standard ISO/IEC-29500:2016 office-open-xml (xlsx)
 src/export/types.ts:15: * @standard ISO-19005-2:2011 pdf-a-2 (archival — see @/standards/iso-19005)
 src/export/types.ts:16: * @standard ISO-14289-1:2014 pdf-ua-1 (accessibility — see @/standards/iso-14289)
-src/factory/collection.test.ts:13: * @standard ISO/IEC 25010:2023 §5.5 testability — factory dedup contract
-src/factory/collection.ts:81: * @standard ISO/IEC 25010:2023 §5.4 reusability — DRY by factory
+src/factory/collection/test.ts:13: * @standard ISO/IEC 25010:2023 §5.5 testability — factory dedup contract
 src/factory/recompute-parent-aggregates.ts:23: * @standard EN-16931:2017 BT-106/109/110/112 document-totals
 src/factory/recompute-parent-aggregates.ts:24: * @standard ISA-95 IEC-62264 production-order-aggregation
 src/fair/value/measurements/index.ts:10: * @standard IFRS IFRS-13 §9 fair-value-definition
@@ -2701,10 +2700,10 @@ src/standards/index.ts:26: * @standard ISO/IEC 25010:2023 §5.1 functional-compl
 src/standards/index.ts:27: * @standard ISO 19011:2018 §6.4.6 audit-evidence (citation changes audit-trailed)
 src/standards/index.ts:28: * @standard W3C JSON-LD 1.1 (citation as live linked-data)
 src/standards/ported.ts:8: * @standard ISO-19011:2018 §6.4 audit-evidence (every entry sourced)
-src/standards/registry.test.ts:7: * @standard ISO/IEC-29119:2022 software-testing (invariant coverage)
-src/standards/registry.test.ts:8: * @standard ISO-19011:2018 §6.4 audit-evidence (no duplicate identity)
-src/standards/registry.ts:17: * @standard ISO-19011:2018 audit-evidence (a curated register of cited norms)
-src/standards/registry.ts:18: * @standard ISO/IEC-25010:2023 §5.1 functional-completeness
+src/standards/registry/index.ts:17: * @standard ISO-19011:2018 audit-evidence (a curated register of cited norms)
+src/standards/registry/index.ts:18: * @standard ISO/IEC-25010:2023 §5.1 functional-completeness
+src/standards/registry/test.ts:7: * @standard ISO/IEC-29119:2022 software-testing (invariant coverage)
+src/standards/registry/test.ts:8: * @standard ISO-19011:2018 §6.4 audit-evidence (no duplicate identity)
 src/standards/seed.ts:19: * @standard ISO-19011:2018 §6.4 audit-evidence (citingModules = the trail)
 src/standards/test.ts:2: * @standard ISO/IEC-29119:2022 software-testing
 src/sti/schema-org.ts:19: * @standard schema.org (the universal type vocabulary; Thing + subClassOf)
@@ -4405,7 +4404,6 @@ src/employees/time/entries/index.ts:11: * @accounting US-GAAP ASC-710 compensati
 src/employees/time/entries/index.ts:12: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers performance-obligation-progress
 src/en/16931/types/index.ts:16: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/en/16931/types/index.ts:17: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/factory/collection.ts:85: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/feature/registry/index.ts:30: * @accounting IFRS IFRS-15 §22 performance-obligations
 src/feature/registry/index.ts:31: * @accounting IFRS IFRS-15 §B16 usage-based-revenue
 src/financial/statements/index.ts:19: * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -5127,8 +5125,6 @@ src/ensure/unique/slug/within/tenant/index.ts:17: * @security ISO-27001 A.5.23 c
 src/ensure/unique/slug/within/tenant/index.ts:18: * @security ISO-27002 §5.15 access-control
 src/factory/auto-populate-tenant.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/factory/auto-populate-tenant.ts:8: * @security ISO-27002 § 5.15 access-control
-src/factory/collection.ts:82: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation tenant-required
-src/factory/collection.ts:83: * @security ISO-27002 §5.15 access-control role-required
 src/fair/value/measurements/index.ts:21: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/feature/registry/index.ts:28: * @security ISO-27001 A.5.15 access-control
 src/feature/registry/index.ts:29: * @security ISO-27002 §5.15 access-control feature-entitlement
@@ -5485,7 +5481,7 @@ src/agent/memory-writer.ts:27: * @audit Conservation Law 8 content-uuid
 src/agent/memory-writer.ts:28: * @audit Conservation Law 10 referential-harmony
 src/agent/sync/discovery.ts:22: * @audit Conservation Law 8 content-uuid · Law 62 coverage (each fill ↑ coverage)
 src/agent/sync/horo/index.ts:30: * @audit Conservation Law 8 content-uuid · merge (many members, one breath/dedupe)
-src/agent/team.ts:19: * @audit Conservation Law 8 content-uuid · merge set-union (no coordination)
+src/agent/team/index.ts:19: * @audit Conservation Law 8 content-uuid · merge set-union (no coordination)
 src/agent/types/index.ts:16: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
 src/agent/ui/index.ts:11: * @audit every facet computed from the atom's content-uuid; coverage read live from the matrix
 src/agents/accounting/finance.agent.ts:20: * @audit ISO-19011:2018 §6.4.6 audit-evidence
@@ -5818,9 +5814,8 @@ src/expand/index.ts:23: * @audit composed from @/entropy + @/uuid/matrix (the li
 src/expense/index.ts:14: * @audit entropy read live from @/entropy + @/tamper/import; billed as a balanced double-entry, never asserted
 src/export/standards/service.ts:27: * @audit ISO-19011:2018 audit-trail
 src/factory/auto-populate-tenant.ts:9: * @audit ISO-19011:2018 audit-trail before-validate-hooks
-src/factory/collection.test.ts:14: * @audit ISO 19011:2018 §6.4.6 — regression-guard for shared-field collision
-src/factory/collection.ts:282: * @audit ISO 19011:2018 §6.4.6 — backwards-compat path for collections
-src/factory/collection.ts:84: * @audit ISO-19011:2018 §6.4.6 audit-trail beforeValidate-tenant-populator
+src/factory/collection/base/index.ts:190: * @audit ISO 19011:2018 §6.4.6 — backwards-compat path for collections
+src/factory/collection/test.ts:14: * @audit ISO 19011:2018 §6.4.6 — regression-guard for shared-field collision
 src/factory/recompute-parent-aggregates.ts:25: * @audit ISO-19011:2018 audit-trail derived-total-provenance
 src/fair/value/measurements/index.ts:19: * @audit ISO 19011:2018 §6.4.6 audit-evidence-fair-value
 src/field/index.ts:7: * @audit Flat namespace to eliminate circular imports and duplicate definitions.

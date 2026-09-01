@@ -1,7 +1,7 @@
 import { exactAbs, exactCeil, exactFloor, exactMax, exactMin, exactMinOf, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { POSITIONS, iscoOf, positionHarmonic, type SeedPosition } from './index'
-import { PAY_BAND } from '../operations'
+import { PAY_BAND } from '@/vocabulary/manufacturing/seed/operations'
 
 describe('manufacturing/seeds/positions — the real ladder, ISCO-08 anchored from НКПД', () => {
   it('the ISCO-08 unit group is the first 4 digits of the 8-digit НКПД code', () => {

@@ -7,7 +7,7 @@
  */
 
 import type { Config } from 'src/payload-types'
-import { getCachedPayloadDocument } from '../../cache'
+import { getCachedPayloadDocument } from '@/rfc/9110/cache'
 
 type Collection = keyof Config['collections']
 

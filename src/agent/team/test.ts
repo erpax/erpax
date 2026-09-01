@@ -7,8 +7,8 @@ import { describe, it, expect } from 'vitest'
 import {
   formTeam, teamSkills, shareSkills, spawnTeam, teamCovers, mergeTeams, teamUuid,
   BASIC_TEAM_SIZES, TEAM_DISCIPLINE, isBasicTeam, basicTeams, teamGrouping,
-} from './team'
-import type { AgentDef } from './service'
+} from './index'
+import type { AgentDef } from '@/agent/service'
 
 const TENANT = 'tenant-team'
 const A: AgentDef = { name: 'a', skills: ['accounting', 'tax'], purpose: 'book' }

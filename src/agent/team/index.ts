@@ -20,7 +20,7 @@ import { exactFloor, exactMin } from '@/algebra'
  */
 import { computeContentUuid } from '@/integrity'
 import { simpson } from '@/diversity'
-import { cloneAgent, distinctAgents, type AgentDef, type ClonedAgent } from './service'
+import { cloneAgent, distinctAgents, type AgentDef, type ClonedAgent } from '@/agent/service'
 
 export interface Team {
   readonly id: string

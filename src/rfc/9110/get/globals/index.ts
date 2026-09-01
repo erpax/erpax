@@ -10,7 +10,7 @@
 import type { Config } from 'src/payload-types'
 import type { SupportedLocale } from '@/i18n/localization'
 import { defaultLocale } from '@/i18n/localization'
-import { getCachedPayloadGlobal } from '../../cache'
+import { getCachedPayloadGlobal } from '@/rfc/9110/cache'
 
 type Global = keyof Config['globals']
 

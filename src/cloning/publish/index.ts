@@ -6,7 +6,7 @@
  * @standard NIST FIPS 204 ML-DSA (when sign fn provided)
  */
 
-import { collectGenome, computeGenomeUuid, type GenomeBundle } from '../genome'
+import { collectGenome, computeGenomeUuid, type GenomeBundle } from '@/cloning/genome'
 
 export type GenomeScope = 'genome' | 'genome+state'
 

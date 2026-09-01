@@ -6,7 +6,7 @@
  */
 import { describe, it, expect, vi } from 'vitest'
 import { createAgentContext } from './index'
-import type { AgentContext, AgentEffect, AgentRuntime, DomainEvent } from '../types'
+import type { AgentContext, AgentEffect, AgentRuntime, DomainEvent } from '@/agent/types'
 
 const PAYLOAD = {} as AgentContext['payload']
 const MCP = {} as AgentContext['mcp']

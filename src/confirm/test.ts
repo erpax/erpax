@@ -1,4 +1,4 @@
-import { readFileSync } from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { describe, it, expect } from 'vitest'
 import { execSync } from 'node:child_process'
@@ -15,41 +15,20 @@ describe('confirm:uuid — substrate-independent gate stack (no Payload typegen)
     expect(pkg.scripts['erpax']).toMatch(/src\/cli\/index\.ts/)
   })
 
-  it('confirm index encodes the uuid-without-payload law', () => {
+  it('the hub holds no matter — confirm/index.ts is a barrel over its lanes', () => {
     const src = readFileSync(join(ROOT, 'src/confirm/index.ts'), 'utf8')
-    expect(src).not.toMatch(/execSync\([^)]*payload generate:types/)
-    expect(src).not.toMatch(/execSync\([^)]*payload-verify-types/)
-    expect(src).toMatch(/all is passed with uuids without payload/)
-    for (const axis of [
-      'gateAura',
-      'gateFolders',
-      'gateImports',
-      'gateTypecheck',
-      'gateReadme',
-      'gateBoundary',
-      'gateDiamond',
-      'gateCloudflareAi',
-      'gateTypography',
-    ]) {
-      expect(src).toContain(axis)
-    }
+    // A re-export names where the matter lives; a `function`/`const` here would be
+    // matter in a hub ([[rules]]/concentration), which is what this split removed.
+    expect(src).toMatch(/export \{[\s\S]*\} from '\.\/uuid'/)
+    expect(src).toMatch(/export \{[\s\S]*\} from '\.\/matter'/)
+    expect(src).not.toMatch(/^export (function|const|class) /m)
   })
 
-  it('uuidGates lists every mandated axis in source order', () => {
-    const src = readFileSync(join(ROOT, 'src/confirm/index.ts'), 'utf8')
-    const block = src.slice(src.indexOf('uuidGates'), src.indexOf('uuidConfirm'))
-    for (const axis of [
-      'gateAura',
-      'gateFolders',
-      'gateImports',
-      'gateTypecheck',
-      'gateReadme',
-      'gateBoundary',
-      'gateDiamond',
-      'gateCloudflareAi',
-      'gateTypography',
-    ]) {
-      expect(block).toContain(axis)
+  it('every lane is a child atom with its own proof beside it', () => {
+    for (const lane of ['uuid', 'matter', 'probe', 'push']) {
+      for (const leg of ['index.ts', 'test.ts', 'SKILL.md']) {
+        expect(existsSync(join(ROOT, 'src/confirm', lane, leg))).toBe(true)
+      }
     }
   })
 

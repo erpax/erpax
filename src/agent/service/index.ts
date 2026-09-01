@@ -88,4 +88,4 @@ export function distinctAgents(swarm: ReadonlyArray<AgentDef>, tenantId = ''): C
 }
 
 // The team scale — multiple agents sharing skills (the competence union).
-export * from './team'
+export * from '@/agent/team'

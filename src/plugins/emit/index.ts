@@ -64,7 +64,7 @@ export function emitClaudePlugin(cwd: string = process.cwd(), mcpUrl?: string): 
       'akashic',
       'mcp',
     ],
-    skills: '../src',
+    skills: './src',
   }
 
   const erpaxServer = {
@@ -82,7 +82,7 @@ export function emitClaudePlugin(cwd: string = process.cwd(), mcpUrl?: string): 
     plugins: [
       {
         name: 'erpax',
-        source: '../',
+        source: './',
         description: pkg.description,
         version: pkg.version,
         author: { name: 'erpax', url: repo },

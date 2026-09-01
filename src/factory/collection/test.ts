@@ -21,7 +21,7 @@ import {
   createAccountingCollection, COLLECTION_DIAMOND_KEY,
   collectionSignature, shapeCatalogue, shapeRatchetVerdict, auditCorpus, ROSETTA_BASELINE,
   deriveLifecycleEmits, foldCollectionLifecycle,
-} from './collection'
+} from './index'
 import { verifyDiamond, diamondUuid } from '@/diamond'
 import {
   notesField, auditFields, statusField, currencyField,
