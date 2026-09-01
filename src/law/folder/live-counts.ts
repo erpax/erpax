@@ -19,6 +19,7 @@ import { userWordUnprovenViolations } from '@/law/folder'
 import { indexCrossViolationCount } from './index-cross'
 import { linearGapCount, linearLogicCount } from '@/quantum'
 import { handMaintainedViolations } from '@/readme'
+import { corpusScanFold, sealedScan, sealScan } from '@/gate/receipt'
 import type { RatchetAxis } from './baseline-types'
 import { RATCHET_AXES } from './ratchet/math'
 
@@ -36,20 +37,35 @@ export const PARALLEL_SCAN_AXES = RATCHET_AXES.filter(
     axis !== 'linear-gap',
 )
 
-const LIVE_COUNTS_TTL_MS = 60_000
-let liveCountsCache: { cwd: string; expiresAt: number; counts: Readonly<Record<RatchetAxis, number>> } | null = null
+const SCAN_RECEIPT_KEY = 'live-violation-counts'
+let liveCountsCache: { cwd: string; fold: string; counts: Readonly<Record<RatchetAxis, number>> } | null = null
 
 /**
- * Live counts with a short same-process cache — the same reuse law as rulesOf's rulesCache.
- * assertRulesHold runs computeRulesOf then bypassMathViolations; before this cache the second
- * call re-ran every scan (measured 47.5s of pure duplication inside one gate run).
+ * Live counts, addressed by the CONTENT they are computed from — never by a clock.
+ *
+ * assertRulesHold runs computeRulesOf then bypassMathViolations; without reuse the second
+ * call re-ran every scan (measured 47.5s of pure duplication inside one gate run). That was
+ * first fixed with a 60-second TTL, which is wrong in BOTH directions: it served a stale
+ * verdict for a minute after an edit, and threw a valid one away at 61 seconds.
+ *
+ * The fold is the fix. Folding everything a scan can read costs 954ms against the scan's
+ * 45,950ms (measured, this tree), and SAME CONTENT means SAME COUNTS — so an unchanged
+ * corpus cites its receipt across processes, and the first byte that moves invalidates it
+ * exactly. Minting the address is free; only forging one is expensive.
  */
 export function liveViolationCounts(cwd: string = process.cwd()): Readonly<Record<RatchetAxis, number>> {
-  if (liveCountsCache && liveCountsCache.cwd === cwd && Date.now() < liveCountsCache.expiresAt) {
+  const fold = corpusScanFold(cwd)
+  if (liveCountsCache && liveCountsCache.cwd === cwd && liveCountsCache.fold === fold) {
     return liveCountsCache.counts
   }
+  const sealed = sealedScan<Record<RatchetAxis, number>>(SCAN_RECEIPT_KEY, fold, cwd)
+  if (sealed && RATCHET_AXES.every((axis) => Number.isFinite(sealed[axis]))) {
+    liveCountsCache = { cwd, fold, counts: sealed }
+    return sealed
+  }
   const counts = computeLiveViolationCounts(cwd)
-  liveCountsCache = { cwd, expiresAt: Date.now() + LIVE_COUNTS_TTL_MS, counts }
+  sealScan(SCAN_RECEIPT_KEY, fold, counts, cwd)
+  liveCountsCache = { cwd, fold, counts }
   return counts
 }
 

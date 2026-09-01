@@ -37,6 +37,24 @@ Every push failure this corpus paid had the same shape: a ~1-hour all-or-nothing
 
 **Honest boundary.** The closure covers code and schema, never DATA — integration suites share the live D1, so a verdict depending on rows another suite wrote can drift green under a standing hash. The receipts are the LOCAL incremental gate; a clean-environment full run (CI) stays the final arbiter, and forcing the full roster is one flag away whenever doubt outweighs the hour.
 
+## The same theorem, pointed at the corpus — `corpusScanFold`
+
+The 21-axis corpus scan behind every ratchet cost **45,950 ms**. Folding everything it can read costs **954 ms** — 20,933 files, 67.9 MiB, all measured on this tree. So the gate paid 48× its own answer, every run, to re-derive a verdict that had not changed.
+
+| | before | after | |
+| --- | ---: | ---: | --- |
+| `liveViolationCounts`, fresh process | 47,059 ms | **865 ms** | 54× |
+| `tsx src/rules/index.ts --check` | ~10 min | **98 s** | |
+| `tsx src/law/folder/index.ts --check` (the push gate) | ~50 s | **1–2 s** | |
+
+**What it replaced was worse than slow — it was a clock.** The previous cache was a 60-second wall-clock TTL, wrong in both directions at once: it served a stale verdict for a minute after an edit, and threw a perfectly valid one away at 61 seconds. A clock knows nothing about content. The address does.
+
+**The fold binds the path, not only the bytes.** Each file contributes `sha256(relative-path ‖ bytes)`, XOR-folded so the address is order-invariant — a `readdir` returning the same files in a different order, on a different filesystem or machine, folds to the same 128 bits. Binding the path matters because this corpus's most common edit is a **move**: 72 files changed folder in one campaign without a byte changing, and a fold over bytes alone would have called that corpus unchanged.
+
+**Why this is not an optimisation.** A gate that can be skipped is prose ([[rules]]), and a gate that costs ten minutes *is* skipped — `--no-verify` was found on every push in one session, and three working tools were found disabled. Cost is what turns a law into a suggestion. Minting the address is free and forging one is not, which is the whole economy the corpus runs on ([[uuid]]).
+
+**Honest boundary.** The fold proves the SCANNED SET is byte-identical, never that a scan is deterministic. An axis that reads the clock, the network, or a file outside `roots` can move under a standing fold — so the receipt keys a pure content scan and nothing else, and a lost or unreadable receipt only means the scan runs again. It never means a stale answer: `sealedScan` returns the verdict at THIS fold or `null`, with no notion of "old but probably fine".
+
 **Law — [[law]]: a gate verdict is content-addressed — while a suite's closure stands its green receipt stands, only what changed re-runs, and a failure names one batch instead of voiding the hour.**
 
 Composes: [[rules]]/cycle · [[merge]] · [[timeout]] · [[law]].
