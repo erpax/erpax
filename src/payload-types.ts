@@ -17815,7 +17815,7 @@ export interface Share {
 /**
  * Live registry of every cited published standard (IFRS / ISO / W3C / RFC / Directive / etc.) + per-tenant citation graph. Backs the erpax.standards.* MCP family with persistent storage. Standards-as-vortices (Law 27) + supersession trail (Law 28).
  *
- * — diamond-uuid: 7a131ad2-5900-8cb9-9dce-652a564e1cc8
+ * — diamond-uuid: 9203ce41-0657-826e-9810-6bb6781c4bcb
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "standards".
@@ -18715,7 +18715,7 @@ export interface TransferPricingFile {
 /**
  * Per-tenant override layer above the platform-default localizations. Resolution order: tenant translation > mcp-tool-metadata > code default. Edit value.<locale> via admin UI; runtime resolver picks it up automatically (Payload i18n).
  *
- * — diamond-uuid: 8c311e8e-956a-83a5-9c0b-9ef542aaff68
+ * — diamond-uuid: be2f6762-b9f4-8971-b79a-fbfedef557f2
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "translations".
