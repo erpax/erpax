@@ -2116,10 +2116,10 @@ src/payload.config.multi-tenant-admin.test.ts:9: * @standard NIST INCITS-359-201
 src/payload.config.sdk-rest.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.sdk-rest.test.ts:9: * @standard OpenAPI 3.1 api-description
 src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
-src/payload.config.ts:545:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:563:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:564:       * @standard ISO-4217:2015 currency-codes
-src/payload.config.ts:583:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
+src/payload.config.ts:558:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:576:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:577:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:596:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
 src/payment/methods/hooks/encryptSensitiveFields.ts:8: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
 src/payment/methods/index.ts:15: * @standard ISO-13616-1:2020 iban bank-account-reference
 src/payment/methods/index.ts:16: * @standard ISO-9362:2022 bic bank-routing
@@ -4731,9 +4731,9 @@ src/payable/discounts.service.ts:12: * @accounting US-GAAP ASC-705 cost-of-sales
 src/payable/index.ts:7: * @accounting US-GAAP ASC-405 liabilities
 src/payable/workflow.service.ts:10: * @accounting IFRS IAS-37 provisions-contingent-liabilities
 src/payable/workflow.service.ts:11: * @accounting US-GAAP ASC-405 liabilities
-src/payload.config.ts:543:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:544:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:565:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:556:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:557:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:578:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/period/end/adjustment/service/index.ts:24: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/period/end/adjustment/service/index.ts:25: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
 src/period/end/adjustment/service/index.ts:26: * @accounting IFRS IAS-16 property-plant-and-equipment depreciation
@@ -6061,9 +6061,9 @@ src/path/record.ts:12: * @audit pure; never silent mutation of ledger entries
 src/payable/aging.service.ts:12: * @audit ISO-19011:2018 audit-trail
 src/payable/workflow.service.ts:12: * @audit ISO-19011:2018 audit-trail state-transitions
 src/payload.config.multi-tenant-admin.test.ts:14: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:546:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:566:       * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/payload.config.ts:584:       * @audit ISO-19011:2018 §6.4 audit-evidence
+src/payload.config.ts:559:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:579:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:597:       * @audit ISO-19011:2018 §6.4 audit-evidence
 src/payload/command/index.ts:10: * @audit the command list is the installed CLI's; each uuid and the fold are computed
 src/payment/methods/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/peppol/bis/3/types/index.ts:13: * @audit ISO-19011:2018 audit-trail

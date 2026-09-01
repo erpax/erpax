@@ -115,8 +115,21 @@ const isProduction = process.env.NODE_ENV === 'production'
 // runtime with an empty / zero-entropy secret (a silent KDF-defeating fallback).
 // Build & CLI phases carry no runtime secrets, so an inert placeholder is tolerated
 // there only — it is never used for any cryptographic operation.
+//
+// A CONFIG PROBE is the same kind of phase. [[run]]/load imports this module to answer
+// one question — does the config assemble — and performs no cryptographic operation
+// with the result. Demanding a production secret to answer it makes the gate depend on
+// a credential it never uses: the release lane failed on a missing env var and read as
+// though the corpus were broken. The probe sets this marker on itself, so a served
+// request can never carry it.
+const isConfigProbe = process.env.ERPAX_CONFIG_PROBE === '1'
 const payloadSecret = resolvePayloadSecret()
-if (!payloadSecret && !isCLI && process.env.NEXT_PHASE !== PHASE_PRODUCTION_BUILD) {
+if (
+  !payloadSecret &&
+  !isCLI &&
+  !isConfigProbe &&
+  process.env.NEXT_PHASE !== PHASE_PRODUCTION_BUILD
+) {
   throw new Error(
     'PAYLOAD_SECRET is required and must not be empty. Set PAYLOAD_SECRET in .env, or seal it ' +
       '(PAYLOAD_SECRET_SEALED + ERPAX_SEAL_KEY — see src/secret/SKILL.md). Generate: openssl rand -hex 32',

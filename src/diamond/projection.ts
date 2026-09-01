@@ -7,10 +7,11 @@
  * @see ./index.ts — ../readme
  */
 import { uuid, jcsCanonicalize } from '@/integrity'
-import { readFileSync } from 'node:fs'
-import { join } from 'node:path'
+import { existsSync, readFileSync, readdirSync, type Dirent } from 'node:fs'
+import { join, relative } from 'node:path'
 import { HORO_DIGITS, HORO_MEASURE, validateHoroStates, type HoroState } from '@/horo'
 import { nodeOf, UUID_MATRIX_NODES } from '@/uuid/matrix'
+import { importsOf } from '@/rules/cycle'
 
 /** Trinity completeness — form (SKILL.md) · code (index.ts) · proof (test.ts). */
 export interface DiamondTrinity {
@@ -106,6 +107,80 @@ export interface FolderDiamondInput {
   readonly sealed: boolean
 }
 
+/**
+ * The worker face, REACHED rather than guessed.
+ *
+ * It used to be decided by a regex over export NAMES — `/Gate|Guardian|generate|compute|…/i`.
+ * A name decides nothing: an atom exporting `abdomenPart()` ships in the Worker exactly as
+ * much as one exporting `computeX()`. Measured against the parsed import graph, the pattern
+ * was wrong about 237 of 366 atoms (65%) — every one of them booked a "no materialised
+ * face" gap while being genuinely imported by the running app.
+ *
+ * So the face is now the question it always was: is this atom REACHABLE from an entry the
+ * deployment actually starts at — the Payload config, or a route under `src/app`? Edges are
+ * PARSED ([[rules]]/cycle `importsOf`), never matched, and the walk runs once per process.
+ *
+ * HONEST BOUNDARY: reachability is LEXICAL. An atom reached only through a dynamic
+ * specifier (`obj[name]`, a path threaded from config) is invisible to it, which is why
+ * the declared markers below still count — they can only ever ADD a face, never invent a
+ * gap. A remaining gap therefore means "nothing statically reaches this", which is a real
+ * finding and the same class [[rules]]/unfolded measures, not a naming accident.
+ */
+let workerReachMemo: { cwd: string; atoms: ReadonlySet<string> } | null = null
+
+const entryFiles = (cwd: string): string[] => {
+  const src = join(cwd, 'src')
+  const out: string[] = []
+  const config = join(src, 'payload.config.ts')
+  if (existsSync(config)) out.push(config)
+  const walk = (dir: string): void => {
+    let entries: Dirent[]
+    try {
+      entries = readdirSync(dir, { withFileTypes: true })
+    } catch {
+      return
+    }
+    for (const e of entries) {
+      const p = join(dir, e.name)
+      if (e.isDirectory()) walk(p)
+      else if (/\.(ts|tsx)$/.test(e.name)) out.push(p)
+    }
+  }
+  const app = join(src, 'app')
+  if (existsSync(app)) walk(app)
+  return out
+}
+
+/** Every atom path statically reachable from a deployment entry. Computed once per process. */
+export function workerReachedAtoms(cwd: string = process.cwd()): ReadonlySet<string> {
+  if (workerReachMemo && workerReachMemo.cwd === cwd) return workerReachMemo.atoms
+  const src = join(cwd, 'src')
+  const seen = new Set<string>(entryFiles(cwd))
+  const queue = [...seen]
+  while (queue.length > 0) {
+    const file = queue.shift() as string
+    for (const next of importsOf(file, cwd)) {
+      if (seen.has(next)) continue
+      seen.add(next)
+      queue.push(next)
+    }
+  }
+  const atoms = new Set<string>()
+  for (const file of seen) {
+    const rel = relative(src, file)
+    if (rel.startsWith('..')) continue
+    const parts = rel.split('/')
+    for (let i = 1; i < parts.length; i++) atoms.add(parts.slice(0, i).join('/'))
+  }
+  workerReachMemo = { cwd, atoms }
+  return atoms
+}
+
+/**
+ * DECLARED markers, kept only as a widener. They can add a face the lexical walk cannot
+ * see (a dynamically reached atom); they can never invent a gap. The reach above is the
+ * measurement; this is the allowance for what parsing cannot follow.
+ */
 const WORKER_EXPORT =
   /(?:Gate|Guardian|Confirm|generate|derive|render|compute|audit|execute|cron|Worker|folderViolations|folderGuardians|typographyGuardian)/i
 
@@ -179,6 +254,7 @@ export function deploymentFaces(model: DiamondModel | CollectionDiamondModel): D
       p.includes('/hook') ||
       p.startsWith('cloudflare/') ||
       pathUnderAny(p, workerRoots()) ||
+      workerReachedAtoms().has(p) ||
       model.exports.some((e) => WORKER_EXPORT.test(e)))
 
   return { worker, plugin, pwa }

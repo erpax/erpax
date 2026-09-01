@@ -56,12 +56,7 @@ concurrency:
 
 env:
   TAG: ${{ github.event.inputs.tag || github.ref_name }}
-  # The boot gate LOADS the Payload config, and the config refuses to build without a
-  # secret — so every lane that boots must carry one. The CI lanes have always set this
-  # test value; the release lane did not, and its boot gate failed on v1.0.1 for a
-  # missing env var rather than anything about the corpus. A gate that cannot RUN has
-  # not passed, which is exactly why it fails closed.
-  PAYLOAD_SECRET: test-secret-not-for-production-32-characters
+
 
 jobs:
   # Which release is this? Computed from the tag, once, so no job re-derives it.
@@ -113,6 +108,9 @@ jobs:
 
       - name: Self-contained gate — every imported atom is tracked
         run: node scripts/ensure-tracked-imports.mjs
+      # No secret: the probe declares its phase and the config tolerates it, because
+      # assembling a config touches nothing cryptographic. A gate must not depend on a
+      # credential it never uses.
       - name: Boot gate — the Payload config loads
         run: pnpm exec cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/run/load/index.ts
 

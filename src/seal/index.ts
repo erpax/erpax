@@ -230,6 +230,7 @@ function trinityImpurities(model: DiamondModel | CollectionDiamondModel): string
   const impurities: string[] = []
   const { trinity } = model
   if (!trinity.form) impurities.push('trinity.form missing (SKILL.md)')
+
   if (trinity.code) {
     if (!trinity.proof) impurities.push('trinity.proof missing (test.ts)')
     return impurities

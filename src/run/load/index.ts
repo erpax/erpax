@@ -88,6 +88,11 @@ export function currentLoader(): Loader {
 export async function bootVerdict(): Promise<LoadVerdict> {
   const loader = currentLoader()
   try {
+    // Declare the phase before the config reads it: this is a CONFIG PROBE, not a server.
+    // The gate asks whether the config assembles and touches no secret with the answer,
+    // so it must not require a production one — a gate that fails on a missing env var
+    // reports the corpus broken when nothing about the corpus moved.
+    process.env.ERPAX_CONFIG_PROBE = '1'
     const mod: Record<string, unknown> = await import('@payload-config')
     const d = mod.default as { then?: unknown } | undefined
     const cfg = (typeof d?.then === 'function' ? await d : d) as { collections?: unknown[] } | undefined
