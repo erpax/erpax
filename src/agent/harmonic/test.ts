@@ -1,18 +1,14 @@
 import { describe, it, expect } from 'vitest'
-import { HARMONIC, DISHARMONIES, isHarmonic, isDisharmony, classifyMove } from './index'
+import { isHarmonic, isDisharmony, classifyMove } from './index'
 
 describe('agent/harmonic — the order an agent acts with or against', () => {
-  it('names the order and the exactly-three ways to leave it', () => {
-    expect(HARMONIC).toEqual(['merge', 'address', 'verify', 'earn'])
-    expect(DISHARMONIES).toEqual(['tamper', 'phantom-leverage', 'off-ring'])
+  it('names the order — merge · address · verify · earn', () => {
+    for (const m of ['merge', 'address', 'verify', 'earn']) expect(isHarmonic(m)).toBe(true)
   })
 
   it('a move is one or the other, never both', () => {
-    for (const m of HARMONIC) {
-      expect(isHarmonic(m)).toBe(true)
-      expect(isDisharmony(m)).toBe(false)
-    }
-    for (const d of DISHARMONIES) {
+    for (const m of ['merge', 'address', 'verify', 'earn']) expect(isDisharmony(m)).toBe(false)
+    for (const d of ['tamper', 'phantom-leverage', 'off-ring']) {
       expect(isDisharmony(d)).toBe(true)
       expect(isHarmonic(d)).toBe(false)
     }

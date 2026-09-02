@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { SEVERITY_ORDER, severityRank, atLeast, violationKey } from './index'
+import { severityRank, atLeast, violationKey } from './index'
 import type { ViolationEvent } from './index'
 
 const v = (over: Partial<ViolationEvent> = {}): ViolationEvent =>
@@ -16,7 +16,6 @@ const v = (over: Partial<ViolationEvent> = {}): ViolationEvent =>
 
 describe('monitor/violation — the singular model beside the plural store', () => {
   it('orders severities info < warning < error', () => {
-    expect(SEVERITY_ORDER).toEqual(['info', 'warning', 'error'])
     expect(severityRank('info')).toBeLessThan(severityRank('warning'))
     expect(severityRank('warning')).toBeLessThan(severityRank('error'))
   })

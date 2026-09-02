@@ -9,13 +9,13 @@
  */
 import type { Disharmony } from '@/agent/harmonics'
 
-/** The order itself, stated once — merge, content-address, verify, earn. */
-export const HARMONIC = ['merge', 'address', 'verify', 'earn'] as const
+/** The order itself — module-private; `isHarmonic` is what a caller actually asks. */
+const HARMONIC = ['merge', 'address', 'verify', 'earn'] as const
 
 export type HarmonicMove = (typeof HARMONIC)[number]
 
 /** Every way to leave the order. Exactly three — each priced by [[agent]]/harmonics. */
-export const DISHARMONIES = ['tamper', 'phantom-leverage', 'off-ring'] as const satisfies readonly Disharmony[]
+const DISHARMONIES = ['tamper', 'phantom-leverage', 'off-ring'] as const satisfies readonly Disharmony[]
 
 /** Acting WITH the order: a move the harmonic names. */
 export function isHarmonic(move: string): move is HarmonicMove {

@@ -10,8 +10,13 @@
  */
 import type { ViolationEvent, ViolationSeverity, ViolationSource } from '@/monitor/violations'
 
-/** info < warning < error — declared once, instead of re-derived at each comparison. */
-export const SEVERITY_ORDER = [
+/**
+ * info < warning < error — module-private.
+ *
+ * Exporting it would publish a hand-typed value the fold never computed (matrix seal-debt),
+ * and callers do not need the list: they need the two questions below answered.
+ */
+const SEVERITY_ORDER = [
   'info',
   'warning',
   'error',
