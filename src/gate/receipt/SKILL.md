@@ -86,6 +86,13 @@ the citation stops citing: the typecheck address deliberately excludes the prose
 because a comma in a SKILL.md cannot change a type and re-running 165s for one is how a receipt
 becomes decoration.
 
+**And when every verdict cites, SETUP is the run.** Measured phase by phase from a CI job log:
+`pnpm install` 9.4s and the 330MB store restore 7.5s are the real work; `apt-get install ripgrep`
+9.2s was a binary the job never called (one consumer in the tree — [[standards]]/emit shells out to
+`rg`), and 6.3s went to writing 265 fixed bytes through an emitter that imports [[aura]] and
+[[navigation]] at module top level. Both are gone: ripgrep is opt-in, the stub has its own atom
+importing `node:fs` and nothing else. **33.5s → 20–26s.**
+
 **Where the recompute is unavoidable, parallelise it.** `test waves --shard i/n` splits the roster
 across sixteen runners, assigned by a hash of the suite PATH — never its index, which shifts every
 suite after an insertion and strands the receipts each shard has cached. Measured end to end on
