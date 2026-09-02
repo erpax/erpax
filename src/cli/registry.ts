@@ -49,7 +49,12 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     },
   },
   lint: {
-    default: { desc: 'ESLint whole repo', cmd: `${ESLINT} .` },
+    /*
+     * Everything OUTSIDE src. `lint src` covers src strictly (zero warnings, and a 64MB V8 stack
+     * the type-aware pass needs), so linting src here too was every src file read and rule-checked
+     * twice for a verdict the strict pass already gives. One file, one pass.
+     */
+    default: { desc: 'ESLint outside src (src is the strict pass)', cmd: `${ESLINT} . --ignore-pattern "src/**"` },
     src: {
       desc: 'ESLint src/**/* (zero warnings)',
       cmd: `${ESLINT_SRC} "src/**/*.{ts,tsx}" --ignore-pattern "src/migrations/*_*.ts" --max-warnings 0`,

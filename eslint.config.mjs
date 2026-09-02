@@ -145,6 +145,12 @@ const eslintConfig = defineConfig([
     '.vitepress/cache/**',
     'out/**',
     'build/**',
+    // The published @erpax/* bundles — esbuild output, the same class as .next and .open-next.
+    // Linting a built artifact is linting the compiler: the ONE error in a whole-repo pass was
+    // `react/display-name` on line 62,913 of a dist bundle. It is invisible in CI (nothing builds
+    // packages there) and red on any machine that has, which is a gate that reports on whether you
+    // happened to run a build. Generated bundles are not evidence — the corpus says so everywhere.
+    'packages/*/dist/**',
     'next-env.d.ts',
     'src/payload-types.ts',
     'src/payload-generated-schema.ts',
