@@ -2,7 +2,7 @@
  * cli — minimal operational surface: `pnpm erpax <domain> [action] [args…]`
  */
 import { runDoctor } from './doctor'
-import { runBuildGate, runLocal, runTestWaves, runTypecheckWaves } from './local'
+import { runBuildGate, runLocal, runTestWaves, runTypecheckWaves, runVerifyTypes } from './local'
 import { printHelp, printUnknownHint, suggestNearestAction } from './help'
 import { runGate, runGatePackages, runPayloadApproval, runShell } from './gate'
 import { runRulesCheck } from './rules-check'
@@ -170,6 +170,11 @@ export function runCli(argv: readonly string[]): number | Promise<number> {
   // the build is a verdict like any other — cited when its content address already built green.
   if (rawDomain === 'test' && action === 'build') {
     return runBuildGate(rest)
+  }
+
+  // verify-types is a verdict too — cited when the config already generates these types.
+  if (rawDomain === 'payload' && action === 'verify-types') {
+    return runVerifyTypes(rest)
   }
 
   // typecheck waves — quantum substrate first (FTL only in quantum); full project is wave 1.

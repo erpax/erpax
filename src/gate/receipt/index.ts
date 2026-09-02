@@ -152,6 +152,57 @@ export function buildClosureHash(cwd: string = process.cwd()): string {
   return closureHashOf(entries, cwd)
 }
 
+/**
+ * The typecheck's content address, per tsconfig project.
+ *
+ * `tsc -p x` is the third verdict on this pipeline that is a pure function of its inputs, and the
+ * last one still recomputed from scratch on every push: 202s, the critical path once the shards
+ * and the build learned to cite.
+ *
+ * The inputs are the TypeScript SOURCE under src (never the prose beside it — a SKILL.md edit
+ * cannot change a type), every tsconfig (they extend one another, so all three bind), and the
+ * dependency surface, addressed by the lockfile because that is what decides which `.d.ts` files
+ * `node_modules` holds.
+ *
+ * HONEST BOUNDARY: the lockfile stands in for thousands of dependency type files. A `node_modules`
+ * mutated without the lockfile moving — a patch applied by hand, a linked package — is invisible
+ * to this address. That is the same trade `pnpm install --frozen-lockfile` already makes, and CI
+ * installs from the lockfile every run.
+ */
+export function typecheckClosureHash(project: string, cwd: string = process.cwd()): string {
+  const parts = [
+    'project:' + project,
+    'src:' + corpusScanFold(cwd, ['src'], /\.tsx?$/),
+    ...['tsconfig.json', 'tsconfig.typecheck.json', 'tsconfig.uuid.json', 'package.json', 'pnpm-lock.yaml'].map(
+      (f) => sha(f + ' ' + fileBytes(join(cwd, f))),
+    ),
+  ]
+  return sha(parts.join('|'))
+}
+
+/**
+ * `payload verify-types` asks one question: are the COMMITTED artefacts what this config
+ * generates? Both halves are content — the config's parsed closure, and the files it is compared
+ * against — so the answer is addressable like any other.
+ *
+ * BOTH artefacts bind. The script checks `payload-types.ts` AND the admin `importMap.js`, and an
+ * address covering only the first would cite green over a stale importmap — the exact false green
+ * a citation must never produce. What the check compares is what the address folds.
+ */
+const PAYLOAD_ARTEFACTS = [
+  ['src', 'payload-types.ts'],
+  ['src', 'app', '(payload)', 'admin', 'importMap.js'],
+] as const
+
+export function payloadTypesClosureHash(cwd: string = process.cwd()): string {
+  return sha(
+    [
+      closureHashOf([join(cwd, 'src', 'payload.config.ts')], cwd),
+      ...PAYLOAD_ARTEFACTS.map((p) => sha(p.join('/') + ' ' + fileBytes(join(cwd, ...p)))),
+    ].join('|'),
+  )
+}
+
 type ReceiptStore = Record<string, string>
 
 const readReceipts = (cwd: string): ReceiptStore => {
@@ -210,6 +261,7 @@ const SCANNED = /\.(ts|tsx|md|json|mjs)$/
 export function corpusScanFold(
   cwd: string = process.cwd(),
   roots: readonly string[] = ['src'],
+  match: RegExp = SCANNED,
 ): string {
   const fold = Buffer.alloc(32)
   const walk = (dir: string): void => {
@@ -226,7 +278,7 @@ export function corpusScanFold(
         walk(p)
         continue
       }
-      if (!SCANNED.test(e.name)) continue
+      if (!match.test(e.name)) continue
       let bytes: Buffer
       try {
         bytes = readFileSync(p)

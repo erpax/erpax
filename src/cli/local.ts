@@ -19,7 +19,15 @@ import { execSync, spawnSync } from 'node:child_process'
 import { createHash } from 'node:crypto'
 import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
-import { buildClosureHash, planSuites, sealSuiteReceipt, suiteClosureHash, suiteReceiptFresh } from '@/gate/receipt'
+import {
+  buildClosureHash,
+  payloadTypesClosureHash,
+  planSuites,
+  sealSuiteReceipt,
+  suiteClosureHash,
+  suiteReceiptFresh,
+  typecheckClosureHash,
+} from '@/gate/receipt'
 import { pathWireViolations } from '@/index/cross'
 import { boundaryDigest } from '@/quantum/boundary'
 import { nonIndexImports } from '@/tamper/import'
@@ -246,6 +254,17 @@ export function runTypecheckWaves(args: readonly string[] = []): number {
   for (let i = 0; i < waves.length; i++) {
     const w = waves[i]!
     const label = `typecheck:wave:${w.label}`
+    /*
+     * A typecheck is a verdict like any other: same sources, same tsconfig, same lockfile ⇒ same
+     * answer. It was the last lane still recomputing from scratch on every push — 202s, and the
+     * critical path once the shards and the build learned to cite. Computing the address costs
+     * 437ms. `--all` voids it, as everywhere else.
+     */
+    const address = typecheckClosureHash(w.project, cwd)
+    if (!args.includes('--all') && suiteReceiptFresh(label, address, cwd)) {
+      console.log(`✓ typecheck wave ${i} — cited at ${address}: these sources already typechecked`)
+      continue
+    }
     const history = samplesMsOf(label)
     const bound = history.length ? timeoutOf(history) : { ms: 300_000, minutes: 5 as const, exceeds: false }
     console.log(`▶ typecheck wave ${i} — ${w.label} (−p ${w.project})`)
@@ -268,7 +287,8 @@ export function runTypecheckWaves(args: readonly string[] = []): number {
       return r.status ?? 1
     }
     recordSampleMs(label, Date.now() - started)
-    console.log(`✓ typecheck wave ${i} — ${w.label}`)
+    sealSuiteReceipt(label, address, cwd)
+    console.log(`✓ typecheck wave ${i} — ${w.label}, sealed at ${address}`)
   }
   console.log(`✓ typecheck waves — ${waves.length} green`)
   return 0
@@ -378,5 +398,29 @@ export function runBuildGate(args: readonly string[] = []): number {
   }
   sealSuiteReceipt(BUILD_RECEIPT, hash, cwd)
   console.log(`✓ build — green in ${Math.round((Date.now() - started) / 1000)}s, sealed at ${hash}`)
+  return 0
+}
+
+/** The verify-types receipt key — one store for every verdict on this pipeline. */
+const TYPES_RECEIPT = 'gate:payload:verify-types'
+
+/**
+ * `erpax payload verify-types` — is the COMMITTED payload-types.ts what this config generates?
+ *
+ * The question is pure: the config's parsed closure on one side, the committed file on the other.
+ * Answering it costs 54s because it regenerates the types to compare them; ASKING whether the
+ * answer can have changed costs 1s.
+ */
+export function runVerifyTypes(args: readonly string[] = []): number {
+  const cwd = process.cwd()
+  const address = payloadTypesClosureHash(cwd)
+  if (!args.includes('--all') && suiteReceiptFresh(TYPES_RECEIPT, address, cwd)) {
+    console.log(`✓ payload verify-types — cited at ${address}: this config already generates these types`)
+    return 0
+  }
+  const r = spawnSync('bash scripts/payload-verify-types.sh', { shell: true, stdio: 'inherit', cwd, env: process.env })
+  if ((r.status ?? 1) !== 0) return r.status ?? 1
+  sealSuiteReceipt(TYPES_RECEIPT, address, cwd)
+  console.log(`✓ payload verify-types — sealed at ${address}`)
   return 0
 }

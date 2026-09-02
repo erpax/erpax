@@ -45,8 +45,36 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
-      - run: pnpm erpax payload verify-types
-      - run: pnpm erpax lint typecheck
+
+      # The third and last lane that recomputed from scratch every push — 202s, and the critical
+      # path once the shards and the build learned to cite. Same store, same law: `tsc -p x` is a
+      # pure function of the TS sources, the tsconfigs and the lockfile; `verify-types` of the
+      # config's closure and the two artefacts it compares. Addresses cost 0.4s and 1s.
+      - name: Restore the typecheck receipts
+        uses: actions/cache/restore@v4
+        with:
+          path: node_modules/.cache/erpax/test-receipts.json
+          key: erpax-typecheck-${{ runner.os }}-${{ github.sha }}
+          restore-keys: |
+            erpax-typecheck-${{ runner.os }}-
+
+      # A pull request checks for real, as it does for the waves and the build.
+      - name: Types + typecheck (cite what the address already answers)
+        if: github.event_name != 'pull_request'
+        run: |
+          pnpm erpax payload verify-types
+          pnpm erpax lint typecheck
+      - name: Types + typecheck — for real (the arbiter)
+        if: github.event_name == 'pull_request'
+        run: |
+          pnpm erpax payload verify-types --all
+          pnpm erpax lint typecheck --all
+
+      - name: Seal the typecheck receipts
+        uses: actions/cache/save@v4
+        with:
+          path: node_modules/.cache/erpax/test-receipts.json
+          key: erpax-typecheck-${{ runner.os }}-${{ github.sha }}
 
   test-int:
     name: Integration Tests (shard ${{ matrix.shard }}/16)

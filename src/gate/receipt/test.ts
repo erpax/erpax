@@ -4,6 +4,8 @@ import { join } from 'node:path'
 import { describe, it, expect, afterAll } from 'vitest'
 import {
   buildClosureHash,
+  payloadTypesClosureHash,
+  typecheckClosureHash,
   suiteClosureHash,
   sealSuiteReceipt,
   suiteReceiptFresh,
@@ -172,6 +174,75 @@ describe('gate/receipt — the build is a verdict, and its address covers what c
   it('the same content is the same address — that is the whole citation', () => {
     const tmp = fixture()
     expect(buildClosureHash(tmp)).toBe(buildClosureHash(tmp))
+    rmSync(tmp, { recursive: true, force: true })
+  })
+})
+
+/*
+ * The typecheck and the types check — the last two verdicts on this pipeline that were still
+ * recomputed from scratch. A citation is only as honest as the inputs its address covers, so both
+ * are asserted to MOVE on the things that can change the answer.
+ */
+describe('gate/receipt — a typecheck is a verdict, and its address covers what tsc reads', () => {
+  const tcFixture = (): string => {
+    const tmp = mkdtempSync(join(tmpdir(), 'erpax-tc-'))
+    mkdirSync(join(tmp, 'src', 'atom'), { recursive: true })
+    writeFileSync(join(tmp, 'tsconfig.json'), '{}\n')
+    writeFileSync(join(tmp, 'package.json'), '{"name":"x"}\n')
+    writeFileSync(join(tmp, 'pnpm-lock.yaml'), "lockfileVersion: '9.0'\n")
+    writeFileSync(join(tmp, 'src', 'atom', 'index.ts'), 'export const A: number = 1\n')
+    writeFileSync(join(tmp, 'src', 'atom', 'SKILL.md'), '# atom\n')
+    return tmp
+  }
+
+  it('a source change moves it', () => {
+    const tmp = tcFixture()
+    const before = typecheckClosureHash('tsconfig.json', tmp)
+    writeFileSync(join(tmp, 'src', 'atom', 'index.ts'), 'export const A: string = "1"\n')
+    expect(typecheckClosureHash('tsconfig.json', tmp)).not.toBe(before)
+    rmSync(tmp, { recursive: true, force: true })
+  })
+
+  it('PROSE does not — a SKILL.md edit cannot change a type', () => {
+    // Folding the prose beside the code would re-run a 165s typecheck for a comma in a sentence,
+    // which is how a citation stops citing anything.
+    const tmp = tcFixture()
+    const before = typecheckClosureHash('tsconfig.json', tmp)
+    writeFileSync(join(tmp, 'src', 'atom', 'SKILL.md'), '# atom\n\nrewritten entirely.\n')
+    expect(typecheckClosureHash('tsconfig.json', tmp)).toBe(before)
+    rmSync(tmp, { recursive: true, force: true })
+  })
+
+  it('the lockfile moves it — it decides which .d.ts node_modules holds', () => {
+    const tmp = tcFixture()
+    const before = typecheckClosureHash('tsconfig.json', tmp)
+    writeFileSync(join(tmp, 'pnpm-lock.yaml'), "lockfileVersion: '9.0'\npackages:\n  x: {}\n")
+    expect(typecheckClosureHash('tsconfig.json', tmp)).not.toBe(before)
+    rmSync(tmp, { recursive: true, force: true })
+  })
+
+  it('two PROJECTS over one tree are two verdicts, never one', () => {
+    const tmp = tcFixture()
+    expect(typecheckClosureHash('tsconfig.json', tmp)).not.toBe(
+      typecheckClosureHash('tsconfig.uuid.json', tmp),
+    )
+    rmSync(tmp, { recursive: true, force: true })
+  })
+
+  it('BOTH payload artefacts bind — an address covering one would cite green over a stale other', () => {
+    const tmp = mkdtempSync(join(tmpdir(), 'erpax-pt-'))
+    mkdirSync(join(tmp, 'src', 'app', '(payload)', 'admin'), { recursive: true })
+    writeFileSync(join(tmp, 'src', 'payload.config.ts'), 'export default {}\n')
+    writeFileSync(join(tmp, 'src', 'payload-types.ts'), 'export type A = 1\n')
+    writeFileSync(join(tmp, 'src', 'app', '(payload)', 'admin', 'importMap.js'), 'export const importMap = {}\n')
+
+    const base = payloadTypesClosureHash(tmp)
+    writeFileSync(join(tmp, 'src', 'payload-types.ts'), 'export type A = 2\n')
+    const afterTypes = payloadTypesClosureHash(tmp)
+    expect(afterTypes).not.toBe(base)
+
+    writeFileSync(join(tmp, 'src', 'app', '(payload)', 'admin', 'importMap.js'), 'export const importMap = { a: 1 }\n')
+    expect(payloadTypesClosureHash(tmp)).not.toBe(afterTypes)
     rmSync(tmp, { recursive: true, force: true })
   })
 })
