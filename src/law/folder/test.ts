@@ -1,4 +1,4 @@
-import { existsSync } from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { describe, it, expect } from 'vitest'
 import {
@@ -12,6 +12,7 @@ import {
   alphanumericFileStem,
   isAlphanumericStem,
 } from '@/law/folder'
+import { isPinnedBarrel } from './index-cross'
 
 // The folder-shape law (./index.ts), computed from the live tree. The ratchet
 // decision is pure (no fs / process), so it is regression-locked here; the live
@@ -120,5 +121,34 @@ describe('folder: the folder-shape law (computed)', () => {
     console.log(
       `alphanumeric-name: ${alpha.length} (≤${computedBaseline('alphanumeric-name')}) — ${alpha.filter((a) => a.kind === 'folder').length} folder · ${alpha.filter((a) => a.kind === 'file').length} file`,
     )
+  })
+})
+
+/*
+ * index-cross wires barrels — and until now it had no proof of its own, which is how it
+ * appended `export * from './wire'` to the one barrel whose test says it must not, and
+ * reddened CI twice. The refusal is computed from the sibling proof's grammar, so it
+ * cannot go stale the way a hand-kept list does.
+ */
+describe('index-cross: a barrel whose OWN proof pins its face is refused', () => {
+  const root = join(import.meta.dirname, '..', '..')
+
+  it('reads the pin from the proof, not from a list', () => {
+    expect(isPinnedBarrel(join(root, 'skill'))).toBe(true)
+  })
+
+  it('a folder with no proof at all is not pinned', () => {
+    expect(isPinnedBarrel(join(root, 'law', 'folder', 'nothing-lives-here'))).toBe(false)
+  })
+
+  it('a proof that pins nothing leaves its barrel wireable', () => {
+    // This very file asserts plenty, and none of it is an array of './…' specifiers —
+    // so law/folder is NOT pinned, and the wiring pass may still widen it.
+    expect(isPinnedBarrel(join(root, 'law', 'folder'))).toBe(false)
+  })
+
+  it('the skill barrel is still narrow — the regression this refusal exists for', () => {
+    const barrel = readFileSync(join(root, 'skill', 'index.ts'), 'utf8')
+    expect(barrel).not.toMatch(/from '\.\/wire'/)
   })
 })

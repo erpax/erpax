@@ -5,6 +5,7 @@ import { exactMax } from '@/algebra'
  * @see ./SKILL.md — ../../path/merge — ../../tamper/import — ../../quantum/fold
  */
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs'
+import ts from 'typescript'
 import { join } from 'node:path'
 import { nonIndexImports, resolveBarrel, type ImportViolation } from '@/tamper/import'
 import { exportedNames } from '@/rules/face'
@@ -613,6 +614,58 @@ const childFaceFile = (dir: string, target: string): string => {
   return existsSync(asAtom) ? asAtom : join(dir, `${target}.ts`)
 }
 
+/**
+ * A barrel whose OWN PROOF pins its face may not be widened — the test states the law.
+ *
+ * `src/skill/test.ts` asserts the barrel re-exports `./frontmatter` and nothing else, and
+ * says why: `skill/router/skills.index.ts` is a ~77MB generated bundle, so a barrel that
+ * reached it would cost every importer the whole corpus. A wiring pass that appends an
+ * `export *` there does not widen a face — it BREAKS a proof, and it did: two red CI runs
+ * on `expected [ './frontmatter', './wire' ] to deeply equal [ './frontmatter' ]`.
+ *
+ * COMPUTED, never declared. The pin is read from the sibling proof's GRAMMAR — a
+ * `toEqual`/`toStrictEqual` over an array literal of `./…` specifiers — so a barrel earns
+ * protection by writing its proof, not by being added to a list somebody maintains. A
+ * regex over TypeScript is a guess ([[rules]]/cycle); this parses.
+ *
+ * HONEST BOUNDARY: it proves a proof pins A specifier list, never that the list is the
+ * BARREL's own — a test pinning some other module's specifiers protects this folder too.
+ * That errs toward refusing, which is the safe direction for a tool that writes bytes.
+ */
+export function isPinnedBarrel(dir: string): boolean {
+  const proof = join(dir, 'test.ts')
+  if (!existsSync(proof)) return false
+  let source: ts.SourceFile
+  try {
+    source = ts.createSourceFile(proof, readFileSync(proof, 'utf8'), ts.ScriptTarget.Latest, true)
+  } catch {
+    return false
+  }
+  let pinned = false
+  const visit = (node: ts.Node): void => {
+    if (pinned) return
+    if (
+      ts.isCallExpression(node) &&
+      ts.isPropertyAccessExpression(node.expression) &&
+      /^(toEqual|toStrictEqual)$/.test(node.expression.name.text) &&
+      node.arguments.length === 1
+    ) {
+      const arg = node.arguments[0]
+      if (
+        ts.isArrayLiteralExpression(arg) &&
+        arg.elements.length > 0 &&
+        arg.elements.every((e) => ts.isStringLiteral(e) && e.text.startsWith('./'))
+      ) {
+        pinned = true
+        return
+      }
+    }
+    ts.forEachChild(node, visit)
+  }
+  visit(source)
+  return pinned
+}
+
 const appendReexport = (
   indexContent: string,
   target: string,
@@ -623,6 +676,7 @@ const appendReexport = (
   protectedIndexes?: ReadonlySet<string>,
 ): string => {
   if (protectedIndexes?.has(`${SRC}/${atomPath}/index.ts`)) return indexContent
+  if (isPinnedBarrel(dir)) return indexContent
   if (indexContent.includes(`'./${target}'`)) return indexContent
   const file = childFaceFile(dir, target)
   if (!existsSync(file)) return indexContent
