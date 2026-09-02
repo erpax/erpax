@@ -11,7 +11,7 @@
  *
  * @standard BG Наредба-Н-18 §СУПТО operator-nomenclature УНП-second-segment
  * @audit ISO-19011:2018 audit-trail
- * @see src/sale/unp-sequence.ts · src/collections/Operators/index.ts
+ * @see src/sale/unp-sequence.ts · src/operators/index.ts
  */
 
 import type { CollectionBeforeChangeHook } from 'payload'

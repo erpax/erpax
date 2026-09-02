@@ -88,7 +88,7 @@ These are **two profiles over one export engine**, not one file: different legal
 
 ### Version-attribution corrections (must be true in `@standard` banners)
 - **SAF-T is not Наредба Н-18.** It is the ДОПК/TSSPC instrument (DV 26 / 27.03.2025) with its own scope, timeline and schema. The canonical standard string is **"BG Наредба Н-18 / СУПТО (Приложение 38) + ДОПК SAF-T"**, modelled as two standards.
-- **Bulgaria's SAF-T is the НАП national variant, not generic OECD.** Drop the "OECD SAF-T 2.0" annotation in `src/standards/saf-t` and `src/services/*`; BG SAF-T is **XSD 1.0.2**. (For reference: OECD SAF-T is v2.0; there is **no SAF-T 3.0.2** — the `SAF-T:3.0.2` tags in `src/hooks/*`, `src/services/*`, `src/standards/*` such as `validateAuditComplianceReporting` and `FiscalPeriods` cite a non-existent version and must be corrected to BG **1.0.2**.)
+- **Bulgaria's SAF-T is the НАП national variant, not generic OECD.** Drop the "OECD SAF-T 2.0" annotation in `src/saf/t` and `src/services/*`; BG SAF-T is **XSD 1.0.2**. (For reference: OECD SAF-T is v2.0; there is **no SAF-T 3.0.2** — the `SAF-T:3.0.2` tags in `src/hooks/*`, `src/services/*`, `src/standards/*` such as `validateAuditComplianceReporting` and `FiscalPeriods` cite a non-existent version and must be corrected to BG **1.0.2**.)
 - **Приложение-38 ≠ SAF-T.** Do not equate "the monthly standardized audit (XML, Приложение 38)" with "SAF-T / `submitBgSaft`" — they are different files, cadences and legal triggers.
 - **Pin the Naredba edition.** Cite **"Наредба № Н-18/2006, as amended (latest 2023–2024)"**, never the bare title, so a reader knows which amendment level the banners assert.
 

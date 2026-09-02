@@ -7,7 +7,7 @@
  *
  * @standard BG Наредба-Н-18 §СУПТО sale-lifecycle
  * @audit ISO-19011:2018 audit-trail event-driven
- * @see .claude/skills/event/SKILL.md · src/hooks/chainEventEmitters.ts
+ * @see .claude/skills/event/SKILL.md · src/chain/event/emitter/index.ts
  */
 
 import type { CollectionAfterChangeHook } from 'payload'

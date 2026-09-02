@@ -12,7 +12,7 @@
  *
  * @standard BG Наредба-Н-18 §СУПТО fiscal-device-register · operator-nomenclature
  * @audit ISO-19011:2018 audit-trail
- * @see src/collections/FiscalDevices/index.ts · src/collections/Operators/index.ts
+ * @see src/fiscal/devices/index.ts · src/operators/index.ts
  */
 
 import type { CollectionBeforeChangeHook, PayloadRequest } from 'payload'

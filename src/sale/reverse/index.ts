@@ -11,7 +11,7 @@
  *
  * @standard BG Наредба-Н-18 §СУПТО сторно reversal-preserves-original
  * @audit ISO-19011:2018 audit-trail
- * @see .claude/skills/reverse/SKILL.md · src/sale/sale-immutability.ts
+ * @see .claude/skills/reverse/SKILL.md · src/sale/immutability/index.ts
  */
 
 import type { Payload, PayloadRequest } from 'payload'

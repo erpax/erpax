@@ -15,7 +15,7 @@
  *
  * @standard BG Наредба-Н-18 §Приложение-1 fiscal-device-tax-groups данъчни-групи
  * @standard EU 2006/112/EC vat-system-directive (rate bands)
- * @see src/country/client/bg-vat.ts (the rate registry) · src/sale/fiscal-receipt.ts
+ * @see src/country/client/bg-vat.ts (the rate registry) · src/sale/fiscal/receipt/index.ts
  */
 
 /** The Наредба Н-18 fiscal tax-group letters used by erpax. */

@@ -52,8 +52,8 @@ Both are instances of the ISO-7064 check-character family — the same modulo sk
 **0** — the begin/origin of the [[sequence]] (0·3·6·9·1·2·4·8·7·5). It is the [[begin|boundary]] every BG flow departs from: the validation gate at the axis, before any [[accounting]] post or [[collections|collection]] row. No identity, no entry; the 0 is where the [[horo]] of BG society joins.
 
 ## Built (the matter that realises this skill)
-- `src/services/bg-identifiers/index.ts` — `validateEgn` (returns `{valid, birthDate, sex, reason}`) and `validateEik` (`{valid, reason}`); the БУЛСТАТ two-stage `mod11Two` helper. 81 LOC, pure.
-- `src/services/bg-identifiers/index.test.ts` — known-good vectors (ЕГН `7501010010`, ЕИК `121212121`), the +40 month offset, corrupted-checksum and bad-date rejection, the 13-digit branch.
+- `src/bg/identifier/index.ts` — `validateEgn` (returns `{valid, birthDate, sex, reason}`) and `validateEik` (`{valid, reason}`); the БУЛСТАТ two-stage `mod11Two` helper. 81 LOC, pure.
+- `src/bg/identifier/index.test.ts` — known-good vectors (ЕГН `7501010010`, ЕИК `121212121`), the +40 month offset, corrupted-checksum and bad-date rejection, the 13-digit branch.
 
 ## Where it binds
 A [[field|field]] `validate` (or onboarding [[hooks|hook]]) calls `validateEgn`/`validateEik` to gate party creation; decoded birth date + sex can populate sibling fields. The БУЛСТАТ-region naming stays out of generic slugs — the regulation reference lives here and in the `@standard` banners, never in a collection slug.
