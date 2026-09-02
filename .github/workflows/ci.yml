@@ -173,5 +173,30 @@ jobs:
           restore-keys: |
             erpax-next-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-
             erpax-next-${{ runner.os }}-
+
+      # And the layer above it: the BUILD ITSELF is a verdict. In CI this job is a gate — the
+      # .next output is discarded and cloudflare.yml runs its own OpenNext build — so a green
+      # build seals a receipt against its content address, and the same address is a lookup.
+      # 345 of this run's 420 seconds were here; computing the address costs 1.2s.
+      - name: Restore the build receipt
+        uses: actions/cache/restore@v4
+        with:
+          path: node_modules/.cache/erpax/test-receipts.json
+          key: erpax-build-receipt-${{ runner.os }}-${{ github.sha }}
+          restore-keys: |
+            erpax-build-receipt-${{ runner.os }}-
+
       # Skip typegen/importmap/sitemap — committed + verified above; matches OpenNext buildCommand.
-      - run: pnpm build:next
+      # A pull request builds for real: it is the arbiter, as it is for the waves.
+      - name: Build (cite what the address already answers)
+        if: github.event_name != 'pull_request'
+        run: pnpm erpax test build
+      - name: Build — for real (the arbiter)
+        if: github.event_name == 'pull_request'
+        run: pnpm erpax test build --all
+
+      - name: Seal the build receipt
+        uses: actions/cache/save@v4
+        with:
+          path: node_modules/.cache/erpax/test-receipts.json
+          key: erpax-build-receipt-${{ runner.os }}-${{ github.sha }}

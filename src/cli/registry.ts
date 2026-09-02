@@ -70,6 +70,7 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     default: { desc: 'Vitest integration (waves / receipts)', cmd: VITEST },
     int: { desc: 'Vitest integration (waves / receipts)', cmd: VITEST },
     waves: { desc: 'Vitest integration in receipt-split batches', cmd: '__test_waves__' },
+    build: { desc: 'Production build as a CITED verdict (receipt-addressed)', cmd: '__build_gate__' },
     fast: {
       desc: 'Vitest integration (skip migrate)',
       cmd: 'cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs" PAYLOAD_TEST_SKIP_MIGRATE=1 vitest run --config ./vitest.config.mts',

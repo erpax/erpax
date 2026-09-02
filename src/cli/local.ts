@@ -19,7 +19,7 @@ import { execSync, spawnSync } from 'node:child_process'
 import { createHash } from 'node:crypto'
 import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
-import { planSuites, sealSuiteReceipt, suiteClosureHash } from '@/gate/receipt'
+import { buildClosureHash, planSuites, sealSuiteReceipt, suiteClosureHash, suiteReceiptFresh } from '@/gate/receipt'
 import { pathWireViolations } from '@/index/cross'
 import { boundaryDigest } from '@/quantum/boundary'
 import { nonIndexImports } from '@/tamper/import'
@@ -339,4 +339,44 @@ export function runLocal(): number {
   }
   console.log(`${allOk ? '✓' : '✗'} local — ring ${ring.join('→')}→${allOk ? '1' : '0'} · ${total}ms total`)
   return allOk ? 0 : 1
+}
+
+/** The build receipt's key in the same store the suites use — one store, one theorem. */
+const BUILD_RECEIPT = 'gate:build:next'
+
+/**
+ * `erpax test build` — the production build as a CITED verdict.
+ *
+ * `next build` is the only thing left on this run's critical path: 345 of 420 seconds, while
+ * sixteen sharded test lanes finished in two. And in CI it is a GATE, not an artifact — the
+ * `.next` output is discarded and the deploy runs its own OpenNext build. A gate's verdict is
+ * a function of its inputs, which is the same sentence the suite receipts are built on, so it
+ * gets the same treatment and the same store rather than a second mechanism beside the first.
+ *
+ * Computing the address costs 1.2s against a 345s build.
+ *
+ * `--all` voids the receipt, exactly as it does for the waves.
+ */
+export function runBuildGate(args: readonly string[] = []): number {
+  const cwd = process.cwd()
+  const hash = buildClosureHash(cwd)
+  if (!args.includes('--all') && suiteReceiptFresh(BUILD_RECEIPT, hash, cwd)) {
+    console.log(`✓ build — cited at ${hash}: this exact content already built green`)
+    return 0
+  }
+  console.log(`build — ${hash} is not sealed; compiling`)
+  const started = Date.now()
+  const r = spawnSync('pnpm build:next', {
+    shell: true,
+    stdio: 'inherit',
+    cwd,
+    env: process.env,
+  })
+  if ((r.status ?? 1) !== 0) {
+    console.error(`✗ build — RED at ${hash}; nothing sealed`)
+    return r.status ?? 1
+  }
+  sealSuiteReceipt(BUILD_RECEIPT, hash, cwd)
+  console.log(`✓ build — green in ${Math.round((Date.now() - started) / 1000)}s, sealed at ${hash}`)
+  return 0
 }

@@ -2,7 +2,7 @@
  * cli — minimal operational surface: `pnpm erpax <domain> [action] [args…]`
  */
 import { runDoctor } from './doctor'
-import { runLocal, runTestWaves, runTypecheckWaves } from './local'
+import { runBuildGate, runLocal, runTestWaves, runTypecheckWaves } from './local'
 import { printHelp, printUnknownHint, suggestNearestAction } from './help'
 import { runGate, runGatePackages, runPayloadApproval, runShell } from './gate'
 import { runRulesCheck } from './rules-check'
@@ -165,6 +165,11 @@ export function runCli(argv: readonly string[]): number | Promise<number> {
   // int / bare / waves: receipt-split batches bound themselves (never the 5-min shell rung).
   if (rawDomain === 'test' && (!action || action === 'waves' || action === 'int')) {
     return runTestWaves(rest)
+  }
+
+  // the build is a verdict like any other — cited when its content address already built green.
+  if (rawDomain === 'test' && action === 'build') {
+    return runBuildGate(rest)
   }
 
   // typecheck waves — quantum substrate first (FTL only in quantum); full project is wave 1.

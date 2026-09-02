@@ -3,6 +3,7 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { describe, it, expect, afterAll } from 'vitest'
 import {
+  buildClosureHash,
   suiteClosureHash,
   sealSuiteReceipt,
   suiteReceiptFresh,
@@ -121,6 +122,56 @@ describe('gate/receipt — a verdict is portable or it is not an address', () =>
     writeFileSync(join(tmp, 'src', 'migrations', '001.ts'), 'export const up = 2\n')
     expect(suiteClosureHash('src/atom/test.ts', tmp)).not.toBe(before)
 
+    rmSync(tmp, { recursive: true, force: true })
+  })
+})
+
+/*
+ * The build gate's address is where a false GREEN could live: cite a build that would actually
+ * fail, and the lane reports OK over a broken compile. So the input set errs WIDE, and the two
+ * claims it rests on are asserted here rather than assumed.
+ */
+describe('gate/receipt — the build is a verdict, and its address covers what compiles', () => {
+  const fixture = (): string => {
+    const tmp = mkdtempSync(join(tmpdir(), 'erpax-build-'))
+    mkdirSync(join(tmp, 'src', 'app', 'page'), { recursive: true })
+    writeFileSync(join(tmp, 'next.config.ts'), 'export default {}\n')
+    writeFileSync(join(tmp, 'package.json'), '{"name":"x"}\n')
+    writeFileSync(join(tmp, 'src', 'app', 'page', 'page.tsx'), "import './style.css'\nexport default () => null\n")
+    writeFileSync(join(tmp, 'src', 'app', 'page', 'style.css'), '.a { color: red }\n')
+    return tmp
+  }
+
+  it('a route module moves the address', () => {
+    const tmp = fixture()
+    const before = buildClosureHash(tmp)
+    writeFileSync(join(tmp, 'src', 'app', 'page', 'page.tsx'), "import './style.css'\nexport default () => 1\n")
+    expect(buildClosureHash(tmp)).not.toBe(before)
+    rmSync(tmp, { recursive: true, force: true })
+  })
+
+  it('CSS IS IN THE ADDRESS — a stylesheet compiles, and the TS resolver cannot see it', () => {
+    // `import './style.css'` resolves in TS extensions, so the parsed walk never reaches the
+    // stylesheet. Folding src/**/*.css wholesale is what stops a broken stylesheet from being
+    // cited green.
+    const tmp = fixture()
+    const before = buildClosureHash(tmp)
+    writeFileSync(join(tmp, 'src', 'app', 'page', 'style.css'), '.a { color: blue }\n')
+    expect(buildClosureHash(tmp)).not.toBe(before)
+    rmSync(tmp, { recursive: true, force: true })
+  })
+
+  it('root config moves it — a build reads these whatever the route graph looks like', () => {
+    const tmp = fixture()
+    const before = buildClosureHash(tmp)
+    writeFileSync(join(tmp, 'next.config.ts'), 'export default { reactStrictMode: true }\n')
+    expect(buildClosureHash(tmp)).not.toBe(before)
+    rmSync(tmp, { recursive: true, force: true })
+  })
+
+  it('the same content is the same address — that is the whole citation', () => {
+    const tmp = fixture()
+    expect(buildClosureHash(tmp)).toBe(buildClosureHash(tmp))
     rmSync(tmp, { recursive: true, force: true })
   })
 })
