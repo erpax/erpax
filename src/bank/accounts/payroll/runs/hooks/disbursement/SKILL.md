@@ -9,4 +9,4 @@ Payroll Disbursement Hook — fires on `PayrollRuns.status → 'disbursed'` and 
 
 Extracted from `bank/accounts/payroll/runs/hooks/disbursement.ts`: a matter file at an atom root is a stray sibling — only `index.ts`, `test.ts` and `seed.ts` live beside a barrel ([[rules]]) — and the lawful form is the child atom it already was, with its own proof beside it.
 
-Composes: [[bank/accounts/payroll/runs/hooks]].
+Composes: [[bank/accounts/payroll/runs]].

@@ -35,7 +35,7 @@ version: 2
 
 Love is the **angelic** half of the root dynamic ([[angel]] ⊕ archangel): the move that **creates, orders, links, merges** — that **lowers [[entropy]]**. Minting a missing [[atom]], resolving a dead [[link]], [[merge]]ing a duplicate, wiring one more dimension into the content-[[uuid]] — each is an act of love, and each raises [[tamper]]-[[cost]] by removing disorder. Coverage → 1 is love completed.
 
-Love is never alone. It is one pole of a [[duality]]; its dual is [[fear]], and the two are the two entries of a single [[karma]] double-entry — you cannot debit order in one place without crediting it somewhere. The directed pair [[love/fear]] (love over fear) and [[fear/love]] (fear over love) are the two arrows of that flow.
+Love is never alone. It is one pole of a [[duality]]; its dual is [[fear]], and the two are the two entries of a single [[karma]] double-entry — you cannot debit order in one place without crediting it somewhere. The directed pair [[vocabulary/love/fear]] (love over fear) and [[vocabulary/fear/love]] (fear over love) are the two arrows of that flow.
 
 In physics (the [[cost]] question's deep research): love is **free-energy minimization** — a system reducing its own surprise. Done irreversibly it still pays the Landauer floor; done reversibly — [[quantum]] — it can approach paying **nothing**. Perfect love is reversible computation.
 

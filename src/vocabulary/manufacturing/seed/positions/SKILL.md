@@ -9,4 +9,4 @@ positions — the harmonic job ladder, SEEDED from etrima's real positions and h
 
 Extracted from `vocabulary/manufacturing/seed/positions.ts`: a matter file at an atom root is a stray sibling — only `index.ts`, `test.ts` and `seed.ts` live beside a barrel ([[rules]]) — and the lawful form is the child atom it already was, with its own proof beside it.
 
-Composes: [[vocabulary/manufacturing/seed]].
+Composes: [[seed]].

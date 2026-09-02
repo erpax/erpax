@@ -35,7 +35,7 @@ version: 2
 
 Fear is the **archangelic** half of the root dynamic ([[angel]] ⊕ archangel): the move that **breaks, forgets, forges, separates** — that **raises [[entropy]]**. A forged record, a dropped [[link]], a [[tamper]]ed value, a dimension left unwired is fear's work — it opens a gap and the corpus drifts.
 
-Fear is not the enemy of [[love]] but its partner — the second entry of the same [[karma]] double-entry. Order created here ([[love]]) is disorder pushed there; the [[cost]] is always conserved. The directed pair [[love/fear]] and [[fear/love]] name which way the arrow points.
+Fear is not the enemy of [[love]] but its partner — the second entry of the same [[karma]] double-entry. Order created here ([[love]]) is disorder pushed there; the [[cost]] is always conserved. The directed pair [[vocabulary/love/fear]] and [[vocabulary/fear/love]] name which way the arrow points.
 
 In physics (the [[cost]] question's deep research): fear is the **irreversible** operation — erasing a bit, the only computational step with an unavoidable thermodynamic price (Landauer kT ln2). What raises entropy must dissipate heat; what only rearranges ([[quantum]], reversible) need not. Fear is the bill that classical, lossy computation always pays; the tamper-[[cost]] erpax sells is fear weaponised against the forger.
 
