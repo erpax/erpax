@@ -1,15 +1,15 @@
 {
   "@erpax/access": {
-    "version": "0.1.6",
-    "contentUuid": "54b16c65-4b37-881f-80d4-04e0b66178f2"
+    "version": "0.1.7",
+    "contentUuid": "b759699d-a161-855b-ba8e-552350eee297"
   },
   "@erpax/accounting": {
-    "version": "0.1.4",
-    "contentUuid": "7140382b-4020-8daa-9012-3587ef606685"
+    "version": "0.1.5",
+    "contentUuid": "26510c9c-7758-8a30-acc3-b63e4b063ee5"
   },
   "@erpax/cloudflare": {
-    "version": "0.1.9",
-    "contentUuid": "78832b4c-8c19-8775-8e2f-299c7607153e"
+    "version": "0.1.10",
+    "contentUuid": "5721e03f-f85e-8d99-b46e-3bac31b08c02"
   },
   "@erpax/commerce": {
     "version": "0.1.0",
@@ -20,7 +20,7 @@
     "contentUuid": "5191cd11-70af-87be-a966-e81c1256778b"
   },
   "@erpax/identity": {
-    "version": "0.1.5",
-    "contentUuid": "9d2de168-7b8f-8877-9dc2-29037e1e065f"
+    "version": "0.1.6",
+    "contentUuid": "aac0caae-d356-8847-b5a9-a421c208a1ae"
   }
 }

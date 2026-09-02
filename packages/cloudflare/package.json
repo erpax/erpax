@@ -1,6 +1,6 @@
 {
   "name": "@erpax/cloudflare",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "erpax cloudflare — sequence 7·5 (surface): edge runtime, bindings, agents/MCP, deploy. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",

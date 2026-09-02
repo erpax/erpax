@@ -1,6 +1,6 @@
 {
   "name": "@erpax/access",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "erpax access — sequence 3·9 (control): RBAC, multi-tenancy, auth — the control plane. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",
