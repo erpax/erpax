@@ -4,6 +4,7 @@ import { join } from 'node:path'
 import { GATE_LANES } from './gate'
 import { CLI_REGISTRY, LEGACY_ALIASES, AURA_SCAN_PATH, resolveAction } from './registry'
 import { suggestNearestDomain, printHelp, DOMAIN_GROUPS } from './help'
+import { shardIndexOf } from './local'
 import { collectDoctorReport, formatDoctorReport, runDoctorStalls } from './doctor'
 import { topFailedAxes, AXIS_FIX_HINTS, formatRulesFailureSummary } from './rules-check'
 import { runCli } from './index'
@@ -167,5 +168,45 @@ describe('package.json — minimal scripts', () => {
   it('aura scan canonical path is stable', () => {
     expect(AURA_SCAN_PATH).toBe('src/aura/scan.mjs')
     expect(resolveAction('aura', 'scan')?.cmd).toContain(AURA_SCAN_PATH)
+  })
+})
+
+/*
+ * The shard is a PARTITION or it is a lottery: a suite in two shards is billed twice, and a
+ * suite in none is a green nobody ran — the default-ALLOW that [[rules]]/unraised names, at
+ * the scale of a whole test lane.
+ */
+describe('test waves --shard — the roster is partitioned BY ADDRESS', () => {
+  const roster = Array.from({ length: 400 }, (_, i) => `src/atom${i}/nested${i % 7}/test.ts`)
+
+  it('every suite lands in exactly one shard', () => {
+    for (const n of [1, 4, 16]) {
+      const seen = new Map<string, number>()
+      for (const s of roster) {
+        const i = shardIndexOf(s, n)
+        expect(i).toBeGreaterThanOrEqual(1)
+        expect(i).toBeLessThanOrEqual(n)
+        seen.set(s, (seen.get(s) ?? 0) + 1)
+      }
+      expect([...seen.values()].every((c) => c === 1)).toBe(true)
+      expect(seen.size).toBe(roster.length)
+    }
+  })
+
+  it('the address decides, so an inserted neighbour moves nobody', () => {
+    // An INDEX-based shard shifts every suite after an insertion, stranding the receipts each
+    // shard has cached. This is the whole reason the assignment is a hash of the path.
+    const before = new Map(roster.map((s) => [s, shardIndexOf(s, 16)]))
+    const withNewSuite = ['src/aaa/brand/new/test.ts', ...roster].sort()
+    for (const s of withNewSuite) {
+      if (before.has(s)) expect(shardIndexOf(s, 16)).toBe(before.get(s))
+    }
+  })
+
+  it('spreads the roster — no shard carries a third of it', () => {
+    const counts = new Array(16).fill(0)
+    for (const s of roster) counts[shardIndexOf(s, 16) - 1]!++
+    expect(Math.max(...counts)).toBeLessThan(roster.length / 3)
+    expect(Math.min(...counts)).toBeGreaterThan(0)
   })
 })

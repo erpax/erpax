@@ -49,8 +49,22 @@ jobs:
       - run: pnpm erpax lint typecheck
 
   test-int:
-    name: Integration Tests
+    name: Integration Tests (shard ${{ matrix.shard }}/16)
     runs-on: ubuntu-latest
+    strategy:
+      # RECOMPUTING IS SOMETIMES UNAVOIDABLE; RECOMPUTING SERIALLY IS NOT.
+      #
+      # Receipts answer the steady state — a push that changes three atoms cites the rest.
+      # They cannot help a first run, a pull request, or a change to something everything
+      # imports, and that case ran 1,824 suites on ONE runner: 56 min, 123 min, twice killed
+      # at the cap. Sixteen runners carry ~114 suites each, ~12 batches instead of 152.
+      #
+      # The shard is a hash of the suite PATH, never its index in the roster — an index shifts
+      # every suite after an insertion, which would move suites between shards and strand the
+      # receipts each shard has cached. The address is the assignment (src/cli/local.ts).
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
     env:
       PAYLOAD_SECRET: test-secret-not-for-production-32-characters
       PAYLOAD_TEST_SKIP_MIGRATE: '1'
@@ -68,40 +82,39 @@ jobs:
       # parsed import closure + schema surface — so a green verdict seals a receipt addressed
       # by that hash, and while the hash stands the verdict stands (src/gate/receipt).
       #
-      # This lane threw that away. `--all` voids the receipts, so every push re-ran all 1,530
-      # suites in 128 batches of 12: 56 min, 123 min, and two runs killed at the cap. The
-      # receipts were not wrong — they were unreachable, living in node_modules/.cache on a
-      # runner that is destroyed every run. The address is portable; the store was not.
+      # This lane threw that away: `--all` voids the receipts. They were not wrong, they were
+      # unreachable — the store lived in node_modules/.cache on a runner destroyed every run,
+      # and the schema stamp was an mtime, which a fresh checkout moves on every clone.
       #
-      # restore-keys means ANY prior run's receipts restore, so a push that changes three
-      # atoms runs the suites in those closures and cites the rest.
-      - name: Restore test receipts (the verdicts already proven)
+      # Keyed PER SHARD: a shard only ever runs its own suites, so its receipts are its own.
+      - name: Restore this shard's receipts (the verdicts already proven)
         uses: actions/cache/restore@v4
         with:
           path: node_modules/.cache/erpax/test-receipts.json
-          key: erpax-test-receipts-${{ runner.os }}-${{ github.sha }}
+          key: erpax-receipts-${{ runner.os }}-s${{ matrix.shard }}-${{ github.sha }}
           restore-keys: |
-            erpax-test-receipts-${{ runner.os }}-
+            erpax-receipts-${{ runner.os }}-s${{ matrix.shard }}-
 
-      # PUSH cites receipts; a PULL REQUEST runs the full roster.
+      # PUSH cites receipts; a PULL REQUEST runs its shard's full roster.
       #
       # The receipt layer's own honest boundary is DATA: integration suites share one D1, so a
-      # suite that runs while its data-producing sibling is cited can go red on rows nobody
-      # wrote. That is a false RED — the safe direction, and a red batch names itself — but it
-      # is a real cost, so the clean full run stays the arbiter where it decides a merge.
+      # suite that runs while its data-producing sibling is cited — or sharded onto another
+      # runner — can go red on rows nobody wrote. That is a false RED, the safe direction, and
+      # the shard names itself; `fail-fast: false` so one shard's red does not hide the other
+      # fifteen's answers.
       - name: Test waves (cite what the address already answers)
         if: github.event_name != 'pull_request'
-        run: pnpm erpax test waves
-      - name: Test waves — full roster (the arbiter)
+        run: pnpm erpax test waves --shard ${{ matrix.shard }}/16
+      - name: Test waves — full shard (the arbiter)
         if: github.event_name == 'pull_request'
-        run: pnpm erpax test waves --all
+        run: pnpm erpax test waves --all --shard ${{ matrix.shard }}/16
 
       # Sealed only on green: the step above fails the job before this runs.
-      - name: Seal the receipts this run earned
+      - name: Seal the receipts this shard earned
         uses: actions/cache/save@v4
         with:
           path: node_modules/.cache/erpax/test-receipts.json
-          key: erpax-test-receipts-${{ runner.os }}-${{ github.sha }}
+          key: erpax-receipts-${{ runner.os }}-s${{ matrix.shard }}-${{ github.sha }}
 
   # Local UI E2E — Playwright starts `pnpm dev` via its own webServer. The POST-deploy
   # smoke lives in cloudflare.yml against the real Worker URL.
@@ -137,7 +150,12 @@ jobs:
     name: Production build (lean)
     runs-on: ubuntu-latest
     # Types freshness is the typecheck job; CF OpenNext uses the same lean next build.
-    needs: [standards, lint, typecheck]
+    #
+    # NOT `needs: [standards, lint, typecheck]` any more. That chain existed to avoid spending
+    # 7 build-minutes on a tree that lint would reject anyway — a sensible trade when the run
+    # was two hours and the build was noise. With the integration lane sharded, ~3 min of
+    # serialised gating IS the critical path, and a failing lint still fails the run whether or
+    # not the build ran beside it. Cost traded for wall-clock, deliberately.
     env:
       PAYLOAD_SECRET: test-secret-not-for-production-32-characters
     steps:
@@ -145,5 +163,15 @@ jobs:
       - uses: ./.github/actions/setup
         with:
           ripgrep: 'false'
+      # Next's own content-addressed cache — the same law one layer down: a chunk whose inputs
+      # did not move is not rebuilt. Keyed on the lockfile + source, restore-keys for the rest.
+      - name: Restore the Next build cache
+        uses: actions/cache@v4
+        with:
+          path: .next/cache
+          key: erpax-next-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-${{ github.sha }}
+          restore-keys: |
+            erpax-next-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-
+            erpax-next-${{ runner.os }}-
       # Skip typegen/importmap/sitemap — committed + verified above; matches OpenNext buildCommand.
       - run: pnpm build:next

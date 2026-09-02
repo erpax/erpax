@@ -16,6 +16,7 @@ import { exactMax } from '@/algebra'
  * (gate/confirm own them), anything that builds the full readme context.
  */
 import { execSync, spawnSync } from 'node:child_process'
+import { createHash } from 'node:crypto'
 import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { planSuites, sealSuiteReceipt, suiteClosureHash } from '@/gate/receipt'
@@ -124,6 +125,39 @@ const discoverSuites = (cwd: string = process.cwd()): string[] => {
 }
 
 /**
+ * `--shard i/n` — the roster split across parallel runners, assigned BY ADDRESS.
+ *
+ * Receipts answer the steady state: a push that changes three atoms cites the rest and
+ * runs in seconds. They cannot help the case where the answer genuinely is not known yet —
+ * a first run, a pull request, a change to something everything imports. That case ran the
+ * whole roster on ONE runner, serially: measured 56 min and 123 min on main, twice killed
+ * at the cap. Recomputing is sometimes unavoidable; recomputing SERIALLY is not.
+ *
+ * The shard is a function of the suite's PATH, never of its index in the roster. An index
+ * shifts every suite after an insertion, which would move suites between shards and strand
+ * the receipts each shard has cached; an address does not move when a neighbour appears.
+ * Same law as everything else here — the address is the assignment.
+ *
+ * HONEST BOUNDARY: sharding splits suites that share the live D1, so a suite depending on
+ * rows a sibling writes can go red in a shard where that sibling did not run. That is a
+ * false RED — the safe direction, and the shard names itself — but it is real, and it is
+ * why the serial full roster stays available behind `--all` with no `--shard`.
+ */
+const shardOf = (args: readonly string[]): { readonly index: number; readonly total: number } | null => {
+  const i = args.indexOf('--shard')
+  const spec = i >= 0 ? args[i + 1] : undefined
+  if (!spec) return null
+  const [a, b] = spec.split('/')
+  const index = Number.parseInt(a ?? '', 10)
+  const total = Number.parseInt(b ?? '', 10)
+  if (!Number.isFinite(index) || !Number.isFinite(total) || total < 1 || index < 1 || index > total) return null
+  return { index, total }
+}
+
+export const shardIndexOf = (suite: string, total: number): number =>
+  (Number.parseInt(createHash('sha256').update(suite).digest('hex').slice(0, 8), 16) % total) + 1
+
+/**
  * `erpax test waves` — the vitest roster split by content-addressed receipts (gate/receipt):
  * suites whose closure stands are CITED; only changed suites run, in ≤25-suite batches, each
  * bounded by its own ladder rung; a green batch seals its receipts; a red batch names itself
@@ -131,10 +165,13 @@ const discoverSuites = (cwd: string = process.cwd()): string[] => {
  */
 export function runTestWaves(args: readonly string[] = []): number {
   const cwd = process.cwd()
-  const all = discoverSuites(cwd)
+  const shard = shardOf(args)
+  const roster = discoverSuites(cwd)
+  const all = shard ? roster.filter((f) => shardIndexOf(f, shard.total) === shard.index) : roster
   const force = args.includes('--all')
   const plan = force ? { changed: all, covered: [] as string[] } : planSuites(all, cwd)
-  console.log(`test waves — roster ${all.length} · covered by receipts ${plan.covered.length} · to run ${plan.changed.length}${force ? ' (--all)' : ''}`)
+  const where = shard ? ` · shard ${shard.index}/${shard.total} of ${roster.length}` : ''
+  console.log(`test waves — roster ${all.length}${where} · covered by receipts ${plan.covered.length} · to run ${plan.changed.length}${force ? ' (--all)' : ''}`)
   // 12 under isolate:false (shared module registry — the ~6× speedup). The con* region's
   // 15-min timeouts were NEVER batch size or D1 accumulation (both refuted by bisection) —
   // they were ONE suite hanging on an unbounded execSync (confirm/test), now fixed. A hang
