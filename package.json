@@ -13,7 +13,8 @@
   "scripts": {
     "dev": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000\" next dev",
     "dev:clean": "rm -rf .next .open-next && pnpm dev",
-    "build:next": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs\" next build --webpack",
+    "build:next": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs\" next build --turbopack",
+    "build:next:webpack": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs\" next build --webpack",
     "build": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts && cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=tsx/esm --import=./src/css/load-hook.mjs\" payload generate:types && cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=tsx/esm --import=./src/css/load-hook.mjs\" payload generate:importmap && pnpm build:next",
     "postbuild": "next-sitemap --config next-sitemap.config.cjs",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
