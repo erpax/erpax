@@ -55,7 +55,7 @@ The 21-axis corpus scan behind every ratchet cost **45,950 ms**. Folding everyth
 
 **Honest boundary.** The fold proves the SCANNED SET is byte-identical, never that a scan is deterministic. An axis that reads the clock, the network, or a file outside `roots` can move under a standing fold — so the receipt keys a pure content scan and nothing else, and a lost or unreadable receipt only means the scan runs again. It never means a stale answer: `sealedScan` returns the verdict at THIS fold or `null`, with no notion of "old but probably fine".
 
-## Four verdicts now, one store
+## Five verdicts now, one store
 
 The theorem does not care what produced the verdict. Everything a CI lane asserts is a function of
 its inputs, so everything gets an address and a receipt — and the same store, never a second
@@ -67,8 +67,15 @@ mechanism beside the first.
 | the production build | `buildClosureHash` — payload config ⊗ every `src/app` route ⊗ CSS ⊗ root config | 172s | **4.7s** |
 | `tsc -p x` | `typecheckClosureHash` — `src/**/*.ts(x)` ⊗ every tsconfig ⊗ the lockfile | 165s | **2.4s** |
 | `payload verify-types` | `payloadTypesClosureHash` — config closure ⊗ `payload-types.ts` ⊗ `importMap.js` | 29s | **2.7s** |
+| `eslint src` | `lintClosureHash` — the same sources ⊗ `eslint.config.mjs` ⊗ tsconfigs ⊗ the lockfile | 95s | **2.1s** |
 
-`suiteClosureHash` is now the one-entry case of `closureHashOf(entries)` — one walk, four callers.
+`suiteClosureHash` is the one-entry case of `closureHashOf(entries)`; `typecheckClosureHash` and
+`lintClosureHash` are one `sourceVerdictHash(key, binds)`. One walk, five callers.
+
+**A lint and a typecheck over identical bytes are two verdicts, never one receipt.** They read the
+same sources and ask different questions, so the KEY is part of the address — sharing one would let
+a green typecheck cite a lint that never ran. What binds beyond the sources is what can change each
+answer: the tsconfigs for one, `eslint.config.mjs` for the other, the lockfile for both.
 
 **An address is only as honest as what it folds, and the two ways to get that wrong are opposite.**
 Fold too little and the citation is a false GREEN: the build address covers `src/**/*.css` because
