@@ -220,8 +220,12 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     matrix: { desc: 'Uuid matrix collide emit', cmd: 'node src/uuid/matrix/collide.mjs --emit' },
     skill: { desc: 'Skill router index emit (full; use skill-stub in CI)', cmd: `${TSX} src/skill/router/build/index.ts` },
     'skill-stub': {
+      // Straight at the child atom: the full emitter imports [[aura]], [[navigation]] and the
+      // upgrade seal at top level, and ESM evaluates them whether the stub path needs them or
+      // not — 6.3s per CI job to write 265 fixed bytes. ./build/stub imports node:fs and
+      // node:path and nothing else.
       desc: 'Empty skills.index for CI/deploy (fits Worker 3MB; skips 80MB emit)',
-      cmd: `cross-env ERPAX_SKILL_INDEX=stub ${TSX} src/skill/router/build/index.ts --stub`,
+      cmd: `cross-env ERPAX_SKILL_INDEX=stub ${TSX} src/skill/router/build/stub/index.ts`,
     },
     upgrade: { desc: 'Skill upgrade sync', cmd: `${TSX} src/skill/router/upgrade/index.ts --sync` },
     'upgrade-check': { desc: 'Skill upgrade verify', cmd: `${TSX} src/skill/router/upgrade/index.ts --verify` },

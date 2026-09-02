@@ -7,9 +7,13 @@ inputs:
     required: false
     default: stub
   ripgrep:
-    description: 'Install ripgrep (needed for standards emit / CI; skip on Cloudflare deploy)'
+    # DEFAULT-DENY. `sudo apt-get install ripgrep` costs 9.2s in every job that takes the default,
+    # and only ONE consumer in the tree needs it: src/standards/emit shells out to `rg`. A lint or
+    # a typecheck job never reaches it, so it paid nine seconds a run for a binary it never called.
+    # Opt IN where a lane can reach the standards emit.
+    description: 'Install ripgrep — ONLY where standards emit can be reached (it shells out to rg)'
     required: false
-    default: 'true'
+    default: 'false'
   registry-url:
     description: 'npm registry to authenticate against (publish jobs only; empty = no registry auth)'
     required: false
@@ -49,6 +53,10 @@ runs:
       shell: bash
       run: pnpm install --frozen-lockfile
 
+    # The STUB is 265 fixed bytes and goes straight at the module that writes them — the erpax CLI
+    # boot alone was ~3s on top of the emitter's own [[aura]]/[[navigation]] graph, for a file whose
+    # content never varies. 6.3s → ~1s, in every job. The FULL emit keeps the CLI: it is local
+    # skill-router research, and its cost is paid once and knowingly.
     - name: Emit skills.index
       if: inputs.skill-index != 'none'
       shell: bash
@@ -56,5 +64,5 @@ runs:
         if [ "${{ inputs.skill-index }}" = "full" ]; then
           pnpm erpax corpus skill
         else
-          pnpm erpax corpus skill-stub
+          pnpm exec tsx src/skill/router/build/stub/index.ts
         fi

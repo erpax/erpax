@@ -130,6 +130,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
+        with:
+          # A shard runs an arbitrary slice of 1,824 suites, and the standards suites shell out to
+          # `rg` (src/standards/emit). Lint and typecheck cannot reach it and no longer pay for it.
+          ripgrep: 'true'
 
       # VERIFY BEATS RECOMPUTE. A suite's verdict is a function of its inputs — suite file +
       # parsed import closure + schema surface — so a green verdict seals a receipt addressed
