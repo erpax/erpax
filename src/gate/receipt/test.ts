@@ -1,4 +1,4 @@
-import { mkdtempSync, mkdirSync, renameSync, rmSync, writeFileSync } from 'node:fs'
+import { mkdtempSync, mkdirSync, renameSync, rmSync, utimesSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { describe, it, expect, afterAll } from 'vitest'
@@ -98,5 +98,29 @@ describe('scan receipt — the corpus answers from its address', () => {
     } finally {
       rmSync(cwd, { recursive: true, force: true })
     }
+  })
+})
+
+describe('gate/receipt — a verdict is portable or it is not an address', () => {
+  it('the migration stamp is CONTENT, not mtime — a fresh checkout must not void every receipt', () => {
+    const tmp = mkdtempSync(join(tmpdir(), 'erpax-receipt-'))
+    mkdirSync(join(tmp, 'src', 'migrations'), { recursive: true })
+    mkdirSync(join(tmp, 'src', 'atom'), { recursive: true })
+    writeFileSync(join(tmp, 'src', 'migrations', '001.ts'), 'export const up = 1\n')
+    writeFileSync(join(tmp, 'src', 'atom', 'index.ts'), 'export const A = 1\n')
+    writeFileSync(join(tmp, 'src', 'atom', 'test.ts'), 'export const T = 1\n')
+
+    const before = suiteClosureHash('src/atom/test.ts', tmp)
+
+    // Touch every migration the way `git checkout` does: same bytes, new mtime.
+    const future = new Date(Date.now() + 86_400_000)
+    utimesSync(join(tmp, 'src', 'migrations', '001.ts'), future, future)
+    expect(suiteClosureHash('src/atom/test.ts', tmp)).toBe(before)
+
+    // A real schema change still moves it — the stamp measures content, so it must.
+    writeFileSync(join(tmp, 'src', 'migrations', '001.ts'), 'export const up = 2\n')
+    expect(suiteClosureHash('src/atom/test.ts', tmp)).not.toBe(before)
+
+    rmSync(tmp, { recursive: true, force: true })
   })
 })

@@ -63,8 +63,45 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
-      # waves: receipt-split ≤12-suite batches (self-bounded); --all voids receipts on fresh runners
-      - run: pnpm erpax test waves --all
+
+      # VERIFY BEATS RECOMPUTE. A suite's verdict is a function of its inputs — suite file +
+      # parsed import closure + schema surface — so a green verdict seals a receipt addressed
+      # by that hash, and while the hash stands the verdict stands (src/gate/receipt).
+      #
+      # This lane threw that away. `--all` voids the receipts, so every push re-ran all 1,530
+      # suites in 128 batches of 12: 56 min, 123 min, and two runs killed at the cap. The
+      # receipts were not wrong — they were unreachable, living in node_modules/.cache on a
+      # runner that is destroyed every run. The address is portable; the store was not.
+      #
+      # restore-keys means ANY prior run's receipts restore, so a push that changes three
+      # atoms runs the suites in those closures and cites the rest.
+      - name: Restore test receipts (the verdicts already proven)
+        uses: actions/cache/restore@v4
+        with:
+          path: node_modules/.cache/erpax/test-receipts.json
+          key: erpax-test-receipts-${{ runner.os }}-${{ github.sha }}
+          restore-keys: |
+            erpax-test-receipts-${{ runner.os }}-
+
+      # PUSH cites receipts; a PULL REQUEST runs the full roster.
+      #
+      # The receipt layer's own honest boundary is DATA: integration suites share one D1, so a
+      # suite that runs while its data-producing sibling is cited can go red on rows nobody
+      # wrote. That is a false RED — the safe direction, and a red batch names itself — but it
+      # is a real cost, so the clean full run stays the arbiter where it decides a merge.
+      - name: Test waves (cite what the address already answers)
+        if: github.event_name != 'pull_request'
+        run: pnpm erpax test waves
+      - name: Test waves — full roster (the arbiter)
+        if: github.event_name == 'pull_request'
+        run: pnpm erpax test waves --all
+
+      # Sealed only on green: the step above fails the job before this runs.
+      - name: Seal the receipts this run earned
+        uses: actions/cache/save@v4
+        with:
+          path: node_modules/.cache/erpax/test-receipts.json
+          key: erpax-test-receipts-${{ runner.os }}-${{ github.sha }}
 
   # Local UI E2E — Playwright starts `pnpm dev` via its own webServer. The POST-deploy
   # smoke lives in cloudflare.yml against the real Worker URL.
