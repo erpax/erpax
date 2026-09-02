@@ -163,16 +163,10 @@ jobs:
       - uses: ./.github/actions/setup
         with:
           ripgrep: 'false'
-      # Next's own content-addressed cache — the same law one layer down: a chunk whose inputs
-      # did not move is not rebuilt. Keyed on the lockfile + source, restore-keys for the rest.
-      - name: Restore the Next build cache
-        uses: actions/cache@v4
-        with:
-          path: .next/cache
-          key: erpax-next-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-${{ github.sha }}
-          restore-keys: |
-            erpax-next-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-
-            erpax-next-${{ runner.os }}-
+      # NO .next/cache HERE, and that is measured, not assumed. Locally the cache is 2.8GB,
+      # and a build with it warm is 169s against 172s cold — one file changed, 3 seconds saved.
+      # Next's incremental cache buys ~2% on this app while risking minutes of transfer and a
+      # large bite of the 10GB repo cache quota. The layer that actually answers is below.
 
       # And the layer above it: the BUILD ITSELF is a verdict. In CI this job is a gate — the
       # .next output is discarded and cloudflare.yml runs its own OpenNext build — so a green
