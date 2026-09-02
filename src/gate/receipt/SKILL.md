@@ -55,6 +55,35 @@ The 21-axis corpus scan behind every ratchet cost **45,950 ms**. Folding everyth
 
 **Honest boundary.** The fold proves the SCANNED SET is byte-identical, never that a scan is deterministic. An axis that reads the clock, the network, or a file outside `roots` can move under a standing fold — so the receipt keys a pure content scan and nothing else, and a lost or unreadable receipt only means the scan runs again. It never means a stale answer: `sealedScan` returns the verdict at THIS fold or `null`, with no notion of "old but probably fine".
 
+## Four verdicts now, one store
+
+The theorem does not care what produced the verdict. Everything a CI lane asserts is a function of
+its inputs, so everything gets an address and a receipt — and the same store, never a second
+mechanism beside the first.
+
+| verdict | address | recompute | cite |
+| --- | --- | ---: | ---: |
+| a test suite | `suiteClosureHash` — suite ⊗ parsed closure ⊗ schema | — | — |
+| the production build | `buildClosureHash` — payload config ⊗ every `src/app` route ⊗ CSS ⊗ root config | 172s | **4.7s** |
+| `tsc -p x` | `typecheckClosureHash` — `src/**/*.ts(x)` ⊗ every tsconfig ⊗ the lockfile | 165s | **2.4s** |
+| `payload verify-types` | `payloadTypesClosureHash` — config closure ⊗ `payload-types.ts` ⊗ `importMap.js` | 29s | **2.7s** |
+
+`suiteClosureHash` is now the one-entry case of `closureHashOf(entries)` — one walk, four callers.
+
+**An address is only as honest as what it folds, and the two ways to get that wrong are opposite.**
+Fold too little and the citation is a false GREEN: the build address covers `src/**/*.css` because
+`import './x.css'` resolves in TS extensions, so the parsed walk never reaches a stylesheet, and a
+broken one would be cited green. `payloadTypesClosureHash` binds BOTH artefacts the check compares
+— an address covering only `payload-types.ts` cites green over a stale importmap. Fold too much and
+the citation stops citing: the typecheck address deliberately excludes the prose beside the code,
+because a comma in a SKILL.md cannot change a type and re-running 165s for one is how a receipt
+becomes decoration.
+
+**Where the recompute is unavoidable, parallelise it.** `test waves --shard i/n` splits the roster
+across sixteen runners, assigned by a hash of the suite PATH — never its index, which shifts every
+suite after an insertion and strands the receipts each shard has cached. Measured end to end on
+main: **123 min → 3 min 26 s.**
+
 **Law — [[law]]: a gate verdict is content-addressed — while a suite's closure stands its green receipt stands, only what changed re-runs, and a failure names one batch instead of voiding the hour.**
 
 Composes: [[rules]]/cycle · [[merge]] · [[timeout]] · [[law]].
