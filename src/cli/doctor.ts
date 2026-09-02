@@ -5,6 +5,7 @@ import { existsSync, mkdirSync, writeFileSync } from 'node:fs'
 import { join, dirname } from 'node:path'
 import { createRequire } from 'node:module'
 import { formatCleanSummary } from '@/apply/clean'
+import { formatSecretVerdict, missingSecrets } from '@/deploy/secret'
 import { formatAutomateSummary } from '@/apply/automate'
 import { detectStalledProcesses, formatStallTable, killStalledProcesses } from '@/apply/stall-watch'
 import { realtimeDoctorLine } from '@/agent/communication/realtime'
@@ -310,6 +311,13 @@ export function runDoctor(cwd: string = process.cwd(), sub?: string): number | P
   if (sub === 'dry-proof' || sub === 'dryproof') return runDoctorDryProof()
   const report = collectDoctorReport(cwd)
   console.log(formatDoctorReport(report))
+  /*
+   * A lane that cannot run should not be discovered by pushing. Every Cloudflare deploy this repo
+   * triggered died on its first step for want of a secret — a condition checkable the whole time
+   * that nothing local asked about ([[deploy]]/secret). Reported here because doctor is where you
+   * look BEFORE, not after. Fails open: UNKNOWN when gh cannot list, never a manufactured missing.
+   */
+  console.log(formatSecretVerdict(missingSecrets(cwd)))
   try {
     emitInventorySnapshot(cwd, INVENTORY_DOCTOR_SCAN_LIMIT)
   } catch {
