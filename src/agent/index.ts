@@ -527,3 +527,5 @@ export {
 export * from './mortality'
 
 export * from './skill'
+
+export * from './harmonic'
