@@ -21,6 +21,7 @@ import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import {
   buildClosureHash,
+  lintClosureHash,
   payloadTypesClosureHash,
   planSuites,
   sealSuiteReceipt,
@@ -422,5 +423,40 @@ export function runVerifyTypes(args: readonly string[] = []): number {
   if ((r.status ?? 1) !== 0) return r.status ?? 1
   sealSuiteReceipt(TYPES_RECEIPT, address, cwd)
   console.log(`✓ payload verify-types — sealed at ${address}`)
+  return 0
+}
+
+/** The lint receipt key — one store for every verdict on this pipeline. */
+const LINT_RECEIPT = 'gate:eslint:src'
+
+/**
+ * `erpax lint src` — the strict, type-aware pass over src, as a CITED verdict.
+ *
+ * It was the last lane recomputing from scratch: 95s of a 100s run once the shards, the build and
+ * the typecheck learned to cite. Same bytes as the typecheck, a different question, so a different
+ * address — and the rules, the tsconfigs the type-aware rules resolve through, and the plugin
+ * versions all bind, because each of them changes the answer.
+ *
+ * The 64MB V8 stack stays: type-aware linting recurses deep Payload types, and NODE_OPTIONS
+ * forbids --stack-size, so node is invoked directly.
+ */
+export function runLintSrc(args: readonly string[] = []): number {
+  const cwd = process.cwd()
+  const address = lintClosureHash(cwd)
+  if (!args.includes('--all') && suiteReceiptFresh(LINT_RECEIPT, address, cwd)) {
+    console.log(`✓ lint src — cited at ${address}: these sources already linted clean`)
+    return 0
+  }
+  const r = spawnSync(
+    'node --stack-size=65536 --max-old-space-size=8000 ./node_modules/eslint/bin/eslint.js ' +
+      '"src/**/*.{ts,tsx}" --ignore-pattern "src/migrations/*_*.ts" --max-warnings 0',
+    { shell: true, stdio: 'inherit', cwd, env: process.env },
+  )
+  if ((r.status ?? 1) !== 0) {
+    console.error(`✗ lint src — RED at ${address}; nothing sealed`)
+    return r.status ?? 1
+  }
+  sealSuiteReceipt(LINT_RECEIPT, address, cwd)
+  console.log(`✓ lint src — clean, sealed at ${address}`)
   return 0
 }

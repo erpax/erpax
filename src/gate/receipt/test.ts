@@ -4,6 +4,7 @@ import { join } from 'node:path'
 import { describe, it, expect, afterAll } from 'vitest'
 import {
   buildClosureHash,
+  lintClosureHash,
   payloadTypesClosureHash,
   typecheckClosureHash,
   suiteClosureHash,
@@ -243,6 +244,43 @@ describe('gate/receipt — a typecheck is a verdict, and its address covers what
 
     writeFileSync(join(tmp, 'src', 'app', '(payload)', 'admin', 'importMap.js'), 'export const importMap = { a: 1 }\n')
     expect(payloadTypesClosureHash(tmp)).not.toBe(afterTypes)
+    rmSync(tmp, { recursive: true, force: true })
+  })
+})
+
+describe('gate/receipt — the lint verdict is its own address', () => {
+  const lintFixture = (): string => {
+    const tmp = mkdtempSync(join(tmpdir(), 'erpax-lint-'))
+    mkdirSync(join(tmp, 'src', 'atom'), { recursive: true })
+    writeFileSync(join(tmp, 'eslint.config.mjs'), 'export default []\n')
+    writeFileSync(join(tmp, 'tsconfig.json'), '{}\n')
+    writeFileSync(join(tmp, 'package.json'), '{"name":"x"}\n')
+    writeFileSync(join(tmp, 'pnpm-lock.yaml'), "lockfileVersion: '9.0'\n")
+    writeFileSync(join(tmp, 'src', 'atom', 'index.ts'), 'export const A = 1\n')
+    return tmp
+  }
+
+  it('THE RULES bind — changing eslint.config.mjs changes the answer, so it changes the address', () => {
+    const tmp = lintFixture()
+    const before = lintClosureHash(tmp)
+    writeFileSync(join(tmp, 'eslint.config.mjs'), 'export default [{ rules: { eqeqeq: "error" } }]\n')
+    expect(lintClosureHash(tmp)).not.toBe(before)
+    rmSync(tmp, { recursive: true, force: true })
+  })
+
+  it('a source change moves it', () => {
+    const tmp = lintFixture()
+    const before = lintClosureHash(tmp)
+    writeFileSync(join(tmp, 'src', 'atom', 'index.ts'), 'export const A = 2\n')
+    expect(lintClosureHash(tmp)).not.toBe(before)
+    rmSync(tmp, { recursive: true, force: true })
+  })
+
+  it('a LINT and a TYPECHECK over identical bytes are two verdicts, never one receipt', () => {
+    // Same sources, different question. Sharing an address would let a green typecheck cite a
+    // lint that never ran — the false green a citation exists to make impossible.
+    const tmp = lintFixture()
+    expect(lintClosureHash(tmp)).not.toBe(typecheckClosureHash('tsconfig.json', tmp))
     rmSync(tmp, { recursive: true, force: true })
   })
 })

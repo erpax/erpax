@@ -2,7 +2,7 @@
  * cli — minimal operational surface: `pnpm erpax <domain> [action] [args…]`
  */
 import { runDoctor } from './doctor'
-import { runBuildGate, runLocal, runTestWaves, runTypecheckWaves, runVerifyTypes } from './local'
+import { runBuildGate, runLintSrc, runLocal, runTestWaves, runTypecheckWaves, runVerifyTypes } from './local'
 import { printHelp, printUnknownHint, suggestNearestAction } from './help'
 import { runGate, runGatePackages, runPayloadApproval, runShell } from './gate'
 import { runRulesCheck } from './rules-check'
@@ -175,6 +175,11 @@ export function runCli(argv: readonly string[]): number | Promise<number> {
   // verify-types is a verdict too — cited when the config already generates these types.
   if (rawDomain === 'payload' && action === 'verify-types') {
     return runVerifyTypes(rest)
+  }
+
+  // the strict src lint is a verdict too — same bytes as the typecheck, a different question.
+  if (rawDomain === 'lint' && action === 'src') {
+    return runLintSrc(rest)
   }
 
   // typecheck waves — quantum substrate first (FTL only in quantum); full project is wave 1.

@@ -34,8 +34,33 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
+
+      # The last lane recomputing from scratch — 95s of a 100s run once the shards, the build and
+      # the typecheck learned to cite. `eslint src` reads the same bytes `tsc` does and asks a
+      # different question, so it gets its own address: sources ⊗ eslint.config.mjs ⊗ tsconfigs ⊗
+      # lockfile. The whole-repo pass is NOT addressed — it runs in ~4s over a scattered set no
+      # single fold describes honestly, and a lane that always runs cannot cite a stale answer.
+      - name: Restore the lint receipt
+        uses: actions/cache/restore@v4
+        with:
+          path: node_modules/.cache/erpax/test-receipts.json
+          key: erpax-lint-${{ runner.os }}-${{ github.sha }}
+          restore-keys: |
+            erpax-lint-${{ runner.os }}-
+
       - run: pnpm erpax lint
-      - run: pnpm erpax lint src
+      - name: Lint src (cite what the address already answers)
+        if: github.event_name != 'pull_request'
+        run: pnpm erpax lint src
+      - name: Lint src — for real (the arbiter)
+        if: github.event_name == 'pull_request'
+        run: pnpm erpax lint src --all
+
+      - name: Seal the lint receipt
+        uses: actions/cache/save@v4
+        with:
+          path: node_modules/.cache/erpax/test-receipts.json
+          key: erpax-lint-${{ runner.os }}-${{ github.sha }}
 
   typecheck:
     name: TypeScript

@@ -169,15 +169,43 @@ export function buildClosureHash(cwd: string = process.cwd()): string {
  * to this address. That is the same trade `pnpm install --frozen-lockfile` already makes, and CI
  * installs from the lockfile every run.
  */
+const TS_PROJECTS = ['tsconfig.json', 'tsconfig.typecheck.json', 'tsconfig.uuid.json'] as const
+const DEP_SURFACE = ['package.json', 'pnpm-lock.yaml'] as const
+
+/**
+ * The shared shape: a verdict over the TypeScript sources, keyed by WHICH verdict it is and bound
+ * to the config files that decide the answer.
+ *
+ * `tsc -p x` and `eslint src` ask different questions of the same bytes, so the key is part of the
+ * address — two projects, or a typecheck and a lint, are never one receipt.
+ */
+const sourceVerdictHash = (key: string, binds: readonly string[], cwd: string): string =>
+  sha(
+    [
+      'verdict:' + key,
+      'src:' + corpusScanFold(cwd, ['src'], /\.tsx?$/),
+      ...binds.map((f) => sha(f + ' ' + fileBytes(join(cwd, f)))),
+    ].join('|'),
+  )
+
 export function typecheckClosureHash(project: string, cwd: string = process.cwd()): string {
-  const parts = [
-    'project:' + project,
-    'src:' + corpusScanFold(cwd, ['src'], /\.tsx?$/),
-    ...['tsconfig.json', 'tsconfig.typecheck.json', 'tsconfig.uuid.json', 'package.json', 'pnpm-lock.yaml'].map(
-      (f) => sha(f + ' ' + fileBytes(join(cwd, f))),
-    ),
-  ]
-  return sha(parts.join('|'))
+  return sourceVerdictHash('tsc:' + project, [...TS_PROJECTS, ...DEP_SURFACE], cwd)
+}
+
+/**
+ * `eslint src` — the last lane recomputing from scratch, and 95s of a 100s run once the other
+ * three learned to cite.
+ *
+ * The type-aware pass reads the same sources `tsc` does, so the fold is the same; what changes the
+ * answer beyond them is the RULES (`eslint.config.mjs`), the tsconfigs the type-aware rules resolve
+ * through, and the plugin versions — addressed by the lockfile, as everywhere else here.
+ *
+ * HONEST BOUNDARY: only the `src` pass is addressed. The whole-repo pass runs in ~4s and covers a
+ * scattered set (scripts, stubs, root config) that no single fold describes honestly — cheaper to
+ * run than to characterise, and a lane that always runs cannot cite a stale answer.
+ */
+export function lintClosureHash(cwd: string = process.cwd()): string {
+  return sourceVerdictHash('eslint:src', ['eslint.config.mjs', ...TS_PROJECTS, ...DEP_SURFACE], cwd)
 }
 
 /**

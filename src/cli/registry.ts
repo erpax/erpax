@@ -16,10 +16,6 @@ const HEAVY_TSX = 'cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size
 const NODE_TSX = 'cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" node'
 const ESLINT =
   'cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size=8000" eslint'
-/** Type-aware ESLint on the full src tree recurses deep Payload types — needs a larger V8 stack
- * (NODE_OPTIONS forbids --stack-size, so invoke node directly). */
-const ESLINT_SRC =
-  'node --stack-size=65536 --max-old-space-size=8000 ./node_modules/eslint/bin/eslint.js'
 const VITEST =
   'cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs" vitest run --config ./vitest.config.mts'
 
@@ -55,10 +51,10 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
      * twice for a verdict the strict pass already gives. One file, one pass.
      */
     default: { desc: 'ESLint outside src (src is the strict pass)', cmd: `${ESLINT} . --ignore-pattern "src/**"` },
-    src: {
-      desc: 'ESLint src/**/* (zero warnings)',
-      cmd: `${ESLINT_SRC} "src/**/*.{ts,tsx}" --ignore-pattern "src/migrations/*_*.ts" --max-warnings 0`,
-    },
+    // Dispatched in cli/index.ts to runLintSrc — a CITED verdict. The command it runs is the
+    // same one this entry used to hold verbatim (64MB V8 stack for the type-aware pass on deep
+    // Payload types), plus a content address so an unchanged tree is not re-linted for 95s.
+    src: { desc: 'ESLint src (zero warnings) — cited by content address', cmd: '__lint_src__' },
     imports: { desc: 'Import-convention ratchet gate', cmd: `${NODE_TSX} src/convention/import/gate.mjs` },
     folders: { desc: 'Folder-shape law gate', cmd: 'cross-env NODE_OPTIONS="--no-deprecation" tsx src/law/folder/index.ts --check' },
     fix: { desc: 'ESLint --fix whole repo', cmd: `${ESLINT} . --fix` },
