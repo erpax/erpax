@@ -12,6 +12,17 @@ import { parse } from 'yaml'
 export interface PipelineStep {
   readonly name: string
   readonly index: number
+  /**
+   * What the step RUNS.
+   *
+   * A law matched on a step's prose NAME breaks the moment the step is renamed, and says
+   * nothing about whether the guard still runs. Renaming "Assert tag matches package
+   * version" to "Tag names the version it releases" broke this atom's own proof while the
+   * guard itself was untouched — the label moved, the behaviour did not.
+   */
+  readonly run: string
+  /** The action a step USES — the other half of what it actually does. */
+  readonly uses: string
 }
 
 export interface PipelineViolation {
@@ -26,9 +37,13 @@ const wfPath = (file: string, cwd: string): string => join(cwd, '.github', 'work
 export function stepsOf(file: string, job: string, cwd: string = process.cwd()): PipelineStep[] {
   const p = wfPath(file, cwd)
   if (!existsSync(p)) return []
-  const doc = parse(readFileSync(p, 'utf8')) as { jobs?: Record<string, { steps?: { name?: string }[] }> }
+  const doc = parse(readFileSync(p, 'utf8')) as {
+    jobs?: Record<string, { steps?: { name?: string; run?: string; uses?: string }[] }>
+  }
   const steps = doc.jobs?.[job]?.steps ?? []
-  return steps.map((s, index) => ({ name: s.name ?? '', index })).filter((s) => s.name)
+  return steps
+    .map((s, index) => ({ name: s.name ?? s.uses ?? '', index, run: s.run ?? '', uses: s.uses ?? '' }))
+    .filter((s) => s.name)
 }
 
 const posOf = (steps: readonly PipelineStep[], re: RegExp): number =>
@@ -126,10 +141,12 @@ export function testedBeforePublish(cwd: string = process.cwd()): PipelineViolat
   if (!existsSync(dir)) return out
   for (const file of readdirSync(dir).filter((f) => /^publish-.*\.ya?ml$/.test(f))) {
     const doc = parse(readFileSync(join(dir, file), 'utf8')) as {
-      jobs?: Record<string, { steps?: { name?: string }[] }>
+      jobs?: Record<string, { steps?: { name?: string; run?: string; uses?: string }[] }>
     }
     for (const [jobName, job] of Object.entries(doc.jobs ?? {})) {
-      const steps = (job.steps ?? []).map((x, i) => ({ name: x.name ?? '', index: i })).filter((x) => x.name)
+      const steps = (job.steps ?? [])
+        .map((x, i) => ({ name: x.name ?? '', index: i, run: x.run ?? '', uses: x.uses ?? '' }))
+        .filter((x) => x.name)
       const publish = posOf(steps, /publish to npm/i)
       if (publish < 0) continue
       const verified = steps.filter((x) => /\bgate\b|\btest\b/i.test(x.name) && x.index < publish)

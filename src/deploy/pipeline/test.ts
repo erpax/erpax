@@ -73,12 +73,27 @@ describe('deploy/pipeline — each law CATCHES its own reordering', () => {
 })
 
 describe('deploy/pipeline — the release refuses a mismatched tag', () => {
-  it('asserts tag == version, and BEFORE npm publish', () => {
-    const steps = stepsOf('publish-packages.yml', 'publish').map((s) => s.name)
-    const assertTag = steps.findIndex((n) => /tag matches package version/i.test(n))
-    const publish = steps.findIndex((n) => /Publish to npm/i.test(n))
-    expect(assertTag).toBeGreaterThanOrEqual(0)
-    expect(assertTag).toBeLessThan(publish)
+  it('asserts tag == version, and BEFORE npm publish — in EVERY publishing job', () => {
+    // Matched on what the step RUNS, not on its prose name. Renaming the step broke this
+    // proof once while the guard was untouched: a law pinned to a label tests the label.
+    const jobs = ['package', 'algebra']
+    for (const job of jobs) {
+      const steps = stepsOf('publish-packages.yml', job)
+      expect(steps.length, `${job} has steps`).toBeGreaterThan(0)
+      const assertTag = steps.findIndex((s) => /assert-tag-version\.mjs/.test(s.run))
+      const publish = steps.findIndex((s) => /npm publish/.test(s.run))
+      expect(assertTag, `${job} asserts the tag`).toBeGreaterThanOrEqual(0)
+      expect(publish, `${job} publishes`).toBeGreaterThanOrEqual(0)
+      expect(assertTag, `${job} asserts BEFORE it publishes`).toBeLessThan(publish)
+    }
+  })
+
+  it('the corpus release cuts its GitHub Release only after the citation gate', () => {
+    const steps = stepsOf('publish-packages.yml', 'corpus')
+    const citation = steps.findIndex((s) => /citation-consistent\.mjs/.test(s.run))
+    const release = steps.findIndex((s) => /action-gh-release/.test(s.uses))
+    expect(citation).toBeGreaterThanOrEqual(0)
+    expect(release).toBeGreaterThan(citation)
   })
 })
 
