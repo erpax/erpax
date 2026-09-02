@@ -535,6 +535,42 @@ export function linearSpacesInWhole(cwd: string = process.cwd()): LinearSpacesSc
  * happened on the first run (`body/index.ts`, four names, 314 files to roll back).
  */
 /**
+ * A child that reaches a NODE BUILTIN may not be re-exported from a barrel.
+ *
+ * `export * from './harvest'` on `@/i18n` broke the production build:
+ * `UnhandledSchemeError: Reading from "node:fs" is not handled` — harvest reads the
+ * filesystem, `@/i18n` is imported by client components, and a barrel re-export drags
+ * the whole child into the browser bundle. Nothing about the NAMES says so.
+ *
+ * The published-package closure was the first consumer I measured and the browser is the
+ * second. Both are the same law: a barrel edge is free only where nobody downstream pays
+ * for it. Refusing every node-reaching child is conservative — a server-only barrel loses
+ * a wire it could have carried — and it cannot break a bundle.
+ */
+const reachesNodeBuiltin = (childFile: string, cwd: string): boolean => {
+  const seen = new Set<string>([childFile])
+  const queue = [childFile]
+  let visits = 0
+  while (queue.length > 0 && visits < 300) {
+    const file = queue.shift() as string
+    visits++
+    let text = ''
+    try {
+      text = readFileSync(file, 'utf8')
+    } catch {
+      continue
+    }
+    if (/from\s+['"]node:/.test(text)) return true
+    for (const next of importsOf(file, cwd)) {
+      if (seen.has(next)) continue
+      seen.add(next)
+      queue.push(next)
+    }
+  }
+  return false
+}
+
+/**
  * A barrel edge that closes a LOOP is refused.
  *
  * `export * from './fold'` looked safe — no name collided — and it broke 34 suites with
@@ -591,6 +627,7 @@ const appendReexport = (
   const file = childFaceFile(dir, target)
   if (!existsSync(file)) return indexContent
   if (wouldCloseALoop(atomPath, file, cwd)) return indexContent
+  if (reachesNodeBuiltin(file, cwd)) return indexContent
   const theirs = faceNames(file)
   if (theirs.size === 0) return indexContent
   for (const name of theirs) if (offered.has(name)) return indexContent

@@ -32,5 +32,3 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   c.set('a', 1)
   console.log('cache — has("a")=' + c.has('a') + ' get("a")=' + c.get('a') + ' size=' + c.size())
 }
-
-export * from './fingerprint'

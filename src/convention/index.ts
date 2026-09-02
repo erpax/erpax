@@ -51,6 +51,4 @@ export const CONVENTIONS: ReadonlyArray<{ readonly law: string; readonly coverag
 export const conventionChecks = (): { law: string; coverage: number }[] =>
   CONVENTIONS.map((c) => ({ law: c.law, coverage: c.coverage() }))
 
-export * from './addressed'
-
 export * from './discern'

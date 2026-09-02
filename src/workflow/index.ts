@@ -255,8 +255,6 @@ function evaluateJsonLogic(_expression: string, _data: Record<string, unknown>):
   return true
 }
 
-export * from './concatenate'
-
 export * from './definitions'
 
 export * from './engine'

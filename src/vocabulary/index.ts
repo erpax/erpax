@@ -85,9 +85,3 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   for (const f of r.flagged) console.log(`  ✗ ${f.atom}  ${f.suggestion}`)
   if (!r.flagged.length) console.log('  ✓ zero entropy — every word from the shared vocabulary')
 }
-
-export * from './agriculture'
-
-export * from './emit'
-
-export * from './maxtampercost'

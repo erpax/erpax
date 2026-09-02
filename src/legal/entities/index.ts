@@ -170,5 +170,3 @@ const LegalEntities: CollectionConfig = {
 }
 
 export default LegalEntities
-
-export * from './consolidations'

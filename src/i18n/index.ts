@@ -174,5 +174,3 @@ export function localeRecord(key: string): Record<string, string> {
 }
 
 export default nestedMessages
-
-export * from './harvest'

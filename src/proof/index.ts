@@ -18,5 +18,3 @@ export {
   checkDryProofPublished,
   asFederationEnvelope,
 } from './dry'
-
-export * from './projection'

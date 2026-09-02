@@ -7,9 +7,3 @@ export function spreadOf(path: string = atomPath) {
 }
 
 export * from './accounting'
-
-export * from './research'
-
-export * from './similar'
-
-export * from './sufficient'

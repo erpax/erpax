@@ -41,5 +41,3 @@ export {
   fullConfirm,
 } from './matter'
 export type { VitepressConfirmResult, PayloadConfirmResult } from './matter'
-
-export * from './probe'

@@ -146,8 +146,4 @@ export function outwardVerdict(rows: readonly OutwardRow[]): OutwardVerdict {
   }
 }
 
-export * from './bg'
-
 export * from './coverage'
-
-export * from './world'

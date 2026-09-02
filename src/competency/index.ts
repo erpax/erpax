@@ -44,5 +44,3 @@ export const competencyLineField = (
     ],
   }
 }
-
-export * from './gap'

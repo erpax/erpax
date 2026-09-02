@@ -134,5 +134,3 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   for (const [k, v] of Object.entries(p)) console.log('    ' + (v ? '✓' : '✗') + ' ' + k)
   console.log('    ⇒ ' + (isDoubleTorusPump() ? 'the double-torus pump' : 'not proven'))
 }
-
-export * from './color'

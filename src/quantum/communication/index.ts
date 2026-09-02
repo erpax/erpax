@@ -24,9 +24,3 @@ if (import.meta.url === 'file://' + process.argv[1]) {
 }
 
 /** @index-cross.foldback child=quantum/communication parent=quantum — this cross folds back into its parent. */
-
-export * from './key'
-
-export * from './superdense'
-
-export * from './teleportation'

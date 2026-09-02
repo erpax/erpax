@@ -41,5 +41,3 @@ export function planIngest(records: readonly AddressedRecord[], seen: ReadonlySe
   }
   return { upsert, skip }
 }
-
-export * from './blogger-to-json'

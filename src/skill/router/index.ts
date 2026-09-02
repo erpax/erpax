@@ -55,12 +55,6 @@ export {
 
 export * from './installed.catalogue'
 
-export * from './prose-entropy'
-
 export * from './resolve'
 
 export * from './serialize'
-
-export * from './merge'
-
-export * from './rating'

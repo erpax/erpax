@@ -4,5 +4,3 @@
  */
 export const WORD = 'standard' as const
 export const atomPath = 'standard' as const
-
-export * from './truth'

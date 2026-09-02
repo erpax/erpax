@@ -114,6 +114,4 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  ⇒ ' + (operates() ? 'OPERATIONAL' : 'DEGRADED'))
 }
 
-export * from './component'
-
 export * from './hardware'
