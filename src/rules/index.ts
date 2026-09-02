@@ -27,6 +27,7 @@ import { linearGapCount, linearLogicCount } from '@/quantum'
 import { engineeringConformance } from '@/engineering'
 import { staleFolds } from '@/deploy/fold'
 import { frameworkCollisions } from './compatibility'
+import { claimsFacing } from './audience'
 import { computeRulesOf, type RulesSnapshot } from './compute'
 
 export {
@@ -201,6 +202,36 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
   const engineeringSeal = seal([
     guardian({ axis: 'engineering', violations: engGaps, baseline: 0 }),
   ])
+  /*
+   * audience — a claim addressed to someone who SIGNS, with nothing able to refute it.
+   *
+   * Every catastrophe this corpus produced took that shape and was invisible from every seat but
+   * one: the cash flow hardcoded to -100000 under `@compliance SOX §302` (the DIRECTOR's personal
+   * certification that the report contains no untrue statement of material fact), the period lock
+   * that was a commented-out query inside an empty `try` under `SOX:2002` (§404, the AUDITOR's
+   * control). A developer reading those files sees plausible code.
+   *
+   * The axis existed, measured, and was listed in this registry's own table — and `rulesOf` never
+   * read it. It was a REPORT, and this corpus's law is that a law is obeyed only when a gate blocks
+   * its violation. `assertNothingUnprovenFacing` had exactly one caller: its own test.
+   *
+   * TWO guardians, not one. The total keeps the whole set monotone; the DIRECTOR is sealed
+   * separately because a single number lets ten director claims be traded for ten finance ones and
+   * net to zero, and §302 is the one signature that is personal.
+   *
+   * Baselines are the live counts (2026-09-02) — walls, not targets. The measurement was 224 across
+   * 7 readers when the axis was written and is 123 across 8 now; sealing it here is what stops that
+   * from going back up.
+   */
+  const facingClaims = claimsFacing(cwd)
+  const audienceSeal = seal([
+    guardian({ axis: 'audience', violations: facingClaims.length, baseline: 123 }),
+    guardian({
+      axis: 'audience-director',
+      violations: facingClaims.filter((c) => c.role === 'director').length,
+      baseline: 13,
+    }),
+  ])
   // compatibility — an atom colliding with a framework router namespace ([[rules]]/compatibility, §5.3).
   // Baseline 0 is the THEOREM (no atom may collide); currently RED at 1 (pages↔Next.js Pages Router), the
   // real #13 co-existence break now ENFORCED as a gate, ratcheting to 0 when pages is renamed to a data slug.
@@ -233,6 +264,7 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     ...hostMathSeal.guardians,
     ...waveGapSeal.guardians,
     ...engineeringSeal.guardians,
+    ...audienceSeal.guardians,
     ...compatibilitySeal.guardians,
     ...provenSeal.guardians,
   ])

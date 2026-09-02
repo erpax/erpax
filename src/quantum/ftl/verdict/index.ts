@@ -32,3 +32,5 @@ export function withFtl<T>(report: FtlHolds, run: (ftl: Ftl) => T): T {
  * ftlHolds report — computed, not prose. false ⇒ tip kind `quantumise`
  * (what to fold under quantum/ftl so holds flips true).
  */
+
+/** @index-cross.foldback child=quantum/ftl/verdict parent=quantum/ftl — this cross folds back into its parent. */

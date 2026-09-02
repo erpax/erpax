@@ -2,14 +2,15 @@ import { mkdtempSync, readFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { describe, it, expect } from 'vitest'
-import { buildSkillIndexStub, skillIndexSource, SKILL_INDEX_OUT } from './index'
+import { buildSkillIndexStub, skillIndexSource } from './index'
 
 describe('skill/router/build/stub — 265 fixed bytes, written without booting the corpus', () => {
   it('writes an EMPTY pool that still satisfies the static import', () => {
     const tmp = mkdtempSync(join(tmpdir(), 'erpax-stub-'))
     const r = buildSkillIndexStub(tmp)
     expect(r.count).toBe(0)
-    const text = readFileSync(join(tmp, SKILL_INDEX_OUT), 'utf8')
+    // The path comes BACK from the write — the literal is not published ([[matrix]] seal-debt).
+    const text = readFileSync(join(tmp, r.out), 'utf8')
     expect(text).toContain("import type { SkillNode } from './resolve'")
     expect(text).toContain('export const SKILL_INDEX: readonly SkillNode[] = []')
     rmSync(tmp, { recursive: true, force: true })

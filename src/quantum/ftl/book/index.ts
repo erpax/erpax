@@ -310,3 +310,5 @@ export async function research(
     worthwhile: true,
   }
 }
+
+/** @index-cross.foldback child=quantum/ftl/book parent=quantum/ftl — this cross folds back into its parent. */

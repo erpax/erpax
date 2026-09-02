@@ -8,9 +8,9 @@ import { exactAbs, exactFloor } from '@/algebra'
  * implemented and ready to be called by a future scheduled close-job.
  * The in-memory `Map<>` storage is a TEST SEAM only — production
  * depreciation now flows through the dedicated
- * `src/services/depreciation.service.ts` (IAS 16/ASC 360 with the full
+ * `src/depreciation/service/index.ts` (IAS 16/ASC 360 with the full
  * canonical method set) and posts JEs via the canonical
- * `period-end-adjustment.hook.ts` on `period-end-adjustments` rows
+ * `src/gl/accounts/period/end/adjustments/hooks/adjustment/index.ts` on `period-end-adjustments` rows
  * transitioning to `status = 'posted'`.
  *
  * **DO NOT USE** the in-memory `createAsset / createInterestAccrual /
@@ -32,8 +32,8 @@ import { exactAbs, exactFloor } from '@/algebra'
  * @accounting US-GAAP ASC-405 liabilities accrued-expenses
  * @compliance SOX §404 internal-controls
  * @audit ISO-19011:2018 audit-trail
- * @see src/services/depreciation.service.ts (production depreciation path)
- * @see src/plugins/accounting/hooks/period-end-adjustment.hook.ts (production GL post)
+ * @see src/depreciation/service/index.ts (production depreciation path)
+ * @see src/gl/accounts/period/end/adjustments/hooks/adjustment/index.ts (production GL post)
  * @see docs/STANDARDS.md §4.2
  */
 

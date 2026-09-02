@@ -138,3 +138,5 @@ export function formatSecretVerdict(v: SecretVerdict): string {
     '  Repo → Settings → Secrets and variables → Actions',
   ].join('\n')
 }
+
+/** @index-cross.foldback child=deploy/secret parent=deploy — this cross folds back into its parent. */

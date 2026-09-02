@@ -16,7 +16,11 @@ import { dirname, join } from 'node:path'
  * @see ../index.ts — the full emit that also writes through this
  */
 
-export const SKILL_INDEX_OUT = 'src/skill/router/skills.index.ts'
+/*
+ * NOT exported. An exported constant is seal-debt ([[matrix]]) — the models publish BEHAVIOUR, not
+ * literals, and a caller that needs this path gets it back from the write itself (`out`).
+ */
+const SKILL_INDEX_OUT = 'src/skill/router/skills.index.ts'
 
 const STUB_NOTE =
   'STUB — empty catch-all pool (CI/deploy). Full corpus: omit --stub. Fits Cloudflare Worker limits.'
@@ -59,3 +63,5 @@ export function buildSkillIndexStub(cwd: string = process.cwd()): SkillIndexWrit
 }
 
 if (process.argv[1] && process.argv[1].endsWith('stub/index.ts')) buildSkillIndexStub()
+
+/** @index-cross.foldback child=skill/router/build/stub parent=skill/router/build — this cross folds back into its parent. */

@@ -24643,6 +24643,68 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "secret",
+    "path": "deploy/secret",
+    "translations": [
+      {
+        "key": "name",
+        "source": "secret",
+        "uuid": "c0f4587d-92c2-8a70-9351-fa7217373bef",
+        "words": [
+          "secret"
+        ],
+        "values": {
+          "en": "secret"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when a workflow references a secret the repository does not hold — the lane dies on its first step, and this says so before the push instead of inside a run someone has to open.",
+        "uuid": "83c72a68-6b5f-85e6-b0eb-3f9d8fadb45c",
+        "words": [
+          "use",
+          "when",
+          "a",
+          "workflow",
+          "references",
+          "a",
+          "secret",
+          "the",
+          "repository",
+          "does",
+          "not",
+          "hold",
+          "the",
+          "lane",
+          "dies",
+          "on",
+          "its",
+          "first",
+          "step",
+          "and",
+          "this",
+          "says",
+          "so",
+          "before",
+          "the",
+          "push",
+          "instead",
+          "of",
+          "inside",
+          "a",
+          "run",
+          "someone",
+          "has",
+          "to",
+          "open"
+        ],
+        "values": {
+          "en": "Use when a workflow references a secret the repository does not hold — the lane dies on its first step, and this says so before the push instead of inside a run someone has to open."
+        }
+      }
+    ]
+  },
+  {
     "atom": "derive",
     "path": "derive",
     "translations": [
@@ -79158,6 +79220,65 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when the skill router index or installed catalogue must emit — buildSkillIndex and buildInstalledCatalogue compile the corpus for fs-less Workers."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "stub",
+    "path": "skill/router/build/stub",
+    "translations": [
+      {
+        "key": "name",
+        "source": "stub",
+        "uuid": "725c546b-990d-81b4-9f3d-5791b37c3c0e",
+        "words": [
+          "stub"
+        ],
+        "values": {
+          "en": "stub"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when CI or a deploy needs skills.index to exist without the 80MB corpus emit — the 265-byte empty pool, written by a module that imports only node:fs and node:path.",
+        "uuid": "756015be-50be-8abc-bde6-ca3e0ada3964",
+        "words": [
+          "use",
+          "when",
+          "ci",
+          "or",
+          "a",
+          "deploy",
+          "needs",
+          "skills",
+          "index",
+          "to",
+          "exist",
+          "without",
+          "the",
+          "mb",
+          "corpus",
+          "emit",
+          "the",
+          "byte",
+          "empty",
+          "pool",
+          "written",
+          "by",
+          "a",
+          "module",
+          "that",
+          "imports",
+          "only",
+          "node",
+          "fs",
+          "and",
+          "node",
+          "path"
+        ],
+        "values": {
+          "en": "Use when CI or a deploy needs skills.index to exist without the 80MB corpus emit — the 265-byte empty pool, written by a module that imports only node:fs and node:path."
         }
       }
     ]
@@ -199117,4 +199238,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3409
+export const TRANSLATIONS_COUNT = 3411
