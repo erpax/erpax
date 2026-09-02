@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about a single immune-cell of the corpus — a guardian watches exactly ONE violation axis against its own committed baseline with a fail-closed ratchet, so a rise on its axis reddens the gate on its own and can never be masked by a fix on another axis. Many guardians cross into one seal.",
-    "uuid": "5dc1b881-0206-87b8-977f-1af4fbb490fb",
+    "uuid": "71b58970-e6dc-86d9-ae8f-d123d4abced6",
     "words": [
       "use",
       "when",

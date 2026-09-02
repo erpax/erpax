@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when working with quantum/ftl/map.",
-    "uuid": "02bdcc8d-6940-8a78-8513-0a88947ff98f",
+    "uuid": "a0d0ce1a-cfc9-820c-8295-e75aa065ef55",
     "words": [
       "use",
       "when",

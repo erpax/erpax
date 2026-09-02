@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reaching the sealing half of the diamond — the receipt that makes a diamond signed rather than merely computed — through its own namespace; the face re-exports the diamond barrel while the matter is still being lifted out of the hub.",
-    "uuid": "7cedd432-3fda-83ed-ae8d-e20857f1731a",
+    "uuid": "de34f2cf-5f90-846b-ad10-eedba49612d5",
     "words": [
       "use",
       "when",
