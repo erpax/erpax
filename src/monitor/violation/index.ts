@@ -39,3 +39,5 @@ export function violationKey(v: Pick<ViolationEvent, 'source' | 'atomPath' | 'de
 }
 
 export type { ViolationEvent, ViolationSeverity, ViolationSource }
+
+/** @index-cross.foldback child=monitor/violation parent=monitor — this cross folds back into its parent. */

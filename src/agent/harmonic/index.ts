@@ -41,3 +41,5 @@ export function classifyMove(move: string): 'harmonic' | Disharmony | null {
 }
 
 export type { Disharmony }
+
+/** @index-cross.foldback child=agent/harmonic parent=agent — this cross folds back into its parent. */

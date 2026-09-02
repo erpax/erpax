@@ -12,7 +12,7 @@ import {
   alphanumericFileStem,
   isAlphanumericStem,
 } from '@/law/folder'
-import { isPinnedBarrel } from './index-cross'
+import { isPinnedBarrel, packageBundledBarrels } from './index-cross'
 
 // The folder-shape law (./index.ts), computed from the live tree. The ratchet
 // decision is pure (no fs / process), so it is regression-locked here; the live
@@ -150,5 +150,21 @@ describe('index-cross: a barrel whose OWN proof pins its face is refused', () =>
   it('the skill barrel is still narrow — the regression this refusal exists for', () => {
     const barrel = readFileSync(join(root, 'skill', 'index.ts'), 'utf8')
     expect(barrel).not.toMatch(/from '\.\/wire'/)
+  })
+})
+
+describe('index-cross: a barrel a PACKAGE bundles is refused — computed, not supplied', () => {
+  const bundled = packageBundledBarrels()
+
+  it('finds the published entries and everything they reach', () => {
+    // Every packages/<atom> entry is its own barrel, so at minimum those are in.
+    expect(bundled.has('src/algebra/index.ts')).toBe(true)
+    expect(bundled.has('src/cloudflare/index.ts')).toBe(true)
+    expect(bundled.size).toBeGreaterThan(50)
+  })
+
+  it('a barrel no package reaches is NOT refused — the edge costs a stranger nothing', () => {
+    expect(bundled.has('src/deploy/index.ts')).toBe(false)
+    expect(bundled.has('src/monitor/index.ts')).toBe(false)
   })
 })

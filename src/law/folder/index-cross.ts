@@ -6,7 +6,7 @@ import { exactMax } from '@/algebra'
  */
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs'
 import ts from 'typescript'
-import { join } from 'node:path'
+import { join, relative } from 'node:path'
 import { nonIndexImports, resolveBarrel, type ImportViolation } from '@/tamper/import'
 import { exportedNames } from '@/rules/face'
 import { importsOf } from '@/rules/cycle'
@@ -615,6 +615,62 @@ const childFaceFile = (dir: string, target: string): string => {
 }
 
 /**
+ * Barrels a published package BUNDLES — COMPUTED, not supplied by whoever runs the pass.
+ *
+ * `export * from './child'` on one of these drags the child into every consumer's install:
+ * wiring 89 such edges blind took @erpax/cloudflare from 73 atoms to 92, +68 files and
+ * +193KB, and blew three closure ratchets. Outside a package closure the identical edge
+ * costs a stranger nothing, which is why this is a refusal and not a ban.
+ *
+ * The `protectedIndexes` PARAMETER below expresses exactly this, and nothing in the tree
+ * ever passed it — the one run that did computed the set inline and threw it away. A
+ * refusal that depends on the caller remembering is not a refusal ([[rules]]: a gate that
+ * can be skipped is prose), so the pass now computes it for itself: every `index.ts`
+ * reachable from a `packages/<atom>` entry over the PARSED import graph.
+ *
+ * HONEST BOUNDARY: the parsed graph OVER-approximates esbuild's closure — a type-only edge
+ * the bundler erases is still an edge here — so it refuses slightly more than it must,
+ * which is the safe direction for a tool that writes bytes. The metafile in
+ * `packages/build.mjs` remains the ratchet's authority; this only decides where not to write.
+ */
+let bundledMemo: { cwd: string; barrels: ReadonlySet<string> } | null = null
+
+export function packageBundledBarrels(cwd: string = process.cwd()): ReadonlySet<string> {
+  if (bundledMemo && bundledMemo.cwd === cwd) return bundledMemo.barrels
+  const entries: string[] = []
+  const pkgRoot = join(cwd, 'packages')
+  let names: string[] = []
+  try {
+    names = readdirSync(pkgRoot)
+  } catch {
+    names = []
+  }
+  for (const name of names) {
+    if (!existsSync(join(pkgRoot, name, 'package.json'))) continue
+    const entry = join(cwd, SRC, name, 'index.ts')
+    if (existsSync(entry)) entries.push(entry)
+  }
+  const seen = new Set<string>(entries)
+  const queue = [...entries]
+  while (queue.length) {
+    const file = queue.pop()!
+    for (const next of importsOf(file, cwd)) {
+      if (seen.has(next)) continue
+      seen.add(next)
+      queue.push(next)
+    }
+  }
+  const barrels = new Set<string>()
+  for (const file of seen) {
+    const rel = relative(join(cwd, SRC), file)
+    if (rel.startsWith('..')) continue
+    if (rel.endsWith('index.ts') || rel.endsWith('index.tsx')) barrels.add(`${SRC}/${rel}`)
+  }
+  bundledMemo = { cwd, barrels }
+  return barrels
+}
+
+/**
  * A barrel whose OWN PROOF pins its face may not be widened — the test states the law.
  *
  * `src/skill/test.ts` asserts the barrel re-exports `./frontmatter` and nothing else, and
@@ -675,7 +731,9 @@ const appendReexport = (
   cwd: string,
   protectedIndexes?: ReadonlySet<string>,
 ): string => {
-  if (protectedIndexes?.has(`${SRC}/${atomPath}/index.ts`)) return indexContent
+  const face = `${SRC}/${atomPath}/index.ts`
+  if (protectedIndexes?.has(face)) return indexContent
+  if (packageBundledBarrels(cwd).has(face)) return indexContent
   if (isPinnedBarrel(dir)) return indexContent
   if (indexContent.includes(`'./${target}'`)) return indexContent
   const file = childFaceFile(dir, target)
