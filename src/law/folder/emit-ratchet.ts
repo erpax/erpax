@@ -7,6 +7,7 @@
 import { existsSync, unlinkSync, writeFileSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import {
+  missingTrackedSources,
   priorAxesForEmit,
   ratchetContentUuid,
   recomputeRatchetSnapshot,
@@ -39,6 +40,16 @@ export function emitRatchet(
   cwd: string = process.cwd(),
   opts?: { fromLive?: boolean; bootstrap?: boolean },
 ): void {
+  // The ceiling descends to the live count, so a scan that cannot SEE the whole corpus would
+  // seal it too tight — and DOWN-only makes that permanent. Refuse rather than under-count.
+  const missing = missingTrackedSources(cwd)
+  if (missing.length > 0) {
+    throw new Error(
+      `emit-ratchet: ${missing.length} tracked source(s) missing from disk — this tree cannot ` +
+        `measure the corpus, and a ceiling sealed from it would be permanently too tight.\n  ` +
+        missing.slice(0, 5).join('\n  '),
+    )
+  }
   const prior = priorAxesForEmit(cwd)
   const snap = existsSync(HAND)
     ? bootstrapFromPrior(cwd)

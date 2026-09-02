@@ -4,6 +4,7 @@
  * Emitted artifact (ratchet.generated.ts) is OUTPUT ONLY — never gate input by hand.
  * Coordinate b576a290 · b2f75a6f.
  */
+import { execFileSync } from 'node:child_process'
 import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { computeContentUuid } from '@/integrity'
@@ -31,6 +32,34 @@ export function ratchetSealPayload(axes: Readonly<Partial<Record<RatchetAxis, nu
 /** Content-uuid over committed axes — tamper detects hand edits. */
 export function ratchetContentUuid(axes: Readonly<Partial<Record<RatchetAxis, number>>>): string {
   return computeContentUuid(ratchetSealPayload(axes), RATCHET_TENANT)
+}
+
+/**
+ * Every tracked file under `src/` that is NOT on disk.
+ *
+ * The ratchet now descends to the live count, so an UNDER-COUNTING scan seals a ceiling too
+ * tight — and DOWN-only makes that permanent. The likeliest way to under-count is the dullest
+ * one: scanning a tree where tracked files are missing (a half-applied move, an interrupted
+ * checkout, a stash in flight). Git's index says what the corpus HAS; the disk says what this
+ * scan could SEE. If they disagree, the scan is not a measurement of the corpus.
+ *
+ * It permits untracked EXTRAS — those can only ever raise a count, and the ratchet refuses to
+ * rise anyway. It is the missing side that is dangerous, so it is the missing side that is
+ * checked.
+ */
+export function missingTrackedSources(cwd: string = process.cwd()): readonly string[] {
+  let listed = ''
+  try {
+    listed = execFileSync('git', ['ls-files', 'src'], { cwd, encoding: 'utf8', maxBuffer: 1 << 28 })
+  } catch {
+    return []
+  }
+  const out: string[] = []
+  for (const rel of listed.split('\n')) {
+    if (!rel) continue
+    if (!existsSync(join(cwd, rel))) out.push(rel)
+  }
+  return out
 }
 
 export type RecomputeRatchetOpts = {

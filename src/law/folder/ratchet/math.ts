@@ -79,7 +79,30 @@ export function mathCeiling(axis: RatchetAxis, violations: number): number {
   return exactCeil(violations / scale)
 }
 
-/** DOWN-only ratchet — committed ceiling never rises above prior math. */
+/**
+ * DOWN-only ratchet — the ceiling descends to what the tree IS, and never rises.
+ *
+ * It used to be `min(prior, mathCeiling(live))`, and `mathCeiling` adds headroom: 315 live
+ * violations yield a math ceiling of 788, so `min(400, 788)` stays 400. The consequence was
+ * that a ceiling could only fall when the live count collapsed far enough for its own headroom
+ * to duck under the prior — which is to say, almost never. Ten axes sat frozen at historic
+ * values while the tree beneath them improved, and `rules check` printed "lower this axis'
+ * baseline to 315 in this commit" about a descent the emitter would not perform. A gate that
+ * instructs an action its own tool refuses is prose.
+ *
+ * Now the realised count IS the ceiling. Zero headroom is the point: a ratchet exists to make
+ * the next violation red, and headroom is a licence to add one for free.
+ *
+ * The math ceiling still governs the BOOTSTRAP (no prior), where there is nothing to hold and
+ * a first seal should not be brittle; and it stays an upper bound here, though for every axis
+ * the scale is <= 1 so `math >= live` and the live count is what binds.
+ *
+ * SAFETY — why this is still safe to run unattended: the operation is monotone. A ceiling can
+ * never rise, whatever the live count does, so a worse tree cannot buy headroom. The hazard is
+ * the mirror: a scan that under-counts seals a ceiling too tight, and DOWN-only makes that
+ * permanent. That is a false RED, the safe direction, but it is real — which is why the
+ * emitter refuses to seal from a tree that is missing tracked files (./compute).
+ */
 export function ratchetDown(
   axis: RatchetAxis,
   prior: number | undefined,
@@ -88,5 +111,5 @@ export function ratchetDown(
   const math = mathCeiling(axis, liveViolations)
   if (!Number.isFinite(math)) return Number.NaN
   if (prior === undefined) return math
-  return exactMin(prior, math)
+  return exactMin(prior, exactMin(math, liveViolations))
 }

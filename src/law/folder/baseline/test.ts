@@ -13,6 +13,7 @@ import {
   bypassMathViolations,
   ratchetContentUuid,
   recomputeRatchetSnapshot,
+  missingTrackedSources,
 } from '../ratchet/compute'
 import { liveViolationCounts, PARALLEL_SCAN_AXES } from '../live-counts'
 import { LANDAUER_BIT } from '@/readme/entropy'
@@ -51,8 +52,25 @@ describe('law/folder baseline — computed from math + ratchet.generated', () =>
   })
 
   it('ratchetDown never raises committed ceiling', () => {
-    expect(ratchetDown('stray-ts', 419, 400)).toBe(exactMin(419, mathCeiling('stray-ts', 400)))
+    expect(ratchetDown('stray-ts', 419, 400)).toBe(400)
+    expect(ratchetDown('stray-ts', 419, 500)).toBe(419)
     expect(ratchetDown('stray-ts', undefined, 10)).toBe(mathCeiling('stray-ts', 10))
+  })
+
+  it('THE CEILING DESCENDS TO LIVE — a realised gain is realised, not merely reported', () => {
+    // It used to be min(prior, mathCeiling(live)), and the math ceiling carries headroom: 315
+    // live yields 788, so min(400, 788) stayed 400. Ten axes sat frozen at historic values
+    // while the tree improved beneath them, and `rules check` kept printing 'lower this axis'
+    // baseline to 315' about a descent the emitter would not perform.
+    expect(mathCeiling('alphanumeric-name', 315)).toBeGreaterThan(400)
+    expect(ratchetDown('alphanumeric-name', 400, 315)).toBe(315)
+  })
+
+  it('zero headroom is the point — the NEXT violation is red', () => {
+    const sealed = ratchetDown('stray-ts', 1052, 877)
+    expect(sealed).toBe(877)
+    expect(877).toBeLessThanOrEqual(sealed)
+    expect(878).toBeGreaterThan(sealed)
   })
 
   it('ratchetContentUuid seals axes payload', () => {
@@ -121,5 +139,27 @@ describe('ratchet — DOWN-only is the property that licenses auto-tightening', 
     // a scan that failed must not be read as "no violations" — that is default-ALLOW by omission
     expect(ratchetDown(RATCHET_AXES[0]!, 100, Number.NaN)).toBeNaN()
     expect(ratchetDown(RATCHET_AXES[0]!, 100, -1)).toBeNaN()
+  })
+})
+
+/*
+ * The descent's one hazard, and its refusal.
+ *
+ * A ceiling that falls to the live count is sealed by whatever the scan could SEE. Scan a tree
+ * with tracked files missing — a half-applied move, an interrupted checkout, a stash in flight
+ * — and the count is low for a reason that has nothing to do with the corpus improving. DOWN-only
+ * then makes that too-tight ceiling permanent.
+ */
+describe('ratchet — the emitter refuses to seal from a tree it cannot measure', () => {
+  it('this tree is complete, so the descent is licensed here', () => {
+    expect(missingTrackedSources()).toEqual([])
+  })
+
+  it('git decides, and untracked EXTRAS are not missing files', () => {
+    // Extras can only ever RAISE a count, and the ratchet refuses to rise — so the check is
+    // one-sided on purpose: it is the missing side that can seal a lie.
+    const missing = missingTrackedSources()
+    expect(Array.isArray(missing)).toBe(true)
+    for (const m of missing) expect(m.startsWith('src/')).toBe(true)
   })
 })
