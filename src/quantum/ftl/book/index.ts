@@ -9,9 +9,9 @@
  */
 import { uuid as toUuid } from '@/integrity'
 import { exactMax } from '@/algebra'
-import { type Seal } from '../map'
-import { BOUNDARY, type Boundary, LANE } from '../constants'
-import { amortize } from '../metrics'
+import { type Seal } from '@/quantum/ftl/map'
+import { BOUNDARY, type Boundary, LANE } from '@/quantum/ftl/constants'
+import { amortize } from '@/quantum/ftl/metrics'
 
 export type ChatLane = 'seal' | 'lane' | 'proxy'
 
