@@ -1,7 +1,7 @@
 {
   "name": "@erpax/cloudflare",
   "version": "0.1.9",
-  "description": "erpax cloudflare — sequence 7·5 (surface): edge runtime, bindings, agents/MCP, deploy. Core math (@erpax/algebra) is MIT; this package is CC-BY-NC-ND-4.0 or commercial via license@erpax.com.",
+  "description": "erpax cloudflare — sequence 7·5 (surface): edge runtime, bindings, agents/MCP, deploy. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",
   "sideEffects": false,

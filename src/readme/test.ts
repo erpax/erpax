@@ -175,12 +175,13 @@ describe('readme — the README is a diamond', () => {
     expect(renderReadme(FIXED)).toBe(renderReadme(FIXED))
   })
 
-  it('licenseNote is GENERATED from algebra USER LAW — core math free; rest via license@erpax.com', () => {
+  it('licenseNote is GENERATED from algebra USER LAW — one licence, every path', () => {
     const agpl = licenseNote('AGPL-3.0-or-later')
-    expect(agpl.join('\n')).toMatch(/Core math/)
-    expect(agpl.join('\n')).toMatch(/src\/algebra\/\*\*/)
-    expect(agpl.join('\n')).toMatch(/free for all/)
+    expect(agpl.join('\n')).toMatch(/Every path/)
     expect(agpl.join('\n')).toMatch(/license@erpax\.com/)
+    // the tier is gone: the generated note may not carve out a free tree
+    expect(agpl.join('\n')).not.toMatch(/free for all/)
+    expect(agpl.join('\n')).not.toMatch(/src\/algebra/)
     expect(licenseNote('GPL-3.0').length).toBeGreaterThan(0) // any copyleft
     expect(licenseNote('MIT')).toEqual([]) // permissive ⇒ no dual-license note
     expect(licenseNote('Apache-2.0')).toEqual([])

@@ -1,7 +1,7 @@
 {
   "upload_type": "software",
   "title": "erpax — a zero-entropy, content-addressed ERP corpus",
-  "description": "<p>erpax is an ERP corpus in which every folder under <code>src/</code> is one irreducible atom told three ways (form &middot; code &middot; proof), wired through a single content-uuid. Its law is <em>zero entropy &rArr; infinite tamper-cost</em>: a claim is enforced by a gate that blocks its violation, never by prose that asks for compliance.</p><p>The licence is tiered: <code>src/algebra/**</code> is MIT; everything else is CC-BY-NC-ND-4.0, with commercial terms available separately.</p>",
+  "description": "<p>erpax is an ERP corpus in which every folder under <code>src/</code> is one irreducible atom told three ways (form &middot; code &middot; proof), wired through a single content-uuid. Its law is <em>zero entropy &rArr; infinite tamper-cost</em>: a claim is enforced by a gate that blocks its violation, never by prose that asks for compliance.</p><p>Licensed CC-BY-NC-ND-4.0 throughout, with commercial terms available separately.</p>",
   "creators": [
     {
       "name": "Rouschev, Tsvetan",

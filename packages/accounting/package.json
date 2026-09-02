@@ -1,7 +1,7 @@
 {
   "name": "@erpax/accounting",
   "version": "0.1.4",
-  "description": "erpax accounting — sequence 6 (hooks): the universal ledger — double-entry journals, GL, polymorphic accountability. Core math (@erpax/algebra) is MIT; this package is CC-BY-NC-ND-4.0 or commercial via license@erpax.com.",
+  "description": "erpax accounting — sequence 6 (hooks): the universal ledger — double-entry journals, GL, polymorphic accountability. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",
   "sideEffects": false,

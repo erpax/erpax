@@ -422,12 +422,9 @@ export {
 } from './host'
 
 export {
-  CORE_MATH_GLOB,
   LICENSE_CONTACT,
   ERPAX_SPDX,
-  CORE_MATH_SPDX,
   SOURCE_URL,
-  isCoreMathPath,
   erpaxLicenseNote,
   citation,
   citationComplies,

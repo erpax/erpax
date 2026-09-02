@@ -1,7 +1,7 @@
 {
   "name": "@erpax/commerce",
   "version": "0.1.0",
-  "description": "erpax commerce — sequence 4·8 (flow): transactional flow — parties, orders, payments, subscriptions, inventory. Core math (@erpax/algebra) is MIT; this package is CC-BY-NC-ND-4.0 or commercial via license@erpax.com.",
+  "description": "erpax commerce — sequence 4·8 (flow): transactional flow — parties, orders, payments, subscriptions, inventory. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",
   "sideEffects": false,

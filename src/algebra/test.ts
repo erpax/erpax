@@ -14,11 +14,8 @@ import {
   isFundamentallyBroken,
   hostMathViolations,
   ALGEBRA_ATOMS,
-  CORE_MATH_GLOB,
   LICENSE_CONTACT,
   ERPAX_SPDX,
-  CORE_MATH_SPDX,
-  isCoreMathPath,
   erpaxLicenseNote,
   SOURCE_URL,
   citation,
@@ -144,24 +141,15 @@ describe('algebra — isFundamentallyBroken: audit a system against its own law'
 })
 
 describe('algebra/license — USER LAW: core math free; rest via contact', () => {
-  it('CORE_MATH_GLOB and LICENSE_CONTACT are the sealed constants', () => {
-    expect(CORE_MATH_GLOB).toBe('src/algebra/**')
-    expect(LICENSE_CONTACT).toBe('license@erpax.com')
+  it('ONE licence, every path — a tier is a seam and there is none', () => {
     expect(ERPAX_SPDX).toBe('CC-BY-NC-ND-4.0')
-    expect(CORE_MATH_SPDX).toBe('MIT')
+    expect(LICENSE_CONTACT).toBe('license@erpax.com')
+    // the core-math tier is gone: no path resolves to a different licence, and the
+    // citation for the former free tree carries the same terms as any other
+    expect(citation({ path: 'src/algebra/index.ts' })).toContain(ERPAX_SPDX)
+    expect(citation({ path: 'src/algebra/index.ts' })).toContain(LICENSE_CONTACT)
+    expect(citation({ path: 'src/algebra/index.ts' })).not.toContain('MIT')
   })
-
-  it('isCoreMathPath accepts only src/algebra/**', () => {
-    expect(isCoreMathPath('src/algebra')).toBe(true)
-    expect(isCoreMathPath('src/algebra/index.ts')).toBe(true)
-    expect(isCoreMathPath('src/algebra/license.ts')).toBe(true)
-    expect(isCoreMathPath('src/algebra/host/index.ts')).toBe(true)
-    expect(isCoreMathPath('./src/algebra/foo')).toBe(true)
-    expect(isCoreMathPath('src/readme/compute.ts')).toBe(false)
-    expect(isCoreMathPath('src/algebraic')).toBe(false)
-    expect(isCoreMathPath('LICENSE')).toBe(false)
-  })
-
   it('citation carries attribution + SPDX tier + source URL + commercial + uuid, and complies', () => {
     const c = citation({ path: 'src/rules/ask', uuid: '9ed56c0c-52f2-8d11-a64b-9a751bdfdf98' })
     expect(c).toContain('erpax:src/rules/ask')
@@ -173,12 +161,15 @@ describe('algebra/license — USER LAW: core math free; rest via contact', () =>
     expect(citationComplies(c)).toBe(true)
   })
 
-  it('citation uses the MIT tier for core math and omits the commercial contact', () => {
-    const c = citation({ path: 'src/algebra/index.ts' })
-    expect(c).toContain(CORE_MATH_SPDX)
-    expect(c).not.toContain(ERPAX_SPDX)
-    expect(c).not.toContain(LICENSE_CONTACT)
-    expect(citationComplies(c)).toBe(true)
+  it('the former core-math tree cites the SAME terms as any other path', () => {
+    const core = citation({ path: 'src/algebra/index.ts' })
+    const rest = citation({ path: 'src/rules/ask' })
+    expect(core).toContain(ERPAX_SPDX)
+    expect(core).toContain(LICENSE_CONTACT)
+    expect(core).not.toContain('MIT')
+    // one licence means the path decides nothing about the terms
+    expect(core.replace('src/algebra/index.ts', 'X')).toBe(rest.replace('src/rules/ask', 'X'))
+    expect(citationComplies(core)).toBe(true)
   })
 
   it('citation states the modification when the matter was changed (BY-NC-ND §3(a)(1)(B))', () => {
@@ -191,21 +182,23 @@ describe('algebra/license — USER LAW: core math free; rest via contact', () =>
     expect(citationComplies(`© erpax · ${ERPAX_SPDX}`)).toBe(false)
   })
 
-  it('erpaxLicenseNote emits free core + contact for the restricted tier; nothing for permissive', () => {
+  it('erpaxLicenseNote states ONE licence for a restricted SPDX; nothing for a permissive one', () => {
     const note = erpaxLicenseNote('CC-BY-NC-ND-4.0').join('\n')
-    expect(note).toMatch(/free for all/)
-    expect(note).toMatch(/src\/algebra\/\*\*/)
-    expect(note).toMatch(/@erpax\/algebra/)
+    expect(note).toMatch(/Every path/)
+    expect(note).toMatch(/CC-BY-NC-ND-4\.0/)
     expect(note).toMatch(/license@erpax\.com/)
+    // no tier survives in the generated note — no free tree, no path carve-out
+    expect(note).not.toMatch(/free for all/)
+    expect(note).not.toMatch(/src\/algebra/)
     expect(erpaxLicenseNote('MIT')).toEqual([])
   })
 
-  it('@erpax/algebra package.json license matches CORE_MATH_SPDX; root stays private', () => {
+  it('@erpax/algebra carries the SAME licence as the corpus; root stays private', () => {
     const root = join(process.cwd())
     const pkg = JSON.parse(readFileSync(join(root, 'packages/algebra/package.json'), 'utf8'))
     const app = JSON.parse(readFileSync(join(root, 'package.json'), 'utf8'))
     expect(pkg.name).toBe('@erpax/algebra')
-    expect(pkg.license).toBe(CORE_MATH_SPDX)
+    expect(pkg.license).toBe(ERPAX_SPDX)
     expect(pkg.private).not.toBe(true)
     expect(app.private).toBe(true)
     expect(app.license).toBe(ERPAX_SPDX)

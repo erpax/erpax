@@ -103,7 +103,7 @@ describe('deploy/pipeline — a publisher that cannot fail is not a release', ()
   })
 
   it('CATCHES a publisher with no test step — the state publish-algebra shipped in', () => {
-    // It published @erpax/algebra, the MIT package others consume, with no test and
+    // It published @erpax/algebra, a package others consume, with no test and
     // no gate: checkout → build → assert tag → publish. Synthetic rather than a
     // mutation of the real file, so the law is tested and not the formatting.
     const d = repo()

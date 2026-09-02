@@ -32,7 +32,9 @@ describe('erpax — the orientation face', () => {
     expect(skill).toMatch(/CC-BY-NC-ND-4\.0/)
     const readme = readFileSync(join(process.cwd(), 'packages/erpax/README.md'), 'utf8')
     expect(readme).toMatch(/Zero entropy/)
-    expect(readme).toMatch(/MIT/)
+    expect(readme).toMatch(/CC-BY-NC-ND-4\.0/)
+    // ONE licence — the shipped README may not advertise a free tier that no longer exists
+    expect(readme).not.toMatch(/\bMIT\b/)
   })
 
   it('carries no application — the face ships orientation, never the licensed app', () => {

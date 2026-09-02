@@ -131,7 +131,7 @@ export function releaseGuards(cwd: string = process.cwd()): PipelineViolation[] 
 /**
  * Every PUBLISHING workflow must test what it publishes, before it publishes.
  *
- * publish-algebra shipped @erpax/algebra — the MIT core-math package others consume —
+ * publish-algebra shipped @erpax/algebra — the core-math package others consume —
  * with no test and no gate at all: checkout, build, assert tag, publish. A publisher
  * that cannot fail is not a release; it is a copy.
  */

@@ -25,11 +25,11 @@ A URL that is not erpax is **refused with a reason**. An orientation pointing no
 
 ## The providers
 
-Each ships one capability: [`@erpax/access`](https://www.npmjs.com/package/@erpax/access) · [`@erpax/accounting`](https://www.npmjs.com/package/@erpax/accounting) · [`@erpax/cloudflare`](https://www.npmjs.com/package/@erpax/cloudflare) · [`@erpax/commerce`](https://www.npmjs.com/package/@erpax/commerce) · [`@erpax/identity`](https://www.npmjs.com/package/@erpax/identity). The free core math is [`@erpax/algebra`](https://www.npmjs.com/package/@erpax/algebra) (MIT).
+Each ships one capability: [`@erpax/access`](https://www.npmjs.com/package/@erpax/access) · [`@erpax/accounting`](https://www.npmjs.com/package/@erpax/accounting) · [`@erpax/algebra`](https://www.npmjs.com/package/@erpax/algebra) · [`@erpax/cloudflare`](https://www.npmjs.com/package/@erpax/cloudflare) · [`@erpax/commerce`](https://www.npmjs.com/package/@erpax/commerce) · [`@erpax/identity`](https://www.npmjs.com/package/@erpax/identity).
 
 ## Licence
 
-Tiered, and the package states it in code as well as here: `src/algebra/**` is **MIT**; everything else is **CC-BY-NC-ND-4.0**, with commercial terms via `license@erpax.com`.
+**CC-BY-NC-ND-4.0**, every path, with commercial terms via `license@erpax.com`. There is no tier: a tier is two answers to *"may I use this"*, and the path deciding which one you get.
 
 Cite the corpus by its DOI — the version is its content address, so a release names exactly the content it archives.
 
