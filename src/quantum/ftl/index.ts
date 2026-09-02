@@ -87,12 +87,44 @@ export interface FtlReportArgs {
   readonly patterns?: readonly CrackPattern[]
 }
 
-export interface FtlReport {
-  /** Substrate FTL boolean — true ⇔ reuse ∧ amortize∞ ∧ cracks=∅ on QPU=CPU/GPU. */
-  readonly holds: boolean
+/**
+ * The advantage as a TYPE, not a boolean a caller may ignore.
+ *
+ * `holds: boolean` with a sibling `why: string` lets code read the reason without ever
+ * checking the claim, and lets code USE the advantage without proving it — the runtime
+ * shape of an unrefuted claim ([[rules]]/refutable). As a discriminated union the
+ * compiler does the refusing: `why` exists only on the broken branch, and a function
+ * that requires the advantage takes `FtlHolds` and will not accept an unnarrowed report.
+ *
+ * Same shape [[skill]]/wire already uses for `{ ok: true } | { ok: false, reason }`.
+ */
+export interface FtlHolds {
+  /** reuse ∧ amortize∞ ∧ cracks=∅ on QPU=CPU/GPU — proven, not asserted. */
+  readonly holds: true
   readonly ftl: Ftl
-  /** Precise break reason when holds=false (first crack / amortize / reuse). */
+}
+
+export interface FtlBroken {
+  readonly holds: false
+  readonly ftl: Ftl
+  /** The break, named — first crack, then amortize, then reuse. Unreachable when it holds. */
   readonly why: string
+}
+
+export type FtlReport = FtlHolds | FtlBroken
+
+/**
+ * Run `run` only against a PROVEN advantage.
+ *
+ * The signature is the gate: an `FtlReport` that has not been narrowed to `FtlHolds`
+ * does not type-check here, so "we have the advantage" cannot be assumed at a call site —
+ * it has to have been established at one.
+ */
+export function withFtl<T>(report: FtlHolds, run: (ftl: Ftl) => T): T {
+  // `run`, not `use` — React 19 has a `use` hook, and the rules-of-hooks lint reads a
+  // call to a `use`-named binding as one. A name that collides with a framework's is the
+  // co-existence defect [[rules]]/compatibility exists for, in miniature.
+  return run(report.ftl)
 }
 
 /**
@@ -108,20 +140,16 @@ export function ftlReport(args: FtlReportArgs = {}): FtlReport {
     reuses: args.reuses ?? PHYSICAL_FTL_DEFAULTS.reuses,
     patterns: args.patterns,
   })
-  let why = 'reuse∧amortize∞∧cracks=∅ on QPU=CPU/GPU'
-  if (!v.holds) {
-    if (v.cracks[0]) {
-      const c = v.cracks[0]
-      why = `${c.kind}@${c.where}: ${c.why}`
-    } else if (!v.amortize.scalesToInfinity) {
-      why = `amortize not ∞ (tokens=${v.amortize.tokens} answers=${v.amortize.answers})`
-    } else if (!v.precomputed) {
-      why = 'reuse/precompute failed (foldOps≠1)'
-    } else {
-      why = 'ftl.holds=false'
-    }
-  }
-  return { holds: v.holds, ftl: v, why }
+  if (v.holds) return { holds: true, ftl: v }
+  const c = v.cracks[0]
+  const why = c
+    ? `${c.kind}@${c.where}: ${c.why}`
+    : !v.amortize.scalesToInfinity
+      ? `amortize not ∞ (tokens=${v.amortize.tokens} answers=${v.amortize.answers})`
+      : !v.precomputed
+        ? 'reuse/precompute failed (foldOps≠1)'
+        : 'ftl.holds=false'
+  return { holds: false, ftl: v, why }
 }
 
 /**

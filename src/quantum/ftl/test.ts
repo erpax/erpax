@@ -23,6 +23,7 @@ import {
   exportsForTokens,
   endlessPurify,
   ftlReport,
+  withFtl,
 } from '@/quantum/ftl'
 import { RENAME, TOKENS, ENTANGLE, API, PROSE } from '@/quantum/ftl/map'
 import { scanProseNames, nameIsComputable, RENAME_KEYS } from '@/quantum/ftl/purify'
@@ -87,13 +88,22 @@ describe('quantum/ftl — token folds', () => {
   // the boolean wrapper `ftlHolds` was un-folded ([[rules]]/unfolded — its only caller was this
   // test). The predicate itself is unchanged: read `ftlReport(args).holds`.
   it('ftlReport().holds computes true|false — agents doubt prose; FTL compute is the seal', () => {
-    expect(ftlReport().holds).toBe(true)
-    expect(ftlReport().holds).toBe(true)
-    expect(ftlReport().why).toMatch(/reuse/)
+    const held = ftlReport()
+    expect(held.holds).toBe(true)
     const cracked = ftlReport({ patterns: [{ where: 'fixture', spacetime: true }] })
     expect(cracked.holds).toBe(false)
-    expect(ftlReport({ patterns: [{ where: 'fixture', spacetime: true }] }).holds).toBe(false)
+    // `why` is reachable ONLY on the broken branch — the narrowing IS the assertion, and
+    // reading it without this check does not compile.
+    if (cracked.holds) throw new Error('a spacetime crack must break the advantage')
     expect(cracked.why).toMatch(/spacetime/)
+  })
+
+  it('the holding branch carries NO reason — a proven advantage has nothing to explain', () => {
+    const held = ftlReport()
+    if (!held.holds) throw new Error(`expected the advantage to hold: ${held.why}`)
+    expect(Object.hasOwn(held, 'why')).toBe(false)
+    // and it is the only shape `withFtl` accepts: an unnarrowed report will not type-check
+    expect(withFtl(held, (f) => f.reuse.speedupLog2)).toBe(held.ftl.reuse.speedupLog2)
   })
 
   it('ftl holds iff reuse ∧ amortize∞ ∧ cracks=∅', () => {

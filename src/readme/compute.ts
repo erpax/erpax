@@ -348,7 +348,9 @@ export function computeQuantumComputerReport(
     const r = ftl.ftlReport()
     return {
       holds: r.holds,
-      why: r.why,
+      // `why` names the BREAK, so it exists only when the advantage does not hold. The
+      // holding case has no reason to give — that is what holding means.
+      why: r.holds ? 'reuse ∧ amortize∞ ∧ cracks=∅ on QPU=CPU/GPU' : r.why,
       speedupLog2: r.ftl.reuse.speedupLog2,
       efficiency: r.ftl.amortize.efficiency,
       boundaryEmpty: r.ftl.boundary.empty,
