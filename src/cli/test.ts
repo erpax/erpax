@@ -4,6 +4,7 @@ import { join } from 'node:path'
 import { GATE_LANES } from './gate'
 import { CLI_REGISTRY, LEGACY_ALIASES, AURA_SCAN_PATH, resolveAction } from './registry'
 import { suggestNearestDomain, printHelp, DOMAIN_GROUPS } from './help'
+import { exactMaxOf, exactMinOf } from '@/algebra'
 import { shardIndexOf } from './local'
 import { collectDoctorReport, formatDoctorReport, runDoctorStalls } from './doctor'
 import { topFailedAxes, AXIS_FIX_HINTS, formatRulesFailureSummary } from './rules-check'
@@ -206,7 +207,7 @@ describe('test waves --shard — the roster is partitioned BY ADDRESS', () => {
   it('spreads the roster — no shard carries a third of it', () => {
     const counts = new Array(16).fill(0)
     for (const s of roster) counts[shardIndexOf(s, 16) - 1]!++
-    expect(Math.max(...counts)).toBeLessThan(roster.length / 3)
-    expect(Math.min(...counts)).toBeGreaterThan(0)
+    expect(exactMaxOf(counts)).toBeLessThan(roster.length / 3)
+    expect(exactMinOf(counts)).toBeGreaterThan(0)
   })
 })

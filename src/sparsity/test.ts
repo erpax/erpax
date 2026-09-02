@@ -17,7 +17,13 @@ import {
 } from './index'
 
 describe('sparsity — the corpus measured on its own claim', () => {
-  it('THE LIVE MEASUREMENT: the router activates a tiny fraction of the pool', () => {
+  /*
+   * 120s, not the 30s default: this test SCANS the live corpus — 3,400 atom paths plus a skill
+   * realisation — and the scan memoises. Warm it is 588ms; COLD it is ~49s, which is what a
+   * fresh CI runner always gets. It went red on shard 15 for exactly that reason, and a bound
+   * that fails on a cold cache measures the cache, not the claim.
+   */
+  it('THE LIVE MEASUREMENT: the router activates a tiny fraction of the pool', { timeout: 120_000 }, () => {
     const pool = listAtomPaths(process.cwd()).length
     const ctx = realiseSkillsForPath('src/sparsity/index.ts')
     const r = report({ pool, active: ctx.atomCount })
