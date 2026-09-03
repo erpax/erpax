@@ -89,8 +89,8 @@ src/agents/accounting/finance.agent.ts:17: * @standard IFRS IFRS-15 §38 point-i
 src/agents/accounting/finance.agent.ts:18: * @standard IFRS IAS-7 statement-of-cash-flows
 src/agents/accounting/finance.agent.ts:19: * @standard SOX §404 process-walk-through-controls
 src/agents/mcp/atom-catalogue.generated.ts:9: * @standard MCP 0.6 tools/list (skill projection)
-src/agents/mcp/auto-generated.ts:43: * @standard MCP 0.6 — tools/list (auto-generation extension)
-src/agents/mcp/auto-generated.ts:44: * @standard ISO/IEC 25010:2023 §5.4 reusability + §5.7 modularity
+src/agents/mcp/auto-generated.ts:42: * @standard MCP 0.6 — tools/list (auto-generation extension)
+src/agents/mcp/auto-generated.ts:43: * @standard ISO/IEC 25010:2023 §5.4 reusability + §5.7 modularity
 src/agents/mcp/dry-clean.test.ts:16: * @standard ISO/IEC 25010:2023 §5.4 reusability (DRY by detection)
 src/agents/mcp/dry-clean.ts:31: * @standard ISO/IEC 25010:2023 §5.4 reusability — DRY by detection
 src/agents/mcp/dry-clean.ts:32: * @standard ISO/IEC 25010:2023 §5.7 modularity
@@ -5489,7 +5489,7 @@ src/agent/types/index.ts:16: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec
 src/agent/ui/index.ts:11: * @audit every facet computed from the atom's content-uuid; coverage read live from the matrix
 src/agents/accounting/finance.agent.ts:20: * @audit ISO-19011:2018 §6.4.6 audit-evidence
 src/agents/mcp/atom-catalogue.generated.ts:10: * @audit ISO 19011:2018 §6.4.6 (catalogue traceable to the SKILL.md corpus)
-src/agents/mcp/auto-generated.ts:45: * @audit ISO 19011:2018 §6.4.6 (auto-generation traceable to spec)
+src/agents/mcp/auto-generated.ts:44: * @audit ISO 19011:2018 §6.4.6 (auto-generation traceable to spec)
 src/agents/mcp/dry-clean.test.ts:17: * @audit Conservation Law 50 mcp-dry-cleanliness
 src/agents/mcp/dry-clean.ts:33: * @audit ISO 19011:2018 §6.4.6 (every duplication finding audit-trailed)
 src/agents/mcp/i18n/index.ts:36: * @audit ISO 19011:2018 §6.4.6 (audit-evidence available in user's locale)

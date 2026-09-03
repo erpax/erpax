@@ -21,10 +21,9 @@
  *   - Every Standards family yields a `erpax.auto.standards.<family>`
  *     tool listing the family's spinning citations.
  *
- *   - Every skill atom (the SKILL.md corpus, via the generated atom
- *     catalogue) yields a `erpax.auto.skill.<atom>` tool returning its
- *     metadata — so an MCP-only agent discovers + reads every skill
- *     without ever walking the filesystem.
+ *   - The skill corpus yields a DISCOVERY PAIR — `erpax.skill.list` and
+ *     `erpax.skill.read` — so an MCP-only agent finds and reads every
+ *     skill without walking the filesystem, and without 2,807 tools.
  *
  * The generated tools have `generated: true` in their description
  * so external clients can distinguish them from hand-curated ones.
@@ -52,7 +51,7 @@ import { manifestOf } from '@/agent'
 import { BUSINESS_CHAINS } from '@/business/chain'
 import { listTenantRoles } from '@/tenant/role'
 import { TAMPER_PROOF_COLLECTIONS_REGISTRY } from '@/integrity'
-import { loadAtomCatalogue, lookupAtomSkill, atomCatalogueLength } from './atom-catalogue-lazy'
+import { loadAtomCatalogue, atomCatalogueLength } from './atom-catalogue-lazy'
 import { loadSkillByAtomPath } from '@/skill/router/lazy-load'
 
 const text = (s: string) => ({ content: [{ text: s, type: 'text' as const }] })
@@ -133,32 +132,126 @@ function toolsForStandardsFamilies(): ErpaxMcpTool[] {
 }
 
 /**
- * Derive an MCP tool for every skill atom in the corpus (the generated
- * catalogue). Each skill becomes `erpax.auto.skill.<atom>`, returning its
- * metadata (name, description, path) — so an MCP-only agent discovers +
- * reads every skill without a filesystem walk. The skill corpus is a spec
- * primitive like agents/chains/roles; it self-projects the same way.
+ * THE DISCOVERY PAIR — 2,807 skill tools become two.
+ *
+ * Every skill atom used to yield its own `erpax.auto.skill.<atom>` tool. That is a CATALOGUE
+ * wearing a tool surface, and it made the server unusable by the clients it exists for:
+ *
+ *     tools           3,078   of which 2,807 were one-skill-each
+ *     tools/list        968 KB   of which 835 KB was those 2,807
+ *
+ * An MCP client puts the whole tool list in front of a model. No model has 968 KB of tool
+ * budget, and selection accuracy collapses long before that — a surface nothing can load is
+ * not a surface. The capability is unchanged: `list` finds an atom, `read` returns exactly
+ * what the per-skill tool returned. Two tools instead of 2,807, and 3,078 → 273.
+ *
+ * The primitive is still fully exposed (Conservation Law 37): the pair reaches EVERY atom in
+ * the catalogue, which is what "exposed" has to mean once one-tool-per-thing stops scaling.
  */
 function toolsForSkills(): ErpaxMcpTool[] {
-  return loadAtomCatalogue().map((skill) => ({
-    name: `erpax.auto.skill.${skill.atom}`,
-    description: `[generated] skill atom '${skill.name}': ${skill.description}`,
-    parameters: {} as z.ZodRawShape,
-    async handler() {
-      const meta = lookupAtomSkill(skill.atom) ?? skill
-      const sealed = loadSkillByAtomPath(meta.path)
-      return json({
-        atom: meta.atom,
-        name: meta.name,
-        description: meta.description,
-        path: meta.path,
-        sealedExcerpt: sealed?.excerpt ?? null,
-        excerptChars: sealed?.excerptChars ?? 0,
-        fullChars: sealed?.fullChars ?? 0,
-        contentUuid: sealed?.contentUuid ?? null,
-      })
+  return [
+    {
+      name: 'erpax.skill.list',
+      description:
+        'List skill atoms in the corpus — the discovery half of the skill pair. `q` filters on atom path, name and description; `limit`/`offset` page. Returns atom · name · description, and the total, so a client can page rather than load every skill as its own tool.',
+      parameters: {
+        q: z.string().optional().describe('substring filter over atom path, name and description'),
+        limit: z.number().int().min(1).max(200).optional().describe('page size (default 50)'),
+        offset: z.number().int().min(0).optional().describe('page offset (default 0)'),
+      } as z.ZodRawShape,
+      async handler(args: { q?: string; limit?: number; offset?: number }) {
+        const all = loadAtomCatalogue()
+        const needle = (args.q ?? '').toLowerCase()
+        /*
+         * RANKED, because the first page is the only page a model reads. Searching
+         * descriptions too is what makes the pair as findable as 2,807 named tools were — but
+         * unranked it answered q='cycle' with `active · animal · base`, atoms whose PROSE
+         * mentions a cycle, while `rules/cycle` sat further down. An exact atom is the answer;
+         * a path match is nearly always the answer; a description match is a lead.
+         */
+        const rank = (s: { atom: string; name: string; description: string }): number => {
+          const atom = s.atom.toLowerCase()
+          if (atom === needle) return 0
+          if (atom.split('/').includes(needle)) return 1
+          if (atom.includes(needle)) return 2
+          if (s.name.toLowerCase().includes(needle)) return 3
+          return 4
+        }
+        const matched = needle
+          ? all
+              .filter(
+                (s) =>
+                  s.atom.toLowerCase().includes(needle) ||
+                  s.name.toLowerCase().includes(needle) ||
+                  s.description.toLowerCase().includes(needle),
+              )
+              .sort((a, b) => rank(a) - rank(b) || a.atom.localeCompare(b.atom))
+          : all
+        const offset = args.offset ?? 0
+        const limit = args.limit ?? 50
+        return json({
+          total: matched.length,
+          corpusTotal: all.length,
+          offset,
+          limit,
+          // PATH is returned, not only the leaf: leaves COLLIDE (`cycle` is rules/cycle AND
+          // water/cycle), and a client that only ever saw the leaf could not tell them apart.
+          skills: matched
+            .slice(offset, offset + limit)
+            .map((s) => ({ atom: s.atom, path: s.path, name: s.name, description: s.description })),
+        })
+      },
     },
-  }))
+    {
+      name: 'erpax.skill.read',
+      description:
+        'Read one skill atom by its path — the read half of the skill pair. Returns the same payload the per-atom tool returned: name, description, path, sealed excerpt and content-uuid. Find the atom with erpax.skill.list.',
+      parameters: {
+        atom: z.string().describe("atom path, e.g. 'rules/cycle' — as returned by erpax.skill.list"),
+      } as z.ZodRawShape,
+      async handler(args: { atom: string }) {
+        /*
+         * RESOLVED BY PATH FIRST, and AMBIGUITY IS REFUSED.
+         *
+         * The catalogue keys atoms by LEAF, and leaves collide: `cycle` is `rules/cycle` AND
+         * `water/cycle`. `lookupAtomSkill('rules/cycle')` returns the water one — a wrong answer
+         * that reads exactly like a right one, which [[rules]]/reference calls worse than no
+         * answer at all. (The 2,807 named tools had the same collision, invisibly: only one
+         * atom per leaf ever got a tool.)
+         *
+         * So: an exact path wins; a unique leaf wins; an ambiguous leaf returns the candidates
+         * and refuses to pick.
+         */
+        const all = loadAtomCatalogue()
+        const byPath = all.find((s) => s.path === args.atom)
+        const byLeaf = all.filter((s) => s.atom === args.atom)
+        if (!byPath && byLeaf.length > 1) {
+          return json({
+            error: `'${args.atom}' is a LEAF shared by ${byLeaf.length} atoms — name the path`,
+            candidates: byLeaf.map((s) => s.path),
+          })
+        }
+        const meta = byPath ?? byLeaf[0] ?? null
+        if (!meta) {
+          return json({
+            error: `unknown skill atom '${args.atom}'`,
+            hint: 'call erpax.skill.list with q= to find it',
+          })
+        }
+        const sealed = loadSkillByAtomPath(meta.path)
+        return json({
+          atom: meta.atom,
+          name: meta.name,
+          description: meta.description,
+          path: meta.path,
+          sealedExcerpt: sealed?.excerpt ?? null,
+          excerptChars: sealed?.excerptChars ?? 0,
+          fullChars: sealed?.fullChars ?? 0,
+          contentUuid: sealed?.contentUuid ?? null,
+        })
+      },
+    },
+  ]
 }
 
 /**
@@ -215,15 +308,22 @@ export function checkAutoGenerationCoverage(
   const collectionTools = [...TAMPER_PROOF_COLLECTIONS_REGISTRY].filter((s) => toolNames.has(`erpax.auto.collection.${s}.verify`)).length
   const roleTools = listTenantRoles().filter((r) => toolNames.has(`erpax.auto.role.${r.id.replace(/[^a-z0-9-]/g, '-')}`)).length
   const familyTools = STANDARDS_FAMILIES.filter((f) => toolNames.has(`erpax.auto.standards.${f}`)).length
+  /*
+   * Skills are covered by the PAIR, not one tool each. `erpax.skill.list` reaches every atom in
+   * the catalogue and `erpax.skill.read` returns any of them, so the primitive is exposed in the
+   * sense the law means — a client can discover and read all of it. One-tool-per-thing was a
+   * stricter reading that produced 2,807 tools and a surface no client could load.
+   */
   const skillsCount = atomCatalogueLength()
-  const skillTools = loadAtomCatalogue().filter((s) => toolNames.has(`erpax.auto.skill.${s.atom}`)).length
+  const skillPairPresent = toolNames.has('erpax.skill.list') && toolNames.has('erpax.skill.read')
+  const skillTools = skillPairPresent ? skillsCount : 0
 
   if (agentTools < agentsCount) violations.push(`agents: ${agentTools}/${agentsCount} have auto-generated tools`)
   if (chainTools < chainsCount) violations.push(`chains: ${chainTools}/${chainsCount} have auto-generated tools`)
   if (collectionTools < collectionsCount) violations.push(`collections: ${collectionTools}/${collectionsCount} have auto-generated verify tools`)
   if (roleTools < rolesCount) violations.push(`roles: ${roleTools}/${rolesCount} have auto-generated tools`)
   if (familyTools < familiesCount) violations.push(`standards families: ${familyTools}/${familiesCount} have auto-generated tools`)
-  if (skillTools < skillsCount) violations.push(`skills: ${skillTools}/${skillsCount} have auto-generated tools`)
+  if (!skillPairPresent) violations.push(`skills: the discovery pair (erpax.skill.list + erpax.skill.read) is missing — ${skillsCount} atoms unreachable`)
 
   return {
     ok: violations.length === 0,
