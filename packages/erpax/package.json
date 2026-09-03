@@ -36,7 +36,8 @@
     "prepublishOnly": "node ../build.mjs erpax"
   },
   "erpax": {
-    "closureCeiling": 4
+    "closureCeiling": 4,
+    "sizeCeilingKb": 3
   },
   "keywords": [
     "erpax",

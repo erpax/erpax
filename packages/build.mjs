@@ -95,6 +95,35 @@ async function buildOne(atom) {
     )
   }
 
+  /*
+   * THE BYTE RATCHET — because the atom count did not say what it costs.
+   *
+   * `@erpax/cloudflare` sits at its 73-atom ceiling and ships 5.8 MB, and a consumer calling the
+   * simplest thing in it pays all of it. Measured, entry by entry:
+   *
+   *   @/cloudflare/constants alone          0 KB ·  1 atom
+   *   kvGet · kvPut · r2Get · r2Put     5,836 KB · 73 atoms
+   *   the whole face                    5,880 KB · 73 atoms
+   *
+   * One edge does it: `cloudflare/bindings.ts` imports `@/diamond`, which imports
+   * `@/readme/compute`, which imports `@/rules` — the entire gate registry, and `typescript` with
+   * it. Those diamond-derivation functions SCAN `src/` on disk, so they cannot run in a Worker at
+   * all; the package's own runtime half pays 5.8 MB to carry tooling its target runtime cannot
+   * execute. Cutting it is a face change (`bindingDiamond` and friends leaving the barrel), which
+   * is a decision, not a build flag.
+   *
+   * So the size is a ratcheted FACT until then: it may fall freely and may not rise. An atom
+   * ceiling counts entanglement; this counts what the entanglement weighs.
+   */
+  const sizeKb = Math.round(statSync(join(dist, 'index.js')).size / 1024)
+  const sizeCeiling = pkg.erpax?.sizeCeilingKb ?? Number.POSITIVE_INFINITY
+  if (sizeKb > sizeCeiling) {
+    throw new Error(
+      `size ratchet: ${atom} ships ${sizeKb}KB > ceiling ${sizeCeiling}KB — ` +
+        `a consumer pays this on install; cut the edge or raise the ceiling in the same diff`,
+    )
+  }
+
   const allRootDeps = { ...rootPkg.devDependencies, ...rootPkg.dependencies }
   const deps = {}
   const peers = {}

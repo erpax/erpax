@@ -36,7 +36,8 @@
     "prepublishOnly": "node ../build.mjs access"
   },
   "erpax": {
-    "closureCeiling": 23
+    "closureCeiling": 23,
+    "sizeCeilingKb": 31
   },
   "dependencies": {
     "zod": "3.25.76"

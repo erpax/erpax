@@ -36,7 +36,8 @@
     "prepublishOnly": "node ../build.mjs cloudflare"
   },
   "erpax": {
-    "closureCeiling": 73
+    "closureCeiling": 73,
+    "sizeCeilingKb": 5879
   },
   "dependencies": {
     "typescript": "5.9.3",

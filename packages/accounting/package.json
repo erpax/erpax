@@ -36,7 +36,8 @@
     "prepublishOnly": "node ../build.mjs accounting"
   },
   "erpax": {
-    "closureCeiling": 9
+    "closureCeiling": 9,
+    "sizeCeilingKb": 36
   },
   "keywords": [
     "accounting",

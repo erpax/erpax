@@ -36,7 +36,8 @@
     "prepublishOnly": "node ../build.mjs commerce"
   },
   "erpax": {
-    "closureCeiling": 1
+    "closureCeiling": 1,
+    "sizeCeilingKb": 3
   },
   "keywords": [
     "commerce",
