@@ -12,7 +12,7 @@
  * @see ./wrangler.ts · ./seal.ts · ../diamond · ../path
  */
 import { uuid, jcsCanonicalize } from '@/integrity'
-import { toAtomPath } from '@/path'
+import { toAtomPath } from '@/path/fold'
 
 /** Every Wrangler binding section Cloudflare documents (plus repo-specific unsafe bindings). */
 export const CLOUDFLARE_BINDING_TYPES = [

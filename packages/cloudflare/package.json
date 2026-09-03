@@ -1,6 +1,6 @@
 {
   "name": "@erpax/cloudflare",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "Cloudflare Workers surface for erpax — binding registries, AI-gateway keys, wrangler env shapes, deploy faces. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",
@@ -36,8 +36,8 @@
     "prepublishOnly": "node ../build.mjs cloudflare"
   },
   "erpax": {
-    "closureCeiling": 17,
-    "sizeCeilingKb": 4701
+    "closureCeiling": 15,
+    "sizeCeilingKb": 100
   },
   "dependencies": {
     "zod": "3.25.76"

@@ -24,7 +24,7 @@ import {
   deploymentFaces,
   diamondUuid,
 } from '@/diamond'
-import { toAtomPath, atomPathUuid } from '@/path'
+import { toAtomPath, atomPathUuid } from '@/path/fold'
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { parseWranglerBindings } from '../wrangler'

@@ -26,8 +26,6 @@
  * @see ./coil ./axis ./polarity ./cmyk ./octave ./torus (the claims) -- this proves them
  */
 import { digitalRoot, composeSteps, nextOctave } from '@/horo'
-import { UUID_MATRIX_NODES as N } from '@/uuid/matrix'
-import { digitalRootOfUuid } from '@/digit'
 
 /** The doubling helix -- the units of (ℤ/9ℤ)* in ⟨2⟩ walk order. */
 export const DOUBLING = [1, 2, 4, 8, 7, 5] as const
@@ -122,20 +120,6 @@ export function cayleyIsCyclic(): { holds: boolean; whole: number; generators: n
   return { holds, whole: n * n, generators: n, freeParameters: holds ? 0 : n * n }
 }
 
-/** Each vortex state carried by content-uuids (word·digit·uuid): count + a sample per digit. */
-export function stateUuids(): { digit: number; channel?: string; count: number; sample?: { atom: string; uuid: string; contentDigit: number } }[] {
-  return [...VORTEX_SEQUENCE].map((d) => {
-    const here = N.filter((node) => node.horo === d)
-    const s = here[0]
-    return {
-      digit: d,
-      channel: (CMYK as Record<number, string>)[d],
-      count: here.length,
-      sample: s ? { atom: s.atom, uuid: s.uuid, contentDigit: digitalRootOfUuid(s.uuid) } : undefined,
-    }
-  })
-}
-
 /** {0,3,6,9} = {K,C,M,Y}; 0/K is the key/origin; 9→1 wraps to the next dimension's base. */
 export function cmykKey(): { gamut: { digit: number; channel: string }[]; key: number; keyChannel: string; wrap: number } {
   return { gamut: [0, 3, 6, 9].map((d) => ({ digit: d, channel: (CMYK as Record<number, string>)[d]! })), key: 0, keyChannel: CMYK[0], wrap: nextOctave(9) }
@@ -164,14 +148,13 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   const p = proof()
   const g = doublingGroup()
   const cay = cayleyIsCyclic()
-  const populated = stateUuids().filter((s) => s.count > 0).length
   console.log('rodin -- vortex math proven as (ℤ/9ℤ) arithmetic (computed, not asserted):')
   console.log('  doubling helix ⟨2⟩ = ' + g.orbit.join('·') + '   order ' + g.order + ' = φ(9)   equalsUnits=' + g.equalsUnits)
   console.log('  reverse ×5 = ' + reverseIsInverse().reverse.join('·') + '   (2·5 ≡ ' + composeSteps(2, 5) + ')')
   console.log('  axis 3·6·9 off-circuit; 3↔6 swap, 9 fixed; flow:control = 6:3 = 2/3')
   console.log('  hologram: ' + cay.generators + ' generators → ' + cay.whole + ' Cayley cells; free parameters = ' + cay.freeParameters + ' (zero entropy ⇒ ∞ forge cost)')
   console.log('  CMYK {0,3,6,9} = {K,C,M,Y}; key = 0/K; 9 → ' + nextOctave(9) + ' (next dimension)')
-  console.log('  states carried by uuids: ' + populated + '/10 digits populated across ' + N.length + ' nodes')
+  console.log('  states carried by uuids: see @/rodin/state (needs the live matrix)')
   console.log('  PROOF: ' + Object.entries(p).map(([k, v]) => k + '=' + v).join('  '))
   if (!Object.values(p).every(Boolean)) process.exit(1)
 }

@@ -12,7 +12,7 @@ import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import type { WranglerBindingEntry } from './bindings'
 import { parseWranglerBindings } from './wrangler'
-import { toAtomPath } from '@/path'
+import { toAtomPath } from '@/path/fold'
 import {
   decryptIfUuid,
   identityUuidForContent,

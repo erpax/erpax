@@ -1,6 +1,6 @@
 {
   "name": "@erpax/identity",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Content-addressed identity — RFC 9562 v8 uuids folded from content, so the same content is always the same id. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",

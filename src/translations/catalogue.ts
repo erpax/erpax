@@ -53043,6 +53043,63 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "fold",
+    "path": "path/fold",
+    "translations": [
+      {
+        "key": "name",
+        "source": "fold",
+        "uuid": "456181e4-c8c0-8faf-84a6-098707e46a7e",
+        "words": [
+          "fold"
+        ],
+        "values": {
+          "en": "fold"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when folding any address surface to the one canonical atom path — pure string work, with none of the 4.2 MB corpus matrix its parent barrel loads for the ring walk.",
+        "uuid": "eda0d7d7-243f-820e-8882-be45f185f0d0",
+        "words": [
+          "use",
+          "when",
+          "folding",
+          "any",
+          "address",
+          "surface",
+          "to",
+          "the",
+          "one",
+          "canonical",
+          "atom",
+          "path",
+          "pure",
+          "string",
+          "work",
+          "with",
+          "none",
+          "of",
+          "the",
+          "mb",
+          "corpus",
+          "matrix",
+          "its",
+          "parent",
+          "barrel",
+          "loads",
+          "for",
+          "the",
+          "ring",
+          "walk"
+        ],
+        "values": {
+          "en": "Use when folding any address surface to the one canonical atom path — pure string work, with none of the 4.2 MB corpus matrix its parent barrel loads for the ring walk."
+        }
+      }
+    ]
+  },
+  {
     "atom": "payload",
     "path": "payload",
     "translations": [
@@ -65994,6 +66051,60 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reasoning about the two directions of the rodin doubling cycle — 3 and 6 are the polarity boundaries: forward helix (×2, cyan, outbound/give) ↔ reverse helix (×5, magenta, inbound/take). The mirror pair the coil winds between. Nested under rodin."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "state",
+    "path": "rodin/state",
+    "translations": [
+      {
+        "key": "name",
+        "source": "state",
+        "uuid": "22bafabd-68b2-8c08-9074-2496f0d04746",
+        "words": [
+          "state"
+        ],
+        "values": {
+          "en": "state"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when asking which content-uuids carry each vortex state — the one rodin function that needs the live matrix, kept off the arithmetic that everyone else imports.",
+        "uuid": "cc2c1522-8d75-89fa-b246-49f7123a5614",
+        "words": [
+          "use",
+          "when",
+          "asking",
+          "which",
+          "content",
+          "uuids",
+          "carry",
+          "each",
+          "vortex",
+          "state",
+          "the",
+          "one",
+          "rodin",
+          "function",
+          "that",
+          "needs",
+          "the",
+          "live",
+          "matrix",
+          "kept",
+          "off",
+          "the",
+          "arithmetic",
+          "that",
+          "everyone",
+          "else",
+          "imports"
+        ],
+        "values": {
+          "en": "Use when asking which content-uuids carry each vortex state — the one rodin function that needs the live matrix, kept off the arithmetic that everyone else imports."
         }
       }
     ]
@@ -199303,4 +199414,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3412
+export const TRANSLATIONS_COUNT = 3414

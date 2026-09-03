@@ -1,10 +1,11 @@
 import { describe, it, expect } from 'vitest'
 import {
   doublingGroup, reverseIsInverse, axisOffCircuit, nineIsVoid, octaveFixesDigit,
-  cayleyIsCyclic, compositionMatrix, stateUuids, cmykKey, proof,
+  cayleyIsCyclic, compositionMatrix, cmykKey, proof,
   orbit, unitsMod9, DOUBLING, AXIS, RODIN_FLOW_RATIO, RODIN_CONTROL_RATIO,
   zeroDivision, zeroDivisionRoutesAgree,
 } from '@/rodin'
+import { stateUuids } from '@/rodin/state'
 import { UUID_MATRIX_NODES } from '@/uuid/matrix'
 
 // Marko Rodin's vortex math proven as (ℤ/9ℤ) arithmetic. Every assertion is a
