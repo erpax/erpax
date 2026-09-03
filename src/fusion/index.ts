@@ -19,6 +19,7 @@
  */
 import { merge, UUID_MATRIX_NODES as N } from '@/uuid/matrix'
 import { reactor, type ReactorReadout } from '@/fusion/reactor'
+export * from './face'
 
 /** A single fusion: the SYMMETRIC content-uuid collision (the entangle binding) of two atoms. */
 export const fuse = (a: string, b: string): string => (a <= b ? merge(a, b) : merge(b, a))

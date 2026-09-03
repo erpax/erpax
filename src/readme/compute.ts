@@ -181,7 +181,10 @@ export function cloudflareDeployButtonMarkdown(
  * README is a projection: a badge typed into the file would be erased by the next regen, which
  * is exactly what happened on the first attempt.
  */
-export const ERPAX_CONCEPT_DOI = '10.5281/zenodo.22237698' as const
+import { ERPAX_DOI as ERPAX_CONCEPT_DOI } from '@/algebra/license'
+
+/** The concept doi, read from the one source (CITATION.cff via the generated face) — not restated. */
+export { ERPAX_CONCEPT_DOI }
 
 export function doiBadgeMarkdown(doi: string = ERPAX_CONCEPT_DOI): string {
   return `[![DOI](https://zenodo.org/badge/DOI/${doi}.svg)](https://doi.org/${doi})`

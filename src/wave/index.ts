@@ -1,6 +1,19 @@
 import { randomUUID } from 'node:crypto'
 import { Rational, INITIAL_CONFIDENCE, incrementConfidence, CONVERGENCE_THRESHOLD, gte } from '@/exact'
 
+/**
+ * The outcome of asking whether a record may be deposited — never a claim that it WAS.
+ *
+ * `doi` is `null` until a registration agency assigns one. `eligible` is the part this process can
+ * decide; `refusal` names what it cannot do, so a caller cannot mistake silence for success.
+ */
+export interface WavePublication {
+  readonly doi: string | null
+  readonly zenodoId: string
+  readonly eligible: boolean
+  readonly refusal: string
+}
+
 export interface WaveRecord {
   readonly timestamp: number
   readonly problem: string
@@ -63,28 +76,35 @@ export async function recordFinding(
 export async function streamPublish(
   record: WaveRecord,
   convergenceThreshold: Rational = CONVERGENCE_THRESHOLD,
-): Promise<{ doi: string; zenodoId: string } | null> {
+): Promise<WavePublication | null> {
   if (!gte(record.confidence, convergenceThreshold)) {
     return null
   }
 
-  const doi = `10.5281/zenodo.${Math.floor(Math.random() * 1000000)}`
+  // A DOI is a REGISTERED identifier (ISO 26324) — it is assigned by a registration agency, never
+  // computed locally. This function used to mint `10.5281/zenodo.${Math.random()}` and log
+  // "[PUBLISH] … → DOI …", so a caller received a well-formed identifier for a deposit that was
+  // never made, and the ledger below counted it as `published`. That is a false statement of
+  // provenance, not a placeholder: nothing downstream could tell it from a real registration.
+  //
+  // Eligibility is decidable here and is what this returns. Registration is not: it needs a Zenodo
+  // deposition and a credential this process does not hold, so it REFUSES and names what is missing.
   const zenodoId = `zenodo-${randomUUID().substring(0, 8)}`
-
-  console.log(
-    `[PUBLISH] ${record.problem} (confidence: ${record.confidence}) → DOI ${doi} (${zenodoId})`,
-  )
-
-  return { doi, zenodoId }
+  return {
+    doi: null,
+    zenodoId,
+    eligible: true,
+    refusal: 'no Zenodo deposition was made — a DOI is registered by the agency, never minted here',
+  }
 }
 
 export async function ledgerRecord(
   wave: QCWave,
   record: WaveRecord,
-  publication?: { doi: string; zenodoId: string },
+  publication?: WavePublication,
 ): Promise<WaveState> {
   const updatedRecord: WaveRecord = publication
-    ? { ...record, doi: publication.doi, zenodoId: publication.zenodoId }
+    ? { ...record, doi: publication.doi ?? undefined, zenodoId: publication.zenodoId }
     : record
 
   const newLedger = [...wave.state.ledger, updatedRecord]

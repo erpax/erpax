@@ -50,9 +50,12 @@ export async function executeSystem(rootProblem: string = 'Millennium Problems')
   const publicationDois: string[] = []
 
   for (const convergence of convergences) {
-    const doi = `10.5281/zenodo.${Math.floor(Math.random() * 10000000)}`
-    publicationDois.push(doi)
-    executionLog.push(`[PUBLISH] ${convergence.problem} → DOI ${doi}`)
+    // No DOI is minted here. One used to be — `10.5281/zenodo.${Math.random()}` — and it was pushed
+    // into `publicationDois` and logged as though a deposit had happened. A DOI is registered by an
+    // agency (ISO 26324); a locally generated one is a fabricated provenance record.
+    executionLog.push(
+      `[PUBLISH] ${convergence.problem} → converged; NOT deposited (no Zenodo credential in this process)`,
+    )
   }
 
   const endTime = Date.now()
@@ -72,19 +75,27 @@ export async function executeSystem(rootProblem: string = 'Millennium Problems')
 }
 
 // Publish results to Zenodo
+/**
+ * Ask to publish, and REFUSE — this process holds no Zenodo credential, so nothing is deposited.
+ *
+ * It previously returned a `10.5281/zenodo.<random>` DOI and a `zenodo.org/records/…` URL while
+ * making no network call at all, with `console.log('[ZENODO] Publishing …')` beside it. Its own
+ * test asserted `publication.doi` matched `/10\\.5281/` — which a random number always does — so a
+ * green suite certified a publication that never happened.
+ */
 export async function publishResults(execution: ExecutionResult): Promise<{
   record_id: string
-  doi: string
-  url: string
+  doi: null
+  url: null
+  published: false
+  refusal: string
 }> {
   const recordId = `zenodo_${execution.executionId}`
-  const doi = `10.5281/zenodo.${Math.floor(Math.random() * 10000000)}`
-  const url = `https://zenodo.org/records/${recordId}`
+  const doi = null
+  const url = null
 
-  console.log(`[ZENODO] Publishing execution results`)
+  console.log(`[ZENODO] REFUSED — no deposition made; this process holds no Zenodo credential`)
   console.log(`[ZENODO] Record ID: ${recordId}`)
-  console.log(`[ZENODO] DOI: ${doi}`)
-  console.log(`[ZENODO] URL: ${url}`)
   console.log(`[ZENODO] Execution log size: ${execution.executionLog.length} lines`)
   console.log(`[ZENODO] Publication DOIs captured: ${execution.publicationDois.length}`)
 
@@ -92,6 +103,8 @@ export async function publishResults(execution: ExecutionResult): Promise<{
     record_id: recordId,
     doi,
     url,
+    published: false as const,
+    refusal: 'no deposition was made — a DOI is assigned by a registration agency, never minted here',
   }
 }
 

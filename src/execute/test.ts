@@ -9,11 +9,16 @@ describe('execute', () => {
     expect(result.totalObservations).toBeGreaterThan(0)
   })
 
-  it('publishes results to Zenodo', async () => {
+  it('REFUSES to publish, and returns no identifier it did not receive', async () => {
+    // This test previously read `expect(publication.doi).toMatch(/10\.5281/)` against a DOI built
+    // from Math.random(). It passed for the same reason it always would, and it was named
+    // "publishes results to Zenodo" — a green suite certifying a deposit that never happened.
     const execution = await executeSystem('Riemann Hypothesis')
     const publication = await publishResults(execution)
-    expect(publication.doi).toMatch(/10\.5281/)
-    expect(publication.url).toContain('zenodo.org')
+    expect(publication.published).toBe(false)
+    expect(publication.doi).toBeNull()
+    expect(publication.url).toBeNull()
+    expect(publication.refusal).toMatch(/registration agency/)
   })
 
   it('captures wave tree structure', async () => {
@@ -35,11 +40,8 @@ describe('execute', () => {
     expect(result.executionLog[0]).toContain('EXECUTE')
   })
 
-  it('publishes converged problems as DOIs', async () => {
+  it('mints no DOI for a converged problem — convergence is not deposition', async () => {
     const result = await executeSystem('Goldbach Conjecture')
-    expect(result.publicationDois.length).toBeGreaterThanOrEqual(0)
-    for (const doi of result.publicationDois) {
-      expect(doi).toMatch(/10\.5281/)
-    }
+    expect(result.publicationDois).toEqual([])
   })
 })

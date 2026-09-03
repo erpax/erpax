@@ -40,8 +40,18 @@ export const SOURCE_URL = 'https://github.com/erpax/erpax' as const
  * which is the same defect [[rules]]/reference gates inside the corpus: a pointer that resolves
  * to something other than what was cited.
  */
+/**
+ * The concept doi — an EXTERNAL fact, assigned by Zenodo and declared in CITATION.cff.
+ *
+ * It cannot be computed from the fold, so it is seal-debt by [[matrix]]/constants-audit's rule and
+ * counted as such. The lawful fold is a generated face read from CITATION.cff (the file the world
+ * actually reads); that was attempted and reverted, because every available path for a new file
+ * added a violation on another already-saturated axis. Named here rather than hidden.
+ */
 export const ERPAX_DOI = '10.5281/zenodo.22237698' as const
-export const DOI_URL = `https://doi.org/${ERPAX_DOI}` as const
+
+/** The resolvable form of a doi. Derived, so it cannot drift from the value above. */
+export const doiUrl = (doi: string = ERPAX_DOI): string => `https://doi.org/${doi}`
 
 /** What an agent needs to cite one piece of corpus matter in license compliance. */
 export interface CitationInput {

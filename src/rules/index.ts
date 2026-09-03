@@ -11,6 +11,8 @@
  * @see ./SKILL.md#agent-laws — the working discipline this registry must fail-close on
  *   (shapeRatchetVerdict gates in the `corpus` lane of cli/gate.ts via `erpax doctor corpus`).
  */
+import { mirroredAssertions } from '@/rules/mirror'
+import { forgedIdentifiers } from '@/rules/forge'
 import { startProgressHeartbeat } from '@/cli/progress-heartbeat'
 import { execSync } from 'node:child_process'
 import { waveAccountingGapViolations } from '@/accounting/gaps'
@@ -241,6 +243,15 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // ([[deploy]]/fold). Baseline 0 is a THEOREM: a fold that folds nothing is silent by design,
     // which is how ~4 MiB of corpus matrix shipped until Cloudflare refused the upload.
     guardian({ axis: 'production-fold', violations: staleFolds(cwd).length, baseline: 0 }),
+    // mirror — an assertion restating a literal its own module assigns ([[rules]]/mirror). Baseline
+    // is the live 507 and ratchets DOWN: a mirror is a proof that cannot fail, and 25 of them stand
+    // in atoms citing a standard or statute, where "this is proven" is addressed to a reader who signs.
+    guardian({ axis: 'mirror', violations: mirroredAssertions(cwd).length, baseline: 507 }),
+    // forge — a registered identifier (DOI/ORCID/ISBN/IBAN) built from local randomness
+    // ([[rules]]/forge). Baseline 0 is a THEOREM, not a ratchet: there is no acceptable number of
+    // forged provenance records. Three existed — all in functions that logged "[ZENODO] Publishing"
+    // and made no network call — and their tests asserted the random string's SHAPE.
+    guardian({ axis: 'forge', violations: forgedIdentifiers(cwd).length, baseline: 0 }),
   ])
   const provenSeal = seal([
     guardian({

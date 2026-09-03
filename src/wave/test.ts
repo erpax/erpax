@@ -33,8 +33,12 @@ describe('wave', () => {
     }
 
     const publication = await streamPublish(record, CONVERGENCE_THRESHOLD)
+    // The old form asserted `doi` matched /10\.5281\/zenodo\.\d+/ against Math.random() output —
+    // an assertion that a template string is a template string, standing in for a registration.
     expect(publication).toBeDefined()
-    expect(publication?.doi).toMatch(/10\.5281\/zenodo\.\d+/)
+    expect(publication?.eligible).toBe(true)
+    expect(publication?.doi).toBeNull()
+    expect(publication?.refusal).toMatch(/never minted here/)
     expect(publication?.zenodoId).toMatch(/zenodo-[a-z0-9]+/)
   })
 
@@ -57,8 +61,10 @@ describe('wave', () => {
 
     const updatedState = await ledgerRecord(wave, record, publication || undefined)
     expect(updatedState.ledger).toHaveLength(1)
-    expect(updatedState.ledger[0]?.doi).toBeDefined()
-    expect(updatedState.published).toBe(1)
+    // The ledger counts what was REGISTERED. Nothing was, so the honest count is 0 — it read 1
+    // because a fabricated identifier satisfied `filter(r => r.doi)`.
+    expect(updatedState.ledger[0]?.doi).toBeUndefined()
+    expect(updatedState.published).toBe(0)
   })
 
   it('detects convergence at high confidence', async () => {

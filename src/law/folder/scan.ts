@@ -72,7 +72,13 @@ export function folderViolations(root: string = SRC): FolderViolations {
     }
     const files = new Set(entries.filter((e) => !isDir(join(dir, e))))
     if (CODE_MARKERS.some((m) => files.has(m))) {
-      const missing = TRINITY.filter((f) => !files.has(f))
+      // A React atom's barrel is `index.tsx`, and the bundler resolves `@/atom` to it exactly as it
+      // resolves `index.ts` — so demanding the `.ts` spelling from a folder that HAS a barrel is a
+      // false positive, measured at 6. It is not licence for the other direction: a `.tsx`-only
+      // folder still fails to be a CODE_MARKERS atom, and 29 of those escape this law entirely.
+      // That hole is real and named in [[law]]/folder's SKILL; closing it changes what counts as an
+      // atom (most are framework-shaped `blocks/form/*`), which is a decision, not a bug fix.
+      const missing = TRINITY.filter((f) => !files.has(f) && !(f === 'index.ts' && files.has('index.tsx')))
       if (missing.length) trinity.push({ folder: rel || '.', missing, law: 'trinity' })
     }
     for (const e of entries) {
