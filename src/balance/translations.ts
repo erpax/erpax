@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about equilibrium in erpax — Σdebit=Σcredit, trial balance, conservation laws, two sides of a flow at rest. The universal root of equilibrium.",
-    "uuid": "db620d7b-4313-8672-b7fb-7d01a5985372",
+    "uuid": "b55f47d2-319d-8bad-aa38-64d60666e313",
     "words": [
       "use",
       "when",

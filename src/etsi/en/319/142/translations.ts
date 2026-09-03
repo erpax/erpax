@@ -15,8 +15,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when implementing or referencing `src/standards/etsi-en-319-142/`.",
-    "uuid": "7a1ca459-da2d-84d9-8ca4-fd6d3fe332b5",
+    "source": "Use when implementing or referencing `src/etsi/en/319/142/index.ts`.",
+    "uuid": "50f4dd48-a75b-8f21-af67-d4ff39bbd5a0",
     "words": [
       "use",
       "when",
@@ -24,12 +24,13 @@ export const translations: readonly Translation[] = [
       "or",
       "referencing",
       "src",
-      "standards",
       "etsi",
-      "en"
+      "en",
+      "index",
+      "ts"
     ],
     "values": {
-      "en": "Use when implementing or referencing `src/standards/etsi-en-319-142/`."
+      "en": "Use when implementing or referencing `src/etsi/en/319/142/index.ts`."
     }
   }
 ]

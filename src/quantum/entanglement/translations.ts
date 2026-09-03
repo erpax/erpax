@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when grounding the corpus link-field in the physics of quantum entanglement — EPR/Bell correlation, no-cloning, monogamy (CKW), and ER=EPR; the reciprocal, monogamous binding computed on the matrix.",
-    "uuid": "339cff22-a68f-8bb6-85b7-91e4d6bd4969",
+    "uuid": "0141e6d1-5b67-8932-9248-3a93a59db00b",
     "words": [
       "use",
       "when",

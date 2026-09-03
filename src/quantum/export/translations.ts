@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about quantum computed export — each file's public facet (index.ts symbols, SKILL atom name) derived from source, content-addressed; the producer dual of quantum import.",
-    "uuid": "c7812d00-2084-8674-b3a0-16cbaff86140",
+    "uuid": "46183050-6fe0-8b86-96ca-60f4fae0ddb4",
     "words": [
       "use",
       "when",

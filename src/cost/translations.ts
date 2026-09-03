@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when optimising ANY cost in the society against output — one efficiency law for every cost (ai tokens, money, energy, time, labor, entropy), measured against productivity AND creativity. efficiency = output / cost, where output = productivity (verified, committed, repeatable work) + creativity (novel atoms/solutions, which compound because they're reused). The society and the agent maximise output-per-cost for every kind; competition selects the most efficient, decompression pays for it; waste (spend that produced nothing) drives to 0.",
-    "uuid": "dc3925f2-d3c7-8dfb-8fc0-ef84726b8cb3",
+    "uuid": "32f3c4a3-f6fa-8bb1-9f3a-047d067b6f12",
     "words": [
       "use",
       "when",

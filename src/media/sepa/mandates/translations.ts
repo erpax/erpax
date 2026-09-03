@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing SEPA Direct Debit mandates (pain.008) — mandate id, debtor IBAN/BIC, creditor identifier, signature date, CORE/B2B instrument, sequence-state (FRST→RCUR), 36-month expiry rule, revocation, and linkage to PaymentRuns. The EPC130-08 SDD mandate register.",
-    "uuid": "81455cd4-ecad-8547-a34f-3e7c0a0972db",
+    "uuid": "4a7499b8-b9cd-8e5f-a50c-3ddb64678489",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading the id a Payload relationship points at — idOf collapses the three shapes Payload resolves a relationship to (raw string id, numeric id, or the populated document) into one id, or undefined. Depth is a query concern and must not change identity.",
-    "uuid": "04b9fca6-bf1a-84e3-a8c4-94d6c67dcb21",
+    "uuid": "154fe255-f618-8fc9-ae9f-6946901ef3f6",
     "words": [
       "use",
       "when",

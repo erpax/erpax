@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when registering, citing, superseding or querying any published standard (IFRS, ISO, W3C, RFC, EU Directive, etc.) against a tenant — conflict graph, supersession trail, per-module citation index, per-tenant adoption status. The live standards-registry collection backing the erpax.standards.* MCP tool family.",
-    "uuid": "fb813c26-606b-8f3c-813e-49f1e3d67f40",
+    "uuid": "ee681375-d422-8129-aa05-ccc370c49fa4",
     "words": [
       "use",
       "when",

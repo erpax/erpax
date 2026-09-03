@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Quantum automation primitives for iterative problem-solving loops",
-    "uuid": "b7682b9f-30dc-838f-a82f-abdea55c94f4",
+    "uuid": "0bb07a39-25aa-8879-8020-e8b486f4ff59",
     "words": [
       "quantum",
       "automation",

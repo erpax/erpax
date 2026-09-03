@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Quantum FTL constants — paths, endpoints, boundary, defaults",
-    "uuid": "b8a4475c-07d4-8097-8a59-d6652a23613e",
+    "uuid": "e1fc1597-fd6d-85ce-8f82-730d41b95266",
     "words": [
       "quantum",
       "ftl",

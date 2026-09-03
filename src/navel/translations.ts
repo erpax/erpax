@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the solar plexus center (Manipura) — index 2 of the seven centers, a standalone projection of the chakra ring whose colour is rendered from a uuid computed from the position math, with the traditional fire-of-identity role named only as cultural overlay, never claimed.",
-    "uuid": "0433736a-a472-8a7f-98cc-6eab41d1ebe7",
+    "uuid": "3953b753-0805-866a-a2f4-ebda9cdc153f",
     "words": [
       "use",
       "when",

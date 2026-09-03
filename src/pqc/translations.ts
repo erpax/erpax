@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "NIST post-quantum cryptography (Kyber-768 + SPHINCS+)",
-    "uuid": "2ea8793b-5d07-86f9-b163-76c79c8f2204",
+    "uuid": "68954dce-5810-8ad1-af4e-3526efe2505f",
     "words": [
       "nist",
       "post",

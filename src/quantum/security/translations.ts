@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when auditing or hardening erpax — security is bidirectional, the love and fear duality on the trust layer; the quantum twin runs both lenses at once (blue verifies the control holds, red prices forging past it) so a finding is a balanced attack-and-defense pair and audit coverage is the metric.",
-    "uuid": "f99357d5-0766-84c0-a0a3-66bb11a4f026",
+    "uuid": "3a7c88c9-b6ca-8b4f-9db8-be49627564c5",
     "words": [
       "use",
       "when",

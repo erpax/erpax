@@ -15,8 +15,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when implementing or referencing `src/standards/iso-14289/`.",
-    "uuid": "a94bfa5d-3c7e-8e14-8ad4-e9117cb2c45d",
+    "source": "Use when implementing or referencing `src/iso/14289/index.ts`.",
+    "uuid": "7637d47b-30fe-85be-9c9a-de30d75a99cf",
     "words": [
       "use",
       "when",
@@ -24,11 +24,12 @@ export const translations: readonly Translation[] = [
       "or",
       "referencing",
       "src",
-      "standards",
-      "iso"
+      "iso",
+      "index",
+      "ts"
     ],
     "values": {
-      "en": "Use when implementing or referencing `src/standards/iso-14289/`."
+      "en": "Use when implementing or referencing `src/iso/14289/index.ts`."
     }
   }
 ]

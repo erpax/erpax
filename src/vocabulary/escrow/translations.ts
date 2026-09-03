@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when funds are held by a third party (escrow agent) pending satisfaction of contract conditions — separate legal/financial status from held-to-maturity or restricted cash per IAS-7",
-    "uuid": "dcd592cc-e174-8734-9216-2c150e91bfcc",
+    "uuid": "3f193522-11a1-8a59-988e-af94683fb1eb",
     "words": [
       "use",
       "when",

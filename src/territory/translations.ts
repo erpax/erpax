@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when organizing sales coverage — geographic or account-based territory, assignment to rep, quota per territory, coverage/overlap rules.",
-    "uuid": "e018023f-39dc-8f50-a701-0b535849c0bc",
+    "uuid": "7850f783-4238-8896-914f-5062120d4575",
     "words": [
       "use",
       "when",

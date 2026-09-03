@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "rules/concentration — detect logic concentrated in hub index.ts vs child atoms.",
-    "uuid": "149fe770-bd0c-8472-85d5-685f65b2383d",
+    "uuid": "a14c09f4-4b45-877a-94a7-6129c5a36dcf",
     "words": [
       "rules",
       "concentration",

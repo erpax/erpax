@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a horo position or any uuid must become perceivable — colour, sound, realtime motion — derived from the address itself with zero per-item design; identity IS its render, drift is visible.",
-    "uuid": "b07c4c47-2331-81c8-acac-1fc4f19d359c",
+    "uuid": "ba7bfb50-bf7f-8933-bcd3-aae88c4b94e3",
     "words": [
       "use",
       "when",

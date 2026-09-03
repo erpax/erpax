@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking whether the corpus stays symmetrically entangled — the computed convention that every directed edge is reciprocated, measured live as coverage = reciprocal / total over the real uuid-matrix.",
-    "uuid": "84067aea-8f7e-8aa4-8de6-934fdb2f73c5",
+    "uuid": "9bc0abac-f5de-805c-8a4f-09dfb2bdefe3",
     "words": [
       "use",
       "when",

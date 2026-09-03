@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when hardening erpax toward infinite tamper-cost — why every security lever must be gate-FORCED (a stray fails, exit 2), never merely advisory. The cost is the minimum across dimensions, so the weakest avoidable gap is the cheapest forgery; only the unavoidable raises the floor.",
-    "uuid": "2511a949-2d24-87c7-b199-7ccd45696b7b",
+    "uuid": "903ef5e4-328b-8d68-89b7-fb1001b02942",
     "words": [
       "use",
       "when",

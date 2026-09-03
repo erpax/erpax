@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the quantum cross — it IS the fusion of a dual torus (re-exports src/dual/torus/fusion as one identity); two tori, the two infinities, fused at the centre into one, the infinite seal at 1/0.",
-    "uuid": "6920dc8a-245d-89af-b230-e6cbcb964fbc",
+    "uuid": "4e4cff44-2942-80fe-9826-97e4c73fe6ce",
     "words": [
       "use",
       "when",
