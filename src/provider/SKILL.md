@@ -1,6 +1,6 @@
 ---
 name: provider
-description: "Use when reasoning about provider — The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider m"
+description: "Use when wiring the app-wide React context tree — the one place theme, computed-CSS and header-theme providers wrap the frontend. A client provider is imported from its own module, never through a barrel that also exports Node fs matter: the @/css barrel exports computeCssDiamond, and pulling it into the browser chunk 500s the Worker homepage."
 atomPath: provider
 coordinate: "provider · 5/round · ff017cd1"
 contentUuid: "f847e212-9d11-5dab-bd9f-7ae1df03d75d"
@@ -32,14 +32,42 @@ signatures:
       stageUuid: "500773bc-3725-89d7-a56d-6b10fb7742bb"
 version: 2
 ---
-# provider
 
-The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.
+# provider — a client provider is imported from its module, never through a barrel
 
-Entangled with — [[mobility]]
+The app-wide React context tree: `ThemeProvider` → `ComputedCssProvider` → `HeaderThemeProvider`,
+with the toaster mounted inside. One place wraps the frontend, so a provider added anywhere else
+is a second tree.
 
-Attested in schema.org — provider · providerMobility
+## The import that is deliberately not a barrel import
 
-**Law — [[law]]: provider is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+```ts
+import { ComputedCssProvider } from '@/css/ComputedCssProvider'   // NOT from '@/css'
+```
 
-@standard schema.org — the type vocabulary, collided to single words
+`@/css` also exports `computeCssDiamond` — the Node diamond/fs pipeline. A barrel is evaluated
+whole, so importing the provider through it pulls `createRequire` and the seal into the **browser
+chunk**, and the Worker homepage answers **500**. The deep import is the fix, and it is the one
+place in this corpus where [[convention]]/import's barrel-only rule is knowingly traded against a
+runtime that cannot load `node:fs`.
+
+This SKILL previously described *"the service provider, service operator … the goods producer"* —
+[[vocabulary]]/provider's schema.org term, byte-identical prose stamped on a React barrel. It was
+found by content-addressing every stated law in the corpus and colliding them: 2,899 laws, 2,894
+distinct, and this pair was one of the two collisions. **Nothing else could see it** — the file
+compiled, the atom sealed, and the prose read as true from every seat.
+
+**Honest boundary.** The proof beside this asserts the barrel is not imported *here*; it does not
+prove the browser chunk is free of `node:fs` overall — that is a bundle property, and only a build
+measures it. It closes the door that was open: this file silently reverting to the barrel import.
+
+**Law — [[law]]: a module that runs in the browser imports the symbol it needs from the module
+that defines it. A barrel is evaluated whole, so a barrel that also exports Node matter is a
+server dependency wearing a client import — and the page 500s at runtime, not at build.**
+
+## Standards
+
+- **WCAG 2.1 §1.4.3 · §1.4.11** — the theme providers carry the contrast contract.
+- **W3C CSS Color 4** — `color-contrast`.
+
+Composes: [[css]] · [[convention]]/import · [[ui]] · [[law]].
