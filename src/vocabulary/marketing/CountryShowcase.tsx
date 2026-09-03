@@ -9,7 +9,7 @@
  * @standard BCP-47 language-tag
  * @accounting IFRS / US-GAAP / FRS / JGAAP / ASBE / INDAS
  * @compliance WCAG-2.1 §1.3.1 info-and-relationships table-semantics
- * @see src/config/regional/defaults.ts
+ * @see src/config/regional/defaults/index.ts
  */
 
 import React from 'react'

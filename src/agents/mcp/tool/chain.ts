@@ -14,7 +14,7 @@
  * @standard MCP 0.6 + ISO/IEC 23257-1 blockchain reference architecture
  * @audit Conservation Law 60 binding-uuid-is-blockchain-leaf
  * @feature uuid_chain
- * @see /src/services/uuid-chain/index.ts
+ * @see /src/uuid/chain/index.ts
  */
 import { z } from 'zod'
 import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'

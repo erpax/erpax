@@ -27,7 +27,7 @@
  * @standard BCP-47 language-tag field-labels
  * @compliance GDPR Art.5(1)(c) data-minimisation collect-only-fields-the-format-requires
  * @see docs/STANDARDS.md §4.1
- * @see src/config/regional/defaults.ts
+ * @see src/config/regional/defaults/index.ts
  */
 
 import type { SupportedCountry } from '@/config/regional/defaults'

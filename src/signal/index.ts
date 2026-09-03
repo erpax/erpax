@@ -11,13 +11,13 @@ import { exactRound } from '@/algebra'
  *
  * A432 is the constant in BOTH senses: Hz for pitch, ms for the animation
  * period. Pair with the structured uuidv8 — `signalForStep(decodeStructured(uuid).step)`
- * (see `src/services/uuid-format`) — to render any object's uuid as a frame;
+ * (see `src/uuid/format/index.ts`) — to render any object's uuid as a frame;
  * a stream of uuids is interactive multimedia, no payload.
  *
  * @standard ISO-16:1975 a432-tuning-reference (pitch); value from position.
  * @see ~/github/ceccec/svilena-me/.vitepress/notes.js (the sound source twin)
  * @see ~/github/ceccec/svilena-me/.vitepress/rodin.js (CMYK / RODIN_HUE / phase)
- * @see src/services/horo (the position ring), src/services/uuid-format (decode)
+ * @see src/services/horo (the position ring), src/uuid/format/index.ts (decode)
  */
 
 import { HORO_DIGITS, type HoroStep } from '@/horo'

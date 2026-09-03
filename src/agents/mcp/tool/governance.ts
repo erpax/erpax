@@ -11,7 +11,7 @@
  * @standard W3C DID Core 1.0 + W3C VC Data Model 2.0
  * @audit Conservation Law 63 uuid-self-governance
  * @feature uuid_governance
- * @see /src/services/uuid-governance/index.ts
+ * @see /src/uuid/governance/index.ts
  */
 import { z } from 'zod'
 import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'

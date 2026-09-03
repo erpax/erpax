@@ -59,9 +59,9 @@ version: 2
 
 ## Used by
 
-- `src/standards/nist-sp-800-38/aes-gcm.ts` — derives the field-encryption KEK.
+- `src/nist/sp/800/38/aes-gcm.ts` — derives the field-encryption KEK.
 - `src/payload.config.ts` — derives the cron-trigger bearer secret.
-- `src/utilities/getPreviewSecret.ts` — derives the live-preview signing secret.
+- `src/get/preview/secret/index.ts` — derives the live-preview signing secret.
 - All other internal authentication tokens that should not have their own env var.
 
 Imports through the legacy `@/utilities/deriveSecret` path still work via the

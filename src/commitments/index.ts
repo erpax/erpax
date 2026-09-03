@@ -89,7 +89,7 @@
  * commitment registry requires `zkodCommitmentNumber` (notarized authorization
  * reference). Commitments > 50k BGN require director signature and notarization.
  *
- * @see src/standards/ifrs-15/types.ts Contract TransactionPrice
+ * @see src/ifrs/15/types/index.ts Contract TransactionPrice
  * @see src/collections/accounting/Contracts.ts
  * @see src/collections/accounting/PurchaseOrders.ts
  */

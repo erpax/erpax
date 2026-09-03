@@ -2,7 +2,7 @@
  * KV / uuid-mapping MCP tool family — Slice QQQQQQQQQ-cut1 (2026-05-11).
  *
  * Per user 'implement in mcp and erpax in sync'. Every ERPax service
- * landed in this slice (`src/services/uuid-kv/`) is also exposed as
+ * landed in this slice (`src/uuid/kv/index.ts`) is also exposed as
  * MCP tools so external clients (Claude Code, IDE agents, federation
  * peers) can compute uuids consistently with the in-process surface.
  *
@@ -19,7 +19,7 @@
  * @standard MCP 0.6 tools/list + tools/call
  * @audit Conservation Law 8 + 47 + 57 (universal uuid mapping)
  * @feature uuid_kv
- * @see /src/services/uuid-kv/index.ts (the runtime surface this exposes)
+ * @see /src/uuid/kv/index.tsindex.ts (the runtime surface this exposes)
  */
 import { z } from 'zod'
 import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'

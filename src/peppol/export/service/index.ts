@@ -15,7 +15,7 @@
  * @standard UBL-2.1 universal-business-language
  * @standard ISO-4217:2015 currency-codes
  * @audit ISO-19011:2018 audit-trail
- * @see src/standards/peppol-bis-3/types.ts
+ * @see src/peppol/bis/3/types/index.ts
  */
 
 import type {

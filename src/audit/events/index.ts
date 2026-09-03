@@ -49,8 +49,8 @@
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @security ISO-27002 §8.15 logging
  * @audit ISO-19011:2018 audit-trail
- * @see src/standards/iso-19011/types.ts AuditEntry
- * @see src/hooks/auditTrailAfterChange.ts
+ * @see src/iso/19011/types/index.ts AuditEntry
+ * @see src/audit/trail/after/change/index.ts
  * @see docs/STANDARDS.md §4.4
  */
 

@@ -85,8 +85,8 @@ Files:
 - `src/plugins/accounting/collections/Contracts.ts` — top-level master.
 - `src/plugins/accounting/collections/PerformanceObligations.ts` — distinct POs.
 - `src/collections/Subscriptions/index.ts` — recurring revenue contracts.
-- `src/collections/SubscriptionPlans/index.ts` — SSP catalog.
-- `src/services/gl-posting.service.ts` — `postSubscriptionActivated/Invoiced/Cancelled/Refunded` handlers.
+- `src/subscription/plans/index.ts` — SSP catalog.
+- `src/gl/posting/service/index.ts` — `postSubscriptionActivated/Invoiced/Cancelled/Refunded` handlers.
 - `src/plugins/accounting/services/reports.ts` — IFRS 15 disclosure block in financial statements.
 
 ## References

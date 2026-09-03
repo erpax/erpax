@@ -38,7 +38,7 @@ version: 2
 ---
 # UN/CEFACT 5305 — Duty / Tax / Fee Category Code
 
-Lifted out of `src/standards/en-16931/types.ts` since the same code list is referenced from multiple places (invoice lines, tax codes master, AI tax classifier, SAF-T tax table, tax calculations).
+Lifted out of `src/en/16931/types/index.ts` since the same code list is referenced from multiple places (invoice lines, tax codes master, AI tax classifier, SAF-T tax table, tax calculations).
 
 ## Scope
 

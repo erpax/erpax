@@ -16,7 +16,7 @@
  * @standard NIST INCITS-359 role-based-access-control
  * @standard ISO 27002 §5.15 access-control + §5.3 segregation-of-duties
  * @see .claude/skills/access/SKILL.md  (the law + the math)
- * @see src/services/uuid-share          (grants, rolesCompatible, the lattice)
+ * @see src/uuid/share/index.ts          (grants, rolesCompatible, the lattice)
  */
 import type { Access, PayloadRequest } from 'payload'
 

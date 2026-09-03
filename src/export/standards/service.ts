@@ -25,10 +25,10 @@
  * @standard ISO-9735:2002 edifact-syntax-rules
  * @rfc 6838 mime-type
  * @audit ISO-19011:2018 audit-trail
- * @see src/services/saf-t-export.service.ts
- * @see src/services/peppol-export.service.ts
- * @see src/services/edifact-export.service.ts
- * @see src/services/iso20022-export.service.ts
+ * @see src/saf/t/export/service/index.ts
+ * @see src/peppol/export/service/index.ts
+ * @see src/edifact/export/service/index.ts
+ * @see src/iso20022/export/service/index.ts
  */
 
 import type { Payload } from 'payload'

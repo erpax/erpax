@@ -137,7 +137,7 @@ Co-located `src/**/*.test.ts`, run via vitest. Scope to a path; `PAYLOAD_TEST_SK
 skips the pre-test `payload migrate` (safe once the schema is applied):
 
 ```bash
-PAYLOAD_TEST_SKIP_MIGRATE=1 pnpm exec vitest run --config ./vitest.config.mts src/standards/iso-4217 src/standards/iso-9362
+PAYLOAD_TEST_SKIP_MIGRATE=1 pnpm exec vitest run --config ./vitest.config.mts src/iso/4217/index.ts src/standards/iso-9362
 ```
 
 The full suites are `pnpm test:int` (every integration test — boots Payload like `smoke.ts`,
@@ -170,7 +170,7 @@ broken-in-dev admin, see Gotchas).
 - **ESM import-order trap (standalone tsx scripts).** Static `import`s hoist above top-level
   code, so `process.env.X = …` and `dotenv` run *after* `@payload-config` already read the
   env. `smoke.ts` works around it with all-dynamic imports. Also: a boot invariant
-  (`src/services/agents/mcp/dry-clean.ts`) calls `require('node:crypto')`, which is undefined
+  (`src/agents/mcp/dry-clean.ts`) calls `require('node:crypto')`, which is undefined
   under pure ESM and **crashes the boot** (`payload.config.ts` `onInit` re-throws it) — hence
   the `globalThis.require ??= createRequire(...)` shim at the top of `smoke.ts`.
 - **Don't run `smoke.ts` while `pnpm dev` is up.** Same local D1 sqlite → `SQLITE_BUSY`.

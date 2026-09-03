@@ -109,7 +109,7 @@ Add controls (5.X, 6.X, 7.X, 8.X) as they're cited.
 ## Used by
 
 - `src/access/*.ts` — every access predicate carries a `@security ISO-27002 §X.Y` banner.
-- `src/plugins/auth/access.ts` — RBAC + tenant-scope helpers.
+- `src/plugins/auth/access/index.ts` — RBAC + tenant-scope helpers.
 - All multi-tenant collections — `@security ISO-27001 A.5.23 cloud-service-tenant-isolation` banner.
 
 ## References

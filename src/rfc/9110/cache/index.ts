@@ -30,7 +30,7 @@ type Global = keyof Config['globals']
  * cache provider, which only exists inside a Next.js request context — calling
  * it from a unit/integration test throws `Invariant: incrementalCache missing`.
  * The same `process.env.VITEST` short-circuit is used in
- * `src/collections/Posts/hooks/revalidatePost.ts` and Pages' equivalent.
+ * `src/posts/hooks/revalidatePost.ts` and Pages' equivalent.
  *
  * @example
  * const getCachedUsers = createCachedPayloadFetcher(

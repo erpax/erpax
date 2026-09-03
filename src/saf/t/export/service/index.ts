@@ -34,7 +34,7 @@ import { exactAbs } from '@/algebra'
  * @standard ISO-8601-1:2019 date-time
  * @audit ISO-19011:2018 audit-trail tax-authority-audit-file
  * @compliance SOX §404 internal-controls
- * @see src/standards/saf-t/types.ts
+ * @see src/saf/t/types/index.ts
  */
 
 import type { Payload } from 'payload'

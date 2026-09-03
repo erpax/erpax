@@ -2,7 +2,7 @@
  * spec-gen — the test-layer twin of `.claude/skills/aura/scan.mjs`.
  *
  * Registry-driven: the source of truth for chains is `BUSINESS_CHAINS`
- * (src/services/business-chains/registry.ts), NOT scattered `@chainStep`
+ * (src/business/chain/registry.ts), NOT scattered `@chainStep`
  * banners. For each registry chain it maps the repo's `@invariant` banners
  * to the chain by its step-collection FILES, measures translatability with
  * the real `translatePredicate`, and checks the chain's declared
@@ -14,7 +14,7 @@
  *
  * SCAN only (never writes). Mirrors the generate→link→re-scan loop.
  * Usage:  pnpm spec:gen [--json] [--chain=ID]
- * @see src/services/business-chains/registry.ts, src/services/spec-generator/*
+ * @see src/business/chain/registry.ts, src/services/spec-generator/*
  */
 
 import { existsSync } from 'node:fs'

@@ -1,8 +1,8 @@
 /**
  * Orders afterChange — emit IFRS 15 / ASC 606 lifecycle events.
  *
- * Closes the loop opened in `src/types/events.ts` (Order events) +
- * `src/services/gl-posting.service.ts` (Order GL handlers): every order
+ * Closes the loop opened in `src/types/events/index.ts` (Order events) +
+ * `src/gl/posting/service/index.ts` (Order GL handlers): every order
  * status transition in the ecommerce-plugin Orders collection emits a
  * domain event so the canonical `glPostingService` can post the
  * corresponding double-entry.
@@ -25,8 +25,8 @@
  * @accounting US-GAAP ASC-330 inventory cogs-recognition
  * @audit ISO-19011:2018 audit-trail order-lifecycle
  * @compliance SOX §404 internal-controls quote-to-cash
- * @see src/services/gl-posting.service.ts
- * @see src/types/events.ts OrderActivatedEvent
+ * @see src/gl/posting/service/index.ts
+ * @see src/types/events/index.ts OrderActivatedEvent
  * @see docs/STANDARDS.md §4.2
  */
 

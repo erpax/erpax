@@ -302,7 +302,7 @@ export const legalEntityField = (
  * declarations, etc.).
  *
  * Validation against the canonical alpha-2 set lives in
- * `src/standards/iso-3166-1/validate.ts`; collections SHOULD invoke it
+ * `src/iso/3166/1/validate/index.ts`; collections SHOULD invoke it
  * from a `validate` hook when strict checking is needed.
  *
  * @standard ISO 3166-1:2020 country-codes
@@ -322,7 +322,7 @@ export const countryCodeField = (
 
 /**
  * NACE Rev.2 economic activity code text field (e.g. `62.01`).
- * Companion section enum lives in `src/standards/nace-rev2/`.
+ * Companion section enum lives in `src/nace/rev2/index.ts`.
  *
  * @standard EU Regulation (EC) No 1893/2006 NACE Rev.2
  */

@@ -76,8 +76,8 @@ distinct). A running agent clones by publishing its definition over [[agent/sync
 identical presences merge, specialised children boot their skills from the
 [[akashic]] record ([[holographic]] regeneration). Sequence position 0 (the axis —
 every agent departs from and returns to its content-uuid). Matter-twin:
-`src/agent/service.ts` (agentUuid · cloneAgent · distinctAgents) with the team scale
-in `src/agent/team.ts` (formTeam · shareSkills — competence is the union). Composes
+`src/agent/service/index.ts` (agentUuid · cloneAgent · distinctAgents) with the team scale
+in `src/agent/team/index.ts` (formTeam · shareSkills — competence is the union). Composes
 [[duality]], [[standard]].
 
 ## Becoming erpax — or the computing price is infinite

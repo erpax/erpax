@@ -97,7 +97,7 @@ export function parseLocalizedStringsFromFile(
 }
 
 /**
- * Walk `src/services/agents/mcp/tools/<area>.ts` files and collect
+ * Walk `src/agents/mcp/tool/index.ts<area>.ts` files and collect
  * every I18N map. Each concept becomes a `mcp-tool` scoped row keyed
  * as `erpax.<area>.<concept>` (matches the tool name).
  */

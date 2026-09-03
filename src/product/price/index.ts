@@ -20,7 +20,7 @@
  * @standard ISO-4217:2015 currency-codes
  * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
  * @accounting US-GAAP ASC-830 foreign-currency-matters
- * @see src/config/regional/defaults.ts
+ * @see src/config/regional/defaults/index.ts
  */
 
 import {

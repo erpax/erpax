@@ -12,7 +12,7 @@
  * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
  * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
  * @compliance WCAG-2.1 level-AA pricing-table-accessibility
- * @see src/collections/SubscriptionPlans/index.ts
+ * @see src/subscription/plans/index.ts
  */
 
 import React from 'react'

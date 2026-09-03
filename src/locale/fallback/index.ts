@@ -45,7 +45,7 @@
  * @feature locale_fallback
  * @see ../currency-fallback/index.ts — the template this mirrors
  * @see ../../currency/fallback/uuid.ts — uuid-bridge pattern
- * @see /src/i18n/localization.ts — supportedLocales + SupportedLocale type
+ * @see /src/i18n/localization/index.ts — supportedLocales + SupportedLocale type
  */
 
 import { supportedLocales, type SupportedLocale } from '@/i18n/localization'

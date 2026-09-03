@@ -93,7 +93,7 @@
  * marked (`mandatoryArbitrationClause`) if contract involves employment terms.
  * Tax reporting: contract status changes are reported on VAT/tax returns.
  *
- * @see src/standards/ifrs-15/types.ts Contract TransactionPrice PerformanceObligation
+ * @see src/ifrs/15/types/index.ts Contract TransactionPrice PerformanceObligation
  * @see src/collections/accounting/contract-amendments.ts
  * @see src/collections/accounting/contract-performance.ts
  * @see src/collections/accounting/contract-signatures.ts

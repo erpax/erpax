@@ -11,7 +11,7 @@
  *
  * @standard ECMA-262 ECMAScript-2024 baseline
  * @quality ISO-25010 maintainability single-discriminator-vocabulary
- * @see src/types/sti.ts (the typed-STI discriminated-union overlay)
+ * @see src/types/sti/index.ts (the typed-STI discriminated-union overlay)
  * @see .claude/skills/sti/SKILL.md · .claude/skills/party/SKILL.md
  */
 
@@ -23,7 +23,7 @@ const toOptions = (xs: ReadonlyArray<Option | string>): Option[] =>
 
 /**
  * `typeField` — the flat STI `type` discriminator (the runtime mirror of the
- * `Sti<Base, Variants>` union in `src/types/sti.ts`). One collection, many
+ * `Sti<Base, Variants>` union in `src/types/sti/index.ts`). One collection, many
  * behavioral subtypes; branch on `doc.type` (use `matchStiType` for exhaustive
  * dispatch). Flat + indexed so the discriminator's address is always `doc.type`.
  * Keep distinct from any standards/wire code (e.g. EN-16931 invoiceTypeCode).

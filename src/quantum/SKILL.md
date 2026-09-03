@@ -109,7 +109,7 @@ Every projection axis is bound to a **Radix surface** (Tabs · Collapsible · To
 
 Wire path: **collapse** (`collapseDimensionState`) → **seal** (`dimensionSnapshotFingerprint`) → **emit** (`dimensionRealtimeEmit` on [[team/comms]] secure wave envelope, session `0896eab2-dimension-session`) → **pull tail** (`appendDimensionToLog` · [[realtime]] `since`/`advance`). Admin: `ComputedCssAdminRoot` + `admin-ui` `afterDashboard`; frontend: `@/provider` tree inside `ComputedCssProvider`.
 
-Matter-twin: `src/quantum/dimension-realtime.ts` · `QuantumDimensionsProvider.tsx` · `RadixDimensionPanel.tsx`.
+Matter-twin: `src/quantum/dimension/realtime/index.ts` · `QuantumDimensionsProvider.tsx` · `RadixDimensionPanel.tsx`.
 
 ## Serverless IS the quantum host — erpax IS the proof
 

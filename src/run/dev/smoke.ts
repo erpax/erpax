@@ -19,7 +19,7 @@
  * time. Dynamic imports run in source order, so env is set first.
  */
 // 0) tsx runs this as pure ESM, but a boot-time architecture invariant
-// (src/services/agents/mcp/dry-clean.ts) lazily calls `require('node:crypto')`.
+// (src/agents/mcp/dry-clean.ts) lazily calls `require('node:crypto')`.
 // `require` is undefined in ESM, and payload.config.ts's onInit re-throws it,
 // crashing the boot. Give the ESM realm a Node require so that lazy call works.
 const { createRequire } = await import('node:module')

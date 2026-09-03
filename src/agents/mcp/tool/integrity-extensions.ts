@@ -18,8 +18,8 @@
  * @standard MCP 0.6 tools/list + tools/call
  * @audit Conservation Law 8 + 55 (tamper-reversibility-cost)
  * @feature integrity_extensions
- * @see /src/services/audit-trail/write-audit-event.ts
- * @see /src/services/integrity/tamper-reverse-cost.ts
+ * @see /src/audit/trail/write-audit-event.ts
+ * @see /src/integrity/tamper-reverse-cost.ts
  */
 import { z } from 'zod'
 import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'

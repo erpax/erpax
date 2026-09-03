@@ -27,7 +27,7 @@
  * @compliance SOX §404 internal-controls capital-asset-register
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @see src/plugins/accounting/collections/Leases.ts
- * @see src/standards/ifrs-16/types.ts LeasePayment
+ * @see src/ifrs/16/types/index.ts LeasePayment
  */
 
 import type { CollectionConfig } from 'payload'

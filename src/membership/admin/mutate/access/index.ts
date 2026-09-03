@@ -21,7 +21,7 @@ import { getUserTenantIDs } from '@/get/user/tenant/i/ds'
  * @security ISO-27002 §5.4 segregation-of-duties
  * @compliance SOC-2 CC6.1 logical-access-controls
  * @audit ISO-19011:2018 audit-trail
- * @see src/standards/iso-27002/types.ts
+ * @see src/iso/27002/types/index.ts
  * @see docs/STANDARDS.md §4.4
  */
 

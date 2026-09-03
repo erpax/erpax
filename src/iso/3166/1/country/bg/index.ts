@@ -1,6 +1,6 @@
 /**
  * Bulgaria (BG) — canonical country bundle. Default country (per
- * `DEFAULT_COUNTRY` in `src/config/regional/defaults.ts`) and the worked
+ * `DEFAULT_COUNTRY` in `src/config/regional/defaults/index.ts`) and the worked
  * example for the per-country merge pattern documented in `./types.ts`.
  *
  * Composed of (a) `COUNTRY_PROFILES.BG`, (b) `COUNTRY_SPECIFICS.BG`,
@@ -28,7 +28,7 @@
  * @compliance EU 2014/55 b2g-e-invoicing-mandate
  * @audit ISO-19011:2018 audit-trail country-decision-evidence
  * @see ../types.ts
- * @see src/services/country-context.ts
+ * @see src/country/context/index.ts
  */
 
 import { COUNTRY_PROFILES } from '@/config/regional/defaults';

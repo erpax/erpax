@@ -6,7 +6,7 @@
  * @security ISO-27002 §5.15 access-control
  * @security ISO-27002 §8.2 privileged-access-rights
  * @compliance SOC-2 CC6.3 privileged-access-management
- * @see src/standards/iso-27002/types.ts
+ * @see src/iso/27002/types/index.ts
  * @see docs/STANDARDS.md §4.4
  */
 

@@ -204,7 +204,7 @@ Audit reports are security-sensitive and require:
 
 ### 2.1 Service: AuditComplianceReporting
 
-**Location:** `src/services/AuditComplianceReporting.ts` (434 lines)
+**Location:** `src/audit/compliance/reporting/index.ts` (434 lines)
 
 Static class with four main methods, all pure and deterministic:
 
@@ -251,7 +251,7 @@ Generates OECD-compliant transfer pricing documentation package.
 
 ### 2.2 Hook: validateAuditComplianceReporting
 
-**Location:** `src/hooks/validateAuditComplianceReporting.ts` (257 lines)
+**Location:** `src/validate/audit/compliance/reporting/index.ts` (257 lines)
 
 beforeValidate hook triggered when AuditReport is created with `auditStatus='pending-generation'`.
 
@@ -383,11 +383,11 @@ delete: [superadmin]
 
 **Phase B6 Deliverables:**
 
-- ✅ `src/services/AuditComplianceReporting.ts` (434 lines)
-- ✅ `src/hooks/validateAuditComplianceReporting.ts` (257 lines)
+- ✅ `src/audit/compliance/reporting/index.ts` (434 lines)
+- ✅ `src/validate/audit/compliance/reporting/index.ts` (257 lines)
 - ✅ `src/collections/AuditReports/index.ts` (290 lines)
 - ✅ `src/standards/audit-compliance-reporting/README.md` (comprehensive documentation)
-- ⏳ `src/standards/audit-compliance-reporting/index.ts` (barrel export)
+- ⏳ `src/audit/compliance/reporting/index.ts` (barrel export)
 - ⏳ Memory entry for Phase B6
 - ⏳ Update MEMORY.md
 

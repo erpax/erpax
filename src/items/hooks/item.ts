@@ -19,7 +19,7 @@
  * @accounting US-GAAP ASC-330 inventory cost-flow
  * @audit ISO-19011:2018 audit-trail
  * @compliance SOX §404 internal-controls
- * @see src/services/gl-posting.service.ts postInventoryPurchased / postInventorySold
+ * @see src/gl/posting/service/index.ts postInventoryPurchased / postInventorySold
  * @see docs/adr/0001-event-driven-gl-posting.md
  */
 

@@ -12,7 +12,7 @@
  * @standard NIST INCITS-359-2012 role-based-access-control
  * @security ISO-27002 §5.15 access-control
  * @compliance SOC-2 CC6.1 logical-access-controls
- * @see src/standards/iso-27002/types.ts
+ * @see src/iso/27002/types/index.ts
  * @see docs/STANDARDS.md §3 §4.4
  */
 

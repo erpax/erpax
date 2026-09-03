@@ -82,9 +82,9 @@ The answer-path principle: there is no separate "compliance module"; each id thi
 | Concern | Module | Key exports |
 |---|---|---|
 | content-uuid (the primitive) | `src/services/integrity/content-uuid.ts` | `computeContentUuid<T>(content, tenantId)`, `verifyContentUuid`, `ContentUuid<T>` brand, `jcsCanonicalize`, `stripNonContentFields`, `tenantNamespace`, `NON_CONTENT_FIELDS` |
-| self-describing uuid | `src/services/uuid-format/index.ts` | structured **uuidv8** (RFC 9562 §5.8): `encodeStructured`/`decodeStructured`, `SLOT_TAGS`, `CAPABILITIES` (SIGNED/SEALED/SHARED…), `hasCapability`, `verifyStructured` |
-| categorical identity element | `src/services/identity-element/index.ts` | `registerIdentitySlot`, `resolveIdentity`, `computeIdentityUuid(slot, code, tenantId)` — blanks: currency `XXX`, locale `und`, country `ZZ` |
-| uuid-based RBAC sharing | `src/services/uuid-share/index.ts` | `grantShare`/`checkShare`/`revokeShare`, `AccessRole` lattice (read<write<sign<admin; audit ⊥) |
+| self-describing uuid | `src/uuid/format/index.ts` | structured **uuidv8** (RFC 9562 §5.8): `encodeStructured`/`decodeStructured`, `SLOT_TAGS`, `CAPABILITIES` (SIGNED/SEALED/SHARED…), `hasCapability`, `verifyStructured` |
+| categorical identity element | `src/identity/element/index.ts` | `registerIdentitySlot`, `resolveIdentity`, `computeIdentityUuid(slot, code, tenantId)` — blanks: currency `XXX`, locale `und`, country `ZZ` |
+| uuid-based RBAC sharing | `src/uuid/share/index.ts` | `grantShare`/`checkShare`/`revokeShare`, `AccessRole` lattice (read<write<sign<admin; audit ⊥) |
 
 The "Conservation Laws" cited in those files: **8** content-addressable integrity · **47** type-branded uuid · **54** universal identity element · **59** uuid sharing · **61** structured uuid.
 

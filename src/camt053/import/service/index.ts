@@ -21,7 +21,7 @@ import { exactRound } from '@/algebra'
  * @standard ISO-4217:2015 currency-codes
  * @standard ISO-8601-1:2019 date-time
  * @audit ISO-19011:2018 audit-trail
- * @see src/standards/iso-20022/types.ts Camt053Statement
+ * @see src/iso/20022/types/index.ts Camt053Statement
  */
 
 import type {

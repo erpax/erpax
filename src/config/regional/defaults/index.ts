@@ -38,7 +38,7 @@
  * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates functional-currency
  * @accounting US-GAAP ASC-830 foreign-currency-matters reporting-currency
  * @see docs/STANDARDS.md §4.1 §4.3
- * @see src/standards/iso-4217/
+ * @see src/iso/4217/index.ts
  */
 
 // ─── 1. Canonical currency vocabulary ──────────────────────────────────────

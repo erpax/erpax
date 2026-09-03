@@ -84,7 +84,7 @@
  * notarized acceptance. Labor-law performance clauses involving employees must include
  * mandatory arbitration reference per Art. 331.
  *
- * @see src/standards/ifrs-15/types.ts PerformanceObligation ControlTransfer
+ * @see src/ifrs/15/types/index.ts PerformanceObligation ControlTransfer
  * @see src/collections/accounting/Contracts.ts
  * @see src/collections/accounting/Invoices.ts
  * @see src/collections/accounting/SalesOrders.ts

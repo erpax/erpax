@@ -9,7 +9,7 @@
  * @standard RFC 9562 §5.8 content-addressed uuidv8 (the identity the facets hang on)
  * @standard CSS Color 4 hsl() (the colour facet)
  * @see src/services/integrity/content-uuid.ts — computeContentUuid / stripNonContentFields
- * @see src/services/multi-search/index.ts — should match searchableText, not a hand-listed field map
+ * @see src/multi/search/index.ts — should match searchableText, not a hand-listed field map
  */
 import { computeContentUuid, stripNonContentFields } from '@/integrity'
 

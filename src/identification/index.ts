@@ -46,9 +46,9 @@
  * @audit Conservation Law 46 uuid-short-display (short uuid kinds enumerated)
  * @feature identification
  * @see /src/services/integrity/content-uuid.ts (computeContentUuid)
- * @see /src/services/integrity/uuid-ref.ts (resolveByUuid + UUID_REF_REGISTRY)
- * @see /src/services/integrity/uuid-short.ts (parseShortUuid + lookupShort)
- * @see /src/services/integrity/signatures.ts (fromJws — recover signed uuid)
+ * @see /src/integrity/uuid-ref.ts (resolveByUuid + UUID_REF_REGISTRY)
+ * @see /src/integrity/uuid-short.ts (parseShortUuid + lookupShort)
+ * @see /src/integrity/signatures/index.ts (fromJws — recover signed uuid)
  * @see /src/services/did/index.ts (uuidFromDid)
  * @see ../multi-search/index.ts (free-text fallback)
  */

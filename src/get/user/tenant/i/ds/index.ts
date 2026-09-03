@@ -6,7 +6,7 @@
  * @security ISO-27001 A.5.18 access-rights
  * @security ISO-27002 §5.15 access-control
  * @compliance SOX §404 internal-controls
- * @see src/standards/nist-incits-359/
+ * @see src/nist/incits/359/index.ts
  */
 
 import type { Tenant, User } from '@/types'

@@ -55,7 +55,7 @@
  * @audit ISO-19011:2018 audit-trail
  * @compliance SOX §404 internal-controls capital-asset-register
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
- * @see src/standards/ifrs-16/types.ts
+ * @see src/ifrs/16/types/index.ts
  * @see docs/STANDARDS.md §4.2
  */
 

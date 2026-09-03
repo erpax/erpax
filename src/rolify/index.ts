@@ -9,7 +9,7 @@
  *
  * @standard NIST INCITS-359 RBAC (resource-scoped roles)
  * @standard EN-16931 business-terms (the party roles BG-4 Seller / BG-7 Buyer / BG-10 Payee …)
- * @see src/collections/Roles  ·  src/collections/Roles/UserRoles  ·  .claude/skills/access
+ * @see src/collections/Roles  ·  src/roles/user/roles/index.ts  ·  .claude/skills/access
  */
 import type { Payload } from 'payload'
 

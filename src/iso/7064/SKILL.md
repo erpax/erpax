@@ -1,6 +1,6 @@
 ---
 name: "7064"
-description: "Use when implementing or referencing `src/standards/iso-7064/`."
+description: "Use when implementing or referencing `src/iso/7064/index.ts`."
 atomPath: "iso/7064"
 coordinate: "iso/7064 · 2/share · ac4a7f81"
 contentUuid: "90c1a4ec-20e2-59e1-954b-56ce7f114de5"
@@ -35,7 +35,7 @@ signatures:
       stageUuid: "8c43e9d2-f76b-8c45-bfa4-6f1bdd8f6f1c"
 version: 2
 ---
-# `src/standards/iso-7064/`
+# `src/iso/7064/index.ts`
 
 ISO 7064 check-character systems — mod-11, mod-97-10, mod-37-2 hash schemes
 that embed integrity check digits in identifiers (IBAN, BG EGN, ISBN,

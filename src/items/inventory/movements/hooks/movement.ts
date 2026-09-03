@@ -20,7 +20,7 @@ import { exactAbs } from '@/algebra'
  * @accounting US-GAAP ASC-330 inventory
  * @audit ISO-19011:2018 audit-trail stock-ledger-evidence
  * @compliance SOX §404 internal-controls cycle-count
- * @see src/services/gl-posting.service.ts postInventoryAdjusted
+ * @see src/gl/posting/service/index.ts postInventoryAdjusted
  * @see docs/adr/0001-event-driven-gl-posting.md
  */
 

@@ -50,9 +50,9 @@
  * @standard ISO 19011:2018 §6.4.6 audit-evidence (errors are evidence)
  * @audit Conservation Law 64 errors-are-first-class-uuids
  * @feature error_uuid
- * @see /src/services/uuid-format/index.ts (Law 61 structured uuidv8)
- * @see /src/services/uuid-chain/index.ts (Law 60 chain leaves)
- * @see /src/services/self-closure/index.ts (Law 53 fallbacks consume errors)
+ * @see /src/uuid/format/index.ts (Law 61 structured uuidv8)
+ * @see /src/uuid/chain/index.ts (Law 60 chain leaves)
+ * @see /src/self/closure/index.ts (Law 53 fallbacks consume errors)
  */
 
 import type { ContentUuid } from '@/integrity'

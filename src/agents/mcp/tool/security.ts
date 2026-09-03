@@ -18,7 +18,7 @@
  * @standard NIST SP 800-160 §3.4.2 trustworthy secure design
  * @audit Conservation Law 58 uuid-self-protection
  * @feature security_audit
- * @see /src/services/safety-mode/index.ts
+ * @see /src/safety/mode/index.ts
  */
 import { z } from 'zod'
 import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'

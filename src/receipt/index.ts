@@ -10,7 +10,7 @@ import { exactMin } from '@/algebra'
  *
  * @standard RFC 8785 JSON canonicalization (the content the uuid addresses)
  * @standard NIST FIPS 180-4 SHA-256 (the chain + content hash)
- * @see src/services/integrity/uuid-linked-chain.ts · ../uuid-format (capability bits) · ./SKILL.md
+ * @see src/integrity/uuid-linked-chain.ts · ../uuid-format (capability bits) · ./SKILL.md
  */
 import {
   buildNextLeaf,

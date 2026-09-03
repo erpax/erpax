@@ -55,7 +55,7 @@
  * @security OWASP-LLM-Top-10:2025 LLM01 prompt-injection
  * @security OWASP-LLM-Top-10:2025 LLM02 sensitive-information-disclosure
  * @see ./ai-security.ts
- * @see src/access/feature-registry.ts (ai_* features)
+ * @see src/feature/registry/index.ts (ai_* features)
  * @see src/plugins/accounting/collections/AiSuggestions.ts
  */
 

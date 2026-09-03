@@ -15,7 +15,7 @@
  *               `SKILL.md` is a legal vocabulary word (antimatter-only) — NOT a
  *               violation; the trinity is required only once matter appears.
  *
- * This is the gap that let `src/config/trading-apis/index.ts` exist: the sibling
+ * This is the gap that let `src/trading/api/index.ts` exist: the sibling
  * file-purity law ([[quaternary]]) flags *disallowed* files but never the folder
  * NAME and never a *missing* trinity member — so a hyphenated, `index.ts`-only
  * folder passed every gate. This law closes both.

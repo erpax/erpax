@@ -37,7 +37,7 @@ const SKIP_DIR = new Set(['node_modules', 'app', 'migrations'])
 const GENERATED = /\.generated\.tsx?$/i
 
 export interface HyphenRename {
-  /** repo-relative, e.g. `src/ai/ai-security.ts` */
+  /** repo-relative, e.g. `src/ai/security.ts` */
   readonly from: string
   readonly to: string
   /** the single word that survives — the stem the path did not already say */

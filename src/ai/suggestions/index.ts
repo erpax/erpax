@@ -28,7 +28,7 @@
  * @security ISO-27001 A.5.34 privacy-and-protection-of-pii
  * @security ISO-27002 §5.34 ai-output-validation
  * @see src/services/ai/
- * @see src/access/feature-registry.ts (ai_* features)
+ * @see src/feature/registry/index.ts (ai_* features)
  */
 
 import type { CollectionConfig } from 'payload'

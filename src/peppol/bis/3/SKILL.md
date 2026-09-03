@@ -98,7 +98,7 @@ Full list: <https://docs.peppol.eu/edelivery/policies/PolicyForUseOfIdentifiers/
 
 ## Out of scope
 
-- The full UBL 2.1 XSD wire serialisation — implement under `src/services/peppol-export.service.ts` (mirrors `saf-t-export.service.ts`) when consumers arrive.
+- The full UBL 2.1 XSD wire serialisation — implement under `src/peppol/export/service/index.ts` (mirrors `saf-t-export.service.ts`) when consumers arrive.
 - AS4 / Peppol eDelivery (the transport layer) — operations / network concern.
 - PINT — the next-generation Peppol International Invoice (a successor to BIS 3.0). Add under `src/standards/peppol-pint/` when adopted.
 - BIS Procurement / Order documents — separate modules if/when consumers arrive.
@@ -107,7 +107,7 @@ Full list: <https://docs.peppol.eu/edelivery/policies/PolicyForUseOfIdentifiers/
 
 - `src/collections/Invoices/index.ts` — banner cites `@standard Peppol-BIS-3.0`.
 - `src/collections/InvoiceLines/index.ts` — banner cites `@standard Peppol-BIS-3.0 billing line-detail`.
-- (Future) `src/services/peppol-export.service.ts` — projects an EN-16931 invoice + a Peppol envelope into UBL 2.1 XML.
+- (Future) `src/peppol/export/service/index.ts` — projects an EN-16931 invoice + a Peppol envelope into UBL 2.1 XML.
 
 ## References
 

@@ -3,7 +3,7 @@
  *
  * Single source of truth for the shape of a "row in the audit trail".
  * Consumed by:
- *   - the structured-log emitter (`src/hooks/auditTrailAfterChange.ts`)
+ *   - the structured-log emitter (`src/audit/trail/after/change/index.ts`)
  *   - the persistent collection (`AuditEvents` in the accounting plugin)
  *   - any downstream subscriber (analytics, GDPR data-subject log, etc.)
  *

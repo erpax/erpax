@@ -53,7 +53,7 @@ version: 2
 
 ## Used by
 
-- `src/collections/Users/endpoints/externalUsersLogin.ts` — credential-stuffing
+- `src/users/endpoints/externalUsersLogin.ts` — credential-stuffing
   mitigation on the external-users login route.
 
 ## Production note

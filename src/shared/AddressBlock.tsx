@@ -17,8 +17,8 @@
  * @standard W3C HTML5 address-element
  * @compliance WCAG-2.1 §1.3.1 info-and-relationships
  * @audit ISO-19011:2018 audit-trail consistent-rendering
- * @see src/config/address/formats.ts
- * @see src/utilities/address-validation.ts
+ * @see src/config/address/formats/index.ts
+ * @see src/address/validation/index.ts
  */
 
 import React from 'react'

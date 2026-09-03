@@ -1,10 +1,10 @@
 #!/usr/bin/env tsx
 /**
- * Generates `docs/BUSINESS_CHAINS.md` from `src/services/business-chains/registry.ts`.
+ * Generates `docs/BUSINESS_CHAINS.md` from `src/business/chain/registry.ts`.
  *
  * Slice KKKK (2026-05-10): the registry is the source of truth; this
  * script is the deterministic projection. Re-run via `pnpm exec tsx
- * src/services/business-chains/gen-doc.ts` after registry changes.
+ * src/business/chain/gen-doc.ts` after registry changes.
  *
  * @audit ISO-19011:2018 audit-trail registry-traceability
  */

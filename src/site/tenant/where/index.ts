@@ -4,7 +4,7 @@
  * @standard NIST INCITS-359-2012 role-based-access-control tenant-isolation
  * @security ISO-27001 A.5.23 information-security-for-cloud-services
  * @security ISO-27002 §8.3 information-access-restriction
- * @see src/standards/nist-incits-359/
+ * @see src/nist/incits/359/index.ts
  */
 
 import type { Where } from 'payload'

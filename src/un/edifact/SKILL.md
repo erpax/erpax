@@ -66,7 +66,7 @@ Files:
 
 Pre-Peppol/EN-16931, UN/EDIFACT INVOIC was the lingua franca for B2B invoice EDI in EU manufacturing + retail. Many trading-partner agreements still mandate INVOIC d96a alongside EN 16931. The `Invoices` and `InvoiceLines` collection banners cite `@standard UN-EDIFACT INVOIC §LIN line-segment` — owning the canonical types here means the future EDI gateway service can project the project's data onto a typed structure before serialising the segment-based wire format.
 
-This module defines the SEMANTIC structure. The wire-format serialiser (segment delimiters `'`, composite separator `+`, element separator `:`, escape `?`) lives in a future `src/services/edifact-export.service.ts`.
+This module defines the SEMANTIC structure. The wire-format serialiser (segment delimiters `'`, composite separator `+`, element separator `:`, escape `?`) lives in a future `src/edifact/export/service/index.ts`.
 
 ## Segment-based syntax
 
@@ -91,7 +91,7 @@ Each segment ends with `'`; composites are `+`-separated; elements are `:`-separ
 
 ## Out of scope
 
-- The wire-format serialiser (segment / composite / element / escape rules) — implement under `src/services/edifact-export.service.ts`.
+- The wire-format serialiser (segment / composite / element / escape rules) — implement under `src/edifact/export/service/index.ts`.
 - Other UN/EDIFACT message types (ORDERS, ORDRSP, RECADV, REMADV, INSDES, SLSRPT, etc.) — extend this module when consumers arrive.
 - D.99B / D.16A / newer directories — add as separate modules if the segment grammar diverges.
 - AS2 / VAN transport — operations / network concern.
@@ -100,7 +100,7 @@ Each segment ends with `'`; composites are `+`-separated; elements are `:`-separ
 
 - `src/collections/Invoices/index.ts` — banner cites `@standard UN-EDIFACT INVOIC d96a`.
 - `src/collections/InvoiceLines/index.ts` — banner cites `@standard UN-EDIFACT INVOIC §LIN line-segment`.
-- (Future) `src/services/edifact-export.service.ts` — projects the project's invoices + shipments + payments into typed EDIFACT messages, then serialises.
+- (Future) `src/edifact/export/service/index.ts` — projects the project's invoices + shipments + payments into typed EDIFACT messages, then serialises.
 
 ## References
 

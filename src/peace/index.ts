@@ -6,7 +6,7 @@
  * Pure functions; the coercion leg composes the thermodynamic tamper bound (resource-bound).
  *
  * @standard NIST FIPS 180-4 SHA-256 (the content-addressing destruction cannot undo)
- * @see ./SKILL.md · src/services/integrity/resource-bound.ts (beyondUniverse)
+ * @see ./SKILL.md · src/integrity/resource-bound.ts (beyondUniverse)
  */
 import { beyondUniverse } from '@/integrity'
 

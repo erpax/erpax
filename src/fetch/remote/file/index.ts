@@ -11,8 +11,8 @@
  * @rfc 3986 uri filename-extraction
  * @rfc 6838 media-type-registration
  * @security ISO-27002 §8.23 web-filtering
- * @see src/standards/rfc-3986/
- * @see src/standards/rfc-9110/
+ * @see src/rfc/3986/index.ts
+ * @see src/rfc/9110/index.ts
  */
 
 import type { File } from 'payload'

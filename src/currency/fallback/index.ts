@@ -59,8 +59,8 @@ import { exactRound } from '@/algebra'
  * @standard IFRS 1 §IG7 non-monetary items presentation
  * @audit Conservation Law 53 self-referential-closure (currency identity element)
  * @feature currency_fallback
- * @see /src/config/regional/defaults.ts SUPPORTED_CURRENCIES (XXX appended)
- * @see /src/config/country/specifics.ts CURRENCY_DECIMALS (XXX: 0)
+ * @see /src/config/regional/defaults/index.ts SUPPORTED_CURRENCIES (XXX appended)
+ * @see /src/config/country/specifics/index.ts CURRENCY_DECIMALS (XXX: 0)
  * @see /src/plugins/accounting/fields/base-accounting-fields.ts currencyField
  */
 

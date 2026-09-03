@@ -66,15 +66,15 @@ The OECD SAF-T schema is the lingua franca every tax authority is converging on 
 
 ## Out of scope
 
-- The XSD-validated XML wire serialisation — implement under `src/services/saf-t-export.service.ts` once the consumers are wired.
+- The XSD-validated XML wire serialisation — implement under `src/saf/t/export/service/index.ts` once the consumers are wired.
 - Country-specific extensions (SAF-T PT / NO / LU / RO D406) — separate `saf-t-{country}/` modules if/when consumers arrive. Each extends the canonical types here with national tax codes + required tables (e.g. PT requires `MovementOfGoods.WorkingDocuments`).
 - Cancellation / correction lifecycle (PT-only "AT WebService" interactive submission) — operations concern.
 
 ## Used by
 
-- (Future) `src/services/saf-t-export.service.ts` — projects the project's GL + master data onto these canonical types.
+- (Future) `src/saf/t/export/service/index.ts` — projects the project's GL + master data onto these canonical types.
 - (Future) Country extensions in `src/standards/saf-t-pt/`, `src/standards/saf-t-no/`, etc.
-- `src/services/journal-entry.service.ts` — the project's JournalEntry maps onto `SafTTransaction.Lines`.
+- `src/journal/entry/service/index.ts` — the project's JournalEntry maps onto `SafTTransaction.Lines`.
 - `src/plugins/accounting/collections/GLAccounts.ts` — the project's GL chart maps onto `SafTGeneralLedgerAccount`.
 - `src/plugins/accounting/collections/Customers.ts` / `Vendors.ts` — `SafTCustomer` / `SafTSupplier`.
 - `src/plugins/accounting/collections/InventoryMovements.ts` — `SafTMovementOfGoods`.

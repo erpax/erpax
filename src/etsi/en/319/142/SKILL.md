@@ -1,6 +1,6 @@
 ---
 name: "142"
-description: "Use when implementing or referencing `src/standards/etsi-en-319-142/`."
+description: "Use when implementing or referencing `src/etsi/en/319/142/index.ts`."
 atomPath: "etsi/en/319/142"
 coordinate: "etsi/en/319/142 · 2/share · 21cd5c64"
 contentUuid: "ba560b51-5985-5fcd-b15c-953b69166cd2"
@@ -41,7 +41,7 @@ signatures:
       stageUuid: "f6a33f95-3004-8dd3-905b-3212b2fed956"
 version: 2
 ---
-# `src/standards/etsi-en-319-142/`
+# `src/etsi/en/319/142/index.ts`
 
 ETSI EN 319 142 PAdES — PDF Advanced Electronic Signatures. Required by
 EU 910/2014 (eIDAS) for qualified electronic signatures on PDFs (НАП
@@ -70,7 +70,7 @@ module only declares the shape; the signer fulfills it.
 When extending:
 1. New PAdES profile / level → add to `profile.ts`.
 2. New per-country signer → new file under
-   `src/services/country-clients/<code>-pades-signer.ts`, consumes the
+   `src/country/client/index.ts<code>-pades-signer.ts`, consumes the
    dictionary builder + the country's qualified seal cert config.
 3. Spec mirror under `tests/standards/etsi-en-319-142/`.
 4. `pnpm standards:write-index` to refresh `docs/STANDARDS_INDEX.md`.

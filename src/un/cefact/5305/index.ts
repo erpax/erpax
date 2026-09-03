@@ -1,7 +1,7 @@
 /**
  * UN/CEFACT 5305 — Duty / Tax / Fee Category Code.
  *
- * Lifted out of `src/standards/en-16931/types.ts` (`VatCategoryCode`)
+ * Lifted out of `src/en/16931/types/index.ts` (`VatCategoryCode`)
  * into its own module since the same code list is used by:
  *   - `invoice-lines.taxation.vatCategoryCode` (EN-16931 BT-151)
  *   - `tax-codes.categoryCode` (TaxCodes master)

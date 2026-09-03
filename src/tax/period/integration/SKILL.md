@@ -74,7 +74,7 @@ tax-closed
 
 ## Service: `TaxPeriodReconciliation`
 
-**File:** `src/services/TaxPeriodReconciliation.ts`  
+**File:** `src/tax/period/reconciliation/index.ts`  
 **Pattern:** Static class with pure (immutable), deterministic methods  
 **All returns:** JSON-serializable for audit trail storage
 
@@ -315,7 +315,7 @@ static computeChainLeaf(
 
 ## Hook: `validateTaxPeriodClosing`
 
-**File:** `src/hooks/validateTaxPeriodClosing.ts`  
+**File:** `src/validate/tax/period/closing/index.ts`  
 **Trigger:** `beforeValidate` on TaxPeriods collection  
 **Runs:** When tax period record is created or status changed to "pending-closing"
 

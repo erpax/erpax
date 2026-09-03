@@ -19,9 +19,9 @@ import { exactRound } from '@/algebra'
  * @standard UBL-2.1 universal-business-language
  * @standard ISO-6523-1:1998 participant-identifier-scheme
  * @audit ISO-19011:2018 audit-trail
- * @see src/services/peppol-export.service.ts (outbound counterpart)
- * @see src/standards/peppol-bis-3/types.ts
- * @see src/standards/en-16931/types.ts
+ * @see src/peppol/export/service/index.ts (outbound counterpart)
+ * @see src/peppol/bis/3/types/index.ts
+ * @see src/en/16931/types/index.ts
  */
 
 import {

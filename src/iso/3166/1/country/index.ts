@@ -16,7 +16,7 @@ import type { CountryBundle } from './types';
 /**
  * Registry of every curated `CountryBundle`. Add a new country by importing
  * its bundle module here. The default country (`BG`) anchors the list per
- * `DEFAULT_COUNTRY` in `src/config/regional/defaults.ts`.
+ * `DEFAULT_COUNTRY` in `src/config/regional/defaults/index.ts`.
  */
 export const COUNTRY_BUNDLES: Readonly<Record<string, CountryBundle>> = {
   BG: BG_COUNTRY_BUNDLE,

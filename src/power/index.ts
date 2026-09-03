@@ -32,7 +32,7 @@ import { exactMax } from '@/algebra'
  * @standard NIST SP 800-107r1 §5.1 (hash strengths) · NIST SP 800-57 Part 1 r5 §5.6
  * @audit Conservation Law 55 (tamper cost grows with history; audit stays O(N))
  * @audit Conservation Law 62 (coverage → ∞ ; here driven by live usage)
- * @see src/services/tamper-cost src/services/anchor src/services/proof/projection
+ * @see src/services/tamper-cost src/services/anchor src/proof/projection/index.ts
  */
 
 import { crackVerdict, type CrackVerdict } from '@/tamper/cost'

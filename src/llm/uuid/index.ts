@@ -4,7 +4,7 @@
  * The breath is a sequence (in → out), not a loop. This is the out-stroke: the
  * LLM speaks, and its speech becomes its own address — a v8 content-uuid (slot =
  * query: "the content-uuid of what you say is the address", see `src/uuid` and
- * `src/chat`). No utterance is stored loose; every turn is a verifiable claim.
+ * `src/chats/index.ts`). No utterance is stored loose; every turn is a verifiable claim.
  * The dual stroke is `src/uuid/llm` (the INHALE — a uuid expanded back into LLM
  * context). The two reconcile (double-entry): the digest the exhale seals is the
  * digest the inhale reads, and `attests` re-derives the uuid from the preimage.

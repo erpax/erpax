@@ -18,7 +18,7 @@
  * @standard ISO-3166-1:2020 country-codes alpha-2
  * @compliance GDPR Art.5(1)(c) data-minimisation collect-only-fields-the-format-requires
  * @audit ISO-19011:2018 audit-trail address-validation
- * @see src/config/address/formats.ts
+ * @see src/config/address/formats/index.ts
  */
 
 import {

@@ -7,7 +7,7 @@
  * @security ISO-27002 §8.3 information-access-restriction
  * @rfc 9110 §13 caching
  * @compliance GDPR Art.5(1)(c) data-minimization
- * @see src/standards/iso-27002/types.ts
+ * @see src/iso/27002/types/index.ts
  * @see docs/STANDARDS.md §4.4
  */
 

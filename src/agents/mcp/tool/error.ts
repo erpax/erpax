@@ -13,7 +13,7 @@
  * @standard MCP 0.6
  * @audit Conservation Law 64 errors-are-first-class-uuids
  * @feature error_uuid
- * @see /src/services/error-uuid/index.ts
+ * @see /src/error/uuid/index.ts
  */
 import { z } from 'zod'
 import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'

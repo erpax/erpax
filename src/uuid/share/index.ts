@@ -50,8 +50,8 @@
  * @standard GDPR Article 32(1)(b)
  * @audit Conservation Law 59 uuid-based-sharing
  * @feature uuid_share
- * @see /src/services/audit-trail/write-audit-event.ts (chain-linked grant events)
- * @see /src/services/integrity/signatures.ts (sealed sign/admin grants)
+ * @see /src/audit/trail/write-audit-event.ts (chain-linked grant events)
+ * @see /src/integrity/signatures/index.ts (sealed sign/admin grants)
  */
 
 import type { Payload, Where } from 'payload'

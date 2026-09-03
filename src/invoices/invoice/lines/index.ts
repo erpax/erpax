@@ -46,7 +46,7 @@ import { itemInventory } from '@/invoices/invoice/lines/hooks'
  * @standard UN-CEFACT-5305 tax-category-codes
  * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
  * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
- * @see src/standards/en-16931/types.ts InvoiceLine
+ * @see src/en/16931/types/index.ts InvoiceLine
  * @see docs/STANDARDS.md §3
  */
 export const InvoiceLines: CollectionConfig = {
@@ -255,7 +255,7 @@ export const InvoiceLines: CollectionConfig = {
           type: 'select',
           required: true,
           defaultValue: 'S',
-          // Canonical 9-code list lives in `src/standards/un-cefact-5305/`.
+          // Canonical 9-code list lives in `src/un/cefact/5305/index.ts`.
           // Spread here preserves the EN-16931 BT-151 leading comment.
           options: [...VAT_CATEGORY_OPTIONS],
           admin: {

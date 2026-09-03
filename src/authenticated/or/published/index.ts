@@ -6,7 +6,7 @@
  * @security ISO-27002 §5.15 access-control
  * @security ISO-27002 §8.3 information-access-restriction
  * @audit ISO-19011:2018 audit-trail draft-vs-published
- * @see src/standards/iso-27002/types.ts
+ * @see src/iso/27002/types/index.ts
  * @see docs/STANDARDS.md §4.4
  */
 

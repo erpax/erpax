@@ -29,7 +29,7 @@ import { algebraFloatPow, exactAbs, exactCeil, exactMax, exactRound } from '@/al
  * @accounting US-GAAP ASC-842-20-30 initial-measurement
  * @accounting US-GAAP ASC-842-20-35 subsequent-measurement
  * @audit ISO-19011:2018 audit-trail
- * @see src/standards/ifrs-16/types.ts
+ * @see src/ifrs/16/types/index.ts
  * @see docs/STANDARDS.md §4.2
  */
 

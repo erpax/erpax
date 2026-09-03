@@ -60,7 +60,7 @@ version: 2
 
 Per the project's standards convention (`docs/STANDARDS.md` §3), every governing standard cited via `@standard EN-16931:2017` should grep to a single home that owns the types. Before this module, three places defined overlapping shapes:
 
-- `src/types/events.ts` — `InvoiceLineItem`, `BillLineItem` (project events)
+- `src/types/events/index.ts` — `InvoiceLineItem`, `BillLineItem` (project events)
 - `src/collections/InvoiceLines/index.ts` — Payload field configs for the same data
 - `src/plugins/parties/types.ts` — `PartyDocument` (workflow base)
 
@@ -74,7 +74,7 @@ Now the canonical fields live here; project events / collections / DTOs referenc
 
 ## Used by
 
-- `src/types/events.ts` — `InvoiceActivatedEvent.payload.lineItems` and `BillActivatedEvent.payload.lineItems` reference these types.
+- `src/types/events/index.ts` — `InvoiceActivatedEvent.payload.lineItems` and `BillActivatedEvent.payload.lineItems` reference these types.
 - `src/collections/InvoiceLines/index.ts` — admin field set mirrors the BG-25 + BG-29 + BG-30 structure.
 - `src/plugins/accounting/services/reports.ts` — VAT breakdown rendering for IFRS IAS-1 presentation.
 

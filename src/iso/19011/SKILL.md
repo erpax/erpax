@@ -58,7 +58,7 @@ governing standard cited via `@audit ISO-19011:2018` should grep to a
 single home that owns the types. Before this module, three places
 defined overlapping shapes:
 
-- `src/hooks/auditTrailAfterChange.ts` — built an inline log object
+- `src/audit/trail/after/change/index.ts` — built an inline log object
 - `src/plugins/accounting/collections/AuditEvents.ts` — defined the
   persistent row shape
 - domain-specific event payloads — duplicated `userId / tenantId / timestamp`
@@ -77,7 +77,7 @@ log aggregator emits.
 
 ## Used by
 
-- `src/hooks/auditTrailAfterChange.ts` — emits one `AuditEntry` per write.
+- `src/audit/trail/after/change/index.ts` — emits one `AuditEntry` per write.
 - `src/plugins/accounting/collections/AuditEvents.ts` — persists `AuditEntry`.
 - `src/plugins/accounting/collections/AuditFindings.ts` — references
   `AuditEntry.id` as evidence for a finding.

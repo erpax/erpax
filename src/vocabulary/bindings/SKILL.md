@@ -39,7 +39,7 @@ erpax runs as a self-managed edge app: each Cloudflare binding is a capability A
 | Concern | File |
 |---|---|
 | binding declarations | `wrangler.jsonc` |
-| Durable Object classes | `src/services/ai/durable-objects.ts` (all 5) |
+| Durable Object classes | `src/ai/durable-objects.ts` (all 5) |
 | CF mediator / env access | `src/services/cloudflare/` (`plugin-helper.ts`, `index.ts`) |
 | OpenNext worker entry | `open-next.config.ts` (`defineCloudflareConfig`) |
 | publishable wrapper | `@erpax/cloudflare` (monorepo) |

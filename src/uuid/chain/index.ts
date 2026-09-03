@@ -45,9 +45,9 @@
  * @standard ITU-T Y.4810 DLT terminology
  * @audit Conservation Law 8 + 47 + 55 + 57 + 60
  * @feature uuid_chain
- * @see /src/services/uuid-kv/index.ts (KvBinding + computeKvBindingUuid)
- * @see /src/services/integrity/uuid-linked-chain.ts (UuidLinkedLeaf — concrete instance)
- * @see /src/services/integrity/tamper-reverse-cost.ts (Law 55 cost calculator)
+ * @see /src/uuid/kv/index.ts (KvBinding + computeKvBindingUuid)
+ * @see /src/integrity/uuid-linked-chain.ts (UuidLinkedLeaf — concrete instance)
+ * @see /src/integrity/tamper-reverse-cost.ts (Law 55 cost calculator)
  */
 
 import type { ContentUuid } from '@/integrity'

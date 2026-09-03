@@ -11,7 +11,7 @@
  *
  * ...via `req.payload.find({ collection: 'tax-codes', where: {...} })`.
  *
- * Safe to `git rm src/services/tax-automation.service.ts` and
+ * Safe to `git rm src/tax/automation/service/index.ts` and
  * `git rm src/types/tax.ts` once verified — see `docs/MIGRATION_WORKLIST.md` Slice F.
  *
  * @standard EN-16931:2017 §BG-23 vat-breakdown

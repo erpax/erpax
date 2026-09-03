@@ -50,7 +50,7 @@
  * @audit Conservation Law 8 content-addressable integrity
  * @audit Conservation Law 53 self-referential-closure (pending-leaf reconciliation)
  * @feature audit_trail
- * @see /src/services/integrity/uuid-linked-chain.ts (UuidLinkedLeaf shape)
+ * @see /src/integrity/uuid-linked-chain.ts (UuidLinkedLeaf shape)
  * @see /src/services/cloudflare/index.ts (auditChainAppendLinked mediator wrapper)
  */
 

@@ -5,7 +5,7 @@
  * filings).
  *
  * Every `ApiResult<T>` returned by the resolvers in
- * `src/services/country-api-clients.ts` (or its country-clients/
+ * `src/country/api/client/index.ts` (or its country-clients/
  * sub-modules) lands here as one row, giving SOX §404 / ISO 19011
  * auditors a single grep target for "show me every external system
  * we contacted on date X for tenant Y".
@@ -24,7 +24,7 @@
  * @audit ISO-19011:2018 audit-trail
  * @compliance SOX §404 internal-controls external-system-traceability
  * @compliance EU 910/2014 eidas signature-evidence
- * @see src/services/country-api-clients.ts
+ * @see src/country/api/client/index.ts
  */
 
 import type { CollectionConfig } from 'payload'

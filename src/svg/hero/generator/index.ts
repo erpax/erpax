@@ -19,7 +19,7 @@ import { exactAbs, exactImul } from '@/algebra'
  * @standard ISO/IEC-29500 office-open-xml media-embedding-target
  * @compliance WCAG-2.1 §1.4.3 contrast-minimum minimum-4.5-1
  * @audit ISO-19011:2018 audit-trail seed-media-provenance
- * @see src/endpoints/seed/erpax-product-pages.ts
+ * @see src/seed/erpax-product-pages.ts
  */
 
 export interface SvgHeroSpec {

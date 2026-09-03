@@ -14,7 +14,7 @@
  * @standard MCP 0.6 tools/list + tools/call
  * @audit Conservation Law 59 uuid-based-sharing-with-rbac
  * @feature uuid_share
- * @see /src/services/uuid-share/index.ts
+ * @see /src/uuid/share/index.ts
  */
 import { z } from 'zod'
 import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'

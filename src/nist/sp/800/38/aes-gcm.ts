@@ -30,7 +30,7 @@ const _AUTH_TAG_LENGTH = 16 // bytes
 /**
  * Get encryption key — derived from the app's internal master secret.
  *
- * Per the standards system (`src/standards/nist-sp-800-108/kdf.ts`), the
+ * Per the standards system (`src/nist/sp/800/108/kdf.ts`), the
  * project enforces *single-secret custodianship* via `PAYLOAD_SECRET` and
  * derives every per-purpose key from it. The error message mentions
  * `PAYLOAD_SECRET` explicitly so test failures point ops at the right

@@ -82,7 +82,7 @@
  * clauses. Digital signatures must verify against Bulgaria's EID or EIDAS
  * certificate infrastructure.
  *
- * @see src/standards/ifrs-15/types.ts Contract
+ * @see src/ifrs/15/types/index.ts Contract
  * @see src/collections/accounting/Contracts.ts
  */
 

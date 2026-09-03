@@ -13,7 +13,7 @@ import { algebraLog2 } from '@/algebra'
  * Pure functions over candidate records — no IO, deterministic, fully tested.
  *
  * @standard ISO/IEC 25010:2023 §5.2 performance-efficiency (fastest-correct selection)
- * @see ./SKILL.md · src/services/integrity/resource-bound.ts (price the tamper bits in joules)
+ * @see ./SKILL.md · src/integrity/resource-bound.ts (price the tamper bits in joules)
  */
 
 /** One agent's attempt at a problem — a content-addressed solution with its race cost. */

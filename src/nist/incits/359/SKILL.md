@@ -74,7 +74,7 @@ attribute-based decisions complement role-based ones.
 ## Used by
 
 - `src/collections/Roles/index.ts` — collection schema + access predicates.
-- `src/collections/Roles/hooks/validateRoleDefinition.ts` — ensures
+- `src/roles/hooks/validateRoleDefinition.ts` — ensures
   `binding`/`scopedCollection`/`resource` triple is internally consistent.
 
 Imports through the legacy `@/utilities/permissions` path still work via the

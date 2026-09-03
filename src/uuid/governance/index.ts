@@ -46,10 +46,10 @@
  * @standard eIDAS §6 electronic identification
  * @audit Conservation Law 63 uuid-self-governance
  * @feature uuid_governance
- * @see /src/services/uuid-format/index.ts (Law 61 — slot + capabilities)
- * @see /src/services/uuid-chain/index.ts (Law 60 — autonomous chain)
- * @see /src/services/uuid-share/index.ts (Law 59 — self-issued grants)
- * @see /src/services/integrity/signatures.ts (HHHHHHHHH — self-attestations)
+ * @see /src/uuid/format/index.ts (Law 61 — slot + capabilities)
+ * @see /src/uuid/chain/index.ts (Law 60 — autonomous chain)
+ * @see /src/uuid/share/index.ts (Law 59 — self-issued grants)
+ * @see /src/integrity/signatures/index.ts (HHHHHHHHH — self-attestations)
  */
 
 import type { ContentUuid } from '@/integrity'

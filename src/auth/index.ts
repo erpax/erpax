@@ -189,7 +189,7 @@ export function roleScopedAccess(...allowedRoles: UserRole[]): Access {
  *
  * @standard NIST INCITS-359-2012 rbac object-scoped-role-assignment
  * @security ISO-27001 A.5.15 access-control
- * @see src/standards/nist-incits-359/payload.ts (the add_role / has_role engine)
+ * @see src/nist/incits/359/payload.ts (the add_role / has_role engine)
  */
 export function partyRoleAccess(
   collectionSlug: string,

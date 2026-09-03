@@ -45,7 +45,7 @@ The user's standing command, made a gate: **every atom is ONE generic lowercase 
 - **TRINITY** — a *code* folder (one holding `index.ts` or `test.ts`) is missing any of `SKILL.md` / `index.ts` / `test.ts`. A folder holding **only** a `SKILL.md` is a legal vocabulary word (antimatter-only) — the trinity is required only once matter appears.
 - **SEAL** — empty or incomplete folders are **not sealed**: no `SKILL.md` and no `index.ts` ⇒ empty; partial trinity or stray matter without a nested child atom ⇒ incomplete. `deriveFolderModel` and the diamond membership audit both fail closed; an unsealed parent forbids sealed descendants ([[seal]] propagation).
 
-## Why `src/config/trading-apis/index.ts` was a violation
+## Why `src/trading/api/index.ts` was a violation
 
 It breaks **both**: `trading-apis` is two hyphenated words, and the folder holds only `index.ts` — no `SKILL.md`, no `test.ts`. It passed every existing gate because the file-purity sibling law ([[quaternary]]) flags only *disallowed* files — it never checks the folder **name** and never a **missing** trinity member. This law closes that gap: `folderViolations()` now reports `config/trading-apis` under **both** name and trinity, and `test.ts` asserts that detection.
 

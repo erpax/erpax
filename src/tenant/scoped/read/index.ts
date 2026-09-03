@@ -16,7 +16,7 @@ import { wherePublishedAnd } from '@/scope'
  * @security ISO-27002 §8.3 information-access-restriction
  * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
  * @compliance SOC-2 CC6.1 logical-access-controls
- * @see src/standards/iso-27002/types.ts
+ * @see src/iso/27002/types/index.ts
  * @see docs/STANDARDS.md §4.4
  */
 

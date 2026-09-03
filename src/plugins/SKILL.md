@@ -69,7 +69,7 @@ export const erpaxPlugin = (opts: Options = {}): Plugin => (config) => {
 - Return a NEW config; merge arrays (don't clobber `config.collections`).
 - Accept an options object; support an `enabled`/disable flag.
 - Order matters — plugins run in array order; the multi-tenant plugin should come AFTER plugins that add collections (else "missing collections"). See [[collections]].
-- Publishable package shape (`@erpax/*`): `package.json` `exports` map → `src/index.ts` + `src/exports/*`; `peerDependencies` on `payload`/`next`/`react` pinned to the same version the host uses (v4 `4.0.0-internal.*`).
+- Publishable package shape (`@erpax/*`): `package.json` `exports` map → `src/index.ts` + `src/export/index.ts*`; `peerDependencies` on `payload`/`next`/`react` pinned to the same version the host uses (v4 `4.0.0-internal.*`).
 
 ## Common mistakes
 - Mutating the incoming config in place instead of returning a merged copy.

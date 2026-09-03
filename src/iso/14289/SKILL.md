@@ -1,6 +1,6 @@
 ---
 name: "14289"
-description: "Use when implementing or referencing `src/standards/iso-14289/`."
+description: "Use when implementing or referencing `src/iso/14289/index.ts`."
 atomPath: "iso/14289"
 coordinate: "iso/14289 · 4/weave · 3b1cbd09"
 contentUuid: "8cd7e277-33f4-546d-beb7-af0d441b8d34"
@@ -41,7 +41,7 @@ signatures:
       stageUuid: "bb016b28-826f-83d1-b989-f5ed07aaa288"
 version: 2
 ---
-# `src/standards/iso-14289/`
+# `src/iso/14289/index.ts`
 
 ISO 14289 PDF/UA — accessibility-conformance profile declarations for
 PDFs the project produces.

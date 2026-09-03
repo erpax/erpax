@@ -1,6 +1,6 @@
 ---
 name: "19005"
-description: "Use when implementing or referencing `src/standards/iso-19005/`."
+description: "Use when implementing or referencing `src/iso/19005/index.ts`."
 atomPath: "iso/19005"
 coordinate: "iso/19005 · 5/round · f45ade33"
 contentUuid: "6395e218-747e-5d2e-9b3c-5769bcbaacf9"
@@ -42,7 +42,7 @@ signatures:
       stageUuid: "c7584b92-d967-894c-8292-f219c429cdc6"
 version: 2
 ---
-# `src/standards/iso-19005/`
+# `src/iso/19005/index.ts`
 
 ISO 19005 PDF/A — long-term archival PDF profiles. Pins the conformance
 levels every PDF the project produces must declare for archival use.

@@ -20,7 +20,7 @@
  * @standard ISO-4217:2015 currency-codes
  * @standard ISO-8601-1:2019 date-time
  * @audit ISO-19011:2018 audit-trail
- * @see src/standards/iso-20022/types.ts
+ * @see src/iso/20022/types/index.ts
  */
 
 import type {

@@ -432,7 +432,7 @@ export async function handleInvoicePaymentFailed(
  * @accounting US-GAAP ASC-606-10-25-13 contract-modification-with-refund
  * @audit ISO-19011:2018 audit-trail refund-cash-leg
  * @compliance SOX §404 internal-controls refund-control
- * @see src/services/gl-posting.service.ts postSubscriptionRefunded
+ * @see src/gl/posting/service/index.ts postSubscriptionRefunded
  */
 export async function handleChargeRefunded(
   context: StripeWebhookContext,

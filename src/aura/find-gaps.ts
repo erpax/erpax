@@ -3,7 +3,7 @@
  *
  * Slice CCCCCCCC (2026-05-11). Per user 'ensure only javascript/typescript'.
  * Replaces the prior Python sibling. The canonical detection lives in
- * `src/services/architecture-invariants/checks.ts` (run by the
+ * `src/architecture/invariant/checks.ts` (run by the
  * ConsistencyAgent + the boot suite); this script is a thin CLI for
  * ad-hoc one-off scans.
  *

@@ -6,7 +6,7 @@
  * @standard W3C-HTML5 §4.2.5 meta-element
  * @standard OGP open-graph-protocol-1.0
  * @rfc 3986 §5.3 reference-resolution
- * @see src/standards/rfc-3986/
+ * @see src/rfc/3986/index.ts
  */
 
 import type { Metadata } from 'next'

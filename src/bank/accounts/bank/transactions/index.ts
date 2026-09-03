@@ -45,7 +45,7 @@
  * @audit ISO-19011:2018 audit-trail reconciliation-line-evidence
  * @compliance SOX §404 internal-controls bank-reconciliation
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
- * @see src/standards/iso-20022/types.ts Camt053Transaction
+ * @see src/iso/20022/types/index.ts Camt053Transaction
  */
 
 import type { CollectionConfig } from 'payload'

@@ -31,7 +31,7 @@
  * @accounting IFRS IFRS-15 §B16 usage-based-revenue
  * @compliance SOC-2 CC6.1 logical-access-controls
  * @see ./subscriptionGates.ts
- * @see src/collections/SubscriptionPlans/
+ * @see src/subscription/plans/index.ts
  */
 
 /**

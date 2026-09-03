@@ -57,7 +57,7 @@
  * @standard ETSI EN 319 142-1 PAdES (export compatibility)
  * @audit Conservation Law 53 self-referential-closure
  * @feature self_closure
- * @see /src/services/integrity/signatures.ts (Slice HHHHHHHHH Cut 1)
+ * @see /src/integrity/signatures/index.ts (Slice HHHHHHHHH Cut 1)
  */
 
 import type { InternalProvider, FallbackContext } from '../types'

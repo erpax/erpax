@@ -1,7 +1,7 @@
 /**
  * Dunning Cycles — collection-process record per overdue invoice.
  *
- * `src/jobs/dunning/job.ts` runs every 15 minutes (Slice ZZ wired the
+ * `src/jobs/dunning/job/index.ts` runs every 15 minutes (Slice ZZ wired the
  * Cloudflare cron). Until now there was no durable record of WHICH
  * invoices entered dunning, WHICH letter / step they're on, or WHEN
  * the cycle escalated. Auditors querying ECL allowance evidence
@@ -27,7 +27,7 @@
  * @compliance SOX §404 internal-controls bad-debt-evidence
  * @compliance GDPR Art.6(1)(f) lawful-basis-legitimate-interest collections
  * @security ISO-27002 §5.4 segregation-of-duties write-off-approval
- * @see src/jobs/dunning/job.ts
+ * @see src/jobs/dunning/job/index.ts
  * @see docs/STANDARDS.md §4.2 §5
  */
 

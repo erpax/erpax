@@ -86,7 +86,7 @@
  * if the amendment involves employment-related terms. Tax reporting: amendments
  * affecting revenue are reported on the next VAT/tax return.
  *
- * @see src/standards/ifrs-15/types.ts ContractModification
+ * @see src/ifrs/15/types/index.ts ContractModification
  * @see src/collections/accounting/Contracts.ts
  */
 

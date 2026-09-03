@@ -14,7 +14,7 @@
  * @standard MCP 0.6
  * @audit Conservation Law 61 uuid-carries-features
  * @feature uuid_format
- * @see /src/services/uuid-format/index.ts
+ * @see /src/uuid/format/index.ts
  */
 import { z } from 'zod'
 import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'

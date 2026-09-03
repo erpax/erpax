@@ -75,7 +75,7 @@ consolidated
 
 ## Service: `IntercompanyReconciliation`
 
-**File:** `src/services/IntercompanyReconciliation.ts`  
+**File:** `src/intercompany/reconciliation/index.ts`  
 **Pattern:** Static class with pure (immutable), deterministic methods  
 **All returns:** JSON-serializable for audit trail storage
 
@@ -310,7 +310,7 @@ static computeChainLeaf(
 
 ## Hook: `validateConsolidationReadiness`
 
-**File:** `src/hooks/validateConsolidationReadiness.ts`  
+**File:** `src/validate/consolidation/readiness/index.ts`  
 **Trigger:** `beforeValidate` on Consolidations collection  
 **Runs:** When consolidation record is created or status changed to "in-progress"
 

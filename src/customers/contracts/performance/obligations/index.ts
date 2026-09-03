@@ -28,7 +28,7 @@
  * @accounting US-GAAP ASC-606-10-25-31 progress-measurement
  * @audit ISO-19011:2018 audit-trail po-satisfaction
  * @compliance SOX §404 internal-controls revenue-recognition
- * @see src/standards/ifrs-15/types.ts PerformanceObligation
+ * @see src/ifrs/15/types/index.ts PerformanceObligation
  */
 
 import type { CollectionConfig } from 'payload'

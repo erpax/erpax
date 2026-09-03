@@ -5,7 +5,7 @@
  * Requires local DB (Wrangler / `.wrangler` D1) and env from `.env` / `.env.local`.
  *
  * Usage:
- *   pnpm exec tsx src/services/ingest/blogger-import.ts ./feed.atom --tenant 1 --author-id 2
+ *   pnpm exec tsx src/ingest/blogger-import.ts ./feed.atom --tenant 1 --author-id 2
  *
  * Options:
  *   --tenant <id>          Required. Multi-tenant id on posts/categories/media.

@@ -14,7 +14,7 @@
  * @accounting US-GAAP ASC-830 foreign-currency-matters reporting-currency
  * @audit ISO-19011:2018 audit-trail
  * @see docs/STANDARDS.md §4.1 §4.2
- * @see src/config/regional/defaults.ts
+ * @see src/config/regional/defaults/index.ts
  */
 
 export type { Currency } from '@/config/regional/defaults';

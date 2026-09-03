@@ -10,7 +10,7 @@
  *
  * Usage (from repo root):
  *   pnpm exec tsx src/services/business-chains/backfill-producers.ts
- *   pnpm exec tsx src/services/business-chains/backfill-producers.ts --dry-run
+ *   pnpm exec tsx src/business/chain/backfill-producers.ts --dry-run
  *
  * Idempotent: a step that already has `producer:` is skipped.
  *

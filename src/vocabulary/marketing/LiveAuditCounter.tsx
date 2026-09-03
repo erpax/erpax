@@ -9,8 +9,8 @@
  * @standard schema.org QuantitativeValue
  * @audit ISO-19011:2018 audit-trail live-evidence
  * @compliance SOX §404 internal-controls evidence-preservation
- * @see src/services/journal-entry.service.ts
- * @see src/hooks/auditTrailAfterChange.ts
+ * @see src/journal/entry/service/index.ts
+ * @see src/audit/trail/after/change/index.ts
  */
 
 import React from 'react'

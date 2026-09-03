@@ -50,7 +50,7 @@ export interface CountryBundle {
   /**
    * Bank-domain APIs for the country (PSD2 ASPSPs, BIC directories,
    * domestic clearing-house registries). Pulled from `BANK_APIS` in
-   * `src/country/api.ts` — separate from `apis` because the
+   * `src/country/api/index.ts` — separate from `apis` because the
    * bank-side endpoints are tenant-specific (driven by the tenant's
    * bank-account country, not the company-of-record country).
    */

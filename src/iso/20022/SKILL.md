@@ -72,9 +72,9 @@ Files:
 
 Per the project's standards convention (`docs/STANDARDS.md` §3), every governing standard cited via `@standard ISO-20022` should grep to a single home that owns the types. Before this module, four places defined overlapping shapes:
 
-- `src/types/bank/reconciliation.ts` — `BankStatement` / `BankTransaction`
-- `src/types/events.ts` — `BankStatementImportedEvent.payload.transactions`
-- `src/services/bank-statement-import.service.ts` — CSV / OFX intermediate
+- `src/types/bank/reconciliation/index.ts` — `BankStatement` / `BankTransaction`
+- `src/types/events/index.ts` — `BankStatementImportedEvent.payload.transactions`
+- `src/bank/statement/import/service/index.ts` — CSV / OFX intermediate
 - `src/plugins/accounting/collections/BankStatements.ts` — Payload field config
 
 Now they all reference the canonical `Camt053Statement` / `Camt053Transaction` types. Drift becomes a compile-time error.
@@ -92,13 +92,13 @@ Now they all reference the canonical `Camt053Statement` / `Camt053Transaction` t
 
 ## Used by
 
-- `src/types/bank/reconciliation.ts` — the project's bank-rec wire types
+- `src/types/bank/reconciliation/index.ts` — the project's bank-rec wire types
   re-export / extend the canonical `Camt053Statement`.
-- `src/types/events.ts` — `BankStatementImportedEvent` payload references
+- `src/types/events/index.ts` — `BankStatementImportedEvent` payload references
   canonical types.
-- `src/services/bank-reconciliation.service.ts` — uses the
+- `src/bank/reconciliation/service/index.ts` — uses the
   `BankTransactionCode` triplet to classify auto vs manual reconciliation.
-- `src/services/bank-statement-import.service.ts` — CSV / OFX adapters
+- `src/bank/statement/import/service/index.ts` — CSV / OFX adapters
   produce `Camt053Statement`-shaped output.
 - `src/plugins/accounting/collections/BankTransactions.ts` — line-level
   fields mirror the camt.053 ReportEntry / EntryDetails / TransactionDetails

@@ -8,7 +8,7 @@
  * with its `emits` declaration (matched by stepIndex), and emit the
  * canonical `BusinessChain` shape.
  *
- * The output diffs identically against `src/services/business-chains/
+ * The output diffs identically against `src/business/chain/index.ts
  * registry.ts` for chains where every step's collection-slug + emitted-
  * event are declared in JSDoc. Chains that haven't yet adopted the
  * CCCCC tag vocabulary are reported as `incomplete`.
