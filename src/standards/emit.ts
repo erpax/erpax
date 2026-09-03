@@ -49,9 +49,24 @@ export interface CatalogueEntry {
  * one is a copy, not a citation. The walk works in any directory, which the shell-out did not:
  * two hermetic fixtures broke the moment `git ls-files` was asked about a temp dir.
  */
-const GENERATED_FACE = /(\.generated\.[jt]sx?$|(^|\/)(payload-types|skills\.index|catalogue|registry)\.[jt]sx?$)/
+/*
+ * The generated faces, skipped BY NAME — and this list is not cosmetic.
+ *
+ * `README.md`, `LLM.md` and `diamond.json` are per-atom derivations: gitignored, regenerated on
+ * demand, and PRESENT ON A DEVELOPER MACHINE WHILE ABSENT IN CI. They are 9,945 of the 20,408
+ * files under src here and zero of them on a runner. Scanning them makes the catalogue depend on
+ * whether someone has run `erpax readme` — which is exactly what happened: the catalogue verified
+ * green locally and red on a shard, and the diff was a machine, not a change.
+ *
+ * That machine-independence is what rg's .gitignore-awareness was buying, and it was the one
+ * thing worth keeping from the shell-out. A banner inside a generated face is a RESTATEMENT of a
+ * citation that already exists in the source it was derived from — counting it twice is the
+ * duplication [[rules]] calls camouflage.
+ */
+const GENERATED_FACE =
+  /(\.generated\.\w+$|(^|\/)(payload-types|skills\.index|catalogue|registry)\.[jt]sx?$|(^|\/)(README|LLM)\.md$|(^|\/)diamond\.json$)/
 
-const bannerFiles = (cwd: string): string[] => {
+export const bannerFiles = (cwd: string): string[] => {
   const out: string[] = []
   const walk = (dir: string, rel: string): void => {
     let entries: Dirent[]

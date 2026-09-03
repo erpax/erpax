@@ -37,7 +37,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Semantic model of the electronic invoice",
     "uuid": "b293e94d-80cc-82ce-a7c9-7006b79e5bbf",
     "color": "hsl(355 78% 43%)",
-    "count": 133,
+    "count": 130,
     "modules": [
       {
         "path": "src/ai/invoice-ocr.ts",
@@ -116,14 +116,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§BG-13"
       },
       {
-        "path": "src/en/16931/LLM.md",
-        "section": ""
-      },
-      {
-        "path": "src/en/16931/README.md",
-        "section": ""
-      },
-      {
         "path": "src/en/16931/SKILL.md",
         "section": ""
       },
@@ -133,6 +125,14 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/en/16931/types/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/en/16931/types/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/en/16931/validate.ts",
         "section": ""
       }
     ]
@@ -3453,7 +3453,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Auditing management systems",
     "uuid": "85eb43b8-8305-8b77-948c-93e96eba62e4",
     "color": "hsl(83 87% 54%)",
-    "count": 100,
+    "count": 99,
     "modules": [
       {
         "path": "src/accounting/proof/index.ts",
@@ -6210,7 +6210,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "OECD Standard Audit File for Tax",
     "uuid": "3c66b577-efc9-8c9b-bd38-2df00b645605",
     "color": "hsl(342 61% 61%)",
-    "count": 64,
+    "count": 63,
     "modules": [
       {
         "path": "src/audit/compliance/reporting/index.ts",
@@ -6289,10 +6289,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§СУПТО"
       },
       {
-        "path": "src/reverse/README.md",
-        "section": "§3"
-      },
-      {
         "path": "src/reverse/SKILL.md",
         "section": "§3"
       },
@@ -6306,6 +6302,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/saf/t/types/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/saf/t/types/test.ts",
         "section": ""
       }
     ]
@@ -7681,7 +7681,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Language tags",
     "uuid": "766b2cca-d72d-8f02-86bb-6cb2c79717ce",
     "color": "hsl(75 64% 48%)",
-    "count": 78,
+    "count": 77,
     "modules": [
       {
         "path": "src/agents/mcp/i18n/index.ts",
@@ -8085,7 +8085,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Tags for Identifying Languages",
     "uuid": "e02ee373-c4fa-8fb9-ba75-4ee6f9c43f18",
     "color": "hsl(150 72% 57%)",
-    "count": 13,
+    "count": 12,
     "modules": [
       {
         "path": "src/app/(frontend)/[locale]/layout.tsx",
@@ -8118,10 +8118,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/locale/fallback/index.ts",
         "section": "§4.1"
-      },
-      {
-        "path": "src/localize/README.md",
-        "section": ""
       },
       {
         "path": "src/localize/SKILL.md",
@@ -8319,7 +8315,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Sarbanes-Oxley Act §302/404/906",
     "uuid": "a6e18810-badd-8876-9ebc-72c9bc14aa6c",
     "color": "hsl(241 86% 54%)",
-    "count": 26,
+    "count": 25,
     "modules": [
       {
         "path": "src/access/standard/index.ts",
@@ -8384,10 +8380,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/period/end/closing/index.ts",
         "section": ""
-      },
-      {
-        "path": "src/reverse/README.md",
-        "section": "§3"
       },
       {
         "path": "src/reverse/SKILL.md",
@@ -8523,7 +8515,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Universal Business Language",
     "uuid": "91f2143b-c905-8e7e-8b7f-ccc48a2fd117",
     "color": "hsl(282 75% 49%)",
-    "count": 46,
+    "count": 45,
     "modules": [
       {
         "path": "src/app/(frontend)/[locale]/posts/[slug]/page.tsx",
@@ -9485,7 +9477,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Provenance Ontology",
     "uuid": "aab6453e-ed17-8541-a227-c83eb24632af",
     "color": "hsl(142 89% 52%)",
-    "count": 29,
+    "count": 28,
     "modules": [
       {
         "path": "src/beyond/SKILL.md",
@@ -9556,10 +9548,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/rosetta/LLM.md",
-        "section": ""
-      },
-      {
         "path": "src/rosetta/SKILL.md",
         "section": ""
       },
@@ -9581,6 +9569,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/vendors/vendor/quotes/index.ts",
+        "section": "§8.4"
+      },
+      {
+        "path": "src/vendors/vendor/scorecards/SKILL.md",
         "section": "§8.4"
       }
     ]

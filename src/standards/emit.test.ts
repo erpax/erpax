@@ -7,7 +7,7 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { exactMaxOf } from '@/algebra'
 import { STANDARDS_REGISTRY } from '@/standards/registry'
-import { matcherFor, jurisdictionOf, obligationsFor, consolidatedObligations, buildStandardsCatalogue, verifyStandardsCatalogue, citationsInComments } from './emit'
+import { matcherFor, jurisdictionOf, obligationsFor, consolidatedObligations, buildStandardsCatalogue, verifyStandardsCatalogue, citationsInComments, bannerFiles } from './emit'
 
 // The parser mind — a second, independent reading of the same source, crossed with the regex `scan` because a
 // single mind breaks. A `@standard` banner is a citation only in a real COMMENT; the same sigil in a string
@@ -231,5 +231,22 @@ describe('jurisdiction — the tax-residence join', () => {
     // international-only. Reporting that as "covered" would be the fabricated-assurance failure
     expect(obligationsFor('JP', rows)).toEqual(obligationsFor('international', rows))
     expect(rows.filter((r) => /^[A-Z]{2}$/.test(jurisdictionOf(r)) && jurisdictionOf(r) !== 'EU').length).toBeLessThan(20)
+  })
+})
+
+describe('standards/emit — the scan set is the same on every machine', () => {
+  it('reads NO generated face — they are gitignored, so a runner does not have them', () => {
+    // 9,945 of the 20,408 files under src on a developer machine are README.md / LLM.md /
+    // diamond.json faces, and ZERO of them exist on a CI runner. Scanning them made the
+    // catalogue depend on whether someone had run `erpax readme`: it verified green locally and
+    // red on a shard, and the diff was a machine, not a change.
+    const scanned = bannerFiles(process.cwd())
+    const faces = scanned.filter((f) => /(README|LLM)\.md$|diamond\.json$|\.generated\.|skills\.index|payload-types/.test(f))
+    expect(faces).toEqual([])
+    expect(scanned.length).toBeGreaterThan(1000)
+  })
+
+  it('reads no test file either — a fixture citing a standard is not the corpus citing one', () => {
+    expect(bannerFiles(process.cwd()).filter((f) => /\.test\.tsx?$/.test(f))).toEqual([])
   })
 })
