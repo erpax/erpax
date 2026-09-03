@@ -6,16 +6,17 @@ one law lives in two private corners, nothing can show a third place is missing 
 
 **The measurement refuses the premise.**
 
-| | (2026-09-04, 4 of 6 repos reporting) |
+| | (2026-09-04, all six sessions reporting) |
 | --- | ---: |
-| claims folded | 4,255 |
+| claims folded | 6,945 |
 | malformed lines | 0 |
-| distinct after content-addressing | 4,249 |
-| classes with >1 member | 3 |
+| distinct after content-addressing | 6,938 |
+| classes with >1 member | 4 |
 | **classes spanning more than one repo** | **0** |
 
-erpax 2,899 · ceccec.github.io 832 · millennium-solutions 503 · aequator 21. Every collision is
-*internal to one repo*. At the level of stated law, these repos are not duplicating each other.
+erpax 2,899 · uuidna 2,548 · ceccec.github.io 832 · millennium-solutions 503 · zeropoint-node 142 ·
+aequator 21. Every collision is *internal to one repo*. At the level of stated law, these repos are
+not duplicating each other, and the premise the wave began with is refuted by its own measurement.
 
 ## The fold is @/merge, not a new theorem
 
@@ -60,10 +61,12 @@ that two statements MEAN the same thing.
 
 **Honest boundary.** This proves two claims are stated **identically**, never that they are the same
 knowledge — and the pass built to reach past identity was refuted, so that gap is open and named
-rather than papered over. Two repos have not reported; a cross-repo class may yet appear, and one
-falsifiable prediction is on the record: a claim a peer says it adopted verbatim should collide the
-moment its origin repo reports. Zero here is a measurement of four faces at one instant, not a
-theorem about the six.
+rather than papered over. One falsifiable prediction was recorded and RESOLVED NEGATIVE, which is where the
+zero earned its meaning: a peer had adopted a claim verbatim from a sibling session, so it should
+have collided once the origin repo reported. It did not — because the line travelled by MESSAGE and
+never landed in the originator's tree. A repo-file fold cannot see session transmission; only the
+adopting side's `origin` field can, and that field is the measurement, needing no collision to be
+real. Zero is a measurement of six faces at one instant, not a theorem about the repos.
 
 **Law — [[law]]: knowledge is fused by address, never by resemblance. Content-address every stated
 claim and let identical ones collide; a claim that merely resembles another is a candidate for a
