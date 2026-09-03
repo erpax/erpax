@@ -11,6 +11,16 @@ authors:
   - family-names: Rouschev
     given-names: Tsvetan
     orcid: "https://orcid.org/0009-0000-7312-9778"
+doi: "10.5281/zenodo.22237698"
+identifiers:
+  # The CONCEPT doi resolves to the newest version, always — cite this one unless you mean a
+  # specific release. The VERSION doi is the frozen record of exactly these bytes.
+  - type: doi
+    value: "10.5281/zenodo.22237698"
+    description: "Concept DOI — every version of erpax"
+  - type: doi
+    value: "10.5281/zenodo.22288360"
+    description: "Version DOI — v1.0.3, corpus fold 600417d1-8eff-82ef-8d4f-7ade48e9ea3e"
 repository-code: "https://github.com/erpax/erpax"
 url: "https://github.com/erpax/erpax"
 license: CC-BY-NC-ND-4.0
@@ -23,3 +33,107 @@ keywords:
   - provenance
   - tamper-evidence
   - compliance-as-code
+
+# PRIOR ART, BY DOMAIN — the published work erpax builds on, not a claim about what is novel
+# in it. A DOI dates a disclosure; it does not adjudicate priority against anyone else's.
+#
+# EVERY entry here was verified rather than remembered: each DOI was resolved and its title
+# read back from Crossref or the RFC Editor before it was written down. Ten candidates were
+# checked and four discarded — they resolved perfectly and were about capital-market research,
+# ransomware taxonomy, a conference proceedings volume and microservice migration. A resolving
+# pointer to the wrong work is worse than no pointer, which is the rule this corpus enforces on
+# its own citations (rules/reference) and had no business exempting itself from.
+#
+#   DOMAIN 1 · content addressing and tamper evidence — the same content is the same name,
+#              and a change to a sealed record is detectable rather than forbidden
+#   DOMAIN 2 · software quality and audit — a quality claim is a gate, and a citation must
+#              lead to its evidence
+#   DOMAIN 3 · fiscal and statutory — the clause→code trace an inspector walks
+references:
+  # ── DOMAIN 1 · content addressing and tamper evidence ──────────────────────────────────
+  - type: conference-paper
+    title: "A Digital Signature Based on a Conventional Encryption Function"
+    authors:
+      - family-names: Merkle
+        given-names: "Ralph C."
+    year: 1988
+    collection-title: "Advances in Cryptology — CRYPTO '87, Lecture Notes in Computer Science"
+    doi: "10.1007/3-540-48184-2_32"
+    notes: >-
+      The hash tree. erpax folds its corpus to one root the same way, which is what makes a
+      whole-corpus seal checkable without reading the corpus.
+  - type: article
+    title: "How to time-stamp a digital document"
+    authors:
+      - family-names: Haber
+        given-names: Stuart
+      - family-names: Stornetta
+        given-names: "W. Scott"
+    year: 1991
+    journal: "Journal of Cryptology"
+    doi: "10.1007/BF00196791"
+    notes: >-
+      Dating a document without trusting the dater. The ancestor of every content-addressed
+      provenance claim erpax makes, including the one this citation record is part of.
+  - type: standard
+    title: "RFC 6962 — Certificate Transparency"
+    authors:
+      - name: "Internet Engineering Task Force"
+    year: 2013
+    doi: "10.17487/RFC6962"
+    url: "https://www.rfc-editor.org/rfc/rfc6962"
+    notes: >-
+      Append-only logs whose consistency anyone can verify — the shape of erpax's audit chain,
+      where a receipt is checkable by a party who trusts nobody.
+  - type: standard
+    title: "RFC 9562 — Universally Unique IDentifiers (UUIDs)"
+    authors:
+      - name: "Internet Engineering Task Force"
+    year: 2024
+    doi: "10.17487/RFC9562"
+    url: "https://www.rfc-editor.org/rfc/rfc9562"
+    notes: >-
+      §5.8 defines the v8 custom UUID. erpax's content-uuid is a v8 folded from an atom's
+      content, so the same content is the same address on any machine, in any order.
+  - type: standard
+    title: "RFC 8785 — JSON Canonicalization Scheme (JCS)"
+    authors:
+      - name: "Internet Engineering Task Force"
+    year: 2020
+    doi: "10.17487/RFC8785"
+    url: "https://www.rfc-editor.org/rfc/rfc8785"
+    notes: >-
+      The canonical serialization erpax folds before hashing. Without it key order would change
+      an address, and content-addressing would not hold at all.
+
+  # ── DOMAIN 2 · software quality and audit ──────────────────────────────────────────────
+  - type: standard
+    title: "ISO/IEC 25010:2023 — Systems and software Quality Requirements and Evaluation (SQuaRE): product quality model"
+    authors:
+      - name: "International Organization for Standardization"
+    year: 2023
+    url: "https://www.iso.org/standard/78176.html"
+    notes: >-
+      Each quality characteristic erpax cites is reverse-engineered into an executable gate; a
+      characteristic cited with no gate behind it is itself a tracked violation.
+  - type: standard
+    title: "ISO 19011:2018 — Guidelines for auditing management systems"
+    authors:
+      - name: "International Organization for Standardization"
+    year: 2018
+    url: "https://www.iso.org/standard/70017.html"
+    notes: >-
+      §6.4 audit evidence — a citation must lead to its evidence. erpax gates every src/…
+      pointer in its own prose on this, at zero tolerance on the statutory surface.
+
+  # ── DOMAIN 3 · fiscal and statutory ────────────────────────────────────────────────────
+  - type: standard
+    title: "Наредба № Н-18 — Bulgarian fiscal-device and SUPTO regulation"
+    authors:
+      - name: "Ministry of Finance of the Republic of Bulgaria"
+    year: 2006
+    url: "https://lex.bg/laws/ldoc/2135540645"
+    notes: >-
+      The statutory surface erpax implements for Bulgarian fiscalisation — the УНП-carrying
+      receipt, сторно reversal, the Приложение-38 audit file. Its clause→code trace is gated at
+      zero dead pointers, because an unreviewable citation cannot be relied on.

@@ -173,6 +173,20 @@ export function cloudflareDeployButtonMarkdown(
   return `[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](${deployUrl})`
 }
 
+/**
+ * The CONCEPT doi — Zenodo's version-independent address, which resolves to the newest release.
+ *
+ * Cite this one unless you mean specific bytes; the per-version doi lives in CITATION.cff
+ * alongside the corpus fold it archives. It is emitted rather than hand-written because the
+ * README is a projection: a badge typed into the file would be erased by the next regen, which
+ * is exactly what happened on the first attempt.
+ */
+export const ERPAX_CONCEPT_DOI = '10.5281/zenodo.22237698' as const
+
+export function doiBadgeMarkdown(doi: string = ERPAX_CONCEPT_DOI): string {
+  return `[![DOI](https://zenodo.org/badge/DOI/${doi}.svg)](https://doi.org/${doi})`
+}
+
 /** The README's content model — a pure projection of the live tree. */
 export interface ReadmeModel {
   readonly name: string
@@ -446,7 +460,7 @@ export function renderReadme(
     '',
     `> ${model.description}`,
     '',
-    cloudflareDeployButtonMarkdown(),
+    `${cloudflareDeployButtonMarkdown()} ${doiBadgeMarkdown()}`,
     '',
     ...renderOrientSection(),
     renderQuantumComputerSection(),

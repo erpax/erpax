@@ -32,6 +32,17 @@ export function erpaxLicenseNote(license: string): string[] {
 /** Where the licensed material lives — CC BY-NC-ND §3(a)(1) attribution requires the source link. */
 export const SOURCE_URL = 'https://github.com/erpax/erpax' as const
 
+/**
+ * The archived, citable address — Zenodo's CONCEPT doi, which resolves to the newest release.
+ *
+ * A source URL says where the work lives; a DOI says what it WAS on a date, in a record nobody
+ * can edit — including erpax. A citation that carries only the repo points at a moving target,
+ * which is the same defect [[rules]]/reference gates inside the corpus: a pointer that resolves
+ * to something other than what was cited.
+ */
+export const ERPAX_DOI = '10.5281/zenodo.22237698' as const
+export const DOI_URL = `https://doi.org/${ERPAX_DOI}` as const
+
 /** What an agent needs to cite one piece of corpus matter in license compliance. */
 export interface CitationInput {
   /** Repo-relative path of the cited matter (e.g. 'src/rules/ask'). */
@@ -60,6 +71,7 @@ export function citation(input: CitationInput): string {
     input.uuid ? `content-uuid ${input.uuid}` : null,
     `© erpax · ${ERPAX_SPDX}`,
     `source ${SOURCE_URL}`,
+    `doi ${ERPAX_DOI}`,
     `commercial ${LICENSE_CONTACT}`,
     input.modified ? `modified ${input.modified}` : null,
   ]
@@ -67,7 +79,14 @@ export function citation(input: CitationInput): string {
     .join(' · ')
 }
 
-/** A citation complies iff it carries the SPDX AND the source URL — the two the license cannot omit. */
+/**
+ * A citation complies iff it carries the SPDX, the source URL and the DOI.
+ *
+ * The first two are what the licence requires (attribution with a link). The DOI is what makes
+ * the citation CHECKABLE a decade from now: the repo can move, be renamed or disappear, and the
+ * deposit cannot — it can only be superseded. A citation you cannot resolve is not attribution,
+ * it is a claim about attribution.
+ */
 export function citationComplies(text: string): boolean {
-  return text.includes(ERPAX_SPDX) && text.includes(SOURCE_URL)
+  return text.includes(ERPAX_SPDX) && text.includes(SOURCE_URL) && text.includes(ERPAX_DOI)
 }

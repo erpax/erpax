@@ -23,6 +23,51 @@
       "identifier": "https://github.com/erpax/erpax",
       "relation": "isSupplementTo",
       "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.22237698",
+      "relation": "isVersionOf",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/3-540-48184-2_32",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/BF00196791",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.17487/RFC6962",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.17487/RFC9562",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.17487/RFC8785",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://www.iso.org/standard/78176.html",
+      "relation": "references",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.iso.org/standard/70017.html",
+      "relation": "references",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://lex.bg/laws/ldoc/2135540645",
+      "relation": "references",
+      "scheme": "url"
     }
   ]
 }

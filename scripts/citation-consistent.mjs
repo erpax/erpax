@@ -37,6 +37,25 @@ const cffField = (key) => {
 if (cffField('version') !== pkg.version) {
   fail(`CITATION.cff version ${cffField('version')} ≠ package.json ${pkg.version}`)
 }
+/*
+ * THE DOI, in every surface that cites the work.
+ *
+ * A DOI that appears in one file and not another is a citation that resolves for some readers
+ * and not others — the same drift this script exists to catch for version and licence. The
+ * concept DOI resolves to the newest release, so it is the one that belongs in prose; the
+ * per-version DOI lives in CITATION.cff beside the fold it archives.
+ */
+const CONCEPT_DOI = '10.5281/zenodo.22237698'
+const carriers = [
+  ['CITATION.cff', cff],
+  ['.zenodo.json', readFileSync('.zenodo.json', 'utf8')],
+  ['README.md', readFileSync('README.md', 'utf8')],
+  ['src/algebra/license.ts', readFileSync('src/algebra/license.ts', 'utf8')],
+]
+for (const [name, text] of carriers) {
+  if (!text.includes(CONCEPT_DOI)) fail(`${name} does not carry the concept DOI ${CONCEPT_DOI}`)
+}
+
 if (cffField('license') !== pkg.license) {
   fail(`CITATION.cff license ${cffField('license')} ≠ package.json ${pkg.license}`)
 }
