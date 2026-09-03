@@ -13,11 +13,11 @@
  */
 import { canonicalMatrixPath } from '@/path'
 import { coordinateAddress } from '@/uuid/matrix'
-import { DebitCreditLogic, type JournalEntryLine, type ValidatedEntry } from '../debit'
-import { ENTROPY_CURRENCY, ebToMilliEb, type PathPostingUnit } from '../corpus'
+import { DebitCreditLogic, type JournalEntryLine, type ValidatedEntry } from '@/accounting/debit'
+import { ENTROPY_CURRENCY, ebToMilliEb, type PathPostingUnit } from '@/accounting/corpus'
 
-export { ENTROPY_CURRENCY, ebToMilliEb, milliEbToEb, MILLI_EB_SCALE } from '../corpus'
-export type { PathPostingUnit } from '../corpus'
+export { ENTROPY_CURRENCY, ebToMilliEb, milliEbToEb, MILLI_EB_SCALE } from '@/accounting/corpus'
+export type { PathPostingUnit } from '@/accounting/corpus'
 
 /** Contra paths — corpus atoms that close gap/seal pairs (path-keyed, not synthetic GL). */
 export const ENTROPY_CONTRA_PATH = 'entropy' as const

@@ -10,7 +10,7 @@ import {
   SEAL_CONTRA_PATH,
   entropyLinesToPathEntry,
 } from './index'
-import { ebToMilliEb } from '../corpus'
+import { ebToMilliEb } from '@/accounting/corpus'
 
 describe('accounting/coa — path is the account code', () => {
   it('accountCodeOf normalizes full path — homonyms are distinct', () => {

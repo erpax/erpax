@@ -28,7 +28,7 @@ import { toAtomPath, atomPathUuid } from '@/path'
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { parseWranglerBindings } from '../wrangler'
-import { filterAiBindings } from '../ai'
+import { filterAiBindings } from '@/cloudflare/ai'
 import {
   type CloudflareBindingInput,
   type CloudflareBindingType,
@@ -38,7 +38,7 @@ import {
   TYPE_FACE,
   TYPE_LINKS,
 } from '../bindings'
-import type { SealedCloudflareConfig } from '../seal'
+import type { SealedCloudflareConfig } from '@/cloudflare/seal'
 
 /** Map binding face to `DeploymentFaces` booleans (backend ⇒ worker+plugin substrate). */
 export function bindingDeploymentFaces(

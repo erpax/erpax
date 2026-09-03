@@ -13,12 +13,12 @@
  *
  * @see ../coa — ../../readme/entropy — ../../entry — ../SKILL.md
  */
-import { type ValidatedEntry } from '../debit'
+import { type ValidatedEntry } from '@/accounting/debit'
 import {
   accountCodeOf,
   accountCoordinateOf,
   entropyLinesToPathEntry,
-} from '../coa'
+} from '@/accounting/coa'
 import { COMPARABLE_UNIT } from '@/readme/entropy-unit'
 import type { CorpusEntropyRollup, FolderEntropyAccounting } from '@/readme/entropy'
 import type { FolderReadmeModel } from '@/readme'
@@ -47,7 +47,7 @@ export {
   ENTROPY_CONTRA_PATH,
   SEAL_CONTRA_PATH,
   BALANCE_CONTRA_PATH,
-} from '../coa'
+} from '@/accounting/coa'
 
 /** Payload `journal-entries` collection (OECD SAF-T §3 journal-entries). */
 export const CORPUS_JOURNAL_COLLECTION = 'journal-entries' as const
