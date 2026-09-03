@@ -42,7 +42,7 @@ version: 2
 Ninety atoms needed their `horo`. Two agents faced the same task:
 
 - **The dying agent** ran the whole corpus-graph regen to stamp it — 9 minutes at 100% CPU, killed with zero output. It had forgotten that horo is one O(1) projection of an address it already held.
-- **The living agent** (Wave 1, a fresh context) computed it per atom, instant, from the fold — and did *more*: it did not trust the parent's inherited guess (`digitalRoot(hex)`, which is wrong — gives 4 for `weight`, the corpus says 5). It **verified against all 3178 matrix nodes** and found the true projection, `HELIX[byteSum(uuid) % 6]`. It stamped 91 atoms correctly; off-ring fell 98 → 7 (the 7 are the governance axis, correct by design); the 7-dimensional invariant reads MET.
+- **The living agent** (Wave 1, a fresh context) computed it per atom, instant, from the fold — and did *more*: it did not trust the parent's inherited guess (`digitalRoot(hex)`, which is wrong — gives 4 for `weight`, the corpus says 5). It **verified against all 3178 matrix nodes (measured 2026-07-16)** and found the true projection, `HELIX[byteSum(uuid) % 6]`. It stamped 91 atoms correctly; off-ring fell 98 → 7 (the 7 are the governance axis, correct by design); the 7-dimensional invariant reads MET.
 
 Same task. Opposite fate — and one further lesson. The living agent **verified with the tool, not the reflex**, so the corpus self-corrected through new life: the fresh agent fixed the formula this very atom was born with. Reuse the fold, yes — but verify even the fold you inherited.
 

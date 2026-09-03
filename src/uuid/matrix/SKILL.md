@@ -6,7 +6,7 @@ atomPath: "uuid/matrix"
 
 # uuid/matrix — adjacency by address, not by search
 
-The corpus is a graph: 3,193 nodes, 37,854 edges. This atom answers the only question that graph is asked — **who is adjacent to whom** — and it answers by address.
+The corpus is a graph — one node per atom, one edge per bond, both counted by the matrix itself rather than by this sentence. This atom answers the only question that graph is asked — **who is adjacent to whom** — and it answers by address.
 
 ```
 neighborsOf(atom)   outgoing edges

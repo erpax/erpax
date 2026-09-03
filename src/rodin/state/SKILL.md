@@ -7,10 +7,10 @@ atomPath: rodin/state
 
 `../index` is arithmetic on residues mod 9: `orbit`, `composeSteps`, `compositionMatrix`, `cayleyIsCyclic`. Pure, small, and what every caller of this atom actually wants.
 
-`stateUuids` asks a different question — *which content-uuids carry each state* — and to answer it reads `UUID_MATRIX_NODES`: **4.2 MB, 3,411 nodes**. One import, one function, and every consumer of the arithmetic paid for it:
+`stateUuids` asks a different question — *which content-uuids carry each state* — and to answer it reads `UUID_MATRIX_NODES`: **4.2 MB, one node per atom in the corpus**. One import, one function, and every consumer of the arithmetic paid for it:
 
 ```
-cloudflare/seal → nist/sp/800/108 → rodin → @/uuid/matrix → 3,412 node literals
+cloudflare/seal → nist/sp/800/108 → rodin → @/uuid/matrix → a node literal per atom in the corpus
 ```
 
 A key-derivation function reached `orbit`, and got the whole corpus with it.
