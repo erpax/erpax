@@ -56048,6 +56048,65 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "paper",
+    "path": "publish/paper",
+    "translations": [
+      {
+        "key": "name",
+        "source": "paper",
+        "uuid": "40cde292-5ed3-8ba6-8515-3e3be4bddd84",
+        "words": [
+          "paper"
+        ],
+        "values": {
+          "en": "paper"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when a sealed claim might warrant a publication — emits a lean LaTeX paper and an HONEST prior-art verdict, where an empty Zenodo search is a lead and never a finding.",
+        "uuid": "7f394c90-c1ed-80e1-94df-93e8d7f48a3a",
+        "words": [
+          "use",
+          "when",
+          "a",
+          "sealed",
+          "claim",
+          "might",
+          "warrant",
+          "a",
+          "publication",
+          "emits",
+          "a",
+          "lean",
+          "latex",
+          "paper",
+          "and",
+          "an",
+          "honest",
+          "prior",
+          "art",
+          "verdict",
+          "where",
+          "an",
+          "empty",
+          "zenodo",
+          "search",
+          "is",
+          "a",
+          "lead",
+          "and",
+          "never",
+          "a",
+          "finding"
+        ],
+        "values": {
+          "en": "Use when a sealed claim might warrant a publication — emits a lean LaTeX paper and an HONEST prior-art verdict, where an empty Zenodo search is a lead and never a finding."
+        }
+      }
+    ]
+  },
+  {
     "atom": "pwa",
     "path": "pwa",
     "translations": [
@@ -86791,7 +86850,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about surface — A material used as a surface in some artwork, e.g. Canvas, Paper, Wood, Board, etc.",
-        "uuid": "c2c3d9ac-9a8e-862e-9d9c-de2d7298ae0e",
+        "uuid": "cd92208c-26bb-87f0-a42e-f5ab395f3988",
         "words": [
           "use",
           "when",
@@ -165975,7 +166034,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about material — A material that something is made from, e.g. leather, wool, cotton, paper.",
-        "uuid": "a44420c3-ed7b-8bf7-8a36-662d760aae79",
+        "uuid": "4820140f-d054-8f65-80e1-c5dd33a4de40",
         "words": [
           "use",
           "when",
@@ -198920,7 +198979,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when writing must be computed from sealed coordinates — debit/credit prose structure · law lines · wikilink density · eb/word from readme/paper.ts; never prose templates.",
-        "uuid": "82641c2f-65a8-82c2-9726-06a481e31da4",
+        "uuid": "a5c09be6-53c1-836a-b741-42947e4130d3",
         "words": [
           "use",
           "when",
@@ -199414,4 +199473,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3414
+export const TRANSLATIONS_COUNT = 3415

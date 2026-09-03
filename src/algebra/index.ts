@@ -423,6 +423,7 @@ export {
 
 export {
   LICENSE_CONTACT,
+  ERPAX_DOI,
   ERPAX_SPDX,
   SOURCE_URL,
   erpaxLicenseNote,
