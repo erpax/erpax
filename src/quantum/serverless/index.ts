@@ -42,13 +42,13 @@ import {
 } from '@/diamond'
 import {
   parseWranglerBindings,
-  deriveWranglerBindingDiamonds,
-  bindingDeploymentFaces,
   bindingAtomPath,
   bindingBoundaryUuid,
   cloudflareBindingFace,
   type WranglerBindingEntry,
 } from '@/cloudflare'
+// Build-time diamond derivation — the corpus-scanning half, off the Worker face.
+import { deriveWranglerBindingDiamonds, bindingDeploymentFaces } from '@/cloudflare/derive'
 import { superpose, total, collapse as measureCollapse, uniform } from '@/superposition'
 import { HORO_DIGITS } from '@/horo'
 

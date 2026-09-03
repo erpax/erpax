@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest'
-import { checkCloudflareBindingsHealthy, verifyAiBindingDiamonds } from '@/cloudflare'
+import { checkCloudflareBindingsHealthy } from '@/cloudflare'
+import { verifyAiBindingDiamonds } from '@/cloudflare/derive'
 import { gateCloudflareAi } from '@/confirm'
 import type { ErpaxCfEnv, D1Database } from '@/cloudflare'
 import { readFileSync } from 'node:fs'

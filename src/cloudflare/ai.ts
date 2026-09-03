@@ -10,13 +10,8 @@
  */
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import {
-  bindingDiamond,
-  type CloudflareBindingInput,
-  type WranglerBindingEntry,
-} from './bindings'
+import type { WranglerBindingEntry } from './bindings'
 import { parseWranglerBindings } from './wrangler'
-import type { DiamondModel } from '@/diamond'
 import { toAtomPath } from '@/path'
 import {
   decryptIfUuid,
@@ -110,79 +105,6 @@ export function agentAiWorkerFace(atomPath: string): {
     aiBinding: 'AI',
     servesAtom: atomPath,
   }
-}
-
-/** Derive DiamondModel for a Workers AI or vectorize binding (content-uuid sealed). */
-export function aiBindingDiamond(input: CloudflareBindingInput): DiamondModel {
-  const modelId =
-    input.type === 'vectorize'
-      ? String((input.config as { index_name?: string }).index_name ?? input.bindingName)
-      : input.type === 'ai'
-        ? 'workers-ai-runtime'
-        : undefined
-  const resourcePath =
-    input.type === 'ai'
-      ? 'ai://@cf/workers-ai'
-      : modelId
-        ? `ai://${modelId}`
-        : undefined
-  const base = bindingDiamond(resourcePath ? { ...input, resourcePath } : input)
-  const links = [...new Set([...base.links, 'agent', 'ai', 'innovation'])]
-  return {
-    ...base,
-    links,
-    linksResolved: links.length,
-    linksTotal: links.length,
-    cloudflare: {
-      bindingType: input.type,
-      bindingName: input.bindingName,
-      modelId,
-      rag: input.type === 'vectorize',
-      workerFace: true,
-    },
-  }
-}
-
-/** All AI-stack diamonds from wrangler config text. */
-export function deriveAiBindingDiamonds(configText: string): DiamondModel[] {
-  return filterAiBindings(parseWranglerBindings(configText)).map((entry) =>
-    aiBindingDiamond({
-      type: entry.type,
-      bindingName: entry.bindingName,
-      config: entry.config,
-    }),
-  )
-}
-
-/** Parse live repo wrangler.jsonc — AI bindings only. */
-export function loadRepoAiBindings(cwd: string = process.cwd()): WranglerBindingEntry[] {
-  const text = readFileSync(join(cwd, 'wrangler.jsonc'), 'utf8')
-  return filterAiBindings(parseWranglerBindings(text))
-}
-
-/** Verify every AI binding has a sealed diamond with boundaryUuid (uuid-only gate). */
-export function verifyAiBindingDiamonds(configText: string): {
-  readonly ok: boolean
-  readonly count: number
-  readonly broken: readonly string[]
-} {
-  const entries = filterAiBindings(parseWranglerBindings(configText))
-  const broken: string[] = []
-  for (const entry of entries) {
-    const input: CloudflareBindingInput = {
-      type: entry.type,
-      bindingName: entry.bindingName,
-      config: entry.config,
-    }
-    const model = aiBindingDiamond(input)
-    if (!model.boundaryUuid || !model.sealed) {
-      broken.push(`${entry.type}/${entry.bindingName}`)
-    }
-    if (!model.cloudflare?.workerFace) {
-      broken.push(`${entry.type}/${entry.bindingName}: missing workerFace facet`)
-    }
-  }
-  return { ok: broken.length === 0 && entries.length > 0, count: entries.length, broken }
 }
 
 /** Extra debit/credit lines for cloudflare / cloudflare/ai folder README accounting. */

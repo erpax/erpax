@@ -27,7 +27,7 @@ import { nonIndexImports } from '@/tamper/import'
 import { boundaryDigest } from '@/quantum/boundary'
 import { listAtomPaths, buildReadmeTypographyGraph, loadSkillPages } from '@/readme'
 import { deriveDiamond, verifyDiamond, diamondUuid } from '@/diamond'
-import { verifyAiBindingDiamonds } from '@/cloudflare'
+import { verifyAiBindingDiamonds } from '@/cloudflare/derive'
 import {
   formViolations,
   typographyGuardian,

@@ -23,40 +23,36 @@ export {
   type SealedCloudflareConfig,
 } from './seal'
 
+/*
+ * THE RUNTIME FACE. `bindingDiamond`, `cloudflareBindingDiamond`, `bindingDeploymentFaces`,
+ * `mergeCloudflareBinding` and `deriveWranglerBindingDiamonds` are NOT here any more — they live
+ * in `./derive`, because they scan `src/` from disk and a Worker has no filesystem to scan.
+ *
+ * Keeping them on this barrel cost every consumer 5,836 KB and a TypeScript compiler to call
+ * `kvGet`. Reach them at `@/cloudflare/derive`, which is where build-time work belongs.
+ */
 export {
   CLOUDFLARE_BINDING_TYPES,
-  bindingDiamond,
-  cloudflareBindingDiamond,
   bindingAtomPath,
   atomsLinkedByBindingType,
   bindingBoundaryUuid,
   cloudflareBindingFace,
-  bindingDeploymentFaces,
-  mergeCloudflareBinding,
-  deriveWranglerBindingDiamonds,
   type CloudflareBindingType,
   type CloudflareBindingInput,
   type CloudflareBindingFace,
   type WranglerBindingEntry,
 } from './bindings'
 
-export {
-  stripJsoncComments,
-  parseWranglerBindings,
-  deriveWranglerDiamonds,
-} from './wrangler'
+// Parsing only — `deriveWranglerDiamonds` moved to ./derive with the rest of the corpus half.
+export { stripJsoncComments, parseWranglerBindings } from './wrangler'
 
 export {
-  aiBindingDiamond,
   aiModelAtomPath,
   agentAiWorkerFace,
-  deriveAiBindingDiamonds,
   filterAiBindings,
   isAiRelatedBinding,
-  loadRepoAiBindings,
   sealCloudflareAiSecret,
   decryptCloudflareAiSecretIfUuid,
-  verifyAiBindingDiamonds,
   cloudflareAiAccountingExtras,
   AI_STACK_BINDING_TYPES,
   AI_GATEWAY_VAR_KEYS,

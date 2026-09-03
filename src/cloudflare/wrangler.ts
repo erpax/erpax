@@ -4,12 +4,7 @@
  * Strips JSONC comments; never executes wrangler. Used to derive binding diamonds
  * for the live repo config and test fixtures.
  */
-import { readFileSync } from 'node:fs'
-import { join } from 'node:path'
-import type { DiamondModel } from '@/diamond'
-import { diamondUuid } from '@/diamond'
 import type { CloudflareBindingType, WranglerBindingEntry } from './bindings'
-import { deriveWranglerBindingDiamonds } from './bindings'
 
 type WranglerJson = Record<string, unknown>
 
@@ -167,19 +162,4 @@ export function parseWranglerBindings(configText: string): WranglerBindingEntry[
   }
 
   return out
-}
-
-/** Derive binding diamonds for every entry in wrangler config text. */
-export function deriveWranglerDiamonds(configText: string): DiamondModel[] {
-  return deriveWranglerBindingDiamonds(parseWranglerBindings(configText))
-}
-
-if (import.meta.url === `file://${process.argv[1]}`) {
-  const path = process.argv[2] ?? join(process.cwd(), 'wrangler.jsonc')
-  const text = readFileSync(path, 'utf8')
-  const diamonds = deriveWranglerDiamonds(text)
-  console.log(`wrangler — ${diamonds.length} binding diamond(s) from ${path}`)
-  for (const d of diamonds) {
-    console.log(`  ${d.atomPath}  uuid=${diamondUuid(d)}  boundary=${d.boundaryUuid}`)
-  }
 }

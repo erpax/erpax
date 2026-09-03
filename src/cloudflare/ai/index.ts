@@ -4,20 +4,23 @@
  * @see ../ai.ts · ../bindings.ts · ./SKILL.md
  */
 export {
-  aiBindingDiamond,
   aiModelAtomPath,
   agentAiWorkerFace,
-  deriveAiBindingDiamonds,
   filterAiBindings,
   isAiRelatedBinding,
-  loadRepoAiBindings,
   sealCloudflareAiSecret,
   decryptCloudflareAiSecretIfUuid,
-  verifyAiBindingDiamonds,
   cloudflareAiAccountingExtras,
   AI_STACK_BINDING_TYPES,
   AI_GATEWAY_VAR_KEYS,
   aiSecretIdentity,
 } from '../ai'
+// The corpus half — derives diamonds and reads wrangler.jsonc from disk; not a Worker path.
+export {
+  aiBindingDiamond,
+  deriveAiBindingDiamonds,
+  loadRepoAiBindings,
+  verifyAiBindingDiamonds,
+} from '../derive'
 
 /** @index-cross.foldback child=cloudflare/ai parent=cloudflare — this cross folds back into its parent. */

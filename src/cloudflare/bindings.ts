@@ -1,5 +1,9 @@
 /**
- * Cloudflare binding diamonds — every Wrangler binding type projects DiamondModel.
+ * Cloudflare bindings — the RUNTIME surface: types, names, atom paths, boundary uuids.
+ *
+ * The diamond DERIVATION lives in ./derive. A value import of @/diamond here is what put the
+ * whole gate registry — and a TypeScript compiler — inside every Worker that calls kvGet:
+ * @/diamond → @/readme/compute → @/rules, 5,836 KB behind the simplest call in the package.
  *
  * Law: all bindings Cloudflare provides have diamonds. Each entry in wrangler.jsonc
  * derives a content-addressed diamond (boundaryUuid) entangled with [[path]] atom
@@ -8,15 +12,7 @@
  * @see ./wrangler.ts · ./seal.ts · ../diamond · ../path
  */
 import { uuid, jcsCanonicalize } from '@/integrity'
-import {
-  type DiamondModel,
-  type DeploymentFaces,
-  computeDiamond,
-  deploymentFaces,
-  diamondUuid,
-} from '@/diamond'
-import { toAtomPath, atomPathUuid } from '@/path'
-import type { SealedCloudflareConfig } from './seal'
+import { toAtomPath } from '@/path'
 
 /** Every Wrangler binding section Cloudflare documents (plus repo-specific unsafe bindings). */
 export const CLOUDFLARE_BINDING_TYPES = [
@@ -72,7 +68,8 @@ export function atomsLinkedByBindingType(type: CloudflareBindingType): readonly 
   return TYPE_LINKS[type]
 }
 
-const TYPE_LINKS: Readonly<Record<CloudflareBindingType, readonly string[]>> = {
+/** Read by ./diamond, the child that derives binding diamonds. */
+export const TYPE_LINKS: Readonly<Record<CloudflareBindingType, readonly string[]>> = {
   d1_databases: ['database', 'cloudflare', 'diamond', 'path'],
   r2_buckets: ['storage', 'cloudflare', 'pwa', 'path'],
   kv_namespaces: ['storage', 'cloudflare', 'worker', 'path'],
@@ -94,7 +91,8 @@ const TYPE_LINKS: Readonly<Record<CloudflareBindingType, readonly string[]>> = {
   triggers: ['worker', 'cloudflare', 'cron'],
 }
 
-const TYPE_FACE: Readonly<Record<CloudflareBindingType, CloudflareBindingFace>> = {
+/** Read by ./diamond, the child that derives binding diamonds. */
+export const TYPE_FACE: Readonly<Record<CloudflareBindingType, CloudflareBindingFace>> = {
   d1_databases: 'backend',
   r2_buckets: 'pwa',
   kv_namespaces: 'worker',
@@ -140,83 +138,6 @@ export function cloudflareBindingFace(type: CloudflareBindingType): CloudflareBi
   return TYPE_FACE[type]
 }
 
-/** Map binding face to `DeploymentFaces` booleans (backend ⇒ worker+plugin substrate). */
-export function bindingDeploymentFaces(
-  type: CloudflareBindingType,
-  model: DiamondModel,
-): DeploymentFaces {
-  const base = deploymentFaces(model)
-  const face = TYPE_FACE[type]
-  return {
-    worker: base.worker || face === 'worker' || face === 'backend' || face === 'seal',
-    plugin: base.plugin || face === 'plugin' || face === 'backend',
-    pwa: base.pwa || face === 'pwa',
-  }
-}
-
-/**
- * Derive the unified DiamondModel for one Cloudflare binding.
- * Every binding type Wrangler exposes maps through this single function.
- */
-export function bindingDiamond(input: CloudflareBindingInput): DiamondModel {
-  const atomPath = bindingAtomPath(input.type, input.bindingName)
-  const boundaryUuid = bindingBoundaryUuid(input)
-  const links = [...TYPE_LINKS[input.type]]
-  const resourceAtom =
-    input.resourcePath && toAtomPath(input.resourcePath, 'cloudflare')
-      ? toAtomPath(input.resourcePath, 'cloudflare')
-      : null
-
-  return computeDiamond({
-    kind: 'cloudflare',
-    binding: {
-      atomPath,
-      boundaryUuid,
-      bindingName: input.bindingName,
-      bindingType: input.type,
-      links,
-      resourceAtom,
-    },
-  }).model as DiamondModel
-}
-
-/** Alias — quantum-merge vocabulary from prior directive. */
-export const cloudflareBindingDiamond = bindingDiamond
-
-/**
- * Merge a Cloudflare resource path with a sealed config and binding diamond.
- * Path + seal + binding entangle at content-uuid scale (fail-closed on empty path).
- */
-export async function mergeCloudflareBinding(args: {
-  readonly path: string
-  readonly binding: CloudflareBindingInput
-  readonly sealedConfig: SealedCloudflareConfig
-}): Promise<{
-  readonly atomPath: string
-  readonly pathUuid: string
-  readonly diamond: DiamondModel
-  readonly diamondUuid: string
-  readonly boundaryUuid: string
-  readonly sealedContentUuid: string
-}> {
-  const atomPath = toAtomPath(args.path, 'cloudflare')
-  if (!atomPath) {
-    throw new Error('mergeCloudflareBinding: path did not resolve to an atom (fail-closed)')
-  }
-  const diamond = bindingDiamond({
-    ...args.binding,
-    resourcePath: args.path,
-  })
-  return {
-    atomPath,
-    pathUuid: atomPathUuid(args.path, 'cloudflare'),
-    diamond,
-    diamondUuid: diamondUuid(diamond),
-    boundaryUuid: diamond.boundaryUuid!,
-    sealedContentUuid: args.sealedConfig.contentUuid,
-  }
-}
-
 function sortConfigKeys(config: Readonly<Record<string, unknown>>): Record<string, unknown> {
   return Object.fromEntries(
     Object.keys(config)
@@ -225,15 +146,3 @@ function sortConfigKeys(config: Readonly<Record<string, unknown>>): Record<strin
   )
 }
 
-/** Derive diamonds for every binding entry in parsed wrangler config text. */
-export function deriveWranglerBindingDiamonds(
-  entries: readonly WranglerBindingEntry[],
-): DiamondModel[] {
-  return entries.map((entry) =>
-    bindingDiamond({
-      type: entry.type,
-      bindingName: entry.bindingName,
-      config: entry.config,
-    }),
-  )
-}

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when querying the whole ERP as one graph — atoms ⊕ parsed import edges ⊕ standards citations, wave-schedulable; the clause→code trace as a query.",
-    "uuid": "9d234f40-7dcb-8710-b91c-ac1f6385911f",
+    "uuid": "c747bd48-c58c-801d-b717-8f925c767e6f",
     "words": [
       "use",
       "when",

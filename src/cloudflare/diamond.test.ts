@@ -6,15 +6,13 @@ import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import {
   CLOUDFLARE_BINDING_TYPES,
-  bindingDiamond,
   bindingBoundaryUuid,
   cloudflareBindingFace,
-  mergeCloudflareBinding,
-  deriveWranglerBindingDiamonds,
   sealCloudflareConfig,
   parseWranglerBindings,
   type CloudflareBindingType,
 } from '@/cloudflare'
+import { bindingDiamond, mergeCloudflareBinding, deriveWranglerBindingDiamonds } from '@/cloudflare/derive'
 import { diamondUuid } from '@/diamond'
 import { pathsMeet, toAtomPath } from '@/path'
 

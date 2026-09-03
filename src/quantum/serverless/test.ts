@@ -26,9 +26,8 @@ import {
 import { uuid, jcsCanonicalize } from '@/integrity'
 import {
   parseWranglerBindings,
-  deriveWranglerBindingDiamonds,
-  bindingDeploymentFaces,
 } from '@/cloudflare'
+import { deriveWranglerBindingDiamonds, bindingDeploymentFaces } from '@/cloudflare/derive'
 
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/
 const ROOT = process.cwd()

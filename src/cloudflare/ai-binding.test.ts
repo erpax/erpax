@@ -8,17 +8,19 @@ import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { describe, it, expect } from 'vitest'
 import {
-  aiBindingDiamond,
   aiModelAtomPath,
   agentAiWorkerFace,
-  deriveAiBindingDiamonds,
   filterAiBindings,
   isAiRelatedBinding,
-  loadRepoAiBindings,
   sealCloudflareAiSecret,
   decryptCloudflareAiSecretIfUuid,
-  verifyAiBindingDiamonds,
 } from '@/cloudflare/ai'
+import {
+  aiBindingDiamond,
+  deriveAiBindingDiamonds,
+  loadRepoAiBindings,
+  verifyAiBindingDiamonds,
+} from '@/cloudflare/derive'
 import { parseWranglerBindings } from '@/cloudflare'
 import { diamondUuid } from '@/diamond'
 import { pathsMeet, toAtomPath } from '@/path'

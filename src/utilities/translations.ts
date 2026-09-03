@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when you need a pure helper, a Payload/Next/tenant glue function, or an admin React hook and it does NOT implement a standard's algorithm — the non-standards helper layer that may cite standards but never implements them.",
-    "uuid": "105433fc-9cfa-8bc6-96ec-e0d07d4b1dc4",
+    "uuid": "32d082eb-f5b6-8056-aff9-ce8123f89ed6",
     "words": [
       "use",
       "when",
