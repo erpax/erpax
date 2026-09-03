@@ -194,6 +194,14 @@ jobs:
           node packages/build.mjs all
           node packages/release.mjs --check
 
+      # A package that BUILDS is not a package that WORKS. @erpax/algebra shipped a dist that threw
+      # ERR_MODULE_NOT_FOUND on the first line a consumer could write — an extensionless relative
+      # import Node ESM will not resolve — and every gate here was green, because every test in this
+      # repo imports the SOURCE. This packs each package, installs the tarballs into an empty
+      # project, and imports them: the thing a stranger does, done before they do it.
+      - name: Consumable gate — every package installs and imports from a clean project
+        run: node scripts/packages-consumable.mjs
+
       # A package that builds but whose Payload config cannot BOOT is not stable — a
       # corpus that cannot load has no other properties.
       #

@@ -1,7 +1,7 @@
 {
   "name": "@erpax/erpax",
   "version": "0.1.0",
-  "description": "erpax — the orientation face: resolve the canonical repo to its sealed skill entry, the one law, and the tiered licence. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
+  "description": "Orientation face for erpax — resolve the canonical repo to its sealed skill entry and agent surfaces. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",
   "sideEffects": false,
@@ -37,5 +37,12 @@
   },
   "erpax": {
     "closureCeiling": 4
-  }
+  },
+  "keywords": [
+    "erpax",
+    "agent",
+    "skills",
+    "orientation",
+    "mcp"
+  ]
 }

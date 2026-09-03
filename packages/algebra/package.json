@@ -1,7 +1,7 @@
 {
   "name": "@erpax/algebra",
   "version": "0.1.1",
-  "description": "Core math for erpax — exact* / algebra* ops, theorem algebras, audit. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
+  "description": "Exact arithmetic and theorem algebras — exactRound / exactMaxOf and friends, with an audit that reports every law a system breaks. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",
   "sideEffects": false,
@@ -34,8 +34,10 @@
   "keywords": [
     "algebra",
     "exact-arithmetic",
-    "erpax",
-    "math"
+    "math",
+    "theorem",
+    "audit",
+    "erpax"
   ],
   "engines": {
     "node": ">=18.20.2"

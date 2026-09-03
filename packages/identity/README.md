@@ -1,7 +1,23 @@
 # @erpax/identity
 
-erpax **identity** — sequence **0 (axis)**: content-uuid identity, config, federation/merge — the axis every other package depends on.
+An id derived from what a thing IS, not from when it was created. Same content ⇒ same uuid, on any machine, in any order — which is what makes dedup and merge decidable.
 
-Built from [`src/identity`](https://github.com/erpax/erpax/tree/main/src/identity) by `packages/build.mjs`; the runtime closure is bundled, bare imports stay external (computed into dependencies), and the closure ratchet (`erpax.closureCeiling`) fails the build closed if entanglement grows.
+```bash
+pnpm add @erpax/identity
+```
 
-Licence: CC-BY-NC-ND-4.0 (or commercial via license@erpax.com). Free core math lives in `@erpax/algebra` (MIT).
+```ts
+import { canonical, atomPath } from '@erpax/identity'
+
+canonical({ b: 2, a: 1 }) === canonical({ a: 1, b: 2 }) // key order cannot change the address
+```
+
+ESM only, types included. Node >= 18.20.2.
+
+## Where it comes from
+
+Built from [`src/identity`](https://github.com/erpax/erpax/tree/main/src/identity) in the [erpax](https://github.com/erpax/erpax) monorepo. The runtime closure is bundled and bare imports stay external; a closure ratchet fails the build if the package starts pulling in more of the corpus than it did yesterday.
+
+## Licence
+
+ONE licence, every path: **CC-BY-NC-ND-4.0** — or a commercial licence via `license@erpax.com`. There is no free tier and no path test: a tier is two answers to "may I use this" with a path deciding which one you get.

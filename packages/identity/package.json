@@ -1,7 +1,7 @@
 {
   "name": "@erpax/identity",
-  "version": "0.1.6",
-  "description": "erpax identity — sequence 0 (axis): content-uuid identity, config, federation/merge — the axis every other package depends on. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
+  "version": "0.1.7",
+  "description": "Content-addressed identity — RFC 9562 v8 uuids folded from content, so the same content is always the same id. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",
   "sideEffects": false,
@@ -40,5 +40,13 @@
   },
   "dependencies": {
     "zod": "3.25.76"
-  }
+  },
+  "keywords": [
+    "uuid",
+    "content-addressing",
+    "rfc9562",
+    "identity",
+    "deduplication",
+    "erpax"
+  ]
 }

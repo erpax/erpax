@@ -1,7 +1,7 @@
 {
   "name": "@erpax/commerce",
   "version": "0.1.0",
-  "description": "erpax commerce — sequence 4·8 (flow): transactional flow — parties, orders, payments, subscriptions, inventory. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
+  "description": "Commerce lifecycle for erpax — checkout, subscriptions, usage metering, instance provisioning. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",
   "sideEffects": false,
@@ -37,5 +37,13 @@
   },
   "erpax": {
     "closureCeiling": 1
-  }
+  },
+  "keywords": [
+    "commerce",
+    "subscriptions",
+    "checkout",
+    "usage-metering",
+    "billing",
+    "erpax"
+  ]
 }

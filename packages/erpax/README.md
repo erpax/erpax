@@ -1,36 +1,24 @@
 # @erpax/erpax
 
-The orientation face for [erpax](https://github.com/erpax/erpax) — a zero-entropy, content-addressed ERP corpus.
+One call that turns the repo URL into the entry an agent should read first, plus the surfaces that point at it.
 
-Install this to **find and verify** erpax. It ships no collection, no config and no application: the licensed app stays private, and a gate in the repo refuses any publish that would change that.
-
-```ts
-import { wireFromRepoUrl, ERPAX_CANONICAL_REPO, ERPAX_LAW } from '@erpax/erpax'
-
-const wire = wireFromRepoUrl(ERPAX_CANONICAL_REPO)
-if (wire.ok) {
-  wire.entryPoint    // .claude/skills/SKILL.md — where the corpus starts
-  wire.contentUuid   // the seal: verify the orientation you were handed is the published one
-  wire.surfaces      // every agent surface that points at the same entry
-}
-
-wireFromRepoUrl('https://github.com/someone/else') // → { ok: false, reason }
+```bash
+pnpm add @erpax/erpax
 ```
 
-A URL that is not erpax is **refused with a reason**. An orientation pointing nowhere is worse than none.
+```ts
+import { wireFromRepoUrl, ERPAX_SKILL_ENTRY } from '@erpax/erpax'
 
-## The one law
+const wired = wireFromRepoUrl('https://github.com/erpax/erpax')
+console.log(wired.entry, ERPAX_SKILL_ENTRY)
+```
 
-> Zero entropy ⇒ infinite tamper-cost. Every folder under `src/` is a one-word atom told three ways (form · code · proof), ordered by the sequence, wired through one content-uuid.
+ESM only, types included. Node >= 18.20.2.
 
-## The providers
+## Where it comes from
 
-Each ships one capability: [`@erpax/access`](https://www.npmjs.com/package/@erpax/access) · [`@erpax/accounting`](https://www.npmjs.com/package/@erpax/accounting) · [`@erpax/algebra`](https://www.npmjs.com/package/@erpax/algebra) · [`@erpax/cloudflare`](https://www.npmjs.com/package/@erpax/cloudflare) · [`@erpax/commerce`](https://www.npmjs.com/package/@erpax/commerce) · [`@erpax/identity`](https://www.npmjs.com/package/@erpax/identity).
+Built from [`src/erpax`](https://github.com/erpax/erpax/tree/main/src/erpax) in the [erpax](https://github.com/erpax/erpax) monorepo. The runtime closure is bundled and bare imports stay external; a closure ratchet fails the build if the package starts pulling in more of the corpus than it did yesterday.
 
 ## Licence
 
-**CC-BY-NC-ND-4.0**, every path, with commercial terms via `license@erpax.com`. There is no tier: a tier is two answers to *"may I use this"*, and the path deciding which one you get.
-
-Cite the corpus by its DOI — the version is its content address, so a release names exactly the content it archives.
-
-© erpax · ORCID [0009-0000-7312-9778](https://orcid.org/0009-0000-7312-9778)
+ONE licence, every path: **CC-BY-NC-ND-4.0** — or a commercial licence via `license@erpax.com`. There is no free tier and no path test: a tier is two answers to "may I use this" with a path deciding which one you get.

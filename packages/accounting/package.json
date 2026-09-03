@@ -1,7 +1,7 @@
 {
   "name": "@erpax/accounting",
-  "version": "0.1.5",
-  "description": "erpax accounting — sequence 6 (hooks): the universal ledger — double-entry journals, GL, polymorphic accountability. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
+  "version": "0.1.6",
+  "description": "Double-entry accounting — journals, general ledger, trial balance, balance sheet, income statement, AR/AP aging. Part of erpax. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",
   "sideEffects": false,
@@ -37,5 +37,13 @@
   },
   "erpax": {
     "closureCeiling": 9
-  }
+  },
+  "keywords": [
+    "accounting",
+    "double-entry",
+    "general-ledger",
+    "trial-balance",
+    "erp",
+    "erpax"
+  ]
 }

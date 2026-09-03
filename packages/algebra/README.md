@@ -1,30 +1,25 @@
-# `@erpax/algebra`
+# @erpax/algebra
 
-Free **core math** from [erpax](https://github.com/erpax/erpax) — `exact*` / `algebra*` ops, theorem algebras, fundamental-broken audits.
-
-- **License:** MIT (free for all)
-- **Source:** `src/algebra/**` in the monorepo (minus merge-bound `fold` and the host Math scanner)
-- **Everything else in erpax:** AGPL-3.0-or-later / commercial via `license@erpax.com`
+Arithmetic that refuses to guess: an empty maximum throws rather than returning -Infinity, and every operation is total or explicit about not being.
 
 ```bash
 pnpm add @erpax/algebra
 ```
 
 ```ts
-import { exactRound, THEOREMS, isClosed, movie } from '@erpax/algebra'
+import { exactRound, exactMaxOf, THEOREMS, isClosed } from '@erpax/algebra'
 
-exactRound(2.5) // 3
+exactRound(2.5)        // 3
+exactMaxOf([1, 9, 4])  // 9 — and [] THROWS, rather than leaking -Infinity
 isClosed(THEOREMS[0]!) // true
-movie(THEOREMS[0]!, 2) // [1, 2, 4, 8, 7, 5]
 ```
 
-Law seal: `src/algebra/license.ts` (`CORE_MATH_SPDX`, `isCoreMathPath`).
+ESM only, types included. Node >= 18.20.2.
 
-## Publish (CI)
+## Where it comes from
 
-1. Bump `packages/algebra/package.json` `version` (never reuse a burned/unpublished version).
-2. Tag and push: `git tag algebra-v0.1.1 && git push origin algebra-v0.1.1`
-3. Workflow `.github/workflows/publish-algebra.yml` builds free math only and publishes.
-4. Secret name (optional OIDC fallback): `NPM_TOKEN` — never commit the value.
+Built from [`src/algebra`](https://github.com/erpax/erpax/tree/main/src/algebra) in the [erpax](https://github.com/erpax/erpax) monorepo. The runtime closure is bundled and bare imports stay external; a closure ratchet fails the build if the package starts pulling in more of the corpus than it did yesterday.
 
-Do not attach a GitHub Release publish trigger for the same tag (double-fire → version conflict).
+## Licence
+
+ONE licence, every path: **CC-BY-NC-ND-4.0** — or a commercial licence via `license@erpax.com`. There is no free tier and no path test: a tier is two answers to "may I use this" with a path deciding which one you get.
