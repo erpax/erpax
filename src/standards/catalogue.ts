@@ -37,7 +37,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Semantic model of the electronic invoice",
     "uuid": "b293e94d-80cc-82ce-a7c9-7006b79e5bbf",
     "color": "hsl(355 78% 43%)",
-    "count": 130,
+    "count": 133,
     "modules": [
       {
         "path": "src/ai/invoice-ocr.ts",
@@ -116,6 +116,14 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§BG-13"
       },
       {
+        "path": "src/en/16931/LLM.md",
+        "section": ""
+      },
+      {
+        "path": "src/en/16931/README.md",
+        "section": ""
+      },
+      {
         "path": "src/en/16931/SKILL.md",
         "section": ""
       },
@@ -125,14 +133,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/en/16931/types/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/en/16931/types/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/en/16931/validate.ts",
         "section": ""
       }
     ]
@@ -2012,7 +2012,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Systems & software quality models",
     "uuid": "3c2f1991-7fa2-8419-9109-b0150b5780ab",
     "color": "hsl(287 80% 39%)",
-    "count": 193,
+    "count": 194,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -3453,7 +3453,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Auditing management systems",
     "uuid": "85eb43b8-8305-8b77-948c-93e96eba62e4",
     "color": "hsl(83 87% 54%)",
-    "count": 98,
+    "count": 100,
     "modules": [
       {
         "path": "src/accounting/proof/index.ts",
@@ -6210,7 +6210,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "OECD Standard Audit File for Tax",
     "uuid": "3c66b577-efc9-8c9b-bd38-2df00b645605",
     "color": "hsl(342 61% 61%)",
-    "count": 63,
+    "count": 64,
     "modules": [
       {
         "path": "src/audit/compliance/reporting/index.ts",
@@ -6289,6 +6289,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§СУПТО"
       },
       {
+        "path": "src/reverse/README.md",
+        "section": "§3"
+      },
+      {
         "path": "src/reverse/SKILL.md",
         "section": "§3"
       },
@@ -6302,10 +6306,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/saf/t/types/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/saf/t/types/test.ts",
         "section": ""
       }
     ]
@@ -6537,14 +6537,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Model Context Protocol",
     "uuid": "bbe40439-0393-8d8b-a793-b13b3dc80e16",
     "color": "hsl(220 59% 47%)",
-    "count": 28,
+    "count": 27,
     "modules": [
       {
         "path": "src/agent/access/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/agents/mcp/atom-catalogue.generated.ts",
         "section": ""
       },
       {
@@ -6633,6 +6629,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/multi/search/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/platform/readiness/index.ts",
         "section": ""
       }
     ]
@@ -7469,7 +7469,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "UUID (revised — content/event uuid)",
     "uuid": "01855583-c244-8103-b379-0ad77888d2c4",
     "color": "hsl(29 70% 49%)",
-    "count": 159,
+    "count": 160,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -7681,7 +7681,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Language tags",
     "uuid": "766b2cca-d72d-8f02-86bb-6cb2c79717ce",
     "color": "hsl(75 64% 48%)",
-    "count": 77,
+    "count": 78,
     "modules": [
       {
         "path": "src/agents/mcp/i18n/index.ts",
@@ -7893,7 +7893,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "JSON Canonicalization Scheme",
     "uuid": "67e3e4b1-0c62-8840-bab2-fa9bba6e4c0c",
     "color": "hsl(315 73% 47%)",
-    "count": 32,
+    "count": 33,
     "modules": [
       {
         "path": "src/ai/durable-objects.ts",
@@ -7999,7 +7999,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "UUID (original)",
     "uuid": "74e8ac88-dda1-867d-bd72-f5865f098f74",
     "color": "hsl(48 87% 54%)",
-    "count": 18,
+    "count": 19,
     "modules": [
       {
         "path": "src/agent/sync/SKILL.md",
@@ -8072,6 +8072,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/voting/SKILL.md",
         "section": "§4.3"
+      },
+      {
+        "path": "src/voting/index.ts",
+        "section": "§4.3"
       }
     ]
   },
@@ -8081,7 +8085,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Tags for Identifying Languages",
     "uuid": "e02ee373-c4fa-8fb9-ba75-4ee6f9c43f18",
     "color": "hsl(150 72% 57%)",
-    "count": 12,
+    "count": 13,
     "modules": [
       {
         "path": "src/app/(frontend)/[locale]/layout.tsx",
@@ -8114,6 +8118,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/locale/fallback/index.ts",
         "section": "§4.1"
+      },
+      {
+        "path": "src/localize/README.md",
+        "section": ""
       },
       {
         "path": "src/localize/SKILL.md",
@@ -8311,7 +8319,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Sarbanes-Oxley Act §302/404/906",
     "uuid": "a6e18810-badd-8876-9ebc-72c9bc14aa6c",
     "color": "hsl(241 86% 54%)",
-    "count": 25,
+    "count": 26,
     "modules": [
       {
         "path": "src/access/standard/index.ts",
@@ -8376,6 +8384,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/period/end/closing/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/reverse/README.md",
+        "section": "§3"
       },
       {
         "path": "src/reverse/SKILL.md",
@@ -8511,7 +8523,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Universal Business Language",
     "uuid": "91f2143b-c905-8e7e-8b7f-ccc48a2fd117",
     "color": "hsl(282 75% 49%)",
-    "count": 45,
+    "count": 46,
     "modules": [
       {
         "path": "src/app/(frontend)/[locale]/posts/[slug]/page.tsx",
@@ -9473,7 +9485,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Provenance Ontology",
     "uuid": "aab6453e-ed17-8541-a227-c83eb24632af",
     "color": "hsl(142 89% 52%)",
-    "count": 28,
+    "count": 29,
     "modules": [
       {
         "path": "src/beyond/SKILL.md",
@@ -9544,6 +9556,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/rosetta/LLM.md",
+        "section": ""
+      },
+      {
         "path": "src/rosetta/SKILL.md",
         "section": ""
       },
@@ -9565,10 +9581,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/vendors/vendor/quotes/index.ts",
-        "section": "§8.4"
-      },
-      {
-        "path": "src/vendors/vendor/scorecards/SKILL.md",
         "section": "§8.4"
       }
     ]
@@ -9867,7 +9879,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Decentralized Identifiers",
     "uuid": "23ae3478-a989-847b-889c-313d841dc631",
     "color": "hsl(134 72% 38%)",
-    "count": 8,
+    "count": 9,
     "modules": [
       {
         "path": "src/agents/mcp/tool/governance.ts",
@@ -9895,6 +9907,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/voting/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/voting/index.ts",
         "section": ""
       }
     ]

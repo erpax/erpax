@@ -9,8 +9,7 @@ import { algebraLog2, exactMax } from '@/algebra'
  * @standard ISO-19011:2018 §6.4 audit-evidence (citations are the audit trail)
  * @rfc 9562 content-uuid (each standard is content-addressed)
  */
-import { execSync } from 'node:child_process'
-import { readFileSync, writeFileSync, existsSync } from 'node:fs'
+import { readFileSync, readdirSync, writeFileSync, existsSync, type Dirent } from 'node:fs'
 import { join } from 'node:path'
 import { proseOf } from '@/rules/reference'
 import { STANDARDS_REGISTRY, type RegisteredStandard } from '@/standards/registry'
@@ -35,25 +34,69 @@ export interface CatalogueEntry {
   modules: Module[]
 }
 
-function requireRg(err: { status?: number; code?: string; message?: string }): never | void {
-  if (err.status === 1) return
-  if (err.code === 'ENOENT' || /not found|ENOENT/i.test(err.message ?? '')) {
-    throw new Error('standards/emit requires ripgrep (`rg`) on PATH — install ripgrep')
+/**
+ * The files a banner scan may read — walked here, never shelled out for.
+ *
+ * This called `rg`, and paid for it three ways. It cost every CI job 9.2s of `apt-get install
+ * ripgrep` for a binary only this function used; then a GitHub runner's APT mirror returned 403
+ * for an unrelated Microsoft repo and took a whole shard down with it. A gate that depends on
+ * someone else's package server goes red for reasons that have nothing to do with the corpus.
+ *
+ * It was also WRONG: measured against the tracked tree, rg missed 5 files carrying a banner.
+ *
+ * GENERATED faces are skipped by name, which is what rg's .gitignore-awareness was buying —
+ * `payload-types`, `skills.index` and `*.generated.*` restate every symbol, so a banner inside
+ * one is a copy, not a citation. The walk works in any directory, which the shell-out did not:
+ * two hermetic fixtures broke the moment `git ls-files` was asked about a temp dir.
+ */
+const GENERATED_FACE = /(\.generated\.[jt]sx?$|(^|\/)(payload-types|skills\.index|catalogue|registry)\.[jt]sx?$)/
+
+const bannerFiles = (cwd: string): string[] => {
+  const out: string[] = []
+  const walk = (dir: string, rel: string): void => {
+    let entries: Dirent[]
+    try {
+      entries = readdirSync(dir, { withFileTypes: true })
+    } catch {
+      return
+    }
+    for (const e of entries) {
+      if (e.name.startsWith('.') || e.name === 'node_modules') continue
+      const r = rel ? `${rel}/${e.name}` : e.name
+      if (e.isDirectory()) {
+        walk(join(dir, e.name), r)
+        continue
+      }
+      if (/\.test\.tsx?$/.test(e.name)) continue
+      if (GENERATED_FACE.test(r)) continue
+      out.push(`src/${r}`)
+    }
   }
-  throw err
+  walk(join(cwd, 'src'), '')
+  return out.sort()
+}
+
+const readIfBannered = (cwd: string, rel: string): string | null => {
+  let text: string
+  try {
+    text = readFileSync(join(cwd, rel), 'utf8')
+  } catch {
+    return null
+  }
+  return /@(standard|rfc)\s/.test(text) ? text : null
 }
 
 function scan(cwd: string): { path: string; value: string }[] {
-  let raw = ''
-  try {
-    raw = execSync(
-      String.raw`rg -n --no-heading -o '@(standard|rfc)\s+[A-Za-z0-9][^*\n]+' src -g '!*.test.ts' -g '!**/catalogue.ts' -g '!**/registry.ts'`,
-      { cwd, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 },
-    )
-  } catch (e) {
-    requireRg(e as { status?: number; code?: string; message?: string })
-    return []
+  // The REGEX mind, unchanged in what it matches — raw text, sigil wherever it appears.
+  // Only the file selection and the reading moved in-process (see bannerFiles).
+  const BANNER = /@(standard|rfc)\s+[A-Za-z0-9][^*\n]+/g
+  const lines: string[] = []
+  for (const rel of bannerFiles(cwd)) {
+    const text = readIfBannered(cwd, rel)
+    if (text === null) continue
+    for (const m of text.matchAll(BANNER)) lines.push(`${rel}:0:${m[0]}`)
   }
+  const raw = lines.join('\n')
   const hits: { path: string; value: string }[] = []
   for (const line of raw.split('\n')) {
     if (!line) continue
@@ -127,19 +170,7 @@ export function citationsInComments(file: string, text: string): string[] {
 
 /** Every citation the parser mind finds across the tree — rg narrows to candidate files fast, the parser confirms. */
 export function parsedCitations(cwd: string = process.cwd()): { path: string; value: string }[] {
-  let files: string[] = []
-  try {
-    files = execSync(String.raw`rg -l '@(standard|rfc)\s' src -g '!*.test.ts' -g '!**/catalogue.ts' -g '!**/registry.ts'`, {
-      cwd,
-      encoding: 'utf8',
-      maxBuffer: 64 * 1024 * 1024,
-    })
-      .split('\n')
-      .filter(Boolean)
-  } catch (e) {
-    requireRg(e as { status?: number; code?: string; message?: string })
-    return []
-  }
+  const files = bannerFiles(cwd).filter((rel) => readIfBannered(cwd, rel) !== null)
   const out: { path: string; value: string }[] = []
   for (const rel of files) {
     let text: string

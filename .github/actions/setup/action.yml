@@ -7,11 +7,12 @@ inputs:
     required: false
     default: stub
   ripgrep:
-    # DEFAULT-DENY. `sudo apt-get install ripgrep` costs 9.2s in every job that takes the default,
-    # and only ONE consumer in the tree needs it: src/standards/emit shells out to `rg`. A lint or
-    # a typecheck job never reaches it, so it paid nine seconds a run for a binary it never called.
-    # Opt IN where a lane can reach the standards emit.
-    description: 'Install ripgrep — ONLY where standards emit can be reached (it shells out to rg)'
+    # NOTHING IN THE TREE CALLS `rg` ANY MORE. src/standards/emit was the one consumer and it now
+    # walks the tree in-process — which is faster, works in a temp directory, and finds the 5
+    # bannered files rg missed. The input stays for a caller that still asks, and defaults off:
+    # `apt-get install` cost 9.2s a job and took a shard down when an unrelated Microsoft repo
+    # returned 403. A gate must not depend on someone else's package server.
+    description: 'Install ripgrep — nothing in the tree needs it; kept for ad-hoc use'
     required: false
     default: 'false'
   registry-url:
