@@ -32,8 +32,8 @@ import { verifySkillFrontmatter, materializeSkillFrontmatter } from '../upgrade'
 import { contentUuidOf } from '../upgrade/seal'
 import type { SkillNode } from '../resolve'
 import type { InstalledSkill } from '../merge'
-// The file's SHAPE is spelled once, in the child atom CI runs directly — see ./stub.
-import { buildSkillIndexStub, writeSkillIndexFile } from './stub'
+// The file's SHAPE is spelled once, in the child atom CI runs directly — see ./void.
+import { buildSkillIndexStub, writeSkillIndexFile } from './void'
 
 const INSTALLED_OUT = 'src/skill/router/installed.catalogue.ts'
 const ROOTS = ['src'] as const

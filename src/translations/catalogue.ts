@@ -4772,7 +4772,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when periodically pinning a Merkle root of audit leaves to entropy no single party controls (Bitcoin OP_RETURN, an L2, Cardano metadata, AT-proto, or a real TSA) so a regulator can verify ERPax integrity without trusting ERPax — and when you must refuse a non-external stub as tamper-evidence.",
-        "uuid": "f88566c9-dbbb-8a10-b539-d9b8adf806d6",
+        "uuid": "3ce83400-12ed-878a-8608-b1cfffddf535",
         "words": [
           "use",
           "when",
@@ -67342,7 +67342,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when asking what each USER is being told that nothing can contradict — projects every unproven @invariant and confessed stub onto the reader it is addressed to (director, auditor, compliance-officer, accountant …), because a claim citing SOX §302 is addressed to whoever signs it. The readers are computed from the config; the role→standard map is declared in the open. Run: tsx src/rules/audience/index.ts",
-        "uuid": "baf9077c-2042-8e47-879e-3164b62c5e77",
+        "uuid": "86fcb877-f7be-86a7-a608-0e11e8a447fc",
         "words": [
           "use",
           "when",
@@ -79229,24 +79229,24 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
-    "atom": "stub",
-    "path": "skill/router/build/stub",
+    "atom": "void",
+    "path": "skill/router/build/void",
     "translations": [
       {
         "key": "name",
-        "source": "stub",
-        "uuid": "d685cb7d-3725-87a5-aab7-f1094c71ef21",
+        "source": "void",
+        "uuid": "adca5131-db4b-8dc7-80ec-f8fec43df00b",
         "words": [
-          "stub"
+          "void"
         ],
         "values": {
-          "en": "stub"
+          "en": "void"
         }
       },
       {
         "key": "description",
-        "source": "Use when CI or a deploy needs skills.index to exist without the 80MB corpus emit — the 265-byte empty pool, written by a module that imports only node:fs and node:path.",
-        "uuid": "756015be-50be-8abc-bde6-ca3e0ada3964",
+        "source": "Use when CI or a deploy needs skills.index to exist without the 80MB corpus emit — the void: an empty pool, 265 bytes, written by a module that imports only node:fs and node:path.",
+        "uuid": "83b9f5f4-cd29-89f2-9fc5-f0d5f295ffc4",
         "words": [
           "use",
           "when",
@@ -79265,9 +79265,11 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "corpus",
           "emit",
           "the",
-          "byte",
+          "void",
+          "an",
           "empty",
           "pool",
+          "bytes",
           "written",
           "by",
           "a",
@@ -79282,7 +79284,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
           "path"
         ],
         "values": {
-          "en": "Use when CI or a deploy needs skills.index to exist without the 80MB corpus emit — the 265-byte empty pool, written by a module that imports only node:fs and node:path."
+          "en": "Use when CI or a deploy needs skills.index to exist without the 80MB corpus emit — the void: an empty pool, 265 bytes, written by a module that imports only node:fs and node:path."
         }
       }
     ]

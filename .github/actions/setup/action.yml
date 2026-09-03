@@ -64,5 +64,5 @@ runs:
         if [ "${{ inputs.skill-index }}" = "full" ]; then
           pnpm erpax corpus skill
         else
-          pnpm exec tsx src/skill/router/build/stub/index.ts
+          pnpm exec tsx src/skill/router/build/void/index.ts
         fi

@@ -14,7 +14,7 @@
 export interface MatrixNode { readonly atom: string; readonly uuid: string; readonly parent?: string; readonly prev?: string; readonly next?: string; readonly cross?: string; readonly bind?: string; readonly dim: string; readonly band: string; readonly horo: number; readonly path: string }
 export interface MatrixEdge { readonly f: number; readonly t: number; readonly binding: string; readonly dir: number }
 
-export const UUID_MATRIX_ROOT = "cd1ffad1-ec64-8860-8d46-ef192ac00cc7" as const
+export const UUID_MATRIX_ROOT = "ef211a97-d904-837d-b4b4-d9e9bb506ae2" as const
 export const UUID_MATRIX_DIMS = ["root","access","accounting","address","agent","agents","ai","algebra","allow","anchor","anti","api","apply","architecture","audit","aura","authenticated","auto","average","bank","base","bcp","beyond","bg","biological","body","bookable","budget","bulk","business","cache","camt052","camt053","camt054","can","capture","cases","categories","chain","classify","cli","cloning","closing","cloudflare","cmspage","commerce","commitments","competency","compliance","computer","config","confirm","consent","consistency","consolidation","convention","cost","country","cross","csrd","currency","customer","customers","data","deep","deploy","development","diamond","domain","double","dual","employees","en","enforce","entanglement","entity","entropy","etsi","eu","evidence","export","factory","fair","financial","fiscal","fixed","fusion","fx","gate","ghg","gl","google","government","harmony","heart","held","horo","i18n","identity","ifrs","incoterms","insurance","integrity","intercompany","internal","invoices","iso","items","journal","law","leads","leases","legal","link","llm","locale","lot","maintenance","mcp","media","medical","memory","message","migrate","millennium","mineral","money","monitor","multi","nace","naredba","nist","notary","oecd","outward","pack","pacs004","pain002","party","patent","payload","payment","peppol","period","plugins","post","posts","proof","properties","quantum","readme","realtime","receipt","regulatory","research","reverse","rfc","rodin","roles","rules","run","saf","sale","sandbox","schema","seal","search","security","seed","seeds","self","sequence","skill","standard","standards","sti","subscription","tags","tamper","tax","taxing","team","tenant","tenants","test","testing","trading","transaction","translate","translation","translations","trello","types","ui","un","update","users","uuid","validate","vendors","vocabulary","warehouse","water","wave","wco","website","witness","work","workflow"] as const
 
 export const UUID_MATRIX_NODES: readonly MatrixNode[] = [
@@ -1280,9 +1280,9 @@ export const UUID_MATRIX_NODES: readonly MatrixNode[] = [
   {"atom":"skill","uuid":"843d92bb-f67b-8089-a9cc-85b26628d08f","dim":"root","band":"flow","horo":8,"path":"skill","parent":"00000000-0000-8000-8000-000000000000","prev":"f1af7df0-157b-85b5-b847-3b2016ac8048","next":"8ea510c0-4ecf-8b20-914c-d07deeb02e51","cross":"18f1ff4b-4cd4-8d88-beaa-b590860b0de9","bind":"e6424a24-d260-807b-9aab-564104f73889"},
   {"atom":"frontmatter","uuid":"8ea510c0-4ecf-8b20-914c-d07deeb02e51","dim":"skill","band":"flow","horo":4,"path":"skill/frontmatter","parent":"843d92bb-f67b-8089-a9cc-85b26628d08f","prev":"843d92bb-f67b-8089-a9cc-85b26628d08f","next":"f939ae91-4fd4-8b43-9370-e0bf7dcb1b08","cross":"c21a01a0-0922-85e7-906a-5e2acd5612fe","bind":"8d19d3ef-9394-8ea3-a0d7-219276b10fa1"},
   {"atom":"router","uuid":"f939ae91-4fd4-8b43-9370-e0bf7dcb1b08","dim":"skill","band":"flow","horo":5,"path":"skill/router","parent":"843d92bb-f67b-8089-a9cc-85b26628d08f","prev":"8ea510c0-4ecf-8b20-914c-d07deeb02e51","next":"64145c5e-f300-8429-915b-fed8d85f1869","cross":"dfef2a0e-b656-83fe-8cce-29d26010eb51","bind":"fdf31d02-3a48-8446-a797-36141168999f"},
-  {"atom":"build","uuid":"64145c5e-f300-8429-915b-fed8d85f1869","dim":"skill","band":"flow","horo":4,"path":"skill/router/build","parent":"f939ae91-4fd4-8b43-9370-e0bf7dcb1b08","prev":"f939ae91-4fd4-8b43-9370-e0bf7dcb1b08","next":"d685cb7d-3725-87a5-aab7-f1094c71ef21","cross":"c4a73c5d-7b6b-8946-984f-e94f43bcc3f8","bind":"6d4b9e87-6e08-8181-82a9-ef396cfb695a"},
-  {"atom":"stub","uuid":"d685cb7d-3725-87a5-aab7-f1094c71ef21","dim":"skill","band":"flow","horo":2,"path":"skill/router/build/stub","parent":"64145c5e-f300-8429-915b-fed8d85f1869","prev":"64145c5e-f300-8429-915b-fed8d85f1869","next":"ea479fb9-d71b-8e0a-b037-2465bff7258f","cross":"2b98adf0-3a90-840b-a9c8-8948b6b020fa","bind":"cb69b4ab-d9a5-8b25-8ca9-3a5ad5742d2b"},
-  {"atom":"competencies","uuid":"ea479fb9-d71b-8e0a-b037-2465bff7258f","dim":"skill","band":"flow","horo":2,"path":"skill/router/competencies","parent":"f939ae91-4fd4-8b43-9370-e0bf7dcb1b08","prev":"d685cb7d-3725-87a5-aab7-f1094c71ef21","next":"719a5a71-d035-830f-92ce-2cf729c2aa03","cross":"de2bb83d-00b5-8b7c-a30a-dbaeba39b983","bind":"ff24cbcf-6922-8dc4-a86a-5eca7938d7b3"},
+  {"atom":"build","uuid":"64145c5e-f300-8429-915b-fed8d85f1869","dim":"skill","band":"flow","horo":4,"path":"skill/router/build","parent":"f939ae91-4fd4-8b43-9370-e0bf7dcb1b08","prev":"f939ae91-4fd4-8b43-9370-e0bf7dcb1b08","next":"c57b2793-a340-8c1c-a67f-a1e759f4eaf0","cross":"b6eaa47a-6af5-8fd2-8d09-0aa584084bac","bind":"e63665be-da9e-858a-90d3-9c0e6ddb8ebd"},
+  {"atom":"void","uuid":"c57b2793-a340-8c1c-a67f-a1e759f4eaf0","dim":"skill","band":"flow","horo":5,"path":"skill/router/build/void","parent":"64145c5e-f300-8429-915b-fed8d85f1869","prev":"64145c5e-f300-8429-915b-fed8d85f1869","next":"ea479fb9-d71b-8e0a-b037-2465bff7258f","cross":"2b98adf0-3a90-840b-a9c8-8948b6b020fa","bind":"ce6dc6f7-7f77-8659-b86b-51f21541d2a0"},
+  {"atom":"competencies","uuid":"ea479fb9-d71b-8e0a-b037-2465bff7258f","dim":"skill","band":"flow","horo":2,"path":"skill/router/competencies","parent":"f939ae91-4fd4-8b43-9370-e0bf7dcb1b08","prev":"c57b2793-a340-8c1c-a67f-a1e759f4eaf0","next":"719a5a71-d035-830f-92ce-2cf729c2aa03","cross":"3044233a-48f2-89f6-94f6-8b1a3ee3988d","bind":"c82b3d47-7a35-8dc1-8e65-4e9eada3e520"},
   {"atom":"merge","uuid":"719a5a71-d035-830f-92ce-2cf729c2aa03","dim":"skill","band":"flow","horo":4,"path":"skill/router/merge","parent":"f939ae91-4fd4-8b43-9370-e0bf7dcb1b08","prev":"ea479fb9-d71b-8e0a-b037-2465bff7258f","next":"43fd29d0-75dc-8ff9-84d6-5562a92f11ef","cross":"037a5657-89c3-8613-958b-c4243364df60","bind":"080c8de6-6977-82d8-8743-f82059b0fc39"},
   {"atom":"rating","uuid":"43fd29d0-75dc-8ff9-84d6-5562a92f11ef","dim":"skill","band":"flow","horo":2,"path":"skill/router/rating","parent":"f939ae91-4fd4-8b43-9370-e0bf7dcb1b08","prev":"719a5a71-d035-830f-92ce-2cf729c2aa03","next":"6c8b8743-8fbf-89be-ad02-bd3d4b11c1b1","cross":"bcb68dd9-a325-8493-a2fb-15b86fb053d7","bind":"262fea0d-c64e-8286-a80f-280cebdfa568"},
   {"atom":"upgrade","uuid":"6c8b8743-8fbf-89be-ad02-bd3d4b11c1b1","dim":"skill","band":"flow","horo":5,"path":"skill/router/upgrade","parent":"f939ae91-4fd4-8b43-9370-e0bf7dcb1b08","prev":"43fd29d0-75dc-8ff9-84d6-5562a92f11ef","next":"7e35d315-ae88-80b6-8bf2-21d72e709e48","cross":"9edf4396-ac58-843c-ac7c-ffa198c20cab","bind":"02b39621-2fb0-89f9-aef6-16639f36e6c1"},
@@ -11293,10 +11293,10 @@ export const UUID_MATRIX_EDGES: readonly MatrixEdge[] = [
   {"f":1262,"t":2748,"binding":"c7b8a652-4c77-8bf4-b64d-7eeb32410ffe","dir":2},
   {"f":1262,"t":651,"binding":"4195845a-127c-8a89-a7fb-411a57662543","dir":4},
   {"f":1262,"t":813,"binding":"e130498f-5e2e-8700-a0d4-a6e107452986","dir":4},
-  {"f":1263,"t":106,"binding":"829af4ab-73c7-8019-a884-71a8dc8e1747","dir":1},
-  {"f":1263,"t":813,"binding":"06813833-7250-84c8-8c29-534331979489","dir":2},
-  {"f":1263,"t":1259,"binding":"94ff99d9-d0ca-8ff1-9c7e-a0d87d8456ff","dir":7},
-  {"f":1263,"t":230,"binding":"ad2917da-2543-865e-9359-92e78ea5886a","dir":4},
+  {"f":1263,"t":106,"binding":"b7fcc29f-b779-8095-810d-7b781021e01e","dir":7},
+  {"f":1263,"t":813,"binding":"63679718-2323-85f1-ab5e-c99107a2b755","dir":5},
+  {"f":1263,"t":1259,"binding":"617154c2-3e8a-862e-83d8-92541d4e8fbe","dir":4},
+  {"f":1263,"t":230,"binding":"eea30af2-fafe-8868-a364-75ae44726926","dir":1},
   {"f":1264,"t":1074,"binding":"7fbffe12-b787-82d1-a3ba-918da75481a8","dir":4},
   {"f":1264,"t":1261,"binding":"d66d051c-fe82-8a27-b9ed-67db64dcd2ed","dir":1},
   {"f":1265,"t":781,"binding":"943478a9-3f12-89d5-a707-52faaae186d2","dir":4},
@@ -31198,10 +31198,10 @@ export const UUID_MATRIX_EDGES: readonly MatrixEdge[] = [
   {"f":2748,"t":1262,"binding":"c7b8a652-4c77-8bf4-b64d-7eeb32410ffe","dir":2},
   {"f":651,"t":1262,"binding":"4195845a-127c-8a89-a7fb-411a57662543","dir":4},
   {"f":813,"t":1262,"binding":"e130498f-5e2e-8700-a0d4-a6e107452986","dir":4},
-  {"f":106,"t":1263,"binding":"829af4ab-73c7-8019-a884-71a8dc8e1747","dir":1},
-  {"f":813,"t":1263,"binding":"06813833-7250-84c8-8c29-534331979489","dir":2},
-  {"f":1259,"t":1263,"binding":"94ff99d9-d0ca-8ff1-9c7e-a0d87d8456ff","dir":7},
-  {"f":230,"t":1263,"binding":"ad2917da-2543-865e-9359-92e78ea5886a","dir":4},
+  {"f":106,"t":1263,"binding":"b7fcc29f-b779-8095-810d-7b781021e01e","dir":7},
+  {"f":813,"t":1263,"binding":"63679718-2323-85f1-ab5e-c99107a2b755","dir":5},
+  {"f":1259,"t":1263,"binding":"617154c2-3e8a-862e-83d8-92541d4e8fbe","dir":4},
+  {"f":230,"t":1263,"binding":"eea30af2-fafe-8868-a364-75ae44726926","dir":1},
   {"f":1074,"t":1264,"binding":"7fbffe12-b787-82d1-a3ba-918da75481a8","dir":4},
   {"f":1261,"t":1264,"binding":"d66d051c-fe82-8a27-b9ed-67db64dcd2ed","dir":1},
   {"f":781,"t":1265,"binding":"943478a9-3f12-89d5-a707-52faaae186d2","dir":4},

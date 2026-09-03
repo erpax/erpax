@@ -6,19 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "stub",
-    "uuid": "d685cb7d-3725-87a5-aab7-f1094c71ef21",
+    "source": "void",
+    "uuid": "adca5131-db4b-8dc7-80ec-f8fec43df00b",
     "words": [
-      "stub"
+      "void"
     ],
     "values": {
-      "en": "stub"
+      "en": "void"
     }
   },
   {
     "key": "description",
-    "source": "Use when CI or a deploy needs skills.index to exist without the 80MB corpus emit — the 265-byte empty pool, written by a module that imports only node:fs and node:path.",
-    "uuid": "756015be-50be-8abc-bde6-ca3e0ada3964",
+    "source": "Use when CI or a deploy needs skills.index to exist without the 80MB corpus emit — the void: an empty pool, 265 bytes, written by a module that imports only node:fs and node:path.",
+    "uuid": "83b9f5f4-cd29-89f2-9fc5-f0d5f295ffc4",
     "words": [
       "use",
       "when",
@@ -37,9 +37,11 @@ export const translations: readonly Translation[] = [
       "corpus",
       "emit",
       "the",
-      "byte",
+      "void",
+      "an",
       "empty",
       "pool",
+      "bytes",
       "written",
       "by",
       "a",
@@ -54,7 +56,7 @@ export const translations: readonly Translation[] = [
       "path"
     ],
     "values": {
-      "en": "Use when CI or a deploy needs skills.index to exist without the 80MB corpus emit — the 265-byte empty pool, written by a module that imports only node:fs and node:path."
+      "en": "Use when CI or a deploy needs skills.index to exist without the 80MB corpus emit — the void: an empty pool, 265 bytes, written by a module that imports only node:fs and node:path."
     }
   }
 ]

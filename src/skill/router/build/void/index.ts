@@ -1,7 +1,7 @@
 import { mkdirSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 /**
- * skill/router/build/stub — the 265 bytes CI writes, without booting the corpus to write them.
+ * skill/router/build/void — the 265 bytes CI writes, without booting the corpus to write them.
  *
  * The full emit walks every SKILL.md and produces ~80MB, which no Worker can hold; CI and deploy
  * write an EMPTY pool instead so the static import resolves. That stub is 265 fixed bytes, and
@@ -9,7 +9,7 @@ import { dirname, join } from 'node:path'
  * lived in imports [[aura]], [[navigation]] and the skill upgrade seal at module top level. The
  * stub path needs none of them; ESM evaluates them anyway.
  *
- * So the writer moved here, where the only imports are `node:fs` and `node:path`, and the full
+ * So the writer moved here — the VOID, an index with no members — where the only imports are `node:fs` and `node:path`, and the full
  * emitter calls into it. One spelling of the file's shape, two callers — extracting it would be
  * pointless if the format lived in two places.
  *
@@ -62,6 +62,6 @@ export function buildSkillIndexStub(cwd: string = process.cwd()): SkillIndexWrit
   return writeSkillIndexFile(cwd, [], STUB_NOTE)
 }
 
-if (process.argv[1] && process.argv[1].endsWith('stub/index.ts')) buildSkillIndexStub()
+if (process.argv[1] && process.argv[1].endsWith('void/index.ts')) buildSkillIndexStub()
 
-/** @index-cross.foldback child=skill/router/build/stub parent=skill/router/build — this cross folds back into its parent. */
+/** @index-cross.foldback child=skill/router/build/void parent=skill/router/build — this cross folds back into its parent. */
