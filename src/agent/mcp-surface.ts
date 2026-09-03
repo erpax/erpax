@@ -18,5 +18,17 @@ import { agentRegistry } from './bootstrap'
 let _erpaxMcpTools: ReturnType<typeof buildErpaxMcpTools> | null = null
 export const erpaxMcpTools = (): ReturnType<typeof buildErpaxMcpTools> =>
   (_erpaxMcpTools ??= buildErpaxMcpTools(agentRegistry))
-export const erpaxMcpResources = ERPAX_MCP_RESOURCES
-export const erpaxMcpPrompts = ERPAX_MCP_PROMPTS
+/*
+ * THE SAME DEFERRAL, one line further. `buildErpaxMcpTools` was made lazy above for exactly this
+ * reason, and these two kept reading their cross-module bindings at MODULE LOAD — which throws
+ * inside the cycle they sit in:
+ *
+ *     ReferenceError: Cannot access 'ERPAX_MCP_RESOURCES' before initialization
+ *                     at src/agent/mcp-surface.ts:21
+ *
+ * Reproduced by importing this module first ([[rules]]/cycle: whether a loop bites depends on the
+ * order the graph is entered, which is why the ones that survive are the ones nobody entered from
+ * the wrong side). A function body is evaluated when it is CALLED; a const initialiser is not.
+ */
+export const erpaxMcpResources = (): typeof ERPAX_MCP_RESOURCES => ERPAX_MCP_RESOURCES
+export const erpaxMcpPrompts = (): typeof ERPAX_MCP_PROMPTS => ERPAX_MCP_PROMPTS
