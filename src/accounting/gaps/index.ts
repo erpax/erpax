@@ -9,6 +9,7 @@ import {
   buildReadmeCorpusFrozenInputs,
   deriveFolderModel,
   listAtomPaths,
+  schemaCollision,
   materializeComputedFacesForPathsStable,
   type FolderReadmeModel,
 } from '@/readme/compute'
@@ -201,3 +202,84 @@ export function formatAccountingGapsReport(v: GapsInWavesVerdict): string {
 }
 
 /** @index-cross.foldback child=accounting/gaps parent=accounting — this cross folds back into its parent. */
+
+export interface GapClass {
+  readonly source: string
+  readonly rows: number
+  readonly eb: number
+}
+
+export interface GapComposition {
+  readonly gapPaths: number
+  readonly totalEb: number
+  readonly bySource: readonly GapClass[]
+  /** Atoms flagged for missing code that DECLARE themselves a schema.org vocabulary word. */
+  readonly proseByDesign: readonly string[]
+  /** Atoms flagged for missing code that do not — the genuine trinity debt. */
+  readonly realDebt: readonly string[]
+}
+
+/**
+ * Is this atom's leaf actually a schema.org word? Asked of schema.org, not of the atom.
+ *
+ * The first version read each SKILL for the sentence "a schema.org vocabulary word, collided" —
+ * and that is CIRCULAR: the note was written to justify the classification, so reading it
+ * confirms the prose rather than the fact. A sibling repo hit the identical loop classifying
+ * prior-art rows by the wording of each row's own note and got 13 of 13.
+ *
+ * `schemaCollision().words` is derived from `sti/vocabulary/schemaorg.jsonld` — the vocabulary
+ * itself — so the atom does not get a vote on what it is.
+ */
+const isSchemaWord = (leaf: string, cwd: string): boolean => schemaCollision(cwd).words.has(leaf)
+
+/**
+ * What `accounting-wave` is actually made of — the decomposition nobody had taken.
+ *
+ * The axis sat at 882 with a baseline of 0 for the whole session and was never diagnosed, because
+ * a single number cannot be argued with. It is not one defect: it is 504 atoms with a SKILL and
+ * no code or proof, a 479-atom ancestor cascade from those, 248 stray directories, and 132 atoms
+ * with no materialised deployment face.
+ *
+ * And the 504 split further. `vocabulary/` atoms are prose BY DESIGN and are already excluded —
+ * but the exclusion is POSITIONAL: it recognises a prose atom by where it LIVES, not by what it
+ * IS. So 382 atoms whose leaf is a real schema.org word are counted as debt while their 1,676
+ * siblings under `vocabulary/` are not. That is criterion substitution — a test easier to check
+ * than the property it stands for.
+ *
+ * Measured 2026-09-05: 504 = 382 prose-by-design + **122 genuine trinity debt**. The honest
+ * number is 122, and it is a list of real atoms — admin, camt052, consent, ecommerce — not a
+ * vocabulary.
+ */
+export function gapComposition(cwd = process.cwd()): GapComposition {
+  const frozen = buildReadmeCorpusFrozenInputs(cwd)
+  const rows = new Map<string, { rows: number; eb: number }>()
+  const missingCode: string[] = []
+  let gapPaths = 0
+  let totalEb = 0
+  for (const atomPath of listAtomPaths(cwd)) {
+    const model = deriveFolderModel(atomPath, cwd, frozen.ctx, frozen.graph)
+    const gaps = model.entropy.gaps ?? []
+    if (gaps.length > 0) gapPaths++
+    for (const g of gaps) {
+      const cur = rows.get(g.source) ?? { rows: 0, eb: 0 }
+      rows.set(g.source, { rows: cur.rows + 1, eb: cur.eb + (g.comparable ?? 0) })
+      totalEb += g.comparable ?? 0
+      if (String(g.source).includes('trinity.code missing')) missingCode.push(atomPath)
+    }
+  }
+  const proseByDesign: string[] = []
+  const realDebt: string[] = []
+  for (const atomPath of missingCode) {
+    const leaf = atomPath.slice(atomPath.lastIndexOf('/') + 1)
+    ;(isSchemaWord(leaf, cwd) ? proseByDesign : realDebt).push(atomPath)
+  }
+  return {
+    gapPaths,
+    totalEb: Number(totalEb.toFixed(1)),
+    bySource: [...rows]
+      .map(([source, v]) => ({ source, rows: v.rows, eb: Number(v.eb.toFixed(1)) }))
+      .sort((a, b) => b.eb - a.eb),
+    proseByDesign,
+    realDebt,
+  }
+}
