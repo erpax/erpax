@@ -17,6 +17,8 @@ import { phraseWithoutDiamondChangesetGate } from '@/law/folder/user-word'
 import { commentsOf } from '@/syntax'
 import { deadReferencesIn } from '@/rules/reference'
 import { deadSymbolsIn } from '@/rules/prose'
+import { mirroredIn } from '@/rules/mirror'
+import { forgedIn } from '@/rules/forge'
 import { verifyStandardsCatalogue } from '@/standards/emit'
 
 const ROOT = process.cwd()
@@ -186,6 +188,8 @@ export const CONFIRM_CHECK_AXES = [
   'standards',
   'grounded',
   'outside',
+  'mirror',
+  'forge',
 ] as const
 
 export function folderNameWarnings(files: readonly string[]): string[] {
@@ -391,6 +395,18 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
   // the check costs 1.1s — so it lives here, scoped to edits that actually touch a banner (the only way
   // the catalogue can go stale).
   const staleCatalogue = touchesStandardBanner(files, ROOT) && !verifyStandardsCatalogue(ROOT)
+  // A proof that restates the literal its own module assigns certifies the assignment and nothing
+  // else ([[rules]]/mirror). 507 of them stood here, green, counted as proofs by every gate that
+  // counts proofs — and 25 sat in atoms citing a standard, where "this is proven" is addressed to a
+  // reader who SIGNS. Refused at the WRITE, so a new one cannot be typed; the whole-tree scan costs
+  // 3.1s and this one costs nothing, because it reads only the changeset.
+  const mirrors = mirroredIn(files, ROOT)
+  // A registered identifier built from local randomness is a forged provenance record ([[rules]]/
+  // forge). Three sites minted `10.5281/zenodo.${Math.random()}` while logging "[ZENODO] Publishing"
+  // and making no network call, and their tests asserted the random string's SHAPE. This is the one
+  // defect here that reaches OUTSIDE the corpus — a caller receives provenance for a deposit that
+  // never happened — so it belongs at the write, never at the push.
+  const forgeries = forgedIn(files, ROOT)
   // Realtime PROVENANCE gate ([[grounded]]): a trust-chain convention (`src/convention/*/index.ts`) that
   // reads raw, unsealed fs (`process.cwd()`/`readFileSync`/`readdirSync`/`existsSync`) prices the tamper-
   // cost on the MUTABLE working tree, not sealed content — the forge-cost then measures a directory
@@ -438,6 +454,16 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
     console.log(
       `🟥 prose     ✗  ${deadCites.length} cited symbol(s) do not exist — write the code, or stop claiming it`,
     )
+  if (mirrors.length)
+    console.log(
+      `🟥 mirror    ✗  ${mirrors.length} assertion(s) restate a literal their own module assigns — ` +
+        `a proof must be able to fail: ${mirrors.map((m) => `${m.file}:${m.line} ${m.name}`).join(', ')}`,
+    )
+  if (forgeries.length)
+    console.log(
+      `🟥 forge     ✗  ${forgeries.length} identifier(s) wear a registry's shape and are generated locally — ` +
+        `received or refused, never minted: ${forgeries.map((f) => `${f.file}:${f.line} ${f.registry}`).join(', ')}`,
+    )
   if (staleCatalogue)
     console.log(
       '🟥 standards ✗  a standard banner moved and the catalogue did not follow — run `pnpm erpax standards catalogue`',
@@ -474,6 +500,8 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
     standards: !staleCatalogue,
     grounded: ungroundedEdits.length === 0,
     outside: outsideWrites.length === 0,
+    mirror: mirrors.length === 0,
+    forge: forgeries.length === 0,
   }
   const ok = CONFIRM_CHECK_AXES.every((axis) => verdicts[axis])
   if (ok) {

@@ -51,7 +51,11 @@ export const GATE_LANES: readonly (readonly [string, string])[] = [
   // FACE — a refactor may add to an atom's face freely but may never quietly take a
   // name away; compares the working tree against the fork point, never HEAD. Zero is
   // a theorem, not a ratchet ([[rules]]/face).
-  ['face', 'pnpm erpax face'],
+  // `erpax face` resolved to NOTHING: two atoms carry that leaf (cli/face and rules/face), so the
+  // registry's unique-leaf alias is correctly dropped and the lane named a command that never
+  // existed. A lane that cannot run guards nothing — it reads as coverage and is silence. Named by
+  // its full path, which is unambiguous by construction.
+  ['face', 'pnpm erpax rules/face'],
   ['readme:check', 'pnpm erpax readme check'],
   ['payload-types', 'bash scripts/payload-verify-types.sh'],
   ['lint', 'pnpm erpax lint'],

@@ -86,6 +86,39 @@ const testFiles = (cwd: string): string[] => {
   return out.sort()
 }
 
+/** The one walk both faces use — a second copy would be this atom's own defect. */
+function collectMirrors(src: ts.SourceFile, consts: Map<string, string>, rel: string, out: Mirror[]): void {
+  const visit = (n: ts.Node): void => {
+    if (ts.isCallExpression(n) && ts.isPropertyAccessExpression(n.expression)) {
+      const matcher = n.expression.name.text
+      if (matcher === 'toBe' || matcher === 'toEqual' || matcher === 'toStrictEqual') {
+        const recv = n.expression.expression
+        if (
+          ts.isCallExpression(recv) &&
+          ts.isIdentifier(recv.expression) &&
+          recv.expression.text === 'expect' &&
+          recv.arguments.length === 1
+        ) {
+          const subject = recv.arguments[0]
+          const expected = n.arguments[0]
+          if (subject && expected && ts.isIdentifier(subject) && consts.get(subject.text) === expected.getText()) {
+            const { line } = src.getLineAndCharacterOfPosition(n.getStart())
+            out.push({
+              file: rel,
+              line: line + 1,
+              name: subject.text,
+              value: expected.getText(),
+              text: n.getText().replace(/\s+/g, ' ').slice(0, 100),
+            })
+          }
+        }
+      }
+    }
+    ts.forEachChild(n, visit)
+  }
+  visit(src)
+}
+
 /**
  * Every assertion comparing a constant to the literal its own sibling module assigns it.
  *
@@ -109,35 +142,37 @@ export function mirroredAssertions(cwd: string = process.cwd()): Mirror[] {
     } catch {
       continue
     }
-    const visit = (n: ts.Node): void => {
-      if (ts.isCallExpression(n) && ts.isPropertyAccessExpression(n.expression)) {
-        const matcher = n.expression.name.text
-        if (matcher === 'toBe' || matcher === 'toEqual' || matcher === 'toStrictEqual') {
-          const recv = n.expression.expression
-          if (
-            ts.isCallExpression(recv) &&
-            ts.isIdentifier(recv.expression) &&
-            recv.expression.text === 'expect' &&
-            recv.arguments.length === 1
-          ) {
-            const subject = recv.arguments[0]
-            const expected = n.arguments[0]
-            if (subject && expected && ts.isIdentifier(subject) && consts.get(subject.text) === expected.getText()) {
-              const { line } = src.getLineAndCharacterOfPosition(n.getStart())
-              hits.push({
-                file: relative(cwd, t),
-                line: line + 1,
-                name: subject.text,
-                value: expected.getText(),
-                text: n.getText().replace(/\s+/g, ' ').slice(0, 100),
-              })
-            }
-          }
-        }
-      }
-      ts.forEachChild(n, visit)
+    collectMirrors(src, consts, relative(cwd, t), hits)
+  }
+  return hits
+}
+
+/**
+ * The same measurement over an EDIT, for the write-time hook.
+ *
+ * A whole-tree scan costs 3.1s and runs at push; scoped to the files in one changeset it costs
+ * nothing, and it fires where the mirror is being typed. A gate that runs after the fact reports a
+ * defect; a gate at the write refuses it ([[confirm]]).
+ */
+export function mirroredIn(files: readonly string[], cwd: string = process.cwd()): Mirror[] {
+  const tests = files.filter((f) => f.endsWith('test.ts'))
+  if (tests.length === 0) return []
+  const hits: Mirror[] = []
+  for (const t of tests) {
+    const abs = t.startsWith('/') ? t : join(cwd, t)
+    const dir = dirname(abs)
+    const consts = new Map<string, string>()
+    for (const sibling of ['index.ts', 'index.tsx']) {
+      for (const [k, v] of literalConstants(join(dir, sibling))) consts.set(k, v)
     }
-    visit(src)
+    if (consts.size === 0) continue
+    let src: ts.SourceFile
+    try {
+      src = parse(abs)
+    } catch {
+      continue
+    }
+    collectMirrors(src, consts, relative(cwd, abs), hits)
   }
   return hits
 }

@@ -58,6 +58,31 @@ const sourceFiles = (cwd: string): string[] => {
   return out.sort()
 }
 
+/** The one walk both faces use. */
+function collectForgeries(src: ts.SourceFile, rel: string, out: Forgery[]): void {
+  const visit = (n: ts.Node): void => {
+    if (ts.isTemplateExpression(n)) {
+      const whole = n.getText()
+      const shape = REGISTERED_SHAPES.find(([, re]) => re.test(whole))
+      if (shape) {
+        const interpolated = n.templateSpans.map((x) => x.expression.getText()).join(' ; ')
+        if (LOCAL_SOURCE.test(interpolated)) {
+          const { line } = src.getLineAndCharacterOfPosition(n.getStart())
+          out.push({
+            file: rel,
+            line: line + 1,
+            registry: shape[0],
+            source: interpolated.slice(0, 60),
+            text: whole.replace(/\s+/g, ' ').slice(0, 100),
+          })
+        }
+      }
+    }
+    ts.forEachChild(n, visit)
+  }
+  visit(src)
+}
+
 /**
  * Every template literal that wears a registry's shape AND interpolates something local.
  *
@@ -75,27 +100,28 @@ export function forgedIdentifiers(cwd: string = process.cwd()): Forgery[] {
     } catch {
       continue
     }
-    const visit = (n: ts.Node): void => {
-      if (ts.isTemplateExpression(n)) {
-        const whole = n.getText()
-        const shape = REGISTERED_SHAPES.find(([, re]) => re.test(whole))
-        if (shape) {
-          const interpolated = n.templateSpans.map((s) => s.expression.getText()).join(' ; ')
-          if (LOCAL_SOURCE.test(interpolated)) {
-            const { line } = src.getLineAndCharacterOfPosition(n.getStart())
-            hits.push({
-              file: relative(cwd, f),
-              line: line + 1,
-              registry: shape[0],
-              source: interpolated.slice(0, 60),
-              text: whole.replace(/\s+/g, ' ').slice(0, 100),
-            })
-          }
-        }
-      }
-      ts.forEachChild(n, visit)
+    collectForgeries(src, relative(cwd, f), hits)
+  }
+  return hits
+}
+
+/**
+ * The same measurement over an EDIT, for the write-time hook.
+ *
+ * A forged identifier is the one defect in this corpus that reaches OUTSIDE it — a caller receives
+ * provenance for a deposit that never happened. That belongs at the write, not at the push.
+ */
+export function forgedIn(files: readonly string[], cwd: string = process.cwd()): Forgery[] {
+  const hits: Forgery[] = []
+  for (const f of files.filter((x) => /\.tsx?$/.test(x) && !/\.d\.ts$|generated/.test(x))) {
+    const abs = f.startsWith('/') ? f : join(cwd, f)
+    let src: ts.SourceFile
+    try {
+      src = parse(abs)
+    } catch {
+      continue
     }
-    visit(src)
+    collectForgeries(src, relative(cwd, abs), hits)
   }
   return hits
 }
