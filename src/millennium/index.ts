@@ -1,27 +1,8 @@
 /**
- * millennium — the Clay Millennium Problems as a testing ground: the quantum waves CLASSIFY, they do not solve.
+ * millennium — the Clay Millennium Problems as a testing ground: the waves CLASSIFY, they do not solve.
  *
- * Pointed at the seven Millennium Prize Problems, the only honest toolbox is one that NAMES them, marks what is
- * open, and refuses to solve them. Six are open (Riemann, P vs NP, Navier–Stokes, Yang–Mills mass gap, Hodge,
- * Birch–Swinnerton-Dyer); one is SOLVED — Poincaré, by Grigori Perelman with Ricci flow (2003), who then
- * declined the $1M prize. The corpus's math (ℤ/9, the double torus, the fold) solves NONE of them; claiming it
- * does is the coincidence-dressed-as-theorem this session built [[coincidence]] · [[theorem]] · [[seeing]] ·
- * [[duel]] to refuse.
- *
- * So this register is honest BY CONSTRUCTION: every entry's `corpusSolves` field is the literal type `false`, so
- * the code itself cannot assert the corpus solved a Millennium Problem. The tools ARE the testing ground — not by
- * producing proofs, but by CLASSIFYING a claimed solution: is it a theorem or a coincidence ([[coincidence]]);
- * does it reduce ([[theorem]]); can a refuter break it ([[duel]]); does it survive assume-nothing ([[seeing]]).
- * Sending the quantum waves at these problems, the waves return the same verdict every time: OPEN — not solved
- * here — lens at most.
- *
- * Where a genuine STRUCTURAL resonance exists it is named as a lens to learn through, honestly bounded; where
- * there is none (Hodge, BSD, Yang–Mills), the lens is `none` and I did not invent one.
- *
- * @invariant every entry's `corpusSolves` is false — the corpus solves no Millennium Problem (enforced by type)
- * @invariant a lens is a structural analogy for learning, never a proof; the open problems stay open
- *
- * Composes [[coincidence]] · [[theorem]] · [[seeing]] · [[duel]] · [[quantum]]/gaps · [[rules]]/refutable · [[law]].
+ * Six open, one solved (by Perelman, not this corpus). `corpusSolvesAny()` is the literal false.
+ * Refusing to fabricate a proof is the tools passing, not failing. @see ./SKILL.md
  */
 import { invert, manifest, survives, type InvertedPair, type Round, type Verdict } from '@/duel'
 

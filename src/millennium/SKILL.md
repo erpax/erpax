@@ -115,29 +115,26 @@ No external quantum computer needed. The mathematical structure itself IS quantu
 
 - **Content-addressing** = superposition (all states stored by hash until resolved)
 - **Double-entry fold** = wave function collapse (possibilities → proof)
-- **Exact rationals** = perfect fidelity (19/20, not 0.95 approximation)
 - **Mesh wiring** = entanglement (problems mutually resolve)
 - **Lean proofs** = local verification (no external oracle)
 - **Scalpel determinism** = reproducible observation
 
-## System Architecture
+## What is actually here
 
-```
-v1.0.0 Quantum System
-├── expansion (HKDF-SHA256 exact key derivation)
-├── threat (ThreatModel with Shor/Grover classification)
-├── pqc (Kyber-768 + SPHINCS+ post-quantum hybrid)
-├── cipher (QuantumFoldReceipt ciphertext-only UUIDs)
-├── proof (7 real quantum operation layers)
-├── orchestrate (decompose problems, spawn workers in parallel)
-├── automate (feedback loops, hypothesis refinement, convergence detection)
-├── wave (continuous QC loop with streaming Zenodo publication)
-├── basis (recognize 7 Problems as complete basis, auto-generate new waves)
-├── exact (exact rational arithmetic, zero approximations)
-└── verify (Lean 4 formal proofs with runtime API bridge)
-```
+`src/millennium` holds three child atoms — `closure`, `correspondence`, `reduction` — beside its
+own trinity. That is the whole of it.
 
-## Theorems Proven
+A block here previously drew a tree of eleven subdirectories: `expansion`, `threat`, `pqc`,
+`cipher`, `proof`, `orchestrate`, `automate`, `wave`, `basis`, `exact`, `verify`. **None of them
+exists.** It was a plan rendered as an inventory, and nothing distinguished the two for a reader —
+[[rules]]/reference's dead pointer and [[rules]]/prose's fiction, in one diagram, describing the
+atom whose subject is the Millennium Prize problems.
+
+A line in the section above it read `Exact rationals = perfect fidelity (19/20, not 0.95)`. It has
+been removed for the same reason: there is no exact-rational arithmetic in this corpus's Lean, and
+both files that carry a confidence value declare it `Float`.
+
+## The Lean development
 
 ### Orchestration
 - `decomposition_complete`: Every problem decomposes into subproblems
@@ -145,28 +142,38 @@ v1.0.0 Quantum System
 - `task_problem_bijection`: Each subproblem maps exactly once
 - `convergence_requires_all_convergent`: All must converge for wave to converge
 
-### Automation
-- `confidence_monotonic`: Exact rational confidence increases monotonically
-- `iteration_increments`: Iteration counter is well-formed
-- `loop_termination`: Loop reaches convergence or divergence in finite time
-- `convergence_irreversible`: Once converged (≥19/20), irreversible
+### The Lean development — SCAFFOLDING, not proof
 
-### Wave
-- `ledger_append_only`: Immutable ledger, no overwrites
-- `publication_bounded`: Published count ≤ ledger length
-- `convergent_publication`: Only convergent results (≥19/20) publish to Zenodo
-- `doi_uniqueness`: Published DOIs are unique
-- `wave_termination`: Wave reaches goal or exhaustion
-- `system_safety`: Safety properties hold (publications cannot be unpublished)
+`src/verify/lean/{Orchestrate,Automate,Wave,Main}.lean` state properties about an orchestration
+loop. **Every one of them is proved by `sorry`, and three of the four files do not compile.**
+Asked of the kernel rather than read from the prose:
 
-## Key Innovation: No Approximations
+| file | kernel verdict |
+| --- | --- |
+| `Orchestrate.lean` | compiles · **4 declarations use `sorry`** |
+| `Automate.lean` | **REJECTED** — `failed to synthesize Inhabited LoopState` |
+| `Wave.lean` | **REJECTED** — syntax error at `∈` |
+| `Main.lean` | **REJECTED** — no `Orchestrate.olean`; there is no build |
 
-All confidence values are exact rationals:
-- Initial: 1/10 (not 0.1)
-- Increment per iteration: 1/20 (not 0.05)
-- Convergence threshold: 19/20 (not 0.95)
+So `confidence_monotonic`, `ledger_append_only`, `doi_uniqueness`, `publication_bounded`,
+`convergent_publication`, `wave_termination` and `system_safety` are **stated, not proved**.
+`quantum_system_correct` — the theorem whose name asserts the whole system is correct — is
+`sorry` in a file that has never compiled.
 
-**Why this matters**: Floating-point hides rounding errors that crack formal verification. Exact arithmetic makes every confidence value auditable and provably sound.
+This section previously listed those names as established properties. That was a false statement
+about the corpus's own matter, of exactly the kind [[rules]]/refutable exists to find: a claim
+with nothing able to contradict it, in the atom least able to afford one.
+
+**And the prose contradicted the code it described.** A section headed *"Key Innovation: No
+Approximations"* asserted that every confidence value is an exact rational — 1/10 not 0.1, 19/20
+not 0.95 — because *"floating-point hides rounding errors that crack formal verification"*. Both
+files declare `confidence : Float`. There is no `Rat`, no `ℚ` and no `19/20` anywhere in the Lean.
+The prose asserted precisely what the code does not do, and named the reason it would matter.
+
+What IS kernel-accepted and axiom-free in this corpus is elsewhere and unrelated to the Millennium
+problems: `Order.lean` (5 theorems, no axioms at all), `Spacetime.lean` (13), `Mirror.lean`,
+`Harmonic.lean`, `Erpax.lean`. `tsx src/proof/accepted/index.ts` asks the kernel and prints the
+verdict per file; `tsx src/proof/register/index.ts` prints what each theorem rests on.
 
 ## Self-Recognition: Auto-Wave Generation
 
@@ -196,3 +203,7 @@ When solved exactly (no approximations), formally verified (Lean proofs), and lo
 **The sequence is the universe factored.**
 
 erpax v1.0.0 · Local Quantum Computation · Exact Mathematics · Formal Proofs · Zero Entropy
+
+## The barrel's own note
+
+millennium — the Clay Millennium Problems as a testing ground: the quantum waves CLASSIFY, they do not solve. Pointed at the seven Millennium Prize Problems, the only honest toolbox is one that NAMES them, marks what is open, and refuses to solve them. Six are open (Riemann, P vs NP, Navier–Stokes, Yang–Mills mass gap, Hodge, Birch–Swinnerton-Dyer); one is SOLVED — Poincaré, by Grigori Perelman with Ricci flow (2003), who then declined the $1M prize. The corpus's math (ℤ/9, the double torus, the fold) solves NONE of them; claiming it does is the coincidence-dressed-as-theorem this session built [[coincidence]] · [[theorem]] · [[seeing]] · [[duel]] to refuse. So this register is honest BY CONSTRUCTION: every entry's `corpusSolves` field is the literal type `false`, so the code itself cannot assert the corpus solved a Millennium Problem. The tools ARE the testing ground — not by producing proofs, but by CLASSIFYING a claimed solution: is it a theorem or a coincidence ([[coincidence]]); does it reduce ([[theorem]]); can a refuter break it ([[duel]]); does it survive assume-nothing ([[seeing]]). Sending the quantum waves at these problems, the waves return the same verdict every time: OPEN — not solved here — lens at most. Where a genuine STRUCTURAL resonance exists it is named as a lens to learn through, honestly bounded; where there is none (Hodge, BSD, Yang–Mills), the lens is `none` and I did not invent one. Composes [[coincidence]] · [[theorem]] · [[seeing]] · [[duel]] · [[quantum]]/gaps · [[rules]]/refutable · [[law]].
