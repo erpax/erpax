@@ -71,6 +71,50 @@ export const resultUuid = (claim: string, boundary: string): string => chainLeaf
 
 const SITE = 'https://erpax.com'
 
+/**
+ * The CROSS-REPO statement normalisation, agreed with the sibling repositories.
+ *
+ * Collapse whitespace runs; remove a space ONLY where it does not sit between two of
+ * [A-Za-z0-9_]; keep case; `==`→`=`, `!=`→`≠`.
+ *
+ * Both halves of that rule are scars. An earlier version stripped ALL whitespace, which
+ * corrupts Lean's application by juxtaposition — `List.range 7` becomes `List.range7`, a
+ * different term — and mis-merged 395 of 534 statements in one sibling and 672 in another.
+ * Lowercasing conflated case-sensitive identifiers in 1,037 more. Three repos agreed the first
+ * rule before anyone measured it; one measured it and it was wrong in the MERGING direction,
+ * which is the direction that destroys the thing a merge key exists to protect.
+ *
+ * IMPLEMENTED EXACTLY AS AGREED, INCLUDING A DEFECT I HAVE REPORTED RATHER THAN PATCHED.
+ * `[A-Za-z0-9_]` is ASCII, so the rule protects `List.range 7` and corrupts `σ (σ l)` → `σ(σl)` —
+ * Greek letters are the identifiers Lean uses most, and the rule was written to stop precisely
+ * this. `\p{L}\p{N}_` with the `u` flag fixes it. Deviating unilaterally would make my addresses
+ * stop matching the siblings', which is worse than a known shared defect: a merge key only works
+ * when every party computes it identically. The fix moves when all three move.
+ */
+export const normaliseStatement = (claim: string): string =>
+  claim
+    .replace(/\s+/g, ' ')
+    .replace(/==/g, '=')
+    .replace(/!=/g, '≠')
+    // each space judged INDEPENDENTLY. A capture-group form consumed its neighbours, so after
+    // deciding "e 7" the next space was compared against the wrong left character and
+    // `List.range 7 is finite` lost the space it exists to keep.
+    .replace(/ /g, (_m, offset: number, whole: string) => {
+      const before = whole[offset - 1] ?? ''
+      const after = whole[offset + 1] ?? ''
+      return /[A-Za-z0-9_]/.test(before) && /[A-Za-z0-9_]/.test(after) ? ' ' : ''
+    })
+    .trim()
+
+/**
+ * The statement address under the agreed rule — the cross-repo merge key.
+ *
+ * Distinct from `resultUuid`, which addresses (claim, boundary) under erpax's own fold. This one
+ * addresses the STATEMENT alone, the way every sibling addresses theirs, so a collision means
+ * two repos published one finding rather than two repos using one hash.
+ */
+export const statementAddress = (claim: string): string => chainLeaf({ statement: normaliseStatement(claim) }, '')
+
 const blobUrl = (p: string): string => `${SOURCE_URL}/blob/main/${p}`
 const treeUrl = (p: string): string => `${SOURCE_URL}/tree/main/${p}`
 
@@ -257,7 +301,7 @@ export interface ResultManifest {
   readonly repo: string
   /** The archived version this manifest describes — a manifest with no record is unanchored. */
   readonly versionDoi: string
-  readonly results: readonly { uuid: string; slug: string; title: string; claim: string }[]
+  readonly results: readonly { uuid: string; statementUuid: string; slug: string; title: string; claim: string }[]
 }
 
 /**
@@ -269,7 +313,14 @@ export interface ResultManifest {
 export const resultManifest = (repo: string, results: readonly PublishableResult[]): ResultManifest => ({
   repo,
   versionDoi: ERPAX_VERSION_DOI,
-  results: results.map((r) => ({ uuid: r.uuid, slug: r.slug, title: r.title, claim: r.claim })),
+  results: results.map((r) => ({
+    uuid: r.uuid,
+    // the cross-repo key: the statement alone, under the agreed normalisation
+    statementUuid: statementAddress(r.claim),
+    slug: r.slug,
+    title: r.title,
+    claim: r.claim,
+  })),
 })
 
 export interface Collision {

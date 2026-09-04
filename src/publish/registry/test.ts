@@ -3,7 +3,7 @@ import { paperMetadata } from '@/publish/paper'
 import { mkdirSync, mkdtempSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { assertResultsUnique, citationGraph, duplicateResults, foreignCollisions, paperInputs, publishableResults, relatedIdentifiers, resultManifest, resultUuid, slugOf, type PublishableResult } from '@/publish/registry'
+import { assertResultsUnique, citationGraph, duplicateResults, foreignCollisions, normaliseStatement, paperInputs, publishableResults, relatedIdentifiers, resultManifest, resultUuid, slugOf, statementAddress, type PublishableResult } from '@/publish/registry'
 
 const atom = (law: string | null, boundary: string | null, gate: boolean, extra = ''): Record<string, string> => ({
   'SKILL.md': [
@@ -182,5 +182,50 @@ describe('publish/registry — the wiring publish/paper never had', () => {
     expect(rel.some((x) => x.relation === 'isIdenticalTo' && x.identifier === `urn:uuid:${r.uuid}`)).toBe(true)
     // `scheme` is not a documented Zenodo attribute — identifier · relation · resource_type
     expect(rel.every((x) => !('scheme' in x))).toBe(true)
+  })
+})
+
+describe('publish/registry — the cross-repo statement address', () => {
+  it('keeps the space that Lean application depends on, in ASCII', () => {
+    expect(normaliseStatement('List.range 7 is  finite')).toBe('List.range 7 is finite')
+    expect(normaliseStatement('a == b')).toBe('a=b')
+    expect(normaliseStatement('x != y')).toBe('x≠y')
+    expect(normaliseStatement('foo ( bar )')).toBe('foo(bar)')
+  })
+
+  it('keeps case — lowercasing conflates case-sensitive identifiers', () => {
+    expect(normaliseStatement('Level')).toBe('Level')
+    expect(statementAddress('Level')).not.toBe(statementAddress('level'))
+  })
+
+  it('judges each space independently, not against a consumed neighbour', () => {
+    // a capture-group form consumed its neighbours, so after deciding "e 7" the next space was
+    // compared against the wrong left character and the sentence lost a space it must keep
+    expect(normaliseStatement('List.range 7 is finite')).toContain(' 7 is ')
+  })
+
+  // The DEFECT in the agreed rule, pinned so it cannot be quietly tidied away. `[A-Za-z0-9_]` is
+  // ASCII, so the rule protects `List.range 7` and corrupts `ℤ⁴ with χ` → `ℤ⁴withχ`. Measured
+  // against 832 sibling statements: the ASCII rule and a Unicode-aware one disagree on 211.
+  // Implemented as agreed anyway — a merge key only works when every party computes it
+  // identically, so the fix moves when all parties move.
+  it('reproduces the agreed rule INCLUDING its Unicode defect, deliberately', () => {
+    expect(normaliseStatement('H₁(Σ₂) = ℤ⁴ with χ = −2')).toBe('H₁(Σ₂)=ℤ⁴withχ=−2')
+    // and the fix, so the difference is on the record rather than in a message
+    const unicodeAware = (c: string): string =>
+      c
+        .replace(/\s+/g, ' ')
+        .replace(/ /g, (_m, o: number, w: string) =>
+          /[\p{L}\p{N}_]/u.test(w[o - 1] ?? '') && /[\p{L}\p{N}_]/u.test(w[o + 1] ?? '') ? ' ' : '',
+        )
+        .trim()
+    expect(unicodeAware('H₁(Σ₂) = ℤ⁴ with χ = −2')).toBe('H₁(Σ₂)=ℤ⁴ with χ=−2')
+  })
+
+  it('the manifest carries both addresses — ours and the cross-repo key', () => {
+    const rs = publishableResults(process.cwd())
+    const m = resultManifest('erpax', rs)
+    expect(m.results[0]!.statementUuid).toBe(statementAddress(rs[0]!.claim))
+    expect(m.results[0]!.uuid).not.toBe(m.results[0]!.statementUuid) // different questions
   })
 })
