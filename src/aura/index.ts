@@ -12,6 +12,7 @@
  * @audit one resolver imported everywhere -- zero duplicated walk/norm/isRealDir
  * @see ./scan (the gap report) -- ./propose (the weave queue) -- ../coordinate (derive-from-fs)
  */
+import { trinityPresent } from '@/law/folder/constants'
 import { readdirSync, lstatSync, readFileSync, existsSync } from 'node:fs'
 import { join, dirname, basename, relative } from 'node:path'
 
@@ -78,10 +79,11 @@ export function testCoverage(root: string): {
   const untested: string[] = []
   for (const sk of walkSkills(root)) {
     const dir = dirname(sk)
-    if (!existsSync(join(dir, 'index.ts'))) continue
+    // `index.tsx` is a barrel too — skipping it censused every React atom as having no code.
+    if (!trinityPresent(dir, 'index.ts')) continue
     codeAtoms++
     // tested = a test.ts (the trinity leg) OR any *.test.ts (index.test.ts etc.) in the folder
-    if (readdirSync(dir).some((s) => s === 'test.ts' || s.endsWith('.test.ts'))) tested++
+    if (readdirSync(dir).some((s) => s === 'test.ts' || s === 'test.tsx' || s.endsWith('.test.ts'))) tested++
     else untested.push(leafOf(sk))
   }
   return { codeAtoms, tested, coverage: codeAtoms ? tested / codeAtoms : 1, untested: untested.sort() }

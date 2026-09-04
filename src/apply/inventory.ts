@@ -1,6 +1,7 @@
 /**
  * apply/inventory — walk src/ for session-law coverage (CLI/report only).
  */
+import { trinityPresent } from '@/law/folder/constants'
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
 import { join, relative, dirname } from 'node:path'
 import { ATOM_LEDGER_PATHS } from '@/path/hub'
@@ -61,8 +62,8 @@ const hasNamedLedgerHook = (atomPath: string, cwd: string): boolean => {
 
 const atomHasTrinity = (atomPath: string, cwd: string): boolean =>
   existsSync(join(cwd, SRC, atomPath, 'SKILL.md')) &&
-  existsSync(join(cwd, SRC, atomPath, 'index.ts')) &&
-  existsSync(join(cwd, SRC, atomPath, 'test.ts'))
+  trinityPresent(join(cwd, SRC, atomPath), 'index.ts') &&
+  trinityPresent(join(cwd, SRC, atomPath), 'test.ts')
 
 const diamondSealedTrinity = (diamondPath: string): boolean => {
   if (!existsSync(diamondPath)) return false
@@ -79,7 +80,7 @@ const diamondSealedTrinity = (diamondPath: string): boolean => {
 }
 
 const atomPathHasLedger = (atomPath: string, cwd: string): boolean => {
-  if (!existsSync(join(cwd, SRC, atomPath, 'index.ts'))) return false
+  if (!trinityPresent(join(cwd, SRC, atomPath), 'index.ts')) return false
   return ATOM_LEDGER_PATHS.includes(atomPath) || hasNamedLedgerHook(atomPath, cwd)
 }
 
@@ -100,8 +101,8 @@ export function inventorySessionLaws(cwd: string = process.cwd()): SessionLawInv
   let ledgerNamedHooks = 0
 
   for (const a of atoms) {
-    if (existsSync(join(cwd, SRC, a, 'index.ts'))) withIndex++
-    if (existsSync(join(cwd, SRC, a, 'test.ts'))) withTest++
+    if (trinityPresent(join(cwd, SRC, a), 'index.ts')) withIndex++
+    if (trinityPresent(join(cwd, SRC, a), 'test.ts')) withTest++
     if (atomHasTrinity(a, cwd)) trinity++
     if (hasNamedLedgerHook(a, cwd)) ledgerNamedHooks++
   }

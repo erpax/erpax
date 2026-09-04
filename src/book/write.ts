@@ -1,3 +1,4 @@
+import { trinityPresent } from '@/law/folder/constants'
 import { exactRound } from '@/algebra'
 /**
  * book/write — complete missing volumes: matter + proof + computed faces.
@@ -33,8 +34,8 @@ export interface MissingBooksReport {
 const trinityOf = (cwd: string, atomPath: string) => {
   const base = join(cwd, SRC, atomPath)
   const form = existsSync(join(base, 'SKILL.md')) || existsSync(join(base, 'README.md'))
-  const code = existsSync(join(base, 'index.ts'))
-  const proof = existsSync(join(base, 'test.ts')) || existsSync(join(base, 'index.test.ts'))
+  const code = trinityPresent(base, 'index.ts')
+  const proof = trinityPresent(base, 'test.ts') || existsSync(join(base, 'index.test.ts'))
   const readme = existsSync(join(base, 'README.md')) ? readFileSync(join(base, 'README.md'), 'utf8') : ''
   const sealed = /\[\[seal\]\] `1`/.test(readme)
   return {

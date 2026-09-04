@@ -14,6 +14,7 @@
 import { mirroredAssertions } from '@/rules/mirror'
 import { forgedIdentifiers } from '@/rules/forge'
 import { deadCommands } from '@/rules/command'
+import { blindProbes } from '@/rules/probe'
 import { startProgressHeartbeat } from '@/cli/progress-heartbeat'
 import { execSync } from 'node:child_process'
 import { waveAccountingGapViolations } from '@/accounting/gaps'
@@ -257,6 +258,10 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // ([[rules]]/command). Baseline 0 is a THEOREM: a step that cannot run reports the same green
     // as a step that passed. The confirm hook spawned a moved file and failed open on every edit.
     guardian({ axis: 'command', violations: deadCommands(cwd).length, baseline: 0 }),
+    // probe — a test for a twinned filename that never names the twin ([[rules]]/probe). Four gates
+    // carried this at once: 6 atoms flagged for a barrel's spelling, 29 never judged at all, and
+    // every React atom recorded as having no code. Ratchets from the live 48.
+    guardian({ axis: 'probe', violations: blindProbes(cwd).length, baseline: 48 }),
   ])
   const provenSeal = seal([
     guardian({
