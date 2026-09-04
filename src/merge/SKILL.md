@@ -52,3 +52,51 @@ The answer-path principle: applying this skill *implements* these standards — 
 Naming: the W3C document title is "Activity Streams 2.0" (two words); the namespace token / community usage is "ActivityStreams" (one word). Pick one spelling per banner and keep it consistent. ActivityPub is a federation protocol with no bearing on audit-workflow definitions — do not carry it as a decorative banner on non-federation collections; cite it only where the federation activities are actually emitted.
 
 **Law — Compute the fusion, do NOT assume it** ([[law]]). Merge's power is not in coordination or hand-coded federation logic, but in *deriving* convergence from the facts on disk: the content-addressable [[uuid]], the fractal [[path]] geometry, the [[derive]]d harmony of naming itself. When two instances compute [[identity]] from the same source, they collide by physics, not by registry. The generative act—particles becoming harmonic streams—is only possible because the structure is computed from the ground up, never assumed. This is why [[merge]] is [[proof]]: identical [[payload]] ⊕ [[vitepress]] at identical addresses becomes identical rows in the [[database|db]], without coordination. The [[akashic]] amnesia at [[zeropoint]] is the engine—forget the manual, compute the fusion.
+
+## The algebra, in full
+
+These narratives lived as long docstrings in `index.ts`. They are corpus prose, and the law is to point rather than duplicate — the code now carries one line and a pointer here, so nothing is lost and the file is matter again.
+
+### `collisionClasses`
+
+Prose blocks collision. A unique paragraph shares its content-address with nothing, so N prose bodies fold to N distinct addresses — dedup 0, the incompressible floor. Terse COMPUTED facet-joins collide to ONE address where meaning is shared — that IS the dedup. distinct/total → 1 is prose (no fold), → 0 is fully computed (all collapse); corpus compression is exactly 1 − distinct/total, and it is 0 on prose BY CONSTRUCTION — which is why the 2184 prose atoms never folded while the 231 computed ones did, and why the fold's floor is the seed. Terse, so this rule collides with itself.
+
+### `bind4`
+
+bind4 — the canonical 4-KEY navigation-cross fold: `merge(id, merge(merge(referrer, prev), next))`. This is the exact shape the [[matrix]] `bind` folds a node's identity with its three neighbours (uuid ⊕ parent ⊕ prev ⊕ next), and it was written THREE times — the matrix bind, `chatSeal`, and (nearly) the egress seal — each a private copy of one formula. Stated once here: the four keys of the cross fold to one content-uuid, and flipping ANY of the four changes it, so the result is a 4-connected tamper-evident seal a single linear inversion cannot forge (all four must be inverted at once). Distinct from `foldToRoot` (a balanced Merkle tree over N leaves) — this is the ORDERED cross fold, where the id is the outer key and referrer/prev/next nest inside, matching the matrix's coordinate structure exactly. HONEST BOUNDARY — tamper-EVIDENT, not confidentiality: it detects any change to the four keys, it does not hide them; SHA-256 is 2^128 (Grover halves it), so "unforgeable" is the coverage limit, not literal.
+
+### `Signature`
+
+A 4-uuid signature — the content-address of a claim and its three grounds: what it REDUCES to, the TOOL that computes it, and the PROOF that witnesses it. An unsigned statement rests on AUTHORITY ([[theorem]]: authority is never a step), so it is rejectable. Signing content-addresses every leg, and BOTTOM (the void's address) is the honest signature of a leg that does not exist — so a claim with no real proof signs its proof-leg to ⊥ and is EXPOSED as bare, not disguised. A signature cannot be forged: toUuid is a function of the content, so a signature that does not recompute is a lie, and recomputing it is the local quantum method that exposes it.
+
+### `ErpaxObject`
+
+An OBJECT of the folded algebra — a leaf (atomic content) OR a combination of objects, closed under recursive composition. This is the metrics fold ([[metric]] foldMetrics) generalised: where a metric is the fold of its readings, an object is the fold of its PARTS, each itself an object, all the way down. Like biology — an organism is a combination of organs, each of cells, each of molecules — and identity is compositional and content-addressed at every level: the same composition folds to the same address, so structure dedups by physics. @invariant same composition ⇒ same address (content-addressed, at every level of the recursion) @invariant a combination of one object folds to that object's address (a bag of one thing is that thing)
+
+### `resourceMap`
+
+The RESOURCE MAP of a world of objects — each object's share of total significance. Significance is RELATIVE: a share is against the whole, so with each discovery the map changes — adding an object dilutes every existing share and gives the newcomer its own. That is the law "with each discovery the resource map changes as significance": nothing has an absolute weight, only a weight relative to everything else discovered so far, so the act of discovery redistributes the whole map. Shares sum to 1 (or the map is empty). @invariant shares sum to 1 over a non-empty map · adding an object changes every prior share (significance is relative)
+
+### `birth`
+
+BIRTH — recombine parts into a new object. Dead code can be dissected and new code may be born: the parts of a dead whole live on in a new whole. `birth(dissect(x))` reconstitutes x exactly (dissection is reversible — same composition, same address), while recombining the same parts in a NEW arrangement, or with new parts, is genuinely new (a different address). What is born is new iff its composition is new; a recombination that reproduces an existing object collides to that object (dedup by physics — nothing is born twice). @invariant birth(dissect(combination)) content-addresses the same as the combination (dissection is reversible)
+### `(module)`
+
+merge — the folded algebra's binary operation and everything built on it. The primitive lives in `./fold` and the order law in `./order`; this is the face. tsx src/merge/index.ts
+
+### `objectAddress`
+
+The content-address of an object — the recursion made real: a leaf folds its content to a uuid; a combination folds its parts' addresses to one root (foldToRoot). Change one leaf and the address changes up the whole tree, so the tamper-cost of a composed thing is the fold of the tamper-cost of its parts (biology's own integrity).
+
+### `billOfResources`
+
+The BILL OF RESOURCES to MANIFEST an object — every leaf is an atomic resource, tallied with multiplicity (a resource the composition uses twice must be sourced twice). A discovery is not manifested until its specific resources are: to build the whole you must source every leaf of the recursion, and the bill is the exact demand.
+
+### `billAtScale`
+
+The bill to manifest an object AT SCALE — `units` copies for public, large-scale access need `units×` of each resource. This is what turns a discovery into a mechanic the public can reach: the invention's bill of specific resources, multiplied by the scale it must serve. Manifesting large-scale is a linear demand on every leaf.
+
+### `dissect`
+
+DISSECT — break an object into its immediate parts. Dead code is not waste: a combination that is no longer called can be opened, and its parts (each a live object in its own right) recovered for reuse. A leaf is atomic and dissects to nothing; a combination yields its constituents.
+

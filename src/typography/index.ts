@@ -209,6 +209,8 @@ export const indexEntry = (page: SkillPage): TypographyEntry => ({
 /**
  * Fold a set of content-uuids to ONE 128-bit address (the Merkle root, the same
  * `merge` the matrix uses). Sorted ⇒ order-independent ⇒ deterministic. Empty ⇒ ''.
+ *
+ * @rootKind set
  */
 export const indexRoot = (uuids: readonly string[]): string => {
   const s = [...uuids].sort()
@@ -246,7 +248,11 @@ export function partitionByFolder(index: TypographyIndex, depth = 1): Record<str
   return out
 }
 
-/** The content-address (sub-root) of one folder partition — fold of its entry uuids. */
+/**
+ * The content-address (sub-root) of one folder partition — fold of its entry uuids.
+ *
+ * @rootKind set
+ */
 export const partitionRoot = (entries: readonly TypographyEntry[]): string => indexRoot(entries.map((e) => e.uuid))
 
 // ───────────────────────── analysis ⊕ quantum unified graph ─────────────────────────

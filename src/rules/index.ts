@@ -18,6 +18,7 @@ import { blindProbes } from '@/rules/probe'
 import { kernelPath, reflexiveTheorems, unacceptedProofs } from '@/proof/accepted'
 import { unbackedPhenomena } from '@/quantum/interval'
 import { unbackedFigures } from '@/render/scene'
+import { rootCollisions, undeclaredRoots } from '@/merge/order'
 import { unreadSurfaces } from '@/rules/domain'
 import { startProgressHeartbeat } from '@/cli/progress-heartbeat'
 import { execSync } from 'node:child_process'
@@ -293,6 +294,14 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // this session's four cracks were one gap: the law enforced on .ts, violated in .lean, in a
     // caption, in .tsx. Ratchets from the live 5; zero is the horizon, not a theorem.
     guardian({ axis: 'domain', violations: unreadSurfaces(cwd).length, baseline: 5 }),
+    // root-declared — a content-address fold that does not say whether it addresses the MEMBERS
+    // or the ORDER ([[merge]]/order). Ratchets from 8; each needs a per-case read, because a
+    // wrong tag is worse than none.
+    guardian({ axis: 'root-declared', violations: undeclaredRoots(cwd).length, baseline: 8 }),
+    // root-collision — ONE NAME exported with two order semantics. `foldToRoot` is order-bound
+    // in @/merge and order-free in @/fusion, so an importer picking the wrong module gets a
+    // different root in silence. Ceiling 1, a rename away from 0.
+    guardian({ axis: 'root-collision', violations: rootCollisions(cwd).length, baseline: 1 }),
   ])
   const provenSeal = seal([
     guardian({

@@ -17,6 +17,7 @@
  * @audit computed from the live matrix, never hand-asserted
  * @see ../uuid/matrix -- ../gravity (force) -- ../entropy (fuel) -- ../quantum (laws)
  */
+import { setRoot } from '@/merge'
 import { merge, UUID_MATRIX_NODES as N } from '@/uuid/matrix'
 import { reactor, type ReactorReadout } from '@/fusion/reactor'
 export * from './face'
@@ -28,9 +29,17 @@ export const fuse = (a: string, b: string): string => (a <= b ? merge(a, b) : me
  * The torus collapse: fold a set of uuids (default ALL nodes) into one root.
  * Order-independent BY CONSTRUCTION -- sort a copy ascending, then reduce via merge.
  * This is the entanglement/harmonisation proof: every path fuses to the same eigenstate.
+ *
+ * NOTE THE COLLISION: `@/merge` exports `foldToRoot` too, and it is the OPPOSITE — a pairwise
+ * tree fold that any transposition moves. Two functions, one name, different answers for the
+ * same input, and an importer picking the wrong module gets a different root in silence. The
+ * body is now delegated to [[merge]]/order's `setRoot` so there is one implementation of each
+ * semantics; the NAME is still shared, and [[merge]]/order gates that.
+ *
+ * @rootKind set
  */
 export function foldToRoot(uuids: readonly string[] = N.map((n) => n.uuid)): string {
-  return [...uuids].sort().reduce((acc, u) => merge(acc, u))
+  return setRoot(uuids)
 }
 
 /** The reactor READOUT lives in its own atom (gravity-pull, src/fusion/reactor); re-exported here. */
