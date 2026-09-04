@@ -50,7 +50,10 @@ const carriers = [
   ['CITATION.cff', cff],
   ['.zenodo.json', readFileSync('.zenodo.json', 'utf8')],
   ['README.md', readFileSync('README.md', 'utf8')],
-  ['src/algebra/license.ts', readFileSync('src/algebra/license.ts', 'utf8')],
+  // The corpus's copy is now GENERATED from CITATION.cff (scripts/emit-license.mjs), so checking
+  // it here checks the emission — which is the honest thing to check. The barrel re-exports it and
+  // holds no literal, so reading the barrel would assert nothing.
+  ['src/algebra/license/generated.ts', readFileSync('src/algebra/license/generated.ts', 'utf8')],
 ]
 for (const [name, text] of carriers) {
   if (!text.includes(CONCEPT_DOI)) fail(`${name} does not carry the concept DOI ${CONCEPT_DOI}`)

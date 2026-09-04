@@ -13,6 +13,7 @@
  */
 import { mirroredAssertions } from '@/rules/mirror'
 import { forgedIdentifiers } from '@/rules/forge'
+import { deadCommands } from '@/rules/command'
 import { startProgressHeartbeat } from '@/cli/progress-heartbeat'
 import { execSync } from 'node:child_process'
 import { waveAccountingGapViolations } from '@/accounting/gaps'
@@ -252,6 +253,10 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // forged provenance records. Three existed — all in functions that logged "[ZENODO] Publishing"
     // and made no network call — and their tests asserted the random string's SHAPE.
     guardian({ axis: 'forge', violations: forgedIdentifiers(cwd).length, baseline: 0 }),
+    // command — a path named by something the repo actually RUNS that does not exist
+    // ([[rules]]/command). Baseline 0 is a THEOREM: a step that cannot run reports the same green
+    // as a step that passed. The confirm hook spawned a moved file and failed open on every edit.
+    guardian({ axis: 'command', violations: deadCommands(cwd).length, baseline: 0 }),
   ])
   const provenSeal = seal([
     guardian({
