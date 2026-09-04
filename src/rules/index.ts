@@ -15,6 +15,7 @@ import { mirroredAssertions } from '@/rules/mirror'
 import { forgedIdentifiers } from '@/rules/forge'
 import { deadCommands } from '@/rules/command'
 import { blindProbes } from '@/rules/probe'
+import { kernelPath, unacceptedProofs } from '@/proof/accepted'
 import { startProgressHeartbeat } from '@/cli/progress-heartbeat'
 import { execSync } from 'node:child_process'
 import { waveAccountingGapViolations } from '@/accounting/gaps'
@@ -262,6 +263,16 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // carried this at once: 6 atoms flagged for a barrel's spelling, 29 never judged at all, and
     // every React atom recorded as having no code. Ratchets from the live 48.
     guardian({ axis: 'probe', violations: blindProbes(cwd).length, baseline: 48 }),
+    // proof/accepted — a .lean file the kernel does not accept as proof. Four of five carry `sorry`
+    // or do not compile, under a directory named `verify` that nothing ever ran. Ratchets from 4;
+    // the horizon is 0, because a theorem proved by `sorry` states a claim and proves nothing.
+    // Skipped where no kernel exists — the ATOM's own assert refuses to pass there, but the registry
+    // must still run on a machine without Lean.
+    guardian({
+      axis: 'proof-accepted',
+      violations: kernelPath() === null ? 0 : unacceptedProofs(cwd).length,
+      baseline: 4,
+    }),
   ])
   const provenSeal = seal([
     guardian({
@@ -448,11 +459,20 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   console.log(
     `tightened total: ${snapshot.tightened.length} (stray-ts ${snapshot.strayTs.length} · multi-segment ${snapshot.multiSegment.length} · forbidden-intermediate ${snapshot.forbiddenIntermediate.length} · accounting ${snapshot.accountingStructure.length})`,
   )
-  if (check) {
-    stopHeartbeat()
-    const verdict = assertRulesHold()
-    for (const g of verdict.guardians) console.log((g.ok ? '✓ ' : '✗ ') + g.reason)
-    console.log(verdict.sealed ? '✓ rules sealed' : '✗ rules UNSEALED')
-    process.exit(verdict.sealed ? 0 : 1)
+  // The snapshot above carries 19 axes; the FAIL-CLOSED gate carries 26. Seven were computed and
+  // never displayed, three of them RED — so a run of this file printed 19 green while
+  // `assertRulesHold` said `sealed: false`. A board that shows green over a red gate is the defect
+  // this registry exists to prevent, and it hid its own for as long as nobody passed --check.
+  stopHeartbeat()
+  const verdict = assertRulesHold()
+  const red = verdict.guardians.filter((g) => !g.ok)
+  if (!check) {
+    console.log(`\nfail-closed gate: ${verdict.guardians.length} guardian(s) · ${red.length} RED`)
+    for (const g of red) console.log(`✗ ${g.reason}`)
   }
+  if (check) {
+    for (const g of verdict.guardians) console.log((g.ok ? '✓ ' : '✗ ') + g.reason)
+  }
+  console.log(verdict.sealed ? '✓ rules sealed' : `✗ rules UNSEALED — ${red.length} guardian(s) over ceiling`)
+  process.exit(verdict.sealed ? 0 : 1)
 }

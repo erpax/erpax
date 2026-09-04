@@ -187,8 +187,8 @@ const TSX = 'pnpm exec tsx'
 
 /** key · claim · the command that recomputes the value, from a clean checkout of this repo. */
 const MEASURES: readonly (readonly [string, string, string])[] = [
-  ['gate-axes-green', 'gate axes at or under their ratcheted ceiling', `${TSX} src/rules/index.ts | grep -c '^✓'`],
-  ['gate-axes-red', 'gate axes OVER their ceiling — zero is the only acceptable value', `${TSX} src/rules/index.ts | grep -c '^✗' || true`],
+  ['gate-guardians-green', 'FAIL-CLOSED guardians at or under ceiling (the whole gate, not the 19-axis snapshot)', `${TSX} src/rules/index.ts --check | grep -c '^✓ ' || true`],
+  ['gate-guardians-red', 'fail-closed guardians OVER ceiling — the gate is UNSEALED while this is nonzero', `${TSX} src/rules/index.ts --check | grep -cE '^✗ [a-z][a-z-]*:' || true`],   // the trailing colon excludes the UNSEALED summary line
   ['atoms', 'folders under src/ carrying a SKILL.md', "find src -name SKILL.md | wc -l | tr -d ' '"],
   ['source-files', 'TypeScript files the gates judge', "find src -name '*.ts' -o -name '*.tsx' | wc -l | tr -d ' '"],
   ['mirror', 'assertions restating a literal their own module assigns — a proof that cannot fail', `${TSX} src/rules/mirror/index.ts | head -1 | grep -oE '^mirror — [0-9]+' | grep -oE '[0-9]+'`],
@@ -200,6 +200,7 @@ const MEASURES: readonly (readonly [string, string, string])[] = [
   ['import-tangles', 'strongly connected components of the runtime import graph', `${TSX} src/rules/cycle/index.ts | head -1 | grep -oE '— [0-9]+ runtime' | grep -oE '[0-9]+'`],
   ['unraised-kinds', 'declared failure kinds nothing constructs — a check that cannot fire', `${TSX} src/rules/unraised/index.ts | head -1 | grep -oE '^[0-9]+'`],
   ['echo-paths', 'paths restating a meaning-word', `${TSX} src/rules/echo/index.ts | head -1 | grep -oE '— [0-9]+ path' | grep -oE '[0-9]+'`],
+  ['gate-sealed', 'does the fail-closed gate SEAL — the one figure that is not a count', `${TSX} src/rules/index.ts --check | grep -q 'rules sealed' && echo SEALED || echo UNSEALED`],
   ['boots', 'does the app boot at all — 231 collections or nothing', `${TSX} src/run/load/index.ts >/dev/null 2>&1 && echo OK || echo FAIL`],
 ] as const
 
