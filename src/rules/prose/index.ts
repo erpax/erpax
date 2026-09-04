@@ -21,6 +21,7 @@
  *
  * Composes [[rules]] · [[confirm]] · [[law]].
  */
+import { allFiles, textOf } from '@/syntax/cache'
 import { readFileSync, readdirSync, existsSync, type Dirent } from 'node:fs'
 import { join, relative } from 'node:path'
 
@@ -56,22 +57,15 @@ export interface DeadSymbol {
 /** Every name `src` binds — the evidence a citation must reach. Built once per run. */
 export function definedSymbols(cwd: string = process.cwd()): Set<string> {
   const defined = new Set<string>()
+  // Filtered from the ONE shared walk ([[syntax]]/cache); populations diffed 7,410 = 7,410 first.
   const walk = (dir: string): void => {
-    let entries: Dirent[]
-    try {
-      entries = readdirSync(dir, { withFileTypes: true })
-    } catch {
-      return
-    }
-    for (const e of entries) {
-      const p = join(dir, e.name)
-      if (e.isDirectory()) {
-        if (e.name !== 'node_modules' && e.name !== 'worktrees') walk(p)
-        continue
-      }
-      if (!/\.tsx?$/.test(e.name) || GENERATED.test(e.name)) continue
+    const root = dir.endsWith('/src') ? dir.slice(0, -4) : dir
+    for (const p of allFiles(root)) {
+      const name = p.slice(p.lastIndexOf('/') + 1)
+      if (p.includes('/worktrees/')) continue
+      if (!/\.tsx?$/.test(name) || GENERATED.test(name)) continue
       try {
-        for (const m of readFileSync(p, 'utf8').matchAll(DEFINE_RE)) defined.add(m[1]!)
+        for (const m of textOf(p).matchAll(DEFINE_RE)) defined.add(m[1]!)
       } catch {
         /* unreadable — not evidence either way */
       }

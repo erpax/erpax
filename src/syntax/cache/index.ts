@@ -15,6 +15,7 @@ import { join } from 'node:path'
 const texts = new Map<string, string>()
 const asts = new Map<string, ts.SourceFile>()
 const walks = new Map<string, readonly string[]>()
+const kinds = new Map<string, readonly string[]>()
 
 /** File bytes, read at most once per process. */
 export function textOf(file: string): string {
@@ -57,13 +58,15 @@ const MATCH: Readonly<Record<Corpus, (name: string) => boolean>> = {
   all: () => true,
 }
 
-/** Every file of a kind under `src`, walked once per (root, kind). Sorted, so two reports diff. */
-export function corpusFiles(cwd: string = process.cwd(), kind: Corpus = 'source'): readonly string[] {
+/**
+ * EVERY file under `src`, walked once per root — the one traversal every gate filters.
+ *
+ * Sorted, so two gates reading one tree produce diffable reports.
+ */
+export function allFiles(cwd: string = process.cwd()): readonly string[] {
   const root = join(cwd, 'src')
-  const key = `${kind} ${root}`
-  const hit = walks.get(key)
+  const hit = walks.get(root)
   if (hit !== undefined) return hit
-  const match = MATCH[kind]
   const out: string[] = []
   const walk = (d: string): void => {
     let entries: import('node:fs').Dirent[]
@@ -73,15 +76,34 @@ export function corpusFiles(cwd: string = process.cwd(), kind: Corpus = 'source'
       return
     }
     for (const e of entries) {
-      if (e.name.startsWith('.') || e.name === 'node_modules') continue
+      // Only `node_modules` is universal. DOTFILES ARE KEPT: skipping them here looked harmless —
+      // no `.ts` file starts with a dot — but [[rules]]/reference walks every file regardless of
+      // extension, and dropping two `.proposals.json` would have moved its count. A shared walk
+      // must be the true superset; every narrowing belongs to the gate that wants it.
+      if (e.name === 'node_modules') continue
       const p = join(d, e.name)
+      // a SYMLINKED directory is not recursed into: `isDirectory()` is false for a link, which is
+      // the same behaviour the gates' own walks had by explicitly skipping symlinks
       if (e.isDirectory()) walk(p)
-      else if (match(e.name)) out.push(p)
+      else out.push(p)
     }
   }
   walk(root)
   out.sort()
-  walks.set(key, out)
+  walks.set(root, out)
+  return out
+}
+
+/** A named population, filtered from the one walk — and memoised, so a repeat call costs nothing. */
+export function corpusFiles(cwd: string = process.cwd(), kind: Corpus = 'source'): readonly string[] {
+  const all = allFiles(cwd)
+  if (kind === 'all') return all
+  const key = `${kind} ${join(cwd, 'src')}`
+  const hit = kinds.get(key)
+  if (hit !== undefined) return hit
+  const match = MATCH[kind]
+  const out = all.filter((f) => match(f.slice(f.lastIndexOf('/') + 1)))
+  kinds.set(key, out)
   return out
 }
 
@@ -102,4 +124,5 @@ export function clearCache(): void {
   texts.clear()
   asts.clear()
   walks.clear()
+  kinds.clear()
 }

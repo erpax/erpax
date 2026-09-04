@@ -1,30 +1,9 @@
 /**
  * confine — 231 collections are handled like plasma: by the FIELD, never by holding every particle.
  *
- * You do not handle plasma by touching it; you confine it in a magnetic field. You do not handle 231
- * collections by materialising all of them — a static `import * as x from '@/collections'`, then
- * `Object.values(x)` at module scope. That is holding every particle, and it is exactly what COLLAPSED THE
- * BOOT ([[run]]/load): a collection factory reaching the agent's tool-defs, which materialised every
- * collection, which imported the factory — `fixed/assets:34` ran `createAccountingCollection` at module top
- * level while the factory was still initialising ([[rules]]/cycle). TDZ, in every loader.
- *
- * The fix was confinement: read the RUNNING instance — `req.payload.config.collections`, the field that
- * already contains them — instead of importing each. This gate makes that permanent: hand-written code may
- * not materialise the whole collection registry outside the config. Handle the field, not the particles.
- *
- * WHAT IS THE BOTTLE, not a touch — the payload config and the barrel it registers (`payload.config.ts`,
- * `config/app/collections`, `collections/index`) ARE the confinement; they are ALLOWED to hold every
- * collection, because that is their one job. A barrel's own TEST is allowed too — it exists to check the
- * barrel. Everything else reads the field.
- *
- * PARSED, not matched — the plasma-touch detector this replaces flagged a COMMENT in tool-defs describing the
- * old code (`import * as allCollections` in a docstring). A comment is data ([[syntax]]); only a real
- * `ts.ImportDeclaration` namespace-importing `@/collections` is a touch. The gate reads the grammar.
- *
  * @standard ISO/IEC 25010:2023 §5.6.2 — modularity: the whole is confined, not held
- *
- * Composes [[rules]]/cycle · [[syntax]] · [[law]].
  */
+import { allFiles, astOf, textOf } from '@/syntax/cache'
 import ts from 'typescript'
 import { readdirSync, readFileSync, type Dirent } from 'node:fs'
 import { join } from 'node:path'
@@ -45,29 +24,22 @@ export interface PlasmaTouch {
 /** Every place hand-written code namespace-imports `@/collections` outside the bottle. Parsed, not matched. */
 export function plasmaTouches(cwd: string = process.cwd()): PlasmaTouch[] {
   const out: PlasmaTouch[] = []
+  // Filtered from the ONE shared walk ([[syntax]]/cache). The parse is shared too: `rel` was passed
+  // as the SourceFile's name and only the reported `file` uses it, which is set explicitly below.
   const walk = (dir: string): void => {
-    let entries: Dirent[]
-    try {
-      entries = readdirSync(dir, { withFileTypes: true })
-    } catch {
-      return
-    }
-    for (const e of entries) {
-      const p = join(dir, e.name)
-      if (e.isDirectory()) {
-        if (e.name !== 'node_modules' && e.name !== 'worktrees') walk(p)
-        continue
-      }
+    void dir
+    for (const p of allFiles(cwd)) {
+      if (p.includes('/worktrees/')) continue
       const rel = p.slice(cwd.length + 1).replace(/\\/g, '/')
-      if (!/\.tsx?$/.test(e.name) || GENERATED.test(rel) || BOTTLE.test(rel)) continue
+      if (!/\.tsx?$/.test(p) || GENERATED.test(rel) || BOTTLE.test(rel)) continue
       let text: string
       try {
-        text = readFileSync(p, 'utf8')
+        text = textOf(p)
       } catch {
         continue
       }
       if (!text.includes('@/collections')) continue
-      const src = ts.createSourceFile(rel, text, ts.ScriptTarget.ESNext, true)
+      const src = astOf(p, text)
       const visit = (n: ts.Node): void => {
         if (
           ts.isImportDeclaration(n) &&

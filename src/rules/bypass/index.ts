@@ -30,6 +30,7 @@
  * @standard ISO/IEC 25010:2023 §5.4 — security: confidentiality by default
  * @see ./SKILL.md -- ../../rules -- ../unraised
  */
+import { allFiles, textOf } from '@/syntax/cache'
 import { readdirSync, readFileSync, type Dirent } from 'node:fs'
 import { join } from 'node:path'
 
@@ -61,23 +62,18 @@ export function bypassSites(cwd: string = process.cwd()): readonly BypassSite[] 
   const out: BypassSite[] = []
   const root = join(cwd, REQUEST_ROOT)
 
+  // Only the request-reachable tree, filtered from the ONE shared walk ([[syntax]]/cache);
+  // populations diffed 44 = 44.
   const walk = (dir: string): void => {
-    let entries: Dirent[]
-    try {
-      entries = readdirSync(dir, { withFileTypes: true })
-    } catch {
-      return
-    }
-    for (const entry of entries) {
-      const p = join(dir, entry.name)
-      if (entry.isDirectory()) {
-        if (!entry.name.startsWith('.') && entry.name !== 'node_modules') walk(p)
-        continue
-      }
-      if (!/\.(ts|tsx)$/.test(entry.name) || /\.test\.|(^|\/)test\./.test(entry.name)) continue
+    const prefix = `${dir}/`
+    for (const p of allFiles(cwd)) {
+      if (!p.startsWith(prefix)) continue
+      const name = p.slice(p.lastIndexOf('/') + 1)
+      if (/(^|\/)\./.test(p.slice(dir.length))) continue
+      if (!/\.(ts|tsx)$/.test(name) || /\.test\.|(^|\/)test\./.test(name)) continue
       let text: string
       try {
-        text = readFileSync(p, 'utf8')
+        text = textOf(p)
       } catch {
         continue
       }

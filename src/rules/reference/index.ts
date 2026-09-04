@@ -23,6 +23,7 @@
  *
  * Composes [[rules]] · [[confirm]] · [[law]].
  */
+import { allFiles, textOf } from '@/syntax/cache'
 import { readFileSync, existsSync, readdirSync, type Dirent } from 'node:fs'
 import { commentsOf } from '@/syntax'
 import { join, relative } from 'node:path'
@@ -91,7 +92,7 @@ export function deadReferencesIn(files: readonly string[], cwd: string = process
     if (!SCANNED.test(p) || GENERATED.test(p)) continue
     let text: string
     try {
-      text = readFileSync(p, 'utf8')
+      text = textOf(p)
     } catch {
       continue
     }
@@ -105,25 +106,10 @@ export function deadReferencesIn(files: readonly string[], cwd: string = process
 }
 
 export function deadReferences(cwd: string = process.cwd()): DeadReference[] {
-  const root = join(cwd, 'src')
-  const files: string[] = []
-  const walk = (dir: string): void => {
-    let entries: Dirent[]
-    try {
-      entries = readdirSync(dir, { withFileTypes: true })
-    } catch {
-      return
-    }
-    for (const e of entries) {
-      const p = join(dir, e.name)
-      if (e.isDirectory()) {
-        if (e.name !== 'node_modules' && e.name !== 'worktrees') walk(p)
-        continue
-      }
-      files.push(p)
-    }
-  }
-  walk(root)
+  // EVERY file, whatever its extension — a dead `src/…` pointer is as real in a JSON as in prose.
+  // Filtered from the ONE shared walk ([[syntax]]/cache); populations diffed 20,953 = 20,953, which
+  // is why that walk keeps dotfiles: two `.proposals.json` would otherwise have gone unjudged.
+  const files = allFiles(cwd).filter((f) => !f.includes('/worktrees/')) as string[]
   return deadReferencesIn(files, cwd)
 }
 

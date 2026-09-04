@@ -2395,9 +2395,9 @@ src/rules/bypass/index.ts:30: * @standard ISO/IEC 25010:2023 §5.4 — security:
 src/rules/canonical/index.ts:17: * @standard ISO/IEC 25010:2023 §5.5 reusability — use the dependency or drop it
 src/rules/collapse/index.ts:32: * @standard RFC 9562 §5.8 — content-address (same content, same address)
 src/rules/compatibility/index.ts:17: * @standard ISO/IEC 25010:2023 §5.3 compatibility — co-existence with the framework namespace
-src/rules/confine/index.ts:24: * @standard ISO/IEC 25010:2023 §5.6.2 — modularity: the whole is confined, not held
-src/rules/cycle/index.ts:33: * @standard ISO/IEC 25010:2023 §5.6.2 modularity
-src/rules/echo/index.ts:19: * @standard ISO/IEC 25010:2023 §5.6 — modularity/understandability: a name conveys its meaning
+src/rules/confine/index.ts:4: * @standard ISO/IEC 25010:2023 §5.6.2 — modularity: the whole is confined, not held
+src/rules/cycle/index.ts:34: * @standard ISO/IEC 25010:2023 §5.6.2 modularity
+src/rules/echo/index.ts:4: * @standard ISO/IEC 25010:2023 §5.6 — modularity/understandability: a name conveys its meaning
 src/rules/invisible/index.ts:28: * @standard ISO/IEC 25010:2023 §5.6 maintainability — one source, addressable
 src/rules/prose/index.ts:20: * @standard ISO-19011:2018 §6.4 — audit evidence: the citation must lead to the evidence
 src/rules/reference/index.ts:20: * @standard ISO-19011:2018 §6.4 audit-evidence — the citation must lead to the evidence

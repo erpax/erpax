@@ -1,26 +1,9 @@
 /**
  * echo — a path that restates itself has not folded its meaning.
  *
- * The law: every word matters in a path, and the path IS the message ([[path]]). If a meaning-word repeats
- * within one path, the path is saying the same thing twice — the meaning is not folded, and it cannot be
- * immediately realised, because the reader hits the same word and learns nothing new. That is the "unfolded
- * linear logic" this corpus already names (`ecommerce/configure/ecommerce/plugin`), measured.
- *
- * The standout is real and deep: `compliance/frameworks/compliance/requirements/compliance/gaps` — the word
- * `compliance` THREE times. The path should fold to what each segment ADDS: frameworks · requirements · gaps
- * are the concepts; `compliance` is the shared root said once, or the atom's home, never re-stamped at every
- * level.
- *
- * WHAT IT MUST NOT FLAG — the framework's namespace is not this corpus's ([[run]]/load learned it the hard
- * way: `src/pages` collided with Next's reserved dir). Next reserves `page.tsx`, `route.ts`, `layout.tsx`
- * under `app/`, so `app/posts/page/page.tsx` repeats `page` by the FRAMEWORK's rule, not the corpus's — the
- * `app/` tree is excluded, exactly as the one-word law cannot see a framework-owned name.
- *
  * @standard ISO/IEC 25010:2023 §5.6 — modularity/understandability: a name conveys its meaning
- *
- * Composes [[path]] · [[rules]] · [[law]].
  */
-import { readdirSync, type Dirent } from 'node:fs'
+import { allFiles } from '@/syntax/cache'
 import { join } from 'node:path'
 
 /** Canonical atom path. */
@@ -57,28 +40,16 @@ export interface Echo {
  * @invariant the app/ tree is NOT judged — a repeated `page`/`route` there is Next's rule, not the corpus's
  */
 export function echoes(cwd: string = process.cwd()): Echo[] {
+  // Filtered from the ONE shared walk ([[syntax]]/cache); populations diffed 7,340 = 7,340 first.
   const out: Echo[] = []
-  const walk = (dir: string): void => {
-    let entries: Dirent[]
-    try {
-      entries = readdirSync(dir, { withFileTypes: true })
-    } catch {
-      return
-    }
-    for (const e of entries) {
-      const p = join(dir, e.name)
-      if (e.isDirectory()) {
-        if (e.name !== 'node_modules' && e.name !== 'worktrees') walk(p)
-        continue
-      }
-      const rel = p.slice(cwd.length + 1).replace(/\\/g, '/')
-      if (!/\.tsx?$/.test(e.name) || GENERATED.test(rel) || FRAMEWORK.test(rel)) continue
-      const counts = new Map<string, number>()
-      for (const w of pathWords(rel)) counts.set(w, (counts.get(w) ?? 0) + 1)
-      for (const [word, times] of counts) if (times > 1) out.push({ path: rel, word, times })
-    }
+  for (const p of allFiles(cwd)) {
+    if (p.includes('/worktrees/')) continue
+    const rel = p.slice(cwd.length + 1).replace(/\\/g, '/')
+    if (!/\.tsx?$/.test(p) || GENERATED.test(rel) || FRAMEWORK.test(rel)) continue
+    const counts = new Map<string, number>()
+    for (const w of pathWords(rel)) counts.set(w, (counts.get(w) ?? 0) + 1)
+    for (const [word, times] of counts) if (times > 1) out.push({ path: rel, word, times })
   }
-  walk(join(cwd, 'src'))
   return out.sort((a, b) => b.times - a.times)
 }
 

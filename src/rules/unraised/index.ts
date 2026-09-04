@@ -3,7 +3,8 @@
  *
  *   tsx src/rules/unraised/index.ts
  */
-import { readFileSync, readdirSync } from 'node:fs'
+import { allFiles, astOf, textOf } from '@/syntax/cache'
+import { readFileSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import ts from 'typescript'
 
@@ -16,38 +17,35 @@ export interface Unraised {
   readonly where: string
 }
 
-const SKIP_DIRS = new Set([
-  'node_modules',
-  'dist',
-  '.next',
-  'coverage',
-  'test-results',
-  'playwright-report',
-  '_report',
-  'migrations',
-])
+/**
+ * Not this corpus's matter — as PATH tests, since the traversal is shared.
+ *
+ * The dot test is this gate's alone: it was the only walk that skipped dotted entries, and the
+ * shared walk keeps them because [[rules]]/reference judges every file regardless of extension.
+ */
+const SKIP_PATH = /\/(dist|coverage|test-results|playwright-report|_report|migrations)\//
+const DOTTED = /(^|\/)\./
 
 /** Generated faces restate every symbol — they are not evidence that a kind is raised. */
 const GENERATED = /payload-types\.ts$|skills\.index\.ts$|\.d\.ts$/
 
+/**
+ * Every source file this gate judges, filtered from the ONE shared walk ([[syntax]]/cache).
+ *
+ * The predicate is the walk's, transcribed: the same extensions, the same generated exclusions, and
+ * the same eight skipped directories — now tested against the path rather than the entry name,
+ * because the traversal is no longer this gate's. Verified by diffing both populations file by
+ * file: 7,402 = 7,402, empty in both directions.
+ */
 export function sourceFiles(root: string): string[] {
-  const out: string[] = []
-  const walk = (dir: string): void => {
-    let ents
-    try {
-      ents = readdirSync(dir, { withFileTypes: true })
-    } catch {
-      return
-    }
-    for (const e of ents) {
-      if (e.isSymbolicLink() || e.name.startsWith('.') || SKIP_DIRS.has(e.name)) continue
-      const p = join(dir, e.name)
-      if (e.isDirectory()) walk(p)
-      else if (/\.tsx?$/.test(e.name) && !GENERATED.test(p)) out.push(p)
-    }
-  }
-  walk(join(root, 'src'))
-  return out
+  const src = join(root, 'src')
+  return allFiles(root).filter(
+    (f) =>
+      /\.tsx?$/.test(f) &&
+      !GENERATED.test(f) &&
+      !SKIP_PATH.test(f.slice(src.length)) &&
+      !DOTTED.test(f.slice(src.length)),
+  ) as string[]
 }
 
 /**
@@ -57,7 +55,7 @@ export function sourceFiles(root: string): string[] {
  * TypeScript is a guess. The corpus has paid for that mistake in every gate it built on a pattern.
  */
 export function declaredKinds(file: string, text: string): { kind: string; member: string }[] {
-  const sf = ts.createSourceFile(file, text, ts.ScriptTarget.Latest, true)
+  const sf = astOf(file, text)
   const out: { kind: string; member: string }[] = []
   const visit = (n: ts.Node): void => {
     if (ts.isTypeAliasDeclaration(n) && /Kind$/.test(n.name.text) && ts.isUnionTypeNode(n.type)) {
@@ -81,7 +79,7 @@ export function declaredKinds(file: string, text: string): { kind: string; membe
  * reports green forever — the false negative that is worse than any false positive.
  */
 export function constructedLiterals(file: string, text: string): Set<string> {
-  const sf = ts.createSourceFile(file, text, ts.ScriptTarget.Latest, true)
+  const sf = astOf(file, text)
   const out = new Set<string>()
   const visit = (n: ts.Node): void => {
     if (ts.isStringLiteral(n) && !ts.isLiteralTypeNode(n.parent)) out.add(n.text)

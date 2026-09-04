@@ -1,3 +1,4 @@
+import { allFiles, astOf, textOf } from '@/syntax/cache'
 import { exactMin } from '@/algebra'
 /**
  * cycle — an import loop is a lie the module graph tells at runtime.
@@ -59,7 +60,7 @@ const IS_TEST = /(?:^|[/.])test\.tsx?$|\.test\.tsx?$/
  * prose about banners). The parser IS the language definition — the answer stops being a guess.
  */
 const edgeSpecifiers = (file: string, text: string): string[] => {
-  const src = ts.createSourceFile(file, text, ts.ScriptTarget.ESNext, true)
+  const src = astOf(file, text)
   const out: string[] = []
   const visit = (n: ts.Node): void => {
     if (ts.isImportDeclaration(n)) {
@@ -102,7 +103,7 @@ const resolveSpec = (cwd: string, from: string, spec: string): string | null => 
 export function importsOf(file: string, cwd: string = process.cwd()): string[] {
   let text: string
   try {
-    text = readFileSync(file, 'utf8')
+    text = textOf(file)
   } catch {
     return []
   }
@@ -114,27 +115,16 @@ export function importsOf(file: string, cwd: string = process.cwd()): string[] {
   return [...new Set(out)]
 }
 
-const sources = (root: string): string[] => {
-  const out: string[] = []
-  const walk = (dir: string): void => {
-    let entries: Dirent[]
-    try {
-      entries = readdirSync(dir, { withFileTypes: true })
-    } catch {
-      return
-    }
-    for (const e of entries) {
-      const p = join(dir, e.name)
-      if (e.isDirectory()) {
-        if (e.name !== 'node_modules' && e.name !== 'worktrees') walk(p)
-        continue
-      }
-      if (/\.tsx?$/.test(e.name) && !GENERATED.test(p) && !IS_TEST.test(p)) out.push(p)
-    }
-  }
-  walk(root)
-  return out
-}
+/**
+ * Every runtime source, filtered from the ONE shared walk ([[syntax]]/cache).
+ *
+ * Same extensions, same generated exclusions, same test exclusion, and `worktrees` still skipped —
+ * as a path test now that the traversal is shared. Populations diffed file by file: 5,535 = 5,535.
+ */
+const sources = (root: string): string[] =>
+  allFiles(root.endsWith('/src') ? root.slice(0, -4) : root).filter(
+    (f) => /\.tsx?$/.test(f) && !GENERATED.test(f) && !IS_TEST.test(f) && !f.includes('/worktrees/'),
+  ) as string[]
 
 /** A tangle: a set of files that can all reach each other. Every file in it lies on some import loop. */
 export type Cycle = readonly string[]
@@ -268,7 +258,7 @@ const importedBindings = (code: string): Map<string, string> => {
 export function topLevelUses(file: string, cwd: string = process.cwd(), within?: ReadonlySet<string>): TopLevelUse[] {
   let text: string
   try {
-    text = readFileSync(file, 'utf8')
+    text = textOf(file)
   } catch {
     return []
   }

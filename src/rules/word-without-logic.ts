@@ -8,6 +8,23 @@ import { exactRound } from '@/algebra'
  * @see ./word-matter — ../law/folder/word — ../corpus/words
  */
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
+/**
+ * Existence and bytes, straight from the filesystem — NOT through [[syntax]]/cache, and measured.
+ *
+ * This gate is the registry's most expensive (≈16s of ~30s) and asks five or six existence
+ * questions per atom across 3,462 atoms, so routing it through the shared walk looked obviously
+ * right: a set lookup instead of a syscall. A/B in fresh processes, same conditions:
+ *
+ *     raw filesystem     16.2s · 23.2s
+ *     shared cache       28.8s · 31.6s
+ *
+ * It is ~1.6× SLOWER cached. The gate touches thousands of distinct large files exactly once each —
+ * every atom's README and SKILL — so there is nothing to reuse, and retaining all of it costs more
+ * in live-set and GC pressure than the syscalls it avoids. A cache pays where a file is read MORE
+ * THAN ONCE; here it is read once, and the second reader never comes.
+ */
+const here = (p: string): boolean => existsSync(p)
+const read = (p: string): string => readFileSync(p, 'utf8')
 import { join } from 'node:path'
 import { listAtomPaths } from './tightened-scans'
 
@@ -67,13 +84,13 @@ const atomDir = (atomPath: string, cwd: string): string => join(cwd, SRC, atomPa
 
 const countReadmeWords = (dir: string): number => {
   const readme = join(dir, 'README.md')
-  if (!existsSync(readme)) return 0
-  return readFileSync(readme, 'utf8').split(/\s+/).filter(Boolean).length
+  if (!here(readme)) return 0
+  return read(readme).split(/\s+/).filter(Boolean).length
 }
 
 const countLinesOfCode = (filePath: string): number => {
-  if (!existsSync(filePath)) return 0
-  const lines = readFileSync(filePath, 'utf8').split('\n')
+  if (!here(filePath)) return 0
+  const lines = read(filePath).split('\n')
   let n = 0
   let block = false
   for (const raw of lines) {
@@ -150,15 +167,15 @@ export function isOrphanReexportOnly(content: string, opts?: { readonly hasChild
 
 export function hasVocabularyException(dir: string): boolean {
   const skill = join(dir, 'SKILL.md')
-  if (!existsSync(skill)) return false
-  const fm = readFileSync(skill, 'utf8').match(/^---\n([\s\S]*?)\n---/)?.[1] ?? ''
+  if (!here(skill)) return false
+  const fm = read(skill).match(/^---\n([\s\S]*?)\n---/)?.[1] ?? ''
   return /vocabularyException:\s*true/i.test(fm) || /humanGate:\s*vocabulary/i.test(fm)
 }
 
 const skillReferencesBehavior = (dir: string): boolean => {
   const skill = join(dir, 'SKILL.md')
-  if (!existsSync(skill)) return false
-  const body = readFileSync(skill, 'utf8').replace(/^---[\s\S]*?---\n?/, '')
+  if (!here(skill)) return false
+  const body = read(skill).replace(/^---[\s\S]*?---\n?/, '')
   return BEHAVIOR_PROSE_RE.test(body)
 }
 
@@ -172,7 +189,7 @@ const skillReferencesBehavior = (dir: string): boolean => {
 const barrelIn = (dir: string): string | null => {
   for (const n of ['index.ts', 'index.tsx']) {
     const p = join(dir, n)
-    if (existsSync(p)) return p
+    if (here(p)) return p
   }
   return null
 }
@@ -180,7 +197,7 @@ const barrelIn = (dir: string): string | null => {
 const proofIn = (dir: string): string | null => {
   for (const n of ['test.ts', 'test.tsx']) {
     const p = join(dir, n)
-    if (existsSync(p)) return p
+    if (here(p)) return p
   }
   return null
 }
@@ -188,7 +205,7 @@ const proofIn = (dir: string): string | null => {
 const parseTestUseCases = (dir: string): string[] => {
   const test = proofIn(dir)
   if (!test) return []
-  const content = readFileSync(test, 'utf8')
+  const content = read(test)
   return [...content.matchAll(/(?:it|test)\(\s*['"`]([^'"`]+)['"`]/g)]
     .map((m) => m[1]!.trim())
     .filter(Boolean)
