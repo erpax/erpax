@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { priorArt, paperTex, runPapers } from './index'
+import { paperMetadata, paperTex, priorArt, referencesOf, runPapers } from './index'
 
 const fakeFetch = (body: unknown, ok = true, status = 200): typeof fetch =>
   (async () => ({ ok, status, json: async () => body })) as unknown as typeof fetch
@@ -94,5 +94,67 @@ describe('publish/paper — the runner writes only for the one status that warra
   it('NONE writes a draft, with the caveat inside it', async () => {
     const [r] = await runPapers([claim], fakeFetch({ hits: { hits: [] } }))
     expect(r!.tex).toContain('No claim of novelty is made here')
+  })
+})
+
+describe('publish/paper — links, references and the bold claim', () => {
+  const input = {
+    claim: 'An involution admits no resistance',
+    atomPath: 'duality/mirror',
+    contentUuid: 'b78482f7-bc7e-88bf-979b-ee11c28aa353',
+    boundary: 'Theorems for this carrier, closed by exhaustion — not a claim about infinite S.',
+    priorArt: { status: 'none' as const, query: 'involution parity', hits: [], caveat: '' },
+  }
+
+  it('reads references from the ATOM, so a paper cannot cite what the code never claimed', () => {
+    const refs = referencesOf('duality/mirror')
+    expect(refs.length).toBeGreaterThan(0)
+    expect(refs.some((r) => /RFC 9562/.test(r.label))).toBe(true)
+  })
+
+  it('every emitted URL is bare — a section number in an href is a link that 404s', () => {
+    for (const a of ['duality/mirror', 'rules/forge', 'rules/mirror', 'metric/face']) {
+      for (const r of referencesOf(a)) {
+        if (r.url === null) continue
+        expect(r.url, `${a}: ${r.url}`).toMatch(/^https:\/\/[^\s]+$/)
+        expect(r.url).not.toMatch(/§|\s/)
+      }
+    }
+  })
+
+  it('states the claim in BOLD, twice — abstract and body', () => {
+    const tex = paperTex(input)
+    expect(tex).toContain(`\\textbf{${input.claim}}`)
+    expect((tex.match(/\\textbf\{An involution/g) ?? []).length).toBe(2)
+  })
+
+  it('surfaces the prior-art STATUS in bold, and refuses to call "none" novelty', () => {
+    const tex = paperTex(input)
+    expect(tex).toContain('\\textbf{Prior art: no records returned}')
+    expect(tex).toContain('search result, not a finding of novelty')
+    expect(tex.toLowerCase()).not.toContain('is novel')
+  })
+
+  it('carries PDF metadata a search engine reads', () => {
+    const tex = paperTex(input)
+    expect(tex).toContain('\\usepackage{hyperref}')
+    expect(tex).toContain('pdfkeywords=')
+    expect(tex).toContain('pdftitle=')
+  })
+
+  it('the deposition relates the paper to its source, its parent record and its standards', () => {
+    const m = paperMetadata(input) as { related_identifiers: { relation: string; identifier: string }[] }
+    const rel = (r: string) => m.related_identifiers.filter((x) => x.relation === r)
+    expect(rel('isSupplementTo').map((x) => x.identifier)).toContain('https://github.com/erpax/erpax')
+    expect(rel('isPartOf')).toHaveLength(1)
+    expect(rel('references').length).toBeGreaterThan(0)
+    // an orphan deposit is discoverable only by someone who already knows it exists
+    expect(m.related_identifiers.length).toBeGreaterThanOrEqual(4)
+  })
+
+  it('the deposition description leads with the claim and carries the boundary', () => {
+    const m = paperMetadata(input) as { description: string }
+    expect(m.description).toContain(`<strong>${input.claim}</strong>`)
+    expect(m.description).toContain('What this does not prove')
   })
 })

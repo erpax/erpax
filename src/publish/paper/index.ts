@@ -96,6 +96,103 @@ export interface PaperInput {
   readonly priorArt?: PriorArtVerdict
 }
 
+
+/** A standard the atom itself cites, with a resolvable home where one is known. */
+export interface Reference {
+  readonly label: string
+  readonly url: string | null
+}
+
+/**
+ * Where a standards body actually publishes. DECLARED, because a resolvable home is a fact about
+ * the world — and a link that 404s is worse than no link ([[rules]]/reference).
+ */
+const STANDARD_HOMES: readonly (readonly [RegExp, string])[] = [
+  [/RFC\s*(\d+)/i, 'https://www.rfc-editor.org/rfc/rfc$1'],
+  [/ISO\/IEC\s*25010/i, 'https://www.iso.org/standard/78176.html'],
+  [/ISO\s*19011/i, 'https://www.iso.org/standard/70017.html'],
+  [/ISO\s*26324/i, 'https://www.iso.org/standard/81599.html'],
+  [/ISO\s*3166/i, 'https://www.iso.org/iso-3166-country-codes.html'],
+  [/ISO\s*4217/i, 'https://www.iso.org/iso-4217-currency-codes.html'],
+  [/ISO\s*8601/i, 'https://www.iso.org/iso-8601-date-and-time-format.html'],
+  [/ISO\/IEC\s*27001/i, 'https://www.iso.org/standard/27001'],
+  [/WCAG/i, 'https://www.w3.org/TR/WCAG22/'],
+  [/WAI-ARIA/i, 'https://www.w3.org/TR/wai-aria-1.2/'],
+  [/EN[-\s]?16931/i, 'https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eInvoicing'],
+  [/SOX/i, 'https://www.govinfo.gov/app/details/PLAW-107publ204'],
+  [/Наредба/i, 'https://nra.bg'],
+]
+
+/**
+ * The standards an atom cites, parsed from its own SKILL — never a list typed beside the paper.
+ *
+ * A paper's references must be the atom's references, or the two drift and the paper cites
+ * something the code never claimed ([[rules]]/drift).
+ */
+export function referencesOf(atomPath: string, cwd: string = process.cwd()): Reference[] {
+  let body: string
+  try {
+    body = readFileSync(join(cwd, 'src', atomPath, 'SKILL.md'), 'utf8')
+  } catch {
+    return []
+  }
+  const section = /##\s+Standards\s*\n([\s\S]*?)(?:\n##\s|$)/.exec(body)?.[1] ?? ''
+  const out: Reference[] = []
+  for (const line of section.split('\n')) {
+    const m = /^-\s+\*\*(.+?)\*\*\s*(?:—|--)?\s*(.*)$/.exec(line.trim())
+    if (!m) continue
+    const label = `${m[1]!.trim()}${m[2]!.trim() ? ` — ${m[2]!.trim()}` : ''}`
+    const home = STANDARD_HOMES.find(([re]) => re.test(m[1]!))
+    // Substitute the MATCHED SUBSTRING only. Replacing within the whole label leaves the section
+    // number attached — `…/rfc9562 §5.8` — a URL that does not resolve, and a dead link is worse
+    // than no link ([[rules]]/reference). The section belongs in the label, never in the href.
+    const matched = home ? (home[0].exec(m[1]!)?.[0] ?? null) : null
+    out.push({ label, url: matched !== null && home ? matched.replace(home[0], home[1]) : null })
+  }
+  return out
+}
+
+/**
+ * The deposition record for ONE paper — the metadata that makes it findable and correctly related.
+ *
+ * `related_identifiers` is the part that matters and the part most often left empty: a deposit with
+ * no stated relation to its repository or its parent record is an orphan, discoverable only by
+ * someone who already knows it exists. Every relation here is one Zenodo defines, used for what it
+ * means — `isSupplementTo` the source, `isPartOf` the concept record, `references` for a standard
+ * the work is built against. Accurate relations ARE the discoverability; keyword stuffing is not.
+ */
+export function paperMetadata(input: PaperInput, cwd: string = process.cwd()): Record<string, unknown> {
+  const refs = referencesOf(input.atomPath, cwd)
+  const atomUrl = `${SOURCE_URL}/tree/main/src/${input.atomPath}`
+  return {
+    upload_type: 'publication',
+    publication_type: 'workingpaper',
+    title: input.claim,
+    description:
+      `<p><strong>${input.claim}</strong></p>` +
+      `<p>Enforced by a gate in <code>src/${input.atomPath}</code>, which fails closed when the claim is ` +
+      `violated — the claim is not asserted in prose. <a href="${atomUrl}">Source</a>.</p>` +
+      `<p><strong>What this does not prove:</strong> ${input.boundary}</p>`,
+    creators: [{ name: 'Rouschev, Tsvetan', orcid: '0009-0000-7312-9778' }],
+    license: ERPAX_SPDX.toLowerCase(),
+    access_right: 'open',
+    keywords: [
+      'content-addressing',
+      'compliance-as-code',
+      'executable-specification',
+      'tamper-evidence',
+      ...input.atomPath.split('/'),
+    ],
+    related_identifiers: [
+      { identifier: atomUrl, relation: 'isSupplementTo', scheme: 'url' },
+      { identifier: SOURCE_URL, relation: 'isSupplementTo', scheme: 'url' },
+      { identifier: ERPAX_DOI, relation: 'isPartOf', scheme: 'doi' },
+      ...(input.contentUuid ? [{ identifier: `urn:uuid:${input.contentUuid}`, relation: 'isIdenticalTo', scheme: 'urn' }] : []),
+      ...refs.filter((r) => r.url !== null).map((r) => ({ identifier: r.url as string, relation: 'references', scheme: 'url' })),
+    ],
+  }
+}
+
 const escapeTex = (s: string): string =>
   s
     .replace(/\\/g, '\\textbackslash{}')
@@ -138,16 +235,44 @@ export function paperTex(input: PaperInput, cwd: string = process.cwd()): string
     }
   })()
 
+  const refs = referencesOf(input.atomPath, cwd)
+  const atomUrl = `${SOURCE_URL}/tree/main/src/${input.atomPath}`
+  const keywords = ['content-addressing', 'compliance-as-code', 'executable specification', ...input.atomPath.split('/')]
+  // The prior-art STATUS, said plainly and up front. `none` is a search result, never a novelty
+  // claim — surfacing it clearly is not the same as upgrading it, and the wording keeps them apart.
+  const status = !pa
+    ? '\\textbf{Prior art: not searched.}'
+    : pa.status === 'found'
+      ? `\\textbf{Prior art: ${pa.hits.length} record(s) found} for this query.`
+      : pa.status === 'none'
+        ? '\\textbf{Prior art: no records returned} for this query. This is a search result, not a finding of novelty.'
+        : '\\textbf{Prior art: not established} --- the search could not be completed.'
+
   return `\\documentclass[11pt,a4paper]{article}
 \\usepackage[utf8]{inputenc}
+\\usepackage{hyperref}
+\\hypersetup{
+  pdftitle={${escapeTex(input.claim)}},
+  pdfauthor={Tsvetan Rouschev},
+  pdfsubject={erpax --- a claim enforced by a gate, not asserted in prose},
+  pdfkeywords={${escapeTex(keywords.join(', '))}},
+  colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue
+}
 \\title{${escapeTex(input.claim)}}
-\\author{Tsvetan Rouschev\\\\\\texttt{https://orcid.org/0009-0000-7312-9778}}
-\\date{erpax v${escapeTex(version)} — \\texttt{${escapeTex(ERPAX_DOI)}}}
+\\author{Tsvetan Rouschev\\\\\\url{https://orcid.org/0009-0000-7312-9778}}
+\\date{erpax v${escapeTex(version)} --- \\href{https://doi.org/${escapeTex(ERPAX_DOI)}}{${escapeTex(ERPAX_DOI)}}}
 \\begin{document}
 \\maketitle
 
+\\begin{abstract}
+\\noindent\\textbf{${escapeTex(input.claim)}}
+
+\\medskip\\noindent
+${status}
+\\end{abstract}
+
 \\section*{Claim}
-${escapeTex(input.claim)}
+\\textbf{${escapeTex(input.claim)}}
 
 \\section*{Evidence}
 The claim is enforced by a gate in \\texttt{src/${escapeTex(input.atomPath)}}, which fails closed
@@ -163,9 +288,20 @@ ${priorArtSection}
 ${escapeTex(input.boundary)}
 
 \\section*{Availability}
-Source: \\texttt{${escapeTex(SOURCE_URL)}}. Archived: \\texttt{${escapeTex(ERPAX_DOI)}}.
-Licence: ${escapeTex(ERPAX_SPDX)}.
-\\end{document}
+\\begin{itemize}
+  \\item Gate enforcing this claim: \\url{${atomUrl}}
+  \\item Repository: \\url{${SOURCE_URL}}
+  \\item Archived record: \\href{https://doi.org/${escapeTex(ERPAX_DOI)}}{${escapeTex(ERPAX_DOI)}}
+  \\item Licence: ${escapeTex(ERPAX_SPDX)} --- commercial terms via \\url{mailto:license@erpax.com}
+\\end{itemize}
+
+${
+    refs.length === 0
+      ? ''
+      : `\\section*{References}\n\\begin{enumerate}\n${refs
+          .map((r) => `  \\item ${escapeTex(r.label)}${r.url ? ` \\url{${r.url}}` : ''}`)
+          .join('\n')}\n\\end{enumerate}\n`
+  }\\end{document}
 `
 }
 
