@@ -26,7 +26,7 @@ export const controlsApplied: ReadonlyArray<Iso27002ControlId> = [
   '8.2',
 ] as const
 
-export const isSuperAdminAccess: Access = ({ req }): boolean => {
+export const superAdminOnly: Access = ({ req }): boolean => {
   return isSuperAdmin(req.user)
 }
 

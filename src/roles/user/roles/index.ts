@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
-import { isSuperAdminAccess } from '@/is/super/admin'
+import { superAdminOnly } from '@/is/super/admin'
 
 import { preventDuplicateAssignment } from '@/roles/user/roles/hooks'
 
@@ -26,10 +26,10 @@ export const UserRoles: CollectionConfig = {
     description: 'Assigns users to role definitions.',
   },
   access: {
-    create: isSuperAdminAccess,
-    delete: isSuperAdminAccess,
-    read: isSuperAdminAccess,
-    update: isSuperAdminAccess,
+    create: superAdminOnly,
+    delete: superAdminOnly,
+    read: superAdminOnly,
+    update: superAdminOnly,
   },
   fields: [
     {

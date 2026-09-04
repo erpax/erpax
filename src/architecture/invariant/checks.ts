@@ -861,7 +861,7 @@ export function checkCollectionsAreUniformlyDRY(ctx: InvariantContext): Invarian
       offenders.push(`${entry} :: inline createdBy/approvedBy — use ...auditFields()`)
     }
     // 7. canonical access helper (factory-built collections excused)
-    if (!usesFactory && !/access:\s*(scopedAccess|roleScopedAccess|accountingCollectionAccess|tenantAdminWriteAccess|tenantMasterDataAccess|multiTenantRead|tenantAdmin|authenticated|adminOnly|isSuperAdminAccess|\{)/.test(text)) {
+    if (!usesFactory && !/access:\s*(scopedAccess|roleScopedAccess|accountingCollectionAccess|tenantAdminWriteAccess|tenantMasterDataAccess|multiTenantRead|tenantAdmin|authenticated|adminOnly|superAdminOnly|\{)/.test(text)) {
       offenders.push(`${entry} :: missing access block`)
     }
     // 8. autoPopulateTenant present (factory excused)

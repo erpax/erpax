@@ -2,7 +2,7 @@ import type { CollectionConfig } from 'payload'
 
 import { authenticated } from '@/authenticated'
 import { auditTrailAfterChange } from '@/audit/trail/after/change'
-import { isSuperAdminAccess, fieldAccess } from '@/is/super/admin'
+import { superAdminOnly, fieldAccess } from '@/is/super/admin'
 import { localeRecord } from '@/i18n'
 import { updateAndDeleteAccess } from '@/tenants/access'
 import { normalizeTenantDomain, normalizeTenantSlug } from '@/tenants/hooks'
@@ -31,7 +31,7 @@ const superAdminSecretsAccess = {
 export const Tenants: CollectionConfig = {
   slug: 'tenants',
   access: {
-    create: isSuperAdminAccess,
+    create: superAdminOnly,
     delete: updateAndDeleteAccess,
     read: authenticated,
     update: updateAndDeleteAccess,

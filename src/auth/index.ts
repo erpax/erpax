@@ -18,7 +18,7 @@ import type { UserContext, UserRole } from '@/types/auth'
 import type { User } from '@/types'
 import { ACCOUNTING_WRITE_ROLES } from '@/roles/registry'
 
-export { isSuperAdminAccess as superAdminOnly } from '@/is/super/admin'
+export { superAdminOnly } from '@/is/super/admin'
 
 /**
  * Narrow `req.user` (the `User | PayloadMcpApiKey` auth union) to the

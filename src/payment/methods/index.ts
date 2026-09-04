@@ -1,5 +1,5 @@
 import { CollectionConfig } from 'payload'
-import { isSuperAdminAccess } from '@/is/super/admin'
+import { superAdminOnly } from '@/is/super/admin'
 import {
   encryptPaymentMethodData,
   decryptPaymentMethodData,
@@ -30,10 +30,10 @@ export const PaymentMethods: CollectionConfig = {
     defaultColumns: ['tenant', 'type', 'cardLast4', 'isDefault', 'isActive'],
   },
   access: {
-    read: isSuperAdminAccess,
-    create: isSuperAdminAccess,
-    update: isSuperAdminAccess,
-    delete: isSuperAdminAccess,
+    read: superAdminOnly,
+    create: superAdminOnly,
+    update: superAdminOnly,
+    delete: superAdminOnly,
   },
   hooks: {
     beforeChange: [encryptPaymentMethodData],

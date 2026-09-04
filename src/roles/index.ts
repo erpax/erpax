@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
-import { isSuperAdminAccess } from '@/is/super/admin'
+import { superAdminOnly } from '@/is/super/admin'
 import { scopeResourceCollections } from '@/nist/incits/359'
 
 import { validateRoleDefinition } from '@/roles/hooks'
@@ -29,10 +29,10 @@ export const Roles: CollectionConfig = {
     useAsTitle: 'name',
   },
   access: {
-    create: isSuperAdminAccess,
-    delete: isSuperAdminAccess,
-    read: isSuperAdminAccess,
-    update: isSuperAdminAccess,
+    create: superAdminOnly,
+    delete: superAdminOnly,
+    read: superAdminOnly,
+    update: superAdminOnly,
   },
   fields: [
     {

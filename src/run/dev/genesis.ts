@@ -10,7 +10,7 @@
  * defined even when nothing is defined" — so the first user is genesis-admin by
  * the cross, never by a bootstrap hack. This script is the experiment that shows
  * whether the live access is that computational cross or still the incomplete
- * name-based graft (`isSuperAdminAccess`). The tenant identity is COMPUTED from
+ * name-based graft (`superAdminOnly`). The tenant identity is COMPUTED from
  * the first user's email domain, never hardcoded (computed-not-hardcoded).
  *
  *   pnpm exec tsx src/run/dev/genesis.ts

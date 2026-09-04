@@ -1,5 +1,5 @@
 import { CollectionConfig } from 'payload'
-import { isSuperAdminAccess } from '@/is/super/admin'
+import { superAdminOnly } from '@/is/super/admin'
 import {
   encryptSubscriptionData,
   decryptSubscriptionData,
@@ -27,10 +27,10 @@ export const Subscriptions: CollectionConfig = {
     defaultColumns: ['tenant', 'plan', 'status', 'currentPeriodStart', 'currentPeriodEnd'],
   },
   access: {
-    read: isSuperAdminAccess,
-    create: isSuperAdminAccess,
-    update: isSuperAdminAccess,
-    delete: isSuperAdminAccess,
+    read: superAdminOnly,
+    create: superAdminOnly,
+    update: superAdminOnly,
+    delete: superAdminOnly,
   },
   hooks: {
     beforeChange: [encryptSubscriptionData],

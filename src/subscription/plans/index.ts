@@ -1,6 +1,6 @@
 import { CollectionConfig } from 'payload'
 import { anyone } from '@/anyone'
-import { isSuperAdminAccess } from '@/is/super/admin'
+import { superAdminOnly } from '@/is/super/admin'
 import { currencyField } from '@/base/accounting/field'
 
 /**
@@ -22,9 +22,9 @@ export const SubscriptionPlans: CollectionConfig = {
   // Public catalog read; super-admin only for mutations.
   access: {
     read: anyone,
-    create: isSuperAdminAccess,
-    update: isSuperAdminAccess,
-    delete: isSuperAdminAccess,
+    create: superAdminOnly,
+    update: superAdminOnly,
+    delete: superAdminOnly,
   },
   fields: [
     {
