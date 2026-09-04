@@ -10,6 +10,7 @@ import {
   declaredAxioms,
   foreignAxioms,
   formatRegister,
+  standardRegister,
   theoremNames,
   unprovenTheorems,
 } from '.'
@@ -79,6 +80,34 @@ describe('proof/register', () => {
   it('REFUSES to build with no kernel — an index of guesses is worse than none', () => {
     if (has) expect(() => assertNoUnproven(tree({}), 0)).not.toThrow()
     else expect(() => assertNoUnproven(tree({}), 0)).toThrow(/cannot be built, so it must not pass/)
+  })
+
+  it('classifies a cited standard as ASSUMED until a gate discharges it', () => {
+    const root = tree({
+      'a/index.ts': 'export function assertThing(): void {}\n',
+      'b/index.ts': 'export const x = 1\n',
+    })
+    const reg = standardRegister(
+      [
+        { atomPath: 'a', standards: ['ISO 19011:2018 §6.4 — audit evidence'] },
+        { atomPath: 'b', standards: ['WCAG 2.2 §1.3.1 — info and relationships'] },
+      ],
+      root,
+    )
+    const iso = reg.find((r) => r.standard === 'ISO 19011:2018')!
+    const wcag = reg.find((r) => r.standard === 'WCAG 2.2')!
+    expect(iso.dischargedBy).toEqual(['a'])
+    expect(wcag.dischargedBy).toEqual([]) // cited, enforced by nothing — an axiom
+  })
+
+  it('folds sections into one standard — §5.4 and §5.5 are the same document', () => {
+    const root = tree({ 'a/index.ts': 'export const x = 1\n' })
+    const reg = standardRegister(
+      [{ atomPath: 'a', standards: ['ISO/IEC 25010:2023 §5.4 — security', 'ISO/IEC 25010:2023 §5.5 — testability'] }],
+      root,
+    )
+    expect(reg).toHaveLength(1)
+    expect(reg[0]!.standard).toBe('ISO/IEC 25010:2023')
   })
 
   it.runIf(has)('this corpus imports no foreign axiom', () => {

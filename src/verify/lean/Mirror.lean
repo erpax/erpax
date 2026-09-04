@@ -76,4 +76,25 @@ theorem control_is_also_an_involution :
 theorem control_parity :
     squareDivisors.length % 2 = (squareDivisors.filter (fun d => 36 / d == d)).length % 2 := by decide
 
+
+/-!
+## Axiom hygiene, pinned IN THE FILE
+
+`#print axioms` answers what a theorem rests on; `#guard_msgs` makes that answer part of the proof.
+The kernel now REFUSES the file if the axiom set of any theorem below ever changes — an external
+index can go stale between runs, and this cannot. Adopted from Lean's own build-time practice.
+-/
+
+/-- info: 'Duality.Mirror.phi_is_an_involution' does not depend on any axioms -/
+#guard_msgs in
+#print axioms Duality.Mirror.phi_is_an_involution
+
+/-- info: 'Duality.Mirror.no_fixed_point' does not depend on any axioms -/
+#guard_msgs in
+#print axioms Duality.Mirror.no_fixed_point
+
+/-- info: 'Duality.Mirror.control_has_a_fixed_point' does not depend on any axioms -/
+#guard_msgs in
+#print axioms Duality.Mirror.control_has_a_fixed_point
+
 end Duality.Mirror

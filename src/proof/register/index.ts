@@ -159,6 +159,66 @@ export function foreignAxioms(r: AxiomRegister): readonly string[] {
   return [...r.byAxiom.keys()].filter((a) => !LEAN_BUILTIN.has(a) && !own.has(a) && a !== 'sorryAx')
 }
 
+/**
+ * A cited standard is an AXIOM until something discharges it.
+ *
+ * erpax cites ISO, RFC, WCAG and statute across its atoms. Every such citation is an assumption the
+ * corpus makes about the world — a premise, not a result. What turns one into a THEOREM is a gate:
+ * an `assert…` that fails closed when the standard is violated. Until then the atom asserts
+ * conformance and nothing can contradict it.
+ *
+ * The literature reaches the same split from the other side — process requirements extracted from
+ * standards and translated into logical axioms — and names the hard part as bridging a machine
+ * checkable witness to evidence an auditor accepts. This is that bridge, measured.
+ */
+export interface StandardStatus {
+  readonly standard: string
+  /** Atoms citing it. */
+  readonly citedBy: readonly string[]
+  /** Atoms citing it that ALSO export a fail-closed assertion — the citation is discharged there. */
+  readonly dischargedBy: readonly string[]
+}
+
+/** An atom exports a gate when it offers an `assert…` that can fail closed. */
+const hasGate = (atomPath: string, cwd: string): boolean => {
+  for (const name of ['index.ts', 'index.tsx']) {
+    try {
+      if (/export\s+(?:async\s+)?function\s+assert[A-Z]/.test(readFileSync(join(cwd, 'src', atomPath, name), 'utf8'))) return true
+    } catch {
+      /* absent is not a gate */
+    }
+  }
+  return false
+}
+
+/**
+ * Every standard this corpus cites, split into what it assumes and what it proves.
+ *
+ * `atoms` is supplied by the caller (the atom list and each one's citations) so this stays a pure
+ * classification — the parsing lives with the papers, where the citation format is defined.
+ */
+export function standardRegister(
+  atoms: readonly { readonly atomPath: string; readonly standards: readonly string[] }[],
+  cwd: string = process.cwd(),
+): StandardStatus[] {
+  const byStandard = new Map<string, { cited: string[]; discharged: string[] }>()
+  for (const a of atoms) {
+    const gate = hasGate(a.atomPath, cwd)
+    for (const raw of a.standards) {
+      // the standard's NAME, without the section and gloss — ISO 25010 §5.5 and §5.4 are one standard
+      const key = raw.split('—')[0]!.split('§')[0]!.trim()
+      if (!key) continue
+      const e = byStandard.get(key) ?? { cited: [], discharged: [] }
+      e.cited.push(a.atomPath)
+      if (gate) e.discharged.push(a.atomPath)
+      byStandard.set(key, e)
+    }
+  }
+  return [...byStandard]
+    .map(([standard, e]) => ({ standard, citedBy: [...new Set(e.cited)], dischargedBy: [...new Set(e.discharged)] }))
+    .sort((a, b) => b.citedBy.length - a.citedBy.length)
+}
+
 /** The index, as a page — every theorem, what it rests on, and what could not be asked. */
 export function formatRegister(r: AxiomRegister): string {
   const lines = [

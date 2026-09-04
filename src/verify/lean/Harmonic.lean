@@ -87,4 +87,29 @@ theorem control_nonsquare_fixes_nothing : fixedOf 12 = [] := by decide
 /-- τ is odd exactly there: 9 divisors for 36, 6 for 12. -/
 theorem control_tau : tau 36 = 9 ∧ tau 12 = 6 := by decide
 
+
+/-!
+## Axiom hygiene, pinned IN THE FILE
+
+`#print axioms` answers what a theorem rests on; `#guard_msgs` makes that answer part of the proof.
+The kernel now REFUSES the file if the axiom set of any theorem below ever changes — an external
+index can go stale between runs, and this cannot. Adopted from Lean's own build-time practice.
+-/
+
+/-- info: 'Harmonic.not_always_harmonic' does not depend on any axioms -/
+#guard_msgs in
+#print axioms Harmonic.not_always_harmonic
+
+/-- info: 'Harmonic.odd_carrier_forces_a_fixed_point' does not depend on any axioms -/
+#guard_msgs in
+#print axioms Harmonic.odd_carrier_forces_a_fixed_point
+
+/-- info: 'Harmonic.harmonic_iff_square' does not depend on any axioms -/
+#guard_msgs in
+#print axioms Harmonic.harmonic_iff_square
+
+/-- info: 'Harmonic.harmonic_is_unique' does not depend on any axioms -/
+#guard_msgs in
+#print axioms Harmonic.harmonic_is_unique
+
 end Harmonic

@@ -122,4 +122,25 @@ axiom one_law : ∀ entropy : Nat, entropy = 0 → ∀ n : Nat, n ≤ n
 -/
 axiom audience_weight : ∀ signed : Bool, signed = true → signed = true
 
+
+/-!
+## Axiom hygiene, pinned IN THE FILE
+
+`#print axioms` answers what a theorem rests on; `#guard_msgs` makes that answer part of the proof.
+The kernel now REFUSES the file if the axiom set of any theorem below ever changes — an external
+index can go stale between runs, and this cannot. Adopted from Lean's own build-time practice.
+-/
+
+/-- info: 'Erpax.tamper_propagates' does not depend on any axioms -/
+#guard_msgs in
+#print axioms Erpax.tamper_propagates
+
+/-- info: 'Erpax.ratchet_never_rises' does not depend on any axioms -/
+#guard_msgs in
+#print axioms Erpax.ratchet_never_rises
+
+/-- info: 'Erpax.mirror_parity' does not depend on any axioms -/
+#guard_msgs in
+#print axioms Erpax.mirror_parity
+
 end Erpax

@@ -31,6 +31,36 @@ ISO 19011 §6.4 / SOX §302 are facts about the world. Proving a weakened finite
 it the law would be the tautology a sibling repo removed the same day. They are recorded as
 assumptions so a reader meets them, not smuggled into a proof so a reader does not.
 
+## A standard is an axiom until a gate discharges it
+
+The kernel's axioms are the small half. This corpus cites ISO, RFC, WCAG, W3C and statute across its
+atoms, and **every such citation is an assumption about the world** — a premise, not a result. What
+turns one into a theorem is a gate: an `assert…` that fails closed when the standard is violated.
+Until then the atom asserts conformance and nothing can contradict it.
+
+| | (2026-09-04) |
+| --- | ---: |
+| distinct standards cited | 269 |
+| **discharged by a fail-closed gate** | **21** |
+| **assumed — cited with nothing enforcing them** | **248** |
+
+The most-cited are split both ways: ISO/IEC 25010 (55 atoms) and ISO 19011 (43) are discharged;
+**WCAG 2.2 (29 atoms), WHATWG HTML (6), WAI-ARIA (5) and W3C HTML5 (5) are assumed.** Nothing in
+this corpus fails closed on an accessibility criterion, and twenty-nine atoms cite one.
+
+The literature reaches the same split from the other side — process requirements extracted from
+standards and translated into logical axioms — and names the hard part exactly: bridging a
+machine-checkable witness to evidence an auditor accepts. This measures that bridge; it does not
+build it.
+
+**Two honest limits on this count.** `hasGate` looks for an exported `assert…`, so an atom whose
+PROOF exercises a standard without exposing a gate — every `blocks/form/*` atom checks its WCAG
+label binding in `test.ts` — is counted as *assumed*. The number is therefore a conservative floor
+on what is discharged, and deliberately so: a test is evidence, a gate is enforcement, and only the
+second one stops the next commit. Second, `ISO-19011:2018` and `ISO 19011:2018` are counted as two
+standards because the citations are written both ways; that is a real inconsistency in the corpus's
+own citation format, surfaced here rather than normalised away.
+
 ## "Could not ask" is not "rests on nothing"
 
 Three files do not compile, so their theorems were never interrogated — reported as **UNASKED**, on
