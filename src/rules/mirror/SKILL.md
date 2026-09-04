@@ -54,6 +54,17 @@ The receiver must be the identifier itself and the expected value the **same lit
 `n = [1,2].length` is computed, not typed, and is not flagged. Only the exact mirror counts —
 otherwise this gate would be another instrument whose noise floor sits above its signal.
 
+## Two rails for the campaign that reduces the 507
+
+- **Measure each one's BEFORE state.** A sibling running this sweep on its own tree nearly reported
+  *"my fix broke it"* — the candidate was already failing before the edit. A tautology removed from
+  a test that was **already red** looks exactly like a regression you caused, and across 507 sites
+  that misreading will happen unless the before-state is recorded per site.
+- **A filter that selects by NAME cannot see what it does not name**, and what it misses is
+  systematically the thing nobody thought to name. Two instances in one day: this corpus's trinity
+  check demanded the `.ts` spelling and so could not see a `.tsx` barrel; a sibling's name-filter
+  selected seven Clay-named theorems and left the eighth — the shared involution — unmeasured.
+
 **Honest boundary.** This proves an assertion is **vacuous**, never that the atom is untested — a
 mirror can sit beside six real assertions in the same file, and 188 atoms holding one is not 188
 untested atoms. It reads `export const` literals in the sibling barrel only; a constant re-exported
