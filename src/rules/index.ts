@@ -19,6 +19,7 @@ import { kernelPath, reflexiveTheorems, unacceptedProofs } from '@/proof/accepte
 import { unbackedPhenomena } from '@/quantum/interval'
 import { unbackedFigures } from '@/render/scene'
 import { rootCollisions, undeclaredRoots } from '@/merge/order'
+import { replaceableStandards } from '@/proof/replaceable'
 import { unreadSurfaces } from '@/rules/domain'
 import { startProgressHeartbeat } from '@/cli/progress-heartbeat'
 import { execSync } from 'node:child_process'
@@ -302,6 +303,10 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // in @/merge and order-free in @/fusion, so an importer picking the wrong module gets a
     // different root in silence. Ceiling 1, a rename away from 0.
     guardian({ axis: 'root-collision', violations: rootCollisions(cwd).length, baseline: 1 }),
+    // standards-assumed — a cited standard NOTHING discharges ([[proof]]/replaceable). 219 atoms
+    // cite 265 standards and 22 are gated; each remaining line is a theorem not yet written.
+    // Counts the REPLACEABLE ones only: citing a statute is not a regression.
+    guardian({ axis: 'standards-assumed', violations: replaceableStandards(cwd).length, baseline: 242 }),
   ])
   const provenSeal = seal([
     guardian({
