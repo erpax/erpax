@@ -18,6 +18,7 @@ import { blindProbes } from '@/rules/probe'
 import { kernelPath, reflexiveTheorems, unacceptedProofs } from '@/proof/accepted'
 import { unbackedPhenomena } from '@/quantum/interval'
 import { unbackedFigures } from '@/render/scene'
+import { unreadSurfaces } from '@/rules/domain'
 import { startProgressHeartbeat } from '@/cli/progress-heartbeat'
 import { execSync } from 'node:child_process'
 import { waveAccountingGapViolations } from '@/accounting/gaps'
@@ -288,6 +289,10 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // first light-cone figure cited `Mirror.involution_partitions`, invented minutes after this
     // corpus gated that exact defect in prose. A caption is a citation.
     guardian({ axis: 'figures-backed', violations: unbackedFigures(cwd).length, baseline: 0 }),
+    // domain — a file class the corpus HAS and no wired gate reads ([[rules]]/domain). Three of
+    // this session's four cracks were one gap: the law enforced on .ts, violated in .lean, in a
+    // caption, in .tsx. Ratchets from the live 5; zero is the horizon, not a theorem.
+    guardian({ axis: 'domain', violations: unreadSurfaces(cwd).length, baseline: 5 }),
   ])
   const provenSeal = seal([
     guardian({
