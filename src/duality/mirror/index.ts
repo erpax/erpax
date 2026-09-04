@@ -137,3 +137,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   console.log(`parity |S| ≡ |Fix| (mod 2)  ${r.parityHolds} · exhaustive ${r.exhaustive}`)
   for (const [a, b] of r.pairs) console.log(`   ${String(a).padStart(3)} ↔ ${b}`)
 }
+
+/** @index-cross.foldback child=duality/mirror parent=duality — this cross folds back into its parent. */

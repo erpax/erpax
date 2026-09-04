@@ -17,7 +17,15 @@ const SRC = 'src'
 const SKIP_TREES = new Set(['app', 'migrations'])
 const TS_EXT = /\.tsx?$/i
 const SKIP_FILE = /\.(generated|d\.ts|test\.ts)$/i
-const COLOCATED = new Set(['index.ts', 'index.tsx', 'test.ts', 'translations.ts', 'seed.ts'])
+/**
+ * A React atom's proof is `test.tsx`, and it was missing here while `index.tsx` was present.
+ *
+ * Consequence: every such proof read as a STRAY CROSS needing a re-export from its own barrel —
+ * `index cross missing re-export for ./test` — which a barrel must never do. 34 of the 115
+ * violations attributable to this session's atoms were that, and nothing else was wrong with them.
+ * Fifth place in one day where a filter named the `.ts` spelling and could not see its twin.
+ */
+const COLOCATED = new Set(['index.ts', 'index.tsx', 'test.ts', 'test.tsx', 'translations.ts', 'seed.ts'])
 
 export const INDEX_CROSS_PRIORITY: readonly string[] = [
   'quantum',
@@ -139,7 +147,8 @@ const childIndexFolders = (dir: string): string[] => {
   for (const e of entries) {
     if (e.startsWith('.')) continue
     const p = join(dir, e)
-    if (isDir(p) && existsSync(join(p, 'index.ts'))) children.push(e)
+    // a child crosses through `index.tsx` too — the same door, a different extension
+    if (isDir(p) && (existsSync(join(p, 'index.ts')) || existsSync(join(p, 'index.tsx')))) children.push(e)
   }
   return children.sort()
 }

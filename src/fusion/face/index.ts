@@ -114,3 +114,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     for (const m of c) console.log(`        ${m.repo}  ${m.path}${m.origin && m.origin !== 'self' ? `  (adopted from ${m.origin})` : ''}`)
   }
 }
+
+/** @index-cross.foldback child=fusion/face parent=fusion — this cross folds back into its parent. */
