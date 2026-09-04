@@ -120,7 +120,8 @@ const hasChildCodeAtoms = (dir: string): boolean => {
     if (e.startsWith('.') || e === 'node_modules') continue
     const p = join(dir, e)
     if (!isDir(p)) continue
-    if (existsSync(join(p, 'index.ts'))) return true
+    // `.tsx` is a barrel too — see the note on `barrelIn` below.
+    if (barrelIn(p)) return true
   }
   return false
 }
@@ -161,9 +162,32 @@ const skillReferencesBehavior = (dir: string): boolean => {
   return BEHAVIOR_PROSE_RE.test(body)
 }
 
+/**
+ * The barrel of a folder, whichever way it is spelled.
+ *
+ * A React atom's barrel is `index.tsx` and its proof is `test.tsx`, because JSX does not parse from
+ * a `.ts` file. Reading only the `.ts` names made every such atom look like prose with no executable
+ * matter behind it — a "literary atom" that is nothing of the kind.
+ */
+const barrelIn = (dir: string): string | null => {
+  for (const n of ['index.ts', 'index.tsx']) {
+    const p = join(dir, n)
+    if (existsSync(p)) return p
+  }
+  return null
+}
+
+const proofIn = (dir: string): string | null => {
+  for (const n of ['test.ts', 'test.tsx']) {
+    const p = join(dir, n)
+    if (existsSync(p)) return p
+  }
+  return null
+}
+
 const parseTestUseCases = (dir: string): string[] => {
-  const test = join(dir, 'test.ts')
-  if (!existsSync(test)) return []
+  const test = proofIn(dir)
+  if (!test) return []
   const content = readFileSync(test, 'utf8')
   return [...content.matchAll(/(?:it|test)\(\s*['"`]([^'"`]+)['"`]/g)]
     .map((m) => m[1]!.trim())
@@ -243,12 +267,12 @@ export function caseOf(
   importIndex?: ReadonlyMap<string, number>,
 ): UseCaseVerdict {
   const dir = atomDir(atomPath, cwd)
-  const indexPath = join(dir, 'index.ts')
-  const hasIndex = existsSync(indexPath)
+  const indexPath = barrelIn(dir)
+  const hasIndex = indexPath !== null
   const childCode = hasChildCodeAtoms(dir)
-  const loc = hasIndex ? countLinesOfCode(indexPath) : 0
+  const loc = indexPath ? countLinesOfCode(indexPath) : 0
   const readmeWords = countReadmeWords(dir)
-  const hasTests = existsSync(join(dir, 'test.ts'))
+  const hasTests = proofIn(dir) !== null
   // An atom under the `vocabulary/` namespace IS the corpus's declared vocabulary — prose by design
   // (the same class rules/prose exempts as a lexicon). It need not repeat `vocabularyException: true`
   // in every SKILL when its home already declares it structurally.

@@ -6,7 +6,7 @@
  */
 import { readdirSync, statSync } from 'node:fs'
 import { join } from 'node:path'
-import { ALPHANUMERIC_NAME, CODE_MARKERS, ONE_WORD, TRINITY } from './constants'
+import { ALPHANUMERIC_NAME, CODE_MARKERS, ONE_WORD, TRINITY, TRINITY_ALTERNATES } from './constants'
 
 const SRC = join(process.cwd(), 'src')
 
@@ -72,13 +72,14 @@ export function folderViolations(root: string = SRC): FolderViolations {
     }
     const files = new Set(entries.filter((e) => !isDir(join(dir, e))))
     if (CODE_MARKERS.some((m) => files.has(m))) {
-      // A React atom's barrel is `index.tsx`, and the bundler resolves `@/atom` to it exactly as it
-      // resolves `index.ts` — so demanding the `.ts` spelling from a folder that HAS a barrel is a
-      // false positive, measured at 6. It is not licence for the other direction: a `.tsx`-only
-      // folder still fails to be a CODE_MARKERS atom, and 29 of those escape this law entirely.
-      // That hole is real and named in [[law]]/folder's SKILL; closing it changes what counts as an
-      // atom (most are framework-shaped `blocks/form/*`), which is a decision, not a bug fix.
-      const missing = TRINITY.filter((f) => !files.has(f) && !(f === 'index.ts' && files.has('index.tsx')))
+      // The law is about the BARREL and the PROOF, never their spelling: `@/atom` resolves to
+      // `index.tsx` exactly as to `index.ts`, and a proof that renders JSX is spelled `test.tsx`.
+      // Reading the `.ts` names literally was blind in both directions — 6 atoms flagged for having
+      // the wrong spelling of a barrel they had, and 29 never judged at all because a `.tsx`-only
+      // folder did not match CODE_MARKERS.
+      const missing = TRINITY.filter(
+        (f) => !files.has(f) && !(TRINITY_ALTERNATES[f] ?? []).some((alt) => files.has(alt)),
+      )
       if (missing.length) trinity.push({ folder: rel || '.', missing, law: 'trinity' })
     }
     for (const e of entries) {
@@ -235,6 +236,14 @@ export function nonTsLanguageViolations(cwd: string = process.cwd()): TsOnlyViol
       }
       const m = e.match(NON_TS_PROGRAMMING_EXT)
       if (!m) continue
+      // `.tsx` IS TypeScript. This axis exists to keep OTHER languages out of the corpus — `.scss`,
+      // `.mjs`, `.js` — and it was lumping the React trinity in with them, which made the law
+      // unsatisfiable for any atom that renders: JSX cannot be parsed from a `.ts` file, so a React
+      // atom must spell its barrel and its proof with an `x` or have no proof at all.
+      //
+      // Only the TRINITY members are exempt. A `.tsx` beside them (`BatchActionsBar.tsx`) is still
+      // counted, because that is a matter file at an atom root — the stray this axis is for.
+      if (e === 'index.tsx' || e === 'test.tsx') continue
       out.push({
         relPath: childRel,
         file: e,

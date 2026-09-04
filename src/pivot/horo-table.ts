@@ -166,11 +166,24 @@ export interface TrinityFlags {
   readonly proof: 0 | 1
 }
 
+/**
+ * The trinity legs of a folder — form, code, proof — read by SPELLING-INDEPENDENT names.
+ *
+ * `index.tsx` is a barrel and `test.tsx` is a proof: the bundler resolves `@/atom` to either, and a
+ * React atom cannot spell them otherwise, because JSX does not parse from a `.ts` file. Reading only
+ * the `.ts` names recorded every React atom in this corpus as having NO CODE AND NO PROOF — which
+ * fed the horo table, the word axes and the readme computation alike.
+ *
+ * This was the third place the same blindness was found in one pass ([[law]]/folder's trinity, the
+ * `ts-only` axis, and here). A filter that selects by NAME cannot see what it does not name, and
+ * what it misses is systematically the thing nobody thought to name.
+ */
 export function trinityFlagsAtDir(dir: string): TrinityFlags {
+  const any = (...names: readonly string[]): 0 | 1 => (names.some((n) => existsSync(join(dir, n))) ? 1 : 0)
   return {
-    form: (existsSync(join(dir, 'SKILL.md')) || existsSync(join(dir, 'README.md')) ? 1 : 0) as 0 | 1,
-    code: (existsSync(join(dir, 'index.ts')) ? 1 : 0) as 0 | 1,
-    proof: (existsSync(join(dir, 'test.ts')) ? 1 : 0) as 0 | 1,
+    form: any('SKILL.md', 'README.md'),
+    code: any('index.ts', 'index.tsx'),
+    proof: any('test.ts', 'test.tsx'),
   }
 }
 

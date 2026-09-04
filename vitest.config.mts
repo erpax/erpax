@@ -121,7 +121,19 @@ export default defineConfig({
           ...shared,
           name: 'unit',
           include: unit.length ? unit : ['src/**/__no_pure_suites__.test.ts'],
-          environmentMatchGlobs: [['**/*.test.tsx', 'jsdom']],
+          // `**/*.test.tsx` never matches a file NAMED `test.tsx`, which is what this corpus's
+          // trinity law requires — so every React atom's proof was falling through to the node
+          // environment and relying on a `@vitest-environment` docblock to rescue it.
+          environmentMatchGlobs: [
+            ['**/*.test.tsx', 'jsdom'],
+            ['**/test.tsx', 'jsdom'],
+          ],
+          // A named origin, so anything reading location.origin sees a stable one. NOTE it does
+          // NOT provide localStorage: Node 26 ships its own `localStorage` global that shadows
+          // jsdom's and is inert without --localstorage-file, so a proof about persistence must
+          // supply its own Storage. Written down because the symptom (window.localStorage
+          // undefined under jsdom) reads as a jsdom/origin problem and is not one.
+          environmentOptions: { jsdom: { url: 'https://erpax.test/' } },
           // Pure atoms: NO Payload boot, no setup — that is the whole speedup (a suite finishes in ~0.2s
           // instead of paying the ~35s boot / per-file integration overhead). Kept isolated + serial
           // (the config's own warning: isolate:false shared the heap AND the process env across suites,
