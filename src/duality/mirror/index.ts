@@ -75,6 +75,68 @@ export function divisorsOf(n: number): number[] {
 /** The anchor's lattice: 432 = 2⁴·3³, twenty divisors ([[harmony]]/divisor). */
 export const anchorMirror = (): MirrorReport<number> => mirrorReport(divisorsOf(432), (d) => 432 / d)
 
+export interface HarmonicCase {
+  readonly n: number
+  /** τ(n) — the size of the carrier. */
+  readonly tau: number
+  /** The harmonic elements: their own reflection under d ↦ n/d. */
+  readonly fixed: readonly number[]
+  readonly isSquare: boolean
+}
+
+/**
+ * When does the mirror leave a harmonic element? Computed, for every n up to a bound.
+ *
+ * The universal claim — "an involution always provides a harmonic result" — is FALSE, and 432 is
+ * the counterexample this corpus already carried. What holds is sharper: an ODD carrier always
+ * fixes something, because the non-fixed elements pair off and an odd total cannot be made of pairs
+ * alone. For the divisor mirror that condition, a perfect square, and τ(n) odd are one condition.
+ */
+export function harmonicCases(limit = 60): HarmonicCase[] {
+  const out: HarmonicCase[] = []
+  for (let n = 1; n <= limit; n++) {
+    const d = divisorsOf(n)
+    out.push({
+      n,
+      tau: d.length,
+      fixed: d.filter((x) => n / x === x),
+      // INTEGER arithmetic, not Math.sqrt: this corpus forbids host math in a theorem atom
+      // ([[algebra]]/host — all theorems are algebra), and its gate caught this line. A float
+      // square root is also the wrong instrument: it answers a question about integers with a
+      // rounding.
+      isSquare: divisorsOf(n).some((k) => k * k === n),
+    })
+  }
+  return out
+}
+
+export interface HarmonicLaw {
+  readonly cases: number
+  /** τ odd ⟺ a harmonic element exists — the two are one event. */
+  readonly oddIffHarmonic: boolean
+  /** …and both hold exactly at the perfect squares. */
+  readonly harmonicIffSquare: boolean
+  /** Parity: |S| ≡ |Fix σ| (mod 2), everywhere. */
+  readonly parityHolds: boolean
+  /** When it exists it is the square root, and nothing else. */
+  readonly uniqueWhenPresent: boolean
+  /** Carriers with no harmonic element at all — the counterexamples to the universal claim. */
+  readonly withoutHarmonic: number
+}
+
+/** The characterisation, checked over the family rather than asserted. */
+export function harmonicLaw(limit = 60): HarmonicLaw {
+  const cs = harmonicCases(limit)
+  return {
+    cases: cs.length,
+    oddIffHarmonic: cs.every((c) => (c.tau % 2 === 1) === (c.fixed.length > 0)),
+    harmonicIffSquare: cs.every((c) => (c.fixed.length > 0) === c.isSquare),
+    parityHolds: cs.every((c) => c.tau % 2 === c.fixed.length % 2),
+    uniqueWhenPresent: cs.every((c) => c.fixed.length <= 1),
+    withoutHarmonic: cs.filter((c) => c.fixed.length === 0).length,
+  }
+}
+
 /**
  * The statement, rendered.
  *

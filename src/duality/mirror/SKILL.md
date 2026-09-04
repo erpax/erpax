@@ -56,6 +56,35 @@ it rather than accepting a shape. And a carrier that *does* have a fixed point m
 - The first draft emitted `consists of 10$ transpositions`: one unbalanced `$` opens math mode over
   the rest of the document. The proof now counts delimiters and requires an even number.
 
+## Does an involution ALWAYS leave a harmonic element? No — and here is exactly when it does
+
+The universal claim is **false**, and the kernel says so: asserting it makes Lean answer *"decide
+proved that the proposition is false"*. Over the divisor mirrors of n = 1..60, **53 of 60 carriers
+fix nothing at all**.
+
+What is true is sharper, and it has a hypothesis:
+
+> **An involution on a carrier of ODD size always leaves a harmonic element.**
+
+The reason is parity and nothing else: the non-fixed elements pair off, so they are even in number,
+and an odd total cannot be made of pairs alone — one element is left holding itself.
+
+For the divisor mirror `d ↦ n/d`, three conditions turn out to be **one** condition:
+
+| | |
+| --- | --- |
+| τ(n) is odd | the carrier has odd size |
+| a harmonic element exists | something is its own reflection |
+| n is a perfect square | the root is that something |
+
+All three coincide across the family, and when the harmonic element exists it is **unique** — the
+square root, nothing else: `1→1 · 4→2 · 9→3 · 16→4 · 25→5 · 36→6 · 49→7`. Everything else, 432
+included, is drawn in and returned with no survivor.
+
+Both directions are controlled: a square fixes its root (`36 → [6]`), a non-square fixes nothing
+(`12 → []`), and τ is 9 and 6 respectively. Without those, "fixed = []" would prove nothing about
+432 and everything about a filter that always returns empty.
+
 **Honest boundary.** These are theorems **for this carrier**, closed by exhaustion — not a claim
 about infinite `S`, where the same statement is true but needs a different proof. The reading of σ
 as a black-hole/white-hole pair is an **interpretation laid over the mathematics**, not a

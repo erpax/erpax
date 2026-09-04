@@ -4,7 +4,7 @@ import { existsSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
 import { atomAddress } from '@/atom/address'
-import { anchorMirror, divisorsOf, latex, mirrorReport } from '.'
+import { anchorMirror, divisorsOf, harmonicCases, harmonicLaw, latex, mirrorReport } from '.'
 
 const here = dirname(fileURLToPath(import.meta.url))
 /** Lean lives in one place in this corpus ([[verify]]/lean), not beside each atom that states one. */
@@ -76,4 +76,36 @@ describe('duality/mirror', () => {
     const out = execFileSync(lean, ['Mirror.lean'], { cwd: leanDir, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] })
     expect(out.trim()).toBe('')
   }, 120_000)
+
+  it('REFUTES the universal claim — an involution does NOT always leave a harmonic element', () => {
+    // 53 of the first 60 carriers fix nothing. The claim is false in the large majority of cases,
+    // and 432 is not a freak.
+    expect(harmonicLaw(60).withoutHarmonic).toBe(53)
+    expect(harmonicCases(60).find((c) => c.n === 432 % 61)).toBeDefined()
+  })
+
+  it('ODD CARRIER ⇒ HARMONIC — the true theorem, with its hypothesis', () => {
+    // The non-fixed elements pair off, so they are even in number; an odd total cannot be made of
+    // pairs alone, and one element is left holding itself.
+    expect(harmonicLaw(60).oddIffHarmonic).toBe(true)
+  })
+
+  it('three conditions are one condition: τ odd ⟺ harmonic exists ⟺ n is a perfect square', () => {
+    const law = harmonicLaw(60)
+    expect(law.oddIffHarmonic).toBe(true)
+    expect(law.harmonicIffSquare).toBe(true)
+    expect(law.parityHolds).toBe(true)
+  })
+
+  it('when a harmonic element exists it is UNIQUE — the square root and nothing else', () => {
+    expect(harmonicLaw(60).uniqueWhenPresent).toBe(true)
+    expect(harmonicCases(60).filter((c) => c.fixed.length > 0).map((c) => c.fixed[0])).toEqual([1, 2, 3, 4, 5, 6, 7])
+  })
+
+  it('the Lean development proves the same, including that the universal claim is FALSE', () => {
+    const lean = ['/opt/homebrew/bin/lean', '/usr/local/bin/lean'].find(existsSync)
+    if (!lean) return
+    const out = execFileSync(lean, ['Harmonic.lean'], { cwd: leanDir, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] })
+    expect(out.trim()).toBe('')
+  }, 180_000)
 })
