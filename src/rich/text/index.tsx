@@ -38,7 +38,14 @@ type NodeTypes =
   | DefaultNodeTypes
   | SerializedBlockNode<CTABlockProps | MediaBlockProps | BannerBlockProps | CodeBlockProps>
 
-const internalDocToHref = ({ linkNode }: { linkNode: SerializedLinkNode }) => {
+/**
+ * The href for a link an editor made to another document.
+ *
+ * EXPORTED so the law can be refuted. It was private, and a SKILL stating "an internal link is a
+ * route, never a stored URL" with no way to contradict it is an unfalsifiable claim
+ * ([[rules]]/refutable) — the library is still the only caller, through the converter below.
+ */
+export const internalDocToHref = ({ linkNode }: { linkNode: SerializedLinkNode }) => {
   const { value, relationTo } = linkNode.fields.doc!
   if (typeof value !== 'object') {
     throw codedFromRegistry(ERR.INTERNAL_RICHTEXT_VALUE)
