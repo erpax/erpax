@@ -25,7 +25,7 @@ Zero entropy ⇒ infinite tamper-cost. Every folder under `src/` is a one-word a
 ## Navigation
 
 - **Fractal atoms:** `src/<one-word>/SKILL.md` — each folder is one irreducible concept.
-- **Lazy load:** use `realiseSkillsForPath(path)` from `@/agent/skill-context` — never import `src/skill/router/skills.index.ts` (77MB bundle).
+- **Lazy load:** use `realiseSkillsForPath(path)` from `@/agent/skill-context` — never import `src/skill/router/skills.index.ts`. The checked-in file is a CI **stub** (empty pool); a full build bakes one node per atom, which is why the lazy loader exists.
 - **Programmatic wire:** `wireFromRepoUrl('https://github.com/erpax/erpax')` in `src/skill/wire/`.
 
 ## Surfaces (all point to `.claude/skills/SKILL.md`)

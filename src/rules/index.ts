@@ -20,6 +20,7 @@ import { unbackedPhenomena } from '@/quantum/interval'
 import { unbackedFigures } from '@/render/scene'
 import { rootCollisions, undeclaredRoots } from '@/merge/order'
 import { uncitedPages } from '@/algebra'
+import { staleSizeClaims } from '@/rules/drift'
 import { replaceableStandards } from '@/proof/replaceable'
 import { unreadSurfaces } from '@/rules/domain'
 import { startProgressHeartbeat } from '@/cli/progress-heartbeat'
@@ -312,6 +313,10 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // carried one: the corpus stated the licence law in its agent rules and did not obey it on its
     // own output. Now computed from the licence face, so it cannot drift. Zero is a theorem.
     guardian({ axis: 'pages-cited', violations: uncitedPages(cwd).length, baseline: 0 }),
+    // size-drift — prose stating a BYTE SIZE an order of scale from the file it names
+    // ([[rules]]/drift). AGENTS.md, loaded into every agent's prompt on every turn, called a
+    // 269-byte stub a "77MB bundle". Zero is a theorem.
+    guardian({ axis: 'size-drift', violations: staleSizeClaims(cwd).length, baseline: 0 }),
   ])
   const provenSeal = seal([
     guardian({
