@@ -3038,8 +3038,55 @@ export function writeCorpusFoldLedger(ledger: CorpusFoldLedger, cwd: string = pr
 
 
 /** Debit fold — folder model (carries the graph row) + law + every non-face file in the atom dir. */
+/**
+ * The modules that PRODUCE a face. DECLARED, in the open, so the list can be argued with.
+ *
+ * A change to any of them must invalidate every cached entry, because the cache's question is
+ * "would the generator emit the same bytes now?" and the generator is half of that.
+ */
+const GENERATOR_INPUTS: readonly string[] = [
+  'src/readme/compute.ts',
+  'src/readme/quantum-thinking.ts',
+  'src/readme/entropy.ts',
+  'src/readme/llm.ts',
+  'src/algebra/license/index.ts',
+  'src/algebra/license/generated.ts',
+]
+
+let generatorFoldCache: string | null = null
+
+/**
+ * Content-address of the generator itself.
+ *
+ * WITHOUT THIS THE CACHE IS WRONG, and it was: the incremental ledger skipped an atom whenever
+ * its inputs and its on-disk faces both matched the previous run — so when the renderer gained a
+ * citation footer, atoms whose inputs had not moved kept the OLD footer and the gate caught four
+ * of them, on a different four each run. A build cache that does not include the build is a cache
+ * that answers a question nobody asked.
+ */
+export function generatorFold(cwd: string): string {
+  if (generatorFoldCache !== null) return generatorFoldCache
+  const h = createHash('sha256')
+  for (const rel of GENERATOR_INPUTS) {
+    h.update(rel)
+    try {
+      h.update(readFileSync(join(cwd, rel)))
+    } catch {
+      /* absent generator input folds as its name alone */
+    }
+  }
+  generatorFoldCache = h.digest('hex').slice(0, 32)
+  return generatorFoldCache
+}
+
+/** Test seam: the fold is memoised per process, so a fixture must be able to clear it. */
+export const resetGeneratorFold = (): void => {
+  generatorFoldCache = null
+}
+
 export function atomInputFold(atomPath: string, folder: FolderReadmeModel, law: string | null, cwd: string): string {
   const h = createHash('sha256')
+  h.update(generatorFold(cwd))
   h.update(JSON.stringify(folder))
   h.update(law ?? '')
   const dir = join(cwd, SRC, atomPath)

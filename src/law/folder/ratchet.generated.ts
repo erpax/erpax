@@ -8,7 +8,7 @@
 import type { RatchetAxis } from './baseline-types'
 
 export const RATCHET_GENERATED = {
-  contentUuid: "f388565b-7b6d-89a3-a1c8-a91a2a5815bf",
+  contentUuid: "96e1495f-4927-8851-a5a3-961dd176d9b8",
   sealedAt: "2026-09-04",
   axes: {
     "folder-name": 0,
@@ -25,11 +25,11 @@ export const RATCHET_GENERATED = {
     "word-matter": 850,
     "word-without-code": 1525,
     "word-without-logic": 447,
-    "word-incomplete-diamond": 1568,
+    "word-incomplete-diamond": 1566,
     "phrase-without-diamond": 0,
     "index-cross": 3636,
     "linear-logic": 4,
-    "linear-gap": 80,
+    "linear-gap": 75,
     "hand-maintained": 1,
     "matrix-crack": 786,
   },

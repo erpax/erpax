@@ -15,10 +15,15 @@
  * (`deriveModel`/`generateReadme`) which reads the static matrix + a fs walk.
  */
 import { describe, it, expect } from 'vitest'
+import { mkdirSync, mkdtempSync, writeFileSync } from 'node:fs'
+import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { erpaxSelfAccount } from '@/accounting/corpus'
 import {
   deriveModel,
+  atomInputFold,
+  generatorFold,
+  resetGeneratorFold,
   renderReadme,
   readmeUuid,
   licenseNote,
@@ -928,5 +933,70 @@ describe.skip('readme — path-follow gravity gate (full-tree — runs in the ga
     const diamond = deriveDiamond('path')
     const cross = finishedIdeaCrossed(diamond, { pathsVisited })
     expect(cross.impurities.some((i) => i.includes('path lattice'))).toBe(false)
+  })
+})
+
+describe('readme — the incremental cache includes the generator, or it is wrong', () => {
+  const tree = (files: Record<string, string>): string => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-genfold-'))
+    for (const [rel, body] of Object.entries(files)) {
+      const p = join(root, rel)
+      mkdirSync(join(p, '..'), { recursive: true })
+      writeFileSync(p, body)
+    }
+    return root
+  }
+
+  // The defect this pins: the ledger skipped an atom whenever its inputs AND its on-disk faces
+  // both matched the previous run. When the renderer gained a citation footer, atoms whose inputs
+  // had not moved kept the OLD footer — a different four each run, caught only by `pages-cited`.
+  // A build cache that does not include the build answers a question nobody asked.
+  it('changing the GENERATOR changes the fold, with no atom input touched', () => {
+    const root = tree({
+      'src/readme/compute.ts': 'export const render = () => "v1"',
+      'src/algebra/license/index.ts': 'export const cite = 1',
+    })
+    resetGeneratorFold()
+    const before = generatorFold(root)
+    writeFileSync(join(root, 'src/readme/compute.ts'), 'export const render = () => "v2 — emits a citation"')
+    resetGeneratorFold()
+    expect(generatorFold(root)).not.toBe(before)
+  })
+
+  it('a transitive generator input counts too — the citation comes from the licence face', () => {
+    const root = tree({
+      'src/readme/compute.ts': 'export const render = () => "v1"',
+      'src/algebra/license/index.ts': 'export const cite = 1',
+    })
+    resetGeneratorFold()
+    const before = generatorFold(root)
+    writeFileSync(join(root, 'src/algebra/license/index.ts'), 'export const cite = 2')
+    resetGeneratorFold()
+    expect(generatorFold(root)).not.toBe(before)
+  })
+
+  it('is stable when nothing changes — otherwise the cache never hits', () => {
+    const root = tree({ 'src/readme/compute.ts': 'export const render = () => "v1"' })
+    resetGeneratorFold()
+    const a = generatorFold(root)
+    resetGeneratorFold()
+    expect(generatorFold(root)).toBe(a)
+  })
+
+  it('an absent generator input folds as its name rather than throwing', () => {
+    const root = tree({})
+    resetGeneratorFold()
+    expect(generatorFold(root)).toMatch(/^[0-9a-f]{32}$/)
+  })
+
+  it('the atom input fold carries the generator fold — that is the whole fix', () => {
+    const root = tree({ 'src/readme/compute.ts': 'export const render = () => "v1"' })
+    resetGeneratorFold()
+    const g1 = generatorFold(root)
+    writeFileSync(join(root, 'src/readme/compute.ts'), 'export const render = () => "v2"')
+    resetGeneratorFold()
+    expect(generatorFold(root)).not.toBe(g1)
+    // atomInputFold hashes generatorFold first, so every entry invalidates together
+    expect(String(atomInputFold)).toContain('generatorFold')
   })
 })

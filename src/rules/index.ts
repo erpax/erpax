@@ -269,7 +269,7 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // probe — a test for a twinned filename that never names the twin ([[rules]]/probe). Four gates
     // carried this at once: 6 atoms flagged for a barrel's spelling, 29 never judged at all, and
     // every React atom recorded as having no code. Ratchets from the live 48.
-    guardian({ axis: 'probe', violations: blindProbes(cwd).length, baseline: 48 }),
+    guardian({ axis: 'probe', violations: blindProbes(cwd).length, baseline: 47 }),
     // proof/accepted — a .lean file the kernel does not accept as proof. Four of five carry `sorry`
     // or do not compile, under a directory named `verify` that nothing ever ran. Ratchets from 4;
     // the horizon is 0, because a theorem proved by `sorry` states a claim and proves nothing.
@@ -308,7 +308,7 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // standards-assumed — a cited standard NOTHING discharges ([[proof]]/replaceable). 219 atoms
     // cite 265 standards and 22 are gated; each remaining line is a theorem not yet written.
     // Counts the REPLACEABLE ones only: citing a statute is not a regression.
-    guardian({ axis: 'standards-assumed', violations: replaceableStandards(cwd).length, baseline: 242 }),
+    guardian({ axis: 'standards-assumed', violations: replaceableStandards(cwd).length, baseline: 241 }),
     // pages-cited — a GENERATED page reproducing corpus matter with no attribution. 0 of 6,943
     // carried one: the corpus stated the licence law in its agent rules and did not obey it on its
     // own output. Now computed from the licence face, so it cannot drift. Zero is a theorem.
