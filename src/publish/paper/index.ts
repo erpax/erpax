@@ -257,15 +257,18 @@ export function paperMetadata(input: PaperInput, cwd: string = process.cwd()): R
     // through OpenAIRE or ROR, both registered identifiers, and filling the field without one is a
     // fabricated funder. Sponsorship links go where they are true — the description.
     ...(fund.awards.length > 0 ? { grants: fund.awards.map((id) => ({ id })) } : {}),
+    // `scheme` is deliberately absent: the documented attributes are identifier · relation ·
+    // resource_type, and Zenodo detects the identifier type itself. Setting an undocumented field
+    // is the same class of defect as inventing one.
     related_identifiers: [
-      { identifier: atomUrl, relation: 'isSupplementTo', scheme: 'url' },
-      { identifier: SOURCE_URL, relation: 'isSupplementTo', scheme: 'url' },
+      { identifier: atomUrl, relation: 'isSupplementTo' },
+      { identifier: SOURCE_URL, relation: 'isSupplementTo' },
       // isPartOf points at the WORK — every version — so this one is the concept doi by design
-      { identifier: ERPAX_DOI, relation: 'isPartOf', scheme: 'doi' },
+      { identifier: ERPAX_DOI, relation: 'isPartOf' },
       // …and the paper is derived from one fixed snapshot, which only a version doi can name
-      { identifier: ERPAX_VERSION_DOI, relation: 'isDerivedFrom', scheme: 'doi' },
-      ...(input.contentUuid ? [{ identifier: `urn:uuid:${input.contentUuid}`, relation: 'isIdenticalTo', scheme: 'urn' }] : []),
-      ...refs.filter((r) => r.url !== null).map((r) => ({ identifier: r.url as string, relation: 'references', scheme: 'url' })),
+      { identifier: ERPAX_VERSION_DOI, relation: 'isDerivedFrom' },
+      ...(input.contentUuid ? [{ identifier: `urn:uuid:${input.contentUuid}`, relation: 'isIdenticalTo' }] : []),
+      ...refs.filter((r) => r.url !== null).map((r) => ({ identifier: r.url as string, relation: 'references' })),
     ],
   }
 }

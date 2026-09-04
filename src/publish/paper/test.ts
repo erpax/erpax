@@ -232,8 +232,10 @@ describe('publish/paper — a paper names the fixed record it was built from', (
     })
     const rel = meta.related_identifiers as { identifier: string; relation: string }[]
     // isPartOf points at the WORK — every version — so the concept doi is right there by design
-    expect(rel).toContainEqual({ identifier: '10.5281/zenodo.22237698', relation: 'isPartOf', scheme: 'doi' })
-    expect(rel).toContainEqual({ identifier: '10.5281/zenodo.22288360', relation: 'isDerivedFrom', scheme: 'doi' })
+    expect(rel).toContainEqual({ identifier: '10.5281/zenodo.22237698', relation: 'isPartOf' })
+    // `scheme` is NOT a documented Zenodo attribute — identifier · relation · resource_type are
+    expect(rel.every((x) => !('scheme' in x))).toBe(true)
+    expect(rel).toContainEqual({ identifier: '10.5281/zenodo.22288360', relation: 'isDerivedFrom' })
   })
 
   it('fails closed on a paper that names only the moving DOI', () => {

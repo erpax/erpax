@@ -288,6 +288,9 @@ src/app/(frontend)/[locale]/products/page.tsx:4: * @standard schema.org Product
 src/app/(frontend)/[locale]/products/page.tsx:5: * @standard schema.org ItemList
 src/app/(frontend)/[locale]/products/page.tsx:6: * @standard ISO-4217:2015 currency-codes price
 src/app/(frontend)/[locale]/products/page.tsx:7: * @standard GS1 GTIN global-trade-item-number
+src/app/(frontend)/[locale]/publications/[slug]/page.tsx:7: * @standard schema.org ScholarlyArticle
+src/app/(frontend)/[locale]/publications/page.tsx:8: * @standard schema.org ScholarlyArticle
+src/app/(frontend)/[locale]/publications/page.tsx:9: * @standard schema.org CollectionPage
 src/app/(frontend)/[locale]/search/page.tsx:4: * @standard schema.org SearchResultsPage
 src/app/(frontend)/[locale]/search/page.tsx:5: * @standard schema.org SearchAction
 src/app/(frontend)/layout.tsx:4: * @standard W3C HTML5 Living Standard
