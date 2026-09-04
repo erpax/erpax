@@ -1,8 +1,9 @@
 import { describe, expect, it } from 'vitest'
+import { paperMetadata } from '@/publish/paper'
 import { mkdirSync, mkdtempSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { assertResultsUnique, citationGraph, duplicateResults, foreignCollisions, publishableResults, resultManifest, resultUuid, slugOf, type PublishableResult } from '@/publish/registry'
+import { assertResultsUnique, citationGraph, duplicateResults, foreignCollisions, paperInputs, publishableResults, relatedIdentifiers, resultManifest, resultUuid, slugOf, type PublishableResult } from '@/publish/registry'
 
 const atom = (law: string | null, boundary: string | null, gate: boolean, extra = ''): Record<string, string> => ({
   'SKILL.md': [
@@ -149,5 +150,37 @@ describe('publish/registry — a result is unique no matter which repo derives i
     expect(() => assertResultsUnique(process.cwd())).not.toThrow()
     const rs = publishableResults(process.cwd())
     expect(new Set(rs.map((r) => r.uuid)).size).toBe(rs.length)
+  })
+})
+
+describe('publish/registry — the wiring publish/paper never had', () => {
+  it('maps every publishable result to a paper input, carrying the cross-repo identity', () => {
+    const inputs = paperInputs(process.cwd())
+    const results = publishableResults(process.cwd())
+    expect(inputs).toHaveLength(results.length)
+    for (const [i, input] of inputs.entries()) {
+      expect(input.contentUuid).toBe(results[i]!.uuid) // the deposition names the FINDING
+      expect(input.boundary.length).toBeGreaterThan(0) // never a paper without a stated limit
+      expect(input.title).toBe(results[i]!.title)
+    }
+  })
+
+  it('a deposition titles itself with the ATOM title, not the claim sentence', () => {
+    const input = paperInputs(process.cwd()).find((i) => i.atomPath === 'merge/order')!
+    const meta = paperMetadata(input) as { title: string; description: string }
+    expect(meta.title).toBe(input.title)
+    expect(meta.title).not.toBe(input.claim)
+    // the claim still leads the description, where a full sentence belongs
+    expect(meta.description).toContain(input.claim)
+  })
+
+  it('the deposition carries the cross-links and no undocumented attribute', () => {
+    const results = publishableResults(process.cwd())
+    const r = results.find((x) => x.atomPath === 'merge/order')!
+    const rel = relatedIdentifiers(r, citationGraph(results).get(r.slug) ?? [], 'https://erpax.com')
+    expect(rel.length).toBeGreaterThan(5)
+    expect(rel.some((x) => x.relation === 'isIdenticalTo' && x.identifier === `urn:uuid:${r.uuid}`)).toBe(true)
+    // `scheme` is not a documented Zenodo attribute — identifier · relation · resource_type
+    expect(rel.every((x) => !('scheme' in x))).toBe(true)
   })
 })

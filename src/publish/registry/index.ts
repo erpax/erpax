@@ -1,6 +1,7 @@
-import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import { ERPAX_DOI, ERPAX_VERSION_DOI, SOURCE_URL } from '@/algebra'
+import { paperMetadata, paperTex } from '@/publish/paper'
 import { chainLeaf } from '@/merge'
 
 /**
@@ -67,6 +68,8 @@ const plain = (t: string): string =>
  * metadata rather than duplicate in deposits.
  */
 export const resultUuid = (claim: string, boundary: string): string => chainLeaf({ boundary, claim }, '')
+
+const SITE = 'https://erpax.com'
 
 const blobUrl = (p: string): string => `${SOURCE_URL}/blob/main/${p}`
 const treeUrl = (p: string): string => `${SOURCE_URL}/tree/main/${p}`
@@ -335,6 +338,27 @@ export function assertResultsUnique(cwd: string = process.cwd()): void {
   )
 }
 
+/**
+ * Every publishable result as a paper input — the wiring `runPapers` never had.
+ *
+ * `publish/paper` could build a paper and a Zenodo deposition from the day it was written, and
+ * its only caller was its own test: an instrument built and never pointed at the tree, the same
+ * defect `standardRegister` carried. This is the connection.
+ *
+ * `contentUuid` is the result's cross-repo identity, so the deposition's `isIdenticalTo` names
+ * the finding rather than the file.
+ */
+export const paperInputs = (
+  cwd: string = process.cwd(),
+): { claim: string; title: string; atomPath: string; boundary: string; contentUuid: string }[] =>
+  publishableResults(cwd).map((r) => ({
+    claim: r.claim,
+    title: r.title,
+    atomPath: r.atomPath,
+    boundary: r.boundary,
+    contentUuid: r.uuid,
+  }))
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const rs = publishableResults()
   const graph = citationGraph(rs)
@@ -343,6 +367,24 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   console.log(`${rs.filter((r) => r.proof !== null).length} carry a kernel-checked proof · ${rs.filter((r) => r.standards.length > 0).length} cite a standard\n`)
   for (const r of rs) {
     console.log(`  ${r.slug.padEnd(28)} ${r.proof ? 'proof' : '     '}  cites ${String(graph.get(r.slug)?.length ?? 0).padStart(2)}  ${r.claim.slice(0, 66)}…`)
+  }
+  if (process.argv[2] === '--papers') {
+    const outDir = process.argv[3] ?? `${process.env.HOME ?? '.'}/.erpax/fusion/papers`
+    mkdirSync(outDir, { recursive: true })
+    let written = 0
+    for (const input of paperInputs()) {
+      const r = rs.find((x) => x.atomPath === input.atomPath)!
+      const cites = graph.get(r.slug) ?? []
+      writeFileSync(join(outDir, `${r.slug}.tex`), paperTex(input))
+      writeFileSync(
+        join(outDir, `${r.slug}.zenodo.json`),
+        `${JSON.stringify({ ...paperMetadata(input), related_identifiers: relatedIdentifiers(r, cites, SITE) }, null, 2)}\n`,
+      )
+      written++
+    }
+    console.log(`wrote ${written} paper(s) + deposition metadata to ${outDir}`)
+    console.log('NOT deposited: minting a DOI is an outward act and needs a human and a token.')
+    process.exit(0)
   }
   const drop = `${process.env.HOME ?? '.'}/.erpax/fusion`
   const target = process.argv[2] ?? join(drop, 'erpax.results.json')

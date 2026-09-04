@@ -86,6 +86,14 @@ export async function priorArt(
 export interface PaperInput {
   /** The claim, as the corpus states it. */
   readonly claim: string
+  /**
+   * The atom's own authored H1, when it has one.
+   *
+   * A deposition title should be a TITLE. Using the claim sentence makes a 200-character
+   * headline that reads as a paragraph in every index that lists it — and the atom already
+   * wrote a better one.
+   */
+  readonly title?: string
   /** The atom path whose gate enforces it — the paper's evidence. */
   readonly atomPath: string
   /** The claim's content-uuid: what the paper is ABOUT, addressed. */
@@ -233,7 +241,7 @@ export function paperMetadata(input: PaperInput, cwd: string = process.cwd()): R
   return {
     upload_type: 'publication',
     publication_type: 'workingpaper',
-    title: input.claim,
+    title: input.title ?? input.claim,
     description:
       `<p><strong>${input.claim}</strong></p>` +
       `<p>Enforced by a gate in <code>src/${input.atomPath}</code>, which fails closed when the claim is ` +
