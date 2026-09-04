@@ -98,3 +98,5 @@ export function citation(input: CitationInput): string {
 export function citationComplies(text: string): boolean {
   return text.includes(ERPAX_SPDX) && text.includes(SOURCE_URL) && text.includes(ERPAX_DOI)
 }
+
+/** @index-cross.foldback child=algebra/license parent=algebra — this cross folds back into its parent. */

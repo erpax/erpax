@@ -228,3 +228,4 @@ export function verifyAiBindingDiamonds(configText: string): {
   return { ok: broken.length === 0 && entries.length > 0, count: entries.length, broken }
 }
 
+/** @index-cross.foldback child=cloudflare/derive parent=cloudflare — this cross folds back into its parent. */

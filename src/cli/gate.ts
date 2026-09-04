@@ -66,6 +66,11 @@ export const GATE_LANES: readonly (readonly [string, string])[] = [
   // Rosetta enforcement — doctor corpus exits 1 on basis growth past ROSETTA_BASELINE
   // (the enforcement debt named in src/rules/SKILL.md: a law is obeyed only when a gate
   // blocks its violation). Makes the shape ratchet + off-ring check fail-closed in CI.
+  // RULES — the fail-closed registry: 26 guardians, every tightened law this corpus enforces.
+  // It was absent from this list, which is why pushes succeeded for as long as they did with three
+  // guardians over ceiling. The registry's own SKILL says a law is obeyed only when a gate blocks
+  // its violation; the registry itself was the law nothing blocked.
+  ['rules', 'pnpm erpax rules check'],
   ['corpus', 'pnpm erpax doctor corpus'],
   // test:int runs as receipt-split WAVES (quantum-efficient): only suites whose content changed since their
   // last green receipt re-run, self-bounded per batch — never the monolithic boot-everything run that could

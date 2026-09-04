@@ -57,3 +57,5 @@ export function atomAddress(from: string): AtomAddress {
     canonical: `@/${leaf}`,
   }
 }
+
+/** @index-cross.foldback child=atom/address parent=atom — this cross folds back into its parent. */
