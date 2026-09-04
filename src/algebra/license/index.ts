@@ -1,3 +1,13 @@
+import { ERPAX_DOI, ERPAX_SPDX, LICENSE_CONTACT, SOURCE_URL } from './generated'
+
+/**
+ * The licence facts are READ from CITATION.cff via ./generated — never typed here.
+ *
+ * Each is an external fact: an SPDX identifier, a repository, a contact, a DOI a registration
+ * agency assigned. None is derivable from the corpus fold, so a constant is the only honest form —
+ * and a constant typed twice is two sources that drift. CITATION.cff is the one the world reads.
+ */
+export { ERPAX_DOI, ERPAX_SPDX, LICENSE_CONTACT, SOURCE_URL, ERPAX_VERSION_DOI } from './generated'
 /**
  * algebra/license — USER LAW (computable): ONE licence, no tier.
  *
@@ -12,10 +22,8 @@
  */
 
 /** Commercial licensing contact — the only alternative to the terms below. */
-export const LICENSE_CONTACT = 'license@erpax.com' as const
 
 /** The SPDX of the whole corpus. One licence, every path. */
-export const ERPAX_SPDX = 'CC-BY-NC-ND-4.0' as const
 
 /**
  * README license body — GENERATED from this law so the diamond cannot drift.
@@ -30,7 +38,6 @@ export function erpaxLicenseNote(license: string): string[] {
 }
 
 /** Where the licensed material lives — CC BY-NC-ND §3(a)(1) attribution requires the source link. */
-export const SOURCE_URL = 'https://github.com/erpax/erpax' as const
 
 /**
  * The archived, citable address — Zenodo's CONCEPT doi, which resolves to the newest release.
@@ -40,15 +47,6 @@ export const SOURCE_URL = 'https://github.com/erpax/erpax' as const
  * which is the same defect [[rules]]/reference gates inside the corpus: a pointer that resolves
  * to something other than what was cited.
  */
-/**
- * The concept doi — an EXTERNAL fact, assigned by Zenodo and declared in CITATION.cff.
- *
- * It cannot be computed from the fold, so it is seal-debt by [[matrix]]/constants-audit's rule and
- * counted as such. The lawful fold is a generated face read from CITATION.cff (the file the world
- * actually reads); that was attempted and reverted, because every available path for a new file
- * added a violation on another already-saturated axis. Named here rather than hidden.
- */
-export const ERPAX_DOI = '10.5281/zenodo.22237698' as const
 
 /** The resolvable form of a doi. Derived, so it cannot drift from the value above. */
 export const doiUrl = (doi: string = ERPAX_DOI): string => `https://doi.org/${doi}`

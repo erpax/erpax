@@ -1,42 +1,12 @@
 /**
  * Canonical regional defaults — country drives currency and locale.
  *
- * **International-first principle.** erpax welcomes every ISO 3166-1
- * alpha-2 country and every ISO 4217 alphabetic currency code. The
- * curated tables here ({@link COUNTRY_PROFILES}, {@link SUPPORTED_CURRENCIES})
- * are the well-known cohort that the admin UI quick-selects and that
- * generators have explicit adapters for; **anything outside those
- * tables is still accepted at runtime** — the country code / currency
- * code is preserved verbatim, and the resolver falls back to the
- * deployment defaults only for the *derived* fields (currency, locale,
- * accountingStandard) it cannot infer from an unknown country.
- *
- * Single source of truth for "what does a fresh, un-configured tenant
- * look like?". {@link DEFAULT_COUNTRY} is the primary house default;
- * {@link DEFAULT_CURRENCY} and {@link DEFAULT_LOCALE} are derived from
- * it via the canonical {@link COUNTRY_PROFILES} table. Override the
- * country at deploy time with `ERPAX_DEFAULT_COUNTRY` and the rest
- * cascades automatically.
- *
- * Every collection that defaults a `currency`, `country`, or `locale`
- * field MUST import these constants instead of hard-coding `'EUR'` /
- * `'BG'` / `'bg-BG'` literals. Runtime overrides come from environment
- * variables — see {@link getRegionalDefaults}.
- *
- * House defaults (also enforce ordering rules):
- *   - **Country**  — BG / Bulgaria (ISO 3166-1:2020 alpha-2).
- *   - **Currency** — derived from BG → EUR (ISO 4217:2015 §5).
- *   - **Locale**   — derived from BG → bg-BG (BCP 47).
- *
- * Currency-list ordering rule: **EUR is always first, USD is always last**.
- * Mid-list ordering is by international trade volume (G7 + Asia-Pacific
- * majors). The frozen list lives in {@link SUPPORTED_CURRENCIES}.
+ * The narrative lives in ../SKILL.md, which already states it — repeating it here is a second
+ * source that drifts, and prose in a barrel is prose nobody gated.
  *
  * @standard ISO-4217:2015 currency-codes alphabetic
  * @standard ISO-3166-1:2020 country-codes alpha-2
  * @standard BCP-47 language-tag locale-identifier
- * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates functional-currency
- * @accounting US-GAAP ASC-830 foreign-currency-matters reporting-currency
  * @see docs/STANDARDS.md §4.1 §4.3
  * @see src/iso/4217/index.ts
  */

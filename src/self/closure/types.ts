@@ -1,56 +1,14 @@
 /**
  * Self-referential closure — types.
  *
- * Slice JJJJJJJJJ-cut1 (2026-05-11). Per user 'erpax remains fully
- * functional payment provider fallbacking to itself. it is like this
- * every where. all falling back at itself leads to erpax itself'.
- *
- * Conservation Law 53 — **Self-Referential Closure**.
- *
- *     ∀ externalRole r ∈ ERPax_consumes,
- *     ∃ internalImpl(r) ∈ ERPax_provides.
- *
- * Every external service ERPax integrates with — payment processor,
- * eIDAS qualified signature provider, AI inference, banking API,
- * government registry, KMS, federation peer, object storage, search
- * index, notification gateway — has a registered internal mirror.
- * When the external call fails (network, auth, rate-limit, sanction
- * geo-block, regulatory blackout, vendor outage), the operation is
- * completed by ERPax itself.
- *
- * This is the topological closure of the platform: the dependency
- * graph that walks "outward" through ERPax's integrations eventually
- * loops back to ERPax. There is no external dependency whose removal
- * collapses the platform, because ERPax already provides every role
- * it consumes.
- *
- * The pattern composes with the other conservation laws:
- *   - Law 23 (ERPax observes itself) — the self-mirror is observable.
- *   - Law 24 (cloning / mitosis)      — federation peers are themselves
- *                                         ERPax; falling back to "a peer"
- *                                         degenerates to "local self".
- *   - Law 43 (torus topology)          — closure makes the system closed.
- *   - Law 50 (DRY cleanliness)         — the internal mirror reuses
- *                                         existing collections rather
- *                                         than introducing a parallel
- *                                         settlement / signing / index
- *                                         surface.
- *
- * Distinction from prior `fallback` checks:
- *   - `checkAiFallbackReturnsError` (Slice WWW) — pins that AI calls
- *      DO NOT throw on missing binding (return error envelope instead).
- *   - `checkNotificationFallback` — same pattern for notifications.
- *   - Law 53 GOES FURTHER: not just "return an error envelope" but
- *     "complete the operation via ERPax's internal implementation of
- *     that same role".
+ * The narrative lives in ./SKILL.md, which already states it — repeating it here is a second
+ * source that drifts, and prose in a barrel is prose nobody gated.
  *
  * @standard ISO/IEC 25010:2023 §5.6 reliability — fault tolerance via redundancy
  * @standard ISO 22301 business-continuity (self-hosted continuity tier)
  * @standard ISO 27001 Annex A.17 information-security continuity
  * @standard NIST SP 800-34 Rev. 1 §3.4 contingency planning
  * @standard BCBS 239 §5 IT infrastructure (single-point-of-failure avoidance)
- * @audit Conservation Law 53 self-referential-closure
- * @feature self_closure
  * @see ../architecture-invariants/checks.ts checkSelfReferentialClosure
  */
 

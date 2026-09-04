@@ -124,3 +124,14 @@ the canonical module remains the single source of truth).
 - `@/config/address/formats`
 - `@/address/validation`
 - `@/utilities/tenant-context`
+
+## Relocation record — `collections/shared/common` (ISO 19011:2018 audit-trail)
+
+The common/shared field shapes dissolved into this atom: reusable Payload `Field` factories live in
+[[shared]]/field (re-exported here), render atoms in `Money` · `AuditedTimestamp` · `AddressBlock`.
+The `collections/` grouping prefix and the `shared` sub-bucket were dropped in the single-word
+dissolution.
+
+A `common.ts` holding `export {}` stood here as the record. It had no importers, and a module that
+exports nothing is not a record — it is dead matter that a barrel still has to resolve. The record
+is a sentence, so it lives in prose; git carries the move itself.

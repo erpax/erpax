@@ -1,29 +1,10 @@
 /**
  * local — a remote read returns a summary; a local read returns bytes.
  *
- * Not a preference. Measured four times in one session, each time the same shape:
- *
- *   1. ceccec's README was read through a web fetch, which runs a SMALL MODEL over the page and
- *      returns its prose. The agent then quoted that prose as "verbatim from the page" and used it
- *      to contradict the human — twice. A local clone existed at `~/github/ceccec/ceccec.github.io`
- *      the whole time; one `grep` on disk gave the actual bytes.
- *   2. The free AI lanes returned HTTP 402 and 405. The local seal book answered at `tokens: 0`.
- *   3. Every frontier the corpus has — refutable, audience, engineering, theorem, millennium,
- *      orientation — computed locally in one pass, no network.
- *   4. Sixteen defects were caught by local gates before shipping; nothing remote caught any.
- *
- * The asymmetry is structural, not circumstantial. A local read is **verifiable** (the bytes are
- * here, a parse is a theorem), **available** (no quota, no outage, no 402), and **free**. A remote
- * read is none of those, and worse: what comes back is usually a *rendering* of the source, so a
- * quotation from it is a claim about a claim. [[grounded]] makes the neighbouring point about SEALED
- * versus mutable; this one is about LOCAL versus remote, and they compose.
- *
- * The rule this yields is narrow and checkable: **before fetching, look for the local copy.** A
- * remote read whose local counterpart exists is not a fallback, it is a downgrade — and the agent
- * that took it spent a human's correction to find out.
+ * The narrative lives in ./SKILL.md, which already states it — repeating it here is a second
+ * source that drifts, and prose in a barrel is prose nobody gated.
  *
  * @law prefer the local source: a remote read returns a rendering, a local read returns bytes.
- *      Fetch only what is not here, and never quote a rendering as a source.
  * @invariant a source with a local copy is never `remote-preferred` — localFirst names the downgrade
  * @invariant evidence from a rendering is never `primary`, whatever it says
  * @see ./SKILL.md -- ../grounded -- ../quantum/ftl

@@ -30,7 +30,7 @@ export const isSuperAdminAccess: Access = ({ req }): boolean => {
   return isSuperAdmin(req.user)
 }
 
-export const isSuperAdminFieldAccess: FieldAccess = ({ req }): boolean => {
+export const fieldAccess: FieldAccess = ({ req }): boolean => {
   return isSuperAdmin(req.user)
 }
 

@@ -3,7 +3,7 @@
 import { GripVertical } from "lucide-react"
 import { Group, Panel, Separator } from "react-resizable-panels"
 
-import { cn } from "@/ui/utils"
+import { cn } from "@/ui/class"
 
 const ResizablePanelGroup = ({
   className,

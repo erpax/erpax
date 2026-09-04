@@ -2,49 +2,12 @@ import { exactFloor, exactMax } from '@/algebra'
 /**
  * allocation — the math of who gets what, for what.
  *
- * Mechanism design, not policy. Define the rule and "the competition is the rest":
- * agents compete to produce verified value; this organ only PRICES what the
- * competition confirms. No negotiation, no discretion — same work ⇒ same reward
- * (the content-uuid law applied to pay).
- *
- * THE RATE SCALE IS HARMONIC. The base (fundamental) rate is for work that saves
- * no one else's time — own labour only, leverage 1. Everything above base is paid
- * in harmonics of the time a contribution LEVERAGES for others: an hour of your
- * labour that saves a hundred others an hour each is the 101st harmonic of the
- * fundamental, and earns a correspondingly better hourly rate. To raise your pay
- * you raise your harmonic — save more of society's time (build the skill that
- * saves every agent time; see [[generate]]) — so the rule itself stimulates
- * society toward higher-leverage work. The harmonics HARMONISE because the time
- * saved is conserved and verified: you cannot be paid for time you did not save
- * (the competition's verdict gates it), and two contributors cannot both bank the
- * same saved hour (the duplicate-claim / [[merge]] law). Phantom leverage is a
- * collision, not income.
- *
- * Reward = anchor × ( ownTime + verified · timeSavedForOthers ). Own labour is
- * observed and always paid at base; the leverage bonus is paid only to the extent
- * the competition verifies it. Hourly rate = reward / ownTime = anchor × harmonic,
- * so the base worker earns `anchor`/hr and the leverage worker earns strictly more.
- *
- * Two guarantees, proven in `index.test.ts`:
- *   1. those who save no one's time get exactly the base rate; verified leverage
- *      earns a strictly higher hourly rate, monotone in time saved; unverified
- *      leverage earns nothing above base.
- *   2. distribute(pot, …) CONSERVES the pot exactly (Σ shares = pot) — the same
- *      "value is neither created nor destroyed" invariant as double-entry
- *      ([[balance]]), enforced by integer largest-remainder apportionment.
- *
- * The anchor is a UNIT, not a physical claim. `ANCHOR` defaults to the Schumann
- * reference (7.83) so the base is a fixed natural constant, not an arbitrary fiat
- * number — "natural inflation is respected" (inflation = drift of the anchor, not
- * discretionary printing). EVERY property here is invariant to the anchor's value:
- * harmonics, ratios and shares are anchor-free; only absolute amounts scale. That
- * invariance is precisely why the choice of constant (7.83, 432, 1) is a convention
- * — the honest claim is the math, not the frequency.
+ * The narrative lives in ./SKILL.md, which already states it — repeating it here is a second
+ * source that drifts, and prose in a barrel is prose nobody gated.
  *
  * @standard SFIA 8 responsibility-levels (1..7) — job-type categorisation
  * @standard ESCO / ISCO-08 competency framework (skill level)
  * @standard Hamilton (largest-remainder) apportionment — integer fair division
- * @audit ISO 19011 — reward is a deterministic, auditable function (no discretion)
  */
 
 const clamp01 = (x: number): number => (x < 0 ? 0 : x > 1 ? 1 : x)

@@ -2,7 +2,7 @@
  * shadcn/ui barrel — cn utility + full component catalog under src/ui/.
  */
 
-export { cn } from './utils'
+export { cn } from './class'
 
 export * from './accordion'
 export * from './alert'

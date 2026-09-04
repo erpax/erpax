@@ -212,9 +212,9 @@ src/ai/suggestions/index.ts:21: * @standard NIST AI-RMF-1.0 ai-risk-management-f
 src/ai/tax-classification.ts:10: * @standard UN/CEFACT 5305 duty-tax-fee-category-coded
 src/ai/tax-classification.ts:11: * @standard ISO/IEC 23894:2023 ai-risk-management
 src/ai/tax-classification.ts:9: * @standard EN-16931:2017 §BT-151 invoiced-item-vat-category-code
-src/allocation/index.ts:44: * @standard SFIA 8 responsibility-levels (1..7) — job-type categorisation
-src/allocation/index.ts:45: * @standard ESCO / ISCO-08 competency framework (skill level)
-src/allocation/index.ts:46: * @standard Hamilton (largest-remainder) apportionment — integer fair division
+src/allocation/index.ts:10: * @standard Hamilton (largest-remainder) apportionment — integer fair division
+src/allocation/index.ts:8: * @standard SFIA 8 responsibility-levels (1..7) — job-type categorisation
+src/allocation/index.ts:9: * @standard ESCO / ISCO-08 competency framework (skill level)
 src/allow/public/read/tenant/test.ts:6: * @standard ISO/IEC-29119:2022 software-testing
 src/analytics/BudgetVsActualCard.tsx:10: * @standard ECMA-262 ECMAScript-2024 baseline
 src/analytics/BudgetVsActualCard.tsx:11: * @standard ISO-4217:2015 currency-codes monetary-display
@@ -763,14 +763,14 @@ src/config/iso/4217/special/index.ts:57: * @standard ISO 20022 pacs.008.001 §Cc
 src/config/iso/4217/special/index.ts:58: * @standard LBMA Gold Bullion Price spec (XAU rate source)
 src/config/iso/4217/special/index.ts:59: * @standard SDR Valuation Basket (XDR rate composition — currently
 src/config/iso/4217/special/index.ts:61: * @standard IFRS 9 §3.2 reclassification (X-coded balances reclassify
-src/config/regional/defaults/index.ts:122: * @standard ISO-4217:2015 §5 alphabetic-codes
-src/config/regional/defaults/index.ts:145: * @standard ISO-3166-1:2020 country-codes alpha-2
-src/config/regional/defaults/index.ts:146: * @standard ISO-4217:2015 currency-codes
-src/config/regional/defaults/index.ts:147: * @standard BCP-47 language-tag
-src/config/regional/defaults/index.ts:35: * @standard ISO-4217:2015 currency-codes alphabetic
-src/config/regional/defaults/index.ts:36: * @standard ISO-3166-1:2020 country-codes alpha-2
-src/config/regional/defaults/index.ts:37: * @standard BCP-47 language-tag locale-identifier
-src/config/regional/defaults/index.ts:58: * @standard ISO-4217:2015 §5 alphabetic-codes
+src/config/regional/defaults/index.ts:115: * @standard ISO-3166-1:2020 country-codes alpha-2
+src/config/regional/defaults/index.ts:116: * @standard ISO-4217:2015 currency-codes
+src/config/regional/defaults/index.ts:117: * @standard BCP-47 language-tag
+src/config/regional/defaults/index.ts:28: * @standard ISO-4217:2015 §5 alphabetic-codes
+src/config/regional/defaults/index.ts:7: * @standard ISO-4217:2015 currency-codes alphabetic
+src/config/regional/defaults/index.ts:8: * @standard ISO-3166-1:2020 country-codes alpha-2
+src/config/regional/defaults/index.ts:92: * @standard ISO-4217:2015 §5 alphabetic-codes
+src/config/regional/defaults/index.ts:9: * @standard BCP-47 language-tag locale-identifier
 src/config/test.ts:5: * @standard ISO/IEC-29119:2022 software-testing configuration-test
 src/config/types/index.ts:6: * @standard ISO-3166-1:2020 country-codes
 src/config/types/index.ts:7: * @standard ISO-4217:2015 currency-codes
@@ -2581,11 +2581,11 @@ src/self/closure/provider/signing.ts:54: * @standard eIDAS Regulation (EU) 910/2
 src/self/closure/provider/signing.ts:55: * @standard ETSI EN 319 102-1 §4.3 signature creation
 src/self/closure/provider/signing.ts:56: * @standard ETSI EN 319 132-1 XAdES (export compatibility)
 src/self/closure/provider/signing.ts:57: * @standard ETSI EN 319 142-1 PAdES (export compatibility)
-src/self/closure/types.ts:47: * @standard ISO/IEC 25010:2023 §5.6 reliability — fault tolerance via redundancy
-src/self/closure/types.ts:48: * @standard ISO 22301 business-continuity (self-hosted continuity tier)
-src/self/closure/types.ts:49: * @standard ISO 27001 Annex A.17 information-security continuity
-src/self/closure/types.ts:50: * @standard NIST SP 800-34 Rev. 1 §3.4 contingency planning
-src/self/closure/types.ts:51: * @standard BCBS 239 §5 IT infrastructure (single-point-of-failure avoidance)
+src/self/closure/types.ts:10: * @standard NIST SP 800-34 Rev. 1 §3.4 contingency planning
+src/self/closure/types.ts:11: * @standard BCBS 239 §5 IT infrastructure (single-point-of-failure avoidance)
+src/self/closure/types.ts:7: * @standard ISO/IEC 25010:2023 §5.6 reliability — fault tolerance via redundancy
+src/self/closure/types.ts:8: * @standard ISO 22301 business-continuity (self-hosted continuity tier)
+src/self/closure/types.ts:9: * @standard ISO 27001 Annex A.17 information-security continuity
 src/self/reference/erpax.profile.ts:11: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness (self-coherence)
 src/self/research/index.ts:24: * @standard NIST SP 800-162 ABAC — the access scope is the ownership boundary
 src/self/research/index.ts:25: * @standard OWASP ASVS V5 — least-privilege / IDOR-prevention (no cross-actor read)
@@ -4316,8 +4316,6 @@ src/commitments/and/contingencies/index.ts:21: * @accounting US-GAAP ASC-450-20-
 src/config/country/specifics/index.ts:18: * @accounting IFRS IAS-1 §51 fiscal-period
 src/config/country/specifics/index.ts:19: * @accounting US-GAAP ASC-270 interim-reporting fiscal-year
 src/config/examples/index.ts:7: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
-src/config/regional/defaults/index.ts:38: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates functional-currency
-src/config/regional/defaults/index.ts:39: * @accounting US-GAAP ASC-830 foreign-currency-matters reporting-currency
 src/config/types/index.ts:10: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/consolidation/eliminations/index.ts:14: * @accounting IFRS IFRS-10 §B86 consolidated-financial-statements
 src/consolidation/eliminations/index.ts:15: * @accounting IFRS IAS-21 §39 foreign-currency-translation-on-consolidation
@@ -5525,7 +5523,6 @@ src/ai/durable-objects.ts:178: * @audit ISO 19011:2018 §6.4.6 tamper-evident au
 src/ai/durable-objects.ts:21: * @audit ISO-19011:2018 audit-trail coordination-evidence
 src/ai/models/index.ts:20: * @audit ISO-19011:2018 audit-trail model-catalogue-changes
 src/ai/suggestions/index.ts:26: * @audit ISO-19011:2018 §6.4.6 audit-evidence ai-inference-trail
-src/allocation/index.ts:47: * @audit ISO 19011 — reward is a deterministic, auditable function (no discretion)
 src/analytics/TrendAnalysisCard.tsx:25: * @audit ISO-19011:2018 audit-trail trend-analysis
 src/analytics/index.ts:17: * @audit computed on the live uuid-matrix + balance/entropy/standards, never hand-asserted
 src/analytics/max-tamper-cost.ts:23: * @audit composed from @/tamper/cost crackVerdict at @/balance live coverage; never hand-asserted
@@ -6217,7 +6214,6 @@ src/self/closure/provider/index.ts:26: * @audit Conservation Law 53 self-referen
 src/self/closure/provider/notification.ts:35: * @audit Conservation Law 53 self-referential-closure
 src/self/closure/provider/search.ts:27: * @audit Conservation Law 53 self-referential-closure (search-index role)
 src/self/closure/provider/signing.ts:58: * @audit Conservation Law 53 self-referential-closure
-src/self/closure/types.ts:52: * @audit Conservation Law 53 self-referential-closure
 src/self/reference/erpax.profile.ts:12: * @audit ISO 19011:2018 §6.4.6 (platform observes itself)
 src/self/similar/index.ts:16: * @audit every quantity computed on (ℤ/9ℤ) via @/horo + @/rodin, never asserted
 src/self/sufficient/index.ts:28: * @audit Conservation Law 53 (self-referential closure — internal fallback can replay)
@@ -6228,7 +6224,6 @@ src/shared/AddressBlock.tsx:19: * @audit ISO-19011:2018 audit-trail consistent-r
 src/shared/AuditedTimestamp.tsx:17: * @audit ISO-19011:2018 audit-trail consistent-timestamps
 src/shared/Money.tsx:19: * @audit ISO-19011:2018 audit-trail consistent-formatting
 src/shared/address-validation.ts:9: * @audit ISO-19011:2018 audit-trail relocation-record
-src/shared/common.ts:9: * @audit ISO-19011:2018 audit-trail relocation-record
 src/shared/index.ts:25: * @audit ISO-19011:2018 audit-trail consistent-rendering
 src/shareds/versionedDrafts.ts:9: * @audit ISO-19011:2018 audit-trail content-versioning
 src/shares/index.ts:36: * @audit Conservation Law 59 uuid-based-sharing-with-rbac

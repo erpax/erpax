@@ -2,14 +2,14 @@ import type { CollectionConfig } from 'payload'
 
 import { authenticated } from '@/authenticated'
 import { auditTrailAfterChange } from '@/audit/trail/after/change'
-import { isSuperAdminAccess, isSuperAdminFieldAccess } from '@/is/super/admin'
+import { isSuperAdminAccess, fieldAccess } from '@/is/super/admin'
 import { localeRecord } from '@/i18n'
 import { updateAndDeleteAccess } from '@/tenants/access'
 import { normalizeTenantDomain, normalizeTenantSlug } from '@/tenants/hooks'
 
 const superAdminSecretsAccess = {
-  read: isSuperAdminFieldAccess,
-  update: isSuperAdminFieldAccess,
+  read: fieldAccess,
+  update: fieldAccess,
 } as const
 
 /**

@@ -25,6 +25,9 @@ repository-code: "https://github.com/erpax/erpax"
 url: "https://github.com/erpax/erpax"
 license: CC-BY-NC-ND-4.0
 license-url: "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+contact:
+  - email: "license@erpax.com"
+    name: "erpax licensing"
 version: 1.0.3
 keywords:
   - ERP

@@ -7,7 +7,7 @@ import { PanelLeft } from "lucide-react"
 
 import { exactFloor, seededRng } from "@/algebra"
 import { useIsMobile } from "@/hooks/use-mobile"
-import { cn } from "@/ui/utils"
+import { cn } from "@/ui/class"
 import { Button } from "@/ui/button"
 import { Input } from "@/ui/input"
 import { Separator } from "@/ui/separator"
