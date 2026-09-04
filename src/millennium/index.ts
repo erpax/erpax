@@ -1,8 +1,10 @@
+import { readFileSync, readdirSync } from 'node:fs'
+import { join } from 'node:path'
 /**
  * millennium — the Clay Millennium Problems as a testing ground: the waves CLASSIFY, they do not solve.
  *
- * Six open, one solved (by Perelman, not this corpus). `corpusSolvesAny()` is the literal false.
- * Refusing to fabricate a proof is the tools passing, not failing. @see ./SKILL.md
+ * Six open, one solved (by Perelman, not this corpus). `corpusSolvesAny()` READS the kernel files
+ * and is false by measurement — refusing to fabricate is the tools passing. @see ./SKILL.md
  */
 import { invert, manifest, survives, type InvertedPair, type Round, type Verdict } from '@/duel'
 
@@ -108,8 +110,75 @@ export const MILLENNIUM: readonly Problem[] = [
 ]
 
 /** Does the corpus solve ANY Millennium Problem? No. The honest answer, enforced by the register. */
-export function corpusSolvesAny(): boolean {
-  return MILLENNIUM.some((p) => (p.corpusSolves as boolean) === true) // always false
+/** The seven, as a matcher. A Clay problem is named in a theorem, or the theorem is about something else. */
+const CLAY = /riemann|navier|stokes|yang.?mills|mass.?gap|hodge|birch|swinnerton|poincar|p.?vs.?np|p_vs_np|millennium/i
+
+export interface ClayProof {
+  readonly file: string
+  readonly theorem: string
+}
+
+/**
+ * Kernel-file theorems that NAME a Clay problem and are not proved by `sorry`.
+ *
+ * This reads the `.lean` sources. A theorem name is a fact about a file's TEXT, and no
+ * declaration inside a Lean file can carry a claim about its own text — which is why the old
+ * refusal could not work wherever it was written.
+ */
+export function clayProofs(cwd: string = process.cwd()): ClayProof[] {
+  const out: ClayProof[] = []
+  const dir = join(cwd, 'src', 'verify', 'lean')
+  let files: string[] = []
+  try {
+    files = readdirSync(dir).filter((f) => f.endsWith('.lean'))
+  } catch {
+    return out
+  }
+  // NOTE the end-of-input assertion below is `(?![\s\S])`, not `\Z`. JavaScript has no `\Z` —
+  // it matches a literal Z — so a declaration with nothing after it was silently never captured,
+  // and a one-theorem file read as empty. The failure mode is a FALSE NEGATIVE in a refusal.
+  for (const f of files) {
+    const text = readFileSync(join(dir, f), 'utf8')
+    for (const m of text.matchAll(/^(?:theorem|lemma)\s+([A-Za-z_]\w*)([\s\S]*?)(?=^(?:theorem|lemma|def|end|namespace|--)|(?![\s\S]))/gm)) {
+      const [name, body] = [m[1]!, m[2] ?? '']
+      if (!CLAY.test(name)) continue
+      if (/\bsorry\b/.test(body)) continue // stated, not proved
+      out.push({ file: f, theorem: name })
+    }
+  }
+  return out
+}
+
+/**
+ * Does this corpus prove a Millennium Problem? COMPUTED from the proofs, not declared.
+ *
+ * It was `MILLENNIUM.some((p) => p.corpusSolves === true)` over a field whose TYPE is the literal
+ * `false`, with a comment reading `// always false`. A refusal that cannot go red is not a
+ * refusal — it was false because it was typed as false, and would have stayed false while the
+ * corpus filled with Clay proofs. A sibling repo found the identical shape in four of its own
+ * refusals (`physicalClaims = 0`, `noveltyEstablished = 0`) and named why it is the worst place
+ * for the defect: a refusal is the line a reader trusts without checking it.
+ *
+ * Now it reads the kernel files and can go true the moment someone writes a sorry-free theorem
+ * naming a Clay problem. It is `false` today because `clayProofs()` finds none, which is a
+ * measurement.
+ */
+export const corpusSolvesAny = (cwd: string = process.cwd()): boolean => clayProofs(cwd).length > 0
+
+/**
+ * Fails closed if a Clay proof appears without the register being updated to match.
+ *
+ * Zero is not a theorem here — someone may genuinely prove one — so this does not forbid the
+ * claim. It forbids the claim being made in Lean while the register still reads `corpusSolves:
+ * false`, which is the state where the corpus contradicts itself and the prose wins.
+ */
+export function assertRegisterMatchesProofs(cwd: string = process.cwd()): void {
+  const proofs = clayProofs(cwd)
+  if (proofs.length === 0) return
+  throw new Error(
+    `✖ millennium — ${proofs.length} kernel theorem(s) name a Clay problem without a sorry, while the register still declares corpusSolves: false:\n` +
+      proofs.map((p) => `  ${p.file}  ${p.theorem}`).join('\n'),
+  )
 }
 
 // ── INVERT TO SOLVE — the seven as duels, not as assertions ─────────────────────────────────────

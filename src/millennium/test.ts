@@ -1,17 +1,8 @@
 import { describe, it, expect } from 'vitest'
-import {
-  MILLENNIUM,
-  attempt,
-  challenges,
-  corpusSolvesAny,
-  lensFor,
-  open,
-  openChallenges,
-  problemMatrix,
-  renderMillenniumSection,
-  selfCells,
-  resolutionClaim,
-} from './index'
+import { mkdirSync, mkdtempSync, writeFileSync } from 'node:fs'
+import { tmpdir } from 'node:os'
+import { join } from 'node:path'
+import { MILLENNIUM, assertRegisterMatchesProofs, attempt, challenges, clayProofs, corpusSolvesAny, lensFor, open, openChallenges, problemMatrix, renderMillenniumSection, resolutionClaim, selfCells } from './index'
 
 // "The Clay Millennium Problems are the testing ground for the quantum waves." The only honest toolbox NAMES
 // them and refuses to solve them. Every entry's `corpusSolves` is the literal false — the type forbids claiming
@@ -184,5 +175,46 @@ describe('millennium — the statement and the named gap', () => {
     for (const p of MILLENNIUM) expect(md).toContain(p.statement)
     // and it gives a recompute path — Law 5
     expect(md).toMatch(/tsx src\/millennium|pnpm vitest/)
+  })
+})
+
+describe('millennium — the refusal is computed, so it can go red', () => {
+  const tree = (lean: Record<string, string>): string => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-clay-'))
+    mkdirSync(join(root, 'src/verify/lean'), { recursive: true })
+    for (const [name, body] of Object.entries(lean)) writeFileSync(join(root, 'src/verify/lean', name), body)
+    return root
+  }
+
+  // The defect this replaces: `MILLENNIUM.some((p) => p.corpusSolves === true)` over a field whose
+  // TYPE is the literal `false`, with a comment reading `// always false`. It was false because it
+  // was typed as false and would have stayed false while the corpus filled with Clay proofs. A
+  // refusal that cannot go red is the line a reader trusts without checking it.
+  it('goes TRUE on a planted sorry-free Clay theorem', () => {
+    const root = tree({ 'P.lean': 'theorem riemann_hypothesis_holds : True := trivial\n' })
+    expect(clayProofs(root).map((p) => p.theorem)).toEqual(['riemann_hypothesis_holds'])
+    expect(corpusSolvesAny(root)).toBe(true)
+    expect(() => assertRegisterMatchesProofs(root)).toThrow(/name a Clay problem without a sorry/)
+  })
+
+  it('a Clay theorem proved by SORRY is stated, not proved, and does not count', () => {
+    const root = tree({ 'P.lean': 'theorem navier_stokes_smooth : True := by sorry\n' })
+    expect(clayProofs(root)).toEqual([])
+    expect(corpusSolvesAny(root)).toBe(false)
+  })
+
+  it('a theorem about something else does not count, however sorry-free', () => {
+    const root = tree({ 'P.lean': 'theorem set_root_is_order_free : True := trivial\n' })
+    expect(clayProofs(root)).toEqual([])
+  })
+
+  it('an absent kernel directory refuses rather than throwing', () => {
+    expect(clayProofs(mkdtempSync(join(tmpdir(), 'erpax-empty-')))).toEqual([])
+  })
+
+  it('the live corpus proves none — a measurement, not a declaration', () => {
+    expect(clayProofs(process.cwd())).toEqual([])
+    expect(corpusSolvesAny(process.cwd())).toBe(false)
+    expect(() => assertRegisterMatchesProofs(process.cwd())).not.toThrow()
   })
 })
