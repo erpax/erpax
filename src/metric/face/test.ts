@@ -3,7 +3,7 @@ import { mkdtempSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { createHash } from 'node:crypto'
-import { ERPAX_PROTOCOL, RECEIPT_BOUNDARY, sealFace, verifyFace, verifyFaceFile, type MetricRow } from '.'
+import { erpaxProtocol, RECEIPT_BOUNDARY, sealFace, verifyFace, verifyFaceFile, type MetricRow } from '.'
 
 const rows = [
   { key: 'a', claim: 'first', value: '1', command: 'echo 1' },
@@ -78,7 +78,7 @@ describe('metric/face', () => {
     // emits one.
     const theirs = {
       repo: 'other',
-      protocol: { ...ERPAX_PROTOCOL, id: 'millennium/metric-face/1', covers: ['key', 'claim', 'value'] },
+      protocol: { ...erpaxProtocol(), id: 'millennium/metric-face/1', covers: ['key', 'claim', 'value'] },
       definition: 'd',
       rows: rows.map((r) => ({
         ...r,
