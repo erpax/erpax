@@ -50,6 +50,28 @@ The last is the point: **every divisor-fraction reduces to a UNIT fraction** who
 
 ## Real math, not the numerology
 
+## Is 432 forced, or a convention? (checked 2026-09-04)
+
+A sibling session offered a correction: whole-axis frequencies need `4 | n`, digital root nine needs
+`9 | n`, the two are coprime, so the constraint forces only the **class 36ℕ** — and 396 and 468
+satisfy it equally. The arithmetic is right, and it was verified here rather than taken:
+
+| | factorisation | `4 | n` | digital root | divisor lattice |
+| --- | --- | --- | ---: | --- |
+| 396 | 2²·3²·11 | ✓ | 9 | 3×3×2 (τ=18) |
+| **432** | **2⁴·3³** | ✓ | 9 | **5×4 (τ=20)** |
+| 468 | 2²·3²·13 | ✓ | 9 | 3×3×2 (τ=18) |
+
+**For that constraint the correction holds; for this atom's it does not.** The theorem below needs
+the divisor lattice to be the product of exactly **two** chains, which requires exactly two prime
+factors with exponents (4,3). 396 and 468 each carry a third prime, so their lattices are 3×3×2 —
+three chains, and no C5×C4. Within the claim made here, 432 is not one member of a class; it is the
+member that makes the claim true.
+
+That does not promote 432 anywhere else. Everywhere this corpus calls A432 *the anchor* it means a
+chosen constant, and nothing here derives 432 from first principles — which is why the correction
+found nothing to fix and this note records the boundary instead of a change.
+
 This is a **distributive divisor lattice** and an **order-reversing involution** — sealed as a **finite-complete** theorem because the domain is 20 elements, so the proof exhausts it rather than sampling ([[theorem]] proof-class). The number 432 earns its place here through the arithmetic that holds to the bit, never through 432-Hz mysticism — the same discipline that keeps [[rodin]] as group theory and rejects the metaphysics around it.
 
 **Honest boundary.** This proves the lattice of 432 is C5×C4 and its inversion is bit-exact — it does not claim 432 is special beyond being 2-smooth·3-smooth with those exponents; any n = pᵃ·qᵇ has the analogous C(a+1)×C(b+1) lattice. What is sealed is that FOR 432 the structure is exactly this, and the inversion computes exactly.
