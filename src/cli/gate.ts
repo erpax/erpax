@@ -83,6 +83,21 @@ export function runShell(cmd: string, passthrough: readonly string[] = [], heart
   const history = samplesMs ?? (heartbeatLabel ? samplesMsOf(heartbeatLabel) : [])
   const bound = history.length ? timeoutOf(history) : { ms: 300_000, minutes: 5 as const, exceeds: false }
   const started = Date.now()
+  // MEASURED 2026-09-04 — each lane is a fresh child, and a child costs before it reads a byte:
+  //
+  //     node trivial.mjs           0.07s        spawn→entry   ~0.7s
+  //     npx tsx trivial.ts         0.48s        imports       ~0.6s
+  //     pnpm exec tsx trivial.ts   0.57s        work           varies
+  //
+  // The cheapest REAL lane here (`erpax memory drift`, whose work is trivial) costs 2.10s. Seventeen
+  // lanes run serially therefore pay ≈34s of startup before any gate measures anything.
+  //
+  // Running them concurrently is the obvious fix and is NOT taken here, because the hazard is real
+  // and unmeasured: lanes regenerate artefacts and share `stdio: 'inherit'`, so two that write the
+  // same generated face would race and their output would interleave into an unreadable log. The
+  // number is recorded so whoever takes it starts from a measurement rather than a hunch — and the
+  // instrument that settles it is the three-point stamp (spawn→entry, imports, work) reported by
+  // the child itself, never inferred from the outside.
   const r = spawnSync(full, { shell: true, stdio: 'inherit', cwd: process.cwd(), timeout: bound.ms, killSignal: 'SIGKILL' })
   stop()
   if (r.signal) {
