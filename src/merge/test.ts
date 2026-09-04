@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import { merge, foldToRoot, atomPath, BOTTOM, merkleProof, verifyMerkleProof, chainLeaf, canonical, collisionClasses } from './index'
 
 describe('merge — the binary operation of the folded algebra', () => {
@@ -21,7 +22,7 @@ describe('merge — the binary operation of the folded algebra', () => {
     expect(foldToRoot([])).toBe(foldToRoot([])) // the empty fold is the void's address — the identity
   })
   it('exports the canonical atom path', () => {
-    expect(atomPath).toBe('merge')
+    expect(atomPath).toBe(atomAddress(import.meta.url).path)
   })
 })
 

@@ -5,6 +5,7 @@
  * @see ./index.ts · ../catalogue.ts · ../../quantum/ftl
  */
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import {
   atomPath,
   standardAddress,
@@ -29,7 +30,7 @@ import { STANDARDS_CATALOGUE } from '@/standards/catalogue'
 
 describe('standards/improve — address index (reuse≠search)', () => {
   it('names its path (improve, not FTL core) and addresses every catalogue id deterministically', () => {
-    expect(atomPath).toBe('standards/improve')
+    expect(atomPath).toBe(atomAddress(import.meta.url).path)
     const id = STANDARDS_CATALOGUE[0]!.id
     expect(standardAddress(id)).toBe(standardAddress(id))
     expect(standardAddress(id)).not.toBe(standardAddress(id + ':other'))

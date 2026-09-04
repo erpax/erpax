@@ -1,5 +1,6 @@
 import { algebraLog2 } from '@/algebra'
 import { describe, it, expect, afterAll } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import { mkdtempSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
@@ -20,7 +21,7 @@ import {
 
 describe('quantum/computer — one face, seven organs', () => {
   it('names its path and carries every organ as a live binding', () => {
-    expect(atomPath).toBe('quantum/computer')
+    expect(atomPath).toBe(atomAddress(import.meta.url).path)
     // one probe per organ family — pure calls, no corpus scan (the census is the CLI's job)
     expect(wavesOf(new Map([['a', ['b']], ['b', []]])).length).toBe(2) // scheduler
     expect(timeoutOf([10_000]).minutes).toBe(1) // bounds

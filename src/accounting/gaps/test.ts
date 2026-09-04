@@ -1,10 +1,11 @@
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import { deriveFolderModel } from '@/readme/compute'
 import { P0_ACCOUNTING_LEAVES, P0_ACCOUNTING_ROOT, p0AccountingStatus, formatAccountingGapsReport } from './index'
 
 describe('accounting/gaps', () => {
   it('P0 accounting subtree has parent + 9 leaves', () => {
-    expect(P0_ACCOUNTING_ROOT).toBe('accounting')
+    expect(P0_ACCOUNTING_ROOT).toBe(atomAddress(import.meta.url).parent)
     expect(P0_ACCOUNTING_LEAVES).toHaveLength(9)
   })
   // BOUNDED-WITNESS: p0AccountingStatus(cwd) maps deriveFolderModel over all 9 leaves (full-tree,

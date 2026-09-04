@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import { mkdtempSync, writeFileSync, rmSync, mkdirSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
@@ -13,7 +14,7 @@ const fixture = (body: string): { cwd: string; path: string } => {
 
 describe('anchor — the content-address links inside and outside, both ways', () => {
   it('names its path', () => {
-    expect(atomPath).toBe('anchor')
+    expect(atomPath).toBe(atomAddress(import.meta.url).leaf)
   })
 
   it('inside → outside: the content computes its own address', () => {

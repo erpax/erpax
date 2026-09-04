@@ -1,11 +1,12 @@
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import { PART, CANONICAL, PARENT, atomPath } from '@/computer/hardware'
 
 describe('computer/hardware — vocabulary pivot', () => {
   it('names the part and its canonical atom', () => {
-    expect(PART).toBe('hardware')
-    expect(CANONICAL).toBe('hardware')
-    expect(PARENT).toBe('computer')
-    expect(atomPath).toBe('computer/hardware')
+    expect(PART).toBe(atomAddress(import.meta.url).leaf)
+    expect(CANONICAL).toBe(atomAddress(import.meta.url).leaf)
+    expect(PARENT).toBe(atomAddress(import.meta.url).parent)
+    expect(atomPath).toBe(atomAddress(import.meta.url).path)
   })
 })

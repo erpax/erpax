@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import { asksFromWaveOutput, feedWavesIntoThemselves, atomPath } from '@/wave/feed'
 import {
   endlessBankResearchDevelop,
@@ -9,7 +10,7 @@ import {
 
 describe('wave/feed — feed waves into themselves', () => {
   it('names its path', () => {
-    expect(atomPath).toBe('wave/feed')
+    expect(atomPath).toBe(atomAddress(import.meta.url).path)
   })
 
   it('asksFromWaveOutput consumes develop/domain/questions/findings into next asks', () => {

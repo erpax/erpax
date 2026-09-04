@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import { mkdtempSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
@@ -21,7 +22,7 @@ const NODES = [
 
 describe('gate/rosetta — the incremental fold-first gate', () => {
   it('exports its atom path', () => {
-    expect(atomPath).toBe('gate/rosetta')
+    expect(atomPath).toBe(atomAddress(import.meta.url).path)
   })
 
   it('atomDeeds keys every atom by path to a stable deed', () => {

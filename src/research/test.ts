@@ -1,9 +1,10 @@
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import { volume, atomPath, spreadOf } from './index'
 describe('research — book matter', () => {
   it('exports volume identity', () => {
-    expect(volume).toBe('research')
-    expect(atomPath).toBe('research')
+    expect(volume).toBe(atomAddress(import.meta.url).path)
+    expect(atomPath).toBe(atomAddress(import.meta.url).path)
   })
   it('spreadOf is non-negative', () => {
     const s = spreadOf()

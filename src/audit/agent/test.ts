@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
@@ -15,7 +16,7 @@ const corpus = (files: Record<string, string>): string => {
 
 describe('audit/agent — audit the agent as a real auditor audits a human', () => {
   it('names its path', () => {
-    expect(atomPath).toBe('agent')
+    expect(atomPath).toBe(atomAddress(import.meta.url).leaf)
   })
 
   // The auditor's core move: a control (a claim) with no test of it is a submission with no evidence.

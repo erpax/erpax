@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import {
   atomPath,
   realiseEarth,
@@ -17,7 +18,7 @@ import { atPole } from '@/globe'
 
 describe('earth — realised by computing poles as a pyramid', () => {
   it('names its path', () => {
-    expect(atomPath).toBe('earth')
+    expect(atomPath).toBe(atomAddress(import.meta.url).path)
   })
 
   it('square pyramid Euler: V−E+F = 2', () => {

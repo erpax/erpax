@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import {
   atomPath,
   authorityOf,
@@ -20,7 +21,7 @@ const judge: Judge = (meaning) => (meaning.includes('forbidden') ? 'refuse' : 'a
 
 describe('message/local — the gate follows the effect, not the wire', () => {
   it('exports its atom path', () => {
-    expect(atomPath).toBe('message/local')
+    expect(atomPath).toBe(atomAddress(import.meta.url).path)
   })
 
   it('law 1 — a local-only fabric never trips the send gate', () => {

@@ -1,9 +1,10 @@
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import { atomPath, trendOf, sequenceOf } from '@/wave/audit'
 
 describe('wave/audit — the reciprocal face', () => {
   it('names its path and carries the audit-wave surface', () => {
-    expect(atomPath).toBe('wave/audit')
+    expect(atomPath).toBe(atomAddress(import.meta.url).path)
     expect(trendOf(2, 1)).toBe('improving')
     expect(sequenceOf([])).toEqual([])
   })

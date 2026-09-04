@@ -1,9 +1,10 @@
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import { given, FOLDED_ASSUMPTIONS, atomPath } from './index'
 
 describe('conditional — the unprovable folded proves another thing', () => {
   it('names its path', () => {
-    expect(atomPath).toBe('conditional')
+    expect(atomPath).toBe(atomAddress(import.meta.url).path)
   })
 
   // The implication H ⇒ Y is a THEOREM even when H is unproven. given(H).proves(Y, ⇒) evaluates the fold.

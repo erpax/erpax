@@ -1,11 +1,12 @@
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import { throughVoid, VOID_PIVOT } from '@/horo'
 import { auditAuditors } from '@/audit/agent'
 import { isFixedPoint, isInvolution, selfMeasure, atomPath } from './index'
 
 describe('fixpoint — the paradox proves itself: a self-measure refutes itself or rests', () => {
   it('names its path', () => {
-    expect(atomPath).toBe('fixpoint')
+    expect(atomPath).toBe(atomAddress(import.meta.url).path)
   })
 
   // FIXED POINT 1 — the void rotation. 5 through the void is 5: the one step that reflects to itself.

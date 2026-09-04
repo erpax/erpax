@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import {
   atomPath,
   isClassicalBit,
@@ -16,7 +17,7 @@ import { DOUBLING } from '@/rodin'
 
 describe('qubit', () => {
   it('atomPath', () => {
-    expect(atomPath).toBe('qubit')
+    expect(atomPath).toBe(atomAddress(import.meta.url).path)
   })
 
   it('classical bit is 0|1', () => {

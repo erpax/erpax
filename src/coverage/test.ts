@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
@@ -15,7 +16,7 @@ const corpus = (files: Record<string, string>): string => {
 
 describe('coverage — the development waves ARE theorems, computed not written', () => {
   it('names its path', () => {
-    expect(atomPath).toBe('coverage')
+    expect(atomPath).toBe(atomAddress(import.meta.url).path)
   })
 
   it('a cell is covered iff a PROVEN control cites its standard', () => {

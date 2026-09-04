@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
@@ -12,7 +13,7 @@ const corpus = (files: Record<string, string>): string => {
 
 describe('accounting/proof — realtime double-entry of claims against proofs', () => {
   it('names its path', () => {
-    expect(atomPath).toBe('proof')
+    expect(atomPath).toBe(atomAddress(import.meta.url).leaf)
   })
 
   // A claim is a DEBIT; a proof beside it is the CREDIT; the ledger balances when they match.

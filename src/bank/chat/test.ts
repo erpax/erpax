@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import {
   atomPath,
   sealQuantumSecure,
@@ -20,7 +21,7 @@ const BANKS: readonly InterbankParticipant[] = [
 
 describe('bank/chat — banks chat · quantum-secure banking', () => {
   it('names its path and seals a quantum-secure corpus', () => {
-    expect(atomPath).toBe('bank/chat')
+    expect(atomPath).toBe(atomAddress(import.meta.url).path)
     expect(QUANTUM_SECURE_BANKING_CORPUS.length).toBeGreaterThanOrEqual(4)
   })
 

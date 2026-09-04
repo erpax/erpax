@@ -1,11 +1,12 @@
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import { commentsOf, commentSites, lineColumnOf, boundNames, importSpecifiersOf, atomPath } from './index'
 
 const f = 'x.ts'
 
 describe('syntax — what the grammar says, not what a pattern guesses', () => {
   it('names its path', () => {
-    expect(atomPath).toBe('syntax')
+    expect(atomPath).toBe(atomAddress(import.meta.url).path)
   })
 
   describe('commentsOf — a comment is where prose lives; everything else is data', () => {

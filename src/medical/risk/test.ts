@@ -1,12 +1,13 @@
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import { PART, CANONICAL, PARENT, atomPath, reexportFrom } from '@/medical/risk'
 
 describe('medical/risk — vocabulary pivot', () => {
   it('names the medical facet and its canonical atom', () => {
-    expect(PART).toBe('risk')
-    expect(CANONICAL).toBe('risk')
-    expect(PARENT).toBe('medical')
-    expect(atomPath).toBe('medical/risk')
-    expect(reexportFrom).toBe('@/risk')
+    expect(PART).toBe(atomAddress(import.meta.url).leaf)
+    expect(CANONICAL).toBe(atomAddress(import.meta.url).leaf)
+    expect(PARENT).toBe(atomAddress(import.meta.url).parent)
+    expect(atomPath).toBe(atomAddress(import.meta.url).path)
+    expect(reexportFrom).toBe(atomAddress(import.meta.url).canonical)
   })
 })

@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import {
   atomPath,
   GLOBAL_BANKING_CORPUS,
@@ -18,7 +19,7 @@ import { isPain002TransactionStatus } from '@/iso/20022'
 
 describe('bank/research — deep research global banking via chat waves', () => {
   it('names its path (research, not FTL core) and seals a global-banking corpus', () => {
-    expect(atomPath).toBe('bank/research')
+    expect(atomPath).toBe(atomAddress(import.meta.url).path)
     expect(GLOBAL_BANKING_CORPUS.length).toBeGreaterThanOrEqual(8)
     expect(GLOBAL_BANKING_ASKS.length).toBeGreaterThanOrEqual(6)
   })

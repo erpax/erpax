@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
@@ -12,7 +13,7 @@ const corpus = (files: Record<string, string>): string => {
 
 describe('rules/confine — the registry is handled by the field, not by holding every particle', () => {
   it('names its path', () => {
-    expect(atomPath).toBe('confine')
+    expect(atomPath).toBe(atomAddress(import.meta.url).leaf)
   })
 
   // The exact shape that collapsed the boot: a namespace import of the whole registry, outside the config.

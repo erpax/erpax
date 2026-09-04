@@ -1,9 +1,10 @@
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import { pathWords, echoes, assertNoNewEchoes, atomPath } from './index'
 
 describe('rules/echo — a path that restates itself has not folded its meaning', () => {
   it('names its path', () => {
-    expect(atomPath).toBe('echo')
+    expect(atomPath).toBe(atomAddress(import.meta.url).leaf)
   })
 
   it('splits a path into meaning-words — segments, hyphens, dots, camelCase', () => {

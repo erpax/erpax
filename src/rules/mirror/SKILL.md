@@ -12,9 +12,14 @@ counted, by every gate in this corpus, as a **proof**.
 | | count (2026-09-04) |
 | --- | ---: |
 | `test.ts` files scanned | 1,417 |
-| **assertions restating a literal their own module assigns** | **507** |
+| **assertions restating a literal their own module assigns** | **507 → 55** |
 | atoms holding at least one | 188 |
 | **of those, citing a standard or a statute** | **25** |
+
+453 of the 507 were asking a real question badly: an atom's declared name is a claim about where it
+lives, and where it lives is a fact. Pointed at the filesystem by [[atom]]/address they became
+refutable, and a one-letter change to a constant now reddens its atom. The remaining **55** are the
+honest residue — an `INDEX` of `5` is not an address, and no theorem derives it from the tree.
 
 ## Where it was found, and why that matters more than the number
 

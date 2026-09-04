@@ -1,11 +1,12 @@
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import { partyUuid, isSameParty, rolesOf, atomPath } from './index'
 
 const acme = { country: 'BG', taxId: '123456789' }
 
 describe('party/identity — a party is what it IS, not what it is to you', () => {
   it('names its path', () => {
-    expect(atomPath).toBe('identity')
+    expect(atomPath).toBe(atomAddress(import.meta.url).leaf)
   })
 
   /**

@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import { idOf, atomPath } from './index'
 
 describe('relation — the id a relationship points at, whatever depth resolved it to', () => {
@@ -39,6 +40,6 @@ describe('relation — the id a relationship points at, whatever depth resolved 
   })
 
   it('names its path', () => {
-    expect(atomPath).toBe('relation')
+    expect(atomPath).toBe(atomAddress(import.meta.url).path)
   })
 })

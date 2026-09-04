@@ -243,10 +243,10 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // ([[deploy]]/fold). Baseline 0 is a THEOREM: a fold that folds nothing is silent by design,
     // which is how ~4 MiB of corpus matrix shipped until Cloudflare refused the upload.
     guardian({ axis: 'production-fold', violations: staleFolds(cwd).length, baseline: 0 }),
-    // mirror — an assertion restating a literal its own module assigns ([[rules]]/mirror). Baseline
-    // is the live 507 and ratchets DOWN: a mirror is a proof that cannot fail, and 25 of them stand
-    // in atoms citing a standard or statute, where "this is proven" is addressed to a reader who signs.
-    guardian({ axis: 'mirror', violations: mirroredAssertions(cwd).length, baseline: 507 }),
+    // mirror — an assertion restating a literal its own module assigns ([[rules]]/mirror). 507 at
+    // discovery, 55 now: 453 were address claims and became refutable against the filesystem
+    // ([[atom]]/address). The residue is what no theorem derives from the tree — an `INDEX` of 5.
+    guardian({ axis: 'mirror', violations: mirroredAssertions(cwd).length, baseline: 55 }),
     // forge — a registered identifier (DOI/ORCID/ISBN/IBAN) built from local randomness
     // ([[rules]]/forge). Baseline 0 is a THEOREM, not a ratchet: there is no acceptable number of
     // forged provenance records. Three existed — all in functions that logged "[ZENODO] Publishing"

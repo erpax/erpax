@@ -1,9 +1,10 @@
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import { isPrime, factor, FIRST_PRIMES, atomPath } from './index'
 
 describe('prime — the multiplicative basis, factoring is the decode fold', () => {
   it('names its path', () => {
-    expect(atomPath).toBe('prime')
+    expect(atomPath).toBe(atomAddress(import.meta.url).path)
   })
 
   it('isPrime is deterministic and exact — the small primes and their neighbours', () => {

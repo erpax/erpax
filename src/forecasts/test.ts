@@ -1,10 +1,11 @@
 import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
+import { atomAddress } from '@/atom/address'
 import { atomPath, forecastTip, forecastTipRing, forecastEarth } from '@/forecasts'
 
 describe('forecasts — phase-locked Earth tip forecasts', () => {
   it('names its path', () => {
-    expect(atomPath).toBe('forecasts')
+    expect(atomPath).toBe(atomAddress(import.meta.url).path)
   })
 
   it('forecastTip advances +90° on the ring; tip keeps ±ω label', () => {
