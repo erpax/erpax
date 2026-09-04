@@ -1,5 +1,15 @@
 import { describe, it, expect } from 'vitest'
-import { creditsOf, fundingOf, paperMetadata, paperTex, priorArt, referencesOf, runPapers } from './index'
+import {
+  assertPaperPinsVersion,
+  creditsOf,
+
+  fundingOf,
+  paperMetadata,
+  paperTex,
+  priorArt,
+  referencesOf,
+  runPapers,
+} from './index'
 
 const fakeFetch = (body: unknown, ok = true, status = 200): typeof fetch =>
   (async () => ({ ok, status, json: async () => body })) as unknown as typeof fetch
@@ -70,7 +80,8 @@ describe('publish/paper — the paper cannot overclaim', () => {
 
   it('carries the archive address, so the paper resolves to what it describes', () => {
     const tex = paperTex(base)
-    expect(tex).toContain('10.5281/zenodo.22237698')
+    expect(tex).toContain('10.5281/zenodo.22288360') // the VERSION record this was built from
+    expect(tex).toContain('10.5281/zenodo.22237698') // …and all versions, named as such
     expect(tex).toContain('\\begin{document}')
     expect(tex).toContain('\\end{document}')
   })
@@ -178,6 +189,7 @@ describe('publish/paper — funding and credits, assembled not typed', () => {
   it('assembles credits from the corpus, so nothing is typed per paper', () => {
     const c = creditsOf('duality/mirror').join('\n')
     expect(c).toContain('CC-BY-NC-ND-4.0')
+    expect(c).toContain('10.5281/zenodo.22288360')
     expect(c).toContain('10.5281/zenodo.22237698')
     expect(c).toContain('RFC 9562')       // read from the atom's own SKILL
     expect(c).toContain('No grant award is claimed')
@@ -187,5 +199,45 @@ describe('publish/paper — funding and credits, assembled not typed', () => {
     const tex = paperTex({ claim: 'c', atomPath: 'duality/mirror', boundary: 'b' })
     expect(tex).toContain('Funding and credits')
     expect((tex.match(/(?<!\\)\$/g) ?? []).length % 2).toBe(0)
+  })
+})
+
+describe('publish/paper — a paper names the fixed record it was built from', () => {
+  const tex = paperTex({
+    atomPath: 'rules/drift',
+    claim: 'prose may not restate a number the corpus computes',
+    boundary: 'proves disagreement with the arbiter, not that the surrounding prose is right',
+    method: 'read the matrix, compare every stated count',
+    result: '7 disagreements, now 0',
+  })
+
+  it('the date line carries the VERSION doi, never the concept doi beside a version number', () => {
+    const date = /\\date\{[^}]*\}/.exec(tex)![0]
+    expect(date).toContain('10.5281/zenodo.22288360')
+    expect(date).not.toContain('10.5281/zenodo.22237698')
+  })
+
+  it('Availability distinguishes THIS VERSION from all versions', () => {
+    expect(tex).toContain('Archived record (this version)')
+    expect(tex).toContain('All versions')
+  })
+
+  it('the deposition keeps isPartOf on the concept doi and isDerivedFrom on the version', () => {
+    const meta = paperMetadata({
+      atomPath: 'rules/drift',
+      claim: 'c',
+      boundary: 'b',
+      method: 'm',
+      result: 'r',
+    })
+    const rel = meta.related_identifiers as { identifier: string; relation: string }[]
+    // isPartOf points at the WORK — every version — so the concept doi is right there by design
+    expect(rel).toContainEqual({ identifier: '10.5281/zenodo.22237698', relation: 'isPartOf', scheme: 'doi' })
+    expect(rel).toContainEqual({ identifier: '10.5281/zenodo.22288360', relation: 'isDerivedFrom', scheme: 'doi' })
+  })
+
+  it('fails closed on a paper that names only the moving DOI', () => {
+    expect(() => assertPaperPinsVersion(tex)).not.toThrow()
+    expect(() => assertPaperPinsVersion('\\date{erpax v1 --- 10.5281/zenodo.22237698}')).toThrow(/names no version DOI/)
   })
 })

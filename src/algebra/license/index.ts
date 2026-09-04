@@ -1,3 +1,5 @@
+import { readFileSync, readdirSync } from 'node:fs'
+import { join, relative } from 'node:path'
 import { ERPAX_DOI, ERPAX_SPDX, LICENSE_CONTACT, SOURCE_URL } from './generated'
 
 /**
@@ -100,3 +102,51 @@ export function citationComplies(text: string): boolean {
 }
 
 /** @index-cross.foldback child=algebra/license parent=algebra — this cross folds back into its parent. */
+
+export interface UncitedPage {
+  readonly file: string
+}
+
+/**
+ * Generated pages carrying no compliant citation.
+ *
+ * Every generated face REPRODUCES corpus matter, and CC-BY-NC-ND §3(a)(1) asks for attribution
+ * with the source link on each reproduction. Measured 2026-09-04: **0 of 6,943 pages carried
+ * one** — the corpus stated the law in its own agent rules and did not obey it on its own output.
+ *
+ * SKILL.md is excluded: it is authored source, not a generated face, and sweeping 3,473 authored
+ * files is a manifest ([[rules]]/manifest), not a side effect of this gate.
+ */
+export function uncitedPages(cwd: string = process.cwd()): UncitedPage[] {
+  const out: UncitedPage[] = []
+  const walk = (d: string): void => {
+    let entries: import('node:fs').Dirent[]
+    try {
+      entries = readdirSync(d, { withFileTypes: true })
+    } catch {
+      return
+    }
+    for (const e of entries) {
+      if (e.name.startsWith('.') || e.name === 'node_modules') continue
+      const p = join(d, e.name)
+      if (e.isDirectory()) {
+        walk(p)
+        continue
+      }
+      if (e.name !== 'README.md' && e.name !== 'LLM.md') continue
+      if (!citationComplies(readFileSync(p, 'utf8'))) out.push({ file: relative(cwd, p) })
+    }
+  }
+  walk(join(cwd, 'src'))
+  return out
+}
+
+/** Fails closed: a page that reproduces corpus matter without attribution is a licence breach. */
+export function assertPagesCited(cwd: string = process.cwd(), ceiling = 0): void {
+  const bad = uncitedPages(cwd)
+  if (bad.length <= ceiling) return
+  throw new Error(
+    `✖ algebra/license — ${bad.length} generated page(s) carry no compliant citation (ceiling ${ceiling}):\n` +
+      bad.slice(0, 12).map((b) => `  ${b.file}`).join('\n'),
+  )
+}

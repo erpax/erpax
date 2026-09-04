@@ -19,6 +19,7 @@ import { kernelPath, reflexiveTheorems, unacceptedProofs } from '@/proof/accepte
 import { unbackedPhenomena } from '@/quantum/interval'
 import { unbackedFigures } from '@/render/scene'
 import { rootCollisions, undeclaredRoots } from '@/merge/order'
+import { uncitedPages } from '@/algebra'
 import { replaceableStandards } from '@/proof/replaceable'
 import { unreadSurfaces } from '@/rules/domain'
 import { startProgressHeartbeat } from '@/cli/progress-heartbeat'
@@ -307,6 +308,10 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // cite 265 standards and 22 are gated; each remaining line is a theorem not yet written.
     // Counts the REPLACEABLE ones only: citing a statute is not a regression.
     guardian({ axis: 'standards-assumed', violations: replaceableStandards(cwd).length, baseline: 242 }),
+    // pages-cited — a GENERATED page reproducing corpus matter with no attribution. 0 of 6,943
+    // carried one: the corpus stated the licence law in its agent rules and did not obey it on its
+    // own output. Now computed from the licence face, so it cannot drift. Zero is a theorem.
+    guardian({ axis: 'pages-cited', violations: uncitedPages(cwd).length, baseline: 0 }),
   ])
   const provenSeal = seal([
     guardian({

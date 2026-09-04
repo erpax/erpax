@@ -53,7 +53,7 @@ export function citingAtoms(cwd: string = process.cwd()): CitingAtom[] {
  * signature from a third party. No amount of reading `src` decides them, and pretending
  * otherwise would manufacture exactly the false conformance these gates exist to refuse.
  */
-export const EMPIRICAL = [
+const EMPIRICAL = [
   'ISO 26324', // DOI — assigned by a registration agency ([[rules]]/forge)
   'RFC 3161', // trusted timestamp — a third party's signature
   'ISO 17442', // LEI — issued by a LOU
@@ -62,6 +62,9 @@ export const EMPIRICAL = [
   'ЗСч',
   'SOX', // §302 is a natural person's certification — no gate signs it
 ] as const
+
+/** The declared list, as a function — an exported constant is seal-debt ([[matrix]]/constants-audit). */
+export const empiricalStandards = (): readonly string[] => EMPIRICAL
 
 /** Normalise a standard to its identity: `ISO-19011:2018` and `ISO 19011:2018` are one standard. */
 export const standardKey = (raw: string): string =>

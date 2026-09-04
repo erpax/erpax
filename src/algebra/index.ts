@@ -425,10 +425,14 @@ export {
   LICENSE_CONTACT,
   ERPAX_DOI,
   ERPAX_SPDX,
+  ERPAX_VERSION_DOI,
   SOURCE_URL,
   erpaxLicenseNote,
   citation,
   citationComplies,
+  uncitedPages,
+  assertPagesCited,
+  type UncitedPage,
   type CitationInput,
 } from './license'
 

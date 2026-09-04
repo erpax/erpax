@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { ERPAX_DOI, ERPAX_SPDX, SOURCE_URL } from '@/algebra'
+import { ERPAX_DOI, ERPAX_SPDX, ERPAX_VERSION_DOI, SOURCE_URL } from '@/algebra'
 /**
  * publish/paper — a lean LaTeX paper per sealed claim, and an HONEST prior-art verdict.
  *
@@ -161,7 +161,14 @@ export function referencesOf(atomPath: string, cwd: string = process.cwd()): Ref
  * credits — the drift law applied to attribution.
  */
 export function creditsOf(atomPath: string, cwd: string = process.cwd()): string[] {
-  const lines = [`© erpax — ${ERPAX_SPDX}, or commercial via license@erpax.com`, `Source: ${SOURCE_URL}`, `Archived: ${ERPAX_DOI}`]
+  const lines = [
+    `© erpax — ${ERPAX_SPDX}, or commercial via license@erpax.com`,
+    `Source: ${SOURCE_URL}`,
+    // the VERSION doi: a credit names the record this paper was built from, and a concept doi
+    // would name whatever is newest — a citation that changes its mind ([[publish]]/harvest)
+    `Archived record: ${ERPAX_VERSION_DOI}`,
+    `All versions: ${ERPAX_DOI}`,
+  ]
   const refs = referencesOf(atomPath, cwd)
   if (refs.length) lines.push(`Built against: ${refs.map((r) => r.label.split('—')[0]!.trim()).join(' · ')}`)
   const fund = fundingOf(cwd)
@@ -253,7 +260,10 @@ export function paperMetadata(input: PaperInput, cwd: string = process.cwd()): R
     related_identifiers: [
       { identifier: atomUrl, relation: 'isSupplementTo', scheme: 'url' },
       { identifier: SOURCE_URL, relation: 'isSupplementTo', scheme: 'url' },
+      // isPartOf points at the WORK — every version — so this one is the concept doi by design
       { identifier: ERPAX_DOI, relation: 'isPartOf', scheme: 'doi' },
+      // …and the paper is derived from one fixed snapshot, which only a version doi can name
+      { identifier: ERPAX_VERSION_DOI, relation: 'isDerivedFrom', scheme: 'doi' },
       ...(input.contentUuid ? [{ identifier: `urn:uuid:${input.contentUuid}`, relation: 'isIdenticalTo', scheme: 'urn' }] : []),
       ...refs.filter((r) => r.url !== null).map((r) => ({ identifier: r.url as string, relation: 'references', scheme: 'url' })),
     ],
@@ -327,7 +337,7 @@ export function paperTex(input: PaperInput, cwd: string = process.cwd()): string
 }
 \\title{${escapeTex(input.claim)}}
 \\author{Tsvetan Rouschev\\\\\\url{https://orcid.org/0009-0000-7312-9778}}
-\\date{erpax v${escapeTex(version)} --- \\href{https://doi.org/${escapeTex(ERPAX_DOI)}}{${escapeTex(ERPAX_DOI)}}}
+\\date{erpax v${escapeTex(version)} --- \\href{https://doi.org/${escapeTex(ERPAX_VERSION_DOI)}}{${escapeTex(ERPAX_VERSION_DOI)}}}
 \\begin{document}
 \\maketitle
 
@@ -358,7 +368,8 @@ ${escapeTex(input.boundary)}
 \\begin{itemize}
   \\item Gate enforcing this claim: \\url{${atomUrl}}
   \\item Repository: \\url{${SOURCE_URL}}
-  \\item Archived record: \\href{https://doi.org/${escapeTex(ERPAX_DOI)}}{${escapeTex(ERPAX_DOI)}}
+  \\item Archived record (this version): \\href{https://doi.org/${escapeTex(ERPAX_VERSION_DOI)}}{${escapeTex(ERPAX_VERSION_DOI)}}
+  \\item All versions: \\href{https://doi.org/${escapeTex(ERPAX_DOI)}}{${escapeTex(ERPAX_DOI)}}
   \\item Licence: ${escapeTex(ERPAX_SPDX)} --- commercial terms via \\url{mailto:license@erpax.com}
 \\end{itemize}
 
@@ -375,6 +386,28 @@ ${
           .join('\n')}\n\\end{enumerate}\n`
   }\\end{document}
 `
+}
+
+/**
+ * A paper must name the FIXED record it was built from.
+ *
+ * A concept DOI resolves to whatever version is newest, so a paper carrying only that one cites a
+ * target that can change after it is written — the citation still resolves, to something else
+ * ([[publish]]/harvest). ISO 19011 §6.4 asks that a citation lead to THE evidence.
+ *
+ * The concept DOI is not forbidden: it is correct for "all versions", and the paper prints both.
+ * What is forbidden is a paper naming only the moving one.
+ */
+export function assertPaperPinsVersion(tex: string): void {
+  if (!tex.includes(ERPAX_VERSION_DOI)) {
+    throw new Error(
+      `✖ publish/paper — the paper names no version DOI (${ERPAX_VERSION_DOI}); a concept DOI alone cites whatever is newest`,
+    )
+  }
+  const date = /\\date\{[^}]*\}/.exec(tex)?.[0] ?? ''
+  if (date.includes(ERPAX_DOI) && !date.includes(ERPAX_VERSION_DOI)) {
+    throw new Error('✖ publish/paper — the date line states a version number beside a concept DOI, which contradicts it')
+  }
 }
 
 export interface PaperRun {

@@ -25,12 +25,7 @@ export function zenodoRecordId(doi: string): string | null {
   return m?.[1] ?? null
 }
 
-/**
- * A Zenodo DOI is one of two DIFFERENT things, and the difference decides reproducibility.
- *
- * `concept` resolves to whatever version is newest — so a claim pinned to one can change meaning
- * after it is cited. `version` names a fixed record and cannot.
- */
+/** Two DIFFERENT things: `concept` resolves to whatever is newest, `version` to a fixed record. */
 export type DoiKind = 'version' | 'concept' | 'unknown'
 
 export interface DoiVerdict {
@@ -52,12 +47,7 @@ const UA = 'erpax-harvest/1.0 (+https://github.com/erpax/erpax)'
 const defaultFetch: Fetcher = (url) =>
   fetch(url, { headers: { 'user-agent': UA, accept: 'application/json, application/xml' } })
 
-/**
- * Ask the registry what this DOI is. REFUSES rather than guessing when it cannot ask.
- *
- * "The question could not be put" and "the answer was no" are different facts, and only one of
- * them is bad news — the same rule [[proof]]/register applies to a kernel it cannot reach.
- */
+/** Ask the registry. REFUSES rather than guessing: "could not ask" ≠ "the answer was no". */
 export async function resolveDoi(doi: string, fetcher: Fetcher = defaultFetch): Promise<DoiVerdict> {
   const id = zenodoRecordId(doi)
   if (id === null) return { doi, kind: 'unknown', versionDoi: null, recordId: null, title: null, harvestable: false }
@@ -101,16 +91,34 @@ export function doiOfHarvest(xml: string): string | null {
   return /<identifier identifierType="DOI">([^<]+)</.exec(xml)?.[1]?.trim() ?? null
 }
 
-/**
- * Which DOI belongs where.
- *
- * Citing the SOFTWARE means "all versions", and the concept DOI is correct — that is what it is
- * for. Citing a RESULT means a fixed record, and only a version DOI can carry it; a concept DOI
- * there is a citation whose target may change after it is written, which ISO 19011 §6.4 forbids
- * in the one clause that matters: the citation must lead to the evidence.
- */
+/** Which DOI belongs where: the software is all versions, a result is one fixed record. */
 export const doiForPurpose = (purpose: 'software' | 'result'): DoiKind =>
   purpose === 'software' ? 'concept' : 'version'
+
+/**
+ * Fails closed unless the DOI is a registered record the registry will show you.
+ *
+ * Both instruments must agree — the REST record and the OAI harvest — because one reading is not
+ * a measurement, and the first reading here was a false alarm. @see ./SKILL.md
+ */
+export async function assertDoiRegistered(
+  doi: string,
+  { fetcher = defaultFetch, requireVersion = true }: { fetcher?: Fetcher; requireVersion?: boolean } = {},
+): Promise<DoiVerdict> {
+  const v = await resolveDoi(doi, fetcher)
+  if (v.kind === 'unknown' || v.recordId === null) {
+    throw new Error(`✖ publish/harvest — ${doi} is not a record this registry knows`)
+  }
+  if (requireVersion && v.kind === 'concept') {
+    throw new Error(
+      `✖ publish/harvest — ${doi} is a CONCEPT doi: it cites whatever version is newest. Cite ${v.versionDoi} instead, or say you mean all versions`,
+    )
+  }
+  if (v.kind === 'version' && !(await isHarvested(v.recordId, fetcher))) {
+    throw new Error(`✖ publish/harvest — ${doi} resolves but is not in the OAI harvest; two instruments disagree, so neither is trusted`)
+  }
+  return v
+}
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const doi = process.argv[2] ?? '10.5281/zenodo.22237698'
