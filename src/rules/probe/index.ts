@@ -1,6 +1,6 @@
 import ts from 'typescript'
-import { readFileSync, readdirSync } from 'node:fs'
 import { join, relative } from 'node:path'
+import { astOf, corpusFiles, textOf } from '@/syntax/cache'
 
 /**
  * rules/probe — a test for a file by NAME must name every spelling that file has.
@@ -30,28 +30,20 @@ const TWINNED: ReadonlyMap<string, string> = new Map([
   ['test.ts', 'test.tsx'],
 ])
 
-const parse = (p: string): ts.SourceFile =>
-  ts.createSourceFile(p, readFileSync(p, 'utf8'), ts.ScriptTarget.Latest, true)
+/** Shared with every other gate in the run — same bytes, same parse ([[syntax]]/cache). */
+const parse = (p: string): ts.SourceFile => astOf(p)
 
-const sourceFiles = (cwd: string): string[] => {
-  const out: string[] = []
-  const walk = (d: string): void => {
-    let entries: import('node:fs').Dirent[]
-    try {
-      entries = readdirSync(d, { withFileTypes: true })
-    } catch {
-      return
-    }
-    for (const e of entries) {
-      if (e.name.startsWith('.') || e.name === 'node_modules') continue
-      const p = join(d, e.name)
-      if (e.isDirectory()) walk(p)
-      else if (/\.tsx?$/.test(e.name) && !/\.d\.ts$/.test(e.name) && !/generated/.test(e.name)) out.push(p)
-    }
-  }
-  walk(join(cwd, 'src'))
-  return out.sort()
-}
+/**
+ * Population unchanged: `.tsx?`, no `.d.ts`, no generated FACE.
+ *
+ * The exclusion tests the basename, not the path — filtering the whole path drops any file living
+ * under a directory named `generated`, which moved this gate's count by one the first time it was
+ * written that way. A population changed while optimising is an optimisation that lied.
+ */
+const sourceFiles = (cwd: string): string[] =>
+  corpusFiles(cwd, 'source')
+    .filter((f) => !/generated/.test(f.slice(f.lastIndexOf('/') + 1)))
+    .slice()
 
 /**
  * A PROBE: an existence or membership test on a filename, as opposed to a name being written,
@@ -82,7 +74,7 @@ const isProbe = (lit: ts.StringLiteral): boolean => {
 export function blindProbes(cwd: string = process.cwd()): BlindProbe[] {
   const hits: BlindProbe[] = []
   for (const f of sourceFiles(cwd)) {
-    const text = readFileSync(f, 'utf8')
+    const text = textOf(f)
     if (![...TWINNED.keys()].some((n) => text.includes(n))) continue
     let src: ts.SourceFile
     try {

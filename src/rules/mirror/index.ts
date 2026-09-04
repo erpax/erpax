@@ -1,6 +1,7 @@
 import ts from 'typescript'
-import { readFileSync, readdirSync } from 'node:fs'
+import { readFileSync } from 'node:fs'
 import { dirname, join, relative } from 'node:path'
+import { astOf, corpusFiles, textOf } from '@/syntax/cache'
 
 /**
  * rules/mirror — a proof that restates its own definition proves the assignment, not the claim.
@@ -32,8 +33,8 @@ export interface Mirror {
   readonly text: string
 }
 
-const parse = (p: string): ts.SourceFile =>
-  ts.createSourceFile(p, readFileSync(p, 'utf8'), ts.ScriptTarget.Latest, true)
+/** Shared with every other gate in the run — same bytes, same parse ([[syntax]]/cache). */
+const parse = (p: string): ts.SourceFile => astOf(p)
 
 const literalText = (n: ts.Node): string | null => {
   if (ts.isNumericLiteral(n) || ts.isStringLiteral(n) || ts.isNoSubstitutionTemplateLiteral(n)) return n.getText()
@@ -66,25 +67,9 @@ export function literalConstants(file: string): Map<string, string> {
   return out
 }
 
-const testFiles = (cwd: string): string[] => {
-  const out: string[] = []
-  const walk = (d: string): void => {
-    let entries: import('node:fs').Dirent[]
-    try {
-      entries = readdirSync(d, { withFileTypes: true })
-    } catch {
-      return
-    }
-    for (const e of entries) {
-      if (e.name.startsWith('.') || e.name === 'node_modules') continue
-      const p = join(d, e.name)
-      if (e.isDirectory()) walk(p)
-      else if (e.name === 'test.ts') out.push(p)
-    }
-  }
-  walk(join(cwd, 'src'))
-  return out.sort()
-}
+/** The population is unchanged: `test.ts` only, so the count this gate reports cannot move. */
+const testFiles = (cwd: string): string[] =>
+  corpusFiles(cwd, 'test').filter((f) => f.endsWith('/test.ts')).slice()
 
 /** The one walk both faces use — a second copy would be this atom's own defect. */
 function collectMirrors(src: ts.SourceFile, consts: Map<string, string>, rel: string, out: Mirror[]): void {

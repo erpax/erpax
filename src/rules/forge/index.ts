@@ -1,15 +1,12 @@
 import ts from 'typescript'
-import { readFileSync, readdirSync } from 'node:fs'
 import { join, relative } from 'node:path'
+import { astOf, corpusFiles } from '@/syntax/cache'
 
 /**
  * rules/forge — an identifier a registry assigns may not be produced by local randomness.
  *
- * A DOI is registered under ISO 26324. An IBAN is issued by a bank. A VAT number is issued by a
- * tax authority. None of them can be computed, and a locally generated string in their shape is a
- * forged provenance record — well-formed, indistinguishable downstream, and false.
- *
- * @see ./SKILL.md — the three sites this was written for, and what their tests asserted.
+ * @see ./SKILL.md — the three sites that minted `10.5281/zenodo.${Math.random()}` while logging
+ *   "[ZENODO] Publishing" and making no network call, and what their tests asserted.
  */
 
 export interface Forgery {
@@ -21,10 +18,7 @@ export interface Forgery {
   readonly text: string
 }
 
-/**
- * DECLARED, in the open, so it can be argued with — a registry prefix is a fact about the world and
- * no theorem derives the list. Each entry is a shape only a registration agency may fill.
- */
+/** DECLARED in the open: a registry prefix is a fact about the world, and no theorem derives it. */
 const REGISTERED_SHAPES: readonly (readonly [string, RegExp])[] = [
   ['DOI', /10\.\d{4,9}\//],
   ['ORCID', /orcid\.org\/\d{4}-/],
@@ -35,28 +29,20 @@ const REGISTERED_SHAPES: readonly (readonly [string, RegExp])[] = [
 /** Locally-generated entropy or a local counter — anything this process decides for itself. */
 const LOCAL_SOURCE = /Math\s*\.\s*random|randomUUID|randomBytes|Date\s*\.\s*now|crypto\.getRandomValues|\+\+|nanoid|uuidv4/
 
-const parse = (p: string): ts.SourceFile =>
-  ts.createSourceFile(p, readFileSync(p, 'utf8'), ts.ScriptTarget.Latest, true)
+/** Shared with every other gate in the run — same bytes, same parse ([[syntax]]/cache). */
+const parse = (p: string): ts.SourceFile => astOf(p)
 
-const sourceFiles = (cwd: string): string[] => {
-  const out: string[] = []
-  const walk = (d: string): void => {
-    let entries: import('node:fs').Dirent[]
-    try {
-      entries = readdirSync(d, { withFileTypes: true })
-    } catch {
-      return
-    }
-    for (const e of entries) {
-      if (e.name.startsWith('.') || e.name === 'node_modules') continue
-      const p = join(d, e.name)
-      if (e.isDirectory()) walk(p)
-      else if (/\.tsx?$/.test(e.name) && !/\.d\.ts$/.test(e.name) && !/generated/.test(e.name)) out.push(p)
-    }
-  }
-  walk(join(cwd, 'src'))
-  return out.sort()
-}
+/**
+ * Population unchanged: `.tsx?`, no `.d.ts`, no generated FACE.
+ *
+ * The exclusion tests the basename, not the path — filtering the whole path drops any file living
+ * under a directory named `generated`, which moved this gate's count by one the first time it was
+ * written that way. A population changed while optimising is an optimisation that lied.
+ */
+const sourceFiles = (cwd: string): string[] =>
+  corpusFiles(cwd, 'source')
+    .filter((f) => !/generated/.test(f.slice(f.lastIndexOf('/') + 1)))
+    .slice()
 
 /** The one walk both faces use. */
 function collectForgeries(src: ts.SourceFile, rel: string, out: Forgery[]): void {
@@ -84,12 +70,10 @@ function collectForgeries(src: ts.SourceFile, rel: string, out: Forgery[]): void
 }
 
 /**
- * Every template literal that wears a registry's shape AND interpolates something local.
+ * Every template literal wearing a registry's shape AND interpolating something local.
  *
- * PARSED, never matched. A template literal is a grammatical object: its head text carries the
- * registry prefix, and its spans carry the expressions. A comment quoting a forgery in order to
- * explain it is not a forgery — a lesson three sibling repos each paid for separately today — and
- * a comment is not a `ts.TemplateExpression`, so it cannot reach this scan.
+ * PARSED, never matched — and a comment quoting a forgery to explain it is not a
+ * `ts.TemplateExpression`, so the grammar excludes it for free.
  */
 export function forgedIdentifiers(cwd: string = process.cwd()): Forgery[] {
   const hits: Forgery[] = []
@@ -105,12 +89,7 @@ export function forgedIdentifiers(cwd: string = process.cwd()): Forgery[] {
   return hits
 }
 
-/**
- * The same measurement over an EDIT, for the write-time hook.
- *
- * A forged identifier is the one defect in this corpus that reaches OUTSIDE it — a caller receives
- * provenance for a deposit that never happened. That belongs at the write, not at the push.
- */
+/** The same measurement over an EDIT: a forged provenance record belongs refused at the write. */
 export function forgedIn(files: readonly string[], cwd: string = process.cwd()): Forgery[] {
   const hits: Forgery[] = []
   for (const f of files.filter((x) => /\.tsx?$/.test(x) && !/\.d\.ts$|generated/.test(x))) {
@@ -126,12 +105,7 @@ export function forgedIn(files: readonly string[], cwd: string = process.cwd()):
   return hits
 }
 
-/**
- * Zero is a THEOREM here, not a ratchet.
- *
- * There is no acceptable number of forged registered identifiers, so there is nothing to raise
- * later and no ceiling to argue about.
- */
+/** Zero is a THEOREM: there is no acceptable number of forged registered identifiers. */
 export function assertNoForgery(cwd: string = process.cwd()): void {
   const found = forgedIdentifiers(cwd)
   if (found.length === 0) return
