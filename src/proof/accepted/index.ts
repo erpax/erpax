@@ -1,5 +1,5 @@
 import { execFileSync } from 'node:child_process'
-import { existsSync, readdirSync } from 'node:fs'
+import { existsSync, readFileSync, readdirSync } from 'node:fs'
 import { dirname, join, relative } from 'node:path'
 
 /**
@@ -72,6 +72,41 @@ export function kernelVerdict(file: string, cwd: string = process.cwd()): Kernel
   const sorries = (output.match(/declaration uses ['`]sorry['`]/g) ?? []).length
   const error = accepted ? null : (output.split('\n').find((l) => l.includes('error')) ?? output.split('\n')[0] ?? null)
   return { file: rel, accepted, sorries, error }
+}
+
+export interface ReflexiveTheorem {
+  readonly file: string
+  readonly name: string
+  readonly statement: string
+}
+
+/**
+ * A theorem whose two sides are the SAME TEXT — reflexivity wearing a name.
+ *
+ * `theorem honest_chain_reproduces : chain rows 0 = chain rows 0` was in this corpus's own Lean,
+ * written hours after [[rules]]/mirror gated exactly that shape in TypeScript. It is true of any
+ * term whatsoever — provable for a `chain` that returned the empty list — and therefore evidence of
+ * nothing.
+ *
+ * The domain is the point. A sibling reported the same defect class sitting in `.lean` files while
+ * its standing sweep read `.ts` only, and warned that widening a domain without an extractor behind
+ * it reports green for the same reason an empty list does. So this check was PLANTED against before
+ * it was believed.
+ */
+export function reflexiveTheorems(cwd: string = process.cwd()): ReflexiveTheorem[] {
+  const out: ReflexiveTheorem[] = []
+  for (const file of leanFiles(cwd)) {
+    const text = readFileSync(file, 'utf8')
+    for (const m of text.matchAll(/^(?:theorem|lemma)\s+([A-Za-z_]\w*)\s*:\s*([^\n]*?)\s*:=/gm)) {
+      const [name, statement] = [m[1]!, m[2]!]
+      // strip a leading binder list so `(h : P) : x = x` is still seen
+      const body = statement.replace(/^\([^)]*\)\s*:?\s*/, '')
+      const eq = /^(.+?)\s*(?:=|↔|==)\s*(.+)$/.exec(body)
+      if (!eq) continue
+      if (eq[1]!.trim() === eq[2]!.trim()) out.push({ file: relative(cwd, file), name, statement: body })
+    }
+  }
+  return out
 }
 
 /**

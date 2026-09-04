@@ -15,7 +15,7 @@ import { mirroredAssertions } from '@/rules/mirror'
 import { forgedIdentifiers } from '@/rules/forge'
 import { deadCommands } from '@/rules/command'
 import { blindProbes } from '@/rules/probe'
-import { kernelPath, unacceptedProofs } from '@/proof/accepted'
+import { kernelPath, reflexiveTheorems, unacceptedProofs } from '@/proof/accepted'
 import { startProgressHeartbeat } from '@/cli/progress-heartbeat'
 import { execSync } from 'node:child_process'
 import { waveAccountingGapViolations } from '@/accounting/gaps'
@@ -273,6 +273,12 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
       violations: kernelPath() === null ? 0 : unacceptedProofs(cwd).length,
       baseline: 4,
     }),
+    // proof-reflexive — a theorem whose two sides are the SAME TEXT ([[proof]]/accepted). This
+    // corpus wrote `chain rows 0 = chain rows 0` hours after gating that exact shape in TypeScript
+    // as [[rules]]/mirror: the law was enforced in one language and violated in another, because
+    // the check's DOMAIN was narrower than the defect it named. Zero is a THEOREM — reflexivity is
+    // provable for any term, so it is never evidence. Needs no kernel: it reads the text.
+    guardian({ axis: 'proof-reflexive', violations: reflexiveTheorems(cwd).length, baseline: 0 }),
   ])
   const provenSeal = seal([
     guardian({

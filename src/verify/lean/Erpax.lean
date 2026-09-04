@@ -32,8 +32,20 @@ theorem tamper_changes_a_receipt : nth (chain rows 0) 1 ≠ nth (chain tampered 
 /-- AND EVERY RECEIPT AFTER IT. This is why a chain beats independent per-row hashes. -/
 theorem tamper_propagates : nth (chain rows 0) 3 ≠ nth (chain tampered 0) 3 := by decide
 
-/-- An UNALTERED chain reproduces exactly — the verifier must accept the honest case. -/
-theorem honest_chain_reproduces : chain rows 0 = chain rows 0 := by decide
+/-- Verification: recompute the chain and compare it to what was stored. -/
+def verify (rs : List Nat) (stored : List Nat) : Bool := chain rs 0 == stored
+
+/--
+  The verifier SEPARATES: it accepts the honest rows against their seal and REJECTS the tampered
+  ones against the same seal.
+
+  This replaces `chain rows 0 = chain rows 0`, which I wrote here hours after gating exactly that
+  shape as [[rules]]/mirror. It was REFLEXIVITY — true of any term whatsoever, provable for a chain
+  function that returned the empty list, and therefore evidence of nothing. The second conjunct
+  below is the content: it can fail, and it is what "the verifier works" actually means.
+-/
+theorem verifier_separates :
+    verify rows (chain rows 0) = true ∧ verify tampered (chain rows 0) = false := by decide
 
 /-- REORDERING is caught too: the same rows in another order fold differently. -/
 theorem order_matters : chain [11, 22] 0 ≠ chain [22, 11] 0 := by decide

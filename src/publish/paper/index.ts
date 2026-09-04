@@ -153,6 +153,64 @@ export function referencesOf(atomPath: string, cwd: string = process.cwd()): Ref
 }
 
 /**
+ * The credits block — attribution assembled from what the repository already declares.
+ *
+ * ZERO MANUAL WORK is the point: the author comes from CITATION.cff, the licence and source from
+ * the generated licence face, the references from the atom's own SKILL, the support links from
+ * .github/FUNDING.yml. Nothing here is typed per paper, so nothing here can drift from the paper it
+ * credits — the drift law applied to attribution.
+ */
+export function creditsOf(atomPath: string, cwd: string = process.cwd()): string[] {
+  const lines = [`© erpax — ${ERPAX_SPDX}, or commercial via license@erpax.com`, `Source: ${SOURCE_URL}`, `Archived: ${ERPAX_DOI}`]
+  const refs = referencesOf(atomPath, cwd)
+  if (refs.length) lines.push(`Built against: ${refs.map((r) => r.label.split('—')[0]!.trim()).join(' · ')}`)
+  const fund = fundingOf(cwd)
+  if (fund.links.length) lines.push(`Support: ${fund.links.join(' · ')}`)
+  lines.push(fund.awards.length ? `Awards: ${fund.awards.join(' · ')}` : 'No grant award is claimed for this work.')
+  return lines
+}
+
+export interface Funding {
+  /** Where support can be given — sponsorship links, resolvable. */
+  readonly links: readonly string[]
+  /**
+   * Grant awards, for Zenodo's `grants` field.
+   *
+   * EMPTY unless a real award identifier is declared. Zenodo is award-first: an award id resolves
+   * through OpenAIRE, or a custom award names a funder registered in ROR. Both are REGISTERED
+   * identifiers, so inventing one to fill the field is exactly [[rules]]/forge — a locally minted
+   * identifier returned as provenance. Sponsorship is not an award and is never reported as one.
+   */
+  readonly awards: readonly string[]
+}
+
+/**
+ * The funding this work actually declares, read from where the repository declares it.
+ *
+ * `.github/FUNDING.yml` is the surface GitHub renders and a reader already knows; `package.json`
+ * `funding` is the npm one. Neither is a grant.
+ */
+export function fundingOf(cwd: string = process.cwd()): Funding {
+  const links: string[] = []
+  try {
+    const yml = readFileSync(join(cwd, '.github/FUNDING.yml'), 'utf8')
+    for (const m of yml.matchAll(/^github:\s*\[?([^\]\n]+)\]?/gm))
+      for (const u of m[1]!.split(',')) links.push(`https://github.com/sponsors/${u.trim().replace(/['"]/g, '')}`)
+    for (const m of yml.matchAll(/https?:\/\/[^\s'"\]]+/g)) links.push(m[0])
+  } catch {
+    /* a repository need not declare funding */
+  }
+  try {
+    const pkg = JSON.parse(readFileSync(join(cwd, 'package.json'), 'utf8')) as { funding?: unknown }
+    if (typeof pkg.funding === 'string') links.push(pkg.funding)
+    else if (Array.isArray(pkg.funding)) for (const f of pkg.funding) if (typeof f === 'string') links.push(f)
+  } catch {
+    /* absent is not an error */
+  }
+  return { links: [...new Set(links)], awards: [] }
+}
+
+/**
  * The deposition record for ONE paper — the metadata that makes it findable and correctly related.
  *
  * `related_identifiers` is the part that matters and the part most often left empty: a deposit with
@@ -163,6 +221,7 @@ export function referencesOf(atomPath: string, cwd: string = process.cwd()): Ref
  */
 export function paperMetadata(input: PaperInput, cwd: string = process.cwd()): Record<string, unknown> {
   const refs = referencesOf(input.atomPath, cwd)
+  const fund = fundingOf(cwd)
   const atomUrl = `${SOURCE_URL}/tree/main/src/${input.atomPath}`
   return {
     upload_type: 'publication',
@@ -172,7 +231,11 @@ export function paperMetadata(input: PaperInput, cwd: string = process.cwd()): R
       `<p><strong>${input.claim}</strong></p>` +
       `<p>Enforced by a gate in <code>src/${input.atomPath}</code>, which fails closed when the claim is ` +
       `violated — the claim is not asserted in prose. <a href="${atomUrl}">Source</a>.</p>` +
-      `<p><strong>What this does not prove:</strong> ${input.boundary}</p>`,
+      `<p><strong>What this does not prove:</strong> ${input.boundary}</p>` +
+      (fund.links.length > 0
+        ? `<p>Support: ${fund.links.map((u) => `<a href="${u}">${u}</a>`).join(' · ')}. ` +
+          `This work is not grant-funded; no award identifier is claimed.</p>`
+        : ''),
     creators: [{ name: 'Rouschev, Tsvetan', orcid: '0009-0000-7312-9778' }],
     license: ERPAX_SPDX.toLowerCase(),
     access_right: 'open',
@@ -183,6 +246,10 @@ export function paperMetadata(input: PaperInput, cwd: string = process.cwd()): R
       'tamper-evidence',
       ...input.atomPath.split('/'),
     ],
+    // `grants` is OMITTED, not empty-arrayed, when no award exists: Zenodo reads an award id
+    // through OpenAIRE or ROR, both registered identifiers, and filling the field without one is a
+    // fabricated funder. Sponsorship links go where they are true — the description.
+    ...(fund.awards.length > 0 ? { grants: fund.awards.map((id) => ({ id })) } : {}),
     related_identifiers: [
       { identifier: atomUrl, relation: 'isSupplementTo', scheme: 'url' },
       { identifier: SOURCE_URL, relation: 'isSupplementTo', scheme: 'url' },
@@ -293,6 +360,11 @@ ${escapeTex(input.boundary)}
   \\item Repository: \\url{${SOURCE_URL}}
   \\item Archived record: \\href{https://doi.org/${escapeTex(ERPAX_DOI)}}{${escapeTex(ERPAX_DOI)}}
   \\item Licence: ${escapeTex(ERPAX_SPDX)} --- commercial terms via \\url{mailto:license@erpax.com}
+\\end{itemize}
+
+\\section*{Funding and credits}
+\\begin{itemize}
+${creditsOf(input.atomPath, cwd).map((l) => `  \\item ${escapeTex(l)}`).join('\n')}
 \\end{itemize}
 
 ${

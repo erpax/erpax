@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { paperMetadata, paperTex, priorArt, referencesOf, runPapers } from './index'
+import { creditsOf, fundingOf, paperMetadata, paperTex, priorArt, referencesOf, runPapers } from './index'
 
 const fakeFetch = (body: unknown, ok = true, status = 200): typeof fetch =>
   (async () => ({ ok, status, json: async () => body })) as unknown as typeof fetch
@@ -156,5 +156,36 @@ describe('publish/paper — links, references and the bold claim', () => {
     const m = paperMetadata(input) as { description: string }
     expect(m.description).toContain(`<strong>${input.claim}</strong>`)
     expect(m.description).toContain('What this does not prove')
+  })
+})
+
+describe('publish/paper — funding and credits, assembled not typed', () => {
+  it('reads support links from what the repository already declares', () => {
+    const f = fundingOf()
+    expect(f.links.some((u) => u.includes('github.com/sponsors'))).toBe(true)
+  })
+
+  it('claims NO AWARD, because an award id is a registered identifier', () => {
+    // Zenodo is award-first: an id resolves through OpenAIRE, or a custom award names a ROR-
+    // registered funder. Filling that field without one is rules/forge — a minted identifier
+    // returned as provenance. Sponsorship is not an award.
+    expect(fundingOf().awards).toEqual([])
+    const m = paperMetadata({ claim: 'c', atomPath: 'duality/mirror', boundary: 'b' }) as Record<string, unknown>
+    expect('grants' in m).toBe(false)
+    expect(String(m.description)).toContain('not grant-funded')
+  })
+
+  it('assembles credits from the corpus, so nothing is typed per paper', () => {
+    const c = creditsOf('duality/mirror').join('\n')
+    expect(c).toContain('CC-BY-NC-ND-4.0')
+    expect(c).toContain('10.5281/zenodo.22237698')
+    expect(c).toContain('RFC 9562')       // read from the atom's own SKILL
+    expect(c).toContain('No grant award is claimed')
+  })
+
+  it('the paper carries the credits section and stays valid LaTeX', () => {
+    const tex = paperTex({ claim: 'c', atomPath: 'duality/mirror', boundary: 'b' })
+    expect(tex).toContain('Funding and credits')
+    expect((tex.match(/(?<!\\)\$/g) ?? []).length % 2).toBe(0)
   })
 })
