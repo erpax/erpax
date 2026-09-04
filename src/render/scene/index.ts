@@ -228,6 +228,45 @@ export function toThree(s: Scene): THREE.Group {
   return g
 }
 
+/**
+ * The same scene as static SVG — no JS, no GPU, no canvas.
+ *
+ * `toThree` and this are TWO PROJECTIONS OF ONE SCENE, which is [[render]]'s existing law (one
+ * content-uuid, N views, derived never stored) applied to geometry. The interactive figure and
+ * the one a crawler indexes cannot disagree, because neither holds any geometry of its own.
+ *
+ * The audit that produced this: the hero surfaces carry ZERO animation primitives — no
+ * `<animate>`, no keyframes, no rAF, no framer, no gsap — so there was nothing to make
+ * three-compliant. A shared scene is the thing worth having instead.
+ */
+export function toSvg(s: Scene, size = 640): string {
+  const xs = s.points.map((p) => p.at.x)
+  const ys = s.points.map((p) => p.at.y)
+  // no host Math: [[algebra]]/host refuses it here, and every one of these is a fold or a
+  // truncation that the carrier already gives
+  const least = (ns: readonly number[], seed: number): number => ns.reduce((a, b) => (b < a ? b : a), seed)
+  const most = (ns: readonly number[], seed: number): number => ns.reduce((a, b) => (b > a ? b : a), seed)
+  const cent = (v: number): number => ((v * 100 + (v < 0 ? -0.5 : 0.5)) | 0) / 100
+  const lo = { x: least(xs, 0), y: least(ys, 0) }
+  const hi = { x: most(xs, 1), y: most(ys, 1) }
+  const wide = hi.x - lo.x
+  const tall = hi.y - lo.y
+  const span = (wide > tall ? wide : tall) || 1
+  // y is flipped: SVG counts downward, and t counts up
+  const px = (v: number): number => cent(((v - lo.x) / span) * size)
+  const py = (v: number): number => cent((1 - (v - lo.y) / span) * size)
+  const esc = (t: string): string => t.replace(/[<>&"]/g, (c) => `&#${c.charCodeAt(0)};`)
+  const body = [
+    ...s.edges.map((e) => `<line x1="${px(e.from.x)}" y1="${py(e.from.y)}" x2="${px(e.to.x)}" y2="${py(e.to.y)}" stroke="${e.colour}" stroke-width="1.5" data-kind="${e.kind}"/>`),
+    ...s.points.map((p) => `<circle cx="${px(p.at.x)}" cy="${py(p.at.y)}" r="3" fill="${p.colour}"><title>${esc(p.label ?? p.id)}</title></circle>`),
+  ].join('')
+  return (
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${size} ${size}" role="img" ` +
+    `aria-label="${esc(s.name)}" data-theorem="${esc(s.theorem)}" data-seal="${sceneSeal(s)}">` +
+    `<title>${esc(s.name)}</title><desc>${esc(s.caption)}</desc>${body}</svg>`
+  )
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   for (const s of figures()) {
     const g = toThree(s)

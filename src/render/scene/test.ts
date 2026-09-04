@@ -11,6 +11,7 @@ import {
   reversal,
   sceneSeal,
   statedTheorems,
+  toSvg,
   toThree,
   unbackedFigures,
 } from '@/render/scene'
@@ -97,5 +98,39 @@ describe('render/scene — a theorem, as geometry', () => {
   it('every live figure cites a theorem that is actually stated', () => {
     expect(unbackedFigures(process.cwd()).map((f) => f.theorem)).toEqual([])
     expect(() => assertFiguresBacked(process.cwd())).not.toThrow()
+  })
+})
+
+describe('render/scene — SVG and three are two projections of one scene', () => {
+  it('every point and edge survives BOTH projections, and neither holds its own geometry', () => {
+    for (const s of figures()) {
+      const svg = toSvg(s)
+      expect((svg.match(/<circle /g) ?? [])).toHaveLength(s.points.length)
+      expect((svg.match(/<line /g) ?? [])).toHaveLength(s.edges.length)
+      expect(toThree(s).children).toHaveLength(s.points.length + s.edges.length)
+    }
+  })
+
+  it('the SVG carries the theorem, the boundary and the seal — a crawler reads all three', () => {
+    const s = lightcone(4)
+    const svg = toSvg(s)
+    expect(svg).toContain(`data-theorem="${s.theorem}"`)
+    expect(svg).toContain(`data-seal="${sceneSeal(s)}"`)
+    expect(svg).toContain('<desc>')
+    expect(svg).toContain('never a proof') // the boundary cannot be shed by the SVG either
+    expect(svg).toContain('role="img"')
+  })
+
+  it('is deterministic and injection-safe', () => {
+    expect(toSvg(lightcone(4))).toBe(toSvg(lightcone(4)))
+    const nasty = { ...lightcone(2), name: '<script>x</script>' }
+    expect(toSvg(nasty)).not.toContain('<script>')
+  })
+
+  it('t counts UP in the figure even though SVG counts down', () => {
+    const s = lightcone(4)
+    const circles = [...toSvg(s).matchAll(/<circle cx="([\d.]+)" cy="([\d.]+)"/g)]
+    const cy = (id: string): number => Number(circles[s.points.findIndex((p) => p.id === id)]![2])
+    expect(cy('4:0')).toBeLessThan(cy('-4:0')) // the future is ABOVE the past on screen
   })
 })
