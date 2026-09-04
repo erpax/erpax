@@ -21,8 +21,49 @@ export interface MetricRow {
   readonly receipt: string
 }
 
+/**
+ * The formula, DECLARED — so a mismatch is read rather than guessed at.
+ *
+ * A sibling's survey reported this corpus's face as tampered: all fourteen rows and the root. They
+ * caught it before relaying, because every row failing at once is the signature of a DIFFERENT
+ * FORMULA — tampering changes one row or two. The spec said "a receipt over the row's contents" and
+ * never said which bytes or which fold, and two honest implementations diverged inside that gap.
+ *
+ * Stating it is cheap; inferring it is how a protocol built to stop false reports emits one.
+ */
+export interface FaceProtocol {
+  /** Stable id. A checker comparing ids never has to infer anything. */
+  readonly id: string
+  /** Which fields the receipt covers, in the order the preimage takes them. */
+  readonly covers: readonly string[]
+  /** Does each receipt fold in the one before it? */
+  readonly chained: boolean
+  /** The preimage, exactly. */
+  readonly receipt: string
+  /** How two addresses combine. */
+  readonly merge: string
+  /** How bytes become an address. */
+  readonly address: string
+  /** How the receipts fold to one root. */
+  readonly root: string
+}
+
+/** erpax's formula. Every string here is a description of code in @/merge and @/uuid/matrix. */
+export const ERPAX_PROTOCOL: FaceProtocol = {
+  id: 'erpax/metric-face/1',
+  covers: ['key', 'claim', 'value', 'command'],
+  chained: true,
+  receipt: "merge(canonical({key,claim,value,command}), priorReceipt); priorReceipt is '' for row 0",
+  merge: 'toUuid(utf8(a + U+2016 + b))  — U+2016 is DOUBLE VERTICAL LINE',
+  address: 'RFC 9562 §5.8 uuidv8: sha256(bytes) first 16 octets, version 8, variant 10x',
+  canonical: 'JSON with object keys sorted recursively, arrays in order',
+  root: "pairwise merge up the tree; an odd element carries up unchanged; an empty row folds to toUuid('')",
+} as unknown as FaceProtocol
+
 export interface MetricFace {
   readonly repo: string
+  /** Absent on a face sealed before the formula was declared — then the verdict is inferred. */
+  readonly protocol?: FaceProtocol
   /** What the rows are figures ABOUT — stated once, so no row has to carry the definition. */
   readonly definition: string
   readonly rows: readonly MetricRow[]
@@ -51,11 +92,26 @@ export function sealFace(repo: string, definition: string, rows: readonly Omit<M
     prior = chainLeaf(sealable(r), prior)
     sealed.push({ ...r, receipt: prior })
   }
-  return { repo, definition, rows: sealed, root: foldToRoot(sealed.map((r) => r.receipt)) }
+  return {
+    repo,
+    protocol: ERPAX_PROTOCOL,
+    definition,
+    rows: sealed,
+    root: foldToRoot(sealed.map((r) => r.receipt)),
+  }
 }
+
+/**
+ * `different-convention` is the verdict that keeps a checker honest.
+ *
+ * Without it, a face sealed by another formula reads as wholesale tampering — an accusation, made
+ * by the very tool built to stop false claims travelling.
+ */
+export type FaceState = 'intact' | 'altered' | 'different-convention'
 
 export interface FaceVerdict {
   readonly ok: boolean
+  readonly state: FaceState
   readonly rows: number
   /** Keys whose receipt does not match their own contents. */
   readonly altered: readonly string[]
@@ -89,10 +145,20 @@ export function verifyFace(face: MetricFace): FaceVerdict {
     }
   }
   const rootComputed = foldToRoot(face.rows.map((r) => r.receipt))
+  const intact = altered.length === 0 && rootComputed === face.root
+
+  // A DECLARED mismatch is read, never inferred — that is the whole point of carrying the protocol.
+  // Only where a face predates the declaration does the signature decide: EVERY row failing at once
+  // is another formula, because tampering changes one row or two.
+  const declaredOther = face.protocol !== undefined && face.protocol.id !== ERPAX_PROTOCOL.id
+  const looksOther = face.protocol === undefined && face.rows.length > 2 && altered.length === face.rows.length
+  const state: FaceState = intact ? 'intact' : declaredOther || looksOther ? 'different-convention' : 'altered'
+
   return {
-    ok: altered.length === 0 && rootComputed === face.root,
+    ok: intact,
+    state,
     rows: face.rows.length,
-    altered,
+    altered: state === 'different-convention' ? [] : altered,
     rootStated: face.root,
     rootComputed,
     boundary: RECEIPT_BOUNDARY,

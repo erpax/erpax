@@ -35,6 +35,39 @@ sentence ships inside the verdict object (`boundary`) rather than in a comment, 
 dropped in transit — quoting a row because its receipt checked out is precisely the mistake this
 file exists to prevent.
 
+## The formula is declared, because two honest implementations diverged inside a gap in the spec
+
+A sibling's survey reported this corpus's face as **tampered — all fourteen rows and the root**.
+They caught it before relaying, and the reason is the useful part: *every row failing at once is the
+signature of a different formula; tampering changes one row or two.* The shared spec said "a receipt
+over the row's own contents" and never said **which bytes** or **which fold**, so two honest
+implementations diverged inside that gap — and a protocol built to stop false reports was about to
+emit one.
+
+So the formula travels in the face, as `protocol`:
+
+| | erpax/metric-face/1 |
+| --- | --- |
+| covers | `key` · `claim` · `value` · **`command`** |
+| receipt | `merge(canonical({key,claim,value,command}), priorReceipt)` — `''` for row 0 |
+| chained | yes — each receipt folds in the one before it |
+| merge | `toUuid(utf8(a + U+2016 + b))` |
+| address | RFC 9562 §5.8 uuidv8 — sha256 first 16 octets, version 8, variant 10x |
+| root | pairwise merge up the tree; an odd element carries up; empty folds to `toUuid('')` |
+
+**`command` is inside the preimage here, and that is a deliberate difference.** The sibling excludes
+it so a repo can correct how a row is reproduced without breaking the seal on what it says — a real
+argument. This corpus takes the other side: the whole claim is *a figure travels with the command
+that recomputes it*, so swapping the command while keeping the value is the subtler tamper — the row
+still reads true and no longer says how to check it. Both positions are defensible; what is not
+defensible is leaving it unstated.
+
+`verifyFace` therefore returns **three** verdicts, not two. `different-convention` is read from a
+declared `protocol` id that differs, and only *inferred* (every row failing at once) for a face
+sealed before the field existed. A checker that cannot tell another formula from tampering makes an
+accusation with the tool built to prevent them — and this one would have made exactly that
+accusation about the sibling's face before this change.
+
 **Honest boundary.** A row proves reproducibility, never truth: a command can be wrong, or measure
 something other than what the claim says. The receipt covers the row's four fields — it says nothing
 about whether the command was run honestly on the tree it names. And the chain is order-dependent by

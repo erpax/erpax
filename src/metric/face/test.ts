@@ -2,7 +2,8 @@ import { describe, expect, it } from 'vitest'
 import { mkdtempSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { RECEIPT_BOUNDARY, sealFace, verifyFace, verifyFaceFile, type MetricRow } from '.'
+import { createHash } from 'node:crypto'
+import { ERPAX_PROTOCOL, RECEIPT_BOUNDARY, sealFace, verifyFace, verifyFaceFile, type MetricRow } from '.'
 
 const rows = [
   { key: 'a', claim: 'first', value: '1', command: 'echo 1' },
@@ -68,6 +69,50 @@ describe('metric/face', () => {
     const p = join(mkdtempSync(join(tmpdir(), 'erpax-face-')), 'f.json')
     writeFileSync(p, JSON.stringify({ repo: 'r', definition: 'd', root: 'x' }))
     expect(() => verifyFaceFile(p)).toThrow(/carries no rows/)
+  })
+
+  it('a face sealed by ANOTHER formula reads different-convention, never tampering', () => {
+    // A sibling's survey reported this corpus's face as tampered — all fourteen rows and the root —
+    // because our preimages differ. Every row failing at once is the signature of another formula;
+    // tampering changes one row or two. Without this verdict a checker built to stop false reports
+    // emits one.
+    const theirs = {
+      repo: 'other',
+      protocol: { ...ERPAX_PROTOCOL, id: 'millennium/metric-face/1', covers: ['key', 'claim', 'value'] },
+      definition: 'd',
+      rows: rows.map((r) => ({
+        ...r,
+        // their formula: toUuid(key + LF + claim + LF + value), unchained
+        receipt: createHash('sha256').update(`${r.key}\n${r.claim}\n${r.value}`).digest('hex').slice(0, 36),
+      })),
+      root: 'not-ours',
+    }
+    const v = verifyFace(theirs as never)
+    expect(v.state).toBe('different-convention')
+    expect(v.ok).toBe(false)
+    // and it does NOT accuse: no row is named as altered
+    expect(v.altered).toEqual([])
+  })
+
+  it('infers the same for an UNDECLARED face where every row fails', () => {
+    const f = sealFace('r', 'd', rows)
+    const undeclared = { ...f, protocol: undefined, rows: f.rows.map((r) => ({ ...r, receipt: 'x' })) }
+    expect(verifyFace(undeclared as never).state).toBe('different-convention')
+  })
+
+  it('one bad row is still ALTERED — the discriminator must not launder real tampering', () => {
+    const f = sealFace('r', 'd', rows)
+    const tampered = { ...f, rows: f.rows.map((r) => (r.key === 'b' ? { ...r, value: '99' } : r)) }
+    const v = verifyFace(tampered)
+    expect(v.state).toBe('altered')
+    expect(v.altered).toEqual(['b'])
+  })
+
+  it('declares its own formula, so a checker reads it instead of guessing', () => {
+    const f = sealFace('r', 'd', rows)
+    expect(f.protocol?.id).toBe('erpax/metric-face/1')
+    expect(f.protocol?.covers).toContain('command')
+    expect(f.protocol?.chained).toBe(true)
   })
 
   it('the receipt covers the row and not itself', () => {
