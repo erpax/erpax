@@ -16,6 +16,8 @@ import { forgedIdentifiers } from '@/rules/forge'
 import { deadCommands } from '@/rules/command'
 import { blindProbes } from '@/rules/probe'
 import { kernelPath, reflexiveTheorems, unacceptedProofs } from '@/proof/accepted'
+import { unbackedPhenomena } from '@/quantum/interval'
+import { unbackedFigures } from '@/render/scene'
 import { startProgressHeartbeat } from '@/cli/progress-heartbeat'
 import { execSync } from 'node:child_process'
 import { waveAccountingGapViolations } from '@/accounting/gaps'
@@ -279,6 +281,13 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // the check's DOMAIN was narrower than the defect it named. Zero is a THEOREM — reflexivity is
     // provable for any term, so it is never evidence. Needs no kernel: it reads the text.
     guardian({ axis: 'proof-reflexive', violations: reflexiveTheorems(cwd).length, baseline: 0 }),
+    // phenomena-backed — a physics claim whose named theorem is not in the kernel file
+    // ([[quantum]]/interval). A verdict table nobody checks is fiction that reads as a result.
+    guardian({ axis: 'phenomena-backed', violations: unbackedPhenomena(cwd).length, baseline: 0 }),
+    // figures-backed — a FIGURE captioned with a theorem nobody proved ([[render]]/scene). The
+    // first light-cone figure cited `Mirror.involution_partitions`, invented minutes after this
+    // corpus gated that exact defect in prose. A caption is a citation.
+    guardian({ axis: 'figures-backed', violations: unbackedFigures(cwd).length, baseline: 0 }),
   ])
   const provenSeal = seal([
     guardian({

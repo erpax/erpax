@@ -109,6 +109,7 @@
     "stripe": "^22.4.0",
     "tailwind-merge": "^3.6.0",
     "tailwindcss-animate": "^1.0.7",
+    "three": "^0.185.1",
     "uuid": "latest",
     "vaul": "^1.1.2",
     "zod": "3.25.76"
@@ -127,6 +128,7 @@
     "@types/pg": "^8.20.2",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
+    "@types/three": "^0.185.4",
     "@vitejs/plugin-react": "^6.0.5",
     "autoprefixer": "^10.5.4",
     "esbuild": "^0.28.2",
