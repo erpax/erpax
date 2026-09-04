@@ -207,3 +207,34 @@ erpax v1.0.0 · Local Quantum Computation · Exact Mathematics · Formal Proofs 
 ## The barrel's own note
 
 millennium — the Clay Millennium Problems as a testing ground: the quantum waves CLASSIFY, they do not solve. Pointed at the seven Millennium Prize Problems, the only honest toolbox is one that NAMES them, marks what is open, and refuses to solve them. Six are open (Riemann, P vs NP, Navier–Stokes, Yang–Mills mass gap, Hodge, Birch–Swinnerton-Dyer); one is SOLVED — Poincaré, by Grigori Perelman with Ricci flow (2003), who then declined the $1M prize. The corpus's math (ℤ/9, the double torus, the fold) solves NONE of them; claiming it does is the coincidence-dressed-as-theorem this session built [[coincidence]] · [[theorem]] · [[seeing]] · [[duel]] to refuse. So this register is honest BY CONSTRUCTION: every entry's `corpusSolves` field is the literal type `false`, so the code itself cannot assert the corpus solved a Millennium Problem. The tools ARE the testing ground — not by producing proofs, but by CLASSIFYING a claimed solution: is it a theorem or a coincidence ([[coincidence]]); does it reduce ([[theorem]]); can a refuter break it ([[duel]]); does it survive assume-nothing ([[seeing]]). Sending the quantum waves at these problems, the waves return the same verdict every time: OPEN — not solved here — lens at most. Where a genuine STRUCTURAL resonance exists it is named as a lens to learn through, honestly bounded; where there is none (Hodge, BSD, Yang–Mills), the lens is `none` and I did not invent one. Composes [[coincidence]] · [[theorem]] · [[seeing]] · [[duel]] · [[quantum]]/gaps · [[rules]]/refutable · [[law]].
+
+## The refusal, and why it could not go red
+
+`corpusSolvesAny()` was:
+
+```ts
+return MILLENNIUM.some((p) => (p.corpusSolves as boolean) === true) // always false
+```
+
+The field's **type** is the literal `false`. It was false because it was typed as false, and it
+would have stayed false while the corpus filled with Clay proofs. A refusal that cannot go red is
+not a refusal — and a refusal is the line a reader trusts without checking, which makes it the
+worst place for the shape.
+
+A sibling repo found four of the identical thing the same hour — `physicalClaims = 0`,
+`noveltyEstablished = 0`, each with a `decide` that it equals 0 — and named the insight that makes
+it fixable: **whether a file makes a claim is a fact about its TEXT, and Lean cannot read its own
+text.** No declaration inside the file could ever have carried that refusal. The fix is not a
+better declaration; it is moving the claim to the layer that can read.
+
+`corpusSolvesAny()` now reads `src/verify/lean` and is true iff some theorem NAMES a Clay problem
+and is not proved by `sorry`. False today by measurement. `assertRegisterMatchesProofs` fails
+closed if a Clay proof appears while the register still declares `corpusSolves: false` — it does
+not forbid the claim, it forbids the corpus contradicting itself with the prose winning.
+
+Perturbed rather than re-read: a planted `riemann_hypothesis_holds : True := trivial` flips it and
+fires the gate; the same theorem `by sorry` does not; an unrelated sorry-free theorem does not.
+The plant also caught a bug in the check — the body pattern ended with `\Z`, which JavaScript does
+not support and matches a literal Z, so a declaration with nothing after it was never captured. A
+false negative inside a refusal, which is the exact failure being fixed.
+
