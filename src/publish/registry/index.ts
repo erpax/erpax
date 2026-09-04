@@ -84,12 +84,19 @@ const SITE = 'https://erpax.com'
  * rule before anyone measured it; one measured it and it was wrong in the MERGING direction,
  * which is the direction that destroys the thing a merge key exists to protect.
  *
- * IMPLEMENTED EXACTLY AS AGREED, INCLUDING A DEFECT I HAVE REPORTED RATHER THAN PATCHED.
- * `[A-Za-z0-9_]` is ASCII, so the rule protects `List.range 7` and corrupts `σ (σ l)` → `σ(σl)` —
- * Greek letters are the identifiers Lean uses most, and the rule was written to stop precisely
- * this. `\p{L}\p{N}_` with the `u` flag fixes it. Deviating unilaterally would make my addresses
- * stop matching the siblings', which is worse than a known shared defect: a merge key only works
- * when every party computes it identically. The fix moves when all three move.
+ * v3 — the class is `[\p{L}\p{N}_]` with the `u` flag, not `[A-Za-z0-9_]`.
+ *
+ * The ASCII form was agreed by three parties and was wrong in the merging direction for the third
+ * time. It protects `List.range 7` and corrupts every non-ASCII identifier: `σ (σ l)` → `σ(σl)`,
+ * `ℤ⁴ with χ` → `ℤ⁴withχ`. Measured: 211 of 832 statements in one sibling's corpus, 0 of 533 in
+ * another's, and 2 of erpax's own 45 — `under φ(d)` → `underφ(d)`, `the ω-basis` → `theω-basis`.
+ *
+ * I held the defect deliberately while it was shared, because a merge key only works when every
+ * party computes it identically and a private correction silently stops matching. That changed
+ * when the party for whom the fix was free adopted it first: the correct rule now has adopters,
+ * erpax's own addresses are among those the ASCII form corrupts, and moving is announced rather
+ * than silent. Holding a rule that is wrong about your OWN data to preserve agreement with a
+ * party that is also wrong is not consensus, it is a shared error.
  */
 export const normaliseStatement = (claim: string): string =>
   claim
@@ -102,7 +109,7 @@ export const normaliseStatement = (claim: string): string =>
     .replace(/ /g, (_m, offset: number, whole: string) => {
       const before = whole[offset - 1] ?? ''
       const after = whole[offset + 1] ?? ''
-      return /[A-Za-z0-9_]/.test(before) && /[A-Za-z0-9_]/.test(after) ? ' ' : ''
+      return /[\p{L}\p{N}_]/u.test(before) && /[\p{L}\p{N}_]/u.test(after) ? ' ' : ''
     })
     .trim()
 
@@ -113,6 +120,30 @@ export const normaliseStatement = (claim: string): string =>
  * addresses the STATEMENT alone, the way every sibling addresses theirs, so a collision means
  * two repos published one finding rather than two repos using one hash.
  */
+/**
+ * The shared FIXTURE: input/output pairs a sibling checks its implementation against.
+ *
+ * This rule has now been specified in prose three times and refuted by measurement twice — strip
+ * everything (672 statements corrupted), then ASCII-only (211). Each was agreed by three parties
+ * before anyone ran it against real statements. A sentence describing a normaliser is exactly the
+ * artifact that keeps failing; cases are checkable. Copy these verbatim.
+ */
+export const statementFixture = (): readonly (readonly [string, string])[] => [
+  ['List.range 7 is  finite', 'List.range 7 is finite'],
+  ['σ (σ l) = l', 'σ(σ l)=l'],
+  ['H₁(Σ₂) = ℤ⁴ with χ = −2', 'H₁(Σ₂)=ℤ⁴ with χ=−2'],
+  ['a == b', 'a=b'],
+  ['a != b', 'a≠b'],
+  ['rawBytes A = [1, 2]', 'rawBytes A=[1,2]'],
+  ['foo ( bar )', 'foo(bar)'],
+  // case is KEPT: these two must not collide
+  ['Nat.succ 1', 'Nat.succ 1'],
+  ['nat.succ 1', 'nat.succ 1'],
+  // erpax's own two, which the ASCII rule corrupted
+  ['self-dual under φ(d) = 432/d', 'self-dual under φ(d)=432/d'],
+  ['In the ω-basis it is exact', 'In the ω-basis it is exact'],
+]
+
 export const statementAddress = (claim: string): string => chainLeaf({ statement: normaliseStatement(claim) }, '')
 
 const blobUrl = (p: string): string => `${SOURCE_URL}/blob/main/${p}`
