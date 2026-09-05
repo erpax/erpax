@@ -1,7 +1,8 @@
+import { pathDoubleWireViolations, reexportTargets } from './index-cross'
 import { tmpdir } from 'node:os'
 import { dedupeIndexCross, indexCrossAudit, indexCrossClassOf, sealPathDoubleWire } from '@/law/folder/index-cross'
 import { mirroredIn } from '@/rules/mirror'
-import { existsSync, mkdirSync, mkdtempSync, readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { describe, it, expect } from 'vitest'
 import {
@@ -259,5 +260,35 @@ describe('index-cross — the axis must not gate the corpus for growing', () => 
     expect(a.structural.length).toBeGreaterThan(a.violationCount)
     expect(a.violationCount + a.structural.length).toBeLessThan(a.rawViolationCount) // dedupe removed some
     expect(a.wiring.every((v) => indexCrossClassOf(v.kind) === 'wiring')).toBe(true)
+  })
+})
+
+describe('index-cross — a type-only re-export is still the parent naming its child', () => {
+  // `export type * from './c'` and `export type { X } from './c'` ARE re-exports. The pattern
+  // required exactly one token between `export` and `from`, so `type *` and `type {…}` both fell
+  // through and the parent read as not naming its child — 24 false positives corpus-wide.
+  //
+  // It matters beyond tidiness: a client-component child cannot be re-exported at RUNTIME from a
+  // barrel the server config imports — that pulls its .scss into the boot graph and
+  // `tsx src/run/load/index.ts` dies on the extension. The type space is the honest maximum there,
+  // and it was the one spelling the detector could not see.
+  it.each([
+    ["export * from './c'", true],
+    ["export type * from './c'", true],
+    ["export { x } from './c'", true],
+    ["export type { X } from './c'", true],
+    ["export { x as y } from './c'", true],
+  ])('%s names ./c', (line) => {
+    expect(reexportTargets(line).has('c')).toBe(true)
+  })
+
+  it.each([
+    ["import { x } from './c'", 'an import is not a re-export'],
+    ["export const y = 2", 'a local declaration names no child'],
+    ["export * from './other'", 'it names a different child'],
+    ["// export * from './c'", 'a comment is not code — but the pattern cannot tell, so this is known'],
+  ])('%s → %s', (line, _why) => {
+    const names = reexportTargets(line).has('c')
+    expect(names).toBe(line.startsWith('//'))
   })
 })

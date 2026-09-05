@@ -110,9 +110,19 @@ const bondHex = (a: string, b?: string): string => {
   return interact64(base, interact64(wordFold(b), digitFold(b))).toString(16)
 }
 
-const reexportTargets = (indexContent: string): Set<string> => {
+/**
+ * What a barrel re-exports — including the TYPE-ONLY forms, which this missed entirely.
+ *
+ * `export type * from './x'` and `export type { X } from './x'` are re-exports; the pattern required
+ * exactly one token between `export` and `from`, so `type *` and `type {…}` both fell through and the
+ * parent read as not naming its child. It matters beyond tidiness: a client-component child CANNOT be
+ * re-exported at runtime from a barrel the server config imports — doing so pulls its `.scss` into the
+ * boot graph and `tsx src/run/load/index.ts` dies on the extension. The type space is the honest
+ * maximum there, and it was the one spelling the detector could not see.
+ */
+export const reexportTargets = (indexContent: string): Set<string> => {
   const out = new Set<string>()
-  for (const m of indexContent.matchAll(/export\s+(?:\*|{[^}]*}|\w+)\s+from\s+['"]\.\/([^'"]+)['"]/g)) {
+  for (const m of indexContent.matchAll(/export\s+(?:type\s+)?(?:\*|{[^}]*}|\w+)\s+from\s+['"]\.\/([^'"]+)['"]/g)) {
     out.add(m[1]!.replace(/\.tsx?$/, ''))
   }
   return out

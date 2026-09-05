@@ -31,7 +31,12 @@ export {
   type ViolationScanSnapshot,
   type ImproveResult,
 } from './violations'
-export * from './cells'
-export * from './dashboard'
-export * from './fields'
-export * from './nav'
+
+// The child atoms are named in the TYPE space only. They are client components, and Payload
+// references an admin component by PATH string rather than by import — a runtime re-export here
+// pulls their `.scss` into the server config's module graph and the boot gate dies on it
+// ([[run]]/load). Naming them keeps the cross wired without making them reachable.
+export type * from './cells'
+export type * from './dashboard'
+export type * from './fields'
+export type * from './nav'
