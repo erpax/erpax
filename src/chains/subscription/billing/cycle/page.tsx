@@ -11,11 +11,11 @@
  */
 import * as React from 'react'
 
-export interface SubscriptionBillingCyclePageProps {
+export interface PageProps {
   readonly title?: string
 }
 
-export function SubscriptionBillingCyclePage({ title = 'Subscription Billing Cycle' }: SubscriptionBillingCyclePageProps): React.JSX.Element {
+export function Page({ title = 'Subscription Billing Cycle' }: PageProps): React.JSX.Element {
   return (
     <main className="container mx-auto p-6" aria-labelledby="page-heading">
       <header className="mb-6">
@@ -29,4 +29,4 @@ export function SubscriptionBillingCyclePage({ title = 'Subscription Billing Cyc
   )
 }
 
-export default SubscriptionBillingCyclePage
+export default Page

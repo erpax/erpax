@@ -126,10 +126,27 @@ export function isPathSegmentDir(parentDir: string, name: string): boolean {
   return leadsToAtom(dir, 6)
 }
 
-/** Does a real atom live anywhere beneath? Bounded, so a deep tree cannot walk forever. */
+/**
+ * Does corpus MATTER live anywhere beneath? Bounded, so a deep tree cannot walk forever.
+ *
+ * The predicate was once "is there a SKILL beneath", and that charged an ancestor for its
+ * descendant's missing FORM leg: `bank/reconciliation` holds nothing but `service/`, which carries
+ * `index.ts` and owes a SKILL — so the leaf was reported once as a stray dir and every folder above
+ * it was reported again for the same absence. 45 of 117 were that cascade.
+ *
+ * A directory of directories that leads to real TypeScript is a path segment doing its job. The
+ * leaf still owes its SKILL and is still charged for it; the ancestors owe nothing.
+ */
 function leadsToAtom(dir: string, depth: number): boolean {
   if (depth <= 0) return false
   if (existsSync(join(dir, TRINITY_FORM))) return true
+  let own: string[]
+  try {
+    own = readdirSync(dir)
+  } catch {
+    return false
+  }
+  if (own.some((e) => /\.tsx?$/.test(e) && !isDir(join(dir, e)))) return true
   let entries: string[]
   try {
     entries = readdirSync(dir)

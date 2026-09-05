@@ -11,11 +11,11 @@
  */
 import * as React from 'react'
 
-export interface NotificationDispatchPageProps {
+export interface PageProps {
   readonly title?: string
 }
 
-export function NotificationDispatchPage({ title = 'Notification Dispatch' }: NotificationDispatchPageProps): React.JSX.Element {
+export function Page({ title = 'Notification Dispatch' }: PageProps): React.JSX.Element {
   return (
     <main className="container mx-auto p-6" aria-labelledby="page-heading">
       <header className="mb-6">
@@ -29,4 +29,4 @@ export function NotificationDispatchPage({ title = 'Notification Dispatch' }: No
   )
 }
 
-export default NotificationDispatchPage
+export default Page

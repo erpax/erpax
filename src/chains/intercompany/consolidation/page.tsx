@@ -11,11 +11,11 @@
  */
 import * as React from 'react'
 
-export interface IntercompanyConsolidationPageProps {
+export interface PageProps {
   readonly title?: string
 }
 
-export function IntercompanyConsolidationPage({ title = 'Intercompany Consolidation' }: IntercompanyConsolidationPageProps): React.JSX.Element {
+export function Page({ title = 'Intercompany Consolidation' }: PageProps): React.JSX.Element {
   return (
     <main className="container mx-auto p-6" aria-labelledby="page-heading">
       <header className="mb-6">
@@ -29,4 +29,4 @@ export function IntercompanyConsolidationPage({ title = 'Intercompany Consolidat
   )
 }
 
-export default IntercompanyConsolidationPage
+export default Page

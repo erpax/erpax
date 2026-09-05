@@ -11,11 +11,11 @@
  */
 import * as React from 'react'
 
-export interface ConsignmentCyclePageProps {
+export interface PageProps {
   readonly title?: string
 }
 
-export function ConsignmentCyclePage({ title = 'Consignment Cycle' }: ConsignmentCyclePageProps): React.JSX.Element {
+export function Page({ title = 'Consignment Cycle' }: PageProps): React.JSX.Element {
   return (
     <main className="container mx-auto p-6" aria-labelledby="page-heading">
       <header className="mb-6">
@@ -29,4 +29,4 @@ export function ConsignmentCyclePage({ title = 'Consignment Cycle' }: Consignmen
   )
 }
 
-export default ConsignmentCyclePage
+export default Page

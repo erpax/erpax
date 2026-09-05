@@ -11,11 +11,11 @@
  */
 import * as React from 'react'
 
-export interface O2cServicesOverTimePageProps {
+export interface PageProps {
   readonly title?: string
 }
 
-export function O2cServicesOverTimePage({ title = 'O2c Services Over Time' }: O2cServicesOverTimePageProps): React.JSX.Element {
+export function Page({ title = 'O2c Services Over Time' }: PageProps): React.JSX.Element {
   return (
     <main className="container mx-auto p-6" aria-labelledby="page-heading">
       <header className="mb-6">
@@ -29,4 +29,4 @@ export function O2cServicesOverTimePage({ title = 'O2c Services Over Time' }: O2
   )
 }
 
-export default O2cServicesOverTimePage
+export default Page

@@ -11,11 +11,11 @@
  */
 import * as React from 'react'
 
-export interface H2rHireToRetirePageProps {
+export interface PageProps {
   readonly title?: string
 }
 
-export function H2rHireToRetirePage({ title = 'H2r Hire To Retire' }: H2rHireToRetirePageProps): React.JSX.Element {
+export function Page({ title = 'H2r Hire To Retire' }: PageProps): React.JSX.Element {
   return (
     <main className="container mx-auto p-6" aria-labelledby="page-heading">
       <header className="mb-6">
@@ -29,4 +29,4 @@ export function H2rHireToRetirePage({ title = 'H2r Hire To Retire' }: H2rHireToR
   )
 }
 
-export default H2rHireToRetirePage
+export default Page

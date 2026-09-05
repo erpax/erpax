@@ -11,11 +11,11 @@
  */
 import * as React from 'react'
 
-export interface FacilityMaintenanceCyclePageProps {
+export interface PageProps {
   readonly title?: string
 }
 
-export function FacilityMaintenanceCyclePage({ title = 'Facility Maintenance Cycle' }: FacilityMaintenanceCyclePageProps): React.JSX.Element {
+export function Page({ title = 'Facility Maintenance Cycle' }: PageProps): React.JSX.Element {
   return (
     <main className="container mx-auto p-6" aria-labelledby="page-heading">
       <header className="mb-6">
@@ -29,4 +29,4 @@ export function FacilityMaintenanceCyclePage({ title = 'Facility Maintenance Cyc
   )
 }
 
-export default FacilityMaintenanceCyclePage
+export default Page

@@ -11,11 +11,11 @@
  */
 import * as React from 'react'
 
-export interface ManufacturingCyclePageProps {
+export interface PageProps {
   readonly title?: string
 }
 
-export function ManufacturingCyclePage({ title = 'Manufacturing Cycle' }: ManufacturingCyclePageProps): React.JSX.Element {
+export function Page({ title = 'Manufacturing Cycle' }: PageProps): React.JSX.Element {
   return (
     <main className="container mx-auto p-6" aria-labelledby="page-heading">
       <header className="mb-6">
@@ -29,4 +29,4 @@ export function ManufacturingCyclePage({ title = 'Manufacturing Cycle' }: Manufa
   )
 }
 
-export default ManufacturingCyclePage
+export default Page

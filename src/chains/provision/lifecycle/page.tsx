@@ -11,11 +11,11 @@
  */
 import * as React from 'react'
 
-export interface ProvisionLifecyclePageProps {
+export interface PageProps {
   readonly title?: string
 }
 
-export function ProvisionLifecyclePage({ title = 'Provision Lifecycle' }: ProvisionLifecyclePageProps): React.JSX.Element {
+export function Page({ title = 'Provision Lifecycle' }: PageProps): React.JSX.Element {
   return (
     <main className="container mx-auto p-6" aria-labelledby="page-heading">
       <header className="mb-6">
@@ -29,4 +29,4 @@ export function ProvisionLifecyclePage({ title = 'Provision Lifecycle' }: Provis
   )
 }
 
-export default ProvisionLifecyclePage
+export default Page

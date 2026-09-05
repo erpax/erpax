@@ -11,11 +11,11 @@
  */
 import * as React from 'react'
 
-export interface KycSanctionsReviewPageProps {
+export interface PageProps {
   readonly title?: string
 }
 
-export function KycSanctionsReviewPage({ title = 'Kyc Sanctions Review' }: KycSanctionsReviewPageProps): React.JSX.Element {
+export function Page({ title = 'Kyc Sanctions Review' }: PageProps): React.JSX.Element {
   return (
     <main className="container mx-auto p-6" aria-labelledby="page-heading">
       <header className="mb-6">
@@ -29,4 +29,4 @@ export function KycSanctionsReviewPage({ title = 'Kyc Sanctions Review' }: KycSa
   )
 }
 
-export default KycSanctionsReviewPage
+export default Page

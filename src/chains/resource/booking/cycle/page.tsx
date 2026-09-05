@@ -11,11 +11,11 @@
  */
 import * as React from 'react'
 
-export interface ResourceBookingCyclePageProps {
+export interface PageProps {
   readonly title?: string
 }
 
-export function ResourceBookingCyclePage({ title = 'Resource Booking Cycle' }: ResourceBookingCyclePageProps): React.JSX.Element {
+export function Page({ title = 'Resource Booking Cycle' }: PageProps): React.JSX.Element {
   return (
     <main className="container mx-auto p-6" aria-labelledby="page-heading">
       <header className="mb-6">
@@ -29,4 +29,4 @@ export function ResourceBookingCyclePage({ title = 'Resource Booking Cycle' }: R
   )
 }
 
-export default ResourceBookingCyclePage
+export default Page

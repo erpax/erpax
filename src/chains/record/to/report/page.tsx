@@ -11,11 +11,11 @@
  */
 import * as React from 'react'
 
-export interface RecordToReportPageProps {
+export interface PageProps {
   readonly title?: string
 }
 
-export function RecordToReportPage({ title = 'Record To Report' }: RecordToReportPageProps): React.JSX.Element {
+export function Page({ title = 'Record To Report' }: PageProps): React.JSX.Element {
   return (
     <main className="container mx-auto p-6" aria-labelledby="page-heading">
       <header className="mb-6">
@@ -29,4 +29,4 @@ export function RecordToReportPage({ title = 'Record To Report' }: RecordToRepor
   )
 }
 
-export default RecordToReportPage
+export default Page

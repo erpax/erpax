@@ -11,11 +11,11 @@
  */
 import * as React from 'react'
 
-export interface EsgReportingCyclePageProps {
+export interface PageProps {
   readonly title?: string
 }
 
-export function EsgReportingCyclePage({ title = 'Esg Reporting Cycle' }: EsgReportingCyclePageProps): React.JSX.Element {
+export function Page({ title = 'Esg Reporting Cycle' }: PageProps): React.JSX.Element {
   return (
     <main className="container mx-auto p-6" aria-labelledby="page-heading">
       <header className="mb-6">
@@ -29,4 +29,4 @@ export function EsgReportingCyclePage({ title = 'Esg Reporting Cycle' }: EsgRepo
   )
 }
 
-export default EsgReportingCyclePage
+export default Page

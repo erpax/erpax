@@ -118,6 +118,25 @@ describe('diamond/membership — a path segment is not a stray', () => {
     expect(isPathSegmentDir(join(root, 'a'), 'empty')).toBe(false)
   })
 
+  // The cascade correction. `bank/reconciliation` holds nothing but `service/`, which carries
+  // `index.ts` and owes a SKILL. Charging the ancestor too reported one missing leg twice, all the
+  // way up the chain — 45 of 117 stray dirs were that echo, never a second defect.
+  it('a path segment leading to TypeScript is lawful, even where no SKILL exists yet', () => {
+    const root = tree({ 'bank': [], 'bank/reconciliation': [], 'bank/reconciliation/service': ['index.ts'] })
+    expect(isPathSegmentDir(join(root, 'bank'), 'reconciliation')).toBe(true)
+  })
+
+  it('…and the leaf that owes the SKILL is still charged for it', () => {
+    const root = tree({ 'bank': [], 'bank/reconciliation': [], 'bank/reconciliation/service': ['index.ts'] })
+    expect(isPathSegmentDir(join(root, 'bank/reconciliation'), 'service')).toBe(false)
+    expect(isChildAtomDir(join(root, 'bank/reconciliation'), 'service')).toBe(false)
+  })
+
+  it('a chain of folders holding no TypeScript at all is still on the way to nothing', () => {
+    const root = tree({ 'a': [], 'a/b': [], 'a/b/c': ['notes.txt'] })
+    expect(isPathSegmentDir(join(root, 'a'), 'b')).toBe(false)
+  })
+
   it('a directory with a SKILL is a child atom, judged by the older rule', () => {
     const root = tree({ 'a': [], 'a/b': ['SKILL.md'] })
     expect(isChildAtomDir(join(root, 'a'), 'b')).toBe(true)

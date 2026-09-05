@@ -11,11 +11,11 @@
  */
 import * as React from 'react'
 
-export interface CrmLeadToCashPageProps {
+export interface PageProps {
   readonly title?: string
 }
 
-export function CrmLeadToCashPage({ title = 'Crm Lead To Cash' }: CrmLeadToCashPageProps): React.JSX.Element {
+export function Page({ title = 'Crm Lead To Cash' }: PageProps): React.JSX.Element {
   return (
     <main className="container mx-auto p-6" aria-labelledby="page-heading">
       <header className="mb-6">
@@ -29,4 +29,4 @@ export function CrmLeadToCashPage({ title = 'Crm Lead To Cash' }: CrmLeadToCashP
   )
 }
 
-export default CrmLeadToCashPage
+export default Page

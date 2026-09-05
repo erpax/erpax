@@ -11,11 +11,11 @@
  */
 import * as React from 'react'
 
-export interface WorkflowApprovalCyclePageProps {
+export interface PageProps {
   readonly title?: string
 }
 
-export function WorkflowApprovalCyclePage({ title = 'Workflow Approval Cycle' }: WorkflowApprovalCyclePageProps): React.JSX.Element {
+export function Page({ title = 'Workflow Approval Cycle' }: PageProps): React.JSX.Element {
   return (
     <main className="container mx-auto p-6" aria-labelledby="page-heading">
       <header className="mb-6">
@@ -29,4 +29,4 @@ export function WorkflowApprovalCyclePage({ title = 'Workflow Approval Cycle' }:
   )
 }
 
-export default WorkflowApprovalCyclePage
+export default Page

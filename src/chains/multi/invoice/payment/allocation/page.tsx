@@ -11,11 +11,11 @@
  */
 import * as React from 'react'
 
-export interface MultiInvoicePaymentAllocationPageProps {
+export interface PageProps {
   readonly title?: string
 }
 
-export function MultiInvoicePaymentAllocationPage({ title = 'Multi Invoice Payment Allocation' }: MultiInvoicePaymentAllocationPageProps): React.JSX.Element {
+export function Page({ title = 'Multi Invoice Payment Allocation' }: PageProps): React.JSX.Element {
   return (
     <main className="container mx-auto p-6" aria-labelledby="page-heading">
       <header className="mb-6">
@@ -29,4 +29,4 @@ export function MultiInvoicePaymentAllocationPage({ title = 'Multi Invoice Payme
   )
 }
 
-export default MultiInvoicePaymentAllocationPage
+export default Page

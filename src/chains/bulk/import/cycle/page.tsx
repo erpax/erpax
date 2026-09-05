@@ -11,11 +11,11 @@
  */
 import * as React from 'react'
 
-export interface BulkImportCyclePageProps {
+export interface PageProps {
   readonly title?: string
 }
 
-export function BulkImportCyclePage({ title = 'Bulk Import Cycle' }: BulkImportCyclePageProps): React.JSX.Element {
+export function Page({ title = 'Bulk Import Cycle' }: PageProps): React.JSX.Element {
   return (
     <main className="container mx-auto p-6" aria-labelledby="page-heading">
       <header className="mb-6">
@@ -29,4 +29,4 @@ export function BulkImportCyclePage({ title = 'Bulk Import Cycle' }: BulkImportC
   )
 }
 
-export default BulkImportCyclePage
+export default Page

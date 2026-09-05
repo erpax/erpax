@@ -11,11 +11,11 @@
  */
 import * as React from 'react'
 
-export interface ProcureToPayPageProps {
+export interface PageProps {
   readonly title?: string
 }
 
-export function ProcureToPayPage({ title = 'Procure To Pay' }: ProcureToPayPageProps): React.JSX.Element {
+export function Page({ title = 'Procure To Pay' }: PageProps): React.JSX.Element {
   return (
     <main className="container mx-auto p-6" aria-labelledby="page-heading">
       <header className="mb-6">
@@ -29,4 +29,4 @@ export function ProcureToPayPage({ title = 'Procure To Pay' }: ProcureToPayPageP
   )
 }
 
-export default ProcureToPayPage
+export default Page

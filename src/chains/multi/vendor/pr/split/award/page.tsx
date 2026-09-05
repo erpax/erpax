@@ -11,11 +11,11 @@
  */
 import * as React from 'react'
 
-export interface MultiVendorPrSplitAwardPageProps {
+export interface PageProps {
   readonly title?: string
 }
 
-export function MultiVendorPrSplitAwardPage({ title = 'Multi Vendor Pr Split Award' }: MultiVendorPrSplitAwardPageProps): React.JSX.Element {
+export function Page({ title = 'Multi Vendor Pr Split Award' }: PageProps): React.JSX.Element {
   return (
     <main className="container mx-auto p-6" aria-labelledby="page-heading">
       <header className="mb-6">
@@ -29,4 +29,4 @@ export function MultiVendorPrSplitAwardPage({ title = 'Multi Vendor Pr Split Awa
   )
 }
 
-export default MultiVendorPrSplitAwardPage
+export default Page
