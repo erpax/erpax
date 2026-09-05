@@ -186,6 +186,8 @@ export {
   type DimensionRealtimeEmitOpts,
 } from './dimension/realtime'
 
+export { assertSkillFaceBudget, atomsWithinBudget, faceCost, injectedCost, skillWeights } from './budget'
+
 if (import.meta.url === 'file://' + process.argv[1]) {
   const d = matrixDigest()
   const ent = entanglement()

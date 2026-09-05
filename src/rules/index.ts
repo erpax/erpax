@@ -16,6 +16,7 @@ import { forgedIdentifiers } from '@/rules/forge'
 import { deadCommands } from '@/rules/command'
 import { blindProbes } from '@/rules/probe'
 import { fundedSpine } from '@/fund'
+import { skillWeights } from '@/quantum/budget'
 import { kernelPath, reflexiveTheorems, unacceptedProofs } from '@/proof/accepted'
 import { unbackedPhenomena } from '@/quantum/interval'
 import { unbackedFigures } from '@/render/scene'
@@ -280,6 +281,10 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // table has 0 inbound edges among 1,129, so 7 of 8 stages fail for ONE cause, in all 21 NACE
     // sections alike. Ratchets from the live 7; 0 is the horizon, reachable by one relationship.
     guardian({ axis: 'fund', violations: fundedSpine(cwd).filter((s) => !s.served).length, baseline: 7 }),
+    // agent/budget — the heaviest SKILL face, in bytes ([[quantum]]/budget). Context is RE-SENT, so a
+    // byte in an orientation is billed once per turn for the life of the session; the corpus declares
+    // a 50,000-byte ceiling that the injecting path never passes through. Ratchets DOWN from 65,117.
+    guardian({ axis: 'skill-face', violations: skillWeights(cwd)[0]?.bytes ?? 0, baseline: 65_117 }),
     // proof/accepted — a .lean file the kernel does not accept as proof. Four of five carry `sorry`
     // or do not compile, under a directory named `verify` that nothing ever ran. Ratchets from 4;
     // the horizon is 0, because a theorem proved by `sorry` states a claim and proves nothing.
