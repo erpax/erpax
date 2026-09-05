@@ -1,0 +1,1 @@
+export { revalidateHeader } from './revalidateHeader'

@@ -237,3 +237,5 @@ export const payrollDisbursementHook: CollectionAfterChangeHook = async ({
 
   return doc
 }
+
+/** @index-cross.foldback child=bank/accounts/payroll/runs/hooks/disbursement parent=bank/accounts/payroll/runs/hooks — this cross folds back into its parent. */

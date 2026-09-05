@@ -137,3 +137,5 @@ const InventoryMovements: CollectionConfig = {
 }
 
 export default InventoryMovements
+
+export * from './hooks'

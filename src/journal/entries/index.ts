@@ -12,7 +12,7 @@ import {
   auditFields,
 } from '@/field'
 import { validateNotLocked } from '@/utility'
-import { validateBalancedEntry } from './hooks/balanced-entry'
+import { validateBalancedEntry } from './hooks/balanced'
 
 /**
  * Journal Entries — double-entry-bookkeeping write target.
@@ -162,3 +162,5 @@ const JournalEntries: CollectionConfig = {
 }
 
 export default JournalEntries
+
+export * from './hooks'

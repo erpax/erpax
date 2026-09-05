@@ -58,3 +58,5 @@ export const iscoOf = (nkpd: string): string => nkpd.slice(0, 4)
 
 /** A position's harmonic = pay relative to the band floor — its rung on the rate ladder ([[allocation]]). */
 export const positionHarmonic = (p: SeedPosition): number => p.payMonthly / PAY_BAND.floor
+
+/** @index-cross.foldback child=vocabulary/manufacturing/seed/positions parent=vocabulary/manufacturing/seed — this cross folds back into its parent. */

@@ -70,3 +70,5 @@ export const standardFor = (code: string): StandardEntry | undefined =>
 /** The distinct live APIs across all registered standards (the related-API surface). */
 export const standardApis = (): readonly CountryApi[] =>
   [...new Map(STANDARD_REGISTRY.map((s) => s.relatedApi).filter((a): a is CountryApi => a !== null).map((a) => [a.endpoint, a])).values()]
+
+/** @index-cross.foldback child=vocabulary/manufacturing/seed/standards parent=vocabulary/manufacturing/seed — this cross folds back into its parent. */

@@ -1,0 +1,1 @@
+export { revalidateFooter } from './revalidateFooter'

@@ -39,3 +39,5 @@ export function createTenantStripePaymentMethod() {
     endpoints: [tenantStripeWebhookEndpoint({})],
   }
 }
+
+/** @index-cross.foldback child=ecommerce/stripe/payment parent=ecommerce/stripe — this cross folds back into its parent. */

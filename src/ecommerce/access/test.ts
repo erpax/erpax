@@ -1,15 +1,17 @@
 import { describe, it, expect } from 'vitest'
+import * as barrel from './index'
 
-/** Credit for claims in src/ecommerce/access/adminOnlyFieldAccess.ts — chatHealLeftoverWave; not an empty gaming test. */
-describe('src/ecommerce/access/adminOnlyFieldAccess.ts — leftover wave proof', () => {
-  it('source still exports/binds its claimed surface and claim markers (refutable — deleting them fails)', async () => {
-    const { readFileSync } = await import('node:fs')
-    const { fileURLToPath } = await import('node:url')
-    const { dirname, join } = await import('node:path')
-    const dir = dirname(fileURLToPath(import.meta.url))
-    const src = readFileSync(join(dir, 'adminOnlyFieldAccess.ts'), 'utf8')
-    expect(src).toMatch(/\bexport\b/)
-    
-    expect(src).toMatch(/@(?:invariant|standard|compliance|audit)\b/)
+describe('ecommerce/access — the canonical entry point', () => {
+  it('offers every member the folder holds, so no caller reaches past the barrel', () => {
+    expect(Object.hasOwn(barrel, 'isAdmin')).toBe(true)
+    expect(Object.hasOwn(barrel, 'isCustomer')).toBe(true)
+    expect(Object.hasOwn(barrel, 'isDocumentOwner')).toBe(true)
+    expect(Object.hasOwn(barrel, 'adminOnlyFieldAccess')).toBe(true)
+    expect(Object.hasOwn(barrel, 'customerOnlyFieldAccess')).toBe(true)
+    expect(Object.hasOwn(barrel, 'adminOrPublishedStatus')).toBe(true)
+  })
+
+  it('offers exactly what it names — a barrel that grew a member silently is a face nobody reviewed', () => {
+    expect(Object.keys(barrel).sort()).toEqual(['adminOnlyFieldAccess', 'adminOrPublishedStatus', 'commerceHasCustomerRole', 'commerceHasStaffRole', 'commerceHasTenantAdminRole', 'customerOnlyFieldAccess', 'isAdmin', 'isCustomer', 'isDocumentOwner'])
   })
 })

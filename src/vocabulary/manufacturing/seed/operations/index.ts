@@ -121,3 +121,5 @@ export const PAY_BAND = { floor: 90, median: 227, ceiling: 960, currency: 'BGN' 
 
 /** Total observed phases across the vocabulary — the empirical weight of the routing. */
 export const totalObservedPhases = (): number => OPERATIONS.reduce((n, op) => n + op.observedPhases, 0)
+
+/** @index-cross.foldback child=vocabulary/manufacturing/seed/operations parent=vocabulary/manufacturing/seed — this cross folds back into its parent. */

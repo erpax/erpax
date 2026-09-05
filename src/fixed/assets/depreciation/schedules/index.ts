@@ -85,3 +85,5 @@ const DepreciationSchedules: CollectionConfig = {
 }
 
 export default DepreciationSchedules
+
+export * from './hooks'

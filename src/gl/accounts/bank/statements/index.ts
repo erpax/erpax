@@ -130,3 +130,5 @@ const BankStatements: CollectionConfig = {
 };
 
 export default BankStatements;
+
+export * from './hooks'

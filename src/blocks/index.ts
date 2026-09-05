@@ -1,10 +1,7 @@
 /** blocks — Payload block components + configs barrel. */
-export { BannerBlock } from './banner/Component'
-export { Banner } from './banner/config'
-export { CodeBlock, type CodeBlockProps } from './code/Component'
-export { Code } from './code/config'
-export { ContentBlock } from './content/Component'
-export { Content } from './content/config'
+export { Banner, BannerBlock } from './banner'
+export { Code, CodeBlock, CodeClient, CopyButton, type CodeBlockProps } from './code'
+export { Content, ContentBlock } from './content'
 export { CallToActionBlock } from './call/to/action/Component'
 export { CallToAction } from './call/to/action/config'
 export { MediaBlock } from './media/block/Component'

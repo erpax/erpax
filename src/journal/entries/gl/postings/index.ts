@@ -12,7 +12,7 @@ import {
   auditFields,
 } from '@/base/accounting/field'
 import { validateNotLocked } from '@/utility'
-import { validateBalancedEntry } from '../../hooks/balanced-entry'
+import { validateBalancedEntry } from '../../hooks/balanced'
 
 /**
  * GL Postings — atomic debit/credit lines linked to a journal entry.

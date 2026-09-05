@@ -1811,8 +1811,8 @@ src/jobs/dunningJob.test.ts:9: * @standard EN-16931:2017 dunning-notice
 src/jobs/salesAuditFileJob.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/jobs/salesAuditFileJob.test.ts:5: * @standard BG Наредба-Н-18 §Приложение-38
 src/journal/entries/gl/postings/index.ts:26: * @standard ISO-8601-1:2019 date-time posted-date
-src/journal/entries/hooks/balanced-entry.ts:21: * @standard ECMA-262 ECMAScript-2024 baseline
-src/journal/entries/hooks/balanced-entry.ts:22: * @standard IEEE-754-2019 binary-floating-point integer-cents-only
+src/journal/entries/hooks/balanced.ts:21: * @standard ECMA-262 ECMAScript-2024 baseline
+src/journal/entries/hooks/balanced.ts:22: * @standard IEEE-754-2019 binary-floating-point integer-cents-only
 src/journal/entries/index.ts:29: * @standard ISO-8601-1:2019 date-time entry-date posted-date approval-date
 src/journal/entries/rounding/adjustments/index.ts:10: * @standard ISO-4217:2015 currency-codes from-to-currency-pair
 src/journal/entries/rounding/adjustments/index.ts:11: * @standard ISO-8601-1:2019 date-time adjustment-date
@@ -3956,7 +3956,7 @@ src/jobs/dunning/job/index.ts:18: * @compliance SOX §404 internal-controls
 src/jobs/dunning/job/index.ts:19: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
 src/jobs/dunningJob.test.ts:12: * @compliance SOX §404 internal-controls
 src/journal/entries/gl/postings/index.ts:30: * @compliance SOX §404 internal-controls
-src/journal/entries/hooks/balanced-entry.ts:27: * @compliance SOX §404 internal-controls
+src/journal/entries/hooks/balanced.ts:27: * @compliance SOX §404 internal-controls
 src/journal/entries/index.ts:34: * @compliance SOX §404 internal-controls
 src/journal/entries/rounding/adjustments/index.ts:16: * @compliance SOX §404 internal-controls rounding-control TOM-RND-01
 src/journal/entry/service/index.ts:18: * @compliance SOX §404 internal-controls
@@ -4622,9 +4622,9 @@ src/jobs/dunningJob.test.ts:7: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/jobs/dunningJob.test.ts:8: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/journal/entries/gl/postings/index.ts:27: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/journal/entries/gl/postings/index.ts:28: * @accounting OECD SAF-T §3 transactions
-src/journal/entries/hooks/balanced-entry.ts:23: * @accounting IFRS IAS-1 presentation-of-financial-statements
-src/journal/entries/hooks/balanced-entry.ts:24: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
-src/journal/entries/hooks/balanced-entry.ts:25: * @accounting OECD SAF-T §3 journal-entries
+src/journal/entries/hooks/balanced.ts:23: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/journal/entries/hooks/balanced.ts:24: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
+src/journal/entries/hooks/balanced.ts:25: * @accounting OECD SAF-T §3 journal-entries
 src/journal/entries/index.ts:30: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/journal/entries/index.ts:31: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
 src/journal/entries/index.ts:32: * @accounting OECD SAF-T §3 journal-entries
@@ -5975,7 +5975,7 @@ src/jobs/bnb/rates/sync/index.ts:20: * @audit ISO-19011:2018 audit-trail externa
 src/jobs/dunning/job/index.ts:17: * @audit ISO-19011:2018 audit-trail
 src/jobs/dunningJob.test.ts:11: * @audit ISO-19011:2018 audit-trail
 src/journal/entries/gl/postings/index.ts:29: * @audit ISO-19011:2018 audit-trail
-src/journal/entries/hooks/balanced-entry.ts:26: * @audit ISO-19011:2018 audit-trail double-entry-invariant
+src/journal/entries/hooks/balanced.ts:26: * @audit ISO-19011:2018 audit-trail double-entry-invariant
 src/journal/entries/index.ts:33: * @audit ISO-19011:2018 audit-trail
 src/journal/entries/rounding/adjustments/index.ts:15: * @audit ISO-19011:2018 audit-trail rounding-evidence
 src/journal/entry/service/index.ts:17: * @audit ISO-19011:2018 audit-trail

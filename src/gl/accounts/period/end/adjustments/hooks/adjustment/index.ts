@@ -147,3 +147,5 @@ export const periodEndAdjustmentPostingHook: CollectionAfterChangeHook = async (
 
   return doc
 }
+
+/** @index-cross.foldback child=gl/accounts/period/end/adjustments/hooks/adjustment parent=gl/accounts/period/end/adjustments/hooks — this cross folds back into its parent. */

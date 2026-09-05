@@ -379,3 +379,5 @@ const PayrollRuns: CollectionConfig = {
 }
 
 export default PayrollRuns
+
+export * from './hooks'
