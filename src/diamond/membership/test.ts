@@ -2,7 +2,7 @@ import { describe, it, expect, afterAll } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { diamondMembershipViolations, diamondMembershipOk } from '@/diamond/membership'
+import { diamondMembershipOk, diamondMembershipViolations, isChildAtomDir, isPathSegmentDir } from '@/diamond/membership'
 
 describe('diamond/membership — stray matter blocks seal', () => {
   // BOUNDED-WITNESS: prove the DETECTOR on a hermetic fixture, not a live atom — a live
@@ -81,5 +81,45 @@ describe('diamond/membership — a fixtures/ dir is captured evidence, not stray
     for (const a of ['outward/eu', 'outward/bg', 'outward/world', 'agent/inventory']) {
       expect(diamondMembershipOk(a), a).toBe(true)
     }
+  })
+})
+
+describe('diamond/membership — a path segment is not a stray', () => {
+  const tree = (dirs: Record<string, string[]>): string => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-seg-'))
+    for (const [d, files] of Object.entries(dirs)) {
+      mkdirSync(join(root, d), { recursive: true })
+      for (const f of files) writeFileSync(join(root, d, f), '# x\n')
+    }
+    return root
+  }
+
+  // `api/audit` contains nothing but `events`; `auto/populate` nothing but `created` and
+  // `tenant`. They exist so a nested atom has an address — no code, no prose, nothing to seal.
+  // Charging them as stray asks them to become atoms, and an atom with nothing in it is what
+  // rules/prose forbids. Measured: 176 of 248 stray-dirs were this.
+  it('a directory of only directories, leading to an atom, is lawful', () => {
+    const root = tree({ 'api': [], 'api/audit': [], 'api/audit/events': ['SKILL.md'] })
+    expect(isPathSegmentDir(join(root, 'api'), 'audit')).toBe(true)
+  })
+
+  it('…but not when it leads to no atom at all — then it is on the way to nothing', () => {
+    const root = tree({ 'api': [], 'api/audit': [], 'api/audit/events': [] })
+    expect(isPathSegmentDir(join(root, 'api'), 'audit')).toBe(false)
+  })
+
+  it('any file at all means it carries matter, and matter needs a SKILL', () => {
+    const root = tree({ 'admin': [], 'admin/bar': ['index.tsx'], 'admin/bar/sub': ['SKILL.md'] })
+    expect(isPathSegmentDir(join(root, 'admin'), 'bar')).toBe(false)
+  })
+
+  it('an empty directory is still stray', () => {
+    const root = tree({ 'a': [], 'a/empty': [] })
+    expect(isPathSegmentDir(join(root, 'a'), 'empty')).toBe(false)
+  })
+
+  it('a directory with a SKILL is a child atom, judged by the older rule', () => {
+    const root = tree({ 'a': [], 'a/b': ['SKILL.md'] })
+    expect(isChildAtomDir(join(root, 'a'), 'b')).toBe(true)
   })
 })

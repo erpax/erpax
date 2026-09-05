@@ -349,7 +349,12 @@ export function finishedIdeaCrossed(
     if (!impurities.includes(off)) impurities.push(off)
   }
 
-  if (model.trinity.code) {
+  // A deployment face means the atom's code is REACHED from a worker/plugin/pwa entry — so this
+  // charges an atom for not being deployed. A collided schema.org word is a word in the corpus's
+  // vocabulary, not a deployable unit: 65 of the 132 charged here were vocabulary atoms whose
+  // barrel exists only to name the word. Same category error as charging them a trinity, same
+  // arbiter — schema.org, injected rather than reached for.
+  if (model.trinity.code && !isLexiconAtom(atomPath, opts?.cwd ?? process.cwd(), opts?.isSchemaWord)) {
     const faces = deploymentFaces(model)
     if (!faces.worker && !faces.plugin && !faces.pwa) {
       impurities.push('deployment: no materialised face (worker/plugin/pwa)')

@@ -101,6 +101,45 @@ export function isChildAtomDir(parentDir: string, name: string): boolean {
 }
 
 /**
+ * A PATH SEGMENT — a directory that holds only directories, on the way to a real atom.
+ *
+ * `api/audit` contains nothing but `events`; `auto/populate` nothing but `created` and `tenant`.
+ * These exist so a nested atom has an address. They hold no code, no prose and nothing to seal,
+ * so charging them as stray asks them to become atoms — and an atom with nothing in it is
+ * exactly what [[rules]]/prose forbids. Measured: 176 of 248 stray-dirs were this.
+ *
+ * The allowance is NARROW and content-checked, like the `fixtures` one above and for the same
+ * reason. The directory must contain NO FILES at all, at least one subdirectory, and must lead
+ * to a real atom: a folder of folders with no SKILL anywhere beneath it is still stray, because
+ * then it is on the way to nothing.
+ */
+export function isPathSegmentDir(parentDir: string, name: string): boolean {
+  const dir = join(parentDir, name)
+  let entries: string[]
+  try {
+    entries = readdirSync(dir)
+  } catch {
+    return false
+  }
+  if (entries.length === 0) return false
+  if (entries.some((e) => !isDir(join(dir, e)))) return false // any file ⇒ it carries matter
+  return leadsToAtom(dir, 6)
+}
+
+/** Does a real atom live anywhere beneath? Bounded, so a deep tree cannot walk forever. */
+function leadsToAtom(dir: string, depth: number): boolean {
+  if (depth <= 0) return false
+  if (existsSync(join(dir, TRINITY_FORM))) return true
+  let entries: string[]
+  try {
+    entries = readdirSync(dir)
+  } catch {
+    return false
+  }
+  return entries.some((e) => isDir(join(dir, e)) && leadsToAtom(join(dir, e), depth - 1))
+}
+
+/**
  * A captured-evidence directory: named `fixtures`, non-empty, flat, data only.
  *
  * Fails CLOSED — an empty dir, a nested dir, or any non-data file makes it a stray
@@ -148,7 +187,7 @@ export function diamondMembershipViolations(
   for (const e of entries) {
     const p = join(dir, e)
     if (isDir(p)) {
-      const lawful = isChildAtomDir(dir, e) || isCapturedFixturesDir(dir, e)
+      const lawful = isChildAtomDir(dir, e) || isCapturedFixturesDir(dir, e) || isPathSegmentDir(dir, e)
       if (!lawful) violations.push({ atomPath, file: e + '/', reason: 'stray-dir' })
       continue
     }
