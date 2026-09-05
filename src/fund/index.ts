@@ -154,9 +154,16 @@ const STAGES: readonly {
   { stage: 'procure', slug: 'purchase-orders', attributable: true, why: 'spending the money lawfully' },
   { stage: 'execute', slug: 'project-milestones', attributable: true, why: 'the work the award pays for' },
   { stage: 'account', slug: 'journal-entries', attributable: true, why: 'cost capture, eligible vs not' },
-  { stage: 'report', slug: 'audit-reports', attributable: true, why: 'periodic reporting to the funder' },
+  // NOT `audit-reports`: that is the SOX/consolidation artefact, and it read as SERVED only because
+  // it reaches the award transitively once projects carry one. A funder's report is a different
+  // document with a different deadline and a different reader — but it is the SAME SHAPE as a
+  // regulatory filing (entity · period · due date · submission · status · feedback), so it is a ROW
+  // in `regulatory-reports` under reportType `grant-report`, never a table of its own.
+  { stage: 'report', slug: 'regulatory-reports', attributable: true, why: 'the periodic report the funder requires' },
   { stage: 'audit', slug: 'audit-evidence', attributable: true, why: "the funder's trail, and claw-back defence" },
-  { stage: 'close', slug: 'contracts', attributable: true, why: 'final settlement against the agreement' },
+  // NOT `contracts`: those are CUSTOMER contracts. An award's settlement is recorded on the award —
+  // its own status walks awarded → active → conditions_met → fully_recognised → repayable → repaid.
+  { stage: 'close', slug: 'government-grants', attributable: false, why: "settlement, on the award's own lifecycle" },
 ]
 
 /** The declared lifecycle, as behaviour rather than a published literal. */

@@ -279,9 +279,10 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // probe elsewhere, which is how `readme/compute` hid nine of these and cost 31 statement gaps.
     guardian({ axis: 'probe', violations: blindProbes(cwd).length, baseline: 42 }),
     // fund — a funded-project stage that cannot name the award it belongs to ([[fund]]). The award
-    // table has 0 inbound edges among 1,129, so 7 of 8 stages fail for ONE cause, in all 21 NACE
-    // sections alike. Ratchets from the live 7; 0 is the horizon, reachable by one relationship.
-    guardian({ axis: 'fund', violations: fundedSpine(cwd).filter((s) => !s.served).length, baseline: 7 }),
+    // had 0 inbound edges among 1,129 and 7 of 8 stages failed for one cause, in all 21 NACE
+    // sections alike. Five edges closed it and 0 is now a THEOREM: there is no acceptable number of
+    // stages that cannot name the award, and no new collection was needed to reach it.
+    guardian({ axis: 'fund', violations: fundedSpine(cwd).filter((s) => !s.served).length, baseline: 0 }),
     // agent/budget — the heaviest SKILL face, in bytes ([[quantum]]/budget). Context is RE-SENT, so a
     // byte in an orientation is billed once per turn for the life of the session; the corpus declares
     // a 50,000-byte ceiling that the injecting path never passes through. Ratchets DOWN from 65,117.

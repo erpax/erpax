@@ -52,7 +52,16 @@ const Projects: CollectionConfig = {
     { name: 'name', type: 'text', required: true,
       admin: { description: 'Customer-facing project name.' } },
     { name: 'description', type: 'textarea', localized: true },
-    { name: 'customer', type: 'relationship', relationTo: 'customers', required: true, index: true },
+    // NOT required. A grant-funded project has a FUNDER, not a customer, and requiring one forced
+    // whoever booked it to invent a counterparty — a false row, in the field an auditor reads to
+    // learn who the work was for ([[fund]]).
+    { name: 'customer', type: 'relationship', relationTo: 'customers', index: true },
+    // The award this project executes against. Nothing in 231 collections could reach
+    // `government-grants`: it named its tenant, entity, clawback provision and funded asset, and
+    // nothing named IT — so no cost, invoice, milestone or report could be attributed to the grant
+    // that paid for it, in any domain. This is that edge.
+    { name: 'grant', type: 'relationship', relationTo: 'government-grants', index: true,
+      admin: { description: 'The award funding this project. Costs book to the project; the project carries the award.' } },
     { name: 'contract', type: 'relationship', relationTo: 'contracts',
       admin: { description: 'Master contract this project executes against (one contract may have many projects).' } },
     { name: 'legalEntity', type: 'relationship', relationTo: 'legal-entities',

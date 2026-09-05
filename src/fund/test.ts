@@ -43,27 +43,35 @@ describe('fund — the collection graph', () => {
 })
 
 describe('fund — the funded-project spine', () => {
-  it('the award is unreachable in the live config: nothing can name the grant it belongs to', () => {
+  // It was 0 of 231. `government-grants` named its tenant, entity, clawback provision and funded
+  // asset, and nothing named IT — so no cost, invoice, milestone or report could be attributed to
+  // the grant that paid for it, identically in all 21 NACE sections. Five edges closed it.
+  it('the award is reachable: a row can name the grant it belongs to', () => {
     const g = collectionGraph(process.cwd())
     expect(g.ifaceOfSlug.has(awardSlug())).toBe(true)
-    expect(g.edges.filter((e) => e.to === awardSlug())).toHaveLength(0)
-    expect(canReach(awardSlug(), process.cwd()).size).toBe(0)
+    expect(g.edges.filter((e) => e.to === awardSlug()).length).toBeGreaterThan(0)
+    expect(canReach(awardSlug(), process.cwd()).size).toBeGreaterThan(50)
   })
 
-  it('so every attributable stage fails, and for ONE reason rather than eight', () => {
-    const broken = fundedSpine(process.cwd()).filter((s) => !s.served)
-    expect(broken.length).toBe(fundedStages().filter((s) => s.attributable).length)
-    expect(new Set(broken.map((s) => s.reason)).size).toBe(1)
-    expect(spineComplete(process.cwd())).toBe(false)
+  it('every stage is served', () => {
+    expect(fundedSpine(process.cwd()).filter((s) => !s.served)).toEqual([])
+    expect(spineComplete(process.cwd())).toBe(true)
   })
 
-  it('projects requires a customer, so a funded project cannot be saved without inventing one', () => {
-    expect(requiredRelationships('projects', process.cwd())).toContain('customer')
+  it('projects no longer REQUIRE a customer — a funded project has a funder', () => {
+    expect(requiredRelationships('projects', process.cwd())).not.toContain('customer')
   })
 
-  it('names both blockers, and both sit in the spine — neither is a domain gap', () => {
-    const b = awardBlockers(process.cwd())
-    expect(b.map((x) => x.kind).sort()).toEqual(['required-counterparty', 'unreachable-award'])
+  it('names no blockers', () => {
+    expect(awardBlockers(process.cwd())).toEqual([])
+  })
+
+  // The funder's report is a ROW, not a table. A new collection is warranted only by a new
+  // signature, and a periodic filing to an external authority — entity, period, due date,
+  // submission, status, feedback — is a shape this corpus already had.
+  it('added no collection to close the spine', () => {
+    expect(collectionGraph(process.cwd()).ifaceOfSlug.size).toBe(231)
+    expect(fundedSpine(process.cwd()).find((s) => s.stage === 'report')!.slug).toBe('regulatory-reports')
   })
 })
 
@@ -72,7 +80,10 @@ describe('fund — the gate can go green', () => {
   it('serves every stage once ONE edge exists: each table can name its award', () => {
     const root = fixture(true)
     try {
-      expect(canReach(awardSlug(), root).size).toBe(fundedStages().length - 1)
+      // distinct slugs, minus the award itself: `close` is recorded ON the award, so it shares a slug
+      const others = new Set(fundedStages().map((x) => x.slug))
+      others.delete(awardSlug())
+      expect(canReach(awardSlug(), root).size).toBe(others.size)
       expect(fundedSpine(root).filter((s) => !s.served)).toHaveLength(0)
       expect(spineComplete(root)).toBe(true)
       expect(awardBlockers(root)).toHaveLength(0)

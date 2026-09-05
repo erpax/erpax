@@ -1191,6 +1191,10 @@ export interface JournalEntry {
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
+  /**
+   * The project this belongs to. Costs book to the project; the project carries the award.
+   */
+  project?: (string | null) | Project;
   entryNumber: string;
   entryDate: string;
   postedDate?: string | null;
@@ -1230,6 +1234,391 @@ export interface JournalEntry {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * IFRS-15 §35 over-time-recognition anchor. WIP accumulates per project; revenue recognises per chosen progress measurement (cost-to-cost / milestone / output-method).
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "projects".
+ */
+export interface Project {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Tenant-unique project code (e.g. PRJ-2026-001).
+   */
+  projectCode: string;
+  /**
+   * Customer-facing project name.
+   */
+  name: string;
+  description?: string | null;
+  customer?: (string | null) | Customer;
+  /**
+   * The award funding this project. Costs book to the project; the project carries the award.
+   */
+  grant?: (string | null) | GovernmentGrant;
+  /**
+   * Master contract this project executes against (one contract may have many projects).
+   */
+  contract?: (string | null) | Contract;
+  /**
+   * Reporting legal entity that books this project's revenue + costs.
+   */
+  legalEntity?: (string | null) | LegalEntity;
+  /**
+   * Internal project owner (responsible for delivery + status).
+   */
+  projectManager?: (string | null) | User;
+  projectType?: ('fixed_price' | 'time_and_materials' | 'cost_plus' | 'milestone' | 'internal') | null;
+  /**
+   * Progress measurement method per IFRS-15. Drives the WIP / revenue posting cadence.
+   */
+  recognitionMethod?:
+    | (
+        | 'point_in_time'
+        | 'cost_to_cost'
+        | 'output_units'
+        | 'output_time'
+        | 'output_survey'
+        | 'milestone'
+        | 'right_to_invoice'
+      )
+    | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * Total transaction price for this project (cents). For T&M projects use the not-to-exceed cap.
+   */
+  contractedAmount?: number | null;
+  /**
+   * Estimated total cost at completion (EAC) — denominator in cost-to-cost % complete.
+   */
+  budgetedCost?: number | null;
+  /**
+   * Estimated total labour hours (used by output-time method).
+   */
+  budgetedHours?: number | null;
+  /**
+   * contractedAmount − budgetedCost (auto-derived).
+   */
+  budgetedMargin?: number | null;
+  /**
+   * Cumulative posted cost (auto-summed from time-entries + materials + overhead allocation).
+   */
+  actualCostToDate?: number | null;
+  /**
+   * Cumulative recognised revenue (auto-summed from period postings).
+   */
+  recognisedRevenueToDate?: number | null;
+  /**
+   * Snapshot of latest period progress measurement.
+   */
+  percentComplete?: number | null;
+  plannedStartDate?: string | null;
+  plannedEndDate?: string | null;
+  actualStartDate?: string | null;
+  actualEndDate?: string | null;
+  /**
+   * IAS-37 §66 onerous-contract flag — when EAC > contracted, provision the full expected loss now.
+   */
+  isOnerous?: boolean | null;
+  status?: ('draft' | 'approved' | 'in_progress' | 'on_hold' | 'completed' | 'cancelled') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "customers".
+ */
+export interface Customer {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Unique customer code (e.g., CUST-0001)
+   */
+  code: string;
+  /**
+   * Display name
+   */
+  name: string;
+  /**
+   * ISO 3166-1 alpha-2 — drives country-context API routing (VIES, business-registry lookup, e-invoicing).
+   */
+  country?: string | null;
+  identity: {
+    /**
+     * Registered legal name (EN 16931 BT-27)
+     */
+    legalName?: string | null;
+    /**
+     * Party legal form
+     */
+    customerType: 'individual' | 'company';
+    /**
+     * Lifecycle status
+     */
+    status: 'active' | 'on_hold' | 'inactive' | 'archived';
+  };
+  contact?: {
+    /**
+     * Primary email
+     */
+    email?: string | null;
+    /**
+     * Primary phone
+     */
+    phone?: string | null;
+    /**
+     * Web site
+     */
+    website?: string | null;
+  };
+  addresses?: {
+    /**
+     * All known addresses for this customer
+     */
+    addresses?: (string | Address)[] | null;
+    /**
+     * Default billing address
+     */
+    billingAddress?: (string | null) | Address;
+    /**
+     * Default shipping address
+     */
+    shippingAddress?: (string | null) | Address;
+  };
+  tax?: {
+    /**
+     * VAT / Tax ID (EN 16931 BT-31). Auto-classified against the per-country regex registry on save.
+     */
+    vatNumber?: string | null;
+    /**
+     * Auto-stamped — e.g. "VAT (BG)", "EIN", "GSTIN", "EIK / Bulstat".
+     */
+    vatNumberType?: string | null;
+    /**
+     * Tax-exempt customer (e.g., resale certificate)
+     */
+    taxExempt?: boolean | null;
+    /**
+     * Exemption certificate number
+     */
+    taxExemptionCertificate?: string | null;
+    /**
+     * Default tax code applied on invoices
+     */
+    defaultTaxCode?: (string | null) | TaxCode;
+  };
+  commercial: {
+    /**
+     * Default payment terms
+     */
+    paymentTerms?:
+      ('due_on_receipt' | 'net_7' | 'net_14' | 'net_30' | 'net_45' | 'net_60' | 'net_90' | 'custom') | null;
+    /**
+     * Custom net days (used when paymentTerms = custom)
+     */
+    paymentTermsDays?: number | null;
+    /**
+     * Credit limit (cents)
+     */
+    creditLimit?: number | null;
+    /**
+     * ISO 4217 currency for credit limit
+     */
+    creditCurrency?: string | null;
+    /**
+     * ISO 4217 default invoicing currency
+     */
+    defaultCurrency: string;
+    /**
+     * BCP 47 locale (e.g. en, en-US, de-DE)
+     */
+    defaultLocale?: string | null;
+    /**
+     * Price list / tier identifier
+     */
+    priceList?: string | null;
+  };
+  ledger?: {
+    /**
+     * Default AR control account (asset)
+     */
+    defaultReceivableAccount?: (string | null) | GlAccount;
+    /**
+     * Default revenue account on invoices
+     */
+    defaultRevenueAccount?: (string | null) | GlAccount;
+    /**
+     * Default sales-discount contra-revenue account
+     */
+    defaultDiscountAccount?: (string | null) | GlAccount;
+  };
+  notes?: {
+    /**
+     * Internal notes
+     */
+    note?: string | null;
+  };
+  /**
+   * Additional metadata
+   */
+  metadata?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "addresses".
+ */
+export interface Address {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  customer?: (string | null) | User;
+  title?: string | null;
+  firstName?: string | null;
+  lastName?: string | null;
+  company?: string | null;
+  addressLine1?: string | null;
+  addressLine2?: string | null;
+  city?: string | null;
+  state?: string | null;
+  postalCode?: string | null;
+  country:
+    | 'US'
+    | 'GB'
+    | 'CA'
+    | 'AU'
+    | 'AT'
+    | 'BE'
+    | 'BR'
+    | 'BG'
+    | 'CY'
+    | 'CZ'
+    | 'DK'
+    | 'EE'
+    | 'FI'
+    | 'FR'
+    | 'DE'
+    | 'GR'
+    | 'HK'
+    | 'HU'
+    | 'IN'
+    | 'IE'
+    | 'IT'
+    | 'JP'
+    | 'LV'
+    | 'LT'
+    | 'LU'
+    | 'MY'
+    | 'MT'
+    | 'MX'
+    | 'NL'
+    | 'NZ'
+    | 'NO'
+    | 'PL'
+    | 'PT'
+    | 'RO'
+    | 'SG'
+    | 'SK'
+    | 'SI'
+    | 'ES'
+    | 'SE'
+    | 'CH';
+  phone?: string | null;
+  /**
+   * Unique address code (e.g., ACME-NYC)
+   */
+  code?: string | null;
+  /**
+   * Contact person name
+   */
+  name?: string | null;
+  /**
+   * Email address
+   */
+  email?: string | null;
+  /**
+   * Tax regime (VAT/GST/None)
+   */
+  taxType?: ('vat' | 'gst' | 'none') | null;
+  /**
+   * Tax ID / VAT number
+   */
+  taxCode?: string | null;
+  /**
+   * Default tax rate (%)
+   */
+  taxRate?: number | null;
+  /**
+   * National ID number
+   */
+  ninCode?: string | null;
+  /**
+   * ISO 4217 currency code — defaults to the canonical DEFAULT_CURRENCY (derived from DEFAULT_COUNTRY).
+   */
+  currencyCode?: string | null;
+  /**
+   * Default debit account for transactions
+   */
+  debitAccount?: (string | null) | GlAccount;
+  /**
+   * Default credit account for transactions
+   */
+  creditAccount?: (string | null) | GlAccount;
+  /**
+   * Cash/bank account for payments
+   */
+  cashAccount?: (string | null) | GlAccount;
+  /**
+   * Internal notes
+   */
+  note?: string | null;
+  /**
+   * Use as default address
+   */
+  isDefault?: boolean | null;
+  /**
+   * Additional metadata
+   */
+  metadata?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -2225,119 +2614,89 @@ export interface Cart {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "addresses".
+ * via the `definition` "tax-codes".
  */
-export interface Address {
+export interface TaxCode {
   id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
-  customer?: (string | null) | User;
-  title?: string | null;
-  firstName?: string | null;
-  lastName?: string | null;
-  company?: string | null;
-  addressLine1?: string | null;
-  addressLine2?: string | null;
-  city?: string | null;
-  state?: string | null;
-  postalCode?: string | null;
-  country:
-    | 'US'
-    | 'GB'
-    | 'CA'
-    | 'AU'
-    | 'AT'
-    | 'BE'
-    | 'BR'
-    | 'BG'
-    | 'CY'
-    | 'CZ'
-    | 'DK'
-    | 'EE'
-    | 'FI'
-    | 'FR'
-    | 'DE'
-    | 'GR'
-    | 'HK'
-    | 'HU'
-    | 'IN'
-    | 'IE'
-    | 'IT'
-    | 'JP'
-    | 'LV'
-    | 'LT'
-    | 'LU'
-    | 'MY'
-    | 'MT'
-    | 'MX'
-    | 'NL'
-    | 'NZ'
-    | 'NO'
-    | 'PL'
-    | 'PT'
-    | 'RO'
-    | 'SG'
-    | 'SK'
-    | 'SI'
-    | 'ES'
-    | 'SE'
-    | 'CH';
-  phone?: string | null;
   /**
-   * Unique address code (e.g., ACME-NYC)
+   * Tax code (e.g., EU-DE-VAT-19, US-CA-SALES-7.25)
    */
-  code?: string | null;
+  code: string;
   /**
-   * Contact person name
+   * Human-readable label (e.g., "DE VAT 19% standard rate")
    */
-  name?: string | null;
-  /**
-   * Email address
-   */
-  email?: string | null;
-  /**
-   * Tax regime (VAT/GST/None)
-   */
-  taxType?: ('vat' | 'gst' | 'none') | null;
-  /**
-   * Tax ID / VAT number
-   */
-  taxCode?: string | null;
-  /**
-   * Default tax rate (%)
-   */
-  taxRate?: number | null;
-  /**
-   * National ID number
-   */
-  ninCode?: string | null;
-  /**
-   * ISO 4217 currency code — defaults to the canonical DEFAULT_CURRENCY (derived from DEFAULT_COUNTRY).
-   */
-  currencyCode?: string | null;
-  /**
-   * Default debit account for transactions
-   */
-  debitAccount?: (string | null) | GlAccount;
-  /**
-   * Default credit account for transactions
-   */
-  creditAccount?: (string | null) | GlAccount;
-  /**
-   * Cash/bank account for payments
-   */
-  cashAccount?: (string | null) | GlAccount;
-  /**
-   * Internal notes
-   */
-  note?: string | null;
-  /**
-   * Use as default address
-   */
-  isDefault?: boolean | null;
+  label: string;
+  identity?: {
+    /**
+     * Description shown on documents
+     */
+    description?: string | null;
+  };
+  classification: {
+    /**
+     * Tax regime
+     */
+    taxType: 'vat' | 'gst' | 'sales' | 'use' | 'withholding' | 'income' | 'excise' | 'customs';
+    /**
+     * EN-16931 BT-151 / UN/CEFACT 5305 tax category code
+     */
+    categoryCode?: ('S' | 'Z' | 'E' | 'AE' | 'K' | 'G' | 'O' | 'L' | 'M') | null;
+    /**
+     * Issuing jurisdiction
+     */
+    jurisdiction: string | TaxJurisdiction;
+  };
+  rate: {
+    /**
+     * Tax rate as percentage (e.g., 19 for 19%)
+     */
+    ratePercent: number;
+    /**
+     * Other tax codes this rate is applied on top of (compound tax)
+     */
+    compoundedOn?: (string | TaxCode)[] | null;
+    /**
+     * EN 16931: tax shifts to buyer (e.g., EU intra-community B2B services)
+     */
+    reverseChargeEligible?: boolean | null;
+    /**
+     * Input tax is recoverable (deductible) for the buyer
+     */
+    recoverable?: boolean | null;
+  };
+  validity: {
+    /**
+     * ISO 8601 first day this rate applies
+     */
+    effectiveFrom: string;
+    /**
+     * ISO 8601 last day this rate applies (open-ended if blank)
+     */
+    effectiveTo?: string | null;
+    /**
+     * Enabled for selection on new documents
+     */
+    isActive?: boolean | null;
+  };
+  ledger?: {
+    /**
+     * Output-tax payable / collected account (sales side)
+     */
+    defaultCollectionAccount?: (string | null) | GlAccount;
+    /**
+     * Input-tax recoverable / remittance account (purchase side)
+     */
+    defaultRemittanceAccount?: (string | null) | GlAccount;
+    /**
+     * Non-recoverable tax expense account (when recoverable = false)
+     */
+    defaultExpenseAccount?: (string | null) | GlAccount;
+  };
   /**
    * Additional metadata
    */
@@ -2350,6 +2709,1254 @@ export interface Address {
     | number
     | boolean
     | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tax-jurisdictions".
+ */
+export interface TaxJurisdiction {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Jurisdiction code (e.g., EU-DE, US-CA, US-FED) — should align with ISO 3166-2 where applicable
+   */
+  code: string;
+  /**
+   * Human-readable name (e.g., "Germany VAT")
+   */
+  name: string;
+  /**
+   * Tax authority name (e.g., "Bundeszentralamt für Steuern")
+   */
+  authorityName?: string | null;
+  geography: {
+    /**
+     * ISO 3166-1 alpha-2 country code (e.g., US, DE, GB)
+     */
+    country: string;
+    /**
+     * ISO 3166-2 subdivision (e.g., CA, BY, NSW)
+     */
+    region?: string | null;
+    /**
+     * Administrative level
+     */
+    level: 'national' | 'state' | 'county' | 'city' | 'special_district' | 'supranational';
+  };
+  registration?: {
+    /**
+     * Tenant registration / VAT / sales-tax permit number
+     */
+    registrationNumber?: string | null;
+    /**
+     * Date of registration with the authority
+     */
+    registrationDate?: string | null;
+    /**
+     * Date of deregistration (if any)
+     */
+    deregistrationDate?: string | null;
+  };
+  filing: {
+    /**
+     * How often returns are filed
+     */
+    filingFrequency?: ('monthly' | 'bimonthly' | 'quarterly' | 'semiannual' | 'annual' | 'on_demand') | null;
+    /**
+     * Day of month return is due (e.g. 20)
+     */
+    filingDueDayOfMonth?: number | null;
+    /**
+     * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+     */
+    currency: string;
+  };
+  notes?: {
+    /**
+     * Internal notes
+     */
+    note?: string | null;
+  };
+  /**
+   * Additional metadata
+   */
+  metadata?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * IAS-20 register of public-sector incentives + EU funds + national subsidies. Tracks award, conditions, recognition pattern, clawback risk.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "government-grants".
+ */
+export interface GovernmentGrant {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  reference: string;
+  grantName: string;
+  /**
+   * Granting authority (e.g. EU Horizon Europe, BG Innovation Fund, US SBA).
+   */
+  grantorName: string;
+  /**
+   * ISO 3166-1 alpha-2 — country of the granting authority.
+   */
+  grantorCountryCode?: string | null;
+  /**
+   * Recipient legal entity.
+   */
+  legalEntity?: (string | null) | LegalEntity;
+  grantType:
+    | 'cash_income'
+    | 'cash_capital'
+    | 'tax_credit'
+    | 'concessionary_loan'
+    | 'asset_transfer'
+    | 'forgivable_loan'
+    | 'in_kind_service'
+    | 'rd_grant'
+    | 'employment_subsidy'
+    | 'other';
+  /**
+   * IAS-20 §12-24 — chosen presentation method (consistent application required).
+   */
+  recognitionMethod: 'deferred_income' | 'net_against_asset' | 'on_receipt' | 'reduce_expense';
+  recognitionPattern?:
+    ('systematic_useful_life' | 'match_to_costs' | 'straight_line' | 'on_milestones' | 'immediate') | null;
+  /**
+   * Date of formal award letter / contract.
+   */
+  awardDate: string;
+  effectiveStartDate?: string | null;
+  effectiveEndDate?: string | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * Maximum award amount (cents).
+   */
+  totalAwarded: number;
+  /**
+   * Cumulative cash received to date.
+   */
+  amountReceived?: number | null;
+  /**
+   * Cumulative income recognised in P&L (or asset reduction).
+   */
+  recognisedToDate?: number | null;
+  /**
+   * Outstanding liability — cash received but not yet recognised in P&L.
+   */
+  deferredIncomeBalance?: number | null;
+  /**
+   * IAS-20 §7 — only recognise when reasonable assurance of compliance with conditions.
+   */
+  conditions?:
+    | {
+        condition: string;
+        targetDate?: string | null;
+        status?: ('open' | 'met' | 'breached' | 'waived') | null;
+        evidenceRef?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * IAS-20 §32 — provision for repayment when condition-breach probability ≥ 50%.
+   */
+  clawbackProvision?: (string | null) | Provision;
+  /**
+   * EU CSRD ESRS 2 traceability — flags grants requiring EU traceability disclosure.
+   */
+  isEUFunded?: boolean | null;
+  /**
+   * EU Commission CFCA / programme reference (e.g. Horizon Europe project ID).
+   */
+  euCFCAReference?: string | null;
+  /**
+   * For capital grants under net-against-asset method, the asset whose carrying amount is reduced.
+   */
+  relatedAsset?: (string | null) | FixedAsset;
+  status?: ('awarded' | 'active' | 'conditions_met' | 'fully_recognised' | 'repayable' | 'repaid' | 'cancelled') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Per IFRS-10 §B86 reporting entity (subsidiary / associate / joint-venture / head). Distinct from `tenants` (DB partition). Drives consolidation-eliminations + intercompany pairing.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "legal-entities".
+ */
+export interface LegalEntity {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Full legal name as registered in the home jurisdiction (IAS-1 §138(a)).
+   */
+  legalName: string;
+  /**
+   * Trading / brand name when different from the legal name.
+   */
+  tradeName?: string | null;
+  /**
+   * Statutory legal form per the home jurisdiction commerce code.
+   */
+  legalForm?:
+    | (
+        | 'sole_proprietor'
+        | 'llc'
+        | 'jsc'
+        | 'partnership'
+        | 'limited_partnership'
+        | 'cooperative'
+        | 'branch'
+        | 'rep_office'
+        | 'non_profit'
+        | 'other'
+      )
+    | null;
+  /**
+   * ISO 3166-1 alpha-2 — country of registration (BG / DE / RO / etc.).
+   */
+  countryCode: string;
+  /**
+   * Statutory company / commercial-register number (BG EIK, DE HRB, RO J-number, etc.).
+   */
+  registrationNumber: string;
+  /**
+   * EU VAT identifier (BG123456789 / DE123456789 / etc.) — VIES-validatable.
+   */
+  vatNumber?: string | null;
+  /**
+   * ISO 17442-1:2020 Legal Entity Identifier (20-char) — required for derivatives + securities reporting.
+   */
+  lei?: string | null;
+  /**
+   * IFRS-10 §B86 / IAS-28 §16 / IFRS-11 §20 consolidation method for this entity in the group accounts.
+   */
+  consolidationMethod?: ('full' | 'equity' | 'proportionate' | 'cost' | 'not_consolidated') | null;
+  consolidationStatus?:
+    ('head' | 'subsidiary' | 'associate' | 'joint_venture' | 'joint_operation' | 'investment') | null;
+  /**
+   * Mark the reporting parent — exactly one head per consolidation group; used by `consolidation-eliminations` to anchor eliminations.
+   */
+  isHeadEntity?: boolean | null;
+  /**
+   * Direct parent in the group structure (null for the head entity).
+   */
+  parent?: (string | null) | LegalEntity;
+  /**
+   * Direct ownership of this entity by `parent` (0-100%). For NCI calculation per IFRS-10 §22.
+   */
+  ownershipPercent?: number | null;
+  /**
+   * Direct voting rights — may differ from ownership when dual-class shares exist (IFRS-10 §B36).
+   */
+  votingPercent?: number | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  functionalCurrency?: string | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  presentationCurrency?: string | null;
+  /**
+   * Standalone (statutory) reporting framework. Group consolidation may translate up to a different parent framework.
+   */
+  reportingFramework?: ('ifrs' | 'ifrs_sme' | 'us_gaap' | 'local_gaap') | null;
+  /**
+   * IFRS 1 first-time-adoption transition date.
+   */
+  ifrsAdoptionDate?: string | null;
+  /**
+   * MM-DD format (e.g. `12-31`, `06-30`). Drives the entity's fiscal-period calendar.
+   */
+  statutoryYearEnd?: string | null;
+  /**
+   * Statutory registered office (IAS-1 §138(a)).
+   */
+  registeredAddress?: {
+    street?: string | null;
+    city?: string | null;
+    postalCode?: string | null;
+    region?: string | null;
+    countryCode?: string | null;
+  };
+  /**
+   * US Standard Industrial Classification code (US SIC).
+   */
+  sicCode?: string | null;
+  /**
+   * NACE Rev.2 economic activity code (e.g. `62.01`). Used by EU CSRD ESRS 2 §80(b) sector classification.
+   */
+  naceCode?: string | null;
+  /**
+   * Date entity was incorporated / acquired into the group.
+   */
+  effectiveFrom: string;
+  /**
+   * Date entity was deconsolidated / sold / dissolved (null = active).
+   */
+  effectiveTo?: string | null;
+  status?: ('active' | 'dormant' | 'in_liquidation' | 'dissolved' | 'acquired') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  breadcrumbs?:
+    | {
+        doc?: (string | null) | LegalEntity;
+        url?: string | null;
+        label?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * IAS-37 §14 register of recognised provisions (warranty / restructuring / onerous / environmental / litigation / decommissioning). Each row is a recognised liability whose timing / amount is uncertain.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "provisions".
+ */
+export interface Provision {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Tenant-unique provision reference (e.g. PROV-2026-001).
+   */
+  reference: string;
+  /**
+   * Nature of the obligation (IAS-37 §85(a) disclosure).
+   */
+  description: string;
+  provisionType:
+    | 'warranty'
+    | 'restructuring'
+    | 'onerous_contract'
+    | 'environmental'
+    | 'decommissioning'
+    | 'litigation'
+    | 'refund'
+    | 'restoration'
+    | 'other';
+  /**
+   * Reporting entity that recognises this provision.
+   */
+  legalEntity?: (string | null) | LegalEntity;
+  /**
+   * Date the obligation was first recognised on the balance sheet.
+   */
+  recognitionDate: string;
+  period: string | FiscalPeriod;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * IAS-37 §36 best-estimate of expenditure required to settle (cents).
+   */
+  bestEstimate: number;
+  /**
+   * Sum of undiscounted future cash outflows (when timing extends beyond a year).
+   */
+  undiscountedAmount?: number | null;
+  /**
+   * Pre-tax discount rate per IAS-37 §47 (decimal, e.g. 0.045 = 4.5%).
+   */
+  discountRate?: number | null;
+  /**
+   * Present value (cents) — what hits the balance sheet.
+   */
+  discountedAmount?: number | null;
+  /**
+   * Best estimate of when the obligation will be settled (drives current vs non-current split).
+   */
+  expectedSettlementDate?: string | null;
+  expectedSettlementWindow?: ('within_12m' | 'beyond_12m' | 'indeterminate') | null;
+  /**
+   * IAS-37 §53-58 — expected reimbursement (e.g. insurance recovery) recognised as a separate asset only when virtually certain.
+   */
+  reimbursementExpected?: {
+    amount?: number | null;
+    isVirtuallyCertain?: boolean | null;
+    reimbursingParty?: string | null;
+  };
+  movementHistory?:
+    | {
+        period: string | FiscalPeriod;
+        movementType: 'additional' | 'used' | 'reversed' | 'unwind_discount' | 'fx_revaluation';
+        amount: number;
+        journalEntry?: (string | null) | JournalEntry;
+        movementDate: string;
+        memo?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Method used to derive bestEstimate (IAS-37 §36-39 disclosure).
+   */
+  uncertaintySource?: ('single_estimate' | 'range_midpoint' | 'expected_value' | 'most_likely') | null;
+  /**
+   * Audit finding that triggered the recognition (when applicable).
+   */
+  sourceFinding?: (string | null) | AuditFinding;
+  requiresLegalReview?: boolean | null;
+  status?: ('draft' | 'recognised' | 'used' | 'reversed' | 'reclassified') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "fiscal-periods".
+ */
+export interface FiscalPeriod {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Auto-derived label (e.g., FY2026-P05). Editable.
+   */
+  label?: string | null;
+  identity: {
+    /**
+     * Fiscal year (e.g., 2026)
+     */
+    fiscalYear: number;
+    /**
+     * Period within the fiscal year (1-12 monthly, up to 53 weekly)
+     */
+    periodNumber: number;
+    /**
+     * Calendar shape
+     */
+    periodType: 'monthly' | 'weekly_445' | 'quarterly' | 'annual' | 'custom';
+  };
+  dates: {
+    /**
+     * ISO 8601 first day of period (inclusive)
+     */
+    startDate: string;
+    /**
+     * ISO 8601 last day of period (inclusive)
+     */
+    endDate: string;
+  };
+  lifecycle: {
+    /**
+     * open = postable. closed = soft close (adjustments still allowed). locked = no GL writes for any date in this period.
+     */
+    status: 'open' | 'closed' | 'locked';
+    /**
+     * When period was soft-closed
+     */
+    closedAt?: string | null;
+    /**
+     * Actor who closed
+     */
+    closedBy?: (string | null) | User;
+    /**
+     * When period was hard-locked
+     */
+    lockedAt?: string | null;
+    /**
+     * Admin who locked
+     */
+    lockedBy?: (string | null) | User;
+    /**
+     * Last unlock timestamp
+     */
+    reopenedAt?: string | null;
+    /**
+     * Admin who reopened
+     */
+    reopenedBy?: (string | null) | User;
+  };
+  configuration?: {
+    /**
+     * Month the fiscal year starts (1-12).
+     */
+    fiscalYearStartMonth?: number | null;
+    /**
+     * Day-of-month the fiscal year starts.
+     */
+    fiscalYearStartDay?: number | null;
+    /**
+     * ISO 3166-1 alpha-2 — drives statutory period coding (SAF-T).
+     */
+    countryCode?: string | null;
+    /**
+     * ISO 4217 reporting currency for this fiscal configuration.
+     */
+    currencyCode?: string | null;
+    /**
+     * BCP-47 locale for period labelling.
+     */
+    localeCode?: string | null;
+    /**
+     * Regulatory framework the period coding follows (e.g. SAF-T, XBRL-GL).
+     */
+    regulatoryFramework?: string | null;
+    /**
+     * Whether the calendar may use a non-Gregorian basis.
+     */
+    allowsNonGregorian?: boolean | null;
+    /**
+     * Apply leap-year boundary adjustment.
+     */
+    leapYearAdjustment?: boolean | null;
+    /**
+     * Explicit period boundaries for custom calendars.
+     */
+    customPeriodBoundaries?:
+      | {
+          [k: string]: unknown;
+        }
+      | unknown[]
+      | string
+      | number
+      | boolean
+      | null;
+  };
+  governance?: {
+    /**
+     * Reporting legal entity this fiscal period belongs to.
+     */
+    entity?: (string | null) | LegalEntity;
+    /**
+     * Prior fiscal-period version this one supersedes (amendment chain).
+     */
+    supercedes?: (string | null) | FiscalPeriod;
+    /**
+     * ISO 8601 — when this period definition takes effect.
+     */
+    effectiveDate?: string | null;
+  };
+  notes?: {
+    /**
+     * Close memo / lock justification
+     */
+    note?: string | null;
+  };
+  /**
+   * Additional metadata
+   */
+  metadata?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-findings".
+ */
+export interface AuditFinding {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  title: string;
+  description: string;
+  findingType:
+    | 'control-deficiency'
+    | 'significant-deficiency'
+    | 'material-weakness'
+    | 'misstatement'
+    | 'exception'
+    | 'observation';
+  severity: 'critical' | 'high' | 'medium' | 'low';
+  relatedControl?: (string | null) | InternalControl;
+  relatedControlTest?: (string | null) | ControlTest;
+  frequencyOfOccurrence?: ('isolated' | 'sporadic' | 'recurring' | 'pervasive') | null;
+  potentialImpact?: ('none' | 'minimal' | 'moderate' | 'significant' | 'material' | 'unknown') | null;
+  identifiedDate: string;
+  identifiedBy: string | User;
+  rootCause?: string | null;
+  riskCategory?: ('financial-reporting' | 'compliance' | 'operational' | 'security') | null;
+  status: 'open' | 'in-remediation' | 'remediated-pending' | 'remediated-confirmed' | 'closed';
+  managementResponse?: string | null;
+  managementResponseDate?: string | null;
+  priorYearReference?: string | null;
+  communicatedTo?:
+    | {
+        recipient: string;
+        communicationDate?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  isActive?: boolean | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "internal-controls".
+ */
+export interface InternalControl {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  title: string;
+  description: string;
+  controlType: 'preventive' | 'detective' | 'corrective' | 'compensating';
+  controlCategory:
+    | 'authorization'
+    | 'segregation'
+    | 'reconciliation'
+    | 'access-security'
+    | 'accuracy'
+    | 'exception'
+    | 'documentation'
+    | 'change-management';
+  cosoComponent?: ('environment' | 'risk-assessment' | 'control-activities' | 'information' | 'monitoring') | null;
+  frequency?: ('continuous' | 'daily' | 'weekly' | 'monthly' | 'quarterly' | 'annual' | 'as-needed') | null;
+  owner?: (string | null) | User;
+  riskMitigated?: string | null;
+  isManualControl?: boolean | null;
+  lastReviewDate?: string | null;
+  nextReviewDate?: string | null;
+  isActive?: boolean | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "control-tests".
+ */
+export interface ControlTest {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  title: string;
+  testDesign: string;
+  control: string | InternalControl;
+  samplingMethodology?: ('statistical-random' | 'stratified' | 'judgmental' | 'census' | 'heuristic') | null;
+  plannedSampleSize?: number | null;
+  actualSampleSize?: number | null;
+  toleranceLevel?: number | null;
+  assertion?: ('existence' | 'completeness' | 'accuracy' | 'authorization' | 'segregation' | 'cutoff') | null;
+  testStatus: 'planned' | 'in-progress' | 'completed' | 'suspended';
+  testedDate?: string | null;
+  result?: ('effective' | 'deviations' | 'not-operating' | 'unable-determine') | null;
+  deviationCount?: number | null;
+  deviationRate?: number | null;
+  deviationsSummary?: string | null;
+  conclusionOnEffectiveness?: string | null;
+  reviewDate?: string | null;
+  isActive?: boolean | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * diamond-uuid: bb5230a4-d513-89bd-97bb-66b8cd32535e
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "fixed-assets".
+ */
+export interface FixedAsset {
+  id: string;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid: string;
+  assetNumber: string;
+  description: string;
+  assetCategory:
+    | 'land'
+    | 'building'
+    | 'equipment'
+    | 'machinery'
+    | 'vehicles'
+    | 'furniture_fixtures'
+    | 'leasehold_improvements'
+    | 'software'
+    | 'intangible_assets'
+    | 'other';
+  acquisitionDate: string;
+  assetCost: number;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * Asset supplier/vendor (IAS-16 §16(a) — directly attributable cost source).
+   */
+  supplier?: (string | null) | Vendor;
+  /**
+   * Reference PO number
+   */
+  purchaseOrder?: string | null;
+  /**
+   * Physical location/department
+   */
+  location?: string | null;
+  serialNumber?: string | null;
+  barcode?: string | null;
+  depreciationMethod?:
+    | ('straight_line' | 'declining_balance' | 'double_declining_balance' | 'units_of_activity' | 'sum_of_years_digits')
+    | null;
+  usefulLifeYears: number;
+  /**
+   * Expected residual/salvage value
+   */
+  residualValue?: number | null;
+  /**
+   * Cost - Residual Value
+   */
+  depreciableBase?: number | null;
+  annualDepreciationAmount?: number | null;
+  accumulatedDepreciation?: number | null;
+  /**
+   * Cost - Accumulated Depreciation
+   */
+  bookValue?: number | null;
+  /**
+   * Date depreciation begins
+   */
+  depreciationStartDate?: string | null;
+  lastDepreciationDate?: string | null;
+  /**
+   * Total units expected to produce
+   */
+  totalUnitsExpected?: number | null;
+  /**
+   * Units produced so far
+   */
+  unitsProducedToDate?: number | null;
+  /**
+   * Fixed asset GL account (1600+)
+   */
+  assetAccount: string | GlAccount;
+  /**
+   * Accumulated depreciation contra-asset account
+   */
+  accumulatedDepreciationAccount: string | GlAccount;
+  /**
+   * Depreciation expense account (6000+)
+   */
+  depreciationExpenseAccount: string | GlAccount;
+  status?: ('active' | 'inactive' | 'fully_depreciated' | 'disposed' | 'held_for_sale') | null;
+  /**
+   * Date when asset was disposed
+   */
+  disposalDate?: string | null;
+  /**
+   * Amount received from disposal
+   */
+  disposalProceeds?: number | null;
+  /**
+   * Gain or loss on disposal
+   */
+  gainOnDisposal?: number | null;
+  lastMaintenanceDate?: string | null;
+  nextMaintenanceDate?: string | null;
+  maintenanceNotes?: string | null;
+  notes?: string | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "vendors".
+ */
+export interface Vendor {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Unique vendor code (e.g., VEND-0001)
+   */
+  code: string;
+  /**
+   * Display name
+   */
+  name: string;
+  /**
+   * ISO 3166-1 alpha-2 — drives country-context API routing (VIES, business-registry lookup, sanctions screening, e-invoicing).
+   */
+  country?: string | null;
+  identity: {
+    /**
+     * Registered legal name (EN 16931 BT-27)
+     */
+    legalName?: string | null;
+    /**
+     * Party legal form
+     */
+    vendorType: 'individual' | 'company' | 'government' | 'non_profit';
+    /**
+     * Lifecycle status
+     */
+    status: 'active' | 'on_hold' | 'inactive' | 'archived';
+  };
+  contact?: {
+    /**
+     * Primary email
+     */
+    email?: string | null;
+    /**
+     * Primary phone
+     */
+    phone?: string | null;
+    /**
+     * Web site
+     */
+    website?: string | null;
+  };
+  addresses?: {
+    /**
+     * All known addresses for this vendor
+     */
+    addresses?: (string | Address)[] | null;
+    /**
+     * Default remit-to address
+     */
+    remitToAddress?: (string | null) | Address;
+  };
+  tax?: {
+    /**
+     * VAT / Tax ID (EN 16931 BT-31). Auto-classified against the per-country regex registry on save.
+     */
+    vatNumber?: string | null;
+    /**
+     * Auto-stamped — e.g. "VAT (FR)", "EIN", "GSTIN", "EIK / Bulstat".
+     */
+    vatNumberType?: string | null;
+    /**
+     * Tax-exempt vendor
+     */
+    taxExempt?: boolean | null;
+    /**
+     * Default tax code applied on bills
+     */
+    defaultTaxCode?: (string | null) | TaxCode;
+    /**
+     * US: subject to IRS Form 1099 reporting
+     */
+    vendor1099Eligible?: boolean | null;
+    /**
+     * IRS 1099 form variant
+     */
+    tax1099FormType?: ('1099_nec' | '1099_misc' | '1099_k' | '1099_int' | '1099_div') | null;
+    /**
+     * Tax ID format
+     */
+    taxIdType?: ('ein' | 'ssn' | 'itin' | 'vat' | 'other') | null;
+    /**
+     * Backup withholding / WHT rate %
+     */
+    withholdingRate?: number | null;
+  };
+  commercial: {
+    /**
+     * Default payment terms
+     */
+    paymentTerms?:
+      ('due_on_receipt' | 'net_7' | 'net_14' | 'net_30' | 'net_45' | 'net_60' | 'net_90' | 'custom') | null;
+    /**
+     * Custom net days (used when paymentTerms = custom)
+     */
+    paymentTermsDays?: number | null;
+    /**
+     * Preferred disbursement method
+     */
+    preferredPaymentMethod?: ('ach' | 'wire' | 'check' | 'credit_card' | 'sepa' | 'cash' | 'other') | null;
+    /**
+     * ISO 4217 default purchasing currency
+     */
+    defaultCurrency: string;
+    /**
+     * BCP 47 locale
+     */
+    defaultLocale?: string | null;
+  };
+  bank?: {
+    /**
+     * Account holder name
+     */
+    bankAccountName?: string | null;
+    /**
+     * Bank name
+     */
+    bankName?: string | null;
+    /**
+     * ABA routing (US) / sort code (UK)
+     */
+    bankRoutingNumber?: string | null;
+    /**
+     * Account number (last 4 visible recommended)
+     */
+    bankAccountNumber?: string | null;
+    /**
+     * IBAN (ISO 13616)
+     */
+    bankIban?: string | null;
+    /**
+     * SWIFT/BIC (ISO 9362)
+     */
+    bankSwiftBic?: string | null;
+    /**
+     * ISO 3166-1 alpha-2 country of bank
+     */
+    bankCountryCode?: string | null;
+  };
+  ledger?: {
+    /**
+     * Default AP control account (liability)
+     */
+    defaultPayableAccount?: (string | null) | GlAccount;
+    /**
+     * Default expense account on bills
+     */
+    defaultExpenseAccount?: (string | null) | GlAccount;
+    /**
+     * Withholding tax payable account
+     */
+    defaultWithholdingAccount?: (string | null) | GlAccount;
+  };
+  notes?: {
+    /**
+     * Internal notes
+     */
+    note?: string | null;
+  };
+  /**
+   * Additional metadata
+   */
+  metadata?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "contracts".
+ */
+export interface Contract {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  contractNumber: string;
+  customer: string | Customer;
+  title: string;
+  effectiveFrom: string;
+  effectiveTo?: string | null;
+  /**
+   * Aggregate transaction price (cents). = transactionPriceFixed + transactionPriceVariable + financingComponent − considerationPayableToCustomer. Maps to canonical TransactionPrice.total.
+   */
+  totalValue?: number | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * Fixed consideration component (cents). IFRS 15 §47. Maps to canonical TransactionPrice.fixed.
+   */
+  transactionPriceFixed?: number | null;
+  /**
+   * Estimated variable consideration after constraint (cents). IFRS 15 §50-§59. Maps to canonical VariableConsideration.estimate − constraint.
+   */
+  transactionPriceVariable?: number | null;
+  /**
+   * IFRS 15 §53 — estimation method when variable consideration is non-zero.
+   */
+  variableConsiderationMethod?: ('expected_value' | 'most_likely_amount') | null;
+  /**
+   * Significant financing component (cents). IFRS 15 §60-§65. Positive when entity is financier; negative when customer is financed.
+   */
+  financingComponent?: number | null;
+  /**
+   * IFRS 15 §17 — other contracts this one is accounted for as part of (combined-contract group). Maps to canonical Contract.combinedWithContractIds.
+   */
+  combinedWithContracts?: (string | Contract)[] | null;
+  paymentTerms?: ('net0' | 'net15' | 'net30' | 'net60' | 'net90' | 'custom') | null;
+  /**
+   * IFRS 15 §22 distinct performance obligations.
+   */
+  performanceObligations?: {
+    docs?: (string | PerformanceObligation)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  /**
+   * IFRS 15 §B47 / ASC 606-10-25-13 contract modifications.
+   */
+  modifications?:
+    | {
+        modifiedAt: string;
+        description: string;
+        priceImpact?: number | null;
+        modifiedBy?: (string | null) | User;
+        id?: string | null;
+      }[]
+    | null;
+  status?:
+    ('draft' | 'pending_approval' | 'pending_signatures' | 'active' | 'suspended' | 'completed' | 'terminated') | null;
+  activatedAt?: string | null;
+  terminatedAt?: string | null;
+  /**
+   * Linked subscription (if SaaS).
+   */
+  subscription?: (string | null) | Subscription;
+  zkod?: {
+    /**
+     * Bulgaria ZKOD contract registry number (unique per ZKOD)
+     */
+    zkodContractNumber?: string | null;
+    /**
+     * Contract notarized per Bulgaria registry (required for contracts > 10k BGN)
+     */
+    zkodNotarized?: boolean | null;
+    /**
+     * Bulgaria Labor Code Art. 331: mandatory arbitration clause present (required for employment-related contracts)
+     */
+    mandatoryArbitrationClause?: boolean | null;
+  };
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "performance-obligations".
+ */
+export interface PerformanceObligation {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  contract: string | Contract;
+  description: string;
+  /**
+   * IFRS 15 §22(a): one distinct promise. §22(b): a series of substantially-the-same distinct goods/services with the same pattern of transfer (typical for SaaS subscriptions).
+   */
+  kind: 'distinct' | 'series';
+  /**
+   * When the customer obtains control. Most goods → point-in-time at delivery; services that meet §35 criteria → over-time.
+   */
+  recognitionTiming: 'point_in_time' | 'over_time';
+  /**
+   * Required when recognitionTiming = over_time. Output methods measure value transferred; input methods measure inputs consumed.
+   */
+  overTimeMeasurement?: ('output_method' | 'input_method') | null;
+  /**
+   * Specific measurement kind under the chosen output/input method.
+   */
+  measurementKind?:
+    | (
+        | 'units_delivered'
+        | 'units_produced'
+        | 'milestones'
+        | 'time_elapsed'
+        | 'survey_of_work'
+        | 'cost_to_cost'
+        | 'labor_hours'
+        | 'machine_hours'
+        | 'resources_consumed'
+        | 'time_passed'
+      )
+    | null;
+  /**
+   * DEPRECATED — superseded by recognitionTiming + overTimeMeasurement + measurementKind. Kept for back-compat.
+   */
+  recognitionMethod?: ('point_in_time' | 'over_time_input' | 'over_time_output') | null;
+  /**
+   * In cents. Maps to canonical PerformanceObligation.standaloneSellingPrice.
+   */
+  standaloneSellingPrice: number;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * Portion of contract transaction price allocated to this PO (cents). Computed by IFRS 15 §73 relative-SSP. Maps to canonical PerformanceObligation.allocatedAmount.
+   */
+  allocatedAmount?: number | null;
+  /**
+   * Cumulative recognised revenue (cents). Maps to canonical PerformanceObligation.recognizedAmount (note spelling — collection preserves British spelling for back-compat with seed data).
+   */
+  recognisedToDate?: number | null;
+  /**
+   * For over-time methods: 0–100. Maps to canonical PerformanceObligation.progress × 100 (canonical type uses 0..1 fraction).
+   */
+  percentComplete?: number | null;
+  status?: ('pending' | 'in_progress' | 'satisfied' | 'cancelled') | null;
+  satisfiedAt?: string | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "subscriptions".
+ */
+export interface Subscription {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Current subscription plan
+   */
+  plan: string | SubscriptionPlan;
+  /**
+   * Current subscription state in billing cycle
+   */
+  status: 'trial' | 'active' | 'past_due' | 'grace_period' | 'suspended' | 'cancelled';
+  trialStartedAt?: string | null;
+  trialEndsAt?: string | null;
+  currentPeriodStart?: string | null;
+  currentPeriodEnd?: string | null;
+  /**
+   * Stripe subscription object ID
+   */
+  stripeSubscriptionId?: string | null;
+  /**
+   * Stripe customer ID
+   */
+  stripeCustomerId?: string | null;
+  cancelledAt?: string | null;
+  cancellationReason?: string | null;
+  pausedAt?: string | null;
+  resumeAt?: string | null;
+  lastStatusChange?: string | null;
+  lastStatusChangeReason?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "subscription-plans".
+ */
+export interface SubscriptionPlan {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  name: string;
+  slug: string;
+  /**
+   * Stripe Product ID for this plan
+   */
+  stripeProductId?: string | null;
+  /**
+   * Stripe Price ID (recurring) for this plan
+   */
+  stripePriceId?: string | null;
+  /**
+   * Monthly price in minor units (0 for free tier); currency carried by `currency`.
+   */
+  monthlyPrice: number;
+  /**
+   * Yearly price in minor units (optional, for annual billing); currency carried by `currency`.
+   */
+  yearlyPrice?: number | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  billingCycle: 'monthly' | 'yearly';
+  /**
+   * Feature limits as JSON. null = unlimited
+   */
+  limits:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  isActive?: boolean | null;
+  description?: string | null;
+  /**
+   * Display order in pricing pages (lower = first)
+   */
+  sortOrder?: number | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -2642,345 +4249,6 @@ export interface Opportunity {
   createdAt: string;
 }
 /**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "customers".
- */
-export interface Customer {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Unique customer code (e.g., CUST-0001)
-   */
-  code: string;
-  /**
-   * Display name
-   */
-  name: string;
-  /**
-   * ISO 3166-1 alpha-2 — drives country-context API routing (VIES, business-registry lookup, e-invoicing).
-   */
-  country?: string | null;
-  identity: {
-    /**
-     * Registered legal name (EN 16931 BT-27)
-     */
-    legalName?: string | null;
-    /**
-     * Party legal form
-     */
-    customerType: 'individual' | 'company';
-    /**
-     * Lifecycle status
-     */
-    status: 'active' | 'on_hold' | 'inactive' | 'archived';
-  };
-  contact?: {
-    /**
-     * Primary email
-     */
-    email?: string | null;
-    /**
-     * Primary phone
-     */
-    phone?: string | null;
-    /**
-     * Web site
-     */
-    website?: string | null;
-  };
-  addresses?: {
-    /**
-     * All known addresses for this customer
-     */
-    addresses?: (string | Address)[] | null;
-    /**
-     * Default billing address
-     */
-    billingAddress?: (string | null) | Address;
-    /**
-     * Default shipping address
-     */
-    shippingAddress?: (string | null) | Address;
-  };
-  tax?: {
-    /**
-     * VAT / Tax ID (EN 16931 BT-31). Auto-classified against the per-country regex registry on save.
-     */
-    vatNumber?: string | null;
-    /**
-     * Auto-stamped — e.g. "VAT (BG)", "EIN", "GSTIN", "EIK / Bulstat".
-     */
-    vatNumberType?: string | null;
-    /**
-     * Tax-exempt customer (e.g., resale certificate)
-     */
-    taxExempt?: boolean | null;
-    /**
-     * Exemption certificate number
-     */
-    taxExemptionCertificate?: string | null;
-    /**
-     * Default tax code applied on invoices
-     */
-    defaultTaxCode?: (string | null) | TaxCode;
-  };
-  commercial: {
-    /**
-     * Default payment terms
-     */
-    paymentTerms?:
-      ('due_on_receipt' | 'net_7' | 'net_14' | 'net_30' | 'net_45' | 'net_60' | 'net_90' | 'custom') | null;
-    /**
-     * Custom net days (used when paymentTerms = custom)
-     */
-    paymentTermsDays?: number | null;
-    /**
-     * Credit limit (cents)
-     */
-    creditLimit?: number | null;
-    /**
-     * ISO 4217 currency for credit limit
-     */
-    creditCurrency?: string | null;
-    /**
-     * ISO 4217 default invoicing currency
-     */
-    defaultCurrency: string;
-    /**
-     * BCP 47 locale (e.g. en, en-US, de-DE)
-     */
-    defaultLocale?: string | null;
-    /**
-     * Price list / tier identifier
-     */
-    priceList?: string | null;
-  };
-  ledger?: {
-    /**
-     * Default AR control account (asset)
-     */
-    defaultReceivableAccount?: (string | null) | GlAccount;
-    /**
-     * Default revenue account on invoices
-     */
-    defaultRevenueAccount?: (string | null) | GlAccount;
-    /**
-     * Default sales-discount contra-revenue account
-     */
-    defaultDiscountAccount?: (string | null) | GlAccount;
-  };
-  notes?: {
-    /**
-     * Internal notes
-     */
-    note?: string | null;
-  };
-  /**
-   * Additional metadata
-   */
-  metadata?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "tax-codes".
- */
-export interface TaxCode {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Tax code (e.g., EU-DE-VAT-19, US-CA-SALES-7.25)
-   */
-  code: string;
-  /**
-   * Human-readable label (e.g., "DE VAT 19% standard rate")
-   */
-  label: string;
-  identity?: {
-    /**
-     * Description shown on documents
-     */
-    description?: string | null;
-  };
-  classification: {
-    /**
-     * Tax regime
-     */
-    taxType: 'vat' | 'gst' | 'sales' | 'use' | 'withholding' | 'income' | 'excise' | 'customs';
-    /**
-     * EN-16931 BT-151 / UN/CEFACT 5305 tax category code
-     */
-    categoryCode?: ('S' | 'Z' | 'E' | 'AE' | 'K' | 'G' | 'O' | 'L' | 'M') | null;
-    /**
-     * Issuing jurisdiction
-     */
-    jurisdiction: string | TaxJurisdiction;
-  };
-  rate: {
-    /**
-     * Tax rate as percentage (e.g., 19 for 19%)
-     */
-    ratePercent: number;
-    /**
-     * Other tax codes this rate is applied on top of (compound tax)
-     */
-    compoundedOn?: (string | TaxCode)[] | null;
-    /**
-     * EN 16931: tax shifts to buyer (e.g., EU intra-community B2B services)
-     */
-    reverseChargeEligible?: boolean | null;
-    /**
-     * Input tax is recoverable (deductible) for the buyer
-     */
-    recoverable?: boolean | null;
-  };
-  validity: {
-    /**
-     * ISO 8601 first day this rate applies
-     */
-    effectiveFrom: string;
-    /**
-     * ISO 8601 last day this rate applies (open-ended if blank)
-     */
-    effectiveTo?: string | null;
-    /**
-     * Enabled for selection on new documents
-     */
-    isActive?: boolean | null;
-  };
-  ledger?: {
-    /**
-     * Output-tax payable / collected account (sales side)
-     */
-    defaultCollectionAccount?: (string | null) | GlAccount;
-    /**
-     * Input-tax recoverable / remittance account (purchase side)
-     */
-    defaultRemittanceAccount?: (string | null) | GlAccount;
-    /**
-     * Non-recoverable tax expense account (when recoverable = false)
-     */
-    defaultExpenseAccount?: (string | null) | GlAccount;
-  };
-  /**
-   * Additional metadata
-   */
-  metadata?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "tax-jurisdictions".
- */
-export interface TaxJurisdiction {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Jurisdiction code (e.g., EU-DE, US-CA, US-FED) — should align with ISO 3166-2 where applicable
-   */
-  code: string;
-  /**
-   * Human-readable name (e.g., "Germany VAT")
-   */
-  name: string;
-  /**
-   * Tax authority name (e.g., "Bundeszentralamt für Steuern")
-   */
-  authorityName?: string | null;
-  geography: {
-    /**
-     * ISO 3166-1 alpha-2 country code (e.g., US, DE, GB)
-     */
-    country: string;
-    /**
-     * ISO 3166-2 subdivision (e.g., CA, BY, NSW)
-     */
-    region?: string | null;
-    /**
-     * Administrative level
-     */
-    level: 'national' | 'state' | 'county' | 'city' | 'special_district' | 'supranational';
-  };
-  registration?: {
-    /**
-     * Tenant registration / VAT / sales-tax permit number
-     */
-    registrationNumber?: string | null;
-    /**
-     * Date of registration with the authority
-     */
-    registrationDate?: string | null;
-    /**
-     * Date of deregistration (if any)
-     */
-    deregistrationDate?: string | null;
-  };
-  filing: {
-    /**
-     * How often returns are filed
-     */
-    filingFrequency?: ('monthly' | 'bimonthly' | 'quarterly' | 'semiannual' | 'annual' | 'on_demand') | null;
-    /**
-     * Day of month return is due (e.g. 20)
-     */
-    filingDueDayOfMonth?: number | null;
-    /**
-     * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-     */
-    currency: string;
-  };
-  notes?: {
-    /**
-     * Internal notes
-     */
-    note?: string | null;
-  };
-  /**
-   * Additional metadata
-   */
-  metadata?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * Pricing / marketing / portfolio segment. Customers tag-link to segments; pricing rules + campaigns target the segment.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -3031,269 +4299,6 @@ export interface CustomerSegment {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "contracts".
- */
-export interface Contract {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  contractNumber: string;
-  customer: string | Customer;
-  title: string;
-  effectiveFrom: string;
-  effectiveTo?: string | null;
-  /**
-   * Aggregate transaction price (cents). = transactionPriceFixed + transactionPriceVariable + financingComponent − considerationPayableToCustomer. Maps to canonical TransactionPrice.total.
-   */
-  totalValue?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Fixed consideration component (cents). IFRS 15 §47. Maps to canonical TransactionPrice.fixed.
-   */
-  transactionPriceFixed?: number | null;
-  /**
-   * Estimated variable consideration after constraint (cents). IFRS 15 §50-§59. Maps to canonical VariableConsideration.estimate − constraint.
-   */
-  transactionPriceVariable?: number | null;
-  /**
-   * IFRS 15 §53 — estimation method when variable consideration is non-zero.
-   */
-  variableConsiderationMethod?: ('expected_value' | 'most_likely_amount') | null;
-  /**
-   * Significant financing component (cents). IFRS 15 §60-§65. Positive when entity is financier; negative when customer is financed.
-   */
-  financingComponent?: number | null;
-  /**
-   * IFRS 15 §17 — other contracts this one is accounted for as part of (combined-contract group). Maps to canonical Contract.combinedWithContractIds.
-   */
-  combinedWithContracts?: (string | Contract)[] | null;
-  paymentTerms?: ('net0' | 'net15' | 'net30' | 'net60' | 'net90' | 'custom') | null;
-  /**
-   * IFRS 15 §22 distinct performance obligations.
-   */
-  performanceObligations?: {
-    docs?: (string | PerformanceObligation)[];
-    hasNextPage?: boolean;
-    totalDocs?: number;
-  };
-  /**
-   * IFRS 15 §B47 / ASC 606-10-25-13 contract modifications.
-   */
-  modifications?:
-    | {
-        modifiedAt: string;
-        description: string;
-        priceImpact?: number | null;
-        modifiedBy?: (string | null) | User;
-        id?: string | null;
-      }[]
-    | null;
-  status?:
-    ('draft' | 'pending_approval' | 'pending_signatures' | 'active' | 'suspended' | 'completed' | 'terminated') | null;
-  activatedAt?: string | null;
-  terminatedAt?: string | null;
-  /**
-   * Linked subscription (if SaaS).
-   */
-  subscription?: (string | null) | Subscription;
-  zkod?: {
-    /**
-     * Bulgaria ZKOD contract registry number (unique per ZKOD)
-     */
-    zkodContractNumber?: string | null;
-    /**
-     * Contract notarized per Bulgaria registry (required for contracts > 10k BGN)
-     */
-    zkodNotarized?: boolean | null;
-    /**
-     * Bulgaria Labor Code Art. 331: mandatory arbitration clause present (required for employment-related contracts)
-     */
-    mandatoryArbitrationClause?: boolean | null;
-  };
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "performance-obligations".
- */
-export interface PerformanceObligation {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  contract: string | Contract;
-  description: string;
-  /**
-   * IFRS 15 §22(a): one distinct promise. §22(b): a series of substantially-the-same distinct goods/services with the same pattern of transfer (typical for SaaS subscriptions).
-   */
-  kind: 'distinct' | 'series';
-  /**
-   * When the customer obtains control. Most goods → point-in-time at delivery; services that meet §35 criteria → over-time.
-   */
-  recognitionTiming: 'point_in_time' | 'over_time';
-  /**
-   * Required when recognitionTiming = over_time. Output methods measure value transferred; input methods measure inputs consumed.
-   */
-  overTimeMeasurement?: ('output_method' | 'input_method') | null;
-  /**
-   * Specific measurement kind under the chosen output/input method.
-   */
-  measurementKind?:
-    | (
-        | 'units_delivered'
-        | 'units_produced'
-        | 'milestones'
-        | 'time_elapsed'
-        | 'survey_of_work'
-        | 'cost_to_cost'
-        | 'labor_hours'
-        | 'machine_hours'
-        | 'resources_consumed'
-        | 'time_passed'
-      )
-    | null;
-  /**
-   * DEPRECATED — superseded by recognitionTiming + overTimeMeasurement + measurementKind. Kept for back-compat.
-   */
-  recognitionMethod?: ('point_in_time' | 'over_time_input' | 'over_time_output') | null;
-  /**
-   * In cents. Maps to canonical PerformanceObligation.standaloneSellingPrice.
-   */
-  standaloneSellingPrice: number;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Portion of contract transaction price allocated to this PO (cents). Computed by IFRS 15 §73 relative-SSP. Maps to canonical PerformanceObligation.allocatedAmount.
-   */
-  allocatedAmount?: number | null;
-  /**
-   * Cumulative recognised revenue (cents). Maps to canonical PerformanceObligation.recognizedAmount (note spelling — collection preserves British spelling for back-compat with seed data).
-   */
-  recognisedToDate?: number | null;
-  /**
-   * For over-time methods: 0–100. Maps to canonical PerformanceObligation.progress × 100 (canonical type uses 0..1 fraction).
-   */
-  percentComplete?: number | null;
-  status?: ('pending' | 'in_progress' | 'satisfied' | 'cancelled') | null;
-  satisfiedAt?: string | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "subscriptions".
- */
-export interface Subscription {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Current subscription plan
-   */
-  plan: string | SubscriptionPlan;
-  /**
-   * Current subscription state in billing cycle
-   */
-  status: 'trial' | 'active' | 'past_due' | 'grace_period' | 'suspended' | 'cancelled';
-  trialStartedAt?: string | null;
-  trialEndsAt?: string | null;
-  currentPeriodStart?: string | null;
-  currentPeriodEnd?: string | null;
-  /**
-   * Stripe subscription object ID
-   */
-  stripeSubscriptionId?: string | null;
-  /**
-   * Stripe customer ID
-   */
-  stripeCustomerId?: string | null;
-  cancelledAt?: string | null;
-  cancellationReason?: string | null;
-  pausedAt?: string | null;
-  resumeAt?: string | null;
-  lastStatusChange?: string | null;
-  lastStatusChangeReason?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "subscription-plans".
- */
-export interface SubscriptionPlan {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  name: string;
-  slug: string;
-  /**
-   * Stripe Product ID for this plan
-   */
-  stripeProductId?: string | null;
-  /**
-   * Stripe Price ID (recurring) for this plan
-   */
-  stripePriceId?: string | null;
-  /**
-   * Monthly price in minor units (0 for free tier); currency carried by `currency`.
-   */
-  monthlyPrice: number;
-  /**
-   * Yearly price in minor units (optional, for annual billing); currency carried by `currency`.
-   */
-  yearlyPrice?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  billingCycle: 'monthly' | 'yearly';
-  /**
-   * Feature limits as JSON. null = unlimited
-   */
-  limits:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  isActive?: boolean | null;
-  description?: string | null;
-  /**
-   * Display order in pricing pages (lower = first)
-   */
-  sortOrder?: number | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "consent-records".
  */
 export interface ConsentRecord {
@@ -3329,425 +4334,6 @@ export interface ConsentRecord {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "vendors".
- */
-export interface Vendor {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Unique vendor code (e.g., VEND-0001)
-   */
-  code: string;
-  /**
-   * Display name
-   */
-  name: string;
-  /**
-   * ISO 3166-1 alpha-2 — drives country-context API routing (VIES, business-registry lookup, sanctions screening, e-invoicing).
-   */
-  country?: string | null;
-  identity: {
-    /**
-     * Registered legal name (EN 16931 BT-27)
-     */
-    legalName?: string | null;
-    /**
-     * Party legal form
-     */
-    vendorType: 'individual' | 'company' | 'government' | 'non_profit';
-    /**
-     * Lifecycle status
-     */
-    status: 'active' | 'on_hold' | 'inactive' | 'archived';
-  };
-  contact?: {
-    /**
-     * Primary email
-     */
-    email?: string | null;
-    /**
-     * Primary phone
-     */
-    phone?: string | null;
-    /**
-     * Web site
-     */
-    website?: string | null;
-  };
-  addresses?: {
-    /**
-     * All known addresses for this vendor
-     */
-    addresses?: (string | Address)[] | null;
-    /**
-     * Default remit-to address
-     */
-    remitToAddress?: (string | null) | Address;
-  };
-  tax?: {
-    /**
-     * VAT / Tax ID (EN 16931 BT-31). Auto-classified against the per-country regex registry on save.
-     */
-    vatNumber?: string | null;
-    /**
-     * Auto-stamped — e.g. "VAT (FR)", "EIN", "GSTIN", "EIK / Bulstat".
-     */
-    vatNumberType?: string | null;
-    /**
-     * Tax-exempt vendor
-     */
-    taxExempt?: boolean | null;
-    /**
-     * Default tax code applied on bills
-     */
-    defaultTaxCode?: (string | null) | TaxCode;
-    /**
-     * US: subject to IRS Form 1099 reporting
-     */
-    vendor1099Eligible?: boolean | null;
-    /**
-     * IRS 1099 form variant
-     */
-    tax1099FormType?: ('1099_nec' | '1099_misc' | '1099_k' | '1099_int' | '1099_div') | null;
-    /**
-     * Tax ID format
-     */
-    taxIdType?: ('ein' | 'ssn' | 'itin' | 'vat' | 'other') | null;
-    /**
-     * Backup withholding / WHT rate %
-     */
-    withholdingRate?: number | null;
-  };
-  commercial: {
-    /**
-     * Default payment terms
-     */
-    paymentTerms?:
-      ('due_on_receipt' | 'net_7' | 'net_14' | 'net_30' | 'net_45' | 'net_60' | 'net_90' | 'custom') | null;
-    /**
-     * Custom net days (used when paymentTerms = custom)
-     */
-    paymentTermsDays?: number | null;
-    /**
-     * Preferred disbursement method
-     */
-    preferredPaymentMethod?: ('ach' | 'wire' | 'check' | 'credit_card' | 'sepa' | 'cash' | 'other') | null;
-    /**
-     * ISO 4217 default purchasing currency
-     */
-    defaultCurrency: string;
-    /**
-     * BCP 47 locale
-     */
-    defaultLocale?: string | null;
-  };
-  bank?: {
-    /**
-     * Account holder name
-     */
-    bankAccountName?: string | null;
-    /**
-     * Bank name
-     */
-    bankName?: string | null;
-    /**
-     * ABA routing (US) / sort code (UK)
-     */
-    bankRoutingNumber?: string | null;
-    /**
-     * Account number (last 4 visible recommended)
-     */
-    bankAccountNumber?: string | null;
-    /**
-     * IBAN (ISO 13616)
-     */
-    bankIban?: string | null;
-    /**
-     * SWIFT/BIC (ISO 9362)
-     */
-    bankSwiftBic?: string | null;
-    /**
-     * ISO 3166-1 alpha-2 country of bank
-     */
-    bankCountryCode?: string | null;
-  };
-  ledger?: {
-    /**
-     * Default AP control account (liability)
-     */
-    defaultPayableAccount?: (string | null) | GlAccount;
-    /**
-     * Default expense account on bills
-     */
-    defaultExpenseAccount?: (string | null) | GlAccount;
-    /**
-     * Withholding tax payable account
-     */
-    defaultWithholdingAccount?: (string | null) | GlAccount;
-  };
-  notes?: {
-    /**
-     * Internal notes
-     */
-    note?: string | null;
-  };
-  /**
-   * Additional metadata
-   */
-  metadata?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IFRS-15 §35 over-time-recognition anchor. WIP accumulates per project; revenue recognises per chosen progress measurement (cost-to-cost / milestone / output-method).
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "projects".
- */
-export interface Project {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Tenant-unique project code (e.g. PRJ-2026-001).
-   */
-  projectCode: string;
-  /**
-   * Customer-facing project name.
-   */
-  name: string;
-  description?: string | null;
-  customer: string | Customer;
-  /**
-   * Master contract this project executes against (one contract may have many projects).
-   */
-  contract?: (string | null) | Contract;
-  /**
-   * Reporting legal entity that books this project's revenue + costs.
-   */
-  legalEntity?: (string | null) | LegalEntity;
-  /**
-   * Internal project owner (responsible for delivery + status).
-   */
-  projectManager?: (string | null) | User;
-  projectType?: ('fixed_price' | 'time_and_materials' | 'cost_plus' | 'milestone' | 'internal') | null;
-  /**
-   * Progress measurement method per IFRS-15. Drives the WIP / revenue posting cadence.
-   */
-  recognitionMethod?:
-    | (
-        | 'point_in_time'
-        | 'cost_to_cost'
-        | 'output_units'
-        | 'output_time'
-        | 'output_survey'
-        | 'milestone'
-        | 'right_to_invoice'
-      )
-    | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Total transaction price for this project (cents). For T&M projects use the not-to-exceed cap.
-   */
-  contractedAmount?: number | null;
-  /**
-   * Estimated total cost at completion (EAC) — denominator in cost-to-cost % complete.
-   */
-  budgetedCost?: number | null;
-  /**
-   * Estimated total labour hours (used by output-time method).
-   */
-  budgetedHours?: number | null;
-  /**
-   * contractedAmount − budgetedCost (auto-derived).
-   */
-  budgetedMargin?: number | null;
-  /**
-   * Cumulative posted cost (auto-summed from time-entries + materials + overhead allocation).
-   */
-  actualCostToDate?: number | null;
-  /**
-   * Cumulative recognised revenue (auto-summed from period postings).
-   */
-  recognisedRevenueToDate?: number | null;
-  /**
-   * Snapshot of latest period progress measurement.
-   */
-  percentComplete?: number | null;
-  plannedStartDate?: string | null;
-  plannedEndDate?: string | null;
-  actualStartDate?: string | null;
-  actualEndDate?: string | null;
-  /**
-   * IAS-37 §66 onerous-contract flag — when EAC > contracted, provision the full expected loss now.
-   */
-  isOnerous?: boolean | null;
-  status?: ('draft' | 'approved' | 'in_progress' | 'on_hold' | 'completed' | 'cancelled') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Per IFRS-10 §B86 reporting entity (subsidiary / associate / joint-venture / head). Distinct from `tenants` (DB partition). Drives consolidation-eliminations + intercompany pairing.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "legal-entities".
- */
-export interface LegalEntity {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Full legal name as registered in the home jurisdiction (IAS-1 §138(a)).
-   */
-  legalName: string;
-  /**
-   * Trading / brand name when different from the legal name.
-   */
-  tradeName?: string | null;
-  /**
-   * Statutory legal form per the home jurisdiction commerce code.
-   */
-  legalForm?:
-    | (
-        | 'sole_proprietor'
-        | 'llc'
-        | 'jsc'
-        | 'partnership'
-        | 'limited_partnership'
-        | 'cooperative'
-        | 'branch'
-        | 'rep_office'
-        | 'non_profit'
-        | 'other'
-      )
-    | null;
-  /**
-   * ISO 3166-1 alpha-2 — country of registration (BG / DE / RO / etc.).
-   */
-  countryCode: string;
-  /**
-   * Statutory company / commercial-register number (BG EIK, DE HRB, RO J-number, etc.).
-   */
-  registrationNumber: string;
-  /**
-   * EU VAT identifier (BG123456789 / DE123456789 / etc.) — VIES-validatable.
-   */
-  vatNumber?: string | null;
-  /**
-   * ISO 17442-1:2020 Legal Entity Identifier (20-char) — required for derivatives + securities reporting.
-   */
-  lei?: string | null;
-  /**
-   * IFRS-10 §B86 / IAS-28 §16 / IFRS-11 §20 consolidation method for this entity in the group accounts.
-   */
-  consolidationMethod?: ('full' | 'equity' | 'proportionate' | 'cost' | 'not_consolidated') | null;
-  consolidationStatus?:
-    ('head' | 'subsidiary' | 'associate' | 'joint_venture' | 'joint_operation' | 'investment') | null;
-  /**
-   * Mark the reporting parent — exactly one head per consolidation group; used by `consolidation-eliminations` to anchor eliminations.
-   */
-  isHeadEntity?: boolean | null;
-  /**
-   * Direct parent in the group structure (null for the head entity).
-   */
-  parent?: (string | null) | LegalEntity;
-  /**
-   * Direct ownership of this entity by `parent` (0-100%). For NCI calculation per IFRS-10 §22.
-   */
-  ownershipPercent?: number | null;
-  /**
-   * Direct voting rights — may differ from ownership when dual-class shares exist (IFRS-10 §B36).
-   */
-  votingPercent?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  functionalCurrency?: string | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  presentationCurrency?: string | null;
-  /**
-   * Standalone (statutory) reporting framework. Group consolidation may translate up to a different parent framework.
-   */
-  reportingFramework?: ('ifrs' | 'ifrs_sme' | 'us_gaap' | 'local_gaap') | null;
-  /**
-   * IFRS 1 first-time-adoption transition date.
-   */
-  ifrsAdoptionDate?: string | null;
-  /**
-   * MM-DD format (e.g. `12-31`, `06-30`). Drives the entity's fiscal-period calendar.
-   */
-  statutoryYearEnd?: string | null;
-  /**
-   * Statutory registered office (IAS-1 §138(a)).
-   */
-  registeredAddress?: {
-    street?: string | null;
-    city?: string | null;
-    postalCode?: string | null;
-    region?: string | null;
-    countryCode?: string | null;
-  };
-  /**
-   * US Standard Industrial Classification code (US SIC).
-   */
-  sicCode?: string | null;
-  /**
-   * NACE Rev.2 economic activity code (e.g. `62.01`). Used by EU CSRD ESRS 2 §80(b) sector classification.
-   */
-  naceCode?: string | null;
-  /**
-   * Date entity was incorporated / acquired into the group.
-   */
-  effectiveFrom: string;
-  /**
-   * Date entity was deconsolidated / sold / dissolved (null = active).
-   */
-  effectiveTo?: string | null;
-  status?: ('active' | 'dormant' | 'in_liquidation' | 'dissolved' | 'acquired') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  breadcrumbs?:
-    | {
-        doc?: (string | null) | LegalEntity;
-        url?: string | null;
-        label?: string | null;
-        id?: string | null;
-      }[]
-    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5006,115 +5592,6 @@ export interface BoardAction {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "internal-controls".
- */
-export interface InternalControl {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  title: string;
-  description: string;
-  controlType: 'preventive' | 'detective' | 'corrective' | 'compensating';
-  controlCategory:
-    | 'authorization'
-    | 'segregation'
-    | 'reconciliation'
-    | 'access-security'
-    | 'accuracy'
-    | 'exception'
-    | 'documentation'
-    | 'change-management';
-  cosoComponent?: ('environment' | 'risk-assessment' | 'control-activities' | 'information' | 'monitoring') | null;
-  frequency?: ('continuous' | 'daily' | 'weekly' | 'monthly' | 'quarterly' | 'annual' | 'as-needed') | null;
-  owner?: (string | null) | User;
-  riskMitigated?: string | null;
-  isManualControl?: boolean | null;
-  lastReviewDate?: string | null;
-  nextReviewDate?: string | null;
-  isActive?: boolean | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "audit-findings".
- */
-export interface AuditFinding {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  title: string;
-  description: string;
-  findingType:
-    | 'control-deficiency'
-    | 'significant-deficiency'
-    | 'material-weakness'
-    | 'misstatement'
-    | 'exception'
-    | 'observation';
-  severity: 'critical' | 'high' | 'medium' | 'low';
-  relatedControl?: (string | null) | InternalControl;
-  relatedControlTest?: (string | null) | ControlTest;
-  frequencyOfOccurrence?: ('isolated' | 'sporadic' | 'recurring' | 'pervasive') | null;
-  potentialImpact?: ('none' | 'minimal' | 'moderate' | 'significant' | 'material' | 'unknown') | null;
-  identifiedDate: string;
-  identifiedBy: string | User;
-  rootCause?: string | null;
-  riskCategory?: ('financial-reporting' | 'compliance' | 'operational' | 'security') | null;
-  status: 'open' | 'in-remediation' | 'remediated-pending' | 'remediated-confirmed' | 'closed';
-  managementResponse?: string | null;
-  managementResponseDate?: string | null;
-  priorYearReference?: string | null;
-  communicatedTo?:
-    | {
-        recipient: string;
-        communicationDate?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  isActive?: boolean | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "control-tests".
- */
-export interface ControlTest {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  title: string;
-  testDesign: string;
-  control: string | InternalControl;
-  samplingMethodology?: ('statistical-random' | 'stratified' | 'judgmental' | 'census' | 'heuristic') | null;
-  plannedSampleSize?: number | null;
-  actualSampleSize?: number | null;
-  toleranceLevel?: number | null;
-  assertion?: ('existence' | 'completeness' | 'accuracy' | 'authorization' | 'segregation' | 'cutoff') | null;
-  testStatus: 'planned' | 'in-progress' | 'completed' | 'suspended';
-  testedDate?: string | null;
-  result?: ('effective' | 'deviations' | 'not-operating' | 'unable-determine') | null;
-  deviationCount?: number | null;
-  deviationRate?: number | null;
-  deviationsSummary?: string | null;
-  conclusionOnEffectiveness?: string | null;
-  reviewDate?: string | null;
-  isActive?: boolean | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "compliance-gaps".
  */
 export interface ComplianceGap {
@@ -5340,6 +5817,10 @@ export interface AuditEvidence {
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
+  /**
+   * The award this evidence defends, where the evidence exists for a funder rather than an internal control.
+   */
+  grant?: (string | null) | GovernmentGrant;
   title: string;
   description?: string | null;
   documentType:
@@ -6827,6 +7308,10 @@ export interface PurchaseOrder {
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
+  /**
+   * The project this belongs to. Costs book to the project; the project carries the award.
+   */
+  project?: (string | null) | Project;
   poNumber: string;
   /**
    * Vendor receiving the PO.
@@ -8127,118 +8612,6 @@ export interface Property {
   createdAt: string;
 }
 /**
- * diamond-uuid: bb5230a4-d513-89bd-97bb-66b8cd32535e
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "fixed-assets".
- */
-export interface FixedAsset {
-  id: string;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid: string;
-  assetNumber: string;
-  description: string;
-  assetCategory:
-    | 'land'
-    | 'building'
-    | 'equipment'
-    | 'machinery'
-    | 'vehicles'
-    | 'furniture_fixtures'
-    | 'leasehold_improvements'
-    | 'software'
-    | 'intangible_assets'
-    | 'other';
-  acquisitionDate: string;
-  assetCost: number;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Asset supplier/vendor (IAS-16 §16(a) — directly attributable cost source).
-   */
-  supplier?: (string | null) | Vendor;
-  /**
-   * Reference PO number
-   */
-  purchaseOrder?: string | null;
-  /**
-   * Physical location/department
-   */
-  location?: string | null;
-  serialNumber?: string | null;
-  barcode?: string | null;
-  depreciationMethod?:
-    | ('straight_line' | 'declining_balance' | 'double_declining_balance' | 'units_of_activity' | 'sum_of_years_digits')
-    | null;
-  usefulLifeYears: number;
-  /**
-   * Expected residual/salvage value
-   */
-  residualValue?: number | null;
-  /**
-   * Cost - Residual Value
-   */
-  depreciableBase?: number | null;
-  annualDepreciationAmount?: number | null;
-  accumulatedDepreciation?: number | null;
-  /**
-   * Cost - Accumulated Depreciation
-   */
-  bookValue?: number | null;
-  /**
-   * Date depreciation begins
-   */
-  depreciationStartDate?: string | null;
-  lastDepreciationDate?: string | null;
-  /**
-   * Total units expected to produce
-   */
-  totalUnitsExpected?: number | null;
-  /**
-   * Units produced so far
-   */
-  unitsProducedToDate?: number | null;
-  /**
-   * Fixed asset GL account (1600+)
-   */
-  assetAccount: string | GlAccount;
-  /**
-   * Accumulated depreciation contra-asset account
-   */
-  accumulatedDepreciationAccount: string | GlAccount;
-  /**
-   * Depreciation expense account (6000+)
-   */
-  depreciationExpenseAccount: string | GlAccount;
-  status?: ('active' | 'inactive' | 'fully_depreciated' | 'disposed' | 'held_for_sale') | null;
-  /**
-   * Date when asset was disposed
-   */
-  disposalDate?: string | null;
-  /**
-   * Amount received from disposal
-   */
-  disposalProceeds?: number | null;
-  /**
-   * Gain or loss on disposal
-   */
-  gainOnDisposal?: number | null;
-  lastMaintenanceDate?: string | null;
-  nextMaintenanceDate?: string | null;
-  maintenanceNotes?: string | null;
-  notes?: string | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * IFRS 16 / ASC 842 lessee leases. ROU asset + lease liability with period-end carrying amounts.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -8507,6 +8880,10 @@ export interface BudgetPlanning {
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
+  /**
+   * The project this belongs to. Costs book to the project; the project carries the award.
+   */
+  project?: (string | null) | Project;
   budgetId: string;
   fiscalYear: number;
   /**
@@ -8763,156 +9140,6 @@ export interface CarbonEmission {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "fiscal-periods".
- */
-export interface FiscalPeriod {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Auto-derived label (e.g., FY2026-P05). Editable.
-   */
-  label?: string | null;
-  identity: {
-    /**
-     * Fiscal year (e.g., 2026)
-     */
-    fiscalYear: number;
-    /**
-     * Period within the fiscal year (1-12 monthly, up to 53 weekly)
-     */
-    periodNumber: number;
-    /**
-     * Calendar shape
-     */
-    periodType: 'monthly' | 'weekly_445' | 'quarterly' | 'annual' | 'custom';
-  };
-  dates: {
-    /**
-     * ISO 8601 first day of period (inclusive)
-     */
-    startDate: string;
-    /**
-     * ISO 8601 last day of period (inclusive)
-     */
-    endDate: string;
-  };
-  lifecycle: {
-    /**
-     * open = postable. closed = soft close (adjustments still allowed). locked = no GL writes for any date in this period.
-     */
-    status: 'open' | 'closed' | 'locked';
-    /**
-     * When period was soft-closed
-     */
-    closedAt?: string | null;
-    /**
-     * Actor who closed
-     */
-    closedBy?: (string | null) | User;
-    /**
-     * When period was hard-locked
-     */
-    lockedAt?: string | null;
-    /**
-     * Admin who locked
-     */
-    lockedBy?: (string | null) | User;
-    /**
-     * Last unlock timestamp
-     */
-    reopenedAt?: string | null;
-    /**
-     * Admin who reopened
-     */
-    reopenedBy?: (string | null) | User;
-  };
-  configuration?: {
-    /**
-     * Month the fiscal year starts (1-12).
-     */
-    fiscalYearStartMonth?: number | null;
-    /**
-     * Day-of-month the fiscal year starts.
-     */
-    fiscalYearStartDay?: number | null;
-    /**
-     * ISO 3166-1 alpha-2 — drives statutory period coding (SAF-T).
-     */
-    countryCode?: string | null;
-    /**
-     * ISO 4217 reporting currency for this fiscal configuration.
-     */
-    currencyCode?: string | null;
-    /**
-     * BCP-47 locale for period labelling.
-     */
-    localeCode?: string | null;
-    /**
-     * Regulatory framework the period coding follows (e.g. SAF-T, XBRL-GL).
-     */
-    regulatoryFramework?: string | null;
-    /**
-     * Whether the calendar may use a non-Gregorian basis.
-     */
-    allowsNonGregorian?: boolean | null;
-    /**
-     * Apply leap-year boundary adjustment.
-     */
-    leapYearAdjustment?: boolean | null;
-    /**
-     * Explicit period boundaries for custom calendars.
-     */
-    customPeriodBoundaries?:
-      | {
-          [k: string]: unknown;
-        }
-      | unknown[]
-      | string
-      | number
-      | boolean
-      | null;
-  };
-  governance?: {
-    /**
-     * Reporting legal entity this fiscal period belongs to.
-     */
-    entity?: (string | null) | LegalEntity;
-    /**
-     * Prior fiscal-period version this one supersedes (amendment chain).
-     */
-    supercedes?: (string | null) | FiscalPeriod;
-    /**
-     * ISO 8601 — when this period definition takes effect.
-     */
-    effectiveDate?: string | null;
-  };
-  notes?: {
-    /**
-     * Close memo / lock justification
-     */
-    note?: string | null;
-  };
-  /**
-   * Additional metadata
-   */
-  metadata?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -9502,107 +9729,6 @@ export interface CommitmentsAndContingency {
    */
   noteText?: string | null;
   status?: ('active' | 'settled' | 'released' | 'reclassified') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IAS-37 §14 register of recognised provisions (warranty / restructuring / onerous / environmental / litigation / decommissioning). Each row is a recognised liability whose timing / amount is uncertain.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "provisions".
- */
-export interface Provision {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Tenant-unique provision reference (e.g. PROV-2026-001).
-   */
-  reference: string;
-  /**
-   * Nature of the obligation (IAS-37 §85(a) disclosure).
-   */
-  description: string;
-  provisionType:
-    | 'warranty'
-    | 'restructuring'
-    | 'onerous_contract'
-    | 'environmental'
-    | 'decommissioning'
-    | 'litigation'
-    | 'refund'
-    | 'restoration'
-    | 'other';
-  /**
-   * Reporting entity that recognises this provision.
-   */
-  legalEntity?: (string | null) | LegalEntity;
-  /**
-   * Date the obligation was first recognised on the balance sheet.
-   */
-  recognitionDate: string;
-  period: string | FiscalPeriod;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * IAS-37 §36 best-estimate of expenditure required to settle (cents).
-   */
-  bestEstimate: number;
-  /**
-   * Sum of undiscounted future cash outflows (when timing extends beyond a year).
-   */
-  undiscountedAmount?: number | null;
-  /**
-   * Pre-tax discount rate per IAS-37 §47 (decimal, e.g. 0.045 = 4.5%).
-   */
-  discountRate?: number | null;
-  /**
-   * Present value (cents) — what hits the balance sheet.
-   */
-  discountedAmount?: number | null;
-  /**
-   * Best estimate of when the obligation will be settled (drives current vs non-current split).
-   */
-  expectedSettlementDate?: string | null;
-  expectedSettlementWindow?: ('within_12m' | 'beyond_12m' | 'indeterminate') | null;
-  /**
-   * IAS-37 §53-58 — expected reimbursement (e.g. insurance recovery) recognised as a separate asset only when virtually certain.
-   */
-  reimbursementExpected?: {
-    amount?: number | null;
-    isVirtuallyCertain?: boolean | null;
-    reimbursingParty?: string | null;
-  };
-  movementHistory?:
-    | {
-        period: string | FiscalPeriod;
-        movementType: 'additional' | 'used' | 'reversed' | 'unwind_discount' | 'fx_revaluation';
-        amount: number;
-        journalEntry?: (string | null) | JournalEntry;
-        movementDate: string;
-        memo?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Method used to derive bestEstimate (IAS-37 §36-39 disclosure).
-   */
-  uncertaintySource?: ('single_estimate' | 'range_midpoint' | 'expected_value' | 'most_likely') | null;
-  /**
-   * Audit finding that triggered the recognition (when applicable).
-   */
-  sourceFinding?: (string | null) | AuditFinding;
-  requiresLegalReview?: boolean | null;
-  status?: ('draft' | 'recognised' | 'used' | 'reversed' | 'reclassified') | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -12363,112 +12489,6 @@ export interface GlPosting {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IAS-20 register of public-sector incentives + EU funds + national subsidies. Tracks award, conditions, recognition pattern, clawback risk.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "government-grants".
- */
-export interface GovernmentGrant {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  reference: string;
-  grantName: string;
-  /**
-   * Granting authority (e.g. EU Horizon Europe, BG Innovation Fund, US SBA).
-   */
-  grantorName: string;
-  /**
-   * ISO 3166-1 alpha-2 — country of the granting authority.
-   */
-  grantorCountryCode?: string | null;
-  /**
-   * Recipient legal entity.
-   */
-  legalEntity?: (string | null) | LegalEntity;
-  grantType:
-    | 'cash_income'
-    | 'cash_capital'
-    | 'tax_credit'
-    | 'concessionary_loan'
-    | 'asset_transfer'
-    | 'forgivable_loan'
-    | 'in_kind_service'
-    | 'rd_grant'
-    | 'employment_subsidy'
-    | 'other';
-  /**
-   * IAS-20 §12-24 — chosen presentation method (consistent application required).
-   */
-  recognitionMethod: 'deferred_income' | 'net_against_asset' | 'on_receipt' | 'reduce_expense';
-  recognitionPattern?:
-    ('systematic_useful_life' | 'match_to_costs' | 'straight_line' | 'on_milestones' | 'immediate') | null;
-  /**
-   * Date of formal award letter / contract.
-   */
-  awardDate: string;
-  effectiveStartDate?: string | null;
-  effectiveEndDate?: string | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Maximum award amount (cents).
-   */
-  totalAwarded: number;
-  /**
-   * Cumulative cash received to date.
-   */
-  amountReceived?: number | null;
-  /**
-   * Cumulative income recognised in P&L (or asset reduction).
-   */
-  recognisedToDate?: number | null;
-  /**
-   * Outstanding liability — cash received but not yet recognised in P&L.
-   */
-  deferredIncomeBalance?: number | null;
-  /**
-   * IAS-20 §7 — only recognise when reasonable assurance of compliance with conditions.
-   */
-  conditions?:
-    | {
-        condition: string;
-        targetDate?: string | null;
-        status?: ('open' | 'met' | 'breached' | 'waived') | null;
-        evidenceRef?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * IAS-20 §32 — provision for repayment when condition-breach probability ≥ 50%.
-   */
-  clawbackProvision?: (string | null) | Provision;
-  /**
-   * EU CSRD ESRS 2 traceability — flags grants requiring EU traceability disclosure.
-   */
-  isEUFunded?: boolean | null;
-  /**
-   * EU Commission CFCA / programme reference (e.g. Horizon Europe project ID).
-   */
-  euCFCAReference?: string | null;
-  /**
-   * For capital grants under net-against-asset method, the asset whose carrying amount is reduced.
-   */
-  relatedAsset?: (string | null) | FixedAsset;
-  status?: ('awarded' | 'active' | 'conditions_met' | 'fully_recognised' | 'repayable' | 'repaid' | 'cancelled') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16690,6 +16710,10 @@ export interface RegulatoryReport {
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
+  /**
+   * The award this report accounts for (grant-report type).
+   */
+  grant?: (string | null) | GovernmentGrant;
   entity: string | LegalEntity;
   reportName: string;
   reportingStandard?: (string | null) | ComplianceFramework;
@@ -16702,6 +16726,7 @@ export interface RegulatoryReport {
     | 'annual-report'
     | 'compliance-report'
     | 'audit-report'
+    | 'grant-report'
     | 'other';
   fiscalPeriodStart: string;
   fiscalPeriodEnd: string;
@@ -20376,6 +20401,7 @@ export interface AuditEventsSelect<T extends boolean = true> {
 export interface AuditEvidenceSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
+  grant?: T;
   title?: T;
   description?: T;
   documentType?: T;
@@ -20971,6 +20997,7 @@ export interface BookingsSelect<T extends boolean = true> {
 export interface BudgetPlanningSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
+  project?: T;
   budgetId?: T;
   fiscalYear?: T;
   department?: T;
@@ -23600,6 +23627,7 @@ export interface JobPositionsSelect<T extends boolean = true> {
 export interface JournalEntriesSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
+  project?: T;
   entryNumber?: T;
   entryDate?: T;
   postedDate?: T;
@@ -25431,6 +25459,7 @@ export interface ProjectsSelect<T extends boolean = true> {
   name?: T;
   description?: T;
   customer?: T;
+  grant?: T;
   contract?: T;
   legalEntity?: T;
   projectManager?: T;
@@ -25572,6 +25601,7 @@ export interface ProvisionsSelect<T extends boolean = true> {
 export interface PurchaseOrdersSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
+  project?: T;
   poNumber?: T;
   vendor?: T;
   orderDate?: T;
@@ -25925,6 +25955,7 @@ export interface RegulatoryDeferralAccountsSelect<T extends boolean = true> {
 export interface RegulatoryReportsSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
+  grant?: T;
   entity?: T;
   reportName?: T;
   reportingStandard?: T;

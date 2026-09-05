@@ -21,6 +21,10 @@ export const RegulatoryReports: CollectionConfig = {
     delete: ['super-admin'],
   }),
   fields: [
+    // The award this report accounts for, when reportType is a grant report. Without it the funder's
+    // report cannot name the grant it reports on, and the periodic obligation is unattributable.
+    { name: 'grant', type: 'relationship', relationTo: 'government-grants', index: true,
+      admin: { description: "The award this report accounts for (grant-report type)." } },
     {
       name: 'entity',
       type: 'relationship',
@@ -54,6 +58,10 @@ export const RegulatoryReports: CollectionConfig = {
         { label: 'Annual Report', value: 'annual-report' },
         { label: 'Compliance Report', value: 'compliance-report' },
         { label: 'Audit Report', value: 'audit-report' },
+        // A funder's periodic report is THIS shape — an entity, a period, a due date, a submission,
+        // a status and feedback — so it is a ROW here rather than a table of its own ([[rules]]/collapse:
+        // a new collection is warranted only by a new signature).
+        { label: 'Grant Report (funder)', value: 'grant-report' },
         { label: 'Other', value: 'other' },
       ],
       required: true,

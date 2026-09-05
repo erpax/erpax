@@ -49,6 +49,11 @@ const BudgetPlanning: CollectionConfig = {
     delete: tenantAdmin,
   },
   fields: [
+    // Project accounting dimension. A cost on a funded project books to the project, and the project
+    // carries the award ([[fund]]) — so this one field is what makes the spend attributable to the
+    // grant that paid for it. Without it a funder's claim cannot be assembled from the ledger.
+    { name: 'project', type: 'relationship', relationTo: 'projects', index: true,
+      admin: { description: 'The project this belongs to. Costs book to the project; the project carries the award.' } },
     { name: 'budgetId', type: 'text', required: true, unique: true },
     { name: 'fiscalYear', type: 'number', required: true, min: 2000, max: 2100 },
     { name: 'department', type: 'text', required: true, admin: { description: 'Department or cost center' } },

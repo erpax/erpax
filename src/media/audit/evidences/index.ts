@@ -18,6 +18,11 @@ export const AuditEvidence: CollectionConfig = {
   hooks: { afterChange: [auditTrailAfterChange('auditEvidence')] },
   timestamps: true,
   fields: [
+    // Claw-back defence. A grant's `conditions[].evidenceRef` is a STRING, and a string is not a
+    // join — nothing can walk from the award to the evidence that satisfies its conditions, or back.
+    // This is that edge ([[fund]]).
+    { name: 'grant', type: 'relationship', relationTo: 'government-grants', index: true,
+      admin: { description: 'The award this evidence defends, where the evidence exists for a funder rather than an internal control.' } },
     { name: 'title', type: 'text', required: true, index: true },
     { name: 'description', type: 'textarea' },
     { name: 'documentType', type: 'select', options: [{ label: 'PDF Document', value: 'pdf' }, { label: 'Email/Screenshot', value: 'screenshot' }, { label: 'Signed Approval', value: 'signed-approval' }, { label: 'Bank Statement', value: 'bank-statement' }, { label: 'GL Printout', value: 'gl-printout' }, { label: 'Reconciliation', value: 'reconciliation' }, { label: 'Workpaper', value: 'workpaper' }, { label: 'Audit Log', value: 'audit-log' }, { label: 'Policy/Procedure', value: 'policy' }, { label: 'Other', value: 'other' }], required: true },

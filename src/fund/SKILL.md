@@ -1,40 +1,55 @@
-# fund — the award is a table nothing can point at, so no domain can run a funded project
+# fund — the award was a table nothing could point at, and one zero capped every domain
 
-erpax books government grants correctly under IAS 20 — 31 fields, clawback provisions, the funded
-asset, the granting authority. It cannot say **which project the grant funds**.
+erpax booked government grants correctly under IAS 20 — 31 fields, clawback provisions, the funded
+asset, the granting authority. It could not say **which project the grant funded**.
 
 ```
-231 collections · 1129 relationship edges
-edges INTO government-grants:  0
-edges OUT of government-grants: tenant · legalEntity · clawbackProvision · relatedAsset · createdBy · approvedBy
+edges INTO government-grants:  0   of 1,129
 ```
 
-The award names its tenant, its entity, its clawback provision and the asset it bought. Nothing names
-**it**. So no cost, invoice, milestone, purchase order or report can be attributed to the grant that
-paid for it — the row exists and cannot participate.
+The award named its tenant, its entity, its clawback provision and the asset it bought. Nothing
+named **it**. So no cost, invoice, milestone, purchase order or report could be attributed to the
+grant that paid for it — the row existed and could not participate.
 
-| stage | table | can it name the award? |
-| --- | --- | --- |
-| award | `government-grants` | — it is the award |
-| budget | `budget-planning` | **no** |
-| procure | `purchase-orders` | **no** |
-| execute | `project-milestones` | **no** |
-| account | `journal-entries` | **no** |
-| report | `audit-reports` | **no** |
-| audit | `audit-evidence` | **no** |
-| close | `contracts` | **no** |
+Seven of eight lifecycle stages failed, for **one cause**. And a second blocker sat beside it:
+`projects.customer` was **required**, so a grant-funded project could not be saved without inventing
+a customer — the funder is not a customer, and recording one as such falsifies the row.
 
-Seven failures, **one cause**. And a second blocker sits beside it: `projects.customer` is
-**required**, so a grant-funded project cannot be saved without inventing a customer — the funder is
-not a customer, and recording one as such falsifies the row.
+## What closed it — five edges, no new table
 
-## Why the domain axis does not matter yet
+| edge | why |
+| --- | --- |
+| `projects.grant` → the award | costs book to the project; the project carries the award |
+| `budget-planning.project` | planned spend becomes attributable |
+| `purchase-orders.project` | a commitment becomes attributable |
+| `journal-entries.project` | the ledger line becomes attributable |
+| `audit-evidence.grant` | claw-back defence: the award's `conditions[].evidenceRef` is a STRING, and a string is not a join |
 
-NACE Rev.2 defines 21 sections, A–U (EU Regulation 1893/2006, implemented at `src/nace/rev2`), and that is the honest
-reading of *"all possible domains"*. Both blockers sit in the **spine**, which every section shares,
-so they stop a funded project in agriculture exactly as they stop one in software. **Usability here is
-a product, not a percentage**: a hole at any stage stops the whole lifecycle, so *"7 of 8 stages"* is
-0, not 87% — and 0 × 21 domains is 0. Domain modelling moves neither blocker.
+`projects.customer` is no longer required. Result: **0 → 76 collections can reach the award**, and
+every stage is served.
+
+## Two stages I had mapped wrongly
+
+`report → audit-reports` and `close → contracts` were my judgement, and both were wrong. An
+`audit-report` is the SOX/consolidation artefact; a `contract` is a CUSTOMER contract. Neither is a
+funder's obligation, and `report` briefly read as *served* only because it reached the award
+transitively once projects carried one — a green light on the wrong table.
+
+- **close** is recorded on the award itself: its status walks `awarded → active → conditions_met →
+  fully_recognised → repayable → repaid`. No second table was ever needed.
+- **report** is a periodic filing to an external authority — entity, period, due date, submission,
+  status, feedback. That is `regulatory-reports` exactly, so a funder's report is a **row** there
+  under `reportType: grant-report`, never a table of its own ([[rules]]/collapse: a new collection is
+  warranted only by a NEW signature). The collection count is unchanged at **231**.
+
+## Why the domain axis did not matter
+
+NACE Rev.2 defines 21 sections, A–U (EU Regulation 1893/2006, implemented at `src/nace/rev2`), and
+that is the honest reading of *"all possible domains"*. Both blockers sat in the **spine** every
+section shares, so they stopped a funded project in agriculture exactly as they stopped one in
+software. **Usability here is a product, not a percentage**: a hole at any stage stops the whole
+lifecycle, so *"7 of 8 stages"* was 0, not 87% — and 0 × 21 domains is 0. Domain modelling moved
+neither blocker; five relationship fields moved both.
 
 ## Attribution is an OUTBOUND question
 
