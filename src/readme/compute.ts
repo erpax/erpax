@@ -1509,6 +1509,9 @@ export function deriveFolderModel(
   const cross = finishedIdeaCrossed(crossSnapshot, {
     ancestorsSealed: ancestorSealed,
     isAtom: (p) => existsSync(join(cwd, SRC, p, 'SKILL.md')),
+    // a collided schema.org word is prose by design and owes no trinity; the vocabulary is the
+    // arbiter, and it is passed in rather than reached for, so the answer cannot vary by caller
+    isSchemaWord: (leaf) => schemaCollision(cwd).words.has(leaf),
     ...(pathFollow
       ? { pathsVisited: pathFollow.pathsVisited, pathLedger: pathFollow.pathLedger }
       : {}),

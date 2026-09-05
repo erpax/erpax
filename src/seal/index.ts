@@ -96,6 +96,13 @@ export interface SealVerdict {
 }
 
 export interface FinishedIdeaCrossOpts {
+  /**
+   * Is this leaf a schema.org word — i.e. prose by design, owing no code?
+   *
+   * Injected because a lazy `createRequire` here made the answer depend on WHEN it was asked:
+   * the same axis reported 1,566 in one evaluation and 1,952 in the next, in one process.
+   */
+  readonly isSchemaWord?: (leaf: string) => boolean
   /** Parent envelope sealed — child cannot cross if false (path-axis propagation). */
   readonly parentSealed?: boolean
   /** Inject live-tree walk: every ancestor sealed (path axis). */
@@ -150,22 +157,6 @@ export interface RecordedImplementedVerdict {
  * Law: every path step is recorded canonically AND implemented (executable matter).
  * Record without implementation ⇒ unfinished; implementation without record ⇒ unsealed.
  */
-/**
- * Is this atom's leaf a real schema.org word? Asked of the vocabulary, not of the atom.
- *
- * Lazy-required like the other cross checks here, so `seal` does not take a load-time edge on
- * the readme model ([[rules]]/cycle).
- */
-function isSchemaWord(atomPath: string, cwd: string): boolean {
-  try {
-    const req = createRequire(import.meta.url)
-    const { schemaCollision } = req('@/readme/compute') as typeof import('@/readme/compute')
-    return schemaCollision(cwd).words.has(atomPath.slice(atomPath.lastIndexOf('/') + 1))
-  } catch {
-    return false // cannot ask ⇒ judge it, never exempt it
-  }
-}
-
 export function recordedAndImplementedVerdict(
   atomPath: string,
   opts?: { readonly ledger?: readonly PathCanonicalEntry[]; readonly cwd?: string },
@@ -186,7 +177,7 @@ export function recordedAndImplementedVerdict(
   // are — so 382 identical atoms outside that folder were counted as debt. Criterion
   // substitution: a test easier to check than the property it stands for. The arbiter is
   // schema.org itself, never the atom's own prose, which would be circular.
-  const prose = isSchemaWord(path, opts?.cwd ?? process.cwd())
+  const prose = isLexiconAtom(path, opts?.cwd ?? process.cwd(), opts?.isSchemaWord)
   if (!code && !prose) impurities.push('trinity.code missing (index.ts)')
   if (!proof && !prose) impurities.push('trinity.proof missing (test.ts)')
   if (opts?.ledger && !recorded) impurities.push(`path ledger: no canonical entry for ${path}`)
@@ -243,7 +234,22 @@ export interface FinishedIdeaVerdict {
  * An atom WITH code still owes its proof: the exemption is for atoms that claim no code,
  * never for one that has code and no test.
  */
-const isLexiconAtom = (atomPath: string, cwd: string = process.cwd()): boolean =>
+/**
+ * Is this atom prose by design?
+ *
+ * `isSchemaWord` is INJECTED by the caller rather than lazily required here. It was a
+ * `createRequire('@/readme/compute')` inside this module, which succeeded in one evaluation of
+ * the word law and silently failed in another — the same axis printed 1,566 in one pass and
+ * 1,952 in the next, IN ONE PROCESS, because a `catch` turned "could not ask" into "not a
+ * vocabulary word". A static import is impossible (readme/compute imports this module), so the
+ * predicate comes from the caller, who has it already. Injection, not a lazy require: the answer
+ * can no longer depend on when it is asked.
+ */
+const isLexiconAtom = (
+  atomPath: string,
+  cwd: string = process.cwd(),
+  isSchemaWord?: (leaf: string) => boolean,
+): boolean =>
   atomPath.startsWith('vocabulary/') ||
   atomPath === 'vocabulary' ||
   hasVocabularyException(join(cwd, 'src', atomPath)) ||
@@ -256,9 +262,12 @@ const isLexiconAtom = (atomPath: string, cwd: string = process.cwd()): boolean =
   // easier to check than the property it stands for.
   //
   // schema.org is the arbiter here, read from `sti/vocabulary/schemaorg.jsonld`.
-  isSchemaWord(atomPath, cwd)
+  (isSchemaWord?.(atomPath.slice(atomPath.lastIndexOf('/') + 1)) ?? false)
 
-function trinityImpurities(model: DiamondModel | CollectionDiamondModel): string[] {
+function trinityImpurities(
+  model: DiamondModel | CollectionDiamondModel,
+  isSchemaWord?: (leaf: string) => boolean,
+): string[] {
   const impurities: string[] = []
   const { trinity } = model
   if (!trinity.form) impurities.push('trinity.form missing (SKILL.md)')
@@ -267,7 +276,7 @@ function trinityImpurities(model: DiamondModel | CollectionDiamondModel): string
     if (!trinity.proof) impurities.push('trinity.proof missing (test.ts)')
     return impurities
   }
-  if (isLexiconAtom(model.atomPath)) return impurities
+  if (isLexiconAtom(model.atomPath, process.cwd(), isSchemaWord)) return impurities
   impurities.push('trinity.code missing (index.ts)')
   if (!trinity.proof) impurities.push('trinity.proof missing (test.ts)')
   return impurities
@@ -324,7 +333,7 @@ export function finishedIdeaCrossed(
       (i) => !(i.startsWith('horo ') && i.endsWith(' off-ring') && horoCrossed(atomPath, model.horo)),
     ),
   )
-  impurities.push(...trinityImpurities(model).filter((i) => !impurities.includes(i)))
+  impurities.push(...trinityImpurities(model, opts?.isSchemaWord).filter((i) => !impurities.includes(i)))
 
   if (opts?.ancestorsSealed && opts?.isAtom) {
     if (!sealPropagatedFromAncestors(atomPath, model.sealed, opts.isAtom, opts.ancestorsSealed)) {
