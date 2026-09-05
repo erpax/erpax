@@ -89,3 +89,39 @@ Sibling laws: [[quaternary]] (file purity — only canonical files), [[conventio
 
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard ISO/IEC 25010:2023 §5.1 functional-completeness §5.5 testability`
+
+## index-cross — measured, and both remedies refuted (2026-09-05)
+
+The axis stands at **3,764 live against a committed ceiling of 3,636**. It has not been fixed,
+and this records why, because the reason is not "nobody got to it".
+
+**It is a growth penalty, not a defect measure.** Every lawful new atom adds ~2 violations —
+ten atoms added this session added 18 — and the ratio is a near-constant **1.083 per atom**.
+Adding atoms is what this corpus exists to do, so the axis moves when the repo does more of what
+it is for. A ceiling on the count therefore gates growth, not decay.
+
+| class | count | what satisfying it would take |
+| --- | ---: | --- |
+| `one-way-path` | 2,316 | a MIRROR atom for every nested atom |
+| `one-way-bond` | 470 | |
+| `missing-foldback` | 467 | the parent barrel re-exporting the child |
+| `depth-exceeds-wire` | 403 | |
+| `missing-reexport` | 108 | |
+
+**Remedy one — the shipped autoclean — is refused.** `sealPathDoubleWire` materialises the
+missing reciprocal: `quantum/interval` demands an atom at `interval/quantum` whose whole content
+is `export * from '@/quantum/interval'`. Over 2,316 one-way paths that is 2,316 stub atoms
+carrying prose that says nothing, which [[rules]]/prose and [[rules]]/word-without-logic both
+forbid, and whose paths say nothing, which [[path]] forbids. Its stub test was also
+[[rules]]/mirror's canonical example verbatim — fixed, but the mass-generation cost stands.
+
+**Remedy two — parent re-exports — is refused by measurement.** 435 of the 467 are safe on the
+cycle test (the child does not import the parent barrel). A **10-atom batch applied cleanly**:
+tsc unchanged at 41 errors. A **200-atom batch produced 353** — `export * from './child'`
+collides at scale when siblings share an exported name. Rolled back to the byte.
+
+So the honest position is that the red is real and both mechanical cures are worse than it. What
+would actually resolve it is a growth-invariant measure — violations per atom rather than a raw
+count — which is a change to what the axis MEANS and belongs to a human, not to a session
+clearing a number.
+
