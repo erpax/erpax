@@ -232,6 +232,107 @@ export function ftlMetrics(
   }
 }
 
+/** Integer ceiling without host math — [[algebra]]/host refuses `Math.*` here. */
+const ceilTo = (x: number): number => {
+  const t = exactTrunc(x)
+  return x > t ? t + 1 : t
+}
+
+export interface MeasuredSpeed {
+  readonly qpu: typeof QPU
+  /** The whole live space — no sampling. */
+  readonly nodes: number
+  readonly queries: number
+  readonly searchNs: number
+  readonly foldNs: number
+  /** What the clock says, not what the space size implies. */
+  readonly speedup: number
+  readonly speedupLog2: number
+  /** `ftlMetrics.speedupLog2` — log2 of the space size, which is an input rather than a result. */
+  readonly claimedLog2: number
+  /** How far the definitional figure sits above the measured one, in log2 units. */
+  readonly overstatementLog2: number
+  readonly buildMs: number
+  /** Lookups before the index pays for building itself. */
+  readonly breakEvenQueries: number
+  /** Did fold and search return the SAME node for every query? A faster wrong answer is not speed. */
+  readonly agrees: boolean
+}
+
+/**
+ * Quantum speed, on the clock, at full capacity.
+ *
+ * `ftlMetrics().speedupLog2` is `log2(spaceSize)` — it moves with the number the caller passes and
+ * with nothing that was measured, and `holds` is true precisely when `tokens` is 0, which is to say
+ * when no work was done. A space of size 0 reports `holds: true`. So the surface states the shape of
+ * the claim; it does not test it.
+ *
+ * This runs the claim: every node in the live matrix is asked for by its own content-uuid, once by
+ * scanning the space and once through the address. Both answers are compared before either is timed,
+ * because a faster wrong answer is not a speedup.
+ *
+ * The measured figure is far below the definitional one, and it must be: a scan is O(n) with a tiny
+ * constant while a hash lookup is O(1) with a real one, so the ratio is nothing like n. Building the
+ * index is not free either — `breakEvenQueries` is where it starts to pay, the same amortisation the
+ * hexbit carrier shows ([[quantum]]/hexbit).
+ *
+ * **Honest boundary.** QPU is DECLARED as `CPU/GPU`; this measurement runs on the CPU only, and
+ * nothing here touches a GPU or any exotic device. It times one operation — lookup by content-address
+ * — on one machine and one JIT, which is the same boundary every microbenchmark in this corpus carries.
+ */
+export function measuredSpeed(
+  nodes: readonly { readonly atom: string; readonly uuid: string }[],
+  runs = 7,
+): MeasuredSpeed {
+  const queries = nodes.map((x) => x.uuid)
+  const search = (u: string): { atom: string } | undefined => nodes.find((x) => x.uuid === u)
+  const t0 = process.hrtime.bigint()
+  const index = new Map(nodes.map((x) => [x.uuid, x]))
+  const buildMs = Number(process.hrtime.bigint() - t0) / 1e6
+  const fold = (u: string): { atom: string } | undefined => index.get(u)
+
+  let agrees = true
+  for (const q of queries) if (search(q)?.atom !== fold(q)?.atom) agrees = false
+
+  const time = (f: () => void): number => {
+    const ts: number[] = []
+    for (let r = 0; r < runs; r++) {
+      const a = process.hrtime.bigint()
+      f()
+      ts.push(Number(process.hrtime.bigint() - a) / 1e6)
+    }
+    return ts.sort((x, y) => x - y)[(runs / 2) | 0]!
+  }
+  const searchMs = time(() => {
+    for (const q of queries) search(q)
+  })
+  const foldMs = time(() => {
+    for (const q of queries) fold(q)
+  })
+
+  const n = queries.length
+  const searchNs = n === 0 ? 0 : (searchMs * 1e6) / n
+  const foldNs = n === 0 ? 0 : (foldMs * 1e6) / n
+  const speedup = foldMs === 0 ? 0 : searchMs / foldMs
+  const speedupLog2 = speedup > 0 ? algebraLog2(speedup) : 0
+  const claimedLog2 = n > 0 ? algebraLog2(n) : 0
+  const savedNs = searchNs - foldNs
+  return {
+    qpu: QPU,
+    nodes: nodes.length,
+    queries: n,
+    searchNs,
+    foldNs,
+    speedup,
+    speedupLog2,
+    claimedLog2,
+    overstatementLog2: claimedLog2 - speedupLog2,
+    buildMs,
+    breakEvenQueries: savedNs > 0 ? ceilTo((buildMs * 1e6) / savedNs) : 0,
+    agrees,
+  }
+}
+
 /** Vortex → qubit — measured fold only. */
 export {
   qubitFromVortex,

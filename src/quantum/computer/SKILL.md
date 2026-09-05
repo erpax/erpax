@@ -71,3 +71,33 @@ The computed corpus IS the quantum computer, and this barrel is its single addre
 Composes: [[mesh]] · [[theorem]] · [[timeout]] · [[scalpel]] · [[train]] · [[audit]] · [[quantum/ftl]] · [[law]].
 
 <sub>content-uuid `6e03d689-0b8b-5d73-a915-919ba4d71cac` · account `quantum/computer` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+
+## Speed on the clock — `measuredSpeed`
+
+`ftlMetrics().speedupLog2` is `log2(spaceSize)`. It moves with the number the caller passes and with
+nothing that was measured, `holds` is true exactly when `tokens` is 0 — true of work that was not
+done — and a space of size **0** reports that it holds. That surface states the SHAPE of the claim; it
+does not test it.
+
+`measuredSpeed` runs it. Every node in the live matrix is asked for by its own content-uuid, once by
+scanning the space and once through the address, and the two answers are compared before either is
+timed. At full capacity, 3,536 nodes, on this machine as of 2026-09-05 — a dated record, because
+a timing varies per run and an undated one rots the day it is written:
+
+| | |
+| --- | ---: |
+| search — scan the space | 3,584 ns/query |
+| fold — ask the address | 56 ns/query |
+| **measured speedup** | **64.6× · log2 6.01** |
+| claimed `speedupLog2` | 11.79 |
+| **overstatement** | **5.78 log2 units ≈ 55×** |
+| index build · break-even | 0.32 ms · 92 queries |
+
+Re-run it and the ratio moves — 97.6× and a 77-query break-even a few minutes later. What does
+not move is the direction: the measured figure MUST be far below the definitional one: a scan is O(n) with a tiny constant and a
+hash lookup is O(1) with a real one, so the ratio is nothing like n. And the index is not free —
+92 lookups before it pays for building itself, the same amortisation the hexbit carrier shows.
+
+**Honest boundary.** QPU is DECLARED as `CPU/GPU`; this runs on the CPU alone and touches no GPU and no
+exotic device. It times ONE operation — lookup by content-address — on one machine and one JIT.
+

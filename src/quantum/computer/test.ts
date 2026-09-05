@@ -17,6 +17,8 @@ import {
   precomputedAddress,
   TIMEOUT_LADDER_MINUTES,
   SCALPEL_BATCH,
+  ftlMetrics,
+  measuredSpeed,
 } from '@/quantum/computer'
 
 describe('quantum/computer — one face, seven organs', () => {
@@ -113,5 +115,48 @@ describe('quantum/computer — FTL face on QPU=CPU/GPU', () => {
     expect(m.spacetime).toBe(0)
     expect(m.speedupLog2).toBeCloseTo(algebraLog2(16), 6)
     expect(m.efficiency).toBe(Infinity)
+  })
+})
+
+describe('quantum/computer — speed on the clock, not speed by definition', () => {
+  const nodes = Array.from({ length: 2000 }, (_, i) => ({ atom: `a${i}`, uuid: `u-${i}` }))
+
+  it('compares the two answers before timing either — a faster wrong answer is not a speedup', () => {
+    expect(measuredSpeed(nodes, 3).agrees).toBe(true)
+  })
+
+  it('the address beats the scan over a real space, by a margin no timing noise closes', () => {
+    const m = measuredSpeed(nodes, 5)
+    expect(m.speedup).toBeGreaterThan(2)
+    expect(m.foldNs).toBeLessThan(m.searchNs)
+  })
+
+  // The finding, stated so it can fail. ftlMetrics reports log2 of the SPACE SIZE and calls it a
+  // speedup; the clock reports far less. If the definitional figure ever stopped overstating, this
+  // goes red and the claim would need rewriting rather than the test.
+  it('the definitional figure overstates the measured one', () => {
+    const m = measuredSpeed(nodes, 5)
+    expect(m.claimedLog2).toBeGreaterThan(m.speedupLog2)
+    expect(m.overstatementLog2).toBeGreaterThan(0)
+  })
+
+  it('the index is not free — it pays for itself only after some number of lookups', () => {
+    expect(measuredSpeed(nodes, 3).breakEvenQueries).toBeGreaterThan(0)
+  })
+})
+
+describe('quantum/computer — what ftlMetrics actually asserts', () => {
+  it('holds only while NO tokens were spent: it is true of work that was not done', () => {
+    expect(ftlMetrics({ spaceSize: 3536, tokens: 0 }).holds).toBe(true)
+    expect(ftlMetrics({ spaceSize: 3536, tokens: 1000 }).holds).toBe(false)
+  })
+
+  it('speedupLog2 follows the INPUT space size, not anything measured', () => {
+    expect(ftlMetrics({ spaceSize: 1024 }).speedupLog2).toBeCloseTo(10, 6)
+    expect(ftlMetrics({ spaceSize: 4096 }).speedupLog2).toBeCloseTo(12, 6)
+  })
+
+  it('an EMPTY space reports that it holds — the vacuity worth naming out loud', () => {
+    expect(ftlMetrics({ spaceSize: 0 }).holds).toBe(true)
   })
 })
