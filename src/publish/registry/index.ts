@@ -2,6 +2,7 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 
 import { join, relative } from 'node:path'
 import { ERPAX_DOI, ERPAX_VERSION_DOI, SOURCE_URL } from '@/algebra'
 import { paperMetadata, paperTex } from '@/publish/paper'
+import { createHash } from 'node:crypto'
 import { chainLeaf } from '@/merge'
 
 /**
@@ -144,7 +145,13 @@ export const statementFixture = (): readonly (readonly [string, string])[] => [
   ['In the ω-basis it is exact', 'In the ω-basis it is exact'],
 ]
 
-export const statementAddress = (claim: string): string => chainLeaf({ statement: normaliseStatement(claim) }, '')
+export function statementAddress(claim: string): string {
+  const h = createHash('sha256').update(Buffer.from(normaliseStatement(claim), 'utf8')).digest()
+  h[6] = (h[6]! & 0x0f) | 0x80
+  h[8] = (h[8]! & 0x3f) | 0x80
+  const x = h.subarray(0, 16).toString('hex')
+  return `${x.slice(0, 8)}-${x.slice(8, 12)}-${x.slice(12, 16)}-${x.slice(16, 20)}-${x.slice(20)}`
+}
 
 const blobUrl = (p: string): string => `${SOURCE_URL}/blob/main/${p}`
 const treeUrl = (p: string): string => `${SOURCE_URL}/tree/main/${p}`

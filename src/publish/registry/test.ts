@@ -1,4 +1,6 @@
 import { describe, expect, it } from 'vitest'
+import { createHash } from 'node:crypto'
+import { chainLeaf } from '@/merge'
 import { paperMetadata } from '@/publish/paper'
 import { mkdirSync, mkdtempSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
@@ -230,5 +232,39 @@ describe('publish/registry — the cross-repo statement address', () => {
     const m = resultManifest('erpax', rs)
     expect(m.results[0]!.statementUuid).toBe(statementAddress(rs[0]!.claim))
     expect(m.results[0]!.uuid).not.toBe(m.results[0]!.statementUuid) // different questions
+  })
+})
+
+describe('publish/registry — the shared key must be shared, not merely named', () => {
+  // The defect: erpax adopted the sibling NORMALISER and kept its own CONSTRUCTION. chainLeaf
+  // wraps the value in canonical JSON and appends U+2016 before hashing — a fine internal address
+  // and a useless shared one. Both sides computed "the same key" over different preimages, so a
+  // comparison could only ever return zero, and a zero was reported as evidence of no duplicates.
+  // A shared key needs the same normaliser AND the same hash AND the same framing.
+  it('is sha256 of the normalised statement, with no framing of our own', () => {
+    const seed = 'a root declares its kind'
+    const h = createHash('sha256').update(Buffer.from(normaliseStatement(seed), 'utf8')).digest()
+    h[6] = (h[6]! & 0x0f) | 0x80
+    h[8] = (h[8]! & 0x3f) | 0x80
+    const x = h.subarray(0, 16).toString('hex')
+    expect(statementAddress(seed)).toBe(`${x.slice(0, 8)}-${x.slice(8, 12)}-${x.slice(12, 16)}-${x.slice(16, 20)}-${x.slice(20)}`)
+  })
+
+  it('is NOT erpax internal framing — chainLeaf must not be the shared key', () => {
+    expect(statementAddress('x')).not.toBe(chainLeaf({ statement: normaliseStatement('x') }, ''))
+  })
+
+  it('carries the RFC 9562 §5.8 nibbles', () => {
+    const a = statementAddress('anything at all')
+    expect(a[14]).toBe('8')
+    expect('89ab').toContain(a[19]!)
+  })
+
+  // Pinned against a sibling's INDEPENDENT computation of erpax's own first statement. Two
+  // implementations agreeing on a value neither copied is what makes it a shared key.
+  it('reproduces the value a sibling computed for erpax statement #1', () => {
+    const first = publishableResults(process.cwd())[0]!
+    expect(first.slug).toBe('access-standard')
+    expect(statementAddress(first.claim)).toBe('9b7cc563-1d97-8dc2-b439-32322d3b9987')
   })
 })
