@@ -1,34 +1,23 @@
 /**
- * digit -- the digit-space DUAL of word.
+ * digit — the digit-space DUAL of word. `tsx src/digit/index.ts` prints the trace ledger.
  *
- * Every atom has two addresses: a WORD address (its folder name -- the aura /
- * link space) and a DIGIT address -- its horo position on the sequence ring
- * (structural) and the digital-root of its content-uuid (content). word <-> digit
- * is the duality; together with the uuid they are the trinity (word . digit .
- * uuid). Computing the digit dual COMPLETES the aura (a word-graph) into a
- * three-fold tamper-evident fold: to forge an atom you must keep its word, its
- * digit AND its uuid mutually consistent -- cost -> infinity.
- *
- * Off-sequence is FS-traceable: an atom whose digit address does not recompute
- * from its content is an anomaly -- it does not fold onto the ring.
- *
- * Derived from the matrix (horo + uuid per node); computed, never stored.
- *
- *   tsx src/digit/index.ts            # print the digit-trace ledger summary
- *
+ * @see ./SKILL.md
  * @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring
  * @audit the digit address is computed from the live matrix, never hand-maintained
- * @see ../word -- ../horo -- ../sequence -- ../uuid -- ../aura
  */
 import { uuid } from '@/integrity'
 import { UUID_MATRIX_NODES, nodeOf } from '@/uuid/matrix'
 
-/** Digital root (base-10) of a content-uuid's hex digits -> 1..9 (0 only for nil).
- *  The uuid-content form; the integer reduction is `digitalRoot` in @/horo. The
- *  self-describing name keeps the word↔digit duality legible (@/horo = integer
- *  reduction, @/digit = uuid-content reduction) so co-importers need no alias. */
+/** Digital root of a content-uuid's hex digits → 1..9; the integer form is `digitalRoot` in @/horo. */
 export function digitalRootOfUuid(uuid: string): number {
-  const n = (uuid.match(/[0-9a-f]/gi) || []).reduce((s, h) => s + parseInt(h, 16), 0)
+  // Nibbles off the char codes — 6.6×, and why packing loses here, measured in [[quantum]]/hexbit.
+  let n = 0
+  for (let i = 0; i < uuid.length; i++) {
+    const c = uuid.charCodeAt(i)
+    if (c >= 48 && c <= 57) n += c - 48
+    else if (c >= 97 && c <= 102) n += c - 87
+    else if (c >= 65 && c <= 70) n += c - 55
+  }
   return n === 0 ? 0 : ((n - 1) % 9) + 1
 }
 
@@ -58,9 +47,7 @@ export function offSequence(): string[] {
   return UUID_MATRIX_NODES.filter((n) => !(n.horo >= 1 && n.horo <= 9)).map((n) => n.atom)
 }
 
-// ───────────────────────── numeric token facet (prose layer) ─────────────────────────
-// Distinct from horo digital-root / digitAddress above — those are atom-space duals;
-// digitTokenUuid is a content-addressed numeric token in parsed [[text]] (e.g. "42").
+// The numeric-token facet: a content-addressed digit in parsed [[text]], not an atom-space dual.
 
 export type DigitTokenKind = 'digit'
 

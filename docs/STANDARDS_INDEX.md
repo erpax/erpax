@@ -1038,7 +1038,7 @@ src/derive/country/from/iban/index.ts:11: * @standard ISO-3166-1:2020 country-co
 src/diamond/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability — pure derive + verify
 src/did/index.ts:8: * @standard W3C DID Core v1.0 — https://www.w3.org/TR/did-core/
 src/did/index.ts:9: * @standard W3C DID Specification Registries
-src/digit/index.ts:19: * @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring
+src/digit/index.ts:5: * @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring
 src/dimension/index.ts:27: * @standard W3C Web Components composition pattern
 src/dimension/index.ts:28: * @standard ISO/IEC 25010:2023 §5.7 modularity — plugin boundaries
 src/discriminator/index.ts:12: * @standard ECMA-262 ECMAScript-2024 baseline
@@ -5764,7 +5764,7 @@ src/design/index.ts:20: * @audit every token/palette entry is computed from an a
 src/development/research/index.ts:10: * @audit the cross binding is computed (entangle over the pair); never hand-asserted
 src/diamond/files.ts:12: * @audit allowed sets + violation scan computed from live tree; baseline ratchets DOWN only
 src/diamond/index.ts:21: * @audit model computed from live tree + factory opts; never hand-asserted
-src/digit/index.ts:20: * @audit the digit address is computed from the live matrix, never hand-maintained
+src/digit/index.ts:6: * @audit the digit address is computed from the live matrix, never hand-maintained
 src/dimension/index.ts:29: * @audit ISO 19011:2018 §6.4.6 (every dimensional plugin audit-trailed)
 src/diversity/index.ts:15: * @audit computed, never hand-asserted
 src/dna/index.ts:15: * @audit computed from the live matrix parent-chain; never hand-asserted

@@ -1,6 +1,10 @@
 import { describe, expect, it } from 'vitest'
+import { digitalRootOfUuid } from '@/digit'
 import {
   benchmarkCarriers,
+  carrierBreakEven,
+  packingLosesAtOne,
+  digitalRootPacked,
   hexCharsAreFastest,
   hexitPackedIsFastest,
   hexitsPackExactly,
@@ -67,5 +71,32 @@ describe('quantum/hexbit — how a 128-bit address is represented decides what t
     expect(rank('u32x4')).toBeLessThan(rank('hex-string'))
     expect(rank('bytes')).toBeLessThan(rank('hex-string'))
     expect(rank('bigint')).toBeLessThan(rank('hex-string'))
+  })
+})
+
+describe('hexbit — the packed carrier, and what it actually buys', () => {
+  it('agrees with the string form on every sample: a faster wrong answer is not an advantage', () => {
+    let disagreements = 0
+    for (let i = 0; i < 5_000; i++) {
+      const h = sampleHex(i)
+      if (digitalRootOfUuid(h) !== digitalRootPacked(toU32x4(h))) disagreements++
+    }
+    expect(disagreements).toBe(0)
+  })
+
+  it('agrees across the hyphenated and bare spellings of the same uuid', () => {
+    for (let i = 0; i < 200; i++) {
+      const h = sampleHex(i)
+      const dashed = `${h.slice(0, 8)}-${h.slice(8, 12)}-${h.slice(12, 16)}-${h.slice(16, 20)}-${h.slice(20)}`
+      expect(digitalRootOfUuid(dashed)).toBe(digitalRootOfUuid(h))
+    }
+  })
+
+  // The finding, stated so it can fail: packing is NOT free, so a one-shot sum is faster off the
+  // string. Asserted as a DIRECTION at k=1 rather than by searching for the crossing point — the
+  // crossing point moved under parallel load and made this suite flaky once already, which is the
+  // same trap the carrier ranking above is worded to avoid. The measured k lives in the CLI face.
+  it('does not pay for a single operation — the carrier advantage is amortised, not intrinsic', () => {
+    expect(packingLosesAtOne(4_000)).toBe(true)
   })
 })

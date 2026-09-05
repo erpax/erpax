@@ -15,6 +15,7 @@ import { mirroredAssertions } from '@/rules/mirror'
 import { forgedIdentifiers } from '@/rules/forge'
 import { deadCommands } from '@/rules/command'
 import { blindProbes } from '@/rules/probe'
+import { fundedSpine } from '@/fund'
 import { kernelPath, reflexiveTheorems, unacceptedProofs } from '@/proof/accepted'
 import { unbackedPhenomena } from '@/quantum/interval'
 import { unbackedFigures } from '@/render/scene'
@@ -275,6 +276,10 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // the enclosing function — a file naming `index.tsx` once had been pardoning its blind `test.ts`
     // probe elsewhere, which is how `readme/compute` hid nine of these and cost 31 statement gaps.
     guardian({ axis: 'probe', violations: blindProbes(cwd).length, baseline: 42 }),
+    // fund — a funded-project stage that cannot name the award it belongs to ([[fund]]). The award
+    // table has 0 inbound edges among 1,129, so 7 of 8 stages fail for ONE cause, in all 21 NACE
+    // sections alike. Ratchets from the live 7; 0 is the horizon, reachable by one relationship.
+    guardian({ axis: 'fund', violations: fundedSpine(cwd).filter((s) => !s.served).length, baseline: 7 }),
     // proof/accepted — a .lean file the kernel does not accept as proof. Four of five carry `sorry`
     // or do not compile, under a directory named `verify` that nothing ever ran. Ratchets from 4;
     // the horizon is 0, because a theorem proved by `sorry` states a claim and proves nothing.

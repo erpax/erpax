@@ -29,6 +29,38 @@ Every carrier is proved to hold the **same 128 bits** before being timed — oth
 
 **Law — [[law]]: a claim about speed is a measurement or it is a preference. Split the claim before testing it — the same word can name a decomposition and an encoding, and here one is the fastest carrier and the other is 183× the slowest.**
 
+## Unlocking it — the advantage is amortised, and that is the whole finding
+
+The carrier ranking says `u32x4` wins. It does **not** say packing wins, and the difference is where
+the real speedup was hiding. Measured on the corpus's own hot operation — the digital root, one sum
+of 32 nibbles, computed once per atom across the whole tree:
+
+| doing the sum | ns/op | vs baseline |
+| --- | ---: | ---: |
+| regex + `parseInt` per hexit (what the corpus had) | 1459.8 | 1.0× |
+| nibbles read off the **char codes** | 220.0 | **6.6×** |
+| pack to `u32x4` first, then nibbles | 532.5 | 2.7× |
+| nibbles on an **already-packed** carrier | 32.5 | **47×** |
+
+From a string, packing costs more than the sum it saves. The naive reading — *hexbits are simply
+faster* — is refuted by its own benchmark for the second time: the first refutation was that hexits
+as CHARACTERS are the slowest carrier, and this is that the packed carrier is not free either.
+
+`carrierBreakEven` computes where it turns over, and the answer is **three**: below three operations
+on the same value the string wins, at three and above the packed carrier wins, approaching ~2× and
+reaching 47× once the packing is fully amortised. That number is the one a caller actually needs.
+
+So the advantage was taken where it is real and refused where it is not. `digitalRootOfUuid` in
+[[digit]] now reads nibbles off the char codes — same answer on every sample, 6.6× faster, and it was
+duplicated in `book/compute` besides ([[rules]]/unfolded: duplication is camouflage), so the two are
+now one. Nothing was converted to a packed carrier, because nothing on that path does three
+operations per value.
+
+**Law — [[law]]: a representation is not fast, a representation plus an access pattern is. Packing
+buys speed on the operations AFTER the packing, so the honest question is never "which carrier is
+faster" but "how many times will this value be touched" — and below the break-even, the fastest
+carrier is the one you never build.**
+
 ## Standards
 
 - **ISO/IEC 25010:2023 §5.2** — performance efficiency: a stated figure carries its method.

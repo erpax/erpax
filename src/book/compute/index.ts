@@ -7,6 +7,7 @@ import { DOUBLING } from '@/rodin'
 import { trinityFlagsOf, sealedFromReadme } from '@/pivot/horo-table'
 import { HORO_DIGITS, HORO_MEASURE } from '@/horo'
 import { harmonyOfBookIndex, indexVolumes, type BookIndexHarmony } from '../harmony-index'
+import { digitalRootOfUuid } from '@/digit'
 
 const chapterOf = (horoDigit: number | null): string | null => {
   if (horoDigit === null) return null
@@ -75,10 +76,6 @@ const combineArchitectures = (wordHalf: bigint, digitHalf: bigint): bigint => {
   const bits = architectureBits()
   const mask = architectureMask()
   return ((wordHalf & mask) << BigInt(bits)) | (digitHalf & mask)
-}
-const digitalRootOfUuid = (uuid: string): number => {
-  const n = (uuid.match(/[0-9a-f]/gi) ?? []).reduce((s, h) => s + parseInt(h, 16), 0)
-  return n === 0 ? 0 : ((n - 1) % 9) + 1
 }
 const digitAddressOf = (path: string): string | null => {
   const leaf = path.split('/').pop() ?? path
