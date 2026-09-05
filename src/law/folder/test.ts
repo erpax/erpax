@@ -1,5 +1,5 @@
 import { tmpdir } from 'node:os'
-import { sealPathDoubleWire } from '@/law/folder/index-cross'
+import { dedupeIndexCross, indexCrossAudit, indexCrossClassOf, sealPathDoubleWire } from '@/law/folder/index-cross'
 import { mirroredIn } from '@/rules/mirror'
 import { existsSync, mkdirSync, mkdtempSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
@@ -203,5 +203,61 @@ describe('index-cross — the autoclean must not mint the defect another gate re
     const body = readFileSync(join(root, 'src', r.paths[0]!, 'test.ts'), 'utf8')
     expect(body).toContain('atomAddress(import.meta.url).path')
     expect(body).not.toMatch(/toBe\('[^']+'\)/) // never a literal restated
+  })
+})
+
+describe('index-cross — the axis must not gate the corpus for growing', () => {
+  const atom = (root: string, p: string, body: string): void => {
+    const d = join(root, 'src', p)
+    mkdirSync(d, { recursive: true })
+    writeFileSync(join(d, 'SKILL.md'), `# ${p}\n`)
+    writeFileSync(join(d, 'index.ts'), body)
+    writeFileSync(join(d, 'test.ts'), 'export {}\n')
+  }
+
+  // The measurement that forced this split: ~1.083 violations per atom, and ten atoms added in
+  // one session added 18. A ceiling on the total gated GROWTH, not decay — and growing is what
+  // this corpus exists to do.
+  it('a properly WIRED new atom costs zero, while the raw figure charged it anyway', () => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-inv-'))
+    atom(root, 'alpha', "export const atomPath = 'alpha' as const\nexport * from './beta'\n")
+    atom(root, 'alpha/beta', "export const atomPath = 'alpha/beta' as const\n")
+    const a = indexCrossAudit(undefined, root)
+    expect(a.violationCount).toBe(0) // the gated figure
+    expect(a.rawViolationCount).toBeGreaterThan(0) // what it used to charge
+    expect(a.structural.length).toBe(1) // the mirror-path demand: the tree's shape, not a defect
+  })
+
+  it('an UNWIRED child is still charged — the gate keeps its teeth', () => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-unw-'))
+    atom(root, 'alpha', "export const atomPath = 'alpha' as const\n")
+    atom(root, 'alpha/beta', "export const atomPath = 'alpha/beta' as const\n")
+    expect(indexCrossAudit(undefined, root).violationCount).toBe(1)
+  })
+
+  it('structural kinds are classified as such and never gated by count', () => {
+    expect(indexCrossClassOf('one-way-path')).toBe('structural')
+    expect(indexCrossClassOf('depth-exceeds-wire')).toBe('structural')
+    expect(indexCrossClassOf('one-way-bond')).toBe('wiring')
+    expect(indexCrossClassOf('missing-reexport')).toBe('wiring')
+    expect(indexCrossClassOf('missing-foldback')).toBe('wiring')
+  })
+
+  // 467 pairs were reported under BOTH one-way-bond and missing-foldback — one condition, two
+  // names, a seventh of the total. No reading of the count could have shown it.
+  it('one condition is counted once, not twice', () => {
+    const dup = [
+      { atomPath: 'a/b', kind: 'one-way-bond' as const, detail: 'parent index does not re-export child ./b', paths: ['a/b'], interact64: '0' },
+      { atomPath: 'a/b', kind: 'missing-foldback' as const, detail: 'nested cross not bonded in parent a index', paths: ['a', 'a/b'], interact64: '0' },
+    ]
+    expect(dedupeIndexCross(dup)).toHaveLength(1)
+    expect(dedupeIndexCross(dup)[0]!.kind).toBe('one-way-bond')
+  })
+
+  it('the live corpus: structural dominates, and the gated figure is the actionable part', () => {
+    const a = indexCrossAudit(undefined, process.cwd())
+    expect(a.structural.length).toBeGreaterThan(a.violationCount)
+    expect(a.violationCount + a.structural.length).toBeLessThan(a.rawViolationCount) // dedupe removed some
+    expect(a.wiring.every((v) => indexCrossClassOf(v.kind) === 'wiring')).toBe(true)
   })
 })

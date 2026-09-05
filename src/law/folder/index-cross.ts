@@ -59,7 +59,13 @@ export interface IndexCrossAudit {
   readonly scope: string | null
   readonly folders: number
   readonly violations: readonly IndexCrossViolation[]
+  /** The GATED figure: actionable wiring defects, each pair counted once. */
   readonly violationCount: number
+  /** Every violation before classification or dedupe — kept so nothing is hidden. */
+  readonly rawViolationCount: number
+  readonly wiring: readonly IndexCrossViolation[]
+  /** Reported, never gated by count: a consequence of the tree's shape, not a defect. */
+  readonly structural: readonly IndexCrossViolation[]
   readonly deepImports: readonly ImportViolation[]
   readonly deepImportCount: number
   readonly byKind: Readonly<Record<IndexCrossViolationKind, number>>
@@ -430,6 +436,40 @@ const deepImportsInScope = (cwd: string, scope?: string): ImportViolation[] => {
   })
 }
 
+/**
+ * STRUCTURAL or WIRING — the split that makes this axis mean something.
+ *
+ * `one-way-path` demands a MIRROR atom for every `a/b` (so `quantum/interval` requires
+ * `interval/quantum`), and `depth-exceeds-wire` forbids any atom nested more than two segments.
+ * Both are unconditional facts about the SHAPE of the tree, and this corpus has a deep tree by
+ * design: every lawful atom it adds violates them, so a ceiling on the total gates GROWTH rather
+ * than decay. Measured: ~1.083 violations per atom, and ten atoms added in one session added 18.
+ *
+ * The wiring kinds are different in kind, not degree — a careful author incurs none of them, and
+ * each names a concrete edit. Those are gated; the structural ones are reported.
+ */
+export type IndexCrossClass = 'structural' | 'wiring'
+
+export const indexCrossClassOf = (kind: IndexCrossViolationKind): IndexCrossClass =>
+  kind === 'one-way-path' || kind === 'depth-exceeds-wire' ? 'structural' : 'wiring'
+
+/**
+ * One condition was counted TWICE under two names.
+ *
+ * `one-way-bond` says "parent index does not re-export child ./x" keyed on the parent;
+ * `missing-foldback` says "nested cross not bonded in parent" keyed on the child. Measured: 467
+ * pairs appear under both, out of 470 and 467. The axis inflated its own number by 467 — a
+ * seventh of the total — and no reading of the count could have shown it.
+ */
+export function dedupeIndexCross(violations: readonly IndexCrossViolation[]): IndexCrossViolation[] {
+  const bonded = new Set(
+    violations.filter((v) => v.kind === 'one-way-bond').map((v) => String(v.paths?.[0] ?? '')),
+  )
+  return violations.filter(
+    (v) => !(v.kind === 'missing-foldback' && String(v.detail).includes('not bonded in parent') && bonded.has(v.atomPath)),
+  )
+}
+
 export function indexCrossAudit(path?: string, cwd: string = process.cwd()): IndexCrossAudit {
   const scope = path ? normalize(path) : null
   const folders = listIndexFolders(cwd, scope ?? undefined)
@@ -458,11 +498,21 @@ export function indexCrossAudit(path?: string, cwd: string = process.cwd()): Ind
     ...new Set(violations.filter((v) => v.kind !== 'deep-import').map((v) => v.atomPath)),
   ].sort()
 
+  const deduped = dedupeIndexCross(violations)
+  const wiring = deduped.filter((v) => indexCrossClassOf(v.kind) === 'wiring')
+  const structural = deduped.filter((v) => indexCrossClassOf(v.kind) === 'structural')
+
   return {
     scope,
     folders: folders.length,
     violations,
-    violationCount: violations.length,
+    /** The GATED figure: actionable wiring defects, each pair counted once. */
+    violationCount: wiring.length,
+    /** Every violation before classification or dedupe — kept so nothing is hidden. */
+    rawViolationCount: violations.length,
+    wiring,
+    /** Reported, never gated by count: a consequence of the tree's shape, not a defect. */
+    structural,
     deepImports,
     deepImportCount: deepImports.length,
     byKind,

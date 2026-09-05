@@ -90,7 +90,62 @@ Sibling laws: [[quaternary]] (file purity — only canonical files), [[conventio
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard ISO/IEC 25010:2023 §5.1 functional-completeness §5.5 testability`
 
-## index-cross — measured, and both remedies refuted (2026-09-05)
+## index-cross — made growth-invariant (2026-09-05)
+
+The axis stood at **3,764 against a ceiling of 3,636** and could not be fixed by either
+mechanical remedy. It is now fixed by changing what it MEASURES, because the count was measuring
+the wrong thing.
+
+**It was a growth penalty.** Every lawful new atom added ~2 violations — ten atoms added in one
+session added 18 — at a near-constant **1.083 per atom**. Adding atoms is what this corpus exists
+to do, so a ceiling on the total gated growth rather than decay. A ratio would not have fixed it
+either: a new atom cost ~2 against an average of 1.08, so the mean rises on growth too. *A mean is
+only invariant to insertion if what you insert is exactly average.*
+
+### The split
+
+| class | kinds | count | gated? |
+| --- | --- | ---: | --- |
+| **structural** | `one-way-path` · `depth-exceeds-wire` | 2,719 | **no** — reported |
+| **wiring** | `one-way-bond` · `missing-reexport` · `missing-foldback` | **578** | **yes** |
+| *(double-counted)* | | *467* | *removed* |
+
+`one-way-path` demands a **mirror atom** for every `a/b` — `quantum/interval` requires
+`interval/quantum` — and `depth-exceeds-wire` forbids any atom nested more than two segments.
+Both are unconditional facts about the SHAPE of a tree this corpus has by design. Every lawful
+atom it adds violates them. Gating their count charges the corpus for existing.
+
+The wiring kinds differ in kind, not degree: **a careful author incurs none of them**, and each
+names one concrete edit.
+
+### The double count
+
+`one-way-bond` ("parent index does not re-export child ./x", keyed on the parent) and
+`missing-foldback` ("nested cross not bonded in parent", keyed on the child) test the **same
+condition**. Measured: **467 pairs appeared under both names**, out of 470 and 467 — the axis
+inflated its own number by a seventh, and no reading of the count could have shown it.
+
+### Proven, not asserted
+
+A fixture with a parent and one child: **wired, the child costs 0** gated violations (and 1
+structural, the mirror demand); **unwired, it costs 1**. The raw figure charged the wired atom
+anyway. That is the invariance claim, tested rather than argued.
+
+Ratchet: **3,636 → 578**, a ratchet DOWN. `bypass-math`, the meta-gate that tracked the stale
+ceiling, went to **0**.
+
+### What the two mechanical remedies actually cost, measured before this was chosen
+
+**The shipped autoclean.** `sealPathDoubleWire` materialises the missing reciprocal — 2,316 stub
+atoms whose whole content is `export * from '@/pair'`, carrying prose that says nothing
+([[rules]]/prose, [[rules]]/word-without-logic) and paths that say nothing ([[path]]).
+
+**Parent re-exports.** 435 of 467 pass the cycle test. A **10-atom batch applied cleanly** (tsc
+unchanged at 41 errors); a **200-atom batch produced 353** — `export * from './child'` collides
+where siblings share an exported name. Rolled back to the byte. The small batch said *safe* and
+the large one said otherwise; only verifying between them tells you which.
+
+## index-cross — the superseded record (kept dated)
 
 The axis stands at **3,764 live against a committed ceiling of 3,636**. It has not been fixed,
 and this records why, because the reason is not "nobody got to it".
