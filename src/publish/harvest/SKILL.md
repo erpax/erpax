@@ -31,6 +31,14 @@ So `doiForPurpose` states both: cite the **software** with the concept DOI (that
 
 The fetcher is injected, so every pure part is tested offline and no suite depends on a network.
 
+**A single endpoint answers EXISTENCE, never COMPLETENESS — and two endpoints do not answer it either.**
+
+A sibling ran the whole CERN open-data portal. OAI-PMH `ListIdentifiers` reports `completeListSize` **74,614** against the REST API's **82,385**: the protocol built for exhaustive harvesting, **9.4% short, silently**. Same family as the concept-DOI false absence — the instrument answers a narrower question than its name.
+
+Then the harder half, and it inverts the obvious fix. Their record filter was `/record/\d+$`, and CERN ids are not all numeric (`cms-releases-first-batch-of-high-level-lhc-open-data` is one). The filter dropped **55,821** records — and returned exactly **82,385**, which is precisely the REST API's reported total. **An independent source agreeing to the digit read as confirmation that the broken filter was right.** Corrected, the sitemap holds 113,229 record URLs against the API's 82,385, and ~29% of API records are absent from the sitemap: each source omits tens of thousands the other has.
+
+So "consult a second endpoint" is not the rule. **Two sources agreeing is not completeness**, and the exact figure that made the instrument look validated was produced by the instrument being wrong. Everything below verifies that ONE record exists; nothing here claims a listing is complete.
+
 **Honest boundary.** This proves a DOI **is registered and harvestable** — never that the deposit's *content* is what a citation claims about it, and never that the work is correct. Zenodo's documented harvesting limit is 30 requests per minute and resumption tokens live 2 minutes; anything walking the full set must respect both. And a record that is restricted or embargoed is legitimately absent from the harvest, so `harvestable: false` is not by itself evidence of anything wrong.
 
 **Law — [[law]]: an identifier a registry assigns is received, then verified against that registry. And a citation of a RESULT names a fixed version — a concept DOI cites whatever is newest, which is a citation that can change its mind.**

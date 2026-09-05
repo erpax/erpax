@@ -22,6 +22,7 @@ import { rootCollisions, undeclaredRoots } from '@/merge/order'
 import { uncitedPages } from '@/algebra'
 import { staleSizeClaims } from '@/rules/drift'
 import { replaceableStandards } from '@/proof/replaceable'
+import { atomListingGaps } from '@/publish/complete'
 import { emptyNameFallbacks, unnamedNonText } from '@/rules/alt'
 import { unreadSurfaces } from '@/rules/domain'
 import { startProgressHeartbeat } from '@/cli/progress-heartbeat'
@@ -314,6 +315,10 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // ([[rules]]/alt). An empty alt declares an image DECORATIVE, so `alt = fromCms || ''` turns a
     // blank field into a silent claim that the image means nothing. Ratchets from 10.
     guardian({ axis: 'alt', violations: unnamedNonText(cwd).length + emptyNameFallbacks(cwd).length, baseline: 10 }),
+    // atom-completeness — three independent listings of what atoms exist must agree on MEMBERS,
+    // not merely on totals ([[publish]]/complete). The matrix held 3,466 against a corpus of
+    // 3,474 this session and nothing said so. Zero is a theorem.
+    guardian({ axis: 'atom-completeness', violations: atomListingGaps(cwd), baseline: 0 }),
     // pages-cited — a GENERATED page reproducing corpus matter with no attribution. 0 of 6,943
     // carried one: the corpus stated the licence law in its agent rules and did not obey it on its
     // own output. Now computed from the licence face, so it cannot drift. Zero is a theorem.

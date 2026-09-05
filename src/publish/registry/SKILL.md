@@ -56,3 +56,32 @@ An empty drop reports **UNCHECKED**, never clean. A sibling that has published n
 - **ISO 19011:2018 §6.4** — audit evidence: the citation must lead to the evidence.
 
 Composes: [[publish]]/paper · [[publish]]/harvest · [[rules]]/refutable · [[rules]]/reference · [[law]].
+
+## Notes from the code
+
+These were long docstrings; the code keeps one line and points here.
+
+### `resultUuid`
+
+The identity of a RESULT, repo-independent. Addresses the claim and its boundary — the two things a reader is asked to believe — and nothing about where the file lives. Same finding, same address, in any repository: that is the whole point of a content-address, applied to publications so a body of work can merge in metadata rather than duplicate in deposits.
+
+### `normaliseStatement`
+
+The CROSS-REPO statement normalisation, agreed with the sibling repositories. Collapse whitespace runs; remove a space ONLY where it does not sit between two of [A-Za-z0-9_]; keep case; `==`→`=`, `!=`→`≠`. Both halves of that rule are scars. An earlier version stripped ALL whitespace, which corrupts Lean's application by juxtaposition — `List.range 7` becomes `List.range7`, a different term — and mis-merged 395 of 534 statements in one sibling and 672 in another. Lowercasing conflated case-sensitive identifiers in 1,037 more. Three repos agreed the first rule before anyone measured it; one measured it and it was wrong in the MERGING direction, which is the direction that destroys the thing a merge key exists to protect. v3 — the class is `[\p{L}\p{N}_]` with the `u` flag, not `[A-Za-z0-9_]`. The ASCII form was agreed by three parties and was wrong in the merging direction for the third time. It protects `List.range 7` and corrupts every non-ASCII identifier: `σ (σ l)` → `σ(σl)`, `ℤ⁴ with χ` → `ℤ⁴withχ`. Measured: 211 of 832 statements in one sibling's corpus, 0 of 533 in another's, and 2 of erpax's own 45 — `under φ(d)` → `underφ(d)`, `the ω-basis` → `theω-basis`. I held the defect deliberately while it was shared, because a merge key only works when every party computes it identically and a private correction silently stops matching. That changed when the party for whom the fix was free adopted it first: the correct rule now has adopters, erpax's own addresses are among those the ASCII form corrupts, and moving is announced rather than silent. Holding a rule that is wrong about your OWN data to preserve agreement with a party that is also wrong is not consensus, it is a shared error.
+
+### `statementFixture`
+
+The shared FIXTURE: input/output pairs a sibling checks its implementation against. This rule has now been specified in prose three times and refuted by measurement twice — strip everything (672 statements corrupted), then ASCII-only (211). Each was agreed by three parties before anyone ran it against real statements. A sentence describing a normaliser is exactly the artifact that keeps failing; cases are checkable. Copy these verbatim.
+
+### `publishableResults`
+
+Every result this corpus can publish, computed — never a hand-kept list. The three legs are the scientific bar and each is read from the atom itself: a **Law** it states, an **Honest boundary** naming what it does not prove, and an exported `assert…` that fails closed. An atom missing any one of them is not published, and that is the whole filter — a claim with no falsifier is [[rules]]/refutable's defect, and a claim with no stated limit is how every overreach in this corpus began.
+
+### `foreignCollisions`
+
+Results a SIBLING repository already publishes, matched by identity rather than by title. This is what "repos merge in metadata" means concretely: the identity is a content-address of the claim, so a sibling deriving the same finding lands on the same uuid and the duplicate is visible before a second deposit exists. Two DOIs for one result is the failure being prevented. An empty drop is reported as EMPTY, never as clean — a sibling that has published no manifest has not been checked, which is the absence-of-evidence trap this corpus has already paid for.
+
+### `paperInputs`
+
+Every publishable result as a paper input — the wiring `runPapers` never had. `publish/paper` could build a paper and a Zenodo deposition from the day it was written, and its only caller was its own test: an instrument built and never pointed at the tree, the same defect `standardRegister` carried. This is the connection. `contentUuid` is the result's cross-repo identity, so the deposition's `isIdenticalTo` names the finding rather than the file.
+
