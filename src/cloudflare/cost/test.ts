@@ -73,12 +73,13 @@ describe('cloudflare/cost — the billable surface, priced honestly', () => {
     expect(staleLevers(process.cwd()).some((x) => x.lever === isr.lever)).toBe(true)
   })
 
-  // A current finding, stated so it can fail: five DO namespaces are declared and no class
-  // implements one. Write a class extending DurableObject and this goes red, correctly.
-  it('reports the Durable Object lever as still open — nothing in src extends DurableObject', () => {
-    const dobj = LEVERS.find((l) => l.dimension === 'durableObjects.gbSeconds')!
-    expect(dobj.holds(process.cwd())).toBe(true)
-    expect(staleLevers(process.cwd()).some((x) => x.lever === dobj.lever)).toBe(false)
+  // The DO lever was REMOVED, not rewritten. Its premise was that no class implements the declared
+  // namespaces — false: all five live in src/ai/durable-objects.ts as plain classes, which is the
+  // valid pre-DurableObject-base style, and worker.ts exports every one. My detector asked
+  // `extends DurableObject` and read the absence of that phrase as the absence of the class.
+  // The real requirement — a NAMED EXPORT of the worker entry — is gated in cloudflare/binding.
+  it('carries no lever about Durable Object classes, because that premise was false', () => {
+    expect(LEVERS.some((l) => /durable/i.test(l.lever))).toBe(false)
   })
 
   // PRICES REPLACED WITH THEOREMS. The conjecture was "they almost perfectly match, revealing the backend."

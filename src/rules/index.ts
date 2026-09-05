@@ -17,6 +17,7 @@ import { deadCommands } from '@/rules/command'
 import { blindProbes } from '@/rules/probe'
 import { fundedSpine } from '@/fund'
 import { skillWeights } from '@/quantum/budget'
+import { durableObjectExportGaps } from '@/cloudflare/binding'
 import { kernelPath, reflexiveTheorems, unacceptedProofs } from '@/proof/accepted'
 import { unbackedPhenomena } from '@/quantum/interval'
 import { unbackedFigures } from '@/render/scene'
@@ -285,6 +286,11 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // byte in an orientation is billed once per turn for the life of the session; the corpus declares
     // a 50,000-byte ceiling that the injecting path never passes through. Ratchets DOWN from 65,117.
     guardian({ axis: 'skill-face', violations: skillWeights(cwd)[0]?.bytes ?? 0, baseline: 65_117 }),
+    // durable-object-export — a DO binds only as a NAMED EXPORT of the worker entry
+    // ([[cloudflare]]/binding). workerd requires it and the failure is silent: the deploy succeeds,
+    // the binding exists, and every call fails at runtime. worker.ts records that a side-effect
+    // import was tried here first and could not create a named export. Zero is a THEOREM.
+    guardian({ axis: 'durable-object-export', violations: durableObjectExportGaps(cwd).length, baseline: 0 }),
     // proof/accepted — a .lean file the kernel does not accept as proof. Four of five carry `sorry`
     // or do not compile, under a directory named `verify` that nothing ever ran. Ratchets from 4;
     // the horizon is 0, because a theorem proved by `sorry` states a claim and proves nothing.

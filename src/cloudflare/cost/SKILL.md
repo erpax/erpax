@@ -59,7 +59,7 @@ the tree, and `staleLevers` reports the ones no longer worth recommending.
 | `ai.neurons` | open | KV `AI_CACHE` is bound |
 | `r2.egressGb` | open | `R2` is bound; egress priced at 0 |
 | `d1.rowsRead` | open | `D1` is bound and backs every query path |
-| `durableObjects.gbSeconds` | open | five namespaces declared, **no class extends DurableObject** |
+
 
 The first row is what this session actually changed. `defineCloudflareConfig({})` was empty, so no
 incremental cache existed and every ISR/SSG hit re-rendered inside the Worker — CPU-ms is the
@@ -67,9 +67,27 @@ Workers cost driver, and re-rendering an unchanged page pays for the same render
 `WORKER_SELF_REFERENCE` were already bound; only the config that uses them was missing, which is
 why the cost was invisible. Nothing was broken. The cheap path simply never ran.
 
-The last row is a defect, not a saving: the boot warns on every start that `RateLimiter`,
-`TenantQuotaCounter`, `ErpaxStateDO`, `JobLock` and `AuditChain` name classes the Worker does not
-export. Any call to one fails at runtime.
+## The lever I removed, because I was wrong about it
+
+A fifth lever said *implement or drop the declared Durable Object classes*, on the evidence that no
+class implements the five declared namespaces. **False.** All five live in `src/ai/durable-objects.ts`
+as plain classes — the valid pre-`DurableObject`-base style — and `worker.ts` exports every one.
+
+My detector asked whether any class `extends DurableObject` and read the absence of that phrase as
+the absence of the class. It was also the second false positive in the same hour: the substring form
+had already matched its own source, so I replaced it with a parser and kept asking the wrong question
+with better machinery.
+
+The real requirement is not inheritance, it is that the class be a **named export of the worker
+entry** — workerd binds on that and nothing else, and the failure is silent: the deploy succeeds, the
+binding exists, and only the call fails, at runtime, in production. `worker.ts` records that a
+side-effect import was tried here first and could not create a named export, so the gap has been
+walked into once already.
+
+That check now lives in [[cloudflare]]/binding, gated at zero, verifying the re-export rather than
+trusting it — `export { AuditChain } from '@/ai/durable-objects'` counts only when that module really
+declares the class. Planted against: removing `AuditChain` from the entry's export list produces
+exactly one gap naming the binding that would fail.
 
 **Honest boundary.** A configured cache is not a measured saving. These are levers and their
 evidence, not telemetry — the bill is the truth, and no figure here is a claim about it. The

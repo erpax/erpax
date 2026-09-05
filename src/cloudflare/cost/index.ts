@@ -188,56 +188,6 @@ const textOf = (cwd: string, rel: string): string => {
   }
 }
 /**
- * Does any class in `src` actually EXTEND DurableObject?
- *
- * Parsed, never matched. The substring form found a hit immediately — in this file, inside the call
- * that searches for it, and again in the test's own name. A string is data ([[syntax]]), and a
- * detector that reads its own source is the false positive [[rules]]/confine already paid for once.
- */
-const hasDurableObjectClass = (cwd: string): boolean => {
-  const walk = (d: string): boolean => {
-    let entries: import('node:fs').Dirent[]
-    try {
-      entries = readdirSync(d, { withFileTypes: true })
-    } catch {
-      return false
-    }
-    for (const e of entries) {
-      if (e.name.startsWith('.') || e.name === 'node_modules') continue
-      const p = join(d, e.name)
-      if (e.isDirectory()) {
-        if (walk(p)) return true
-        continue
-      }
-      if (!/\.tsx?$/.test(e.name)) continue
-      let text = ''
-      try {
-        text = readFileSync(p, 'utf8')
-      } catch {
-        continue
-      }
-      if (!text.includes('DurableObject')) continue // cheap reject before the parse
-      const src = ts.createSourceFile(p, text, ts.ScriptTarget.ESNext, true)
-      let found = false
-      const visit = (n: ts.Node): void => {
-        if (found) return
-        if (ts.isClassDeclaration(n)) {
-          for (const h of n.heritageClauses ?? []) {
-            if (h.token !== ts.SyntaxKind.ExtendsKeyword) continue
-            for (const t of h.types) if (/(^|\.)DurableObject$/.test(t.expression.getText())) found = true
-          }
-        }
-        ts.forEachChild(n, visit)
-      }
-      visit(src)
-      if (found) return true
-    }
-    return false
-  }
-  return walk(join(cwd, 'src'))
-}
-
-/**
  * The fine-tunes, each carrying evidence that READS THE TREE rather than remembering it.
  *
  * The first version stated its evidence as prose, and the top-ranked lever said
@@ -281,16 +231,6 @@ export const LEVERS: readonly Lever[] = [
     why: 'D1 bills rows read, and rows-read is the dimension that scales with traffic; a wide read costs on every request that makes it',
     holds: (cwd) => textOf(cwd, 'wrangler.jsonc').includes('"D1"'),
     observed: (cwd) => (textOf(cwd, 'wrangler.jsonc').includes('"D1"') ? 'D1 is bound and backs every query path' : 'no D1 binding'),
-  },
-  {
-    lever: 'implement or drop the declared Durable Object classes',
-    dimension: 'durableObjects.gbSeconds',
-    why: 'a namespace whose class does not exist accrues nothing and answers nothing — every call to it fails at runtime, and the boot says so on every start',
-    holds: (cwd) => !hasDurableObjectClass(cwd),
-    observed: (cwd) =>
-      hasDurableObjectClass(cwd)
-        ? 'a class extending DurableObject exists in src'
-        : 'wrangler.jsonc declares DO namespaces and src defines NO class extending DurableObject',
   },
 ]
 
