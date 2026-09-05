@@ -150,6 +150,22 @@ export interface RecordedImplementedVerdict {
  * Law: every path step is recorded canonically AND implemented (executable matter).
  * Record without implementation ⇒ unfinished; implementation without record ⇒ unsealed.
  */
+/**
+ * Is this atom's leaf a real schema.org word? Asked of the vocabulary, not of the atom.
+ *
+ * Lazy-required like the other cross checks here, so `seal` does not take a load-time edge on
+ * the readme model ([[rules]]/cycle).
+ */
+function isSchemaWord(atomPath: string, cwd: string): boolean {
+  try {
+    const req = createRequire(import.meta.url)
+    const { schemaCollision } = req('@/readme/compute') as typeof import('@/readme/compute')
+    return schemaCollision(cwd).words.has(atomPath.slice(atomPath.lastIndexOf('/') + 1))
+  } catch {
+    return false // cannot ask ⇒ judge it, never exempt it
+  }
+}
+
 export function recordedAndImplementedVerdict(
   atomPath: string,
   opts?: { readonly ledger?: readonly PathCanonicalEntry[]; readonly cwd?: string },
@@ -165,8 +181,14 @@ export function recordedAndImplementedVerdict(
     : false
   const impurities: string[] = []
   if (!form) impurities.push('trinity.form missing (SKILL.md)')
-  if (!code) impurities.push('trinity.code missing (index.ts)')
-  if (!proof) impurities.push('trinity.proof missing (test.ts)')
+  // A collided schema.org word is prose BY DESIGN and owes no code. The 1,676 under
+  // `vocabulary/` were already exempt — POSITIONALLY, by where they live rather than what they
+  // are — so 382 identical atoms outside that folder were counted as debt. Criterion
+  // substitution: a test easier to check than the property it stands for. The arbiter is
+  // schema.org itself, never the atom's own prose, which would be circular.
+  const prose = isSchemaWord(path, opts?.cwd ?? process.cwd())
+  if (!code && !prose) impurities.push('trinity.code missing (index.ts)')
+  if (!proof && !prose) impurities.push('trinity.proof missing (test.ts)')
   if (opts?.ledger && !recorded) impurities.push(`path ledger: no canonical entry for ${path}`)
   const complete = recorded && trinityComplete && proven && implemented
   return { path, recorded, implemented, proven, trinityComplete, complete, impurities }
@@ -224,7 +246,17 @@ export interface FinishedIdeaVerdict {
 const isLexiconAtom = (atomPath: string, cwd: string = process.cwd()): boolean =>
   atomPath.startsWith('vocabulary/') ||
   atomPath === 'vocabulary' ||
-  hasVocabularyException(join(cwd, 'src', atomPath))
+  hasVocabularyException(join(cwd, 'src', atomPath)) ||
+  // …and the third route, which is the only one that asks something other than the atom.
+  //
+  // The first is POSITIONAL — it recognises a prose atom by where it lives. The second is the
+  // atom's own frontmatter, which is the atom voting on what it is. So 382 atoms whose leaf is a
+  // real schema.org word were counted as debt because they sit at the root rather than under
+  // `vocabulary/`, while 1,676 identical siblings were exempt. Criterion substitution: a test
+  // easier to check than the property it stands for.
+  //
+  // schema.org is the arbiter here, read from `sti/vocabulary/schemaorg.jsonld`.
+  isSchemaWord(atomPath, cwd)
 
 function trinityImpurities(model: DiamondModel | CollectionDiamondModel): string[] {
   const impurities: string[] = []
