@@ -1,6 +1,6 @@
 {
   "name": "erpax",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": true,
   "description": "Source-available multi-tenant ERP & double-entry accounting on Payload CMS v4 + Cloudflare (D1 + R2 + Workers via OpenNext) — content-addressed, tamper-evident, standards-bound",
   "author": {
