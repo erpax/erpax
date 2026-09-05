@@ -70,7 +70,27 @@ const isProbe = (lit: ts.StringLiteral): boolean => {
   return false
 }
 
-/** Every probe for a twinned filename in a file that never mentions the twin. */
+/**
+ * The text of the function containing a probe — the scope in which naming the twin counts.
+ *
+ * Falls back to the whole file when a probe sits at module level, because there the file IS the
+ * enclosing scope.
+ */
+function enclosingText(node: ts.Node, fileText: string): string {
+  for (let n: ts.Node | undefined = node; n; n = n.parent) {
+    if (
+      ts.isFunctionDeclaration(n) ||
+      ts.isFunctionExpression(n) ||
+      ts.isArrowFunction(n) ||
+      ts.isMethodDeclaration(n)
+    ) {
+      return n.getText()
+    }
+  }
+  return fileText
+}
+
+/** Every probe for a twinned filename whose enclosing function never mentions the twin. */
 export function blindProbes(cwd: string = process.cwd()): BlindProbe[] {
   const hits: BlindProbe[] = []
   for (const f of sourceFiles(cwd)) {
@@ -86,9 +106,18 @@ export function blindProbes(cwd: string = process.cwd()): BlindProbe[] {
     const visit = (n: ts.Node): void => {
       if (ts.isStringLiteral(n)) {
         const twin = TWINNED.get(n.text)
-        // A file that names the twin ANYWHERE has considered it — that is the cheapest honest
-        // signal, and it is why fixing a file clears every probe in it at once.
-        if (twin && !text.includes(twin) && isProbe(n)) {
+        // The exemption is the ENCLOSING FUNCTION, not the file.
+        //
+        // File-level was the original rule, justified as "a file naming the twin anywhere has
+        // considered it". REFUTED, with a cost: `readme/compute.ts` mentions `test.tsx` twice
+        // AND contained `existsSync(join(dir, 'test.ts'))`, so its proof leg was blind while its
+        // code leg was not. Every atom with index.tsx + test.tsx was recorded as having code and
+        // no proof and booked a liability it did not owe — 31 statement gaps, pardoned by this
+        // gate because the file said the right word somewhere else.
+        //
+        // One function is still one edit, so the fix stays proportional; it just cannot be
+        // earned by a mention in an unrelated part of the same file.
+        if (twin && !enclosingText(n, text).includes(twin) && isProbe(n)) {
           const { line } = src.getLineAndCharacterOfPosition(n.getStart())
           hits.push({
             file: relative(cwd, f),

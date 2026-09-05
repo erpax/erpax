@@ -303,8 +303,8 @@ const wordAtomSkeletonModel = (atomPath: string, cwd: string): DiamondModel => {
   const files = readdirSync(dir)
   const trinity = {
     form: (files.includes('SKILL.md') ? 1 : 0) as 0 | 1,
-    code: (files.includes('index.ts') ? 1 : 0) as 0 | 1,
-    proof: (files.includes('test.ts') ? 1 : 0) as 0 | 1,
+    code: (files.includes('index.ts') || files.includes('index.tsx') ? 1 : 0) as 0 | 1,
+    proof: (files.includes('test.ts') || files.includes('test.tsx') ? 1 : 0) as 0 | 1,
   }
   const skillPath = join(dir, 'SKILL.md')
   const skillFm = existsSync(skillPath)

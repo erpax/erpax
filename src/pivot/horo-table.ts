@@ -91,8 +91,8 @@ const walkTrinityCounts = (root: string): { skills: number; index: number; tests
         continue
       }
       if (e.name === 'SKILL.md') skills++
-      else if (e.name === 'index.ts') index++
-      else if (e.name === 'test.ts') tests++
+      else if (e.name === 'index.ts' || e.name === 'index.tsx') index++
+      else if (e.name === 'test.ts' || e.name === 'test.tsx') tests++
     }
   }
   walk(root)

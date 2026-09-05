@@ -1,3 +1,4 @@
+import { trinityPresent } from '@/law/folder/constants'
 import { algebraFloatPow, citation, erpaxLicenseNote, exactMax, exactRound } from '@/algebra'
 /**
  * readme/compute — derive*, render, analytics, computed faces (pure compute hub).
@@ -254,8 +255,8 @@ function walkCounts(root: string): { skills: number; index: number; tests: numbe
         continue
       }
       if (e.name === 'SKILL.md') skills++
-      else if (e.name === 'index.ts') index++
-      else if (e.name === 'test.ts') tests++
+      else if (e.name === 'index.ts' || e.name === 'index.tsx') index++
+      else if (e.name === 'test.ts' || e.name === 'test.tsx') tests++
     }
   }
   walk(root)
@@ -606,6 +607,15 @@ export interface FolderReadmeModel {
   readonly quantumThinking: QuantumThinkingBlock
 }
 
+/**
+ * Does this name set carry a code leg? `index.ts` OR `index.tsx`.
+ *
+ * A React atom's barrel cannot be `.ts` — JSX does not parse from one — so asking only for
+ * `index.ts` answers "does this atom have code" with NO for every atom that renders
+ * ([[rules]]/probe). Nine probes in this file did exactly that.
+ */
+const hasCodeLeg = (names: ReadonlySet<string>): boolean => names.has('index.ts') || names.has('index.tsx')
+
 const foldedPathSet = (): Set<string> => {
   const s = new Set<string>()
   for (const n of UUID_MATRIX_NODES) {
@@ -822,13 +832,13 @@ export function buildStandardsByAtom(
   for (const atomPath of atomPaths) {
     const dir = join(cwd, SRC, atomPath)
     const raw = new Map<string, FolderStandardRef['source']>()
-    for (const file of ['index.ts', 'SKILL.md'] as const) {
+    for (const file of ['index.ts', 'index.tsx', 'SKILL.md'] as const) {
       const p = join(dir, file)
       if (!existsSync(p)) continue
       try {
         const text = readFileSync(p, 'utf8')
         parseStandardsFromText(text, 'banner', raw)
-        if (file === 'index.ts') parseStandardsFromText(text, 'collection', raw)
+        if (file === 'index.ts' || file === 'index.tsx') parseStandardsFromText(text, 'collection', raw)
       } catch {
         /* unreadable — skip */
       }
@@ -1341,14 +1351,19 @@ export function deriveFolderModel(
   graph?: AnalysisTypographyGraph,
 ): FolderReadmeModel {
   const dir = join(cwd, SRC, atomPath)
-  const form = (existsSync(join(dir, 'SKILL.md')) ? 1 : 0) as 0 | 1
-  const code = (existsSync(join(dir, 'index.ts')) || existsSync(join(dir, 'index.tsx')) ? 1 : 0) as 0 | 1
-  const hasTestTs = existsSync(join(dir, 'test.ts'))
+  // trinityPresent names EVERY spelling a leg has. The code leg here already checked both, and
+  // the proof leg checked `test.ts` alone — so an atom with index.tsx AND test.tsx was recorded
+  // as having code and no proof, and booked a proof liability it did not owe. 31 statement gaps
+  // were this. The shared helper exists because four gates once carried the same bug at once
+  // ([[rules]]/probe); this was the fifth, inside the readme model itself.
+  const form = (trinityPresent(dir, 'SKILL.md') ? 1 : 0) as 0 | 1
+  const code = (trinityPresent(dir, 'index.ts') ? 1 : 0) as 0 | 1
+  const hasTestTs = trinityPresent(dir, 'test.ts')
   const matterState = folderMatterState(form, code, hasTestTs)
   const membershipOk = diamondMembershipOk(atomPath, cwd)
   const membershipViolationCount = membershipOk ? 0 : diamondMembershipViolations(atomPath, cwd).length
   const gravityHeld = folderGravityHeld(matterState, membershipOk)
-  // Proof leg = test.ts for code atoms (colocated *.test.ts does not complete the trinity).
+  // Proof leg = test.ts OR test.tsx for code atoms (a colocated *.test.ts does not count).
   const proof = (code ? (hasTestTs ? 1 : 0) : 0) as 0 | 1
   const leaf = atomPath.split('/').pop() ?? atomPath
   const node = nodeOf(atomPath) ?? nodeOf(leaf)
@@ -1730,9 +1745,9 @@ export function atomBasisScan(cwd: string = process.cwd()): AtomBasis {
       return
     }
     const names = new Set(entries.filter((e) => e.isFile()).map((e) => e.name))
-    if (names.has('SKILL.md') || names.has('index.ts')) {
+    if (names.has('SKILL.md') || hasCodeLeg(names)) {
       atoms++
-      switch (classifyAtom(dir, names.has('index.ts'))) {
+      switch (classifyAtom(dir, hasCodeLeg(names))) {
         case 'vocab':
           vocabOnly++
           break
@@ -1776,7 +1791,7 @@ export function basisAtoms(cwd: string = process.cwd()): string[] {
       return
     }
     const names = new Set(entries.filter((e) => e.isFile()).map((e) => e.name))
-    if ((names.has('SKILL.md') || names.has('index.ts')) && classifyAtom(dir, names.has('index.ts')) === 'basis') {
+    if ((names.has('SKILL.md') || hasCodeLeg(names)) && classifyAtom(dir, hasCodeLeg(names)) === 'basis') {
       out.push(relative(root, dir).replace(/\\/g, '/'))
     }
     for (const e of entries) {
@@ -2015,7 +2030,7 @@ export function foldPlan(cwd: string = process.cwd()): readonly FoldFamily[] {
       return
     }
     const names = entries.filter((e) => e.isFile()).map((e) => e.name)
-    if (names.includes('SKILL.md') || names.includes('index.ts')) {
+    if (names.includes('SKILL.md') || names.includes('index.ts') || names.includes('index.tsx')) {
       const ap = relative(root, dir).replace(/\\/g, '/')
       leafOf.set(ap, ap.split('/').pop() ?? ap)
     }
@@ -2412,7 +2427,7 @@ export function proseDecode(cwd: string = process.cwd()): ProseDecode {
       return
     }
     const names = new Set(entries.filter((e) => e.isFile()).map((e) => e.name))
-    if (names.has('SKILL.md') && !names.has('index.ts')) {
+    if (names.has('SKILL.md') && !hasCodeLeg(names)) {
       vocabOnly++
       let text = ''
       try {

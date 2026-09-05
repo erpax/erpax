@@ -160,7 +160,12 @@ export interface RecordedImplementedVerdict {
  */
 export function recordedAndImplementedVerdict(
   atomPath: string,
-  opts?: { readonly ledger?: readonly PathCanonicalEntry[]; readonly cwd?: string },
+  opts?: {
+    readonly ledger?: readonly PathCanonicalEntry[]
+    readonly cwd?: string
+    /** The schema.org arbiter, INJECTED — a lazy require here reported two counts in one process. */
+    readonly isSchemaWord?: (leaf: string) => boolean
+  },
 ): RecordedImplementedVerdict {
   const path = toAtomPath(atomPath, 'fs') || atomPath.replace(/^src\//, '').replace(/^\//, '')
   const model = deriveDiamond(path, opts?.cwd)

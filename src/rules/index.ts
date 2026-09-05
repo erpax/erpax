@@ -271,8 +271,10 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     guardian({ axis: 'command', violations: deadCommands(cwd).length, baseline: 0 }),
     // probe — a test for a twinned filename that never names the twin ([[rules]]/probe). Four gates
     // carried this at once: 6 atoms flagged for a barrel's spelling, 29 never judged at all, and
-    // every React atom recorded as having no code. Ratchets from the live 48.
-    guardian({ axis: 'probe', violations: blindProbes(cwd).length, baseline: 47 }),
+    // every React atom recorded as having no code. The exemption was then narrowed from the FILE to
+    // the enclosing function — a file naming `index.tsx` once had been pardoning its blind `test.ts`
+    // probe elsewhere, which is how `readme/compute` hid nine of these and cost 31 statement gaps.
+    guardian({ axis: 'probe', violations: blindProbes(cwd).length, baseline: 42 }),
     // proof/accepted — a .lean file the kernel does not accept as proof. Four of five carry `sorry`
     // or do not compile, under a directory named `verify` that nothing ever ran. Ratchets from 4;
     // the horizon is 0, because a theorem proved by `sorry` states a claim and proves nothing.

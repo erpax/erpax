@@ -63,7 +63,7 @@ export function folderAgents(cwd: string = process.cwd()): readonly FolderAgent[
     } catch {
       return
     }
-    if (existsSync(join(dir, 'index.ts'))) {
+    if (existsSync(join(dir, 'index.ts')) || existsSync(join(dir, 'index.tsx'))) {
       const banners: string[] = []
       for (const f of ['index.ts', 'SKILL.md']) {
         const p = join(dir, f)
@@ -77,8 +77,9 @@ export function folderAgents(cwd: string = process.cwd()): readonly FolderAgent[
         const scan = f.endsWith('.ts') ? commentsOf(p, text).join('\n') : text
         for (const m of scan.match(STANDARD_BANNER) ?? []) banners.push(m.trim())
       }
-      const hasTrinity = ['index.ts', 'SKILL.md', 'test.ts'].every((f) => existsSync(join(dir, f)))
-      const proven = existsSync(join(dir, 'test.ts'))
+      const leg = (n: string): boolean => existsSync(join(dir, n)) || existsSync(join(dir, n.replace(/\.ts$/, '.tsx')))
+      const hasTrinity = ['index.ts', 'SKILL.md', 'test.ts'].every(leg)
+      const proven = leg('test.ts')
       out.push({
         atom: atomOf(cwd, dir),
         hasTrinity,

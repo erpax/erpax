@@ -13,7 +13,8 @@ import { importSpecifiersOf } from '@/syntax'
  */
 const dir = join(import.meta.dirname, '.')
 const isChildAtom = (name: string): boolean =>
-  statSync(join(dir, name)).isDirectory() && existsSync(join(dir, name, 'index.ts'))
+  statSync(join(dir, name)).isDirectory() &&
+  (existsSync(join(dir, name, 'index.ts')) || existsSync(join(dir, name, 'index.tsx')))
 const members = readdirSync(dir)
   .filter(
     (f) =>
