@@ -18,6 +18,7 @@
  * @see ./SKILL.md (the law) · ../guardian (one axis each) · ../law/folder (folder's two guardians sealed)
  */
 import type { GuardianVerdict } from '@/guardian'
+import { readdirSync } from 'node:fs'
 import { createRequire } from 'node:module'
 import { join } from 'node:path'
 import {
@@ -264,6 +265,33 @@ const isLexiconAtom = (
   // schema.org is the arbiter here, read from `sti/vocabulary/schemaorg.jsonld`.
   (isSchemaWord?.(atomPath.slice(atomPath.lastIndexOf('/') + 1)) ?? false)
 
+/**
+ * A FORM-ONLY atom: prose, and nothing else — no code file, no child directory.
+ *
+ * Every one of these is already counted by [[rules]]/word-without-logic, which gates the literary
+ * population on its own axis at its own ceiling. Charging a trinity gap here too bills one defect
+ * on two laws: measured, ALL 99 that accounting-wave charged were already in that axis's 447.
+ * Same shape as `one-way-bond` and `missing-foldback` naming one condition twice, across two
+ * laws instead of within one.
+ *
+ * Computed locally from the filesystem — no import, no lazy require. A cross-module reach for
+ * this answer is what made one axis report two different numbers in a single process.
+ */
+function isFormOnlyAtom(atomPath: string, cwd: string): boolean {
+  const dir = join(cwd, 'src', atomPath)
+  let entries: import('node:fs').Dirent[]
+  try {
+    entries = readdirSync(dir, { withFileTypes: true })
+  } catch {
+    return false // cannot ask ⇒ judge it, never exempt it
+  }
+  if (!entries.some((e) => e.isFile() && e.name === 'SKILL.md')) return false
+  if (entries.some((e) => e.isDirectory())) return false
+  return !entries.some(
+    (e) => e.isFile() && /\.tsx?$/.test(e.name) && !/^(test|translations)\./.test(e.name),
+  )
+}
+
 function trinityImpurities(
   model: DiamondModel | CollectionDiamondModel,
   isSchemaWord?: (leaf: string) => boolean,
@@ -277,6 +305,8 @@ function trinityImpurities(
     return impurities
   }
   if (isLexiconAtom(model.atomPath, process.cwd(), isSchemaWord)) return impurities
+  // already counted by word-without-logic; one defect belongs to one axis
+  if (isFormOnlyAtom(model.atomPath, process.cwd())) return impurities
   impurities.push('trinity.code missing (index.ts)')
   if (!trinity.proof) impurities.push('trinity.proof missing (test.ts)')
   return impurities

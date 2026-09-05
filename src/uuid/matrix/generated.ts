@@ -14,7 +14,7 @@
 export interface MatrixNode { readonly atom: string; readonly uuid: string; readonly parent?: string; readonly prev?: string; readonly next?: string; readonly cross?: string; readonly bind?: string; readonly dim: string; readonly band: string; readonly horo: number; readonly path: string }
 export interface MatrixEdge { readonly f: number; readonly t: number; readonly binding: string; readonly dir: number }
 
-export const UUID_MATRIX_ROOT = "dd3ac6fc-6e7d-8055-be44-a8165940ef8f" as const
+export const UUID_MATRIX_ROOT = "3b404aa5-4e44-852a-bfe1-acea5c1b852a" as const
 export const UUID_MATRIX_DIMS = ["root","access","accounting","address","agent","agents","ai","algebra","allow","anchor","anti","api","apply","architecture","atom","audit","aura","authenticated","auto","average","bank","base","bcp","before","beyond","bg","biological","blocks","body","bookable","budget","bulk","business","cache","camt052","camt053","camt054","can","capture","cases","categories","chain","classify","cli","cloning","closing","cloudflare","cmspage","collection","commerce","commitments","competency","compliance","computer","config","confirm","consent","consistency","consolidation","convention","cost","country","cross","csrd","currency","customer","customers","data","deep","deploy","development","diamond","document","domain","double","dual","duality","ecommerce","employees","en","enforce","entanglement","entity","entropy","etsi","eu","evidence","export","factory","fair","financial","fiscal","fixed","fusion","fx","gate","get","ghg","gl","google","government","harmony","header","heart","held","hero","heros","horo","i18n","identity","ifrs","incoterms","insurance","integrity","intercompany","internal","intl","invoices","iso","items","journal","law","leads","leases","legal","link","llm","locale","lot","maintenance","mcp","media","medical","memory","merge","message","metric","migrate","millennium","mineral","money","monitor","multi","nace","naredba","nist","notary","oecd","outward","pack","pacs004","pain002","party","patent","path","payload","payment","peppol","period","plugins","post","posts","proof","properties","providers","publish","quantum","readme","realtime","receipt","regulatory","render","research","reverse","rfc","rich","rodin","roles","rules","run","saf","sale","sandbox","schema","seal","search","security","seed","seeds","self","sequence","skill","standard","standards","sti","subscription","svg","syntax","tags","tamper","tax","taxing","team","tenant","tenants","test","testing","trading","transaction","translate","translation","translations","trello","types","ui","un","update","use","users","uuid","validate","vendors","vocabulary","warehouse","water","wave","wco","website","witness","work","workflow"] as const
 
 export const UUID_MATRIX_NODES: readonly MatrixNode[] = [
@@ -1170,9 +1170,9 @@ export const UUID_MATRIX_NODES: readonly MatrixNode[] = [
   {"atom":"probe","uuid":"f92bfe37-d6bd-885b-b722-8a283cf75aff","dim":"rules","band":"flow","horo":7,"path":"rules/probe","parent":"7cbd0e23-5acc-831b-bd0b-e80f7de4c5b6","prev":"daca8ae9-fc38-80ac-99c5-75f2ee29e966","next":"12fb3ce4-8b7e-877a-9f71-199f337d1655","cross":"31f12cd0-78da-8ba7-b7d9-d105cb8163ac","bind":"4f8cb1f2-87b4-8481-9991-1474c303bd82"},
   {"atom":"prose","uuid":"12fb3ce4-8b7e-877a-9f71-199f337d1655","dim":"rules","band":"flow","horo":1,"path":"rules/prose","parent":"7cbd0e23-5acc-831b-bd0b-e80f7de4c5b6","prev":"f92bfe37-d6bd-885b-b722-8a283cf75aff","next":"9ba90f56-cde0-84ed-ac5d-fabc89b1759a","cross":"44398f13-49e8-8912-90f2-ff7bbd5c254f","bind":"d806ca14-4358-84a0-a3fc-3487063bbf01"},
   {"atom":"reference","uuid":"9ba90f56-cde0-84ed-ac5d-fabc89b1759a","dim":"rules","band":"flow","horo":8,"path":"rules/reference","parent":"7cbd0e23-5acc-831b-bd0b-e80f7de4c5b6","prev":"12fb3ce4-8b7e-877a-9f71-199f337d1655","next":"e93238fa-010e-857b-9ac0-1bdddd1dcd0e","cross":"bfa4f4c0-c0d9-893a-954f-3eb6f0e9d8c1","bind":"7f17dddb-db84-82e5-93df-6626b7d13e51"},
-  {"atom":"refutable","uuid":"e93238fa-010e-857b-9ac0-1bdddd1dcd0e","dim":"rules","band":"flow","horo":8,"path":"rules/refutable","parent":"7cbd0e23-5acc-831b-bd0b-e80f7de4c5b6","prev":"9ba90f56-cde0-84ed-ac5d-fabc89b1759a","next":"aa90f17d-bf68-8b67-85c0-322b1f15a2a1","cross":"1b8be518-ddff-809a-bd4e-6ac428cb3870","bind":"7a81c916-2ddb-8ed1-a5bd-53426d11e24d"},
-  {"atom":"slack","uuid":"aa90f17d-bf68-8b67-85c0-322b1f15a2a1","dim":"rules","band":"flow","horo":1,"path":"rules/slack","parent":"7cbd0e23-5acc-831b-bd0b-e80f7de4c5b6","prev":"e93238fa-010e-857b-9ac0-1bdddd1dcd0e","next":"eb5a4e93-d653-8a6b-90f9-32c0a5c2f665","cross":"077d536c-46f0-8279-a407-49ac32b604d1","bind":"dbf4cd3c-c8c8-8634-9d6e-78f3f32897a8"},
-  {"atom":"unfolded","uuid":"eb5a4e93-d653-8a6b-90f9-32c0a5c2f665","dim":"rules","band":"flow","horo":8,"path":"rules/unfolded","parent":"7cbd0e23-5acc-831b-bd0b-e80f7de4c5b6","prev":"aa90f17d-bf68-8b67-85c0-322b1f15a2a1","next":"4f5b13e5-0b98-8e53-b3c0-bb1999408c87","cross":"9b457438-bba0-8435-b51d-51d8ca6cefdc","bind":"4cf03052-2731-8f30-9c4e-1dcfb4313ddf"},
+  {"atom":"refutable","uuid":"e93238fa-010e-857b-9ac0-1bdddd1dcd0e","dim":"rules","band":"flow","horo":8,"path":"rules/refutable","parent":"7cbd0e23-5acc-831b-bd0b-e80f7de4c5b6","prev":"9ba90f56-cde0-84ed-ac5d-fabc89b1759a","next":"2ed276ad-07e2-8a90-a802-b808ff0d49bf","cross":"16201049-e85b-8e34-99ff-8f00c5b744c2","bind":"5130364d-665f-8a99-84c9-93a21086d992"},
+  {"atom":"slack","uuid":"2ed276ad-07e2-8a90-a802-b808ff0d49bf","dim":"rules","band":"flow","horo":1,"path":"rules/slack","parent":"7cbd0e23-5acc-831b-bd0b-e80f7de4c5b6","prev":"e93238fa-010e-857b-9ac0-1bdddd1dcd0e","next":"eb5a4e93-d653-8a6b-90f9-32c0a5c2f665","cross":"077d536c-46f0-8279-a407-49ac32b604d1","bind":"e2f15196-056b-8068-a403-cd04d720eeff"},
+  {"atom":"unfolded","uuid":"eb5a4e93-d653-8a6b-90f9-32c0a5c2f665","dim":"rules","band":"flow","horo":8,"path":"rules/unfolded","parent":"7cbd0e23-5acc-831b-bd0b-e80f7de4c5b6","prev":"2ed276ad-07e2-8a90-a802-b808ff0d49bf","next":"4f5b13e5-0b98-8e53-b3c0-bb1999408c87","cross":"e576778f-13a2-88f5-ab82-9ba3b65a7cf8","bind":"55be28ac-36f9-86cf-a64c-94145f74f846"},
   {"atom":"unraised","uuid":"4f5b13e5-0b98-8e53-b3c0-bb1999408c87","dim":"rules","band":"flow","horo":8,"path":"rules/unraised","parent":"7cbd0e23-5acc-831b-bd0b-e80f7de4c5b6","prev":"eb5a4e93-d653-8a6b-90f9-32c0a5c2f665","next":"5a97d2eb-aef1-8bfe-a67c-25404fe52b2c","cross":"a66559a7-5d6d-8f17-9e09-1d500024c79f","bind":"c39dbfd0-732f-8d3a-bdf1-d5d25246ff5e"},
   {"atom":"run","uuid":"5a97d2eb-aef1-8bfe-a67c-25404fe52b2c","dim":"root","band":"flow","horo":1,"path":"run","parent":"00000000-0000-8000-8000-000000000000","prev":"4f5b13e5-0b98-8e53-b3c0-bb1999408c87","next":"89223858-0750-8e91-837e-d17a30951347","cross":"2504c527-f19c-8fbf-a527-3239b4dceab7","bind":"17f7c5ef-06c4-8054-822b-75e00032fa61"},
   {"atom":"cron","uuid":"89223858-0750-8e91-837e-d17a30951347","dim":"run","band":"flow","horo":7,"path":"run/cron","parent":"5a97d2eb-aef1-8bfe-a67c-25404fe52b2c","prev":"5a97d2eb-aef1-8bfe-a67c-25404fe52b2c","next":"038ae617-8bd7-8f4c-8f7b-cb6ca78d8eda","cross":"3e5413c5-2bce-8b86-9c63-95b814557c99","bind":"d8d6bd55-b7bd-82c2-b5ac-cdc9eee36806"},
@@ -10370,9 +10370,9 @@ export const UUID_MATRIX_EDGES: readonly MatrixEdge[] = [
   {"f":1152,"t":1128,"binding":"094c8675-c04d-8896-a4d1-f8bcb5f73bab","dir":7},
   {"f":1152,"t":3449,"binding":"3fe7c3ea-747c-8c12-ab2e-acf3a5e6d80c","dir":2},
   {"f":1152,"t":684,"binding":"93ac0e2a-132e-8c5a-95e2-352355d93dd2","dir":8},
-  {"f":1153,"t":684,"binding":"b13aa4ba-c248-8522-b5b8-359f82dd5c67","dir":1},
-  {"f":1153,"t":437,"binding":"86856f83-641c-82f7-a0b3-fe35afe67a8d","dir":4},
-  {"f":1153,"t":1128,"binding":"147e7d2d-4055-80a4-a2ea-05233974a7f5","dir":2},
+  {"f":1153,"t":684,"binding":"62462883-8cc3-8b07-a807-86ae84dab5d3","dir":1},
+  {"f":1153,"t":437,"binding":"4c4aa0cf-d7fa-862a-b673-30e30e4b53dd","dir":4},
+  {"f":1153,"t":1128,"binding":"932371d5-8d75-8d11-a9db-ca34b56703d8","dir":2},
   {"f":1154,"t":1128,"binding":"edfab8fd-e366-80e2-b764-a6e28faae8f0","dir":7},
   {"f":1154,"t":684,"binding":"41d21a52-7338-8b2d-a436-a11c24d8289a","dir":8},
   {"f":1155,"t":684,"binding":"de120ef1-388d-880a-9f73-790ebd845693","dir":8},
@@ -30709,9 +30709,9 @@ export const UUID_MATRIX_EDGES: readonly MatrixEdge[] = [
   {"f":1128,"t":1152,"binding":"094c8675-c04d-8896-a4d1-f8bcb5f73bab","dir":7},
   {"f":3449,"t":1152,"binding":"3fe7c3ea-747c-8c12-ab2e-acf3a5e6d80c","dir":2},
   {"f":684,"t":1152,"binding":"93ac0e2a-132e-8c5a-95e2-352355d93dd2","dir":8},
-  {"f":684,"t":1153,"binding":"b13aa4ba-c248-8522-b5b8-359f82dd5c67","dir":1},
-  {"f":437,"t":1153,"binding":"86856f83-641c-82f7-a0b3-fe35afe67a8d","dir":4},
-  {"f":1128,"t":1153,"binding":"147e7d2d-4055-80a4-a2ea-05233974a7f5","dir":2},
+  {"f":684,"t":1153,"binding":"62462883-8cc3-8b07-a807-86ae84dab5d3","dir":1},
+  {"f":437,"t":1153,"binding":"4c4aa0cf-d7fa-862a-b673-30e30e4b53dd","dir":4},
+  {"f":1128,"t":1153,"binding":"932371d5-8d75-8d11-a9db-ca34b56703d8","dir":2},
   {"f":1128,"t":1154,"binding":"edfab8fd-e366-80e2-b764-a6e28faae8f0","dir":7},
   {"f":684,"t":1154,"binding":"41d21a52-7338-8b2d-a436-a11c24d8289a","dir":8},
   {"f":684,"t":1155,"binding":"de120ef1-388d-880a-9f73-790ebd845693","dir":8},
