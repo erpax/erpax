@@ -13,7 +13,7 @@ import {
   loadCorpusDashboardShell,
   loadCorpusEntropyRollup,
   loadCorpusPathJournalSamples,
-} from './corpus-rollup'
+} from './rollup'
 
 const FIXTURE_ANALYTICS = {
   folderCount: 4200,
@@ -72,7 +72,7 @@ afterEach(() => {
   vi.restoreAllMocks()
 })
 
-describe('admin/ui/corpus-rollup — cache', () => {
+describe('admin/ui/rollup — cache', () => {
   it('returns cached rollup on second call (content-uuid + TTL)', () => {
     mockRollupDeps()
     const deriveSpy = vi.mocked(readme.deriveCorpusAnalytics)
@@ -108,7 +108,7 @@ describe('admin/ui/corpus-rollup — cache', () => {
   })
 })
 
-describe('admin/ui/corpus-rollup — dashboard shell', () => {
+describe('admin/ui/rollup — dashboard shell', () => {
   it('loads reciprocity without corpus fs walk', () => {
     const shell = loadCorpusDashboardShell()
     expect(shell.reciprocityPct).toBeGreaterThanOrEqual(0)
@@ -120,7 +120,7 @@ describe('admin/ui/corpus-rollup — dashboard shell', () => {
 // (loadCorpusEntropyRollup · buildReadmeCorpusContext · buildReadmeTypographyGraph) — >180s,
 // it timed out the batch. Full-tree derivation is the readme:check gate / `erpax doctor`, not a
 // unit batch; skipped here (the pure logic is tested above). Runs green in the gate.
-describe.skip('admin/ui/corpus-rollup — live integration (full-tree — runs in the gate)', () => {
+describe.skip('admin/ui/rollup — live integration (full-tree — runs in the gate)', () => {
   it(
     'loads live corpus entropy rollup from deriveModel',
     () => {

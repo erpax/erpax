@@ -2317,11 +2317,11 @@ src/quantum/uuid/index.ts:11: * @standard RFC 9562 §5.8 content-uuid
 src/quantum/uuid/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/quantum/wallet/index.ts:9: * @standard double-entry ([[entry]]); RFC 9562 §5.8 content-uuid (tamper-evident state)
 src/quantum/word/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
-src/query/fingerprint/index.test.ts:18: * @standard ISO/IEC 9075-2 SQL/Foundation keyword inventory
-src/query/fingerprint/index.test.ts:19: * @standard RFC 8785 JSON Canonicalization Scheme (params)
 src/query/fingerprint/index.ts:57: * @standard ISO/IEC 9075-2 SQL/Foundation (keyword inventory)
 src/query/fingerprint/index.ts:58: * @standard RFC 8785 JSON Canonicalization Scheme (for params digest)
 src/query/fingerprint/index.ts:59: * @standard NIST FIPS 180-4 SHA-256
+src/query/fingerprint/test.ts:18: * @standard ISO/IEC 9075-2 SQL/Foundation keyword inventory
+src/query/fingerprint/test.ts:19: * @standard RFC 8785 JSON Canonicalization Scheme (params)
 src/readings/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/readme/index.ts:12: * @standard RFC 9562 §5.8 (the README's own content-uuid is a v8 content-uuid)
 src/readme/test.ts:536: * @standard RFC 9562
@@ -2646,37 +2646,37 @@ src/skill/router/subgraph.ts:20: * @standard ISO/IEC 25010 §5.5 testability (pu
 src/skin/index.ts:24: * @standard largest organ ≈1.2–2.2 m²; stratum corneum barrier; epidermal turnover ~28 days
 src/social/graph/index.ts:10: * @standard W3C ActivityStreams 2.0 Follow/Accept reciprocity
 src/sparsity/index.ts:37: * @standard ISO/IEC 25010:2023 §5.2 — performance efficiency: resource utilisation
-src/spec/generator/chain-registry-generator.ts:16: * @standard ISO/IEC 25010:2023 §5.4 reusability + §5.5 testability
-src/spec/generator/e2e-spec-extractor.ts:24: * @standard ISO/IEC-29119:2022 software-testing test-evidence
-src/spec/generator/e2e-spec-extractor.ts:25: * @standard ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
-src/spec/generator/evidence-collector.ts:38: * @standard ISO/IEC-29119:2022 software-testing test-evidence
-src/spec/generator/evidence-collector.ts:39: * @standard ISO-19011:2018 §6.4.6 audit-evidence visual-evidence
+src/spec/generator/audit.ts:11: * @standard ISO 19011:2018 §6.4 audit-evidence
+src/spec/generator/audit.ts:12: * @standard ISO/IEC 25023:2016 §8 quality-measurement-functionality-completeness
+src/spec/generator/audit.ts:13: * @standard BCP-47 language-tag
+src/spec/generator/chain.ts:16: * @standard ISO/IEC 25010:2023 §5.4 reusability + §5.5 testability
+src/spec/generator/collector.ts:38: * @standard ISO/IEC-29119:2022 software-testing test-evidence
+src/spec/generator/collector.ts:39: * @standard ISO-19011:2018 §6.4.6 audit-evidence visual-evidence
+src/spec/generator/e2e.ts:24: * @standard ISO/IEC-29119:2022 software-testing test-evidence
+src/spec/generator/e2e.ts:25: * @standard ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
 src/spec/generator/extractor.ts:13: *   @standard      <body> <id> [free-text]
 src/spec/generator/extractor.ts:37: * @standard ISO/IEC 25010:2023 §5 modularity-and-maintainability
 src/spec/generator/extractor.ts:38: * @standard ISO/IEC 12207 software-life-cycle
-src/spec/generator/i18n-audit.ts:11: * @standard ISO 19011:2018 §6.4 audit-evidence
-src/spec/generator/i18n-audit.ts:12: * @standard ISO/IEC 25023:2016 §8 quality-measurement-functionality-completeness
-src/spec/generator/i18n-audit.ts:13: * @standard BCP-47 language-tag
-src/spec/generator/i18n-keys.ts:31: * @standard BCP-47 language-tag
-src/spec/generator/i18n-keys.ts:32: * @standard W3C i18n key-naming-best-practices
-src/spec/generator/i18n-stub-filler.ts:10: * @standard BCP-47 language-tag
-src/spec/generator/i18n-stub-filler.ts:9: * @standard ISO/IEC 25023:2016 §8 functional-completeness
+src/spec/generator/filler.ts:10: * @standard BCP-47 language-tag
+src/spec/generator/filler.ts:9: * @standard ISO/IEC 25023:2016 §8 functional-completeness
 src/spec/generator/index.ts:10: * @standard ISO/IEC 25010:2023 §5 modularity-and-maintainability
-src/spec/generator/marketing-page-generator.ts:40: * @standard W3C HTML5 §4 sectioning
-src/spec/generator/marketing-page-generator.ts:41: * @standard WCAG 2.2 §1.4.3 contrast-aa  (color tokens reserved CSS vars)
-src/spec/generator/marketing-page-generator.ts:42: * @standard WAI-ARIA 1.2 landmark-roles
-src/spec/generator/marketing-page-generator.ts:43: * @standard ISO/IEC-29119:2022 software-testing test-evidence (citations preserved)
+src/spec/generator/keys.ts:31: * @standard BCP-47 language-tag
+src/spec/generator/keys.ts:32: * @standard W3C i18n key-naming-best-practices
+src/spec/generator/marketing.ts:40: * @standard W3C HTML5 §4 sectioning
+src/spec/generator/marketing.ts:41: * @standard WCAG 2.2 §1.4.3 contrast-aa  (color tokens reserved CSS vars)
+src/spec/generator/marketing.ts:42: * @standard WAI-ARIA 1.2 landmark-roles
+src/spec/generator/marketing.ts:43: * @standard ISO/IEC-29119:2022 software-testing test-evidence (citations preserved)
 src/spec/generator/multimedia.ts:30: * @standard ISO/IEC-29119:2022 software-testing test-evidence
 src/spec/generator/multimedia.ts:31: * @standard ISO-19011:2018 §6.4.6 audit-evidence visual-evidence
 src/spec/generator/multimedia.ts:32: * @standard W3C HTML5 video + img + figure
+src/spec/generator/scaffold.ts:158: * @standard ${chain.standards.join('\n * @standard ')}
+src/spec/generator/scaffold.ts:248: * @standard ${chain.standards.join('\n * @standard ')}
+src/spec/generator/scaffold.ts:28: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/spec/generator/seed.ts:179: * @standard ${chain.standards.join('\n * @standard ')}
 src/spec/generator/seed.ts:34: * @standard ISO/IEC 25010:2023 §5.4 reusability
 src/spec/generator/templates.ts:23: * @standard ICU-MessageFormat (template grammar — adopted via Mustache)
 src/spec/generator/templates.ts:24: * @standard W3C i18n composable-translations
 src/spec/generator/templates.ts:25: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
-src/spec/generator/test-generator.ts:158: * @standard ${chain.standards.join('\n * @standard ')}
-src/spec/generator/test-generator.ts:248: * @standard ${chain.standards.join('\n * @standard ')}
-src/spec/generator/test-generator.ts:28: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/spec/generator/translation.ts:69: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
 src/spec/generator/translation.ts:70: * @standard ISO/IEC 12207 software-life-cycle (single-source-of-truth)
 src/spec/generator/translation.ts:71: * @standard BCP-47 language-tag
@@ -2722,10 +2722,10 @@ src/storage/redundancy/index.ts:8: * @standard ISO/IEC 9075-2:2016 §4.15.10 (wh
 src/stream/index.ts:45: * @standard ReactiveX / W3C Streams API (AsyncIterable surface)
 src/stream/index.ts:46: * @standard ISO/IEC 25010:2023 §5.2 performance — throughput
 src/stream/index.ts:47: * @standard Lamport 1978 — distributed-system causal ordering
-src/subscription/gate/index.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
-src/subscription/gate/index.test.ts:5: * @standard NIST INCITS-359-2012 role-based-access-control
 src/subscription/gate/index.ts:12: * @standard NIST INCITS-359-2012 role-based-access-control
 src/subscription/gate/index.ts:214: * @standard NIST INCITS-359-2012 role-based-access-control
+src/subscription/gate/test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
+src/subscription/gate/test.ts:5: * @standard NIST INCITS-359-2012 role-based-access-control
 src/subscription/plans/index.ts:9: * @standard ISO-4217:2015 currency-codes
 src/subscription/plans/subscriptions/hooks/emitLifecycleEvents.ts:23: * @standard ISO-4217:2015 currency-codes
 src/subscription/plans/subscriptions/hooks/emitLifecycleEvents.ts:24: * @standard ISO-8601-1:2019 date-time period-boundaries
@@ -3512,10 +3512,10 @@ src/security/header/index.ts:4: * @rfc 6797 hsts
 src/seed/index.ts:7: * @rfc 9110 http-semantics seed-endpoint
 src/seeding/seedSubscriptionPlans.ts:9: * @rfc 3986 uri syntax-of-slug
 src/shareds/documentPreviewAdmin.ts:14: * @rfc 3986 uri preview-url-construction
+src/spec/generator/audit.ts:14: * @rfc 8259 json
 src/spec/generator/extractor.ts:18: *   @rfc           <id> [free-text]             ← body inferred as 'RFC'
-src/spec/generator/i18n-audit.ts:14: * @rfc 8259 json
-src/spec/generator/i18n-keys.ts:33: * @rfc 8259 json
-src/spec/generator/i18n-stub-filler.ts:11: * @rfc 8259 json
+src/spec/generator/filler.ts:11: * @rfc 8259 json
+src/spec/generator/keys.ts:33: * @rfc 8259 json
 src/standards/catalogue.test.ts:9: * @rfc 9562 content-uuid (every standard is content-addressed)
 src/standards/catalogue.ts:13: * @rfc 9562 content-uuid (each standard row is content-addressed)
 src/standards/emit.ts:10: * @rfc 9562 content-uuid (each standard is content-addressed)
@@ -4096,15 +4096,15 @@ src/shareds/versionedDrafts.ts:10: * @compliance SOX §404 internal-controls rec
 src/shareds/versionedDrafts.ts:11: * @compliance GDPR Art.5(1)(e) storage-limitation maxPerDoc-cap
 src/shares/index.ts:33: * @compliance GDPR Article 32(1)(b) ongoing-confidentiality
 src/shares/index.ts:34: * @compliance SOX §404 access-controls audit-evidenced-via-chain
-src/spec/generator/evidence-collector.ts:40: * @compliance SOX §404 process-walk-through-controls
+src/spec/generator/collector.ts:40: * @compliance SOX §404 process-walk-through-controls
 src/spec/generator/extractor.ts:15: *   @compliance    <body> <id> [free-text]      ← alias for @standard
-src/spec/generator/marketing-page-generator.ts:44: * @compliance SOX §404 process-walk-through-controls
+src/spec/generator/marketing.ts:44: * @compliance SOX §404 process-walk-through-controls
 src/spec/generator/multimedia.ts:33: * @compliance SOX §404 process-walk-through-controls
 src/spec/generator/multimedia.ts:34: * @compliance ISO-27001 A.5.36 conformance-with-policies
 src/standard/collection/hook/index.ts:15: * @compliance SOX §404 internal-controls provenance
-src/subscription/gate/index.test.ts:10: * @compliance SOC-2 CC6.1 logical-access-controls
 src/subscription/gate/index.ts:14: * @compliance SOC-2 CC6.1 logical-access-controls
 src/subscription/gate/index.ts:216: * @compliance SOC-2 CC6.1 logical-access-controls
+src/subscription/gate/test.ts:10: * @compliance SOC-2 CC6.1 logical-access-controls
 src/subscription/plans/index.ts:12: * @compliance SOX §404 internal-controls
 src/subscription/plans/subscriptions/hooks/emitLifecycleEvents.ts:30: * @compliance SOX §404 internal-controls revenue-recognition
 src/subscription/plans/subscriptions/hooks/encryptSensitiveFields.ts:10: * @compliance GDPR Art.32(1)(a) pseudonymization-and-encryption
@@ -4782,12 +4782,12 @@ src/shared/field.ts:13: * @accounting IFRS IAS-1 presentation-of-financial-state
 src/shared/field.ts:240: * @accounting IAS-1 financial-position reporting-entities
 src/shared/index.ts:24: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/spec/generator/extractor.ts:14: *   @accounting    <body> <id> [free-text]      ← alias for @standard
-src/subscription/gate/index.test.ts:6: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
-src/subscription/gate/index.test.ts:7: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/subscription/gate/index.test.ts:8: * @accounting US-GAAP ASC-340-40 deferred-contract-costs
 src/subscription/gate/index.ts:10: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/subscription/gate/index.ts:11: * @accounting US-GAAP ASC-340-40 deferred-contract-costs
 src/subscription/gate/index.ts:9: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers performance-obligation
+src/subscription/gate/test.ts:6: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/subscription/gate/test.ts:7: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/subscription/gate/test.ts:8: * @accounting US-GAAP ASC-340-40 deferred-contract-costs
 src/subscription/plans/hooks/index.ts:10: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/subscription/plans/hooks/index.ts:9: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/subscription/plans/index.ts:10: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers performance-obligation
@@ -5363,9 +5363,9 @@ src/site/tenant/where/index.ts:5: * @security ISO-27001 A.5.23 information-secur
 src/site/tenant/where/index.ts:6: * @security ISO-27002 §8.3 information-access-restriction
 src/spec/generator/extractor.ts:17: *   @security      <body> <id> [free-text]      ← alias for @standard
 src/standard/collection/hook/index.ts:14: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation tenant-field
-src/subscription/gate/index.test.ts:9: * @security ISO-27002 §5.15 access-control
 src/subscription/gate/index.ts:13: * @security ISO-27002 §5.15 access-control
 src/subscription/gate/index.ts:215: * @security ISO-27002 §5.15 access-control feature-entitlement
+src/subscription/gate/test.ts:9: * @security ISO-27002 §5.15 access-control
 src/subscription/plans/subscriptions/hooks/encryptSensitiveFields.ts:11: * @security ISO-27002 §8.24 use-of-cryptography
 src/subscription/plans/subscriptions/hooks/encryptSensitiveFields.ts:12: * @security ISO-27001 A.8.24 use-of-cryptography
 src/subscription/plans/subscriptions/index.ts:20: * @security ISO-27002 §8.24 use-of-cryptography
@@ -5804,8 +5804,8 @@ src/equilibrium/index.ts:14: * @audit detailed-balance residual |fwd·pᵢ − r
 src/error/codedError.ts:11: * @audit ISO-19011:2018 audit-trail
 src/error/index.ts:12: * @audit ISO-19011:2018 audit-trail error-tracing
 src/error/registry.ts:11: * @audit ISO-19011:2018 audit-trail
-src/error/uuid/index.test.ts:16: * @audit Conservation Law 64 errors-are-first-class-uuids
 src/error/uuid/index.ts:51: * @audit Conservation Law 64 errors-are-first-class-uuids
+src/error/uuid/test.ts:16: * @audit Conservation Law 64 errors-are-first-class-uuids
 src/etsi/en/319/142/evidence-attestation.test.ts:9: * @audit ISO-19011:2018 audit-trail visual-evidence sox-evidence-pack
 src/etsi/en/319/142/profile.ts:25: * @audit ISO-19011:2018 audit-trail signature-evidence
 src/etsi/en/319/142/signature-dictionary.test.ts:8: * @audit ISO-19011:2018 audit-trail signature-evidence
@@ -6141,10 +6141,10 @@ src/quantum/translator/index.ts:19: * @audit composed from ../../translator + ..
 src/quantum/uuid/index.ts:12: * @audit collapse + no-cloning computed on live matrix; never hand-asserted
 src/quantum/vocabulary/index.ts:10: * @audit the pull is computed over the live matrix + vocabulary; never hand-asserted
 src/quantum/word/index.ts:12: * @audit composed from @/word · @/digit · @/quantum · @/path; TORUS_BITS from lawful binding
-src/query/fingerprint/index.test.ts:20: * @audit Conservation Law 8 + Law 47 (content uuid at the type level)
 src/query/fingerprint/index.ts:60: * @audit Conservation Law 8  content-addressable integrity (the queryUuid itself)
 src/query/fingerprint/index.ts:61: * @audit Conservation Law 47 type uuid (ContentUuid<SqlQuery> is the type-level brand)
 src/query/fingerprint/index.ts:62: * @audit Conservation Law 53 self-referential-closure (cached query result is the search-index fallback)
+src/query/fingerprint/test.ts:20: * @audit Conservation Law 8 + Law 47 (content uuid at the type level)
 src/readings/index.ts:11: * @audit boundary checks delegate to quantum/device; never hand-asserted sensing
 src/readme/entropy.ts:14: * @audit every line derived from folder model + cross impurities — never hand-set
 src/readme/quantum-thinking.ts:8: * @audit pure transform; load reads cached path ledger + live atom facets
@@ -6176,8 +6176,8 @@ src/saf/t/export/service/source-documents.test.ts:6: * @audit ISO-19011:2018 aud
 src/saf/t/export/service/xml.test.ts:9: * @audit ISO-19011:2018 audit-trail
 src/saf/t/types/index.ts:18: * @audit ISO-19011:2018 audit-trail tax-authority-audit-file
 src/saf/t/types/test.ts:10: * @audit ISO-19011:2018 audit-trail
-src/safety/mode/index.test.ts:15: * @audit Conservation Law 58 uuid-self-protection
 src/safety/mode/index.ts:45: * @audit Conservation Law 58 uuid-self-protection
+src/safety/mode/test.ts:15: * @audit Conservation Law 58 uuid-self-protection
 src/sale/audit-file.ts:19: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/sale/daily-report.ts:15: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/sale/event/index.ts:9: * @audit ISO-19011:2018 audit-trail event-driven
@@ -6234,14 +6234,14 @@ src/shred/index.ts:18: * @audit content-uuid over the CipherEnvelope ⇒ shred p
 src/singularity/index.ts:24: * @audit composed from the live matrix mass + the double-torus cost; never hand-asserted
 src/skin/index.ts:23: * @audit computed (selective permeability · turnover cycle · negative-feedback convergence)
 src/spec/extract.ts:16: * @audit ISO-19011:2018 §6.4.6 audit-evidence-spec-traceability
-src/spec/generator/chain-registry-generator.ts:17: * @audit ISO 19011:2018 §6.4.6 spec-traceability
-src/spec/generator/e2e-spec-extractor.ts:26: * @audit single-source-of-truth: spec ↔ generated captions
-src/spec/generator/evidence-collector.ts:41: * @audit ISO-27001 A.5.36 conformance-with-policies
+src/spec/generator/chain.ts:17: * @audit ISO 19011:2018 §6.4.6 spec-traceability
+src/spec/generator/collector.ts:41: * @audit ISO-27001 A.5.36 conformance-with-policies
+src/spec/generator/e2e.ts:26: * @audit single-source-of-truth: spec ↔ generated captions
 src/spec/generator/extractor.ts:16: *   @audit         <body> <id> [free-text]      ← alias for @standard
 src/spec/generator/index.ts:11: * @audit ISO 19011:2018 §6.4 audit-evidence-spec-traceability
-src/spec/generator/marketing-page-generator.ts:45: * @audit ISO-19011:2018 §6.4.6 audit-evidence visual-evidence
+src/spec/generator/marketing.ts:45: * @audit ISO-19011:2018 §6.4.6 audit-evidence visual-evidence
+src/spec/generator/scaffold.ts:29: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
 src/spec/generator/seed.ts:35: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
-src/spec/generator/test-generator.ts:29: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
 src/spectrum/index.ts:17: * @audit lines computed from every horo rung-pair via ../leap, deduped by the symmetric binding-uuid
 src/stack/index.ts:17: * @audit the path is a verified palindrome; the new state is the input folded through every hop, computed
 src/standard/collection/hook/index.ts:13: * @audit ISO-19011:2018 audit-trail
@@ -6325,19 +6325,19 @@ src/utility/bank-reconciliation-report.test.ts:26: * @audit ISO-19011:2018 audit
 src/utility/calculations.ts:200: * @audit ISO-19011:2018 audit-trail aging-of-outstanding-items
 src/utility/depreciation-methods.test.ts:16: * @audit ISO-19011:2018 audit-trail period-expense-evidence
 src/utility/period-lock.ts:21: * @audit ISO-19011:2018 audit-trail
-src/uuid/chain/index.test.ts:16: * @audit Conservation Law 60 binding-uuid-is-blockchain-leaf
 src/uuid/chain/index.ts:46: * @audit Conservation Law 8 + 47 + 55 + 57 + 60
+src/uuid/chain/test.ts:16: * @audit Conservation Law 60 binding-uuid-is-blockchain-leaf
 src/uuid/format/coverage.ts:20: * @audit Conservation Law 61 + 62
 src/uuid/format/index.test.ts:18: * @audit Conservation Law 61 uuid-carries-features
 src/uuid/format/index.ts:60: * @audit Conservation Law 61 uuid-carries-features
 src/uuid/governance/index.test.ts:16: * @audit Conservation Law 63 uuid-self-governance
 src/uuid/governance/index.ts:47: * @audit Conservation Law 63 uuid-self-governance
-src/uuid/kv/index.test.ts:18: * @audit Conservation Law 8 + 47 (uuid family at both sides of the pair)
 src/uuid/kv/index.ts:55: * @audit Conservation Law 8 content-addressable integrity
 src/uuid/kv/index.ts:56: * @audit Conservation Law 47 type uuid
 src/uuid/kv/index.ts:57: * @audit Conservation Law 53 self-referential-closure (identity element
 src/uuid/kv/index.ts:59: * @audit Conservation Law 54 universal identity element
 src/uuid/kv/index.ts:60: * @audit Conservation Law 56 dynamic-trust (chain-of-bindings supersedes
+src/uuid/kv/test.ts:18: * @audit Conservation Law 8 + 47 (uuid family at both sides of the pair)
 src/uuid/llm/index.ts:24: * @audit Conservation Law 61 (uuid carries its own features) · 62 (coverage)
 src/uuid/matrix/generated.ts:11: * @audit aura gap=0 parity (.claude/skills/aura/scan.mjs)
 src/uuid/share/index.test.ts:17: * @audit Conservation Law 59 uuid-based-sharing-with-rbac

@@ -51,14 +51,14 @@ export function resolveLocalized(loc: LocalizedString, requested?: string): stri
 /**
  * Helper for tool authors. Bind a tool key once; the returned object
  * exposes `desc(localized)` + `err(localized)` that mark up the strings
- * for the i18n-audit invariant. At runtime, `desc` returns the resolved
+ * for the audit invariant. At runtime, `desc` returns the resolved
  * string for the catalog (or the localized record itself for the
  * over-the-wire MCP catalog which preserves the full map).
  */
 export function makeToolI18n(toolKey: string): {
   desc: (loc: LocalizedString) => string
   err:  (loc: LocalizedString, requestedLocale?: string) => string
-  /** Returns the raw LocalizedString — used by the i18n-audit tool. */
+  /** Returns the raw LocalizedString — used by the audit tool. */
   raw:  (loc: LocalizedString) => LocalizedString
   toolKey: string
 } {
@@ -76,7 +76,7 @@ export function makeToolI18n(toolKey: string): {
 }
 
 /**
- * Slice ZZZZZZZZ — invariant data source. The i18n-audit tool reads
+ * Slice ZZZZZZZZ — invariant data source. The audit tool reads
  * this to compute "which tools have ≥ N translations?". For now,
  * tools register their LocalizedString here via `registerToolI18n`.
  * In a later cut, build-time codegen scans every tool file and

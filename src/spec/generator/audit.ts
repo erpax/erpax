@@ -15,12 +15,12 @@
  */
 
 import type { SpecCorpus } from './types'
-import type { EvidenceCorpus } from './evidence-collector'
+import type { EvidenceCorpus } from './collector'
 import {
   collectionKeys, chainKeys, chainStepKey,
   workflowKeys, workflowStepKey, defaultEnglishFor,
   STUB_PREFIX,
-} from './i18n-keys'
+} from './keys'
 
 /** A single missing-key row. */
 export interface MissingKey {

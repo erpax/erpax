@@ -36,7 +36,7 @@
  */
 
 import type { SpecCorpus, SpecExample } from './types'
-import { generateChains } from './chain-registry-generator'
+import { generateChains } from './chain'
 
 /** Output of `generateSeed()` — the rendered TS source + provenance. */
 export interface GeneratedSeed {

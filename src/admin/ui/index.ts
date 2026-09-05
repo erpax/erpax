@@ -1,4 +1,4 @@
-export { ERPAX_LIST_COLUMNS, erpaxMetaOf, type ErpaxCollectionMeta } from './collection-meta'
+export { ERPAX_LIST_COLUMNS, erpaxMetaOf, type ErpaxCollectionMeta } from './meta'
 export {
   CORPUS_JOURNAL_SAMPLE_PATHS,
   CORPUS_ROLLUP_CACHE_TTL_MS,
@@ -15,7 +15,7 @@ export {
   type CorpusDashboardShell,
   type CorpusRollupCacheEntry,
   type LoadCorpusEntropyRollupOpts,
-} from './corpus-rollup'
+} from './rollup'
 export {
   fieldAccessFromComputed,
   fieldVisibleForUpdate,

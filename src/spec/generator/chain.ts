@@ -172,6 +172,6 @@ ${stepLines}
     seedFile: '${chain.seedFile}',
     testFile: '${chain.testFile}',
     socraticCheck: { canDo: true, makesSense: true, wired: 'yes', isStandard: true,
-      note: 'Generated from JSDoc spec via spec-generator/chain-registry-generator.ts.' },
+      note: 'Generated from JSDoc spec via spec-generator/chain.ts.' },
   },`
 }

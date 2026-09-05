@@ -7,7 +7,7 @@
  *
  * Makes ERPax tangible. Auto-seeds Payload's `pages` collection from:
  *   1. The marketing/ directory's per-locale HTML files (multimedia
- *      seeds — output of CCCCC-cut2's marketing-page-generator,
+ *      seeds — output of CCCCC-cut2's marketing,
  *      which derives from e2e Playwright recordings)
  *   2. The live spec corpus (every CollectionSpec / Chain / Agent /
  *      Role / Standard becomes a browsable Page)

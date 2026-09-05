@@ -8162,15 +8162,15 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/spec/generator/i18n-audit.ts",
+        "path": "src/spec/generator/audit.ts",
         "section": ""
       },
       {
-        "path": "src/spec/generator/i18n-keys.ts",
+        "path": "src/spec/generator/keys.ts",
         "section": ""
       },
       {
-        "path": "src/spec/generator/i18n-stub-filler.ts",
+        "path": "src/spec/generator/filler.ts",
         "section": ""
       },
       {

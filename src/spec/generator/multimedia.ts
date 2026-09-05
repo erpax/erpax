@@ -4,7 +4,7 @@
  * multimedia manifests.
  *
  * Slice CCCCC-cut2 (2026-05-11): consumes the EvidenceCorpus produced
- * by `evidence-collector.ts` and emits, per workflow:
+ * by `collector.ts` and emits, per workflow:
  *
  *   1. HTML snippet — `<video>` hero + per-step screenshot storyboard
  *      + Playwright trace download link. Lives at
@@ -34,11 +34,11 @@
  * @compliance ISO-27001 A.5.36 conformance-with-policies
  */
 
-import type { EvidenceCorpus, WorkflowEvidence } from './evidence-collector'
+import type { EvidenceCorpus, WorkflowEvidence } from './collector'
 import {
   workflowKeys, workflowStepKey, chainKeys, humaniseSlug,
   STUB_PREFIX,
-} from './i18n-keys'
+} from './keys'
 
 /**
  * Translator contract — a function that resolves an i18n key to its

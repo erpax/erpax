@@ -1,6 +1,6 @@
 import { exactRound } from '@/algebra'
 /**
- * admin/ui/corpus-rollup — corpus entropy/seal metrics for the admin dashboard.
+ * admin/ui/rollup — corpus entropy/seal metrics for the admin dashboard.
  *
  * Pure rollup from readme deriveModel — no hand-set numbers.
  * Path-keyed journal samples via `erpaxSelfAccount` (eb currency, path = account code).

@@ -18,29 +18,29 @@ export type {
 } from './types'
 
 export { extractFileSpec, extractCorpus } from './extractor'
-export type { GeneratedChain, GeneratedChainStep, GenerateOptions } from './chain-registry-generator'
-export { generateChains, renderChainAsTs } from './chain-registry-generator'
+export type { GeneratedChain, GeneratedChainStep, GenerateOptions } from './chain'
+export { generateChains, renderChainAsTs } from './chain'
 
 export type { GeneratedSeed } from './seed'
 export { generateSeed } from './seed'
 
-export type { GeneratedTest } from './test-generator'
-export { generateTest } from './test-generator'
+export type { GeneratedTest } from './scaffold'
+export { generateTest } from './scaffold'
 
-export type { EvidenceArtefact, WorkflowEvidence, EvidenceCorpus } from './evidence-collector'
-export { collectEvidence } from './evidence-collector'
+export type { EvidenceArtefact, WorkflowEvidence, EvidenceCorpus } from './collector'
+export { collectEvidence } from './collector'
 
 export type { GeneratedMultimedia, MultimediaManifest, PdfaEvidenceBlock, GenerateMultimediaOptions, Translator, StrictTranslationReporter } from './multimedia'
 export { generateMultimediaForWorkflow, generateAllMultimedia, chainIdForWorkflow, createStrictReporter } from './multimedia'
 
-export type { CollectionKeys, ChainKeys, WorkflowKeys } from './i18n-keys'
-export { collectionKeys, chainKeys, chainStepKey, workflowKeys, workflowStepKey, defaultEnglishFor, humaniseSlug, isStub, STUB_PREFIX } from './i18n-keys'
+export type { CollectionKeys, ChainKeys, WorkflowKeys } from './keys'
+export { collectionKeys, chainKeys, chainStepKey, workflowKeys, workflowStepKey, defaultEnglishFor, humaniseSlug, isStub, STUB_PREFIX } from './keys'
 
-export type { MissingKey, I18nAuditReport, Bundles } from './i18n-audit'
-export { expectedKeys, auditI18n } from './i18n-audit'
+export type { MissingKey, I18nAuditReport, Bundles } from './audit'
+export { expectedKeys, auditI18n } from './audit'
 
-export type { StubFillResult } from './i18n-stub-filler'
-export { fillStubs } from './i18n-stub-filler'
+export type { StubFillResult } from './filler'
+export { fillStubs } from './filler'
 
 export type { GeneratedTranslations } from './translation'
 export { generateTranslations, pluraliseEnglish } from './translation'
@@ -48,10 +48,10 @@ export { generateTranslations, pluraliseEnglish } from './translation'
 export type { SpecTypeKind } from './templates'
 export { SPEC_TEMPLATES, templateKey, compose, allTemplateKeys } from './templates'
 
-export type { E2eSpecCorpus, E2eWorkflowSpec, E2eStep, UxGap, GapSeverity } from './e2e-spec-extractor'
-export { extractE2eCorpus, parseE2eSpec } from './e2e-spec-extractor'
+export type { E2eSpecCorpus, E2eWorkflowSpec, E2eStep, UxGap, GapSeverity } from './e2e'
+export { extractE2eCorpus, parseE2eSpec } from './e2e'
 
-export type { GeneratedMarketingPage, MarketingPageOptions } from './marketing-page-generator'
-export { generateMarketingPage, generateAllMarketingPages } from './marketing-page-generator'
+export type { GeneratedMarketingPage, MarketingPageOptions } from './marketing'
+export { generateMarketingPage, generateAllMarketingPages } from './marketing'
 
-export { translatePredicate, generateChainTestFromRegistry } from './test-generator'
+export { translatePredicate, generateChainTestFromRegistry } from './scaffold'

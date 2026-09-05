@@ -1,7 +1,7 @@
 /**
  * Translation generator — emit per-locale translation rows from the
  * SpecCorpus + EvidenceCorpus, mirroring the spec-derivation logic
- * already used by `test-generator.ts` and `chain-registry-generator.ts`.
+ * already used by `scaffold.ts` and `chain.ts`.
  *
  * Slice CCCCC-cut2-i18n (2026-05-11): captions for the multilingual
  * surface (admin labels, chain registry titles, walkthrough captions,
@@ -73,12 +73,12 @@
  */
 
 import type { SpecCorpus, CollectionSpec } from './types'
-import type { EvidenceCorpus } from './evidence-collector'
-import type { E2eSpecCorpus } from './e2e-spec-extractor'
+import type { EvidenceCorpus } from './collector'
+import type { E2eSpecCorpus } from './e2e'
 import {
   collectionKeys, chainKeys, chainStepKey,
   workflowKeys, workflowStepKey, humaniseSlug,
-} from './i18n-keys'
+} from './keys'
 import { SPEC_TEMPLATES, templateKey, compose, allTemplateKeys, type SpecTypeKind } from './templates'
 
 /** Output of `generateTranslations()` — flat key→default-English map. */

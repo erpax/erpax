@@ -1,5 +1,5 @@
 /**
- * admin/ui/collection-meta — atom path · horo · seal from collection config.
+ * admin/ui/meta — atom path · horo · seal from collection config.
  */
 import { accountCodeOf } from '@/accounting/coa'
 import { COLLECTION_DIAMOND_KEY } from '@/factory/collection'

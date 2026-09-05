@@ -16,7 +16,7 @@
  *      meaningful logical captions" → spec-templates.ts collapses the
  *      translator surface to ~14 type templates × 30 locales.
  *   5. "the multimedia should show what is happening and there is no
- *      better place from the codebase" → e2e-spec-extractor harvests
+ *      better place from the codebase" → e2e harvests
  *      `captureWorkflowStep(... 'description')` from the test files.
  *   6. "all this packed as a marketing tool to sell ERPax" → THIS file.
  *
@@ -46,11 +46,11 @@
  */
 
 import type { SpecCorpus, CollectionSpec, SpecStandard } from './types'
-import type { EvidenceCorpus, WorkflowEvidence } from './evidence-collector'
-import type { E2eSpecCorpus, E2eWorkflowSpec, UxGap } from './e2e-spec-extractor'
+import type { EvidenceCorpus, WorkflowEvidence } from './collector'
+import type { E2eSpecCorpus, E2eWorkflowSpec, UxGap } from './e2e'
 import type { Translator } from './multimedia'
 import { chainIdForWorkflow } from './multimedia'
-import { workflowKeys, chainKeys, humaniseSlug } from './i18n-keys'
+import { workflowKeys, chainKeys, humaniseSlug } from './keys'
 
 export interface MarketingPageOptions {
   readonly locale: string
