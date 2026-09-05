@@ -39,6 +39,13 @@
       "bucket_name": "erpax",
       "preview_bucket_name": "erpax",
     },
+    // The OpenNext incremental cache reads this EXACT binding name; `R2` is not a substitute.
+    // Same bucket, prefixed — an ISR entry and an upload must not collide in one keyspace.
+    {
+      "binding": "NEXT_INC_CACHE_R2_BUCKET",
+      "bucket_name": "erpax",
+      "preview_bucket_name": "erpax",
+    },
   ],
   // ─── Slice WWW (2026-05-10) — Cloudflare AI bindings ───────────────
   // All AI inferences MUST go through `src/services/ai/cloudflare-ai.ts`

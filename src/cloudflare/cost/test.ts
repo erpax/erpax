@@ -7,6 +7,7 @@ import {
   DEFAULT_CF_PRICING,
   THEORETICAL_FLOOR,
   LEVERS,
+  staleLevers,
   type CfProfile,
 } from './index'
 import { efficiency } from '@/cost'
@@ -50,13 +51,34 @@ describe('cloudflare/cost — the billable surface, priced honestly', () => {
     expect(cloudflareCost({}).monthlyUsd).toBe(5) // default base still applies unchanged
   })
 
-  it('the levers are DECLARED and grounded — the bundle is first, each aims at a real dimension', () => {
-    expect(LEVERS[0]!.lever).toMatch(/80MB|skills\.index|bundle/)
-    expect(LEVERS[0]!.dimension).toBe('workers.cpuMs')
+  // The first version pinned the top lever as `80MB skills.index` — and that file is 269 BYTES, a CI
+  // stub, folded out of the Worker besides. The test was holding the stale claim in place. A lever
+  // now READS the tree, and one that no longer applies is reported rather than left ranked.
+  it('every lever checks the tree instead of remembering it', () => {
+    for (const l of LEVERS) {
+      expect(typeof l.holds).toBe('function')
+      expect(l.observed(process.cwd()).length).toBeGreaterThan(0)
+      expect(l.dimension.length).toBeGreaterThan(0)
+    }
     const dims = new Set(LEVERS.map((l) => l.dimension))
-    expect(dims.has('ai.neurons')).toBe(true) // AI_CACHE hit-rate
-    expect(dims.has('r2.egressGb')).toBe(true) // free egress
-    for (const l of LEVERS) expect(l.evidence.length).toBeGreaterThan(0) // every lever cites an in-repo fact
+    expect(dims.has('ai.neurons')).toBe(true)
+    expect(dims.has('r2.egressGb')).toBe(true)
+    expect(dims.has('workers.cpuMs')).toBe(true)
+  })
+
+  it('reports the ISR lever as TAKEN, because open-next.config.ts now sets an incrementalCache', () => {
+    const isr = LEVERS.find((l) => l.dimension === 'workers.cpuMs')!
+    expect(isr.holds(process.cwd())).toBe(false)
+    expect(isr.observed(process.cwd())).toMatch(/incrementalCache/)
+    expect(staleLevers(process.cwd()).some((x) => x.lever === isr.lever)).toBe(true)
+  })
+
+  // A current finding, stated so it can fail: five DO namespaces are declared and no class
+  // implements one. Write a class extending DurableObject and this goes red, correctly.
+  it('reports the Durable Object lever as still open — nothing in src extends DurableObject', () => {
+    const dobj = LEVERS.find((l) => l.dimension === 'durableObjects.gbSeconds')!
+    expect(dobj.holds(process.cwd())).toBe(true)
+    expect(staleLevers(process.cwd()).some((x) => x.lever === dobj.lever)).toBe(false)
   })
 
   // PRICES REPLACED WITH THEOREMS. The conjecture was "they almost perfectly match, revealing the backend."

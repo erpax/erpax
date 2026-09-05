@@ -35,6 +35,48 @@ version: 2
 
 Every binding in `wrangler.jsonc` is a **billable dimension**. This atom prices them and feeds the total into [[cost]]'s law — `efficiency = output / cost`, `kind: 'money'` — so Cloudflare spend is compared against the same law as tokens, energy, and labour, and a tuning is *better* only if it raises output-per-dollar (`moreEfficient`).
 
+
+## The lever that was ranked first did not exist
+
+`LEVERS[0]` said *shrink the 80MB skills.index.ts bundle*, with the evidence typed beside it. The
+file is **269 bytes** — a CI stub, and folded out of the Worker besides. A corpus optimising against
+that ranking would have spent its effort on a dimension that had already gone, which is worse than
+having no ranking: the top of an ordered list is where the money is, and this one pointed nowhere.
+
+[[rules]]/drift gates this exact class — prose stating a byte size an order of scale from the file it
+names — and could not see it, because that gate reads **prose files** and the claim lived in a
+TypeScript string. The atom's own test was holding it in place besides, asserting
+`LEVERS[0].lever` matched `/80MB|skills\.index|bundle/`.
+
+So the number was not retyped. Every lever now carries `holds(cwd)` and `observed(cwd)`, which read
+the tree, and `staleLevers` reports the ones no longer worth recommending.
+
+## What the board says today
+
+| dimension | state | read from |
+| --- | --- | --- |
+| `workers.cpuMs` | **taken** | `open-next.config.ts` now sets an `incrementalCache` |
+| `ai.neurons` | open | KV `AI_CACHE` is bound |
+| `r2.egressGb` | open | `R2` is bound; egress priced at 0 |
+| `d1.rowsRead` | open | `D1` is bound and backs every query path |
+| `durableObjects.gbSeconds` | open | five namespaces declared, **no class extends DurableObject** |
+
+The first row is what this session actually changed. `defineCloudflareConfig({})` was empty, so no
+incremental cache existed and every ISR/SSG hit re-rendered inside the Worker — CPU-ms is the
+Workers cost driver, and re-rendering an unchanged page pays for the same render twice. R2 and
+`WORKER_SELF_REFERENCE` were already bound; only the config that uses them was missing, which is
+why the cost was invisible. Nothing was broken. The cheap path simply never ran.
+
+The last row is a defect, not a saving: the boot warns on every start that `RateLimiter`,
+`TenantQuotaCounter`, `ErpaxStateDO`, `JobLock` and `AuditChain` name classes the Worker does not
+export. Any call to one fails at runtime.
+
+**Honest boundary.** A configured cache is not a measured saving. These are levers and their
+evidence, not telemetry — the bill is the truth, and no figure here is a claim about it. The
+detector for the DurableObject row is PARSED (`ts.isClassDeclaration` with an `extends` heritage
+clause) after a substring form matched its own source: the needle appeared inside the call searching
+for it, and in the test's name.
+
 ## What it computes, and what it refuses to
 
 `cloudflareCost(profile)` meters each dimension — nothing billable below its included tier, linear above — and sums a monthly total. `cloudEfficiency(output, profile)` plugs that into the one law. But it makes **two honest refusals**, because a cost model that asserted a number it could not source would be the exact fabrication this corpus exists to block:

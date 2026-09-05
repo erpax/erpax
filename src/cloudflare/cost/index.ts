@@ -1,3 +1,6 @@
+import ts from 'typescript'
+import { join } from 'node:path'
+import { readFileSync, readdirSync, statSync } from 'node:fs'
 import { exactMax, exactRound } from '@/algebra'
 /**
  * cloudflare/cost — erpax's real Cloudflare billable surface, priced, fed into the one efficiency law.
@@ -160,44 +163,151 @@ export function cloudEfficiency(output: Output, profile: CfProfile, p: CfPricing
  * The fine-tune levers — DECLARED (transparent, arguable), each aimed at a real billable dimension and grounded
  * in an in-repo fact, never a guess. Ranked by leverage; the bundle is first because it taxes EVERY cold start.
  */
-export const LEVERS: readonly { readonly lever: string; readonly dimension: string; readonly why: string; readonly evidence: string }[] = [
+export interface Lever {
+  readonly lever: string
+  readonly dimension: string
+  readonly why: string
+  /** Reads the tree. A lever whose evidence no longer holds is not a lever — it is a memory. */
+  readonly holds: (cwd: string) => boolean
+  /** What was seen when the evidence was checked, so a reader need not re-derive it. */
+  readonly observed: (cwd: string) => string
+}
+
+const bytesOf = (cwd: string, rel: string): number => {
+  try {
+    return statSync(join(cwd, rel)).size
+  } catch {
+    return 0
+  }
+}
+const textOf = (cwd: string, rel: string): string => {
+  try {
+    return readFileSync(join(cwd, rel), 'utf8')
+  } catch {
+    return ''
+  }
+}
+/**
+ * Does any class in `src` actually EXTEND DurableObject?
+ *
+ * Parsed, never matched. The substring form found a hit immediately — in this file, inside the call
+ * that searches for it, and again in the test's own name. A string is data ([[syntax]]), and a
+ * detector that reads its own source is the false positive [[rules]]/confine already paid for once.
+ */
+const hasDurableObjectClass = (cwd: string): boolean => {
+  const walk = (d: string): boolean => {
+    let entries: import('node:fs').Dirent[]
+    try {
+      entries = readdirSync(d, { withFileTypes: true })
+    } catch {
+      return false
+    }
+    for (const e of entries) {
+      if (e.name.startsWith('.') || e.name === 'node_modules') continue
+      const p = join(d, e.name)
+      if (e.isDirectory()) {
+        if (walk(p)) return true
+        continue
+      }
+      if (!/\.tsx?$/.test(e.name)) continue
+      let text = ''
+      try {
+        text = readFileSync(p, 'utf8')
+      } catch {
+        continue
+      }
+      if (!text.includes('DurableObject')) continue // cheap reject before the parse
+      const src = ts.createSourceFile(p, text, ts.ScriptTarget.ESNext, true)
+      let found = false
+      const visit = (n: ts.Node): void => {
+        if (found) return
+        if (ts.isClassDeclaration(n)) {
+          for (const h of n.heritageClauses ?? []) {
+            if (h.token !== ts.SyntaxKind.ExtendsKeyword) continue
+            for (const t of h.types) if (/(^|\.)DurableObject$/.test(t.expression.getText())) found = true
+          }
+        }
+        ts.forEachChild(n, visit)
+      }
+      visit(src)
+      if (found) return true
+    }
+    return false
+  }
+  return walk(join(cwd, 'src'))
+}
+
+/**
+ * The fine-tunes, each carrying evidence that READS THE TREE rather than remembering it.
+ *
+ * The first version stated its evidence as prose, and the top-ranked lever said
+ * `skills.index.ts is 80MB`. It is **269 bytes** — a CI stub, folded out of the Worker besides. A
+ * corpus optimising against that ranking would have spent its effort on a file that no longer
+ * exists at that size, which is worse than having no ranking: it is a confident wrong direction.
+ *
+ * [[rules]]/drift gates exactly this class — prose stating a byte size an order of scale from the
+ * file it names — and could not see it, because that gate reads PROSE files and this claim lived in
+ * a TypeScript string. So the fix is not to retype the number. Every lever now carries `holds(cwd)`,
+ * and `staleLevers` reports the ones the tree has moved past.
+ */
+export const LEVERS: readonly Lever[] = [
   {
-    lever: 'shrink/externalise the 80MB skills.index.ts bundle',
+    lever: 'persist ISR/SSG entries so a repeat hit is not re-rendered in the Worker',
     dimension: 'workers.cpuMs',
-    why: 'a Worker parses its bundle on every cold start; 80MB of inline JSON is cold-start CPU-ms billed at $0.02/M, and CPU-ms is the Workers cost driver — not wall time',
-    evidence: 'src/skill/router/skills.index.ts is 80MB; vitest.config.mts already externalises it because SWC "blows up" transforming it',
-  },
-  {
-    lever: 'prerender/ISR static routes so ASSETS serves them, not the Worker',
-    dimension: 'workers.requests',
-    why: 'a request served from the ASSETS binding costs no Worker request and no CPU-ms; OpenNext prerender moves hits off the priced path',
-    evidence: 'wrangler.jsonc binds ASSETS to .open-next/assets; open-next.config.ts controls prerender',
+    why: 'CPU-ms is the Workers cost driver, and re-rendering an unchanged page is paying for the same render twice; R2 holds the entry and the regional Cache API serves the repeat',
+    holds: (cwd) => !/incrementalCache\s*:/.test(textOf(cwd, 'open-next.config.ts')),
+    observed: (cwd) =>
+      /incrementalCache\s*:/.test(textOf(cwd, 'open-next.config.ts'))
+        ? 'open-next.config.ts sets incrementalCache — taken'
+        : 'open-next.config.ts sets NO incrementalCache: every ISR hit re-renders',
   },
   {
     lever: 'raise the AI_CACHE hit-rate so repeat inferences cost 0 neurons',
     dimension: 'ai.neurons',
     why: 'Workers AI bills in neurons; a KV cache hit returns the prior inference for a KV read (~$0.50/M) instead of a fresh neuron spend',
-    evidence: 'wrangler.jsonc binds KV AI_CACHE; src/ai/cloudflare-ai.ts is the single mediated call site',
+    holds: (cwd) => textOf(cwd, 'wrangler.jsonc').includes('AI_CACHE'),
+    observed: (cwd) => (textOf(cwd, 'wrangler.jsonc').includes('AI_CACHE') ? 'KV AI_CACHE is bound' : 'no AI_CACHE binding'),
   },
   {
-    lever: 'serve uploads/large assets from R2 (egress is $0), never proxied through Worker CPU',
+    lever: 'serve uploads and large assets from R2, never proxied through Worker CPU',
     dimension: 'r2.egressGb',
-    why: 'R2 egress is free — the one dimension priced at 0; bytes streamed from R2 avoid both egress and Worker CPU-ms',
-    evidence: 'wrangler.jsonc binds R2; DEFAULT_CF_PRICING.r2EgressGb.rate === 0',
+    why: 'R2 egress is the one dimension Cloudflare prices at 0; bytes streamed from R2 avoid both egress and Worker CPU-ms',
+    holds: (cwd) => textOf(cwd, 'wrangler.jsonc').includes('"R2"'),
+    observed: (cwd) => (textOf(cwd, 'wrangler.jsonc').includes('"R2"') ? 'R2 is bound; egress rate is 0' : 'no R2 binding'),
   },
   {
-    lever: 'cut D1 rows-READ with narrow SELECTs + indexes (reads dwarf writes in volume)',
+    lever: 'cut D1 rows-READ with narrow SELECTs and indexes — reads dwarf writes in volume',
     dimension: 'd1.rowsRead',
-    why: 'D1 bills rows read; a SELECT * or a missing index reads far more rows than needed, and rows-read is the dimension that scales with traffic',
-    evidence: 'wrangler.jsonc binds D1 remote; 231 collections back every admin/query path',
+    why: 'D1 bills rows read, and rows-read is the dimension that scales with traffic; a wide read costs on every request that makes it',
+    holds: (cwd) => textOf(cwd, 'wrangler.jsonc').includes('"D1"'),
+    observed: (cwd) => (textOf(cwd, 'wrangler.jsonc').includes('"D1"') ? 'D1 is bound and backs every query path' : 'no D1 binding'),
   },
   {
-    lever: 'hibernate idle Durable Objects to stop GB-seconds accruing',
+    lever: 'implement or drop the declared Durable Object classes',
     dimension: 'durableObjects.gbSeconds',
-    why: 'a DO holding state in memory accrues GB-seconds even when idle; hibernation drops that to 0 until the next event',
-    evidence: 'wrangler.jsonc declares ERPAX_DO (rate-limit + tenant-quota state)',
+    why: 'a namespace whose class does not exist accrues nothing and answers nothing — every call to it fails at runtime, and the boot says so on every start',
+    holds: (cwd) => !hasDurableObjectClass(cwd),
+    observed: (cwd) =>
+      hasDurableObjectClass(cwd)
+        ? 'a class extending DurableObject exists in src'
+        : 'wrangler.jsonc declares DO namespaces and src defines NO class extending DurableObject',
   },
 ]
+
+export interface StaleLever {
+  readonly lever: string
+  readonly observed: string
+}
+
+/**
+ * Levers the tree has moved past — the ranking's own drift check.
+ *
+ * A lever that no longer holds must be removed or rewritten, never left ranked: the whole value of
+ * an ordered list is that the top of it is where the money is.
+ */
+export function staleLevers(cwd: string = process.cwd()): StaleLever[] {
+  return LEVERS.filter((l) => !l.holds(cwd)).map((l) => ({ lever: l.lever, observed: l.observed(cwd) }))
+}
 
 /**
  * The THEORETICAL floor — the economic cost to SERVE one unit, in the same per-unit as the price. A price is
