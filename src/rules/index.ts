@@ -23,6 +23,7 @@ import { uncitedPages } from '@/algebra'
 import { staleSizeClaims } from '@/rules/drift'
 import { replaceableStandards } from '@/proof/replaceable'
 import { atomListingGaps } from '@/publish/complete'
+import { claimBalance, totalSlack } from '@/rules/slack'
 import { emptyNameFallbacks, unnamedNonText } from '@/rules/alt'
 import { unreadSurfaces } from '@/rules/domain'
 import { startProgressHeartbeat } from '@/cli/progress-heartbeat'
@@ -319,6 +320,12 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // not merely on totals ([[publish]]/complete). The matrix held 3,466 against a corpus of
     // 3,474 this session and nothing said so. Zero is a theorem.
     guardian({ axis: 'atom-completeness', violations: atomListingGaps(cwd), baseline: 0 }),
+    // slack — a ceiling ABOVE its live value ([[rules]]/slack). Every other axis here asks
+    // whether a claim is too strong; this asks whether it is too weak, which is the same defect
+    // involuted. diamond-membership sat at live 130 against a ceiling of 261 — half of it
+    // holding nothing, so the tree could decay back and every run stay green. Zero is a theorem:
+    // the gate already advises ratcheting each gain, and advice that stays advice is prose.
+    guardian({ axis: 'slack', violations: totalSlack(claimBalance(cwd)), baseline: 0 }),
     // pages-cited — a GENERATED page reproducing corpus matter with no attribution. 0 of 6,943
     // carried one: the corpus stated the licence law in its agent rules and did not obey it on its
     // own output. Now computed from the licence face, so it cannot drift. Zero is a theorem.
@@ -530,3 +537,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   console.log(verdict.sealed ? '✓ rules sealed' : `✗ rules UNSEALED — ${red.length} guardian(s) over ceiling`)
   process.exit(verdict.sealed ? 0 : 1)
 }
+
+export * from './slack'
