@@ -1,4 +1,7 @@
-import { existsSync, readFileSync } from 'node:fs'
+import { tmpdir } from 'node:os'
+import { sealPathDoubleWire } from '@/law/folder/index-cross'
+import { mirroredIn } from '@/rules/mirror'
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { describe, it, expect } from 'vitest'
 import {
@@ -166,5 +169,39 @@ describe('index-cross: a barrel a PACKAGE bundles is refused — computed, not s
   it('a barrel no package reaches is NOT refused — the edge costs a stranger nothing', () => {
     expect(bundled.has('src/deploy/index.ts')).toBe(false)
     expect(bundled.has('src/monitor/index.ts')).toBe(false)
+  })
+})
+
+
+describe('index-cross — the autoclean must not mint the defect another gate removes', () => {
+  const fixture = (): string => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-seal-'))
+    const d = join(root, 'src', 'x', 'y')
+    mkdirSync(d, { recursive: true })
+    writeFileSync(join(d, 'SKILL.md'), '# x/y\n')
+    writeFileSync(join(d, 'index.ts'), "export const atomPath = 'x/y' as const\n")
+    writeFileSync(join(d, 'test.ts'), 'export {}\n')
+    return root
+  }
+
+  // It used to write `expect(atomPath).toBe('<p>')` against an index declaring that same literal
+  // — rules/mirror's canonical example, verbatim. Running it over the 2,315 one-way paths would
+  // have minted that many vacuous proofs in one batch, taking mirror from 55 to ~2,370.
+  it('the stub it writes is NOT a mirror', () => {
+    const root = fixture()
+    const r = sealPathDoubleWire(root, 3)
+    expect(r.paths.length).toBeGreaterThan(0)
+    for (const p of r.paths) {
+      const t = join(root, 'src', p, 'test.ts')
+      expect(mirroredIn([t], root)).toEqual([])
+    }
+  })
+
+  it('and its assertion can fail — it compares against the filesystem address', () => {
+    const root = fixture()
+    const r = sealPathDoubleWire(root, 3)
+    const body = readFileSync(join(root, 'src', r.paths[0]!, 'test.ts'), 'utf8')
+    expect(body).toContain('atomAddress(import.meta.url).path')
+    expect(body).not.toMatch(/toBe\('[^']+'\)/) // never a literal restated
   })
 })

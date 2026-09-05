@@ -303,8 +303,20 @@ const stubSkill = (p: string, pair: string): string =>
 const stubIndex = (p: string, pair: string): string =>
   `import { recordOnPath } from '@/path'\nexport const atomPath = '${p}' as const\nexport * from '@/${pair}'\nrecordOnPath(atomPath, { kind: 'path-double-wire', pair: '${pair}' })\n`
 
+/**
+ * The stub's proof, written so it CAN FAIL.
+ *
+ * It used to be `expect(atomPath).toBe('<p>')` against an `index.ts` reading
+ * `export const atomPath = '<p>'` — which is [[rules]]/mirror's canonical example, verbatim. The
+ * corpus's own autoclean generated the exact assertion the gate exists to remove, and running it
+ * over the 2,315 one-way paths would have minted that many vacuous proofs in one batch.
+ *
+ * Now it compares the declared path against the address the FILESYSTEM gives, so moving the
+ * folder reddens it. That is the same conversion that took 453 of erpax's 507 mirrors to
+ * refutable claims.
+ */
 const stubTest = (p: string): string =>
-  `import { describe, it, expect } from 'vitest'\nimport { atomPath } from './index'\ndescribe('${p}', () => { it('names path', () => { expect(atomPath).toBe('${p}') }) })\n`
+  `import { describe, it, expect } from 'vitest'\nimport { atomAddress } from '@/atom/address'\nimport { atomPath } from './index'\ndescribe('${p}', () => { it('declares the path it lives at', () => { expect(atomPath).toBe(atomAddress(import.meta.url).path) }) })\n`
 
 /** Autoclean — materialise missing B/A for each one-way A/B (bounded batch). */
 export function sealPathDoubleWire(cwd: string = process.cwd(), max = 30): SealPathDoubleWireResult {
