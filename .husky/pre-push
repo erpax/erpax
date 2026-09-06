@@ -30,10 +30,18 @@ export NODE_OPTIONS=--no-deprecation
 set -e
 
 # ── 1. Auto-heal regenerable artefacts FIRST ─────────────────────────
-# Runs unconditionally — fast (~200ms when nothing's stale; ~2s when
-# regenerating). Commits the heal so the rest of the gate sees a clean
-# tree. Handles: docs/STANDARDS_INDEX.md, src/payload-types.ts,
+# Runs unconditionally. Commits the heal so the rest of the gate sees a
+# clean tree. Handles: docs/STANDARDS_INDEX.md, src/payload-types.ts,
 # src/app/(payload)/admin/importMap.js.
+#
+# It said "fast (~200ms when nothing's stale)". Measured 2026-09-07: 93s,
+# and 94s of that is payload-verify-types.sh, which boots Payload twice.
+# The hook then ran that SAME script again at step 9 as the assert — one
+# answer, derived twice, ~190s of every push. The script now memoises a
+# PASS on a hash of its inputs (src index blobs + unstaged diff + the two
+# artefacts + the lockfile), so the second call is ~160ms and any edit to
+# any input misses the memo and pays the full boot. PAYLOAD_VERIFY_NOCACHE=1
+# forces it. No number is stated here that the code does not compute.
 bash scripts/auto-heal-generated-artefacts.sh
 
 # ── 1b. Payload approval (canonical gate — before tsc/lint/vitest) ───
@@ -65,7 +73,9 @@ bash scripts/standards-citation-index.sh --required
 bash scripts/standards-citation-index.sh --verify-index
 # src/payload-types.ts must be in sync with the live Payload config —
 # stale types let tsc pass in dev but fail in fresh checkouts.
-# (Auto-healed above when pnpm is available; this is the assert.)
+# (Auto-healed above when pnpm is available; this is the assert. The heal
+# already computed this verdict, so this call is a memo hit unless a step
+# between them changed an input — in which case it re-derives, as it must.)
 bash scripts/payload-verify-types.sh
 # ── Speech gate (added 2026-06-03 from session learnings) ──
 # Every [[link]] must resolve to a SKILL.md page — the aura whole; a dead link is an

@@ -2,6 +2,9 @@
  * payload/approval — canonical gate before waves, commits, or push.
  */
 import { spawnSync } from 'node:child_process'
+import { existsSync } from 'node:fs'
+import { join } from 'node:path'
+import { tmpdir } from 'node:os'
 import { timeoutForLabel } from '@/timeout'
 
 export const PAYLOAD_NODE_OPTIONS =
@@ -59,6 +62,30 @@ function runPayloadArgs(
   return { code: r.status ?? 1, output: `${r.stdout ?? ''}${r.stderr ?? ''}` }
 }
 
+/**
+ * The memo the generator steps share with scripts/payload-verify-types.sh.
+ *
+ * `generate:types` and `generate:importmap` are pure functions of the tracked source and the
+ * installed Payload, and they each boot Payload — ~50s apiece. A single push ran them FIVE times
+ * for two questions: this gate ran both, and payload-verify-types.sh ran the same two again.
+ *
+ * The key is computed in one place (scripts/payload-input-key.sh) and a PASS is remembered under
+ * it. A hit here means those exact commands already succeeded on these exact inputs. Any edit to
+ * any input changes the key, misses, and pays the full boot — which is why this is a memo and not
+ * a skip.
+ *
+ * `migrate:status` is deliberately NOT memoised: it reads the DATABASE, and no hash of this
+ * repository can see that.
+ */
+const generatorsAlreadyApproved = (cwd: string): boolean => {
+  if (process.env.PAYLOAD_VERIFY_NOCACHE === '1') return false
+  const key = spawnSync('bash', ['scripts/payload-input-key.sh'], { cwd, encoding: 'utf8' })
+  if (key.status !== 0) return false
+  const digest = (key.stdout ?? '').trim()
+  if (digest.length !== 64) return false
+  return existsSync(join(process.env.TMPDIR ?? tmpdir(), 'erpax-payload-verify', digest))
+}
+
 export function payloadApprovalGate(opts?: {
   readonly cwd?: string
   readonly skipLive?: boolean
@@ -71,9 +98,11 @@ export function payloadApprovalGate(opts?: {
     { step: 'generate:importmap', args: ['generate:importmap'] },
     { step: 'generate:types', args: ['generate:types'] },
   ]
-  for (const { step, args } of steps) {
-    const { code, output } = runPayloadArgs(args, cwd)
-    if (code !== 0) return { approved: false, step, error: tailError(output) }
+  if (!generatorsAlreadyApproved(cwd)) {
+    for (const { step, args } of steps) {
+      const { code, output } = runPayloadArgs(args, cwd)
+      if (code !== 0) return { approved: false, step, error: tailError(output) }
+    }
   }
   if (!process.env.PAYLOAD_TEST_SKIP_MIGRATE) {
     const migrate = runPayloadArgs(['migrate:status'], cwd, PAYLOAD_MIGRATE_NODE_OPTIONS)

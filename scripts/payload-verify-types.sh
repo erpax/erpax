@@ -31,6 +31,30 @@ TARGETS=(
   "src/app/(payload)/admin/importMap.js|./node_modules/.bin/payload generate:importmap|Payload admin importmap"
 )
 
+# ── Memo: the answer is a pure function of its inputs ────────────────────────────────────────
+#
+# This gate BOOTS PAYLOAD TWICE (generate:types, then generate:importmap) and costs ~94s. The
+# pre-push hook ran it twice per push — once inside the auto-heal, once as the assert — so ~190s
+# of every push was one answer, computed twice. That is the corpus's own law broken in its own
+# hook: reuse the computed answer, never re-derive.
+#
+# The key is computed in ONE place — scripts/payload-input-key.sh — because payload/approval.ts
+# consults the same memo for the same two commands, and two definitions of "what this depends on"
+# is exactly the defect this session spent itself folding out. Any edit to any input misses the
+# memo and pays the full boot, so this cannot hide a stale artefact.
+#
+# PAYLOAD_VERIFY_NOCACHE=1 forces the full run.
+CACHE_DIR="${TMPDIR:-/tmp}/erpax-payload-verify"
+verify_key() { bash scripts/payload-input-key.sh; }
+
+if [ "${PAYLOAD_VERIFY_NOCACHE:-0}" != "1" ]; then
+  KEY="$(verify_key)"
+  if [ -f "$CACHE_DIR/$KEY" ]; then
+    echo "OK — generated artefacts match the live source (memo hit ${KEY:0:12}; PAYLOAD_VERIFY_NOCACHE=1 to re-derive)."
+    exit 0
+  fi
+fi
+
 tmp=$(mktemp -d)
 trap 'rm -rf "$tmp"' EXIT
 
@@ -73,5 +97,11 @@ for entry in "${TARGETS[@]}"; do
   cp "$backup" "$target"
   echo "OK — ${target} matches the live source (${label})."
 done
+
+# Memo only a PASS. A failure must be re-derived every time: the fix changes the inputs anyway,
+# and a cached red would outlive its cause.
+if [ "$fail" -eq 0 ] && [ "${PAYLOAD_VERIFY_NOCACHE:-0}" != "1" ]; then
+  mkdir -p "$CACHE_DIR" && : > "$CACHE_DIR/$(verify_key)"
+fi
 
 exit "$fail"
