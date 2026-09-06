@@ -18,6 +18,7 @@ import { blindProbes } from '@/rules/probe'
 import { fundedSpine } from '@/fund'
 import { skillWeights } from '@/quantum/budget'
 import { durableObjectExportGaps } from '@/cloudflare/binding'
+import { unreachedAtoms } from '@/rules/unreached'
 import { kernelPath, reflexiveTheorems, unacceptedProofs } from '@/proof/accepted'
 import { unbackedPhenomena } from '@/quantum/interval'
 import { unbackedFigures } from '@/render/scene'
@@ -292,6 +293,12 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // the binding exists, and every call fails at runtime. worker.ts records that a side-effect
     // import was tried here first and could not create a named export. Zero is a THEOREM.
     guardian({ axis: 'durable-object-export', violations: durableObjectExportGaps(cwd).length, baseline: 0 }),
+    // unreached — an atom of code no entry reaches ([[rules]]/unreached). This is the ROOT of the
+    // remaining accounting wave: 80 leaves charged `deployment: no materialised face`, and every
+    // folder above each one charged again for the same absence. Five doors are tried first —
+    // deployed, gated, CLI, shipped in a package, or a vocabulary word — and 80 survive all five.
+    // A candidate list, never a purge list: a dynamic reference is invisible to a lexical walk.
+    guardian({ axis: 'unreached', violations: unreachedAtoms(cwd).length, baseline: 80 }),
     // proof/accepted — a .lean file the kernel does not accept as proof. Four of five carry `sorry`
     // or do not compile, under a directory named `verify` that nothing ever ran. Ratchets from 4;
     // the horizon is 0, because a theorem proved by `sorry` states a claim and proves nothing.
@@ -558,3 +565,4 @@ if (import.meta.url === `file://${process.argv[1]}`) {
 }
 
 export * from './slack'
+export * from './unreached'
