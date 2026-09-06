@@ -29,6 +29,17 @@ export function horoMeasureOf(digit: number | null): string | null {
   return i >= 0 ? HORO_MEASURE[i]! : null
 }
 
+/**
+ * Horo digit → chapter label, where an OFF-RING digit renders as itself rather than as null.
+ * That single difference from horoMeasureOf is why book/index and book/compute each carried a
+ * private copy of this — the copies agreed with each other and disagreed with the canonical
+ * reader, which is the shape a reader cannot see from inside either one.
+ */
+export function horoChapterOf(digit: number | null): string | null {
+  if (digit === null) return null
+  return horoMeasureOf(digit) ?? String(digit)
+}
+
 // Pivots and axis definitions
 export const VOID_PIVOT = 5
 export const CENTROID = 5

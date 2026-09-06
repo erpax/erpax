@@ -28,6 +28,7 @@
  */
 
 import { v4 as uuid } from 'uuid'
+import { INVOICE_ACTIVE_STATUSES as ACTIVE, justActivated, justReversed } from '@/invoices/hooks/transition'
 import type { CollectionAfterChangeHook } from 'payload'
 import { eventEmitter } from '@/event/emitter/service'
 import { emitDomainEvent } from '@/emit/domain/event'
@@ -37,41 +38,6 @@ import type {
   InvoiceLineItem,
   InventorySoldEvent,
 } from '@/types/events'
-
-const ACTIVE_STATUSES = new Set([
-  'issued',
-  'open',
-  'active',
-  'past_due',
-  'grace_period',
-])
-
-const REVERSED_STATUSES = new Set([
-  'cancelled',
-  'reversed',
-  'voided',
-])
-
-const justActivated = (
-  doc: Record<string, unknown>,
-  previousDoc?: Record<string, unknown>,
-): boolean => {
-  const status = doc.status as string | undefined
-  if (!status || !ACTIVE_STATUSES.has(status)) return false
-  if (!previousDoc) return true
-  return !ACTIVE_STATUSES.has(previousDoc.status as string)
-}
-
-const justReversed = (
-  doc: Record<string, unknown>,
-  previousDoc?: Record<string, unknown>,
-): boolean => {
-  const status = doc.status as string | undefined
-  if (!status || !REVERSED_STATUSES.has(status)) return false
-  if (!previousDoc) return false  // can't be reversed-on-create
-  // Only fire if the prior state was active (so we have an entry to reverse).
-  return ACTIVE_STATUSES.has(previousDoc.status as string)
-}
 
 const toLineItem = (line: Record<string, unknown>): InvoiceLineItem => ({
   id: String(line.id ?? uuid()),
@@ -107,7 +73,7 @@ export const invoiceAccountingHook: CollectionAfterChangeHook = async ({
   const userIdStr = String(userId)
 
   // ── invoice:activated — first transition into an active state ──────────
-  if (justActivated(docR, prevR)) {
+  if (justActivated(ACTIVE, docR, prevR)) {
     try {
       const lineItems = Array.isArray(doc.lineItems)
         ? (doc.lineItems as Array<Record<string, unknown>>).map(toLineItem)
@@ -181,7 +147,7 @@ export const invoiceAccountingHook: CollectionAfterChangeHook = async ({
   // Slice LLL: closes the GL-handler-is-dead-code gap. Fires the
   // reversal so glPostingService can emit reversing JEs against the
   // original activation entry.
-  if (justReversed(docR, prevR)) {
+  if (justReversed(ACTIVE, docR, prevR)) {
     const reversed: InvoiceReversedEvent = {
       eventId: uuid(),
       eventType: 'invoice:reversed',

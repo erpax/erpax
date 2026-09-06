@@ -11,7 +11,11 @@
  * @see ../navigation — ../uuid/matrix — ./matter — ./SKILL.md
  */
 import { adminGroupOf } from '@/navigation'
-import { HORO_DIGITS, HORO_MEASURE } from '@/horo'
+import { HORO_DIGITS, horoChapterOf as chapterOf } from '@/horo'
+import { bondRankOf } from '@/uuid/matrix'
+
+/** Kept on this atom's face — the bodies live at their own addresses now. */
+export { chapterOf, bondRankOf }
 import {
   UUID_MATRIX_NODES,
   nodeOf,
@@ -82,18 +86,7 @@ const horoIndex = (digit: number | null): number => {
   return i >= 0 ? i : HORO_DIGITS.length
 }
 
-export const chapterOf = (horoDigit: number | null): string | null => {
-  if (horoDigit === null) return null
-  const i = HORO_DIGITS.indexOf(horoDigit as (typeof HORO_DIGITS)[number])
-  return i >= 0 ? HORO_MEASURE[i]! : String(horoDigit)
-}
 
-/** Bond rank within hub — in-degree + out-degree on the live matrix. */
-export function bondRankOf(atomPath: string): number {
-  const leaf = atomPath.split('/').pop() ?? atomPath
-  const matrixKey = nodeOf(atomPath)?.atom ?? nodeOf(leaf)?.atom ?? leaf
-  return backlinksOf(matrixKey).length + neighborsOf(matrixKey).length
-}
 
 /** Matrix neighbor paths for one atom — bond turns. */
 export function neighborPathsOf(atomPath: string): readonly string[] {

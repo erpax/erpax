@@ -53,6 +53,7 @@
  * @see ./envelope.ts (CipherEnvelope — sister type for at-rest secrecy)
  */
 import type { ContentUuid } from '@/integrity/content'
+import { b64urlDecode, b64urlEncode } from '@/integrity/base64url'
 
 /**
  * Allowed signature algorithms. Mirrors RFC 7515 §3.1 `alg` Header
@@ -119,15 +120,6 @@ function subtleAlgParams(alg: SignatureAlg): AlgorithmIdentifier | RsaPssParams 
  * Base64url (RFC 4648 §5) encode / decode without `+/=` characters —
  * required by JWS and what all eIDAS-aligned signature containers use.
  */
-function b64urlEncode(bytes: Uint8Array): string {
-  const b64 = Buffer.from(bytes).toString('base64')
-  return b64.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/g, '')
-}
-function b64urlDecode(s: string): Uint8Array<ArrayBuffer> {
-  const pad = s.length % 4 === 0 ? '' : '='.repeat(4 - (s.length % 4))
-  const b64 = (s + pad).replace(/-/g, '+').replace(/_/g, '/')
-  return new Uint8Array(Buffer.from(b64, 'base64'))
-}
 
 /** The bytes that go into the signature: the uuid's UTF-8 encoding. */
 function uuidBytes<T>(uuid: ContentUuid<T>): Uint8Array<ArrayBuffer> {

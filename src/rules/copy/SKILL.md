@@ -39,12 +39,26 @@ Two of the top ten findings were written by the session that built it:
 That is the useful evidence about this instrument: the law is easy to state, easy to agree with, and
 still broken by the person stating it. A gate is the only form of it that holds.
 
+## The hash covers the body, never what the body closes over
+
+Folding two byte-identical `justActivated` bodies out of the AR and AP invoice hooks **silently
+changed AP's behaviour**, and a pre-existing test caught it on the first run. The two functions
+were the same text; the `ACTIVE_STATUSES` set each closed over was not — a bill becomes live on
+`approved`, an invoice stays live through `grace_period`, and neither status exists in the
+other's set.
+
+**Two bodies matching is not two behaviours matching.** Before folding, read what the body reads:
+the fix is to pass the difference in (the set became a parameter) rather than to pick one
+constant and hope. That is the same shape as `ownsCollections` in the eleven-agent chain-step
+fold — share the mechanism, parameterise what differs.
+
 **Honest boundary.** This proves two bodies are the SAME TEXT, never that they should be ONE function
 — three `wrap` helpers in the ISO 20022, Peppol and SAF-T exporters are genuinely the same code, and
 whether they become a shared helper or stay independent is a coupling decision a human makes. It
 reads `.ts` and `.tsx`, skips generated faces (which restate every symbol) and skips tests (where
 scaffolding legitimately repeats). And it finds copies, never near-copies: a body edited by one
-character is invisible to it, which is the price of using an address instead of a score.
+character is invisible to it, which is the price of using an address instead of a score. And as above, a matching body says
+nothing about the constants it reads — that check is the human's, before the cut.
 
 **Law — [[law]]: the same body at two addresses is one implementation and one decoy. Content-address
 every body; where two agree, one of them is unmaintained and nobody knows which.**

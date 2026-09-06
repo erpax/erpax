@@ -61,3 +61,6 @@ export {
   largestBudgetExceeded, beyondUniverse, proveBeyondResources,
 } from './resource-bound'
 export type { ResourceBudget, ResourceVerdict } from './resource-bound'
+
+// Child atom — the wire encoding both signature paths share
+export * from './base64url'

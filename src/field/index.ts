@@ -14,3 +14,7 @@ export * from '../shared/field'
 // Domain-specific named exports
 export { createInvoiceNumberField, createInvoiceStatusField, createDueDateField, createPaymentTermsField, createARAnalysisFields } from '@/receivable'
 export { unpField, fiscalDeviceNumberField, operatorCodeField, fiscalQrField, saleStatusOptions } from '@/fiscal'
+
+// Child atoms — the accessors a hook uses to reach a field's value
+export * from './nested'
+export * from './relation'

@@ -1434,6 +1434,7 @@ src/insurance/contracts/index.ts:17: * @standard IFRS IFRS-17 §93 disclosure-re
 src/insurance/contracts/index.ts:18: * @standard IFRS IFRS-13 fair-value-input-hierarchy
 src/insurance/contracts/index.ts:19: * @standard ISO-4217:2015 currency-codes
 src/insurance/contracts/index.ts:20: * @standard ISO-8601-1:2019 date-time
+src/integrity/base64url/index.ts:5: * @standard RFC 4648 §5 base64url — URL and filename safe alphabet
 src/integrity/content/index.ts:42: * @standard RFC 9562 §5.8 name-based UUID (version 8, custom layout)
 src/integrity/content/index.ts:43: * @standard RFC 8785 JSON Canonicalization Scheme (JCS)
 src/integrity/content/index.ts:44: * @standard ISO/IEC 10118 hash functions
@@ -1515,6 +1516,7 @@ src/invoices/hooks/deriveNumber.test.ts:5: * @standard ISO/IEC-29119:2022 softwa
 src/invoices/hooks/deriveNumber.ts:8: * @standard EN-16931:2017 BT-1 invoice-number
 src/invoices/hooks/encryptSensitiveFields.ts:8: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
 src/invoices/hooks/gl-hooks-emit-events.test.ts:13: * @standard ISO/IEC-29119:2022 software-testing
+src/invoices/hooks/transition/index.ts:5: * @standard IFRS IAS-1 presentation (a reversal is a transition, never an edit)
 src/invoices/index.ts:51: * @standard EN-16931:2017 semantic-data-model-electronic-invoice
 src/invoices/index.ts:52: * @standard EN-16931:2017 §BG-22 document-totals
 src/invoices/index.ts:53: * @standard EN-16931:2017 §BG-23 vat-breakdown

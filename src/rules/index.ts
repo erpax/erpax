@@ -295,11 +295,13 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // import was tried here first and could not create a named export. Zero is a THEOREM.
     guardian({ axis: 'durable-object-export', violations: durableObjectExportGaps(cwd).length, baseline: 0 }),
     // unreached — an atom of code no entry reaches ([[rules]]/unreached). This is the ROOT of the
-    // remaining accounting wave: 80 leaves charged `deployment: no materialised face`, and every
-    // folder above each one charged again for the same absence. Five doors are tried first —
-    // deployed, gated, CLI, shipped in a package, or a vocabulary word — and 80 survive all five.
-    // A candidate list, never a purge list: a dynamic reference is invisible to a lexical walk.
-    guardian({ axis: 'unreached', violations: unreachedAtoms(cwd).length, baseline: 77 }),
+    // remaining accounting wave: each charged leaf makes every folder above it charge again for the
+    // same absence. Five doors are tried — deployed, reached FROM a deployed atom, gated/CLI,
+    // shipped in a package, or a vocabulary word. The second was missing: the face was checked
+    // per-atom and never propagated through imports, which charged 14 atoms a deployed surface
+    // plainly reaches (78 -> 64). A candidate list, never a purge list: a dynamic reference is
+    // invisible to a lexical walk.
+    guardian({ axis: 'unreached', violations: unreachedAtoms(cwd).length, baseline: 64 }),
     // copy — one body at two addresses ([[rules]]/copy). Content-addressed, so same bytes ⇒ same
     // finding: a theorem, not a similarity score. It caught its own author twice on the day it was
     // written, which is the argument for a gate over a stated law. Ratchets from 44.

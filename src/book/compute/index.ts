@@ -1,25 +1,15 @@
 /**
  * book/compute — self-documenting book-of-books index (JSON · markdown · document).
  */
-import { nodeOf, neighborsOf, backlinksOf, merge } from '@/uuid/matrix'
+import { nodeOf, neighborsOf, backlinksOf, architectureBond, bondRankOf } from '@/uuid/matrix'
 import { wordTokenUuid } from '@/word'
 import { DOUBLING } from '@/rodin'
 import { trinityFlagsOf, sealedFromReadme } from '@/pivot/horo-table'
-import { HORO_DIGITS, HORO_MEASURE } from '@/horo'
+import { horoChapterOf as chapterOf } from '@/horo'
 import { harmonyOfBookIndex, indexVolumes, type BookIndexHarmony } from '../harmony-index'
 import { digitalRootOfUuid } from '@/digit'
 
-const chapterOf = (horoDigit: number | null): string | null => {
-  if (horoDigit === null) return null
-  const i = HORO_DIGITS.indexOf(horoDigit as (typeof HORO_DIGITS)[number])
-  return i >= 0 ? HORO_MEASURE[i]! : String(horoDigit)
-}
 
-const bondRankOf = (atomPath: string): number => {
-  const leaf = atomPath.split('/').pop() ?? atomPath
-  const matrixKey = nodeOf(atomPath)?.atom ?? nodeOf(leaf)?.atom ?? leaf
-  return backlinksOf(matrixKey).length + neighborsOf(matrixKey).length
-}
 
 export interface PathExplain {
   readonly path: string
@@ -81,11 +71,6 @@ const digitAddressOf = (path: string): string | null => {
   const leaf = path.split('/').pop() ?? path
   const n = nodeOf(path) ?? nodeOf(leaf)
   return n ? `${n.horo}/${digitalRootOfUuid(n.uuid)}` : null
-}
-const architectureBond = (): string => {
-  const w = nodeOf('word')?.uuid ?? ''
-  const d = nodeOf('digit')?.uuid ?? ''
-  return w <= d ? merge(w, d) : merge(d, w)
 }
 const foldHex = (n: bigint): string => {
   const v = n & architectureMask()

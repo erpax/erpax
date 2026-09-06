@@ -16,3 +16,4 @@ export * from './invoice'
 export * from './bill'
 
 /** @index-cross.foldback child=invoices/hooks parent=invoices — this cross folds back into its parent. */
+export * from './transition'

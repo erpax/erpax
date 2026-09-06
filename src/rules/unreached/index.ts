@@ -108,9 +108,44 @@ const hasDeploymentFace = (dir: string): boolean => {
  * walk, and Payload reaches admin components exactly that way. It proves nothing IMPORTS the atom;
  * a human decides whether that means wire it or drop it.
  */
+/**
+ * Barrels of every atom that HAS a deployment face — the entries a deployed surface reaches from.
+ *
+ * The door was checked per-atom and never propagated: an atom whose only door is "a deployed atom
+ * imports it" read as unreached. `xml/escape` is the plain case — three exporters that DO carry a
+ * face import it, and it was charged anyway. 9 of the 78 were that, which makes this a widening of
+ * the question rather than a loosening of the answer ([[rules]]/domain: a law reaches exactly the
+ * cases its checker opens).
+ */
+function deployedEntries(cwd: string): string[] {
+  const src = join(cwd, 'src')
+  const out: string[] = []
+  const walk = (dir: string): void => {
+    let entries: import('node:fs').Dirent[]
+    try {
+      entries = readdirSync(dir, { withFileTypes: true })
+    } catch {
+      return
+    }
+    for (const e of entries) {
+      if (!e.isDirectory() || e.name.startsWith('.') || e.name === 'node_modules') continue
+      const d = join(dir, e.name)
+      if (hasDeploymentFace(d)) {
+        for (const n of ['index.ts', 'index.tsx']) {
+          const f = join(d, n)
+          if (existsSync(f)) out.push(relative(cwd, f))
+        }
+      }
+      walk(d)
+    }
+  }
+  walk(src)
+  return out
+}
+
 export function unreachedAtoms(cwd: string = process.cwd()): UnreachedAtom[] {
   const src = join(cwd, 'src')
-  const tooling = reachedFrom(TOOLING_ENTRIES, cwd)
+  const tooling = reachedFrom([...TOOLING_ENTRIES, ...deployedEntries(cwd)], cwd)
   const shipped = shippedAtoms(cwd)
   const words = schemaCollision(cwd).words
   const out: UnreachedAtom[] = []

@@ -25,19 +25,13 @@
 import { execFileSync } from 'node:child_process'
 import { dirname, join } from 'node:path'
 
-import { sealedPaths, sealedRead } from '@/grounded'
+import { sealedAtomDirs, sealedRead } from '@/grounded'
 
 const SRC = 'src'
 
 /** The `@standard <id> …` marker — a JSDoc/prose tag that names the external standard the atom cites. */
 export const STANDARD_RE = /@standard\b/
 
-/** Committed SKILL.md atom directories in the SEALED tree (git HEAD). */
-function sealedAtomDirs(): string[] {
-  const dirs: string[] = []
-  for (const p of sealedPaths()) if (p.startsWith(SRC + '/') && p.endsWith('/SKILL.md')) dirs.push(dirname(p))
-  return dirs
-}
 
 /** Files (SKILL.md / index.ts) that carry an `@standard` marker in the SEALED tree — one git query. */
 function sealedStandardFiles(): ReadonlySet<string> {

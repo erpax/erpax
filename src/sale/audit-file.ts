@@ -21,6 +21,8 @@
  * @see src/saf/t/export/service/index.ts · .claude/skills/supto/SKILL.md
  */
 
+import { escapeXml } from '@/xml/escape'
+
 export interface SalesAuditInput {
   readonly unp: string
   readonly fiscalDeviceNumber: string
@@ -107,11 +109,8 @@ export function buildSalesAuditReport(args: {
   }
 }
 
-const xmlEscape = (v: string): string =>
-  v.replace(/[<>&'"]/g, (c) => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', "'": '&apos;', '"': '&quot;' })[c]!)
-
 const tag = (name: string, value: string | number | null): string =>
-  value === null || value === '' ? `<${name}/>` : `<${name}>${xmlEscape(String(value))}</${name}>`
+  value === null || value === '' ? `<${name}/>` : `<${name}>${escapeXml(String(value))}</${name}>`
 
 /** Serialize the report to the СУПТО audit XML (Приложение-38 shape). */
 export function toSalesAuditXml(report: SalesAuditReport): string {

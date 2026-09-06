@@ -20,3 +20,6 @@ export {
   planTrainingEffects,
 } from './hr/training'
 export { ownedChainStepAudit } from './step'
+
+// Child atom — the chain-step handler every owning agent delegates to
+export * from './step'

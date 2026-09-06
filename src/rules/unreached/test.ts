@@ -91,4 +91,33 @@ describe('rules/unreached — a fixture with no packages and no gate', () => {
       rmSync(root, { recursive: true, force: true })
     }
   })
+
+  // The door was checked per-atom and never PROPAGATED: an atom whose only door is "a deployed
+  // atom imports it" was charged as unreached. Both halves are planted here — the importer carries
+  // a face and passes, and the imported atom carries a 0·0·0 face and must pass THROUGH it.
+  it('an atom a deployed atom imports is reached, and one nothing imports is still charged', () => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-unreached-'))
+    try {
+      mkdirSync(join(root, 'src', 'shipped'), { recursive: true })
+      writeFileSync(join(root, 'src', 'shipped', 'SKILL.md'), '# shipped\n')
+      writeFileSync(join(root, 'src', 'shipped', 'index.ts'), "export { helper } from '@/helper'\n")
+      writeFileSync(join(root, 'src', 'shipped', 'LLM.md'), 'faces worker·plugin·pwa `1`·`0`·`0`\n')
+
+      mkdirSync(join(root, 'src', 'helper'), { recursive: true })
+      writeFileSync(join(root, 'src', 'helper', 'SKILL.md'), '# helper\n')
+      writeFileSync(join(root, 'src', 'helper', 'index.ts'), 'export const helper = 1\n')
+      writeFileSync(join(root, 'src', 'helper', 'LLM.md'), 'faces worker·plugin·pwa `0`·`0`·`0`\n')
+
+      mkdirSync(join(root, 'src', 'orphan'), { recursive: true })
+      writeFileSync(join(root, 'src', 'orphan', 'SKILL.md'), '# orphan\n')
+      writeFileSync(join(root, 'src', 'orphan', 'index.ts'), 'export const orphan = 1\n')
+      writeFileSync(join(root, 'src', 'orphan', 'LLM.md'), 'faces worker·plugin·pwa `0`·`0`·`0`\n')
+
+      const charged = unreachedAtoms(root).map((a) => a.atomPath)
+      expect(charged).not.toContain('helper')
+      expect(charged).toContain('orphan')
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
 })

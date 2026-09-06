@@ -11,7 +11,7 @@ import { indexVolumes, sortBookPages } from '@/book'
 import { CODE_MARKERS, TRINITY, trinityPresent } from '@/law/folder/constants'
 import { isOrphanReexportOnly, wordWithoutLogicViolations } from '@/rules/word-without-logic'
 import { recordOnPath, recordOnPathMerged } from '@/path'
-import { nodeOf, merge, neighborsOf, backlinksOf, UUID_MATRIX_ROOT } from '@/uuid/matrix'
+import { nodeOf, neighborsOf, backlinksOf, UUID_MATRIX_ROOT, architectureBond } from '@/uuid/matrix'
 import { digitAddress } from '@/digit'
 import { wordTokenUuid } from '@/word'
 import { interact64, combineArchitectures, architectureMask } from '@/quantum/word'
@@ -68,11 +68,6 @@ export interface QuantumFoldResult {
   readonly superposition: 0 | 1
 }
 
-const architectureBond = (): string => {
-  const w = nodeOf('word')?.uuid ?? ''
-  const d = nodeOf('digit')?.uuid ?? ''
-  return w <= d ? merge(w, d) : merge(d, w)
-}
 
 export function doubleFold(atomOrPath: string, sealed = false): QuantumFoldResult {
   const wordHalf = wordFold(atomOrPath)

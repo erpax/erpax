@@ -166,6 +166,27 @@ export const nodeOf = (atom: string): MatrixNode | undefined => {
   return i === undefined ? undefined : at(i)
 }
 
+/**
+ * The architecture bond — word ⊗ digit, merged in canonical uuid order so the result does not
+ * depend on which half you name first. book/compute and quantum/fold each had this body; two
+ * addresses for one constant is two chances for the order convention to drift apart.
+ */
+export const architectureBond = (): string => {
+  const w = nodeOf('word')?.uuid ?? ''
+  const d = nodeOf('digit')?.uuid ?? ''
+  return w <= d ? merge(w, d) : merge(d, w)
+}
+
+/**
+ * Bond rank — in-degree + out-degree on the live matrix, resolving a path to its atom key and
+ * falling back to the leaf. book/index, book/compute and book/harmony-index each had this body.
+ */
+export const bondRankOf = (atomPath: string): number => {
+  const leaf = atomPath.split('/').pop() ?? atomPath
+  const matrixKey = nodeOf(atomPath)?.atom ?? nodeOf(leaf)?.atom ?? leaf
+  return backlinksOf(matrixKey).length + neighborsOf(matrixKey).length
+}
+
 /** Canonical matrix atom key after path resolution — for edge graph queries. */
 export const matrixAtomOf = (key: string): string | undefined => nodeOf(key)?.atom
 

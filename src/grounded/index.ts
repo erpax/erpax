@@ -51,6 +51,36 @@ export function sealedPaths(): ReadonlySet<string> {
   return sealedPathIndex
 }
 
+/**
+ * Every atom directory in the SEALED tree — a dir carrying a committed SKILL.md.
+ *
+ * convention/complete and convention/sourced each had this body ([[rules]]/copy). One address,
+ * because both are answering "which atoms exist, according to the seal" and must not diverge.
+ */
+export function sealedAtomDirs(): readonly string[] {
+  const dirs: string[] = []
+  for (const path of sealedPaths()) {
+    if (path.startsWith('src/') && path.endsWith('/SKILL.md')) dirs.push(path.slice(0, -'/SKILL.md'.length))
+  }
+  return dirs
+}
+
+/**
+ * Sealed twin of law/folder's trinityPresent — is this leg committed under EITHER lawful spelling?
+ *
+ * A React atom's barrel is `index.tsx`; asking the sealed index for `index.ts` alone answers "does
+ * this atom have code" with NO for every atom that renders ([[rules]]/probe). The filesystem check
+ * was fixed for that; the sealed check was not, and it is the one convention/complete uses to
+ * report how much of the corpus is a full trinity.
+ */
+export function sealedTrinityPresent(dir: string, leg: 'index.ts' | 'test.ts' | 'SKILL.md'): boolean {
+  const alternates: Record<string, readonly string[]> = { 'index.ts': ['index.tsx'], 'test.ts': ['test.tsx'] }
+  for (const name of [leg, ...(alternates[leg] ?? [])]) {
+    if (sealedPaths().has(`${dir}/${name}`)) return true
+  }
+  return false
+}
+
 /** Sealed replacement for `existsSync` — is the path committed (in the sealed tree)? */
 export function sealedExists(path: string): boolean {
   return sealedPaths().has(path)

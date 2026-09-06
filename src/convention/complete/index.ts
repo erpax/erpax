@@ -23,26 +23,21 @@
  */
 import { dirname, join } from 'node:path'
 
-import { sealedPaths } from '@/grounded'
+import { sealedAtomDirs, sealedTrinityPresent } from '@/grounded'
 
-const SRC = 'src'
-
-/** Committed SKILL.md atom directories in the SEALED tree. */
-function sealedAtomDirs(): string[] {
-  const dirs: string[] = []
-  for (const p of sealedPaths()) if (p.startsWith(SRC + '/') && p.endsWith('/SKILL.md')) dirs.push(dirname(p))
-  return dirs
-}
 
 /** Every atom that has a SKILL.md in the sealed tree. */
 export function total(): number {
   return sealedAtomDirs().length
 }
 
-/** A SKILL.md atom is COMPLETE iff its dir also carries the matter-twin (index.ts) and its proof (test.ts). */
+/**
+ * A SKILL.md atom is COMPLETE iff its dir also carries the matter-twin and its proof — under
+ * EITHER lawful spelling. Asking for `index.ts` alone reported every React atom as incomplete.
+ */
 export const isComplete = (skillPath: string): boolean => {
   const dir = dirname(skillPath)
-  return sealedPaths().has(join(dir, 'index.ts')) && sealedPaths().has(join(dir, 'test.ts'))
+  return sealedTrinityPresent(dir, 'index.ts') && sealedTrinityPresent(dir, 'test.ts')
 }
 
 /** The atoms that are full trinities — SKILL.md ∧ index.ts ∧ test.ts (sealed). */

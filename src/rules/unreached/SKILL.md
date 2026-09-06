@@ -23,6 +23,20 @@ I expected the opposite. My first hypothesis was that the charge over-counts —
 research atoms reached from the tooling entries and simply not from the worker. Measured: **3 of 83**
 are reached from the gate or CLI. The premise was wrong and the charge is right.
 
+## The door was checked, and never propagated — 78 to 64
+
+`hasDeploymentFace` asked each atom whether IT carries a worker/plugin/pwa face. It never asked
+whether something that does **imports it**. So an atom whose only door is "a deployed atom reaches
+it" was charged as unreached.
+
+`xml/escape` is the plain case: three exporters that all carry a face import it, and it was counted
+anyway. Seeding the reachability walk with every face-bearing atom's barrel — the same walk the
+tooling entries already get — took the count from **78 to 64**.
+
+This is the [[rules]]/domain law turned on this axis: *a law reaches exactly the cases its checker
+opens*. Fourteen atoms were neither passing nor failing; the question was never asked of them, and
+an unasked question reports as a violation just as readily as it reports as green.
+
 ## What it is not
 
 This is a **candidate list, never a purge list** — the same boundary [[rules]]/unfolded carries, and

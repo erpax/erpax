@@ -60,6 +60,7 @@
  * @see ./signatures.ts (SignedUuid — sister type for in-transit authenticity)
  */
 import type { ContentUuid } from '@/integrity/content'
+import { b64urlDecode, b64urlEncode } from '@/integrity/base64url'
 
 /**
  * Allowed envelope algorithms. AES-GCM-256 is the default and only the
@@ -108,16 +109,6 @@ export interface CipherEnvelope<T> {
 }
 
 // ─── crypto primitives (Web Crypto) ──────────────────────────────────
-
-function b64urlEncode(bytes: Uint8Array): string {
-  const b64 = Buffer.from(bytes).toString('base64')
-  return b64.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/g, '')
-}
-function b64urlDecode(s: string): Uint8Array<ArrayBuffer> {
-  const pad = s.length % 4 === 0 ? '' : '='.repeat(4 - (s.length % 4))
-  const b64 = (s + pad).replace(/-/g, '+').replace(/_/g, '/')
-  return new Uint8Array(Buffer.from(b64, 'base64'))
-}
 
 /**
  * HKDF (RFC 5869) the master KEK + contentUuid into a per-row DEK.

@@ -6,12 +6,11 @@ import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
 import { join } from 'node:path'
 import { countSrcTopLevel, GITHUB_DIR_LIMIT, planVocabularyFold } from '@/navigation/github-browse'
 import { HORO_DIGITS } from '@/horo'
+import { bondRankOf } from '@/uuid/matrix'
 import { reciprocity } from '@/entropy'
 import {
   UUID_MATRIX_NODES,
   nodeOf,
-  neighborsOf,
-  backlinksOf,
 } from '@/uuid/matrix'
 
 const SKIP_TOP_LEVEL = new Set(['app', 'migrations'])
@@ -43,11 +42,6 @@ export interface BookIndexHarmony {
 
 const round3 = (n: number): number => exactRound(n * 1000) / 1000
 
-const bondRankOf = (atomPath: string): number => {
-  const leaf = atomPath.split('/').pop() ?? atomPath
-  const matrixKey = nodeOf(atomPath)?.atom ?? nodeOf(leaf)?.atom ?? leaf
-  return backlinksOf(matrixKey).length + neighborsOf(matrixKey).length
-}
 
 /** Top-level index volumes — hub dirs under src/, excluding vocabulary shard hub. */
 export function indexVolumes(cwd: string = process.cwd()): readonly string[] {

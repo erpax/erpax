@@ -25,6 +25,7 @@
  */
 
 import { v4 as uuid } from 'uuid'
+import { BILL_ACTIVE_STATUSES as ACTIVE, justActivated, justReversed } from '@/invoices/hooks/transition'
 import type { CollectionAfterChangeHook } from 'payload'
 import { eventEmitter } from '@/event/emitter/service'
 import { emitDomainEvent } from '@/emit/domain/event'
@@ -34,40 +35,6 @@ import type {
   BillLineItem,
   InventoryPurchasedEvent,
 } from '@/types/events'
-
-const ACTIVE_STATUSES = new Set([
-  'issued',
-  'open',
-  'approved',
-  'active',
-  'past_due',
-])
-
-const REVERSED_STATUSES = new Set([
-  'cancelled',
-  'reversed',
-  'voided',
-])
-
-const justActivated = (
-  doc: Record<string, unknown>,
-  previousDoc?: Record<string, unknown>,
-): boolean => {
-  const status = doc.status as string | undefined
-  if (!status || !ACTIVE_STATUSES.has(status)) return false
-  if (!previousDoc) return true
-  return !ACTIVE_STATUSES.has(previousDoc.status as string)
-}
-
-const justReversed = (
-  doc: Record<string, unknown>,
-  previousDoc?: Record<string, unknown>,
-): boolean => {
-  const status = doc.status as string | undefined
-  if (!status || !REVERSED_STATUSES.has(status)) return false
-  if (!previousDoc) return false
-  return ACTIVE_STATUSES.has(previousDoc.status as string)
-}
 
 const toLineItem = (line: Record<string, unknown>): BillLineItem => ({
   id: String(line.id ?? uuid()),
@@ -103,7 +70,7 @@ export const billAccountingHook: CollectionAfterChangeHook = async ({
   const userIdStr = String(userId)
 
   // ── bill:activated — first transition into an active state ─────────────
-  if (justActivated(docR, prevR)) {
+  if (justActivated(ACTIVE, docR, prevR)) {
     try {
       const lineItems = Array.isArray(doc.lineItems)
         ? (doc.lineItems as Array<Record<string, unknown>>).map(toLineItem)
@@ -175,7 +142,7 @@ export const billAccountingHook: CollectionAfterChangeHook = async ({
   // Slice LLL: closes the AP-side dead-handler gap. Symmetric to
   // invoice:reversed; glPostingService.postBillReversed reverses the
   // accrual entry.
-  if (justReversed(docR, prevR)) {
+  if (justReversed(ACTIVE, docR, prevR)) {
     const reversed: BillReversedEvent = {
       eventId: uuid(),
       eventType: 'bill:reversed',
