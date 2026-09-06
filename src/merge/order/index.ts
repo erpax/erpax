@@ -11,6 +11,10 @@ import ts from 'typescript'
  *
  * @see ./SKILL.md · ../../verify/lean/Order.lean (the separation, kernel-checked, axiom-free)
  */
+// A re-export does not bring the name into THIS module's scope, and the file uses `RootKind` in
+// its own type positions — so it must be imported as well as offered onward.
+import type { RootKind } from '@/merge'
+
 export type { RootKind } from '@/merge' 
 
 export interface RootSite {
@@ -116,7 +120,7 @@ export function assertNoRootCollision(cwd: string = process.cwd(), ceiling: numb
   if (bad.length <= ceiling) return
   throw new Error(
     `✖ merge/order — ${bad.length} name(s) exported with two order semantics (ceiling ${ceiling}):\n` +
-      bad.map((c) => `  ${c.name}\n${c.sites.map((s) => `    ${s.kind.padEnd(9)} ${s.file}`).join('\n')}`).join('\n'),
+      bad.map((c) => `  ${c.name}\n${c.sites.map((s) => `    ${(s.kind ?? 'undeclared').padEnd(9)} ${s.file}`).join('\n')}`).join('\n'),
   )
 }
 
@@ -127,5 +131,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   for (const s of all) console.log(`  ${(s.kind ?? '—').padEnd(9)} ${s.file}  ${s.name}`)
   const clash = rootCollisions()
   console.log(`\ncollisions — one name, two semantics: ${clash.length}`)
-  for (const c of clash) for (const s of c.sites) console.log(`  ${c.name}  ${s.kind.padEnd(9)} ${s.file}`)
+  for (const c of clash) for (const s of c.sites) console.log(`  ${c.name}  ${(s.kind ?? 'undeclared').padEnd(9)} ${s.file}`)
 }

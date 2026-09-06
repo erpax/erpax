@@ -22,7 +22,7 @@ describe('blocks/form/state', () => {
   })
 
   it('WCAG 4.1.2 — the trigger is a button, named only by its bound label', () => {
-    render(<State name="c" label="State" errors={{}} {...({ control: {} } as never)} />)
+    render(<State {...({ control: {} } as React.ComponentProps<typeof State>)} name="c" label="State" errors={{}} />)
     expect(screen.getByRole('combobox', { name: /State/ })).toBeDefined()
   })
 

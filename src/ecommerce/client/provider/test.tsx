@@ -48,8 +48,9 @@ describe('ecommerce/client/provider', () => {
       render(<EcommerceClientProvider><span /></EcommerceClientProvider>)
       expect(seen[0]!.paymentMethods).toEqual([])
     } finally {
+      // vi.unstubAllEnvs() restores what vi.stubEnv changed; assigning NODE_ENV back by hand is
+      // both redundant and refused by the type, which declares it read-only.
       vi.unstubAllEnvs()
-      process.env.NODE_ENV = prior
     }
   })
 

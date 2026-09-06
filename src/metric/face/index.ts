@@ -35,6 +35,8 @@ export interface FaceProtocol {
   readonly merge: string
   /** How bytes become an address. */
   readonly address: string
+  /** How a value becomes the bytes — without this the address is unreproducible. */
+  readonly canonical: string
   /** How the receipts fold to one root. */
   readonly root: string
 }

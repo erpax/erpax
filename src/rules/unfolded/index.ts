@@ -21,7 +21,6 @@
  * Composes [[rules]] · [[law]].
  */
 import { allFiles, textOf } from '@/syntax/cache'
-import { readFileSync, readdirSync, type Dirent } from 'node:fs'
 import { join, relative } from 'node:path'
 
 import { shapesOf } from '@/rules/collapse'

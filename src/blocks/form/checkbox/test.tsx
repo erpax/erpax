@@ -18,7 +18,7 @@ const { Checkbox } = await import('./index')
 
 const register = ((name: string) => ({ name, onChange: () => {}, onBlur: () => {}, ref: () => {} })) as never
 const mount = (extra: Record<string, unknown> = {}) =>
-  render(<Checkbox name="agree" label="I agree" errors={{}} register={register} {...(extra as never)} />)
+  render(<Checkbox {...(extra as unknown as React.ComponentProps<typeof Checkbox>)} name="agree" label="I agree" errors={{}} register={register} />)
 
 describe('blocks/form/checkbox', () => {
   afterEach(() => {

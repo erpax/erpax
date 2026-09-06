@@ -1,7 +1,6 @@
 import ts from 'typescript'
-import { readFileSync } from 'node:fs'
 import { dirname, join, relative } from 'node:path'
-import { astOf, corpusFiles, textOf } from '@/syntax/cache'
+import { astOf, corpusFiles } from '@/syntax/cache'
 
 /**
  * rules/mirror — a proof that restates its own definition proves the assignment, not the claim.

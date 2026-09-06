@@ -1,5 +1,5 @@
 import ts from 'typescript'
-import { join, relative } from 'node:path'
+import { relative } from 'node:path'
 import { astOf, corpusFiles, textOf } from '@/syntax/cache'
 
 /**

@@ -29,7 +29,7 @@ describe('publish/complete — a count is not a census', () => {
   it('equal counts AND equal members is genuine agreement, not a trap', () => {
     const c = reconcile(new Map([['a', set('x', 'y')], ['b', set('y', 'x')]]))
     expect(c.agreeingCountsDifferentMembers).toEqual([])
-    expect(c.complete.sort()).toEqual(['a', 'b'])
+    expect([...c.complete].sort()).toEqual(['a', 'b'])
   })
 
   it('only REQUIRED sources must be complete — a filtered view may legitimately be a subset', () => {

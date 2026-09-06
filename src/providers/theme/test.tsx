@@ -1,5 +1,5 @@
 // @vitest-environment jsdom
-import { act, cleanup, render } from '@testing-library/react'
+import { act, cleanup, render, renderHook } from '@testing-library/react'
 import React from 'react'
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 import { atomAddress } from '@/atom/address'
@@ -48,12 +48,12 @@ Object.defineProperty(window, 'matchMedia', {
 })
 
 /** A consumer, because the claims are about what `setTheme` does to three surfaces at once. */
-let ctx: ReturnType<typeof useTheme>
-const Consumer = () => {
-  ctx = useTheme()
-  return <span data-testid="child" />
-}
-const mount = () => render(<ThemeProvider><Consumer /></ThemeProvider>)
+/**
+ * `renderHook` hands the hook's value out; a Consumer writing to an outer binding is a side channel,
+ * which is what react-hooks/globals and react-hooks/immutability forbid — and they are right. The
+ * claims here are about what the hook DOES, so the hook is what gets rendered.
+ */
+const hookView = () => renderHook(() => useTheme(), { wrapper: ThemeProvider })
 
 describe('providers/theme', () => {
   beforeEach(() => {
@@ -69,29 +69,34 @@ describe('providers/theme', () => {
   it('an explicit choice reaches ALL THREE surfaces — storage, <html>, and state', () => {
     // State without `data-theme` leaves the page unstyled while the app believes it is themed;
     // `data-theme` without storage forgets the choice on reload. Both are silent.
-    mount()
-    act(() => ctx.setTheme('dark'))
+    const { result } = hookView()
+    act(() => result.current.setTheme('dark'))
     expect(window.localStorage.getItem(themeLocalStorageKey)).toBe('dark')
     expect(document.documentElement.getAttribute('data-theme')).toBe('dark')
-    expect(ctx.theme).toBe('dark')
+    expect(result.current.theme).toBe('dark')
   })
 
   it('setTheme(null) REMOVES the stored preference — unset is a state, not a default', () => {
     // The ordinary bug is storing "light" here. A user on a dark desktop who never touched the
     // toggle would then get a white page with no setting they could change to fix it.
-    mount()
-    act(() => ctx.setTheme('dark'))
-    act(() => ctx.setTheme(null))
+    const { result } = hookView()
+    act(() => result.current.setTheme('dark'))
+    act(() => result.current.setTheme(null))
     expect(window.localStorage.getItem(themeLocalStorageKey)).toBeNull()
   })
 
   it('stores nothing until the user actually chooses', () => {
-    mount()
+    hookView()
     expect(window.localStorage.getItem(themeLocalStorageKey)).toBeNull()
   })
 
   it('renders its children — a provider that swallows its tree is a blank page', () => {
-    const { container } = mount()
+    // This claim is about the TREE, not the hook — so it renders one, with no capture.
+    const { container } = render(
+      <ThemeProvider>
+        <span data-testid="child" />
+      </ThemeProvider>,
+    )
     expect(container.querySelector('[data-testid="child"]')).not.toBeNull()
   })
 })

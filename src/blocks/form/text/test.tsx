@@ -19,19 +19,19 @@ describe('blocks/form/text', () => {
   })
 
   it('WCAG 1.3.1 · 4.1.2 — the control is reachable BY ITS LABEL', () => {
-    render(<Text name="who" label="Your name" errors={{}} register={register} {...({} as never)} />)
+    render(<Text {...({} as React.ComponentProps<typeof Text>)} name="who" label="Your name" errors={{}} register={register} />)
     // getByLabelText resolves through htmlFor/id. A broken pair renders identically and fails here.
     expect(screen.getByLabelText(/Your name/)).toBeDefined()
   })
 
   it('carries the input type its name promises', () => {
-    render(<Text name="who" label="Your name" errors={{}} register={register} {...({} as never)} />)
+    render(<Text {...({} as React.ComponentProps<typeof Text>)} name="who" label="Your name" errors={{}} register={register} />)
     const el = screen.getByLabelText(/Your name/)
     expect(el.getAttribute('type')).toBe('text')
   })
 
   it('marks a required field in the accessible name, not only in colour', () => {
-    render(<Text name="who" label="Your name" required errors={{}} register={register} {...({} as never)} />)
+    render(<Text {...({} as React.ComponentProps<typeof Text>)} name="who" label="Your name" required errors={{}} register={register} />)
     // the asterisk is decorative; the sr-only "(required)" is what a screen reader announces
     expect(screen.getByText(/\(required\)/)).toBeDefined()
   })

@@ -4,7 +4,6 @@
  * @standard ISO/IEC 25010:2023 §5.6 — modularity/understandability: a name conveys its meaning
  */
 import { allFiles } from '@/syntax/cache'
-import { join } from 'node:path'
 
 /** Canonical atom path. */
 export const atomPath = 'echo' as const

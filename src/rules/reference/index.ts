@@ -24,7 +24,7 @@
  * Composes [[rules]] · [[confirm]] · [[law]].
  */
 import { allFiles, textOf } from '@/syntax/cache'
-import { readFileSync, existsSync, readdirSync, type Dirent } from 'node:fs'
+import { readFileSync, existsSync } from 'node:fs'
 import { commentsOf } from '@/syntax'
 import { join, relative } from 'node:path'
 

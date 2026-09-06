@@ -5,7 +5,6 @@
  */
 import { allFiles, astOf, textOf } from '@/syntax/cache'
 import ts from 'typescript'
-import { readdirSync, readFileSync, type Dirent } from 'node:fs'
 import { join } from 'node:path'
 
 /** Canonical atom path. */

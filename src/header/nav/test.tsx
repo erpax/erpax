@@ -8,7 +8,7 @@ vi.mock('next-intl', () => ({ useLocale: () => 'bg', useTranslations: () => (k: 
 vi.mock('next/link', () => ({
   default: ({ children, href }: { children: React.ReactNode; href: string }) => <a href={href}>{children}</a>,
 }))
-vi.mock('@/link/component', () => ({ CMSLink: ({ label }: { label?: string }) => <a href="/x">{label}</a> }))
+vi.mock('@/link/component', () => ({ CMSLink: ({ label }: { label?: string }) => <a href="https://erpax.test/x">{label}</a> }))
 vi.mock('@/locale/switcher', () => ({ FrontendLocaleSwitcher: () => <div /> }))
 vi.mock('lucide-react', () => ({ SearchIcon: () => <svg /> }))
 

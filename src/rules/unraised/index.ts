@@ -3,7 +3,7 @@
  *
  *   tsx src/rules/unraised/index.ts
  */
-import { allFiles, astOf, textOf } from '@/syntax/cache'
+import { allFiles, astOf } from '@/syntax/cache'
 import { readFileSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import ts from 'typescript'

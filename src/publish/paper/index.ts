@@ -100,6 +100,13 @@ export interface PaperInput {
   readonly contentUuid?: string
   /** What the claim does NOT prove — required, because a paper without one overclaims. */
   readonly boundary: string
+  /**
+   * How the claim was measured. A deposition without a method is a conclusion without a way to
+   * check it — the reader cannot re-run what is not described.
+   */
+  readonly method?: string
+  /** What the measurement returned. Stated separately from the claim, so the two can disagree. */
+  readonly result?: string
   /** The prior-art search, reproduced in the paper so a reader can judge it. */
   readonly priorArt?: PriorArtVerdict
 }
@@ -369,7 +376,15 @@ only when something blocks its violation.${
     input.contentUuid ? `\n\nThe matter this paper is about is addressed by content-uuid \\texttt{${escapeTex(input.contentUuid)}}.` : ''
   }
 
-\\section*{Prior art}
+${
+    input.method === undefined
+      ? ''
+      : `\\section*{Method}\n${escapeTex(input.method)}\n\n`
+  }${
+    input.result === undefined
+      ? ''
+      : `\\section*{Result}\n${escapeTex(input.result)}\n\n`
+  }\\section*{Prior art}
 ${priorArtSection}
 
 \\section*{What this does not prove}

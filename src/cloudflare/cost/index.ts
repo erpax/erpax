@@ -1,6 +1,5 @@
-import ts from 'typescript'
 import { join } from 'node:path'
-import { readFileSync, readdirSync, statSync } from 'node:fs'
+import { readFileSync } from 'node:fs'
 import { exactMax, exactRound } from '@/algebra'
 /**
  * cloudflare/cost — erpax's real Cloudflare billable surface, priced, fed into the one efficiency law.
@@ -173,13 +172,6 @@ export interface Lever {
   readonly observed: (cwd: string) => string
 }
 
-const bytesOf = (cwd: string, rel: string): number => {
-  try {
-    return statSync(join(cwd, rel)).size
-  } catch {
-    return 0
-  }
-}
 const textOf = (cwd: string, rel: string): string => {
   try {
     return readFileSync(join(cwd, rel), 'utf8')

@@ -1,6 +1,6 @@
 import { exactMax } from '@/algebra'
 /** merge — the folded algebra's binary operation and everything built on it. @see ./SKILL.md */
-import { canonical, chainLeaf, foldToRoot, merge } from './fold'
+import { foldToRoot, merge } from './fold'
 import { toUuid } from '@/uuid/matrix'
 
 /** Canonical atom path. */

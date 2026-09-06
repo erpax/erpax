@@ -18,24 +18,24 @@ describe('hero/render', () => {
   })
 
   it('renders the hero the type names', () => {
-    render(<RenderHero {...({ type: 'highImpact' } as never)} />)
+    render(<RenderHero {...({ type: 'highImpact' } as unknown as React.ComponentProps<typeof RenderHero>)}  />)
     expect(screen.getByText('high')).toBeDefined()
   })
 
   it("'none' renders nothing — an editor's explicit choice", () => {
-    const { container } = render(<RenderHero {...({ type: 'none' } as never)} />)
+    const { container } = render(<RenderHero {...({ type: 'none' } as unknown as React.ComponentProps<typeof RenderHero>)}  />)
     expect(container.innerHTML).toBe('')
   })
 
   it('an UNKNOWN type renders nothing — handing undefined to React is an outage', () => {
     // this is the case a rename produces: the CMS still holds the old value, and `heroes[type]` is
     // undefined. Rendering it throws and takes the page down; the guard makes it a missing hero.
-    const { container } = render(<RenderHero {...({ type: 'sideways' } as never)} />)
+    const { container } = render(<RenderHero {...({ type: 'sideways' } as unknown as React.ComponentProps<typeof RenderHero>)}  />)
     expect(container.innerHTML).toBe('')
   })
 
   it('an absent hero renders nothing — a draft has no type at all', () => {
-    const { container } = render(<RenderHero {...({} as never)} />)
+    const { container } = render(<RenderHero {...({} as React.ComponentProps<typeof RenderHero>)}  />)
     expect(container.innerHTML).toBe('')
   })
 })

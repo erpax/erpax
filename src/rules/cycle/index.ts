@@ -36,7 +36,7 @@ import { exactMin } from '@/algebra'
  * Composes [[rules]] · [[law]].
  */
 import ts from 'typescript'
-import { readFileSync, existsSync, readdirSync, type Dirent } from 'node:fs'
+import { existsSync } from 'node:fs'
 import { join, dirname, resolve, relative } from 'node:path'
 
 const GENERATED = /skills\.index\.ts$|payload-types\.ts$|\.generated\.ts$|catalogue\.ts$/

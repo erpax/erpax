@@ -13,6 +13,10 @@ const useClickableCard = (await import('./index')).default
 const Card: React.FC<{ external?: boolean }> = ({ external }) => {
   const { card, link } = useClickableCard<HTMLDivElement>({ external })
   return (
+    // react-hooks/refs matches the property NAME. `card.ref` and `link.ref` are RefObjects being
+    // passed to `ref=`, never dereferenced — no `.current` is read here, which is what the rule
+    // exists to forbid. The hook wraps its refs as `{ ref }`, and that shape is the whole trigger.
+    /* eslint-disable react-hooks/refs */
     <div ref={card.ref} data-testid="card">
       <a ref={link.ref} href="https://erpax.test/post">
         Title
@@ -20,6 +24,7 @@ const Card: React.FC<{ external?: boolean }> = ({ external }) => {
       <a href="https://erpax.test/other" data-testid="nested">
         Nested
       </a>
+      {/* eslint-enable react-hooks/refs */}
       <span data-testid="plain">body</span>
     </div>
   )

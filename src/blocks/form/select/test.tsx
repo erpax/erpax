@@ -23,12 +23,12 @@ describe('blocks/form/select', () => {
   })
 
   it('WCAG 4.1.2 — the trigger is a BUTTON, and its only name is the bound label', () => {
-    render(<Select name="pick" label="Choose one" errors={{}} {...({ control: {}, options: [{ label: 'A', value: 'a' }] } as never)} />)
+    render(<Select {...({ control: {}, options: [{ label: 'A', value: 'a' }] } as React.ComponentProps<typeof Select>)} name="pick" label="Choose one" errors={{}} />)
     expect(screen.getByRole('combobox', { name: /Choose one/ })).toBeDefined()
   })
 
   it('marks required in the accessible name, not only in colour', () => {
-    render(<Select name="pick" label="Choose one" required errors={{}} {...({ control: {}, options: [] } as never)} />)
+    render(<Select {...({ control: {}, options: [] } as unknown as React.ComponentProps<typeof Select>)} name="pick" label="Choose one" required errors={{}} />)
     expect(screen.getByText(/\(required\)/)).toBeDefined()
   })
 })

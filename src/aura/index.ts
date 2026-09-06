@@ -13,7 +13,7 @@
  * @see ./scan (the gap report) -- ./propose (the weave queue) -- ../coordinate (derive-from-fs)
  */
 import { trinityPresent } from '@/law/folder/constants'
-import { readdirSync, lstatSync, readFileSync, existsSync } from 'node:fs'
+import { readdirSync, lstatSync, readFileSync } from 'node:fs'
 import { join, dirname, basename, relative } from 'node:path'
 
 /** Real directory -- skips symlinks (the src/skills self-symlink would ELOOP). */
