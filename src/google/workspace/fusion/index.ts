@@ -73,3 +73,5 @@ export function fuseWorkspaceResource(res: WorkspaceResource, tenantId: string):
 export function fusesIdentically(a: WorkspaceResource, b: WorkspaceResource, tenantId: string): boolean {
   return fuseWorkspaceResource(a, tenantId).uuid === fuseWorkspaceResource(b, tenantId).uuid
 }
+
+/** @index-cross.foldback child=google/workspace/fusion parent=google/workspace — this cross folds back into its parent. */

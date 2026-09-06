@@ -8,7 +8,7 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSy
 import { join, relative } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { indexVolumes, sortBookPages } from '@/book'
-import { CODE_MARKERS, TRINITY } from '@/law/folder/constants'
+import { CODE_MARKERS, TRINITY, trinityPresent } from '@/law/folder/constants'
 import { isOrphanReexportOnly, wordWithoutLogicViolations } from '@/rules/word-without-logic'
 import { recordOnPath, recordOnPathMerged } from '@/path'
 import { nodeOf, merge, neighborsOf, backlinksOf, UUID_MATRIX_ROOT } from '@/uuid/matrix'
@@ -676,7 +676,11 @@ const trinityIncompleteGaps = (cwd: string): LinearGap[] => {
     }
     const files = new Set(entries.filter((e) => !gapIsDir(join(dir, e))))
     if (CODE_MARKERS.some((m) => files.has(m))) {
-      const missing = TRINITY.filter((f) => !files.has(f))
+      // Both lawful spellings. Reading `index.ts` literally made this blind in both directions at
+      // once — it charged a React atom for lacking the `.ts` name it cannot have, and the recursion
+      // below stopped dead at a `.tsx` barrel, so those subtrees were never walked at all. The false
+      // negative is the worse half: they were not passing the law, they were outside it.
+      const missing = TRINITY.filter((f) => !trinityPresent(dir, f))
       if (missing.length)
         out.push({
           kind: 'trinity-incomplete',
@@ -686,7 +690,7 @@ const trinityIncompleteGaps = (cwd: string): LinearGap[] => {
           sealHint: { action: 'stub-index', atomPath, detail: 'stub' },
         })
     }
-    if (!files.has('index.ts')) return
+    if (!trinityPresent(dir, 'index.ts')) return
     for (const e of entries)
       if (!e.startsWith('.')) {
         const p = join(dir, e)

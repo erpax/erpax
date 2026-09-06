@@ -174,3 +174,5 @@ export async function resolveFiscalContext(
     terminalId: terminalActive ? relId(device?.defaultTerminal) : undefined,
   }
 }
+
+/** @index-cross.foldback child=sale/fiscal/context parent=sale/fiscal — this cross folds back into its parent. */

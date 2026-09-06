@@ -62,3 +62,21 @@ A reversal is not a new computation; it is the **mirror of an existing balanced 
 - Re-keying amounts (drift) instead of swapping the source lines (exact mirror).
 
 Composes: [[accounting]] · [[balance]] · [[give]]/[[take]] · [[duality]] · [[close]]/[[begin]] · [[identity]].
+
+## The code, and why it preserves rather than recomputes
+
+`reverseLines` swaps each line's debit and credit, keeping the account and the **amount**. The
+amounts are preserved, never re-derived: a reversal that recomputed its figures could disagree with
+the entry it reverses, and then the pair would not net to zero — the one thing a reversal exists to
+guarantee. `netsToZero` checks that by SUMMING both sides rather than trusting that swapping two
+fields must work out.
+
+An unbalanced origin still reverses to something that nets with it. Reversal does not repair a bad
+entry and must not pretend to: the imbalance survives in both and cancels in the pair.
+
+Reversing twice is the identity — the involution [[duality]]/mirror describes, here on money. And a
+zero side stays absent rather than becoming an explicit `0`, so a reversed line has the same shape as
+an original and nothing downstream special-cases it.
+
+`reverseEntry` carries the origin id and its own posting date, both of which SAF-T §3 requires: a
+reversal with no origin is an adjustment wearing the word, and nothing could pair the two.

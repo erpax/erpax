@@ -1,3 +1,4 @@
+import { trinityPresent } from '@/law/folder/constants'
 import { describe, it, expect, beforeEach, afterEach } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync, readFileSync, readdirSync } from 'node:fs'
 import { join } from 'node:path'
@@ -125,5 +126,28 @@ export const x = measureOf(4)
       expect(readFileSync(join(gapCwd, 'src/pager/index.ts'), 'utf8')).toContain("export { Pager } from './index.tsx'")
       expect(readFileSync(join(gapCwd, 'src/pager/index.ts'), 'utf8')).not.toContain('spreadOf')
     })
+  })
+})
+
+describe('quantum/fold — a React atom spells its barrel with an x', () => {
+  // It read `index.ts` literally, so it charged a JSX atom for a name a JSX barrel cannot have,
+  // and the walk stopped dead at a `.tsx` barrel so those subtrees were never judged at all. The
+  // false negative is the worse half: a folder outside the law is not a folder passing it.
+  // Live count moved 38 → 23 when both spellings were read.
+  it('reports no trinity gap against an atom whose barrel and proof are BOTH .tsx', () => {
+    const gaps = linearGaps(process.cwd()).gaps.filter((g) => g.kind === 'trinity-incomplete')
+    for (const g of gaps) {
+      const dir = join(process.cwd(), 'src', g.atomPath)
+      const complete =
+        trinityPresent(dir, 'SKILL.md') && trinityPresent(dir, 'index.ts') && trinityPresent(dir, 'test.ts')
+      expect(complete, `${g.atomPath} is complete under both spellings and was still charged`).toBe(false)
+    }
+  })
+
+  it('admin/bar is complete in the .tsx spelling, and is not charged', () => {
+    const dir = join(process.cwd(), 'src', 'admin', 'bar')
+    expect(trinityPresent(dir, 'index.ts')).toBe(true)
+    expect(existsSync(join(dir, 'index.ts'))).toBe(false)
+    expect(linearGaps(process.cwd()).gaps.some((g) => g.atomPath === 'admin/bar')).toBe(false)
   })
 })

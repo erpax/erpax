@@ -134,3 +134,5 @@ export async function reverseRevenueFiscalization(
   const { reversal } = await reverseSale(payload, { originalSaleId: sale.id, reason: args.reason, req: args.req })
   return reversal
 }
+
+/** @index-cross.foldback child=sale/fiscal/revenue parent=sale/fiscal — this cross folds back into its parent. */

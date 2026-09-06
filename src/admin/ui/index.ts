@@ -40,3 +40,5 @@ export type * from './cells'
 export type * from './dashboard'
 export type * from './fields'
 export type * from './nav'
+// Client component — type space only, for the reason recorded above.
+export type * from './ComputedCssAdminRoot'

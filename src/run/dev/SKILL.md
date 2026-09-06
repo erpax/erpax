@@ -202,3 +202,16 @@ Related: [[deploy]] (the prod sibling — `payload migrate`, no dev-push) · [[d
 `no such Durable Object class` warnings) · [[api]] (the Local API ops `smoke.ts` calls).
 
 **Law — [[law]]: a change is confirmed by driving the running app — `smoke.ts` (Local API) for backend/DB, `driver.mjs` (Playwright) for the frontend — launched dev-push OFF for steady-state (push is not idempotent).**
+
+## Why the barrel is a manifest and not a re-export
+
+Not one of these scripts binds a symbol — the single `export` in the folder is a bare `export {}`
+module marker enabling top-level `await` under tsc (TS1375) — and not one guards its top level with
+an `import.meta.url` check. Several end in `process.exit()`.
+
+So a barrel that re-exported them would boot Payload, seed genesis and then **kill the process**, as
+a side effect of anyone importing `@/run/dev`. The lawful form for a folder of executables is a
+manifest of what it offers, never a re-export of what it does. The children are named in the type
+space, which addresses them without importing them.
+
+My first predicate for this counted `export {}` as a binding and called one of the files safe.

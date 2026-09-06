@@ -162,3 +162,5 @@ export function allWorkspaceScopes(mode: 'read' | 'write'): string[] {
 
 /** Every service id in the catalogue. */
 export const WORKSPACE_SERVICES: ReadonlyArray<WorkspaceServiceId> = GOOGLE_WORKSPACE_APIS.map((a) => a.service)
+
+/** @index-cross.foldback child=google/workspace/registry parent=google/workspace — this cross folds back into its parent. */

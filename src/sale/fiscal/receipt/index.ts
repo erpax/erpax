@@ -150,3 +150,5 @@ export async function issueReceiptForSale(
   const { receiptNumber } = await driver.issue(receipt)
   return { receipt, receiptNumber }
 }
+
+/** @index-cross.foldback child=sale/fiscal/receipt parent=sale/fiscal — this cross folds back into its parent. */

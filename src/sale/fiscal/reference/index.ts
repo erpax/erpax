@@ -55,3 +55,5 @@ export const validateReferenceHook =
     await assertNotDecommissioned(req, opts.operatorsSlug ?? 'operators', relId(d.operator), 'operator')
     return data
   }
+
+/** @index-cross.foldback child=sale/fiscal/reference parent=sale/fiscal — this cross folds back into its parent. */
