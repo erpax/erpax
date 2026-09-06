@@ -127,6 +127,52 @@ export function assertSurfacesRead(cwd: string = process.cwd(), ceiling: number)
   )
 }
 
+export interface OpaqueSource {
+  readonly file: string
+  readonly offset: number
+}
+
+/**
+ * A file whose EXTENSION says text and whose BYTES say binary.
+ *
+ * The dual of OPAQUE. That set declares which extensions a text gate may skip; this finds the
+ * files that skip themselves — a single NUL byte makes grep, diff and every shell tool report
+ * NOTHING for the whole file, which reads exactly like a file with nothing in it. Seven source
+ * files carried one, the corpus's own scalpel among them, and every text search over them had
+ * been silently answering "no matches" for as long as they existed.
+ *
+ * The value is never the problem — a NUL is a legitimate key separator. Writing it as the
+ * escape \u0000 is the same string to the compiler and leaves the file readable.
+ */
+export function opaqueSources(cwd: string = process.cwd()): OpaqueSource[] {
+  const out: OpaqueSource[] = []
+  for (const f of walk(join(cwd, 'src'))) {
+    if (OPAQUE.has(extname(f))) continue
+    let b: Buffer
+    try {
+      b = readFileSync(f)
+    } catch {
+      continue
+    }
+    const offset = b.indexOf(0)
+    if (offset >= 0) out.push({ file: relative(cwd, f), offset })
+  }
+  return out.sort((a, b) => a.file.localeCompare(b.file))
+}
+
+/**
+ * Zero is a THEOREM here, not a ratchet: there is no acceptable number of source files that
+ * every text tool reads as empty.
+ */
+export function assertSourcesAreText(cwd: string = process.cwd()): void {
+  const bad = opaqueSources(cwd)
+  if (bad.length === 0) return
+  throw new Error(
+    `✖ rules/domain — ${bad.length} text-extension file(s) carrying a raw control byte, invisible to every text tool:\n` +
+      bad.map((o) => `  ${o.file}  (byte ${o.offset})`).join('\n'),
+  )
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const read = surfacesRead()
   console.log(`rules/domain — ${gateSources().length} wired gate module(s)\n`)

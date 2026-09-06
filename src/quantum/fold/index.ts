@@ -374,7 +374,7 @@ const pairSegments = (segments: readonly LinearSegment[]): LinearSegment[] => {
   // Key by the EXACT path+shape, never linearId: linearId folds the path through a 64-bit hash, and two
   // distinct files can collide there — which made both paired segments resolve to the SAME entry, so only
   // one of a duplicate pair was ever folded (the other kept its copy). The exact string cannot collide.
-  const keyOf = (s: LinearSegment): string => `${s.path} ${s.shape}`
+  const keyOf = (s: LinearSegment): string => `${s.path}\u0000${s.shape}`
   const paired = new Map<string, LinearSegment>()
   for (const [, list] of byShape) {
     if (list.length < 2) continue

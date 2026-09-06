@@ -2,7 +2,15 @@ import { describe, expect, it } from 'vitest'
 import { mkdirSync, mkdtempSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { assertSurfacesRead, corpusSurfaces, gateSources, surfacesRead, unreadSurfaces } from '@/rules/domain'
+import {
+  assertSourcesAreText,
+  assertSurfacesRead,
+  corpusSurfaces,
+  gateSources,
+  opaqueSources,
+  surfacesRead,
+  unreadSurfaces,
+} from '@/rules/domain'
 
 const tree = (files: Record<string, string>): string => {
   const root = mkdtempSync(join(tmpdir(), 'erpax-domain-'))
@@ -55,6 +63,29 @@ describe('rules/domain — a law is enforced on the surfaces its checker reads',
     expect(gateSources(root).some((f) => f.includes('rules/prose'))).toBe(true)
     expect(surfacesRead(root).get('.md')).toEqual(['rules/prose'])
     expect(unreadSurfaces(root)).toEqual([])
+  })
+
+// A raw NUL makes grep, diff and every shell tool report NOTHING for the whole file, which
+  // reads exactly like a file with nothing in it. Seven source files carried one — the corpus's
+  // own scalpel among them — so every text search over them had been answering "no matches"
+  // for as long as they existed. PLANTED here, because a zero is only readable if the
+  // instrument can find a non-zero.
+  it('fires on a PLANTED raw control byte in a .ts file, and never on a declared-opaque one', () => {
+    const NUL = String.fromCharCode(0)
+    const root = tree({
+      'a/index.ts': `const k = \`x${NUL}y\`\n`,
+      'b/index.ts': "const k = 'x\\u0000y'\n",
+      'seed/pic.webp': `RIFF${NUL}WEBP`,
+    })
+    const found = opaqueSources(root)
+    expect(found.map((o) => o.file)).toEqual(['src/a/index.ts'])
+    expect(found[0]!.offset).toBeGreaterThan(0)
+    expect(() => assertSourcesAreText(root)).toThrow(/raw control byte/)
+  })
+
+  it('the live corpus carries no opaque source — zero is a theorem, not a ratchet', () => {
+    expect(opaqueSources(process.cwd())).toEqual([])
+    expect(() => assertSourcesAreText(process.cwd())).not.toThrow()
   })
 
   it('the live corpus is at or under its ceiling, and .lean is no longer blind', () => {

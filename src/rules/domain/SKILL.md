@@ -17,6 +17,28 @@ None of these was a wrong answer. Each was an **unasked question** — the law w
 
 It does **not** judge a gate for having a narrow domain — a narrow domain is usually right. A folder-name law reads no files; an import-cycle law rightly reads only what can carry an import. Flagging those would bury the signal under gates that are working correctly. What is reported is the sharper thing: **a class of file every law is silent about.**
 
+## The dual — a surface that is opaque to itself
+
+`OPAQUE` declares which extensions a text gate may skip. `opaqueSources` finds the files that
+skip themselves: extension says `.ts`, bytes say binary.
+
+One raw NUL and `grep`, `diff` and every shell tool report **nothing** for the entire file —
+output identical to a file with nothing in it. Seven source files carried one, including this
+corpus's own [[scalpel]], the engine every mass edit runs through:
+
+```
+src/anti/corruption/cross-entity.ts · src/instrument/index.ts · src/quantum/fold/index.ts
+src/regeneration/index.ts · src/scalpel/index.ts · src/voting/index.ts · src/wave/gap/index.ts
+```
+
+Each used the byte honestly, as a key separator — `\`${a}\u0000${b}\`` — and the value is not the
+defect. Written as the **escape** it is the same string to the compiler and the file stays
+readable; written raw it takes the whole file out of every text search, silently.
+
+This is the sharpest form of the law above: not *"no gate reads this class"* but *"no tool can
+read this file, and the failure is a clean-looking zero"*. Zero is a **theorem** here — a
+text-extension file that is not text has no legitimate form.
+
 ## The instrument committed its own defect first
 
 The first version resolved only the registry's direct imports and reported **`.md` as blind** — while [[rules]]/prose and [[rules]]/reference plainly read it. The audit's own domain was too narrow, which is precisely what it exists to find. It was not shipped on a number known to be wrong, and the case is pinned in the test.

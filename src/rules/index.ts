@@ -19,6 +19,7 @@ import { fundedSpine } from '@/fund'
 import { skillWeights } from '@/quantum/budget'
 import { durableObjectExportGaps } from '@/cloudflare/binding'
 import { unreachedAtoms } from '@/rules/unreached'
+import { copyCount } from '@/rules/copy'
 import { kernelPath, reflexiveTheorems, unacceptedProofs } from '@/proof/accepted'
 import { unbackedPhenomena } from '@/quantum/interval'
 import { unbackedFigures } from '@/render/scene'
@@ -29,7 +30,7 @@ import { replaceableStandards } from '@/proof/replaceable'
 import { atomListingGaps } from '@/publish/complete'
 import { claimBalance, totalSlack } from '@/rules/slack'
 import { emptyNameFallbacks, unnamedNonText } from '@/rules/alt'
-import { unreadSurfaces } from '@/rules/domain'
+import { opaqueSources, unreadSurfaces } from '@/rules/domain'
 import { startProgressHeartbeat } from '@/cli/progress-heartbeat'
 import { execSync } from 'node:child_process'
 import { waveAccountingGapViolations } from '@/accounting/gaps'
@@ -299,6 +300,10 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // deployed, gated, CLI, shipped in a package, or a vocabulary word — and 80 survive all five.
     // A candidate list, never a purge list: a dynamic reference is invisible to a lexical walk.
     guardian({ axis: 'unreached', violations: unreachedAtoms(cwd).length, baseline: 77 }),
+    // copy — one body at two addresses ([[rules]]/copy). Content-addressed, so same bytes ⇒ same
+    // finding: a theorem, not a similarity score. It caught its own author twice on the day it was
+    // written, which is the argument for a gate over a stated law. Ratchets from 44.
+    guardian({ axis: 'copy', violations: copyCount(cwd), baseline: 44 }),
     // proof/accepted — a .lean file the kernel does not accept as proof. Four of five carry `sorry`
     // or do not compile, under a directory named `verify` that nothing ever ran. Ratchets from 4;
     // the horizon is 0, because a theorem proved by `sorry` states a claim and proves nothing.
@@ -326,6 +331,12 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // this session's four cracks were one gap: the law enforced on .ts, violated in .lean, in a
     // caption, in .tsx. Ratchets from the live 5; zero is the horizon, not a theorem.
     guardian({ axis: 'domain', violations: unreadSurfaces(cwd).length, baseline: 5 }),
+    // opaque-source — the DUAL of the domain axis: not a surface no gate reads, but a file that
+    // reads as EMPTY to every text tool. One raw NUL byte and grep, diff and the shell report no
+    // matches for the whole file — silence that is indistinguishable from a clean result. Seven
+    // carried one, this corpus's own scalpel among them. Zero is a theorem: a text-extension
+    // file that is not text has no legitimate form, and the escape \\u0000 is the same value.
+    guardian({ axis: 'opaque-source', violations: opaqueSources(cwd).length, baseline: 0 }),
     // root-declared — a content-address fold that does not say whether it addresses the MEMBERS
     // or the ORDER ([[merge]]/order). Ratchets from 8; each needs a per-case read, because a
     // wrong tag is worse than none.
@@ -566,3 +577,4 @@ if (import.meta.url === `file://${process.argv[1]}`) {
 
 export * from './slack'
 export * from './unreached'
+export * from './copy'

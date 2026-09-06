@@ -195,7 +195,7 @@ export function paidFor(): readonly Instrument[] {
 export function assertInstrument(question: string, using: string): void {
   const known = instrumentFor(question)
   if (!known) return
-  if (using.toLowerCase().includes(known.wrong.toLowerCase().split(' ')[0] ?? ' ')) {
+  if (using.toLowerCase().includes(known.wrong.toLowerCase().split(' ')[0] ?? '\u0000')) {
     throw new Error(
       `instrument: "${using}" does not answer "${question}" — ${known.failure}. Use: ${known.right}`,
     )
