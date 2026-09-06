@@ -36,7 +36,7 @@ import { updateFiscalCalendarOnPeriodChange } from '@/update/fiscal/calendar/on/
  *   JournalEntries, GLPostings, BankStatements, PeriodEndAdjustments, …) may
  *   write a record whose posting date falls inside [startDate, endDate].
  *   Enforced by `validateNotLocked` from
- *   `@/utility/period-lock`. Only role 'admin' may
+ *   `@/utility/period/lock`. Only role 'admin' may
  *   transition status to / from 'locked'.
  */
 export const FiscalPeriods: CollectionConfig = {

@@ -1,10 +1,10 @@
 /**
- * Accounting Utilities — calculations + period-lock barrel.
+ * Accounting Utilities — calculations + period/lock barrel.
  *
- * @see ./calculations.ts ./period-lock.ts
+ * @see ./calculations.ts ./period/lock/index.ts
  * @see ../index.ts for master citation index
  * @see docs/STANDARDS.md §4.2
  */
 
 export * from './calculations';
-export * from './period-lock';
+export * from './period/lock';

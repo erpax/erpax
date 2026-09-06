@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { validateNotLocked } from './period-lock'
+import { validateNotLocked } from './index'
 
 const run = (data: Record<string, unknown>) =>
   (validateNotLocked as unknown as (a: unknown) => Promise<unknown>)({
@@ -8,7 +8,7 @@ const run = (data: Record<string, unknown>) =>
     operation: 'create',
   })
 
-describe('utility/period-lock — the control that is actually wired', () => {
+describe('utility/period/lock — the control that is actually wired', () => {
   /**
    * THE §404 BYPASS. `findLockedPeriodForDate` asks the database for `startDate <= d <= endDate`.
    * Given garbage that matches NOTHING, so `locked` is null and the posting is allowed — a period

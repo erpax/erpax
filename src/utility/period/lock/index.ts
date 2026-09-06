@@ -1,16 +1,5 @@
 /**
- * Period-lock enforcement for GL-posting collections.
- *
- * Mirrors Ruby ERPAX's `tenant.accounting_locked_for_date?(date)`: once a
- * fiscal period's status === 'locked', no transaction with a posting date
- * inside that period may be created or updated.
- *
- * Slice HHH (2026-05-10): rewired to the canonical `tenant` field. The
- * previous `host` / `data.host` / `req.user.host` reads were post-Slice-CCC
- * dead code — `host` no longer exists on user, document, or `fiscal-periods`
- * row. The query silently returned empty result sets, so the period-lock
- * was never enforced. Now uses the multi-tenant-plugin shape
- * (`req.user.tenants[0]?.tenant`) and the `tenant` collection field.
+ * Period-lock enforcement for GL-posting collections — see ./SKILL.md.
  *
  * @standard ISO-8601-1:2019 date-time utc-canonical-form
  * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -28,10 +17,7 @@ import type { CollectionBeforeChangeHook, PayloadRequest } from 'payload'
 // gl-postings is actually functional (it stores no plain `date` field).
 const POSTABLE_DATE_FIELDS = ['date', 'transactionDate', 'postingDate', 'effectiveDate', 'sourceDate', 'postedDate'] as const
 
-/**
- * Returns the locked fiscal period covering `isoDate` for `tenantId`,
- * or `null` if no locked period covers that date.
- */
+/** The locked fiscal period covering `isoDate` for `tenantId`, or null. */
 export async function findLockedPeriodForDate(
   req: PayloadRequest,
   isoDate: string,
@@ -55,18 +41,8 @@ export async function findLockedPeriodForDate(
   }) ?? null
 }
 
-/**
- * `beforeChange` hook drop-in for any GL-posting collection (Invoices, Payments,
- * Entries, Equations, JournalEntries, GLPostings, BankStatements,
- * PeriodEndAdjustments, …).
- *
- *   1. Picks the posting date — first present of: `date`, `transactionDate`,
- *      `postingDate`, `effectiveDate`.
- *   2. Looks up a locked fiscal-period covering that date for the tenant.
- *   3. Throws if found, blocking the write.
- *
- * Skips silently when no date is set yet (drafts) or no tenant has been resolved.
- */
+/** `beforeChange` drop-in for any GL-posting collection: pick the posting date, find a locked
+ * fiscal period covering it, throw. Silent on a draft with no date and on an unresolved tenant. */
 export const validateNotLocked: CollectionBeforeChangeHook = async ({ data, req }) => {
   if (!data || !req.user) return data
 
@@ -87,17 +63,8 @@ export const validateNotLocked: CollectionBeforeChangeHook = async ({ data, req 
   }
   if (!postingDate) return data
 
-  /**
-   * FAIL CLOSED on a date that does not parse.
-   *
-   * `findLockedPeriodForDate` asks the database for a period with `startDate <= d <= endDate`. Given
-   * garbage, that comparison matches NOTHING, `locked` comes back null, and the posting is ALLOWED —
-   * a period lock that opens on a malformed date is a §404 bypass with no error anywhere.
-   *
-   * [[period]]/lock/checker had this leg and proved it; the hook that is actually wired did not. An
-   * unparseable posting date is not "no date": the field is present and wrong, and the only safe
-   * reading of a control that cannot evaluate its input is refusal.
-   */
+  // Fail CLOSED on a date that does not parse — an unparseable date matches no period, and
+  // "matched nothing" must never read as "nothing is locked". See ./SKILL.md.
   if (Number.isNaN(new Date(postingDate).getTime())) {
     throw new Error(
       `Period lock cannot evaluate posting date ${String(postingDate).slice(0, 32)} — refusing rather than ` +
