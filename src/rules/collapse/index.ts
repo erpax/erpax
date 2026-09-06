@@ -55,12 +55,25 @@ export interface Subset {
   readonly extra: readonly string[]
 }
 
-/** Every collection's true shape, read from the types Payload GENERATED from the live config. */
-export function shapesOf(cwd: string = process.cwd()): CollectionShape[] {
+export interface PayloadInterfaces {
+  /** collection slug → the interface name Payload generated for it. */
+  readonly ifaceOfSlug: ReadonlyMap<string, string>
+  /** interface name → its declaration, so a caller can read fields or relationships. */
+  readonly ifaces: ReadonlyMap<string, ts.InterfaceDeclaration>
+}
+
+/**
+ * The booted config's own interfaces, parsed from the types Payload GENERATED.
+ *
+ * ONE parse, because there were two: `fund` grew a byte-identical copy of this visitor — 136 nodes,
+ * addressed to the same hash by [[rules]]/copy — and two readings of the config can drift into
+ * disagreeing about which collections exist, which is precisely the failure this atom exists to
+ * measure elsewhere.
+ */
+export function payloadInterfaces(cwd: string = process.cwd()): PayloadInterfaces {
   const file = join(cwd, 'src/payload-types.ts')
   const text = readFileSync(file, 'utf8')
   const src = ts.createSourceFile(file, text, ts.ScriptTarget.ESNext, true)
-
   const ifaceOfSlug = new Map<string, string>()
   const ifaces = new Map<string, ts.InterfaceDeclaration>()
   const visit = (n: ts.Node): void => {
@@ -81,6 +94,12 @@ export function shapesOf(cwd: string = process.cwd()): CollectionShape[] {
     ts.forEachChild(n, visit)
   }
   visit(src)
+  return { ifaceOfSlug, ifaces }
+}
+
+/** Every collection's true shape, read from the types Payload GENERATED from the live config. */
+export function shapesOf(cwd: string = process.cwd()): CollectionShape[] {
+  const { ifaceOfSlug, ifaces } = payloadInterfaces(cwd)
 
   const out: CollectionShape[] = []
   for (const [slug, iname] of ifaceOfSlug) {

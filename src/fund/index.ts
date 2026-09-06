@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import ts from 'typescript'
+import { payloadInterfaces } from '@/rules/collapse'
 
 /**
  * fund — can a funded project actually be run here, in any domain?
@@ -36,30 +37,9 @@ const isRegistryInterface = (name: string): boolean =>
  * `ProjectTask` is a different token and never counts as an edge to `Project`.
  */
 export function collectionGraph(cwd: string = process.cwd()): CollectionGraph {
-  const file = join(cwd, 'src/payload-types.ts')
-  const text = readFileSync(file, 'utf8')
-  const src = ts.createSourceFile(file, text, ts.ScriptTarget.ESNext, true)
-
-  const ifaceOfSlug = new Map<string, string>()
-  const ifaces = new Map<string, ts.InterfaceDeclaration>()
-  const visit = (n: ts.Node): void => {
-    if (ts.isInterfaceDeclaration(n)) {
-      ifaces.set(n.name.text, n)
-      if (n.name.text === 'Config') {
-        for (const m of n.members) {
-          if (ts.isPropertySignature(m) && m.name?.getText() === 'collections' && m.type && ts.isTypeLiteralNode(m.type)) {
-            for (const c of m.type.members) {
-              if (ts.isPropertySignature(c) && c.type) {
-                ifaceOfSlug.set(c.name!.getText().replace(/['"]/g, ''), c.type.getText().replace(/\[\]$/, ''))
-              }
-            }
-          }
-        }
-      }
-    }
-    ts.forEachChild(n, visit)
-  }
-  visit(src)
+  // ONE parse of the booted config, shared with [[rules]]/collapse. This was a byte-identical
+  // copy of that visitor until [[rules]]/copy addressed both bodies to the same hash.
+  const { ifaceOfSlug, ifaces } = payloadInterfaces(cwd)
 
   const slugOfIface = new Map([...ifaceOfSlug].map(([slug, iface]) => [iface, slug]))
   const edges: CollectionEdge[] = []

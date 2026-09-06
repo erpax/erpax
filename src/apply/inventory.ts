@@ -2,14 +2,14 @@
  * apply/inventory — walk src/ for session-law coverage (CLI/report only).
  */
 import { trinityPresent } from '@/law/folder/constants'
-import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
-import { join, relative, dirname } from 'node:path'
+import { existsSync, readFileSync } from 'node:fs'
+import { join } from 'node:path'
+import { listAtomPaths } from '@/readme/compute'
+
+const SRC = 'src'
 import { ATOM_LEDGER_PATHS } from '@/path/hub'
 import { nodeOf } from '@/uuid/matrix'
 import type { DomainCoverage, SessionLawDomain, SessionLawInventory } from './report'
-
-const SRC = 'src'
-const SKIP = new Set(['app', 'migrations'])
 
 const CORE_PATHS = new Set([
   'path',
@@ -20,22 +20,6 @@ const CORE_PATHS = new Set([
   'entropy',
   'law',
 ])
-
-const walkSkills = (dir: string): string[] => {
-  const out: string[] = []
-  for (const e of readdirSync(dir)) {
-    const p = join(dir, e)
-    if (!statSync(p).isDirectory() || SKIP.has(e)) continue
-    if (existsSync(join(p, 'SKILL.md'))) out.push(p)
-    out.push(...walkSkills(p))
-  }
-  return out
-}
-
-const listAtomPaths = (cwd: string): string[] =>
-  walkSkills(join(cwd, SRC))
-    .map((sk) => relative(join(cwd, SRC), dirname(sk)).replace(/\\/g, '/'))
-    .sort()
 
 const domainOf = (atomPath: string): SessionLawDomain => {
   if (CORE_PATHS.has(atomPath)) return 'core'

@@ -34,37 +34,8 @@ import type {
   AccountIdentification,
   RemittanceInformation,
 } from '@/iso/20022'
-import { escapeXml } from '@/xml/escape'
+import { leaf, wrap } from '@/xml/element'
 import { formatAmount } from '@/format/amount'
-
-const escapeAttrs = (
-  attrs: Record<string, string | number | undefined>,
-): string => {
-  const pairs: string[] = []
-  for (const [key, value] of Object.entries(attrs)) {
-    if (value === undefined) continue
-    pairs.push(`${key}="${escapeXml(value)}"`)
-  }
-  return pairs.length ? ' ' + pairs.join(' ') : ''
-}
-
-const leaf = (
-  tag: string,
-  value: string | number | undefined | null,
-  attrs?: Record<string, string | number | undefined>,
-): string => {
-  if (value === undefined || value === null || value === '') return ''
-  return `<${tag}${attrs ? escapeAttrs(attrs) : ''}>${escapeXml(value)}</${tag}>`
-}
-
-const wrap = (
-  tag: string,
-  ...children: Array<string | undefined | null>
-): string => {
-  const inner = children.filter((c) => Boolean(c)).join('\n')
-  if (!inner) return ''
-  return `<${tag}>\n${inner}\n</${tag}>`
-}
 
 const formatDate = (date: Date | string): string =>
   typeof date === 'string'

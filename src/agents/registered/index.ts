@@ -19,3 +19,4 @@ export {
   TRAINING_EMIT,
   planTrainingEffects,
 } from './hr/training'
+export { ownedChainStepAudit } from './step'

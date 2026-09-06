@@ -6,6 +6,7 @@
  */
 import type { DomainAgent, AgentEffect, DomainEvent } from '@/agent'
 import type { SpecChainStep } from '@/spec/generator'
+import { ownedChainStepAudit } from './step'
 
 export const CustomerSupportAgent: DomainAgent = {
   id: 'customer-support',
@@ -13,10 +14,7 @@ export const CustomerSupportAgent: DomainAgent = {
   subscribesTo: ['escalation:raised', 'customer:complaint', 'sla:breached'],
   emits: ['ticket:opened', 'ticket:resolved'],
   async onChainStep(ctx, step: SpecChainStep) {
-    const collection = step.note?.match(/\bcollection=([\w-]+)/)?.[1]
-    const action = step.note?.match(/\baction=([\w-]+)/)?.[1]
-    if (!collection || !this.ownsCollections.includes(collection)) return []
-    return [{ kind: 'audit', leaf: { tenantId: ctx.tenantId, subjectCollection: collection, subjectId: 'pending', action: action ?? 'unknown', chainId: step.chainId, chainStepId: `${String(step.stepIndex).padStart(2, '0')}-${collection}-${action ?? 'step'}` } }]
+    return ownedChainStepAudit(ctx, step, this.ownsCollections)
   },
   async onEvent(ctx, ev: DomainEvent): Promise<AgentEffect[]> {
     return [{ kind: 'audit', leaf: { tenantId: ctx.tenantId, subjectCollection: 'audit-events', subjectId: ev.id, action: 'customer-support-handled-event' } }]

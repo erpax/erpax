@@ -21,6 +21,7 @@
  * @see ./list.ts (parse/reconcile) · ./taggedWith.ts (reverse read) · ../tags/taggings/counter.ts
  */
 import { asSystem, assertMayWrite, type Subsystem } from '@/principal'
+import { polymorphicId as relId } from '@/field/relation'
 import type { CollectionSlug, Payload, Where } from 'payload'
 import { parseTagList, reconcileTags } from './list'
 
@@ -42,14 +43,6 @@ export interface TagTarget {
 }
 
 /** Normalise a relationship value (id, populated `{ id }`, or `{ value }`) to its id. */
-const relId = (v: unknown): string | number | null => {
-  if (v == null) return null
-  if (typeof v === 'object') {
-    const o = v as { value?: string | number; id?: string | number }
-    return o.value ?? o.id ?? null
-  }
-  return v as string | number
-}
 
 const tenantClauseOf = (tenantId?: string | number): Where[] =>
   tenantId != null ? [{ tenant: { equals: tenantId } } as Where] : []

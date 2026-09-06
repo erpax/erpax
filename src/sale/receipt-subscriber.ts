@@ -11,6 +11,7 @@
  */
 
 import type { Payload, PayloadRequest } from 'payload'
+import { relationId as relId } from '@/field/relation'
 import { v4 as uuid } from 'uuid'
 import { eventEmitter, type EventEmitterService } from '@/event/emitter/service'
 import { buildFiscalReceipt, type FiscalSaleInput } from './fiscal/receipt'
@@ -25,14 +26,6 @@ interface SaleDoc extends FiscalSaleInput {
 }
 
 /** Resolve a relationship value to its id (string, number, or `{ id }` object). */
-function relId(v: unknown): string | number | undefined {
-  if (typeof v === 'string' || typeof v === 'number') return v
-  if (v && typeof v === 'object' && 'id' in v) {
-    const id = (v as { id?: unknown }).id
-    if (typeof id === 'string' || typeof id === 'number') return id
-  }
-  return undefined
-}
 
 /**
  * Build + persist a `receipts` row for a closed sale; link it back on the sale,

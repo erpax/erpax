@@ -29,16 +29,21 @@
  * @see ./SKILL.md -- ./plugin -- ../constitution -- ../convention/sealed
  */
 
-import { exactCeil, exactMax, exactMin } from '@/algebra'
+import { exactMax } from '@/algebra'
+import { TokenBucket } from '@/api/integration'
+import type { RateLimit } from '@/api/integration'
+
+/**
+ * The limiter's mechanism is NOT re-implemented here. `RateLimit` and `TokenBucket` were written
+ * in this atom first and generalised into @/api/integration; the two bodies stayed byte-identical,
+ * which is one truth at two addresses. Trello keeps what is Trello's — the published numbers and
+ * the pairing of the two buckets — and imports the mechanism.
+ */
+export type { RateLimit }
+export { TokenBucket }
 
 /** Trello's REST root. Every call is `<base>/<path>?key=&token=`. */
 export const TRELLO_BASE = 'https://api.trello.com/1'
-
-/** A published rate limit — `capacity` requests per `windowMs`, refilled continuously. */
-export interface RateLimit {
-  readonly capacity: number
-  readonly windowMs: number
-}
 
 /**
  * Trello's published limits: 300 requests per 10 seconds per API KEY, and 100 per 10 seconds per
@@ -46,42 +51,8 @@ export interface RateLimit {
  * @see https://developer.atlassian.com/cloud/trello/guides/rest-api/rate-limits/
  */
 export const TRELLO_LIMITS: { readonly key: RateLimit; readonly token: RateLimit } = {
-  key: { capacity: 300, windowMs: 10_000 },
-  token: { capacity: 100, windowMs: 10_000 },
-}
-
-/**
- * A continuous-refill token bucket. It never rejects: past the line `reserve()` returns the number
- * of milliseconds the caller owes, and the debt is carried in the bucket, so a burst of N QUEUES
- * into a schedule rather than failing. Dropping is the easy behaviour and the wrong one — the caller
- * loses work it already decided to do.
- */
-export class TokenBucket {
-  private tokens: number
-  private last: number
-
-  constructor(
-    private readonly limit: RateLimit,
-    private readonly now: () => number = Date.now,
-  ) {
-    this.tokens = limit.capacity
-    this.last = now()
-  }
-
-  /** Refill rate in tokens per millisecond — capacity spread continuously across the window. */
-  private get rate(): number {
-    return this.limit.capacity / this.limit.windowMs
-  }
-
-  /** Reserve one slot. Returns the ms to wait before it may be used — 0 while the bucket has one. */
-  reserve(): number {
-    const t = this.now()
-    this.tokens = exactMin(this.limit.capacity, this.tokens + (t - this.last) * this.rate)
-    this.last = t
-    const owed = this.tokens >= 1 ? 0 : exactCeil((1 - this.tokens) / this.rate)
-    this.tokens -= 1
-    return owed
-  }
+  key: { scope: 'key', capacity: 300, windowMs: 10_000 },
+  token: { scope: 'token', capacity: 100, windowMs: 10_000 },
 }
 
 /** Both published limits at once — the wait is the larger, because both must be satisfied. */

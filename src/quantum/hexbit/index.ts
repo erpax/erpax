@@ -166,6 +166,21 @@ export function digitalRootPacked(w: Uint32Array): number {
   return n === 0 ? 0 : ((n - 1) % 9) + 1
 }
 
+/**
+ * Median of `runs` timings, in ms. ONE helper: two benchmarks here each grew their own identical
+ * copy, and `rules/copy` addressed both bodies to the same 87 nodes — written by the session that
+ * built the detector, an hour after stating the law it breaks.
+ */
+const medianMs = (f: () => void, runs = 5): number => {
+  const ts: number[] = []
+  for (let r = 0; r < runs; r++) {
+    const t0 = process.hrtime.bigint()
+    f()
+    ts.push(Number(process.hrtime.bigint() - t0) / 1e6)
+  }
+  return ts.sort((a, b) => a - b)[(runs / 2) | 0]!
+}
+
 export interface BreakEven {
   /** Operations per value at which packing first wins. */
   readonly ops: number
@@ -197,20 +212,11 @@ export function carrierBreakEven(n = 5_000, maxK = 16): BreakEven | null {
     }
     return s === 0 ? 0 : ((s - 1) % 9) + 1
   }
-  const time = (f: () => void, runs = 5): number => {
-    const ts: number[] = []
-    for (let r = 0; r < runs; r++) {
-      const t0 = process.hrtime.bigint()
-      f()
-      ts.push(Number(process.hrtime.bigint() - t0) / 1e6)
-    }
-    return ts.sort((a, b) => a - b)[(runs / 2) | 0]!
-  }
   for (let k = 1; k <= maxK; k++) {
-    const fromString = time(() => {
+    const fromString = medianMs(() => {
       for (const h of values) for (let j = 0; j < k; j++) rootOfString(h)
     })
-    const packed = time(() => {
+    const packed = medianMs(() => {
       for (const h of values) {
         const w = toU32x4(h)
         for (let j = 0; j < k; j++) digitalRootPacked(w)
@@ -232,19 +238,10 @@ export function carrierBreakEven(n = 5_000, maxK = 16): BreakEven | null {
 export function packingLosesAtOne(n = 4_000): boolean {
   const values: string[] = []
   for (let i = 0; i < n; i++) values.push(sampleHex(i))
-  const time = (f: () => void, runs = 5): number => {
-    const ts: number[] = []
-    for (let r = 0; r < runs; r++) {
-      const t0 = process.hrtime.bigint()
-      f()
-      ts.push(Number(process.hrtime.bigint() - t0) / 1e6)
-    }
-    return ts.sort((a, b) => a - b)[(runs / 2) | 0]!
-  }
-  const fromString = time(() => {
+  const fromString = medianMs(() => {
     for (const h of values) digitalRootOfHex(h)
   })
-  const packed = time(() => {
+  const packed = medianMs(() => {
     for (const h of values) digitalRootPacked(toU32x4(h))
   })
   return packed > fromString

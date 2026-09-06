@@ -140,28 +140,6 @@ export const descriptionField: Field = {
 }
 
 /**
- * GL Account reference with denormalized display fields
- */
-export const glAccountField = (required = false): Field[] => [
-  {
-    name: 'glAccount',
-    type: 'relationship',
-    relationTo: 'gl-accounts',
-    required,
-  },
-  {
-    name: 'accountNumber',
-    type: 'text',
-    admin: { disabled: true },
-  },
-  {
-    name: 'accountName',
-    type: 'text',
-    admin: { disabled: true },
-  },
-]
-
-/**
  * Status field with common statuses
  */
 export const statusField = (
@@ -337,114 +315,15 @@ export const statementStatusField: Field = {
 }
 
 /**
- * Build a Payload `select` field driven by a standards-registry options
- * array. Pass any `*_OPTIONS` constant from `src/standards/<id>/index.ts`.
- *
- * @example
- *   taxonomySelect('scope', GHG_SCOPE_OPTIONS, { defaultValue: 'scope_1' })
- *   taxonomySelect('incoterms', INCOTERM_OPTIONS, { required: true })
+ * The six builders re-exported here are NOT re-implemented — they are the same bodies, and were literally
+ * byte-identical to @/base/accounting/field (152 importers to this module's 6). One truth, one
+ * address: this module re-exports them and keeps only the shapes it alone defines.
  */
-export const taxonomySelect = <T extends string>(
-  name: string,
-  options: ReadonlyArray<{ label: string; value: T }>,
-  opts: {
-    required?: boolean
-    defaultValue?: T
-    description?: string
-    hasMany?: boolean
-    index?: boolean
-  } = {},
-): Field =>
-  // SelectField is discriminated on `hasMany`; a single spread-built literal
-  // can't satisfy either union arm, so assert the assembled select field.
-  ({
-    name,
-    type: 'select',
-    ...(opts.required ? { required: true } : {}),
-    ...(opts.defaultValue !== undefined ? { defaultValue: opts.defaultValue } : {}),
-    ...(opts.hasMany ? { hasMany: true } : {}),
-    ...(opts.index ? { index: true } : {}),
-    options: options.map((o) => ({ label: o.label, value: o.value })),
-    ...(opts.description ? { admin: { description: opts.description } } : {}),
-  }) as Field
-
-/**
- * Tenant-unique human-readable reference (e.g. `INV-2026-001`,
- * `PROV-2026-001`, `WIP-2026-04-PRJ-001`). Recurs in 30+ collections.
- *
- * Defaults: `text`, required, unique, indexed.
- */
-export const referenceField = (
-  opts: { name?: string; description?: string; required?: boolean } = {},
-): Field => ({
-  name: opts.name ?? 'reference',
-  type: 'text',
-  required: opts.required ?? true,
-  unique: true,
-  index: true,
-  ...(opts.description
-    ? { admin: { description: opts.description } }
-    : {}),
-})
-
-/**
- * Reference to the IFRS-10 §B86 reporting legal entity. Recurs across
- * accounting / consolidation / ESG / TP collections; should always be
- * the same shape so consolidation can join unambiguously.
- */
-export const legalEntityField = (
-  opts: { required?: boolean; description?: string } = {},
-): Field => ({
-  name: 'legalEntity',
-  type: 'relationship',
-  relationTo: 'legal-entities',
-  ...(opts.required ? { required: true } : {}),
-  admin: {
-    description:
-      opts.description ??
-      'Reporting legal entity per IFRS-10 §B86 (distinct from `tenants` DB partition).',
-  },
-})
-
-/**
- * ISO 3166-1 alpha-2 country code as a text field with the standard
- * description + indexing. Recurs across 20+ collections (legal-entities,
- * customers, vendors, tax-jurisdictions, tracking-events, customs-
- * declarations, etc.).
- *
- * Validation against the canonical alpha-2 set lives in
- * `src/iso/3166/1/validate/index.ts`; collections SHOULD invoke it
- * from a `validate` hook when strict checking is needed.
- *
- * @standard ISO 3166-1:2020 country-codes
- */
-export const countryCodeField = (
-  opts: { name?: string; required?: boolean; description?: string } = {},
-): Field => ({
-  name: opts.name ?? 'countryCode',
-  type: 'text',
-  ...(opts.required ? { required: true } : {}),
-  index: true,
-  admin: {
-    description:
-      opts.description ?? 'ISO 3166-1 alpha-2 country code (e.g. BG, DE, RO).',
-  },
-})
-
-/**
- * NACE Rev.2 economic activity code text field (e.g. `62.01`).
- * Companion section enum lives in `src/nace/rev2/index.ts`.
- *
- * @standard EU Regulation (EC) No 1893/2006 NACE Rev.2
- */
-export const naceCodeField = (
-  opts: { name?: string; description?: string } = {},
-): Field => ({
-  name: opts.name ?? 'naceCode',
-  type: 'text',
-  admin: {
-    description:
-      opts.description ??
-      'NACE Rev.2 economic activity code (e.g. `62.01`). Used by EU CSRD ESRS 2 §80(b) sector classification.',
-  },
-})
+export {
+  glAccountField,
+  taxonomySelect,
+  referenceField,
+  legalEntityField,
+  countryCodeField,
+  naceCodeField,
+} from '@/base/accounting/field'

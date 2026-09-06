@@ -38,7 +38,7 @@ import { exactAbs } from '@/algebra'
  */
 
 import type { Payload } from 'payload'
-import { escapeXml } from '@/xml/escape'
+import { leaf, wrap } from '@/xml/element'
 import { formatAmount } from '@/format/amount'
 import type {
   SafTAuditFile,
@@ -869,21 +869,7 @@ export const buildAuditFile = async (
 // 1.04 namespace + hash chain) override the namespace + add their own
 // per-section renderers.
 
-// escapeXml + formatAmount: shared atoms — see @/utilities/xml-escape, @/utilities/format-amount
-
-const leaf = (
-  tag: string,
-  value: string | number | undefined | null,
-): string => {
-  if (value === undefined || value === null || value === '') return ''
-  return `<${tag}>${escapeXml(value)}</${tag}>`
-}
-
-const wrap = (tag: string, ...children: Array<string | undefined | null>): string => {
-  const inner = children.filter((c) => Boolean(c)).join('\n')
-  if (!inner) return ''
-  return `<${tag}>\n${inner}\n</${tag}>`
-}
+// escapeXml · formatAmount · leaf · wrap: shared atoms — @/xml/escape, @/format/amount, @/xml/element
 
 const renderAddress = (
   tag: string,

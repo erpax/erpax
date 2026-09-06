@@ -29,47 +29,10 @@ import type {
   LineVatInformation,
 } from '@/en/16931'
 import { escapeXml } from '@/xml/escape'
+import { leaf, wrap } from '@/xml/element'
 import { formatAmount } from '@/format/amount'
 
 // ─── XML primitives ───────────────────────────────────────────────────
-
-const escapeAttrs = (
-  attrs: Record<string, string | number | undefined>,
-): string => {
-  const pairs: string[] = []
-  for (const [key, value] of Object.entries(attrs)) {
-    if (value === undefined) continue
-    pairs.push(`${key}="${escapeXml(value)}"`)
-  }
-  return pairs.length ? ' ' + pairs.join(' ') : ''
-}
-
-/**
- * Render a leaf element: `<cbc:Tag>value</cbc:Tag>` with optional
- * attributes. Returns empty string when value is undefined / empty
- * (so callers can compose without `if` blocks for optional fields).
- */
-const leaf = (
-  tag: string,
-  value: string | number | undefined | null,
-  attrs?: Record<string, string | number | undefined>,
-): string => {
-  if (value === undefined || value === null || value === '') return ''
-  return `<${tag}${attrs ? escapeAttrs(attrs) : ''}>${escapeXml(value)}</${tag}>`
-}
-
-/**
- * Render a wrapper element with nested children. Drops empty children.
- * Wraps children in newlines when there's at least one non-empty.
- */
-const wrap = (
-  tag: string,
-  ...children: Array<string | undefined | null>
-): string => {
-  const inner = children.filter((c) => Boolean(c)).join('\n')
-  if (!inner) return ''
-  return `<${tag}>\n${inner}\n</${tag}>`
-}
 
 // ─── Per-element renderers ────────────────────────────────────────────
 

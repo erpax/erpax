@@ -1,4 +1,5 @@
 import { exactMax } from '@/algebra'
+import { polymorphicId as relId } from '@/field/relation'
 /**
  * taggings/counter — the `taggings_count` counter cache (port of the gem's
  * `counter_cache: true` on `Tagging.belongs_to :tag`). One source of truth for
@@ -16,15 +17,6 @@ import { exactMax } from '@/algebra'
  */
 import type { CollectionAfterChangeHook, CollectionAfterDeleteHook, Payload } from 'payload'
 import type { CollectionSlug } from 'payload'
-
-const relId = (v: unknown): string | number | null => {
-  if (v == null) return null
-  if (typeof v === 'object') {
-    const o = v as { value?: string | number; id?: string | number }
-    return o.value ?? o.id ?? null
-  }
-  return v as string | number
-}
 
 /** Adjust a tag's `taggingsCount` by ±1, clamped at 0. Guarded — never throws into the caller. */
 async function adjustCount(payload: Payload, tagId: string | number | null, delta: number): Promise<void> {

@@ -16,16 +16,9 @@
  */
 
 import type { CollectionBeforeChangeHook, PayloadRequest } from 'payload'
+import { relationId as relId } from '@/field/relation'
 
 /** Resolve a relationship value to its id (string, number, or `{ id }` object). */
-function relId(v: unknown): string | number | undefined {
-  if (typeof v === 'string' || typeof v === 'number') return v
-  if (v && typeof v === 'object' && 'id' in v) {
-    const id = (v as { id?: unknown }).id
-    if (typeof id === 'string' || typeof id === 'number') return id
-  }
-  return undefined
-}
 
 /** Throw if the referenced register row exists and is decommissioned. */
 async function assertNotDecommissioned(

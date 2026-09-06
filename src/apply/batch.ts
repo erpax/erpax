@@ -2,31 +2,11 @@
  * apply/batch — run session-law generators per domain batch.
  */
 import { execSync } from 'node:child_process'
-import { existsSync, readdirSync, statSync } from 'node:fs'
-import { join, relative, dirname } from 'node:path'
+import { listAtomPaths } from '@/readme/compute'
 import { publish, sessionApplyPath, subscribe } from '@/agent/communication/realtime'
 import { quantumModeDefault } from '@/quantum/bindings'
 import { withQuantumContext } from '@/quantum/context'
 import type { SessionLawDomain } from './report'
-
-const SRC = 'src'
-const SKIP = new Set(['app', 'migrations'])
-
-const walkSkills = (dir: string): string[] => {
-  const out: string[] = []
-  for (const e of readdirSync(dir)) {
-    const p = join(dir, e)
-    if (!statSync(p).isDirectory() || SKIP.has(e)) continue
-    if (existsSync(join(p, 'SKILL.md'))) out.push(p)
-    out.push(...walkSkills(p))
-  }
-  return out
-}
-
-const listAtomPaths = (cwd: string): string[] =>
-  walkSkills(join(cwd, SRC))
-    .map((sk) => relative(join(cwd, SRC), dirname(sk)).replace(/\\/g, '/'))
-    .sort()
 
 const CORE_PATHS = new Set([
   'path',

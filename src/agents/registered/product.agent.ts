@@ -7,6 +7,7 @@
  */
 import type { DomainAgent, AgentEffect, DomainEvent } from '@/agent'
 import type { SpecChainStep } from '@/spec/generator'
+import { ownedChainStepAudit } from './step'
 
 export const ProductAgent: DomainAgent = {
   id: 'product',
@@ -14,10 +15,7 @@ export const ProductAgent: DomainAgent = {
   subscribesTo: ['milestone:reached', 'project:completed'],
   emits: ['milestone:reached', 'project:completed'],
   async onChainStep(ctx, step: SpecChainStep) {
-    const collection = step.note?.match(/\bcollection=([\w-]+)/)?.[1]
-    const action = step.note?.match(/\baction=([\w-]+)/)?.[1]
-    if (!collection || !this.ownsCollections.includes(collection)) return []
-    return [{ kind: 'audit', leaf: { tenantId: ctx.tenantId, subjectCollection: collection, subjectId: 'pending', action: action ?? 'unknown', chainId: step.chainId, chainStepId: `${String(step.stepIndex).padStart(2, '0')}-${collection}-${action ?? 'step'}` } }]
+    return ownedChainStepAudit(ctx, step, this.ownsCollections)
   },
   async onEvent(ctx, ev: DomainEvent): Promise<AgentEffect[]> {
     return [{ kind: 'audit', leaf: { tenantId: ctx.tenantId, subjectCollection: 'audit-events', subjectId: ev.id, action: 'product-handled-event' } }]

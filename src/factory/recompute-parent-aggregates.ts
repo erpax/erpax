@@ -1,4 +1,5 @@
 import { exactMaxOf, exactMinOf } from '@/algebra'
+import { relationIdString as relId } from '@/field/relation'
 /**
  * recompute-parent-aggregates — generic afterChange/afterDelete factory that
  * caches a parent document's denormalised SUM / COUNT / MIN / MAX columns from
@@ -70,17 +71,6 @@ export interface RecomputeParentAggregatesConfig {
 }
 
 const CTX_IN_PROGRESS = '_recomputeAggregatesInProgress'
-
-function relId(v: unknown): string | undefined {
-  if (v == null) return undefined
-  if (typeof v === 'string') return v
-  if (typeof v === 'number') return String(v)
-  if (typeof v === 'object' && 'id' in (v as object)) {
-    const id = (v as { id: unknown }).id
-    return id == null ? undefined : String(id)
-  }
-  return undefined
-}
 
 function getPath(obj: unknown, path: string): unknown {
   return path

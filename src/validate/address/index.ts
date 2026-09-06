@@ -30,6 +30,7 @@
  */
 
 import type { CollectionBeforeValidateHook } from 'payload'
+import { readNested } from '@/field/nested'
 import { type AddressLike, validateAddress } from '@/address/validation'
 import { getTenantDefaultsFromReq } from '@/tenant/context'
 
@@ -46,16 +47,6 @@ export interface ValidateAddressOptions {
    * should leave this unset and let the tenant context cascade decide.
    */
   fallbackCountry?: string
-}
-
-function readNested(data: Record<string, unknown>, path: string): unknown {
-  if (path === '') return data
-  return path.split('.').reduce<unknown>((acc, key) => {
-    if (acc && typeof acc === 'object' && key in (acc as Record<string, unknown>)) {
-      return (acc as Record<string, unknown>)[key]
-    }
-    return undefined
-  }, data)
 }
 
 /**
