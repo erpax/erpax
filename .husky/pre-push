@@ -41,7 +41,18 @@ set -e
 # PASS on a hash of its inputs (src index blobs + unstaged diff + the two
 # artefacts + the lockfile), so the second call is ~160ms and any edit to
 # any input misses the memo and pays the full boot. PAYLOAD_VERIFY_NOCACHE=1
-# forces it. No number is stated here that the code does not compute.
+# forces it.
+#
+# The end-to-end number, measured on two real pushes rather than summed from
+# warm step timings — the distinction matters and the first commit message
+# stated only the flattering half:
+#
+#   push that CHANGES src   409s -> 208s   (one cold derive, then memo hits)
+#   push that does not      409s -> ~108s  (no boot at all; 39s of that is
+#                                           migrate:status, which reads the DB
+#                                           and must never be memoised)
+#
+# A src-changing push is the normal case, so 2x is the honest headline.
 bash scripts/auto-heal-generated-artefacts.sh
 
 # ── 1b. Payload approval (canonical gate — before tsc/lint/vitest) ───
