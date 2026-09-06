@@ -13,6 +13,13 @@ import {
 } from '@/base/accounting/field'
 import { validateNotLocked } from '@/utility'
 import { validateBalancedEntry } from '../../hooks/balanced'
+// Two SOX §404 controls that existed, were tested, and were installed on NOTHING. Each names this
+// collection in its own header — `enforcePostingImmutability` says "beforeChange hook for
+// GLPostings", `validateFiscalPeriodPosting` says "beforeValidate hook for GLPostings" — and
+// neither appeared in either array. They are distinct from `validateNotLocked`, which is the period
+// LOCK: this pair stops a POSTED row being modified, and resolves the fiscal period it belongs to.
+import { enforcePostingImmutability } from '@/enforce/posting/immutability'
+import { validateFiscalPeriodPosting } from '@/validate/fiscal/period/posting'
 
 /**
  * GL Postings — atomic debit/credit lines linked to a journal entry.
@@ -41,6 +48,28 @@ const GLPostings: CollectionConfig = {
   access: tenantAdminWriteAccess(),
   fields: [
     { name: 'postingId', type: 'text', required: true, unique: true },
+    // The admin correction path `enforcePostingImmutability` implements and this collection did not
+    // carry. Without both fields the hook's own documented route is unreachable, so wiring it would
+    // make a posted row immutable for EVERYONE and leave reversal as the only correction — a policy
+    // choice, and not one to discover after wiring ([[enforce]]/posting/immutability's own test says so).
+    {
+      name: 'adminOverride',
+      type: 'checkbox',
+      defaultValue: false,
+      admin: { description: 'Admin correction of a POSTED row. Requires a documented reason below.' },
+    },
+    {
+      name: 'adminOverrideHistory',
+      type: 'array',
+      admin: { description: 'Every admin correction, with who, when, why, and the prior value. Append-only in practice: the hook writes one entry per override.' },
+      fields: [
+        { name: 'overriddenBy', type: 'text' },
+        { name: 'overrideDate', type: 'text' },
+        { name: 'overrideReason', type: 'textarea', required: true },
+        { name: 'priorValue', type: 'textarea' },
+        { name: 'newValue', type: 'textarea' },
+      ],
+    },
     {
       name: 'sourceType',
       type: 'select',
@@ -89,6 +118,8 @@ const GLPostings: CollectionConfig = {
   hooks: {
     beforeValidate: [
       autoPopulateTenant,
+      // after the tenant, because it resolves the calendar for (tenant, entity, postingDate)
+      validateFiscalPeriodPosting,
       // Single source of truth for the balance check, with field-name overrides
       // for GLPostings' `accountsAffected[].{debitAmount, creditAmount}` shape
       // (vs. JournalEntries' `lines[].{debit, credit}`).
@@ -103,6 +134,8 @@ const GLPostings: CollectionConfig = {
       }),
     ],
     beforeChange: [
+      // FIRST: a posted row may not be modified at all, so refuse before anything else mutates data.
+      enforcePostingImmutability,
       validateNotLocked,
       autoPopulateCreatedBy,
       autoSetTimestamp('postedDate', (data) => (data as { status?: string }).status === 'posted'),

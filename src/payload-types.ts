@@ -12445,6 +12445,23 @@ export interface GlPosting {
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
   postingId: string;
+  /**
+   * Admin correction of a POSTED row. Requires a documented reason below.
+   */
+  adminOverride?: boolean | null;
+  /**
+   * Every admin correction, with who, when, why, and the prior value. Append-only in practice: the hook writes one entry per override.
+   */
+  adminOverrideHistory?:
+    | {
+        overriddenBy?: string | null;
+        overrideDate?: string | null;
+        overrideReason: string;
+        priorValue?: string | null;
+        newValue?: string | null;
+        id?: string | null;
+      }[]
+    | null;
   sourceType:
     | 'invoice'
     | 'bill'
@@ -22899,6 +22916,17 @@ export interface GlPostingsSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
   postingId?: T;
+  adminOverride?: T;
+  adminOverrideHistory?:
+    | T
+    | {
+        overriddenBy?: T;
+        overrideDate?: T;
+        overrideReason?: T;
+        priorValue?: T;
+        newValue?: T;
+        id?: T;
+      };
   sourceType?: T;
   sourceId?: T;
   sourceDate?: T;

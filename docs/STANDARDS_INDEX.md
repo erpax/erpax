@@ -1273,11 +1273,11 @@ src/fiscal/periods/fiscal/period/snapshots/index.ts:10: * @standard GDPR:2016/67
 src/fiscal/periods/fiscal/period/snapshots/index.ts:11: * @standard eIDAS:2014/910/EU (signature on critical amendments)
 src/fiscal/periods/fiscal/period/snapshots/index.ts:12: * @standard SOX:2002 (access control audit evidence, change log)
 src/fiscal/periods/fiscal/period/snapshots/index.ts:13: * @standard NIST-SP-800-92 (audit logging, integrity verification)
-src/fiscal/periods/index.ts:19: * @standard ISO-8601-1:2019 date-time start-date end-date closed-at locked-at reopened-at week-numbering
-src/fiscal/periods/index.ts:20: * @standard IAS-34:2023 interim-financial-reporting period-structure quarterly-alignment
-src/fiscal/periods/index.ts:21: * @standard ISO-4217:2015 currency-code per-fiscal-configuration
-src/fiscal/periods/index.ts:22: * @standard SAF-T 3.0.2 regulatory-period-coding audit-file-structure
-src/fiscal/periods/index.ts:23: * @standard XBRL-GL fiscal-context general-ledger-reporting
+src/fiscal/periods/index.ts:20: * @standard ISO-8601-1:2019 date-time start-date end-date closed-at locked-at reopened-at week-numbering
+src/fiscal/periods/index.ts:21: * @standard IAS-34:2023 interim-financial-reporting period-structure quarterly-alignment
+src/fiscal/periods/index.ts:22: * @standard ISO-4217:2015 currency-code per-fiscal-configuration
+src/fiscal/periods/index.ts:23: * @standard SAF-T 3.0.2 regulatory-period-coding audit-file-structure
+src/fiscal/periods/index.ts:24: * @standard XBRL-GL fiscal-context general-ledger-reporting
 src/fiscal/periods/post/balance/sheet/events/index.ts:10: * @standard IFRS IAS-10 §3 adjusting-vs-non-adjusting-events
 src/fiscal/periods/post/balance/sheet/events/index.ts:11: * @standard IFRS IAS-10 §8 adjusting-events-recognise
 src/fiscal/periods/post/balance/sheet/events/index.ts:12: * @standard IFRS IAS-10 §10 non-adjusting-events-disclose
@@ -1810,7 +1810,7 @@ src/jobs/dunningJob.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/jobs/dunningJob.test.ts:9: * @standard EN-16931:2017 dunning-notice
 src/jobs/salesAuditFileJob.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/jobs/salesAuditFileJob.test.ts:5: * @standard BG Наредба-Н-18 §Приложение-38
-src/journal/entries/gl/postings/index.ts:26: * @standard ISO-8601-1:2019 date-time posted-date
+src/journal/entries/gl/postings/index.ts:33: * @standard ISO-8601-1:2019 date-time posted-date
 src/journal/entries/hooks/balanced.ts:21: * @standard ECMA-262 ECMAScript-2024 baseline
 src/journal/entries/hooks/balanced.ts:22: * @standard IEEE-754-2019 binary-floating-point integer-cents-only
 src/journal/entries/index.ts:29: * @standard ISO-8601-1:2019 date-time entry-date posted-date approval-date
@@ -3852,9 +3852,9 @@ src/fiscal/periods/carbon/emissions/index.ts:22: * @compliance EU SFDR PAI 1 ghg
 src/fiscal/periods/carbon/emissions/index.ts:23: * @compliance EU CBAM Carbon Border Adjustment Mechanism (when applicable)
 src/fiscal/periods/carbon/emissions/index.ts:24: * @compliance EU Taxonomy DNSH climate-mitigation
 src/fiscal/periods/earnings/per/shares/index.ts:19: * @compliance SOX §404 internal-controls
-src/fiscal/periods/index.ts:26: * @compliance SOX §404 period-close-integrity access-control-evidence
-src/fiscal/periods/index.ts:27: * @compliance GDPR Art 5(1)(f) audit-trail-integrity
-src/fiscal/periods/index.ts:28: * @compliance eIDAS Regulation 910/2014 qualified-electronic-signature on-amendments
+src/fiscal/periods/index.ts:27: * @compliance SOX §404 period-close-integrity access-control-evidence
+src/fiscal/periods/index.ts:28: * @compliance GDPR Art 5(1)(f) audit-trail-integrity
+src/fiscal/periods/index.ts:29: * @compliance eIDAS Regulation 910/2014 qualified-electronic-signature on-amendments
 src/fiscal/periods/post/balance/sheet/events/index.ts:18: * @compliance SOX §404 internal-controls TOM-CL-03
 src/fiscal/periods/prior/period/adjustments/index.ts:17: * @compliance SOX §404 internal-controls restatement-control TOM-PPA-01
 src/fiscal/periods/prior/period/adjustments/index.ts:18: * @compliance SOX §906 ceo-cfo-certification material-misstatement
@@ -3955,7 +3955,7 @@ src/jobs/bnb/rates/sync/index.ts:22: * @compliance SOX §404 internal-controls f
 src/jobs/dunning/job/index.ts:18: * @compliance SOX §404 internal-controls
 src/jobs/dunning/job/index.ts:19: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
 src/jobs/dunningJob.test.ts:12: * @compliance SOX §404 internal-controls
-src/journal/entries/gl/postings/index.ts:30: * @compliance SOX §404 internal-controls
+src/journal/entries/gl/postings/index.ts:37: * @compliance SOX §404 internal-controls
 src/journal/entries/hooks/balanced.ts:27: * @compliance SOX §404 internal-controls
 src/journal/entries/index.ts:34: * @compliance SOX §404 internal-controls
 src/journal/entries/rounding/adjustments/index.ts:16: * @compliance SOX §404 internal-controls rounding-control TOM-RND-01
@@ -4419,8 +4419,8 @@ src/financial/statements/index.ts:24: * @accounting US-GAAP ASC-270 interim-repo
 src/fiscal/devices/sales/index.ts:24: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/fiscal/devices/sales/index.ts:25: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/fiscal/periods/carbon/emissions/index.ts:20: * @accounting IFRS S2 §29-32 climate-related-metrics
-src/fiscal/periods/index.ts:24: * @accounting IFRS IAS-1 presentation-of-financial-statements
-src/fiscal/periods/index.ts:25: * @accounting US-GAAP ASC-210 balance-sheet
+src/fiscal/periods/index.ts:25: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/fiscal/periods/index.ts:26: * @accounting US-GAAP ASC-210 balance-sheet
 src/fiscal/periods/prior/period/adjustments/index.ts:13: * @accounting IFRS IAS-8 §42-49 errors-of-prior-periods
 src/fiscal/periods/prior/period/adjustments/index.ts:14: * @accounting US-GAAP ASC-250-10-45 accounting-changes-and-error-corrections
 src/fiscal/periods/prior/period/adjustments/index.ts:15: * @accounting US-GAAP ASC-250-10-50 disclosure-of-prior-period-adjustments
@@ -4620,8 +4620,8 @@ src/jobs/dunningJob.test.ts:5: * @accounting IFRS IFRS-9 expected-credit-loss im
 src/jobs/dunningJob.test.ts:6: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/jobs/dunningJob.test.ts:7: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/jobs/dunningJob.test.ts:8: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/journal/entries/gl/postings/index.ts:27: * @accounting IFRS IAS-1 presentation-of-financial-statements
-src/journal/entries/gl/postings/index.ts:28: * @accounting OECD SAF-T §3 transactions
+src/journal/entries/gl/postings/index.ts:34: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/journal/entries/gl/postings/index.ts:35: * @accounting OECD SAF-T §3 transactions
 src/journal/entries/hooks/balanced.ts:23: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/journal/entries/hooks/balanced.ts:24: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
 src/journal/entries/hooks/balanced.ts:25: * @accounting OECD SAF-T §3 journal-entries
@@ -5139,7 +5139,7 @@ src/fiscal/devices/index.ts:18: * @security ISO-27001 A.5.23 cloud-service-tenan
 src/fiscal/devices/sales/index.ts:28: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/fiscal/periods/carbon/emissions/index.ts:25: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/fiscal/periods/earnings/per/shares/index.ts:20: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
-src/fiscal/periods/index.ts:29: * @security ISO-27002 §5.4 segregation-of-duties closer-vs-creator locker-vs-creator
+src/fiscal/periods/index.ts:30: * @security ISO-27002 §5.4 segregation-of-duties closer-vs-creator locker-vs-creator
 src/fiscal/periods/post/balance/sheet/events/index.ts:19: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/fiscal/periods/prior/period/adjustments/index.ts:19: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/fiscal/periods/provisions/index.ts:24: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -5201,7 +5201,7 @@ src/items/packages/index.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenan
 src/items/purchase/orders/goods/receipts/index.ts:29: * @security ISO-27002 §5.4 segregation-of-duties receiver-vs-requester
 src/items/purchase/orders/index.ts:46: * @security ISO-27002 §5.4 segregation-of-duties requester-vs-approver
 src/items/quality/inspections/index.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/journal/entries/gl/postings/index.ts:31: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/journal/entries/gl/postings/index.ts:38: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/journal/entries/index.ts:35: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/journal/entries/index.ts:36: * @security ISO-27002 §5.4 segregation-of-duties
 src/journal/entries/rounding/adjustments/index.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -5827,7 +5827,7 @@ src/fiscal/devices/index.ts:17: * @audit ISO-19011:2018 audit-trail
 src/fiscal/devices/sales/index.ts:26: * @audit ISO-19011:2018 audit-trail
 src/fiscal/periods/carbon/emissions/index.ts:21: * @audit ISAE 3410 greenhouse-gas-statements
 src/fiscal/periods/earnings/per/shares/index.ts:18: * @audit ISO 19011:2018 §6.4.6 audit-evidence-eps-computation
-src/fiscal/periods/index.ts:30: * @audit ISO-19011:2018 audit-trail status-transition
+src/fiscal/periods/index.ts:31: * @audit ISO-19011:2018 audit-trail status-transition
 src/fiscal/periods/post/balance/sheet/events/index.ts:17: * @audit ISO 19011:2018 §6.4.6 audit-evidence-subsequent-events
 src/fiscal/periods/prior/period/adjustments/index.ts:16: * @audit ISO-19011:2018 audit-trail prior-period-restatement
 src/fiscal/periods/provisions/index.ts:22: * @audit ISO-19011:2018 audit-trail provision-evidence
@@ -5974,7 +5974,7 @@ src/jobs/audit/index.ts:12: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/jobs/bnb/rates/sync/index.ts:20: * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/jobs/dunning/job/index.ts:17: * @audit ISO-19011:2018 audit-trail
 src/jobs/dunningJob.test.ts:11: * @audit ISO-19011:2018 audit-trail
-src/journal/entries/gl/postings/index.ts:29: * @audit ISO-19011:2018 audit-trail
+src/journal/entries/gl/postings/index.ts:36: * @audit ISO-19011:2018 audit-trail
 src/journal/entries/hooks/balanced.ts:26: * @audit ISO-19011:2018 audit-trail double-entry-invariant
 src/journal/entries/index.ts:33: * @audit ISO-19011:2018 audit-trail
 src/journal/entries/rounding/adjustments/index.ts:15: * @audit ISO-19011:2018 audit-trail rounding-evidence

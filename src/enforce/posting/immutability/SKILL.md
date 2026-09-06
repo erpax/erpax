@@ -31,11 +31,14 @@ signatures:
       stageUuid: "5b365b7e-9b1b-8297-a4a5-bc048234f2cd"
 version: 2
 ---
-# immutability — the control is written, tested, and guards nothing
+# immutability — the control was written, tested, and guarded nothing; it is attached now
 
-Once a posting is posted, it must not change. It is the audit control that sits beside the double-entry law: an ERP that lets a posted entry be edited has no auditable history, whatever its trail says.
+Once a posting is posted, it must not change. It is the audit control that sits beside the
+double-entry law: an ERP that lets a posted entry be edited has no auditable history, whatever its
+trail says.
 
-erpax implements it **correctly**. It is wired to **nothing**.
+erpax implemented it **correctly** and wired it to **nothing**. That is now fixed, and the fix was a
+PAIR — because this file said, before the wiring existed, exactly why a one-liner would be wrong.
 
 ## It was written twice
 
@@ -46,23 +49,36 @@ The same concept lived at two addresses — the same three words, reordered:
 | `enforce/posting/immutability` | a real `beforeChange` hook, 90 lines, **tested** (5 cases in [[hooks]]' barrel test) |
 | `posting/immutability/enforcer` | a 163-line class, **zero callers**, no SKILL, no test, 2 unrefutable `@invariant` claims |
 
-The class is deleted. This is the [[rules]]/invisible pattern once more — a second implementation of one truth, growing beside the first because two lawful paths give it two content-uuids and nothing deduplicates across them. It is how one audit leaf became ten ([[merge]]/chainLeaf), and how a second `generateTrialBalance` hid inside a dead service.
+The class is deleted. This is the [[rules]]/invisible pattern once more — a second implementation of
+one truth, growing beside the first because two lawful paths give it two content-uuids and nothing
+deduplicates across them.
 
-## Why a posted row is still mutable
+## How a posted row stayed mutable
 
-`gl-postings` runs `beforeChange: [validateNotLocked, autoPopulateCreatedBy, autoSetTimestamp('postedDate', …)]`.
+`gl-postings` ran `beforeChange: [validateNotLocked, autoPopulateCreatedBy, autoSetTimestamp('postedDate', …)]`.
 
-It **stamps** `postedDate` — the exact seal this hook reads — and then never checks it. `validateNotLocked` is wired and is a **different control**: it stops a posting from entering a **locked period**; it says nothing about editing a row that is already posted. So a posted posting in an **open** period can be modified freely, by anyone with write access.
+It **stamped** `postedDate` — the exact seal this hook reads — and then never checked it.
+`validateNotLocked` is a **different control**: it stops a posting entering a **locked period**; it
+says nothing about editing a row that is already posted. So a posted posting in an **open** period
+could be modified freely, by anyone with write access.
 
-The claim *"Once posted-date is set, posting becomes immutable"* was true of the code and false of the system.
+The claim *"once posted-date is set, posting becomes immutable"* was true of the code and false of
+the system. It was found by [[rules]]/unreached: the atom was reachable from no entry at all.
 
-## Why it is not simply wired here
+## Why the fix is a pair
 
-The hook refuses an admin edit unless `data.adminOverride === true`, and refuses that unless `adminOverrideHistory` carries a reason. **`gl-postings` has neither field.**
+The hook refuses an admin edit unless `data.adminOverride === true`, and refuses that unless
+`adminOverrideHistory` carries a reason. **`gl-postings` had neither field.** Wiring the hook alone
+would have made a posted row immutable for *everyone* — the documented admin path the hook itself
+implements would be unreachable, and the only correction left a reversal.
 
-So wiring it as the collection stands makes a posted row immutable for *everyone* — the documented admin path the hook itself implements becomes unreachable, and the only correction left is a reversal. **That may well be the right policy** (it is what an auditor would prefer), but it is a schema-and-policy decision, not a code one, and it is not a thing to discover after wiring.
+So both fields were added with the wiring, and the hook runs **first** in `beforeChange`: a posted
+row is refused before anything else mutates data.
 
-That precondition is a **law** in `test.ts` rather than a note: `wired ⇒ the collection carries the override fields`. It is an implication, so it passes today, passes after a correct wiring, and fails only on a wrong one. The gap does not block the fix; it blocks the *silent* fix.
+That precondition was a **law** in `test.ts` rather than a note — `wired ⇒ the collection carries the
+override fields` — written as an implication so it passed while unwired, passes after a correct
+wiring, and fails only on a wrong one. It did its job: it is what turned a one-line wiring into the
+right change, and this paragraph is written by the agent it caught.
 
 **Honest boundary.** The hook's logic is proven in [[hooks]]' barrel test and is not restated beside it — the proof here is about the thing no test covered: whether the hook and the collection it guards agree. Nothing here makes a posted row immutable **in the database**; a hook is bypassed by any write that does not go through Payload's collection layer.
 

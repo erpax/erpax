@@ -23,7 +23,7 @@ describe('enforce/posting/immutability — the hook and the collection must agre
     // Written also asserting the auto-set hook's source names the field. It cannot: autoSetTimestamp is a
     // CLOSURE, so 'postedDate' lives in a captured variable and never appears in the function text. The
     // field's existence is the observable fact; how it gets stamped is that hook's own business.
-    expect(hookNames()).toHaveLength(3)
+    expect(hookNames()).toHaveLength(4)
   })
 
   /**
@@ -43,16 +43,28 @@ describe('enforce/posting/immutability — the hook and the collection must agre
     expect(isWired() && !hasOverride).toBe(false)
   })
 
-  // Pins the gap that motivates the SKILL: the control exists, is tested, and guards nothing. Asserted as a
-  // fact about TODAY, and written so that wiring it correctly (with the fields) does not fail this file.
-  it('is NOT wired today — a posted row in an open period is mutable', () => {
-    expect(isWired()).toBe(false)
-    // the period lock IS wired, and it is a different control: it stops postings INTO a locked period,
-    // never edits TO a posted row.
+  /**
+   * IT IS WIRED NOW. This test previously pinned the gap — "the control exists, is tested, and guards
+   * nothing" — and it was right to: the hook was written, proven, and installed on no collection, so a
+   * posted row in an open period was mutable by anyone who could edit it.
+   *
+   * It was wired together with the two fields the implication above demands, because wiring it alone
+   * would have made a posted row immutable for EVERYONE and left reversal as the only correction. The
+   * previous author wrote that warning into this file before the wiring existed; it is the reason this
+   * change is a pair and not a one-liner.
+   */
+  it('is wired — a posted row is refused, and the period lock still guards a different door', () => {
+    expect(isWired()).toBe(true)
+    // the period lock is a DIFFERENT control: it stops postings INTO a locked period, never edits TO a
+    // posted row. Both are required; neither substitutes for the other.
     expect(hookNames()).toContain('validateNotLocked')
   })
 
-  it('the hook still refuses a posted row — it is correct, it is only unused', async () => {
+  it('runs BEFORE the period lock — a posted row is refused before anything else mutates data', () => {
+    expect(hookNames()[0]).toBe('enforcePostingImmutability')
+  })
+
+  it('refuses a posted row for a non-admin, with the reason a reader can act on', async () => {
     await expect(
       (enforcePostingImmutability as never as (a: unknown) => Promise<unknown>)({
         operation: 'update',

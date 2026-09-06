@@ -298,7 +298,7 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // folder above each one charged again for the same absence. Five doors are tried first —
     // deployed, gated, CLI, shipped in a package, or a vocabulary word — and 80 survive all five.
     // A candidate list, never a purge list: a dynamic reference is invisible to a lexical walk.
-    guardian({ axis: 'unreached', violations: unreachedAtoms(cwd).length, baseline: 80 }),
+    guardian({ axis: 'unreached', violations: unreachedAtoms(cwd).length, baseline: 77 }),
     // proof/accepted — a .lean file the kernel does not accept as proof. Four of five carry `sorry`
     // or do not compile, under a directory named `verify` that nothing ever ran. Ratchets from 4;
     // the horizon is 0, because a theorem proved by `sorry` states a claim and proves nothing.

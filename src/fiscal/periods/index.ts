@@ -3,6 +3,7 @@ import { tenantMasterDataAccess, getUser } from '@/auth'
 import { autoPopulateTenant } from '@/auto/populate/tenant'
 import { enforceSegregationOfDuties } from '@/enforce/segregation/of/duty'
 import { auditTrailAfterChange } from '@/audit/trail/after/change'
+import { updateFiscalCalendarOnPeriodChange } from '@/update/fiscal/calendar/on/period/change'
 
 /**
  * Fiscal Periods — accounting calendar with period locking.
@@ -58,6 +59,11 @@ export const FiscalPeriods: CollectionConfig = {
       },
     ],
     beforeChange: [
+      // Validates the fiscal CONFIGURATION this collection carries — fiscalYearStartMonth,
+      // periodType, regulatoryFramework, leapYearAdjustment. It names this collection in its own
+      // header and was installed on nothing ([[rules]]/unreached). Distinct from the date-ordering
+      // check below, which compares startDate and endDate and says nothing about the config.
+      updateFiscalCalendarOnPeriodChange,
       // ISO-27002 §5.4 / SOX §404 four-eyes: the user who created the
       // period cannot also be the user who closes it (`closedBy`) or
       // locks it (`lockedBy`). Two enforcers, one per approval field.
