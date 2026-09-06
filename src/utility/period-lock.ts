@@ -87,6 +87,24 @@ export const validateNotLocked: CollectionBeforeChangeHook = async ({ data, req 
   }
   if (!postingDate) return data
 
+  /**
+   * FAIL CLOSED on a date that does not parse.
+   *
+   * `findLockedPeriodForDate` asks the database for a period with `startDate <= d <= endDate`. Given
+   * garbage, that comparison matches NOTHING, `locked` comes back null, and the posting is ALLOWED —
+   * a period lock that opens on a malformed date is a §404 bypass with no error anywhere.
+   *
+   * [[period]]/lock/checker had this leg and proved it; the hook that is actually wired did not. An
+   * unparseable posting date is not "no date": the field is present and wrong, and the only safe
+   * reading of a control that cannot evaluate its input is refusal.
+   */
+  if (Number.isNaN(new Date(postingDate).getTime())) {
+    throw new Error(
+      `Period lock cannot evaluate posting date ${String(postingDate).slice(0, 32)} — refusing rather than ` +
+        'allowing: an unparseable date matches no period and would post into a locked one unchecked.',
+    )
+  }
+
   const locked = await findLockedPeriodForDate(req, postingDate, tenantId as string | number)
   if (locked) {
     throw new Error(
