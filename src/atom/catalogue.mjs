@@ -8,7 +8,7 @@
  * SKILL.md walk. This generator walks every src/**\/SKILL.md, reads its frontmatter
  * (name + description), norms the folder leaf to the atom, dedupes by PATH
  * (the address; leaves collide — one atom per PATH), and emits a static .ts the MCP layer
- * imports. Re-runnable (build / breath loop): `pnpm atoms:catalogue`.
+ * imports. Re-runnable (build / breath loop): `node src/atom/catalogue.mjs`.
  *
  *   node src/atom/catalogue.mjs
  */
@@ -93,7 +93,7 @@ const header = `/**
  * The erpax skill corpus as a runtime atom registry (one entry per content-
  * addressed atom). The MCP self-generating atom (./auto-generated.ts) projects
  * reachable through the \`erpax.skill.list\` / \`erpax.skill.read\` pair, so an MCP-only agent discovers +
- * invokes every skill without ever reading a .md file. Re-run: pnpm atoms:catalogue.
+ * invokes every skill without ever reading a .md file. Re-run: node src/atom/catalogue.mjs.
  *
  * @standard MCP 0.6 tools/list (skill projection)
  * @audit ISO 19011:2018 §6.4.6 (catalogue traceable to the SKILL.md corpus)

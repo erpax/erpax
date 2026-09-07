@@ -109,7 +109,7 @@ describe('mcp/discovery — two tools reach what 2,807 did', () => {
  *
  * A generated artefact with no assertion beside it is [[rules]]/refutable's exact case: the claim
  * "the MCP agent sees the corpus" reads as true forever because nothing can contradict it. This is
- * the contradiction. Regenerate with `pnpm atoms:catalogue`.
+ * the contradiction. Regenerate with `node src/atom/catalogue.mjs`.
  */
 describe('mcp/catalogue — the generated atom catalogue matches the live corpus', () => {
   const liveAtoms = (): Map<string, { name: string; description: string }> => {

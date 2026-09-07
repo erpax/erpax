@@ -196,7 +196,7 @@ fi
 # MCP-only agent discovers the corpus through, so a stale catalogue is an agent shown a corpus that
 # no longer exists.
 #
-# Its banner cited `pnpm atoms:catalogue`, which did not exist; the script does now.
+# Its banner cited `pnpm atoms:catalogue`, a script that never existed; it names the real invocation now.
 # Emits in ~2s and reads only SKILL.md, so it needs no memo and only has to follow the frontmatter.
 if [ "$DRY_RUN" = 0 ]; then
   if node src/atom/catalogue.mjs >/tmp/erpax-catalogue.log 2>&1; then
@@ -210,6 +210,33 @@ if [ "$DRY_RUN" = 0 ]; then
     tail -20 /tmp/erpax-catalogue.log || true
   fi
   rm -f /tmp/erpax-catalogue.log
+fi
+
+# ── Artefact 7: the path ledger registry ─────────────────────────────
+#
+# `src/path/hooks.registry.generated.ts` lists every atom barrel that is ledger-eligible plus the
+# index-bearing ancestor chain per path. It is derived from the TREE, so minting or nesting an atom
+# drifts it — and nothing regenerated it. Measured 2026-09-07 it was 2,530 lines short: hundreds of
+# atom ledger paths simply absent from the registry the path hub reads.
+#
+# Its emitter is `--emit`-GUARDED, which is how it hid. Running `node src/path/hooks.registry.mjs`
+# exits 0 and does nothing, so a check that treats exit 0 as "regenerated, no diff" concludes the
+# artefact is fresh. It proves only that the script parsed. I made exactly that mistake before
+# looking at the diff.
+#
+# Emits in ~1s, so no memo.
+if [ "$DRY_RUN" = 0 ]; then
+  if node src/path/hooks.registry.mjs --emit >/tmp/erpax-hooks.log 2>&1; then
+    if ! git diff --quiet -- src/path/hooks.registry.generated.ts; then
+      echo "auto-heal: path ledger registry drifted — regenerated"
+      git add src/path/hooks.registry.generated.ts 2>/dev/null || true
+      healed+=("path ledger registry")
+    fi
+  else
+    echo "auto-heal: path hooks emit FAILED — last 20 lines:"
+    tail -20 /tmp/erpax-hooks.log || true
+  fi
+  rm -f /tmp/erpax-hooks.log
 fi
 
 # ── Artefact 2 (LAST): src/payload-types.ts ─────────────────────────

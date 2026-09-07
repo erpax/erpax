@@ -4,7 +4,7 @@
  * The erpax skill corpus as a runtime atom registry (one entry per content-
  * addressed atom). The MCP self-generating atom (./auto-generated.ts) projects
  * reachable through the `erpax.skill.list` / `erpax.skill.read` pair, so an MCP-only agent discovers +
- * invokes every skill without ever reading a .md file. Re-run: pnpm atoms:catalogue.
+ * invokes every skill without ever reading a .md file. Re-run: node src/atom/catalogue.mjs.
  *
  * @standard MCP 0.6 tools/list (skill projection)
  * @audit ISO 19011:2018 §6.4.6 (catalogue traceable to the SKILL.md corpus)

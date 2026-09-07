@@ -104,11 +104,16 @@ export function harmonyOfBookIndex(cwd: string = process.cwd()): BookIndexHarmon
   const roots = UUID_MATRIX_NODES.filter((r) => r.path && !r.path.includes('/'))
   const seq = roots.map((r) => r.path!)
   const alpha = [...seq].sort((a, b) => a.localeCompare(b))
+  // RANK ONCE. This was `alpha.indexOf(...)` on BOTH sides of a nested loop — a linear scan inside
+  // an O(n²) pair walk, so O(n³) with a string compare at the bottom. It is the reason
+  // `harmonyOfBookIndex` took ~25s and pushed the book suites past their 30s CI timeout once the
+  // corpus graph grew. The rank map answers the same question in O(1) and the counts are identical.
+  const rank = new Map(alpha.map((p, i) => [p, i]))
   let conc = 0
   let disc = 0
   for (let i = 0; i < seq.length; i++) {
     for (let j = i + 1; j < seq.length; j++) {
-      if (alpha.indexOf(seq[i]!) < alpha.indexOf(seq[j]!)) conc++
+      if (rank.get(seq[i]!)! < rank.get(seq[j]!)!) conc++
       else disc++
     }
   }

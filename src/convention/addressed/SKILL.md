@@ -40,7 +40,7 @@ Every atom's identity is a **content-uuid** — a v8 uuid (RFC 9562 §5.8) deriv
 - **addressed** = those whose leaf word resolves through `nodeOf` from [[matrix]] to a node whose `uuid` matches the v8 content-uuid form (version nibble 8, variant 10x). It composes `nodeOf`; it never re-derives the uuid.
 - **coverage** = `addressed / total` — in [0,1] by construction (0 ≤ addressed ≤ total, total > 0). It reaches **1** exactly when every atom in the tree carries a content-uuid.
 
-The matrix (`src/uuid/matrix/matrix.generated.ts`) is a generated **cache that DRIFTS**; the live walk is the source of truth. So coverage drops below 1 precisely when an atom exists in the tree but the matrix has not yet minted its content-uuid — a freshly-added atom is unaddressed until `pnpm matrix:generate`. This warns wide (the gap is visible) without failing narrow, and the gap closes on regeneration.
+The matrix (`src/uuid/matrix/generated.ts`) is a generated **cache that DRIFTS**; the live walk is the source of truth. So coverage drops below 1 precisely when an atom exists in the tree but the matrix has not yet minted its content-uuid — a freshly-added atom is unaddressed until `pnpm matrix:generate`. This warns wide (the gap is visible) without failing narrow, and the gap closes on regeneration.
 
 Pure math, no default: the corpus is non-empty by architecture (thousands of atoms carry a `SKILL.md`), and `addressed` is a subset count of the very same walk, so the ratio never needs a clamp or a fallback — and `coverage()` filters one walk, so numerator and denominator can never disagree. coverage → 1 ⟺ a fully content-addressed corpus ⟺ infinitely-expanding tamper-[[cost]].
 
