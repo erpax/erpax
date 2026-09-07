@@ -3,13 +3,13 @@ name: analytics
 description: "Use when reasoning about analytics — Days Payable Outstanding, vendor performance and spend analysis over the bill set."
 atomPath: "payable/analytics"
 coordinate: "payable/analytics · 7/descent · 988e76df"
-contentUuid: "f1bf0efa-183e-5aed-b368-80086b6bd8c8"
+contentUuid: "98ee8bef-deb3-574a-8d6d-20b4175a0dba"
 diamondUuid: "76054420-05d4-8fa0-af0e-01ea3c5747fc"
 uuid: "988e76df-db28-856c-b971-b2ac61bc23f7"
 horo: 7
 typography:
   partition: payable
-  bondDegree: 64
+  bondDegree: 58
 standards:
   - "IFRS IAS-37 provisions-contingent-liabilities"
   - "ISO-17442-1:2020 lei vendor-identification"

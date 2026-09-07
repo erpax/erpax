@@ -3,13 +3,13 @@ name: law
 description: "Use when a contract is subject to a specific jurisdiction's law — codified by choice-of-law clause, determines interpretation (UCC vs. Common Law), applicable standards, dispute resolution."
 atomPath: "vocabulary/governing/law"
 coordinate: "vocabulary/governing/law · 4/weave · 73d29738"
-contentUuid: "47ec92e9-9acb-5cbf-b09b-84221445e7f7"
+contentUuid: "60a8dad3-e9bb-5bfd-97a3-e97056b91b1f"
 diamondUuid: "1b7a6966-7280-8792-bccd-c5bbe08ccc7e"
 uuid: "73d29738-b0fe-867e-9294-76e59db78083"
 horo: 4
 typography:
   partition: vocabulary
-  bondDegree: 9339
+  bondDegree: 9340
 standards: []
 bindings: []
 signatures:

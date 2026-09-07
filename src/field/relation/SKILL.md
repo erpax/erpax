@@ -3,13 +3,13 @@ name: relation
 description: "Use when reasoning about relation — A Payload relationship is one value with two shapes: the raw id when unpopulated, the whole document when populated. A **polymorphic** one is a third shape — ."
 atomPath: "field/relation"
 coordinate: "field/relation · 7/descent · d93425fa"
-contentUuid: "257d2b6e-3e9a-5636-b28c-034fd7ccf486"
+contentUuid: "98605d9f-5770-5418-a4b4-4c71068da93e"
 diamondUuid: "542dc468-5331-8d9b-8513-1d91b2b60f99"
 uuid: "d93425fa-400a-811f-8ee8-2903d6f4b943"
 horo: 7
 typography:
   partition: field
-  bondDegree: 12
+  bondDegree: 9
 standards: []
 bindings: []
 signatures:

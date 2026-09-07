@@ -117,54 +117,45 @@ else
   fi
 fi
 
-# ── Artefact 3: SKILL.md frontmatter ─────────────────────────────────
+# ── Artefact 3: SKILL.md frontmatter — NOT HEALED HERE, and that is a finding ──
 #
-# Every SKILL.md carries a computed frontmatter block — name, description, coordinate, uuids,
-# signatures — derived from the atom's own body and its place in the matrix. It is DERIVED, so it
-# drifts the moment an atom is minted or a body is edited, and nothing regenerated it.
+# `skill:upgrade --sync` was wired in here and had to be taken out: THE FOLD HAS NO FIXPOINT.
 #
-# Measured 2026-09-07: 166 atoms had no `description:` at all. [[seo]] reads that field as the meta
-# description, so its coverage gate had been red at 95.4% — one of a dozen assertions failing in CI
-# for weeks. Nobody forgot: there was no step that would have remembered.
+# `linksOf` reads the WHOLE SKILL.md, so a `[[wikilink]]` sitting in the frontmatter is an edge in
+# the typography graph — and that graph computes the `bondDegree` written back into that same
+# frontmatter. Rewriting the block changes the graph that decides what the block should say.
 #
-# This is the step. `--sync` is idempotent — it writes only where the computed block differs — so a
-# clean tree costs one pass and stages nothing.
-if [ "$DRY_RUN" = 0 ]; then
-  if cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/skill/router/upgrade/index.ts --sync >/tmp/erpax-skill-sync.log 2>&1; then
-    if ! git diff --quiet -- 'src/**/SKILL.md'; then
-      echo "auto-heal: SKILL.md frontmatter drifted — regenerated"
-      git add 'src/**/SKILL.md' 2>/dev/null || true
-      healed+=("SKILL.md frontmatter")
-    fi
-  else
-    echo "auto-heal: SKILL.md frontmatter sync FAILED — last 20 lines:"
-    tail -20 /tmp/erpax-skill-sync.log || true
-  fi
-  rm -f /tmp/erpax-skill-sync.log
-fi
+# Measured 2026-09-07: four consecutive syncs wrote 91 → 369 → 49 → 391 patches. With the
+# fixpoint loop and a bound of 8 passes it wrote 606 patches over 8 passes and then REFUSED,
+# still moving 49. Of the 391 atoms still drifting, 357 differ only in `bondDegree`, each by
+# exactly +3 — a constant global offset per pass, which is growth, not settling.
+#
+# A heal must converge. This one costs 432s and cannot, so running it on every push would burn
+# seven minutes to leave the tree mid-cascade — the auto-heal contract at the top of this file
+# (idempotent, byte-identical across runs, < 5s) is violated on all three counts.
+#
+# The descriptions the [[seo]] coverage gate needs ARE now committed, healed by an explicit run.
+# Re-run deliberately with `tsx src/skill/router/upgrade/index.ts --sync` and read the refusal;
+# the remaining work is to stop the frontmatter being an edge source at all (the `standards:` and
+# quantum `entangled:` blocks still carry `[[links]]`; `description:` no longer does).
 
-# ── Artefact 4: the translations catalogue + per-atom projections ────
+# ── Artefact 4: translations catalogue — NOT HEALED HERE, the generator cannot succeed ──
 #
-# Every atom carries a `translations.ts` whose entries store a uuid and a word-split RECOMPUTED
-# from the source string. [[translations]]/collect asserts they recompute — "NO HALLUCINATION" —
-# and 2,222 of them did not: the stored uuids were written by an older implementation and nothing
-# regenerated them.
+# `erpax translations collect` was wired in here and had to be taken out: it FAILS, every time,
+# and dirties the tree on its way down.
 #
-# Same shape as the frontmatter above: a DERIVED artefact with no step that regenerates it drifts
-# until a gate notices, and the gate that noticed was in CI, where nobody was looking.
-if [ "$DRY_RUN" = 0 ]; then
-  if cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/cli/index.ts translations collect >/tmp/erpax-tr.log 2>&1; then
-    if ! git diff --quiet -- 'src/**/translations.ts' 'src/translations/catalogue.ts'; then
-      echo "auto-heal: translations catalogue drifted — regenerated"
-      git add 'src/**/translations.ts' src/translations/catalogue.ts 2>/dev/null || true
-      healed+=("translations catalogue")
-    fi
-  else
-    echo "auto-heal: translations collect FAILED — last 20 lines:"
-    tail -20 /tmp/erpax-tr.log || true
-  fi
-  rm -f /tmp/erpax-tr.log
-fi
+#   RangeError: Invalid string length
+#     at JSON.stringify — src/translations/collect/index.ts:117 (catalogueFile)
+#
+# `catalogueFile` inlines EVERY atom's full translations into one pretty-printed literal. At 3,582
+# atoms that string exceeds V8's maximum, so the catalogue cannot be written at corpus scale — and
+# the per-atom `translations.ts` writes happen BEFORE it, so a failed run leaves hundreds of files
+# modified and unstaged (measured 2026-09-07: 425). Wired in here it did that on every push.
+#
+# The catalogue restates what each atom's own `translations.ts` already holds — this corpus's own
+# law that duplication is camouflage, at a scale where the duplicate no longer fits in a string.
+# The fix is for the catalogue to REFERENCE atoms rather than inline them; until then this is the
+# real cause of the `translations: NO HALLUCINATION` CI failure, and it is not a heal.
 
 # ── Future artefacts — wire as they land ─────────────────────────────
 # - src/services/spec-generator/* outputs (chain registry, seeds, tests,

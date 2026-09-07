@@ -3,13 +3,13 @@ name: matrix
 description: "Use when asking who is adjacent to whom — the corpus graph as nodes and edges, addressed rather than searched. neighborsOf and backlinksOf resolve an atom's outgoing and incoming edges through an adjacency index built once at module load; they previously scanned all 37,854 edges per call, which made a corpus-wide pass O(atoms × edges) and unfinishable. Edges are {f,t} INDICES, not names — a filter on .from/.to returns zero for every atom, which is how two false measurements were once confirmed."
 atomPath: "uuid/matrix"
 coordinate: "uuid/matrix · 8/crest · a2227c0b"
-contentUuid: "297c033c-71e6-53ad-9e9c-733991527863"
+contentUuid: "af38f84f-1d40-5b4a-b77e-54bdfb12be42"
 diamondUuid: "287c8592-4d15-8dc4-a1ae-62f3aa3fe4e8"
 uuid: "a2227c0b-74e5-8133-a265-bab357c75f6a"
 horo: 8
 typography:
   partition: uuid
-  bondDegree: 295
+  bondDegree: 296
 standards:
   - "RFC 9562 §5.8 (uuidv8 content-uuid) + §4.1 variant"
 bindings: []

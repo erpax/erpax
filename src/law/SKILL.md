@@ -3,13 +3,13 @@ name: law
 description: "Use when reasoning about law — Every directive that shaped erpax, distilled and saved as a skill (your own law: save the commands, don't lose them to the chat). Each law links to the atom it governs — the inboun"
 atomPath: law
 coordinate: "law · 1/base · d460fc10"
-contentUuid: "4c435b74-8242-5046-99f7-52277fe1fe8c"
+contentUuid: "a5e4ed19-6f04-5b27-8303-b56b8f64afc5"
 diamondUuid: "b6d8930d-4c81-8ae1-8d36-ef0e73f0aff4"
 uuid: "d460fc10-11bd-8d44-9e0d-2893379547aa"
 horo: 1
 typography:
   partition: law
-  bondDegree: 9339
+  bondDegree: 9340
 standards: []
 bindings: []
 signatures:

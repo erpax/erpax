@@ -3,13 +3,13 @@ name: allowance
 description: "Use when reasoning about allowance — The allowance for doubtful accounts as an IFRS 9 §5.5 expected-credit-loss estimate driven by the aging buckets: each bucket carries a loss rate, and the allowance is their…"
 atomPath: "receivable/allowance"
 coordinate: "receivable/allowance · 4/weave · 6eabfc08"
-contentUuid: "60b8e51f-07ee-5046-af68-4bd80f447d37"
+contentUuid: "9a500329-57e9-5c7a-b97b-0443b12a5e41"
 diamondUuid: "80302533-2dd9-8bde-a67f-8ff1e53c183f"
 uuid: "6eabfc08-45ad-8c27-85f9-c53aa9a31c8f"
 horo: 4
 typography:
   partition: receivable
-  bondDegree: 12
+  bondDegree: 9
 standards:
   - "IFRS IFRS-9 §5.5 expected-credit-loss"
   - "ISO-4217:2015 currency-codes"

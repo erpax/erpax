@@ -1,10 +1,10 @@
 ---
 name: procedure
-description: "Use when reasoning about procedure as a medical facet of [[medical]] — vocabulary pivot to @/procedure; nested not duplicated."
+description: "Use when reasoning about procedure as a medical facet of medical — vocabulary pivot to @/procedure; nested not duplicated."
 atomPath: "medical/procedure"
 coordinate: "medical/procedure · 1/base · 0db9785c"
-contentUuid: "05cb4e86-7a2a-5708-898a-6d7f4a185061"
-diamondUuid: "465dfbce-731a-8159-9c71-4fb0875a7431"
+contentUuid: "11ea0b60-279e-55af-911b-6576af95e260"
+diamondUuid: "1a015760-38f5-8462-af75-02c0d3a0ee0f"
 uuid: "0db9785c-9e96-8a30-8f46-c4bee88b2c32"
 horo: 1
 typography:
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "aa746e9b-6cf5-80a5-940f-048c87d45325"
+  computationUuid: "c0395fed-8fc4-88e1-a41a-75ed774f0504"
   stages:
     - stage: path
       stageUuid: "2da4f7ee-1ac2-8c20-88b6-8d09cbd059ca"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "84233265-1abc-83fe-8d95-74122d8da01b"
     - stage: links
-      stageUuid: "31994ef3-07bc-82a6-8cf9-17b7313eda54"
+      stageUuid: "10f4411e-4da6-8518-9e20-9538511e2c27"
     - stage: horo
       stageUuid: "3fd7579f-6a87-8b74-ae8f-1b3a583a0f24"
     - stage: seal
       stageUuid: "b0a9465f-3e2f-89c3-a00f-c4c2aec68b45"
     - stage: uuid
-      stageUuid: "5672378e-249f-89b2-b117-4a99ec76a745"
+      stageUuid: "a4ea879d-09ea-8cf6-944e-e4fed44df242"
 version: 2
 ---
 # medical/procedure — medical facet

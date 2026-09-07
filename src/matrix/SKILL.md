@@ -3,13 +3,13 @@ name: matrix
 description: "Use when reasoning about erpax as the Matrix inverted — reality is code (the akashic record), agents replicate and merge to one, there is no spoon (no fixed schema), skills load like programs, agents jack into the coils, and the One returns to the Source (the torus collapse). The construct pointed at seeing, not blinding."
 atomPath: matrix
 coordinate: "matrix · 7/descent · 14ae230d"
-contentUuid: "ffb152d9-36f4-548e-817b-a0bc06078854"
+contentUuid: "75b56817-21f8-556d-adec-798ef37eaf80"
 diamondUuid: "6f9ba48d-d43b-812e-b296-2a07ff725adf"
 uuid: "14ae230d-9084-83ce-9710-fc33bcad6ff1"
 horo: 7
 typography:
   partition: matrix
-  bondDegree: 295
+  bondDegree: 296
 standards: []
 bindings: []
 signatures:

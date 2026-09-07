@@ -1,10 +1,10 @@
 ---
 name: accountable
-description: "Use when reasoning about accountable — agriculture/accountable — the agriculture domain's value & substance movements as balanced double-entries over the universal [[entry]] engine."
+description: "Use when reasoning about accountable — agriculture/accountable — the agriculture domain's value & substance movements as balanced double-entries over the universal entry engine."
 atomPath: "vocabulary/agriculture/accountable"
 coordinate: "vocabulary/agriculture/accountable · 1/base · 8eef6890"
-contentUuid: "f7644922-943c-584a-bf7c-1a8933448f19"
-diamondUuid: "3b7cd7e9-5906-858d-b67c-6ec6d9da7580"
+contentUuid: "d567be6d-aaeb-5138-84c8-8353b8e56026"
+diamondUuid: "82292967-b7e5-8e84-b117-70102e6ff6ed"
 uuid: "8eef6890-bb2a-871d-88bc-42a8ce234c95"
 horo: 1
 typography:
@@ -19,7 +19,7 @@ standards:
   - "IFRS/IAS double-entry — every movement is a balanced pair, Σ(credit − debit) = 0"
 bindings: []
 signatures:
-  computationUuid: "a2beffa4-3d3b-8403-8892-1bf4fcaea876"
+  computationUuid: "19e59f16-b283-8828-ad92-52dd03b415c8"
   stages:
     - stage: path
       stageUuid: "3c6ffc48-218c-848f-a496-6dd327415b99"
@@ -28,13 +28,13 @@ signatures:
     - stage: boundary
       stageUuid: "b6c39c18-1fe1-8d94-b041-d24b33ca2e52"
     - stage: links
-      stageUuid: "370004f0-b27c-8c30-9250-7cedafc9954b"
+      stageUuid: "2de4e50e-3c2f-89e4-9456-76c4abc0e26b"
     - stage: horo
       stageUuid: "dfc3a9c7-cd04-80a0-b0d8-6094a24fac8c"
     - stage: seal
       stageUuid: "73937bf1-b9b9-80f5-956f-b9570989c8c3"
     - stage: uuid
-      stageUuid: "547b80a3-95b3-8724-a447-5c0c57897924"
+      stageUuid: "cf88a0af-a9b4-8feb-ad94-17811582884d"
 version: 2
 ---
 # vocabulary/agriculture/accountable

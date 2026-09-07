@@ -3,13 +3,13 @@ name: nested
 description: "Use when reasoning about nested — Payload groups nest, so a hook that must reach walks a dotted path. Three atoms wrote that walk for themselves, and body-hashing (rules/copy) proved two of them byte-identical:"
 atomPath: "field/nested"
 coordinate: "field/nested · 5/round · 5bbe40e1"
-contentUuid: "3a4292b3-0793-5c42-a660-cc56a6e3051a"
+contentUuid: "5fe18205-bffb-5a71-bc36-08c941ca874c"
 diamondUuid: "d9f0c3e1-e56f-801a-ba4c-3f081b969408"
 uuid: "5bbe40e1-5a05-8bdf-8487-230597284c9c"
 horo: 5
 typography:
   partition: field
-  bondDegree: 12
+  bondDegree: 9
 standards:
   - "ISO/IEC 25010:2023 §5.6 maintainability (one truth, one address)"
 bindings: []

@@ -3,13 +3,13 @@ name: mesh
 description: "Use when querying the whole ERP as one graph — atoms ⊕ parsed import edges ⊕ standards citations, wave-schedulable; the clause→code trace as a query."
 atomPath: mesh
 coordinate: "mesh · 7/descent · 12bfd7f7"
-contentUuid: "9691be57-4f1a-5c64-bc53-bc2c9f2ee5a9"
+contentUuid: "accea564-f6bc-5a90-a9ff-e188f152ba02"
 diamondUuid: "dd6faa27-d04a-80cc-8a20-2ca6938dded0"
 uuid: "12bfd7f7-6473-85ff-b785-1fe715a70bb3"
 horo: 7
 typography:
   partition: mesh
-  bondDegree: 28
+  bondDegree: 29
 standards:
   - "ISO/IEC 25010:2023 §5.6.2 modularity — the whole is one addressable graph"
   - "banner read from COMMENTS ([[syntax]]) — prose addresses,"

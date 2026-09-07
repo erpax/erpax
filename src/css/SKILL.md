@@ -3,13 +3,13 @@ name: css
 description: "Use when a stylesheet is imported, stubbed, or reasoned about in build or typegen — CSS is the form facet of the styling/visual dimension (glyph ⊕ style), a complete diamond atom: each file content-addressed and sealed; Node must recognize .css as a valid diamond surface, never ERR_UNKNOWN_FILE_EXTENSION off-ring escape."
 atomPath: css
 coordinate: "css · 5/round · 95dd948a"
-contentUuid: "1fe9bf06-b0b7-52ac-bf70-d241a8ecb2f5"
+contentUuid: "5522c181-e3da-5b7f-b51b-93bd6785ed2f"
 diamondUuid: "47ca0d3d-a94a-8956-a973-45ea1b870daf"
 uuid: "95dd948a-fe23-8024-94d8-dbab6232efef"
 horo: 5
 typography:
   partition: css
-  bondDegree: 56
+  bondDegree: 58
 standards: []
 bindings: []
 signatures:

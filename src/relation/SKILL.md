@@ -3,13 +3,13 @@ name: relation
 description: "Use when reading the id a Payload relationship points at — idOf collapses the three shapes Payload resolves a relationship to (raw string id, numeric id, or the populated document) into one id, or undefined. Depth is a query concern and must not change identity."
 atomPath: relation
 coordinate: "relation · 4/weave · 7d066ec9"
-contentUuid: "ccbc4743-cfde-5b34-877c-6a0773c570d9"
+contentUuid: "dddad5b8-38f4-537c-8b4a-86e33dfe715e"
 diamondUuid: "3a726e6c-c5af-8dfc-8c26-796889afa199"
 uuid: "7d066ec9-0d35-8895-b3f5-5408188981e3"
 horo: 4
 typography:
   partition: relation
-  bondDegree: 12
+  bondDegree: 9
 standards: []
 bindings: []
 signatures:

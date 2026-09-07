@@ -3,13 +3,13 @@ name: parity
 description: "Use when reasoning about parity — runs — **18 lanes**, the authority. Two other files claim to run the gate and each was written by hand:"
 atomPath: "gate/parity"
 coordinate: "gate/parity · 1/base · b8a3efd3"
-contentUuid: "155913cf-f1ce-557f-8d4f-179a24bea8d2"
+contentUuid: "c218a599-21ae-5b46-9554-f7ec0d0ea540"
 diamondUuid: "75a538b6-5c73-80a1-938a-4eb61d74fb5d"
 uuid: "b8a3efd3-8411-87da-929a-c9066446c1f9"
 horo: 1
 typography:
   partition: gate
-  bondDegree: 12
+  bondDegree: 9
 standards:
   - "ISO/IEC 25010:2023 §5.6 maintainability — one truth, one address"
 bindings: []

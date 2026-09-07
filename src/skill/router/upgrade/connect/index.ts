@@ -23,6 +23,15 @@ import { sortUnique, deriveDescription, signaturesMatch, frontmatterEdges } from
 const SRC = 'src'
 const FM_VERSION = 2
 
+/** One atom, folded once: its current text, the text its frontmatter renders to, and that frontmatter. */
+export interface RenderedAtom {
+  readonly atomPath: string
+  readonly path: string
+  readonly text: string
+  readonly expected: string
+  readonly frontmatter: ConnectedFrontmatter
+}
+
 export interface UpgradeContext {
   readonly cwd: string
   readonly ctx: FolderReadmeContext
@@ -59,7 +68,11 @@ export function connectFrontmatter(
   const { cwd, ctx, graph, corpusLeaves, partitionPeers } = upgradeCtx
   const leaf = atomPath.split('/').pop() ?? atomPath
   const folder = deriveFolderModel(atomPath, cwd, ctx, graph)
-  const computation = computeDiamond({ kind: 'path', path: atomPath, cwd })
+  // Pass the ALREADY-BUILT graph + ctx. Without them computeDiamond rebuilds the corpus
+  // typography graph and readme context for EVERY atom — 564ms each, ~29 minutes over the corpus,
+  // to recompute per atom what the context beside it already holds. Proven identical (model and
+  // stages, so uuids and signatures too) with and without, across the tree.
+  const computation = computeDiamond({ kind: 'path', path: atomPath, cwd, graph, ctx })
   const diamond = computation.model
   const signatures = signaturesFromStages(computation.stages)
   const matrixIn = sortUnique(backlinksOf(folder.leaf).map((n) => n.atom))
@@ -118,24 +131,43 @@ export function connectFrontmatter(
   return draft
 }
 
-/** Connect atoms — same tree ⇒ same patches. Optional scope limits the walk. */
+/**
+ * Render every in-scope atom ONCE — the single fold the whole flow shares.
+ *
+ * `connectCorpus`, `materializeSkillFrontmatter` and `verifySkillFrontmatter` each need the same
+ * two things per atom: the connected frontmatter, and the text that frontmatter renders to. Before
+ * this existed they each recomputed both, and the CLI's `--sync` then called `connectCorpus` a
+ * SECOND time purely to print a connectivity line — so a push paid for the corpus fold four times
+ * over to answer one question. Folding is the law this atom is named for; it was not applied here.
+ */
+export function renderCorpus(
+  cwd: string = process.cwd(),
+  scope?: readonly string[],
+): Map<string, RenderedAtom> {
+  const upgradeCtx = buildUpgradeContext(cwd)
+  const out = new Map<string, RenderedAtom>()
+  const paths = scope ? [...scope].sort() : listAtomPaths(cwd)
+  for (const atomPath of paths) {
+    const path = join(cwd, SRC, atomPath, 'SKILL.md')
+    const text = readFileSync(path, 'utf8')
+    const fm = connectFrontmatter(atomPath, text, upgradeCtx)
+    const expected = isQuantumSkillPath(atomPath, fm.typography.partition)
+      ? upgradeQuantumSkillText(text, fm)
+      : upgradeSkillText(text, fm)
+    const uuid =
+      expected.match(/^contentUuid:\s*(.+)$/m)?.[1]?.trim().replace(/^["']|["']$/g, '') ?? ''
+    out.set(atomPath, { atomPath, path, text, expected, frontmatter: { ...fm, contentUuid: uuid } })
+  }
+  return out
+}
+
+/** The connected frontmatter for every in-scope atom — one entry per SKILL.md. */
 export function connectCorpus(
   cwd: string = process.cwd(),
   scope?: readonly string[],
 ): Map<string, ConnectedFrontmatter> {
-  const upgradeCtx = buildUpgradeContext(cwd)
   const out = new Map<string, ConnectedFrontmatter>()
-  const paths = scope ? [...scope].sort() : listAtomPaths(cwd)
-  for (const atomPath of paths) {
-    const text = readFileSync(join(cwd, SRC, atomPath, 'SKILL.md'), 'utf8')
-    const fm = connectFrontmatter(atomPath, text, upgradeCtx)
-    const upgraded = isQuantumSkillPath(atomPath, fm.typography.partition)
-      ? upgradeQuantumSkillText(text, fm)
-      : upgradeSkillText(text, fm)
-    const uuid =
-      upgraded.match(/^contentUuid:\s*(.+)$/m)?.[1]?.trim().replace(/^["']|["']$/g, '') ?? ''
-    out.set(atomPath, { ...fm, contentUuid: uuid })
-  }
+  for (const [atomPath, r] of renderCorpus(cwd, scope)) out.set(atomPath, r.frontmatter)
   return out
 }
 
@@ -143,18 +175,13 @@ export function connectCorpus(
 export function materializeSkillFrontmatter(
   cwd: string = process.cwd(),
   scope?: readonly string[],
+  rendered?: ReadonlyMap<string, RenderedAtom>,
 ): number {
-  const patches = connectCorpus(cwd, scope)
   let n = 0
-  for (const [atomPath, fm] of patches) {
+  for (const [atomPath, r] of rendered ?? renderCorpus(cwd, scope)) {
     if (scope && !scope.includes(atomPath)) continue
-    const path = join(cwd, SRC, atomPath, 'SKILL.md')
-    const text = readFileSync(path, 'utf8')
-    const expected = isQuantumSkillPath(atomPath, fm.typography.partition)
-      ? upgradeQuantumSkillText(text, fm)
-      : upgradeSkillText(text, fm)
-    if (expected !== text) {
-      writeFileSync(path, expected)
+    if (r.expected !== r.text) {
+      writeFileSync(r.path, r.expected)
       n++
     }
   }
@@ -175,22 +202,15 @@ export function verifySignatures(
 export function verifySkillFrontmatter(
   cwd: string = process.cwd(),
   scope?: readonly string[],
+  rendered?: ReadonlyMap<string, RenderedAtom>,
 ): { ok: boolean; drift: string[] } {
-  const upgradeCtx = buildUpgradeContext(cwd)
-  const paths = scope ? [...scope].sort() : listAtomPaths(cwd)
   const drift: string[] = []
-  for (const atomPath of paths) {
-    const path = join(cwd, SRC, atomPath, 'SKILL.md')
-    const text = readFileSync(path, 'utf8')
-    const fm = connectFrontmatter(atomPath, text, upgradeCtx)
-    const expected = isQuantumSkillPath(atomPath, fm.typography.partition)
-      ? upgradeQuantumSkillText(text, fm)
-      : upgradeSkillText(text, fm)
-    if (expected !== text) {
+  for (const [atomPath, r] of rendered ?? renderCorpus(cwd, scope)) {
+    if (r.expected !== r.text) {
       drift.push(atomPath)
       continue
     }
-    const sig = verifySignatures(atomPath, text, upgradeCtx)
+    const sig = signaturesMatch(parseSignaturesFromText(r.text), r.frontmatter.signatures)
     if (!sig.ok) drift.push(`${atomPath} (${sig.reasons.join(', ')})`)
   }
   return { ok: drift.length === 0, drift }

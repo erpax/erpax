@@ -3,13 +3,13 @@ name: xml
 description: "Use when reasoning about xml — Peppol UBL, ISO-20022 pain.00x and OECD SAF-T all emit XML. What they share is not a document model — each owns its namespaces, element order and schema — it is the two layers…"
 atomPath: xml
 coordinate: "xml · 2/share · 65071b64"
-contentUuid: "74d4f225-ab61-5b84-a006-47ffc5f964e3"
+contentUuid: "4b34b2dd-3065-5c06-b031-20ac608f656f"
 diamondUuid: "7d3fec46-628d-8303-81ee-0a9870e44a89"
 uuid: "65071b64-138e-8d78-9bc5-3141f8358f06"
 horo: 2
 typography:
   partition: xml
-  bondDegree: 19
+  bondDegree: 16
 standards:
   - "XML-1.0 §2.4 predefined-entities · §3.1 element-content"
 bindings: []

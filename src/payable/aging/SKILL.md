@@ -3,13 +3,13 @@ name: aging
 description: "Use when reasoning about aging — Wraps party/aging with A/P-shaped output — , — and adds the cash-flow-impact section the payables side needs and the receivables side does not."
 atomPath: "payable/aging"
 coordinate: "payable/aging · 8/crest · 1e7f17e6"
-contentUuid: "dd010505-feb7-52ab-9646-cbe191a3943d"
+contentUuid: "9302a5fb-02f0-588a-9ca4-be8fcdaed4d8"
 diamondUuid: "f9bbab5d-3471-8faf-ad41-4c8f57ec6ff0"
 uuid: "1e7f17e6-f65a-8c3c-af32-984d231131ec"
 horo: 8
 typography:
   partition: payable
-  bondDegree: 23
+  bondDegree: 17
 standards:
   - "IFRS IAS-37 provisions-contingent-liabilities"
   - "IFRS IAS-7 statement-of-cash-flows"

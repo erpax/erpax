@@ -1,10 +1,10 @@
 ---
 name: enumeration
-description: "Use when reasoning about enumeration as a medical facet of [[medical]] — vocabulary pivot to @/enumeration; nested not duplicated."
+description: "Use when reasoning about enumeration as a medical facet of medical — vocabulary pivot to @/enumeration; nested not duplicated."
 atomPath: "medical/enumeration"
 coordinate: "medical/enumeration · 1/base · 9149b4c7"
-contentUuid: "be33c649-0a25-5d0c-a8cb-0fe3e9e87691"
-diamondUuid: "c48a2a4f-76b7-87db-9ac3-ae75484f12f4"
+contentUuid: "bf3b0dce-db13-5451-a0ac-6b87dd2ce77e"
+diamondUuid: "b57c81b4-9ef9-8736-91e5-a24349fd6850"
 uuid: "9149b4c7-d4a5-8a6a-a908-9c55d6022f51"
 horo: 1
 typography:
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1aac8e03-6af3-8df1-a800-2f154fbe15d0"
+  computationUuid: "ade48aa2-561b-8595-a789-6f11dedfd425"
   stages:
     - stage: path
       stageUuid: "ee5086c6-9cdd-81e3-9a53-b27c2a4b4c0c"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "acbcf9c1-0f3e-8487-9503-64b0282dd0f5"
     - stage: links
-      stageUuid: "c0122ffc-4cc8-8257-8667-b04159495fd3"
+      stageUuid: "5ff9f57c-5807-8355-abbe-d1ad8fa17f33"
     - stage: horo
       stageUuid: "5d3d5f9c-4e88-8dbf-b030-019f8084311e"
     - stage: seal
       stageUuid: "08ab8641-3ea7-89e4-a608-de61567f6273"
     - stage: uuid
-      stageUuid: "8090be5b-1c48-8db4-a49f-99f0fc6c8f85"
+      stageUuid: "7841a779-213a-8a2f-9a77-3465f7a65887"
 version: 2
 ---
 # medical/enumeration — medical facet

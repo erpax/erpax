@@ -1,10 +1,10 @@
 ---
 name: worker
-description: "Use when modelling one worker — the singular model of the workers collection (the plural store); a person who performs labor for the organization. AND when naming the autonomous deployment face of a [[diamond]] — hook bodies, CLIs, guardians, agents, MCP handlers that run without a human in the loop."
+description: "Use when modelling one worker — the singular model of the workers collection (the plural store); a person who performs labor for the organization. AND when naming the autonomous deployment face of a diamond — hook bodies, CLIs, guardians, agents, MCP handlers that run without a human in the loop."
 atomPath: "vocabulary/worker"
 coordinate: "vocabulary/worker · 4/weave · b1ec73bd"
-contentUuid: "44ab1d68-fa7f-55ec-8cf9-f27dc7ab99d1"
-diamondUuid: "dfdd7756-6a93-80c8-9c8d-4a094e26b36f"
+contentUuid: "81b20833-7ea6-5270-be32-ffe035c13219"
+diamondUuid: "45372eca-b54e-8df2-be0b-d1a02e00cebd"
 uuid: "b1ec73bd-ef42-849a-ae1e-47417ddef467"
 horo: 4
 typography:
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "225deb14-1826-8107-8546-5b66fc1df17a"
+  computationUuid: "9d501975-bc01-8070-b8db-cfb2569dfd1f"
   stages:
     - stage: path
       stageUuid: "43f7c30b-ad28-8490-a716-1febe3e27477"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "1c381fd9-0654-83e8-86db-ce57b78170ac"
     - stage: links
-      stageUuid: "fd467e80-7568-89f9-a7b5-a2bae5d357ed"
+      stageUuid: "b16f63ca-462b-80b1-893b-1c996a36e171"
     - stage: horo
       stageUuid: "d1560c68-53c1-8fca-a260-e06e71ca6fd5"
     - stage: seal
       stageUuid: "d2a34c88-05b7-8963-987f-4b3c11c6680b"
     - stage: uuid
-      stageUuid: "b33cc347-858e-8943-8efa-bc22b4b62d60"
+      stageUuid: "074b9a58-ddf8-8fcb-9f1d-68159b8046a6"
 version: 2
 ---
 # worker — the model of one [[workers]] row

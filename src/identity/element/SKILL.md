@@ -3,13 +3,13 @@ name: element
 description: Use when reasoning about an identity element.
 atomPath: "identity/element"
 coordinate: "identity/element · 9/unity · 21f94f0f"
-contentUuid: "c371d751-33d9-59fb-baf8-81b6a18e450f"
+contentUuid: "82da3b06-a59d-528d-9061-228eea83ecd3"
 diamondUuid: "1a58a060-63e3-85e0-af7f-6afbe58bfe9b"
 uuid: "21f94f0f-73a6-8643-9cce-6e1369fab62d"
 horo: 9
 typography:
   partition: identity
-  bondDegree: 80
+  bondDegree: 77
 standards:
   - "ISO/IEC 25010:2023 §5.4 reusability — identity by abstraction"
   - "NIST FIPS 180-4 SHA-256 (uuid hash)"

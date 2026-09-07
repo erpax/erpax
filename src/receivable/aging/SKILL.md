@@ -3,13 +3,13 @@ name: aging
 description: "Use when reasoning about aging — Wraps party/aging with A/R-shaped output — , . The bucket math is identical to payable/aging; only the naming differs, and the two stay separate so each side names its own…"
 atomPath: "receivable/aging"
 coordinate: "receivable/aging · 7/descent · 7afef7f5"
-contentUuid: "fe6d7263-6337-523b-a203-e54751ea5925"
+contentUuid: "35b64cde-2fd6-52d0-9f6d-2ee113e90187"
 diamondUuid: "5b378b47-289b-8c46-ac87-f1ea99747fc8"
 uuid: "7afef7f5-6a82-832f-8e08-ff9705a38e6a"
 horo: 7
 typography:
   partition: receivable
-  bondDegree: 23
+  bondDegree: 17
 standards:
   - "IFRS IFRS-9 financial-instruments expected-credit-loss"
   - "ISO-8601-1:2019 date-time as-of-date"

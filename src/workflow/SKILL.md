@@ -3,13 +3,13 @@ name: workflow
 description: "Use when spawning, advancing, or escalating a workflow instance bound to a document — evaluating trigger conditions against a definition, routing step decisions (approve/reject/delegate/return), running service-task handlers, or firing SLA escalation on overdue steps; SOX-compliant approval chain execution. The BPMN-2.0 workflow orchestration service."
 atomPath: workflow
 coordinate: "workflow · 5/round · 2b0295b0"
-contentUuid: "99c23ecc-bec4-50a4-a0c5-f68bc438e010"
+contentUuid: "e68971fe-76ef-560a-b3bd-c614ffaec15b"
 diamondUuid: "36729edc-3ea0-8a38-8b8c-5cac82e6e587"
 uuid: "2b0295b0-ea17-8842-8e7f-5ffcac157dde"
 horo: 5
 typography:
   partition: workflow
-  bondDegree: 79
+  bondDegree: 73
 standards:
   - "ASC-606"
   - "IFRS-15"

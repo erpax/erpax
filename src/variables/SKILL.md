@@ -3,13 +3,13 @@ name: variables
 description: "Use when reasoning about variables as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: variables
 coordinate: "variables · 1/base · c95458c1"
-contentUuid: "c649658e-4d00-5ddc-bda5-50474e39fb1e"
+contentUuid: "2a2d253d-4254-5c59-b0de-8a55aebcc44e"
 diamondUuid: "1910b9e4-f650-8cda-8fb5-76a59681434d"
 uuid: "c95458c1-912e-8a9b-9aca-6e0d3348e470"
 horo: 1
 typography:
   partition: variables
-  bondDegree: 16
+  bondDegree: 24
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

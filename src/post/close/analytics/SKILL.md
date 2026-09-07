@@ -3,13 +3,13 @@ name: analytics
 description: "Use when generating post-close financial analytics — budget-vs-actual and period-over-period variance with waterfall decomposition, the sixteen liquidity/profitability/solvency/efficiency ratios, IFRS-8 business and geographic segment reporting, and executive KPI dashboards, once audit and consolidation are approved."
 atomPath: "post/close/analytics"
 coordinate: "post/close/analytics · 8/crest · 3dac0894"
-contentUuid: "872f510b-a1d0-5304-82ec-a33e4f76f79c"
+contentUuid: "dcf1b8cd-8782-5a4e-b3c6-d4b6d5a7e6c3"
 diamondUuid: "a2fa0d22-47ca-8847-9f71-7ec75c036363"
 uuid: "3dac0894-102d-83da-bc50-736479ccfc1c"
 horo: 8
 typography:
   partition: post
-  bondDegree: 64
+  bondDegree: 58
 standards:
   - "IAS-1"
   - "IAS-34"

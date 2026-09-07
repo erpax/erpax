@@ -3,13 +3,13 @@ name: rules
 description: "Use when configuring GL account metadata for double-entry validation — account type (asset/liability/equity/revenue/expense), normal polarity (debit/credit), balance-sheet vs P&L category, reconciliation frequency, cash-flow relevance, period-end close flag. The gl-posting-rules validation-metadata collection."
 atomPath: "gl/posting/rules"
 coordinate: "gl/posting/rules · 2/share · 3a0c5105"
-contentUuid: "265f03f7-ec4b-554d-a9bf-f0640f105bae"
+contentUuid: "2b86a50a-6a3f-54c4-89d3-97c1b554a512"
 diamondUuid: "c334c17a-e691-8a9b-a9fe-c7eec785528c"
 uuid: "3a0c5105-390b-85b0-aa7e-9ca13f2b5fd0"
 horo: 2
 typography:
   partition: gl
-  bondDegree: 887
+  bondDegree: 888
 standards:
   - "IFRS IAS-1 double-entry"
   - "ISO-8601-1:2019 effective-date"

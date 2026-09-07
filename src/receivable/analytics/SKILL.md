@@ -3,13 +3,13 @@ name: analytics
 description: "Use when reasoning about analytics — Days Sales Outstanding, receivables turnover and the collection effectiveness index over the invoice set — the A/R mirror of payable/analytics."
 atomPath: "receivable/analytics"
 coordinate: "receivable/analytics · 8/crest · 9336411a"
-contentUuid: "943fcf16-77a0-51c6-b009-a37793ceaf80"
+contentUuid: "e42fe46a-75c7-5f7e-89d4-07fefa43a43f"
 diamondUuid: "43da098f-3cb7-80e1-a481-2f4b76432657"
 uuid: "9336411a-2a4c-851e-a6e4-c42b124672bf"
 horo: 8
 typography:
   partition: receivable
-  bondDegree: 64
+  bondDegree: 58
 standards:
   - "IFRS IFRS-15 revenue-from-contracts-with-customers"
   - "ISO-4217:2015 currency-codes"

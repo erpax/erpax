@@ -3,13 +3,13 @@ name: receivable
 description: "Use when reasoning about receivable — The A/R field factories: the shapes an invoice carries — invoice number, status, due date, payment terms, A/R analysis. (the type module) is a set of these; this atom is the one."
 atomPath: receivable
 coordinate: "receivable · 7/descent · 3e699a21"
-contentUuid: "16f78f5c-3851-55d2-87a6-1cbf7faa2833"
+contentUuid: "3920725c-3758-50de-b3b7-242c39299181"
 diamondUuid: "8673a7cc-4c00-81fc-b02a-74598344f0e4"
 uuid: "3e699a21-b649-81a5-b5f5-510a9110ff3a"
 horo: 7
 typography:
   partition: receivable
-  bondDegree: 37
+  bondDegree: 34
 standards:
   - "EN-16931:2017 invoice-fields"
   - "IFRS IFRS-15 revenue-from-contracts-with-customers"

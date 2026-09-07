@@ -3,13 +3,13 @@ name: element
 description: "Use when reasoning about composition and stability through the chemical-elements matrix — everything is made of atoms, and the periodic table adds a chemistry to the logic: each atom has a VALENCE (electrons it shares to fill its shell), stability is the OCTET (a full outer shell — the noble gases), and atoms BOND to reach it. The new perspective: the erpax corpus is a MOLECULE — an atom's valence is its open links, and the corpus is stable exactly when aura gap = 0 (all shells full)."
 atomPath: element
 coordinate: "element · 2/share · 36963b9f"
-contentUuid: "675f9429-910c-5a3b-9720-2b323f2201d4"
+contentUuid: "a60c2999-57ff-56a9-803b-dc83af3ebb30"
 diamondUuid: "8fa08045-3329-8290-bce7-09c39a8384bf"
 uuid: "36963b9f-4d96-86a7-9531-7fde9099ca03"
 horo: 2
 typography:
   partition: element
-  bondDegree: 80
+  bondDegree: 77
 standards:
   - "IUPAC periodic table — periods, groups, main-group valence"
   - Lewis octet rule (duet for period 1) — stability = a full outer shell

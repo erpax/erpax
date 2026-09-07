@@ -3,13 +3,13 @@ name: base64url
 description: "Use when reasoning about base64url — (HKDF-derived per-row DEKs) and (JWS-shaped detached signatures) each carried their own / ."
 atomPath: "integrity/base64url"
 coordinate: "integrity/base64url · 1/base · 3160d99b"
-contentUuid: "c7e43fac-b1f3-5eaf-bd83-6f3decec526d"
+contentUuid: "8d19ad91-ca41-5c89-8adc-c97f51ca20d4"
 diamondUuid: "1fc269c5-591f-8630-a0ff-18ee9554cf06"
 uuid: "3160d99b-0500-8172-8ddb-58c059bda3ce"
 horo: 1
 typography:
   partition: integrity
-  bondDegree: 12
+  bondDegree: 9
 standards:
   - RFC 4648 §5 base64url — URL and filename safe alphabet
 bindings: []

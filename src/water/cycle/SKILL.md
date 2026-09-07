@@ -3,13 +3,13 @@ name: cycle
 description: "Use when reasoning about splitting water and burning it back — the loop purifies and stores, and cannot generate. Hess's law makes over-unity an identity failure rather than an engineering one, and the model searches the whole efficiency space for a counter-example instead of asserting there is none."
 atomPath: "water/cycle"
 coordinate: "water/cycle · 7/descent · 2953afb4"
-contentUuid: "044c552d-4b70-5fe0-bb69-f73e0e88a228"
+contentUuid: "a5685066-0569-5c62-a810-014494a65945"
 diamondUuid: "d7492ac3-8016-86c2-ab7a-b4d2ed1a12d3"
 uuid: "2953afb4-de32-8216-b72e-95590534086f"
 horo: 7
 typography:
   partition: water
-  bondDegree: 60
+  bondDegree: 61
 standards:
   - "NIST — ΔH°f H2O(l) = −285.83 kJ/mol · H2O(g) = −241.83 kJ/mol"
 bindings: []

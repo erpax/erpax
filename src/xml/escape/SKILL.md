@@ -3,13 +3,13 @@ name: escape
 description: "Use when reasoning about escape — must be replaced before any text or attribute value is embedded in generated XML (**XML 1.0 §2.4**)."
 atomPath: "xml/escape"
 coordinate: "xml/escape · 4/weave · 59af1de7"
-contentUuid: "eb70028e-8a10-56c0-aa29-55d57585d300"
+contentUuid: "a4aa6bb1-246c-5188-bab6-637d9f56eeea"
 diamondUuid: "46c74837-ceaf-8f25-9def-52b6be12eda5"
 uuid: "59af1de7-31e0-8c2c-8144-76428adfe239"
 horo: 4
 typography:
   partition: xml
-  bondDegree: 12
+  bondDegree: 9
 standards:
   - "XML-1.0 §2.4 predefined-entities"
 bindings: []

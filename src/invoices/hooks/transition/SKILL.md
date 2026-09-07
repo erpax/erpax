@@ -3,13 +3,13 @@ name: transition
 description: "Use when reasoning about transition — The AR hook ( ) and the AP hook ( ) both answer one question before emitting a domain event: *did this write CHANGE the document's liveness?* Both wrote , , and for themselves…"
 atomPath: "invoices/hooks/transition"
 coordinate: "invoices/hooks/transition · 5/round · 8c233d26"
-contentUuid: "bd560a66-2f49-5d7f-963b-adb9114845fc"
+contentUuid: "f309d1a5-ab1e-54ef-a880-4319ba1e4f45"
 diamondUuid: "2b377ee8-935f-8b82-a1fd-80e90eb57f53"
 uuid: "8c233d26-0142-8ca2-bd2e-f9c93e1a5e8b"
 horo: 5
 typography:
   partition: invoices
-  bondDegree: 16
+  bondDegree: 13
 standards:
   - "IAS-1"
   - "IFRS IAS-1 presentation (a reversal is a transition, never an edit)"

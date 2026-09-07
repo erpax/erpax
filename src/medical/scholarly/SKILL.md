@@ -1,10 +1,10 @@
 ---
 name: scholarly
-description: "Use when reasoning about scholarly as a medical facet of [[medical]] — vocabulary pivot to @/scholarly; nested not duplicated."
+description: "Use when reasoning about scholarly as a medical facet of medical — vocabulary pivot to @/scholarly; nested not duplicated."
 atomPath: "medical/scholarly"
 coordinate: "medical/scholarly · 4/weave · 245401d1"
-contentUuid: "37b94682-0245-5b10-be14-0836f49f125c"
-diamondUuid: "34526601-5094-8bcf-b939-f2cc60fa4bc1"
+contentUuid: "5a3e323f-567a-5102-b457-7733b3093868"
+diamondUuid: "d94e5dfa-7d5b-8312-bf56-fa7b884c44b4"
 uuid: "245401d1-0953-82b7-ba5c-b0ec039ef0a2"
 horo: 4
 typography:
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c652e922-2e3b-87e6-a514-2a1256ab1583"
+  computationUuid: "3f04154d-77de-813f-95cf-2236cef6474c"
   stages:
     - stage: path
       stageUuid: "9a46b8db-1fab-8d49-aac0-bb9bb76866a5"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "fbf352eb-3038-80b0-9a51-f0aa9f8dadc7"
     - stage: links
-      stageUuid: "e4398e03-a3d7-8b92-8e79-f73cf8ef5483"
+      stageUuid: "d9f2f092-84e6-8a42-8dcd-9e45b5d5bfde"
     - stage: horo
       stageUuid: "eb438214-0ad6-8da7-84d3-841e62b7e1fb"
     - stage: seal
       stageUuid: "f651c438-0753-8e4f-adc3-31d71d434fb5"
     - stage: uuid
-      stageUuid: "85cbc21f-995e-8bd0-958e-7208d1d62933"
+      stageUuid: "2268b255-0ac6-8703-91c1-d4bd196b4762"
 version: 2
 ---
 # medical/scholarly — medical facet

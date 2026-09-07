@@ -3,13 +3,13 @@ name: payable
 description: "Use when reasoning about payable — The A/P field factories: the shapes a bill carries — bill number, vendor, due date, payment terms, A/P analysis. (the type module) is a set of these; this atom is the one."
 atomPath: payable
 coordinate: "payable · 5/round · 7d205f31"
-contentUuid: "0b324ce9-55c6-5034-9388-af6eb07f82ea"
+contentUuid: "aae0a842-c00d-5a1b-a6cd-e5e25c73a8b0"
 diamondUuid: "bea2e2f0-c118-8dc2-aa3f-ee043553dae1"
 uuid: "7d205f31-ee82-876e-9b8b-2f0f844079f8"
 horo: 5
 typography:
   partition: payable
-  bondDegree: 43
+  bondDegree: 40
 standards:
   - "EN-16931:2017 §BG-4 seller"
   - "ISO-17442"

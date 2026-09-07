@@ -21,11 +21,25 @@ const existingDescription = (text: string): string | undefined => {
   return m
 }
 
+/**
+ * Wikilink markup is CORPUS syntax; a description is prose for a reader — [[seo]] emits it as the
+ * meta description, where `[[x]]` is simply wrong.
+ *
+ * It is also a feedback loop. `linksOf` reads the WHOLE SKILL.md, so a `[[x]]` sitting in the
+ * frontmatter is counted as an edge — the frontmatter feeds the typography graph that computes the
+ * `bondDegree` written back into that same frontmatter. The fold then has no fixpoint: four
+ * consecutive syncs wrote 91 → 369 → 49 → 391 patches, oscillating, each one reporting success.
+ *
+ * The freshly-derived path already stripped this. The `prior` path did not, so 146 descriptions
+ * written by an older implementation kept their markup forever and kept driving the loop.
+ */
+const unlink = (s: string): string => s.replace(/\[\[([^\]]+)\]\]/g, '$1')
+
 /** Derive the Use-when description from existing frontmatter or body prose. */
 export function deriveDescription(leaf: string, text: string): string {
   const prior = existingDescription(text)
   if (prior) {
-    const stripped = prior.replace(new RegExp(`^Use when reasoning about ${leaf} —\\s*`, 'i'), '').trim()
+    const stripped = unlink(prior).replace(new RegExp(`^Use when reasoning about ${leaf} —\\s*`, 'i'), '').trim()
     if (/^Use when/i.test(stripped)) return stripped
     return `Use when reasoning about ${leaf} — ${stripped}`
   }
@@ -35,7 +49,7 @@ export function deriveDescription(leaf: string, text: string): string {
     .replace(/^#{1,6}\s+.+$/m, '')
     .trim()
   const para = body.split(/\n\n+/)[0]?.replace(/\s+/g, ' ').trim() ?? ''
-  const flat = para.replace(/\[\[([^\]]+)\]\]/g, '$1')
+  const flat = unlink(para)
   const snippet = clipToBoundary(flat, 180)
   if (snippet) return `Use when reasoning about ${leaf} — ${snippet}`
   return `Use when reasoning about ${leaf}.`

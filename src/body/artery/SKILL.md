@@ -1,10 +1,10 @@
 ---
 name: artery
-description: "Use when reasoning about the artery as an organ of [[body]] — pivot to canonical @/artery; zero duplication."
+description: "Use when reasoning about the artery as an organ of body — pivot to canonical @/artery; zero duplication."
 atomPath: "body/artery"
 coordinate: "body/artery · 2/share · 557e76fb"
-contentUuid: "f8fb438b-790c-5dcf-bdef-b72becfcf3ec"
-diamondUuid: "efb9aeec-ec01-81a0-b09c-cc4b7770c806"
+contentUuid: "b35fe269-d805-5bde-8122-7e65953c93e3"
+diamondUuid: "a19596cf-8df1-86aa-91d4-6857d4c745b0"
 uuid: "557e76fb-7965-8e53-ac97-43e02afb1322"
 horo: 2
 typography:
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8fb52b36-23e4-8245-b799-6c24d902d94d"
+  computationUuid: "8e45b9c8-4012-8feb-a865-7edb831a659a"
   stages:
     - stage: path
       stageUuid: "bcaba82e-025a-8cd8-9ce0-147268174ecf"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "b763f64d-e3f5-881c-b421-0207ae799756"
     - stage: links
-      stageUuid: "799ddca0-62cc-8b06-b7c4-a809d69aa6dd"
+      stageUuid: "8861f6bd-899e-8050-9724-8fe7664d5a3f"
     - stage: horo
       stageUuid: "3dc5d207-f124-8d75-92e7-476efcb3fb18"
     - stage: seal
       stageUuid: "d853fb4b-190f-810d-ac6d-cb2fbb96b4b9"
     - stage: uuid
-      stageUuid: "6a37a4c3-42e8-8428-af0d-270771645da9"
+      stageUuid: "9d3fa13e-2df0-8739-9ecd-31372a01c32a"
 version: 2
 ---
 # body/artery — organ facet

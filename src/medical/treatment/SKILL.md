@@ -1,10 +1,10 @@
 ---
 name: treatment
-description: "Use when reasoning about treatment as a medical facet of [[medical]] — vocabulary pivot to @/treatment; nested not duplicated."
+description: "Use when reasoning about treatment as a medical facet of medical — vocabulary pivot to @/treatment; nested not duplicated."
 atomPath: "medical/treatment"
 coordinate: "medical/treatment · 2/share · 92d3a283"
-contentUuid: "d7365fc5-191a-574c-89d9-46ecc46469c6"
-diamondUuid: "6b3ccd46-681d-8226-b290-9cb300af0c32"
+contentUuid: "b37e8c37-126d-5e81-abfe-709dbb37b956"
+diamondUuid: "1cca9ac0-a6af-8fc7-b865-32b0e1ca89c6"
 uuid: "92d3a283-118e-8388-a4cd-0ef43b558636"
 horo: 2
 typography:
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6583582e-7857-8989-a912-f33f46b5b6dc"
+  computationUuid: "1c02dc06-af5c-8f0e-83ee-ff2a9429e857"
   stages:
     - stage: path
       stageUuid: "85409bde-4b9e-8c49-8faa-20c1306d0143"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "3a7c69b3-c76b-870c-983b-625954d8268a"
     - stage: links
-      stageUuid: "b6a113a1-6f3b-8954-850d-0376ae432c11"
+      stageUuid: "4c7bea6b-16af-890b-ad2c-787fe5f4167e"
     - stage: horo
       stageUuid: "af2ba55c-d5c3-8e75-b34c-25ce2d361dd6"
     - stage: seal
       stageUuid: "9d850842-de2d-8feb-95ce-6c4800e8bccf"
     - stage: uuid
-      stageUuid: "567ed660-a0aa-88b8-a80c-feb4c02a798b"
+      stageUuid: "8a85e7b8-06f4-8624-ac43-72cb310d5b3b"
 version: 2
 ---
 # medical/treatment — medical facet

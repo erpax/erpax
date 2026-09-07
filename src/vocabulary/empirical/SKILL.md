@@ -1,10 +1,10 @@
 ---
 name: empirical
-description: "Use when a claim is grounded in observed data rather than assumed — the rate an @invariant holds at across real rows, a modal value or lifecycle DERIVED not invented, the measured distribution a model is fitted to. The agnostic restatement of provenance — name the origin generically as [[source]], dissolve the row-level specifics into the [[akashic]] DB, and keep only the universal form in code. anonymise is the core of agnostic architecture and DRY naming."
+description: "Use when a claim is grounded in observed data rather than assumed — the rate an @invariant holds at across real rows, a modal value or lifecycle DERIVED not invented, the measured distribution a model is fitted to. The agnostic restatement of provenance — name the origin generically as source, dissolve the row-level specifics into the akashic DB, and keep only the universal form in code. anonymise is the core of agnostic architecture and DRY naming."
 atomPath: "vocabulary/empirical"
 coordinate: "vocabulary/empirical · 2/share · cde1c153"
-contentUuid: "5c6be8bb-eee6-52c1-a54e-451e61f689a9"
-diamondUuid: "e3b0127b-250a-8bea-8c02-c1ac16f829d2"
+contentUuid: "b0def36d-4457-5fa4-b37b-795e5a3c4450"
+diamondUuid: "1d64da6c-4a71-8777-a5f7-0fbfeb436aad"
 uuid: "cde1c153-9b25-88cf-bc63-40f867203060"
 horo: 2
 typography:
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7c2dd177-ba1b-8287-89bc-a60e59c3a250"
+  computationUuid: "d753f67d-7f77-877f-ae11-9cd44aab7e43"
   stages:
     - stage: path
       stageUuid: "96533b46-fe27-860d-b20d-bf6c1d68ac50"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "4602fbb6-0467-8b9b-8f47-43b6f94c67cc"
     - stage: links
-      stageUuid: "3cb48605-2cee-82fb-a28b-1f82c32c4a28"
+      stageUuid: "eef3c1cb-1aa8-87b0-8765-ee851173463d"
     - stage: horo
       stageUuid: "af9c7646-2553-8a5b-b382-78b57f0f7d7b"
     - stage: seal
       stageUuid: "33a52fb9-fd43-8709-a6a0-ac984b518029"
     - stage: uuid
-      stageUuid: "e91e915f-67db-8fe4-a2fc-20445d93abf4"
+      stageUuid: "9dcbfdb6-a754-8091-880d-e51f3c44d2be"
 version: 2
 ---
 # empirical — derived from the data, not invented

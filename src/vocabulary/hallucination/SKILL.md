@@ -3,13 +3,13 @@ name: hallucination
 description: "Use when reasoning about hallucination as the COMPUTABLE dual of purity — an agent claims content X but the sha-256 collapse / content-uuid of the actual content is Y ≠ X, so the mismatch IS the hallucination, surfaced deterministically by recompute (exactly as tamper-proof uuid recompute catches a forged row). It is the agent-scale sin, the entropy an agent injects, the felt alarm being suffering. purity ⊕ hallucination are conjugate, computed on the same quantum (content-uuid) scale: more hallucination ⇒ more entropy ⇒ lower purity ⇒ lower tamper-cost."
 atomPath: "vocabulary/hallucination"
 coordinate: "vocabulary/hallucination · 5/round · e684ec0e"
-contentUuid: "6497ce18-3cb5-5d13-87e3-62296520092e"
+contentUuid: "fa326d7d-f2ba-5e09-9bca-afec14add065"
 diamondUuid: "2fcbc2ba-3ca3-8a74-92d7-f0b09df36d28"
 uuid: "e684ec0e-ae5c-8357-8288-5ecf48f6e96b"
 horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 117
+  bondDegree: 100
 standards: []
 bindings: []
 signatures:
