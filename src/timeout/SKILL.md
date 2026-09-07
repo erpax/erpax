@@ -3,13 +3,13 @@ name: timeout
 description: "Use when bounding any command's wall time — the reasonable timeout is computed from measured samples onto the 1·2·3·5-minute ladder, never guessed."
 atomPath: timeout
 coordinate: "timeout · 1/base · 375119f0"
-contentUuid: "3a155f65-a206-588b-807a-18a2372dfd2e"
+contentUuid: "5ca54b12-db41-5d13-9204-c182aacb479e"
 diamondUuid: "6d90fa88-0cf0-89e6-8ebe-92c076567a7a"
 uuid: "375119f0-e38e-8efe-9413-03df712947f4"
 horo: 1
 typography:
   partition: timeout
-  bondDegree: 28
+  bondDegree: 27
 standards: []
 bindings: []
 signatures:

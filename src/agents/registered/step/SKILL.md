@@ -1,9 +1,9 @@
 ---
 name: step
-description: "Use when reasoning about step — Every registered domain agent answered a chain step the same way: read and out of the step's note, claim the step only if the agent owns that collection, and return one audit leaf"
+description: "Use when reasoning about step — Every registered domain agent answered a chain step the same way: read and out of the step's note, claim the step only if the agent owns that collection, and return one audit leaf…"
 atomPath: "agents/registered/step"
 coordinate: "agents/registered/step · 8/crest · d5688cd1"
-contentUuid: "0b6501b7-4779-5a8a-bb79-ae9b98746bc1"
+contentUuid: "e069a982-6715-5d11-93ca-c47c96a87afc"
 diamondUuid: "5a735104-d7f2-8a96-a74a-d021e2b0a4a5"
 uuid: "d5688cd1-fe6d-8677-b53c-d956924765df"
 horo: 8
@@ -37,7 +37,7 @@ Every registered domain agent answered a chain step the same way: read `collecti
 `action=…` out of the step's note, claim the step only if the agent owns that collection, and
 return one audit leaf naming what it handled.
 
-**Eleven agents wrote that out.** 111 AST nodes each, byte-identical, addressed to one hash by
+**Eleven agents wrote that out.** 111 nodes each, byte-identical, addressed to one hash by
 [[rules]]/copy. Eleven copies are one implementation and ten decoys: a change to the note format,
 the ownership check or the leaf shape had to be made eleven times, and nothing would have said which
 copy was missed. That is the shape [[rules]] names — *while one law is stated in eleven private

@@ -3,7 +3,7 @@ name: copy
 description: "Use when reasoning about copy — This corpus states the law already: *duplication is camouflage — while one law is stated in two private corners, nothing can show a THIRD place is missing it.* It has paid for it…"
 atomPath: "rules/copy"
 coordinate: "rules/copy · 1/base · 631a2521"
-contentUuid: "85829f50-96b8-5349-b750-ea9238836d3b"
+contentUuid: "13bd6f6d-380b-5d59-891c-70968705dc1b"
 diamondUuid: "9b27927c-e044-8c87-89e3-1786c172287f"
 uuid: "631a2521-2644-8280-8554-8ecc10077efd"
 horo: 1
@@ -51,7 +51,7 @@ sharing an address are the same implementation, whatever their names.
 | --- | ---: |
 | bodies at two or more addresses | 44 |
 | **copies beyond the first** | **56** |
-| largest | `onChainStep` — 111 AST nodes, **11 identical copies** across the registered agents |
+| largest | `onChainStep` — 111 nodes, **11 identical copies** across the registered agents |
 
 Identifiers are deliberately **not** normalised. Erasing names would find "duplicates" that differ in
 what they operate on, and a report whose noise floor sits above its signal is one nobody reads — the
@@ -64,7 +64,7 @@ many honest functions share, and every such pair would bury the ones that matter
 
 Two of the top ten findings were written by the session that built it:
 
-- `visit` — 136 AST nodes, copied from `rules/collapse` into `fund` rather than reused. The payload-types
+- `visit` — 136 nodes, copied from `rules/collapse` into `fund` rather than reused. The payload-types
   parser, duplicated by the agent who had read the original an hour earlier.
 - `time` — 87 nodes, twice inside `quantum/hexbit`, because two benchmarks each grew their own
   median-timing helper.

@@ -158,6 +158,39 @@ describe('skill/router/upgrade — stage signatures at every pipeline step', () 
     const twice = upgradeSkillText(once, connectFrontmatter('skill/router', once, ctx))
     expect(parseSignaturesFromText(twice)).toEqual(parseSignaturesFromText(once))
   }, 120_000)
+
+  // This assertion compared SIGNATURES only, and a description that GREW on every pass satisfied
+  // it — the escape round-trip was asymmetric (yamlQuote wrote `\\`, the reader never reversed it),
+  // so one backslash became 2^passes of them. src/access/SKILL.md reached 25,179,501 bytes from
+  // 13,731. A weaker assertion beside a real one reads as coverage; assert the BYTES.
+  it('idempotent upgrade is byte-stable, not merely signature-stable', () => {
+    const raw = readSkill('skill/router')
+    const once = upgradeSkillText(raw, connectFrontmatter('skill/router', raw, ctx))
+    const twice = upgradeSkillText(once, connectFrontmatter('skill/router', once, ctx))
+    expect(twice).toEqual(once)
+  }, 120_000)
+})
+
+describe('skill/router/upgrade — the escape round-trip is an involution', () => {
+  // The only values that expose an escape asymmetry are the ones containing the escape characters
+  // themselves, so the fixture carries both a backslash and a quote.
+  const skillWith = (description: string): string =>
+    ['---', 'name: x', `description: ${JSON.stringify(description)}`, '---', '', '# x', '', 'A body.'].join('\n')
+
+  it('a description carrying a backslash and a quote does not grow across passes', () => {
+    const seed = 'Use when reasoning about x — a \\ backslash and a " quote.'
+    let text = skillWith(seed)
+    const first = deriveDescription('x', text)
+    for (let i = 0; i < 6; i++) text = skillWith(deriveDescription('x', text))
+    expect(deriveDescription('x', text)).toEqual(first)
+    expect(first).toContain('\\')
+    expect(first).toContain('"')
+  })
+
+  it('wikilink markup never survives into the description', () => {
+    const text = skillWith('Use when reasoning about x — cites [[proof]] and [[law]].')
+    expect(deriveDescription('x', text)).not.toMatch(/\[\[/)
+  })
 })
 
 const readSkill = (atomPath: string): string =>

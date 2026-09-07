@@ -16,7 +16,14 @@ const existingDescription = (text: string): string | undefined => {
   const m = fm.match(/^description:\s*(.+)$/m)?.[1]?.trim()
   if (!m) return undefined
   if ((m.startsWith('"') && m.endsWith('"')) || (m.startsWith("'") && m.endsWith("'"))) {
-    return m.slice(1, -1)
+    // UNESCAPE what yamlQuote escaped. It writes `\\` for a backslash and `\"` for a quote; this
+    // reader stripped the surrounding quotes and returned the body verbatim, so every sync
+    // re-escaped an already-escaped value and DOUBLED every backslash. That is exponential: one
+    // `\` became 2^passes of them. src/access/SKILL.md reached 25,179,501 bytes from 13,731 —
+    // and it is why the fold could never reach a fixpoint, because the description grew on every
+    // single pass. A writer that escapes needs a reader that unescapes; asymmetry here is not a
+    // cosmetic bug, it is unbounded growth.
+    return m.slice(1, -1).replace(/\\(["\\])/g, '$1')
   }
   return m
 }

@@ -3,13 +3,13 @@ name: cycle
 description: Use when modelling one cycle — the singular model of the cycles collection (the plural store); one recurrence of a repeating process or period.
 atomPath: "vocabulary/cycle"
 coordinate: "vocabulary/cycle · 7/descent · 23e6a644"
-contentUuid: "d697b6ae-55db-5c3c-ae9f-c82674ff3273"
+contentUuid: "459a479a-2936-5190-84cf-ec790c63138d"
 diamondUuid: "1535864a-0cfa-80ac-a481-f4346f3cafd7"
 uuid: "23e6a644-edce-80b2-94ab-17c5226475b4"
 horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 61
+  bondDegree: 58
 standards: []
 bindings: []
 signatures:

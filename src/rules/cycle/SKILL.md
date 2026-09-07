@@ -3,18 +3,18 @@ name: cycle
 description: "Use when a module reads a binding that does not exist yet — 'Cannot access X before initialization'. Reports the strongly connected components of the runtime import graph: sets of files that can all reach each other, where initialisation order is decided by accident. Type imports are not edges. Run: tsx src/rules/cycle/index.ts"
 atomPath: "rules/cycle"
 coordinate: "rules/cycle · 8/crest · 021b4d07"
-contentUuid: "b6e5f1c4-601f-5e77-a679-1f6fbd196bbf"
-diamondUuid: "e3d8efe3-20bc-837f-9ad0-681da75ccdb1"
+contentUuid: "5d216482-a829-5857-bae0-67901cb95eac"
+diamondUuid: "55fe6c7f-116a-8243-b07a-042c258cbbad"
 uuid: "021b4d07-6649-8bf0-b18a-5fa4dc21f300"
 horo: 8
 typography:
   partition: rules
-  bondDegree: 61
+  bondDegree: 58
 standards:
   - "ISO/IEC 25010:2023 §5.6.2 modularity"
 bindings: []
 signatures:
-  computationUuid: "ab0de4c2-96f3-8087-b927-a60c72574c36"
+  computationUuid: "cfb38a9d-05f6-8293-a6ef-2ee712570f42"
   stages:
     - stage: path
       stageUuid: "c16d54c2-f7ed-88ce-9443-877ba9783871"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "9fa9f948-6c85-802f-945a-b31f2aa90371"
     - stage: links
-      stageUuid: "7d0e33a5-2a8a-892e-895a-a1cdfa42de3a"
+      stageUuid: "5d630872-9cc8-8c1d-b134-177dca279cce"
     - stage: horo
       stageUuid: "35131da9-297b-8413-adc2-4b97635352f3"
     - stage: seal
       stageUuid: "ecbed9bc-ff8f-83fd-983d-dd7e83ac0533"
     - stage: uuid
-      stageUuid: "927d62a4-42a6-8050-96f1-ca9c52b28120"
+      stageUuid: "52f6baee-0378-850c-8567-805528cd45c6"
 version: 2
 ---
 # cycle — an import loop is a lie the module graph tells at runtime
@@ -80,31 +80,6 @@ It was first written as a depth-first walk that marked nodes `done` and reported
 
 An **SCC is the honest unit**: enumerating every distinct ring is exponential in a dense tangle, while the component answers the question that matters — *which files are mutually entangled* — in linear time.
 
-## Cutting it — three views, and one of them was a file with no address
-
-| view | largest atom SCC | what it answers |
-| --- | ---: | --- |
-| every edge | **453** | nothing useful — tests and deferred loads counted as coupling |
-| runtime (`runtimeMesh`) | **142** | what actually loads, eventually |
-| initialisation (`initMesh`) | **102** | *this atom's own claim* — what decides load ORDER |
-
-Two of those reductions were the reader, and are recorded above and below as such. One was code.
-
-**`src/cssVariables.js`** — six breakpoint numbers at the ROOT of `src`, reached by a
-`../../../` climb from one component. A file at src root folds to the pseudo-atom `.`, and `.`
-also holds `payload.config.ts`, which lawfully namespace-imports all 231 collections
-([[rules]]/confine). So six numbers with one caller were welded to the entire collection registry.
-Given an address at [[css]]/variables: **−23 atoms**, the largest single-edge cut available.
-
-The cycle was not held together by an architectural knot. It was held by matter with no address —
-which is [[rules]]/invisible's law, arriving in the dependency graph.
-
-**`agents/mcp/tool-defs`** then deferred three tree-scanners (collider · strength · emergence)
-that its own comment already said "run HERE in the Node MCP handler" at call time — while a static
-import loaded all three to DEFINE a tool. Both callers were already `async`. That is a real
-decoupling, and the instrument could not see it until `deferredTargetsOf` existed, because the mesh
-counted a function-body `import()` exactly like a static one.
-
 ## Entangled is not fatal — `fatalCycleUses`
 
 ES modules tolerate a loop as long as nobody **uses** a binding while the graph is still initialising. So the question worth asking is not *who is in a ring* — it is *who runs a ring-mate at load time*:
@@ -120,34 +95,6 @@ Two things it must NOT flag, and both were learned the hard way:
 
 - **A function is deferred.** `const build = () => make()` runs long after initialisation. Only an initialiser that *is not* a function body is evaluated at load time.
 - **A builtin cannot be in a dead zone.** The scan reported **49** uses until the source check existed; ~44 were `join`, `existsSync`, `createRequire` — node builtins, fully initialised before our graph starts, structurally incapable of the failure being hunted. Only a binding imported **from a file in the same tangle** can be undefined.
-
-## The tangle destroys COST attribution — and 64% of it was TEST EDGES
-
-The corpus records every gate lane's wall time ([[timeout]]'s ring, 50 labels), and [[mesh]]'s
-`costRoots` projects those costs onto upstream roots — promising *"the root carrying the most cost
-is the optimisation target"*. Asked, it answered flat: hundreds of roots tied at one number.
-
-The first reading blamed the cycle, and **overstated it twice**. `upstreamOf('accounting')` returns
-857 atoms; that is the ancestor set, not the component, and calling it the component was wrong. The
-component was 458.
-
-Then the real cause: **`meshOf` counted a test file's imports as runtime edges.** This atom's own
-walk has always excluded tests — `sources()` filters `IS_TEST` — and the mesh's did not. Two
-readers of one import graph, disagreeing in silence, which is the defect this corpus keeps paying
-for and had committed inside the instrument built to measure it.
-
-| | with test edges | runtime only |
-| --- | ---: | ---: |
-| largest atom SCC | **458** | **167** |
-| upstream(`accounting`) | **857** | **18** |
-| edges | 4,088 | 3,540 (548 test-only) |
-
-A test import couples nothing at runtime. Two-thirds of the reported tangle was test files, and the
-ancestor set of a core atom fell by 839. `runtimeMesh` drops them, and `MeshEdge.kind` now
-distinguishes the two so reactivity can keep them — a changed atom SHOULD re-run its test — while
-cost and cycle questions never see them.
-
-**167 atoms remain a genuine runtime cycle**, and that is the number worth cutting.
 
 ## You cannot trust something that is not a theorem
 

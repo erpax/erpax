@@ -117,27 +117,49 @@ else
   fi
 fi
 
-# ── Artefact 3: SKILL.md frontmatter — NOT HEALED HERE, and that is a finding ──
+# ── Artefact 3: SKILL.md frontmatter ─────────────────────────────────
 #
-# `skill:upgrade --sync` was wired in here and had to be taken out: THE FOLD HAS NO FIXPOINT.
+# Every SKILL.md carries a computed frontmatter block derived from the atom's own body and its
+# place in the matrix. It is DERIVED, so it drifts the moment an atom is minted or a body edited.
 #
-# `linksOf` reads the WHOLE SKILL.md, so a `[[wikilink]]` sitting in the frontmatter is an edge in
-# the typography graph — and that graph computes the `bondDegree` written back into that same
-# frontmatter. Rewriting the block changes the graph that decides what the block should say.
+# THE FOLD HAD NO FIXPOINT, and the cause was an escape asymmetry, not the graph. `yamlQuote`
+# writes `\\` for a backslash; `existingDescription` stripped the quotes and returned the body
+# verbatim, so every sync re-escaped an already-escaped value and DOUBLED every backslash. One
+# backslash became 2^passes of them: src/access/SKILL.md reached 25,179,501 bytes from 13,731,
+# 49 files passed 100 KB, and the description grew on every pass so the fold could never settle.
+# The reader now reverses exactly what the writer emits, and the corpus converges in 4 passes.
 #
-# Measured 2026-09-07: four consecutive syncs wrote 91 → 369 → 49 → 391 patches. With the
-# fixpoint loop and a bound of 8 passes it wrote 606 patches over 8 passes and then REFUSED,
-# still moving 49. Of the 391 atoms still drifting, 357 differ only in `bondDegree`, each by
-# exactly +3 — a constant global offset per pass, which is growth, not settling.
+# `--sync` iterates to that fixpoint and REFUSES rather than reporting a settled tree; a pass that
+# writes nothing ends the loop, so a settled tree costs exactly one pass.
 #
-# A heal must converge. This one costs 432s and cannot, so running it on every push would burn
-# seven minutes to leave the tree mid-cascade — the auto-heal contract at the top of this file
-# (idempotent, byte-identical across runs, < 5s) is violated on all three counts.
-#
-# The descriptions the [[seo]] coverage gate needs ARE now committed, healed by an explicit run.
-# Re-run deliberately with `tsx src/skill/router/upgrade/index.ts --sync` and read the refusal;
-# the remaining work is to stop the frontmatter being an edge source at all (the `standards:` and
-# quantum `entangled:` blocks still carry `[[links]]`; `description:` no longer does).
+# MEMOISED on the same key as the Payload artefacts, recorded AFTER a settled run — the fold costs
+# ~40s even when it writes nothing, and paying that on every push is the crack this hook spent a
+# session folding out. Any later edit to any input misses the memo, so it cannot hide drift.
+SKILL_CACHE_DIR="${TMPDIR:-/tmp}/erpax-skill-frontmatter"
+if [ "$DRY_RUN" = 0 ]; then
+  skill_key=""
+  if [ "${PAYLOAD_VERIFY_NOCACHE:-0}" != "1" ]; then
+    skill_key="$(bash scripts/payload-input-key.sh 2>/dev/null || true)"
+  fi
+  if [ -n "$skill_key" ] && [ -f "$SKILL_CACHE_DIR/$skill_key" ]; then
+    : # settled at this exact tree state — nothing to fold
+  elif cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/skill/router/upgrade/index.ts --sync >/tmp/erpax-skill-sync.log 2>&1; then
+    if ! git diff --quiet -- 'src/**/SKILL.md'; then
+      echo "auto-heal: SKILL.md frontmatter drifted — regenerated"
+      git add 'src/**/SKILL.md' 2>/dev/null || true
+      healed+=("SKILL.md frontmatter")
+    fi
+    settled_key="$(bash scripts/payload-input-key.sh 2>/dev/null || true)"
+    if [ -n "$settled_key" ]; then
+      mkdir -p "$SKILL_CACHE_DIR" && : > "$SKILL_CACHE_DIR/$settled_key"
+    fi
+  else
+    # A REFUSAL lands here: the fold could not settle. Do not stage a mid-cascade tree.
+    echo "auto-heal: SKILL.md frontmatter sync did not settle — last 20 lines:"
+    tail -20 /tmp/erpax-skill-sync.log || true
+  fi
+  rm -f /tmp/erpax-skill-sync.log
+fi
 
 # ── Artefact 4: translations catalogue — NOT HEALED HERE, the generator cannot succeed ──
 #
