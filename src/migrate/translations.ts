@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "migrate",
-    "uuid": "7f228e7f-03bd-8a9a-8454-1df30d7c3ed5",
+    "uuid": "8b1051c3-286e-8733-b1f9-25e4e3bf85be",
     "words": [
       "migrate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when collapsing structural violations into the canonical four-file atom — the computable migrating skills that run with zero manual work.",
-    "uuid": "bb7cd2ba-01a3-8cc5-9a18-9cb0a55c3c42",
+    "uuid": "b02a8a60-3abf-8555-9b09-58e5f5c8b703",
     "words": [
       "use",
       "when",

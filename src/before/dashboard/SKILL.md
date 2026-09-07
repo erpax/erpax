@@ -2,11 +2,11 @@
 name: dashboard
 description: "Use when reasoning about dashboard — An empty admin panel is ambiguous: a first run and a broken connection look identical."
 atomPath: "before/dashboard"
-coordinate: "before/dashboard · 2/share · 9ef4328c"
-contentUuid: "bea2001b-f791-555c-8dfa-e9861272150e"
-diamondUuid: "ab346a02-375d-8d0c-b890-be98684eaced"
-uuid: "9ef4328c-dba7-8b74-8245-05cfc1442230"
-horo: 2
+coordinate: "before/dashboard · 1/base · e789b680"
+contentUuid: "2af00771-f2bc-5285-bb16-ac2a13f3460b"
+diamondUuid: "e30a25a1-b7d8-81ef-92e3-452f208d4311"
+uuid: "e789b680-17da-834b-8a3f-18246217a72a"
+horo: 1
 typography:
   partition: before
   bondDegree: 46
@@ -18,7 +18,7 @@ standards:
   - "WCAG-2.1 §1.4.3 contrast-minimum"
 bindings: []
 signatures:
-  computationUuid: "04a9a237-c444-84ff-b228-ef0ce3dc96e6"
+  computationUuid: "7dd433a5-f8d7-831c-9bcb-dadf24aaba33"
   stages:
     - stage: path
       stageUuid: "347cb454-ecf4-88a0-89ff-4f8760617c17"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "b92dd72b-318b-872b-8fdc-b217d748eb73"
     - stage: horo
-      stageUuid: "62d52226-50cf-8c00-953f-f6cdf1c55caf"
+      stageUuid: "c8d45285-ad04-8d23-9f3b-b3bb05d2ba85"
     - stage: seal
       stageUuid: "6f898e76-f40a-8e09-8095-e3a304606ec6"
     - stage: uuid
-      stageUuid: "344edfcd-29ce-801e-877f-6833cfe31ab8"
+      stageUuid: "85dc37a1-3920-8332-933a-7fe058657a2d"
 version: 2
 ---
 # before/dashboard — the first-run prompt that must not be mistaken for an error

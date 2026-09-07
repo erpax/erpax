@@ -2,11 +2,11 @@
 name: prescription
 description: "Use when reasoning about prescription as a medical facet of medical — vocabulary pivot to @/prescription; nested not duplicated."
 atomPath: "medical/prescription"
-coordinate: "medical/prescription · 4/weave · 97f32217"
-contentUuid: "d0ccd824-2cb4-5919-8b4b-d09b4f297560"
-diamondUuid: "29ff1f51-7cfd-8366-857e-7fad1d0241d9"
-uuid: "97f32217-a4d0-8d03-ac21-ca96b4fb7419"
-horo: 4
+coordinate: "medical/prescription · 2/share · 6be6256c"
+contentUuid: "68b73cb9-0811-50df-9ff9-274255d38fa6"
+diamondUuid: "9b555cc2-d7cb-885e-b73d-ba685538d984"
+uuid: "6be6256c-ac23-8766-b108-5af40a20b95d"
+horo: 2
 typography:
   partition: medical
   bondDegree: 30
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3e27c3f6-dc7f-89a8-be55-b5e7665cd5b4"
+  computationUuid: "b01a9ec8-f1d7-87da-a028-bf399f2cd8a6"
   stages:
     - stage: path
       stageUuid: "65104497-fb23-8d6a-90c0-cfea228313fa"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cd0cfd2d-b6ae-87db-bb1c-363b20e372e4"
     - stage: horo
-      stageUuid: "561e104e-4d6f-8cee-b741-4cbf65a017e1"
+      stageUuid: "90a64537-3189-8be6-bcb9-adbd558d4a76"
     - stage: seal
       stageUuid: "ae94a5e4-c016-81a6-b074-679782fb64e5"
     - stage: uuid
-      stageUuid: "fa1b1c6f-8925-8fc3-b2cb-1049b944c0c7"
+      stageUuid: "892e7059-6d78-80ff-a5e9-93587c3644ae"
 version: 2
 ---
 # medical/prescription — medical facet

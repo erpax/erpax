@@ -2,18 +2,18 @@
 name: baseline
 description: "Use when reasoning about baseline — A **baseline** is the real-data INPUT a model fits to — for example an efficiency distribution measured across observed shifts. It is the **data, not the calibration**: the calibra"
 atomPath: "vocabulary/baseline"
-coordinate: "vocabulary/baseline · 8/crest · 8659096e"
-contentUuid: "f621487e-655a-5e42-a7ef-5d136a9f0bd2"
-diamondUuid: "d39386ff-4145-8c9c-a5d3-853530745e17"
-uuid: "8659096e-afc7-8605-9b11-f2c4a514401d"
-horo: 8
+coordinate: "vocabulary/baseline · 7/descent · b190a715"
+contentUuid: "767360d5-d137-54e9-b102-3de4cd9de995"
+diamondUuid: "5aaef395-e557-8623-9ef0-d4e38cc85d80"
+uuid: "b190a715-bdb4-86a5-98c5-5fc64b980919"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 42
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5b7a0032-7b97-824d-a74c-1a381015ec25"
+  computationUuid: "2b94a547-0d53-8e7c-b38f-5c000543d30a"
   stages:
     - stage: path
       stageUuid: "ba4f60de-fff5-8bba-bf7b-a91573b10ca4"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "651e4b8e-5d02-8ebe-868e-322e21b7c59a"
     - stage: horo
-      stageUuid: "1789dff3-79bd-8d58-8d07-18612fd5d650"
+      stageUuid: "efc5c5aa-4c3b-8603-98b7-c083ca592429"
     - stage: seal
       stageUuid: "e7e56db7-29e7-8568-8e5b-cadf31015be1"
     - stage: uuid
-      stageUuid: "fac6e3b3-5dd2-8e54-a207-69053d529ad4"
+      stageUuid: "e4650741-78b3-844e-b779-c6f86a1718d5"
 version: 2
 ---
 # baseline — the measured reference a calibration is computed from

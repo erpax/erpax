@@ -2,11 +2,11 @@
 name: contained
 description: Use when reasoning about contained — The basic containment relation between a place and one that contains it.
 atomPath: "vocabulary/contained"
-coordinate: "vocabulary/contained · 4/weave · e404a7a1"
-contentUuid: "90826440-bb78-5a27-aa41-7802c86c2b64"
-diamondUuid: "1b789ea0-f8fb-80a0-af04-51e5770e3ad3"
-uuid: "e404a7a1-8e60-88bf-8f79-d15fcbb434d0"
-horo: 4
+coordinate: "vocabulary/contained · 5/round · bd6cdc4f"
+contentUuid: "8ff9696f-dcee-5b89-965e-e0fc7ac95350"
+diamondUuid: "06d1d82b-7324-8194-bfdb-ab78b3b85045"
+uuid: "bd6cdc4f-0500-88ce-96e3-637da51cd9f7"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8ee191e5-2954-8de7-a131-ae4ebeedf7c7"
+  computationUuid: "d85b5567-57a7-8f90-9192-538307d9f7c2"
   stages:
     - stage: path
       stageUuid: "56a29866-af5e-8251-bf39-683e298c9a03"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e4163717-e96a-84bf-8fb0-2b8dcb987fa1"
     - stage: horo
-      stageUuid: "f1232ca2-6c8f-8c23-bb6f-f9a6362bc912"
+      stageUuid: "08a42b46-4952-8a41-ba6b-62624b3deb26"
     - stage: seal
       stageUuid: "43ef1030-c364-823e-9c75-03181aca5b0f"
     - stage: uuid
-      stageUuid: "bddea803-77fe-8eaa-83a5-ba9aa834477b"
+      stageUuid: "df43badc-9457-8564-9852-c1610e9d1977"
 version: 2
 ---
 # contained

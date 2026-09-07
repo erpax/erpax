@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "theme",
-    "uuid": "b079fc72-ae25-8bd9-925f-f01a3d758da9",
+    "uuid": "719c5639-b7b3-865f-87cc-629d1a1e28fe",
     "words": [
       "theme"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about theme — The site theme is one value ( ). The header's is a second, because the header floats over whatever the page puts beneath it: a full-bleed hero paints a dark field and white text…",
-    "uuid": "134b09af-97b2-80d6-a42d-a80f6de5a56f",
+    "uuid": "62a3182e-a7d4-861d-a250-5f849450c8e5",
     "words": [
       "use",
       "when",

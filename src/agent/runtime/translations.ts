@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "runtime",
-    "uuid": "482440b8-eb48-88e4-8b93-f5e92c3fedf4",
+    "uuid": "b36e1d0d-c2d3-8dd3-b7ad-96d30e6eccd2",
     "words": [
       "runtime"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about runtime — AgentRuntime — dispatches chain steps + events + scheduled ticks to the owning DomainAgent and processes its returned effects.",
-    "uuid": "c943637a-0bc6-8c69-8c50-47e704fac17e",
+    "uuid": "24ca3e99-7ca6-8762-8568-ca11e4a4b72d",
     "words": [
       "use",
       "when",

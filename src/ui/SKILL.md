@@ -2,10 +2,10 @@
 name: ui
 description: "Use when mounting shadcn/Radix primitives — the component catalog under src/ui/ (Tooltip, Dialog, Tabs, Collapsible, Sonner, etc.) wired to corpus-computed CSS and live quantum dimension surfaces."
 atomPath: ui
-coordinate: "ui · 1/base · 20a7c577"
-contentUuid: "c97ce741-9d68-5a49-b296-c70689474c3e"
-diamondUuid: "2b42b52c-2cf0-8a83-be4b-0cce3bd96969"
-uuid: "20a7c577-00ce-8ce2-9de1-4d67af009426"
+coordinate: "ui · 1/base · cfa6b091"
+contentUuid: "19477b20-3e0f-5c50-908a-d734f3c456e8"
+diamondUuid: "f4b44f1f-ab0a-8378-a28f-73a064a20207"
+uuid: "cfa6b091-af26-809a-8751-f1baf9640645"
 horo: 1
 typography:
   partition: ui
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "570d1088-1cd0-83cf-a49b-1159492d10af"
+  computationUuid: "8f54ba77-8c04-870f-8aa7-912e073c320d"
   stages:
     - stage: path
       stageUuid: "09079ab5-fd34-8e22-b520-35b73213abcb"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "4b68ab3a-9770-8c70-8f79-1dbe25414a96"
     - stage: horo
-      stageUuid: "91c29c5c-ac3b-8f68-897f-26f472211c96"
+      stageUuid: "b86e35fb-6333-894c-a2b3-367341dc9c58"
     - stage: seal
       stageUuid: "1f63000f-f10c-8403-b937-958053aeb5dc"
     - stage: uuid
-      stageUuid: "d653c331-d87b-8de7-9e85-a1c149942d69"
+      stageUuid: "efcce32b-bcb6-882c-b771-c820ae903c6a"
 version: 2
 ---
 # ui

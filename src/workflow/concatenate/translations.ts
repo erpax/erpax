@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "concatenate",
-    "uuid": "615a89bd-48dd-809d-9a99-41e3f3feccdb",
+    "uuid": "50a6569c-8623-8789-8ced-5adfd450aa9c",
     "words": [
       "concatenate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when building a completely autonomous workflow from command·question·answer atoms — the free monoid of steps, run as command then gate then computed-answer-on-NO until every gate is YES (zero entropy), no human in the loop.",
-    "uuid": "b82edac2-dbdf-8caf-8e01-844f5009993a",
+    "uuid": "f8b05936-2a22-84a2-8b7a-f10b35e4bf1f",
     "words": [
       "use",
       "when",

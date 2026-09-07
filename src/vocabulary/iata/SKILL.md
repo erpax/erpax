@@ -2,11 +2,11 @@
 name: iata
 description: "Use when reasoning about iata as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/iata"
-coordinate: "vocabulary/iata · 7/descent · 1e64b135"
-contentUuid: "a7214e88-43f1-51ad-93cf-a7994b76aec7"
-diamondUuid: "643ae3d8-2fc5-8ab3-85e5-8d51172bccaf"
-uuid: "1e64b135-beb4-8a79-8b00-05d7f60d7217"
-horo: 7
+coordinate: "vocabulary/iata · 8/crest · 64cd25c7"
+contentUuid: "ec2470ed-ac2a-579e-b496-144e3137b600"
+diamondUuid: "4f4830ca-13c6-82cf-9108-07b538da360e"
+uuid: "64cd25c7-4c74-88e7-93f7-88b1f549f2fc"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "658bd33e-ada4-8296-b473-1e9bb6fc2c76"
+  computationUuid: "23626b39-788e-8294-be30-1dacd22c0faf"
   stages:
     - stage: path
       stageUuid: "047e7e82-f845-8b54-9555-e1705829c545"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "42e5d602-d62b-8edb-8935-80bc1cf0ccaf"
     - stage: horo
-      stageUuid: "cdd63287-0529-8cd1-a389-65be3c684a7c"
+      stageUuid: "f6c12801-b87f-84ce-b9ba-ed8215f5bab7"
     - stage: seal
       stageUuid: "4dc9ce2d-ce88-8dbd-896d-456507e87681"
     - stage: uuid
-      stageUuid: "82aca7c6-6bb4-810c-b2b3-15768c460f9e"
+      stageUuid: "992119b7-e102-8459-b384-19266df31115"
 version: 2
 ---
 # iata

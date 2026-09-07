@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fermat",
-    "uuid": "e4f6f0fd-cc1f-83e8-aaf9-7db9b30ea482",
+    "uuid": "1c50f903-dd04-82ab-a6f0-49725044c4be",
     "words": [
       "fermat"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about fermat — Fermat's Last Theorem via basis decomposition - P vs NP + algebra",
-    "uuid": "ba66af62-751d-8931-ae67-6898379fee19",
+    "uuid": "d2680cf1-aed5-8932-9cdb-093fa2db4f52",
     "words": [
       "use",
       "when",

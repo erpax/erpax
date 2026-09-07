@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "vocabulary",
-    "uuid": "bf6b81af-5cda-82a5-aaf0-db9f558a3995",
+    "uuid": "18d6d0b0-7b90-8400-adbf-9b30af1381f0",
     "words": [
       "vocabulary"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the sti vocabulary — its allowed terms.",
-    "uuid": "03d90697-2a59-800f-80fa-f4116942275c",
+    "uuid": "c981ccee-c951-8d35-a4bb-7b0bcaf393b1",
     "words": [
       "use",
       "when",

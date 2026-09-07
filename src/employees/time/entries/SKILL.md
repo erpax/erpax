@@ -2,11 +2,11 @@
 name: entries
 description: "Use when logging daily employee work time — regular hours, overtime, night shifts, PTO, sick and parental leave — with kind-based GL allocation, billable-rate project costing, approval workflow, and payroll-run linkage for IAS-19 variable pay. The daily time-entry collection."
 atomPath: "employees/time/entries"
-coordinate: "employees/time/entries · 5/round · c89e52ae"
-contentUuid: "5baccf75-29a9-5fc4-88e5-069875307a75"
-diamondUuid: "7b6aa83f-b2fa-8eec-b60f-34f05db9e807"
-uuid: "c89e52ae-d107-8cbb-8e6b-84222265790d"
-horo: 5
+coordinate: "employees/time/entries · 8/crest · 4ae700c5"
+contentUuid: "a823f982-d306-5cfe-a1bb-97bee21f6825"
+diamondUuid: "426843bd-9f28-85db-bb2f-29ef7a3474db"
+uuid: "4ae700c5-9822-845e-a85f-db541013e505"
+horo: 8
 typography:
   partition: employees
   bondDegree: 107
@@ -23,7 +23,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "738f55e4-94a5-8a04-aa17-eda25ac6e6d1"
+  computationUuid: "4e5c7ad0-82f8-8ddb-97c9-f945a1caec74"
   stages:
     - stage: path
       stageUuid: "1b92ceef-4dfe-8d92-a351-672b766c8203"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "f00b89f2-9089-8ef9-924c-04afbc163542"
     - stage: horo
-      stageUuid: "486990c9-6b8e-8b67-aea7-9ffe6adc81d3"
+      stageUuid: "7ab86e39-c1a2-8bc1-8111-6c73b32ac910"
     - stage: seal
       stageUuid: "7c708ada-c129-830e-85f8-59de4f192e14"
     - stage: uuid
-      stageUuid: "61d2d6f7-fc27-8b7b-a9b4-d0eb3df2b070"
+      stageUuid: "05ed7b28-fb79-8bb3-a1fe-fed5e45cc2bb"
 version: 2
 ---
 # time-entries

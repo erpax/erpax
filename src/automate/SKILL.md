@@ -2,10 +2,10 @@
 name: automate
 description: "Use when reasoning about automate — Quantum automation primitives for iterative problem-solving loops"
 atomPath: automate
-coordinate: "automate · 7/descent · 7396c2a1"
-contentUuid: "dabe1840-02a5-560d-8fce-2a480d448a6a"
-diamondUuid: "074f4ed0-6461-8a58-98c1-1e799df8dafd"
-uuid: "7396c2a1-51cc-8a06-b57a-e9062dec8fd1"
+coordinate: "automate · 7/descent · 908ad12b"
+contentUuid: "5c5f8952-cb31-5ee4-91f5-c9ee5dec9e22"
+diamondUuid: "aba48772-a73a-8f26-9c44-5fdae5112ecd"
+uuid: "908ad12b-70c8-8de0-abbb-18d9ddb005c0"
 horo: 7
 typography:
   partition: automate
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a1544e23-3dd0-808b-b0f1-f547f52b752a"
+  computationUuid: "712a4f83-a5e1-8494-b961-e7d2949ceff5"
   stages:
     - stage: path
       stageUuid: "4c1e4f4d-0309-85e7-a52d-3b19d760faa7"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e56b2c5b-862f-8910-b700-821e8b9cda50"
     - stage: horo
-      stageUuid: "89e3dcf8-cc76-8a0b-9311-a536cfc6bf40"
+      stageUuid: "cda4a8b3-bea0-8d24-a73f-6ff16ffd8c7e"
     - stage: seal
       stageUuid: "84870e21-6867-809a-8778-5fe668ef3f6c"
     - stage: uuid
-      stageUuid: "b078a899-324e-850d-b2b3-1da8651dcf26"
+      stageUuid: "abf831cd-f951-83a0-80f3-5adc9301e6c8"
 version: 2
 ---
 # automate — automate quantum computation with feedback loops and refinement

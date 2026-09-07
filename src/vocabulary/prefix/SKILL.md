@@ -2,11 +2,11 @@
 name: prefix
 description: "Use when reasoning about prefix as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/prefix"
-coordinate: "vocabulary/prefix · 8/crest · 771aab1e"
-contentUuid: "75fb2dde-ebf5-5a7b-805a-34a9734b0eca"
-diamondUuid: "7acbf33d-4f52-8a66-babc-119189fafd99"
-uuid: "771aab1e-f6fb-82a2-8ada-6d9e5bd9a0c3"
-horo: 8
+coordinate: "vocabulary/prefix · 7/descent · eeac4520"
+contentUuid: "cdfb4de7-37b1-578c-b53a-6ca7e9976cf2"
+diamondUuid: "cabd90f0-fd69-8077-939f-8eb63c22eca6"
+uuid: "eeac4520-aa13-8a42-aa5e-6fa3765feccf"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e61ab53c-f563-8ebf-a6a5-56c08e235ea0"
+  computationUuid: "20760ddc-2afe-8077-9729-78452c3d6a98"
   stages:
     - stage: path
       stageUuid: "a483f7a1-da33-8495-80a7-d6d838f6b6a3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "46cb991b-284f-87a6-a333-c4a53a04116c"
     - stage: horo
-      stageUuid: "0be65d86-e1ad-8d0c-8444-bb92f0c26012"
+      stageUuid: "7a9c9760-a7ad-8ccc-b4bb-cb1a62122c07"
     - stage: seal
       stageUuid: "7f36382a-1730-800c-ba3c-5cf18d498456"
     - stage: uuid
-      stageUuid: "79f2befa-5eac-8f8e-9748-ec5bbd7f6b03"
+      stageUuid: "4fbc6ead-1c40-8a3f-b0f0-68aac2e54c08"
 version: 2
 ---
 # prefix

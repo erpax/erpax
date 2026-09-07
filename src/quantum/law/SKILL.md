@@ -2,11 +2,11 @@
 name: law
 description: "Use when checking that an atom is grounded — law is the suffix, the invariant each SKILL.md must close with; this quantum twin scans the quantum atoms and finds the lawless ones (state without invariant), the way recycle finds orphans."
 atomPath: "quantum/law"
-coordinate: "quantum/law · 7/descent · 39bdcdc8"
-contentUuid: "bac5eaa9-c572-5905-8337-f0deef9e7b11"
-diamondUuid: "a6a05607-c3e1-8750-9fad-aae0754d5065"
-uuid: "39bdcdc8-38c6-812e-8360-984e378c6d2f"
-horo: 7
+coordinate: "quantum/law · 5/round · 8ecbe42c"
+contentUuid: "23c79cac-f5fc-506c-8a36-c67afe3d049a"
+diamondUuid: "2ba4f9c9-0f60-83c6-9dd0-281a3aee0932"
+uuid: "8ecbe42c-3034-8f94-a09d-bfd8ada1e8cb"
+horo: 5
 typography:
   partition: quantum
   bondDegree: 9344
@@ -14,7 +14,7 @@ standards:
   - "the corpus convention — body states identity, suffix states invariant ([[law]])"
 bindings: []
 signatures:
-  computationUuid: "cf38084d-6636-82b7-b9b3-ec5a11b5f1ec"
+  computationUuid: "a4b43fae-504f-816c-9381-7a11cbbb484c"
   stages:
     - stage: path
       stageUuid: "f5d81f3b-c7b5-85d0-ac02-9af296c99f21"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d2553674-e34c-8370-968c-b1d0cbc4e21f"
     - stage: horo
-      stageUuid: "2e3027b9-123c-8e70-b5da-9600e9764b0f"
+      stageUuid: "82058e85-e0d5-8089-b778-06bacfcd0973"
     - stage: seal
       stageUuid: "f76fe412-25c5-8568-be5c-92c2024d0f8f"
     - stage: uuid
-      stageUuid: "8aa3a50f-44a7-8cba-96e8-5ca3158116a0"
+      stageUuid: "e834e420-37a3-88b6-a112-71a3f677ffc0"
 quantum:
   superposition:
     - "16931"
@@ -54,8 +54,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "cf38084d-6636-82b7-b9b3-ec5a11b5f1ec"
-    contentUuid: "bac5eaa9-c572-5905-8337-f0deef9e7b11"
+    computationUuid: "a4b43fae-504f-816c-9381-7a11cbbb484c"
+    contentUuid: "23c79cac-f5fc-506c-8a36-c67afe3d049a"
 version: 2
 ---
 # quantum/law — law is the suffix
@@ -77,4 +77,4 @@ Matter-twin: `src/quantum/law/index.ts` (`quantumAtoms` · `carriesLaw` · `lawl
 @audit the law-suffix is read from each SKILL.md ending, never asserted
 @standard the corpus convention — body states identity, suffix states invariant ([[law]])
 
-<sub>content-uuid `bac5eaa9-c572-5905-8337-f0deef9e7b11` · account `quantum/law` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `23c79cac-f5fc-506c-8a36-c67afe3d049a` · account `quantum/law` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

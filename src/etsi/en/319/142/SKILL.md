@@ -2,10 +2,10 @@
 name: "142"
 description: "Use when implementing or referencing `src/etsi/en/319/142/index.ts`."
 atomPath: "etsi/en/319/142"
-coordinate: "etsi/en/319/142 · 7/descent · 44e61962"
-contentUuid: "41e80dc6-84ea-5012-906e-9b080b439d9f"
-diamondUuid: "5ba54e1a-bdf8-8c8e-b696-c85c34f39642"
-uuid: "44e61962-2fd1-8b8a-956c-0205a81b3976"
+coordinate: "etsi/en/319/142 · 7/descent · 7fd851f4"
+contentUuid: "30f8cd77-49f6-504b-902e-286aa3357ddb"
+diamondUuid: "205f5ace-877c-8647-9558-2b1e6e0a2f07"
+uuid: "7fd851f4-879c-8be9-8fd5-350ac0783ec4"
 horo: 7
 typography:
   partition: etsi
@@ -23,7 +23,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "02a24e9b-aea1-8d81-982a-ec21a488ed98"
+  computationUuid: "305a24f7-ec67-8196-8f87-fe338121751d"
   stages:
     - stage: path
       stageUuid: "53b585ee-4028-8dd8-be66-7258253bcddf"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "3a50ba08-d9a4-8bb5-89d9-edff866f74a3"
     - stage: horo
-      stageUuid: "61f86d77-8f9a-8fc7-8b98-f487df630b6f"
+      stageUuid: "49936752-edcd-8c9f-acac-afe407ba4395"
     - stage: seal
       stageUuid: "aa66a1f5-b3c3-820e-92c9-b0504b220a6e"
     - stage: uuid
-      stageUuid: "3da24729-283a-85ad-97cb-d1737bdae1ec"
+      stageUuid: "1a01326a-decb-8f17-85fc-55762857779a"
 version: 2
 ---
 # `src/etsi/en/319/142/index.ts`

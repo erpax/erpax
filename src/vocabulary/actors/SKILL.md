@@ -2,11 +2,11 @@
 name: actors
 description: "Use when reasoning about actors — An actor, e.g. in TV, radio, movie, video games etc. Actors can be associated with individual items or with a series, episode, clip."
 atomPath: "vocabulary/actors"
-coordinate: "vocabulary/actors · 5/round · f2f43950"
-contentUuid: "943e4384-c439-5f2b-a7ab-93c19a00e2d8"
-diamondUuid: "1db0b601-deb3-8894-ac16-879cc83607e0"
-uuid: "f2f43950-a728-8669-8ed9-020b6bf9c21e"
-horo: 5
+coordinate: "vocabulary/actors · 8/crest · 1ed1ba2f"
+contentUuid: "ad55d54b-c3a3-5c31-8212-205234f22937"
+diamondUuid: "67e16eed-612f-802b-a5a1-f2cb6481b0be"
+uuid: "1ed1ba2f-9df1-809e-adc0-08cb1fb47f09"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "41f446ea-3280-8f1d-a5d1-204a54703d88"
+  computationUuid: "af8de3bb-dc0a-8acf-bd70-9609dd77261a"
   stages:
     - stage: path
       stageUuid: "95083d3f-1e20-87ef-85c2-121e0a32fda5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4599fd71-bc33-8ac9-88e7-180b350dc23f"
     - stage: horo
-      stageUuid: "22580e0a-c1d4-81d8-8b48-44f56e900676"
+      stageUuid: "68dc12a5-1342-88ca-bc1f-d3e6d245ac9b"
     - stage: seal
       stageUuid: "715f4f87-efbe-8bec-a566-7c8525497caf"
     - stage: uuid
-      stageUuid: "4ac3a8ea-176f-85af-9131-10017e865fa4"
+      stageUuid: "d1073c84-4506-80e0-96bc-89fa3eeb3ffd"
 version: 2
 ---
 # actors

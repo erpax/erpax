@@ -2,11 +2,11 @@
 name: recruiting
 description: "Use when reasoning about recruiting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/recruiting"
-coordinate: "vocabulary/recruiting · 4/weave · 7e567afd"
-contentUuid: "0227c659-5b7d-51d5-89d0-3976278aa351"
-diamondUuid: "e8e1c996-53b8-8136-9dbf-4c8b4810466f"
-uuid: "7e567afd-158b-84c2-855e-02b0443853ab"
-horo: 4
+coordinate: "vocabulary/recruiting · 5/round · 712215e7"
+contentUuid: "b7143a91-0851-53ab-99ce-82dff1f52f54"
+diamondUuid: "60f17e40-5380-885d-a2ee-fce680648718"
+uuid: "712215e7-fc12-8fd8-958f-98d1f4c95061"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4c1bb5e7-d211-863b-b0d6-62bb70563684"
+  computationUuid: "f771cec0-20a8-8e9a-93be-9e2a9b91d59d"
   stages:
     - stage: path
       stageUuid: "c27cb3b5-0738-84e3-ae29-974236d4cc5a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "455155f7-2714-83a8-b24a-ceec6e55ee62"
     - stage: horo
-      stageUuid: "fb86d7f8-e13a-8db0-a0c6-10b52ea63656"
+      stageUuid: "e62369ca-fd81-8fb8-984e-7ec43012f16d"
     - stage: seal
       stageUuid: "6eb75bcd-00f0-8331-a4f7-a94d8b1df039"
     - stage: uuid
-      stageUuid: "3ce12af4-db56-8606-a2c7-138849c98e74"
+      stageUuid: "f8a2b6b9-4e0b-8614-bb03-2be3a1807116"
 version: 2
 ---
 # recruiting

@@ -2,11 +2,11 @@
 name: registered
 description: "Use when reasoning about registered — **Law — law: barrel re-export at ; trinity sealed for import purity.**"
 atomPath: "agents/registered"
-coordinate: "agents/registered · 1/base · f5deb841"
-contentUuid: "33c3704e-6918-56e7-bbfb-16186c0d7bb1"
-diamondUuid: "73a88d31-f5b2-8b5e-8448-0080554a0cdf"
-uuid: "f5deb841-93bb-8db9-8d37-b406d0c7c34c"
-horo: 1
+coordinate: "agents/registered · 4/weave · 8ac70e89"
+contentUuid: "26e28adb-b5de-576b-8c7e-0a967d56f1d5"
+diamondUuid: "db37671a-6bd6-80bb-9df1-60797731df30"
+uuid: "8ac70e89-e3c4-8c83-9125-5847210d62f9"
+horo: 4
 typography:
   partition: agents
   bondDegree: 16
@@ -26,7 +26,7 @@ standards:
   - eIDAS
 bindings: []
 signatures:
-  computationUuid: "858651eb-4b98-8609-87be-9a1ff16894f6"
+  computationUuid: "b88c001b-777c-8182-8147-23dd535b67cd"
   stages:
     - stage: path
       stageUuid: "ff90fff0-0a7f-8145-af69-ead4b31d5811"
@@ -37,11 +37,11 @@ signatures:
     - stage: links
       stageUuid: "4f209a95-bc8d-8774-a353-a12eb2271b3e"
     - stage: horo
-      stageUuid: "cfdc17db-2e9f-8afc-ae17-21956c16d07c"
+      stageUuid: "17cf9cfc-29b9-8daa-baca-6d5479f832f3"
     - stage: seal
       stageUuid: "5fcb3a80-566d-80fc-b981-72d11809b8c5"
     - stage: uuid
-      stageUuid: "02898094-5848-84a0-af85-c4607167a4fb"
+      stageUuid: "a0bda9c0-ff63-8f14-9fd6-f028c6e2c116"
 version: 2
 ---
 # registered

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "calendar",
-    "uuid": "15ac8eb7-7d2a-8905-87b9-0aa3a116c9d8",
+    "uuid": "7ad3f181-f28c-8555-9738-2942f22ca95c",
     "words": [
       "calendar"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one calendar — the singular model of the calendars collection (the plural store); a scheme of dates against which events and schedules are placed.",
-    "uuid": "4f199066-219a-8601-a5a6-4a7b4ccd94b6",
+    "uuid": "4fa28346-2fa0-885d-ac87-f13493fd6a9f",
     "words": [
       "use",
       "when",

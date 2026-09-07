@@ -2,18 +2,18 @@
 name: score
 description: "Use when ranking prospect/lead quality — behavioral signals, firmographic attributes, scoring model, threshold for handoff to sales."
 atomPath: "vocabulary/lead/score"
-coordinate: "vocabulary/lead/score · 7/descent · b48bb0d2"
-contentUuid: "799e3b8d-2388-515b-8ddc-09189843d314"
-diamondUuid: "a166d970-6b75-8e20-9aab-d66acd6ccbee"
-uuid: "b48bb0d2-7310-82f8-bc0f-202bdabab33b"
-horo: 7
+coordinate: "vocabulary/lead/score · 5/round · 106a09ed"
+contentUuid: "4bffd87a-8420-5ca4-a902-18bbca32dd56"
+diamondUuid: "8b6e155c-7e23-8c51-ae49-056a3a0a95e5"
+uuid: "106a09ed-f8cf-85c2-8e40-75a95fc7c760"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 33
 standards: []
 bindings: []
 signatures:
-  computationUuid: "50f1e553-5064-82cf-8e1d-19d922f330cf"
+  computationUuid: "95a9e331-9a28-8492-bf21-93405a89de38"
   stages:
     - stage: path
       stageUuid: "a307075b-9109-881c-8ed4-8ec4ca625397"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "07168ac0-c308-8815-9fb6-d542f4697ab4"
     - stage: horo
-      stageUuid: "b44b3cb7-d38d-8105-9975-7656cbc42d32"
+      stageUuid: "fd94b3ba-b1c3-812d-9383-a6086162780f"
     - stage: seal
       stageUuid: "cdb0f474-2724-878e-850c-ce0784c329d6"
     - stage: uuid
-      stageUuid: "19750ec4-8e3e-8566-8cc8-820798a4ce3a"
+      stageUuid: "ca0fa090-acd0-8f61-92f6-03e92f6bbfed"
 version: 2
 ---
 # score

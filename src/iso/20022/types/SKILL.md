@@ -2,11 +2,11 @@
 name: types
 description: "Use when reasoning about types — Canonical ISO 20022 types — semantic shapes for the message families this codebase touches: camt.052/053/054 (cash mgmt), pain.001/002/008 (customer initiation + status), pacs.008 (FI credit transfer), pacs.004 (payment return)."
 atomPath: "iso/20022/types"
-coordinate: "iso/20022/types · 5/round · 3bb7050a"
-contentUuid: "97d798c0-7d68-50ed-9052-a9da51f39b67"
-diamondUuid: "59c9a26d-887c-8642-80e6-5203961cf058"
-uuid: "3bb7050a-4151-805b-af12-944f2e0ea45f"
-horo: 5
+coordinate: "iso/20022/types · 7/descent · 472cd6f4"
+contentUuid: "9a8d9583-9d48-5861-baad-1020b74628f0"
+diamondUuid: "50929e43-a70d-8588-9e15-7c117650bc5e"
+uuid: "472cd6f4-8858-8ab6-b1a1-6f8cc518d4cd"
+horo: 7
 typography:
   partition: iso
   bondDegree: 85
@@ -52,7 +52,7 @@ standards:
   - "ISO/IEC-29119"
 bindings: []
 signatures:
-  computationUuid: "21a4281c-88e3-8262-af7d-390cbb316637"
+  computationUuid: "27e87fdf-00bc-8851-ab7a-ae3cd3c933f9"
   stages:
     - stage: path
       stageUuid: "83bc0ccc-26bf-8082-8660-0171d0f2bc4f"
@@ -63,11 +63,11 @@ signatures:
     - stage: links
       stageUuid: "c0c1c1b9-f48a-8dbb-9efc-7eec068669bf"
     - stage: horo
-      stageUuid: "d1d45a8e-35b1-89e1-8d36-dc6b6b716bff"
+      stageUuid: "5536cffb-853c-8ead-b345-077c89129ad5"
     - stage: seal
       stageUuid: "38850b44-06ba-88a2-8bc9-3b722539b229"
     - stage: uuid
-      stageUuid: "9eb0eec0-3b97-88b2-8e3d-45bd7dc632d0"
+      stageUuid: "e515b888-201d-864c-920e-41bea67ee0db"
 version: 2
 ---
 # iso/20022/types

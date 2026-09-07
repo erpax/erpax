@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "editor",
-    "uuid": "d45a457e-a000-87ec-b1ec-775fb5bc980d",
+    "uuid": "4b6f68ff-812d-8dac-aaf6-b896eb334c9d",
     "words": [
       "editor"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about editor — Specifies the Person who edited the CreativeWork.",
-    "uuid": "c8070e11-8347-8342-a82c-451090053f75",
+    "uuid": "96e85e17-7ee5-800f-9ed1-44978f459bb6",
     "words": [
       "use",
       "when",

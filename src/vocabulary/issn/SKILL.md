@@ -2,11 +2,11 @@
 name: issn
 description: "Use when reasoning about issn — The International Standard Serial Number (ISSN) that identifies this serial publication. You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L)"
 atomPath: "vocabulary/issn"
-coordinate: "vocabulary/issn · 1/base · 6508427a"
-contentUuid: "777fe524-3ced-59ec-9273-7201cdb4d9c2"
-diamondUuid: "b9388fa1-005d-8fd1-8e30-eb1d227fdf5a"
-uuid: "6508427a-4ddc-8daf-959f-eb986d72daa8"
-horo: 1
+coordinate: "vocabulary/issn · 2/share · 717b4a93"
+contentUuid: "4748f0ef-c4f0-5fb6-9aff-44696a28250b"
+diamondUuid: "3f2b0fc0-c9cc-8a3d-ae25-bc15e923161a"
+uuid: "717b4a93-e4fb-84eb-aa39-db548fe45da4"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c1f55658-9265-8ee8-84d6-296fd2456e9e"
+  computationUuid: "dcfad208-3c17-8230-bb8f-5a13dd5acb36"
   stages:
     - stage: path
       stageUuid: "cba18e29-bcca-8f34-ba15-3784ea2b776e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d6fac700-84b2-876e-bb9f-32d2388819e6"
     - stage: horo
-      stageUuid: "515825ec-af52-8a68-a39c-f6d552e74e4b"
+      stageUuid: "5a1c90c6-3337-8ab7-9891-d3159b2a78fb"
     - stage: seal
       stageUuid: "4dc797e7-8faf-86ba-9002-041ad4381d2f"
     - stage: uuid
-      stageUuid: "f4101d35-42ba-8759-8138-fb5dfa768b7b"
+      stageUuid: "6b9f3314-47fe-8e8f-85fa-a589c9260271"
 version: 2
 ---
 # issn

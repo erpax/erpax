@@ -2,18 +2,18 @@
 name: deferral
 description: "Use when deferring the recognition of revenue or expense to future periods pending contract performance, delivery, or time passage — the dual of accrual and core to IFRS-15 revenue recognition"
 atomPath: "vocabulary/deferral"
-coordinate: "vocabulary/deferral · 8/crest · b5f1a2fb"
-contentUuid: "39eae32a-a450-5887-9df6-49a15fcca66e"
-diamondUuid: "4aaeb476-8ddd-8c45-beb9-bd7f2ebf12a6"
-uuid: "b5f1a2fb-9fad-8ee4-a28d-15eb56f9641c"
-horo: 8
+coordinate: "vocabulary/deferral · 5/round · 7ead3831"
+contentUuid: "63f77437-242f-5847-b499-5151e297db42"
+diamondUuid: "4741f654-d6d9-8d1f-8a95-321046f50893"
+uuid: "7ead3831-ffb6-8cc3-8882-81c7b7775f3a"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 34
 standards: []
 bindings: []
 signatures:
-  computationUuid: "87c5152c-0872-8664-8ce0-8af9a6583bab"
+  computationUuid: "7bb199e9-e88b-8b97-8af0-5b8c42fe090f"
   stages:
     - stage: path
       stageUuid: "3b884f11-a29d-8269-9bd9-53480c0eb586"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "90e9c7ee-1fb2-8b38-b2fd-27f46d9cf7ac"
     - stage: horo
-      stageUuid: "534bfd9a-3928-8c9c-a598-1f128405d89d"
+      stageUuid: "26915bd3-8ccc-8a61-82c0-15502a05cae1"
     - stage: seal
       stageUuid: "36cd796a-475a-83d5-87c4-e875370ef0c3"
     - stage: uuid
-      stageUuid: "ca0cf02b-fd8a-82cf-b86a-dab2288daada"
+      stageUuid: "1fcdd2fa-bb89-82ad-afc1-3c5b6b74516d"
 version: 2
 ---
 # deferral

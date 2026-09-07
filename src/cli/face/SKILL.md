@@ -2,18 +2,18 @@
 name: face
 description: "Use when a command must exist without anyone remembering to register it — the CLI surface derived from the tree instead of transcribed into a table. An atom is a command exactly when its index.ts carries a CLI guard, and that is read from the grammar so a guard quoted in a comment or a string cannot masquerade as one. Descriptions come from each atom's own SKILL.md, an unambiguous leaf resolves like a search hit, and an ambiguous one is refused with its candidates named. Explicit registry entries always win."
 atomPath: "cli/face"
-coordinate: "cli/face · 2/share · 93b03639"
-contentUuid: "2dbc5544-97a9-59f1-95c6-9b89ad9a9305"
-diamondUuid: "54787562-3120-8763-b5b5-83b1642864a5"
-uuid: "93b03639-e1ca-81a2-95b0-fc32c28e676f"
-horo: 2
+coordinate: "cli/face · 8/crest · e95c18c4"
+contentUuid: "419a5707-56bd-5e1c-bccd-faf4f0f99886"
+diamondUuid: "156af480-cef9-8cce-86c2-de1dbb7b5470"
+uuid: "e95c18c4-64f2-8eb5-891f-3ba8084af806"
+horo: 8
 typography:
   partition: cli
   bondDegree: 23
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ad25ca6e-88c4-854d-ae11-06595df587a3"
+  computationUuid: "e6bab4da-8046-8d28-9a6b-44f3ff749021"
   stages:
     - stage: path
       stageUuid: "b3463d12-6525-8128-8065-673a0195498c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5b0016c5-4ecd-85f1-b73b-d72fc79fe283"
     - stage: horo
-      stageUuid: "5ac42ee8-cec9-86af-89a1-004639922f4b"
+      stageUuid: "7453a97e-85d8-8992-b942-b213a502e909"
     - stage: seal
       stageUuid: "584b81fc-8fce-81c4-beb2-61daa8ab00c9"
     - stage: uuid
-      stageUuid: "3741af40-ade4-813e-8d84-7351d39c2fad"
+      stageUuid: "eabb39a6-ee45-834d-99d2-10412d02f1b6"
 version: 2
 ---
 # cli/face — a face you must remember to declare is a face that will be missing

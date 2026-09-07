@@ -2,11 +2,11 @@
 name: additional
 description: "Use when reasoning about additional as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/additional"
-coordinate: "vocabulary/additional · 1/base · 97049365"
-contentUuid: "ecf4c8d4-64a8-50a5-a770-562bfe3c1167"
-diamondUuid: "43c9e948-a8a0-8423-8811-2783aed1bc68"
-uuid: "97049365-5c62-879c-95d8-08a443ae75a5"
-horo: 1
+coordinate: "vocabulary/additional · 7/descent · abb93751"
+contentUuid: "a7b01544-2a0b-577c-a9f6-0cb7947bd70f"
+diamondUuid: "ce7164c1-698d-83b9-ae84-5c516ca8ccc4"
+uuid: "abb93751-ba5a-85c5-91aa-b614f139c58a"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 33
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b02547b5-ee72-8eb5-89d2-9cec560de52c"
+  computationUuid: "0a8ca689-ea73-88a4-90f6-199da31b7af5"
   stages:
     - stage: path
       stageUuid: "64e38eba-1b54-892f-863c-a6105f7033b7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a60240d2-d99b-85c9-b139-90f98228c31f"
     - stage: horo
-      stageUuid: "4fe06d02-c16e-8285-aba5-8e9fefc69a06"
+      stageUuid: "96dfa6a8-36f8-88f5-885e-e774d91d1b18"
     - stage: seal
       stageUuid: "fceb5122-5f0e-8674-a00b-8946887c4dc9"
     - stage: uuid
-      stageUuid: "35e2b106-e27b-84c1-bae7-796f812df32c"
+      stageUuid: "89f1f114-dc81-8b23-a4fb-d16735d82026"
 version: 2
 ---
 # additional

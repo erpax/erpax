@@ -2,18 +2,18 @@
 name: gate
 description: "Use when reaching the content-addressed test gate from the receipt atom — the double-wire reciprocal of gate/receipt."
 atomPath: "receipt/gate"
-coordinate: "receipt/gate · 4/weave · 3fd6bd52"
-contentUuid: "982f40b9-b58a-5b7d-ad18-42e4c74c486e"
-diamondUuid: "103ad356-6d52-8725-bc04-81ecefcf3dac"
-uuid: "3fd6bd52-0b62-85ac-92ff-0f54fd58ab02"
-horo: 4
+coordinate: "receipt/gate · 5/round · e52c729f"
+contentUuid: "d7c22181-5ee5-53c5-bcfd-320e9cc4aa46"
+diamondUuid: "914e5bc3-8c49-852c-a294-78b34652fe01"
+uuid: "e52c729f-dc97-88be-bf79-8e93b046b712"
+horo: 5
 typography:
   partition: receipt
   bondDegree: 270
 standards: []
 bindings: []
 signatures:
-  computationUuid: "71a35a25-a12e-8a6c-9d7d-e6a9515e421d"
+  computationUuid: "bd88831f-02e3-8f6e-b200-a4c3c98e7e37"
   stages:
     - stage: path
       stageUuid: "f48d1ef0-c3e7-8e1b-9023-f356c1bcc01f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "cad49697-6509-8362-b2aa-418b15cc7117"
     - stage: horo
-      stageUuid: "01736558-20e4-8999-8296-6efba0128272"
+      stageUuid: "19ac78d5-dba0-886b-8629-19db69a4240c"
     - stage: seal
       stageUuid: "61ca131e-9a3b-8e84-a02b-7b73fda7b3e0"
     - stage: uuid
-      stageUuid: "8c88fd07-47a9-8066-a96d-25297df273d4"
+      stageUuid: "03580de6-028e-83a6-81f5-2a8106219d7f"
 version: 2
 ---
 # receipt/gate — the reciprocal

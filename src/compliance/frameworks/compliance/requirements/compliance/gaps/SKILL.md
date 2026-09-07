@@ -2,11 +2,11 @@
 name: gaps
 description: "Use when identifying, tracking or remediating compliance deficiencies — missing controls, design deficiencies, operating gaps, documentation gaps — against a requirement; severity, status lifecycle (identified → in-remediation → closed), root cause, risk exposure, target closure date, audit trail. The per-tenant gap and deficiency register."
 atomPath: "compliance/frameworks/compliance/requirements/compliance/gaps"
-coordinate: "compliance/frameworks/compliance/requirements/compliance/gaps · 2/share · 20a066b7"
-contentUuid: "cfc05a9b-08e1-5147-a310-a5682370c4a2"
-diamondUuid: "2c630038-5cc1-8aca-944b-48b4540accc6"
-uuid: "20a066b7-8840-862c-a044-78268166f47f"
-horo: 2
+coordinate: "compliance/frameworks/compliance/requirements/compliance/gaps · 4/weave · f22be602"
+contentUuid: "cb295dfd-2ab9-5fc0-881a-ba3ea4aabfdb"
+diamondUuid: "80df27fa-cf10-83a7-81f2-d35f07cafa15"
+uuid: "f22be602-6347-890f-92a7-c495808b615b"
+horo: 4
 typography:
   partition: compliance
   bondDegree: 22
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "7e621da0-f0fc-8dd1-900e-8b0d29569ca1"
+  computationUuid: "e5048721-f1ae-8e01-b5b8-49b3a8dfb6c0"
   stages:
     - stage: path
       stageUuid: "79c246eb-57f4-8cff-afe3-e3b539110840"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "d381a5a3-e35f-86ff-8ed5-295ee2b1a856"
     - stage: horo
-      stageUuid: "31f2d2ca-feb4-880a-858d-0698e050d400"
+      stageUuid: "556c6c3c-ba31-8bf3-9aaf-e2a6fc82a9d4"
     - stage: seal
       stageUuid: "aea2f889-e3d6-8ad2-a6ad-3f925bece28b"
     - stage: uuid
-      stageUuid: "57ce64b1-0495-8507-bf8d-d4f953cef9f5"
+      stageUuid: "59fc5dab-9305-877f-85c3-313ecff6bc72"
 version: 2
 ---
 # compliance-gaps

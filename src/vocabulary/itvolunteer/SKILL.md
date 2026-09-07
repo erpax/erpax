@@ -2,11 +2,11 @@
 name: itvolunteer
 description: "Use when reasoning about itvolunteer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/itvolunteer"
-coordinate: "vocabulary/itvolunteer · 2/share · 855cf574"
-contentUuid: "4415eb59-9d2a-56ed-b345-f6bb5edf2ae6"
-diamondUuid: "b60a07a8-caa1-8aed-9625-e31771bf5fc2"
-uuid: "855cf574-d48b-8b4f-b43a-b7695ec54ff2"
-horo: 2
+coordinate: "vocabulary/itvolunteer · 8/crest · 572a4d47"
+contentUuid: "c17dbed9-b73f-50c0-aaff-e11211806351"
+diamondUuid: "9c3ee1a4-b921-8a36-988d-edbbaabb699f"
+uuid: "572a4d47-13fd-8dba-b75d-fb0db40e8c23"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4157739d-66cc-873e-8796-d03092012d29"
+  computationUuid: "c9275899-2502-851c-8ef0-919a198c763a"
   stages:
     - stage: path
       stageUuid: "2f57ec88-dc5d-8313-bb05-b7a7d67ccb1f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "50c598f2-4e02-8623-871d-ea1521536946"
     - stage: horo
-      stageUuid: "edcd9786-8655-883b-b857-1c7e1be0a144"
+      stageUuid: "19b81752-f1e1-81a0-8efa-7259e373411e"
     - stage: seal
       stageUuid: "d1fdfc0b-3e94-8b36-8cb5-1d0760ad00db"
     - stage: uuid
-      stageUuid: "94e19e6a-502a-80a2-9d69-b2d84106db84"
+      stageUuid: "7b3094e6-6e7a-8fd9-bb4a-91a5ea5f0edd"
 version: 2
 ---
 # itvolunteer

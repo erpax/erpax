@@ -2,11 +2,11 @@
 name: narcotic
 description: "Use when reasoning about narcotic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/narcotic"
-coordinate: "vocabulary/narcotic · 7/descent · bda4d704"
-contentUuid: "81d24b78-0373-5137-9422-fd58583d34f3"
-diamondUuid: "54190048-cd26-8a8a-a923-5222bb70f762"
-uuid: "bda4d704-16c0-88f5-bab6-eb7e561322ed"
-horo: 7
+coordinate: "vocabulary/narcotic · 8/crest · 9e900890"
+contentUuid: "cb1a9df6-0521-5964-972b-6634aee64b94"
+diamondUuid: "397e6667-76ec-89db-bd82-d57767a48c03"
+uuid: "9e900890-a967-890b-8a32-aa10f59af02a"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "00ebc874-b122-8ec5-9bae-0bf3d7874e08"
+  computationUuid: "1374eec6-d68a-8fe4-a7cb-ec47832b63d7"
   stages:
     - stage: path
       stageUuid: "912fffb8-43d1-86cd-822e-7103a5935cb4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f7b6fffb-8808-8a22-876e-3a30317a02ba"
     - stage: horo
-      stageUuid: "ed9e30a8-8ffc-8e99-8918-3dd952b61b62"
+      stageUuid: "24b6b669-4b8b-8d8e-a649-b4ea5bcd43a5"
     - stage: seal
       stageUuid: "86bf4ce6-66a1-8d1b-9d6f-0067c40758c5"
     - stage: uuid
-      stageUuid: "ea1932b7-8f62-8707-9adb-8c03f012884b"
+      stageUuid: "03f289b1-88ea-85ed-bcea-309fc8befd81"
 version: 2
 ---
 # narcotic

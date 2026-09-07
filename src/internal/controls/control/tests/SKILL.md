@@ -2,11 +2,11 @@
 name: tests
 description: "Use when designing or executing SOX §404 control-effectiveness tests — sampling methodology (statistical/stratified/judgmental/census), assertion, sample size, tolerance, deviation count/rate, conclusion on effectiveness; links to the tested internal-control. The control-tests ISO-19011 sampling-evidence collection."
 atomPath: "internal/controls/control/tests"
-coordinate: "internal/controls/control/tests · 5/round · ca9c3341"
-contentUuid: "ef206c17-c2a1-59d8-b677-6abd03880996"
-diamondUuid: "058d48de-ff93-8104-8544-a980bcf5b7eb"
-uuid: "ca9c3341-f0cd-8dc3-8ec4-57468ddc2676"
-horo: 5
+coordinate: "internal/controls/control/tests · 2/share · e05e41b6"
+contentUuid: "57007ba0-a738-57a5-81f0-b855ab3cbe94"
+diamondUuid: "b457ea44-4bca-842b-a044-8377ec6d77d9"
+uuid: "e05e41b6-876f-8bb0-ac7c-e9300f7b8e16"
+horo: 2
 typography:
   partition: internal
   bondDegree: 10
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "7bbe3814-8391-88a9-a4ec-e4c24297aaed"
+  computationUuid: "f43e9116-606d-887a-84ce-c35102fcc624"
   stages:
     - stage: path
       stageUuid: "f27657c4-a5b7-8723-9061-dc88d72add76"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "f3b4c5c8-5c38-8c89-8779-ca53fd9ce811"
     - stage: horo
-      stageUuid: "6aa495d8-2548-8743-9b90-9eccd5f33ad8"
+      stageUuid: "8825f1c6-1501-8efa-b8ab-3b77eaf0c43b"
     - stage: seal
       stageUuid: "d4145970-8513-8137-9240-78eda1d17250"
     - stage: uuid
-      stageUuid: "4e269923-4f53-8eea-b4c1-6f5d5d3db53e"
+      stageUuid: "2133d7a3-c971-883c-827c-d1e9df8f2931"
 version: 2
 ---
 # control-tests

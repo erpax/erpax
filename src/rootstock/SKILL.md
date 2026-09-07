@@ -2,18 +2,18 @@
 name: rootstock
 description: "Use when modelling the root-providing lower plant a scion is grafted onto — the rootstock controls vigour, size (dwarfing → high-density orchards), and disease/phylloxera resistance. The perennial-planting keystone, chosen once for the asset's multi-decade life; paired with the scion via a graft."
 atomPath: rootstock
-coordinate: "rootstock · 7/descent · d34ed008"
-contentUuid: "ddb0c8f4-5632-50bf-91ac-690afac33096"
-diamondUuid: "94b9f08a-274b-88ae-9b53-08e68a0c741a"
-uuid: "d34ed008-51a6-8a0b-aee8-5fe5325b6800"
-horo: 7
+coordinate: "rootstock · 8/crest · df7f59ee"
+contentUuid: "fb894a02-eab3-5bfa-8fbd-ccf8b6f22a18"
+diamondUuid: "742139d2-ef21-8507-955c-daa840cd909c"
+uuid: "df7f59ee-0d8c-8c26-b4eb-a5fc26ef6397"
+horo: 8
 typography:
   partition: rootstock
   bondDegree: 36
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a6c33737-f0d1-8016-8268-4f3bbce5b9f7"
+  computationUuid: "8177b217-8ff9-82bb-aaf6-ef7d350c7e76"
   stages:
     - stage: path
       stageUuid: "64620819-20e4-8fb0-8d75-1abc73455b05"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "522cb750-175e-8e52-b817-46a99f8004e2"
     - stage: horo
-      stageUuid: "d0aa12b6-d01c-88e0-8541-e1ea4bbd896d"
+      stageUuid: "a69fb937-0ee4-866f-a58c-467da9c3a1dc"
     - stage: seal
       stageUuid: "edd28e15-1ca2-80e9-91da-0583a925978c"
     - stage: uuid
-      stageUuid: "8b126668-04e6-8f6c-bb34-708d31d3a13e"
+      stageUuid: "20af055f-4a1c-8adc-a20b-5243368e295c"
 version: 2
 ---
 # rootstock — the root system a scion is grafted onto

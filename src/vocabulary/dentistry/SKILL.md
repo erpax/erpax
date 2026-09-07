@@ -2,11 +2,11 @@
 name: dentistry
 description: "Use when reasoning about dentistry as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/dentistry"
-coordinate: "vocabulary/dentistry · 1/base · f56ca572"
-contentUuid: "b9b24428-13b1-5e34-875e-0cfabf420318"
-diamondUuid: "fbb61e22-12b5-8069-9876-fb330ed4e52a"
-uuid: "f56ca572-416b-8899-908b-aab8abb66cef"
-horo: 1
+coordinate: "vocabulary/dentistry · 2/share · 04ae8712"
+contentUuid: "073e21db-4b71-5da3-af05-54fee9e7bba0"
+diamondUuid: "828e94b6-7043-8a4b-a9ec-86262ed65e50"
+uuid: "04ae8712-4528-88ec-bd12-ae70ea254a73"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "571d2395-0b49-8e59-ad0c-a499b455dca9"
+  computationUuid: "8c0dcb12-b59b-8c68-bcbd-03f8fd7992b3"
   stages:
     - stage: path
       stageUuid: "22acffe7-2649-83e2-919c-1b1a30d7aade"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bafb2585-6c85-822d-9dbd-5a50e536b903"
     - stage: horo
-      stageUuid: "ea4e3255-e570-854f-a947-3fa31f67c691"
+      stageUuid: "0e9da131-fe21-801b-b15a-1980b2d2aa56"
     - stage: seal
       stageUuid: "0530aec5-ee3a-878b-b838-f0ca6cceff83"
     - stage: uuid
-      stageUuid: "a53fe926-6f57-8519-9456-8f7877ac6371"
+      stageUuid: "a800b135-6dea-8f35-9681-e6819432f5bc"
 version: 2
 ---
 # dentistry

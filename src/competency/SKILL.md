@@ -2,11 +2,11 @@
 name: competency
 description: "Use when reasoning about competency — A schema.org component word, collided out of schema.org compounds — fused from competencyRequired (sti · collapse · merge)."
 atomPath: competency
-coordinate: "competency · 2/share · b9109013"
-contentUuid: "3072df8f-9e84-51e3-8808-f289bc9b1fec"
-diamondUuid: "9ac36d38-8679-8256-9fad-907576d28c31"
-uuid: "b9109013-72ee-8632-a68a-0977b33d42f7"
-horo: 2
+coordinate: "competency · 5/round · f2d38188"
+contentUuid: "d358fd3c-1fe0-5b06-9d11-eee0dd0ed2df"
+diamondUuid: "0dd52261-264b-8c20-8146-b9f1787cac39"
+uuid: "f2d38188-1b7a-82a6-a9cc-a88f71006a81"
+horo: 5
 typography:
   partition: competency
   bondDegree: 14
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "231bc828-ed86-85b3-aa5e-ac97e4ad21b0"
+  computationUuid: "94785fa7-f8f4-80e4-950e-beebbf18d8d5"
   stages:
     - stage: path
       stageUuid: "e133079a-340d-8e9c-8d6b-ba05f371b8b3"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "5702f403-ba93-8b4a-8579-8c1112f82ae8"
     - stage: horo
-      stageUuid: "71b3cc0e-d5f3-8d94-af63-26ec7015565d"
+      stageUuid: "03b9b31e-9221-858f-abe8-cd2fd1338166"
     - stage: seal
       stageUuid: "27082d0e-250a-82ee-906a-fcfc34303d7f"
     - stage: uuid
-      stageUuid: "7ee75421-db0e-8fc2-be1a-3d3014d1f4c3"
+      stageUuid: "66ce02a5-a42e-8b24-a211-800958e7cf62"
 version: 2
 ---
 # competency

@@ -2,11 +2,11 @@
 name: agree
 description: "Use when reasoning about agree as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/agree"
-coordinate: "vocabulary/agree · 4/weave · ffdee745"
-contentUuid: "4c5aa525-7b52-5e32-a5f8-7df30c6aa602"
-diamondUuid: "6518c1c4-d887-83de-87c4-712aee05ac17"
-uuid: "ffdee745-a96c-89fc-922c-46bdf1da8445"
-horo: 4
+coordinate: "vocabulary/agree · 2/share · 378d0c86"
+contentUuid: "10f8ae84-2d46-5856-8b77-237410476cd9"
+diamondUuid: "58ff5c2c-7a10-80c5-8fdb-a7fa592b9ca4"
+uuid: "378d0c86-25ab-83cd-977a-0926ffc293e3"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0a79aef1-5549-8245-b55d-50339788e9a1"
+  computationUuid: "8eab5001-6ac4-8f3a-ba93-be9f991fa7dc"
   stages:
     - stage: path
       stageUuid: "9ad963e2-d685-8c00-ab7c-81e9dd311c87"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "980e9305-ff50-8806-b805-6c0cf36ac350"
     - stage: horo
-      stageUuid: "a91a373b-69bb-8ee8-9dbd-4dd2185b76f1"
+      stageUuid: "13996338-f91a-8c14-957a-7565d1ca668e"
     - stage: seal
       stageUuid: "e28387f0-c479-8e27-8c3f-c61858f00fe1"
     - stage: uuid
-      stageUuid: "5bfdfd92-5396-8b07-9276-f42265bd5e3f"
+      stageUuid: "a2048b4b-221a-838c-9064-078b738dd54e"
 version: 2
 ---
 # agree

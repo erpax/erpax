@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "day",
-    "uuid": "56891d6d-980b-8abf-a868-1006f95166b6",
+    "uuid": "0f423a45-b220-876a-a593-be9b6805371e",
     "words": [
       "day"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about day — Defines the day(s) of the week on which a recurring Event takes place. May be specified using either DayOfWeek, or alternatively Text conforming to iCal's syntax for byDay recurren",
-    "uuid": "3c4da494-43ab-88e4-b012-a996a951f3fb",
+    "uuid": "2a9f807f-e25b-855c-b92e-6223fc6b7111",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: hedge
 description: "Use when designating financial instruments or transactions to offset market risk (FX, interest rate, commodity); accounting treatment under IFRS-9 hedge accounting or derivatives mark-to-market"
 atomPath: "vocabulary/hedge"
-coordinate: "vocabulary/hedge · 8/crest · 418f9961"
-contentUuid: "12ffded3-70e8-54bc-9a92-7e3ee5e58bde"
-diamondUuid: "366abf59-26a3-8ee5-b8af-e764dc707ba5"
-uuid: "418f9961-da25-8a34-91d7-d2094685d7dd"
-horo: 8
+coordinate: "vocabulary/hedge · 5/round · fecee5a3"
+contentUuid: "256d355a-182d-5955-a369-a1eaf6ec1397"
+diamondUuid: "d22f6a45-c0a4-84d7-88ec-f5ad0ef2fa79"
+uuid: "fecee5a3-eab9-87cc-96fa-bc0fad2fdb95"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 30
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d290428b-8774-8e68-84ac-3c79a4f949cf"
+  computationUuid: "0c227a66-ce0f-852e-a165-2dd2d11b70b2"
   stages:
     - stage: path
       stageUuid: "c102ce7c-d5ac-8289-a468-d74116d464e7"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0f50b354-63ad-880d-bc79-15ecca94014a"
     - stage: horo
-      stageUuid: "31fc57dc-e13e-8c9a-8209-7febc0bf455d"
+      stageUuid: "7611a055-c578-8d03-8b9c-84fcb50af189"
     - stage: seal
       stageUuid: "0d30e50a-3973-8538-a59d-ac9289b588f1"
     - stage: uuid
-      stageUuid: "e30ca8c4-24d3-8244-bc72-de8ac5059949"
+      stageUuid: "bf496ade-5b7d-8046-b362-2dec95240e48"
 version: 2
 ---
 # hedge

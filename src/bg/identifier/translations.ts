@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "identifier",
-    "uuid": "16c720d5-68d4-8be3-8205-854eb8f3077d",
+    "uuid": "22e48b9e-775b-8609-8445-24c282b80173",
     "words": [
       "identifier"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when validating Bulgarian identity numbers — ЕГН (person), ЕИК/БУЛСТАТ (entity), or decoding birth date and sex from an ЕГН. The entry gate for BG society into erpax (Наредба РД-02-20-9/2012 + БУЛСТАТ two-stage modulo-11).",
-    "uuid": "97c5d45b-634f-8fc2-a831-0e0890af6ca2",
+    "uuid": "50869db7-596a-8992-aac1-f4e993952675",
     "words": [
       "use",
       "when",

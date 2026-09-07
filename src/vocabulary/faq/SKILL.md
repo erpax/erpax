@@ -2,11 +2,11 @@
 name: faq
 description: "Use when reasoning about faq as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/faq"
-coordinate: "vocabulary/faq · 7/descent · 7e69d23c"
-contentUuid: "5d7a8622-f86c-552a-8d01-8870844651b8"
-diamondUuid: "a7f6fc9c-1e9e-867a-a429-79cbb97d5e96"
-uuid: "7e69d23c-0138-8286-8fd2-4de21104b483"
-horo: 7
+coordinate: "vocabulary/faq · 2/share · fa1d4b6d"
+contentUuid: "fb84636d-d898-57e4-bee5-157d0781a297"
+diamondUuid: "dafa007f-ffe7-86d2-9354-c899465fc449"
+uuid: "fa1d4b6d-fd5f-8bc8-96bc-74f3c64951e8"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "849bc9e0-bb76-87cf-8a8e-dd89bde792db"
+  computationUuid: "a5098e81-f04d-81fe-a98c-347ce6a4a8ad"
   stages:
     - stage: path
       stageUuid: "d7127356-b85b-8c09-9504-8a172791fa1d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "19e179f8-9440-890d-8fbc-5302ac9cbea6"
     - stage: horo
-      stageUuid: "89b71832-256c-8e40-adbc-87560d045d7d"
+      stageUuid: "a1766b5a-7029-8383-a4be-0b138970448e"
     - stage: seal
       stageUuid: "90bf2a37-e538-815c-9702-c9cd1e5e9f3a"
     - stage: uuid
-      stageUuid: "a4de9c1f-7f5b-85d5-abd4-dee5eb558e7f"
+      stageUuid: "bd85d2c8-b046-8f9c-9f31-3ece2d03a4c9"
 version: 2
 ---
 # faq

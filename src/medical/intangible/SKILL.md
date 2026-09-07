@@ -2,11 +2,11 @@
 name: intangible
 description: "Use when reasoning about intangible as a medical facet of medical — vocabulary pivot to @/intangible; nested not duplicated."
 atomPath: "medical/intangible"
-coordinate: "medical/intangible · 2/share · 5d5d5557"
-contentUuid: "bbf017fe-34fc-5372-bc9a-7d7f297307f3"
-diamondUuid: "2625b491-879e-8d0f-9793-37c79a8ad81b"
-uuid: "5d5d5557-1f48-8abf-8065-f00853a84fe4"
-horo: 2
+coordinate: "medical/intangible · 4/weave · 30581b60"
+contentUuid: "56960525-abdc-5e30-8828-72284e8f7191"
+diamondUuid: "5e8cce72-1121-897a-97a9-2f030e9e4a9c"
+uuid: "30581b60-0870-8b6e-a678-f30c56eda6fc"
+horo: 4
 typography:
   partition: medical
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1d84e672-4d26-873f-b00a-d8379aa81543"
+  computationUuid: "de06ac4f-0752-8738-8626-ec554236a8ce"
   stages:
     - stage: path
       stageUuid: "6899fb28-e887-8d2c-82e1-00cfe4f9f37a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4cdee3f6-971e-894e-aa12-6537aa14c207"
     - stage: horo
-      stageUuid: "20fd7534-f2e8-8616-b330-b991b68054a3"
+      stageUuid: "35f0b350-06c1-83f3-8738-04961fa68d6e"
     - stage: seal
       stageUuid: "7ef81d65-8b9a-8d8c-8cea-f4a8c53c25a8"
     - stage: uuid
-      stageUuid: "46e08a5d-0b9b-8937-a496-7a298d219e93"
+      stageUuid: "37708b76-f163-83fd-aed0-0a7fbfe1905f"
 version: 2
 ---
 # medical/intangible — medical facet

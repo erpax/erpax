@@ -2,18 +2,18 @@
 name: unavoidable
 description: "Use when hardening erpax toward infinite tamper-cost — why every security lever must be gate-FORCED (a stray fails, exit 2), never merely advisory. The cost is the minimum across dimensions, so the weakest avoidable gap is the cheapest forgery; only the unavoidable raises the floor."
 atomPath: "vocabulary/unavoidable"
-coordinate: "vocabulary/unavoidable · 4/weave · 2559b59b"
-contentUuid: "9151e767-5541-5bbf-9a14-ef3f763cfa0c"
-diamondUuid: "764ceaab-1bba-8bd8-8f1b-25b8f20822e1"
-uuid: "2559b59b-29e0-8743-8d7e-8b509393fdb0"
-horo: 4
+coordinate: "vocabulary/unavoidable · 5/round · 66fe2a6e"
+contentUuid: "49225e5c-ef7e-526c-bc00-0a0d586ecbbb"
+diamondUuid: "495b4e44-73c1-88ce-b56c-8d17c347f7e5"
+uuid: "66fe2a6e-3da3-84c1-a285-c0e9e7a0e3d6"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 76
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1b0c051e-a061-8c91-803a-e49af8a0b249"
+  computationUuid: "b3259e87-4650-8609-91f0-165fcaf9ce13"
   stages:
     - stage: path
       stageUuid: "4cd21f86-acd9-8b1b-ab4e-a3aed890b06f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3554cbf8-bb95-8751-b33b-2f11c963c6d2"
     - stage: horo
-      stageUuid: "9b7e4d0b-1662-8c2e-ae60-b3eaea29f7a1"
+      stageUuid: "ebaf20f9-bbb1-8a57-9446-8458d487d120"
     - stage: seal
       stageUuid: "1b3dfe0b-9ffe-8224-b359-b3d884ccb9b8"
     - stage: uuid
-      stageUuid: "6828e5e9-1fca-8e52-9db2-f78d1d3c2fd4"
+      stageUuid: "accef597-688b-8461-922a-763a704bd84d"
 version: 2
 ---
 # unavoidable — every lever forced, because the cost is the minimum

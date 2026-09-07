@@ -2,11 +2,11 @@
 name: founding
 description: "Use when reasoning about founding as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/founding"
-coordinate: "vocabulary/founding · 8/crest · f4f8b9a2"
-contentUuid: "f9e742d9-c8b5-5f2b-bd4b-ff523281c70c"
-diamondUuid: "e07f6b1d-2fba-8451-a5f3-363134e3f9cf"
-uuid: "f4f8b9a2-7aac-8967-bc51-e93e82e71257"
-horo: 8
+coordinate: "vocabulary/founding · 7/descent · 81bbdcaf"
+contentUuid: "719e87ce-e84c-5acf-95ea-2cfb135aedb4"
+diamondUuid: "8cfad353-f562-80f1-bb5f-66a7be230e85"
+uuid: "81bbdcaf-fd45-813d-825c-632f30c84ba0"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "104b8c85-50d4-8d24-84b6-42617316c183"
+  computationUuid: "3a6e80fa-ae49-8a07-b56e-679b8469edd1"
   stages:
     - stage: path
       stageUuid: "aca3cf4f-8e62-8921-88b3-74b72c8112b1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7bdabfa3-e639-8612-8393-4c84cfca0ef7"
     - stage: horo
-      stageUuid: "7f25a459-c317-8766-b267-b5b0b0309bfe"
+      stageUuid: "17b7e2e1-65e2-8f60-9fb0-a8212cda380e"
     - stage: seal
       stageUuid: "183423ab-2534-8d19-8ece-01bc54da9de4"
     - stage: uuid
-      stageUuid: "fc8996ff-7377-8261-84f5-e300f6aa7615"
+      stageUuid: "afcc092f-4eb3-81c0-a45f-16b0c5bdc66f"
 version: 2
 ---
 # founding

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dissolve",
-    "uuid": "9e910c99-9e0e-85a2-a0d6-e8a1775d9c2d",
+    "uuid": "fe991ba7-6952-8f62-9c11-ddb3c6105657",
     "words": [
       "dissolve"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when collapsing prefixed units into the single-word matrix — drop the grouping prefix, split camelCase/hyphen names into nested single-word folders, apply singular-model/plural-collection, remap @/ imports, rewire barrels, merge same-word collisions as accountable collections. The deterministic mover; the matter is index.mjs.",
-    "uuid": "8f363a97-97ba-8ad6-9633-596885212d53",
+    "uuid": "b24f6e10-763a-8a91-96b0-454a51c0907f",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: rvpark
 description: "Use when reasoning about rvpark as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: rvpark
-coordinate: "rvpark · 2/share · d39f4446"
-contentUuid: "095c42a1-2030-54c0-bbc8-e9e58aeaff4a"
-diamondUuid: "e27d7f26-3657-8de0-82d4-b66dd0e023a9"
-uuid: "d39f4446-3f76-8b3b-bb44-a76b2043500e"
+coordinate: "rvpark · 2/share · 8b7db5ae"
+contentUuid: "e50b96a2-9dba-5a73-8e28-8baab88bff65"
+diamondUuid: "2b9438f2-98fc-8aec-9a62-ea0d190ba6b7"
+uuid: "8b7db5ae-5f3c-82c4-bbe9-eb88f797c517"
 horo: 2
 typography:
   partition: rvpark
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e4233581-3a29-8980-a857-e4d222b6b675"
+  computationUuid: "a80cf873-2748-8859-b27d-26d435c3332c"
   stages:
     - stage: path
       stageUuid: "2aa4ba8c-f29e-8f6f-b374-2d311fb2fe06"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d9d33802-c132-8aec-8a72-863a3f802e4e"
     - stage: horo
-      stageUuid: "1c3c3029-1e99-8847-a8c1-1f6ebb7591dc"
+      stageUuid: "8840ce60-0891-822d-a916-04777090deef"
     - stage: seal
       stageUuid: "63e83495-4d26-8f56-86fd-5954701f3672"
     - stage: uuid
-      stageUuid: "520b199d-7e88-8b30-beef-20174c74719f"
+      stageUuid: "d53c86db-b14b-8e9b-a66d-097f7c30047e"
 version: 2
 ---
 # rvpark

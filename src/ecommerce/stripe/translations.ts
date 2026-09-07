@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "stripe",
-    "uuid": "638e408d-1812-8cf0-bace-3b967b5a9792",
+    "uuid": "b691a9cf-dfa9-86fd-ab2b-ecd0cb433808",
     "words": [
       "stripe"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about stripe — resolves the tenant's own Stripe credentials before charging, closes the order against that same tenant, and resolves the tenant from the event rather than trusting a default.",
-    "uuid": "6c28e15f-9996-8d60-acd8-01c6ac296059",
+    "uuid": "0790c47c-1b87-84b1-a301-5865adf845ff",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: campground
 description: "Use when reasoning about campground — A camping site, campsite, or Campground is a place used for overnight stay in the outdoors, typically containing individual CampingPitch locations. In British English a campsite is"
 atomPath: "vocabulary/campground"
-coordinate: "vocabulary/campground · 4/weave · 0734abb9"
-contentUuid: "ddbc6fb6-6d65-561d-ab26-73bfed406af4"
-diamondUuid: "f07b39a2-f98b-832a-9604-eaf30eb751e5"
-uuid: "0734abb9-1a7c-88ba-b999-baeffa9f4219"
-horo: 4
+coordinate: "vocabulary/campground · 5/round · f0730074"
+contentUuid: "63a25e97-3afd-5469-b79d-6fe4181c692c"
+diamondUuid: "5e67f6e3-15ce-8da9-9079-103a22ec4309"
+uuid: "f0730074-1223-8aac-a14e-c552a39b9d98"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f8831c4a-9561-8dc1-a8ff-87468cb5a6e3"
+  computationUuid: "9afe40b9-e41d-8b7c-9678-4c8cf92ef750"
   stages:
     - stage: path
       stageUuid: "bde3180f-aa3f-81f0-9798-07ad6a82a528"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "efc2f1ce-f277-8cd8-bdac-ddf7f4cfc751"
     - stage: horo
-      stageUuid: "cc4f686c-b22b-8c68-a26c-6999c976d802"
+      stageUuid: "ddfb58c5-2bbe-8442-bdac-ecb9cf5734bd"
     - stage: seal
       stageUuid: "650d7cdd-6ebd-84db-b834-a3211f8e51ee"
     - stage: uuid
-      stageUuid: "9d8675d5-0d04-835d-92cd-012c54bfad27"
+      stageUuid: "7a5d54e5-1f75-87aa-a3e0-3732205df62e"
 version: 2
 ---
 # campground

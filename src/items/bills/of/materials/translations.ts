@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "materials",
-    "uuid": "8fb937b9-c22e-8dca-ba41-6a2d94ae5c04",
+    "uuid": "8084abc2-b826-86a4-a990-db9764c42f69",
     "words": [
       "materials"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining or querying the component recipe for a finished good — BOM lines, component quantities, version control per ECO, effective date ranges, and IAS-2 §10 cost-of-conversion lookup. The versioned bill-of-materials collection that seeds work-order execution and overhead absorption.",
-    "uuid": "3175e0cd-3e61-836e-bda1-e3f2e38869aa",
+    "uuid": "778c00fb-f500-861c-9b10-a584ac2b4743",
     "words": [
       "use",
       "when",

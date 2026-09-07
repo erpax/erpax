@@ -2,11 +2,11 @@
 name: hooks
 description: Use when reasoning about hooks — is the fundamental law of double entry enforced where the entry is saved. Checking it in a report instead means the unbalanced entry already exists and every statement built on it…
 atomPath: "journal/entries/hooks"
-coordinate: "journal/entries/hooks · 6/6 · 6d026c41"
-contentUuid: "2db91109-5d82-50b2-bc6e-d70f204a3904"
-diamondUuid: "7840ed8f-c0a7-8299-933a-c5cb0135921a"
-uuid: "6d026c41-0741-88b0-a0a6-f8d1ac497131"
-horo: 6
+coordinate: "journal/entries/hooks · 9/unity · f51b72ae"
+contentUuid: "44718c89-9ca8-573f-9f1d-fad458924154"
+diamondUuid: "e410d5a6-1cbe-8050-862e-11886af04d8a"
+uuid: "f51b72ae-38ec-8c7f-8a8a-07ef3ace9e06"
+horo: 9
 typography:
   partition: journal
   bondDegree: 312
@@ -15,7 +15,7 @@ standards:
   - "IEEE-754"
 bindings: []
 signatures:
-  computationUuid: "aa70d8a6-7c73-85a6-ae10-eb15413bca92"
+  computationUuid: "fac7c093-5065-8b1c-ac73-8b09710f03a9"
   stages:
     - stage: path
       stageUuid: "e9c28101-17c2-801e-93fc-d01502ae2461"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "82a8fe38-9b1f-845f-a60d-ce0d47714c91"
     - stage: horo
-      stageUuid: "c0ff50c3-b0e0-84fb-9cf7-7a1bfb2850a0"
+      stageUuid: "fc4c762c-1ef6-864c-aac5-d0c9f3821446"
     - stage: seal
       stageUuid: "f66505cb-cf21-83cf-bf41-ac6915508d3a"
     - stage: uuid
-      stageUuid: "25a6dcee-90a2-877c-a397-6723a3575bd7"
+      stageUuid: "c84758c2-16a6-8b32-ab23-eed6722b00de"
 version: 2
 ---
 # journal/entries/hooks — debits equal credits, refused at the write

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "biomagnetism",
-    "uuid": "9049da8f-bef1-8cbd-82e0-f0ffa1f13883",
+    "uuid": "c65c3986-37c6-8720-9998-36e3cb2a1bd9",
     "words": [
       "biomagnetism"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when grounding the aura's 'field' in real science — the body's magnetic fields ARE measurable, but only by SQUID magnetometers in a shielded room and only at the body surface: magnetocardiography (heart, ~10⁻¹⁰–10⁻¹¹ T / tens of pT) and magnetoencephalography (brain, ~10⁻¹³–10⁻¹⁵ T / ~100 fT). The established part is intra-body diagnostics; the claim the heart's field extends feet from the body as an 'aura' was refuted under test.",
-    "uuid": "5af13096-cdb6-858e-9ab3-efb44528d0f7",
+    "uuid": "350e9298-98a2-89c2-8187-42b627f968fa",
     "words": [
       "use",
       "when",

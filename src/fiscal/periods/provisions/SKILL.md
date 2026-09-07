@@ -2,11 +2,11 @@
 name: provisions
 description: "Use when recognising or measuring uncertain liabilities — warranty, restructuring, onerous contracts, environmental remediation, decommissioning/ARO, litigation; tracking best-estimate vs discounted amount, reimbursement recovery, movement history (additions/reversals/unwinds), and §85 disclosure text. The IAS-37 provision register."
 atomPath: "fiscal/periods/provisions"
-coordinate: "fiscal/periods/provisions · 2/share · 70cda7d3"
-contentUuid: "a07ca553-7285-5602-b877-afe1e37c3038"
-diamondUuid: "61bf663f-b311-88ed-a66e-3f5cf5671852"
-uuid: "70cda7d3-63ec-8602-90db-63b4d0b45968"
-horo: 2
+coordinate: "fiscal/periods/provisions · 4/weave · 6cc7973f"
+contentUuid: "be51060d-5fa3-5f58-932f-31480038a2c1"
+diamondUuid: "f0d7d7c9-3e9f-8e6d-bebe-098e5f5a79a5"
+uuid: "6cc7973f-5e9c-83e5-b8c8-8238363b0444"
+horo: 4
 typography:
   partition: fiscal
   bondDegree: 22
@@ -25,7 +25,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "d77d7514-5f41-8d88-9d02-909ae74d8a27"
+  computationUuid: "54800524-480d-828b-820c-217dd776c8f3"
   stages:
     - stage: path
       stageUuid: "f2aac0b4-6e02-8568-8500-cb93b2c469a2"
@@ -36,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "8e04cf04-80a8-84c9-b786-82c82119f96a"
     - stage: horo
-      stageUuid: "cf214044-f583-8157-8801-9909f79b37b1"
+      stageUuid: "606aa73f-05bb-8b52-84d2-b681ffb0eae4"
     - stage: seal
       stageUuid: "8f7090c4-3197-8f3a-9239-5f7be130c51f"
     - stage: uuid
-      stageUuid: "2c30eba6-5c80-81dd-a0a3-c71c43bf56f1"
+      stageUuid: "481c5aab-a1ad-8d59-bd1d-2ae74e665c67"
 version: 2
 ---
 # provisions

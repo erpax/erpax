@@ -2,11 +2,11 @@
 name: tenants
 description: "Use when creating or scoping a tenant — the GDPR-controller boundary for all access, localization cascade (BCP-47/ECMA-402), accounting framework (IFRS/GAAP/fiscal-year), reporting currency (ISO 4217), and integration secrets (Stripe, Resend, MCP). The multi-tenant root entity and access-scope boundary."
 atomPath: tenants
-coordinate: "tenants · 7/descent · 8dd3c796"
-contentUuid: "64750155-84e6-5bcc-ac21-1a8fa78972f0"
-diamondUuid: "bd39d943-82aa-8489-b223-08081499455a"
-uuid: "8dd3c796-6b1d-81ab-9602-e942409a4000"
-horo: 7
+coordinate: "tenants · 2/share · c1c72914"
+contentUuid: "e7990eb1-5879-50ee-b691-a46fb13b7497"
+diamondUuid: "a40beaf2-43f8-8935-b7d1-0ca8108be5e6"
+uuid: "c1c72914-4452-8c95-8fd8-49df2640cb21"
+horo: 2
 typography:
   partition: tenants
   bondDegree: 23
@@ -34,7 +34,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "c4d87509-f4f7-899c-bb92-9866eb2f87d2"
+  computationUuid: "5fb8e3f6-5dd0-89cb-8367-aeb29865664a"
   stages:
     - stage: path
       stageUuid: "33e043c3-b509-89ba-a9b8-5d950475af94"
@@ -45,11 +45,11 @@ signatures:
     - stage: links
       stageUuid: "39ec08ed-3cbe-8995-ae51-f5de4a5f5cce"
     - stage: horo
-      stageUuid: "f8ef031e-64ce-875a-b6a5-e708aaf8af4c"
+      stageUuid: "13750473-f7fa-8ffb-a26b-7c1c8e4847cf"
     - stage: seal
       stageUuid: "f876a76d-ebcc-8b4d-af1e-988d265a722b"
     - stage: uuid
-      stageUuid: "d80a4804-2434-81aa-9330-b099e1b4b3fb"
+      stageUuid: "ba579aa9-f9e1-871e-9e0e-b9f205125a15"
 version: 2
 ---
 # tenants

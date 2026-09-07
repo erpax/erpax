@@ -2,11 +2,11 @@
 name: width
 description: Use when reasoning about width — The width of the item.
 atomPath: width
-coordinate: "width · 5/round · 1a6e575b"
-contentUuid: "1e4fd244-256d-52e4-a8bf-f5e57acdeaec"
-diamondUuid: "498cae10-10dc-8804-8338-ea2489b39227"
-uuid: "1a6e575b-769a-8a47-8c28-10e38495efeb"
-horo: 5
+coordinate: "width · 2/share · 5acbe113"
+contentUuid: "ace3b388-1bee-5d83-bf32-c6de37e4437b"
+diamondUuid: "5d4fcd2f-de88-84f8-bff5-30230a6ed47c"
+uuid: "5acbe113-b93d-821d-a184-f168aa565b7e"
+horo: 2
 typography:
   partition: width
   bondDegree: 8
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9ca71f0a-ff5e-8fff-94e5-7ca4a1ba1bf8"
+  computationUuid: "a8d739c2-9e97-891a-855e-e415adea89ee"
   stages:
     - stage: path
       stageUuid: "cfea03f8-74c7-8afb-b7f9-5921090c06be"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d522521c-4a44-86b1-968f-9ca41b8591c0"
     - stage: horo
-      stageUuid: "418df91f-ab39-83ad-a92d-662fd781b41b"
+      stageUuid: "847e733e-7b9d-81cb-9e18-c6447ddb1cf8"
     - stage: seal
       stageUuid: "a5df2e79-9f8a-8917-8009-529a47f2fd12"
     - stage: uuid
-      stageUuid: "19ca5a7a-931c-8ad2-acb6-e9f13a37da7d"
+      stageUuid: "486e65d6-6264-8623-837b-49d0818ab61b"
 version: 2
 ---
 # width

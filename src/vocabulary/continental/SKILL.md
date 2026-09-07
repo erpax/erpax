@@ -2,10 +2,10 @@
 name: continental
 description: "Use when reasoning about continental as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/continental"
-coordinate: "vocabulary/continental · 4/weave · 399401cb"
-contentUuid: "a5cca1a4-f708-58a4-81e2-4a677c3bccd7"
-diamondUuid: "6347dad6-4bce-8193-913f-d4913765e646"
-uuid: "399401cb-4ecd-8b85-b2b1-fa5d0dda071c"
+coordinate: "vocabulary/continental · 4/weave · de404766"
+contentUuid: "3d6f36fe-97f8-504e-b3ad-63358ae89945"
+diamondUuid: "60dae594-cc21-81c2-8de3-b0d175bbc3dc"
+uuid: "de404766-1789-82c1-aa93-c4793a7c0149"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0d5631f7-7b00-8218-a8a4-f65b326cf4eb"
+  computationUuid: "de511a01-6153-8437-9d76-1b85757c6589"
   stages:
     - stage: path
       stageUuid: "8069cd43-d323-87ef-b2b9-3a38ccccd9c1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b36b863b-7dca-8257-97f0-ff7538970191"
     - stage: horo
-      stageUuid: "7eb46514-b149-83ff-baa7-1cc3d0803e95"
+      stageUuid: "6ce93de9-f69f-8929-9fd4-1239464718a4"
     - stage: seal
       stageUuid: "0dc58823-2054-8c49-ae5d-54b879dfe366"
     - stage: uuid
-      stageUuid: "9f276aaf-8f36-8ba4-aa96-1139134a2ac9"
+      stageUuid: "06e0c199-dba1-8fb0-aa7a-22cafe2a10fa"
 version: 2
 ---
 # continental

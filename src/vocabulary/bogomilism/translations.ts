@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bogomilism",
-    "uuid": "5f6320cb-de1c-829e-bdcf-2f10f4900ea0",
+    "uuid": "cda5b0b6-28e9-8e3e-904d-3b0bc11e85e9",
     "words": [
       "bogomilism"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading Bogomilism as a diamond of invariant atoms — the medieval Bulgarian dualist movement (Bogomil, 'dear to God'): the visible material world the work of a lower power, the spirit alone of the good God, salvation by inward purity not outward rite. A dualist sub-diamond in the gnostic lineage. Strip the prefix and the material world collapses to the profane, the spirit to breath.",
-    "uuid": "40c4adeb-6a52-801f-9ade-e27b86aa4aac",
+    "uuid": "fa075720-8dd5-85c8-b00d-eaa5ca2701b2",
     "words": [
       "use",
       "when",

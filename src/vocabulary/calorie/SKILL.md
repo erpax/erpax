@@ -2,10 +2,10 @@
 name: calorie
 description: "Use when reasoning about calorie as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/calorie"
-coordinate: "vocabulary/calorie · 5/round · 511b5fdf"
-contentUuid: "46280e11-2c78-5976-935f-f441f3b8ddbe"
-diamondUuid: "538d43cc-2060-8c50-b23d-e69ff5b80bb9"
-uuid: "511b5fdf-3e4c-8d6e-bc29-7c0e982cb374"
+coordinate: "vocabulary/calorie · 5/round · 0f6ff0d3"
+contentUuid: "efee6403-ca5c-5265-b4c0-b3019a6267b9"
+diamondUuid: "04e4e60f-92cc-8173-ba2e-2626da5849f2"
+uuid: "0f6ff0d3-6561-8fbe-ad95-be154747f373"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7de8c098-21f9-8a18-a8e8-21b7ce80171b"
+  computationUuid: "00ddf1a0-95f3-85de-9d45-a737464ce3d0"
   stages:
     - stage: path
       stageUuid: "c1707c5d-b2d8-8906-8df8-b1fc047da149"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5274679b-2cda-86fd-99da-2176aa3cf0df"
     - stage: horo
-      stageUuid: "6d66bed4-0be7-8762-9e80-664e8f747acf"
+      stageUuid: "55b734f5-a05a-8165-8ccd-e6b42d71a932"
     - stage: seal
       stageUuid: "8b6896a8-f8e4-8873-9159-4cb4044f7a34"
     - stage: uuid
-      stageUuid: "42e2f9f9-03c1-84ae-b269-c0dd476ed49a"
+      stageUuid: "281a48e4-3913-8c76-b510-e6d80f534c67"
 version: 2
 ---
 # calorie

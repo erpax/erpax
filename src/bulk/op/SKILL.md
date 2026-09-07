@@ -2,10 +2,10 @@
 name: op
 description: "Use when enqueueing or processing a bulk import or export (CSV, Excel, JSON/JSONL, UBL/CII XML, camt.053/054, pain.001/008, EDIFACT, OCR) — the single bulk-operations contract that writes an audit row up front, dispatches to the queue, and lands each failed row in transaction-failures for operator review."
 atomPath: "bulk/op"
-coordinate: "bulk/op · 5/round · 69db25b4"
-contentUuid: "25501373-b151-59bc-9f4d-f084b5cd37a8"
-diamondUuid: "7fc9eb33-e2e3-885a-b914-c57b0e42585c"
-uuid: "69db25b4-a03e-8f81-b662-5879b592feba"
+coordinate: "bulk/op · 5/round · 624fdfba"
+contentUuid: "0765016c-e6aa-5119-9a07-5366b80a4342"
+diamondUuid: "4726a56f-8cc4-80a0-b8df-a84397f695e8"
+uuid: "624fdfba-e5fb-85d5-85f7-4f62669a4ad0"
 horo: 5
 typography:
   partition: bulk
@@ -27,7 +27,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "d6dc5993-88f9-86b9-80ae-15da5364aea4"
+  computationUuid: "307a85c9-e32c-88ea-bc24-2a434d7f11b3"
   stages:
     - stage: path
       stageUuid: "7be5c6f2-0510-8e9f-8e99-e6d730ae9a6f"
@@ -38,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "978f6fe6-2c76-817c-a26c-72a63a6be741"
     - stage: horo
-      stageUuid: "bee0d621-48af-84a8-9c46-d373ffe63c61"
+      stageUuid: "10f9bfc2-79e5-8ad2-9841-348664afda3a"
     - stage: seal
       stageUuid: "8a4b978a-d0b0-8acc-87d8-f2aa118dc2a5"
     - stage: uuid
-      stageUuid: "005fcc1b-ea80-85bf-8a54-4a9b85f1c749"
+      stageUuid: "c5390fa4-047d-8bad-a00a-24629c2a7065"
 version: 2
 ---
 # bulk/op — the unified bulk-operations contract

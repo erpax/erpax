@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "language",
-    "uuid": "70d5f1ae-5919-8947-b27b-96747b67a55c",
+    "uuid": "a3c6ea7f-d909-8adb-a094-ca8880fee4c4",
     "words": [
       "language"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about language — Natural languages such as Spanish, Tamil, Hindi, English, etc. Formal language code tags expressed in BCP 47 can be used via the alternateName property. The Language type previousl",
-    "uuid": "0a982b56-e347-81cf-9f01-3970bd88cbc4",
+    "uuid": "7d748b86-65d6-8e0f-ba6b-3b013780932b",
     "words": [
       "use",
       "when",

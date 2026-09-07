@@ -2,11 +2,11 @@
 name: variables
 description: "Use when reasoning about variables — Six numbers, and they lived in — a file at the ROOT of , which belongs to no atom."
 atomPath: "css/variables"
-coordinate: "css/variables · 5/round · 4d44f85d"
-contentUuid: "cf329dd3-3624-5ca4-9a26-27d6c13416ba"
-diamondUuid: "dd4581de-1d5f-8674-a101-dd2fe61f6a73"
-uuid: "4d44f85d-1559-8e11-9ae9-bd7eb4546d83"
-horo: 5
+coordinate: "css/variables · 8/crest · 8ef75519"
+contentUuid: "e69054e2-c2e0-5986-bcb2-cb5be43a876c"
+diamondUuid: "8bdab190-f71d-8d39-bcf1-bfb6d77304df"
+uuid: "8ef75519-e439-862a-b921-67680b3aea85"
+horo: 8
 typography:
   partition: css
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - W3C CSS Media Queries Level 4 — width breakpoints
 bindings: []
 signatures:
-  computationUuid: "a0960d8b-3397-8e65-8723-0a6ac23c4be8"
+  computationUuid: "e4b35791-272f-8fac-981b-a97d7899746f"
   stages:
     - stage: path
       stageUuid: "db0da80f-c663-8851-b745-714f0e8a8ba5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ea66cdb4-ead1-8ea0-a17b-57e69c0d77b1"
     - stage: horo
-      stageUuid: "f1ea7cec-b888-836f-8244-42b60fb90510"
+      stageUuid: "e27cdfd6-6aa7-8b0a-bb8a-325c67e0a9cc"
     - stage: seal
       stageUuid: "dde60bff-dc54-8ccb-b280-9e64669a8149"
     - stage: uuid
-      stageUuid: "8231deb3-bce0-87ee-ba24-d2e3ec8e151d"
+      stageUuid: "6a689dc8-eb3b-8571-a158-2324dbbb906b"
 version: 2
 ---
 # css/variables — the breakpoints, at an address

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "quota",
-    "uuid": "49310fd5-d4de-8ce9-8eec-9ffc307ad408",
+    "uuid": "61091082-cef9-8bf6-9109-17b4a3aea561",
     "words": [
       "quota"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when setting or tracking rep/team/territory sales targets — period quota, attainment %, variance to goal; often linked to compensation.",
-    "uuid": "ccce695d-017e-8234-91ba-9ad88ece28a6",
+    "uuid": "78facd8f-83f0-8d32-a03b-74dbc0b28963",
     "words": [
       "use",
       "when",

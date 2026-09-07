@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "alternative",
-    "uuid": "2fa1037c-45db-8df2-962c-64f08d031f64",
+    "uuid": "3312be57-da4c-8c54-acb4-853a26a2194b",
     "words": [
       "alternative"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about alternative — Another gene which is a variation of this one.",
-    "uuid": "0345623c-834b-89a5-92dd-0f196fef669b",
+    "uuid": "0352e9b4-defb-8718-8e42-cbcba39ef9e3",
     "words": [
       "use",
       "when",

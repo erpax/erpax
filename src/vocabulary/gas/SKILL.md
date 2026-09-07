@@ -2,11 +2,11 @@
 name: gas
 description: "Use when reasoning about gas as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/gas"
-coordinate: "vocabulary/gas · 8/crest · 2443e3c5"
-contentUuid: "74f8c4d3-d8b2-5f06-acf9-bd8668d2f2aa"
-diamondUuid: "a28ad4d3-3eb4-82d7-8e4f-3d9aeb3d64e6"
-uuid: "2443e3c5-5a35-8326-bf54-d6572be64f96"
-horo: 8
+coordinate: "vocabulary/gas · 5/round · 28633263"
+contentUuid: "e13fe588-7fa8-5649-ad52-c0ddee7ae086"
+diamondUuid: "08702342-1be3-842c-a9c2-aa0d369b7035"
+uuid: "28633263-c171-8435-99ef-0b1c47c29696"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e2f81ad0-3d23-8aca-856a-6ee19e235c1d"
+  computationUuid: "be8f9744-ac71-849b-91d7-9924a020fcbd"
   stages:
     - stage: path
       stageUuid: "826867d4-d321-8d87-ab87-9e611bb2118a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d55083ab-eb36-83bc-adb1-2ee33a7d6f88"
     - stage: horo
-      stageUuid: "ca9e583d-fb10-8a8a-aa03-3aff72743630"
+      stageUuid: "2d4cd265-684b-8d6e-8868-cbb9c1d40088"
     - stage: seal
       stageUuid: "20136b47-c401-8564-8863-6f16d29b6a13"
     - stage: uuid
-      stageUuid: "866a2f05-8e01-87e1-b8a5-d404a6d0877f"
+      stageUuid: "df123213-fe94-8bc9-9184-3d35d62956dd"
 version: 2
 ---
 # gas

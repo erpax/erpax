@@ -2,10 +2,10 @@
 name: rate
 description: "Use when a value is a ratio of two dimensions pinned at a point in time — exchange rate, VAT/tax rate, interest rate, unit price (currency per quantity), wage (currency per hour), throughput/capacity (quantity per hour), run-time-per-unit. The RateConcern; a rate is value-per-unit, pinned at a point; blanks route to the no-op identity (cascade-resolved), never a magic literal."
 atomPath: "vocabulary/rate"
-coordinate: "vocabulary/rate · 2/share · 22c74f01"
-contentUuid: "b7da36aa-085f-5195-bb40-d57c779d71a5"
-diamondUuid: "ac080c0f-6994-8390-be39-17913dc41086"
-uuid: "22c74f01-cf5c-8f37-88f0-6b91dc15cf65"
+coordinate: "vocabulary/rate · 2/share · a2d2445e"
+contentUuid: "69e1bcdf-b8db-53c3-ad9d-cd9af0df715a"
+diamondUuid: "b0909c69-2801-8d5f-a2e6-615be5d3bbf2"
+uuid: "a2d2445e-0df8-81d8-875e-8da8ec70ab30"
 horo: 2
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "254936c8-dd62-88ee-9bfb-291e2f448d3b"
+  computationUuid: "9c042357-4a3b-8aa8-bae3-662ed610846a"
   stages:
     - stage: path
       stageUuid: "1af333b5-5c66-8c5c-bfcd-9a049f406852"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "736c3b75-97a1-8395-8e41-bba4e97caa67"
     - stage: horo
-      stageUuid: "8f0f2297-fcff-8976-b000-902fc8948d95"
+      stageUuid: "85afd9e0-e897-896b-a1f3-d9703e3bcb48"
     - stage: seal
       stageUuid: "7aa441f3-7271-825d-a239-7a64a8cf5cbb"
     - stage: uuid
-      stageUuid: "95056daa-bc12-83b0-b08c-b8afc25da8b0"
+      stageUuid: "99f38ec9-c802-8cca-a463-9c03642f7bed"
 version: 2
 ---
 # rate — a value per unit, pinned at a point in time

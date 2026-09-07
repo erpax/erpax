@@ -2,11 +2,11 @@
 name: income
 description: "Use when reasoning about income as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/income"
-coordinate: "vocabulary/income · 4/weave · 718c5d12"
-contentUuid: "6de32c68-d7fb-5744-8c1f-389993d42985"
-diamondUuid: "d202f365-407f-8296-8be4-116a68b95085"
-uuid: "718c5d12-2c1b-8441-b04b-b073f56af451"
-horo: 4
+coordinate: "vocabulary/income · 7/descent · b1f4b1fb"
+contentUuid: "231668ed-a5d7-5fff-8071-0a40f0e28875"
+diamondUuid: "b50de989-b0b0-8e36-8275-52cc4f05da68"
+uuid: "b1f4b1fb-6af4-8d1b-ab07-197193fc1561"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d003ffc7-0eef-8df3-9337-0886c511a862"
+  computationUuid: "d9bd95ba-107a-83a0-9a5e-9e3c22b834b3"
   stages:
     - stage: path
       stageUuid: "7d66230d-c0bc-8614-9f5b-0f5eedc069c2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e1f5e2d3-a7ef-88ce-93e2-aaa2adf81874"
     - stage: horo
-      stageUuid: "c57de67f-8754-8c59-bac0-32a57cd014fb"
+      stageUuid: "6d6e8a6d-00c5-85b0-9305-79cb804bbb6c"
     - stage: seal
       stageUuid: "253be58d-cf8b-8bee-8402-127a26605523"
     - stage: uuid
-      stageUuid: "77fe63c4-a3f5-83f2-a503-b343d5e46a90"
+      stageUuid: "f7a8a2f8-1d4a-839f-8676-3aef1e800213"
 version: 2
 ---
 # income

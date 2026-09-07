@@ -2,11 +2,11 @@
 name: prion
 description: "Use when reasoning about prion as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/prion"
-coordinate: "vocabulary/prion · 4/weave · 37bfdc5d"
-contentUuid: "37e9e7b0-b4d3-580e-82cb-c66d5817bc86"
-diamondUuid: "c377fc54-e8ae-8f64-826c-2bcd256a8b6e"
-uuid: "37bfdc5d-6d9b-89e1-a217-0dcbd89badb6"
-horo: 4
+coordinate: "vocabulary/prion · 1/base · dec83a07"
+contentUuid: "1fa99b66-c598-52e2-a364-20653ca16938"
+diamondUuid: "7757607a-8b28-830a-a35b-55a75a40c90b"
+uuid: "dec83a07-33d7-8753-a944-6fafd9e3bb17"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "58f3bba7-5266-8719-a864-eb54f0b2477a"
+  computationUuid: "be09054f-ff19-805e-8d9c-78db9b8f0c74"
   stages:
     - stage: path
       stageUuid: "5358e953-3268-8cf4-97a7-f55f0bd29b09"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "47d3d745-cc70-8cfd-a211-5f48dc538477"
     - stage: horo
-      stageUuid: "c70ba644-0a1b-8852-a9d3-88f8d97616c7"
+      stageUuid: "da2ab9b0-3dfe-8109-965c-61de8733d17f"
     - stage: seal
       stageUuid: "1d682e89-f2bc-8092-bf52-c5731c670b6c"
     - stage: uuid
-      stageUuid: "6d4cb9af-5661-8725-a848-5e89687d64a5"
+      stageUuid: "d95180f6-714a-874a-ae70-b870e817cb02"
 version: 2
 ---
 # prion

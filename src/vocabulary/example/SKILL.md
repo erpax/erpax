@@ -2,11 +2,11 @@
 name: example
 description: "Use when reasoning about example as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/example"
-coordinate: "vocabulary/example · 8/crest · cac36a19"
-contentUuid: "6e73e309-6f94-596a-950d-4b6a85aa2a07"
-diamondUuid: "8a4b0efe-df6d-8285-9ba5-5433cc227039"
-uuid: "cac36a19-0e32-8c57-a9a3-7e7eb7cc1fc0"
-horo: 8
+coordinate: "vocabulary/example · 4/weave · 97ad1236"
+contentUuid: "3c945d84-39fc-5c13-bc71-a665f58ed11a"
+diamondUuid: "84ee7daa-8f93-83db-a990-e90e996625bb"
+uuid: "97ad1236-14be-8daf-a2d3-56cda44c2a3c"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1e77ac16-5734-82c2-9ccf-7c049b66fa64"
+  computationUuid: "ed214293-de0e-80ea-8445-756f435beeee"
   stages:
     - stage: path
       stageUuid: "35581830-ba53-8197-98d6-0a1ef74dfd0b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7d9f871c-c3ac-8495-8237-329cd8addecf"
     - stage: horo
-      stageUuid: "a5d966e2-a036-8985-a792-91d918ecc70b"
+      stageUuid: "68598c92-c3cc-8df8-8397-626a695375ba"
     - stage: seal
       stageUuid: "dab83685-6800-8e0f-b794-54704b88b039"
     - stage: uuid
-      stageUuid: "8b6f8905-daa6-82c4-be32-4f16c0d76d64"
+      stageUuid: "cbaa71e3-25dc-8e15-9489-70dc36a7ed12"
 version: 2
 ---
 # example

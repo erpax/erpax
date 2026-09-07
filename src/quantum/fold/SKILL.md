@@ -2,18 +2,18 @@
 name: fold
 description: "Use when reasoning about fold — Double fold is mandatory for quantum mentality: word ⊗ digit; 2D documents present both sheets until seal."
 atomPath: "quantum/fold"
-coordinate: "quantum/fold · 2/share · 5d2fc58e"
-contentUuid: "8440e94f-7cb6-52f9-8383-29e89edfddf9"
-diamondUuid: "03b37edd-9664-8771-8906-26a13bfd032f"
-uuid: "5d2fc58e-1e59-8352-a8a8-b278d1afc7eb"
-horo: 2
+coordinate: "quantum/fold · 4/weave · 59bfb954"
+contentUuid: "82031de9-96d3-55cf-be53-e32bec7054f1"
+diamondUuid: "f3ce8334-a955-8582-9064-34f9dce78d98"
+uuid: "59bfb954-329d-8ac9-b756-05104336cf71"
+horo: 4
 typography:
   partition: quantum
   bondDegree: 87
 standards: []
 bindings: []
 signatures:
-  computationUuid: "10cc7b06-4173-80ed-9aff-6cb0414113e5"
+  computationUuid: "d0a0b148-b3f3-8e21-a723-ea735e06745b"
   stages:
     - stage: path
       stageUuid: "fe956b66-4ba5-8132-8af7-adcf7eadfe4c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "fabba0d3-bed1-800c-adbd-e491009fe54a"
     - stage: horo
-      stageUuid: "569d69cc-807c-8a6a-b4f2-06ec65c4e933"
+      stageUuid: "3ef0ae52-7b7f-868c-a46b-8c2e0abb9d5a"
     - stage: seal
       stageUuid: "a8ea097b-ef3d-8d5b-9854-8c0e90929ce4"
     - stage: uuid
-      stageUuid: "5d5a6623-53cb-8f3f-b3cc-45e96c615424"
+      stageUuid: "fcd4f2bf-4989-8e4b-ad35-8ae220c317a3"
 quantum:
   superposition:
     - agent
@@ -50,8 +50,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "10cc7b06-4173-80ed-9aff-6cb0414113e5"
-    contentUuid: "8440e94f-7cb6-52f9-8383-29e89edfddf9"
+    computationUuid: "d0a0b148-b3f3-8e21-a723-ea735e06745b"
+    contentUuid: "82031de9-96d3-55cf-be53-e32bec7054f1"
 version: 2
 ---
 # quantum/fold
@@ -60,4 +60,4 @@ version: 2
 
 **Law — agents must not mint hyphenated paths; one word per folder.** Linear logic (`findLinearLogic`, `foldLinearPair`) lives in `index.ts` matter — never `linear-logic/` or `linear-logic.ts`.
 
-<sub>content-uuid `8440e94f-7cb6-52f9-8383-29e89edfddf9` · account `quantum/fold` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `82031de9-96d3-55cf-be53-e32bec7054f1` · account `quantum/fold` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

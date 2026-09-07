@@ -2,11 +2,11 @@
 name: diabetic
 description: "Use when reasoning about diabetic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/diabetic"
-coordinate: "vocabulary/diabetic · 4/weave · b5241636"
-contentUuid: "95506cef-ed63-5d3c-88c4-9318256bd8f5"
-diamondUuid: "2d5ad640-a3a0-8ecf-ac29-c67f1ec36cfb"
-uuid: "b5241636-1719-8c34-bd2f-d22d0e9e6c78"
-horo: 4
+coordinate: "vocabulary/diabetic · 2/share · 0c865d6d"
+contentUuid: "6ed53581-15bd-5a3b-89ff-8440feed9457"
+diamondUuid: "3fe8b352-4d72-86a6-becc-b32071a4eee2"
+uuid: "0c865d6d-fac0-838c-9aad-7f8c139eb1fe"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c79572fe-e440-8188-99ba-22ab28719db7"
+  computationUuid: "a1a6d0d3-1961-8c9a-8d7f-15bd3ef999b8"
   stages:
     - stage: path
       stageUuid: "6a590e60-2fcd-8a31-a20e-feb79ebcb500"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e5506dfc-dd83-8c22-b9de-22327847eef8"
     - stage: horo
-      stageUuid: "c1adc6c9-e0e8-8fb7-b91e-a51fb4470072"
+      stageUuid: "59fcf3f6-55c9-8af7-ab2f-b96a684a5f00"
     - stage: seal
       stageUuid: "eea35a9e-6b7e-8127-ad8d-2eb42664f8d5"
     - stage: uuid
-      stageUuid: "8cc15f21-b3d0-87ef-9c8f-17fa607c4077"
+      stageUuid: "06ef3508-09e6-8f37-a8ab-94ffa83256ff"
 version: 2
 ---
 # diabetic

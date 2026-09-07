@@ -2,18 +2,18 @@
 name: task
 description: Use when modelling one task — the singular model of the tasks collection (the plural store); a unit of work to be completed by an actor.
 atomPath: task
-coordinate: "task · 8/crest · e4e79a88"
-contentUuid: "f3a4e0aa-635b-52af-a65e-4d23a29b9a4c"
-diamondUuid: "d2e11225-f8b7-8591-93ff-5744fb353041"
-uuid: "e4e79a88-94c2-8c64-8397-faf3be8fb4a2"
-horo: 8
+coordinate: "task · 7/descent · 5747fbb9"
+contentUuid: "95499282-4663-55af-ba35-4002c14a9fcc"
+diamondUuid: "ca3c54c1-9766-826a-95c2-626a912799cd"
+uuid: "5747fbb9-ac62-839c-b62a-2cadaf9947ef"
+horo: 7
 typography:
   partition: task
   bondDegree: 13
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3539332c-0b1c-8c9a-ade3-84bf3bb7f3a5"
+  computationUuid: "ac89016b-8897-8e46-927e-201ca024d7ff"
   stages:
     - stage: path
       stageUuid: "7788cd4d-00a6-825b-8bea-e7ffba6e30ba"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "818df5bb-f0a1-851c-9e10-22fafeb009be"
     - stage: horo
-      stageUuid: "d9dc34ff-889b-8baa-9f18-a3988262bb7d"
+      stageUuid: "f52e4684-3c3c-8399-863b-a28aec45e5fa"
     - stage: seal
       stageUuid: "8cbbdb3b-dd35-8949-ad90-bb0f84095b20"
     - stage: uuid
-      stageUuid: "b38396a3-9940-8121-bf47-ccb95ba287a6"
+      stageUuid: "36b4466e-a0be-8f27-9011-bd256be100fa"
 version: 2
 ---
 # task — the model of one [[tasks]] row

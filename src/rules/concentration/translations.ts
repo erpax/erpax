@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "concentration",
-    "uuid": "c646699a-43e9-8c1d-9fd6-55d3869d6210",
+    "uuid": "ca6a507b-d97f-8a23-a6a0-89e69ff37db2",
     "words": [
       "concentration"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about concentration — rules/concentration — detect logic concentrated in hub index.ts vs child atoms.",
-    "uuid": "deacce6e-36ec-8f6b-a017-b378d27f8673",
+    "uuid": "c187d6cd-08cc-8cd3-932f-e38a53d590be",
     "words": [
       "use",
       "when",

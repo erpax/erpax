@@ -2,11 +2,11 @@
 name: sku
 description: "Use when reasoning about sku — The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service, or the product to which the offer refers."
 atomPath: sku
-coordinate: "sku · 2/share · 43599116"
-contentUuid: "2a87e509-2049-52c0-924b-fd685ab44fb6"
-diamondUuid: "91775ea5-309f-8183-8caa-98c22ff31fdf"
-uuid: "43599116-5f05-82ea-ada1-129c1574eec5"
-horo: 2
+coordinate: "sku · 5/round · 8cd2191d"
+contentUuid: "fe4f3289-c965-5426-95ba-ca5151ebd845"
+diamondUuid: "97c9ecdf-5f31-8fb4-8715-6c4e1f171b73"
+uuid: "8cd2191d-def7-8669-a189-50b020e6db96"
+horo: 5
 typography:
   partition: sku
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "da6573db-9fe6-8f2c-9031-88a88dd3adbc"
+  computationUuid: "13f7cdf9-aed5-853f-8072-ee8b7dea29a3"
   stages:
     - stage: path
       stageUuid: "060286e8-c84e-8063-92cf-454360f657b7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "67ce8cc9-1b2f-84fb-8532-b390dfb0b7a4"
     - stage: horo
-      stageUuid: "89c05cb2-b7ed-8ecc-909c-d215c412d8b1"
+      stageUuid: "02a8c05c-1eb6-8345-8e43-97e6d692319c"
     - stage: seal
       stageUuid: "838ad94c-cdbf-8c13-84bc-86a374da618e"
     - stage: uuid
-      stageUuid: "4ddb3e35-fd5d-8e9e-8546-fda26dd3e4a3"
+      stageUuid: "b23c7b78-5e08-8a96-8927-aec9fe0d09a7"
 version: 2
 ---
 # sku

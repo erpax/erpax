@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "constants",
-    "uuid": "4260a114-9006-8000-a993-98f2f3947da1",
+    "uuid": "ccd7f392-eb7c-8ce7-8836-a325f118a58f",
     "words": [
       "constants"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about constants — Quantum FTL constants — paths, endpoints, boundary, defaults",
-    "uuid": "f984b342-32ba-8fd7-aaa8-d3591c94b520",
+    "uuid": "457ebe8b-71a5-847b-97e7-6feb340ef945",
     "words": [
       "use",
       "when",

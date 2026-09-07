@@ -2,11 +2,11 @@
 name: secret
 description: "Use when sealing Payload CMS secrets at rest or unsealing them at boot — encrypt under AES-256-GCM with the content-uuid in AAD; decrypt only when the presented uuid matches the expected content identity (fail-closed)."
 atomPath: secret
-coordinate: "secret · 5/round · 4b13107f"
-contentUuid: "52a54129-d715-556b-ba3f-261d7cbb748e"
-diamondUuid: "4d32c622-01d9-8344-80c1-25ba2a5e2fa5"
-uuid: "4b13107f-c344-8b98-a276-4ff04750c939"
-horo: 5
+coordinate: "secret · 7/descent · 48f2642e"
+contentUuid: "6176cdbb-b06d-5e44-9b15-bba82cc08e1c"
+diamondUuid: "fa7c23e8-6452-8e5e-a012-b1205bd1d156"
+uuid: "48f2642e-020a-88da-961f-c7535ca0fa25"
+horo: 7
 typography:
   partition: secret
   bondDegree: 31
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "b4f24972-4569-8b75-8684-45e2c39a8ca0"
+  computationUuid: "dd72084e-253c-899e-8d8e-e410d904313a"
   stages:
     - stage: path
       stageUuid: "69df74c1-cc11-8dc3-bb61-9c55f22fe829"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "a0b9bf89-aaea-8c03-b543-6e61a49dae52"
     - stage: horo
-      stageUuid: "b2024c1e-5dd6-8f4b-8517-736ecd7aa973"
+      stageUuid: "75879d7f-e3f7-839d-bd60-8cd72977afd8"
     - stage: seal
       stageUuid: "a1e7e5e6-b628-8c5a-b3ea-21251d58227c"
     - stage: uuid
-      stageUuid: "e9cc6d23-4e6b-80ff-b376-29d300affad2"
+      stageUuid: "0c556352-c7ac-8d83-8fa9-e1a0228a4c18"
 version: 2
 ---
 # secret — sealed at rest; decrypt iff uuid proves identity

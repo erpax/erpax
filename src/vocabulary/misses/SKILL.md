@@ -2,10 +2,10 @@
 name: misses
 description: "Use when reasoning about misses as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/misses"
-coordinate: "vocabulary/misses · 1/base · 3ee75c23"
-contentUuid: "ffbd6fb7-f501-5924-8229-b7dbdb670b93"
-diamondUuid: "1d58ce37-470a-83ad-827d-572cea0b1cdc"
-uuid: "3ee75c23-9a71-8f4c-a9f3-09c6915c84c2"
+coordinate: "vocabulary/misses · 1/base · 57253568"
+contentUuid: "55205657-7a29-5754-9e9c-b2082d6887e4"
+diamondUuid: "3df94d1f-82f7-8689-813f-f7e9d92f13c8"
+uuid: "57253568-3405-8626-b7dd-4b967e4b0cc4"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5ab2342a-9a8f-8179-9bde-140024701daa"
+  computationUuid: "629eee9e-e0b9-8243-a22b-beaa822187f5"
   stages:
     - stage: path
       stageUuid: "9f23337c-144e-89e1-82e5-d6f67b4b4cf1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dd0eb491-5377-843d-bc35-ef4d1b2c1cc8"
     - stage: horo
-      stageUuid: "536cacd1-733f-8a85-a8d6-e2eca909dbfa"
+      stageUuid: "d9b72089-1876-8fbf-be5c-0a19dd585731"
     - stage: seal
       stageUuid: "6d6bb993-f97b-886b-afb5-465dc39e185f"
     - stage: uuid
-      stageUuid: "806b8e65-58a5-8413-9d1d-b119fa5c9190"
+      stageUuid: "1312392f-afa5-8053-b822-d7f7906e7cc1"
 version: 2
 ---
 # misses

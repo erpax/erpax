@@ -2,11 +2,11 @@
 name: calories
 description: Use when reasoning about calories — The number of calories.
 atomPath: "vocabulary/calories"
-coordinate: "vocabulary/calories · 2/share · 674709c4"
-contentUuid: "3240e20d-41b7-5283-9c7a-28e97d1d6cd7"
-diamondUuid: "6393263c-f6a4-8cb4-b1ea-091514d6ffb1"
-uuid: "674709c4-85e8-8a5f-b8a2-10dd030aec70"
-horo: 2
+coordinate: "vocabulary/calories · 8/crest · d7b8c5be"
+contentUuid: "f5573c39-27fe-5a70-8404-e464143b289e"
+diamondUuid: "b6839add-f43d-814e-9f98-cddfa4930e81"
+uuid: "d7b8c5be-a861-80ef-9573-34a9057ce213"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "65518ef6-ad25-837e-9f5a-7134c04ac79c"
+  computationUuid: "05b1882d-75ab-8c10-b81d-939b92b2d38d"
   stages:
     - stage: path
       stageUuid: "d3b8288c-5e27-8522-a45b-cd515681bf2a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e2edc0f9-6cce-8882-9ef5-5434a8df5a92"
     - stage: horo
-      stageUuid: "33a98ad6-3ccc-8bbf-8550-cc4f31111a03"
+      stageUuid: "6f40ffad-0ed5-818e-8fa3-a573d3bec384"
     - stage: seal
       stageUuid: "0fcfe1f5-0c4b-8525-8325-f4a346ff2cd8"
     - stage: uuid
-      stageUuid: "889502e4-2708-8c27-8623-b8ef848f5e76"
+      stageUuid: "0d77def1-4f41-8ab2-bd70-1a8e8d19b909"
 version: 2
 ---
 # calories

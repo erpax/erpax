@@ -2,11 +2,11 @@
 name: endpoints
 description: "Use when reasoning about the users collection's custom REST endpoints."
 atomPath: "users/endpoints"
-coordinate: "users/endpoints · 5/round · 696a4f75"
-contentUuid: "3fbb05c0-d5c4-5d78-9caf-4ab490c413c3"
-diamondUuid: "22f8ac34-e47e-83be-98d9-e0646385d1cd"
-uuid: "696a4f75-7d9e-8a89-9a13-146b2e142b65"
-horo: 5
+coordinate: "users/endpoints · 7/descent · d40e1cbb"
+contentUuid: "16cf88db-54a0-58ad-94ab-cf752f24b275"
+diamondUuid: "473991eb-59a5-83ea-bc70-76254fda5992"
+uuid: "d40e1cbb-59a1-8d8a-afb7-a5632ddad710"
+horo: 7
 typography:
   partition: users
   bondDegree: 11
@@ -14,7 +14,7 @@ standards:
   - "OWASP-ASVS"
 bindings: []
 signatures:
-  computationUuid: "9b7624ca-0561-8190-bdb3-487ad51fe27d"
+  computationUuid: "5cab3e2f-c369-8d87-a2f3-8995ff77acef"
   stages:
     - stage: path
       stageUuid: "33be8ba1-caa9-88ec-a631-f5a4ded8d8ac"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9a18958f-5c57-8ecc-bbfa-a0bfad3e5d01"
     - stage: horo
-      stageUuid: "0fa4fe3c-15cf-87a0-befa-a7a630ff5080"
+      stageUuid: "4d67c677-f8c4-8cfa-8493-639b7244442e"
     - stage: seal
       stageUuid: "82a6be88-1748-83f5-ae19-a3d6d374aadc"
     - stage: uuid
-      stageUuid: "aa01c8c0-e0c4-83c1-ad76-fcc71b390f26"
+      stageUuid: "0d01509e-b3d1-8ad1-b88a-787c05a3d47b"
 version: 2
 ---
 # users/endpoints

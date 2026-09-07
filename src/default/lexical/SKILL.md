@@ -2,11 +2,11 @@
 name: lexical
 description: "Use when reasoning about lexical — is the base rich-text feature set every editable field shares, including the link validation rules: an internal reference resolves against a collection, an external one must be a…"
 atomPath: "default/lexical"
-coordinate: "default/lexical · 2/share · 1c2de2b3"
-contentUuid: "ea66018a-afb6-58b5-86f2-fc1fc7702962"
-diamondUuid: "97888688-f621-8a97-ba43-934274ca13dd"
-uuid: "1c2de2b3-0f49-838f-9f96-07985b95999a"
-horo: 2
+coordinate: "default/lexical · 5/round · 24b8134e"
+contentUuid: "34e30b03-7047-59e6-b932-7c1e3e8e16cb"
+diamondUuid: "e198cb03-1ac7-85bc-a2f3-679fd263d67e"
+uuid: "24b8134e-2f72-8611-a37f-628fc087c66c"
+horo: 5
 typography:
   partition: default
   bondDegree: 27
@@ -22,7 +22,7 @@ standards:
   - schema.org HTMLRichText
 bindings: []
 signatures:
-  computationUuid: "b6b7ca0c-5d37-801e-9b49-f93c38c1cb16"
+  computationUuid: "781c9e31-47ed-83ab-b133-c12f58bb75b7"
   stages:
     - stage: path
       stageUuid: "ad6ce2b8-cbfb-879a-b292-c4d2c596ae72"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "d4dda2f1-f95d-83c1-a0ca-8188a9e3d95b"
     - stage: horo
-      stageUuid: "50ded0fe-47a3-8c47-bef5-efeeeaa2b96f"
+      stageUuid: "9c85f0c6-6596-8e17-bc67-f0d1bfb9e57f"
     - stage: seal
       stageUuid: "242f4f3f-7ed2-8b3a-a3bf-76639ac4dd28"
     - stage: uuid
-      stageUuid: "20ebd111-5f7c-817f-9228-81f48d686324"
+      stageUuid: "3414d031-a24c-8ddf-a376-c113846880d4"
 version: 2
 ---
 # default/lexical — one editor configuration, so a link means the same thing on every surface

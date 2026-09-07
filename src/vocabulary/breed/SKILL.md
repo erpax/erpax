@@ -2,18 +2,18 @@
 name: breed
 description: "Use when classifying an animal by its genetic type — the breed (Angus, Holstein, Yorkshire), a genetically distinct sub-population with stable heritable traits, recorded in a breed registry with pedigree; and breeding (mating selection, AI, gestation). The animal-genetics classifier — distinct from taxonomy (the crop-variety tree)."
 atomPath: "vocabulary/breed"
-coordinate: "vocabulary/breed · 2/share · 36059eff"
-contentUuid: "20b0545a-1d24-5f18-8076-12f6bb2abf2f"
-diamondUuid: "d91e0a36-2584-83ce-ab2f-459d3d6f4ced"
-uuid: "36059eff-66e7-8ebf-95ce-9434e59862df"
-horo: 2
+coordinate: "vocabulary/breed · 7/descent · c5e81ad0"
+contentUuid: "a673afa4-4987-57b0-b37e-4f74cc41c58e"
+diamondUuid: "9ba54dd2-4df3-8309-b687-1e3c66a45a13"
+uuid: "c5e81ad0-8d5c-8a03-866c-9f7ff63590f6"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 41
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ce0e3beb-dda8-8309-816e-f2c1d6aff271"
+  computationUuid: "cbac29a2-ee3f-82f8-a849-4694fc5632e1"
   stages:
     - stage: path
       stageUuid: "02507ee6-036a-82ee-acf8-32f5f175bf36"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2f0c8a70-5cf4-82e9-97c6-ba68c8985dca"
     - stage: horo
-      stageUuid: "33ab1623-3994-860d-94cd-402da4a36d59"
+      stageUuid: "8a5a10b2-4e6e-8512-8319-e5652631208c"
     - stage: seal
       stageUuid: "16d2de29-48aa-88f4-a3e3-67fc8736d11c"
     - stage: uuid
-      stageUuid: "ace5cba9-51e3-8b2a-838a-3805b783437a"
+      stageUuid: "f05b11ef-4dd0-8ddd-98be-ca6ed2573253"
 version: 2
 ---
 # breed — the animal's genetic type; the breeding selection

@@ -2,11 +2,11 @@
 name: enhanced
 description: "Use when reasoning about enhanced as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/enhanced"
-coordinate: "vocabulary/enhanced · 4/weave · c538256c"
-contentUuid: "e3b3f396-21ad-5766-94a7-5c9a0bbf0f6a"
-diamondUuid: "7b4d651a-a50e-8645-bf3a-728a0950fe6a"
-uuid: "c538256c-cb39-8a86-9778-2e396f171d89"
-horo: 4
+coordinate: "vocabulary/enhanced · 8/crest · cfe22ebb"
+contentUuid: "a8911b40-d35d-5923-bcb3-d15187ef4b3d"
+diamondUuid: "87e97e6a-10a6-8ff7-8cd2-2a37358212d2"
+uuid: "cfe22ebb-422c-8e75-9c9c-c2cde645ea5e"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2a0bf928-e6e3-871a-965a-1e7b4774a6e5"
+  computationUuid: "03973cb6-3b27-8991-8e14-48fcd8b48e07"
   stages:
     - stage: path
       stageUuid: "cd8f7ead-4bbb-8387-a375-acbcd239ad5a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b635710d-724f-8946-9f77-d187aa03453a"
     - stage: horo
-      stageUuid: "5e402f70-58a4-83d2-9526-5496bd829fef"
+      stageUuid: "87db5615-f002-8087-89b1-102e4b597fb6"
     - stage: seal
       stageUuid: "fa777139-6133-8bf5-975d-75f8afff3095"
     - stage: uuid
-      stageUuid: "c05ce6d3-c366-8fd0-9d26-04e1f9a377fb"
+      stageUuid: "584d4719-2340-81aa-913c-2bc2864c04f8"
 version: 2
 ---
 # enhanced

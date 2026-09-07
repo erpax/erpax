@@ -2,11 +2,11 @@
 name: attendee
 description: Use when reasoning about attendee — A person or organization attending the event.
 atomPath: "vocabulary/attendee"
-coordinate: "vocabulary/attendee · 4/weave · cbd3930c"
-contentUuid: "2182adde-b32d-56a0-a033-cf303efdd6cd"
-diamondUuid: "6fd32c5e-3d6a-89f2-9f8c-5ef688a18a49"
-uuid: "cbd3930c-4389-8dc1-beff-7033b4182b7c"
-horo: 4
+coordinate: "vocabulary/attendee · 7/descent · 55e65658"
+contentUuid: "bf22be35-36c0-5894-a539-d2a6738d493b"
+diamondUuid: "ae0a13b6-fb5c-8327-98ea-9316e03e8e3c"
+uuid: "55e65658-e949-8a27-8626-470680cf2dcb"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e0685fe6-f9aa-851f-a7eb-990d17d485de"
+  computationUuid: "ce685554-a38e-8270-b6a9-7c5c0c2ca4c3"
   stages:
     - stage: path
       stageUuid: "a9d85917-e0ad-89d4-9d5b-c75c4c4bf157"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d628f419-6405-8068-ae86-cea81e144de6"
     - stage: horo
-      stageUuid: "3d46af44-92c6-89d9-9760-0200d3a396f4"
+      stageUuid: "85dcc36e-5aea-8808-b841-4788f04c4869"
     - stage: seal
       stageUuid: "24eea958-4351-8a05-88c4-5ac553efc15d"
     - stage: uuid
-      stageUuid: "8cf744c9-0e3b-88ca-a70c-9c8e43e023ff"
+      stageUuid: "8839ef88-310e-815f-98c2-83bc402ec2ba"
 version: 2
 ---
 # attendee

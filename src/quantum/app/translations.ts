@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "app",
-    "uuid": "c055d0be-a6b3-8454-9382-1fc49ae4fb7a",
+    "uuid": "8ce53628-a035-830a-9d0c-8e115f10fe32",
     "words": [
       "app"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax as a device of apps — every atom IS a quantum app (a content-uuid identity, entangled links, collapsible by merge); the proof is that every matrix node carries a content-uuid.",
-    "uuid": "61e017cf-0467-8283-ab57-a3fe39f715fc",
+    "uuid": "5eadb7f7-7869-852d-8d73-e7cac773aa13",
     "words": [
       "use",
       "when",

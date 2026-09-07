@@ -2,10 +2,10 @@
 name: element
 description: Use when reasoning about an identity element.
 atomPath: "identity/element"
-coordinate: "identity/element · 9/unity · e841a7aa"
-contentUuid: "17e05e9b-2107-5f0a-a201-13bc35af691a"
-diamondUuid: "520503d2-ea39-8174-b32d-ad85310b4eb3"
-uuid: "e841a7aa-f56f-8279-a742-2bc0c05f13d8"
+coordinate: "identity/element · 9/unity · cd62c6a6"
+contentUuid: "bd087982-7fbb-5ba0-a41b-9c6264d00ab8"
+diamondUuid: "7a6804a6-75d9-872d-8a7a-d05759da95e9"
+uuid: "cd62c6a6-c211-8e4d-a9a8-f4d679b3510a"
 horo: 9
 typography:
   partition: identity
@@ -17,7 +17,7 @@ standards:
   - RFC 9562 §5.8 uuidv8 (uuid construction)
 bindings: []
 signatures:
-  computationUuid: "baaa9710-aade-85a4-8b87-db709469523f"
+  computationUuid: "882279bd-686a-8625-b9ab-6cbecc5f28ea"
   stages:
     - stage: path
       stageUuid: "ccdffa95-e613-82e5-804e-cbabefd2d97d"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "b3e0d740-15ae-87de-a5cc-3b026971f554"
     - stage: horo
-      stageUuid: "5eca9b83-256f-8bf3-a05d-52373f4af163"
+      stageUuid: "362e0a3a-f9f9-8b9b-b72b-32fa984ecb85"
     - stage: seal
       stageUuid: "a364741e-3988-8e92-a70a-a1c4b29a8982"
     - stage: uuid
-      stageUuid: "ead7eca3-9a4b-8ae4-a7e5-fb4835e146ed"
+      stageUuid: "7f6fd222-0deb-8b3c-8859-ee058ff77330"
 version: 2
 ---
 # identity/element

@@ -2,10 +2,10 @@
 name: orders
 description: "Use when executing FM work — corrective/preventive/predictive maintenance, statutory inspections, refurbishments — tracking parts issued, labour hours, vendor cost, IAS-16 capex/opex classification, permit-to-work, failure codes, and GL journal-entry on completion. The CMMS work-order execution register per ISO 55000."
 atomPath: "maintenance/work/orders"
-coordinate: "maintenance/work/orders · 5/round · 78838aac"
-contentUuid: "a2e1c1f7-aa29-57cf-821f-c7f9bc898162"
-diamondUuid: "6b5e528a-38b5-83ac-93c8-f6bae2d8243e"
-uuid: "78838aac-985b-8569-af0f-c13e997d2062"
+coordinate: "maintenance/work/orders · 5/round · 4a76ac3c"
+contentUuid: "4ab29135-d4d8-5548-9876-b9fa18519b90"
+diamondUuid: "50ec6fee-bffe-8f1d-95ba-b9611fe3f9f4"
+uuid: "4a76ac3c-cf27-8048-afc7-3e60ba52f756"
 horo: 5
 typography:
   partition: maintenance
@@ -32,7 +32,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "476814cb-8527-8cfc-b1fa-acec8125f927"
+  computationUuid: "4a3849ef-d472-8176-bc2d-7eb851d0867d"
   stages:
     - stage: path
       stageUuid: "c6a956bb-34cd-84a7-b807-39badf6e89da"
@@ -43,11 +43,11 @@ signatures:
     - stage: links
       stageUuid: "afa49f3d-cc19-8e84-99cd-a1f133da0d11"
     - stage: horo
-      stageUuid: "f7542014-08d6-8d7c-9450-6b00cd13e9cd"
+      stageUuid: "50f28982-0d77-8f3e-ab94-8ab6b7563136"
     - stage: seal
       stageUuid: "fd8140a2-dc6f-82f2-ae3f-e9d01a693246"
     - stage: uuid
-      stageUuid: "49ff3374-56e8-8604-868d-6ce4cda41d40"
+      stageUuid: "423cedd0-d578-8ed2-82b2-1f98a78e791a"
 version: 2
 ---
 # maintenance-work-orders

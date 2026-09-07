@@ -2,11 +2,11 @@
 name: alumni
 description: Use when reasoning about alumni — Alumni of an organization.
 atomPath: "vocabulary/alumni"
-coordinate: "vocabulary/alumni · 7/descent · 9c872dab"
-contentUuid: "c38fb09e-91a6-5c13-9d47-2b3cb086fffa"
-diamondUuid: "8faeee19-e0d2-8adb-b98a-9de4133b1f67"
-uuid: "9c872dab-6a8c-8802-bf1c-3d29e8a2fddd"
-horo: 7
+coordinate: "vocabulary/alumni · 8/crest · efd6bc51"
+contentUuid: "b5bba90d-f379-5bd1-9aab-6f314be77d8b"
+diamondUuid: "5285ff6f-1903-8281-8482-07d069bcc057"
+uuid: "efd6bc51-f4ba-8a33-aa53-91fb77ee4e14"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a6a98db0-cdf9-8398-8e3a-e5aa2b85c379"
+  computationUuid: "e8b0fa04-a4dc-8769-8201-53184bb8411d"
   stages:
     - stage: path
       stageUuid: "924bd2a4-552b-81d6-9277-eb7eef1b3630"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0d1eb313-a9a7-8c51-bd2f-d15df271caa0"
     - stage: horo
-      stageUuid: "f278c5ff-5064-86f9-babc-ef4df9cc5bd4"
+      stageUuid: "8f3048a4-7ab7-8375-be73-78db9625a95d"
     - stage: seal
       stageUuid: "d1d2a398-9529-83ca-b329-40e257961ead"
     - stage: uuid
-      stageUuid: "6e59f811-5d0d-8b72-8aed-09c18522018b"
+      stageUuid: "282c9792-a71d-80fe-8e7b-0593c8356b68"
 version: 2
 ---
 # alumni

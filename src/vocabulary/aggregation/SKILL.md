@@ -2,10 +2,10 @@
 name: aggregation
 description: "Use when computing summarized metrics — GROUP BY semantics, rollup/cube hierarchies, dimensional analysis, summary statistics (sum, count, avg, min, max, percentile), pre-computed aggregates vs on-demand queries."
 atomPath: "vocabulary/aggregation"
-coordinate: "vocabulary/aggregation · 5/round · cb7c19a8"
-contentUuid: "f2cde1b2-f279-52da-8d8c-4fa5eacc89e7"
-diamondUuid: "2f7dbb64-b912-8e27-991c-01e6c3bf1675"
-uuid: "cb7c19a8-f567-837c-b921-dfebdc0e96b4"
+coordinate: "vocabulary/aggregation · 5/round · a0fd1721"
+contentUuid: "54be72c6-c80c-5221-870a-f22074945ef2"
+diamondUuid: "df0218f4-7029-8dc0-9711-35f8aff5320a"
+uuid: "a0fd1721-d908-8cee-bee4-410892233fd6"
 horo: 5
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "aa32361a-ef0d-8489-9f86-1eac35783518"
+  computationUuid: "247aacd5-1ae0-82db-86f1-a1b967b17ffd"
   stages:
     - stage: path
       stageUuid: "b9f105a3-acd7-8f6b-9eba-94fae8cd355c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "6b104238-3bc2-8c22-b1d9-a484b233582f"
     - stage: horo
-      stageUuid: "31c6adbe-9848-861f-8559-0ffaa2b9ade0"
+      stageUuid: "32ddc6d6-976b-88af-9b22-aeae78e1644c"
     - stage: seal
       stageUuid: "2d3b70a8-1045-8705-93aa-0dcffac2776d"
     - stage: uuid
-      stageUuid: "694359b7-5d22-87ec-bb2d-e3a60b4e181b"
+      stageUuid: "8de46817-6658-8e5b-a782-842fb06b7785"
 version: 2
 ---
 # aggregation

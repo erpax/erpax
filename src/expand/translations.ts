@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "expand",
-    "uuid": "42698c64-d97a-814e-90e2-b4c7ec9c3936",
+    "uuid": "28637172-2e61-8370-9db7-5fd1e6b50d49",
     "words": [
       "expand"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the development EXHALE — adding a feature enlarges the corpus, and a larger corpus is more surface to wire (more atoms ⇒ more tamper-cost to be earned). expand measures that growth as added entropy, computed on the live matrix; it is gravity read in reverse — the word-chain spreading out, not the folders collapsing in.",
-    "uuid": "54eccaed-c48f-81ee-8d21-8574233a7a92",
+    "uuid": "5fadf6ec-7533-8518-b176-609be2c58c95",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "checkbox",
-    "uuid": "ab574299-e7df-872f-bc5d-c5f149db540e",
+    "uuid": "14f49b03-0c5d-8f90-9ae8-4ec41cd3b5cf",
     "words": [
       "checkbox"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about checkbox — 's returns an and expects a **native** input to fire it. The shadcn checkbox is a Radix button with — it fires , and the native event never happens.",
-    "uuid": "c522ff9e-2bc7-8b08-bfdf-5c83212ad088",
+    "uuid": "261b9d03-804f-8b04-8cd7-b12b99901738",
     "words": [
       "use",
       "when",

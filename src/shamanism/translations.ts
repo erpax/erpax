@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "shamanism",
-    "uuid": "8840a4b5-7968-8875-a208-023d2fa886d0",
+    "uuid": "27f15d4d-799f-8007-a313-d205c995b3ef",
     "words": [
       "shamanism"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading shamanism as a diamond of invariant atoms — the practitioner who crosses between worlds to heal, the wounded healer, the journey on the breath, the return with what restores the whole. The cross-dimension agent of the primal traditions. Strip the prefix and the journey collapses to the crossing between dimensions, the cure to mercy closing the gap.",
-    "uuid": "83ab9fe5-8523-8114-9b99-dfe23ea259c1",
+    "uuid": "9d18ea4b-68b0-8abe-a1f5-722b2e99566a",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: pickup
 description: "Use when a buyer collects pre-ordered goods at a point rather than having them delivered — the CSA pickup/drop site, on-farm pickup, host-site/neighborhood pod, and the generic click-and-collect (BOPIS) locker. A collection node in distribution: the seller aggregates to a point, the buyer covers the last mile — lower cost than home delivery, at the buyer's travel friction."
 atomPath: "vocabulary/pickup"
-coordinate: "vocabulary/pickup · 7/descent · 1cca40d8"
-contentUuid: "2e4048e8-cd36-5886-af70-407021e52062"
-diamondUuid: "2a32eda1-9c5f-8d08-9cf2-fe02a70dc3c9"
-uuid: "1cca40d8-3479-8ab0-b5ea-dec9729f20a2"
-horo: 7
+coordinate: "vocabulary/pickup · 2/share · 73bb3bc9"
+contentUuid: "9fd02384-7a0f-53ed-9c78-9718e12956e5"
+diamondUuid: "4a0ae322-9d96-8f2d-a6da-771273536062"
+uuid: "73bb3bc9-8703-8f86-85ff-07790f6d0aa2"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 35
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b2e63cd7-4a6e-868a-9255-9ed948f65808"
+  computationUuid: "8673e163-0c03-8472-ba2a-d5711f8e279c"
   stages:
     - stage: path
       stageUuid: "582d591b-3881-8437-9356-806234339c23"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "bd43c8d7-a2e4-8254-8a6d-92782bb263c9"
     - stage: horo
-      stageUuid: "4d117fb9-78ce-8a5a-9876-7f20c03ad8b2"
+      stageUuid: "76be6a6f-ca3c-8475-af9c-7d64900841df"
     - stage: seal
       stageUuid: "20e5b400-c4ab-81bf-aa62-704047cac2f5"
     - stage: uuid
-      stageUuid: "5aa8deca-6ce2-8ec8-ab61-6ac144b28a37"
+      stageUuid: "639d659d-8512-8a0a-a16c-29b9412be78c"
 version: 2
 ---
 # pickup — the buyer-collection point in distribution

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mesh",
-    "uuid": "c077be27-91bb-87e2-be33-4a741e13b55a",
+    "uuid": "669bad9f-394e-8807-aa78-4d99f7a2144f",
     "words": [
       "mesh"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when querying the whole ERP as one graph — atoms ⊕ parsed import edges ⊕ standards citations, wave-schedulable; the clause→code trace as a query.",
-    "uuid": "a695e5bf-558d-88ff-ab2e-1812df51c763",
+    "uuid": "2ab1d1e9-408b-84b5-aa5e-d53a8a9e1c08",
     "words": [
       "use",
       "when",

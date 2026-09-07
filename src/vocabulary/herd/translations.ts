@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "herd",
-    "uuid": "cdcee02a-4bbf-84aa-8fea-7273d8e97fea",
+    "uuid": "a609a1a9-0100-87b7-82f7-56dd171557ac",
     "words": [
       "herd"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a managed group of animals is the unit of aggregation — the herd (cattle/swine), flock (sheep/poultry), drove or mob; one production and accounting unit holding many animals. The livestock twin of lots/cohort: animals grouped, moved, grazed, and measured together.",
-    "uuid": "163ae383-a6b6-83d1-bd29-58811587354b",
+    "uuid": "e63f6eab-0b31-8c56-bbb7-10b556eaae7d",
     "words": [
       "use",
       "when",

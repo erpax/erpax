@@ -2,11 +2,11 @@
 name: plugin
 description: "Use when modelling one plugin — the singular model of the plugins collection (the plural store); a self-contained module that extends the platform. AND when naming the host-extension deployment face of a diamond — Payload plugins, Cursor hooks, VitePress plugins, MCP extensions."
 atomPath: plugin
-coordinate: "plugin · 8/crest · 0c1c8e0d"
-contentUuid: "cb05f5ea-8a6f-5b95-bc93-1a5a65fcb215"
-diamondUuid: "2c4a1f62-2e0e-867e-b1fe-b52e3dac23fa"
-uuid: "0c1c8e0d-8a40-8f5d-9290-355ccc0e7ccf"
-horo: 8
+coordinate: "plugin · 4/weave · f3aad67c"
+contentUuid: "29f978c2-bf62-580c-ac01-b05d774674dd"
+diamondUuid: "9b44bbac-d501-8ad4-830b-b449801f1564"
+uuid: "f3aad67c-30ee-8cd1-990b-ede0db19f354"
+horo: 4
 typography:
   partition: plugin
   bondDegree: 47
@@ -15,7 +15,7 @@ standards:
 bindings:
   - "services/WORKER_SELF_REFERENCE"
 signatures:
-  computationUuid: "9635b0e3-c7a4-8015-8df9-af58287eea4a"
+  computationUuid: "77821a19-ae87-840e-9f3a-10cb4798596b"
   stages:
     - stage: path
       stageUuid: "6759ee9d-26e8-8a92-8233-cd3bf0079ee4"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "0259dd05-348e-8c3a-a1c1-4dcc49974cda"
     - stage: horo
-      stageUuid: "7e174325-3aba-838e-9138-7f459ec06312"
+      stageUuid: "90633426-02f6-80a7-8e85-3a631660f119"
     - stage: seal
       stageUuid: "43b86f87-1106-8e2a-a706-dd1cf130f989"
     - stage: uuid
-      stageUuid: "94165bc5-7279-8186-938a-c17178843eff"
+      stageUuid: "4be847dd-a067-8627-b5f3-bb01b26cded2"
 version: 2
 ---
 # plugin — the model of one [[plugins]] row

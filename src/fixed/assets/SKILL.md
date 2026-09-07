@@ -2,10 +2,10 @@
 name: assets
 description: "Use when managing capitalized PP&E — registering assets (land, buildings, equipment, vehicles, software, intangibles), configuring depreciation method and useful life, computing depreciable base and book value, tracking disposals and maintenance, mapping GL accounts for asset/accumulated-depreciation/expense lines. The IAS-16 asset-master node."
 atomPath: "fixed/assets"
-coordinate: "fixed/assets · 1/base · 8ded4c10"
-contentUuid: "d7d32ce6-2432-53b9-b051-20b1f49af429"
-diamondUuid: "5db64497-014b-8a38-b480-d4745ee383da"
-uuid: "8ded4c10-f138-8048-b812-ba5b392e4f1c"
+coordinate: "fixed/assets · 1/base · c21fabb1"
+contentUuid: "af25f0b1-109e-513a-a3c9-d7d3ba1c71bd"
+diamondUuid: "3771cd87-df24-836e-b52c-7117dd60b34a"
+uuid: "c21fabb1-36e5-8bd4-9a28-59f98327af28"
 horo: 1
 typography:
   partition: fixed
@@ -22,7 +22,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "f583f856-d32a-8fbc-9608-721a707bb48d"
+  computationUuid: "ceabd5e1-1c61-8648-905f-70605e94a8ca"
   stages:
     - stage: path
       stageUuid: "96a851c1-4e41-81ca-8427-849132e6aa4d"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "f65dabcc-3a9f-82ae-8b02-6b8c71f112f9"
     - stage: horo
-      stageUuid: "4179f9a6-5ef9-8cc8-af33-2fa70efe1e40"
+      stageUuid: "520a4461-fccd-850c-962a-055a5deaa8bf"
     - stage: seal
       stageUuid: "27556568-407f-8875-8caf-c1a8e68d41d6"
     - stage: uuid
-      stageUuid: "b1025735-d4fa-839d-9fa8-250366d55fe8"
+      stageUuid: "d3845939-ed89-8661-bd8d-3f0d92c10077"
 version: 2
 ---
 # fixed-assets

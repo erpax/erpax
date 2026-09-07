@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "inactive",
-    "uuid": "d062eb9f-092b-8519-b31b-2b6861a59afe",
+    "uuid": "2a11bdaf-6e55-8a0e-9c29-5b861673d919",
     "words": [
       "inactive"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about inactive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "af7df41b-69f9-8f40-b472-e139d9c02993",
+    "uuid": "6250c9d7-fdb8-8fe7-81d0-4b9c3593354d",
     "words": [
       "use",
       "when",

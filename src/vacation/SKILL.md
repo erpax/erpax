@@ -2,11 +2,11 @@
 name: vacation
 description: "Use when reasoning about vacation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: vacation
-coordinate: "vacation · 4/weave · e905054c"
-contentUuid: "b0953f08-c579-5495-bda3-493984a9a36c"
-diamondUuid: "be1fbdd0-88e7-8cea-a5c8-b1e82c078291"
-uuid: "e905054c-bbd3-846f-bce7-24bae121be83"
-horo: 4
+coordinate: "vacation · 7/descent · 2e6770b8"
+contentUuid: "24e36ae2-509d-5565-8b34-b9c4745a849e"
+diamondUuid: "a41049fc-1c3c-8020-ab98-b0bb4762677f"
+uuid: "2e6770b8-cc4b-8203-b584-28d73e01ac54"
+horo: 7
 typography:
   partition: vacation
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "054fcc5d-fd3d-8b44-85f5-d2b6cafad771"
+  computationUuid: "66e759c7-d9dc-8df7-a9d5-fd79eff98e9d"
   stages:
     - stage: path
       stageUuid: "782243b3-7266-84be-aa70-741d39288b1d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "86d078f3-700c-86bb-8cd8-072412161a32"
     - stage: horo
-      stageUuid: "a8b74c5d-fd46-8097-966b-d16e5b40cad8"
+      stageUuid: "1b96a794-ae2f-8b24-8e99-c21cd0d31aa4"
     - stage: seal
       stageUuid: "5be11513-a829-8eae-b558-c444755f7d16"
     - stage: uuid
-      stageUuid: "4763d453-b95b-8c6f-b32a-b89ec896e9dd"
+      stageUuid: "4993e3ae-4872-8d69-a4b3-db44ac30853b"
 version: 2
 ---
 # vacation

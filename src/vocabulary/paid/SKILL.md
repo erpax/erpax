@@ -2,11 +2,11 @@
 name: paid
 description: "Use when reasoning about paid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/paid"
-coordinate: "vocabulary/paid · 7/descent · 12938134"
-contentUuid: "31d413bd-22ae-59c1-b096-0581f509238b"
-diamondUuid: "0dba0eac-8778-81a7-aed1-81852f35e077"
-uuid: "12938134-ba95-8526-89c5-c3a21e4f87bf"
-horo: 7
+coordinate: "vocabulary/paid · 4/weave · cf7f5f76"
+contentUuid: "c3086157-1536-527a-9704-2393a210ffa1"
+diamondUuid: "6eb4377e-939d-8d58-b0d0-e3f3acbff206"
+uuid: "cf7f5f76-8d90-8e22-ae9c-5269eed9bf0f"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4935e82b-a32b-8f57-8950-bfc61857d011"
+  computationUuid: "bc877bd3-4ab0-8691-b6da-03602b02e2c4"
   stages:
     - stage: path
       stageUuid: "2b94f7d0-cb99-85e3-bf1d-324766a02806"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d18f98df-8262-8b44-bed2-5e628ae8d12a"
     - stage: horo
-      stageUuid: "050413ea-1b4b-8616-9cbf-95c9b816beb7"
+      stageUuid: "7ae308dd-381d-8c66-bae6-f0f7a4fb1796"
     - stage: seal
       stageUuid: "54801c40-fa29-88b7-ba2c-1e9918fa9e3b"
     - stage: uuid
-      stageUuid: "3f22aa67-a0ff-8c87-899e-7bb37ce0e729"
+      stageUuid: "31b497a6-2b14-8032-934f-fd95166baa9b"
 version: 2
 ---
 # paid

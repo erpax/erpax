@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "shareds",
-    "uuid": "ba787db0-bff1-8b43-8f75-775a57aa405e",
+    "uuid": "12c24667-b8d2-8257-8477-df5719b57111",
     "words": [
       "shareds"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about shareds — **Law — law: barrel re-export at ; trinity sealed for import purity.**",
-    "uuid": "8f90a9d9-934c-840f-b0a6-a3dd1d1e7e5b",
+    "uuid": "c1e7eb42-ec0a-8fbf-81b5-bc95ba59f157",
     "words": [
       "use",
       "when",

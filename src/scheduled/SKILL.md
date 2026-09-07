@@ -2,11 +2,11 @@
 name: scheduled
 description: "Use when reasoning about scheduled as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: scheduled
-coordinate: "scheduled · 7/descent · 37ea177e"
-contentUuid: "c97eab68-c66d-59a2-a163-ceed65241412"
-diamondUuid: "c660592a-d381-8c5c-b677-11057a1b41aa"
-uuid: "37ea177e-e7d4-8be4-82ae-3d5e93a72ad7"
-horo: 7
+coordinate: "scheduled · 2/share · 78405d81"
+contentUuid: "310b0de9-1098-5daa-8920-5b542bf80f39"
+diamondUuid: "a8717d43-b4e5-8812-8eca-a2ddca164a9b"
+uuid: "78405d81-5004-815d-9e27-9979e63ff910"
+horo: 2
 typography:
   partition: scheduled
   bondDegree: 21
@@ -15,7 +15,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "344fe07f-b77c-86e9-a82d-915ce35bc51a"
+  computationUuid: "85799619-f611-8c25-a8db-8aaa69ee8c2f"
   stages:
     - stage: path
       stageUuid: "3fd24a8f-cda0-893f-a4ca-861e8f528e3e"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "ee56c5c4-f0a2-85cc-9284-29815316695e"
     - stage: horo
-      stageUuid: "d75785e4-5049-86d8-bfbc-5b85770b4dbd"
+      stageUuid: "60ecb2fc-dae2-8360-acac-341123d0e105"
     - stage: seal
       stageUuid: "2ce6a390-5565-8dbb-b77e-a8a52dba0d5e"
     - stage: uuid
-      stageUuid: "5190d31f-26a1-8038-9113-8cc0ad97ad27"
+      stageUuid: "28dae1da-3deb-8357-a821-e3b1f00e2d86"
 version: 2
 ---
 # scheduled

@@ -2,11 +2,11 @@
 name: react
 description: "Use when reasoning about react as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/react"
-coordinate: "vocabulary/react · 5/round · 50c478a2"
-contentUuid: "e39efaf6-88a6-5020-b35a-009ba6c6aaaf"
-diamondUuid: "168f117f-170c-8d38-afef-594e6b81b3d3"
-uuid: "50c478a2-b1ae-848c-b725-6d3272d4277e"
-horo: 5
+coordinate: "vocabulary/react · 8/crest · 9563489d"
+contentUuid: "6c52abe1-b4cb-50e9-804b-59a8916a34b9"
+diamondUuid: "4d428157-216c-886a-9e38-756851fea9cc"
+uuid: "9563489d-fc10-81c0-aa7c-8354d4e36281"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "613ebb12-0a64-8ed7-86d2-31d3358794b7"
+  computationUuid: "e57f1d19-ee0d-886c-b5e9-194dc0208283"
   stages:
     - stage: path
       stageUuid: "7c0899eb-9efe-8b98-8fab-384b2de117de"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f7d9e038-a2f2-84aa-8450-8c5005638865"
     - stage: horo
-      stageUuid: "7b899376-8028-8751-96f4-260b759b600f"
+      stageUuid: "3ca368df-3ed1-8f1d-bee5-97cbc3bb240e"
     - stage: seal
       stageUuid: "069e1c41-0f81-8d3e-9dc0-d4e3d91a5369"
     - stage: uuid
-      stageUuid: "3286c3f7-1802-8e09-96fa-23d3fa0dbe7a"
+      stageUuid: "91048852-2779-8a64-87ad-6b20a151576d"
 version: 2
 ---
 # react

@@ -2,11 +2,11 @@
 name: postings
 description: "Use when writing or querying individual debit/credit lines against a journal entry — source type (invoice/bill/payment/adjustment/revaluation), source date, GL account, amount, currency, and ISO-8601 posted-date auto-set on status → posted. The atomic GL line-item that enforces balanced-entry and SOX posting-timestamp requirements."
 atomPath: "journal/entries/gl/postings"
-coordinate: "journal/entries/gl/postings · 2/share · e06bd3e5"
-contentUuid: "33c33b25-e7b6-53e3-8b97-e484cac0aa80"
-diamondUuid: "f0281eaf-cc42-8772-a566-7f6f633fe1d7"
-uuid: "e06bd3e5-a8fa-80b8-ab22-ebbf97da53d5"
-horo: 2
+coordinate: "journal/entries/gl/postings · 7/descent · 987ad2b4"
+contentUuid: "5c185d1e-c73f-5704-8a71-64fe76c6598e"
+diamondUuid: "10e24a79-2e80-8692-8ddd-0cad93fdacbc"
+uuid: "987ad2b4-3c8d-88ff-b5ff-5b917ed27a8a"
+horo: 7
 typography:
   partition: journal
   bondDegree: 28
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "617e4ff5-c4f6-8dd3-9e7a-b8716c261fed"
+  computationUuid: "31ad6518-03af-8777-8554-0bb21d533cd5"
   stages:
     - stage: path
       stageUuid: "998d8052-9cfd-8254-8b5a-7d7c88b8c706"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "6ab9cac1-927f-8427-a632-d376e252d74f"
     - stage: horo
-      stageUuid: "ec287c97-c561-83af-a885-6dc26a75e33c"
+      stageUuid: "30868b31-f8fa-814e-a65b-a05dbd66cc68"
     - stage: seal
       stageUuid: "aabefbf6-f7cc-888f-a0ed-baedfca6fbb8"
     - stage: uuid
-      stageUuid: "1765fdd8-a0c0-888f-9fdc-22df307d8fa3"
+      stageUuid: "76c2ade4-c10e-873c-846f-2664ab3ec7ca"
 version: 2
 ---
 # gl-postings

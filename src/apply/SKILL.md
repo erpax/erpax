@@ -2,11 +2,11 @@
 name: apply
 description: "Use when reasoning about apply — A schema.org component word, collided out of schema.org compounds — fused from ApplyAction · directApply (sti · collapse · merge)."
 atomPath: apply
-coordinate: "apply · 2/share · 699c64c4"
-contentUuid: "577154de-9a7b-5cb7-80c1-e82cf0b03119"
-diamondUuid: "878d6a15-62d0-8fbb-b8b0-003b4e2cac98"
-uuid: "699c64c4-5ecd-8d0a-82af-afca7a8873d5"
-horo: 2
+coordinate: "apply · 1/base · e7289018"
+contentUuid: "fee89387-ba2b-500d-b80d-cb7b840fdda9"
+diamondUuid: "ab404dcb-e4d7-8288-abdd-11e3b998aae7"
+uuid: "e7289018-218f-8191-b1be-617de46c4b85"
+horo: 1
 typography:
   partition: apply
   bondDegree: 45
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fdc954b9-5c1f-8e6e-a891-d14bd9a7634b"
+  computationUuid: "0c92f188-7abc-84bb-8d9c-f6d0f50a38a1"
   stages:
     - stage: path
       stageUuid: "af7e02e8-820d-805e-abb4-f88a19d268b8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c3997c8c-f7b2-8ba0-9935-d0bac56466b9"
     - stage: horo
-      stageUuid: "a1268dd8-3d07-88d1-a527-39fe7cbbd1e1"
+      stageUuid: "3a3101b6-cce5-8818-ae3b-bfdb67a04f7d"
     - stage: seal
       stageUuid: "762eb5ae-7420-8f7d-84e8-2f0dabd2bcf9"
     - stage: uuid
-      stageUuid: "cd5fab0f-af05-8b90-b09d-7d7e1b879e2a"
+      stageUuid: "0f324169-a660-8e16-807e-a0979a35cade"
 version: 2
 ---
 # apply

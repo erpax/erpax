@@ -2,18 +2,18 @@
 name: stack
 description: "Use when managing call frames LIFO under the machine — executable stack nested under computer; distinct from top-level @/stack deployment palindrome."
 atomPath: "computer/stack"
-coordinate: "computer/stack · 8/crest · d336315d"
-contentUuid: "105418fe-d2e5-5cec-afe5-f7da745af531"
-diamondUuid: "18d5e9ef-4665-8a6e-986b-4bafe932f079"
-uuid: "d336315d-7e2b-8b91-b2fa-f30fabe8ff01"
-horo: 8
+coordinate: "computer/stack · 5/round · 526f5591"
+contentUuid: "3a3285dd-2fcc-5ec2-87ce-31e81fc241f5"
+diamondUuid: "94d5f5af-e877-8e5e-9f89-8c842b7e2d3d"
+uuid: "526f5591-6408-8095-b7aa-c52587407bd6"
+horo: 5
 typography:
   partition: computer
   bondDegree: 38
 standards: []
 bindings: []
 signatures:
-  computationUuid: "52ddc9f5-e3a2-8bed-af71-8858a47dc785"
+  computationUuid: "9a190993-4f4a-8226-a1e7-7549581046c4"
   stages:
     - stage: path
       stageUuid: "2e8ce108-e261-83ed-bda5-59958710ef73"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "6afe734d-26a0-8895-b252-07fdf6d822ea"
     - stage: horo
-      stageUuid: "e1acfc95-4aa9-8ad5-9c97-bad088196cda"
+      stageUuid: "95a52366-4a82-8b0c-a774-33ced373f335"
     - stage: seal
       stageUuid: "86fe91bb-8699-892c-9852-46a0132c517f"
     - stage: uuid
-      stageUuid: "ee4e8f76-6a4b-82f2-9283-4d783f4ea998"
+      stageUuid: "0440455b-1c3a-8f85-bdfa-b75c6f26b085"
 version: 2
 ---
 # computer/stack — LIFO call stack

@@ -2,11 +2,11 @@
 name: gate
 description: "Use when wiring the outward contracts into CI, pre-push or the release workflow — runs all twelve OFFLINE contracts (EU four, BG two, world six) plus the coverage ratchet and the contracted-endpoint resolve check, fail-closed. Offline by construction: it imports only the frozen-capture functions, so a correct erpax can never fail its release because an authority is rebooting."
 atomPath: "outward/gate"
-coordinate: "outward/gate · 7/descent · ccd64ba1"
-contentUuid: "3663ce38-c009-5817-abdc-0a7b2cb75212"
-diamondUuid: "4aa6b847-0540-8163-8c55-bbc163501a81"
-uuid: "ccd64ba1-245b-84fb-b96a-e0b457028f31"
-horo: 7
+coordinate: "outward/gate · 5/round · 80134ba8"
+contentUuid: "86e87a79-4b99-56c8-a912-c10620c1b6ee"
+diamondUuid: "5e884621-c0f7-8789-b4de-5f8c06703a96"
+uuid: "80134ba8-9978-80de-9aa9-c18863abe3c9"
+horo: 5
 typography:
   partition: outward
   bondDegree: 270
@@ -14,7 +14,7 @@ standards:
   - "ISO 19011:2018 §6.4 — audit evidence: the contract IS the evidence"
 bindings: []
 signatures:
-  computationUuid: "c774a88f-f5e1-87bc-8b60-617766fc0596"
+  computationUuid: "08496339-7da9-84ae-859f-1cd80e7987f3"
   stages:
     - stage: path
       stageUuid: "5beef5af-6b51-825d-b337-a5579440e6da"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d11480df-2eea-8e80-bca6-a0e103373205"
     - stage: horo
-      stageUuid: "7dd81bd0-b668-8f9c-9691-b4613e778945"
+      stageUuid: "66771d19-b649-8eed-bff6-4acdf8ebc7c3"
     - stage: seal
       stageUuid: "75c9f48b-bf68-8076-91ef-5085de3bae42"
     - stage: uuid
-      stageUuid: "5fe02eb6-91b7-8fef-ad3c-ed871eb3d23f"
+      stageUuid: "8c98702a-a816-8ba4-bcb2-4e9b2d5cd79c"
 version: 2
 ---
 # outward/gate — the release half of the split, fail-closed

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "transition",
-    "uuid": "8ff16e04-9911-8f7b-999e-6c4f388a6398",
+    "uuid": "bfb22e98-72e5-8527-9330-5e12b47772e5",
     "words": [
       "transition"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about transition — The AR hook ( ) and the AP hook ( ) both answer one question before emitting a domain event: *did this write CHANGE the document's liveness?* Both wrote , , and for themselves…",
-    "uuid": "969aa7d5-77c3-8aa8-8a19-1105e9f04149",
+    "uuid": "462a1eeb-686a-8000-8e7d-90978b86a264",
     "words": [
       "use",
       "when",

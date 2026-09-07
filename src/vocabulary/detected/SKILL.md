@@ -2,11 +2,11 @@
 name: detected
 description: "Use when reasoning about detected as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/detected"
-coordinate: "vocabulary/detected · 5/round · 8e4c76db"
-contentUuid: "85db0edf-2a2d-5560-a010-42334ea89cd4"
-diamondUuid: "dcf46ffe-6270-88e6-9100-d2bd5551b1c1"
-uuid: "8e4c76db-aba7-8b10-a883-c0d51b28b39b"
-horo: 5
+coordinate: "vocabulary/detected · 2/share · 93d12db7"
+contentUuid: "5a93c6c8-ee4c-5c37-b312-afc55aa51e97"
+diamondUuid: "9b0fa9fa-ee47-88a1-bbcb-3ab85a306262"
+uuid: "93d12db7-de47-8f2e-b7c5-8cbf1a6d6bfa"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d901ffae-b369-835f-953c-8d9f95410431"
+  computationUuid: "032452cf-54d1-8f22-8b23-d3cb388c3eb7"
   stages:
     - stage: path
       stageUuid: "685a002e-20a7-8e14-b961-aa240ebdb438"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "edae7979-ec90-879f-bbc8-2168d849d8af"
     - stage: horo
-      stageUuid: "6714c185-c40b-808e-a2c1-8f8852f0911f"
+      stageUuid: "85b5b2be-f5cb-8070-a89b-fd3644ca0f98"
     - stage: seal
       stageUuid: "b00ca3d1-cc45-87cd-b80e-46386538d35c"
     - stage: uuid
-      stageUuid: "f1766269-2246-8e84-99da-e85985ae47af"
+      stageUuid: "49ebc5d0-4f25-8258-afa9-1b5a6d4e7467"
 version: 2
 ---
 # detected

@@ -2,11 +2,11 @@
 name: seasonal
 description: "Use when reasoning about seasonal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: seasonal
-coordinate: "seasonal · 7/descent · 0c20ae30"
-contentUuid: "e4c7b547-2234-5e3b-be85-f9da70ad1f19"
-diamondUuid: "2e5726e9-3755-8f4a-8f6b-58f1a136d85c"
-uuid: "0c20ae30-229f-880a-aa89-6634af02410a"
-horo: 7
+coordinate: "seasonal · 2/share · 04ae2e8d"
+contentUuid: "03f39ab2-b0e5-5b90-895b-756ebb68f082"
+diamondUuid: "de21f1ea-3ddc-8ea2-afe9-1ed63baf2fbe"
+uuid: "04ae2e8d-8706-805b-a632-3882d047f78e"
+horo: 2
 typography:
   partition: seasonal
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a1daec0a-fae0-8e66-9c80-d887c3ebf425"
+  computationUuid: "2e5b1ef9-f605-859b-b254-a1a24e103720"
   stages:
     - stage: path
       stageUuid: "394aa1f5-fff1-89e9-a67c-9689a116bf19"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e16a3930-f34b-8d33-8916-c432f17c1708"
     - stage: horo
-      stageUuid: "f756ee65-2516-8516-b39c-8aef788891c7"
+      stageUuid: "9aee84e7-23e7-8d33-b740-f44efad4a5c0"
     - stage: seal
       stageUuid: "e6ef3166-7442-8f5b-a928-c44eb8ef4b98"
     - stage: uuid
-      stageUuid: "63ede192-92a8-88da-a289-483dc948171c"
+      stageUuid: "dcac607b-df0d-86aa-ad5f-4c889d6167d5"
 version: 2
 ---
 # seasonal

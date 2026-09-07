@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "accommodation",
-    "uuid": "c320d3d4-77d3-892f-8cdb-95e21b765778",
+    "uuid": "25e8a0e8-7a9d-8867-a99b-83ba5cac3b00",
     "words": [
       "accommodation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about accommodation — An accommodation is a place that can accommodate human beings, e.g. a hotel room, a camping pitch, or a meeting room. Many accommodations are for overnight stays, but this is not a",
-    "uuid": "0a125d59-f2f2-81d7-8da3-2f941624d9f0",
+    "uuid": "630d6ec5-5f73-8dc9-a804-9ee5e1583a58",
     "words": [
       "use",
       "when",

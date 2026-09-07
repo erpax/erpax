@@ -2,11 +2,11 @@
 name: closing
 description: "Use when implementing or referencing Period-End Closing Standard."
 atomPath: "period/end/closing"
-coordinate: "period/end/closing · 4/weave · 7695e0e9"
-contentUuid: "7d5f1103-f505-5db5-9230-988d597fecee"
-diamondUuid: "101a8fce-0050-8944-b5b0-6a4daf3f6cc0"
-uuid: "7695e0e9-d766-8898-938a-8e64d2aba05f"
-horo: 4
+coordinate: "period/end/closing · 2/share · 56c3a52f"
+contentUuid: "c726e049-926a-5973-a801-b5564ecd9815"
+diamondUuid: "b30bbe90-fa07-80ca-b59c-52412d0e7a45"
+uuid: "56c3a52f-8d29-82b5-a30a-fb52ecbc326f"
+horo: 2
 typography:
   partition: period
   bondDegree: 6
@@ -31,7 +31,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "f8bb4d4e-5aae-815e-9c03-ed8c2ba75a02"
+  computationUuid: "a93fa431-65ea-8661-aa63-4a92b4b1ebd5"
   stages:
     - stage: path
       stageUuid: "2d57c044-1d4f-8c3e-bcbb-12dcb0f8017f"
@@ -42,11 +42,11 @@ signatures:
     - stage: links
       stageUuid: "404d0d6f-995b-8b77-8c5f-133dae34384f"
     - stage: horo
-      stageUuid: "03921470-9922-84fa-91e4-a0d52390279e"
+      stageUuid: "8f0af07a-5c18-8d3b-b6cd-69a2258c2a84"
     - stage: seal
       stageUuid: "0a281f98-f340-82d8-9580-503a3999484c"
     - stage: uuid
-      stageUuid: "e0db4728-a17f-8b35-907c-a3ad7456af5c"
+      stageUuid: "6d5cd9e9-a0f7-8442-a216-7f2243593d21"
 version: 2
 ---
 # Period-End Closing Standard

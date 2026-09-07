@@ -2,18 +2,18 @@
 name: binding
 description: "Use when reasoning about binding — Tenant-scoped, RBAC-gated, audit-trailed Cloudflare binding access"
 atomPath: "cloudflare/binding"
-coordinate: "cloudflare/binding · 7/descent · 1ae4a364"
-contentUuid: "f57755db-e4e1-5908-b113-4687ba352ea9"
-diamondUuid: "09f8cf4e-3532-8f47-9475-645626945e91"
-uuid: "1ae4a364-fafe-8791-b91d-e4d70ed17b9a"
-horo: 7
+coordinate: "cloudflare/binding · 2/share · 8d352a8f"
+contentUuid: "570c51eb-4803-5e6e-80fd-36a27377bf6b"
+diamondUuid: "43282a26-6dee-8c98-a9c1-8952983b66af"
+uuid: "8d352a8f-3510-856f-a594-ff162e9597a1"
+horo: 2
 typography:
   partition: cloudflare
   bondDegree: 14
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8889a074-c81a-8667-9f9c-ca7ad46886a9"
+  computationUuid: "91db126e-3e7c-88e5-9a06-2da9ba60d8dc"
   stages:
     - stage: path
       stageUuid: "109130fa-9842-85f6-9269-9ea49ff3d607"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c0660809-f2b1-870c-8d10-70d6dc45f6bd"
     - stage: horo
-      stageUuid: "cd06455d-a35c-8637-98de-3fb2de006cc3"
+      stageUuid: "bbf18d4e-b27b-8007-8f0c-918c12867095"
     - stage: seal
       stageUuid: "047bcba8-fb2b-8128-83c6-d21684cd3cbc"
     - stage: uuid
-      stageUuid: "ee42cea2-8b6e-8c42-8f2b-04c00c2d0e43"
+      stageUuid: "392016df-5ea8-8e64-b766-c0a9f5598589"
 version: 2
 ---
 # cloudflare/binding — mediator framework

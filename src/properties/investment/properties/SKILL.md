@@ -2,11 +2,11 @@
 name: properties
 description: "Use when recognising or remeasuring IAS 40 investment property — land or buildings held to earn rental income or capital appreciation — under the §30 fair-value or cost model election, with transfer-of-use triggers (§57–65) and IFRS 13 hierarchy classification. The IAS 40 investment-property register."
 atomPath: "properties/investment/properties"
-coordinate: "properties/investment/properties · 7/descent · 2f890374"
-contentUuid: "0eb464d2-2e73-5c4a-9d49-aa1bc5c74743"
-diamondUuid: "d6e16745-15c7-89b8-83c7-e160f3e1e871"
-uuid: "2f890374-902e-8e88-86af-24abc1486345"
-horo: 7
+coordinate: "properties/investment/properties · 2/share · 59d673a5"
+contentUuid: "a13e2185-0d28-5c10-bad3-618cb2e80038"
+diamondUuid: "068c2954-8035-83a3-bc1c-71255740a865"
+uuid: "59d673a5-d97a-8e14-a595-b10ffe2e016c"
+horo: 2
 typography:
   partition: properties
   bondDegree: 23
@@ -37,7 +37,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "73dafa74-1ca5-8d7a-951c-e3f090c2eb56"
+  computationUuid: "3a57810d-9db6-85f8-a8e7-e99aaee431db"
   stages:
     - stage: path
       stageUuid: "5c7df80d-d17e-88f6-a07b-56ebd16cc71e"
@@ -48,11 +48,11 @@ signatures:
     - stage: links
       stageUuid: "1e945e4a-aad5-8213-ae00-63cbfc908c63"
     - stage: horo
-      stageUuid: "a2f8a333-a319-8f24-9f8b-06f0cdaae5a8"
+      stageUuid: "ab63091a-81c4-8ed5-a76f-2e5d6b05cb58"
     - stage: seal
       stageUuid: "a0c41547-8fd1-8237-9f27-29ffddb2892c"
     - stage: uuid
-      stageUuid: "19da6f67-a9d9-8bbe-9e42-19ccfb77bc44"
+      stageUuid: "913993d7-c8f6-8c48-aeac-4a8e8ae6ca70"
 version: 2
 ---
 # investment-properties

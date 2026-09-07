@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "earned",
-    "uuid": "1d4d2e74-4bac-8e73-b1d7-48b58a895bd4",
+    "uuid": "dc4a21e6-5771-89a1-8836-aa38070147b4",
     "words": [
       "earned"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about earned — A schema.org component word, collided out of schema.org compounds — fused from membershipPointsEarned (sti · collapse · merge).",
-    "uuid": "de03d439-3713-8e39-874c-6c345c58a835",
+    "uuid": "1f96f771-4469-8a1c-a5bc-1956e775c259",
     "words": [
       "use",
       "when",

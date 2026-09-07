@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "edifact",
-    "uuid": "d80ef177-d386-8699-8b17-1cbe413df1c4",
+    "uuid": "58798bd5-a7e7-8d57-bfc5-118005149874",
     "words": [
       "edifact"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing UN/EDIFACT — UN rules for Electronic Data Interchange For Administration, Commerce and Transport.",
-    "uuid": "997bf4b3-df11-8798-a561-c8b749631cd7",
+    "uuid": "83bf36f9-4d1b-8587-9e7e-edc67c39a968",
     "words": [
       "use",
       "when",

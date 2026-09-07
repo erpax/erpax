@@ -2,11 +2,11 @@
 name: workspace
 description: "Use when fusing Google Workspace (Gmail, Calendar, Drive, Docs, Sheets, People, Admin Directory) into erpax to fill the office/productivity gap — a computed API catalogue plus the content-uuid fusion bridge that merges a fetched resource into the mesh idempotently (re-fetch dedups). Credentials live in the per-tenant config sandbox, never in the registry."
 atomPath: "google/workspace"
-coordinate: "google/workspace · 7/descent · 658c8695"
-contentUuid: "bdcdd4b6-868c-5bf1-8e74-4ae8893296e5"
-diamondUuid: "8de3b19a-8c59-8a48-b724-a5f481ca1628"
-uuid: "658c8695-a3c6-8a07-90a0-ff882e71dc24"
-horo: 7
+coordinate: "google/workspace · 5/round · 2c08e867"
+contentUuid: "2af8a509-e102-5cc7-a26b-90e11c77b10a"
+diamondUuid: "5d0c50e4-00fa-8ce1-893d-52055799add5"
+uuid: "2c08e867-004b-8503-93ad-984dae338ba2"
+horo: 5
 typography:
   partition: google
   bondDegree: 46
@@ -16,7 +16,7 @@ standards:
   - "W3C-PROV-O"
 bindings: []
 signatures:
-  computationUuid: "2cf930db-eb1d-8712-9199-6392cadade07"
+  computationUuid: "467ccdac-e1e7-81da-b8ad-d2ec8463cc4a"
   stages:
     - stage: path
       stageUuid: "6dcd48d9-2c9f-843f-80e2-28174a5bc520"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "21036d64-d02f-8033-8666-b6ed631aad30"
     - stage: horo
-      stageUuid: "4dc05450-d594-8f6d-ba75-0738dc77005a"
+      stageUuid: "1b07d0fe-459d-8584-87be-c05c1c3aeacc"
     - stage: seal
       stageUuid: "637b755a-4f50-8150-b288-8d50ea49275b"
     - stage: uuid
-      stageUuid: "e29e396d-7cd9-8e25-82b1-3e0ac8990729"
+      stageUuid: "bd20855e-aac4-8e4a-b3e1-e39fd81c6d17"
 version: 2
 ---
 # google-workspace — the office layer fused into the mesh

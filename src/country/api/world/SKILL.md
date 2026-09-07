@@ -2,10 +2,10 @@
 name: world
 description: "Use when reasoning about world — Use for non-EU country-authority APIs — AU/BR/CA/CN/GB/HK/IN/JP/MX/NO/NZ/SG/US business registries, tax portals, e-invoicing and VAT/GST validation. The world slice of the country-authority registry."
 atomPath: "country/api/world"
-coordinate: "country/api/world · 8/crest · 465f3729"
-contentUuid: "a23619b3-fac6-5c58-89f6-80ae00f732fe"
-diamondUuid: "5fef1c45-e06a-8ab5-9a0a-11f30c09953b"
-uuid: "465f3729-7acd-840a-beae-eaabbcf2a29c"
+coordinate: "country/api/world · 8/crest · 4235f9c9"
+contentUuid: "a3c8ad07-d652-5ab3-b012-57cd760c3c55"
+diamondUuid: "ece9ea99-f3dd-8641-8c04-54118014ecb0"
+uuid: "4235f9c9-ee57-86cf-bf65-0d6219b90c81"
 horo: 8
 typography:
   partition: country
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f865133d-0e85-8b6b-a712-44fc9a6767dc"
+  computationUuid: "aa4261ad-bc70-8025-b4b0-7b126f1b1703"
   stages:
     - stage: path
       stageUuid: "a464d9d2-04aa-8e00-a3b8-62342b5f22b0"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0512d071-5c02-8792-815f-acfe6f904c96"
     - stage: horo
-      stageUuid: "2eee1d14-532b-8480-b408-5a466f8b09bf"
+      stageUuid: "a92ad649-9625-8f98-82f7-1baaaa32edb1"
     - stage: seal
       stageUuid: "91228c8b-5517-8013-9c94-bb3ed535003e"
     - stage: uuid
-      stageUuid: "e1bd53d9-5cb9-8031-bcf0-7785888c4fa6"
+      stageUuid: "2b0ee6c0-3512-858c-aa7c-79cc024ec0d2"
 version: 2
 ---
 # country/api/world

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "source",
-    "uuid": "61cd2f21-6d85-8468-83ae-5b77bac41ac8",
+    "uuid": "4b27ae5c-1091-8341-b084-bfced28cc442",
     "words": [
       "source"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a key must be born from randomness you can prove — seed quality is established at the source and across the fleet, never by inspecting the seed. A CSPRNG on a weak seed is indistinguishable from one on a strong seed, so no per-seed statistical test appears here by design. attest is an HMAC under a key only genuine hardware holds; admit refuses a forged tag, a short seed, and the same seed arriving from a second device (the deterministic-RNG fingerprint no single device can see). No key derives from an un-admitted seed.",
-    "uuid": "59e657e2-82c3-838a-a241-4de09ae28c1b",
+    "uuid": "212541b8-2342-88fe-a2ad-ecb403224ad6",
     "words": [
       "use",
       "when",

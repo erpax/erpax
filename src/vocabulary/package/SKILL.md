@@ -2,10 +2,10 @@
 name: package
 description: "Use when reasoning about package as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/package"
-coordinate: "vocabulary/package · 4/weave · d03f2c54"
-contentUuid: "ab8bea2a-04c2-57ae-87ce-e76f8ce16366"
-diamondUuid: "7e1d0157-7ef8-85e2-bc3e-37be48d84846"
-uuid: "d03f2c54-f6f9-868a-b8cf-251ac748fbe6"
+coordinate: "vocabulary/package · 4/weave · 79785aa3"
+contentUuid: "f7bb7494-58bd-5f7a-8fba-b2aa9dba7c6c"
+diamondUuid: "b6c4d71c-99cb-8bf5-b81e-2193608461e0"
+uuid: "79785aa3-840b-8035-9715-cc8ea8d613f5"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6e7af113-dff4-810d-acd7-bec65c985e2c"
+  computationUuid: "ec4c467c-bccd-8bcb-b7c6-07a0af26a1d4"
   stages:
     - stage: path
       stageUuid: "4ffd261d-ccd4-8fea-9943-4e2133077f01"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bb8e97b6-2901-8ac3-a0c0-829156e1c6f7"
     - stage: horo
-      stageUuid: "da143102-4218-8943-a7b0-ba76b5d0d81f"
+      stageUuid: "12ebd9bd-a5a5-8032-b0d5-faeb6eb222bc"
     - stage: seal
       stageUuid: "8a33a319-a474-856f-a6e2-ba7314c94ea2"
     - stage: uuid
-      stageUuid: "01a4a5c1-df3c-8f01-a639-5c2fccdb0280"
+      stageUuid: "e459b919-3907-89b7-8fa5-ccc2d426704d"
 version: 2
 ---
 # package

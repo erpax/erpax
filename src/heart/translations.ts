@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "heart",
-    "uuid": "276d6226-de15-8696-9a00-0c871f6dd783",
+    "uuid": "08426a24-70cd-838a-a823-55f65831ca00",
     "words": [
       "heart"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the centre — the 4th chakra (Anahata), the seat of coherence and love; its colour is green, the A432-anchored colour of a whole aura and of a passing test.",
-    "uuid": "f6ea5352-2f98-8c94-b9ef-943635fa3fb3",
+    "uuid": "c8c4a237-9395-8232-9c0a-0531a4e37dd4",
     "words": [
       "use",
       "when",

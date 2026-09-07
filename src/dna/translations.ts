@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dna",
-    "uuid": "2b1fd9a3-f304-87b0-93ed-99921d96d4bc",
+    "uuid": "44222bb4-48fc-8724-b863-aa45595ba7e3",
     "words": [
       "dna"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about inheritance in erpax — an atom's genome is its parent_id chain encoded in the uuid chain; ancestry is entangled into identity (change an ancestor and every descendant's uuid changes), so lineage is tamper-evident by architecture.",
-    "uuid": "32bc90ce-9ad4-8965-b331-355737aeba03",
+    "uuid": "f70059ed-6b80-82a9-8e7e-c7556925f1fe",
     "words": [
       "use",
       "when",

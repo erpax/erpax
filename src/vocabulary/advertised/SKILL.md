@@ -2,11 +2,11 @@
 name: advertised
 description: "Use when reasoning about advertised as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/advertised"
-coordinate: "vocabulary/advertised · 2/share · 629db2d5"
-contentUuid: "dc7a081d-e6e1-532d-a66a-db89ff3908a0"
-diamondUuid: "9d650600-c8ca-83a6-b95c-680699a0e77a"
-uuid: "629db2d5-4e81-82c0-8c27-ee6135e2469f"
-horo: 2
+coordinate: "vocabulary/advertised · 8/crest · 91032015"
+contentUuid: "65f6213b-1af2-5ee2-99e4-7583598ceb32"
+diamondUuid: "2c3a754f-76a6-8fa7-9345-8b293ce48f04"
+uuid: "91032015-ea55-854f-b202-7e41a6c98b74"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "dd6e5505-d70a-8334-b860-b1505f6de5da"
+  computationUuid: "3af07e0f-54e3-8b81-8e37-8d1af880a6c3"
   stages:
     - stage: path
       stageUuid: "02a2022d-95cf-8fc9-9e06-3a705afbd414"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e2b4d0d0-02f4-84f7-8386-08d52c5324fa"
     - stage: horo
-      stageUuid: "ba9f260d-0750-8e5b-a025-89b7e923a224"
+      stageUuid: "6b1bcbca-346e-8793-aca0-b171729fa6b3"
     - stage: seal
       stageUuid: "1459804b-bbbb-80f4-9e59-18f51350e6c6"
     - stage: uuid
-      stageUuid: "95386989-0cfd-86cf-9747-9399cac83c19"
+      stageUuid: "f71eb564-9757-861d-a4c8-869770ad69fa"
 version: 2
 ---
 # advertised

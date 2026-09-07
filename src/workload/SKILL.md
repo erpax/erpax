@@ -2,11 +2,11 @@
 name: workload
 description: Use when reasoning about workload — Quantitative measure of the physiologic output of the exercise; also referred to as energy expenditure.
 atomPath: workload
-coordinate: "workload · 8/crest · 6b5c4f58"
-contentUuid: "98bbe6a0-6eb3-54b3-b1ad-e37d4f6298fe"
-diamondUuid: "1321620d-4db3-8a7e-92a2-bc5dcdc82ee3"
-uuid: "6b5c4f58-68ed-8de0-b383-39de7f1f1ca0"
-horo: 8
+coordinate: "workload · 4/weave · 69a4532d"
+contentUuid: "d5669b06-602d-55df-be42-fbd9f4c482e3"
+diamondUuid: "6a155a94-5d16-8a91-b5f1-db28078bbbd0"
+uuid: "69a4532d-5632-8c7d-8d20-ad4c77cadbd8"
+horo: 4
 typography:
   partition: workload
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bd9eff8a-be22-8d1a-aa47-0c05258e0620"
+  computationUuid: "a8b6533a-3cd9-8b11-9894-6172c727997f"
   stages:
     - stage: path
       stageUuid: "cd205cfc-338c-893a-962a-b6470bf20cd4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "88cd5f99-e68a-8f27-8e56-56a544c2be0e"
     - stage: horo
-      stageUuid: "ea7e44bf-6f02-857e-825e-369915698007"
+      stageUuid: "3db2a08e-b4a9-8b70-ac2c-61933ad6d0e7"
     - stage: seal
       stageUuid: "82d9f7ba-e9a3-8643-9dc8-094ce7038892"
     - stage: uuid
-      stageUuid: "71ca60cf-0d9b-8823-8da9-087cb832d76d"
+      stageUuid: "98b06f53-6163-88db-a82a-46527a1b7764"
 version: 2
 ---
 # workload

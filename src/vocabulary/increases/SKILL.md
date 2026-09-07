@@ -2,11 +2,11 @@
 name: increases
 description: "Use when reasoning about increases as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/increases"
-coordinate: "vocabulary/increases · 8/crest · 100579b0"
-contentUuid: "59d48609-b892-5723-b3f9-0a57c21235f6"
-diamondUuid: "d2f4a66c-12d4-82fa-b9f3-4468979170f9"
-uuid: "100579b0-64d5-8f21-a680-4b908135d4cb"
-horo: 8
+coordinate: "vocabulary/increases · 1/base · 63a3db34"
+contentUuid: "e5e309cf-d877-5ed7-9451-d0f9c24ca12e"
+diamondUuid: "d1c5a6de-8529-833a-bc2b-2ad474fc1692"
+uuid: "63a3db34-8022-8c6a-95a3-887dddf1e311"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c6e0adeb-2978-897e-8017-37b0091ac2f7"
+  computationUuid: "1443a966-bbbc-83ba-b17e-d7ec39a5c2dd"
   stages:
     - stage: path
       stageUuid: "5862f9bc-e7bc-826a-825a-d8ac6b80a3ab"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e9f2720f-a9c7-8b5d-90a4-34f3278a8f55"
     - stage: horo
-      stageUuid: "4a1ae5bd-5e5e-8497-bfdb-ffd23c41d192"
+      stageUuid: "c0850d2f-9f4d-802e-ab95-581fdde7cc3f"
     - stage: seal
       stageUuid: "c3d9517b-d742-8377-af56-072c8c304bfe"
     - stage: uuid
-      stageUuid: "fdcb781d-1bf6-83a7-9e80-35e1bc38c361"
+      stageUuid: "f9bbcc50-e09f-87b1-b0a6-6ddd12a2996c"
 version: 2
 ---
 # increases

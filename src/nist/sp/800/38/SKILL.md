@@ -2,11 +2,11 @@
 name: "38"
 description: "Use when implementing or referencing NIST SP 800-38 — Block Cipher Modes of Operation."
 atomPath: "nist/sp/800/38"
-coordinate: "nist/sp/800/38 · 2/share · 3edec69b"
-contentUuid: "0cde5188-0933-519d-97d0-499817748ca3"
-diamondUuid: "e95bab59-84b7-8906-82d0-a96d6c692a9c"
-uuid: "3edec69b-99f5-8c95-aa0a-5487cb3637e4"
-horo: 2
+coordinate: "nist/sp/800/38 · 8/crest · 06f66bee"
+contentUuid: "ec18fd6d-f535-5821-a336-c8e8005bb118"
+diamondUuid: "312b6737-b260-8e46-a2de-c630e6ed5964"
+uuid: "06f66bee-29c0-8c50-a8be-de43f2105f5f"
+horo: 8
 typography:
   partition: nist
   bondDegree: 3
@@ -17,7 +17,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "1de79def-271a-87fa-8b57-a69e0b7c1268"
+  computationUuid: "9f26f30a-1e09-89f9-b6eb-d44dbf6b57d1"
   stages:
     - stage: path
       stageUuid: "7ac18005-6b7a-85ff-9617-01695fbfe2e6"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "4c502b00-587e-8c72-89f4-7b5d7c82f434"
     - stage: horo
-      stageUuid: "299a5401-447e-88a1-9c49-97208f0f5ac8"
+      stageUuid: "331ab510-2473-8737-a417-881a748ba77e"
     - stage: seal
       stageUuid: "0dcfec0f-422a-8f99-82f8-a7f6ab558e33"
     - stage: uuid
-      stageUuid: "60114e9a-787a-8765-93ee-7bbd3d3cec84"
+      stageUuid: "70abc001-c707-85c8-8313-4e86ed103d46"
 version: 2
 ---
 # NIST SP 800-38 — Block Cipher Modes of Operation

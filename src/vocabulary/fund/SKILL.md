@@ -2,11 +2,11 @@
 name: fund
 description: "Use when reasoning about fund as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/fund"
-coordinate: "vocabulary/fund · 7/descent · 7bb8df06"
-contentUuid: "241139fe-a0ce-5114-afdc-3e480a9755cf"
-diamondUuid: "f427fd3f-f6f9-8ca7-bbba-6260251508d2"
-uuid: "7bb8df06-b5e6-80aa-a6e3-615187122700"
-horo: 7
+coordinate: "vocabulary/fund · 8/crest · edcf7dd7"
+contentUuid: "0c0037f0-b0e9-550d-b207-65667795076a"
+diamondUuid: "35a1ac89-d945-8c3f-ae85-fbb26215202a"
+uuid: "edcf7dd7-d14d-82ce-a5f6-2263d3eb2c59"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 17
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d2c2d12d-1e3b-8a7f-856c-15bca1ed3ad0"
+  computationUuid: "07f3014f-3bec-83ef-bfd3-903829ba500b"
   stages:
     - stage: path
       stageUuid: "37c6149f-556b-8d5e-8013-fd0180d82ab7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0991bdc5-e3ce-8232-bf80-0fbee86f4f38"
     - stage: horo
-      stageUuid: "cbdb9c02-a75a-8b20-abd2-dc1ea3fc900a"
+      stageUuid: "ef996add-5d01-8d63-8359-52e7ba46e44f"
     - stage: seal
       stageUuid: "57410021-8182-87bd-b1b3-4c84125a86d0"
     - stage: uuid
-      stageUuid: "f7bed7ad-9f7b-88cb-a0f2-ce2f2d90c09b"
+      stageUuid: "47e40efe-6353-8ea2-9bcf-f9d92bdc970d"
 version: 2
 ---
 # fund

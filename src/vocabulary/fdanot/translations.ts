@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fdanot",
-    "uuid": "8db7319f-8dd9-8226-b32f-ca6ded61a23b",
+    "uuid": "e06d6868-4843-8c71-950f-bb4698009b90",
     "words": [
       "fdanot"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about fdanot as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "e7f0474b-f1da-8614-be96-ca28cadcbc19",
+    "uuid": "2eee53e8-b8a1-8f68-8b67-fd0e8ff16e52",
     "words": [
       "use",
       "when",

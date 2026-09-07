@@ -2,10 +2,10 @@
 name: shape
 description: "Use when reasoning about shape as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: shape
-coordinate: "shape · 7/descent · 7a7b2313"
-contentUuid: "e23e9bf1-f30a-5059-be79-400aead98b7c"
-diamondUuid: "b32c6a07-714e-8fb0-844a-bc9bcf36a073"
-uuid: "7a7b2313-6ef0-879a-8f10-2a67951334a8"
+coordinate: "shape · 7/descent · e7aa6153"
+contentUuid: "b80c9f8b-3c9b-5fdc-b83f-3e63d2e163f8"
+diamondUuid: "2930be05-cfb3-8d57-bbcb-e18cb4dc7a02"
+uuid: "e7aa6153-72fc-80e1-8cd8-d6ea531eae61"
 horo: 7
 typography:
   partition: shape
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a249c644-6b08-8e4f-a97a-2e2f24715d7d"
+  computationUuid: "87ecc4b1-34dc-80b0-ab91-dfb0182a0c76"
   stages:
     - stage: path
       stageUuid: "c80d442f-63c5-8225-9b60-accd497fa3c0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f78c2621-dece-85d7-b6b0-adc1d411d8c0"
     - stage: horo
-      stageUuid: "23e48455-2923-8ea0-9a6e-9ddf054edd9a"
+      stageUuid: "053d3fa2-f833-8445-8303-04961aa70740"
     - stage: seal
       stageUuid: "2f405711-3e0c-8cb3-ba52-186a202ab79b"
     - stage: uuid
-      stageUuid: "4b22600a-e5a4-8f5c-a6fc-5525a5ec37b1"
+      stageUuid: "3f9784ce-f90a-8178-ba1f-9ce7c7e2beaf"
 version: 2
 ---
 # shape

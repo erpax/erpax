@@ -2,11 +2,11 @@
 name: monday
 description: "Use when reasoning about monday as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/monday"
-coordinate: "vocabulary/monday · 2/share · 5ddd6f60"
-contentUuid: "414afad5-6c80-5539-84cd-3abed517dd90"
-diamondUuid: "b7e1abfe-bcc5-8cc4-bb0b-29b4f3b07d7b"
-uuid: "5ddd6f60-b84c-884a-ab3b-ef56cd6ee436"
-horo: 2
+coordinate: "vocabulary/monday · 1/base · 34d8c203"
+contentUuid: "1b643727-231c-5253-ac49-11d66679533b"
+diamondUuid: "092b63d1-36af-8658-8ffd-850750928cdd"
+uuid: "34d8c203-c93d-8d91-b452-5e5a2adb01d3"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "12d6ee53-3d8f-819a-af79-057b148f9707"
+  computationUuid: "dc5cf1d6-83c4-87c5-8ff1-cc8021d3d654"
   stages:
     - stage: path
       stageUuid: "79a2cbd2-23c7-8693-87e5-8c74a0c70ae1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0ab73e09-b574-80c7-b13c-1e4db5168b32"
     - stage: horo
-      stageUuid: "bb707203-30af-8b0f-ba10-1ec3cd7abd39"
+      stageUuid: "6ae558d5-1558-813e-87c0-8df18b96a316"
     - stage: seal
       stageUuid: "61e6fdaf-bf5e-89f5-83f1-dc2449dcbd23"
     - stage: uuid
-      stageUuid: "4f96aa4e-7c8c-83b0-95a7-f55fffad8781"
+      stageUuid: "7333ed6d-7cd6-8ef4-b928-d05d6583ed9e"
 version: 2
 ---
 # monday

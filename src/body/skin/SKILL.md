@@ -2,11 +2,11 @@
 name: skin
 description: "Use when reasoning about the skin as an organ of body — pivot to canonical @/skin; zero duplication."
 atomPath: "body/skin"
-coordinate: "body/skin · 7/descent · 7672c11b"
-contentUuid: "bc37b996-240f-5ee8-bb6d-ccf069477a6a"
-diamondUuid: "32865dae-ffed-8c22-913f-d7497af7ce4e"
-uuid: "7672c11b-2107-84bc-8932-9be3c6a354aa"
-horo: 7
+coordinate: "body/skin · 4/weave · 3634a66b"
+contentUuid: "f5163ed5-a56c-55c8-8ead-8c28ce7bd998"
+diamondUuid: "accd8a67-38bb-8a1d-b5b0-cfdf995643f7"
+uuid: "3634a66b-0aac-8586-915c-9b3dd432c2cb"
+horo: 4
 typography:
   partition: body
   bondDegree: 25
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3ed80d3b-b6ec-8f82-b395-df812fa16ebc"
+  computationUuid: "f81eb31a-24d1-861e-930e-b5382d82c560"
   stages:
     - stage: path
       stageUuid: "05818a78-2cc0-8cc8-bed6-55d41fe35a51"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5821b57e-d86a-8e15-b5c4-32e74192ab3e"
     - stage: horo
-      stageUuid: "307c4289-e567-8021-bef9-9ce22fdbdcda"
+      stageUuid: "b95b62ef-e006-8074-bcd7-aa84559edd55"
     - stage: seal
       stageUuid: "b534a6c6-9624-883d-af3e-928c4e49db33"
     - stage: uuid
-      stageUuid: "386a969a-f4cf-8c31-b530-a6b4129bdaed"
+      stageUuid: "9e1b4b41-9b5b-840e-b150-0aab091ae211"
 version: 2
 ---
 # body/skin — organ facet

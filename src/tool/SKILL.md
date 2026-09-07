@@ -2,11 +2,11 @@
 name: tool
 description: Use when reasoning about tool — A sub property of instrument. An object used (but not consumed) when performing instructions or a direction.
 atomPath: tool
-coordinate: "tool · 8/crest · ed5ead61"
-contentUuid: "c09bca3a-7b4b-5be5-8ef8-cd344afb7f61"
-diamondUuid: "84d99579-3f68-8230-9cbd-ad25e5479b4f"
-uuid: "ed5ead61-904a-86c6-85d8-61d308568c2b"
-horo: 8
+coordinate: "tool · 2/share · 647b0f43"
+contentUuid: "754e715c-366a-550a-998a-61c1546bbd02"
+diamondUuid: "5dbcd57e-4824-8a06-bb9c-c54a138e044b"
+uuid: "647b0f43-348d-8e04-aaad-535450f9ef7f"
+horo: 2
 typography:
   partition: tool
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ba55f362-2a73-878b-bd9b-03625b476971"
+  computationUuid: "192080cf-0364-8bf5-8600-b3029c03456f"
   stages:
     - stage: path
       stageUuid: "068534dd-d460-8a41-87b5-c9d7912e9d50"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e1d75789-af28-894b-837f-eb0466f45c5b"
     - stage: horo
-      stageUuid: "65eebbde-71dd-887e-971d-d4409634950b"
+      stageUuid: "77e760ee-47ae-8b26-a4bd-f2b3ac9df30d"
     - stage: seal
       stageUuid: "730ffc4b-6deb-8485-a8d7-f70af58f4256"
     - stage: uuid
-      stageUuid: "11bca6ac-fa72-8ce9-9684-d93a29d0a85e"
+      stageUuid: "b0de21d3-fb09-827f-9bd2-3777d1fc14f9"
 version: 2
 ---
 # tool

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "selector",
-    "uuid": "6b946d7d-b2b6-83c2-8fbb-b6d25d41ef36",
+    "uuid": "7bb4ae6c-57f2-839b-8833-8747d103ae4a",
     "words": [
       "selector"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about selector — The control that lets a person choose light, dark, or **auto**. Auto is not a synonym for the current system value: choosing it *clears* the stored preference, so the page follows…",
-    "uuid": "4c9f7a6f-8f28-8d49-8620-8400e357c80f",
+    "uuid": "72c347ad-bff6-80d3-a91b-0a2f1e7d9df5",
     "words": [
       "use",
       "when",

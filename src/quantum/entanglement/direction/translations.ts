@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "direction",
-    "uuid": "03aeee38-ce77-8939-b9fc-b634462624f9",
+    "uuid": "22f933c1-348b-8a35-a5c4-b7c473c06263",
     "words": [
       "direction"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a running agent must change course immediately — a parent publishes a content-uuid sealed direction and subscribed workers observe it on the same tick, with in-flight work holding an interrupt token that a publish invalidates. Promoted from a hyphenated sibling; 12 importers repointed. Run: tsx src/quantum/entanglement/direction/index.ts",
-    "uuid": "62e2af05-6b4e-8124-b350-b9bd1f936e23",
+    "uuid": "5ce09be8-8cd0-883b-b1a2-64d6788e9b61",
     "words": [
       "use",
       "when",

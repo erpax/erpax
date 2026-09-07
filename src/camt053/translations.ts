@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "camt053",
-    "uuid": "dd6168f7-dc91-828a-a188-6676e4130cee",
+    "uuid": "a8742bf7-b6a3-8b8c-bebc-df4662c36ca3",
     "words": [
       "camt053"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when parsing ISO 20022 camt.053 BankToCustomerStatement — end-of-day account statement (Stmt).",
-    "uuid": "83823f55-5be8-81c7-8651-e3b452766419",
+    "uuid": "b773dac7-123a-8dfa-99e0-a468e1686c04",
     "words": [
       "use",
       "when",

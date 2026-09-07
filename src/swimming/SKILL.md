@@ -2,10 +2,10 @@
 name: swimming
 description: "Use when reasoning about swimming as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: swimming
-coordinate: "swimming · 7/descent · 078024e1"
-contentUuid: "3acef4b1-5a9e-5a7f-ab58-750816e020f4"
-diamondUuid: "ce828873-7f66-8e57-86e9-36f6415d0d73"
-uuid: "078024e1-440e-8069-bcfb-d23ae66cc3c3"
+coordinate: "swimming · 7/descent · 64f98c80"
+contentUuid: "0e0dadf9-3e4d-53f8-b00e-2b10fdbc5d68"
+diamondUuid: "5dd0cdfb-3abb-875d-bd18-89e71ef23b0c"
+uuid: "64f98c80-75e2-8c7e-8632-84521b599577"
 horo: 7
 typography:
   partition: swimming
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "667f413e-d928-8550-8120-033822e952b2"
+  computationUuid: "8d7e8c53-129d-8059-a8d5-e438c9a00a15"
   stages:
     - stage: path
       stageUuid: "d00235b4-2ba0-862e-b35b-daf0fe12f1e0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5a564662-c425-8174-b9c9-8a29a8b0688d"
     - stage: horo
-      stageUuid: "c237ce0a-fe39-86b3-b8b1-ba1945bf05fc"
+      stageUuid: "0d42fd71-03a3-86ae-8c38-79441fb5acfd"
     - stage: seal
       stageUuid: "a3942779-bd06-8b75-8b35-5c50db294cb6"
     - stage: uuid
-      stageUuid: "2a3b8fb6-f538-8224-8d5c-97a1121d58d2"
+      stageUuid: "23c4cf70-2075-84ef-9095-cc5f7e0aa75c"
 version: 2
 ---
 # swimming

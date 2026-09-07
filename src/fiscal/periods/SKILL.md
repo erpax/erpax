@@ -2,11 +2,11 @@
 name: periods
 description: "Use when managing the accounting calendar — opening, closing, or locking periods; enforcing four-eyes SoD on period transitions; configuring SAF-T or XBRL-GL period coding; blocking GL writes once a period is locked. The fiscal-period lifecycle node (open → closed → locked)."
 atomPath: "fiscal/periods"
-coordinate: "fiscal/periods · 2/share · 76f0e22c"
-contentUuid: "395f212a-f912-5756-ad4c-2a8dd85e31af"
-diamondUuid: "1da8ba23-5ef1-8df6-a29a-bd8083b72177"
-uuid: "76f0e22c-d5f9-887a-8cdb-477d5786c718"
-horo: 2
+coordinate: "fiscal/periods · 5/round · 7a693d36"
+contentUuid: "1a0eb531-1d12-52c6-a400-78b8933a037f"
+diamondUuid: "8f5e5dbc-1908-8945-97b0-a9a5d46663e3"
+uuid: "7a693d36-3d82-8513-b9ab-4e8a6f9e3966"
+horo: 5
 typography:
   partition: fiscal
   bondDegree: 39
@@ -42,7 +42,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "4569002c-2d08-8c66-bdcc-55e01baa8897"
+  computationUuid: "28dfbdf3-274d-894b-8574-e3afc3fed818"
   stages:
     - stage: path
       stageUuid: "c2d46d7d-f33b-8c89-9ef4-d333fbff62a5"
@@ -53,11 +53,11 @@ signatures:
     - stage: links
       stageUuid: "4b5e5c91-6683-8872-8f10-17c232d67ede"
     - stage: horo
-      stageUuid: "43c694c1-d02d-8ac8-a627-1b2cad7679a1"
+      stageUuid: "6f5e9987-6051-8087-b5d0-bee28d55e292"
     - stage: seal
       stageUuid: "799579d1-a269-8094-bf85-70c24d3c360f"
     - stage: uuid
-      stageUuid: "d9c8a512-08da-8533-8469-079c6da51699"
+      stageUuid: "c6b95eed-9b19-87f4-997e-37cba109a810"
 version: 2
 ---
 # fiscal-periods

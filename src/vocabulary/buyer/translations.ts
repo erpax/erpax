@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "buyer",
-    "uuid": "38c8afa9-a779-8961-9a99-2b9ae2172693",
+    "uuid": "6f7dd45a-48f3-8ede-8d1f-acde36aafcfc",
     "words": [
       "buyer"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about buyer — A sub property of participant. The participant/person/organization that bought the object.",
-    "uuid": "9e8df1ce-7e76-80ef-82eb-1f32008238f6",
+    "uuid": "67f0f4be-7f74-81ba-b180-3912aa36a851",
     "words": [
       "use",
       "when",

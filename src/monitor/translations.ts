@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "monitor",
-    "uuid": "dfb15683-6156-82ee-ae82-2ce52d608c63",
+    "uuid": "a004c1c3-8d55-8ddb-a024-815b8bfa7cae",
     "words": [
       "monitor"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about patient monitor — hospital bedside vitals facet; pivot to @/medical/device registry. Also: realtime corpus violation monitor via @/monitor/violations (all gate axes, path-account bonded).",
-    "uuid": "04b15464-e67d-8f06-ad83-649bf039bd3d",
+    "uuid": "43b977e6-901e-8d6d-9691-fa06f6bc58cb",
     "words": [
       "use",
       "when",

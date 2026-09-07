@@ -2,18 +2,18 @@
 name: corpus
 description: "Use when reasoning about corpus — search-corpus — ingest the SKILL.md corpus (CODE, the signs) into the same content-uuid `search` surface the DB rows (DATA, the matter) already live in."
 atomPath: "search/corpus"
-coordinate: "search/corpus · 8/crest · ca17e362"
-contentUuid: "71d83150-592f-5bc7-9bae-ec5da22c79d3"
-diamondUuid: "ebf440a0-891d-8810-bece-34193b1500b7"
-uuid: "ca17e362-622c-8123-a106-b7e088f15ce4"
-horo: 8
+coordinate: "search/corpus · 7/descent · 478ac52e"
+contentUuid: "4bcb0ce0-134c-5256-b821-480abae416ac"
+diamondUuid: "96fdeb40-2146-8a78-bea6-1aeb7648d45c"
+uuid: "478ac52e-5e54-82eb-9d31-041b3922aa0b"
+horo: 7
 typography:
   partition: search
   bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "13156107-2a0b-8038-8b76-9fdc71e279bc"
+  computationUuid: "90e6b6f0-b9be-8d43-90f9-8198db35ca48"
   stages:
     - stage: path
       stageUuid: "50c577c0-1fde-8d72-8648-43cf2755a8a8"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "300c18f5-8cee-8d0f-b3af-320808673ce8"
     - stage: horo
-      stageUuid: "e6473ca7-2b4c-8889-93a9-0f711fdd9f76"
+      stageUuid: "3dc1178b-095c-82f1-ab78-cc4a4656ee6c"
     - stage: seal
       stageUuid: "c0d55c8d-4d3d-801b-ae73-f241099eb7a4"
     - stage: uuid
-      stageUuid: "50f70fe2-e678-8fbf-9e4a-7802302fdea0"
+      stageUuid: "0a36b7d1-d869-8b71-919d-5cf066d100c9"
 version: 2
 ---
 # search/corpus

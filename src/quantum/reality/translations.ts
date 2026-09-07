@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reality",
-    "uuid": "5cc12e2d-1e8e-8d50-a7de-655076f18b38",
+    "uuid": "80706d79-3bdd-806c-934f-ec164423f724",
     "words": [
       "reality"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when relating reality to the quantum substrate — the model collapsing into the one true eigenstate (the live matrix root); the Merkle fold verifying IS the model becoming real, every path folds to the same root, so reality is the shared eigenstate all agents converge to.",
-    "uuid": "c87c6c83-bc1c-8d98-9590-acb162de2344",
+    "uuid": "69974ea3-90ef-881d-939e-72985efcb68d",
     "words": [
       "use",
       "when",

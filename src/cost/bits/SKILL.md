@@ -2,10 +2,10 @@
 name: bits
 description: "Use when pricing the cost of ATTACK — the entropy cost-kind. Derived digest widths (ERPAX_DIGEST_BITS, the typed-106 defect kept as its own proof), the harmonic security floors D·D/2·D/3 (second-preimage · birthday/Grover · BHT), and the coverage/replication/invariant amplifiers a forger must pay. Pure functions over bit counts; the cost hub re-exports them."
 atomPath: "cost/bits"
-coordinate: "cost/bits · 2/share · eae9adf3"
-contentUuid: "ef92e0e0-710c-5923-9e1e-b844ac3c51b9"
-diamondUuid: "54219743-10b5-8919-925e-75b5e057579e"
-uuid: "eae9adf3-0de4-8578-8f53-e1831a501c5c"
+coordinate: "cost/bits · 2/share · a86e8f31"
+contentUuid: "d7700e5a-6a76-5bd5-8466-9be6549e2acf"
+diamondUuid: "d49f3211-3759-8427-b61b-0a312c7bd03b"
+uuid: "a86e8f31-c891-828a-9bf6-75a8ed996d7f"
 horo: 2
 typography:
   partition: cost
@@ -22,7 +22,7 @@ standards:
   - "W3C-PROV-O"
 bindings: []
 signatures:
-  computationUuid: "250de2eb-e33e-8262-8114-4ff6c5040985"
+  computationUuid: "277a41df-557e-889f-9549-6d67dcf55fa9"
   stages:
     - stage: path
       stageUuid: "e71086e7-e0ef-8f4e-90df-b3d90bf0253d"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "965aeec3-c113-8722-87a3-3b11c1ba2096"
     - stage: horo
-      stageUuid: "d00420b2-e670-8499-90eb-97ff2189ece8"
+      stageUuid: "d191c4c8-d7f4-82e7-8eea-c9b8e64487f1"
     - stage: seal
       stageUuid: "cc450af7-b06d-85b6-82e8-b36737aa6aea"
     - stage: uuid
-      stageUuid: "8937a13f-b534-83b6-8953-7d960fb5bf4d"
+      stageUuid: "b39d7b2f-0302-8265-ab3d-08f5c2fad26a"
 version: 2
 ---
 # cost/bits — the cost of attack, computed

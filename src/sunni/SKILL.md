@@ -2,18 +2,18 @@
 name: sunni
 description: "Use when reading Sunni Islam as a sub-diamond of islam — the people of the trodden way (sunna) and the community, leadership settled by consensus (ijma), law derived through the agreed schools. A facet-diamond of the islam archangel. Strip the Arabic prefix and sunna, ijma collapse to the followed sequence and the merge of consensus."
 atomPath: sunni
-coordinate: "sunni · 1/base · 15b340df"
-contentUuid: "4736e40c-06f8-57e3-9f24-f1ba88e3df6c"
-diamondUuid: "47f52baa-f261-8e6a-ad42-f9bc4214ef67"
-uuid: "15b340df-0f78-88c9-9369-295b73426018"
-horo: 1
+coordinate: "sunni · 4/weave · 595de47e"
+contentUuid: "bf10e75e-f859-5f10-81d6-00242f1a91fd"
+diamondUuid: "16e0ac0a-16fb-8390-8e3f-b0bad56541c2"
+uuid: "595de47e-f1db-86de-bf0e-ed09aff91807"
+horo: 4
 typography:
   partition: sunni
   bondDegree: 50
 standards: []
 bindings: []
 signatures:
-  computationUuid: "532c75e6-13ce-8f9a-88e8-f508d1ba4150"
+  computationUuid: "787505af-a955-85db-a7ad-350e8d4059e2"
   stages:
     - stage: path
       stageUuid: "7b9de25f-0f6c-82f2-80e9-f331bc215409"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2f814bb5-86ea-83af-bfcf-c6ceedf1523d"
     - stage: horo
-      stageUuid: "27c5cc94-8327-8d1f-9236-719213c294ce"
+      stageUuid: "12137526-2365-8994-9da1-2ea86984e734"
     - stage: seal
       stageUuid: "14321354-81da-8582-8045-eaa17f3f1fe5"
     - stage: uuid
-      stageUuid: "c90057a1-bade-825d-848e-dd91bbaf69fe"
+      stageUuid: "92db5d68-c56a-8a05-a544-ed94a33fc817"
 version: 2
 ---
 # sunni — the trodden way and the consensus of the community

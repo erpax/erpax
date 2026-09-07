@@ -2,11 +2,11 @@
 name: lactose
 description: "Use when reasoning about lactose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/lactose"
-coordinate: "vocabulary/lactose · 4/weave · 9f8c0d32"
-contentUuid: "d3c129f1-184e-5a50-8ba1-19e8e1d3104b"
-diamondUuid: "a597eb53-d44a-89fc-88e4-0ad5bf9e492b"
-uuid: "9f8c0d32-637f-8c6f-b611-6f38647c1300"
-horo: 4
+coordinate: "vocabulary/lactose · 7/descent · 58502218"
+contentUuid: "2dcb89ae-150c-5007-80c5-fd476d7f10b5"
+diamondUuid: "e3247287-04bd-8f53-b3c1-bfc8e69f7523"
+uuid: "58502218-357f-8f6b-bd64-61c4ef84e4c3"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0f637c98-f387-8dea-b61c-c1768cb9204b"
+  computationUuid: "3c007b4d-b32f-868a-b02b-02832472c885"
   stages:
     - stage: path
       stageUuid: "ac7a7a7d-f2de-8fba-bd94-92f79a33408b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "45b9f448-cbfd-8539-ad87-50d5383e141c"
     - stage: horo
-      stageUuid: "c4633fb5-001a-8a9f-aa38-b4d24de96e73"
+      stageUuid: "3310eb5c-8976-8c4c-bce2-8f02af185e08"
     - stage: seal
       stageUuid: "6f3fdbfc-0f9a-87e3-99f3-e25ed8bd6793"
     - stage: uuid
-      stageUuid: "a311858a-96b0-8e98-978b-5c49648698bd"
+      stageUuid: "12f708e4-f44f-88a7-95be-624972a8359a"
 version: 2
 ---
 # lactose

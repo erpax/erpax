@@ -2,10 +2,10 @@
 name: waterfall
 description: "Use when reasoning about waterfall — A waterfall, like Niagara."
 atomPath: waterfall
-coordinate: "waterfall · 1/base · 719999d6"
-contentUuid: "2c67f716-6908-5192-bab9-092a5f9113ed"
-diamondUuid: "275343de-84e4-8cdb-ab45-73e74a4f8594"
-uuid: "719999d6-3032-8748-8fe0-29580e7d013a"
+coordinate: "waterfall · 1/base · 2588ecd6"
+contentUuid: "d1ba4d95-0e82-56c4-9ba8-17bf9a27b5ef"
+diamondUuid: "5e02917b-e623-896b-bb2b-c488c9007b61"
+uuid: "2588ecd6-de51-881a-a3f8-d3d2621fc7e6"
 horo: 1
 typography:
   partition: waterfall
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "629423e3-1073-8988-970c-445d8b5a844b"
+  computationUuid: "276ac8f4-6f8b-8626-a68f-605eb356b803"
   stages:
     - stage: path
       stageUuid: "ff5ce7db-a8b3-8a5b-a07e-cf29f990ba3e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d88cf54c-85bf-82b5-95e6-ed3c65889328"
     - stage: horo
-      stageUuid: "788edc22-9652-864b-b5ce-9cd6676041d1"
+      stageUuid: "595fc4a3-c61f-82c3-a570-9f26dd6b06d9"
     - stage: seal
       stageUuid: "6850cbca-0d5c-87e6-aaaa-af73415d9687"
     - stage: uuid
-      stageUuid: "abd7ed99-0aa6-8d42-966d-3fa21f2e3a1c"
+      stageUuid: "5432f1a7-38d5-8402-864a-059c6bb7cef4"
 version: 2
 ---
 # waterfall

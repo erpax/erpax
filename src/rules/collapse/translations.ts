@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "collapse",
-    "uuid": "159cfb99-f0a7-88bc-8191-281a3a4f8183",
+    "uuid": "78fd4605-eb75-853f-b2f8-fc5bb532fb72",
     "words": [
       "collapse"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when asking which collections can honestly become one — content-addresses every booted collection's shape and reports identical tables (0) and provable subsets (4). Read the boundary before acting: fitting is not sameness, and no theorem decides what two tables MEAN. Run: tsx src/rules/collapse/index.ts",
-    "uuid": "af4c315f-69fd-88f6-80c2-cc36912340ed",
+    "uuid": "e7a1f831-8e7c-8472-adcc-5cf2d6ddc3b2",
     "words": [
       "use",
       "when",

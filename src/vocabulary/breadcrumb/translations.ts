@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "breadcrumb",
-    "uuid": "daf041e0-4428-8cb3-9444-7738504bb080",
+    "uuid": "57a95755-00bd-8b46-80b8-31ea72c14caf",
     "words": [
       "breadcrumb"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about breadcrumb — A set of links that can help a user understand and navigate a website hierarchy.",
-    "uuid": "717315d6-d392-86af-8d2f-c6f583317d01",
+    "uuid": "c59438fd-6350-85db-b625-4e24facf31aa",
     "words": [
       "use",
       "when",

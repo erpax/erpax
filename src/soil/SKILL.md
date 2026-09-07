@@ -2,18 +2,18 @@
 name: soil
 description: "Use when modelling the living medium a crop grows in — soil as the three-phase (mineral·water·air) body whose texture/structure/tilth, organic matter, biology, moisture and chemistry set what fertility, water, and yield are possible. The parent the fertility/water/cover-crop vocabulary hangs from; a capacity reservoir managed, depleted, and rebuilt."
 atomPath: soil
-coordinate: "soil · 7/descent · 1a9a1d45"
-contentUuid: "7c8cbefa-f730-5c97-a5c3-c2949ca6a07f"
-diamondUuid: "8be2c52b-8cb2-84d0-837e-2fd2dd7ec7fc"
-uuid: "1a9a1d45-2938-8706-976a-241a608a2835"
-horo: 7
+coordinate: "soil · 8/crest · 6da5f06e"
+contentUuid: "2d67ea16-09db-5b64-829d-8196034b2287"
+diamondUuid: "b512a55f-ed18-8ee1-9ab7-903a150a6dba"
+uuid: "6da5f06e-421c-82e9-959e-5f317f80c87a"
+horo: 8
 typography:
   partition: soil
   bondDegree: 88
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7d054dc0-95c1-8326-90ca-e59ea1623989"
+  computationUuid: "010440fe-1808-81fa-a708-f3a6e7e8f1f1"
   stages:
     - stage: path
       stageUuid: "10ea7710-6a42-81e4-ba93-fccf62670d47"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c621c3fa-811e-813c-9f16-36c564bf1e1b"
     - stage: horo
-      stageUuid: "3ff7b287-8aab-8876-ac6c-8fed6bf1f2e5"
+      stageUuid: "535327ea-72a1-86cb-bebb-3a1b06d28219"
     - stage: seal
       stageUuid: "a9dc85d7-59da-8352-938a-f3452ced7a3c"
     - stage: uuid
-      stageUuid: "a4309c74-0468-8653-842b-8cd18add5afd"
+      stageUuid: "9f0b43b1-d87a-8b61-93d8-8f665e5404e9"
 version: 2
 ---
 # soil — the living medium; the reservoir crops draw from

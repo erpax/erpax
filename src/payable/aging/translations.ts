@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "aging",
-    "uuid": "fba57eda-de5f-8f99-a663-3a7dc140f28b",
+    "uuid": "73cab322-e96d-8f37-b76a-4c9996b6af66",
     "words": [
       "aging"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about aging — Wraps party/aging with A/P-shaped output — , — and adds the cash-flow-impact section the payables side needs and the receivables side does not.",
-    "uuid": "79ee4410-3cf4-8174-a980-e1057e11c624",
+    "uuid": "22baed28-ceca-8e39-adc7-be1c16aaebef",
     "words": [
       "use",
       "when",

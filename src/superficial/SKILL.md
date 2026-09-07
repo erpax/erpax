@@ -2,10 +2,10 @@
 name: superficial
 description: "Use when reasoning about superficial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: superficial
-coordinate: "superficial · 2/share · 53db4188"
-contentUuid: "bba7af33-d44a-5fb0-99e0-5d78bc36393e"
-diamondUuid: "008eb7a7-7ff0-8fd9-a2de-bade2081c7c0"
-uuid: "53db4188-202d-88d8-b7df-db242e9ca383"
+coordinate: "superficial · 2/share · 65743029"
+contentUuid: "9ab25a16-6640-5e8c-be9d-a55ad1590b50"
+diamondUuid: "ff8c0e76-54a1-847d-a478-4c1225286d2b"
+uuid: "65743029-0556-8382-ae45-2f6963f1e076"
 horo: 2
 typography:
   partition: superficial
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4a78bd73-2b2f-8b0a-9dc3-c008cf6a6024"
+  computationUuid: "e6dc0a7d-4c92-86b7-b72c-46142bc5b498"
   stages:
     - stage: path
       stageUuid: "062bf8dd-0228-8a3b-8f66-858862808df4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "33ccef7b-d72f-80f5-b770-4f2a0d7a0ac1"
     - stage: horo
-      stageUuid: "ae41acc5-f565-8221-9c23-a8861b5ac67a"
+      stageUuid: "37dcbb98-81fd-8443-bc96-197b87161cde"
     - stage: seal
       stageUuid: "6e50f334-3a24-8456-a219-6bd47b5b9abd"
     - stage: uuid
-      stageUuid: "5a5cd2b3-e2bd-840f-9abb-f0364ab3c3b9"
+      stageUuid: "e24f4261-4dab-899b-b6be-ebe4f8b329d2"
 version: 2
 ---
 # superficial

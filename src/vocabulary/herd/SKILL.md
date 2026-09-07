@@ -2,18 +2,18 @@
 name: herd
 description: "Use when a managed group of animals is the unit of aggregation — the herd (cattle/swine), flock (sheep/poultry), drove or mob; one production and accounting unit holding many animals. The livestock twin of lots/cohort: animals grouped, moved, grazed, and measured together."
 atomPath: "vocabulary/herd"
-coordinate: "vocabulary/herd · 8/crest · cdcee02a"
-contentUuid: "4bd6c1c6-b7e1-5458-b6c4-1fb9bd113003"
-diamondUuid: "f8d0c0f3-3a27-8e7c-b2d3-644e2d6e3c2f"
-uuid: "cdcee02a-4bbf-84aa-8fea-7273d8e97fea"
-horo: 8
+coordinate: "vocabulary/herd · 5/round · a609a1a9"
+contentUuid: "af23c084-8194-5481-b03d-3441f72e7e3d"
+diamondUuid: "4d7966d9-64a4-8f57-a2ed-5ce903bf5d83"
+uuid: "a609a1a9-0100-87b7-82f7-56dd171557ac"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 57
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b0f38d63-a341-81bf-921a-1be54183f32f"
+  computationUuid: "0f0bdabc-3b8e-8f1f-a9e0-019db89b990b"
   stages:
     - stage: path
       stageUuid: "c0f4fc0f-201f-85eb-a459-a531ab6b9960"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "084026f7-0447-8259-8098-ed179cc4883a"
     - stage: horo
-      stageUuid: "c92edc4e-063d-853c-a0bd-805586312200"
+      stageUuid: "fde68118-e171-881b-9ab5-406b4eedf9a1"
     - stage: seal
       stageUuid: "1e7d892c-e541-808d-90ef-a0623205d607"
     - stage: uuid
-      stageUuid: "b6b19f79-78f8-8909-a731-8a7dc2d27608"
+      stageUuid: "397181d6-03e6-8994-8c22-b6a5e1c7dd3a"
 version: 2
 ---
 # herd — the managed animal group; the livestock unit of aggregation

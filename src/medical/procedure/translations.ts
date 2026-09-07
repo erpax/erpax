@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "procedure",
-    "uuid": "a3d154e6-708d-8484-9d3a-d2b1979e8cd2",
+    "uuid": "d3adde63-790e-893b-a167-c804588a45fe",
     "words": [
       "procedure"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about procedure as a medical facet of medical — vocabulary pivot to @/procedure; nested not duplicated.",
-    "uuid": "d069f46b-3850-89a0-a151-7249a21f936e",
+    "uuid": "5a34db34-ee7b-8743-9ed4-139c7532344f",
     "words": [
       "use",
       "when",

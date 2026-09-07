@@ -2,11 +2,11 @@
 name: endorse
 description: "Use when reasoning about endorse as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/endorse"
-coordinate: "vocabulary/endorse · 8/crest · 73163be3"
-contentUuid: "f78ac641-06f4-59f7-aaca-ec3b01a7a7d6"
-diamondUuid: "6b8fd088-c43d-8dbc-b4c7-674c96e48ded"
-uuid: "73163be3-f457-8c6c-8b24-64f1e54e7583"
-horo: 8
+coordinate: "vocabulary/endorse · 1/base · b61665bb"
+contentUuid: "bf0bdcf3-2068-52f0-ae43-4bd1e74437f5"
+diamondUuid: "60093468-8d95-89c6-a1f9-70e34d0c40d9"
+uuid: "b61665bb-d977-835a-a8c5-c9f46ae0941b"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "46c1f4b6-d0ae-8856-9449-30ebb0a7f82a"
+  computationUuid: "01fa603c-bb61-8dd7-b275-84c74bfcbb46"
   stages:
     - stage: path
       stageUuid: "e0df94dd-0cdd-8538-bacb-dc9f5c3f693b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8a862f23-6bb2-84d3-821f-a4461288769d"
     - stage: horo
-      stageUuid: "d7fafff0-68e8-8c13-b567-1f71491ba7dc"
+      stageUuid: "918179a7-0a26-8816-bcde-42a4f7890aab"
     - stage: seal
       stageUuid: "85e02670-108d-83a6-be17-00f4765ffb25"
     - stage: uuid
-      stageUuid: "393954fb-015d-8c3e-84ff-a9dc5718a5a6"
+      stageUuid: "1721cd05-bd76-82f3-ba39-c57764ca263c"
 version: 2
 ---
 # endorse

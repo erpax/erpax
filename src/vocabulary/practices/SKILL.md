@@ -2,11 +2,11 @@
 name: practices
 description: Use when reasoning about practices — A MedicalOrganization where the IndividualPhysician practices.
 atomPath: "vocabulary/practices"
-coordinate: "vocabulary/practices · 1/base · a5d7ba03"
-contentUuid: "c96824dd-e82b-59d8-831c-803011acd229"
-diamondUuid: "d5574812-426a-8a88-9d80-1c92733c1ad4"
-uuid: "a5d7ba03-7dee-8edf-b5ed-4f72e173f680"
-horo: 1
+coordinate: "vocabulary/practices · 8/crest · 50185512"
+contentUuid: "be3ad5a7-d990-557f-a61a-550be4791c67"
+diamondUuid: "eff6735a-1a3a-8105-a896-f92268a66377"
+uuid: "50185512-4578-8d9d-aedf-221b8391e619"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "40ed1552-c0ac-8905-8b43-0b8cfb5aa98d"
+  computationUuid: "820a539b-da04-826d-bf42-43227800e12c"
   stages:
     - stage: path
       stageUuid: "4bb65073-062a-8211-92ac-fa896c6dc6d1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4da8a26d-30c5-8c67-a375-8d8b180eb9d4"
     - stage: horo
-      stageUuid: "75d9a5c2-ac98-8af3-811b-8a6f07157294"
+      stageUuid: "baca79bc-c5ad-8d2b-9071-8bb25f806099"
     - stage: seal
       stageUuid: "ac8e6686-ee82-88df-b55e-1ce158fd8d97"
     - stage: uuid
-      stageUuid: "1506f49e-3f1d-852d-8405-e84115d376af"
+      stageUuid: "7a332f28-7229-86fd-98aa-294ab67213db"
 version: 2
 ---
 # practices

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "change",
-    "uuid": "355adb79-7566-8cd8-bff4-adbc2e5f28dd",
+    "uuid": "d918a74f-9de2-855c-9747-dd798d3ec542",
     "words": [
       "change"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a fiscal period config is amended — the beforeChange hook that validates the amended config and chains its audit leaf. Read the gap before relying on it: it does NOT regenerate the calendar and does NOT write a snapshot, though its banner claimed both, and fiscal-calendars is written by a seed and nothing else.",
-    "uuid": "cf038280-0777-8c13-8a1a-318aa272f5ce",
+    "uuid": "f65cb82f-8436-8695-98ec-764008991123",
     "words": [
       "use",
       "when",

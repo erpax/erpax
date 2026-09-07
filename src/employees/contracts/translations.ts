@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "contracts",
-    "uuid": "0305a368-9811-89cb-a27d-c44b2fa62578",
+    "uuid": "daf0dab7-6fd8-8a2f-9093-c7b7ea312774",
     "words": [
       "contracts"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling the employment contract — the labour anchor a work shift is worked under (etrima work_shifts reference it, 376 780 rows). A homonym of the IFRS-15 customer contract, deliberately distinct by path: this is the labour-law agreement with an employee (Bulgarian Кодекс на труда чл.67/68/70), not the revenue agreement with a customer. legalGround is open text because one article is written four ways in real data; an absent endDate IS the indefinite contract.",
-    "uuid": "ee9415b0-3039-8247-8b66-5604a8d38908",
+    "uuid": "36c73168-4e68-821a-b2b4-cad94c12b3e2",
     "words": [
       "use",
       "when",

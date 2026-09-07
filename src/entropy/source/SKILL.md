@@ -2,11 +2,11 @@
 name: source
 description: "Use when a key must be born from randomness you can prove — seed quality is established at the source and across the fleet, never by inspecting the seed. A CSPRNG on a weak seed is indistinguishable from one on a strong seed, so no per-seed statistical test appears here by design. attest is an HMAC under a key only genuine hardware holds; admit refuses a forged tag, a short seed, and the same seed arriving from a second device (the deterministic-RNG fingerprint no single device can see). No key derives from an un-admitted seed."
 atomPath: "entropy/source"
-coordinate: "entropy/source · 7/descent · 80134a80"
-contentUuid: "ef920c22-48b2-5655-8049-3632cb4b7c17"
-diamondUuid: "c0ce6ec0-2f57-8bba-a7e5-721182a04a05"
-uuid: "80134a80-4379-809a-8bc4-b7d0a6e9e35f"
-horo: 7
+coordinate: "entropy/source · 4/weave · 7dc2320d"
+contentUuid: "6fa36d7b-6734-5364-93b4-f7c409186c2b"
+diamondUuid: "b6e2cea0-7203-8fe2-b6cf-2f1f5521be41"
+uuid: "7dc2320d-62e3-8b36-80dd-e511eb627363"
+horo: 4
 typography:
   partition: entropy
   bondDegree: 67
@@ -18,7 +18,7 @@ standards:
   - RFC 2104 — HMAC
 bindings: []
 signatures:
-  computationUuid: "6d6e6863-d2c1-8d3b-904b-7b998372f2cf"
+  computationUuid: "49402259-9200-8a9c-a602-443f48fe2073"
   stages:
     - stage: path
       stageUuid: "7f15c89d-c1da-8755-b37a-33f172d9585c"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "1f8aae9c-56e5-8761-91d8-5eada6c219d4"
     - stage: horo
-      stageUuid: "ae913794-7bc2-81df-81de-d26fc051b3fc"
+      stageUuid: "df955b3e-8c30-8f8a-9228-ff8868149f0f"
     - stage: seal
       stageUuid: "77026cd8-0675-8357-bcde-aa4fa49f9a71"
     - stage: uuid
-      stageUuid: "5ddb773e-e58f-8051-95fd-5abdd55aae85"
+      stageUuid: "66c78940-1555-81c4-af9c-94499819b1c5"
 version: 2
 ---
 # entropy/source — proven at the source and across the fleet, never by inspection

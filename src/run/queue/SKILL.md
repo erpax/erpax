@@ -2,18 +2,18 @@
 name: queue
 description: "Use when a declared Cloudflare queue consumer must actually reach a handler — consumeQueueBatch runs the payload jobs sweep (the queue message is a nudge; the database holds the work) and acks the whole batch on a green sweep, retries the whole batch otherwise, so max_retries moves a misconfigured batch to erpax-dlq where it is visible. Found because wrangler deploy FAILS CLOSED on a consumer with no queue() export — code 11001 — the deploy-blocking form of an unraised case."
 atomPath: "run/queue"
-coordinate: "run/queue · 7/descent · 62fe89ec"
-contentUuid: "6e933e57-4766-5870-ae70-4777583d4c8c"
-diamondUuid: "40e3b0d6-ce7d-8c2f-bd26-237c1ce86e1a"
-uuid: "62fe89ec-bb67-8d48-8d74-d0b3d15effdc"
-horo: 7
+coordinate: "run/queue · 5/round · 1d5654b6"
+contentUuid: "2dd66fd0-1ed5-511f-b6f8-01924d25dbf2"
+diamondUuid: "ff55e17b-fc6a-8fc2-a241-5df59215ee1d"
+uuid: "1d5654b6-9dba-86d2-864d-63a532d7cfe4"
+horo: 5
 typography:
   partition: run
   bondDegree: 31
 standards: []
 bindings: []
 signatures:
-  computationUuid: "daf1415c-6bd7-8fc2-a678-5ec007e17096"
+  computationUuid: "664e1acc-a5c6-8646-9113-7fc11c307cca"
   stages:
     - stage: path
       stageUuid: "146f62e1-40af-82f3-9917-8745cd896e73"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "301614fb-50d1-8ed0-a17a-f0fce80705e5"
     - stage: horo
-      stageUuid: "dedcfb96-119d-8096-9e3b-ab766f44bf9e"
+      stageUuid: "16363270-96c1-8669-a2b5-7c80d92db4f8"
     - stage: seal
       stageUuid: "ad467567-bf53-8b6a-9d9a-70740d785cf6"
     - stage: uuid
-      stageUuid: "e9c8407d-8334-8514-bb63-0ecbe7fe0c0f"
+      stageUuid: "30f06ac6-5007-89e5-9094-91ae689731a0"
 version: 2
 ---
 # run/queue — the consumer the declared queues never had

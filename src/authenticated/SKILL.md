@@ -2,11 +2,11 @@
 name: authenticated
 description: "Use when gating a Payload collection or field on a logged-in session — the access predicate that grants only when `req.user` exists, denying every anonymous caller."
 atomPath: authenticated
-coordinate: "authenticated · 8/crest · dc7275d4"
-contentUuid: "26236ff2-10bc-5207-97de-de951374788f"
-diamondUuid: "64a4f4af-0f00-8a16-9e71-eb762d1b6b74"
-uuid: "dc7275d4-99da-8c60-af98-7517f65eecfc"
-horo: 8
+coordinate: "authenticated · 4/weave · f94cfd86"
+contentUuid: "20421d3b-f341-5e66-9378-7db954d7e79d"
+diamondUuid: "d3bef848-b256-8860-ab6e-a6f4c5b63e73"
+uuid: "f94cfd86-56b1-8f72-b6d3-91852f1ac8b2"
+horo: 4
 typography:
   partition: authenticated
   bondDegree: 9
@@ -15,7 +15,7 @@ standards:
   - "SOC-2 CC6.1 logical-access-controls"
 bindings: []
 signatures:
-  computationUuid: "3818df8d-0a72-8805-9b2f-75c3cec1f380"
+  computationUuid: "f8e9d610-83d8-81cd-b42f-cc29cc819b74"
   stages:
     - stage: path
       stageUuid: "d354e2ad-c7ff-87b4-8a30-6d705d6c1a65"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "c0389eea-483e-8038-8ce4-6072c8310497"
     - stage: horo
-      stageUuid: "408c066d-8072-8441-bd80-ccc408d3ca16"
+      stageUuid: "258011c4-3c79-8740-8b52-0b5203cc4076"
     - stage: seal
       stageUuid: "12f6223e-5f3b-83c8-b7f5-6d45050d75b2"
     - stage: uuid
-      stageUuid: "e783eb02-7570-815f-893d-4121ec60eff1"
+      stageUuid: "05445708-4f11-8148-a8d0-720396df2f2b"
 version: 2
 ---
 # authenticated — logged-in read predicate

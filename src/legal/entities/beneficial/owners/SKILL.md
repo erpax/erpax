@@ -2,11 +2,11 @@
 name: owners
 description: "Use when registering ultimate beneficial owners of a legal entity — direct/indirect ownership percent, control type, PEP status, KYC check link, and AMLD-5/CTA-required identification. The AML/Corporate-Transparency-Act UBO register."
 atomPath: "legal/entities/beneficial/owners"
-coordinate: "legal/entities/beneficial/owners · 5/round · b8bb48ba"
-contentUuid: "6092fb64-5a7e-56d0-b0d0-f57e596cfc54"
-diamondUuid: "b489a47c-93ea-8f43-91a6-55f3fb7462e4"
-uuid: "b8bb48ba-5588-8b80-a932-ffa84b82e04f"
-horo: 5
+coordinate: "legal/entities/beneficial/owners · 2/share · 907292ec"
+contentUuid: "80d8d3f5-c46c-5372-9d25-941eaaa7b6ee"
+diamondUuid: "474c970a-eba2-8775-96c5-0240012d5d54"
+uuid: "907292ec-662c-8ba1-bad0-47ebf12ef75d"
+horo: 2
 typography:
   partition: legal
   bondDegree: 24
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "db32851b-5b90-81cb-b93f-c598a32d3149"
+  computationUuid: "f45b8b51-2f65-89dd-a6dd-38188599493f"
   stages:
     - stage: path
       stageUuid: "046d4b8f-713f-8dd0-acb3-0d78854211d4"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "995e00a5-2198-8bb7-9893-6259d70fee68"
     - stage: horo
-      stageUuid: "cd32aed9-3a4c-8920-a900-49750d28468c"
+      stageUuid: "0b57433f-c6a8-805e-af25-ad2bbeab1e2c"
     - stage: seal
       stageUuid: "fc402a99-a20c-830c-bb58-783fdcbb271f"
     - stage: uuid
-      stageUuid: "c580ce4c-47da-87c6-b78d-507f2fb3b933"
+      stageUuid: "7f3dc936-b3f7-8d2d-9437-8ae08ba95b26"
 version: 2
 ---
 # beneficial-owners

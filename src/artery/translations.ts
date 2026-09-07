@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "artery",
-    "uuid": "baf908f2-84cd-8632-9d3d-7e6e0b87d01a",
+    "uuid": "c46a662b-5fad-826d-852a-111cc97deb2f",
     "words": [
       "artery"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax's outbound vessel — the Windkessel organ. The artery carries value away from the heart, its elastic wall storing systolic volume and recoiling in diastole to smooth pulsatile output into steady peripheral flow: the cache/buffer in flesh. Three properties (Windkessel smoothing · elastic recoil · conserved mass balance) are computed and mapped — a structural isomorphism — onto erpax.",
-    "uuid": "68c8677f-6db4-864d-9f81-4c7f5f66e9e3",
+    "uuid": "d745cce3-cfa0-8451-8a4f-32c808dab64d",
     "words": [
       "use",
       "when",

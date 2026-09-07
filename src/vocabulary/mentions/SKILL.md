@@ -2,11 +2,11 @@
 name: mentions
 description: "Use when reasoning about mentions — Indicates that the CreativeWork contains a reference to, but is not necessarily about a concept."
 atomPath: "vocabulary/mentions"
-coordinate: "vocabulary/mentions · 8/crest · c89c6f75"
-contentUuid: "00d05d71-a8ce-5f1d-8135-a306104d09a7"
-diamondUuid: "d502ea29-ca74-8333-89ec-a58dd49fc49f"
-uuid: "c89c6f75-9f59-8e6a-a182-6b647cfdb248"
-horo: 8
+coordinate: "vocabulary/mentions · 4/weave · d6d35eb1"
+contentUuid: "13c00ba8-5bb7-5f0a-9abf-85c1a228ef0e"
+diamondUuid: "01f5a093-9e33-863c-b0c3-14825400e21a"
+uuid: "d6d35eb1-083c-8750-a568-b3912a037a99"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "feff47ba-29a7-82f1-a08c-e50a1343d48f"
+  computationUuid: "7829d3b3-d683-8e7f-bbf0-f44864f83651"
   stages:
     - stage: path
       stageUuid: "14e9f0d5-80ee-873b-961e-5c0406ff7b6f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bfd0bbe2-5c81-897a-b772-964be6719cf5"
     - stage: horo
-      stageUuid: "0a545ccb-4495-85c1-b6b0-0edb0055d37d"
+      stageUuid: "a5688e1d-c150-802b-bbf5-a06856d4428e"
     - stage: seal
       stageUuid: "efb13afa-4409-878d-9cae-118202bfce09"
     - stage: uuid
-      stageUuid: "df6e28ae-9afd-8796-8b02-b1df396fc577"
+      stageUuid: "c02accd6-e5a0-8176-b140-1e519efbc5f7"
 version: 2
 ---
 # mentions

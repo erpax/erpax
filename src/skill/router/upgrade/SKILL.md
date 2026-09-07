@@ -2,18 +2,18 @@
 name: upgrade
 description: "Use when SKILL.md frontmatter must self-upgrade from live corpus state — connectFrontmatter folds diamond, matrix, typography, standards, bonds, and per-stage signatures into one connected graph."
 atomPath: "skill/router/upgrade"
-coordinate: "skill/router/upgrade · 2/share · 614e831b"
-contentUuid: "e6486f91-4f43-5d34-adf6-74249af51aa5"
-diamondUuid: "1663a688-f7e6-8448-beb4-56ff0457418e"
-uuid: "614e831b-0030-86f5-bc69-5c80333b56f8"
-horo: 2
+coordinate: "skill/router/upgrade · 1/base · bc20f403"
+contentUuid: "b3a5ce5a-71a2-5eff-873b-4ebdfe2e9a4c"
+diamondUuid: "5ade5f70-9c49-8972-9311-11aaef171523"
+uuid: "bc20f403-2d8b-8e44-a758-216baced24db"
+horo: 1
 typography:
   partition: skill
   bondDegree: 26
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c18cce35-ddef-8d38-bc13-aa0c0c08e08b"
+  computationUuid: "9b634b63-33f0-85f4-b1a5-cd68d24f2f6c"
   stages:
     - stage: path
       stageUuid: "08fa6562-690a-8980-8cff-5da4617f17e8"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9e0a82a7-ba2b-876a-a0ca-9c06fcb887ac"
     - stage: horo
-      stageUuid: "5d2444bc-c59b-8f2b-8a13-a5ced743dfae"
+      stageUuid: "4db871f0-7b35-8034-a0da-3039e46bab20"
     - stage: seal
       stageUuid: "112cda69-592c-8dc2-bac2-4f37c2328402"
     - stage: uuid
-      stageUuid: "8646b358-7e85-8777-a64a-fc5b9f86b2f0"
+      stageUuid: "24101b11-3e08-86cc-ad1a-cba1d5eacc5c"
 version: 2
 ---
 # upgrade

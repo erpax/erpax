@@ -2,11 +2,11 @@
 name: test
 description: "Use when reasoning about test — A single-word atom — collided out of schema.org compounds (no multiword disguise; sti · collapse · merge)."
 atomPath: test
-coordinate: "test · 7/descent · 8454d879"
-contentUuid: "cbefbe81-d91f-568c-9d62-db3960f85692"
-diamondUuid: "208f2bca-b30c-8922-9a6d-095c1b1b3f8b"
-uuid: "8454d879-d059-8d58-8fd0-db336e292e57"
-horo: 7
+coordinate: "test · 8/crest · 7d716d84"
+contentUuid: "ab9caafc-b22a-5522-9d3e-3610c16f2d33"
+diamondUuid: "8c60f507-c9f5-8437-88d6-6db0a17e7284"
+uuid: "7d716d84-ee1b-800e-a249-e185303fb11e"
+horo: 8
 typography:
   partition: test
   bondDegree: 0
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6c5f039d-e430-8672-9795-6a78e4edb6e0"
+  computationUuid: "852550fb-638c-844c-864b-6c70951d1639"
   stages:
     - stage: path
       stageUuid: "7781ffb6-7e5b-8fe1-9194-52b39eeaa53b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3266ce64-6407-8224-b2fd-79c6d8ffc353"
     - stage: horo
-      stageUuid: "1b2541f7-0fa3-814e-9ab3-421637e34025"
+      stageUuid: "0f023ec7-875c-86d4-9e01-d993569e40f2"
     - stage: seal
       stageUuid: "677b30ff-ca4c-8d09-bc03-0e46f27b935a"
     - stage: uuid
-      stageUuid: "a4b406fb-43e8-8a62-9c79-164d8fed93ae"
+      stageUuid: "472bdcbf-33d9-8570-9774-e3b44f81d3c3"
 version: 2
 ---
 # test

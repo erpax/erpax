@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "receivable",
-    "uuid": "f47e8e63-cfc9-8a2c-8952-63a7561cf1ea",
+    "uuid": "0b6cfd53-379f-8188-9ef2-801a3a8d509e",
     "words": [
       "receivable"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about receivable — The A/R field factories: the shapes an invoice carries — invoice number, status, due date, payment terms, A/R analysis. (the type module) is a set of these; this atom is the one.",
-    "uuid": "23895183-d22b-84a9-873c-c8cee87290ba",
+    "uuid": "798d34b9-f8ed-8a85-8b46-2441301d6d08",
     "words": [
       "use",
       "when",

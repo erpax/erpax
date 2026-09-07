@@ -2,10 +2,10 @@
 name: entities
 description: "Use when registering subsidiaries, associates, joint ventures or the group head for consolidation — legal name, LEI, registration number, functional/presentation currency, ownership %, consolidation method, and reporting framework. The IFRS-10 §B86 entity master distinct from DB tenants."
 atomPath: "legal/entities"
-coordinate: "legal/entities · 4/weave · 5b56577a"
-contentUuid: "0a72e228-e29a-5acc-ac7e-313985790546"
-diamondUuid: "d68aaa5c-66ef-8315-ad5a-fc014730552a"
-uuid: "5b56577a-5cae-8f49-925d-e352156fa3d3"
+coordinate: "legal/entities · 4/weave · c179b536"
+contentUuid: "40b75dbc-f732-5002-b13a-0b9ffae201fb"
+diamondUuid: "2513d119-d379-8ac1-a29c-346e7f6149d3"
+uuid: "c179b536-f32b-8904-9112-5f06fb91324a"
 horo: 4
 typography:
   partition: legal
@@ -46,7 +46,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "9a1f745b-84a3-86b2-a941-6aaa2b2aa398"
+  computationUuid: "a393b057-aa68-8566-859d-c25ba9fd0b5e"
   stages:
     - stage: path
       stageUuid: "071d9fef-2614-8839-9d03-543a4b7a547d"
@@ -57,11 +57,11 @@ signatures:
     - stage: links
       stageUuid: "03ed07a5-c813-8a30-a488-77547cc827ea"
     - stage: horo
-      stageUuid: "29e87078-12a3-8135-a7ba-fed19d6f4a81"
+      stageUuid: "14dda32a-2562-8699-ba37-05c43949a4d6"
     - stage: seal
       stageUuid: "71a0e73d-173a-8a07-afaa-dd00c380f62d"
     - stage: uuid
-      stageUuid: "81ca962a-1219-8387-8c5b-00d696c466d9"
+      stageUuid: "43d0f667-2a70-83d8-947e-831d8d25d98a"
 version: 2
 ---
 # legal-entities

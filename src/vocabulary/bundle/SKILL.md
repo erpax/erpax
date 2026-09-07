@@ -2,18 +2,18 @@
 name: bundle
 description: "Use when packaging multiple items for joint sale — bundle composition, bundle pricing (vs. component sum), discount rules for bundles."
 atomPath: "vocabulary/bundle"
-coordinate: "vocabulary/bundle · 7/descent · a4610541"
-contentUuid: "ea482750-846b-59c5-b5ff-fefcc57301e1"
-diamondUuid: "b43036e1-af0e-8c21-8e52-ce9ebb8e680a"
-uuid: "a4610541-694c-884a-9e62-d46e580c46a6"
-horo: 7
+coordinate: "vocabulary/bundle · 1/base · 87575849"
+contentUuid: "22f67b44-731f-5cdf-a844-bdf494a453cc"
+diamondUuid: "13043dbe-891b-8224-9f6b-af43f239e61b"
+uuid: "87575849-bf6c-802c-b941-f2254e86fb9e"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 21
 standards: []
 bindings: []
 signatures:
-  computationUuid: "07e0eccd-19d3-8456-b7be-aecedf16cea3"
+  computationUuid: "ac8c0cbf-3b18-8189-b9dc-9ba6101461f6"
   stages:
     - stage: path
       stageUuid: "393bbaf6-d189-8ee9-9694-aa21b4de91b2"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f71a29f9-c127-8769-8d11-858541f32b69"
     - stage: horo
-      stageUuid: "483eaff6-cafc-80db-b835-bd998ba4cd1e"
+      stageUuid: "85f7c26b-7778-8c66-8eaa-6f14b1d89b5c"
     - stage: seal
       stageUuid: "7254473c-e777-87d0-bc58-d039947a5d21"
     - stage: uuid
-      stageUuid: "c54cb9b8-bc04-8b93-81b6-336ce10ab576"
+      stageUuid: "c266693c-ce0f-832f-98ce-277a2a8e0981"
 version: 2
 ---
 # bundle

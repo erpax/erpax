@@ -2,11 +2,11 @@
 name: shipping
 description: "Use when reasoning about shipping as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: shipping
-coordinate: "shipping · 2/share · 500bf8e1"
-contentUuid: "8a816096-d606-5281-9931-8407aaa1e0ef"
-diamondUuid: "9c08a86d-135a-86f0-bb25-289a0a35d1be"
-uuid: "500bf8e1-b548-8181-b51a-6690f132ea78"
-horo: 2
+coordinate: "shipping · 5/round · b8143787"
+contentUuid: "e98e6445-b24d-58af-8c1d-00e9a0900eed"
+diamondUuid: "b294ed76-d284-83c8-962b-77478c8830a8"
+uuid: "b8143787-cd39-85ad-b99c-02d703c93516"
+horo: 5
 typography:
   partition: shipping
   bondDegree: 95
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "54de354e-33c5-8541-a758-c529e321d301"
+  computationUuid: "ba32c010-3443-8e77-8442-89f94febb23f"
   stages:
     - stage: path
       stageUuid: "d1a822f6-1e94-8a35-9caf-bd269ee485ad"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e1fe1ed6-0d8f-85da-ac17-b5ce3473ee4a"
     - stage: horo
-      stageUuid: "f430ba7d-d400-8c90-9069-f6846da40fdd"
+      stageUuid: "430b5414-d7a9-8376-93f7-7c4584686262"
     - stage: seal
       stageUuid: "2ca55561-2fce-84a3-9df1-f28b106d9d1e"
     - stage: uuid
-      stageUuid: "8a33da80-06aa-8ebe-9f5f-16d733612ab3"
+      stageUuid: "175cdc7f-1cfc-806e-93e0-320eba02fe03"
 version: 2
 ---
 # shipping

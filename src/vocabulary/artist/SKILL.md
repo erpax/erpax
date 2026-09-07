@@ -2,11 +2,11 @@
 name: artist
 description: "Use when reasoning about artist — The primary artist for a work in a medium other than pencils or digital line art--for example, if the primary artwork is done in watercolors or digital paints."
 atomPath: "vocabulary/artist"
-coordinate: "vocabulary/artist · 4/weave · 580d967f"
-contentUuid: "a3498242-6172-55f1-ae11-429041222ea9"
-diamondUuid: "eb0b80ca-eee6-882c-9596-f7c6fd2b64af"
-uuid: "580d967f-9733-8c9f-9950-6b2f823cab19"
-horo: 4
+coordinate: "vocabulary/artist · 7/descent · de2f25a5"
+contentUuid: "27f59330-547c-5619-904f-530ae69ef4ae"
+diamondUuid: "fa9be5f6-e1a1-8046-8239-c7b69402a3c6"
+uuid: "de2f25a5-5be5-8b48-99d6-c5b1ced6d3c0"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3029bf9e-cdca-8151-a759-5806922bbedb"
+  computationUuid: "0829e667-6cd4-8b8f-bc0c-9525539cb8b9"
   stages:
     - stage: path
       stageUuid: "56f4c569-86b9-8519-a638-84cc290ec67f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "513b193f-ef97-89fd-ba6a-1f217dbb1be2"
     - stage: horo
-      stageUuid: "8a3d2370-1612-89b7-9dcd-1a826284b830"
+      stageUuid: "e70aef49-41b3-8942-9f76-5708a04dd818"
     - stage: seal
       stageUuid: "f3f9c184-112d-82f4-a71b-eb7dc9164a74"
     - stage: uuid
-      stageUuid: "fa5f43aa-e2d8-89d8-b884-4e46581e12a2"
+      stageUuid: "1c0616fb-5bcc-8e87-83d7-246e60770e7b"
 version: 2
 ---
 # artist

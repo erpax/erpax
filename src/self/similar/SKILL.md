@@ -2,11 +2,11 @@
 name: similar
 description: "Use when reasoning about why the same form holds at every scale of erpax — field → collection → plugin → erpax → agent — the fractal recursion the sequence embodies. The octave lift (×10 mod 9) preserves position (scale-invariance) and the unit Cayley table is a hologram (6 generators → 36 cells); self-similarity is zero-entropy."
 atomPath: "self/similar"
-coordinate: "self/similar · 2/share · 65a35e68"
-contentUuid: "baec70a5-cb1a-54c7-b73a-8e8220e377a9"
-diamondUuid: "7a87279c-9eed-8871-8edf-03ee80ba638b"
-uuid: "65a35e68-9f38-8017-856a-f8df7d3c7872"
-horo: 2
+coordinate: "self/similar · 5/round · c779b392"
+contentUuid: "5248bc70-8673-5d44-b13a-aba5e032a196"
+diamondUuid: "a979a9b0-83da-8a4c-ad5f-a8cc7bb44c62"
+uuid: "c779b392-92d6-8129-be69-2bb31228b9aa"
+horo: 5
 typography:
   partition: self
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "the hologram — 6 generators → 36 Cayley cells, 0 free parameters"
 bindings: []
 signatures:
-  computationUuid: "8134540e-078c-8881-a287-5f039db9886a"
+  computationUuid: "8f2fcbcb-0640-8150-8d13-5b90d0862945"
   stages:
     - stage: path
       stageUuid: "f32b167b-4485-8d15-895b-692cf3d66965"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4f7729dd-95f9-8fde-93c0-c52ca1abf9c2"
     - stage: horo
-      stageUuid: "2abe389c-941c-84c1-ae6e-d862ae54cb39"
+      stageUuid: "eb62fd07-ba87-8679-aea0-fb71a7d3e951"
     - stage: seal
       stageUuid: "2c3ea41e-c147-8dec-9ae1-fb78ef7d9277"
     - stage: uuid
-      stageUuid: "773bb04a-667d-8569-844f-fa98534edbbb"
+      stageUuid: "995836d7-acad-8ee6-a619-1a93a5983e2a"
 version: 2
 ---
 # self-similar — the same form at every scale (under [[self]])

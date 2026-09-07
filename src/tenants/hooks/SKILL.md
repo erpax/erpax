@@ -2,10 +2,10 @@
 name: hooks
 description: "Use when reasoning about the tenants collection's Payload hooks — before/after change and validate logic for tenants."
 atomPath: "tenants/hooks"
-coordinate: "tenants/hooks · 3/3 · 01dadb2a"
-contentUuid: "695a5042-8691-5927-86a5-f7c0af604329"
-diamondUuid: "8558be54-6e3a-8e1e-85e1-65d4fb8d5fd6"
-uuid: "01dadb2a-df71-8f59-966c-dcf951e35da1"
+coordinate: "tenants/hooks · 3/3 · af335db0"
+contentUuid: "c7a5c137-1a0f-534d-9f3e-e937d7e5e95f"
+diamondUuid: "d8b31368-b60a-8259-8ce2-9e012d8cc8fd"
+uuid: "af335db0-72fd-8c25-a81c-2d4434347c47"
 horo: 3
 typography:
   partition: tenants
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "80d96f7d-598d-8e17-ac83-a3e9ecb76943"
+  computationUuid: "61e1d53f-b182-800d-84ad-97997204ad6c"
   stages:
     - stage: path
       stageUuid: "d963071e-4a08-8cf6-ace9-c0e2b848f1ab"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ebaded6b-d692-8213-be13-18a986e63a99"
     - stage: horo
-      stageUuid: "11bbe99a-30b9-81b4-8c66-819563ba0b85"
+      stageUuid: "d07c6d0c-d92d-81e6-8cfd-ecd3a6493840"
     - stage: seal
       stageUuid: "467cc5a2-a251-8375-916b-ed664fa71dad"
     - stage: uuid
-      stageUuid: "f3bfc07f-3677-82cf-9f4d-3300b60bfded"
+      stageUuid: "dfd3c52e-cbc1-854e-b447-c32995113b26"
 version: 2
 ---
 # tenants/hooks

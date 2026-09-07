@@ -2,11 +2,11 @@
 name: records
 description: "Use when recording or auditing data-subject consent events — marketing, analytics, profiling, third-party sharing, cookies — with lawful-basis, exact consent text, version, capture method, IP/user-agent evidence, and withdrawal tracking; GDPR Art.6(1)(a)/Art.7 lawful-basis and right-to-withdraw. The append-mostly consent-evidence ledger."
 atomPath: "consent/records"
-coordinate: "consent/records · 2/share · 604ef264"
-contentUuid: "c079ebae-43fb-5d3d-a4c3-03f590856325"
-diamondUuid: "52d728b4-c17c-8088-a7f8-afc9b6e3afe3"
-uuid: "604ef264-40d1-8e6e-817f-7f2cbc1a5aa7"
-horo: 2
+coordinate: "consent/records · 5/round · 7310c097"
+contentUuid: "26c2ef68-4031-58cc-aa6d-cb9cd5cc2d14"
+diamondUuid: "356c0f18-5341-83e6-931c-a286f0f1dd9b"
+uuid: "7310c097-660d-85c1-b6bd-15a6f9aa317a"
+horo: 5
 typography:
   partition: consent
   bondDegree: 30
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "2aaa986e-6923-822f-b07e-c03d639ab013"
+  computationUuid: "39bd871e-96c3-881c-815d-2a19f409da0f"
   stages:
     - stage: path
       stageUuid: "82c5246a-69c9-8a5b-8c1f-8a387dae48dc"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "2c2208ad-7ab5-8821-8e86-8ededa218409"
     - stage: horo
-      stageUuid: "63177342-d1e9-844f-a907-bd6d7765da45"
+      stageUuid: "39fee722-37c4-845d-9066-c40d32de4859"
     - stage: seal
       stageUuid: "812331dd-6c70-829f-bdb0-90903b6b3af3"
     - stage: uuid
-      stageUuid: "e9ab5ac5-ef22-80ab-9951-a25b04d6f6e7"
+      stageUuid: "ee7e06fc-2cce-83b4-b54d-494f7377bb28"
 version: 2
 ---
 # consent-records

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "horo",
-    "uuid": "2fa09fe4-2c0f-86ce-a579-477fa82dc8a9",
+    "uuid": "b436257e-b7de-8635-9bba-b6d53a2c6d0e",
     "words": [
       "horo"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when placing a wave on the horo ring — maps a 1-based ordinal onto the seven-position ring, content-addresses a wave from its features so identical plans fold to the same digest, and composes waves into a single resting step. UNITY is 9, the point a closing wave lands on.",
-    "uuid": "a2994254-1303-80c8-a14c-68422abbc07d",
+    "uuid": "ab397351-500e-8f2e-b7ce-a0713b90d43c",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: report
 description: "Use when a document (balance sheet, SAF-T, VAT return, audit file) must be produced — a report is a standards×format×data superposition collapsed on request, computed not hand-templated, and legislation floors it stricter than any standard."
 atomPath: report
-coordinate: "report · 8/crest · ab0b77f0"
-contentUuid: "f87c5408-f032-5880-99a5-5ab374435601"
-diamondUuid: "f30163ab-a6b0-8adf-b548-522714115f37"
-uuid: "ab0b77f0-1006-8811-9005-ebc92de3ce0c"
-horo: 8
+coordinate: "report · 7/descent · a8f3fb58"
+contentUuid: "0adb2307-a3dd-5e8f-9f7a-a37c00f0983e"
+diamondUuid: "5945369f-e092-8054-b4ca-dda3fcc2913c"
+uuid: "a8f3fb58-048e-89bd-97f7-df222456d10a"
+horo: 7
 typography:
   partition: report
   bondDegree: 25
@@ -30,7 +30,7 @@ standards:
   - СУПТО
 bindings: []
 signatures:
-  computationUuid: "33878ccd-c79a-8722-b451-d6b09b1c305a"
+  computationUuid: "41503484-6b12-8fa2-8d8c-7dcd7a2f44f6"
   stages:
     - stage: path
       stageUuid: "f9222e81-bcee-896b-8db2-b6c29cbc5138"
@@ -41,11 +41,11 @@ signatures:
     - stage: links
       stageUuid: "c6ef00e0-c3db-8673-81c7-3c4acfcedf35"
     - stage: horo
-      stageUuid: "a1a383f2-39e9-855c-9509-29f86ffde479"
+      stageUuid: "da4de1d4-cda6-8e10-98f0-438f3fed4393"
     - stage: seal
       stageUuid: "1c15307f-1e86-8f1b-8dc8-47d8f4e45527"
     - stage: uuid
-      stageUuid: "9ce8869a-df26-843d-90c2-5d944117bd79"
+      stageUuid: "aa002b6a-5f96-8397-896b-b3d1fcadbcb3"
 version: 2
 ---
 # report — the document is a superposition collapsed on request, never a hand-written template

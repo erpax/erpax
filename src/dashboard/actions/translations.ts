@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "actions",
-    "uuid": "22dcec66-4a9c-8949-97e8-1be65a2489ae",
+    "uuid": "eb966d9a-dde0-822d-9dcd-84cfd3c503a0",
     "words": [
       "actions"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about actions — , and take a typed input and return an . Each validates, creates the document, and lets the collection's own hooks do the posting — so a dashboard cannot write an unbalanced entry…",
-    "uuid": "0a9ca1f3-60c1-8362-af0a-e3a041e21fa9",
+    "uuid": "658f284c-b72c-82c6-b008-b1e5b5d0ec34",
     "words": [
       "use",
       "when",

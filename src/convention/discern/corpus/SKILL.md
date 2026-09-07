@@ -2,11 +2,11 @@
 name: corpus
 description: "Use when reasoning about corpus — Use to see every security claim erpax makes as one number — passing verdicts over total public claims across the registered claim-bearing atoms. The evidence PROSE is declared beside each atom's claims and the OUTCOME comes from actually running the named suites, because neither half alone is evidence: a declaration with no run is a tautology, a green run with no declaration says nothing about what was tested. Fails closed on a failing verdict; reports the ratio without ratcheting it, since a compass is a legitimately open surface with a named owner."
 atomPath: "convention/discern/corpus"
-coordinate: "convention/discern/corpus · 2/share · c68785e8"
-contentUuid: "3b326962-8e9c-5abe-b82f-21a3cc9604ff"
-diamondUuid: "dcfe8091-9878-88c0-aa84-a4613a077dbd"
-uuid: "c68785e8-0cfa-8873-a0e9-7afe80b028cb"
-horo: 2
+coordinate: "convention/discern/corpus · 4/weave · 10a96bac"
+contentUuid: "108021e4-e79d-5deb-b9ba-49913790cce4"
+diamondUuid: "2feff0c3-08a2-8daa-b33b-4179bfaf7f0d"
+uuid: "10a96bac-1ef7-8fdf-a0fe-c728a6d72592"
+horo: 4
 typography:
   partition: convention
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC 25010:2023 §5.5 — testability: a claim is measured or it is not made"
 bindings: []
 signatures:
-  computationUuid: "23fbd63c-c513-833d-96e7-f8ddd9111f9b"
+  computationUuid: "1cf7f754-7248-81ca-a164-5d9f18642352"
   stages:
     - stage: path
       stageUuid: "10228e1a-fc74-8120-aa25-b9a0ecfd4f25"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8be8a083-5acd-856b-98c2-8968e03ff446"
     - stage: horo
-      stageUuid: "24163859-f5a7-821d-93c6-9e8da33cfc39"
+      stageUuid: "22ea1500-ddd4-8218-96a6-2606f6b16aec"
     - stage: seal
       stageUuid: "923d4526-dc40-8266-bcf1-ffbe2565cece"
     - stage: uuid
-      stageUuid: "c2440bc6-b52f-866d-8d15-4bed326ee6ba"
+      stageUuid: "a307bc81-af13-8c4d-89ce-c6412caae582"
 version: 2
 ---
 # convention/discern/corpus — every security claim, as one number

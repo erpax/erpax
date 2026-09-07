@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "deploy",
-    "uuid": "49c7fb5e-39f0-8701-9738-8015155d23c7",
+    "uuid": "6e884344-4785-898c-a5dd-46bf77368338",
     "words": [
       "deploy"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when shipping erpax to the edge — deployment is the collapse of the codebase into live reality (the model becomes real on main); gate-pass then build a content-addressed artifact, migrate D1, push the Worker, a release is finality one-way with rollback to a prior snapshot.",
-    "uuid": "b29fc466-60f2-8bbf-9e50-dbd9876a3363",
+    "uuid": "a95e2f6b-50d5-89ce-b46f-034ae5e65335",
     "words": [
       "use",
       "when",

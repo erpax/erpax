@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "records",
-    "uuid": "604ef264-40d1-8e6e-817f-7f2cbc1a5aa7",
+    "uuid": "7310c097-660d-85c1-b6bd-15a6f9aa317a",
     "words": [
       "records"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording or auditing data-subject consent events — marketing, analytics, profiling, third-party sharing, cookies — with lawful-basis, exact consent text, version, capture method, IP/user-agent evidence, and withdrawal tracking; GDPR Art.6(1)(a)/Art.7 lawful-basis and right-to-withdraw. The append-mostly consent-evidence ledger.",
-    "uuid": "afe417c6-46eb-860b-b0f6-f2f54d01e8dc",
+    "uuid": "740d6e0a-6595-83f1-a4e2-a089e058e611",
     "words": [
       "use",
       "when",

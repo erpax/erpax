@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "actors",
-    "uuid": "f2f43950-a728-8669-8ed9-020b6bf9c21e",
+    "uuid": "1ed1ba2f-9df1-809e-adc0-08cb1fb47f09",
     "words": [
       "actors"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about actors — An actor, e.g. in TV, radio, movie, video games etc. Actors can be associated with individual items or with a series, episode, clip.",
-    "uuid": "edc8072b-1630-8f58-9f66-3aca0e18f829",
+    "uuid": "99d79704-f1c8-850f-a401-c3416c833f6e",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: material
 description: "Use when reasoning about material — A material that something is made from, e.g. leather, wool, cotton, paper."
 atomPath: "vocabulary/material"
-coordinate: "vocabulary/material · 5/round · d547d0d2"
-contentUuid: "92349e56-caf5-5e8d-918e-75e76b708163"
-diamondUuid: "928142df-d79f-8482-9856-0a98c008c1d1"
-uuid: "d547d0d2-922f-815f-93f9-f1fe97c28aec"
-horo: 5
+coordinate: "vocabulary/material · 7/descent · e4f188b8"
+contentUuid: "bc3879e4-6440-52df-aec0-d39df5fb7cfe"
+diamondUuid: "cb364213-f664-898b-8291-63228b021e24"
+uuid: "e4f188b8-1b22-8c11-b732-47ea578cd01c"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "93dee737-7ee3-8f68-8036-dc6bf6b0e871"
+  computationUuid: "a2878d18-af3d-8acb-96ed-edfb3238a53a"
   stages:
     - stage: path
       stageUuid: "d61f72ab-5e9f-8409-b8b9-85d276f3c335"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "37f2225b-dfc8-88bc-9523-108dba2c839e"
     - stage: horo
-      stageUuid: "ea617f8d-15b3-839f-b0c2-b88d704446d9"
+      stageUuid: "8d7fc91a-5b09-8ae8-bc28-71c5f2e48809"
     - stage: seal
       stageUuid: "20c0c565-504c-810c-b14d-f48cc49eab78"
     - stage: uuid
-      stageUuid: "52ea0e47-122c-81ff-8bce-07ac4b182cb2"
+      stageUuid: "696c6f83-5104-8e47-9978-e6727551ea79"
 version: 2
 ---
 # material

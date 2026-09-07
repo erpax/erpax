@@ -2,11 +2,11 @@
 name: factor
 description: "Use when reasoning about factor as a medical facet of medical — vocabulary pivot to @/factor; nested not duplicated."
 atomPath: "medical/factor"
-coordinate: "medical/factor · 1/base · 84a7dd71"
-contentUuid: "68da2420-6bc5-5477-aa8d-b43e596b29c6"
-diamondUuid: "0f251d5c-cd9f-8bec-bf05-ee443be0a545"
-uuid: "84a7dd71-6385-8574-a8a4-3bbb485abf67"
-horo: 1
+coordinate: "medical/factor · 5/round · 71f5c2c4"
+contentUuid: "0ff89226-f781-513b-88b9-0e242e11c37b"
+diamondUuid: "0fa65deb-be3c-8ea4-beae-77130f8a848c"
+uuid: "71f5c2c4-4567-8a73-8eaa-295c45addc5b"
+horo: 5
 typography:
   partition: medical
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "aab5edd4-e09a-806e-9bed-9350613a78bc"
+  computationUuid: "c172e88f-c403-8658-8783-0f334b74cedb"
   stages:
     - stage: path
       stageUuid: "ec527123-1b8a-818b-9c99-9ae72bec0a45"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8b89d415-b44e-8227-b0a5-01ec12a76340"
     - stage: horo
-      stageUuid: "033508a1-db2f-8a61-ac84-4f327b168e55"
+      stageUuid: "865d976c-d8ba-85bd-a4c8-f06a25531988"
     - stage: seal
       stageUuid: "04d29d1f-b36c-8f64-a7bf-e3ee34144fc4"
     - stage: uuid
-      stageUuid: "24373920-f1ee-857c-ba3a-1facfb5bd562"
+      stageUuid: "d8c1d52b-2029-8e77-9641-3de88fe3d42c"
 version: 2
 ---
 # medical/factor — medical facet

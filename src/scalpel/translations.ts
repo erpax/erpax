@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "scalpel",
-    "uuid": "d1c48d20-61f8-8b3f-8ff8-81bc322aa755",
+    "uuid": "1c808951-3f18-86d9-b2fd-0076f318ef20",
     "words": [
       "scalpel"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when many agents must edit in thousands without fabricating — read-only researchers emit op manifests (file · find · replace · reason); one executor cuts in ≤30-file batches, unique-match-or-refuse, ring-verified, red rolls back to the byte.",
-    "uuid": "9d9e25b5-4d7e-870b-8700-1cb15b0c5a64",
+    "uuid": "f0d2934b-20fe-8c9b-8be4-5648ab944b2f",
     "words": [
       "use",
       "when",

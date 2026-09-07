@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "surface",
-    "uuid": "6760e92b-d059-84bc-82d3-374d87cfc2b4",
+    "uuid": "711bf95a-2c1a-84f9-bb86-32bd7ca169e0",
     "words": [
       "surface"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about surface — A material used as a surface in some artwork, e.g. Canvas, Paper, Wood, Board, etc.",
-    "uuid": "1095dbcf-10fe-827e-baff-07cdf5118cba",
+    "uuid": "7d0a1727-61fc-8555-a5d7-3643014756d2",
     "words": [
       "use",
       "when",

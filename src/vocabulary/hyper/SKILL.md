@@ -2,11 +2,11 @@
 name: hyper
 description: "Use when reasoning about hyper as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/hyper"
-coordinate: "vocabulary/hyper · 1/base · ff688e41"
-contentUuid: "3c965a71-ffb1-5aea-9bb6-7465980ac55d"
-diamondUuid: "6a3933fa-f1e8-8592-a96a-9380b640ad39"
-uuid: "ff688e41-9459-85cd-8350-9519761f99ce"
-horo: 1
+coordinate: "vocabulary/hyper · 2/share · b83f13f2"
+contentUuid: "bbbaecf0-f6bc-5727-b11b-2beff0b58f3b"
+diamondUuid: "dc995aa7-f75c-87a1-978c-ca03a8437efe"
+uuid: "b83f13f2-0451-89a8-825f-0b30cb641db3"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7a11e404-69c3-8e5b-8fc3-0a6d00522c0d"
+  computationUuid: "3b2f5421-5e4a-81d2-859d-3ac82a96e495"
   stages:
     - stage: path
       stageUuid: "fbe68682-e5d3-8492-9cc3-0dc569916b6d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1f28ffe2-fec2-8868-8a57-50e046676cb2"
     - stage: horo
-      stageUuid: "6715b744-dd54-861a-9367-ea89b4d51c4c"
+      stageUuid: "7f829f32-efa4-8d37-b139-bb3987f0f5b1"
     - stage: seal
       stageUuid: "009c6f05-b99d-83d7-9e84-2bf472ee2080"
     - stage: uuid
-      stageUuid: "ec8dff49-52a2-8f11-95d2-822d5c50e3a1"
+      stageUuid: "1cc62686-1506-83f8-84b1-f8d888a5013f"
 version: 2
 ---
 # hyper

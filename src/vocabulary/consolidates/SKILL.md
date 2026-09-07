@@ -2,10 +2,10 @@
 name: consolidates
 description: "Use when reasoning about consolidates as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/consolidates"
-coordinate: "vocabulary/consolidates · 5/round · e7917156"
-contentUuid: "25f206ce-b976-5de7-90a6-95341b3e5e66"
-diamondUuid: "ead1cd3b-260c-8fdc-8329-61e88c60b55a"
-uuid: "e7917156-fdc7-88fc-8d6d-0bcd9a6e1781"
+coordinate: "vocabulary/consolidates · 5/round · bdaba5b1"
+contentUuid: "9035fa2b-94a5-58a4-a732-cce4dae5411d"
+diamondUuid: "b35c1ecc-db9f-83d3-9e0c-49abe820380b"
+uuid: "bdaba5b1-d27a-8cff-a682-82e06cba1fa9"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6a2ca41e-c6ae-8ad2-8696-0a3956b94b5e"
+  computationUuid: "1a5f2549-d6ea-82a3-a3d5-97ca311d1a11"
   stages:
     - stage: path
       stageUuid: "f45fd02e-1b5c-84fc-9cb9-f75321a31f1e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "94417fa5-d070-85f4-8b7e-1a2263e7862a"
     - stage: horo
-      stageUuid: "e47b2cb8-e379-8ec3-83b8-42e33d6e88fd"
+      stageUuid: "98113cc1-3c38-812a-a708-0560e5e48058"
     - stage: seal
       stageUuid: "a92817d4-1ffe-8ce9-8b90-0efa69ded5af"
     - stage: uuid
-      stageUuid: "47815bef-f67e-8457-a6df-877e14f5d3c0"
+      stageUuid: "01018b4a-afd2-8b35-8edc-9e1c5e5ca94e"
 version: 2
 ---
 # consolidates

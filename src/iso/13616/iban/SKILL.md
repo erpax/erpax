@@ -2,11 +2,11 @@
 name: iban
 description: "Use when reasoning about iban — ISO 13616 IBAN validator with ISO 7064 mod-97 checksum."
 atomPath: "iso/13616/iban"
-coordinate: "iso/13616/iban · 2/share · 684a508f"
-contentUuid: "79ced89d-8628-54fd-91f9-b406efa2789a"
-diamondUuid: "d075b258-cba1-853e-866e-214512977732"
-uuid: "684a508f-3a64-87b0-9f9a-fcc871bbba10"
-horo: 2
+coordinate: "iso/13616/iban · 8/crest · e6476868"
+contentUuid: "a3360ba3-76e6-5494-b61f-251fef3b0c5a"
+diamondUuid: "a1be890f-267e-8782-94fd-210c94437b4e"
+uuid: "e6476868-7f01-80e0-9b7b-71e19bf878bf"
+horo: 8
 typography:
   partition: iso
   bondDegree: 6
@@ -20,7 +20,7 @@ standards:
   - "ISO/IEC-29119"
 bindings: []
 signatures:
-  computationUuid: "2b7797ae-4084-8c09-b68d-6c9598963b34"
+  computationUuid: "12216955-27de-837d-a5c6-03f06a505167"
   stages:
     - stage: path
       stageUuid: "1aa780ba-84f8-8bf3-9e42-3b94b7966a8d"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "3cf21d70-6106-8c12-86cb-c77552aeb5b0"
     - stage: horo
-      stageUuid: "4c3998fa-46b4-8142-853a-54ee60b0f2b5"
+      stageUuid: "331f2d8f-5c03-801f-8fb8-0065979c1380"
     - stage: seal
       stageUuid: "62d92e6a-81b4-85ee-b58b-bfaf011fae46"
     - stage: uuid
-      stageUuid: "d8103e51-6f4a-82ce-aa32-e1d7950389d2"
+      stageUuid: "6ab6165f-8481-887a-8e53-ac0e795c2d94"
 version: 2
 ---
 # iso/13616/iban

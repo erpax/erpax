@@ -16,7 +16,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing EN 16931 — Electronic invoicing (semantic data model).",
-    "uuid": "5dc960bc-9557-8be1-a77e-924e55ab89fb",
+    "uuid": "b16f6ec3-9095-8ba1-ae18-24c3258667c1",
     "words": [
       "use",
       "when",

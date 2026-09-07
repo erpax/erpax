@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "calculator",
-    "uuid": "b7c6ad72-9f64-8aa8-9f36-572e5e3a0892",
+    "uuid": "eb41e7b4-53be-824d-9146-f69245a00188",
     "words": [
       "calculator"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when computing in the digital-root substrate — a calculator that folds arithmetic to mod-9 (the rodin group), so every result is a single digit; deterministic and content-addressable.",
-    "uuid": "55c54b81-4e5b-8ca9-b7b7-2eade1c8f01e",
+    "uuid": "40e15ce6-3c34-8327-9a12-24d4fc749e01",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: memory
 description: "Use when reasoning about memory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: memory
-coordinate: "memory · 5/round · 8daf3b49"
-contentUuid: "9a83378b-f229-533c-90cf-65c58d7ae884"
-diamondUuid: "b97ddf83-bb1f-8b6a-ae3d-4f11adc875da"
-uuid: "8daf3b49-fe68-8096-bda8-503f501d4dd7"
-horo: 5
+coordinate: "memory · 7/descent · 144a6818"
+contentUuid: "f5f664c4-c8d7-5d22-89d6-851eff4e80e6"
+diamondUuid: "bc00f443-dbae-801c-8135-2bc89541cc31"
+uuid: "144a6818-6d13-865e-9cbc-c0abbcf523cf"
+horo: 7
 typography:
   partition: memory
   bondDegree: 99
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "15d9af61-eab2-8dea-937e-b84847d7c9e6"
+  computationUuid: "6e17a77e-4438-82fc-ac29-0bd064281efb"
   stages:
     - stage: path
       stageUuid: "d59a38cc-4d56-8168-bec3-c179f2673238"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7871c9be-3b9d-80f8-9295-c859219bc341"
     - stage: horo
-      stageUuid: "5e56cb79-3334-8a28-b44d-929a7735aa70"
+      stageUuid: "c9611e7b-9f86-8c89-93ad-064403b90a10"
     - stage: seal
       stageUuid: "59a884e9-d043-8bc4-99ae-2f1be7dcc281"
     - stage: uuid
-      stageUuid: "a2219dcd-b02c-80ae-8d00-7ceb1170568f"
+      stageUuid: "f282ab61-90ea-8a2b-befb-f3cc34c20c59"
 version: 2
 ---
 # memory

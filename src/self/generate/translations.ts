@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "generate",
-    "uuid": "ea0f9d09-22f4-8839-aee5-84ea97b4622d",
+    "uuid": "9a4a28ce-8197-8929-9201-86a6de7b5a75",
     "words": [
       "generate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the self GROWS its own corpus — the outward stroke begins: mine aura gaps into new atoms and drive the gap to zero (self-applied generate at forward-coil position 1/base). The self generating itself.",
-    "uuid": "0af044b4-01da-812d-a7ab-465b50861bba",
+    "uuid": "963688a2-2d5a-810a-bafa-2e218c306b1b",
     "words": [
       "use",
       "when",

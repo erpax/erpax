@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "drone",
-    "uuid": "7ea25eab-becc-85da-9b9d-7655969b0866",
+    "uuid": "82006fa6-752f-8eda-b65c-02a33e00dc64",
     "words": [
       "drone"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the society sends scouts to fly the content-uuid matrix in coordinated self-learning — reconnoitring sectors for gaps and entropy and feeding them to the agents to eat, warfare tactics applied to building.",
-    "uuid": "a5a9a4c9-1933-808d-8edc-3499575bf1f6",
+    "uuid": "1614a933-0795-8a69-8686-d54e4a2b234e",
     "words": [
       "use",
       "when",

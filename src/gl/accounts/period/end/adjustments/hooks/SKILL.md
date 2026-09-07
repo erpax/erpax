@@ -2,10 +2,10 @@
 name: hooks
 description: Use when reasoning about hooks — The adjustment child carries the matter; this is the address a collection imports.
 atomPath: "gl/accounts/period/end/adjustments/hooks"
-coordinate: "gl/accounts/period/end/adjustments/hooks · 6/6 · 27864635"
-contentUuid: "e127fd70-f5e4-578b-998c-d16e100be3b9"
-diamondUuid: "d7470833-be79-816a-8bd1-3d2b116d0ca2"
-uuid: "27864635-98f0-86bc-807e-a06994700741"
+coordinate: "gl/accounts/period/end/adjustments/hooks · 6/6 · a053d2a6"
+contentUuid: "1eee47c0-ca0b-5452-a81a-e68ced88245f"
+diamondUuid: "7fcdb2fd-f939-817a-be96-684379e4b623"
+uuid: "a053d2a6-cb0e-8e61-88dd-2a749ebb021d"
 horo: 6
 typography:
   partition: gl
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC-29119"
 bindings: []
 signatures:
-  computationUuid: "a4dcf78b-1056-85ff-b2ff-ed27eeb4f86a"
+  computationUuid: "702638c4-5ff8-8f81-8184-4826432610c8"
   stages:
     - stage: path
       stageUuid: "6530d7c8-3fcf-8b04-a796-830420feccfb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ea6e3882-a0d3-862f-9c0d-39ade88bb0c6"
     - stage: horo
-      stageUuid: "dfe89f60-e618-8598-9536-73de2a1778bf"
+      stageUuid: "22c643b8-782f-8b58-949f-e97d3deb0264"
     - stage: seal
       stageUuid: "186e42ba-a70d-853a-8dab-0a51c36484be"
     - stage: uuid
-      stageUuid: "e9fa55b7-60cc-85d8-96f5-c99b8a9eee25"
+      stageUuid: "3eb948cf-4f12-8491-b614-9a64c2d9c864"
 version: 2
 ---
 # gl/accounts/period/end/adjustments/hooks — the period-end adjustment's hooks, behind one entry point

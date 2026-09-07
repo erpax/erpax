@@ -2,10 +2,10 @@
 name: members
 description: "Use when recording individual members of an audit committee — name, title, affiliation (internal/external/independent), role (chair/vice-chair/member/financial-expert), term dates, and expertise areas. The SOX §301 committee-composition roster."
 atomPath: "legal/entities/audit/committees/audit/committee/members"
-coordinate: "legal/entities/audit/committees/audit/committee/members · 8/crest · f7539ecc"
-contentUuid: "93ea4c97-70bc-5268-aef5-84e371e6e38b"
-diamondUuid: "ea7cb3bb-e4c3-89da-94a9-cf3cb5dd3538"
-uuid: "f7539ecc-48c5-874e-a902-5c48c319677f"
+coordinate: "legal/entities/audit/committees/audit/committee/members · 8/crest · bc441866"
+contentUuid: "23141cd8-e57a-5934-9a41-d877a48296bd"
+diamondUuid: "d00a8dc3-7aa5-8281-9c2d-4366d1c7c8a7"
+uuid: "bc441866-97e3-8ddf-a909-38171bde964d"
 horo: 8
 typography:
   partition: legal
@@ -16,7 +16,7 @@ standards:
   - "SOX §301 audit-committee-composition"
 bindings: []
 signatures:
-  computationUuid: "567d8b5c-a2c0-8174-a707-2806d1d37052"
+  computationUuid: "ba982fb5-9009-892f-9ccd-2ea3ca57dd6a"
   stages:
     - stage: path
       stageUuid: "cf88a4d2-e636-8912-a3ab-cfebaab3fb46"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "c1e2d989-260a-8fee-86d2-91e12e1fbcd8"
     - stage: horo
-      stageUuid: "79e59682-9051-83ef-9c27-fb66ff9967b5"
+      stageUuid: "dc703eb9-22cf-83dc-b1b7-91c6b6f13d21"
     - stage: seal
       stageUuid: "9ac44f9d-f298-89ff-9dd2-a2a30690d8dd"
     - stage: uuid
-      stageUuid: "33aff1f3-69b3-83b1-a4ac-b069ac884baf"
+      stageUuid: "cbd9c88f-4ba0-888c-99a4-62c941e206c8"
 version: 2
 ---
 # audit-committee-members

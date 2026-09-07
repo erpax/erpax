@@ -2,11 +2,11 @@
 name: ch
 description: "Use when reasoning about ch — Non-proprietary identifier for molecular entity that can be used in printed and electronic data sources thus enabling easier linking of diverse data compilations."
 atomPath: "vocabulary/ch"
-coordinate: "vocabulary/ch · 1/base · 107eb267"
-contentUuid: "6ee3e3f7-0ebc-5830-be12-20d559968974"
-diamondUuid: "14acceeb-6e84-8687-90cf-73711781e7db"
-uuid: "107eb267-2c99-843a-a132-0d8b81931605"
-horo: 1
+coordinate: "vocabulary/ch · 8/crest · 8d188b69"
+contentUuid: "898317a2-8c1d-57ad-a49c-efc1f1ce9d6b"
+diamondUuid: "543cd11c-0086-8ea9-8263-675f16512070"
+uuid: "8d188b69-60ca-86c2-87db-a33b0c435e1f"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5dc9495c-a3cd-86e6-9255-62d45b5665f0"
+  computationUuid: "e3bd9a6e-e1fc-8cc4-afad-867f3b4d2aa3"
   stages:
     - stage: path
       stageUuid: "6ef12496-07f5-8534-a2de-899860defd09"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "36bccdf9-14c1-8299-b173-92244476a65c"
     - stage: horo
-      stageUuid: "24403f08-37a7-8163-bbe8-9d7a1857563d"
+      stageUuid: "038eec4c-db36-8cce-acc8-fa7152310588"
     - stage: seal
       stageUuid: "c6b0ae6d-31c2-86e8-8bab-9276127f6b32"
     - stage: uuid
-      stageUuid: "f2343c94-5d51-8cd5-a260-c5ea44e1a36c"
+      stageUuid: "8316bed0-ae61-84f5-a0d8-132a5d001c6a"
 version: 2
 ---
 # ch

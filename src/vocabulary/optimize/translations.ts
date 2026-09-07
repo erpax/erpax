@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "optimize",
-    "uuid": "3341d9a2-fc6d-87e2-aaf7-cc718946d696",
+    "uuid": "75427ec7-4a94-8eb8-be1a-6be4ed740cd2",
     "words": [
       "optimize"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when building or reviewing Payload collections, fields, queries, or config for performance — slow admin/API, large generated schemas, heavy relationship population, duplicated block definitions, or oversized client bundles.",
-    "uuid": "accb98b2-cdf1-8cea-b5aa-bc6671a5f814",
+    "uuid": "91ab8fdf-23de-8e61-b570-090afe434ed5",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: route
 description: "Use when reasoning about route as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: route
-coordinate: "route · 8/crest · 3216c471"
-contentUuid: "9dc46541-b26d-5ed4-b7db-a79ee83352ed"
-diamondUuid: "709fd7c6-a249-8efc-8892-25058e9dc5e1"
-uuid: "3216c471-abec-8872-83c9-cabb5993ab51"
-horo: 8
+coordinate: "route · 5/round · 3d77a12d"
+contentUuid: "b2d3ecd5-6709-52af-86d8-efb13aac8ca4"
+diamondUuid: "5740221b-700f-8a71-89eb-9ae3ba2bbc08"
+uuid: "3d77a12d-931d-845d-9bf1-cac8302fbe91"
+horo: 5
 typography:
   partition: route
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9c3ab6e0-34fb-8e35-82c6-d6bc5644a770"
+  computationUuid: "7fdc85d5-47c1-89d3-bbd2-56198959e2dc"
   stages:
     - stage: path
       stageUuid: "ff9a9573-22aa-8cd6-8017-fd7bf1c21f3a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e8858b09-febd-88d0-a412-e01a98d014c9"
     - stage: horo
-      stageUuid: "a48f4684-1ecf-8a48-acdb-24fd937a492c"
+      stageUuid: "614b2c9e-b8e8-8402-a278-828dd9a48ae3"
     - stage: seal
       stageUuid: "3a1798c1-3f97-8005-bc78-2780b9676076"
     - stage: uuid
-      stageUuid: "13ed5b1a-ea4f-8415-ae09-f369fc5fd407"
+      stageUuid: "c1bbcc28-3474-81a5-a7e9-2b26503f2904"
 version: 2
 ---
 # route

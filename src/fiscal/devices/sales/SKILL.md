@@ -2,10 +2,10 @@
 name: sales
 description: "Use when fiscalizing revenue under Наредба Н-18 СУПТО — each sale receives an immutable gapless УНП, is frozen on close (no delete — corrections via сторно reversals), emits sale:closed event with content-uuid tamper-proof hash, covering orders, subscriptions, invoices and POS. The СУПТО sale register."
 atomPath: "fiscal/devices/sales"
-coordinate: "fiscal/devices/sales · 7/descent · 34d0bf89"
-contentUuid: "fe6ebeac-3422-5763-b0b5-6857ecfa20fc"
-diamondUuid: "58789a9a-0a94-853c-a412-d8b566ce30ba"
-uuid: "34d0bf89-0377-82d5-a08a-099434f7cf4e"
+coordinate: "fiscal/devices/sales · 7/descent · 8f4cc822"
+contentUuid: "4bb7b33b-8eb3-5369-925a-db2c1304143a"
+diamondUuid: "bfc38940-0c22-8c66-8487-4f6f54629a09"
+uuid: "8f4cc822-953e-87e1-9cd2-33c3212d3da7"
 horo: 7
 typography:
   partition: fiscal
@@ -22,7 +22,7 @@ standards:
   - "US-GAAP ASC-606 revenue-from-contracts-with-customers"
 bindings: []
 signatures:
-  computationUuid: "091cb8e3-6d39-8d05-8536-8e6a4cbda07f"
+  computationUuid: "bad2dee3-4731-8eb1-abe1-dcd30ca22fce"
   stages:
     - stage: path
       stageUuid: "41422dd4-5c4d-89cb-9fdb-4a2486ee7d1f"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "2f2ea5c8-ce39-8223-9cfc-7f5dfccd5ba2"
     - stage: horo
-      stageUuid: "bd99ed9e-c753-8c06-b104-b019745d7ba9"
+      stageUuid: "434ff2dc-4677-8f4d-8c6a-1e5c33145b10"
     - stage: seal
       stageUuid: "b05e8bac-090b-88e6-8fce-5765ee8ccc42"
     - stage: uuid
-      stageUuid: "6b55a8a0-c9b7-8460-a892-716f32b13751"
+      stageUuid: "906bd27a-7e54-8077-bdcb-6b3bb9ba61b7"
 version: 2
 ---
 # sales

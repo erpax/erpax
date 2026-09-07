@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "email",
-    "uuid": "392b49e2-0807-85ed-b06a-30a051a81a0e",
+    "uuid": "256e9217-9149-824e-aeae-5fe428731e3d",
     "words": [
       "email"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about email — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits.",
-    "uuid": "81967094-5606-857e-8742-6974a1bc4a08",
+    "uuid": "b224c7ba-ca74-8a76-8265-d6d0d966b7a9",
     "words": [
       "use",
       "when",

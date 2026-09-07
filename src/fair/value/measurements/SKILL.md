@@ -2,11 +2,11 @@
 name: measurements
 description: "Use when measuring or disclosing fair value of assets and liabilities — financial instruments, investment property, biological assets, share-based payments, PPA items — capturing IFRS 13 Level-1/2/3 hierarchy, valuation technique, unobservable inputs, and P&L / OCI recognition route. The IFRS 13 fair-value measurement register."
 atomPath: "fair/value/measurements"
-coordinate: "fair/value/measurements · 7/descent · c187cd04"
-contentUuid: "d65023f7-edc2-5a1f-bb7a-27099d7f6e40"
-diamondUuid: "611fa9f2-5d08-85a3-bc45-489d245a3606"
-uuid: "c187cd04-eed1-88ad-9228-2f5019d55dad"
-horo: 7
+coordinate: "fair/value/measurements · 2/share · bf0b4b0f"
+contentUuid: "51778297-5abd-52ea-960d-aa28eb493c4b"
+diamondUuid: "abe1c407-d32f-8741-aaa6-375871848335"
+uuid: "bf0b4b0f-3e07-84a6-a5ed-4e41cccaa26b"
+horo: 2
 typography:
   partition: fair
   bondDegree: 34
@@ -34,7 +34,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "775f5dcb-a50e-8447-94f4-d78a95075b89"
+  computationUuid: "fe30cef3-f84d-8e4e-8e00-79d39f84476b"
   stages:
     - stage: path
       stageUuid: "a61e8171-9ef5-85ac-96cd-0eae28125f3a"
@@ -45,11 +45,11 @@ signatures:
     - stage: links
       stageUuid: "60f2264b-4461-87a7-bd1c-8eee5d5a2c55"
     - stage: horo
-      stageUuid: "adf6fa6e-82d0-85ec-ab7f-d4b1642142af"
+      stageUuid: "1f61d30f-5e07-8890-ab72-3b6bedc2c790"
     - stage: seal
       stageUuid: "e9b257be-591b-8407-ab7e-ea551aeebbce"
     - stage: uuid
-      stageUuid: "0c213f9f-dde0-864b-87cd-5f38a455d962"
+      stageUuid: "ec9a86a7-bb07-8e59-8870-035d8edd4893"
 version: 2
 ---
 # fair-value-measurements

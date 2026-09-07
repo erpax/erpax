@@ -2,11 +2,11 @@
 name: variances
 description: "Use when closing a work order and reconciling standard vs actual manufacturing costs — material price/quantity, labour rate/efficiency, and overhead spending/volume variances per IAS-2 §21. The variance-decomposition record generated on work-order close."
 atomPath: "items/bills/of/materials/work/orders/cost/variances"
-coordinate: "items/bills/of/materials/work/orders/cost/variances · 8/crest · 96ba6e44"
-contentUuid: "992a8df2-8182-5e61-b83e-672882e8640c"
-diamondUuid: "bf1988ab-f2d6-817b-a045-0f0cea94578b"
-uuid: "96ba6e44-4b38-8fca-99a2-28033d7659d9"
-horo: 8
+coordinate: "items/bills/of/materials/work/orders/cost/variances · 2/share · ba8e61fe"
+contentUuid: "44cefa32-2e78-5792-86ea-fb17e269a747"
+diamondUuid: "3a0d6f99-3322-8667-ba05-cd7535b10f68"
+uuid: "ba8e61fe-b89c-81b7-86f6-bc4d28b788f0"
+horo: 2
 typography:
   partition: items
   bondDegree: 20
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "e949b28a-d18a-8d2c-a721-7baa4d07e2e2"
+  computationUuid: "15fe008d-79d0-8089-803e-03982f585968"
   stages:
     - stage: path
       stageUuid: "441288ac-8b0a-8d7b-b5eb-4842416d6954"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "daea54c5-1a45-8956-812e-1ee0f17ad45e"
     - stage: horo
-      stageUuid: "d6b78412-4043-8d15-9800-e3847cee2a90"
+      stageUuid: "f182ca0e-b1e8-86ec-8592-2c34ce65c581"
     - stage: seal
       stageUuid: "49348af1-bf22-8954-87c6-bc72f71f7bbd"
     - stage: uuid
-      stageUuid: "f4d64be8-e2fc-80e5-9937-b9546df818fd"
+      stageUuid: "a13c6b39-e82b-80ea-b480-5a98a282ac73"
 version: 2
 ---
 # cost-variances

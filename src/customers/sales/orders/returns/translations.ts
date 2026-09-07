@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "returns",
-    "uuid": "dd31af5c-5ff8-8b9a-a235-7032b481014f",
+    "uuid": "f7719519-8903-8283-a76f-f75f32dae815",
     "words": [
       "returns"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when authorising, tracking, and closing a customer return (RMA) — recording the reason, line-level items and restock decisions, enforcing SoD on approval, and linking to the credit memo that reverses revenue per IFRS-15 §B22. The returns-and-RMA collection.",
-    "uuid": "52a5357f-c37d-856b-a016-475a067957f2",
+    "uuid": "0b2dedf5-4f51-8ebd-b9b1-8c760c5bca92",
     "words": [
       "use",
       "when",

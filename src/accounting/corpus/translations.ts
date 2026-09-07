@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "corpus",
-    "uuid": "f848f002-ee7e-8f9b-8ebd-2d2a4f4b41e5",
+    "uuid": "1b6d3925-593e-8820-b88c-22f01e4892e2",
     "words": [
       "corpus"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about accounting/corpus — corpus self-accounting — eb (entropy-bit) currency and path posting units.",
-    "uuid": "71aad7db-786d-8330-8c8d-3fe80b84c666",
+    "uuid": "62ae049b-83a1-8ccb-9907-397217890af7",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "emitter",
-    "uuid": "6437a035-77ff-81a4-a3f5-ee7d7f554b3f",
+    "uuid": "cebea0b2-0713-8e53-a381-c2675d3c67bd",
     "words": [
       "emitter"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an afterChange transition must fire a business-chain domain event — the wiring layer that maps a status change (or row-create) to one emitDomainEvent call so the chain registry's declared emits matches what actually fires.",
-    "uuid": "3f4733a6-dd7b-864b-ae73-2b58be5a542a",
+    "uuid": "9917b0b9-08ae-8109-9f49-bb5354469b3b",
     "words": [
       "use",
       "when",

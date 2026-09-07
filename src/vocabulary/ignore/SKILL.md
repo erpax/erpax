@@ -2,11 +2,11 @@
 name: ignore
 description: "Use when reasoning about ignore as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/ignore"
-coordinate: "vocabulary/ignore · 1/base · bb7d8dd4"
-contentUuid: "5d89f918-6952-5ffe-97e8-f84062d46f21"
-diamondUuid: "88009c8e-b49b-80b0-b479-014352adf267"
-uuid: "bb7d8dd4-9137-8407-9927-09dccd2807bd"
-horo: 1
+coordinate: "vocabulary/ignore · 5/round · 702a850a"
+contentUuid: "90be07e9-796d-5589-b2fe-a5e504f7e021"
+diamondUuid: "d0998756-9fc1-82f5-8d0b-5ed0fd1072c9"
+uuid: "702a850a-92ec-81c2-bdaa-a6fb44f8752c"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6092ca68-0562-8818-a44b-db25252278ed"
+  computationUuid: "485e0e4e-de2a-848a-9c8c-25a8382f778e"
   stages:
     - stage: path
       stageUuid: "59016418-2542-80fe-aeb1-f28c5d515ad8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f75cf8c9-d0bc-84f3-ada3-2a41deb6630c"
     - stage: horo
-      stageUuid: "8e294c45-76ef-8564-93f2-f89c8673ee73"
+      stageUuid: "008a7039-4e7d-83b5-ab11-3804402993fd"
     - stage: seal
       stageUuid: "af48c13e-a3c7-8741-a270-c62c0d5848b0"
     - stage: uuid
-      stageUuid: "5bc1b094-1b39-8224-bd55-002fdc73cf3f"
+      stageUuid: "c6fd7d0f-aa62-8066-9739-ef08da15f448"
 version: 2
 ---
 # ignore

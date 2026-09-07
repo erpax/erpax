@@ -2,10 +2,10 @@
 name: divisor
 description: "Use when the 432 anchor's structure must be exact — the divisor lattice C5×C4 (20 divisors) and its self-dual inversion φ(d)=432/d, where every divisor-fraction d/432 reduces to the unit fraction 1/φ(d), verified to the bit by integer arithmetic."
 atomPath: "harmony/divisor"
-coordinate: "harmony/divisor · 1/base · f68e8952"
-contentUuid: "384f1039-d8b8-579a-bbbf-73a438cc542f"
-diamondUuid: "2a24efed-57ef-8d09-b379-3a00bfa1c596"
-uuid: "f68e8952-87c8-8d49-91a0-66954135aeb4"
+coordinate: "harmony/divisor · 1/base · 71494756"
+contentUuid: "5411ea08-4983-592e-97ae-b6741ea63691"
+diamondUuid: "6a57ad3d-7b0f-8c79-a49b-8d87046c66d8"
+uuid: "71494756-6e58-86c3-8ab5-fc98be20d9b0"
 horo: 1
 typography:
   partition: harmony
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7290af3e-91b0-88e4-8c77-3ce49fc299af"
+  computationUuid: "0e5df3c5-5a54-8331-908c-74a654fe2720"
   stages:
     - stage: path
       stageUuid: "15b15981-f6b7-8eb6-8378-7dbb5533fd3c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "1675b12e-280a-8e71-9511-f01d78018878"
     - stage: horo
-      stageUuid: "6bb23629-3c35-8065-bee2-bdbd385994ce"
+      stageUuid: "b42ba99a-d2de-809b-bbf1-4c685b6a086c"
     - stage: seal
       stageUuid: "3c92be86-9929-84ad-b516-35ad8ce07903"
     - stage: uuid
-      stageUuid: "8ec98abe-d0d2-8948-8c4b-20579c60554f"
+      stageUuid: "17db5e0f-d8ac-8b75-a79b-688cb70f0189"
 version: 2
 ---
 # harmony/divisor — the 432 divisor lattice: the respected fractions, down to the bit

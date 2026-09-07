@@ -2,11 +2,11 @@
 name: bypass
 description: "Use when checking that a request-reachable handler cannot disable access control silently — Payload's Local API defaults to overrideAccess:true, so bypass is the ambient condition a route inherits by writing nothing. Judges only src/app, because a hook or seed is not routed; a bypass named in a comment is prose, not a use. Baseline is a theorem at zero: one handler bypasses and it authenticates first, so there is no threshold to raise as the corpus grows."
 atomPath: "rules/bypass"
-coordinate: "rules/bypass · 2/share · d4649b89"
-contentUuid: "792f04b2-a823-5dfa-9d7e-8c5f70d987f1"
-diamondUuid: "3fe1ce14-d84c-894c-abfa-7eac759ff871"
-uuid: "d4649b89-30b7-879d-a1d0-4b491b65c2bd"
-horo: 2
+coordinate: "rules/bypass · 7/descent · 1906e2f2"
+contentUuid: "137b9415-8abe-5d43-9dcf-23811240b463"
+diamondUuid: "9e16fcc0-86ad-8b15-9c81-7b4b5a6c5e57"
+uuid: "1906e2f2-90e6-8808-b678-80fa20642930"
+horo: 7
 typography:
   partition: rules
   bondDegree: 15
@@ -15,7 +15,7 @@ standards:
   - "ISO/IEC 27001 A.5.23 — cloud-service tenant isolation"
 bindings: []
 signatures:
-  computationUuid: "aa98b515-f416-8392-b763-141f2d0fdbda"
+  computationUuid: "0481ab75-4bc6-88be-8bc8-3350b835060d"
   stages:
     - stage: path
       stageUuid: "f048a546-8aa5-8be2-90c4-e64dc1b5327a"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "9f945866-52dc-8e3a-ae5a-074452196d5d"
     - stage: horo
-      stageUuid: "492b4d1b-dd3e-816c-a4c9-1f89669f880c"
+      stageUuid: "d49ec3c7-727e-8545-a44b-e162c4e3c342"
     - stage: seal
       stageUuid: "18cb0986-8ee2-8f05-aaa3-82ef4f31a981"
     - stage: uuid
-      stageUuid: "53cfeefc-ba16-8d43-a54a-e9587e9a06bf"
+      stageUuid: "bda055ed-61ac-889b-b050-3e46a48833a6"
 version: 2
 ---
 # rules/bypass — a route may not disable the check silently

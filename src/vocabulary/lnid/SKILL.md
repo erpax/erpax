@@ -2,11 +2,11 @@
 name: lnid
 description: "Use when reasoning about lnid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/lnid"
-coordinate: "vocabulary/lnid · 8/crest · f7c01891"
-contentUuid: "a39062dc-0e81-55eb-bc05-73327de64135"
-diamondUuid: "d0f04a31-ef35-8ead-a206-15c8d24bb9c8"
-uuid: "f7c01891-9029-8142-9485-8c3166fed3c0"
-horo: 8
+coordinate: "vocabulary/lnid · 2/share · 472a1501"
+contentUuid: "5163594f-6ae7-5688-8dd2-68aea3eb0518"
+diamondUuid: "0ebc82e4-b634-81f1-9c0d-ab4580e37e40"
+uuid: "472a1501-cfca-8dd2-81d9-5602514c67e6"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "76793158-3d87-866b-ac5f-1a27411d1851"
+  computationUuid: "b8d3440c-d4c1-8292-a5da-cc1db0326b3f"
   stages:
     - stage: path
       stageUuid: "b2f3048e-8a40-8181-bd3b-51f9c7794052"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "48d4a462-db15-8214-9d85-53670e7f5619"
     - stage: horo
-      stageUuid: "af3a0975-95c5-8918-91bd-1af5af689a97"
+      stageUuid: "0c1a8c9c-9b2c-803b-8a2a-67912d0e03dd"
     - stage: seal
       stageUuid: "53a60dac-ddf2-838b-8f45-6062a2eae010"
     - stage: uuid
-      stageUuid: "0f8020ce-c558-87a3-ae8a-ed8b42a359a2"
+      stageUuid: "bae522b5-94a4-8919-aa0f-d0d62cb93247"
 version: 2
 ---
 # lnid

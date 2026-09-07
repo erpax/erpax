@@ -2,11 +2,11 @@
 name: conservation
 description: "Use when reasoning about what is conserved across a flow — nothing is created or destroyed, only transformed (mass-energy; Noether — every continuous symmetry yields a conserved quantity), which in erpax IS double-entry — Σdebit=Σcredit, every config a balanced gateway, the pot conserved. The physics root of the accounting law; an open system conserves by accounting for what crosses its boundary (the borrowed anchor)."
 atomPath: conservation
-coordinate: "conservation · 2/share · 5aef8950"
-contentUuid: "3fbf473f-00f5-5d29-9345-1e26064615a3"
-diamondUuid: "0959c2cc-7ab3-89bd-80e2-c92a1c30b6e7"
-uuid: "5aef8950-6024-8232-948d-6425b743abde"
-horo: 2
+coordinate: "conservation · 8/crest · 949946d3"
+contentUuid: "87fc98e8-d5b8-5ac6-b19f-b50215c03c3f"
+diamondUuid: "6397ef5b-43ea-880f-beb8-e4a8a4bb5de3"
+uuid: "949946d3-cd18-8f29-8059-b83bbcfc6f97"
+horo: 8
 typography:
   partition: conservation
   bondDegree: 97
@@ -17,7 +17,7 @@ standards:
   - "UBL-2.1"
 bindings: []
 signatures:
-  computationUuid: "1f1cf0b3-c09c-8d58-9ef7-1c911bcd58a3"
+  computationUuid: "9d0b5c7c-31a1-8b9f-b502-4f58b5972995"
   stages:
     - stage: path
       stageUuid: "4da50aaf-bca0-808d-a7b5-181ad11c2a01"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "a40f802a-4d15-872b-ab9e-685b84c57294"
     - stage: horo
-      stageUuid: "9a0bfeb6-a225-8bad-b77c-d63db14b3006"
+      stageUuid: "66484d73-a26d-8451-9609-993c1ecf8a4c"
     - stage: seal
       stageUuid: "d44e2523-c79e-8d62-aac8-8d1127c3641c"
     - stage: uuid
-      stageUuid: "c8b22ace-3bf2-83e5-8036-b2ccf256d123"
+      stageUuid: "b1312ee3-4687-8ef9-b714-e765c574abfb"
 version: 2
 ---
 # conservation — nothing is lost, only transformed (the root of double-entry)

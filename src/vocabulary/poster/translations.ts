@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "poster",
-    "uuid": "064152fd-bf04-8655-89ba-da42fe2f45ff",
+    "uuid": "27ae78ab-cf1b-8326-a1c6-422a5d284ecc",
     "words": [
       "poster"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about poster — A large, usually printed placard, bill, or announcement, often illustrated, that is posted to advertise or publicize something.",
-    "uuid": "520c394e-c1dd-8184-82fc-61352ecba9d7",
+    "uuid": "bc7d3c6b-b396-8e47-966c-8d8312f33797",
     "words": [
       "use",
       "when",

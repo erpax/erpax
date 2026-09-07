@@ -2,10 +2,10 @@
 name: effectiveness
 description: "Use when reasoning about effectiveness as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/effectiveness"
-coordinate: "vocabulary/effectiveness · 4/weave · 0cd18326"
-contentUuid: "f4896fd7-321b-5f89-a549-6ca9eabf33c3"
-diamondUuid: "d7a8b2c1-23bf-8758-955a-1e564a780a75"
-uuid: "0cd18326-a1c9-8b4c-b318-6a53e6446592"
+coordinate: "vocabulary/effectiveness · 4/weave · ea79b6b4"
+contentUuid: "75d1338c-3978-5632-bcbb-bb40dd6c9f78"
+diamondUuid: "5ba86b99-4960-895b-8612-a11887835d4e"
+uuid: "ea79b6b4-40c9-8793-a353-fdff4b9ddd15"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3e15e642-7268-831f-930d-c632587a0d3f"
+  computationUuid: "f2f0e2f4-cf83-815a-b323-6466284014ca"
   stages:
     - stage: path
       stageUuid: "ea9256a5-a503-8b03-908a-1f60927a9dea"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b95600e8-c209-87f0-98f1-1e09928d2cc9"
     - stage: horo
-      stageUuid: "9619c4f6-434b-8491-bdca-a4c5c9c91d47"
+      stageUuid: "452c889b-28d5-880a-ad2a-cfb250c297e6"
     - stage: seal
       stageUuid: "10a98d16-e757-8259-9970-e085955542b4"
     - stage: uuid
-      stageUuid: "0e2bca8e-aba6-8bf2-ad2f-3f0be061bf78"
+      stageUuid: "07a0c8e4-4a65-8f30-8e86-bfb38cf69db0"
 version: 2
 ---
 # effectiveness

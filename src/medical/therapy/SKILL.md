@@ -2,11 +2,11 @@
 name: therapy
 description: "Use when reasoning about therapy as a medical facet of medical — vocabulary pivot to @/therapy; nested not duplicated."
 atomPath: "medical/therapy"
-coordinate: "medical/therapy · 7/descent · f89311cb"
-contentUuid: "dc5fef93-b814-5eaa-835c-21c5490df190"
-diamondUuid: "e64aa847-ecf7-8e5e-a110-bfa27e5a58eb"
-uuid: "f89311cb-d87e-8dc2-b02b-d2c41996535b"
-horo: 7
+coordinate: "medical/therapy · 8/crest · 404ca724"
+contentUuid: "82979788-5581-5e06-82ea-fa5d11b3d401"
+diamondUuid: "2644d894-1f81-8625-95ee-762f33bc9b5b"
+uuid: "404ca724-685a-87f5-a51e-76d57962b562"
+horo: 8
 typography:
   partition: medical
   bondDegree: 43
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2eafed65-a2cf-8e53-ac59-152aa98f772e"
+  computationUuid: "4bb47f47-ab66-84d8-a541-5814bd659765"
   stages:
     - stage: path
       stageUuid: "1eba5025-464f-831b-8ccc-26d6c3e02992"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5f3253cd-111f-852f-bbeb-07d9b12473f6"
     - stage: horo
-      stageUuid: "fc6eee07-1eab-8261-8319-dc1b2d9101ec"
+      stageUuid: "51ae796b-46c6-83f2-8f1b-cd35fb00efa1"
     - stage: seal
       stageUuid: "9147dddd-ef21-898e-be9f-438cdc71d4d4"
     - stage: uuid
-      stageUuid: "2e97abb1-4d3e-8e6c-88e7-70c9eb0d7771"
+      stageUuid: "c5cd7c8b-5491-89d6-b148-c4c656ff7e28"
 version: 2
 ---
 # medical/therapy — medical facet

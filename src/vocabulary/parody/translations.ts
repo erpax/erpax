@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "parody",
-    "uuid": "cb28dcc2-3af7-8b2a-b50d-3789e10eca66",
+    "uuid": "36115623-edff-83ba-a90a-f60c887f4716",
     "words": [
       "parody"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about parody as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "fe88684d-2317-869b-8e21-fe6645b714f6",
+    "uuid": "3bbe7d5e-899d-8963-bfb0-7794ff396624",
     "words": [
       "use",
       "when",

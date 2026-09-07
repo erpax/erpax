@@ -2,11 +2,11 @@
 name: lung
 description: "Use when reasoning about the lung as an organ of body — pivot to canonical @/lung; zero duplication."
 atomPath: "body/lung"
-coordinate: "body/lung · 5/round · 28384946"
-contentUuid: "f7856a13-46cf-5f5d-b0e5-f71fce68bb48"
-diamondUuid: "ceb054c0-1406-8386-b8c4-313d75efee9a"
-uuid: "28384946-61fe-8764-acae-10b450d74304"
-horo: 5
+coordinate: "body/lung · 8/crest · 11c1740f"
+contentUuid: "c52ba923-ce81-5241-8dfb-f3fa1145ee25"
+diamondUuid: "957fae45-8847-8ec7-b3cd-29b7856467bd"
+uuid: "11c1740f-d183-84b5-b561-7307f2656f09"
+horo: 8
 typography:
   partition: body
   bondDegree: 37
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e484bb1f-0454-8ad6-9f76-cb21a57f45cd"
+  computationUuid: "835679be-c373-83e5-a118-9793df984dc7"
   stages:
     - stage: path
       stageUuid: "0d438bd3-f739-8e5c-8232-e182a1b3137d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f213b35e-30ff-810a-8bb4-6519190c2b30"
     - stage: horo
-      stageUuid: "cc5cd623-283e-8035-9e3b-f7fafc7502b7"
+      stageUuid: "f9e30514-8f4c-8d27-ba4d-010ce1730de2"
     - stage: seal
       stageUuid: "ef79208d-d993-89d8-b536-4d8e837ae2e3"
     - stage: uuid
-      stageUuid: "cfe36073-1b70-8f90-a2d5-f05d9b155b20"
+      stageUuid: "853c5da9-79fb-84b6-8d65-226de10e462f"
 version: 2
 ---
 # body/lung — organ facet

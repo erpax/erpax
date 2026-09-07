@@ -2,11 +2,11 @@
 name: duns
 description: "Use when reasoning about duns — The Dun & Bradstreet DUNS number for identifying an organization or business person."
 atomPath: "vocabulary/duns"
-coordinate: "vocabulary/duns · 5/round · 3ce883b5"
-contentUuid: "fc1619a9-6b63-5ce3-bb40-36afa513b4ff"
-diamondUuid: "626c287f-0799-8a00-9366-27a12605ccfb"
-uuid: "3ce883b5-7341-8ade-84ac-c07041a6f941"
-horo: 5
+coordinate: "vocabulary/duns · 7/descent · 015e63eb"
+contentUuid: "dafdeb0c-bc99-5176-b0d8-4c5cc5b46600"
+diamondUuid: "17d0e24c-5f3b-8e2a-ab4b-8753a265abb9"
+uuid: "015e63eb-ddb2-8c19-8830-4a47ddb548a4"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e109901b-2881-89d9-935c-e69db9d56713"
+  computationUuid: "4ccdc346-81d7-829e-8358-fe4463822efc"
   stages:
     - stage: path
       stageUuid: "7bf7d040-20fa-8529-8167-e78a203e49be"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6f5e81ec-af15-86f4-9d8d-3136845109ac"
     - stage: horo
-      stageUuid: "2c1b91bf-a747-87e6-9f14-ee21a417ba13"
+      stageUuid: "b0812177-3308-874e-8a64-317782950cec"
     - stage: seal
       stageUuid: "12faf7d7-25b3-8b1c-a1ec-324046ea4777"
     - stage: uuid
-      stageUuid: "1fd48ae5-f604-87be-bcbb-25733186b8f3"
+      stageUuid: "e662f484-de23-88a1-b341-9ff2ca40183e"
 version: 2
 ---
 # duns

@@ -2,18 +2,18 @@
 name: science
 description: "Use when reasoning about which scientific mysteries erpax's form illuminates — information-as-reality, entropy as a conserved ledger, the holographic bound, entanglement as content-address, symmetry as conservation. Honest about correspondence vs metaphor."
 atomPath: science
-coordinate: "science · 4/weave · edee2dbf"
-contentUuid: "469d92d7-6445-5059-a5d1-0a420aceadb5"
-diamondUuid: "e44bb3ae-c0ba-822c-9c97-eadaa17b29bd"
-uuid: "edee2dbf-b589-8259-906d-0400de123cf3"
-horo: 4
+coordinate: "science · 5/round · 96d3cdf2"
+contentUuid: "f10be89d-4caf-5379-a3a4-7f58eba477fd"
+diamondUuid: "b4587b91-11ca-88b4-9942-efff6c734506"
+uuid: "96d3cdf2-4754-8c47-9608-0461cf083e53"
+horo: 5
 typography:
   partition: science
   bondDegree: 210
 standards: []
 bindings: []
 signatures:
-  computationUuid: "588b4bcd-1286-8f8d-a889-4ffeb42d0453"
+  computationUuid: "05d3457f-c3cc-8d72-a2f3-bccc1a49080b"
   stages:
     - stage: path
       stageUuid: "19c7ca85-9a92-8b25-bad4-6e6cd367c51d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e79117fe-f75f-8451-86b6-844908bca480"
     - stage: horo
-      stageUuid: "0fd6f92e-5531-8c7e-a2bb-603a4b1e114f"
+      stageUuid: "64e0194b-b22c-8cba-b761-c1a9ced3829d"
     - stage: seal
       stageUuid: "5c4e0d7a-4b04-8777-97dc-0704810d9b6f"
     - stage: uuid
-      stageUuid: "45e1952d-49f2-88d4-9358-2a58a3633581"
+      stageUuid: "f1c91ba8-24a3-8617-9f28-159869e437ed"
 version: 2
 ---
 # science — the mysteries erpax's form illuminates

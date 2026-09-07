@@ -2,11 +2,11 @@
 name: base64url
 description: "Use when reasoning about base64url — (HKDF-derived per-row DEKs) and (JWS-shaped detached signatures) each carried their own / ."
 atomPath: "integrity/base64url"
-coordinate: "integrity/base64url · 7/descent · 4f93b9e9"
-contentUuid: "4a29febf-62fa-5ffe-8251-84825a75c8c5"
-diamondUuid: "600013e6-4199-84f5-b28a-211d984218de"
-uuid: "4f93b9e9-190e-8df1-b4e5-21a89d892e11"
-horo: 7
+coordinate: "integrity/base64url · 4/weave · ecdec316"
+contentUuid: "5e7309aa-e719-5ea4-9462-4e9b8c478d99"
+diamondUuid: "57fb2a22-1fcc-8cf0-915d-3ae584303cd2"
+uuid: "ecdec316-ac4c-8149-8f15-0259e4dabc58"
+horo: 4
 typography:
   partition: integrity
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - RFC 4648 §5 base64url — URL and filename safe alphabet
 bindings: []
 signatures:
-  computationUuid: "fb03b80d-3c61-808e-80d4-a2f78f2e1464"
+  computationUuid: "3281895a-4c4f-803a-80c6-16329de79c10"
   stages:
     - stage: path
       stageUuid: "5cf66d10-2f95-8525-99b9-a4259730a212"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e4eda20c-0143-8f10-b08f-65d16c972024"
     - stage: horo
-      stageUuid: "5c6e6264-778f-88da-8e52-9e8f930a8f86"
+      stageUuid: "a9d785e4-7905-8760-9b29-4e3b4935411b"
     - stage: seal
       stageUuid: "370c0a39-f149-8c71-ab2f-d487058cb7f0"
     - stage: uuid
-      stageUuid: "9d97dabe-19c1-81bc-b0f8-d76b786bb0e3"
+      stageUuid: "42c53b52-7b6a-8a4d-8cfb-1f880589fc0b"
 version: 2
 ---
 # integrity/base64url — the encoding both signature paths implemented privately

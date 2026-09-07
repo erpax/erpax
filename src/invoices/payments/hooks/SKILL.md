@@ -2,18 +2,18 @@
 name: hooks
 description: "Use when reasoning about the payments collection's Payload hooks — before/after change and validate logic for payments."
 atomPath: "invoices/payments/hooks"
-coordinate: "invoices/payments/hooks · 3/3 · 9d0f488a"
-contentUuid: "84acb49d-d5b8-592d-901b-0cbce8762602"
-diamondUuid: "f431e7cf-4faf-80d9-bb97-45b2a81bdac5"
-uuid: "9d0f488a-eb83-8cb6-a5dd-2b439a4188bf"
-horo: 3
+coordinate: "invoices/payments/hooks · 9/unity · 36b3e462"
+contentUuid: "77c21a6d-a406-501f-9683-f4f0a613efe3"
+diamondUuid: "bc796dc0-0f0b-8fe2-bc13-9a09b8ef7762"
+uuid: "36b3e462-4617-81eb-9f23-fbf6477606e6"
+horo: 9
 typography:
   partition: invoices
   bondDegree: 312
 standards: []
 bindings: []
 signatures:
-  computationUuid: "cdb950a7-5e0f-8e2f-aecd-68653e0e22ee"
+  computationUuid: "8d9cfdc9-a26e-8039-88d7-9482921d08d0"
   stages:
     - stage: path
       stageUuid: "0ff92f23-2f9f-83f7-a658-507b0fe79440"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "55ae96e5-9257-8eb1-8ffc-d2ecfe17d9b8"
     - stage: horo
-      stageUuid: "5a0d3c37-61cb-87f1-a688-d33a45599d6b"
+      stageUuid: "89d1b493-00d4-8d74-9be9-1a582e4017a1"
     - stage: seal
       stageUuid: "df3a4a2f-f214-8def-adca-76bc891bcdb7"
     - stage: uuid
-      stageUuid: "74939321-c373-8a8a-9af3-30b9ef149d0b"
+      stageUuid: "e7d74786-201a-84bc-a052-27c9913209a9"
 version: 2
 ---
 # invoices/payments/hooks

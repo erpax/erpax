@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "realtime",
-    "uuid": "ee1eda89-6b3d-8e81-8ce7-a40d8b05ce73",
+    "uuid": "fd57720f-121c-8e4e-895d-72f7fb9e78cb",
     "words": [
       "realtime"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modeling live delivery of events — an append-only log plus a per-subscriber cursor, where the live tail is everything after the cursor; the pull-side semantics over a stream.",
-    "uuid": "a86a3b01-8042-8b67-a5f6-13347b2120fc",
+    "uuid": "753494dd-5d7b-8d81-a449-8e04d40760df",
     "words": [
       "use",
       "when",

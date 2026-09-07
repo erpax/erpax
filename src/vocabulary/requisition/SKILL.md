@@ -2,18 +2,18 @@
 name: requisition
 description: Use when modelling one requisition — the singular model of the requisitions collection (the plural store); a formal internal request to procure goods.
 atomPath: "vocabulary/requisition"
-coordinate: "vocabulary/requisition · 4/weave · b79022a5"
-contentUuid: "e103962a-b391-54d9-9032-faadc39b925e"
-diamondUuid: "11921646-c6a0-8aec-b956-aef14d9c74e6"
-uuid: "b79022a5-1d60-8583-9f1e-417db729430d"
-horo: 4
+coordinate: "vocabulary/requisition · 2/share · e6489d7e"
+contentUuid: "066eb681-35c6-58fe-8146-9838e537b876"
+diamondUuid: "7631913e-bf4b-8bf9-a2b1-af59bab57b0a"
+uuid: "e6489d7e-bca5-862e-812c-b87d95daae1a"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f8b91032-bd00-867d-b52e-894af7476fba"
+  computationUuid: "69aef4e7-63a5-8ea4-a3cd-45a3954b6187"
   stages:
     - stage: path
       stageUuid: "0c054de3-2e64-8188-870e-901a33f79ed5"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7d727585-16f4-8209-828c-46dedfebfc94"
     - stage: horo
-      stageUuid: "52bb15e9-0d02-8184-a5e0-8dfdbcca32be"
+      stageUuid: "8f4687a3-099f-896c-bc43-8d39bab936c6"
     - stage: seal
       stageUuid: "48c41563-66f9-8fcc-9a22-76f8892f1f49"
     - stage: uuid
-      stageUuid: "fa3326e2-9c56-8353-b647-d79c20c9d7ad"
+      stageUuid: "886e6f50-d136-84d3-bae2-29ac134e42e2"
 version: 2
 ---
 # requisition — the model of one [[requisitions]] row

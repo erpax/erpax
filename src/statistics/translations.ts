@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "statistics",
-    "uuid": "33e62b69-c661-818b-96af-176ee3095e2f",
+    "uuid": "0e4e364a-d4c2-8893-9fd0-a36e123e41c1",
     "words": [
       "statistics"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about statistics — A schema.org component word, collided out of schema.org compounds — fused from diseaseSpreadStatistics (sti · collapse · merge).",
-    "uuid": "af1da21f-ffea-8d3f-b65a-69c2436a246f",
+    "uuid": "1d1dea4a-1ace-85a3-b281-c62a0dcb5387",
     "words": [
       "use",
       "when",

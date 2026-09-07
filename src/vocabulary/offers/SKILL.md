@@ -2,11 +2,11 @@
 name: offers
 description: "Use when reasoning about offers — An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use businessFunction to"
 atomPath: "vocabulary/offers"
-coordinate: "vocabulary/offers · 5/round · b70729a7"
-contentUuid: "97cdfc61-87d7-5c03-9797-4d558a447615"
-diamondUuid: "ce6b37e9-45a1-81e3-a3b7-cb614066da6c"
-uuid: "b70729a7-8187-875c-8974-f16cd2f6a6dc"
-horo: 5
+coordinate: "vocabulary/offers · 1/base · 18774ac7"
+contentUuid: "01617644-7b90-5680-ad36-5f9ee930a2b3"
+diamondUuid: "c6561699-4264-8066-a674-fc3dcb91ce19"
+uuid: "18774ac7-4519-8085-8cea-9f949b7e1609"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 13
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c5372e49-21ff-85a9-bde6-07e3f9c08f7b"
+  computationUuid: "189e9875-05a3-872f-81d3-2471cb851f51"
   stages:
     - stage: path
       stageUuid: "67986d49-d940-89e9-907e-e5ba2ae715af"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "95032aad-88bc-8c5c-a1d9-53534b2490d2"
     - stage: horo
-      stageUuid: "54f87d77-704c-838b-b0c2-09c0e8f1a5f8"
+      stageUuid: "5ca771aa-8547-8438-94b9-bb634942c946"
     - stage: seal
       stageUuid: "f48643ca-4fc0-841b-ae53-eec72e2fce9a"
     - stage: uuid
-      stageUuid: "54f94e66-07de-858b-a114-47cb85e858df"
+      stageUuid: "03a5e2de-6033-8b31-8145-fe5772843630"
 version: 2
 ---
 # offers

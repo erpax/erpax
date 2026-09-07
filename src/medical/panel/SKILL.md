@@ -2,10 +2,10 @@
 name: panel
 description: "Use when reasoning about panel as a medical facet of medical — vocabulary pivot to @/panel; nested not duplicated."
 atomPath: "medical/panel"
-coordinate: "medical/panel · 2/share · 06177cad"
-contentUuid: "ee060055-7382-5872-9bb0-2906de56a4f8"
-diamondUuid: "6a181e41-9e11-8b07-95f9-99b5a8075e4a"
-uuid: "06177cad-8b10-8b5a-ab34-d6044e7eb23a"
+coordinate: "medical/panel · 2/share · cc134e73"
+contentUuid: "c013c0b6-9a61-5e74-a320-2cf93b4a4b32"
+diamondUuid: "357f02c1-0d77-81dd-847e-a51a85a63b57"
+uuid: "cc134e73-bfab-84c0-ac3b-31fdd7929b8e"
 horo: 2
 typography:
   partition: medical
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "aef45632-7904-8bba-83b4-86566940dc8f"
+  computationUuid: "3024e615-730a-890a-8097-4d7371ed3e33"
   stages:
     - stage: path
       stageUuid: "36e731f6-d134-8338-826b-98d1f6e84d6c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "679db50a-4108-8c55-b69a-6441c786b210"
     - stage: horo
-      stageUuid: "c998de82-cf26-800f-940a-b4cca3d201f1"
+      stageUuid: "32279cca-27ae-8f53-a81e-e7caedf8d6c1"
     - stage: seal
       stageUuid: "4b0252aa-646d-8a35-8ed2-c465569da48a"
     - stage: uuid
-      stageUuid: "51f05cfe-0b9b-84bc-ab48-203edf11c679"
+      stageUuid: "0579dd85-6d9f-8f79-8256-f8a268a0e726"
 version: 2
 ---
 # medical/panel — medical facet

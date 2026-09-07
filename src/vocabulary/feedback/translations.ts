@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "feedback",
-    "uuid": "310679ac-1cf6-8767-af89-50f9475a27b6",
+    "uuid": "76c7b201-96f6-8ce6-8abd-b590dadceefc",
     "words": [
       "feedback"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when collecting, structuring, and acting on input from users, employees, or customers — surveys, reviews, suggestions, 360-degree feedback. The structured loop of input → analysis → action.",
-    "uuid": "e259ef37-11eb-8889-8e8c-3a3a0228dd60",
+    "uuid": "33658914-7be1-88c9-9f7d-80252609842b",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "override",
-    "uuid": "b0d5172f-a0e5-8f1b-a23c-7a34a1abd7bf",
+    "uuid": "136279fc-5f9c-8c31-86d3-9e28e81aa295",
     "words": [
       "override"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about override as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "ec8b83c8-6ab8-879c-ab84-5bdbd1ac38d1",
+    "uuid": "6172cd0e-1bce-8e2b-9241-0c689ece25b4",
     "words": [
       "use",
       "when",

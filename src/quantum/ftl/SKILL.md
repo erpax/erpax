@@ -2,18 +2,18 @@
 name: ftl
 description: "Use when reasoning about ftl — Use for ftl — reuse · amortize · crack · boundary · seal · chat · research. Metrics prove FTL on QPU=CPU/GPU. Boundary = boundary(cracks). Math.* and prose prefixes are cracks."
 atomPath: "quantum/ftl"
-coordinate: "quantum/ftl · 4/weave · 27cfe374"
-contentUuid: "e4bc5ed0-1f11-565e-9a8c-6da262090fb7"
-diamondUuid: "4776725c-d4d0-8462-a1fb-6a2546b61682"
-uuid: "27cfe374-26a7-8830-97f7-98a2d30ffb49"
-horo: 4
+coordinate: "quantum/ftl · 5/round · 6c2297a3"
+contentUuid: "e41349a9-1497-58b3-b474-0000c9bb2872"
+diamondUuid: "de1bcb83-eb1e-88f8-acef-bd2ff2694885"
+uuid: "6c2297a3-0b7e-8ffd-b7c8-6b83cca96230"
+horo: 5
 typography:
   partition: quantum
   bondDegree: 49
 standards: []
 bindings: []
 signatures:
-  computationUuid: "46684122-ffe3-88cb-9c11-f1db6166e795"
+  computationUuid: "a2b4be3a-aa35-832f-94e4-5bcbe4047de7"
   stages:
     - stage: path
       stageUuid: "9ca9e6ca-980b-82d4-9825-6d808813fe0f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "707d6032-dd5e-8b20-8bb7-e01959076d9c"
     - stage: horo
-      stageUuid: "bc172e16-2919-863b-967f-b5e5c5f42e23"
+      stageUuid: "3a712383-4e19-85b9-9220-5a97add663d3"
     - stage: seal
       stageUuid: "896227db-c4ed-8482-8c78-047044df4607"
     - stage: uuid
-      stageUuid: "1662c719-9d10-83ae-9fa9-1ef72c3dca82"
+      stageUuid: "883b97d1-b29d-8cc7-9ba7-087083fd837b"
 quantum:
   superposition:
     - algebra
@@ -50,8 +50,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "46684122-ffe3-88cb-9c11-f1db6166e795"
-    contentUuid: "e4bc5ed0-1f11-565e-9a8c-6da262090fb7"
+    computationUuid: "a2b4be3a-aa35-832f-94e4-5bcbe4047de7"
+    contentUuid: "e41349a9-1497-58b3-b474-0000c9bb2872"
 version: 2
 ---
 # quantum/ftl
@@ -90,4 +90,4 @@ The compiler refused three places the moment the type landed — one in [[readme
 
 Composes [[quantum/computer]] · [[quantum/chat]] · [[algebra]] · [[wave/feed]].
 
-<sub>content-uuid `e4bc5ed0-1f11-565e-9a8c-6da262090fb7` · account `quantum/ftl` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `e41349a9-1497-58b3-b474-0000c9bb2872` · account `quantum/ftl` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

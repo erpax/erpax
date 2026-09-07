@@ -2,10 +2,10 @@
 name: gynecologic
 description: "Use when reasoning about gynecologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/gynecologic"
-coordinate: "vocabulary/gynecologic · 4/weave · 6b5974bf"
-contentUuid: "8e6b49ba-16c7-543a-b104-1d1293f85673"
-diamondUuid: "806f8b9c-9811-8190-83c0-a1413cd783e9"
-uuid: "6b5974bf-7455-8b2c-b428-4053269bdde6"
+coordinate: "vocabulary/gynecologic · 4/weave · 2184210e"
+contentUuid: "9912b6e0-e7bc-5804-a27a-bf5b123f91c9"
+diamondUuid: "0475c6ec-10ff-8483-8464-582698c58db2"
+uuid: "2184210e-1510-8071-b06d-aa22a2f09958"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3582c526-8f37-8bdd-b275-0ec4533404ad"
+  computationUuid: "fe48234e-5db4-805d-acb2-3f05b282d2fd"
   stages:
     - stage: path
       stageUuid: "83d31f14-dd25-86ea-ae11-77c5d33b09ee"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7311f30c-5571-8487-a0d4-ec8691c3e2ee"
     - stage: horo
-      stageUuid: "673ce99f-c3c2-873e-a5c9-1abe38084856"
+      stageUuid: "59dd26db-dfc9-8bf2-bc27-69257a5a0255"
     - stage: seal
       stageUuid: "4bbf7cbf-95cd-84ac-a2e5-72838ffd26ae"
     - stage: uuid
-      stageUuid: "eaadfc94-3e88-8d35-9ecf-e8defca0cb27"
+      stageUuid: "29b22a56-90fb-8be3-9f54-373796b5d4f4"
 version: 2
 ---
 # gynecologic

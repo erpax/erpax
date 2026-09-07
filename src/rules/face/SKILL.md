@@ -2,10 +2,10 @@
 name: face
 description: "Use when a refactor moves matter between atoms — a split may relocate anything, but an atom that stops offering a name breaks every caller silently. Snapshot corpusFace before, compare after; a LOST name fails closed, a gained one is free. Replayed against the commit that split four concentration hubs, it catches the drop that commit made."
 atomPath: "rules/face"
-coordinate: "rules/face · 8/crest · 74a37df3"
-contentUuid: "00b0093f-d305-522f-9e1a-c3ab11a2f3ed"
-diamondUuid: "c7132502-b7e2-88ef-887b-108d633b0008"
-uuid: "74a37df3-4677-8197-b639-8085f563e3b4"
+coordinate: "rules/face · 8/crest · b32a7913"
+contentUuid: "680ee731-176c-559e-ae8e-a78ec45059f3"
+diamondUuid: "7c7a06f8-d32f-8bfb-96bf-881ffe6bf19a"
+uuid: "b32a7913-f673-837c-8a39-3f00669cf8f2"
 horo: 8
 typography:
   partition: rules
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5375f285-3fa7-8368-99db-2f32e3c5ce42"
+  computationUuid: "41b59744-a573-8297-b2a9-5b4b0ec1b44e"
   stages:
     - stage: path
       stageUuid: "e4c83b30-fa59-8cfb-ad01-4e9410483904"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "10dc000c-6382-8c2d-ba63-fd5440242f80"
     - stage: horo
-      stageUuid: "ecaf2029-53f1-8aa4-a113-da1fa03c5094"
+      stageUuid: "a1d0b34c-f8e5-8e5d-a370-83394a0fcf93"
     - stage: seal
       stageUuid: "30feaeea-246e-8afa-97f0-eb3219156c64"
     - stage: uuid
-      stageUuid: "94be341b-485c-8277-9871-000d60fea135"
+      stageUuid: "ed87a458-1e0b-839a-9041-acb0f0450940"
 version: 2
 ---
 # rules/face — a refactor may move anything except a name

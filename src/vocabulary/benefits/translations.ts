@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "benefits",
-    "uuid": "114afbaa-3bf3-8e1f-98ac-b447abd654a5",
+    "uuid": "79a8b29e-1d3e-88fe-b30f-02728ce73576",
     "words": [
       "benefits"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about benefits — Description of benefits associated with the job.",
-    "uuid": "0a5d1441-cc16-860a-8e2c-3ada6bd29c65",
+    "uuid": "4e29901e-d262-8865-8652-b8b5ca41da45",
     "words": [
       "use",
       "when",

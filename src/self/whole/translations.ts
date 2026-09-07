@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "whole",
-    "uuid": "99446e11-08c8-8b37-9a4a-3627e0f3782b",
+    "uuid": "b0c97165-57e6-8851-9b74-72c9511525c9",
     "words": [
       "whole"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the self is WHOLE — the crest of the outward stroke: whole↔part, the torus centre holds all and the part reconstructs the whole (self-applied whole at forward-coil position 8/crest). The self at maximum radius, still one.",
-    "uuid": "17dfe946-6368-8189-9c17-ec2b9e921e28",
+    "uuid": "fa4b965a-3858-82df-a14b-03c3d547ddbd",
     "words": [
       "use",
       "when",

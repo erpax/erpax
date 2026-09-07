@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "returns",
-    "uuid": "dd31af5c-5ff8-8b9a-a235-7032b481014f",
+    "uuid": "f7719519-8903-8283-a76f-f75f32dae815",
     "words": [
       "returns"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when filing or tracking tax returns — VAT monthly/quarterly/annual, EC Sales List, Intrastat, SAF-T, US sales tax, GST, corporate income or withholding returns — with period, output/input tax, net liability, authority confirmation reference, filedAt/paidAt timestamps and attachment evidence. The filed-return record collection (distinct from the TaxCalculations snapshot).",
-    "uuid": "c7f35589-f61f-851c-a111-33bdd5ae4085",
+    "uuid": "5938e873-c71d-8d6c-a5e8-90ea671d398f",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cloudflare",
-    "uuid": "720762f1-e3eb-86a3-88c3-93dcd6fc1475",
+    "uuid": "65a6a16d-9438-841a-be67-3223daf2c820",
     "words": [
       "cloudflare"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about cloudflare — Cloudflare MCP tool family — Slice CCCCCCCCC (2026-05-11) extract.",
-    "uuid": "e15177c3-4ed3-8aac-947f-b9cd1c75cbd0",
+    "uuid": "e7afdb24-0dc9-8ef9-a9e2-1ecfa5ae6306",
     "words": [
       "use",
       "when",

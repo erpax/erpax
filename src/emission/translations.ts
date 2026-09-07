@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "emission",
-    "uuid": "42613f2f-94c4-8a69-9ca7-0276085bcf71",
+    "uuid": "fce983b7-e850-8884-acc6-4f77f3e3817d",
     "words": [
       "emission"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when quantifying the greenhouse-gas mass a cycle releases — converting each gas to CO₂-equivalent via its Global Warming Potential, summing a multi-gas inventory, computing activity-based emissions (GHG Protocol), or measuring carbon intensity (CO₂e per unit output). The DEBIT/EXPORT side of sustainability.",
-    "uuid": "117c5d37-483b-84ea-bc09-b62c2eca4387",
+    "uuid": "69d61a40-33b7-8436-b8d6-e5afeb3be767",
     "words": [
       "use",
       "when",

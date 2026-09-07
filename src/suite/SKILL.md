@@ -2,11 +2,11 @@
 name: suite
 description: "Use when reasoning about suite — A suite in a hotel or other public accommodation, denotes a class of luxury accommodations, the key feature of which is multiple rooms (source: Wikipedia, the free encyclopedia, se"
 atomPath: suite
-coordinate: "suite · 2/share · 5710d216"
-contentUuid: "636a30bb-61ee-57df-83f2-18ff63b25b6e"
-diamondUuid: "2b52e98f-ddf9-8a0f-b508-7e0a7c18111b"
-uuid: "5710d216-b572-8588-a91a-ec2e2d70bf41"
-horo: 2
+coordinate: "suite · 7/descent · 9c0da3b4"
+contentUuid: "3ce12f9d-6d3f-53ca-ad99-3cccf0e93a3c"
+diamondUuid: "674849b3-db52-8a9a-8cbc-5f0496328780"
+uuid: "9c0da3b4-3c75-84f4-9985-bd3c28330c05"
+horo: 7
 typography:
   partition: suite
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d249fd3b-0385-8077-b0ae-e6b98623213f"
+  computationUuid: "b96f00a4-4df8-844f-bef6-15413f56ddf7"
   stages:
     - stage: path
       stageUuid: "00f62669-0f7b-869e-80f8-c2d8e4d67a22"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b9c60817-a39b-82e4-bd97-c99bd3b67748"
     - stage: horo
-      stageUuid: "f11c0dd9-e789-83df-9e2b-385b1fbf56ed"
+      stageUuid: "0d41843d-c160-802e-918d-7a4a21992564"
     - stage: seal
       stageUuid: "299fd19e-7105-8b50-b90e-8363f14a3cd6"
     - stage: uuid
-      stageUuid: "c971b72d-f97c-8494-9cb8-5af17005e14c"
+      stageUuid: "39e323bd-5022-81be-bf94-4195e7998449"
 version: 2
 ---
 # suite

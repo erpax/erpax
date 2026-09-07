@@ -2,18 +2,18 @@
 name: nav
 description: "Use when reasoning about nav — A magnifying glass is a picture. To a screen reader, a link containing only a picture has an accessible name of *the empty string* — announced as \"link\", with nothing to say where…"
 atomPath: "header/nav"
-coordinate: "header/nav · 7/descent · d82953d8"
-contentUuid: "80e55bb9-c20e-5a59-99be-0e88dfdabf32"
-diamondUuid: "52d8e6b0-204c-8da7-b7d6-92a9fd610a43"
-uuid: "d82953d8-92fb-8cc7-98d6-a60c34f184fb"
-horo: 7
+coordinate: "header/nav · 1/base · 08a0252b"
+contentUuid: "aa0a3243-fc2c-5c28-8b1d-1d60a5c2f0a0"
+diamondUuid: "1464b147-5f37-821b-8a4f-04ae709ece23"
+uuid: "08a0252b-1a57-8006-91cc-ba1c8f931d09"
+horo: 1
 typography:
   partition: header
   bondDegree: 7
 standards: []
 bindings: []
 signatures:
-  computationUuid: "74e8676a-d6a6-8bb0-97c4-a1c6e3b302dd"
+  computationUuid: "19d13c3e-5560-8c64-a786-2c1cbe1b9ec3"
   stages:
     - stage: path
       stageUuid: "e63646f2-1052-8fa1-8f0e-d022a14e316c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "efc5f506-88ff-86a6-a89d-e09c5a95ea10"
     - stage: horo
-      stageUuid: "228e50a6-6ecb-8ddc-899e-d8d1b4ef7e72"
+      stageUuid: "956511c7-c76e-81dd-87f4-b061574d7a3c"
     - stage: seal
       stageUuid: "685164cd-2085-8cfa-bde2-fc6eff1b8f89"
     - stage: uuid
-      stageUuid: "c0e4cd29-6208-8656-983f-aeb3d18a8c42"
+      stageUuid: "3908012e-7edf-840c-b418-c20f868a049a"
 version: 2
 ---
 # header/nav — the icon link has a name, because an icon has none

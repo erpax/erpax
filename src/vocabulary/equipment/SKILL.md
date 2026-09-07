@@ -2,11 +2,11 @@
 name: equipment
 description: "Use when reasoning about equipment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/equipment"
-coordinate: "vocabulary/equipment · 5/round · 0fe2ed59"
-contentUuid: "88ab76ae-a99f-5a92-8eb2-5fd759f7a7f2"
-diamondUuid: "0a6718f1-2aca-851d-9ec9-327a9dc96ef8"
-uuid: "0fe2ed59-b1ca-884e-873e-fc48bcc4f9c7"
-horo: 5
+coordinate: "vocabulary/equipment · 7/descent · d380b3c8"
+contentUuid: "8232d791-62e5-5e63-9852-3b0db7995f77"
+diamondUuid: "5a14ecab-0f73-8daa-8dcf-287f1af692ad"
+uuid: "d380b3c8-d946-811a-a2ea-b53bb1bead38"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d3c06799-ff2e-81aa-bbb5-79c8ffd2c31f"
+  computationUuid: "fa194634-271f-8412-a911-7a7d417f5494"
   stages:
     - stage: path
       stageUuid: "1113bb41-b0d1-88c8-b7b2-cb7816186073"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "495413b4-7c79-88ff-b42f-c2bde583a052"
     - stage: horo
-      stageUuid: "15c04373-aeb5-830f-b43b-4630c1e7f114"
+      stageUuid: "ae5ba2d2-7f7d-8159-97bf-db20d634f86d"
     - stage: seal
       stageUuid: "e1c0ef4b-6b95-897f-8a0e-f3cc25a13870"
     - stage: uuid
-      stageUuid: "1f1136fe-3b9c-87e3-8be6-8af715c1a7d6"
+      stageUuid: "da0a3bad-edd3-8449-8837-783abcae68bb"
 version: 2
 ---
 # equipment

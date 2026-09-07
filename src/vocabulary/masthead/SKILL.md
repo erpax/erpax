@@ -2,11 +2,11 @@
 name: masthead
 description: "Use when reasoning about masthead — For a NewsMediaOrganization, a link to the masthead page or a page listing top editorial management."
 atomPath: "vocabulary/masthead"
-coordinate: "vocabulary/masthead · 1/base · f917caa4"
-contentUuid: "262bd956-1a12-55a3-8de5-64523f854d8b"
-diamondUuid: "5ac83b19-a66d-8604-b99e-db343496d27d"
-uuid: "f917caa4-a3f6-8312-afa4-d2970e26320c"
-horo: 1
+coordinate: "vocabulary/masthead · 2/share · e7b844df"
+contentUuid: "952fbd3c-f2d7-51db-aa24-353c7dd0f267"
+diamondUuid: "69c2f1f7-ac7b-8ff0-819e-e037a9cd88cf"
+uuid: "e7b844df-9975-834b-ae02-9e5ef5710712"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "59d69581-38a2-8e51-b093-a86637647c44"
+  computationUuid: "fa98dc4e-6225-864b-b3af-de8db41b126a"
   stages:
     - stage: path
       stageUuid: "e1daf2df-62ec-86fd-8e4c-ada9e918da46"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bcbc9b62-de34-84ba-9958-8461616732e5"
     - stage: horo
-      stageUuid: "88c4c388-dfe9-8974-901a-c607e5aa2306"
+      stageUuid: "133d0c9c-673a-8edc-a831-26e2d2f09f5f"
     - stage: seal
       stageUuid: "b026fee3-b67e-83f0-a688-9560cc27fe12"
     - stage: uuid
-      stageUuid: "06de4e4f-a42c-8f33-bf5e-95ccc6f87958"
+      stageUuid: "16aa51ba-db5b-87b1-ac77-c3ac09949758"
 version: 2
 ---
 # masthead

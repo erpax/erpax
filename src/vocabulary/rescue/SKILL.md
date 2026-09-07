@@ -2,11 +2,11 @@
 name: rescue
 description: "Use when reasoning about rescue as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/rescue"
-coordinate: "vocabulary/rescue · 5/round · 29697c11"
-contentUuid: "cc478697-9d4e-5340-b305-248084192f6e"
-diamondUuid: "a55f4c19-7c22-8201-87fb-28abab8f66a1"
-uuid: "29697c11-03f7-8674-9a4c-c7e22c557494"
-horo: 5
+coordinate: "vocabulary/rescue · 7/descent · c5037742"
+contentUuid: "97381003-400a-57cb-ac34-d214199415f7"
+diamondUuid: "4c5e2285-5119-8a41-afae-f2ab8f77999d"
+uuid: "c5037742-a44f-8e85-bc2d-73332c81c32c"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "411936c6-2ae3-88f5-89b6-a5b07ad34de2"
+  computationUuid: "d3664426-d777-85da-9951-4d0a0b0e46ed"
   stages:
     - stage: path
       stageUuid: "c074c454-f3c8-8692-a0f7-4a08e202f18f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "18cc7e7b-8a9a-8208-8af3-a8ddc584edda"
     - stage: horo
-      stageUuid: "7e9e1f20-a3ec-8e07-ae1f-68e6ddc30467"
+      stageUuid: "4379d755-1cfb-8326-bdec-fb9d485745db"
     - stage: seal
       stageUuid: "f81580ac-bf21-8885-a2eb-447042eaf858"
     - stage: uuid
-      stageUuid: "c3d24804-d495-8412-87fc-c16527da02fb"
+      stageUuid: "fb131f8b-bfda-8153-9c8b-583883a8e03b"
 version: 2
 ---
 # rescue

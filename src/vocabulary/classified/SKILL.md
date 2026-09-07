@@ -2,11 +2,11 @@
 name: classified
 description: "Use when reasoning about classified as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/classified"
-coordinate: "vocabulary/classified · 2/share · 8b042651"
-contentUuid: "38cee8ff-29d7-5246-9e0b-40ce7067a592"
-diamondUuid: "7e0e2438-7f42-83fc-8404-9efbb6dadddb"
-uuid: "8b042651-0cf6-825e-a07e-1b45f371dc57"
-horo: 2
+coordinate: "vocabulary/classified · 1/base · 295b932b"
+contentUuid: "f16a009b-a654-5961-92ac-1073937a9d83"
+diamondUuid: "d2de2d4f-b7f6-855f-a509-e3eaaf9db7a1"
+uuid: "295b932b-da60-854f-8b8a-88835b95929a"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c70024d8-83cb-89ed-b826-24e43e5dbb55"
+  computationUuid: "cda00fb2-143a-869e-a26b-bdaac73205c1"
   stages:
     - stage: path
       stageUuid: "131a5fad-ea1f-85e7-8365-da7daaad7f1c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "483e4584-63b8-8192-9cca-b3d9d339e697"
     - stage: horo
-      stageUuid: "0b7eaf4d-2f7a-8502-aa81-5cf4313d5ac9"
+      stageUuid: "5175ed66-4f5e-8b0e-af5b-6ebd8f89d44b"
     - stage: seal
       stageUuid: "5192df53-d3a0-8ed6-8a6f-0f73d958f4d7"
     - stage: uuid
-      stageUuid: "b4ed64ca-fb77-8a98-9c08-c492deda7332"
+      stageUuid: "30731dff-f907-8bee-a2f8-a2dfc096e86f"
 version: 2
 ---
 # classified

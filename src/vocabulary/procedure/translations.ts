@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "procedure",
-    "uuid": "a3d154e6-708d-8484-9d3a-d2b1979e8cd2",
+    "uuid": "d3adde63-790e-893b-a167-c804588a45fe",
     "words": [
       "procedure"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about procedure — A description of the procedure involved in setting up, using, and/or installing the device.",
-    "uuid": "b0d49267-1436-8448-9565-3c91a045ecaa",
+    "uuid": "62f4f888-fc20-8ab5-ab34-0741ca1cdc08",
     "words": [
       "use",
       "when",

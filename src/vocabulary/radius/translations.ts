@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "radius",
-    "uuid": "301ec4e6-6d24-8c59-b878-6c67d20ba62b",
+    "uuid": "5b06ec5d-f095-8c0b-8a63-84781a15a6f0",
     "words": [
       "radius"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about radius as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "17c3662f-ed64-8911-934d-8beedca9837f",
+    "uuid": "81a014d2-c282-8df0-9184-b1d0cd4a0bb0",
     "words": [
       "use",
       "when",

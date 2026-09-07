@@ -2,18 +2,18 @@
 name: chrome
 description: "Use when reasoning about chrome — The per-locale shell: message provider, , admin bar, header, children, footer. Its substance is that **one locale value reaches every part at once**, and the mechanism is the ."
 atomPath: "intl/chrome"
-coordinate: "intl/chrome · 5/round · fbb86a56"
-contentUuid: "a7dcd45c-3bd3-5d43-8252-1c5f15a878a7"
-diamondUuid: "d16a487e-5196-839a-bce2-77c71596071c"
-uuid: "fbb86a56-a1a1-8b1e-be9c-ab6f8fa8a692"
-horo: 5
+coordinate: "intl/chrome · 4/weave · f0c28bb8"
+contentUuid: "1ec544c7-56d5-5049-a572-a462b322e0a0"
+diamondUuid: "68a2384a-5e2e-8f09-a19e-7379e5c201b8"
+uuid: "f0c28bb8-3289-8d1c-96b4-ba16d7d1d722"
+horo: 4
 typography:
   partition: intl
   bondDegree: 3
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d127574d-84c3-8d63-a068-d1b0f3affa38"
+  computationUuid: "5abc9d69-b716-856c-b687-735f2848c340"
   stages:
     - stage: path
       stageUuid: "99166479-94db-80b7-9fd3-405104014b44"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0c0922a8-9089-83f5-9972-cb2ab2cab252"
     - stage: horo
-      stageUuid: "9ae1a2a4-657a-88d8-8fbb-d94e55dd23d6"
+      stageUuid: "01cda215-c2c9-867e-86e2-9537a8618692"
     - stage: seal
       stageUuid: "6bc1ba92-0d8f-834a-8d72-957c967743e4"
     - stage: uuid
-      stageUuid: "9569bb52-ac85-8231-8032-1c00945122a2"
+      stageUuid: "a3d780ce-0e0f-806e-9023-f61fb98600b9"
 version: 2
 ---
 # intl/chrome — one locale, keyed through every part of the frame

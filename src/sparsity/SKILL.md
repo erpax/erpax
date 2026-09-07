@@ -2,10 +2,10 @@
 name: sparsity
 description: "Use when reasoning about erpax's efficiency principle — sparsity: of a large DORMANT pool, only the smallest correct subset is active at once (capability ÷ cost → max). Two conjugate axes (DeepSeek's own framing, Engram) — COMPUTE sparsity (MoE routes 37B of 671B params; erpax routes few of 593 atoms per task) and MEMORY/representation sparsity (conditional lookup; content-uuid stores the whole in 128 bits, schema is generated not stored). Its limit is zeropoint (zero active = the source), its dual the bottleneck (the one missing active factor zeroes the product), its selector routing. DeepSeek reaches it by hardware constraint, erpax by telos — they converge on the identical sparse form."
 atomPath: sparsity
-coordinate: "sparsity · 5/round · f0e95616"
-contentUuid: "e867ae4e-dca8-5c47-b4c5-78cdb000909e"
-diamondUuid: "9b8af426-0d6a-8f26-8a1b-e7778708421f"
-uuid: "f0e95616-0085-89c6-b485-d29f662e44aa"
+coordinate: "sparsity · 5/round · 4056a36c"
+contentUuid: "42136d7e-05ab-53fc-9b68-20ef1458939a"
+diamondUuid: "5db446a6-c1e6-8c52-9a43-e34c43fe372f"
+uuid: "4056a36c-4e93-8a92-b389-1cead58fa855"
 horo: 5
 typography:
   partition: sparsity
@@ -14,7 +14,7 @@ standards:
   - "ISO/IEC 25010:2023 §5.2 — performance efficiency: resource utilisation"
 bindings: []
 signatures:
-  computationUuid: "8cfb5ed2-a847-88b1-b689-382b995e9872"
+  computationUuid: "20d8a5bb-a85d-8d90-8fbe-d6c5d09b70fa"
   stages:
     - stage: path
       stageUuid: "c2f0ac27-728f-8616-8099-eb64d86b8a4a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3598cef6-cb85-8eae-83ac-0a1bcfd60fcf"
     - stage: horo
-      stageUuid: "c4257d12-e214-8924-af85-4d9067ff8c57"
+      stageUuid: "c349fff9-7a6c-8e4d-952d-4dcc47318c6a"
     - stage: seal
       stageUuid: "05ff4ba5-f389-8961-93c4-317fa21cc0d4"
     - stage: uuid
-      stageUuid: "06ad5322-33b6-8f0b-b3af-79d148f71c5e"
+      stageUuid: "6e9f1030-b238-883a-9b09-65d775d04a3f"
 version: 2
 ---
 # sparsity — the active fraction (few of many, alive at once)

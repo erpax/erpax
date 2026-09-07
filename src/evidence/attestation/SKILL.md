@@ -2,11 +2,11 @@
 name: attestation
 description: "Use when reasoning about attestation — produces a PDF declaring which run captured this evidence, when, and against which tenant; applies a PAdES signature where a signer is configured."
 atomPath: "evidence/attestation"
-coordinate: "evidence/attestation · 2/share · 40307183"
-contentUuid: "7e5cdd16-1088-571f-8217-db9f3b4e64e4"
-diamondUuid: "78f7f161-cacb-823e-9c99-b581dc626523"
-uuid: "40307183-c277-8008-beb4-2772fb51cd26"
-horo: 2
+coordinate: "evidence/attestation · 1/base · f4da387e"
+contentUuid: "61a81fe1-3218-5d04-98d6-c5dfc4e80664"
+diamondUuid: "0c866c3f-df25-8e38-b525-b6298ce711f6"
+uuid: "f4da387e-cb8a-87b6-9276-55e78f58164f"
+horo: 1
 typography:
   partition: evidence
   bondDegree: 7
@@ -27,7 +27,7 @@ standards:
   - "SOX §404 internal-controls process-walk-through"
 bindings: []
 signatures:
-  computationUuid: "d6e06b59-0dc6-87a1-bc9b-0e24300449c3"
+  computationUuid: "950ea66c-06cc-8a6b-81fe-ea48b93002f7"
   stages:
     - stage: path
       stageUuid: "18a37f0e-eb5d-834b-a582-627bfd0f41cc"
@@ -38,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "175e9e99-8b03-8d30-b870-6ad8ac283fc4"
     - stage: horo
-      stageUuid: "dea8ff9d-dadf-8671-af1d-c9e751a0a46b"
+      stageUuid: "bca175c1-7832-884e-9d05-69c82765cb1c"
     - stage: seal
       stageUuid: "ae24aa4a-70e4-8241-9462-da8cdc3bed5d"
     - stage: uuid
-      stageUuid: "23881824-0c17-8293-8b24-03caab541b4b"
+      stageUuid: "b63b1f48-1264-8251-83f0-8f2a891d2f67"
 version: 2
 ---
 # evidence/attestation — the cover sheet is what makes a capture into evidence

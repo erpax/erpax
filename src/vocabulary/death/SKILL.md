@@ -2,11 +2,11 @@
 name: death
 description: "Use when reasoning about death as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/death"
-coordinate: "vocabulary/death · 1/base · e1ccb1c4"
-contentUuid: "d64cbcd8-52a7-53c8-bdad-351f71198ad4"
-diamondUuid: "f66ca3cf-dbcf-81d2-bf9e-ae0c83fee7f2"
-uuid: "e1ccb1c4-76ff-8102-a3e0-33fccab1017e"
-horo: 1
+coordinate: "vocabulary/death · 2/share · 89536a3c"
+contentUuid: "07ad520d-07c7-5cbb-a053-e9f87ef34eef"
+diamondUuid: "e37e73de-1176-8695-a191-a4d089c120c8"
+uuid: "89536a3c-9270-8d91-9c12-e9048858648e"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 25
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1baf68cf-9e48-85ab-a0f2-6981c85f39dc"
+  computationUuid: "b6b80d60-1cc8-8558-978a-a284cefdac37"
   stages:
     - stage: path
       stageUuid: "0fc83635-3444-8ed0-b22d-a3a6c0799920"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ab8cde76-35cb-8874-86d8-1597b01ed916"
     - stage: horo
-      stageUuid: "d2a56d84-b828-844b-8084-e1dc5ae39e28"
+      stageUuid: "cbd61f35-15cf-8919-8cf8-4b5429ccd056"
     - stage: seal
       stageUuid: "766443de-8fae-8698-9e51-6d9ead4920fa"
     - stage: uuid
-      stageUuid: "0677fe45-8775-8772-b136-3d3210b1c36d"
+      stageUuid: "4b883b12-875d-8e7d-ae9d-d949229880e1"
 version: 2
 ---
 # death

@@ -2,11 +2,11 @@
 name: headers
 description: "Use when reasoning about headers — Composite HTTP security-headers — defense-in-depth response hardening."
 atomPath: "security/header/headers"
-coordinate: "security/header/headers · 4/weave · 11ad6c17"
-contentUuid: "1dabf896-78b3-53e2-8923-b33ebd30003d"
-diamondUuid: "5142022f-80d7-8c41-912b-bd76d84a875b"
-uuid: "11ad6c17-24e0-8189-ac10-e2508f048dfb"
-horo: 4
+coordinate: "security/header/headers · 7/descent · 78110f9f"
+contentUuid: "a0d0b9f7-62ca-5cdd-8e91-d6bf66b3a280"
+diamondUuid: "b48c8ad4-f787-8c9c-a8c0-c132294c11d8"
+uuid: "78110f9f-d7a1-8a0f-8d72-78a52829b6fb"
+horo: 7
 typography:
   partition: security
   bondDegree: 6
@@ -22,7 +22,7 @@ standards:
   - "W3C Referrer-Policy"
 bindings: []
 signatures:
-  computationUuid: "16b1c891-5ac1-8bad-9b5f-a66155563fa3"
+  computationUuid: "ea173735-fb88-804b-9a5e-d2a1883b7131"
   stages:
     - stage: path
       stageUuid: "48257319-b8a8-8da2-be35-2ed4f5446ab0"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "a43f78c0-44ee-8fa1-bcdf-f940999f2f25"
     - stage: horo
-      stageUuid: "cf807853-f049-859b-a1ed-8919124074dd"
+      stageUuid: "8d9eb947-e681-80cc-8865-45a21f3c990d"
     - stage: seal
       stageUuid: "44ef40cd-a89d-8722-a4fd-c0ab4de5407b"
     - stage: uuid
-      stageUuid: "50f4f618-a7c5-899a-846d-c4038d2dfa4a"
+      stageUuid: "0e37bb57-02bb-8d80-a25d-79b1eef135cd"
 version: 2
 ---
 # security/header/headers

@@ -2,11 +2,11 @@
 name: maybe
 description: "Use when reasoning about maybe as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/maybe"
-coordinate: "vocabulary/maybe · 5/round · f7a84c2f"
-contentUuid: "fcad0f73-3007-5472-ac18-56438a5c4ba8"
-diamondUuid: "6dba1fe4-4bee-8308-b2bf-7a7e0e3e169f"
-uuid: "f7a84c2f-818d-8f1c-a408-64882f3270f5"
-horo: 5
+coordinate: "vocabulary/maybe · 7/descent · 43b703c9"
+contentUuid: "39eceb20-e932-58ea-9441-76f8954899f3"
+diamondUuid: "f60d069b-cfd1-89be-944a-f2c9a5361ff5"
+uuid: "43b703c9-0ea4-87cc-853b-914a3925a2a0"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9b0de809-eb5e-8d42-8c3a-dfea1ccc1f25"
+  computationUuid: "37c43689-1be1-8ec9-a906-860fd738f111"
   stages:
     - stage: path
       stageUuid: "283ad7de-a231-8071-824f-3af188aed68a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e4c2e244-6a78-8927-beef-cb30cd051d32"
     - stage: horo
-      stageUuid: "5e98e927-bf18-856c-be90-950e45439f86"
+      stageUuid: "f0cfdfc0-1e57-873a-8182-444d81dde98c"
     - stage: seal
       stageUuid: "9adae79f-c9ce-852d-97a3-a53e62095fcc"
     - stage: uuid
-      stageUuid: "3afe8683-d749-83d7-a7a6-32fc01577439"
+      stageUuid: "2d4df284-d66e-8ae9-8609-f6088e646b83"
 version: 2
 ---
 # maybe

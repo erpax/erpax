@@ -2,18 +2,18 @@
 name: index
 description: "Use when sealing folder paths — index.ts is the cross; subfolders are double-wired A/B ↔ B/A."
 atomPath: index
-coordinate: "index · 5/round · 8e240b1e"
-contentUuid: "54cff779-609d-5e45-9772-86502dcfbfe0"
-diamondUuid: "911f7d90-b9a9-80a9-8e3a-4c7a944455a7"
-uuid: "8e240b1e-2519-80f7-8b2b-30a2af3740f1"
-horo: 5
+coordinate: "index · 2/share · c11b0172"
+contentUuid: "f25138f5-6728-5d6f-ae62-009903b66d46"
+diamondUuid: "0f5c4755-6237-8dbf-9a2f-07ec6c36ba1f"
+uuid: "c11b0172-ea86-89b2-bfa4-f5b26638a3b6"
+horo: 2
 typography:
   partition: index
   bondDegree: 11
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5bfce6bc-1cb0-8d14-b6fb-7bd3d2de6c73"
+  computationUuid: "eb4d5cc3-0b1e-8ed3-8dbe-92b1f4572d6a"
   stages:
     - stage: path
       stageUuid: "b023ebf4-50e2-8379-99ec-b0c91a1bbddb"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a9165243-ac5b-80fa-aae5-9a15b328ddcc"
     - stage: horo
-      stageUuid: "889d8af7-d9a3-8cc0-8285-c39a199ce475"
+      stageUuid: "2bc5ba30-4b41-86bf-8a4c-2cbcfc54b194"
     - stage: seal
       stageUuid: "816003ae-981d-81c5-b7b4-6bbd16346b77"
     - stage: uuid
-      stageUuid: "ce09a309-a70a-83e1-a33c-56108db6e24f"
+      stageUuid: "061cc217-437a-8877-a1ff-40697ce70d38"
 version: 2
 ---
 # index

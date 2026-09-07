@@ -2,18 +2,18 @@
 name: topography
 description: "Use when mapping the shape of the corpus and rendering it as text — topography reads the terrain (gravity wells, link ridges, the aura field) and auto-generates prose from the quantum streams (uuid, digit, realtime event flows), so the map writes itself from the territory's own streams."
 atomPath: topography
-coordinate: "topography · 5/round · ddc94b99"
-contentUuid: "7e43f916-8e72-5768-b456-17b07f7eba99"
-diamondUuid: "10310eb0-1056-8aa1-873b-aedf34f96ae3"
-uuid: "ddc94b99-f37b-831f-a617-d980bc443653"
-horo: 5
+coordinate: "topography · 4/weave · c726e6be"
+contentUuid: "3e94088e-3118-5cd4-81bb-1ba40b9ffcfd"
+diamondUuid: "99d78511-c17b-8658-a6b1-352861658687"
+uuid: "c726e6be-9ebc-899c-94f9-f91ae610df25"
+horo: 4
 typography:
   partition: topography
   bondDegree: 46
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a2ec826f-0e77-8613-bee7-e9bc9345a40b"
+  computationUuid: "59c1e194-ba97-8c94-baa5-678a91fcc370"
   stages:
     - stage: path
       stageUuid: "c0f30ead-c26c-87cc-95bf-763c9cd8c522"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "47a3efa4-ba2e-8eb5-bb1b-f31a4add5676"
     - stage: horo
-      stageUuid: "2418c107-f0c1-8844-b4cd-77ef17f6d878"
+      stageUuid: "93840713-a106-8fba-a8ae-085fbac3bfd3"
     - stage: seal
       stageUuid: "93bf8f19-061c-805e-b5c1-5647270bbf4c"
     - stage: uuid
-      stageUuid: "9f622422-f7fd-8557-8f04-b97388fcde82"
+      stageUuid: "779be766-7369-8a22-a164-485ecc4ba4aa"
 version: 2
 ---
 # topography — the corpus maps and narrates itself

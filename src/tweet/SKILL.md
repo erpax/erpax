@@ -2,18 +2,18 @@
 name: tweet
 description: Use when modelling one tweet — the singular model of the tweets collection (the plural store); one short public post on a microblogging feed.
 atomPath: tweet
-coordinate: "tweet · 8/crest · 1b509db4"
-contentUuid: "cfa13ee7-1424-5448-a3df-62d207c1ae87"
-diamondUuid: "2f6cb32b-1eb7-8e89-9856-3e9cef45ebfc"
-uuid: "1b509db4-84ca-844d-a6be-e9b3e0c835ab"
-horo: 8
+coordinate: "tweet · 1/base · 77e1b62c"
+contentUuid: "9cb6e7a9-b5a7-5ee5-9263-20fa73796b63"
+diamondUuid: "5014aeca-4cad-89d1-b50a-4da9bf9dbafe"
+uuid: "77e1b62c-b09b-82a1-85ed-2861abfdc5f2"
+horo: 1
 typography:
   partition: tweet
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8ed0bd7f-87e7-806a-bb92-73c4702aacd3"
+  computationUuid: "26955dec-e1ae-8cb7-a3ce-7001093fd19c"
   stages:
     - stage: path
       stageUuid: "9c55afcf-a6ab-898c-8ebd-b0ee6d93ffe6"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "229de461-a6a9-84b9-b506-e4c8f808a4af"
     - stage: horo
-      stageUuid: "a9193f09-3943-84d6-b940-d73e8f52c7d0"
+      stageUuid: "415abef5-03f9-8bbe-a3f0-ee7c297771cf"
     - stage: seal
       stageUuid: "6d63bea5-7a63-8f90-9c1c-6e3563810b3c"
     - stage: uuid
-      stageUuid: "1717c746-e50a-81a6-a71e-6fc397283df1"
+      stageUuid: "9eb9d44b-ac59-8940-b722-79047196a173"
 version: 2
 ---
 # tweet — the model of one [[tweets]] row

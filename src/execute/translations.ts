@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "execute",
-    "uuid": "d869bd20-5bb2-87d4-abb6-06c489bf2584",
+    "uuid": "0dbdb3d0-cc6d-8edd-88a1-5e3dfe5b79a0",
     "words": [
       "execute"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about execute — Execute the recursive system and publish live results",
-    "uuid": "88ba9bb8-470f-83f4-80ed-fbfbba3aac4e",
+    "uuid": "9dbcd6db-84fc-8273-8904-f791088a0476",
     "words": [
       "use",
       "when",

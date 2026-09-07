@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "genome",
-    "uuid": "1ded5974-0c2f-88bd-8f19-0cb114af2f30",
+    "uuid": "4bc9e9c1-378a-821b-af43-3c0b25553f81",
     "words": [
       "genome"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about genome — Genome bundle — the platform's structural surface (spec + chains + agents + roles + MCP tools + standards) collected as one verifiable artifact.",
-    "uuid": "c8cdcef5-5ba3-8761-8a32-96f68012eae3",
+    "uuid": "12f203e6-9a44-8e83-bfd0-53f5ea8ec3e7",
     "words": [
       "use",
       "when",

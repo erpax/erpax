@@ -2,11 +2,11 @@
 name: cover
 description: "Use when reasoning about cover as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: cover
-coordinate: "cover · 2/share · 743da826"
-contentUuid: "e308ab93-784e-5dda-a06c-c2aff251481b"
-diamondUuid: "16ed9824-60e8-8886-be09-4617ed1898b2"
-uuid: "743da826-d1d6-8b14-980f-8fa7e7a0861a"
-horo: 2
+coordinate: "cover · 5/round · 4538030b"
+contentUuid: "e173e72a-7c0d-5b7b-921a-3e972ff0ea2e"
+diamondUuid: "871c63bc-ce61-8c15-a299-00242ac16bce"
+uuid: "4538030b-9fda-8e19-a3a6-9e75269ca581"
+horo: 5
 typography:
   partition: cover
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8005d702-3a07-83e7-9acb-e1ea7fb738be"
+  computationUuid: "75f1094c-6944-8bdd-93ea-1c0811673f6a"
   stages:
     - stage: path
       stageUuid: "0792b199-2f3c-87a8-ab12-72228bd21f63"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d8b318ae-1e09-8376-ad79-f5ee9256d32a"
     - stage: horo
-      stageUuid: "3249c32b-49fc-8eae-8024-40015536eb52"
+      stageUuid: "74611a08-d63a-8e27-a5f8-b3bca40f4fa2"
     - stage: seal
       stageUuid: "1556f41b-ba6d-8014-bab9-df7c6676c5bf"
     - stage: uuid
-      stageUuid: "a9eacc4c-e99d-86aa-9903-907f6c00ea15"
+      stageUuid: "200eb4cc-d0d8-8f56-bb55-098e2091c499"
 version: 2
 ---
 # cover

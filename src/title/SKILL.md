@@ -2,11 +2,11 @@
 name: title
 description: Use when reasoning about title — The title of the job.
 atomPath: title
-coordinate: "title · 1/base · 64f2ecb2"
-contentUuid: "ddd4cecc-7709-5102-8c14-ee5db8417b90"
-diamondUuid: "14689984-68af-8a06-b4d5-0496bc8cc6ac"
-uuid: "64f2ecb2-80ee-863f-8c2f-383244c42c96"
-horo: 1
+coordinate: "title · 7/descent · 0d6251cc"
+contentUuid: "87591ee5-e0a3-547b-ab84-413b53e5503d"
+diamondUuid: "396ef503-078e-84f1-b02d-53daa020e3be"
+uuid: "0d6251cc-f35f-856f-9168-453c179ee9be"
+horo: 7
 typography:
   partition: title
   bondDegree: 11
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e450a758-1150-8d42-8cba-86f90fff0a83"
+  computationUuid: "3a7f6086-0e7e-8956-b730-be31274eabd0"
   stages:
     - stage: path
       stageUuid: "272ced7e-9236-8fc2-ac42-707d72d6aa73"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dbfa2a68-0fd4-8cc0-a4ca-b826fc03d095"
     - stage: horo
-      stageUuid: "673677cf-9e52-85e6-b918-02ff53e59202"
+      stageUuid: "8ee64a3f-ebda-8375-b43e-999dfc4c14fa"
     - stage: seal
       stageUuid: "34503396-3f0c-86b6-98d4-1d9a87258ee7"
     - stage: uuid
-      stageUuid: "09bb8c0f-1679-803f-a02b-1d2128b83246"
+      stageUuid: "4816708d-4ebe-8024-8166-a95573f0b4dd"
 version: 2
 ---
 # title

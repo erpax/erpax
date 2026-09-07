@@ -2,18 +2,18 @@
 name: resolution
 description: "Use when a contract specifies dispute handling — mechanism (litigation, arbitration, mediation), forum/arbitrator, procedural rules (discovery, evidence, cost allocation), escalation (negotiation→mediation→arbitration)."
 atomPath: "vocabulary/dispute/resolution"
-coordinate: "vocabulary/dispute/resolution · 4/weave · 90e9c8c5"
-contentUuid: "47c712d9-f3d3-5139-9062-20213951552b"
-diamondUuid: "888c9dbd-6676-8b17-9745-c7ad3358732d"
-uuid: "90e9c8c5-85f8-88db-bf09-883dfe2b9567"
-horo: 4
+coordinate: "vocabulary/dispute/resolution · 5/round · 3f0d3686"
+contentUuid: "dcb86fa5-0cd3-59f7-bb26-94a7e111c0de"
+diamondUuid: "0c564bea-40f5-8dd5-a3b9-98317395d205"
+uuid: "3f0d3686-9f72-804c-86c2-77a5025b9c4d"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 31
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f5b16a3a-fdc1-85ce-b829-ec6c06044462"
+  computationUuid: "898cfc22-1c0b-8116-9a80-7e1844f31eb6"
   stages:
     - stage: path
       stageUuid: "eee6baa5-e09b-87ef-a5dd-a1549f954257"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f0bb5d20-e38d-823c-a66d-14ded6932d6f"
     - stage: horo
-      stageUuid: "3c86f208-a0cd-8ec2-b6f0-274e5000008b"
+      stageUuid: "7ddfb94f-bf79-8f46-94aa-ab16766d1c68"
     - stage: seal
       stageUuid: "42c1c7e5-d90f-8b38-b049-c572c7d18144"
     - stage: uuid
-      stageUuid: "1fe0c051-20c4-8e66-8fae-80c3f9bba4ac"
+      stageUuid: "c01dbd24-6164-80e8-89c8-9909c07b017d"
 version: 2
 ---
 # resolution

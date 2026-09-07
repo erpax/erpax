@@ -2,11 +2,11 @@
 name: garden
 description: "Use when reasoning about garden as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/garden"
-coordinate: "vocabulary/garden · 4/weave · 1121ef77"
-contentUuid: "c1c6d2c9-d32a-5265-8a81-3b537ab4a0e4"
-diamondUuid: "c8ca1e2c-8c25-841b-9a3c-af9c32397238"
-uuid: "1121ef77-c287-82bf-91ec-b8ff103dd443"
-horo: 4
+coordinate: "vocabulary/garden · 2/share · 509c2a87"
+contentUuid: "b9ca08a6-744e-5ac9-a31a-c3f0682e2597"
+diamondUuid: "9a79af40-94c6-83f2-8503-4fef3cbc31a9"
+uuid: "509c2a87-383a-8262-b5a9-c033d9406907"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e01c3818-456b-8909-a6c4-6a35b4e72ab3"
+  computationUuid: "831533b5-436d-8609-9a46-0c6cf09dbd03"
   stages:
     - stage: path
       stageUuid: "dc66feba-6542-8c05-afe1-5ad13c67aa6b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3b5fc980-ecc3-8b0c-bfb0-a6b8ffc32fc2"
     - stage: horo
-      stageUuid: "366dc6c7-da7a-8a4d-adcb-c8c6060f17b2"
+      stageUuid: "fd247ffc-24d4-8796-ab68-efb9e2a8ad61"
     - stage: seal
       stageUuid: "65a012d0-6f2d-8013-b577-48995a749db1"
     - stage: uuid
-      stageUuid: "32a9f755-918b-8658-81ed-7a72d849417d"
+      stageUuid: "b5779bdf-529e-8ba7-a56d-3631d7b26011"
 version: 2
 ---
 # garden

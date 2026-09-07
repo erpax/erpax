@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reference",
-    "uuid": "b0489263-9c8f-8580-80f2-64d3924431d1",
+    "uuid": "aaa7652e-8d60-81b6-9128-c5002a5a3c5e",
     "words": [
       "reference"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when validating that a sale's fiscal references resolve — a citation that leads nowhere makes the sale unreviewable, which is a legal defect rather than a cosmetic one.",
-    "uuid": "bfcd4158-9320-8608-a1ec-96c20dcf07db",
+    "uuid": "a105e3e6-4591-866c-9a50-85798c006d16",
     "words": [
       "use",
       "when",

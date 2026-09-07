@@ -2,18 +2,18 @@
 name: bogomilism
 description: "Use when reading Bogomilism as a diamond of invariant atoms — the medieval Bulgarian dualist movement (Bogomil, 'dear to God'): the visible material world the work of a lower power, the spirit alone of the good God, salvation by inward purity not outward rite. A dualist sub-diamond in the gnostic lineage. Strip the prefix and the material world collapses to the profane, the spirit to breath."
 atomPath: "vocabulary/bogomilism"
-coordinate: "vocabulary/bogomilism · 4/weave · 5f6320cb"
-contentUuid: "a929be3f-a4d8-5fb8-96eb-ff4d977285bb"
-diamondUuid: "06b28e73-d14c-8871-8d8b-b2d1cafc5eea"
-uuid: "5f6320cb-de1c-829e-bdcf-2f10f4900ea0"
-horo: 4
+coordinate: "vocabulary/bogomilism · 8/crest · cda5b0b6"
+contentUuid: "757bf585-d809-5065-88fa-a14f6f7846db"
+diamondUuid: "e3543621-7b74-8d9e-b6ce-575160738118"
+uuid: "cda5b0b6-28e9-8e3e-904d-3b0bc11e85e9"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 59
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e554ecb3-a214-8c31-b451-44d132afad14"
+  computationUuid: "e2f52f06-b5af-87c0-95f3-289bb1db8ca2"
   stages:
     - stage: path
       stageUuid: "2cf10a56-3a91-8d0f-beef-07ccc57cb469"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2b2249d0-b88d-8093-9ab2-6157cd48f807"
     - stage: horo
-      stageUuid: "6afbc7f9-3180-8e7e-a9f9-5b37b707d126"
+      stageUuid: "3140a07f-219a-864a-9ea0-c99e98a584cf"
     - stage: seal
       stageUuid: "d59ae50e-f431-8429-a668-1cf7c737d7ab"
     - stage: uuid
-      stageUuid: "f8b652fb-b5f6-8be3-96c0-25325442c4c3"
+      stageUuid: "c7055c08-30b9-8ebb-9598-3a9d326d83a6"
 version: 2
 ---
 # bogomilism — the spirit of the good God against the world of the lower power

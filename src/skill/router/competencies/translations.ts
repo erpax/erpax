@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "competencies",
-    "uuid": "419c98d1-ac59-8038-bd99-1a5024c56f1b",
+    "uuid": "ff6b3838-1e3f-8c4b-8752-ed7e9d381c7b",
     "words": [
       "competencies"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about competencies — competencies — the actor-capability taxonomy COMPUTED from the skill corpus.",
-    "uuid": "6c011402-5f29-8b03-8ef4-670380275419",
+    "uuid": "e8d71049-5fd7-8156-95b6-9f574c2796df",
     "words": [
       "use",
       "when",

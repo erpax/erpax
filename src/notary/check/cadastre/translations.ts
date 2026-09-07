@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cadastre",
-    "uuid": "59f4993c-9b34-8992-a595-8daf06bac73c",
+    "uuid": "767f076b-e408-8e0c-9b83-2ed7def21750",
     "words": [
       "cadastre"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a notary check must confirm a real-property parcel exists and resolve its cadastral identity — the REAL wired provider for cadastre (АГКК / КАИС). Queries the public АГКК INSPIRE ArcGIS service (Cadastral_Parcel layer) by national cadastral reference (КНИ, e.g. 15285.14.122) and returns existence + area + INSPIRE id; no credential. Honest boundary — INSPIRE gives parcel identity/boundaries (public); OWNERSHIP and full КНИ detail are a КАИС internal e-service (ВЕАУ) behind accredited notary access, and title is answered by registryAgency, not here.",
-    "uuid": "f414363d-1f5d-87a7-a361-1990838ded0c",
+    "uuid": "017d3ce4-01c1-82c2-aa60-80c9c12683b1",
     "words": [
       "use",
       "when",

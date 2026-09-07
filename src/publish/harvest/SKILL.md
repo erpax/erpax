@@ -2,18 +2,18 @@
 name: harvest
 description: "Use when reasoning about harvest — rules/forge established the negative: an identifier only a registry may assign is **received or refused, never generated** — three sites here once minted and logged ."
 atomPath: "publish/harvest"
-coordinate: "publish/harvest · 2/share · 715e6fa2"
-contentUuid: "e8d45e30-b848-592a-874d-9963cbd0e35b"
-diamondUuid: "dfb73d5d-653b-847f-9445-aa2be1a8e858"
-uuid: "715e6fa2-5a10-8daa-b4de-431b5144363d"
-horo: 2
+coordinate: "publish/harvest · 1/base · 25cebc9d"
+contentUuid: "4fda0579-4dc5-5b64-9ae2-c90d940b46a3"
+diamondUuid: "b0021a0e-26fa-8132-9d54-b550cb09e7aa"
+uuid: "25cebc9d-a0e7-8ddb-8ec4-859b2eebf79f"
+horo: 1
 typography:
   partition: publish
   bondDegree: 101
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c6e69944-194a-8083-aa0b-845c823bbe93"
+  computationUuid: "6e25c9cc-16f5-88a8-8be3-66c004c02cc5"
   stages:
     - stage: path
       stageUuid: "34d7b63a-44e2-8ed0-b8f4-1268b37f9bdf"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "306ba8f3-bd62-8243-9902-f42b0c8bcdc3"
     - stage: horo
-      stageUuid: "95a9815e-5aee-8a69-b888-ce8cb77d70fa"
+      stageUuid: "186d1993-a536-8eb6-9476-790ece64b6a2"
     - stage: seal
       stageUuid: "d964ddd1-e70b-8b04-b8f6-30fc380f860d"
     - stage: uuid
-      stageUuid: "3e6253c6-3923-8030-8700-3c1aab44cc81"
+      stageUuid: "a2bca236-7946-875f-99ad-dd613145198c"
 version: 2
 ---
 # publish/harvest — a DOI is verified against the registry, or it is a string that looks like one

@@ -2,11 +2,11 @@
 name: provider
 description: "Use when wiring the app-wide React context tree — the one place theme, computed-CSS and header-theme providers wrap the frontend. A client provider is imported from its own module, never through a barrel that also exports Node fs matter: the @/css barrel exports computeCssDiamond, and pulling it into the browser chunk 500s the Worker homepage."
 atomPath: provider
-coordinate: "provider · 2/share · aff8eafa"
-contentUuid: "b690fd60-d973-52b6-b96d-5adb0fc72b83"
-diamondUuid: "8aef62ee-74a7-86b0-9759-6cc07c4ab415"
-uuid: "aff8eafa-15d1-8efc-89b0-71f72bd70ff8"
-horo: 2
+coordinate: "provider · 8/crest · 871d3bc4"
+contentUuid: "b7d36600-094b-5dc6-9743-f44d8ce08613"
+diamondUuid: "099fa188-f29f-8893-b5b4-d47273706211"
+uuid: "871d3bc4-24c3-8429-93e0-b44959d3cdaf"
+horo: 8
 typography:
   partition: provider
   bondDegree: 25
@@ -16,7 +16,7 @@ standards:
   - "WCAG-2.1 §1.4.3 contrast-minimum"
 bindings: []
 signatures:
-  computationUuid: "92d188e2-5c47-83b1-8606-d4c25459feaa"
+  computationUuid: "dd652cda-6c14-80a5-9eff-4d8719066029"
   stages:
     - stage: path
       stageUuid: "9c29ea83-d049-8973-bce9-f3345f8488ef"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "4f9fed48-6b8a-890e-8736-7a4b696f6f39"
     - stage: horo
-      stageUuid: "615972a7-12fe-84ed-8798-5d6e251ce779"
+      stageUuid: "54da0182-83eb-8a33-8183-fc427182fdd4"
     - stage: seal
       stageUuid: "ee3d69b5-45e4-8f26-ac51-ff389e679984"
     - stage: uuid
-      stageUuid: "de6085b2-9415-85a3-b667-05c54244d46b"
+      stageUuid: "b5e696f6-b3c9-8ea1-9d5f-15f1d6127fdc"
 version: 2
 ---
 # provider — a client provider is imported from its module, never through a barrel

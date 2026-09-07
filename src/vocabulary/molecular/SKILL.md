@@ -2,11 +2,11 @@
 name: molecular
 description: "Use when reasoning about molecular as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/molecular"
-coordinate: "vocabulary/molecular · 7/descent · d8e90930"
-contentUuid: "7546137f-d40c-570f-b793-ec94836d79a2"
-diamondUuid: "f95f3893-8381-86f7-9f54-e7c5298a215b"
-uuid: "d8e90930-d743-8cb7-a531-5ba4a75512a4"
-horo: 7
+coordinate: "vocabulary/molecular · 4/weave · 82281f5d"
+contentUuid: "9d90d966-98ef-55ad-9254-83a950012bd4"
+diamondUuid: "9257e00a-ba24-800b-9e17-05a91ad89c11"
+uuid: "82281f5d-fb18-82b3-b700-2dcbaf8759ee"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 35
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5603af78-46f3-8bc3-a1f0-9c1504be9615"
+  computationUuid: "3ddcbcea-9a89-82dd-b572-6c5dcea5b6f3"
   stages:
     - stage: path
       stageUuid: "e75c6a68-6cab-82e2-82ea-26a535d0ea0d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3c11a75e-2f09-8db7-a211-e3db69dd10a7"
     - stage: horo
-      stageUuid: "ee54da1c-635d-82d6-bb6c-137df045ff4c"
+      stageUuid: "2f559fc3-394e-8fb0-a171-e1121a1449a3"
     - stage: seal
       stageUuid: "0a4273ad-11dd-8c56-83b6-edcec774b572"
     - stage: uuid
-      stageUuid: "38502c34-d3f3-8c03-9fe6-560d01609ca0"
+      stageUuid: "1d6488bb-2678-85e5-837a-b80779908fcb"
 version: 2
 ---
 # molecular

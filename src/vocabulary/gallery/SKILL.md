@@ -2,11 +2,11 @@
 name: gallery
 description: "Use when reasoning about gallery as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/gallery"
-coordinate: "vocabulary/gallery · 1/base · 9d0c423f"
-contentUuid: "2540601c-bd61-56b6-bb08-09761ad4bead"
-diamondUuid: "f363efca-1319-8943-b841-cb35e0330ed6"
-uuid: "9d0c423f-34a1-88cb-9abf-30a90a79a78a"
-horo: 1
+coordinate: "vocabulary/gallery · 5/round · 5fb29138"
+contentUuid: "58e7c200-637f-571f-ad5f-5fd4859a5cec"
+diamondUuid: "1ebf5d59-14a8-8b7c-a8bd-3e64df9c53d2"
+uuid: "5fb29138-a509-8f25-9601-1b9358aa45d9"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 29
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3c0b70a5-8861-8124-9efd-9be7cde68d04"
+  computationUuid: "a39c76b1-cb9b-8985-b981-99d7bd1f90cc"
   stages:
     - stage: path
       stageUuid: "face9f25-3ac8-8930-b0cc-476bc168fc3e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "af978966-fcf1-8c22-95f8-a902c775ce4e"
     - stage: horo
-      stageUuid: "410a7559-37c8-8d32-87d5-49493270d73a"
+      stageUuid: "8dddd4dc-b5df-8977-90d3-9c6ae8e773a3"
     - stage: seal
       stageUuid: "afc7f46b-1bf1-8d8e-95ce-ded06a27aef5"
     - stage: uuid
-      stageUuid: "057991de-85a6-8955-9e81-31cefd1ea65a"
+      stageUuid: "c5066aaf-5a2d-87c6-989d-d4cf6cc424ce"
 version: 2
 ---
 # gallery

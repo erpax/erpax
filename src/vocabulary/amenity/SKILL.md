@@ -2,11 +2,11 @@
 name: amenity
 description: "Use when reasoning about amenity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/amenity"
-coordinate: "vocabulary/amenity · 5/round · 0ad28b2d"
-contentUuid: "e6717e21-112d-5c98-b769-94f26a222c0d"
-diamondUuid: "4aa57fd5-63b6-80ca-8192-81bbb80fb67c"
-uuid: "0ad28b2d-fbb9-8480-a1c3-413a4992de31"
-horo: 5
+coordinate: "vocabulary/amenity · 2/share · e86ee037"
+contentUuid: "7cb4a50f-c2b6-5dfe-8d31-1ce339583aa7"
+diamondUuid: "c3c4f652-7860-8aa2-9207-c269da532bbc"
+uuid: "e86ee037-5caf-8584-9809-0a953c3e2eb2"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4bf771b8-4f66-80dd-9316-7e9897c5ed9c"
+  computationUuid: "af80923e-1a48-86e6-a130-c117ac51424c"
   stages:
     - stage: path
       stageUuid: "2b4992d2-082f-8b74-a550-199488d257c8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ca23ed49-a560-8bb0-aa87-36fd7dc9b5b8"
     - stage: horo
-      stageUuid: "d4f20714-2d96-8c96-aad8-a006eb2a977f"
+      stageUuid: "6d182ed3-5d89-83f3-adc2-e828ce9f65ae"
     - stage: seal
       stageUuid: "1fe8c2c9-8d9a-827b-9a75-380e2d2c2e6d"
     - stage: uuid
-      stageUuid: "4b27ed02-b2ac-831e-84ac-6f99283b9708"
+      stageUuid: "d2c82451-2f73-8a15-baa6-7c94e7e5758a"
 version: 2
 ---
 # amenity

@@ -2,18 +2,18 @@
 name: bindings
 description: "Use when attaching every Cloudflare binding to the edge Worker — each binding is a sense the pure-compute Worker is granted to reach the world (D1, R2, AI, Vectorize, KV, Queues, Durable Objects, Browser, Analytics, Email), the platform-level measurement boundary; attach all, gate each through access, emit a receipt."
 atomPath: "quantum/bindings"
-coordinate: "quantum/bindings · 2/share · a02035ea"
-contentUuid: "688dac71-747a-50c9-a08f-c7c330e9b63c"
-diamondUuid: "02c5661c-0349-8a59-be19-157b0d09a622"
-uuid: "a02035ea-45f6-830d-9b11-6ce4d7e3fe31"
-horo: 2
+coordinate: "quantum/bindings · 7/descent · 8269bbd4"
+contentUuid: "0d2839e1-b6ee-5945-a0c4-ad3ac94d726c"
+diamondUuid: "465f4f98-5dfb-8f9a-9630-01b1f2c6c2a8"
+uuid: "8269bbd4-ea3e-8708-ae02-218c63ec2c87"
+horo: 7
 typography:
   partition: quantum
   bondDegree: 91
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ed67c594-abd7-8879-926f-b2508fdc50d3"
+  computationUuid: "b3e496e2-b0f2-8653-9167-3186ed675175"
   stages:
     - stage: path
       stageUuid: "6afb2d1c-7bbf-824c-babb-b9e1df553e05"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e3c767cf-afbd-82e3-8c17-82c64bbce10e"
     - stage: horo
-      stageUuid: "e85fcf01-4eab-892f-b918-5664b4dd697a"
+      stageUuid: "bf6bdd6d-f209-82f8-bf92-1537e7c7831c"
     - stage: seal
       stageUuid: "12a8a4a2-3333-8969-a944-0675f5ed5e3e"
     - stage: uuid
-      stageUuid: "8ba633a9-5cee-8b10-a212-4ede921e6d1f"
+      stageUuid: "e485c9ba-db98-8bf1-97f7-f541e0e9ccd6"
 quantum:
   superposition:
     - access
@@ -59,8 +59,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "ed67c594-abd7-8879-926f-b2508fdc50d3"
-    contentUuid: "688dac71-747a-50c9-a08f-c7c330e9b63c"
+    computationUuid: "b3e496e2-b0f2-8653-9167-3186ed675175"
+    contentUuid: "0d2839e1-b6ee-5945-a0c4-ad3ac94d726c"
 version: 2
 ---
 # quantum/bindings — the Worker's senses
@@ -83,4 +83,4 @@ A binding is a capability grant, so every call passes the trust sandbox — [[ac
 
 @see [[bindings]] · [[worker]] · [[quantum/device]] · [[access]] · [[sandbox]] · [[broker]] · [[receipt]] · [[uuid]] · [[deploy]]
 
-<sub>content-uuid `688dac71-747a-50c9-a08f-c7c330e9b63c` · account `quantum/bindings` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `0d2839e1-b6ee-5945-a0c4-ad3ac94d726c` · account `quantum/bindings` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

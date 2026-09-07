@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "atlas",
-    "uuid": "0f01ef0f-af94-88c2-a7c8-5cf3733cdf48",
+    "uuid": "0049c65e-02e5-86ed-a837-e2d4061cccc4",
     "words": [
       "atlas"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about atlas — A collection or bound volume of maps, charts, plates or tables, physical or in media form illustrating any subject.",
-    "uuid": "2dfc1440-7673-816c-9a5e-2dfc7256059c",
+    "uuid": "f7ccad8b-0948-835b-8313-21fc7f619824",
     "words": [
       "use",
       "when",

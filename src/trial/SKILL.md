@@ -2,11 +2,11 @@
 name: trial
 description: "Use when reasoning about trial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: trial
-coordinate: "trial · 4/weave · 278aba6c"
-contentUuid: "b88a607f-355e-5da6-ac45-c2cbd6fc7815"
-diamondUuid: "53a1343e-6919-8504-9957-d5ea8bd4c7b6"
-uuid: "278aba6c-d795-817a-9aad-dafe5de7e5c6"
-horo: 4
+coordinate: "trial · 8/crest · ba8a95f7"
+contentUuid: "fa4d7ad4-48f4-5e15-8787-ff1a23aab170"
+diamondUuid: "b4cbb605-6e2a-8d7b-9f19-b79be2542cf5"
+uuid: "ba8a95f7-1ff9-87ef-bbd3-4420d218230a"
+horo: 8
 typography:
   partition: trial
   bondDegree: 25
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "afe7bfcb-cd4e-8044-9d8a-d78e026eb7b0"
+  computationUuid: "5f298df2-86f8-869f-b5d0-0581124f9859"
   stages:
     - stage: path
       stageUuid: "e68e140b-7bc4-80ab-ae01-0389a60717da"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "48368faf-6429-8734-9754-c01a371273f9"
     - stage: horo
-      stageUuid: "f96c62ec-da49-8e1e-b928-8c55d073c1b6"
+      stageUuid: "5ab5a412-39c6-84d4-81b3-092f0fc7cb53"
     - stage: seal
       stageUuid: "47d742ee-aca1-80d8-9c06-880ab20724d2"
     - stage: uuid
-      stageUuid: "abfe5c66-b123-8fc5-8cab-9e9acdd67361"
+      stageUuid: "f6949790-9163-8764-836d-1a27a34fe30d"
 version: 2
 ---
 # trial

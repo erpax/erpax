@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fractal",
-    "uuid": "eaf56091-2c54-865a-822a-7110aba868bf",
+    "uuid": "75b854e8-87ac-8752-a7be-e4c2991fbce9",
     "words": [
       "fractal"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about self-similarity in erpax — the same form at every scale (fields→collections→plugins→erpax→agents), the path-as-address law, whole↔part recursion, nested one-word skill folders. Self-similar by design.",
-    "uuid": "732f415b-c11a-81e2-8d91-616546bbdaf0",
+    "uuid": "b1a1f68c-65dd-8f51-b311-7296c4df2e7e",
     "words": [
       "use",
       "when",

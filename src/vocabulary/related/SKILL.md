@@ -2,10 +2,10 @@
 name: related
 description: "Use when reasoning about related — A pointer to another, somehow related product (or multiple products)."
 atomPath: "vocabulary/related"
-coordinate: "vocabulary/related · 5/round · a39ce573"
-contentUuid: "28f3c565-db8b-5046-82b4-6ec27dca5821"
-diamondUuid: "f2988fb7-c232-83e2-b8a8-254665d61353"
-uuid: "a39ce573-3213-861f-927b-b74d2810500f"
+coordinate: "vocabulary/related · 5/round · 94b68f38"
+contentUuid: "775e4d84-1783-5ade-bb92-047d43b60ba5"
+diamondUuid: "6697a61c-b5af-8ae9-ba47-abd894dba0fe"
+uuid: "94b68f38-86bd-8121-90ea-d1bc094477de"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "efe0a754-154a-86a0-be6e-46380416ac49"
+  computationUuid: "19a72a63-eb21-8ae2-a085-2bf404cebc2c"
   stages:
     - stage: path
       stageUuid: "926de463-b286-8a2c-a2ca-10aff0d3f83f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "56f17128-6e2d-832e-a9c0-82dec5f71d13"
     - stage: horo
-      stageUuid: "67af42bb-21f3-8a64-a507-4d819c97d0a6"
+      stageUuid: "88521eb8-0c0e-8a8d-815c-f92f596ba11b"
     - stage: seal
       stageUuid: "804d918c-75be-8bb7-a1d4-e6a5f02fca36"
     - stage: uuid
-      stageUuid: "a7d8bf68-39e7-8c25-9615-1acf90846217"
+      stageUuid: "c9d27fe6-300a-8c98-aa51-bd61529d83f3"
 version: 2
 ---
 # related

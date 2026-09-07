@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "elevation",
-    "uuid": "247c6bb9-c902-822f-8d2b-ccda522c5eb7",
+    "uuid": "cc4412a5-8ab1-8ddc-9bf3-c9b48d4cbb1f",
     "words": [
       "elevation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about elevation — The elevation of a location (WGS 84). Values may be of the form 'NUMBER UNIT\\\\\\\\\\\\\\\\_OF\\\\\\\\\\\\\\\\_MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while numbers alone should be assumed to be a value in",
-    "uuid": "04a5d50b-6123-8dc5-ba0d-c5001ddaa2e3",
+    "uuid": "2e2588a0-213f-8e8b-9393-325464273ed6",
     "words": [
       "use",
       "when",

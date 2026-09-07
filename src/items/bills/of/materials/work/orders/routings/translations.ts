@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "routings",
-    "uuid": "d4dbf736-7524-8b2a-85d8-343250d20f64",
+    "uuid": "23dba652-ec8d-8673-8007-8ce89368269b",
     "words": [
       "routings"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when sequencing the process steps for a work order — operation type, work center, setup time, run-time per unit, UoM, and IAS-2 cost-of-conversion from cycle time. The ordered routing-step collection — the second universal manufacturing primitive alongside the BOM.",
-    "uuid": "68964deb-eeaf-88af-8b08-a8c308f3da0f",
+    "uuid": "7413a56c-8f74-8864-8ca6-b6e6591630df",
     "words": [
       "use",
       "when",

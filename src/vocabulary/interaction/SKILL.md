@@ -2,11 +2,11 @@
 name: interaction
 description: "Use when reasoning about interaction as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/interaction"
-coordinate: "vocabulary/interaction · 5/round · bad1d667"
-contentUuid: "79dd6959-b8d6-5b30-904a-b1728eed714c"
-diamondUuid: "ea97beb9-5fdf-86dc-ac89-9bc89e98c0fc"
-uuid: "bad1d667-5971-8b22-b1db-7f0e2739521b"
-horo: 5
+coordinate: "vocabulary/interaction · 4/weave · 1f2e9aa7"
+contentUuid: "174589ae-9b09-5cc0-a398-d8bae5912080"
+diamondUuid: "6a44fca1-6854-8447-87b2-3eeab81bde75"
+uuid: "1f2e9aa7-a3d0-8839-a092-960731169fa5"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 47
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fc55d3a8-9a6c-8c18-b653-65349d4271a1"
+  computationUuid: "42869d10-70a0-80a3-8985-1f981bac1552"
   stages:
     - stage: path
       stageUuid: "3c17167b-e37a-8f92-9eeb-14932249c878"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "23b994eb-4f37-8688-8200-bea0b3fb29d2"
     - stage: horo
-      stageUuid: "615b2f97-3046-8817-bade-913f0affc553"
+      stageUuid: "13667c89-25c2-8cd1-91e1-00a919fa865c"
     - stage: seal
       stageUuid: "c506b3c5-1593-8ba8-a648-791b94f7d6b0"
     - stage: uuid
-      stageUuid: "fc1d5cb0-2532-8922-bf86-1e33c96f9153"
+      stageUuid: "33718407-6099-8fd8-9ab0-eb2866b37174"
 version: 2
 ---
 # interaction

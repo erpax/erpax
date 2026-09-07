@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "subcellular",
-    "uuid": "4d4d1cab-5976-806c-898f-0c5bb27dab66",
+    "uuid": "fc9e3b82-0e5b-89cb-b648-fbf035330a35",
     "words": [
       "subcellular"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about subcellular as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "269e951f-6e92-8c08-b40a-026f8e980acb",
+    "uuid": "38d8fefc-29cb-8b68-a4b6-c2d1ee1bd27f",
     "words": [
       "use",
       "when",

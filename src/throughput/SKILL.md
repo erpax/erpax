@@ -2,10 +2,10 @@
 name: throughput
 description: "Use when measuring the quantity-per-unit-time flowing through a process — items per hour, transactions per second, units completed per shift. The rate of productive output."
 atomPath: throughput
-coordinate: "throughput · 8/crest · a872cbef"
-contentUuid: "30d715be-5b42-5b01-81d6-f049b9bb888f"
-diamondUuid: "3830d91d-b189-87d8-81b3-ce63b14940e8"
-uuid: "a872cbef-b89b-8560-bcd9-273b52354c8b"
+coordinate: "throughput · 8/crest · ffe2889b"
+contentUuid: "02218c40-f320-5cad-aa20-a95c2b253306"
+diamondUuid: "e8a7580b-7be2-878b-8a80-000ab2208ccc"
+uuid: "ffe2889b-4137-8b2a-9b6c-a91764e9a81a"
 horo: 8
 typography:
   partition: throughput
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f164f7d3-5ba0-841b-81d8-8276824241c4"
+  computationUuid: "072d8a3d-8304-8eaf-a61f-898a26403fca"
   stages:
     - stage: path
       stageUuid: "3a51976c-6090-823e-8474-dfc6be2074a3"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ece7d052-e219-8093-aab8-69330bd2e273"
     - stage: horo
-      stageUuid: "b2ab1f32-b6fa-81c8-8a46-0463c526a687"
+      stageUuid: "73cfb64a-8b8b-862c-89cc-a72ac23d1943"
     - stage: seal
       stageUuid: "8cd224e8-b462-8ba6-ad48-103ad9446721"
     - stage: uuid
-      stageUuid: "ce843eea-2d63-8a12-a3d5-d35d5ef8f8d0"
+      stageUuid: "e01aa247-3ce0-8909-a004-a6d6fea54aae"
 version: 2
 ---
 # throughput

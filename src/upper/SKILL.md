@@ -2,10 +2,10 @@
 name: upper
 description: "Use when reasoning about upper as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: upper
-coordinate: "upper · 8/crest · 8532422c"
-contentUuid: "34425217-f993-5550-bcd5-bdd5b0d41025"
-diamondUuid: "a74b1ded-4357-89ec-be6b-7f836be8f6fd"
-uuid: "8532422c-1313-8d52-acf7-8a36d85917b2"
+coordinate: "upper · 8/crest · 699b6818"
+contentUuid: "f620ec96-dc09-508d-b56c-432a4d49a9b7"
+diamondUuid: "246b0771-3a90-8de0-9605-6de5c6ee959c"
+uuid: "699b6818-b741-88c8-84b7-9f1e8189aaad"
 horo: 8
 typography:
   partition: upper
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a29fb77e-cfea-8b47-b72a-dd3ee4a97d57"
+  computationUuid: "3260ee76-4f45-87aa-8cec-35aa02cfa273"
   stages:
     - stage: path
       stageUuid: "9d633952-3a49-8217-8378-ae7af021f2af"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "40c1efae-3f7a-8b97-be5d-385f2adaccd9"
     - stage: horo
-      stageUuid: "f0a91507-c4b1-8048-80f4-35fef89c6642"
+      stageUuid: "653fb074-6aa3-82e9-a82d-866384a41fa8"
     - stage: seal
       stageUuid: "aa24d591-9226-8c7c-adc5-6695e4c9235f"
     - stage: uuid
-      stageUuid: "55a330df-457f-84eb-bdfc-77dc7e6814a3"
+      stageUuid: "029fc213-b58e-8866-b85b-6edeb214f75f"
 version: 2
 ---
 # upper

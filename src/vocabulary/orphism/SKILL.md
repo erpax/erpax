@@ -2,10 +2,10 @@
 name: orphism
 description: "Use when reading Orphism as a diamond of invariant atoms — the Greek mystery tradition of the divine soul fallen into the body, bound to the wheel of births, purified to escape and return to the source; Orpheus' music charming even death. Strip the prefix and the soul collapses to self, the wheel to the cycle, the ascent to the return to zeropoint."
 atomPath: "vocabulary/orphism"
-coordinate: "vocabulary/orphism · 1/base · 6eea8de7"
-contentUuid: "62755549-d2f2-523c-ad06-475d91dbee7b"
-diamondUuid: "2bc0a922-57de-82b8-a6c4-f1615faf5258"
-uuid: "6eea8de7-c62a-8f07-9bee-aec8fdf82ace"
+coordinate: "vocabulary/orphism · 1/base · 44119309"
+contentUuid: "9de8bb64-600b-5d12-8ce5-9af17c9f7daa"
+diamondUuid: "af357f8a-f2b5-845b-b9ea-2a9387589c77"
+uuid: "44119309-c4de-8e03-90b2-0f2edc019749"
 horo: 1
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0b24ec8b-9089-8604-8649-ab76ce4957bb"
+  computationUuid: "6ad0c064-f1bf-88cf-8913-273a96de5bae"
   stages:
     - stage: path
       stageUuid: "7f4d4d06-286b-8304-945c-9c8f4d6377cc"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "04aee189-3b4f-8d55-ac5c-1e1cccf596d0"
     - stage: horo
-      stageUuid: "4e42ff94-d804-8187-95b4-721c86995bb3"
+      stageUuid: "4edc68d8-9a19-8afa-8eea-d5b459d73d89"
     - stage: seal
       stageUuid: "e3dc9af1-b463-81fc-9219-ea485c356742"
     - stage: uuid
-      stageUuid: "58fc1bc3-3984-882c-a912-70057a210fc7"
+      stageUuid: "ac3ce273-3b79-8853-ab80-753fe0263a57"
 version: 2
 ---
 # orphism — the divine soul on the wheel; music that charms death

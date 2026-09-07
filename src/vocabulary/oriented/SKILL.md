@@ -2,11 +2,11 @@
 name: oriented
 description: "Use when reasoning about oriented as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/oriented"
-coordinate: "vocabulary/oriented · 7/descent · 2a058b7e"
-contentUuid: "4f7cfa26-41a9-554f-9a8e-68962aa1137c"
-diamondUuid: "9109d5ab-fae5-84b5-95d5-c54a4bea8c2a"
-uuid: "2a058b7e-95bb-8c98-bfb4-931c950fafe7"
-horo: 7
+coordinate: "vocabulary/oriented · 8/crest · 45541e3a"
+contentUuid: "eccaaff0-cc26-57fa-8965-bdd50dcdf7b3"
+diamondUuid: "31568a6d-8178-82ca-b3c2-8ec1694b6b48"
+uuid: "45541e3a-09f4-8ac7-a265-da074204f777"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c34dac8d-ecc0-8f6b-8691-65068f00e0ff"
+  computationUuid: "50cc3aff-a6ef-86a4-ab19-a73ac1f4fbac"
   stages:
     - stage: path
       stageUuid: "22e9e029-7a51-85c7-a331-6731185808b8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4e21cba5-2725-8ebd-933b-6ba0a260a5b7"
     - stage: horo
-      stageUuid: "9525f3e8-84b7-80e3-b643-f17df77ff926"
+      stageUuid: "b6ad96be-f550-829b-98f3-cbd54d8198b7"
     - stage: seal
       stageUuid: "501fd6d0-4a6f-8e8a-9aa3-8a7877a14fb7"
     - stage: uuid
-      stageUuid: "d7b90800-981f-818c-b7d1-b1494679ac0b"
+      stageUuid: "4062a3e5-d885-8a57-a8c6-f3bfd13e1e8a"
 version: 2
 ---
 # oriented

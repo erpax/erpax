@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "specialty",
-    "uuid": "40be534a-6fb1-8545-a97a-c26e768ed252",
+    "uuid": "7b930350-abc1-8bc0-b2ce-1657a9aa6f09",
     "words": [
       "specialty"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about specialty — Any branch of a field in which people typically develop specific expertise, usually after significant study, time, and effort.",
-    "uuid": "c9c8e260-9911-8e7a-9e82-e33d28e58b12",
+    "uuid": "d51c2bf1-3c51-821f-8680-0ba773ef9020",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "posting",
-    "uuid": "d531cc95-d4b2-8a87-abe9-ca4e464c2e1b",
+    "uuid": "e6a67d49-7394-85cb-a19c-718d891a766a",
     "words": [
       "posting"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about posting — Lease Period Posting Hook — fires on `LeasePeriodPostings.status → 'posted'` and books the canonical IAS 16 / ASC 842 period entry.",
-    "uuid": "9d3add1b-a78a-89f1-831e-daa318a51df7",
+    "uuid": "bb9ae8ea-e1cb-8e02-be3d-0c5f5a627a3c",
     "words": [
       "use",
       "when",

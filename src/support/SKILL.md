@@ -2,11 +2,11 @@
 name: support
 description: "Use when reasoning about support — Qualification, candidature, degree, application that Thesis supports."
 atomPath: support
-coordinate: "support · 7/descent · 0c8a9570"
-contentUuid: "d70801a4-13ed-580f-976d-7c2228c5b002"
-diamondUuid: "5ca6b6ce-f4dd-823d-8a58-c0131f4b5ea7"
-uuid: "0c8a9570-b893-8f66-80e8-5878a92eefb9"
-horo: 7
+coordinate: "support · 2/share · 1925e90d"
+contentUuid: "17e36642-f68c-5a29-a83c-57110f261103"
+diamondUuid: "a58e7bbd-24fc-8990-b31b-7069d57c3856"
+uuid: "1925e90d-4940-8fda-b285-cd07c1530484"
+horo: 2
 typography:
   partition: support
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3026fb63-0077-85a8-8d4a-c8972d248415"
+  computationUuid: "21effbda-d11f-8226-8f2b-6b4cdaeb6c2e"
   stages:
     - stage: path
       stageUuid: "f81385f9-45a6-8360-b5b7-fbfed5e58aa9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0fcee381-04e2-849b-89dd-898fa61f629c"
     - stage: horo
-      stageUuid: "38494903-53d6-86dd-8ff4-b698dfcc849e"
+      stageUuid: "cd6682d3-1397-85a0-9950-7c0a041e517d"
     - stage: seal
       stageUuid: "935ffa80-c1a0-821e-a652-37d8aa25b4b8"
     - stage: uuid
-      stageUuid: "215e0742-ebea-8753-af02-70c6f3599aa4"
+      stageUuid: "c5fa5e81-46ba-8f0b-b1d2-3ce136dd94fe"
 version: 2
 ---
 # support

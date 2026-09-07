@@ -2,11 +2,11 @@
 name: player
 description: "Use when reasoning about player as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/player"
-coordinate: "vocabulary/player · 5/round · 45382a94"
-contentUuid: "d99efe8f-9aa1-5b4b-a5b6-f4d923dc75c6"
-diamondUuid: "37ca9ec3-7120-836f-b500-2623a1b75266"
-uuid: "45382a94-9519-89a7-8529-0ce7b842e01f"
-horo: 5
+coordinate: "vocabulary/player · 4/weave · cebbd330"
+contentUuid: "11af21f6-0117-5994-8701-583280666836"
+diamondUuid: "3984cd78-b936-8483-bf31-77964c17e93f"
+uuid: "cebbd330-17ff-8865-b602-3c8535f4d293"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ad99cf26-7d2e-8ff5-b292-c14c8d51a653"
+  computationUuid: "70795b57-e0bb-83a9-bf06-9387a1dc89f4"
   stages:
     - stage: path
       stageUuid: "5cf550e0-bdbd-854e-b91b-87ddc076c794"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3ffcc570-4636-860f-988b-ff0eeb7f0a93"
     - stage: horo
-      stageUuid: "37b819f9-0c08-8102-958a-9c6845099413"
+      stageUuid: "4d93d0f2-a322-8751-98d1-f04414503be0"
     - stage: seal
       stageUuid: "8095018c-e4f6-8395-9e51-be8ad141e64d"
     - stage: uuid
-      stageUuid: "b2eff239-3b1b-8d56-8bee-19ee09b56dbe"
+      stageUuid: "4c9174ba-47af-8d9f-a095-c0bede63da1f"
 version: 2
 ---
 # player

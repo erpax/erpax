@@ -2,18 +2,18 @@
 name: cropplan
 description: "Use when converting a sales/yield goal into what to grow, how much, when, and where — the crop plan (the what/how-much: quantities, seed, beds) and its spatial twin the field plan/map (the where: each succession assigned to a bed/block). The master planning document of a market farm; the backward demand→land calculation made concrete and recorded."
 atomPath: "vocabulary/cropplan"
-coordinate: "vocabulary/cropplan · 8/crest · bcd1e6e3"
-contentUuid: "5f0f279a-30f4-59af-ab17-99f3507c7a7d"
-diamondUuid: "b7ea99a8-95a6-81bb-8bec-f0c4e7d743ba"
-uuid: "bcd1e6e3-04a0-8762-9a11-8cf8b423e08e"
-horo: 8
+coordinate: "vocabulary/cropplan · 7/descent · f05deec9"
+contentUuid: "5da972fd-0a3f-5e5c-8bb9-324abec3ede1"
+diamondUuid: "8b1d77af-6b0d-8600-bf2c-aa90334d6ce2"
+uuid: "f05deec9-b227-8009-b104-565f64c480d2"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 53
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8302766f-8196-8023-bd41-20b2a92a1541"
+  computationUuid: "d6c37ee3-4dc2-86e3-b8f4-4705b1a57d41"
   stages:
     - stage: path
       stageUuid: "f27c968f-bb0d-83a9-b2a6-62b4ded9436e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "fc5948fc-76fc-8c1f-b12f-da9feae498b8"
     - stage: horo
-      stageUuid: "c63034a8-9f77-8327-b140-0b4c296e5d95"
+      stageUuid: "1e4cdf45-a1ee-81b0-8933-9c8c96b88d63"
     - stage: seal
       stageUuid: "0b98bb08-cfeb-86d6-9682-0e233eed552b"
     - stage: uuid
-      stageUuid: "81dc549d-9ad3-8765-8567-52e1fdbc2d82"
+      stageUuid: "7b7f8065-a733-86e3-a8d8-d28687a77ed6"
 version: 2
 ---
 # cropplan — the document that turns a sales goal into what/how-much/when/where

@@ -2,10 +2,10 @@
 name: kpi
 description: "Use when defining, computing, or tracking KPIs — target metrics with threshold, formula, frequency, owner, and variances. The measurable objective beneath strategy."
 atomPath: "vocabulary/kpi"
-coordinate: "vocabulary/kpi · 1/base · 4baec97c"
-contentUuid: "589e764b-84c2-5f2c-b95d-577101b2b555"
-diamondUuid: "3b46b3f8-40b5-87f5-a7fb-11b447414e01"
-uuid: "4baec97c-ad12-8200-93e9-a15799758746"
+coordinate: "vocabulary/kpi · 1/base · 27a07c81"
+contentUuid: "a1bfa5b3-554e-5cb2-ad9b-2271870e4c0f"
+diamondUuid: "f0de222c-4127-8f01-8aa1-e63339e48ece"
+uuid: "27a07c81-776d-84bf-84a8-6b38b857c960"
 horo: 1
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "882463d1-49af-8652-a3ec-d390b6d92abb"
+  computationUuid: "eb5522ab-a0cc-8eb8-b9e6-1f51400a741f"
   stages:
     - stage: path
       stageUuid: "da004711-3a54-8126-9d84-ef5a95c91bb5"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "cc6a0d93-7524-8722-a365-a96397b6fbee"
     - stage: horo
-      stageUuid: "98597c0c-71b3-82e3-9453-ba493983c3a1"
+      stageUuid: "889c902c-d270-8873-912e-9e07a1d05213"
     - stage: seal
       stageUuid: "ffe84d7c-0642-8c24-98da-32e1876ee5d5"
     - stage: uuid
-      stageUuid: "f87e5921-a5a4-85f2-8057-300bedb353b0"
+      stageUuid: "a4cb342e-ecf4-8041-9e5d-c9af3328f8e4"
 version: 2
 ---
 # kpi

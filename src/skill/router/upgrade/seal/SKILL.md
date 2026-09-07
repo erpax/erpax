@@ -2,18 +2,18 @@
 name: seal
 description: "Use when SKILL.md frontmatter must render deterministically or fold content-uuid — renderFrontmatter, upgradeSkillText, parseSignaturesFromText, and contentUuidOf seal the diamond stage chain into YAML."
 atomPath: "skill/router/upgrade/seal"
-coordinate: "skill/router/upgrade/seal · 5/round · 5fef4ffa"
-contentUuid: "b7e11a78-cb58-59c3-bd17-ee710dff6b3f"
-diamondUuid: "07b9d61a-bef4-89ed-81c5-169a47d63011"
-uuid: "5fef4ffa-c4b5-8465-b330-b56dca0b1260"
-horo: 5
+coordinate: "skill/router/upgrade/seal · 8/crest · 9110618a"
+contentUuid: "7ba1649a-c290-546e-82e1-bd32526040fa"
+diamondUuid: "b435eb24-2677-87ee-aff9-7cfa03c97a14"
+uuid: "9110618a-4575-8c62-9751-ee532d4bf6ac"
+horo: 8
 typography:
   partition: skill
   bondDegree: 156
 standards: []
 bindings: []
 signatures:
-  computationUuid: "922119bf-7b43-8ad6-9601-29f46575a181"
+  computationUuid: "45cfce49-a979-8d31-aaa7-1af62003532b"
   stages:
     - stage: path
       stageUuid: "59e7d341-09aa-858a-bcac-69d9fcff9503"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "94fc16b7-f991-89a9-adea-e68824180673"
     - stage: horo
-      stageUuid: "bdb3c018-1e76-885c-8a31-d65adfc9c6fe"
+      stageUuid: "5818248e-71db-887c-a495-3bae1204a8db"
     - stage: seal
       stageUuid: "db8bcd25-63cd-838e-b33a-ebed47e0fb66"
     - stage: uuid
-      stageUuid: "337f7a2e-5679-827e-8db8-ba23d97ef919"
+      stageUuid: "ca06d1b3-8869-8fb7-9265-f213df514206"
 version: 2
 ---
 # seal — frontmatter render · content-uuid seal

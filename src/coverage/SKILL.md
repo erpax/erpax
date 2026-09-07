@@ -2,11 +2,11 @@
 name: coverage
 description: "Use when reasoning about coverage — Use to see the development plan as a computed matrix — participants (14 roles) × standards (their concerns), each cell a theorem, each uncovered cell a wave. A cell is covered iff a control cites its standard WITH a test beside it. 100% = every standard, faced by every participant it concerns, is proven. Run: tsx src/coverage/index.ts"
 atomPath: coverage
-coordinate: "coverage · 8/crest · a9826e36"
-contentUuid: "33a48d32-1c8f-58b7-9fb4-9aba4d71e614"
-diamondUuid: "d4e3b308-6b25-82d6-bd8f-cfce1d4105ab"
-uuid: "a9826e36-0823-8ca3-be85-60a874ef7cd8"
-horo: 8
+coordinate: "coverage · 7/descent · 38a76d28"
+contentUuid: "47e032b2-0d20-5f23-8053-5c3638bf068a"
+diamondUuid: "1c69ec61-2d43-8798-8c78-12c82873178c"
+uuid: "38a76d28-4136-8231-8ad5-a04ff4839e89"
+horo: 7
 typography:
   partition: coverage
   bondDegree: 77
@@ -14,7 +14,7 @@ standards:
   - "ISO-19011:2018 §6.4 — audit evidence: coverage is traceable, cell by cell"
 bindings: []
 signatures:
-  computationUuid: "0bec5f52-c5b7-8d37-a015-8a2c26b8013f"
+  computationUuid: "c05cedfb-52db-804a-9327-e54e6cf2a21c"
   stages:
     - stage: path
       stageUuid: "1c6707ed-6029-8932-8157-b1288b84e7c9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d64789f2-fbe3-8a5a-b03a-1b838279294c"
     - stage: horo
-      stageUuid: "4c3e7e00-073b-8569-a16c-0d6a9a495e25"
+      stageUuid: "d715d572-dc41-8488-be11-963e7dc3ffca"
     - stage: seal
       stageUuid: "4354aa29-8db6-8dc6-9f19-37b0d313f02a"
     - stage: uuid
-      stageUuid: "8ded46ff-ef44-8b95-8aee-829490e7d8d8"
+      stageUuid: "05362c06-a7d3-8d02-97ab-c371f5733e94"
 version: 2
 ---
 # coverage — the development waves ARE theorems, and this computes which remain

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "authenticator",
-    "uuid": "fe013511-4c63-8075-8d05-c10f778d5fe2",
+    "uuid": "22a94843-e8a4-8033-950f-1e64ce5ac03e",
     "words": [
       "authenticator"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about authenticator — The Organization responsible for authenticating the user's subscription. For example, many media apps require a cable/satellite provider to authenticate your subscription before pl",
-    "uuid": "f9613f98-f582-828f-a275-faa4ed58e7e6",
+    "uuid": "5e673a14-a96d-8078-bca0-03e61fd7197e",
     "words": [
       "use",
       "when",

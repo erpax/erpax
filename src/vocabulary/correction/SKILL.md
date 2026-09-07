@@ -2,11 +2,11 @@
 name: correction
 description: "Use when reasoning about correction — Indicates a correction to a CreativeWork, either via a CorrectionComment, textually or in another document."
 atomPath: "vocabulary/correction"
-coordinate: "vocabulary/correction · 5/round · 71dc2dc0"
-contentUuid: "8017a27c-9fb9-54e8-aeb6-5279f22b4d6e"
-diamondUuid: "a0fc8e16-d1e2-83e6-8dfa-47f96fc39e24"
-uuid: "71dc2dc0-b5a0-8cf0-8b79-31d4846c5cbd"
-horo: 5
+coordinate: "vocabulary/correction · 1/base · 2cd24aa9"
+contentUuid: "c863a592-a4c1-518d-bbd8-ca79e7641d5a"
+diamondUuid: "a4d88a52-f668-848f-9127-485c77ef7fff"
+uuid: "2cd24aa9-8139-87ab-859b-933939d92358"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e9e3d837-f423-849f-93f9-d27e44ae5eaf"
+  computationUuid: "77a96bd7-9db7-8882-8395-e487ed8f0c77"
   stages:
     - stage: path
       stageUuid: "66bf0da3-91ee-81a9-9641-31262807e83a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a5d02c29-03d2-8c07-8cf8-a6464a1b997f"
     - stage: horo
-      stageUuid: "8c24b41b-8b58-8012-96ee-216fa977a20f"
+      stageUuid: "53c94dcd-a62a-8d6c-bfe9-d1549a8c8b56"
     - stage: seal
       stageUuid: "4431427b-0240-88ca-bdd3-741a45681807"
     - stage: uuid
-      stageUuid: "16ca219a-c2c3-8f44-a104-63c562127ec8"
+      stageUuid: "a7ba0810-9ae8-87ca-82bb-b90ad741983a"
 version: 2
 ---
 # correction

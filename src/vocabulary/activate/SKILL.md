@@ -2,11 +2,11 @@
 name: activate
 description: "Use when reasoning about activate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/activate"
-coordinate: "vocabulary/activate · 8/crest · c20e5491"
-contentUuid: "eefb425f-4266-5f34-a702-0f6d78cd15f5"
-diamondUuid: "0ddc4132-456f-88cf-a1c1-c7f27a30230a"
-uuid: "c20e5491-bb5d-8195-a92c-3562ae2d71d6"
-horo: 8
+coordinate: "vocabulary/activate · 2/share · b437fdd2"
+contentUuid: "c02f9d62-f181-5e9e-861c-89ebc3fbc099"
+diamondUuid: "f5138399-b705-83b8-a1bd-cefb656db5d4"
+uuid: "b437fdd2-a612-8890-95ef-1b4bf79c969a"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2931b88d-12ab-85ed-bfe3-2efcd3c602b8"
+  computationUuid: "695926f3-92b1-8d81-a8f5-70b8fbfa79a0"
   stages:
     - stage: path
       stageUuid: "c08dc7ee-f4b9-8f4a-90ba-5855b7b2df76"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "04273531-bf00-8032-8411-d7aca1cb755d"
     - stage: horo
-      stageUuid: "9f85fa4e-2685-8495-985d-b133c1e663b2"
+      stageUuid: "3b846f20-dc9d-8140-8788-adf7d70ba32b"
     - stage: seal
       stageUuid: "987c7bd3-180b-8180-877a-364563024360"
     - stage: uuid
-      stageUuid: "bea8b9f7-eff0-8cdf-bfee-6ac8512765bd"
+      stageUuid: "31cbf69a-e8b1-8dab-b025-1d570a58164f"
 version: 2
 ---
 # activate

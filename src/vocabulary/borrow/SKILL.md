@@ -2,10 +2,10 @@
 name: borrow
 description: "Use when reasoning about borrow as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/borrow"
-coordinate: "vocabulary/borrow · 2/share · e37b9821"
-contentUuid: "239337dc-88b1-5d6f-9687-bce14db312ce"
-diamondUuid: "b985eb81-20d1-87d9-9e80-0410bf2f9402"
-uuid: "e37b9821-db04-8fc0-bcd5-6f25bc6624f7"
+coordinate: "vocabulary/borrow · 2/share · e6a021c0"
+contentUuid: "31c07d65-6b41-5258-a8d5-b0f38fd65b72"
+diamondUuid: "4bee349c-b914-8260-b4a2-fd11e0d5a886"
+uuid: "e6a021c0-43ed-81c4-8251-c0cd9f015615"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ee5ee8de-ef33-879d-83fc-42c8944fbb24"
+  computationUuid: "fd4d6011-0fb6-86d0-a5db-c49e3aed32ce"
   stages:
     - stage: path
       stageUuid: "634129b7-253d-8c75-8e6e-527c4b9aed95"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5efc88e0-0915-828f-a06c-d1a7dc39a24c"
     - stage: horo
-      stageUuid: "e321c9ec-3d21-8d9f-a0b5-b4ad156e0625"
+      stageUuid: "a1552534-f331-8b3b-adf5-f7427360c41a"
     - stage: seal
       stageUuid: "381b694f-5e11-8346-afa7-dbe4044d4ba3"
     - stage: uuid
-      stageUuid: "493c4c5e-25ed-806e-bebb-7d2c454dea0e"
+      stageUuid: "e816f05e-f7de-82e2-9a8c-b414a44829a5"
 version: 2
 ---
 # borrow

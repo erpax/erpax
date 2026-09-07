@@ -2,11 +2,11 @@
 name: holder
 description: "Use when reasoning about holder as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/holder"
-coordinate: "vocabulary/holder · 5/round · f6bdc903"
-contentUuid: "f7b5c96b-284f-53ea-92b3-8690eba1857e"
-diamondUuid: "4056c84e-c676-84a7-86bf-ce73793c2b1e"
-uuid: "f6bdc903-20db-89c0-9e69-2c60fe059bc3"
-horo: 5
+coordinate: "vocabulary/holder · 7/descent · 291e2aef"
+contentUuid: "7cc2f85b-f063-5e43-9508-ac4bbf714b8d"
+diamondUuid: "8a653c3f-ddb5-8f61-a725-b30522d6ffe5"
+uuid: "291e2aef-1940-8bf7-aab7-721272817c35"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "91160ec5-db5c-8ef9-a2ef-133b44eb2343"
+  computationUuid: "816a4d08-7504-8bbc-a63a-2dd80a1577e2"
   stages:
     - stage: path
       stageUuid: "1d9a2c07-18fa-893b-b167-bd9016c61231"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2361603a-0660-893e-abe1-62b126d08288"
     - stage: horo
-      stageUuid: "b8e39dbc-6bb0-86e0-aa36-5036d889eb52"
+      stageUuid: "2460f879-ac5f-8dc1-9ba0-20f736df5f3b"
     - stage: seal
       stageUuid: "dc909387-607a-8124-8eeb-ffaefd83bd38"
     - stage: uuid
-      stageUuid: "969cd163-c8e1-89fa-ab15-c1a250ce069d"
+      stageUuid: "66cf9efa-391e-81ba-8cef-5d96574a70da"
 version: 2
 ---
 # holder

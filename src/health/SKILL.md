@@ -2,18 +2,18 @@
 name: health
 description: "Use when managing healthcare operations — patient records, medical encounters, clinical protocols, health outcomes, treatment plans, medication management, or healthcare provider coordination in government/nonprofit health systems (COFOG 07)."
 atomPath: health
-coordinate: "health · 4/weave · ad7db779"
-contentUuid: "fbac44aa-d2ef-57dc-bc6a-1c8213ddf518"
-diamondUuid: "2f7204dc-e93f-85fb-88e0-fd3b199a9515"
-uuid: "ad7db779-cb59-8312-b218-9c888dba2185"
-horo: 4
+coordinate: "health · 8/crest · 1704f5da"
+contentUuid: "5bc3be81-058f-54c7-801c-88fe73bb4af4"
+diamondUuid: "ec16c5aa-d170-8961-8da9-7b4dcbb29ccb"
+uuid: "1704f5da-1a2b-8697-9135-b471e88f7116"
+horo: 8
 typography:
   partition: health
   bondDegree: 168
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4060a764-4a96-835a-a79d-b6d077c72557"
+  computationUuid: "3eef5d56-a8e1-8e13-a4bf-2204acf28d6d"
   stages:
     - stage: path
       stageUuid: "b6c24178-4dcd-8825-a14d-f2609f727d6f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "83d96d92-406f-8f3f-8dee-5460fc1d5a4d"
     - stage: horo
-      stageUuid: "941fdc0b-10a6-87ee-a87c-cd1a124686f9"
+      stageUuid: "33c37c96-2c83-8a89-b956-48414acfc473"
     - stage: seal
       stageUuid: "62a07bc4-4caf-8c32-8c54-403912dd8115"
     - stage: uuid
-      stageUuid: "8df59dd8-d1d6-803f-ae66-9126a3fa6d9b"
+      stageUuid: "d3770c48-4e5a-8f5c-8f1f-5b56e498b232"
 version: 2
 ---
 # health — the care-flow domain (one party, the encounter chain)

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "joint",
-    "uuid": "b5a88ce0-0063-8b92-ab66-ce7215cd2450",
+    "uuid": "c0af7dc9-0480-8b63-8ddd-f23db690071c",
     "words": [
       "joint"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about joint — The anatomical location at which two or more bones make contact.",
-    "uuid": "aa0dc813-88c4-8ec8-8c80-76945928bb52",
+    "uuid": "deb667f6-aaa5-841f-aa7b-bdfde438cb91",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: chain
 description: "Use when reasoning about chain — starts a chain at and extends it: addresses the pair (previous, content), so each link's identity depends on everything before it. walks the and reports where the walk breaks."
 atomPath: "uuid/chain"
-coordinate: "uuid/chain · 2/share · 1827e997"
-contentUuid: "0cf1c862-1d7c-50c8-b0ff-ec9f5ca5a008"
-diamondUuid: "8a4a059b-e2f2-814e-b5d9-1ac94f3adacb"
-uuid: "1827e997-f2f3-8bfc-b68a-b96feecbfb9a"
+coordinate: "uuid/chain · 2/share · bceead43"
+contentUuid: "4dc75fa9-74d2-5d4a-9f46-5459e6566a82"
+diamondUuid: "d00dcd96-2b0e-80f6-bc13-36f5a8c691ad"
+uuid: "bceead43-b2c7-8887-9a2b-fda3e3f466db"
 horo: 2
 typography:
   partition: uuid
@@ -18,7 +18,7 @@ standards:
   - RFC 9562 §5.8 uuidv8
 bindings: []
 signatures:
-  computationUuid: "e7389bb8-ea5f-8fcf-ba5c-6e9af1091ad9"
+  computationUuid: "3cea8fb5-8358-8172-8f32-f6c581162d4d"
   stages:
     - stage: path
       stageUuid: "c5f13dd5-f7be-81b1-94cc-47d9549dfeba"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "b89a37ab-de12-8270-a224-4ff792482272"
     - stage: horo
-      stageUuid: "c1210d8f-e212-878f-8fbb-0335d708835e"
+      stageUuid: "af661f2e-ce5b-8c49-8433-157385dd19d7"
     - stage: seal
       stageUuid: "2a2aa3d5-c1d7-86d6-be60-6ddf960a37db"
     - stage: uuid
-      stageUuid: "544e5993-96be-8b26-a64d-0605d2875c54"
+      stageUuid: "a93a2dc9-49d2-846c-895a-088a7c7cfe4a"
 version: 2
 ---
 # uuid/chain — a uuid bound to its predecessor IS a blockchain leaf

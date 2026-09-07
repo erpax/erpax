@@ -2,18 +2,18 @@
 name: round
 description: "Use when reasoning about the sixth position of the horo state ring — digit 5, \"the ring breathes\", the completing turn that brings a returning flow to rest (delivered, received, reconciled). Descent/return arc; nested under horo."
 atomPath: "horo/round"
-coordinate: "horo/round · 7/descent · c1e96506"
-contentUuid: "69f9afe1-efb0-5bba-9a39-993e457afcea"
-diamondUuid: "ecbc6c5a-9f03-8b3b-982e-e44ef3a09c3b"
-uuid: "c1e96506-5f18-8636-8779-708564d95e46"
-horo: 7
+coordinate: "horo/round · 1/base · b9dae6ee"
+contentUuid: "ede6211e-f959-5311-9f8a-922675625c4d"
+diamondUuid: "cc73cf51-f43a-82d4-a7a6-5f4ae7a7b40e"
+uuid: "b9dae6ee-de45-8d1d-996c-3bbc70358960"
+horo: 1
 typography:
   partition: horo
   bondDegree: 38
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ad5940d8-07f6-8a91-81fe-c31cbeac0483"
+  computationUuid: "a1e4c545-cd06-8b4f-98d2-39b58d588828"
   stages:
     - stage: path
       stageUuid: "026c1888-5668-874c-a5bf-7d16e7a6c2b1"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "fc9c7cdd-12d2-8678-8786-5de49b6c97ff"
     - stage: horo
-      stageUuid: "e5f612e8-9963-8d6e-88a7-6fa24dac6c39"
+      stageUuid: "046f70c0-3d71-8155-b229-c52815bdebc3"
     - stage: seal
       stageUuid: "d0e74375-8f72-84d0-ad4c-e81285d8991e"
     - stage: uuid
-      stageUuid: "970ade70-a6b8-85a5-ba0f-c5f56586ad96"
+      stageUuid: "141338c4-8900-86c8-b062-dc1461239fae"
 version: 2
 ---
 # round — horo position 5 (the ring breathes)

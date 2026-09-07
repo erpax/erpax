@@ -2,18 +2,18 @@
 name: endpoints
 description: "Use when adding or debugging a custom HTTP route that does work outside a collection's CRUD — the `/next/seed` demo-data loader that clears and repopulates a fresh tenant with example pages, posts, media, and the erpax product-marketing pages — endpoints is the society's custom-route organ (currently one organ-scoped seed handler, not the per-collection structural seed)."
 atomPath: "vocabulary/endpoints"
-coordinate: "vocabulary/endpoints · 1/base · 8653b10e"
-contentUuid: "fe3bc7b8-d0d5-594b-a9e8-ec475dd34e94"
-diamondUuid: "e0626afb-9a62-8214-ba96-7d59a2ab82da"
-uuid: "8653b10e-4949-845a-89f5-31f8a7e55e29"
-horo: 1
+coordinate: "vocabulary/endpoints · 8/crest · 0af628b4"
+contentUuid: "fac9ff04-4bca-519f-8172-d4e50ed4837a"
+diamondUuid: "57039906-45bf-8bc4-9a9b-7f161205e418"
+uuid: "0af628b4-900f-80ef-b5b3-a77512befe9d"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 11
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6c241417-8e8a-8ebe-a5b6-5eaf846ddb25"
+  computationUuid: "1aecfd63-2b84-8293-9ad2-abdf12887378"
   stages:
     - stage: path
       stageUuid: "a2d95c0e-3251-8087-abb5-162478667fe1"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ea7bb7bb-3cb5-834a-8187-09385ed86603"
     - stage: horo
-      stageUuid: "8b2ec238-baa6-881e-9107-0ef8f0f5a456"
+      stageUuid: "6eb5f389-4633-8e44-a33c-43fb23c48eb0"
     - stage: seal
       stageUuid: "489d117a-7b28-8f4a-b561-c0836f20fcdd"
     - stage: uuid
-      stageUuid: "600140ed-b531-80ca-82e9-9b1a38e896b2"
+      stageUuid: "f2842583-a66e-82c5-bfad-50c02c731535"
 version: 2
 ---
 # endpoints — the custom-route organ (the `/next/seed` demo loader)

@@ -2,18 +2,18 @@
 name: trust
 description: "Use when reasoning about trust — A **trust** (IOLTA) account holds client money the firm may not touch except to bill against fees already earned. Strip the prefix and it is a segregated sub-account on the one acc"
 atomPath: trust
-coordinate: "trust · 2/share · 240dee3c"
-contentUuid: "801a8c49-a856-57b2-b3d1-0ffc1abfe099"
-diamondUuid: "09a2b52e-2858-80b9-b21c-a38334d701b4"
-uuid: "240dee3c-755d-8f68-a19e-66c7fad65ff4"
-horo: 2
+coordinate: "trust · 1/base · 589228b7"
+contentUuid: "195de5b0-b2c2-551c-930f-db5c1c6117fd"
+diamondUuid: "b488af55-2e6f-8fd6-b3f3-23f180dd71fb"
+uuid: "589228b7-2c5b-8d39-a55c-4f46d926b479"
+horo: 1
 typography:
   partition: trust
   bondDegree: 39
 standards: []
 bindings: []
 signatures:
-  computationUuid: "91341985-d5ca-8afd-841d-c3fba1da4036"
+  computationUuid: "6562081d-bf18-8ee8-a686-1dddb3f4463d"
   stages:
     - stage: path
       stageUuid: "c3c16335-f7c4-8400-a2db-82e343687f17"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "8329d8a0-ae09-8900-ab21-ccb28a439486"
     - stage: horo
-      stageUuid: "5eabd0e5-bf3d-8f44-8de7-362dd0c3145b"
+      stageUuid: "e0868e9f-b532-87de-827d-98d5239689d4"
     - stage: seal
       stageUuid: "2c79d32d-3e8f-8798-836a-9ea1807907cf"
     - stage: uuid
-      stageUuid: "553283c4-5dfb-87b9-8150-d05f95076449"
+      stageUuid: "60fb34d5-1aa2-808c-98d7-5687145fc5f4"
 version: 2
 ---
 # trust — the segregated client account (a balance invariant on the ledger)

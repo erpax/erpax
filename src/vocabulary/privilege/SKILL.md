@@ -2,18 +2,18 @@
 name: privilege
 description: "Use when reasoning about privilege — **Privilege** — attorney-client confidentiality and the ethical wall that screens a matter from conflicted staff — is an access scope: a capability on the role × isolation to the m"
 atomPath: "vocabulary/privilege"
-coordinate: "vocabulary/privilege · 7/descent · 096ea7d9"
-contentUuid: "2cc53adb-2546-58cf-8507-d7b3843bd186"
-diamondUuid: "93230139-3174-8629-83ff-cc254e6dfe17"
-uuid: "096ea7d9-32a1-8017-91ac-2fde64c70bf1"
-horo: 7
+coordinate: "vocabulary/privilege · 2/share · c308665c"
+contentUuid: "dc832903-4767-5f0f-872f-c33f3419836a"
+diamondUuid: "ae35025c-5d9c-85ae-8fc0-5e7ad2bde6db"
+uuid: "c308665c-7e23-8018-a940-c708fe8691fa"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 40
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7168f215-755d-8f01-91e3-7c80f54f6a31"
+  computationUuid: "f938e21b-a870-8d0f-b504-ed10d6e83cb8"
   stages:
     - stage: path
       stageUuid: "dc0903fd-7f85-8432-a340-ede0f9480a67"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "4514349a-4277-8e4f-a255-94851b26e73e"
     - stage: horo
-      stageUuid: "302747e5-d3b6-8571-88c8-adb79e4f705b"
+      stageUuid: "408cf4f5-b1ab-8c84-a6a4-1f5e597f1766"
     - stage: seal
       stageUuid: "0b017cdb-38ae-822c-8ccc-da9a91c374db"
     - stage: uuid
-      stageUuid: "64499fbe-f408-8387-9306-48a2c3609c84"
+      stageUuid: "7dbad306-2c5a-89e4-a7f3-ea52b13551bc"
 version: 2
 ---
 # privilege — the confidentiality wall (access scope + crypto-shred)

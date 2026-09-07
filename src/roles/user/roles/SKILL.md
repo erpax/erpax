@@ -2,11 +2,11 @@
 name: roles
 description: "Use when assigning or revoking a role definition for a user — the HABTM join that grants a user the capabilities and skill routes of the linked role; duplicate assignments are prevented by hook. The NIST INCITS-359 role-assignment collection."
 atomPath: "roles/user/roles"
-coordinate: "roles/user/roles · 2/share · 667b0d4f"
-contentUuid: "4872ef71-440e-5df9-84bb-a6a92f07dc6f"
-diamondUuid: "8e8a4040-e7a4-81df-adde-9018f4128672"
-uuid: "667b0d4f-7c71-89ea-bc08-cdf1e8c20f93"
-horo: 2
+coordinate: "roles/user/roles · 4/weave · 118bc6e0"
+contentUuid: "08edef62-40c1-575a-ab7b-2e1b3d41e710"
+diamondUuid: "7f3a464f-0cfe-875f-9f73-194eb2b29c19"
+uuid: "118bc6e0-527b-82ed-9ac7-2478134f1299"
+horo: 4
 typography:
   partition: roles
   bondDegree: 27
@@ -17,7 +17,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "cf8eeb85-62c3-89bb-b0b3-7842f3551d43"
+  computationUuid: "3891d89c-6007-8b49-bb3c-d348a3ea8253"
   stages:
     - stage: path
       stageUuid: "a733e72e-c7e2-8931-a61d-4b03861cb20e"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "6d1ecf43-ad40-89d3-a91a-8bf0f17d1a7b"
     - stage: horo
-      stageUuid: "63d95448-313c-8114-988f-93160be93845"
+      stageUuid: "fbacc0e9-a725-8f22-b372-18d693847adf"
     - stage: seal
       stageUuid: "6e4ac23a-51da-8a87-b893-80cdb43a2394"
     - stage: uuid
-      stageUuid: "7216815c-b68f-889d-8817-2729e59c2e45"
+      stageUuid: "99e7c43b-3885-8135-b7fe-5c4ed85723a1"
 version: 2
 ---
 # user-roles

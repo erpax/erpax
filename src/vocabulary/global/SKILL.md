@@ -2,11 +2,11 @@
 name: global
 description: "Use when reasoning about global as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/global"
-coordinate: "vocabulary/global · 1/base · b634227b"
-contentUuid: "6dd886d3-e564-5986-998e-ce604b51b2b0"
-diamondUuid: "c7d5a6f3-cfce-8442-8e93-591d727991ca"
-uuid: "b634227b-2dd2-885d-90f7-636d894f98c6"
-horo: 1
+coordinate: "vocabulary/global · 2/share · caa13333"
+contentUuid: "4daf7897-53ed-5566-b443-98ce66515f84"
+diamondUuid: "a3caa42f-daa2-816f-afd6-5c1b4bbaf40d"
+uuid: "caa13333-6ac4-893c-bc6d-7f45a66fd45f"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fee4c28c-adc2-80c3-aeb8-e3212d2b241a"
+  computationUuid: "3d378db7-81a8-8b98-89ea-32b1488e20ca"
   stages:
     - stage: path
       stageUuid: "40466e48-2198-8450-81df-5787d89010cb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "207d43d3-0efd-8eb3-a862-1b951db9f589"
     - stage: horo
-      stageUuid: "17a80c83-e045-82dd-910a-f79a5afc4130"
+      stageUuid: "6ee11b47-e866-8e1c-81e4-9a186563a326"
     - stage: seal
       stageUuid: "7098ecae-2e68-87ef-b3aa-bdf87df4ab52"
     - stage: uuid
-      stageUuid: "b5e3ab1b-a314-8a45-86fc-2d78035fbcbf"
+      stageUuid: "07ee0d44-5993-8a42-b684-642566bb1d26"
 version: 2
 ---
 # global

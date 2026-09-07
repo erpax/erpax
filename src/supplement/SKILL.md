@@ -2,11 +2,11 @@
 name: supplement
 description: "Use when reasoning about supplement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: supplement
-coordinate: "supplement · 4/weave · d9211fee"
-contentUuid: "7ef5c490-270f-591a-9a1a-de6bb574926a"
-diamondUuid: "ff7f30b8-1328-873e-a2cc-6c17c2b6536d"
-uuid: "d9211fee-6e19-848b-bf30-1d380ca07acd"
-horo: 4
+coordinate: "supplement · 1/base · a3ba53bd"
+contentUuid: "64dbf7dc-82f8-5c98-88ee-85643d4dbc3f"
+diamondUuid: "e899bdbd-bd8e-8392-950e-bb66ea2c025d"
+uuid: "a3ba53bd-701e-8156-b246-c21e66a9347b"
+horo: 1
 typography:
   partition: supplement
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7e5021b3-8f17-8887-a129-acfbff360435"
+  computationUuid: "9b3daf61-9e6e-8169-8433-8588d2e59157"
   stages:
     - stage: path
       stageUuid: "36ab0390-2ddd-8119-8f5d-301ae5545e92"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f0413e5e-f06a-8df2-a570-10bf414f31f8"
     - stage: horo
-      stageUuid: "f1c9e80e-acef-893d-97c2-1ed3dafbafdc"
+      stageUuid: "9dc60658-fa62-8e78-8af9-819cbff83a81"
     - stage: seal
       stageUuid: "bd8841eb-2354-8efd-8bbe-fe9b56ab2863"
     - stage: uuid
-      stageUuid: "72c859fe-c1c2-81d7-81ec-058964a1e3fc"
+      stageUuid: "a5a2ff56-f0c2-8eb4-8802-eb4a49ec353f"
 version: 2
 ---
 # supplement

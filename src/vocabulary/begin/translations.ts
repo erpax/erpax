@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "begin",
-    "uuid": "2bf63f9f-f595-80b9-aa2e-7a77fe033754",
+    "uuid": "5935ebe5-09e0-8d70-9080-5e64f0414330",
     "words": [
       "begin"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about origin or boundary in erpax — the 0 (both end and beginning), period open/close, lifecycle start/seal, the axis every pass departs from and returns to. The universal root of origin.",
-    "uuid": "3ccfa0b2-40fd-8b41-bfdf-17fbdbc98e74",
+    "uuid": "7d6cc148-b534-8082-969c-f18408d716d3",
     "words": [
       "use",
       "when",

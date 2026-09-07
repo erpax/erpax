@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "law",
-    "uuid": "e26f82c4-0a8f-8f12-ac90-aa484b70f009",
+    "uuid": "e6c24295-3e64-8f79-90ea-b03cf4f51062",
     "words": [
       "law"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about law — Every directive that shaped erpax, distilled and saved as a skill (your own law: save the commands, don't lose them to the chat). Each law links to the atom it governs — the inboun",
-    "uuid": "002d8a7d-1cc5-8946-84cf-ec39893394eb",
+    "uuid": "e0f9513e-a51c-8383-8017-4329cccc1d53",
     "words": [
       "use",
       "when",

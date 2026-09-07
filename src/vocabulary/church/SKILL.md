@@ -2,11 +2,11 @@
 name: church
 description: Use when reasoning about church — A church.
 atomPath: "vocabulary/church"
-coordinate: "vocabulary/church · 1/base · 1125dabf"
-contentUuid: "97aefcfc-52d2-5fe6-b0c4-9ed7ba8281f1"
-diamondUuid: "2c4a0d8c-77ae-88a0-b53e-403d837f84a6"
-uuid: "1125dabf-0283-891d-ab6c-a850990a2064"
-horo: 1
+coordinate: "vocabulary/church · 2/share · bc8a32bd"
+contentUuid: "5aaec708-474b-5b18-bf87-7eb7765ae03a"
+diamondUuid: "f0eea219-b7c1-87dc-bf64-dd5152a22cb1"
+uuid: "bc8a32bd-2c17-8427-807b-93806b95bca6"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b20b08d1-8753-845e-a9d5-430ae66e0f65"
+  computationUuid: "c6f512bc-6546-8710-b277-44b1dab9b961"
   stages:
     - stage: path
       stageUuid: "807b071b-d7e7-8d9b-8756-2ce431bf5dd5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7748793a-6720-897c-ab36-79194a29f5d6"
     - stage: horo
-      stageUuid: "bddb4637-6fec-8e64-8037-cd4357467ebe"
+      stageUuid: "83fd64d3-9d7e-864b-bf90-eb17c8eb8fb7"
     - stage: seal
       stageUuid: "a5ed75c9-e1ab-882d-b16a-eea2e15acafc"
     - stage: uuid
-      stageUuid: "8afd31d9-698e-8fe2-808c-e781170a5afc"
+      stageUuid: "ce5e9ab8-a1e5-83e5-9e3a-ec922f9961a1"
 version: 2
 ---
 # church

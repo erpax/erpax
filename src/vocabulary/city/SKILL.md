@@ -2,11 +2,11 @@
 name: city
 description: Use when reasoning about city — A city or town.
 atomPath: "vocabulary/city"
-coordinate: "vocabulary/city · 4/weave · 0718892c"
-contentUuid: "52f7a7ef-24b4-5654-8bbb-c5f6ab759215"
-diamondUuid: "47873c8e-03d0-8ef0-8052-6b4f8bc9d29a"
-uuid: "0718892c-f8c7-84d7-bf0d-33addd28c80f"
-horo: 4
+coordinate: "vocabulary/city · 2/share · 0eadc0e3"
+contentUuid: "6eab43f2-c24e-5622-a922-77c16aad1b66"
+diamondUuid: "8dd10b50-0a6a-8941-97a7-c00f8321adf2"
+uuid: "0eadc0e3-16e7-8f79-ad71-ad717b394a50"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a6dca25a-0343-8389-b026-d44023e5f04a"
+  computationUuid: "daa25456-6dd4-893f-8374-09a0032d8825"
   stages:
     - stage: path
       stageUuid: "92723464-f309-8aa2-bb28-20b4b434f05a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "add3b6af-e095-868d-b32c-d59141288c0d"
     - stage: horo
-      stageUuid: "a25731ef-876f-8cd8-b072-4306a1aa5cc4"
+      stageUuid: "60825a7a-2a9f-88fa-9583-d555672a6b8f"
     - stage: seal
       stageUuid: "cd9c4e77-c9c6-87b2-81e6-1f36c0fbb4f5"
     - stage: uuid
-      stageUuid: "cb378270-0147-8d81-a1dd-d3fef18bfc0a"
+      stageUuid: "dd711deb-b499-8f93-8fcf-883318f5afd2"
 version: 2
 ---
 # city

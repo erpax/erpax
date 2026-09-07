@@ -2,11 +2,11 @@
 name: factory
 description: "Use when creating Payload collections from declarative metadata — createAccountingCollection injects audit fields, tamper-proof uuid, horo state ring, standards citations, and chain-event hooks so collection files carry only domain intent."
 atomPath: factory
-coordinate: "factory · 2/share · d59a7f8c"
-contentUuid: "52fe85b4-b563-59e9-b8dd-dd5ed5bfdd65"
-diamondUuid: "c4a86f42-ce11-8bde-b634-e4b5a20d5dcc"
-uuid: "d59a7f8c-a99e-8291-b9c4-26659b18aa26"
-horo: 2
+coordinate: "factory · 1/base · 89b2510c"
+contentUuid: "e26b2f01-c4a4-53fa-b87e-2c7e7e434702"
+diamondUuid: "6301046a-2df5-8cde-adea-9afc2466fcd4"
+uuid: "89b2510c-f2c4-8a28-a41c-2f22fa093ed4"
+horo: 1
 typography:
   partition: factory
   bondDegree: 45
@@ -14,7 +14,7 @@ standards:
   - "ISA-95"
 bindings: []
 signatures:
-  computationUuid: "116e196f-588d-8f2e-a8e3-5daf2a4dfb5a"
+  computationUuid: "c7f2f288-6446-88f1-bde1-821b1420ee44"
   stages:
     - stage: path
       stageUuid: "ee1efea5-acdf-8b3b-8fda-09a0cf9f9d7a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f9c319e5-9961-8c71-a41a-4f6e6098d9f6"
     - stage: horo
-      stageUuid: "2b8edbb3-ebc0-85e0-8cd2-5990f244b339"
+      stageUuid: "e5fe779a-fe77-849a-aabf-e5f7536db828"
     - stage: seal
       stageUuid: "34be0308-3103-8bb5-855a-d8630b87d46e"
     - stage: uuid
-      stageUuid: "a255fef1-163a-80e5-a95a-b74ef48b9101"
+      stageUuid: "6f2355a6-9c66-8657-81c6-316c873aa62b"
 version: 2
 ---
 # factory — declarative collection factory

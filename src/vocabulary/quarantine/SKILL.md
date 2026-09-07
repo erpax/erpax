@@ -2,11 +2,11 @@
 name: quarantine
 description: "Use when reasoning about quarantine as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/quarantine"
-coordinate: "vocabulary/quarantine · 8/crest · 95bb5e15"
-contentUuid: "8831144f-f1e4-57eb-ae56-51a3c7bb40b1"
-diamondUuid: "63b12e2f-0c48-81ba-b197-2612b1196ce0"
-uuid: "95bb5e15-93b5-87b0-9fd2-b4a7399e2ba5"
-horo: 8
+coordinate: "vocabulary/quarantine · 1/base · 3d5334e3"
+contentUuid: "702ad1d2-a9a1-52d6-9622-e7a1a8d8e42a"
+diamondUuid: "ab63b58b-82e9-840b-8d81-48f9ebb6b1d2"
+uuid: "3d5334e3-caf0-804c-a5f6-a1383af6775e"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8e9a3c06-e31c-8032-92ec-0ec64f99db15"
+  computationUuid: "05e90659-0731-878f-846a-3d6de42ba651"
   stages:
     - stage: path
       stageUuid: "27691eb4-7790-8327-8518-68a4eb8fff85"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "eedcb2c2-190a-823b-b187-4c01de47e813"
     - stage: horo
-      stageUuid: "997dcdd6-f2f1-815b-8adc-3039e3e5e755"
+      stageUuid: "746e3462-4987-84ab-9ab4-3da36ff9a4c6"
     - stage: seal
       stageUuid: "18f69b7c-7949-8c60-990b-3b4f9489de21"
     - stage: uuid
-      stageUuid: "d8b3dd79-b74c-84b7-ad2e-d51712c8a116"
+      stageUuid: "9f0cd5c4-2fc4-8a16-85db-01933a49179e"
 version: 2
 ---
 # quarantine

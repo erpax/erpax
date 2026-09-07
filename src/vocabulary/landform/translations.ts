@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "landform",
-    "uuid": "69e21fa8-8a7b-8b26-886d-6f4ed66e9942",
+    "uuid": "27491481-cab1-8004-a987-305237d3d9c7",
     "words": [
       "landform"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about landform — A landform or physical feature. Landform elements include mountains, plains, lakes, rivers, seascape and oceanic waterbody interface features such as bays, peninsulas, seas and so",
-    "uuid": "606a0098-1175-89ed-9202-850d0be4823c",
+    "uuid": "05556e0a-5821-8cf2-8bcd-84a93c14c0d0",
     "words": [
       "use",
       "when",

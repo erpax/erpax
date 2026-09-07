@@ -2,11 +2,11 @@
 name: sample
 description: "Use when reasoning about sample as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: sample
-coordinate: "sample · 7/descent · 4d988cef"
-contentUuid: "41847301-3bfa-58e6-9822-76c9a4a645a2"
-diamondUuid: "6bdc5bfb-b35a-83fb-98c0-fb19235011f6"
-uuid: "4d988cef-d711-860d-8353-ac4c23949de1"
-horo: 7
+coordinate: "sample · 2/share · f0561e4b"
+contentUuid: "05915e67-5d51-56b6-aaf4-b4fecdf1bacf"
+diamondUuid: "3fd8ecab-9628-88da-93a8-7e50c2aceabb"
+uuid: "f0561e4b-9224-8e1a-b0b6-48c0f8f49c50"
+horo: 2
 typography:
   partition: sample
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "38827c1e-21d0-8cbf-8214-9fae7397c654"
+  computationUuid: "e12cf606-8839-8638-b1b5-643479f0ad8e"
   stages:
     - stage: path
       stageUuid: "e3157093-c18a-86eb-ba1f-37b4e751350c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c89b7a07-e398-8e28-b207-4eb36cf09d54"
     - stage: horo
-      stageUuid: "150965c3-96f5-8bb6-aa83-cf43847378c4"
+      stageUuid: "06840df0-7618-8c18-8614-749b32b6e0c6"
     - stage: seal
       stageUuid: "89438189-727d-83cf-912f-4b82f9de1b07"
     - stage: uuid
-      stageUuid: "8f2ee049-7f48-89b6-80b5-bd0af7223dac"
+      stageUuid: "91f4997d-1552-8a17-93a8-5a1020d02447"
 version: 2
 ---
 # sample

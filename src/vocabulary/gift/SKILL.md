@@ -2,11 +2,11 @@
 name: gift
 description: Use when reasoning about gift — Indicates whether the offer was accepted as a gift for someone other than the buyer.
 atomPath: "vocabulary/gift"
-coordinate: "vocabulary/gift · 7/descent · da225747"
-contentUuid: "d45a6862-dc65-5ee2-aa9e-9f0a9228689f"
-diamondUuid: "cd0ddc03-60b5-8d75-9c44-a5a27f79d50f"
-uuid: "da225747-5a5e-8436-95ed-f97bf650b9cd"
-horo: 7
+coordinate: "vocabulary/gift · 8/crest · 293fdfa3"
+contentUuid: "4466f26e-e427-5346-a86a-7621220af099"
+diamondUuid: "e74349e6-e809-8ef8-b538-c3d0df46bb9c"
+uuid: "293fdfa3-2805-87e1-9b56-6cfe88fba577"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "001f9ab9-5156-86ee-a067-5142e71db4da"
+  computationUuid: "a9dee3dd-3814-8c08-94ea-77e5caf34f94"
   stages:
     - stage: path
       stageUuid: "bb07dccf-4b87-83f4-ae3e-35032feac2a1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5c8d21d6-bf73-805d-b592-2ed7d19a67f0"
     - stage: horo
-      stageUuid: "90b70618-422a-8474-ad9b-eaeb450e0269"
+      stageUuid: "a18a82c2-6d4f-852d-a2e9-0874030c0384"
     - stage: seal
       stageUuid: "f19a3abf-de13-8512-be68-d975202012b7"
     - stage: uuid
-      stageUuid: "ddd01cf7-20f5-839b-b5c0-328c11c9dd77"
+      stageUuid: "f6bf91a1-1608-8fdf-8af3-2ede8a0cc721"
 version: 2
 ---
 # gift

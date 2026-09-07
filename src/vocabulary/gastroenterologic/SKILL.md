@@ -2,11 +2,11 @@
 name: gastroenterologic
 description: "Use when reasoning about gastroenterologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/gastroenterologic"
-coordinate: "vocabulary/gastroenterologic · 1/base · 5622e1ca"
-contentUuid: "e22ece24-506d-5b36-be22-756f17204aea"
-diamondUuid: "399dd096-9f3c-8c0c-80d3-eea63f4ffca2"
-uuid: "5622e1ca-54a2-8909-846d-11a459b2a315"
-horo: 1
+coordinate: "vocabulary/gastroenterologic · 4/weave · d815ff63"
+contentUuid: "5205faf4-f48f-5a3e-b7d4-26e6fe7b4527"
+diamondUuid: "518c44aa-731a-8a30-a43f-f29287f3eba3"
+uuid: "d815ff63-7d90-84a8-9659-58d937ffc32b"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ebd54fa9-03c8-815b-a2b2-6c2eadfd6471"
+  computationUuid: "48a7b57c-7412-8e68-9dcd-1fa36e455088"
   stages:
     - stage: path
       stageUuid: "f0d5f798-da0c-890d-9649-9786cc5ee1ef"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "aa7f909f-d497-8848-a107-3b4243f15cc2"
     - stage: horo
-      stageUuid: "418ab51a-c336-882d-8135-f60837ad0dbe"
+      stageUuid: "aab3d563-9dee-8cc7-9e76-ca4b1cdcb5bf"
     - stage: seal
       stageUuid: "419cb7ed-02c4-8eef-a04d-1a6e25d833be"
     - stage: uuid
-      stageUuid: "8eb22d14-7449-8c89-81db-e8c773793e54"
+      stageUuid: "354f1ce6-a74a-8719-b9b7-6f9c5daed36d"
 version: 2
 ---
 # gastroenterologic

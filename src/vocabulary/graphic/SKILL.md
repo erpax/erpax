@@ -2,11 +2,11 @@
 name: graphic
 description: "Use when reasoning about graphic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/graphic"
-coordinate: "vocabulary/graphic · 7/descent · dbdedfae"
-contentUuid: "3def4d4a-36c7-572e-bc98-2617dbc2dd86"
-diamondUuid: "4f626aa8-b05a-83f8-a235-401df0efd582"
-uuid: "dbdedfae-d734-875f-8b25-68636c02a684"
-horo: 7
+coordinate: "vocabulary/graphic · 4/weave · 5d73cbfd"
+contentUuid: "614323c8-abaf-55b7-918c-48177de8adb6"
+diamondUuid: "69c0077c-00d6-89e5-b797-b84b45e0757f"
+uuid: "5d73cbfd-dcda-89ae-af28-f513e753b9b9"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "34113476-dff6-879d-805a-d4ddac432f77"
+  computationUuid: "266e61fd-7cb3-88d3-a238-8e7f84ec451c"
   stages:
     - stage: path
       stageUuid: "3e267c55-5db6-825c-ac90-8b8274e7d5b9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "384e9349-61e3-8aa9-b87b-dcc4973399b4"
     - stage: horo
-      stageUuid: "7d438ffc-7ea6-8191-9bc3-0a690bd59770"
+      stageUuid: "4cb8f76a-4ba3-89a2-8df6-2de0abc345d0"
     - stage: seal
       stageUuid: "b000b33a-bb50-8fa5-9dc5-5a588cdc354b"
     - stage: uuid
-      stageUuid: "2b1c76a7-0745-8875-9c37-f05965bd7571"
+      stageUuid: "c6d01df5-92a7-836e-ac72-de662992a410"
 version: 2
 ---
 # graphic

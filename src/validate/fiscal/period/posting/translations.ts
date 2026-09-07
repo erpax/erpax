@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "posting",
-    "uuid": "d531cc95-d4b2-8a87-abe9-ca4e464c2e1b",
+    "uuid": "e6a67d49-7394-85cb-a19c-718d891a766a",
     "words": [
       "posting"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a GL posting needs its fiscal period — the beforeValidate hook that READS the period from fiscal-calendars, enforces the period lock (open · locked · archived, per SOX §404), denormalises the calendar row onto the posting, and chains its audit leaf. Read this before wiring it: until now it invented the period from the calendar year and hardcoded quarters, and enforced no lock at all.",
-    "uuid": "70a1a51d-09b1-8e92-b7bb-fdf6a54eb964",
+    "uuid": "b059ef8a-4689-8fbb-92e4-9e17f16e7000",
     "words": [
       "use",
       "when",

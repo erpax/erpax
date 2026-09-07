@@ -2,11 +2,11 @@
 name: card
 description: "Use when reasoning about card as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: card
-coordinate: "card · 4/weave · de71fbef"
-contentUuid: "5384c7c2-63fc-528a-8164-9a5f325f6e02"
-diamondUuid: "dd80ab07-b574-8899-87d4-812037947f43"
-uuid: "de71fbef-ef5d-89d1-ae07-03fe0d60fed4"
-horo: 4
+coordinate: "card · 7/descent · 5ccff7d4"
+contentUuid: "fa497105-ae76-5c02-b190-42fa3d4a1d36"
+diamondUuid: "195088fd-3121-853d-8c20-5af74da4d05c"
+uuid: "5ccff7d4-fa66-8329-ae28-ca2c1ac190e3"
+horo: 7
 typography:
   partition: card
   bondDegree: 27
@@ -21,7 +21,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3efd2f0c-d212-8867-bece-a1d4634fceb2"
+  computationUuid: "1eb38e40-c6e4-809a-96f9-38806f305074"
   stages:
     - stage: path
       stageUuid: "080d0f25-3291-8ef6-932c-35dbc535eec8"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "63fe8173-87c4-89ee-ae44-c2027234889e"
     - stage: horo
-      stageUuid: "7be836fc-945d-8b88-8843-8c15c6438bf0"
+      stageUuid: "9bd681dd-afc6-8df6-bc7a-d5d1ff74036c"
     - stage: seal
       stageUuid: "e178d6dd-5ce5-8154-9300-735b33db22ed"
     - stage: uuid
-      stageUuid: "472ad8e4-e81c-84ff-b15f-144424deac4f"
+      stageUuid: "a779d435-7243-8290-a389-b546b4e6839f"
 version: 2
 ---
 # card

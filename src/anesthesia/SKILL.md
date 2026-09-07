@@ -2,11 +2,11 @@
 name: anesthesia
 description: "Use when reasoning about anesthesia as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: anesthesia
-coordinate: "anesthesia · 1/base · b8eb6c21"
-contentUuid: "049879b5-ba61-5a11-adaf-78eba4249bf4"
-diamondUuid: "d6c480d8-72ad-8791-853f-ee603536cb11"
-uuid: "b8eb6c21-e7a4-819c-b4a7-745a7dc50627"
-horo: 1
+coordinate: "anesthesia · 2/share · 9715f7ee"
+contentUuid: "c9999e35-1bd6-5683-8c41-899cb5e8f19e"
+diamondUuid: "66b14284-b84c-8766-9cd4-0c992b8de3d4"
+uuid: "9715f7ee-ccff-89b5-aa27-af07453d5cc0"
+horo: 2
 typography:
   partition: anesthesia
   bondDegree: 15
@@ -15,7 +15,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "df7d72ca-2f8c-8178-8867-b2a8e919a91c"
+  computationUuid: "2c8bde2d-c146-86a6-8e76-d36f7ff71c60"
   stages:
     - stage: path
       stageUuid: "4edc2365-5ba0-8235-8dc9-09750be46c32"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "6fcbba94-34cf-8ade-abe4-8e3263e72790"
     - stage: horo
-      stageUuid: "7be1c657-3781-890b-b211-65e770940970"
+      stageUuid: "c4617bc9-9f30-81c1-9b1a-db1a6cbf2269"
     - stage: seal
       stageUuid: "1f2c71fd-ccc1-8e26-8b65-d0d6dcb161f1"
     - stage: uuid
-      stageUuid: "f5fb138f-6dce-8d92-b59b-d0926502cc76"
+      stageUuid: "dd20eeb5-06a7-8138-8962-1f15a976f788"
 version: 2
 ---
 # anesthesia

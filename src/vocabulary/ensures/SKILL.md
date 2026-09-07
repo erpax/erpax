@@ -2,10 +2,10 @@
 name: ensures
 description: "Use when reasoning about ensures as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/ensures"
-coordinate: "vocabulary/ensures · 7/descent · b9c15450"
-contentUuid: "945fb0fa-98e0-535a-bc5e-c9d3884fad36"
-diamondUuid: "0f4b4fb0-51b6-8fa1-a0c3-339359016e2a"
-uuid: "b9c15450-d665-80a3-b9f9-412a508be6ce"
+coordinate: "vocabulary/ensures · 7/descent · cbe3312b"
+contentUuid: "e34056c2-7042-5b0c-be5e-b1fe19aa2f38"
+diamondUuid: "00c0ee7f-5c31-84fb-ba44-898cece26b34"
+uuid: "cbe3312b-56de-89db-9880-76ae955064e3"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e166598c-a6ca-81ca-927c-48462104320e"
+  computationUuid: "9dd798dc-9591-894d-9619-366b936be2b0"
   stages:
     - stage: path
       stageUuid: "98feb870-e90d-8c37-8134-5e6f116ccf84"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d90b35e1-b869-843f-9fc3-f820576f6c07"
     - stage: horo
-      stageUuid: "28d7a576-91a8-8340-b554-1f582dcd5d8a"
+      stageUuid: "85cdbccb-87e4-88e7-9797-d5d1c67aff39"
     - stage: seal
       stageUuid: "7274bfbe-711b-8dd4-aff6-8256adb1d236"
     - stage: uuid
-      stageUuid: "33e100e5-d44d-83f8-9ae2-21f02b1112a0"
+      stageUuid: "53f4e4bf-bfe9-8127-a4f9-65bd9ee43cf1"
 version: 2
 ---
 # ensures

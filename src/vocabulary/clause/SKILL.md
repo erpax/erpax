@@ -2,10 +2,10 @@
 name: clause
 description: "Use when decomposing a contract into its constituent promises — each clause is a distinct obligation/right with its own conditions, beneficiaries, triggers, and performance timeline. The atomic unit of contract analysis."
 atomPath: "vocabulary/clause"
-coordinate: "vocabulary/clause · 5/round · 550a00e8"
-contentUuid: "cbe7fb3b-6014-5a42-aba1-6c1b7f9fbd12"
-diamondUuid: "b2cf1403-5b1b-8607-a00f-e73f8f1ea4e3"
-uuid: "550a00e8-5ffd-8156-8463-559c9d47299c"
+coordinate: "vocabulary/clause · 5/round · 0e5d294c"
+contentUuid: "8787d074-b902-5d55-b199-ca25df3e5be6"
+diamondUuid: "c64d23d5-5ea7-8b77-9b45-9352ed690014"
+uuid: "0e5d294c-e731-84ea-a04e-4db46f2d737f"
 horo: 5
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "07ec957a-43d7-835a-9b45-0b3e579b3ddd"
+  computationUuid: "23931d2f-d5fc-8d0c-b662-d9724bf7b8d9"
   stages:
     - stage: path
       stageUuid: "9e181821-d90b-8788-81de-8f3ee2174d14"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a378489e-e4c1-88e0-8b70-05f6fe3d94d9"
     - stage: horo
-      stageUuid: "b9ae5a8b-07e4-8a00-919b-dd9942f8d935"
+      stageUuid: "bdeb93b5-5eff-8450-bc66-126d19852ba3"
     - stage: seal
       stageUuid: "c887f1d5-d051-8783-ac1c-c163afd8ad65"
     - stage: uuid
-      stageUuid: "c7acca3d-2a3e-829c-915e-73236f5c8306"
+      stageUuid: "35847be3-1b07-8c91-b3fc-38d7154028d5"
 version: 2
 ---
 # clause

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "trello",
-    "uuid": "41fe09c7-9ab1-81fb-a07b-9bc09298d462",
+    "uuid": "238ce996-a927-800e-9000-f96bc1f750a2",
     "words": [
       "trello"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when entangling an external REST system with erpax — the first worked proof that a third-party API becomes a one-word atom judged by the same constitution as everything else: a typed Trello client (key+token query auth, 300/10s per key and 100/10s per token as a continuous-refill token bucket that QUEUES a burst rather than dropping it), errors that propagate as TrelloError instead of being swallowed, and a Payload plugin whose record→card sync is idempotent on a stored card id.",
-    "uuid": "0aa3214f-e605-88d4-80b0-0dfe8cbf8e0a",
+    "uuid": "ec8265bc-66d2-849e-9dbe-b7136fe2aa27",
     "words": [
       "use",
       "when",

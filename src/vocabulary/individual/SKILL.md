@@ -2,11 +2,11 @@
 name: individual
 description: "Use when reasoning about individual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/individual"
-coordinate: "vocabulary/individual · 5/round · 24343eaa"
-contentUuid: "0110cf4e-b4ad-5760-8701-5fcb455ff16d"
-diamondUuid: "7f149f48-1f50-86c7-9d3a-6e37aa6105fe"
-uuid: "24343eaa-8cfb-8482-919d-4f5831bf22fb"
-horo: 5
+coordinate: "vocabulary/individual · 4/weave · 439a54b8"
+contentUuid: "0850e214-c104-5869-ab43-cdb98a87bfdc"
+diamondUuid: "b7b5ea35-6014-812a-8cd6-0dbd9804cf84"
+uuid: "439a54b8-f121-8f96-a670-9d1000574b13"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "023bb5e4-7ed6-8691-9ee3-0833eb0474b4"
+  computationUuid: "1ba6235e-18b2-8f72-b4dd-3d7f78d2ab28"
   stages:
     - stage: path
       stageUuid: "53bc2328-4640-8b06-b1a8-136e20796201"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "14ba9e40-0b1f-8983-8a80-4b11812c2fef"
     - stage: horo
-      stageUuid: "e4131ed6-0ffc-8b13-907f-cf423ed5da31"
+      stageUuid: "f80a8206-1df0-8153-9a40-28aaa9ec533b"
     - stage: seal
       stageUuid: "5ce693d0-18f4-83bf-8dbf-ff18c64b2775"
     - stage: uuid
-      stageUuid: "8848ce0a-dd93-843c-9053-995f94026e8a"
+      stageUuid: "d066ea1d-fb0d-81ce-b470-494742ef4054"
 version: 2
 ---
 # individual
