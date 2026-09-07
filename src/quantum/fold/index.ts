@@ -16,6 +16,7 @@ import { digitAddress } from '@/digit'
 import { wordTokenUuid } from '@/word'
 import { interact64, combineArchitectures, architectureMask } from '@/quantum/word'
 import { commentSites } from '@/syntax'
+import { memoByFingerprintOnDisk } from '@/cache/fingerprint'
 
 /**
  * CODE with comment ranges blanked — a doc comment that WRITES the ring literal
@@ -767,7 +768,13 @@ const sortEnt = (gaps: readonly LinearGap[]): LinearGap[] =>
     return a.atomPath.localeCompare(b.atomPath)
   })
 
+/** Memoised on the corpus fingerprint — five corpus walks per call, and its callers call it per
+ *  assertion ([[cache]]/fingerprint invalidates on any tree change, so it cannot serve stale). */
 export function linearGaps(cwd: string = process.cwd()): LinearGapScan {
+  return memoByFingerprintOnDisk('quantum-fold-linear-gaps', cwd, () => computeLinearGaps(cwd))
+}
+
+function computeLinearGaps(cwd: string): LinearGapScan {
   const gaps = sortEnt(
     dedupeGaps([
       ...harmonyJumpGaps(cwd),

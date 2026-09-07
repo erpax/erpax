@@ -129,12 +129,14 @@ export const x = measureOf(4)
   })
 })
 
+// `linearGaps` is five corpus walks; it is memoised, but the COLD call is ~20s and vitest's 30s
+// default leaves nothing for the assertion on a loaded runner. Timed out in CI at 30000ms.
 describe('quantum/fold — a React atom spells its barrel with an x', () => {
   // It read `index.ts` literally, so it charged a JSX atom for a name a JSX barrel cannot have,
   // and the walk stopped dead at a `.tsx` barrel so those subtrees were never judged at all. The
   // false negative is the worse half: a folder outside the law is not a folder passing it.
   // Live count moved 38 → 23 when both spellings were read.
-  it('reports no trinity gap against an atom whose barrel and proof are BOTH .tsx', () => {
+  it('reports no trinity gap against an atom whose barrel and proof are BOTH .tsx', { timeout: 120_000 }, () => {
     const gaps = linearGaps(process.cwd()).gaps.filter((g) => g.kind === 'trinity-incomplete')
     for (const g of gaps) {
       const dir = join(process.cwd(), 'src', g.atomPath)
@@ -144,7 +146,7 @@ describe('quantum/fold — a React atom spells its barrel with an x', () => {
     }
   })
 
-  it('admin/bar is complete in the .tsx spelling, and is not charged', () => {
+  it('admin/bar is complete in the .tsx spelling, and is not charged', { timeout: 120_000 }, () => {
     const dir = join(process.cwd(), 'src', 'admin', 'bar')
     expect(trinityPresent(dir, 'index.ts')).toBe(true)
     expect(existsSync(join(dir, 'index.ts'))).toBe(false)
