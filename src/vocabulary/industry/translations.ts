@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "industry",
-    "uuid": "6f885682-38f1-821c-82a4-d9a851dd6a86",
+    "uuid": "7ac159d9-cfa0-80ac-a63e-f3cc125ebfaf",
     "words": [
       "industry"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about industry — The industry associated with the job position.",
-    "uuid": "ed1491a6-9614-83d2-b06e-da6d0b421621",
+    "uuid": "e031e40f-da76-8d21-9321-f94de273dd07",
     "words": [
       "use",
       "when",

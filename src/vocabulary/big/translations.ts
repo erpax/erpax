@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "big",
-    "uuid": "ce5c430c-88c8-8aa0-aa6d-5af25d5fd229",
+    "uuid": "aa2f8c95-f889-842d-aa9b-ad96687b3a90",
     "words": [
       "big"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about big as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "6e261db6-fe9c-8440-8b44-ba8b9213ddb3",
+    "uuid": "5297011b-57d2-837e-8e55-d6e54b688f0d",
     "words": [
       "use",
       "when",

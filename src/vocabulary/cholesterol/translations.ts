@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cholesterol",
-    "uuid": "49b413e4-0ba2-8631-a0ee-bad6c15658e5",
+    "uuid": "eeef0edc-8db0-8b5d-89b8-1d03abed6982",
     "words": [
       "cholesterol"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about cholesterol as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "9127dddc-8ba4-879f-bab0-2229bed18958",
+    "uuid": "01793531-68e3-8ab8-832b-e53799a4ad74",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "accounts",
-    "uuid": "2a951760-3da0-8dbe-9517-0640da932e47",
+    "uuid": "6c03f107-f915-8d81-ad74-6ea93fdcb29f",
     "words": [
       "accounts"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recognising IFRS 14 regulatory-deferral balances — under-recovery assets or over-recovery liabilities — for utilities or telcos under price-cap regimes on first-time IFRS adoption (§16 continuation of previous GAAP), tracking recovery period and period movements. The IFRS 14 regulatory-deferral register.",
-    "uuid": "2b61a4a3-65c9-8701-ad50-9e19e1961142",
+    "uuid": "adb82d72-16d4-8219-b128-1128841d148e",
     "words": [
       "use",
       "when",

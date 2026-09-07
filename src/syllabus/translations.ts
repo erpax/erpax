@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "syllabus",
-    "uuid": "c48c600f-f657-83d5-b05f-b8719db7473e",
+    "uuid": "72bdd765-2bfd-898d-80a3-44ea28769074",
     "words": [
       "syllabus"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about syllabus — A syllabus that describes the material covered in a course, often with several such sections per Course so that a distinct timeRequired can be provided for that section of the Cour",
-    "uuid": "84e55270-7470-8b5c-9dd9-f7b94507d2f8",
+    "uuid": "fba89b19-d80d-84ec-a256-5e902e86fa71",
     "words": [
       "use",
       "when",

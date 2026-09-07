@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hooks",
-    "uuid": "2fa490e7-162a-871c-a311-87563757b9e1",
+    "uuid": "4f8bb562-db93-8c57-9e66-50983847df90",
     "words": [
       "hooks"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hooks — fires when a statement lands, which is the event reconciliation waits on. Polling for new statements instead would make the delay a property of the poll interval rather than of…",
-    "uuid": "4bfb6798-1a84-81e5-b309-9e50de0e475f",
+    "uuid": "cb258b25-5ce9-88eb-8100-9375f33286f1",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "christianity",
-    "uuid": "1c9b9862-8a30-89ae-a814-537c3875600c",
+    "uuid": "c799e37c-9c54-8203-b8f1-c7d8d0bd9cbf",
     "words": [
       "christianity"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading Christianity as a diamond of invariant atoms — the debt borne at the cross, mercy made flesh, the new covenant of grace through faith, sin turned around by metanoia, the Word and the Spirit. Strip the Greek prefix and agape, pistis, logos, pneuma, metanoia collapse to love, faith, word, breath, return — one content-uuid each.",
-    "uuid": "3d200183-31ff-840f-9aae-50c8d8dfb00b",
+    "uuid": "3888f432-41bf-8d20-9f52-b78461b54f5c",
     "words": [
       "use",
       "when",

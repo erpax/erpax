@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "landmark",
-    "uuid": "4e376475-49d6-8f22-a76f-5fd357558add",
+    "uuid": "d3cea64b-61da-8116-a178-50af45ed2954",
     "words": [
       "landmark"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one landmark — the singular model of the landmarks collection (the plural store); a notable place used as a point of reference.",
-    "uuid": "28e4f744-cb34-8ac3-a4b7-c514779dc5aa",
+    "uuid": "0a6cd5c6-ca5f-8695-ab9a-8f749eed0f47",
     "words": [
       "use",
       "when",

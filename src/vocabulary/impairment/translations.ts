@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "impairment",
-    "uuid": "241f30fc-678f-8188-a3b9-3156df4df519",
+    "uuid": "38e4618f-0e32-8f25-9e8e-cf5dc48b8328",
     "words": [
       "impairment"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an asset's fair value or recoverable amount falls permanently below book value, triggering writedown testing and loss recognition — mandatory under IAS-36 for all assets",
-    "uuid": "4f4c35d6-5577-8e4f-8d56-711d6d0cbc89",
+    "uuid": "c3f14c45-68db-85f3-b8f6-11d52e6de5ea",
     "words": [
       "use",
       "when",

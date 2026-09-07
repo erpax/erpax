@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "eu",
-    "uuid": "40da5293-140a-88ce-a096-07bd61738c64",
+    "uuid": "23711483-a429-8e37-9c94-def69da30e82",
     "words": [
       "eu"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking whether the pan-EU authorities erpax depends on have moved — VIES (the VAT-validation contract), the ECB currency set, the Peppol directory envelope, and the EU sanctions schema. Each probe asks a STABLE question so a moved address is real news, never the daily churn. CLI lane: erpax outward eu [--write].",
-    "uuid": "818e32b0-2a99-82d9-abda-761237c42ba6",
+    "uuid": "3b6316b4-711c-806b-aa97-8288e64d4b9e",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "landlord",
-    "uuid": "83a09ffc-7a48-8ae8-95d9-0e73762d2b79",
+    "uuid": "ee5f8af9-9a39-87af-9279-1afed7b33122",
     "words": [
       "landlord"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about landlord — A sub property of participant. The owner of the real estate property.",
-    "uuid": "81c23035-6a0f-89c4-ba17-5fe42f51586a",
+    "uuid": "9d3b7cce-d910-8a24-bb96-8b074ebca948",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "role",
-    "uuid": "e105cd1c-d4bf-8271-a142-1c1b1a481bbb",
+    "uuid": "c7e38ae0-abec-84cc-8d27-53aa5fe28832",
     "words": [
       "role"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about role — Importing this barrel pulls in the four reference tenant profiles — business, payment provider, bank, government — so any code holding the registry sees them without naming each.",
-    "uuid": "25277e4c-f5e5-8509-ba4e-f9c19bb10593",
+    "uuid": "6899d0db-02ef-8a89-93ec-63f8632cd657",
     "words": [
       "use",
       "when",

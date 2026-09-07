@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hermeticism",
-    "uuid": "d1bc5d6d-9366-8554-9d51-3bca74dddd7e",
+    "uuid": "327b7578-66de-8cce-8627-b552834a6ac2",
     "words": [
       "hermeticism"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading Hermeticism as a diamond of invariant atoms — as above, so below: the part mirrors the whole at every scale, the All is One, know thyself and know the source. This is literally erpax's fractal/holographic law and the identity of part and whole. Strip the prefix and the correspondence collapses to fractal, the mirror to holographic, the All to one.",
-    "uuid": "f53fbc68-09ca-850d-a529-4974129d0a9b",
+    "uuid": "b934a46c-42c2-8dc7-bc7f-29dc179bce75",
     "words": [
       "use",
       "when",

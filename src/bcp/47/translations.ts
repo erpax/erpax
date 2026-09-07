@@ -16,7 +16,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing BCP 47 — Language tags.",
-    "uuid": "7997e0ad-c136-85c6-af19-2afb856bb90f",
+    "uuid": "a51092c7-5e95-804a-bf60-eea73b8a4e24",
     "words": [
       "use",
       "when",

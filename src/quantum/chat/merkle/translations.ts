@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "merkle",
-    "uuid": "1243206f-2dbc-84b7-9263-bbaac402405d",
+    "uuid": "b16c3a0c-7f53-888b-83d2-21e5ecf8205a",
     "words": [
       "merkle"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about merkle — Merkle chain operations — fold message-uuids into tamper-evident thread-uuids",
-    "uuid": "394beb0d-a434-8289-b667-039b3b6bd3ab",
+    "uuid": "2a375e66-06c9-8b11-adaa-1578c1b66989",
     "words": [
       "use",
       "when",

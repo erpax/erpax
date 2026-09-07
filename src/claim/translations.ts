@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "claim",
-    "uuid": "5de01c30-63c7-8f90-9168-d5d35017784a",
+    "uuid": "764dbce9-686f-8ed5-a677-b254697a122e",
     "words": [
       "claim"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when staking and settling claims — the claiming toolbox. Challenge all in src: every @invariant/Law is a claim, anyone may prove or refute it, and the FASTEST CORRECT challenge wins the collective-mind prize — but only when ≥3 verifiers form a higher mind confirming it. A fast wrong challenge never places; correctness is absolute and first, speed only the tiebreaker among the correct, the award a quorum's not a single voter's.",
-    "uuid": "7089f707-a100-83f2-bfc5-43f73579ff8c",
+    "uuid": "5251b93a-9fc8-8eb2-a2ef-2029734b375c",
     "words": [
       "use",
       "when",

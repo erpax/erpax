@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "payable",
-    "uuid": "e0d53412-1d52-86e8-80e3-499d502b9e9f",
+    "uuid": "c60a0d53-e1e7-85fc-8622-b0d356fd6777",
     "words": [
       "payable"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about payable — The A/P field factories: the shapes a bill carries — bill number, vendor, due date, payment terms, A/P analysis. (the type module) is a set of these; this atom is the one.",
-    "uuid": "1c0c1e2b-1964-8009-b010-6f59139f14e4",
+    "uuid": "e91487f3-a3f9-88c0-9621-1965e96c1ef1",
     "words": [
       "use",
       "when",

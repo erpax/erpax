@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "vein",
-    "uuid": "0d7807b3-3b46-8dcd-a1c8-2aaee3eb6a0b",
+    "uuid": "7087b90d-79a2-82db-818d-384177e37bb8",
     "words": [
       "vein"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the vein as an organ of body — pivot to canonical @/vein; zero duplication.",
-    "uuid": "c305ec48-8bc7-87c0-abd4-4a9ddd6643c9",
+    "uuid": "318f888f-737f-83d5-86c6-5059ddc837be",
     "words": [
       "use",
       "when",

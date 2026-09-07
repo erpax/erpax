@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "threshold",
-    "uuid": "499f848a-4002-8f7d-858b-a3f49187a13e",
+    "uuid": "1da56206-bc78-8541-afa4-325faa7e43b7",
     "words": [
       "threshold"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when composing multiple keys — n keys are strong only when they are n independent draws. n keys from one seed carry ONE seed's entropy; breaking it breaks all n. assertIndependentSources rejects any two shares sharing an admitted source address, which is what converts n masks on one seed into n independent secrets. Folding and entanglement diffuse admitted entropy and raise forge-cost but add ZERO, and a claim otherwise is refused as an over-claim. m-of-n reconstruction is a compass, not shipped.",
-    "uuid": "51daa302-5069-87a1-9d4a-833f6f5fd3cb",
+    "uuid": "c34c63bb-3811-80b0-9549-a044a85ae2f1",
     "words": [
       "use",
       "when",

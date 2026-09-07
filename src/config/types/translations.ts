@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "types",
-    "uuid": "ce802f8d-4d06-8d30-a23d-8fbb9f6cd983",
+    "uuid": "05efac84-2acc-8d8a-9c7a-0ea80f4d1e71",
     "words": [
       "types"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when typing a tenant's agnostic seed configuration — the `TenantConfig` shape (branding, businessModel, subscriptionPlans with feature limits, marketing content, feature flags, localization, stripe) plus the `TranslatedField` / `FeatureLimit` helpers.",
-    "uuid": "0b5459be-ebf2-873e-b0c9-a2c96cb24eb0",
+    "uuid": "a253ac6b-01bd-8879-a90b-550af57360b9",
     "words": [
       "use",
       "when",

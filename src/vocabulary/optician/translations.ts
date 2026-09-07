@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "optician",
-    "uuid": "eba1a3b7-9489-863f-9ac4-0ab6ac1e9fef",
+    "uuid": "6adc16a3-b707-8778-85fe-d050f1721b94",
     "words": [
       "optician"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about optician — A store that sells reading glasses and similar devices for improving vision.",
-    "uuid": "6bee6221-e513-8a37-80fd-9e5b6d998c9e",
+    "uuid": "70b31665-1aec-83cf-b2ec-85c93d0a0c32",
     "words": [
       "use",
       "when",

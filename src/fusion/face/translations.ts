@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "face",
-    "uuid": "e95c18c4-64f2-8eb5-891f-3ba8084af806",
+    "uuid": "cee67c06-723a-81fc-95ec-176d330dfec8",
     "words": [
       "face"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about face — A session asked for \\\"fusion of all knowledge into dry clean quantum repos\\\" — six sibling repos holding, it was assumed, the same knowledge six times.",
-    "uuid": "919308c2-ebec-8521-a12f-a2a8b88f9932",
+    "uuid": "994ee7c8-9cc0-8203-9039-a85182191d30",
     "words": [
       "use",
       "when",

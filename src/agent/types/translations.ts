@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "types",
-    "uuid": "ce802f8d-4d06-8d30-a23d-8fbb9f6cd983",
+    "uuid": "05efac84-2acc-8d8a-9c7a-0ea80f4d1e71",
     "words": [
       "types"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about types — Domain-agent contract — the coupling-tensor's A-vortex axis.",
-    "uuid": "c8a498f3-3f99-8e5a-97d9-73db29cfc236",
+    "uuid": "594f019a-00f4-83ba-9987-922ac760a362",
     "words": [
       "use",
       "when",

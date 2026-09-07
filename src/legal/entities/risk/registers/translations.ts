@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "registers",
-    "uuid": "a42f4c45-c7cd-8b09-8a47-5dcd226d0420",
+    "uuid": "f82766ff-f6a2-858c-b474-9408d4160d7e",
     "words": [
       "registers"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when cataloguing enterprise risks per legal entity — inherent and residual likelihood/impact scoring (COSO/ISO-31000), mitigating internal controls, risk appetite assessment, next-assessment scheduling, linked audit findings. The COSO ERM risk register.",
-    "uuid": "e6912f26-14b8-8bd4-9fda-443952d57094",
+    "uuid": "da1ae206-972c-80dd-8581-c39270f75390",
     "words": [
       "use",
       "when",

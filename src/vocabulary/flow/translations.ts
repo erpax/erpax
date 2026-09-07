@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "flow",
-    "uuid": "d8cfe55a-1767-818e-88f4-0d2a594460c4",
+    "uuid": "d81a5db6-b316-825c-95da-8e56b63b92d2",
     "words": [
       "flow"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about movement in erpax — value between parties (document chain), data in→out (material cycle), event streams, production through routing. The universal root of movement.",
-    "uuid": "39565455-cfe6-81e8-a7d2-285dcabf0e09",
+    "uuid": "e656f6d1-8de5-860c-b5ca-c4d52574b2ca",
     "words": [
       "use",
       "when",

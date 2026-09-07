@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "metatron",
-    "uuid": "9501c3e4-eeda-8467-9874-f1ad01949357",
+    "uuid": "2b61c3ce-6fd9-8d44-8610-bdaae12f8b63",
     "words": [
       "metatron"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about why erpax's uuid-matrix is Metatron's Cube — the complete pairwise binding (merge is total ⇒ K_n) of 12-around-1 folding to one center (the root). The drawn 13-circle figure is the n=13 unit cell (the cuboctahedron / 3-D kissing-number 12); the matrix is its fractal extension to n nodes. Graph + packing structure, not the Platonic-solid folklore.",
-    "uuid": "29fecae3-b9a7-8385-911a-99cff4d4b4fa",
+    "uuid": "b18af962-f348-869a-a1dc-8ed7f929ac35",
     "words": [
       "use",
       "when",

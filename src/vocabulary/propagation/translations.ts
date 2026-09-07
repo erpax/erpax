@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "propagation",
-    "uuid": "ebcf055c-a520-874a-99bc-09cdea6ab836",
+    "uuid": "8a5f613e-332a-836c-a430-b5052ae68d98",
     "words": [
       "propagation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when raising transplants before the field — the greenhouse/nursery schedule of sowing into trays of cells (plugs) sized to deliver seedlings on their field date, plus hardening-off before transplant. The controlled-start stage upstream of transplanting; flats/cells/plugs are its containers, sized back from the transplant date.",
-    "uuid": "25187fab-a3ff-8cd5-b8ab-94850c2c22aa",
+    "uuid": "0c272e42-bddb-86e9-b6d5-d0f3e6d68e1c",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bitrate",
-    "uuid": "a1ac31f3-3bbd-8145-91d1-6a4d03267948",
+    "uuid": "61bd4259-7fc3-8289-a88a-0e2772f6f337",
     "words": [
       "bitrate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about bitrate — The bitrate of the media object.",
-    "uuid": "55ad77d8-0512-81d6-a05a-953d26952563",
+    "uuid": "a688fb18-3d3d-85b8-a78a-a752ce241422",
     "words": [
       "use",
       "when",

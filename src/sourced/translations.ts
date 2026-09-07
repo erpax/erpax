@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sourced",
-    "uuid": "e12f0a10-fd6f-8a83-b7b0-1c4ed82ee4bf",
+    "uuid": "ed3223d2-6261-8df4-847c-4822188b49af",
     "words": [
       "sourced"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about sourced — The neurological pathway that originates the neurons.",
-    "uuid": "f468a1b9-fee2-8abd-abef-8202fb11b8fd",
+    "uuid": "4bfe2944-8845-8068-bc8d-63791a494a48",
     "words": [
       "use",
       "when",

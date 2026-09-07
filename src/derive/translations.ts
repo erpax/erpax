@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "derive",
-    "uuid": "03a3347b-3e87-83a4-baad-2385b1a419aa",
+    "uuid": "46a52d62-30d9-87e0-aa7c-bd82774fc344",
     "words": [
       "derive"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when skills come from USER CONTENT — an HR job description names the competencies a role requires, and each named skill is content-addressed to a corpus route (same name ⇒ same route ⇒ merge). A route not yet in the corpus is a NEW skill the user content adds — the corpus GROWS from what users write. The dual of generate (which mints from aura gaps): derive mints from user content; both feed one content-addressed corpus.",
-    "uuid": "9ba3c955-7bf5-804b-9809-1bc2b1016836",
+    "uuid": "d41ed0d6-a1d5-8e0d-b754-ef1f33e8667e",
     "words": [
       "use",
       "when",

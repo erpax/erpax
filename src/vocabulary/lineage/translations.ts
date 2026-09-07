@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lineage",
-    "uuid": "4d0cef42-f6fb-8ec4-9c5d-3c361cb648ec",
+    "uuid": "45d66865-3739-8218-874f-1f3332c2888a",
     "words": [
       "lineage"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tracking data origin and transformation — source-to-target lineage, transformation tracking, column-level lineage, lineage visualization, provenance chain, audit trail of data movement.",
-    "uuid": "27c5be1e-e8ec-84d0-b70c-326a745f0bc4",
+    "uuid": "596185b3-8a48-8bc9-b577-86b7b2b93b83",
     "words": [
       "use",
       "when",

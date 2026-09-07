@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fdacategory",
-    "uuid": "a95ffc53-96e3-8078-b8c0-48c79010d5e4",
+    "uuid": "73f99e04-5621-8ce0-a9e0-b138d5469e3a",
     "words": [
       "fdacategory"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about fdacategory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "d02abc92-1c93-8531-802e-033d1d37aaac",
+    "uuid": "f692307d-69da-882a-856a-486621be1990",
     "words": [
       "use",
       "when",

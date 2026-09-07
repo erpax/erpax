@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "timezone",
-    "uuid": "cb41f6da-4684-829d-b22b-a9f9b3d9f640",
+    "uuid": "2a9bf5f8-f9d6-8d90-b603-bffc4790cc33",
     "words": [
       "timezone"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about timezone as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "040e1e48-70c5-8578-ac30-6b9d81510274",
+    "uuid": "0841edb3-c159-89dd-9ce7-8e0eda8f58c4",
     "words": [
       "use",
       "when",

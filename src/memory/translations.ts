@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "memory",
-    "uuid": "144a6818-6d13-865e-9cbc-c0abbcf523cf",
+    "uuid": "fbd7f8ff-5dc0-82ea-b607-94d7c485fc5b",
     "words": [
       "memory"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about memory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "af900af1-1844-880d-9f45-0f1cccf194fe",
+    "uuid": "7d2faddc-5f52-80f2-a725-ed45e792e200",
     "words": [
       "use",
       "when",

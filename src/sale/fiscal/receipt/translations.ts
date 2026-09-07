@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "receipt",
-    "uuid": "9e341e42-7188-8f4c-bf3f-2ab9c38627a3",
+    "uuid": "0e2e8286-74b3-8302-a72d-9340f6b99d87",
     "words": [
       "receipt"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when issuing the fiscal receipt for a sale — the document Наредба Н-18 requires, carrying the УНП, the device number and the amounts a НАП inspector reads.",
-    "uuid": "d95c7de9-79af-8757-b5a0-6d5a6df24bb8",
+    "uuid": "5812ca84-90bf-81c2-b66e-afcdbf1377b5",
     "words": [
       "use",
       "when",

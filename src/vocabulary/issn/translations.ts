@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "issn",
-    "uuid": "717b4a93-e4fb-84eb-aa39-db548fe45da4",
+    "uuid": "5723f48b-c665-80e4-9d2f-b1980ec0aecc",
     "words": [
       "issn"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about issn — The International Standard Serial Number (ISSN) that identifies this serial publication. You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L)",
-    "uuid": "3446118a-caee-8719-bf52-4ead7b4ee996",
+    "uuid": "211af469-3692-89a6-934a-96af253911f9",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "repetition",
-    "uuid": "4313550c-f939-81b5-88b8-888efeac0a99",
+    "uuid": "6d858fda-c933-837c-bd34-05356d5d0ca1",
     "words": [
       "repetition"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one repetition — the singular model of the repetitions collection (the plural store); one repeated occurrence within a counted set.",
-    "uuid": "0c7f2922-eaac-8889-952d-f9a0e230214a",
+    "uuid": "27f1c51a-1a6c-8a91-9b89-0e4739a2c829",
     "words": [
       "use",
       "when",

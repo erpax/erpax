@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dead",
-    "uuid": "46a78b45-ee3a-81ad-b5f7-ee2cd7870e73",
+    "uuid": "57966cae-f786-8006-baea-52b52a378d6b",
     "words": [
       "dead"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking the corpus for dead weight without re-deriving it by hand — deadScripts lists non-TS scripts (.mjs/.js) that nothing references (invokers live in package.json, hooks, imports). A file is live iff something names it; else it is entropy. The partner skill: the reference graph is a fact src already holds, handed back as one call, so keeping healthy is a READ not a grep-assembled pass.",
-    "uuid": "fa591e57-2eb8-85a6-bd4b-f35e05249c02",
+    "uuid": "93b0b6d9-d1fa-8d50-b01a-ecf5d7dcaad5",
     "words": [
       "use",
       "when",

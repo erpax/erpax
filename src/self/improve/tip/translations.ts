@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tip",
-    "uuid": "e07cc739-7c20-8e55-a93e-6dcf3540497e",
+    "uuid": "b93fa5b3-a02a-8dbc-995f-278f2295dbbc",
     "words": [
       "tip"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the loop must say what to do next — the feed scanner that finds real gaps, scores them unblock / (cost × risk), and emits ONE executable trinity tip or refuses as vague.",
-    "uuid": "bab39ec9-403f-8977-affd-37e5adcdc352",
+    "uuid": "4d13290e-bd28-887b-8f50-5929fb7f893c",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mandate",
-    "uuid": "30545529-35d5-8fcf-892c-ef6888540754",
+    "uuid": "ee44b790-3dec-8533-97df-94b7716e7867",
     "words": [
       "mandate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about mandate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "ecc176fd-7869-883a-85c6-2c5ec56801ee",
+    "uuid": "073bf0d6-8aef-8dda-bf5b-570f615c4e07",
     "words": [
       "use",
       "when",

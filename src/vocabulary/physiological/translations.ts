@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "physiological",
-    "uuid": "1dac257e-3b82-80e3-abe3-b51299370da8",
+    "uuid": "aa40abd8-0ff4-8a77-8339-b3ba6ba616c5",
     "words": [
       "physiological"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about physiological as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "44003457-33f7-815b-9fe2-9c1444b074af",
+    "uuid": "8b0dc444-a5db-8456-84e3-c77e160a22a9",
     "words": [
       "use",
       "when",

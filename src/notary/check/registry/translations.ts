@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "registry",
-    "uuid": "5dfd166e-4726-87f2-b66f-72a72e0e163f",
+    "uuid": "224a0c98-2595-8cdb-a23f-5055a12c524e",
     "words": [
       "registry"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a notary check must confirm a company exists and resolve its registered name/address — the REAL wired provider for registryAgency (Агенция по вписванията). Validates an EIK/ЕИК as a BG VAT number against the EU VIES service, which answers over the national Commercial Register in real time; no credential. Honest boundary — VIES gives existence + name + address; representatives/capital and the Property Register (title/encumbrance) need credentialed RegiX / data-sharing access, refused honestly.",
-    "uuid": "fa9d87c4-db28-8243-9542-a2f2f088b97a",
+    "uuid": "a06290f0-e9b0-89b5-9047-ee75ad7491a6",
     "words": [
       "use",
       "when",

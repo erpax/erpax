@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pqc",
-    "uuid": "dde20ec0-d3b7-83e2-9967-fe8ac48c027a",
+    "uuid": "32774abe-e4cd-83a7-96cc-bc71ac76def0",
     "words": [
       "pqc"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about pqc — NIST post-quantum cryptography (Kyber-768 + SPHINCS+)",
-    "uuid": "e72693b4-f01b-8004-b852-5dd2fc027802",
+    "uuid": "4b0b98c9-ef39-801a-b65e-625ed51390b2",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "contracts",
-    "uuid": "daf0dab7-6fd8-8a2f-9093-c7b7ea312774",
+    "uuid": "1e6939c2-463c-8ebe-aee0-0f2e378faa24",
     "words": [
       "contracts"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recognising or measuring insurance contract groups under IFRS 17 — GMM (building blocks — future cash flows, risk adjustment, CSM), PAA (short coverage), or VFA (direct participation); annual cohort grouping, profitability tiers, reinsurance link, loss-component, and disclosure (§93). The insurance-contracts IFRS 17 register.",
-    "uuid": "3af3c964-64fa-8214-8c3f-66bec47f735f",
+    "uuid": "cc15f7a0-54af-846d-90fc-e24669f58c11",
     "words": [
       "use",
       "when",

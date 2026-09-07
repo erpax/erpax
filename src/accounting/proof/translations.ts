@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "proof",
-    "uuid": "48954309-aa9b-8d12-9f8b-d4bc24997f15",
+    "uuid": "3990823f-3f8f-88e2-95ef-5997195cde59",
     "words": [
       "proof"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about proof — Use to see the corpus accounting itself in realtime — every claim (@invariant · @standard · @compliance · @audit) is a DEBIT, every proof (a test beside it) the CREDIT, and the ledger balances iff all is proven. The residual is the unproven surface, computed at read. Run: tsx src/accounting/proof/index.ts",
-    "uuid": "e9157a4c-41d4-86f8-bbd0-16456e9d67da",
+    "uuid": "0c7eeec2-aac5-860f-b7a1-8882965b08c4",
     "words": [
       "use",
       "when",

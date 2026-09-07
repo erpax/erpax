@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "minimum",
-    "uuid": "99ec1261-24f4-8d46-95b2-ab840494d706",
+    "uuid": "2e755bed-7c7a-8a03-a6e8-7884a7571977",
     "words": [
       "minimum"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about minimum as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "24d24858-ca71-8dfc-8aed-972123464aac",
+    "uuid": "2779f99f-bd11-8771-a692-f71d358105c4",
     "words": [
       "use",
       "when",

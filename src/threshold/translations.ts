@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "threshold",
-    "uuid": "499f848a-4002-8f7d-858b-a3f49187a13e",
+    "uuid": "1da56206-bc78-8541-afa4-325faa7e43b7",
     "words": [
       "threshold"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about threshold as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "8a2ebf5b-91a6-82e5-b704-ac42ede0c639",
+    "uuid": "797007bf-2432-8583-9162-839b6128b6bd",
     "words": [
       "use",
       "when",

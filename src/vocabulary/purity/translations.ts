@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "purity",
-    "uuid": "522b9a66-4092-8a6f-862f-09aa970ba739",
+    "uuid": "4b7180fe-cd5c-831a-985b-3165852ac4ba",
     "words": [
       "purity"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about purity as the fully-sealed / zero-impurity state that maximises tamper-cost in EVERY dimension — purity = zero entropy = every gate green = no escape. A single impurity (an unsealed cross, an off-ring state, a dangling link, a hallucination) is a 0-bit weakest-link path that collapses the cost; purity removes every weakest link, so the floor is maximal along all paths and all dimensions. The conjugate of hallucination; the generalisation of import-purity, file-purity, and md-purity into one law.",
-    "uuid": "9423222d-5aa9-8d19-800e-3329bf5e0a5a",
+    "uuid": "60cc804d-11a9-81d2-9c65-c81f8acb8c4a",
     "words": [
       "use",
       "when",

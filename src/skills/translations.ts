@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "skills",
-    "uuid": "e51ec273-0f08-8374-9f7b-ff4278bf60e7",
+    "uuid": "2688ed09-f359-8206-b45b-91faa62cfd70",
     "words": [
       "skills"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when orienting to erpax as a whole — the root an agent reads first. erpax is a fractal, content-addressed skill corpus where every folder under src/ is a one-word atom told three ways (form · code · schema), ordered by the sequence, wired through one content-uuid so the whole carries zero entropy and infinite tamper-cost. Read to learn what erpax IS, how the atoms compose, the one law, the math, the society, and how to navigate and grow the library.",
-    "uuid": "e1ecdbef-aa04-81c6-9f0c-2b2ac2e8b336",
+    "uuid": "8a0206c6-2419-84c5-95a3-a46917d97bfc",
     "words": [
       "use",
       "when",

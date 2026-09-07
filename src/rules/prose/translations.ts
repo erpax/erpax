@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "prose",
-    "uuid": "d88953ab-20e8-8882-8187-ef90e691e6eb",
+    "uuid": "b6151469-06ac-8e39-8eee-316221fbd500",
     "words": [
       "prose"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking that technical prose cites real code — a SKILL naming a function nothing defines is a citation leading nowhere, and it is worse than a dead path because it reads as true. Wired into confirm, it refuses the claim at the write, so an agent must edit CODE rather than write a sentence about code it has not written. Only SKILLs beside an index.ts are judged; a lexicon atom is prose by design. Run: tsx src/rules/prose/index.ts",
-    "uuid": "8c660593-9070-8147-9fc3-3f9bd02b4f16",
+    "uuid": "4057dab3-b027-871f-9937-d6c7ea3ed98a",
     "words": [
       "use",
       "when",

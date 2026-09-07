@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "activities",
-    "uuid": "3fbb3cb2-71af-8b2d-aac1-392f34ebdb48",
+    "uuid": "9a4e3651-8046-8045-999c-a815eb10019f",
     "words": [
       "activities"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when logging or analysing CRM touch-points — calls, emails, meetings, demos, tasks, social touches, document/quote sends, site visits — against a lead, opportunity, customer, vendor or project; relationship history, last-touch date, direction (inbound/outbound), rep activity volume, next-step planning. The CRM activity-log collection.",
-    "uuid": "d1efb2da-8610-845e-a35f-197a1c898c0e",
+    "uuid": "d517ab32-32f4-82d4-bd24-a23e990f41e2",
     "words": [
       "use",
       "when",

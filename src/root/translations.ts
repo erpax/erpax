@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "root",
-    "uuid": "29f606b2-88b0-8a31-8167-fe4160450c88",
+    "uuid": "254d1bbf-5d5d-85ab-9957-9c03ebdac076",
     "words": [
       "root"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the root center — the 1st chakra (Muladhara), index 0 of the seven (root→crown), a standalone projection of the chakra atom whose uuid is computed from the position math and whose colour is rendered from that uuid (not the traditional rainbow red).",
-    "uuid": "371c1359-cf4a-80cf-ba4a-90d2dc37abfb",
+    "uuid": "5926f4cf-5edd-800f-abf2-460a26d7b1cc",
     "words": [
       "use",
       "when",

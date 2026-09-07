@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "word",
-    "uuid": "eafc2f4a-176b-8e14-8ddf-70915c9b5503",
+    "uuid": "ed55a0f0-6d5d-88d8-b6a9-949673685f54",
     "words": [
       "word"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when addressing a lexical prose token — one vocabulary diamond content-addressed as uuid(jcs({ kind:'word', value })); saved in the text token index, not as a per-word src/ folder.",
-    "uuid": "d5d04418-bff8-87a8-bbe6-c11cc5b4d8c7",
+    "uuid": "870331b4-0279-8a11-96dd-e0f203453c51",
     "words": [
       "use",
       "when",

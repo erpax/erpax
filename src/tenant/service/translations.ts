@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "service",
-    "uuid": "3b653d5c-0ad7-8361-831d-0997c7e7b29d",
+    "uuid": "42626e1b-0f90-8edd-9cc6-349b7173f498",
     "words": [
       "service"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about service — is the client for tenant administration — create, update, batch actions — and is the instance callers use.",
-    "uuid": "8eda823d-3164-826b-bad6-db67d170188e",
+    "uuid": "70ade23f-e842-8c0f-b19b-c3b0814d583f",
     "words": [
       "use",
       "when",

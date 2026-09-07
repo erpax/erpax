@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "surface",
-    "uuid": "711bf95a-2c1a-84f9-bb86-32bd7ca169e0",
+    "uuid": "0e680a94-e7c3-85cb-8a79-b5fcb727badd",
     "words": [
       "surface"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking that wrangler.jsonc and the code agree about bindings — a name read from env that no binding declares is undefined at runtime, and every reader guards with an early return, so the function silently does nothing in production. Enforces READ ⇒ DECLARED, which is decidable; deliberately does NOT enforce DECLARED ⇒ READ, because OpenNext, the Payload adapter and plugins legitimately read bindings this scan does not cover. Comments are stripped before the scan: a binding named in prose is not a use.",
-    "uuid": "de17fe8b-c4dc-8c6b-bd52-330f7b884493",
+    "uuid": "da7ae417-81d9-8127-8ae8-bba1b28e551b",
     "words": [
       "use",
       "when",

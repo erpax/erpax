@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "practice",
-    "uuid": "35b4d85e-360c-8ae6-a73f-ad8b6960b6a7",
+    "uuid": "92780407-cfb7-851d-85bc-9e034384799f",
     "words": [
       "practice"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one practice — the singular model of the practices collection (the plural store); an established way of doing something within a domain.",
-    "uuid": "ce739f4e-797b-803e-b37f-41e80faa4d2d",
+    "uuid": "ea39fdb7-c7ae-849e-a85d-85bbbc76670e",
     "words": [
       "use",
       "when",

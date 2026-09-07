@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "seller",
-    "uuid": "424e2eaa-2529-84b3-8345-b302584603fc",
+    "uuid": "11add530-945b-81d8-b477-f28575f3771d",
     "words": [
       "seller"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about seller — An entity which offers (sells / leases / lends / loans) the services / goods. A seller may also be a provider.",
-    "uuid": "f8410da8-4cdc-8994-b0d5-12d234bc28a1",
+    "uuid": "e7ff5f5b-dd67-8a4e-bbfe-1a70007f47a9",
     "words": [
       "use",
       "when",

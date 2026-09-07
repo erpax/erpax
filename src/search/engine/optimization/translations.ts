@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "optimization",
-    "uuid": "9d4c96b5-c0cf-8da2-9348-6bc34461eba1",
+    "uuid": "7641eb8d-7d58-85f8-91e4-d6ccfb219750",
     "words": [
       "optimization"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when making erpax discoverable — search engine optimization (SEO); the canonical keyword and GitHub-topic strategy plus an on-page relevance scorer that the README and npm package draw from.",
-    "uuid": "89c0c95d-0a8c-8a05-a51f-35f380dac0dc",
+    "uuid": "4be23c4e-24d6-898f-9c91-f106d29b9132",
     "words": [
       "use",
       "when",

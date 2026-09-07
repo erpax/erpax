@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "crown",
-    "uuid": "bcbdfcb8-b72f-8ce6-b383-9b15558cafd3",
+    "uuid": "b22a7a84-34f8-86dc-9167-1bb55fa557c6",
     "words": [
       "crown"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the crown center (Sahasrara) — the seventh and last of the seven chakra centers, a standalone projection of index 6 whose note and uuid are computed from the position math and whose colour is rendered from that uuid.",
-    "uuid": "5b407eae-7f5b-8279-9f79-647a96cf9618",
+    "uuid": "edf4af8e-3b64-8417-b959-7666ebb155da",
     "words": [
       "use",
       "when",

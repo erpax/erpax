@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tunnel",
-    "uuid": "c3410bd9-cc2c-8f98-911b-7bd341b9500d",
+    "uuid": "6fc07338-a614-846a-a9b9-d3b4d2c70a94",
     "words": [
       "tunnel"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a structure or cover extends the growing season — the family from floating row cover → low tunnel → caterpillar tunnel → high tunnel/hoophouse → greenhouse, scaled by size, that buffers frost and adds weeks at each end of the season. Season extension as built capacity; the structure that widens the climate window land×season otherwise caps.",
-    "uuid": "8b5e39ab-83ed-861c-92a9-04313e8e160c",
+    "uuid": "80b750ee-0c2a-8656-b33f-5e2edd2d324c",
     "words": [
       "use",
       "when",

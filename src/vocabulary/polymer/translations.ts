@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "polymer",
-    "uuid": "6743840e-fa86-87d1-830b-a97bd4b527f2",
+    "uuid": "0f2dd4e2-b6a8-8123-a93d-b560881036e1",
     "words": [
       "polymer"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about polymer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "06e3a289-daeb-822b-8a57-e10bc2723a53",
+    "uuid": "5c1cab20-9f3b-8fe0-8332-b76bbc199f9c",
     "words": [
       "use",
       "when",

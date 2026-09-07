@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "chain",
-    "uuid": "ee19959c-931e-82a0-9f4a-cd0ed6d311b2",
+    "uuid": "8b6ef5f1-89ee-8dd3-aed5-1fa2ac381684",
     "words": [
       "chain"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about chain — starts a chain at and extends it: addresses the pair (previous, content), so each link's identity depends on everything before it. walks the and reports where the walk breaks.",
-    "uuid": "ba2d394e-7bf7-85d3-bfe4-24dc91ee1987",
+    "uuid": "438ef53a-a2f1-84c0-9211-7abf14f09ecf",
     "words": [
       "use",
       "when",

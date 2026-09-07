@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "variant",
-    "uuid": "189ee44d-7b67-8889-91ca-83d1535d9df2",
+    "uuid": "2b10b339-d7c8-8aa6-ba7c-fe278745da05",
     "words": [
       "variant"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modeling product options, SKU expansion, or feature flags — sizes, colors, configurations, market-specific variants without a fixed grid. The unbounded product dimension.",
-    "uuid": "eb362dea-ace5-8119-a757-5177a20b13fb",
+    "uuid": "252a2c0e-b5c5-82fe-b077-e0b0c7ce42d7",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "finality",
-    "uuid": "89818ef9-ab40-8672-8e30-3385c26eb28a",
+    "uuid": "adff254b-fdf1-8f71-befb-0ce9e327c9ce",
     "words": [
       "finality"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about whether a collapsed state can be undone — finality is the conjugate of speed, the master axis the payment rails revealed; reversible holds a superposition with a compensating path (love), final posts one tamper-anchored entry whose only recourse is a governance judgment (fear).",
-    "uuid": "285b669a-1521-8860-8795-79aba9bf13d2",
+    "uuid": "cf7e77a1-8d80-8f67-8707-e95a58f6e64e",
     "words": [
       "use",
       "when",

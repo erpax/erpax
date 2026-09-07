@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "option",
-    "uuid": "3bf93fac-f4ac-84bc-8a84-4c61da081ddf",
+    "uuid": "b5c7618d-ddb6-8b3a-af61-af7c6082b775",
     "words": [
       "option"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about option — A sub property of object. The options subject to this action.",
-    "uuid": "6346eb46-d871-854b-9482-ec5963e9450b",
+    "uuid": "4dd061d6-82ec-8cfa-a369-4b6eb2600610",
     "words": [
       "use",
       "when",

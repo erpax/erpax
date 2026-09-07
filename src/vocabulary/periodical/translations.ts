@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "periodical",
-    "uuid": "f26c57f1-924b-8633-96d5-316b7c966b3b",
+    "uuid": "d042be4b-4e94-8ded-89aa-8aad446b5bfa",
     "words": [
       "periodical"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about periodical — A publication in any medium issued in successive parts bearing numerical or chronological designations and intended to continue indefinitely, such as a magazine, scholarly journal,",
-    "uuid": "22c950e0-cd94-81d8-87a3-037aec9834f2",
+    "uuid": "b7ddea49-7b16-8d4b-a45a-54382fe8c937",
     "words": [
       "use",
       "when",

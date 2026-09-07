@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "grant",
-    "uuid": "fe222e6f-030b-8db1-b952-958344aca69e",
+    "uuid": "aa14b4af-c6b1-830b-ba04-7c547b093e29",
     "words": [
       "grant"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about grant — A grant, typically financial or otherwise quantifiable, of resources. Typically a funder sponsors some MonetaryAmount to an Organization or Person, sometimes not necessarily via a",
-    "uuid": "f3bd3abd-c9fd-80b1-853f-62d0dfa22576",
+    "uuid": "07818e23-9c96-86d2-8241-59258e975278",
     "words": [
       "use",
       "when",

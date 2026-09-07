@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "post",
-    "uuid": "3a2538f6-6e81-8b10-8ffe-c514c6b002e6",
+    "uuid": "693a0be6-49d5-88a0-a931-0a157e4b5566",
     "words": [
       "post"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about post — Use for the numbered demo post seeds — fixture content for the blog collection, numbered rather than named because they are interchangeable samples.",
-    "uuid": "49c8e14e-0aac-830b-bb34-ad01c7f62d4e",
+    "uuid": "11cdaaf0-1715-8e76-a119-6f6e261916e3",
     "words": [
       "use",
       "when",

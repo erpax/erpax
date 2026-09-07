@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "thing",
-    "uuid": "ea9185cb-390e-8d00-a517-3c9aae80d854",
+    "uuid": "c0622294-d42c-84f8-9ae5-d7784ab97cf6",
     "words": [
       "thing"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about thing — The most generic type of item.",
-    "uuid": "51afb664-b718-874f-8002-18d433e7b48b",
+    "uuid": "4951c211-456b-8fa0-a7a3-651a48be37dc",
     "words": [
       "use",
       "when",

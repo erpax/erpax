@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "screen",
-    "uuid": "f491542e-b7a1-8292-bacc-4c85a4f80fdf",
+    "uuid": "6eb3c941-0823-8e61-8568-860b419a3c12",
     "words": [
       "screen"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about screen as a part of computer — vocabulary pivot to @/screen; nested not duplicated.",
-    "uuid": "54cc5155-0c3e-89b7-91c1-601a9dc70620",
+    "uuid": "2da64342-721e-88c3-89dd-e3f80803efef",
     "words": [
       "use",
       "when",

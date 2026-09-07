@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "conflict",
-    "uuid": "2b863b04-c8b1-8340-a3f4-0478d5b5b0ea",
+    "uuid": "6a276fd0-44ab-8130-adb2-95175d6a398b",
     "words": [
       "conflict"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about conflict — legal.conflict — the LegalAgent's conflict-of-interest check as a PURE transform.",
-    "uuid": "9277c8bd-8287-84c4-877d-027cc8a7ddc6",
+    "uuid": "693f0f12-5248-8155-a66e-f99fbec37ad9",
     "words": [
       "use",
       "when",

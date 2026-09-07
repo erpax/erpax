@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "members",
-    "uuid": "bc441866-97e3-8ddf-a909-38171bde964d",
+    "uuid": "76a7606e-13e3-8ebc-8155-f074f5086000",
     "words": [
       "members"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording individual members of an audit committee — name, title, affiliation (internal/external/independent), role (chair/vice-chair/member/financial-expert), term dates, and expertise areas. The SOX §301 committee-composition roster.",
-    "uuid": "e5956ff5-c711-819b-99c5-d1c05e138d4d",
+    "uuid": "c9fd120e-f8f0-8966-808d-952525ec0838",
     "words": [
       "use",
       "when",

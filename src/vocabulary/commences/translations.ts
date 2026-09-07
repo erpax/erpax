@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "commences",
-    "uuid": "9daa825c-030d-8393-82a9-3d72f9ca9b96",
+    "uuid": "7f625886-8007-89fe-8e3d-49960c24de00",
     "words": [
       "commences"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about commences as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "4611fbb1-8433-8c11-aac5-b194b09ddc56",
+    "uuid": "efd5cbf6-96f8-82d6-becc-c39ffd871b16",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "iptc",
-    "uuid": "2abe4bf4-a9cb-873c-97ca-448fe287ed98",
+    "uuid": "06922598-ed8e-8229-8be3-c8882b875ce8",
     "words": [
       "iptc"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about iptc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "daf37c1c-2c57-807c-9f18-183315ee76d2",
+    "uuid": "a9f46de3-818c-834f-a9f8-494d98d998b4",
     "words": [
       "use",
       "when",

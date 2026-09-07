@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "contract",
-    "uuid": "ec679ce4-2f5d-85ce-b24f-3749a137e78b",
+    "uuid": "fd9f6b97-1cbf-84ad-a1a7-225828f05339",
     "words": [
       "contract"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one contract — the singular model of the contracts collection (the plural store); a legally binding agreement between parties.",
-    "uuid": "5c99b041-0112-8727-9030-8ec2cf8ebd9b",
+    "uuid": "5488c37a-3b03-834e-8ca3-d608824aca81",
     "words": [
       "use",
       "when",

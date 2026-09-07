@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "wave",
-    "uuid": "5bd4c3fd-d779-8b60-be52-de618f1596d1",
+    "uuid": "3676c195-5298-8c47-b6d7-19b71b80cabd",
     "words": [
       "wave"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about wave — Continuous quantum computation wave with real-time Zenodo publication",
-    "uuid": "598ee672-d574-81d1-a292-1523953b0912",
+    "uuid": "c71fa820-b5aa-8e4d-b765-15808e9be246",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "rules",
-    "uuid": "1b2d7d23-70db-8896-bcd7-094608780546",
+    "uuid": "2f014fd3-17e6-8bdd-a53c-fd4ab90a21a8",
     "words": [
       "rules"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when configuring GL account metadata for double-entry validation — account type (asset/liability/equity/revenue/expense), normal polarity (debit/credit), balance-sheet vs P&L category, reconciliation frequency, cash-flow relevance, period-end close flag. The gl-posting-rules validation-metadata collection.",
-    "uuid": "b384f50b-0730-83cf-9cd1-3d37f2552e79",
+    "uuid": "5c3066bf-14fe-8f24-8017-ec320c0438df",
     "words": [
       "use",
       "when",

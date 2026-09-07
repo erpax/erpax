@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "icfrs",
-    "uuid": "2a94b7bb-fa12-8efa-afa2-25b273dda21b",
+    "uuid": "9afbaa9e-8fe1-8734-9e4d-e6b4488ec879",
     "words": [
       "icfrs"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when performing or documenting management's SOX §404(a) assessment of internal controls over financial reporting — COSO-2013 framework evaluation across control environment, risk assessment, control activities, information, and monitoring per SOX §404(a) / COSO-2013 / PCAOB AS 2201. The management ICFR assessment collection.",
-    "uuid": "aa613104-61b9-83c4-ac3f-91e8295dfaa2",
+    "uuid": "8b1363ae-b0f7-83ee-895b-ba133032668a",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "device",
-    "uuid": "916f4dd8-ea9a-887a-a7f3-75cde51f195b",
+    "uuid": "6cee9bc6-19a1-84f4-8828-4ff70b6192d3",
     "words": [
       "device"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about clinical hardware — the medical device registry where analog physiology collapses at the edge into lawful readings, LOINC-mapped observations, and EMR analog replay.",
-    "uuid": "10c2f9e6-1f0f-87d1-8a6b-def0c4d40b16",
+    "uuid": "51fcd74c-181d-81da-b4b8-db449dec1e23",
     "words": [
       "use",
       "when",

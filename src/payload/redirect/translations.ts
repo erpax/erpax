@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "redirect",
-    "uuid": "cd8df3a3-ed1d-8d25-bf0b-0388e5d9a008",
+    "uuid": "d3391357-00ff-85b1-8652-0bdcf1acca3c",
     "words": [
       "redirect"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about redirect — resolves a requested path against the redirects collection and sends the reader on.",
-    "uuid": "eb8ad5ca-7574-81d0-854a-3fed818be4cf",
+    "uuid": "3862373e-043b-87cd-844b-91bfb5f65fc2",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "acknowledgment",
-    "uuid": "8f5f575d-400f-8030-be04-eeebd3941ee5",
+    "uuid": "66f6ff51-32f0-89f3-939f-e928f853dd2b",
     "words": [
       "acknowledgment"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one acknowledgment — the singular model of the acknowledgments collection (the plural store); a formal confirmation that something was received or accepted.",
-    "uuid": "7c5ccb8a-0d74-8108-9442-6b4ccfd068ba",
+    "uuid": "da4bdb87-1d06-83be-8392-cc25f3464e73",
     "words": [
       "use",
       "when",

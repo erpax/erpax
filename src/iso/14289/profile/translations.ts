@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "profile",
-    "uuid": "cf14f5bb-0fa4-89fd-9929-f9c929fb355b",
+    "uuid": "56390b0f-9962-823e-8cc1-94233e8a1d9a",
     "words": [
       "profile"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about profile — ISO 14289 PDF/UA — PDF Universal Accessibility.",
-    "uuid": "128d7d6b-aa1f-8505-a361-4d9c6f63f789",
+    "uuid": "bcd1ec46-63c2-83ef-9c19-756a029e3f25",
     "words": [
       "use",
       "when",

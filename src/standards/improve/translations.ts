@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "improve",
-    "uuid": "28c5ecde-b39b-80a9-8c7d-03c3c8c1ff0c",
+    "uuid": "9ec70c68-a1b3-8e1b-ae53-46726d8ca559",
     "words": [
       "improve"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when standards must chat and improve via architectural reuse — addressIndex O(1), crack non-reuse, free-chat@tokens=0, emit waves. Uses quantum/ftl; path is standards/improve — not a domain ftl path.",
-    "uuid": "0d3d765a-55d1-859c-bebc-c74e161cf94b",
+    "uuid": "05f9ccb8-89c6-88b4-8ee8-b558c313b7bf",
     "words": [
       "use",
       "when",

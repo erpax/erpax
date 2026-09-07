@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "weave",
-    "uuid": "3839e5b0-fb34-87af-8d2f-ee4248f78b26",
+    "uuid": "9223ac7d-a012-8880-aa81-3a7fec86fa60",
     "words": [
       "weave"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the third position of the horo state ring — digit 4, \\\"four hands meeting\\\", the interlinking step where a flow is being worked/woven (in-production, in-progress, related). Ascent arc; nested under horo.",
-    "uuid": "000f2343-9821-86e9-ac7f-0c2b639d1775",
+    "uuid": "058ef90b-9769-89b3-93c5-5cf0f96523e4",
     "words": [
       "use",
       "when",

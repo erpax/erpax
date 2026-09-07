@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "depreciate",
-    "uuid": "db2992dd-f0a2-853d-95ed-4ecf512f1774",
+    "uuid": "5ae645fd-18fa-8dee-82fa-3fbf8862a3d0",
     "words": [
       "depreciate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about depreciate — ports the etrima/erpax depreciation calculators verbatim (calculate, port): given cost, salvage, useful-life (and units for activity-based), compute the per-period charge by method",
-    "uuid": "57a9ec80-4ae5-82ef-bdc9-ff923a6eb5e7",
+    "uuid": "ac8397d1-f2d1-82ba-bd05-7302c1ea3cd0",
     "words": [
       "use",
       "when",

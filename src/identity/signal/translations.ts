@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "signal",
-    "uuid": "d768105b-fa99-87aa-a1fa-e62f5c2f8262",
+    "uuid": "ebc97025-747d-8f7e-960e-df4869fdabb8",
     "words": [
       "signal"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about a uuid as self-rendering media in erpax — one 128-bit uuid decodes (from the string alone) to color (cmyk) + sound (A432 Hz) + state (horo position) + identity + capability; a STREAM of uuids is interactive multimedia with no payload. Nested under identity.",
-    "uuid": "b4953a71-017c-8f2b-9665-69cf3799abd1",
+    "uuid": "692e6fe1-e8da-8a83-bc92-6e6985c5f3ad",
     "words": [
       "use",
       "when",

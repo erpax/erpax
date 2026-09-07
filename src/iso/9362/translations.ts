@@ -16,7 +16,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing ISO 9362 — BIC / SWIFT.",
-    "uuid": "cb310112-1feb-86c6-8424-e9497f8362d1",
+    "uuid": "cbd7852f-611b-896c-984d-e99800eff103",
     "words": [
       "use",
       "when",

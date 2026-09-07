@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "carriers",
-    "uuid": "16629e85-b300-842c-af0f-d8460054ab5f",
+    "uuid": "8c1247f4-83b5-8335-9dd4-8a1312d74726",
     "words": [
       "carriers"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing shipping or freight carrier master data — DHL, UPS, FedEx, postal, maritime, air-cargo — with per-tenant accounts, INCOTERMS-tagged service levels, hazmat flags, API credentials references, and effective-date lifecycle. The carrier master that normalises free-text carrier strings in shipments.",
-    "uuid": "dea64d24-7107-80d1-9f47-761156f4bd7b",
+    "uuid": "dc8ba36e-69b6-8051-8cfb-fe4da32bdff3",
     "words": [
       "use",
       "when",

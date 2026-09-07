@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "impact",
-    "uuid": "23510ed2-a0f5-8b39-9750-e4d68c074f97",
+    "uuid": "038d81b4-f9c6-83f7-a8c5-82d26fea2b8c",
     "words": [
       "impact"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about impact — The mid-weight hero: rich text, an optional set of links, and an optional image below.",
-    "uuid": "105c3d7f-a2a9-8446-a551-3689e985beda",
+    "uuid": "02433d0e-5a60-89f9-aa9e-92c63d1cafe1",
     "words": [
       "use",
       "when",

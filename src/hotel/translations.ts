@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hotel",
-    "uuid": "022c2854-e6b3-8c2f-8f75-d09e9dcd8d34",
+    "uuid": "2d289ce9-dd8f-8e1d-9ce8-774edf0b6658",
     "words": [
       "hotel"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hotel — A hotel is an establishment that provides lodging paid on a short-term basis (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/Hotel). See also the dedica",
-    "uuid": "9029a880-98a9-86a1-a5ef-d4e9f369fb46",
+    "uuid": "7c9f9fcd-c944-810c-bbe4-ae559a695be8",
     "words": [
       "use",
       "when",

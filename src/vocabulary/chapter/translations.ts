@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "chapter",
-    "uuid": "478d1530-983a-805c-b1b8-618f004b342f",
+    "uuid": "1d0d4337-f600-84e2-99f8-ab8cccb613c0",
     "words": [
       "chapter"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about chapter — One of the sections into which a book is divided. A chapter usually has a section number or a name.",
-    "uuid": "e621723b-d5f4-8a6f-a5c0-f9afa8e045c7",
+    "uuid": "79a46cdb-f28a-8fe2-874c-2def7648ad7f",
     "words": [
       "use",
       "when",

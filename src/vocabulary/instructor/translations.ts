@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "instructor",
-    "uuid": "0115722c-7e12-8b4b-8f1f-2b7d284d8ddd",
+    "uuid": "c1f1ef1b-4278-8677-92d8-c0982f1b7f69",
     "words": [
       "instructor"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about instructor — A person assigned to instruct or provide instructional assistance for the CourseInstance.",
-    "uuid": "c2266154-5978-85af-964a-5ac75444d352",
+    "uuid": "b2b7a133-203d-8939-b23c-8bfd5ac4c945",
     "words": [
       "use",
       "when",

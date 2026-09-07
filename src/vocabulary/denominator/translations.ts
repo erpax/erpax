@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "denominator",
-    "uuid": "7b2edb8a-8ef6-8c89-bb8d-172504f07da8",
+    "uuid": "125f18be-c540-8a95-8f2e-3e5d01e253a1",
     "words": [
       "denominator"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about denominator — A schema.org component word, collided out of schema.org compounds — fused from measurementDenominator (sti · collapse · merge).",
-    "uuid": "32b01692-bb2b-8839-87b8-9029f4e4e9ce",
+    "uuid": "14b69bff-f45f-86cc-9008-98a337ed4545",
     "words": [
       "use",
       "when",

@@ -122,7 +122,40 @@ if [ "$DRY_RUN" = 0 ]; then
   rm -f /tmp/erpax-skill-sync.log
 fi
 
-# ── Artefact 4: the translations catalogue + per-atom projections ────
+# ── Artefact 5: the uuid matrix ──────────────────────────────────────
+#
+# `src/uuid/matrix/generated.ts` is one node per atom, derived from the tree — so minting an atom
+# drifts it, and nothing regenerated it. Measured 2026-09-07: it held 3,581 of 3,582, missing
+# `css/variables`, an atom minted earlier the same day. [[publish]]/complete caught it — "a count
+# is not a census" — because three independent listings agreed on the total and not on the members.
+#
+# Its own banner cited `src/services/uuid-matrix/collide.mjs` (a path dissolved long ago) and
+# `pnpm matrix:generate` (a script that did not exist). Both now name something real: a citation
+# that leads nowhere is [[rules]]/reference, and a command that cannot run is [[rules]]/command.
+#
+# Emits in under a second, so it needs no memo.
+if [ "$DRY_RUN" = 0 ]; then
+  if node src/uuid/matrix/collide.mjs --emit >/tmp/erpax-matrix.log 2>&1; then
+    if ! git diff --quiet -- src/uuid/matrix/generated.ts; then
+      echo "auto-heal: uuid matrix drifted — regenerated"
+      git add src/uuid/matrix/generated.ts 2>/dev/null || true
+      healed+=("uuid matrix")
+    fi
+  else
+    echo "auto-heal: uuid matrix emit FAILED — last 20 lines:"
+    tail -20 /tmp/erpax-matrix.log || true
+  fi
+  rm -f /tmp/erpax-matrix.log
+fi
+
+# ── Artefact 4 (AFTER the matrix): the translations catalogue ───────
+#
+# DEPENDS ON THE MATRIX, and this ran before it. `messageUuid` folds `wordUuid`, and `wordUuid` is
+# `nodeOf(word)?.uuid` — a lookup into `src/uuid/matrix/generated.ts`. The frontmatter heal above
+# rewrites SKILL.md, which changes every atom's content-uuid, which changes the matrix nodes.
+# Collecting translations before the matrix is re-emitted stores uuids computed against the OLD
+# nodes, and the "NO HALLUCINATION" invariant then fails for EVERY entry — measured 2026-09-07:
+# 7,138 of them, worse than the 2,222 this step was added to fix.
 #
 # Every atom carries a `translations.ts` whose entries store a uuid and a word-split RECOMPUTED
 # from the source string. [[translations]]/collect asserts they recompute — "NO HALLUCINATION" —
@@ -149,32 +182,6 @@ if [ "$DRY_RUN" = 0 ]; then
     tail -20 /tmp/erpax-tr.log || true
   fi
   rm -f /tmp/erpax-tr.log
-fi
-
-# ── Artefact 5: the uuid matrix ──────────────────────────────────────
-#
-# `src/uuid/matrix/generated.ts` is one node per atom, derived from the tree — so minting an atom
-# drifts it, and nothing regenerated it. Measured 2026-09-07: it held 3,581 of 3,582, missing
-# `css/variables`, an atom minted earlier the same day. [[publish]]/complete caught it — "a count
-# is not a census" — because three independent listings agreed on the total and not on the members.
-#
-# Its own banner cited `src/services/uuid-matrix/collide.mjs` (a path dissolved long ago) and
-# `pnpm matrix:generate` (a script that did not exist). Both now name something real: a citation
-# that leads nowhere is [[rules]]/reference, and a command that cannot run is [[rules]]/command.
-#
-# Emits in under a second, so it needs no memo.
-if [ "$DRY_RUN" = 0 ]; then
-  if node src/uuid/matrix/collide.mjs --emit >/tmp/erpax-matrix.log 2>&1; then
-    if ! git diff --quiet -- src/uuid/matrix/generated.ts; then
-      echo "auto-heal: uuid matrix drifted — regenerated"
-      git add src/uuid/matrix/generated.ts 2>/dev/null || true
-      healed+=("uuid matrix")
-    fi
-  else
-    echo "auto-heal: uuid matrix emit FAILED — last 20 lines:"
-    tail -20 /tmp/erpax-matrix.log || true
-  fi
-  rm -f /tmp/erpax-matrix.log
 fi
 
 # ── Artefact 2 (LAST): src/payload-types.ts ─────────────────────────

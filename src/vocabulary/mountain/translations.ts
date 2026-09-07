@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mountain",
-    "uuid": "00021040-e8c0-88f0-98c4-44d5d808ef59",
+    "uuid": "3ae6e79d-beff-8a72-b877-6d41d145903a",
     "words": [
       "mountain"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about mountain — A mountain, like Mount Whitney or Mount Everest.",
-    "uuid": "c18615e8-a07c-8c7c-b11f-ea657c694515",
+    "uuid": "62c34a54-e43c-8283-a3db-9b1b622187cc",
     "words": [
       "use",
       "when",
