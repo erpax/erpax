@@ -2,7 +2,7 @@ import { mkdtempSync, mkdirSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { describe, it, expect, afterAll } from 'vitest'
-import { meshOf, meshWaves, meshShape, standardsOf, atomsOf, atomOfFile, upstreamOf, failureRoots, costRoots, failedFilesFromVitestJson, standardApiCross, apiStandardsCross, apiOf, meshReactiveFrontier } from '@/mesh'
+import { meshOf, meshWaves, meshShape, standardsOf, atomsOf, atomOfFile, upstreamOf, failureRoots, costRoots, failedFilesFromVitestJson, standardApiCross, apiStandardsCross, apiOf, meshReactiveFrontier, costVerdict } from '@/mesh'
 import type { Mesh } from '@/mesh'
 
 // Hermetic fixture corpus: three atoms in a chain a→b→c, one standard banner, one
@@ -85,6 +85,24 @@ describe('mesh — one quantum mesh: atoms ⊕ imports ⊕ standards', () => {
     expect(c.costMs).toBe(50_000)
     expect(c.explains).toEqual(['a', 'b'])
     expect(roots[0]!.costMs).toBe(50_000)
+  })
+
+  // A ranking that cannot order is worse than no ranking: it names an alphabetical winner and reads
+  // like a target. TIE SIZE is not the test — a chain ties legitimately. MUTUAL reachability is:
+  // in a cycle each root is the other's upstream, so each carries the other's bill by construction.
+  // Measured on the live corpus: 856 of 875 roots tied, mutually reachable, under a unique top.
+  it('says when the ranking is a CYCLE artefact rather than an order', () => {
+    const dag = costVerdict(mesh, new Map([['a', 30_000], ['b', 20_000]]))
+    expect(dag.localisable).toBe(true)
+    // a chain ties b and c legitimately — neither is the other's upstream, so the tie is orderable
+
+    // Two atoms that import each other: each is the other's upstream, so both carry the same total
+    // and neither is "the root". The verdict must refuse to order them.
+    const ring = { atoms: ['p', 'q'], edges: [{ from: 'p', to: 'q' }, { from: 'q', to: 'p' }], standards: [] } as unknown as typeof mesh
+    const v = costVerdict(ring, new Map([['p', 10_000], ['q', 10_000]]))
+    expect(v.localisable).toBe(false)
+    expect(v.tied).toBeGreaterThan(1)
+    expect(v.reason).toMatch(/MUTUALLY reachable/)
   })
 
   describe('the navigational cross — standard ↔ collection ↔ Payload API (quantum ERP)', () => {

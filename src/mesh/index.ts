@@ -342,6 +342,80 @@ export interface CostRoot {
  * shared setup carried 10–30s × every suite; one sentinel collapsed a suite from 30.5s to 0.46s
  * (66×). Costs are measurements ([[timeout]]'s samples, suite durations) — never estimates.
  */
+export interface CostVerdict {
+  readonly roots: readonly CostRoot[]
+  /** false when the ranking is an artefact of a cycle rather than a fact about cost */
+  readonly localisable: boolean
+  /** how many atoms tie for the top — 1 is a real target, hundreds is a component */
+  readonly tied: number
+  readonly reason: string
+}
+
+/**
+ * costRoots WITH the question "does this ranking mean anything?" answered.
+ *
+ * `costRoots` projects each atom's cost onto its upstream set, so in a STRONGLY CONNECTED
+ * component every member is upstream of every other and they all carry the identical bill. The
+ * list still sorts, still looks like a ranking, and names an arbitrary alphabetical winner.
+ *
+ * Measured 2026-09-07 on this corpus: `upstreamOf('accounting')`, `upstreamOf('algebra')` and
+ * `upstreamOf('access')` are the SAME 857-atom set, and each contains the others. 875 roots tied at
+ * 401,312 ms. The optimisation target the docstring promises — "one fix there collapses every
+ * dependent's bill" — does not exist while that component does.
+ *
+ * So the verdict says so. A tie among hundreds is not a target list; it is [[rules]]/cycle's tangle
+ * showing up in the cost dimension, and the honest answer is to name the component rather than to
+ * rank inside it.
+ */
+export function costVerdict(mesh: Mesh, costMs: ReadonlyMap<string, number>): CostVerdict {
+  const roots = costRoots(mesh, costMs)
+  if (roots.length === 0) return { roots, localisable: false, tied: 0, reason: 'no measured cost — nothing to localise' }
+  // TIE SIZE IS NOT THE TEST. A chain a→b→c ties b and c legitimately — both are upstream of a, so
+  // both carry its bill — and that tie is orderable by depth, not an artefact. The thing that makes
+  // a ranking meaningless is MUTUAL reachability: when two roots are each other's upstream, each
+  // carries the other's cost by construction and "upstream" states nothing about which to fix.
+  //
+  // So the verdict asks the theorem, not a threshold. An earlier version compared the tie group
+  // against roots.length/10, then /2 — both arbitrary, and the first one called a three-atom DAG
+  // degenerate. A heuristic wearing a theorem's clothes is what this corpus keeps paying for.
+  const groups = new Map<number, string[]>()
+  for (const r of roots) groups.set(r.costMs, [...(groups.get(r.costMs) ?? []), r.root])
+  const largest = [...groups.values()].reduce((a, b) => (b.length > a.length ? b : a), [])
+  const tied = largest.length
+  const up = new Map<string, Set<string>>()
+  const reaches = (a: string): Set<string> => {
+    let set = up.get(a)
+    if (!set) {
+      set = new Set(upstreamOf(mesh, a))
+      up.set(a, set)
+    }
+    return set
+  }
+  const cyclic = largest.some((a) => largest.some((b) => a !== b && reaches(a).has(b) && reaches(b).has(a)))
+  const top = roots[0]!.costMs
+  if (!cyclic) {
+    return {
+      roots,
+      localisable: true,
+      tied,
+      reason:
+        tied === 1
+          ? `the top root carries ${top} ms alone — that is the target`
+          : `${tied} roots tie, but none is another's upstream — a chain, not a cycle; the tie is orderable by depth`,
+    }
+  }
+  return {
+    roots,
+    localisable: false,
+    tied,
+    reason:
+      `${tied} roots tie at one cost and are MUTUALLY reachable — each is the other's upstream, so each ` +
+      'carries the other\'s bill by construction and the ranking states nothing about which to fix. ' +
+      'That is [[rules]]/cycle\'s tangle in the cost dimension. Cut the cycle ' +
+      '(tsx src/rules/cycle/index.ts); until then this list has no target below the first.',
+  }
+}
+
 export function costRoots(mesh: Mesh, costMs: ReadonlyMap<string, number>): CostRoot[] {
   const acc = new Map<string, { cost: number; atoms: Set<string> }>()
   for (const [atom, ms] of costMs) {

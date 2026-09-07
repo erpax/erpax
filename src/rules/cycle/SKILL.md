@@ -96,6 +96,30 @@ Two things it must NOT flag, and both were learned the hard way:
 - **A function is deferred.** `const build = () => make()` runs long after initialisation. Only an initialiser that *is not* a function body is evaluated at load time.
 - **A builtin cannot be in a dead zone.** The scan reported **49** uses until the source check existed; ~44 were `join`, `existsSync`, `createRequire` — node builtins, fully initialised before our graph starts, structurally incapable of the failure being hunted. Only a binding imported **from a file in the same tangle** can be undefined.
 
+## The tangle also destroys COST attribution — measured 2026-09-07
+
+The corpus records every gate lane's wall time ([[timeout]]'s sample ring, 50 labels), and
+[[mesh]]'s `costRoots` exists to project those costs onto upstream roots — its docstring promises
+*"the root carrying the most cost is the optimisation target, and one fix there collapses every
+dependent's bill"*.
+
+Asked that question, the answer was flat:
+
+```
+upstreamOf('accounting') = upstreamOf('algebra') = upstreamOf('access') = the SAME 857 atoms
+856 of 875 roots tie at one cost, under a unique top
+```
+
+`accounting` is upstream of `algebra` **and** `algebra` is upstream of `accounting`. In a cycle
+every member is every other member's upstream, so each carries the other's bill by construction —
+and the ranking sorts, and names an alphabetical winner, and means nothing below position one.
+
+So the tangle is not only a TDZ hazard. It is why **this corpus cannot locate its own slowness**:
+the 153s readme, the 127s typecheck, the 99s test wave all collapse onto the same 856 atoms, and no
+fix can be shown to be the one that pays. `costVerdict` now says so rather than ranking inside a
+component — and it asks MUTUAL REACHABILITY, not tie size, because a chain `a→b→c` ties `b` and
+`c` legitimately and that tie IS orderable by depth.
+
 ## You cannot trust something that is not a theorem
 
 This gate was built on a regex, and **a regex over TypeScript is a guess**: the language has a grammar, and a pattern that "usually matches" it is a heuristic wearing a theorem's clothes. Measured against `ts.createSourceFile` across 6,203 files, it was wrong in **115**:
