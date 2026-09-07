@@ -100,6 +100,20 @@ export function closureHashOf(entryFiles: readonly string[], cwd: string = proce
  */
 export const CORPUS_WIDE_SUITES: ReadonlySet<string> = new Set([
   'src/matrix/test.ts',
+  'src/rules/test.ts',
+  'src/rules/drift/test.ts',
+  'src/rules/unreached/test.ts',
+  'src/seo/test.ts',
+  'src/publish/complete/test.ts',
+  'src/readme/test.ts',
+  'src/translations/collect/test.ts',
+  'src/agents/mcp/discovery.test.ts',
+  'src/schema/test/test.ts',
+  'src/schema/test/index.test.ts',
+  'src/uuid/matrix/test.ts',
+  'src/uuid/matrix/index.test.ts',
+  'src/aura/test.ts',
+  'src/gate/parity/test.ts',
 ])
 
 /** Closure — plus, for a corpus-wide suite, the fold of everything its scan can see. */
