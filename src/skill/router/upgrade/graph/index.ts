@@ -77,7 +77,10 @@ export function clipToBoundary(text: string, max: number): string {
   const t = text.trim()
   if (t.length <= max) return t
   const window = t.slice(0, max)
-  const sentence = Math.max(window.lastIndexOf('. '), window.lastIndexOf('! '), window.lastIndexOf('? '))
+  // No host Math.* — [[algebra]] holds a theorem baseline of 0 for it, and this file is scanned.
+  const sentence = ['. ', '! ', '? ']
+    .map((mark) => window.lastIndexOf(mark))
+    .reduce((a, b) => (b > a ? b : a), -1)
   if (sentence > max * 0.4) return window.slice(0, sentence + 1).trim()
   const space = window.lastIndexOf(' ')
   return `${(space > 0 ? window.slice(0, space) : window).replace(/[\s,;:—-]+$/, '')}…`

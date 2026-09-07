@@ -29,6 +29,7 @@
     "readme:check": "cross-env NODE_OPTIONS=\"--no-deprecation --import=tsx/esm\" tsx scripts/legacy-shim.ts",
     "rules:check": "cross-env NODE_OPTIONS=\"--no-deprecation --import=tsx/esm\" tsx scripts/legacy-shim.ts",
     "test:int": "cross-env NODE_OPTIONS=\"--no-deprecation --import=tsx/esm\" tsx scripts/legacy-shim.ts",
+    "matrix:generate": "node src/uuid/matrix/collide.mjs --emit",
     "confirm:uuid": "cross-env NODE_OPTIONS=\"--no-deprecation --import=tsx/esm\" tsx scripts/legacy-shim.ts"
   },
   "dependencies": {
