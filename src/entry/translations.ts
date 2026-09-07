@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the universal double-entry in erpax — every value movement (any direction, any parties) reduces to a balanced (debit, credit) pair; the reverse is inherent, direction is a viewpoint, N plugin mounts consolidate (intercompany nets to zero). The debit/credit closure operator over the whole mesh — \\\"all accounted in all directions ⇒ the wiring is complete\\\".",
-    "uuid": "bcc49d14-c43a-8560-9480-32b7aaaa88f8",
+    "uuid": "bb911030-b0a1-8305-b437-9f588de1b8e7",
     "words": [
       "use",
       "when",

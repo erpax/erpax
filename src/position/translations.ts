@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining job positions, the rate ladder, or government/society role structure. Each position is a rung on the harmonic ladder; its job description is computed; its conditions are content-addressed on the uuid chain (blockchain); government and society share one ladder.",
-    "uuid": "2ac095d5-55d8-898d-a199-2a0e824bc88f",
+    "uuid": "337a35f9-41a5-861e-8e3b-51ecb5fbd445",
     "words": [
       "use",
       "when",

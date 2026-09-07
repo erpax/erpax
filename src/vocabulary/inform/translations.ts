@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about inform — A schema.org component word, collided out of schema.org compounds — fused from InformAction (sti · collapse · merge).",
-    "uuid": "a5546ca1-d9a8-83b4-814d-b155dab90a2a",
+    "uuid": "9f240d8c-f460-8a45-bd5a-7330a7a1a120",
     "words": [
       "use",
       "when",

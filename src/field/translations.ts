@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining or debugging Payload fields — choosing a field type, shared field props (name, required, index, unique, defaultValue, validate, access, hooks, admin), relationships, arrays/blocks/groups/tabs, selects, or virtual/join fields.",
-    "uuid": "045875e6-a05a-8018-825f-b8429a7b94f7",
+    "uuid": "ac329d33-31bc-8631-8b72-1e7cfa4f0146",
     "words": [
       "use",
       "when",

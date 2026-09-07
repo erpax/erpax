@@ -155,10 +155,12 @@ export const invariantChecks = (checks: number, invariants: number): number =>
  * the note warning about it.
  *
  * The pin is now REAL: `src/cost/bits/test.ts` imports both and asserts equality, so the next axis added
- * fails the suite instead of silently re-pricing a forge.
+ * fails the suite instead of silently re-pricing a forge. It has since done exactly that TWICE: 9 -> 11
+ * when `mirror` and `forge` joined the axes. The number rising is the point — a forge must now evade
+ * eleven independent gates, and pricing it at nine would understate the wall.
  *
  * @invariant CONFIRM_GATE_CHECKS === CONFIRM_CHECK_AXES.length — asserted in src/cost/bits/test.ts
  */
-export const CONFIRM_GATE_CHECKS = 9
+export const CONFIRM_GATE_CHECKS = 11
 
 /** @index-cross.foldback child=cost/bits parent=cost — this cross folds back into its parent. */

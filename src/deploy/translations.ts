@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when deploying a Payload app to production or fixing build/migration/env issues — required secrets, running migrations vs dev push, building without a DB connection, file storage, or Cloudflare/Next/Docker specifics.",
-    "uuid": "ae8ff7e3-920d-8faf-9f77-8ac7a0ee95b1",
+    "uuid": "9b60ef3e-d8df-8c00-ab9e-a1ea4b8207da",
     "words": [
       "use",
       "when",

@@ -35,9 +35,31 @@ export function deriveDescription(leaf: string, text: string): string {
     .replace(/^#{1,6}\s+.+$/m, '')
     .trim()
   const para = body.split(/\n\n+/)[0]?.replace(/\s+/g, ' ').trim() ?? ''
-  const snippet = para.replace(/\[\[([^\]]+)\]\]/g, '$1').slice(0, 180)
+  const flat = para.replace(/\[\[([^\]]+)\]\]/g, '$1')
+  const snippet = clipToBoundary(flat, 180)
   if (snippet) return `Use when reasoning about ${leaf} — ${snippet}`
   return `Use when reasoning about ${leaf}.`
+}
+
+/**
+ * Clip to a SENTENCE, else a WORD — never mid-token.
+ *
+ * A raw `.slice(0, 180)` ended one atom's description at "It reads the Payload au". This string is
+ * the SEO meta description ([[seo]] clips it again to 160) and the first line a reader sees in the
+ * skill listing; a half-word there is not a shortened sentence, it is a broken one.
+ *
+ * A sentence end inside the window is preferred because it is the only cut that leaves prose
+ * intact. Failing that, the last space — and the ellipsis says the sentence continues, which the
+ * bare truncation did not.
+ */
+export function clipToBoundary(text: string, max: number): string {
+  const t = text.trim()
+  if (t.length <= max) return t
+  const window = t.slice(0, max)
+  const sentence = Math.max(window.lastIndexOf('. '), window.lastIndexOf('! '), window.lastIndexOf('? '))
+  if (sentence > max * 0.4) return window.slice(0, sentence + 1).trim()
+  const space = window.lastIndexOf(' ')
+  return `${(space > 0 ? window.slice(0, space) : window).replace(/[\s,;:—-]+$/, '')}…`
 }
 
 /** Compare stored frontmatter signatures against the recomputed diamond chain. */

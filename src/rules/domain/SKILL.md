@@ -1,3 +1,36 @@
+---
+name: domain
+description: "Use when reasoning about domain — Four cracks in one session, and the same gap behind three of them:"
+atomPath: "rules/domain"
+coordinate: "rules/domain · 5/round · 5b3ac885"
+contentUuid: "7f5c0533-cca8-58a5-8c75-0bf55af0369d"
+diamondUuid: "3767de9f-a89f-8ed8-b8a7-aaabd046b67e"
+uuid: "5b3ac885-01aa-8992-b677-856ebe5bf7eb"
+horo: 5
+typography:
+  partition: rules
+  bondDegree: 72
+standards: []
+bindings: []
+signatures:
+  computationUuid: "0077bcdd-8d8e-8bb7-9532-c8891821553f"
+  stages:
+    - stage: path
+      stageUuid: "c780e4eb-ff9c-87d1-a427-3daf6d1a71a3"
+    - stage: trinity
+      stageUuid: "ba84438b-59bb-8b74-a583-828ed7ea4981"
+    - stage: boundary
+      stageUuid: "ab970c9f-915a-8ce3-9509-6ac4e218e912"
+    - stage: links
+      stageUuid: "12b2d5a2-4ddb-8db3-a5c2-a886711e9dd9"
+    - stage: horo
+      stageUuid: "28de0776-1220-8a93-870d-61d5864e83e1"
+    - stage: seal
+      stageUuid: "915fdf74-b3bb-8053-99e6-6f89de4bcb43"
+    - stage: uuid
+      stageUuid: "378e8a88-3a73-82be-8214-281b2e2f0a92"
+version: 2
+---
 # rules/domain — a law is enforced on the surfaces its checker reads, and nowhere else
 
 Four cracks in one session, and the same gap behind three of them:

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining or querying reusable labels applied across any collection — tag vocabulary, use-count counter cache, content-uuid dedup (same name = same id everywhere). The universal label-vocabulary collection; pair with taggings for the full polymorphic tagging engine.",
-    "uuid": "2564e41a-57ff-8284-9027-d0258cda7359",
+    "uuid": "9b065a3b-d39e-8409-9244-6f620cf11e70",
     "words": [
       "use",
       "when",

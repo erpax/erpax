@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording actual production at one operation × work-center — quantities ordered/produced/scrapped/backordered, variant attribute axes, shift, start/completion timestamps, and ISA-95 KPIs (yield, scrap). The per-routing-step execution record within a work order.",
-    "uuid": "be09f760-e6e7-85c1-9ff6-2e749f0c17bc",
+    "uuid": "c9ee9791-93a2-8b5e-8fe0-9590d54c19ba",
     "words": [
       "use",
       "when",

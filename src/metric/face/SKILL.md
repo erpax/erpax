@@ -1,3 +1,36 @@
+---
+name: face
+description: "Use when reasoning about face — Every number in this session reached its reader as a sentence. *\"48 blind probes\"*, *\"1.6× slower cached\"*, *\"237 dead pointers\"* — each true when written, none checkable by the…"
+atomPath: "metric/face"
+coordinate: "metric/face · 2/share · 9064f395"
+contentUuid: "d0a02dd1-355b-5fcb-9ce5-5290dcceec26"
+diamondUuid: "fea0c340-7c88-8179-ba2b-897f335ee799"
+uuid: "9064f395-c371-8eed-b96d-6f6224a76060"
+horo: 2
+typography:
+  partition: metric
+  bondDegree: 23
+standards: []
+bindings: []
+signatures:
+  computationUuid: "5af8a216-c5ba-8757-a9f4-9065bc8918df"
+  stages:
+    - stage: path
+      stageUuid: "b9248015-850c-8f4a-a5c3-ba3c1291cc5f"
+    - stage: trinity
+      stageUuid: "3a36a1c8-6ce0-84f6-90f4-7cbcffefde6b"
+    - stage: boundary
+      stageUuid: "2ee3eac9-fae4-88d4-a236-154ceed4296e"
+    - stage: links
+      stageUuid: "dac891c6-8565-827d-b446-62550727e47c"
+    - stage: horo
+      stageUuid: "f4cb600f-8d83-800e-9231-1268f287e438"
+    - stage: seal
+      stageUuid: "9eeaf933-1f22-8f0b-b00a-188d7c88ade9"
+    - stage: uuid
+      stageUuid: "976863bc-6632-881b-9f67-ce7849440254"
+version: 2
+---
 # metric/face — a figure travels with the command that recomputes it, or it travels as prose
 
 Every number in this session reached its reader as a sentence. *"48 blind probes"*, *"1.6× slower

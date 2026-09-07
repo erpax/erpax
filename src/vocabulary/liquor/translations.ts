@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about liquor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "99bf2b25-034a-8f52-80fd-adbd4f4b7531",
+    "uuid": "8449a986-19c7-8d98-a903-b2a75f8b5b15",
     "words": [
       "use",
       "when",

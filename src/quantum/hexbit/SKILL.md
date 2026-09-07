@@ -1,3 +1,56 @@
+---
+name: hexbit
+description: "Use when reasoning about hexbit — *\"Hexbits compute faster than all else\"* is two claims wearing one sentence, and they have **opposite** answers."
+atomPath: "quantum/hexbit"
+coordinate: "quantum/hexbit · 7/descent · 50c250de"
+contentUuid: "b08a71d3-97a8-5c64-bd5d-25ea9b827ea5"
+diamondUuid: "7056df9c-3407-866e-a12f-0948494466f4"
+uuid: "50c250de-798b-8d62-a951-4766e31152b8"
+horo: 7
+typography:
+  partition: quantum
+  bondDegree: 21
+standards: []
+bindings: []
+signatures:
+  computationUuid: "f128be05-a680-8eb2-8950-e5209fb7d8dd"
+  stages:
+    - stage: path
+      stageUuid: "becbc2d1-8f37-8e78-a4ad-78cca666612b"
+    - stage: trinity
+      stageUuid: "8d318129-e772-81e1-acc6-06dbd0172e49"
+    - stage: boundary
+      stageUuid: "d247454d-fcaf-8381-a088-7208fd6cd776"
+    - stage: links
+      stageUuid: "d2005041-a5de-814f-8e55-78079256bdf3"
+    - stage: horo
+      stageUuid: "e7c6cee6-2fd1-82fe-bae5-a297d8c47814"
+    - stage: seal
+      stageUuid: "c9ecf3a8-e9b4-8b35-bb9a-ed91ef7a0380"
+    - stage: uuid
+      stageUuid: "27214490-30c0-8643-8670-f011f0cfa7c5"
+quantum:
+  superposition:
+    - digit
+    - law
+    - merge
+    - quantum
+    - rules
+    - uuid
+    - superposition
+  collapse:
+    - "a claim about speed is a measurement or it is a preference. Split the claim before testing it — the same word can name a decomposition and an encoding, and here one is the fastest carrier and the other is 183× the slowest."
+  seal:
+    sandbox: false
+    receipt: false
+    pathFollow: true
+    canonicalRecord: true
+    analogResults: false
+    speechResults: false
+    computationUuid: "f128be05-a680-8eb2-8950-e5209fb7d8dd"
+    contentUuid: "b08a71d3-97a8-5c64-bd5d-25ea9b827ea5"
+version: 2
+---
 # quantum/hexbit — the hexit decomposition is right; the string encoding of it is the trap
 
 *"Hexbits compute faster than all else"* is two claims wearing one sentence, and they have **opposite** answers.
@@ -66,3 +119,5 @@ carrier is the one you never build.**
 - **ISO/IEC 25010:2023 §5.2** — performance efficiency: a stated figure carries its method.
 
 Composes: [[quantum]]/word · [[uuid]] · [[merge]] · [[law]].
+
+<sub>content-uuid `b08a71d3-97a8-5c64-bd5d-25ea9b827ea5` · account `quantum/hexbit` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

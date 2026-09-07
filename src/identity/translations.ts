@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when working with erpax object identity or content-addressed UUIDs — computing a content-uuid (sha→uuidv8, RFC 9562 §5.8), the self-describing structured uuidv8 (slot + capability flags), categorical identity elements (currency/locale/country blanks), uuid-based RBAC sharing, deduplicated (\\\"dry\\\") file storage, or cross-instance merge/federation. The map to erpax's content-uuid framework; which version per case is [[uuid]].",
-    "uuid": "88662f06-dbde-8557-a8bf-537a63e177e3",
+    "uuid": "9fb5d3bd-ba2f-8875-b48c-6eb11ce89658",
     "words": [
       "use",
       "when",

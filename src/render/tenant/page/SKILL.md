@@ -1,3 +1,36 @@
+---
+name: page
+description: "Use when reasoning about page — A public tenant page is a hero followed by its layout blocks, inside an . That is the whole atom, and its value is that it exists **once**: the same composition served from the…"
+atomPath: "render/tenant/page"
+coordinate: "render/tenant/page · 2/share · 8902419f"
+contentUuid: "93c2b6ff-12a9-500e-9dc8-7ca7fc453bd0"
+diamondUuid: "908e5b94-0255-80d0-b197-aa7ea4e6dec0"
+uuid: "8902419f-73eb-8d53-b4ed-dba8a4d470b8"
+horo: 2
+typography:
+  partition: render
+  bondDegree: 144
+standards: []
+bindings: []
+signatures:
+  computationUuid: "1386112f-b399-86f5-93b2-85ea1f3bfd4a"
+  stages:
+    - stage: path
+      stageUuid: "32c98eb3-94b3-87b2-9a35-5d9f93f29ff9"
+    - stage: trinity
+      stageUuid: "88a22038-a0ae-85b3-8e9a-b51c6db1b695"
+    - stage: boundary
+      stageUuid: "b8366b9f-f5aa-8b7c-adf4-e518a9445c26"
+    - stage: links
+      stageUuid: "16314bbc-fc9e-8e6c-8843-6ca028d68404"
+    - stage: horo
+      stageUuid: "c0acd225-8ffe-81ab-9dd0-503fa014e684"
+    - stage: seal
+      stageUuid: "6fef39a2-e9c5-8195-b29c-157cb937f4c7"
+    - stage: uuid
+      stageUuid: "495ad5d2-dbb4-8bbd-9bab-6235ca649f98"
+version: 2
+---
 # render/tenant/page — one composition, so a tenant page is the same page everywhere
 
 A public tenant page is a hero followed by its layout blocks, inside an `<article>`. That is the

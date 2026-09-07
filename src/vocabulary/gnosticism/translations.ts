@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading Gnosticism as a diamond of invariant atoms — saving knowledge (gnosis), the divine spark trapped in a false material order made by a lower power (the demiurge), and the spark's ascent home to the true source (the pleroma). Strip the prefix and gnosis collapses to wisdom, the spark to the signal in the self, the false creation to the profane.",
-    "uuid": "479c7cfc-0c6f-8248-8e3b-5f1cd8575a5d",
+    "uuid": "2f23f917-90da-8672-85c0-e748d689e655",
     "words": [
       "use",
       "when",

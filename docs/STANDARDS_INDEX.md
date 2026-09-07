@@ -2103,18 +2103,18 @@ src/party/identity/index.ts:32: * @standard ISO 3166-1 alpha-2 — the jurisdict
 src/party/identity/index.ts:33: * @standard RFC 9562 §5.8 — the content-address
 src/patent/prior/index.ts:45: * @standard 35 U.S.C. §102 — novelty; a prior public disclosure anticipates
 src/patent/prior/index.ts:46: * @standard 35 U.S.C. §154 — patent term (20 years from filing; 17 from grant pre-1995)
-src/payable/aging.service.ts:11: * @standard ISO-8601-1:2019 date-time as-of-date
-src/payable/analytics.service.ts:7: * @standard ISO-4217:2015 currency-codes
-src/payable/analytics.service.ts:8: * @standard ISO-8601-1:2019 date-time
-src/payable/analytics.service.ts:9: * @standard ISO-17442-1:2020 lei vendor-identification
-src/payable/discounts.service.ts:10: * @standard ISO-4217:2015 currency-codes
-src/payable/discounts.service.ts:11: * @standard ISO-8601-1:2019 date-time discount-deadline
-src/payable/discounts.service.ts:8: * @standard EN-16931:2017 §BG-20 document-level-allowances
-src/payable/discounts.service.ts:9: * @standard EN-16931:2017 §BG-22 document-level-charges
+src/payable/aging/index.ts:12: * @standard ISO-8601-1:2019 date-time as-of-date
+src/payable/analytics/index.ts:10: * @standard ISO-17442-1:2020 lei vendor-identification
+src/payable/analytics/index.ts:8: * @standard ISO-4217:2015 currency-codes
+src/payable/analytics/index.ts:9: * @standard ISO-8601-1:2019 date-time
+src/payable/discounts/index.ts:10: * @standard EN-16931:2017 §BG-22 document-level-charges
+src/payable/discounts/index.ts:11: * @standard ISO-4217:2015 currency-codes
+src/payable/discounts/index.ts:12: * @standard ISO-8601-1:2019 date-time discount-deadline
+src/payable/discounts/index.ts:9: * @standard EN-16931:2017 §BG-20 document-level-allowances
 src/payable/index.ts:4: * @standard EN-16931:2017 §BG-4 seller
 src/payable/index.ts:5: * @standard ISO-4217:2015 currency-codes
 src/payable/index.ts:6: * @standard ISO-8601-1:2019 date-time
-src/payable/workflow.service.ts:9: * @standard EN-16931:2017 invoice-lifecycle
+src/payable/workflow/index.ts:10: * @standard EN-16931:2017 invoice-lifecycle
 src/payload.config.api.test.ts:10: * @standard OpenAPI 3.1 api-description
 src/payload.config.api.test.ts:7: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.multi-tenant-admin.test.ts:8: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
@@ -2333,14 +2333,14 @@ src/realtime/translator/index.ts:9: * @standard interlingua (language-independen
 src/receipt/index.ts:11: * @standard RFC 8785 JSON canonicalization (the content the uuid addresses)
 src/receipt/index.ts:12: * @standard NIST FIPS 180-4 SHA-256 (the chain + content hash)
 src/receipts/index.ts:22: * @standard BG Наредба-Н-18 §СУПТО касов-бон · §алтернативен-режим e-receipt
-src/receivable/aging.service.ts:11: * @standard ISO-8601-1:2019 date-time as-of-date
-src/receivable/allowance.service.ts:8: * @standard ISO-4217:2015 currency-codes
-src/receivable/analytics.service.ts:8: * @standard ISO-4217:2015 currency-codes
-src/receivable/analytics.service.ts:9: * @standard ISO-8601-1:2019 date-time period
+src/receivable/aging/index.ts:12: * @standard ISO-8601-1:2019 date-time as-of-date
+src/receivable/allowance/index.ts:9: * @standard ISO-4217:2015 currency-codes
+src/receivable/analytics/index.ts:10: * @standard ISO-8601-1:2019 date-time period
+src/receivable/analytics/index.ts:9: * @standard ISO-4217:2015 currency-codes
 src/receivable/index.ts:4: * @standard EN-16931:2017 invoice-fields
 src/receivable/index.ts:5: * @standard ISO-4217:2015 currency-codes
 src/receivable/index.ts:6: * @standard ISO-8601-1:2019 date-time
-src/receivable/workflow.service.ts:7: * @standard EN-16931:2017 invoice-lifecycle
+src/receivable/workflow/index.ts:8: * @standard EN-16931:2017 invoice-lifecycle
 src/regeneration/index.ts:26: * @standard RFC 9562 §5.8 content-uuid (the genome) · DRY (no stored derivation)
 src/registry/index.ts:8: * @standard W3C Linked Data + JSON-LD (live standards expressed as LD)
 src/registry/index.ts:9: * @standard ISO/IEC 15938-5 (multimedia content description framework)
@@ -4039,7 +4039,7 @@ src/notification/subscriber.ts:15: * @compliance GDPR Art.7 transactional-consen
 src/page/range/index.tsx:8: * @compliance WCAG-2.1 §1.3.1 info-and-relationships
 src/pagination/index.tsx:9: * @compliance WCAG-2.1 §2.4.4 link-purpose-in-context
 src/party/workflow.service.ts:9: * @compliance SOX §404 internal-controls
-src/payable/workflow.service.ts:14: * @compliance SOX §404 internal-controls
+src/payable/workflow/index.ts:15: * @compliance SOX §404 internal-controls
 src/payload.config.multi-tenant-admin.test.ts:12: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
 src/payload.config.multi-tenant-admin.test.ts:13: * @compliance SOC-2 CC6.1 logical-access-controls
 src/payload.config.tenant.test.ts:7: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
@@ -4070,8 +4070,8 @@ src/properties/investment/properties/index.ts:22: * @compliance SOX §404 intern
 src/properties/spaces/index.ts:15: * @compliance SOX §404 internal-controls space-allocation
 src/provider/index.tsx:4: * @compliance WCAG-2.1 §1.4.3 contrast-minimum
 src/provider/index.tsx:5: * @compliance WCAG-2.1 §1.4.11 non-text-contrast
-src/receivable/allowance.service.ts:10: * @compliance SOX §404 internal-controls
-src/receivable/workflow.service.ts:12: * @compliance SOX §404 internal-controls
+src/receivable/allowance/index.ts:11: * @compliance SOX §404 internal-controls
+src/receivable/workflow/index.ts:13: * @compliance SOX §404 internal-controls
 src/regulatory/deferral/accounts/index.ts:16: * @compliance SOX §404 internal-controls
 src/remote/media/import/index.ts:10: * @compliance GDPR Art.5(1)(c) data-minimization
 src/rfc/6585/rate-limit.ts:16: * @compliance SOC-2 CC6.1 logical-access-controls
@@ -4731,16 +4731,16 @@ src/party/aging.service.ts:10: * @accounting IFRS IFRS-9 expected-credit-loss ag
 src/party/aging.service.ts:11: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/party/aging.service.ts:12: * @accounting US-GAAP ASC-310 receivables
 src/party/aging.service.ts:13: * @accounting US-GAAP ASC-405 liabilities
-src/payable/aging.service.ts:10: * @accounting US-GAAP ASC-230 statement-of-cash-flows
-src/payable/aging.service.ts:7: * @accounting IFRS IAS-37 provisions-contingent-liabilities
-src/payable/aging.service.ts:8: * @accounting IFRS IAS-7 statement-of-cash-flows
-src/payable/aging.service.ts:9: * @accounting US-GAAP ASC-405 liabilities
-src/payable/analytics.service.ts:5: * @accounting US-GAAP ASC-405 liabilities
-src/payable/analytics.service.ts:6: * @accounting IFRS IAS-37 provisions-contingent-liabilities
-src/payable/discounts.service.ts:12: * @accounting US-GAAP ASC-705 cost-of-sales-and-services discount-recognition
+src/payable/aging/index.ts:10: * @accounting US-GAAP ASC-405 liabilities
+src/payable/aging/index.ts:11: * @accounting US-GAAP ASC-230 statement-of-cash-flows
+src/payable/aging/index.ts:8: * @accounting IFRS IAS-37 provisions-contingent-liabilities
+src/payable/aging/index.ts:9: * @accounting IFRS IAS-7 statement-of-cash-flows
+src/payable/analytics/index.ts:6: * @accounting US-GAAP ASC-405 liabilities
+src/payable/analytics/index.ts:7: * @accounting IFRS IAS-37 provisions-contingent-liabilities
+src/payable/discounts/index.ts:13: * @accounting US-GAAP ASC-705 cost-of-sales-and-services discount-recognition
 src/payable/index.ts:7: * @accounting US-GAAP ASC-405 liabilities
-src/payable/workflow.service.ts:10: * @accounting IFRS IAS-37 provisions-contingent-liabilities
-src/payable/workflow.service.ts:11: * @accounting US-GAAP ASC-405 liabilities
+src/payable/workflow/index.ts:11: * @accounting IFRS IAS-37 provisions-contingent-liabilities
+src/payable/workflow/index.ts:12: * @accounting US-GAAP ASC-405 liabilities
 src/payload.config.ts:574:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
 src/payload.config.ts:575:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
 src/payload.config.ts:596:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
@@ -4759,19 +4759,19 @@ src/product/price/index.ts:22: * @accounting US-GAAP ASC-830 foreign-currency-ma
 src/properties/index.ts:19: * @accounting IFRS IAS-16 property-plant-and-equipment owned-property
 src/properties/index.ts:20: * @accounting IFRS IFRS-16 §22 right-of-use-asset leased-property
 src/properties/index.ts:21: * @accounting US-GAAP ASC-360 property-plant-and-equipment
-src/receivable/aging.service.ts:10: * @accounting US-GAAP ASC-310 receivables
-src/receivable/aging.service.ts:8: * @accounting IFRS IFRS-9 financial-instruments expected-credit-loss
-src/receivable/aging.service.ts:9: * @accounting US-GAAP ASC-326 credit-losses-cecl
-src/receivable/allowance.service.ts:5: * @accounting IFRS IFRS-9 §5.5 expected-credit-loss
-src/receivable/allowance.service.ts:6: * @accounting US-GAAP ASC-326 §20 current-expected-credit-loss
-src/receivable/allowance.service.ts:7: * @accounting US-GAAP ASC-310 receivables
-src/receivable/analytics.service.ts:5: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
-src/receivable/analytics.service.ts:6: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/receivable/analytics.service.ts:7: * @accounting US-GAAP ASC-310 receivables
+src/receivable/aging/index.ts:10: * @accounting US-GAAP ASC-326 credit-losses-cecl
+src/receivable/aging/index.ts:11: * @accounting US-GAAP ASC-310 receivables
+src/receivable/aging/index.ts:9: * @accounting IFRS IFRS-9 financial-instruments expected-credit-loss
+src/receivable/allowance/index.ts:6: * @accounting IFRS IFRS-9 §5.5 expected-credit-loss
+src/receivable/allowance/index.ts:7: * @accounting US-GAAP ASC-326 §20 current-expected-credit-loss
+src/receivable/allowance/index.ts:8: * @accounting US-GAAP ASC-310 receivables
+src/receivable/analytics/index.ts:6: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/receivable/analytics/index.ts:7: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/receivable/analytics/index.ts:8: * @accounting US-GAAP ASC-310 receivables
 src/receivable/index.ts:7: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
-src/receivable/workflow.service.ts:10: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/receivable/workflow.service.ts:8: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
-src/receivable/workflow.service.ts:9: * @accounting IFRS IFRS-9 written_off impairment
+src/receivable/workflow/index.ts:10: * @accounting IFRS IFRS-9 written_off impairment
+src/receivable/workflow/index.ts:11: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/receivable/workflow/index.ts:9: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/saf/t/types/index.ts:16: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/saf/t/types/index.ts:17: * @accounting US-GAAP ASC-205 presentation
 src/sale/fiscal/revenue/index.ts:7: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
@@ -5284,7 +5284,7 @@ src/operators/index.ts:15: * @security ISO-27001 A.5.23 cloud-service-tenant-iso
 src/pack/items/index.ts:33: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/packs/index.ts:37: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/party/workflow.service.ts:8: * @security ISO-27002 §5.4 segregation-of-duties
-src/payable/workflow.service.ts:13: * @security ISO-27002 §5.4 segregation-of-duties three-way-match
+src/payable/workflow/index.ts:14: * @security ISO-27002 §5.4 segregation-of-duties three-way-match
 src/payload.config.multi-tenant-admin.test.ts:10: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/payload.config.multi-tenant-admin.test.ts:11: * @security ISO-27002 §5.15 access-control
 src/payload.config.tenant.test.ts:5: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -6066,8 +6066,8 @@ src/party/workflow.service.ts:7: * @audit ISO-19011:2018 audit-trail state-trans
 src/patent/index.ts:23: * @audit anteriority is a timestamp comparison over anchor-bound digests; obviousness is a merge identity
 src/path/index.ts:11: * @audit paths computed deterministically; never hand-mapped per surface
 src/path/record.ts:12: * @audit pure; never silent mutation of ledger entries
-src/payable/aging.service.ts:12: * @audit ISO-19011:2018 audit-trail
-src/payable/workflow.service.ts:12: * @audit ISO-19011:2018 audit-trail state-transitions
+src/payable/aging/index.ts:13: * @audit ISO-19011:2018 audit-trail
+src/payable/workflow/index.ts:13: * @audit ISO-19011:2018 audit-trail state-transitions
 src/payload.config.multi-tenant-admin.test.ts:14: * @audit ISO-19011:2018 audit-trail
 src/payload.config.ts:577:       * @audit ISO-19011:2018 audit-trail dunning-cycle
 src/payload.config.ts:597:       * @audit ISO-19011:2018 audit-trail external-system-evidence
@@ -6158,9 +6158,9 @@ src/readme/entropy.ts:14: * @audit every line derived from folder model + cross 
 src/readme/quantum-thinking.ts:8: * @audit pure transform; load reads cached path ledger + live atom facets
 src/reality/index.ts:9: * @audit reality = the live matrix root; computed, never hand-asserted
 src/receipts/index.ts:23: * @audit ISO-19011:2018 audit-trail
-src/receivable/aging.service.ts:12: * @audit ISO-19011:2018 audit-trail
-src/receivable/allowance.service.ts:9: * @audit ISO-19011:2018 audit-trail
-src/receivable/workflow.service.ts:11: * @audit ISO-19011:2018 audit-trail state-transitions
+src/receivable/aging/index.ts:13: * @audit ISO-19011:2018 audit-trail
+src/receivable/allowance/index.ts:10: * @audit ISO-19011:2018 audit-trail
+src/receivable/workflow/index.ts:12: * @audit ISO-19011:2018 audit-trail state-transitions
 src/recycle/index.ts:22: * @audit waste computed from entropy.orphans on the live matrix; recycling never fabricates a link
 src/redundancy/index.ts:14: * @audit R = 1 − H/log₂n from ../shannon; clamped to [0,1] -- computed
 src/regeneration/index.ts:25: * @audit computed from first principles + the live content-uuid (toUuid)

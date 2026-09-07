@@ -229,10 +229,10 @@ export const createCustomerCreditFields = () => [
   },
 ]
 
-export * from './aging.service'
+export * from './aging'
 
-export * from './allowance.service'
+export * from './allowance'
 
-export * from './analytics.service'
+export * from './analytics'
 
-export * from './workflow.service'
+export * from './workflow'

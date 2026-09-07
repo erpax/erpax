@@ -1,3 +1,36 @@
+---
+name: text
+description: "Use when reasoning about text — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits."
+atomPath: "blocks/form/text"
+coordinate: "blocks/form/text · 2/share · 0cadb8b2"
+contentUuid: "be52910a-7a13-5add-b959-93207dffb4fc"
+diamondUuid: "38404be8-b713-851d-b34b-7f258382fbe4"
+uuid: "0cadb8b2-f88a-8414-aa25-d2f89a190f37"
+horo: 2
+typography:
+  partition: blocks
+  bondDegree: 75
+standards: []
+bindings: []
+signatures:
+  computationUuid: "a81161fa-ef4f-849c-a544-25780aabcceb"
+  stages:
+    - stage: path
+      stageUuid: "c36d565a-7ed1-8dff-8649-84a6b4d0bb98"
+    - stage: trinity
+      stageUuid: "532d58d2-0a8b-8851-9e45-adbe3d8c855c"
+    - stage: boundary
+      stageUuid: "9c04da31-c569-8122-8583-18d037a00594"
+    - stage: links
+      stageUuid: "7d19830c-83b0-8005-8ff1-4b0055b52d24"
+    - stage: horo
+      stageUuid: "9af5acc6-5ef3-8a3c-a6c2-da349b1a5bd9"
+    - stage: seal
+      stageUuid: "9cee9f4d-d847-8e7f-905a-32849119bd60"
+    - stage: uuid
+      stageUuid: "5af92da6-34ba-8310-be9a-1f9d52465ec7"
+version: 2
+---
 # blocks/form/text — the label names the control, or the control has no name
 
 A `<label htmlFor="x">` and an `<input id="x">` are bound by a string that appears twice. Change

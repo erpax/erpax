@@ -1,3 +1,36 @@
+---
+name: nav
+description: "Use when reasoning about nav — A magnifying glass is a picture. To a screen reader, a link containing only a picture has an accessible name of *the empty string* — announced as \"link\", with nothing to say where…"
+atomPath: "header/nav"
+coordinate: "header/nav · 5/round · 494fce7e"
+contentUuid: "b834c628-a0d1-5327-97e4-aeffa48c635b"
+diamondUuid: "a0fa0e23-a034-8890-9e34-473886f9d508"
+uuid: "494fce7e-b329-842a-a272-c0daafc14d78"
+horo: 5
+typography:
+  partition: header
+  bondDegree: 7
+standards: []
+bindings: []
+signatures:
+  computationUuid: "5ea3778a-ef14-863b-9e75-4869b1fcc233"
+  stages:
+    - stage: path
+      stageUuid: "e63646f2-1052-8fa1-8f0e-d022a14e316c"
+    - stage: trinity
+      stageUuid: "5a0bb43f-465f-88b3-aea2-eb8c4ffc0810"
+    - stage: boundary
+      stageUuid: "6879342a-b1ff-801a-a7c9-dc1d946d83a2"
+    - stage: links
+      stageUuid: "efc5f506-88ff-86a6-a89d-e09c5a95ea10"
+    - stage: horo
+      stageUuid: "662d6287-e965-8e9e-be3f-1217f1041321"
+    - stage: seal
+      stageUuid: "685164cd-2085-8cfa-bde2-fc6eff1b8f89"
+    - stage: uuid
+      stageUuid: "59c44d10-0a48-8548-b416-38e0131d00da"
+version: 2
+---
 # header/nav — the icon link has a name, because an icon has none
 
 A magnifying glass is a picture. To a screen reader, a link containing only a picture has an

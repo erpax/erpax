@@ -1,3 +1,36 @@
+---
+name: button
+description: "Use when reasoning about button — The button that fills an empty install. Its whole design is the guard around a single irreversible action: seeding writes demo content into a live database, and running it twice…"
+atomPath: "before/dashboard/seed/button"
+coordinate: "before/dashboard/seed/button · 1/base · 90d1597d"
+contentUuid: "8080c11a-8e9b-5497-b34d-31593acb7e26"
+diamondUuid: "57e1d84d-4576-8d6b-ae92-ff7676149c86"
+uuid: "90d1597d-7231-8eea-98bd-2cfae85c43ca"
+horo: 1
+typography:
+  partition: before
+  bondDegree: 3
+standards: []
+bindings: []
+signatures:
+  computationUuid: "ee83258f-8220-8643-b516-e4b6952d2bef"
+  stages:
+    - stage: path
+      stageUuid: "d2b34afc-4309-817b-aa66-9206f2238dbc"
+    - stage: trinity
+      stageUuid: "8ef34858-d8e4-825e-8b96-352cc7f53107"
+    - stage: boundary
+      stageUuid: "7f0140b1-5e64-840d-b605-36dfe805a50c"
+    - stage: links
+      stageUuid: "b21c33f2-ad0b-80cd-af0b-3a1377cd2b46"
+    - stage: horo
+      stageUuid: "319ccdd5-5856-8956-b508-f40c6db0d101"
+    - stage: seal
+      stageUuid: "bbe04b13-1ba4-870a-a37a-b65bed7bdf7e"
+    - stage: uuid
+      stageUuid: "ecbc416e-c953-832a-b7ad-000d6c4c7bf3"
+version: 2
+---
 # before/dashboard/seed/button — seeding is destructive, so it may happen exactly once
 
 The button that fills an empty install. Its whole design is the guard around a single irreversible

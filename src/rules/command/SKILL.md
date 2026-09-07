@@ -1,3 +1,36 @@
+---
+name: command
+description: "Use when reasoning about command — That file became a child atom at in an earlier refactor, and the shell was never repointed."
+atomPath: "rules/command"
+coordinate: "rules/command · 7/descent · bd710170"
+contentUuid: "7723104f-b31a-5e81-9ed7-05e79f7533f7"
+diamondUuid: "9d979620-d784-8ed1-b8ca-354ee13a051d"
+uuid: "bd710170-bfd4-8836-9b7a-7328cc4723f6"
+horo: 7
+typography:
+  partition: rules
+  bondDegree: 65
+standards: []
+bindings: []
+signatures:
+  computationUuid: "ff3c7759-649e-8a20-900d-ebd87cf0e6ca"
+  stages:
+    - stage: path
+      stageUuid: "b5e62b08-01b9-8aa0-b446-cccc0c0e3659"
+    - stage: trinity
+      stageUuid: "9717512a-a5ae-888e-87e1-712ca944b401"
+    - stage: boundary
+      stageUuid: "9b1c9973-f425-8bb1-9aad-b2c896ec7274"
+    - stage: links
+      stageUuid: "e5be4147-abd0-8b92-844c-e9720219a480"
+    - stage: horo
+      stageUuid: "05b2bd8f-be85-8b02-b376-eba7b947dca1"
+    - stage: seal
+      stageUuid: "e46e9b95-f7ef-804c-a92b-840ae48a5ddd"
+    - stage: uuid
+      stageUuid: "f3834690-3096-8d6f-8172-46b9fd0ad1e3"
+version: 2
+---
 # rules/command — a step that cannot run reports the same green as a step that passed
 
 ```js

@@ -1,3 +1,36 @@
+---
+name: number
+description: "Use when reasoning about number — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits."
+atomPath: "blocks/form/number"
+coordinate: "blocks/form/number · 8/crest · 50fed0fe"
+contentUuid: "744d4a7e-2758-52a7-9ba9-92217cf1778b"
+diamondUuid: "f19a4386-fec7-8e34-9d05-68b7398fdf07"
+uuid: "50fed0fe-dcf0-8eb6-b89c-877d0a9f91b3"
+horo: 8
+typography:
+  partition: blocks
+  bondDegree: 224
+standards: []
+bindings: []
+signatures:
+  computationUuid: "a084d468-b23f-8ef0-bbe3-8b361b3cae86"
+  stages:
+    - stage: path
+      stageUuid: "948ab81e-37a6-8c3b-9b82-1f5f46446f5f"
+    - stage: trinity
+      stageUuid: "b74d736b-6fe2-8a27-8e3d-f683442035fd"
+    - stage: boundary
+      stageUuid: "2bc3dd4c-948e-8ffc-aae7-80996f4ca380"
+    - stage: links
+      stageUuid: "e51eefcf-b51f-8498-ac46-2573a4b4ee1e"
+    - stage: horo
+      stageUuid: "dde713fb-2f94-8380-aa78-b09591bda184"
+    - stage: seal
+      stageUuid: "bf02deea-a937-8951-a682-0d80e5ff5de8"
+    - stage: uuid
+      stageUuid: "a9aa3397-ab60-8e7e-8eba-806da608287f"
+version: 2
+---
 # blocks/form/number — the label names the control, or the control has no name
 
 A `<label htmlFor="x">` and an `<input id="x">` are bound by a string that appears twice. Change

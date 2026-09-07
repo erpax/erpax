@@ -141,10 +141,10 @@ export const createEarlyPaymentDiscountFields = () => [
   },
 ]
 
-export * from './aging.service'
+export * from './aging'
 
-export * from './analytics.service'
+export * from './analytics'
 
-export * from './discounts.service'
+export * from './discounts'
 
-export * from './workflow.service'
+export * from './workflow'

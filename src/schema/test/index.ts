@@ -77,7 +77,20 @@ export const foldersOutsideSrc = (files: readonly string[]): Entropy[] => {
 }
 
 // ── Structural law 2: inside src/, only collidable kinds ──
-const SRC_COLLIDABLE = /\.(ts|tsx|mts|mjs|js|scss|css|webp|json|jsonld)$/
+/**
+ * The file kinds this corpus content-addresses. Anything else under src is uncollidable data.
+ *
+ * `.lean` was missing and should never have been: [[proof]]/accepted is a GATE whose entire subject
+ * is reading `.lean` files — "a `.lean` file is what the kernel accepts, or it is scaffolding
+ * wearing the word" — and [[rules]]/domain already declares the COMPILED `.olean` opaque, which only
+ * makes sense if the source is not. Nine machine-checked proofs were being counted as entropy for
+ * being proofs.
+ *
+ * `.mdc` is deliberately NOT added. [[rules]]/domain measures it as a surface no gate reads, so
+ * calling it collidable would be excusing exactly the thing that measurement names. Three of them
+ * remain counted, correctly.
+ */
+const SRC_COLLIDABLE = /\.(ts|tsx|mts|mjs|js|scss|css|webp|json|jsonld|lean)$/
 
 /** A src/ file that is neither a SKILL.md nor a collidable code/asset kind. */
 export const uncollidableInSrc = (files: readonly string[]): Entropy[] => {

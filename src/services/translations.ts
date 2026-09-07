@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when adding, finding, or debugging erpax business logic that is NOT schema — pure tested functions, content-uuid math, integrity/tamper-cost, the agent society, domain export/import — the society's organ-body, one folder per organ, called by the collections/access/hooks.",
-    "uuid": "7cae0d21-d743-8605-b524-c73831955aa6",
+    "uuid": "55136441-668a-8e3c-8378-cbc38cead0f2",
     "words": [
       "use",
       "when",

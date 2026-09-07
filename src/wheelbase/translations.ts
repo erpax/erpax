@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about wheelbase — The distance between the centers of the front and rear wheels. Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT for foot/feet.",
-    "uuid": "4f83771d-5f60-8aef-b611-a94cdc2fdd92",
+    "uuid": "2b8f06a4-029c-8cdc-bc78-4c3f5a4abcb1",
     "words": [
       "use",
       "when",

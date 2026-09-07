@@ -1,3 +1,36 @@
+---
+name: register
+description: "Use when reasoning about register — A theorem is only as strong as what it assumes. This asks the kernel, per declaration, and writes the answer down — is the arbiter, and it is **asked, never restated**."
+atomPath: "proof/register"
+coordinate: "proof/register · 7/descent · 75a27efe"
+contentUuid: "be2acde7-9069-59c6-8e43-b34aae279db9"
+diamondUuid: "78c939f6-3223-8845-9d9e-8667c3783913"
+uuid: "75a27efe-efa2-81b1-b180-6b4464e1223d"
+horo: 7
+typography:
+  partition: proof
+  bondDegree: 21
+standards: []
+bindings: []
+signatures:
+  computationUuid: "5ea7f44e-5746-8bd9-9a60-92e66beb585c"
+  stages:
+    - stage: path
+      stageUuid: "cfc60e6f-7522-8225-a769-4433b06ac0ee"
+    - stage: trinity
+      stageUuid: "60765a26-8a68-8864-9995-2e23c5ce046f"
+    - stage: boundary
+      stageUuid: "893fd112-0c5d-800e-bba9-6e0e0e681bcb"
+    - stage: links
+      stageUuid: "7b0758b1-5189-866c-b9ea-b8b539c0c4a0"
+    - stage: horo
+      stageUuid: "fa39ad91-3236-80ca-ac09-2476eaff4a32"
+    - stage: seal
+      stageUuid: "555e4ce7-2af4-8c39-ac13-4331392d1197"
+    - stage: uuid
+      stageUuid: "feb3bfef-5fc8-8c64-af06-b9f983ca0c00"
+version: 2
+---
 # proof/register — the axiom index: what every theorem in this corpus actually rests on
 
 A theorem is only as strong as what it assumes. This asks the kernel, per declaration, and writes

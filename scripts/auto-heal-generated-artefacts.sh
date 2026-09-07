@@ -117,6 +117,55 @@ else
   fi
 fi
 
+# ── Artefact 3: SKILL.md frontmatter ─────────────────────────────────
+#
+# Every SKILL.md carries a computed frontmatter block — name, description, coordinate, uuids,
+# signatures — derived from the atom's own body and its place in the matrix. It is DERIVED, so it
+# drifts the moment an atom is minted or a body is edited, and nothing regenerated it.
+#
+# Measured 2026-09-07: 166 atoms had no `description:` at all. [[seo]] reads that field as the meta
+# description, so its coverage gate had been red at 95.4% — one of a dozen assertions failing in CI
+# for weeks. Nobody forgot: there was no step that would have remembered.
+#
+# This is the step. `--sync` is idempotent — it writes only where the computed block differs — so a
+# clean tree costs one pass and stages nothing.
+if [ "$DRY_RUN" = 0 ]; then
+  if cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/skill/router/upgrade/index.ts --sync >/tmp/erpax-skill-sync.log 2>&1; then
+    if ! git diff --quiet -- 'src/**/SKILL.md'; then
+      echo "auto-heal: SKILL.md frontmatter drifted — regenerated"
+      git add 'src/**/SKILL.md' 2>/dev/null || true
+      healed+=("SKILL.md frontmatter")
+    fi
+  else
+    echo "auto-heal: SKILL.md frontmatter sync FAILED — last 20 lines:"
+    tail -20 /tmp/erpax-skill-sync.log || true
+  fi
+  rm -f /tmp/erpax-skill-sync.log
+fi
+
+# ── Artefact 4: the translations catalogue + per-atom projections ────
+#
+# Every atom carries a `translations.ts` whose entries store a uuid and a word-split RECOMPUTED
+# from the source string. [[translations]]/collect asserts they recompute — "NO HALLUCINATION" —
+# and 2,222 of them did not: the stored uuids were written by an older implementation and nothing
+# regenerated them.
+#
+# Same shape as the frontmatter above: a DERIVED artefact with no step that regenerates it drifts
+# until a gate notices, and the gate that noticed was in CI, where nobody was looking.
+if [ "$DRY_RUN" = 0 ]; then
+  if cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/cli/index.ts translations collect >/tmp/erpax-tr.log 2>&1; then
+    if ! git diff --quiet -- 'src/**/translations.ts' 'src/translations/catalogue.ts'; then
+      echo "auto-heal: translations catalogue drifted — regenerated"
+      git add 'src/**/translations.ts' src/translations/catalogue.ts 2>/dev/null || true
+      healed+=("translations catalogue")
+    fi
+  else
+    echo "auto-heal: translations collect FAILED — last 20 lines:"
+    tail -20 /tmp/erpax-tr.log || true
+  fi
+  rm -f /tmp/erpax-tr.log
+fi
+
 # ── Future artefacts — wire as they land ─────────────────────────────
 # - src/services/spec-generator/* outputs (chain registry, seeds, tests,
 #   marketing pages, README per collection): when CCCCC pipeline gets

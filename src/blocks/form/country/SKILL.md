@@ -1,3 +1,36 @@
+---
+name: country
+description: "Use when reasoning about country — The control is the ordinary Radix combobox (blocks/form/select): a whose only accessible name is the bound to its ."
+atomPath: "blocks/form/country"
+coordinate: "blocks/form/country · 4/weave · 1c692356"
+contentUuid: "18a34bef-2c45-5569-bfa1-4de2165ccb77"
+diamondUuid: "cd275c3a-91d0-8b0d-85f6-d878940011fd"
+uuid: "1c692356-94c2-8ba5-9ee4-70ada3ddce19"
+horo: 4
+typography:
+  partition: blocks
+  bondDegree: 84
+standards: []
+bindings: []
+signatures:
+  computationUuid: "ecf51e2e-20bd-8788-b29a-744424d7b639"
+  stages:
+    - stage: path
+      stageUuid: "680ab7ac-1c6e-8428-96c0-a3e4c8dfa4ef"
+    - stage: trinity
+      stageUuid: "7ea31ab8-12e5-8cdd-ac27-7154e0aae768"
+    - stage: boundary
+      stageUuid: "b94c07e4-5a89-8330-9a2f-1736278230dc"
+    - stage: links
+      stageUuid: "ffc8b45a-5d34-8e5f-9747-0accb9d2afd4"
+    - stage: horo
+      stageUuid: "d3782951-af55-8adc-9d06-0f95dd92f878"
+    - stage: seal
+      stageUuid: "0321e80d-9971-8b79-bbe7-acb550f72cb8"
+    - stage: uuid
+      stageUuid: "e28addc4-aad2-816c-85fe-69aaf8c1030f"
+version: 2
+---
 # blocks/form/country — 245 codes that must each be a real ISO 3166-1 alpha-2
 
 The control is the ordinary Radix combobox ([[blocks]]/form/select): a `<button role="combobox">`

@@ -1,3 +1,36 @@
+---
+name: impact
+description: "Use when reasoning about impact — The full-bleed hero. It also **darkens the header on mount** — the hero paints white text over its own dark field, and the header sits on top of it, so a header left in its light…"
+atomPath: "heros/high/impact"
+coordinate: "heros/high/impact · 5/round · 6c94afff"
+contentUuid: "3335298e-9e35-557d-a744-dfddb1228050"
+diamondUuid: "0bd3bc6c-b226-87df-8e24-8948f6e9e7dc"
+uuid: "6c94afff-dcbb-8e3e-bfd7-c1a8886a4314"
+horo: 5
+typography:
+  partition: heros
+  bondDegree: 13
+standards: []
+bindings: []
+signatures:
+  computationUuid: "28a06711-1180-8409-a94d-e967c3c3e14a"
+  stages:
+    - stage: path
+      stageUuid: "b6d027c5-93f3-8ca7-bc9a-4f0467a0f760"
+    - stage: trinity
+      stageUuid: "678e94c7-ef16-8dca-a289-7cc4d5dcc5dd"
+    - stage: boundary
+      stageUuid: "649bc525-19cb-8dc2-9f7c-7024344aa0c6"
+    - stage: links
+      stageUuid: "f97d0d84-45aa-8a75-a402-014fcf6d7164"
+    - stage: horo
+      stageUuid: "f8aa1313-a0c0-81f9-8211-cd3eaa47f114"
+    - stage: seal
+      stageUuid: "eaf792de-f497-8292-b52e-922c0e72fbbe"
+    - stage: uuid
+      stageUuid: "864feb84-150d-89d2-9e6a-336bfe4166c2"
+version: 2
+---
 # heros/high/impact — a set of links is a LIST, and an empty set is no list at all
 
 The full-bleed hero. It also **darkens the header on mount** — the hero paints white text over

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about endocrine as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "304e6325-16a6-8c0d-87b0-8c5df0232c60",
+    "uuid": "5d47fa37-8803-8265-bfd4-d2ab8fd9737e",
     "words": [
       "use",
       "when",

@@ -1,3 +1,36 @@
+---
+name: order
+description: "Use when reasoning about order — erpax folds content-uuids to a root in two different ways, and both are correct for what they answer:"
+atomPath: "merge/order"
+coordinate: "merge/order · 4/weave · f5c44bf5"
+contentUuid: "0f5adf0d-c3c4-59f5-92e9-a778301e3d73"
+diamondUuid: "4debfceb-7e9e-82ae-bf84-06824a049ce2"
+uuid: "f5c44bf5-cc93-82d8-a720-f89f2ba07b0c"
+horo: 4
+typography:
+  partition: merge
+  bondDegree: 66
+standards: []
+bindings: []
+signatures:
+  computationUuid: "ef8a3c5f-977a-89ec-b0cf-175504f5bc4b"
+  stages:
+    - stage: path
+      stageUuid: "fc5613e5-63d4-8c3e-9f61-95c29fd5fa66"
+    - stage: trinity
+      stageUuid: "4679185a-37a9-8659-b410-c63461e40774"
+    - stage: boundary
+      stageUuid: "4061a16b-4c2d-80cb-bbf5-8080f53a4d70"
+    - stage: links
+      stageUuid: "ea60428b-240d-8842-ab5b-e1dd707f86f0"
+    - stage: horo
+      stageUuid: "2d2d5524-b6c4-8bd4-b2b5-7b6649dc180c"
+    - stage: seal
+      stageUuid: "be0a3fe8-9231-8f0c-8fe9-a5dc2d1ca7d3"
+    - stage: uuid
+      stageUuid: "61f5601e-7eda-8623-8227-c916e324a542"
+version: 2
+---
 # merge/order — a root addresses a SET or a SEQUENCE, and the two are never interchangeable
 
 erpax folds content-uuids to a root in two different ways, and both are correct for what they answer:

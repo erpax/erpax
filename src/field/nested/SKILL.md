@@ -1,3 +1,37 @@
+---
+name: nested
+description: "Use when reasoning about nested — Payload groups nest, so a hook that must reach walks a dotted path. Three atoms wrote that walk for themselves, and body-hashing (rules/copy) proved two of them byte-identical:"
+atomPath: "field/nested"
+coordinate: "field/nested · 5/round · 5bbe40e1"
+contentUuid: "3a4292b3-0793-5c42-a660-cc56a6e3051a"
+diamondUuid: "d9f0c3e1-e56f-801a-ba4c-3f081b969408"
+uuid: "5bbe40e1-5a05-8bdf-8487-230597284c9c"
+horo: 5
+typography:
+  partition: field
+  bondDegree: 12
+standards:
+  - "ISO/IEC 25010:2023 §5.6 maintainability (one truth, one address)"
+bindings: []
+signatures:
+  computationUuid: "a790a638-339c-8016-9370-c5f07c012653"
+  stages:
+    - stage: path
+      stageUuid: "d262b25f-1e45-8e9a-af99-a14dba4560ac"
+    - stage: trinity
+      stageUuid: "e65a0115-1100-8a51-bf9e-852a9725cd84"
+    - stage: boundary
+      stageUuid: "7b9521b1-af72-857d-9ad9-7e290c70e012"
+    - stage: links
+      stageUuid: "7a652f45-e64e-8f23-8224-c458abc8c30d"
+    - stage: horo
+      stageUuid: "00be1cd8-6acf-84d7-8619-64d7f7c5f470"
+    - stage: seal
+      stageUuid: "05b3c750-fcde-849c-8678-cfc62de8491f"
+    - stage: uuid
+      stageUuid: "2a253a01-fffa-871a-aead-9648f7a5a591"
+version: 2
+---
 # field/nested — one dotted path, three private implementations
 
 Payload groups nest, so a hook that must reach `bank.bankIban` walks a dotted path. Three atoms

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the electronic medical record as a quantum snapshot chain — a patient's health state captured as content-addressed, immutable, append-only encounters and observations, nesting layer after layer, never erased so the full history stays reversible and tamper-evident.",
-    "uuid": "6e6d11fd-b486-87ad-890b-80c310dc213f",
+    "uuid": "4d3b3e6e-1385-83bb-9063-5fe82b8c62db",
     "words": [
       "use",
       "when",

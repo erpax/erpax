@@ -1,3 +1,36 @@
+---
+name: replaceable
+description: "Use when reasoning about replaceable — erpax cites ISO, RFC, WCAG and statute across 219 atoms. **Every one of those citations is an assumption about the world until something can contradict it.** What turns a citation…"
+atomPath: "proof/replaceable"
+coordinate: "proof/replaceable · 5/round · 52edb6c3"
+contentUuid: "5767c337-5574-5424-a944-a0a4b3cb96b8"
+diamondUuid: "78c5bc5f-5b01-8a60-996c-9ec36c068324"
+uuid: "52edb6c3-66ac-8deb-9c33-a840335dc6f2"
+horo: 5
+typography:
+  partition: proof
+  bondDegree: 9
+standards: []
+bindings: []
+signatures:
+  computationUuid: "4640a8d1-9669-8916-b1c2-c36d86a51406"
+  stages:
+    - stage: path
+      stageUuid: "5f5c9b89-d5ca-8eec-8edb-3eaaddac934c"
+    - stage: trinity
+      stageUuid: "258ef1c5-f44d-8ec5-82af-7bed98c76d76"
+    - stage: boundary
+      stageUuid: "de3ddb03-ee32-8cda-a72e-43350b7a6792"
+    - stage: links
+      stageUuid: "443c335f-e44e-8636-b3a2-ca927c94ecc6"
+    - stage: horo
+      stageUuid: "00c70637-6c28-8023-84ad-d33b250d9be6"
+    - stage: seal
+      stageUuid: "6e36f693-8734-847a-814c-dd3c318a8664"
+    - stage: uuid
+      stageUuid: "6807c0d6-b946-89d9-ad26-f3e195727c51"
+version: 2
+---
 # proof/replaceable — a cited standard is an axiom until a gate discharges it
 
 erpax cites ISO, RFC, WCAG and statute across 219 atoms. **Every one of those citations is an assumption about the world until something can contradict it.** What turns a citation into a theorem is a gate: an `assert…` that fails closed when the standard is violated. Until then the atom asserts conformance and nothing can say otherwise — [[rules]]/refutable's defect, wearing a standard's number.

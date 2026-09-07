@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about variance — Use for analyzing variance between planned (budget/standard) and actual results — budget variance, volume/efficiency/price splits in standard costing, and management-defined perfor",
-    "uuid": "4d53a6c7-e691-80dd-ad1b-caec85c24597",
+    "uuid": "357d818b-7479-842d-b858-c0d3850ad319",
     "words": [
       "use",
       "when",

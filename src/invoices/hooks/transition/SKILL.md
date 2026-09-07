@@ -1,3 +1,38 @@
+---
+name: transition
+description: "Use when reasoning about transition — The AR hook ( ) and the AP hook ( ) both answer one question before emitting a domain event: *did this write CHANGE the document's liveness?* Both wrote , , and for themselves…"
+atomPath: "invoices/hooks/transition"
+coordinate: "invoices/hooks/transition · 5/round · 8c233d26"
+contentUuid: "bd560a66-2f49-5d7f-963b-adb9114845fc"
+diamondUuid: "2b377ee8-935f-8b82-a1fd-80e90eb57f53"
+uuid: "8c233d26-0142-8ca2-bd2e-f9c93e1a5e8b"
+horo: 5
+typography:
+  partition: invoices
+  bondDegree: 16
+standards:
+  - "IAS-1"
+  - "IFRS IAS-1 presentation (a reversal is a transition, never an edit)"
+bindings: []
+signatures:
+  computationUuid: "3289a91b-c1ac-8149-b1f4-9ce441ac5df0"
+  stages:
+    - stage: path
+      stageUuid: "be733482-a74c-8b44-8573-a52fe2eb38fe"
+    - stage: trinity
+      stageUuid: "9c3b0abe-1bf9-8636-954b-6ea47ff5dd9c"
+    - stage: boundary
+      stageUuid: "394bf38f-8794-8a9e-ae66-af5a9e6d31e0"
+    - stage: links
+      stageUuid: "42ee8e40-cda5-85e9-8f56-018d8c1b60a8"
+    - stage: horo
+      stageUuid: "da76e591-3903-8c4a-8e47-0f600fd8a669"
+    - stage: seal
+      stageUuid: "2dd7452e-fa21-888d-ad42-15b98432233b"
+    - stage: uuid
+      stageUuid: "5c5f12ca-b701-893d-b41b-b9f730b703d6"
+version: 2
+---
 # invoices/hooks/transition — an event fires on the crossing, not on the state
 
 The AR hook (`invoice.ts`) and the AP hook (`bill.ts`) both answer one question before emitting a

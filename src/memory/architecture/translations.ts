@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when operational memory must be understood as the architecture lattice itself — NOT a side store. The diamond graph, uuid/matrix bindings, typography partitions, folder SKILL statements, architecture-invariants, and sealed git tree ARE what the system remembers; session blobs sanitize to architecture content and verify against the live-tree facet.",
-    "uuid": "1ed8f016-f72e-8126-ada1-09e2764c0e28",
+    "uuid": "a0d010d4-4657-8d4f-ba33-8f1a2bbd53ef",
     "words": [
       "use",
       "when",

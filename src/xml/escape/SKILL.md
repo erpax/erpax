@@ -1,3 +1,37 @@
+---
+name: escape
+description: "Use when reasoning about escape — must be replaced before any text or attribute value is embedded in generated XML (**XML 1.0 §2.4**)."
+atomPath: "xml/escape"
+coordinate: "xml/escape · 4/weave · 59af1de7"
+contentUuid: "eb70028e-8a10-56c0-aa29-55d57585d300"
+diamondUuid: "46c74837-ceaf-8f25-9def-52b6be12eda5"
+uuid: "59af1de7-31e0-8c2c-8144-76428adfe239"
+horo: 4
+typography:
+  partition: xml
+  bondDegree: 12
+standards:
+  - "XML-1.0 §2.4 predefined-entities"
+bindings: []
+signatures:
+  computationUuid: "a3b48a9b-03ed-8b63-98bf-453d672e0ada"
+  stages:
+    - stage: path
+      stageUuid: "190898cf-d503-8d7f-9628-a22f5b97c35d"
+    - stage: trinity
+      stageUuid: "a27a96b4-d825-86bd-ac01-16c1e929c620"
+    - stage: boundary
+      stageUuid: "795be8d2-aad1-82f8-ab4e-ee4bd3861205"
+    - stage: links
+      stageUuid: "5e6cd3b1-8ecf-8304-a848-39fb4e4b4fc3"
+    - stage: horo
+      stageUuid: "9112c3b2-ce8f-8eda-9b81-d00bba9d1f49"
+    - stage: seal
+      stageUuid: "81f4065c-e5de-802b-b849-31d66410b513"
+    - stage: uuid
+      stageUuid: "ffa357c8-bf21-8551-9c9d-68ce9b33ddac"
+version: 2
+---
 # xml/escape — the five predefined entities, once
 
 `& < > " '` must be replaced before any text or attribute value is embedded in generated XML

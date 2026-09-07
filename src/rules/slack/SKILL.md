@@ -1,3 +1,36 @@
+---
+name: slack
+description: "Use when reasoning about slack — Every gate in this corpus asks one question: **is this claim stronger than the evidence?** A -proved theorem listed as proven. A directory tree of folders that do not exist."
+atomPath: "rules/slack"
+coordinate: "rules/slack · 1/base · 2ed276ad"
+contentUuid: "6a33ef86-b931-59f8-b147-5deff275c368"
+diamondUuid: "aa1e1ba5-f852-839c-b499-5d66c12a14de"
+uuid: "2ed276ad-07e2-8a90-a802-b808ff0d49bf"
+horo: 1
+typography:
+  partition: rules
+  bondDegree: 12
+standards: []
+bindings: []
+signatures:
+  computationUuid: "413a50f8-3497-8b2f-9ea6-68f0f14c655b"
+  stages:
+    - stage: path
+      stageUuid: "efa7045d-0d85-8e31-8e46-a24cfd4c482e"
+    - stage: trinity
+      stageUuid: "03f1ee77-90a7-8e4e-b532-c91301088490"
+    - stage: boundary
+      stageUuid: "a57fb0af-c523-88ce-8888-fec36f7b2198"
+    - stage: links
+      stageUuid: "f0226838-e8f7-8808-8adc-7a2783156793"
+    - stage: horo
+      stageUuid: "5a55056d-bdf9-85cd-ba8c-7eec231e70c9"
+    - stage: seal
+      stageUuid: "7dd7aa31-bbf2-87f8-b0c3-770b956b0b6d"
+    - stage: uuid
+      stageUuid: "cdf7d9f3-6e36-87df-8a97-fac05b4439de"
+version: 2
+---
 # rules/slack — an under-claim is an over-claim, involuted
 
 Every gate in this corpus asks one question: **is this claim stronger than the evidence?** A `sorry`-proved theorem listed as proven. A directory tree of folders that do not exist. `corpusSolvesAny()` that could not go red. All over-claims, all caught.

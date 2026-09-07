@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Quantum orchestration engine for parallel Millennium Problem computation",
-    "uuid": "9d5c50cc-b92b-8b75-a3dc-f4a65b63b7e1",
+    "uuid": "13a8ee2f-ddbd-8338-bd7b-ace2cab817a3",
     "words": [
       "quantum",
       "orchestration",

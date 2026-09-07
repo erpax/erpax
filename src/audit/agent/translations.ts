@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about agent — Use to audit an agent's own changeset the way a real auditor audits a human's submission — every claim (@invariant · @standard · @compliance · @audit) in a changed code file must have a proof leg beside it, or the submission is refused. ISO 19011 §6.4: a finding traces to objective evidence. Run: git diff --name-only | tsx src/audit/agent/index.ts",
-    "uuid": "64aa7f29-1cd4-8c75-a44f-3a1c23f9a2ba",
+    "uuid": "4bc88a1f-5258-8116-9f3f-75795a0b29a8",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when monitoring all erpax gate violations in realtime — folder law, rules:check, diamond strays, gap eb, finishedIdeaCrossed, import/boundary, path-follow, entanglement, logic-concentration.",
-    "uuid": "d15d13a0-803c-8a6e-a095-d22fc92890ad",
+    "uuid": "3bad3949-5ba7-8788-994c-c76544d526e9",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about inseam as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "d6d5e918-5d3d-8b42-8ac8-349010e7d532",
+    "uuid": "d61772f2-951b-81ee-a8d0-f5bf000e8f52",
     "words": [
       "use",
       "when",

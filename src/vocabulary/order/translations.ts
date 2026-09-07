@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "order",
-    "uuid": "93e6ee17-b980-89fc-a101-5eca4d589591",
+    "uuid": "f5c44bf5-cc93-82d8-a720-f89f2ba07b0c",
     "words": [
       "order"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about order — An order is a confirmation of a transaction (a receipt), which can contain multiple line items, each represented by an Offer that has been accepted by the customer.",
-    "uuid": "154e6eee-5242-85a9-9c6d-dc9c97017d7c",
+    "uuid": "6bbe63f3-063f-83de-87b2-66d5b29cbaae",
     "words": [
       "use",
       "when",

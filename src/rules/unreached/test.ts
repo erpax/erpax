@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { existsSync, mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
+import { existsSync, mkdtempSync, mkdirSync, readdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { reachedFrom, shippedAtoms, unreachedAtoms } from './index'
@@ -15,8 +15,26 @@ describe('rules/unreached — the doors', () => {
     expect(reachedFrom(['src/no/such/entry.ts'], process.cwd()).size).toBe(0)
   })
 
-  it('shippedAtoms reads the published package trees', () => {
-    expect(shippedAtoms(process.cwd()).size).toBeGreaterThan(10)
+  // The SECOND door that cannot answer in a clone. `shippedAtoms` reads `packages/*/dist/types` —
+  // BUILD OUTPUT, gitignored like the LLM.md faces below. Where the packages have not been built the
+  // set is empty, which is the honest answer to "what does this repo ship" when nothing is built.
+  //
+  // Two of this axis's five doors therefore read artefacts a fresh checkout does not have. That is
+  // the finding, not the assertion: in CI the axis is inert, and inert reads as green.
+  it('shippedAtoms reads the published package trees, when they are built', () => {
+    const n = shippedAtoms(process.cwd()).size
+    if (!existsSync(join(process.cwd(), 'packages'))) {
+      expect(n).toBe(0)
+      return
+    }
+    const built = readdirSync(join(process.cwd(), 'packages'), { withFileTypes: true }).some(
+      (d) => d.isDirectory() && existsSync(join(process.cwd(), 'packages', d.name, 'dist', 'types')),
+    )
+    if (!built) {
+      expect(n).toBe(0) // nothing built ⇒ nothing shipped; stated, not skipped
+      return
+    }
+    expect(n).toBeGreaterThan(10)
   })
 })
 

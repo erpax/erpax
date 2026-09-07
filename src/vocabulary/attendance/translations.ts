@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about attendance — A schema.org component word, collided out of schema.org compounds — fused from EventAttendanceModeEnumeration · eventAttendanceMode (sti · collapse · merge).",
-    "uuid": "87912213-d127-8267-b645-6c3c80e223ab",
+    "uuid": "125d8131-cfe0-8b60-bbb0-ef8f2d017bc5",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when executing FM work — corrective/preventive/predictive maintenance, statutory inspections, refurbishments — tracking parts issued, labour hours, vendor cost, IAS-16 capex/opex classification, permit-to-work, failure codes, and GL journal-entry on completion. The CMMS work-order execution register per ISO 55000.",
-    "uuid": "1c49d22c-f409-84cd-aa73-f832fed88680",
+    "uuid": "ce6e7032-6f7f-8499-9c40-9e6c794dc5b3",
     "words": [
       "use",
       "when",

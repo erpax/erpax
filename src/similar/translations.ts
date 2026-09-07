@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about similar — A pointer to another, functionally similar product (or multiple products).",
-    "uuid": "5cee1987-8d92-84ce-ba8d-15912bb76476",
+    "uuid": "b8b16ee2-f8d6-8e60-a596-4a83a8248f4f",
     "words": [
       "use",
       "when",

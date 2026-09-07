@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when testing through pairs of inverted development teams — a prover that asserts and builds, and a refuter that takes the exact opposite side and attacks it. They are duals (the anti-claim is the claim's negation), always opposed, and the verdict manifests realtime per round. Popper asymmetry: one refutation falls the claim, no amount of proof verifies it — a claim STANDS as not-yet-refuted, never as proven true.",
-    "uuid": "3fe3ad8e-65f6-8148-9114-fb6c9a204379",
+    "uuid": "31b87687-d1ad-8d5e-b8c1-23e07215ab6a",
     "words": [
       "use",
       "when",

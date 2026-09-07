@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when performing or auditing the period-end bank-balance proof — GL cash balance vs. camt.053 bank-statement closing balance, quantified variance, reconciling items (outstanding deposits/cheques/fees/NSF), SOX §404 TOM-CSH-01 evidence. The bank-side period-end balance proof collection.",
-    "uuid": "ecb3d7e7-2335-8a05-bbd5-6d706b2e072f",
+    "uuid": "04ab85c8-4dfe-84d4-9590-d32789d17709",
     "words": [
       "use",
       "when",

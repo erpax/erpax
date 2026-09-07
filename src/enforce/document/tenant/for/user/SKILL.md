@@ -1,3 +1,38 @@
+---
+name: user
+description: "Use when reasoning about user — scopes what a user can *read* and *update*. What it does not reliably reject is a **create that names another tenant**: the document does not exist yet, so there is no existing…"
+atomPath: "enforce/document/tenant/for/user"
+coordinate: "enforce/document/tenant/for/user · 8/crest · f9a094df"
+contentUuid: "c4135dde-e9b0-5a51-abe2-65aa3b8d0a33"
+diamondUuid: "fc17a70f-1e39-8590-a9aa-51b620d9459d"
+uuid: "f9a094df-eccf-8990-b113-7c79a8bfa734"
+horo: 8
+typography:
+  partition: enforce
+  bondDegree: 82
+standards:
+  - "GDPR Art.5(1)(f) integrity-and-confidentiality"
+  - "SOC-2 CC6.1 logical-access-controls"
+bindings: []
+signatures:
+  computationUuid: "e572a52c-5ce6-881a-aaae-d24819918292"
+  stages:
+    - stage: path
+      stageUuid: "b8de9264-0155-8110-a721-46132180852b"
+    - stage: trinity
+      stageUuid: "99d5f307-713d-8d79-931f-4fca4f23a54f"
+    - stage: boundary
+      stageUuid: "fb2e72e5-e28a-8af6-91d3-30a2c72bb1c8"
+    - stage: links
+      stageUuid: "16eb2414-fc96-8474-a5ff-dec150a60a7d"
+    - stage: horo
+      stageUuid: "f10bfdfd-553b-8ebf-9dac-8bf001dcbc5b"
+    - stage: seal
+      stageUuid: "3d7bb540-b2e6-8486-83ca-6afe07251e87"
+    - stage: uuid
+      stageUuid: "070ebcb2-7730-8406-a723-181ea4338803"
+version: 2
+---
 # enforce/document/tenant/for/user — the create that the plugin's access rules let through
 
 `@payloadcms/plugin-multi-tenant` scopes what a user can *read* and *update*. What it does not

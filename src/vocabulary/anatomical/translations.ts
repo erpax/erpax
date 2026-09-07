@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about anatomical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "97b1cfa9-5420-8314-92e5-1efd823feb21",
+    "uuid": "486b26a3-b2ef-88d9-bddb-3e6a71750c6a",
     "words": [
       "use",
       "when",

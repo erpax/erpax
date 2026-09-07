@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "ISO 4217 currency-code validator.",
-    "uuid": "5c21957b-c87e-8e19-b158-f866ad3a9833",
+    "uuid": "8be93fce-c16f-8eda-bf50-83c5aaba9a46",
     "words": [
       "iso",
       "currency",

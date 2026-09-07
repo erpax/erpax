@@ -1,3 +1,36 @@
+---
+name: mirror
+description: Use when reasoning about mirror — That assertion cannot fail for any reason a reader cares about. Change the constant and the test changes with it.
+atomPath: "rules/mirror"
+coordinate: "rules/mirror · 7/descent · daca8ae9"
+contentUuid: "9048762b-a756-5ac7-8a27-3925720f0420"
+diamondUuid: "b4c4500f-fcff-83a6-aa48-629758d37dea"
+uuid: "daca8ae9-fc38-80ac-99c5-75f2ee29e966"
+horo: 7
+typography:
+  partition: rules
+  bondDegree: 34
+standards: []
+bindings: []
+signatures:
+  computationUuid: "de637d38-f675-8094-a86f-22a2cd1ae236"
+  stages:
+    - stage: path
+      stageUuid: "a41af642-052b-899f-b78d-b837ab008c07"
+    - stage: trinity
+      stageUuid: "8f86eade-2d06-8a6b-908f-685dc8e76830"
+    - stage: boundary
+      stageUuid: "3c24b35d-9887-859b-99e6-2c8f5107349d"
+    - stage: links
+      stageUuid: "ae2540da-e02f-8e3a-a41d-d98c340bac9e"
+    - stage: horo
+      stageUuid: "75baf4b9-4d80-85ed-a420-88c46afb6c6b"
+    - stage: seal
+      stageUuid: "0135c6a6-3ff8-86fb-866c-1471123ad156"
+    - stage: uuid
+      stageUuid: "0075dfc2-8569-8138-82db-a7b0e2fde2be"
+version: 2
+---
 # rules/mirror — a proof that restates its own definition is not evidence, and evidence is a legal word
 
 ```ts

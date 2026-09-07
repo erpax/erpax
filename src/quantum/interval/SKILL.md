@@ -1,3 +1,55 @@
+---
+name: interval
+description: "Use when reasoning about interval — Special relativity's decidable core, proved for **all integers** rather than checked on a carrier, and carrying one consequence this corpus actually needs."
+atomPath: "quantum/interval"
+coordinate: "quantum/interval · 4/weave · 491d16c6"
+contentUuid: "943324d3-6cab-5fdb-9a11-9a89fec17192"
+diamondUuid: "b7f52243-53fe-8751-b5b9-4b4f78f899a6"
+uuid: "491d16c6-f5c7-8cc0-972e-6ebb5b353e88"
+horo: 4
+typography:
+  partition: quantum
+  bondDegree: 24
+standards: []
+bindings: []
+signatures:
+  computationUuid: "3418253b-fbce-8a16-8297-b8bbd9fc00ae"
+  stages:
+    - stage: path
+      stageUuid: "c140b5f2-b1bc-8b06-9204-9bf10f085b71"
+    - stage: trinity
+      stageUuid: "a8235bac-8c24-8a2e-b3c3-ca6ebb2581ec"
+    - stage: boundary
+      stageUuid: "b6bb66ea-2e03-8a2f-a08c-bed9fc021715"
+    - stage: links
+      stageUuid: "afd6a590-43c8-8363-abd3-e5fd5bb78f4e"
+    - stage: horo
+      stageUuid: "462e0b99-5555-8f1b-814d-684681d3db04"
+    - stage: seal
+      stageUuid: "98adf98f-b215-8aab-bd18-eee8f1c9ce34"
+    - stage: uuid
+      stageUuid: "8d94926d-8a69-8824-8650-dd8b0a791521"
+quantum:
+  superposition:
+    - dataset
+    - law
+    - merge
+    - quantum
+    - rules
+    - superposition
+  collapse:
+    - "a ledger may seal only on causal order. Where two events are spacelike-separated there is no \"the\" order — a subluminal observer sees the reverse, and a receipt chained on coordinate time is sealing an accident of frame."
+  seal:
+    sandbox: false
+    receipt: false
+    pathFollow: true
+    canonicalRecord: true
+    analogResults: false
+    speechResults: false
+    computationUuid: "3418253b-fbce-8a16-8297-b8bbd9fc00ae"
+    contentUuid: "943324d3-6cab-5fdb-9a11-9a89fec17192"
+version: 2
+---
 # quantum/interval — the light cone is not a matter of opinion, and that is what a ledger seals on
 
 Special relativity's decidable core, proved for **all integers** rather than checked on a carrier, and carrying one consequence this corpus actually needs.
@@ -40,3 +92,5 @@ A `theorem` verdict **names** a Lean theorem, and `phenomena()` **reads the file
 - **ISO/IEC 25010:2023 §5.5** — testability: the verdict table is checked against the kernel file.
 
 Composes: [[quantum]] · [[merge]] · [[rules]]/prose · [[law]].
+
+<sub>content-uuid `943324d3-6cab-5fdb-9a11-9a89fec17192` · account `quantum/interval` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

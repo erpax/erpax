@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when documenting intercompany transfer pricing per OECD BEPS Action 13 — Master File, Local File, and Country-by-Country Report per jurisdiction per fiscal year — TP method, CbCR aggregates, Pillar Two applicability, filing deadlines and status. The BEPS Action 13 TP documentation register.",
-    "uuid": "edebb026-514a-81e5-9dc1-c2dc6d512c73",
+    "uuid": "28423944-7b8e-857e-8956-a2c4bce80776",
     "words": [
       "use",
       "when",

@@ -1,3 +1,36 @@
+---
+name: checkbox
+description: "Use when reasoning about checkbox — 's returns an and expects a **native** input to fire it. The shadcn checkbox is a Radix button with — it fires , and the native event never happens."
+atomPath: "blocks/form/checkbox"
+coordinate: "blocks/form/checkbox · 2/share · b7612626"
+contentUuid: "94706c59-3c56-529a-b79c-dc442f308157"
+diamondUuid: "530890b4-ba6e-8475-8123-84e27cb51bca"
+uuid: "b7612626-e56c-8a02-9a50-c9bb3dc2f5aa"
+horo: 2
+typography:
+  partition: blocks
+  bondDegree: 9
+standards: []
+bindings: []
+signatures:
+  computationUuid: "8f9718a4-08bd-86be-bb0e-6003775f292f"
+  stages:
+    - stage: path
+      stageUuid: "83e27cf2-abde-8c3e-9bec-6b650b6565bf"
+    - stage: trinity
+      stageUuid: "c0170c27-7f64-8333-8af3-174426537751"
+    - stage: boundary
+      stageUuid: "40320182-35ad-8969-bd5b-ce2a195e86bf"
+    - stage: links
+      stageUuid: "25562ceb-6425-8677-90ae-493904b44a66"
+    - stage: horo
+      stageUuid: "8d8e4270-ea8f-8067-a2c2-d1a4e20f8b07"
+    - stage: seal
+      stageUuid: "c55af822-7101-8c63-93d2-774aaf73671c"
+    - stage: uuid
+      stageUuid: "5ab25f79-b3e4-82d0-bea7-20e1987ee97b"
+version: 2
+---
 # blocks/form/checkbox — the styled control is not an input, so the value must be written by hand
 
 `react-hook-form`'s `register(name)` returns an `onChange` and expects a **native** input to fire it.

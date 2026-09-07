@@ -1,3 +1,36 @@
+---
+name: card
+description: Use when reasoning about card — Making a card clickable is easy and usually wrong. Wrapping the card in an swallows every nested link.
+atomPath: "use/clickable/card"
+coordinate: "use/clickable/card · 2/share · 4674345d"
+contentUuid: "c121c957-8714-5446-af17-3ce48bc3eed5"
+diamondUuid: "8bd33c5c-181b-8ff3-a90c-fc3fa933ccef"
+uuid: "4674345d-1e8a-883c-aaef-202531ddc0b2"
+horo: 2
+typography:
+  partition: use
+  bondDegree: 33
+standards: []
+bindings: []
+signatures:
+  computationUuid: "94a3f144-b1e9-89f4-9239-e01612590375"
+  stages:
+    - stage: path
+      stageUuid: "605b0008-d230-8fc8-abe7-9df5181fb3c6"
+    - stage: trinity
+      stageUuid: "e77ee6ef-edb7-8b79-bedd-49a3db613c36"
+    - stage: boundary
+      stageUuid: "0347b1bc-9c5c-86c6-82df-4a9d438c3f18"
+    - stage: links
+      stageUuid: "8450bc3c-052f-80fc-acc7-8e7cd8877034"
+    - stage: horo
+      stageUuid: "83d3e966-9252-8660-ab69-f6e689674e6a"
+    - stage: seal
+      stageUuid: "3c6a28cd-13d6-87ca-9688-2f1bbc85cfe6"
+    - stage: uuid
+      stageUuid: "baf2381b-de5e-86a4-919e-c26acc6bb7ab"
+version: 2
+---
 # use/clickable/card — the whole card is clickable, and every other way of clicking still works
 
 Making a card clickable is easy and usually wrong. Wrapping the card in an `<a>` swallows every

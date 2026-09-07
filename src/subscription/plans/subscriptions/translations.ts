@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing a tenant's active subscription — plan binding, billing-period dates, trial/active/past-due/grace/suspended/cancelled state machine, Stripe subscription and customer IDs, cancellation and pause events, IFRS-15/ASC-606 deferred-revenue lifecycle hooks. The tenant-to-plan binding collection.",
-    "uuid": "3024e033-714b-83ba-b699-91c64fda3581",
+    "uuid": "68c6d06c-ec0d-8219-aeae-7b103d314d64",
     "words": [
       "use",
       "when",

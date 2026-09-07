@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hosp as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "b37fd699-a25d-8d3e-9f12-46d33de7284e",
+    "uuid": "ecde5443-88b7-8ee5-9cab-aad01d04c27b",
     "words": [
       "use",
       "when",

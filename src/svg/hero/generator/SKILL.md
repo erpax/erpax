@@ -1,3 +1,39 @@
+---
+name: generator
+description: "Use when reasoning about generator — A hero image per product, synthesised rather than commissioned: a 1600×900 SVG built from primitive paths and , with no font file, no raster asset and no image library."
+atomPath: "svg/hero/generator"
+coordinate: "svg/hero/generator · 7/descent · edabfe45"
+contentUuid: "d810c3a7-598f-55c6-8db2-ae3e2c98f73c"
+diamondUuid: "b2822351-f800-81e3-ac3b-fe35dee56b91"
+uuid: "edabfe45-cc52-85a2-8074-4df87492de27"
+horo: 7
+typography:
+  partition: svg
+  bondDegree: 46
+standards:
+  - "ISO/IEC-29500 office-open-xml media-embedding-target"
+  - "W3C SVG-1.1 scalable-vector-graphics"
+  - "WCAG-2.1 §1.4.3 contrast-minimum minimum-4.5-1"
+bindings: []
+signatures:
+  computationUuid: "86862c8c-a285-8955-b48c-50a35c5b9669"
+  stages:
+    - stage: path
+      stageUuid: "195822af-a1b8-8984-be07-6aaf41d309df"
+    - stage: trinity
+      stageUuid: "d74d9ce7-1a7e-8649-acd3-2c81340dda8b"
+    - stage: boundary
+      stageUuid: "1136405d-6915-8cf1-b0ce-10487f83adc5"
+    - stage: links
+      stageUuid: "7f13cb98-9c0a-8702-ac06-9016a4cc9ddb"
+    - stage: horo
+      stageUuid: "1a84fa64-152e-84d5-8399-ac71ae5a3831"
+    - stage: seal
+      stageUuid: "ad261e00-e769-866e-84b2-f8dd1c5c4cca"
+    - stage: uuid
+      stageUuid: "4fa5715f-fa86-8511-b183-c030dd17dccb"
+version: 2
+---
 # svg/hero/generator — the same slug always draws the same picture
 
 A hero image per product, synthesised rather than commissioned: a 1600×900 SVG built from primitive

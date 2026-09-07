@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when accounting the micro-USD price of a chain step against a tenant budget — estimateMicroUsd prices CPU-ms, egress and AI tokens; recordCost accrues spend and refuses once the cap is crossed; setBudget and getBudget manage the per-tenant cap.",
-    "uuid": "eeae6359-7a1f-8fc0-99c1-93bbe0a2630a",
+    "uuid": "748f4022-0e42-8ad3-8883-4ecfd0863c21",
     "words": [
       "use",
       "when",

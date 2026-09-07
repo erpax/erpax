@@ -1,3 +1,36 @@
+---
+name: complete
+description: "Use when reasoning about complete — Completeness is **required**, and it is not what a single listing reports."
+atomPath: "publish/complete"
+coordinate: "publish/complete · 2/share · 53104eaa"
+contentUuid: "96aaffda-d881-529f-a0c0-5c9be06cc3fa"
+diamondUuid: "42517780-f3b9-8d8b-91e2-11f27c55a1cc"
+uuid: "53104eaa-5e5d-85c6-ac5d-d9d102643467"
+horo: 2
+typography:
+  partition: publish
+  bondDegree: 59
+standards: []
+bindings: []
+signatures:
+  computationUuid: "89ae8fab-f0e4-8c10-b7bf-c3203d0b67b2"
+  stages:
+    - stage: path
+      stageUuid: "21ccd664-10e2-8551-aa8b-783e5202a61b"
+    - stage: trinity
+      stageUuid: "d626f448-c309-80de-8f90-4f01ea2fac61"
+    - stage: boundary
+      stageUuid: "a740c45b-7dda-8ff5-a25a-c25fa56839b0"
+    - stage: links
+      stageUuid: "910d8657-f7b1-87a0-a149-3b842f4c37ad"
+    - stage: horo
+      stageUuid: "05726bcd-2dbd-8745-9615-4a9f747d5210"
+    - stage: seal
+      stageUuid: "ee37418f-58c8-8749-a6b7-43d61d2c0852"
+    - stage: uuid
+      stageUuid: "db0f350b-c777-874a-bad2-76b481460961"
+version: 2
+---
 # publish/complete — a count is not a census; compare members, never totals
 
 Completeness is **required**, and it is not what a single listing reports.

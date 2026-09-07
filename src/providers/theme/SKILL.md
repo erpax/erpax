@@ -1,3 +1,36 @@
+---
+name: theme
+description: "Use when reasoning about theme — Three states, not two. A theme can be **light**, **dark**, or **unset** — and unset does not mean a default was chosen, it means *follow the operating system*."
+atomPath: "providers/theme"
+coordinate: "providers/theme · 2/share · 1f8721ed"
+contentUuid: "e70bdfe1-d51d-5021-89c6-96c62cfa2285"
+diamondUuid: "cba73199-c179-8e03-9d94-5abb809f6034"
+uuid: "1f8721ed-3ad0-8bab-97f1-0683f9cdd39f"
+horo: 2
+typography:
+  partition: providers
+  bondDegree: 27
+standards: []
+bindings: []
+signatures:
+  computationUuid: "98e41ca7-fb90-86e1-870a-c91d540f2678"
+  stages:
+    - stage: path
+      stageUuid: "1a1f5c26-a423-8173-9927-0eb15add61bd"
+    - stage: trinity
+      stageUuid: "f5df4b4b-c4f1-835f-8081-8285c982375b"
+    - stage: boundary
+      stageUuid: "7c05cd1e-7a40-8a1e-91f2-3bea21eef465"
+    - stage: links
+      stageUuid: "da4ff6b3-2588-88eb-9ba8-41839d1281e1"
+    - stage: horo
+      stageUuid: "6327737f-ac12-8695-bf8b-ecbe05b5ed7b"
+    - stage: seal
+      stageUuid: "1068f131-71a0-81b7-bed7-d6159b8c3b08"
+    - stage: uuid
+      stageUuid: "503f3c77-2ce0-8a61-a130-a2b15e030100"
+version: 2
+---
 # providers/theme — null means "follow the system", and that is not the same as light
 
 Three states, not two. A theme can be **light**, **dark**, or **unset** — and unset does not mean a

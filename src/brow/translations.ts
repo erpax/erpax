@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the sixth center — the third eye (Ajna), index 5 of the seven; a standalone projection of the chakra atom whose note and uuid are computed from the position math and whose colour is rendered from that uuid, never the reverse.",
-    "uuid": "72d053fc-8276-8546-8e95-2d9c0238f221",
+    "uuid": "c095628c-a9c4-8658-9dfe-9f37a38fcc52",
     "words": [
       "use",
       "when",

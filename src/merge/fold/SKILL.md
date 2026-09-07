@@ -1,3 +1,36 @@
+---
+name: fold
+description: "Use when reasoning about fold — and the folds built on it: , , , and the two roots · ."
+atomPath: "merge/fold"
+coordinate: "merge/fold · 1/base · 683023a7"
+contentUuid: "8cf2b7b4-3905-5d53-9765-8091e9ceffda"
+diamondUuid: "827cd1e8-d52a-88d4-9760-f49bec25e90a"
+uuid: "683023a7-b8b5-850a-a33c-f505bdb32a43"
+horo: 1
+typography:
+  partition: merge
+  bondDegree: 87
+standards: []
+bindings: []
+signatures:
+  computationUuid: "1736c074-568c-8974-aa2f-6358b5c8c725"
+  stages:
+    - stage: path
+      stageUuid: "50cc8bfc-ca34-8b25-b9ba-3f609344d023"
+    - stage: trinity
+      stageUuid: "324119b0-df50-8cf6-bc2a-91cc5a1644a9"
+    - stage: boundary
+      stageUuid: "e8dd7073-63db-8353-929f-6f4c67660386"
+    - stage: links
+      stageUuid: "76227e6e-cea1-8a1b-b691-df8189cc4568"
+    - stage: horo
+      stageUuid: "b66c5ea7-a236-89d9-a62a-1b17470a1498"
+    - stage: seal
+      stageUuid: "5b8bf088-b326-8401-8256-02af39e5fe70"
+    - stage: uuid
+      stageUuid: "5e1f9e77-5eda-8ec3-b69c-ce2eea0de7e5"
+version: 2
+---
 # merge/fold — the primitive, extracted so the barrel can re-export instead of concentrate
 
 `merge(a, b) = toUuid(a ‖ b)` and the folds built on it: `canonical`, `chainLeaf`, `foldToRoot`, and the two roots `setRoot` · `sequenceRoot`.

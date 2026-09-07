@@ -1,3 +1,36 @@
+---
+name: address
+description: "Use when reasoning about address — Four hundred and fifty-three assertions in this corpus had that shape (rules/mirror). Each was green, fast, and counted as a proof by every gate that counts proofs."
+atomPath: "atom/address"
+coordinate: "atom/address · 5/round · e48c4a52"
+contentUuid: "78276f5d-f688-5a37-8e63-020db2c0cc03"
+diamondUuid: "4a4f837c-4af2-8f50-817d-74c1411c40ed"
+uuid: "e48c4a52-17f9-88af-9572-82cc1c25fc66"
+horo: 5
+typography:
+  partition: atom
+  bondDegree: 54
+standards: []
+bindings: []
+signatures:
+  computationUuid: "453c83a9-0c5f-8f73-b115-382d3500e578"
+  stages:
+    - stage: path
+      stageUuid: "b7475be0-0d5f-8c93-b4ef-742bc7ad7240"
+    - stage: trinity
+      stageUuid: "4c7a1895-6f7e-8667-a69f-5a170432d698"
+    - stage: boundary
+      stageUuid: "b4c2760b-d002-8e33-a646-b5ff891a7ea4"
+    - stage: links
+      stageUuid: "bbe201b3-53ba-80b9-9628-c41422f40685"
+    - stage: horo
+      stageUuid: "e2e8d54e-5a4a-8521-adbe-cf6a8454397f"
+    - stage: seal
+      stageUuid: "5abcf0ef-3709-8b5b-8c5f-3aeb9c8cd83f"
+    - stage: uuid
+      stageUuid: "a671b8da-62c2-8114-8fe8-0243e1e79e25"
+version: 2
+---
 # atom/address — ask the filesystem, and the assertion can fail again
 
 ```ts

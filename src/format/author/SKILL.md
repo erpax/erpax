@@ -1,3 +1,36 @@
+---
+name: author
+description: "Use when reasoning about author — turns populated authors into the sentence a reader expects: one is itself, two become \"A and B\", and three or more become \"A, B and C\" — no serial comma, decided once here rather…"
+atomPath: "format/author"
+coordinate: "format/author · 8/crest · 21f470a7"
+contentUuid: "9a6fd725-c6e3-5523-9f25-08e29686b64e"
+diamondUuid: "69da517f-a295-8e7b-89bf-a0abeb9d7d8e"
+uuid: "21f470a7-5a44-8285-98b2-cac828f074ee"
+horo: 8
+typography:
+  partition: format
+  bondDegree: 9
+standards: []
+bindings: []
+signatures:
+  computationUuid: "1987d722-e09b-8cd4-976e-f193b793d98c"
+  stages:
+    - stage: path
+      stageUuid: "f017d6df-9cd7-8bd7-9ffc-04ff9c6e755c"
+    - stage: trinity
+      stageUuid: "ff6ac5c5-c388-8cd7-a9b3-edd2a19948c6"
+    - stage: boundary
+      stageUuid: "20baf264-23c1-805d-b80e-90072b9f01cf"
+    - stage: links
+      stageUuid: "39401a5c-7b0c-8dda-8569-d04be9929b54"
+    - stage: horo
+      stageUuid: "7d1b0e96-fbfe-8d67-8890-c5dd45f97e7f"
+    - stage: seal
+      stageUuid: "0f89df7d-15e5-82e9-83c9-2006424ecf34"
+    - stage: uuid
+      stageUuid: "cef458eb-604c-8a8c-91b0-6bc0b7fa31ca"
+version: 2
+---
 # format/author — a list of people is rendered by a grammar, not by a join
 
 `formatAuthors` turns populated authors into the sentence a reader expects: one is itself, two

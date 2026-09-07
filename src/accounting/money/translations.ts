@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about accounting/money — money fields — Payload money type fixes and currency handling.",
-    "uuid": "51eb19eb-5934-85b1-94b6-ddd65dc29e17",
+    "uuid": "b0331775-7ee2-8912-ae73-8992371d2d42",
     "words": [
       "use",
       "when",

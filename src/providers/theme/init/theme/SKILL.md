@@ -1,3 +1,36 @@
+---
+name: theme
+description: "Use when reasoning about theme — A theme applied by React is applied *after* hydration, and hydration happens after first paint."
+atomPath: "providers/theme/init/theme"
+coordinate: "providers/theme/init/theme · 4/weave · 2d5a9652"
+contentUuid: "2a1e653d-3531-5bcc-8091-88e65bd89490"
+diamondUuid: "44b2d777-b49b-838b-85e6-9dd7c7afa3ba"
+uuid: "2d5a9652-9998-8abe-96bf-1c88b601a0b6"
+horo: 4
+typography:
+  partition: providers
+  bondDegree: 27
+standards: []
+bindings: []
+signatures:
+  computationUuid: "6de95270-5a13-8d16-aa4b-b558e82a5391"
+  stages:
+    - stage: path
+      stageUuid: "46b4097c-bf4f-8a47-86df-c67f0c3b7585"
+    - stage: trinity
+      stageUuid: "7640957c-ab6b-85ca-b1bb-20fad6e2f195"
+    - stage: boundary
+      stageUuid: "c8670a06-1cbd-8034-ab71-a3d3f86acee9"
+    - stage: links
+      stageUuid: "1f9bce38-462e-8b15-a917-86a28b0f8f90"
+    - stage: horo
+      stageUuid: "0a64f990-a567-8add-be78-16c5b13e4c8a"
+    - stage: seal
+      stageUuid: "d8f1ec46-728e-8125-a058-ac5cec1532d7"
+    - stage: uuid
+      stageUuid: "a0af0582-1f0e-8f1d-aa25-731e06e739e9"
+version: 2
+---
 # providers/theme/init/theme — the script that runs before the page is painted
 
 A theme applied by React is applied *after* hydration, and hydration happens after first paint. On a

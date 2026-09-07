@@ -1,3 +1,36 @@
+---
+name: registry
+description: "Use when reasoning about registry — Which of 3,473 atoms this corpus can honestly publish, **computed** rather than kept by hand."
+atomPath: "publish/registry"
+coordinate: "publish/registry · 5/round · 97707935"
+contentUuid: "f6c3a785-6dc8-5dbf-aacb-54c0bbdb0603"
+diamondUuid: "e6db22de-0598-8a3e-a7ec-3bad7d3b05cb"
+uuid: "97707935-008e-824c-96d8-e3f8073d4a9d"
+horo: 5
+typography:
+  partition: publish
+  bondDegree: 40
+standards: []
+bindings: []
+signatures:
+  computationUuid: "cbd0cb96-68d4-8f28-8fe0-43db71d5266c"
+  stages:
+    - stage: path
+      stageUuid: "542922c7-c750-81b2-9242-05c58d21cd2e"
+    - stage: trinity
+      stageUuid: "c16c35d6-a5df-8dbb-b9db-5ba23200244d"
+    - stage: boundary
+      stageUuid: "8d634a4c-5573-8009-adc0-7a353fde64fe"
+    - stage: links
+      stageUuid: "99823e35-b2ac-8da2-9602-21c5091e6c27"
+    - stage: horo
+      stageUuid: "7b6bfb5d-62cd-8173-9577-15e843e7a9cf"
+    - stage: seal
+      stageUuid: "d9a623f8-387f-8a2e-ab6f-7ba909dca05c"
+    - stage: uuid
+      stageUuid: "e7ddd2b1-9ad9-855f-b721-353bc8bf6126"
+version: 2
+---
 # publish/registry — a result is publishable only with all three legs
 
 Which of 3,473 atoms this corpus can honestly publish, **computed** rather than kept by hand.

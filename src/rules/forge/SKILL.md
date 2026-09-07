@@ -1,3 +1,36 @@
+---
+name: forge
+description: "Use when reasoning about forge — **That function never contacted Zenodo.** It was named , it logged as though a deposit had been made, and it returned a well-formed DOI and a URL for a record that does not exist."
+atomPath: "rules/forge"
+coordinate: "rules/forge · 8/crest · 62b8c5b5"
+contentUuid: "4fa18559-339d-54af-bb80-ed2cdcc4fcca"
+diamondUuid: "3a6b44f0-379a-8a04-8c91-27bc1652cceb"
+uuid: "62b8c5b5-8ae6-8fcc-af9e-cd8b00a04f88"
+horo: 8
+typography:
+  partition: rules
+  bondDegree: 50
+standards: []
+bindings: []
+signatures:
+  computationUuid: "b2c44982-9fa2-8add-83e8-00cd7e16807d"
+  stages:
+    - stage: path
+      stageUuid: "b4ae3133-6eef-8257-917f-9a221b93d174"
+    - stage: trinity
+      stageUuid: "58ed4947-68be-8b9e-917f-fa1098397310"
+    - stage: boundary
+      stageUuid: "42fec3cc-1146-8454-8bf5-c91c98f71dd9"
+    - stage: links
+      stageUuid: "d6212688-41ef-81a0-89fa-4edc4b8cd5b5"
+    - stage: horo
+      stageUuid: "648cefde-4afc-8bc1-9b1a-11342f1a4789"
+    - stage: seal
+      stageUuid: "ffdd1e82-43d1-83a0-9034-6845c2d28995"
+    - stage: uuid
+      stageUuid: "271edd66-3335-8c9b-b809-3ae901f09311"
+version: 2
+---
 # rules/forge — an identifier a registry assigns may not be minted locally
 
 ```ts

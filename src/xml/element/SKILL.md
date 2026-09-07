@@ -1,3 +1,37 @@
+---
+name: element
+description: "Use when reasoning about element — was already the one shared escaper — its own docstring says *\"one definition, not three\"*."
+atomPath: "xml/element"
+coordinate: "xml/element · 2/share · 664b4ce7"
+contentUuid: "b68b860e-cdf0-51a8-88d9-65c8e2f09d44"
+diamondUuid: "258dbd01-9bb3-8a66-b9bc-cfd6368f6944"
+uuid: "664b4ce7-99f0-8cb9-bf4c-5e24ae9314d1"
+horo: 2
+typography:
+  partition: xml
+  bondDegree: 80
+standards:
+  - "XML-1.0 §3.1 start-tag · attribute · element-content"
+bindings: []
+signatures:
+  computationUuid: "503399e8-a937-8427-af50-3154887ade6d"
+  stages:
+    - stage: path
+      stageUuid: "0322e525-8383-800d-b409-c7b1f0fcbb0c"
+    - stage: trinity
+      stageUuid: "53640fe7-0601-8763-945f-d380f40671bc"
+    - stage: boundary
+      stageUuid: "0c98c907-9e4a-8362-9715-1f4bd2488d8f"
+    - stage: links
+      stageUuid: "a309e87d-56e8-8841-ba68-ee14d10497c6"
+    - stage: horo
+      stageUuid: "6c990899-53dd-8109-847c-4456ab653763"
+    - stage: seal
+      stageUuid: "b5dbda9f-1e8e-804a-b0da-e21145637f09"
+    - stage: uuid
+      stageUuid: "4a9b8daf-1e68-8631-8a58-56be1de1c76a"
+version: 2
+---
 # xml/element — three serializers each wrote the same three functions
 
 `escapeXml` was already the one shared escaper — its own docstring says *"one definition, not

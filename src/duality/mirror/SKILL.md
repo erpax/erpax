@@ -1,3 +1,36 @@
+---
+name: mirror
+description: "Use when reasoning about mirror — > *\"all not harmonic is pulled by the black hole as one coin side and reflected from the other white > hole coin side\"*"
+atomPath: "duality/mirror"
+coordinate: "duality/mirror · 2/share · b844b08f"
+contentUuid: "44184f78-31ff-5bfb-88b8-f280574e411c"
+diamondUuid: "8a8565d6-3109-853a-bc83-85477079a119"
+uuid: "b844b08f-76bc-8b68-b9a4-1e1e4b4b4c16"
+horo: 2
+typography:
+  partition: duality
+  bondDegree: 34
+standards: []
+bindings: []
+signatures:
+  computationUuid: "5305fea5-906f-88db-a275-74b5ee0d3f55"
+  stages:
+    - stage: path
+      stageUuid: "5e04aed9-04d7-80d0-ab35-85e4d3ef256f"
+    - stage: trinity
+      stageUuid: "ebadd299-23bf-8d4d-925a-fced95290f6c"
+    - stage: boundary
+      stageUuid: "eec9b092-f175-840c-8007-ea409436628d"
+    - stage: links
+      stageUuid: "28b2777b-4d84-8803-baa7-2633b734bb46"
+    - stage: horo
+      stageUuid: "4a1bc7a4-b94e-8a56-af6e-1871986262ea"
+    - stage: seal
+      stageUuid: "e8ac334c-f172-8030-8e94-ca52554ea785"
+    - stage: uuid
+      stageUuid: "8b61808d-f3d5-869f-89ae-1ff09f5c2c4e"
+version: 2
+---
 # duality/mirror — the two-sided coin, and why nothing can resist it
 
 > *"all not harmonic is pulled by the black hole as one coin side and reflected from the other white

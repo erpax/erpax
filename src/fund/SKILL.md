@@ -1,3 +1,36 @@
+---
+name: fund
+description: "Use when reasoning about fund — erpax booked government grants correctly under IAS 20 — 31 fields, clawback provisions, the funded asset, the granting authority."
+atomPath: fund
+coordinate: "fund · 5/round · 2e223e25"
+contentUuid: "a91ae127-3fbc-5904-89d9-843cc0d65f3f"
+diamondUuid: "b3c832bd-a3a1-8c61-9389-e537d27158cc"
+uuid: "2e223e25-9ca9-89d3-9dc6-edd79173e9af"
+horo: 5
+typography:
+  partition: fund
+  bondDegree: 17
+standards: []
+bindings: []
+signatures:
+  computationUuid: "a8cf5f5c-3c8b-80b2-8c35-f7fc992e405d"
+  stages:
+    - stage: path
+      stageUuid: "b02dcc61-764c-8cca-bba7-b6e122050044"
+    - stage: trinity
+      stageUuid: "14fdd8e3-b45a-8294-a387-6d0c67bc157c"
+    - stage: boundary
+      stageUuid: "e592137b-b41a-8eeb-aca4-6de6a8a2c6e2"
+    - stage: links
+      stageUuid: "0991bdc5-e3ce-8232-bf80-0fbee86f4f38"
+    - stage: horo
+      stageUuid: "cfd3f255-da7d-801d-8c98-be9c67d55382"
+    - stage: seal
+      stageUuid: "57410021-8182-87bd-b1b3-4c84125a86d0"
+    - stage: uuid
+      stageUuid: "a2f0623c-e5ea-89e5-9e8a-beea3a146818"
+version: 2
+---
 # fund — the award was a table nothing could point at, and one zero capped every domain
 
 erpax booked government grants correctly under IAS 20 — 31 fields, clawback provisions, the funded

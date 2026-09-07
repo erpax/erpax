@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about defoundation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "8d1af7b9-dd01-8964-a9e2-e26abdc17a55",
+    "uuid": "f282154c-8bb1-8f54-ab05-c4ac194dbdd4",
     "words": [
       "use",
       "when",

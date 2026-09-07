@@ -1,3 +1,36 @@
+---
+name: harvest
+description: "Use when reasoning about harvest — rules/forge established the negative: an identifier only a registry may assign is **received or refused, never generated** — three sites here once minted and logged ."
+atomPath: "publish/harvest"
+coordinate: "publish/harvest · 5/round · 00077500"
+contentUuid: "3e1c90c3-c16c-543b-a9a4-e62547ef75fc"
+diamondUuid: "a176edb9-7d37-8f86-8e5f-459dda2e177f"
+uuid: "00077500-216d-811e-8421-b7fe472f2dd5"
+horo: 5
+typography:
+  partition: publish
+  bondDegree: 101
+standards: []
+bindings: []
+signatures:
+  computationUuid: "c2a8cb4a-9efb-8b5a-b4c3-5ef2db61e14d"
+  stages:
+    - stage: path
+      stageUuid: "34d7b63a-44e2-8ed0-b8f4-1268b37f9bdf"
+    - stage: trinity
+      stageUuid: "aff4340c-6ca2-8afc-abe7-e9c93ca99ed0"
+    - stage: boundary
+      stageUuid: "a9b902fb-01ae-84bd-8421-366d813bb376"
+    - stage: links
+      stageUuid: "306ba8f3-bd62-8243-9902-f42b0c8bcdc3"
+    - stage: horo
+      stageUuid: "1d08abce-aabc-829f-87b9-045715340cc9"
+    - stage: seal
+      stageUuid: "d964ddd1-e70b-8b04-b8f6-30fc380f860d"
+    - stage: uuid
+      stageUuid: "e7f858a3-8fd5-8e4a-ae0e-457648a2eb2d"
+version: 2
+---
 # publish/harvest — a DOI is verified against the registry, or it is a string that looks like one
 
 [[rules]]/forge established the negative: an identifier only a registry may assign is **received or refused, never generated** — three sites here once minted `10.5281/zenodo.${Math.random()}` and logged `[ZENODO] Publishing`. This is the positive half. A received DOI can now be **checked**, through Zenodo's OAI-PMH harvest and its REST record API.

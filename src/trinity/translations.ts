@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about how one node is told three times and rendered once — matter (index.ts inline docs) · antimatter (SKILL.md) · backend (the generated payload-types schema), fused into VitePress (the speech). The doc-scale DRY law — the page derives from the code and the backend, never restated.",
-    "uuid": "a87135dc-3f7d-8c5e-8cd2-69683f0a015c",
+    "uuid": "46e14077-5f12-8f02-8d57-d46546aa6250",
     "words": [
       "use",
       "when",

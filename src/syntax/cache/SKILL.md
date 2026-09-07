@@ -1,3 +1,36 @@
+---
+name: cache
+description: "Use when reasoning about cache — *\"Reuse the computed answer, never re-derive\"* is the first agent law in this corpus."
+atomPath: "syntax/cache"
+coordinate: "syntax/cache · 2/share · 7f08163b"
+contentUuid: "6563610d-cd8a-5ded-8bf3-13378f8abf32"
+diamondUuid: "2684b8de-4fdc-8f9f-a6b2-f85b9e815542"
+uuid: "7f08163b-06a9-867e-b0e3-b1619481dfcf"
+horo: 2
+typography:
+  partition: syntax
+  bondDegree: 52
+standards: []
+bindings: []
+signatures:
+  computationUuid: "24c1b22d-3df6-80a8-b013-7ce104e4b84b"
+  stages:
+    - stage: path
+      stageUuid: "0d4c114c-5876-898d-9829-87f3a881d39d"
+    - stage: trinity
+      stageUuid: "ffbb5a60-e216-89ce-aa0c-7bf06267ec9b"
+    - stage: boundary
+      stageUuid: "c19589f7-79c5-8f5e-b8c3-91f9e49a97ce"
+    - stage: links
+      stageUuid: "af2e872d-96ba-8801-99a3-1c52857df39c"
+    - stage: horo
+      stageUuid: "f7fee2a2-b46e-8911-8f8c-24926b047093"
+    - stage: seal
+      stageUuid: "70c4d72d-da75-8ecb-9103-0fed7d1fccfe"
+    - stage: uuid
+      stageUuid: "35e1df5c-19c8-8cfd-9452-7018cf2f13f0"
+version: 2
+---
 # syntax/cache — the instruments were the last place not reusing the answer
 
 *"Reuse the computed answer, never re-derive"* is the first agent law in this corpus. Thirty-five

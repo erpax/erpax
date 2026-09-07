@@ -1,3 +1,36 @@
+---
+name: scene
+description: "Use when reasoning about scene — render already projects one content-uuid to **colour · sound · vibration**."
+atomPath: "render/scene"
+coordinate: "render/scene · 4/weave · 46685d9e"
+contentUuid: "866a7c7a-e49f-534b-b4eb-ac08046f6af3"
+diamondUuid: "17d79325-3039-874e-988a-8adeb2394888"
+uuid: "46685d9e-5d69-8eb4-ab33-fcee0f6ba766"
+horo: 4
+typography:
+  partition: render
+  bondDegree: 21
+standards: []
+bindings: []
+signatures:
+  computationUuid: "442181d8-87ea-8c63-acf4-d29ab880adae"
+  stages:
+    - stage: path
+      stageUuid: "aabc7027-76aa-87d9-bdd0-54cbd3731039"
+    - stage: trinity
+      stageUuid: "99d26d1b-f2f7-8b17-b226-d9d758d6c78d"
+    - stage: boundary
+      stageUuid: "32239cd1-8d76-863e-93b4-d7bd0b4e856d"
+    - stage: links
+      stageUuid: "4841acea-f32c-8b2a-a7a7-30e4c26cb0d3"
+    - stage: horo
+      stageUuid: "5667ae59-27ae-8e2c-a832-3a01cad83888"
+    - stage: seal
+      stageUuid: "8fe0a27d-ea26-8685-89dd-c1f89fff39ff"
+    - stage: uuid
+      stageUuid: "5a956a84-b88f-80a5-abc8-3f9fb73d12fb"
+version: 2
+---
 # render/scene — the fourth projection: a theorem, as geometry
 
 [[render]] already projects one content-uuid to **colour · sound · vibration**. This adds the geometric face, under the same law: the scene is **derived from the very function the kernel checked**, never drawn beside it.

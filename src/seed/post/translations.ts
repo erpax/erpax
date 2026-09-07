@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use for the numbered demo post seeds — fixture content for the blog collection, numbered rather than named because they are interchangeable samples.",
-    "uuid": "f409cb21-471b-803e-98c8-8212b51198af",
+    "uuid": "6ce30b6a-410d-8ad1-a835-8d42e72e2014",
     "words": [
       "use",
       "for",

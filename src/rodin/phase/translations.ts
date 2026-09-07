@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about WHERE on the cycle something sits in erpax — the 120° offset of the three axis coils (0°/120°/240°), the ⅓-period animation tick at A432 ms, the moment a version captures. The time-position of a state. Nested under rodin.",
-    "uuid": "441623b0-b2ae-827a-a1b0-e538e4f3a38e",
+    "uuid": "31856a6e-0886-84e0-9c06-c6d3f782763f",
     "words": [
       "use",
       "when",

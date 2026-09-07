@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Tenant-scoped KV, R2, Vectorize, and Durable Object mediators",
-    "uuid": "3af916e2-1388-86ed-a87b-27d795776190",
+    "uuid": "42297263-690d-8ab1-be0e-81eaca79a342",
     "words": [
       "tenant",
       "scoped",

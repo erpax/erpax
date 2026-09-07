@@ -1,3 +1,36 @@
+---
+name: drift
+description: "Use when reasoning about drift — The corpus computes its own size. Prose states it too, and the two drift apart the moment an atom is minted."
+atomPath: "rules/drift"
+coordinate: "rules/drift · 5/round · 281bb349"
+contentUuid: "90f89269-d804-5162-9298-96b891beeb78"
+diamondUuid: "ba411507-2506-89af-ab8f-13bf5246ff48"
+uuid: "281bb349-6276-8af1-8150-548d04fc82d7"
+horo: 5
+typography:
+  partition: rules
+  bondDegree: 17
+standards: []
+bindings: []
+signatures:
+  computationUuid: "134d458b-705f-885c-ad0a-777679b92468"
+  stages:
+    - stage: path
+      stageUuid: "f0341797-e669-8474-9922-fa097a18406d"
+    - stage: trinity
+      stageUuid: "301beedd-21df-82f7-b532-3231f9c11520"
+    - stage: boundary
+      stageUuid: "acabb619-327e-81a3-8656-3c1e3aced896"
+    - stage: links
+      stageUuid: "e1e07756-2391-8be5-957b-1c2f1a69e327"
+    - stage: horo
+      stageUuid: "8c3ea7aa-0263-86c1-8b9d-2bdc1d5e4bd0"
+    - stage: seal
+      stageUuid: "74f43639-d338-80f0-8100-239009ccdb29"
+    - stage: uuid
+      stageUuid: "44c8d97f-63b3-8ebe-a2c9-13bd8096b6bb"
+version: 2
+---
 # rules/drift — a number typed into prose is a copy of an answer, and copies go stale
 
 The corpus computes its own size. Prose states it too, and the two drift apart the moment an atom
@@ -42,6 +75,22 @@ scoped illustrations ([[sparsity]] *"593 atoms"* beside *"671B parameters"*, [[v
 *"2241 atoms grounded"* against its own arbiter) and took 8 → 7. **Default to not changing when
 the signal is ambiguous** — a wrong correction is worse than a stale one, because it reads as
 freshly verified.
+
+## "node" has two senses, and only one is the corpus's
+
+`rules/copy` measures function bodies in AST nodes, so a SKILL can honestly report a three-digit
+node count for a single `onChainStep` body while the matrix holds thousands. The gate flagged three
+such lines — correctly, by its own rule: the sentence as written was a claim about *nodes*, and
+nothing on the line said which kind. (The literal is not quoted here: this file is scanned, so
+writing the example would file this SKILL as the defect it describes — the same self-reference
+[[rules]]/prose hit. It lives in the test, on a fixture.)
+
+The fix is the PROSE, not the matcher. `111 AST nodes` is both unambiguous to a reader and outside
+the pattern, which is the right outcome twice over. Loosening the gate to guess the sense would
+reintroduce exactly the false-negative risk its own history warns about — a wrong exemption is worse
+than a stale number, because it reads as freshly verified.
+
+**If you mean the syntax tree, write AST.**
 
 **Honest boundary.** This proves a stated node count **disagrees with the matrix**, never that the
 prose around it is right — a sentence can state the correct number and describe it wrongly. It

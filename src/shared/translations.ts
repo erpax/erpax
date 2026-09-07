@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "shared",
-    "uuid": "1a40935d-d67d-8922-9715-5a3cca71d262",
+    "uuid": "aa222dd0-2f10-819f-82a6-cd9f31b0d934",
     "words": [
       "shared"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about shared — One accountable object, two coexisting facets. Every standards rule the codebase declares about money / dates / addresses / common columns lives in one of these shared atoms; highe",
-    "uuid": "01b58fbf-76c4-817a-a7fa-3734e09bd672",
+    "uuid": "308fde56-1fa3-81ae-9726-50df02d54122",
     "words": [
       "use",
       "when",

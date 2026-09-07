@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about distance — Properties that take Distances as values are of the form '&lt;Number&gt; &lt;Length unit of measure&gt;'. E.g., '7 ft'.",
-    "uuid": "9c1ec5ac-a5ad-8fb1-9ae0-949817ffd215",
+    "uuid": "bf3ac673-09e7-8b60-b08b-21ce4e0a3890",
     "words": [
       "use",
       "when",
