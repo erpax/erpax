@@ -78,45 +78,6 @@ healed=()
 #
 # Found by [[rules]]/command, which measures paths named by whatever the repo actually runs.
 
-# ── Artefact 2: src/payload-types.ts ─────────────────────────────────
-if bash scripts/payload-verify-types.sh >/dev/null 2>&1; then
-  :
-else
-  if command -v pnpm >/dev/null 2>&1; then
-    echo "auto-heal: src/payload-types.ts is stale — regenerating"
-    if [ "$DRY_RUN" = 0 ]; then
-      # Capture full output so a failure shows what payload actually said,
-      # instead of the silent 'ERROR: ... Run it manually' that hid the
-      # cause for slices NNNNNN..MMMMMMMM. Tail keeps the message compact;
-      # the exit code is propagated.
-      tmp_types_log=$(mktemp)
-      if ! pnpm exec payload generate:types >"$tmp_types_log" 2>&1; then
-        echo "  ↳ payload generate:types FAILED — last 40 lines of output:"
-        tail -40 "$tmp_types_log" | sed 's/^/    /'
-        echo "  ↳ full log: $tmp_types_log"
-        rm -f "$tmp_types_log"
-        echo "ERROR: pnpm exec payload generate:types failed for Payload types."
-        exit 1
-      fi
-      rm -f "$tmp_types_log"
-      tmp_imp_log=$(mktemp)
-      if ! pnpm exec payload generate:importmap >"$tmp_imp_log" 2>&1; then
-        echo "  ↳ payload generate:importmap FAILED — last 40 lines of output:"
-        tail -40 "$tmp_imp_log" | sed 's/^/    /'
-        echo "  ↳ full log: $tmp_imp_log"
-        rm -f "$tmp_imp_log"
-        echo "ERROR: pnpm exec payload generate:importmap failed for Payload admin importmap."
-        exit 1
-      fi
-      rm -f "$tmp_imp_log"
-      git add src/payload-types.ts "src/app/(payload)/admin/importMap.js" 2>/dev/null || true
-      healed+=("src/payload-types.ts")
-    fi
-  else
-    echo "auto-heal: SKIPPED payload-types regen (pnpm not available in this environment)"
-  fi
-fi
-
 # ── Artefact 3: SKILL.md frontmatter ─────────────────────────────────
 #
 # Every SKILL.md carries a computed frontmatter block derived from the atom's own body and its
@@ -214,6 +175,53 @@ if [ "$DRY_RUN" = 0 ]; then
     tail -20 /tmp/erpax-matrix.log || true
   fi
   rm -f /tmp/erpax-matrix.log
+fi
+
+# ── Artefact 2 (LAST): src/payload-types.ts ─────────────────────────
+#
+# ORDER IS LOAD-BEARING, and it was wrong. This block used to run FIRST, before the frontmatter,
+# translations and matrix heals below. But payload-types embeds a `diamond-uuid` per collection,
+# derived from corpus content — so healing anything below it invalidated the types it had just
+# generated, and every push ended with a dirty `src/payload-types.ts` and a types gate that would
+# fail on the NEXT push. Measured 2026-09-07: two diamond-uuids moved in a single heal.
+#
+# Whatever derives from the corpus is regenerated LAST, after everything that changes the corpus.
+if bash scripts/payload-verify-types.sh >/dev/null 2>&1; then
+  :
+else
+  if command -v pnpm >/dev/null 2>&1; then
+    echo "auto-heal: src/payload-types.ts is stale — regenerating"
+    if [ "$DRY_RUN" = 0 ]; then
+      # Capture full output so a failure shows what payload actually said,
+      # instead of the silent 'ERROR: ... Run it manually' that hid the
+      # cause for slices NNNNNN..MMMMMMMM. Tail keeps the message compact;
+      # the exit code is propagated.
+      tmp_types_log=$(mktemp)
+      if ! pnpm exec payload generate:types >"$tmp_types_log" 2>&1; then
+        echo "  ↳ payload generate:types FAILED — last 40 lines of output:"
+        tail -40 "$tmp_types_log" | sed 's/^/    /'
+        echo "  ↳ full log: $tmp_types_log"
+        rm -f "$tmp_types_log"
+        echo "ERROR: pnpm exec payload generate:types failed for Payload types."
+        exit 1
+      fi
+      rm -f "$tmp_types_log"
+      tmp_imp_log=$(mktemp)
+      if ! pnpm exec payload generate:importmap >"$tmp_imp_log" 2>&1; then
+        echo "  ↳ payload generate:importmap FAILED — last 40 lines of output:"
+        tail -40 "$tmp_imp_log" | sed 's/^/    /'
+        echo "  ↳ full log: $tmp_imp_log"
+        rm -f "$tmp_imp_log"
+        echo "ERROR: pnpm exec payload generate:importmap failed for Payload admin importmap."
+        exit 1
+      fi
+      rm -f "$tmp_imp_log"
+      git add src/payload-types.ts "src/app/(payload)/admin/importMap.js" 2>/dev/null || true
+      healed+=("src/payload-types.ts")
+    fi
+  else
+    echo "auto-heal: SKIPPED payload-types regen (pnpm not available in this environment)"
+  fi
 fi
 
 # ── Future artefacts — wire as they land ─────────────────────────────
