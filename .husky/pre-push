@@ -43,16 +43,23 @@ set -e
 # any input misses the memo and pays the full boot. PAYLOAD_VERIFY_NOCACHE=1
 # forces it.
 #
-# The end-to-end number, measured on two real pushes rather than summed from
-# warm step timings — the distinction matters and the first commit message
-# stated only the flattering half:
+# The end-to-end numbers, measured rather than summed from step timings.
+# Baseline 409s. Then migrate:status and the standards index were memoised and
+# folded too (see scripts/payload-migrate-key.sh, standards-citation-index.sh):
 #
-#   push that CHANGES src   409s -> 208s   (one cold derive, then memo hits)
-#   push that does not      409s -> ~108s  (no boot at all; 39s of that is
-#                                           migrate:status, which reads the DB
-#                                           and must never be memoised)
+#   whole hook, memo warm    409s -> 42s    measured 2026-09-07, and under load
+#                                           avg 64-78 from an unrelated build on
+#                                           this machine, so the baseline had the
+#                                           EASIER conditions
+#   push that CHANGES src    409s -> 132s   one cold Payload derive, then hits
 #
-# A src-changing push is the normal case, so 2x is the honest headline.
+# The warm path is what a second push in a session sees; a src-changing push pays
+# exactly one boot instead of five. Per step, warm:
+#
+#   auto-heal 360ms · approve 3.2s · tracked-imports 5.7s · committed-builds 6.2s
+#   standards --check 3.8s · --required 228ms · --verify-index 4.0s
+#   payload-verify 420ms · aura 3.4s · import gate 6.6s · folder law 3.6s
+#   skill frontmatter 4.3s
 bash scripts/auto-heal-generated-artefacts.sh
 
 # ── 1b. Payload approval (canonical gate — before tsc/lint/vitest) ───
