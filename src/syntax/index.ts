@@ -29,8 +29,19 @@ import ts from 'typescript'
 /** Canonical atom path. */
 export const atomPath = 'syntax' as const
 
+/**
+ * The parse this module's four readers share — WITHOUT parent pointers.
+ *
+ * `setParentNodes` costs ~31% of the parse (measured over 7,553 files: 4,724ms -> 3,235ms) and buys
+ * a `.parent` link on every node. Nothing here reads one: `commentsOf`, `commentSites`,
+ * `boundNames`, `moduleShape` and `importSpecifiersOf` all return primitives, and no node escapes
+ * this module. Gates that DO walk upward (`rules/copy`, `rules/cycle`, `rules/probe`,
+ * `rules/unraised`) take their AST from @/syntax/cache's `astOf`, which still sets them.
+ *
+ * If a reader here ever needs `.parent`, set it back — do not add a second parse.
+ */
 const sourceOf = (file: string, text: string): ts.SourceFile =>
-  ts.createSourceFile(file, text, ts.ScriptTarget.ESNext, true)
+  ts.createSourceFile(file, text, ts.ScriptTarget.ESNext, false)
 
 /**
  * Every comment in a source file, as the compiler's scanner sees them.

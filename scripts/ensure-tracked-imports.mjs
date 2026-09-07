@@ -51,7 +51,9 @@ const trackedAtoms = new Set(
  * theorem). Same lesson this corpus has paid for in prose · reference · cycle.
  */
 function importedAtoms(rel, text) {
-  const sf = ts.createSourceFile(rel, text, ts.ScriptTarget.Latest, true)
+  // setParentNodes=false: this visitor never walks upward, and the flag costs ~31% of the parse
+  // (measured over 7,553 files: 4,724ms -> 3,235ms). It is a pre-push step; the time is a person's.
+  const sf = ts.createSourceFile(rel, text, ts.ScriptTarget.Latest, false)
   const out = []
   const take = (spec) => {
     if (!spec || !ts.isStringLiteral(spec)) return

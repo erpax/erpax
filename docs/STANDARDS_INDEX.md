@@ -2692,9 +2692,9 @@ src/standards/catalogue.test.ts:8: * @standard ISO/IEC-25010:2023 §5.4 reusabil
 src/standards/catalogue.ts:11: * @standard ISO/IEC-25010:2023 §5.4 reusability (one scan, two consumers)
 src/standards/catalogue.ts:12: * @standard ISO-19011:2018 §6.4 audit-evidence (the citation index)
 src/standards/emit.test.ts:2: * @standard ISO/IEC-29119:2022 software-testing (emit invariant coverage)
-src/standards/emit.ts:390: * @standard ISO/IEC-25010:2023 §5.4 reusability (one scan, two consumers)
-src/standards/emit.ts:391: * @standard ISO-19011:2018 §6.4 audit-evidence (the citation index)
-src/standards/emit.ts:556: * @standard ISO 3166-1 alpha-2 — the territory codes this returns for a country
+src/standards/emit.ts:412: * @standard ISO/IEC-25010:2023 §5.4 reusability (one scan, two consumers)
+src/standards/emit.ts:413: * @standard ISO-19011:2018 §6.4 audit-evidence (the citation index)
+src/standards/emit.ts:578: * @standard ISO 3166-1 alpha-2 — the territory codes this returns for a country
 src/standards/emit.ts:8: * @standard ISO/IEC-25010:2023 §5.4 reusability (one scan, two consumers, one uuid)
 src/standards/emit.ts:9: * @standard ISO-19011:2018 §6.4 audit-evidence (citations are the audit trail)
 src/standards/improve/test.ts:4: * @standard ISO-25010:2023 systems-and-software-quality
@@ -3526,7 +3526,7 @@ src/spec/generator/keys.ts:33: * @rfc 8259 json
 src/standards/catalogue.test.ts:9: * @rfc 9562 content-uuid (every standard is content-addressed)
 src/standards/catalogue.ts:13: * @rfc 9562 content-uuid (each standard row is content-addressed)
 src/standards/emit.ts:10: * @rfc 9562 content-uuid (each standard is content-addressed)
-src/standards/emit.ts:392: * @rfc 9562 content-uuid (each standard row is content-addressed)
+src/standards/emit.ts:414: * @rfc 9562 content-uuid (each standard row is content-addressed)
 src/subscription/plans/subscriptions/hooks/encryptSensitiveFields.ts:9: * @rfc 5116 authenticated-encryption-with-associated-data
 src/tenant/service/index.ts:15: * @rfc 9110 http-semantics
 src/testing/config-discovery-advanced.test.ts:6: * @rfc 8259 json

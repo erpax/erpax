@@ -381,7 +381,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2020/852 on the establishment of a framework to facilitate sustainable investment (Taxonomy Regulation)",
     "uuid": "a7d2e799-e418-83ca-add4-039a74d0af59",
     "color": "hsl(122 76% 47%)",
-    "count": 212,
+    "count": 211,
     "modules": [
       {
         "path": "src/address/validation/index.ts",
@@ -1278,44 +1278,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "NACE",
-    "family": "eu",
-    "title": "EU NACE Rev.2 economic-activity classification",
-    "uuid": "809b21d2-ec0e-8105-b04a-20d0b26fae7d",
-    "color": "hsl(163 88% 56%)",
-    "count": 7,
-    "modules": [
-      {
-        "path": "src/base/accounting/field/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/nace/rev2/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/properties/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/sectors/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/shared/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/shared/field.ts",
-        "section": ""
-      },
-      {
-        "path": "src/vocabulary/manufacturing/seed/standards/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
     "id": "Berlin-Group-PSD2",
     "family": "eu",
     "title": "Berlin Group NextGenPSD2 open-banking API",
@@ -1367,6 +1329,40 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/vocabulary/manufacturing/seed/operations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/vocabulary/manufacturing/seed/standards/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "NACE",
+    "family": "eu",
+    "title": "EU NACE Rev.2 economic-activity classification",
+    "uuid": "809b21d2-ec0e-8105-b04a-20d0b26fae7d",
+    "color": "hsl(163 88% 56%)",
+    "count": 6,
+    "modules": [
+      {
+        "path": "src/base/accounting/field/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/nace/rev2/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/properties/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/sectors/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/shared/SKILL.md",
         "section": ""
       },
       {
@@ -2012,7 +2008,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Systems & software quality models",
     "uuid": "3c2f1991-7fa2-8419-9109-b0150b5780ab",
     "color": "hsl(287 80% 39%)",
-    "count": 194,
+    "count": 195,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -2118,7 +2114,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Software testing",
     "uuid": "e69bd662-b3ef-8ba7-ac6c-ff5c05fd3db2",
     "color": "hsl(355 59% 40%)",
-    "count": 82,
+    "count": 83,
     "modules": [
       {
         "path": "src/agents/mcp/self-test.ts",
@@ -2548,7 +2544,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Presentation of Financial Statements",
     "uuid": "f0bae7c9-3fa5-8ce5-b51b-b8e884e6c122",
     "color": "hsl(66 76% 47%)",
-    "count": 16,
+    "count": 17,
     "modules": [
       {
         "path": "src/accounting/proof/index.ts",
@@ -2600,6 +2596,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/double/entry/validator/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/invoices/hooks/transition/index.ts",
         "section": ""
       },
       {
@@ -3347,7 +3347,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Country codes",
     "uuid": "33acc25b-1712-8bcd-88ff-6a849f536c4e",
     "color": "hsl(268 74% 57%)",
-    "count": 119,
+    "count": 118,
     "modules": [
       {
         "path": "src/address/validation/index.ts",
@@ -5571,7 +5571,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Role-Based Access Control",
     "uuid": "e67e2dd4-b480-802e-be8b-990117b82dc6",
     "color": "hsl(326 65% 58%)",
-    "count": 54,
+    "count": 55,
     "modules": [
       {
         "path": "src/app/(frontend)/next/seed/route.ts",
@@ -6894,7 +6894,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/journal/entries/hooks/balanced-entry.ts",
+        "path": "src/journal/entries/hooks/balanced.ts",
         "section": ""
       },
       {
@@ -7893,7 +7893,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "JSON Canonicalization Scheme",
     "uuid": "67e3e4b1-0c62-8840-bab2-fa9bba6e4c0c",
     "color": "hsl(315 73% 47%)",
-    "count": 33,
+    "count": 34,
     "modules": [
       {
         "path": "src/ai/durable-objects.ts",
@@ -7968,6 +7968,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/query/fingerprint/test.ts",
+        "section": ""
+      },
+      {
         "path": "src/receipt/SKILL.md",
         "section": ""
       },
@@ -7986,10 +7990,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/text/index.ts",
         "section": "§5.8"
-      },
-      {
-        "path": "src/uuid/chain/index.ts",
-        "section": ""
       }
     ]
   },
@@ -8166,11 +8166,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/spec/generator/keys.ts",
+        "path": "src/spec/generator/filler.ts",
         "section": ""
       },
       {
-        "path": "src/spec/generator/filler.ts",
+        "path": "src/spec/generator/keys.ts",
         "section": ""
       },
       {
@@ -9159,7 +9159,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Linked-data type vocabulary",
     "uuid": "9cff4f7f-f5d5-8924-99c4-0d564a3735fb",
     "color": "hsl(231 64% 45%)",
-    "count": 1987,
+    "count": 1989,
     "modules": [
       {
         "path": "src/abdomen/SKILL.md",
@@ -9250,11 +9250,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/app/(frontend)/[locale]/search/page.tsx",
+        "path": "src/app/(frontend)/[locale]/publications/[slug]/page.tsx",
         "section": ""
       },
       {
-        "path": "src/app/(frontend)/layout.tsx",
+        "path": "src/app/(frontend)/[locale]/publications/page.tsx",
         "section": ""
       }
     ]
@@ -9442,7 +9442,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/journal/entries/hooks/balanced-entry.ts",
+        "path": "src/journal/entries/hooks/balanced.ts",
         "section": ""
       },
       {

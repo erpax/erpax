@@ -27,15 +27,39 @@ export interface ImportViolation {
   readonly spec: string
 }
 
+/**
+ * Memo for `isIndexImport`, keyed on root + spec.
+ *
+ * The scan asks this question once per IMPORT, and `resolveBarrel` asks it once per path PREFIX —
+ * so a 4-segment specifier costs up to 12 syscalls, and the corpus has ~9,800 imports drawn from a
+ * far smaller set of distinct specifiers. Measured: the filesystem probing was ~1.8s of a 5.0s
+ * scan, nearly all of it re-answering questions already answered.
+ *
+ * The answer is a property of the tree, and a scan is a snapshot of the tree, so memoising within
+ * a process is exact. `clearBarrelCache` exists for the one case it is not: a caller that MUTATES
+ * a root and asks again in the same process.
+ */
+const indexImportMemo = new Map<string, boolean>()
+
+/** Forget the resolution memo — for a caller that changes the tree and re-scans in one process. */
+export const clearBarrelCache = (): void => {
+  indexImportMemo.clear()
+}
+
 /** An `@/PATH` import is from an INDEX iff PATH is a directory carrying index.ts or index.tsx (the atom's face). */
 export function isIndexImport(spec: string, root = SRC): boolean {
+  const key = root + '\u0000' + spec
+  const memo = indexImportMemo.get(key)
+  if (memo !== undefined) return memo
   const base = root + '/' + spec.replace(/^@\//, '')
+  let verdict = false
   try {
-    if (!statSync(base).isDirectory()) return false
-    return existsSync(base + '/index.ts') || existsSync(base + '/index.tsx')
+    verdict = statSync(base).isDirectory() && (existsSync(base + '/index.ts') || existsSync(base + '/index.tsx'))
   } catch {
-    return false
+    verdict = false
   }
+  indexImportMemo.set(key, verdict)
+  return verdict
 }
 
 export const BARREL_ALIASES: Readonly<Record<string, string>> = {

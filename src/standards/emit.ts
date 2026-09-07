@@ -217,11 +217,31 @@ export function citationDecoherence(cwd: string = process.cwd()): {
   return { onlyRegex, agreed: regex.length - onlyRegex.length }
 }
 
+/**
+ * Per-process memo for the catalogue build.
+ *
+ * The build costs ~3s, nearly all of it in `scan` — reading every bannered file under src and
+ * PARSING it, because a banner inside a string literal is data and only the grammar can tell.
+ * `verifyStandardsCatalogue` and the CLI emit path each call it, so `erpax standards catalogue`
+ * paid it twice for the same answer.
+ *
+ * Keyed on cwd and valid for the life of the process, which is the life of one snapshot of the
+ * tree. A caller that MUTATES src and rebuilds in the same process must clear it.
+ */
+const catalogueMemo = new Map<string, { entries: CatalogueEntry[]; totalHits: number; matched: number }>()
+
+/** Forget the catalogue memo — for a caller that changes src and rebuilds in one process. */
+export const clearCatalogueMemo = (): void => {
+  catalogueMemo.clear()
+}
+
 export function buildStandardsCatalogue(cwd: string = process.cwd()): {
   entries: CatalogueEntry[]
   totalHits: number
   matched: number
 } {
+  const memo = catalogueMemo.get(cwd)
+  if (memo) return memo
   const hits = scan(cwd)
   const matchers = STANDARDS_REGISTRY.map((s) => ({ std: s, re: matcherFor(s) }))
   const acc = new Map<string, { std: RegisteredStandard; count: number; modules: Map<string, string> }>()
@@ -253,7 +273,9 @@ export function buildStandardsCatalogue(cwd: string = process.cwd()): {
       }
     })
     .sort((a, b) => a.family.localeCompare(b.family) || b.count - a.count || a.id.localeCompare(b.id))
-  return { entries, totalHits: hits.length, matched }
+  const built = { entries, totalHits: hits.length, matched }
+  catalogueMemo.set(cwd, built)
+  return built
 }
 
 export type ImplementationDepth = 'uncited' | 'prose' | 'coded' | 'gated'
