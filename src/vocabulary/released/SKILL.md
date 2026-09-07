@@ -2,11 +2,11 @@
 name: released
 description: "Use when reasoning about released as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/released"
-coordinate: "vocabulary/released · 7/descent · be6c1897"
-contentUuid: "c1421e59-5eda-5045-aaec-0b71fc99d9c6"
-diamondUuid: "9908035e-ac43-82dd-813d-20605a7cf31b"
-uuid: "be6c1897-f535-88a3-801e-3bf317af49ab"
-horo: 7
+coordinate: "vocabulary/released · 2/share · 346844c9"
+contentUuid: "57f9739c-97e1-57f8-a26f-4351bbf350f7"
+diamondUuid: "c6d6875b-a40a-82f8-aa0c-69ab6dc6ee05"
+uuid: "346844c9-538a-865e-84e7-25bcf9a2f56d"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c2e79332-6180-885d-81d9-06458f5d455c"
+  computationUuid: "71c51c6b-3179-8f9b-be01-b3172fdff95e"
   stages:
     - stage: path
       stageUuid: "785e70f0-d099-8a16-a042-49cd5926485b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "36bfd6ee-ab57-8f18-aea4-ba4963f78c56"
     - stage: horo
-      stageUuid: "b5793db2-c166-85ae-be7e-714e77d7512e"
+      stageUuid: "67f201a8-191d-86e0-bb4a-33f37f0a44b8"
     - stage: seal
-      stageUuid: "d42944bd-e0b5-86de-902d-0daa0c36c445"
+      stageUuid: "8bc7e3dc-1d2d-879b-9c96-5153d96eeaa5"
     - stage: uuid
-      stageUuid: "35ca11a0-9884-8e17-bb85-95ecc520c5a5"
+      stageUuid: "443327db-659d-86b9-a50e-dcaf07dda2f8"
 version: 2
 ---
 # released

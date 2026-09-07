@@ -2,10 +2,10 @@
 name: cream
 description: "Use when reasoning about cream as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/cream"
-coordinate: "vocabulary/cream · 4/weave · 55ea7bb9"
-contentUuid: "379fdfbf-6fdd-5d3c-bf6f-293ce72070df"
-diamondUuid: "e3307d9f-8e13-8c23-abea-338152667da9"
-uuid: "55ea7bb9-0f92-8524-af58-38e1ddb83604"
+coordinate: "vocabulary/cream · 4/weave · 86693663"
+contentUuid: "9a2ecedd-0881-57a5-b523-0585e54c5dfe"
+diamondUuid: "9f6084cc-1fb6-8100-a43e-4960d199ac9d"
+uuid: "86693663-5c3f-800f-b6c9-2edb7efde869"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6c157d7c-1c53-868d-a0e2-19ded8d818a8"
+  computationUuid: "e841b70d-2267-866e-a4dc-0bb9be0f6295"
   stages:
     - stage: path
       stageUuid: "fe28073b-6f52-87d1-8c78-f1f32fbc04ff"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1d466677-dfcc-837c-ae3d-a8a8f4d6c32f"
     - stage: horo
-      stageUuid: "34971a55-d98f-80f0-a249-037fadd50099"
+      stageUuid: "a0009ed4-da50-8fdd-996b-c8aede8bdebb"
     - stage: seal
-      stageUuid: "2e22eae0-4dfc-8031-bd6e-7ed51b0bb59a"
+      stageUuid: "d2de15b8-13d1-878b-bd41-d8ca6f9a1bd0"
     - stage: uuid
-      stageUuid: "b54838dd-c162-8322-83e4-84ecd8457e73"
+      stageUuid: "1162832c-fa91-8c8d-bde6-ea4c4fb7e45a"
 version: 2
 ---
 # cream

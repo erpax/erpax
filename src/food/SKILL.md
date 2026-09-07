@@ -2,11 +2,11 @@
 name: food
 description: "Use when reasoning about food as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: food
-coordinate: "food · 4/weave · 120da080"
-contentUuid: "cc93abca-e2f4-57cb-b8e3-83b78df83d12"
-diamondUuid: "940df1b5-7523-8cd0-9679-19886677ebaa"
-uuid: "120da080-a7a0-8cb2-bff1-8f281fc790f5"
-horo: 4
+coordinate: "food · 5/round · b6e8f4dd"
+contentUuid: "19460bcc-0e53-5248-9a08-437440182772"
+diamondUuid: "b6f5cb84-b432-81e0-a63c-5d90964a46bd"
+uuid: "b6e8f4dd-fb60-846d-9281-23fb71f91d10"
+horo: 5
 typography:
   partition: food
   bondDegree: 39
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8ee268b6-39df-8b06-9738-66e9a9ef3299"
+  computationUuid: "153f5297-e32f-8633-b102-2d5ac61f1599"
   stages:
     - stage: path
       stageUuid: "62ccbaa5-57ec-8477-8fb5-408d0e3e5d04"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4afc03b1-4f64-85fe-8fbc-db37e453e2c8"
     - stage: horo
-      stageUuid: "12cf2f6e-d660-8225-8485-915997d6d8ea"
+      stageUuid: "289187e7-930c-8aad-abb7-97c2f19dcef0"
     - stage: seal
       stageUuid: "e238794f-0eac-8c7a-8ea7-662b51399a2b"
     - stage: uuid
-      stageUuid: "fbad0e03-96e4-8fdc-822c-a6e7b0735020"
+      stageUuid: "73008bda-0fff-80b9-81f2-ffd8bb320ce8"
 version: 2
 ---
 # food

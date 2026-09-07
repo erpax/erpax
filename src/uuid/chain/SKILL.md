@@ -3,13 +3,13 @@ name: chain
 description: "Use when reasoning about chain — starts a chain at and extends it: addresses the pair (previous, content), so each link's identity depends on everything before it. walks the and reports where the walk breaks."
 atomPath: "uuid/chain"
 coordinate: "uuid/chain · 5/round · 64e6b6d0"
-contentUuid: "e496a13c-9c9c-540a-8057-ceeeb28b4a7a"
+contentUuid: "21c76eb8-1f2b-5e20-9ee4-debec11ebaaa"
 diamondUuid: "034bbdbb-04ef-87df-b2be-3189d343d44e"
 uuid: "64e6b6d0-ba27-8c10-a3f4-a4bf10b94bfe"
 horo: 5
 typography:
   partition: uuid
-  bondDegree: 21
+  bondDegree: 18
 standards:
   - "ISO/IEC 23257-1 blockchain reference architecture"
   - "ITU-T Y.4810 DLT terminology"

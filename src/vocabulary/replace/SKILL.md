@@ -2,11 +2,11 @@
 name: replace
 description: "Use when reasoning about replace as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/replace"
-coordinate: "vocabulary/replace · 4/weave · 35fc8fc8"
-contentUuid: "9335b16a-113a-5561-a9cf-38c79f0fa466"
-diamondUuid: "432cc210-afb5-8796-a7ee-df36e531650c"
-uuid: "35fc8fc8-8836-8260-af45-45bae50320cb"
-horo: 4
+coordinate: "vocabulary/replace · 8/crest · 54fe5c74"
+contentUuid: "2ef485e8-b0d3-5ba5-a4bb-fb325adb9cef"
+diamondUuid: "80c0a81d-a79f-8196-a66a-4e32686bf2ba"
+uuid: "54fe5c74-4fa1-8284-a09f-c95fcac2d6d0"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "72f696cf-d105-8320-8988-2880c6f20aa0"
+  computationUuid: "5adb6b61-9a04-8383-b36e-25bda8bfec37"
   stages:
     - stage: path
       stageUuid: "3c5e4d05-8671-80ac-a32f-cd21413898b3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a43da2cf-b27e-8d33-829b-1e82d2bdbfb6"
     - stage: horo
-      stageUuid: "85d4f0d4-0a95-860e-9ed7-d1f21503721d"
+      stageUuid: "60813481-c310-8746-b912-fbcc65093297"
     - stage: seal
-      stageUuid: "ff5dcd27-2006-8953-bf5f-753f0c84e7ed"
+      stageUuid: "cf4b0be5-f9bd-855c-8957-8a2b9c051d63"
     - stage: uuid
-      stageUuid: "5db2b2d4-2afb-8e97-b39a-0bf2b102bafb"
+      stageUuid: "701465ad-ba0f-8433-9e12-71a59ae3c23f"
 version: 2
 ---
 # replace

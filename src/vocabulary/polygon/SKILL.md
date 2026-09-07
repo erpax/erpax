@@ -2,11 +2,11 @@
 name: polygon
 description: "Use when reasoning about polygon — A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more space delimited po"
 atomPath: "vocabulary/polygon"
-coordinate: "vocabulary/polygon · 4/weave · cc7528f1"
-contentUuid: "d6e89352-fcd2-508a-833e-cb604af66d94"
-diamondUuid: "81d03560-7005-83da-a009-786bd003f22c"
-uuid: "cc7528f1-82bd-872f-85c9-62a3074a2b52"
-horo: 4
+coordinate: "vocabulary/polygon · 7/descent · 3e03aa9a"
+contentUuid: "1de88418-e42c-5d19-a34d-9fc04149f53c"
+diamondUuid: "3b8acf4f-47d1-86a1-8a59-70cafbbc26de"
+uuid: "3e03aa9a-c325-88a6-9d3e-cf5339323af3"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3e7229c1-c707-8bc3-8670-37117c905d9e"
+  computationUuid: "b7d9c7e6-fa29-8b2c-88d4-c84ffed5b807"
   stages:
     - stage: path
       stageUuid: "bed77ab7-f0f7-8a58-b6b7-b4efced35ba4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1828aad9-6f09-87b7-921b-4c519e79098e"
     - stage: horo
-      stageUuid: "0fef8f45-e606-842f-bbb0-6f7cbd9829c8"
+      stageUuid: "7dbcf905-21a9-87fb-89ab-22231904b35f"
     - stage: seal
-      stageUuid: "251da904-e708-8d4e-b318-081ddfe52ad4"
+      stageUuid: "b9618522-8924-8095-8e4b-5b4454617114"
     - stage: uuid
-      stageUuid: "d7fe9def-25f1-8b51-8b37-b11eeb6bd1cc"
+      stageUuid: "8386378f-c923-8f65-ba51-d3816ed98496"
 version: 2
 ---
 # polygon

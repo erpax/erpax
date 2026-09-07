@@ -2,18 +2,19 @@
 name: jurisdictions
 description: "Use when looking up or seeding read-only reference data for tax authority geographies — country, region, local and supranational levels with ISO-3166 codes, primary currency, languages, regulatory characteristics, banking requirements, filing deadlines and applicable compliance frameworks. The super-admin-maintained jurisdiction reference collection."
 atomPath: "taxing/jurisdictions"
-coordinate: "taxing/jurisdictions · 2/share · cfa6c3e2"
-contentUuid: "c9c3b111-2fdc-5241-9ea4-0a74a5b7e386"
-diamondUuid: "fb7c7dd0-19bf-8794-b498-b9ac95a41143"
-uuid: "cfa6c3e2-0260-808e-9878-3c57085ada42"
-horo: 2
+coordinate: "taxing/jurisdictions · 7/descent · 4d7562c9"
+contentUuid: "c4f5a615-e626-5d7e-872b-45e79bb4277b"
+diamondUuid: "1d780a9b-038e-87af-933e-829c8ec78eef"
+uuid: "4d7562c9-617e-849b-88ee-e71910cf446c"
+horo: 7
 typography:
   partition: taxing
-  bondDegree: 0
+  bondDegree: 14
 standards:
   - "EU Directive 2006/112/EC VAT"
   - "EU-ESRS"
   - "EU-VAT-Directive"
+  - "ISO-17442"
   - "ISO-17442-1"
   - "ISO-3166-1:2020 country-codes"
   - "ISO-3166-1:2020 country-codes`"
@@ -22,7 +23,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "c02ce8db-fd99-8a81-a749-7ed30a4fdfdb"
+  computationUuid: "2220f47b-a829-8982-8fdc-ff37d8de2b54"
   stages:
     - stage: path
       stageUuid: "601de279-fc37-8f90-8b0b-b9c5affca0a3"
@@ -33,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "8f53fcb6-edc0-886f-b8b3-8ad8d821b678"
     - stage: horo
-      stageUuid: "6283e39a-f449-82fa-94bd-d6a5311efc43"
+      stageUuid: "8c8f86bb-c26d-8fff-ad07-52bb1f72dd69"
     - stage: seal
       stageUuid: "43be8a2c-e9e2-893f-8b4a-f5d728781f18"
     - stage: uuid
-      stageUuid: "9b3484d0-061f-86b0-b615-ed65f161c604"
+      stageUuid: "e31116e8-a645-839f-8d29-91098af25b50"
 version: 2
 ---
 # taxing-jurisdictions

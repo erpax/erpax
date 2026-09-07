@@ -3,13 +3,13 @@ name: redundancy
 description: Use when reasoning about redundancy — puts to every backend and prefers a copy whose recomputed uuid matches its content. repairs a stale or tampered store by pulling from a healthy peer.
 atomPath: "storage/redundancy"
 coordinate: "storage/redundancy · 4/weave · 181cd929"
-contentUuid: "499541eb-0920-5a1e-9f67-2a0a916a510c"
+contentUuid: "51310eec-853b-574c-bcd4-40348c84b411"
 diamondUuid: "856d7035-2cf9-8f33-a863-d8658b0b2dfc"
 uuid: "181cd929-c4c3-816b-ac59-e0f9ae3fc9cb"
 horo: 4
 typography:
   partition: storage
-  bondDegree: 30
+  bondDegree: 27
 standards:
   - "ISO/IEC 9075-2:2016 §4.15.10 (when paired with Law 14 bitemporal)"
 bindings: []

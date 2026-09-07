@@ -2,14 +2,14 @@
 name: frameworks
 description: "Use when registering or browsing the reference library of compliance frameworks — IFRS, SOX, GDPR, ISO-27001, COSO, tax, ESG, banking — with code, category, issuing body, effective date, and official resource URL; super-admin-only writes, tenant-read. The read-only compliance-framework master that ComplianceRequirements link to."
 atomPath: "compliance/frameworks"
-coordinate: "compliance/frameworks · 8/crest · 1dd70e90"
-contentUuid: "fa46bafe-5525-54a8-bcb8-3fe2c4e08433"
-diamondUuid: "466331b9-1d1a-8eea-ae95-a2ed942ee3bd"
-uuid: "1dd70e90-5578-8da8-aa0c-689e31ad6128"
-horo: 8
+coordinate: "compliance/frameworks · 5/round · 0351abce"
+contentUuid: "e9c8fde8-6531-5b9d-a7be-31c252e71dc7"
+diamondUuid: "e12fb15d-ac93-818f-af46-88e98106b11f"
+uuid: "0351abce-25c5-8eb0-bcee-0f1d6dfa7c85"
+horo: 5
 typography:
   partition: compliance
-  bondDegree: 0
+  bondDegree: 6
 standards:
   - "COSO-2013"
   - "COSO-2013 internal-control-integrated-framework"
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "5bb29dfe-103d-8b67-b524-4eee7c5a39af"
+  computationUuid: "f12755f5-ed7c-8e2b-9daa-79cbada5e861"
   stages:
     - stage: path
       stageUuid: "52125b33-5e80-8de4-84b6-244511383a6f"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "5af70cb3-e051-8ffb-932b-b6010fd888c2"
     - stage: horo
-      stageUuid: "edd6fa04-4f27-8d05-9b68-7b23dd71a5aa"
+      stageUuid: "791363ed-7728-8df1-85a5-90916bc1ebe4"
     - stage: seal
       stageUuid: "895746e9-e7fa-8a41-ba9f-2cf92387a576"
     - stage: uuid
-      stageUuid: "ec6ea614-6a29-869a-9322-0073a3bb8201"
+      stageUuid: "35be71cd-a151-872b-a8db-566cacda4c42"
 version: 2
 ---
 # compliance-frameworks

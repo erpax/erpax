@@ -2,8 +2,37 @@
 name: prior
 description: "Use when a modern patent claim needs anticipating art — a register of expired grants that are public-domain §102 prior art by construction. Every row's expiry is COMPUTED against the longest term that has ever applied (20 years from filing), never asserted, and the patent number is the citation so a reader checks a row rather than trusting it. Keeps the grant apart from the world: a patent proves a claim was filed, examined and published on a date, never that it works — deployed and undemonstrated are separate fields, and the inference from patented to works is refused."
 atomPath: "patent/prior"
+coordinate: "patent/prior · 5/round · d4cc1a22"
+contentUuid: "643799e0-e651-56c3-9d6e-e9819bd5571e"
+diamondUuid: "bd925026-ad32-8002-9269-a2c3b83542a2"
+uuid: "d4cc1a22-bff1-82e8-8f44-dd84b07137b9"
+horo: 5
+typography:
+  partition: patent
+  bondDegree: 18
+standards:
+  - "35 U.S.C. §102 — novelty; a prior public disclosure anticipates"
+  - "35 U.S.C. §154 — patent term (20 years from filing; 17 from grant pre-1995)"
+bindings: []
+signatures:
+  computationUuid: "3ba91f9b-ea1f-85a0-abee-41da88a9ee81"
+  stages:
+    - stage: path
+      stageUuid: "f4dfe47e-7f22-8d36-bddb-d09b12136e5a"
+    - stage: trinity
+      stageUuid: "79433720-2d75-8160-bbfb-3bf3a5ae6406"
+    - stage: boundary
+      stageUuid: "b4c1fb93-a1f8-8b01-9736-91906421dbe2"
+    - stage: links
+      stageUuid: "2bdf72ad-c338-8048-a762-aef9bfca22e6"
+    - stage: horo
+      stageUuid: "7b3eb03e-6ea7-8a0f-8c30-696ffd340797"
+    - stage: seal
+      stageUuid: "5986f2ef-297c-8d45-b8d8-84ebbdbb42f1"
+    - stage: uuid
+      stageUuid: "780ddc00-1ced-866a-b9fc-e6e4f9aa4e8a"
+version: 2
 ---
-
 # patent/prior — the expired public record, as working §102 art
 
 [[patent]] has the invalidity machinery — `anticipatedBy` · `isObvious` · `isAbstractMath` — and **no art to run it on**. A gate with no corpus never fires ([[rules]]/unraised), so this atom supplies the one body of prior art that needs nobody's permission to publish: **grants whose term has expired**.

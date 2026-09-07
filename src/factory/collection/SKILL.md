@@ -1,7 +1,35 @@
 ---
 name: collection
 description: "Use when a collection is built, its events derived, its fields generated or its shape judged — the factory as a barrel over base, lifecycle, field and shape."
-atomPath: factory/collection
+atomPath: "factory/collection"
+coordinate: "factory/collection · 4/weave · 72805b60"
+contentUuid: "345fdf75-e5dd-5fee-868f-7b00d60b1c03"
+diamondUuid: "08f129b3-2890-804f-8d11-ff6ab718a1b3"
+uuid: "72805b60-0eb3-85b0-b759-cf5bbc8f871b"
+horo: 4
+typography:
+  partition: factory
+  bondDegree: 41
+standards: []
+bindings: []
+signatures:
+  computationUuid: "2649e54b-9467-88f4-94ab-ffbb216d15a0"
+  stages:
+    - stage: path
+      stageUuid: "c44a1277-f9bf-86f6-8540-03203842937a"
+    - stage: trinity
+      stageUuid: "4dad9135-5026-8a71-afe2-2da2ec932821"
+    - stage: boundary
+      stageUuid: "c1d924e5-baa6-86fe-9e55-e356e9721444"
+    - stage: links
+      stageUuid: "d26142e9-0bdb-8149-a274-ecc83f9667e2"
+    - stage: horo
+      stageUuid: "a28b61c6-7779-8fbf-992e-e0bcf67b7388"
+    - stage: seal
+      stageUuid: "5f9212f5-7811-83dc-a303-5e2b6618fb3d"
+    - stage: uuid
+      stageUuid: "94ddbfc9-5649-8bbb-bcf8-294b05684a1e"
+version: 2
 ---
 # factory/collection — one factory, four concerns, no hub matter
 

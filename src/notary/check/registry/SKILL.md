@@ -2,21 +2,21 @@
 name: registry
 description: "Use when a notary check must confirm a company exists and resolve its registered name/address — the REAL wired provider for registryAgency (Агенция по вписванията). Validates an EIK/ЕИК as a BG VAT number against the EU VIES service, which answers over the national Commercial Register in real time; no credential. Honest boundary — VIES gives existence + name + address; representatives/capital and the Property Register (title/encumbrance) need credentialed RegiX / data-sharing access, refused honestly."
 atomPath: "notary/check/registry"
-coordinate: "notary/check/registry · 7/descent · 0c74689a"
-contentUuid: "1bcf7759-c600-551c-9c15-466c1c092f08"
-diamondUuid: "54522c43-6f80-86ca-8995-71257085f078"
-uuid: "0c74689a-6ceb-8408-bdf5-16d056890b97"
-horo: 7
+coordinate: "notary/check/registry · 1/base · 95973084"
+contentUuid: "eef93672-68f1-515f-b7e8-681aa7d99b68"
+diamondUuid: "e0b18f25-623f-8028-b86f-ffe4fe5c01bf"
+uuid: "95973084-929a-8943-9a27-1d28088ee4da"
+horo: 1
 typography:
   partition: notary
-  bondDegree: 15
+  bondDegree: 31
 standards:
   - "Bulgarian Commercial Register (Търговски регистър) — EIK/ЕИК company identity"
   - "Council Directive 2006/112/EC (VAT) · VIES — cross-border registered-taxpayer validation"
   - "EU-VAT-Directive"
 bindings: []
 signatures:
-  computationUuid: "d7bbaec9-c5a5-802e-b2a5-4fcf8766c862"
+  computationUuid: "028b2b1e-4a13-85fa-8c57-ecb45e36dc56"
   stages:
     - stage: path
       stageUuid: "62be28ea-e63e-8245-b065-c99bc8028413"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "ed52fded-1c62-8d52-aa51-9215cd618bd9"
     - stage: horo
-      stageUuid: "6290a7c8-5eee-8c67-837a-fd745115f6b1"
+      stageUuid: "92453449-0ccd-8cb5-8e57-9063d4ec7b61"
     - stage: seal
       stageUuid: "77f1d446-dde5-8b26-93b5-9744382e2004"
     - stage: uuid
-      stageUuid: "73e005bd-4818-8c6a-908b-52000b2feeb7"
+      stageUuid: "0a599098-0e9b-82b0-8af7-64aed1ddd84c"
 version: 2
 ---
 # registry — real company verification via VIES

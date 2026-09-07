@@ -2,14 +2,14 @@
 name: invoices
 description: "Use when issuing, receiving or auditing AR/AP invoices — EN-16931 BG-1 header, BG-22 document totals, BG-23 VAT breakdown, fiscal device fields, period-lock guard, GL posting and audit trail. The invoices collection."
 atomPath: invoices
-coordinate: "invoices · 2/share · 6ad98f69"
-contentUuid: "759a0a80-a187-5961-8649-265de5676bac"
-diamondUuid: "0c057fb0-6813-81a0-8a4c-9f5ed3994290"
-uuid: "6ad98f69-6505-8737-982c-25e2c5ef70cb"
-horo: 2
+coordinate: "invoices · 1/base · 8ad15a93"
+contentUuid: "ed1dee9b-de9a-5919-ab58-60902cd07cf1"
+diamondUuid: "394d22a1-3599-886f-930c-ed5fc0b48f10"
+uuid: "8ad15a93-8c8e-84d6-9a73-2f8e859950be"
+horo: 1
 typography:
   partition: invoices
-  bondDegree: 0
+  bondDegree: 72
 standards:
   - "EN-16931:2017 BT-3 invoice-type-code"
   - "EN-16931:2017 BT-3 invoice-type-code`"
@@ -21,6 +21,7 @@ standards:
   - "EN-16931:2017 §BG-22 document-totals`"
   - "EN-16931:2017 §BG-23 vat-breakdown"
   - "EN-16931:2017 §BG-23 vat-breakdown`"
+  - "IAS-1"
   - "IFRS IFRS-15 revenue-from-contracts-with-customers"
   - "ISO-4217:2015 currency-codes"
   - "ISO-4217:2015 currency-codes`"
@@ -43,22 +44,22 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "41cd9d32-d21f-8f1d-8c8a-cde7ea0395b7"
+  computationUuid: "f99f62f4-06da-8621-9eb8-71fd656b63c6"
   stages:
     - stage: path
       stageUuid: "343d953a-b200-88f2-9d81-ba44e9b2c0ea"
     - stage: trinity
       stageUuid: "25e1f2a9-361f-8cdd-a82c-4c3f7dbcadc9"
     - stage: boundary
-      stageUuid: "e151bd5f-9a3a-8229-a7bf-3b941304e926"
+      stageUuid: "296681bf-8140-86ab-8ce7-b24435549795"
     - stage: links
       stageUuid: "0d1a4cd3-01dc-82ba-a9f1-7d5140a02884"
     - stage: horo
-      stageUuid: "d264756d-175a-88b4-9187-d78097abe800"
+      stageUuid: "d0a5d86d-90b1-8f8e-89d1-b17be127bd8e"
     - stage: seal
-      stageUuid: "962fd028-1986-8e58-9ce7-557199c5ca50"
+      stageUuid: "f8aa3d49-1329-819d-bf1d-17fc61614637"
     - stage: uuid
-      stageUuid: "b9604a45-7493-80ba-935f-0fde5eb60f5d"
+      stageUuid: "547c9bfc-abfb-8114-98d3-fc9bf7dba1e6"
 version: 2
 ---
 # invoices

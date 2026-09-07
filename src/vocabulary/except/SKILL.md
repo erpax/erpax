@@ -2,11 +2,11 @@
 name: except
 description: "Use when reasoning about except as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/except"
-coordinate: "vocabulary/except · 5/round · eaa4e675"
-contentUuid: "c3c9a4c1-1e21-5095-89a8-21727216f028"
-diamondUuid: "48bdc38c-8fcf-8a95-8ff4-028ca62821d4"
-uuid: "eaa4e675-853e-838e-8dfa-1a47894345fb"
-horo: 5
+coordinate: "vocabulary/except · 4/weave · d21ac0c5"
+contentUuid: "81347355-a507-5f72-ae86-ebca994539da"
+diamondUuid: "c48f7754-2204-86d8-8cae-ebf9b6d5abd9"
+uuid: "d21ac0c5-780c-8034-8510-8b6d0c5ee54f"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5e8f97c1-bc5e-8845-a983-60bec5704f74"
+  computationUuid: "691ee16a-c200-8a56-88f5-3660828b9889"
   stages:
     - stage: path
       stageUuid: "bcc9767b-dcc9-8986-9b9a-f89d2f1b1e4d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "272eab8b-6abc-8093-b706-419aa33a1c73"
     - stage: horo
-      stageUuid: "ce65f65c-57d6-87ee-8349-ed92cb9d64c5"
+      stageUuid: "ef45e5f0-455d-8f7d-a15c-0074b797306b"
     - stage: seal
-      stageUuid: "734c9639-1724-86dc-8c3e-6b9f8c6294f9"
+      stageUuid: "992c3e7f-db8e-8096-af10-c12a41fb9747"
     - stage: uuid
-      stageUuid: "f567718f-1bb0-8a4c-8242-dc7454f2fdc0"
+      stageUuid: "ee778c60-a554-8a6c-832a-7b9e300c2881"
 version: 2
 ---
 # except

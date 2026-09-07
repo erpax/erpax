@@ -3,13 +3,13 @@ name: receivables
 description: "Use when reasoning about receivables — , , and are the A/R side of the same party document; buckets it and carries the expected-credit-loss figure IFRS 9 requires, which is the part a receivable cannot honestly omit."
 atomPath: "types/receivables"
 coordinate: "types/receivables · 7/descent · c3008e41"
-contentUuid: "0d933f5d-8643-5c40-9b7f-cfe388643e58"
+contentUuid: "4b12f67d-b915-55bd-a7ee-e3e805209c75"
 diamondUuid: "e21848d7-a52c-8e2f-871e-aaee63a5bb95"
 uuid: "c3008e41-fe67-8eb8-a46b-126ee8b0d85c"
 horo: 7
 typography:
   partition: types
-  bondDegree: 6
+  bondDegree: 3
 standards:
   - "EN-16931:2017 §BG-7 buyer"
   - "IFRS IFRS-9 IFRS-15"

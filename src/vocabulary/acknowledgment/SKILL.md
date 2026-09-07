@@ -2,18 +2,18 @@
 name: acknowledgment
 description: Use when modelling one acknowledgment — the singular model of the acknowledgments collection (the plural store); a formal confirmation that something was received or accepted.
 atomPath: "vocabulary/acknowledgment"
-coordinate: "vocabulary/acknowledgment · 4/weave · f79abd0e"
-contentUuid: "fca46e35-2249-5f87-ad06-6cb1f889192f"
-diamondUuid: "9b1ed312-e3b4-827c-8677-61b2f26e751c"
-uuid: "f79abd0e-1c8f-8401-9ce2-025034d7208f"
-horo: 4
+coordinate: "vocabulary/acknowledgment · 7/descent · ccc42698"
+contentUuid: "641ef088-74b1-56d8-801c-9bc0a7650275"
+diamondUuid: "363d3e90-39ca-860a-bc46-60a1f0ec5820"
+uuid: "ccc42698-c73f-80cb-a53c-ad5faaeb1f58"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3394124e-bbed-8ab7-abe4-f82bd224d939"
+  computationUuid: "711e30a5-e875-8763-bfb7-4694dbfc9dc7"
   stages:
     - stage: path
       stageUuid: "83612a27-6ca1-88e5-ba04-3b88d94c4ed9"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "89d9e946-94b7-8ea0-9473-b12cc4beb84f"
     - stage: horo
-      stageUuid: "35ede2af-47d9-80fc-ac11-15713aef5337"
+      stageUuid: "0c406d69-e899-86c4-8ef3-5328611554bf"
     - stage: seal
-      stageUuid: "5ef753a4-009e-877b-a5b4-a82579691589"
+      stageUuid: "94507355-f0eb-839a-bc98-22f1bfd0cbe8"
     - stage: uuid
-      stageUuid: "cc35236d-a7e7-8744-ad16-4dc547c6c6f7"
+      stageUuid: "ebf02fbe-43f5-80a9-994f-7097f4677c38"
 version: 2
 ---
 # acknowledgment — the model of one [[acknowledgments]] row

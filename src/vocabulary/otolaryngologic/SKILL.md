@@ -2,10 +2,10 @@
 name: otolaryngologic
 description: "Use when reasoning about otolaryngologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/otolaryngologic"
-coordinate: "vocabulary/otolaryngologic · 7/descent · 4e8010e3"
-contentUuid: "4504818f-73a9-5db9-b98b-43733d6231fb"
-diamondUuid: "bea65965-ff9e-8747-909b-71e8102b4cec"
-uuid: "4e8010e3-8563-8c95-a72f-d445bd53b5e4"
+coordinate: "vocabulary/otolaryngologic · 7/descent · 33e281b6"
+contentUuid: "f102c105-af36-57ba-ab76-c4d90f0fb1fd"
+diamondUuid: "d8dc8b3f-539f-80c6-96f4-133d2cbeb796"
+uuid: "33e281b6-4a91-8b25-8f77-3eec469d2d85"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "690a926f-1305-8c32-839b-cdf2c34cd56e"
+  computationUuid: "1670e464-cd6f-8461-863f-f4998d956bc5"
   stages:
     - stage: path
       stageUuid: "18806b8f-6cac-860c-89f3-4d52e536eaa1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c155aff5-70a1-8b96-8271-0b03c213fa92"
     - stage: horo
-      stageUuid: "8db8b2f9-7242-856f-8ab9-2e62ee75e395"
+      stageUuid: "85a3bca7-e059-8118-a7f5-b1791c057b73"
     - stage: seal
-      stageUuid: "082d9923-5589-8453-a162-8c3a9af2c756"
+      stageUuid: "acd50dbd-93bb-8ec6-954e-5b815e9bb868"
     - stage: uuid
-      stageUuid: "23a58bb1-c3b8-8031-9250-7bd07060ea4d"
+      stageUuid: "2b009eb9-4000-875f-aa24-0a07d879d1dd"
 version: 2
 ---
 # otolaryngologic

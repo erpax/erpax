@@ -2,10 +2,10 @@
 name: icao
 description: "Use when reasoning about icao as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/icao"
-coordinate: "vocabulary/icao · 4/weave · 090dde92"
-contentUuid: "2ad0d5c6-ec3f-5904-9ea1-6050aac6e55e"
-diamondUuid: "bc79af35-d066-8d96-bf0a-6f011df39b01"
-uuid: "090dde92-4851-8422-91a1-489c6a6e7318"
+coordinate: "vocabulary/icao · 4/weave · 97231df7"
+contentUuid: "caeca922-2a14-554e-a803-67fac82ede4d"
+diamondUuid: "69673209-2edf-81ba-a7a4-55e4e3f5524b"
+uuid: "97231df7-4ba6-8f8f-867e-8611fe1e52c6"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5d86c245-76b0-866a-9265-e78242c59c7d"
+  computationUuid: "4ef59453-9173-8299-a354-b6746ecc4088"
   stages:
     - stage: path
       stageUuid: "88b2ddc8-459a-8e3f-9f3c-d8d70eb977a1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2ef44a56-22df-888a-9684-6730bda19d8c"
     - stage: horo
-      stageUuid: "fdf62c26-b678-85d3-aa63-9455d6261f79"
+      stageUuid: "60c2c3bd-a68f-8e83-910e-853bfe94433c"
     - stage: seal
-      stageUuid: "268a951f-bc63-8fb6-a39d-6ee348b55bc8"
+      stageUuid: "1511f85c-558a-86fb-85f8-621878eb7526"
     - stage: uuid
-      stageUuid: "2da7623e-be33-8f7a-9ad8-d7a71c8a50fa"
+      stageUuid: "51e83901-5ecf-8de1-a6ec-e7d230df6a57"
 version: 2
 ---
 # icao

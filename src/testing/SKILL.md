@@ -2,17 +2,16 @@
 name: testing
 description: "Use when writing or debugging erpax's own tests — discovering the live config to assert against, seeding isolated fixtures by level (unit/integration/e2e), transactional cleanup, parallel runners, or snapshot/restore — the society's self-test infrastructure that validates the running app against its own generated schema."
 atomPath: testing
-coordinate: "testing · 2/share · 634c6a0c"
-contentUuid: "94a1a741-ef21-50bc-85ec-ef3c7e93312e"
-diamondUuid: "45f9e2d1-20ae-862c-b2bc-b844d5dcb17e"
-uuid: "634c6a0c-3b0e-8f6e-a891-a0f141be735c"
-horo: 2
+coordinate: "testing · 5/round · e788de61"
+contentUuid: "1d0d9f25-f998-58bb-8198-a8cb9c25bbcc"
+diamondUuid: "713c431e-d819-8591-8bf9-aae789dea8b8"
+uuid: "e788de61-f802-88ee-bcdf-5a1f619a7b45"
+horo: 5
 typography:
   partition: testing
-  bondDegree: 0
+  bondDegree: 48
 standards:
   - "8259 json"
-  - "ISO/IEC-29119"
   - "ISO/IEC-29119:2022 software-testing"
   - "ISO/IEC-29119:2022 software-testing`"
   - "ISO/IEC/IEEE-29119"
@@ -22,10 +21,11 @@ standards:
   - "ISO/IEC/IEEE-29119-4:2021 test-techniques`"
   - "JSON-Schema"
   - "JSON-Schema 2020-12 schema-validation"
+  - "RFC-8259"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "3226fb46-60ba-82d8-92ac-440d6c22d3c9"
+  computationUuid: "2f2be0a0-1938-825c-b691-1c8c6553f6e5"
   stages:
     - stage: path
       stageUuid: "b045970f-6ba3-8082-a1a6-e3d6082d4602"
@@ -34,13 +34,13 @@ signatures:
     - stage: boundary
       stageUuid: "35f81b66-95af-830d-8238-d7ec27d175c3"
     - stage: links
-      stageUuid: "78968b17-e4f4-899c-be75-8cf00a5fd301"
+      stageUuid: "dc12e17b-48c7-880f-b5dd-0c697e5a0f95"
     - stage: horo
-      stageUuid: "6832c1eb-17ad-878e-82e2-04c5a228301d"
+      stageUuid: "81ebd1fa-e274-855e-808a-291b42bdd450"
     - stage: seal
-      stageUuid: "ff2d207a-6082-8cf5-9511-6dc4f60c2753"
+      stageUuid: "8986dcda-83ae-8d42-84c4-eddba02a65bd"
     - stage: uuid
-      stageUuid: "582d2159-54cf-8ba0-be00-66a0ebc243a1"
+      stageUuid: "6a0dad54-0676-8d7d-811a-912a5674dda9"
 version: 2
 ---
 # testing — the society proving itself against its own schema

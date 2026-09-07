@@ -2,19 +2,19 @@
 name: goods
 description: "Use when reasoning about goods as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/goods"
-coordinate: "vocabulary/goods · 2/share · 906c0f88"
-contentUuid: "343bf8f4-db41-5622-9b3e-616eb8c8e5da"
-diamondUuid: "da100951-6542-8e1b-859d-a73f9a4fe237"
-uuid: "906c0f88-b12b-8c8f-abc9-7c9fb685e526"
-horo: 2
+coordinate: "vocabulary/goods · 7/descent · 8b72e628"
+contentUuid: "efc86311-16fc-5a5f-bb29-8d04bb980c59"
+diamondUuid: "d5efecc8-6bdb-8762-8437-cf0d958b5918"
+uuid: "8b72e628-563d-8fb1-9e34-24debeb7ef2e"
+horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 24
+  bondDegree: 26
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "471b5cf2-dfe1-875f-a593-5d649cad30e6"
+  computationUuid: "b0215527-0bd1-8700-a933-6aed0c217c5b"
   stages:
     - stage: path
       stageUuid: "21fff675-b221-815b-b1e0-4328156a53cc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3825ab0b-d34f-8d12-9647-a48dec376114"
     - stage: horo
-      stageUuid: "dddd4a71-8ef1-8e41-87f6-87e542aafe36"
+      stageUuid: "84ef9659-6139-854b-b356-d5f5236c4f84"
     - stage: seal
-      stageUuid: "e50f6e97-e337-8bdb-8809-8dbbc07a8812"
+      stageUuid: "60f1a2ea-fc31-8340-9bd5-616ec21cdb84"
     - stage: uuid
-      stageUuid: "3a1c9a96-af3a-83ec-b140-731d2b5421a1"
+      stageUuid: "438ccc29-987e-8af5-8f81-43b9e01c584b"
 version: 2
 ---
 # goods

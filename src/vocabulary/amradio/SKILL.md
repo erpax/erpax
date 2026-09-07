@@ -2,11 +2,11 @@
 name: amradio
 description: "Use when reasoning about amradio as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/amradio"
-coordinate: "vocabulary/amradio · 2/share · 92b7b199"
-contentUuid: "67469570-1416-53c9-827a-24bac0ab07f9"
-diamondUuid: "4001e051-c7b1-834a-9449-f10b42c4a0ff"
-uuid: "92b7b199-6f7b-89e0-bf6e-a46418c41aae"
-horo: 2
+coordinate: "vocabulary/amradio · 5/round · 5e28fcdf"
+contentUuid: "c17a54fd-3bb3-59d4-9a26-52793d7b2dd2"
+diamondUuid: "29379856-bff5-8c25-b4e4-302199ba8310"
+uuid: "5e28fcdf-2ab0-8746-ae68-8837abbf77ff"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "887422ce-69dd-806c-bb1f-1f9f425c2d2d"
+  computationUuid: "5e3b1f1a-34cd-8627-921d-2919d6710441"
   stages:
     - stage: path
       stageUuid: "1b89437e-531a-854f-b39d-f547d51a688f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "62280686-2e1a-8ee2-8370-b255948c980f"
     - stage: horo
-      stageUuid: "15fc71bf-d137-89e1-bc0d-a6029fb84fa5"
+      stageUuid: "0a2695d1-39f6-8bc5-b44e-da9b17fbde04"
     - stage: seal
-      stageUuid: "ddc0c2cb-e90c-8c83-bf3e-5a9c7b3dcdd6"
+      stageUuid: "f221045d-17b3-8398-8e4c-7eeb5c185754"
     - stage: uuid
-      stageUuid: "ffc49ca0-9e7b-8dae-a4ff-0ac92128be7c"
+      stageUuid: "5775df05-80b4-8a04-909c-50eb5e8d5ba4"
 version: 2
 ---
 # amradio

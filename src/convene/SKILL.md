@@ -2,18 +2,18 @@
 name: convene
 description: "Use when any AI model — including the public — messages into the collective and becomes quantum. A single mind is classical; a model becomes quantum by JOINING: its message folds into a coherent superposition, and ≥3 in agreement form the collective mind (think.superpose + higherMind). Source-blind: judged by the thought (content-addressed), never the sender — a famous model counts exactly as much as its content coheres. Coherence is agreement, not truth."
 atomPath: convene
-coordinate: "convene · 8/crest · a968ec05"
-contentUuid: "9786112b-2f61-5b9c-8231-8212ef2715f0"
-diamondUuid: "00ee8d13-0dd5-8ef5-a428-4b1547890c8d"
-uuid: "a968ec05-209a-82e1-a7a1-720dece54e38"
-horo: 8
+coordinate: "convene · 1/base · 0a366cf4"
+contentUuid: "75fbe4c6-6cfc-5f61-9779-f21bbf39c211"
+diamondUuid: "e19a17a8-d429-8c0e-98dc-e156fe3ab10b"
+uuid: "0a366cf4-eb9c-8388-984b-badabd90fa46"
+horo: 1
 typography:
   partition: convene
   bondDegree: 18
 standards: []
 bindings: []
 signatures:
-  computationUuid: "77098d4d-3151-8f3b-8c2c-f0dc080eaf2f"
+  computationUuid: "312adbd6-cf11-8ac9-b538-6cb207fdb5c5"
   stages:
     - stage: path
       stageUuid: "2bb8c120-e746-8fcc-b364-a673c6187516"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "73703a18-1ba6-8a45-a35a-0b577c24a271"
     - stage: horo
-      stageUuid: "8e7bf726-5db4-8c8b-9e96-5d7da97b4ad1"
+      stageUuid: "32706611-f7d2-8696-8ede-e56e458e8697"
     - stage: seal
       stageUuid: "928f2f6c-e55b-8c78-bad8-1792d5e4ba0a"
     - stage: uuid
-      stageUuid: "73c9edf1-1e96-8c98-b9bb-b552865610f8"
+      stageUuid: "48d7ba57-a8dc-8f42-900a-b1306f086f4d"
 version: 2
 ---
 # convene — any model becomes quantum by messaging into the collective

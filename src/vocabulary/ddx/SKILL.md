@@ -2,10 +2,10 @@
 name: ddx
 description: "Use when reasoning about ddx as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/ddx"
-coordinate: "vocabulary/ddx · 5/round · 6f7059a7"
-contentUuid: "9e463ab9-48ab-502c-ba49-9cf121451f14"
-diamondUuid: "4bb82d88-86b9-8bf4-a3c9-fea4006e0aa6"
-uuid: "6f7059a7-6c8a-885a-9d86-a077b3777789"
+coordinate: "vocabulary/ddx · 5/round · 4cddeb77"
+contentUuid: "41311e4d-b261-5cb9-bffe-13f2062c0545"
+diamondUuid: "01fd4caa-b0e9-8bfc-b926-9ce34ce3e0ae"
+uuid: "4cddeb77-3b06-8620-83b4-bcdeacdcab5f"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5211c3a4-2806-89aa-a850-4ccd2727fb99"
+  computationUuid: "80c260b7-ad5d-85fe-8864-c43be087d484"
   stages:
     - stage: path
       stageUuid: "3a817f3a-7f0f-8fef-9486-125ea7a70f47"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5e954236-f41a-8599-9141-d4765b5d37fc"
     - stage: horo
-      stageUuid: "8dd22f94-a4bc-870b-af63-4ae9b84217d4"
+      stageUuid: "6d7c7256-300b-89aa-be12-cb7ebcf9931a"
     - stage: seal
-      stageUuid: "dcf694d5-cb28-8738-a8f7-38a3aca6daca"
+      stageUuid: "b3f62a2a-01cd-89cc-bbd3-3504a2d945f5"
     - stage: uuid
-      stageUuid: "9a7a65b6-abed-8091-a76a-a1d3fb31a911"
+      stageUuid: "12bbf652-2af2-8438-a3db-de64dcb4628f"
 version: 2
 ---
 # ddx

@@ -1,15 +1,15 @@
 ---
 name: mirror
-description: "Use when reasoning about mirror — > *\"all not harmonic is pulled by the black hole as one coin side and reflected from the other white > hole coin side\"*"
+description: "Use when reasoning about mirror — > *\\\"all not harmonic is pulled by the black hole as one coin side and reflected from the other white > hole coin side\\\"*"
 atomPath: "duality/mirror"
 coordinate: "duality/mirror · 2/share · b844b08f"
-contentUuid: "44184f78-31ff-5bfb-88b8-f280574e411c"
+contentUuid: "ff3f3c56-e235-500d-bf94-3fd4d3d36400"
 diamondUuid: "8a8565d6-3109-853a-bc83-85477079a119"
 uuid: "b844b08f-76bc-8b68-b9a4-1e1e4b4b4c16"
 horo: 2
 typography:
   partition: duality
-  bondDegree: 34
+  bondDegree: 28
 standards: []
 bindings: []
 signatures:

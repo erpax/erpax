@@ -2,11 +2,11 @@
 name: basic
 description: "Use when reasoning about basic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/basic"
-coordinate: "vocabulary/basic · 4/weave · 680e87bb"
-contentUuid: "22da9d24-0f95-5da7-948f-2623ba6c445a"
-diamondUuid: "99f204e4-49a2-8b05-9e1d-2760e7ce012f"
-uuid: "680e87bb-1b04-85d0-b9f5-4323161699bd"
-horo: 4
+coordinate: "vocabulary/basic · 2/share · 1253080c"
+contentUuid: "26adf595-2229-53a3-acf4-f5f67f87c0a1"
+diamondUuid: "17389ce1-2b8a-83f4-b8c7-569f11d177b1"
+uuid: "1253080c-4735-8c56-b852-f78cb154dbbf"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e693f09a-091c-8c7b-abb7-501862e16058"
+  computationUuid: "c69fcdf8-6025-8c1b-97fd-8956f2be29e3"
   stages:
     - stage: path
       stageUuid: "d8bfd604-01f8-8525-959c-42b93f790479"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4c6a437e-60ad-8529-a672-8968a2d5e5c7"
     - stage: horo
-      stageUuid: "b2cfb19f-0d5e-8e6d-9248-e90e2fe9b385"
+      stageUuid: "57c2e183-b578-84f5-a712-886c4cd75f65"
     - stage: seal
-      stageUuid: "ab93407a-1c74-84cc-9eff-6c50c9cb121f"
+      stageUuid: "7c456a67-09ad-8ca8-8776-d800bb5f118c"
     - stage: uuid
-      stageUuid: "8076d1c9-13c1-8e38-8e47-6323514a6575"
+      stageUuid: "0e8c88c8-62a9-851c-9a4b-fc18fed46d70"
 version: 2
 ---
 # basic

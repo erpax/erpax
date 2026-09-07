@@ -3,13 +3,13 @@ name: registry
 description: Use when reasoning about registry — binds each role to the standards it answers to and the chain steps it may execute.
 atomPath: "roles/registry"
 coordinate: "roles/registry · 8/crest · 526e2910"
-contentUuid: "0ebab583-fc71-5d08-bf92-6bda219e6490"
+contentUuid: "09a6c330-aeff-5683-802d-247240a0c990"
 diamondUuid: "1d4479ba-3b0f-8266-bede-e16fcb165fc1"
 uuid: "526e2910-db45-8da7-8f9e-e811056be5b5"
 horo: 8
 typography:
   partition: roles
-  bondDegree: 40
+  bondDegree: 31
 standards:
   - "COBIT 5 PO4.11 segregation-of-duties"
   - "GDPR Art.37-39 data-protection-officer"

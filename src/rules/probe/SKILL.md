@@ -3,13 +3,13 @@ name: probe
 description: "Use when reasoning about probe — For a React atom the answer is **yes** and this returns **no**. Its barrel is , because JSX does not parse from a file — that is not a stylistic variant, it is the only spelling…"
 atomPath: "rules/probe"
 coordinate: "rules/probe · 7/descent · f92bfe37"
-contentUuid: "4c41c345-bce0-5085-bac9-25c796a4363e"
+contentUuid: "2050cddb-2701-51a7-8d84-5dcb8cbf6c38"
 diamondUuid: "2542ef8d-8f26-815a-ae38-6c4230747445"
 uuid: "f92bfe37-d6bd-885b-b722-8a283cf75aff"
 horo: 7
 typography:
   partition: rules
-  bondDegree: 23
+  bondDegree: 17
 standards: []
 bindings: []
 signatures:

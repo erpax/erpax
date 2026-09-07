@@ -2,11 +2,11 @@
 name: reserved
 description: "Use when reasoning about reserved as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/reserved"
-coordinate: "vocabulary/reserved · 7/descent · 09af7a18"
-contentUuid: "21d84965-8587-5fbe-92f8-7e1307a7b55f"
-diamondUuid: "ae39d0ce-1daf-8288-949e-88a3ce270a8e"
-uuid: "09af7a18-fca3-87da-ab58-e5fde4289558"
-horo: 7
+coordinate: "vocabulary/reserved · 5/round · c5a0ae4c"
+contentUuid: "9c5d3b66-5ebb-5615-af33-2dc068b199a1"
+diamondUuid: "2baff035-7c2d-8347-8816-2eeb70057d49"
+uuid: "c5a0ae4c-63bf-8067-b7a6-85dce9ae1476"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e6b8dd0d-b24c-8b55-95b9-e4cce46b0ff3"
+  computationUuid: "7ac5fb8f-bb87-8f3e-8e37-5dd710c9d027"
   stages:
     - stage: path
       stageUuid: "a2a273f9-1c56-8a3e-b5a3-2d9285ec3b8c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cbbec043-9302-8f10-8667-62c6d8c9b694"
     - stage: horo
-      stageUuid: "7ac974e1-c1dc-83d1-a7cc-44a2864a4dfb"
+      stageUuid: "75f11dce-0436-8e5e-a656-ca4fd77d5555"
     - stage: seal
-      stageUuid: "b06752f8-b307-86c6-9b59-e253bdad2b7e"
+      stageUuid: "a8514418-cfb4-892f-a7e8-0c420078d927"
     - stage: uuid
-      stageUuid: "0d61ee44-bfaa-86ef-a915-1c9b514f0818"
+      stageUuid: "0cfc8ab6-5ead-8e8a-badd-354af493970d"
 version: 2
 ---
 # reserved

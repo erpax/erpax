@@ -2,11 +2,11 @@
 name: deadline
 description: "Use when reasoning about deadline as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/deadline"
-coordinate: "vocabulary/deadline · 2/share · 53ea1dea"
-contentUuid: "e96e3bcb-1914-5d8c-957a-fb58cdcc651d"
-diamondUuid: "65a653a0-582e-8194-8a57-c8eb4e84d06f"
-uuid: "53ea1dea-9244-8db0-b553-91c3f1bda51f"
-horo: 2
+coordinate: "vocabulary/deadline · 8/crest · a4b188d2"
+contentUuid: "bc89dac6-8561-5ca5-96fb-a24505667046"
+diamondUuid: "5399acbe-8669-8006-9429-4ad6331f7edd"
+uuid: "a4b188d2-9f57-870d-a0ed-f1ae02f15b98"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "75a852c8-f748-8796-afdf-c5bddfc5c922"
+  computationUuid: "728a76ce-a64f-847b-b961-01e7518938e3"
   stages:
     - stage: path
       stageUuid: "3b654077-fddb-8bc7-b32b-395465c662f9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ef86b7af-fedd-8cc4-8a4b-66f55f0dd87a"
     - stage: horo
-      stageUuid: "400b0fc8-9077-876f-b2be-ede5c5cfb0b8"
+      stageUuid: "1b41783a-4a18-8139-8bc4-bc6c7a5a2c92"
     - stage: seal
-      stageUuid: "d3c287aa-df02-8635-bccb-51918475fb81"
+      stageUuid: "77d21416-4385-8864-83d4-4be947d03420"
     - stage: uuid
-      stageUuid: "827f2cbc-e37f-85c8-8f58-5fcdfe31e2a7"
+      stageUuid: "d3e18f69-5a7a-8080-a203-cd9376f75322"
 version: 2
 ---
 # deadline

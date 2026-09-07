@@ -2,11 +2,11 @@
 name: physiotherapy
 description: "Use when reasoning about physiotherapy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/physiotherapy"
-coordinate: "vocabulary/physiotherapy · 7/descent · ead438c9"
-contentUuid: "c06e98f3-267d-5163-930e-c8a33dc08a07"
-diamondUuid: "53677a6d-75de-8420-951b-b98634c09c6d"
-uuid: "ead438c9-1711-85f5-9c7a-3d46b6df7ce1"
-horo: 7
+coordinate: "vocabulary/physiotherapy · 1/base · cb1513c3"
+contentUuid: "b9f8e3a8-127a-5362-a972-4626354a68c8"
+diamondUuid: "1a39b3c8-e0fd-8726-ba3c-31899c230f10"
+uuid: "cb1513c3-e128-8745-a182-a6acfac743fc"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "68095c3b-6723-83cc-bb71-60a3f05e0e08"
+  computationUuid: "7ba8c834-94ae-8287-8159-07e4142ee776"
   stages:
     - stage: path
       stageUuid: "6b6fb2e3-9c43-83b1-8b18-2f0ace2c5307"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3e170aa4-dae7-8273-9587-b1ded1dc799e"
     - stage: horo
-      stageUuid: "f3022fa9-a816-84b9-be3f-b350c08346de"
+      stageUuid: "2fae36e3-093e-8722-80c1-72d6779be946"
     - stage: seal
-      stageUuid: "c6886d4c-7ad1-87d0-bdbb-1d45b57dfa32"
+      stageUuid: "17ffd9f5-046d-8b06-94c8-c65ec2456492"
     - stage: uuid
-      stageUuid: "8e04946c-41fd-895a-8026-d0dedd2dc1f1"
+      stageUuid: "4c5e7739-1551-8add-b665-d97a092f1c8d"
 version: 2
 ---
 # physiotherapy

@@ -2,11 +2,11 @@
 name: cadastre
 description: "Use when a notary check must confirm a real-property parcel exists and resolve its cadastral identity — the REAL wired provider for cadastre (АГКК / КАИС). Queries the public АГКК INSPIRE ArcGIS service (Cadastral_Parcel layer) by national cadastral reference (КНИ, e.g. 15285.14.122) and returns existence + area + INSPIRE id; no credential. Honest boundary — INSPIRE gives parcel identity/boundaries (public); OWNERSHIP and full КНИ detail are a КАИС internal e-service (ВЕАУ) behind accredited notary access, and title is answered by registryAgency, not here."
 atomPath: "notary/check/cadastre"
-coordinate: "notary/check/cadastre · 8/crest · cc5c5cfa"
-contentUuid: "a9cb6003-9c1b-5f32-8af3-07cbdadcd63c"
-diamondUuid: "60b28fde-2879-83c7-a935-287c5ea5cda9"
-uuid: "cc5c5cfa-df39-8398-872b-6f321bf21d6d"
-horo: 8
+coordinate: "notary/check/cadastre · 2/share · 27edacce"
+contentUuid: "4e527645-a518-5e8f-977d-cdc15335cdcc"
+diamondUuid: "dc4f2bb4-c205-8d02-8b60-91ab3cbb9922"
+uuid: "27edacce-aba8-8e4d-a4b2-93d1fa74146f"
+horo: 2
 typography:
   partition: notary
   bondDegree: 9
@@ -15,7 +15,7 @@ standards:
   - "INSPIRE Directive 2007/2/EC — Cadastral Parcels theme (CP)"
 bindings: []
 signatures:
-  computationUuid: "89d5ba4c-3408-89da-aa80-a5c4161ca893"
+  computationUuid: "d149563b-4c02-8a5f-a82d-43b07092c9f8"
   stages:
     - stage: path
       stageUuid: "0d9b175a-cf6f-80fe-8b24-dab5c542bfe7"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "eca58549-d1a5-8a08-900b-bd95b167d81b"
     - stage: horo
-      stageUuid: "079d514f-a27e-80d1-8b80-3c0ecc868a2e"
+      stageUuid: "69ef4fbf-a79f-88f7-a6cc-6357d1615348"
     - stage: seal
       stageUuid: "0388b3ef-4854-8b7e-b5ac-4963067e1dce"
     - stage: uuid
-      stageUuid: "316f7a41-2778-8dc8-bf08-1325ae104658"
+      stageUuid: "d9e4f048-742e-8132-b735-ddf3c1ceb5a0"
 version: 2
 ---
 # cadastre — real parcel identity via the АГКК INSPIRE service

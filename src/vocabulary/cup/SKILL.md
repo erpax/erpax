@@ -2,11 +2,11 @@
 name: cup
 description: "Use when reasoning about cup as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/cup"
-coordinate: "vocabulary/cup · 2/share · 478b0ed1"
-contentUuid: "e4c8d665-eef5-5cdd-85da-52cf5a0b990e"
-diamondUuid: "10051186-bc1b-848b-ac66-f35a9d26ce5b"
-uuid: "478b0ed1-74ff-8198-84ad-02d8ca55b15f"
-horo: 2
+coordinate: "vocabulary/cup · 8/crest · e091fe54"
+contentUuid: "d885f2f8-22ec-5b6e-bc13-b1f8343275d5"
+diamondUuid: "1a06361d-1d7a-88fe-9fb7-fbe075783f3d"
+uuid: "e091fe54-3b83-8c84-80c8-474bbe1e2967"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f9d657a7-6d8c-84ed-b1cf-3af2d351d5fb"
+  computationUuid: "3af2f866-f09e-8cf7-8a98-af922dcede7d"
   stages:
     - stage: path
       stageUuid: "4d3db7a9-5f6b-8806-97d7-fc38522df500"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7671ec8b-3c8b-8114-81e9-b5f3658005bb"
     - stage: horo
-      stageUuid: "ba479d1b-5477-838b-96c1-e3c1368e6dcd"
+      stageUuid: "686fc378-92f3-8c1c-b8e4-e6ddb7d074a7"
     - stage: seal
-      stageUuid: "22f841f8-4352-8136-a033-c81b76a17d6b"
+      stageUuid: "ebbb33fb-fc10-8da6-bf3b-252c50c49004"
     - stage: uuid
-      stageUuid: "c71c0a57-2fc6-88f4-abd4-6a9c75f5f399"
+      stageUuid: "7e6154e7-24e9-87bc-bb25-d76315333558"
 version: 2
 ---
 # cup

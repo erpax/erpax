@@ -2,18 +2,18 @@
 name: estimate
 description: Use when modelling one estimate — the singular model of the estimates collection (the plural store); a projected figure issued before the actual is known.
 atomPath: "vocabulary/estimate"
-coordinate: "vocabulary/estimate · 8/crest · 0ff796a4"
-contentUuid: "4fd3900d-5d0f-55c1-bde1-85c46ff85dcb"
-diamondUuid: "6261b63b-c549-8259-a96b-8c8bec9201ce"
-uuid: "0ff796a4-2979-850c-b0dc-e0399e2c499a"
-horo: 8
+coordinate: "vocabulary/estimate · 4/weave · cfad1ea6"
+contentUuid: "085bd663-dc1f-58bc-a9b3-3fc4d6dfac9d"
+diamondUuid: "b52d34eb-a206-8543-97d6-6114d91e3210"
+uuid: "cfad1ea6-b46b-8fc4-8ce3-4a1f9fd227b0"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7a94b6f0-5a56-8b44-8d95-1ddab5804526"
+  computationUuid: "ee8b747c-0824-8d25-814c-50353018d0e3"
   stages:
     - stage: path
       stageUuid: "a07cad24-dbe1-887d-bc75-35096d928554"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "32e301f8-8830-86e2-8e86-e556303666e4"
     - stage: horo
-      stageUuid: "efbb6557-a51e-874a-b78b-24d34a56988c"
+      stageUuid: "daf371a7-ea51-8b65-a8bc-b4bece3093af"
     - stage: seal
-      stageUuid: "05910b09-5368-8d26-90dc-582dd867c3cc"
+      stageUuid: "787d30b3-9412-8c86-a561-86ed941832cf"
     - stage: uuid
-      stageUuid: "7a78e484-5901-8128-a27f-2a2c65fc0aac"
+      stageUuid: "9723ba5d-ee9f-8898-8f6a-721d05cec9e0"
 version: 2
 ---
 # estimate — the model of one [[estimates]] row

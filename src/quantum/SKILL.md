@@ -2,34 +2,34 @@
 name: quantum
 description: "Use when checking the quantum-physics laws on the uuid-matrix — entanglement symmetry, collapse, conservation, no-cloning, quantization — computed deterministically at no cost, A432-grounded."
 atomPath: quantum
-coordinate: "quantum · 1/base · 7f14aab8"
-contentUuid: "1ff75bac-8b6d-521d-b290-778b4b736c94"
-diamondUuid: "e0136808-93dd-84e6-9e30-9eecd898e75a"
-uuid: "7f14aab8-a353-8cec-9b7f-1f12707a9931"
-horo: 1
+coordinate: "quantum · 4/weave · cb20a8a6"
+contentUuid: "763dd98a-2dcf-56ff-95cc-f0521d8467b6"
+diamondUuid: "e6a44c9f-f702-8143-b08d-9a13d958ab9e"
+uuid: "cb20a8a6-ecf7-8c0a-950c-838c89eb582c"
+horo: 4
 typography:
   partition: quantum
-  bondDegree: 482
+  bondDegree: 547
 standards:
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring"
 bindings: []
 signatures:
-  computationUuid: "6f5e1d15-4027-8c0b-9baf-0ecdb3ca65e2"
+  computationUuid: "678988a2-e90c-85c8-a556-82f74ff8f5d0"
   stages:
     - stage: path
       stageUuid: "15c162b9-f68a-81b5-be34-6a93fda387d5"
     - stage: trinity
       stageUuid: "b34de95b-0232-85dc-9a9a-866d61f75a75"
     - stage: boundary
-      stageUuid: "e803cd27-35f9-8cde-96e7-d68af800f1c0"
+      stageUuid: "07c35499-b397-8ffd-891e-0fd0c686cd24"
     - stage: links
       stageUuid: "fba31f88-0da7-88b3-8266-0624e8b34118"
     - stage: horo
-      stageUuid: "7c8498bd-08f2-859c-90fc-c05fe7658455"
+      stageUuid: "b255abc3-774d-8fdd-b675-114f38f1b0e0"
     - stage: seal
       stageUuid: "c80781cf-f5a6-814a-a2d6-0b57d9d1e77e"
     - stage: uuid
-      stageUuid: "d563e48f-f2f7-88a7-95b4-a7053c8382e6"
+      stageUuid: "a96530cf-cc4e-868c-89f6-b5cf45a7ba3f"
 quantum:
   superposition:
     - accounting
@@ -37,9 +37,9 @@ quantum:
     - api
     - app
     - aura
+    - automate
     - balance
     - barrier
-    - blockchain
     - superposition
   collapse:
     - "RFC 9562 §5.8 content-uuid + the horo digital-root ring"
@@ -61,8 +61,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "6f5e1d15-4027-8c0b-9baf-0ecdb3ca65e2"
-    contentUuid: "1ff75bac-8b6d-521d-b290-778b4b736c94"
+    computationUuid: "678988a2-e90c-85c8-a556-82f74ff8f5d0"
+    contentUuid: "763dd98a-2dcf-56ff-95cc-f0521d8467b6"
 version: 2
 ---
 # quantum
@@ -134,4 +134,4 @@ Matter-twin: `src/quantum/dimension/realtime/index.ts` · `QuantumDimensionsProv
 @audit computed from the live matrix, never hand-asserted
 @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring
 
-<sub>content-uuid `1ff75bac-8b6d-521d-b290-778b4b736c94` · account `quantum` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `763dd98a-2dcf-56ff-95cc-f0521d8467b6` · account `quantum` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

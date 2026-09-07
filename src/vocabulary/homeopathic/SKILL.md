@@ -2,11 +2,11 @@
 name: homeopathic
 description: "Use when reasoning about homeopathic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/homeopathic"
-coordinate: "vocabulary/homeopathic · 2/share · 4023a8a9"
-contentUuid: "0fe7841d-ce52-50ca-a1ad-850375d2ade1"
-diamondUuid: "5da0bad0-4a97-8fa8-b8d8-3f08adf0c5d0"
-uuid: "4023a8a9-e843-83fe-9cbe-5ea61c638bcd"
-horo: 2
+coordinate: "vocabulary/homeopathic · 7/descent · 1407e7e1"
+contentUuid: "6cdbc0fc-9f6f-555f-9579-03d1e941718f"
+diamondUuid: "27dbf7c0-88de-839c-9fe9-d361a2a266db"
+uuid: "1407e7e1-f0b9-845b-aba2-e94160cae054"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "582e869d-9d13-8a98-9eb2-8f25071e7776"
+  computationUuid: "4e987e5c-1863-8e8b-9a2b-54f22f1d8baa"
   stages:
     - stage: path
       stageUuid: "1a52bfa6-5cec-8711-800e-1b74eb4e4381"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d006c43e-bc5e-87c4-a146-ce8cfa94d7df"
     - stage: horo
-      stageUuid: "3637a2df-c4ee-8284-b258-52d58f353465"
+      stageUuid: "ee86d303-c9f3-8e7a-8955-aedcbc89fc9a"
     - stage: seal
-      stageUuid: "3d93fc5f-5458-83b4-afee-bddc012e5a8e"
+      stageUuid: "dc383371-3456-83cd-8cc9-e6b208646958"
     - stage: uuid
-      stageUuid: "4591fdef-0bad-8d32-b10a-7edc69f5397d"
+      stageUuid: "414e4882-d428-8aaa-b738-be0d215beb7d"
 version: 2
 ---
 # homeopathic

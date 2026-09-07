@@ -2,8 +2,35 @@
 name: gap
 description: "Use when turning the corpus's own structural debt into runnable waves — dead references, stray .ts and unraised kinds grouped by the CLASS they share and ordered biggest-first, so one fix pattern covers a wave. Feeds chat at tokens=0 via wave/feed. Run: tsx src/wave/gap/index.ts"
 atomPath: "wave/gap"
+coordinate: "wave/gap · 4/weave · b52d698b"
+contentUuid: "5147ebf4-0864-5d4b-bd9b-59c7e5fdd395"
+diamondUuid: "64331d3d-2ec1-882b-8bc4-c56694a4adeb"
+uuid: "b52d698b-2732-8afb-bc22-2c1884b78259"
+horo: 4
+typography:
+  partition: wave
+  bondDegree: 20
+standards: []
+bindings: []
+signatures:
+  computationUuid: "0e959d75-bfc3-8f8e-902c-cae482d10d65"
+  stages:
+    - stage: path
+      stageUuid: "0ef694e8-e01b-8969-9155-146d71f24478"
+    - stage: trinity
+      stageUuid: "bb740090-309c-8c13-bcb8-ce200a8b4a31"
+    - stage: boundary
+      stageUuid: "b6ec76ed-6fb5-8607-a35f-421d74821ac4"
+    - stage: links
+      stageUuid: "9a3fb4b1-4d55-8e85-907a-9d1559b12b41"
+    - stage: horo
+      stageUuid: "653a7767-576e-81ca-8bd1-889ed6301bed"
+    - stage: seal
+      stageUuid: "f916be34-7a15-82de-b6c5-84372c1950c7"
+    - stage: uuid
+      stageUuid: "c519e1e0-3d78-802a-aec8-0b23e0f1780a"
+version: 2
 ---
-
 # gap — the corpus's own debt, grouped into waves
 
 Three wave sources already feed chat — [[bank]]/research, [[quantum]]/ftl/purify, [[standards]]/improve. Each takes a domain, produces waves, and feeds them into themselves at `tokens=0` through [[wave]]/feed. This is the fourth, and its domain is **the corpus's own structure**.

@@ -2,18 +2,18 @@
 name: admin
 description: "Use when the admin panel must boot by reuse rather than by searching the matrix — adminBootShell / adminBootFtl precompute the boot surface and report an ftl verdict for it. Promoted from a loose sibling because self/improve/tip locates it by FILE PATH, which no import scan can see. Run: tsx src/quantum/ftl/admin/index.ts"
 atomPath: "quantum/ftl/admin"
-coordinate: "quantum/ftl/admin · 5/round · f60ff2e1"
-contentUuid: "ecee7db4-3f07-57f3-8d2f-928b945b522a"
-diamondUuid: "d59720c2-615b-8d97-8220-16962c06627d"
-uuid: "f60ff2e1-3fe2-8844-ad70-bed45e89a36d"
-horo: 5
+coordinate: "quantum/ftl/admin · 7/descent · 45ba4bba"
+contentUuid: "b2f10410-c4c5-5cbe-8ab4-abdab179ff8e"
+diamondUuid: "6b403277-a6e5-8825-8b83-eb2c6e1bb62f"
+uuid: "45ba4bba-8585-8561-8286-0b36af84b145"
+horo: 7
 typography:
   partition: quantum
-  bondDegree: 39
+  bondDegree: 37
 standards: []
 bindings: []
 signatures:
-  computationUuid: "82f0802b-da0e-8582-87cc-7659d12f9c51"
+  computationUuid: "8056a1c1-3308-8c30-9b6e-05541d9dc8c0"
   stages:
     - stage: path
       stageUuid: "a5be311c-86d5-80dd-a98d-f7cc5545aef3"
@@ -24,22 +24,22 @@ signatures:
     - stage: links
       stageUuid: "27a8e5b2-4707-8567-9514-4bb001b65e56"
     - stage: horo
-      stageUuid: "9c977b4d-32fb-835b-8186-14abdd9306be"
+      stageUuid: "1b3c9739-02f2-88b0-8ff6-d33c9a79c055"
     - stage: seal
       stageUuid: "afa31ef5-3792-8b2c-b596-80973e5210f6"
     - stage: uuid
-      stageUuid: "cb1b3e76-f29d-8165-a7e0-18fa24ecf6a5"
+      stageUuid: "86b79072-3ea2-87f5-9ef5-9a046526c21f"
 quantum:
   superposition:
     - access
     - auth
-    - cmspage
     - components
     - ftl
     - hooks
     - law
     - optimize
     - port
+    - round
     - superposition
   collapse:
     - "Use when the admin panel must boot by reuse rather than by searching the matrix — adminBootShell / adminBootFtl precompute the boot surface and report an ftl verdict for it. Promoted from a loose sibling because self/improve/tip locates it by FILE PATH, which no import scan can see. Run: tsx src/quantum/ftl/admin/index.ts"
@@ -51,8 +51,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "82f0802b-da0e-8582-87cc-7659d12f9c51"
-    contentUuid: "ecee7db4-3f07-57f3-8d2f-928b945b522a"
+    computationUuid: "8056a1c1-3308-8c30-9b6e-05541d9dc8c0"
+    contentUuid: "b2f10410-c4c5-5cbe-8ab4-abdab179ff8e"
 version: 2
 ---
 # admin — boot as reuse, not as a search
@@ -81,4 +81,4 @@ The guard is therefore asserted from this side. The test reads the tip engine's 
 
 Composes: [[quantum]]/ftl · [[self]]/improve · [[law]].
 
-<sub>content-uuid `ecee7db4-3f07-57f3-8d2f-928b945b522a` · account `quantum/ftl/admin` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `b2f10410-c4c5-5cbe-8ab4-abdab179ff8e` · account `quantum/ftl/admin` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

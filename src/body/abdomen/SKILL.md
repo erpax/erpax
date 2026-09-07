@@ -2,11 +2,11 @@
 name: abdomen
 description: "Use when reasoning about abdomen as an anatomical part of [[body]] — vocabulary pivot to @/abdomen; nested not duplicated."
 atomPath: "body/abdomen"
-coordinate: "body/abdomen · 1/base · df0afd8e"
-contentUuid: "24e543df-8447-5cca-ac8f-6e4c99fb2925"
-diamondUuid: "18a4ae39-70a0-8360-96f9-53936a5e18ec"
-uuid: "df0afd8e-c69c-82e2-8654-0081e41ecaf3"
-horo: 1
+coordinate: "body/abdomen · 4/weave · a1123d9c"
+contentUuid: "6accb696-0f54-52cc-9da4-e827949d715d"
+diamondUuid: "d99f8201-a268-8f91-9b8d-c335242d73d6"
+uuid: "a1123d9c-9cb0-864a-9955-e92fc0725070"
+horo: 4
 typography:
   partition: body
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a0e14667-e364-8019-991b-2f52ac35b6c0"
+  computationUuid: "1c52ab9c-2c3b-883a-b8cc-427b6cea0320"
   stages:
     - stage: path
       stageUuid: "c313f070-9c1e-8b8f-89b7-7ee850d14cf3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "df7c5cc7-0e8d-8925-874b-45c53788e5ca"
     - stage: horo
-      stageUuid: "749d28b1-2179-8f2a-b9da-1eb0ac258757"
+      stageUuid: "3c750e9d-1b0b-823a-83c8-1b5e8e9e6362"
     - stage: seal
       stageUuid: "eee6232b-f1aa-8cc3-bdbe-126a9921f11b"
     - stage: uuid
-      stageUuid: "4f32ded9-6dc9-8139-81ef-5920845e7940"
+      stageUuid: "205bb425-156c-8db3-960b-f0226c39f10c"
 version: 2
 ---
 # body/abdomen — anatomical part

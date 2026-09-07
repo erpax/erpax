@@ -2,11 +2,11 @@
 name: bacteria
 description: "Use when reasoning about bacteria as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/bacteria"
-coordinate: "vocabulary/bacteria · 7/descent · edbc0129"
-contentUuid: "2487c1ad-d924-50b3-8303-f49a91b56e01"
-diamondUuid: "d5129837-4e7b-8982-8c8e-393ace960a8a"
-uuid: "edbc0129-c1a0-8399-8825-718c65609134"
-horo: 7
+coordinate: "vocabulary/bacteria · 5/round · 90f4460a"
+contentUuid: "fe6e80fd-6337-5f5e-80c2-bd5db2d2aeb6"
+diamondUuid: "a38da069-081a-88c7-bf34-3af29943b98e"
+uuid: "90f4460a-0c25-85a0-b82b-d65f6fea5bfb"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a7cb32e2-6314-871a-b479-71097333c574"
+  computationUuid: "21ee5693-79c1-8ce9-8459-972ce6c95165"
   stages:
     - stage: path
       stageUuid: "62e257ca-e6f7-89d4-96de-4008ece38794"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dbb5d79c-1836-8823-80f5-992278daf414"
     - stage: horo
-      stageUuid: "ae78806e-d78a-8e0e-b7fe-db85af24a35b"
+      stageUuid: "40272091-2998-81d7-ab17-596ba2d83dae"
     - stage: seal
-      stageUuid: "31959f3c-8b0c-8458-a59c-a26b3d1b2274"
+      stageUuid: "e1d0985a-ee02-8fb3-98c7-94c23513e84c"
     - stage: uuid
-      stageUuid: "1471188c-e43a-884b-afcc-c641a00027de"
+      stageUuid: "a96a07d1-6e28-8096-8a6e-69124dab9d2e"
 version: 2
 ---
 # bacteria

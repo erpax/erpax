@@ -2,14 +2,14 @@
 name: subscriptions
 description: "Use when managing a tenant's active subscription — plan binding, billing-period dates, trial/active/past-due/grace/suspended/cancelled state machine, Stripe subscription and customer IDs, cancellation and pause events, IFRS-15/ASC-606 deferred-revenue lifecycle hooks. The tenant-to-plan binding collection."
 atomPath: "subscription/plans/subscriptions"
-coordinate: "subscription/plans/subscriptions · 4/weave · 7a9c589d"
-contentUuid: "68b71c6c-a513-5969-8c97-54c3e949a7d8"
-diamondUuid: "f9a00304-9295-8dec-a1cd-4a247dd2b3f1"
-uuid: "7a9c589d-2243-8691-a1f0-c5d5408ece0c"
-horo: 4
+coordinate: "subscription/plans/subscriptions · 7/descent · 109d68c5"
+contentUuid: "4605c40b-0f4c-52ae-8829-f59cd3fd8bb1"
+diamondUuid: "24367360-7076-882b-9b02-f06282b9bdbc"
+uuid: "109d68c5-992c-88a0-a492-7fad6a808cf3"
+horo: 7
 typography:
   partition: subscription
-  bondDegree: 0
+  bondDegree: 27
 standards:
   - "GDPR Art.6(1)(b) lawful-basis-contract"
   - "IFRS IFRS-15 revenue-from-contracts-with-customers"
@@ -24,7 +24,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "324dd519-cdf0-8a94-a148-74144cf5400d"
+  computationUuid: "ef85f9eb-14a2-8edb-9421-6ec3d66568f8"
   stages:
     - stage: path
       stageUuid: "8a6b4be8-8660-8607-a803-17dbc5bf5473"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "3828dfd8-4fbd-8d50-a4b0-1d986f302d54"
     - stage: horo
-      stageUuid: "4ee1edb1-23f9-8986-a2cd-dbd30f4b3735"
+      stageUuid: "11bc8ebf-eb56-8b69-842e-69a8aa359c18"
     - stage: seal
-      stageUuid: "7b93214f-291a-8376-9c9f-9948090b4261"
+      stageUuid: "fdbbf58c-8bff-89bb-a22e-40b54afb0c3b"
     - stage: uuid
-      stageUuid: "cede1c62-053a-8f5e-a4a3-c11eda532801"
+      stageUuid: "8b02fa39-75c9-82d9-a653-a1c349135c4f"
 version: 2
 ---
 # subscriptions

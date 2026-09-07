@@ -2,10 +2,10 @@
 name: automated
 description: "Use when reasoning about automated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/automated"
-coordinate: "vocabulary/automated · 4/weave · deae4a05"
-contentUuid: "1352887e-6377-5093-89f8-4ab3bc4acaf6"
-diamondUuid: "2ff4d686-2b3e-80d2-8bb5-566e9f2fdfa2"
-uuid: "deae4a05-0b70-821b-aa71-0ae419fb4981"
+coordinate: "vocabulary/automated · 4/weave · 2cf1f64c"
+contentUuid: "e1467a6c-2b82-5571-8881-c48fd3a052c5"
+diamondUuid: "6feb6872-5e20-8dc4-ad0f-672ca3fcc353"
+uuid: "2cf1f64c-73a0-8c63-8ee0-a621814ced3a"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7d9e966a-214f-870c-8c27-5ef6f18c2018"
+  computationUuid: "500fac0a-c1f4-8d1a-88ae-72ee32cfbabb"
   stages:
     - stage: path
       stageUuid: "21799834-9854-8f6c-a202-ee7519119999"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c39a96c6-7c6c-86e2-b5e9-1d3652e6b314"
     - stage: horo
-      stageUuid: "fdc03702-3c7b-8566-944d-e01f5a3f5c70"
+      stageUuid: "bf03d052-61d0-806b-acf3-8c89a99da608"
     - stage: seal
-      stageUuid: "99883753-5415-82fe-bc9d-beec2c42192e"
+      stageUuid: "7988478f-acdc-80f2-b6d2-8641a53c0967"
     - stage: uuid
-      stageUuid: "9c1a5e24-6de4-8f9b-aba9-8939700d4af9"
+      stageUuid: "bbed0d16-f902-8160-8ad3-bdc0f80af63d"
 version: 2
 ---
 # automated

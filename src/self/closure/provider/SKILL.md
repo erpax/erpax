@@ -3,13 +3,13 @@ name: provider
 description: "Use when reasoning about provider — Each provider file registers itself at its own bottom. Importing this barrel runs those side-effects, so the set of available providers is the set of files present — there is no…"
 atomPath: "self/closure/provider"
 coordinate: "self/closure/provider · 4/weave · 41bf903a"
-contentUuid: "dcd7cfb0-cf60-5993-845a-6d777b13b26a"
+contentUuid: "6446af87-1d9a-553e-9887-7fecb2026441"
 diamondUuid: "60df942b-79f0-8e97-8d95-66b75de64e58"
 uuid: "41bf903a-6b99-86b6-b7d1-22a115bb6d14"
 horo: 4
 typography:
   partition: self
-  bondDegree: 31
+  bondDegree: 25
 standards:
   - "EU-2002/58"
   - "W3C-PROV-O"

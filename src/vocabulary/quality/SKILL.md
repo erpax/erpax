@@ -2,11 +2,11 @@
 name: quality
 description: "Use when reasoning about quality as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/quality"
-coordinate: "vocabulary/quality · 2/share · 8cd9d438"
-contentUuid: "37c48bb5-cc3a-5cfc-9e54-f4cc07af39cf"
-diamondUuid: "cda25829-e875-8887-8764-561abf88b102"
-uuid: "8cd9d438-b368-8407-bb3d-7d5c6f9ee5d3"
-horo: 2
+coordinate: "vocabulary/quality · 1/base · c4e5fe69"
+contentUuid: "9c9ba511-1d80-588e-a88f-c6448e5bc677"
+diamondUuid: "18f5009a-eb80-872a-9892-f6a9b94a06b4"
+uuid: "c4e5fe69-d085-86fd-8864-199297d7ba01"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "637d0736-e351-85e2-997d-83ca6acd4b53"
+  computationUuid: "ca846123-3d22-85d9-95c2-717716a94b61"
   stages:
     - stage: path
       stageUuid: "df3a7d9c-e5c4-8567-ac52-80af8fc04ecd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "29ca43d2-6bda-844e-985e-dcb81b45a628"
     - stage: horo
-      stageUuid: "e8221353-7a50-8103-8827-5d59b3ac0be8"
+      stageUuid: "4f242131-6cb5-84da-81e4-857f08671a03"
     - stage: seal
-      stageUuid: "9daee88c-04ed-8daf-a276-d5ccb8b5ced6"
+      stageUuid: "23976e54-8447-8986-9d91-58d66114e986"
     - stage: uuid
-      stageUuid: "251eeae1-46ca-86f8-a887-a990b5a7ae84"
+      stageUuid: "c4b4308b-09a9-83d3-bd5e-feb0c7bbcd8d"
 version: 2
 ---
 # quality

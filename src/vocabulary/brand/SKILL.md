@@ -2,11 +2,11 @@
 name: brand
 description: "Use when reasoning about brand — A brand is a name used by an organization or business person for labeling a product, product group, or similar."
 atomPath: "vocabulary/brand"
-coordinate: "vocabulary/brand · 7/descent · c631f9bb"
-contentUuid: "d46a7ba1-7473-5881-8457-92042f40d244"
-diamondUuid: "40b90be5-3851-847b-a01e-da74f341f14d"
-uuid: "c631f9bb-f7ac-80f4-b7e4-2fe8115b3b85"
-horo: 7
+coordinate: "vocabulary/brand · 8/crest · ff125900"
+contentUuid: "1aeca7a9-352e-5094-a53b-8e59705c5a0a"
+diamondUuid: "2f7c452f-ced9-8860-91c8-74723abff53b"
+uuid: "ff125900-83e5-8c86-a5ed-935babba28e8"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "90df577b-2bdf-8fa5-a649-7f225969c94e"
+  computationUuid: "ebf56b6b-ba5f-8ed0-8ecc-b6ef75be14dd"
   stages:
     - stage: path
       stageUuid: "dfd5089b-d44d-8d4e-8bb3-cc051cd64e61"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a1770fa5-93ad-8b84-a678-283b81e06cf4"
     - stage: horo
-      stageUuid: "5a7cd180-1983-8de9-966b-a00bf1acf2f5"
+      stageUuid: "508099ae-8a85-8257-9aec-44dbf7ce5e3b"
     - stage: seal
-      stageUuid: "8c5bfebb-0682-8801-b713-528e1451a529"
+      stageUuid: "bedbaab4-202d-814f-958c-92220f6bda4c"
     - stage: uuid
-      stageUuid: "36f5abf6-68de-8a0b-84a3-258916b03996"
+      stageUuid: "f0ee4924-20e6-8100-93f9-3e9119a94dd3"
 version: 2
 ---
 # brand

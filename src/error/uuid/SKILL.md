@@ -3,13 +3,13 @@ name: uuid
 description: "Use when reasoning about uuid — content-addresses a failure and gives it a typed shape, so the same failure raised twice has the same address and can be counted, grouped and traced."
 atomPath: "error/uuid"
 coordinate: "error/uuid · 4/weave · 63f791e3"
-contentUuid: "8e7b4789-cf84-5805-b012-b92107de4fbf"
+contentUuid: "e9675bac-d75a-5f53-b68b-7b6dfdc565c9"
 diamondUuid: "8e3f2cee-877c-81ad-9c07-0220738bb40f"
 uuid: "63f791e3-5ff7-8a0d-8a6a-8391560e7297"
 horo: 4
 typography:
   partition: error
-  bondDegree: 795
+  bondDegree: 789
 standards:
   - "ISO 19011:2018 §6.4.6 audit-evidence (errors are evidence)"
   - "ISO/IEC 25010:2023 §5.6 reliability"

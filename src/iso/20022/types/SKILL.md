@@ -1,7 +1,74 @@
 ---
 name: types
-description: "Canonical ISO 20022 types — semantic shapes for the message families this codebase touches: camt.052/053/054 (cash mgmt), pain.001/002/008 (customer initiation + status), pacs.008 (FI credit transfer), pacs.004 (payment return)."
-atomPath: iso/20022/types
+description: "Use when reasoning about types — Canonical ISO 20022 types — semantic shapes for the message families this codebase touches: camt.052/053/054 (cash mgmt), pain.001/002/008 (customer initiation + status), pacs.008 (FI credit transfer), pacs.004 (payment return)."
+atomPath: "iso/20022/types"
+coordinate: "iso/20022/types · 8/crest · d7f634d7"
+contentUuid: "25936469-3983-57fb-b7c3-54ef219b1b34"
+diamondUuid: "8bd93fb7-2fa7-8575-958a-a757a2367ced"
+uuid: "d7f634d7-6e4b-8391-bf11-89562b8d2756"
+horo: 8
+typography:
+  partition: iso
+  bondDegree: 85
+standards:
+  - "IFRS IAS-7 statement-of-cash-flows"
+  - "ISO-11649:2009 financial-services-creditor-reference"
+  - "ISO-13616-1:2020 iban"
+  - "ISO-17442"
+  - "ISO-17442-1"
+  - "ISO-17442-1:2020 lei"
+  - "ISO-20022 BankToCustomerAccountReportV08"
+  - "ISO-20022 BankToCustomerDebitCreditNotificationV08"
+  - "ISO-20022 BankToCustomerStatementV08"
+  - "ISO-20022 ChargeBearerType1Code"
+  - "ISO-20022 CreditDebitCode"
+  - "ISO-20022 CreditTransferTransaction34"
+  - "ISO-20022 CreditTransferTransaction39"
+  - "ISO-20022 CustomerCreditTransferInitiationV09"
+  - "ISO-20022 CustomerDirectDebitInitiationV08"
+  - "ISO-20022 CustomerPaymentStatusReportV10"
+  - "ISO-20022 DirectDebitTransactionInformation23"
+  - "ISO-20022 EntryStatus2Code"
+  - "ISO-20022 EntryTransaction10"
+  - "ISO-20022 ExternalBankTransactionDomain1Code"
+  - "ISO-20022 ExternalBankTransactionFamily1Code"
+  - "ISO-20022 ExternalBankTransactionSubFamily1Code"
+  - "ISO-20022 ExternalPaymentTransactionStatus1Code"
+  - "ISO-20022 FIToFICustomerCreditTransferV08"
+  - "ISO-20022 PartyIdentification135"
+  - "ISO-20022 PaymentInstruction23"
+  - "ISO-20022 PaymentInstruction30"
+  - "ISO-20022 PaymentReturnV09"
+  - "ISO-20022 PaymentTransaction109"
+  - "ISO-20022 PaymentTransaction110"
+  - "ISO-20022 PostalAddress24"
+  - "ISO-20022 RemittanceInformation16"
+  - "ISO-20022 ReportEntry10"
+  - "ISO-20022:2022 universal-financial-industry-message-scheme"
+  - "ISO-4217:2015 currency-codes"
+  - "ISO-8601-1:2019 date-time"
+  - "ISO-9362"
+  - "ISO-9362:2022 bic"
+  - "ISO/IEC-29119"
+bindings: []
+signatures:
+  computationUuid: "136a8e9f-4b9b-8753-aaf1-b01cd29702d4"
+  stages:
+    - stage: path
+      stageUuid: "83bc0ccc-26bf-8082-8660-0171d0f2bc4f"
+    - stage: trinity
+      stageUuid: "b2c79d62-23a4-8974-8632-dfae70af0d93"
+    - stage: boundary
+      stageUuid: "bf64aa17-13be-8cad-8be6-4ad4a33094fb"
+    - stage: links
+      stageUuid: "c0c1c1b9-f48a-8dbb-9efc-7eec068669bf"
+    - stage: horo
+      stageUuid: "02decacf-3e8b-86e9-a457-fe0a8a444095"
+    - stage: seal
+      stageUuid: "38850b44-06ba-88a2-8bc9-3b722539b229"
+    - stage: uuid
+      stageUuid: "05b3b864-2bf4-8c19-859c-2f7559d6956a"
+version: 2
 ---
 # iso/20022/types
 

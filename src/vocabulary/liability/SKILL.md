@@ -2,18 +2,18 @@
 name: liability
 description: "Use when a contract limits, excludes, or caps damages/liability — type (contractual, tort, consequential, indirect, punitive), exclusion, cap amount/percentage/formula, surviving clauses, statutory override."
 atomPath: "vocabulary/liability"
-coordinate: "vocabulary/liability · 8/crest · bd50712a"
-contentUuid: "89c81222-f05b-57f0-9861-38e557d357eb"
-diamondUuid: "c0e072e6-ea61-8e42-b2ce-2b83552dd34d"
-uuid: "bd50712a-45de-89e9-b29f-0901dd6d4388"
-horo: 8
+coordinate: "vocabulary/liability · 7/descent · 05c18cf7"
+contentUuid: "4310eb0d-3978-5142-bd65-634be2c2592a"
+diamondUuid: "77154889-de52-8a56-a051-3d70e3efbba3"
+uuid: "05c18cf7-76c7-8ae4-a54d-6accec35acdb"
+horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 38
+  bondDegree: 36
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c6fd2ad2-ff6f-8dd8-b786-5551ce0cf3a1"
+  computationUuid: "a8c6758b-37b0-8e85-b180-ce0b5193356c"
   stages:
     - stage: path
       stageUuid: "2c1f50f0-53cb-8797-9a65-c2683302929b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "1a917f63-07bf-89bc-a5d7-213e23bc35dd"
     - stage: horo
-      stageUuid: "5ec8303d-741e-8a3e-a46d-418c9e1b98fb"
+      stageUuid: "849dab2e-d8a5-8c52-8584-9a3a1dd0f6ec"
     - stage: seal
-      stageUuid: "7d5e6651-7550-8555-a403-40597410b527"
+      stageUuid: "36942e5a-7c45-8a24-91f5-7b5d234f2e07"
     - stage: uuid
-      stageUuid: "08d48747-ec78-8b16-9528-4b2be00bfed4"
+      stageUuid: "1e86f1bc-44d7-84eb-9f93-ef6f0e0acc47"
 version: 2
 ---
 # liability

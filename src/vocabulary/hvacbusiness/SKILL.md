@@ -2,10 +2,10 @@
 name: hvacbusiness
 description: "Use when reasoning about hvacbusiness as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/hvacbusiness"
-coordinate: "vocabulary/hvacbusiness · 2/share · 932a0bfc"
-contentUuid: "e7fa2efe-6f17-5b76-8ce6-9fff827e72a5"
-diamondUuid: "400abb78-e821-8d97-b764-85c438fbf216"
-uuid: "932a0bfc-3b46-88c1-b600-d50b23f395fa"
+coordinate: "vocabulary/hvacbusiness · 2/share · ed3ca352"
+contentUuid: "bba0c17f-fde7-5165-ac21-842d39cb0b7c"
+diamondUuid: "88eb9c6f-4ced-8722-a27f-2b8426253fef"
+uuid: "ed3ca352-9f02-8d89-a5aa-02a0deb5cdb7"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "62b6795c-f06c-80fc-b336-991ca2308b56"
+  computationUuid: "36a60177-a605-8c83-899f-854c79a505b1"
   stages:
     - stage: path
       stageUuid: "6a9cf101-4b9d-884f-91b6-142a5c08168b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1a566fd1-1c12-8604-b98b-9bea0db5517e"
     - stage: horo
-      stageUuid: "e7c5a595-76d9-8b41-978e-a1b7fe30b630"
+      stageUuid: "5d0449ce-5607-849d-98a1-963bb68e0f76"
     - stage: seal
-      stageUuid: "440f2352-f61a-8496-97b5-3f92c20a61d0"
+      stageUuid: "daf9e7fe-e123-81b9-831c-15f9fbf8340c"
     - stage: uuid
-      stageUuid: "c073129d-a14d-8d6f-8364-f7e8bde774ec"
+      stageUuid: "4de31ef1-e887-8f55-ab7a-a5372fab4bd3"
 version: 2
 ---
 # hvacbusiness

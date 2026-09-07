@@ -2,14 +2,14 @@
 name: employees
 description: "Use when managing workforce records — onboarding an employee, recording compensation (IAS 19 base salary, FTE ratio, bonus, pension, PTO), storing GDPR-classified identity and payroll bank account, linking to the actor-party user, and driving the payroll cycle via time-entries and payroll runs. The GDPR-protected workforce master (admin/payroll-officer access only)."
 atomPath: employees
-coordinate: "employees · 2/share · 33da7030"
-contentUuid: "81adf0c8-5837-5a1f-942a-e9a1481aa80c"
-diamondUuid: "8da6ff00-a087-805c-9298-5839f0220558"
-uuid: "33da7030-380f-8b01-be94-9fa86e10cd8d"
-horo: 2
+coordinate: "employees · 5/round · d957cf91"
+contentUuid: "b163bcb5-c0f4-5b2c-84fc-12f4ffba8c35"
+diamondUuid: "49fea0bf-e48d-8cdc-b3b3-64cd23a140c6"
+uuid: "d957cf91-15f9-8d47-8e44-088bbcc1ab9a"
+horo: 5
 typography:
   partition: employees
-  bondDegree: 0
+  bondDegree: 64
 standards:
   - "GDPR Art.30 records-of-processing-activities"
   - "GDPR Art.6(1)(b) lawful-basis-contract"
@@ -19,6 +19,7 @@ standards:
   - "ISO-13616-1"
   - "ISO-13616-1:2020 iban payroll-bank-account"
   - "ISO-13616-1:2020 iban payroll-bank-account`"
+  - "ISO-17442"
   - "ISO-17442-1"
   - "ISO-17442-1:2020 lei employer-identifier"
   - "ISO-17442-1:2020 lei employer-identifier`"
@@ -41,7 +42,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "2afb655e-0d0b-8e7c-bb4a-15446ecae4bf"
+  computationUuid: "65f39c15-a60f-8d81-9a13-e3b3eab8e551"
   stages:
     - stage: path
       stageUuid: "e797237f-685b-8805-af56-4d8208d09bd4"
@@ -52,11 +53,11 @@ signatures:
     - stage: links
       stageUuid: "b5ca5584-c436-8f8d-a253-29ad788d6712"
     - stage: horo
-      stageUuid: "cba69d3a-72aa-88f2-be66-10334a8c2aaf"
+      stageUuid: "ef6dabda-e114-875b-bd9c-e6b847c7e107"
     - stage: seal
-      stageUuid: "bf21df0c-b3f4-8738-a50f-3d8674bfeb57"
+      stageUuid: "ee8c2064-781d-8161-9878-b8e2a3a94c4e"
     - stage: uuid
-      stageUuid: "9eed0094-37eb-89b0-b3e9-b55601af0751"
+      stageUuid: "117c45cb-41b1-80c1-95f8-e21d63fa8893"
 version: 2
 ---
 # employees

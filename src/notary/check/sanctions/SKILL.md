@@ -2,11 +2,11 @@
 name: sanctions
 description: "Use when screening a party against the EU consolidated financial sanctions list — the first REAL wired notary check. Resolves the current list through the OpenSanctions eu_fsf dataset index (authoritative source: the European Commission FSF endpoint, public token), normalises and matches the name, and returns clear vs escalate. A ProviderAdapter for notary/check; Worker-deployable; honest boundary — screening is a review signal not adjudication, data is CC-BY-NC, production ingests periodically."
 atomPath: "notary/check/sanctions"
-coordinate: "notary/check/sanctions · 7/descent · 553b453e"
-contentUuid: "481b3d2d-5610-5c56-bf76-9a2c3dbe3342"
-diamondUuid: "64a201c5-6508-8ca7-a15d-60bea9e45091"
-uuid: "553b453e-f298-8870-a201-7ed74918a6c0"
-horo: 7
+coordinate: "notary/check/sanctions · 8/crest · a1c2095a"
+contentUuid: "6859c24a-57ec-5b35-8191-b4bd7005ee6d"
+diamondUuid: "006b6cfc-ddd8-82e7-9fd6-79588b62f19b"
+uuid: "a1c2095a-c54a-8605-ad8e-c5becd7e69b3"
+horo: 8
 typography:
   partition: notary
   bondDegree: 15
@@ -16,7 +16,7 @@ standards:
   - "EU-2018/843"
 bindings: []
 signatures:
-  computationUuid: "69070167-354a-81fd-a867-e549295096ff"
+  computationUuid: "a6b1d7f5-adb7-83e4-b704-1285aad9cfa3"
   stages:
     - stage: path
       stageUuid: "ba86f636-a147-8238-8cb5-84d0215d0d2a"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "744c11e4-2244-8acf-9e41-9fc3b92560b5"
     - stage: horo
-      stageUuid: "a95342b3-2695-8af0-ae0c-41af120b03ec"
+      stageUuid: "e42a2746-8909-8fdb-b309-6036f93a2ec2"
     - stage: seal
       stageUuid: "4916a874-a20d-8bf8-badf-bb35bb30bf3a"
     - stage: uuid
-      stageUuid: "382bbba8-dca1-839c-aa92-012bd1212ede"
+      stageUuid: "72c60b69-98f6-883f-8db3-ec9388dc451e"
 version: 2
 ---
 # sanctions — real EU sanctions screening

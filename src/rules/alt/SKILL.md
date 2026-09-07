@@ -3,13 +3,13 @@ name: alt
 description: "Use when reasoning about alt — **WCAG 2.2 is the largest block of undischarged conformance in this corpus** — 29 atoms cite it and nothing gates any criterion (proof/replaceable)."
 atomPath: "rules/alt"
 coordinate: "rules/alt · 4/weave · a8822035"
-contentUuid: "611f5b49-5a3b-5de4-97d2-ea9f8a10c29a"
+contentUuid: "c82dfb5c-6c52-564c-b4a5-1266554624b5"
 diamondUuid: "d0af31c5-0b23-8ed1-b25a-68bbc4083b49"
 uuid: "a8822035-297f-8c5c-ac7b-ef46bd8a29ef"
 horo: 4
 typography:
   partition: rules
-  bondDegree: 12
+  bondDegree: 9
 standards: []
 bindings: []
 signatures:

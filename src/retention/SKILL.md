@@ -2,18 +2,18 @@
 name: retention
 description: "Use when designing/measuring strategies to keep existing customers — loyalty programs, engagement triggers, win-back campaigns, at-risk indicators."
 atomPath: retention
-coordinate: "retention · 4/weave · cdfad2f9"
-contentUuid: "a6bfd74f-8a9c-5ec3-b8a9-29dadeee021f"
-diamondUuid: "bc98d3b5-f6c4-8c45-92c4-6d93fa6759bd"
-uuid: "cdfad2f9-6135-817c-9aa4-684d189dfa11"
-horo: 4
+coordinate: "retention · 1/base · 9b5c9a15"
+contentUuid: "cd867093-2045-589d-bcd1-e7140c247f6c"
+diamondUuid: "6e694223-a5c9-8e4f-8dd8-9c47df397ec6"
+uuid: "9b5c9a15-4f8f-8104-a4ca-872722460b1a"
+horo: 1
 typography:
   partition: retention
   bondDegree: 28
 standards: []
 bindings: []
 signatures:
-  computationUuid: "11c16f0d-000b-89ec-bb5a-401d5bf526b2"
+  computationUuid: "352fe66f-6184-8088-b569-0c5187d86e12"
   stages:
     - stage: path
       stageUuid: "735ecd01-3a4a-827d-8726-3eb5230697dc"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "21c70e30-86c9-8fe3-9c22-05afec785d93"
     - stage: horo
-      stageUuid: "722d8fd7-ac07-8e39-8554-fc2d95971dd6"
+      stageUuid: "3e3fc806-1ac3-8f6e-b79d-de7f332fef66"
     - stage: seal
       stageUuid: "a45f26c3-62e1-80c5-ae2b-1e0037ba0e83"
     - stage: uuid
-      stageUuid: "b9f2d3fb-453b-8237-a3ed-91125f52dc3a"
+      stageUuid: "6dcd3126-8d19-813b-9000-6f82934364fb"
 version: 2
 ---
 # retention

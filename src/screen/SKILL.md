@@ -2,10 +2,10 @@
 name: screen
 description: "Use when reasoning about screen as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: screen
-coordinate: "screen · 4/weave · d679d7f4"
-contentUuid: "3e0f8e89-688f-57c9-8778-0d6dd2ab7ff3"
-diamondUuid: "2962e5ae-6f1d-8069-9e52-aa0ad16219a0"
-uuid: "d679d7f4-704f-80f8-a943-d604cf7de0a9"
+coordinate: "screen · 4/weave · 0eccd484"
+contentUuid: "6a368968-cac9-5360-853c-31199b47641f"
+diamondUuid: "956f689e-30e9-85d1-bc57-de59ef96ec5d"
+uuid: "0eccd484-a0b5-811a-973d-81d813d775c4"
 horo: 4
 typography:
   partition: screen
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b0909096-77bc-8c1f-9997-f8fadc8b582b"
+  computationUuid: "97c8dc55-060e-8185-a69f-96449d96db53"
   stages:
     - stage: path
       stageUuid: "0f862b9f-5140-874d-8332-933f16ddbd58"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "44f666db-cd97-8fec-91e3-6730a12c0807"
     - stage: horo
-      stageUuid: "1486d6fc-e1e9-8a6b-80b8-a72977a5b0cb"
+      stageUuid: "a2c797e3-1338-8228-87a3-bf84aac79a98"
     - stage: seal
       stageUuid: "14bdc530-ab1c-8a3d-aba1-73154943f708"
     - stage: uuid
-      stageUuid: "6a97925e-8ff8-8db6-88a3-841e68bc5100"
+      stageUuid: "51ee13a7-cd84-8a68-963d-e1065a547c07"
 version: 2
 ---
 # screen

@@ -2,18 +2,18 @@
 name: millennium
 description: "Use when the Clay Millennium Problems are offered as a testing ground — the honest register that NAMES the seven, marks six open and one solved (Poincaré, by Perelman), and refuses to solve any. Every entry's `corpusSolves` is the literal false, so the code cannot claim a solution; the corpus tools are lenses to learn through, and the quantum waves CLASSIFY a claimed solution, they do not produce one. HARMONY ≠ TRUTH."
 atomPath: millennium
-coordinate: "millennium · 8/crest · 99503659"
-contentUuid: "d41cde69-3606-5435-ad6d-530a5210066f"
-diamondUuid: "1f4b02a4-7a9d-8314-b944-018e84d3f5b3"
-uuid: "99503659-e7cb-802d-a599-958170b9fe21"
-horo: 8
+coordinate: "millennium · 1/base · 83ecac64"
+contentUuid: "3b0941f4-6eb5-539a-9ae6-ba3f7e29dcd1"
+diamondUuid: "cd022e23-ec9f-81ab-be0b-2c1589ac2852"
+uuid: "83ecac64-8faf-8c27-a462-f922286b9fb3"
+horo: 1
 typography:
   partition: millennium
-  bondDegree: 29
+  bondDegree: 66
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d2084dee-fd3f-83b4-b419-8e02bc66288a"
+  computationUuid: "79ecb5be-3dd2-8181-a300-2cdd985d554c"
   stages:
     - stage: path
       stageUuid: "1ea0afd8-0007-8ac8-802d-3bf04a0ced0c"
@@ -22,25 +22,14 @@ signatures:
     - stage: boundary
       stageUuid: "289b9a54-68ab-889a-b505-fc3952397c8b"
     - stage: links
-      stageUuid: "579e48fc-c299-8db5-9346-222dcf2fbfcd"
+      stageUuid: "5edbd77e-e4c3-87f9-9f26-897ba45d068f"
     - stage: horo
-      stageUuid: "d9d81eee-f597-8906-b7c9-b50ff9879f63"
+      stageUuid: "fcc1f075-3557-83f1-a5b0-ef78639db711"
     - stage: seal
       stageUuid: "20645fbb-d08f-8362-b087-0366b7970a44"
     - stage: uuid
-      stageUuid: "553bb2af-e3d5-85b4-8f67-564078031e26"
+      stageUuid: "b0a14fbc-5eca-8eeb-99e3-122062a08975"
 version: 2
-neighbors:
-  wikilink:
-    - "[[basis]]"
-    - "[[continuum]]"
-    - "[[fermat]]"
-    - "[[four]]"
-    - "[[goldbach]]"
-    - "[[recursive]]"
-    - "[[automate]]"
-    - "[[orchestrate]]"
-    - "[[execute]]"
 ---
 # millennium — the Clay problems as a testing ground; the waves classify, they do not solve
 

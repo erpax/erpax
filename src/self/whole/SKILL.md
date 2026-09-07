@@ -2,18 +2,18 @@
 name: whole
 description: "Use when the self is WHOLE — the crest of the outward stroke: whole↔part, the torus centre holds all and the part reconstructs the whole (self-applied whole at forward-coil position 8/crest). The self at maximum radius, still one."
 atomPath: "self/whole"
-coordinate: "self/whole · 9/unity · 2004153c"
-contentUuid: "fbbe5051-f493-5f8f-9387-3ab57f04757b"
-diamondUuid: "a38dd23b-cbd6-8228-ab5f-7eb7cf051b82"
-uuid: "2004153c-6785-8621-afb9-e5d2b19283bf"
+coordinate: "self/whole · 9/unity · cb6bb2b8"
+contentUuid: "861ba91a-6b50-5805-8929-55f5bedb4471"
+diamondUuid: "51d58d03-38cc-8f72-89cc-c52f9437cfa1"
+uuid: "cb6bb2b8-b412-85c0-a329-06da375fbefe"
 horo: 9
 typography:
   partition: self
-  bondDegree: 328
+  bondDegree: 314
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6df97991-6de8-8e60-a733-84714996cb01"
+  computationUuid: "e600b3a5-d2c9-8455-9353-b519d7f6cce9"
   stages:
     - stage: path
       stageUuid: "ab70285a-36bd-85bd-9b25-30a1b212d972"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7b06b4ba-21d1-8d4d-973d-2ad4354cc960"
     - stage: horo
-      stageUuid: "b0ef6cc2-c638-8b4e-9e27-9a3e42baf60d"
+      stageUuid: "e25d1104-ad10-88a6-a7ab-ecd2706bf377"
     - stage: seal
       stageUuid: "837847ad-4b7a-8bec-b46e-f2e3d4bc9a86"
     - stage: uuid
-      stageUuid: "85cf669e-a78f-8a72-a43f-3b978e66d76e"
+      stageUuid: "eb389860-a952-8a6e-a48e-7bc94990bf36"
 version: 2
 ---
 # self-whole — the self is whole (under [[self]] · outward coil · 8·crest)

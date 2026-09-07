@@ -2,8 +2,43 @@
 name: seo
 description: "Use when reading the SEO face registry — listFaces and the schema/OG vortex, in a module with ZERO imports. That property is why it is its own atom: @/integrity/uuid-stream took listFaces from the @/website barrel, and the barrel dragged the whole page/agent/spec subtree into the module that exports uuid and jcsCanonicalize to the entire corpus. Importing a leaf adds no edge."
 atomPath: "website/seo"
+coordinate: "website/seo · 2/share · 58413d24"
+contentUuid: "31b24111-cd31-5e20-9097-b56d1d6b70f4"
+diamondUuid: "2acd686d-fd9a-8440-97cd-2c933f09d97b"
+uuid: "58413d24-bdb1-89e4-9217-593d0d7a8943"
+horo: 2
+typography:
+  partition: website
+  bondDegree: 26
+standards:
+  - "EU-Admin-Coop-Reg-904/2010"
+  - "ISO/IEC 25010:2023 §5.3 usability — discoverability"
+  - Open Graph protocol (Facebook 2010+) + Twitter Cards
+  - RFC 9694 robots.txt + REP (Robots Exclusion Protocol)
+  - Schema.org WebPage + Article + SoftwareApplication +
+  - "Sitemap.xml protocol 0.9 (sitemaps.org) + Sitemap-Index"
+  - "W3C JSON-LD 1.1 + Microdata 1.1"
+  - "W3C-JSON-LD-1.1"
+bindings: []
+signatures:
+  computationUuid: "c3aff110-b909-8a35-8d1d-726cb98c96fe"
+  stages:
+    - stage: path
+      stageUuid: "2c02905f-d5a0-8804-b310-64c790d5c775"
+    - stage: trinity
+      stageUuid: "8e4b7631-6491-8937-98e5-9a3ea08f3e79"
+    - stage: boundary
+      stageUuid: "8e721d8a-0450-8f7d-9de0-2c69f17c2276"
+    - stage: links
+      stageUuid: "308e1741-adad-8aa5-9598-ee61bedb773f"
+    - stage: horo
+      stageUuid: "c8194236-afee-847b-808c-5b863ca98abd"
+    - stage: seal
+      stageUuid: "37b5f46a-1705-8287-95dc-0ab59e7d1d4f"
+    - stage: uuid
+      stageUuid: "35d6c980-8b6b-88c1-8c73-3876d8040252"
+version: 2
 ---
-
 # website/seo — the leaf that let `@/integrity` out of the tangle
 
 `listFaces` is one function over a registry. It was reached through the `@/website` barrel, and that barrel is deep in the corpus's largest import component — so `@/integrity/uuid-stream` taking **one symbol** dragged the page/agent/spec subtree into the module that exports `uuid` and `jcsCanonicalize` to everything.

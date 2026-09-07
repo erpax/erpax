@@ -3,13 +3,13 @@ name: cross
 description: "Use when reasoning about cross — Every entity change content-addresses to a leaf. That same leaf is simultaneously the VERSION (a new content-uuid), a TAMPER-COST increment (one more link a forger must rewrite)…"
 atomPath: "versions/cross"
 coordinate: "versions/cross · 7/descent · 6ce95b56"
-contentUuid: "6294bdfd-2874-51f5-9526-616ea620b386"
+contentUuid: "0bdac598-6df0-55c6-8d78-d18fd0b8c93a"
 diamondUuid: "a5e1cbe7-7fa2-8e21-8968-b08596c1e16d"
 uuid: "6ce95b56-57df-80c6-a880-e5846f730edd"
 horo: 7
 typography:
   partition: versions
-  bondDegree: 74
+  bondDegree: 68
 standards:
   - RFC 8785 JCS (deterministic content canonicalization)
   - "RFC 9562 §5.8 uuidv8 (the content-addressed version id)"

@@ -2,11 +2,11 @@
 name: fire
 description: "Use when reasoning about fire as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/fire"
-coordinate: "vocabulary/fire · 8/crest · 86340abb"
-contentUuid: "eaf2c310-2b20-587f-a5d4-17725a36a002"
-diamondUuid: "acaadda7-2978-89aa-8ed6-bc4f35669370"
-uuid: "86340abb-e8ac-8c9e-9fd4-1cd942aa7600"
-horo: 8
+coordinate: "vocabulary/fire · 5/round · 7d649655"
+contentUuid: "b67506aa-6473-56b9-87c9-4da6b682a6d2"
+diamondUuid: "479236ac-a606-824a-a8da-a14b1de2ad5e"
+uuid: "7d649655-86a2-87db-93b0-0e511c4a9001"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "568e9836-1da8-8248-a6af-504c66770823"
+  computationUuid: "e6255e24-b236-852c-be55-8674617ce840"
   stages:
     - stage: path
       stageUuid: "43a518e2-1c4a-83ba-84dc-af22a6b94c0c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6e91f14f-3bde-8767-8e67-759a3f61d6a5"
     - stage: horo
-      stageUuid: "44ea56c9-37bf-834b-a30f-292178548947"
+      stageUuid: "e9a794b7-d3be-80b8-8c7f-a17e1349064d"
     - stage: seal
-      stageUuid: "330295e2-6669-8f39-bbcb-50ea9b1af3d0"
+      stageUuid: "82130279-8f62-8735-baf7-7961cf336301"
     - stage: uuid
-      stageUuid: "2cdc2640-ed24-887d-935d-7cca7e00f6c1"
+      stageUuid: "69af0d3b-f67d-8946-bf01-7bfbbdbfab6d"
 version: 2
 ---
 # fire

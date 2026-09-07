@@ -100,6 +100,67 @@ const resolveSpec = (cwd: string, from: string, spec: string): string | null => 
 }
 
 /** Every runtime edge out of a file. */
+/**
+ * The targets this file reaches ONLY through a dynamic `import()` inside a function body.
+ *
+ * This atom already draws the line for VALUES: "a function is deferred — `const build = () => make()`
+ * runs long after initialisation. Only an initialiser that is not a function body is evaluated at
+ * load time." A dynamic import inside a function body is the same fact about the same grammar: the
+ * module is fetched when the function runs, not when this one is evaluated, so it cannot put a
+ * binding in a temporal dead zone.
+ *
+ * A TOP-LEVEL `await import()` is NOT deferred — top-level await runs during initialisation — and a
+ * target also reached by a static import is not deferred either, because the static edge decides.
+ *
+ * The distinction is not cosmetic: a static import of three tree-scanners in agents/mcp/tool-defs
+ * loaded them to DEFINE a tool. Deferring them is a real decoupling, and an instrument that cannot
+ * see it reports the improvement as no change.
+ */
+export function deferredTargetsOf(file: string, cwd: string = process.cwd()): Set<string> {
+  let text: string
+  try {
+    text = textOf(file)
+  } catch {
+    return new Set()
+  }
+  const src = astOf(file, text)
+  const staticSpecs = new Set<string>()
+  const deferredSpecs = new Set<string>()
+  const inFunctionBody = (n: ts.Node): boolean => {
+    for (let p: ts.Node | undefined = n.parent; p; p = p.parent) {
+      if (
+        ts.isFunctionDeclaration(p) ||
+        ts.isFunctionExpression(p) ||
+        ts.isArrowFunction(p) ||
+        ts.isMethodDeclaration(p) ||
+        ts.isConstructorDeclaration(p) ||
+        ts.isGetAccessor(p) ||
+        ts.isSetAccessor(p)
+      ) {
+        return true
+      }
+    }
+    return false
+  }
+  const visit = (n: ts.Node): void => {
+    if (ts.isImportDeclaration(n) && ts.isStringLiteral(n.moduleSpecifier)) staticSpecs.add(n.moduleSpecifier.text)
+    else if (ts.isExportDeclaration(n) && n.moduleSpecifier && ts.isStringLiteral(n.moduleSpecifier)) staticSpecs.add(n.moduleSpecifier.text)
+    else if (ts.isCallExpression(n) && n.expression.kind === ts.SyntaxKind.ImportKeyword) {
+      const a = n.arguments[0]
+      if (a && ts.isStringLiteral(a)) (inFunctionBody(n) ? deferredSpecs : staticSpecs).add(a.text)
+    }
+    ts.forEachChild(n, visit)
+  }
+  visit(src)
+  const out = new Set<string>()
+  for (const spec of deferredSpecs) {
+    if (staticSpecs.has(spec)) continue
+    const r = resolveSpec(cwd, file, spec)
+    if (r && !GENERATED.test(r)) out.add(r)
+  }
+  return out
+}
+
 export function importsOf(file: string, cwd: string = process.cwd()): string[] {
   let text: string
   try {

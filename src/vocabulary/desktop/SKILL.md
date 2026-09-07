@@ -2,10 +2,10 @@
 name: desktop
 description: "Use when reasoning about desktop as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/desktop"
-coordinate: "vocabulary/desktop · 2/share · e3dce338"
-contentUuid: "082eeabb-209a-50ea-9dea-63873d573782"
-diamondUuid: "8e4d3e2b-373f-8651-a33f-bc2157f84cea"
-uuid: "e3dce338-0381-867d-ad63-4d60dfb6c181"
+coordinate: "vocabulary/desktop · 2/share · de25f33e"
+contentUuid: "a0e8849f-19d3-50bb-8cd3-acaf40551198"
+diamondUuid: "3d601aa9-7ff2-8f66-aa06-c8d0f8dd3a7d"
+uuid: "de25f33e-1cff-88ce-9504-bcb1160f73a4"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9b0052e6-4980-8604-a308-dc3990b07937"
+  computationUuid: "d1d1ed54-a60e-82fe-a835-3703a3acfce0"
   stages:
     - stage: path
       stageUuid: "b8c3a486-b2ae-83f3-870f-a308a00d7c5e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e44314cb-daf7-8188-89e3-09fea9de4ea6"
     - stage: horo
-      stageUuid: "b11afcf6-b9e9-8955-b7bc-2b09fd8d34a0"
+      stageUuid: "1b845c83-e145-8008-a91f-d06e2bcfccac"
     - stage: seal
-      stageUuid: "208e5d3b-9e15-864b-b7e6-98192ae78c73"
+      stageUuid: "577e209d-7bf0-8ef2-abbf-5fa100e2cfcd"
     - stage: uuid
-      stageUuid: "bd6386db-8a42-8f45-9c72-54689d10f4d5"
+      stageUuid: "a93eb875-e623-8e53-a17b-9f19b4146303"
 version: 2
 ---
 # desktop

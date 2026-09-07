@@ -1,7 +1,35 @@
 ---
 name: fold
 description: "Use when folding any address surface to the one canonical atom path — pure string work, with none of the 4.2 MB corpus matrix its parent barrel loads for the ring walk."
-atomPath: path/fold
+atomPath: "path/fold"
+coordinate: "path/fold · 8/crest · 356c7f54"
+contentUuid: "f503c0fb-3dec-5cb1-b336-2f01a1c32bd5"
+diamondUuid: "5f78812a-c180-8332-af45-d68e004d62f5"
+uuid: "356c7f54-cad8-8b6f-88a8-ea763f7efe96"
+horo: 8
+typography:
+  partition: path
+  bondDegree: 87
+standards: []
+bindings: []
+signatures:
+  computationUuid: "cd482d94-a3ba-84ca-a01e-0f7f361b76f2"
+  stages:
+    - stage: path
+      stageUuid: "61f58d64-b65f-8e75-9ab2-3548efafbc90"
+    - stage: trinity
+      stageUuid: "25989b7f-7e25-8421-8f14-d5bb8a6ce0ef"
+    - stage: boundary
+      stageUuid: "fc4c79ca-0bbd-8dd7-8478-b94ef9719598"
+    - stage: links
+      stageUuid: "bbfa2525-bfce-8276-8e16-ee7856e27775"
+    - stage: horo
+      stageUuid: "026e4ff4-1ab0-8254-9b7e-3531fdf41f2f"
+    - stage: seal
+      stageUuid: "c56bcd48-f3ee-8b08-864e-8e7752d933c0"
+    - stage: uuid
+      stageUuid: "bcf083a9-3308-8513-8175-fd0ff2f5e281"
+version: 2
 ---
 # path/fold — folding a string should not load the corpus
 

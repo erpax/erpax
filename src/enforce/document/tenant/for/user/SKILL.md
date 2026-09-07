@@ -3,13 +3,13 @@ name: user
 description: "Use when reasoning about user — scopes what a user can *read* and *update*. What it does not reliably reject is a **create that names another tenant**: the document does not exist yet, so there is no existing…"
 atomPath: "enforce/document/tenant/for/user"
 coordinate: "enforce/document/tenant/for/user · 8/crest · f9a094df"
-contentUuid: "c4135dde-e9b0-5a51-abe2-65aa3b8d0a33"
+contentUuid: "db4bef05-f6ad-54fb-9cd2-b9b73e1ef5df"
 diamondUuid: "fc17a70f-1e39-8590-a9aa-51b620d9459d"
 uuid: "f9a094df-eccf-8990-b113-7c79a8bfa734"
 horo: 8
 typography:
   partition: enforce
-  bondDegree: 82
+  bondDegree: 79
 standards:
   - "GDPR Art.5(1)(f) integrity-and-confidentiality"
   - "SOC-2 CC6.1 logical-access-controls"

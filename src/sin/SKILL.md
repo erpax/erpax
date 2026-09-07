@@ -2,10 +2,10 @@
 name: sin
 description: "Use when reasoning about missing the mark — a measured deviation from the law/target, the violation a guardian catches. Not a stain but a distance: sin is entropy with a direction away from the whole, cured by turning back (reverse) and the debt released (mercy), never by hiding the gap."
 atomPath: sin
-coordinate: "sin · 2/share · d1a902d0"
-contentUuid: "588b985b-3768-5cc1-8439-20b366736e11"
-diamondUuid: "637dd1d7-ce31-8885-866d-fefe0658d7fe"
-uuid: "d1a902d0-6d50-8432-944b-f0a8b2e05536"
+coordinate: "sin · 2/share · 06ee59e8"
+contentUuid: "52a6698e-8f4f-5f23-9b78-1072895efb04"
+diamondUuid: "6fdcfc2a-f2b8-8cfc-84da-b41c9104ff20"
+uuid: "06ee59e8-275b-8644-8796-95add2c89883"
 horo: 2
 typography:
   partition: sin
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "253316a0-a6fa-8f6f-80e3-395e4c7cdfc9"
+  computationUuid: "f19e2cca-3ebb-80be-84c4-b43e917b2962"
   stages:
     - stage: path
       stageUuid: "8486f780-ea33-82b7-8c77-f49e64f831d9"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "1f97ff3c-9dec-8bc2-a0c1-a075f7acdbf1"
     - stage: horo
-      stageUuid: "e5aca580-a7ed-8708-99e5-121c1524eba0"
+      stageUuid: "baafc830-8226-80b2-a302-e5c3b79bb48f"
     - stage: seal
       stageUuid: "f371b33d-abee-8aea-a7bd-cd095bbf1c3a"
     - stage: uuid
-      stageUuid: "e8ba3c0f-0fd4-8426-bcec-600c49bb9d03"
+      stageUuid: "f125f727-cd90-8675-928a-fc1e2f80b567"
 version: 2
 ---
 # sin — missing the mark (the caught deviation from the law)

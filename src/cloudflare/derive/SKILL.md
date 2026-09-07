@@ -1,7 +1,35 @@
 ---
 name: derive
 description: "Use when deriving a content-addressed diamond for a Cloudflare binding — the build-time half that scans src/, kept off the Worker face so a runtime call does not pay for it."
-atomPath: cloudflare/derive
+atomPath: "cloudflare/derive"
+coordinate: "cloudflare/derive · 4/weave · 7c33a254"
+contentUuid: "9f0e2719-25a6-5372-970e-f44253ddf476"
+diamondUuid: "1c65e688-45b7-80b1-9402-068182b2f489"
+uuid: "7c33a254-212a-8258-af7b-1bfc852a7d73"
+horo: 4
+typography:
+  partition: cloudflare
+  bondDegree: 64
+standards: []
+bindings: []
+signatures:
+  computationUuid: "f759d7f8-7fb8-8755-ae2f-4768c06be296"
+  stages:
+    - stage: path
+      stageUuid: "8dd36ea6-d2cc-849c-a623-2946990e1d8d"
+    - stage: trinity
+      stageUuid: "65045806-6f2d-81c6-8292-3e443bb33710"
+    - stage: boundary
+      stageUuid: "c3c33dec-1af2-81a6-b9e8-c37ee3dfb806"
+    - stage: links
+      stageUuid: "33a7fd1c-9118-84b6-a036-7654351e1c1b"
+    - stage: horo
+      stageUuid: "7f6892c9-f4f9-86be-ad07-54a957e9245d"
+    - stage: seal
+      stageUuid: "1668b9ad-0733-87c3-8d30-3829e63aa679"
+    - stage: uuid
+      stageUuid: "56c1b327-a18d-8ec9-bf77-c217d1c1d7e6"
+version: 2
 ---
 # cloudflare/derive — the half a Worker cannot run, and used to pay for anyway
 

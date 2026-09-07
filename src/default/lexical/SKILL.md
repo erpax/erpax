@@ -3,13 +3,13 @@ name: lexical
 description: "Use when reasoning about lexical — is the base rich-text feature set every editable field shares, including the link validation rules: an internal reference resolves against a collection, an external one must be a…"
 atomPath: "default/lexical"
 coordinate: "default/lexical · 4/weave · a1500fb9"
-contentUuid: "56362ad5-8ca6-5a4d-a87a-d0dc75b7c569"
+contentUuid: "20771529-f997-56f5-889b-90fcced43042"
 diamondUuid: "88cec039-3c36-8ba8-b56f-7dc5596e2e4f"
 uuid: "a1500fb9-0c01-802c-9887-00304ea18ff9"
 horo: 4
 typography:
   partition: default
-  bondDegree: 30
+  bondDegree: 27
 standards:
   - "3986 uniform-resource-identifier link-fields"
   - "BCP-47"

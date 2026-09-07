@@ -2,14 +2,14 @@
 name: statements
 description: "Use when importing or matching bank statements (CSV, OFX, API) against journal entries for reconciliation — opening/closing balance, transaction lines, match type, variance; feeds account-reconciliations and IAS-7 cash-flow GL. The bank-statements import collection."
 atomPath: "gl/accounts/bank/statements"
-coordinate: "gl/accounts/bank/statements · 8/crest · ff66ebbb"
-contentUuid: "d43a1439-4d51-5372-875e-e6d0e49956da"
-diamondUuid: "e453175d-b957-8106-bdcc-4ac956f780d6"
-uuid: "ff66ebbb-a5dc-8146-a5c6-5f9e0efa29e9"
-horo: 8
+coordinate: "gl/accounts/bank/statements · 5/round · 4411bf76"
+contentUuid: "df0650c2-ed43-5ef8-a495-cef05ea03362"
+diamondUuid: "6ee918e6-ddbf-87cf-87ea-e6bb64f53356"
+uuid: "4411bf76-8d9c-87af-bb9e-a7d6d1db205c"
+horo: 5
 typography:
   partition: gl
-  bondDegree: 0
+  bondDegree: 53
 standards:
   - "IFRS IAS-7 statement-of-cash-flows"
   - "ISO-13616-1:2020 iban"
@@ -27,22 +27,22 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "512ce538-6903-86a3-bd13-5cc7ae6ead51"
+  computationUuid: "59853a0e-b8b8-8f27-a0c9-f09c365ea3a1"
   stages:
     - stage: path
       stageUuid: "6d118f30-67d4-8f95-a572-fe9bfdd7ab3e"
     - stage: trinity
       stageUuid: "0672f912-c9cd-84cb-a25e-8057536dc9d4"
     - stage: boundary
-      stageUuid: "39a8043a-0fcb-8cfa-ae38-0bf00cde7161"
+      stageUuid: "bbd0e3c9-f226-85e7-af28-bb9412f52c8f"
     - stage: links
       stageUuid: "00b34f27-e857-898d-afb5-f65130d311d9"
     - stage: horo
-      stageUuid: "7c2a2c12-15b9-821a-9be9-14a123d64a38"
+      stageUuid: "4a6cdf46-4559-8025-92c1-a13898dbd2b4"
     - stage: seal
       stageUuid: "7519ed5d-8015-8786-8592-2a84e63cca62"
     - stage: uuid
-      stageUuid: "39c6db08-c09e-8ce4-b8c6-e4a2baab1295"
+      stageUuid: "428e1831-fb46-8bbe-a18e-e2f132b176e5"
 version: 2
 ---
 # bank-statements

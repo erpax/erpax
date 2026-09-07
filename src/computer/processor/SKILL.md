@@ -2,10 +2,10 @@
 name: processor
 description: "Use when reasoning about processor as a part of [[computer]] — vocabulary pivot to @/processor; nested not duplicated."
 atomPath: "computer/processor"
-coordinate: "computer/processor · 5/round · e279db66"
-contentUuid: "409cc886-4a7c-5188-82de-8e12244124bd"
-diamondUuid: "a3183b63-8858-8ace-8b21-e600a7fc996e"
-uuid: "e279db66-a310-8416-948a-125fe8d2ef66"
+coordinate: "computer/processor · 5/round · 78359c19"
+contentUuid: "7b845f5c-4b5b-5486-ad04-0283fd4e4795"
+diamondUuid: "9ca368be-dee7-8f4a-9b21-33c060aaa405"
+uuid: "78359c19-0cd2-8a02-b068-8590ff6d84cc"
 horo: 5
 typography:
   partition: computer
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b54baa88-58fb-80b0-8b9d-f9b4c42b889a"
+  computationUuid: "5a90086d-6d91-8c9e-910a-9f4af02123a6"
   stages:
     - stage: path
       stageUuid: "5efd3750-4789-8e44-af70-a0b4aaf7dac6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "93ee8751-3509-8265-8dce-963428b1ed5f"
     - stage: horo
-      stageUuid: "7ed31fac-1036-813e-a1f2-e6dbed3b62df"
+      stageUuid: "22266ccf-2bc4-8047-a049-9fb99c74479b"
     - stage: seal
       stageUuid: "23994991-db4e-8f20-8267-76e3c2316df0"
     - stage: uuid
-      stageUuid: "8f7ebcb6-175b-8e59-a558-c3107e1aea82"
+      stageUuid: "a1642fe9-aab9-8736-a6ec-ce1f56bdf65c"
 version: 2
 ---
 # computer/processor — executes instructions

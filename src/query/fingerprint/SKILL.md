@@ -3,13 +3,13 @@ name: fingerprint
 description: "Use when reasoning about fingerprint — normalises a statement and addresses it, so the same query issued from two places is recognisably one query. records the execution against that address."
 atomPath: "query/fingerprint"
 coordinate: "query/fingerprint · 4/weave · ddb66c6d"
-contentUuid: "46d9444e-36a5-5d14-974b-6056843c7c16"
+contentUuid: "14a91d02-6933-5ad6-a538-abf7215d3bfa"
 diamondUuid: "f3bb4159-6657-8c99-9d82-d1a0e696ae6e"
 uuid: "ddb66c6d-07be-8de2-92cf-81b4e6a689fb"
 horo: 4
 typography:
   partition: query
-  bondDegree: 14
+  bondDegree: 11
 standards:
   - "ISO/IEC 9075-2 SQL/Foundation (keyword inventory)"
   - "NIST FIPS 180-4 SHA-256"

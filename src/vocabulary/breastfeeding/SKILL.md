@@ -2,11 +2,11 @@
 name: breastfeeding
 description: "Use when reasoning about breastfeeding as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/breastfeeding"
-coordinate: "vocabulary/breastfeeding · 1/base · 470c9f34"
-contentUuid: "df8abb17-62d6-5254-a4f2-1cbab20747dc"
-diamondUuid: "c35f8b56-52eb-8ecc-bfdd-fa41ae6f0589"
-uuid: "470c9f34-c6d2-8959-87d9-498d05432076"
-horo: 1
+coordinate: "vocabulary/breastfeeding · 8/crest · 58fa33f1"
+contentUuid: "a61a0125-4a64-5663-91ba-d42e379d8522"
+diamondUuid: "b16feaab-564d-8265-8f74-e650f95a857b"
+uuid: "58fa33f1-84d7-82e9-9760-af2a747758e4"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1dd489b4-1da7-8aae-aa43-f522c5389fba"
+  computationUuid: "20c502a8-2f02-80bb-836e-0021e1f56c44"
   stages:
     - stage: path
       stageUuid: "9c4c1634-4986-81c4-a4e0-97a6df77faa7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a94ea80b-6f53-8b71-8002-fe3af544706f"
     - stage: horo
-      stageUuid: "43b85325-9e4d-824c-b706-b0152ec735d3"
+      stageUuid: "680fe7dc-02c8-8dc4-906b-f0a25d4b7b65"
     - stage: seal
-      stageUuid: "0c1bb8ec-1c26-8fbc-a67e-2d70ccafdede"
+      stageUuid: "e2ebc506-036a-8d6a-918b-6f277f8d3d21"
     - stage: uuid
-      stageUuid: "fb45d8c5-94f8-827d-888c-f936acac94fd"
+      stageUuid: "9db47d5b-74bb-8ea3-af38-a7d2303cdf4d"
 version: 2
 ---
 # breastfeeding

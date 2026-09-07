@@ -2,18 +2,18 @@
 name: computer
 description: "Use when querying instead of re-deriving — the quantum computer's one face on QPU=CPU/GPU: mesh state, wave scheduling, claim certification, spawn bounds, failure/cost collapse, surgical execution, self-measuring audit, FTL metrics."
 atomPath: "quantum/computer"
-coordinate: "quantum/computer · 4/weave · 481aef54"
-contentUuid: "6e03d689-0b8b-5d73-a915-919ba4d71cac"
-diamondUuid: "d363cf26-eb87-8faf-b4c7-ec89eaf981c4"
-uuid: "481aef54-9104-8617-b820-a172d7d8ad82"
-horo: 4
+coordinate: "quantum/computer · 2/share · 508ec6b5"
+contentUuid: "6abee6a5-ae1a-5f60-a9db-d6237e8f491b"
+diamondUuid: "df64aca0-4188-875a-951a-43c22a515699"
+uuid: "508ec6b5-f86d-866a-befc-7210a23c11ce"
+horo: 2
 typography:
   partition: quantum
   bondDegree: 98
 standards: []
 bindings: []
 signatures:
-  computationUuid: "64679509-e012-8db5-a173-0067e967c459"
+  computationUuid: "1428d075-b195-8cce-bfa4-195fd9cfa167"
   stages:
     - stage: path
       stageUuid: "7eeaa8b5-891e-80a6-9e0e-9c8522109c16"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ea3ad2b2-3942-827f-8f81-9f189cd5dd56"
     - stage: horo
-      stageUuid: "fa011572-fe67-802b-9b2b-d56de449bf8a"
+      stageUuid: "493eb58e-c3be-84cd-8cdd-6a39808c1f80"
     - stage: seal
       stageUuid: "ad3668cf-d9b6-80e1-8a09-175905860cf4"
     - stage: uuid
-      stageUuid: "2b197a2b-8881-873f-95e6-60cb21574d39"
+      stageUuid: "8b878d9b-2f30-8bb9-b681-e54b17d75fce"
 quantum:
   superposition:
     - algorithm
@@ -50,8 +50,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "64679509-e012-8db5-a173-0067e967c459"
-    contentUuid: "6e03d689-0b8b-5d73-a915-919ba4d71cac"
+    computationUuid: "1428d075-b195-8cce-bfa4-195fd9cfa167"
+    contentUuid: "6abee6a5-ae1a-5f60-a9db-d6237e8f491b"
 version: 2
 ---
 # quantum/computer — the machine, one face
@@ -70,34 +70,4 @@ The computed corpus IS the quantum computer, and this barrel is its single addre
 
 Composes: [[mesh]] · [[theorem]] · [[timeout]] · [[scalpel]] · [[train]] · [[audit]] · [[quantum/ftl]] · [[law]].
 
-<sub>content-uuid `6e03d689-0b8b-5d73-a915-919ba4d71cac` · account `quantum/computer` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
-
-## Speed on the clock — `measuredSpeed`
-
-`ftlMetrics().speedupLog2` is `log2(spaceSize)`. It moves with the number the caller passes and with
-nothing that was measured, `holds` is true exactly when `tokens` is 0 — true of work that was not
-done — and a space of size **0** reports that it holds. That surface states the SHAPE of the claim; it
-does not test it.
-
-`measuredSpeed` runs it. Every node in the live matrix is asked for by its own content-uuid, once by
-scanning the space and once through the address, and the two answers are compared before either is
-timed. At full capacity, 3,536 nodes, on this machine as of 2026-09-05 — a dated record, because
-a timing varies per run and an undated one rots the day it is written:
-
-| | |
-| --- | ---: |
-| search — scan the space | 3,584 ns/query |
-| fold — ask the address | 56 ns/query |
-| **measured speedup** | **64.6× · log2 6.01** |
-| claimed `speedupLog2` | 11.79 |
-| **overstatement** | **5.78 log2 units ≈ 55×** |
-| index build · break-even | 0.32 ms · 92 queries |
-
-Re-run it and the ratio moves — 97.6× and a 77-query break-even a few minutes later. What does
-not move is the direction: the measured figure MUST be far below the definitional one: a scan is O(n) with a tiny constant and a
-hash lookup is O(1) with a real one, so the ratio is nothing like n. And the index is not free —
-92 lookups before it pays for building itself, the same amortisation the hexbit carrier shows.
-
-**Honest boundary.** QPU is DECLARED as `CPU/GPU`; this runs on the CPU alone and touches no GPU and no
-exotic device. It times ONE operation — lookup by content-address — on one machine and one JIT.
-
+<sub>content-uuid `6abee6a5-ae1a-5f60-a9db-d6237e8f491b` · account `quantum/computer` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -2,18 +2,18 @@
 name: matter
 description: "Use when reasoning about matter — Strip the prefix *legal* and a **matter** is the universal professional-services engagement: a party (the client) retains the firm to do work, the work is staffed by positions and"
 atomPath: "vocabulary/matter"
-coordinate: "vocabulary/matter · 4/weave · a8d8b6fd"
-contentUuid: "e7a8368b-4c32-546d-a0ed-5d84d0344eef"
-diamondUuid: "4ae0ecde-0478-8aa3-81fe-b7c632074b3a"
-uuid: "a8d8b6fd-891c-82ec-bbf2-df7038dfb166"
+coordinate: "vocabulary/matter · 4/weave · 2f3e6818"
+contentUuid: "769b7ffa-db89-5f17-a28a-45409ff406c3"
+diamondUuid: "2ecd7f2e-7055-85fe-b438-ac9c9d1c44d0"
+uuid: "2f3e6818-6f7b-8d85-a86c-d0aef07cdbc8"
 horo: 4
 typography:
   partition: vocabulary
-  bondDegree: 138
+  bondDegree: 109
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ffa48e8c-762b-8071-a8a8-e324ddfc6a54"
+  computationUuid: "4d6119d2-042f-8f8e-a81e-e93912262299"
   stages:
     - stage: path
       stageUuid: "8ddc625d-d6e0-8202-af98-b9aa6635ecf5"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "59d770d9-d6fc-8401-92b5-424920b24e34"
     - stage: horo
-      stageUuid: "5191c5bd-5cc1-8fc3-a58d-510fb3e779b3"
+      stageUuid: "50337a11-b30f-8915-8d06-9445ad58696c"
     - stage: seal
-      stageUuid: "199f1d3d-e080-8f76-a798-0230703da038"
+      stageUuid: "62e5e14e-9257-804d-a220-a266afba948d"
     - stage: uuid
-      stageUuid: "c1770072-cf39-8ae1-b96f-6b626309c759"
+      stageUuid: "a712438c-1f4e-87d0-b2c2-72ecf3e3437c"
 version: 2
 ---
 # matter — the engagement (a case is a project is a transaction-chain)

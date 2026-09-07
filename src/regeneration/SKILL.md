@@ -2,21 +2,21 @@
 name: regeneration
 description: "Use when reasoning about erpax as a living, self-repairing system — the computed proof that it regrows from seed and heals its own wounds. The content-uuid is the genome: every observable (uuid, aura, coordinate, the README proof) is derived from content and never stored, so any derived artefact regenerates byte-identically from the surviving seed. A gap (dead link, untested atom) is a wound; the gate is the immune system; healing is monotone, so the loop converges to gap 0 — wholeness, zero entropy, max tamper-cost."
 atomPath: regeneration
-coordinate: "regeneration · 2/share · 959d9034"
-contentUuid: "6bb9f0df-907b-5f39-8ffd-81a4a51800bf"
-diamondUuid: "63e90845-8b1b-8b06-86e6-872a0edc4ecc"
-uuid: "959d9034-00f4-8fbf-93d4-987615dac423"
-horo: 2
+coordinate: "regeneration · 8/crest · b0a19217"
+contentUuid: "b81d716b-cfaa-517c-ac6e-b662da8d115b"
+diamondUuid: "ca54eb3e-ca6d-8407-9a2c-bcc16baedb52"
+uuid: "b0a19217-ed96-80d8-a3f0-e03c3cb68c3d"
+horo: 8
 typography:
   partition: regeneration
-  bondDegree: 49
+  bondDegree: 21
 standards:
   - "RFC 9562 §5.8 content-uuid (the genome) · DRY (no stored derivation)"
   - "RFC 9562 §5.8 content-uuid (the genome) · DRY (no stored derivation)`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "60ecbdb7-9f41-81ce-a671-54b93e7f366f"
+  computationUuid: "fc9d41a5-2406-80a5-840f-115fb993e08f"
   stages:
     - stage: path
       stageUuid: "9663116d-30b9-855f-9152-e9e7a1576c7d"
@@ -25,13 +25,13 @@ signatures:
     - stage: boundary
       stageUuid: "14d34a35-8df1-8394-b0bf-36ea463b4117"
     - stage: links
-      stageUuid: "7c9ba6bf-0ed9-87e8-a6f7-50d8afaeffca"
+      stageUuid: "6e3ba53a-837c-81b6-952e-47c5fae10438"
     - stage: horo
-      stageUuid: "adeb6837-2c4b-8e3e-bfc7-48de5aacc148"
+      stageUuid: "034e8046-8cea-8afb-9bbc-e1829f987136"
     - stage: seal
       stageUuid: "d02d9452-f116-8f2f-9333-5f8977fb0156"
     - stage: uuid
-      stageUuid: "420e37cb-ed0d-89e0-9b67-19389aad2b67"
+      stageUuid: "487d3d94-a248-8d16-b13b-430f7747a031"
 version: 2
 ---
 # regeneration — erpax regrows from seed and heals its own wounds

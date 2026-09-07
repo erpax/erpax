@@ -3,13 +3,13 @@ name: command
 description: "Use when reasoning about command — That file became a child atom at in an earlier refactor, and the shell was never repointed."
 atomPath: "rules/command"
 coordinate: "rules/command · 7/descent · bd710170"
-contentUuid: "7723104f-b31a-5e81-9ed7-05e79f7533f7"
+contentUuid: "c0b4c4b1-87ba-585e-b1e4-6861a705b0c3"
 diamondUuid: "9d979620-d784-8ed1-b8ca-354ee13a051d"
 uuid: "bd710170-bfd4-8836-9b7a-7328cc4723f6"
 horo: 7
 typography:
   partition: rules
-  bondDegree: 65
+  bondDegree: 62
 standards: []
 bindings: []
 signatures:

@@ -2,14 +2,14 @@
 name: definitions
 description: "Use when authoring data-driven multi-step approval rules for any collection — BPMN-2.0 step kinds (approval, all-of-N, any-of-N, notification, service task, decision), assignee modes, SLA escalation, JSON-Logic conditions, and state-machine lifecycle gate without a code change. The reusable approval-template collection."
 atomPath: "workflow/definitions"
-coordinate: "workflow/definitions · 2/share · 2fbc367f"
-contentUuid: "5a08250a-b54a-5ade-af81-8c88e4edb02d"
-diamondUuid: "cb3eb661-4826-805a-8be3-e109d8a18edc"
-uuid: "2fbc367f-9d98-8c02-9961-fe22a4f69a4e"
+coordinate: "workflow/definitions · 2/share · 6b1c4556"
+contentUuid: "07faf1a5-2ca8-5507-bb5c-5aee0a4ddfb6"
+diamondUuid: "1454ff6b-1ded-8104-9f79-c1d8df7863ce"
+uuid: "6b1c4556-77da-8516-806f-1ad598ed8876"
 horo: 2
 typography:
   partition: workflow
-  bondDegree: 0
+  bondDegree: 46
 standards:
   - "ASC-606"
   - "IFRS-15"
@@ -19,13 +19,14 @@ standards:
   - "ISO-8601-1:2019 date-time`"
   - "ISO/IEC 19510:2013 BPMN-2.0"
   - "ISO/IEC 19510:2013 BPMN-2.0`"
+  - "ISO/IEC-19510"
   - "SOX §404 internal-controls multi-step-approval"
   - "US-GAAP"
   - "W3C-ActivityPub"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "a091c53c-53d4-8803-9350-13880fe390d5"
+  computationUuid: "f4664912-8669-8618-8b8c-e3b9f9e303e3"
   stages:
     - stage: path
       stageUuid: "90418e82-4eb7-80e4-b3be-d098a1b0c205"
@@ -34,13 +35,13 @@ signatures:
     - stage: boundary
       stageUuid: "94796516-91a4-831a-ba0b-b8a7e93383e6"
     - stage: links
-      stageUuid: "68e236ef-6ac2-8a4f-b058-f18977610310"
+      stageUuid: "0aec2b49-98ff-8849-8407-60e57bfb963d"
     - stage: horo
-      stageUuid: "623a292c-56a5-8368-bedc-44409186a29d"
+      stageUuid: "b1e47b9d-1ccd-8321-90a4-1115eb474fab"
     - stage: seal
-      stageUuid: "6e575265-1747-8f23-9be9-65556517d4d6"
+      stageUuid: "aea55077-48eb-8973-b0c1-bfe6ce6e7f59"
     - stage: uuid
-      stageUuid: "3a30e0c2-acdb-8d6f-aeb0-359f3c5f6a70"
+      stageUuid: "cd22c87b-ad21-899a-835e-39fbbc841695"
 version: 2
 ---
 # workflow-definitions

@@ -2,14 +2,14 @@
 name: tax
 description: "Use when a value bears VAT/GST/sales/withholding tax — a rate on a taxable base, UN/CEFACT 5305 category codes, EN-16931 VAT breakdown, inclusive/exclusive pricing, exemption, reverse-charge, the tax point. The TaxConcern; tax is a cascade-resolved rate on a base, one engine feeding receipt+total+SAF-T, never a baked literal."
 atomPath: tax
-coordinate: "tax · 1/base · aad60228"
-contentUuid: "498f3425-9a37-541b-95f6-f050e7edcb86"
-diamondUuid: "385daa23-8cf3-8203-9f71-3e5f999df08c"
-uuid: "aad60228-38b5-80d5-9e2d-7ed825c02773"
-horo: 1
+coordinate: "tax · 8/crest · a4e7ddf9"
+contentUuid: "2dc0c41f-e8d4-50c7-b48e-1e95f464b641"
+diamondUuid: "d03d43bf-58f0-84a0-b2d5-223ad0ba9b57"
+uuid: "a4e7ddf9-a531-8776-bc82-1124f519cd7b"
+horo: 8
 typography:
   partition: tax
-  bondDegree: 0
+  bondDegree: 63
 standards:
   - BEPS
   - "EN-16931`"
@@ -23,26 +23,23 @@ standards:
   - "US-GAAP"
 bindings: []
 signatures:
-  computationUuid: "963b226f-0cee-89fb-bb26-cf26ab765628"
+  computationUuid: "860f81b8-07a2-87ea-9d2b-483225ac7bc0"
   stages:
     - stage: path
       stageUuid: "e08a6457-43c3-8a62-946c-60d67ee39f11"
     - stage: trinity
       stageUuid: "ba1c7391-d457-8f1b-8aec-ff93c0ba5974"
     - stage: boundary
-      stageUuid: "8ad4d301-860b-84e8-baa7-0f96175be621"
+      stageUuid: "f1b3a6a7-af48-88f7-8b70-b645cc3f0648"
     - stage: links
-      stageUuid: "d4aaed23-d89d-8b99-9020-0e2eca19faf9"
+      stageUuid: "948436b6-5801-8f05-b7a9-561a99b8c2a2"
     - stage: horo
-      stageUuid: "635f4204-9f82-8584-aa3f-d9abab921905"
+      stageUuid: "82bb1ff5-1b30-8507-a539-649f4625a1bd"
     - stage: seal
-      stageUuid: "4382795d-df9a-83f5-983b-947549204a10"
+      stageUuid: "8d8efd0c-1d47-84d5-9bf3-96eff1cd0830"
     - stage: uuid
-      stageUuid: "b2053690-737b-801f-b2fa-f6721e4c74cf"
+      stageUuid: "b3770ec9-f7a6-8322-80de-6401da9ee40c"
 version: 2
-neighbors:
-  wikilink:
-    - "[[tax/period/reconciliation]]"
 ---
 # tax — a levy is a rate on a taxable base, categorized by a standard code
 

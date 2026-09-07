@@ -2,11 +2,11 @@
 name: dust
 description: "Use when reasoning about the corpus as forged matter — every content-uuid node is a grain of stardust, an atom fused in the star and scattered; dust records the quantum proof as the grain census, computed on the live matrix."
 atomPath: dust
-coordinate: "dust · 2/share · d1fdb46b"
-contentUuid: "fea0841b-38b9-5105-a1d2-d477c010325f"
-diamondUuid: "9ab4fee1-2ceb-8ccc-b64a-f9d73841c21d"
-uuid: "d1fdb46b-f81f-8e54-855c-da338f59f75a"
-horo: 2
+coordinate: "dust · 7/descent · ae6d986e"
+contentUuid: "301cb571-ba28-55fd-b3c8-fa42197f97c8"
+diamondUuid: "d6198090-ffc9-8445-ae18-8360b5d2db14"
+uuid: "ae6d986e-d08a-8c0f-a26d-aad03ee5ba0a"
+horo: 7
 typography:
   partition: dust
   bondDegree: 44
@@ -14,7 +14,7 @@ standards:
   - "RFC 9562 §5.8 content-uuid + stellar nucleosynthesis (the standard astrophysical account)"
 bindings: []
 signatures:
-  computationUuid: "ac8952d7-def7-8d9c-8f27-3c28d8f1082f"
+  computationUuid: "2bab264a-68f3-89c2-9d9c-5ea169c9983e"
   stages:
     - stage: path
       stageUuid: "0c97104c-bf26-816f-8222-1d52d12ad40a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9d34a3e6-6722-879f-881c-5905717c58d1"
     - stage: horo
-      stageUuid: "b45fd684-b997-8cfa-b080-80657e149362"
+      stageUuid: "8af3a531-de6d-8a38-ae94-0632fd01fc0c"
     - stage: seal
       stageUuid: "a219491b-1c19-886b-8f53-1e65c0fb2f80"
     - stage: uuid
-      stageUuid: "963b2ccd-55c4-8636-9e02-6df6286fce21"
+      stageUuid: "268095df-173a-8adf-ba69-aa36c42a975d"
 version: 2
 ---
 # dust — stardust: the corpus is forged atoms, scattered

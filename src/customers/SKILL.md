@@ -2,14 +2,14 @@
 name: customers
 description: "Use when creating or querying the sale-side party master — customer identity, LEI, IBAN, VAT classification, credit limit, payment terms, accounts-receivable exposure, and GDPR consent. The EN-16931 buyer party collection."
 atomPath: customers
-coordinate: "customers · 5/round · fc6878d5"
-contentUuid: "c9699cc0-6d80-5743-a87d-33f479861123"
-diamondUuid: "82b11168-b17b-815e-ad72-d96d897ce4a6"
-uuid: "fc6878d5-dc88-8db5-a29a-26e4cd91908e"
-horo: 5
+coordinate: "customers · 7/descent · c1ad51ae"
+contentUuid: "60ca7f81-13a8-5a99-b373-4586b6cbff49"
+diamondUuid: "208f588e-48a1-80e4-9bdf-413821a02e5c"
+uuid: "c1ad51ae-1356-8fec-90eb-21e6ad8382fd"
+horo: 7
 typography:
   partition: customers
-  bondDegree: 0
+  bondDegree: 61
 standards:
   - "ASC-606"
   - "COSO-ERM-2017"
@@ -29,6 +29,7 @@ standards:
   - "ISO-13616-1"
   - "ISO-13616-1:2020 iban"
   - "ISO-13616-1:2020 iban`"
+  - "ISO-17442"
   - "ISO-17442-1"
   - "ISO-17442-1:2020 lei"
   - "ISO-17442-1:2020 lei`"
@@ -47,22 +48,22 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "0e3b0b20-148e-8320-91ca-5a40eb67706d"
+  computationUuid: "93a69d2b-9a7e-88de-991f-2e45c94fccd9"
   stages:
     - stage: path
       stageUuid: "06e2401f-1cb1-8548-a990-755d31d88436"
     - stage: trinity
       stageUuid: "9c8c8bc9-1bc5-8370-905a-bf7caa9efef3"
     - stage: boundary
-      stageUuid: "bbb9defc-13e6-819a-a27b-c62bd99c24cb"
+      stageUuid: "683153db-9834-8c9b-9836-9d4376f20979"
     - stage: links
       stageUuid: "76a0cd85-c851-88fd-a4e3-0e34bda9597b"
     - stage: horo
-      stageUuid: "5ebba9fe-a1fe-8d5c-b3ad-72d86dd75a2b"
+      stageUuid: "392ffbcf-232a-867b-afa6-0c7d826f2904"
     - stage: seal
-      stageUuid: "06983341-9c4d-8ff2-8f93-343a2d9d2c9b"
+      stageUuid: "33e367e0-80b1-8bf7-bd57-25b0c02220c7"
     - stage: uuid
-      stageUuid: "cfb8b4fd-4795-8a48-bef2-3935b617e650"
+      stageUuid: "8e7aedb0-5337-8615-a0d3-805ae13a6b43"
 version: 2
 ---
 # customers

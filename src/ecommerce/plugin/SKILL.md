@@ -3,13 +3,13 @@ name: plugin
 description: "Use when reasoning about plugin — wires the storefront to Stripe with per-tenant keys, so each tenant transacts under its own account and one tenant's credentials never authorise another's charge."
 atomPath: "ecommerce/plugin"
 coordinate: "ecommerce/plugin · 2/share · 34373e77"
-contentUuid: "8e6efb56-8431-5c7b-8221-62e388cc10a5"
+contentUuid: "a3a9f827-24a3-5bd5-88bf-c97eb2110c66"
 diamondUuid: "ecf7c097-4e7a-8487-96fe-3ef440599bab"
 uuid: "34373e77-fb3e-8174-b0e6-c4b9b14c0ba8"
 horo: 2
 typography:
   partition: ecommerce
-  bondDegree: 50
+  bondDegree: 47
 standards:
   - "8615 well-known-uri webhook-discovery"
   - "9110 http-semantics"

@@ -3,13 +3,13 @@ name: registry
 description: "Use when reasoning about registry — Which of 3,473 atoms this corpus can honestly publish, **computed** rather than kept by hand."
 atomPath: "publish/registry"
 coordinate: "publish/registry · 5/round · 97707935"
-contentUuid: "f6c3a785-6dc8-5dbf-aacb-54c0bbdb0603"
+contentUuid: "9e4d3acc-7961-5b97-87d8-525bc585ed56"
 diamondUuid: "e6db22de-0598-8a3e-a7ec-3bad7d3b05cb"
 uuid: "97707935-008e-824c-96d8-e3f8073d4a9d"
 horo: 5
 typography:
   partition: publish
-  bondDegree: 40
+  bondDegree: 31
 standards: []
 bindings: []
 signatures:

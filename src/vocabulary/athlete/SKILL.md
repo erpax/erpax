@@ -2,11 +2,11 @@
 name: athlete
 description: Use when reasoning about athlete — A person that acts as performing member of a sports team; a player as opposed to a coach.
 atomPath: "vocabulary/athlete"
-coordinate: "vocabulary/athlete · 8/crest · adc17f4a"
-contentUuid: "c7e6df80-c8ad-5e94-9463-3c36b7279658"
-diamondUuid: "4d5ee963-d375-89ec-a36e-5702fdb912e0"
-uuid: "adc17f4a-8b7e-8ac6-9452-733c051ee99a"
-horo: 8
+coordinate: "vocabulary/athlete · 2/share · 2eec05ac"
+contentUuid: "9797dac3-6233-553f-9d1e-fe762ea5247f"
+diamondUuid: "b18d104f-a061-88a3-9ad5-6051e532750b"
+uuid: "2eec05ac-a7e1-81d0-a67c-ff04dabc9315"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "97be7929-6249-8020-9a2c-19a126841058"
+  computationUuid: "985e1f09-71f0-846f-9ec9-e5660ab9dd70"
   stages:
     - stage: path
       stageUuid: "67f3c749-e7d1-8670-9bc1-23b29e393d23"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cb7aead1-5b5c-8b28-afff-f5de15b5b0ac"
     - stage: horo
-      stageUuid: "7062f194-da82-82e9-a8e1-26c4db92b850"
+      stageUuid: "6677d218-e7d6-82d4-9aeb-4648bce3cce0"
     - stage: seal
-      stageUuid: "124b584b-0b71-8535-a599-62142262c2ef"
+      stageUuid: "e949095d-eeae-863c-b58a-4b74e2e2f3b9"
     - stage: uuid
-      stageUuid: "10aec453-651c-8d4c-b064-f24f2387e5b6"
+      stageUuid: "10b2fcab-24d8-837b-bf73-1b8a18148987"
 version: 2
 ---
 # athlete

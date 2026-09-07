@@ -2,11 +2,11 @@
 name: assess
 description: "Use when reasoning about assess as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/assess"
-coordinate: "vocabulary/assess · 7/descent · cbbe2444"
-contentUuid: "6d9b2229-8032-5eac-97b1-eea8fff94636"
-diamondUuid: "c06337b1-1077-8d23-a7cf-35c8c9494f55"
-uuid: "cbbe2444-9ab7-858e-9571-2932f43810c2"
-horo: 7
+coordinate: "vocabulary/assess · 5/round · 885b37f5"
+contentUuid: "64042063-f56b-5a39-a8a2-c30d90c5d085"
+diamondUuid: "bc4ea4cc-854f-8081-b399-cf9afdb4b0fb"
+uuid: "885b37f5-59e3-8538-bd11-38eb66ad01f6"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f041eaee-02c0-80e4-9b8d-9544d1bc581c"
+  computationUuid: "58a68474-4f42-88a5-8f72-a4df3a49faff"
   stages:
     - stage: path
       stageUuid: "c2e74069-6023-8261-9872-3f632f39636f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b31c5b91-5d0a-8c36-81c1-8b3b826d98ca"
     - stage: horo
-      stageUuid: "1a36d807-3bb3-8547-9b76-e07f319d35c6"
+      stageUuid: "f0cf7aaa-f19c-8c18-9584-509ebbe90943"
     - stage: seal
-      stageUuid: "28abc7dd-3a69-82a3-8e4e-0f6cc37cf368"
+      stageUuid: "e8d212fd-8ae6-8fd5-bc46-174b5d9274f6"
     - stage: uuid
-      stageUuid: "5c795f21-e1fa-81b3-81dc-12525a883031"
+      stageUuid: "28d02646-435b-8648-a899-00fdb66e0cc0"
 version: 2
 ---
 # assess

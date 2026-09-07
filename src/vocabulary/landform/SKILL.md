@@ -2,10 +2,10 @@
 name: landform
 description: "Use when reasoning about landform — A landform or physical feature. Landform elements include mountains, plains, lakes, rivers, seascape and oceanic waterbody interface features such as bays, peninsulas, seas and so"
 atomPath: "vocabulary/landform"
-coordinate: "vocabulary/landform · 4/weave · 9a22b51d"
-contentUuid: "102da27c-da64-55f3-b64c-bc0d5155e69b"
-diamondUuid: "fea70113-9e40-8f01-92ed-f9efbcdc6963"
-uuid: "9a22b51d-6aee-81ab-a12f-7dc8dab7978f"
+coordinate: "vocabulary/landform · 4/weave · e2172147"
+contentUuid: "0a4428ea-9fb7-59ca-bf40-75d52a8fd266"
+diamondUuid: "8cd4405a-144d-89fe-a244-920845eddab2"
+uuid: "e2172147-2db8-8a4d-bfc5-4d17b27b6e52"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c1d054ce-2134-86b0-876c-b27d529af350"
+  computationUuid: "cc8ea69f-da29-8440-8296-4657c4d64fcc"
   stages:
     - stage: path
       stageUuid: "c53a4183-6841-8245-a235-2d68b5b4d994"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fa8bdf29-9526-8bfc-9070-36e4d342f64f"
     - stage: horo
-      stageUuid: "dda6625d-e7a6-8fc6-adc8-26eb592187d5"
+      stageUuid: "394433a2-f01f-88e8-b8d3-ff018cb7ad75"
     - stage: seal
-      stageUuid: "91d16066-00df-8573-b2db-68c4a30849d1"
+      stageUuid: "3ef3f3fc-d39e-84f7-a3ff-f6d754e96b91"
     - stage: uuid
-      stageUuid: "d8d9c89c-aed5-8317-87cf-b28e9454bc86"
+      stageUuid: "199b02ce-dd28-8093-a578-e56180d3a5ba"
 version: 2
 ---
 # landform

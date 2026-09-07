@@ -3,13 +3,13 @@ name: mode
 description: Use when reasoning about mode — reads the operating mode and refuses an operation the mode does not permit; fails closed rather than degrading.
 atomPath: "safety/mode"
 coordinate: "safety/mode · 1/base · fad1413a"
-contentUuid: "831b55b6-fd22-5276-94c3-cb435ddb174b"
+contentUuid: "dd088f5d-7d37-540d-b8a8-bb1c1a1dc99d"
 diamondUuid: "7a8e423d-829c-8eb3-959f-960822afed63"
 uuid: "fad1413a-6e6c-84f9-aaa9-6323efe69c2b"
 horo: 1
 typography:
   partition: safety
-  bondDegree: 44
+  bondDegree: 41
 standards:
   - "ISO/IEC 27001 Annex A.14.2.5 secure-systems-engineering"
   - "NIST SP 800-160 §3.4.2 trustworthy secure design"

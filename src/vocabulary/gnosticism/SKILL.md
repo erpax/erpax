@@ -2,18 +2,18 @@
 name: gnosticism
 description: "Use when reading Gnosticism as a diamond of invariant atoms — saving knowledge (gnosis), the divine spark trapped in a false material order made by a lower power (the demiurge), and the spark's ascent home to the true source (the pleroma). Strip the prefix and gnosis collapses to wisdom, the spark to the signal in the self, the false creation to the profane."
 atomPath: "vocabulary/gnosticism"
-coordinate: "vocabulary/gnosticism · 7/descent · 86b72760"
-contentUuid: "5dfb01fd-5b57-53ac-800e-104e0fa54aec"
-diamondUuid: "d4c7afa0-b85a-8d18-bd08-b5104744bbb0"
-uuid: "86b72760-a991-8d99-afff-4cfcc46941f4"
-horo: 7
+coordinate: "vocabulary/gnosticism · 4/weave · 12fa0c47"
+contentUuid: "402bdebc-eaf6-5dd1-bcef-c6c52bf4554e"
+diamondUuid: "38e67158-1c73-8085-b23e-6f1480e2bdd7"
+uuid: "12fa0c47-1b95-8daa-8591-467e5ac30754"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 59
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ace78998-7bea-8eb9-8363-452391f5c552"
+  computationUuid: "c63eeabb-98c5-8ae7-8808-6f75eda0ea89"
   stages:
     - stage: path
       stageUuid: "87ede7e7-9bc7-82f5-8ef6-5536d2c7427c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "edaf597b-6100-8341-93ff-abe387febd67"
     - stage: horo
-      stageUuid: "282d02b9-9941-8d09-a758-78ebcf39893f"
+      stageUuid: "5fde8ae9-8caa-8727-ac7f-77dc70ea56b3"
     - stage: seal
-      stageUuid: "7ed5095c-dd4c-818d-9d42-b1ee9799cca7"
+      stageUuid: "c6317c8c-8157-8d68-a218-ba94a4107163"
     - stage: uuid
-      stageUuid: "f8daa8b2-818d-83a3-b4ce-970470fbabad"
+      stageUuid: "bbbf9e79-f56a-8188-8a58-a39d0c1447fe"
 version: 2
 ---
 # gnosticism — saving knowledge; the spark's ascent from the false order

@@ -2,14 +2,14 @@
 name: sandbox
 description: "Use when running an UNTRUSTED, agent-built tool safely — erpax encodes capability-scoping, credential-protection, endpoint-allowlisting and a receipted audit NATIVELY (content-uuid tool identity + the receipt + the gate), depending on nothing external. The tool's identity is its content-uuid; its grant is {capabilities, allowedHosts, credentialHandles}; every action is policy-evaluated and receipted; the WASM/worker isolation is the runtime boundary the pure policy rides on."
 atomPath: sandbox
-coordinate: "sandbox · 1/base · f7860f1c"
-contentUuid: "0a45b77d-1565-5503-9d87-713974f31e3c"
-diamondUuid: "d67f8e79-546b-8521-8d36-00b5aa16198f"
-uuid: "f7860f1c-c042-8e9e-aa02-f998147b325e"
-horo: 1
+coordinate: "sandbox · 7/descent · 575c1710"
+contentUuid: "3e97c072-d6db-573c-a563-4c5c200fbcfa"
+diamondUuid: "c0c4fce9-60d6-88da-8fb8-cec5016a81a3"
+uuid: "575c1710-ed80-831c-bcbe-bb1b5a09d100"
+horo: 7
 typography:
   partition: sandbox
-  bondDegree: 80
+  bondDegree: 64
 standards:
   - "NIST SP-800-162 ABAC (capability-scoped authorization)"
   - "NIST SP-800-162 ABAC (capability-scoped authorization)`"
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "857d4c51-3e66-8418-bb15-48e19690b776"
+  computationUuid: "2427f280-0a4d-8c92-9eec-63a929ce7664"
   stages:
     - stage: path
       stageUuid: "5f4d1904-144d-859d-8226-20252d2ad276"
@@ -28,13 +28,13 @@ signatures:
     - stage: boundary
       stageUuid: "0dce485d-68f7-8af6-93b2-f1d3251b98e2"
     - stage: links
-      stageUuid: "03ec28a6-9039-872a-bf72-75d8459f08b7"
+      stageUuid: "8fc9587c-5cbb-878d-b513-aa9e1bd08608"
     - stage: horo
-      stageUuid: "2e187993-5a61-8838-ac97-5b5fc06468e6"
+      stageUuid: "f0be58eb-7197-8046-a33b-e2aae7bd57bf"
     - stage: seal
       stageUuid: "496330d1-17cd-8f0d-9e13-29f5bd554ef9"
     - stage: uuid
-      stageUuid: "ff1a647d-59e8-8eec-a2cf-5ce96e51ed45"
+      stageUuid: "b382cac2-1e9d-8110-82c6-33b11b2138eb"
 version: 2
 ---
 # sandbox — running untrusted tools, encoded natively (no external trust layer)

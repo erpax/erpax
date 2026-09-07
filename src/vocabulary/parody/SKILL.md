@@ -2,11 +2,11 @@
 name: parody
 description: "Use when reasoning about parody as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/parody"
-coordinate: "vocabulary/parody · 7/descent · b6b16079"
-contentUuid: "bfdf793e-0fae-5c62-8c79-8c39c1193e32"
-diamondUuid: "3ef0ded4-d8c2-8b0a-bac7-d3ad86a1f3cd"
-uuid: "b6b16079-6fe0-8185-b783-b1b8dcf8e410"
-horo: 7
+coordinate: "vocabulary/parody · 5/round · ea562ec6"
+contentUuid: "a99caafd-e5e4-56f8-9b31-867c7fd2ff2b"
+diamondUuid: "06478c1c-de78-85f7-b691-7fe5948e7ab1"
+uuid: "ea562ec6-df14-8261-a2b7-d86a43b35606"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b9cdbc08-752e-8fd5-9bab-6f97bb2576aa"
+  computationUuid: "cc91162f-b79f-88b4-99dd-898cad992770"
   stages:
     - stage: path
       stageUuid: "840f3b56-e243-84aa-a535-70bcd2eb12a3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3d433ad6-b219-81be-bab0-2e97979c12f0"
     - stage: horo
-      stageUuid: "cb186a21-9db2-82ad-9008-b7491485af3e"
+      stageUuid: "2576cd4e-0dc1-830e-8b1d-82db17ac78c5"
     - stage: seal
-      stageUuid: "80daeebf-1dd2-8381-89ac-54996c7a5564"
+      stageUuid: "e7974867-8885-868e-abb0-cee0163abb1d"
     - stage: uuid
-      stageUuid: "d6a96cd2-c875-8f97-8034-a9a44bdc97e9"
+      stageUuid: "3be4d116-a61c-8852-b462-c17b37eb137d"
 version: 2
 ---
 # parody

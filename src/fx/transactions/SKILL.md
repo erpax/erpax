@@ -2,11 +2,11 @@
 name: transactions
 description: "Use when logging or auditing IAS-21 FX events — spot conversions, period-end monetary-item revaluations, hedge settlements, or consolidation translation adjustments; tracing exchangeRate to the currency-rates master; booking the resulting FX gain/loss journal entry. The IAS-21 FX conversion and revaluation event register."
 atomPath: "fx/transactions"
-coordinate: "fx/transactions · 8/crest · b928adb8"
-contentUuid: "5f2d1221-683e-5197-9f3a-5bf67434424a"
-diamondUuid: "7837a21a-8cc0-8e72-b55f-73fade63e888"
-uuid: "b928adb8-88f5-81ca-8bea-9568f3cbb3f8"
-horo: 8
+coordinate: "fx/transactions · 5/round · 61b6317d"
+contentUuid: "ec71f077-e6b9-5778-9ae0-cd06f20264b2"
+diamondUuid: "5a2ddbb4-b95b-83f9-b183-d51295e3e296"
+uuid: "61b6317d-f20c-8f78-910b-4759640a1ab9"
+horo: 5
 typography:
   partition: fx
   bondDegree: 54
@@ -25,7 +25,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "77d41192-e678-89ef-a3a1-93db7d585462"
+  computationUuid: "3c7ec932-f797-8f70-ac05-2c7d77581d40"
   stages:
     - stage: path
       stageUuid: "f4e0d4d1-e66c-8343-bb9c-44d5c6c8fd88"
@@ -36,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "de806bbc-35a1-8166-8d14-29aa9b2c1742"
     - stage: horo
-      stageUuid: "17a4b4e8-a81a-89fc-8fd0-0a59eb021bd7"
+      stageUuid: "6a04ea39-0912-8ec4-a78c-2cd5cf238ae7"
     - stage: seal
       stageUuid: "64793975-f9ff-82f3-8d9b-6ac2d532036e"
     - stage: uuid
-      stageUuid: "2755135c-91a7-84c8-84c4-8ffab61814d9"
+      stageUuid: "9272e542-96af-86c4-b011-efeae1197955"
 version: 2
 ---
 # fx-transactions

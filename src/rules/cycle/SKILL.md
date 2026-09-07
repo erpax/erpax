@@ -2,34 +2,34 @@
 name: cycle
 description: "Use when a module reads a binding that does not exist yet — 'Cannot access X before initialization'. Reports the strongly connected components of the runtime import graph: sets of files that can all reach each other, where initialisation order is decided by accident. Type imports are not edges. Run: tsx src/rules/cycle/index.ts"
 atomPath: "rules/cycle"
-coordinate: "rules/cycle · 5/round · 2f55c83c"
-contentUuid: "40a15bb2-aaee-5bab-b5b9-1f73e1c2ddb7"
-diamondUuid: "49932587-6bb7-8999-bc27-1188d93dddc6"
-uuid: "2f55c83c-f055-8357-ac9c-1afecc3d4239"
-horo: 5
+coordinate: "rules/cycle · 8/crest · 021b4d07"
+contentUuid: "782e4e92-f840-5779-b2e9-e9449e489988"
+diamondUuid: "5e9f336f-2042-8814-b43b-495e7c83e2b5"
+uuid: "021b4d07-6649-8bf0-b18a-5fa4dc21f300"
+horo: 8
 typography:
   partition: rules
-  bondDegree: 54
+  bondDegree: 60
 standards:
   - "ISO/IEC 25010:2023 §5.6.2 modularity"
 bindings: []
 signatures:
-  computationUuid: "e85f722d-6ce1-8995-b03f-2558f2591d1c"
+  computationUuid: "4217df2a-025b-822a-8610-6f5f9d3374a4"
   stages:
     - stage: path
       stageUuid: "c16d54c2-f7ed-88ce-9443-877ba9783871"
     - stage: trinity
       stageUuid: "39c2f2b8-6f80-8f7c-8e57-8dc6d20fd520"
     - stage: boundary
-      stageUuid: "a40b1667-86f6-8da9-9783-6bf6437721cd"
+      stageUuid: "9fa9f948-6c85-802f-945a-b31f2aa90371"
     - stage: links
-      stageUuid: "5d630872-9cc8-8c1d-b134-177dca279cce"
+      stageUuid: "f68a1f1f-e352-8b24-bdb8-df917019a47d"
     - stage: horo
-      stageUuid: "1fac7644-5aff-86af-86a3-e17147239c05"
+      stageUuid: "35131da9-297b-8413-adc2-4b97635352f3"
     - stage: seal
       stageUuid: "ecbed9bc-ff8f-83fd-983d-dd7e83ac0533"
     - stage: uuid
-      stageUuid: "f8ae350b-1e92-8ec8-9c0f-45e81fd33781"
+      stageUuid: "c5f79666-c689-88a9-a4e6-a1496df55618"
 version: 2
 ---
 # cycle — an import loop is a lie the module graph tells at runtime
@@ -79,6 +79,31 @@ It was first written as a depth-first walk that marked nodes `done` and reported
 **A false negative in a gate is worse than a false positive** — it reports green over the exact defect it exists for. Tarjan is not decoration; it is the reason the answer is complete. The fixture that reproduces the miss is pinned in `test.ts`.
 
 An **SCC is the honest unit**: enumerating every distinct ring is exponential in a dense tangle, while the component answers the question that matters — *which files are mutually entangled* — in linear time.
+
+## Cutting it — three views, and one of them was a file with no address
+
+| view | largest atom SCC | what it answers |
+| --- | ---: | --- |
+| every edge | **453** | nothing useful — tests and deferred loads counted as coupling |
+| runtime (`runtimeMesh`) | **142** | what actually loads, eventually |
+| initialisation (`initMesh`) | **102** | *this atom's own claim* — what decides load ORDER |
+
+Two of those reductions were the reader, and are recorded above and below as such. One was code.
+
+**`src/cssVariables.js`** — six breakpoint numbers at the ROOT of `src`, reached by a
+`../../../` climb from one component. A file at src root folds to the pseudo-atom `.`, and `.`
+also holds `payload.config.ts`, which lawfully namespace-imports all 231 collections
+([[rules]]/confine). So six numbers with one caller were welded to the entire collection registry.
+Given an address at [[css]]/variables: **−23 atoms**, the largest single-edge cut available.
+
+The cycle was not held together by an architectural knot. It was held by matter with no address —
+which is [[rules]]/invisible's law, arriving in the dependency graph.
+
+**`agents/mcp/tool-defs`** then deferred three tree-scanners (collider · strength · emergence)
+that its own comment already said "run HERE in the Node MCP handler" at call time — while a static
+import loaded all three to DEFINE a tool. Both callers were already `async`. That is a real
+decoupling, and the instrument could not see it until `deferredTargetsOf` existed, because the mesh
+counted a function-body `import()` exactly like a static one.
 
 ## Entangled is not fatal — `fatalCycleUses`
 

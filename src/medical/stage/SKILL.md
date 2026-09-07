@@ -2,11 +2,11 @@
 name: stage
 description: "Use when reasoning about stage as a medical facet of [[medical]] — vocabulary pivot to @/stage; nested not duplicated."
 atomPath: "medical/stage"
-coordinate: "medical/stage · 1/base · 12c4b0c5"
-contentUuid: "7635e0d0-061f-520a-9633-2c3156663828"
-diamondUuid: "483a6967-c3cb-8cc0-84d2-31ebe287d649"
-uuid: "12c4b0c5-8a8a-8d90-a1d7-52f697174769"
-horo: 1
+coordinate: "medical/stage · 7/descent · 4417ab97"
+contentUuid: "44a1e9a8-822d-55fc-be8d-3c15ac0cbfd7"
+diamondUuid: "58220dba-a564-864d-bcf4-f77e10904ea7"
+uuid: "4417ab97-3a1b-8b85-be4a-7802f37c02b7"
+horo: 7
 typography:
   partition: medical
   bondDegree: 31
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ea36b042-4422-8dd0-8b5d-7990c809cf33"
+  computationUuid: "39b7999a-1362-8657-9a88-9168cb728838"
   stages:
     - stage: path
       stageUuid: "5870c0c2-f9dc-81b0-90ec-7b8b5f9f0203"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6156d0c3-5c76-801a-b48f-85552d9818bb"
     - stage: horo
-      stageUuid: "9fa66a44-7c00-8c90-bd05-7f0672da1a7e"
+      stageUuid: "5c45ccde-4d9b-88b8-8521-9c1168ab860b"
     - stage: seal
       stageUuid: "e8c807b7-b19e-8c40-a4b5-31bc54d1ea7d"
     - stage: uuid
-      stageUuid: "3adfdb3b-d839-8f77-9c04-35e41db3acb0"
+      stageUuid: "a81c9e9c-be67-8165-a2be-56197d81a604"
 version: 2
 ---
 # medical/stage — medical facet

@@ -2,11 +2,11 @@
 name: availability
 description: "Use when reasoning about availability — The availability of this item&#x2014;for example In stock, Out of stock, Pre-order, etc."
 atomPath: "vocabulary/availability"
-coordinate: "vocabulary/availability · 1/base · f244a01b"
-contentUuid: "dd3262ad-deea-5971-aea3-2d11594c86b3"
-diamondUuid: "27d513b1-e4d5-89f8-99ba-154090fa9f55"
-uuid: "f244a01b-2fd4-86ae-820d-0d8d1a6f02ae"
-horo: 1
+coordinate: "vocabulary/availability · 7/descent · 728d1bcc"
+contentUuid: "a05aa80d-5ab1-53c7-ad6d-8d1abea0b025"
+diamondUuid: "17b92611-233b-8943-aa16-fb8263ee6537"
+uuid: "728d1bcc-112d-86a8-a6d3-432309145597"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 28
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "182c6380-b8ee-8589-8b5e-b36c5cdf55ac"
+  computationUuid: "230a0a8a-1b18-890f-80d3-39b7a283217e"
   stages:
     - stage: path
       stageUuid: "0e990616-b7a9-8915-a057-d28fb4e029fd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2d04573e-4c35-8199-b8c2-65adb657c7bf"
     - stage: horo
-      stageUuid: "fdec5bd2-24bd-8bd9-919e-525bf74f6681"
+      stageUuid: "d052d9f5-1a06-84a8-af50-967e793fa918"
     - stage: seal
-      stageUuid: "3eae9c6a-bd78-8c00-ad76-705353169283"
+      stageUuid: "7cac9a76-f639-8233-a021-8631ee06045e"
     - stage: uuid
-      stageUuid: "d701b367-57fc-85b3-afad-f47913d23796"
+      stageUuid: "10658df2-88ef-8de9-be12-4e4bb62f5842"
 version: 2
 ---
 # availability

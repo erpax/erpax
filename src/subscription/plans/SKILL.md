@@ -2,14 +2,14 @@
 name: plans
 description: "Use when defining or displaying the SaaS pricing-plan catalog — plan names, slugs, monthly/yearly prices, Stripe product/price IDs, feature-limit JSON, billing cycle, sort order. The super-admin-maintained plan catalog collection; public read, mutations locked to super-admin."
 atomPath: "subscription/plans"
-coordinate: "subscription/plans · 8/crest · d7c317a1"
-contentUuid: "7afe6668-98e7-5b82-b99c-82a5ccc96dd0"
-diamondUuid: "5edc5a6b-d27d-8f8f-b644-a0cf8234ff5b"
-uuid: "d7c317a1-e592-82c0-8cfa-64abb7ded06c"
-horo: 8
+coordinate: "subscription/plans · 7/descent · 0753c6ef"
+contentUuid: "91da2f9e-aaf7-5ef3-b5fe-354c307d47f4"
+diamondUuid: "82558712-04a6-8200-9162-e1b3ace681b1"
+uuid: "0753c6ef-54e2-8b00-a4b2-554f08388b8f"
+horo: 7
 typography:
   partition: subscription
-  bondDegree: 0
+  bondDegree: 20
 standards:
   - "IFRS IFRS-15 revenue-from-contracts-with-customers performance-obligation"
   - "ISO-4217:2015 currency-codes"
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "cbbafcc7-0f9b-8336-a697-ae45c2bafe0a"
+  computationUuid: "60b23d08-acf9-82bf-95bf-772fa8778491"
   stages:
     - stage: path
       stageUuid: "0a27e08f-44d1-8b6a-8887-be59f488e5a5"
@@ -29,13 +29,13 @@ signatures:
     - stage: boundary
       stageUuid: "4d23c417-e880-80a2-8b3a-e42484622e44"
     - stage: links
-      stageUuid: "5eab1604-a334-87b4-b168-5eba49707068"
+      stageUuid: "eeaa1644-35f8-842a-af04-300f7403ca44"
     - stage: horo
-      stageUuid: "6995beaf-b2f3-8f95-a38a-9eebb8dff067"
+      stageUuid: "ca1fb50d-0d28-803e-b471-c18e5427c561"
     - stage: seal
-      stageUuid: "0aeb1f21-7999-8ca0-b6de-4089d0261c27"
+      stageUuid: "eb544582-9ca1-8f9b-9259-e605fe395551"
     - stage: uuid
-      stageUuid: "9b61d404-f041-8ead-bf78-1a3a0385a1e5"
+      stageUuid: "2c0c688a-dc0e-8eea-8e81-cfcc642bd4e5"
 version: 2
 ---
 # subscription-plans

@@ -1,7 +1,35 @@
 ---
 name: tip
 description: "Use when the loop must say what to do next — the feed scanner that finds real gaps, scores them unblock / (cost × risk), and emits ONE executable trinity tip or refuses as vague."
-atomPath: self/improve/tip
+atomPath: "self/improve/tip"
+coordinate: "self/improve/tip · 2/share · fc84bf0f"
+contentUuid: "203f3b46-6e00-5642-a8ff-0c284a45a7a7"
+diamondUuid: "2752cc79-24e0-8d9f-a607-7d4be5b7713f"
+uuid: "fc84bf0f-fd61-86cd-8296-0e05725e668d"
+horo: 2
+typography:
+  partition: self
+  bondDegree: 27
+standards: []
+bindings: []
+signatures:
+  computationUuid: "1f78be00-932a-852d-976f-b9949459bdaa"
+  stages:
+    - stage: path
+      stageUuid: "b6b3a707-3ac0-8315-840f-df6302d5df71"
+    - stage: trinity
+      stageUuid: "d8896c14-46b1-8a45-8d96-5707f6ac9189"
+    - stage: boundary
+      stageUuid: "f9264f85-321a-8b60-bebe-8f98eee59983"
+    - stage: links
+      stageUuid: "9be8fe83-b098-8b9f-b814-183ade6554f8"
+    - stage: horo
+      stageUuid: "fd5eda50-f172-8208-847e-9dd14719a790"
+    - stage: seal
+      stageUuid: "8fecf9ea-376c-861c-9f20-f4672ef4d636"
+    - stage: uuid
+      stageUuid: "663e0034-60be-8408-8347-360526b0c472"
+version: 2
 ---
 # self/improve/tip — one tip, executable, or none
 

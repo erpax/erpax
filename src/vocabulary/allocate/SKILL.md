@@ -2,11 +2,11 @@
 name: allocate
 description: "Use when reasoning about allocate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/allocate"
-coordinate: "vocabulary/allocate · 8/crest · 83377588"
-contentUuid: "8fb6f6f1-8d73-5234-aeba-62735a8873ad"
-diamondUuid: "c7162644-5bd2-8372-bacd-eaaa41791946"
-uuid: "83377588-b9cc-81ef-934c-c13c116d7958"
-horo: 8
+coordinate: "vocabulary/allocate · 1/base · e4fdd2cd"
+contentUuid: "8ce82690-8e97-5fc0-a71e-6cebe3d0d5ea"
+diamondUuid: "9174638e-cc55-847f-986b-e855b83b7115"
+uuid: "e4fdd2cd-2c0d-84d1-9401-c29e16f5cc50"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "92acf31e-1ead-8a04-88ee-63d580524476"
+  computationUuid: "ee6f4eb3-46db-816b-9ba9-c27d8b8697a3"
   stages:
     - stage: path
       stageUuid: "9b2f0b3a-ed94-8b7a-b99d-ab89e1cdf8e6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6f8be033-3781-824a-820a-b826085e3740"
     - stage: horo
-      stageUuid: "4bcb241e-37eb-861a-9274-9502f66d86c7"
+      stageUuid: "0d2e4a90-ae4f-83f2-ba8c-4414ba4190ba"
     - stage: seal
-      stageUuid: "6e40deb2-e9c3-85d9-a988-f75707c15dfe"
+      stageUuid: "745bad19-9123-8056-adb3-98cbf299b56c"
     - stage: uuid
-      stageUuid: "c8c9aea4-4449-808d-b2b2-a66b46df1d31"
+      stageUuid: "bdc6422a-9774-85b1-ae36-a20c519e2684"
 version: 2
 ---
 # allocate

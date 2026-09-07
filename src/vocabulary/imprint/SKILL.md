@@ -2,11 +2,11 @@
 name: imprint
 description: "Use when reasoning about imprint as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/imprint"
-coordinate: "vocabulary/imprint · 7/descent · 5494689c"
-contentUuid: "41862010-521c-565e-886c-f43ff4b103aa"
-diamondUuid: "bdacbe4f-baca-858a-b7e4-04bda61c8a23"
-uuid: "5494689c-4bcb-8a17-902d-2a36b5f21f98"
-horo: 7
+coordinate: "vocabulary/imprint · 2/share · 2f3d2cac"
+contentUuid: "5c372e88-795b-5475-86e0-83e23d31862d"
+diamondUuid: "2ff690fa-e820-829a-ba8f-8247c6eea6e3"
+uuid: "2f3d2cac-9e4b-8507-8963-091809069151"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "92fd23ed-ba2f-8093-a73a-046da4db7061"
+  computationUuid: "fa3aa3af-0dd8-805e-a8a7-61b163951a79"
   stages:
     - stage: path
       stageUuid: "70ecaa75-3fa9-8738-870a-451c4674077f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0fbea4b4-bf8b-89c7-8932-6e46e64fa044"
     - stage: horo
-      stageUuid: "78e147f6-c867-8b26-b071-f7ae0b58ace2"
+      stageUuid: "a4531ba1-59ad-8067-957d-537512488d56"
     - stage: seal
-      stageUuid: "cf1d2653-34e6-8dcd-8ab7-3109f35d102a"
+      stageUuid: "1cc43fbe-6576-8863-aebc-70a93c617c33"
     - stage: uuid
-      stageUuid: "ac32486b-a402-850b-a17d-2ce27c697cc2"
+      stageUuid: "b9b6e8cc-2545-8afe-b407-f5b14ca17bfa"
 version: 2
 ---
 # imprint

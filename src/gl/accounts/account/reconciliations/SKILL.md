@@ -2,11 +2,11 @@
 name: reconciliations
 description: "Use when capturing or reviewing period-end reconciliation sign-off evidence — bank, GL-to-subledger, or intercompany — with preparer/reviewer segregation, adjustment aging, and closure check (difference = 0); SOX §404 + ISO-19011 controls testing. The account-reconciliations evidence-pack collection."
 atomPath: "gl/accounts/account/reconciliations"
-coordinate: "gl/accounts/account/reconciliations · 2/share · 0d0ac667"
-contentUuid: "e18b086b-0fc0-5c19-b730-d065b109a95c"
-diamondUuid: "29184ef3-a02a-81ca-994c-8e8f4f5fc567"
-uuid: "0d0ac667-5334-8b24-bac6-6a71ca66addb"
-horo: 2
+coordinate: "gl/accounts/account/reconciliations · 5/round · 2446f9fd"
+contentUuid: "62fa9bb3-45f3-5d1b-968e-76a07d48d03d"
+diamondUuid: "7b5a219d-08da-8b11-90a4-1179c10e023c"
+uuid: "2446f9fd-dc11-8d43-a8cf-14d178fed0e2"
+horo: 5
 typography:
   partition: gl
   bondDegree: 25
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "fb65d5d8-b84c-8d18-95b6-dd21f6ee8f85"
+  computationUuid: "c56b277c-9c5b-80ac-a97c-508503d7f161"
   stages:
     - stage: path
       stageUuid: "d03a1711-d99b-8264-a540-d84d7daf5b1e"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "0b45f078-3814-8355-b2de-1a386849c20a"
     - stage: horo
-      stageUuid: "da93e05a-c4c1-8e12-a16d-a912523e9701"
+      stageUuid: "80039084-9d96-868d-b321-1c288b782982"
     - stage: seal
       stageUuid: "e3ce2be4-a131-8db4-a85a-8bc5d8ecbef8"
     - stage: uuid
-      stageUuid: "5747b333-9cb7-8467-9a71-cb6faa805851"
+      stageUuid: "828cb476-c8a4-82f7-979e-5a60254793ee"
 version: 2
 ---
 # account-reconciliations

@@ -1,15 +1,15 @@
 ---
 name: identity
-description: "Use when working with erpax object identity or content-addressed UUIDs — computing a content-uuid (sha→uuidv8, RFC 9562 §5.8), the self-describing structured uuidv8 (slot + capability flags), categorical identity elements (currency/locale/country blanks), uuid-based RBAC sharing, deduplicated (\"dry\") file storage, or cross-instance merge/federation. The map to erpax's content-uuid framework; which version per case is [[uuid]]."
+description: "Use when working with erpax object identity or content-addressed UUIDs — computing a content-uuid (sha→uuidv8, RFC 9562 §5.8), the self-describing structured uuidv8 (slot + capability flags), categorical identity elements (currency/locale/country blanks), uuid-based RBAC sharing, deduplicated (\\\"dry\\\") file storage, or cross-instance merge/federation. The map to erpax's content-uuid framework; which version per case is [[uuid]]."
 atomPath: identity
-coordinate: "identity · 9/unity · 02e9ad53"
-contentUuid: "1a57a754-a9b1-5eef-9ed6-68ad44177f00"
-diamondUuid: "94912651-93c1-8f34-a349-61e12544095f"
-uuid: "02e9ad53-7229-8e3d-b4d4-3597e1cdb8ea"
+coordinate: "identity · 9/unity · 61e606b9"
+contentUuid: "4c3ad14d-2413-5832-89d2-165c1997b169"
+diamondUuid: "b6c6af68-6718-8ddc-93b2-0858a5fc5df0"
+uuid: "61e606b9-66da-8699-acec-a155975dff9b"
 horo: 9
 typography:
   partition: identity
-  bondDegree: 858
+  bondDegree: 832
 standards:
   - "ISO-3166-1`"
   - "ISO-3166-2"
@@ -21,22 +21,22 @@ standards:
   - "RFC-9562`"
 bindings: []
 signatures:
-  computationUuid: "d1ca2b89-922a-8e8f-a9f4-33f122ceeff8"
+  computationUuid: "2e168ecd-ae0c-8ef0-8ae1-4cda65b55b56"
   stages:
     - stage: path
       stageUuid: "b7748f0d-c736-8f14-995c-ebed12717689"
     - stage: trinity
       stageUuid: "c5b1b863-be6d-8cdc-a126-2f78b041cfb7"
     - stage: boundary
-      stageUuid: "30599018-9c48-849e-b391-1ff0fc1dcb66"
+      stageUuid: "16cb1850-19ef-82a8-871a-04df53bc2d88"
     - stage: links
-      stageUuid: "9ab3be22-c1f9-8260-9948-ee184ad30f34"
+      stageUuid: "751b36ba-5519-828a-bcd3-cfb1ac5683ff"
     - stage: horo
-      stageUuid: "db3cca20-e252-86f3-87cf-3d309a03ddff"
+      stageUuid: "cc44212d-d5f6-8afa-9e01-5a95e7fe9d20"
     - stage: seal
       stageUuid: "ad8c2b54-34a1-82b4-9d35-118d4e0be4c0"
     - stage: uuid
-      stageUuid: "fae9fb56-009b-8c21-b67b-94eb3390e31c"
+      stageUuid: "bd8624b0-4f63-82d9-a06e-795ff9f8fee5"
 version: 2
 ---
 # identity — content-addressed UUIDs (same content ⇒ same id ⇒ seamless merge)

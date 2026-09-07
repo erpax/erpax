@@ -2,11 +2,11 @@
 name: hobby
 description: "Use when reasoning about hobby as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/hobby"
-coordinate: "vocabulary/hobby · 7/descent · afd91791"
-contentUuid: "32ee4f33-f470-5e82-8cf3-e3fbc7933129"
-diamondUuid: "276c1de3-bb57-855c-8086-d4d299c5a972"
-uuid: "afd91791-58d5-851d-b617-38c784a05021"
-horo: 7
+coordinate: "vocabulary/hobby · 5/round · 5819fae0"
+contentUuid: "3f8f9f4e-2e4c-58b5-84fd-ace8e3cbbb69"
+diamondUuid: "c8b362da-c796-8886-b09c-67cebab1b0b7"
+uuid: "5819fae0-fbdc-8e0f-8db3-486bd76efb8b"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3e9f0c30-f2cd-8e5a-aa92-29b672d5420e"
+  computationUuid: "7508aa99-663a-8c72-b434-173ee9df3c24"
   stages:
     - stage: path
       stageUuid: "8dd65b95-c95f-8290-83a5-1dbd7f2c1b9c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5e376020-006f-8715-8ba4-dcfc3ffecc05"
     - stage: horo
-      stageUuid: "c235ce9e-c5ee-843f-beec-0263a4ff9396"
+      stageUuid: "3b764de7-2bb9-8724-9ca1-74b499eecdc9"
     - stage: seal
-      stageUuid: "28d45558-cfb0-8919-a7bc-82f5fbf3e2a6"
+      stageUuid: "1bda6372-9072-8c9b-a488-ffcf70831a4f"
     - stage: uuid
-      stageUuid: "39bf4375-aaad-88e6-bed4-0b854bf1ace4"
+      stageUuid: "f54de965-705a-86b3-b4b7-e548236c1bf6"
 version: 2
 ---
 # hobby

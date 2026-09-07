@@ -2,11 +2,11 @@
 name: listen
 description: "Use when reasoning about listen as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/listen"
-coordinate: "vocabulary/listen · 8/crest · e22ef965"
-contentUuid: "e849d267-34c6-5e29-9da0-06f8cb96586b"
-diamondUuid: "28dd7044-97a2-8d2f-bcba-6b9092ca90f8"
-uuid: "e22ef965-efbf-835b-a467-c14c51d3a3cc"
-horo: 8
+coordinate: "vocabulary/listen · 5/round · 780c39db"
+contentUuid: "821daa8a-5976-5263-bc7f-c7c6483342ec"
+diamondUuid: "f0151a95-80b7-8bba-a9aa-228aaf49f9e4"
+uuid: "780c39db-4501-8987-a900-349eb277a8f1"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "df58a15f-3285-8f4a-9dbf-35ffcf4477e1"
+  computationUuid: "c9ebceb4-a4a9-816b-b594-362030bfeec3"
   stages:
     - stage: path
       stageUuid: "cb62ea84-dd5d-84e0-be4b-2b1026d1544e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b9839b79-ca86-860d-9666-944f1c1121ce"
     - stage: horo
-      stageUuid: "4f4034d0-4efe-8626-a7fe-9622313931e2"
+      stageUuid: "4b8b081e-24de-867f-a918-0891d6ad7607"
     - stage: seal
-      stageUuid: "fe82be81-1925-82f4-9415-3c2fc16aecd0"
+      stageUuid: "fa50194e-bb5e-8d57-a3ae-b09ea04337e3"
     - stage: uuid
-      stageUuid: "101ebc31-6885-89af-aa74-564d93d207be"
+      stageUuid: "13270ea0-20ad-8636-9175-a90b67be1544"
 version: 2
 ---
 # listen

@@ -2,8 +2,56 @@
 name: direction
 description: "Use when a running agent must change course immediately — a parent publishes a content-uuid sealed direction and subscribed workers observe it on the same tick, with in-flight work holding an interrupt token that a publish invalidates. Promoted from a hyphenated sibling; 12 importers repointed. Run: tsx src/quantum/entanglement/direction/index.ts"
 atomPath: "quantum/entanglement/direction"
+coordinate: "quantum/entanglement/direction · 7/descent · 6ddbaa3a"
+contentUuid: "84454e11-80b7-5873-abe4-be31a17a53f1"
+diamondUuid: "fb26bb94-a7c8-8812-9ce3-427aa6cf415a"
+uuid: "6ddbaa3a-685f-841e-a7bf-bbe6cadd86cb"
+horo: 7
+typography:
+  partition: quantum
+  bondDegree: 21
+standards: []
+bindings: []
+signatures:
+  computationUuid: "a907603b-d073-83e8-9168-45ee69077dab"
+  stages:
+    - stage: path
+      stageUuid: "338e2a12-deb1-85a2-8162-62dd45a019e9"
+    - stage: trinity
+      stageUuid: "663e712d-3170-81d0-a0d5-25c347a8ef0b"
+    - stage: boundary
+      stageUuid: "25035513-6d9c-88fe-aa84-5b73b7aa6948"
+    - stage: links
+      stageUuid: "7a7c7d52-bf41-8f1a-8986-afaa62af43dd"
+    - stage: horo
+      stageUuid: "6794601d-59d1-8a87-bf6d-6e617b8dd910"
+    - stage: seal
+      stageUuid: "38ce4063-11ea-89e6-9c22-e20df9a536c1"
+    - stage: uuid
+      stageUuid: "5b005fe4-9a90-8316-a287-7e51627eb687"
+quantum:
+  superposition:
+    - collapse
+    - entanglement
+    - how
+    - law
+    - merge
+    - sti
+    - superposition
+  collapse:
+    - "Use when a running agent must change course immediately — a parent publishes a content-uuid sealed direction and subscribed workers observe it on the same tick, with in-flight work holding an interrupt token that a publish invalidates. Promoted from a hyphenated sibling; 12 importers repointed. Run: tsx src/quantum/entanglement/direction/index.ts"
+    - "a hyphen names the mechanism where the path should name the concept. Fold it to what the matter IS — and verify a move by running it, because the compiler will not tell you that a relative specifier changed meaning."
+  seal:
+    sandbox: false
+    receipt: false
+    pathFollow: true
+    canonicalRecord: true
+    analogResults: false
+    speechResults: false
+    computationUuid: "a907603b-d073-83e8-9168-45ee69077dab"
+    contentUuid: "84454e11-80b7-5873-abe4-be31a17a53f1"
+version: 2
 ---
-
 # direction — a course change that lands on the same tick
 
 A worker that only notices new instructions when it next resumes is not being directed, it is being queued. This atom collapses that gap: a coordinator publishes a **sealed** direction on a path, and every subscriber on that path observes it synchronously — no resume-wait. In-flight work carries an `InterruptToken`, and a publish bumps the generation so stale tokens are invalid rather than merely old.
@@ -31,3 +79,5 @@ One thing bit, and it is worth recording. A blanket rewrite of `./direction-bus`
 - **ISO/IEC 25010:2023 §5.6** — modularity: one concept, one addressable home.
 
 Composes: [[quantum]]/entanglement · [[agent]]/communication · [[rules]]/reference · [[law]].
+
+<sub>content-uuid `84454e11-80b7-5873-abe4-be31a17a53f1` · account `quantum/entanglement/direction` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

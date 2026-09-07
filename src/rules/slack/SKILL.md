@@ -3,13 +3,13 @@ name: slack
 description: "Use when reasoning about slack — Every gate in this corpus asks one question: **is this claim stronger than the evidence?** A -proved theorem listed as proven. A directory tree of folders that do not exist."
 atomPath: "rules/slack"
 coordinate: "rules/slack · 1/base · 2ed276ad"
-contentUuid: "6a33ef86-b931-59f8-b147-5deff275c368"
+contentUuid: "1be4f3a9-5c15-5844-9c50-a51f056f3c6b"
 diamondUuid: "aa1e1ba5-f852-839c-b499-5d66c12a14de"
 uuid: "2ed276ad-07e2-8a90-a802-b808ff0d49bf"
 horo: 1
 typography:
   partition: rules
-  bondDegree: 12
+  bondDegree: 9
 standards: []
 bindings: []
 signatures:

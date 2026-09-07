@@ -2,14 +2,14 @@
 name: orders
 description: "Use when booking shop-floor production — the per-phase per-worker execution leaf with an options array, derived double-entry totals, a derived horo lifecycle, the forward conveyor between routing phases, and the piece-rate wage; evolved from 2.05M rows of the etrima work_orders ledger."
 atomPath: "work/orders"
-coordinate: "work/orders · 7/descent · 82f9e9bb"
-contentUuid: "75788ad3-c534-520c-b78c-b1667720bebe"
-diamondUuid: "3fea2544-30c4-8fb4-8709-e16486869beb"
-uuid: "82f9e9bb-9d7f-8a5c-bc92-ed038b8916f9"
+coordinate: "work/orders · 7/descent · bfb22926"
+contentUuid: "e6774aec-17a1-56e4-9dc1-98ad5efedda3"
+diamondUuid: "5b03932a-4428-8046-a41d-c6e35c24aebe"
+uuid: "bfb22926-59ac-8695-9b93-c2936fe00bc9"
 horo: 7
 typography:
   partition: work
-  bondDegree: 96
+  bondDegree: 78
 standards:
   - "IFRS IAS-19 §11 short-term-employee-benefits piece-rate"
   - "IFRS IAS-2 §10 §12 cost-of-conversion (the piece-rate wage = direct labour)"
@@ -21,22 +21,22 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "a17ef847-772f-86ce-b8e2-8cdf4917712e"
+  computationUuid: "cacab067-d394-8170-b62d-6876ca7a7718"
   stages:
     - stage: path
       stageUuid: "e8875264-a571-8b60-aa3b-db8856a5a8c6"
     - stage: trinity
       stageUuid: "e382e574-0af9-8c5a-bbda-a3dfd0fda14c"
     - stage: boundary
-      stageUuid: "7d03b36f-6a42-8078-8680-e1f8db7b49fa"
+      stageUuid: "1abd6fea-80bc-8baa-8b21-3b40bdfa85cc"
     - stage: links
-      stageUuid: "8cf50482-b4bc-8d71-b02d-f06c231527eb"
+      stageUuid: "0b99d48c-782e-8f02-b499-6352e0def333"
     - stage: horo
-      stageUuid: "2f0bcc3d-c9c0-8552-803c-75cc04e1ab14"
+      stageUuid: "eaf32b1e-b996-8352-94f6-9d82a40ebc54"
     - stage: seal
       stageUuid: "35dd18e8-55e7-8642-b892-3c98ce797fc9"
     - stage: uuid
-      stageUuid: "7f34c1a6-db6a-86fc-9935-00745b15d3ca"
+      stageUuid: "f6df5d0a-5773-8b54-b4af-e61181eb7152"
 version: 2
 ---
 # Workorders

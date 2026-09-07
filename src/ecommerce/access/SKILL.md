@@ -3,13 +3,13 @@ name: access
 description: "Use when reasoning about access — , and answer the access question; the field-level pair narrows it to particular fields; the role helpers are what they all ask."
 atomPath: "ecommerce/access"
 coordinate: "ecommerce/access · 3/3 · bd81e629"
-contentUuid: "73764a95-e64c-538f-996b-b64326940787"
+contentUuid: "f40dbdf6-f333-539e-bc0b-a8294810faad"
 diamondUuid: "1d721aaf-0b05-8d42-8d7b-1a70fe31e3dd"
 uuid: "bd81e629-011e-8d35-b677-83f990c1500e"
 horo: 3
 typography:
   partition: ecommerce
-  bondDegree: 419
+  bondDegree: 416
 standards:
   - "NIST-INCITS-359-2012"
 bindings: []

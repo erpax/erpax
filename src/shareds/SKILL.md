@@ -2,18 +2,18 @@
 name: shareds
 description: "Use when reasoning about shareds — **Law — law: barrel re-export at ; trinity sealed for import purity.**"
 atomPath: shareds
-coordinate: "shareds · 4/weave · f898210e"
-contentUuid: "0e213203-cee8-5a50-995a-fca9666b1d15"
-diamondUuid: "61fe2259-4c41-8be1-873d-9f34a9617cb8"
-uuid: "f898210e-9a7d-81f7-a315-138589981b7e"
-horo: 4
+coordinate: "shareds · 5/round · a23b9104"
+contentUuid: "879b4020-b894-5993-bd02-a35984c19f68"
+diamondUuid: "973085a5-f17e-85b0-a734-4d5b36b2051c"
+uuid: "a23b9104-a031-8bea-88a3-0c171ebb8bdf"
+horo: 5
 typography:
   partition: shareds
   bondDegree: 3
 standards: []
 bindings: []
 signatures:
-  computationUuid: "654be8fb-bd24-8649-8bff-ffbfc1ad4c52"
+  computationUuid: "31c59de3-bdf2-889f-8c13-0d82d1a3c217"
   stages:
     - stage: path
       stageUuid: "915420f5-2f05-8af5-b6a4-6b1f0c1255f6"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "01ed0772-212b-8bdd-adb5-42693dbafe8f"
     - stage: horo
-      stageUuid: "1d4b2145-3cf7-8f0a-baa0-d3983e12385b"
+      stageUuid: "2b185c58-3297-863a-b43f-b697e1adc278"
     - stage: seal
       stageUuid: "ce524777-2c3e-8801-ba2b-9d8f80e798a6"
     - stage: uuid
-      stageUuid: "3a82d233-7a7d-874c-b6d8-4281f30709dd"
+      stageUuid: "50592f96-2cfd-899b-b616-6769a58ee0dc"
 version: 2
 ---
 # shareds

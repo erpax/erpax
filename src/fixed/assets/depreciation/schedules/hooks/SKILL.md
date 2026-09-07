@@ -3,13 +3,13 @@ name: hooks
 description: "Use when reasoning about hooks — books the period's charge when the schedule row is posted. The schedule is the record of what SHOULD be charged and when; letting the hook post it is what keeps the two from…"
 atomPath: "fixed/assets/depreciation/schedules/hooks"
 coordinate: "fixed/assets/depreciation/schedules/hooks · 9/unity · 0da110eb"
-contentUuid: "842bf796-4df4-556b-b64a-ef814854d7db"
+contentUuid: "e3bc13c1-9980-500a-a877-a6dca213cd9c"
 diamondUuid: "243486ff-4f2d-8883-b879-82cf262c1630"
 uuid: "0da110eb-2fe6-8702-8419-b84a39fa08b9"
 horo: 9
 typography:
   partition: fixed
-  bondDegree: 348
+  bondDegree: 312
 standards: []
 bindings: []
 signatures:

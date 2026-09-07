@@ -3,13 +3,13 @@ name: gate
 description: "Use when reasoning about gate — , and answer from the tenant's subscription; and encode what a lapsed account may still do — read its own history, write nothing new."
 atomPath: "subscription/gate"
 coordinate: "subscription/gate · 4/weave · ee351e81"
-contentUuid: "84484783-8fe1-5b55-b7b3-8fe8d26b22dd"
+contentUuid: "1f7cf64e-e047-5498-9d30-ab5d1475823a"
 diamondUuid: "806da3f6-b221-86d2-87f8-f0f8958ec66e"
 uuid: "ee351e81-acd0-823a-b9a8-d910d8b25a92"
 horo: 4
 typography:
   partition: subscription
-  bondDegree: 273
+  bondDegree: 270
 standards:
   - "IFRS IFRS-15 revenue-from-contracts-with-customers performance-obligation"
   - "NIST INCITS-359-2012 role-based-access-control"

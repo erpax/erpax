@@ -2,10 +2,10 @@
 name: plastic
 description: "Use when reasoning about plastic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/plastic"
-coordinate: "vocabulary/plastic · 7/descent · bb613061"
-contentUuid: "1e1df306-2aaf-55b9-9a5c-e9fe3e194037"
-diamondUuid: "53196652-4906-8719-88ff-1b5b6c1671fc"
-uuid: "bb613061-f213-8240-8b1b-146cf0d80206"
+coordinate: "vocabulary/plastic · 7/descent · 25a89350"
+contentUuid: "a2bb451c-3f10-5bfd-b165-9dd28a38c97e"
+diamondUuid: "04688c1e-9bfd-8a9c-8c67-4f4368700419"
+uuid: "25a89350-be98-8d3d-9d19-7228021ac2a8"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e36fef2c-9048-89df-9f26-1c38c5f65750"
+  computationUuid: "48f1409d-2839-80d8-a924-506540e4898f"
   stages:
     - stage: path
       stageUuid: "25f8a422-0364-8a76-baa3-e6ea4dc8a907"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5eec9e2c-32c0-8e98-810a-b607c801c95e"
     - stage: horo
-      stageUuid: "ec32731e-2dd1-8044-9733-d10fb3325f4a"
+      stageUuid: "a3280d42-0d37-8a1f-b7d7-52f551c4c62f"
     - stage: seal
-      stageUuid: "d958764e-5988-80e3-8162-afe48485ee6e"
+      stageUuid: "b44bbf3c-3de2-8eb8-8c1f-06f23dd9d0f3"
     - stage: uuid
-      stageUuid: "23b4a09d-0dc9-8977-bd71-8d128388c816"
+      stageUuid: "a4562501-0df7-8d76-aa8f-49d49244c234"
 version: 2
 ---
 # plastic

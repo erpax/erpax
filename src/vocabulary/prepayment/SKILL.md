@@ -2,10 +2,10 @@
 name: prepayment
 description: "Use when reasoning about prepayment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/prepayment"
-coordinate: "vocabulary/prepayment · 2/share · 6aabcd8d"
-contentUuid: "a78b5e93-be83-5343-ae75-a28d556af167"
-diamondUuid: "f542aed0-f36c-8b2c-a1ae-ab69fe5e3b73"
-uuid: "6aabcd8d-9a1a-8a1e-9f09-4e8d4b1aa1df"
+coordinate: "vocabulary/prepayment · 2/share · 6d1c0420"
+contentUuid: "2c295df0-fb1b-5d7a-8813-63451b640e97"
+diamondUuid: "2139af5a-775a-82e8-af4a-28badd515e23"
+uuid: "6d1c0420-559d-85fa-b7bc-e9d632b03877"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e9f1080e-265b-8339-a3f2-86244c768015"
+  computationUuid: "1b06aee4-8864-8aa8-9a0d-758b0e06b979"
   stages:
     - stage: path
       stageUuid: "af0f0186-442e-8dd4-99ae-af92630885a7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6bddaf98-ad3a-8359-b474-197e61ddbb67"
     - stage: horo
-      stageUuid: "16ce9146-5452-87af-8746-4af993605b95"
+      stageUuid: "a6c125d9-f519-8c98-9b81-bc4435bcfd64"
     - stage: seal
-      stageUuid: "f0b02d98-bd51-8928-9636-d5eb4ea08e4b"
+      stageUuid: "9e7f9fd6-3f4a-8bac-b7d3-f6b222e79cb3"
     - stage: uuid
-      stageUuid: "1c7c00e0-44c8-8746-8846-0db35346e348"
+      stageUuid: "500b0ce5-9bbc-8d57-ae11-3e6a3ca20ea8"
 version: 2
 ---
 # prepayment

@@ -2,11 +2,11 @@
 name: tenants
 description: "Use when creating or scoping a tenant — the GDPR-controller boundary for all access, localization cascade (BCP-47/ECMA-402), accounting framework (IFRS/GAAP/fiscal-year), reporting currency (ISO 4217), and integration secrets (Stripe, Resend, MCP). The multi-tenant root entity and access-scope boundary."
 atomPath: tenants
-coordinate: "tenants · 4/weave · c4763653"
-contentUuid: "329c2eca-01b7-5ab3-92d7-87e778f2f35b"
-diamondUuid: "4d35452c-c70b-8ae9-adf9-12082d5e2a9a"
-uuid: "c4763653-aa24-8aa5-a4ee-143a05d6b13e"
-horo: 4
+coordinate: "tenants · 1/base · f676b5d3"
+contentUuid: "b14161d3-7e7a-5e6c-8dab-069b9ff6f7cd"
+diamondUuid: "2453bf82-8fb5-8d80-876b-226e81d040b7"
+uuid: "f676b5d3-d1eb-8dbd-b1be-8e88c344f9d3"
+horo: 1
 typography:
   partition: tenants
   bondDegree: 23
@@ -18,6 +18,7 @@ standards:
   - "GDPR Art.30 records-of-processing-activities"
   - "GDPR Art.4(7) data-controller"
   - "IFRS IAS-1 presentation-of-financial-statements per-tenant-framework"
+  - "ISO-17442"
   - "ISO-17442-1"
   - "ISO-17442-1:2020 lei legal-entity-identifier"
   - "ISO-17442-1:2020 lei legal-entity-identifier`"
@@ -33,7 +34,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "11f549e4-ad16-8021-9972-1fd849e56053"
+  computationUuid: "a5056cc8-01c2-8375-bbaf-186d258ad4ba"
   stages:
     - stage: path
       stageUuid: "33e043c3-b509-89ba-a9b8-5d950475af94"
@@ -42,13 +43,13 @@ signatures:
     - stage: boundary
       stageUuid: "c78e179f-89e4-8046-8839-be66eb9c8ed8"
     - stage: links
-      stageUuid: "7320a1d0-eb4d-8c1f-98d8-906ef700a45c"
+      stageUuid: "39ec08ed-3cbe-8995-ae51-f5de4a5f5cce"
     - stage: horo
-      stageUuid: "9c4657de-6b11-8cc4-9be4-81080c86a10a"
+      stageUuid: "2d66eaee-21ed-81bb-8ab3-1f5b8f501eae"
     - stage: seal
       stageUuid: "f876a76d-ebcc-8b4d-af1e-988d265a722b"
     - stage: uuid
-      stageUuid: "f6dcb007-46ed-826d-9d81-75ded79d205f"
+      stageUuid: "983d2fa5-42c0-8338-ade1-5e9ee9c189cb"
 version: 2
 ---
 # tenants

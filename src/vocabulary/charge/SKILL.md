@@ -2,11 +2,11 @@
 name: charge
 description: "Use when reasoning about charge as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/charge"
-coordinate: "vocabulary/charge · 1/base · 49cbbf0d"
-contentUuid: "546a342a-c90f-54da-b6eb-ec490cf257fc"
-diamondUuid: "3c9308b9-bfb7-8d8e-aa77-687b2e37d6b7"
-uuid: "49cbbf0d-94aa-83f0-8f0b-9a1cef7b6b7e"
-horo: 1
+coordinate: "vocabulary/charge · 7/descent · c55a2253"
+contentUuid: "3ff9fb8e-5dd6-5a41-b1c2-a68a378b88eb"
+diamondUuid: "2b772c62-81f6-81f0-a112-44578e5abda0"
+uuid: "c55a2253-61fe-86dc-a05f-3f527edd3e24"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "36e2f47a-d99c-84a0-bb1f-0032acff0eec"
+  computationUuid: "85214b6f-998c-87d0-8bfd-18c47b203026"
   stages:
     - stage: path
       stageUuid: "57ab9dde-3fbd-88c1-815c-14ac10968652"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0585ea03-d8a8-8068-865f-93feef77f521"
     - stage: horo
-      stageUuid: "feb08bb1-327f-8932-b1fd-31e32d4b3bbf"
+      stageUuid: "8101ce0d-eed4-82a5-9fa1-1eb6e019e97d"
     - stage: seal
-      stageUuid: "fa255200-d672-8499-a1cf-6ae4c0fdeb63"
+      stageUuid: "9d9a1f38-4fa7-8017-9b4b-ffd451e9f3ff"
     - stage: uuid
-      stageUuid: "59027556-84cb-845c-aae6-3a29caaa69de"
+      stageUuid: "4bc15217-f11a-8346-9bd0-c4fb3c6949bb"
 version: 2
 ---
 # charge

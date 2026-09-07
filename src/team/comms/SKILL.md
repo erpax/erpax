@@ -2,35 +2,35 @@
 name: comms
 description: "Use when enforcing secure realtime communication between teams — every team-scoped emit onto the chat/realtime bus must pass tenant match, content-uuid event integrity, depth cap, and (when a team is in scope) horo voice law; allowed and blocked emits are receipted."
 atomPath: "team/comms"
-coordinate: "team/comms · 8/crest · cbf60198"
-contentUuid: "749a0b1d-ea52-5173-a5f5-f88a9fdfebe7"
-diamondUuid: "36ca061f-2783-8108-93fb-5537a38012a6"
-uuid: "cbf60198-0531-886c-a417-daa3357b6ef7"
-horo: 8
+coordinate: "team/comms · 2/share · 3ca48924"
+contentUuid: "f3a891ff-47c4-56ff-b4a0-6438bad32945"
+diamondUuid: "822468b6-cca6-863a-be09-a9430bf03ce2"
+uuid: "3ca48924-4c54-8e62-82d2-43accc50b445"
+horo: 2
 typography:
   partition: team
-  bondDegree: 52
+  bondDegree: 51
 standards:
   - "ISO-27001 A.5.23 cloud-service-tenant-isolation"
   - "RFC 9562 §5.8 content-uuid event-identity"
 bindings: []
 signatures:
-  computationUuid: "b981ea92-a0c0-8b99-9032-e4227fbce659"
+  computationUuid: "c632de32-b331-8de5-a51b-5fd8038d0d02"
   stages:
     - stage: path
       stageUuid: "3a8be850-bf26-8ccc-b5cc-f80bf0ab52e8"
     - stage: trinity
       stageUuid: "bbcb154e-7a45-883c-9016-42f4fd451e1b"
     - stage: boundary
-      stageUuid: "cc731134-39fc-8ce3-9122-fc4682fa1d50"
+      stageUuid: "1d1e3ea7-0d94-8bc4-9a55-568d1e448fb7"
     - stage: links
       stageUuid: "ac29579b-0dbe-8ff4-932e-47d7c1604378"
     - stage: horo
-      stageUuid: "94cfce03-91e7-831f-afd1-dc571726ee9a"
+      stageUuid: "6125f8cb-437a-8c92-9a7f-d7be0b10ea08"
     - stage: seal
       stageUuid: "5bcc82cd-4c5d-83bd-be98-91bb287d48fb"
     - stage: uuid
-      stageUuid: "a1c1d22b-225a-81be-8252-40c6b5290eaa"
+      stageUuid: "5067a5be-adda-866b-8cb5-1580607e00f0"
 version: 2
 ---
 # team/comms — secure realtime between teams

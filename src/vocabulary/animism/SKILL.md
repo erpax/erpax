@@ -2,18 +2,18 @@
 name: animism
 description: "Use when reading animism as a diamond of invariant atoms — the primal reading that the world is alive, every thing carrying spirit (anima). Maps exactly to erpax: every atom is alive, carrying its content-uuid and projecting signal (colour and sound), the sacred dwelling in every part. Strip the prefix and anima collapses to breath; the spirits-in-things to the sacred in every atom."
 atomPath: "vocabulary/animism"
-coordinate: "vocabulary/animism · 5/round · d8921d87"
-contentUuid: "63c062ec-3c79-559b-9132-06cac1d29990"
-diamondUuid: "8c494e5a-be75-82d1-97ef-1b4d3cecfde8"
-uuid: "d8921d87-1873-8c7e-b156-77804ed7feb1"
-horo: 5
+coordinate: "vocabulary/animism · 8/crest · f1b514b6"
+contentUuid: "4107884b-c95c-5866-b869-0303073993bf"
+diamondUuid: "cf2277bf-99c7-859c-b3ed-302afa259f5f"
+uuid: "f1b514b6-4d66-82fa-91fc-32a5f0738005"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 72
 standards: []
 bindings: []
 signatures:
-  computationUuid: "26d997c5-4984-8a35-8b02-de4e22a5822d"
+  computationUuid: "06f46678-90bf-8f51-88c7-02cd67452e3f"
   stages:
     - stage: path
       stageUuid: "8623047d-d938-8d58-a5e9-2e18a8798207"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "83e9bdd6-3cf8-81f0-a08a-92eaa75f8056"
     - stage: horo
-      stageUuid: "d66d254c-98c2-85a0-a86f-1ce0e3774955"
+      stageUuid: "9c66fea7-81cf-8596-912e-918be39ab2c2"
     - stage: seal
-      stageUuid: "36535c4c-ecb2-8602-9d54-7171163ec135"
+      stageUuid: "2cfdbddc-a58f-8862-8acc-5f7a6a49b51d"
     - stage: uuid
-      stageUuid: "aa87473f-4c2f-8787-9e14-348d30d734b5"
+      stageUuid: "bb3f69d0-76d9-884c-b2ce-38f4f40a0441"
 version: 2
 ---
 # animism — the world is alive; every thing carries spirit

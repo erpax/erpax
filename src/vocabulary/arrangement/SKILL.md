@@ -2,10 +2,10 @@
 name: arrangement
 description: "Use when reasoning about arrangement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/arrangement"
-coordinate: "vocabulary/arrangement · 8/crest · a517014a"
-contentUuid: "00b76d22-ce09-593e-8f92-3b2a5d8426db"
-diamondUuid: "ac057089-2373-8efd-9e75-87b4b7985b94"
-uuid: "a517014a-d238-8590-95df-a140617a2011"
+coordinate: "vocabulary/arrangement · 8/crest · 87e3ecbe"
+contentUuid: "b1d729ac-473e-5282-a77d-e5f2aa164ced"
+diamondUuid: "3b1c67f5-d6be-8afc-89de-477e5dd2869f"
+uuid: "87e3ecbe-bcbf-8c17-aa34-452417b827aa"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "85b12b64-9dff-8b71-be88-8ac408829f8d"
+  computationUuid: "c4796562-97be-8fbc-91f0-514b60e3d326"
   stages:
     - stage: path
       stageUuid: "07e44418-0d57-88e9-91d9-980cb8d0b080"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9b4a6886-7e4c-8e22-9e6a-da85235d9360"
     - stage: horo
-      stageUuid: "f9150619-57b4-811b-ba07-e814d64ecb3a"
+      stageUuid: "d8a83b0e-fc14-8540-97c4-5a5ca229e048"
     - stage: seal
-      stageUuid: "94829930-45a8-8d00-9469-86487f1a4208"
+      stageUuid: "e4d7a039-44e8-8f5b-8d3f-9ff2707e3b55"
     - stage: uuid
-      stageUuid: "83dd38a5-303f-83ac-94d9-65e75e99dc5d"
+      stageUuid: "2b1d9e98-f4c2-8c47-835a-49031cf69881"
 version: 2
 ---
 # arrangement

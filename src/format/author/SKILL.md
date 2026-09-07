@@ -1,15 +1,15 @@
 ---
 name: author
-description: "Use when reasoning about author — turns populated authors into the sentence a reader expects: one is itself, two become \"A and B\", and three or more become \"A, B and C\" — no serial comma, decided once here rather…"
+description: "Use when reasoning about author — turns populated authors into the sentence a reader expects: one is itself, two become \\\"A and B\\\", and three or more become \\\"A, B and C\\\" — no serial comma, decided once here rather…"
 atomPath: "format/author"
 coordinate: "format/author · 8/crest · 21f470a7"
-contentUuid: "9a6fd725-c6e3-5523-9f25-08e29686b64e"
+contentUuid: "623623d6-7205-5556-86d6-a4b12f7e4eb4"
 diamondUuid: "69da517f-a295-8e7b-89bf-a0abeb9d7d8e"
 uuid: "21f470a7-5a44-8285-98b2-cac828f074ee"
 horo: 8
 typography:
   partition: format
-  bondDegree: 9
+  bondDegree: 6
 standards: []
 bindings: []
 signatures:

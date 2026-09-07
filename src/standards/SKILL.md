@@ -2,14 +2,14 @@
 name: standards
 description: "Use when registering, citing, superseding or querying any published standard (IFRS, ISO, W3C, RFC, EU Directive, etc.) against a tenant — conflict graph, supersession trail, per-module citation index, per-tenant adoption status. The live standards-registry collection backing the erpax.standards.* MCP tool family."
 atomPath: standards
-coordinate: "standards · 8/crest · 2ac0b569"
-contentUuid: "cfedae76-2d4c-5ddd-975e-446738a540fb"
-diamondUuid: "83f3f0ff-8af1-8dea-94e5-e671bf832a09"
-uuid: "2ac0b569-2453-84c4-bc43-1a1fd8f69a04"
+coordinate: "standards · 8/crest · b36da48a"
+contentUuid: "39b61a2e-6b5a-52f1-8099-fd4ca4bbbbba"
+diamondUuid: "db45fa62-a29c-852a-aeb0-dc68581b351a"
+uuid: "b36da48a-91b9-8ae7-94be-6c4da99d596e"
 horo: 8
 typography:
   partition: standards
-  bondDegree: 87
+  bondDegree: 176
 standards:
   - "ISO 19011:2018 §6.4.6 audit-evidence (citation changes audit-trailed)"
   - "ISO 19011:2018 §6.4.6 audit-evidence (citation changes audit-trailed)`"
@@ -17,7 +17,6 @@ standards:
   - "ISO/IEC 25010:2023 §5.1 functional-completeness"
   - "ISO/IEC 25010:2023 §5.1 functional-completeness`"
   - "ISO/IEC-25010:2023"
-  - "ISO/IEC-29119"
   - "RFC-8259"
   - "W3C JSON-LD 1.1 (citation as live linked-data)"
   - "W3C JSON-LD 1.1 (citation as live linked-data)`"
@@ -27,48 +26,23 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "6b3ab21a-a34b-8806-bc9b-173f9925f5c6"
+  computationUuid: "f9d15c47-e916-8c53-b6ec-3a7cc3d67fe2"
   stages:
     - stage: path
       stageUuid: "e4d21269-1c37-8fe4-85da-1900af3645f0"
     - stage: trinity
       stageUuid: "4d6b8103-7297-8bd1-a011-ba1bc9680168"
     - stage: boundary
-      stageUuid: "f27e4714-4ec5-8eec-861d-2fe000a74263"
+      stageUuid: "a19fb2b1-9111-829f-96ce-f1e20cda15d1"
     - stage: links
-      stageUuid: "ce14a10d-8dd0-8830-b2ef-cf5cffbeec8e"
+      stageUuid: "0daa572c-fc73-8775-bf00-7b0c6a3238f8"
     - stage: horo
-      stageUuid: "6260d3e9-c11a-80a3-bf9a-f26fa8352ab0"
+      stageUuid: "8df09f58-8cb2-8001-878c-23eb68828180"
     - stage: seal
       stageUuid: "47197e8b-0e61-8144-80ca-7730bd2eb282"
     - stage: uuid
-      stageUuid: "20b0ead5-cb17-87e9-a73f-ba4dbe60fbdb"
+      stageUuid: "fe1998ee-5d7e-8658-9967-30fa9c0bb670"
 version: 2
-neighbors:
-  wikilink:
-    - "[[iso/13616]]"
-    - "[[iso/14289]]"
-    - "[[iso/19005]]"
-    - "[[iso/19011]]"
-    - "[[iso/20022]]"
-    - "[[iso/27002]]"
-    - "[[iso/3166/1]]"
-    - "[[iso/3166/2]]"
-    - "[[iso/4217]]"
-    - "[[iso/8601]]"
-    - "[[iso/9362]]"
-    - "[[rfc/3986]]"
-    - "[[rfc/6585]]"
-    - "[[rfc/9110]]"
-    - "[[ifrs/15]]"
-    - "[[ifrs/16]]"
-    - "[[incoterms/2020]]"
-    - "[[peppol/bis/3]]"
-    - "[[nist/incits/359]]"
-    - "[[etsi/en/319/142]]"
-    - "[[oecd/tpg]]"
-    - "[[un/cefact/5305]]"
-    - "[[eu/ai/act]]"
 ---
 # standards
 

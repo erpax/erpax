@@ -2,11 +2,11 @@
 name: left
 description: "Use when reasoning about left as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/left"
-coordinate: "vocabulary/left · 7/descent · ea45bec8"
-contentUuid: "87f10290-0419-5cb5-bc56-526f5225f4e0"
-diamondUuid: "c1e0a853-b4da-82d4-bb19-8459c796ac87"
-uuid: "ea45bec8-e76f-8c1e-8c64-0464023d451b"
-horo: 7
+coordinate: "vocabulary/left · 1/base · db348d88"
+contentUuid: "59b6da5b-c024-5e86-ad71-0b812d39b5cc"
+diamondUuid: "9a8f6fb9-6626-8edf-ae7b-1e2f0e54f145"
+uuid: "db348d88-59a9-83ee-97d0-ae8c1f63fd07"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ed9b012a-8ffd-843b-b67f-749facafa6b0"
+  computationUuid: "c6d64198-5874-81dd-9c79-224474631508"
   stages:
     - stage: path
       stageUuid: "90a73fcc-796d-8b9d-87c9-53702f14dfd4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f6c7ce84-9af1-81eb-bdb5-cb43006d2e33"
     - stage: horo
-      stageUuid: "058bb8de-fd85-84d8-99ea-e9ff8b7b5da1"
+      stageUuid: "2aa4eed9-7588-8f2b-9697-75a5b1287484"
     - stage: seal
-      stageUuid: "13388c26-c6f6-86e8-850c-cc9fe8d0dc5d"
+      stageUuid: "d8336cc1-384e-8d55-b60f-773d9484f425"
     - stage: uuid
-      stageUuid: "d2b7fe72-a606-8934-9cd8-e99652fc1053"
+      stageUuid: "95ac30ba-cbac-8f48-b621-ad8df015009b"
 version: 2
 ---
 # left

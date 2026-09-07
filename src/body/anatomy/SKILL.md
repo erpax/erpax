@@ -2,10 +2,10 @@
 name: anatomy
 description: "Use when reasoning about anatomy as an anatomical part of [[body]] — vocabulary pivot to @/anatomy; nested not duplicated."
 atomPath: "body/anatomy"
-coordinate: "body/anatomy · 8/crest · abad0576"
-contentUuid: "b4db686d-e473-51e2-8f07-a8a803fdfbfc"
-diamondUuid: "defc3dba-4cd7-84ae-aa92-f22d10e61f88"
-uuid: "abad0576-0a14-85bb-999d-a389595649b6"
+coordinate: "body/anatomy · 8/crest · 9907c78e"
+contentUuid: "a48c08fe-2da7-50e7-ac87-f6fbc666c3e7"
+diamondUuid: "284fcd68-039f-8b6e-83c6-219998b0e01f"
+uuid: "9907c78e-0579-8c86-98f9-a8eab24de7cf"
 horo: 8
 typography:
   partition: body
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fde1424b-cfa6-847c-bb9f-786a93322c11"
+  computationUuid: "da99fafa-b35b-8bb8-8e74-b40576d9012d"
   stages:
     - stage: path
       stageUuid: "f3b8795f-cddf-8a3e-848c-a08f5719d5d4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f3ebc296-54f8-846e-8491-01f2097c2e37"
     - stage: horo
-      stageUuid: "f2410f14-dec8-8928-aae7-e0bc61a57c93"
+      stageUuid: "cc6e4ab2-c7c7-84f0-bfc5-8adb7efc680f"
     - stage: seal
       stageUuid: "1779a5ab-59e9-870b-86ba-adfbabf82b0b"
     - stage: uuid
-      stageUuid: "95411544-9c58-82e4-aaea-49b55a4e263c"
+      stageUuid: "804d6a05-0e8b-8a0b-8fb3-e4092dddf566"
 version: 2
 ---
 # body/anatomy — anatomical part

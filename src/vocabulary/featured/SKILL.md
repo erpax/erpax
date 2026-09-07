@@ -2,11 +2,11 @@
 name: featured
 description: "Use when reasoning about featured as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/featured"
-coordinate: "vocabulary/featured · 2/share · e76c8796"
-contentUuid: "a4b38e3c-0582-5c8f-84ed-3a9d87d7d5f1"
-diamondUuid: "1d3dedef-c425-89a4-864a-1b360c4a2b38"
-uuid: "e76c8796-bd74-8674-95ad-06879450f8f7"
-horo: 2
+coordinate: "vocabulary/featured · 8/crest · 0e3bc982"
+contentUuid: "92da5ac4-ee3f-5d75-a871-15c444164623"
+diamondUuid: "0abb97b8-828f-8c07-a7c1-339a2dc5ae0e"
+uuid: "0e3bc982-aa10-864c-b08f-28293d2da475"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cbfe4b7d-977f-8e06-8880-e9da49172c21"
+  computationUuid: "af434866-a535-873e-a0c8-afdef69d860a"
   stages:
     - stage: path
       stageUuid: "ce9badc8-573b-8a5a-ae58-381aee6f81a0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "89039a35-0f4d-8268-aa64-d880ac170582"
     - stage: horo
-      stageUuid: "51e95155-7049-8d12-944a-e7fb305d7c85"
+      stageUuid: "b37156d5-ffb0-8b92-9a78-a105a710ac7e"
     - stage: seal
-      stageUuid: "c4c4e01e-fd99-8c07-b730-04b1b5940927"
+      stageUuid: "80084f8b-aa86-817b-9f63-78e413375dfd"
     - stage: uuid
-      stageUuid: "974b2c1f-b2a4-8e0b-8422-0ca849c31da1"
+      stageUuid: "a99b2080-c103-853a-a506-99d838bb53fe"
 version: 2
 ---
 # featured

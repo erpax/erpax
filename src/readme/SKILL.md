@@ -2,21 +2,21 @@
 name: readme
 description: "Use when the repository README is generated, verified, or reasoned about — the README is a diamond (a content-addressed projection of the live tree, regenerable with zero entropy, drift fails closed) and its typography IS the diamond projected (facets = the closed horo ring laid out in measure-walk order, so reading the README is reading the crystal). Derived from the tree (matrix · fs walk · package.json), never hand-typed."
 atomPath: readme
-coordinate: "readme · 1/base · c1cb1f00"
-contentUuid: "374e8ca0-96f5-566f-880b-fb0e7d8e2802"
-diamondUuid: "fc016a38-33b1-8b55-90ee-410e3d3866ca"
-uuid: "c1cb1f00-7661-8d6d-8552-9f5b130e9452"
-horo: 1
+coordinate: "readme · 7/descent · 4dede282"
+contentUuid: "b0612acf-85c1-5f61-aae1-102cdfccefcb"
+diamondUuid: "791094cf-c8b7-812d-99c8-dbbecf55425c"
+uuid: "4dede282-0dad-8325-b8e0-0b0df94a33c4"
+horo: 7
 typography:
   partition: readme
-  bondDegree: 123
+  bondDegree: 91
 standards:
   - "RFC 9562 §5.8 (the README's own content-uuid is a v8 content-uuid)"
   - "RFC 9562 §5.8 (the README's own content-uuid is a v8 content-uuid)`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "7a19274a-2db9-8edc-bd84-933c5f06a62b"
+  computationUuid: "a651dacc-985e-8938-bf86-f68d26038ac2"
   stages:
     - stage: path
       stageUuid: "dc681a92-56b1-8f59-b232-67e611a4affd"
@@ -25,13 +25,13 @@ signatures:
     - stage: boundary
       stageUuid: "8a678cf7-d196-80e2-aed3-da0c1ad71d5e"
     - stage: links
-      stageUuid: "c332faea-643b-8893-bc36-f71877aebdd8"
+      stageUuid: "3620bb3c-8cd4-81d1-9cf6-6e3f020096dd"
     - stage: horo
-      stageUuid: "c58373d0-abda-88b7-b1fb-bd1ec6b68740"
+      stageUuid: "dac8a868-3bc4-856d-99dc-c36432bb05fe"
     - stage: seal
       stageUuid: "164c37b8-34fa-8582-861b-07bd004fd6ce"
     - stage: uuid
-      stageUuid: "f4f99f40-a9c3-8d1b-967f-949d49070094"
+      stageUuid: "709169d1-5fc6-8440-8ad8-3d7f29ebe3a0"
 version: 2
 ---
 # readme — the README is a diamond; its typography is the diamond projected (under [[self/generate]] · outward coil)

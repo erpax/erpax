@@ -3,13 +3,13 @@ name: provider
 description: "Use when reasoning about provider — The browser half of the ecommerce plugin. Two values decide what it can do, and both may be absent: the tenant's Stripe publishable key and the server URL."
 atomPath: "ecommerce/client/provider"
 coordinate: "ecommerce/client/provider · 4/weave · 951e4886"
-contentUuid: "6ae36e89-d0e7-5010-886e-374128341fb4"
+contentUuid: "b6686ec3-d229-5e11-85a1-24516efc12c7"
 diamondUuid: "9ab05cb8-b5ac-8988-b121-6e6c96f808cd"
 uuid: "951e4886-b9c1-8f82-b911-1d259996e946"
 horo: 4
 typography:
   partition: ecommerce
-  bondDegree: 31
+  bondDegree: 25
 standards: []
 bindings: []
 signatures:

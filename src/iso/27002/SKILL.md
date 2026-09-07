@@ -2,14 +2,14 @@
 name: "27002"
 description: Use when implementing or referencing ISO 27002 — Information security controls.
 atomPath: "iso/27002"
-coordinate: "iso/27002 · 5/round · 7b374fea"
-contentUuid: "bc5359c0-ba8b-5fc0-bcb2-c7914251b0ae"
-diamondUuid: "dc1535f8-9210-8874-a795-9f90402d9cdc"
-uuid: "7b374fea-5136-80d6-a278-b740f63ac52f"
-horo: 5
+coordinate: "iso/27002 · 8/crest · 98aa4b9c"
+contentUuid: "1a1e6309-8a64-58e7-b92d-5d01c35e09e4"
+diamondUuid: "a83b9835-239f-85e3-a7de-8e4c4dd68de6"
+uuid: "98aa4b9c-f075-8b8d-8035-55905bb5f465"
+horo: 8
 typography:
   partition: iso
-  bondDegree: 0
+  bondDegree: 8
 standards:
   - "ISO-27001:2022 isms-annex-a-controls"
   - "ISO-27001:2022 isms-annex-a-controls`"
@@ -17,10 +17,11 @@ standards:
   - "ISO-27002:2022 information-security-controls"
   - "ISO-27002:2022 information-security-controls`"
   - "ISO/IEC-27002:2022"
+  - "ISO/IEC-29119"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "373c7bf2-da7d-8ae1-8226-dd7bffc165d4"
+  computationUuid: "8ba00f5c-96de-80be-8ed5-3e82efa22ece"
   stages:
     - stage: path
       stageUuid: "c75f7176-6bcb-807e-90c5-e2348d487758"
@@ -29,13 +30,13 @@ signatures:
     - stage: boundary
       stageUuid: "7911368b-576f-86de-aab8-43bbb043d03c"
     - stage: links
-      stageUuid: "42882dd4-ce9c-87f5-af1c-9c14882860c3"
+      stageUuid: "789c778f-a1eb-8e5f-9fa9-163378ce228f"
     - stage: horo
-      stageUuid: "c1776afe-4741-8874-80d5-4fb5be60ad8b"
+      stageUuid: "fb7aec9e-6956-821a-8fdf-e652429cf57b"
     - stage: seal
-      stageUuid: "990774e8-5fb9-88ca-a5e5-5a3a53aa5b59"
+      stageUuid: "078ca16b-83d4-8278-a827-79dea5518265"
     - stage: uuid
-      stageUuid: "9493a55d-f077-88dc-84f0-94c0b16699a8"
+      stageUuid: "bac8c712-85b3-8995-88c0-728df8a948cd"
 version: 2
 ---
 # ISO 27002 — Information security controls

@@ -2,19 +2,19 @@
 name: size
 description: "Use when reasoning about size — A standardized size of a product or creative work, specified either through a simple textual string (for example 'XL', '32Wx34L'), a QuantitativeValue with a unitCode, or a compreh"
 atomPath: size
-coordinate: "size · 7/descent · 6747bc03"
-contentUuid: "418bca5f-ecd8-59a4-8969-fe8323dce701"
-diamondUuid: "82cd07ad-8727-89b6-93e5-dc652d73b9e2"
-uuid: "6747bc03-0caf-841c-bbcf-26bde273b5a5"
-horo: 7
+coordinate: "size · 4/weave · c44d450c"
+contentUuid: "c1667b89-0416-57d0-bccb-90c4ab738659"
+diamondUuid: "47f94352-f293-8a89-b0d5-fd4c4b5c806a"
+uuid: "c44d450c-df7c-86f7-9ec3-41c464107d0f"
+horo: 4
 typography:
   partition: size
-  bondDegree: 58
+  bondDegree: 60
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "099fc1cb-6bc8-8035-8a7e-36cc3d5b6d44"
+  computationUuid: "222717a6-ac8c-8026-8a15-d803c7d38d45"
   stages:
     - stage: path
       stageUuid: "8eb42bb2-c568-8662-a0eb-9d03ef50383a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5a17d84f-5954-8c28-917e-4f50d3fa331c"
     - stage: horo
-      stageUuid: "64039303-0d42-8b57-b27e-a6aee164f073"
+      stageUuid: "e720076f-f8a6-855c-b367-ad3c45ada54c"
     - stage: seal
       stageUuid: "7cbbc868-377c-82e7-8821-52c045200a9e"
     - stage: uuid
-      stageUuid: "a3464292-ec3e-8381-af7c-0bb38fb5baaf"
+      stageUuid: "a75b6588-d55c-812c-ad20-122171eb36b1"
 version: 2
 ---
 # size

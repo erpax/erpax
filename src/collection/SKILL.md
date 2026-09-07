@@ -2,19 +2,20 @@
 name: collection
 description: "Use when reasoning about collection — A collection of items, e.g. creative works or products."
 atomPath: collection
-coordinate: "collection · 2/share · 7b991ff7"
-contentUuid: "59662adb-1c83-51d2-97d9-73cddf134aa2"
-diamondUuid: "c86529a3-f9cb-877e-a839-c9e1ca678869"
-uuid: "7b991ff7-2892-883d-8a48-32475c5c8239"
+coordinate: "collection · 2/share · 910a3482"
+contentUuid: "4a5fc3bf-cf37-5c58-97a3-24e8f7a73c6e"
+diamondUuid: "baca3e31-6880-8c19-85ee-f407c5214770"
+uuid: "910a3482-183a-8480-a5f2-5b4aa3afcd01"
 horo: 2
 typography:
   partition: collection
-  bondDegree: 0
+  bondDegree: 41
 standards:
+  - "W3C-HTML5"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0b2cce2b-cc46-83ac-86ca-20998aecd7af"
+  computationUuid: "a053a774-76ea-80df-ace0-2644e40ad26c"
   stages:
     - stage: path
       stageUuid: "314d5d2c-92d1-8199-8fa1-ebda5fbefe75"
@@ -25,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "ff92c6e3-4892-8271-bce6-a4f9d0f512c1"
     - stage: horo
-      stageUuid: "15547387-bba3-877a-a904-11de7446bea2"
+      stageUuid: "5047a9ab-adfa-85b0-8c5a-df49dbadc32c"
     - stage: seal
-      stageUuid: "3aadbc71-3159-8360-ad67-0470b0dafb0f"
+      stageUuid: "23f132bf-97c9-8acb-b75d-9fdab00aee1f"
     - stage: uuid
-      stageUuid: "3d02bd05-46bf-8352-8136-58af4dbb92c4"
+      stageUuid: "f752f77f-a465-81f1-814b-578a5b4bdbda"
 version: 2
 ---
 # collection

@@ -2,11 +2,11 @@
 name: acquire
 description: "Use when reasoning about acquire as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/acquire"
-coordinate: "vocabulary/acquire · 7/descent · eefc6218"
-contentUuid: "4d7cc755-fa1c-5cc4-95af-6561658ffa4d"
-diamondUuid: "89121f5e-c11f-87c5-8694-c9619c0d9595"
-uuid: "eefc6218-58e6-8235-8b78-75f968589ff9"
-horo: 7
+coordinate: "vocabulary/acquire · 2/share · efe2ef62"
+contentUuid: "82a11a08-9bbb-537f-bf9e-344efc1cd2bf"
+diamondUuid: "d5f83c71-08ff-8203-abc8-2a8a4747c8ee"
+uuid: "efe2ef62-8ce4-8108-8e50-afc7bbd09dea"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7b1fd8fb-aa9e-8565-90aa-7909ec43324f"
+  computationUuid: "4c17d78f-705d-8f8d-809f-24f349f0c2ec"
   stages:
     - stage: path
       stageUuid: "e38384fe-d498-841b-b89d-9e17e826eb59"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "81c91908-5c41-8aa8-ad88-e6b9b55302be"
     - stage: horo
-      stageUuid: "fde724b0-89c3-89c8-ad9b-c36adc6ab266"
+      stageUuid: "f70f600f-25c7-8be8-a314-717fd3b99de4"
     - stage: seal
-      stageUuid: "d9e55266-ea96-8b48-abd3-4471d103affe"
+      stageUuid: "fb8e45aa-6eaa-81f2-8c5d-df6c457e16cc"
     - stage: uuid
-      stageUuid: "9efe5a98-1d75-8749-9a01-360c78c1d621"
+      stageUuid: "a99e13f3-e234-84a2-b19e-d42feb655d0d"
 version: 2
 ---
 # acquire

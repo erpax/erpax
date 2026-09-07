@@ -2,14 +2,14 @@
 name: projection
 description: "Use when content, search, locale, version, or CSS colour must agree about what a record IS — they all DRY-derive from ONE content projection through the content-uuid. The uuid singularity realised: project(record) returns identity (uuid), searchable text (multi-search), and a deterministic colour (CSS) from the same bytes; per-locale content gives the per-locale uuid, and a version is the uuid in time."
 atomPath: "uuid/projection"
-coordinate: "uuid/projection · 1/base · 3e1d15b4"
-contentUuid: "0f1b6ea0-0bf2-56ff-9317-7bfe6f09acea"
-diamondUuid: "1f83c4f2-3b09-8aca-a50b-c4fb455e53da"
-uuid: "3e1d15b4-4ccc-86e3-bb0c-cea8b6fbc4af"
-horo: 1
+coordinate: "uuid/projection · 2/share · 8a19f75a"
+contentUuid: "5b457c7d-0a28-5b44-aba6-d1222acf3b83"
+diamondUuid: "a40f5e08-8baf-835b-98f7-3450260e89fe"
+uuid: "8a19f75a-a9e6-8642-b4f6-0b0d3989869e"
+horo: 2
 typography:
   partition: uuid
-  bondDegree: 53
+  bondDegree: 57
 standards:
   - CSS Color 4 hsl() (the colour facet)
   - "RFC 9562 §5.8 content-addressed uuidv8 (the identity the facets hang on)"
@@ -17,7 +17,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "b040e18d-b25f-83c4-9654-b661774f5a0b"
+  computationUuid: "53b8afd3-93aa-8042-b8ee-09d7eb6a17d1"
   stages:
     - stage: path
       stageUuid: "ab1a67b6-5f8b-8120-b6d8-f2186cc21de3"
@@ -26,13 +26,13 @@ signatures:
     - stage: boundary
       stageUuid: "a6c3d320-7082-8bc4-ad94-dc0f3ad71fad"
     - stage: links
-      stageUuid: "0a9b733b-5d09-8f39-ac71-bc3eda121248"
+      stageUuid: "6b9ab4b9-70e8-82ca-8c47-f15fbb323f45"
     - stage: horo
-      stageUuid: "7e27cf1a-cd2b-8fc3-814a-ecf9f6c6bbe5"
+      stageUuid: "3fabde96-78ce-86a8-916a-6d7c810b431d"
     - stage: seal
-      stageUuid: "74695118-3d4e-8a33-aae7-c857b38f5081"
+      stageUuid: "24b0f730-6d39-8814-a4a3-99c1e3954ca0"
     - stage: uuid
-      stageUuid: "0c5fbcfa-bc9f-821c-b558-4ef917c4f11a"
+      stageUuid: "333ea440-9ca1-88b1-95fd-e07236b412bd"
 version: 2
 ---
 # projection — the uuid singularity (content → uuid → search · locale · version · css)

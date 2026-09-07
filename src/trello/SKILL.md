@@ -2,11 +2,11 @@
 name: trello
 description: "Use when entangling an external REST system with erpax — the first worked proof that a third-party API becomes a one-word atom judged by the same constitution as everything else: a typed Trello client (key+token query auth, 300/10s per key and 100/10s per token as a continuous-refill token bucket that QUEUES a burst rather than dropping it), errors that propagate as TrelloError instead of being swallowed, and a Payload plugin whose record→card sync is idempotent on a stored card id."
 atomPath: trello
-coordinate: "trello · 5/round · 6fd00706"
-contentUuid: "21cccb16-ab78-5641-a98c-2cfca44de35d"
-diamondUuid: "fc086e34-095b-8bb9-9114-f76c56bd7a99"
-uuid: "6fd00706-9eee-87b0-a58f-ab0cc349c15a"
-horo: 5
+coordinate: "trello · 8/crest · 477532da"
+contentUuid: "a921a2aa-462b-5ca6-b43c-868fc279d231"
+diamondUuid: "9a862220-a969-83fc-bd95-7de8feb656f8"
+uuid: "477532da-2de6-82fa-966f-f94c74e8dcd2"
+horo: 8
 typography:
   partition: trello
   bondDegree: 20
@@ -16,22 +16,22 @@ standards:
   - "RFC-6749"
 bindings: []
 signatures:
-  computationUuid: "51ac15da-b5d9-80e9-ad06-4cf05be0a240"
+  computationUuid: "3a84bba0-21b5-84e4-bad9-9c0392235499"
   stages:
     - stage: path
       stageUuid: "f1f9c7eb-245e-8497-9f63-16d09458e5e0"
     - stage: trinity
       stageUuid: "70e0ff2e-3585-825a-8d51-8a8b29781909"
     - stage: boundary
-      stageUuid: "de239737-afea-8f8d-8c5c-5f4af7ce4baf"
+      stageUuid: "93d17b0d-5933-8822-ae28-b694ccb3aa94"
     - stage: links
       stageUuid: "72bfbe57-f94c-8ef6-811c-697b7daf1d08"
     - stage: horo
-      stageUuid: "80744c88-9073-8332-a3cf-0d2d5dd4b212"
+      stageUuid: "c271c1b8-f00a-89db-80b1-958fb92c4ffc"
     - stage: seal
       stageUuid: "d25f7d7b-91b4-890e-9d13-c716236f283b"
     - stage: uuid
-      stageUuid: "92d74bb8-2193-8e7d-8880-fcb42b9c663c"
+      stageUuid: "5df1bf42-4a45-82de-9183-4ff96fb40ed6"
 version: 2
 ---
 # trello — an external system becomes an entangled atom, not a swallowed dependency

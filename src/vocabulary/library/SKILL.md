@@ -2,11 +2,11 @@
 name: library
 description: Use when reasoning about library — A library.
 atomPath: "vocabulary/library"
-coordinate: "vocabulary/library · 8/crest · 947a59d3"
-contentUuid: "66dffb9f-bb5c-5aaf-b5da-872a43611d35"
-diamondUuid: "6b18b251-20e7-8092-9af2-70b426b09d85"
-uuid: "947a59d3-2447-8522-a59b-bb7cd635b7dc"
-horo: 8
+coordinate: "vocabulary/library · 7/descent · 5be7b182"
+contentUuid: "735d9d05-37cf-57f7-9dd9-a612103ca76a"
+diamondUuid: "ec2bb08e-020b-872e-8c3f-21c35855575b"
+uuid: "5be7b182-8100-8b64-ad9c-7c5d1f13b116"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 14
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "591ae0d1-d31a-8ad9-bb76-0742c2078785"
+  computationUuid: "870c2261-2471-8a5e-b4f7-4720701cf9ab"
   stages:
     - stage: path
       stageUuid: "7080741c-e820-8964-8e0b-069d1e3e5018"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dc0081b3-5286-8964-a9d2-3d4f743ca07c"
     - stage: horo
-      stageUuid: "e8f47a4a-b5ff-8c41-a01b-2784f05e07ed"
+      stageUuid: "4866c558-bd3a-8bc1-9027-acf8ead112cc"
     - stage: seal
-      stageUuid: "f3ff73e9-fb6d-80b3-9600-6d115e4f4c9f"
+      stageUuid: "4a2e223c-6de6-8d4f-bd68-16cf4b962880"
     - stage: uuid
-      stageUuid: "139a2dea-9992-87c5-98a6-ed6a3d586ccb"
+      stageUuid: "afbdbefb-9ce2-83c1-b784-b99cba7e5f6c"
 version: 2
 ---
 # library

@@ -2,11 +2,11 @@
 name: packs
 description: "Use when modeling a shipping carton — the dispatch unit packed from a production lot, with mass balance (gross = net + tare), rollup counts, and a derived horo lifecycle. Evolved from 118,716 rows of etrima packs."
 atomPath: packs
-coordinate: "packs · 5/round · 4cabf631"
-contentUuid: "ff0685f4-6e75-51b8-add3-34fdbde4a4f3"
-diamondUuid: "baa1f33e-a211-8bde-b16f-951b82039b09"
-uuid: "4cabf631-67d9-8663-933b-747b98b310a4"
-horo: 5
+coordinate: "packs · 8/crest · 16ec5df1"
+contentUuid: "f026934c-6a34-5813-9cc7-e195f87fcda7"
+diamondUuid: "d58617f3-c969-83cd-a0ec-80ae940c6f53"
+uuid: "16ec5df1-0c83-89b8-bf74-e863f05fda1e"
+horo: 8
 typography:
   partition: packs
   bondDegree: 43
@@ -15,27 +15,26 @@ standards:
   - "IFRS IAS-2 §10 finished-goods carried to dispatch"
   - "ISA-95"
   - "ISA-95:2013 §B.5 production-operations dispatch"
-  - "ISO/IEC-29119"
   - "UN-CEFACT"
   - "UN/CEFACT Rec20 weight (kilogram) · volume (cubic-metre)"
 bindings: []
 signatures:
-  computationUuid: "c6b7aebd-2ee3-8049-b851-429762455488"
+  computationUuid: "cdf65c03-5508-8fc0-9332-dd6d2b4b056a"
   stages:
     - stage: path
       stageUuid: "e5c22266-1d75-8e8a-ae9f-8e06e46a4dab"
     - stage: trinity
       stageUuid: "606ab9b4-0fac-8a7c-9218-59c4964f5128"
     - stage: boundary
-      stageUuid: "758ceccd-ba22-8543-ba88-7d4b367a3738"
+      stageUuid: "2b3d37b7-c928-8953-bb1c-2373bf4f97db"
     - stage: links
       stageUuid: "896a9210-1def-89cf-bb7b-7c74522adde1"
     - stage: horo
-      stageUuid: "cc453726-97d7-8f7b-9fc5-e703f0cf6071"
+      stageUuid: "22ff0b91-be72-80c9-9234-5d9a757798ff"
     - stage: seal
       stageUuid: "1a697082-17a7-82cc-a5d1-173cd83ee2f6"
     - stage: uuid
-      stageUuid: "fb261c96-408e-815c-ae94-b4d67cfb5017"
+      stageUuid: "fbf5f1ab-8920-8e11-a14d-1a863bd57d0d"
 version: 2
 ---
 # packs — the dispatch carton

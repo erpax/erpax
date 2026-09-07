@@ -2,11 +2,11 @@
 name: editor
 description: Use when reasoning about editor — Specifies the Person who edited the CreativeWork.
 atomPath: "vocabulary/editor"
-coordinate: "vocabulary/editor · 5/round · e83624e6"
-contentUuid: "458f5188-def3-53f5-bfcf-d4223f4973da"
-diamondUuid: "5c90841e-cb58-8e10-b4f8-8fa1bf667e71"
-uuid: "e83624e6-6364-8770-aa54-9ca1e1f5994b"
-horo: 5
+coordinate: "vocabulary/editor · 1/base · 5825672a"
+contentUuid: "67081cb8-66bd-5b94-8a1a-9c9a701a09b5"
+diamondUuid: "08fd2752-5652-8599-aa85-8cae0f6b6922"
+uuid: "5825672a-381a-84f4-97c2-3df46582511a"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "80251d1a-c1c5-889b-80c8-05e2b45b41ea"
+  computationUuid: "b8ba746c-a9da-8ede-87a1-f82a5c415ac5"
   stages:
     - stage: path
       stageUuid: "b3e7b48b-5c00-81f3-bf07-f82ba359be4a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "94247e47-854e-8702-8282-fe792c230a68"
     - stage: horo
-      stageUuid: "acc9ded6-452d-8d12-803c-06005bd396ce"
+      stageUuid: "3942be39-97c0-854a-b752-4f93a11b9a12"
     - stage: seal
-      stageUuid: "f6774baa-eb26-8b49-9199-437939f093df"
+      stageUuid: "fff27191-467d-8c9c-beff-1d9641efd018"
     - stage: uuid
-      stageUuid: "452266b4-3cd8-8a55-93f0-bf7c60493b51"
+      stageUuid: "f8598c14-c1ba-83aa-8a77-5bd1ac0c1a2c"
 version: 2
 ---
 # editor

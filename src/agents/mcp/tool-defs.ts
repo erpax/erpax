@@ -207,9 +207,13 @@ import {
 // strength (DRY×slices), emergence (dualities forged). They read the live src
 // tree (fs), so they run HERE in the Node MCP handler and the resulting plain
 // numbers are passed into buildDryProofBundle, which stays fs-free for the edge.
-import { corpusCollider } from '@/collider'
-import { corpusStrength } from '@/strength'
-import { emergenceCoverage } from '@/emergence'
+// DEFERRED, not static. The comment above already says these "run HERE in the Node MCP handler" at
+// call time — but a static import loads them at MODULE INITIALISATION anyway, and each one walks the
+// whole src tree. tool-defs is the module [[rules]]/cycle names as the fatal ring member (the
+// collection factory reaches it, and it imported every collection), so what it pulls in at load time
+// is exactly what decides initialisation order. Loading three tree-scanners to DEFINE a tool is the
+// cost with none of the benefit. Both callers are already `async handler`.
+//   measured: cutting agents/mcp → collider shrinks the runtime SCC by 15 atoms.
 // Multi-currency GL (FX gain/loss + IAS-21/ASC-830 revaluation) and bulk
 // import/export + Playwright test-artifact uploader — wired to real consumers.
 import { multiCurrencyService } from '@/multi/currency/service'
@@ -273,8 +277,13 @@ const json = (v: unknown) => text(JSON.stringify(v, null, 2))
  * is unavailable (e.g. invoked outside a checkout), return undefined so the bundle
  * degrades to the honest 2^106 digest floor rather than crashing or over-claiming.
  */
-function resolveCorpusSelfProof(): CorpusSelfProof | undefined {
+async function resolveCorpusSelfProof(): Promise<CorpusSelfProof | undefined> {
   try {
+    const [{ corpusCollider }, { corpusStrength }, { emergenceCoverage }] = await Promise.all([
+      import('@/collider'),
+      import('@/strength'),
+      import('@/emergence'),
+    ])
     return {
       collider: corpusCollider(),
       strength: corpusStrength(),
@@ -2304,7 +2313,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
         const bundle = await buildDryProofBundle({
           invariantCtx: { payload: req.payload },
           tools, origin: origin as string,
-          corpusSelfProof: resolveCorpusSelfProof(),
+          corpusSelfProof: await resolveCorpusSelfProof(),
         })
         return json(bundle)
       },
@@ -2317,7 +2326,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
         const bundle = await publishDryProofBundle({
           invariantCtx: { payload: req.payload },
           tools, origin: origin as string,
-          corpusSelfProof: resolveCorpusSelfProof(),
+          corpusSelfProof: await resolveCorpusSelfProof(),
         })
         return json({ ok: true, contentUuid: bundle.contentUuid, summary: bundle.summary, publicUrl: bundle.publicUrl })
       },

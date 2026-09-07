@@ -3,13 +3,13 @@ name: registry
 description: "Use when reasoning about registry — binds every gated capability to the tiers that include it. and answer from that one place, and marks what no tier may remove."
 atomPath: "feature/registry"
 coordinate: "feature/registry · 2/share · 1780afdc"
-contentUuid: "72d0a700-a4ca-583c-8a13-bfc90703bd31"
+contentUuid: "4402f053-692d-588a-8371-c7e596841199"
 diamondUuid: "a403bdf0-15bb-856e-b570-bf7455b88008"
 uuid: "1780afdc-5758-8cf2-8e8c-682054ae998b"
 horo: 2
 typography:
   partition: feature
-  bondDegree: 40
+  bondDegree: 31
 standards:
   - "ASC-710"
   - Berlin Group NextGenPSD2 v1.3

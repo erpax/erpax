@@ -2,48 +2,41 @@
 name: cost
 description: "Use when optimising ANY cost in the society against output — one efficiency law for every cost (ai tokens, money, energy, time, labor, entropy), measured against productivity AND creativity. efficiency = output / cost, where output = productivity (verified, committed, repeatable work) + creativity (novel atoms/solutions, which compound because they're reused). The society and the agent maximise output-per-cost for every kind; competition selects the most efficient, decompression pays for it; waste (spend that produced nothing) drives to 0."
 atomPath: cost
-coordinate: "cost · 1/base · 1a6acc20"
-contentUuid: "992e90c3-6b64-5c7d-8b36-29bcde1e2242"
-diamondUuid: "ffa6eb57-5e91-81de-a395-afac1b38c6f9"
-uuid: "1a6acc20-163e-8021-9edb-f9a32a1e473f"
-horo: 1
+coordinate: "cost · 4/weave · 07268562"
+contentUuid: "93755409-e58a-501c-883d-0f190ab9fda4"
+diamondUuid: "f8f4ed42-5a48-89a8-a7ac-f6274ba1db01"
+uuid: "07268562-abb5-8e30-a75c-61893dd5b251"
+horo: 4
 typography:
   partition: cost
-  bondDegree: 404
+  bondDegree: 400
 standards:
-  - "CRAQ (Terrace & Freedman, USENIX ATC 2009) — strong-consistency chain replication"
-  - "CRAQ — Terrace & Freedman, USENIX ATC 2009"
-  - "DeepSeek-Prover-V2 (recursive subgoal decomposition; Lean 4 kernel-checked)"
-  - "DeepSeek-Prover-V2 — recursive, kernel-checked invariants"
   - "ISO-3166-1"
   - "ISO/IEC 25010:2023 §5.3 resource-utilisation (output per resource spent)"
   - "ISO/IEC 25010:2023 §5.3 resource-utilisation (output per resource spent)`"
-  - "NIST SP 800-107r1 §5.1 — 2nd-preimage ≈ L bits, collision ≈ L/2"
   - "NIST SP 800-107r1 §5.1 — 2nd-preimage ≈ L bits, collision ≈ L/2`"
   - "NIST-SP-800-63"
-  - RFC 9562 §5.8 (uuidv8) · §4.1 (variant)
-  - RFC 9562 §8 — UUID security considerations
   - "RFC 9562 §8 — UUID security considerations`"
   - "W3C-PROV-O"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "3c86848c-2dbe-8d5b-938a-97561f579c40"
+  computationUuid: "eeab4a1e-ee59-82d7-9663-549bd1c83b54"
   stages:
     - stage: path
       stageUuid: "9fa475f3-9812-8558-842d-9484e1e18cbf"
     - stage: trinity
       stageUuid: "42d246d5-c2f9-807d-9daa-fa397f0e46ae"
     - stage: boundary
-      stageUuid: "fc14759f-b0c0-8cb8-be87-fed7d8804c26"
+      stageUuid: "e7ac691f-6fa5-8b35-862e-5ad3aa8e7962"
     - stage: links
       stageUuid: "ce03cc4b-bc01-873c-8c86-880ff3c7755e"
     - stage: horo
-      stageUuid: "0ec8f396-5919-8bb4-b4cb-72f0b44930ed"
+      stageUuid: "bbc1b43b-b140-8db2-a640-e087122d254c"
     - stage: seal
       stageUuid: "341ef0da-5cc1-887c-94d7-1dfb1c5b415d"
     - stage: uuid
-      stageUuid: "8cfe7f97-8cd7-88dd-b234-3ec17abe1c9e"
+      stageUuid: "efd58c38-6d66-8afd-988b-d75afa4c6cfe"
 version: 2
 ---
 # cost — one efficiency law for every society cost (vs productivity + creativity)

@@ -3,13 +3,13 @@ name: page
 description: "Use when reasoning about page — A public tenant page is a hero followed by its layout blocks, inside an . That is the whole atom, and its value is that it exists **once**: the same composition served from the…"
 atomPath: "render/tenant/page"
 coordinate: "render/tenant/page · 2/share · 8902419f"
-contentUuid: "93c2b6ff-12a9-500e-9dc8-7ca7fc453bd0"
+contentUuid: "945d49d9-ea43-5f79-8e70-232766fe3b28"
 diamondUuid: "908e5b94-0255-80d0-b197-aa7ea4e6dec0"
 uuid: "8902419f-73eb-8d53-b4ed-dba8a4d470b8"
 horo: 2
 typography:
   partition: render
-  bondDegree: 144
+  bondDegree: 141
 standards: []
 bindings: []
 signatures:

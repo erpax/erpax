@@ -2,18 +2,18 @@
 name: deploy
 description: "Use when shipping erpax to the edge — deployment is the collapse of the codebase into live reality (the model becomes real on main); gate-pass then build a content-addressed artifact, migrate D1, push the Worker, a release is finality one-way with rollback to a prior snapshot."
 atomPath: "quantum/deploy"
-coordinate: "quantum/deploy · 5/round · 489087d9"
-contentUuid: "cddcd64e-a0be-59f7-b0d1-e3b4a4b9d927"
-diamondUuid: "b66061a4-4951-885e-a4de-a21fee459ea3"
-uuid: "489087d9-8c50-8bea-a5ed-caa946218f4b"
-horo: 5
+coordinate: "quantum/deploy · 4/weave · 741e99ed"
+contentUuid: "bf9eea17-450d-5608-b0b0-e3be176a3928"
+diamondUuid: "e6839f2b-0ec2-811b-86ca-048faa4f68f7"
+uuid: "741e99ed-7a64-86f5-a232-b8e343210890"
+horo: 4
 typography:
   partition: quantum
-  bondDegree: 90
+  bondDegree: 99
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2e671efb-47ee-8e19-8a77-221760e8804e"
+  computationUuid: "5a658b33-c74b-8c91-95b7-68889140b6de"
   stages:
     - stage: path
       stageUuid: "f71dbc48-d27e-84cb-a6c1-3cc9514088f7"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "991636b0-04eb-8002-98fc-ff5c67b7c419"
     - stage: horo
-      stageUuid: "440d2e30-42e4-8c18-945d-339470982dbe"
+      stageUuid: "37620d08-b5fc-8787-8475-e9862c61b926"
     - stage: seal
       stageUuid: "dc12700c-1968-87c8-b7e5-0b79a8241c8c"
     - stage: uuid
-      stageUuid: "151fa803-51bc-84b6-ab1d-373d630290e6"
+      stageUuid: "36a76524-555c-8770-bbd1-5c2ca710ad61"
 quantum:
   superposition:
     - backup
@@ -38,7 +38,7 @@ quantum:
     - database
     - deploy
     - dev
-    - gate
+    - fold
     - superposition
   collapse:
     - "Use when shipping erpax to the edge — deployment is the collapse of the codebase into live reality (the model becomes real on main); gate-pass then build a content-addressed artifact, migrate D1, push the Worker, a release is finality one-way with rollback to a prior snapshot."
@@ -60,8 +60,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "2e671efb-47ee-8e19-8a77-221760e8804e"
-    contentUuid: "cddcd64e-a0be-59f7-b0d1-e3b4a4b9d927"
+    computationUuid: "5a658b33-c74b-8c91-95b7-68889140b6de"
+    contentUuid: "bf9eea17-450d-5608-b0b0-e3be176a3928"
 version: 2
 ---
 # quantum/deploy — the collapse into reality
@@ -83,4 +83,4 @@ A deploy is a [[measurement]]: the superposed branch becomes the one running wor
 
 @see [[deploy]] · [[reality]] · [[gate]] · [[migrate]] · [[bindings]] · [[snapshot]] · [[finality]] · [[payload]] · [[worker]] · [[quantum/serverless]] · [[cloudflare]]
 
-<sub>content-uuid `cddcd64e-a0be-59f7-b0d1-e3b4a4b9d927` · account `quantum/deploy` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `bf9eea17-450d-5608-b0b0-e3be176a3928` · account `quantum/deploy` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

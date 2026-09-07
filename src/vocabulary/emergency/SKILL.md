@@ -2,11 +2,11 @@
 name: emergency
 description: "Use when reasoning about emergency as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/emergency"
-coordinate: "vocabulary/emergency · 4/weave · 0e5d95d8"
-contentUuid: "4d99834f-c28e-55e3-8605-0ca792ec0848"
-diamondUuid: "4cc79f98-fa9d-8ea3-be16-0c987a611b39"
-uuid: "0e5d95d8-e459-85ec-9e8b-5ed8cd163149"
-horo: 4
+coordinate: "vocabulary/emergency · 7/descent · 24d58ec5"
+contentUuid: "1e769cf3-5d9e-564c-a107-9ea179ccdba7"
+diamondUuid: "09fd9024-784a-8faa-9c9b-44191869a022"
+uuid: "24d58ec5-4770-8c83-b161-e47caaa53cd7"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e0751328-bfaf-8c41-afe6-f7c1c434b768"
+  computationUuid: "142001f6-efc1-8b4f-9116-394d758c6f1e"
   stages:
     - stage: path
       stageUuid: "0220506f-6781-8591-b743-01be2cb2be35"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e2de3d62-6ef7-8179-8794-2e4d4339fc7c"
     - stage: horo
-      stageUuid: "d4cf3dfc-0370-8edb-9d0d-34aff639eaa3"
+      stageUuid: "f3a6cdb7-b9cf-862c-adca-29bd255569bb"
     - stage: seal
-      stageUuid: "46bd1978-df2d-8728-8829-f573a6fae9ec"
+      stageUuid: "64d763fc-2708-80e5-831d-d773bddf6939"
     - stage: uuid
-      stageUuid: "c445aa7b-bd7c-8028-9d5f-eb76c214c19f"
+      stageUuid: "8b042bf2-3b35-82e2-84ea-7eef154ffbcb"
 version: 2
 ---
 # emergency

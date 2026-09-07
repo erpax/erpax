@@ -2,18 +2,18 @@
 name: communication
 description: "Use when agents transfer messages — a directed communication between agent ids, the message a content-uuid; relaying preserves the uuid (no-cloning), so the content is never forged in transit."
 atomPath: "agent/communication"
-coordinate: "agent/communication · 5/round · affe0822"
-contentUuid: "2b89a4d6-36c9-57be-8e0f-cc8a18a99c29"
-diamondUuid: "53fef073-cf8d-80b9-8190-c44d645e6ddd"
-uuid: "affe0822-10cf-8cc0-b3c7-20f4f1ed0e7d"
-horo: 5
+coordinate: "agent/communication · 8/crest · b7c9a96a"
+contentUuid: "cf6bc317-f335-5899-b87f-bd0dac56ed6f"
+diamondUuid: "c0416f54-374e-8c93-9731-d36d2de5737e"
+uuid: "b7c9a96a-81f9-8858-ab68-dfa07501f2a6"
+horo: 8
 typography:
   partition: agent
   bondDegree: 58
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b8bace69-d4ff-87f8-914b-7916e0a5849f"
+  computationUuid: "1ab945f4-c750-8b34-b66e-10c5efcd605f"
   stages:
     - stage: path
       stageUuid: "c644e026-e3cb-8a34-98d3-6e47f6bde2b5"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9dbf28b7-8364-8014-bccd-2b2befc4bcd0"
     - stage: horo
-      stageUuid: "84de2ca3-1c1f-8bfe-98eb-29b4dde59829"
+      stageUuid: "19759b3c-86ae-88ea-9d52-7c2197bf50ef"
     - stage: seal
-      stageUuid: "dccfd6f6-fb51-81aa-8a00-d17f98eeb9fe"
+      stageUuid: "9ac9f0d9-0c80-856c-8100-0aa3a28eade5"
     - stage: uuid
-      stageUuid: "9a085d67-df7c-839e-81a8-0d251fb8e987"
+      stageUuid: "d54b7751-824e-8d43-87ef-5a9766113d05"
 version: 2
 ---
 # agent/communication — agent-to-agent transfer

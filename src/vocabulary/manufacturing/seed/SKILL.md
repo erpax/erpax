@@ -3,13 +3,13 @@ name: seed
 description: "Use when reasoning about seed — Operations, positions and standards are each their own atom; this is the address that offers all three."
 atomPath: "vocabulary/manufacturing/seed"
 coordinate: "vocabulary/manufacturing/seed · 2/share · 10104ac3"
-contentUuid: "0fc09c00-cc5d-5c3c-93b4-b853555b8527"
+contentUuid: "78b8230c-18b7-57a2-b76e-dec4397aac45"
 diamondUuid: "ce99d2c3-cd5c-8c6b-b44e-171d7abc32d8"
 uuid: "10104ac3-af2a-81fe-9b52-bd398417e143"
 horo: 2
 typography:
   partition: vocabulary
-  bondDegree: 85
+  bondDegree: 82
 standards:
   - ESCO
   - "EU-VAT-Implementing-Reg-282/2011"

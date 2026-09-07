@@ -3,13 +3,13 @@ name: independence
 description: "Use when reasoning about independence — admits a store and recomputes the content-uuid from each one's bytes. Agreement means the object is intact everywhere; disagreement names which store is wrong, without trusting…"
 atomPath: "storage/independence"
 coordinate: "storage/independence · 7/descent · 3749c6c5"
-contentUuid: "835b186a-bcb7-500e-a2fb-c0e8c924a938"
+contentUuid: "54e65e5d-9aef-5bb8-baa8-610f0704e484"
 diamondUuid: "1ce7357e-fc9b-84a9-8ad3-8040462aa152"
 uuid: "3749c6c5-870c-8070-8693-df71650e25ad"
 horo: 7
 typography:
   partition: storage
-  bondDegree: 9
+  bondDegree: 6
 standards:
   - "ISO/IEC 27040:2024 — storage security (data integrity)"
   - "RFC 9562 §5.8 + RFC 8785 (content-derived uuids)"

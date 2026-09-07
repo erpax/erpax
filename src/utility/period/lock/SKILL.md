@@ -3,13 +3,13 @@ name: lock
 description: "Use when reasoning about lock — is the hook wired into every GL-posting collection: it reads the document's posting date, finds the fiscal period containing it, and throws when that period's status is ."
 atomPath: "utility/period/lock"
 coordinate: "utility/period/lock · 4/weave · 89765250"
-contentUuid: "1760435b-5d50-551c-a5e9-9782c4cbcfc6"
+contentUuid: "982cdac8-1c9f-5c6a-aae2-2912bc66c027"
 diamondUuid: "41f910d6-dab9-87ba-a167-69fd56cee6f1"
 uuid: "89765250-df28-8978-9993-a11437d6c388"
 horo: 4
 typography:
   partition: utility
-  bondDegree: 18
+  bondDegree: 15
 standards:
   - "IFRS IAS-1 presentation-of-financial-statements"
   - "IFRS IAS-8 accounting-policies-changes-and-errors"

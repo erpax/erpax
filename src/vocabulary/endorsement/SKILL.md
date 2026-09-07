@@ -2,10 +2,10 @@
 name: endorsement
 description: "Use when reasoning about endorsement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/endorsement"
-coordinate: "vocabulary/endorsement · 5/round · dd58650f"
-contentUuid: "825f64fe-944a-5473-9cfa-19b2b744d6b5"
-diamondUuid: "4a0831dc-aec4-8b91-8d22-370c86fe4ff7"
-uuid: "dd58650f-0be7-8809-b870-edc387e37217"
+coordinate: "vocabulary/endorsement · 5/round · 446decb2"
+contentUuid: "7ed07ce9-7bc6-597a-8ecb-24d8ab176245"
+diamondUuid: "52157e20-9566-8528-ab62-cef60a23defc"
+uuid: "446decb2-e117-8b73-b48f-5abe6e243215"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0114aae7-93a5-812f-9279-e851d7c39d12"
+  computationUuid: "ffcaccc9-4710-8374-ac71-c3cd5e7cba32"
   stages:
     - stage: path
       stageUuid: "2c6534d3-23b1-8c72-98c4-1d0f14b88e14"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a65f549c-67aa-8ae8-83cc-3b0428a1af65"
     - stage: horo
-      stageUuid: "4ee6dc18-c567-8e9e-87b1-b7dbf53af3a7"
+      stageUuid: "21eab2ff-40e5-81ed-b365-564b32c60024"
     - stage: seal
-      stageUuid: "44938f5b-cd4b-8968-9a30-ba0c511af9c6"
+      stageUuid: "15b12c6f-fe1d-8b97-8c6e-80fbd0de742b"
     - stage: uuid
-      stageUuid: "bac9f4b3-f8a3-8ab4-895b-495ff2cf64bb"
+      stageUuid: "93eda0ce-3de0-8a52-a6a2-dd00d659a7b8"
 version: 2
 ---
 # endorsement

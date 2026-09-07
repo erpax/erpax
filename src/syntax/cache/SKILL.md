@@ -1,15 +1,15 @@
 ---
 name: cache
-description: "Use when reasoning about cache — *\"Reuse the computed answer, never re-derive\"* is the first agent law in this corpus."
+description: "Use when reasoning about cache — *\\\"Reuse the computed answer, never re-derive\\\"* is the first agent law in this corpus."
 atomPath: "syntax/cache"
 coordinate: "syntax/cache · 2/share · 7f08163b"
-contentUuid: "6563610d-cd8a-5ded-8bf3-13378f8abf32"
+contentUuid: "7c8894e0-0f5c-52ef-82dc-c32359262c9c"
 diamondUuid: "2684b8de-4fdc-8f9f-a6b2-f85b9e815542"
 uuid: "7f08163b-06a9-867e-b0e3-b1619481dfcf"
 horo: 2
 typography:
   partition: syntax
-  bondDegree: 52
+  bondDegree: 49
 standards: []
 bindings: []
 signatures:

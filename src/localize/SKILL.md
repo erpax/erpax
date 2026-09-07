@@ -2,14 +2,14 @@
 name: localize
 description: "Use when ANY aspect must speak a locale AND stay tamper-evident — localization is the FUSION of tamper-cost (forge↑) and proof (verify, O(N) trustless). Every field/reference/scope/hook carries a translation + a translation-key uuid with ALL identification (content-digest, OID 2.25, cmyk, locale, capabilities) wired into the 128 bits. Coverage→1 ⇒ infinite tampering cost. The per-field leaf (facet localize-field) is native Payload `localized:true` over BCP-47 locales; a blank locale routes to its identity element `und`. Matter-twin localize/index.ts."
 atomPath: localize
-coordinate: "localize · 1/base · 70bb648b"
-contentUuid: "e1556556-762c-5843-9e4e-094287d053e6"
-diamondUuid: "5123905f-35e7-825a-8b49-ee0004ecf36f"
-uuid: "70bb648b-e3f3-8eed-a5b2-83bb8c5abdef"
-horo: 1
+coordinate: "localize · 4/weave · 4deaa6eb"
+contentUuid: "5241dab9-7f6b-533c-afab-42c40b531c18"
+diamondUuid: "d0108684-de1d-879e-9392-99c5e9e54e35"
+uuid: "4deaa6eb-3de8-89a2-9f36-953f1ebad35a"
+horo: 4
 typography:
   partition: localize
-  bondDegree: 81
+  bondDegree: 75
 standards:
   - "4647` (RFC 4647, Sept 2006, \"Matching of Language Tags\"; current as of 2026). Governs"
   - "4647` alongside `@rfc 5646` wherever this skill does matching (it covers the behavior RFC 5646 does not)."
@@ -28,10 +28,11 @@ standards:
   - "RFC 9562 §5.8 (uuidv8 structured, name-based)"
   - "RFC 9562 §5.8 (uuidv8 structured, name-based)`"
   - "RFC-4122"
+  - "RFC-5646"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "ce462890-5612-8e59-8a8d-bbca9e355309"
+  computationUuid: "70b3951d-1a21-8588-89d6-7d56ad1ef965"
   stages:
     - stage: path
       stageUuid: "2a33b115-eb41-89e9-a3b7-4aeb5c1c1125"
@@ -40,13 +41,13 @@ signatures:
     - stage: boundary
       stageUuid: "dca1443a-03bf-8595-b4d8-da85cc42b9e9"
     - stage: links
-      stageUuid: "0f376c9b-1a25-84b8-a168-cfca5952ca27"
+      stageUuid: "96f4fa51-5545-84ac-8215-827873ba297f"
     - stage: horo
-      stageUuid: "98e3d5d2-2d89-8060-af6e-0a87b26d839c"
+      stageUuid: "9b54129d-5991-8f94-98a5-4c4dcaf7f7a1"
     - stage: seal
       stageUuid: "ab167e4a-044f-8271-bb4c-9d9cd41c765b"
     - stage: uuid
-      stageUuid: "b0fa590c-bf6b-829e-9563-f6aa32236edc"
+      stageUuid: "daa4b57d-b672-8323-b9b9-409b85333760"
 version: 2
 ---
 # localize — localization as the tamper-cost ⊕ proof fusion

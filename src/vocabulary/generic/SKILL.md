@@ -2,11 +2,11 @@
 name: generic
 description: "Use when reasoning about generic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/generic"
-coordinate: "vocabulary/generic · 7/descent · fba8f8c8"
-contentUuid: "0557c2f0-7b52-507c-941a-6554753095f8"
-diamondUuid: "51aa151e-e98d-8f67-a2e2-bf72e1007b7b"
-uuid: "fba8f8c8-5a3c-86de-b8b8-5ac40bf53d96"
-horo: 7
+coordinate: "vocabulary/generic · 5/round · a6e08600"
+contentUuid: "0e6ba0f7-9909-591f-9a4b-84602a128be6"
+diamondUuid: "5efcba20-287f-84e7-ae93-75e089706b5c"
+uuid: "a6e08600-f028-82d5-8d6e-5d8991707bbb"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "33b6f9e9-aead-8660-9a4c-74b808685dd5"
+  computationUuid: "4db6a36f-a155-81a8-bc2e-e9f2527fd404"
   stages:
     - stage: path
       stageUuid: "64906c06-1ed9-850c-b0a4-49d4131c14e7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6befd177-06cc-8953-b662-44ea5c3ff722"
     - stage: horo
-      stageUuid: "d64fc5b7-6f39-8d19-a38a-1b3b350c33f5"
+      stageUuid: "5045701f-9102-8bd9-8ff8-7b9c5b838bb4"
     - stage: seal
-      stageUuid: "09f1fd8a-3b7d-86b1-83f9-19782d302614"
+      stageUuid: "07484bbb-4fa2-8103-bea7-2cab32c77b3a"
     - stage: uuid
-      stageUuid: "d4522012-9527-8c85-bec8-5ca7549472a8"
+      stageUuid: "e8fd3be0-45cd-8ff3-be1b-38a311dd8bf0"
 version: 2
 ---
 # generic

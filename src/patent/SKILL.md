@@ -2,35 +2,35 @@
 name: patent
 description: "Use when challenging an over-broad or illegally granted patent — encode the claim as a content-digest and test it on three computable grounds (prior art via anchored anteriority, obviousness via merge identity, abstract-math via §101); defensive only, not legal advice."
 atomPath: patent
-coordinate: "patent · 2/share · 6b6f2b19"
-contentUuid: "6d469c35-9a7c-5a34-b40b-ed9ea4c8f8e6"
-diamondUuid: "d33ba9ee-9874-8bc7-be91-be3c07a9e663"
-uuid: "6b6f2b19-d166-8310-8a5e-2c504e9fef75"
-horo: 2
+coordinate: "patent · 1/base · a9e8287b"
+contentUuid: "da920c18-9822-5dea-98a0-7f8d264a9cab"
+diamondUuid: "11ddc7e2-8ac7-8325-be66-08718906630f"
+uuid: "a9e8287b-e4a9-811f-85b5-40a78737cfc7"
+horo: 1
 typography:
   partition: patent
-  bondDegree: 24
+  bondDegree: 27
 standards:
   - "35 U.S.C. §§101–103; RFC 3161 / eIDAS anchored timestamps (the anteriority proof)"
   - eIDAS
 bindings: []
 signatures:
-  computationUuid: "fc04fd89-99a9-8c9c-887a-e8a27ee9f00f"
+  computationUuid: "0e61e6a2-a220-8a8f-a418-d9309bcf2224"
   stages:
     - stage: path
       stageUuid: "7eece577-454d-86ea-b63b-a6207db8a551"
     - stage: trinity
       stageUuid: "dd9b40ff-2b45-8854-b9ac-bad16b2e7fbc"
     - stage: boundary
-      stageUuid: "128c01b9-350a-86df-9244-64140dfc1cbc"
+      stageUuid: "bc807c54-1f41-8be9-a537-191daff7ee3c"
     - stage: links
       stageUuid: "106e2a9a-1fb3-8fd5-a623-1cad776d5753"
     - stage: horo
-      stageUuid: "46108c73-b14b-875f-bfef-31134e285836"
+      stageUuid: "c4c9de1a-d49c-8cd3-8333-3e226bc6e8aa"
     - stage: seal
       stageUuid: "1f4d844e-60e1-8802-ba73-bb58a1e3bffb"
     - stage: uuid
-      stageUuid: "5bd6f8db-aa2d-898f-a78d-35edd1f22bca"
+      stageUuid: "ed69627f-5690-88cd-8bda-692cf0ef2f61"
 version: 2
 ---
 # patent — challenge illegal patents, encoded in math

@@ -2,23 +2,21 @@
 name: cloudflare
 description: "Use when touching Cloudflare — Workers AI first-class, uuid-sealed credentials, binding diamonds for every Wrangler section, path-merge on the 7th surface, mediated binding access fail-closed."
 atomPath: cloudflare
-coordinate: "cloudflare · 2/share · 6521053a"
-contentUuid: "a0f36e85-ef35-5ff5-9f78-bd503748e3e2"
-diamondUuid: "483df4f0-af1c-828e-9152-f47817d12ea0"
-uuid: "6521053a-c513-8e9a-936f-60cc1bc5926e"
+coordinate: "cloudflare · 2/share · a5ad073d"
+contentUuid: "5636c98e-3bdc-5029-82a6-d53ed7ea82d7"
+diamondUuid: "7c0e7750-b3a5-8dbf-86cf-913e99c3098f"
+uuid: "a5ad073d-2c8c-80a5-8b98-8988ca483743"
 horo: 2
 typography:
   partition: cloudflare
-  bondDegree: 74
+  bondDegree: 116
 standards:
   - Cloudflare Workers Runtime API
   - "CoE-108+"
   - "ISO-27001"
-  - "ISO-27002"
   - "ISO/IEC 25010:2023 §5.2 reliability — fail-fast at boot"
   - "ISO/IEC 25010:2023 §5.2 reliability — fail-fast at boot`"
   - "ISO/IEC-27001:2022"
-  - "ISO/IEC-27002:2022"
   - "NIST-SP-800-108"
   - "NIST-SP-800-38D"
   - "NIST-SP-800-63"
@@ -46,6 +44,7 @@ bindings:
   - "queues/QUEUE_EINVOICE_OUT"
   - "queues/QUEUE_EMAIL_OUT"
   - "queues/QUEUE_PERIOD_CLOSE"
+  - "r2_buckets/NEXT_INC_CACHE_R2_BUCKET"
   - "r2_buckets/R2"
   - "ratelimit/RATE_LIMITER_AI"
   - "ratelimit/RATE_LIMITER_API"
@@ -54,27 +53,23 @@ bindings:
   - "triggers/CRON"
   - "vectorize/VECTORIZE_DOCS"
 signatures:
-  computationUuid: "0a71a192-f001-8bc6-be09-6f7fae624e2f"
+  computationUuid: "d46c319c-1662-8f29-aa59-12c53f13270a"
   stages:
     - stage: path
       stageUuid: "81a381ca-7840-8180-802d-be5f6b8f3f62"
     - stage: trinity
       stageUuid: "260d3365-e372-8135-9fc8-54f72c08b852"
     - stage: boundary
-      stageUuid: "c95d5ac5-7501-8a8a-9949-d9a79474bf46"
+      stageUuid: "8ef18f99-9f74-8afd-bf9f-69b6d161acec"
     - stage: links
-      stageUuid: "7e8c83d7-1374-8d72-928f-af85aa194e9e"
+      stageUuid: "064cfd19-ef34-86c1-a11b-c3015b7f861e"
     - stage: horo
-      stageUuid: "281d1491-befa-85c1-b0af-2c696a53b85b"
+      stageUuid: "91d7080d-3d99-8f97-a047-b9e0339b589e"
     - stage: seal
       stageUuid: "92cdc9de-1534-8664-b999-3db6eb5e8535"
     - stage: uuid
-      stageUuid: "668f6006-3a89-8c9a-b3b5-042e39b42b46"
+      stageUuid: "ba38d09c-5c5c-82a0-be7e-f4c8e2868bb9"
 version: 2
-neighbors:
-  wikilink:
-    - "[[cloudflare/binding]]"
-    - "[[cloudflare/constants]]"
 ---
 # cloudflare — mediated edge, every binding a diamond (AI-first)
 

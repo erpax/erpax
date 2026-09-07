@@ -3,13 +3,13 @@ name: domain
 description: "Use when reasoning about domain — Four cracks in one session, and the same gap behind three of them:"
 atomPath: "rules/domain"
 coordinate: "rules/domain · 5/round · 5b3ac885"
-contentUuid: "7f5c0533-cca8-58a5-8c75-0bf55af0369d"
+contentUuid: "d2f87440-8ab0-56b4-886d-e781d29c5d6e"
 diamondUuid: "3767de9f-a89f-8ed8-b8a7-aaabd046b67e"
 uuid: "5b3ac885-01aa-8992-b677-856ebe5bf7eb"
 horo: 5
 typography:
   partition: rules
-  bondDegree: 72
+  bondDegree: 69
 standards: []
 bindings: []
 signatures:

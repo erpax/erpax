@@ -2,10 +2,10 @@
 name: albums
 description: Use when reasoning about albums — A collection of music albums.
 atomPath: "vocabulary/albums"
-coordinate: "vocabulary/albums · 4/weave · c8a9b62e"
-contentUuid: "e9df195e-530c-5895-947a-88a8ff170137"
-diamondUuid: "3cf334f8-c251-8373-b9cf-d4623f794f5b"
-uuid: "c8a9b62e-c817-8bae-9328-f45e3087009f"
+coordinate: "vocabulary/albums · 4/weave · 1bca2f52"
+contentUuid: "71b66e85-ce81-5645-8142-9e16a0b12076"
+diamondUuid: "fc0f0c56-ce6f-8d62-9cd0-330b7ab43d78"
+uuid: "1bca2f52-2c04-8266-8216-d539bc95d7e2"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a1aa002b-e531-85fc-8a60-8e9f817c36e5"
+  computationUuid: "12bd7818-0ce9-8de5-8228-215a108f318c"
   stages:
     - stage: path
       stageUuid: "c6d9cffe-f518-8e07-9078-9062c347bdf4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4c982b94-e6c1-8be5-be15-aa6fe7d75aca"
     - stage: horo
-      stageUuid: "b19ff2fa-0866-8527-b28b-e32db93742e9"
+      stageUuid: "b2005d5b-1d2d-87a7-8f77-faca8642bfc0"
     - stage: seal
-      stageUuid: "0e38c71b-1ab1-8aec-9d87-59747dab5481"
+      stageUuid: "d7b63aa9-2f28-8b79-aba8-a8bafbc1bcf3"
     - stage: uuid
-      stageUuid: "49a524e8-4fd3-83f6-905d-b09f4e448d16"
+      stageUuid: "70cd2322-e344-82bd-869c-7179ffecd1e4"
 version: 2
 ---
 # albums

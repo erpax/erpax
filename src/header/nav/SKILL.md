@@ -1,9 +1,9 @@
 ---
 name: nav
-description: "Use when reasoning about nav — A magnifying glass is a picture. To a screen reader, a link containing only a picture has an accessible name of *the empty string* — announced as \"link\", with nothing to say where…"
+description: "Use when reasoning about nav — A magnifying glass is a picture. To a screen reader, a link containing only a picture has an accessible name of *the empty string* — announced as \\\"link\\\", with nothing to say where…"
 atomPath: "header/nav"
 coordinate: "header/nav · 5/round · 494fce7e"
-contentUuid: "b834c628-a0d1-5327-97e4-aeffa48c635b"
+contentUuid: "438bd2cf-804a-507d-969e-7ed8843fb396"
 diamondUuid: "a0fa0e23-a034-8890-9e34-473886f9d508"
 uuid: "494fce7e-b329-842a-a272-c0daafc14d78"
 horo: 5

@@ -3,13 +3,13 @@ name: hooks
 description: "Use when reasoning about hooks — publishes the order's transitions from the collection, so an order moved by the storefront, the admin panel or a job emits the same event."
 atomPath: "ecommerce/hooks"
 coordinate: "ecommerce/hooks · 9/unity · 500ed15b"
-contentUuid: "2e1d117a-ad80-5474-bfa8-ca6ec2b68c6d"
+contentUuid: "80be02c7-0cfa-5e12-9d0d-61d0f45d616e"
 diamondUuid: "40977158-b169-8a5b-a234-653681ecbcb4"
 uuid: "500ed15b-4f57-8763-b208-44ef03ef8748"
 horo: 9
 typography:
   partition: ecommerce
-  bondDegree: 348
+  bondDegree: 312
 standards: []
 bindings: []
 signatures:

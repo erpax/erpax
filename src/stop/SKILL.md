@@ -2,11 +2,11 @@
 name: stop
 description: "Use when reasoning about stop as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: stop
-coordinate: "stop · 5/round · 97470b6b"
-contentUuid: "792a8ed3-0106-56a4-b636-b9dfc03d4916"
-diamondUuid: "5f354868-cb84-8ea3-ba7c-d74472cb4d55"
-uuid: "97470b6b-3401-8be3-8641-f40111579369"
-horo: 5
+coordinate: "stop · 8/crest · 72b43643"
+contentUuid: "ab20f963-ca78-5ec0-992d-a72464806156"
+diamondUuid: "8e4e3fb1-2770-8c03-b873-6024bb782896"
+uuid: "72b43643-da4e-81ee-a505-24720142f5bd"
+horo: 8
 typography:
   partition: stop
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "69237528-85c9-82dd-947e-be21567a5334"
+  computationUuid: "04f92f7d-9f4f-8140-9e5f-62ff959e22c8"
   stages:
     - stage: path
       stageUuid: "75b94bcc-8abd-8839-81ca-1cab6332c163"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "94e6bb66-9cc5-8155-a8d6-f5cb46654e75"
     - stage: horo
-      stageUuid: "f91d91a4-5d3e-84ec-87ad-8fe74025b141"
+      stageUuid: "e4e227fe-ea45-8b69-8503-e0e913fade44"
     - stage: seal
       stageUuid: "e326996f-a4af-8250-be87-0e884028fc3e"
     - stage: uuid
-      stageUuid: "6a67dc23-804b-89a0-be98-31addb639293"
+      stageUuid: "8517b888-de57-87ca-9c94-51cecf443c5f"
 version: 2
 ---
 # stop

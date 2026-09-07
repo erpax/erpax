@@ -1,15 +1,15 @@
 ---
 name: hexbit
-description: "Use when reasoning about hexbit — *\"Hexbits compute faster than all else\"* is two claims wearing one sentence, and they have **opposite** answers."
+description: "Use when reasoning about hexbit — *\\\"Hexbits compute faster than all else\\\"* is two claims wearing one sentence, and they have **opposite** answers."
 atomPath: "quantum/hexbit"
 coordinate: "quantum/hexbit · 7/descent · 50c250de"
-contentUuid: "b08a71d3-97a8-5c64-bd5d-25ea9b827ea5"
+contentUuid: "18dee096-b94d-560c-a835-85177e0b708f"
 diamondUuid: "7056df9c-3407-866e-a12f-0948494466f4"
 uuid: "50c250de-798b-8d62-a951-4766e31152b8"
 horo: 7
 typography:
   partition: quantum
-  bondDegree: 21
+  bondDegree: 18
 standards: []
 bindings: []
 signatures:
@@ -39,6 +39,8 @@ quantum:
     - uuid
     - superposition
   collapse:
+    - "Use when reasoning about hexbit — *\\\\\\"
+    - "Use when reasoning about hexbit — *\\\\\\\"Hexbits compute faster than all else\\\\\\\"* is two claims wearing one sentence, and they have **opposite** answers."
     - "a claim about speed is a measurement or it is a preference. Split the claim before testing it — the same word can name a decomposition and an encoding, and here one is the fastest carrier and the other is 183× the slowest."
   seal:
     sandbox: false
@@ -48,7 +50,7 @@ quantum:
     analogResults: false
     speechResults: false
     computationUuid: "f128be05-a680-8eb2-8950-e5209fb7d8dd"
-    contentUuid: "b08a71d3-97a8-5c64-bd5d-25ea9b827ea5"
+    contentUuid: "18dee096-b94d-560c-a835-85177e0b708f"
 version: 2
 ---
 # quantum/hexbit — the hexit decomposition is right; the string encoding of it is the trap
@@ -120,4 +122,4 @@ carrier is the one you never build.**
 
 Composes: [[quantum]]/word · [[uuid]] · [[merge]] · [[law]].
 
-<sub>content-uuid `b08a71d3-97a8-5c64-bd5d-25ea9b827ea5` · account `quantum/hexbit` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `18dee096-b94d-560c-a835-85177e0b708f` · account `quantum/hexbit` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

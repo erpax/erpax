@@ -1,15 +1,15 @@
 ---
 name: cross
-description: "Use when authorising \"who can do what\" — the agnostic Payload Access factory that attaches capability to roles (not users), merges role reach by lattice max, and decides an operation iff the merged capability reaches the op's required role."
+description: "Use when authorising \\\"who can do what\\\" — the agnostic Payload Access factory that attaches capability to roles (not users), merges role reach by lattice max, and decides an operation iff the merged capability reaches the op's required role."
 atomPath: cross
-coordinate: "cross · 7/descent · 81c2b961"
-contentUuid: "2b4b6789-7544-58e0-a7e2-3b0c3d818064"
-diamondUuid: "aa0051ac-cafb-8f37-b3a6-b17f36e764a7"
-uuid: "81c2b961-52ee-83d9-8a29-09f68d4485d9"
-horo: 7
+coordinate: "cross · 8/crest · e0a36672"
+contentUuid: "3ad825af-1457-5845-afaa-130d312a511a"
+diamondUuid: "b5b42fc0-ec2f-83b5-a31f-03612191257e"
+uuid: "e0a36672-41e4-8e99-8c59-6f6c399c78c5"
+horo: 8
 typography:
   partition: cross
-  bondDegree: 58
+  bondDegree: 68
 standards:
   - "ISO 27002 §5.15 access-control + §5.3 segregation-of-duties"
   - "ISO-27002"
@@ -18,7 +18,7 @@ standards:
   - "NIST-INCITS-359-2012"
 bindings: []
 signatures:
-  computationUuid: "c69da587-632e-895a-91d3-77c456e52c33"
+  computationUuid: "dd8b89c4-c1e9-8fa3-b9d5-f52c6e50a0ef"
   stages:
     - stage: path
       stageUuid: "83564b20-9d2e-8449-a9be-5e389526d96f"
@@ -27,17 +27,14 @@ signatures:
     - stage: boundary
       stageUuid: "d51990a6-75e2-8396-8535-0d3a743c34e1"
     - stage: links
-      stageUuid: "abbf30ac-176d-8eb0-bb7d-e2d4dd24d301"
+      stageUuid: "6c69dfeb-6f6f-8d3d-b58b-fc0fb9f9046e"
     - stage: horo
-      stageUuid: "059f8b59-6fa1-8cfb-b4e1-31f00d472f8d"
+      stageUuid: "5beab769-5b17-8d6c-9d41-23ef98f6d7d9"
     - stage: seal
       stageUuid: "7d29c4f8-f242-8a42-b0d8-fadfcb5abd6d"
     - stage: uuid
-      stageUuid: "74e7c994-245b-8bec-b4ae-14a92248a24f"
+      stageUuid: "5c2eab75-35e8-8471-b5a4-bd8f578faa5e"
 version: 2
-neighbors:
-  wikilink:
-    - "[[cross/index]]"
 ---
 # cross — the agnostic access factory (the 3·6·9 governing axis)
 

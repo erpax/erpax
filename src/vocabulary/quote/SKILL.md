@@ -2,11 +2,11 @@
 name: quote
 description: "Use when reasoning about quote as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/quote"
-coordinate: "vocabulary/quote · 4/weave · a6ac6111"
-contentUuid: "dd2462db-a307-58c1-8668-6b4f11f17bed"
-diamondUuid: "b146485d-4736-85da-a4a5-5a20b8c6fc2e"
-uuid: "a6ac6111-fdfd-8758-9e03-a13c293dc0a1"
-horo: 4
+coordinate: "vocabulary/quote · 7/descent · b75e356b"
+contentUuid: "9d7a1251-046b-59ff-a8ec-e3139c5996a8"
+diamondUuid: "1b21c65e-7d4d-89ae-8441-1f98268db3bd"
+uuid: "b75e356b-f963-8081-a9bc-5b426bb6ddbc"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ad84008a-00d1-8d29-96c3-f2221b526628"
+  computationUuid: "0e9529d9-fbdd-8d54-921c-8550bb661df1"
   stages:
     - stage: path
       stageUuid: "ba5da0aa-82d9-8612-befd-5ac10d3566c2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "63e382d5-1d7d-8f44-a199-e2167db4ae58"
     - stage: horo
-      stageUuid: "89ab312b-5288-81df-9f64-ca1697a27fa4"
+      stageUuid: "4f7b2544-c9fb-867c-a138-1a7f5140996c"
     - stage: seal
-      stageUuid: "7581fb16-a47e-8df2-96bd-e9a7409b9846"
+      stageUuid: "250a2bb9-0422-8f63-a1a6-ca94785634db"
     - stage: uuid
-      stageUuid: "9beda029-68a6-8d2c-8f1b-d22fb2cd93c5"
+      stageUuid: "ced156d2-6bad-8dcc-85c6-2b2b6204a904"
 version: 2
 ---
 # quote

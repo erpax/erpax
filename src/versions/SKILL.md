@@ -2,33 +2,33 @@
 name: versions
 description: "Use when enabling or debugging Payload versions, drafts, autosave, or scheduled publish — version history, draft/published status, restoring versions, or controlling how many versions are kept."
 atomPath: versions
-coordinate: "versions · 7/descent · e3348ad3"
-contentUuid: "892f5777-5e19-52f9-b656-479a69db7860"
-diamondUuid: "7994efe5-f97e-8e0f-ab42-d0b0a3749786"
-uuid: "e3348ad3-c5fd-8798-8f70-0a0e98c1e4bb"
-horo: 7
+coordinate: "versions · 5/round · 0375d230"
+contentUuid: "bea43183-c982-5bae-8502-e5e5563a1fe6"
+diamondUuid: "33def64f-47b4-86c6-a359-d77f45112cdb"
+uuid: "0375d230-9ab6-8653-82dc-932ea7d15ebf"
+horo: 5
 typography:
   partition: versions
-  bondDegree: 0
+  bondDegree: 106
 standards: []
 bindings: []
 signatures:
-  computationUuid: "48af16d6-e5be-818b-b6c0-551dc59ca572"
+  computationUuid: "1eef3bf6-28cf-8b96-be24-067bb4bdbe88"
   stages:
     - stage: path
       stageUuid: "5c2cde25-082b-8409-844f-f8335c7036cd"
     - stage: trinity
-      stageUuid: "4a19559c-a492-8472-b479-f399767d9409"
+      stageUuid: "edc21d79-e862-80f0-910a-b8646638ac28"
     - stage: boundary
-      stageUuid: "146b523f-8e0d-8543-98bf-34b085bcbe8e"
+      stageUuid: "4f4a40cc-8bba-8f4a-9f94-efbd276d3909"
     - stage: links
       stageUuid: "9e25457a-2bdb-877e-b052-4842b4ea2923"
     - stage: horo
-      stageUuid: "cc2cf0f1-9f3f-89d9-92ba-5b1ba21beee4"
+      stageUuid: "450cb055-ed8f-86c5-a44e-e44bf9c75f7a"
     - stage: seal
-      stageUuid: "9460ac6a-c9a4-8f6e-aad3-7313ea7f664f"
+      stageUuid: "0394d9a9-3d98-84f9-a470-d96c53b0e150"
     - stage: uuid
-      stageUuid: "bffceb96-be27-854f-8834-eccdce1f0fa4"
+      stageUuid: "9ec4c63e-46de-897a-b8fd-2c1cd2468fd3"
 version: 2
 ---
 # versions — drafts, autosave, history

@@ -1,10 +1,36 @@
 ---
 name: publication
-description: Zenodo v1.0.0 release workflow with permanent DOI and peer-verifiable publication
-metadata:
-  type: form
+description: "Use when reasoning about publication — Zenodo v1.0.0 release workflow with permanent DOI and peer-verifiable publication"
+atomPath: publication
+coordinate: "publication · 1/base · 88de579a"
+contentUuid: "9620a357-7949-5201-9091-64ad2700cec2"
+diamondUuid: "a650d132-5ffb-8983-8077-18e3d6755ac3"
+uuid: "88de579a-7979-8f95-86d9-035fe6ccf3f3"
+horo: 1
+typography:
+  partition: publication
+  bondDegree: 26
+standards: []
+bindings: []
+signatures:
+  computationUuid: "3a92066c-00b3-82fe-92ee-5a7c7cb533c7"
+  stages:
+    - stage: path
+      stageUuid: "6d10f55f-5375-818f-a846-37fc7f33e139"
+    - stage: trinity
+      stageUuid: "d5fe73b7-088a-82a3-ac6e-d039d2ac03d7"
+    - stage: boundary
+      stageUuid: "0f3c6af9-a3ec-897c-9edc-511d79002566"
+    - stage: links
+      stageUuid: "7c4b012e-b06a-85de-a975-6117d7af8413"
+    - stage: horo
+      stageUuid: "7dc5fcca-7537-8422-ab0c-02a6b5d4af31"
+    - stage: seal
+      stageUuid: "61354a4b-a818-8b89-a7c5-986fa3b55009"
+    - stage: uuid
+      stageUuid: "a489eefa-b7aa-80fe-96b6-8beae358cc1d"
+version: 2
 ---
-
 # publication — Quantum System v1.0 peer-verifiable release
 
 Release workflow for publishing hardened quantum system to Zenodo with permanent DOI. Integrates [[proof]] · [[expansion]] · [[threat]] · [[pqc]] into v1.0.0 milestone.

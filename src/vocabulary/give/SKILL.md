@@ -2,18 +2,18 @@
 name: give
 description: "Use when reasoning about the outflow side of an exchange in erpax — credit, units-out, grant, send, post-out. The universal root of giving; dual of take, equilibrium is balance."
 atomPath: "vocabulary/give"
-coordinate: "vocabulary/give · 1/base · 48986b00"
-contentUuid: "2769660f-e23d-5f52-ba7d-4dbebac3f9ad"
-diamondUuid: "df53e15c-df20-8d7c-93c8-4a82b927914c"
-uuid: "48986b00-4890-8d66-9e88-9a30e6edf623"
-horo: 1
+coordinate: "vocabulary/give · 4/weave · 9a9374a6"
+contentUuid: "97ce30d0-f36d-5c91-832b-8896b4c165d5"
+diamondUuid: "090028e0-4946-8a17-8087-a29e0be67bcd"
+uuid: "9a9374a6-9964-807e-8f99-0bebb604fa5e"
+horo: 4
 typography:
   partition: vocabulary
-  bondDegree: 125
+  bondDegree: 121
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9f3c26d4-3953-8861-aada-8955c6989f3e"
+  computationUuid: "51d4604d-395a-850f-a10b-5071c07ed6fb"
   stages:
     - stage: path
       stageUuid: "ace510d9-2a85-86f7-9d13-9f6437a96b72"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ae2aa6e1-b061-854e-96e8-b994fd062231"
     - stage: horo
-      stageUuid: "41c47251-a739-8018-bf00-d20c4e965b65"
+      stageUuid: "18b920db-3998-85ff-96d9-bfe1e4f44946"
     - stage: seal
-      stageUuid: "eb3380d1-cf35-83c4-a71e-6758915a2d26"
+      stageUuid: "03e58610-96ae-88f4-ae9e-b32f6323e179"
     - stage: uuid
-      stageUuid: "4f69292b-f4da-88c4-87a4-bead1f8fd407"
+      stageUuid: "f4121c8e-a419-8327-b39a-17120ebee067"
 version: 2
 ---
 # give

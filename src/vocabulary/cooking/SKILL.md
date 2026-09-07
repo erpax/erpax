@@ -2,11 +2,11 @@
 name: cooking
 description: "Use when reasoning about cooking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/cooking"
-coordinate: "vocabulary/cooking · 2/share · 21a4d0cf"
-contentUuid: "0d8448a7-cc22-5cf3-a537-bcf5384f86dc"
-diamondUuid: "60c9dfe7-7725-8800-99b5-94c64ab736ec"
-uuid: "21a4d0cf-b1ce-8540-b912-0d404dec926e"
-horo: 2
+coordinate: "vocabulary/cooking · 8/crest · f5745c22"
+contentUuid: "d4e0531e-005f-51c9-9a03-babd20fc426d"
+diamondUuid: "54b1a974-f2e0-8f13-af15-ffbbdcab9fde"
+uuid: "f5745c22-adc4-85de-bbb7-e994960b1525"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "058cf5a8-5b7d-876d-b58e-eb1f7f2055c2"
+  computationUuid: "c5f2a841-a93f-8ed4-a042-e4c014a13728"
   stages:
     - stage: path
       stageUuid: "80e8de3b-5ba4-85cc-9438-aeac0bfe82db"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1da5f116-aa53-887b-a8e4-29dc88661843"
     - stage: horo
-      stageUuid: "b56ee9d9-45f7-8000-a795-e8bec0d085b8"
+      stageUuid: "2a554288-7d17-8158-8411-0f89a757dee5"
     - stage: seal
-      stageUuid: "6a7ece4d-d5b9-8521-90e5-01302ac7b0d8"
+      stageUuid: "37c8d88f-977a-82f8-82f9-4deca08a8ef5"
     - stage: uuid
-      stageUuid: "fc7a1a55-2a57-84e7-be3e-5861280a29f9"
+      stageUuid: "c1ad1049-aeb7-8d07-adf0-0c2770c277f2"
 version: 2
 ---
 # cooking

@@ -2,8 +2,36 @@
 name: surface
 description: "Use when checking that wrangler.jsonc and the code agree about bindings — a name read from env that no binding declares is undefined at runtime, and every reader guards with an early return, so the function silently does nothing in production. Enforces READ ⇒ DECLARED, which is decidable; deliberately does NOT enforce DECLARED ⇒ READ, because OpenNext, the Payload adapter and plugins legitimately read bindings this scan does not cover. Comments are stripped before the scan: a binding named in prose is not a use."
 atomPath: "cloudflare/surface"
+coordinate: "cloudflare/surface · 5/round · 2c6e3680"
+contentUuid: "56f071c4-e919-550a-a825-f93791fcca18"
+diamondUuid: "c8914adb-58d4-8b64-9df5-67aaaf92e9a5"
+uuid: "2c6e3680-b6b4-820d-9c1d-22f29db9bf18"
+horo: 5
+typography:
+  partition: cloudflare
+  bondDegree: 20
+standards:
+  - "ISO/IEC 25010:2023 §5.3 — compatibility: co-existence with the platform's contract"
+bindings: []
+signatures:
+  computationUuid: "0b15f60f-1516-8d64-80c6-647f95f7ba7d"
+  stages:
+    - stage: path
+      stageUuid: "32719b63-96f4-8a8a-842a-231ebc7235f4"
+    - stage: trinity
+      stageUuid: "b0189b81-9b9a-88ed-882f-53e58d564e6f"
+    - stage: boundary
+      stageUuid: "7c3e2ca6-af46-8fae-9cbe-da6cd757697a"
+    - stage: links
+      stageUuid: "3de4bc67-1a3b-84e7-ba34-df71ec176cce"
+    - stage: horo
+      stageUuid: "bae7ffa7-a1ec-8154-abb0-f3e5466ce37c"
+    - stage: seal
+      stageUuid: "db086073-0fd8-803e-9042-6b85cf7545f0"
+    - stage: uuid
+      stageUuid: "e68f9b8f-f2a4-86fe-87b8-e60350a5ad2c"
+version: 2
 ---
-
 # cloudflare/surface — the config and the code must agree, and nothing warns when they do not
 
 A binding read under a name `wrangler.jsonc` does not declare is `undefined` at runtime. Every reader in this corpus guards with an early return, so the failure is **silent**: no error, no log, no failed deploy. The function simply does nothing, forever.

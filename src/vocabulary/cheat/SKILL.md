@@ -2,11 +2,11 @@
 name: cheat
 description: "Use when reasoning about cheat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/cheat"
-coordinate: "vocabulary/cheat · 2/share · fc35399b"
-contentUuid: "ef790dc2-7743-5bdb-a5d7-946d7a6bb6d2"
-diamondUuid: "38b05ab9-86a9-84aa-95e9-e80efd15037a"
-uuid: "fc35399b-135b-86db-b027-862c309cac40"
-horo: 2
+coordinate: "vocabulary/cheat · 5/round · fa0c31de"
+contentUuid: "b8b1ea2f-d078-5653-8eb3-36801d38ee52"
+diamondUuid: "a2097da1-aca5-8ea4-8533-991553ebe6cb"
+uuid: "fa0c31de-df07-87b3-b899-a4751a030e01"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7ce0ab92-2e5c-8791-bd05-dd7d20544b87"
+  computationUuid: "005ed636-9feb-8ca3-9327-962657bfa9e9"
   stages:
     - stage: path
       stageUuid: "5c05fa9d-d2d0-8d63-bece-5498391e5e20"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ee78d62b-de10-8bcc-bd5e-a56cab0cb64c"
     - stage: horo
-      stageUuid: "797bbc4e-c4b6-8070-92e5-41293b75815b"
+      stageUuid: "094186df-a7f9-8924-8366-e541fd939b80"
     - stage: seal
-      stageUuid: "cbad6480-c720-80c5-a5a0-efc4210a029b"
+      stageUuid: "26f77e42-4669-8b90-89cb-b143276ca655"
     - stage: uuid
-      stageUuid: "8a2f5905-c81e-8592-85ca-ba0e5ea422f8"
+      stageUuid: "fcd29eee-6bd2-8c6c-8682-ca3ab2e28188"
 version: 2
 ---
 # cheat

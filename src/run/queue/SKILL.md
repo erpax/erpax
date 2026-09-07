@@ -2,8 +2,35 @@
 name: queue
 description: "Use when a declared Cloudflare queue consumer must actually reach a handler — consumeQueueBatch runs the payload jobs sweep (the queue message is a nudge; the database holds the work) and acks the whole batch on a green sweep, retries the whole batch otherwise, so max_retries moves a misconfigured batch to erpax-dlq where it is visible. Found because wrangler deploy FAILS CLOSED on a consumer with no queue() export — code 11001 — the deploy-blocking form of an unraised case."
 atomPath: "run/queue"
+coordinate: "run/queue · 5/round · 743839c8"
+contentUuid: "ec26ba8d-9223-56ca-85ef-ce37a2048cdd"
+diamondUuid: "6b92bc75-2622-8c72-afed-d3916b8fa478"
+uuid: "743839c8-89e3-81f3-87e5-7d0f5a649111"
+horo: 5
+typography:
+  partition: run
+  bondDegree: 31
+standards: []
+bindings: []
+signatures:
+  computationUuid: "f6f3716e-c34b-8434-8822-83299f7e7a3b"
+  stages:
+    - stage: path
+      stageUuid: "146f62e1-40af-82f3-9917-8745cd896e73"
+    - stage: trinity
+      stageUuid: "e5f9fe2e-2bf5-83e2-9799-3b2b45e062b0"
+    - stage: boundary
+      stageUuid: "55ec32a9-8fbd-8f04-9980-ac414ec6a450"
+    - stage: links
+      stageUuid: "301614fb-50d1-8ed0-a17a-f0fce80705e5"
+    - stage: horo
+      stageUuid: "d9a9deb2-7a09-8db7-8471-7242b67cdd29"
+    - stage: seal
+      stageUuid: "ad467567-bf53-8b6a-9d9a-70740d785cf6"
+    - stage: uuid
+      stageUuid: "40f9f59c-8710-83c2-9ec5-37ac9a338f9d"
+version: 2
 ---
-
 # run/queue — the consumer the declared queues never had
 
 `wrangler.jsonc` declares five queue consumers and the producers are live — `queueSendNamed` in the [[cloudflare]] atom sends stamped domain events to `erpax-ai-batch` · `erpax-einvoice-out` · `erpax-dunning-out` · `erpax-period-close` · `erpax-email-out`. But the Worker entry exported no `queue()` handler, so `wrangler deploy` refused to attach the consumers:

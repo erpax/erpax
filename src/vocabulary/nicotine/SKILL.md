@@ -2,11 +2,11 @@
 name: nicotine
 description: "Use when reasoning about nicotine as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/nicotine"
-coordinate: "vocabulary/nicotine · 2/share · 53fe22b9"
-contentUuid: "ec4213d9-f078-5fa8-9b04-37d86f478158"
-diamondUuid: "b2116ab5-a2ce-83c6-b090-29581e391ed1"
-uuid: "53fe22b9-8f81-8ff2-b81e-6d98cb70aaba"
-horo: 2
+coordinate: "vocabulary/nicotine · 5/round · 9b9b36d4"
+contentUuid: "8e43e932-1a58-5a61-9c3d-8380584a24e3"
+diamondUuid: "d5cc9dd7-c8c3-87bf-8fbb-3f0347cc60f4"
+uuid: "9b9b36d4-f964-83ae-aaea-27937fde047c"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "237464e0-d34e-8e37-abaf-c910675717e1"
+  computationUuid: "a5055c64-01d6-8ea0-a8f7-705be7b9727f"
   stages:
     - stage: path
       stageUuid: "9547a978-7640-8939-a114-ea50c96814c3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "31708470-c9d8-831f-bb84-efd96b9f0e2a"
     - stage: horo
-      stageUuid: "f74ce2ff-8cef-8cf2-9225-3fe0ac1f780c"
+      stageUuid: "ff5a1b58-4b55-8a7a-8a43-94e668fdaf5f"
     - stage: seal
-      stageUuid: "38180195-a147-8c6f-8a6b-6826088cb779"
+      stageUuid: "c815121a-a99a-8514-acc0-7a3927c5dea8"
     - stage: uuid
-      stageUuid: "65302f6f-9a66-8c12-aa94-72f771c127f0"
+      stageUuid: "db9b2e05-ead8-8d05-957c-a364ec40c3dd"
 version: 2
 ---
 # nicotine

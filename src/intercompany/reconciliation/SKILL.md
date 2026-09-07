@@ -2,14 +2,14 @@
 name: reconciliation
 description: "Use when reconciling intercompany payable/receivable balances for multi-entity period close — the 'payable = receivable, net' invariant is the conservation algebra (netFlow = 0) at entity scale, proven at 0 and at scale, refutable on any break."
 atomPath: "intercompany/reconciliation"
-coordinate: "intercompany/reconciliation · 8/crest · 8b8e17b3"
-contentUuid: "6643ba6c-e4a2-516e-9f80-f2fa83aab05e"
-diamondUuid: "39426280-59cc-850b-bdc5-fd3789db2f94"
-uuid: "8b8e17b3-3420-8389-aa42-c3ebc006c290"
-horo: 8
+coordinate: "intercompany/reconciliation · 2/share · 7f2a36bf"
+contentUuid: "1b827ffa-e1ea-5495-9347-9719db765b01"
+diamondUuid: "19223475-3a4e-875f-9df6-816f66689df3"
+uuid: "7f2a36bf-f042-894f-b98f-f6bcc556915f"
+horo: 2
 typography:
   partition: intercompany
-  bondDegree: 15
+  bondDegree: 27
 standards:
   - "IAS-27:2023 (consolidated and separate financial statements)"
   - "IAS-28:2023 (associates and joint ventures)"
@@ -21,7 +21,7 @@ standards:
   - "SAF-T:3.0.2 (multi-entity audit trail)"
 bindings: []
 signatures:
-  computationUuid: "5cd17bf6-f422-85a9-853e-482034062509"
+  computationUuid: "362647a5-059c-8cae-95e6-24d437447e1b"
   stages:
     - stage: path
       stageUuid: "38e4f755-dc98-803c-bbdc-816592099d35"
@@ -30,13 +30,13 @@ signatures:
     - stage: boundary
       stageUuid: "afc39431-fb45-8d30-a28b-9cfa9ad8757f"
     - stage: links
-      stageUuid: "afa9b908-a574-8b60-b4f6-31bc69e47e50"
+      stageUuid: "a8128923-c523-8136-8e80-14d96ba5aef0"
     - stage: horo
-      stageUuid: "c4c7d42c-63b0-8d0a-aa89-3eea450ecf9b"
+      stageUuid: "fd5c2422-bc50-831b-99cc-83899ea6c37f"
     - stage: seal
       stageUuid: "bbbb288a-7f35-8fce-8e39-8eb9f11a57d3"
     - stage: uuid
-      stageUuid: "e14c96d0-5789-8c75-bccc-36e019fd49c0"
+      stageUuid: "08ce7915-6757-82d8-8bc2-7d409f5841a8"
 version: 2
 ---
 # intercompany/reconciliation — payable = receivable, net: conservation at entity scale

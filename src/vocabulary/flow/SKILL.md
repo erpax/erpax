@@ -2,18 +2,18 @@
 name: flow
 description: "Use when reasoning about movement in erpax — value between parties (document chain), data in→out (material cycle), event streams, production through routing. The universal root of movement."
 atomPath: "vocabulary/flow"
-coordinate: "vocabulary/flow · 2/share · 39d58d51"
-contentUuid: "fd7642c3-5d39-50f7-8c80-71790a68d3a5"
-diamondUuid: "d990a868-416b-85a1-a0a2-4346f983df20"
-uuid: "39d58d51-4a46-8507-b2b0-f4314a05b43b"
+coordinate: "vocabulary/flow · 2/share · 20220eb1"
+contentUuid: "fb8af0d9-c084-5676-8751-616d71fbc8ad"
+diamondUuid: "2d53643f-72f7-8f3e-9f87-4673f946c562"
+uuid: "20220eb1-1cf3-8fd4-9ac9-706fad3dc16f"
 horo: 2
 typography:
   partition: vocabulary
-  bondDegree: 134
+  bondDegree: 120
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7d68fdf1-ac29-8c1d-ba69-1a53b4ead475"
+  computationUuid: "168d840b-60dc-8505-8d0a-09b2a2bf0873"
   stages:
     - stage: path
       stageUuid: "dba0d40d-7b18-8471-94c3-5f0ad0ce15dc"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "491206dd-9380-8a7c-94b8-36391ef957bf"
     - stage: horo
-      stageUuid: "620f7f00-9d69-8660-b0e4-b68d100e56d4"
+      stageUuid: "d26329de-1539-8f08-a041-484921a20b49"
     - stage: seal
-      stageUuid: "a1feb70c-528e-867f-8f0e-44c223675512"
+      stageUuid: "952f0cd8-7184-86b4-8070-5c02ac4b210c"
     - stage: uuid
-      stageUuid: "aba7bcf4-5031-8f19-9747-fb27e13c1b8f"
+      stageUuid: "0039f163-7ff6-81a9-9488-12499ffcd20e"
 version: 2
 ---
 # flow

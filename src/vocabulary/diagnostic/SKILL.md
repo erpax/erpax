@@ -2,11 +2,11 @@
 name: diagnostic
 description: "Use when reasoning about diagnostic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/diagnostic"
-coordinate: "vocabulary/diagnostic · 1/base · c76f9b6c"
-contentUuid: "b09a0549-f334-5bba-9d4a-aea6c1b63dd2"
-diamondUuid: "0462f3e2-6b73-823c-8d8c-ee6c4cd48e2f"
-uuid: "c76f9b6c-bf3b-8552-bfbd-d10e0dd59cf5"
-horo: 1
+coordinate: "vocabulary/diagnostic · 7/descent · f4cb6a83"
+contentUuid: "67649051-26ed-5636-9a3e-d1650d79c5b5"
+diamondUuid: "36e4c868-f22c-874c-85cb-30a37720f9fb"
+uuid: "f4cb6a83-3671-8fbd-aa5a-d5efa657efb9"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bd8bb04e-9801-8c23-aeac-8ee7a326fa0d"
+  computationUuid: "5d35d8ab-2c5c-8982-86e3-4ed551c69665"
   stages:
     - stage: path
       stageUuid: "052f72b8-02d1-87b2-bbcc-3ccb5426d47b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b5bad774-3573-8246-af76-462f7c156046"
     - stage: horo
-      stageUuid: "828ffdd3-470d-8dcd-87e6-bc922c2a3e87"
+      stageUuid: "3463efd6-f621-87ef-96f5-bb93ccae279e"
     - stage: seal
-      stageUuid: "ca78d1cd-70a9-8606-85c4-752046fdb8e5"
+      stageUuid: "4e14d6b3-c0a7-88a3-9ef7-42ee9d40c526"
     - stage: uuid
-      stageUuid: "4da2eea4-f161-8ec8-adb9-d6bb2e0bc65f"
+      stageUuid: "05702df9-b764-894a-8fba-8819bf4d02d7"
 version: 2
 ---
 # diagnostic

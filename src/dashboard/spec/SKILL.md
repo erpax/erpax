@@ -3,13 +3,13 @@ name: spec
 description: "Use when reasoning about spec — The corpus grew two widget shapes: one taking props, one fetching its own data over REST."
 atomPath: "dashboard/spec"
 coordinate: "dashboard/spec · 2/share · 3ea07235"
-contentUuid: "c2c07b7e-8473-50ce-b3ed-b07a361edb79"
+contentUuid: "ba475d65-5e23-5544-87e7-37f17affa7a4"
 diamondUuid: "6455e5aa-cf81-8ef0-89ad-18b2dcabbf0e"
 uuid: "3ea07235-bd37-88a1-bd2c-c5480c7f4cd0"
 horo: 2
 typography:
   partition: dashboard
-  bondDegree: 50
+  bondDegree: 47
 standards:
   - "ISO-27002"
   - "ISO-27002 §5.15 access-control + §5.3 segregation-of-duties"

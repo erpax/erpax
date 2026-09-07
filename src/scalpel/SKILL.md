@@ -2,18 +2,18 @@
 name: scalpel
 description: "Use when many agents must edit in thousands without fabricating — read-only researchers emit op manifests (file · find · replace · reason); one executor cuts in ≤30-file batches, unique-match-or-refuse, ring-verified, red rolls back to the byte."
 atomPath: scalpel
-coordinate: "scalpel · 1/base · 3fa20e47"
-contentUuid: "3844de0c-a57d-5ddc-b6f1-2d9f04755b13"
-diamondUuid: "1c52449d-04e3-824b-9326-59552d9feb14"
-uuid: "3fa20e47-dc60-809e-8607-b6ce776a3e06"
+coordinate: "scalpel · 1/base · b5caa359"
+contentUuid: "b3d15695-43a5-588b-8998-b97041164f9a"
+diamondUuid: "0383bcc9-948b-88f2-9e16-6a49c66b145a"
+uuid: "b5caa359-ee04-8c44-9f7b-53535e8d630b"
 horo: 1
 typography:
   partition: scalpel
-  bondDegree: 19
+  bondDegree: 33
 standards: []
 bindings: []
 signatures:
-  computationUuid: "586e1a73-a422-8fbe-9b29-dae26761f0bf"
+  computationUuid: "460c2e7a-29e6-8062-9f7a-20024c845d5f"
   stages:
     - stage: path
       stageUuid: "6763a441-19e1-80f5-a4d3-fe2eee275050"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b84de853-8e45-8ff7-a488-b48f91f12038"
     - stage: horo
-      stageUuid: "524be4d4-5b6a-810c-80b3-2fa50b12a480"
+      stageUuid: "6e66077a-974e-8b67-9f5c-b45a1bdd0e14"
     - stage: seal
       stageUuid: "bba7a9f1-16e2-8479-9f20-3b7be30b92de"
     - stage: uuid
-      stageUuid: "8b6af5f2-feea-8373-9693-5ae712744e07"
+      stageUuid: "108bb090-d786-84b0-be31-96100d89c870"
 version: 2
 ---
 # scalpel — coordinated surgical edits in thousands

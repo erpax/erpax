@@ -3,13 +3,13 @@ name: service
 description: "Use when reasoning about service — is the client for tenant administration — create, update, batch actions — and is the instance callers use."
 atomPath: "tenant/service"
 coordinate: "tenant/service · 5/round · a17fd75a"
-contentUuid: "5f01910b-0c88-527c-9f5d-18d68e7e5cc0"
+contentUuid: "21f23ba8-de88-5004-8013-780b4557d821"
 diamondUuid: "7a14d48d-24bc-850e-90ce-c3e8e5b75867"
 uuid: "a17fd75a-ff46-83d5-b0ec-c9e069cc4cf5"
 horo: 5
 typography:
   partition: tenant
-  bondDegree: 189
+  bondDegree: 183
 standards:
   - "9110 http-semantics"
   - GDPR Art.28 processor

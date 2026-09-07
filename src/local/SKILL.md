@@ -2,18 +2,18 @@
 name: local
 description: "Use when reasoning about local — Use before fetching anything — a remote read returns a rendering, a local read returns bytes. Measured four times in one session: a web fetch runs a small model over a page and returns its prose, which was then quoted as verbatim and used to contradict a human, while a local clone sat on disk; the free AI lanes returned 402 and 405 while the local seal book answered at tokens 0; every corpus frontier computed locally in one pass; sixteen defects caught by local gates and none by anything remote. localFirst resolves to the local copy whenever it exists, and a remote read whose local counterpart is present is named as a downgrade."
 atomPath: local
-coordinate: "message/local · 1/base · dc80c276"
-contentUuid: "b3004699-e004-5741-b886-4c2e59eb235d"
-diamondUuid: "5910cab9-b265-87e3-8b1c-442be826b70f"
-uuid: "dc80c276-4751-8e40-9d5b-4ae2492911fd"
-horo: 1
+coordinate: "local · 8/crest · 4726c294"
+contentUuid: "3c269269-90d5-5400-9893-33d6efad0ca9"
+diamondUuid: "108c991c-0323-8626-a387-2cd356207b67"
+uuid: "4726c294-477b-819d-a0a4-ae43a0933fd5"
+horo: 8
 typography:
   partition: local
-  bondDegree: 44
+  bondDegree: 41
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7d054015-4044-8370-863e-f0bed87e8450"
+  computationUuid: "39a747cb-f575-8712-9ceb-0791afdb4e09"
   stages:
     - stage: path
       stageUuid: "777da901-66a4-8c1b-a9b8-5684d02d1c0d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f45d8100-952a-80a9-8a24-9f2cc064650d"
     - stage: horo
-      stageUuid: "55b3bcb0-cfa7-848f-9a34-718605bd4ad8"
+      stageUuid: "0ef36a9e-6380-80dd-ac45-dcbc41423448"
     - stage: seal
-      stageUuid: "6fc6c077-9bb3-85d2-bd70-f0ea0be9fa28"
+      stageUuid: "38a931e2-3326-8944-982a-967c80211c31"
     - stage: uuid
-      stageUuid: "f241899a-cfb8-84c8-b319-669b2f6d4942"
+      stageUuid: "ac17a6d5-abb0-8ac8-8989-ee04a0121b5f"
 version: 2
 ---
 # local — a remote read returns a rendering; a local read returns bytes

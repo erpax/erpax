@@ -1,11 +1,56 @@
 ---
-name: "cipher"
-description: "Ciphertext-only receipts that seal plaintext boundaries"
-uuid: "d1b42e7f-a821-8c44-b5a7-3e9c1d62f8ae"
-horo: 2
-state: base
+name: cipher
+description: "Use when reasoning about cipher — Ciphertext-only receipts that seal plaintext boundaries"
+atomPath: "quantum/fold/cipher"
+coordinate: "quantum/fold/cipher · 8/crest · 1c88b19a"
+contentUuid: "3d08fec1-8cc9-5837-8540-cf4de9eb6d72"
+diamondUuid: "60fd3855-e7b4-836b-9841-ffdb526bba7e"
+uuid: "1c88b19a-807c-8c76-a509-649ce2d4345e"
+horo: 8
+typography:
+  partition: quantum
+  bondDegree: 15
+standards: []
+bindings: []
+signatures:
+  computationUuid: "a70333a5-8c37-8166-8a24-855e00fcf8b1"
+  stages:
+    - stage: path
+      stageUuid: "30b4519c-efbf-8aac-9fa0-63b6d6ca5b12"
+    - stage: trinity
+      stageUuid: "52dd38a6-9da5-8ba3-8f8d-4968c03bdd8d"
+    - stage: boundary
+      stageUuid: "635fa90c-18d6-80e4-a1ea-e5ae9cef5e95"
+    - stage: links
+      stageUuid: "c0cbd541-1ba1-8ee8-bf5f-2314528efe5d"
+    - stage: horo
+      stageUuid: "466862ab-3acc-88d7-be9a-4d912fda8bab"
+    - stage: seal
+      stageUuid: "22df6bd3-7788-8985-bfef-a25d6a4d2f16"
+    - stage: uuid
+      stageUuid: "6b242cd7-d004-8541-a067-e1a3f774a9e3"
+quantum:
+  superposition:
+    - fold
+    - law
+    - publication
+    - quantum
+    - seal
+    - trinity
+    - superposition
+  collapse:
+    - "Use when reasoning about cipher — Ciphertext-only receipts that seal plaintext boundaries"
+  seal:
+    sandbox: false
+    receipt: false
+    pathFollow: true
+    canonicalRecord: true
+    analogResults: false
+    speechResults: false
+    computationUuid: "a70333a5-8c37-8166-8a24-855e00fcf8b1"
+    contentUuid: "3d08fec1-8cc9-5837-8540-cf4de9eb6d72"
+version: 2
 ---
-
 # cipher — ciphertext-only receipts, plaintext sealed
 
 **Plaintext is NEVER included in receipts.** Every receipt field derives from ciphertext only, ensuring the sealed fold's boundary cannot be compromised by examining audit trails or receipt data.
@@ -79,3 +124,5 @@ imports @/algebra
 [[seal]]/[[trinity]]: form (this interface) · code (index.ts) · proof (test.ts). Every field tested to verify plaintext does NOT appear.
 
 Composes: [[seal]] · [[quantum]] · [[law]]
+
+<sub>content-uuid `3d08fec1-8cc9-5837-8540-cf4de9eb6d72` · account `quantum/fold/cipher` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

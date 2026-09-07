@@ -2,10 +2,10 @@
 name: moisture
 description: "Use when modelling soil water as a managed reservoir — the plant-available water held between field capacity (after drainage) and the permanent wilting point, the slice irrigation refills and evapotranspiration drains. A capacity reservoir on the water axis, the twin of the soil's nutrient budget."
 atomPath: "vocabulary/moisture"
-coordinate: "vocabulary/moisture · 1/base · 80844c31"
-contentUuid: "ba324881-1692-587a-8247-455e8f993c29"
-diamondUuid: "3696e02d-fe22-8357-8bd4-05ddab02e402"
-uuid: "80844c31-6f95-8d93-9e9e-0c2970ecaf4d"
+coordinate: "vocabulary/moisture · 1/base · ce1612e0"
+contentUuid: "ba19ad56-1289-50d1-8992-cd569d0b7897"
+diamondUuid: "2fd6300b-2186-84a0-8c4c-cf36d0b313c6"
+uuid: "ce1612e0-cd83-8460-bdf7-5f55cc63526b"
 horo: 1
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "eb2f8fd1-5c6f-885b-92b8-b3d524f43e50"
+  computationUuid: "1bec8a3f-1a69-89b4-8775-9b7bf8ba19d2"
   stages:
     - stage: path
       stageUuid: "15f7f7fc-2d17-8ba2-8f8c-e128d0144663"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a36af703-96f0-841d-802d-d05061d07418"
     - stage: horo
-      stageUuid: "948d7f03-13d6-81f1-8a96-3f82a4294b02"
+      stageUuid: "f21f2f67-ffad-8849-9116-c281a0d2708b"
     - stage: seal
-      stageUuid: "7fe08d26-996d-8e41-aa3b-910d156bb49d"
+      stageUuid: "5bc06a5b-23a6-8642-9211-d376b5714397"
     - stage: uuid
-      stageUuid: "3eace41d-477a-8335-924a-692240bc2141"
+      stageUuid: "61264aa4-c08e-8fb9-a04f-b10ad0f425c1"
 version: 2
 ---
 # moisture — soil water held as a plant-available reservoir

@@ -2,11 +2,11 @@
 name: driven
 description: "Use when reasoning about driven as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/driven"
-coordinate: "vocabulary/driven · 8/crest · 15e98f08"
-contentUuid: "c1d56a1c-9efa-5731-8e64-e129f4b2f90c"
-diamondUuid: "b3265017-f5cb-86ba-9ab8-d58402261227"
-uuid: "15e98f08-d293-8025-b707-35b187ca2ba0"
-horo: 8
+coordinate: "vocabulary/driven · 1/base · 9b2f9fde"
+contentUuid: "611d5e57-34fa-523f-a7ca-492d712a14cb"
+diamondUuid: "6e11668f-d5e2-8e4c-a64b-6c0c65ced703"
+uuid: "9b2f9fde-10dd-8d4d-9590-d6bc995fe3b4"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "58158716-aa51-87c5-81fe-6cf1d128acd1"
+  computationUuid: "b344cd5d-a2fb-8dc3-8b46-b43ecf676bc0"
   stages:
     - stage: path
       stageUuid: "a3c248f7-4e16-8704-9d22-ac24cb0010f5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fbd6142e-e677-804e-9c5f-8c83c20c6880"
     - stage: horo
-      stageUuid: "33379cb1-a5b3-8c27-97c5-a52f066ee2c1"
+      stageUuid: "8bc4cc59-abe6-89f3-b7ea-39fb1970aded"
     - stage: seal
-      stageUuid: "ded5d596-48d6-886e-878e-364d43636619"
+      stageUuid: "5ccd4748-b008-86b9-9c67-ba131eae07d6"
     - stage: uuid
-      stageUuid: "ca8cc7d2-2351-8d85-b83c-9a7228814ab5"
+      stageUuid: "c0f18dd7-6e2d-8a98-8e48-78701956de3c"
 version: 2
 ---
 # driven

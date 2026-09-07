@@ -2,11 +2,11 @@
 name: added
 description: "Use when reasoning about added as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/added"
-coordinate: "vocabulary/added · 2/share · 413b3015"
-contentUuid: "72ef4c92-4e74-5b9e-8501-a2fc5ac3e80b"
-diamondUuid: "b8470c00-b2a0-8ae3-83bc-7a3c9cb5a098"
-uuid: "413b3015-b64b-8620-b311-1c6fdf2edd5a"
-horo: 2
+coordinate: "vocabulary/added · 5/round · 18b8ae8d"
+contentUuid: "ca77b01b-5389-5f2c-b93c-55b74d175b14"
+diamondUuid: "5d37398f-5569-8d85-ac10-44c8e7b5afd2"
+uuid: "18b8ae8d-7671-854e-ac55-5408f2ec4cf3"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a71d92f3-e02e-8673-9269-e22a2ccf3ed5"
+  computationUuid: "86d0c8ff-58ee-8e9e-be74-bc6e4e5659c0"
   stages:
     - stage: path
       stageUuid: "7a45987a-4c21-8fe6-be90-0d583c7c8158"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dae31609-0d9b-867c-ab37-c32f1b7ef735"
     - stage: horo
-      stageUuid: "1f7b08a5-d1d4-866a-8026-b6e7fa7e0998"
+      stageUuid: "eccababd-c028-839e-b187-3bee28e42b2d"
     - stage: seal
-      stageUuid: "f601aa3f-8894-8ea7-8246-2ce704924b7e"
+      stageUuid: "705fcce9-8951-8bf7-b016-9737840300e6"
     - stage: uuid
-      stageUuid: "3867664d-3899-8d10-ad20-59e5623c6f26"
+      stageUuid: "ec05b7e4-5037-8841-b632-f17281b54f86"
 version: 2
 ---
 # added

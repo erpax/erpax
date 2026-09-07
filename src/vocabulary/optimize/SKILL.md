@@ -2,10 +2,10 @@
 name: optimize
 description: "Use when building or reviewing Payload collections, fields, queries, or config for performance — slow admin/API, large generated schemas, heavy relationship population, duplicated block definitions, or oversized client bundles."
 atomPath: "vocabulary/optimize"
-coordinate: "vocabulary/optimize · 4/weave · 69ef340d"
-contentUuid: "03fb08d2-bf57-529f-b254-d82e34d4344b"
-diamondUuid: "7d6c4ad9-8704-81c7-abf6-9a763ee526c2"
-uuid: "69ef340d-5f65-8b91-b48c-80b6456773fe"
+coordinate: "vocabulary/optimize · 4/weave · c5a9560f"
+contentUuid: "49bc9943-ffe2-5f69-83e5-81156140da6b"
+diamondUuid: "18b29bb6-681f-8ed5-ad77-7a283000d6aa"
+uuid: "c5a9560f-16a0-88ce-8faf-36584b0870d2"
 horo: 4
 typography:
   partition: vocabulary
@@ -13,22 +13,22 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "00b173ba-e49e-8b6a-9c0a-ced6dc0607e3"
+  computationUuid: "cfc44676-9136-876a-b354-9c0f4af9d00a"
   stages:
     - stage: path
       stageUuid: "5948bcf6-e83a-8f46-a793-9ed3976d88a3"
     - stage: trinity
       stageUuid: "63eeec8a-06ef-8921-9bfe-49b83b91863b"
     - stage: boundary
-      stageUuid: "910a9a9a-8f77-8057-b226-603d331681ee"
+      stageUuid: "63a6884d-0804-84c5-901f-9abbf384a87c"
     - stage: links
-      stageUuid: "0ff27d57-66c4-82fc-8d97-bf2564231e49"
+      stageUuid: "97669959-65bd-8161-8c95-2df31fdf0b67"
     - stage: horo
-      stageUuid: "5e2a26c4-dac2-8780-8733-9f6237460666"
+      stageUuid: "14ec62a1-4dbf-855f-9ece-dc8adf5032cd"
     - stage: seal
-      stageUuid: "6bd7cb9a-1893-8113-9bb9-67eeaafeb68b"
+      stageUuid: "27e6b1a3-83ee-8489-9735-ff8bffbc08df"
     - stage: uuid
-      stageUuid: "160681f4-e48b-8d2f-900a-c034fb378b16"
+      stageUuid: "4f4fe7c3-73d1-8dc7-9df4-cec87c23a2c4"
 version: 2
 ---
 # optimize — Payload performance & schema-size best practices

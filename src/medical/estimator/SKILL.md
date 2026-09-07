@@ -2,11 +2,11 @@
 name: estimator
 description: "Use when reasoning about estimator as a medical facet of [[medical]] — vocabulary pivot to @/estimator; nested not duplicated."
 atomPath: "medical/estimator"
-coordinate: "medical/estimator · 5/round · 874897d1"
-contentUuid: "20decf1f-70e4-59fd-8730-9d7824e8ee03"
-diamondUuid: "a70bcf8d-1c1b-86f5-aac1-fe67edf5c610"
-uuid: "874897d1-1911-8417-a05f-fe152be3feb3"
-horo: 5
+coordinate: "medical/estimator · 7/descent · 0361669d"
+contentUuid: "c6f5950a-33b9-5716-9d32-fc92f0a51c5f"
+diamondUuid: "93adc2a4-cad5-8163-bdc3-23e6f37214b4"
+uuid: "0361669d-2ca1-85be-a0b0-a641fa7aae50"
+horo: 7
 typography:
   partition: medical
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c7629f3f-6e24-8c94-b14c-daefe83876c7"
+  computationUuid: "92a0acc0-7546-8bd4-ac6c-d3d9e525f25c"
   stages:
     - stage: path
       stageUuid: "313e5c13-eb42-8fc7-a613-3a13f07ed75d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f8b73e81-479a-8f73-9d67-60c5e3ba78a0"
     - stage: horo
-      stageUuid: "f7593441-5682-89a3-a2fe-b089e8237b28"
+      stageUuid: "2bc2e5f4-cd42-8689-b590-c482e9b77e48"
     - stage: seal
       stageUuid: "0df237c7-2cb7-8ef9-a649-d359559ceaf2"
     - stage: uuid
-      stageUuid: "7681ceb0-77a1-8d34-a45b-c1135ce2f483"
+      stageUuid: "e0671817-b0a2-8033-b75b-0eec1cab27f3"
 version: 2
 ---
 # medical/estimator — medical facet

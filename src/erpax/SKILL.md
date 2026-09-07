@@ -2,6 +2,35 @@
 name: erpax
 description: "Use when a consumer needs to FIND erpax rather than run it — the orientation face: the canonical repo, the sealed skill entry, the one law, and the tiered licence, shipped as @erpax/erpax."
 atomPath: erpax
+coordinate: "erpax · 1/base · fc46c600"
+contentUuid: "60b29c1c-b527-551b-a67f-6e8c7ef80b6f"
+diamondUuid: "8df924a4-ef88-82a1-aaa7-1435e87e2949"
+uuid: "fc46c600-df4f-8ae4-8f31-72a7ccfa50a3"
+horo: 1
+typography:
+  partition: erpax
+  bondDegree: 26
+standards:
+  - "RFC-3986"
+bindings: []
+signatures:
+  computationUuid: "9b674edb-6ac1-8c60-8ef7-1b3b9fb41099"
+  stages:
+    - stage: path
+      stageUuid: "310fdc7c-997b-8b46-8844-78a6e6ab4850"
+    - stage: trinity
+      stageUuid: "dc7d79e3-08a5-88bb-8219-22f4c21c766e"
+    - stage: boundary
+      stageUuid: "685777c9-8ed3-8ec7-97ab-07e2ceecdff0"
+    - stage: links
+      stageUuid: "50d5ca2e-f395-89fb-acd7-afd4b002fcbf"
+    - stage: horo
+      stageUuid: "ac56fcbd-9c96-8056-964f-09a3c4d61304"
+    - stage: seal
+      stageUuid: "78085b66-b263-878f-a974-bdecc79ac026"
+    - stage: uuid
+      stageUuid: "71516bb8-a8c2-8ccc-8eac-15dc8f858dba"
+version: 2
 ---
 # erpax — the face that names the whole
 

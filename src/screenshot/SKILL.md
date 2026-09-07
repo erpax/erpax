@@ -2,11 +2,11 @@
 name: screenshot
 description: Use when reasoning about screenshot — A link to a screenshot image of the app.
 atomPath: screenshot
-coordinate: "screenshot · 1/base · aeea138a"
-contentUuid: "e3d48b00-0f1b-5c65-aece-c86f0168bf35"
-diamondUuid: "f2ff9327-23e2-8206-94c5-b34eb58061c9"
-uuid: "aeea138a-baeb-8831-bb37-8de59d7bc2dd"
-horo: 1
+coordinate: "screenshot · 7/descent · e993f2fe"
+contentUuid: "c1c6928b-a6d8-5c87-a48c-788d3f70a75d"
+diamondUuid: "026d11d8-77cb-813d-aa05-36f878300477"
+uuid: "e993f2fe-d58f-8c24-807a-7ffdfba0a64d"
+horo: 7
 typography:
   partition: screenshot
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "daca4658-af8b-8c36-a9b1-2b9ce9e1c850"
+  computationUuid: "f40c326e-76e8-845b-b2b8-40c2fc219796"
   stages:
     - stage: path
       stageUuid: "5da7a0ce-f2f2-8a12-a2d8-c3aec50aab4f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1f5741b1-3bfc-82ee-9475-980ad4c92db1"
     - stage: horo
-      stageUuid: "21eb9f31-b60d-807e-86cf-5fb14aa5a9e6"
+      stageUuid: "184d669c-5a7c-8822-9c7e-2435c9ae049d"
     - stage: seal
       stageUuid: "21d09286-760a-85af-bc4d-56955373d62b"
     - stage: uuid
-      stageUuid: "c9a7602d-b4db-8bf3-ab70-7411d6669ad0"
+      stageUuid: "237f3c0c-8401-8d1f-8228-962a7a8b31bc"
 version: 2
 ---
 # screenshot

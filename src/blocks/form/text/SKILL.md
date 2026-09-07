@@ -3,13 +3,13 @@ name: text
 description: "Use when reasoning about text — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits."
 atomPath: "blocks/form/text"
 coordinate: "blocks/form/text · 2/share · 0cadb8b2"
-contentUuid: "be52910a-7a13-5add-b959-93207dffb4fc"
+contentUuid: "730ce7f6-62a0-5b9c-9ce1-98d766d4af80"
 diamondUuid: "38404be8-b713-851d-b34b-7f258382fbe4"
 uuid: "0cadb8b2-f88a-8414-aa25-d2f89a190f37"
 horo: 2
 typography:
   partition: blocks
-  bondDegree: 75
+  bondDegree: 69
 standards: []
 bindings: []
 signatures:

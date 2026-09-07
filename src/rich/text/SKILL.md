@@ -3,13 +3,13 @@ name: text
 description: "Use when reasoning about text — Lexical's serialized state becomes a React tree here. Most of that is the library's own default converters; what this atom decides is the small part the library cannot know."
 atomPath: "rich/text"
 coordinate: "rich/text · 8/crest · 60af13fd"
-contentUuid: "4c3f6d16-7e47-5dc0-be5c-5765c6c5f94d"
+contentUuid: "b959984f-f744-5bc2-8803-592c166f8940"
 diamondUuid: "3a29e966-d20f-8278-bb4a-3300b39ce5de"
 uuid: "60af13fd-c263-84d5-aa48-0a17e05514f0"
 horo: 8
 typography:
   partition: rich
-  bondDegree: 75
+  bondDegree: 69
 standards:
   - "CommonMark 0.31 markdown-fallback"
   - "W3C HTML5 Living Standard rich-text-output"

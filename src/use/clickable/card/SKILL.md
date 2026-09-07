@@ -3,13 +3,13 @@ name: card
 description: Use when reasoning about card — Making a card clickable is easy and usually wrong. Wrapping the card in an swallows every nested link.
 atomPath: "use/clickable/card"
 coordinate: "use/clickable/card · 2/share · 4674345d"
-contentUuid: "c121c957-8714-5446-af17-3ce48bc3eed5"
+contentUuid: "398da7b5-60ad-5cc8-8f39-691a734626f6"
 diamondUuid: "8bd33c5c-181b-8ff3-a90c-fc3fa933ccef"
 uuid: "4674345d-1e8a-883c-aaef-202531ddc0b2"
 horo: 2
 typography:
   partition: use
-  bondDegree: 33
+  bondDegree: 27
 standards: []
 bindings: []
 signatures:

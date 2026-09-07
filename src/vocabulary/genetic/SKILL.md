@@ -2,11 +2,11 @@
 name: genetic
 description: "Use when reasoning about genetic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/genetic"
-coordinate: "vocabulary/genetic · 7/descent · 21c0934e"
-contentUuid: "813845d9-56ae-5acf-aeb2-062a0933e7aa"
-diamondUuid: "fafabecf-2a95-8189-a2dc-352b31b42e1d"
-uuid: "21c0934e-6489-8863-8517-7206417b79db"
-horo: 7
+coordinate: "vocabulary/genetic · 1/base · d7d5d295"
+contentUuid: "0d66b938-2002-5708-b451-b32ad73d3d9b"
+diamondUuid: "a1d0e05c-7580-8f4c-8a11-0f666bfb04bd"
+uuid: "d7d5d295-f9b8-892b-8c0c-cd27c27592f9"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6792833f-ea9c-80ec-b859-f0df607fc2ce"
+  computationUuid: "fb4cbc65-b916-8b5f-9ea5-9acf7e0c906b"
   stages:
     - stage: path
       stageUuid: "323e9c54-3b7a-85e6-b0b9-4557d9bb7182"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b0dfd168-d4f5-8ea6-bd6c-e8eab660fc69"
     - stage: horo
-      stageUuid: "cac4d9be-acad-8be7-a7b3-17c129c03718"
+      stageUuid: "ad39bab5-2f7a-8618-959d-f1397f4039b0"
     - stage: seal
-      stageUuid: "1bb98c2b-006a-8c4f-8c07-4cd4c3726d48"
+      stageUuid: "4b320e80-2aa3-8541-b428-f31d70b774f5"
     - stage: uuid
-      stageUuid: "a19b570b-73d4-8119-ad4e-392f78208dd5"
+      stageUuid: "eff7d4cc-b9fe-86b7-9f63-98475fae9090"
 version: 2
 ---
 # genetic

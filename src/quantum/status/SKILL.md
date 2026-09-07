@@ -2,10 +2,10 @@
 name: status
 description: "Use when reading the quantum surface state from the CLI — superposition pending paths, last collapse, bond reciprocity. Promoted from a loose sibling to an atom because it is dispatched by PATH, which no lexical reference scan can see. Run: tsx src/quantum/status/index.ts"
 atomPath: "quantum/status"
-coordinate: "quantum/status · 8/crest · 1845b14e"
-contentUuid: "d1837e04-e18a-57f5-a977-d2dcb9f71d53"
-diamondUuid: "4a3905f1-8534-8232-9b48-a830893763da"
-uuid: "1845b14e-f771-82af-b218-2fce56679ec6"
+coordinate: "quantum/status · 8/crest · d2893c19"
+contentUuid: "eb6de48a-5032-51e0-9c5c-43875dbcc484"
+diamondUuid: "2bb2a551-3683-8bbb-b4b9-923a5f6b53eb"
+uuid: "d2893c19-a9e2-8fab-8ba4-9a46f8d58068"
 horo: 8
 typography:
   partition: quantum
@@ -13,22 +13,22 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4b292740-0119-8cf2-9443-07a90b9397a5"
+  computationUuid: "2168958a-3540-88f6-9009-af489fe4251c"
   stages:
     - stage: path
       stageUuid: "17e4090b-f037-8d1e-bedb-2c9bfcbb8c39"
     - stage: trinity
       stageUuid: "f5db7a32-11a4-8dfc-aac8-2e9f0dc7c96b"
     - stage: boundary
-      stageUuid: "2701894a-5955-8370-b044-077ee0675b45"
+      stageUuid: "f2e5fb86-7805-8e8d-bc8d-f9630450706b"
     - stage: links
       stageUuid: "ec2847f2-6f46-8946-93eb-52f61c1dad96"
     - stage: horo
-      stageUuid: "a42f5d65-2253-8e6d-bb13-b4092d653b30"
+      stageUuid: "80109253-9300-8dc7-bd3b-b18cf6d04201"
     - stage: seal
       stageUuid: "ab3be850-b093-88e7-8c6a-de9fb39b138a"
     - stage: uuid
-      stageUuid: "2b885545-e1e7-86c2-9415-418e8f668208"
+      stageUuid: "baaf1d9d-f807-862a-b525-e74b1c363d15"
 quantum:
   superposition:
     - action
@@ -50,8 +50,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "4b292740-0119-8cf2-9443-07a90b9397a5"
-    contentUuid: "d1837e04-e18a-57f5-a977-d2dcb9f71d53"
+    computationUuid: "2168958a-3540-88f6-9009-af489fe4251c"
+    contentUuid: "eb6de48a-5032-51e0-9c5c-43875dbcc484"
 version: 2
 ---
 # status — the entry point a reference scan cannot see
@@ -78,4 +78,4 @@ The test pins both directions: every quantum dispatch target resolves, and the t
 
 Composes: [[quantum]]/context · [[cli]] · [[rules]]/unfolded · [[law]].
 
-<sub>content-uuid `d1837e04-e18a-57f5-a977-d2dcb9f71d53` · account `quantum/status` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `eb6de48a-5032-51e0-9c5c-43875dbcc484` · account `quantum/status` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

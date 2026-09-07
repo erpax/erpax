@@ -2,11 +2,11 @@
 name: choose
 description: "Use when reasoning about choose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/choose"
-coordinate: "vocabulary/choose · 8/crest · bab62d60"
-contentUuid: "02164675-7844-5748-abc7-5238565081a1"
-diamondUuid: "e76c175d-b3da-8b76-93bd-6c548cb21d0b"
-uuid: "bab62d60-831e-8c43-8ad9-d93a69f0a5c8"
-horo: 8
+coordinate: "vocabulary/choose · 2/share · df5fbe65"
+contentUuid: "a86f3563-4172-520f-929a-974f32c73c31"
+diamondUuid: "c3a544d1-4efb-8efd-8e68-8c034eda4f3c"
+uuid: "df5fbe65-17d5-8978-86c2-fcec944b682a"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "94ac393f-5cbc-8e79-b2d5-c55d59261cb6"
+  computationUuid: "aedbd970-ad52-8f8a-96da-681338cfce67"
   stages:
     - stage: path
       stageUuid: "306bff6a-c85d-85eb-b662-6407276ff731"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "947c874c-775f-8176-9a7c-43d58a95c4dd"
     - stage: horo
-      stageUuid: "bb6ec283-05ff-8356-8c3e-875086d9e9ad"
+      stageUuid: "c004eefa-e190-83c0-b9b0-b186659f0d6e"
     - stage: seal
-      stageUuid: "4e0f34a8-59e2-852e-bb23-044dc2f6bd2b"
+      stageUuid: "26265de6-c102-8356-9d25-909f403e1f80"
     - stage: uuid
-      stageUuid: "b8888521-24f5-876a-b301-8153c3462c6e"
+      stageUuid: "7fb2a6eb-2622-81d6-8349-2493a2206f3c"
 version: 2
 ---
 # choose

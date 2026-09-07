@@ -2,11 +2,11 @@
 name: causes
 description: "Use when reasoning about causes as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/causes"
-coordinate: "vocabulary/causes · 2/share · 69d6c4f7"
-contentUuid: "1d10f472-bb61-59a1-81e6-8fbd0f30e643"
-diamondUuid: "f4c3b243-f9c8-87cc-9baf-f76601faa425"
-uuid: "69d6c4f7-13c0-83d5-b513-aed09dabc0d2"
-horo: 2
+coordinate: "vocabulary/causes · 4/weave · be18c7d3"
+contentUuid: "1b4ed964-43ad-534c-8097-f5200c380783"
+diamondUuid: "7eb8b61c-1fb7-8015-8af2-c5b67c7bff4d"
+uuid: "be18c7d3-bf58-8ffd-b843-878123005f7a"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2b1d9826-1116-82df-82d3-1e49c6d9b73b"
+  computationUuid: "17a034b8-aa11-8466-953f-a2a60ea93212"
   stages:
     - stage: path
       stageUuid: "e3217265-5b64-828d-8aae-5e039703e60b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e0f1536f-37d9-8972-94cd-47897c666095"
     - stage: horo
-      stageUuid: "87af669e-f97c-89f9-bdb5-addf1306c964"
+      stageUuid: "c58907ce-7ba3-8461-b703-ec251be9dfd7"
     - stage: seal
-      stageUuid: "1b826176-647a-83b0-ba59-90751846a8ec"
+      stageUuid: "41046b00-f11f-8e1c-b193-eab08eba51d1"
     - stage: uuid
-      stageUuid: "17b3dd09-aea7-89f9-ae1f-1d8b5be8d48f"
+      stageUuid: "422771eb-53b1-898a-81f1-363a09882115"
 version: 2
 ---
 # causes

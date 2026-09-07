@@ -3,13 +3,13 @@ name: interval
 description: "Use when reasoning about interval — Special relativity's decidable core, proved for **all integers** rather than checked on a carrier, and carrying one consequence this corpus actually needs."
 atomPath: "quantum/interval"
 coordinate: "quantum/interval · 4/weave · 491d16c6"
-contentUuid: "943324d3-6cab-5fdb-9a11-9a89fec17192"
+contentUuid: "eedc742e-f256-5ed8-a1f5-adf58c3f607e"
 diamondUuid: "b7f52243-53fe-8751-b5b9-4b4f78f899a6"
 uuid: "491d16c6-f5c7-8cc0-972e-6ebb5b353e88"
 horo: 4
 typography:
   partition: quantum
-  bondDegree: 24
+  bondDegree: 21
 standards: []
 bindings: []
 signatures:
@@ -38,6 +38,7 @@ quantum:
     - rules
     - superposition
   collapse:
+    - "Use when reasoning about interval — Special relativity's decidable core, proved for **all integers** rather than checked on a carrier, and carrying one consequence this corpus actually needs."
     - "a ledger may seal only on causal order. Where two events are spacelike-separated there is no \"the\" order — a subluminal observer sees the reverse, and a receipt chained on coordinate time is sealing an accident of frame."
   seal:
     sandbox: false
@@ -47,7 +48,7 @@ quantum:
     analogResults: false
     speechResults: false
     computationUuid: "3418253b-fbce-8a16-8297-b8bbd9fc00ae"
-    contentUuid: "943324d3-6cab-5fdb-9a11-9a89fec17192"
+    contentUuid: "eedc742e-f256-5ed8-a1f5-adf58c3f607e"
 version: 2
 ---
 # quantum/interval — the light cone is not a matter of opinion, and that is what a ledger seals on
@@ -93,4 +94,4 @@ A `theorem` verdict **names** a Lean theorem, and `phenomena()` **reads the file
 
 Composes: [[quantum]] · [[merge]] · [[rules]]/prose · [[law]].
 
-<sub>content-uuid `943324d3-6cab-5fdb-9a11-9a89fec17192` · account `quantum/interval` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `eedc742e-f256-5ed8-a1f5-adf58c3f607e` · account `quantum/interval` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -1,15 +1,15 @@
 ---
 name: accounting
-description: "Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything \"accountable\" polymorphically. The self-sufficient `@erpax/accounting` archetype."
+description: "Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything \\\"accountable\\\" polymorphically. The self-sufficient `@erpax/accounting` archetype."
 atomPath: accounting
-coordinate: "accounting · 4/weave · bf3c0b3a"
-contentUuid: "81cf3a32-096c-5540-a8f2-990e784881b9"
-diamondUuid: "41ac2873-c3bb-8c8c-99fd-baa78b1a2453"
-uuid: "bf3c0b3a-5871-8681-bc01-70616ea29a0e"
-horo: 4
+coordinate: "accounting · 7/descent · 636d8320"
+contentUuid: "d746fbff-aa61-54bd-b1e1-921c7db0b4e6"
+diamondUuid: "2813e524-89f1-8430-b304-ea40ca899ce5"
+uuid: "636d8320-74b2-8e24-94d1-eccd7323cfca"
+horo: 7
 typography:
   partition: accounting
-  bondDegree: 775
+  bondDegree: 770
 standards:
   - "EU-Intrastat-Reg-2019/2152"
   - "IAS-1"
@@ -19,26 +19,23 @@ standards:
   - "ISO-8601-1"
 bindings: []
 signatures:
-  computationUuid: "46f7e9e2-c0db-86da-97c1-475f023f3c0b"
+  computationUuid: "0743ed87-4012-8440-9365-da33853752f3"
   stages:
     - stage: path
       stageUuid: "23dc1848-55e7-8512-9c47-52c510777a82"
     - stage: trinity
       stageUuid: "451c7c9c-5b66-8807-91a9-193374a4c2a2"
     - stage: boundary
-      stageUuid: "e1f14f39-9ebe-8631-a1c7-afbd9f62bf0d"
+      stageUuid: "00d1e814-a6cc-8f77-b4cc-c408d5872591"
     - stage: links
-      stageUuid: "c4af7173-d662-864b-8998-474458a0a7e6"
+      stageUuid: "8a6fee0d-3521-8ee2-93e9-498fe4d0c65a"
     - stage: horo
-      stageUuid: "601799d0-2ea4-8d08-bf67-ba3c7d60dc02"
+      stageUuid: "7c47422e-b3b4-81e8-9932-57ad0157cc19"
     - stage: seal
       stageUuid: "c3103fdd-ed65-8eb6-89d0-e6cb44152940"
     - stage: uuid
-      stageUuid: "cfa9ff01-d43e-8a67-8e6f-00229ba8e7de"
+      stageUuid: "f6b2af63-b0f0-8216-98f0-c0f7d586987e"
 version: 2
-neighbors:
-  wikilink:
-    - "[[intercompany/reconciliation]]"
 ---
 # accounting — the universal ledger plugin (anything is accountable)
 

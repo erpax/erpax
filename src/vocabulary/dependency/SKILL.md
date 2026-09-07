@@ -2,18 +2,18 @@
 name: dependency
 description: Use when modelling one dependency — the singular model of the dependencies collection (the plural store); a relationship where one item requires another.
 atomPath: "vocabulary/dependency"
-coordinate: "vocabulary/dependency · 8/crest · 3e682b2f"
-contentUuid: "9f799fd8-a93c-526b-91fb-b9ca537f0a40"
-diamondUuid: "b186b733-9ebc-8195-a29e-912b3a8875e2"
-uuid: "3e682b2f-1895-8319-b3a6-4eb2a80b5cfa"
-horo: 8
+coordinate: "vocabulary/dependency · 7/descent · 6bf084a1"
+contentUuid: "c4dcf3ca-df9e-5e12-b643-b398d372c1f1"
+diamondUuid: "456c086f-d249-8cf0-a8dd-9cd855d99368"
+uuid: "6bf084a1-6891-8bf7-9608-a523032f29f8"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d784b9ce-2160-8f25-982b-88d6101dbeb2"
+  computationUuid: "0a6b81a5-27f8-84df-b721-4399dc39f778"
   stages:
     - stage: path
       stageUuid: "71d86961-3b1d-8fb5-82a1-604bc7b9ab04"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "28ad68bb-f8a8-89f4-8896-4483397e053d"
     - stage: horo
-      stageUuid: "0b2840a8-1241-84f8-b798-f58b8ac0d627"
+      stageUuid: "737a009f-cbb8-8f98-8646-003e745a9e81"
     - stage: seal
-      stageUuid: "22c733a7-f0b1-8afc-831a-78b1a8dd0496"
+      stageUuid: "0114eb4f-755f-8297-910f-7d9cc5993575"
     - stage: uuid
-      stageUuid: "f51055b3-20bb-88f2-8aaa-eb5eb0e8e5b8"
+      stageUuid: "0ad1089e-137c-8f89-8463-962db1a064c5"
 version: 2
 ---
 # dependency — the model of one [[dependencies]] row

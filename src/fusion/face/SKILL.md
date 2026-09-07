@@ -1,9 +1,9 @@
 ---
 name: face
-description: "Use when reasoning about face — A session asked for \"fusion of all knowledge into dry clean quantum repos\" — six sibling repos holding, it was assumed, the same knowledge six times."
+description: "Use when reasoning about face — A session asked for \\\"fusion of all knowledge into dry clean quantum repos\\\" — six sibling repos holding, it was assumed, the same knowledge six times."
 atomPath: "fusion/face"
 coordinate: "fusion/face · 8/crest · f2166ef3"
-contentUuid: "2262ccc9-1316-50ff-8ca2-033f0b59fd09"
+contentUuid: "c206c6b9-5833-5871-97d8-3fcbf33e2381"
 diamondUuid: "7c289afb-a0fe-8bbb-9efb-1b8ada211d2d"
 uuid: "f2166ef3-3e6d-8bde-b565-a73c3b747953"
 horo: 8

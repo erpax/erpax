@@ -2,10 +2,10 @@
 name: schedules
 description: "Use when managing or reporting a legal entity's debt instruments — bank term/revolving loans, bonds, finance and operating leases, convertible notes, covenant tracking, repayment schedules, and IFRS-9 current/non-current classification per IFRS-9 / IAS-1 / ASC-470. The debt-instrument register collection."
 atomPath: "legal/entities/debt/schedules"
-coordinate: "legal/entities/debt/schedules · 7/descent · 09c424a8"
-contentUuid: "5e1af5c1-385e-55ea-8aa6-ad5349518cf4"
-diamondUuid: "20f9b4e9-9222-88f3-808c-076b0c0e774f"
-uuid: "09c424a8-eb4f-8507-8962-e98b5055d003"
+coordinate: "legal/entities/debt/schedules · 7/descent · 61cc8781"
+contentUuid: "96b2d750-d44b-5d31-bec9-210fb9bab0a9"
+diamondUuid: "0c7d3cf4-045a-8941-8dd1-29442b312fe6"
+uuid: "61cc8781-e289-8e64-a066-c2a1299b8e8d"
 horo: 7
 typography:
   partition: legal
@@ -16,7 +16,7 @@ standards:
   - "US-GAAP ASC-470 debt"
 bindings: []
 signatures:
-  computationUuid: "4a1ed6d5-07f8-8474-8a60-b5acd68df014"
+  computationUuid: "6b8cd7a6-5978-8ca9-ab94-4472af988e5e"
   stages:
     - stage: path
       stageUuid: "b855236d-e0f1-8721-90f1-153d0ad07a59"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "7116d031-c359-8a0b-9491-d57d1a96feea"
     - stage: horo
-      stageUuid: "328ac2bb-c96c-8426-830f-96886ab7e065"
+      stageUuid: "81bd61cf-95ff-808f-853f-15a91ac09ed7"
     - stage: seal
       stageUuid: "d44606cf-6458-8188-b52a-4d1b05ad3efa"
     - stage: uuid
-      stageUuid: "75c5deb1-31aa-8280-a221-b947b867ff4d"
+      stageUuid: "6741db33-59b2-80de-ac28-714a268796df"
 version: 2
 ---
 # debt-schedule

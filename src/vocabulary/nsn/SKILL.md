@@ -2,11 +2,11 @@
 name: nsn
 description: Use when reasoning about nsn — Indicates the NATO stock number (nsn) of a Product.
 atomPath: "vocabulary/nsn"
-coordinate: "vocabulary/nsn · 4/weave · 2d6a2bef"
-contentUuid: "d6672573-ca10-5ca8-8c59-a635530c4f0f"
-diamondUuid: "87a9c174-ced4-8280-9872-f1c76abae584"
-uuid: "2d6a2bef-72fe-863e-933e-f4191d539671"
-horo: 4
+coordinate: "vocabulary/nsn · 2/share · c9d48142"
+contentUuid: "a753a3df-3330-5617-8736-6cfdc03de118"
+diamondUuid: "54b11eb6-ab30-8c88-a81f-a0a46c5b4ab9"
+uuid: "c9d48142-2354-8662-bacf-f81e3c90015c"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fd1aa581-c082-8341-a4f7-1ad163c94afb"
+  computationUuid: "8b4d83ef-7810-856f-b94c-c414dbb213d2"
   stages:
     - stage: path
       stageUuid: "158d1593-bdca-838d-9b70-45e12e5681cd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8c7c2448-f8da-88d7-a06c-cb17cc575500"
     - stage: horo
-      stageUuid: "5a65a828-c261-8e3b-ae45-c5b581d2936c"
+      stageUuid: "fde7c816-1678-8b56-9904-2be5341c9754"
     - stage: seal
-      stageUuid: "153cf90e-52f0-81f3-af6f-a741ba162559"
+      stageUuid: "7785a5af-8351-817b-8839-d2b168daf1a4"
     - stage: uuid
-      stageUuid: "c4fe9b3d-3061-87fd-82eb-f1fd5b1e89b8"
+      stageUuid: "387312f7-a308-8279-b46d-19126405376a"
 version: 2
 ---
 # nsn

@@ -2,46 +2,44 @@
 name: workflow
 description: "Use when spawning, advancing, or escalating a workflow instance bound to a document — evaluating trigger conditions against a definition, routing step decisions (approve/reject/delegate/return), running service-task handlers, or firing SLA escalation on overdue steps; SOX-compliant approval chain execution. The BPMN-2.0 workflow orchestration service."
 atomPath: workflow
-coordinate: "workflow · 7/descent · 856d01c7"
-contentUuid: "f5052369-07e4-5f61-b000-939b341e02dc"
-diamondUuid: "b71f3292-ad24-852e-aa74-c6e020ce7000"
-uuid: "856d01c7-f5bb-85ef-87e8-4582cc6913ae"
-horo: 7
+coordinate: "workflow · 5/round · 2b0295b0"
+contentUuid: "99c23ecc-bec4-50a4-a0c5-f68bc438e010"
+diamondUuid: "36729edc-3ea0-8a38-8b8c-5cac82e6e587"
+uuid: "2b0295b0-ea17-8842-8e7f-5ffcac157dde"
+horo: 5
 typography:
   partition: workflow
-  bondDegree: 0
+  bondDegree: 79
 standards:
   - "ASC-606"
   - "IFRS-15"
   - "ISA-95"
   - "ISO/IEC 19510:2013 BPMN-2.0"
   - "ISO/IEC 19510:2013 BPMN-2.0`"
+  - "ISO/IEC-19510"
   - "SOX §404 internal-controls workflow-execution"
   - "US-GAAP"
   - "W3C-ActivityPub"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "1848de20-1fc2-8a2e-9304-6d4c6f56fdbe"
+  computationUuid: "756f8208-7054-8276-adf3-7fbd22b192b4"
   stages:
     - stage: path
       stageUuid: "94f4098e-fbfa-80dd-a103-8e647ab5c24d"
     - stage: trinity
       stageUuid: "5ad1a9fa-0d34-8605-9ae6-ea9047426f31"
     - stage: boundary
-      stageUuid: "bdc923f3-d166-84e6-a2d9-cb21ce970de3"
+      stageUuid: "2ec5b64d-89f5-8472-9319-6f058c1092e4"
     - stage: links
-      stageUuid: "2b2be7bc-c8ec-892f-af0a-dc286bafd288"
+      stageUuid: "11efc2bc-09cd-8704-b689-d0107bbebcae"
     - stage: horo
-      stageUuid: "d9564fb5-2ce8-8702-817a-b6ae67587563"
+      stageUuid: "cce1da19-f892-8cfe-a57a-93ee361c36fa"
     - stage: seal
-      stageUuid: "485d4bdf-e79b-8de8-bc49-cc4c3a037885"
+      stageUuid: "46c9e25b-b9a6-8512-a7e7-0c913d1cd3a6"
     - stage: uuid
-      stageUuid: "525de210-b38e-82ac-b93c-5c41b1b6f627"
+      stageUuid: "1cfcdc22-28d9-8894-ad5c-acfe0a151d8a"
 version: 2
-neighbors:
-  wikilink:
-    - "[[workflow/sealed/selfeducate]]"
 ---
 # process — the running approval chain, BPMN execution made live
 

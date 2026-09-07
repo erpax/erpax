@@ -2,11 +2,11 @@
 name: intensity
 description: "Use when reasoning about intensity — Quantitative measure gauging the degree of force involved in the exercise, for example, heartbeats per minute. May include the velocity of the movement."
 atomPath: "vocabulary/intensity"
-coordinate: "vocabulary/intensity · 5/round · b7b85e31"
-contentUuid: "53066531-b688-5024-a0e4-0d6ce5b34ab1"
-diamondUuid: "0a6e0600-e7f3-816e-9a8b-b9e2f5b6c641"
-uuid: "b7b85e31-8b5d-8c26-8d06-976ffb470bc5"
-horo: 5
+coordinate: "vocabulary/intensity · 2/share · e09e460b"
+contentUuid: "961ab248-6631-5ce5-9618-0aeb59c99b11"
+diamondUuid: "dd4d04eb-bed3-8bc7-99c6-ccca5fb77b08"
+uuid: "e09e460b-26f2-829b-8852-a6c9ee89199a"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ea4fe41f-25a6-86bd-9d02-72e6b2c35da3"
+  computationUuid: "b6b06d89-239b-8fb9-91c9-2a416f2ee0fe"
   stages:
     - stage: path
       stageUuid: "06f1da4b-87bb-8677-9b3d-ca31750b9b64"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7d115601-b3f1-8624-9a3b-f5a842a6cfef"
     - stage: horo
-      stageUuid: "a35d7162-3727-8743-9a84-0c9718b8fee4"
+      stageUuid: "4abcec1f-247e-8304-b54c-826670bea37c"
     - stage: seal
-      stageUuid: "bcc319e7-9f04-88be-9e8d-c826ae55d308"
+      stageUuid: "39132581-c9b3-8d20-a3ee-c60e309e36c4"
     - stage: uuid
-      stageUuid: "46190595-bd0d-8199-89fb-1a75b570bcda"
+      stageUuid: "ed413ace-c250-881c-af12-33f733d95f70"
 version: 2
 ---
 # intensity

@@ -2,18 +2,18 @@
 name: wave
 description: "Use when auditing everything at once — every cheap gate measured as one dimension, trended against its own history, sequenced self-improvingly: regressions first, stuck escalates, improving keeps its plan."
 atomPath: "audit/wave"
-coordinate: "audit/wave · 2/share · a0b41cd6"
-contentUuid: "c79e767d-d919-5c2a-835a-9f9a6f4ffaa7"
-diamondUuid: "a2efa29d-5303-8757-9bd1-f95b52530ad1"
-uuid: "a0b41cd6-84f5-8502-ba84-99766bd324c4"
-horo: 2
+coordinate: "audit/wave · 4/weave · dc5826e8"
+contentUuid: "6600fda1-de5e-505e-96d1-41da80f9d926"
+diamondUuid: "dd1d2107-fc3d-8d1b-b604-5326b6717931"
+uuid: "dc5826e8-4979-8f65-8688-aa20bf8df0ba"
+horo: 4
 typography:
   partition: audit
-  bondDegree: 130
+  bondDegree: 101
 standards: []
 bindings: []
 signatures:
-  computationUuid: "359554a7-2eca-8fdc-a5b6-f4375251f026"
+  computationUuid: "0c5ab90f-f1c1-88d4-9e45-1b784b8a2e00"
   stages:
     - stage: path
       stageUuid: "367cb694-3184-87b1-a86d-548dd5e6d3c6"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "6bb24dc1-c4ce-8136-bb65-6cb4ac0ebff9"
     - stage: horo
-      stageUuid: "4c927f30-26f5-8242-bbd9-7861e63d767a"
+      stageUuid: "af136ffd-58ea-8bcb-b63b-e81b80efa8e3"
     - stage: seal
-      stageUuid: "7a230a50-09a6-8a82-8d98-75d1f816c47d"
+      stageUuid: "9092bb90-7aab-8fff-b8e3-2124d45b5023"
     - stage: uuid
-      stageUuid: "3b52f0a0-dbbe-8c3d-af2b-88b23df134b9"
+      stageUuid: "2ae8beca-6d04-8566-b170-13822eeaf491"
 version: 2
 ---
 # audit/wave — all dimensions, one self-improving sequence

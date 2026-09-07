@@ -2,14 +2,14 @@
 name: "14289"
 description: "Use when implementing or referencing `src/iso/14289/index.ts`."
 atomPath: "iso/14289"
-coordinate: "iso/14289 · 4/weave · 3b1cbd09"
-contentUuid: "8cd7e277-33f4-546d-beb7-af0d441b8d34"
-diamondUuid: "e1a43bd1-7839-8baf-987c-53531b2354c7"
-uuid: "3b1cbd09-1e1c-8995-afd6-b20ea3e8a4e7"
-horo: 4
+coordinate: "iso/14289 · 5/round · 62cc6631"
+contentUuid: "09a066bf-172e-5c2b-9364-d882c502d556"
+diamondUuid: "ddb4066d-863d-8935-8f69-ad29b17e5e60"
+uuid: "62cc6631-a070-83fa-acb3-f9a962f32d6c"
+horo: 5
 typography:
   partition: iso
-  bondDegree: 0
+  bondDegree: 8
 standards:
   - "EU-537/2014"
   - "EU-910/2014"
@@ -19,11 +19,12 @@ standards:
   - "ISO-14289-1:2014 pdf-ua-1`"
   - "ISO-14289-2:2024 pdf-ua-2"
   - "ISO-14289-2:2024 pdf-ua-2`"
+  - "ISO/IEC-29119"
   - "WCAG-2.1"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "97f097cf-0160-8edf-a0c0-ef11cbe6d4d9"
+  computationUuid: "ca48401e-24c7-80f0-a749-1f1e99a06796"
   stages:
     - stage: path
       stageUuid: "ade7180e-e88a-8375-b539-315c4eced8fc"
@@ -32,13 +33,13 @@ signatures:
     - stage: boundary
       stageUuid: "2c2febe6-18f7-8e28-85b1-1c770c25d371"
     - stage: links
-      stageUuid: "82ab4f54-73f0-8fa8-9bdd-cecd50e7c25f"
+      stageUuid: "9aa5f936-b430-84bc-86ca-d9cb70137cd7"
     - stage: horo
-      stageUuid: "1c0953bc-7344-848a-a236-455414d358a1"
+      stageUuid: "b3dc18de-a521-8657-a004-72fb813aeb72"
     - stage: seal
-      stageUuid: "0c11a6df-473e-8078-8eb2-ab4f9d8eb416"
+      stageUuid: "285faf1b-6819-888b-8888-01e62002f7be"
     - stage: uuid
-      stageUuid: "bb016b28-826f-83d1-b989-f5ed07aaa288"
+      stageUuid: "e29147b0-19f8-8950-b081-e70b196a3a54"
 version: 2
 ---
 # `src/iso/14289/index.ts`

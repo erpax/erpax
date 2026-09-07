@@ -2,10 +2,10 @@
 name: store
 description: Use when reasoning about store — A retail good store.
 atomPath: store
-coordinate: "store · 1/base · 287e5351"
-contentUuid: "854f786d-b467-5357-8c71-1ee23108f7ca"
-diamondUuid: "00a69727-7b0b-8abc-ae3c-6c187c9c606d"
-uuid: "287e5351-298a-8ac1-93b9-9e6f9bbe9482"
+coordinate: "store · 1/base · 8bc13f15"
+contentUuid: "31c75e38-72e5-5650-9770-d15af140078e"
+diamondUuid: "485ad06f-ca6a-8c30-8b9b-6f3a4d73b719"
+uuid: "8bc13f15-e299-8d1f-94f0-eb16440a2561"
 horo: 1
 typography:
   partition: store
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d29069a1-5f79-82f6-8424-7a8779d2222c"
+  computationUuid: "23c4017d-f28d-819f-826c-08516e619042"
   stages:
     - stage: path
       stageUuid: "735b61d7-85eb-8fde-bd20-6bafa6a0ab1b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d27d8dc1-e0b9-8b74-b575-e5566f99742c"
     - stage: horo
-      stageUuid: "40e59c04-4e15-8c85-b8e7-c0d3a51e9a84"
+      stageUuid: "d539f523-90d9-813d-92bf-f3659579fd1e"
     - stage: seal
       stageUuid: "e5d2c8b6-64ca-8040-8aba-ed0ce7b818c3"
     - stage: uuid
-      stageUuid: "a9ddc7d0-5ea9-83b4-a521-68ef95dab81e"
+      stageUuid: "e61799bf-e930-8c3c-9e06-04e38b81eb8d"
 version: 2
 ---
 # store

@@ -2,8 +2,41 @@
 name: claims
 description: "Use when stating what erpax's post-quantum posture actually proves — the anchor surfaces typed by discern into verdicts (what the corpus computes: the manifest gate, the channel and root rules, the pinning, the threat calibration) and compasses (the primitives, because nothing here signs: no PQC implementation is installed). Standards are pinned to their revision because FIPS 203 and 204 carry errata, and a bare citation names a document that differs from the one in force. FIPS 206 and HQC are the honest open rows. Integrity reads 5 of 9 — lower and true."
 atomPath: "anchor/claims"
+coordinate: "anchor/claims · 7/descent · ac1f87c5"
+contentUuid: "7241d046-0ab3-59b0-b574-25c5bf0c4653"
+diamondUuid: "dd4361b2-3411-8a1f-8d9d-62eca84a347e"
+uuid: "ac1f87c5-65ee-805c-8c2a-81b15493e601"
+horo: 7
+typography:
+  partition: anchor
+  bondDegree: 12
+standards:
+  - "EU-CSDDD-2024/1760"
+  - "FIPS 203 (ML-KEM, 2024-08-13, with errata) — key encapsulation"
+  - "FIPS 204 (ML-DSA, 2024-08-13, with errata) — lattice signatures"
+  - "FIPS 205 (SLH-DSA, 2024-08-13) — stateless hash-based signatures"
+  - "NIST SP 800-227 — recommendations for key encapsulation mechanisms"
+  - "NIST-SP-800-63"
+bindings: []
+signatures:
+  computationUuid: "7fa5d86d-1b3c-8d06-ac51-7d488053f97b"
+  stages:
+    - stage: path
+      stageUuid: "c9e0ccd4-deab-880f-8a95-76fa910dce49"
+    - stage: trinity
+      stageUuid: "28cc2e5b-d290-8940-afb3-fa4f51fb10d7"
+    - stage: boundary
+      stageUuid: "27ff7228-013f-84b5-bf4a-c572c061418a"
+    - stage: links
+      stageUuid: "1b7329ec-5f04-8609-a216-1722d3577bbb"
+    - stage: horo
+      stageUuid: "7afa3798-08f9-850c-8684-101dd93fcce4"
+    - stage: seal
+      stageUuid: "fb837cbb-43f8-8174-b3dc-cd8829747945"
+    - stage: uuid
+      stageUuid: "4f4ab5b9-a7ee-8fcb-9e64-7650c62edcc3"
+version: 2
 ---
-
 # anchor/claims — the post-quantum surfaces, typed
 
 [[anchor]] carries the strengths-and-assumptions layer; [[anchor]]/surface gates the manifest. Neither carries the distinction that decides whether a security page is honest: **what is proven versus what is intended**. This atom applies [[convention]]/discern to them, and lets the integrity metric read the difference.

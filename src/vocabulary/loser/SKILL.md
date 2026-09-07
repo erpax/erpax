@@ -2,11 +2,11 @@
 name: loser
 description: Use when reasoning about loser — A sub property of participant. The loser of the action.
 atomPath: "vocabulary/loser"
-coordinate: "vocabulary/loser · 8/crest · 0a548b45"
-contentUuid: "2a0aef23-dced-550a-b8e2-d23c7b639c37"
-diamondUuid: "cc483813-af9f-81df-a370-4f78dc30dcdb"
-uuid: "0a548b45-57dc-85d1-aa6a-1aa48a9d1bd0"
-horo: 8
+coordinate: "vocabulary/loser · 7/descent · 8690f68c"
+contentUuid: "b17a020f-02fb-567d-aa68-a7e23844b054"
+diamondUuid: "73e242c9-2c75-8bdd-8e33-7192c055f8a1"
+uuid: "8690f68c-1b11-84c1-9a5a-d42b0939a175"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "47415bc2-ec3e-832b-a80c-3ecce44fea50"
+  computationUuid: "3d58839f-0dad-8558-8dd4-44e1018b3bbd"
   stages:
     - stage: path
       stageUuid: "04a962a2-b94a-8a40-b85c-81ba977ce716"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "326ba72c-882f-806d-9937-f4f9a53b1f5a"
     - stage: horo
-      stageUuid: "85c25f80-02fc-837d-8740-ac644d772653"
+      stageUuid: "30e1a733-4665-8da8-900c-43abdb39cfca"
     - stage: seal
-      stageUuid: "7e06032e-5bda-8152-ad23-0bedaa5cb44d"
+      stageUuid: "3fb91d4f-b4ea-84dd-8e5f-1d41d960e721"
     - stage: uuid
-      stageUuid: "8c9dc997-62bc-8d41-9cb5-70149f00e5b3"
+      stageUuid: "7ee1ede8-049e-8cc9-8731-5e84e630de64"
 version: 2
 ---
 # loser

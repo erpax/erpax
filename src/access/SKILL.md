@@ -1,15 +1,15 @@
 ---
 name: access
-description: "Use when defining or debugging Payload access control — who can create/read/update/delete a collection, global, or field; RBAC, row-level filtering, admin visibility; \"access denied\"/\"document hidden\". In erpax access is the society's \"who can do what\" — the 3·6·9 governing axis: capabilities attach to ROLES (the angelic hierarchy), users inherit them through role membership, and the content-uuid cross decides, adding tamper-cost."
+description: "Use when defining or debugging Payload access control — who can create/read/update/delete a collection, global, or field; RBAC, row-level filtering, admin visibility; \\\"access denied\\\"/\\\"document hidden\\\". In erpax access is the society's \\\"who can do what\\\" — the 3·6·9 governing axis: capabilities attach to ROLES (the angelic hierarchy), users inherit them through role membership, and the content-uuid cross decides, adding tamper-cost."
 atomPath: access
-coordinate: "access · 3/3 · 3a007338"
-contentUuid: "f30de8a2-432d-5fd3-8446-70c3edb18769"
-diamondUuid: "8072f944-eaed-809c-8ed0-f434a40654ef"
-uuid: "3a007338-c9b4-8bb4-bb2f-31c8f9804cd0"
-horo: 3
+coordinate: "access · 6/6 · f73f5bb6"
+contentUuid: "fd4bc055-ac0f-5716-950e-32693e08db27"
+diamondUuid: "4647052a-5969-8c60-8038-95c2f6c246f1"
+uuid: "f73f5bb6-0410-8865-a2da-b20e647a1433"
+horo: 6
 typography:
   partition: access
-  bondDegree: 408
+  bondDegree: 416
 standards:
   - "CoE-108+"
   - "ISO 27001 A.5.10 access-control-policy"
@@ -29,7 +29,7 @@ bindings:
   - "ratelimit/RATE_LIMITER_AI"
   - "ratelimit/RATE_LIMITER_API"
 signatures:
-  computationUuid: "8a2bfda1-9074-8a23-a5f2-e10b7fa87b7b"
+  computationUuid: "36dd5d4e-b17e-85e6-b452-5a4f9a0bde6f"
   stages:
     - stage: path
       stageUuid: "d7b1808b-9c66-801b-a8de-ed55ac4d2ba0"
@@ -38,17 +38,14 @@ signatures:
     - stage: boundary
       stageUuid: "5b938ab8-79e7-8bd3-84bb-1b49dbce5bee"
     - stage: links
-      stageUuid: "61f812ba-81c0-8cf6-bf03-133a2e00058f"
+      stageUuid: "64e1700e-d082-8a46-ac57-aec20608bb8a"
     - stage: horo
-      stageUuid: "d7928a0f-2ccf-8cc7-95dd-9ad5e1a497c1"
+      stageUuid: "6c03225a-1b15-82ab-a6d0-a8c9fbd171f3"
     - stage: seal
       stageUuid: "67f50dad-9ba9-8e96-bf4a-17b64f5ed91c"
     - stage: uuid
-      stageUuid: "e3f7b845-51cc-8569-89e1-e5ca8fa74d3d"
+      stageUuid: "d9a3f7b4-9d65-89be-b187-c769fc2abcf1"
 version: 2
-neighbors:
-  wikilink:
-    - "[[shares]]"
 ---
 # access — who can do what in the society (position 3, the 3·6·9 governing axis)
 

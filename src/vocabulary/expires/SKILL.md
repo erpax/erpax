@@ -2,10 +2,10 @@
 name: expires
 description: "Use when reasoning about expires — Date the content expires and is no longer useful or available. For example a VideoObject or NewsArticle whose availability or relevance is time-limited, a ClaimReview fact check wh"
 atomPath: "vocabulary/expires"
-coordinate: "vocabulary/expires · 4/weave · b5eb4586"
-contentUuid: "879528e7-86bf-5130-926c-74996e0c4769"
-diamondUuid: "55b4d472-aae8-82e8-a20b-9eb8b0fac242"
-uuid: "b5eb4586-8c6a-8bd3-acad-ce5feb9bc1a2"
+coordinate: "vocabulary/expires · 4/weave · 696bf83f"
+contentUuid: "0676567a-828f-5e14-97f6-5a5717a32df3"
+diamondUuid: "a6973dbb-c0c3-841d-a913-058419d8fea0"
+uuid: "696bf83f-c8d3-891f-a668-2c5da8cfebb5"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "be79c793-e970-872e-a48c-2300efe45dbf"
+  computationUuid: "c6693c5e-0d5c-8c10-ac55-9c8ff6508983"
   stages:
     - stage: path
       stageUuid: "9742f595-4b19-8604-8e14-a6cb67654260"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "03156e95-1096-87d6-9db7-308f538fb5d3"
     - stage: horo
-      stageUuid: "6e95a74b-206b-8803-ad99-1b7383394b2a"
+      stageUuid: "9ba49b69-6f2a-8cbe-b16f-9f92c76ea42d"
     - stage: seal
-      stageUuid: "d323e3e1-436e-8f74-803c-61826ade9617"
+      stageUuid: "56e6d6e6-f6ce-8a11-b258-f63aa13e1dc5"
     - stage: uuid
-      stageUuid: "1c23e25e-74c7-8423-8b15-167f28cbc4ca"
+      stageUuid: "be07c48e-fe5f-82a8-bb80-d3e3490f46db"
 version: 2
 ---
 # expires

@@ -3,13 +3,13 @@ name: state
 description: "Use when reasoning about state — The control is the ordinary Radix combobox (blocks/form/select), named only by its bound label."
 atomPath: "blocks/form/state"
 coordinate: "blocks/form/state · 4/weave · 5f81eed2"
-contentUuid: "1967120d-f11e-584f-af98-98952cc5f5ee"
+contentUuid: "46d27240-f8ce-538f-bd04-4aa1b41e622f"
 diamondUuid: "7b5de52d-592c-8339-89d4-76a38493100c"
 uuid: "5f81eed2-9741-80f0-80c4-7b357cdcc09e"
 horo: 4
 typography:
   partition: blocks
-  bondDegree: 17
+  bondDegree: 11
 standards: []
 bindings: []
 signatures:

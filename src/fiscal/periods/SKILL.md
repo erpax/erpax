@@ -2,14 +2,14 @@
 name: periods
 description: "Use when managing the accounting calendar — opening, closing, or locking periods; enforcing four-eyes SoD on period transitions; configuring SAF-T or XBRL-GL period coding; blocking GL writes once a period is locked. The fiscal-period lifecycle node (open → closed → locked)."
 atomPath: "fiscal/periods"
-coordinate: "fiscal/periods · 7/descent · ae16b5dd"
-contentUuid: "831b347b-aeda-5cf4-b0f6-afb0b8889dbe"
-diamondUuid: "10409617-0c18-8677-b2da-918007d9e931"
-uuid: "ae16b5dd-f075-84dc-a25e-34c88655dba3"
-horo: 7
+coordinate: "fiscal/periods · 4/weave · 4bebf308"
+contentUuid: "3a437f5b-ef85-5d8e-bc5c-b83a3308004d"
+diamondUuid: "71759fc6-cfbf-8480-8b89-e0b9d2b3e07d"
+uuid: "4bebf308-8345-8460-98c0-01de1a84dcde"
+horo: 4
 typography:
   partition: fiscal
-  bondDegree: 0
+  bondDegree: 39
 standards:
   - "EU-2016/679"
   - "EU-537/2014"
@@ -18,6 +18,7 @@ standards:
   - "EU-VAT-Implementing-Reg-282/2011"
   - "GDPR Art 5(1)(f) audit-trail-integrity"
   - "GHG-Protocol"
+  - "IAS-10"
   - "IAS-34"
   - "IAS-34:2023 interim-financial-reporting period-structure quarterly-alignment"
   - "IFRS IAS-1 presentation-of-financial-statements"
@@ -41,26 +42,23 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "b8bf15d2-ddd9-8b62-950e-1d7323adad37"
+  computationUuid: "d4fc2a47-b980-8147-ab48-f0ba33dedd33"
   stages:
     - stage: path
       stageUuid: "c2d46d7d-f33b-8c89-9ef4-d333fbff62a5"
     - stage: trinity
       stageUuid: "7da42a92-8441-8678-9c96-4670b3c7e10a"
     - stage: boundary
-      stageUuid: "5d38f802-f5c1-8497-b20d-78737f9de26b"
+      stageUuid: "c07603a5-1797-8aa9-ab0c-44ece09ffa04"
     - stage: links
-      stageUuid: "4b5e5c91-6683-8872-8f10-17c232d67ede"
+      stageUuid: "53dc4129-0b76-8af8-a776-a6744e02b63e"
     - stage: horo
-      stageUuid: "9bc38158-fa6e-800f-8331-b8d7b05a0453"
+      stageUuid: "32e7cfac-0db7-8cf3-be90-fc11d4a9ae2c"
     - stage: seal
       stageUuid: "799579d1-a269-8094-bf85-70c24d3c360f"
     - stage: uuid
-      stageUuid: "0f613ed6-40fd-82a7-a792-5b7bacc61913"
+      stageUuid: "953394f5-6f16-8e8d-887b-87cdbcd744ca"
 version: 2
-neighbors:
-  wikilink:
-    - "[[fiscal/periods/earnings/per/shares]]"
 ---
 # fiscal-periods
 

@@ -2,11 +2,11 @@
 name: consortium
 description: Use when reasoning about consortium — A Consortium is a membership Organization whose members are typically Organizations.
 atomPath: "vocabulary/consortium"
-coordinate: "vocabulary/consortium · 2/share · 95307431"
-contentUuid: "6b3a3ddd-3c68-578b-bd06-6e0a67e7ef04"
-diamondUuid: "3705dddd-49fe-845d-8cf9-a842e317f63c"
-uuid: "95307431-fb1b-85d0-a2c6-ededf61bee27"
-horo: 2
+coordinate: "vocabulary/consortium · 4/weave · 45886c05"
+contentUuid: "6ebcaac6-d817-5605-961f-9752b93e6cde"
+diamondUuid: "4cefa938-5e37-8dcd-a657-a1d6d8bea89a"
+uuid: "45886c05-4bc8-8b72-85dd-f0a0f0b27515"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8dd44da5-12d8-812d-b5dc-b8f6e741a9f3"
+  computationUuid: "b1376bad-4267-8786-9560-8d584b9cad66"
   stages:
     - stage: path
       stageUuid: "a03c99d8-a214-8029-a6ae-a430ec1d681b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6bae9bd0-5e7c-8ba3-9050-6e818e5b094e"
     - stage: horo
-      stageUuid: "c82d9433-414e-87e9-ba0b-d0b8e44fca68"
+      stageUuid: "77c11536-728d-8faf-851c-7d3049cdbaa7"
     - stage: seal
-      stageUuid: "d0a590f5-b7f6-8623-8d0a-24f3267836ec"
+      stageUuid: "2147f93e-61d4-8b50-912d-f28ca09d7582"
     - stage: uuid
-      stageUuid: "42e9b53e-dc92-8c39-be70-7dad515ea8e2"
+      stageUuid: "77556f9d-a957-8359-8973-41cfec633f17"
 version: 2
 ---
 # consortium

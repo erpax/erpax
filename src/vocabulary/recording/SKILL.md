@@ -2,10 +2,10 @@
 name: recording
 description: Use when reasoning about recording — The composition this track is a recording of.
 atomPath: "vocabulary/recording"
-coordinate: "vocabulary/recording · 2/share · a8eb1d67"
-contentUuid: "f715c92c-2d53-56a4-ac8e-bd11a5d252e6"
-diamondUuid: "104ea14a-d794-8ed8-95f0-41f716a14b7c"
-uuid: "a8eb1d67-177c-82af-92e9-ef5318677456"
+coordinate: "vocabulary/recording · 2/share · 8bbbe5ad"
+contentUuid: "2605aa82-f47b-5bc2-9681-08b3406a7ead"
+diamondUuid: "226976dd-526f-8071-b4b7-e5f0348c47ca"
+uuid: "8bbbe5ad-23ea-85e8-9466-99d6026d5b94"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c5c53899-f31b-8df5-8d20-a851b5769369"
+  computationUuid: "88105ba5-a8f0-86b2-ae10-86b13e69c476"
   stages:
     - stage: path
       stageUuid: "ed0bf543-875a-8100-825d-d66b45de7681"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "676038b0-3ed3-87c4-bc54-29515eb788b6"
     - stage: horo
-      stageUuid: "5b1081ad-79d7-8da5-84b0-763bf4457ba4"
+      stageUuid: "309f499e-4e83-8be1-b912-feca1ef0ba7a"
     - stage: seal
-      stageUuid: "99f3ade8-bedb-81f6-b1b0-658135a6ace5"
+      stageUuid: "1048b56a-4611-8113-9b64-e4e3c1de9064"
     - stage: uuid
-      stageUuid: "12925d60-7fa7-8939-b103-1d1a3fcb3822"
+      stageUuid: "2bef2a3d-43bc-8b59-bfe6-9bcd7370ff62"
 version: 2
 ---
 # recording

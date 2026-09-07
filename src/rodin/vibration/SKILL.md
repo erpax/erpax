@@ -2,18 +2,18 @@
 name: vibration
 description: "Use when reasoning about touch/haptics from sequence position in erpax — the third A432 render channel that completes colour (cmyk) + sound (notes) into the sight·sound·touch sensory trinity. A horo position decodes to a haptic pulse (a sub-audible A432 sub-harmonic); the body's own measurable vibration (physiological tremor, ballistocardiographic micro-motion) is the analog twin. Nested under rodin."
 atomPath: "rodin/vibration"
-coordinate: "rodin/vibration · 4/weave · 4d093022"
-contentUuid: "b5562b23-0466-5337-814b-93f8cc2cf54e"
-diamondUuid: "f48b76b3-bc68-8e33-8c94-de6f2c912af3"
-uuid: "4d093022-b646-82d3-8ab8-655153eb05ca"
-horo: 4
+coordinate: "rodin/vibration · 5/round · fa69cc5f"
+contentUuid: "95dd3092-4ffe-532d-b812-492be6af9f38"
+diamondUuid: "726b6e24-edc1-8982-bc60-bd8b978329bd"
+uuid: "fa69cc5f-fd6f-87b0-8e94-b271af693a97"
+horo: 5
 typography:
   partition: rodin
   bondDegree: 63
 standards: []
 bindings: []
 signatures:
-  computationUuid: "81b0387b-8c08-83e6-b203-52855894f1ba"
+  computationUuid: "1cb013ed-0c6f-841b-aac4-402e28f43937"
   stages:
     - stage: path
       stageUuid: "a4d13e2f-0fa2-85ad-8d1f-c23807896b65"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9124d69f-66c7-8760-ba96-8036e6bb7819"
     - stage: horo
-      stageUuid: "0394b990-5656-898c-9828-32641b35c77a"
+      stageUuid: "d9ed6545-ddd4-8b0c-8edc-62d377fd1a3b"
     - stage: seal
       stageUuid: "1a03e9b6-addd-8be5-bc02-e1c28eed2d81"
     - stage: uuid
-      stageUuid: "9c9f895b-bf57-8185-8d2a-a7ce4805983e"
+      stageUuid: "5b62283b-f94a-8f03-9835-b731bd371a73"
 version: 2
 ---
 # vibration — touch from position (completes the sensory trinity)

@@ -2,11 +2,11 @@
 name: box
 description: "Use when reasoning about box — A box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separa"
 atomPath: "vocabulary/box"
-coordinate: "vocabulary/box · 7/descent · 1dac67b9"
-contentUuid: "4c53ce19-78b7-5412-9ab7-06678855d27f"
-diamondUuid: "4e6c5c54-2b07-841a-9ae9-f0a92d2557ad"
-uuid: "1dac67b9-c03a-86bd-98ac-6b1c7769ef12"
-horo: 7
+coordinate: "vocabulary/box · 8/crest · dd44fea9"
+contentUuid: "99fca810-d08e-588f-8b2d-8c99d1a8d321"
+diamondUuid: "6dc67c8c-cb35-8be8-88cb-68045e5d662d"
+uuid: "dd44fea9-6952-8134-9733-7d5f3ddae5f9"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 14
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "624c652b-b915-8757-9409-62688f9f527b"
+  computationUuid: "71b6b353-95c9-87ba-b55b-c2e3c6d51eb6"
   stages:
     - stage: path
       stageUuid: "c06cd48c-cd76-8a56-90cc-bdfe50b0df66"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9ff03f58-d87e-87db-b8f6-8f2a9eeee862"
     - stage: horo
-      stageUuid: "402878ea-7cf1-8931-a33e-7195ccd8bef7"
+      stageUuid: "a811a6db-b2b4-8ceb-8f83-1933a3abb45f"
     - stage: seal
-      stageUuid: "1a6df67c-8b10-872c-9a77-798634c3346b"
+      stageUuid: "3fb1995e-74f7-8fbf-b7c2-30587df10608"
     - stage: uuid
-      stageUuid: "3e5e1b4e-5467-8432-a1d1-6c89593c5561"
+      stageUuid: "0a87777b-c678-8d40-84a6-24678a17ea76"
 version: 2
 ---
 # box

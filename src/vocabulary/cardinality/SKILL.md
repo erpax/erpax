@@ -2,10 +2,10 @@
 name: cardinality
 description: "Use when analyzing relationship structure — one-to-one / one-to-many / many-to-many / many-to-one relationships, cardinality constraints, optional vs mandatory participation, relationship counts (query cardinality estimates), foreign-key cardinality."
 atomPath: "vocabulary/cardinality"
-coordinate: "vocabulary/cardinality · 4/weave · 2759da02"
-contentUuid: "9cbce3b8-e812-5e38-9d7e-0a8b9df909e6"
-diamondUuid: "3911df32-7df0-8b4e-9e1c-ad8e0d6974bd"
-uuid: "2759da02-8a28-8330-829a-1c550cda0b09"
+coordinate: "vocabulary/cardinality · 4/weave · 89b29b60"
+contentUuid: "b35f63be-53e9-5cc7-9b36-6dde90a56b74"
+diamondUuid: "21e88ae7-8e68-8ff1-9223-726eb0caa452"
+uuid: "89b29b60-679f-8ea8-acdf-88bbd3e10218"
 horo: 4
 typography:
   partition: vocabulary
@@ -13,22 +13,22 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0c541505-e428-8d96-9a18-23df8901ffe6"
+  computationUuid: "fd25f810-c2ef-80d1-a46e-7a74cde6b142"
   stages:
     - stage: path
       stageUuid: "d775dd77-4c5d-8905-9471-fa07e0ab4691"
     - stage: trinity
       stageUuid: "7448a82c-4285-8cdb-aa03-ac18ed7a1a4f"
     - stage: boundary
-      stageUuid: "e8c7d497-834f-84d5-a6cf-a340a47f5492"
+      stageUuid: "96ec41f3-dd61-8b44-8e2d-722713c84eca"
     - stage: links
-      stageUuid: "0e3def50-407e-82ee-8d37-8e8fd33d4351"
+      stageUuid: "1ff23c39-3e6c-8164-9822-ca6c16f38223"
     - stage: horo
-      stageUuid: "0a55a870-ca6d-8b31-9851-2f19e02e1ec3"
+      stageUuid: "c18fa713-4a84-8d89-b3bb-26d016188f72"
     - stage: seal
-      stageUuid: "aebcd336-2499-8570-af22-3308fe903dd1"
+      stageUuid: "1e13c959-cea5-83c0-9bd5-825e6db4ba73"
     - stage: uuid
-      stageUuid: "cce9a97b-eed5-8703-9c15-6527c79a504d"
+      stageUuid: "4c19f89a-4a0c-8931-a7e1-59fe1800dd6b"
 version: 2
 ---
 # cardinality

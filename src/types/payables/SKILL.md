@@ -3,13 +3,13 @@ name: payables
 description: "Use when reasoning about payables — , , and carry the fields EN-16931 requires of a supplier invoice; buckets what is outstanding, and is what falls due."
 atomPath: "types/payables"
 coordinate: "types/payables · 1/base · 41b07614"
-contentUuid: "c4e8bc30-cbf4-5277-b6fb-5d3917ce9dfe"
+contentUuid: "16c37b94-8c9b-5980-8f43-e272027f092b"
 diamondUuid: "dd525b60-0a54-8a04-acb5-94a55ddf127b"
 uuid: "41b07614-ce27-8b7a-8028-19b3da57a4a4"
 horo: 1
 typography:
   partition: types
-  bondDegree: 6
+  bondDegree: 3
 standards:
   - "EN-16931:2017 §BG-4 seller"
   - "IFRS IAS-37 provisions-contingent-liabilities"

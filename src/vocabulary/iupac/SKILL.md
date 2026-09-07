@@ -2,10 +2,10 @@
 name: iupac
 description: "Use when reasoning about iupac as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/iupac"
-coordinate: "vocabulary/iupac · 5/round · a813fc0d"
-contentUuid: "d8193e59-eb9a-50b6-85e5-d7717c8fa656"
-diamondUuid: "beb1358d-4e3f-8a4a-bb48-a58b896fb6cf"
-uuid: "a813fc0d-1d4b-80be-bcf0-6333d8d8d79c"
+coordinate: "vocabulary/iupac · 5/round · 98fbb325"
+contentUuid: "6c371553-4bcc-5c26-bf8a-a5463cdc9ca9"
+diamondUuid: "781cf95d-5047-85cf-80a6-cc221bebb878"
+uuid: "98fbb325-ba30-868c-a2f3-ada4009ce5a3"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "10c6882d-8456-8cb3-99d8-d115c49bddbe"
+  computationUuid: "a8045299-68eb-80e0-8664-ac9faf8c3380"
   stages:
     - stage: path
       stageUuid: "1b40568d-d332-8d56-95f1-9bd9a16e9a91"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ec6648c8-ee09-8b2f-91e3-1345d223c628"
     - stage: horo
-      stageUuid: "8aaadc5a-4d77-80d1-a0b4-5bcf0e40ee26"
+      stageUuid: "0663362d-a302-8391-bb13-28a188da829f"
     - stage: seal
-      stageUuid: "ac261bc4-2e50-8fad-a765-02e568126563"
+      stageUuid: "5c7da134-4105-8b7a-89c4-f9a05dc24631"
     - stage: uuid
-      stageUuid: "dd591fef-71e2-8b8b-ae67-1b3fed2b6b54"
+      stageUuid: "bf42ee5c-8f54-8f45-812f-0b4e0b3dfb5c"
 version: 2
 ---
 # iupac

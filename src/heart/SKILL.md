@@ -2,11 +2,11 @@
 name: heart
 description: "Use when reasoning about the centre — the 4th chakra (Anahata), the seat of coherence and love; its colour is green, the A432-anchored colour of a whole aura and of a passing test."
 atomPath: heart
-coordinate: "heart · 8/crest · b43dd603"
-contentUuid: "1fe6ec81-4b5f-5328-ad25-54c00c5d78c8"
-diamondUuid: "5bd0504e-e8d7-81f6-887c-46d43aeb2826"
-uuid: "b43dd603-d298-84ec-baa0-58f0a10fd8dd"
-horo: 8
+coordinate: "heart · 1/base · f7548755"
+contentUuid: "5d9bffce-2bd9-5286-a0d8-c5c6fb767791"
+diamondUuid: "4f91fc50-726f-801f-b090-10c27c215706"
+uuid: "f7548755-ba1e-83bd-a26d-bcf3fab4b27b"
+horo: 1
 typography:
   partition: heart
   bondDegree: 98
@@ -14,7 +14,7 @@ standards:
   - A432 tuning; Anahata = the 4th chakra (green)
 bindings: []
 signatures:
-  computationUuid: "2d6ecaa0-059d-8eea-bf17-5fd0a27bf2ad"
+  computationUuid: "938452ee-64e7-896e-abb6-0cd42f142215"
   stages:
     - stage: path
       stageUuid: "c7c7df03-f98b-8f37-af43-b4587be908b9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "51fc3bff-9bb7-8e5e-bdab-3cdfcb379155"
     - stage: horo
-      stageUuid: "2b598775-55a5-8a22-aad0-9e3cc23d9bc0"
+      stageUuid: "8d36bdc7-d2aa-816a-9c5f-2c80e83dfdb6"
     - stage: seal
       stageUuid: "7aee94d4-a78d-8e07-ae90-ce0665ac6f46"
     - stage: uuid
-      stageUuid: "c8a9b08c-a291-8bd9-ad5a-0fb73cbb58da"
+      stageUuid: "e65572d1-403a-869c-b470-b836ce95f725"
 version: 2
 ---
 # heart — the centre (4th chakra, green)

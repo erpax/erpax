@@ -2,11 +2,11 @@
 name: displacement
 description: "Use when reasoning about displacement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/displacement"
-coordinate: "vocabulary/displacement · 8/crest · d940a66f"
-contentUuid: "29ecc7b0-bede-5bc0-a46b-4b6bbbfe08fa"
-diamondUuid: "807b9000-307c-88ef-b99d-568c06d75fc6"
-uuid: "d940a66f-50ab-8882-a748-220454bef9a8"
-horo: 8
+coordinate: "vocabulary/displacement · 7/descent · 956937c9"
+contentUuid: "18c306b5-0379-51d7-8a8f-87fc156d6ac8"
+diamondUuid: "d8239651-c883-80e8-a94f-12b25f8ec611"
+uuid: "956937c9-9a49-8f79-a157-4211513599ad"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f2e4386d-30e8-8432-a6ff-dd945775ce13"
+  computationUuid: "8d660265-6daa-8565-8d54-85fad697a2ba"
   stages:
     - stage: path
       stageUuid: "9d5ba389-c58f-8ffe-a6f4-a6f2b31d0880"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f14c2a2d-5e57-8a46-9965-0e924749b52e"
     - stage: horo
-      stageUuid: "07b125ea-311d-89c0-b74c-773c6fccebb4"
+      stageUuid: "838ecd14-716f-8a25-a4fb-d2f81022b62b"
     - stage: seal
-      stageUuid: "02f04156-379f-8dc3-865c-21d2b5577bc5"
+      stageUuid: "317d8f59-a16f-8216-b532-e7a718990654"
     - stage: uuid
-      stageUuid: "88746f9a-59bc-841a-9915-fe17180ad355"
+      stageUuid: "b062a4a5-45e7-8159-8ceb-e7410667bb9c"
 version: 2
 ---
 # displacement

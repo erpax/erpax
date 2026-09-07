@@ -2,10 +2,10 @@
 name: desire
 description: "Use when reasoning about the demand seed of a market — the latent want that precedes any transaction. The one market atom you cannot manufacture exogenously; you reveal or awaken it, never inject it. If desire is the zero atom, no convenience, proof, or trendsetter reaches the market — you redefine the product onto a want that already exists."
 atomPath: "vocabulary/desire"
-coordinate: "vocabulary/desire · 8/crest · 98cad302"
-contentUuid: "75fe08a2-d20f-55e9-b11d-0a1c04af2459"
-diamondUuid: "3aaa7c8b-5d7c-8e2b-834c-4a32e61551c5"
-uuid: "98cad302-2f04-8179-933b-9e2fd2e5ba97"
+coordinate: "vocabulary/desire · 8/crest · 5454dfb7"
+contentUuid: "f4f6e4bf-d7e3-59e7-bba8-e7d9535f949d"
+diamondUuid: "d22afb16-d061-88d2-8c4e-f607e9ed89b7"
+uuid: "5454dfb7-b366-8324-844d-55b21724f56b"
 horo: 8
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c0025efd-8710-81f6-9ab3-f2d842d9310d"
+  computationUuid: "cf261516-9efc-82aa-bcd8-0e808258d363"
   stages:
     - stage: path
       stageUuid: "5955a49b-ee46-802a-976a-cc12bcd9f0bd"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "cdc3d16c-747d-81fd-a448-cc26ccda00e3"
     - stage: horo
-      stageUuid: "40b8844c-b334-80b5-a1cf-ba415f4bd35c"
+      stageUuid: "a4219b78-c96b-89c7-b069-9eb7f21101ae"
     - stage: seal
-      stageUuid: "2e0a4a0f-92b4-8aa0-b13e-d49f7f07a0df"
+      stageUuid: "9b3529bd-03c6-8dc3-9e83-94933e9ccb36"
     - stage: uuid
-      stageUuid: "62569e44-e827-87d5-a891-77a824f64d84"
+      stageUuid: "b25539f8-46a1-82d7-99c6-9a88988381a5"
 version: 2
 ---
 # desire — the demand seed (the one atom you cannot inject)

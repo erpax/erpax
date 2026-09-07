@@ -1,7 +1,39 @@
 ---
 name: registry
 description: "Use when a standard's canonical title, family or publisher is needed — the curated spine of facts a banner scan cannot derive, joined to fs-derived usage to build the shared catalogue."
-atomPath: standards/registry
+atomPath: "standards/registry"
+coordinate: "standards/registry · 1/base · 33884c65"
+contentUuid: "b43f5b03-0139-5c2c-90ac-90501833370e"
+diamondUuid: "1d214fac-5ba1-83ed-bca0-05f9f67b2038"
+uuid: "33884c65-2e9f-8ca6-9bda-376c4a089160"
+horo: 1
+typography:
+  partition: standards
+  bondDegree: 31
+standards:
+  - "3986 …`"
+  - "ISO-19011:2018 audit-evidence (a curated register of cited norms)"
+  - "ISO/IEC-25010:2023 §5.1 functional-completeness"
+  - "banner against every registered matcher: 777 citations across 416 distinct heads"
+bindings: []
+signatures:
+  computationUuid: "fc9c6024-2365-8848-bf87-75c6caca26cf"
+  stages:
+    - stage: path
+      stageUuid: "9d2a0781-409a-824e-b4d5-4245013bc8cd"
+    - stage: trinity
+      stageUuid: "258590a4-5400-8881-9929-6c5643e42b68"
+    - stage: boundary
+      stageUuid: "1108fe1f-6c19-8339-8bd7-ef2685e1b8b0"
+    - stage: links
+      stageUuid: "14e7d49b-d238-88f2-b37f-9155b78f5e2e"
+    - stage: horo
+      stageUuid: "b222ccc6-fcdb-8011-93e4-00049410d684"
+    - stage: seal
+      stageUuid: "656dc0b0-4214-8a40-a75c-89b31d85cb4a"
+    - stage: uuid
+      stageUuid: "caf7aa71-c941-8a1d-a0f4-b06b0b488537"
+version: 2
 ---
 # standards/registry — the facts a scan cannot derive
 

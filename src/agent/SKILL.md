@@ -2,14 +2,14 @@
 name: agent
 description: "Use when reasoning about an agent — its identity, cloning, and replication (an agent IS its content, its id is the content-uuid of skills + purpose, so identical clones merge and distinct agents are specialised children), AND when wiring the society's actors (the pure DomainAgent contract, the registry that gives each collection exactly one owner, the runtime that dispatches chain steps and events and scheduled ticks, the effect-processor where every side effect fires — the A-vortex coupling layer that decides without acting)."
 atomPath: agent
-coordinate: "agent · 8/crest · 8aad3f01"
-contentUuid: "343b82fa-ed2c-53e3-8cf7-b0b061922619"
-diamondUuid: "71253f63-d8cb-8464-9632-87cc8f301594"
-uuid: "8aad3f01-e129-8f4a-a6d4-04f872188c67"
-horo: 8
+coordinate: "agent · 7/descent · 14fac469"
+contentUuid: "9964d52f-ddec-5bed-9102-cf591e667076"
+diamondUuid: "ebf1d0b6-6687-86b8-b90a-bb3322174d0a"
+uuid: "14fac469-fa7b-8f04-8f05-d35cba5e17f1"
+horo: 7
 typography:
   partition: agent
-  bondDegree: 241
+  bondDegree: 315
 standards:
   - "ISO-19011"
   - "ISO-19011`"
@@ -31,29 +31,23 @@ standards:
   - "W3C-ActivityPub"
 bindings: []
 signatures:
-  computationUuid: "587d8a34-6b26-8295-a6f0-cc5512ebbbfb"
+  computationUuid: "5a2966bc-adb8-888c-b4a4-4d6e4dc98bd4"
   stages:
     - stage: path
       stageUuid: "a0f973da-5aaf-8198-87b0-f6e725af250f"
     - stage: trinity
       stageUuid: "af664f1d-7869-83a9-bc02-d8710e05dbe0"
     - stage: boundary
-      stageUuid: "50fc9599-2cd2-866c-b250-24b2ccd2c1a2"
+      stageUuid: "b1faa78b-bf1e-8049-9116-e9019e66cc72"
     - stage: links
-      stageUuid: "d10b9ce1-92a5-8a56-91eb-9e554f750da3"
+      stageUuid: "f7819c72-5bf4-8519-bcd9-8c35947852ea"
     - stage: horo
-      stageUuid: "2dd7a3a8-3869-8dad-b587-4a8cf5f52d75"
+      stageUuid: "28ec11ee-9190-8e20-b822-cd1876170ce7"
     - stage: seal
-      stageUuid: "2854c9c6-8372-8a76-9e59-a0264e44ece4"
+      stageUuid: "cc386600-b64e-8962-8301-0eeb688cc21b"
     - stage: uuid
-      stageUuid: "c140b4ee-17b7-8620-9217-fe99e9e533c7"
+      stageUuid: "c88817fa-74da-807f-8a98-fe85ffd870a8"
 version: 2
-neighbors:
-  wikilink:
-    - "[[chats]]"
-neighbors:
-  wikilink:
-    - "[[agent/intelligence]]"
 ---
 # agent — an agent is its content; cloning is content-addressing; the actor decides in pure functions while only the substrate acts
 

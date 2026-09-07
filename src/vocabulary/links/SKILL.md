@@ -2,11 +2,11 @@
 name: links
 description: "Use when reasoning about links as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/links"
-coordinate: "vocabulary/links · 1/base · f1c524ed"
-contentUuid: "13369012-4c77-516f-8122-3f6b54b5a045"
-diamondUuid: "49d9fad8-821b-882c-a5e0-0b13b442577d"
-uuid: "f1c524ed-f0b4-8209-b8d6-3a24674bd399"
-horo: 1
+coordinate: "vocabulary/links · 5/round · 70210741"
+contentUuid: "c2777ace-e1cb-5000-88dd-5affa9d45914"
+diamondUuid: "4330217f-d2f8-8046-9d39-da09e1f00a27"
+uuid: "70210741-b2ee-8ee2-9285-33035b9b60b7"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 68
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8b43d80c-a0cf-8a53-8d5b-f82f4d9e07ac"
+  computationUuid: "e6d6b35c-f914-8b9d-9d37-651d82668a70"
   stages:
     - stage: path
       stageUuid: "82772dba-30a0-8b84-9bdd-ad47007f07df"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "25c45098-dd84-8113-8100-20de60cc65f5"
     - stage: horo
-      stageUuid: "7e701698-41a5-88e3-80c0-2ea220127939"
+      stageUuid: "f674333f-5615-8269-a9e7-c47ab7934c12"
     - stage: seal
-      stageUuid: "613d475e-48ca-85fa-8f54-55412cfbc3ca"
+      stageUuid: "6a11c819-bd73-8e5f-8b55-db9c186f11ca"
     - stage: uuid
-      stageUuid: "4ba62e5e-4bec-8548-9612-7870cc7996c3"
+      stageUuid: "e64f5587-e652-81f4-8833-eeb6a4ad0a2e"
 version: 2
 ---
 # links

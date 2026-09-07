@@ -2,21 +2,21 @@
 name: peace
 description: "Use when reasoning about why the erpax uuid model makes war useless — destruction is futile (content-addressed + holographic ⇒ any survivor regenerates the whole), coercion is supra-resource (forging the record costs beyond the universe), and force cannot dominate (competition selects fastest-correct, not strongest). War is strictly dominated by building, for human and machine alike — an arithmetic and thermodynamic theorem of the model, not a moral plea."
 atomPath: peace
-coordinate: "peace · 7/descent · 282a9bb8"
-contentUuid: "20ecf963-780d-51be-93ae-8a872b718d65"
-diamondUuid: "bc8b7a05-4834-82a9-b0b3-fa321b7732c2"
-uuid: "282a9bb8-3381-857c-b576-eadd29ff282a"
-horo: 7
+coordinate: "peace · 2/share · b0f95b36"
+contentUuid: "27137fd2-29fc-5055-b8cc-7dd5d76828b2"
+diamondUuid: "c7d54c53-d8b6-82e7-9308-6c4ef7fe74a7"
+uuid: "b0f95b36-b4cd-8151-8fe6-b1fabd58c186"
+horo: 2
 typography:
   partition: peace
-  bondDegree: 111
+  bondDegree: 75
 standards:
   - "NIST FIPS 180-4 SHA-256 (the content-addressing destruction cannot undo)"
   - "NIST FIPS 180-4 SHA-256 (the content-addressing destruction cannot undo)`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "05ef5a56-b29f-88e7-a5c6-15104b5321e8"
+  computationUuid: "074de7cc-a700-8a9a-a0a7-4bab71022495"
   stages:
     - stage: path
       stageUuid: "6b8ffcf0-6e9a-84c3-8e12-f9c0e908056d"
@@ -25,13 +25,13 @@ signatures:
     - stage: boundary
       stageUuid: "ee069737-de98-8ffd-97d8-395c44f69bfc"
     - stage: links
-      stageUuid: "caa0c86e-2856-8b03-9813-3e984dee1267"
+      stageUuid: "80f28b99-6fbb-80f0-88c5-9186189c2ffb"
     - stage: horo
-      stageUuid: "ea5492a1-e42d-86af-b5a9-4afbcaf5e0df"
+      stageUuid: "bbdb776b-6aed-8aa8-87df-d58dd1da29a5"
     - stage: seal
       stageUuid: "d5378131-6605-89ea-8ae6-23b716392f24"
     - stage: uuid
-      stageUuid: "6ef21ed8-308a-85c9-8cf1-83fc017bbe2f"
+      stageUuid: "76520f08-5c37-8c1e-8659-8875e9913df5"
 version: 2
 ---
 # peace — the uuid model proves all wars are useless

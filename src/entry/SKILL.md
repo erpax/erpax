@@ -1,15 +1,15 @@
 ---
 name: entry
-description: "Use when reasoning about the universal double-entry in erpax — every value movement (any direction, any parties) reduces to a balanced (debit, credit) pair; the reverse is inherent, direction is a viewpoint, N plugin mounts consolidate (intercompany nets to zero). The debit/credit closure operator over the whole mesh — \"all accounted in all directions ⇒ the wiring is complete\"."
+description: "Use when reasoning about the universal double-entry in erpax — every value movement (any direction, any parties) reduces to a balanced (debit, credit) pair; the reverse is inherent, direction is a viewpoint, N plugin mounts consolidate (intercompany nets to zero). The debit/credit closure operator over the whole mesh — \\\"all accounted in all directions ⇒ the wiring is complete\\\"."
 atomPath: entry
-coordinate: "entry · 1/base · 3edb606c"
-contentUuid: "4c8a5a6e-eadb-5e3c-924b-ef52373c8969"
-diamondUuid: "6f70578b-e14e-8333-ba50-cef84d35cb2d"
-uuid: "3edb606c-8f8c-8e6f-bf9b-8da98dafba05"
-horo: 1
+coordinate: "entry · 7/descent · a337b911"
+contentUuid: "04335bbc-4b50-5ac4-a40b-2934509f8899"
+diamondUuid: "11f9177a-8571-8830-894c-b61339cb93b9"
+uuid: "a337b911-bc32-8407-80ed-532543fe65b2"
+horo: 7
 typography:
   partition: entry
-  bondDegree: 177
+  bondDegree: 170
 standards:
   - "FASB ASC 810-10-45: intercompany balances eliminate to net zero on consolidation"
   - "IFRS/IAS — 2026 Issued: double-entry (Σdebit = Σcredit)"
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "804b6a75-55a2-89c9-8aa8-b254306b60bb"
+  computationUuid: "9e9c157b-b8af-806d-acbc-b15fcde28136"
   stages:
     - stage: path
       stageUuid: "68fb5705-4683-8f65-8d52-83706909b8c7"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "3bed8497-c085-893a-84bc-bb3bc3902bac"
     - stage: horo
-      stageUuid: "d75989b6-8caa-8a9f-9b9e-6caea6833068"
+      stageUuid: "2b21c3d7-c562-81d7-93ee-9815687aba4e"
     - stage: seal
       stageUuid: "f0a543a8-0236-8428-ac2d-f94a5c49e51f"
     - stage: uuid
-      stageUuid: "09d9bb4a-beb6-8081-8e46-552f20d4d10e"
+      stageUuid: "fc08fc6d-6b32-8c4e-91e4-dbec9f20f28c"
 version: 2
 ---
 # entry — the universal double-entry (all based on debit/credit)

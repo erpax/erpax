@@ -2,18 +2,18 @@
 name: crop
 description: "Use when modelling a cultivated plant type as the agricultural SKU — the produce-catalogue row carrying its sale unit (1 bunch, 100 g, 1 head), unit price, and the agronomic constants (yield per area, plant spacing, N·K₂O need, plantings & harvests per season) that explode a demand quantity into land, seed, and fertility. The crop is the bill-of-materials line of a farm; its heterogeneous sale unit is why automatic unit conversion is non-negotiable."
 atomPath: "vocabulary/crop"
-coordinate: "vocabulary/crop · 4/weave · 31fd14a1"
-contentUuid: "3a9c578d-f5aa-5fa6-a66b-4be1353e4a31"
-diamondUuid: "7f6fe4ed-a078-83e3-874b-a95289db6952"
-uuid: "31fd14a1-6d9d-8820-ac49-5b1c56208c05"
-horo: 4
+coordinate: "vocabulary/crop · 7/descent · 58f6ffbd"
+contentUuid: "3965a551-7679-559d-9f22-7aaafb8432a8"
+diamondUuid: "8205636c-febb-8e6f-8e7c-3d57191466ac"
+uuid: "58f6ffbd-0c33-866e-b660-1954f964b87b"
+horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 150
+  bondDegree: 148
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9518b83d-ed37-8b63-a55f-8423e5443804"
+  computationUuid: "37a93ad1-2859-81cf-a087-ede2d36bc197"
   stages:
     - stage: path
       stageUuid: "7fe674bd-5b67-816b-9451-b967b0971bea"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "60eb8dbb-bb44-851a-b8d3-00d36b59c91d"
     - stage: horo
-      stageUuid: "f3835be8-8339-847f-ad0e-522d98a3cea5"
+      stageUuid: "19bd61c5-b51a-8e93-b7c4-6ed2db896db0"
     - stage: seal
-      stageUuid: "15d2bcf8-adff-8b27-b9db-2b4bdb632bf7"
+      stageUuid: "9f4d70d7-1022-84d0-a6f1-abdb4e54a4f4"
     - stage: uuid
-      stageUuid: "0527da81-5dd0-80f9-b166-e46d085a11b6"
+      stageUuid: "9393e9e1-542f-8c1e-b3b1-0970962dcb40"
 version: 2
 ---
 # crop — the cultivated plant as the agricultural SKU

@@ -2,14 +2,14 @@
 name: "3"
 description: Use when implementing or referencing Peppol BIS Billing 3.0.
 atomPath: "peppol/bis/3"
-coordinate: "peppol/bis/3 · 4/weave · 8a574e56"
-contentUuid: "f0994081-8925-5c32-81a7-f3f3cd0bf331"
-diamondUuid: "af9ca1a1-4d0c-850b-8814-8792625fbdaa"
-uuid: "8a574e56-1ccc-89d9-8823-51c353b0e1ca"
+coordinate: "peppol/bis/3 · 4/weave · 7d2946d0"
+contentUuid: "34e63964-c6e4-5f52-98d2-553b0f66639a"
+diamondUuid: "d25bf892-58cd-8bbd-ad33-6cbd612a0338"
+uuid: "7d2946d0-25d6-8966-8f00-92bad9b62979"
 horo: 4
 typography:
   partition: peppol
-  bondDegree: 1
+  bondDegree: 10
 standards:
   - "EN-16931:2017+A1:2019 semantic-model-electronic-invoice"
   - "EN-16931:2017+A1:2019 semantic-model-electronic-invoice`"
@@ -25,7 +25,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "c094e430-8a87-878b-a077-a599020d1fbf"
+  computationUuid: "d5ecc459-49d5-88c8-9dd4-95589e71932b"
   stages:
     - stage: path
       stageUuid: "05fcd777-41ce-8c51-89aa-018720334d30"
@@ -34,13 +34,13 @@ signatures:
     - stage: boundary
       stageUuid: "c5140c1d-17ad-8d7a-9a46-61e945a9d646"
     - stage: links
-      stageUuid: "06d3f277-b5fa-84ac-bab4-21e95d9e4987"
+      stageUuid: "8ebbe34c-43cd-8f85-8459-38c2af171835"
     - stage: horo
-      stageUuid: "bb20e669-1849-850c-80a2-263eb553c53f"
+      stageUuid: "997ab85c-911a-8b90-ae95-eca86273a480"
     - stage: seal
       stageUuid: "b09770e4-ed3b-8573-81b1-db0ef609494b"
     - stage: uuid
-      stageUuid: "32e2e9eb-d49b-8cda-a957-30e80dab9d50"
+      stageUuid: "a51eec99-63f1-8084-9a91-5622f89a54af"
 version: 2
 ---
 # Peppol BIS Billing 3.0

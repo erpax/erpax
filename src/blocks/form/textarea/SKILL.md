@@ -3,13 +3,13 @@ name: textarea
 description: "Use when reasoning about textarea — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits."
 atomPath: "blocks/form/textarea"
 coordinate: "blocks/form/textarea · 7/descent · 01c1255e"
-contentUuid: "6cf207a3-84e8-560c-b65c-8550329c4d92"
+contentUuid: "82f3bdbc-5b41-5820-bd5c-876c939024b0"
 diamondUuid: "14ff76b6-4e5c-8392-9a36-5ec9155b528a"
 uuid: "01c1255e-7766-8899-8178-17f6e8428538"
 horo: 7
 typography:
   partition: blocks
-  bondDegree: 15
+  bondDegree: 12
 standards: []
 bindings: []
 signatures:

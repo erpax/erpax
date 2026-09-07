@@ -2,10 +2,10 @@
 name: pamphlet
 description: "Use when reasoning about pamphlet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/pamphlet"
-coordinate: "vocabulary/pamphlet · 8/crest · d220c23c"
-contentUuid: "b57608af-cf89-569e-ba7d-04ac97b22247"
-diamondUuid: "f63249d0-660c-811a-a818-949ab2ff86e1"
-uuid: "d220c23c-ece7-8b12-8675-5340e66a3d14"
+coordinate: "vocabulary/pamphlet · 8/crest · 426c0a6c"
+contentUuid: "a5a5a507-8532-5487-ae94-9f6244e03d7f"
+diamondUuid: "455a8d20-fed8-8346-a91d-580b69ea527e"
+uuid: "426c0a6c-782c-827d-8355-fc208319440e"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7da18072-bf8e-8306-8fe8-8fcc3d7a7d22"
+  computationUuid: "056ef8ac-66db-8623-9fea-f2e7b5d15573"
   stages:
     - stage: path
       stageUuid: "31f2a821-46b0-8106-8b8e-a0e23553d547"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "645dd019-4201-8571-abd3-30684040c11f"
     - stage: horo
-      stageUuid: "5da4787d-006e-890d-a7b7-8e462da12ff6"
+      stageUuid: "204ae25b-8477-8c59-be41-e4fe1f1655ad"
     - stage: seal
-      stageUuid: "c593014a-c23a-8b26-a97e-3886f1bfdbb4"
+      stageUuid: "234ff29f-757d-8ab2-a57c-25f2567b46ae"
     - stage: uuid
-      stageUuid: "b412399a-a016-81a5-a684-402800bde408"
+      stageUuid: "9cf40ae1-e255-8b01-8976-7354f3c184d8"
 version: 2
 ---
 # pamphlet

@@ -2,8 +2,36 @@
 name: correspondence
 description: "Use when asked whether string theory or quantum computation bears on the Millennium Problems, or whether any of it strengthens cryptography. A physical duality can PREDICT a statement that mathematics then proves — mirror symmetry is the genuine instance — but a correspondence never proves the problem it corresponds to, so every row carries the precise gap that remains beside what is really established. bearsOnSecurity is false in every row, declared per row rather than waved away: hardness rests on module-LWE, factoring, discrete logs and hash preimage resistance, and no result here constrains any of them."
 atomPath: "millennium/correspondence"
+coordinate: "millennium/correspondence · 2/share · 0a80933d"
+contentUuid: "4f7eacfb-9175-569a-84a8-525c6978041d"
+diamondUuid: "790b90d1-8956-842d-a457-02d4de014af3"
+uuid: "0a80933d-48d7-826d-9b9c-aa9760e4abcc"
+horo: 2
+typography:
+  partition: millennium
+  bondDegree: 18
+standards:
+  - "ISO 80000-2 — mathematical signs and symbols"
+bindings: []
+signatures:
+  computationUuid: "30e29df0-dbdb-87c3-8fa5-be5a7de10c8e"
+  stages:
+    - stage: path
+      stageUuid: "6b842b5c-c0d8-8f7a-8349-13a15db100ff"
+    - stage: trinity
+      stageUuid: "b6f6bd57-b551-81e8-91ba-e1e527fedb18"
+    - stage: boundary
+      stageUuid: "22a18d38-9876-867c-b4b8-ff6236f0df1d"
+    - stage: links
+      stageUuid: "942c7bc3-56bc-8790-953c-2ae30a7c2f6b"
+    - stage: horo
+      stageUuid: "cd9a1dad-c3ba-8186-b776-4bdd17fff00f"
+    - stage: seal
+      stageUuid: "9f13dd7b-9fcc-8525-88fc-568d02bd66c5"
+    - stage: uuid
+      stageUuid: "b12557c6-2ba6-8edb-8d09-4591c089b48d"
+version: 2
 ---
-
 # millennium/correspondence — physics predicts; mathematics proves
 
 [[millennium]] names the seven problems and refuses to solve them. What it did not carry is the question people actually arrive with: **string theory is said to bear on these — does it?**

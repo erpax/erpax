@@ -3,13 +3,13 @@ name: drift
 description: "Use when reasoning about drift — The corpus computes its own size. Prose states it too, and the two drift apart the moment an atom is minted."
 atomPath: "rules/drift"
 coordinate: "rules/drift · 5/round · 281bb349"
-contentUuid: "90f89269-d804-5162-9298-96b891beeb78"
+contentUuid: "47fc9b33-a3f4-5591-a412-d4197dc54653"
 diamondUuid: "ba411507-2506-89af-ab8f-13bf5246ff48"
 uuid: "281bb349-6276-8af1-8150-548d04fc82d7"
 horo: 5
 typography:
   partition: rules
-  bondDegree: 17
+  bondDegree: 14
 standards: []
 bindings: []
 signatures:

@@ -3,13 +3,13 @@ name: amount
 description: "Use when reasoning about amount — renders integer cents as a fixed-two-decimal string; adds the code. Peppol UBL, ISO 20022, EDIFACT and SAF-T all need that wire form, and four serializers each doing it themselves…"
 atomPath: "format/amount"
 coordinate: "format/amount · 5/round · b5115fb8"
-contentUuid: "f0bb2484-3f7a-5b2e-829d-1aa9423d9a40"
+contentUuid: "ba307eda-3810-5a8c-a189-3a3395132443"
 diamondUuid: "213222bd-b248-8db6-bb31-40a73b2b61c5"
 uuid: "b5115fb8-7c8c-89bf-9d04-98526c5570c0"
 horo: 5
 typography:
   partition: format
-  bondDegree: 68
+  bondDegree: 65
 standards: []
 bindings: []
 signatures:

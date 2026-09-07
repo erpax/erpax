@@ -2,14 +2,14 @@
 name: movements
 description: "Use when tracking any stock quantity change — receipts, sales/issues, production consumption, transfers, returns, cycle-count adjustments, write-offs, or opening balances — with from/to warehouse locations and GL hook for COGS/variance posting. The append-only stock ledger per IAS-2 cost-flow assumption."
 atomPath: "items/inventory/movements"
-coordinate: "items/inventory/movements · 1/base · 7c8df8f9"
-contentUuid: "0a5d5da1-2b0a-58f2-a820-afbd453d7745"
-diamondUuid: "8c149ce6-1ec4-80f8-91e0-44e686f4b3fb"
-uuid: "7c8df8f9-f95a-828f-96a7-768fd5378016"
-horo: 1
+coordinate: "items/inventory/movements · 4/weave · a6a75049"
+contentUuid: "cb95daec-6f2f-5378-8909-d0190c4c1210"
+diamondUuid: "f0207c75-14f5-8c4e-95da-6bc9695b47db"
+uuid: "a6a75049-7723-8447-a613-87bc4fcb0754"
+horo: 4
 typography:
   partition: items
-  bondDegree: 0
+  bondDegree: 30
 standards:
   - "IFRS IAS-2 §10 §36 inventories cost-formulas"
   - "IFRS IAS-2 §25 cost-formulas"
@@ -24,22 +24,22 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "d4dd3e63-ce10-8744-bf7d-3380d7c91307"
+  computationUuid: "cbc46f4b-5b51-8bcd-b54f-400b3ddd510c"
   stages:
     - stage: path
       stageUuid: "9d9b856b-a92d-8cb8-8238-a6c274078938"
     - stage: trinity
       stageUuid: "7dacdfb6-6b1f-8f87-9dd8-7f04c708af71"
     - stage: boundary
-      stageUuid: "3cce9769-fe54-835b-9b52-b6ee68e0e236"
+      stageUuid: "8492f721-fc0e-8d13-ac3c-cf715ed0028a"
     - stage: links
       stageUuid: "d0b3c040-bb58-8c01-846b-10ef355df92b"
     - stage: horo
-      stageUuid: "5dcf8490-bbb2-8dfa-b03d-80a6c7ccf853"
+      stageUuid: "11f4ec43-95f7-8cae-b437-b58a5b481652"
     - stage: seal
       stageUuid: "af6eec69-3941-8be1-af17-cc9607733e93"
     - stage: uuid
-      stageUuid: "b09169cc-744a-8fda-9f5e-9fa848f17b2b"
+      stageUuid: "5931f65b-e3b3-87ec-a928-1abf6774c546"
 version: 2
 ---
 # inventory-movements

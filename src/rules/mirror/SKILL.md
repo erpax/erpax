@@ -3,13 +3,13 @@ name: mirror
 description: Use when reasoning about mirror — That assertion cannot fail for any reason a reader cares about. Change the constant and the test changes with it.
 atomPath: "rules/mirror"
 coordinate: "rules/mirror · 7/descent · daca8ae9"
-contentUuid: "9048762b-a756-5ac7-8a27-3925720f0420"
+contentUuid: "017647d1-c705-5990-95fd-1423ca1c8c2d"
 diamondUuid: "b4c4500f-fcff-83a6-aa48-629758d37dea"
 uuid: "daca8ae9-fc38-80ac-99c5-75f2ee29e966"
 horo: 7
 typography:
   partition: rules
-  bondDegree: 34
+  bondDegree: 28
 standards: []
 bindings: []
 signatures:

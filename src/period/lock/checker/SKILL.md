@@ -2,18 +2,18 @@
 name: checker
 description: "Use when deciding whether a posting date falls in a locked fiscal period — closed periods refuse new postings (admin override required) but allow reversals and prior-period-adjustments, and an unparseable date fails CLOSED; the SOX §404 control an auditor signs."
 atomPath: "period/lock/checker"
-coordinate: "period/lock/checker · 1/base · 5676cd16"
-contentUuid: "7d141ed2-fcb2-58c7-ad14-5558addc218e"
-diamondUuid: "4bf11f6f-cf6c-84f4-a891-48c1dad1166a"
-uuid: "5676cd16-86ef-8fcd-9e6c-e4a01e9afa34"
-horo: 1
+coordinate: "period/lock/checker · 2/share · 294fabdb"
+contentUuid: "36038644-cadb-5381-a760-feb8f8c68db3"
+diamondUuid: "d61951ce-ebdb-82c3-9337-849c797728bb"
+uuid: "294fabdb-01cc-8422-aa2a-bd521c5217d0"
+horo: 2
 typography:
   partition: period
   bondDegree: 18
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a5324ea2-094c-89ba-a163-d32b7c58e3c1"
+  computationUuid: "57cf5c1c-3397-868c-8df6-93ab565c8557"
   stages:
     - stage: path
       stageUuid: "18bb5c50-2ef4-8ca8-b95a-82f4f2413eb6"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d99cef29-1657-8a4a-8fd8-63c662d547f2"
     - stage: horo
-      stageUuid: "62136f14-323e-83d0-8723-153bb656270b"
+      stageUuid: "867ab08d-7de8-825d-b885-36c3fd2c69ed"
     - stage: seal
       stageUuid: "5426795a-1802-869a-9c13-8aa9d138557a"
     - stage: uuid
-      stageUuid: "0f1774c0-ba51-8d3a-aad2-c97e2005e01f"
+      stageUuid: "657540d8-698c-8790-a771-24e143b40c68"
 version: 2
 ---
 # period/lock/checker — a closed period refuses new postings, proven

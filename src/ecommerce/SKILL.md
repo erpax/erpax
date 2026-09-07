@@ -1,36 +1,36 @@
 ---
 name: ecommerce
-description: "Use when wiring or debugging the storefront — per-tenant Stripe payments, cart/order/product/address overrides, checkout stock validation, the order-to-GL bridge, or the \"data is money\" seam — the erpax configuration of the official @payloadcms/plugin-ecommerce."
+description: "Use when wiring or debugging the storefront — per-tenant Stripe payments, cart/order/product/address overrides, checkout stock validation, the order-to-GL bridge, or the \\\"data is money\\\" seam — the erpax configuration of the official @payloadcms/plugin-ecommerce."
 atomPath: ecommerce
-coordinate: "ecommerce · 1/base · d7bca145"
-contentUuid: "aff0feff-ee4d-5734-b5f4-f0d2dc68ae77"
-diamondUuid: "5137010b-b53a-8019-b120-818c82adf961"
-uuid: "d7bca145-74c3-85fe-a8be-00458def70a2"
-horo: 1
+coordinate: "ecommerce · 5/round · e9f08129"
+contentUuid: "0784f538-4957-5f70-8c00-dbdf6a088a80"
+diamondUuid: "008c4864-d69a-856d-b365-ad2664a5f746"
+uuid: "e9f08129-22ac-8972-bc66-ed2ea9744f50"
+horo: 5
 typography:
   partition: ecommerce
-  bondDegree: 0
+  bondDegree: 33
 standards:
   - "GS1-GTIN"
   - "NIST-INCITS-359-2012"
 bindings: []
 signatures:
-  computationUuid: "657a94ad-0333-842c-bb0c-11b309e5a415"
+  computationUuid: "4ecde391-a19b-8e4f-ba56-aa6eaef662fa"
   stages:
     - stage: path
       stageUuid: "9b42707f-dc63-8c2f-88c9-2bb5e0e6cfda"
     - stage: trinity
-      stageUuid: "30fb8d3b-6974-8e0d-a949-e25651d4f114"
+      stageUuid: "1c865c57-2849-8c65-96bb-35fa1228c0df"
     - stage: boundary
-      stageUuid: "cc140962-51d6-85f5-bc24-ff228c4ebc5e"
+      stageUuid: "a2702601-5c6c-8864-bd49-f884d7825aef"
     - stage: links
       stageUuid: "664dcdcd-c127-8af3-ad17-39cbd2544cd2"
     - stage: horo
-      stageUuid: "a47b22fa-69f8-84f2-a081-97e11c80022a"
+      stageUuid: "c93c4b18-b5e0-885c-9114-2c55f75a7b47"
     - stage: seal
-      stageUuid: "9fa01d63-8816-8af5-b1ad-4ca29851a6db"
+      stageUuid: "025e1f4e-a192-8d70-81ef-6be2751aa981"
     - stage: uuid
-      stageUuid: "f0040a86-83d2-8528-9952-d6756c15c675"
+      stageUuid: "2019a6dc-cf77-8f2c-9f6d-380a8e8407e8"
 version: 2
 ---
 # ecommerce — the storefront, configured into the society

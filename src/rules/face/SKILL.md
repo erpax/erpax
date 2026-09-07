@@ -1,8 +1,36 @@
 ---
 name: face
 description: "Use when a refactor moves matter between atoms — a split may relocate anything, but an atom that stops offering a name breaks every caller silently. Snapshot corpusFace before, compare after; a LOST name fails closed, a gained one is free. Replayed against the commit that split four concentration hubs, it catches the drop that commit made."
+atomPath: "rules/face"
+coordinate: "rules/face · 5/round · bee76841"
+contentUuid: "cd0ffaa9-d53f-5a2a-994f-4615f4ba8acb"
+diamondUuid: "d5bb5b51-9e10-84e9-bd43-4fe71a709a5a"
+uuid: "bee76841-a6da-8291-aa6a-59cce890ae25"
+horo: 5
+typography:
+  partition: rules
+  bondDegree: 23
+standards: []
+bindings: []
+signatures:
+  computationUuid: "7ea65f3e-e453-8396-9281-18bd2f72e5d2"
+  stages:
+    - stage: path
+      stageUuid: "e4c83b30-fa59-8cfb-ad01-4e9410483904"
+    - stage: trinity
+      stageUuid: "474ae107-ddb5-8e64-9c0e-f8d39a3f6906"
+    - stage: boundary
+      stageUuid: "763c0b6f-3c8a-828d-84f5-878aad5f7f74"
+    - stage: links
+      stageUuid: "10dc000c-6382-8c2d-ba63-fd5440242f80"
+    - stage: horo
+      stageUuid: "6fa06946-bed6-80ed-96fc-1935bce4b994"
+    - stage: seal
+      stageUuid: "30feaeea-246e-8afa-97f0-eb3219156c64"
+    - stage: uuid
+      stageUuid: "bd55a541-bc4c-8e3e-906f-107150f2053d"
+version: 2
 ---
-
 # rules/face — a refactor may move anything except a name
 
 Four candidate gates for the facade-shadowing class were measured and **all four were

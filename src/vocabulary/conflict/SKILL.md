@@ -2,18 +2,18 @@
 name: conflict
 description: "Use when reasoning about conflict — Before a matter opens, the firm must prove there is no **conflict**: the proposed party (client) must not be adverse to a party the firm already serves. Strip the prefix and this i"
 atomPath: "vocabulary/conflict"
-coordinate: "vocabulary/conflict · 1/base · c8fbcd0e"
-contentUuid: "f93416db-cde8-5bdf-8a5a-55ead5a1e0d3"
-diamondUuid: "bb075005-068b-8cbb-8864-4489ba175c4f"
-uuid: "c8fbcd0e-32f1-83e4-bcf0-0f91d812beb0"
-horo: 1
+coordinate: "vocabulary/conflict · 5/round · fe301025"
+contentUuid: "d692c885-e6aa-5377-abe5-292d0cc94473"
+diamondUuid: "b5e222c8-73b0-8b14-8d95-e5fc70205b41"
+uuid: "fe301025-5422-8550-9db4-412a7aafc759"
+horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 26
+  bondDegree: 30
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5b413b61-6a97-8a08-b516-5016ff5944e0"
+  computationUuid: "a617453e-740c-847f-a6a5-5bcac4421bd8"
   stages:
     - stage: path
       stageUuid: "c450f96d-b319-81f5-8a75-e0a0bbcf33c5"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "041fc12f-8fa4-8633-a812-b7f331717c11"
     - stage: horo
-      stageUuid: "2e80dc7e-8cef-8126-84e6-bb1125db3428"
+      stageUuid: "a601bca4-26f0-8d05-b514-e340d667725a"
     - stage: seal
-      stageUuid: "5f6d31b5-98a2-8916-a0d5-abc272009fbe"
+      stageUuid: "0feee142-18b5-80b3-bb4b-74e1d5c75c83"
     - stage: uuid
-      stageUuid: "2716922b-9ae3-81f8-a158-9a72e15f25d0"
+      stageUuid: "c80b1f51-80b6-8603-9b99-c04f5faba4f0"
 version: 2
 ---
 # conflict — the adversity collision (the merge law as a clearance check)

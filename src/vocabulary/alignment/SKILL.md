@@ -2,11 +2,11 @@
 name: alignment
 description: "Use when reasoning about alignment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/alignment"
-coordinate: "vocabulary/alignment · 5/round · 613aeb0b"
-contentUuid: "c2c0dff3-07e1-55ba-8a03-09d29bc0daae"
-diamondUuid: "f7840751-276a-8cd8-ba4b-67cd688abaa6"
-uuid: "613aeb0b-ad3b-8ec2-b590-10e1f29195f4"
-horo: 5
+coordinate: "vocabulary/alignment · 7/descent · 8027451f"
+contentUuid: "45f17933-9e71-5d45-91fc-28bda61c997d"
+diamondUuid: "e60231fe-a91d-8f3c-976e-bf18b5b9c34d"
+uuid: "8027451f-240d-855b-b7f8-0851a0084dc1"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c73f200f-ea6a-8579-9b88-2c8f546e687a"
+  computationUuid: "bec61064-a40a-8cb1-89d7-78d99e3d2043"
   stages:
     - stage: path
       stageUuid: "b581dc2d-f68e-8138-a16d-b9d51ec19dc6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "510ff943-5a1b-88e7-8e29-9f1404fea348"
     - stage: horo
-      stageUuid: "5da7d42e-a0b7-873f-b5f2-0f25de338064"
+      stageUuid: "33e6baf1-e9b8-88e4-af1c-d081b7d2b1e4"
     - stage: seal
-      stageUuid: "602a2ae8-7357-860a-a5ba-b07ebe5c3bf1"
+      stageUuid: "99173653-98ac-8b06-84f1-d719410e1c8e"
     - stage: uuid
-      stageUuid: "d15476d0-085f-864e-b8da-07c2af0f1428"
+      stageUuid: "b73f4636-3667-8630-ad1f-8a8d59a686de"
 version: 2
 ---
 # alignment

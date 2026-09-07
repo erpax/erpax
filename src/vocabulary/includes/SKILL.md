@@ -2,19 +2,19 @@
 name: includes
 description: "Use when reasoning about includes as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/includes"
-coordinate: "vocabulary/includes · 7/descent · 23800f58"
-contentUuid: "216a30f9-e411-5ceb-bf75-9d7f4ba4fa3b"
-diamondUuid: "1cc7b8e0-1402-8040-a8d6-716a13d275de"
-uuid: "23800f58-ef55-80d5-96ac-1cdb5212bd27"
-horo: 7
+coordinate: "vocabulary/includes · 2/share · f12294df"
+contentUuid: "668c4f6f-4b51-57ad-9256-1eb96044e3ef"
+diamondUuid: "af4e96e9-6634-8f1b-9554-6cb7b9d9674d"
+uuid: "f12294df-0f19-8433-8372-e6b253667b2b"
+horo: 2
 typography:
   partition: vocabulary
-  bondDegree: 41
+  bondDegree: 43
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "261d01c2-2fae-8b45-84cf-281f4b066ccb"
+  computationUuid: "df4f5b9a-2c93-8eb8-ac37-e46af312ad63"
   stages:
     - stage: path
       stageUuid: "c7567773-770a-8b54-9c8f-dc1a00613462"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5466b6df-e96e-847f-9675-304db61369e2"
     - stage: horo
-      stageUuid: "64391212-8024-80fd-be86-d5c0eb0a0a6b"
+      stageUuid: "024e08b3-0460-830b-8e6b-88a8c00530ab"
     - stage: seal
-      stageUuid: "809eb93d-5d28-87e0-b2a9-94f1227648a3"
+      stageUuid: "3ca5a6df-2d05-87c2-bc1d-5f06e4338a02"
     - stage: uuid
-      stageUuid: "6dbd763e-bf8d-8386-b9f1-de3a45ffad92"
+      stageUuid: "e7e0db99-c48a-80dd-9d9c-8807ca7e5abc"
 version: 2
 ---
 # includes

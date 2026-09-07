@@ -3,13 +3,13 @@ name: role
 description: "Use when reasoning about role — Importing this barrel pulls in the four reference tenant profiles — business, payment provider, bank, government — so any code holding the registry sees them without naming each."
 atomPath: "tenant/role"
 coordinate: "tenant/role · 4/weave · 5fe43071"
-contentUuid: "80d65837-bd42-54a1-bfbf-38cc2a9b8b1b"
+contentUuid: "5af455e6-fa68-5392-af0c-db468e93e50a"
 diamondUuid: "509749a6-e539-8e94-b140-26ef22b205dc"
 uuid: "5fe43071-9062-8177-9cd4-c8cde3049d33"
 horo: 4
 typography:
   partition: tenant
-  bondDegree: 44
+  bondDegree: 41
 standards:
   - "ISO/IEC 25010:2023 §5.4 reusability"
   - "ISO/IEC-12207"

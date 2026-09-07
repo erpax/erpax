@@ -2,11 +2,11 @@
 name: circle
 description: Use when reasoning about circle — A circle is the circular region of a specified radius centered at a specified latitude and longitude. A circle is expressed as a pair followed by a radius in meters.
 atomPath: "vocabulary/circle"
-coordinate: "vocabulary/circle · 1/base · 4aed30d4"
-contentUuid: "308d9311-a339-5a6c-a670-4af89560f545"
-diamondUuid: "aa82bb24-13b9-81c6-8fd3-1d995e06c22c"
-uuid: "4aed30d4-e0a3-84d9-828e-fa15115bb383"
-horo: 1
+coordinate: "vocabulary/circle · 2/share · cf0e6614"
+contentUuid: "f492f4e5-3b9d-5da3-8768-4d79fc440091"
+diamondUuid: "9ce19332-5094-8515-b5a2-94ffe848e01a"
+uuid: "cf0e6614-a1ef-8b02-b73e-33ba1355717a"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ea2f54af-1c2a-87b1-9a45-eaf92f41fbfa"
+  computationUuid: "6e0b7ec1-fbe9-84ed-9553-36a4e122adc6"
   stages:
     - stage: path
       stageUuid: "48597822-5ccf-8f85-b6fb-8f8c5fbd9940"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8fa524ae-bf5a-8d69-b693-3e1e3d9b469c"
     - stage: horo
-      stageUuid: "33dfe37e-c57b-85f0-a28b-180a7cbaba9e"
+      stageUuid: "0ff033bc-ca44-87f9-b950-4901e008237e"
     - stage: seal
-      stageUuid: "f8c0acbc-e124-87e5-843f-f05ee7595f52"
+      stageUuid: "1c2df474-4e51-8a8b-b21e-32052f566cf3"
     - stage: uuid
-      stageUuid: "be267e95-541b-8fe1-8ce6-6c67c4743607"
+      stageUuid: "9bd6d2eb-4653-8dad-9fbe-371df972d2b8"
 version: 2
 ---
 # circle

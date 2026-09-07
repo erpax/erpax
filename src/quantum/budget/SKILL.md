@@ -3,13 +3,13 @@ name: budget
 description: "Use when reasoning about budget — The corpus declares an agent-context ceiling: is **50,000**, and enforces it inside — the lazy loader the orientation tells every agent to use."
 atomPath: "quantum/budget"
 coordinate: "quantum/budget · 8/crest · 73f277f7"
-contentUuid: "3e9a44de-4133-554d-a508-d1bca6d075f3"
+contentUuid: "17c77aba-97fc-593d-96d9-662ee3c9f17d"
 diamondUuid: "2b81d89c-a943-8a00-96f5-9ecddd268078"
 uuid: "73f277f7-2353-8e49-9961-288db64369d0"
 horo: 8
 typography:
   partition: quantum
-  bondDegree: 13
+  bondDegree: 10
 standards: []
 bindings: []
 signatures:
@@ -36,7 +36,7 @@ quantum:
     - quantum
     - superposition
   collapse:
-    []
+    - "Use when reasoning about budget — The corpus declares an agent-context ceiling: is **50,000**, and enforces it inside — the lazy loader the orientation tells every agent to use."
   seal:
     sandbox: false
     receipt: false
@@ -45,7 +45,7 @@ quantum:
     analogResults: false
     speechResults: false
     computationUuid: "66e58ef7-e166-88d2-904b-2b2a3b51f9b8"
-    contentUuid: "3e9a44de-4133-554d-a508-d1bca6d075f3"
+    contentUuid: "17c77aba-97fc-593d-96d9-662ee3c9f17d"
 version: 2
 ---
 # quantum/budget — a byte written into an orientation is billed once per turn, not once
@@ -104,4 +104,4 @@ the ceiling, the fix is usually fewer atoms rather than thinner prose.**
 
 Composes: [[quantum]] · [[agent]] · [[law]].
 
-<sub>content-uuid `3e9a44de-4133-554d-a508-d1bca6d075f3` · account `quantum/budget` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `17c77aba-97fc-593d-96d9-662ee3c9f17d` · account `quantum/budget` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

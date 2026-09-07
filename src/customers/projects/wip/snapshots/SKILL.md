@@ -2,11 +2,11 @@
 name: snapshots
 description: "Use when closing a fiscal period — capturing frozen WIP evidence (cost-to-date, EAC, % complete, recognised revenue, unbilled contract asset or deferred liability) per project per period, and anchoring the accrual JE. The IFRS-15 §B14-B19 period-end WIP valuation collection."
 atomPath: "customers/projects/wip/snapshots"
-coordinate: "customers/projects/wip/snapshots · 5/round · cb0b80bf"
-contentUuid: "0269bffa-0bc1-5c15-991d-f067127aafbd"
-diamondUuid: "bf42fe51-3d51-83ef-976a-971147fe9997"
-uuid: "cb0b80bf-37d9-8144-871a-9ab768324a1d"
-horo: 5
+coordinate: "customers/projects/wip/snapshots · 2/share · a20260c2"
+contentUuid: "8edf54ba-0b7c-5cfc-8c74-74a54a720ec4"
+diamondUuid: "4c97d938-125e-84c1-bffa-6c2034cadf78"
+uuid: "a20260c2-aaed-8ce0-acf2-2337de33e6a3"
+horo: 2
 typography:
   partition: customers
   bondDegree: 28
@@ -22,7 +22,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "7fb8debf-354b-87fd-b54b-3c381ed2ddba"
+  computationUuid: "8ecf2919-c9e1-87f0-9ee5-586b786ee05f"
   stages:
     - stage: path
       stageUuid: "101a639d-62dd-81b8-b23a-3a2e312b42ce"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "8e63b2a0-94f6-8b62-bc00-a66a44eee0e6"
     - stage: horo
-      stageUuid: "6bf61e9c-c1e1-80b3-8902-c5fd6a2c0c18"
+      stageUuid: "09c0dedc-c0bc-87d5-b4ec-54dba704afcc"
     - stage: seal
       stageUuid: "2647771b-d008-81cd-a9db-43b6c55798d7"
     - stage: uuid
-      stageUuid: "a602d836-3c81-8f25-9b31-2dc447e887ea"
+      stageUuid: "c963471b-de0a-802b-9f95-e7ca43ac528d"
 version: 2
 ---
 # wip-snapshots

@@ -3,13 +3,13 @@ name: archive
 description: "Use when reasoning about archive — The archive lays post cards in a responsive grid. Visually it is columns; structurally it is an **ItemList** — a set of sibling entries with a defined order — and that structure…"
 atomPath: "collection/archive"
 coordinate: "collection/archive · 2/share · 09375bf1"
-contentUuid: "3ce8b657-1129-5dde-8db6-06a985577cde"
+contentUuid: "38c2be8c-1c87-5fe4-8af1-0f40926592bf"
 diamondUuid: "1be37e2c-47af-843d-8aa2-46ea5fcced78"
 uuid: "09375bf1-7ca6-8e70-a98a-717d2b9c7a3d"
 horo: 2
 typography:
   partition: collection
-  bondDegree: 30
+  bondDegree: 27
 standards:
   - "W3C HTML5 section-element"
   - "W3C-HTML5"

@@ -3,13 +3,13 @@ name: copy
 description: "Use when reasoning about copy — This corpus states the law already: *duplication is camouflage — while one law is stated in two private corners, nothing can show a THIRD place is missing it.* It has paid for it…"
 atomPath: "rules/copy"
 coordinate: "rules/copy · 1/base · 631a2521"
-contentUuid: "4ff77959-728a-5703-b4f0-604028d580da"
+contentUuid: "85829f50-96b8-5349-b750-ea9238836d3b"
 diamondUuid: "9b27927c-e044-8c87-89e3-1786c172287f"
 uuid: "631a2521-2644-8280-8554-8ecc10077efd"
 horo: 1
 typography:
   partition: rules
-  bondDegree: 12
+  bondDegree: 9
 standards: []
 bindings: []
 signatures:

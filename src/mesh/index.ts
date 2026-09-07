@@ -20,7 +20,7 @@ import { exactMaxOf, exactRound } from '@/algebra'
  */
 import { readdirSync, readFileSync, statSync } from 'node:fs'
 import { join, relative, dirname } from 'node:path'
-import { importsOf } from '@/rules/cycle'
+import { deferredTargetsOf, importsOf } from '@/rules/cycle'
 import { reactiveFrontier, type Reactivity } from '@/resonance'
 import { commentsOf } from '@/syntax'
 import { wavesOf } from '@/theorem'
@@ -39,7 +39,7 @@ export interface MeshEdge {
    * was test files. [[rules]]/cycle's own reader has always excluded them; this one did not, and the
    * two disagreed in silence.
    */
-  readonly kind: 'import' | 'test'
+  readonly kind: 'import' | 'test' | 'deferred'
 }
 
 export interface MeshStandard {
@@ -121,13 +121,18 @@ export function meshOf(cwd: string = process.cwd()): Mesh {
     const from = atomOfFile(f, cwd)
     atoms.add(from)
 
+    const deferred = deferredTargetsOf(f, cwd)
     for (const target of importsOf(f, cwd)) {
       const to = atomOfFile(target, cwd)
       if (to === from) continue
       const key = `${from}→${to}`
       if (edgeKeys.has(key)) continue
       edgeKeys.add(key)
-      edges.push({ from, to, kind: IS_TEST_FILE.test(f) ? 'test' : 'import' })
+      edges.push({
+        from,
+        to,
+        kind: IS_TEST_FILE.test(f) ? 'test' : deferred.has(target) ? 'deferred' : 'import',
+      })
     }
 
     let text: string
@@ -434,6 +439,20 @@ export function costVerdict(mesh: Mesh, costMs: ReadonlyMap<string, number>): Co
  * component from 167 to 458 and flattened every cost ranking built on it.
  */
 export const runtimeMesh = (mesh: Mesh): Mesh => ({ ...mesh, edges: mesh.edges.filter((e) => e.kind !== 'test') })
+
+/**
+ * The graph as MODULE INITIALISATION sees it — no test edges, and no edge that exists only because
+ * a function body calls `import()`.
+ *
+ * That is the graph [[rules]]/cycle's headline claim is about: "an import loop makes initialisation
+ * order an accident". A deferred import cannot make it an accident, because it does not run then.
+ * Reachability still counts them (runtimeMesh keeps them) — the module IS loaded eventually — so the
+ * two views answer two different questions instead of one answering both badly.
+ */
+export const initMesh = (mesh: Mesh): Mesh => ({
+  ...mesh,
+  edges: mesh.edges.filter((e) => e.kind === 'import'),
+})
 
 export function costRoots(mesh: Mesh, costMs: ReadonlyMap<string, number>): CostRoot[] {
   const acc = new Map<string, { cost: number; atoms: Set<string> }>()

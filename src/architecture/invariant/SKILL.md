@@ -2,11 +2,11 @@
 name: invariant
 description: "Use when enforcing the architecture laws in code — the executable checks (single-word atoms, no prefixes, every file payload⊕vitepress or junk, locality, the ≥2-cross balance, the naming matrix) that are the matter-twin of the gate."
 atomPath: "architecture/invariant"
-coordinate: "architecture/invariant · 5/round · ff6696f7"
-contentUuid: "b0c22be8-1883-5c7e-b479-c0ef055b0820"
-diamondUuid: "cf5216e9-a289-89a4-8f06-47735f9e3aa3"
-uuid: "ff6696f7-0ecf-88f7-95cc-4f322b269cf4"
-horo: 5
+coordinate: "architecture/invariant · 7/descent · a24c9627"
+contentUuid: "32105809-bc9b-5130-b2f3-6f8ffb4efcc0"
+diamondUuid: "f17aa5ec-ff4b-8230-a5e6-e3dc584ebf80"
+uuid: "a24c9627-eda5-8c55-90e4-9773780111fa"
+horo: 7
 typography:
   partition: architecture
   bondDegree: 24
@@ -35,7 +35,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "ae81589b-53d3-82d7-b7f6-5057ba03083f"
+  computationUuid: "6404c4d0-4bc0-8c4b-8397-e27c2c464e3d"
   stages:
     - stage: path
       stageUuid: "6e3a3b2e-4d9c-8bfd-8918-645115fc9912"
@@ -46,11 +46,11 @@ signatures:
     - stage: links
       stageUuid: "32e4c258-985d-88da-b3fa-0eaea5cfa70c"
     - stage: horo
-      stageUuid: "42ca6433-055b-87a5-aff0-06182b43260e"
+      stageUuid: "792129da-60d8-81e5-a234-86e67cc75546"
     - stage: seal
-      stageUuid: "6f0e277e-1f54-84be-b31e-883e193a3f0e"
+      stageUuid: "b36e6e32-67e1-8087-9681-3e68d6e0cf7e"
     - stage: uuid
-      stageUuid: "4d97a928-1e72-8268-af95-62a03488383a"
+      stageUuid: "ad3649b3-282f-8863-90d0-2ad26265a39b"
 version: 2
 ---
 # invariant — the architecture, enforced

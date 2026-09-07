@@ -2,18 +2,18 @@
 name: local
 description: "Use when reasoning about which safeguards a local-only message fabric can and cannot avoid — the send gate binds to EFFECT (one off-machine consumer makes the first local write the outward send), the injection boundary binds to CHANNEL (message content is data on any wire), and the content verdict binds to DECODED MEANING (invariant under glagolitic, cipher, or a quantum superposition of encodings — fails closed over branches)."
 atomPath: "message/local"
-coordinate: "message/local · 1/base · dc80c276"
-contentUuid: "f3466bb3-4f5a-5cd2-9756-a8f88e5c09d9"
-diamondUuid: "0ae33fb6-9aa3-852d-b4bc-57d7a9d74683"
-uuid: "dc80c276-4751-8e40-9d5b-4ae2492911fd"
-horo: 1
+coordinate: "message/local · 7/descent · f4d4ced8"
+contentUuid: "088f2bac-2784-5c04-9de0-052f2dd585f2"
+diamondUuid: "030e4c88-b64a-8591-a0b9-a2e2af634d35"
+uuid: "f4d4ced8-2b2f-833d-8302-67ee39412355"
+horo: 7
 typography:
   partition: message
-  bondDegree: 44
+  bondDegree: 41
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c3463059-c0bb-8f2a-9d19-8271950c7fac"
+  computationUuid: "a3fd6401-685a-8149-80ac-bf098132d324"
   stages:
     - stage: path
       stageUuid: "dc8047c8-930b-823e-8f7d-ecb30b838656"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b0bb9b48-d69d-828d-b0d8-20685a493072"
     - stage: horo
-      stageUuid: "e8b09b6b-f5d3-83bf-ab55-670edf516d26"
+      stageUuid: "f29d2950-cb67-8caf-b045-82aacb6d2f5f"
     - stage: seal
       stageUuid: "c8126a75-a66d-8d17-be60-8ad0df754330"
     - stage: uuid
-      stageUuid: "c7a93ca8-972f-8cdb-907a-9927a8ee986e"
+      stageUuid: "3018472e-6e0c-8014-927a-696a96537887"
 version: 2
 ---
 # message/local — the gate follows the effect, not the wire

@@ -2,10 +2,10 @@
 name: capacity
 description: "Use when reasoning about erpax's production hardware — the Cloudflare edge (Worker isolate, D1, R2, Durable Objects) has hard limits, and CLOUDFLARE_LIMITS declares them with sources. productionCapacity(cwd) computes erpax's demand vs each; the decisive one is the 80MB skill index against the 3MB Worker script limit (27× over), deployable only because it is never bundled. assertFitsProduction refuses a deploy where the worker entry imports the index — the discipline made a theorem. Models the ceiling; the actual built artifact needs a build to measure."
 atomPath: "cloudflare/capacity"
-coordinate: "cloudflare/capacity · 8/crest · 48abbe76"
-contentUuid: "2bb25021-be2b-5190-9024-6aa91b0fa654"
-diamondUuid: "4cd054bc-370b-89fb-aa72-4239ecc4670f"
-uuid: "48abbe76-2560-8a9f-9318-c02a5e477818"
+coordinate: "cloudflare/capacity · 8/crest · 9fd83827"
+contentUuid: "a63059eb-00e1-5b18-82cc-315cd1533a4d"
+diamondUuid: "614f8bd4-ccea-8b63-bd4c-9892fc49b75a"
+uuid: "9fd83827-186d-89e5-b682-df65c993ce28"
 horo: 8
 typography:
   partition: cloudflare
@@ -14,7 +14,7 @@ standards:
   - "Cloudflare Workers/D1/R2/Durable Objects platform limits (2025) — the production ceiling"
 bindings: []
 signatures:
-  computationUuid: "68c44c2c-f672-88c2-bd1d-acf2251f7741"
+  computationUuid: "963e5756-d88c-8f1f-ab0a-2a9fd1ab3f15"
   stages:
     - stage: path
       stageUuid: "f666844f-9173-8547-815e-16bbb6fa1f6a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bd4006d0-09c5-8dc1-8f93-51f41189fa24"
     - stage: horo
-      stageUuid: "68d6c120-f4e3-89b9-b46e-7570feeda3b5"
+      stageUuid: "0af2374f-acd2-88d9-840c-720877a867b7"
     - stage: seal
       stageUuid: "1139f2b6-25cc-83d0-8cf9-bb6f28ed79a0"
     - stage: uuid
-      stageUuid: "6bd6e00b-b77a-86be-87c0-2ef44e47aae9"
+      stageUuid: "d99f9248-98d6-87eb-b085-9d3c7d06bb30"
 version: 2
 ---
 # capacity — the production hardware, computed against erpax's demand

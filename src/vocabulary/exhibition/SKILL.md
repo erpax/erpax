@@ -2,11 +2,11 @@
 name: exhibition
 description: "Use when reasoning about exhibition as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/exhibition"
-coordinate: "vocabulary/exhibition · 8/crest · e0a17be5"
-contentUuid: "305ec3f6-57dc-5dcf-8d4f-11bae8f85635"
-diamondUuid: "4e81f11a-7080-84ee-8f13-f049de8cc3b5"
-uuid: "e0a17be5-5037-8645-b120-aafa1acc8059"
-horo: 8
+coordinate: "vocabulary/exhibition · 4/weave · 1fffe6d0"
+contentUuid: "1edf6374-82d1-5b75-bd62-f1ab4a678f2d"
+diamondUuid: "0ad21ca5-0616-8fb7-9ffb-198d76d0edf8"
+uuid: "1fffe6d0-66ca-82c9-9f1b-d44c6fb628aa"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0fcf9fe1-e96d-8817-b45a-901a99839fad"
+  computationUuid: "14a97b73-1ed4-84f7-9065-f36989033ea2"
   stages:
     - stage: path
       stageUuid: "e6e59958-3f07-8ea0-a5e2-387647fad2b2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "726ee3c7-79b0-85e1-99d9-439c415d5301"
     - stage: horo
-      stageUuid: "cad7077e-8dbb-83fb-8d92-face65683445"
+      stageUuid: "4abb2e78-d154-83f5-a61f-677bc8bcf5db"
     - stage: seal
-      stageUuid: "07a72fd3-b748-8afb-872b-e0951b3239b7"
+      stageUuid: "5af351cd-49ca-8a5e-9d01-86e410a50588"
     - stage: uuid
-      stageUuid: "2d731892-3b5d-8868-b134-ec430ba29e1a"
+      stageUuid: "0bb92cdd-c823-87db-a3d4-f45b675fe163"
 version: 2
 ---
 # exhibition

@@ -3,13 +3,13 @@ name: forge
 description: "Use when reasoning about forge — **That function never contacted Zenodo.** It was named , it logged as though a deposit had been made, and it returned a well-formed DOI and a URL for a record that does not exist."
 atomPath: "rules/forge"
 coordinate: "rules/forge · 8/crest · 62b8c5b5"
-contentUuid: "4fa18559-339d-54af-bb80-ed2cdcc4fcca"
+contentUuid: "bc4cecb2-cf7f-5cde-a693-baff7f28d5ac"
 diamondUuid: "3a6b44f0-379a-8a04-8c91-27bc1652cceb"
 uuid: "62b8c5b5-8ae6-8fcc-af9e-cd8b00a04f88"
 horo: 8
 typography:
   partition: rules
-  bondDegree: 50
+  bondDegree: 47
 standards: []
 bindings: []
 signatures:

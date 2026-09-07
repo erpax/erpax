@@ -1,22 +1,22 @@
 ---
 name: perspective
-description: "Use when the SAME content-uuid node must read differently per party — a transfer is give for the payer and take for the payee, a supplier edge is \"my customer\" from the other end, an invoice is AR for the seller and AP for the buyer. The point-of-view projection."
+description: "Use when the SAME content-uuid node must read differently per party — a transfer is give for the payer and take for the payee, a supplier edge is \\\"my customer\\\" from the other end, an invoice is AR for the seller and AP for the buyer. The point-of-view projection."
 atomPath: perspective
-coordinate: "perspective · 4/weave · 66720159"
-contentUuid: "edecd533-de4d-5274-890f-c4a7d3306427"
-diamondUuid: "62ec8bed-1419-8ed3-a51a-6e2a8f48e33b"
-uuid: "66720159-f69b-8da2-857a-9f99dab2b08b"
+coordinate: "perspective · 4/weave · 1e9a39fd"
+contentUuid: "9bd0f6c4-a20f-5cab-bb4c-e5856bf9a2f4"
+diamondUuid: "d3325ba7-347e-8779-a4aa-96bea9d665d8"
+uuid: "1e9a39fd-a712-8880-b26d-fde900a5a592"
 horo: 4
 typography:
   partition: perspective
-  bondDegree: 60
+  bondDegree: 36
 standards:
   - "ISO 20022 party-role-perspective (debtor/creditor are one transfer)"
   - "ISO 20022 party-role-perspective (debtor/creditor are one transfer)`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "88877fe0-bf84-8565-a819-4d06a15efefb"
+  computationUuid: "b4b9374d-bb70-86ab-8c6b-c5ffaf2c8dc3"
   stages:
     - stage: path
       stageUuid: "47043968-a748-879d-a82c-692c8f9fa7f6"
@@ -25,13 +25,13 @@ signatures:
     - stage: boundary
       stageUuid: "027f72f7-7895-8c50-ab28-2faad928a41e"
     - stage: links
-      stageUuid: "ec6dbe83-2341-89a6-9329-0240439e21a6"
+      stageUuid: "2893daa2-3f0d-8c54-8e9c-aaa6ce9b1c2a"
     - stage: horo
-      stageUuid: "108781e2-4cb0-8f49-9a51-d6b450c5cb6f"
+      stageUuid: "58471399-c063-8d16-9da5-9478dfdedd16"
     - stage: seal
       stageUuid: "06fe005b-da97-8e4d-933a-1cafaf819730"
     - stage: uuid
-      stageUuid: "3bf442f0-f927-8ed3-b662-e6ae35371918"
+      stageUuid: "f89dae41-7fa8-84f8-85fc-6ce05eabc6ec"
 version: 2
 ---
 # perspective — switch the point of view (derived, never stored)

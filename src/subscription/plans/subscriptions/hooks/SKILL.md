@@ -3,13 +3,13 @@ name: hooks
 description: "Use when reasoning about hooks — publishes the subscription's transitions and protects its credentials on the way in."
 atomPath: "subscription/plans/subscriptions/hooks"
 coordinate: "subscription/plans/subscriptions/hooks · 6/6 · fd73bb71"
-contentUuid: "bb020f30-9031-599d-af8e-b98ec1ee4853"
+contentUuid: "99e29d7b-a388-501a-baa8-c75ec0e94eba"
 diamondUuid: "d440a200-7846-8079-b85c-794b82e25e82"
 uuid: "fd73bb71-cd9a-8a00-ba0b-5792009ac331"
 horo: 6
 typography:
   partition: subscription
-  bondDegree: 348
+  bondDegree: 312
 standards:
   - "NIST-SP-800-38D"
 bindings: []

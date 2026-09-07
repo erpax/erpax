@@ -2,11 +2,11 @@
 name: false
 description: "Use when reasoning about false as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/false"
-coordinate: "vocabulary/false · 5/round · 0b02b0e2"
-contentUuid: "796f3247-d4a7-5787-9cf2-799b2ea6f774"
-diamondUuid: "ff455bee-a1e5-8ed9-898d-4b214a0b8707"
-uuid: "0b02b0e2-fbd4-88e3-97ec-16f688938eea"
-horo: 5
+coordinate: "vocabulary/false · 8/crest · a4b34111"
+contentUuid: "8c27585d-975d-53e1-869f-91fbbf91560d"
+diamondUuid: "27f51ecd-1b97-81a0-93ad-8ef04f7b35d0"
+uuid: "a4b34111-7413-8829-bcd6-eca6debedea8"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "93daf938-8db4-82b7-898a-5c13bd8d0967"
+  computationUuid: "522d48c9-b38d-8507-ab63-66076b436d7e"
   stages:
     - stage: path
       stageUuid: "c39a48ba-f34c-8e15-94a7-05828616bda4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cbda412a-f778-8cdd-a070-a01aea541457"
     - stage: horo
-      stageUuid: "7e68a877-270b-87b9-8677-acde0c9154cc"
+      stageUuid: "e110f640-37bd-8914-9bc4-1aae8940ec28"
     - stage: seal
-      stageUuid: "c17a72a9-5993-859e-a431-bb1ea6243945"
+      stageUuid: "e6ced743-0f40-8e32-b75c-c43d51ddc2ea"
     - stage: uuid
-      stageUuid: "9a3b8931-4438-859b-8bce-ad60815f5a32"
+      stageUuid: "edfcdb94-4717-88e6-ac0a-8a35ba9553b5"
 version: 2
 ---
 # false

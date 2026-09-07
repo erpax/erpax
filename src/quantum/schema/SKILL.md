@@ -2,10 +2,10 @@
 name: schema
 description: "Use when reasoning about schema identity and drift on the matrix — a schema as the content-uuid of its canonical form, so identical schemas merge and any change yields a new uuid forcing re-verification by architecture."
 atomPath: "quantum/schema"
-coordinate: "quantum/schema · 2/share · d3adbc1f"
-contentUuid: "ee4ddc6b-8a0c-5fce-8ee4-85989adad6c4"
-diamondUuid: "147097ed-e959-81e0-92d3-7f3930c28056"
-uuid: "d3adbc1f-92a2-84a3-a1cf-a962d95617f6"
+coordinate: "quantum/schema · 2/share · 31ceb54a"
+contentUuid: "02628403-1b15-5c4b-918f-ddd505c663ce"
+diamondUuid: "4eca14d4-f219-8b3a-b597-16fbff261fd1"
+uuid: "31ceb54a-d722-8f35-aecc-c5b2de5f5719"
 horo: 2
 typography:
   partition: quantum
@@ -14,7 +14,7 @@ standards:
   - "RFC 9562 §5.8 content-uuid; schema.org"
 bindings: []
 signatures:
-  computationUuid: "f2d02904-f002-8665-83bb-9375fa35d7a3"
+  computationUuid: "3f9bc888-f80e-8c91-b36c-1a7f6a6b2e03"
   stages:
     - stage: path
       stageUuid: "890f2351-43b3-8760-83d4-31bc0ffd08c3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "25a260d1-a2bc-8816-aa70-0debbee7303b"
     - stage: horo
-      stageUuid: "ee6aabff-c694-8629-bcfb-12118107a62e"
+      stageUuid: "7d68902e-0e67-8968-bfb0-71d4f8643f8d"
     - stage: seal
       stageUuid: "dbe0e97e-797c-8188-8642-d83860061016"
     - stage: uuid
-      stageUuid: "e14d0e2d-6b9e-82b1-baa0-cb85fc84ab57"
+      stageUuid: "9edf35de-e93f-8ed4-a11e-6e3b0b8790b2"
 quantum:
   superposition:
     - cardinality
@@ -37,9 +37,9 @@ quantum:
     - constraint
     - database
     - field
-    - fields
     - law
     - partition
+    - payload
     - superposition
   collapse:
     - "RFC 9562 §5.8 content-uuid; schema.org"
@@ -53,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "f2d02904-f002-8665-83bb-9375fa35d7a3"
-    contentUuid: "ee4ddc6b-8a0c-5fce-8ee4-85989adad6c4"
+    computationUuid: "3f9bc888-f80e-8c91-b36c-1a7f6a6b2e03"
+    contentUuid: "02628403-1b15-5c4b-918f-ddd505c663ce"
 version: 2
 ---
 # quantum/schema — schema identity + drift as a content-uuid
@@ -69,4 +69,4 @@ Matter-twin: `src/quantum/schema/index.ts` (`schemaUuid` · `sameSchema` · `dri
 
 @standard RFC 9562 §5.8 content-uuid; schema.org
 
-<sub>content-uuid `ee4ddc6b-8a0c-5fce-8ee4-85989adad6c4` · account `quantum/schema` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `02628403-1b15-5c4b-918f-ddd505c663ce` · account `quantum/schema` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

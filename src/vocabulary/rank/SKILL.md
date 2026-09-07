@@ -2,11 +2,11 @@
 name: rank
 description: "Use when reasoning about rank as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/rank"
-coordinate: "vocabulary/rank · 2/share · 9bad0e54"
-contentUuid: "31ca2d20-17ff-5a27-9934-709bb012bdf0"
-diamondUuid: "0ac62f64-592b-8019-b4e7-3f6ad6aecfce"
-uuid: "9bad0e54-b262-8adc-abf9-ed0bbe0a6e57"
-horo: 2
+coordinate: "vocabulary/rank · 5/round · 28394fd2"
+contentUuid: "1d2dd073-4cfe-5f05-8b94-d0fd98e8c67d"
+diamondUuid: "5ca7c60b-937f-8a56-a024-6e968a0a4c2c"
+uuid: "28394fd2-1c2f-8800-82da-3ac9c6e4bb96"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "559dd618-9d9f-8db1-981e-666a3cec2d60"
+  computationUuid: "bc9c04d9-6955-8d83-863e-cafa91dce543"
   stages:
     - stage: path
       stageUuid: "f15eec98-bd1c-87a8-9063-dfd64e839aa1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "996238b8-38af-80aa-81a7-5098b6aa9b63"
     - stage: horo
-      stageUuid: "de9ffc1d-9d68-81c1-915e-2bcb1d1de95e"
+      stageUuid: "4f12990c-0af5-8d7c-a81d-673e43de0c97"
     - stage: seal
-      stageUuid: "d7b53396-e4ce-815c-b61f-22cb35b373a9"
+      stageUuid: "ebd6fce0-9f30-87ad-9c3b-80274e9fd554"
     - stage: uuid
-      stageUuid: "cd316e7b-7ad2-82b3-bdbc-abb370d4f2ef"
+      stageUuid: "5cb0906a-cade-8f80-8a11-ed51642db44b"
 version: 2
 ---
 # rank

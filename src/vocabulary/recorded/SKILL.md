@@ -2,11 +2,11 @@
 name: recorded
 description: Use when reasoning about recorded — An audio recording of the work.
 atomPath: "vocabulary/recorded"
-coordinate: "vocabulary/recorded · 1/base · 4e6191fc"
-contentUuid: "c9f21410-42c3-51f8-b682-67f5d97777b7"
-diamondUuid: "f9c55a3b-f678-8879-83a3-eaab879625fa"
-uuid: "4e6191fc-7b20-840f-aeea-6487a05cd447"
-horo: 1
+coordinate: "vocabulary/recorded · 5/round · a1fa8487"
+contentUuid: "ece083f8-9344-5df6-9dd2-83214358bf66"
+diamondUuid: "84533f98-ed2f-86df-882e-ddf6fc045dec"
+uuid: "a1fa8487-4dbf-8819-979a-442db2e4487e"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4ea082d0-065d-8d80-b75b-72ad1ee9841e"
+  computationUuid: "1868230f-9e26-8603-80fd-a977e89125f3"
   stages:
     - stage: path
       stageUuid: "c5dfccbd-ee71-89a7-9313-d6aa609633cf"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c51235a2-4064-81ea-8658-67f582ae00a6"
     - stage: horo
-      stageUuid: "ea1cb5f5-c04e-87c8-b82e-f4058199a7f9"
+      stageUuid: "076cc2ee-ca79-8333-b6f6-1f04ab46e811"
     - stage: seal
-      stageUuid: "73af9e37-fbf9-88bd-beea-6e9e1eef9b86"
+      stageUuid: "c4e1e586-dba3-835f-a350-6304e443eaa5"
     - stage: uuid
-      stageUuid: "5197b268-523a-89e7-8bf4-d9d2c0cb4233"
+      stageUuid: "136eb94e-2fdd-8cab-a7c4-1568320f8ac0"
 version: 2
 ---
 # recorded

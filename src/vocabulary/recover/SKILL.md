@@ -1,19 +1,19 @@
 ---
 name: recover
-description: "Use when a Payload collection/config reorg or rename leaves the build broken — `tsc` crashes with \"Maximum call stack size exceeded\", hundreds of type errors after moving collections, or `payload generate:types` fails with InvalidFieldRelationship, DuplicateFieldName, \"does not provide an export named 'default'\", or ERR_MODULE_NOT_FOUND."
+description: "Use when a Payload collection/config reorg or rename leaves the build broken — `tsc` crashes with \\\\\\\"Maximum call stack size exceeded\\\\\\\", hundreds of type errors after moving collections, or `payload generate:types` fails with InvalidFieldRelationship, DuplicateFieldName, \\\\\\\"does not provide an export named 'default'\\\\\\\", or ERR_MODULE_NOT_FOUND."
 atomPath: "vocabulary/recover"
-coordinate: "vocabulary/recover · 2/share · 9f55af3f"
-contentUuid: "7bbf516e-a8aa-5fb1-91c7-f35c35187795"
-diamondUuid: "af1bc599-9349-86e9-815c-6ed019e28c71"
-uuid: "9f55af3f-4ec0-8b0a-8269-6c9e9630d227"
-horo: 2
+coordinate: "vocabulary/recover · 1/base · d7fbeb96"
+contentUuid: "a6a7de97-beae-5fb8-828f-f0cefabfd2af"
+diamondUuid: "2868f426-691e-87a1-bb5a-f5ab3f93e787"
+uuid: "d7fbeb96-cd2e-8abd-9728-a984c5f9b055"
+horo: 1
 typography:
   partition: vocabulary
-  bondDegree: 63
+  bondDegree: 61
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2a43d9f2-e055-8c74-b20e-b00678d961e3"
+  computationUuid: "ce4dbc1e-ca33-88c7-956e-e9d64e15d112"
   stages:
     - stage: path
       stageUuid: "bb2ae903-6d29-8697-855b-d82478fc9b11"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "604840d6-f4bc-84e6-b8cf-215f6cfeb241"
     - stage: horo
-      stageUuid: "b36d1883-9518-868f-b31d-6f5a5e2191cf"
+      stageUuid: "e48cdd8c-340d-8927-811d-e65a01aa3f39"
     - stage: seal
-      stageUuid: "85b76e20-24d8-86c3-a451-0229a56483e2"
+      stageUuid: "d68a86f0-f1bd-84be-9c5f-01b35e3ad144"
     - stage: uuid
-      stageUuid: "17c54d3b-c80a-8ed3-933c-e5133b2e6c56"
+      stageUuid: "fb517f34-19c1-86ee-9fc7-9cc6f87b8927"
 version: 2
 ---
 # recover — Repair a Payload Build After a Reorg

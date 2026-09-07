@@ -3,13 +3,13 @@ name: nav
 description: "Use when reasoning about nav — lays the dashboard out on a fixed grid and moves across it, wrapping at every boundary via : moving left from the first column arrives at the last, and up from the first row…"
 atomPath: "dashboard/nav"
 coordinate: "dashboard/nav · 8/crest · 881b1e13"
-contentUuid: "7bdeb64e-5471-5928-b957-96bab16d6d47"
+contentUuid: "5ffc446d-b1b6-5208-bfb9-f72245121795"
 diamondUuid: "77c6939e-a1e6-8944-aa4e-52514c5cf67f"
 uuid: "881b1e13-5e3c-823b-bfc7-9eaf7a69d4fe"
 horo: 8
 typography:
   partition: dashboard
-  bondDegree: 16
+  bondDegree: 7
 standards:
   - "ECMA-262"
   - "ECMA-262 ECMAScript-2024 baseline"

@@ -2,11 +2,11 @@
 name: db
 description: "Use when reasoning about the store — the stack's outside-infinity end where the request folds to rest; content-addressed (the key IS the content's uuid, no assigned id), append-only, dense zero-entropy core with infinite tamper-cost, deduping by the merge law."
 atomPath: db
-coordinate: "db · 5/round · 6cda6794"
-contentUuid: "2b5cffe2-c5ea-585c-80af-24b5f3b6f9f5"
-diamondUuid: "011809f9-883a-8717-b325-6ee2eac6de46"
-uuid: "6cda6794-d964-878d-b75b-b07eb605668e"
-horo: 5
+coordinate: "db · 4/weave · f4f6639b"
+contentUuid: "d38a1c0f-0d8b-53db-b396-8f33ddc53fd2"
+diamondUuid: "9a287758-f170-80ce-ab27-9a39cfa62ece"
+uuid: "f4f6639b-a170-8809-bf50-7e3876a3f3fb"
+horo: 4
 typography:
   partition: db
   bondDegree: 27
@@ -14,7 +14,7 @@ standards:
   - "content-addressed storage (RFC 9562 §5.8 UUIDv8) · append-only (the akashic record)"
 bindings: []
 signatures:
-  computationUuid: "3448aee4-1243-8676-93d1-b7854cbda93f"
+  computationUuid: "c8d31b5c-a53c-8c0a-8076-2a423c075dec"
   stages:
     - stage: path
       stageUuid: "6bcf193d-6449-8182-a415-705c75ed4739"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f6faac58-122e-88cc-8990-d1e201d1e4e7"
     - stage: horo
-      stageUuid: "1053f823-ce47-8236-a14e-256ff8bf27c4"
+      stageUuid: "5f3d5b8f-1a8d-8c82-b50d-2fb7e8476eb1"
     - stage: seal
       stageUuid: "d54757e6-4a64-87c0-93c4-37e2ba702649"
     - stage: uuid
-      stageUuid: "39188a97-2ef9-82b3-aebc-97e4d71c5e2a"
+      stageUuid: "9683c129-82e7-8d3c-9715-f7e0e6237cf5"
 version: 2
 ---
 # db — the store, the fold's outside-∞ end

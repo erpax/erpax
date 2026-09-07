@@ -2,19 +2,19 @@
 name: signal
 description: "Use when reasoning about signal as a anatomical part of [[body]] — vocabulary pivot to @/signal; nested not duplicated."
 atomPath: "body/signal"
-coordinate: "body/signal · 2/share · 0c0319cc"
-contentUuid: "4dc6fe05-5663-573e-a145-55b63fab2742"
-diamondUuid: "822fddd6-d93f-8a7d-9b8d-b0acfb487f65"
-uuid: "0c0319cc-873b-8ca3-9c4f-82b6c60dc989"
-horo: 2
+coordinate: "body/signal · 4/weave · 5959c4f9"
+contentUuid: "a0dd6a67-a9ab-5091-b9b2-24d762b65800"
+diamondUuid: "0459a70b-df78-8f65-8cac-564a49d313e8"
+uuid: "5959c4f9-39f7-8504-a13b-97b787890f5f"
+horo: 4
 typography:
   partition: body
-  bondDegree: 182
+  bondDegree: 165
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3165ccbc-2a7e-857f-a6cf-c0643af08dc0"
+  computationUuid: "d0d99445-9a75-8427-8ea8-1fca504c1919"
   stages:
     - stage: path
       stageUuid: "8e6406f7-da57-8c99-bab3-c86bdeb24d23"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "273cf187-08c3-88ac-bd88-983bd3120240"
     - stage: horo
-      stageUuid: "25646645-1ffc-8043-a141-ca8964a9beb6"
+      stageUuid: "3bf0e089-1ddd-86a2-b800-c66d5eaea8ef"
     - stage: seal
       stageUuid: "cb0ad7b4-0d48-85d8-be3c-688e4d1e9cd5"
     - stage: uuid
-      stageUuid: "42cdf28d-b670-8227-aa2a-5b42f7bf36e8"
+      stageUuid: "456698cb-93ae-85b4-8d2d-ed5de0e16d88"
 version: 2
 ---
 # body/signal — anatomical part

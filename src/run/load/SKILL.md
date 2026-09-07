@@ -2,33 +2,33 @@
 name: load
 description: "Use when asking the only question no other gate asks — does the app actually LOAD? Boots payload.config for real and asserts every collection registers. It now PASSES — load — OK from esm, 229 collections — after the tool-defs → collections edge was cut and the `pages` collection was renamed. The SCC is still ~225 files: entangled is not fatal. The harness that swallowed the boot fails closed now, and the sentinel is stamped only by a run that verified the schema."
 atomPath: "run/load"
-coordinate: "run/load · 2/share · cf607799"
-contentUuid: "d09d251f-1f9b-5cb8-b89e-a717cc8850eb"
-diamondUuid: "8b31462a-db6b-8240-9466-37b1766dacb9"
-uuid: "cf607799-1096-8218-b75e-ef691cf02213"
-horo: 2
+coordinate: "run/load · 5/round · 82736440"
+contentUuid: "ef9c20e2-5336-5022-9bbc-3caed0173a37"
+diamondUuid: "632f6835-133c-82eb-8bff-ffda437fe7c1"
+uuid: "82736440-a4ef-843a-8c7d-44c0e8dc34f8"
+horo: 5
 typography:
   partition: run
-  bondDegree: 14
+  bondDegree: 19
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3d5b631b-be5f-86eb-b500-aac8d880d14c"
+  computationUuid: "dc9c7cd2-2888-86c3-9ba6-e8b80069084d"
   stages:
     - stage: path
       stageUuid: "fd577f39-69b9-8231-9d1e-c1239cb43131"
     - stage: trinity
       stageUuid: "e414325b-eb26-8f8d-a57a-765d0b42a7cb"
     - stage: boundary
-      stageUuid: "3d045f76-e9a8-84da-891e-305c6962eded"
+      stageUuid: "6caf08ed-45e6-8161-84f9-21d1f2433dad"
     - stage: links
-      stageUuid: "5968c4a6-0f5a-86bf-9d1b-f1a38a3a0a15"
+      stageUuid: "66683951-15a3-848a-8a92-6447f789cf2d"
     - stage: horo
-      stageUuid: "1bdc4005-3799-85e3-83b9-3164e5a7d27b"
+      stageUuid: "166b13cc-421d-88b3-8b55-a0e0304ba79e"
     - stage: seal
       stageUuid: "c8fb7810-f3fa-8d46-b75f-458258834e8e"
     - stage: uuid
-      stageUuid: "2c8f45a3-8bed-8f28-844f-5d1688a72e15"
+      stageUuid: "6aeda4b6-c185-83cc-a3c1-4b0be70725a6"
 version: 2
 ---
 # load — does the app run at all

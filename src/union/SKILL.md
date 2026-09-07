@@ -2,11 +2,11 @@
 name: union
 description: "Use when reasoning about union as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: union
-coordinate: "union · 7/descent · 963ddafc"
-contentUuid: "0f80e719-ab07-53f4-9870-0709087178ba"
-diamondUuid: "e774c0ea-6536-8d39-aa6c-76705073bfbf"
-uuid: "963ddafc-4674-899b-afed-95b1bc2897a4"
-horo: 7
+coordinate: "union · 2/share · 4981ad93"
+contentUuid: "27725699-ea20-5335-aa2a-0fd24bb82ddf"
+diamondUuid: "f9f06286-52dd-8d47-acd2-30774c636dbe"
+uuid: "4981ad93-1b70-8104-8ff1-54c470a1faa8"
+horo: 2
 typography:
   partition: union
   bondDegree: 23
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ec2002f4-09ec-8744-b5a0-1b05a3bbaa03"
+  computationUuid: "938e4d0f-4061-8508-9db2-3027aca85b0f"
   stages:
     - stage: path
       stageUuid: "af3d313d-08e0-87ee-8117-0081eb2197ec"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8868d785-53fb-8366-ad73-a78c1d6eeebc"
     - stage: horo
-      stageUuid: "6060ff59-4255-8161-8cb8-df63bccc1fc0"
+      stageUuid: "71019ffe-b467-8545-aca2-f680842ba12d"
     - stage: seal
       stageUuid: "51fb41ea-0668-8e3d-9acb-bcca9252950e"
     - stage: uuid
-      stageUuid: "29b70248-fe68-804c-83a2-feaaeac9477d"
+      stageUuid: "f0b1b58c-4aea-8634-a566-313a529c4e90"
 version: 2
 ---
 # union

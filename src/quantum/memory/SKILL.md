@@ -2,18 +2,18 @@
 name: memory
 description: "Use when reasoning about memory in the quantum frame — the content-address IS the memory manager, running live at every scale: collapse is allocation, dedup is free, collection is regeneration. Memory optimization is autosave: persist at the point of collapse and there is nothing to garbage-collect, because the unsaved is regenerable from its uuid."
 atomPath: "quantum/memory"
-coordinate: "quantum/memory · 5/round · ba0d6555"
-contentUuid: "ab44e05a-f40f-5aac-8a3e-e74c200f52fe"
-diamondUuid: "cb795a1d-c50e-8694-93a5-4278bd78a6ba"
-uuid: "ba0d6555-f9b5-8cf1-b55a-28a4b9651765"
-horo: 5
+coordinate: "quantum/memory · 2/share · a0c6eb69"
+contentUuid: "e6d0f070-5195-518a-8cf5-1043e14a8c26"
+diamondUuid: "3672c6b6-d2b3-85c6-a086-f9e2ca1f01dd"
+uuid: "a0c6eb69-6ad6-84bc-b555-4fbcd9d677c4"
+horo: 2
 typography:
   partition: quantum
-  bondDegree: 96
+  bondDegree: 97
 standards: []
 bindings: []
 signatures:
-  computationUuid: "99218e70-8086-8b52-a5e2-074527496091"
+  computationUuid: "e7b02811-7567-8cf3-a305-d1f59a6d407e"
   stages:
     - stage: path
       stageUuid: "99104296-3de4-86f7-8213-1710996afacc"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "50a8dbe3-15f5-883a-872e-1d10ae892a90"
     - stage: horo
-      stageUuid: "2e24563b-cf6d-8010-a3f0-047a1fee273e"
+      stageUuid: "822a3fc6-7dd1-82a0-8a2d-cd3486668b76"
     - stage: seal
       stageUuid: "53b681bc-6c0c-8369-9f76-146213a9fb01"
     - stage: uuid
-      stageUuid: "6cacfae0-eaef-8547-818b-e19d2178d288"
+      stageUuid: "6a000727-cbdc-8492-bd53-7c3fe9c472c9"
 quantum:
   superposition:
     - akashic
@@ -37,8 +37,8 @@ quantum:
     - collapse
     - computer
     - diamond
+    - drift
     - law
-    - memory
     - superposition
   collapse:
     - "Use when reasoning about memory in the quantum frame — the content-address IS the memory manager, running live at every scale: collapse is allocation, dedup is free, collection is regeneration. Memory optimization is autosave: persist at the point of collapse and there is nothing to garbage-collect, because the unsaved is regenerable from its uuid."
@@ -60,8 +60,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "99218e70-8086-8b52-a5e2-074527496091"
-    contentUuid: "ab44e05a-f40f-5aac-8a3e-e74c200f52fe"
+    computationUuid: "e7b02811-7567-8cf3-a305-d1f59a6d407e"
+    contentUuid: "e6d0f070-5195-518a-8cf5-1043e14a8c26"
 version: 2
 ---
 # quantum/memory — the content-address IS the memory manager
@@ -87,4 +87,4 @@ Operational memory IS the architecture lattice ([[memory/architecture]]) — the
 
 @see [[memory]] · [[memory/architecture]] · [[memory/quantum]] · [[quantum]] · [[quantum/uuid]] · [[seal]] · [[quantum/cross]] · [[generate]] · [[merge]] · [[akashic]] · [[realtime]] · [[diamond]]
 
-<sub>content-uuid `ab44e05a-f40f-5aac-8a3e-e74c200f52fe` · account `quantum/memory` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `e6d0f070-5195-518a-8cf5-1043e14a8c26` · account `quantum/memory` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

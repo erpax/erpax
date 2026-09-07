@@ -2,11 +2,11 @@
 name: translator
 description: "Use when reasoning about translator — Organization or person who adapts a creative work to different languages, regional differences and technical requirements of a target market, or that translates during some event."
 atomPath: translator
-coordinate: "translator · 4/weave · 9d160e18"
-contentUuid: "9ac4c405-c15c-5876-bf45-2f36bcf94de5"
-diamondUuid: "85d8de73-256b-8af0-a980-ea5f36cd454a"
-uuid: "9d160e18-7d7c-8e59-8bc8-383c98332487"
-horo: 4
+coordinate: "translator · 2/share · 23a11f36"
+contentUuid: "1e441142-b7dd-5e23-a393-5f526346bff1"
+diamondUuid: "0fe6ba86-4875-82dd-a5e5-d22fc8b06eda"
+uuid: "23a11f36-5cc0-816a-b144-1af777bd3c13"
+horo: 2
 typography:
   partition: translator
   bondDegree: 134
@@ -15,7 +15,7 @@ standards:
   - "Johnson et al., \"Google's Multilingual NMT System: Enabling Zero-Shot Translation,\" TACL (2017), arXiv:1611.04558 · schema.org translator"
 bindings: []
 signatures:
-  computationUuid: "216f02af-dec8-8c77-b34c-06b75dcfbbd6"
+  computationUuid: "76836e9d-be35-89d8-bd92-f983db525390"
   stages:
     - stage: path
       stageUuid: "6a8707aa-1c5d-8a80-a92e-ea384552c401"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "47ebaf7f-d9a6-85e2-abff-08e236dab735"
     - stage: horo
-      stageUuid: "62a0531d-5f2c-88df-a9a1-825d19d9a969"
+      stageUuid: "4c512158-60ef-890f-aa79-74170e351453"
     - stage: seal
       stageUuid: "10068b8f-b1ac-818f-8c60-f639debdee34"
     - stage: uuid
-      stageUuid: "64db916d-ef7b-8f1e-8778-cf97d3ebe171"
+      stageUuid: "02bc955e-7032-8f17-8b94-851ffa9d5307"
 version: 2
 ---
 # translator

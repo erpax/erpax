@@ -2,11 +2,11 @@
 name: inverse
 description: "Use when reasoning about inverse — Relates a property to a property that is its inverse. Inverse properties relate the same pairs of items to each other, but in reversed direction. For example, the 'alumni' and 'alu"
 atomPath: "vocabulary/inverse"
-coordinate: "vocabulary/inverse · 7/descent · f57bd4fc"
-contentUuid: "c81d2ce4-55d4-56c8-b671-42c7ed38b2f1"
-diamondUuid: "6384e2d0-f454-8d97-961e-be2dda655d31"
-uuid: "f57bd4fc-2c9f-8c67-9ca5-aa0b33fc0372"
-horo: 7
+coordinate: "vocabulary/inverse · 5/round · 333c6519"
+contentUuid: "1fd573ba-8cc9-547b-b190-26a0705de51f"
+diamondUuid: "0f3b06e3-47b1-8879-9a3f-2219e22d1dab"
+uuid: "333c6519-cd42-85d0-baff-9b56f34a71c6"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a22f12fe-be5f-8ef3-9f9b-bad9c134cbb6"
+  computationUuid: "63d4a636-d803-80df-8729-584a0fa0f090"
   stages:
     - stage: path
       stageUuid: "ab613ebb-314e-8c06-bb22-9dcea7aeebe0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c2acffb6-6f96-8d96-aaae-319bcf6f216c"
     - stage: horo
-      stageUuid: "502d1db0-ab1f-8e10-8a89-8de30cb8f531"
+      stageUuid: "ed2119b1-73fb-8edd-9412-432054d8abcd"
     - stage: seal
-      stageUuid: "52031748-328e-8886-853d-c5b46301f6b3"
+      stageUuid: "270a3461-0e20-89b6-8349-dd6fb1927b9c"
     - stage: uuid
-      stageUuid: "b50517c2-6c8a-80b8-9ffe-0b40b00f5ce1"
+      stageUuid: "a0064a8e-5cc2-8fbb-bff7-115327991f18"
 version: 2
 ---
 # inverse

@@ -2,19 +2,19 @@
 name: cholesterol
 description: "Use when reasoning about cholesterol as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/cholesterol"
-coordinate: "vocabulary/cholesterol · 2/share · bb20a6bf"
-contentUuid: "db3029f4-63db-58cd-8b3d-5c58e3372f95"
-diamondUuid: "e11c329c-5b36-899d-bdaf-7464c45cdd2d"
-uuid: "bb20a6bf-09bc-853f-9e28-3a4e44c5efe4"
-horo: 2
+coordinate: "vocabulary/cholesterol · 5/round · 7a78ab23"
+contentUuid: "ecc668e5-2d0b-502f-bfe6-edcb65751600"
+diamondUuid: "8b0572f4-640f-862b-848b-57a1617595a9"
+uuid: "7a78ab23-5a88-810b-9077-3326499d7e4f"
+horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 16
+  bondDegree: 18
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "58bcf304-1f4c-8800-81a3-d85f83624636"
+  computationUuid: "7840c94d-abdf-8e0d-8732-cebbe5bec002"
   stages:
     - stage: path
       stageUuid: "6360ada9-d58d-857d-87a9-768b1b33f67e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cf232c59-bcf8-8c61-a831-0b1e20346c0a"
     - stage: horo
-      stageUuid: "5012faac-14fe-83f4-bd67-9e40d86ef2c2"
+      stageUuid: "4bc9773e-a275-894d-82de-d92bc11962b6"
     - stage: seal
-      stageUuid: "82ce31fb-3a93-83e9-969d-ded2f18d9476"
+      stageUuid: "50286dc1-92bd-837c-85a9-0cbfc2be9984"
     - stage: uuid
-      stageUuid: "73731c6b-88ee-85cb-8532-3437816d2392"
+      stageUuid: "fcf61e8a-816d-8f34-b3fa-fbf601e868b9"
 version: 2
 ---
 # cholesterol

@@ -2,11 +2,11 @@
 name: device
 description: "Use when reasoning about device — Device required to run the application. Used in cases where a specific make/model is required to run the application."
 atomPath: "vocabulary/device"
-coordinate: "vocabulary/device · 2/share · f5e03d54"
-contentUuid: "bd8c1a93-5337-51a4-988b-fb7dca6da931"
-diamondUuid: "53fc51d5-5e8a-87a7-835f-4155366d99c9"
-uuid: "f5e03d54-6437-8367-be6c-e2525f108ccd"
-horo: 2
+coordinate: "vocabulary/device · 4/weave · 83c9fda3"
+contentUuid: "c14c76f4-9572-5978-ae44-2fe83c72ae5d"
+diamondUuid: "916ad19d-3def-8cad-9c20-912c896ed2f0"
+uuid: "83c9fda3-cb54-8d40-be0f-e3697f4294aa"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 97
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3ffef6e3-99dc-8183-85da-f11fcc9bb647"
+  computationUuid: "e84dc2d1-cfe8-8efc-b954-39f2de552550"
   stages:
     - stage: path
       stageUuid: "c7efee4b-fc3b-8ded-afae-9b7942f938f5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b977f0f3-5abf-88c2-b203-ac2182cc5d41"
     - stage: horo
-      stageUuid: "0ff53653-3e26-88b8-a17e-ea64e6f374b7"
+      stageUuid: "a224582a-00a2-8f92-839b-af04303e5eb4"
     - stage: seal
-      stageUuid: "2c2c5cf8-21b7-8bad-aa7f-cf6860adc379"
+      stageUuid: "b1e5b486-ce03-83ad-b9ce-32d7439973d5"
     - stage: uuid
-      stageUuid: "4609a6d8-710d-8591-ae22-537af4915b9c"
+      stageUuid: "10e23b40-69f9-8f9a-9b63-0741ce9a3660"
 version: 2
 ---
 # device

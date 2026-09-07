@@ -3,13 +3,13 @@ name: width
 description: "Use when reasoning about width — One div, one style. means *half the form*, not fifty pixels — the value is a **percentage**, because a form field's width is meaningful only relative to the form it sits in, and a…"
 atomPath: "blocks/form/width"
 coordinate: "blocks/form/width · 4/weave · 8a3e7851"
-contentUuid: "1455999f-65bf-5e7f-adf2-458c561feaab"
+contentUuid: "921a7c60-2f62-5dca-bf5a-8aea75ee8f7a"
 diamondUuid: "a938926d-127e-8903-b219-e7b1cb180a96"
 uuid: "8a3e7851-f1ac-8a42-95fd-874c4d05d742"
 horo: 4
 typography:
   partition: blocks
-  bondDegree: 11
+  bondDegree: 8
 standards: []
 bindings: []
 signatures:

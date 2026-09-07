@@ -2,11 +2,11 @@
 name: aggregate
 description: "Use when reasoning about aggregate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/aggregate"
-coordinate: "vocabulary/aggregate · 2/share · 82df661f"
-contentUuid: "df39025a-893b-5f1e-acd1-33671bd4bc4b"
-diamondUuid: "8d6630af-8795-8278-bf23-8e8e5bcb2483"
-uuid: "82df661f-6846-8aff-a2f0-bce6418a63ee"
-horo: 2
+coordinate: "vocabulary/aggregate · 4/weave · daef42c2"
+contentUuid: "7541b3d9-2588-58b4-8db1-d108792bfef3"
+diamondUuid: "f564adef-d734-819c-a644-6278e84900cb"
+uuid: "daef42c2-5448-865f-99fe-72775f40336c"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 27
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cae86215-49e3-8984-a3c0-65bc7d41bdb3"
+  computationUuid: "0d5afdde-dd36-8b3a-acd8-4a1ff377d8a5"
   stages:
     - stage: path
       stageUuid: "dc41a996-98f5-881c-a5df-19411a927fba"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "537623e2-c1b0-8ee5-8684-191f5730683d"
     - stage: horo
-      stageUuid: "5568936d-d39f-82f0-84f7-30dfb9e5da5c"
+      stageUuid: "d953afb3-0954-863d-a629-5deac1b8921b"
     - stage: seal
-      stageUuid: "cdf399f2-927f-8cc1-8d44-4ce199a0dbae"
+      stageUuid: "d3be447c-8506-89c7-a570-63b3552b3cf5"
     - stage: uuid
-      stageUuid: "96c4d5b6-724b-82e4-9c4d-1698eb5e5098"
+      stageUuid: "84dd4089-3ca7-826e-8852-88e3d47eba67"
 version: 2
 ---
 # aggregate

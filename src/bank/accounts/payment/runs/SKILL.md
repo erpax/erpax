@@ -2,14 +2,14 @@
 name: runs
 description: "Use when assembling, authorising, exporting, or reconciling an ISO 20022 batch payment — pain.001 AP credit-transfer or pain.008 AR direct-debit; draft → pending-review → approved → exported → submitted → settled lifecycle; SOX §404 preparer-authoriser segregation of duties. The treasury batch-payment initiation collection."
 atomPath: "bank/accounts/payment/runs"
-coordinate: "bank/accounts/payment/runs · 2/share · b0248851"
-contentUuid: "a99a24ff-4be5-5fdc-949e-9a89d375629e"
-diamondUuid: "21ecd63a-8844-8a6b-a364-dd0ff3c49af4"
-uuid: "b0248851-dc86-8e0d-b1da-811b4d0dad43"
-horo: 2
+coordinate: "bank/accounts/payment/runs · 1/base · 771995b5"
+contentUuid: "f7e51227-bb53-5b3a-ba5e-217cb7cf4a5a"
+diamondUuid: "5296e4f1-4c25-89f9-8b81-1b386b76b89a"
+uuid: "771995b5-d910-8945-ae2d-b685708cdbf8"
+horo: 1
 typography:
   partition: bank
-  bondDegree: 41
+  bondDegree: 42
 standards:
   - "EU-Intrastat-Reg-2019/2152"
   - "EU-Taxonomy-2020/852"
@@ -38,7 +38,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "a435c26f-436f-8137-a23a-0fcef2ca5e67"
+  computationUuid: "45d395ea-c77e-8322-a144-6ab12ffd0bfa"
   stages:
     - stage: path
       stageUuid: "61fb3b69-10fa-8f19-8272-3f03121383be"
@@ -49,11 +49,11 @@ signatures:
     - stage: links
       stageUuid: "06a6e5fe-326f-80bf-bfa1-e8dde2650b9d"
     - stage: horo
-      stageUuid: "25b04ea2-2253-87b0-89a8-1b4e83364018"
+      stageUuid: "6f6193b6-2053-82ed-a478-2b6692706216"
     - stage: seal
       stageUuid: "a7251701-d320-8c67-b56c-ccce48265fe2"
     - stage: uuid
-      stageUuid: "0e0658d8-4b73-84f5-9e7a-f3e37440cf96"
+      stageUuid: "9771b5f6-639b-8a9f-b49b-a747900812f0"
 version: 2
 ---
 # payment-runs

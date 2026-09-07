@@ -2,10 +2,10 @@
 name: export
 description: "Use when reasoning about quantum computed export — each file's public facet (index.ts symbols, SKILL atom name) derived from source, content-addressed; the producer dual of quantum import."
 atomPath: "quantum/export"
-coordinate: "quantum/export · 1/base · bee6db07"
-contentUuid: "459f267e-11c3-53c6-b8a0-84580416919d"
-diamondUuid: "7718c77f-3529-8302-b46a-ae964d96b094"
-uuid: "bee6db07-c9dc-8b64-9bda-aa897e2b807b"
+coordinate: "quantum/export · 1/base · 30f5cb54"
+contentUuid: "0b4363ce-e0f0-5d41-98d0-72e5caf4804a"
+diamondUuid: "8fe99dea-e5a4-8dd9-a72b-63fbd09f3a78"
+uuid: "30f5cb54-5172-85b7-b491-d61061399864"
 horo: 1
 typography:
   partition: quantum
@@ -14,22 +14,22 @@ standards:
   - "an atom's only public code-face is index.ts"
 bindings: []
 signatures:
-  computationUuid: "0aa435da-d4a9-8b41-bb56-12d671a06b5b"
+  computationUuid: "661fb6d2-0d26-8895-bdbd-f5133886dc74"
   stages:
     - stage: path
       stageUuid: "dc07680b-0eb6-8c39-a896-fe69cdfa6db4"
     - stage: trinity
       stageUuid: "83e60ebe-4787-844e-9a0c-0a64ddc8a660"
     - stage: boundary
-      stageUuid: "65b210ee-e044-8e13-9c40-b78f7d82fd7b"
+      stageUuid: "56968401-ef7c-8369-b499-325456091862"
     - stage: links
       stageUuid: "be8902dc-f15e-8192-a350-3e69d8d83e2c"
     - stage: horo
-      stageUuid: "6203ed2c-bfc3-8031-818d-262687b0c4b0"
+      stageUuid: "a4cecb5e-4e03-8cc7-b9c3-254928fe0f55"
     - stage: seal
       stageUuid: "3bf68295-0002-88a6-af26-a464f6020ba0"
     - stage: uuid
-      stageUuid: "c030ffc6-07a7-819e-92be-b5fe08193f9d"
+      stageUuid: "94cf8b9f-54e1-84ba-8c3c-42d6b2acc8a9"
 quantum:
   superposition:
     - law
@@ -47,8 +47,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "0aa435da-d4a9-8b41-bb56-12d671a06b5b"
-    contentUuid: "459f267e-11c3-53c6-b8a0-84580416919d"
+    computationUuid: "661fb6d2-0d26-8895-bdbd-f5133886dc74"
+    contentUuid: "0b4363ce-e0f0-5d41-98d0-72e5caf4804a"
 version: 2
 ---
 # quantum/export — quantum **computed** export
@@ -66,4 +66,4 @@ Composes [[quantum/boundary]] · [[convention]]/exported · [[tamper]]/import ·
 @audit export set = parseTsExports / skillExportName — computed live
 @standard an atom's only public code-face is index.ts
 
-<sub>content-uuid `459f267e-11c3-53c6-b8a0-84580416919d` · account `quantum/export` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `0b4363ce-e0f0-5d41-98d0-72e5caf4804a` · account `quantum/export` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

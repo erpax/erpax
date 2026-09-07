@@ -2,10 +2,10 @@
 name: accept
 description: "Use when reasoning about accept as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: accept
-coordinate: "accept · 8/crest · 314d1283"
-contentUuid: "81164841-4111-5aaa-adb1-28a16f5f1499"
-diamondUuid: "c1dfcb97-f089-8764-8217-0e3225477ef6"
-uuid: "314d1283-26df-87c8-902a-e449fa214527"
+coordinate: "accept · 8/crest · 6b29194c"
+contentUuid: "811f4dfd-9443-55e3-b5b0-584917cb5141"
+diamondUuid: "251fd36a-199c-838e-9670-dd5e53dc9e77"
+uuid: "6b29194c-617a-84c3-9c7f-7d3a4edefef6"
 horo: 8
 typography:
   partition: accept
@@ -15,7 +15,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d4a1920d-cb7f-8971-8fa1-d5e737d9cb2b"
+  computationUuid: "1cfbb0db-6c98-88d3-ba0f-ca8f9ee6c88e"
   stages:
     - stage: path
       stageUuid: "653bdf15-31e0-8a8c-9cbf-9569e38ea038"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "7742a3ae-9760-8e03-891d-a566dc23d7a5"
     - stage: horo
-      stageUuid: "54625d2a-19da-8288-90f9-39c5e21f0c3b"
+      stageUuid: "904047df-1fa9-8034-bf3f-ae3f2878c482"
     - stage: seal
       stageUuid: "68dccdaa-ff45-8680-a055-d6c35555ad83"
     - stage: uuid
-      stageUuid: "279cffdf-9924-86ac-bf66-419e70a64099"
+      stageUuid: "276c808e-a57c-8515-af9b-3abd452d70d9"
 version: 2
 ---
 # accept

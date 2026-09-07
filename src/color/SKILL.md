@@ -2,11 +2,11 @@
 name: color
 description: Use when reasoning about color — The color of the product.
 atomPath: color
-coordinate: "color · 8/crest · 6b8a7af9"
-contentUuid: "b82d2df0-426f-5d7d-b3f1-bdca7fc5d768"
-diamondUuid: "c5fb9dd5-8c26-8892-bca4-ef8d355b2336"
-uuid: "6b8a7af9-9d2f-89b3-86eb-2c2edadeb5b5"
-horo: 8
+coordinate: "color · 4/weave · fe3deebe"
+contentUuid: "111cc836-dce7-5754-be16-04d625ea9561"
+diamondUuid: "6ec1ad0e-7f57-8091-9ca7-3f35e4b0edbe"
+uuid: "fe3deebe-d37b-8015-b878-9605c09c2e7d"
+horo: 4
 typography:
   partition: color
   bondDegree: 51
@@ -15,7 +15,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "052f2099-1526-8e90-97ff-d99ef16cda0e"
+  computationUuid: "3a3ea11b-29c5-8d40-aa3b-c078698c59a3"
   stages:
     - stage: path
       stageUuid: "383c79e5-a6b1-81f8-86b9-5c67d713e134"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "cfb6d33e-2520-8258-87dc-d61783d2ab33"
     - stage: horo
-      stageUuid: "2d87d2cf-24b3-8320-b777-5b7cff1556f6"
+      stageUuid: "aa1bb719-78e9-86de-adec-6f3290dd6a31"
     - stage: seal
       stageUuid: "98ff5470-18f6-874b-98d6-ed1b031f4fc5"
     - stage: uuid
-      stageUuid: "c7ad17e6-cb58-80c0-9500-314a590e0711"
+      stageUuid: "0954627e-4981-8387-853c-61e37e2a7b4b"
 version: 2
 ---
 # color

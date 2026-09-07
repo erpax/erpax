@@ -2,11 +2,11 @@
 name: bus
 description: "Use when reasoning about bus as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/bus"
-coordinate: "vocabulary/bus · 2/share · 4634f83f"
-contentUuid: "5a1701e3-f8a4-5784-9282-6691b418a5ae"
-diamondUuid: "450025f9-0acf-8bc5-a1df-90174ad48168"
-uuid: "4634f83f-d42c-8613-8686-b2c21786c258"
-horo: 2
+coordinate: "vocabulary/bus · 7/descent · 87006c49"
+contentUuid: "07f66380-5cf2-5934-b8d4-1fa1355f6e0b"
+diamondUuid: "d379aa39-8eb9-85a5-882b-2e2c47ccd1bb"
+uuid: "87006c49-5b38-8ef1-880b-66cf1ce0d45c"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 46
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2ccb6fba-e7d8-80f6-877b-eaefb5b408ff"
+  computationUuid: "bcae43cb-c38e-8101-962d-65d25ca0ce30"
   stages:
     - stage: path
       stageUuid: "cc0df8f2-721b-8ad4-bbd3-7bee09bb5080"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bb6d7576-1003-86e2-a119-613039ed3937"
     - stage: horo
-      stageUuid: "f472a38b-e076-8cae-911c-0be94b3cfc17"
+      stageUuid: "aeb7d7bb-9fc3-836a-a43c-b9f2d64d5592"
     - stage: seal
-      stageUuid: "78e77cb1-9202-8343-b93a-c6e2480001da"
+      stageUuid: "e7f78b1d-9b38-8e40-8849-6a3ac33474ba"
     - stage: uuid
-      stageUuid: "56247ce2-8517-896c-9953-f63f15d730f2"
+      stageUuid: "b4c554ff-fd08-8580-9b19-f0c082b3f19e"
 version: 2
 ---
 # bus

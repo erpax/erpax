@@ -2,11 +2,11 @@
 name: ask
 description: "Use when measuring or reducing the human-typing cost — a required field with no defaultValue and no computed value is a bare ask. User input is the highest cost in an ERP: it costs attention, invites error, and is re-paid on every document forever. If the law, the tenant, the sequence or the clock determines the value, predefine it case by case and the user CONFIRMS instead of types. What remains is the irreducible ask: the user's actual intent. Run: tsx src/rules/ask/index.ts"
 atomPath: "rules/ask"
-coordinate: "rules/ask · 7/descent · 9ed56c0c"
-contentUuid: "83d7c945-95d9-5896-805a-669536e40ab8"
-diamondUuid: "9db88d32-1fcb-8bc2-a5b9-578a85e8bee5"
-uuid: "9ed56c0c-52f2-8d11-a64b-9a751bdfdf98"
-horo: 7
+coordinate: "rules/ask · 8/crest · d1829311"
+contentUuid: "524912f4-e0f3-53b2-a93c-ba201e98becf"
+diamondUuid: "5ea9f539-7a84-8018-9710-ac5fcbb1ea5b"
+uuid: "d1829311-00be-8a0f-9765-27670488072c"
+horo: 8
 typography:
   partition: rules
   bondDegree: 29
@@ -14,7 +14,7 @@ standards:
   - "ISO 9241-110:2020 §6.2 — self-descriptiveness / suitability for the task (do not ask what is known)"
 bindings: []
 signatures:
-  computationUuid: "4a3be361-2618-848e-b195-6a80e943b968"
+  computationUuid: "fd4881f9-4246-85e9-b6f0-61f0a8648a31"
   stages:
     - stage: path
       stageUuid: "9a3fc4dc-9cee-8359-ad84-e759b2319763"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ef00e15f-2053-8ae0-8ebb-5847a8b50998"
     - stage: horo
-      stageUuid: "cf92a555-83a9-8f06-93a1-dffa96e2ef67"
+      stageUuid: "10b50db9-09eb-857b-8539-26893c8dccc2"
     - stage: seal
       stageUuid: "bb0029ed-995b-8f9c-8f66-2c3a343443e6"
     - stage: uuid
-      stageUuid: "5a4716da-a256-81e7-81a3-b331e0dd94ac"
+      stageUuid: "a33ce902-0ab1-88b0-91ca-fdfcbb96d900"
 version: 2
 ---
 # ask — a question the law already answers is not a question

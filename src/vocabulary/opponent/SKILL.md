@@ -2,11 +2,11 @@
 name: opponent
 description: Use when reasoning about opponent — A sub property of participant. The opponent on this action.
 atomPath: "vocabulary/opponent"
-coordinate: "vocabulary/opponent · 4/weave · 644d6424"
-contentUuid: "ff7336ec-6729-5901-8a5a-cf7e6526fa3e"
-diamondUuid: "247956ab-6528-862c-9e4d-239cfcc4bc55"
-uuid: "644d6424-7507-8e1f-a516-87cda8b6dffe"
-horo: 4
+coordinate: "vocabulary/opponent · 1/base · 70aa0b7e"
+contentUuid: "b762f1c0-0a1a-577d-90a4-8bba735d05b0"
+diamondUuid: "dbad359a-dd87-8899-89b6-fe0187f84083"
+uuid: "70aa0b7e-508e-8fca-9bd6-1e993f141e41"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "81533368-64aa-813e-b855-dbece1400c89"
+  computationUuid: "b1a2f5b0-042a-863a-8738-87063e5919a7"
   stages:
     - stage: path
       stageUuid: "a861648a-77c3-8cfe-8bb7-aa3d9364815e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "93a03c61-3d55-8e0d-8b36-dc8339840a1e"
     - stage: horo
-      stageUuid: "395dd53d-9a08-823a-8079-95e7591472e1"
+      stageUuid: "4f4be832-46e1-8761-b2f9-4ed18e217dac"
     - stage: seal
-      stageUuid: "66a4e12f-761f-8e05-92ad-88f753ef1de1"
+      stageUuid: "da1dfbd5-3b79-8300-bf1b-3b44dc9e1be8"
     - stage: uuid
-      stageUuid: "d5446971-cfef-8839-a0df-8ea92a51c55a"
+      stageUuid: "61bad1b3-1172-8de6-8cb5-5c6ba9acad85"
 version: 2
 ---
 # opponent

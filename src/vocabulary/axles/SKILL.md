@@ -2,11 +2,11 @@
 name: axles
 description: "Use when reasoning about axles as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/axles"
-coordinate: "vocabulary/axles · 2/share · 5da7f489"
-contentUuid: "7ad087e7-39b4-5dc8-b5f2-16908e4b2477"
-diamondUuid: "045661cc-1e9c-80bc-bb5e-9ce9298580ba"
-uuid: "5da7f489-1fce-8369-aa24-88a6d669b0fe"
-horo: 2
+coordinate: "vocabulary/axles · 1/base · a3ef8c6c"
+contentUuid: "08d81f56-7b0c-5a42-b706-d22d7443350d"
+diamondUuid: "cfbe6349-7033-8266-b571-577fc04fa5b7"
+uuid: "a3ef8c6c-6489-82c6-8730-bd8f1adeb987"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "dd6896ba-bdf3-8af0-a625-af1f6977c3f5"
+  computationUuid: "f90c9929-61fb-8ddd-ae57-b1fa6932d3d8"
   stages:
     - stage: path
       stageUuid: "078a2dc8-f5c6-8b93-85d5-caabccbb2aea"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "caa644c6-fe1d-8a20-960d-7eb504eec700"
     - stage: horo
-      stageUuid: "d18d763d-8038-8a99-a9b2-87caded134f4"
+      stageUuid: "f90950cb-ba40-8302-b76a-b4e236bef694"
     - stage: seal
-      stageUuid: "34f8bb5b-6292-840b-aae8-02596b11bc86"
+      stageUuid: "bbf921cc-54d4-84d6-9a2e-e7851f59005c"
     - stage: uuid
-      stageUuid: "80274ab3-1661-8158-935b-f168ceedf469"
+      stageUuid: "686c0176-6cd9-85e9-b01a-863277970a6f"
 version: 2
 ---
 # axles

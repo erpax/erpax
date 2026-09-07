@@ -2,11 +2,11 @@
 name: radius
 description: "Use when reasoning about radius as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/radius"
-coordinate: "vocabulary/radius · 4/weave · ef961036"
-contentUuid: "0d799987-9175-5085-8b94-71712f8e4ae8"
-diamondUuid: "02108696-7c11-8be0-beb7-55758171fad0"
-uuid: "ef961036-fdb8-8e0c-b7fd-ea8db6e08514"
-horo: 4
+coordinate: "vocabulary/radius · 8/crest · 1da7520a"
+contentUuid: "0db8d324-53fc-5a05-9543-c7dd247a104e"
+diamondUuid: "befafe8e-785d-8b9f-abd6-761fd4ca7119"
+uuid: "1da7520a-a0d6-86ef-b9c0-a37ffab6eadd"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "95cab7b1-e494-83d6-bdbc-be0c82970a26"
+  computationUuid: "b3c83efd-7e8e-8aaf-b066-191b0068d189"
   stages:
     - stage: path
       stageUuid: "aae74922-2460-8501-b5b2-34169e5e6147"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "54779449-5c39-8456-89fb-5d83228e7b96"
     - stage: horo
-      stageUuid: "9fec093f-09f0-8a6f-a544-5660292e9ff9"
+      stageUuid: "2686cd3d-28fa-8f8f-947a-4c9dbb81c52a"
     - stage: seal
-      stageUuid: "15aaea47-3018-813e-ba35-73db1b5ab5bb"
+      stageUuid: "bad96532-1017-8c29-828c-09d7265edd2b"
     - stage: uuid
-      stageUuid: "30d99825-800b-8f7f-b0e0-14c94de5fc5f"
+      stageUuid: "f26b8cc8-2d7b-882c-bdf3-4d975263779e"
 version: 2
 ---
 # radius

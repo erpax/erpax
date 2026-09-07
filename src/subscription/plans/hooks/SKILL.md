@@ -3,13 +3,13 @@ name: hooks
 description: "Use when reasoning about hooks — No plan-specific hook is wired yet. The barrel is here because every collection's hooks live at the same address, and a convention with a hole in it is one every future reader…"
 atomPath: "subscription/plans/hooks"
 coordinate: "subscription/plans/hooks · 3/3 · cad19847"
-contentUuid: "e0e3292d-e628-5976-8310-75763149b4ea"
+contentUuid: "54f741c6-0261-57a7-9b5f-6f454db78c01"
 diamondUuid: "80ae2b41-485e-80dd-90aa-eea91e534e6b"
 uuid: "cad19847-3424-89c0-b83b-8a9d24ef4a2a"
 horo: 3
 typography:
   partition: subscription
-  bondDegree: 348
+  bondDegree: 312
 standards:
   - "IFRS IFRS-15 revenue-from-contracts-with-customers"
   - "US-GAAP ASC-606 revenue-from-contracts-with-customers"

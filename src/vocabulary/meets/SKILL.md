@@ -2,11 +2,11 @@
 name: meets
 description: "Use when reasoning about meets as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/meets"
-coordinate: "vocabulary/meets · 7/descent · 675610ec"
-contentUuid: "788a4355-2ed9-51e0-b1b3-87e4ad3c0e39"
-diamondUuid: "344e818c-63dc-8d70-8fb9-d265dfd93c02"
-uuid: "675610ec-c7bf-859c-8ee4-4a789d9f26a8"
-horo: 7
+coordinate: "vocabulary/meets · 5/round · cf3039c6"
+contentUuid: "7ff100d1-83a4-5520-9e8f-197b2051f745"
+diamondUuid: "9985d746-e5dc-8496-b72e-c4e9c53ceae4"
+uuid: "cf3039c6-d5ab-8499-9d90-24b4a2ae311e"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0e078822-b9bc-8daf-936b-c23fd3537c9b"
+  computationUuid: "b8f4609d-1f1b-8a14-a89c-03efca9a7bb4"
   stages:
     - stage: path
       stageUuid: "ada75b38-55cc-8f4e-b1e9-3be734593676"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e5545e2d-7989-8778-8281-b493a3465caa"
     - stage: horo
-      stageUuid: "b2ef71c2-dee3-88a2-8278-3defd3295853"
+      stageUuid: "4001a123-1937-8a1a-9060-6aed316d2c36"
     - stage: seal
-      stageUuid: "ddee1f72-be57-8ce8-9f0a-08b19c1c6bbe"
+      stageUuid: "8ae4fc31-13a7-8378-b54c-501c96cb5332"
     - stage: uuid
-      stageUuid: "e5659ce4-adaf-8b46-86a0-c4ad0da864bb"
+      stageUuid: "91faaee4-1e6c-8499-91de-e152b4420e4c"
 version: 2
 ---
 # meets

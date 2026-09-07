@@ -2,14 +2,14 @@
 name: properties
 description: "Use when registering or querying the real-estate portfolio — owned, leased (IFRS-16 ROU), managed, or sublet buildings, sites, and land parcels — with area measurements (IPMS), occupancy, EPC energy rating, BIM reference, and links to spaces, fixed-assets, and leases. The IWMS property master collection."
 atomPath: properties
-coordinate: "properties · 5/round · 6ab78b41"
-contentUuid: "f0657958-2b24-5655-b27f-f6060ef4332d"
-diamondUuid: "5fdc42c4-8388-8eef-b8ec-57523177a3b4"
-uuid: "6ab78b41-630b-8175-89e7-e5c5a33649f4"
+coordinate: "properties · 5/round · 28d0d2b4"
+contentUuid: "e9666cf7-b1c2-5168-952a-6aa91e4c090a"
+diamondUuid: "43edcdd4-440a-83b7-ad3d-2bdff5ee5dfd"
+uuid: "28d0d2b4-527f-80b3-814e-d5e5ade9197b"
 horo: 5
 typography:
   partition: properties
-  bondDegree: 0
+  bondDegree: 23
 standards:
   - "EN-15978:2011 sustainability-of-construction-works (when ESG-tracked)"
   - "EN-15978:2011 sustainability-of-construction-works (when ESG-tracked)`"
@@ -43,7 +43,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "2451aaa1-da51-8455-ac74-08bb0ca6ef62"
+  computationUuid: "ae71975d-b479-8ff1-98ae-bdf1dbebe02a"
   stages:
     - stage: path
       stageUuid: "959553b6-b82e-8464-9560-ca224b7f2bd6"
@@ -54,11 +54,11 @@ signatures:
     - stage: links
       stageUuid: "07415a13-c137-8f99-b949-64fec1e83a48"
     - stage: horo
-      stageUuid: "0997b273-d1b0-836a-962d-e581a8176e00"
+      stageUuid: "a60ebee5-fd32-858e-843f-1b4999af6d32"
     - stage: seal
-      stageUuid: "15bac4fd-a2e1-828a-b64c-6673fcd58c6b"
+      stageUuid: "b295882a-9b3f-89ca-a7e3-198e850270d4"
     - stage: uuid
-      stageUuid: "42554d85-4465-8100-ae31-1ddaaa5212db"
+      stageUuid: "01fb5898-686c-8be6-a488-0deb1789bcf3"
 version: 2
 ---
 # properties

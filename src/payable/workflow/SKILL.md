@@ -3,13 +3,13 @@ name: workflow
 description: "Use when reasoning about workflow — A bill moves through a fixed set of states, and only along edges the graph allows."
 atomPath: "payable/workflow"
 coordinate: "payable/workflow · 4/weave · 485cdcb9"
-contentUuid: "a946ab3e-5d8f-5c7c-97d3-fbf478cb5db3"
+contentUuid: "1245d9f1-b220-5686-80fd-7a6d6c66ca55"
 diamondUuid: "6fc83313-d0ea-8a42-b12d-fb5dcd4773cd"
 uuid: "485cdcb9-712e-8c74-a331-80d055642500"
 horo: 4
 typography:
   partition: payable
-  bondDegree: 73
+  bondDegree: 79
 standards:
   - "EN-16931:2017 invoice-lifecycle"
   - "IFRS IAS-37 provisions-contingent-liabilities"

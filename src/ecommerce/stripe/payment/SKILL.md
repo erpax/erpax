@@ -3,13 +3,13 @@ name: payment
 description: "Use when reasoning about payment — The payment child of the tenant-aware Stripe stack. What is held here is a reference to a method Stripe holds, never the instrument itself — the tokenisation boundary is what…"
 atomPath: "ecommerce/stripe/payment"
 coordinate: "ecommerce/stripe/payment · 4/weave · aaaab8fa"
-contentUuid: "444d9460-aad4-5cfb-9362-f3ea93a30f52"
+contentUuid: "2f390640-7699-5640-8721-81d72dec8e9a"
 diamondUuid: "fdd4730b-8a6b-85eb-83a1-dbef2ac4c7b4"
 uuid: "aaaab8fa-63fb-81c9-939b-790e62dfd0fc"
 horo: 4
 typography:
   partition: ecommerce
-  bondDegree: 79
+  bondDegree: 76
 standards:
   - "ISO-4217:2015 currency-codes"
   - "PCI-DSS-4.0 §3.2 tokenized-card-data"

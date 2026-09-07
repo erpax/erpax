@@ -2,21 +2,21 @@
 name: routing
 description: "Use when choosing which model/compute tier handles an agent action — route by risk (capability verb + credential touch + harmony fight), not by where the model runs; low-risk reads/chat go local, high-risk write/execute/credential/disharmony go to a strong aligned model; safety is the sandbox gate, not the model tier. The risk-proportionate model-routing service."
 atomPath: routing
-coordinate: "routing · 8/crest · 139fb163"
-contentUuid: "6964386d-d4b3-528c-93f9-56caba11e0a4"
-diamondUuid: "8b3e4547-783a-8dc3-9f27-92e89e69d0bf"
-uuid: "139fb163-b674-8428-a474-96a37fb0ba79"
-horo: 8
+coordinate: "routing · 2/share · 97ebbcb7"
+contentUuid: "b24124fa-9633-5964-ab89-76b539539d3a"
+diamondUuid: "8d535f52-30d0-890a-9a74-af75907e5542"
+uuid: "97ebbcb7-b7eb-8258-b2c6-b645680ce59c"
+horo: 2
 typography:
   partition: routing
-  bondDegree: 29
+  bondDegree: 17
 standards:
   - "NIST AI RMF (risk-proportionate controls) — map risk → control strength"
   - "NIST AI RMF (risk-proportionate controls) — map risk → control strength`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "509cc1d1-b10b-8135-8129-0ce0ca7fa02a"
+  computationUuid: "9caf917b-4173-8b65-b8d3-fe568afa6dd9"
   stages:
     - stage: path
       stageUuid: "9ed916e5-dd6a-84dc-982f-4ef90d7a9ce5"
@@ -25,13 +25,13 @@ signatures:
     - stage: boundary
       stageUuid: "9ff6bc34-3d8c-8513-80e7-609f817c6efd"
     - stage: links
-      stageUuid: "35d05721-a829-81ae-8d54-da31449b76c6"
+      stageUuid: "c5047bc9-8529-86ee-8be4-2f40923d9db2"
     - stage: horo
-      stageUuid: "7816afcb-9615-8771-abc2-f76003285c8e"
+      stageUuid: "e07e9aaf-3140-846b-bf41-db502acc3323"
     - stage: seal
       stageUuid: "febd5367-e339-86af-a7ec-68c94cce5c6b"
     - stage: uuid
-      stageUuid: "2504eb9f-139b-826b-841f-fef98ea7ac92"
+      stageUuid: "ec5af921-23b8-88b5-9449-e3a59ab65924"
 version: 2
 ---
 # routing — size the model to the risk (enforcement, not location, is safety)

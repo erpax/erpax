@@ -3,13 +3,13 @@ name: generator
 description: "Use when reasoning about generator — A hero image per product, synthesised rather than commissioned: a 1600×900 SVG built from primitive paths and , with no font file, no raster asset and no image library."
 atomPath: "svg/hero/generator"
 coordinate: "svg/hero/generator · 7/descent · edabfe45"
-contentUuid: "d810c3a7-598f-55c6-8db2-ae3e2c98f73c"
+contentUuid: "01960be7-3131-5aa8-a6bd-dc0c79347e00"
 diamondUuid: "b2822351-f800-81e3-ac3b-fe35dee56b91"
 uuid: "edabfe45-cc52-85a2-8074-4df87492de27"
 horo: 7
 typography:
   partition: svg
-  bondDegree: 46
+  bondDegree: 40
 standards:
   - "ISO/IEC-29500 office-open-xml media-embedding-target"
   - "W3C SVG-1.1 scalable-vector-graphics"

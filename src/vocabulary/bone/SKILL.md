@@ -2,11 +2,11 @@
 name: bone
 description: Use when reasoning about bone — Rigid connective tissue that comprises up the skeletal structure of the human body.
 atomPath: "vocabulary/bone"
-coordinate: "vocabulary/bone · 7/descent · 3af43a8c"
-contentUuid: "09535f55-1a9e-5ecf-972a-12f7225228a4"
-diamondUuid: "06f5b261-1ccb-8bc0-ab42-7b1abc740396"
-uuid: "3af43a8c-c46f-8dfe-9af3-3b53c49018a1"
-horo: 7
+coordinate: "vocabulary/bone · 8/crest · 842e2d2e"
+contentUuid: "37b9bd60-cecc-5fbf-adcc-1ed2cb975600"
+diamondUuid: "84b7bb0b-d8af-80d0-84f2-2f58061caf83"
+uuid: "842e2d2e-fe97-8ab0-9d86-12527b7adfe2"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a8b331e8-fd1c-81da-94ad-5f4fcd925f14"
+  computationUuid: "075050de-a61d-84fa-af6c-b6651662b81c"
   stages:
     - stage: path
       stageUuid: "2b74d316-03dc-88ff-86d8-277fbcba5fca"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "765ffc84-d2c3-8160-8521-8d59c7968706"
     - stage: horo
-      stageUuid: "a6f64bbe-14e6-8f62-9477-0fd6807d568d"
+      stageUuid: "4938a567-095b-8bb6-9469-9b47d6b224e4"
     - stage: seal
-      stageUuid: "df3c287c-8797-87e5-b439-965c1d815269"
+      stageUuid: "2fb56ebb-2681-8480-99b5-d0a35e501e07"
     - stage: uuid
-      stageUuid: "b8aa6904-a091-8349-b637-7004ee231e84"
+      stageUuid: "972ae1bd-a5e1-831a-9016-bed4177129eb"
 version: 2
 ---
 # bone

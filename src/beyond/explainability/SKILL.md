@@ -2,14 +2,14 @@
 name: explainability
 description: "Use when a business outcome must ship its own natural-language explanation citing standards, sources and chain steps — autoExplain composes the narrative deterministically with no LLM in the path (preserving replay), isExplanationComplete verifies it is non-trivial."
 atomPath: "beyond/explainability"
-coordinate: "beyond/explainability · 7/descent · 60dea6a3"
-contentUuid: "228c64ed-d8e9-5a48-aa51-8247124524a5"
-diamondUuid: "9dee54b0-acde-86d3-a3d8-27da55b8303c"
-uuid: "60dea6a3-3c3e-84ff-9bd4-68e69c7ebdca"
-horo: 7
+coordinate: "beyond/explainability · 1/base · 61e99c33"
+contentUuid: "5dd84bfa-f11e-57db-a38d-a3a6ec9f7150"
+diamondUuid: "fe26da7f-5f75-84c2-b6f1-54cd40d58568"
+uuid: "61e99c33-beee-8978-80fb-d1415e519365"
+horo: 1
 typography:
   partition: beyond
-  bondDegree: 4
+  bondDegree: 10
 standards:
   - "EU AI Act 2024/1689 Art. 13 (transparency for high-risk)"
   - "EU-AI-Act"
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "66f9045e-4e17-842a-ae39-c756051bed7b"
+  computationUuid: "7a244b54-0a4d-865c-b7d7-a0fec5e29061"
   stages:
     - stage: path
       stageUuid: "2825efc3-1b16-8c3d-8cb9-4086ac4853d9"
@@ -30,13 +30,13 @@ signatures:
     - stage: boundary
       stageUuid: "d38bf9ea-a606-87c2-be27-173e3b1647ff"
     - stage: links
-      stageUuid: "997c19c3-6a2b-865c-b85a-8975f5b83e2e"
+      stageUuid: "fe344572-ba95-88b8-b6cf-42e9d7583346"
     - stage: horo
-      stageUuid: "8d401e29-3600-82dc-9b36-ad4bd9a56827"
+      stageUuid: "43ce95e9-39df-8649-a964-92c610b31e07"
     - stage: seal
-      stageUuid: "9b1ed1e2-5c5c-8dc7-8d93-5fc8b30bc14f"
+      stageUuid: "d3d1625b-8c53-857d-bb72-ba2bd1932fee"
     - stage: uuid
-      stageUuid: "81597918-8bf1-83bc-9c1e-182492e64022"
+      stageUuid: "1ce9f879-56cb-85f5-8820-ffc6a69b3b6c"
 version: 2
 ---
 # beyond/explainability — self-explainability (auto-generated narrative)

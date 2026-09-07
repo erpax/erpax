@@ -2,11 +2,11 @@
 name: qualifications
 description: Use when reasoning about qualifications — Specific qualifications required for this role or Occupation.
 atomPath: "vocabulary/qualifications"
-coordinate: "vocabulary/qualifications · 8/crest · 841655d3"
-contentUuid: "2c186cb4-39a1-5dac-9b43-9137a7b7aed6"
-diamondUuid: "02d7d205-a554-8aca-a8d3-9aa98fd0df6b"
-uuid: "841655d3-9a00-89d0-80af-d8c07e227e73"
-horo: 8
+coordinate: "vocabulary/qualifications · 2/share · c458a270"
+contentUuid: "d07d5952-9c67-5262-b281-de4b9f31b6ad"
+diamondUuid: "cd70714d-5376-8907-828e-5e322f1c4747"
+uuid: "c458a270-30a1-8ed9-ab45-e763e0e0fa25"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3def50e9-9c6a-8e50-bf0f-fc7431cc33b8"
+  computationUuid: "d3559e29-732f-8597-a26b-106cc6c6ccdd"
   stages:
     - stage: path
       stageUuid: "94c1519a-c171-8375-af24-4c816d85b709"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "351cd076-c274-8467-9cc1-fb7dd83066a4"
     - stage: horo
-      stageUuid: "8ad7bcd9-3ebf-82b0-88fc-fb72515dd991"
+      stageUuid: "e635e10e-1766-86e9-9981-f65908ad8fcb"
     - stage: seal
-      stageUuid: "58af4bc9-092b-8f02-9154-e11c29031100"
+      stageUuid: "db40740e-d983-88fe-967f-22cd6eb48451"
     - stage: uuid
-      stageUuid: "89065f2e-3f94-8268-b746-39046fccfa51"
+      stageUuid: "998c51de-608f-8588-8dcb-83759dbe669c"
 version: 2
 ---
 # qualifications

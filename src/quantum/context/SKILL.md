@@ -2,8 +2,54 @@
 name: context
 description: "Use when reading the live quantum surface state — superposition pending paths, last collapse, bond reciprocity, and the formatted status the CLI prints. The last loose sibling in the quantum partition, now an atom. Run: tsx src/quantum/context/index.ts"
 atomPath: "quantum/context"
+coordinate: "quantum/context · 7/descent · 768bae23"
+contentUuid: "9428e0a4-9ce0-5cf3-9caa-973bbc34e9f0"
+diamondUuid: "276b3e26-3740-88ec-b0d2-503df37b8183"
+uuid: "768bae23-fd39-87b8-96f4-5b698de67581"
+horo: 7
+typography:
+  partition: quantum
+  bondDegree: 29
+standards: []
+bindings: []
+signatures:
+  computationUuid: "e176e62d-fc1d-8f98-9ef9-1daba72636fc"
+  stages:
+    - stage: path
+      stageUuid: "cb94b71d-6f3e-85cc-a409-b6cf5219885f"
+    - stage: trinity
+      stageUuid: "2ba6c9b8-34e5-8f0f-ac2c-d8f849d69109"
+    - stage: boundary
+      stageUuid: "22765f02-68e9-8a1e-914e-64a9a9de990b"
+    - stage: links
+      stageUuid: "7c427e0e-d06d-80b0-af66-6d4f96fba950"
+    - stage: horo
+      stageUuid: "5aff4dbe-68df-8fd3-8625-7ac7b6443f61"
+    - stage: seal
+      stageUuid: "e79cfabb-0871-84b0-a4b2-ce10b3faf65b"
+    - stage: uuid
+      stageUuid: "cb7e9140-ca41-8dbf-9632-44b0244e4889"
+quantum:
+  superposition:
+    - agent
+    - original
+    - quantum
+    - rules
+    - superposition
+  collapse:
+    - "Use when reading the live quantum surface state — superposition pending paths, last collapse, bond reciprocity, and the formatted status the CLI prints. The last loose sibling in the quantum partition, now an atom. Run: tsx src/quantum/context/index.ts"
+    - a partition is closed when nothing loose remains beside it. The last stray is the one that proves the rule was a rule and not a habit.
+  seal:
+    sandbox: false
+    receipt: false
+    pathFollow: true
+    canonicalRecord: true
+    analogResults: false
+    speechResults: false
+    computationUuid: "e176e62d-fc1d-8f98-9ef9-1daba72636fc"
+    contentUuid: "9428e0a4-9ce0-5cf3-9caa-973bbc34e9f0"
+version: 2
 ---
-
 # context — the live state of the quantum surface
 
 What is currently in superposition, what collapsed last, and whether the bonds reciprocate. This is the read side of the partition: [[quantum]]/status formats it for the CLI, [[apply]] and [[monitor]]/violations read it to decide what to do next, and [[seal]] folds it into a receipt.
@@ -36,3 +82,5 @@ All four came back clean here. A move is only zero-risk once every spelling of a
 - **ISO/IEC 25010:2023 §5.6** — modularity: one concept, one addressable home.
 
 Composes: [[quantum]] · [[quantum]]/status · [[seal]] · [[rules]]/invisible · [[law]].
+
+<sub>content-uuid `9428e0a4-9ce0-5cf3-9caa-973bbc34e9f0` · account `quantum/context` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

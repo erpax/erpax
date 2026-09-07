@@ -1,15 +1,15 @@
 ---
 name: graph
-description: "Use when reasoning about graph — holds directed edges. asks whether the opposite edge exists, and derives the relation: two mutual follows ARE a friendship, and nothing writes a \"friends\" row to say so."
+description: "Use when reasoning about graph — holds directed edges. asks whether the opposite edge exists, and derives the relation: two mutual follows ARE a friendship, and nothing writes a \\\"friends\\\" row to say so."
 atomPath: "social/graph"
 coordinate: "social/graph · 2/share · 9219205b"
-contentUuid: "8821d0cf-cb11-5b5e-b60d-e292b2a40fce"
+contentUuid: "3e10703c-0d96-59dc-b980-bdb00205a57a"
 diamondUuid: "f1fc3b18-7a6e-865e-affa-1e97260dad53"
 uuid: "9219205b-41f8-8fac-8c5e-5b63ffa21bad"
 horo: 2
 typography:
   partition: social
-  bondDegree: 45
+  bondDegree: 42
 standards:
   - "W3C ActivityStreams 2.0 Follow/Accept reciprocity"
 bindings: []

@@ -2,11 +2,11 @@
 name: variant
 description: "Use when modeling product options, SKU expansion, or feature flags — sizes, colors, configurations, market-specific variants without a fixed grid. The unbounded product dimension."
 atomPath: variant
-coordinate: "variant · 7/descent · faadde4c"
-contentUuid: "7cac6271-3f1a-53a8-88e2-419b79447fb1"
-diamondUuid: "9836fb52-c6ab-8849-ab98-7604fdd0f024"
-uuid: "faadde4c-c024-82ac-bdf3-c1286644852f"
-horo: 7
+coordinate: "variant · 1/base · 18eecaea"
+contentUuid: "1d69b5ce-69b9-5316-a0c7-1e0dc0e7de3c"
+diamondUuid: "33021674-fcf5-8737-bc00-8e438ed60991"
+uuid: "18eecaea-f5ed-8be2-8829-1fc0fa3f1b8b"
+horo: 1
 typography:
   partition: variant
   bondDegree: 63
@@ -14,7 +14,7 @@ standards:
   - "Commerce/product taxonomy — the open variant dimension (no cultivar/option enum)"
 bindings: []
 signatures:
-  computationUuid: "032583be-5cdf-811f-a911-309d90d7171b"
+  computationUuid: "6b9e73da-fcb4-8473-a28b-63ec3ab456b0"
   stages:
     - stage: path
       stageUuid: "8e4f7495-cd46-8efa-916a-3671849f13d2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fae8f567-9197-8009-89eb-263d247026aa"
     - stage: horo
-      stageUuid: "9eb9a0a3-61d9-8dd5-b821-0ee8e639412d"
+      stageUuid: "96f84f6f-02cb-819a-9d1c-f5e1d5ce658c"
     - stage: seal
       stageUuid: "2a91f0bd-8ec8-8a12-b806-ff5ee2db1b49"
     - stage: uuid
-      stageUuid: "9ec53c93-b20b-87b4-945f-154a98ea28e8"
+      stageUuid: "104bfe95-a047-8948-abb4-6aad917db0e6"
 version: 2
 ---
 # variant

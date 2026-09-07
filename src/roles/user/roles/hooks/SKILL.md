@@ -1,15 +1,15 @@
 ---
 name: hooks
-description: "Use when reasoning about hooks — refuses a second grant of a role a user already holds. Without it the same role accumulates rows, and every count of \"who has this\" is wrong by however many times someone clicked."
+description: "Use when reasoning about hooks — refuses a second grant of a role a user already holds. Without it the same role accumulates rows, and every count of \\\"who has this\\\" is wrong by however many times someone clicked."
 atomPath: "roles/user/roles/hooks"
 coordinate: "roles/user/roles/hooks · 6/6 · 5b5b91a4"
-contentUuid: "56020fce-301d-5238-9528-a568aa009b52"
+contentUuid: "e61565a2-3a91-5d65-96c7-9ab8a05d4ff8"
 diamondUuid: "0dd6dce2-2186-864e-a488-6c4350ae7798"
 uuid: "5b5b91a4-8255-8e14-ac5a-382b3d872b6f"
 horo: 6
 typography:
   partition: roles
-  bondDegree: 348
+  bondDegree: 312
 standards: []
 bindings: []
 signatures:

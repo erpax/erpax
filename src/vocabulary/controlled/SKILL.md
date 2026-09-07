@@ -2,11 +2,11 @@
 name: controlled
 description: "Use when reasoning about controlled as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/controlled"
-coordinate: "vocabulary/controlled · 4/weave · 7df0c8d0"
-contentUuid: "978e673f-e4a1-54ea-862b-026cf9859ab1"
-diamondUuid: "7453a752-9acd-8085-bcd2-e2a810007e04"
-uuid: "7df0c8d0-1aa0-80bb-a895-46ce3ec75b27"
-horo: 4
+coordinate: "vocabulary/controlled · 2/share · adcfe062"
+contentUuid: "82c052c5-211b-5f3e-9c45-bb3f1b814ed9"
+diamondUuid: "a21e0e78-84bd-836c-af8c-76100a75ae75"
+uuid: "adcfe062-7736-88f0-9744-12540f9c5f2f"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9e9ed506-79aa-8b55-9dde-f85956af7f9e"
+  computationUuid: "370d6fa8-5e4c-885e-8f13-278f665ae159"
   stages:
     - stage: path
       stageUuid: "742afab2-1dfa-8794-a121-97f256eb0a19"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fc889998-c15d-8fa7-8276-64773bf28167"
     - stage: horo
-      stageUuid: "5775902c-6160-8ab8-b75d-7a32b6e9c498"
+      stageUuid: "aeb941bf-6959-8d36-9ab2-ef74f0e8b5e1"
     - stage: seal
-      stageUuid: "d0d9f48d-a5bf-84ea-bd9f-5ded42f13390"
+      stageUuid: "e2e79855-dc73-80e1-9e52-ebdbb82b311e"
     - stage: uuid
-      stageUuid: "08abb15f-4036-8f2e-a26b-264852bcbbd1"
+      stageUuid: "9ca302fa-b628-8ad0-ba2e-d7411337de96"
 version: 2
 ---
 # controlled

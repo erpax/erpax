@@ -2,14 +2,14 @@
 name: evidence
 description: "Use when reasoning about evidence as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: evidence
-coordinate: "evidence · 5/round · 0948e6f8"
-contentUuid: "5d3de219-450c-527d-8406-b64241641a26"
-diamondUuid: "4a1a063b-ad95-8137-af9c-e66b48e041ef"
-uuid: "0948e6f8-0f19-8a9e-a0f1-86c089aeb119"
-horo: 5
+coordinate: "evidence · 1/base · 8d79b0b0"
+contentUuid: "a121a393-be54-5e2d-bf38-6b90cd5a2729"
+diamondUuid: "11e8aadd-bde9-8cfc-b5bc-62972b60639c"
+uuid: "8d79b0b0-0fc5-83aa-99c9-cfb76e43a420"
+horo: 1
 typography:
   partition: evidence
-  bondDegree: 0
+  bondDegree: 37
 standards:
   - "ETSI-EN-319-142"
   - "EU-537/2014"
@@ -23,7 +23,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "dfb0e959-a2c8-8a2e-ae18-8df913a23078"
+  computationUuid: "dcc61504-6707-838f-85e5-33ed07d60cc8"
   stages:
     - stage: path
       stageUuid: "13edd962-4996-8238-8d46-d12dda26fb06"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "6e0c31f2-d993-8748-a578-fd494b7beb83"
     - stage: horo
-      stageUuid: "6e3187b7-b532-8496-82b2-c472a9d17fcb"
+      stageUuid: "1deea403-00a5-8d84-a1df-e893cbc52c49"
     - stage: seal
-      stageUuid: "f1fa7a88-45d3-8cf8-b72f-622a8bd57a35"
+      stageUuid: "716f55fb-faaf-8232-b842-405eea55b2eb"
     - stage: uuid
-      stageUuid: "5b6e7fb3-bbf9-81aa-9f04-bd61a6007ea8"
+      stageUuid: "70a5a58f-38ea-889c-9aa6-a110de31d807"
 version: 2
 ---
 # evidence

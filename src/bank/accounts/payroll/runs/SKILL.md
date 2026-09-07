@@ -2,14 +2,14 @@
 name: runs
 description: "Use when processing, auditing, or posting a periodic payroll batch — aggregates approved TimeEntries, computes gross-to-net deductions and employer-side accruals, posts IAS-19/ASC-710 journal entries, emits a pain.001 disbursement file; SOX §404 four-eyes (preparer ≠ authoriser), GDPR-classified personal data. The payroll-run collection."
 atomPath: "bank/accounts/payroll/runs"
-coordinate: "bank/accounts/payroll/runs · 1/base · 66bdbc38"
-contentUuid: "2164c28d-aa30-5ee3-b479-11f7421ef9bc"
-diamondUuid: "4dbcafe0-7a73-8034-815f-16356b769203"
-uuid: "66bdbc38-6cba-8a02-a441-4397f16f5c2a"
-horo: 1
+coordinate: "bank/accounts/payroll/runs · 2/share · 451873f6"
+contentUuid: "57c893d0-5f90-5612-a5dd-ec563ea96257"
+diamondUuid: "7d386580-9ad1-8bae-972a-4b2cd3510a70"
+uuid: "451873f6-cc87-8421-bdb5-d2eff26eb567"
+horo: 2
 typography:
   partition: bank
-  bondDegree: 0
+  bondDegree: 42
 standards:
   - "EU-Intrastat-Reg-2019/2152"
   - "EU-Taxonomy-2020/852"
@@ -33,6 +33,7 @@ standards:
   - "ISO-9362"
   - "ISO-9362:2022 bic"
   - "ISO-9362:2022 bic`"
+  - "ISO/IEC-29119"
   - "SOX §302 disclosure-controls"
   - "SOX §404 internal-controls four-eyes"
   - "US-GAAP ASC-710 compensation-general"
@@ -40,22 +41,22 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "24c1d0a2-c0a0-861e-bc2b-5252049e2048"
+  computationUuid: "627be73f-167f-825d-9908-baea36c91fa5"
   stages:
     - stage: path
       stageUuid: "e00cdde0-106c-8683-98dd-e7a809314746"
     - stage: trinity
       stageUuid: "8c600bd2-ad27-8552-a5ba-49fb69940703"
     - stage: boundary
-      stageUuid: "a946f220-84a7-87f8-bbab-6129dd56d4cc"
+      stageUuid: "dc2c886d-8241-8e5a-93d8-3301f50373a2"
     - stage: links
       stageUuid: "e65d3a74-f07b-85eb-b577-77f53726efe4"
     - stage: horo
-      stageUuid: "f57aed79-79e0-8b3b-873e-99194181e1dd"
+      stageUuid: "a7964783-34db-8ca1-b992-0b986aa23a40"
     - stage: seal
       stageUuid: "74143566-4348-8b45-a1d7-072cfcf61520"
     - stage: uuid
-      stageUuid: "d1aa7a72-8778-84b6-9749-091d1537b6dd"
+      stageUuid: "43afd0b1-3d39-81ae-a02d-79ced2ed15d5"
 version: 2
 ---
 # payroll-runs

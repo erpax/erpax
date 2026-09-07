@@ -2,11 +2,11 @@
 name: article
 description: "Use when reasoning about article — An article, such as a news article or piece of investigative report. Newspapers and magazines have articles of many different types and this is intended to cover them all. See also"
 atomPath: "vocabulary/article"
-coordinate: "vocabulary/article · 1/base · b80444fb"
-contentUuid: "cdda3f47-a4bf-55dd-aeb7-273d726aec17"
-diamondUuid: "e28a43f7-0577-88bf-91a4-f7475faeb42b"
-uuid: "b80444fb-da8c-8875-9fb8-3731c8920ced"
-horo: 1
+coordinate: "vocabulary/article · 2/share · 3f589378"
+contentUuid: "bd63be8a-68ca-5ff2-ad3f-8c26f592bc43"
+diamondUuid: "c08d896f-0e49-8b80-94d2-53c6da805a04"
+uuid: "3f589378-fa39-8c52-9bba-52c8c7f31184"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 80
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "09d90823-e8e5-8efb-8bfa-f9a47217fb0a"
+  computationUuid: "e7a5e7e7-bd08-865c-acaf-4fb9e29e0e7f"
   stages:
     - stage: path
       stageUuid: "003a2876-6646-839f-a039-04c1fd30c578"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ce588149-31d6-85da-afd1-d06234ee90df"
     - stage: horo
-      stageUuid: "79f5f5cd-bcba-8c9c-ae76-bf5d382b18da"
+      stageUuid: "00d73887-7444-8b6f-93d2-c950b7de411f"
     - stage: seal
-      stageUuid: "445f266a-b9d2-82ee-88a9-0ec197474695"
+      stageUuid: "5ef3f67a-403f-8265-add1-b051467839dc"
     - stage: uuid
-      stageUuid: "042ea152-172e-8642-bf6f-42e71e74a4cf"
+      stageUuid: "0dfc4501-42d1-8881-965c-e00f86750d2c"
 version: 2
 ---
 # article

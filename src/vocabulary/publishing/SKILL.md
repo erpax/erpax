@@ -2,11 +2,11 @@
 name: publishing
 description: "Use when reasoning about publishing — A schema.org component word, collided out of schema.org compounds — fused from publishingPrinciples (sti · collapse · merge)."
 atomPath: "vocabulary/publishing"
-coordinate: "vocabulary/publishing · 1/base · e8393e26"
-contentUuid: "ffd94f0d-f801-5227-8c96-c012d2c37b95"
-diamondUuid: "9e2463b1-5d38-83fa-8c01-95cddd31db83"
-uuid: "e8393e26-77c7-8391-98ce-161d12d2004e"
-horo: 1
+coordinate: "vocabulary/publishing · 5/round · 2c8a0d72"
+contentUuid: "1197d96d-a8e3-5a4d-984d-69538f8e4a16"
+diamondUuid: "b66ad6f9-0001-86f0-8b3a-d328d07cba88"
+uuid: "2c8a0d72-3a3b-865a-8041-d0f4d4257c71"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "63a84367-2a1a-8046-858c-048ab7848435"
+  computationUuid: "3735fbcb-ade4-8d89-946c-64869c040722"
   stages:
     - stage: path
       stageUuid: "183a9c8d-26cf-8a75-8dde-6bc07cb62ba9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "38af017e-0139-8d83-9ff0-af7b645376f8"
     - stage: horo
-      stageUuid: "8263e338-5656-8df6-a303-dc6a766eab63"
+      stageUuid: "249589f8-e378-88a8-9853-f7298b08f3d9"
     - stage: seal
-      stageUuid: "c92d4c32-6dd2-82ac-92ba-b4069d98259a"
+      stageUuid: "9afcd568-4be2-88f5-b2d3-d00dd1f7445d"
     - stage: uuid
-      stageUuid: "dc610fd4-8f34-8f08-9f1e-8e7c09d2a7e1"
+      stageUuid: "c5246269-0d67-88fd-9129-ea73ae4dc201"
 version: 2
 ---
 # publishing

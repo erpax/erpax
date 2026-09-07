@@ -2,11 +2,11 @@
 name: clinical
 description: "Use when reasoning about clinical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/clinical"
-coordinate: "vocabulary/clinical · 5/round · 6c0933f1"
-contentUuid: "f1d448b3-26b5-5c13-9fa4-091188de0132"
-diamondUuid: "26be1510-4b97-824e-addb-087b2f012145"
-uuid: "6c0933f1-a250-8de5-85b7-07ceda53c7f1"
-horo: 5
+coordinate: "vocabulary/clinical · 7/descent · 9a941cb9"
+contentUuid: "236b937c-3e53-5b14-9b8c-2a1adf7f3707"
+diamondUuid: "66a6db1a-0e05-8ac5-84fb-08229ff8eeda"
+uuid: "9a941cb9-9433-8cec-a6d8-d01ec2a93fca"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "874933a8-1d92-871e-90df-154a7bb1c8da"
+  computationUuid: "9ebcf0ad-8d28-8305-b4a2-014c8d81a0aa"
   stages:
     - stage: path
       stageUuid: "41fce1b1-da2e-88cc-86b5-d995263a528e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "756f2149-d348-8f31-ab6f-2dc1af4a404d"
     - stage: horo
-      stageUuid: "c2cc12fd-9eb4-8ee1-a739-21cfdc5fdc00"
+      stageUuid: "59460f4f-e522-80b7-a7a9-fb13ccc1e639"
     - stage: seal
-      stageUuid: "7fad3405-1e19-8fd7-83d4-79b2fadbd750"
+      stageUuid: "8fb5afe5-907c-8f6c-a513-3508f889d492"
     - stage: uuid
-      stageUuid: "eb20ec8c-2fbb-8748-ac6c-8cb648358d43"
+      stageUuid: "f25aca15-892b-8975-b709-c26f7994bdf4"
 version: 2
 ---
 # clinical

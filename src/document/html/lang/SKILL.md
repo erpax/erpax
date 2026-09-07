@@ -3,13 +3,13 @@ name: lang
 description: "Use when reasoning about lang — is what a screen reader consults to choose a voice. Get it wrong and Bulgarian is read aloud with English phonemes — not degraded, *unintelligible*."
 atomPath: "document/html/lang"
 coordinate: "document/html/lang · 2/share · 4c1a0511"
-contentUuid: "62032187-1426-51c0-a7ed-3ba695d7ffc1"
+contentUuid: "6687e401-22fe-5a5f-82b3-fc78699ce5f7"
 diamondUuid: "084eb7be-68ce-85f9-b1b3-415dcb39da4a"
 uuid: "4c1a0511-e595-867b-9b8e-3610be11a02c"
 horo: 2
 typography:
   partition: document
-  bondDegree: 9
+  bondDegree: 6
 standards: []
 bindings: []
 signatures:

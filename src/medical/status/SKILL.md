@@ -2,11 +2,11 @@
 name: status
 description: "Use when reasoning about status as a medical facet of [[medical]] — vocabulary pivot to @/status; nested not duplicated."
 atomPath: "medical/status"
-coordinate: "medical/status · 2/share · 6a32c037"
-contentUuid: "3a96663a-6aba-5ea2-8131-2b20f55175da"
-diamondUuid: "f1cfe5af-b0ad-8b01-98c9-7c5bb871a913"
-uuid: "6a32c037-7913-89cb-a822-a520085fe1b9"
-horo: 2
+coordinate: "medical/status · 1/base · 0f7b0b9c"
+contentUuid: "76908754-e614-5ecc-9f48-a9edc83c3358"
+diamondUuid: "b98964a7-3cef-8390-a4cc-dd9373b9c933"
+uuid: "0f7b0b9c-39c0-8d83-95f2-2ebf5f8e2d70"
+horo: 1
 typography:
   partition: medical
   bondDegree: 107
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0f4ecbad-6e6b-8401-a94a-2881b4a60281"
+  computationUuid: "56ff32c1-f055-87d7-b9c6-1235fd471965"
   stages:
     - stage: path
       stageUuid: "e8787448-4a6e-8124-89af-0adc4c38dd4c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "461adad3-0073-82a8-91d6-fcebc87982b9"
     - stage: horo
-      stageUuid: "9e2ce21e-803c-8b7f-9089-2a3a71e288a0"
+      stageUuid: "169c5d7c-5fdd-8165-ae5d-c3d1d4bbf368"
     - stage: seal
       stageUuid: "07ead5da-1339-88de-bd4a-bcb12457309e"
     - stage: uuid
-      stageUuid: "63c01217-8858-8d47-bfd9-7b4406cbe1f0"
+      stageUuid: "f2a20fac-810a-896a-abcd-8f561a4bffc0"
 version: 2
 ---
 # medical/status — medical facet

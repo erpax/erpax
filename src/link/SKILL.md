@@ -2,14 +2,14 @@
 name: link
 description: "Use when reasoning about link as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: link
-coordinate: "link · 2/share · 3733cbeb"
-contentUuid: "46560014-2764-5ba3-afdf-df277a1ca1ff"
-diamondUuid: "f6a3caf8-c64d-8ba8-9477-32bcf24243eb"
-uuid: "3733cbeb-bc69-8475-848a-cb405293d36e"
-horo: 2
+coordinate: "link · 5/round · e3b8a7c4"
+contentUuid: "3e8c32e7-c74e-5fb5-a4e6-6c94362267b7"
+diamondUuid: "1326f1ed-196b-8499-b8ca-0db89a700307"
+uuid: "e3b8a7c4-21de-8a6b-8db5-e86b0fc0c902"
+horo: 5
 typography:
   partition: link
-  bondDegree: 0
+  bondDegree: 157
 standards:
   - "3986 uniform-resource-identifier"
   - "BCP-47 language-tag locale-aware-routing"
@@ -19,13 +19,14 @@ standards:
   - "W3C HTML5 nav-element`"
   - W3C URL Living Standard
   - "W3C URL Living Standard`"
+  - "W3C-HTML5"
   - "WCAG-2.1 §2.4.4 link-purpose-in-context"
   - "WCAG-2.1 §2.4.9 link-purpose-link-only"
   - "schema.org — the type vocabulary, collided to single words"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "39e7efe2-31c7-8000-ac2a-bb2c5a3e4f02"
+  computationUuid: "26481939-1b56-8418-8c6c-06dbb3736f2b"
   stages:
     - stage: path
       stageUuid: "a744f835-8302-80cb-b2e4-3c768daf1cf6"
@@ -36,11 +37,11 @@ signatures:
     - stage: links
       stageUuid: "35e05a6f-9e23-80be-947e-1d031fa53299"
     - stage: horo
-      stageUuid: "242c8485-0366-8278-b015-b6bf8674aa7f"
+      stageUuid: "85d7a5e5-17e2-8224-914f-337c36616815"
     - stage: seal
-      stageUuid: "26fcade3-22e6-8878-bac4-b44fe1ce6cef"
+      stageUuid: "b41bcc44-afa2-84dd-a8f5-d9e84cbeb8d9"
     - stage: uuid
-      stageUuid: "69f4b975-108f-8430-bc8e-a63afcad271c"
+      stageUuid: "783095e4-22b1-824c-bca2-49a1acc14ec8"
 version: 2
 ---
 # link

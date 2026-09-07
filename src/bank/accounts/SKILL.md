@@ -2,14 +2,14 @@
 name: accounts
 description: "Use when managing bank account master data — IBAN (ISO-13616 mod-97 validated), BIC, account name, purpose (operating/payroll/tax/reserve/FX), GL cash account link, currency, country auto-derived from IBAN; separate from statement transactions. The cash-account master collection."
 atomPath: "bank/accounts"
-coordinate: "bank/accounts · 5/round · 10d00b45"
-contentUuid: "fa953fd6-5f21-51a0-b051-8ab74f212fc7"
-diamondUuid: "085d6508-f228-8cdd-aa3c-90d64106fdad"
-uuid: "10d00b45-c760-866d-ac2e-e16053a47cd1"
-horo: 5
+coordinate: "bank/accounts · 7/descent · 7007b5a4"
+contentUuid: "2491248f-9f4d-5151-b496-9acb72a9e121"
+diamondUuid: "8553ddf5-85dc-80ee-ad7b-6a4926844746"
+uuid: "7007b5a4-2b8b-895f-b239-d27f210c561f"
+horo: 7
 typography:
   partition: bank
-  bondDegree: 0
+  bondDegree: 44
 standards:
   - "EU-Intrastat-Reg-2019/2152"
   - "EU-Taxonomy-2020/852"
@@ -27,11 +27,12 @@ standards:
   - "ISO-9362"
   - "ISO-9362:2022 bic"
   - "ISO-9362:2022 bic`"
+  - "ISO/IEC-29119"
   - "SOX §404 internal-controls cash-management"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "d73a13d7-df6c-82e7-b390-8694997dffd2"
+  computationUuid: "b9bcbbb0-d268-83e0-9e8d-13b0c754758f"
   stages:
     - stage: path
       stageUuid: "60b94686-1fac-88a8-a05f-29a6cb9baafb"
@@ -42,11 +43,11 @@ signatures:
     - stage: links
       stageUuid: "1550b6cd-8401-8c89-ac53-91016a54c928"
     - stage: horo
-      stageUuid: "fa93657c-e71c-829e-85d2-7f376426d65c"
+      stageUuid: "9d02cb8b-5a28-8e8c-a644-9c1ab2f36b86"
     - stage: seal
-      stageUuid: "1920324e-3087-8b0e-8da1-cf127899a70b"
+      stageUuid: "fcf888b0-1283-88af-8dae-8956a4e2219d"
     - stage: uuid
-      stageUuid: "fc6aa136-33e4-866e-88f4-04af540d5d30"
+      stageUuid: "e53873e9-2e0e-8b79-a964-de7cb392d825"
 version: 2
 ---
 # bank-accounts

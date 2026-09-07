@@ -1,9 +1,9 @@
 ---
 name: discounts
-description: "Use when reasoning about discounts — \"2/10 Net 30\" — 2% off if paid within 10 days, otherwise the full balance at 30."
+description: "Use when reasoning about discounts — \\\"2/10 Net 30\\\" — 2% off if paid within 10 days, otherwise the full balance at 30."
 atomPath: "payable/discounts"
 coordinate: "payable/discounts · 1/base · c668cf43"
-contentUuid: "a38c16b5-0b16-5ca0-a01b-92074e8e5556"
+contentUuid: "b7010640-3a01-5e7f-bf30-e5b1022e479b"
 diamondUuid: "013d93ca-3fd6-8758-845e-82abcdb34e29"
 uuid: "c668cf43-67a6-889b-8503-70444512d76a"
 horo: 1

@@ -3,13 +3,13 @@ name: class
 description: "Use when reasoning about class — merges Tailwind class lists so a later utility wins over an earlier one — for the conditional shapes, for the conflict resolution. Six modules use it."
 atomPath: "ui/class"
 coordinate: "ui/class · 7/descent · 6690ace6"
-contentUuid: "50be6be3-d871-57dd-a483-7fbad70c2937"
+contentUuid: "04ac9eac-170a-5406-8a1d-93c69c90217e"
 diamondUuid: "417f0d3c-aed3-831d-8c65-8b026373e7aa"
 uuid: "6690ace6-5863-8a83-b38e-6e129ba28d09"
 horo: 7
 typography:
   partition: ui
-  bondDegree: 38
+  bondDegree: 35
 standards: []
 bindings: []
 signatures:

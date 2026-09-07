@@ -2,11 +2,11 @@
 name: mixtape
 description: "Use when reasoning about mixtape as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/mixtape"
-coordinate: "vocabulary/mixtape · 5/round · 39037872"
-contentUuid: "0586ea82-480c-5b30-af49-bac63298ed5b"
-diamondUuid: "e2bf072e-fa0b-8025-adcb-bf06d513db52"
-uuid: "39037872-caec-88ff-beb7-f7e70a388b34"
-horo: 5
+coordinate: "vocabulary/mixtape · 4/weave · 3c7398c9"
+contentUuid: "47571ef1-a515-5e90-93df-75295a014eab"
+diamondUuid: "ddcd19ad-4adb-86ae-8552-e5216016df00"
+uuid: "3c7398c9-813c-827c-aa13-45096f454f1d"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b1700af3-dd3f-8210-8e14-f16a9db4c3dd"
+  computationUuid: "8e7afa3b-e042-8c91-867d-b11572aca617"
   stages:
     - stage: path
       stageUuid: "31012f4e-645e-8500-86ff-8e64b9bc6042"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "22a1e0f4-f921-8ecc-aecc-099355f377a5"
     - stage: horo
-      stageUuid: "84baaabe-02f4-8e1d-aae6-28782623e36a"
+      stageUuid: "a0dbdb0f-4934-8f33-a630-73e7674cd7b7"
     - stage: seal
-      stageUuid: "6703456f-632e-8893-89fa-676a854371db"
+      stageUuid: "d6ca6938-fb35-8f20-9528-bc4fa976e5bb"
     - stage: uuid
-      stageUuid: "ba295563-d7f2-89e2-b3bb-8c082f923391"
+      stageUuid: "9bbf638f-0a0c-8e3f-b0fa-de153db28a55"
 version: 2
 ---
 # mixtape

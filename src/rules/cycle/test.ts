@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { importCycles, importsOf, assertNoNewCycles, fatalCycleUses } from './index'
+import { deferredTargetsOf, importCycles, importsOf, assertNoNewCycles, fatalCycleUses } from './index'
 
 const corpus = (files: Record<string, string>): string => {
   const cwd = mkdtempSync(join(tmpdir(), 'erpax-cycle-'))
@@ -243,5 +243,41 @@ describe('rules/cycle — an import loop decides initialisation order', () => {
     expect(() => assertNoNewCycles(cwd, 1)).not.toThrow()
     expect(() => assertNoNewCycles(cwd, 0)).toThrow(/import loop/)
     rmSync(cwd, { recursive: true, force: true })
+  })
+})
+
+describe('rules/cycle — a deferred import is not an initialisation edge', () => {
+  const tree = (files: Record<string, string>): string => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-defer-'))
+    for (const [rel, body] of Object.entries(files)) {
+      mkdirSync(join(root, 'src', rel, '..'), { recursive: true })
+      writeFileSync(join(root, 'src', rel), body)
+    }
+    return root
+  }
+
+  // This atom already says a FUNCTION BODY is deferred — "an initialiser that is not a function
+  // body is evaluated at load time". A dynamic import inside one is the same fact, same grammar.
+  it('an import() inside a function body is deferred; a TOP-LEVEL one is not', () => {
+    const root = tree({
+      'a/index.ts': "export const f = async () => (await import('@/b')).b\n",
+      'b/index.ts': 'export const b = 1\n',
+      'c/index.ts': "const eager = await import('@/b')\nexport const c = eager.b\n",
+    })
+    const deferred = deferredTargetsOf(join(root, 'src', 'a', 'index.ts'), root)
+    expect([...deferred].some((t) => t.includes('/b/'))).toBe(true)
+
+    // Top-level await runs DURING initialisation — it IS an edge, and calling it deferred would be
+    // the false negative this corpus fears more than a false positive.
+    const eager = deferredTargetsOf(join(root, 'src', 'c', 'index.ts'), root)
+    expect(eager.size).toBe(0)
+  })
+
+  it('a target ALSO imported statically is not deferred — the static edge decides', () => {
+    const root = tree({
+      'a/index.ts': "import { b } from '@/b'\nexport const f = async () => (await import('@/b')).b + b\n",
+      'b/index.ts': 'export const b = 1\n',
+    })
+    expect(deferredTargetsOf(join(root, 'src', 'a', 'index.ts'), root).size).toBe(0)
   })
 })

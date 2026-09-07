@@ -2,11 +2,11 @@
 name: oncologic
 description: "Use when reasoning about oncologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/oncologic"
-coordinate: "vocabulary/oncologic · 4/weave · 8b8f890d"
-contentUuid: "e4657916-0a61-518c-a477-b0750326a54c"
-diamondUuid: "9e2fd2ab-7c0f-8065-aeab-8684ad521eb4"
-uuid: "8b8f890d-9dae-8eaa-83aa-910c072850b8"
-horo: 4
+coordinate: "vocabulary/oncologic · 8/crest · af5e1082"
+contentUuid: "4e9d2443-d0b0-5f35-bb72-cbd242e1a36d"
+diamondUuid: "ddf292e7-4522-851f-bf9a-0e1f3718ef40"
+uuid: "af5e1082-8f11-8322-aa0a-03369fae0649"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a3c7c2b8-aa53-8a62-adf7-9e268376b95f"
+  computationUuid: "59843da8-ac7a-82cc-bc61-f84fbe94eb3a"
   stages:
     - stage: path
       stageUuid: "5a88f388-ebed-8fe3-a6ba-3da1c94fa112"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "69d1c994-517a-8f24-98e0-c079bb9523d4"
     - stage: horo
-      stageUuid: "17858353-ea65-857e-9325-d7f96ed59ffc"
+      stageUuid: "b3679784-8897-88bf-a547-9a4806e4f319"
     - stage: seal
-      stageUuid: "f338c244-3ea0-8f88-a140-5c43a5adc7dd"
+      stageUuid: "0dc34857-2177-8727-b08d-149742a4e6e3"
     - stage: uuid
-      stageUuid: "10c27e62-c348-8706-99c6-abeb85ac9531"
+      stageUuid: "9869d995-a954-8631-9bfd-fb028bc94e97"
 version: 2
 ---
 # oncologic

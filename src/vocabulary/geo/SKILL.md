@@ -2,10 +2,10 @@
 name: geo
 description: Use when reasoning about geo — The geo coordinates of the place.
 atomPath: "vocabulary/geo"
-coordinate: "vocabulary/geo · 8/crest · dc33a21b"
-contentUuid: "a01064ca-ec28-5761-a8f7-f49d2d2b6032"
-diamondUuid: "6895f5a4-9df4-8950-9a76-c9d3e2a2e311"
-uuid: "dc33a21b-f28d-8949-908a-8be9143a9b7f"
+coordinate: "vocabulary/geo · 8/crest · 0fcf2738"
+contentUuid: "4c3abc18-3279-505d-939c-5d59d29f78b4"
+diamondUuid: "81fbf7b7-29bd-8bba-a6ba-5c52e670e604"
+uuid: "0fcf2738-1250-875d-9bcd-035483243a9e"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "33f031a7-0fb6-8cf0-84dc-909c3a215467"
+  computationUuid: "8148db29-e544-8ce6-920e-09751732f5db"
   stages:
     - stage: path
       stageUuid: "199b5761-cb10-8696-85cc-23a83ebb1d1d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8ae8aacc-5b67-8040-ba95-e40a21596538"
     - stage: horo
-      stageUuid: "36898d19-e10b-823d-b0fc-15b54a42a66e"
+      stageUuid: "576da525-fc8e-83c2-871f-f694d7266ec5"
     - stage: seal
-      stageUuid: "f7c9c48f-303a-80f4-a624-18eaa9e59b42"
+      stageUuid: "b73451c2-c7f3-80bb-bbcd-c6a6e5240b67"
     - stage: uuid
-      stageUuid: "72f82a3d-cea5-8611-ad52-f2cb8c028d97"
+      stageUuid: "c351e1ee-fa96-85c3-97ff-2753adab2e65"
 version: 2
 ---
 # geo

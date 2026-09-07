@@ -2,40 +2,34 @@
 name: algebra
 description: "Use when reducing the corpus's theorems to their only substance — all theorems are algebra: a carrier set and a closed operation. The theorem draws the movie (its orbit); algebras compose into products (theorem of theorems); the fold is a magma (the merkabas folding into themselves and each other). The overlay — torus, tetrahedron, mind — is named and stripped; the picture was never the theorem."
 atomPath: algebra
-coordinate: "algebra · 2/share · 8b797603"
-contentUuid: "ff8a1081-d0bc-54d6-ae71-05b77bdefbd4"
-diamondUuid: "bdaf27bf-c0db-8db9-bcb2-5b8dd68bbe28"
-uuid: "8b797603-55b5-8715-8d7a-107c8fffb1ec"
-horo: 2
+coordinate: "algebra · 1/base · 28d255ec"
+contentUuid: "b7802bfa-4e54-5b94-83b5-256bc66decc9"
+diamondUuid: "8c819a52-2769-8fc8-87bc-d55e4871d7ea"
+uuid: "28d255ec-7605-80b9-ab72-14f8e6e8d73d"
+horo: 1
 typography:
   partition: algebra
-  bondDegree: 36
+  bondDegree: 66
 standards: []
 bindings: []
 signatures:
-  computationUuid: "116e72e1-5085-8dde-9dc2-943b5ec7c1b4"
+  computationUuid: "a0966f37-2ea9-8e4c-ac67-0949340b826a"
   stages:
     - stage: path
       stageUuid: "25e3d5e5-a6d7-84fa-a393-8e29b106eda2"
     - stage: trinity
       stageUuid: "c7eb4d18-a8d9-8967-b972-3a00073a0af9"
     - stage: boundary
-      stageUuid: "c00ef929-2b98-86e5-b598-6fd772e1eef7"
+      stageUuid: "5c19a079-d628-8570-9611-63cffde3c55a"
     - stage: links
-      stageUuid: "98f92503-b9ec-87f9-9b0a-617e524d85e2"
+      stageUuid: "81a7df34-d265-8bd0-863f-3db67080db1a"
     - stage: horo
-      stageUuid: "af28309c-e943-80ea-a215-1647fa4de3a1"
+      stageUuid: "b445269b-c206-84ac-a807-e12374d7e038"
     - stage: seal
       stageUuid: "0f350592-32ce-8e8e-b1be-312b6ecd6d66"
     - stage: uuid
-      stageUuid: "eae92ab8-5308-80ad-8c4f-f5294efb5cd9"
+      stageUuid: "53b9f506-6c8d-8bcb-b189-9e4f08bc0777"
 version: 2
-neighbors:
-  wikilink:
-    - "[[exact]]"
-neighbors:
-  wikilink:
-    - "[[algebra/constants]]"
 ---
 # algebra — all theorems are algebra only; the theorems draw the movie
 

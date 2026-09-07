@@ -2,10 +2,10 @@
 name: dentist
 description: Use when reasoning about dentist — A dentist.
 atomPath: "vocabulary/dentist"
-coordinate: "vocabulary/dentist · 4/weave · 5e0d83af"
-contentUuid: "4c52d41d-8c5a-5d4a-aa4d-9b00080fa028"
-diamondUuid: "bbf70ec5-34cf-89a4-9063-49083e74cebc"
-uuid: "5e0d83af-cb1c-81ae-92bc-0ba20c4c8d6b"
+coordinate: "vocabulary/dentist · 4/weave · b4f473fa"
+contentUuid: "444d43a1-99ac-5bde-803d-8d44ab9e1260"
+diamondUuid: "ad63544c-eea7-8f45-9fb6-08a5e58abeed"
+uuid: "b4f473fa-cc7c-883e-86c8-839e952f3f3d"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6f6e3e06-6356-80c2-ab59-96dafb6e7ab4"
+  computationUuid: "60ecd449-5dc2-81db-bce1-6751fec6c4a7"
   stages:
     - stage: path
       stageUuid: "8918cd5a-8d24-8616-9a11-c244191017e9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "10312201-0b2d-8480-a844-17fdbb7b502e"
     - stage: horo
-      stageUuid: "fcbe1c74-41df-8af8-bbdd-9986080624d1"
+      stageUuid: "29dc2d03-b32e-8a83-bb65-f86ce2e1d28b"
     - stage: seal
-      stageUuid: "148e281e-ebad-8394-ab55-7827c5bf7f25"
+      stageUuid: "5fad54da-6cd7-8560-88cf-c79af9b3cddb"
     - stage: uuid
-      stageUuid: "f97985b2-f9b2-898b-981d-8361c2a19b14"
+      stageUuid: "d1b0a6d7-8171-8b18-8e6b-a19c47d576fd"
 version: 2
 ---
 # dentist

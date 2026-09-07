@@ -2,8 +2,55 @@
 name: registry
 description: "Use when asking which fields collapse together — the declared map from collection field to its collapse hook, with the count derived from the registry rather than typed beside it. Promoted from a loose sibling; five importers use the alias, which survives the nesting unchanged. Run: tsx src/quantum/entanglement/registry/index.ts"
 atomPath: "quantum/entanglement/registry"
+coordinate: "quantum/entanglement/registry · 4/weave · ea2196e7"
+contentUuid: "dde432d1-33bd-5ad4-b440-65fd34c120d8"
+diamondUuid: "dd3743c0-1316-8671-a493-e157f1c24b53"
+uuid: "ea2196e7-6b91-84cb-ad60-3e86fa1ee042"
+horo: 4
+typography:
+  partition: quantum
+  bondDegree: 31
+standards: []
+bindings: []
+signatures:
+  computationUuid: "92df9368-7c3d-80ec-8ef0-aa25bded5055"
+  stages:
+    - stage: path
+      stageUuid: "29251b30-8bd4-8ff5-9bba-7612078ae1dd"
+    - stage: trinity
+      stageUuid: "8c3b5856-3fc5-8352-a191-d8908fd24da7"
+    - stage: boundary
+      stageUuid: "50d7950a-aa67-8d09-8bdd-df4901069b72"
+    - stage: links
+      stageUuid: "4d2ff503-640a-8c6e-afe5-84ababb08a12"
+    - stage: horo
+      stageUuid: "4ab9fcbc-48ad-85a9-9228-e9a5fd1211dc"
+    - stage: seal
+      stageUuid: "480dc7dd-f4a4-89f2-8547-5c789893ca8e"
+    - stage: uuid
+      stageUuid: "6191df73-558d-8d51-ab7a-87ffceddbb4c"
+quantum:
+  superposition:
+    - collapse
+    - entanglement
+    - law
+    - merge
+    - sti
+    - superposition
+  collapse:
+    - "Use when asking which fields collapse together — the declared map from collection field to its collapse hook, with the count derived from the registry rather than typed beside it. Promoted from a loose sibling; five importers use the alias, which survives the nesting unchanged. Run: tsx src/quantum/entanglement/registry/index.ts"
+    - "an entanglement is declared where it can be argued with, and everything about it that can be computed is computed — a count typed beside its own subject is a number nobody can re-derive."
+  seal:
+    sandbox: false
+    receipt: false
+    pathFollow: true
+    canonicalRecord: true
+    analogResults: false
+    speechResults: false
+    computationUuid: "92df9368-7c3d-80ec-8ef0-aa25bded5055"
+    contentUuid: "dde432d1-33bd-5ad4-b440-65fd34c120d8"
+version: 2
 ---
-
 # registry — which fields collapse together, declared where it can be argued with
 
 Entanglement in this corpus is not a metaphor about physics — it is a **declared** statement that two fields cannot be resolved independently: change one and the other's collapse hook must run. This atom is that declaration, held in one place so it can be read, counted and disputed.
@@ -31,3 +78,5 @@ All four came back clean: no relative imports inside it, no path probes, no disp
 - **ISO/IEC 25010:2023 §5.6** — modularity: one declaration, one addressable home.
 
 Composes: [[quantum]]/entanglement · [[rules]]/unraised · [[rules]]/audience · [[law]].
+
+<sub>content-uuid `dde432d1-33bd-5ad4-b440-65fd34c120d8` · account `quantum/entanglement/registry` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

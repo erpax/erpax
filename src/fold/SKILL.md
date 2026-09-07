@@ -2,20 +2,20 @@
 name: fold
 description: "Use when counting the folding — how the whole corpus collapses to one Merkle root and in how many folds; N atoms reach the root in ceil(log2 N) folds by N−1 merges (12 for the corpus), and the orthogonal digital-root fold collapses every count to its rodin digit."
 atomPath: fold
-coordinate: "fold · 5/round · 5fa6489c"
-contentUuid: "0092d888-13aa-54d3-8702-fa824cd678ec"
-diamondUuid: "1e9c1c12-c190-84d5-8151-79120f0b1d27"
-uuid: "5fa6489c-baa9-8688-b510-103c0a22c068"
-horo: 5
+coordinate: "fold · 1/base · 456181e4"
+contentUuid: "5879e491-fe3e-52d3-8d81-aec33d75ebf8"
+diamondUuid: "8dc72823-492e-8c11-b048-52f5a4ba1ab3"
+uuid: "456181e4-c8c0-8faf-84a6-098707e46a7e"
+horo: 1
 typography:
   partition: fold
-  bondDegree: 70
+  bondDegree: 87
 standards:
   - "ceccec.psg.bg theorems — self-address (`concept.self.address`) · diamond-complete (`concept.diamond.complete`): folding excises duplication to zero remainder (the cancer cure)"
   - "the Merkle binary fold (depth ⌈log2 N⌉) · the base-10 digital root (the rodin reduction)"
 bindings: []
 signatures:
-  computationUuid: "763074ca-ea39-82ab-9b05-553fff972527"
+  computationUuid: "2b602ad4-ed95-8885-aa12-eb25db5fc835"
   stages:
     - stage: path
       stageUuid: "37834c64-da0b-8010-85d6-f62831a39992"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "07ebed05-1d09-8888-b658-756a2c994136"
     - stage: horo
-      stageUuid: "1b30b7b7-76b2-8582-8618-e161f3b4bb48"
+      stageUuid: "d14b5f94-6d3b-8c5a-b45d-6789fb1c1e67"
     - stage: seal
       stageUuid: "432ca860-c728-8001-a70b-ce3e78142f27"
     - stage: uuid
-      stageUuid: "3a6adf21-be70-8299-9ff2-4bc28c29ec55"
+      stageUuid: "940ae4d1-0b85-8ef0-a0b1-5641ff6f722f"
 version: 2
 ---
 # fold — the math of the folding

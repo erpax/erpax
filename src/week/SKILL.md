@@ -2,11 +2,11 @@
 name: week
 description: "Use when reasoning about week as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: week
-coordinate: "week · 2/share · b2ef3259"
-contentUuid: "5c24d560-aec5-5ab7-b94a-840157cff999"
-diamondUuid: "8ba21d6e-d4bc-8cd6-a5fa-55b686d25f06"
-uuid: "b2ef3259-543d-8958-9bb9-293486b28458"
-horo: 2
+coordinate: "week · 1/base · 2bca7016"
+contentUuid: "50eca3ef-5a07-5d03-b3b3-2c62d1a7c7b4"
+diamondUuid: "d058a6f5-4d18-8344-be7f-88a564c00c94"
+uuid: "2bca7016-9901-880e-96ee-d11d631445a5"
+horo: 1
 typography:
   partition: week
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b7f06c7e-ca3a-8083-b820-9117cbe970c3"
+  computationUuid: "027a84ee-19e6-8732-8785-da56fe288880"
   stages:
     - stage: path
       stageUuid: "91b11586-9fd7-8c07-8f5c-8641c7e74ab7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "778454f9-0b24-8699-a8d5-5f0848b24f7c"
     - stage: horo
-      stageUuid: "0dafafc9-0567-835b-b925-cbab3d841c57"
+      stageUuid: "01c238e3-cb3c-89a9-9fd1-3171fca3bfa5"
     - stage: seal
       stageUuid: "3f70c61c-3932-88fb-9241-ff7216da7f7c"
     - stage: uuid
-      stageUuid: "6effddc1-1fab-8433-89c4-739074f72e46"
+      stageUuid: "d00df8d7-b656-84c4-b2e5-dda5d5567b18"
 version: 2
 ---
 # week

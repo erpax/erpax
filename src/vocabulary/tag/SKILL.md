@@ -1,21 +1,21 @@
 ---
 name: tag
-description: "Use when modelling variation, categorization, or cross-domain links in erpax WITHOUT new collections or deep nesting — the polymorphic multi-context tag system (acts_as_taggable_on port). One collection presented infinitely by filtering (context, tag); tag/tagging collections, the taggable plugin, tagged_with→where mapping, tag clouds, ownership, relatedness, and tag-lists that link multiverses. \"Anything is taggable.\""
+description: "Use when modelling variation, categorization, or cross-domain links in erpax WITHOUT new collections or deep nesting — the polymorphic multi-context tag system (acts_as_taggable_on port). One collection presented infinitely by filtering (context, tag); tag/tagging collections, the taggable plugin, tagged_with→where mapping, tag clouds, ownership, relatedness, and tag-lists that link multiverses. \\\\\\\"Anything is taggable.\\\\\\\""
 atomPath: "vocabulary/tag"
-coordinate: "vocabulary/tag · 2/share · b061f296"
-contentUuid: "e1d546fa-5758-5f64-94f7-09cef0aad7a7"
-diamondUuid: "d8430e82-6e13-8441-b90a-1c4b25c2caa2"
-uuid: "b061f296-7ee9-854e-a4f9-cfe1eafadee3"
-horo: 2
+coordinate: "vocabulary/tag · 1/base · 6c730e33"
+contentUuid: "0e48d11b-f0ae-578c-9d59-269a83d73559"
+diamondUuid: "13c8620f-7f50-865d-bafc-a580bb678189"
+uuid: "6c730e33-8457-89fe-a2ed-3706e339ef87"
+horo: 1
 typography:
   partition: vocabulary
-  bondDegree: 49
+  bondDegree: 52
 standards:
   - "EU-VAT-Implementing-Reg-282/2011"
   - "RFC-4122"
 bindings: []
 signatures:
-  computationUuid: "c0d54941-b659-812c-bc34-05add4cd9e65"
+  computationUuid: "bd2bf3bd-2308-8e0b-9505-b87172196e31"
   stages:
     - stage: path
       stageUuid: "ae1f1de6-fc42-8529-99e7-e5273728afea"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "87de044c-6949-85a4-8daa-c023743a6478"
     - stage: horo
-      stageUuid: "037e43d2-b380-8332-ad77-dca141ff5211"
+      stageUuid: "c348216f-d12a-8b6e-a387-768f3b6ba99e"
     - stage: seal
-      stageUuid: "137aae1f-e00e-8361-be96-0edb480a7354"
+      stageUuid: "d2bb32f0-091e-8964-9b23-532aab827c04"
     - stage: uuid
-      stageUuid: "99671edc-44e4-8f23-8ec1-ac7ecd5ad2de"
+      stageUuid: "bc40a4e1-ef71-8802-8712-3a8da4672b9b"
 version: 2
 ---
 # tags — anything is taggable (less collections, more features)

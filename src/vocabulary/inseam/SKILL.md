@@ -2,11 +2,11 @@
 name: inseam
 description: "Use when reasoning about inseam as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/inseam"
-coordinate: "vocabulary/inseam · 5/round · 1df07f85"
-contentUuid: "89cd434d-3ac3-54f0-b915-5da5fba1fca1"
-diamondUuid: "19a7de21-32f8-81c7-829f-304a628a6025"
-uuid: "1df07f85-1270-8c17-a5df-f589eee8e704"
-horo: 5
+coordinate: "vocabulary/inseam · 8/crest · 0c582b6c"
+contentUuid: "10c7440c-dc48-54c5-9f38-3fd2666d702a"
+diamondUuid: "cc956188-fa18-88e7-bfb6-b039cf86b738"
+uuid: "0c582b6c-ef0a-858b-b6c9-f4aae0567ba1"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b0860bc8-a4cc-8a08-8adf-9b699012222e"
+  computationUuid: "971db866-fb13-82dc-bde3-62b097103d68"
   stages:
     - stage: path
       stageUuid: "9db7770b-5f69-821a-af8d-cd865ee09b33"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b2a691e8-a9d9-81ce-a0e2-b8280a022f14"
     - stage: horo
-      stageUuid: "834277e4-b63b-87bb-898e-c311869124e8"
+      stageUuid: "ef011185-b766-8d37-ba16-0595c8bd0377"
     - stage: seal
-      stageUuid: "db5947e4-5bfc-8fd2-9f18-b2e9ab01a0b7"
+      stageUuid: "7288ad7b-95d7-8e9d-9762-6a0cff13fa3e"
     - stage: uuid
-      stageUuid: "228dd23e-b695-8fd0-83e9-931a94fa4a10"
+      stageUuid: "0bbdf69e-a180-84ff-965e-2df6e33a8792"
 version: 2
 ---
 # inseam

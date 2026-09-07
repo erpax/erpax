@@ -2,11 +2,11 @@
 name: expected
 description: "Use when reasoning about expected as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/expected"
-coordinate: "vocabulary/expected · 4/weave · 57dd4482"
-contentUuid: "b15ad4a9-d9a8-55f8-8458-f1d59b23737d"
-diamondUuid: "1f200005-4819-8e78-8253-e8c196e52292"
-uuid: "57dd4482-a1ea-8ee4-ae7c-1025cada2634"
-horo: 4
+coordinate: "vocabulary/expected · 1/base · 02e745d4"
+contentUuid: "f251a518-dbdf-5312-a2b8-37e8f213c2cf"
+diamondUuid: "de3eb730-1fc8-8438-933e-b041570b6a9a"
+uuid: "02e745d4-dbfe-8ef1-a912-0a9fd1f6ce19"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "dac8eb91-f03a-8b88-8517-380704b93c77"
+  computationUuid: "17906610-571f-8e0a-8492-75c6d7b4d796"
   stages:
     - stage: path
       stageUuid: "69ba5147-ebe0-8c6c-960f-88d55c39c693"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3197f5a0-e725-8599-ae99-e450cf62f8dc"
     - stage: horo
-      stageUuid: "f3d15600-4940-8bca-8858-ad480d8bcf9a"
+      stageUuid: "3c53b1e5-0a23-88ca-bb1d-0634da969c52"
     - stage: seal
-      stageUuid: "b82be86a-5211-8a3e-88fa-09bf47ecd6cb"
+      stageUuid: "4c0c15d8-13f6-8a4d-b2d2-afb4d6876b09"
     - stage: uuid
-      stageUuid: "8f426d39-a555-8705-bfee-7125e3bb287b"
+      stageUuid: "05de8503-7ba6-814c-bf9c-80385cc857f2"
 version: 2
 ---
 # expected

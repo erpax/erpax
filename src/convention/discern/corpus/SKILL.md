@@ -1,9 +1,37 @@
 ---
 name: corpus
-description: "Use to see every security claim erpax makes as one number — passing verdicts over total public claims across the registered claim-bearing atoms. The evidence PROSE is declared beside each atom's claims and the OUTCOME comes from actually running the named suites, because neither half alone is evidence: a declaration with no run is a tautology, a green run with no declaration says nothing about what was tested. Fails closed on a failing verdict; reports the ratio without ratcheting it, since a compass is a legitimately open surface with a named owner."
+description: "Use when reasoning about corpus — Use to see every security claim erpax makes as one number — passing verdicts over total public claims across the registered claim-bearing atoms. The evidence PROSE is declared beside each atom's claims and the OUTCOME comes from actually running the named suites, because neither half alone is evidence: a declaration with no run is a tautology, a green run with no declaration says nothing about what was tested. Fails closed on a failing verdict; reports the ratio without ratcheting it, since a compass is a legitimately open surface with a named owner."
 atomPath: "convention/discern/corpus"
+coordinate: "convention/discern/corpus · 7/descent · 275991f3"
+contentUuid: "65e74b70-2dbb-56d2-b8b1-0c6f6c0141d4"
+diamondUuid: "4cc113e1-689d-8986-af1f-95b49f08a4a5"
+uuid: "275991f3-fe3a-87a0-bd7a-218268807346"
+horo: 7
+typography:
+  partition: convention
+  bondDegree: 15
+standards:
+  - "ISO/IEC 25010:2023 §5.5 — testability: a claim is measured or it is not made"
+bindings: []
+signatures:
+  computationUuid: "be3eced8-bf88-81da-8960-e8e880fb3560"
+  stages:
+    - stage: path
+      stageUuid: "10228e1a-fc74-8120-aa25-b9a0ecfd4f25"
+    - stage: trinity
+      stageUuid: "a54b97bd-0006-88e0-b1e2-cbf221dc873e"
+    - stage: boundary
+      stageUuid: "ae75033c-80c7-89f6-965e-743ccd848cc9"
+    - stage: links
+      stageUuid: "8be8a083-5acd-856b-98c2-8968e03ff446"
+    - stage: horo
+      stageUuid: "b2d9ebe3-8414-81fa-b7e5-2f311649e8b2"
+    - stage: seal
+      stageUuid: "923d4526-dc40-8266-bcf1-ffbe2565cece"
+    - stage: uuid
+      stageUuid: "4add347a-9d0c-84ca-b7fb-c07a2d42ab9f"
+version: 2
 ---
-
 # convention/discern/corpus — every security claim, as one number
 
 [[convention]]/discern types a single atom's claims. This runs the same instrument over **all of them at once** — and that is the form the metric has to take to matter. A per-atom ratio is a local opinion; `passing verdicts / total public claims` across the corpus is a figure a reviewer can hold the project to.

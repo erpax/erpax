@@ -2,19 +2,19 @@
 name: tamper
 description: "Use when reasoning about integrity attacks on the content-uuid store — the cost to forge, collide, or rewrite a record undetected, and why all-directions uuid wiring drives that cost toward infinity."
 atomPath: tamper
-coordinate: "tamper · 1/base · c5a5ee9f"
-contentUuid: "e1722b0e-8e66-55fc-b71b-b29f4af96d6f"
-diamondUuid: "3133fbdc-f218-8180-97a2-d8494123d16e"
-uuid: "c5a5ee9f-154e-8470-80ed-a377e107424d"
-horo: 1
+coordinate: "tamper · 2/share · 63bc26f4"
+contentUuid: "b305885a-30a9-56d7-968a-44f8b0d8998e"
+diamondUuid: "c92633d6-21d1-80c1-ab5c-c2a3d68e3819"
+uuid: "63bc26f4-9b9d-8d4f-800c-45f49ab4d68f"
+horo: 2
 typography:
   partition: tamper
-  bondDegree: 276
+  bondDegree: 268
 standards:
   - "W3C-PROV-O"
 bindings: []
 signatures:
-  computationUuid: "08b3db85-2af2-8834-b79c-239a56c90f86"
+  computationUuid: "e6532d46-89c5-8d40-bef7-c47572d9f553"
   stages:
     - stage: path
       stageUuid: "209e4da2-c24c-8bb0-a60e-333f200fd98f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6f6577e0-7864-8ed4-8621-c62993a507bd"
     - stage: horo
-      stageUuid: "9d27adad-a381-8d41-9de7-fbd4a04fe6c7"
+      stageUuid: "a0795a79-f3fd-878e-9d76-10b42150c68c"
     - stage: seal
       stageUuid: "dff50e26-3db6-811f-b6d5-89bbc3b24b3e"
     - stage: uuid
-      stageUuid: "ea66c965-16f5-8267-b8bb-e33dcf9bb409"
+      stageUuid: "ad602009-28f6-8f46-be45-4462b38403b7"
 version: 2
 ---
 # tamper — integrity, not confidentiality

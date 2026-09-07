@@ -2,10 +2,10 @@
 name: function
 description: "Use when reasoning about function as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/function"
-coordinate: "vocabulary/function · 5/round · b79cfdae"
-contentUuid: "b8354c6c-7b06-5ab8-acf4-90da49b0c428"
-diamondUuid: "bd35f0bb-266b-8fd8-bdd2-90042c8f9d72"
-uuid: "b79cfdae-075a-86cd-9fbc-548aaab5cdcc"
+coordinate: "vocabulary/function · 5/round · 900635e8"
+contentUuid: "007fd5bb-52d5-5c28-9ee2-ddebc5771db6"
+diamondUuid: "3321da8d-df46-8713-8f4e-0f0c68806a4c"
+uuid: "900635e8-1b21-8195-a956-aa63527cb29a"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "59a0a411-9037-83bb-bd56-560503e64931"
+  computationUuid: "3ae3f903-f992-8f8a-9a0e-99f242a7d76c"
   stages:
     - stage: path
       stageUuid: "c6afff57-29fc-8093-ba9a-2f69e5f8856d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9613b83d-8a56-89c4-a58a-0416d82d828b"
     - stage: horo
-      stageUuid: "9ac7912b-96a5-8cbb-9303-18e2c372983e"
+      stageUuid: "cd0f0953-afbb-8ebf-b4a1-535a7f66bbb5"
     - stage: seal
-      stageUuid: "4482af92-77a4-8cf5-856b-2ff140b2bfe3"
+      stageUuid: "01a4b6a7-beb6-8592-b620-fe68245a8e66"
     - stage: uuid
-      stageUuid: "06f24415-477a-846e-8879-9de4e15944ed"
+      stageUuid: "6fbf6676-5dd4-884f-adc8-e29d05ed4bbd"
 version: 2
 ---
 # function

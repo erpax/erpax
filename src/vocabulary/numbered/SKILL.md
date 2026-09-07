@@ -2,10 +2,10 @@
 name: numbered
 description: "Use when reasoning about numbered as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/numbered"
-coordinate: "vocabulary/numbered · 4/weave · b1a70cad"
-contentUuid: "f3801b17-4261-5579-9bfb-616ed18196d2"
-diamondUuid: "88af4af8-bc0f-8c6d-a0d1-f21fa6e1db23"
-uuid: "b1a70cad-9866-885a-9cf4-d8b33d6976aa"
+coordinate: "vocabulary/numbered · 4/weave · 448080ca"
+contentUuid: "5cdfe801-0d48-5153-a984-834e45df618c"
+diamondUuid: "549bdf31-b1a9-8d29-9cfd-b73e86b936da"
+uuid: "448080ca-ba62-8140-b7cc-8f94c71ac28c"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5f450cf4-39f5-8615-8ddc-efb6e76c7e3a"
+  computationUuid: "ebcf9341-81c4-8bdd-8e51-574ace8b8fb8"
   stages:
     - stage: path
       stageUuid: "19815b37-f7d5-8630-9c78-16458761523b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7723b539-8aeb-8a64-a03d-59187f54fb0b"
     - stage: horo
-      stageUuid: "d9e4b05e-3ebe-8bdc-8a13-d057b6edfb05"
+      stageUuid: "9bc15fd5-8f1c-8147-9e5c-6a4d6e73d007"
     - stage: seal
-      stageUuid: "ab68889b-1ccd-806a-93cf-ee62479deabf"
+      stageUuid: "82a18837-9745-8c7f-a199-64811bebf968"
     - stage: uuid
-      stageUuid: "01c86b02-24d8-8d92-ac2b-b681d27aeda3"
+      stageUuid: "3efd9658-22eb-87cb-9e90-cf75e365861d"
 version: 2
 ---
 # numbered

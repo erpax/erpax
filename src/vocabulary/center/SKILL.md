@@ -2,10 +2,10 @@
 name: center
 description: "Use when reasoning about center as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/center"
-coordinate: "vocabulary/center · 1/base · 06e42592"
-contentUuid: "5e8bf9e3-bc0e-5463-a171-4cabd238a69e"
-diamondUuid: "3758c83e-915e-8769-a7b3-62781efa76b0"
-uuid: "06e42592-c650-8d8e-bde3-a355a8a8103a"
+coordinate: "vocabulary/center · 1/base · 74720bd1"
+contentUuid: "8e221957-228c-5fb9-bedb-1380c5701e81"
+diamondUuid: "2a1b678d-d9da-8966-9d47-2cc7848bc944"
+uuid: "74720bd1-9cfe-864c-8e9a-6cf597c11897"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a78cf471-eb69-84a3-8dd6-60be80055b95"
+  computationUuid: "7bcec8fd-f1f9-8263-a5a1-f0dfd4773ae2"
   stages:
     - stage: path
       stageUuid: "52c085e8-58be-8306-b2a2-0fcee8102559"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "59e1110d-4201-8480-b3c8-db4f4890da12"
     - stage: horo
-      stageUuid: "e5f57da6-d258-8409-89d0-ec4a82a8ff44"
+      stageUuid: "b773744a-5548-8459-930a-b0a1d8d06875"
     - stage: seal
-      stageUuid: "dd53fe08-30b8-8e0f-9cf5-87b7f3c0298f"
+      stageUuid: "759942b7-1c81-83bf-88d3-9be2fe5c2536"
     - stage: uuid
-      stageUuid: "bc6f6065-dbc0-862b-b6dc-a2b969af2b81"
+      stageUuid: "548f43ef-6793-8bf5-ae66-7c88e3e20bbb"
 version: 2
 ---
 # center

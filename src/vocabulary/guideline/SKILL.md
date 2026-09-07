@@ -2,10 +2,10 @@
 name: guideline
 description: Use when reasoning about guideline — A medical guideline related to this entity.
 atomPath: "vocabulary/guideline"
-coordinate: "vocabulary/guideline · 2/share · cfb0bd2f"
-contentUuid: "6df9d6e0-bf0e-5905-af27-bdbc053ab29a"
-diamondUuid: "b2c61c19-356b-8f48-a962-3a3c32a50861"
-uuid: "cfb0bd2f-f8d8-8194-8a36-4f69662e9a87"
+coordinate: "vocabulary/guideline · 2/share · ba139d0b"
+contentUuid: "f5ce9fdc-78ea-511f-bc37-64988c509933"
+diamondUuid: "61b3dcc5-08ac-81a0-9707-97b26529595c"
+uuid: "ba139d0b-8b96-8204-96c6-728a76fd9175"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cf43a408-7025-8084-a7e6-6ed1f663d924"
+  computationUuid: "da3ce08c-e9c7-8952-8ea2-e92600cd4870"
   stages:
     - stage: path
       stageUuid: "5a0eb423-27a5-8057-b7ca-de9d0c5b0d8e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "623f2a8d-271d-8f5b-98d9-e8415b2e485e"
     - stage: horo
-      stageUuid: "b11ab66d-6e56-8467-a942-7f9bc918b2fb"
+      stageUuid: "84837f6e-6ee2-8d22-b801-534b3e3a066e"
     - stage: seal
-      stageUuid: "68dad567-2c6a-88f8-a9c7-2add875ffe77"
+      stageUuid: "ff410424-ca0f-8d65-9089-6694a0b91707"
     - stage: uuid
-      stageUuid: "33f4bcb5-1978-8239-a1c8-b6ac63cda3f5"
+      stageUuid: "1adefa4f-5c8c-8885-b12b-930a385f080b"
 version: 2
 ---
 # guideline

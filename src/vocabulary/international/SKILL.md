@@ -2,11 +2,11 @@
 name: international
 description: "Use when reasoning about international as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/international"
-coordinate: "vocabulary/international · 7/descent · 4a32d664"
-contentUuid: "ab94b312-5e7e-5131-9891-bc36e0bb4d3b"
-diamondUuid: "3271ea21-5651-800e-ada8-470a014fd326"
-uuid: "4a32d664-6860-8976-a18f-5ca5f9ac148f"
-horo: 7
+coordinate: "vocabulary/international · 2/share · 28a8f125"
+contentUuid: "75d2b78c-2a16-5753-8ba8-a7d5bfa96e09"
+diamondUuid: "676a1e16-b8cc-8e74-82b9-5f9e1459779e"
+uuid: "28a8f125-0e80-8f67-97ab-54445e40159a"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "889602de-e9c0-80f0-8c7a-51a26f63901f"
+  computationUuid: "332a6b5c-58b7-81b6-8a39-a17a012f3ec6"
   stages:
     - stage: path
       stageUuid: "254904f8-4c3a-85b8-9d04-663719652cab"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "180b53f5-7198-89b1-a90f-6a641318299f"
     - stage: horo
-      stageUuid: "30135709-aefe-892f-8da2-af850aa59111"
+      stageUuid: "946a889e-e279-8803-a62a-eedc616eb011"
     - stage: seal
-      stageUuid: "d2fcd38e-0e20-8eb9-ab64-22dafd57f6d6"
+      stageUuid: "60bd9ef4-fa37-882c-87f1-5568cf0bc382"
     - stage: uuid
-      stageUuid: "11ad54b5-873b-8aeb-93ed-9b023152d37d"
+      stageUuid: "3597df92-03ea-8ddb-a53f-f1085b6b8558"
 version: 2
 ---
 # international

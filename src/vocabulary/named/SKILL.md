@@ -2,11 +2,11 @@
 name: named
 description: "Use when reasoning about named as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/named"
-coordinate: "vocabulary/named · 8/crest · e74546b4"
-contentUuid: "d884c107-ef89-5993-936d-b305980486d4"
-diamondUuid: "47ff8f16-4b2c-83f6-8a4b-adaa73f5f97e"
-uuid: "e74546b4-53a3-8827-aa04-bd57a4f57c1d"
-horo: 8
+coordinate: "vocabulary/named · 5/round · 11aea699"
+contentUuid: "89a5e93f-e924-5d08-a01d-4b44eedc28ec"
+diamondUuid: "35154198-a3cf-8e3e-9e1a-d09c6ec262ae"
+uuid: "11aea699-7102-89fc-be3a-7628ebae2349"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 36
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a0a311a8-e034-87ed-8722-52512e5ec0b1"
+  computationUuid: "9eebd117-8017-846e-926f-3fbca78495d4"
   stages:
     - stage: path
       stageUuid: "635ecd7f-4a3a-8b3d-8dc0-78dfb8c4cf2f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "34004b74-c23c-804e-88d0-5cb151fc926a"
     - stage: horo
-      stageUuid: "35bdf8bd-e56d-8ae1-ade2-abeb259b33e9"
+      stageUuid: "c69a74a7-8506-8caa-97cc-454b94fed25b"
     - stage: seal
-      stageUuid: "fbb4996e-3c80-834d-a335-c376838c0f26"
+      stageUuid: "a6b72159-341d-8a2d-9a65-7db231eea71b"
     - stage: uuid
-      stageUuid: "98caab50-2da3-8e6f-9b9d-3da2291a1233"
+      stageUuid: "4eeccdf4-61be-81e9-92a7-b9d44866fc76"
 version: 2
 ---
 # named

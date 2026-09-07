@@ -2,14 +2,14 @@
 name: element
 description: Use when reasoning about an identity element.
 atomPath: "identity/element"
-coordinate: "identity/element · 9/unity · 7c1b51ee"
-contentUuid: "177e50e5-5866-53fa-8808-7e8d96593cbb"
-diamondUuid: "85232c91-0c90-81b6-95aa-b75b65d72bda"
-uuid: "7c1b51ee-294d-8a0a-ba17-e44b12c5fefc"
+coordinate: "identity/element · 9/unity · 21f94f0f"
+contentUuid: "c371d751-33d9-59fb-baf8-81b6a18e450f"
+diamondUuid: "1a58a060-63e3-85e0-af7f-6afbe58bfe9b"
+uuid: "21f94f0f-73a6-8643-9cce-6e1369fab62d"
 horo: 9
 typography:
   partition: identity
-  bondDegree: 74
+  bondDegree: 80
 standards:
   - "ISO/IEC 25010:2023 §5.4 reusability — identity by abstraction"
   - "NIST FIPS 180-4 SHA-256 (uuid hash)"
@@ -17,7 +17,7 @@ standards:
   - RFC 9562 §5.8 uuidv8 (uuid construction)
 bindings: []
 signatures:
-  computationUuid: "a23ea82f-f02a-886b-8e7c-96dfc58ba008"
+  computationUuid: "627293c9-ac23-8223-b4d2-d85255bde41c"
   stages:
     - stage: path
       stageUuid: "ccdffa95-e613-82e5-804e-cbabefd2d97d"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "b3e0d740-15ae-87de-a5cc-3b026971f554"
     - stage: horo
-      stageUuid: "7d2c9c0d-d716-86a8-a548-17a0505ce042"
+      stageUuid: "1b8f4a25-bb5b-8122-a098-82498fb2a654"
     - stage: seal
       stageUuid: "a364741e-3988-8e92-a70a-a1c4b29a8982"
     - stage: uuid
-      stageUuid: "6762c9be-7e3c-8ecb-80b7-fffb554330f7"
+      stageUuid: "010dd91e-9cac-81bb-ab9f-cabcd0c2c082"
 version: 2
 ---
 # identity/element

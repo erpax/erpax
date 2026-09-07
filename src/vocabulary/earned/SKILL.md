@@ -2,11 +2,11 @@
 name: earned
 description: "Use when reasoning about earned — A schema.org component word, collided out of schema.org compounds — fused from membershipPointsEarned (sti · collapse · merge)."
 atomPath: "vocabulary/earned"
-coordinate: "vocabulary/earned · 2/share · 13459371"
-contentUuid: "91d3d7b7-58b1-52ae-87d0-2b32c878dbc8"
-diamondUuid: "2687f99a-8986-8268-b649-a6d80bd70455"
-uuid: "13459371-bc7f-88af-a5f1-e17986042bce"
-horo: 2
+coordinate: "vocabulary/earned · 7/descent · 9f1b651d"
+contentUuid: "8c947e38-59dd-5efe-af73-3a981f2be21e"
+diamondUuid: "e3a6feaf-3bba-8045-969e-00e374e7bc62"
+uuid: "9f1b651d-70e1-8466-8c95-0d97a4726036"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0105d630-ad7c-84f5-b426-3a0c634b300f"
+  computationUuid: "c4d65f32-ebec-82be-951f-94d3727c749b"
   stages:
     - stage: path
       stageUuid: "a33bd7ed-bb66-86a7-863a-9b1b9c00daab"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7ded780e-2112-880f-bf7a-536c2d92ea20"
     - stage: horo
-      stageUuid: "70060ddc-cb2b-8890-bcde-301245d2a147"
+      stageUuid: "87ac3985-44c7-8568-9653-3fe73fdf0a27"
     - stage: seal
-      stageUuid: "3030c7f4-7873-8ad4-92ac-29fdc5d6dae5"
+      stageUuid: "e85c14df-4390-82dd-bdd3-322a433972f1"
     - stage: uuid
-      stageUuid: "9ab3d5d9-1c91-8a13-929f-1f708d252664"
+      stageUuid: "c6e5394e-113b-840e-ab44-f65fec74c33e"
 version: 2
 ---
 # earned

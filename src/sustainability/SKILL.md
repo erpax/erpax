@@ -2,11 +2,11 @@
 name: sustainability
 description: "Use when asking whether a system can ENDURE — it is sustainable iff it draws down no stock faster than that stock regenerates (throughput ≤ carrying capacity) and its material loop closes, so each cycle adds zero NET entropy. Nature does it as a sun-driven dissipative structure — matter cycles, energy flows one-way and degrades. In erpax, zero-net-entropy-per-cycle IS sustainability; the borrowed anchor is the sun."
 atomPath: sustainability
-coordinate: "sustainability · 4/weave · 41628dbd"
-contentUuid: "ccd86e93-de9f-51d0-ab7f-863853baeb4b"
-diamondUuid: "6fedf37a-2ebd-82e8-95ba-c54c5f152d8f"
-uuid: "41628dbd-2563-8f25-9328-40ebcfb694fc"
-horo: 4
+coordinate: "sustainability · 1/base · 56c9ea5c"
+contentUuid: "8025191d-9fa3-58b9-8821-3c4c2253d27d"
+diamondUuid: "3cd25eac-a5a7-865e-9482-d91066f34f4d"
+uuid: "56c9ea5c-6d4b-88f2-a2c2-388ed8cca97c"
+horo: 1
 typography:
   partition: sustainability
   bondDegree: 57
@@ -17,7 +17,7 @@ standards:
   - "Verhulst logistic growth (1838) — carrying capacity K; dN/dt = r·N·(1 − N/K)"
 bindings: []
 signatures:
-  computationUuid: "ee2604ef-7182-8ea3-ba09-dccaf0e0e911"
+  computationUuid: "837dad79-8d10-8c19-8f92-20da08afb343"
   stages:
     - stage: path
       stageUuid: "7cd3828b-98c7-8439-94d5-f70532b839dd"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "866e2423-9478-8bf4-b251-37b84fe17594"
     - stage: horo
-      stageUuid: "c9216e5b-9dd0-85fb-b96b-e6095e07def8"
+      stageUuid: "3055b0ac-4261-8051-b5d3-5b13cefdf3f8"
     - stage: seal
       stageUuid: "9a12eb0d-1887-8c17-ae65-432337d86945"
     - stage: uuid
-      stageUuid: "d0007ae5-de27-8021-a238-3e5f2e0a8fa5"
+      stageUuid: "ef39cc2a-71a1-8846-81cb-c3011a82952e"
 version: 2
 ---
 # sustainability — endures because each cycle nets zero (the closed loop)

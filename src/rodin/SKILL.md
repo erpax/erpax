@@ -2,36 +2,36 @@
 name: rodin
 description: "Use when reasoning about the number substrate under erpax's state/sequence math — the Rodin vortex sequence 0·3·6·9·1·2·4·8·7·5 over the A432 anchor, digital-root (mod-9) arithmetic, the 3·6·9 triad axis vs the 1·2·4·8·7·5 doubling helix. The root the horo ring and the sequence both express."
 atomPath: rodin
-coordinate: "rodin · 4/weave · 7edd50db"
-contentUuid: "37d8729e-cedf-5782-8287-bdde871c6927"
-diamondUuid: "9cae8a24-9098-83f7-b444-90330e64e2f1"
-uuid: "7edd50db-9a65-8da0-a900-e3ee5fa809de"
-horo: 4
+coordinate: "rodin · 2/share · 12111c38"
+contentUuid: "a0454c19-7ebb-5ce1-9262-c68ca832928a"
+diamondUuid: "b90798c0-a0ad-87f9-a009-4e54a9bae3cb"
+uuid: "12111c38-4e1a-8bb4-995b-2925fc021d1e"
+horo: 2
 typography:
   partition: rodin
-  bondDegree: 275
+  bondDegree: 257
 standards:
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)"
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "3cec8138-7063-8a18-be8d-ae37fa8abb2c"
+  computationUuid: "c27b5386-38b0-8f71-9942-afff391a3cc3"
   stages:
     - stage: path
       stageUuid: "0cd2e29f-fd6c-835b-b528-bd3a2fbce4e8"
     - stage: trinity
       stageUuid: "0c037f50-0dc9-8f69-83eb-c0fd8c414fc0"
     - stage: boundary
-      stageUuid: "93a7e438-c70b-83d9-83d6-a237eab33140"
+      stageUuid: "23c990da-be9e-8b4b-97cc-a62a6e7e8903"
     - stage: links
-      stageUuid: "934fc64b-312c-80e3-9032-c77135b1b958"
+      stageUuid: "32f2fa5b-9a16-8392-b7c2-53bc706ef8b9"
     - stage: horo
-      stageUuid: "6dc5da2e-f515-8a7e-81b9-f11c00cddb06"
+      stageUuid: "72136d0f-a5f1-860a-bb58-465235a03cfa"
     - stage: seal
       stageUuid: "5d638fef-cc7e-86af-acd3-5e023edee363"
     - stage: uuid
-      stageUuid: "1e4bd65f-7a36-84a7-a291-fa6cfb0a8b6d"
+      stageUuid: "f4ef3359-84b8-8fae-b24e-6fa3137ec93c"
 version: 2
 ---
 # rodin — the vortex sequence (0·3·6·9·1·2·4·8·7·5 over A432)

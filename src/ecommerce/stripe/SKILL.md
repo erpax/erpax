@@ -3,13 +3,13 @@ name: stripe
 description: "Use when reasoning about stripe — resolves the tenant's own Stripe credentials before charging, closes the order against that same tenant, and resolves the tenant from the event rather than trusting a default."
 atomPath: "ecommerce/stripe"
 coordinate: "ecommerce/stripe · 4/weave · 847fb93f"
-contentUuid: "8843bcd6-6311-5df7-83b0-3521bad67a65"
+contentUuid: "4485c5f7-9a0b-5c51-8aac-4c8485bcc130"
 diamondUuid: "6795919c-dd76-8671-83bc-5dc73a8a2a94"
 uuid: "847fb93f-d672-8442-8d0f-21bfee554ce6"
 horo: 4
 typography:
   partition: ecommerce
-  bondDegree: 6
+  bondDegree: 3
 standards: []
 bindings: []
 signatures:

@@ -1,34 +1,34 @@
 ---
 name: merge
-description: "Use when reasoning about convergence/federation in erpax — same content ⇒ same id (content-uuid), same (domain×position×element) ⇒ same path; data and structure set-union with no coordination. Federation, dedup, \"all agents one erpax\"."
+description: "Use when reasoning about convergence/federation in erpax — same content ⇒ same id (content-uuid), same (domain×position×element) ⇒ same path; data and structure set-union with no coordination. Federation, dedup, \\\"all agents one erpax\\\"."
 atomPath: merge
-coordinate: "merge · 5/round · 0d2280cd"
-contentUuid: "ffcecad3-2985-557b-93fd-2c3363e510df"
-diamondUuid: "e877f8c6-e3db-89fb-90db-72d899b94750"
-uuid: "0d2280cd-5b20-8b83-af01-7da265d7e998"
-horo: 5
+coordinate: "merge · 2/share · 48c0601c"
+contentUuid: "057f9d93-fd2c-5871-a571-de7b4258765a"
+diamondUuid: "8e6a9f22-d70e-8551-a3f5-25644c6d9ef9"
+uuid: "48c0601c-641b-80f9-ba5d-96ead032962a"
+horo: 2
 typography:
   partition: merge
-  bondDegree: 0
+  bondDegree: 5242
 standards: []
 bindings: []
 signatures:
-  computationUuid: "69cdc75d-a9d4-87ce-a5aa-3802aff54891"
+  computationUuid: "d7cfd51a-f2ff-89c3-a49a-5a8ca1597894"
   stages:
     - stage: path
       stageUuid: "bf7a2e27-7733-8682-8bf0-574609b4317a"
     - stage: trinity
       stageUuid: "a2313697-06f9-85d2-8c13-4d79676a5518"
     - stage: boundary
-      stageUuid: "59ba6cda-d0ec-8ee2-9dc7-58aff373e872"
+      stageUuid: "ab337461-51d5-86d0-8085-73436ba393cf"
     - stage: links
-      stageUuid: "f8a56fa6-7014-8971-9e65-e7453142c38a"
+      stageUuid: "98cf7725-4cec-848e-bbae-01cc08448e59"
     - stage: horo
-      stageUuid: "f3a09e81-d11a-8e85-81b5-9f9ae2b9b849"
+      stageUuid: "e78985c1-0fd4-8d61-a9cb-0d6ff2026720"
     - stage: seal
-      stageUuid: "456035a0-9dfa-88c1-a08b-4ea871c61f68"
+      stageUuid: "5ea67542-ea14-81f3-ba3e-276b70ef0cf2"
     - stage: uuid
-      stageUuid: "bd36e24f-ce7d-8809-ab2b-afbc2b787756"
+      stageUuid: "55b32f17-162d-8eb4-829d-d2bb9c2814bf"
 version: 2
 ---
 # merge

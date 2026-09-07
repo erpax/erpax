@@ -2,21 +2,20 @@
 name: analytics
 description: "Use when you need one computed read-out of the whole erpax corpus across every aspect — structure, entropy, coverage, harmony, trust, and economic health. The all-aspects analyzer; it composes the measures already minted on the live uuid-matrix, never re-deriving them."
 atomPath: analytics
-coordinate: "analytics · 4/weave · aa29a369"
-contentUuid: "334f923a-99e4-560e-864c-71429583dac8"
-diamondUuid: "585af785-9e05-8004-9014-e482eb9c1907"
-uuid: "aa29a369-8f0f-8e89-9e5d-d1d5effb9560"
-horo: 4
+coordinate: "analytics · 5/round · ad9f2ee8"
+contentUuid: "c72bd54e-4ce5-5d3d-83ff-e8d6acf3e944"
+diamondUuid: "78161d13-3926-87f1-a0cd-afb4deb44800"
+uuid: "ad9f2ee8-aa86-84dd-9531-7c4e8ae8bb43"
+horo: 5
 typography:
   partition: analytics
-  bondDegree: 54
+  bondDegree: 58
 standards:
   - "ECMA-262"
   - "EU-CSDDD-2024/1760"
   - "EU-Intrastat-Reg-2019/2152"
   - "ISO-4217"
   - "ISO-8601-1"
-  - "ISO/IEC-25010"
   - "ISO/IEC-25010:2023 quality model — a computed read-out across quality aspects"
   - "ISO/IEC-25010:2023 quality model — a computed read-out across quality aspects`"
   - "ISO/IEC-29119"
@@ -25,7 +24,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "fbc511f2-275b-8e18-a1f1-ef01b9421f4c"
+  computationUuid: "f7222d37-908a-883e-bdcc-6cd162fb6181"
   stages:
     - stage: path
       stageUuid: "9e734818-9a0d-8503-86f7-f75d6ca272fd"
@@ -36,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "a3ef7876-eeb4-8a41-a0f0-4b13593ed3af"
     - stage: horo
-      stageUuid: "60130d82-1bd4-895f-a756-735abae573d5"
+      stageUuid: "a2fcec9c-1317-8ef6-ad78-574906936979"
     - stage: seal
       stageUuid: "b3e01a1d-08b1-836f-8530-effa1ed21d5f"
     - stage: uuid
-      stageUuid: "a3cf5bec-c306-83e7-ae96-30a1641e0470"
+      stageUuid: "9b336754-ba62-8b45-b681-695ce979564a"
 version: 2
 ---
 # analytics — the all-aspects analyzer

@@ -3,13 +3,13 @@ name: actions
 description: "Use when reasoning about actions — , and take a typed input and return an . Each validates, creates the document, and lets the collection's own hooks do the posting — so a dashboard cannot write an unbalanced entry…"
 atomPath: "dashboard/actions"
 coordinate: "dashboard/actions · 4/weave · 0823d8b0"
-contentUuid: "63a15812-6b2d-5c32-81f9-81d983adde47"
+contentUuid: "3ffa87af-62ea-506d-8afe-8de30bcec3d5"
 diamondUuid: "4e1da0ab-46d2-8872-b47a-bdeb85ab161c"
 uuid: "0823d8b0-6be2-83c8-baec-74b950e9a3f8"
 horo: 4
 typography:
   partition: dashboard
-  bondDegree: 7
+  bondDegree: 4
 standards:
   - "ECMA-262"
   - "ECMA-262 ECMAScript-2024 baseline"

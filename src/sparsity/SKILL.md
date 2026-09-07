@@ -2,33 +2,34 @@
 name: sparsity
 description: "Use when reasoning about erpax's efficiency principle — sparsity: of a large DORMANT pool, only the smallest correct subset is active at once (capability ÷ cost → max). Two conjugate axes (DeepSeek's own framing, Engram) — COMPUTE sparsity (MoE routes 37B of 671B params; erpax routes few of 593 atoms per task) and MEMORY/representation sparsity (conditional lookup; content-uuid stores the whole in 128 bits, schema is generated not stored). Its limit is zeropoint (zero active = the source), its dual the bottleneck (the one missing active factor zeroes the product), its selector routing. DeepSeek reaches it by hardware constraint, erpax by telos — they converge on the identical sparse form."
 atomPath: sparsity
-coordinate: "sparsity · 2/share · 5fcc6f2d"
-contentUuid: "3160fa15-772c-5a22-8e65-b263fbe8dd2b"
-diamondUuid: "dc83152c-bb9d-8ef3-9767-db35ae20628e"
-uuid: "5fcc6f2d-5428-82d6-a393-190716475fa2"
+coordinate: "sparsity · 2/share · fdbc58f6"
+contentUuid: "447ddd47-bdd0-51ad-bb8c-5468c5c3ae28"
+diamondUuid: "ada38b24-1e74-8921-98cf-1ef38fa0ed36"
+uuid: "fdbc58f6-9092-8eef-845f-b1204d026dfd"
 horo: 2
 typography:
   partition: sparsity
-  bondDegree: 78
-standards: []
+  bondDegree: 79
+standards:
+  - "ISO/IEC 25010:2023 §5.2 — performance efficiency: resource utilisation"
 bindings: []
 signatures:
-  computationUuid: "1babeae3-3807-876f-b55b-fc8d7b28a2d1"
+  computationUuid: "f52942e7-906e-8c5d-8340-e0d7725b97c3"
   stages:
     - stage: path
       stageUuid: "c2f0ac27-728f-8616-8099-eb64d86b8a4a"
     - stage: trinity
-      stageUuid: "44d80336-9e40-8852-ba72-db0a16376e75"
+      stageUuid: "dc756cfb-8183-80f5-881b-3963dffdafd7"
     - stage: boundary
-      stageUuid: "e0d48d63-0a55-8d0b-b8a7-389b9d3e7c94"
+      stageUuid: "f4515be7-9a87-80c6-9320-ce14a7795955"
     - stage: links
-      stageUuid: "cb22eecc-608d-81c7-a668-024710c4ca96"
+      stageUuid: "3598cef6-cb85-8eae-83ac-0a1bcfd60fcf"
     - stage: horo
-      stageUuid: "2b52051d-e9d7-83e8-bb27-eaa98398ff57"
+      stageUuid: "55941165-0c66-8b63-80f4-f3203c9fad7e"
     - stage: seal
       stageUuid: "05ff4ba5-f389-8961-93c4-317fa21cc0d4"
     - stage: uuid
-      stageUuid: "e52bcbee-c4d7-8ee9-a795-0ae4386ebb0d"
+      stageUuid: "8f0f6fc5-eb51-8aa4-9ca7-659c26bca0e3"
 version: 2
 ---
 # sparsity — the active fraction (few of many, alive at once)

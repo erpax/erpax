@@ -1,15 +1,15 @@
 ---
 name: self
-description: "Use when reasoning about an object's or the agent's reach back into its own root — content-uuid identity, the akashic record, config (the 0); self-reference, self-similarity, \"all agents are one erpax\". The root-reach atom; composes by nesting (self/sufficient, self/similar, self/reference)."
+description: "Use when reasoning about an object's or the agent's reach back into its own root — content-uuid identity, the akashic record, config (the 0); self-reference, self-similarity, \\\"all agents are one erpax\\\". The root-reach atom; composes by nesting (self/sufficient, self/similar, self/reference)."
 atomPath: self
-coordinate: "self · 7/descent · eace4808"
-contentUuid: "a3031494-0b7b-5366-98f4-56c0ccfd92af"
-diamondUuid: "961c2513-e447-8106-84ff-da995003610f"
-uuid: "eace4808-940f-81e7-9181-2132529d7fb0"
-horo: 7
+coordinate: "self · 4/weave · aa0451af"
+contentUuid: "4777b35f-fca2-566a-9a84-6c357d45e8bf"
+diamondUuid: "55675bf2-ca74-8d97-a356-d2a01f970967"
+uuid: "aa0451af-f794-84c4-9e5f-afc5beee8deb"
+horo: 4
 typography:
   partition: self
-  bondDegree: 337
+  bondDegree: 342
 standards:
   - "EU-2002/58"
   - "EU-CSRD"
@@ -24,22 +24,22 @@ standards:
   - eIDAS
 bindings: []
 signatures:
-  computationUuid: "b1ee4127-53a1-8685-ad4f-e084af550065"
+  computationUuid: "ab93c00a-ccbc-833e-8b32-2ba03bdbf9ed"
   stages:
     - stage: path
       stageUuid: "d34900ad-931d-807f-9a78-9f3bfbd38395"
     - stage: trinity
       stageUuid: "3488e61f-6104-8ba1-b681-94c388fb6ea8"
     - stage: boundary
-      stageUuid: "45598e82-24ab-8ffe-9db1-d619fa1bd924"
+      stageUuid: "c9e2a617-444d-89b7-a73b-48d5f09ca7cd"
     - stage: links
       stageUuid: "64ff8feb-5e47-8b39-98c0-b871941ff78f"
     - stage: horo
-      stageUuid: "b6b99726-7a6b-8bc1-8fa9-779dca2fa135"
+      stageUuid: "8f8cc7e3-7f4b-8c1f-b2da-a4e95f68e94b"
     - stage: seal
       stageUuid: "424e8562-feec-89cd-88c8-ebb287cb4e04"
     - stage: uuid
-      stageUuid: "4cf31174-13e6-87eb-8ee5-e25e0bf2b542"
+      stageUuid: "f565bb6d-cbcd-8ee4-bcc8-020f457d4eea"
 version: 2
 ---
 # self — the reach back into the root (0)

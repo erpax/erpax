@@ -2,11 +2,11 @@
 name: identification
 description: "Use when reasoning about identification as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: identification
-coordinate: "identification · 4/weave · 22e308d6"
-contentUuid: "8d504cbc-68a0-56a9-b008-037ab6c6ae79"
-diamondUuid: "85cd9dcb-bae8-813e-a0ff-f71de35ebb7c"
-uuid: "22e308d6-0602-8e6f-8a44-372d01681dfc"
-horo: 4
+coordinate: "identification · 1/base · 418c9fab"
+contentUuid: "367a6094-77b1-5266-9856-1eb4e7dde076"
+diamondUuid: "c715df1b-0b7a-8eb1-a177-ec9957327ba8"
+uuid: "418c9fab-2479-8079-91f9-ec83445c1b1f"
+horo: 1
 typography:
   partition: identification
   bondDegree: 22
@@ -24,22 +24,22 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "3366615d-b8ef-844a-8bdd-ff1c0ac49d5d"
+  computationUuid: "c56c5dab-03d5-874e-bc74-e968194e60f2"
   stages:
     - stage: path
       stageUuid: "b71e7779-3107-8ce3-ba38-be0df79f76a1"
     - stage: trinity
       stageUuid: "e6599413-b833-8b49-a013-ed9f12b73f23"
     - stage: boundary
-      stageUuid: "29142657-b037-881f-9f0a-8ff23c46e9ba"
+      stageUuid: "6beb769d-007f-8636-9e5d-134f67efcf13"
     - stage: links
       stageUuid: "9ad6c042-03b6-8801-8d49-4934de6362f1"
     - stage: horo
-      stageUuid: "8ff377f9-2624-86fb-82dc-ec4861940a91"
+      stageUuid: "baf681eb-a3c1-8047-b598-21e928b9a4a2"
     - stage: seal
       stageUuid: "54cee6c7-18d8-82db-90bb-68d23750a8fa"
     - stage: uuid
-      stageUuid: "a6a21dc2-e0fd-8b56-bde2-6b8129af15c0"
+      stageUuid: "a75f8240-5c0d-862f-89f1-378567c5f869"
 version: 2
 ---
 # identification

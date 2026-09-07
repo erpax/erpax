@@ -2,11 +2,11 @@
 name: drug
 description: "Use when reasoning about drug — A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism. Here the term drug is used interchangeably with the term medicine altho"
 atomPath: "vocabulary/drug"
-coordinate: "vocabulary/drug · 4/weave · 2c947be0"
-contentUuid: "d430a67c-42f3-5612-9fc4-86e3806bd155"
-diamondUuid: "530bf1ea-e4f6-8c80-9148-6e8301aaa4f8"
-uuid: "2c947be0-1c5e-8350-9673-2995db4f0acb"
-horo: 4
+coordinate: "vocabulary/drug · 2/share · 16419e1b"
+contentUuid: "27ec4c74-20f1-58e0-b411-23e18f155bfd"
+diamondUuid: "d277f78a-eac7-81bf-bdcd-90347112b743"
+uuid: "16419e1b-42d6-8e3d-8e3d-9eb8850d10db"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 65
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9fdf0a9d-94e7-858e-893d-df0f45cccfdb"
+  computationUuid: "2ecdd9d6-8044-8ef9-94db-84018a631450"
   stages:
     - stage: path
       stageUuid: "c6aba337-4861-85ed-94e7-b0428c456398"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "30afaa13-79b7-8416-86c2-34c319b5c84d"
     - stage: horo
-      stageUuid: "212d9c94-6032-8550-ba18-a43276ac7c95"
+      stageUuid: "98462b5c-8a57-8914-b112-a1d0ec8463a9"
     - stage: seal
-      stageUuid: "7f1cad62-7da0-8f51-be79-c02b81268701"
+      stageUuid: "aa4cc9b8-0f91-851f-bb1c-a8024e6eba08"
     - stage: uuid
-      stageUuid: "e829cc4a-de38-8b6a-91a5-621be05721ec"
+      stageUuid: "9831dbb2-2d57-8a02-8eb4-1361b2b5375f"
 version: 2
 ---
 # drug

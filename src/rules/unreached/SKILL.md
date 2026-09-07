@@ -3,13 +3,13 @@ name: unreached
 description: "Use when reasoning about unreached — The accounting wave's remaining 258 is not 258 separate defects. It is **80 leaves and their ancestors**: an atom is charged , and every folder above it is then charged for the…"
 atomPath: "rules/unreached"
 coordinate: "rules/unreached · 1/base · c0b71623"
-contentUuid: "ff2a902e-9268-599e-8b78-e2983850faaa"
+contentUuid: "ecdaf744-a6b8-5a68-b413-5ddbdc0bc405"
 diamondUuid: "5367d449-8e6f-8f8c-b02b-7ca205618c27"
 uuid: "c0b71623-9a88-8d91-967a-bb4f665d36bf"
 horo: 1
 typography:
   partition: rules
-  bondDegree: 16
+  bondDegree: 13
 standards: []
 bindings: []
 signatures:

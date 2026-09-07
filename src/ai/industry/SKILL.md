@@ -2,11 +2,11 @@
 name: industry
 description: "Use when mapping AI industry failure modes to erpax diamond remedies — hallucination, memory loss, multi-agent collision, prompt injection, audit fragmentation, cost runaway, model drift, PII leakage, human-in-the-loop, vendor lock-in. Pure fns in index.ts bind each problem to existing atoms (thought, diamond, sandbox, receipt, memory, confirm) and extend gaps: workflow correlation receipts, grounded tool calls, cascade depth guard."
 atomPath: "ai/industry"
-coordinate: "ai/industry · 5/round · 9aaf8720"
-contentUuid: "6dfe5223-e8b6-576b-b40d-52157c84225c"
-diamondUuid: "63379bd6-bf3b-8456-9b07-777c0adbc86e"
-uuid: "9aaf8720-fdcc-86e0-aec1-d0b9d8cf642d"
-horo: 5
+coordinate: "ai/industry · 1/base · 3e95fa9c"
+contentUuid: "487ede73-c03a-537f-98f9-2e038e3f1b1a"
+diamondUuid: "7720da69-2912-8cf1-9891-847e0526150e"
+uuid: "3e95fa9c-2a3b-8236-bbb9-b7bd47bee34a"
+horo: 1
 typography:
   partition: ai
   bondDegree: 25
@@ -14,14 +14,13 @@ standards:
   - "GDPR Art.22(3) right-to-human-intervention"
   - "ISO/IEC 42001:2023 ai-management-system"
   - "ISO/IEC 42001:2023 ai-management-system`"
-  - "ISO/IEC-25010"
   - "ISO/IEC-42001"
   - "OWASP-ASVS"
   - "OWASP-LLM-Top-10:2025 LLM01 prompt-injection"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "e3d32688-83e6-8f26-b3b0-93c40d6ff957"
+  computationUuid: "bfaf27dd-5ec6-8351-9e81-03d43fb08658"
   stages:
     - stage: path
       stageUuid: "bf8c81db-dabb-81a4-9ea7-d9b8b7a0a33b"
@@ -32,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "4992675b-01cb-82f9-b1ba-caff35f1a3a8"
     - stage: horo
-      stageUuid: "5e0b822f-c53c-80fd-8065-baefe9180906"
+      stageUuid: "fd68821c-b9fb-8dbb-96ba-54a4695efeb3"
     - stage: seal
       stageUuid: "59a3b14f-c480-8bdc-a793-86411c4bae5e"
     - stage: uuid
-      stageUuid: "b6a21106-c14c-8933-8891-35ee7470673c"
+      stageUuid: "54d474b4-2c50-813a-8ccc-455d3c92b7db"
 version: 2
 ---
 # ai/industry — AI industry problems → erpax diamond remedies

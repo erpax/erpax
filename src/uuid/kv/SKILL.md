@@ -3,13 +3,13 @@ name: kv
 description: "Use when reasoning about kv — addresses the binding itself, lifts a plain map into , and finds the value for a key by address rather than by string."
 atomPath: "uuid/kv"
 coordinate: "uuid/kv · 8/crest · 93a6e375"
-contentUuid: "270d5e80-fe25-5957-9475-6457751cc204"
+contentUuid: "d86cdb5f-b92d-580e-995f-72cc6d3506da"
 diamondUuid: "37eb56a9-3f04-8168-8209-6768ada3fd32"
 uuid: "93a6e375-c42e-8b8f-be92-1047c807c703"
 horo: 8
 typography:
   partition: uuid
-  bondDegree: 9
+  bondDegree: 6
 standards:
   - "NIST FIPS 180-4 SHA-256"
   - RFC 8785 JCS (canonicalisation that makes equivalence hold)

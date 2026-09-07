@@ -2,11 +2,11 @@
 name: countries
 description: "Use when reasoning about countries as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/countries"
-coordinate: "vocabulary/countries · 8/crest · ee69de4f"
-contentUuid: "306c8928-806e-5fd6-8b39-db79c078d996"
-diamondUuid: "54d237b0-3495-86cf-9537-fc6cf1a1bfaa"
-uuid: "ee69de4f-cf91-8075-98a4-26f8ddf59e26"
-horo: 8
+coordinate: "vocabulary/countries · 2/share · 5ef06944"
+contentUuid: "e1681b37-bca5-5784-938b-3f8a52dadf6f"
+diamondUuid: "4379d5ed-a54b-8f66-a81e-0889167b176a"
+uuid: "5ef06944-f9c0-89f5-9d16-18f3785bffe1"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "191cd652-bed8-8748-9d4f-600df81c3b46"
+  computationUuid: "2b1a9cdb-b971-8c42-a99c-834ed9ffe79c"
   stages:
     - stage: path
       stageUuid: "52db23b0-4d9d-83a6-81c1-48bd78fc9432"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "224e4302-da82-84a5-a211-82e618a39efe"
     - stage: horo
-      stageUuid: "c3ebe3ea-febe-86bc-858b-ffdb6b02a449"
+      stageUuid: "b680bee6-187c-88ad-acc2-452f27d4e456"
     - stage: seal
-      stageUuid: "ebf99c31-3e43-8cb8-a24b-90e5b9d74ca6"
+      stageUuid: "2614aa36-5090-8c46-bc3c-424c25dd4425"
     - stage: uuid
-      stageUuid: "dff32b7c-d98d-8d58-901c-31e0c65b4cef"
+      stageUuid: "55ff2d5e-34e3-8878-b4c2-be3963cefa3b"
 version: 2
 ---
 # countries

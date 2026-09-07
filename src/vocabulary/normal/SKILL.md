@@ -2,19 +2,19 @@
 name: normal
 description: "Use when reasoning about normal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/normal"
-coordinate: "vocabulary/normal · 2/share · f667367c"
-contentUuid: "8f21c9ca-299a-54e5-b955-8c327670d431"
-diamondUuid: "ff8dc25f-7263-8891-8101-aa829d15a67a"
-uuid: "f667367c-8074-891f-a2fe-8905727fe499"
-horo: 2
+coordinate: "vocabulary/normal · 7/descent · 7f8314a0"
+contentUuid: "7e086065-ed61-557c-a8ea-105835fbf7f8"
+diamondUuid: "92f74c19-9a17-8bd5-914e-879d01c41315"
+uuid: "7f8314a0-2a4c-839c-8a7a-9f61dc9d404c"
+horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 16
+  bondDegree: 18
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "de6f72da-d275-8573-bb87-e206603a8e1a"
+  computationUuid: "1e8d5ad5-82d7-82cf-9ec2-e1900b1ac162"
   stages:
     - stage: path
       stageUuid: "17439b20-95b3-8273-bcce-c9a2e815b2d8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f587017a-3fbd-8211-9814-f10acf242011"
     - stage: horo
-      stageUuid: "58843532-1dca-8e1a-ad65-4bb26fa9bdf3"
+      stageUuid: "f946e534-8afc-86be-89aa-4df467afbdcc"
     - stage: seal
-      stageUuid: "1051c826-a2c3-8cab-8927-4ce77077cb62"
+      stageUuid: "f159a6f7-42fb-8861-af91-edf4d02cb0e7"
     - stage: uuid
-      stageUuid: "c5bf45df-9b96-81a7-9fcb-d54404b8720b"
+      stageUuid: "23fd6bbd-832d-8d49-bae7-a01e488f18bb"
 version: 2
 ---
 # normal

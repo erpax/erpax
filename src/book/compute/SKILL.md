@@ -3,13 +3,13 @@ name: compute
 description: "Use when reasoning about compute — Every atom is a page, every partition a volume. derives the volume rows, says what a path means segment by segment, and emits the index as a document."
 atomPath: "book/compute"
 coordinate: "book/compute · 4/weave · bf629d84"
-contentUuid: "b60b1848-ac00-54de-8eb4-fc261389d41a"
+contentUuid: "ad6a67ef-e564-53f5-b07e-ca4a378724ec"
 diamondUuid: "79d3e02e-2648-8a9d-9567-3679beca2a15"
 uuid: "bf629d84-f028-8c7b-a46c-c5992ccb9c0a"
 horo: 4
 typography:
   partition: book
-  bondDegree: 6
+  bondDegree: 3
 standards: []
 bindings: []
 signatures:

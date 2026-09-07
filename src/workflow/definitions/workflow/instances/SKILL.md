@@ -2,24 +2,25 @@
 name: instances
 description: "Use when tracking the live run of a workflow-definition against a document — current step, assignee, SLA due date, step-history decisions (approved/rejected/delegated/escalated/auto), final outcome, and ISO-19011 §6.4.6 audit-event trail. The workflow execution-instance collection."
 atomPath: "workflow/definitions/workflow/instances"
-coordinate: "workflow/definitions/workflow/instances · 5/round · f363f662"
-contentUuid: "608f8dd7-7db5-576d-87f3-71ce153a9d70"
-diamondUuid: "a86e7239-fa48-8f69-9fa6-b02f703e0fd4"
-uuid: "f363f662-ffb3-84e3-bc14-a336e9d0e088"
-horo: 5
+coordinate: "workflow/definitions/workflow/instances · 8/crest · cdfb922d"
+contentUuid: "6512d854-44be-54b5-9fb2-a511f1f3a598"
+diamondUuid: "2084588e-522c-881d-83bc-026e5ea7614a"
+uuid: "cdfb922d-93f9-8bb5-9cc7-7a8c23da6cd4"
+horo: 8
 typography:
   partition: workflow
-  bondDegree: 36
+  bondDegree: 34
 standards:
   - "ISO-8601-1:2019 date-time"
   - "ISO-8601-1:2019 date-time`"
   - "ISO/IEC 19510:2013 BPMN-2.0"
   - "ISO/IEC 19510:2013 BPMN-2.0`"
+  - "ISO/IEC-19510"
   - "SOX §404 internal-controls workflow-execution"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "4ce31079-dde4-84f7-99f8-f57d012ded9c"
+  computationUuid: "cd678fdf-601b-8648-aa71-f691c7f4bbfc"
   stages:
     - stage: path
       stageUuid: "ef31534c-b77a-8d21-add2-ccd21f5f21ad"
@@ -28,13 +29,13 @@ signatures:
     - stage: boundary
       stageUuid: "8a685cb2-cdd6-839b-8613-444f9a0df06f"
     - stage: links
-      stageUuid: "a6266696-53a0-8529-9b6f-1f1b5cbb97b9"
+      stageUuid: "2dc1a7b8-3beb-84ad-987e-4045e2a9e422"
     - stage: horo
-      stageUuid: "88fb444c-2af2-8932-b0ef-41738e3bbc1b"
+      stageUuid: "60da464d-df3d-8942-b0c5-180e961b3fb6"
     - stage: seal
       stageUuid: "890a1125-1c21-8d98-8220-87225d147a2d"
     - stage: uuid
-      stageUuid: "fef57971-9c11-89bf-bba6-dbf156600aba"
+      stageUuid: "534faefe-f358-8891-910e-fda559f29564"
 version: 2
 ---
 # workflow-instances

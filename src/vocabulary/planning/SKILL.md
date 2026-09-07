@@ -2,10 +2,10 @@
 name: planning
 description: Use when modelling one planning — the singular model of the plannings collection (the plural store); the activity of arranging future work and resources.
 atomPath: "vocabulary/planning"
-coordinate: "vocabulary/planning · 7/descent · 72354eed"
-contentUuid: "c1d9f767-e929-5ac0-ba2b-fbd3926e7078"
-diamondUuid: "af4a11fb-8288-8e60-8918-6300eae36258"
-uuid: "72354eed-bec0-84b4-8bf2-2a1306fc6618"
+coordinate: "vocabulary/planning · 7/descent · 2a7a2790"
+contentUuid: "3850ab6b-b976-5067-85f5-302639dd42ef"
+diamondUuid: "597cf925-8d73-8a31-b6d4-b8a930903d10"
+uuid: "2a7a2790-eaa1-843c-a819-99158bf25af2"
 horo: 7
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ec4d8299-69d5-89a6-8ee7-d6cabf75c338"
+  computationUuid: "9a45d5ea-bd4f-8c23-a7e0-5ffaae449c90"
   stages:
     - stage: path
       stageUuid: "903b3d16-3e10-8631-9e9d-51bcd46d1fe6"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5482ea43-080c-8dfc-9b27-d9fefe3e6b0e"
     - stage: horo
-      stageUuid: "1aefef3d-a2d4-8856-95a1-800a99d8dceb"
+      stageUuid: "acd09329-2ead-8032-b88c-80f6dd6069d0"
     - stage: seal
-      stageUuid: "1138a8d4-f2da-8f4d-8312-7c0e405a661d"
+      stageUuid: "3323061f-a9cb-8c9f-99a9-b7445dba3a5d"
     - stage: uuid
-      stageUuid: "640915ac-3ed9-8ce5-9831-9e6de50072a2"
+      stageUuid: "597e283b-6a5d-83e4-b71d-336140be5c9b"
 version: 2
 ---
 # planning — the model of one [[plannings]] row

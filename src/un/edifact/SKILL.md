@@ -2,14 +2,14 @@
 name: edifact
 description: "Use when implementing or referencing UN/EDIFACT — UN rules for Electronic Data Interchange For Administration, Commerce and Transport."
 atomPath: "un/edifact"
-coordinate: "un/edifact · 4/weave · 0b431173"
-contentUuid: "60f3c3db-890a-58d3-abe0-df6b2bf51d69"
-diamondUuid: "936f8811-7c4d-8ddf-9a63-706bbb8b5c8f"
-uuid: "0b431173-5aa9-81b8-b8b7-cf982a0ff6ff"
-horo: 4
+coordinate: "un/edifact · 1/base · 430f52a6"
+contentUuid: "356152bc-005a-5f37-9b93-e85d9e8951b2"
+diamondUuid: "53c5c756-8759-8882-a6ec-1c1e968e46ac"
+uuid: "430f52a6-134a-8638-9ab7-b1398ab99dfa"
+horo: 1
 typography:
   partition: un
-  bondDegree: 1
+  bondDegree: 3
 standards:
   - "ISO-9735"
   - "ISO-9735:2002 edifact-syntax-rules"
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "5514b982-3918-8556-93ec-e5ea1f9874b0"
+  computationUuid: "2a3a4c52-b055-8789-852a-43ebd2d83f0b"
   stages:
     - stage: path
       stageUuid: "bad7961c-0a8e-8779-8ccb-34853ae787e1"
@@ -30,13 +30,13 @@ signatures:
     - stage: boundary
       stageUuid: "b1481376-3c6b-8f81-ac82-1c2c02cfdda5"
     - stage: links
-      stageUuid: "1176f70e-978a-8802-baa1-0b4db26fa2c9"
+      stageUuid: "ad32b6c8-d115-8968-8ddf-666869482ea0"
     - stage: horo
-      stageUuid: "574caf32-e719-8f63-a3f6-a349ca0f4721"
+      stageUuid: "53c70cbe-4c1d-88bb-ade9-10086584ee4a"
     - stage: seal
-      stageUuid: "bb1b27c6-a15d-80ed-9f42-cd1835036ff5"
+      stageUuid: "d1f7c322-1b26-801b-9b76-52e5880b69b0"
     - stage: uuid
-      stageUuid: "ff09fd35-ea07-8a71-b94b-cc13c8906098"
+      stageUuid: "982a19be-e943-8376-b4ee-f38cfdba8843"
 version: 2
 ---
 # UN/EDIFACT — UN rules for Electronic Data Interchange For Administration, Commerce and Transport

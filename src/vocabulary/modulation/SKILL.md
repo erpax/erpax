@@ -2,11 +2,11 @@
 name: modulation
 description: "Use when reasoning about modulation — A schema.org component word, collided out of schema.org compounds — fused from broadcastSignalModulation (sti · collapse · merge)."
 atomPath: "vocabulary/modulation"
-coordinate: "vocabulary/modulation · 2/share · 5ab81e92"
-contentUuid: "c7e0e063-3315-5320-98fa-1c5fa951a48b"
-diamondUuid: "f21ad084-145e-87b4-9f8f-3f9c77ade483"
-uuid: "5ab81e92-eb70-87fb-8d9f-61da7b7ec351"
-horo: 2
+coordinate: "vocabulary/modulation · 5/round · 4802d271"
+contentUuid: "f87fe5d8-013f-5d67-b9c4-9cdb66b99b6b"
+diamondUuid: "a2fe3277-93a4-86b0-9ce3-af058ef5bde3"
+uuid: "4802d271-e107-8438-9d1d-6a5c85b10567"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "91e000cc-ad1f-84a4-8f22-7ba21e0503ab"
+  computationUuid: "13b4c1c8-a8a4-8b16-82e8-9a7ae02bc594"
   stages:
     - stage: path
       stageUuid: "48e0eccf-87b6-8e4b-b5a3-c325cd7c318c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "590ff206-e20a-860f-84f0-96a4cf780007"
     - stage: horo
-      stageUuid: "bfd82121-9a20-80ff-984c-d23632d0efa4"
+      stageUuid: "4f19dfe1-08e9-8de5-bd91-276a10dcb306"
     - stage: seal
-      stageUuid: "62b765c1-d415-82bb-b9e5-18d534ad0218"
+      stageUuid: "75edec7c-dfa6-8e76-a899-849394bc90dd"
     - stage: uuid
-      stageUuid: "405689ce-eb91-8abe-91a3-d30fc301e7aa"
+      stageUuid: "257d2cb0-6cff-8335-af5e-cd1ffea237a7"
 version: 2
 ---
 # modulation

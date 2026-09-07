@@ -2,11 +2,11 @@
 name: abridged
 description: Use when reasoning about abridged — Indicates whether the book is an abridged edition.
 atomPath: "vocabulary/abridged"
-coordinate: "vocabulary/abridged · 7/descent · 121bad49"
-contentUuid: "568da114-9254-57a8-808c-d7eef3f4de31"
-diamondUuid: "2212aa3d-9a22-8071-bd9c-47911f1315fb"
-uuid: "121bad49-e4b1-8360-a58d-8d3280a55d34"
-horo: 7
+coordinate: "vocabulary/abridged · 2/share · 074a1dcd"
+contentUuid: "46e38198-3c89-51ab-a7ba-ce40a56eb2ad"
+diamondUuid: "7cbcc928-6c22-81d2-9120-4f1b3bc8513e"
+uuid: "074a1dcd-70ae-8fa1-93f4-2e5d4a7da481"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bb9dfc3f-0621-8949-9ecf-e7605fb6bde6"
+  computationUuid: "d60467ba-82d1-8378-a9b2-ad2ddbb79dd1"
   stages:
     - stage: path
       stageUuid: "4ace9a06-0037-8d36-be14-7158fb36049f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4085ad52-d369-8ac7-bf33-f943318d4b0a"
     - stage: horo
-      stageUuid: "baf88e2d-f0fb-8ea8-9624-fc351c4520e4"
+      stageUuid: "8e4112cf-6361-8737-916c-669b03ef5e97"
     - stage: seal
-      stageUuid: "63930627-941a-835e-8bba-693a42f77411"
+      stageUuid: "f85a9fa3-39a0-8ada-b2fe-033dbadcccf6"
     - stage: uuid
-      stageUuid: "919f48eb-2446-890f-a70d-07e3c425623c"
+      stageUuid: "0a1a0734-3efd-8f10-a929-46ea41beb395"
 version: 2
 ---
 # abridged

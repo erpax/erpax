@@ -2,14 +2,14 @@
 name: types
 description: "Use when working with Payload's generated TypeScript types — payload-types.ts, generate:types, GeneratedTypes, CollectionSlug, typing Local API results, or fixing stale-type errors after schema changes."
 atomPath: types
-coordinate: "types · 8/crest · 437d61a0"
-contentUuid: "00ba813f-7578-5a46-b6e3-c226d6173c55"
-diamondUuid: "57d5338a-1db7-858d-89d4-419b76369ba4"
-uuid: "437d61a0-1223-8c37-ad25-b5586f019497"
-horo: 8
+coordinate: "types · 1/base · 606cf5da"
+contentUuid: "3048340f-c609-56fd-9dfe-7b1ad0f585f5"
+diamondUuid: "4d8f9f65-0150-82e8-9e7c-e9db15dcfb99"
+uuid: "606cf5da-abf4-8804-8ef8-847def6725f8"
+horo: 1
 typography:
   partition: types
-  bondDegree: 0
+  bondDegree: 85
 standards:
   - "CoE-108+"
   - "ECMA-262"
@@ -17,25 +17,26 @@ standards:
   - "IFRS-15"
   - "IFRS-16"
   - "ISA-95"
+  - "ISO-17442"
   - "ISO-17442-1"
 bindings: []
 signatures:
-  computationUuid: "9f1d8d74-3ca0-8b0e-9092-97ef1223f398"
+  computationUuid: "3d84ded8-3704-8958-bf65-7cd0d211a0d2"
   stages:
     - stage: path
       stageUuid: "6fa22871-78bd-8867-abbf-e34b1beb9814"
     - stage: trinity
       stageUuid: "16bad5dd-dd65-85de-8404-167a2c89f514"
     - stage: boundary
-      stageUuid: "51f6c844-0b0b-8a4b-b943-08933ae3a9b0"
+      stageUuid: "b281ea17-83ed-8d77-8dab-014fd1ee237b"
     - stage: links
       stageUuid: "81e343c6-c75a-84dd-bed4-f72e36a1b834"
     - stage: horo
-      stageUuid: "d19fc52a-49ca-8d08-a107-cbad8508a321"
+      stageUuid: "cf06fe7f-690c-82e2-aaa6-11f63cd8b296"
     - stage: seal
-      stageUuid: "47ef39d7-1852-8737-a7bd-131ce52b40e5"
+      stageUuid: "8b1698ad-2633-8ae8-8d17-2e8d968f2cf8"
     - stage: uuid
-      stageUuid: "6910d718-4130-87c1-8a5c-dba750af27e1"
+      stageUuid: "984e4353-df3f-8f32-9127-3e8b020c0a12"
 version: 2
 ---
 # types — Payload generated TypeScript

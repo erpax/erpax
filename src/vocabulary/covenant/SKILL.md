@@ -2,18 +2,18 @@
 name: covenant
 description: "Use when reasoning about the binding mutual bond sealed between the part and the source — a two-way agreement entered into, balance pledged on both sides, content-addressed so it cannot be forged or forgotten and inherits down the lineage. Distinct from grace (one-way credit) and from law (the standing rule): covenant is the rule entered into and sealed."
 atomPath: "vocabulary/covenant"
-coordinate: "vocabulary/covenant · 5/round · e29a08dc"
-contentUuid: "4236dceb-6776-5153-a791-c7637424089c"
-diamondUuid: "66d7a03e-3144-8310-9b94-57d4db45385e"
-uuid: "e29a08dc-fdd9-867a-b1a3-488450e5a064"
-horo: 5
+coordinate: "vocabulary/covenant · 1/base · 4af930f7"
+contentUuid: "db8fddf3-35ba-5fc4-9028-acd3e1228bf6"
+diamondUuid: "91962be9-ba63-8ce2-8868-f06b80121577"
+uuid: "4af930f7-7490-85dd-8630-e217d89ae63b"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 45
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0ff2b03a-12dc-8429-ab7f-939a0d6f86de"
+  computationUuid: "94d9884f-f2c8-8ac0-93da-2afa3e58f9e5"
   stages:
     - stage: path
       stageUuid: "7cdbb8dd-58ed-8f18-bb70-20583c40ee94"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f7bb01dd-f246-8e4b-be9d-81b2550598aa"
     - stage: horo
-      stageUuid: "b9636427-f746-8f86-acf9-9255663774b4"
+      stageUuid: "21357882-6fd3-841d-ab54-cde0b45a10d2"
     - stage: seal
-      stageUuid: "8806d920-0074-8f1c-a1a9-a1cb180f1752"
+      stageUuid: "a62accdf-8a95-8170-a859-ff36535fff39"
     - stage: uuid
-      stageUuid: "38fca73d-a19e-82c0-9b90-cf198deecab3"
+      stageUuid: "cd1cd764-727a-8d21-b933-cb064b8aa682"
 version: 2
 ---
 # covenant — the binding mutual bond, sealed

@@ -2,20 +2,20 @@
 name: "6585"
 description: Use when implementing or referencing RFC 6585 — Additional HTTP Status Codes.
 atomPath: "rfc/6585"
-coordinate: "rfc/6585 · 8/crest · 4493ce7a"
-contentUuid: "41c47373-8f74-5649-82ad-3005e5e4f2c6"
-diamondUuid: "de85fa6e-de43-8b84-b3ad-bdeb543ea92b"
-uuid: "4493ce7a-a5be-87f5-8452-4dbf3ffff253"
+coordinate: "rfc/6585 · 8/crest · 12e479b3"
+contentUuid: "5b058756-68a8-526e-8ae4-0635fa4dca57"
+diamondUuid: "7ea22114-3d75-84bd-b116-3e851952127c"
+uuid: "12e479b3-eb7e-8f6c-ae74-406cc088752c"
 horo: 8
 typography:
   partition: rfc
-  bondDegree: 0
+  bondDegree: 3
 standards:
   - "6585 §4 too-many-requests-429"
   - "OWASP-ASVS"
 bindings: []
 signatures:
-  computationUuid: "0d09c57d-7d93-8477-ae43-7db33c8dc864"
+  computationUuid: "65b2fcc5-309e-8bac-86ec-e20cf9b81776"
   stages:
     - stage: path
       stageUuid: "a0ced5ca-4291-8dba-b516-8cf794f431f2"
@@ -24,13 +24,13 @@ signatures:
     - stage: boundary
       stageUuid: "0bfccefd-db6c-876c-ae25-4b4110972403"
     - stage: links
-      stageUuid: "b42849c7-6687-800f-a56f-ef22fe0ecbea"
+      stageUuid: "9a87a8b0-e431-8d52-84e9-25002d42289c"
     - stage: horo
-      stageUuid: "ab4e6964-2a60-811c-a875-f721e919f2e9"
+      stageUuid: "ff49caf8-49e9-8836-8f37-ebc8c50cb971"
     - stage: seal
       stageUuid: "b4e181a2-5f88-8d80-b211-a9b4554c728a"
     - stage: uuid
-      stageUuid: "092b075b-d26b-8b0a-8317-7a40bbf29590"
+      stageUuid: "7e8bd476-1977-89ff-8b17-d613e9ed4f2f"
 version: 2
 ---
 # RFC 6585 — Additional HTTP Status Codes

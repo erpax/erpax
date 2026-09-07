@@ -3,13 +3,13 @@ name: debounce
 description: "Use when reasoning about debounce — holds a changing value still for a delay before releasing it, so a search field issues one request when typing stops instead of one per character."
 atomPath: "use/debounce"
 coordinate: "use/debounce · 8/crest · 61c45da6"
-contentUuid: "c663eb9d-8474-5455-861f-c0612ec3548a"
+contentUuid: "41d2eeda-991e-5b43-a0ee-921cbf0d3e2e"
 diamondUuid: "9e32af1d-1c83-8256-9be7-cf58256d8b86"
 uuid: "61c45da6-b04f-85eb-84d3-84dfe7f6db74"
 horo: 8
 typography:
   partition: use
-  bondDegree: 6
+  bondDegree: 3
 standards: []
 bindings: []
 signatures:

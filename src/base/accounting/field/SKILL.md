@@ -2,14 +2,14 @@
 name: field
 description: "Use when a Payload collection needs a shared accounting field — currency, unit-of-measure, measured quantity, status, reference, GL account, country/legal-entity/NACE, audit/timestamp/notes — built from one factory instead of an inlined field literal."
 atomPath: "base/accounting/field"
-coordinate: "base/accounting/field · 2/share · 66d85055"
-contentUuid: "a37583dc-5d70-5140-8b80-e6db94e4f163"
-diamondUuid: "850d3b6f-17e6-8980-9964-8a840cbd6900"
-uuid: "66d85055-0e77-897b-abe2-95411c8ac826"
-horo: 2
+coordinate: "base/accounting/field · 5/round · be000177"
+contentUuid: "5d0140c2-6df5-59fb-8208-42e606f11525"
+diamondUuid: "ba306d86-b506-8b05-a7dd-b00ed4fbee45"
+uuid: "be000177-b299-81d4-a7b8-19fa0e3b97c9"
+horo: 5
 typography:
   partition: base
-  bondDegree: 21
+  bondDegree: 322
 standards:
   - "EN-16931"
   - "EN-16931 §BT-130 invoiced-quantity-unit-of-measure"
@@ -29,7 +29,7 @@ standards:
   - "UN/CEFACT Recommendation 20 unit-of-measure-codes"
 bindings: []
 signatures:
-  computationUuid: "c46e6221-a5ff-8221-8127-3372efc4cc3a"
+  computationUuid: "7876ce50-615e-8e11-acec-022e99130ed0"
   stages:
     - stage: path
       stageUuid: "bf3497ec-f4dc-8553-9f95-9f739375a8d0"
@@ -40,11 +40,11 @@ signatures:
     - stage: links
       stageUuid: "528fdff6-3ee3-8773-8ad8-459ab0bdaf24"
     - stage: horo
-      stageUuid: "ccbe579c-c154-8503-bbc4-d5e48bcebfa9"
+      stageUuid: "4f87f56c-d839-8ff6-a721-09981fca2b12"
     - stage: seal
       stageUuid: "183e7989-4b93-8210-a5d0-f0dfb6eabcbe"
     - stage: uuid
-      stageUuid: "df150e93-86d9-89a8-91de-abb60a5a096d"
+      stageUuid: "7b3cbe2e-7b98-8411-aac2-fffa19abb2db"
 version: 2
 ---
 # base/accounting/field — the shared accounting field factories

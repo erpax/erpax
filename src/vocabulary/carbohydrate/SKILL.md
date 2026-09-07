@@ -2,19 +2,19 @@
 name: carbohydrate
 description: "Use when reasoning about carbohydrate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/carbohydrate"
-coordinate: "vocabulary/carbohydrate · 7/descent · 3965ffeb"
-contentUuid: "1866e225-84ca-5786-b9d7-c08f33062705"
-diamondUuid: "e310720a-aa7c-8ab9-ba00-5f3b7492e710"
-uuid: "3965ffeb-3400-8cc2-9097-2479ef95467c"
+coordinate: "vocabulary/carbohydrate · 7/descent · 252f72b4"
+contentUuid: "950c3937-86a7-5aa0-b87c-730a0818a78b"
+diamondUuid: "1aef201a-fc63-82fa-8c0d-6e366d33bab8"
+uuid: "252f72b4-837c-88bd-9937-3f27b62b6d64"
 horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 16
+  bondDegree: 18
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1cc6509c-2a65-89d0-908f-1a58201160dc"
+  computationUuid: "f344c5be-59e3-8807-bdb1-8b312dc43d0f"
   stages:
     - stage: path
       stageUuid: "816b8bdb-fd0b-8ccf-b6a3-37dfefefab29"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "26e09cd4-7360-84e4-8405-0a608e1de004"
     - stage: horo
-      stageUuid: "611e525c-5323-884f-8fcc-3f461e6c315e"
+      stageUuid: "5eae7b9f-a0b8-8d35-b8d7-f838cd7f7d10"
     - stage: seal
-      stageUuid: "ba8a23bb-9fd8-8966-b66c-384cb31bbac0"
+      stageUuid: "78b99a01-b363-8b64-84bd-edfe06d985b9"
     - stage: uuid
-      stageUuid: "6be87fe6-45f2-8aaa-9ef1-a11101cd1aa6"
+      stageUuid: "cc4d5ae3-4036-8aea-ac34-b33d173d62df"
 version: 2
 ---
 # carbohydrate

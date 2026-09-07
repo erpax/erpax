@@ -2,11 +2,11 @@
 name: layout
 description: "Use when reasoning about layout as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/layout"
-coordinate: "vocabulary/layout · 2/share · d64085ed"
-contentUuid: "dac1ed15-ccb0-5852-832b-7e7d107849ec"
-diamondUuid: "5cf0bdda-d939-835c-ac58-1437fbd64b3f"
-uuid: "d64085ed-fa82-8a5b-a16a-07387fcc1ee1"
-horo: 2
+coordinate: "vocabulary/layout · 5/round · 011db7a3"
+contentUuid: "9a7e547a-f9fe-5137-9591-a6e652c10e06"
+diamondUuid: "478fd6e5-0eb0-80d8-bd6d-dc5f2eb9ced6"
+uuid: "011db7a3-72da-86e7-8dea-dbd554875943"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "72b3f58a-15c2-8ae1-9235-7fbde26f8629"
+  computationUuid: "37b0ae3a-30c7-84f9-8a4e-684b1d954552"
   stages:
     - stage: path
       stageUuid: "69682502-cdda-8e41-b858-2c7df23d54b1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "291a5d87-c2a1-89c0-8206-6f50a4995fc3"
     - stage: horo
-      stageUuid: "9e0c399b-f5d7-80fd-9565-ff930c87665a"
+      stageUuid: "8038e3ee-1d0a-8d16-9d39-dc6c3c2c03b2"
     - stage: seal
-      stageUuid: "dc5d9f75-0db8-82ad-95fc-0a3a115d4eb2"
+      stageUuid: "307325d3-32dd-8287-8f8b-1f13207e68a1"
     - stage: uuid
-      stageUuid: "8dbdd839-051a-8c51-9a0b-fb73d84a3509"
+      stageUuid: "d06fcae7-5477-8b8c-b0e1-7fb8f676fb33"
 version: 2
 ---
 # layout

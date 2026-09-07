@@ -2,11 +2,11 @@
 name: published
 description: Use when reasoning about published — An agent associated with the publication event.
 atomPath: "vocabulary/published"
-coordinate: "vocabulary/published · 8/crest · 889d2562"
-contentUuid: "e94b97e2-a159-575e-9f6b-95aad378713d"
-diamondUuid: "fef095ed-169f-8510-87ff-3b898815d0a4"
-uuid: "889d2562-ab3e-8491-afe5-beba67d45b93"
-horo: 8
+coordinate: "vocabulary/published · 1/base · 87c69675"
+contentUuid: "a14cfcb4-8eb8-5b44-aa5e-53c7b3c18c6f"
+diamondUuid: "47af626d-c0e3-8a69-bc26-7510a5cc8632"
+uuid: "87c69675-bf84-862d-bc18-a1d710344173"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 14
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c6310988-557f-8768-be7f-2fd90bd98249"
+  computationUuid: "50bf475e-3c18-8ea8-b925-ba7aa3886242"
   stages:
     - stage: path
       stageUuid: "0b30ee10-364d-8db1-8692-50d227291733"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "780f6358-7ce3-887e-a70e-291c48b89ead"
     - stage: horo
-      stageUuid: "6dd20317-29a6-8149-971d-2c045a6e697f"
+      stageUuid: "ad8af180-ac7e-85e9-93ee-93532b3f503c"
     - stage: seal
-      stageUuid: "1842a5a1-16e9-8bb7-93ab-a798d9a8c9f0"
+      stageUuid: "ab0fb5bb-4cd7-89bf-ae32-f834189ffb7e"
     - stage: uuid
-      stageUuid: "364b12a1-4486-8756-bdc5-ceb869eb967c"
+      stageUuid: "d240947f-f088-8f7c-a04f-c99891779b61"
 version: 2
 ---
 # published

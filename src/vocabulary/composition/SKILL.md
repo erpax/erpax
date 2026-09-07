@@ -2,19 +2,19 @@
 name: composition
 description: "Use when reasoning about composition as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/composition"
-coordinate: "vocabulary/composition · 7/descent · a940febf"
-contentUuid: "2590353e-46a8-58bf-b100-b049fe6f7b17"
-diamondUuid: "b9890019-368d-889c-a8e9-259c4936bcc8"
-uuid: "a940febf-0cc7-882b-896b-6936e0ab94f6"
-horo: 7
+coordinate: "vocabulary/composition · 8/crest · e7edef76"
+contentUuid: "0164c20c-8955-53ee-9132-56eba86474db"
+diamondUuid: "3282ce79-878e-865e-82ff-4479c2fb0248"
+uuid: "e7edef76-4ae3-8d0e-b68e-9036769eacc2"
+horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 31
+  bondDegree: 33
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5a887df6-0ce1-8308-99e8-ed294da86bef"
+  computationUuid: "8e1254da-4304-832d-bf6b-059bf49092ec"
   stages:
     - stage: path
       stageUuid: "3a6c2f18-d89d-8e1c-a8d4-9d1ed0c58eec"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9fac40c9-1df2-8b73-acf1-b5dce80969ff"
     - stage: horo
-      stageUuid: "f42e3f0d-bdf6-8f32-9b5d-81c08a9baad7"
+      stageUuid: "fb2f464c-80e7-8b8d-8efa-840600742186"
     - stage: seal
-      stageUuid: "c31841af-06fc-85eb-abc9-68eb0658a5a8"
+      stageUuid: "7ebbe175-edfb-8dcd-8865-b26a5f327da5"
     - stage: uuid
-      stageUuid: "3502dbed-603f-8a9c-97e1-54a2ad908340"
+      stageUuid: "61d835b6-5f92-8c23-8ec0-68c451234913"
 version: 2
 ---
 # composition

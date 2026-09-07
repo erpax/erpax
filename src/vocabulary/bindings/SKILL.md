@@ -1,11 +1,11 @@
 ---
 name: bindings
-description: "Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindings — D1, R2, KV, Durable Objects, Queues, Workers AI, Vectorize, Analytics Engine, Browser, service self-reference, Hyperdrive, cron — or when a binding \"works in config but fails at runtime\" (e.g. \"no such Durable Object class is exported from the worker\"). The map of binding ↔ capability ↔ cost lever ↔ gap for the self-managed edge app."
+description: "Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindings — D1, R2, KV, Durable Objects, Queues, Workers AI, Vectorize, Analytics Engine, Browser, service self-reference, Hyperdrive, cron — or when a binding \\\\\\\"works in config but fails at runtime\\\\\\\" (e.g. \\\\\\\"no such Durable Object class is exported from the worker\\\\\\\"). The map of binding ↔ capability ↔ cost lever ↔ gap for the self-managed edge app."
 atomPath: "vocabulary/bindings"
-coordinate: "vocabulary/bindings · 2/share · b5e963ee"
-contentUuid: "bbaaa022-1be0-5352-801f-8496d2001e0c"
-diamondUuid: "be5c5193-9a91-8ef6-9e35-4d4ee31ba209"
-uuid: "b5e963ee-a2df-8d42-b9bc-02e01e074640"
+coordinate: "vocabulary/bindings · 2/share · f72ee845"
+contentUuid: "67e61556-405a-5992-aba3-5ff243543b2d"
+diamondUuid: "d14cc866-31a4-8ecb-a575-a3e4ef4edf5f"
+uuid: "f72ee845-1bee-8f0c-81d9-2130dfb179f7"
 horo: 2
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "adeaecd8-0626-8c63-a6c7-20324c617eae"
+  computationUuid: "d267db82-0f5e-8af7-a70a-602d2289eb1a"
   stages:
     - stage: path
       stageUuid: "73db70eb-5db8-86db-b860-1416a1766a2e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5943bce6-bff0-831b-b05d-4d2f3b347568"
     - stage: horo
-      stageUuid: "9f33dc35-3af7-82bb-ae7d-f9c9b20b70e9"
+      stageUuid: "058dab05-c9bc-8713-a55d-8aa90ca0b3f5"
     - stage: seal
-      stageUuid: "7c1cdb57-fb42-84cb-b3f6-f44a48312c4d"
+      stageUuid: "1144b007-e2ff-895f-b992-388b3a648841"
     - stage: uuid
-      stageUuid: "e7812f5c-7f8a-8259-b569-03602fa86832"
+      stageUuid: "581591ab-b0b4-89aa-8f2d-e376158b9941"
 version: 2
 ---
 # bindings — erpax fully self-managed on Cloudflare (every binding is a cost lever)

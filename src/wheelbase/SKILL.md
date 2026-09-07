@@ -2,10 +2,10 @@
 name: wheelbase
 description: "Use when reasoning about wheelbase — The distance between the centers of the front and rear wheels. Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT for foot/feet."
 atomPath: wheelbase
-coordinate: "wheelbase · 7/descent · 2880119e"
-contentUuid: "3526b032-ad72-5208-91d9-6d6c1f92ab01"
-diamondUuid: "97dd8f28-ccaf-839d-ba8c-4d25b9944772"
-uuid: "2880119e-45a5-8c89-a5d9-9d682102760a"
+coordinate: "wheelbase · 7/descent · 739615ee"
+contentUuid: "d57e5ed1-5104-5945-89b5-5bacf090532a"
+diamondUuid: "790b1583-93fa-8c64-afa4-dd9d580bfba0"
+uuid: "739615ee-6de6-84f6-a08e-f25b8bf2ea45"
 horo: 7
 typography:
   partition: wheelbase
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bcf1553d-8621-872f-b750-4b881fe44de8"
+  computationUuid: "4c1bf435-e852-86d6-9e60-2e2292078ebc"
   stages:
     - stage: path
       stageUuid: "97f48602-cd71-878d-9ff5-32ff43ad2745"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f7eb2498-c3a7-8437-9ad9-85fd5542c139"
     - stage: horo
-      stageUuid: "94182bee-7e29-8b9d-9fe0-32e9a2ffed09"
+      stageUuid: "00fafe6f-1da4-809a-806d-3c59b1f50b11"
     - stage: seal
       stageUuid: "e4d226c6-b100-86e4-b398-e774c9fbb571"
     - stage: uuid
-      stageUuid: "9474e24a-df58-82db-a27e-5b3e29a5de1e"
+      stageUuid: "4ca7a034-0cce-84f4-8751-de08f7404e72"
 version: 2
 ---
 # wheelbase

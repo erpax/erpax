@@ -2,11 +2,11 @@
 name: episode
 description: "Use when reasoning about episode — A media episode (e.g. TV, radio, video game) which can be part of a series or season."
 atomPath: "vocabulary/episode"
-coordinate: "vocabulary/episode · 5/round · b3510bc9"
-contentUuid: "9e7ba6a8-fc1a-5b41-9b40-6f93e63887b1"
-diamondUuid: "758b0700-ce3c-8027-b331-55f8e816c219"
-uuid: "b3510bc9-bea8-8857-83fe-a841e2dca46a"
-horo: 5
+coordinate: "vocabulary/episode · 8/crest · f4545d08"
+contentUuid: "4fae05c6-bdbc-547c-b7f0-15b6c895c4c3"
+diamondUuid: "934920a8-3fb2-8bd9-a3fa-3d31d972716b"
+uuid: "f4545d08-6a03-82b4-bcf6-23481c6df13c"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 21
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7fc62500-6462-8767-8482-467f781a3e22"
+  computationUuid: "42e9cb06-3033-8f08-b7c8-b7998b7e162a"
   stages:
     - stage: path
       stageUuid: "a80a8d83-bb8a-81e8-9c02-fb84be58e3d2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fdaedfb7-538b-8f05-a320-be626e34bdfb"
     - stage: horo
-      stageUuid: "ee4087d7-be65-898f-ac8a-a0f89b3e8a38"
+      stageUuid: "142ce653-bdc8-82bd-a000-981e128ffa32"
     - stage: seal
-      stageUuid: "49638024-b600-8ec6-8053-6f14a66aca1f"
+      stageUuid: "759300b6-8f2a-84d8-8592-d220a3421fe8"
     - stage: uuid
-      stageUuid: "f90f0ca2-f4cf-88ea-ab88-b6edeeec279b"
+      stageUuid: "c330ddb4-3e46-8973-bcd9-a4e6bda47d0f"
 version: 2
 ---
 # episode

@@ -2,10 +2,10 @@
 name: living
 description: "Use when reasoning about living as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/living"
-coordinate: "vocabulary/living · 4/weave · 8a8cbbe1"
-contentUuid: "4c01f867-a187-59c7-9d27-4ed548d7c490"
-diamondUuid: "23d9138b-f9d2-8493-8922-4a39881aa6fd"
-uuid: "8a8cbbe1-212f-8e25-94b6-83e71073ebd1"
+coordinate: "vocabulary/living · 4/weave · e0085ca0"
+contentUuid: "1ee51e77-5a23-545d-8551-f23570399084"
+diamondUuid: "89ca7aae-5f1c-8404-94f1-9c11b13bb95f"
+uuid: "e0085ca0-3747-8258-a6b7-b557693d36fb"
 horo: 4
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "128d3907-c659-86a5-b6db-9adab056bb45"
+  computationUuid: "d8528423-72b4-8889-996d-ce77f8330bc3"
   stages:
     - stage: path
       stageUuid: "d2a73cc1-3332-8cab-a054-45c978e6781c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fc5cd4a8-dcc9-82bb-8ae0-bc978d639b3d"
     - stage: horo
-      stageUuid: "68449426-03b0-8284-8433-e83aa2813665"
+      stageUuid: "1286c3eb-a2aa-8373-8a1a-53e54e73b002"
     - stage: seal
-      stageUuid: "6b1bd7a6-77d1-8c74-9604-4d5bbfba2b63"
+      stageUuid: "342d8117-0eee-8417-8fa5-3a7a33ac5e4c"
     - stage: uuid
-      stageUuid: "9212a78e-f586-8c9c-875d-8d5ffaf43b38"
+      stageUuid: "f859462f-10ef-88b9-a765-3a9c2517acf7"
 version: 2
 ---
 # living

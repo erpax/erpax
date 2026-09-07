@@ -2,11 +2,11 @@
 name: scholarly
 description: "Use when reasoning about scholarly as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: scholarly
-coordinate: "scholarly · 1/base · d32db8bd"
-contentUuid: "b8784129-58dd-560e-815b-5fb56e851c13"
-diamondUuid: "75b9457c-19ab-880b-88ac-cfd4b7de7d5d"
-uuid: "d32db8bd-df7b-8119-9a0d-983f4af6b84f"
-horo: 1
+coordinate: "scholarly · 8/crest · 9410c09f"
+contentUuid: "c431f0a2-38aa-5110-984b-0209bbe09cb3"
+diamondUuid: "85789e63-b0ab-8e0a-8d0f-f60a32f571bd"
+uuid: "9410c09f-07a4-8d61-ac17-76b259163cb5"
+horo: 8
 typography:
   partition: scholarly
   bondDegree: 29
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cb5fe1ec-70aa-85ae-aecb-6d7fd8d22157"
+  computationUuid: "c4ce5b5f-3981-8a9f-8356-7e65b891a27d"
   stages:
     - stage: path
       stageUuid: "c5dfd29e-989f-8d51-88db-081a1f47cf67"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "036a4df0-c4c7-8f2e-ab79-546ff832e799"
     - stage: horo
-      stageUuid: "a6c595e7-4206-83e5-a850-fdd7aaf7e215"
+      stageUuid: "1791cf30-3e8a-89d8-9075-863c50d13ff6"
     - stage: seal
       stageUuid: "7b682bee-6bfe-896a-ac3a-f76c756b723b"
     - stage: uuid
-      stageUuid: "567b18f3-6f22-898b-8095-b091a351cff3"
+      stageUuid: "7fec69b4-2a1c-8c97-a466-4c9cb18156ac"
 version: 2
 ---
 # scholarly

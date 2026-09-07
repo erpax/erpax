@@ -2,21 +2,22 @@
 name: "19011"
 description: Use when implementing or referencing ISO 19011 — Guidelines for auditing management systems.
 atomPath: "iso/19011"
-coordinate: "iso/19011 · 4/weave · 5b4daf92"
-contentUuid: "cd6a98c2-c373-5abb-96b9-4b7bac36a58a"
-diamondUuid: "7f349555-293e-815b-8ce6-fb052fa4b877"
-uuid: "5b4daf92-2baa-8ce8-b084-4508ce29eece"
-horo: 4
+coordinate: "iso/19011 · 1/base · a1aff3df"
+contentUuid: "cfd5b219-4608-5657-9c91-bb0f56bb05b6"
+diamondUuid: "eb7b643b-4ac6-89c6-a988-598ac417a37b"
+uuid: "a1aff3df-1379-8d0b-a592-69aa4cad0f5a"
+horo: 1
 typography:
   partition: iso
-  bondDegree: 1
+  bondDegree: 9
 standards:
   - "ISO-19011:2018 audit-trail"
   - "ISO-19011:2018 audit-trail`"
+  - "ISO/IEC-29119"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "be3bc98a-b8ac-801d-a9dd-fdc4840f97a2"
+  computationUuid: "e4f6e061-629d-807b-a38d-e88bcf33266b"
   stages:
     - stage: path
       stageUuid: "d9d5a5ae-924a-8b0e-a4e6-31b63b7216ea"
@@ -25,13 +26,13 @@ signatures:
     - stage: boundary
       stageUuid: "b844e7d7-b7b7-8df7-972f-b762d7ab2ba1"
     - stage: links
-      stageUuid: "54b3115d-1d90-836a-85c4-eb083ec4dbcb"
+      stageUuid: "4131b842-6e73-8421-a899-9a1e7e5956cb"
     - stage: horo
-      stageUuid: "b23d1ecc-cabd-80bf-9a47-56ab6ba09cb7"
+      stageUuid: "a6b6ff76-13c2-871e-a113-4a23c87416a1"
     - stage: seal
-      stageUuid: "87a2c432-eeaa-877e-9f7c-ef389f9efaf6"
+      stageUuid: "a90929be-cdef-8bf0-90ef-9966e376f97f"
     - stage: uuid
-      stageUuid: "db4d8d98-3db7-81a8-bc41-f3b8eb7a85a8"
+      stageUuid: "e0fe693e-1464-856c-bd56-83e769841886"
 version: 2
 ---
 # ISO 19011 — Guidelines for auditing management systems

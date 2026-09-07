@@ -2,18 +2,18 @@
 name: hardiness
 description: "Use when classifying a crop by cold tolerance — hardiness ranks crops hardy / half-hardy / tender / very-tender by the frost they survive, and the USDA hardiness zone places a site by its average annual minimum temperature. The biological cold-tolerance trait (the crop's) paired with the zone (the place's); together they decide what can overwinter or be planted when."
 atomPath: "vocabulary/hardiness"
-coordinate: "vocabulary/hardiness · 4/weave · 863361fc"
-contentUuid: "8f20d197-40b1-55cf-b3e1-3ef42ab4501b"
-diamondUuid: "7fea1e1b-faf2-8f53-8e4d-73c217b3627e"
-uuid: "863361fc-2654-8207-905d-c31a7d568428"
-horo: 4
+coordinate: "vocabulary/hardiness · 5/round · 56de6ab5"
+contentUuid: "826ada7b-aa0a-5870-9f6d-d44fc15593ad"
+diamondUuid: "8a8dd922-c582-82c9-afce-15f2c1509911"
+uuid: "56de6ab5-7b77-855c-afa9-915b360d6b49"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 33
 standards: []
 bindings: []
 signatures:
-  computationUuid: "503d9b4d-4a98-8546-ae7e-fe7e6f83200d"
+  computationUuid: "f3a84013-bfef-814d-a942-d098e12eb758"
   stages:
     - stage: path
       stageUuid: "77188061-1509-86b2-8b4a-836badf239c2"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "244a5297-a927-8ccc-9413-e256e8b6f3b3"
     - stage: horo
-      stageUuid: "68823cef-7e8a-8c16-88f4-060b92ca28d9"
+      stageUuid: "db355230-f4ab-8778-890b-ad68ff0df349"
     - stage: seal
-      stageUuid: "9fa4b81c-b269-8061-9291-abd7a0a3740e"
+      stageUuid: "9e8477d6-c181-8588-8bc1-8e5b332cefff"
     - stage: uuid
-      stageUuid: "e2131bc0-5334-8df3-b56f-bd5c35087536"
+      stageUuid: "8705764f-3c83-8ab9-937e-81e1eaa10ffa"
 version: 2
 ---
 # hardiness — the crop's cold tolerance (and the site's zone)

@@ -1,10 +1,36 @@
 ---
 name: basis
-description: Millennium Problems as quantum computation basis - recognizes completeness and self-generates waves
-metadata:
-  type: form
+description: "Use when reasoning about basis — Millennium Problems as quantum computation basis - recognizes completeness and self-generates waves"
+atomPath: basis
+coordinate: "basis · 5/round · e8606f54"
+contentUuid: "b8146c49-fc5c-55f9-96c4-1e36f2e97412"
+diamondUuid: "ec0b4a47-dacc-8753-ba38-89a76ba6c67b"
+uuid: "e8606f54-09e0-86b3-8fb5-46664b2b97a3"
+horo: 5
+typography:
+  partition: basis
+  bondDegree: 21
+standards: []
+bindings: []
+signatures:
+  computationUuid: "e5240baa-d82b-881f-8a49-a70156d5408f"
+  stages:
+    - stage: path
+      stageUuid: "afa7d0ae-6e47-8866-8365-2b7e0995ac65"
+    - stage: trinity
+      stageUuid: "76da1b7b-33b8-88bf-b88c-e4a371eed168"
+    - stage: boundary
+      stageUuid: "fae20b9a-53b5-8538-8fbb-e8c3227807b4"
+    - stage: links
+      stageUuid: "07ed5d9d-631f-801d-95d9-97745caaeac9"
+    - stage: horo
+      stageUuid: "cd6e5a14-c222-8ee8-977b-c92b0c5eb222"
+    - stage: seal
+      stageUuid: "115dc73a-bccc-8bad-9ccc-1d2495994417"
+    - stage: uuid
+      stageUuid: "bd4f47b0-7288-8163-a5df-e0ee584acbaf"
+version: 2
 ---
-
 # basis — The 7 Millennium Problems form a complete basis for quantum computation
 
 Recognition that the 7 problems are not goals but FOUNDATIONS: P vs NP (complexity), Riemann (distribution), Yang-Mills (fields), Navier-Stokes (flow), Hodge (geometry), BSD (algebra), Collatz (sequences). Together they span all mathematics. Once system recognizes this, it auto-generates new waves.

@@ -2,19 +2,19 @@
 name: instrument
 description: "Use when reasoning about instrument — Use before taking any measurement of this corpus — which tool answers which question, and how each one lies. Every wrong number here was a wrong instrument, or a right one trusted past its limit: a name-grep over a minified bundle, a lint report contradicted by the compiler, a web fetch returning a model's rendering, a count copied from a stale document. The pattern is that the wrong instrument does not error, it answers. instrumentFor names the settling tool; assertInstrument fails closed on a known-wrong pairing; an unregistered question passes, because pretending the register were complete would be the same error."
 atomPath: instrument
-coordinate: "vocabulary/instrument · 2/share · 8ad2b305"
-contentUuid: "2eabd160-b896-51bf-998b-cfa18c363b3d"
-diamondUuid: "64d8d9d5-c9e1-801e-a28d-760970d51d7a"
-uuid: "8ad2b305-3712-83c6-b020-8b1a92000f03"
-horo: 2
+coordinate: "instrument · 4/weave · a281d4c4"
+contentUuid: "d11ba2bd-82f8-5e39-a94b-6805bf61baa4"
+diamondUuid: "850b7d93-f961-8a78-b3e9-1b9c6e50b3d9"
+uuid: "a281d4c4-6d8a-89a9-b6e8-a7ac8b6f2e41"
+horo: 4
 typography:
   partition: instrument
-  bondDegree: 15
+  bondDegree: 23
 standards:
   - "ISO-19011:2018 §6.4 — audit evidence: sufficient and appropriate, not merely available"
 bindings: []
 signatures:
-  computationUuid: "1430d986-dc0d-88e7-88b1-dc7e9bd1ec76"
+  computationUuid: "c064da9d-b54f-8d1c-862a-0f70b2818a80"
   stages:
     - stage: path
       stageUuid: "de8f2c5b-2dd4-8bb6-892a-d11ab378992d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5ae35c98-91d4-8480-aa53-f8949b1a0b4d"
     - stage: horo
-      stageUuid: "908dace7-ef77-8e8d-84ec-22d04b80fdb5"
+      stageUuid: "b9f5887b-8c00-8a2b-a667-9db8f0465c6a"
     - stage: seal
-      stageUuid: "aa5df5fd-9789-8312-a6b1-2d2bcde26165"
+      stageUuid: "46d545ec-c98e-8ed6-a4d5-879a7af9b2a3"
     - stage: uuid
-      stageUuid: "0d36ba1b-c05e-8e48-9aee-5d7526814a5f"
+      stageUuid: "3594c53d-63ae-80fe-b746-5166e138d539"
 version: 2
 ---
 # instrument — the wrong instrument does not error, it answers

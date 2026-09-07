@@ -1,19 +1,19 @@
 ---
 name: unity
-description: "Use when reasoning about the closing position of the horo state ring — digit 9, \"the ring closes\", the settle/merge step where a flow completes and re-opens one octave up (settled, sealed, closed, reconciled). Closes the descent/return arc; nested under horo."
+description: "Use when reasoning about the closing position of the horo state ring — digit 9, \\\"the ring closes\\\", the settle/merge step where a flow completes and re-opens one octave up (settled, sealed, closed, reconciled). Closes the descent/return arc; nested under horo."
 atomPath: "horo/unity"
-coordinate: "horo/unity · 5/round · 646705cf"
-contentUuid: "2829e5ac-fe41-5e8e-b6e1-fddb9e1f8dce"
-diamondUuid: "2019e794-d779-8c24-a2a2-a838c617ae0a"
-uuid: "646705cf-c018-8070-b52f-c7745a1ccd6e"
-horo: 5
+coordinate: "horo/unity · 1/base · e24a4add"
+contentUuid: "79333761-c3b6-58dd-9203-46ccd39ddd6f"
+diamondUuid: "90d3079a-c2d5-8158-abbc-e33afc900e58"
+uuid: "e24a4add-d7fb-8336-b35a-e3169eea60ca"
+horo: 1
 typography:
   partition: horo
   bondDegree: 53
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c8bd42d0-07d5-8e62-9717-0f32e8daeea8"
+  computationUuid: "d618fc3b-1c81-8671-9417-c64752e606fb"
   stages:
     - stage: path
       stageUuid: "0eb3c438-c4e3-894c-ba30-625976ead2bf"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "fac30013-ace8-8e62-ba3b-2ad4c9a22049"
     - stage: horo
-      stageUuid: "af734680-e67d-8ae4-a306-0210cd33e585"
+      stageUuid: "0288acd9-5b5d-89a2-92ae-dbf9e303453a"
     - stage: seal
       stageUuid: "415e9699-8c2b-812d-b294-fc88ee5c3993"
     - stage: uuid
-      stageUuid: "04216327-2793-8a4d-9775-5f25d02e4d79"
+      stageUuid: "ddd7d6d7-9ec5-86f4-9389-59585a9bf3cd"
 version: 2
 ---
 # unity — horo position 9 (the ring closes)

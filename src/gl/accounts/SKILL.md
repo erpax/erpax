@@ -2,20 +2,21 @@
 name: accounts
 description: "Use when maintaining the Chart of Accounts — creating or deactivating GL accounts, assigning accountType (asset/liability/equity/revenue/expense/gain-loss), tagging canonical roles (cash, ar, ap, revenue, IFRS-16 lease accounts) for the gl-account-resolver, tracking balances, and auditing account changes. The SAF-T §2 chart-of-accounts node."
 atomPath: "gl/accounts"
-coordinate: "gl/accounts · 4/weave · 803c33da"
-contentUuid: "8b9fea40-51e6-5850-97e7-602c13aee160"
-diamondUuid: "66e3092e-9cc7-8671-a0ae-dad92302801c"
-uuid: "803c33da-f2c8-838d-b179-adc662e843a5"
+coordinate: "gl/accounts · 4/weave · b25736e7"
+contentUuid: "3f16c2b9-35f6-5b5a-81d3-06ce94ad3b6b"
+diamondUuid: "f9061f83-0485-800e-8fc9-608b54cda8f0"
+uuid: "b25736e7-a35c-837e-8a02-aa8e8be97b57"
 horo: 4
 typography:
   partition: gl
-  bondDegree: 0
+  bondDegree: 44
 standards:
   - "IFRS IAS-1 presentation-of-financial-statements"
   - "ISO-3166-2"
   - "ISO-4217:2015 currency-codes account-currency"
   - "ISO-4217:2015 currency-codes account-currency`"
   - "ISO-9362"
+  - "ISO/IEC-29119"
   - "OECD SAF-T §2 general-ledger-accounts"
   - "RFC-5545"
   - "SOX §404 internal-controls"
@@ -24,22 +25,22 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "249b492f-dec0-82f1-9050-512ac63da1b0"
+  computationUuid: "0f18b180-7e66-81f0-9e3e-389fda362fa3"
   stages:
     - stage: path
       stageUuid: "7e314456-172a-833b-b65a-622e1b2c9fdd"
     - stage: trinity
       stageUuid: "4c05b5e1-1ccc-88be-aae1-8cdf9dbfbc63"
     - stage: boundary
-      stageUuid: "59a8f02c-4f5c-880e-9ee2-638c41ed9528"
+      stageUuid: "aa24dd3d-1c4f-842e-98a9-661346894970"
     - stage: links
       stageUuid: "59b67049-d5e8-85d7-b83e-466ce45a4141"
     - stage: horo
-      stageUuid: "a7587e3d-6b2a-8336-b195-5005d1d87aac"
+      stageUuid: "d433565c-3f92-802c-b9b3-1475556caa04"
     - stage: seal
       stageUuid: "b050fb19-2afc-8106-aefa-e3b6157620fe"
     - stage: uuid
-      stageUuid: "0107de0f-f63c-8740-8d3d-67400ba69edc"
+      stageUuid: "fc5d5f48-9efb-8fe9-823e-b20688ee04cc"
 version: 2
 ---
 # gl-accounts

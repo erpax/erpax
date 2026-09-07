@@ -3,13 +3,13 @@ name: task
 description: "Use when reasoning about task — The barrel binds the registry, the runner and the task types. A scheduled action declared here is enumerable: something can ask what runs, when, and what evidence it leaves."
 atomPath: "scheduled/task"
 coordinate: "scheduled/task · 1/base · 451a4447"
-contentUuid: "0026db58-6b4a-5a5b-bee6-7a40cafcc510"
+contentUuid: "d1db7dba-5fa3-5990-a8ac-3059890b1501"
 diamondUuid: "fa20c31d-cfb1-8bf3-9ae1-3d78c506258d"
 uuid: "451a4447-7a18-8884-b601-56a23ec41df8"
 horo: 1
 typography:
   partition: scheduled
-  bondDegree: 16
+  bondDegree: 13
 standards:
   - "RFC-5545"
 bindings: []

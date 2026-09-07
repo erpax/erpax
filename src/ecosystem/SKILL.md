@@ -2,11 +2,11 @@
 name: ecosystem
 description: "Use when sustainability and decentralisation must be seen as ONE — a food web is a coordinator-free network (decentralised) that wastes nothing (sustainable) for the SAME reason: local agents posting balanced metabolic exchanges, every output another's input, so global conservation and global order both emerge from local balance. erpax IS an ecosystem; nature is the empirical proof of the law."
 atomPath: ecosystem
-coordinate: "ecosystem · 4/weave · 01ed1d6c"
-contentUuid: "dc1364bc-0249-51f0-8854-0821a2e6195f"
-diamondUuid: "6ac756a2-fcd4-810a-be9a-9fee6b74ea11"
-uuid: "01ed1d6c-b595-8514-a62c-8555ea99b538"
-horo: 4
+coordinate: "ecosystem · 7/descent · f976068a"
+contentUuid: "e6b18cae-f70c-5f2d-bc85-bb9b03b3be2b"
+diamondUuid: "cbe7c339-9904-858a-99a6-5a41a86bbddc"
+uuid: "f976068a-43b1-82f6-b898-800e2f24fb9b"
+horo: 7
 typography:
   partition: ecosystem
   bondDegree: 83
@@ -17,7 +17,7 @@ standards:
   - "Tansley (1935) — coined \"ecosystem\": organisms plus environment as one system"
 bindings: []
 signatures:
-  computationUuid: "0f581f31-3823-865c-b491-30dc5185c80c"
+  computationUuid: "6b123da0-b953-8174-ae8e-d2ecbbd81bcf"
   stages:
     - stage: path
       stageUuid: "a45bd5cc-b586-84b5-9859-e0f78950a89c"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "0e692a18-8740-86e7-94a2-9616ed3d40c2"
     - stage: horo
-      stageUuid: "1a56909a-3adc-8c5b-ad98-fc074141be69"
+      stageUuid: "ddbcf7d2-ed01-8086-aa1a-a67992c453c3"
     - stage: seal
       stageUuid: "fea007df-fa7d-8066-880a-129771a399a6"
     - stage: uuid
-      stageUuid: "b01db982-0e92-852c-9f26-f2013379681e"
+      stageUuid: "ebcbb003-6bc5-8823-b06a-30f930983d55"
 version: 2
 ---
 # ecosystem — where decentralization and sustainability are one phenomenon

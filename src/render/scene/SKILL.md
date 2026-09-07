@@ -3,13 +3,13 @@ name: scene
 description: "Use when reasoning about scene — render already projects one content-uuid to **colour · sound · vibration**."
 atomPath: "render/scene"
 coordinate: "render/scene · 4/weave · 46685d9e"
-contentUuid: "866a7c7a-e49f-534b-b4eb-ac08046f6af3"
+contentUuid: "fac7f768-0cdb-53e0-b8af-aefe839d5056"
 diamondUuid: "17d79325-3039-874e-988a-8adeb2394888"
 uuid: "46685d9e-5d69-8eb4-ab33-fcee0f6ba766"
 horo: 4
 typography:
   partition: render
-  bondDegree: 21
+  bondDegree: 18
 standards: []
 bindings: []
 signatures:

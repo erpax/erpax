@@ -1,19 +1,19 @@
 ---
 name: collapse
-description: "Use when reducing collection/table sprawl to its canonical minimum — collapse every collection to one of four sinks (an official Payload plugin/template, the trinity node store, a Lexical content block, or a dimension/state/role of an existing node). The \"collapse all to Payload\" law; one name across every dimension, drawn from the standards."
+description: "Use when reducing collection/table sprawl to its canonical minimum — collapse every collection to one of four sinks (an official Payload plugin/template, the trinity node store, a Lexical content block, or a dimension/state/role of an existing node). The \\\"collapse all to Payload\\\" law; one name across every dimension, drawn from the standards."
 atomPath: collapse
-coordinate: "collapse · 4/weave · 59a66e10"
-contentUuid: "d524353f-e553-5491-8060-95a3403d7d26"
-diamondUuid: "9415e26a-38a3-821b-b93e-d942236e9461"
-uuid: "59a66e10-de5b-8e71-96b3-ca3361d539e4"
-horo: 4
+coordinate: "collapse · 7/descent · cb3abb4d"
+contentUuid: "9e425dbe-7bc5-5bc0-b64b-be442b08eacc"
+diamondUuid: "23cdc693-52b7-855d-af4f-effe9102dd57"
+uuid: "cb3abb4d-de65-8a50-a139-6801906feb75"
+horo: 7
 typography:
   partition: collapse
-  bondDegree: 4324
+  bondDegree: 4311
 standards: []
 bindings: []
 signatures:
-  computationUuid: "28fe88ee-021b-802e-938b-49a1a834ffb9"
+  computationUuid: "f29a63dd-6267-87ed-a004-2c8e51dd7805"
   stages:
     - stage: path
       stageUuid: "9be25188-a050-872d-aec8-83384bf64eeb"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "bf6b7f8e-ee2d-8da1-b2d9-559557ab695f"
     - stage: horo
-      stageUuid: "0f341faf-ba42-80a5-8735-f7e0041cb46b"
+      stageUuid: "f2951fe7-1fd8-8895-aa35-6b8eeb9831bf"
     - stage: seal
       stageUuid: "82531e37-b9b3-8317-91fb-35818811d257"
     - stage: uuid
-      stageUuid: "d7db57af-209a-8032-b4ba-a0e94bddfa17"
+      stageUuid: "eb0a4501-cee7-8994-b189-9404320cf11f"
 version: 2
 ---
 # collapse — the phase transition to a denser, generative core

@@ -2,34 +2,41 @@
 name: card
 description: "Use when reasoning about card as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: card
-coordinate: "card · 5/round · 1f7d3e0b"
-contentUuid: "b146131e-b31f-5050-b05a-83f41b0ddd08"
-diamondUuid: "8a065092-191a-8092-b832-8d189b11a32a"
-uuid: "1f7d3e0b-820a-868a-a11c-a11793b8acc0"
+coordinate: "card · 5/round · 8dac04e3"
+contentUuid: "833d8b87-becc-5d96-a4d6-ff2a956f5a83"
+diamondUuid: "6f6423b7-f01f-802b-85af-1cd8bfdc5f17"
+uuid: "8dac04e3-3e1b-8700-bfa3-1b3fc3fa6a2a"
 horo: 5
 typography:
   partition: card
-  bondDegree: 0
+  bondDegree: 27
 standards:
+  - "3986 uniform-resource-identifier"
+  - "RFC-3986"
+  - "W3C HTML5 article-element"
+  - "W3C-HTML5"
+  - "WCAG-2.1 §2.4.4 link-purpose-in-context"
+  - "WCAG-2.1 §2.5.5 target-size"
+  - schema.org Article
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9519781d-4dd7-85e0-99d1-857d90e28ded"
+  computationUuid: "1961eae5-3ab9-884a-97e4-9ea668757078"
   stages:
     - stage: path
       stageUuid: "080d0f25-3291-8ef6-932c-35dbc535eec8"
     - stage: trinity
-      stageUuid: "b198a672-2f7f-8d95-bb9c-8d61e4d04947"
+      stageUuid: "6fbbaeec-3a15-87b6-8072-d487c0439824"
     - stage: boundary
       stageUuid: "45e03dda-ebed-82af-9687-988525051703"
     - stage: links
       stageUuid: "63fe8173-87c4-89ee-ae44-c2027234889e"
     - stage: horo
-      stageUuid: "5068845a-b9fa-86e8-8d4e-3ed980383b9c"
+      stageUuid: "a50b8a29-6dcf-8ff6-bff0-e32e09287819"
     - stage: seal
-      stageUuid: "35332f39-7791-8798-9cec-bc0f09800e8a"
+      stageUuid: "e178d6dd-5ce5-8154-9300-735b33db22ed"
     - stage: uuid
-      stageUuid: "47d01bff-5f85-8d7b-ac1b-a6af1b47ba51"
+      stageUuid: "1f55cf0c-fc5f-8f8f-8e63-35850dd40e95"
 version: 2
 ---
 # card

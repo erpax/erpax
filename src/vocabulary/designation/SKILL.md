@@ -2,11 +2,11 @@
 name: designation
 description: "Use when reasoning about designation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/designation"
-coordinate: "vocabulary/designation · 5/round · cb996c05"
-contentUuid: "a7133b35-a13c-5340-b7e1-accd2d1f5f59"
-diamondUuid: "d346a2a6-fbb2-8d45-bb60-1672d504a73b"
-uuid: "cb996c05-0573-8448-948e-5eae64b8e5df"
-horo: 5
+coordinate: "vocabulary/designation · 2/share · 50f1d1a8"
+contentUuid: "968deead-4693-5dc1-a605-c7344a41cbc0"
+diamondUuid: "db125430-f185-8fc0-ba64-cf3b3f147196"
+uuid: "50f1d1a8-8fe1-8097-ad57-745c7173ddd9"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "db8bd6be-4625-8351-84ec-7970a2c69531"
+  computationUuid: "0e1ab640-396e-8a37-ad61-8249b6c1919c"
   stages:
     - stage: path
       stageUuid: "a07d9b27-2f5a-8f0f-b04d-4c5a01524462"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6c207676-0c58-83ec-aa3b-54ee9624c574"
     - stage: horo
-      stageUuid: "84ab1582-7a17-8cbf-9069-cc07de1d3f84"
+      stageUuid: "a3c440b5-98fe-83d2-b6be-3acb79ffc11e"
     - stage: seal
-      stageUuid: "c862120e-3482-8412-a927-c9ae39873e59"
+      stageUuid: "47cabaaf-e5a9-861a-a7ae-42c44e3fdf2b"
     - stage: uuid
-      stageUuid: "515a5c66-09aa-8e67-b148-f1d296491b82"
+      stageUuid: "026e8300-7c7d-8e19-9f6b-891c854137d3"
 version: 2
 ---
 # designation

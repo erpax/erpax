@@ -1,19 +1,19 @@
 ---
 name: redirects
-description: "Use when a moved/renamed URL must resolve to its new target (301/302) — the official @payloadcms/plugin-redirects `redirects` collection + the SSR PayloadRedirects resolver. Read before wiring URL redirection, or when a `'redirects'` slug is \"not assignable to CollectionSlug\" (the plugin isn't registered)."
+description: "Use when a moved/renamed URL must resolve to its new target (301/302) — the official @payloadcms/plugin-redirects `redirects` collection + the SSR PayloadRedirects resolver. Read before wiring URL redirection, or when a `'redirects'` slug is \\\\\\\"not assignable to CollectionSlug\\\\\\\" (the plugin isn't registered)."
 atomPath: "vocabulary/redirects"
-coordinate: "vocabulary/redirects · 5/round · ba07635b"
-contentUuid: "9e08030e-680f-57ff-bfd2-f51152db7d25"
-diamondUuid: "078101e3-b273-8b85-861f-e1d2ad817369"
-uuid: "ba07635b-9fd5-8b44-8b95-2a3a42d49aa1"
-horo: 5
+coordinate: "vocabulary/redirects · 7/descent · 855d74d7"
+contentUuid: "d08f942b-0292-507e-8f1e-8f464034613c"
+diamondUuid: "04b2d635-373a-84f0-a99b-3d850e672740"
+uuid: "855d74d7-3a79-81b9-81a9-5f44722cce49"
+horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 25
+  bondDegree: 26
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0f50df82-b817-8227-9ccf-286467374883"
+  computationUuid: "4e906f6d-48ef-8caf-a5d4-8348b019b448"
   stages:
     - stage: path
       stageUuid: "09dff122-1b3e-8a44-8ca0-5926ea8b5edb"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7bd96612-10ca-8583-986d-17d1356696c3"
     - stage: horo
-      stageUuid: "72cec1a6-cfce-8e23-8a6f-c79cd85e3b4e"
+      stageUuid: "d82bda1e-d015-897c-9c5f-f5543e94f251"
     - stage: seal
-      stageUuid: "c20b931c-5acc-81ee-a90f-4804dcb8acd4"
+      stageUuid: "0a573e6d-fa8f-8aae-b5dd-942754df3206"
     - stage: uuid
-      stageUuid: "986af6ca-02af-8e75-978b-66047f06e903"
+      stageUuid: "1ea30721-6e69-80b5-8528-98df3bd48e12"
 version: 2
 ---
 # redirects — URL moved-permanently/found (RFC 9110 §15.4), an official plugin

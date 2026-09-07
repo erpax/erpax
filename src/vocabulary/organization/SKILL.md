@@ -2,11 +2,11 @@
 name: organization
 description: "Use when reasoning about organization — An organization such as a school, NGO, corporation, club, etc."
 atomPath: "vocabulary/organization"
-coordinate: "vocabulary/organization · 8/crest · 684685bd"
-contentUuid: "c9d96e2f-cff2-5629-aeed-42bcce06ecc0"
-diamondUuid: "8850aef5-419c-8080-845c-dae274eb60eb"
-uuid: "684685bd-f8d8-808c-ad69-084282ae53ac"
-horo: 8
+coordinate: "vocabulary/organization · 1/base · fc7e4fa8"
+contentUuid: "1837a41e-9fed-5536-8965-1c0460745df4"
+diamondUuid: "56c63039-2d4a-878e-a03e-50b36adbbaa5"
+uuid: "fc7e4fa8-423a-8788-a253-9abe3b3231f3"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 91
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2c8ff68a-7452-80bb-8c49-73923a40933d"
+  computationUuid: "7a5e6282-a57a-848e-b123-957a0de6da49"
   stages:
     - stage: path
       stageUuid: "e63dae20-c8df-84e5-ab25-da81d0c49e83"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "76dad1da-8929-8404-a507-5a97c7a4c4a1"
     - stage: horo
-      stageUuid: "08447aa5-5220-8fba-acb1-8e4d4ea9adbc"
+      stageUuid: "e2dd7255-70fb-8e97-94e8-502dc5b7f51d"
     - stage: seal
-      stageUuid: "1a6a540c-b365-89fd-a0da-2281f8586990"
+      stageUuid: "8ffc3d8f-46c6-804c-a03d-6be2e2c7bd27"
     - stage: uuid
-      stageUuid: "c39104e5-c0d2-8dd9-99e2-842278e5432b"
+      stageUuid: "27ad1776-4f40-8a4e-a5b5-af092113035b"
 version: 2
 ---
 # organization

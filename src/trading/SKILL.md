@@ -2,14 +2,14 @@
 name: trading
 description: "Use when wiring an OUTBOUND call to a commercial counterparty — a payment gateway, marketplace, shipping carrier, Peppol/EDI access point, banking aggregator, or FX feed. Every such call runs at maximum tamper-cost — gated by the sandbox (capability + credential-broker + endpoint allowlist) and emitting a uuid-chained receipt — so the integration surface is zero-entropy and tamper-evident; credentials live per-tenant by handle, never in code."
 atomPath: trading
-coordinate: "trading · 1/base · c5a77718"
-contentUuid: "224fc107-0ed4-50b7-9dac-85bd6bc14d92"
-diamondUuid: "acd75d5e-5e00-88e6-8f7e-bf730a2a96fb"
-uuid: "c5a77718-e258-89cd-9876-cc43200c50a4"
-horo: 1
+coordinate: "trading · 4/weave · 67370d24"
+contentUuid: "06b3603b-fdd0-5755-9bda-c81768a6fa10"
+diamondUuid: "610b76f8-f816-8871-84e4-b15a59e2a45a"
+uuid: "67370d24-5517-841d-89eb-a54955f697f0"
+horo: 4
 typography:
   partition: trading
-  bondDegree: 57
+  bondDegree: 69
 standards:
   - "EN-16931 Peppol-BIS-3 e-invoicing access-points (AS4 send/receive)"
   - "ISO-3166-1:2020 region-scope (the alpha-2 dispatch key, shared with the [[country]] twin)"
@@ -18,7 +18,7 @@ standards:
   - "RFC-9110 http-semantics (the REST/fetch client surface)"
 bindings: []
 signatures:
-  computationUuid: "43a7d047-4217-8f25-80e1-e6ce5def1848"
+  computationUuid: "0afe1347-e735-8990-9d1b-6dd75ac8d21b"
   stages:
     - stage: path
       stageUuid: "864e1a0a-eecc-8ce3-9db4-0a40af74a45b"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "585dc7a3-a275-8c45-b95e-b70ffc3b9883"
     - stage: horo
-      stageUuid: "57b245e9-ac80-8a72-b648-a5de4abb29a9"
+      stageUuid: "5499b26a-a7f5-8685-a060-b20665592ac5"
     - stage: seal
       stageUuid: "1a8f83f8-bad3-8f9c-a2d5-df4a362407a5"
     - stage: uuid
-      stageUuid: "c4a6a781-a9b0-80a2-9470-7682768fecf4"
+      stageUuid: "2c786191-db4d-81cc-a254-5d90f86eea2c"
 version: 2
 ---
 # trading — the commercial counterparty layer (every outbound call at max tamper-cost)

@@ -2,19 +2,19 @@
 name: cross
 description: "Use when reasoning about the quantum cross — it IS the fusion of a dual torus (re-exports src/dual/torus/fusion as one identity); two tori, the two infinities, fused at the centre into one, the infinite seal at 1/0."
 atomPath: "quantum/cross"
-coordinate: "quantum/cross · 5/round · 549c1cc0"
-contentUuid: "a17e9070-2416-5c3f-84b3-70f6057be907"
-diamondUuid: "959eaf7f-7364-8fd3-b729-3c05ae91e0d9"
-uuid: "549c1cc0-aac4-8359-bf4b-4fe0ec6aa618"
+coordinate: "quantum/cross · 5/round · 96ed60ed"
+contentUuid: "8b764995-f010-5c43-a489-8476ee3aa268"
+diamondUuid: "48d17527-ad0a-8879-8268-c0c26c24227e"
+uuid: "96ed60ed-0e7a-8034-8bd9-37d551be5d63"
 horo: 5
 typography:
   partition: quantum
-  bondDegree: 58
+  bondDegree: 68
 standards:
   - "the merge law (fold a repeating pattern to one) · re-export as identity, not duplication"
 bindings: []
 signatures:
-  computationUuid: "5dd69e25-92d2-81e7-abac-bf836dfbbb50"
+  computationUuid: "a28c04d4-c291-8fdf-96c5-dae0470bf12d"
   stages:
     - stage: path
       stageUuid: "716e7b32-8771-8e4c-99e7-02950bd708e8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "82f273cc-d752-8a81-ad3d-2b06964f4ccd"
     - stage: horo
-      stageUuid: "8528f046-018b-8dda-967f-fbf75786275e"
+      stageUuid: "ca898d75-601b-8638-9d8d-02c2aa65f27a"
     - stage: seal
       stageUuid: "bae00b10-ce92-8fa9-825f-c2791ac4ffa8"
     - stage: uuid
-      stageUuid: "cdca8aa8-07c2-8b5e-86bf-23ccacdfa36e"
+      stageUuid: "a90117e1-c1ea-807c-8e9c-37a6ec9a8160"
 quantum:
   superposition:
     - access
@@ -54,8 +54,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "5dd69e25-92d2-81e7-abac-bf836dfbbb50"
-    contentUuid: "a17e9070-2416-5c3f-84b3-70f6057be907"
+    computationUuid: "a28c04d4-c291-8fdf-96c5-dae0470bf12d"
+    contentUuid: "8b764995-f010-5c43-a489-8476ee3aa268"
 version: 2
 ---
 # quantum/cross — the cross IS the dual-torus fusion
@@ -71,4 +71,4 @@ Matter-twin: `src/quantum/cross/index.ts` (re-export of [[fusion]]). Composes [[
 @audit quantum/cross re-exports dual/torus/fusion; the identity is proven by test (same function, same result)
 @standard the merge law (fold a repeating pattern to one) · re-export as identity, not duplication
 
-<sub>content-uuid `a17e9070-2416-5c3f-84b3-70f6057be907` · account `quantum/cross` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `8b764995-f010-5c43-a489-8476ee3aa268` · account `quantum/cross` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

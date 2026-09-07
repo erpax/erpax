@@ -3,13 +3,13 @@ name: generator
 description: "Use when reasoning about generator — The extractor parses each collection's leading banner into a ; the generators beside it emit the chain registry, the test scaffolds, the marketing pages and the i18n keys from…"
 atomPath: "spec/generator"
 coordinate: "spec/generator · 2/share · e983c0f4"
-contentUuid: "d6b5d0da-38c5-5753-94a2-4b2883dcad53"
+contentUuid: "d11565c8-3219-5bcf-8ece-b621bc89ed66"
 diamondUuid: "f63fc395-8fe2-8f84-8a22-0ddb8d5d77ef"
 uuid: "e983c0f4-cd33-8322-bacb-dc26ba5c0a0b"
 horo: 2
 typography:
   partition: spec
-  bondDegree: 46
+  bondDegree: 40
 standards:
   - "ISO/IEC 25010:2023 §5 modularity-and-maintainability"
   - "ISO/IEC-12207"

@@ -2,11 +2,11 @@
 name: restricted
 description: "Use when reasoning about restricted as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: restricted
-coordinate: "restricted · 1/base · b5fb4eb2"
-contentUuid: "7d8c8b79-a195-531d-9bcb-7f02436c6818"
-diamondUuid: "a85ccdae-63d9-8b17-8008-37a74a623a92"
-uuid: "b5fb4eb2-3fff-84b3-8a51-a0878d1ec82a"
-horo: 1
+coordinate: "restricted · 8/crest · fbed2d28"
+contentUuid: "7fa03aa5-28f2-5dc3-b3b4-fe1908c09989"
+diamondUuid: "58930567-7a10-8235-b4e0-28ecbe0240d2"
+uuid: "fbed2d28-81b3-830e-90ad-fc158dc5cb90"
+horo: 8
 typography:
   partition: restricted
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0ba360a1-fc1e-8a6d-9249-cb614f7b67fb"
+  computationUuid: "48007387-1640-86a9-ade9-8ba0a33a6982"
   stages:
     - stage: path
       stageUuid: "a9cf80b8-d502-8ded-acaa-56cf900792ac"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c95d6d21-e2d7-8b69-ba1f-25ab564d8f67"
     - stage: horo
-      stageUuid: "df76eda6-dc07-8c8a-81cf-63156a37940f"
+      stageUuid: "1288a275-01a4-87ab-88e5-6d47f37f3c4c"
     - stage: seal
       stageUuid: "7b98ab7f-5740-8a88-89e7-3c48bda795b9"
     - stage: uuid
-      stageUuid: "3067864a-5036-88e8-a715-a424fcf1cb4c"
+      stageUuid: "89c62b47-56d2-8e95-a83f-d1f22bd67ad4"
 version: 2
 ---
 # restricted

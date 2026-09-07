@@ -2,18 +2,18 @@
 name: reality
 description: "Use when reasoning about the live shipped state versus the model — reality is what is actually on main / deployed; the live matrix root is its fingerprint, and a claim is real iff it matches that root."
 atomPath: reality
-coordinate: "reality · 4/weave · 7cf31774"
-contentUuid: "b3e29dab-2fbb-56ed-8f62-7623365c2c8c"
-diamondUuid: "b7068a8d-f7e6-82c6-a040-c49a95504e6e"
-uuid: "7cf31774-50d1-871b-b2f5-728007c6e1b6"
-horo: 4
+coordinate: "reality · 5/round · a4a159f4"
+contentUuid: "9b15975c-f020-5cd3-97f0-e55b7171729c"
+diamondUuid: "cd478283-0dbb-8a50-8fe1-4d7b4bf14a63"
+uuid: "a4a159f4-6e24-87a6-be6e-3dc938b96a5b"
+horo: 5
 typography:
   partition: reality
-  bondDegree: 62
+  bondDegree: 60
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b1ca2bcd-5281-8011-ba38-c5dad69e1344"
+  computationUuid: "67129080-8ba0-8889-acaa-f8d1883dd53d"
   stages:
     - stage: path
       stageUuid: "cc5c3991-41ab-84d4-8479-b6c4481d2e1a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c38a8899-1005-8e64-a66a-0b75d3b8560a"
     - stage: horo
-      stageUuid: "7f3122ee-1797-8137-84a2-0e69e7c49741"
+      stageUuid: "62d00838-bffc-84c7-b0c5-015c01fdc5ad"
     - stage: seal
       stageUuid: "d22eabd0-9d37-8375-8adc-9ad972427dda"
     - stage: uuid
-      stageUuid: "b9cbd775-19c4-80c3-89fa-4b139619bfaa"
+      stageUuid: "4f02fd44-e0c7-89bd-915b-f8de4bc063cb"
 version: 2
 ---
 # reality — the live state, content-addressed

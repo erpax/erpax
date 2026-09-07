@@ -2,24 +2,28 @@
 name: dashboard
 description: "Use when each model needs a computed Payload admin view — its related links partitioned into the collections (plural) and models (singular) it composes, rendered via reusable component-atoms. Computed from the link graph, not hardcoded; each atom is Open Graph + schema.org compatible in all dimensions."
 atomPath: dashboard
-coordinate: "dashboard · 1/base · eba8351b"
-contentUuid: "8c73652c-eab5-500a-8983-cb3e4689689e"
-diamondUuid: "3d581970-839c-8c1d-a107-b0b183967059"
-uuid: "eba8351b-29f2-83e0-8713-cf1adb47b5df"
-horo: 1
+coordinate: "dashboard · 5/round · 2487da79"
+contentUuid: "7e5d4bbd-27b0-5ced-b7fc-bdc867bf0231"
+diamondUuid: "06f16415-5376-8432-be0e-5d87738f5ecc"
+uuid: "2487da79-aa27-864f-ad38-30009f96f2db"
+horo: 5
 typography:
   partition: dashboard
-  bondDegree: 0
+  bondDegree: 46
 standards:
   - "ECMA-262"
+  - "ECMA-262 ECMAScript-2024 baseline"
   - "EU-CSDDD-2024/1760"
+  - "IFRS IAS-1 presentation-of-financial-statements"
   - "ISO-27002"
+  - "ISO-4217:2015 currency-codes monetary-display"
   - "ISO/IEC-27002:2022"
   - MCP
+  - "NIST INCITS-359 role-based-access-control"
   - "NIST-INCITS-359-2012"
 bindings: []
 signatures:
-  computationUuid: "e2384b5c-07d2-8df0-afb2-ad1492db642f"
+  computationUuid: "977e7170-2dcc-8e33-8a3d-c884cafbc0fc"
   stages:
     - stage: path
       stageUuid: "deb8c079-da08-8019-9459-9f3a08003bb9"
@@ -30,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "857c3683-4dab-8201-b18b-5b0df077442b"
     - stage: horo
-      stageUuid: "59e28f93-6931-85e5-8b81-c8aff68950fe"
+      stageUuid: "2cccab60-4517-8def-a01b-8ca38c78f034"
     - stage: seal
-      stageUuid: "526a7d4b-25e6-8ac2-a63f-9a3a81a7470c"
+      stageUuid: "6a638cb4-aab4-8b1d-a1a8-f30d233345fa"
     - stage: uuid
-      stageUuid: "7855260b-a8a7-8256-85e8-b6a39dab7bdf"
+      stageUuid: "7c43f5c5-5280-81b0-b780-66e4aa9b17f7"
 version: 2
 ---
 # dashboard — each model's computed admin view (under [[before]])

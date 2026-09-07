@@ -2,18 +2,18 @@
 name: cycle
 description: Use when modelling one cycle — the singular model of the cycles collection (the plural store); one recurrence of a repeating process or period.
 atomPath: "vocabulary/cycle"
-coordinate: "vocabulary/cycle · 1/base · 6fa60652"
-contentUuid: "014c726f-6c23-5bab-98aa-29238c484420"
-diamondUuid: "2f748080-43b3-8ed7-866b-eda7322c1c0b"
-uuid: "6fa60652-9240-83e2-8261-39492c066152"
-horo: 1
+coordinate: "vocabulary/cycle · 7/descent · 23e6a644"
+contentUuid: "db8a8aab-5820-530e-9818-67858a812451"
+diamondUuid: "1535864a-0cfa-80ac-a481-f4346f3cafd7"
+uuid: "23e6a644-edce-80b2-94ab-17c5226475b4"
+horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 54
+  bondDegree: 60
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f8852845-8919-8851-897a-396e2a6c1d52"
+  computationUuid: "ca7d64ab-2dc3-80b1-9e3a-111655077783"
   stages:
     - stage: path
       stageUuid: "d5e4bc14-e7c2-883a-a307-0c1f482fd733"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5c4aae47-8d13-8b0f-bea8-16bc7fc1607a"
     - stage: horo
-      stageUuid: "1724c2d6-034d-86bf-8402-9ad3e536af1c"
+      stageUuid: "9067622f-5244-8071-a73b-f8838095a28e"
     - stage: seal
-      stageUuid: "62309c21-9950-8aa0-8a38-d32c991f6234"
+      stageUuid: "85cf5750-073d-8fdd-ad6a-74f533fa5e89"
     - stage: uuid
-      stageUuid: "a0966caa-ab56-8ff0-83e0-d27fe9fa58b3"
+      stageUuid: "ad333152-31b8-87e8-89e6-a46c8b026e7d"
 version: 2
 ---
 # cycle — the model of one [[cycles]] row

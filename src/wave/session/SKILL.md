@@ -1,9 +1,36 @@
 ---
 name: session
 description: "Use when walking a wave plan hop by hop with receipts — opens a session over a plan, emits a uuid-chained receipt per completed wave, and refuses to report ready until every wave is actually done. The actor is folded into the receipt's address, never stored in clear."
-atomPath: wave/session
+atomPath: "wave/session"
+coordinate: "wave/session · 4/weave · 230b060f"
+contentUuid: "9be1753a-af77-5a9e-a9d7-a6f15c8aefce"
+diamondUuid: "a753cbd7-7fb5-8b5f-938d-45a710f0d023"
+uuid: "230b060f-01fd-8c4e-a9b1-98b4ee73a420"
+horo: 4
+typography:
+  partition: wave
+  bondDegree: 54
+standards: []
+bindings: []
+signatures:
+  computationUuid: "1fde5efd-0994-88ca-a03b-cf01f16c9fc4"
+  stages:
+    - stage: path
+      stageUuid: "2cd3553f-3da7-8a93-af06-61d34426ef3c"
+    - stage: trinity
+      stageUuid: "c949c6b2-f934-8b16-acb3-ec56bb54af19"
+    - stage: boundary
+      stageUuid: "1fe2d28c-f73c-82ff-814a-00bc58ef60b0"
+    - stage: links
+      stageUuid: "d48b4682-dae7-8846-8cee-08e87f1c7138"
+    - stage: horo
+      stageUuid: "52aebf16-8903-861a-92fb-fc709065943d"
+    - stage: seal
+      stageUuid: "2cf04081-e520-8338-9fb3-d80b1bf9cd0a"
+    - stage: uuid
+      stageUuid: "adf04a5d-871c-89e6-b341-4eded24f3794"
+version: 2
 ---
-
 # wave/session — readiness is earned, not assumed
 
 A session walks a wave plan one hop at a time and emits a **uuid-chained receipt** per

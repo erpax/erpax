@@ -2,19 +2,19 @@
 name: snapshot
 description: "Use when reasoning about snapshot as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: snapshot
-coordinate: "snapshot · 1/base · 7ee56c21"
-contentUuid: "d33bcddd-787f-5ce8-ab05-2fae5a0d6cba"
-diamondUuid: "4e856073-79b7-8415-a765-9c8da1bad680"
-uuid: "7ee56c21-1225-8992-8f7b-ce52d12fb949"
-horo: 1
+coordinate: "snapshot · 8/crest · bc4e91ab"
+contentUuid: "09017f69-da31-5f4e-8f40-81ccd3cf64eb"
+diamondUuid: "31bed021-287d-8f20-a2c7-2cc3b430da37"
+uuid: "bc4e91ab-ba77-86ef-adf5-2578ea88523e"
+horo: 8
 typography:
   partition: snapshot
-  bondDegree: 94
+  bondDegree: 90
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ef314c3d-782b-80c9-aa3d-8c5c05e33aa6"
+  computationUuid: "0d6c6314-38a9-8511-91e5-6a4cd69c606d"
   stages:
     - stage: path
       stageUuid: "c164a256-b8c4-8d1a-97e0-57838110a8d3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c64ae794-5330-8922-9895-d1732febca9f"
     - stage: horo
-      stageUuid: "67745ac9-9745-817a-b3bb-85075931918d"
+      stageUuid: "0f9d0d40-57ff-871f-9977-0e3ed41768e5"
     - stage: seal
       stageUuid: "0c9a4d9b-5855-896d-8b0d-fc981c3c2272"
     - stage: uuid
-      stageUuid: "4eff3c73-c474-8bad-b0a9-c10d0d734335"
+      stageUuid: "2b4107aa-b666-8fb4-ac04-9f0d33f4d6af"
 version: 2
 ---
 # snapshot

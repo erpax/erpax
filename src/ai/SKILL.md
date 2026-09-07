@@ -2,14 +2,14 @@
 name: ai
 description: "Use when invoking any AI inference in erpax — invoice OCR, bank-transaction matching, sanctions screening, anomaly detection, tax classification, HS-code suggestion, document classification, vector embedding, semantic search, or audit summarisation. Every AI call goes through the single `callWorkersAi` gate (entitlement, audit row, tenant scope, risk class, metering); the AI services barrel."
 atomPath: ai
-coordinate: "ai · 1/base · 2eb77a91"
-contentUuid: "248101b2-2ba9-5cd8-8b8f-64a87ed83487"
-diamondUuid: "93dbdd87-4bb2-88e6-a274-2dc488be70b5"
-uuid: "2eb77a91-e2e6-8782-8acc-4abbb8b6a97b"
-horo: 1
+coordinate: "ai · 5/round · eb582d11"
+contentUuid: "6d11fe58-1f02-571d-82e8-24512bae730f"
+diamondUuid: "34101d8e-aeae-8a99-b16e-7d62ce743063"
+uuid: "eb582d11-7cb3-896f-bedf-b8b80df65d00"
+horo: 5
 typography:
   partition: ai
-  bondDegree: 25
+  bondDegree: 36
 standards:
   - "COSO-ERM-2017"
   - "EN-16931"
@@ -25,7 +25,6 @@ standards:
   - "ISO/IEC 42001:2023 ai-management-system"
   - "ISO/IEC 42001:2023 ai-management-system`"
   - "ISO/IEC-23894"
-  - "ISO/IEC-25010"
   - "ISO/IEC-27001:2022"
   - "ISO/IEC-42001"
   - "NIST-AI-RMF"
@@ -42,26 +41,23 @@ bindings:
   - "ai/AI"
   - "vectorize/VECTORIZE_DOCS"
 signatures:
-  computationUuid: "60aa5991-3535-8654-8705-b2e25a0d0c15"
+  computationUuid: "e09c5350-c703-8217-a8df-8aa333268c40"
   stages:
     - stage: path
       stageUuid: "8e6da7ff-0947-8c12-b941-623c69161362"
     - stage: trinity
       stageUuid: "bd0fca7d-3bac-88ca-9531-f0948731efc9"
     - stage: boundary
-      stageUuid: "4456c1a7-d28a-88cc-9348-470a0c7845fb"
+      stageUuid: "3abbe00d-d12c-84ed-99d5-d015eb1ef4f7"
     - stage: links
       stageUuid: "f3242731-2be8-8b63-9426-5f5881a9813e"
     - stage: horo
-      stageUuid: "6b3a7879-bb93-8d5d-b3f8-14967a81e2e3"
+      stageUuid: "6f36afd2-2d14-8ba3-a87f-73a3b20ba51b"
     - stage: seal
       stageUuid: "fc61a7fe-c9ef-81cd-8704-4946877a6865"
     - stage: uuid
-      stageUuid: "49e0ad26-e698-860e-9c23-d437d7b9fb70"
+      stageUuid: "5959e0ae-9b56-82a9-b76a-24ab25a212e7"
 version: 2
-neighbors:
-  wikilink:
-    - "[[ai/models]]"
 ---
 # ai — the AI services barrel
 

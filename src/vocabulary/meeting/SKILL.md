@@ -2,11 +2,11 @@
 name: meeting
 description: "Use when reasoning about meeting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/meeting"
-coordinate: "vocabulary/meeting · 5/round · 8fe46b6e"
-contentUuid: "5cb32910-dca7-594a-ba74-c557fded1cc4"
-diamondUuid: "de6d82e3-4999-89ee-ba51-6efe5371418d"
-uuid: "8fe46b6e-9692-81a8-be9f-57c4b0262ba1"
-horo: 5
+coordinate: "vocabulary/meeting · 1/base · acea2fc3"
+contentUuid: "8c659b48-1285-55c3-b007-a088dee29f7d"
+diamondUuid: "99cd563b-d5ad-882d-9752-ea1e82dde1d1"
+uuid: "acea2fc3-3406-844a-a6d1-db2e48ef496e"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "51332148-ecf2-82cf-aeda-0d3e09f56cf5"
+  computationUuid: "d54c94a2-2a3c-82c3-a1e3-eefb7a00d333"
   stages:
     - stage: path
       stageUuid: "2d421bcf-edcd-80ee-8c91-da3a8acb91de"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c5c82c06-aa2e-890c-8dcb-126862d720fa"
     - stage: horo
-      stageUuid: "8bb56576-22bd-8d1b-ab6b-ac58b9976718"
+      stageUuid: "974def6d-af7d-87d6-80eb-c0566c974c69"
     - stage: seal
-      stageUuid: "71f25e98-3e43-8af3-9319-af1cdade424f"
+      stageUuid: "b8091347-52a4-87c4-aa8c-f8384211a090"
     - stage: uuid
-      stageUuid: "7c42c4b9-3b4b-820d-a1b0-585ff59e7f0a"
+      stageUuid: "568310b1-428d-8708-a4a3-83096c89b3ee"
 version: 2
 ---
 # meeting

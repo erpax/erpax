@@ -3,13 +3,13 @@ name: parties
 description: "Use when reasoning about parties — Both are a dated, line-itemised financial document with a status lifecycle, a balance and an aging profile. is that shape, the lifecycle it may walk, and the set both age into."
 atomPath: "types/parties"
 coordinate: "types/parties · 4/weave · c4fa48f1"
-contentUuid: "559b1965-8016-517e-950e-c0c1f92fa458"
+contentUuid: "a000e8d1-f920-5662-bdc7-05fe21cd2984"
 diamondUuid: "58d589aa-091b-8ea2-8a86-eaee96dd3f32"
 uuid: "c4fa48f1-696a-8ca0-878c-7e961a870129"
 horo: 4
 typography:
   partition: types
-  bondDegree: 6
+  bondDegree: 3
 standards:
   - "EN-16931:2017 invoice-and-credit-note"
   - "IFRS IFRS-9 expected-credit-loss"

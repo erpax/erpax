@@ -2,18 +2,18 @@
 name: throat
 description: "Use when projecting the throat center (Vishuddha) — index 4 of the seven chakras that ARE the seven horo positions — a standalone projection of chakra whose note and uuid are computed from the position math and whose colour is rendered from the uuid, never the traditional rainbow."
 atomPath: throat
-coordinate: "throat · 8/crest · 82485a3c"
-contentUuid: "f6b19119-46df-530e-8d7a-07f9908438b6"
-diamondUuid: "9fa0187f-5cb4-862a-b219-7b514afe8e31"
-uuid: "82485a3c-4c3f-842a-b6cd-e04efcd83293"
-horo: 8
+coordinate: "throat · 1/base · 24de5c18"
+contentUuid: "90b1f576-ac9d-578e-8f3d-edaae2a23d40"
+diamondUuid: "fcb8d1c4-9bd3-8037-93c0-3310246d7587"
+uuid: "24de5c18-d739-86a9-932d-446e38bcafd4"
+horo: 1
 typography:
   partition: throat
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "35854bfc-5fc0-8ce9-9193-fc45c9ca0b6d"
+  computationUuid: "f1f042e3-966a-87a3-a9bc-d782da3e9610"
   stages:
     - stage: path
       stageUuid: "0eb00cae-1320-813a-b8e3-9372afbc5980"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "8dde3ba6-cab1-80e5-9fc7-967ac6c4f544"
     - stage: horo
-      stageUuid: "d108d51d-3408-84c0-922d-8ee50d228f25"
+      stageUuid: "060dd32b-7ff6-80c2-a9a3-e5e97c81d015"
     - stage: seal
       stageUuid: "46b2ec36-de26-89f6-8419-e30d692e43b6"
     - stage: uuid
-      stageUuid: "538b3b8b-9d46-8ac9-9e12-9b75f7e2dd0a"
+      stageUuid: "417cb8d2-198a-84ca-aaa4-3a16733c3bff"
 version: 2
 ---
 # throat — the throat center (Vishuddha)

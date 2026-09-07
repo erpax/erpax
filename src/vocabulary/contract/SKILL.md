@@ -2,18 +2,18 @@
 name: contract
 description: Use when modelling one contract — the singular model of the contracts collection (the plural store); a legally binding agreement between parties.
 atomPath: "vocabulary/contract"
-coordinate: "vocabulary/contract · 1/base · cadbe06d"
-contentUuid: "cd065df4-6ae9-5068-8e4b-a15cce9d0fcb"
-diamondUuid: "16e70e25-3ce8-8578-9c65-6672fdce615d"
-uuid: "cadbe06d-2996-8635-b3da-197f1b6a8aac"
-horo: 1
+coordinate: "vocabulary/contract · 7/descent · 0293cca9"
+contentUuid: "d3da872e-c548-57dd-b024-f9837bd974d6"
+diamondUuid: "e19936f9-900d-8730-ab42-775463f50aeb"
+uuid: "0293cca9-37ef-8907-9334-da0094d8ebbc"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6df679f2-571b-8026-933c-973dbe2c4f55"
+  computationUuid: "f8325b68-7060-8d24-bdfa-ccda612e351a"
   stages:
     - stage: path
       stageUuid: "8b3352a7-9962-8f70-8bce-7e87c44b9ae4"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9bd42fe8-fa69-8e38-b315-5dcf07637a15"
     - stage: horo
-      stageUuid: "f3a7d7b7-5ec9-838c-8790-793cb398c54d"
+      stageUuid: "634d650f-0649-8b41-bc36-b0e08425d896"
     - stage: seal
-      stageUuid: "2906d14b-08b4-896e-be8e-5caaeb950113"
+      stageUuid: "05a297f8-b0c1-8b44-81ac-87bca9a3b4e1"
     - stage: uuid
-      stageUuid: "fd990a8c-1fa5-85a3-b471-57e3fdfaa5e5"
+      stageUuid: "9d1715d3-a0b6-8b0c-b535-14ac7059b8b0"
 version: 2
 ---
 # contract — the model of one [[contracts]] row

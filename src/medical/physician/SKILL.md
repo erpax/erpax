@@ -2,11 +2,11 @@
 name: physician
 description: "Use when reasoning about physician as a medical facet of [[medical]] — vocabulary pivot to @/physician; nested not duplicated."
 atomPath: "medical/physician"
-coordinate: "medical/physician · 1/base · 771e3d1b"
-contentUuid: "a1a44aea-40c5-5732-a72c-575fb24dff2a"
-diamondUuid: "8755096b-411f-8981-9520-3a3e714368ce"
-uuid: "771e3d1b-b494-8df5-bd15-9cf851f9cd60"
-horo: 1
+coordinate: "medical/physician · 4/weave · b66e3042"
+contentUuid: "61cda50a-9e17-5af6-b94e-319bf6c73ec9"
+diamondUuid: "f1b9cd7b-60bc-8af8-8c4e-59cefbfdd04f"
+uuid: "b66e3042-d0ee-809d-9c01-fee3162d38ae"
+horo: 4
 typography:
   partition: medical
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d6dcb5f4-9921-8718-982b-cbea78e58973"
+  computationUuid: "9a9ee0e0-ff58-8266-bf99-e7fa61149633"
   stages:
     - stage: path
       stageUuid: "6874c668-994e-8e98-823c-9df4dde1fd1f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d601bfcf-52db-8dce-93ac-68def584ad21"
     - stage: horo
-      stageUuid: "6dd22860-e8ed-8096-8d5b-aa2165035621"
+      stageUuid: "0e0eff42-8700-8f1e-a72d-84cddfde1dd4"
     - stage: seal
       stageUuid: "78de58c0-ef19-8657-a77f-7f2595e16975"
     - stage: uuid
-      stageUuid: "4de0d8d4-6de9-861c-8c2c-feafd74692e8"
+      stageUuid: "a7e3ae3e-11b1-84b9-ba5a-32849baab354"
 version: 2
 ---
 # medical/physician — medical facet

@@ -2,19 +2,19 @@
 name: digit
 description: "Use when addressing an atom in digit-space — the dual of word — its horo sequence position and the digital-root of its content-uuid, the trace that completes the aura into a tamper-evident trinity."
 atomPath: digit
-coordinate: "digit · 8/crest · e8235a90"
-contentUuid: "cca46359-c94e-5108-9e35-94a92a52a91a"
-diamondUuid: "9dcd0660-01d3-8d36-acb3-cb64537d2f31"
-uuid: "e8235a90-e634-85c9-9244-6c570b79ed94"
+coordinate: "digit · 8/crest · eb0c949b"
+contentUuid: "ab8e8421-73ff-5ead-9e56-48eec1728fed"
+diamondUuid: "cbaf3f24-1c51-85f2-9003-7ac04941013d"
+uuid: "eb0c949b-0025-89d0-8541-6f1b823f029a"
 horo: 8
 typography:
   partition: digit
-  bondDegree: 116
+  bondDegree: 122
 standards:
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring"
 bindings: []
 signatures:
-  computationUuid: "e7c22031-6e08-8fcb-8dae-cec7e0347a19"
+  computationUuid: "928b3826-f16d-8afa-bc20-47d8300b465f"
   stages:
     - stage: path
       stageUuid: "0cc99f24-283b-825b-82d8-df78fcbd8bc1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "69b1d338-3ac6-8eb8-a61d-31d94fcca6dd"
     - stage: horo
-      stageUuid: "f77e36fc-2599-81a1-b764-a857b31ccaab"
+      stageUuid: "36bafbd3-fcd9-8ee8-8cc5-977211641770"
     - stage: seal
       stageUuid: "a8867118-0fec-8040-8324-003fc292aaff"
     - stage: uuid
-      stageUuid: "ee74957f-50ee-81cc-9902-18c6d9ff30fa"
+      stageUuid: "c843a9a1-c08b-8e07-8ef6-290c1ce6e853"
 version: 2
 ---
 # digit

@@ -2,18 +2,18 @@
 name: atom
 description: "Use when reasoning about erpax's irreducible unit — the one-word, content-addressed skill atom everything is composed of. Every entity, collection, agent, interaction, frame, and datum is made of atoms; the corpus is the periodic table, reality its molecules. The ontology beneath every other law."
 atomPath: atom
-coordinate: "atom · 4/weave · a6ff1968"
-contentUuid: "3c2abfaf-c8bc-52dd-940d-f081c4da46ce"
-diamondUuid: "9cc55671-21e6-8503-983f-3b3817ab7809"
-uuid: "a6ff1968-27a1-814e-a14d-744e7d0747fc"
-horo: 4
+coordinate: "atom · 7/descent · 352e388d"
+contentUuid: "eb81aee9-99e4-5772-9a52-eed955d77c7d"
+diamondUuid: "cc02dbb6-b9bb-8bdd-a811-a8864642081f"
+uuid: "352e388d-2285-8351-b669-cb243087adfd"
+horo: 7
 typography:
   partition: atom
-  bondDegree: 281
+  bondDegree: 276
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1ee2a3f7-2d13-8636-80cb-db9c32cf3d51"
+  computationUuid: "b12f5b02-7c20-8ee3-a120-89b1304784ba"
   stages:
     - stage: path
       stageUuid: "1df7f303-31db-8aee-9772-34de82cbd797"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "33acc590-3f7f-8c55-9d0d-bc33e63f7d38"
     - stage: links
-      stageUuid: "a260d9f5-7374-86c0-8604-0d6491c363a6"
+      stageUuid: "ff457f6e-31f1-8071-9810-56c867637490"
     - stage: horo
-      stageUuid: "0b92d76d-b997-87ee-8594-e3129bce4d70"
+      stageUuid: "5f313640-9133-8d0d-8ff4-278e37f67bf7"
     - stage: seal
       stageUuid: "540844e3-41b5-8ee8-a2d8-7052c63cf7b5"
     - stage: uuid
-      stageUuid: "ebadc593-322e-870f-9b99-1f281068a62c"
+      stageUuid: "ac91f66f-7595-8911-8f39-15b19c8c767f"
 version: 2
 ---
 # atom — the irreducible unit; everything is made of atoms

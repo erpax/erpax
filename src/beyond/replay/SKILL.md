@@ -1,12 +1,12 @@
 ---
 name: replay
-description: "Use when an auditor demands \"show me how this number was computed and reproduce it\" — deterministic replay re-runs a chain step and proves byte-identical output by hashing the AgentEffect sequence (timestamps stripped) and matching it against the leaf's recorded outputHash."
+description: "Use when an auditor demands \\\"show me how this number was computed and reproduce it\\\" — deterministic replay re-runs a chain step and proves byte-identical output by hashing the AgentEffect sequence (timestamps stripped) and matching it against the leaf's recorded outputHash."
 atomPath: "beyond/replay"
-coordinate: "beyond/replay · 2/share · c3989a49"
-contentUuid: "262b12f5-3336-5b63-b6c1-1b00e7eebe37"
-diamondUuid: "cb89f103-0858-85d8-9e3e-f29016b2cc58"
-uuid: "c3989a49-e7f8-8f43-b247-bef8535d124d"
-horo: 2
+coordinate: "beyond/replay · 7/descent · cee17e16"
+contentUuid: "49ab66b9-c2f5-5af6-a2ce-26bccdae54ab"
+diamondUuid: "26b0ec81-da15-80fa-a6c6-6c94309b5309"
+uuid: "cee17e16-d6b8-85aa-ab2e-45876090c3e8"
+horo: 7
 typography:
   partition: beyond
   bondDegree: 15
@@ -16,7 +16,7 @@ standards:
   - "ISRS 4400 agreed-upon-procedures (replay verification)"
 bindings: []
 signatures:
-  computationUuid: "e3651b5d-0197-8331-9a86-fc049cd6e560"
+  computationUuid: "bed4ee40-5b8c-82ec-be51-ebb3715c8130"
   stages:
     - stage: path
       stageUuid: "0e8f4b83-e98b-86c0-9791-fd654ffb1f6a"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "9c02f772-ec16-8c68-9ebe-a5864966711a"
     - stage: horo
-      stageUuid: "3a365334-724b-841a-a53c-da412042f377"
+      stageUuid: "75b10187-292c-8d9d-b916-cba54e925c2a"
     - stage: seal
-      stageUuid: "ffcd2413-5fcd-866f-a960-b3d70a9c7114"
+      stageUuid: "ba68b3a6-541c-8315-ad69-11f6f6119425"
     - stage: uuid
-      stageUuid: "f88f27c3-65e1-8bdc-8f08-b4abbc5ce5af"
+      stageUuid: "a229f271-1cec-852a-ad57-15b33f7cc60c"
 version: 2
 ---
 # beyond/replay — deterministic replay (byte-identical re-computation)
