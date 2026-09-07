@@ -30,9 +30,20 @@ export const isRealDir = (p: string): boolean => {
  * ([[corpus]]) so the aura gate and the wikiMap share a SINGLE normalizer. */
 export { norm } from '@/corpus'
 
-/** Strip fenced + inline code so [[links]] inside code do not count. */
+/** Frontmatter is DERIVED metadata, not link source — and dropping it first is load-bearing. */
+export const stripFrontmatter = (t: string): string => t.replace(/^---\n[\s\S]*?\n---\n?/, '')
+
+/**
+ * Strip frontmatter, then fenced + inline code, so [[links]] inside code do not count.
+ *
+ * The frontmatter step is not cosmetic. Inline code pairs backticks left to right, so a SINGLE
+ * unpaired backtick in the derived frontmatter pairs with the FIRST backtick in the body and
+ * deletes everything between — links included. In the collider (same function, third copy) that
+ * silently removed 1,920 edges and reported `pivot` and `shift` as orphans with zero links, while
+ * their bodies carry nine between them.
+ */
 export const stripCode = (t: string): string =>
-  t.replace(/```[\s\S]*?```/g, ' ').replace(/`[^`]*`/g, ' ')
+  stripFrontmatter(t).replace(/```[\s\S]*?```/g, ' ').replace(/`[^`]*`/g, ' ')
 
 /** The [[link]] / [[a/b]] / [[word|alias]] matcher (any case). */
 export const LINK_RE = /\[\[([A-Za-z][A-Za-z0-9/-]*)(?:\|[^\]]*)?\]\]/g

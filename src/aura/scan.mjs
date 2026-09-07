@@ -49,7 +49,10 @@ async function scan() {
     slugs.get(leaf).push(rel)
     bodies.push({ f: f.replace(ROOT + '/', ''), text })
   }
-  const stripCode = (t) => t.replace(/```[\s\S]*?```/g, ' ').replace(/`[^`]*`/g, ' ')
+  // Frontmatter first: an unpaired backtick there pairs with the body's first backtick and eats
+  // the span between, links included (1,920 edges lost in the collider's copy of this function).
+  const stripCode = (t) =>
+    t.replace(/^---\n[\s\S]*?\n---\n?/, '').replace(/```[\s\S]*?```/g, ' ').replace(/`[^`]*`/g, ' ')
   const refCount = new Map()
   for (const { f, text } of bodies) {
     // Match [[word]] · [[a/b]] · [[word|alias]] (any case), resolve by the normalized leaf —
