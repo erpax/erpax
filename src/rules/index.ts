@@ -31,6 +31,7 @@ import { atomListingGaps } from '@/publish/complete'
 import { claimBalance, totalSlack } from '@/rules/slack'
 import { emptyNameFallbacks, unnamedNonText } from '@/rules/alt'
 import { opaqueSources, unreadSurfaces } from '@/rules/domain'
+import { driftCount } from '@/gate/parity'
 import { startProgressHeartbeat } from '@/cli/progress-heartbeat'
 import { execSync } from 'node:child_process'
 import { waveAccountingGapViolations } from '@/accounting/gaps'
@@ -339,6 +340,13 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     // carried one, this corpus's own scalpel among them. Zero is a theorem: a text-extension
     // file that is not text has no legitimate form, and the escape \\u0000 is the same value.
     guardian({ axis: 'opaque-source', violations: opaqueSources(cwd).length, baseline: 0 }),
+    // gate-parity — three hand-written definitions of ONE gate ([[gate]]/parity). `pnpm check` runs
+    // 18 lanes; .husky/pre-push runs 4 of them and .github/workflows/ci.yml 5, and NO lane is run by
+    // both. The hook's own header says "Same checks as `pnpm run check`" and names lint, tsc and
+    // vitest — it runs none of the three. Measured cost: 30 consecutive CI runs on main, 0 green,
+    // every deploy skipped, and every one of those pushes passed the hook. Ratchets from the live 31
+    // (lane, surface) pairs; each lane a surface picks up lowers it.
+    guardian({ axis: 'gate-parity', violations: driftCount(cwd), baseline: 31 }),
     // root-declared — a content-address fold that does not say whether it addresses the MEMBERS
     // or the ORDER ([[merge]]/order). Ratchets from 8; each needs a per-case read, because a
     // wrong tag is worse than none.

@@ -1305,6 +1305,7 @@ src/footer/config.ts:6: * @standard WAI-ARIA 1.2 contentinfo-landmark-role
 src/footer/config.ts:7: * @standard BCP-47 language-tag
 src/fx/transactions/index.ts:11: * @standard ISO-4217:2015 currency-codes from-to-currency-pair
 src/fx/transactions/index.ts:12: * @standard ISO-8601-1:2019 date-time transaction-date
+src/gate/parity/index.ts:4: * @standard ISO/IEC 25010:2023 §5.6 maintainability — one truth, one address
 src/generate/meta/index.ts:6: * @standard W3C-HTML5 §4.2.5 meta-element
 src/generate/meta/index.ts:7: * @standard OGP open-graph-protocol-1.0
 src/generate/reversing/entry/index.ts:18: * @standard IAS-34:2023 Interim closing reversals required at period start
@@ -5845,6 +5846,7 @@ src/forge/index.ts:16: * @audit every field is read/derived from the live matrix
 src/fusion/index.ts:17: * @audit computed from the live matrix, never hand-asserted
 src/fusion/reactor/index.ts:13: * @audit computed from the live matrix, never hand-asserted
 src/fx/transactions/index.ts:19: * @audit ISO-19011:2018 audit-trail fx-revaluation-evidence
+src/gate/parity/index.ts:5: * @audit ISO-19011:2018 §6.4 audit-evidence — a check that did not run produced none
 src/gl/account/resolver/index.ts:27: * @audit ISO-19011:2018 audit-trail account-resolution
 src/gl/account/service/index.ts:8: * @audit ISO-19011:2018 audit-trail
 src/gl/accounts/account/reconciliations/index.ts:24: * @audit ISO-19011:2018 audit-trail period-end-evidence

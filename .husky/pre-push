@@ -1,11 +1,21 @@
 #!/usr/bin/env sh
 # pre-push — Slice FFFFFF self-healing edition (2026-05-11).
 #
-# Same checks as `pnpm run check`, but with auto-heal of regenerable
-# artefacts BEFORE the verify gates run. Regenerable artefacts that
-# are stale auto-regen + auto-commit a `chore(auto-heal): pre-push
-# regen — …` commit; non-regenerable failures (lint / tsc / vitest /
-# missing @standard / untranslated i18n) still fail the gate.
+# NOT the same checks as `pnpm run check`. That claim stood here and was
+# false: `pnpm check` runs GATE_LANES — 18 lanes — and this hook runs 4 of
+# them. It runs NO lint, NO tsc and NO vitest, the three the old sentence
+# named. Measured 2026-09-07: 30 consecutive CI runs on main, 0 green, every
+# Cloudflare deploy `skipped` (it fires on `workflow_run: CI` and refuses a
+# non-green conclusion) — and every one of those pushes passed this hook.
+#
+# The gap is now COMPUTED, not described: `tsx src/gate/parity/index.ts`
+# reports every lane the authority defines that a surface does not run, and
+# the `gate-parity` guardian in src/rules ratchets it down. What this hook
+# still does not run is a fact you can print, instead of a sentence you have
+# to trust.
+#
+# What it does do: auto-heal regenerable artefacts BEFORE the verify gates,
+# committing the heal so the rest sees a clean tree.
 #
 # Why: commits with --no-verify (sandbox, rebase, cherry-pick, amend)
 # bypass the pre-commit auto-regen hook. Without this self-heal, devs

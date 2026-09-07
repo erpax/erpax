@@ -57,7 +57,9 @@ export const enforcePostingImmutability: CollectionBeforeChangeHook = async ({
   if (data.adminOverride === true && req.user) {
     const overrideEntry = {
       overriddenBy: req.user.id,
-      overrideDate: new Date().toISOString().split('T')[0], // YYYY-MM-DD format
+      // The full instant, not the day: the field is a `date` and an override at 23:59 is not the
+      // same evidence as one at 00:01. Truncating to YYYY-MM-DD threw away the half that matters.
+      overrideDate: new Date().toISOString(),
       overrideReason: data.adminOverrideHistory?.[0]?.overrideReason || 'No reason provided',
       priorValue: JSON.stringify({
         debitAmount: originalDoc.debitAmount,

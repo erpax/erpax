@@ -83,6 +83,10 @@ export const PLURAL_ONLY: ReadonlySet<string> = new Set([
   // is a bag of named values (algebra · horo · cloudflare); a `constant` entity store
   // is the error, exactly as a `setting` store would be.
   'bits', 'constants',
+  // `admin/ui/cells` is the set of Payload admin LIST-VIEW cell components. There is no "cell"
+  // model and a singular atom would be the error: a cell is a rendering of a field on someone
+  // else's row, never an entity with a store. Same class as `settings` above.
+  'cells',
 ])
 
 /**

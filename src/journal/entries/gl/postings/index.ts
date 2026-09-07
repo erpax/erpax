@@ -64,7 +64,10 @@ const GLPostings: CollectionConfig = {
       admin: { description: 'Every admin correction, with who, when, why, and the prior value. Append-only in practice: the hook writes one entry per override.' },
       fields: [
         { name: 'overriddenBy', type: 'text' },
-        { name: 'overrideDate', type: 'text' },
+        // A date stored as text is entropy: it cannot be range-queried, sorted correctly across
+        // formats, or compared to a fiscal period. This is the audit trail of an ADMIN OVERRIDE of a
+        // posted GL line — the one record where "when" is the whole question.
+        { name: 'overrideDate', type: 'date' },
         { name: 'overrideReason', type: 'textarea', required: true },
         { name: 'priorValue', type: 'textarea' },
         { name: 'newValue', type: 'textarea' },

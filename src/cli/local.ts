@@ -270,16 +270,29 @@ export function runTypecheckWaves(args: readonly string[] = []): number {
     const bound = history.length ? timeoutOf(history) : { ms: 300_000, minutes: 5 as const, exceeds: false }
     console.log(`▶ typecheck wave ${i} — ${w.label} (−p ${w.project})`)
     const started = Date.now()
+    // The heap is the SIBLING LANE's, not node's default. `erpax lint typecheck-all` has carried
+    // --max-old-space-size=8000 all along; this path carried nothing, so tsc got ~4GB, exhausted it
+    // ("Mark-Compact 4078.4 (4101.3) … allocation failure"), and V8 killed the process.
     const r = spawnSync(`./node_modules/.bin/tsc --noEmit -p ${w.project}`, {
       shell: true,
       stdio: 'inherit',
       cwd,
+      env: { ...process.env, NODE_OPTIONS: '--no-deprecation --max-old-space-size=8000' },
       timeout: bound.ms,
       killSignal: 'SIGKILL',
     })
     if (r.signal) {
+      // A signal is not a clock. spawnSync reports one for a timeout AND for a process V8 killed on
+      // an allocation failure, and this branch called both "timed out" — then advised "invert/split
+      // further (never raise the stack)", which is the correct remedy for a slow check and the exact
+      // WRONG one for an OOM. The elapsed time separates them: a kill far inside the bound was not
+      // the clock. Reporting the wrong cause is worse than reporting none — it aims the next fix.
+      const elapsed = Date.now() - started
+      const timedOut = elapsed >= bound.ms * 0.9
       console.error(
-        `✗ typecheck wave ${i} timed out at ${bound.minutes}min — invert/split further (never raise the stack)`,
+        timedOut
+          ? `✗ typecheck wave ${i} timed out at ${bound.minutes}min — invert/split further (never raise the stack)`
+          : `✗ typecheck wave ${i} was KILLED after ${Math.round(elapsed / 1000)}s, well inside the ${bound.minutes}min bound (signal ${r.signal}) — not the clock. Almost always the heap: raise --max-old-space-size for this wave, or split the project.`,
       )
       return 1
     }
