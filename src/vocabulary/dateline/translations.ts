@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dateline",
-    "uuid": "a143b833-4ee0-8393-aae9-7a32c070eb89",
+    "uuid": "91ff9d98-efd6-86ac-b5df-9b75de80fea2",
     "words": [
       "dateline"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about dateline — A dateline is a brief piece of text included in news articles that describes where and when the story was written or filed though the date is often omitted. Sometimes only a placen",
-    "uuid": "024edd3c-9596-8dba-a40a-7241245f4042",
+    "uuid": "81a4dbd2-c8df-8223-bda5-ab787a81c7d0",
     "words": [
       "use",
       "when",

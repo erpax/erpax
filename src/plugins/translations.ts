@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "plugins",
-    "uuid": "5c6da21b-df24-8c22-8b38-1ab3f3bb53fc",
+    "uuid": "d1c05cb1-f082-866f-91d1-d71fb56e12d9",
     "words": [
       "plugins"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when building, configuring, or extracting a Payload plugin — a function that receives the config and returns a modified config, adding collections/globals/fields/hooks/endpoints. Relevant when packaging erpax (or a domain) as a publishable @erpax/* plugin.",
-    "uuid": "ff763ebf-73b0-8bb4-a0bb-cec25eac10c2",
+    "uuid": "c1c4c838-8b22-865d-a331-989f77e9df0a",
     "words": [
       "use",
       "when",

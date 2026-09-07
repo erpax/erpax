@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "home",
-    "uuid": "0816db9d-02fb-8d04-80cd-df817d96ee9c",
+    "uuid": "8063698f-f128-81dc-bdc6-f987375d1387",
     "words": [
       "home"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about home — A schema.org component word, collided out of schema.org compounds — fused from HomeAndConstructionBusiness · HomeGoodsStore · homeLocation · homeTeam (sti · collapse · merge).",
-    "uuid": "7c19faf3-154f-8565-8e27-c7f77fe0b617",
+    "uuid": "a0557151-3224-8960-a6ed-fbb3aa3d20ae",
     "words": [
       "use",
       "when",

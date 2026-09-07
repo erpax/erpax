@@ -2,11 +2,11 @@
 name: verification
 description: "Use when proving control of a domain by content-uuid — publish the token in a DNS CNAME/TXT record (the ACME DNS-01 pattern); because the value IS the object's identity, any change to the object forces re-verification by architecture."
 atomPath: "domain/verification"
-coordinate: "domain/verification · 5/round · 8c3250bd"
-contentUuid: "5444a0d3-5ba7-5ac0-9805-0b31a4ff6be8"
-diamondUuid: "f7475c24-fd45-8b20-a24b-d219b1c28c17"
-uuid: "8c3250bd-30a5-8087-b504-f67b0d6fbfc1"
-horo: 5
+coordinate: "domain/verification · 2/share · ee432f4b"
+contentUuid: "36e22e9e-5459-55a0-9046-ef0e6a53cc48"
+diamondUuid: "4834658e-701c-815e-b289-b86f24777552"
+uuid: "ee432f4b-5802-84b2-bd2f-eabca510977a"
+horo: 2
 typography:
   partition: domain
   bondDegree: 56
@@ -14,7 +14,7 @@ standards:
   - "RFC 8555 §8.4 (ACME DNS-01 challenge) + CA/Browser-Forum domain-control-validation"
 bindings: []
 signatures:
-  computationUuid: "4c39ac2a-9935-87e4-a6ae-1011ea0e11a3"
+  computationUuid: "16009efc-f15d-8102-bd45-6a28a38469cc"
   stages:
     - stage: path
       stageUuid: "90aade4f-818d-8d4b-ad0e-dacb402a8696"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b92635c1-c8e5-86f2-a6be-f245c3f1ec72"
     - stage: horo
-      stageUuid: "ec146653-27c4-8379-8636-db92e630a3fd"
+      stageUuid: "2ee22d1a-2d05-8646-b6df-847d8374fe4e"
     - stage: seal
       stageUuid: "f8648717-91ef-8b1a-95c4-53376bf150e6"
     - stage: uuid
-      stageUuid: "cf26ee26-befa-8140-a454-954073da3de4"
+      stageUuid: "645639c1-1ca2-8442-a6a5-eb97dc25b920"
 version: 2
 ---
 # domain/verification — content-addressed domain control

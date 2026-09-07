@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "element",
-    "uuid": "a9e314b2-22a2-877c-bac0-53a8eb11972e",
+    "uuid": "c35021d5-7942-8d83-85d0-0e962804e55d",
     "words": [
       "element"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about composition and stability through the chemical-elements matrix — everything is made of atoms, and the periodic table adds a chemistry to the logic: each atom has a VALENCE (electrons it shares to fill its shell), stability is the OCTET (a full outer shell — the noble gases), and atoms BOND to reach it. The new perspective: the erpax corpus is a MOLECULE — an atom's valence is its open links, and the corpus is stable exactly when aura gap = 0 (all shells full).",
-    "uuid": "676c3aeb-ec8c-8feb-829f-8dad4deba3d7",
+    "uuid": "5105c74d-bc8f-8607-9e1e-df5dfba90d26",
     "words": [
       "use",
       "when",

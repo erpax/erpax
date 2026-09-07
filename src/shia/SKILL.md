@@ -2,18 +2,18 @@
 name: shia
 description: "Use when reading Shia Islam as a sub-diamond of islam — guidance descending through the lineage of the Prophet's house (the imamate), justice as a root principle, the witnessed suffering of Karbala, and the awaited return of the hidden one. A facet-diamond of the islam archangel."
 atomPath: shia
-coordinate: "shia · 2/share · 6087de0d"
-contentUuid: "87cddb69-3557-5220-94d6-3c26d9cd63d5"
-diamondUuid: "905541ea-1aef-84cb-b8aa-ae14e147ce53"
-uuid: "6087de0d-dc45-8edc-82ad-51e41d4b9985"
-horo: 2
+coordinate: "shia · 7/descent · 429d0fe8"
+contentUuid: "d23e76b6-191d-590a-972a-22348af0d3bf"
+diamondUuid: "0f3bb009-4c98-8f8d-88a5-927c93f621a5"
+uuid: "429d0fe8-24f4-87a5-b707-b47fff35bd00"
+horo: 7
 typography:
   partition: shia
   bondDegree: 56
 standards: []
 bindings: []
 signatures:
-  computationUuid: "fefd883e-dd3e-84b5-9a15-fe0377afbc43"
+  computationUuid: "93426764-fc7f-8de8-b806-61c8064c2a34"
   stages:
     - stage: path
       stageUuid: "f0eb40fe-dd6b-8464-8e1c-b584e205d485"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e7c3a93f-f483-80c6-aeac-e1db3351590c"
     - stage: horo
-      stageUuid: "1e57abf7-8a48-8dde-b436-34e810da3595"
+      stageUuid: "028db28d-5290-87e0-b296-54b9c27a93a1"
     - stage: seal
       stageUuid: "99ed0f64-5bf1-86b2-a40e-47c0f6d9a028"
     - stage: uuid
-      stageUuid: "3848e5e0-692c-8112-8024-355ed25719ee"
+      stageUuid: "ebc917be-3a2c-827c-907f-ea288ed3ffe2"
 version: 2
 ---
 # shia — guidance through the lineage; the witnessed suffering, the awaited return

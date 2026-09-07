@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "collateral",
-    "uuid": "3019d8ea-481a-883d-ad62-bd7d0e0f8c0c",
+    "uuid": "74766f4b-1bb5-8997-8540-85636ebb61b2",
     "words": [
       "collateral"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about collateral as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "0f9c6544-8f6e-89c1-84f6-091aa3126d3a",
+    "uuid": "8b207076-45a6-8d55-bac6-d4f8fe9b9af9",
     "words": [
       "use",
       "when",

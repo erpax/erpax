@@ -2,11 +2,11 @@
 name: reservations
 description: "Use when reasoning about reservations as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/reservations"
-coordinate: "vocabulary/reservations · 4/weave · 27153a7b"
-contentUuid: "8c568082-0968-5ed0-8c6d-ef7a81552986"
-diamondUuid: "edc8722c-879f-8abb-90f4-91fa6baa0e64"
-uuid: "27153a7b-0821-8a1b-a294-e2672d1a57ea"
-horo: 4
+coordinate: "vocabulary/reservations · 8/crest · 8af7e466"
+contentUuid: "1f650bba-1c5a-54a7-b0ca-76730e1ab601"
+diamondUuid: "81460f98-653e-896f-9840-9bdfdc49eacb"
+uuid: "8af7e466-28f6-8520-879e-49d85b6270de"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "83511581-4c62-8eb9-8c2c-5e9899d16ab2"
+  computationUuid: "12306ce3-884d-8fe8-9204-2dcb0d2e2237"
   stages:
     - stage: path
       stageUuid: "bdd33c34-4cb4-8a73-8c0c-4ff73e0355ae"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f618e240-8218-859c-a4cc-95c8d3418e51"
     - stage: horo
-      stageUuid: "65a2684d-f071-8698-a1d8-90670ad7876e"
+      stageUuid: "53439b92-5850-8d54-93b2-84bb402ed34d"
     - stage: seal
       stageUuid: "fa37d951-4f94-8f6e-9e8f-d08e7354a2c7"
     - stage: uuid
-      stageUuid: "4aaf1cb6-8664-8139-afb0-d8c1cf84f167"
+      stageUuid: "aaa28e96-7acb-8f4b-af59-15d465b9377f"
 version: 2
 ---
 # reservations

@@ -2,10 +2,10 @@
 name: framework
 description: "Use when reasoning about framework as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/framework"
-coordinate: "vocabulary/framework · 5/round · 80d4b7b1"
-contentUuid: "4a138661-300e-5be9-81a1-85196d1b2d5a"
-diamondUuid: "2d561618-3aa4-81c1-b7a4-afdfeeb48408"
-uuid: "80d4b7b1-dde7-876c-8c2f-917d0e94b449"
+coordinate: "vocabulary/framework · 5/round · c82e456b"
+contentUuid: "a6f66db5-8e9f-5949-b137-844ad8c53813"
+diamondUuid: "7198be96-b76c-8a8a-b120-b036d02f2471"
+uuid: "c82e456b-525b-8715-856e-c023751d7107"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9c2a418e-ee2c-86a8-bbf0-a3865e56a860"
+  computationUuid: "35541878-3caa-892b-bdfc-a42bc52ac3f2"
   stages:
     - stage: path
       stageUuid: "075c42d9-1ff5-8fbf-8168-461b087f6076"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c7958ef7-6501-88e4-9f15-820f2f849337"
     - stage: horo
-      stageUuid: "e3fcf259-d1c5-8d16-a5dc-b0f4e9b53d03"
+      stageUuid: "c8c65f3c-898e-8361-b67d-c0a67ad37c7f"
     - stage: seal
       stageUuid: "acc06022-27b8-85f1-9ff2-073853dc4b72"
     - stage: uuid
-      stageUuid: "7a1fb812-8002-8621-9d25-6e1ed88d18e3"
+      stageUuid: "84b3be3d-e25e-806d-b0c6-c21e5f60e42b"
 version: 2
 ---
 # framework

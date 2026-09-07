@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "eprelease",
-    "uuid": "7816f5da-77d5-860c-aa57-49b35af9c7de",
+    "uuid": "379b4d3d-e651-8f23-9f25-1931542847d8",
     "words": [
       "eprelease"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about eprelease as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "afb06ff6-2718-8d5a-8038-a4c35f3f98be",
+    "uuid": "31019c2d-c8b0-8ba8-b00e-c5992f85774d",
     "words": [
       "use",
       "when",

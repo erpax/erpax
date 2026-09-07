@@ -2,18 +2,18 @@
 name: cache
 description: "Use when reasoning about cache — *\"Reuse the computed answer, never re-derive\"* is the first agent law in this corpus."
 atomPath: "syntax/cache"
-coordinate: "syntax/cache · 4/weave · 847136d3"
-contentUuid: "25cd2a06-7da2-54ed-8253-7685eefb0c3c"
-diamondUuid: "e276373e-9c72-8068-bbca-e6cff749b2e3"
-uuid: "847136d3-63c1-86ff-a6b3-ac18fa5f6e1d"
-horo: 4
+coordinate: "syntax/cache · 2/share · e3dffdc5"
+contentUuid: "918d6eda-8b95-54aa-a609-f0235b0e69e0"
+diamondUuid: "9de873cc-1124-8a6a-b9ad-62ddefbf165d"
+uuid: "e3dffdc5-ac6d-824b-a887-26321cfed18b"
+horo: 2
 typography:
   partition: syntax
   bondDegree: 51
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8ef41e94-5d17-8e19-88bb-2e1fcf5cbca4"
+  computationUuid: "8254c152-8ee0-870b-868e-ac3fcfe75846"
   stages:
     - stage: path
       stageUuid: "0d4c114c-5876-898d-9829-87f3a881d39d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "af2e872d-96ba-8801-99a3-1c52857df39c"
     - stage: horo
-      stageUuid: "4016d14d-6144-8a45-b1e1-6305d8d26d16"
+      stageUuid: "0d09ec6f-b5ef-85c7-8ef2-b323799e9e22"
     - stage: seal
       stageUuid: "70c4d72d-da75-8ecb-9103-0fed7d1fccfe"
     - stage: uuid
-      stageUuid: "db0d5f3d-3eec-8bff-bb86-4e4fb2a581d1"
+      stageUuid: "8abc2783-7fc5-8f09-a0cd-f9d69e0cee0c"
 version: 2
 ---
 # syntax/cache — the instruments were the last place not reusing the answer

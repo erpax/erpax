@@ -2,11 +2,11 @@
 name: uncertainty
 description: "Use when reasoning about the Heisenberg uncertainty floor — two conjugate quantities (position⊗momentum, energy⊗time) can never both be sharp, their spreads obey Δa·Δb ≥ ħ/2. It is the wave nature of the state, not a measurement defect. In erpax it is a real design limit: the irreducible slack that can never reach zero, and the natural linewidth that broadens every spectrum line (a leap living only Δt has ΔE ≥ ħ/2Δt)."
 atomPath: uncertainty
-coordinate: "uncertainty · 1/base · 044f1cd3"
-contentUuid: "f695458c-785f-51d0-9dee-3956581aaf66"
-diamondUuid: "dcc00c5c-dbdf-8095-87e5-efa2255c9601"
-uuid: "044f1cd3-278f-8b57-a786-03f7c3f9ca1d"
-horo: 1
+coordinate: "uncertainty · 5/round · 1f3cc6b2"
+contentUuid: "95310307-e4e3-569b-94ce-6c7f13341f6e"
+diamondUuid: "7e47b331-8fb1-83aa-862f-3306f7b0ec3d"
+uuid: "1f3cc6b2-298e-8e19-a44f-2f938ec97822"
+horo: 5
 typography:
   partition: uncertainty
   bondDegree: 27
@@ -14,7 +14,7 @@ standards:
   - "SI-2019 / CODATA-2018: ħ = h/2π (via ../photon)"
 bindings: []
 signatures:
-  computationUuid: "47805651-4b4c-8127-b3b0-16c3aabc3440"
+  computationUuid: "964ff642-7b61-8ebe-b412-28b06ec43ce7"
   stages:
     - stage: path
       stageUuid: "8c8906b1-b333-8e5d-b9d3-bfd5aa771a29"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e5cbcbe3-b808-8df2-b587-46adfec66293"
     - stage: horo
-      stageUuid: "d6a6c6bf-0c7a-81f1-9acc-1c0fa400fc40"
+      stageUuid: "5f737f81-e427-86b1-97e5-b08f17397b49"
     - stage: seal
       stageUuid: "54a38fc4-98dc-8e13-9c9b-a8241e28c315"
     - stage: uuid
-      stageUuid: "0d5c020a-8c4c-8371-af2a-653588ff1265"
+      stageUuid: "e31217e2-db26-8e1f-a2ba-f117357ccaf3"
 version: 2
 ---
 # uncertainty — the irreducible floor ħ/2

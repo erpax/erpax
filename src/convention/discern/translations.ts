@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "discern",
-    "uuid": "9fbad3f4-497d-8e7a-9709-77eee63dd7d4",
+    "uuid": "0e8361ca-597a-83e8-8e09-69dc4da80e87",
     "words": [
       "discern"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a public claim must be provable rather than asserted — every claim is typed as a verdict (property + the test that exercises it) or a compass (property + what would close it + who owns that). A verdict whose test is absent fails; a verdict whose run returns no evidence of what it exercised, or what would break it, fails as a tautology under a heading. An undeclared public surface throws: silence is never a claim of safety. integrity() is passing verdicts over total claims, hand-set nowhere.",
-    "uuid": "22180065-1451-8aba-a6c5-9a02fce6f721",
+    "uuid": "6c8780b5-6504-8804-ace5-17ddb4403bd3",
     "words": [
       "use",
       "when",

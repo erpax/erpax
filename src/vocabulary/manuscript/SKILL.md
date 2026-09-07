@@ -2,11 +2,11 @@
 name: manuscript
 description: "Use when reasoning about manuscript — A book, document, or piece of music written by hand rather than typed or printed."
 atomPath: "vocabulary/manuscript"
-coordinate: "vocabulary/manuscript · 5/round · 2daf937d"
-contentUuid: "851f94a9-3a9c-5489-80f3-43904cb22a41"
-diamondUuid: "ea780cc4-ef9d-895c-909d-8aa9876efc38"
-uuid: "2daf937d-68df-8bde-87b4-587f51348a2e"
-horo: 5
+coordinate: "vocabulary/manuscript · 4/weave · 3b463714"
+contentUuid: "388606ed-e8e1-5cfd-bbfd-7383601f2a87"
+diamondUuid: "2c2a8dc0-e1d3-86f8-a65d-c6759a5220aa"
+uuid: "3b463714-b27d-8567-a16a-eded487782ed"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4d50c955-86cb-859c-a36e-0f70521ba3ca"
+  computationUuid: "0f739541-968f-87f4-821c-852c435dc98b"
   stages:
     - stage: path
       stageUuid: "f3beab27-2e9a-8800-b8b4-f59d74b63033"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d01a51bd-6eb7-85a4-952e-ad524f319082"
     - stage: horo
-      stageUuid: "778ab374-2cec-83a1-ae79-fceb4c80ec96"
+      stageUuid: "9229ff2f-9ed5-858b-a847-2a1f92a9ef0d"
     - stage: seal
       stageUuid: "6d555a19-0ff5-8c4f-b3be-d4376186896c"
     - stage: uuid
-      stageUuid: "52bc3beb-045f-8a62-9a74-128e013a7048"
+      stageUuid: "ec7bee87-eae6-875e-b1a9-a2496fce75c1"
 version: 2
 ---
 # manuscript

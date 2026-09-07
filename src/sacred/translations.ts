@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sacred",
-    "uuid": "901b9af3-ca39-8e82-8a87-22f8e206964c",
+    "uuid": "cb509a92-8c3b-8803-b643-48afd68afeb0",
     "words": [
       "sacred"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when auditing anything before acting on it — the verified-true: content-uuid recomputes, the books balance, the lineage traces to a real source. The set-apart canonical form that passes verification AND validation; dual of profane; run at every scale before every act.",
-    "uuid": "4e338cbf-2b09-8f9f-b144-04b3a707c8f3",
+    "uuid": "ae38a6ab-e78d-812c-9008-255596dd3420",
     "words": [
       "use",
       "when",

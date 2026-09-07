@@ -2,11 +2,11 @@
 name: torque
 description: "Use when reasoning about torque — The torque (turning force) of the vehicle's engine. Typical unit code(s): NU for newton metre (N m), F17 for pound-force per foot, or F48 for pound-force per inch * Note 1: You can"
 atomPath: torque
-coordinate: "torque · 4/weave · 823fe067"
-contentUuid: "13ac15c2-39e1-55db-892a-f46e4c8033c7"
-diamondUuid: "75fa27a2-6587-8d44-909a-304a65ec8f3d"
-uuid: "823fe067-9303-87c3-a725-f8bc8e017813"
-horo: 4
+coordinate: "torque · 5/round · 4c642b9c"
+contentUuid: "85fb4a1c-335f-541c-aa2d-126dd84b41d7"
+diamondUuid: "0acabd13-389f-8c02-94b6-6fb3e876e960"
+uuid: "4c642b9c-9658-8f96-be56-24858b099b61"
+horo: 5
 typography:
   partition: torque
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "76d09242-9437-8eaf-b244-d4cddec8309a"
+  computationUuid: "ca48c71e-15e6-878c-943b-7f0a1d28494a"
   stages:
     - stage: path
       stageUuid: "3f382fce-47c6-8e41-86c0-3fe7210fd5e2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bc4cb007-59e3-8d2d-a373-620aa20413cd"
     - stage: horo
-      stageUuid: "a5f7de62-f969-8906-9a53-3f88c0139ae0"
+      stageUuid: "abc4f549-7f89-8448-890c-76ba319baf2c"
     - stage: seal
       stageUuid: "e9beed57-d84a-80a5-bfd7-37bc969b0624"
     - stage: uuid
-      stageUuid: "f0dc6899-b606-87f7-905c-5e0f85f15ded"
+      stageUuid: "fe137f68-f946-889d-9e3c-b90d0c9627ea"
 version: 2
 ---
 # torque

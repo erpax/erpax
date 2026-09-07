@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pwa",
-    "uuid": "ec2bad4b-eea9-880d-8ab6-b4ba3bcdaacd",
+    "uuid": "82def364-09f9-8f5e-8986-5d6fdca6806a",
     "words": [
       "pwa"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax as a PWA of quantum apps — a device whose every folder is an installable quantum app, cached offline by content-address (the uuid is the cache key); installable because every folder is a quantum app.",
-    "uuid": "394a3e92-1894-8708-add2-800a36b59da3",
+    "uuid": "b10121b8-8cb0-89ae-b8f8-bf68ff5471e7",
     "words": [
       "use",
       "when",

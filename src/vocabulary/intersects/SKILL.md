@@ -2,11 +2,11 @@
 name: intersects
 description: "Use when reasoning about intersects as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/intersects"
-coordinate: "vocabulary/intersects · 4/weave · aaa29e24"
-contentUuid: "c16f2c27-a1fb-5107-83a7-94a8cafd2cf6"
-diamondUuid: "a7eddd86-150c-856c-9860-f3bbc06ad177"
-uuid: "aaa29e24-a9b7-83b0-b1b6-8445f8325f24"
-horo: 4
+coordinate: "vocabulary/intersects · 8/crest · b651cab5"
+contentUuid: "9f83842b-5634-58bf-98d6-60dc7a484f73"
+diamondUuid: "9bdf444e-57ef-8486-962e-12042b48dc3d"
+uuid: "b651cab5-b94c-8ec7-a116-93e1c5ec782f"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "91f22738-7ca5-83cf-9eab-8a52a2f1a289"
+  computationUuid: "b2c30386-ae8a-80e8-ba03-95e0bb731e88"
   stages:
     - stage: path
       stageUuid: "f56baf6a-9c6d-8e2f-a649-0a58b6a30034"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "53711607-8e0a-8692-9f62-7c4c4e3488ea"
     - stage: horo
-      stageUuid: "7f6e7cd5-8ec5-8e84-9a49-6defb3142c45"
+      stageUuid: "0325aa7b-6f8f-887a-9895-33e5a0871fc4"
     - stage: seal
       stageUuid: "cc704b95-28a4-82b9-b0d6-98d015c851c1"
     - stage: uuid
-      stageUuid: "27a12736-44a5-8492-8945-d0d229791235"
+      stageUuid: "65559843-79d2-8a96-ab23-3cce174887df"
 version: 2
 ---
 # intersects

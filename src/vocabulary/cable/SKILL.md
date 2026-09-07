@@ -2,11 +2,11 @@
 name: cable
 description: "Use when reasoning about cable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/cable"
-coordinate: "vocabulary/cable · 5/round · 2bf2728f"
-contentUuid: "ff84f402-4ba5-5a86-94b7-cb821739b51c"
-diamondUuid: "c81e1166-32bd-8e77-88a4-a8bde7c33d29"
-uuid: "2bf2728f-b034-8d44-8e20-029217f4218a"
-horo: 5
+coordinate: "vocabulary/cable · 2/share · 08bf43f4"
+contentUuid: "fb6e3478-e9c4-5598-b1c9-45a8119eb694"
+diamondUuid: "b23b240c-3406-8d89-8333-1cb164262505"
+uuid: "08bf43f4-29dd-8d42-ac55-d4d68fe57cb7"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "49cc358d-4e68-82a6-b233-0d7a20de9d02"
+  computationUuid: "25a5c886-1b86-8be8-8c00-9b49b09debfa"
   stages:
     - stage: path
       stageUuid: "26a858da-bff1-8362-afc7-5cbf32d25cec"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5ba4fb77-ded5-8605-af60-d83e061bfe9c"
     - stage: horo
-      stageUuid: "28d2d905-200d-8dd4-9071-4271692bd180"
+      stageUuid: "8888cfc5-766c-824b-a6bb-0e07f73131a2"
     - stage: seal
       stageUuid: "54fb00c3-287f-856c-bb89-af1e27f9d708"
     - stage: uuid
-      stageUuid: "8bda8cc6-0fb2-85c2-9bef-6f82d55707d5"
+      stageUuid: "8580dc84-ae89-8979-80d8-1d2e2930cb8a"
 version: 2
 ---
 # cable

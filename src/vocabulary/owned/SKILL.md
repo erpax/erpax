@@ -2,11 +2,11 @@
 name: owned
 description: Use when reasoning about owned — The date and time of obtaining the product.
 atomPath: "vocabulary/owned"
-coordinate: "vocabulary/owned · 1/base · 873b00ca"
-contentUuid: "d8022853-e7dc-5cb9-bda9-8cc0cb28a2c2"
-diamondUuid: "2b05a625-befd-8319-845b-8abd61a79a6b"
-uuid: "873b00ca-9ea8-87a0-b2e4-566dbe34feca"
-horo: 1
+coordinate: "vocabulary/owned · 8/crest · cbe69838"
+contentUuid: "8ec615f4-3266-5aa1-bd09-4a889a453b05"
+diamondUuid: "9c776bd2-db8d-88b4-80e0-a32da627eb52"
+uuid: "cbe69838-0293-8b77-8134-7c2ee30478b3"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 7
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "077572ef-f41e-830e-b50e-ed1ddca15822"
+  computationUuid: "0f6053bb-fc95-878b-a927-ae1382cad780"
   stages:
     - stage: path
       stageUuid: "8e1fe553-544f-8363-8992-9206e65feada"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "72b02ff9-45aa-8b95-ab81-6299927ceccc"
     - stage: horo
-      stageUuid: "a834ed92-c135-86a5-a69f-bbd62515385b"
+      stageUuid: "791929a1-7a79-87a5-92d1-98c4104bb977"
     - stage: seal
       stageUuid: "766c0a68-652b-8810-aeca-43640fdac8ba"
     - stage: uuid
-      stageUuid: "d8b8802a-213b-83c2-8855-b04b75cf1183"
+      stageUuid: "a0b15026-ae2a-8c57-a694-f319e1b26f17"
 version: 2
 ---
 # owned

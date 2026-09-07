@@ -2,10 +2,10 @@
 name: reimbursement
 description: "Use when reasoning about reimbursement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/reimbursement"
-coordinate: "vocabulary/reimbursement · 1/base · 3556aa4e"
-contentUuid: "c91e9496-bae2-583f-ae85-18ac54772c92"
-diamondUuid: "829050aa-3c7c-853c-9166-21d8781e4ea0"
-uuid: "3556aa4e-0f2c-8ead-a66a-0f1a2a4c6c9e"
+coordinate: "vocabulary/reimbursement · 1/base · aae6fdf3"
+contentUuid: "ba295e2e-d919-575a-89e3-88e951a9610d"
+diamondUuid: "2bab7995-c389-832c-82cc-1b3b680d1b6b"
+uuid: "aae6fdf3-fb80-8e47-805b-07ad24f6e82f"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d93e7068-ce21-80e2-b534-87bfe69dd200"
+  computationUuid: "0dad3dda-5a89-856c-9ff6-9d11db14b8fc"
   stages:
     - stage: path
       stageUuid: "844f1117-c70b-89e2-afe6-20b8315b7d59"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "791d8ac4-b3bd-8bad-a994-17c65d2c6f20"
     - stage: horo
-      stageUuid: "def0ea11-3f5b-823d-8095-08fc496700c3"
+      stageUuid: "5b4ef918-e610-8796-81b4-b9e8dba3603e"
     - stage: seal
       stageUuid: "5ef486f3-dc4d-8d3b-a0d3-9d582798cfc9"
     - stage: uuid
-      stageUuid: "e256b5b9-ce1f-84db-a5d7-0e197ec41189"
+      stageUuid: "2152b276-5e4c-8be8-9a0b-3b49ee911a3b"
 version: 2
 ---
 # reimbursement

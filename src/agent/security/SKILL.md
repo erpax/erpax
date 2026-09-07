@@ -2,18 +2,18 @@
 name: security
 description: Use when reasoning about security — Parse allowlist and security monitor for agent inputs (fail closed).
 atomPath: "agent/security"
-coordinate: "agent/security · 5/round · 553df66f"
-contentUuid: "63ec80fa-6f3f-54e7-b97c-88e33dc07499"
-diamondUuid: "889e7c94-44fb-8e9b-8b38-ce104cd7f7fd"
-uuid: "553df66f-f527-8b1b-8dda-3f86e61ca7e1"
-horo: 5
+coordinate: "agent/security · 8/crest · cf23e171"
+contentUuid: "d6f68290-d766-5936-85de-40b24bdb8deb"
+diamondUuid: "3092c730-a5f0-8238-a5f9-810b4643a0bd"
+uuid: "cf23e171-a528-8e06-8ebb-1697b5ed41cb"
+horo: 8
 typography:
   partition: agent
   bondDegree: 59
 standards: []
 bindings: []
 signatures:
-  computationUuid: "eeb0f201-dd42-8f7d-a194-8754c536f9e4"
+  computationUuid: "5b33e822-b1fc-8c5c-9d54-b434ac6ff055"
   stages:
     - stage: path
       stageUuid: "b451f573-069c-8e98-a447-9eb75365aabd"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e42bd87f-dde7-803e-a557-904d2bdcd0aa"
     - stage: horo
-      stageUuid: "32affc01-077d-8e54-8831-4a6706d0bdf5"
+      stageUuid: "203e0833-e2dc-8473-8e6e-704d0f66a388"
     - stage: seal
       stageUuid: "b5ef4a51-a7d7-81ba-b8d5-fd5da92bcf01"
     - stage: uuid
-      stageUuid: "45822f81-438a-839f-bf5b-897e4b940fbf"
+      stageUuid: "f4e066c8-a504-8654-90bf-67930a4b0b1b"
 version: 2
 ---
 # agent/security

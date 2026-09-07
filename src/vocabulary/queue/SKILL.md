@@ -2,18 +2,18 @@
 name: queue
 description: "Use when managing or routing work in order — support ticket queue, task backlog, processing sequence by priority/SLA/assignment. The ordered collection of pending work."
 atomPath: "vocabulary/queue"
-coordinate: "vocabulary/queue · 8/crest · e33f07bb"
-contentUuid: "4cf50758-dbd1-589d-9029-e184dae1c266"
-diamondUuid: "13f07148-81be-8a5f-84ad-9bb3bb33a87c"
-uuid: "e33f07bb-17be-84e1-ab45-23a8637c226d"
-horo: 8
+coordinate: "vocabulary/queue · 7/descent · 6eefad6e"
+contentUuid: "aeb8d367-cb6d-5172-8aab-d56e7d634e76"
+diamondUuid: "e8c57673-68ca-88bb-9678-62737a659e27"
+uuid: "6eefad6e-d67e-870f-bb79-092e14133f0d"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 33
 standards: []
 bindings: []
 signatures:
-  computationUuid: "03bf5503-cd2c-87cd-aa30-566c730f51aa"
+  computationUuid: "3e54b1b2-56f9-8049-9035-3ae944d654d7"
   stages:
     - stage: path
       stageUuid: "617b2890-9808-89ee-8e98-346153860479"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "dc06b6b8-ee9b-8f36-9106-16a4f77fee25"
     - stage: horo
-      stageUuid: "9f53e516-65ba-8903-a63f-b830f85f6c84"
+      stageUuid: "bb4eb1e8-2cdf-85e9-9590-16f8876d5844"
     - stage: seal
       stageUuid: "a388a51e-1f2f-8afd-bfc1-c4927161d3ef"
     - stage: uuid
-      stageUuid: "5555f810-4b0e-87e1-a049-590662b4ec4b"
+      stageUuid: "f08c3623-5643-88a3-8efa-330661fa0381"
 version: 2
 ---
 # queue

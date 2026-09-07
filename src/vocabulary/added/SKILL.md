@@ -2,11 +2,11 @@
 name: added
 description: "Use when reasoning about added as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/added"
-coordinate: "vocabulary/added · 5/round · 65a71195"
-contentUuid: "52fd73af-e5fe-5f33-b815-26d46d3b8c94"
-diamondUuid: "e087a34d-7728-83c9-b2df-d8cafdcf62b3"
-uuid: "65a71195-5853-8f0c-914e-743d1437d701"
-horo: 5
+coordinate: "vocabulary/added · 8/crest · 83660c75"
+contentUuid: "de669a22-4ecf-5d22-b9f0-56988a714e16"
+diamondUuid: "00a38500-8be1-8f9d-9e7e-7ee4eef496b8"
+uuid: "83660c75-5616-8fa3-9596-fa935c12497c"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "93eca3e0-236e-8d6e-9bd5-7348518b46d3"
+  computationUuid: "621be2d8-5ae1-8502-b7a0-1d059b160556"
   stages:
     - stage: path
       stageUuid: "7a45987a-4c21-8fe6-be90-0d583c7c8158"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dae31609-0d9b-867c-ab37-c32f1b7ef735"
     - stage: horo
-      stageUuid: "eaef0c5b-b006-879f-8ca3-a578d44cf642"
+      stageUuid: "3d711380-0793-80e7-930a-18ad145bf91b"
     - stage: seal
       stageUuid: "705fcce9-8951-8bf7-b016-9737840300e6"
     - stage: uuid
-      stageUuid: "dc178dc8-d1ba-8624-b867-64d5da7a053b"
+      stageUuid: "a85e4a56-d7b2-8616-9189-f8e98559e84d"
 version: 2
 ---
 # added

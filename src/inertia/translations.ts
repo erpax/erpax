@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "inertia",
-    "uuid": "83b92de3-e15a-81e7-80bb-fe4943cec093",
+    "uuid": "a921ed3b-bc43-84f6-99a0-c08df0f34d3a",
     "words": [
       "inertia"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a manoeuvre is claimed that a body cannot perform — the corner bound applied to mass. horo/cornerLimit gives the kinematics; this adds the body: F = m·v²/r, which has candidates. Every route around the bound must change one factor — inertial mass, proper acceleration, the body, or the observation — and each is a named claim with a refuting test. Computes what each hypothesis COSTS: the factor by which it must exceed its own measured bound. Identifies no object and proposes no mechanism.",
-    "uuid": "f4a264a6-c44c-8e80-8c58-b5d2a547cdc2",
+    "uuid": "43fc1416-8a81-810c-8aaf-cb2929d04bcd",
     "words": [
       "use",
       "when",

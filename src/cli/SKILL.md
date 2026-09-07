@@ -2,18 +2,18 @@
 name: cli
 description: "Use when invoking operational gates from package.json — erpax routes readme, lint, test, rules, apply, and confirm without bloating scripts."
 atomPath: cli
-coordinate: "cli · 8/crest · dea0116e"
-contentUuid: "68028db5-08a0-539e-8d06-4c56b665de1a"
-diamondUuid: "5e0f3c55-7cfc-81e7-b12f-9f9af2dcba72"
-uuid: "dea0116e-a896-82da-9205-c25fdbca5530"
-horo: 8
+coordinate: "cli · 4/weave · 8c0618c6"
+contentUuid: "250adaf3-1243-5180-bb39-e6b53cd64c8e"
+diamondUuid: "69a61d68-f6f9-851f-a0f2-95cdaee2f7af"
+uuid: "8c0618c6-138c-8e85-baad-03ff0fd7e64f"
+horo: 4
 typography:
   partition: cli
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d45b3fc4-27d0-8ce1-9d11-cfddd3eb29af"
+  computationUuid: "871afdce-8452-8de7-8a1e-c81843b149ce"
   stages:
     - stage: path
       stageUuid: "ec9bf598-cfd2-850f-adf6-08c8935f70dd"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "44b5c7c5-6565-8330-bcdc-7d8115986ffc"
     - stage: horo
-      stageUuid: "7a30e165-bdaa-8fef-9411-99cb8f0e28b0"
+      stageUuid: "1a943647-41b7-803d-96bc-663d593b2c6a"
     - stage: seal
       stageUuid: "387a768d-e694-819c-8b4c-131931d83d67"
     - stage: uuid
-      stageUuid: "226b955a-a0fe-88ff-b841-32af43105b1f"
+      stageUuid: "b18aa8d0-8fc6-8f77-b095-efcf5f86c6a2"
 version: 2
 ---
 # cli

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "linearity",
-    "uuid": "809da808-a2e5-8e21-8f7e-69f6a686a35d",
+    "uuid": "0bc2a8a2-9411-8cee-b174-63173f7491b1",
     "words": [
       "linearity"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about why erpax stays even and collision-free — quantum linearity is the superposition principle made structural; the content-uuid hash distributes every word and digit uniformly, so atoms form perfect lines (no clumping, no privileged point), merge is a linear set-union, and in the double torus gravity reads double.",
-    "uuid": "fd233ac2-763d-8de9-803a-94b55818f1ec",
+    "uuid": "4c47f208-893a-8738-9ac1-63e4569a5851",
     "words": [
       "use",
       "when",

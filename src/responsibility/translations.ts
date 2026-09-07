@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "responsibility",
-    "uuid": "2f8265fe-b266-83d8-b95b-bd64994f02dd",
+    "uuid": "4dbfbec8-091d-83f3-94b1-aa7d33e2d892",
     "words": [
       "responsibility"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one responsibility — the singular model of the responsibilities collection (the plural store); a duty assigned to a role or position.",
-    "uuid": "de7d7942-5b4e-86b7-b8fe-8ad98ce1c45b",
+    "uuid": "a0030bcd-8536-8110-86e8-20f05e95f4c5",
     "words": [
       "use",
       "when",

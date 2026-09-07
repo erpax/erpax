@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ask",
-    "uuid": "c3c59b30-a471-8462-9b79-53edec7efca6",
+    "uuid": "6b53b963-11a6-8a90-aafc-6406e79d4693",
     "words": [
       "ask"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when measuring or reducing the human-typing cost — a required field with no defaultValue and no computed value is a bare ask. User input is the highest cost in an ERP: it costs attention, invites error, and is re-paid on every document forever. If the law, the tenant, the sequence or the clock determines the value, predefine it case by case and the user CONFIRMS instead of types. What remains is the irreducible ask: the user's actual intent. Run: tsx src/rules/ask/index.ts",
-    "uuid": "bc413d26-6584-8066-bae4-d16a3c3a2bf9",
+    "uuid": "d2c2672f-6052-820b-b62e-a4da11d9d4b9",
     "words": [
       "use",
       "when",

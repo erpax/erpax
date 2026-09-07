@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "country",
-    "uuid": "78d2cca0-3e68-8483-9847-fa0fbf3ab958",
+    "uuid": "869fb0b6-db97-8db6-894d-9e00645dbc53",
     "words": [
       "country"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about country — holds a canonical bundle per country and returns the one for an alpha-2 code: its holidays, its VAT treatment, its bank-statement and invoice formats, its signing profile.",
-    "uuid": "c48c5214-04a2-8d16-b25b-dd95806243e6",
+    "uuid": "889594f4-b74f-820b-9ea6-ad4e59eee231",
     "words": [
       "use",
       "when",

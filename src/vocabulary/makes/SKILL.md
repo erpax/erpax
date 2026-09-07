@@ -2,11 +2,11 @@
 name: makes
 description: "Use when reasoning about makes as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/makes"
-coordinate: "vocabulary/makes · 2/share · 1e1760d8"
-contentUuid: "2e91827a-8b04-5798-82ae-21b43d4bc796"
-diamondUuid: "477c51c2-e1f1-803e-b49c-dba61ee418f3"
-uuid: "1e1760d8-c506-81b9-96dc-55038b32d814"
-horo: 2
+coordinate: "vocabulary/makes · 5/round · 26fc5d36"
+contentUuid: "0cf09e45-5800-519b-9164-d79dbcf1e9ca"
+diamondUuid: "da1c9c98-2c27-8d69-b4b6-53adccf3a9c7"
+uuid: "26fc5d36-ea09-8e54-8238-f6a930264442"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5b4cb1ad-abc1-8c09-8cd3-cc8104006df5"
+  computationUuid: "3770c347-a8f6-8eb6-9ee6-de6ae30738fc"
   stages:
     - stage: path
       stageUuid: "8af2cfae-7a23-8aad-b9f3-8c72d168dce0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c21bfddc-6655-884c-a9c9-28c81ecf0d18"
     - stage: horo
-      stageUuid: "126458c7-da68-8a6b-93cd-49ba1b7616c0"
+      stageUuid: "0f7e2413-a667-871a-a5a8-f72eab3a6987"
     - stage: seal
       stageUuid: "22785ff8-2227-83e4-8ea3-0c4a836f363f"
     - stage: uuid
-      stageUuid: "48979965-5fd6-8c3e-ad9b-42ee3c4a0319"
+      stageUuid: "ac4225c5-3161-8711-b68f-bb15f38fffe4"
 version: 2
 ---
 # makes

@@ -2,11 +2,11 @@
 name: strength
 description: "Use when reasoning about the corpus's strength — its DRY-ness amplified by its dimensional slices; strength = coverageCostLog2(dryness, slices), infinite at perfect DRY (zero duplication residue), one slice (the digit's 88.4%) only one term."
 atomPath: strength
-coordinate: "strength · 5/round · 343e05a0"
-contentUuid: "d3f338ef-62b6-5bfe-aa4e-871608692323"
-diamondUuid: "8dd5be5d-3a19-8378-bef4-57dd3856ff65"
-uuid: "343e05a0-977f-8374-995e-1d7597450517"
-horo: 5
+coordinate: "strength · 2/share · 43ce63a3"
+contentUuid: "7b6695f5-c5f3-56dd-86de-8bd14955b7d7"
+diamondUuid: "712a7534-6ce4-8b8f-a046-24f4f6beba57"
+uuid: "43ce63a3-d04a-80ad-a41d-8a83430aa470"
+horo: 2
 typography:
   partition: strength
   bondDegree: 47
@@ -14,7 +14,7 @@ standards:
   - "schema.org strength (a magnitude) reframed as tamper-strength · coverageCostLog2 (the ∞ law) · the merge/gravity DRY"
 bindings: []
 signatures:
-  computationUuid: "be0b2204-a6fe-8712-b7ae-1dff66e0d649"
+  computationUuid: "6d3ad3e1-7fbb-8246-a015-b88ba8af7fee"
   stages:
     - stage: path
       stageUuid: "92032de4-6bc2-85b3-b2d5-73784e56284f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "adeb7dbc-0709-861e-b578-5da42534c36a"
     - stage: horo
-      stageUuid: "beb4f7b5-2776-8a75-a250-76126445670b"
+      stageUuid: "9fe86c76-0bc9-8adb-a0ca-6db52936f948"
     - stage: seal
       stageUuid: "71e161c9-182f-87ba-a710-ff8a3cc16bfc"
     - stage: uuid
-      stageUuid: "e5c44fd4-d398-84ab-b70a-c8495a8b05c7"
+      stageUuid: "20fa2d8b-a595-8613-9472-cfe7128e703b"
 version: 2
 ---
 # strength — the DRY math: a DRY corpus has infinite strength

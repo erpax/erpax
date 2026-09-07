@@ -2,11 +2,11 @@
 name: ticker
 description: "Use when reasoning about ticker as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: ticker
-coordinate: "ticker · 5/round · d135117e"
-contentUuid: "3aa26cb2-0dfb-5e6b-baa6-29c3dfa0123a"
-diamondUuid: "23247c2a-169c-8fbb-badc-c00eae30321f"
-uuid: "d135117e-9ec0-88ec-ae87-bdf33d20b7c9"
-horo: 5
+coordinate: "ticker · 1/base · 70ce376e"
+contentUuid: "ededd0c9-110e-55cf-9f4c-55f3b143d448"
+diamondUuid: "9ff4db2a-374a-8e0c-9965-94199026d184"
+uuid: "70ce376e-5f48-85ae-bb97-41c97dee70a6"
+horo: 1
 typography:
   partition: ticker
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "42b6296a-559a-8306-b0ad-dbe8dc623530"
+  computationUuid: "5061a90a-bcc4-896a-8146-f0a385d48268"
   stages:
     - stage: path
       stageUuid: "5e4ac12f-03b1-8b81-bd10-95228d7bb410"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6230b55b-262d-8811-acba-b40cdff2710b"
     - stage: horo
-      stageUuid: "6d7796f1-d5ca-816f-b6be-8b31c59f2610"
+      stageUuid: "8b3c9aee-c096-88d5-b2b1-4342470cf6ea"
     - stage: seal
       stageUuid: "1f6c1b96-bf7c-8e6e-bda8-fb6f52ad3c3a"
     - stage: uuid
-      stageUuid: "4136b4bf-729e-8993-91b7-5011c1307b0b"
+      stageUuid: "4bfa1137-8319-89f5-a069-ec105d65eb24"
 version: 2
 ---
 # ticker

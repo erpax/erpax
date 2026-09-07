@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "rating",
-    "uuid": "26c35637-edab-8c13-bfd1-695c5005a5a8",
+    "uuid": "60367303-e329-8b31-b9cd-32e61549bb47",
     "words": [
       "rating"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about rating — rating — the voting/rating among skills (the organism's consensus signal).",
-    "uuid": "5f85ca2c-b188-8479-8f5d-5e28fa973ef3",
+    "uuid": "209cd915-c19b-8275-b407-d1986c23e2ba",
     "words": [
       "use",
       "when",

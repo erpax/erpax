@@ -2,11 +2,11 @@
 name: bitemporal
 description: "Use when querying a row AS OF two clocks at once — system-time (when the value was recorded) crossed with valid-time (when it was true in the world) — under SQL:2011 temporal tables; isHistoricalQuery gates whether a request looks back in time, asOf is the pending temporal-table read."
 atomPath: "beyond/bitemporal"
-coordinate: "beyond/bitemporal · 1/base · adf665d7"
-contentUuid: "48a1a264-b96b-55ff-80ca-3a30f8f87696"
-diamondUuid: "5c398e49-22df-8d93-b9d4-a499cda896fc"
-uuid: "adf665d7-2f8d-86a4-8ca7-2966adad5a35"
-horo: 1
+coordinate: "beyond/bitemporal · 2/share · b4ed5ef1"
+contentUuid: "bbb6f0e0-c894-580e-80dd-d559dda86445"
+diamondUuid: "04e9ca2a-71f0-8c08-acb8-4c24aae08cb0"
+uuid: "b4ed5ef1-7d62-87ac-8fdd-d50c0edb14d9"
+horo: 2
 typography:
   partition: beyond
   bondDegree: 15
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "29371acd-950e-807c-a06e-b3c407844a09"
+  computationUuid: "5d903da0-c0ea-8173-a401-ea2f76273581"
   stages:
     - stage: path
       stageUuid: "68aab473-1f63-8b01-99d8-e34fdc65196b"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "f3ef53b9-4089-84b6-bf62-0235cb358bce"
     - stage: horo
-      stageUuid: "afeab441-ca56-8b4f-b37c-3b90870a0882"
+      stageUuid: "f545e399-ff09-8429-aa1b-0eb99249728f"
     - stage: seal
       stageUuid: "b24cdc3f-e3e4-8de5-bb27-c1d036965711"
     - stage: uuid
-      stageUuid: "f6365f0e-41a2-85d1-a7d3-0f3127ca9821"
+      stageUuid: "37e79b9b-858a-8b37-b01f-242ca635293a"
 version: 2
 ---
 # beyond/bitemporal — bitemporal queries (system-time × valid-time)

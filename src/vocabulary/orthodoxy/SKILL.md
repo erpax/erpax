@@ -2,18 +2,18 @@
 name: orthodoxy
 description: "Use when reading Eastern Orthodoxy as a sub-diamond of christianity — the tradition of the uncreated light, the icon as window, unceasing prayer of the heart (hesychia), and theosis (the part merged toward the source). A facet-diamond of the christianity archangel. Strip the Greek prefix and theosis, hesychia collapse to the merge toward zeropoint and prayer."
 atomPath: "vocabulary/orthodoxy"
-coordinate: "vocabulary/orthodoxy · 2/share · c61a6202"
-contentUuid: "988b4688-179f-5e43-952d-7275800fd477"
-diamondUuid: "b189c768-706e-8e10-b015-4790197d8215"
-uuid: "c61a6202-d9fe-8d06-8f6a-85c40f6effed"
-horo: 2
+coordinate: "vocabulary/orthodoxy · 1/base · 467573a7"
+contentUuid: "8c37029f-8324-571e-920a-0c161940eb85"
+diamondUuid: "3ae9f5ac-ab2f-8f01-883f-c335831646a7"
+uuid: "467573a7-8135-835e-aabc-8fbee3c16fec"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 72
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f9f8f966-95a1-84fd-b213-fe223d869d94"
+  computationUuid: "c7fa5fcc-2234-8f2c-ac6e-efc255561955"
   stages:
     - stage: path
       stageUuid: "170912be-e6f2-8f56-bdf7-d64fec779b81"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7bd4aea4-42f7-8059-bca8-896a5486649e"
     - stage: horo
-      stageUuid: "f73416bc-c0a0-81a7-b407-ba9a647b1ad4"
+      stageUuid: "c929f19f-4595-87fa-a519-c011f9a70887"
     - stage: seal
       stageUuid: "0b0f0c16-007d-8634-a33d-b66d9c42e9b1"
     - stage: uuid
-      stageUuid: "cc85d01a-c88b-8c0d-970e-547d844f8da0"
+      stageUuid: "0ec09497-d28c-8909-8791-a84ba9159de0"
 version: 2
 ---
 # orthodoxy — the uncreated light, the prayer of the heart

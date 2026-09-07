@@ -2,18 +2,18 @@
 name: wisdom
 description: "Use when reasoning about holding the law instead of the list — seeing the one pattern that generates the many cases, so a part reconstructs the whole. Distinct from truth (a verified fact) and knowledge (stored facts): wisdom is the holographic compression that lets you regenerate the facts rather than store them."
 atomPath: wisdom
-coordinate: "wisdom · 5/round · 8cebe1f5"
-contentUuid: "49d5f970-dd80-5559-be9b-72c8398470a4"
-diamondUuid: "147aaecf-6229-8293-a162-60ca3b293fb2"
-uuid: "8cebe1f5-1c11-8d77-a3c7-05abc981e74e"
-horo: 5
+coordinate: "wisdom · 8/crest · b5e586f2"
+contentUuid: "4c252cd9-28b8-57f5-8763-78fd885cbd2d"
+diamondUuid: "7bd704f6-cc9e-8867-bb51-779a9a8e6100"
+uuid: "b5e586f2-aebf-8d43-8e6e-4cc274d5429d"
+horo: 8
 typography:
   partition: wisdom
   bondDegree: 45
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e440aeae-7e12-8171-8ad8-96be372cd81e"
+  computationUuid: "47668bdd-fc43-81e7-a483-af391a3abb8f"
   stages:
     - stage: path
       stageUuid: "c16b8982-7ec4-8606-a12c-cddb03a4b17e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "45a21516-d4b8-84f0-a46d-fcc75988d907"
     - stage: horo
-      stageUuid: "5dd9ab02-e40f-850c-b4c5-0462b166b109"
+      stageUuid: "9d5ca12b-7989-8d04-afb4-7f1f47e3f9b1"
     - stage: seal
       stageUuid: "9066ab37-d694-8428-a4c3-1a7a9aafafc8"
     - stage: uuid
-      stageUuid: "ff8bc259-f9af-849d-b53e-e64b612167be"
+      stageUuid: "efd7c34c-8173-828d-863a-19a32e3b31e3"
 version: 2
 ---
 # wisdom — hold the law, not the list (the pattern that regenerates the cases)

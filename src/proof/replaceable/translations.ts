@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "replaceable",
-    "uuid": "95eb3170-6590-86c4-aee2-5066db5d99e2",
+    "uuid": "cb9f3b22-c7b6-8c1e-993a-ed9a57e4b414",
     "words": [
       "replaceable"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about replaceable — erpax cites ISO, RFC, WCAG and statute across 219 atoms. **Every one of those citations is an assumption about the world until something can contradict it.** What turns a citation…",
-    "uuid": "398d49ae-c129-8590-8f88-f420145704c5",
+    "uuid": "e6504f58-68c9-8446-8c6b-12bb2548b951",
     "words": [
       "use",
       "when",

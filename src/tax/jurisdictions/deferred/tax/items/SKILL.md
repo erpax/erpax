@@ -2,11 +2,11 @@
 name: items
 description: "Use when originating or reversing IAS-12 deferred-tax positions — deductible/taxable temporary differences, tax-loss/credit carry-forwards, realisation probability, expected reversal date, substantively-enacted rate measurement and linking to the journal-entry booking. The IAS-12 deferred-tax register collection."
 atomPath: "tax/jurisdictions/deferred/tax/items"
-coordinate: "tax/jurisdictions/deferred/tax/items · 7/descent · d4126311"
-contentUuid: "a20332a7-6ec3-550e-b77e-ecc2ee66c5cc"
-diamondUuid: "a0c10dd1-9267-8e1d-acf7-d9788a148c9b"
-uuid: "d4126311-f37d-8155-8619-17acf9c80d72"
-horo: 7
+coordinate: "tax/jurisdictions/deferred/tax/items · 4/weave · b53709b1"
+contentUuid: "855c2e8e-bb34-5c7a-a013-148045330e1c"
+diamondUuid: "1a3c2672-494e-8358-94d3-e0468489b5ed"
+uuid: "b53709b1-a7c5-8157-9b8f-7b11da03ad40"
+horo: 4
 typography:
   partition: tax
   bondDegree: 116
@@ -32,7 +32,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "14b5e2dd-516d-804b-ad39-51faedfe6a15"
+  computationUuid: "b774904f-dd21-8963-820d-15e7cb6b6325"
   stages:
     - stage: path
       stageUuid: "6cd6203d-96b1-8e18-b1fd-220149c4343a"
@@ -43,11 +43,11 @@ signatures:
     - stage: links
       stageUuid: "ff78e8da-ca00-8897-97a4-72a10b82fc98"
     - stage: horo
-      stageUuid: "675052dc-c8bc-8b91-bbb0-9b8b35c48503"
+      stageUuid: "edb356ed-55a5-8009-b15f-022a51ff7d1c"
     - stage: seal
       stageUuid: "40ea48fa-ea26-8af4-9173-2384ceef4f40"
     - stage: uuid
-      stageUuid: "d58c5434-c57a-86f2-8349-9cab69adc7eb"
+      stageUuid: "02982559-b653-889d-8143-64a34388606e"
 version: 2
 ---
 # deferred-tax-items

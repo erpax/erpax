@@ -2,11 +2,11 @@
 name: medical
 description: "Use when reasoning about medical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: medical
-coordinate: "medical · 1/base · b660a17c"
-contentUuid: "686d4e85-180d-5d76-91a7-8c4cac0a4146"
-diamondUuid: "ba862479-ac69-8cd4-9a05-3c0e1d1b4fdd"
-uuid: "b660a17c-9441-8972-b779-b99e7e959388"
-horo: 1
+coordinate: "medical · 7/descent · 11757c05"
+contentUuid: "c8e0d782-ac5a-542d-b047-b21d4b9b00f3"
+diamondUuid: "12696fa5-50cf-8419-bdf6-c4e208c06695"
+uuid: "11757c05-f39c-8e15-a997-d676d71f1f6e"
+horo: 7
 typography:
   partition: medical
   bondDegree: 337
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "903fdcfb-4bea-80b9-a003-4495769fff1f"
+  computationUuid: "070386d2-87b9-862e-b527-d361187db190"
   stages:
     - stage: path
       stageUuid: "e53ae029-efdc-825a-979a-e584d15d4d7e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8a9ed1d8-96ed-83e0-91f9-cbeb75214f0e"
     - stage: horo
-      stageUuid: "3e9163f9-0533-884f-ab04-0371e389175f"
+      stageUuid: "d87b550f-e94d-8ce3-849e-46337ece0ff8"
     - stage: seal
       stageUuid: "5f3233cb-be83-804b-8790-85d735903fba"
     - stage: uuid
-      stageUuid: "09e2c639-3642-8938-9248-cf4267f08629"
+      stageUuid: "18261638-c319-81e4-aa0b-c982f0131972"
 version: 2
 ---
 # medical

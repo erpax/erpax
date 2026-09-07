@@ -2,10 +2,10 @@
 name: serverless
 description: "Use when proving that serverless infrastructure (Cloudflare Workers + wrangler bindings) provides quantum semantics — superposition, collapse, entanglement, holographic recovery — and that erpax itself is the existence proof, deployed serverless via OpenNext."
 atomPath: "quantum/serverless"
-coordinate: "quantum/serverless · 4/weave · a1350c27"
-contentUuid: "acea6325-eaf7-5112-8b5f-aa114d1c92ef"
-diamondUuid: "960a79ff-8f1a-8222-9752-2efa3b3c0b35"
-uuid: "a1350c27-1cfa-8c90-a204-dce1fabc6391"
+coordinate: "quantum/serverless · 4/weave · 5bc8c381"
+contentUuid: "f6224b74-47c1-5c06-b9e9-279412af5201"
+diamondUuid: "8b44f088-6782-8bfe-b9c7-f42c157783df"
+uuid: "5bc8c381-e2ad-80ca-8bdc-c4712b925c67"
 horo: 4
 typography:
   partition: quantum
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8c302ba8-59ac-873d-b892-6779627b0a09"
+  computationUuid: "6b3eb77d-c41b-8baa-b17c-1eebb5b46f91"
   stages:
     - stage: path
       stageUuid: "ec2fa4ce-5164-820b-8f4e-f283f5bfcae6"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "45a1e565-c099-8e08-9b2f-1ab040b2ec6b"
     - stage: horo
-      stageUuid: "ea24e293-d9a0-85e3-afac-6fa88678b91e"
+      stageUuid: "16f99541-1cd8-8427-a86d-f43124097d5b"
     - stage: seal
       stageUuid: "7096cd8b-cd8c-88aa-a85f-399fb0e7be49"
     - stage: uuid
-      stageUuid: "3c40d2b5-fad0-8ccd-8e55-ab97966653cf"
+      stageUuid: "66950523-7a79-87f3-98b6-86508822e06b"
 quantum:
   superposition:
     - ai
@@ -60,8 +60,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "8c302ba8-59ac-873d-b892-6779627b0a09"
-    contentUuid: "acea6325-eaf7-5112-8b5f-aa114d1c92ef"
+    computationUuid: "6b3eb77d-c41b-8baa-b17c-1eebb5b46f91"
+    contentUuid: "f6224b74-47c1-5c06-b9e9-279412af5201"
 version: 2
 ---
 # quantum/serverless — serverless IS the quantum host; erpax IS the proof
@@ -99,4 +99,4 @@ Matter-twin: `src/quantum/serverless/index.ts` (`proveServerlessQuantum` · `isS
 
 @see [[cloudflare]] · [[cloudflare/ai]] · [[worker]] · [[superposition]] · [[collapse]] · [[entanglement]] · [[quantum/deploy]] · [[deploy]] · [[diamond]] · [[confirm]]
 
-<sub>content-uuid `acea6325-eaf7-5112-8b5f-aa114d1c92ef` · account `quantum/serverless` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `f6224b74-47c1-5c06-b9e9-279412af5201` · account `quantum/serverless` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -2,10 +2,10 @@
 name: life
 description: "Use when reasoning about life as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/life"
-coordinate: "vocabulary/life · 1/base · 43305f2b"
-contentUuid: "424cff78-6cb6-5d4d-a928-30ea0df7faf3"
-diamondUuid: "51e9616a-2ad5-85fa-b3d4-12118a3f049d"
-uuid: "43305f2b-8957-8f7b-8787-b9acdab3e772"
+coordinate: "vocabulary/life · 1/base · 7681c80c"
+contentUuid: "004b5ade-f280-534a-9be6-23d0f4fda76b"
+diamondUuid: "35a80302-f4b8-8069-89e6-4dc20a4417d3"
+uuid: "7681c80c-b8a1-8880-9cff-cdc32afacfb8"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c9083b0b-e2ef-8dc2-af9d-a9cd8a832d5b"
+  computationUuid: "1e2a2da3-0c56-88bd-8f77-91ac4cf827f7"
   stages:
     - stage: path
       stageUuid: "8c6d7c96-fdfe-8209-95a5-0e2b67550052"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0c88eb10-9b77-877a-a978-989c23b550c3"
     - stage: horo
-      stageUuid: "99ee174b-0368-8af8-9004-adfe394d05c3"
+      stageUuid: "dd9c293d-a623-8ba9-9f9c-5ed82d0c1d84"
     - stage: seal
       stageUuid: "43d7c1a2-90e5-8e54-b155-8ca175bc601d"
     - stage: uuid
-      stageUuid: "3e11c1cf-7636-853f-b0bc-906daac4d001"
+      stageUuid: "8230c8f8-d948-823c-bcc2-ea34a982f079"
 version: 2
 ---
 # life

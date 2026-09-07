@@ -2,18 +2,18 @@
 name: revenue
 description: "Use when applying IFRS-15 / ASC-606 revenue recognition logic — performance obligations, contract modification, timing (at-a-point vs. over-time), deferral."
 atomPath: revenue
-coordinate: "revenue · 2/share · ad1853f2"
-contentUuid: "36917127-28e6-53a3-bffe-9898eaaf17d7"
-diamondUuid: "35cb2dfa-b4b4-8b9a-950d-f0455a4363ef"
-uuid: "ad1853f2-291d-8e32-ad48-d0136654f6d1"
-horo: 2
+coordinate: "revenue · 1/base · 386e59dc"
+contentUuid: "d92f03cd-6cc3-58ef-8862-11914b50be20"
+diamondUuid: "c2908650-0186-88fd-8371-cb7f6cc26255"
+uuid: "386e59dc-f3ff-8150-9ab6-ce4f21955491"
+horo: 1
 typography:
   partition: revenue
   bondDegree: 42
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1cc49711-7bce-8d1a-aaef-c93726a639eb"
+  computationUuid: "6a85b148-e8d2-85c5-893c-bb979514563e"
   stages:
     - stage: path
       stageUuid: "6fc3d9cd-9700-88df-9b46-eb6b01fe0ac5"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3e1d22bb-fa55-8f4d-abd2-def12cd89aef"
     - stage: horo
-      stageUuid: "1c176c09-de45-8b13-a3a3-244c57257c8a"
+      stageUuid: "f54469c7-ede5-8b34-b5a7-6b08042d56df"
     - stage: seal
       stageUuid: "105ac0e6-07e0-8434-a4aa-f04fc8308ab1"
     - stage: uuid
-      stageUuid: "4df8436a-66de-80b8-afc8-3555a0dee293"
+      stageUuid: "2e5e8be9-a0ed-8030-a9b5-eabb5c674118"
 version: 2
 ---
 # revenue

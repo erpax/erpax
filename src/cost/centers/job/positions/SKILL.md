@@ -2,11 +2,11 @@
 name: positions
 description: "Use when managing org-chart slots, headcount planning, or recruiting — an ESCO/ISCO-08 classified position (vacant, filled, or planned) that drives the recruiting pipeline and IAS-19 headcount accruals. The HR job-position collection."
 atomPath: "cost/centers/job/positions"
-coordinate: "cost/centers/job/positions · 5/round · 8f7897e6"
-contentUuid: "3a905516-5d5b-593e-ae3e-6b0cdd5e5570"
-diamondUuid: "4b52ef19-b1dc-8054-b732-472ca53a12ef"
-uuid: "8f7897e6-ec1f-8be7-8562-a64cd7499ef1"
-horo: 5
+coordinate: "cost/centers/job/positions · 7/descent · 47cd2ddc"
+contentUuid: "556fe30e-a130-5a14-90c4-b91ab33f7c5d"
+diamondUuid: "fe084155-25bc-88c5-b0e2-76fb8aa74ead"
+uuid: "47cd2ddc-59ed-8626-90c4-9a97d24e6c06"
+horo: 7
 typography:
   partition: cost
   bondDegree: 42
@@ -17,7 +17,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "c2ccedc7-a1f2-8dd2-b39d-13430dc1725b"
+  computationUuid: "089b58f7-042f-8cae-91cb-d463b6c1204e"
   stages:
     - stage: path
       stageUuid: "5965dd4d-91c4-8faf-99b9-f05081fb6b66"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "44e32719-7151-81c0-a3e0-82e428b4c799"
     - stage: horo
-      stageUuid: "a085c009-67bd-8167-98ec-27e1c0a09b5e"
+      stageUuid: "0b429728-6a45-874f-9848-da30aeef1466"
     - stage: seal
       stageUuid: "bf8e606c-00ce-86bc-a6e4-ed3c01b23a51"
     - stage: uuid
-      stageUuid: "153da25a-927a-8886-9dcd-53899353ba5a"
+      stageUuid: "fc6e191d-f6f1-899c-b593-42cb5b10a2a8"
 version: 2
 ---
 # job-positions

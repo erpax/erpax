@@ -2,10 +2,10 @@
 name: "15"
 description: "Use when implementing or referencing IFRS 15 / ASC 606 — Revenue from Contracts with Customers."
 atomPath: "ifrs/15"
-coordinate: "ifrs/15 · 8/crest · 3cd8f5a9"
-contentUuid: "e8808c7b-6e5d-5dac-b779-2fc73e47cd1e"
-diamondUuid: "d3258cfa-8b82-88d6-b61e-3294716496ca"
-uuid: "3cd8f5a9-7dbc-8cb3-b0b4-8e6caeacfc1b"
+coordinate: "ifrs/15 · 8/crest · d90d602d"
+contentUuid: "b9078120-9232-54f9-a920-a13fc6734d32"
+diamondUuid: "977fe7c6-c6d2-89b4-a8dd-7d48ba16dde7"
+uuid: "d90d602d-dc16-832e-a339-7fd8810e215e"
 horo: 8
 typography:
   partition: ifrs
@@ -23,7 +23,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "fb0f2d7e-033b-8a86-a833-eda920f78c3b"
+  computationUuid: "3b14b6c2-5cbc-8fb0-b562-c501ee239291"
   stages:
     - stage: path
       stageUuid: "03eb7d08-176e-810b-822b-498e0ffb0b49"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "3dec6b16-fd9e-8ece-be56-b0c14c458ac2"
     - stage: horo
-      stageUuid: "542b8c91-a37a-85da-8bf9-3167c1265581"
+      stageUuid: "06dc8bad-4f3e-8b4d-a83b-fbf8e15ee60f"
     - stage: seal
       stageUuid: "36a951c0-1cef-81c8-828b-02fcf0245ec5"
     - stage: uuid
-      stageUuid: "d48a6159-5328-8b44-a735-1aa16e05a267"
+      stageUuid: "82d9e817-a24f-8488-b57b-dc51f1dd41c1"
 version: 2
 ---
 # IFRS 15 / ASC 606 — Revenue from Contracts with Customers

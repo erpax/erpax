@@ -2,11 +2,11 @@
 name: refurbished
 description: "Use when reasoning about refurbished as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/refurbished"
-coordinate: "vocabulary/refurbished · 2/share · 2eaa8808"
-contentUuid: "c0b3dea7-5757-5d72-a989-98a15eb662b2"
-diamondUuid: "c0318bf2-814d-8359-b7ed-8b2be6a84442"
-uuid: "2eaa8808-a715-8086-aced-84f10fe304c5"
-horo: 2
+coordinate: "vocabulary/refurbished · 5/round · 0ddc1c45"
+contentUuid: "8b6ffb4b-c4ad-5b06-aaee-115bff4b1365"
+diamondUuid: "c63d92c0-846b-8005-81f1-1965787b08ec"
+uuid: "0ddc1c45-a2a0-876a-bc0b-f50a39157793"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "63e195d9-b2ad-8c43-8960-ae72dac162ec"
+  computationUuid: "fd84b1b6-6d74-8f48-bbf1-8599359796a7"
   stages:
     - stage: path
       stageUuid: "1630ce7d-5aed-8de6-92ec-694d233be1bc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "876f6537-b166-8100-9bcc-cd577009f482"
     - stage: horo
-      stageUuid: "a9289af9-3740-846e-a994-8728c1fc6ecd"
+      stageUuid: "0b4eb100-5911-8b9f-8da5-08c208b41265"
     - stage: seal
       stageUuid: "a4c0acc8-82c0-8fdc-bc37-36077385a01d"
     - stage: uuid
-      stageUuid: "703861df-f9d7-8329-af06-1a3c6d422647"
+      stageUuid: "07c9338c-3927-830a-8c87-a92f7c9016a5"
 version: 2
 ---
 # refurbished

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cmspage",
-    "uuid": "4f7fdcf4-4e73-8a15-9f34-19b5c96de0ef",
+    "uuid": "f528cbb4-9a2a-8bf8-8892-27fa98c06ae9",
     "words": [
       "cmspage"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when creating or managing CMS pages — hero blocks, content blocks, forms, SEO meta — with per-tenant unique slugs, versioned drafts, breadcrumb hierarchy, and i18n routing. The Payload CMS page collection.",
-    "uuid": "85466537-c016-8b31-9934-03ddc7e9b2c7",
+    "uuid": "a34e41ab-7fdd-8d8f-ae42-9e6af1ad1568",
     "words": [
       "use",
       "when",

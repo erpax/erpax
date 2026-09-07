@@ -2,11 +2,11 @@
 name: pipelines
 description: "Use when tracking candidate applications, interview stages, offers, and hiring decisions per position — GDPR-compliant funnel (applied→screening→interview→offer→hired/rejected), sourcing, skill-match, and recruiter activity. The GDPR Art.6(1)(b) candidate-pipeline collection."
 atomPath: "cost/centers/job/positions/recruiting/pipelines"
-coordinate: "cost/centers/job/positions/recruiting/pipelines · 7/descent · 8af8c872"
-contentUuid: "f3145c21-4281-51ce-8cdb-0d013bc1cf01"
-diamondUuid: "709ab69b-1200-839e-94da-d089e09b39f8"
-uuid: "8af8c872-eae7-8622-98e2-c56a4d3e6fe0"
-horo: 7
+coordinate: "cost/centers/job/positions/recruiting/pipelines · 5/round · d5378624"
+contentUuid: "09b08e53-fb0a-598d-830e-254ceb1a7b03"
+diamondUuid: "2af506a2-c863-8173-b5a0-a3180a045b81"
+uuid: "d5378624-8016-8745-8e8e-4fd9869f1b0b"
+horo: 5
 typography:
   partition: cost
   bondDegree: 21
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "84937450-4515-84f7-a438-e4f458e72b62"
+  computationUuid: "73a7149d-79de-8e6e-a663-640f316b41a3"
   stages:
     - stage: path
       stageUuid: "4d849f42-98d4-8e67-bc26-040e53d4ec98"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "7a956905-9441-8005-8da4-4da5dffc1f4a"
     - stage: horo
-      stageUuid: "1d56c13f-44b1-869e-8906-a99f9fa7124e"
+      stageUuid: "bd44d71e-8ff1-867d-833d-e37304b49253"
     - stage: seal
       stageUuid: "b0184ca8-a938-82a6-bbc4-e3c778f21623"
     - stage: uuid
-      stageUuid: "934102c2-5798-8408-8503-67172e92dedc"
+      stageUuid: "00578e92-e204-8966-9648-ea07ed00d57b"
 version: 2
 ---
 # recruiting-pipeline

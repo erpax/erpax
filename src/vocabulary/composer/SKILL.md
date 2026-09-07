@@ -2,10 +2,10 @@
 name: composer
 description: "Use when reasoning about composer — The person or organization who wrote a composition, or who is the composer of a work performed at some event."
 atomPath: "vocabulary/composer"
-coordinate: "vocabulary/composer · 7/descent · a02f3a79"
-contentUuid: "c1f06fbf-bdc0-5c81-b409-b7d191e0d3fa"
-diamondUuid: "3a6b232f-c107-848e-bfb8-425e9d09e92d"
-uuid: "a02f3a79-b6c9-8f4d-acd6-6fbd194a2faf"
+coordinate: "vocabulary/composer · 7/descent · 577a960a"
+contentUuid: "09e9159c-29e3-5535-8fb2-9146dfb72ce7"
+diamondUuid: "50a88d19-da8b-820d-947e-ab7343942f8b"
+uuid: "577a960a-9d01-8f7d-b81d-c4f94655e8f0"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "787bbdae-7c9f-8ecf-befa-f359089a4f0d"
+  computationUuid: "72bf9879-86f1-8535-98b0-c3d81326b3f6"
   stages:
     - stage: path
       stageUuid: "a389ed6f-15c7-8538-980a-fc7238a2a496"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7cbbf59c-152a-846a-8846-47cbb3a9884a"
     - stage: horo
-      stageUuid: "fe86a4bc-f452-8bc4-8f37-c253c5c3e6fc"
+      stageUuid: "adde78f3-70b3-84e1-a383-0fe7b955217e"
     - stage: seal
       stageUuid: "dadd7f97-eaa4-8a91-9c1d-dca416712196"
     - stage: uuid
-      stageUuid: "b80796c5-d072-81ef-a92f-fe685c8b91b9"
+      stageUuid: "642bb667-3f88-8920-95b1-a12268f0f0a5"
 version: 2
 ---
 # composer

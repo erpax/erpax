@@ -2,10 +2,10 @@
 name: build
 description: "Use when the skill router index or installed catalogue must emit — buildSkillIndex and buildInstalledCatalogue compile the corpus for fs-less Workers."
 atomPath: "skill/router/build"
-coordinate: "skill/router/build · 1/base · 6b6fbf0f"
-contentUuid: "d1325afa-1ef1-5cb0-9a05-58247743ee7f"
-diamondUuid: "1e03076f-ada3-86d3-8d09-90a05e3774ab"
-uuid: "6b6fbf0f-f979-8f5a-b957-2abf2b4676af"
+coordinate: "skill/router/build · 1/base · dc90a48e"
+contentUuid: "2708a95b-4ce7-5c65-93de-e61427719c15"
+diamondUuid: "a4afe1fb-c095-859b-bc32-0c4d4ba18290"
+uuid: "dc90a48e-e831-8bf9-9a11-8f1bdbd3441e"
 horo: 1
 typography:
   partition: skill
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "295de6c5-6ebf-89ce-8b81-206daa366338"
+  computationUuid: "b51b51c9-1988-812c-bf35-609f9ae20274"
   stages:
     - stage: path
       stageUuid: "f426d175-3210-8c5b-b9c1-c9755ff3e58b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "dae37b2f-77c1-8359-9c44-1b2eebdc0d52"
     - stage: horo
-      stageUuid: "4af6c706-92b8-8d14-af02-8858a2aafa8e"
+      stageUuid: "a219ecfe-d8b5-8d18-9c3d-b7c96095c371"
     - stage: seal
       stageUuid: "5cc624a5-9d0c-8082-94e6-425e4c90c9a4"
     - stage: uuid
-      stageUuid: "447ef5bc-fc74-8104-a9d2-cf9b14ae4ad9"
+      stageUuid: "ab46e367-671f-85e7-a10d-26863012709e"
 version: 2
 ---
 # build — skill index · installed catalogue emit

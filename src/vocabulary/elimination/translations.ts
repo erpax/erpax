@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "elimination",
-    "uuid": "cb82275e-e6c8-8c25-800d-cc9e2f72784a",
+    "uuid": "fed5167b-c82f-81ec-a5db-cf562b3595c6",
     "words": [
       "elimination"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when removing intercompany balances, transactions, and profits in consolidation per IFRS-10 and IFRS-3 — consolidation adjustment that nets balances across entities to zero",
-    "uuid": "1683e035-5445-8538-b460-131ca9ceeb8a",
+    "uuid": "79ba9708-4c5d-8c0e-87c8-c1eedec9603e",
     "words": [
       "use",
       "when",

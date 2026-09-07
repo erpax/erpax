@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "calculator",
-    "uuid": "8bd59d30-1253-8749-af49-c7ab37c7b281",
+    "uuid": "f90a8174-ccf1-8a31-8dd9-dd744f4daed4",
     "words": [
       "calculator"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when taking the arithmetic mean of a number array anywhere in the corpus — the zero-guarded collapse of the repeated `sum/length` reduce across receivables, payables, and multi-currency analytics, where an empty array yields 0 (never NaN).",
-    "uuid": "7f4814a2-bbaa-8047-8e91-a05ce64fedb1",
+    "uuid": "e4232c2a-2555-8b9d-916c-e465151af141",
     "words": [
       "use",
       "when",

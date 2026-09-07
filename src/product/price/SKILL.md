@@ -2,10 +2,10 @@
 name: price
 description: "Use when reasoning about price — The ecommerce plugin generates one column per supported currency. resolves the right one for the requested currency and renders it, so application code never names and never…"
 atomPath: "product/price"
-coordinate: "product/price · 5/round · bb1d9109"
-contentUuid: "64780520-fa5a-59e4-8ee6-ab8a17b3be00"
-diamondUuid: "ec4385bb-6ec9-80ee-9bd1-fab5d8b95472"
-uuid: "bb1d9109-2713-84c1-9f21-9ac410d4a9cb"
+coordinate: "product/price · 5/round · 6ff009ae"
+contentUuid: "b070b303-eec6-55fe-ba93-f3bc5998cfcc"
+diamondUuid: "28edd5ee-edd7-8bf9-96fa-a310b282e14a"
+uuid: "6ff009ae-f687-8c77-be46-972865ca0ba0"
 horo: 5
 typography:
   partition: product
@@ -16,7 +16,7 @@ standards:
   - "US-GAAP ASC-830 foreign-currency-matters"
 bindings: []
 signatures:
-  computationUuid: "de48924f-d789-8d8d-a1e7-e7bc66db01e3"
+  computationUuid: "6b9c21c3-5d36-8ac5-b871-f5c89ba80753"
   stages:
     - stage: path
       stageUuid: "dabfc230-83e8-8f5c-9007-68050a5ac9a3"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "e62843ff-79f6-85b1-b98a-ebdc341b818c"
     - stage: horo
-      stageUuid: "c33f06d0-7872-85f7-bf0a-832c827641e4"
+      stageUuid: "bede2562-c08c-8c72-ba5f-dfdc0afbaa30"
     - stage: seal
       stageUuid: "6fd6c77e-fbf9-8d29-8a8d-5ec62fec0335"
     - stage: uuid
-      stageUuid: "ccb325bd-9b9d-888c-adc8-75dcac0f5b2f"
+      stageUuid: "639a617a-cbdd-88d3-98c9-e7ad6d768e45"
 version: 2
 ---
 # product/price — a price is asked for in a currency, never read from a hardcoded column

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "imprint",
-    "uuid": "892c2367-609d-80e4-b760-abe015b4686b",
+    "uuid": "e981a815-2497-846f-9e8e-d99c474dbe95",
     "words": [
       "imprint"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about imprint as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "0fc17df9-e619-89aa-b28a-e6157ebfd1b0",
+    "uuid": "1e48a797-76c7-8507-8beb-a34152ec5693",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "folder",
-    "uuid": "43a541ae-37df-86a3-a5be-bd71f8aa0c0d",
+    "uuid": "9b19bfb1-a3a6-8662-a0d0-2e96d14e876a",
     "words": [
       "folder"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about folder — The user's standing command, made a gate: **every atom is ONE generic lowercase word, and a code folder holds only its trinity** — (the word), (the matter), (the proof) — plus the",
-    "uuid": "18b81fe3-3ecd-86aa-a44a-dce201ecb728",
+    "uuid": "dd2ca49f-3b79-86fd-81c7-72379e14b6a4",
     "words": [
       "use",
       "when",

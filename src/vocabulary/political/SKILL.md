@@ -2,11 +2,11 @@
 name: political
 description: "Use when reasoning about political as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/political"
-coordinate: "vocabulary/political · 8/crest · d73fdb37"
-contentUuid: "af20c112-dc56-5aea-b265-9174bde5552f"
-diamondUuid: "b084818d-c689-8a39-b556-f4c7c4e083a4"
-uuid: "d73fdb37-7aa2-8e0a-8192-93a75a7efe44"
-horo: 8
+coordinate: "vocabulary/political · 2/share · 1c7d619d"
+contentUuid: "54a0c949-b396-5788-9314-7c3b59eb4ce5"
+diamondUuid: "ffaea94a-b980-84d1-934c-01585fbb8876"
+uuid: "1c7d619d-d4fc-8e50-b744-91d51f5d3e69"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1a20a4ca-689b-8cc1-b103-7560a0664a26"
+  computationUuid: "6ae995b9-d1a6-86d6-b812-2bd39755eccf"
   stages:
     - stage: path
       stageUuid: "874880c0-de6d-87ed-abc3-6c07c526620b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3c13b55e-d0ef-8b4e-a744-ed04d01cd2ed"
     - stage: horo
-      stageUuid: "9541c649-b631-8f96-b471-c9bfaff4e569"
+      stageUuid: "32facb17-c340-87e1-9c3c-6b0be7b0a2aa"
     - stage: seal
       stageUuid: "d3becc4a-d1c5-8669-863a-27e6339e6b13"
     - stage: uuid
-      stageUuid: "d811535d-4327-85d1-bb87-4d9ae44c28b7"
+      stageUuid: "c179b19f-7274-8651-9cce-3582c873be52"
 version: 2
 ---
 # political

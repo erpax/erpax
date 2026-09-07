@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sentiment",
-    "uuid": "8f6db829-29aa-84ab-b1fb-b7dd3dc92460",
+    "uuid": "6e89dad9-94b7-8807-ae4d-80742ee019cd",
     "words": [
       "sentiment"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when analyzing emotional tone — from text, survey, or interaction. The polarity/intensity of emotion (positive/negative/neutral) or sentiment score.",
-    "uuid": "0c36e47e-527a-8a53-94ea-686d34f1d267",
+    "uuid": "25d5ed5d-f72d-81b1-a36e-c0d355548b9b",
     "words": [
       "use",
       "when",

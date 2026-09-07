@@ -2,11 +2,11 @@
 name: types
 description: "Use when reasoning about types — Canonical Peppol BIS Billing 3.0 types — envelope around EN-16931."
 atomPath: "peppol/bis/3/types"
-coordinate: "peppol/bis/3/types · 8/crest · f5f40b03"
-contentUuid: "6ce47d39-543a-5b6c-9267-741566209bcc"
-diamondUuid: "a8d06235-11de-80f9-a39e-035dc13f3c5d"
-uuid: "f5f40b03-2aa8-84ff-abd4-997f63f6199c"
-horo: 8
+coordinate: "peppol/bis/3/types · 1/base · 278ed8b6"
+contentUuid: "6e61ada8-fcf9-5d93-9e69-f4d395b732c0"
+diamondUuid: "be10baa6-318d-8cd0-93d5-16df228d8e8e"
+uuid: "278ed8b6-d9c1-8a59-ac38-63a7f9ace83d"
+horo: 1
 typography:
   partition: peppol
   bondDegree: 85
@@ -27,7 +27,7 @@ standards:
   - "UBL-2.1 universal-business-language"
 bindings: []
 signatures:
-  computationUuid: "5d05779c-fc31-8f56-b617-eb639345833a"
+  computationUuid: "ea4e711a-e79b-8a09-8ff2-3ec48d0968f5"
   stages:
     - stage: path
       stageUuid: "ed04d832-59e0-8050-a6da-081da1379506"
@@ -38,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "fad191c4-63d9-8143-a7bf-400dfd5c0a78"
     - stage: horo
-      stageUuid: "16b1a60d-6afb-87d9-a619-62075c844a02"
+      stageUuid: "b203093e-0215-8b50-8abc-f49316421753"
     - stage: seal
       stageUuid: "545241a4-8e16-8d51-a7e3-8bcb1a12fbfe"
     - stage: uuid
-      stageUuid: "38184a70-bcf9-8508-bd5f-279386ecd0e4"
+      stageUuid: "a876ffb8-ccc9-8893-987d-7fe67ce65d47"
 version: 2
 ---
 # peppol/bis/3/types

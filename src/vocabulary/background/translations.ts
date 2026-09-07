@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "background",
-    "uuid": "2c6c6be5-c441-8026-97b4-b6a8c71e3aaa",
+    "uuid": "df42ee19-1d83-806b-8c48-a69363ca3d12",
     "words": [
       "background"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about background — A schema.org component word, collided out of schema.org compounds — fused from BackgroundNewsArticle (sti · collapse · merge).",
-    "uuid": "0a6eb343-a340-8e20-afa6-67d98f877629",
+    "uuid": "531b9505-22d4-8bf6-80d7-45bdcbafe08c",
     "words": [
       "use",
       "when",

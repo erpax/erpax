@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "schema",
-    "uuid": "0f1fe96f-5e89-8bb1-af92-e335768d2a12",
+    "uuid": "77130b90-ad80-8ab5-8ca9-946b8d0c54ad",
     "words": [
       "schema"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reaching the workflow SCHEMA — the shape a definition must take before the engine can read it — through its own namespace; the face re-exports the workflow barrel while the matter is still being lifted out of the hub.",
-    "uuid": "529b246d-a476-835a-9b51-ccf93a67d171",
+    "uuid": "811b1712-0dc2-8bd1-bbe7-1012c6343f69",
     "words": [
       "use",
       "when",

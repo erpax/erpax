@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "literature",
-    "uuid": "960a6b67-3ed2-8264-8c05-9bcf13183954",
+    "uuid": "41ce16c1-af0a-8a86-b0f5-b2014330b66d",
     "words": [
       "literature"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the body of written work quantumly — literature is the infinite word-chain over a minimal alphabet (the gravity reverse), every text a content-addressed snapshot in the akashic chain, citations as merge-links, reading the measurement that collapses a text's superposed meanings.",
-    "uuid": "ce8d1529-e9ac-8bf3-9a96-c9a0c5c48da6",
+    "uuid": "01a2a75e-14e6-8ce0-b4f1-831dcf5d098f",
     "words": [
       "use",
       "when",

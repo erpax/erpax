@@ -2,11 +2,11 @@
 name: fixpoint
 description: "Use when the measurer is inside the system it measures — a self-applied measure either REFUTES itself or is a FIXED POINT, with no third outcome. Proven by throughVoid(5)=5 (the void pivot) and auditAuditors()=[] (the auditor passes its own audit). The paradox resolves computationally, via fixed-point math, not physics."
 atomPath: fixpoint
-coordinate: "fixpoint · 7/descent · 8c3f5d5d"
-contentUuid: "6e03a834-96ef-57b9-8517-5bd29459ff6f"
-diamondUuid: "c87fa6b0-75ce-8738-9ac4-310ad09c0474"
-uuid: "8c3f5d5d-f78d-8c63-be01-7d9f9b97e1e8"
-horo: 7
+coordinate: "fixpoint · 8/crest · 3f1f104d"
+contentUuid: "a2efc378-7d07-56f7-ba1c-90a3c6b317d2"
+diamondUuid: "b10caf36-d890-8d1d-84ec-0983ff463f0b"
+uuid: "3f1f104d-e13e-8b44-a811-7c4c123dcbf5"
+horo: 8
 typography:
   partition: fixpoint
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "Kleene recursion theorem · Tarski fixed-point — a self-map has a fixed point"
 bindings: []
 signatures:
-  computationUuid: "47a5098d-a9d6-8bf1-93ef-dee040a151bb"
+  computationUuid: "ed811bfd-ac5c-8b39-a6c2-0cc8f0b2619b"
   stages:
     - stage: path
       stageUuid: "e7e12035-e374-8d57-ad9b-51516bba5b99"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e00ef324-0a8f-88a8-95cf-778fb4ebcda1"
     - stage: horo
-      stageUuid: "7a01f080-ec23-8e4f-b344-c349cec1279a"
+      stageUuid: "61dfb1a8-2f86-8195-9a7b-4cc46f925f4c"
     - stage: seal
       stageUuid: "a5458d9f-b964-8543-8803-183d38072246"
     - stage: uuid
-      stageUuid: "482874f1-cd62-8e84-8448-42f8f025b4d1"
+      stageUuid: "502788c8-91b1-845e-9dd9-10e1efd4e079"
 version: 2
 ---
 # fixpoint — the paradox proves itself computationally

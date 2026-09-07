@@ -2,11 +2,11 @@
 name: zoo
 description: Use when reasoning about zoo — A zoo.
 atomPath: zoo
-coordinate: "zoo · 2/share · bb2c28d2"
-contentUuid: "3e191cc8-d770-5dcf-abe2-907bcfe1fbc0"
-diamondUuid: "7ce85e65-71d3-8dec-80d5-a6c59a0e260a"
-uuid: "bb2c28d2-2a37-8628-9699-e00057df216b"
-horo: 2
+coordinate: "zoo · 5/round · 0890e641"
+contentUuid: "e500bce6-aeef-5db1-88da-9c0ad21408b4"
+diamondUuid: "12667052-6680-8556-93ae-a264ee0ac8bf"
+uuid: "0890e641-9864-889f-bc9f-432274510e4a"
+horo: 5
 typography:
   partition: zoo
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4da6d531-49c1-8c65-9375-af1c3ba9292a"
+  computationUuid: "a3a91ce1-48c2-8d6d-a4fb-02e065e37408"
   stages:
     - stage: path
       stageUuid: "25372f2a-3c51-8d61-a4a2-71dfe72d9acb"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "24b8101e-f2b9-8989-b026-533b7dc9e7e4"
     - stage: horo
-      stageUuid: "3acd1207-4b1e-8d9e-aeb0-1430887eca3a"
+      stageUuid: "42f29f70-ddf5-8c08-bccf-c84b463e6d9e"
     - stage: seal
       stageUuid: "23b7a85d-2053-8172-b6e5-4d9b59f34ce6"
     - stage: uuid
-      stageUuid: "c41ae7e0-f850-8013-91df-6ff25d75d8f8"
+      stageUuid: "d6654ad0-00d2-8ee7-a134-3512f34ead1f"
 version: 2
 ---
 # zoo

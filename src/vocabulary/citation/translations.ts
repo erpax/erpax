@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "citation",
-    "uuid": "4fa0766a-eaf7-8bfb-bd16-06242cef99ec",
+    "uuid": "6a854cde-90bc-8ec6-b7bd-5f2959e0ea7a",
     "words": [
       "citation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about citation — A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.",
-    "uuid": "67a5372e-1b0b-8fbc-8642-82a74880a489",
+    "uuid": "58af58fb-381e-81b7-b6f7-6bdb54228c37",
     "words": [
       "use",
       "when",

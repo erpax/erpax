@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "get",
-    "uuid": "d32408d2-eda9-8be8-b6c7-4c92b77c59a3",
+    "uuid": "17d5e411-b3e5-8cdf-99f0-076f8a085bcc",
     "words": [
       "get"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading a cached document, global or redirect set under RFC 9110 §13 — the read side of the HTTP caching layer, one module per resource kind.",
-    "uuid": "b3fda611-923d-8951-be53-9cb0ea46ca01",
+    "uuid": "ff372536-d613-8148-849a-fc2837d33fc5",
     "words": [
       "use",
       "when",

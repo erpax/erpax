@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "protection",
-    "uuid": "a87da8dc-f3ed-8bdd-b908-2330ccd44128",
+    "uuid": "f25ac4d1-5cbe-8581-9984-ef1b0b53502e",
     "words": [
       "protection"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a contract or processing agreement specifies data-protection obligations — processor/controller roles, permitted uses, security measures (encryption, access controls, breach notification), DPA terms.",
-    "uuid": "753c18eb-c39a-8983-9473-3f7ddf25f436",
+    "uuid": "e2e26f11-8859-8355-a893-f70986b5db44",
     "words": [
       "use",
       "when",

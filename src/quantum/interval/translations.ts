@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "interval",
-    "uuid": "6ec4c5e3-eb57-8df3-b74b-8e4aef94cf50",
+    "uuid": "8e991304-525a-84dc-818f-7e0136dd116e",
     "words": [
       "interval"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about interval — Special relativity's decidable core, proved for **all integers** rather than checked on a carrier, and carrying one consequence this corpus actually needs.",
-    "uuid": "417aef82-a662-89c0-b1a6-7f75380d6690",
+    "uuid": "32e542a7-2d99-8dd5-8eea-281f00d047b0",
     "words": [
       "use",
       "when",

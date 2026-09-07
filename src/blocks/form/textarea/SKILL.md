@@ -2,18 +2,18 @@
 name: textarea
 description: "Use when reasoning about textarea — A and an are bound by a string that appears twice. Change one side and nothing moves on screen: the field still renders, still accepts input, still submits."
 atomPath: "blocks/form/textarea"
-coordinate: "blocks/form/textarea · 5/round · c619a30c"
-contentUuid: "58fc4851-b131-5528-96ba-7763db601806"
-diamondUuid: "ad12f7dd-1214-8cbc-b73e-4c9a70c7f1e0"
-uuid: "c619a30c-7b29-8ccc-911f-b288013ee6ce"
-horo: 5
+coordinate: "blocks/form/textarea · 2/share · e942f833"
+contentUuid: "87aed8fe-1b5f-58c8-a4cd-9ba0be3e5db0"
+diamondUuid: "50acff68-0e7a-85bc-908b-298fb558de88"
+uuid: "e942f833-e7ee-81d6-a2e5-51b3b458a3ef"
+horo: 2
 typography:
   partition: blocks
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "eb32a423-2655-81f6-8c0d-dfb911e81472"
+  computationUuid: "06b033ba-e1dc-8168-8918-adcaa87decdb"
   stages:
     - stage: path
       stageUuid: "5fa0b86f-f59a-84fa-bc4f-dcd9838ee6b0"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "8da840eb-0a32-882d-8ea7-46bc6ae930fc"
     - stage: horo
-      stageUuid: "630a780c-a324-8f1c-abc7-f36d60e3853a"
+      stageUuid: "e971ad67-b278-8ce0-95c2-15756c037fbd"
     - stage: seal
       stageUuid: "23256ea3-742d-881f-83ae-c54718a7d103"
     - stage: uuid
-      stageUuid: "cc48fda7-78de-8b4b-ab74-0d3d6d2431fe"
+      stageUuid: "a11121c8-85cb-8d83-9a57-48d41e95d80b"
 version: 2
 ---
 # blocks/form/textarea — the label names the control, or the control has no name

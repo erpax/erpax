@@ -2,10 +2,10 @@
 name: object
 description: "Use when reasoning about object — The object upon which the action is carried out, whose state is kept intact or changed. Also known as the semantic roles patient, affected or undergoer (which change their state) o"
 atomPath: "vocabulary/object"
-coordinate: "vocabulary/object · 1/base · d9f76c55"
-contentUuid: "a5885a51-9a19-5f23-ae29-513c1179c926"
-diamondUuid: "6ebfb114-0cb5-8fea-8e5c-a5b5616ff7b8"
-uuid: "d9f76c55-a3ab-8e9a-926a-9f50bf158882"
+coordinate: "vocabulary/object · 1/base · da2e61f6"
+contentUuid: "8d94beb1-00ff-5b6e-8507-01f75836b884"
+diamondUuid: "94fcb672-be45-8076-8de6-d9b55ac5f2fb"
+uuid: "da2e61f6-a383-84db-a8f5-8fd8e5586fc2"
 horo: 1
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f4330769-4403-800a-aead-f770e1dd1a99"
+  computationUuid: "3da80e11-6323-830f-ae29-458d7ffdc0c1"
   stages:
     - stage: path
       stageUuid: "13968925-0f5d-8b44-9e26-8533713cbcf3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "df4fc0f0-b5e5-807c-aa87-b28b911f368c"
     - stage: horo
-      stageUuid: "5335c4f3-ad7b-83ca-94ad-118151fdde73"
+      stageUuid: "869ac16e-f3e5-8531-8243-cc7bf183849d"
     - stage: seal
       stageUuid: "e46a3676-3c74-8ac9-bf22-6da07d95bf5b"
     - stage: uuid
-      stageUuid: "ce2cd906-4ee1-80a8-8cd3-3f29275674a1"
+      stageUuid: "8de22668-7033-83ca-b67f-a7ad3a374537"
 version: 2
 ---
 # object

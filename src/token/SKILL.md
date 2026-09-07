@@ -2,18 +2,18 @@
 name: token
 description: "Use when defining design primitives — a design token is a named, semantic design decision (color, font-size, spacing, motion) reused across components. The granular unit of design consistency."
 atomPath: token
-coordinate: "token · 4/weave · e4ac14f6"
-contentUuid: "2d014574-0344-5bfb-b627-61c6a4895838"
-diamondUuid: "9c156596-d945-8f81-9e32-bda2cd52aad6"
-uuid: "e4ac14f6-9060-8991-94fd-78ac10121b82"
-horo: 4
+coordinate: "token · 8/crest · 1f055ecd"
+contentUuid: "8c134e67-5971-5a0e-b7a7-b7511420e08d"
+diamondUuid: "92807d8a-0988-8255-b179-33587294b63e"
+uuid: "1f055ecd-2501-8d8c-b5d7-8dd27443a2d5"
+horo: 8
 typography:
   partition: token
   bondDegree: 16
 standards: []
 bindings: []
 signatures:
-  computationUuid: "07c02920-e8ee-8dd5-b1fb-293cb3c6b9a2"
+  computationUuid: "eb275d34-a5d3-8ed8-9d90-d80e07b3d3de"
   stages:
     - stage: path
       stageUuid: "4715b9b0-2a3a-817c-8782-9c91dc2dc3fa"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "bf97efed-3a0d-84ae-a6dc-25bebb339046"
     - stage: horo
-      stageUuid: "f2699051-e77c-8a89-a0fa-31df5c8cd301"
+      stageUuid: "3f4e611a-7c0e-85e1-9dc0-32f66b1b5d9c"
     - stage: seal
       stageUuid: "22d09236-36f6-8acf-a14d-67cddaa65d64"
     - stage: uuid
-      stageUuid: "c542cd4d-0037-8238-8a89-f07ee5b3711f"
+      stageUuid: "38b5adfc-f166-8232-8973-42a6820c793a"
 version: 2
 ---
 # token

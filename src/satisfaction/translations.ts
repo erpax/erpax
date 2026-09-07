@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "satisfaction",
-    "uuid": "a2815a0b-898e-8d05-a232-b40675335321",
+    "uuid": "6e135b1c-5a9c-89ac-9bab-48a0af437660",
     "words": [
       "satisfaction"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when measuring employee/customer contentment — survey scores, NPS, CSAT, engagement indices. The scalar metric of sentiment toward work, leadership, culture, or service.",
-    "uuid": "12e0ccfc-f0ea-8767-b118-b0234f05de14",
+    "uuid": "3afb1755-6268-8626-b7fc-290d763c7799",
     "words": [
       "use",
       "when",

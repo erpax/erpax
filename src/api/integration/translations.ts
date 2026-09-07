@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "integration",
-    "uuid": "684ab604-a14d-8c7e-81ba-d69b70c9100b",
+    "uuid": "97df8363-d778-88ea-9b44-3111422d3f2d",
     "words": [
       "integration"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when calling any external HTTP API — the outbound face of the one api atom, where a vendor is DATA (base URL, declared auth style, published limits with their source, credentials) and the machinery is shared: a continuous-refill token bucket over every published limit at once so a burst queues rather than drops, credentials that fail closed naming every missing variable, errors that propagate as IntegrationError with the vendor named, and a reuse fold that measures the same IntegrationFtl for every vendor — safe methods only, because deduping a write would drop it.",
-    "uuid": "a466c737-8d51-83f4-98fe-254882a6e194",
+    "uuid": "f0913027-ba49-8025-a1bb-f449c759642d",
     "words": [
       "use",
       "when",

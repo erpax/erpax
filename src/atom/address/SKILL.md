@@ -2,10 +2,10 @@
 name: address
 description: "Use when reasoning about address — Four hundred and fifty-three assertions in this corpus had that shape (rules/mirror). Each was green, fast, and counted as a proof by every gate that counts proofs."
 atomPath: "atom/address"
-coordinate: "atom/address · 4/weave · 892c2179"
-contentUuid: "ee8bf862-e764-5eb8-85a1-b331b606bafe"
-diamondUuid: "2b8010af-eecc-82bf-876c-0b662c7f25bc"
-uuid: "892c2179-a9e1-8798-bcd6-df16fdc8797b"
+coordinate: "atom/address · 4/weave · c26ea2b7"
+contentUuid: "f1bbec2d-73be-5abe-a71e-0b43a8cdba66"
+diamondUuid: "d3308b98-dec4-8b22-b3d2-e99884b9f847"
+uuid: "c26ea2b7-fc74-81db-a159-97f363eb9419"
 horo: 4
 typography:
   partition: atom
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ae7a293b-1c0a-8824-bac4-644f121ccc2d"
+  computationUuid: "ede46fc1-3699-8a05-a2c1-c55ddf3dc656"
   stages:
     - stage: path
       stageUuid: "b7475be0-0d5f-8c93-b4ef-742bc7ad7240"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "bbe201b3-53ba-80b9-9628-c41422f40685"
     - stage: horo
-      stageUuid: "77ca9275-6659-8ae5-9f61-cd171ef3ec1c"
+      stageUuid: "6db9fc88-a1a3-8a1f-9547-880fefb75a9e"
     - stage: seal
       stageUuid: "5abcf0ef-3709-8b5b-8c5f-3aeb9c8cd83f"
     - stage: uuid
-      stageUuid: "97062c54-b5db-83e5-8116-2d5eca0f30d6"
+      stageUuid: "f2038177-1598-8096-87fd-98427df3b856"
 version: 2
 ---
 # atom/address — ask the filesystem, and the assertion can fail again

@@ -2,18 +2,18 @@
 name: irrigation
 description: "Use when water is supplied to a crop on a managed schedule — drip/trickle vs overhead application, fertigation (fertilizer through the line), and evapotranspiration-based scheduling (the water budget). Irrigation credits the soil-water reservoir that evapotranspiration debits; schedule it like a checkbook — replace the deficit before the crop hits stress."
 atomPath: "vocabulary/irrigation"
-coordinate: "vocabulary/irrigation · 5/round · ed5feda8"
-contentUuid: "320d7845-548e-55fb-bd22-ee85c462ce5a"
-diamondUuid: "9a90d58e-1ff1-8055-9432-2e8fa63612d8"
-uuid: "ed5feda8-1168-8904-973a-7aa8fa72c1c8"
-horo: 5
+coordinate: "vocabulary/irrigation · 4/weave · ed29533c"
+contentUuid: "1da56474-23ab-5cb5-b7eb-285272944b80"
+diamondUuid: "62590d77-30ab-89b0-a394-d022b2f63b04"
+uuid: "ed29533c-5ccd-8ef9-a9d8-e27a7856a22a"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 50
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6cc280ae-30cc-846a-8d22-c47ada3b26cd"
+  computationUuid: "f563a235-8848-800b-a7f5-87a9bdccd708"
   stages:
     - stage: path
       stageUuid: "3c76b43d-6b4d-8646-91e0-43e933818f97"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b90e42aa-f125-8707-9492-ed74b9dd6474"
     - stage: horo
-      stageUuid: "998df077-2a50-8086-9502-dceac958e39a"
+      stageUuid: "e1906dbe-59a3-83e0-82ae-ea61c719bc73"
     - stage: seal
       stageUuid: "453caa60-e2cf-86ea-b787-abc32b16c8f8"
     - stage: uuid
-      stageUuid: "9089d519-0d03-8a05-9c2b-1b2a02224564"
+      stageUuid: "4eaa2bde-bf66-84b1-ae52-9d070cfba933"
 version: 2
 ---
 # irrigation — supplying water on a managed schedule

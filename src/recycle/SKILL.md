@@ -2,18 +2,18 @@
 name: recycle
 description: "Use when reasoning about the corpus's digital waste — the orphan grains (atoms bound to nothing) that are disconnected thoughts, the unreported gap; recycle reconnects them to a genuine relative or returns them to the void, and never fabricates a link."
 atomPath: recycle
-coordinate: "recycle · 1/base · 38c415b0"
-contentUuid: "58abecf9-8412-50af-b606-1d1c502a79a7"
-diamondUuid: "8673c0c2-1792-8f30-9c3c-3992bbb5429a"
-uuid: "38c415b0-7f6e-8c53-bb1b-11e048166bc1"
-horo: 1
+coordinate: "recycle · 7/descent · 20b14d28"
+contentUuid: "f57271d5-227f-5578-a824-25acf42b2c75"
+diamondUuid: "d92d48f5-2fe8-804a-9fe2-461f6f240f4f"
+uuid: "20b14d28-eddf-8161-8b84-ca7a55c937c6"
+horo: 7
 typography:
   partition: recycle
   bondDegree: 42
 standards: []
 bindings: []
 signatures:
-  computationUuid: "53b83dd3-bdd4-8406-b23b-4049323b7ba1"
+  computationUuid: "cc8e8290-67e4-8676-a4af-0d44c2a77860"
   stages:
     - stage: path
       stageUuid: "8cb7dfdf-998b-8663-b9e7-29b591954eee"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f701fbd6-27cc-8f92-b585-28e9374ad8b8"
     - stage: horo
-      stageUuid: "1bc93886-333b-8d2a-9c01-f4f571f95ec8"
+      stageUuid: "8bd47c3c-ba1a-8702-ab6a-9f712ec50bd3"
     - stage: seal
       stageUuid: "ecaacf7b-17bf-8156-b10e-c3601dee42ba"
     - stage: uuid
-      stageUuid: "3bea7e60-3605-838d-8102-bed01ba3e239"
+      stageUuid: "8be6dec6-5cdc-8370-914b-51d3445af564"
 version: 2
 ---
 # recycle — quantum recycle the digital waste

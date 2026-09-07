@@ -2,11 +2,11 @@
 name: debit
 description: "Use when reasoning about accounting/debit — debit/credit logic — double-entry validation and journal lines."
 atomPath: "accounting/debit"
-coordinate: "accounting/debit · 5/round · 73eda0a5"
-contentUuid: "3556ca30-f262-5d0b-b10d-70fc18f20370"
-diamondUuid: "55894a28-7b68-8fc0-b784-56d15f853456"
-uuid: "73eda0a5-5622-8246-adea-3d2ac9f9d55b"
-horo: 5
+coordinate: "accounting/debit · 1/base · 75bcae2e"
+contentUuid: "b2e19a03-f251-53c1-bd1b-b52055ffe2df"
+diamondUuid: "3e0c80f6-f1b2-87f1-b1d7-19846a5208eb"
+uuid: "75bcae2e-d5df-8a05-9695-571042f57a9b"
+horo: 1
 typography:
   partition: accounting
   bondDegree: 47
@@ -18,7 +18,7 @@ standards:
   - "US-GAAP ASC-810 consolidation"
 bindings: []
 signatures:
-  computationUuid: "6cee0acb-c88b-8dc3-ac9b-cff1325efc30"
+  computationUuid: "5a16ce93-c3fb-8c66-a8f7-657dcb0b8710"
   stages:
     - stage: path
       stageUuid: "c1db6504-7cdb-8828-a61c-7e57ba59ff08"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "25357c22-ef71-89cc-b8dc-a54a81b63394"
     - stage: horo
-      stageUuid: "a87d4764-be7c-8d58-9a3d-2cf4332b27ca"
+      stageUuid: "496f8102-846b-849e-8059-d343dc637dcb"
     - stage: seal
       stageUuid: "ef19d0db-3b7f-894a-8ccf-48c074dd3596"
     - stage: uuid
-      stageUuid: "b39e117b-92d4-8e3a-be81-49e178d247e5"
+      stageUuid: "d1a55cc9-5744-84c8-9da6-c453a9194a78"
 version: 2
 ---
 # accounting/debit

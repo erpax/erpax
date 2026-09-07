@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "replay",
-    "uuid": "383720b4-5ac8-818f-a21c-2864180da5a3",
+    "uuid": "c006c1e3-b5a5-81a8-9df8-c2743769be73",
     "words": [
       "replay"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an auditor demands \\\"show me how this number was computed and reproduce it\\\" — deterministic replay re-runs a chain step and proves byte-identical output by hashing the AgentEffect sequence (timestamps stripped) and matching it against the leaf's recorded outputHash.",
-    "uuid": "d4568a59-89dc-8685-849a-9d48c43b01d7",
+    "uuid": "26396e86-6833-878e-922e-2a0a4ee28e1a",
     "words": [
       "use",
       "when",

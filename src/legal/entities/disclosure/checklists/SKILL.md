@@ -2,11 +2,11 @@
 name: checklists
 description: "Use when preparing or auditing financial-statement disclosure completeness — IFRS/SEC/compliance-framework checklist items, applicability assessment, evidence attachment, and preparer/reviewer sign-off per IFRS IAS-1 / SEC Regulation S-K / ISO-19011. The disclosure-checklist sign-off collection."
 atomPath: "legal/entities/disclosure/checklists"
-coordinate: "legal/entities/disclosure/checklists · 5/round · 8d61cfa6"
-contentUuid: "acccea79-e65c-5fe2-8ae3-078d45847be1"
-diamondUuid: "f5afac8d-8fdc-8057-9785-67876358727b"
-uuid: "8d61cfa6-3f24-8ac9-8f5f-64828f7c70cb"
-horo: 5
+coordinate: "legal/entities/disclosure/checklists · 7/descent · 0e5f5aa4"
+contentUuid: "dfd4ae63-0618-5270-abb9-c588d4d74b87"
+diamondUuid: "cae776bf-bab3-859f-a945-082bfdc4651b"
+uuid: "0e5f5aa4-e589-87b8-ab77-f89c9cf6ad39"
+horo: 7
 typography:
   partition: legal
   bondDegree: 18
@@ -15,7 +15,7 @@ standards:
   - "SEC Regulation S-K disclosure"
 bindings: []
 signatures:
-  computationUuid: "eb0cde4f-88fe-88f3-9375-0f14c66f507a"
+  computationUuid: "e9aeec4a-2ad3-8166-bfbd-286a600a58b5"
   stages:
     - stage: path
       stageUuid: "d1e8bdf9-e68a-89dc-a86e-1dc453cfe506"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "8c8b4ef9-7d13-89f6-8f76-83b185eb7770"
     - stage: horo
-      stageUuid: "11a3a181-5cc2-8470-9a8e-abdec934906a"
+      stageUuid: "01083f50-cee7-825d-81b4-636744da2f15"
     - stage: seal
       stageUuid: "271c5f4f-8ddd-883c-b42d-1baccef40228"
     - stage: uuid
-      stageUuid: "ceb3876a-af41-8bb0-a890-d31ddbc3de44"
+      stageUuid: "261cea91-3b34-88fa-818a-dd11e1e12c57"
 version: 2
 ---
 # disclosure-checklists

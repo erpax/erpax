@@ -2,11 +2,11 @@
 name: stadium
 description: "Use when reasoning about stadium as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: stadium
-coordinate: "stadium · 1/base · dfdec3cd"
-contentUuid: "fb0295b7-4f2b-56ae-8613-13f345069f1b"
-diamondUuid: "73792df7-d392-857e-b3bc-e6162e8ca489"
-uuid: "dfdec3cd-6664-845b-9dfa-2bf0ffea30a7"
-horo: 1
+coordinate: "stadium · 7/descent · 653bcddc"
+contentUuid: "1a4e5a5c-e2d7-524d-97ed-375fc914dd20"
+diamondUuid: "531bd886-2a49-8824-a580-394730fe1168"
+uuid: "653bcddc-b1e4-82d6-b3bb-48776d0c1cb8"
+horo: 7
 typography:
   partition: stadium
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c60f166c-f755-8061-a512-c10e257cf02b"
+  computationUuid: "c813cfed-1afb-86c4-939b-fe9638c4bd74"
   stages:
     - stage: path
       stageUuid: "25b03c71-80b0-838b-8832-0b452d54b3b6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bb19137c-5a8e-8fa7-b26e-404beca75478"
     - stage: horo
-      stageUuid: "bb13e432-e503-8883-b9a0-8101379c99e5"
+      stageUuid: "60ef57ec-4816-81a5-a287-ce6db13e3579"
     - stage: seal
       stageUuid: "1fa3e90c-8cd0-8c03-9782-bd0eb4e3db22"
     - stage: uuid
-      stageUuid: "b31c1f10-77da-82cc-93af-ac68709b7fd2"
+      stageUuid: "0ad89591-4db1-86a9-9475-8ba1f1404929"
 version: 2
 ---
 # stadium

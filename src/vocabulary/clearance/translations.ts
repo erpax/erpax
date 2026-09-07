@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "clearance",
-    "uuid": "237a8b0b-852d-879a-ac0a-c1dc18e8f033",
+    "uuid": "7fa23093-767b-8684-bb1b-e25637910693",
     "words": [
       "clearance"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about clearance — A schema.org component word, collided out of schema.org compounds — fused from securityClearanceRequirement (sti · collapse · merge).",
-    "uuid": "4f6cc971-aafd-8f03-8075-77af4907d914",
+    "uuid": "18c75de9-8772-8906-b19b-412349303e15",
     "words": [
       "use",
       "when",

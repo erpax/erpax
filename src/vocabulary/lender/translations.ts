@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lender",
-    "uuid": "4d78e083-7486-8a89-8393-c45cca56ab32",
+    "uuid": "6611e119-a398-8a15-8739-476cbd95039d",
     "words": [
       "lender"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about lender — A sub property of participant. The person that lends the object being borrowed.",
-    "uuid": "5b6e901f-83ab-87e3-9580-b18478458fa2",
+    "uuid": "bd1b7949-cc68-83a9-ad1b-c6341ff6843a",
     "words": [
       "use",
       "when",

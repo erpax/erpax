@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "secret",
-    "uuid": "cdf77a88-e67c-87b8-ade9-4a13581dc5f2",
+    "uuid": "fcc25296-d704-8bed-a4c3-3ccb39cae4ca",
     "words": [
       "secret"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when sealing Payload CMS secrets at rest or unsealing them at boot — encrypt under AES-256-GCM with the content-uuid in AAD; decrypt only when the presented uuid matches the expected content identity (fail-closed).",
-    "uuid": "9784f9ea-b2c3-8c5a-95e4-f0e617e345a1",
+    "uuid": "5ee0b7ab-4dc8-8b51-a028-de76ebf4c720",
     "words": [
       "use",
       "when",

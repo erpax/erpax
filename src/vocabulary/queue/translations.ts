@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "queue",
-    "uuid": "9ba5f09a-0510-8773-a996-4110803b43e8",
+    "uuid": "462ceec5-2a3f-8300-9036-726401f8e126",
     "words": [
       "queue"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing or routing work in order — support ticket queue, task backlog, processing sequence by priority/SLA/assignment. The ordered collection of pending work.",
-    "uuid": "fc0f80fd-881f-83e1-a050-432ffb68cdcd",
+    "uuid": "d91d61ce-4b4d-8372-9485-e8087470e233",
     "words": [
       "use",
       "when",

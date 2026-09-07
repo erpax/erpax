@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "transplant",
-    "uuid": "b0ea58e4-f00b-81bc-b717-c71416044c2b",
+    "uuid": "32c37663-152a-8130-97a7-25abf4401d2f",
     "words": [
       "transplant"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when setting greenhouse-raised seedlings into the field — transplanting (vs direct seeding): plug or bare-root starts set at spacing, after hardening off. Transplanting buys earliness, uniformity, and a weed jump; direct seeding saves labor but ~10–20% may not establish. A method of planting, downstream of propagation.",
-    "uuid": "5c919273-c6a2-8e7b-86ee-4bf62ab463dc",
+    "uuid": "877d2a0a-fddd-86f3-86f7-33ea4b6d7ecd",
     "words": [
       "use",
       "when",

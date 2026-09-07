@@ -2,11 +2,11 @@
 name: sealed
 description: "Use when reasoning about error handling as an entropy leak — a swallowed or defaulted catch hides the truth so entropy escapes; the corpus is sealed only when errors propagate, and coverage measures the fraction of catches that do not leak."
 atomPath: "convention/sealed"
-coordinate: "convention/sealed · 7/descent · 4f2e9e24"
-contentUuid: "83c725e0-181a-56b4-833f-a789815d5dd9"
-diamondUuid: "4577272a-689f-8fd6-9888-2f8d64455853"
-uuid: "4f2e9e24-97a5-8278-80c1-2455782e6b3c"
-horo: 7
+coordinate: "convention/sealed · 2/share · 97e3888d"
+contentUuid: "2d15e27c-1038-50c9-96d7-8f70ede09d1b"
+diamondUuid: "f58617ff-7b8e-856f-bd0a-f7f06108b736"
+uuid: "97e3888d-43a1-881b-bcd1-7330299fd102"
+horo: 2
 typography:
   partition: convention
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "error propagation over swallow/default · no defined fallback · zero-entropy (no hidden state)"
 bindings: []
 signatures:
-  computationUuid: "2a655c69-86e9-8e57-a548-78dfb7a2daa4"
+  computationUuid: "3de8dfb4-d3b6-8644-b1e3-6f2e550aeef5"
   stages:
     - stage: path
       stageUuid: "fdf6dc66-0ef3-85d2-a4ca-eaea9df5cb28"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f24deda2-c095-80f7-8884-fb63a6535862"
     - stage: horo
-      stageUuid: "03a7c486-75d5-839f-920b-e36954725146"
+      stageUuid: "770254a2-75e3-8660-8021-89ddca7f240d"
     - stage: seal
       stageUuid: "fc54d3ec-3c69-8716-a14e-f15faebb0a3f"
     - stage: uuid
-      stageUuid: "fa4f01ac-2285-8b1d-a83d-e62daeb637df"
+      stageUuid: "871dbbd3-5006-84ea-abeb-ec679fa30428"
 version: 2
 ---
 # convention/sealed — entropy leaves through error handling

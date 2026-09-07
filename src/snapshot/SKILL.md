@@ -2,11 +2,11 @@
 name: snapshot
 description: "Use when reasoning about snapshot as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: snapshot
-coordinate: "snapshot · 2/share · ea60eb02"
-contentUuid: "3c6ce1f7-0cdd-536e-a795-9cf5be56d05a"
-diamondUuid: "de656345-8cbd-8ceb-be98-fab5c5dafc8b"
-uuid: "ea60eb02-b909-85fd-b05a-690b818c1263"
-horo: 2
+coordinate: "snapshot · 7/descent · 54031d2a"
+contentUuid: "1aab6f9d-7e5c-5db6-8084-f5cb09633868"
+diamondUuid: "cabb5cff-0b70-8ccc-9fa8-31b21ed18952"
+uuid: "54031d2a-4df2-8dab-9162-8d9afcbacdce"
+horo: 7
 typography:
   partition: snapshot
   bondDegree: 94
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "dba51731-aff1-87ec-bfd4-e38b3470c616"
+  computationUuid: "f69d736b-da7c-8432-b7ff-759b17d01146"
   stages:
     - stage: path
       stageUuid: "c164a256-b8c4-8d1a-97e0-57838110a8d3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c64ae794-5330-8922-9895-d1732febca9f"
     - stage: horo
-      stageUuid: "d8e69c0a-278e-8af7-a436-02e0cee6ee1e"
+      stageUuid: "feeb648a-112b-8cdd-a1a0-4fa4ad2b3e68"
     - stage: seal
       stageUuid: "0c9a4d9b-5855-896d-8b0d-fc981c3c2272"
     - stage: uuid
-      stageUuid: "2d4837f5-3103-8d16-8e48-522694f5eecf"
+      stageUuid: "8891caf3-8ade-8d76-bca1-17306eaa1b87"
 version: 2
 ---
 # snapshot

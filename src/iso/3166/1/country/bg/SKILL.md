@@ -2,11 +2,11 @@
 name: bg
 description: Use when reasoning about bg — Bulgaria (BG) — canonical country bundle.
 atomPath: "iso/3166/1/country/bg"
-coordinate: "iso/3166/1/country/bg · 7/descent · 1c86b0c3"
-contentUuid: "7b9e4c8e-e17d-5f52-b9e3-b123fb6e3943"
-diamondUuid: "f6945905-22fc-8463-aa5f-f8d2a44b7440"
-uuid: "1c86b0c3-4d5c-880c-8248-fd1c3a8bd816"
-horo: 7
+coordinate: "iso/3166/1/country/bg · 2/share · 17e85551"
+contentUuid: "d7ae48f7-8165-5615-8bca-360cc8243451"
+diamondUuid: "98785efc-f587-87cd-bdd9-20e198956b0b"
+uuid: "17e85551-faa7-833f-9ca7-f6583baaf8f1"
+horo: 2
 typography:
   partition: iso
   bondDegree: 14
@@ -35,7 +35,7 @@ standards:
   - "VIES vat-validation"
 bindings: []
 signatures:
-  computationUuid: "edd25336-01b1-8f74-b78c-6d3435b0829d"
+  computationUuid: "fa28ae96-40f0-8a4a-b30b-89fe39ed8d65"
   stages:
     - stage: path
       stageUuid: "7b31b97f-99ca-8432-aed4-51666d2dce19"
@@ -46,11 +46,11 @@ signatures:
     - stage: links
       stageUuid: "cc51fb3f-5257-8509-be9d-ac7b44d87222"
     - stage: horo
-      stageUuid: "a15dfef9-57ce-8dd1-bb8f-cd70eeda371f"
+      stageUuid: "02c54164-e7a5-86ed-a9f0-87c9efb70561"
     - stage: seal
       stageUuid: "630b06c3-9308-8186-bc1b-ce331426fec7"
     - stage: uuid
-      stageUuid: "2c9c6ac5-b8e9-8091-ab0b-3d2069082b6e"
+      stageUuid: "e32728b9-9d09-8f34-95fd-56e147755fb1"
 version: 2
 ---
 # iso/3166/1/country/bg

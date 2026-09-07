@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "deduplication",
-    "uuid": "aeb05f5e-4154-8550-8cd1-c551f8863457",
+    "uuid": "38b32223-0fc3-8155-bd8e-5d472f7a8a13",
     "words": [
       "deduplication"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when eliminating duplicate records — duplicate detection (exact/fuzzy), merge strategies, idempotency to prevent re-ingestion, duplicate scope (entity/transaction/field-level), dedup window/time-range.",
-    "uuid": "29e30dd0-dacd-8114-88f3-597041a69e29",
+    "uuid": "440e8821-b1d0-87b1-9d03-434af66ab339",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: inertia
 description: "Use when a manoeuvre is claimed that a body cannot perform — the corner bound applied to mass. horo/cornerLimit gives the kinematics; this adds the body: F = m·v²/r, which has candidates. Every route around the bound must change one factor — inertial mass, proper acceleration, the body, or the observation — and each is a named claim with a refuting test. Computes what each hypothesis COSTS: the factor by which it must exceed its own measured bound. Identifies no object and proposes no mechanism."
 atomPath: inertia
-coordinate: "inertia · 2/share · 39cd0e40"
-contentUuid: "8b3718e2-daef-5f08-9ef7-024f8a6c7c22"
-diamondUuid: "91675586-5dad-8bd1-bac0-fdb895e4abc0"
-uuid: "39cd0e40-2105-8754-9a50-8d50a0874492"
-horo: 2
+coordinate: "inertia · 8/crest · 83b92de3"
+contentUuid: "1bddc8fa-42c5-51af-9ed6-d5e128baffcc"
+diamondUuid: "206661af-c3a3-8d83-8ba5-53a31c403882"
+uuid: "83b92de3-e15a-81e7-80bb-fe4943cec093"
+horo: 8
 typography:
   partition: inertia
   bondDegree: 15
@@ -15,7 +15,7 @@ standards:
   - "NIST SP 811 §B.8 — standard acceleration of free fall, 9.80665 m/s² exactly"
 bindings: []
 signatures:
-  computationUuid: "c042b6ed-d788-8312-b9f2-7e07e8890c47"
+  computationUuid: "92e05424-27f0-8360-89d4-c17e144ced22"
   stages:
     - stage: path
       stageUuid: "d516b62f-2411-8338-a893-913d7929043a"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "9efd12c2-ec7a-80b6-bfcc-691a5607e63f"
     - stage: horo
-      stageUuid: "696ec23e-361a-8843-a918-64f223015b88"
+      stageUuid: "0c81d2ad-a467-8f11-b421-189517b41367"
     - stage: seal
       stageUuid: "869efd06-f089-8f23-b9f7-a55ccb2758f7"
     - stage: uuid
-      stageUuid: "00c0d457-8852-80c3-a090-0860cdb17623"
+      stageUuid: "1e0f85b1-b5ac-8976-b2d7-723c115887c1"
 version: 2
 ---
 # inertia — name which factor you are changing, or you have not made a claim

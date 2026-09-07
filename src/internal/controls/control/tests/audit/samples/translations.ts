@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "samples",
-    "uuid": "9e1429ca-cc96-8f20-8829-e35d18685bea",
+    "uuid": "ad7e99c2-4bf2-864a-8688-1b078f824bcf",
     "words": [
       "samples"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording or reviewing individual sample items drawn for a control test — pass/fail results, exception categories, tested-by, amount; ISA-530 statistical-sampling evidence per control test execution. The audit-samples collection.",
-    "uuid": "84dc9220-ac8d-859e-8882-238bd57b4b1d",
+    "uuid": "9c13bdb3-0c29-85f1-a7ac-013188cd1fbd",
     "words": [
       "use",
       "when",

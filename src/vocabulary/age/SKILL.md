@@ -2,18 +2,18 @@
 name: age
 description: "Use when treating age as a sociological axis — възраст — the life-course dimension that stratifies a society alongside class and status. Inequalities compound along it (cumulative advantage — the horo doubling), ageism flips the status sign against older workers, and a population's ageing inverts the pyramid that funds the allocation/decompression pot. The late in late career is a point on this axis; model age as one dimension with roles, not a separate entity."
 atomPath: "vocabulary/age"
-coordinate: "vocabulary/age · 7/descent · 7c86d912"
-contentUuid: "633e99dd-d634-58b4-b8e4-71fa292c0541"
-diamondUuid: "dd8afdc7-af4a-8748-8d0c-91352838dae5"
-uuid: "7c86d912-7698-83d2-a2bb-1eb7dacac0f6"
-horo: 7
+coordinate: "vocabulary/age · 8/crest · edc46f4f"
+contentUuid: "986619c5-c043-573c-bbf6-dd6b9ce9ea27"
+diamondUuid: "cd3d4c4a-ffc3-8b90-b327-16042715bda5"
+uuid: "edc46f4f-c082-8212-8434-c402ee80cf31"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 72
 standards: []
 bindings: []
 signatures:
-  computationUuid: "38ae42dc-fb04-89e5-b4be-c1e864aac0c6"
+  computationUuid: "6565f37a-9103-8732-9b4f-4c80d14ceab9"
   stages:
     - stage: path
       stageUuid: "4881610a-3552-8dd3-bef3-b15853b7ed5a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "178b61d9-3fde-8c83-a5c6-ed650b5292db"
     - stage: horo
-      stageUuid: "229c8593-76d7-80db-a6bd-4fb803218ad2"
+      stageUuid: "a6144ce4-5640-84e9-99e5-bdb65dc34838"
     - stage: seal
       stageUuid: "caa51377-a220-87d5-adf2-44774b5358bd"
     - stage: uuid
-      stageUuid: "2cefb485-97da-8959-b362-1b1dfd72e925"
+      stageUuid: "ec9a9dd9-24aa-8994-814c-c94f264442af"
 version: 2
 ---
 # age — the life-course axis along which advantage compounds (възраст)

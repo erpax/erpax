@@ -2,11 +2,11 @@
 name: shop
 description: "Use when reasoning about shop as a anatomical part of body — vocabulary pivot to @/shop; nested not duplicated."
 atomPath: "body/shop"
-coordinate: "body/shop · 2/share · b29b9262"
-contentUuid: "c9a5a09c-4686-5e4b-8301-8b6b6f05e7c0"
-diamondUuid: "8ef7f9ec-db12-86ee-9a63-863e7407c18f"
-uuid: "b29b9262-00ca-82c3-bed9-7739e8bc9492"
-horo: 2
+coordinate: "body/shop · 7/descent · 62a70cd2"
+contentUuid: "1f30e676-9bcb-5cad-9b1c-43a441e980a3"
+diamondUuid: "f8efc3fa-7374-8340-9a87-207fe5c14632"
+uuid: "62a70cd2-1a35-8ff9-86c6-4738108830e5"
+horo: 7
 typography:
   partition: body
   bondDegree: 54
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b38b50d0-1081-8ada-bfca-cb7e634bfe2a"
+  computationUuid: "a7ca48f3-d60e-899e-b492-9e2f432540e0"
   stages:
     - stage: path
       stageUuid: "ceefcee0-58a0-8392-9d38-fe0e86c67a43"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6378d6be-dd61-86a9-bdbb-2ce119b052fe"
     - stage: horo
-      stageUuid: "4b5e29d2-c10a-85fd-856a-cc74f8f741d3"
+      stageUuid: "f1321b9c-7216-8291-9938-48862dbe7e88"
     - stage: seal
       stageUuid: "7ba282ed-c32b-8e0c-b033-75e95d961287"
     - stage: uuid
-      stageUuid: "73988f8a-c535-8f7b-a6a4-7e59949e1cc1"
+      stageUuid: "6300ea79-d1c0-828f-adb2-5abfbf4aa9e6"
 version: 2
 ---
 # body/shop — anatomical part

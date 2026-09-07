@@ -2,11 +2,11 @@
 name: dangerous
 description: "Use when reasoning about dangerous as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/dangerous"
-coordinate: "vocabulary/dangerous · 2/share · ee781e7a"
-contentUuid: "8c4172f7-70e9-500a-adef-a3bce3c3b3fb"
-diamondUuid: "2cfab43c-8852-8041-8043-34df38016291"
-uuid: "ee781e7a-f8ae-8e84-9d8c-3a4bddae7006"
-horo: 2
+coordinate: "vocabulary/dangerous · 8/crest · 6211d031"
+contentUuid: "44d64c73-a124-5ba7-9926-d4ee01bfc933"
+diamondUuid: "63f59864-69a8-86c5-8025-e0367d4f5880"
+uuid: "6211d031-4cfb-8cf0-a785-4d900d8f98c3"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "bc7e4f2b-c57a-85f7-ace6-c64673a4f71c"
+  computationUuid: "1955d44d-524e-8e1a-aec5-f7eece30c867"
   stages:
     - stage: path
       stageUuid: "22edeff3-5859-8f75-b710-fb6ae5b192e2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "09ed3d72-a10b-80d6-8388-3dc341d29653"
     - stage: horo
-      stageUuid: "e0c8cf36-3ecd-8efa-a920-70ed8d15d1c4"
+      stageUuid: "49eb6b7b-5a35-8403-b63a-e3bdf896c222"
     - stage: seal
       stageUuid: "d694ce41-4383-8994-8b63-63a8e2a97b8d"
     - stage: uuid
-      stageUuid: "53ed8017-974d-8cca-ab16-1749bf98c84d"
+      stageUuid: "5d084f7d-52d6-8101-a71f-bf51208f2579"
 version: 2
 ---
 # dangerous

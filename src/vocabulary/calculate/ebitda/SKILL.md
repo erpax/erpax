@@ -2,18 +2,18 @@
 name: ebitda
 description: "Use when reasoning about ebitda — ports the EBITDA calculator verbatim (calculate, port): EBITDA = operating profit + depreciation + amortization (equivalently net income + interest + tax + D&A). Pure function over"
 atomPath: "vocabulary/calculate/ebitda"
-coordinate: "vocabulary/calculate/ebitda · 7/descent · ab0d42f9"
-contentUuid: "987c6436-ef9e-5731-b76f-7f0ca1a9fc4f"
-diamondUuid: "579cda6b-cbcf-8616-9771-963815a2af50"
-uuid: "ab0d42f9-6ec8-8193-bbab-7a06a163d3f8"
-horo: 7
+coordinate: "vocabulary/calculate/ebitda · 8/crest · 79aad145"
+contentUuid: "91f61873-4da8-5d8b-87b3-d0fc089d2482"
+diamondUuid: "58409e3c-46dd-809d-aed2-1431436b2709"
+uuid: "79aad145-3436-8fa5-9839-8f1d0b95c099"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 13
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2dfc2e6e-9678-8e3d-90c7-840425772de4"
+  computationUuid: "94ec381d-c2e8-85b7-91c9-48c0963cb5f6"
   stages:
     - stage: path
       stageUuid: "155a904d-3de4-8b2b-b595-c7fb5557cf69"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2a28e213-43d9-85e8-8925-9b10375ce416"
     - stage: horo
-      stageUuid: "10135036-af48-8d7b-9444-2745b108dc54"
+      stageUuid: "040ab70e-7b91-82b7-8d16-73e1a67591f2"
     - stage: seal
       stageUuid: "4d0fa5a7-49d9-85d8-adce-2849a49937fe"
     - stage: uuid
-      stageUuid: "962abd65-b2d0-80ed-b9e8-76f6d28b6e45"
+      stageUuid: "f36ef2ce-6aa7-809f-b17a-d9528d8bdb58"
 version: 2
 ---
 # ebitda — earnings before interest, tax, depreciation, amortization (pure compute)

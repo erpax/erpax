@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reactor",
-    "uuid": "1cd3203b-9cd0-8e71-848c-213fdc3c2f99",
+    "uuid": "b13a6fae-73a4-83d0-8965-395af20bc06d",
     "words": [
       "reactor"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading the fusion reactor — the engine that fuses atoms into the one matrix, composed over gravity (force), entropy (fuel), and the quantum laws; zero entropy implies infinite mass and infinite tamper cost.",
-    "uuid": "e8cb22e0-5101-8c02-a66c-82af23a1ed82",
+    "uuid": "6b63b4ce-65c1-87c1-9220-3f6d4a42c980",
     "words": [
       "use",
       "when",

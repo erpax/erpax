@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ascending",
-    "uuid": "1a1ec48f-9a3a-86ab-af8d-18cc95d0126f",
+    "uuid": "a5e75551-4f2c-83fa-858b-bfc2fdaba89b",
     "words": [
       "ascending"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about ascending as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "5dc79b0a-c86b-8a1c-9954-3d07dd4768e3",
+    "uuid": "429117f1-d1a7-8620-a0fc-89252dc4c06f",
     "words": [
       "use",
       "when",

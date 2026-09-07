@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "invoices",
-    "uuid": "123acc99-44e7-8ed2-9fbf-1a02e4ddd68a",
+    "uuid": "decc16bb-25fd-8f06-b529-94d91f08d600",
     "words": [
       "invoices"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when issuing, receiving or auditing AR/AP invoices — EN-16931 BG-1 header, BG-22 document totals, BG-23 VAT breakdown, fiscal device fields, period-lock guard, GL posting and audit trail. The invoices collection.",
-    "uuid": "d9796b96-6cc4-829c-abc2-d08393782618",
+    "uuid": "a8864939-56a1-8fdc-8396-1998cd593418",
     "words": [
       "use",
       "when",

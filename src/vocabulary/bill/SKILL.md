@@ -2,11 +2,11 @@
 name: bill
 description: "Use when reasoning about bill as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/bill"
-coordinate: "vocabulary/bill · 5/round · 1df9aa48"
-contentUuid: "03fb53b6-e986-5dc1-b108-96898ae6102f"
-diamondUuid: "fc1a7040-7f6b-8e21-a050-1f5f5666e395"
-uuid: "1df9aa48-6fdd-88a5-bb9e-23af4c86a7b6"
-horo: 5
+coordinate: "vocabulary/bill · 2/share · 43c9d258"
+contentUuid: "2280aba6-b26f-5970-abec-ce616f186963"
+diamondUuid: "77a61184-bb8c-8f65-b2f1-93d144d9b8f8"
+uuid: "43c9d258-b182-8827-8468-3bbdb8e572b4"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3d45d439-f863-8a75-919b-6984a6dbcc27"
+  computationUuid: "6cec5575-abfa-847a-8aff-bf299d339ac1"
   stages:
     - stage: path
       stageUuid: "e0469191-253a-8a98-858b-3a4b5fd72cad"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "47ac8968-c30c-8104-a8e3-b16e2b7429db"
     - stage: horo
-      stageUuid: "038cfa30-ce91-85bd-b466-20f14a503cb7"
+      stageUuid: "7bb99109-531a-83f8-a3e1-58cad0809a02"
     - stage: seal
       stageUuid: "9cd823a6-e9ae-84ad-b7da-feb32745d0fc"
     - stage: uuid
-      stageUuid: "dedbe4eb-a1dd-845b-bc43-725d47949643"
+      stageUuid: "b25b0850-0291-8215-9e99-20fbe0c7b04f"
 version: 2
 ---
 # bill

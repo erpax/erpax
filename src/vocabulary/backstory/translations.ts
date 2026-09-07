@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "backstory",
-    "uuid": "ce369791-a968-8822-ae8d-d5b3f1ef9374",
+    "uuid": "d0588030-de41-8bb1-a863-b2639ef82703",
     "words": [
       "backstory"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about backstory — For an Article, typically a NewsArticle, the backstory property provides a textual summary giving a brief explanation of why and how an article was created. In a journalistic setti",
-    "uuid": "1d52ebf9-2bb1-8cf5-8c6e-aa0c61372aac",
+    "uuid": "08a89409-2f39-8f7e-bc75-21f08fbd58a4",
     "words": [
       "use",
       "when",

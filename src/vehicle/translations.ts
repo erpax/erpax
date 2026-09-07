@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "vehicle",
-    "uuid": "13a285f7-9642-8c00-8f3d-2f1209257532",
+    "uuid": "0f56a45d-638a-876d-8ed7-ca1b02eac9cc",
     "words": [
       "vehicle"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about vehicle — A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space.",
-    "uuid": "eb55fb25-3100-822c-8c96-61516b4853e5",
+    "uuid": "11ca694c-eabc-8be4-bb92-e89e5ddc9713",
     "words": [
       "use",
       "when",

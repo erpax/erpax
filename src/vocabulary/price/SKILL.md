@@ -2,11 +2,11 @@
 name: price
 description: "Use when reasoning about price — The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes. Usage guidelines: * Use the priceCurrency property (with standard format"
 atomPath: "vocabulary/price"
-coordinate: "vocabulary/price · 8/crest · d3b91be8"
-contentUuid: "f8de6bbd-a7b7-5b16-84f8-eb9322e879d7"
-diamondUuid: "692826cf-4da4-827b-bc0b-299aa5289395"
-uuid: "d3b91be8-07a2-8e83-8a25-fae3b3da877a"
-horo: 8
+coordinate: "vocabulary/price · 7/descent · c2faec7f"
+contentUuid: "e913208e-46e6-57b5-93a2-827a928e53bc"
+diamondUuid: "22c57d78-5f2e-89e6-8219-1d7a67690866"
+uuid: "c2faec7f-0494-88f3-a1ec-02de19b461f5"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 57
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "df37a5de-4344-819e-92a7-6c2a555cb98c"
+  computationUuid: "8433785b-8bec-8511-8107-ffb9f0b11bae"
   stages:
     - stage: path
       stageUuid: "dafaf8ed-8eda-8175-9705-b55645a91b89"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c6537360-c0af-8126-b0aa-c513b4b4b191"
     - stage: horo
-      stageUuid: "2d29e3f0-1ae2-88e9-89e4-6a825f92ac1b"
+      stageUuid: "0538f0ce-79bd-8bfb-a886-d996932432c4"
     - stage: seal
       stageUuid: "47930ed6-2aa9-87a6-a09c-28a0d438c6b0"
     - stage: uuid
-      stageUuid: "7b114d93-4bb4-8462-84ff-99576c99a3fe"
+      stageUuid: "028f7fc4-2243-84ef-8cac-c2bbfa0c7896"
 version: 2
 ---
 # price

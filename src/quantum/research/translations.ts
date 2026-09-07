@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "research",
-    "uuid": "c44e1567-7f1f-8609-962e-d8e9fa2a4246",
+    "uuid": "9c022bb3-9934-836b-af9f-60e14c393e45",
     "words": [
       "research"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when pricing research on the quantum scale — a research run consumes resources (agents × tokens) and produces value (entropy reduced), so it is a billable expense whose worth is the disorder it closes; worthwhile only when it reduces more entropy than it costs.",
-    "uuid": "3fb58914-7df2-87a0-a0a4-a58c8b72da63",
+    "uuid": "7dffcea0-b6c5-8add-9387-2b7acb6344a1",
     "words": [
       "use",
       "when",

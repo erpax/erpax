@@ -2,18 +2,18 @@
 name: grazing
 description: "Use when livestock consume standing forage in place — grazing on pasture/rangeland, the rotational/managed/adaptive (AMP) move through paddocks (short impact, long recovery), stocking rate and carrying capacity in animal-unit-months. The range-management activity; its rotation reuses the crop rotation atom."
 atomPath: "vocabulary/grazing"
-coordinate: "vocabulary/grazing · 7/descent · 5d4458b3"
-contentUuid: "58adc336-6f62-5b49-a0c4-65cf715ee1e3"
-diamondUuid: "e8f66d02-267d-8685-ad8d-146cf2a236f7"
-uuid: "5d4458b3-9683-8484-ba9a-6f1cb656846c"
-horo: 7
+coordinate: "vocabulary/grazing · 8/crest · 08664d8b"
+contentUuid: "a7514463-03eb-5735-bc9c-e28f95b53d66"
+diamondUuid: "30197d6e-85b4-885e-8e19-e20212b39abf"
+uuid: "08664d8b-6d45-8759-a5ab-46c20df04b0f"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 47
 standards: []
 bindings: []
 signatures:
-  computationUuid: "424af242-ece8-8e6f-935d-f4c0105ae916"
+  computationUuid: "0b8f5801-b3aa-8aef-bb8a-f711c1062a07"
   stages:
     - stage: path
       stageUuid: "e6d88b7e-ded7-8e8a-9326-6f346b6f5ead"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9b9950e3-760c-8b96-9b48-8b4c671b1a4d"
     - stage: horo
-      stageUuid: "5fb89bcb-ed7f-80df-91b8-0365a8ed9da7"
+      stageUuid: "983426fa-63a8-8512-9b8c-8b468419c8cd"
     - stage: seal
       stageUuid: "e7e65ee8-b187-8a26-a55f-d4018a5b8cf2"
     - stage: uuid
-      stageUuid: "3209c2b3-04ff-80fa-9ed8-5b3de93fc661"
+      stageUuid: "db9d6682-c4cd-8806-a193-2dab0b47c226"
 version: 2
 ---
 # grazing — livestock eating standing forage in place

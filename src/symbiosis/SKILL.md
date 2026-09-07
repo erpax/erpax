@@ -2,18 +2,18 @@
 name: symbiosis
 description: "Use when two unlike organisms live as one entangled system that BOTH gain from — symbiosis is mutualism as the rule of life (mycorrhizae, lichen, the holobiont), and in its mycorrhizal form a literal BIOLOGICAL MARKET: carbon traded for phosphorus at variable exchange rates, with reciprocal rewards and sanctions against cheaters. The merge made stable by accounting; nature's double-entry."
 atomPath: symbiosis
-coordinate: "symbiosis · 8/crest · a3490891"
-contentUuid: "0e760f31-e589-50e5-b764-0ee23a1e5c9c"
-diamondUuid: "793275b9-fac4-8f34-b89a-6247bfb21c0e"
-uuid: "a3490891-c8ce-8097-b521-a25b45cf5af4"
-horo: 8
+coordinate: "symbiosis · 1/base · e2b6a5fe"
+contentUuid: "a6b35189-c90c-531d-b109-1f0c54799b78"
+diamondUuid: "b29f5aef-22fa-8f83-962a-d8d2fd916b01"
+uuid: "e2b6a5fe-a6d3-8d1f-9359-44855f138afb"
+horo: 1
 typography:
   partition: symbiosis
   bondDegree: 50
 standards: []
 bindings: []
 signatures:
-  computationUuid: "30a0f0ef-0b76-8db2-a0db-a208f3c081e2"
+  computationUuid: "4ba6e590-7aed-81e0-985b-72da0d9d759f"
   stages:
     - stage: path
       stageUuid: "ad3e0b77-d33d-84e8-92ac-d24b32c33fff"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "394c998e-9fd5-8b6f-8710-16ff7d2efbe4"
     - stage: horo
-      stageUuid: "ba1517f1-be6e-822d-bbe7-2769a78c3a90"
+      stageUuid: "b98b8ab7-1576-83f2-935e-0b0f19e9145b"
     - stage: seal
       stageUuid: "37852394-f066-81fe-98ed-fd79781e6d7c"
     - stage: uuid
-      stageUuid: "660ee006-dffd-8d7d-859e-1eb519acb7d8"
+      stageUuid: "b13c35eb-7c41-85cf-b627-750c7f86cacb"
 version: 2
 ---
 # symbiosis — life as entanglement, not individuals (the biological market)

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "refunds",
-    "uuid": "ca43d268-46ef-8f28-a0c7-05d25ee116c2",
+    "uuid": "451c8c15-569d-8f83-8bfb-1a41f9394a77",
     "words": [
       "refunds"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tracking the actual cash payment back to a customer for a credit memo — Stripe, ACH, SEPA, check or cash; ISO-20022 pacs.004 return, tokenised card data, GL journal entry, refund-approval SoD. The refunds collection.",
-    "uuid": "33614074-51ce-869f-a716-6576080d198b",
+    "uuid": "c9db0983-aa73-87da-8072-724391832a82",
     "words": [
       "use",
       "when",

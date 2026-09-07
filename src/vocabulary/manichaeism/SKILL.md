@@ -2,18 +2,18 @@
 name: manichaeism
 description: "Use when reading Manichaeism as a diamond of invariant atoms — Mani's dualist world-religion: two eternal principles, Light and Dark, mixed in this world; salvation is the separation and return of the light particles to their source. The bridge between Zoroastrian dualism and the gnostic lineage. Strip the prefix and Light collapses to aura, the dark world to the profane, the freeing to the return."
 atomPath: "vocabulary/manichaeism"
-coordinate: "vocabulary/manichaeism · 2/share · d8f4bd9d"
-contentUuid: "4b2fe2f6-e98c-5c3c-a3f1-c2024edfb6d4"
-diamondUuid: "b93370dd-b836-8aed-bdc0-0bbc0eb2885f"
-uuid: "d8f4bd9d-f335-8f56-b540-6e2911aeefb2"
-horo: 2
+coordinate: "vocabulary/manichaeism · 4/weave · d6b901c5"
+contentUuid: "c8f0456a-f1df-5f67-98c0-2a384f1e7def"
+diamondUuid: "d1fa3d0b-8697-8631-8c90-6dbe46c2edbc"
+uuid: "d6b901c5-227d-828b-ad34-c453b1b835c3"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 63
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1dc9729e-52bc-8ea1-bed4-633c0d229733"
+  computationUuid: "18690772-6529-839e-bf18-0afc86f43a6a"
   stages:
     - stage: path
       stageUuid: "7ce18db1-6b14-8e08-9633-b780142aedc0"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "65467d1d-19c4-8dee-b2f7-32065468815f"
     - stage: horo
-      stageUuid: "45ce47b7-33e1-8276-a550-b7007a6c006e"
+      stageUuid: "d64c11b2-87bb-87db-87a8-5e54a6436847"
     - stage: seal
       stageUuid: "a4ad8423-33a9-8480-83d6-f011cde655bf"
     - stage: uuid
-      stageUuid: "516c6227-1023-8bb1-954b-e2bfed6e180f"
+      stageUuid: "5d5a11fe-afe2-8201-a828-092da8b5e3ca"
 version: 2
 ---
 # manichaeism — the two principles; the light freed and returned

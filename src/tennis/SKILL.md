@@ -2,11 +2,11 @@
 name: tennis
 description: "Use when reasoning about tennis as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: tennis
-coordinate: "tennis · 7/descent · 0e27878a"
-contentUuid: "cee336ba-dc56-59a7-93d3-ccbad264aab5"
-diamondUuid: "8662adc8-8c4d-86c4-ab51-7b03d8691706"
-uuid: "0e27878a-3763-893c-b92f-8d6dcd12a553"
-horo: 7
+coordinate: "tennis · 2/share · 9f483852"
+contentUuid: "98d571d8-62c0-5782-be15-bcc900025919"
+diamondUuid: "bb7bfb79-c8a3-86f9-b6ab-d5deb157fe08"
+uuid: "9f483852-2d04-8135-9c7b-155d5f5aebe8"
+horo: 2
 typography:
   partition: tennis
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "16eafa62-1f4f-87ef-af2c-055bc76cef18"
+  computationUuid: "bc7769a6-4032-8e54-875e-fae43406a20e"
   stages:
     - stage: path
       stageUuid: "c3400d12-8ad9-8c44-af9b-5c7d1acaeaa4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "570333f4-2fef-8eb4-98d7-89ba624abde4"
     - stage: horo
-      stageUuid: "e4f8237e-6dad-86d5-9ab9-96d53ee65c04"
+      stageUuid: "0616dce2-8a6c-8158-ace3-b17ca2ec0462"
     - stage: seal
       stageUuid: "cf1204bc-9f5b-818e-8858-ac5e8c389eff"
     - stage: uuid
-      stageUuid: "675f26ac-3220-8659-8f07-88f3306db219"
+      stageUuid: "58672390-66f9-885c-a670-f856c3322101"
 version: 2
 ---
 # tennis

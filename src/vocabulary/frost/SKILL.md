@@ -2,18 +2,18 @@
 name: frost
 description: "Use when the freeze event bounds the growing season — the last spring frost and first fall frost define the frost-free period that caps which crops are feasible; frost dates are probabilistic (per-station, at a confidence level), not fixed calendar dates. The hard bound of the season; the event tunnels and hardiness buffer against."
 atomPath: "vocabulary/frost"
-coordinate: "vocabulary/frost · 2/share · 736911df"
-contentUuid: "da2b530c-bfd3-5fff-b0b5-a7d418e8b671"
-diamondUuid: "9614fb3e-e396-8956-a256-7998dd59aef2"
-uuid: "736911df-666d-81f5-b58e-a4b7228e0dd1"
-horo: 2
+coordinate: "vocabulary/frost · 8/crest · f6a1f507"
+contentUuid: "f13b623f-156a-5622-b603-f58d9f5147d8"
+diamondUuid: "3f9bdd54-e97b-814c-a6c3-9deed18a5e0f"
+uuid: "f6a1f507-9026-841e-b071-32f0870a6f79"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 34
 standards: []
 bindings: []
 signatures:
-  computationUuid: "fb11e0de-253b-8c44-b5bb-a9fdc179d107"
+  computationUuid: "e59d85e0-8a68-8762-aec0-9817614e1fee"
   stages:
     - stage: path
       stageUuid: "f2af83be-c68a-801c-a835-7d156a328033"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ad226b6b-5031-8efc-aa3d-c93ad63b2ebb"
     - stage: horo
-      stageUuid: "c8c6a67f-f2da-88a1-a059-6e9c0665f03a"
+      stageUuid: "a7064f2f-9e68-84c5-9a8c-6cf714f1ba3e"
     - stage: seal
       stageUuid: "4eb9c495-35af-88ef-9b18-ecfcf23e0295"
     - stage: uuid
-      stageUuid: "5c2b64c5-8148-8df1-90d8-5ad4bd2aa7a1"
+      stageUuid: "04dfad74-54d8-8411-bb57-7dd04373b267"
 version: 2
 ---
 # frost — the freeze event that bounds the season

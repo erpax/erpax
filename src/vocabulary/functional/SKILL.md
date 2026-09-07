@@ -2,11 +2,11 @@
 name: functional
 description: "Use when reasoning about functional as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/functional"
-coordinate: "vocabulary/functional · 5/round · 4cba285e"
-contentUuid: "5e634870-a5a3-5ea1-85a9-eab06de960b9"
-diamondUuid: "09cd974e-cb1c-83fc-81a6-daea89078c2e"
-uuid: "4cba285e-a278-8658-b1df-f44fc09f8c81"
-horo: 5
+coordinate: "vocabulary/functional · 8/crest · 6e8bb5fc"
+contentUuid: "e9144ae6-b0b8-5d57-aea2-9df0e019ba1c"
+diamondUuid: "5e0603c3-381a-8efd-8161-58960b1737ed"
+uuid: "6e8bb5fc-096e-8d84-9e8a-16f9d1d956d6"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f825c677-ea6a-8c3c-9218-71522c09ca7a"
+  computationUuid: "81331ae6-8298-8f9e-ac7b-941879bd47e8"
   stages:
     - stage: path
       stageUuid: "3a768f42-4bfd-8f62-80e8-09e3d84e6eea"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a6d55b99-b146-8fbc-be5d-3b6cb5e7a88f"
     - stage: horo
-      stageUuid: "df27ae64-78bc-8318-9a88-751099a04b4d"
+      stageUuid: "981d2045-0b59-809c-ba50-896415ef82fa"
     - stage: seal
       stageUuid: "41e29e2f-7590-8436-8df3-a33357aa2128"
     - stage: uuid
-      stageUuid: "cdc7bae2-696e-8a55-bfb4-6054bc93e725"
+      stageUuid: "ab80fed3-39cf-809c-a3aa-54929d65f530"
 version: 2
 ---
 # functional

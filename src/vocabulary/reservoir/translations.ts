@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reservoir",
-    "uuid": "1e4365aa-7a4e-8819-9aa9-8867e545bd6c",
+    "uuid": "21243755-4c70-8937-bda5-4f84803a81c6",
     "words": [
       "reservoir"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about reservoir — A reservoir of water, typically an artificially created lake, like the Lake Kariba reservoir.",
-    "uuid": "72b8d663-ffb5-8118-8b5f-51ea0a1289d6",
+    "uuid": "a5f642d8-79c5-883e-b0c9-9ef839f6c17b",
     "words": [
       "use",
       "when",

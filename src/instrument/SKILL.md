@@ -2,10 +2,10 @@
 name: instrument
 description: "Use when reasoning about instrument — Use before taking any measurement of this corpus — which tool answers which question, and how each one lies. Every wrong number here was a wrong instrument, or a right one trusted past its limit: a name-grep over a minified bundle, a lint report contradicted by the compiler, a web fetch returning a model's rendering, a count copied from a stale document. The pattern is that the wrong instrument does not error, it answers. instrumentFor names the settling tool; assertInstrument fails closed on a known-wrong pairing; an unregistered question passes, because pretending the register were complete would be the same error."
 atomPath: instrument
-coordinate: "instrument · 4/weave · 28f1e6e0"
-contentUuid: "0abdfb96-307d-5eb8-be00-3be6a4fbc511"
-diamondUuid: "ef8b8b1a-e7e9-8c35-8dba-e970e165857e"
-uuid: "28f1e6e0-826f-8b7f-8735-8f3eda243ff6"
+coordinate: "instrument · 4/weave · 288081af"
+contentUuid: "01a6c44c-1291-5289-a05b-15b596c93b1d"
+diamondUuid: "f787c9dc-6e2e-8df4-96f6-a554379f93c3"
+uuid: "288081af-9edb-837e-8672-ab4c9e392656"
 horo: 4
 typography:
   partition: instrument
@@ -14,7 +14,7 @@ standards:
   - "ISO-19011:2018 §6.4 — audit evidence: sufficient and appropriate, not merely available"
 bindings: []
 signatures:
-  computationUuid: "554ab761-f554-85ef-85f0-819ea45c76a2"
+  computationUuid: "af9755a5-e7b5-8f49-bdef-558ce4933efc"
   stages:
     - stage: path
       stageUuid: "de8f2c5b-2dd4-8bb6-892a-d11ab378992d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5ae35c98-91d4-8480-aa53-f8949b1a0b4d"
     - stage: horo
-      stageUuid: "c9cfa579-9c72-8420-a70a-9c48c0912bdb"
+      stageUuid: "6b9bc91d-1862-8813-bc87-48a7af60aa68"
     - stage: seal
       stageUuid: "46d545ec-c98e-8ed6-a4d5-879a7af9b2a3"
     - stage: uuid
-      stageUuid: "21ed7099-7b56-8abd-92bc-18da5f97b9d0"
+      stageUuid: "97d0eef2-c720-8e37-b17b-952ff0f577f1"
 version: 2
 ---
 # instrument — the wrong instrument does not error, it answers

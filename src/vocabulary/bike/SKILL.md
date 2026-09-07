@@ -2,10 +2,10 @@
 name: bike
 description: "Use when reasoning about bike as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/bike"
-coordinate: "vocabulary/bike · 7/descent · 0a93c56a"
-contentUuid: "d2c5d462-6f5b-5f22-bf38-1afea9d32164"
-diamondUuid: "10b9b2de-dd6c-8ead-bf0e-bccd5c56d870"
-uuid: "0a93c56a-97b3-8d03-b575-5b476001e956"
+coordinate: "vocabulary/bike · 7/descent · 9fa459e1"
+contentUuid: "afb9ed38-c5e7-59e1-b9c2-d9786ac6f127"
+diamondUuid: "38e43541-1df2-8550-84d6-f8b1ebc027eb"
+uuid: "9fa459e1-1013-8c66-a00a-63afd908d1d2"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "57a449b0-91b8-812e-b098-3bd4877dcf59"
+  computationUuid: "945cb49c-c13a-82ac-b1bd-04f8a0a4d9e9"
   stages:
     - stage: path
       stageUuid: "6503d226-a17d-8f6f-8b98-27062ea48348"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "79e7deb7-1eb0-8fc3-b730-ffed1da444c1"
     - stage: horo
-      stageUuid: "6e3d4d6a-f6b8-8c36-8969-3d0009e9e821"
+      stageUuid: "a6339681-5917-86ae-96a5-ef8a6b20ece7"
     - stage: seal
       stageUuid: "6d8e158f-dd5b-8059-8ed2-afe86d9023dd"
     - stage: uuid
-      stageUuid: "66b7ffb2-6432-851d-be75-f4edba83a561"
+      stageUuid: "bd843366-648b-8cf3-b28f-724a7eb3ffcd"
 version: 2
 ---
 # bike

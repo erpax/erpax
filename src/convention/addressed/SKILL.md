@@ -2,11 +2,11 @@
 name: addressed
 description: "Use when an atom needs an identity — the convention is that identity is content-addressed as a v8 uuid derived from what the atom IS, never an arbitrary external name; this atom measures the corpus's live content-address coverage = addressed / total over the real tree."
 atomPath: "convention/addressed"
-coordinate: "convention/addressed · 4/weave · 80d9ef01"
-contentUuid: "dc00c0c9-c17f-5f54-9897-9dac21b9feaf"
-diamondUuid: "884b8978-3de5-89e7-9c48-c7df39ef65bb"
-uuid: "80d9ef01-2374-8a92-b3ea-91efdf22ea4c"
-horo: 4
+coordinate: "convention/addressed · 7/descent · 3d8507cf"
+contentUuid: "9a016663-9287-51dd-aa2e-179852bc7a4e"
+diamondUuid: "21503630-4ac7-84e3-90f5-57ef8d0bff93"
+uuid: "3d8507cf-6937-83b0-a863-8dcd45d18db9"
+horo: 7
 typography:
   partition: convention
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "RFC 9562 §5.8 (uuidv8 content-uuid) + §4.1 variant — identity derived from content"
 bindings: []
 signatures:
-  computationUuid: "7d154a91-a321-86a6-8816-1907d26dd83b"
+  computationUuid: "b43c9393-2f78-89e7-9ceb-57133a3f6c63"
   stages:
     - stage: path
       stageUuid: "2c2e94b8-4910-8b63-ac31-bf17ec470b74"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e3fd5d2f-5918-80e5-9146-00a8de0e9f99"
     - stage: horo
-      stageUuid: "77ab1f19-bf9f-8024-b052-78c9acc29c56"
+      stageUuid: "97114710-d8d9-8bbc-8166-8ae0835febe2"
     - stage: seal
       stageUuid: "affb6269-4041-83b2-9353-70fccb86d0af"
     - stage: uuid
-      stageUuid: "805353b8-08e5-8eed-90bd-17f86bd18844"
+      stageUuid: "486a7a61-ee00-8708-87a5-140542d48bda"
 version: 2
 ---
 # convention/addressed — identity is content-addressed (a uuid)

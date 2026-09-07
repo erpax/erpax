@@ -2,11 +2,11 @@
 name: lock
 description: "Use when reasoning about lock — is the hook wired into every GL-posting collection: it reads the document's posting date, finds the fiscal period containing it, and throws when that period's status is ."
 atomPath: "utility/period/lock"
-coordinate: "utility/period/lock · 7/descent · 502d740a"
-contentUuid: "d3bd1dfc-2396-5183-a344-6d31e5c25cdb"
-diamondUuid: "7b93df49-1655-8a79-909c-8e9972eb889a"
-uuid: "502d740a-7011-8cdb-b3e9-d3632c4c5a91"
-horo: 7
+coordinate: "utility/period/lock · 1/base · 71163b16"
+contentUuid: "4f6e5d20-30ac-5d22-a89b-7c6a360b0ee9"
+diamondUuid: "913f4eb8-9e6f-824e-9e71-bcec608b215b"
+uuid: "71163b16-a9cf-8de3-b129-dba5738e005f"
+horo: 1
 typography:
   partition: utility
   bondDegree: 15
@@ -18,7 +18,7 @@ standards:
   - "US-GAAP ASC-250 accounting-changes-and-error-corrections"
 bindings: []
 signatures:
-  computationUuid: "37760383-efad-8287-b910-5ee36488d9d3"
+  computationUuid: "9316ec06-263a-84f1-82b5-243f32e412e7"
   stages:
     - stage: path
       stageUuid: "40df3ae8-949b-8a69-b04d-c8c755127558"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "5c6febb9-d216-8c2a-9d7f-74e80fd8ec55"
     - stage: horo
-      stageUuid: "ece9a0d6-b597-8d89-b901-91322c97ca00"
+      stageUuid: "0c115dc5-fa2b-8447-ba13-5701177bf98c"
     - stage: seal
       stageUuid: "776bb3e9-2886-8e7d-85df-fa4f298437a3"
     - stage: uuid
-      stageUuid: "8b8db9f7-7033-8435-bbb0-d577a6a8b38e"
+      stageUuid: "117937f1-6653-85df-a484-fbdb7548b629"
 version: 2
 ---
 # utility/period/lock — an unparseable posting date must be refused, never waved through

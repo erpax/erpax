@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "signal",
-    "uuid": "e701b22b-a015-8a0b-971b-b6aab2e26a49",
+    "uuid": "aed21f56-5e67-80d2-812a-fe65c3ee1a7f",
     "words": [
       "signal"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about signal as a anatomical part of body — vocabulary pivot to @/signal; nested not duplicated.",
-    "uuid": "7c2e2097-c869-86f9-8f8b-ee385fa8ea51",
+    "uuid": "c5c68ee2-c097-8246-b35d-c6365316f08d",
     "words": [
       "use",
       "when",

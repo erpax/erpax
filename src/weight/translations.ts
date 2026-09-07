@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "weight",
-    "uuid": "ebc6a1ba-9843-8db7-98f8-c3582084a5d4",
+    "uuid": "02f056be-0531-85f2-97b7-bcfd66dd754a",
     "words": [
       "weight"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about weight — The weight of the product or person.",
-    "uuid": "a4cdeb9a-2cad-8570-a1f8-5d98afed7f96",
+    "uuid": "a6f64b2f-f28b-8bbe-b2df-4bf7c94a2742",
     "words": [
       "use",
       "when",

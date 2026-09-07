@@ -2,11 +2,11 @@
 name: workers
 description: "Use when reasoning about workers as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: workers
-coordinate: "workers · 7/descent · 921d0b41"
-contentUuid: "ba5c7fc9-2677-5a9c-8a31-90f005e51fe2"
-diamondUuid: "095db24d-5f85-8b71-84d0-1f4764d320e6"
-uuid: "921d0b41-9038-88f4-8029-524d90408837"
-horo: 7
+coordinate: "workers · 8/crest · 20abf91c"
+contentUuid: "d06f4339-aa99-5d24-8ce2-3d2185f656d1"
+diamondUuid: "d5998faa-7dbb-8446-b57d-820d26086278"
+uuid: "20abf91c-bc52-8859-8622-2675013be62f"
+horo: 8
 typography:
   partition: workers
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "856f1299-19e1-8d25-94bd-dd93b08d5228"
+  computationUuid: "7ba49237-8419-8882-b6f4-e088523bb800"
   stages:
     - stage: path
       stageUuid: "8b259b31-12fe-89a2-9113-d6654b2886fe"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b952e2f7-5367-883d-a21a-5193023f64cf"
     - stage: horo
-      stageUuid: "1e2e1039-8e9d-800e-8c11-c282fbd09f42"
+      stageUuid: "cdde1f9a-7ae0-8f7d-a76a-181bb6ebc079"
     - stage: seal
       stageUuid: "1197cad8-1b27-8e64-95c1-11e891929329"
     - stage: uuid
-      stageUuid: "35dd3e6e-41fe-84db-8012-693957726b17"
+      stageUuid: "086a340c-8e03-8bd6-9e03-2c8503fe9ce1"
 version: 2
 ---
 # workers

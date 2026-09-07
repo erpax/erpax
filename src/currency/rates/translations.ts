@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "rates",
-    "uuid": "9fd5dd09-72ab-82b2-a763-66c22db78359",
+    "uuid": "1e8fdb91-fa12-89e5-84e6-55ac214e1ac5",
     "words": [
       "rates"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when storing or querying FX exchange rates for multi-currency translation — from/to currency pair, rate date, source (ECB/bank API/manual), bid/ask/mid, inverse auto-calc, per IAS-21 and ASC-830. The FX rate master collection.",
-    "uuid": "e99ad8cb-a2db-8c4e-8c80-8f5bb4dc92c5",
+    "uuid": "ceb33f67-7d3e-8722-9666-5c323c7fe58c",
     "words": [
       "use",
       "when",

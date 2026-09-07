@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "currency",
-    "uuid": "637ae81b-1b3e-845e-ae23-e893f08f7db7",
+    "uuid": "89c765cb-b3a7-8edc-a6a6-38775469ad47",
     "words": [
       "currency"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a value carries money — amount + ISO-4217 currency, exchange rates, rounding, multi-currency ledgers/totals. The CurrencyConcern/AmountConcern field-factory; money is amount+currency, never a currency-baked field name.",
-    "uuid": "a7d9792a-43e4-895e-9998-77f786cec002",
+    "uuid": "d519e673-f559-875b-8fc8-199df9adf1b9",
     "words": [
       "use",
       "when",

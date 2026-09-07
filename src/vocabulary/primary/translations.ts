@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "primary",
-    "uuid": "1fd9ea9d-e907-8a36-858d-1c956e9cc761",
+    "uuid": "8c83f6b7-6c5c-8760-b8e4-f9be9dc44f02",
     "words": [
       "primary"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about primary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "7b2bb1ba-6879-8073-a48e-a8ef08147d21",
+    "uuid": "654aa7c4-b2c9-854c-8727-b2d30eb977c3",
     "words": [
       "use",
       "when",

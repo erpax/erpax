@@ -2,11 +2,11 @@
 name: merchant
 description: "Use when reasoning about merchant — 'merchant' is an out-dated term for 'seller'."
 atomPath: "vocabulary/merchant"
-coordinate: "vocabulary/merchant · 5/round · 89f3d296"
-contentUuid: "623376c8-b2fc-5d65-beb1-2da3dc0bd72d"
-diamondUuid: "361f74ba-4a66-8f9a-8a04-dbec5f22231e"
-uuid: "89f3d296-e4b0-8dce-8050-0db2b105a641"
-horo: 5
+coordinate: "vocabulary/merchant · 4/weave · 22b7548d"
+contentUuid: "31c13a46-35fa-5d28-b337-6235122c4044"
+diamondUuid: "685c7495-7eb9-8bb5-b3c0-de62766e4ad1"
+uuid: "22b7548d-4501-829e-a13e-318ff9fe75b7"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 36
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "430f6e73-956c-86e2-b455-854fcb5a3fbf"
+  computationUuid: "854c3754-c9c0-8b26-8641-caff92a07005"
   stages:
     - stage: path
       stageUuid: "0aefb927-f2bf-85aa-ac89-7a6f1838362d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0c70c5e9-6c21-8111-b8be-b5addb0f83ca"
     - stage: horo
-      stageUuid: "ea97c16e-9b7c-8f9f-8b5e-97149255a20b"
+      stageUuid: "219e0920-0008-8f0f-9158-2b3bf02db8f2"
     - stage: seal
       stageUuid: "1c3d4d1b-dfd5-876d-9f81-a45ae25d9709"
     - stage: uuid
-      stageUuid: "41b94b61-7e70-8776-972d-47e86f6cac3d"
+      stageUuid: "834989cc-5b96-8099-97e6-1b7b35d1dbf5"
 version: 2
 ---
 # merchant

@@ -2,11 +2,11 @@
 name: ask
 description: "Use when reasoning about ask as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/ask"
-coordinate: "vocabulary/ask · 8/crest · d91b1ada"
-contentUuid: "a8812b54-fcc6-50f9-b6ee-87daa18d7d86"
-diamondUuid: "6a1e44dc-f95c-8713-a5e2-40d29dbe49ec"
-uuid: "d91b1ada-06c7-8f7b-bbad-a562c66f8edc"
-horo: 8
+coordinate: "vocabulary/ask · 5/round · b24b00d5"
+contentUuid: "d5994b9c-426e-5e59-9a43-3600ac272085"
+diamondUuid: "4f095675-4340-8bf0-a3b5-6ba730ac7c01"
+uuid: "b24b00d5-848a-818b-8415-49ec32654dcf"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 29
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "17fafd26-9c64-8bdc-8f98-c469ee6254a7"
+  computationUuid: "c9452416-40c4-890e-8362-2161222aa8a4"
   stages:
     - stage: path
       stageUuid: "570c1f5e-4832-8d2d-8da4-30df2202e16f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bfa20cc6-2964-8ef7-9789-f6d4c32e49e8"
     - stage: horo
-      stageUuid: "398cc42d-deb3-8254-97ef-0ebc86497921"
+      stageUuid: "44f15ef9-1a1e-8ad9-91c5-cb87115f3f38"
     - stage: seal
       stageUuid: "31d77bda-765e-8512-b162-e8354c6686ed"
     - stage: uuid
-      stageUuid: "1309ebc1-7487-8ba7-a2c1-d5b7f5ebd2e6"
+      stageUuid: "15605445-d06d-81e3-b060-877800be35a3"
 version: 2
 ---
 # ask

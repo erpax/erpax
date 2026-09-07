@@ -2,10 +2,10 @@
 name: types
 description: "Use when working with Payload's generated TypeScript types — payload-types.ts, generate:types, GeneratedTypes, CollectionSlug, typing Local API results, or fixing stale-type errors after schema changes."
 atomPath: types
-coordinate: "types · 7/descent · 98486ff9"
-contentUuid: "530b5cc1-1777-52ea-baf4-dc1d9b61f97b"
-diamondUuid: "25280188-fe07-8e2b-94b4-ac50ffb5b05c"
-uuid: "98486ff9-a951-84e8-8332-7fb01f34acf5"
+coordinate: "types · 7/descent · 55da726e"
+contentUuid: "2ac77016-d5e4-5c29-93d1-d298defabac4"
+diamondUuid: "7b51dc2a-1f5b-8367-98fb-062946a5b820"
+uuid: "55da726e-ce12-8100-8130-d3208fb9a17b"
 horo: 7
 typography:
   partition: types
@@ -21,7 +21,7 @@ standards:
   - "ISO-17442-1"
 bindings: []
 signatures:
-  computationUuid: "2ca08f54-f045-8675-aad0-3d4a34c3969a"
+  computationUuid: "157205f9-7926-8c93-bb0c-d0c7e4b44e89"
   stages:
     - stage: path
       stageUuid: "6fa22871-78bd-8867-abbf-e34b1beb9814"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "81e343c6-c75a-84dd-bed4-f72e36a1b834"
     - stage: horo
-      stageUuid: "e89b884c-a084-8019-a1a4-01bbad35a5d3"
+      stageUuid: "824597d1-abfb-830b-9b34-ea57253a7bc1"
     - stage: seal
       stageUuid: "8b1698ad-2633-8ae8-8d17-2e8d968f2cf8"
     - stage: uuid
-      stageUuid: "8f79d05a-a3e2-8133-ae5b-db0ef82eb157"
+      stageUuid: "9710130d-054b-8371-8d3b-8d2e2f3944dc"
 version: 2
 ---
 # types — Payload generated TypeScript

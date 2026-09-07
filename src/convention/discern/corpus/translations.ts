@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "corpus",
-    "uuid": "8df35bdb-1bea-8cf7-ae69-420ddcfbd229",
+    "uuid": "b94aef10-686c-8c91-a29c-8c3dbccd43e1",
     "words": [
       "corpus"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about corpus — Use to see every security claim erpax makes as one number — passing verdicts over total public claims across the registered claim-bearing atoms. The evidence PROSE is declared beside each atom's claims and the OUTCOME comes from actually running the named suites, because neither half alone is evidence: a declaration with no run is a tautology, a green run with no declaration says nothing about what was tested. Fails closed on a failing verdict; reports the ratio without ratcheting it, since a compass is a legitimately open surface with a named owner.",
-    "uuid": "ab0c9a63-bca9-81a3-a500-6ae78a163acb",
+    "uuid": "b05b5de2-219b-8096-9f79-70345db4f699",
     "words": [
       "use",
       "when",

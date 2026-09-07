@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "registry",
-    "uuid": "9859aebf-4f2c-892b-9b43-019315be9b60",
+    "uuid": "d4443980-adb8-809a-82d4-76100e7f46ac",
     "words": [
       "registry"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about registry — binds every gated capability to the tiers that include it. and answer from that one place, and marks what no tier may remove.",
-    "uuid": "4d4c134f-57dd-8158-9554-d8fe35bb675a",
+    "uuid": "23c53f53-a1d8-88e1-a3d7-9ef2b7a41dcf",
     "words": [
       "use",
       "when",

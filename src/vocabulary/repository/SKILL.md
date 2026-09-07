@@ -2,11 +2,11 @@
 name: repository
 description: "Use when reasoning about repository as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/repository"
-coordinate: "vocabulary/repository · 8/crest · 3b112004"
-contentUuid: "a6802e83-7a71-575c-83ea-1961ff6f274a"
-diamondUuid: "95631d64-086b-897d-9fa3-c00e3b944dc5"
-uuid: "3b112004-238a-837c-8d98-e2b30465a345"
-horo: 8
+coordinate: "vocabulary/repository · 7/descent · f01aca15"
+contentUuid: "f244c0d6-ab06-5ed0-ae4d-23c4475d8a01"
+diamondUuid: "dbc9de6b-d87c-8864-9773-7a5aeaf1be54"
+uuid: "f01aca15-055f-8aa1-a926-986ff75cbaef"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3a1e013a-3aaf-8acc-b068-709f2eadf68a"
+  computationUuid: "26de650c-723f-8346-9c6a-379db35c8526"
   stages:
     - stage: path
       stageUuid: "d8fe7745-2167-8840-a985-495106ce4e98"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "44e2e3c4-e8e9-8441-97fb-82d83ccae73d"
     - stage: horo
-      stageUuid: "a14c4006-fd87-81bf-9fa8-881a1048aaec"
+      stageUuid: "d52fd8c9-4ac3-8602-9aa2-7fd9c411ff89"
     - stage: seal
       stageUuid: "beccd4fd-efa1-8261-a9e7-00ee028ef169"
     - stage: uuid
-      stageUuid: "7edd4b89-0b02-8e87-a687-d96f97ed295d"
+      stageUuid: "cec6052e-88d5-82bd-aca6-0ff0f17b3f57"
 version: 2
 ---
 # repository

@@ -2,11 +2,11 @@
 name: "7064"
 description: "Use when implementing or referencing `src/iso/7064/index.ts`."
 atomPath: "iso/7064"
-coordinate: "iso/7064 · 2/share · d9c4b1f7"
-contentUuid: "8d07135d-2a43-5c48-a176-f6a51a27a461"
-diamondUuid: "9905295d-9f38-8a5c-a4b6-538432b5efd8"
-uuid: "d9c4b1f7-3ef3-8bfe-9ff1-1b66f18ef06e"
-horo: 2
+coordinate: "iso/7064 · 5/round · e4c603a9"
+contentUuid: "958ae30a-f73d-51db-b4f7-553d1d427a22"
+diamondUuid: "ea0280fc-16d8-8fd4-9388-42aff9fdd794"
+uuid: "e4c603a9-d8ee-864e-90d4-0f539a5401b2"
+horo: 5
 typography:
   partition: iso
   bondDegree: 3
@@ -17,7 +17,7 @@ standards:
   - "ISO-7064:2003 mod-XX` plus the issuing"
 bindings: []
 signatures:
-  computationUuid: "b36e2d9f-34c6-81a0-9cd2-3f27d46acff7"
+  computationUuid: "5e3b8d74-d7c9-8039-8f0e-60798563937d"
   stages:
     - stage: path
       stageUuid: "501672c3-f75c-8837-8892-9949b8f11c91"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "6ee5b31f-955e-83b3-97fa-3e49ef86b45f"
     - stage: horo
-      stageUuid: "e498a2b6-3091-822d-8a4e-4d601f1cf1bc"
+      stageUuid: "4b373c8e-9ace-81d7-96e0-59d364afc96f"
     - stage: seal
       stageUuid: "1f7a629c-7da2-8976-b401-8baa32b25ead"
     - stage: uuid
-      stageUuid: "aee2bfb0-60a9-8167-9c02-99b270685156"
+      stageUuid: "18a14fb5-2fca-8b3b-9cac-8ad306b5d8a3"
 version: 2
 ---
 # `src/iso/7064/index.ts`

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gender",
-    "uuid": "55a541a9-a264-868c-9dbd-17cd0a58c0c5",
+    "uuid": "b5dcbe58-ec20-87b1-aa62-766c55c534d1",
     "words": [
       "gender"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about gender — Gender of something, typically a Person, but possibly also fictional characters, animals, etc. While https://schema.org/Male and https://schema.org/Female may be used, text strings",
-    "uuid": "5ac8c1e8-2128-8100-be8e-400643b1d88f",
+    "uuid": "e8fbc9e9-7d96-80a3-817a-1af0842874f2",
     "words": [
       "use",
       "when",

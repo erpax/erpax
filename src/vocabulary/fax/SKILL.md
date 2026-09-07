@@ -2,11 +2,11 @@
 name: fax
 description: "Use when reasoning about fax as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/fax"
-coordinate: "vocabulary/fax · 2/share · 90e8a48b"
-contentUuid: "10ceccfb-82c1-5346-9c6b-ab4d012cba92"
-diamondUuid: "7d1e85ae-236d-80a5-9e27-c43631ba3268"
-uuid: "90e8a48b-cc92-8d66-b2a9-4132fdb8ca88"
-horo: 2
+coordinate: "vocabulary/fax · 1/base · 5a1d6826"
+contentUuid: "8cd1481b-bda9-531d-b30e-4a0547664a1b"
+diamondUuid: "5c158816-b9f2-8ff6-bfad-3930c2f41793"
+uuid: "5a1d6826-b946-89c8-a450-d228455fab10"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e116f862-4567-87bb-91eb-23b24e1d6e1f"
+  computationUuid: "e1ac6468-fc42-881c-ae41-3cbbfa657470"
   stages:
     - stage: path
       stageUuid: "f53e2188-3b6a-83cc-b32c-69a6d0f9e3c9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1e88a112-5eb5-8f5d-b045-6759a0c689a9"
     - stage: horo
-      stageUuid: "b72ca662-f695-89c2-b656-bf1c1f5eb7aa"
+      stageUuid: "edaab087-2648-882e-a2cc-61f2d787fd89"
     - stage: seal
       stageUuid: "e4b4bbd0-ad8f-848a-8eb1-ef44f7b784ce"
     - stage: uuid
-      stageUuid: "73adf4b2-f64a-8062-936c-04f6dacf50b1"
+      stageUuid: "2dc054a6-278b-8f95-866c-f01b95986925"
 version: 2
 ---
 # fax

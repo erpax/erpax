@@ -2,11 +2,11 @@
 name: acriss
 description: "Use when reasoning about acriss — A schema.org component word, collided out of schema.org compounds — fused from acrissCode (sti · collapse · merge)."
 atomPath: "vocabulary/acriss"
-coordinate: "vocabulary/acriss · 2/share · 24d5e3f7"
-contentUuid: "6f58c3cb-8a57-5678-a75c-f75582111888"
-diamondUuid: "d7aa1f11-35b1-8701-8685-b1697485f554"
-uuid: "24d5e3f7-3d74-8957-b195-4b77a20ba262"
-horo: 2
+coordinate: "vocabulary/acriss · 8/crest · a814823b"
+contentUuid: "ffdda4f2-18e4-585d-a7e1-e4ee9c912934"
+diamondUuid: "4ee82b90-bd79-8d9f-9b24-efae017a4968"
+uuid: "a814823b-a67d-88a3-bcbe-8ca4ea423a24"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e3128f0b-80ca-8207-b996-188eb3aa9c8c"
+  computationUuid: "a2b2bbc1-9b74-8fc7-a29b-79a1db778c30"
   stages:
     - stage: path
       stageUuid: "7b63def7-9600-8989-a7fa-9d5ba6dd57b9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "43a41864-411d-8f5b-8a43-da20163a45dd"
     - stage: horo
-      stageUuid: "d1fb7cae-d0e7-800d-9307-2254b69627b1"
+      stageUuid: "6de8948a-a291-8125-82d4-e32db9e07252"
     - stage: seal
       stageUuid: "f9d15e39-0302-8ef3-9163-9c334a6a8862"
     - stage: uuid
-      stageUuid: "b19e3016-db9e-8df5-8ce7-ab1cacb5b0a1"
+      stageUuid: "a76ee254-be47-8f3b-ba05-db7cba409dba"
 version: 2
 ---
 # acriss

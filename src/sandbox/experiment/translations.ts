@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "experiment",
-    "uuid": "4b63b5e4-5905-80a1-b5ac-304ae5526e09",
+    "uuid": "65fad5fe-3670-8838-b40c-5634fe81652c",
     "words": [
       "experiment"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an agent needs to try an idea without risking the corpus — an isolated scratch workspace where the folder-law standard runs at the seam, so a standard-violating experiment is caught in the sandbox and never promoted.",
-    "uuid": "c3b867ff-2248-8682-81f1-375fce10b828",
+    "uuid": "82a79827-0cf0-8ff3-9883-b07d385596bf",
     "words": [
       "use",
       "when",

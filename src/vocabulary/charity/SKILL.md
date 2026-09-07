@@ -2,10 +2,10 @@
 name: charity
 description: "Use when reasoning about charity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/charity"
-coordinate: "vocabulary/charity · 2/share · 6706d725"
-contentUuid: "8d2198d6-6f77-5498-b3fb-fb3094effbb1"
-diamondUuid: "601aebf6-ae1d-8e62-8d3e-b4bd4bd798a2"
-uuid: "6706d725-0eb1-87c5-abcb-3561ac130646"
+coordinate: "vocabulary/charity · 2/share · 6ea0f4f6"
+contentUuid: "3af1d8e9-d62c-5340-9b69-f008100b299a"
+diamondUuid: "54185366-e60f-8673-abd3-9ab87547051b"
+uuid: "6ea0f4f6-2855-85f9-8ec9-84cdcaa4daaa"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9f89ccd8-859c-8ac2-9e43-56574bed27c0"
+  computationUuid: "2ebb278c-c1fd-885e-abf7-9b420038369d"
   stages:
     - stage: path
       stageUuid: "097d0978-be36-8531-8f9c-b1ce2c890853"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2dbc388d-f799-829f-9898-c13a3ab9f5d9"
     - stage: horo
-      stageUuid: "2c8ca87e-e2b0-8fe2-9091-f1656ef358e0"
+      stageUuid: "2ee6e34f-ee31-8038-a5ac-98534a839778"
     - stage: seal
       stageUuid: "22fb4252-f4a9-82f7-86dd-912aa59e6d2c"
     - stage: uuid
-      stageUuid: "74a4445d-1776-8999-904c-9a6ddc6a8f26"
+      stageUuid: "71dbe5e0-02f6-8556-88b5-92c7c33592de"
 version: 2
 ---
 # charity

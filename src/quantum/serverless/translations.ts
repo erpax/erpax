@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "serverless",
-    "uuid": "5bc8c381-e2ad-80ca-8bdc-c4712b925c67",
+    "uuid": "4221e9e2-e6e2-84c5-9f94-a632e935d57a",
     "words": [
       "serverless"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when proving that serverless infrastructure (Cloudflare Workers + wrangler bindings) provides quantum semantics — superposition, collapse, entanglement, holographic recovery — and that erpax itself is the existence proof, deployed serverless via OpenNext.",
-    "uuid": "706a9e8b-bb7d-86ef-846f-86d8f923a611",
+    "uuid": "da6de87a-7bbe-894a-919a-665e89d0a75a",
     "words": [
       "use",
       "when",

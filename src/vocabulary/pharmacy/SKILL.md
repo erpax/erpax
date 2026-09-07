@@ -2,11 +2,11 @@
 name: pharmacy
 description: Use when reasoning about pharmacy — A pharmacy or drugstore.
 atomPath: "vocabulary/pharmacy"
-coordinate: "vocabulary/pharmacy · 7/descent · 6613cc80"
-contentUuid: "69abb9ab-5d7b-57af-ba7e-15721c659990"
-diamondUuid: "815aa902-5332-8324-999f-c18f4a9b9abd"
-uuid: "6613cc80-18b9-8751-b505-d40606446db7"
-horo: 7
+coordinate: "vocabulary/pharmacy · 8/crest · 3819aff7"
+contentUuid: "1aa3f0c3-915f-5d39-8c4b-2101c73cfe9a"
+diamondUuid: "89027fba-69f2-81b5-b92c-f70855043d99"
+uuid: "3819aff7-a2ec-8c7d-a2df-66c90b72b935"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 14
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d29ef3d7-aa6e-8e2b-a468-6bff21d42c73"
+  computationUuid: "dbb59ac0-a44b-80b2-b850-01282052f761"
   stages:
     - stage: path
       stageUuid: "cd74ab72-eb6b-8b31-bbcd-f1ea8af1d5c3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9e90da72-192e-8295-8594-58d467f1ea8e"
     - stage: horo
-      stageUuid: "2b4a3a38-b38d-8258-a6a1-04d2bf27392c"
+      stageUuid: "76e68d70-8aee-86e9-a98b-2b4abaa90e14"
     - stage: seal
       stageUuid: "a9d7d546-a0dc-832e-bd0e-4f1ab23a2172"
     - stage: uuid
-      stageUuid: "31e5e14b-a335-8f82-993d-92253b8442f1"
+      stageUuid: "178edb68-66a0-82a7-94c7-cf26e005cc19"
 version: 2
 ---
 # pharmacy

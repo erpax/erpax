@@ -2,11 +2,11 @@
 name: only
 description: "Use when reasoning about only as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/only"
-coordinate: "vocabulary/only · 5/round · ca62c19c"
-contentUuid: "bf4092d2-9443-5dd3-8725-c8132d0557d9"
-diamondUuid: "de055b66-a962-8039-9b8d-99f8c7b2c837"
-uuid: "ca62c19c-4648-86e0-bb98-b577c39d5968"
-horo: 5
+coordinate: "vocabulary/only · 7/descent · 1f5c500e"
+contentUuid: "a00a510d-b26a-54d3-9d04-30a223a6b402"
+diamondUuid: "0bcdaac9-4f0c-8798-b231-6f1e59a62ccb"
+uuid: "1f5c500e-c1b8-8d31-9398-4afbef79d977"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9b85f566-fb95-8402-b3df-037a6fcec144"
+  computationUuid: "811cda70-2643-8140-b19a-a451b4af720a"
   stages:
     - stage: path
       stageUuid: "15b01092-2bc6-80a3-9435-eb3708ca6344"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cfe87951-debe-825b-92ad-8dd76ce15089"
     - stage: horo
-      stageUuid: "d9c20b2c-1b94-8052-8080-3805bb29d0cf"
+      stageUuid: "ba5cdb5c-00d1-8313-bdde-7fc7b9f6658e"
     - stage: seal
       stageUuid: "27d77346-feb3-8781-a70a-b7f84f3b45a6"
     - stage: uuid
-      stageUuid: "0520999a-6756-8f7c-93bd-b96aa38d860c"
+      stageUuid: "9bcb35b8-15fe-8e63-9d02-699f6a0d1c4d"
 version: 2
 ---
 # only

@@ -2,11 +2,11 @@
 name: drug
 description: "Use when reasoning about drug as a medical facet of medical — vocabulary pivot to @/drug; nested not duplicated."
 atomPath: "medical/drug"
-coordinate: "medical/drug · 7/descent · ab1f7aaf"
-contentUuid: "1ef9294f-e63b-5933-861b-c934058f2a2f"
-diamondUuid: "7eec9dcb-eb32-8557-97ee-e6dcabe4439c"
-uuid: "ab1f7aaf-159c-8612-a10a-db2baaf1121e"
-horo: 7
+coordinate: "medical/drug · 1/base · 149d5aa3"
+contentUuid: "c2cc600e-c56b-584f-ac70-c8a8884cbb77"
+diamondUuid: "7d0151b2-2a68-8d01-9fa9-b5acde78698f"
+uuid: "149d5aa3-5945-8d57-a512-0059da2f6f4e"
+horo: 1
 typography:
   partition: medical
   bondDegree: 65
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "daf5ceaf-0df1-8f8d-9df8-ba990e55011f"
+  computationUuid: "24016115-a04d-8ca3-a0c6-e4c028181f90"
   stages:
     - stage: path
       stageUuid: "f345f8f7-f60e-815f-a6cc-e93cf4b5ca6f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "eb07eb14-3480-8720-9cb8-e27bc645bda4"
     - stage: horo
-      stageUuid: "00cbafe9-c2de-8559-97c9-c59661aa5d5f"
+      stageUuid: "fad38856-c905-804c-beb1-525818140353"
     - stage: seal
       stageUuid: "7a1136af-b860-8e97-abd1-181cb88dac67"
     - stage: uuid
-      stageUuid: "a4341b34-2be1-8829-887d-38080101be78"
+      stageUuid: "b1505c81-c4cb-8d1a-89b3-3d20c93c2de6"
 version: 2
 ---
 # medical/drug — medical facet

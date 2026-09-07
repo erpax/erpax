@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "terroir",
-    "uuid": "0eb59c25-2f58-8948-9904-dcac779a65d9",
+    "uuid": "dba3b65c-b5c2-8170-a51a-ba01ef7a88cd",
     "words": [
       "terroir"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the place gives the produce its character and price — terroir: the area-specific soil, climate, topography, and practice that make a product distinctive (OIV). Expressed legally as the appellation / AVA / PDO (a certification over a delimited territory); the perennial/viticulture twin of provenance and a land-value premium.",
-    "uuid": "4f1468f3-9b39-86d9-8b2c-682bc738c6a2",
+    "uuid": "2c0e354a-0d19-8c0e-8ad5-2e655ad30965",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "statements",
-    "uuid": "a9765fac-2ca1-8b9b-8f3f-d59cbcf156d5",
+    "uuid": "21921f28-8b4c-84fa-9073-9c159c741887",
     "words": [
       "statements"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when importing or matching bank statements (CSV, OFX, API) against journal entries for reconciliation — opening/closing balance, transaction lines, match type, variance; feeds account-reconciliations and IAS-7 cash-flow GL. The bank-statements import collection.",
-    "uuid": "ed137028-2d4e-80cd-8660-57624775194d",
+    "uuid": "9fa8687b-3dd1-8ad7-8903-353195507e1d",
     "words": [
       "use",
       "when",

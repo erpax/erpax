@@ -2,11 +2,11 @@
 name: discontinued
 description: "Use when reasoning about discontinued as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/discontinued"
-coordinate: "vocabulary/discontinued · 1/base · 8c21b86b"
-contentUuid: "fe5f1cef-ddd9-539a-8165-08b4fb00dde7"
-diamondUuid: "d5b9d3cd-d8b7-81c9-aa07-a6cf87bd66c7"
-uuid: "8c21b86b-e009-8cc3-b66a-a7a5f42282c4"
-horo: 1
+coordinate: "vocabulary/discontinued · 7/descent · e99ed60b"
+contentUuid: "d32dc1f2-1968-539c-b3fa-7964b61a919b"
+diamondUuid: "bb3bc1df-9b93-83e4-aa96-7fe035f12f71"
+uuid: "e99ed60b-ba7b-8921-88e4-f9873378fa68"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "57d30cee-2bdb-885a-b07e-ab8ad01057ea"
+  computationUuid: "4e53f278-0a07-8b6c-b6e9-cf5a439b2d4b"
   stages:
     - stage: path
       stageUuid: "b8f56574-b0a7-864d-87db-3a9ceb07a9a7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "69ca067a-e640-8cbc-b55b-b504a7bd26f9"
     - stage: horo
-      stageUuid: "e5563061-382c-88e0-bea8-ac1366fa6937"
+      stageUuid: "1a4dc95c-98ab-825c-872e-07420130f839"
     - stage: seal
       stageUuid: "070d2dda-b7a5-8e47-a359-e01f6542b703"
     - stage: uuid
-      stageUuid: "48debfd5-64bb-8946-817e-05948be658f1"
+      stageUuid: "31c78063-2575-83a0-961c-26b069c2f047"
 version: 2
 ---
 # discontinued

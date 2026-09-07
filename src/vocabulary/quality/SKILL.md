@@ -2,10 +2,10 @@
 name: quality
 description: "Use when reasoning about quality as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/quality"
-coordinate: "vocabulary/quality · 5/round · 2e17a9a8"
-contentUuid: "d8ff862f-1bdb-5d1a-bc2d-a37a6b32275a"
-diamondUuid: "0800029f-3f07-8c92-a1ca-5c0be798ef92"
-uuid: "2e17a9a8-16e8-875c-b6d8-12edc4518040"
+coordinate: "vocabulary/quality · 5/round · edd9ef1a"
+contentUuid: "9d7c003d-f674-51d8-872d-230ed3511894"
+diamondUuid: "88110954-c8f3-8a0b-827b-36ec422fbbaa"
+uuid: "edd9ef1a-1f75-8691-b5ad-3eacf33881cf"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2869ebaf-7952-8cd1-bd63-fbc0d592b98a"
+  computationUuid: "4f318db9-4e9e-8be5-8798-b139efe0ce15"
   stages:
     - stage: path
       stageUuid: "df3a7d9c-e5c4-8567-ac52-80af8fc04ecd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "29ca43d2-6bda-844e-985e-dcb81b45a628"
     - stage: horo
-      stageUuid: "1658eedc-bbeb-8109-b90a-f3cdc775d15a"
+      stageUuid: "3e684a7c-0773-83e8-aa66-fe842fbd6f90"
     - stage: seal
       stageUuid: "23976e54-8447-8986-9d91-58d66114e986"
     - stage: uuid
-      stageUuid: "ea2251b3-4554-89df-9150-2661b4919e49"
+      stageUuid: "f006751a-7908-8964-87f3-4a7c651c96da"
 version: 2
 ---
 # quality

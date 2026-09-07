@@ -2,18 +2,18 @@
 name: monitor
 description: "Use when reasoning about patient monitor — hospital bedside vitals facet; pivot to @/medical/device registry. Also: realtime corpus violation monitor via @/monitor/violations (all gate axes, path-account bonded)."
 atomPath: monitor
-coordinate: "monitor · 8/crest · 436dcf1e"
-contentUuid: "1011fed3-2687-52e3-ad81-b5f068e3ce81"
-diamondUuid: "4204681a-4e4f-8d29-acfd-64efad79f457"
-uuid: "436dcf1e-e44b-8d17-8758-3cd794c6ac4b"
-horo: 8
+coordinate: "monitor · 4/weave · 303f3f4e"
+contentUuid: "08304db8-5420-5aa1-95ac-177d66d0d6b2"
+diamondUuid: "8549d3a9-ede2-8e59-a47e-25f751e63a43"
+uuid: "303f3f4e-4899-8594-9ab4-f2651c65ed5b"
+horo: 4
 typography:
   partition: monitor
   bondDegree: 37
 standards: []
 bindings: []
 signatures:
-  computationUuid: "bd057928-f318-8aa5-827f-cb2b96983b19"
+  computationUuid: "ab368664-e616-8726-948c-e770ad673026"
   stages:
     - stage: path
       stageUuid: "48a30b3f-d283-8031-b938-a9ed3d5bbb7e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "094be6c4-3ac0-84ce-867b-e8553bb5f7bd"
     - stage: horo
-      stageUuid: "3cb6cbd9-dd6c-88d5-a08c-0078667ac407"
+      stageUuid: "628ca86e-aa30-88ea-ab57-2dbc97da6b27"
     - stage: seal
       stageUuid: "79116894-663f-85ce-944f-df4db398ed7b"
     - stage: uuid
-      stageUuid: "aa475520-79da-8053-bffb-93abcdce8040"
+      stageUuid: "ff966aac-a4e0-8a4c-854c-cbadea96fd52"
 version: 2
 ---
 # monitor — patient bedside monitor facet

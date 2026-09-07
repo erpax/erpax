@@ -2,11 +2,11 @@
 name: bank
 description: "Use when a transaction or account references banking infrastructure — bank account, bank statement, bank transfer, bank reconciliation. A financial institution context; relationTo: 'bank-accounts' or similar."
 atomPath: bank
-coordinate: "bank · 4/weave · ff48cfd7"
-contentUuid: "1659c378-a435-5c26-b3fd-fda8ba63b629"
-diamondUuid: "311e0e86-871d-845e-9c66-5f5cd41e7cb9"
-uuid: "ff48cfd7-199f-8198-bb76-71d522a3836d"
-horo: 4
+coordinate: "bank · 5/round · 0ea03153"
+contentUuid: "f96e0e0d-0ba1-5b4d-b10e-26b958c15abc"
+diamondUuid: "bfcb28c2-5371-8661-9f89-cc3c50fe7656"
+uuid: "0ea03153-d16b-874f-af67-62c0dde479dd"
+horo: 5
 typography:
   partition: bank
   bondDegree: 73
@@ -25,7 +25,7 @@ standards:
   - "SWIFT-MT"
 bindings: []
 signatures:
-  computationUuid: "be33765c-c8ef-846a-b4ba-0b1f26b12dc3"
+  computationUuid: "4e65e8be-c7de-8bc9-8b5c-1b42856d3572"
   stages:
     - stage: path
       stageUuid: "f47989eb-c24a-8670-ba84-08dc33d21aeb"
@@ -36,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "a1ad83f2-0241-8aba-9d33-82b285ddc3b8"
     - stage: horo
-      stageUuid: "571079f0-d702-867c-bb46-935b918d9cfb"
+      stageUuid: "62ce932d-38cd-8552-a918-78feed1bfcd7"
     - stage: seal
       stageUuid: "3b7cea07-dff4-8b0e-a478-c51b37992efb"
     - stage: uuid
-      stageUuid: "8449f631-7e1d-848e-a75a-3885fc074799"
+      stageUuid: "d782c888-aa67-8472-b977-f7b5ac181832"
 version: 2
 ---
 # bank

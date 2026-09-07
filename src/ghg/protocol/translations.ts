@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "protocol",
-    "uuid": "2ab65866-f222-8da8-aade-1b716f113493",
+    "uuid": "21d4e2c9-2961-878c-8a7e-3c03743fa505",
     "words": [
       "protocol"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing GHG Protocol.",
-    "uuid": "62bc0f66-5ec5-83e0-9452-6ed644b1a33f",
+    "uuid": "c8c5c1c0-9bef-8de8-8fc2-e5bc7a0f7e36",
     "words": [
       "use",
       "when",

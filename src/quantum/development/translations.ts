@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "development",
-    "uuid": "25d98c97-83a8-8f15-8e0b-1786413eefcb",
+    "uuid": "dbf1a811-9319-822d-891f-ddbfae8b00b0",
     "words": [
       "development"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when choosing the next quantum capability to build — the feasibility-ranked quantum roadmap from the quantum-scientists; the one move now is to drive the orphans to zero so tamper-cost becomes literally infinite.",
-    "uuid": "60866008-dabe-84e8-aaf6-3dd5fe83f9fe",
+    "uuid": "fd49e204-4dcd-8ce2-8130-8a388d6cc862",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: hooks
 description: "Use when reasoning about the posts collection's Payload hooks — before/after change and validate logic for posts."
 atomPath: "posts/hooks"
-coordinate: "posts/hooks · 9/unity · ce1172e4"
-contentUuid: "bf5f29e8-1bad-53a7-a30b-fd43984390db"
-diamondUuid: "8c757112-5331-8b90-922b-10085d789e71"
-uuid: "ce1172e4-b8fd-855a-a6de-1a81268d682a"
+coordinate: "posts/hooks · 9/unity · 8dce9352"
+contentUuid: "30760aa3-61cb-56d9-93f1-0e77f77a30bc"
+diamondUuid: "ff7582aa-d285-8b2b-ab4b-1093511a6e64"
+uuid: "8dce9352-c088-8c05-8157-42eb76e5d9b6"
 horo: 9
 typography:
   partition: posts
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "de87d7b1-0128-8c42-b4fb-5d436aa5e193"
+  computationUuid: "bcfb0399-947b-8e62-b050-192fa2e9cd09"
   stages:
     - stage: path
       stageUuid: "b9f95ebd-0c70-897b-af11-f3785483c10f"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "fd5a324c-aa8e-878b-b74e-77425732aa96"
     - stage: horo
-      stageUuid: "9e09b5e7-6b7c-8356-9dce-4ea1a8e22c6f"
+      stageUuid: "5f3f9d19-e10f-8f59-8ef1-a7dd402267bf"
     - stage: seal
       stageUuid: "03c046d1-f5fd-8948-abb6-837539d42dbb"
     - stage: uuid
-      stageUuid: "d62ca699-fb14-8acd-af4c-de5d849110f8"
+      stageUuid: "59c16f8c-4729-85bc-9f6b-6b2befeb91fa"
 version: 2
 ---
 # posts/hooks

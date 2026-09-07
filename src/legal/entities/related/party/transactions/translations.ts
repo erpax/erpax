@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "transactions",
-    "uuid": "95662594-0c47-8cd8-9762-5733a089f1e6",
+    "uuid": "f0563621-92f3-83b5-8972-fbe51a80bb1a",
     "words": [
       "transactions"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording or disclosing transactions between a legal entity and its key management, directors, shareholders, controlled entities or joint ventures — arm's-length evidence, board-approval workflow, IAS-24/ASC-850 disclosure reference, linked audit evidence. The related-party disclosure register.",
-    "uuid": "f171c6fe-4cd1-8b50-acf4-128bdea4290a",
+    "uuid": "378c2b94-6e9b-8172-8268-3d8446f63ed9",
     "words": [
       "use",
       "when",

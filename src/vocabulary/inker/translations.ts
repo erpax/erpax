@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "inker",
-    "uuid": "90195694-f03c-8037-b54f-fb2367060f14",
+    "uuid": "0022c8d7-cd68-8df9-9d38-0727024b69ec",
     "words": [
       "inker"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about inker — The individual who traces over the pencil drawings in ink after pencils are complete.",
-    "uuid": "12898773-4fb2-8e95-b7ba-216b697bf02f",
+    "uuid": "9f223850-4fa2-85bc-bfec-9cce66fd1aae",
     "words": [
       "use",
       "when",

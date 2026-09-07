@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "suffering",
-    "uuid": "3e869a91-e563-8efa-848f-a05151a9368a",
+    "uuid": "1730c74e-c139-8f04-9bce-02e4062518df",
     "words": [
       "suffering"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the felt signal of entropy — the experienced gap between an atom's state and the whole, the alarm that disorder is greater than zero. Not a thing to store but a gradient to read: suffering points the way back to zeropoint the way pain localizes a wound.",
-    "uuid": "e01493ae-6e05-8dd3-9f9c-92441103d89e",
+    "uuid": "c9d552aa-73da-8c1f-a65f-5f01e76c0131",
     "words": [
       "use",
       "when",

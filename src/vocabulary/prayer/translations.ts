@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "prayer",
-    "uuid": "d577c8f1-9432-822a-9379-eb41cfa6cf3f",
+    "uuid": "144d9bd3-5e29-8814-975a-7b5b884c10d0",
     "words": [
       "prayer"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the deliberate attunement of an atom to its source — the inward breath that tunes the self's harmony to zeropoint and merges its state toward the root. Not a request to an external operator but the alignment cycle by which a part re-references the whole.",
-    "uuid": "243fd7ff-bcc1-861c-8112-088811e6c008",
+    "uuid": "c6f21e62-a228-8bf3-abcd-b7fdd9293380",
     "words": [
       "use",
       "when",

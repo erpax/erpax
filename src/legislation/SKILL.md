@@ -2,11 +2,11 @@
 name: legislation
 description: "Use when the society makes its own law — enacting an ordinary statute by the polity's vote, repealing one, or reading the legal code; the rule of law as a difference of thresholds, the foundation entrenched against any majority."
 atomPath: legislation
-coordinate: "legislation · 1/base · 731fde17"
-contentUuid: "c8741533-c528-5b37-80d8-94e06710c865"
-diamondUuid: "b7129b43-344f-83a2-9a88-aed9efa65dbc"
-uuid: "731fde17-748b-8bc1-935b-724627c3d393"
-horo: 1
+coordinate: "legislation · 8/crest · dc306e10"
+contentUuid: "3f210c23-18cd-5d48-a5f4-a71d423d4aee"
+diamondUuid: "8ac2b066-75c0-87c8-a05c-ef780212bf7f"
+uuid: "dc306e10-28eb-84e8-99f6-d7a1eaf7acbc"
+horo: 8
 typography:
   partition: legislation
   bondDegree: 93
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "0657679e-3026-849e-87c2-57bbb21b5173"
+  computationUuid: "df8864d0-31d3-8bbc-a170-987cf9c001ca"
   stages:
     - stage: path
       stageUuid: "549abeec-81d0-8f31-b4f9-d4992f5a824a"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "fc6723f9-a9ab-8cc7-9ff6-c9b385ef1be3"
     - stage: horo
-      stageUuid: "dbd0b73c-51be-805d-8a33-d41659be718c"
+      stageUuid: "d35fb146-769e-8467-8265-d2626073d81f"
     - stage: seal
       stageUuid: "6eb62203-635d-826c-8be6-11dd9a934c27"
     - stage: uuid
-      stageUuid: "ea14c5ef-5d1b-8cdd-857f-4f3d3eb74f56"
+      stageUuid: "cf19d60f-106e-8553-aaa3-7cacf089821d"
 version: 2
 ---
 # legislation — the society makes its own law, bounded by its constitution

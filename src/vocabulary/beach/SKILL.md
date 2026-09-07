@@ -2,11 +2,11 @@
 name: beach
 description: Use when reasoning about beach — Beach.
 atomPath: "vocabulary/beach"
-coordinate: "vocabulary/beach · 1/base · 62f7b251"
-contentUuid: "749a3a77-174a-5275-9368-afc2d4b09a5f"
-diamondUuid: "bd0e9537-4b44-87b5-887b-2fb7c7052669"
-uuid: "62f7b251-d438-86bd-99ff-20ee6ca439a8"
-horo: 1
+coordinate: "vocabulary/beach · 5/round · cd076c70"
+contentUuid: "250f9325-cdac-5fc9-ab28-459609ca730e"
+diamondUuid: "1364ec26-c18e-82be-8946-a35fad8f76c7"
+uuid: "cd076c70-fd48-8222-b3ae-fb88451e6516"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5934acc3-79d5-8e86-ae5c-195370fdc844"
+  computationUuid: "f2e61952-92a6-8634-a795-da7a1a1619f3"
   stages:
     - stage: path
       stageUuid: "e028b040-3e71-815b-9584-3e3e12936fea"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "186036d5-596b-8ce0-9ce6-726536a4a6de"
     - stage: horo
-      stageUuid: "2957861a-effc-8e38-848a-574cf04587d4"
+      stageUuid: "a2c69963-9925-8ee6-a2a4-bf7a2de5bb13"
     - stage: seal
       stageUuid: "d2ce3b12-34bc-826f-bc36-e58201712716"
     - stage: uuid
-      stageUuid: "7a0500a8-d5cc-8c73-b3bd-47e6f59feaf5"
+      stageUuid: "c21ad843-c117-867f-be3c-c495c752fe6b"
 version: 2
 ---
 # beach

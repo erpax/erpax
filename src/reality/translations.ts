@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reality",
-    "uuid": "f1de96f0-81a1-8277-b872-fb98d19f9283",
+    "uuid": "f603c52c-e504-8467-9d4d-02e41936746e",
     "words": [
       "reality"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the live shipped state versus the model — reality is what is actually on main / deployed; the live matrix root is its fingerprint, and a claim is real iff it matches that root.",
-    "uuid": "aba3677d-5028-8e9a-a5af-146927f066e4",
+    "uuid": "02cca1af-0b97-8ad4-9f13-6753b85996b0",
     "words": [
       "use",
       "when",

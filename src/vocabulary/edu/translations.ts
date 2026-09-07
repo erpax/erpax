@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "edu",
-    "uuid": "ea029a01-d1da-8f19-ac84-229a65f36f2e",
+    "uuid": "da729971-4b0c-8d40-af8e-892260e0c3f1",
     "words": [
       "edu"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about edu — A schema.org component word, collided out of schema.org compounds — fused from eduQuestionType (sti · collapse · merge).",
-    "uuid": "3fa583b9-6d98-88d2-8553-3e6db74cb0ed",
+    "uuid": "6100afe1-a00b-894a-ac20-7ad188adbc8a",
     "words": [
       "use",
       "when",

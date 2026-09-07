@@ -2,11 +2,11 @@
 name: min
 description: "Use when reasoning about min as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/min"
-coordinate: "vocabulary/min · 8/crest · a647e796"
-contentUuid: "c683d593-78d4-5d56-b37e-afae898ae663"
-diamondUuid: "fe9ef972-d78f-8cb8-a933-4adb2f9811e1"
-uuid: "a647e796-aac6-8266-91c8-df24c971168f"
-horo: 8
+coordinate: "vocabulary/min · 2/share · 573023e9"
+contentUuid: "73166457-ec65-5c49-9726-a18d3a03a3bc"
+diamondUuid: "005b6b64-c42f-8d3c-8da2-04313a0ad3d4"
+uuid: "573023e9-dc92-880e-b498-699346a1e8cf"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 52
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cfe62427-0ad2-8635-b00a-3334eb37205a"
+  computationUuid: "ca4ff3f5-ed41-8281-ad88-8927bb5566c3"
   stages:
     - stage: path
       stageUuid: "7ca7fb29-111f-8ec9-b80e-d49221556cc5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "84e87513-e569-8772-aac7-4137ad92e298"
     - stage: horo
-      stageUuid: "2a0ff9dd-8ad7-8b3e-bf28-9bb8a79f0d9a"
+      stageUuid: "4f01810d-4676-86de-8465-735eb77aae55"
     - stage: seal
       stageUuid: "16d077bc-35ec-8aea-b976-a507e0a20e48"
     - stage: uuid
-      stageUuid: "aead62fe-c419-85aa-bf58-79f73cc08766"
+      stageUuid: "cf099e0b-9815-89b8-934e-ed2f3acf3960"
 version: 2
 ---
 # min

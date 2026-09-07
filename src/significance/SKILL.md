@@ -2,11 +2,11 @@
 name: significance
 description: "Use when reasoning about significance — The significance associated with the superficial anatomy; as an example, how characteristics of the superficial anatomy can suggest underlying medical conditions or courses of trea"
 atomPath: significance
-coordinate: "significance · 4/weave · ab692c72"
-contentUuid: "ad07ff85-696a-5c07-9469-da9e6bae7b73"
-diamondUuid: "1dafed02-b44a-8e69-b5ae-0fb10e3c64ac"
-uuid: "ab692c72-38f3-8e6a-b5e9-faaf10088046"
-horo: 4
+coordinate: "significance · 8/crest · de04b0b9"
+contentUuid: "12a25535-7830-5fe3-82bb-149db20f76c2"
+diamondUuid: "f0591fde-93f7-871f-b5fd-4123f3142610"
+uuid: "de04b0b9-a726-800c-958e-738d4029afe0"
+horo: 8
 typography:
   partition: significance
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5e5f5e02-58c4-81ef-9021-820f790bed81"
+  computationUuid: "7ae05df0-e825-8723-9418-aaf76eecb3c4"
   stages:
     - stage: path
       stageUuid: "9cdfabd1-4c0e-8afd-bcf7-a8f773fdb2a3"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "075dad46-b71e-87fd-9883-6860a0de564e"
     - stage: horo
-      stageUuid: "bf38e525-7e21-8e2e-84b7-d7d22d5e0687"
+      stageUuid: "d3347814-e065-82b5-9175-240a1e236b52"
     - stage: seal
       stageUuid: "5ca813b1-eb04-8ff4-852e-8e7a9a55761d"
     - stage: uuid
-      stageUuid: "88230c17-50c5-8158-a1b5-06eba6545e91"
+      stageUuid: "52ba522a-1aab-808b-a06b-4f78bb88e69e"
 version: 2
 ---
 # significance

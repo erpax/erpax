@@ -2,18 +2,18 @@
 name: access
 description: "Use when reasoning about the users collection's access control — who may read, create, update, or delete users."
 atomPath: "users/access"
-coordinate: "users/access · 9/unity · 66997001"
-contentUuid: "509a5a52-a25b-5a08-af90-1f2fcb6c4472"
-diamondUuid: "be92730a-eac7-81a1-b014-44b64bc9f60b"
-uuid: "66997001-9509-879a-9603-a00462e98d15"
-horo: 9
+coordinate: "users/access · 6/6 · b8968adb"
+contentUuid: "0bb08fce-333d-5ee7-b077-1ccc10a2e480"
+diamondUuid: "015b86d2-236e-8f13-a327-20422b288663"
+uuid: "b8968adb-569d-89d0-8ef4-5c5180c6b2ad"
+horo: 6
 typography:
   partition: users
   bondDegree: 436
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ab322111-5ca4-8a3c-b197-dec28fbcb8c4"
+  computationUuid: "a9c6db4a-3ab9-8c93-ad15-8a41fbf63513"
   stages:
     - stage: path
       stageUuid: "7abadd60-cbc3-8dce-81e8-95c6944fca56"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "6ea29aef-09ff-8a03-ad5a-bdeb244dd55f"
     - stage: horo
-      stageUuid: "9ed32c08-e998-832e-b9b6-da843caf738c"
+      stageUuid: "8c268d7e-6f35-86fa-bc8e-c78ae763a1ca"
     - stage: seal
       stageUuid: "86a5e39a-6586-836d-bf28-a7a0388e598b"
     - stage: uuid
-      stageUuid: "484bd213-9a7f-843c-9137-20744f82e626"
+      stageUuid: "812db839-3185-8c8d-a2d5-1e46c05530fd"
 version: 2
 ---
 # users/access

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "description",
-    "uuid": "143fb620-41b7-853f-9e51-7782a8e9a637",
+    "uuid": "a69631a7-715a-82d0-8901-49a7fbd848e5",
     "words": [
       "description"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when capturing free-form explanatory text — line item description, finding description, audit observation, notes. Rich or plain text; never a metadata bag (prefer explicit fields + tags for structured data).",
-    "uuid": "e51f2c46-9dc3-8e65-9439-f1e2bc20d3ab",
+    "uuid": "ce85ff22-81a2-8e9f-9e95-684f26c53108",
     "words": [
       "use",
       "when",

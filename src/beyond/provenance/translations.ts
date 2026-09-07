@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "provenance",
-    "uuid": "84322eeb-7e47-87bd-a50d-a8a63a3a6269",
+    "uuid": "00c6c985-6f00-8d87-a5a4-35f0d4deff2e",
     "words": [
       "provenance"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a value's history of CAUSE must be recoverable, not just its history of CHANGE — causal provenance (W3C PROV), recording WHY each audit leaf exists (which upstream leaves caused it) so the full causal ancestry of any number can be walked back.",
-    "uuid": "e1ed16fa-8fec-8c51-b63c-384c4533e509",
+    "uuid": "48fde03a-f434-825e-bfaa-86d9ef118a27",
     "words": [
       "use",
       "when",

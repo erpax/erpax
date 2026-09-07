@@ -2,11 +2,11 @@
 name: header
 description: "Use when reasoning about header as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: header
-coordinate: "header · 5/round · 82e646c5"
-contentUuid: "3a12c7c3-935b-535c-9346-5019763275ff"
-diamondUuid: "7daeeef7-87e9-8737-a1b6-1a3278af9c66"
-uuid: "82e646c5-ed8f-8242-95ee-7ea7cbb4d8b5"
-horo: 5
+coordinate: "header · 4/weave · e5697449"
+contentUuid: "93c6dd05-bdcd-566b-abf6-87f0cb89b083"
+diamondUuid: "ce73c378-5a05-8efa-a1b2-0aa0e9ff4b49"
+uuid: "e5697449-1a04-87a2-951b-9841f0d34212"
+horo: 4
 typography:
   partition: header
   bondDegree: 21
@@ -15,7 +15,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "439147a4-aab6-8458-88e8-cf0150fc130b"
+  computationUuid: "ae48a995-4260-86ce-bf8a-84075be57faa"
   stages:
     - stage: path
       stageUuid: "7d19b1e1-19b5-8742-8c53-7c0c0814fad6"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "84910b01-90fe-8540-a8c8-8fb5c6da490d"
     - stage: horo
-      stageUuid: "646c0cf3-38c8-8b4c-8d57-67cc10b2dd22"
+      stageUuid: "9783bad4-74ab-8950-899b-40b334b5f6fc"
     - stage: seal
       stageUuid: "e61e586e-313c-8375-84c1-9aa5ab55537e"
     - stage: uuid
-      stageUuid: "29c2d598-1569-817d-a0d0-517947e1b3fd"
+      stageUuid: "f08bd6f3-b0bb-87b5-8081-35c2eb77d2e6"
 version: 2
 ---
 # header

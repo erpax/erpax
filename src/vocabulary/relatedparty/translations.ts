@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "relatedparty",
-    "uuid": "45453888-bd9b-8e9f-bd10-03141575a562",
+    "uuid": "0aa82f79-41c9-8d8b-a924-204ea8ce8540",
     "words": [
       "relatedparty"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when identifying and accounting for related-party transactions (subsidiaries, associates, joint ventures, key management); mandatory disclosure and transaction separation under IFRS-24",
-    "uuid": "8de2f10e-1b1d-83c6-a4af-68b75fbb778d",
+    "uuid": "ab6a7263-0095-8600-b3da-d34e614300d5",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "spec",
-    "uuid": "bbfb37ce-812a-81ff-ad61-2b704f419249",
+    "uuid": "ede173aa-8445-8e7e-bdc7-433cb61f4b76",
     "words": [
       "spec"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about spec — The corpus grew two widget shapes: one taking props, one fetching its own data over REST.",
-    "uuid": "3d6f47cc-dcd7-8c04-b805-5960dc7a8add",
+    "uuid": "ff0ec1b5-3535-8447-95ad-cf491050d7f3",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: message
 description: "Use when reasoning about message — Every other atom under blocks/form is a control: it has a name, a label, a value, and a place in the tab order."
 atomPath: "blocks/form/message"
-coordinate: "blocks/form/message · 2/share · 70479cb0"
-contentUuid: "88e52deb-b7a2-5ce2-a0e9-5495213acc88"
-diamondUuid: "c6c60356-7a9b-8b40-8f12-606fcd9ab7cf"
-uuid: "70479cb0-c425-8f50-b8c5-0e61bc6d9497"
-horo: 2
+coordinate: "blocks/form/message · 8/crest · 64ed4433"
+contentUuid: "18929ece-f90b-5b7c-b64c-03d0ef5e2c82"
+diamondUuid: "4ff57aba-bd49-87d5-b4de-5b937c1de4e3"
+uuid: "64ed4433-46c8-8179-82a4-cc0d273e312e"
+horo: 8
 typography:
   partition: blocks
   bondDegree: 85
 standards: []
 bindings: []
 signatures:
-  computationUuid: "59f998eb-f99a-8ded-b8bd-37773ca4d734"
+  computationUuid: "377f099b-1765-83b5-9b43-74caec40cbb2"
   stages:
     - stage: path
       stageUuid: "ac3984b4-0b1f-8815-a39e-dfe640ad14bd"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3d1e662d-d9fd-8c75-a68b-8c100515253f"
     - stage: horo
-      stageUuid: "ba785f3c-c2c2-8b83-85a8-12101f531120"
+      stageUuid: "6eb4f9fe-094b-85f7-9761-ca20dc024c31"
     - stage: seal
       stageUuid: "72afc6cc-4415-882e-ac27-26ab5410c3e4"
     - stage: uuid
-      stageUuid: "70970d44-6569-89da-9768-887a531ca694"
+      stageUuid: "2f792648-65b7-8bef-b66c-2af6267b4c70"
 version: 2
 ---
 # blocks/form/message — content in a form, and it is not a field

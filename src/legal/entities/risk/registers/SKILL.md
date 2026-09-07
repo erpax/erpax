@@ -2,10 +2,10 @@
 name: registers
 description: "Use when cataloguing enterprise risks per legal entity — inherent and residual likelihood/impact scoring (COSO/ISO-31000), mitigating internal controls, risk appetite assessment, next-assessment scheduling, linked audit findings. The COSO ERM risk register."
 atomPath: "legal/entities/risk/registers"
-coordinate: "legal/entities/risk/registers · 8/crest · 5fece441"
-contentUuid: "a8b93aee-b684-505b-a1ff-4f7ab8040b20"
-diamondUuid: "32765450-61ff-8395-8bd4-1b03d20fa6a1"
-uuid: "5fece441-954b-86ed-afd3-2e951a4fa995"
+coordinate: "legal/entities/risk/registers · 8/crest · 8d2d2202"
+contentUuid: "3d7809bc-cefd-5abe-b9a3-b0fe9c5e70f7"
+diamondUuid: "da055e39-d72f-8146-b0fa-e785b493f066"
+uuid: "8d2d2202-e777-8957-af4d-23d38531b5fe"
 horo: 8
 typography:
   partition: legal
@@ -17,7 +17,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "fb97345d-1dbf-8aff-94ab-a3306ceb88f8"
+  computationUuid: "6553575a-3801-88bd-a450-d84b906a8c79"
   stages:
     - stage: path
       stageUuid: "e68bf044-b8e4-80d3-8755-3ed746a92fad"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "1e3e5f82-8b1d-86b0-b3c9-7be18c77ef76"
     - stage: horo
-      stageUuid: "90c20dae-b27a-8fb4-98b9-d8d7f7025701"
+      stageUuid: "c8b8594e-d5c2-80c6-a0af-4bc41cdcb96a"
     - stage: seal
       stageUuid: "8f8d087d-68f4-88eb-b8e0-57225203ebe5"
     - stage: uuid
-      stageUuid: "3a85b107-0a0f-827c-9fb6-13a514556de8"
+      stageUuid: "96a90e7a-a748-829b-a37e-70793ea50461"
 version: 2
 ---
 # risk-register

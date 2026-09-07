@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "controls",
-    "uuid": "62cb98ba-4f33-8b7d-a925-5d3a66f2b7b5",
+    "uuid": "7d261a6c-a93e-8172-860f-be74fde3e687",
     "words": [
       "controls"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining or cataloguing internal controls — preventive, detective, corrective, or compensating — across COSO components (environment, risk assessment, control activities, information, monitoring); owner, frequency, review dates, SOX §404 scope. The internal-controls COSO-2013 register.",
-    "uuid": "ea2e5a64-bb9e-8ff7-8ec7-68d915764ef3",
+    "uuid": "cf28429e-80a7-813e-815c-4e7c3d53f8ba",
     "words": [
       "use",
       "when",

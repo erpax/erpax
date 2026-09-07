@@ -2,11 +2,11 @@
 name: ad
 description: "Use when reasoning about ad as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/ad"
-coordinate: "vocabulary/ad · 2/share · ba448b35"
-contentUuid: "aa5a5eb9-7ecf-5972-8db1-887cda9f9f15"
-diamondUuid: "d671c621-4f47-8438-9da5-b47967210f91"
-uuid: "ba448b35-cd60-8d79-95a2-f8ab1cf7db60"
-horo: 2
+coordinate: "vocabulary/ad · 1/base · 021ac6f0"
+contentUuid: "49857677-682e-5e07-8075-4fb70922673c"
+diamondUuid: "cb9d5391-78fc-8281-8c83-b3d57c822a17"
+uuid: "021ac6f0-347e-834b-8c0f-91c3f064bd46"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 20
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "aa3f2fcf-cc3f-8e4c-9dcc-23c0ee635e81"
+  computationUuid: "1575b148-b5fd-83ac-ab46-ac7c04130d39"
   stages:
     - stage: path
       stageUuid: "81ef09b6-aa4d-88bc-b205-aa1ad27fffbd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "154134d1-cbe5-8541-b70e-607709e33aca"
     - stage: horo
-      stageUuid: "19c042e5-5b1f-810c-950e-d33452f5a8ae"
+      stageUuid: "54240a7b-5e72-8180-9bb8-104eb8bfa378"
     - stage: seal
       stageUuid: "c55ee9fa-ba06-87e2-ad7b-8bab43b2d889"
     - stage: uuid
-      stageUuid: "b9b2374a-2571-8ef6-8118-a1d6aeb5f601"
+      stageUuid: "e2219ec8-4ff8-874a-acb9-c7e408253cfc"
 version: 2
 ---
 # ad

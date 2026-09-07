@@ -2,11 +2,11 @@
 name: types
 description: "Use when classifying legal entities — Corporation, LLC, Partnership, Nonprofit, Trust, Government, Individual — to determine applicable compliance frameworks, audit scope, and jurisdiction applicability. The read-only entity-type reference table."
 atomPath: "entity/types"
-coordinate: "entity/types · 2/share · 8c2b0c07"
-contentUuid: "50f441ec-635b-5852-83a4-916db9bdee25"
-diamondUuid: "4dee2b07-943d-879a-a04f-ace295aa11b7"
-uuid: "8c2b0c07-9f4b-8f0f-8dee-5a8a3c909ddd"
-horo: 2
+coordinate: "entity/types · 8/crest · 54ddd9d0"
+contentUuid: "3b73922e-ba81-5763-8ece-bbe3168c6f44"
+diamondUuid: "609bcf90-dd0e-8237-838e-a6af64e6250a"
+uuid: "54ddd9d0-776a-8f08-8443-6c51ba2e4c0d"
+horo: 8
 typography:
   partition: entity
   bondDegree: 85
@@ -16,7 +16,7 @@ standards:
   - "SOX §302 entity-type-determination"
 bindings: []
 signatures:
-  computationUuid: "ee750d6b-5fef-8d51-8024-f8263a042397"
+  computationUuid: "4dc1ea42-0e53-8780-9de0-332822fa3e6f"
   stages:
     - stage: path
       stageUuid: "7a11717e-e964-89b2-aff5-c8756094efd3"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "23591aa7-bf93-8023-b33e-1cf6100bd5ed"
     - stage: horo
-      stageUuid: "6d7846a4-d97b-87d5-8786-aa41f48ef6aa"
+      stageUuid: "cb127041-68d3-83a0-996f-dec5b67f45cd"
     - stage: seal
       stageUuid: "968b04b9-545b-8318-8367-798e169819f2"
     - stage: uuid
-      stageUuid: "ec525646-b8b5-80a2-8e2d-b8581df29f44"
+      stageUuid: "2481b886-d25c-89f4-866f-0b88eb1a8064"
 version: 2
 ---
 # entity-types

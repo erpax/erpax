@@ -2,10 +2,10 @@
 name: margin
 description: "Use when reasoning about margin as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/margin"
-coordinate: "vocabulary/margin · 5/round · df124306"
-contentUuid: "6b10fe13-ac6f-5567-b0e4-1fcf582169c6"
-diamondUuid: "2181d588-0d23-834c-8369-00b839322a15"
-uuid: "df124306-efd0-8f93-8380-0b643ada5d8d"
+coordinate: "vocabulary/margin · 5/round · 8141c549"
+contentUuid: "04bf0a41-1e21-5ddc-a62a-a3afc049bfb1"
+diamondUuid: "a0271005-1c65-8b70-9a86-c165170c69f9"
+uuid: "8141c549-63a7-8937-8c15-2f5e088dea5a"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3c2c69ca-3d37-83e9-b065-eb4c751ffa55"
+  computationUuid: "32d5dfbf-e1cd-8c09-a7fa-41872db89c03"
   stages:
     - stage: path
       stageUuid: "9a2f0128-c83c-803b-94b2-f5e8aa393cab"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "83a31396-7440-8d99-b10a-cdb364f17b74"
     - stage: horo
-      stageUuid: "ba26a117-d038-8420-b14f-9b62e884877c"
+      stageUuid: "a224d26b-c042-87a8-94f6-660601ef17cf"
     - stage: seal
       stageUuid: "f716ca76-cafe-8182-afaa-6c89c57e2e08"
     - stage: uuid
-      stageUuid: "f6086e6b-3322-8f61-a1dd-802c9dc4b4d1"
+      stageUuid: "7c4821cd-98ae-8b95-9567-372abebaad0d"
 version: 2
 ---
 # margin

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sourced",
-    "uuid": "ad7303f3-88cd-84af-9452-b8b6e365d80c",
+    "uuid": "f248a6a0-168b-8b91-be4d-5cdf53268458",
     "words": [
       "sourced"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an atom is written or reviewed — the convention is that every atom cites the external standard it realises with an @standard marker (in its SKILL.md or its sibling index.ts), never grounding itself in nothing but itself; this atom measures the corpus's live sourcing as coverage = sourced / total over the real tree.",
-    "uuid": "388a4d85-f701-821e-8993-88b37f8fe7c1",
+    "uuid": "75d31698-834b-878c-bb23-53fafa8aac4c",
     "words": [
       "use",
       "when",

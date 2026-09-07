@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "world",
-    "uuid": "a51b485c-57f0-8beb-8ab7-35f709dd9188",
+    "uuid": "d85e6f72-3789-8d2d-9b5f-0058c54a4f58",
     "words": [
       "world"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about world — Use for the public parser-backed rails beyond the EU four and BG two — Brønnøysundregistrene, OFAC SDN, SEC EDGAR, Frankfurter, ExchangeRate-API, Open Food Facts. Contracts pin what the client parses against real captures, and specifically pin the 200-carrying-a-failure trap: Open Food Facts answers status 0 and ExchangeRate-API answers result error, both under HTTP 200.",
-    "uuid": "c3f2d03b-8e73-84d9-b595-370f9ec29492",
+    "uuid": "000f4f07-1d42-8d1f-b67b-89859b4a4c39",
     "words": [
       "use",
       "when",

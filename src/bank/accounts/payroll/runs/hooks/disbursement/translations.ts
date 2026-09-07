@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "disbursement",
-    "uuid": "2b410575-50b2-8ac6-8753-45a35ef427f9",
+    "uuid": "1460e7a2-58e7-8ba8-b012-6215be23f7e9",
     "words": [
       "disbursement"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about disbursement — Payroll Disbursement Hook — fires on `PayrollRuns.status → 'disbursed'` and creates a `payment-runs` row (messageType = pain_001) drawing against the Net Payroll Payable.",
-    "uuid": "5585713f-d1ca-8c5c-b152-4edc293bd105",
+    "uuid": "51963809-ffbd-87d7-922f-2098593685ec",
     "words": [
       "use",
       "when",

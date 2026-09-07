@@ -2,18 +2,18 @@
 name: input
 description: "Use when the user types anything the system can parse, analyse, or derive — one name-class hook normalises (IBAN, BIC, email, phone, URL), refuses checksum failures with the law named (ISO 13616, ЕГН, ЕИК), and derives the twins (country from IBAN, birthdate from ЕГН) so nothing parseable is ever re-asked."
 atomPath: input
-coordinate: "input · 2/share · 74fc240e"
-contentUuid: "5fe44581-746c-5aab-bf29-b4cc28b62ac3"
-diamondUuid: "b8445364-22a3-87cd-8062-83d2a3ce59eb"
-uuid: "74fc240e-6ed3-828a-85aa-bd462e455067"
-horo: 2
+coordinate: "input · 4/weave · 096eae00"
+contentUuid: "66fc7097-9e8e-5cef-9dac-1b02a3eb3abc"
+diamondUuid: "708c5e1b-45a0-878d-a3f6-9fbf0757020b"
+uuid: "096eae00-8421-8626-85d5-75c7e8b43a22"
+horo: 4
 typography:
   partition: input
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "138a38ee-c661-8db9-b5ae-328f797db2e9"
+  computationUuid: "7345fa76-bc41-8a1b-a8ea-6e3b754269b5"
   stages:
     - stage: path
       stageUuid: "2eb3f114-f35c-8e11-9713-7cf4e2a27c73"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "4c696760-a6a8-8271-9986-734b5c882f38"
     - stage: horo
-      stageUuid: "91a1c740-0da8-88b0-8afc-0c97b3d6a49a"
+      stageUuid: "7c602a98-dea4-8727-8ed8-fd2fe0499aeb"
     - stage: seal
       stageUuid: "67e55c1a-a68d-887d-834c-5b23127b8cc0"
     - stage: uuid
-      stageUuid: "88acee02-b492-854c-93c6-cfb7ade5d0ea"
+      stageUuid: "7d11c941-aec7-8561-b3d6-e9dee3d99084"
 version: 2
 ---
 # input — the user is helped, never interrogated

@@ -2,11 +2,11 @@
 name: folder
 description: "Use when reasoning about folder — The user's standing command, made a gate: **every atom is ONE generic lowercase word, and a code folder holds only its trinity** — (the word), (the matter), (the proof) — plus the"
 atomPath: "law/folder"
-coordinate: "law/folder · 5/round · 805968ba"
-contentUuid: "f0a6d267-f5f0-5e01-9cf2-f251c8afe0f1"
-diamondUuid: "9025565a-671b-85f7-a631-eba0c8b5e0e4"
-uuid: "805968ba-8d17-8577-a8c8-e63bf13d3b1a"
-horo: 5
+coordinate: "law/folder · 7/descent · 43a541ae"
+contentUuid: "fc58e2f4-e3de-5385-a184-31e8337f5f79"
+diamondUuid: "5c49afad-3893-8570-b2d9-a045829b1e4c"
+uuid: "43a541ae-37df-86a3-a5be-bd71f8aa0c0d"
+horo: 7
 typography:
   partition: law
   bondDegree: 67
@@ -16,7 +16,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "12dea20c-d664-8d93-8773-5dd458227c36"
+  computationUuid: "a5b44767-97b5-841e-9bef-d54b030239a0"
   stages:
     - stage: path
       stageUuid: "f28108c6-1ce0-8589-b842-ae6753d414dd"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "7049a6ef-dacc-890f-bd3e-e074422a9cd0"
     - stage: horo
-      stageUuid: "e21f8391-758b-81df-8933-ed48f4bb91f2"
+      stageUuid: "ec714877-6aa1-8535-8ac2-491fc13677ec"
     - stage: seal
       stageUuid: "153e3840-0d88-89c5-8878-a67dbb4d19fd"
     - stage: uuid
-      stageUuid: "7bd5714b-7ef3-8a3e-8fd9-a0d45657e4f1"
+      stageUuid: "63e7724c-bfed-8aac-a556-d698cc009322"
 version: 2
 ---
 # folder — the folder-shape law

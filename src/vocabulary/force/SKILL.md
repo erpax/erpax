@@ -2,10 +2,10 @@
 name: force
 description: "Use when reasoning about force as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/force"
-coordinate: "vocabulary/force · 7/descent · b4487063"
-contentUuid: "0c93648c-62d4-55ef-9420-7f50af9bff87"
-diamondUuid: "54b5717f-99b7-86eb-a506-ee99745b8975"
-uuid: "b4487063-0b63-84ae-a85b-810039819eb5"
+coordinate: "vocabulary/force · 7/descent · 18b25edc"
+contentUuid: "cad5ee41-baf9-5888-98a6-5c8c8785a405"
+diamondUuid: "54c94d9c-3cfa-8c84-b4c6-9cb933170654"
+uuid: "18b25edc-35f4-89cf-ab2d-0a23917fd563"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9f35d442-2566-88fc-b72d-0bc3972ec21d"
+  computationUuid: "ee151212-c32e-803f-863c-f16511c5e550"
   stages:
     - stage: path
       stageUuid: "f4f85a9a-d9bc-82db-b19c-00ba171102e6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6f3f7d45-dbf1-8e64-abd8-c2671d3c0e10"
     - stage: horo
-      stageUuid: "da76f299-a2ec-8964-aa27-3fe3526ccf35"
+      stageUuid: "b3d07708-c25e-89ea-88d3-1616198f3f1c"
     - stage: seal
       stageUuid: "460f6d49-238a-89a0-a29e-f27f0f6e764f"
     - stage: uuid
-      stageUuid: "765103cc-511b-8294-a4c9-213ad8606057"
+      stageUuid: "abed8ec4-b119-8832-9fa9-6a67625dcbf8"
 version: 2
 ---
 # force

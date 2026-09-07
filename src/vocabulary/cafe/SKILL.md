@@ -2,11 +2,11 @@
 name: cafe
 description: "Use when reasoning about cafe as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/cafe"
-coordinate: "vocabulary/cafe · 1/base · 9cd8652f"
-contentUuid: "9dec8c47-a91b-562f-af97-8e0fae4ff911"
-diamondUuid: "d5ad00a2-e242-8b3a-adcc-2fc312dbbfba"
-uuid: "9cd8652f-d6d8-8c4f-b621-a299fd31fb52"
-horo: 1
+coordinate: "vocabulary/cafe · 5/round · d2abffd4"
+contentUuid: "2167fa17-6575-5602-9231-f6d5606d076b"
+diamondUuid: "32d2d3dc-a8b3-841a-947c-2b22ad124a01"
+uuid: "d2abffd4-23c2-8bcf-8394-29eb00ae94e1"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4fe4825b-42c3-8616-8aaa-55343a1f8efd"
+  computationUuid: "30356506-b126-82e3-9003-991905ac1672"
   stages:
     - stage: path
       stageUuid: "7f54ce6f-9238-8abc-8a61-abd9239731b7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "08893992-51fa-8ace-815b-906594f72acf"
     - stage: horo
-      stageUuid: "9d93a814-fd26-8881-bb23-4f8511ca6d04"
+      stageUuid: "4fc38e66-7ed5-848b-b284-718da8737ae9"
     - stage: seal
       stageUuid: "723c9e1e-c82e-88df-993b-36ab79e066bc"
     - stage: uuid
-      stageUuid: "5149775e-d8f5-820c-9b30-6070dac19551"
+      stageUuid: "75dd6dc2-6e97-8a79-9b09-ce6f196f2d66"
 version: 2
 ---
 # cafe

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ignore",
-    "uuid": "d5c93d34-f19a-847f-85a2-94b45f63c880",
+    "uuid": "c528340c-79ae-8ac6-bfce-7311e68297f9",
     "words": [
       "ignore"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about ignore as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "d79affb9-8a15-8309-ac18-442badfe4903",
+    "uuid": "3d625a72-3e1f-8b03-b124-f10be59fd92a",
     "words": [
       "use",
       "when",

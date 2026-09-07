@@ -2,18 +2,18 @@
 name: market
 description: "Use when reasoning about why a market is small or how to grow it — a market is the PRODUCT (not the sum) of its atoms, so the near-zero atom caps the whole and growth means finding the zero atom and lifting it. Trendsetters are the operator that flips the social-status sign and seeds awareness; convenience lowers friction but decays status (coupled, opposite sign), so you harvest status at high friction then lower friction for the majority — the breath, run on demand."
 atomPath: "vocabulary/market"
-coordinate: "vocabulary/market · 4/weave · 85907334"
-contentUuid: "ce269e1d-ef14-5f05-8fcd-84ca51c93345"
-diamondUuid: "0a20df03-6a76-8269-a179-7b0c75964f27"
-uuid: "85907334-dc4f-81c9-b566-493091fa0806"
-horo: 4
+coordinate: "vocabulary/market · 5/round · c3a102a1"
+contentUuid: "ab7aca71-71d7-5280-b6a9-7992893daa4e"
+diamondUuid: "a6ec1d99-0100-84c1-a0b0-7bb05caaed26"
+uuid: "c3a102a1-de93-8d6a-ab05-ce6f707ec8cf"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 98
 standards: []
 bindings: []
 signatures:
-  computationUuid: "181c188d-1d99-8d94-941a-39a0d5a1b6dc"
+  computationUuid: "2b368e71-a4b5-8c6f-b7cb-c50d28165ca2"
   stages:
     - stage: path
       stageUuid: "134b4ef9-02ba-88cd-8b77-af0bf2ad6eb2"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "56cd0f7f-d147-81f9-8808-5eae59d13ca5"
     - stage: horo
-      stageUuid: "cf95ab93-b368-809a-b808-8b43b2816019"
+      stageUuid: "48ec502c-0678-86c2-b01e-1c36d17b72f7"
     - stage: seal
       stageUuid: "8696603a-5b17-824f-915a-15fbadc75630"
     - stage: uuid
-      stageUuid: "381c92e5-a667-8f4c-a9c7-a334aae1731e"
+      stageUuid: "53db96d7-63ef-8370-81e6-cc5525d1b63f"
 version: 2
 ---
 # market — the emergent whole where desire meets supply (a product of atoms)

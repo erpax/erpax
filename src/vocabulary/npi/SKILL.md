@@ -2,11 +2,11 @@
 name: npi
 description: "Use when reasoning about npi as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/npi"
-coordinate: "vocabulary/npi · 1/base · e25222b7"
-contentUuid: "3ffb1e1b-015f-558f-95a8-e21a2f7c8944"
-diamondUuid: "1653c661-441a-882d-8f6f-b60d82eb35a8"
-uuid: "e25222b7-b821-8a8e-b4aa-c2dd3607fc12"
-horo: 1
+coordinate: "vocabulary/npi · 4/weave · 9ccc7699"
+contentUuid: "361b8e48-5d73-53c2-b0d8-63116652e78e"
+diamondUuid: "30fbaba4-9500-8540-9517-f49663480ebe"
+uuid: "9ccc7699-8d43-8164-b5fa-6fbc43e1ffb1"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c76b33c6-bc9e-8dd3-ae99-e11ee67e5f2f"
+  computationUuid: "fe7479f1-1745-8fff-a71a-6a04b4602d4b"
   stages:
     - stage: path
       stageUuid: "6409cf3e-3022-8dcc-ab27-bfd926c13725"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ad17fc4c-0f0f-872d-b60c-f0d36f3ef5f0"
     - stage: horo
-      stageUuid: "aeb92374-d2e3-8b27-b9b2-5361ff2f90f1"
+      stageUuid: "21cefc75-dbc3-8932-8d49-2419c494095f"
     - stage: seal
       stageUuid: "a4b77e36-7ce2-87a5-b41a-2d0af3374694"
     - stage: uuid
-      stageUuid: "7a302f67-7920-8583-9e6a-6dd2d93d6638"
+      stageUuid: "da653054-0048-85bf-ae55-7062f81897e2"
 version: 2
 ---
 # npi

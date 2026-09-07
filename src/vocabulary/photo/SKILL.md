@@ -2,11 +2,11 @@
 name: photo
 description: Use when reasoning about photo — A photograph of this place.
 atomPath: "vocabulary/photo"
-coordinate: "vocabulary/photo · 7/descent · 4106f489"
-contentUuid: "4d6a1c10-c296-5bbd-b83a-220c7cb28b28"
-diamondUuid: "9062996e-8140-865d-9331-7a8add2d3dd3"
-uuid: "4106f489-47ae-80a9-bdf4-4449f0a9f01f"
-horo: 7
+coordinate: "vocabulary/photo · 2/share · a5438798"
+contentUuid: "b0241f3f-bc21-5a33-a791-f571523bd5a2"
+diamondUuid: "4580e9ac-b168-80cd-a153-3f30966d1055"
+uuid: "a5438798-be20-89ae-81c4-bfbc27b0f6f4"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8d363f58-482e-8bda-ab9a-b7abeaf90bf2"
+  computationUuid: "14256e65-00bf-8a85-b1bd-04a3bfb33b5b"
   stages:
     - stage: path
       stageUuid: "83e2643c-53cc-8322-a636-ac5279fdd9d9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bb77ad8f-2874-8046-b9b9-292570c55afa"
     - stage: horo
-      stageUuid: "0941d8eb-8b47-8867-819b-5dd3ed6c4f33"
+      stageUuid: "37ddf644-712b-8e92-86c1-e8b52b1f1555"
     - stage: seal
       stageUuid: "e4ba1fd5-63c5-85c1-bb0d-2213d74ee443"
     - stage: uuid
-      stageUuid: "4e3101c6-60fe-80d6-95a4-a0aa8f1878e7"
+      stageUuid: "8437deb2-f12f-8498-994b-7da79e35a528"
 version: 2
 ---
 # photo

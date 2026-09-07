@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bank",
-    "uuid": "0ea03153-d16b-874f-af67-62c0dde479dd",
+    "uuid": "e977fe82-5767-8e4b-9158-26df3831c6ab",
     "words": [
       "bank"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about bank — Use for open-banking / PSD2 / banking-rails APIs by country (account information, payment initiation, aggregators). The banking slice of the country-authority registry.",
-    "uuid": "613734b9-8ef9-8316-a839-0e4fe7464d24",
+    "uuid": "43354e6d-36fa-80e5-b52c-266e7d678f78",
     "words": [
       "use",
       "when",

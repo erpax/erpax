@@ -2,11 +2,11 @@
 name: bio
 description: "Use when reasoning about bio as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/bio"
-coordinate: "vocabulary/bio · 2/share · d10ff184"
-contentUuid: "09d3529d-bfd2-5976-8790-ccbf1343f94b"
-diamondUuid: "be27f6be-cffe-821c-a816-2050674e60ea"
-uuid: "d10ff184-ecef-8d3c-a552-fe0abfe7b0cd"
-horo: 2
+coordinate: "vocabulary/bio · 8/crest · 47f880ad"
+contentUuid: "a0a2ab9f-c5a9-5a1e-9561-c51b09757703"
+diamondUuid: "c7c0cc6a-7027-87e5-9f79-666080018de7"
+uuid: "47f880ad-f068-81dd-b0fb-dece212c22f9"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 50
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a8ce4e0e-211f-8aa1-a39a-2ae4db65e9e1"
+  computationUuid: "cd937dfa-3757-8e8b-ac9e-1a402d0e4a6f"
   stages:
     - stage: path
       stageUuid: "76dbaf75-0b26-8aac-93e1-95435048e333"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d4c83873-04bd-881b-bf1f-926b919d6061"
     - stage: horo
-      stageUuid: "fb6e0446-cf9a-8531-8c25-347786846f45"
+      stageUuid: "8fec942b-82ed-8fab-bccb-5fc2129c4655"
     - stage: seal
       stageUuid: "815a685f-91c9-829c-befe-87f1b8496677"
     - stage: uuid
-      stageUuid: "e38e82f2-17cd-8e5e-ad2e-1f5f882e5a33"
+      stageUuid: "95a80452-2658-83ab-b151-7d23c322bb0b"
 version: 2
 ---
 # bio

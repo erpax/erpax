@@ -2,10 +2,10 @@
 name: row
 description: "Use when reasoning about row as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: row
-coordinate: "row · 2/share · 81c5f1f6"
-contentUuid: "e14ccc3a-c387-5cbd-b1af-5d2f5adc9e61"
-diamondUuid: "f5718cf5-3b6e-88e3-950a-3c4054279716"
-uuid: "81c5f1f6-2c8e-8dbd-91a0-5e563fc3233c"
+coordinate: "row · 2/share · 1ff5b813"
+contentUuid: "13eb3cde-1cda-5042-a6a2-4704673a2927"
+diamondUuid: "91234d20-2a2f-82c2-8297-dd63ae800eba"
+uuid: "1ff5b813-8d68-8453-b6d1-de78945f5c2e"
 horo: 2
 typography:
   partition: row
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e4bb909b-e515-82ba-9c20-d09ca3ea3721"
+  computationUuid: "36bc1284-4eaa-8198-ba07-6d501db7ff03"
   stages:
     - stage: path
       stageUuid: "a1c1d2d0-2abf-8290-b146-2bf1c1fa80d2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3d0ed64d-0ae7-8d88-99d2-dc2ca19844db"
     - stage: horo
-      stageUuid: "5ba45aee-61e9-899e-8e3f-eabc0c572e6d"
+      stageUuid: "1bcbba49-e48d-8a79-a866-eea8f7b67976"
     - stage: seal
       stageUuid: "46eba723-e20b-89c2-a451-b5530111717b"
     - stage: uuid
-      stageUuid: "df428259-9360-8208-9715-57dcac36d0bb"
+      stageUuid: "435905a4-ce1f-8141-8996-9e1140a8d7a8"
 version: 2
 ---
 # row

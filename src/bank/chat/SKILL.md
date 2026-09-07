@@ -2,11 +2,11 @@
 name: chat
 description: "Use when banks chat FI↔FI — BIC sessions, QuantumSecureEnvelope (classical⊕FIPS 203/204), collaborate@2f+1; holds=isApprovedPqc∧digests; verify fail-closed until liboqs."
 atomPath: "bank/chat"
-coordinate: "bank/chat · 7/descent · 4d3ffa36"
-contentUuid: "e4283f06-8789-58fe-95a3-9abe31802bd0"
-diamondUuid: "5ef7198d-dfbc-8c8a-9a4f-8441f03cecb7"
-uuid: "4d3ffa36-3988-8f44-a73a-ed3249d0d093"
-horo: 7
+coordinate: "bank/chat · 4/weave · 3dbc3471"
+contentUuid: "96448d89-8887-50f8-9924-95bcf6f3f6d9"
+diamondUuid: "61d93917-cdad-82d6-9f42-92a3f6f2b71d"
+uuid: "3dbc3471-7006-871d-a396-c363a853b642"
+horo: 4
 typography:
   partition: bank
   bondDegree: 161
@@ -18,7 +18,7 @@ standards:
   - "NIST FIPS 203 ML-KEM · FIPS 204 ML-DSA"
 bindings: []
 signatures:
-  computationUuid: "c10c3ca5-8e04-84ff-8422-908484075e9a"
+  computationUuid: "872d9876-f52a-8ed0-922c-c82bdc1e6061"
   stages:
     - stage: path
       stageUuid: "97871e4e-cf51-8e98-9816-3ccb3586340d"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "aa542098-0da7-8431-877a-b05b1e0f6a0e"
     - stage: horo
-      stageUuid: "b20d20ad-5b04-8f82-833c-2699b9a3ed48"
+      stageUuid: "c1f4ee82-3f10-8e7c-8de5-8b1533a49760"
     - stage: seal
       stageUuid: "3d6b16ad-a04c-8ce8-a89e-45782e7c1542"
     - stage: uuid
-      stageUuid: "801e6049-56ab-81c7-ba7b-925a33d7da5c"
+      stageUuid: "da695ac0-287f-8ae2-b3e6-b64cc2887d66"
 version: 2
 ---
 # bank/chat

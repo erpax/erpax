@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bypass",
-    "uuid": "2cd0c6c6-2dd3-86f7-b2d0-f583e6679dfb",
+    "uuid": "75bd3229-c8ff-8e31-b78f-8206ea425c59",
     "words": [
       "bypass"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking that a request-reachable handler cannot disable access control silently — Payload's Local API defaults to overrideAccess:true, so bypass is the ambient condition a route inherits by writing nothing. Judges only src/app, because a hook or seed is not routed; a bypass named in a comment is prose, not a use. Baseline is a theorem at zero: one handler bypasses and it authenticates first, so there is no threshold to raise as the corpus grows.",
-    "uuid": "0834a8d0-74a1-8a95-8dd2-50e1efeae80f",
+    "uuid": "79aca7e0-c922-8a1e-86be-50a471bffb24",
     "words": [
       "use",
       "when",

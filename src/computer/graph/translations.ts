@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "graph",
-    "uuid": "0d1eb3d9-f030-8a76-8564-eb5d83bb5b93",
+    "uuid": "68b2b8e2-514f-8671-bcc6-79a5bf64e3bb",
     "words": [
       "graph"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when traversing corpus bonds as a directed graph — matrix adjacency under computer; executable not glossary.",
-    "uuid": "e1477db0-bce6-8beb-8f94-c5e4a1fb211c",
+    "uuid": "3c07ad0b-84f2-8782-97c6-040ccabb45da",
     "words": [
       "use",
       "when",

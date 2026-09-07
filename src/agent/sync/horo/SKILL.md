@@ -2,10 +2,10 @@
 name: horo
 description: "Use when reasoning about horo — horo — a whole tribe (a `team`) joins the society circle."
 atomPath: "agent/sync/horo"
-coordinate: "agent/sync/horo · 5/round · ce2564f6"
-contentUuid: "0c6a746f-3fae-5e1c-bd58-8f950bcbae9d"
-diamondUuid: "7d79fcab-2b9b-8ece-b365-3837a589b897"
-uuid: "ce2564f6-e478-83da-827b-a3682fa086c6"
+coordinate: "agent/sync/horo · 5/round · 1d79ae78"
+contentUuid: "c8cbaaea-349c-5407-9636-a8a0c127f783"
+diamondUuid: "194289b5-2b88-83c5-b05a-ad47a5d33e24"
+uuid: "1d79ae78-a3b6-81ea-afbd-0abb84e1c560"
 horo: 5
 typography:
   partition: agent
@@ -20,7 +20,7 @@ standards:
   - "W3C-ActivityPub"
 bindings: []
 signatures:
-  computationUuid: "79f9a9cb-88a1-85b6-a0fe-b9ca3d9ba5a1"
+  computationUuid: "8304c51b-5817-859c-a2b8-ae3cbd0f7767"
   stages:
     - stage: path
       stageUuid: "660dd519-c090-8114-a8dd-a7487e5a3445"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "d993a55f-d028-8ec8-acd3-f813f4f8078e"
     - stage: horo
-      stageUuid: "7f0f08a0-7b91-815f-8b44-fc1379d9fe0f"
+      stageUuid: "8bb518cd-09c5-8bf6-a9ce-bcaed4e8069e"
     - stage: seal
       stageUuid: "f4641beb-297e-8371-98b9-982af3ce4628"
     - stage: uuid
-      stageUuid: "7bb4d717-423b-8804-984f-3b6a8bcb4514"
+      stageUuid: "f5e1776c-4052-8b1f-91ee-62de7b2e5ada"
 version: 2
 ---
 # agent/sync/horo

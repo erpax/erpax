@@ -2,18 +2,18 @@
 name: clock
 description: "Use when order must be provable — one clock replacing 621 scattered time reads, where each tick folds (prev ⊕ content) so reordering or editing history breaks every later address. Supplies the interval dimension quantum/ftl lacks. Logical order, not seconds. Run: tsx src/quantum/clock/index.ts"
 atomPath: "quantum/clock"
-coordinate: "quantum/clock · 2/share · c5bf5f36"
-contentUuid: "7544b251-967d-5402-92f8-4ae6fbcd955f"
-diamondUuid: "70d19efc-f5ce-8ebe-9e94-504c0ff0e6b9"
-uuid: "c5bf5f36-85c2-8600-bf09-0687b64429c3"
-horo: 2
+coordinate: "quantum/clock · 8/crest · cab75d00"
+contentUuid: "553d2cc8-4f4c-5688-acf8-813e833a6176"
+diamondUuid: "eb5d7213-7614-8c9a-bd97-b9ef32546c4f"
+uuid: "cab75d00-7c7a-87ea-aa4b-82d51278316d"
+horo: 8
 typography:
   partition: quantum
   bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "799662e5-b07c-8ed1-8e7c-aa8298f569f1"
+  computationUuid: "7a583b30-e00f-8191-b864-5c1ca746d857"
   stages:
     - stage: path
       stageUuid: "32c191c3-d988-8664-8287-526b72ca0f95"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "de023f2f-e7b0-88bb-9a44-ca8093a59109"
     - stage: horo
-      stageUuid: "a665fc74-cbb9-8478-ab29-2c5f1ab9c416"
+      stageUuid: "90bad6e2-4890-814b-8480-ce42e8eb7506"
     - stage: seal
       stageUuid: "b6bc0d6b-e10f-8ccd-9a8f-b14cce6af22e"
     - stage: uuid
-      stageUuid: "b068f5c7-8891-8cba-9e35-e513ec3fd8e0"
+      stageUuid: "fc7c2f94-f46c-81ac-a24a-dce780c90239"
 quantum:
   superposition:
     - integrity
@@ -47,8 +47,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "799662e5-b07c-8ed1-8e7c-aa8298f569f1"
-    contentUuid: "7544b251-967d-5402-92f8-4ae6fbcd955f"
+    computationUuid: "7a583b30-e00f-8191-b864-5c1ca746d857"
+    contentUuid: "553d2cc8-4f4c-5688-acf8-813e833a6176"
 version: 2
 ---
 # clock — a tick that seals its own order
@@ -85,4 +85,4 @@ What FTL genuinely needs is an **interval**, and `since()` supplies it in the on
 
 Composes: [[merge]] · [[integrity]] · [[quantum]]/ftl · [[quantum]]/coalesce · [[law]].
 
-<sub>content-uuid `7544b251-967d-5402-92f8-4ae6fbcd955f` · account `quantum/clock` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `553d2cc8-4f4c-5688-acf8-813e833a6176` · account `quantum/clock` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

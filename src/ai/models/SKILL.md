@@ -2,10 +2,10 @@
 name: models
 description: "Use when registering, routing, or auditing the AI model fallback catalog — provider/capability/tier per model, EU AI Act risk class, EU-hostable flag for data-residency, feature-guarded dispatch. The admin-editable expert-catalog the router dispatches over when the deterministic core cannot decide alone."
 atomPath: "ai/models"
-coordinate: "ai/models · 2/share · ae5662ab"
-contentUuid: "a8655640-3ae6-5dda-8994-5bb856207d1a"
-diamondUuid: "c0e1d042-1321-8827-83f1-fab3658a0efa"
-uuid: "ae5662ab-8c27-8e80-b306-377047405535"
+coordinate: "ai/models · 2/share · 155b6263"
+contentUuid: "1159947e-2bb3-5b46-a275-b1ae8fb12a39"
+diamondUuid: "e52ff742-889b-8d84-9f6f-59d6f7ad8f7a"
+uuid: "155b6263-363d-805f-92ab-a2f5ddc72c98"
 horo: 2
 typography:
   partition: ai
@@ -22,7 +22,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "2926ce79-d056-8eef-b07d-25c01b5ca4c3"
+  computationUuid: "bc03b107-9ad6-8225-9148-a37db2f0f6fa"
   stages:
     - stage: path
       stageUuid: "e78584f2-055b-8136-92e8-38ff817ccfff"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "0a452723-ea35-8e29-8601-557d35b1db33"
     - stage: horo
-      stageUuid: "07508a23-65e4-8ed1-be74-662842e4d5a5"
+      stageUuid: "f86cc947-77ad-893c-8a17-f1ea38d640bb"
     - stage: seal
       stageUuid: "fe7a8370-28bb-8d23-9e5b-df34a5b131b6"
     - stage: uuid
-      stageUuid: "8ac612bf-2931-8f29-be3a-e3b2d511cab8"
+      stageUuid: "c58ae20f-d715-8e20-8073-a9687f24fe64"
 version: 2
 ---
 # ai-models

@@ -2,11 +2,11 @@
 name: calendars
 description: "Use when resolving a GL posting date to its fiscal year, period, quarter, week, or regulatory SAF-T code — pre-computed O(1) date-to-period lookup table bulk-generated from FiscalPeriods config per IAS-34 / ISO-8601 / SAF-T 3.0.2. The denormalized fiscal-calendar lookup collection."
 atomPath: "legal/entities/fiscal/calendars"
-coordinate: "legal/entities/fiscal/calendars · 7/descent · 9df26660"
-contentUuid: "cb697ea7-a14a-5607-a7f7-4d1a938079f2"
-diamondUuid: "e048c517-759d-8636-ae57-7a8b4fa4fc85"
-uuid: "9df26660-ba23-8b47-93cc-7b25cb12dc94"
-horo: 7
+coordinate: "legal/entities/fiscal/calendars · 5/round · 55d67613"
+contentUuid: "3ad0c69e-fa0a-5204-8d5f-c08023187294"
+diamondUuid: "801fe6ac-016b-8947-a7ba-b9a892f4853e"
+uuid: "55d67613-032d-88e9-944f-edb792afa391"
+horo: 5
 typography:
   partition: legal
   bondDegree: 21
@@ -30,7 +30,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "ba31e4bd-1820-89f0-931e-e25fe11598ca"
+  computationUuid: "57ef4aca-e2b3-8ff6-8fb2-b9c4fcbaa5b1"
   stages:
     - stage: path
       stageUuid: "194b72e6-3476-805f-acaf-92825fc69768"
@@ -41,11 +41,11 @@ signatures:
     - stage: links
       stageUuid: "e30f10c4-368f-84eb-8d94-1ae7e6fed2ce"
     - stage: horo
-      stageUuid: "a6a37355-7258-889d-be9d-57704feebcab"
+      stageUuid: "6c14810e-ff06-8888-a440-2a8ecceae800"
     - stage: seal
       stageUuid: "f25c31be-dd7e-8191-8dbc-24766d6c0875"
     - stage: uuid
-      stageUuid: "e9664534-1c7f-8193-b85f-93ee111b0a04"
+      stageUuid: "83a5c9d8-b6c6-8b37-8099-0ef429b32dcd"
 version: 2
 ---
 # fiscal-calendars

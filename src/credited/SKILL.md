@@ -2,10 +2,10 @@
 name: credited
 description: "Use when reasoning about credited — The group the release is credited to if different than the byArtist. For example, Red and Blue is credited to \"Stefani Germanotta Band\", but by Lady Gaga."
 atomPath: credited
-coordinate: "credited · 4/weave · 4d6b6f44"
-contentUuid: "f2b1a52d-b163-5add-acda-2d16c07b5257"
-diamondUuid: "21b71723-42ac-816c-bd44-0e7f3037493e"
-uuid: "4d6b6f44-87aa-806d-a385-bb169af2bbc1"
+coordinate: "credited · 4/weave · 447cf484"
+contentUuid: "8d860e84-18d7-5314-9f4d-dbb2001bf6d1"
+diamondUuid: "db1ec635-0c62-882f-aa39-b9524d93e803"
+uuid: "447cf484-6a6d-8cd0-b84f-4d67a242c321"
 horo: 4
 typography:
   partition: credited
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f8ab4112-e43f-81de-bedf-3fa20be878a8"
+  computationUuid: "22a409e7-1f02-818d-9394-c16f492cb61c"
   stages:
     - stage: path
       stageUuid: "b4a7e4e8-b2cf-8f3f-8eb2-8260b0d8efbd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "69c6052c-b407-8f70-bc05-4f34e3f9c1ca"
     - stage: horo
-      stageUuid: "77701d8e-135e-8669-8bc2-39eed88e65c6"
+      stageUuid: "e03c3007-6b0b-841e-8ac2-8d706c0313a1"
     - stage: seal
       stageUuid: "7155bd29-1cea-8b40-8bfd-21a0013099fa"
     - stage: uuid
-      stageUuid: "5aa950ea-7333-8ffb-94ea-4108fef6d426"
+      stageUuid: "76fbe063-f73f-8fd7-91a8-d0560fb8b989"
 version: 2
 ---
 # credited

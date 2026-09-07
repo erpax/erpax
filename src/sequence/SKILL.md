@@ -2,11 +2,11 @@
 name: sequence
 description: "Use when navigating or composing the erpax Payload single-word skill library — to find the right atomic skill, understand how they interact (with each other, themselves, and external systems), or in what order to apply them. The index over the basic skills, ordered 0·3·6·9·1·2·4·8·7·5."
 atomPath: sequence
-coordinate: "sequence · 7/descent · 517b46de"
-contentUuid: "ffd452f2-e22b-5715-a60d-83ef57a88db2"
-diamondUuid: "68ab3da8-159b-8cf8-bcde-f9ae15432660"
-uuid: "517b46de-ebd8-8770-9b03-8eb22c4165f6"
-horo: 7
+coordinate: "sequence · 4/weave · 647e959b"
+contentUuid: "8de738d7-faec-5936-beb1-ac47c7345822"
+diamondUuid: "0b619750-98d0-8202-a679-595428e3ad24"
+uuid: "647e959b-3927-8c69-a3b1-d7bca06b406d"
+horo: 4
 typography:
   partition: sequence
   bondDegree: 421
@@ -14,7 +14,7 @@ standards:
   - "ISO-8601-1`"
 bindings: []
 signatures:
-  computationUuid: "ad0d5ff5-7818-817c-986e-f0f01c72a3ec"
+  computationUuid: "3f3a80c6-09bd-8f51-aa76-0794a393ff8e"
   stages:
     - stage: path
       stageUuid: "c906b7d3-c650-8d8d-bbdc-77f8865290f5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a88cc173-a239-8d8c-8c3b-ac47b8f210b9"
     - stage: horo
-      stageUuid: "a0b17380-c237-884b-9c50-2a8fd43b1603"
+      stageUuid: "90d1379f-2e06-898f-82d8-84754adb94e8"
     - stage: seal
       stageUuid: "34946a96-0e05-8857-9a80-800b750d87e1"
     - stage: uuid
-      stageUuid: "b5f22ff4-aaf0-8d90-b17e-80b25bfbd113"
+      stageUuid: "52236c15-3e6d-8da0-a894-a6518a6553bf"
 version: 2
 ---
 # sequence — how the atomic skills compose

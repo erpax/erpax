@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "text",
-    "uuid": "0957bbb2-2f33-803a-855d-ba127fece630",
+    "uuid": "1cda9e56-b1a1-81df-9d0a-7f6f35e584d3",
     "words": [
       "text"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about text — Lexical's serialized state becomes a React tree here. Most of that is the library's own default converters; what this atom decides is the small part the library cannot know.",
-    "uuid": "899ff5e8-a246-816a-9be8-3451475a51db",
+    "uuid": "47389edb-d851-8fa1-945c-63fa48031534",
     "words": [
       "use",
       "when",

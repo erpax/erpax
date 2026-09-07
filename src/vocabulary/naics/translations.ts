@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "naics",
-    "uuid": "b4337887-0474-8605-a724-b7303617684a",
+    "uuid": "0729d48e-c3e8-81bd-86b0-8b25426dfd5c",
     "words": [
       "naics"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about naics — The North American Industry Classification System (NAICS) code for a particular organization or business person.",
-    "uuid": "e76aa8ad-0045-8228-95be-63590ce3b0b1",
+    "uuid": "617ebeed-bdce-83be-9689-1d6d34134af8",
     "words": [
       "use",
       "when",

@@ -2,18 +2,18 @@
 name: planting
 description: "Use when output is spread across the season by staggered sequential sowings — succession planting: number of plantings (sowings) and number of harvests (pickings) are the two scheduling levers that replace one glut with a continuous supply. The interval between sowings ≈ one planting's picking window; total seasonal row-length divides evenly across the plantings to size each sowing and its seed order."
 atomPath: "vocabulary/planting"
-coordinate: "vocabulary/planting · 7/descent · 709021c1"
-contentUuid: "fe34cd9e-b889-5291-af79-f193cb57c068"
-diamondUuid: "71d48a20-4c23-8171-92ab-05b1651ef607"
-uuid: "709021c1-ea69-802a-95ad-8f3d91f98e27"
-horo: 7
+coordinate: "vocabulary/planting · 2/share · da1e1c0b"
+contentUuid: "f1a873ed-24d0-5df7-87da-efe773e2fcb0"
+diamondUuid: "b0b82a9a-c86b-878f-b547-eb72df9fd7e6"
+uuid: "da1e1c0b-693e-87ce-8f47-e63167a964b7"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 89
 standards: []
 bindings: []
 signatures:
-  computationUuid: "638b44f4-5406-80e2-8bdd-f4bb79736b20"
+  computationUuid: "9dc33f69-a090-8cdb-86af-cc2dbc4afd79"
   stages:
     - stage: path
       stageUuid: "a120ede5-9667-811c-ba9c-85e71b53b495"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e4fb5a9b-a1b9-8e7f-a1c8-d6deab4258d3"
     - stage: horo
-      stageUuid: "6e146a12-b482-865a-8033-af3930eb9a57"
+      stageUuid: "c1dbfff5-94b0-86a1-b398-acaa19b039ff"
     - stage: seal
       stageUuid: "a6e8bb5f-bf87-8f26-9888-ff52c82def6c"
     - stage: uuid
-      stageUuid: "cf0c3b04-f478-8834-9d2f-af7ad1a0138c"
+      stageUuid: "5f1a2f2e-3a75-8f59-8a84-2b093c41f9ba"
 version: 2
 ---
 # planting — a sowing instance; successions that spread the harvest

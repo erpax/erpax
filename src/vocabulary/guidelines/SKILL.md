@@ -2,10 +2,10 @@
 name: guidelines
 description: "Use when reasoning about guidelines as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/guidelines"
-coordinate: "vocabulary/guidelines · 8/crest · fc07a1a7"
-contentUuid: "7bdc94ae-26e3-51ee-8ebe-39726784764a"
-diamondUuid: "8bfba07c-0894-8e45-9033-11156a17bede"
-uuid: "fc07a1a7-7fe1-8513-9de7-9ed714639fcf"
+coordinate: "vocabulary/guidelines · 8/crest · be34e6e7"
+contentUuid: "d2c5aa2d-1b5a-5e03-9e7f-173b18272430"
+diamondUuid: "a50af89b-d5d8-8ed9-8ed6-0556c767fca7"
+uuid: "be34e6e7-4dc5-8051-9455-13e208af1993"
 horo: 8
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f39f3c02-e498-8e9c-ba08-37c95df21d8e"
+  computationUuid: "b8e65f18-46d1-8b78-9106-c9205c42ac34"
   stages:
     - stage: path
       stageUuid: "65ded602-5c13-8a45-89bb-40f44bfeda52"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "651a1afb-daf0-88eb-a9e3-24eecccd6e6a"
     - stage: horo
-      stageUuid: "5b6c70f2-051b-8db9-b56f-11a089488e8d"
+      stageUuid: "ebe628ff-57e3-85d8-bcae-effb1558ba94"
     - stage: seal
       stageUuid: "775497b1-3c7d-81a4-916b-4a4a3f173e8f"
     - stage: uuid
-      stageUuid: "1938d2c8-856c-89f7-9d51-a5bd11f8e05e"
+      stageUuid: "e57af0a9-d4be-87d6-a528-0c69ab26c270"
 version: 2
 ---
 # guidelines

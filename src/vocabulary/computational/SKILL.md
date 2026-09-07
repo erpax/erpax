@@ -2,11 +2,11 @@
 name: computational
 description: "Use when reasoning about computational as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/computational"
-coordinate: "vocabulary/computational · 7/descent · 1b4fba5d"
-contentUuid: "4294fba9-e31e-53b7-b2ab-b19491431d20"
-diamondUuid: "1f1135c9-20ce-8b1e-9ed6-36bd7980cc90"
-uuid: "1b4fba5d-7fe4-8131-ad63-fa6c4ce5169d"
-horo: 7
+coordinate: "vocabulary/computational · 2/share · 1e585aa0"
+contentUuid: "3f187f0f-d649-5ab3-a197-e74b99d0e891"
+diamondUuid: "f11912eb-9d32-83fc-86a0-186d3790407e"
+uuid: "1e585aa0-a1d2-8f9c-8a42-93b0aa96df53"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "69b9ca48-2973-8716-a1be-729fc1f402c8"
+  computationUuid: "256119e2-6112-8ee5-bd6a-78c5e265e10b"
   stages:
     - stage: path
       stageUuid: "757aeb0d-645b-8723-91ea-41326baf345c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3e4b29e1-9390-81a7-ac73-5ebf12b2a242"
     - stage: horo
-      stageUuid: "86800781-b480-8378-aa27-1b08f927594c"
+      stageUuid: "30ee2e46-cfd7-86a2-ba37-f803bc70124d"
     - stage: seal
       stageUuid: "f9272f51-5617-8240-b787-884a0a0f252b"
     - stage: uuid
-      stageUuid: "8b6821f0-dca9-8e53-8655-1695836d0671"
+      stageUuid: "36b38e9d-7472-80eb-877f-7854e35ce929"
 version: 2
 ---
 # computational

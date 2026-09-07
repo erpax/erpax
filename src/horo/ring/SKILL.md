@@ -2,18 +2,18 @@
 name: ring
 description: "Use when analyzing the ring's structure — which elements compose to what, which orbits exist, how trinities move under doubling, where each digit lives (ring / axis / void), and the split between balance (5) and attraction (9)."
 atomPath: "horo/ring"
-coordinate: "horo/ring · 5/round · 8e454baa"
-contentUuid: "1d523eb7-a4bf-5383-ab4e-6748bdd38efe"
-diamondUuid: "24bdc0f7-e9a9-8e97-985a-c0279231a389"
-uuid: "8e454baa-f14d-8f74-9d7e-1ab457bc43a3"
-horo: 5
+coordinate: "horo/ring · 4/weave · 0f45bdb4"
+contentUuid: "46c9ef75-4158-5090-9a6a-f9ca9dc380a6"
+diamondUuid: "a853008c-b33d-80aa-baab-74bb51002127"
+uuid: "0f45bdb4-54f6-80df-a3ca-c0898f99462e"
+horo: 4
 typography:
   partition: horo
   bondDegree: 6
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ab23d067-f8ca-8522-b2f1-4484bb2c104f"
+  computationUuid: "253d212d-7885-8728-99a6-7c645eb42cf0"
   stages:
     - stage: path
       stageUuid: "ac5c5170-6c62-8b8d-bde6-1c99554f1458"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "25da7233-d005-8127-94df-c2061b74709c"
     - stage: horo
-      stageUuid: "2d0f0404-df3c-8b33-a676-269f04f186cb"
+      stageUuid: "7dc0554c-c0ee-8eb7-8941-c16aee17470f"
     - stage: seal
       stageUuid: "e8404b29-e84a-89f8-894a-17b579613063"
     - stage: uuid
-      stageUuid: "3f4f4134-0b20-8be1-973b-deea58d7fd9d"
+      stageUuid: "29f45c2d-7795-8beb-aba8-182f31ef2e8f"
 version: 2
 ---
 # horo/ring

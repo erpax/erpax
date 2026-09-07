@@ -2,10 +2,10 @@
 name: cuisine
 description: "Use when reasoning about cuisine as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/cuisine"
-coordinate: "vocabulary/cuisine · 5/round · eb4a96e1"
-contentUuid: "6b7edd4c-495a-5ab2-a8d7-ce610349c08a"
-diamondUuid: "0418981a-cbdb-8571-a4c0-dfb0b2458d02"
-uuid: "eb4a96e1-6178-84a1-9837-a581bf264126"
+coordinate: "vocabulary/cuisine · 5/round · 4c69f47c"
+contentUuid: "db966fd3-efc4-5e80-ac16-2712873944ec"
+diamondUuid: "ee9ee66b-20b7-8fea-8305-6069a095d8bc"
+uuid: "4c69f47c-cd2c-846b-8e05-9d365b92de23"
 horo: 5
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4040e384-eed1-8ea4-87ec-897f2531278a"
+  computationUuid: "54ec3c79-36a8-83f5-a310-ef88b8ebe3ae"
   stages:
     - stage: path
       stageUuid: "d8fa4cd8-1963-82ae-8dab-2af2bec481f0"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "3eb27f5c-71ff-8faf-be48-9d5553b55341"
     - stage: horo
-      stageUuid: "57b2c90f-2ca9-80c8-9d22-cbe45c5e997f"
+      stageUuid: "5b8a53dc-c3a6-806d-9a3f-1509f881a98d"
     - stage: seal
       stageUuid: "895412fd-a233-8cce-a9af-0da99ed8ad51"
     - stage: uuid
-      stageUuid: "099f595e-c699-8de9-b3d8-c680068a026d"
+      stageUuid: "90ecd61d-5682-86ad-95fc-7c7a19517696"
 version: 2
 ---
 # cuisine

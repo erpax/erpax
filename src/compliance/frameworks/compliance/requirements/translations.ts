@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "requirements",
-    "uuid": "5ea08468-48d7-8114-9c86-dea488a80a74",
+    "uuid": "94dd1ed6-d44b-8652-a769-1bb54760a5a5",
     "words": [
       "requirements"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining or querying individual control obligations within a compliance framework — code, title, description, section, severity (critical/high/medium/low) — linked to a ComplianceFramework; super-admin-only writes, tenant-read. The per-requirement obligation register that ComplianceGaps reference.",
-    "uuid": "5faf56a2-659d-8c73-8b22-0338436df2b0",
+    "uuid": "917cc1d5-c6e5-8ceb-a789-dc1db218e98b",
     "words": [
       "use",
       "when",

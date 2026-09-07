@@ -2,11 +2,11 @@
 name: attendance
 description: "Use when reasoning about attendance — A schema.org component word, collided out of schema.org compounds — fused from EventAttendanceModeEnumeration · eventAttendanceMode (sti · collapse · merge)."
 atomPath: "vocabulary/attendance"
-coordinate: "vocabulary/attendance · 8/crest · cd878c1f"
-contentUuid: "c6503a29-d661-556f-9763-521e81fe3151"
-diamondUuid: "dbd8760f-fa22-8f62-a3f2-929cc0ee642a"
-uuid: "cd878c1f-edf3-879d-8572-35fc125c2dc5"
-horo: 8
+coordinate: "vocabulary/attendance · 4/weave · e9947a72"
+contentUuid: "de606313-1366-5df4-9dcf-f9bf78be7851"
+diamondUuid: "e6603588-0ff2-88ed-acea-f5a53470cc26"
+uuid: "e9947a72-23fa-827e-b8a4-b8c1f739b78c"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 30
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "67d6b195-085b-81a1-8bc3-348b792c24a6"
+  computationUuid: "b7c9b618-450c-83fd-8fa6-a297a5dd4a65"
   stages:
     - stage: path
       stageUuid: "ef7e303a-5fda-8894-8256-db4805f7ca68"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c78e5d8c-fa0c-8596-9b5d-ec218e508342"
     - stage: horo
-      stageUuid: "104276fd-ac7a-8e76-8674-50740ec6fdea"
+      stageUuid: "4983ec23-9236-8f1d-adaa-375ce3fbae81"
     - stage: seal
       stageUuid: "acea54cd-aac7-8074-b7f8-e2bdc48e4450"
     - stage: uuid
-      stageUuid: "4406281b-d802-85e8-b8e2-299e83801a27"
+      stageUuid: "5b20fc60-0b1c-8d5e-b374-515e4499439b"
 version: 2
 ---
 # attendance

@@ -2,10 +2,10 @@
 name: summary
 description: "Use when reasoning about summary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: summary
-coordinate: "summary · 5/round · d9ca1706"
-contentUuid: "a44f1130-575d-5c56-ad26-713bc474e82c"
-diamondUuid: "e502af77-83d5-8236-9290-13ebef9376cd"
-uuid: "d9ca1706-df1c-846e-9827-de02d7b7323d"
+coordinate: "summary · 5/round · 87750047"
+contentUuid: "109ea958-88e2-5d8d-b664-806e5ae4eaa6"
+diamondUuid: "ea8b064b-6f83-89ca-8b4a-2d496a2e100d"
+uuid: "87750047-26dd-8304-8816-a109790f4797"
 horo: 5
 typography:
   partition: summary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ac4773c9-1dbc-8ebd-bc98-c8fd2159646c"
+  computationUuid: "2b3aed44-9fac-8e95-be06-a47fc2578815"
   stages:
     - stage: path
       stageUuid: "c6089862-f271-8211-9e9e-00a2773975ba"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a3a878cb-bee5-8db0-b86a-d7bbc950d0fc"
     - stage: horo
-      stageUuid: "82668feb-a2cc-81a9-a75f-d1ddb58b4a6a"
+      stageUuid: "d42f88fd-3940-836a-8dfd-4d2eaaebcd15"
     - stage: seal
       stageUuid: "91c63d8d-ab05-857c-979d-bfb1a38b3be1"
     - stage: uuid
-      stageUuid: "682f4931-8fd0-8db0-b703-fa4f14562c9a"
+      stageUuid: "3337945f-4397-8a7f-b4e8-a112417060ab"
 version: 2
 ---
 # summary

@@ -2,18 +2,18 @@
 name: tillage
 description: "Use when soil is mechanically opened to make a seedbed, incorporate residue/amendments, or disrupt weeds — primary vs secondary tillage, the no-till/reduced-till spectrum, broadfork aeration, and weed-flush methods (stale seedbed, occultation/tarping, solarization). The ground-opening operation; its intensity is the soil-disturbance dial fertility and structure pay for."
 atomPath: tillage
-coordinate: "tillage · 8/crest · 888410af"
-contentUuid: "20dc48b9-e98f-582c-8fe0-e7316b5603b4"
-diamondUuid: "3e6961db-8fe2-886b-a4b3-53104c48ed12"
-uuid: "888410af-d392-8a0f-b62f-a22cfb1ea3ed"
-horo: 8
+coordinate: "tillage · 2/share · df0a533e"
+contentUuid: "931483c2-c452-5a2a-b691-c7071159929d"
+diamondUuid: "58cf7dcf-f1e5-8734-8fb2-7877f1514583"
+uuid: "df0a533e-5a96-8683-a97e-6c64fef10f01"
+horo: 2
 typography:
   partition: tillage
   bondDegree: 43
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9f357bfe-066a-81d1-bba3-54217dff1282"
+  computationUuid: "ee6c17e9-4e65-8ed7-8788-b32a22446ed6"
   stages:
     - stage: path
       stageUuid: "a2ebf464-a8dc-8c42-bb3e-5a4f0e0f001c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b5038de8-0662-8b88-a569-b70201942f0a"
     - stage: horo
-      stageUuid: "c8a5f0e8-7119-8ba7-9387-fcb6f3b8601f"
+      stageUuid: "4f9d793d-608b-886b-8bc4-3dbc20423902"
     - stage: seal
       stageUuid: "f25c9906-cdd0-8c87-8b03-1214aa3ce961"
     - stage: uuid
-      stageUuid: "ea6ec48f-0d35-8b91-a06b-c92f25a4852d"
+      stageUuid: "2b2f7c2b-fe33-875f-ad6b-185b3c24b48b"
 version: 2
 ---
 # tillage — opening the soil to make a seedbed

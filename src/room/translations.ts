@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "room",
-    "uuid": "0a3d465c-d6da-87f0-a31b-12950f14b97a",
+    "uuid": "93115cd1-6692-8691-845c-b2666b2ab088",
     "words": [
       "room"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about room — A room is a distinguishable space within a structure, usually separated from other spaces by interior walls (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/w",
-    "uuid": "dbd5ec9f-7b10-8aab-a1cf-ab2112135dcf",
+    "uuid": "b7073afd-e555-8aa7-839b-30537bebe8e3",
     "words": [
       "use",
       "when",

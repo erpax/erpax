@@ -2,11 +2,11 @@
 name: company
 description: "Use when reasoning about company as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/company"
-coordinate: "vocabulary/company · 4/weave · c72307d9"
-contentUuid: "028d405e-8146-5c59-adb7-b0e470b9e44f"
-diamondUuid: "ff10cf97-a921-84e5-ad81-2735b7104ab3"
-uuid: "c72307d9-a8c4-80a5-9cc0-c6e72dd38b5b"
-horo: 4
+coordinate: "vocabulary/company · 1/base · df30d44a"
+contentUuid: "ee0aaca3-fc7e-58b0-a6f0-9494aa7bd006"
+diamondUuid: "47a79f39-451a-8a91-9e76-f5f0da5982b1"
+uuid: "df30d44a-0db7-8334-a15c-bf1e0999e286"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "54650794-7160-8452-a90a-349eef57d1bc"
+  computationUuid: "6a3e9982-3e7f-8e21-b5a9-41e501b53dfd"
   stages:
     - stage: path
       stageUuid: "a3073476-ab7e-82fa-a7a7-8a5d5a8ced81"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9d746f61-d9bb-84e0-bbdf-0100ff9ac010"
     - stage: horo
-      stageUuid: "d3da866f-0417-89df-afda-9aef076c79aa"
+      stageUuid: "e4deae4d-d992-8fb5-982e-578db990033a"
     - stage: seal
       stageUuid: "f6585963-be69-8950-9d78-a492c96d2ae1"
     - stage: uuid
-      stageUuid: "a7498671-119b-8521-9264-9ce98a2b4aa0"
+      stageUuid: "85ae6386-944e-8920-9f88-ca860e228b58"
 version: 2
 ---
 # company

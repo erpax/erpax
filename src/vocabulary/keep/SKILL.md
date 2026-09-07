@@ -2,11 +2,11 @@
 name: keep
 description: "Use when reasoning about keep as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/keep"
-coordinate: "vocabulary/keep · 7/descent · 23dbeab4"
-contentUuid: "7fd920fd-577a-5d4d-8dd9-ae2712b6c534"
-diamondUuid: "6dd4b2bc-5804-88cd-9f88-a859f9d53ecc"
-uuid: "23dbeab4-e05a-8237-97ff-63c6119175b7"
-horo: 7
+coordinate: "vocabulary/keep · 4/weave · 83e343d5"
+contentUuid: "a5381844-aeee-5b47-af98-3ef9a1285544"
+diamondUuid: "1d1dc327-b4e1-8945-afe7-52996f0b0f02"
+uuid: "83e343d5-d5e8-8922-9234-e5304e44786b"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "cd1a3372-652c-84b9-8779-a0dc7bbd785c"
+  computationUuid: "13069723-8d98-846a-ad91-ee39059c50af"
   stages:
     - stage: path
       stageUuid: "f98f08f7-aa39-8b08-b111-593a72f23865"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "552dca09-15dc-8f60-9601-fa50fc2235d1"
     - stage: horo
-      stageUuid: "293fcd48-c772-8da1-9e15-ff03f7be97c6"
+      stageUuid: "1b0d8ead-61a9-828f-a13a-95e34e41bf3e"
     - stage: seal
       stageUuid: "cf0ffc93-2113-8a4c-9ce3-03f2bd1104a0"
     - stage: uuid
-      stageUuid: "5ffe1a33-d3e0-8d92-9cc6-32e42c88ce45"
+      stageUuid: "e80fccd2-5bc4-8872-956a-ec55b08b5b9a"
 version: 2
 ---
 # keep

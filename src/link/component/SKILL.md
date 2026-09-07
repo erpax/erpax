@@ -2,18 +2,18 @@
 name: component
 description: Use when reasoning about the link UI component.
 atomPath: "link/component"
-coordinate: "link/component · 1/base · c11f1475"
-contentUuid: "bdb33184-35b8-5fff-8f79-4cc5c5aac643"
-diamondUuid: "539b1d5d-390b-8ffc-93ea-0febebf1d70d"
-uuid: "c11f1475-0f5d-88a0-b4ae-f9b16b37bd12"
-horo: 1
+coordinate: "link/component · 4/weave · a3c8b72c"
+contentUuid: "aae0b7f4-9ed6-551e-87bc-67e99b78cf54"
+diamondUuid: "f0f20317-0a0d-8004-a390-f2a2b5f56d79"
+uuid: "a3c8b72c-04d1-871b-a685-bb05d02bcf68"
+horo: 4
 typography:
   partition: link
   bondDegree: 70
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1e5477c7-b845-8d3f-90e2-255f63c040a2"
+  computationUuid: "fd72749a-f54d-8e3e-b005-83ad810a32ef"
   stages:
     - stage: path
       stageUuid: "084f41de-5395-88d1-bb54-54c91bf405d2"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c679df9f-ccb2-8ae8-a73f-c38a3d96cccf"
     - stage: horo
-      stageUuid: "267b834e-9d20-85e0-886c-27f034ef9a84"
+      stageUuid: "2ad6c39d-7a9d-8b55-9200-9c135b70e51c"
     - stage: seal
       stageUuid: "df0cf7d2-5697-8e25-a954-9b4d5d49c786"
     - stage: uuid
-      stageUuid: "ca6a35a6-b643-8917-8f96-2575659299cd"
+      stageUuid: "07b75e2d-2032-8fad-a2f3-e0744f5933a9"
 version: 2
 ---
 # link/component

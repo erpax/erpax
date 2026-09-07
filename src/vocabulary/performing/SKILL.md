@@ -2,11 +2,11 @@
 name: performing
 description: "Use when reasoning about performing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/performing"
-coordinate: "vocabulary/performing · 7/descent · 6bbf5e3e"
-contentUuid: "55cd34e2-b1b8-546a-8981-0ab5c50d479f"
-diamondUuid: "b989073a-9d13-86c0-ae66-9867d3012f64"
-uuid: "6bbf5e3e-b6eb-8a80-a2c5-9fbdc373ded0"
-horo: 7
+coordinate: "vocabulary/performing · 1/base · c3f94d95"
+contentUuid: "1ce0af32-8e77-5f62-921d-9f333293707e"
+diamondUuid: "a1029d09-965f-8a6b-aef3-10f3ab01b022"
+uuid: "c3f94d95-5769-85db-aca2-d22e96396d88"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 29
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e163bc1f-546e-8bfb-aca0-283ea82f5a38"
+  computationUuid: "8f58cfcc-be2f-8500-a727-84d12854e5bd"
   stages:
     - stage: path
       stageUuid: "618dad19-fc66-8c65-b34b-dc4c66b9d8b7"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bbc6bd61-1f9c-8cd2-a237-bb0ec473d837"
     - stage: horo
-      stageUuid: "9f008294-66bb-8006-b53b-26bcf049ecda"
+      stageUuid: "478ea289-8078-87c6-9848-8112415f7978"
     - stage: seal
       stageUuid: "37407010-2cd7-880f-ab5c-e449960e7afe"
     - stage: uuid
-      stageUuid: "c5afa5dc-175b-899e-9b18-c01166ba7160"
+      stageUuid: "4eb3f47d-cf3e-8f02-acc4-fb9b6ee07f50"
 version: 2
 ---
 # performing

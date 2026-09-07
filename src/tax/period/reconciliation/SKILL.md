@@ -2,11 +2,11 @@
 name: reconciliation
 description: "Use when closing tax periods against fiscal periods — tax↔fiscal alignment (same period-end date) and transfer-pricing documentation completeness (OECD), each a proven, refutable invariant with a real tolerance rather than a bare assertion."
 atomPath: "tax/period/reconciliation"
-coordinate: "tax/period/reconciliation · 4/weave · 3eb70667"
-contentUuid: "c8b2bff1-2422-5c43-bc3a-a4b6b4364fc3"
-diamondUuid: "5e71945c-d98c-83fe-8c1c-cfe67a9fd6cb"
-uuid: "3eb70667-72d1-889b-a5d7-9f8c58ee1d10"
-horo: 4
+coordinate: "tax/period/reconciliation · 5/round · 45a73f63"
+contentUuid: "3db341b0-02d3-583c-8d4d-1942fb084691"
+diamondUuid: "2bc37734-9344-8b9f-9341-abdb2ef2a161"
+uuid: "45a73f63-8e34-8a11-b727-c0171e5a9570"
+horo: 5
 typography:
   partition: tax
   bondDegree: 35
@@ -24,7 +24,7 @@ standards:
   - "SAF-T:3.0.2 (multi-entity, multi-jurisdiction audit trail)"
 bindings: []
 signatures:
-  computationUuid: "6e2ce43e-1016-845a-b465-32045fb4a930"
+  computationUuid: "58cc00d3-87c8-82c9-adaa-22fb3d0fe174"
   stages:
     - stage: path
       stageUuid: "7f64fe74-9ab1-83a5-94ec-0162bdb6afae"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "10983c62-85c7-8643-a97a-b93c1768d031"
     - stage: horo
-      stageUuid: "88f126ac-b8fb-8b9e-9e9a-f91acdb7a93e"
+      stageUuid: "074dfb43-5cae-8ba9-af36-cce72484b2cc"
     - stage: seal
       stageUuid: "898a87b2-f638-830b-81b7-29a89c1a5f32"
     - stage: uuid
-      stageUuid: "f21f88c0-bdbd-85fb-bd5b-0082ae5ccbcf"
+      stageUuid: "cec59b8f-226a-8068-86a5-8152a3d80f13"
 version: 2
 ---
 # tax/period/reconciliation — tax↔fiscal alignment + transfer-pricing documentation, proven

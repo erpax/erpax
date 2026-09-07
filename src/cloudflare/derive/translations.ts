@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "derive",
-    "uuid": "10668900-a96e-8ea2-ac84-dff7ba50c025",
+    "uuid": "73fd6702-aa16-8bcc-8780-c09209dfd321",
     "words": [
       "derive"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when deriving a content-addressed diamond for a Cloudflare binding — the build-time half that scans src/, kept off the Worker face so a runtime call does not pay for it.",
-    "uuid": "bb88bf1e-27f2-8a38-9cca-f8edf296ee34",
+    "uuid": "eaed72db-2934-8128-a2d3-5c019cc163fd",
     "words": [
       "use",
       "when",

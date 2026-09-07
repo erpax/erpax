@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "suffix",
-    "uuid": "c68d004c-87ad-8e6f-88fb-0a0f58332461",
+    "uuid": "ca86b813-508c-8d39-a2bb-2c734b1a19e9",
     "words": [
       "suffix"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about suffix as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "f36e4122-9845-819e-97f3-baf62d5f9e76",
+    "uuid": "9295875d-a1d9-8835-90bf-1008a1f517c0",
     "words": [
       "use",
       "when",

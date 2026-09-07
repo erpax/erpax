@@ -2,11 +2,11 @@
 name: response
 description: "Use when reasoning about response as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: response
-coordinate: "response · 5/round · 30ae4e8d"
-contentUuid: "a01d03dc-8f01-530a-a5c8-94b64fc72f1a"
-diamondUuid: "906ffe05-5ab5-81a8-a766-3658d9cf6a8f"
-uuid: "30ae4e8d-3f2d-828d-ad33-2e6ac5b38243"
-horo: 5
+coordinate: "response · 1/base · c9816d75"
+contentUuid: "579f407d-65fb-5f7b-93db-7852a93b589e"
+diamondUuid: "90a6e315-5275-8875-9802-720661012adb"
+uuid: "c9816d75-3ec9-83b8-bf26-2e23fa7539dc"
+horo: 1
 typography:
   partition: response
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "540516c0-a346-8915-baaf-405be52da2d4"
+  computationUuid: "decff31c-9e17-8dc2-9d73-ea166eb90c57"
   stages:
     - stage: path
       stageUuid: "f3431256-c2cc-8a01-b654-cf3936d17462"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9d3e029a-67c3-8789-abc7-2a3be5748204"
     - stage: horo
-      stageUuid: "c0901e6b-667d-8046-a8f2-ebcb5ff14b4f"
+      stageUuid: "603db17c-1231-8724-a24a-988c98a017c3"
     - stage: seal
       stageUuid: "7241e045-07c1-842c-9261-687b1cf692ed"
     - stage: uuid
-      stageUuid: "19543138-d678-8701-86e9-118c1cfe0bd4"
+      stageUuid: "a3505a44-6efe-85d0-b365-9e22c5fdf7ae"
 version: 2
 ---
 # response

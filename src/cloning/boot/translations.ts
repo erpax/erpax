@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "boot",
-    "uuid": "cb9ba2f1-7fcf-874c-84c9-a407e9107c02",
+    "uuid": "2f349c1b-a918-8d08-99a1-6f87c495066e",
     "words": [
       "boot"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about boot — bootFromFederation — ingest a published genome into a clone instance.",
-    "uuid": "48ff7a45-8153-8ecc-b6e7-ab5f9ee5d401",
+    "uuid": "627baeef-96c1-81e6-839d-62e30dcff526",
     "words": [
       "use",
       "when",

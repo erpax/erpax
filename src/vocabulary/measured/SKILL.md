@@ -2,11 +2,11 @@
 name: measured
 description: "Use when reasoning about measured as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/measured"
-coordinate: "vocabulary/measured · 5/round · 6b5db1a3"
-contentUuid: "203df4fb-8b1e-5bf0-bedd-94d5893b9876"
-diamondUuid: "6603ee71-ea06-8b35-8975-09353c775c9e"
-uuid: "6b5db1a3-cb4f-8e36-828d-f15c82d2648b"
-horo: 5
+coordinate: "vocabulary/measured · 4/weave · c03cad47"
+contentUuid: "1aaf6f95-0801-5767-835a-77515e9d380e"
+diamondUuid: "5feb250c-1b4c-8442-8fbb-480f4b040b19"
+uuid: "c03cad47-f290-8dd4-8f7b-1ca85b10111d"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2d3d22af-2830-8149-b7ba-1d9979fbec4a"
+  computationUuid: "fe9b5a46-c20d-86ef-9c93-f1d9395240ed"
   stages:
     - stage: path
       stageUuid: "6649e25b-2ceb-8a79-aeb1-17437a6f4712"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "47929fb7-253b-88c1-9c0d-2fc9aef03939"
     - stage: horo
-      stageUuid: "fa784405-7a6a-817b-a75e-e54d82db537e"
+      stageUuid: "c17f0fc4-9e42-801f-93f5-d725e7705d93"
     - stage: seal
       stageUuid: "c57658d0-02e2-8a4e-84c6-47077453e8ff"
     - stage: uuid
-      stageUuid: "636506f6-1ffc-8134-93bb-63d0a47cc1a8"
+      stageUuid: "4d9fd7d2-93de-8fb9-9170-841aadd907d0"
 version: 2
 ---
 # measured

@@ -2,11 +2,11 @@
 name: localize
 description: "Use when ANY aspect must speak a locale AND stay tamper-evident — localization is the FUSION of tamper-cost (forge↑) and proof (verify, O(N) trustless). Every field/reference/scope/hook carries a translation + a translation-key uuid with ALL identification (content-digest, OID 2.25, cmyk, locale, capabilities) wired into the 128 bits. Coverage→1 ⇒ infinite tampering cost. The per-field leaf (facet localize-field) is native Payload `localized:true` over BCP-47 locales; a blank locale routes to its identity element `und`. Matter-twin localize/index.ts."
 atomPath: localize
-coordinate: "localize · 4/weave · 88f6a3f4"
-contentUuid: "c58756a7-2006-52b5-a9c4-924bd1a5b2d9"
-diamondUuid: "1494d5a2-c33a-868e-9842-37b53019c1e0"
-uuid: "88f6a3f4-773d-89ac-9156-6ba37eeeeeed"
-horo: 4
+coordinate: "localize · 5/round · bb41a1f5"
+contentUuid: "e9326c76-4708-57ac-a030-04f03aa95764"
+diamondUuid: "9a53b60f-6688-8682-b0c5-96ce266de9d6"
+uuid: "bb41a1f5-8f04-83ba-b048-129ed6c26c91"
+horo: 5
 typography:
   partition: localize
   bondDegree: 115
@@ -32,7 +32,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "6453b725-482b-812d-a51f-7387d39238df"
+  computationUuid: "ab7c88e7-7dbc-8bc8-99ec-7b42d1f9447e"
   stages:
     - stage: path
       stageUuid: "2a33b115-eb41-89e9-a3b7-4aeb5c1c1125"
@@ -43,11 +43,11 @@ signatures:
     - stage: links
       stageUuid: "7282828b-8b76-8baa-9ccd-2fceddc45b82"
     - stage: horo
-      stageUuid: "538a870f-8124-806a-9d61-fa8d89d0f121"
+      stageUuid: "aafa0e3e-1a9a-8a3e-91fd-b2e4a884f548"
     - stage: seal
       stageUuid: "ab167e4a-044f-8271-bb4c-9d9cd41c765b"
     - stage: uuid
-      stageUuid: "22a2ee28-ecf9-86ed-8ca3-f1b28a5ced9f"
+      stageUuid: "63bb9e81-1542-817a-a77c-1a5bd5c75262"
 version: 2
 ---
 # localize — localization as the tamper-cost ⊕ proof fusion

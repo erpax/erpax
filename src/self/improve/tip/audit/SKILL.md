@@ -2,18 +2,18 @@
 name: audit
 description: "Use when asking what is actually blocking — the feed scan that finds real gaps and ranks them by unblock / (cost × risk), reading only the NAMES of secrets, never their values."
 atomPath: "self/improve/tip/audit"
-coordinate: "self/improve/tip/audit · 7/descent · 65383088"
-contentUuid: "bf3548d8-d031-5910-a096-6b3fbdf45b44"
-diamondUuid: "db386abe-0ca3-87de-8dfb-3705aaf275c3"
-uuid: "65383088-e0d5-82ab-a5b3-d3eea86173ce"
-horo: 7
+coordinate: "self/improve/tip/audit · 5/round · 0571ae5b"
+contentUuid: "18e7ff06-0a0f-5f16-a4f0-e6c96c475ffb"
+diamondUuid: "67ccfa1b-03e4-88b4-90b9-a045c3a43c1e"
+uuid: "0571ae5b-1e90-8211-948f-814149284fee"
+horo: 5
 typography:
   partition: self
   bondDegree: 137
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7be92025-c1c5-8201-aa83-d97ee51600f0"
+  computationUuid: "3faabe50-7596-89af-9a06-4a9bd79ab84a"
   stages:
     - stage: path
       stageUuid: "2a2ac373-f7a6-80b6-b674-bab02884e603"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "609cf109-8608-8c95-b209-2fc0472186dc"
     - stage: horo
-      stageUuid: "6ba3086a-9447-8721-a256-6aa6d011b8a6"
+      stageUuid: "256ea022-80f6-8823-8657-1046aa22b66f"
     - stage: seal
       stageUuid: "74bbcdc0-d48d-82a4-8a50-6d90fb607ee5"
     - stage: uuid
-      stageUuid: "c800169e-4686-86f6-9dd6-66405277bf6b"
+      stageUuid: "f022c03e-0d1d-85f0-8ac5-bf858cfeb4f2"
 version: 2
 ---
 # self/improve/tip/audit — what is blocking, scored

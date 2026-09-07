@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "emit",
-    "uuid": "acdc8a77-a855-8c98-9d9a-d3ffb3b30aa3",
+    "uuid": "a9b311c8-d0d6-868a-853c-330ef435201f",
     "words": [
       "emit"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about emit — vocabulary/emit — compute the SHARED VOCABULARY and emit words.ts.",
-    "uuid": "a3f78e25-b170-8f0c-94e1-0a3cb5e1ecb1",
+    "uuid": "71e064fd-6eed-87cc-897d-45abe118b31a",
     "words": [
       "use",
       "when",

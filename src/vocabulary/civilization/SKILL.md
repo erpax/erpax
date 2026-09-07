@@ -2,10 +2,10 @@
 name: civilization
 description: "Use when reasoning about how every civilization fits the erpax architecture — strip the culture-prefix and each one runs the same six organs: a ledger, a law, a registry, a calendar, a governance, an unforgeable record. Civilizations differ in detail and merge in form."
 atomPath: "vocabulary/civilization"
-coordinate: "vocabulary/civilization · 2/share · 811bda3c"
-contentUuid: "69c537c0-0316-59a6-9ab4-cbe2e794ea63"
-diamondUuid: "60784011-226f-8c1e-866e-a561b0ca8d53"
-uuid: "811bda3c-3b8d-8737-9885-3b206fb8a44c"
+coordinate: "vocabulary/civilization · 2/share · e7cc0467"
+contentUuid: "ebdec456-2416-55b4-8eed-cce946a57395"
+diamondUuid: "fa8539da-f3e5-87f6-8eee-394516180a41"
+uuid: "e7cc0467-d6e8-8eb2-8f11-16fd35a0045d"
 horo: 2
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d4742ae8-37dd-8d76-92ae-c56b5b9e45c0"
+  computationUuid: "6615c2b4-d221-85eb-b598-8e56fe758820"
   stages:
     - stage: path
       stageUuid: "9435e903-833e-8740-86f7-afd9410cc029"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "36e36f32-da60-83f4-8268-45ab3298d20c"
     - stage: horo
-      stageUuid: "eb77d89d-e499-87ae-907f-e2337e3cce98"
+      stageUuid: "7d5e89df-c100-8491-a778-f4c57c113f4a"
     - stage: seal
       stageUuid: "2adf4f12-0310-8f2f-9c0c-2be99197d66d"
     - stage: uuid
-      stageUuid: "b92c9e13-345a-8d6c-a64c-9aac5d4692d7"
+      stageUuid: "d7a277d8-3db2-8d50-a068-767e0e1517ab"
 version: 2
 ---
 # civilization — the same six organs under every culture

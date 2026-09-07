@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "state",
-    "uuid": "e7ff3303-8562-8c6c-a5a7-f36464a1ece1",
+    "uuid": "c59158fd-7f5a-8085-966f-dcf218ab3edb",
     "words": [
       "state"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when asking which content-uuids carry each vortex state — the one rodin function that needs the live matrix, kept off the arithmetic that everyone else imports.",
-    "uuid": "e66dc82a-cb5c-874b-a8a6-3fc58fbbec2e",
+    "uuid": "c167351f-40a4-8629-8c40-a42783a5d862",
     "words": [
       "use",
       "when",

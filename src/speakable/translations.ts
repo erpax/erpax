@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "speakable",
-    "uuid": "f3ed793f-7f56-8180-8e92-10621719f2be",
+    "uuid": "bab15ef6-d2e6-818f-a3d8-ff24ae7255fc",
     "words": [
       "speakable"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about speakable — Indicates sections of a Web page that are particularly 'speakable' in the sense of being highlighted as being especially appropriate for text-to-speech conversion. Other sections o",
-    "uuid": "375a035f-32da-883d-a661-7adf45001078",
+    "uuid": "9719d6a8-bd8d-894e-8f3f-b092963969de",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "angle",
-    "uuid": "3a1684ca-09dd-89a9-b37e-382d33d25bbd",
+    "uuid": "9516a97f-cd2d-878a-b612-424b1a4059a2",
     "words": [
       "angle"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the fold must be read as a rotation — the doubling map ×2 (the fold's generator) acts on the six units of (ℤ/9ℤ)* as an exact 60° rotation, because that group is cyclic of order 6. One fold = 60°; opposition (×8 ≡ −1) = 180° = three folds; the axis {3,6,9} is off the orbit. This is the angle the flat computations missed. Rigorous group theory; the hue/torus mapping is the model layer.",
-    "uuid": "a3e4af55-89c1-8b74-ac01-3feb32303c78",
+    "uuid": "54035f2f-157c-8465-872d-665d46f9678f",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: vote
 description: "Use when reasoning about vote — A schema.org component word, collided out of schema.org compounds — fused from VoteAction (sti · collapse · merge)."
 atomPath: vote
-coordinate: "vote · 7/descent · 730bfd4f"
-contentUuid: "cf754bd2-df09-55db-8cb5-a802e2d8d37e"
-diamondUuid: "17668d90-c31f-8ddf-b966-629af2151166"
-uuid: "730bfd4f-25f4-8ee7-9278-f64eb2ea260c"
-horo: 7
+coordinate: "vote · 8/crest · 0846d90d"
+contentUuid: "38a7494c-93d3-5625-bb65-cc6bc6272929"
+diamondUuid: "539733f6-55e0-878b-a448-41240206f635"
+uuid: "0846d90d-3721-84cf-85e8-73bafe0282d6"
+horo: 8
 typography:
   partition: vote
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "79e97aa6-5b3d-8a2a-842d-015514c5eb03"
+  computationUuid: "b20f05a6-d2f8-8a83-b2b2-52c0b58b6d0f"
   stages:
     - stage: path
       stageUuid: "85a3ee47-33e6-81ef-ae19-e9a58efce508"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "dd2ecb55-41ab-8418-9bfc-8ba18f48d973"
     - stage: horo
-      stageUuid: "c6d7dca2-0af6-802e-96e1-da1a7f098bb9"
+      stageUuid: "6bc818f6-778a-8d7d-88cb-ada89d7adca2"
     - stage: seal
       stageUuid: "2e1fc053-d5d4-83fa-8e7a-3f48465c25fe"
     - stage: uuid
-      stageUuid: "ea6deb0e-1649-808d-802c-73f833702bc1"
+      stageUuid: "098bffcc-7f60-8e3d-b69c-bd7c9c0a0bb2"
 version: 2
 ---
 # vote

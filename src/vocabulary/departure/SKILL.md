@@ -2,10 +2,10 @@
 name: departure
 description: "Use when reasoning about departure as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/departure"
-coordinate: "vocabulary/departure · 2/share · 44b2440b"
-contentUuid: "53250274-f203-544f-86bb-49edbdeeaaba"
-diamondUuid: "18ec9779-afe9-8d9f-864c-2eba5bc593cb"
-uuid: "44b2440b-4bfa-8ee1-9036-f14d37ee8b1c"
+coordinate: "vocabulary/departure · 2/share · de7e6fdb"
+contentUuid: "4d665faf-99cc-5269-b702-379549b08ece"
+diamondUuid: "58051a64-0745-826a-a049-a907495eda9b"
+uuid: "de7e6fdb-186c-8f1c-b5c3-6acea473cc09"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2316856a-ba63-8a1f-b03c-99b0bd84f124"
+  computationUuid: "72b551f8-114f-82f8-abfb-5ac7fa24b990"
   stages:
     - stage: path
       stageUuid: "5682f411-e3d8-8fa1-a8b5-998f8ca7c40a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "24de7086-3d9d-818f-97c7-0bcd0464735e"
     - stage: horo
-      stageUuid: "4789f5d4-1230-8fc9-8ca4-b2bf37e7b800"
+      stageUuid: "4de9f8cd-f33c-860a-8f87-32ebb6648442"
     - stage: seal
       stageUuid: "6a86e5c8-6877-8e4e-9e09-0854ddcd1eae"
     - stage: uuid
-      stageUuid: "1dd52109-baa2-816d-abc7-b07dcfeb9f8a"
+      stageUuid: "b2fea6ac-455e-8e94-bc33-da08ffdbe4a5"
 version: 2
 ---
 # departure

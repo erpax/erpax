@@ -2,11 +2,11 @@
 name: governance
 description: "Use when the polity decides — tallying ballots into a binding verdict, setting quorum and threshold, or proving the count is unstuffable; the judgment a formal system cannot generate for itself, supplied from outside by the society."
 atomPath: governance
-coordinate: "governance · 7/descent · 6fa78d96"
-contentUuid: "e99a9418-c170-569b-8a9d-fd76db177403"
-diamondUuid: "c019c046-05c3-88f2-a1c3-dc8b37fbc6f4"
-uuid: "6fa78d96-00ab-8c36-8715-5d26ffa6f7ef"
-horo: 7
+coordinate: "governance · 1/base · 2f8cd25f"
+contentUuid: "3678bec2-0f8f-55d9-b654-36d8224593e7"
+diamondUuid: "2753794c-8a40-81f7-895c-c81e976ac9ca"
+uuid: "2f8cd25f-9f23-873e-8e70-17881dfec5ea"
+horo: 1
 typography:
   partition: governance
   bondDegree: 59
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "b47822bc-e807-86d7-a074-df86731331b1"
+  computationUuid: "8491c9cf-063f-8b31-9eac-88e23a221501"
   stages:
     - stage: path
       stageUuid: "3444f1ec-f1af-8162-bb01-239926cf030a"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "9cdd0828-d945-8e55-bf7b-0016695adfa8"
     - stage: horo
-      stageUuid: "b357e4f5-c289-8f01-b3c8-65f27f52313b"
+      stageUuid: "02c58f0c-f65e-86ab-80dd-caa0c0d06226"
     - stage: seal
       stageUuid: "36139b2e-f84f-8ad7-983e-7116defc7efe"
     - stage: uuid
-      stageUuid: "9a82637d-acfb-81fd-b6c2-19e611711853"
+      stageUuid: "5ba9cc17-fedd-8783-a0a6-c0aa7ce6fbc7"
 version: 2
 ---
 # governance — the society manages erpax, the half that closes the circle

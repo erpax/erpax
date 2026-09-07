@@ -16,7 +16,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing UN/CEFACT 5305 — Duty / Tax / Fee Category Code.",
-    "uuid": "14f09da1-99e7-80ca-b5f2-b084b03c0fc8",
+    "uuid": "a7b05eda-b84b-8388-ba25-a0164bc05fdc",
     "words": [
       "use",
       "when",

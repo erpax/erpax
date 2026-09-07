@@ -2,11 +2,11 @@
 name: commissions
 description: "Use when recording and accounting for salesperson commissions on closed-won deals — IFRS-15 §91-94 incremental-cost-of-obtaining assessment, capitalise-and-amortise vs immediate-expense treatment, clawback provisions, payroll payment linkage. The IFRS-15 commission register."
 atomPath: "employees/sales/commissions"
-coordinate: "employees/sales/commissions · 5/round · 799e130a"
-contentUuid: "df158897-e9a3-5921-b56b-17498d0ba3c3"
-diamondUuid: "bf3c7da7-f4d1-808d-96fb-0ede126d2a36"
-uuid: "799e130a-9d28-8fc9-b288-25e9af27c6e6"
-horo: 5
+coordinate: "employees/sales/commissions · 1/base · 2a70a797"
+contentUuid: "6178ea1c-6b55-5e65-ba8b-928257f91aa6"
+diamondUuid: "54d4d9fa-9b4c-8351-864c-1aade9e509b2"
+uuid: "2a70a797-0e8d-885e-a358-544c35d497c2"
+horo: 1
 typography:
   partition: employees
   bondDegree: 33
@@ -22,7 +22,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "dd665392-6cd1-82d4-9185-775b3b71e7df"
+  computationUuid: "edeea591-dfbd-8c96-900b-225cf89151cf"
   stages:
     - stage: path
       stageUuid: "2190973b-e538-83ad-8a0c-09a9d7a6dff3"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "d59c5861-b9a7-8812-8e5e-a084033e32b2"
     - stage: horo
-      stageUuid: "c2b4c340-78b7-8a37-a24f-8f548273632d"
+      stageUuid: "3bf68ff6-4f50-8af6-aa39-8245f8c0021f"
     - stage: seal
       stageUuid: "51741b34-5140-8ddf-94df-c45a873dfd47"
     - stage: uuid
-      stageUuid: "523b4bce-b35d-82ad-8c8f-b213d3137e4a"
+      stageUuid: "82b0d29b-bf28-8650-a8b8-9d892d7c618f"
 version: 2
 ---
 # sales-commissions

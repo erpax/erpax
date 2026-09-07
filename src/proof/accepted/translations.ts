@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "accepted",
-    "uuid": "98a6b3d3-c7ca-8a8c-99de-7ba6d54e6caf",
+    "uuid": "e99e701e-3d15-8600-962b-e51fa1065b47",
     "words": [
       "accepted"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about accepted — erpax carries Lean under . **Nothing ran it** — no CI lane, no npm script, no import. Asked, the kernel answers:",
-    "uuid": "8fa3fbc7-f7ba-82dd-9d59-f0f7e66600ea",
+    "uuid": "d16b4deb-9997-83ea-880c-0ef35a89f32c",
     "words": [
       "use",
       "when",

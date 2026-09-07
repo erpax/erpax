@@ -2,10 +2,10 @@
 name: explainability
 description: "Use when a business outcome must ship its own natural-language explanation citing standards, sources and chain steps — autoExplain composes the narrative deterministically with no LLM in the path (preserving replay), isExplanationComplete verifies it is non-trivial."
 atomPath: "beyond/explainability"
-coordinate: "beyond/explainability · 7/descent · c261a9d9"
-contentUuid: "32af49fa-8c09-54b8-b338-6aea06ab00e3"
-diamondUuid: "e40bc1aa-4feb-813d-a1d1-572047c2436f"
-uuid: "c261a9d9-4bd9-8a53-a17a-05ef18e765af"
+coordinate: "beyond/explainability · 7/descent · 17fe7950"
+contentUuid: "ddb088ea-e189-5c41-8ac9-aeff572bbac8"
+diamondUuid: "6881eb3a-e4e3-86dd-be7f-ff0c44ee812d"
+uuid: "17fe7950-c822-8d55-bc1f-9e75618c94a1"
 horo: 7
 typography:
   partition: beyond
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "c6ccff46-c1cd-8ab4-bb44-49236ad4f76e"
+  computationUuid: "9f637c9a-06bb-8035-834e-20f2f1838213"
   stages:
     - stage: path
       stageUuid: "2825efc3-1b16-8c3d-8cb9-4086ac4853d9"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "1c83392f-482e-8c77-a8c2-318a3bf3c7cf"
     - stage: horo
-      stageUuid: "02c29992-3c20-8d6c-a723-7f7eed09c5ff"
+      stageUuid: "4496c9ed-6fa0-861a-9d03-205d48aaef50"
     - stage: seal
       stageUuid: "d3d1625b-8c53-857d-bb72-ba2bd1932fee"
     - stage: uuid
-      stageUuid: "4c9874d7-b01f-886e-9a9d-e48dc057e895"
+      stageUuid: "d91fb706-a3c0-8678-8de3-a05b543c1af9"
 version: 2
 ---
 # beyond/explainability — self-explainability (auto-generated narrative)

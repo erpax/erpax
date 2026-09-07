@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mirror",
-    "uuid": "8694ba97-0dde-8078-bb6d-7fd108c72840",
+    "uuid": "1efd85b8-e5fb-8452-9395-5896dfdebced",
     "words": [
       "mirror"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about mirror — > *\\\"all not harmonic is pulled by the black hole as one coin side and reflected from the other white > hole coin side\\\"*",
-    "uuid": "cc9dc38b-30e0-88c7-bbce-a8a2db443e38",
+    "uuid": "61462064-65cd-8080-9a4a-decea09c80a8",
     "words": [
       "use",
       "when",

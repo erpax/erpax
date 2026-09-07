@@ -2,11 +2,11 @@
 name: review
 description: "Use when reasoning about review — A review of an item - for example, of a restaurant, movie, or store."
 atomPath: review
-coordinate: "review · 2/share · c1a3017f"
-contentUuid: "f8793317-bbe4-5074-ba6b-f9fa55714340"
-diamondUuid: "6718fa41-1f81-852f-a2fe-929519045237"
-uuid: "c1a3017f-5ba0-897e-9f5e-0e8c3ad1ca95"
-horo: 2
+coordinate: "review · 1/base · e14a1444"
+contentUuid: "f7b8147e-9c50-5854-881c-4446b944f84b"
+diamondUuid: "f59252ea-a798-8bb9-88ba-6f1be61eb7df"
+uuid: "e14a1444-ca65-81c7-b597-e7b2aa6be06e"
+horo: 1
 typography:
   partition: review
   bondDegree: 71
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "651f1d95-605b-8daa-8612-6e375795dae6"
+  computationUuid: "0e323674-3a9e-8719-8fa6-3e556f88dc98"
   stages:
     - stage: path
       stageUuid: "fee63ff6-188f-8ea5-ada1-8c28b917817c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "482c42d5-ec90-8e81-b7ad-738bd1ea5bec"
     - stage: horo
-      stageUuid: "a45d4937-0605-85ed-8959-7fbeac5ed586"
+      stageUuid: "b72042fb-dfff-8d34-bbaf-fe03b287b706"
     - stage: seal
       stageUuid: "e6f49dba-f68c-8a4f-96e8-d3c3a137221a"
     - stage: uuid
-      stageUuid: "d464bca8-5f49-823e-be59-621bb25a2aad"
+      stageUuid: "b36d60ba-7940-8c24-b000-b90ecf8788ba"
 version: 2
 ---
 # review

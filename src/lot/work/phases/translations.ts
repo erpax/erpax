@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "phases",
-    "uuid": "234b85ed-8353-828b-a6d5-c192ca7d67a5",
+    "uuid": "81fde234-8f91-863b-a934-bfc2f4a4c9dc",
     "words": [
       "phases"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modeling a routing step — one sort-ordered position in a lot's phase chain that crosses to the work-phases catalog, carrying per-step time and unit counters with derived (never stored) state.",
-    "uuid": "7e86a4d2-f1ce-8579-b5bd-806f8bd87a4d",
+    "uuid": "38cff352-4188-8caa-8363-81a3b7489762",
     "words": [
       "use",
       "when",

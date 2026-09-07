@@ -2,11 +2,11 @@
 name: reserved
 description: "Use when reasoning about reserved as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/reserved"
-coordinate: "vocabulary/reserved · 5/round · ba2420bb"
-contentUuid: "c0020211-6a99-54f7-8be0-238de85daa15"
-diamondUuid: "bab4619c-2f1f-8f11-8937-04c70901ca53"
-uuid: "ba2420bb-1b68-81ee-a4a9-5d5581085957"
-horo: 5
+coordinate: "vocabulary/reserved · 4/weave · 9859b1b3"
+contentUuid: "a5194cfa-3c88-5f4e-a7af-9e2d75f066ad"
+diamondUuid: "b7b74dcf-8fc5-80de-97a9-1d8c44c05163"
+uuid: "9859b1b3-b791-806a-a586-5529740f1467"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c6cb2980-3bae-8d3d-8059-69eb7d6bc5b8"
+  computationUuid: "fb67bd40-6950-87b8-9fce-682a487c6634"
   stages:
     - stage: path
       stageUuid: "a2a273f9-1c56-8a3e-b5a3-2d9285ec3b8c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "cbbec043-9302-8f10-8667-62c6d8c9b694"
     - stage: horo
-      stageUuid: "0b061461-1164-8115-a377-417cf2c66175"
+      stageUuid: "b78df942-222e-8526-85a0-6a28b422d707"
     - stage: seal
       stageUuid: "a8514418-cfb4-892f-a7e8-0c420078d927"
     - stage: uuid
-      stageUuid: "424de70e-68b0-899f-ab96-b8c929536a38"
+      stageUuid: "0223ef75-576d-88d1-8249-cbe89b93fa71"
 version: 2
 ---
 # reserved

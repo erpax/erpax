@@ -2,18 +2,18 @@
 name: descent
 description: "Use when reasoning about the fifth position of the horo state ring — digit 7, \"the wave returns\", the binding step where a built flow begins its return (shipped, dispatched, posted out). First of the descent/return arc; nested under horo."
 atomPath: "horo/descent"
-coordinate: "horo/descent · 2/share · 1256ec56"
-contentUuid: "3f3ad82a-9f3a-5290-980e-515d8c1a6658"
-diamondUuid: "a8a63085-2d16-8bc4-8a7b-b405568cc4eb"
-uuid: "1256ec56-0667-824e-b68b-1e361c688603"
-horo: 2
+coordinate: "horo/descent · 4/weave · db93b318"
+contentUuid: "891654cc-3756-5602-98a6-a022ceede73e"
+diamondUuid: "b619aa0f-366c-85ef-b547-4ab1ed0d538c"
+uuid: "db93b318-a3ac-8ea7-9e80-eabd9b184f00"
+horo: 4
 typography:
   partition: horo
   bondDegree: 33
 standards: []
 bindings: []
 signatures:
-  computationUuid: "91067fba-5cde-85cc-a8ad-5ecf5c2fae0e"
+  computationUuid: "22e77c91-3cc7-8e3d-9a31-ab06b9da7f0e"
   stages:
     - stage: path
       stageUuid: "71735d43-da26-84d2-a316-79df793ceb0d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "45f3aa04-881d-8001-8fca-0798214875bd"
     - stage: horo
-      stageUuid: "a0cccbfa-c9cd-8124-b8f5-91ee7ee54925"
+      stageUuid: "c82a6b39-1876-8ac4-bc27-efb1a8be1c57"
     - stage: seal
       stageUuid: "4332538a-cffb-89f4-beb8-4955ffac574a"
     - stage: uuid
-      stageUuid: "ddc20a81-ee84-83d0-9375-4c8db2edb783"
+      stageUuid: "e7b878f3-df9a-8a88-98e4-cfe309b46a02"
 version: 2
 ---
 # descent — horo position 7 (the wave returns)

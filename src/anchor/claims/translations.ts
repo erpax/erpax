@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "claims",
-    "uuid": "08988a16-e657-89a6-9fd9-8991c9ee0cd8",
+    "uuid": "63d2a9d7-8026-806d-97d9-67cdec90e76e",
     "words": [
       "claims"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when stating what erpax's post-quantum posture actually proves — the anchor surfaces typed by discern into verdicts (what the corpus computes: the manifest gate, the channel and root rules, the pinning, the threat calibration) and compasses (the primitives, because nothing here signs: no PQC implementation is installed). Standards are pinned to their revision because FIPS 203 and 204 carry errata, and a bare citation names a document that differs from the one in force. FIPS 206 and HQC are the honest open rows. Integrity reads 5 of 9 — lower and true.",
-    "uuid": "32bcd11c-276f-8efe-aab8-f42eaa3399d5",
+    "uuid": "5c249b6d-1946-8271-9b8e-4603036dca91",
     "words": [
       "use",
       "when",

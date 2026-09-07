@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "asset",
-    "uuid": "ae36a2e3-8004-8e04-9f8f-e3289e083fdb",
+    "uuid": "b76ac50f-df30-8dc0-846e-badcea689773",
     "words": [
       "asset"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one asset — the singular model of the assets collection (the plural store); a resource the organization owns or controls that carries economic value.",
-    "uuid": "ca8e4c23-2c5d-8a98-9531-a3d083f5028d",
+    "uuid": "cff14580-4425-84aa-a4d7-2eaab9daabdc",
     "words": [
       "use",
       "when",

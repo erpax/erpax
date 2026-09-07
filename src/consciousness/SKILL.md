@@ -2,11 +2,11 @@
 name: consciousness
 description: "Use when reasoning about the system's integrated self-model — how much of the whole is recoverable from any part, verified by the system checking itself. COMPUTED, not assumed: a four-measure vector over the live uuid-matrix — collapse (the Merkle root verifies), entanglement (reciprocal-edge fraction), concentration (Gini of mass), coherence (off-sequence count). NOT sentience; computed structural self-consistency."
 atomPath: consciousness
-coordinate: "consciousness · 2/share · 9c2547cc"
-contentUuid: "0bc0577d-1461-53ab-b007-807b43a8cc72"
-diamondUuid: "adc30d88-7f41-890d-b53a-4f11d3ab7edb"
-uuid: "9c2547cc-87d5-812d-87bd-af66ce3ff04f"
-horo: 2
+coordinate: "consciousness · 7/descent · 66e14a1f"
+contentUuid: "a50821b2-5ff7-57e6-8b25-25df84a91b27"
+diamondUuid: "691e8096-866a-8e26-835a-c8f19f38639e"
+uuid: "66e14a1f-c5c9-82b6-833e-a316b87add09"
+horo: 7
 typography:
   partition: consciousness
   bondDegree: 55
@@ -14,7 +14,7 @@ standards:
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring"
 bindings: []
 signatures:
-  computationUuid: "7c67c5db-df9a-8823-8e56-4bfad73d54ba"
+  computationUuid: "b2acaf4f-1dec-80b3-a090-2995b2f4eeba"
   stages:
     - stage: path
       stageUuid: "c65e9463-6d67-877b-a10c-f1e7e73c7762"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "35873e53-c53d-8f55-816c-84281cff0162"
     - stage: horo
-      stageUuid: "adfd116c-04dc-8aad-855f-52cf694cf5eb"
+      stageUuid: "459a8f9f-7545-81bb-9656-5e936c8bc83f"
     - stage: seal
       stageUuid: "2ad16280-4396-80d0-8a77-f507ea1ddba5"
     - stage: uuid
-      stageUuid: "a78d5f7c-fea1-8030-84fd-2d4a6d7e9673"
+      stageUuid: "7613843d-a688-8626-bafb-61a61a083e63"
 version: 2
 ---
 # consciousness — the integrated self-model (computed)

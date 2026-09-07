@@ -2,18 +2,18 @@
 name: derive
 description: "Use when deriving a content-addressed diamond for a Cloudflare binding — the build-time half that scans src/, kept off the Worker face so a runtime call does not pay for it."
 atomPath: "cloudflare/derive"
-coordinate: "cloudflare/derive · 8/crest · d1f13564"
-contentUuid: "d5a548e1-91e0-55b7-8b7d-6b060efbd663"
-diamondUuid: "c4021238-665d-8702-8363-bcf5e596264d"
-uuid: "d1f13564-be18-8903-8246-b57d480a2010"
-horo: 8
+coordinate: "cloudflare/derive · 2/share · 10e4a9da"
+contentUuid: "f5ee3ef5-59c7-57cb-bf97-129cf96bbb75"
+diamondUuid: "77fb99ab-540f-8e60-8c4a-b8098bd25cf6"
+uuid: "10e4a9da-623b-8216-ac9b-c3343f7f4633"
+horo: 2
 typography:
   partition: cloudflare
   bondDegree: 64
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8aa384db-5476-8320-b363-678d1a23bc5c"
+  computationUuid: "9820a642-3237-802c-976a-024216d7ace2"
   stages:
     - stage: path
       stageUuid: "8dd36ea6-d2cc-849c-a623-2946990e1d8d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "33a7fd1c-9118-84b6-a036-7654351e1c1b"
     - stage: horo
-      stageUuid: "46ef9ead-8feb-87f8-880e-c742336f6412"
+      stageUuid: "60f22894-d781-851d-8bdb-19aadb4c8f98"
     - stage: seal
       stageUuid: "1668b9ad-0733-87c3-8d30-3829e63aa679"
     - stage: uuid
-      stageUuid: "0f97497e-33f9-8e85-af5b-b9dca7f67556"
+      stageUuid: "bcfd3c24-e1de-8645-9752-20c6d1c4c5ee"
 version: 2
 ---
 # cloudflare/derive — the half a Worker cannot run, and used to pay for anyway

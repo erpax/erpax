@@ -2,18 +2,18 @@
 name: mercy
 description: "Use when reasoning about the voluntary release of a debt that is genuinely owed — the creditor zeroing a real debit on the books, never a forged balance. The dual of karma: karma is the debt read down the lineage, mercy is the debt cancelled at the source. Distinct from grace (unearned credit) — mercy is earned punishment withheld."
 atomPath: "vocabulary/mercy"
-coordinate: "vocabulary/mercy · 7/descent · 3e5d8aa3"
-contentUuid: "530846e2-00ff-5325-80fe-900ab219c8a6"
-diamondUuid: "df1b550e-5470-89ac-91e2-bbda831ccfb1"
-uuid: "3e5d8aa3-da8d-8424-a175-d2e713bf9cae"
-horo: 7
+coordinate: "vocabulary/mercy · 4/weave · b472c18d"
+contentUuid: "d3daf592-cac6-5c18-a610-5eba9ac0ea90"
+diamondUuid: "7d016469-ec5d-8bf4-a489-a3597e202052"
+uuid: "b472c18d-d80a-85a4-bb20-8649fb3e27bf"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 88
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3c77761d-86cb-87c7-8348-325e87bf05ce"
+  computationUuid: "67df39e7-a98c-8084-8960-39932da0e839"
   stages:
     - stage: path
       stageUuid: "106e25c4-3baf-81e5-bbbc-59e2d9307618"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "bef5afe5-be30-862f-a069-40c6d8481d63"
     - stage: horo
-      stageUuid: "0939356c-2e76-8a46-8b9c-3ab5b34af92e"
+      stageUuid: "9787fe95-927b-8916-99f8-62b923d2f71b"
     - stage: seal
       stageUuid: "43c75ec3-c2df-88f4-a0f7-f35e9695ae49"
     - stage: uuid
-      stageUuid: "daf97dd7-3fcc-8f0f-8af2-280a1900cd0a"
+      stageUuid: "11e78ec4-24d9-8a9c-b175-0691cbd3fef1"
 version: 2
 ---
 # mercy — the owed debt voluntarily released

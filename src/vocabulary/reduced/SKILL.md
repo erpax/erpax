@@ -2,11 +2,11 @@
 name: reduced
 description: "Use when reasoning about reduced as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/reduced"
-coordinate: "vocabulary/reduced · 8/crest · 20ab2d19"
-contentUuid: "4d896ab8-8731-57a1-a105-c204975d4827"
-diamondUuid: "ff950a65-8ca9-85bc-8326-50a074f1bf59"
-uuid: "20ab2d19-e117-800e-a0da-0e7150cc3f18"
-horo: 8
+coordinate: "vocabulary/reduced · 4/weave · b2f4421a"
+contentUuid: "c193247f-3428-5405-b25d-2c79f49ba7ab"
+diamondUuid: "ba2e096f-f392-89a1-853f-a46536cb8d32"
+uuid: "b2f4421a-637e-818d-805d-c4f82714011a"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ce31635a-883c-88f9-9964-ed8b1a57c4b6"
+  computationUuid: "1abe6175-a977-81a7-8e12-1440db99bca1"
   stages:
     - stage: path
       stageUuid: "34b3e46f-2d0d-896e-bf0a-6afdd7f1794c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7b6eeff4-4755-8ffc-b9d3-c0923cc7341e"
     - stage: horo
-      stageUuid: "b3a35079-96fd-89b8-90c3-1715636f27b3"
+      stageUuid: "66e6d777-67d8-8791-a241-58ab0ae60efc"
     - stage: seal
       stageUuid: "9931c9c1-6226-84b5-8132-9200a9f13dbc"
     - stage: uuid
-      stageUuid: "346a17a4-1eb7-8542-b789-35aeb559cb92"
+      stageUuid: "fc7f57c8-f056-83cd-ab6e-af9e23cafaa4"
 version: 2
 ---
 # reduced

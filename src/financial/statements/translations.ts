@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "statements",
-    "uuid": "a9765fac-2ca1-8b9b-8f3f-d59cbcf156d5",
+    "uuid": "21921f28-8b4c-84fa-9073-9c159c741887",
     "words": [
       "statements"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when generating, certifying, and publishing financial statements — trial balance, balance sheet, income statement, cash flow, equity — under IAS-1 / IFRS-18 (2027+) with SOX §302 preparer-vs-certifier segregation, financial ratios, and multi-format export. The period-end financial-statement collection.",
-    "uuid": "1a255093-908d-8929-9a9a-3d8829714335",
+    "uuid": "4e5b4465-b868-8554-bd46-dcacaaa08ab6",
     "words": [
       "use",
       "when",

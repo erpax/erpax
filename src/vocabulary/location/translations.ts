@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "location",
-    "uuid": "a9500316-a13d-8610-95b7-62784486a8a9",
+    "uuid": "ebf332a0-5ec8-8a61-bb8f-31412851436f",
     "words": [
       "location"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about location — A sub property of location. The original location of the object or the agent before the action.",
-    "uuid": "b2c30b62-754d-82ee-aa09-86ba47cd91ca",
+    "uuid": "5842aba5-02eb-824f-9b89-d8979d035843",
     "words": [
       "use",
       "when",

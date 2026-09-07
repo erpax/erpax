@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "temporal",
-    "uuid": "2d0cb947-7734-8712-ae06-7688cb5d09ce",
+    "uuid": "69955b2a-4a4d-87ba-8ed8-3c9e43248a11",
     "words": [
       "temporal"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about temporal — The \\\"temporal\\\" property can be used in cases where more specific properties (e.g. temporalCoverage, dateCreated, dateModified, datePublished) are not known to be appropriate.",
-    "uuid": "ac81df4e-13fa-8901-8bfe-ad78860e7570",
+    "uuid": "506684d8-9ff5-86e3-a232-8d27067f3226",
     "words": [
       "use",
       "when",

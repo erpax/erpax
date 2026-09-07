@@ -2,11 +2,11 @@
 name: bookmark
 description: "Use when reasoning about bookmark as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/bookmark"
-coordinate: "vocabulary/bookmark · 2/share · 00de419b"
-contentUuid: "3314b230-9629-5d40-9c24-ac1316b9ae37"
-diamondUuid: "8a0190b5-df68-8d59-8760-83c745b0cc07"
-uuid: "00de419b-c7fb-851b-8fdf-39b962e67166"
-horo: 2
+coordinate: "vocabulary/bookmark · 1/base · 164f75c6"
+contentUuid: "1412be1d-07cd-5ff4-97e0-db106c1137fd"
+diamondUuid: "b1fdd129-7f9f-8a26-b03d-2c2742d13f4d"
+uuid: "164f75c6-a543-88ef-9d80-d26e16278310"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a2277957-1058-813e-afe9-f7ebd908578c"
+  computationUuid: "146422fc-325b-852b-82de-131af427c4c8"
   stages:
     - stage: path
       stageUuid: "659f46c1-b1f7-8b34-bb57-5356791b06a1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b43a9961-b9fb-84f0-9980-1d0389cd6ee0"
     - stage: horo
-      stageUuid: "3f916a82-b58a-8b5d-b6cf-aa1584cd2bb4"
+      stageUuid: "4df49f23-7341-8c1e-95ba-bef8678ee129"
     - stage: seal
       stageUuid: "58702264-4d78-80a5-837c-a149840186f5"
     - stage: uuid
-      stageUuid: "4020e4c7-e595-8c7c-83b9-470c2225aa9e"
+      stageUuid: "bab03b26-814c-8f8a-ab8b-1f1742b5bafb"
 version: 2
 ---
 # bookmark

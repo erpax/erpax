@@ -2,10 +2,10 @@
 name: yield
 description: "Use when a bound resource is converted to output at a realized rate — crop yield (output per unit land: lbs/acre, kg/decare) and its inverse, the land a demanded quantity requires. Yield is the bidirectional conversion factor between a resource and its product (area × yield = output; output ÷ yield = area); inverted through unit weight it gives row-length per saleable unit — the number that turns a demand plan into a planting plan."
 atomPath: yield
-coordinate: "yield · 5/round · bd965b9a"
-contentUuid: "56088dfd-e770-5a43-827d-052267cba6d1"
-diamondUuid: "e1312414-6d15-810f-9384-ed9ddcc3eaec"
-uuid: "bd965b9a-3a25-8388-9885-03fd321c0a86"
+coordinate: "yield · 5/round · f8f9446c"
+contentUuid: "97e020aa-a10c-52fb-84fe-38d5454f4886"
+diamondUuid: "d04ab3b2-d90a-8c1b-95fb-f5699ace2e04"
+uuid: "f8f9446c-4731-8903-b369-c80b7048fdc0"
 horo: 5
 typography:
   partition: yield
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c2b75ab7-e93e-8796-933c-bc9ef22581bd"
+  computationUuid: "360ee6fb-c22d-84dd-89eb-151c7328c1bc"
   stages:
     - stage: path
       stageUuid: "6eea17f6-493e-8479-8f2c-ea370adbe871"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0f0156f8-fab1-8360-b007-25180f4fa037"
     - stage: horo
-      stageUuid: "03f3d14b-f517-846b-96ba-c6a8f1f24cc7"
+      stageUuid: "33c332dc-1819-8e48-8264-f9880ab15e09"
     - stage: seal
       stageUuid: "18cf0977-7d84-88a6-8422-8689a6e45420"
     - stage: uuid
-      stageUuid: "5df78cc0-09b9-83e5-b52e-1d5701c96fdf"
+      stageUuid: "6da4aa24-05c8-8c34-9c59-ac4e9d661789"
 version: 2
 ---
 # yield — realized output per unit of a bound resource (and its inverse)

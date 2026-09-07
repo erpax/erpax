@@ -2,10 +2,10 @@
 name: guarantee
 description: "Use when reasoning about guarantee as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/guarantee"
-coordinate: "vocabulary/guarantee · 7/descent · bb4ef558"
-contentUuid: "1b56ce40-a894-5b3b-9555-3a911bcf00f1"
-diamondUuid: "e782f02d-d33f-8b01-bc99-1abaaea6800d"
-uuid: "bb4ef558-f67b-8c77-b49d-ebfd33707db9"
+coordinate: "vocabulary/guarantee · 7/descent · 78aca141"
+contentUuid: "db744143-9a36-5b98-8c7f-3bc0a1fa6868"
+diamondUuid: "15aa94a6-f773-8f4f-a464-36c0838c0012"
+uuid: "78aca141-e9a0-8f16-8d96-29c00aeee9f5"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5930203a-e4ef-8e6f-8ea3-e011f7775500"
+  computationUuid: "844b2abb-3b97-8279-b0f0-25aab2bf5f36"
   stages:
     - stage: path
       stageUuid: "8ece34f5-fef8-8ab0-8643-2bb76a7d513c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "89744609-0f16-8737-818b-4e3c5f35008c"
     - stage: horo
-      stageUuid: "afc29d32-ade7-881f-91ee-b812f24e6bed"
+      stageUuid: "c9c78f06-0bff-841f-b105-d3fb13563234"
     - stage: seal
       stageUuid: "73f51927-980d-87eb-b41a-0aa0ab2a6a61"
     - stage: uuid
-      stageUuid: "0c1c7065-cd4c-84fb-b3e4-5cddeee966f3"
+      stageUuid: "fdf16d42-0a47-83d2-b734-f9238b3250f5"
 version: 2
 ---
 # guarantee

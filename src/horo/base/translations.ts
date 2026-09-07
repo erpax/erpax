@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "base",
-    "uuid": "d5a9a9da-fb18-86e1-ab91-9f25b04ce650",
+    "uuid": "b1f562db-0988-81d7-848d-2f6c71112e7c",
     "words": [
       "base"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the entry position of the horo state ring — digit 1, \\\"entering the ring\\\", the origin step of a flow/lifecycle (on-hand, draft, opened). First of the ascent arc; nested under horo.",
-    "uuid": "1816e6a1-66b2-8f5c-9942-3cc1974e7c5f",
+    "uuid": "5c7bba24-9267-849c-b471-bdc4bdce945a",
     "words": [
       "use",
       "when",

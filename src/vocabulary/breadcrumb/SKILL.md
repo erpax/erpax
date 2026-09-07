@@ -2,10 +2,10 @@
 name: breadcrumb
 description: Use when reasoning about breadcrumb — A set of links that can help a user understand and navigate a website hierarchy.
 atomPath: "vocabulary/breadcrumb"
-coordinate: "vocabulary/breadcrumb · 2/share · 20dbcf7d"
-contentUuid: "02fa5554-ddaa-5ba1-a693-e1336039791d"
-diamondUuid: "4acda576-2890-8108-a444-75d7decf503c"
-uuid: "20dbcf7d-49a7-8941-9a99-02e64ff6d61c"
+coordinate: "vocabulary/breadcrumb · 2/share · 7c39cf98"
+contentUuid: "bf5f2d1e-aeb3-5d82-8792-047ebeecda43"
+diamondUuid: "6c49864b-4a70-8c2f-a9b0-13194637c7c4"
+uuid: "7c39cf98-8c18-85a7-94d3-4fae27f57c59"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "30b06d97-e59b-8b6f-a57c-9633c93042be"
+  computationUuid: "ae541313-f661-8e18-9d2f-47b8f0b9f16b"
   stages:
     - stage: path
       stageUuid: "054d5f3a-8e3d-807a-837c-965884778c45"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "5b95513f-1eb2-8311-a2d9-bb5fbeb069c2"
     - stage: horo
-      stageUuid: "442bdd3f-cf90-8f81-a51f-2ba5001db81a"
+      stageUuid: "ba3c9489-326d-8e85-8371-c5589c11d6d4"
     - stage: seal
       stageUuid: "ed02497a-b408-8a19-8eba-bc7d68b195af"
     - stage: uuid
-      stageUuid: "e062dc80-e0b0-86a2-a81b-b9d060723e24"
+      stageUuid: "d9801822-231c-81ed-a53f-800540ce7909"
 version: 2
 ---
 # breadcrumb

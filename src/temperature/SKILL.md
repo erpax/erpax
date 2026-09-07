@@ -2,11 +2,11 @@
 name: temperature
 description: "Use when reasoning about temperature as the exchange rate between energy and order (1/T = ∂S/∂E). It sets level populations via the Boltzmann factor e^(−E/kT), normalised by the partition function Z = Σ e^(−Eₙ/kT). Cold (T→0) falls to the ground state; hot (T→∞) makes every level equally likely (maximum entropy). The equilibrium distribution pᵢ = e^(−Eᵢ/kT)/Z is the max-entropy distribution at fixed average energy — the balance the ledger settles to."
 atomPath: temperature
-coordinate: "temperature · 8/crest · f9bddbdb"
-contentUuid: "ad889236-a768-5376-9b77-23708519f1ae"
-diamondUuid: "34bd9690-032a-826e-a0b6-16224c33d113"
-uuid: "f9bddbdb-53f5-8b19-b97e-99c79bea2e2d"
-horo: 8
+coordinate: "temperature · 7/descent · 3e284c37"
+contentUuid: "4e31f9c2-f983-50f2-9a60-b56d378f7fb9"
+diamondUuid: "26562ec1-9c06-8786-a1e6-9cd060ffc48f"
+uuid: "3e284c37-a2dc-8c16-846a-59e6a73aafa6"
+horo: 7
 typography:
   partition: temperature
   bondDegree: 26
@@ -14,7 +14,7 @@ standards:
   - "SI-2019 k_B (via ../boltzmann); Maxwell–Boltzmann statistics"
 bindings: []
 signatures:
-  computationUuid: "2f2fbf5f-cbd6-84d6-8923-2689caf31549"
+  computationUuid: "2a18f598-b1fc-884f-bf8d-36afb2c6aa32"
   stages:
     - stage: path
       stageUuid: "5f871843-d3bf-80e5-a93a-068bcf7ca06b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b5b576c7-b74f-8932-80a1-971ec966b41f"
     - stage: horo
-      stageUuid: "2b9b29de-f8f7-877e-96fd-d31578c11754"
+      stageUuid: "14479140-f93e-8ddb-9828-1b2d818aa51f"
     - stage: seal
       stageUuid: "349e4425-7ab7-816b-b229-006a342c0268"
     - stage: uuid
-      stageUuid: "f34efd0c-9799-8b05-abfe-6b072f5d6727"
+      stageUuid: "195d3a35-9a2b-877f-ab93-d3e0dbf2df19"
 version: 2
 ---
 # temperature — the dial between order and disorder

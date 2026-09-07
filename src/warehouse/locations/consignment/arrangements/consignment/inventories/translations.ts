@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "inventories",
-    "uuid": "22bf487d-072a-8aab-a234-728f758ff8be",
+    "uuid": "fd495e3a-8ec3-87da-a220-678a475474f8",
     "words": [
       "inventories"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tracking per-SKU on-hand inventory balance at a consignee location — shipments in, sales out, returns, cycle-count reconciliation, IAS-2 §6 balance-sheet ownership retained by consignor, valuation method, and GL account mapping. The consignment per-SKU running-balance collection.",
-    "uuid": "5ead8421-44ab-8fde-866a-8d716e41635a",
+    "uuid": "0b4d845e-6c5e-87c0-974e-f6b1a27cb6ea",
     "words": [
       "use",
       "when",

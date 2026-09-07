@@ -2,18 +2,18 @@
 name: batch
 description: "Use when processing data in bulk — batch ETL jobs, bulk inserts/updates/deletes, batch transaction semantics, atomicity across a batch, partial failure handling and retry strategies in batch operations."
 atomPath: "vocabulary/batch"
-coordinate: "vocabulary/batch · 7/descent · 42cd6d13"
-contentUuid: "da5edf6d-bd30-52c2-b1f6-41d50d4d4749"
-diamondUuid: "b5b9a0f6-0512-8084-b8ff-5632b16f2417"
-uuid: "42cd6d13-a1a6-85a6-913e-d0242976428b"
-horo: 7
+coordinate: "vocabulary/batch · 2/share · c28a9753"
+contentUuid: "4fe93606-acac-57fb-8cff-8bbefc30dde7"
+diamondUuid: "9191cc38-7885-8629-a352-4833e088cda3"
+uuid: "c28a9753-a735-8002-892b-8918631b4a38"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "46eab3d9-d723-801e-bfd4-86ad9139937b"
+  computationUuid: "297e3c54-762d-8d03-a9cd-7a0fb84bbbde"
   stages:
     - stage: path
       stageUuid: "0b412f95-bfbc-8cd6-b452-78e34dd331ad"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "6b006e7c-b0cb-8ec8-af30-c35555c96792"
     - stage: horo
-      stageUuid: "f0e506a6-0812-80d1-abc2-0fe56c52e7d8"
+      stageUuid: "d2839a13-6353-8b32-b957-ea0362c6f95a"
     - stage: seal
       stageUuid: "9736c399-701d-8907-ae17-5830aa881cfe"
     - stage: uuid
-      stageUuid: "e4d3349f-e1e6-8aa5-8938-0e70cffb3da1"
+      stageUuid: "52849f3c-7fd0-8c6b-b22d-d3e9564bef55"
 version: 2
 ---
 # batch

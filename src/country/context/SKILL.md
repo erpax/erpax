@@ -2,11 +2,11 @@
 name: context
 description: "Use when any code needs to branch on country — resolve a single canonical CountryContext from any signal (explicit, IBAN, address, tenant, house default) instead of reading the profile, specifics, and API registries directly."
 atomPath: "country/context"
-coordinate: "country/context · 2/share · 7f0355b6"
-contentUuid: "398c0f73-7fe2-54cf-8892-bc9232a57591"
-diamondUuid: "847779c7-6bd7-87a8-ae36-0286358330b4"
-uuid: "7f0355b6-4f9d-8be3-9c71-9d77447cb87f"
-horo: 2
+coordinate: "country/context · 8/crest · 8672646c"
+contentUuid: "4253d20b-b6cc-5090-be6f-79c38f22be67"
+diamondUuid: "b8678389-beea-8e4d-95ca-964c00c65ac3"
+uuid: "8672646c-d4d6-8fd2-8429-dfc5affa6630"
+horo: 8
 typography:
   partition: country
   bondDegree: 29
@@ -17,7 +17,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "d5a57b2d-b845-89dc-a07c-c832bde760b2"
+  computationUuid: "8a5d43c7-010a-8b21-8170-20b985876745"
   stages:
     - stage: path
       stageUuid: "c9f2dfab-bf15-8e07-ba09-f4e1793da06f"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "20e7bb08-cd27-8637-898b-f43cde876653"
     - stage: horo
-      stageUuid: "9df83ea0-735e-8416-aadd-44187d33235b"
+      stageUuid: "b50f5132-3005-884e-a8b5-bd9cd00a1965"
     - stage: seal
       stageUuid: "d0c452f4-cfe0-8dde-abd1-0ef738dc8864"
     - stage: uuid
-      stageUuid: "252935b3-ceb2-873a-ab0d-68adfee9a972"
+      stageUuid: "551e2cfd-9137-8e38-897b-66ffad6111aa"
 version: 2
 ---
 # country/context — the single canonical country merge

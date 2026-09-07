@@ -2,11 +2,11 @@
 name: suffix
 description: "Use when reasoning about suffix as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: suffix
-coordinate: "suffix · 2/share · e1153548"
-contentUuid: "66b89798-5fa5-5727-ae99-d224d7751e1b"
-diamondUuid: "d726fdcb-14aa-8554-8466-d30a233c5899"
-uuid: "e1153548-bf1a-8292-9ad5-f3b69b44281a"
-horo: 2
+coordinate: "suffix · 7/descent · c68d004c"
+contentUuid: "2fc42c32-4371-540a-8feb-dc2ea6bb00d1"
+diamondUuid: "4cbe1163-e3a1-8c50-ae34-6aca49d064ee"
+uuid: "c68d004c-87ad-8e6f-88fb-0a0f58332461"
+horo: 7
 typography:
   partition: suffix
   bondDegree: 24
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3879b851-afd9-88ab-87c1-e6c92ca5583e"
+  computationUuid: "79a90ae1-f944-843a-8061-48f92512536f"
   stages:
     - stage: path
       stageUuid: "5faa18e3-fd55-8634-9804-a8a8265f9ce2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "95c0f57d-ee93-8c8f-97bd-5c7db6117cfa"
     - stage: horo
-      stageUuid: "aedadc40-d596-8a9c-904c-121436c39bcb"
+      stageUuid: "9b318cf2-8c16-8a66-aff8-ba70eba41417"
     - stage: seal
       stageUuid: "aea4b38f-20fd-80aa-9a1c-a844ad35294f"
     - stage: uuid
-      stageUuid: "0ef890cd-21a2-89c8-a9ef-fb79079aa239"
+      stageUuid: "1078e16c-e7b6-8ebd-9a7c-a11efa3876a7"
 version: 2
 ---
 # suffix

@@ -2,18 +2,18 @@
 name: amendment
 description: "Use when a contract is modified — amendment date, amendments previous (chain of amendments), amendment terms, amendments effect on prior terms, signature requirement."
 atomPath: "vocabulary/amendment"
-coordinate: "vocabulary/amendment · 1/base · 2ad9e4b5"
-contentUuid: "586beb99-ed51-57a7-9f94-84ccd83a389c"
-diamondUuid: "21a6dbca-e3a6-8152-9eca-da3c518b7cb7"
-uuid: "2ad9e4b5-a553-8eae-874d-e9ea31d9be9f"
-horo: 1
+coordinate: "vocabulary/amendment · 2/share · f5f64d86"
+contentUuid: "5cc57785-1821-5207-95cf-b8b72524bd0a"
+diamondUuid: "6d2cf836-c55f-8e80-a9ed-7d7f101a6a25"
+uuid: "f5f64d86-3bb6-8c36-9470-a6566dbabb1e"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "25717855-8cc2-8926-8da8-d1d2bf7deaf8"
+  computationUuid: "b53781e0-e9fa-875c-8607-803cd5327bd9"
   stages:
     - stage: path
       stageUuid: "fbe7ed9d-96b4-8efa-a881-09d437e318df"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5ef99b70-c6d2-8a28-85ce-ca63170191c1"
     - stage: horo
-      stageUuid: "44e03630-27ae-8628-a7e6-cd57b4002760"
+      stageUuid: "4f6b98a2-9396-809a-b969-247f1b77e1d0"
     - stage: seal
       stageUuid: "0da32010-2276-8adb-ad3a-38f95f2762c6"
     - stage: uuid
-      stageUuid: "2598e272-88a1-83a5-ae19-776972b102a2"
+      stageUuid: "c65e8c54-3447-801c-899e-f7c67e7b3524"
 version: 2
 ---
 # amendment

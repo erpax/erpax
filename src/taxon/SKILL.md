@@ -2,11 +2,11 @@
 name: taxon
 description: Use when reasoning about taxon — A set of organisms asserted to represent a natural cohesive biological unit.
 atomPath: taxon
-coordinate: "taxon · 1/base · 8d1dd431"
-contentUuid: "e099db40-f63a-5bc3-a781-10c9d6da23de"
-diamondUuid: "f9d72e54-38f2-85b4-8fe3-7c0578c6edb5"
-uuid: "8d1dd431-9741-89d5-a3b3-c86c8ce3d0ca"
-horo: 1
+coordinate: "taxon · 2/share · e91992ef"
+contentUuid: "1481f7d4-cd03-55c8-afdc-118325a34586"
+diamondUuid: "181a9c75-03c6-831d-8ab3-14868b1033aa"
+uuid: "e91992ef-2fb5-8bb5-9936-53e2736227ca"
+horo: 2
 typography:
   partition: taxon
   bondDegree: 17
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a7266cf1-c4d9-8153-b16c-3056d96ed6b5"
+  computationUuid: "bcafced8-ab01-8b05-a472-99b305fd9686"
   stages:
     - stage: path
       stageUuid: "bcba8ff9-49d2-8e72-8631-2190b961001d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d4afb22d-beaf-8182-89c0-8db9ccae1fa4"
     - stage: horo
-      stageUuid: "b17b8b3d-62d6-8530-aaa8-c625596a9ac1"
+      stageUuid: "036eff26-9abe-824b-aa5f-c8420bf65d1b"
     - stage: seal
       stageUuid: "0fda2c41-e70b-8e71-a6da-5e731dfd2b25"
     - stage: uuid
-      stageUuid: "89ed7f85-56ac-8e7d-8827-0d77aac26d69"
+      stageUuid: "f31ff208-900f-8f39-ba33-4b0837fa9783"
 version: 2
 ---
 # taxon

@@ -2,11 +2,11 @@
 name: cap
 description: "Use when reasoning about cap as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/cap"
-coordinate: "vocabulary/cap · 7/descent · c027a3f0"
-contentUuid: "200e07f4-e6b2-5651-a55b-10a622bfa721"
-diamondUuid: "3a809c38-ffe2-8f32-b662-a82befa326a8"
-uuid: "c027a3f0-de8d-8ed8-8686-43626ea581b6"
-horo: 7
+coordinate: "vocabulary/cap · 5/round · b49fe13b"
+contentUuid: "2a72e6d4-38a2-5bf8-8ff6-db26251cca96"
+diamondUuid: "f8e57e80-1fc0-8bca-9858-8eaedae0c52d"
+uuid: "b49fe13b-d4ac-838b-a2d2-82c786b97d01"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d8c33f58-6f08-8dd5-91e9-9eee5d8d7798"
+  computationUuid: "2adc5294-fd17-8910-b8d1-d727ebad1d45"
   stages:
     - stage: path
       stageUuid: "42bdedfa-a4a0-8097-ab21-8daa9f8f931f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "018a2905-a8aa-8e23-8fe2-434ae8101747"
     - stage: horo
-      stageUuid: "790db66e-b69d-8600-8cd5-9f66fd689af6"
+      stageUuid: "07d74ba0-a7e0-8a15-94f6-3a6eafceb115"
     - stage: seal
       stageUuid: "bff92feb-add0-89eb-856c-e00bfbaf32c4"
     - stage: uuid
-      stageUuid: "5806e2a7-b821-8dc5-8b59-991ce49c9e52"
+      stageUuid: "4fad20f9-fdb4-8502-a16d-a519a7f3f8ce"
 version: 2
 ---
 # cap

@@ -2,11 +2,11 @@
 name: hs
 description: Use when implementing or referencing WCO Harmonised System.
 atomPath: "wco/hs"
-coordinate: "wco/hs · 2/share · 476f7c85"
-contentUuid: "a65b0ce6-1b13-5b0f-842a-3e5716660ba8"
-diamondUuid: "b8271670-b010-8fbd-9f44-ca5686363a21"
-uuid: "476f7c85-68a9-8505-81b8-a8708b0e69b2"
-horo: 2
+coordinate: "wco/hs · 1/base · 01b9f7bf"
+contentUuid: "89a4e694-b47c-5284-8a65-6f188f9938d7"
+diamondUuid: "372233bd-a0e8-8cc8-b88c-1bcf967c41df"
+uuid: "01b9f7bf-ac02-8b4d-978d-7200bef1a7a6"
+horo: 1
 typography:
   partition: wco
   bondDegree: 3
@@ -17,7 +17,7 @@ standards:
   - "WCO-HS"
 bindings: []
 signatures:
-  computationUuid: "4283a804-372c-8e12-8414-024dc1cfd173"
+  computationUuid: "49d24a2e-efa3-8a8d-9293-c598ff435182"
   stages:
     - stage: path
       stageUuid: "cf6a70dd-3bb8-8899-8c7e-73cbdd921d82"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "e90a926d-0fc4-8592-8b2f-b227c85fcd80"
     - stage: horo
-      stageUuid: "9da01f60-53de-8c43-b1e6-a4297fc03c6f"
+      stageUuid: "b277c4c7-2c34-877e-b376-f4c54fb6375d"
     - stage: seal
       stageUuid: "0adaf606-99f5-84f7-8c47-9921814ae910"
     - stage: uuid
-      stageUuid: "34fd9789-2639-8a62-9a8f-51db71c2cdce"
+      stageUuid: "23f23389-3762-8310-8e13-fcd7f748cb9b"
 version: 2
 ---
 # WCO Harmonised System

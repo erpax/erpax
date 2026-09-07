@@ -2,11 +2,11 @@
 name: liquor
 description: "Use when reasoning about liquor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/liquor"
-coordinate: "vocabulary/liquor · 7/descent · cc2a3ca7"
-contentUuid: "55869e78-8d58-5e46-a20d-b117a802fdc2"
-diamondUuid: "b7ee1d68-fd7a-8b7e-8eeb-a7b67f34e858"
-uuid: "cc2a3ca7-2aff-8ba1-82c6-f0bc64d9e007"
-horo: 7
+coordinate: "vocabulary/liquor · 4/weave · 79946d03"
+contentUuid: "4e6bb51f-431b-5672-adaa-ded31edcf4c6"
+diamondUuid: "830aec02-7d45-83d6-b81b-2c1b0cd3278a"
+uuid: "79946d03-0453-86d5-88d3-e7889f99d350"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2f984953-517b-87d5-bba3-3f2664d921e0"
+  computationUuid: "7b9d4ae8-29c8-8c98-9130-b3ad75efeaac"
   stages:
     - stage: path
       stageUuid: "60f4727c-f5ff-89cb-8e26-c307032f406a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8d013bee-5a52-89b3-8f1e-2066e764b5af"
     - stage: horo
-      stageUuid: "f0ea35e4-9394-86e3-922d-a416ad0528d8"
+      stageUuid: "9c8ea827-02a0-8b61-8e49-bf51c24ac0a1"
     - stage: seal
       stageUuid: "79b928ea-db81-8f10-a1b5-035e339db5ec"
     - stage: uuid
-      stageUuid: "cb684d07-45c2-83ce-b1c4-d670b3f86909"
+      stageUuid: "29db4695-2938-83b0-9f88-3a7d46a1b277"
 version: 2
 ---
 # liquor

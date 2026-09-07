@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "users",
-    "uuid": "670bd9ff-4df9-8bfd-a486-9469ba35cbd8",
+    "uuid": "f3d2e24b-d240-8fa9-ba38-484e3c4998e4",
     "words": [
       "users"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing authenticated actors — employees, agents, customers, authors — their cross-tenant roles, held competencies, per-user locale/display config, email login, and access credentials. The typeless universal actor and identity root.",
-    "uuid": "b2e843cb-fe07-871f-86b1-3d169a22553d",
+    "uuid": "7265bf8a-6b7f-8bfa-a8cc-011e20c4c6bf",
     "words": [
       "use",
       "when",

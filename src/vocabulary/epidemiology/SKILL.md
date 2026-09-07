@@ -2,11 +2,11 @@
 name: epidemiology
 description: "Use when reasoning about epidemiology — The characteristics of associated patients, such as age, gender, race etc."
 atomPath: "vocabulary/epidemiology"
-coordinate: "vocabulary/epidemiology · 8/crest · 71396a0b"
-contentUuid: "c9badac7-4911-561f-803b-e66dd08d9b42"
-diamondUuid: "445a435f-e204-834e-aa94-225628f7f8ee"
-uuid: "71396a0b-a336-8e0d-a4e0-a021b423e082"
-horo: 8
+coordinate: "vocabulary/epidemiology · 4/weave · 2ec75937"
+contentUuid: "d4a5c0f4-4dca-55d8-ac53-dd8a67e6d484"
+diamondUuid: "39b89549-419f-8526-bf42-352207e46fc3"
+uuid: "2ec75937-911c-88b0-97a6-6475a751e042"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "af0c2dcf-eb3c-8328-920f-79cc104c0dbd"
+  computationUuid: "7c85c8cd-6b23-8090-9c5c-e3206ac212cd"
   stages:
     - stage: path
       stageUuid: "e96bde0b-3d19-8582-88c6-f4ab092a6de9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "6e2b5937-88f9-8466-aa74-33e8cdc34118"
     - stage: horo
-      stageUuid: "f432565b-74d9-875d-a21c-551c10de434e"
+      stageUuid: "dd338abc-18e9-8b13-b90c-a3e738a1f422"
     - stage: seal
       stageUuid: "99606159-1847-8d0a-afae-9d961303046b"
     - stage: uuid
-      stageUuid: "5dbc601d-eb69-806d-b49e-255994d1e719"
+      stageUuid: "10a7552a-4d03-8833-85be-7b18824108ad"
 version: 2
 ---
 # epidemiology

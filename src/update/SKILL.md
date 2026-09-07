@@ -2,10 +2,10 @@
 name: update
 description: "Use when reasoning about update as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: update
-coordinate: "update · 1/base · 15e7bfae"
-contentUuid: "0664b8bb-0324-5c8b-af8e-7d58a71ebf44"
-diamondUuid: "5542c459-d85f-81b9-8841-c27ee2844323"
-uuid: "15e7bfae-e257-85ad-9bf7-7a998f1d7bd2"
+coordinate: "update · 1/base · 7a8b5e7f"
+contentUuid: "0abc171a-e150-5296-a18c-54beb3dcc347"
+diamondUuid: "8b7b03ae-02d1-8b4f-ac73-fd5769160799"
+uuid: "7a8b5e7f-2bba-8ad1-870f-69e76f883e6d"
 horo: 1
 typography:
   partition: update
@@ -15,7 +15,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "538bab14-8a38-85e4-bae5-22b08dfe79c6"
+  computationUuid: "05fa0139-a103-88bd-bbf6-c88f4850c03c"
   stages:
     - stage: path
       stageUuid: "49906b26-c67a-88fb-a8ba-047c6541de94"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "63554fb1-e685-8e8c-9026-cd8da653f4c6"
     - stage: horo
-      stageUuid: "672f9daf-7494-8aa2-9c25-a54956a6ddf3"
+      stageUuid: "c13b5830-d9d7-8b19-869a-254037b9129d"
     - stage: seal
       stageUuid: "f50efca8-a1f7-8789-9919-9435e1bd6dc9"
     - stage: uuid
-      stageUuid: "a6171c31-a244-82ec-9dde-32e978e18a20"
+      stageUuid: "f321fbd1-24e5-8173-97a5-393c1996109c"
 version: 2
 ---
 # update

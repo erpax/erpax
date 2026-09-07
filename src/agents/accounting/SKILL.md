@@ -2,10 +2,10 @@
 name: accounting
 description: "Use when reasoning about accounting — **Law — law: barrel re-export at ; trinity sealed for import purity.**"
 atomPath: "agents/accounting"
-coordinate: "agents/accounting · 5/round · c2288db5"
-contentUuid: "6c2ff536-f1e3-5036-a132-c287a9938686"
-diamondUuid: "4561cc30-b4fb-8f38-9e2e-e7c2d0121993"
-uuid: "c2288db5-7d24-8d3e-b86d-92996c0492b3"
+coordinate: "agents/accounting · 5/round · 0cd98956"
+contentUuid: "a9955f70-bbac-5705-a846-7a4e210e6274"
+diamondUuid: "b8fadafa-9067-839b-8e7a-ad3e9d83b2e5"
+uuid: "0cd98956-d759-819b-bf6d-731eaf3360e8"
 horo: 5
 typography:
   partition: agents
@@ -16,7 +16,7 @@ standards:
   - SOX
 bindings: []
 signatures:
-  computationUuid: "7a111741-de66-8eb4-a479-8826a9e601be"
+  computationUuid: "ecb5531f-3647-887b-9212-5ddc12ab5292"
   stages:
     - stage: path
       stageUuid: "17242111-69f8-8cab-ae1f-d6e5f5a4984d"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "110bb7df-1d23-82a8-84fb-ab4ba7e494e4"
     - stage: horo
-      stageUuid: "f90baf4c-83d5-846a-8908-1cd1421d8c50"
+      stageUuid: "f13f2714-1fde-8d51-b1b2-691c5697db1f"
     - stage: seal
       stageUuid: "e16beb8a-f359-8181-9983-cbcdc87d6137"
     - stage: uuid
-      stageUuid: "3758be5d-4fde-8f07-bfa2-2f65f380ccf5"
+      stageUuid: "e1c6f8e3-7a8f-81fc-abcd-e3ef0cf01927"
 version: 2
 ---
 # accounting

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tinid",
-    "uuid": "04ded610-72f0-85e7-a5e6-a00cc67fe5dc",
+    "uuid": "9cfe4d20-1126-8eef-a4f7-ec642fe325fd",
     "words": [
       "tinid"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about tinid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "ca889c7b-05d8-8434-b24b-b886d9c7921b",
+    "uuid": "b73cb6a0-3ea8-8d67-95f3-ea4c0725fe70",
     "words": [
       "use",
       "when",

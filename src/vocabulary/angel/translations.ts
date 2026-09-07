@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "angel",
-    "uuid": "079e1345-4be0-882c-ab18-cb0fd179f76c",
+    "uuid": "e78810dc-ac7b-836a-86f3-e313646e898d",
     "words": [
       "angel"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax's root entropy dynamic — angel(love·create·↓entropy) ⊕ archangel(fear·destroy·↑entropy) in endless aikido = the trinity; erpax is karma double-entry accounting balancing the entropy debit/credit at every scale via content-uuid; borrowed entropy buys tamper-cost ⇒ fast+secure+compact.",
-    "uuid": "52fc2b69-3aa7-8e81-9bc6-b5fca19629e2",
+    "uuid": "5d2b0970-104c-8f7e-a8bd-153560f2d978",
     "words": [
       "use",
       "when",

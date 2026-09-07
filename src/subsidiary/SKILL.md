@@ -2,11 +2,11 @@
 name: subsidiary
 description: "Use when reasoning about subsidiary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: subsidiary
-coordinate: "subsidiary · 5/round · 43671d16"
-contentUuid: "bb7f3a53-46f2-57a2-b900-aebfd67667b5"
-diamondUuid: "cf42914c-6e30-87e9-abe8-087f8a12d523"
-uuid: "43671d16-70ee-821d-8914-fd59633924b4"
-horo: 5
+coordinate: "subsidiary · 8/crest · e3a0dfab"
+contentUuid: "a52ca9f7-bd3e-58e4-887f-cc0145bb1e09"
+diamondUuid: "d922a0a9-226d-8364-b9f5-01fc20606721"
+uuid: "e3a0dfab-57a1-8a7d-b485-4cfa23609acd"
+horo: 8
 typography:
   partition: subsidiary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "fe8856e3-a024-88ed-bf3b-86a129954da5"
+  computationUuid: "8717c7ac-340d-84e4-95d5-de584fe8f29c"
   stages:
     - stage: path
       stageUuid: "c3ede951-6b5b-8a3f-a9e7-c2fa7329f814"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0e683b83-4a1a-812f-a14d-f2e331b97a90"
     - stage: horo
-      stageUuid: "553f6bae-470c-8d4f-9cbe-abeb8439f027"
+      stageUuid: "4e5c9dfe-3261-8573-81fe-05373264fb03"
     - stage: seal
       stageUuid: "72003641-f693-8ea8-ad33-96822c5cc951"
     - stage: uuid
-      stageUuid: "be5e638d-ddb1-8791-80c1-827ed4591fbc"
+      stageUuid: "ef69f10c-3a18-8d76-9dac-fed332566815"
 version: 2
 ---
 # subsidiary

@@ -2,11 +2,11 @@
 name: uuid
 description: "Use when reasoning about uuid — content-addresses a failure and gives it a typed shape, so the same failure raised twice has the same address and can be counted, grouped and traced."
 atomPath: "error/uuid"
-coordinate: "error/uuid · 2/share · 2556778d"
-contentUuid: "c7b8703e-7f53-5a26-b019-46b4cf99c453"
-diamondUuid: "40b9a81a-1201-82b6-925f-b3788889934d"
-uuid: "2556778d-6fbe-8f6b-8af8-0c828a0abfa2"
-horo: 2
+coordinate: "error/uuid · 4/weave · 2b6611ca"
+contentUuid: "d691b3e5-e4b1-5c11-b971-fdd3cf5b9e6a"
+diamondUuid: "c96d2723-ef4e-8bc0-bf7d-00bc3318605c"
+uuid: "2b6611ca-2584-84c5-a3f4-1987913971b8"
+horo: 4
 typography:
   partition: error
   bondDegree: 825
@@ -18,7 +18,7 @@ standards:
   - W3C Problem Details for HTTP APIs (RFC 9457 — type + title + status)
 bindings: []
 signatures:
-  computationUuid: "6dd1a7e2-f831-87cf-b28e-26ce1dff54e1"
+  computationUuid: "03eb3fdf-bd56-8e7d-a48d-cd179a90f1ba"
   stages:
     - stage: path
       stageUuid: "0561271e-a44f-82d2-8510-37777f9e4729"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "301059e0-52ee-8d5e-8fa4-0eea5895f662"
     - stage: horo
-      stageUuid: "ffe9d944-f916-8d14-8af4-607d268e22cd"
+      stageUuid: "59231637-cd05-86b8-a648-de67bd48d0d8"
     - stage: seal
       stageUuid: "af32320b-85b0-8f11-9f5f-878da4dbe1e0"
     - stage: uuid
-      stageUuid: "2b8ee0ad-e544-8601-ae7f-841466564330"
+      stageUuid: "3f5f9e71-7ad7-887c-ac92-638afd17c341"
 version: 2
 ---
 # error/uuid — an error is a record, not an exception that escaped

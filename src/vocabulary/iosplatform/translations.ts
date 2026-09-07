@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "iosplatform",
-    "uuid": "175f312c-b28a-8515-b47a-5786f92011b3",
+    "uuid": "9a64ec1f-9e61-8c53-ba1e-20f59bb3c059",
     "words": [
       "iosplatform"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about iosplatform as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "61cff525-39bb-84de-92a1-e737a544a723",
+    "uuid": "b54b2cc2-30f6-8739-9ca4-033d24dfa0ae",
     "words": [
       "use",
       "when",

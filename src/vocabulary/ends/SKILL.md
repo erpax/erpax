@@ -2,11 +2,11 @@
 name: ends
 description: "Use when reasoning about ends as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/ends"
-coordinate: "vocabulary/ends · 4/weave · b9d2d012"
-contentUuid: "3ff7a42a-9a67-5784-87ad-c38f6440c70f"
-diamondUuid: "24d72ee7-07b1-8591-8cc4-b7ed86af964b"
-uuid: "b9d2d012-6946-8424-a7b2-7f4fcf34ab91"
-horo: 4
+coordinate: "vocabulary/ends · 5/round · fc8f152e"
+contentUuid: "7a1a0500-3df7-5324-8ed9-3d904f5091e9"
+diamondUuid: "732e096e-81c7-8dba-8419-ed8307a1dfe6"
+uuid: "fc8f152e-c5cd-8d7b-99eb-092263203994"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b5ab244a-7060-8dfb-a12e-767bb79420fa"
+  computationUuid: "8378a636-fbfd-825d-9460-ab1e19d66625"
   stages:
     - stage: path
       stageUuid: "884a4980-98df-8280-b460-72838d09d93c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ff37dd0c-7d5f-855e-8031-1dbd25311630"
     - stage: horo
-      stageUuid: "dc5ec24f-2088-82ca-99aa-a8c056e340d5"
+      stageUuid: "7fbc2013-0df1-80f1-a86c-159bcc3bd513"
     - stage: seal
       stageUuid: "8a0f51dc-4de8-8f78-8794-3095e29b5c56"
     - stage: uuid
-      stageUuid: "1c46ae73-9369-835d-b931-2a5b9c33a8b7"
+      stageUuid: "180a558a-f837-88fc-83c4-91c492223e4e"
 version: 2
 ---
 # ends

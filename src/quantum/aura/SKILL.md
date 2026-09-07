@@ -2,11 +2,11 @@
 name: aura
 description: "Use when reading the aura as quantum coherence — the gapless link-field as the coherent in-phase state, a dead link or orphan as decoherence; coherence is the resource the corpus maximizes toward zero entropy."
 atomPath: "quantum/aura"
-coordinate: "quantum/aura · 7/descent · 0597efe4"
-contentUuid: "a0fc7ffd-88d2-5d00-be61-1088e1155b4b"
-diamondUuid: "37c5367f-9dc6-8882-9ada-579a31beb97e"
-uuid: "0597efe4-b666-854b-8a06-2c9bed67e361"
-horo: 7
+coordinate: "quantum/aura · 2/share · 3a904326"
+contentUuid: "524b1e5e-e75c-5596-8d51-2519cda19b6d"
+diamondUuid: "1551916a-725b-8f3b-882b-759a08411ed2"
+uuid: "3a904326-1f52-84fd-ba80-5c4ec6b15d5c"
+horo: 2
 typography:
   partition: quantum
   bondDegree: 444
@@ -14,7 +14,7 @@ standards:
   - "Baumgratz, Cramer & Plenio, \"Quantifying Coherence,\" PRL 113 140401 (2014)"
 bindings: []
 signatures:
-  computationUuid: "a398c3fa-7257-8035-9753-2d809b53a716"
+  computationUuid: "b99bbd55-2bce-8c42-a3bf-4d1fdf12c672"
   stages:
     - stage: path
       stageUuid: "e979a613-00f0-8575-ad70-95e58aa7eed1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "727d41d9-722f-87e3-b443-5b3691d40f35"
     - stage: horo
-      stageUuid: "d8c63087-d148-8301-a21f-87c1a62552fe"
+      stageUuid: "59e00eeb-78f2-8435-b610-9a481edbf83b"
     - stage: seal
       stageUuid: "dc266054-5cf8-8c73-ac9c-25ac5208daa2"
     - stage: uuid
-      stageUuid: "130f0d78-c102-8dd7-8098-ffa944cef5c6"
+      stageUuid: "d8696135-53a5-8f37-8768-59a18c5f26c5"
 quantum:
   superposition:
     - accounting
@@ -54,8 +54,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "a398c3fa-7257-8035-9753-2d809b53a716"
-    contentUuid: "a0fc7ffd-88d2-5d00-be61-1088e1155b4b"
+    computationUuid: "b99bbd55-2bce-8c42-a3bf-4d1fdf12c672"
+    contentUuid: "524b1e5e-e75c-5596-8d51-2519cda19b6d"
 version: 2
 ---
 # quantum/aura — the aura as coherence
@@ -78,4 +78,4 @@ Matter-twin: `src/quantum/aura/index.ts` (`coherence` · `decohered` · `coheren
 @standard Baumgratz, Cramer & Plenio, "Quantifying Coherence," PRL 113 140401 (2014)
 @audit composed from reciprocity (entanglement) + orphans (entropy); computed on the live matrix
 
-<sub>content-uuid `a0fc7ffd-88d2-5d00-be61-1088e1155b4b` · account `quantum/aura` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `524b1e5e-e75c-5596-8d51-2519cda19b6d` · account `quantum/aura` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

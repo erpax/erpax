@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dashboard",
-    "uuid": "8e2d7d2f-3917-83d4-846b-38dcb7331788",
+    "uuid": "1c3acaff-3c2b-8deb-93b7-e0da871c26f1",
     "words": [
       "dashboard"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about dashboard — An empty admin panel is ambiguous: a first run and a broken connection look identical.",
-    "uuid": "38827bc6-78f4-8798-9c3d-9abeb525fb9e",
+    "uuid": "62957bcf-884a-8c62-8a9e-5f7bff26a478",
     "words": [
       "use",
       "when",

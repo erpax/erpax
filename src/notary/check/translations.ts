@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "check",
-    "uuid": "d1e6eee1-46c8-8eb7-9321-e9cfc9b601ff",
+    "uuid": "4c3966fd-8c9e-8f9c-ba85-528caf99653c",
     "words": [
       "check"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a notary must verify an instrument before sealing it — the per-document-type duty matrix (identity, capacity, title, encumbrance, cadastre, sanctions, tax, spousal consent, company, signature, timestamp, apostille) mapped to the responsible Bulgarian register and the standard it satisfies, with a rosetta coverage audit that surfaces every unwired gap. Provider adapters are contracts; live wiring needs accredited credentials — no endpoint is fabricated, no gap is hidden.",
-    "uuid": "853e1719-5a00-8b04-8899-bcc6ee4a8238",
+    "uuid": "a2455929-df53-8aa2-b77d-d06962a536f8",
     "words": [
       "use",
       "when",

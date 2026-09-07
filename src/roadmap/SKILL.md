@@ -2,10 +2,10 @@
 name: roadmap
 description: "Use when planning deliverables across quarters/years — a timeline of features, milestones, epics, with dependency links and resource allocation. The strategic sequencing."
 atomPath: roadmap
-coordinate: "roadmap · 5/round · b07d3b15"
-contentUuid: "cd0991f8-4e20-56d5-a16b-86162528a597"
-diamondUuid: "0d1c4efd-2002-845d-a5f9-0b2b9ffb889d"
-uuid: "b07d3b15-6199-8d35-a320-9a13871ecd32"
+coordinate: "roadmap · 5/round · 66f9ef63"
+contentUuid: "6e7150e1-046b-5872-90f7-5c9a45de6edf"
+diamondUuid: "8df7fe38-7fe7-8e2f-ac7d-8d15f6b71933"
+uuid: "66f9ef63-b27b-87fb-9f14-703b21b85232"
 horo: 5
 typography:
   partition: roadmap
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ca190fd4-6afe-8318-8bf7-7fecdb7df27f"
+  computationUuid: "65bba4ad-b8c8-839a-9961-0d41c32fd8f0"
   stages:
     - stage: path
       stageUuid: "7ea10efc-3d21-8bf8-98b5-83ebc572d331"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "302320ff-0a1f-89c9-b663-a4e03db1fc08"
     - stage: horo
-      stageUuid: "96239134-0ae3-80ce-af17-d6f161c34bae"
+      stageUuid: "2cd1d81d-818d-8079-8be8-251410578408"
     - stage: seal
       stageUuid: "a79b8ec0-4637-826c-92a9-a9d4340e77d1"
     - stage: uuid
-      stageUuid: "debae335-562f-85d6-8b4e-aed3fdc63224"
+      stageUuid: "436c6f03-5853-88f9-888a-588f18cb718e"
 version: 2
 ---
 # roadmap

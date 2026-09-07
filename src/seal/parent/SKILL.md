@@ -2,10 +2,10 @@
 name: parent
 description: "Use when an atom needs the ancestor of a path without inheriting the seal barrel — parentAtomPath and ancestorPaths, in a module with ZERO imports. Three lines of string arithmetic that used to live in @/seal, whose barrel is inside the corpus's import component, so path/ paid for the whole subtree to get one function. @/seal re-exports both, so no existing reader changed."
 atomPath: "seal/parent"
-coordinate: "seal/parent · 7/descent · 5141ebeb"
-contentUuid: "4670eae8-5b6b-5f07-9d0d-62038177e62d"
-diamondUuid: "7847ad80-376f-8f79-aecf-9e2f783f64d1"
-uuid: "5141ebeb-5036-8b64-b26a-603e153176b9"
+coordinate: "seal/parent · 7/descent · 3d9f640d"
+contentUuid: "87d9077c-a4a6-57eb-ba0c-985a0db56a1d"
+diamondUuid: "b7099c87-7a31-8c1d-9c44-7ad38d35f42f"
+uuid: "3d9f640d-63db-878d-bcca-9fb56b51529f"
 horo: 7
 typography:
   partition: seal
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e5abb9ad-ff8e-8a64-9f62-660bd88b1386"
+  computationUuid: "1ccfd85c-f75d-8917-8fee-1b99b5c6ffb8"
   stages:
     - stage: path
       stageUuid: "2d122007-38d3-883e-99f0-69f3f6c58a76"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3249b595-dc2b-8eac-a16d-157fa8263b45"
     - stage: horo
-      stageUuid: "aaf198c2-36bb-89cc-9d17-2dfd803f8c11"
+      stageUuid: "7d66954a-d714-88bb-ae5b-b0135b65ecfb"
     - stage: seal
       stageUuid: "8c8ac4a5-bc77-848d-b5ed-ea2c5b8b0c05"
     - stage: uuid
-      stageUuid: "05ec5de7-5800-8b47-9258-2c525544a8b5"
+      stageUuid: "85762a9f-9732-8960-8c09-5a53d1f769db"
 version: 2
 ---
 # seal/parent — three lines that should cost nothing to import

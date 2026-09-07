@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "status",
-    "uuid": "b29d091e-41db-883b-ab7b-ff2827d39c99",
+    "uuid": "aac8cc52-01a9-8fdb-a1e4-0ca970262a3b",
     "words": [
       "status"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading the quantum surface state from the CLI — superposition pending paths, last collapse, bond reciprocity. Promoted from a loose sibling to an atom because it is dispatched by PATH, which no lexical reference scan can see. Run: tsx src/quantum/status/index.ts",
-    "uuid": "1d7ddd2a-4d58-8d9b-8516-410dfa20fc19",
+    "uuid": "67ae82ed-b0e4-8953-abe3-048db4a2060a",
     "words": [
       "use",
       "when",

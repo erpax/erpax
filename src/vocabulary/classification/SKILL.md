@@ -2,18 +2,18 @@
 name: classification
 description: Use when modelling one classification — the singular model of the classifications collection (the plural store); the assignment of a thing to a category within a scheme.
 atomPath: "vocabulary/classification"
-coordinate: "vocabulary/classification · 8/crest · 173766bb"
-contentUuid: "e9868366-442d-59be-9a30-de7e8638ed3c"
-diamondUuid: "35e85e63-6227-84c8-bec0-1e330203b7e2"
-uuid: "173766bb-4c8b-8713-80f0-a2207dd051fd"
-horo: 8
+coordinate: "vocabulary/classification · 1/base · 151c9876"
+contentUuid: "487bcb8e-c696-5b89-80da-cf6f1ade2645"
+diamondUuid: "8f1436b2-d49f-8723-911a-c692cefaf498"
+uuid: "151c9876-b154-82fc-a719-af68e57e5163"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "35d68dc1-e9a8-8b0a-a0e1-6fbeae126815"
+  computationUuid: "c548798f-ce94-8a59-80ca-de8d54345743"
   stages:
     - stage: path
       stageUuid: "691a7e21-2ea4-8817-bcd6-17872b9aa6e5"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "8be8fe6b-24b1-80a5-8712-25edfe819d8e"
     - stage: horo
-      stageUuid: "0d1d3be8-4dd9-8d5e-87f2-29984557dcf4"
+      stageUuid: "24a20297-b662-8d06-b6db-510eda69997d"
     - stage: seal
       stageUuid: "4829c1b2-54ec-85c2-a0c5-4c522035637a"
     - stage: uuid
-      stageUuid: "428b7fc7-3146-8b9b-8495-f50380529202"
+      stageUuid: "4f9133d7-ee53-83d0-acb9-adfa420c98bb"
 version: 2
 ---
 # classification — the model of one [[classifications]] row

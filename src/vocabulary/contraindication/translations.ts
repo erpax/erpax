@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "contraindication",
-    "uuid": "f154ae84-8faa-881c-bb96-43b388601876",
+    "uuid": "7e8057c8-38b4-889c-9eec-1e02d1577b2b",
     "words": [
       "contraindication"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about contraindication — A contraindication for this therapy.",
-    "uuid": "73d7868b-8307-8b93-8f61-2abb11758656",
+    "uuid": "df8dc38c-ea82-80a5-bbf3-862853253aaa",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: "108"
 description: "Use when implementing or referencing NIST SP 800-108 — Recommendation for Key Derivation."
 atomPath: "nist/sp/800/108"
-coordinate: "nist/sp/800/108 · 7/descent · a1f0bf94"
-contentUuid: "7cec6c8e-12a1-5537-866c-c51266ece8db"
-diamondUuid: "a5bb918c-ee53-89e5-a3f5-bbac9f8be84d"
-uuid: "a1f0bf94-5943-8b53-8c75-f680b5e71f02"
-horo: 7
+coordinate: "nist/sp/800/108 · 5/round · acbe6742"
+contentUuid: "0fbb2b95-0e30-5aa0-a309-a09f2e96d28a"
+diamondUuid: "79159ff2-00a0-8e6a-99fc-a7c6f26bbc3f"
+uuid: "acbe6742-c2a9-8a93-ad3f-fff9ffc1434f"
+horo: 5
 typography:
   partition: nist
   bondDegree: 4
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "bfdd4a8d-2c23-8436-880b-c1c057002dce"
+  computationUuid: "c3fccb77-063d-8db8-8369-abc23f512173"
   stages:
     - stage: path
       stageUuid: "f8c8ccb7-85e6-8279-a498-ab67ffac6e22"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "04479110-e782-8523-8dda-5ee4ce7957fb"
     - stage: horo
-      stageUuid: "8fa23fdf-3f8f-8795-a870-f49051ae8c63"
+      stageUuid: "fc80fdaa-ef9c-8bbf-8e0c-edf0c56ca179"
     - stage: seal
       stageUuid: "3eccab13-08e9-8d8e-87c0-10a5b728b585"
     - stage: uuid
-      stageUuid: "aff68bea-e546-8c86-b132-1554ca3afa0b"
+      stageUuid: "6ed767e0-1fb4-807b-a8e9-9f4c1876772c"
 version: 2
 ---
 # NIST SP 800-108 — Recommendation for Key Derivation

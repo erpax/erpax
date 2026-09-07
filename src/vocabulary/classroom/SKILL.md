@@ -2,10 +2,10 @@
 name: classroom
 description: "Use when modelling a multi-agent learning session — a team of agents in pedagogical roles (teacher delivers, peer debates, examiner gates, debater brings viewpoints) teaches a competency to a learner (human or agent — the actor-merge). The examiner IS the gate, the debate IS competition (viewpoints → harmonic-first → decide), the learner acquires the competency's skillRoute. Generative friction, not passive delivery; the learner owns their record (sovereign, content-addressed)."
 atomPath: "vocabulary/classroom"
-coordinate: "vocabulary/classroom · 8/crest · 413d680a"
-contentUuid: "27fe9ed0-3487-5b52-a141-426a86549779"
-diamondUuid: "f77e79e5-a83a-86c0-bd94-8a45f4e5dd8b"
-uuid: "413d680a-c328-8d3e-a5a0-dce41436aa2a"
+coordinate: "vocabulary/classroom · 8/crest · 461aea27"
+contentUuid: "cc7a8e9b-672b-52b4-9bcf-80869d6ff646"
+diamondUuid: "2710e297-04e5-8d1e-b6d5-1ae91a850bb9"
+uuid: "461aea27-e583-8aa0-b698-dceac0abf552"
 horo: 8
 typography:
   partition: vocabulary
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ea31b245-6b97-8f4d-b9fb-4674951c89ba"
+  computationUuid: "1c84290e-348b-8078-b514-cc1aaa8ef301"
   stages:
     - stage: path
       stageUuid: "77a18f36-3e64-88d8-9c8a-e45315f34c3c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c0acd919-265e-8baa-a193-3d6de304208a"
     - stage: horo
-      stageUuid: "b5f42569-dea7-88fa-8a67-bbb2867532f2"
+      stageUuid: "6da24809-acf1-8eeb-adea-179ba325c9b1"
     - stage: seal
       stageUuid: "20d75ba6-6fd2-8c7e-a779-a119a1f05130"
     - stage: uuid
-      stageUuid: "02ce559a-b6da-815c-9d01-69703959af6a"
+      stageUuid: "4c422706-c1c5-87c2-9ac3-6b097bf5a007"
 version: 2
 ---
 # classroom — a team of agents teaching, generative friction not delivery

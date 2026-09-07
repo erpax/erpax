@@ -2,10 +2,10 @@
 name: attachment
 description: "Use when reasoning about attachment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/attachment"
-coordinate: "vocabulary/attachment · 7/descent · 2bfceef0"
-contentUuid: "403e48aa-5b3b-50d8-b090-84e20d2585e7"
-diamondUuid: "2a95d5af-1107-8022-96fa-f7158c6da4da"
-uuid: "2bfceef0-5186-89d7-b2e7-a8d17d0a9869"
+coordinate: "vocabulary/attachment · 7/descent · 86726289"
+contentUuid: "eea2d38b-3a70-50fb-8448-36f24098719a"
+diamondUuid: "c40b82b9-383b-8dfe-8158-37bc1abb977e"
+uuid: "86726289-5d1a-8c40-aa3f-7b8ecb26a6c3"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "209d98a5-beb7-8ae5-9694-dd6e61619445"
+  computationUuid: "30a54c05-3d0c-8a29-803f-30de551f6d84"
   stages:
     - stage: path
       stageUuid: "8b0c1f22-ad00-8d54-8793-00d618c8f448"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fc1555ab-9c93-8414-b62d-d7eb07c3a4a8"
     - stage: horo
-      stageUuid: "5a73e872-0700-8551-bef3-d49db8d4168c"
+      stageUuid: "f7c10ff1-f850-8a25-aa80-cbab1146d566"
     - stage: seal
       stageUuid: "361294b3-e577-8759-b088-1ad91b95701d"
     - stage: uuid
-      stageUuid: "7f8ec66a-9f47-8b32-9a40-e72353031c61"
+      stageUuid: "8f98301d-d3db-829f-9dc1-57907e8e65dc"
 version: 2
 ---
 # attachment

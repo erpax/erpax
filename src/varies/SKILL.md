@@ -2,11 +2,11 @@
 name: varies
 description: "Use when reasoning about varies — Indicates the property or properties by which the variants in a ProductGroup vary, e.g. their size, color etc. Schema.org properties can be referenced by their short name e.g. \"col"
 atomPath: varies
-coordinate: "varies · 5/round · 8c9b78f6"
-contentUuid: "78faeccf-3490-55fb-add7-33fc9bb454cc"
-diamondUuid: "c5e661f0-d030-8fed-8c04-9b21d03ceee7"
-uuid: "8c9b78f6-510a-8705-abfe-7606203b8dd2"
-horo: 5
+coordinate: "varies · 1/base · 10fa22fa"
+contentUuid: "fdccc9fa-a104-5eb3-a426-29188e036fea"
+diamondUuid: "f33c3050-21da-8d41-9c43-1ff4f8f9154b"
+uuid: "10fa22fa-813a-88b8-a48a-b8739743f0aa"
+horo: 1
 typography:
   partition: varies
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "080aac66-8abc-8b5f-8aec-8d6fa0588751"
+  computationUuid: "f9455249-e9a6-8ba8-a12b-bc0604ddc397"
   stages:
     - stage: path
       stageUuid: "7f5987d1-e7a2-8e5a-b1b9-75953171201c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "664ee253-84d2-8495-a378-17fa7c43eeaa"
     - stage: horo
-      stageUuid: "365e8067-4c86-883c-b778-1abab18374a9"
+      stageUuid: "dc830cbd-3a51-808a-a90b-0dc21b157589"
     - stage: seal
       stageUuid: "3c2ae57e-4975-8236-a55e-a7b623ef5225"
     - stage: uuid
-      stageUuid: "b450385c-4f3c-8d60-98cb-9cc3802ff86a"
+      stageUuid: "4afb2343-30c3-8841-b293-fee3638d9645"
 version: 2
 ---
 # varies

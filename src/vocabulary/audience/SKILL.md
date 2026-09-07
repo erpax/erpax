@@ -2,11 +2,11 @@
 name: audience
 description: "Use when reasoning about audience — Intended audience for an item, i.e. the group for whom the item was created."
 atomPath: "vocabulary/audience"
-coordinate: "vocabulary/audience · 4/weave · f6793a8f"
-contentUuid: "261cb953-0e34-5b3c-97c9-14df4089cad6"
-diamondUuid: "30e3e06c-7f47-841b-80f3-c943e67905ec"
-uuid: "f6793a8f-d1b8-8745-8b90-97dd6d7e403d"
-horo: 4
+coordinate: "vocabulary/audience · 7/descent · db52b665"
+contentUuid: "995f9523-faeb-576b-9d10-3499ccfff02d"
+diamondUuid: "d256677f-02b1-8d87-82b3-88df942b0b81"
+uuid: "db52b665-3d49-8002-8fd4-87bf085c6bc2"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 45
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "13d54db5-89c4-8b54-8042-2bbb137fb77a"
+  computationUuid: "a3a98a89-57f5-862c-8342-dd36cdb9763e"
   stages:
     - stage: path
       stageUuid: "7460fac9-470c-846e-8561-b2c8161d4095"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "edde0fec-ae21-826c-9146-cda1a6ea355d"
     - stage: horo
-      stageUuid: "8364ea65-bc76-8105-8e11-66caae061243"
+      stageUuid: "2a71961d-61b1-85c5-aec6-84d9e3fc5cfd"
     - stage: seal
       stageUuid: "9ca94249-d736-8397-adfc-d84a07cdfd08"
     - stage: uuid
-      stageUuid: "897efb48-26af-815a-b281-bf2f46dd9a8c"
+      stageUuid: "88c1a4aa-4f98-8363-8162-9a858e9c99f0"
 version: 2
 ---
 # audience

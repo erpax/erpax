@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "delimited",
-    "uuid": "b2751ffe-339d-85cd-8ffa-5e32338961d3",
+    "uuid": "f3b9d815-2a19-8343-b0e3-24932e19c33f",
     "words": [
       "delimited"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about delimited as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "850afbcf-0dc6-86e4-83b8-a1f8ad0d6981",
+    "uuid": "a0321a22-a1a6-84e0-ba82-bbfb4de66790",
     "words": [
       "use",
       "when",

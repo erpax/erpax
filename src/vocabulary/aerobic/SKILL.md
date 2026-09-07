@@ -2,11 +2,11 @@
 name: aerobic
 description: "Use when reasoning about aerobic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/aerobic"
-coordinate: "vocabulary/aerobic · 2/share · 2c0519e8"
-contentUuid: "969de546-52dd-571c-bd07-b3fbbfe41d78"
-diamondUuid: "5ff4ec9b-c17c-8d2e-bfe3-22f9f2218cfd"
-uuid: "2c0519e8-123d-8fee-8776-d0ddc5ddefda"
-horo: 2
+coordinate: "vocabulary/aerobic · 7/descent · 2b308807"
+contentUuid: "b1bdfa97-d8c1-5d0d-9a9c-f76816e81463"
+diamondUuid: "7e8f6862-9121-87fe-b37e-87f9cb96c8e8"
+uuid: "2b308807-1957-8e6b-acce-e0e19bd725ef"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d6a88e87-949f-8090-b2c1-f8bb86f8ec59"
+  computationUuid: "022f36bd-4dc9-801f-ac05-4cf027ecbf0e"
   stages:
     - stage: path
       stageUuid: "2fe56e50-b620-87f5-a46e-1c4b12beb983"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b333b9aa-cf26-89af-862a-68adbf9eac65"
     - stage: horo
-      stageUuid: "7d760e1d-6409-835d-845c-0e7cdc135b14"
+      stageUuid: "23100c3a-a749-8b64-8570-3e2c91ae6a49"
     - stage: seal
       stageUuid: "864847c7-c07b-8dc7-8dde-66d4691d7176"
     - stage: uuid
-      stageUuid: "af2e8df2-5e50-8627-a5a5-55b6dc2a7825"
+      stageUuid: "c75ef663-117c-8cae-b0d2-bff503a8b5ce"
 version: 2
 ---
 # aerobic

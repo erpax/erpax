@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "projection",
-    "uuid": "edce67c8-6b3e-865c-9a9f-28e9bb7f9cbe",
+    "uuid": "0a03b667-143d-8d3f-84b4-5df97b69c32c",
     "words": [
       "projection"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when content, search, locale, version, or CSS colour must agree about what a record IS — they all DRY-derive from ONE content projection through the content-uuid. The uuid singularity realised: project(record) returns identity (uuid), searchable text (multi-search), and a deterministic colour (CSS) from the same bytes; per-locale content gives the per-locale uuid, and a version is the uuid in time.",
-    "uuid": "64e3c056-8322-8407-af8a-20a6fabf2feb",
+    "uuid": "39887a30-d6c1-856d-9f34-c88a2caa5b9f",
     "words": [
       "use",
       "when",

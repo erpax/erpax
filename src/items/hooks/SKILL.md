@@ -2,10 +2,10 @@
 name: hooks
 description: "Use when reasoning about the items collection's Payload hooks — before/after change and validate logic for items."
 atomPath: "items/hooks"
-coordinate: "items/hooks · 3/3 · d693eaab"
-contentUuid: "c0b2928b-85de-591d-adc2-63b8768fcf6c"
-diamondUuid: "2b2580fb-4f70-8a57-8738-6f89c9c1b6c1"
-uuid: "d693eaab-21a5-8595-8e2d-6e82765be348"
+coordinate: "items/hooks · 3/3 · c409322c"
+contentUuid: "f9d4e84d-4b96-5e5c-9f92-20b2d38fc53f"
+diamondUuid: "eec88c89-3266-8e24-832e-0b2a311584c4"
+uuid: "c409322c-a8d4-88bd-b5c2-456a6cc5fb7a"
 horo: 3
 typography:
   partition: items
@@ -16,7 +16,7 @@ standards:
   - UNSPSC
 bindings: []
 signatures:
-  computationUuid: "897b6f5e-2285-8463-8262-9aafc32f4ae9"
+  computationUuid: "c489e63e-be9d-85d6-8ab2-7e76947cdb52"
   stages:
     - stage: path
       stageUuid: "ff1556ae-0d0f-8c19-a31d-8a775fcce015"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "885e8646-9a47-8e85-90e0-4b14696ca3a6"
     - stage: horo
-      stageUuid: "8178dfcb-a378-8f30-86fc-a440d4347002"
+      stageUuid: "72a0c4b9-61b6-8fc1-bf1a-cc5ffb928fc4"
     - stage: seal
       stageUuid: "1aed3741-f735-898e-97f7-4a9ae196bf37"
     - stage: uuid
-      stageUuid: "09d90ffa-d3cf-8ef4-9c68-5e170fc38c0e"
+      stageUuid: "ba7c1081-7f38-8156-9b58-ab7ef89a55e9"
 version: 2
 ---
 # items/hooks

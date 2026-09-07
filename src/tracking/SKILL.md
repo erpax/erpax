@@ -2,11 +2,11 @@
 name: tracking
 description: "Use when reasoning about tracking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: tracking
-coordinate: "tracking · 5/round · 9d56dff3"
-contentUuid: "dbaad4b5-b4f1-5bf2-a6e0-5847025ad9f7"
-diamondUuid: "8b104195-0ce5-82e4-8d99-0672ad47d0fe"
-uuid: "9d56dff3-7169-8b68-8b11-83caffee643f"
-horo: 5
+coordinate: "tracking · 1/base · 7b694641"
+contentUuid: "a9c1eefe-3a18-5f86-a09a-6da2ffccc702"
+diamondUuid: "f3c5b132-4504-83a6-8668-16bd3e72ad68"
+uuid: "7b694641-6969-8e48-9c18-62b946f6e97f"
+horo: 1
 typography:
   partition: tracking
   bondDegree: 19
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b5ce5e8d-679e-8bb8-a216-573a88285183"
+  computationUuid: "b414f004-18b5-8479-af9e-e4370eb4f73d"
   stages:
     - stage: path
       stageUuid: "4819b5ba-50a5-8bfc-b2be-b10007050e3c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9e323c3c-d2b9-8229-8d99-89bffbaa7f1b"
     - stage: horo
-      stageUuid: "2b727fc9-5416-89ce-8542-2916a67a2cc1"
+      stageUuid: "0b6ed3a6-3179-8e4c-9d56-1385adcc42cd"
     - stage: seal
       stageUuid: "b7661ae1-7d93-850b-af74-14833c376a09"
     - stage: uuid
-      stageUuid: "f0ac8952-63a6-8f0a-9e82-2bc1875e4c70"
+      stageUuid: "ee5edc86-e1df-8d4f-a02f-53a076ad4aa5"
 version: 2
 ---
 # tracking

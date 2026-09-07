@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "campaign",
-    "uuid": "1fc289c2-a6cc-87e3-9663-54c0f7400cfa",
+    "uuid": "aac78ac5-58ee-87f0-9eaf-8ac8d4351a3e",
     "words": [
       "campaign"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when coordinating multi-channel marketing initiatives — campaign definition, channels, targeting, messaging, schedule, budget, ROI tracking.",
-    "uuid": "5e5ae21e-692a-85de-beb4-d397136fc97c",
+    "uuid": "ac918bf6-baa3-86a4-8b55-cd8b18a8a4e1",
     "words": [
       "use",
       "when",

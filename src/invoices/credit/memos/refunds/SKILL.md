@@ -2,10 +2,10 @@
 name: refunds
 description: "Use when tracking the actual cash payment back to a customer for a credit memo — Stripe, ACH, SEPA, check or cash; ISO-20022 pacs.004 return, tokenised card data, GL journal entry, refund-approval SoD. The refunds collection."
 atomPath: "invoices/credit/memos/refunds"
-coordinate: "invoices/credit/memos/refunds · 1/base · db415fc2"
-contentUuid: "5c623b24-ec2d-5678-bd98-476a423b0933"
-diamondUuid: "38374265-47a2-8968-955b-0f5cd1aabb21"
-uuid: "db415fc2-cbc7-8439-9cab-beace5cb9457"
+coordinate: "invoices/credit/memos/refunds · 1/base · ca43d268"
+contentUuid: "79bf27a0-fc7a-5c06-b3c3-6ac1fb555b2f"
+diamondUuid: "6422720c-1fcf-8a7a-81ab-dfeced9f6562"
+uuid: "ca43d268-46ef-8f28-a0c7-05d25ee116c2"
 horo: 1
 typography:
   partition: invoices
@@ -24,7 +24,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "804f7875-5e91-892a-8541-3a713400abab"
+  computationUuid: "7b0cabaa-9817-8de6-92c7-9cda42ce9f23"
   stages:
     - stage: path
       stageUuid: "b102a1cc-74f3-84f1-b992-73431a965887"
@@ -35,11 +35,11 @@ signatures:
     - stage: links
       stageUuid: "1a286aa0-42d7-84ab-8c05-372819be4ed6"
     - stage: horo
-      stageUuid: "2af21c83-f272-87dc-b633-45d0d8a13777"
+      stageUuid: "3aa557e6-50c1-8584-a75b-703ab633677b"
     - stage: seal
       stageUuid: "1e1435da-6cf4-8211-a7e3-27f976534703"
     - stage: uuid
-      stageUuid: "bd99cfcc-0604-8921-8956-f3da29ad4af6"
+      stageUuid: "9a195292-74d2-8eee-8253-d0b1c296d4b9"
 version: 2
 ---
 # refunds

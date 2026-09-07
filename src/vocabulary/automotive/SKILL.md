@@ -2,11 +2,11 @@
 name: automotive
 description: "Use when reasoning about automotive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/automotive"
-coordinate: "vocabulary/automotive · 7/descent · d5fcee21"
-contentUuid: "4cb225ae-7684-5d66-978d-0cdf0af223b7"
-diamondUuid: "0b48fe00-87f9-82b7-b648-e35336573c6d"
-uuid: "d5fcee21-7c59-8728-b0c0-e3a4844a4077"
-horo: 7
+coordinate: "vocabulary/automotive · 5/round · 87e21a70"
+contentUuid: "85a34ed1-6086-50b7-82d8-4ab2207d0578"
+diamondUuid: "0c0b742b-54bb-8db8-8ab1-9cea00236361"
+uuid: "87e21a70-defc-8d48-884d-37e7b8b2a6d2"
+horo: 5
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "17cffd61-051e-8619-9946-b324255350fd"
+  computationUuid: "1fdc8f2a-ecda-852a-8dad-9fea022b03d2"
   stages:
     - stage: path
       stageUuid: "0be1b10c-e60d-8245-9dd4-d4d57dadd408"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "700ace6c-430a-82d5-9fd5-bf8168c9c339"
     - stage: horo
-      stageUuid: "6eef66ea-8f4b-88a4-9697-5c87cebd2768"
+      stageUuid: "9aaf9d62-ea25-88c3-8e60-a83c09897aff"
     - stage: seal
       stageUuid: "c89845fb-331c-8924-8c18-4023a6a37880"
     - stage: uuid
-      stageUuid: "eaee1c42-e0fa-8bec-b7d0-2520d18d23f0"
+      stageUuid: "03b10bf5-9dfa-891e-965a-bd003b54732b"
 version: 2
 ---
 # automotive

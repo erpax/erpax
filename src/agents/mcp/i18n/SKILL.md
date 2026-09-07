@@ -2,11 +2,11 @@
 name: i18n
 description: "Use when reasoning about i18n — MCP localization layer — Slice ZZZZZZZZ (2026-05-11)."
 atomPath: "agents/mcp/i18n"
-coordinate: "agents/mcp/i18n · 8/crest · 850aad02"
-contentUuid: "a30b1b10-fe93-5347-943f-64357535ef4e"
-diamondUuid: "7d25416c-9933-8dd8-9d9f-d5ece62a7bf7"
-uuid: "850aad02-2120-8eed-ab35-a40c062655ce"
-horo: 8
+coordinate: "agents/mcp/i18n · 7/descent · bff19a9a"
+contentUuid: "5702c588-8a6a-5683-84e9-7c60f3d7f107"
+diamondUuid: "70a3abf9-691d-84e7-ad14-65ff060143aa"
+uuid: "bff19a9a-1eac-8a29-831f-8fce7f4e0dc8"
+horo: 7
 typography:
   partition: agents
   bondDegree: 6
@@ -21,7 +21,7 @@ standards:
   - "W3C HTTP Content-Language (RFC 7231 §3.1.3.2)"
 bindings: []
 signatures:
-  computationUuid: "fedb56cf-b8a1-8ae8-be05-e676377a7588"
+  computationUuid: "1acf7c57-9f38-84ad-9303-dcaa6c1ca98a"
   stages:
     - stage: path
       stageUuid: "0812a65d-92fd-8c11-ae79-12178df6b4a2"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "e54fe92b-0b40-8eb9-a723-f18a39b4cca3"
     - stage: horo
-      stageUuid: "944df675-b34c-8ee7-912e-c9739ba15aaf"
+      stageUuid: "60d89ac2-eab9-8acb-a998-181793e5a0ba"
     - stage: seal
       stageUuid: "f0096b14-8850-85b3-8f18-863b77ccd7c1"
     - stage: uuid
-      stageUuid: "d1dfda83-aeda-8290-ace8-9e9d92c1f233"
+      stageUuid: "b1ec472a-0eda-8ad7-86fd-f315d2b6ad61"
 version: 2
 ---
 # agents/mcp/i18n

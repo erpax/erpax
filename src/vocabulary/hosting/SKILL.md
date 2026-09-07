@@ -2,11 +2,11 @@
 name: hosting
 description: "Use when reasoning about hosting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/hosting"
-coordinate: "vocabulary/hosting · 2/share · 3cfb6e12"
-contentUuid: "efd6b05e-d2a7-52a3-8d44-ef43df9ddab4"
-diamondUuid: "fc1d5df5-6a2c-82ed-9c33-794e621c3199"
-uuid: "3cfb6e12-0a47-8e05-87bb-252e91cb0978"
-horo: 2
+coordinate: "vocabulary/hosting · 7/descent · 79a18f7c"
+contentUuid: "6d49dcad-6a3b-5552-80fd-7d165af9294c"
+diamondUuid: "42681d52-4f32-8f95-a513-5cf1f5ca7233"
+uuid: "79a18f7c-f0b3-8ef2-8443-48d158dea303"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c4d52f0e-0b98-8025-b132-3fc53154d2be"
+  computationUuid: "82e53223-42a1-8725-9e1f-8aa7f14df8d4"
   stages:
     - stage: path
       stageUuid: "f62c3c0b-634d-824c-9baf-22f56bdae3a5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2f18f0fd-45b9-8f4a-9f51-dd503358ddc1"
     - stage: horo
-      stageUuid: "c328b5af-6ff8-8a60-bb87-10ad9dc52850"
+      stageUuid: "ed9caed0-a71e-8f3b-a624-5208a4667eda"
     - stage: seal
       stageUuid: "9db73674-faf4-8df2-848e-5e9bbe255f96"
     - stage: uuid
-      stageUuid: "9e87c57b-c60e-8a49-ad19-ee9a64e329eb"
+      stageUuid: "bb4744d8-d5da-87a0-b1ae-05b276cb012c"
 version: 2
 ---
 # hosting

@@ -2,18 +2,18 @@
 name: deduplication
 description: "Use when eliminating duplicate records — duplicate detection (exact/fuzzy), merge strategies, idempotency to prevent re-ingestion, duplicate scope (entity/transaction/field-level), dedup window/time-range."
 atomPath: "vocabulary/deduplication"
-coordinate: "vocabulary/deduplication · 5/round · bfadc5f1"
-contentUuid: "629e1d15-c904-55d6-97b3-9654a6c000ef"
-diamondUuid: "60868f10-7101-8084-ac21-d6d86bb85be2"
-uuid: "bfadc5f1-d409-8e51-ac01-e633e0a16680"
-horo: 5
+coordinate: "vocabulary/deduplication · 8/crest · aeb05f5e"
+contentUuid: "8473339c-81ba-5b46-a9a5-d37f77166daf"
+diamondUuid: "5c0e1e47-9cc5-8b64-a196-076ba5ab9bac"
+uuid: "aeb05f5e-4154-8550-8cd1-c551f8863457"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 20
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ce60c7b0-4c5d-8772-9264-a1498b014289"
+  computationUuid: "c43ce69b-7460-8426-92ee-6479a3ea7d60"
   stages:
     - stage: path
       stageUuid: "838ff753-b85c-807d-a761-e1cd4dcbc1f5"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "4e7f5096-014b-82f8-ab6d-79a20f4a8c5a"
     - stage: horo
-      stageUuid: "33e9a441-72c7-8502-b3ee-d7d877a8e3ca"
+      stageUuid: "4627bf61-7b62-8ffa-88c2-9f6861840c4f"
     - stage: seal
       stageUuid: "48839d1e-b202-8b82-92c4-4eaeb873998c"
     - stage: uuid
-      stageUuid: "1ac6b7ec-2c89-8103-b6b8-1f0a0832856e"
+      stageUuid: "8202f1d2-5edd-8c1d-bcd2-171bcd9810ed"
 version: 2
 ---
 # deduplication

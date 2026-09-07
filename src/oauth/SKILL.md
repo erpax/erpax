@@ -2,11 +2,11 @@
 name: oauth
 description: "Use when acquiring or refreshing an external OAuth 2.0 token — the credential lifecycle (acquire → use → expire → refresh) and scope/least-privilege check, encoded as pure policy. The token-endpoint HTTP is a runtime boundary; the lifecycle logic is native and tested. One atom serves every external API (Google Workspace, country-apis…), with secrets resolved per-tenant via the credential broker — never in the registry."
 atomPath: oauth
-coordinate: "oauth · 8/crest · 24a7fc42"
-contentUuid: "5a9da66b-163d-539e-b0cc-efcce80cd619"
-diamondUuid: "ef643464-e739-8716-90c7-dbbb074f7ab4"
-uuid: "24a7fc42-ab8f-8d20-803c-3dde52726eae"
-horo: 8
+coordinate: "oauth · 7/descent · e8ba6147"
+contentUuid: "20476547-149d-53df-bc00-e9667c337ab5"
+diamondUuid: "4ade724a-4354-865e-898f-a22173b43d29"
+uuid: "e8ba6147-83d9-8109-aa76-fa319d023dff"
+horo: 7
 typography:
   partition: oauth
   bondDegree: 21
@@ -19,7 +19,7 @@ standards:
   - "RFC-6750`"
 bindings: []
 signatures:
-  computationUuid: "f95a4283-2d8a-897e-8265-7d0b73b184df"
+  computationUuid: "ec7a84da-3188-8be3-8411-f690ba871c25"
   stages:
     - stage: path
       stageUuid: "d07fbf41-c23b-8f0d-a2d7-62625618a7f3"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "0cb2eee2-19df-8e3b-9355-47f2fef8b615"
     - stage: horo
-      stageUuid: "4905ad4c-1311-8ad2-93c2-073df34c16b2"
+      stageUuid: "470871f8-93eb-87a7-af78-c0ec754c96df"
     - stage: seal
       stageUuid: "a4603486-5c74-8e5b-9b76-ca6b7c897db2"
     - stage: uuid
-      stageUuid: "91b8cf72-19bf-8b74-b966-ad685269104a"
+      stageUuid: "f7212831-8cc7-86d5-946e-e040425b4ac4"
 version: 2
 ---
 # oauth — the external-credential lifecycle (acquire · refresh · scope), one atom

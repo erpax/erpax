@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "vein",
-    "uuid": "0f11627a-3cda-8b28-958b-eceff2077e0e",
+    "uuid": "268f07da-d783-8611-98d4-8b0bd3b6c54c",
     "words": [
       "vein"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax's return vessel — the one-way organ. Venous valves enforce unidirectional flow back to the heart (a ratchet, the append-only return), the veins hold ~70% of blood volume (a capacitance reservoir), and with the artery they close the reciprocal loop. Three properties are computed and mapped — a structural isomorphism — onto erpax's append-only chain and reciprocal wiring.",
-    "uuid": "05462122-cf55-8edc-8fd2-c9c150d9c61e",
+    "uuid": "33fca22a-3572-8141-8ec0-15678a35497d",
     "words": [
       "use",
       "when",

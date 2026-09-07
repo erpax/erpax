@@ -2,11 +2,11 @@
 name: blog
 description: "Use when reasoning about blog — A blog, sometimes known as a \"weblog\". Note that the individual posts (BlogPostings) in a Blog are often colloquially referred to by the same term."
 atomPath: "vocabulary/blog"
-coordinate: "vocabulary/blog · 1/base · dc6bc38d"
-contentUuid: "6412cad0-52a0-5d8e-883f-7d7a5f41c16c"
-diamondUuid: "106703e8-4763-8b36-9ae1-5ec4e579b468"
-uuid: "dc6bc38d-c1a8-8354-8ed4-e7511d5a5b39"
-horo: 1
+coordinate: "vocabulary/blog · 2/share · fe8067af"
+contentUuid: "74a09eaf-653b-500d-ba78-b404254eaae6"
+diamondUuid: "83486bd7-6c72-878b-bf40-8b5dc16d30f9"
+uuid: "fe8067af-731f-81f2-9d43-7167315ee603"
+horo: 2
 typography:
   partition: vocabulary
   bondDegree: 22
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "aa8a2899-e085-879c-af84-8bfd0789d1f9"
+  computationUuid: "7c0cab14-0d8a-8ec4-b112-d9fb590b8e48"
   stages:
     - stage: path
       stageUuid: "0c960dd0-0ad0-804a-9403-e26350b55b98"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a1190c78-c95d-8307-a3d5-42ee12704a97"
     - stage: horo
-      stageUuid: "f6ebe73a-6226-8b1f-890b-57744fd59308"
+      stageUuid: "709d0310-7872-826f-a9ee-24bfbe968a7e"
     - stage: seal
       stageUuid: "b1f25c17-69ae-8bd1-ae0d-2447d896368e"
     - stage: uuid
-      stageUuid: "e7c88cfb-0789-8810-bfa1-8f33ece31678"
+      stageUuid: "edf15c4c-3acf-8b02-86b5-7a460ce135fe"
 version: 2
 ---
 # blog

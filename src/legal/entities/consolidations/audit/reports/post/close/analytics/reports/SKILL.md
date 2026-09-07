@@ -2,11 +2,11 @@
 name: reports
 description: "Use when generating or reviewing immutable post-close analytics — variance analysis (budget vs. actual), financial ratio analysis, segment reporting (IFRS-8 business and geographic), and management KPI scorecards per IFRS IAS-1 / SOX §404. The post-close analytics report collection."
 atomPath: "legal/entities/consolidations/audit/reports/post/close/analytics/reports"
-coordinate: "legal/entities/consolidations/audit/reports/post/close/analytics/reports · 7/descent · 03a88152"
-contentUuid: "12118cf8-72b0-545e-bd17-bbdd16296ab1"
-diamondUuid: "887e254c-4448-8513-8bcb-b683dc0955d9"
-uuid: "03a88152-752d-8d84-b1a3-3beedc0d9b88"
-horo: 7
+coordinate: "legal/entities/consolidations/audit/reports/post/close/analytics/reports · 2/share · 862304a5"
+contentUuid: "d9b164db-6343-56fb-b278-3a54bb2f2198"
+diamondUuid: "06420a38-0fe4-8b8b-aeb2-7195d0f09e6a"
+uuid: "862304a5-76d7-8dcc-b963-e8bef346d47c"
+horo: 2
 typography:
   partition: legal
   bondDegree: 28
@@ -15,7 +15,7 @@ standards:
   - "SOX §404 close-monitoring"
 bindings: []
 signatures:
-  computationUuid: "e4ab3c11-1c76-8226-ab8c-eaa0a6fc3fe4"
+  computationUuid: "d8c8c563-b6af-84ab-a6d6-756e2f679404"
   stages:
     - stage: path
       stageUuid: "5f617b0f-c167-8b80-81fe-ec0de8724eea"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "72a7c3b9-b682-8af9-88af-d6f79a2fe7c6"
     - stage: horo
-      stageUuid: "6ad4d559-61e4-8725-be18-186f2fb6164b"
+      stageUuid: "8dbd0856-f51d-84e9-ae64-0ecd71c3b582"
     - stage: seal
       stageUuid: "7b3634e1-d9cd-80b9-943e-cd778fbff54e"
     - stage: uuid
-      stageUuid: "3cee9f92-30a2-8c28-9a06-3c63c36d85e5"
+      stageUuid: "c004e300-52da-81ac-87b6-b07b89dff1f1"
 version: 2
 ---
 # post-close-analytics-reports

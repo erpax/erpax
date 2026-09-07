@@ -2,11 +2,11 @@
 name: word
 description: "Use when addressing a lexical prose token — one vocabulary diamond content-addressed as uuid(jcs({ kind:'word', value })); saved in the text token index, not as a per-word src/ folder."
 atomPath: word
-coordinate: "word · 1/base · dd77e180"
-contentUuid: "3d9bf121-838f-5673-a776-4601e7587938"
-diamondUuid: "d8f97170-9eed-8129-ac48-a95418211760"
-uuid: "dd77e180-eb07-8346-b105-28e5578f52c3"
-horo: 1
+coordinate: "word · 4/weave · 15f5b6ac"
+contentUuid: "61b5c14a-ccc9-59a0-92c1-95cf3eb1e702"
+diamondUuid: "b53b07be-b9f9-884d-9a2b-a9656a875a20"
+uuid: "15f5b6ac-a800-8f8b-b216-abdbdc0255f3"
+horo: 4
 typography:
   partition: word
   bondDegree: 124
@@ -14,7 +14,7 @@ standards:
   - "RFC 8785 JCS + RFC 9562 §5.8 content-uuid"
 bindings: []
 signatures:
-  computationUuid: "1584c56c-a273-8bb5-87d6-6235afee0cb2"
+  computationUuid: "c64e6dbf-2477-8c74-be55-8bc9141200b0"
   stages:
     - stage: path
       stageUuid: "d192d2ae-93f9-8e99-8ab1-5fbc545bc75f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8b65b08a-c3ad-88f4-929c-7e648c6fd08c"
     - stage: horo
-      stageUuid: "4d9c18f2-bd4f-8f54-b821-16c9df0ff26d"
+      stageUuid: "38bcd0d3-3e8e-88e4-a304-511a1de4b0d8"
     - stage: seal
       stageUuid: "d3b24d45-e636-8a3a-8b93-b234175ebaf6"
     - stage: uuid
-      stageUuid: "1674abfd-37bd-8269-bd73-58d09192b8f2"
+      stageUuid: "640720e1-8bc3-846f-9720-44b29fb2ad7e"
 version: 2
 ---
 # word — lexical token diamond

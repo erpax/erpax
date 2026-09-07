@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "agent",
-    "uuid": "bbc057f2-aadf-8e3e-bc7c-b4b68c4cf009",
+    "uuid": "4411f526-dac8-85f4-8f46-c9381c03e3bf",
     "words": [
       "agent"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about an agent — its identity, cloning, and replication (an agent IS its content, its id is the content-uuid of skills + purpose, so identical clones merge and distinct agents are specialised children), AND when wiring the society's actors (the pure DomainAgent contract, the registry that gives each collection exactly one owner, the runtime that dispatches chain steps and events and scheduled ticks, the effect-processor where every side effect fires — the A-vortex coupling layer that decides without acting).",
-    "uuid": "79cd0534-66ee-8c4b-84c9-049b79f8b91d",
+    "uuid": "145e2686-c5d2-86fa-a010-16cb69e0ba0b",
     "words": [
       "use",
       "when",

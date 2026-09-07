@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "area",
-    "uuid": "a5b3d1f6-e502-825c-9baf-d2c572371eee",
+    "uuid": "8cece68c-7144-8351-9f2e-7a5b1b19e83e",
     "words": [
       "area"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about area — The area within which users can expect to reach the broadcast service.",
-    "uuid": "de2d2da8-8f11-81f9-9da1-7d5bd881d824",
+    "uuid": "ee2cadf0-8fab-8ba8-8d9f-420db19827ad",
     "words": [
       "use",
       "when",

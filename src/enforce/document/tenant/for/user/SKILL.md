@@ -2,11 +2,11 @@
 name: user
 description: "Use when reasoning about user — scopes what a user can *read* and *update*. What it does not reliably reject is a **create that names another tenant**: the document does not exist yet, so there is no existing…"
 atomPath: "enforce/document/tenant/for/user"
-coordinate: "enforce/document/tenant/for/user · 7/descent · 48ccbdfa"
-contentUuid: "cf0feb38-6caf-5546-ba11-8e4df9f0f485"
-diamondUuid: "dbb64b3d-3ff5-8d18-bd3c-c8b2d2d00be3"
-uuid: "48ccbdfa-c7f2-8da9-98f2-e250d6c53a03"
-horo: 7
+coordinate: "enforce/document/tenant/for/user · 1/base · ba3172d2"
+contentUuid: "3fefc536-e9cb-5724-9a1a-062bcdd90af4"
+diamondUuid: "f86664de-935e-828f-a423-04afc1afb67d"
+uuid: "ba3172d2-02d9-8585-a76d-3a3fab84293f"
+horo: 1
 typography:
   partition: enforce
   bondDegree: 79
@@ -15,7 +15,7 @@ standards:
   - "SOC-2 CC6.1 logical-access-controls"
 bindings: []
 signatures:
-  computationUuid: "f6e692c0-040c-8272-8170-3e2f20650591"
+  computationUuid: "6fa3e75e-b873-851c-a89e-9c7540ebb255"
   stages:
     - stage: path
       stageUuid: "b8de9264-0155-8110-a721-46132180852b"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "16eb2414-fc96-8474-a5ff-dec150a60a7d"
     - stage: horo
-      stageUuid: "06a48bc3-bcf2-83c3-8120-9af386f3dc47"
+      stageUuid: "7154de83-9d42-825e-930e-825164172db3"
     - stage: seal
       stageUuid: "3d7bb540-b2e6-8486-83ca-6afe07251e87"
     - stage: uuid
-      stageUuid: "71692a90-386a-85de-98bb-dbbb3f0cc0ea"
+      stageUuid: "cebd7664-42a3-859f-a539-7795444e2233"
 version: 2
 ---
 # enforce/document/tenant/for/user — the create that the plugin's access rules let through

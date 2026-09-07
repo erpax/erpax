@@ -2,11 +2,11 @@
 name: transcript
 description: "Use when spoken content must be read rather than watched — captions parsed into locatable segments. Handles WebVTT and SubRip alike, decides the format from the bytes rather than a filename, strips inline markup as presentation, and SKIPS a malformed cue instead of guessing a timestamp. mentions() returns a term with the moment attached, which is a pointer to go listen, never a finding: a transcript is what was said, not what is true, and auto-generated captions carry transcription error."
 atomPath: transcript
-coordinate: "transcript · 4/weave · 880338bd"
-contentUuid: "51185983-cb44-5434-8e19-ee67ad2afd02"
-diamondUuid: "c865d878-36f9-8072-b5e4-3d4468c2b5b5"
-uuid: "880338bd-dca2-87c9-9030-1c1ff78b3cdb"
-horo: 4
+coordinate: "transcript · 7/descent · bc8b79c2"
+contentUuid: "76be08cf-0c6e-569b-a5fc-7fa312d3ab0d"
+diamondUuid: "41324ee5-1ded-8358-b2c9-7256c3111b20"
+uuid: "bc8b79c2-167c-8589-aad7-190e237e7d96"
+horo: 7
 typography:
   partition: transcript
   bondDegree: 18
@@ -14,7 +14,7 @@ standards:
   - W3C WebVTT — The Web Video Text Tracks Format
 bindings: []
 signatures:
-  computationUuid: "2f7cdc13-7134-8be1-a8de-d66043e0714e"
+  computationUuid: "51836817-0e43-87ba-9005-01f18d7bdbeb"
   stages:
     - stage: path
       stageUuid: "dfaa5b1e-5b64-893c-b98d-8e1cabe1fb5d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "eadc3fc9-2ad0-87e8-a678-ca5d714ea855"
     - stage: horo
-      stageUuid: "2de60f36-802b-847b-a472-f34f5ba5c445"
+      stageUuid: "59598e51-9f36-8cc1-9089-2472393dc03e"
     - stage: seal
       stageUuid: "e463a45a-b6c3-8a96-b5c8-816924a87b10"
     - stage: uuid
-      stageUuid: "9ee78d74-da89-85ae-8d1e-7cddfa67dc57"
+      stageUuid: "fbc46693-31ec-833f-b723-9fdaabf8e2c7"
 version: 2
 ---
 # transcript — what was said, located

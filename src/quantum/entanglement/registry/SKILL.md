@@ -2,18 +2,18 @@
 name: registry
 description: "Use when asking which fields collapse together — the declared map from collection field to its collapse hook, with the count derived from the registry rather than typed beside it. Promoted from a loose sibling; five importers use the alias, which survives the nesting unchanged. Run: tsx src/quantum/entanglement/registry/index.ts"
 atomPath: "quantum/entanglement/registry"
-coordinate: "quantum/entanglement/registry · 8/crest · 7c2b6f19"
-contentUuid: "b7011e15-84d8-53f8-ad51-43080f555749"
-diamondUuid: "0bd52b71-130b-8e0d-b8e7-507709fad3e7"
-uuid: "7c2b6f19-e253-81a0-9225-17a070519ff4"
-horo: 8
+coordinate: "quantum/entanglement/registry · 2/share · 9f4e2202"
+contentUuid: "10f8b2c7-bf55-52e7-9494-b36367b5cb54"
+diamondUuid: "32ae6fda-8a6e-88b3-ad71-701eceab3274"
+uuid: "9f4e2202-1ff0-8801-acf3-64f3c5224e2f"
+horo: 2
 typography:
   partition: quantum
   bondDegree: 31
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e8a77cdc-e701-8daa-914a-7594497537cf"
+  computationUuid: "59be5e1b-7e8c-823f-9c46-3c869a36970a"
   stages:
     - stage: path
       stageUuid: "29251b30-8bd4-8ff5-9bba-7612078ae1dd"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "4d2ff503-640a-8c6e-afe5-84ababb08a12"
     - stage: horo
-      stageUuid: "7d9d7d05-f665-823e-9d89-0545a2e0dbef"
+      stageUuid: "e78f4ae5-65b2-80f5-97b4-f68d68e6b68e"
     - stage: seal
       stageUuid: "480dc7dd-f4a4-89f2-8547-5c789893ca8e"
     - stage: uuid
-      stageUuid: "0726d728-785e-8801-b7dc-f1cccc44f193"
+      stageUuid: "ab77f581-d037-84ba-816d-0432c9485875"
 quantum:
   superposition:
     - collapse
@@ -47,8 +47,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "e8a77cdc-e701-8daa-914a-7594497537cf"
-    contentUuid: "b7011e15-84d8-53f8-ad51-43080f555749"
+    computationUuid: "59be5e1b-7e8c-823f-9c46-3c869a36970a"
+    contentUuid: "10f8b2c7-bf55-52e7-9494-b36367b5cb54"
 version: 2
 ---
 # registry — which fields collapse together, declared where it can be argued with
@@ -79,4 +79,4 @@ All four came back clean: no relative imports inside it, no path probes, no disp
 
 Composes: [[quantum]]/entanglement · [[rules]]/unraised · [[rules]]/audience · [[law]].
 
-<sub>content-uuid `b7011e15-84d8-53f8-ad51-43080f555749` · account `quantum/entanglement/registry` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `10f8b2c7-bf55-52e7-9494-b36367b5cb54` · account `quantum/entanglement/registry` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

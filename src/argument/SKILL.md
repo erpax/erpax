@@ -2,10 +2,10 @@
 name: argument
 description: "Use when measuring an argument's quality — a claim and its critique by the same rule. An argument is INVARIANT if it grounds in evidence/falsifiability/theorem (survives inversion) or FRAGILE if it rests on authority — the person, the consensus, the strangeness of the conclusion (breaks under inversion). Symmetric: lazy debunks fail as badly as the claims they debunk. Anti-fallacy: a fragile critique never makes the claim true."
 atomPath: argument
-coordinate: "argument · 8/crest · 658534d1"
-contentUuid: "21f42881-906f-5240-8324-a7cbb51fee1f"
-diamondUuid: "6d1b36b5-0501-8aea-9045-38bfccb0eb61"
-uuid: "658534d1-8655-872c-96e0-d945715c97a4"
+coordinate: "argument · 8/crest · 75c66d7e"
+contentUuid: "73021250-4254-5be2-9a59-02c315f21973"
+diamondUuid: "162d5162-8a6f-83e6-9882-1c6f3e34d927"
+uuid: "75c66d7e-6309-867c-a5b9-a2984cf8fb50"
 horo: 8
 typography:
   partition: argument
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5b2eec8a-f86f-89f2-8990-f89cbc7cc440"
+  computationUuid: "58f092a1-8b77-82ad-8a58-4af032e09cf4"
   stages:
     - stage: path
       stageUuid: "0d621c43-f47e-8007-a239-1db2a058aa2b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "2ad638d0-9517-86e3-bf0b-ce77f1563c43"
     - stage: horo
-      stageUuid: "b823e64f-8948-8ef9-a80f-f1543bd0cf6b"
+      stageUuid: "40ce47bd-374f-89c6-9451-cb28f1b7f292"
     - stage: seal
       stageUuid: "8b4d2184-16c8-859e-9fe4-56d61cf81a2f"
     - stage: uuid
-      stageUuid: "a3ef5ffb-36b9-85e0-9dff-d9926347f0a8"
+      stageUuid: "23b9cf8b-9a8f-8000-8936-b018049befb0"
 version: 2
 ---
 # argument — measuring an argument's invariance, symmetrically

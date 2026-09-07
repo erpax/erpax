@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "inversion",
-    "uuid": "4d6f0077-d9c2-8346-a466-5e787153bb5e",
+    "uuid": "7e10dbeb-60df-8c8e-b258-ed9fdf54949b",
     "words": [
       "inversion"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when stating what the sequence's inverted reflection IS — the same ring read through the inverse generator, because 2·5 ≡ 1 (mod 9). Three doublings is ×8 ≡ −1, so half a turn is negation and every digit's polarity partner is 9 − d: 1↔8 · 2↔7 · 4↔5, each pair 180° apart. Six positions divide the circle exactly, so a step is 60°, where the arithmetic closes over the Eisenstein integers. Renders the angle, polarity partner and DECLARED colour and pitch of every position for the README and homepage, computed so the prose cannot drift from the arithmetic.",
-    "uuid": "f5f4df4e-8675-8527-8df0-e45626e14ce5",
+    "uuid": "8d1bc6f7-f673-84dd-bf8a-46ef9e50f2b2",
     "words": [
       "use",
       "when",

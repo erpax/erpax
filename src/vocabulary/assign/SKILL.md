@@ -2,10 +2,10 @@
 name: assign
 description: "Use when reasoning about assign as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/assign"
-coordinate: "vocabulary/assign · 2/share · 67465b00"
-contentUuid: "6aece7b9-70b9-561d-acf2-0ffd42767a54"
-diamondUuid: "e038ec47-260f-81f9-b755-f77d58210706"
-uuid: "67465b00-f69d-84ce-b35c-9d4f40c446fd"
+coordinate: "vocabulary/assign · 2/share · 622cb446"
+contentUuid: "a73a0257-9490-5005-b8c2-5594d69d7409"
+diamondUuid: "f706f2cc-d83e-8eed-8fac-5e1e4149a4a3"
+uuid: "622cb446-0a29-842d-809b-95f30100f532"
 horo: 2
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3ba84e2d-e216-8fc5-9fc0-a5bd2d0ff225"
+  computationUuid: "8ea296e0-a231-8329-a578-951117b2568a"
   stages:
     - stage: path
       stageUuid: "17fff5b2-3394-8240-9a1c-6650f289bb0c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "11650d27-bede-8bf7-9f4c-883ba2ef6e6e"
     - stage: horo
-      stageUuid: "417e924d-17e2-83a2-a884-2a92fcef7dce"
+      stageUuid: "6a9ae094-755f-8f62-9877-66738c0ace44"
     - stage: seal
       stageUuid: "cbc0422c-80cc-8d3e-8780-0e89625808dd"
     - stage: uuid
-      stageUuid: "0f6e39bc-4e8a-8aca-857b-ebd01d0ffbde"
+      stageUuid: "0576c669-2179-8b59-9e2f-7a2c05d3b571"
 version: 2
 ---
 # assign

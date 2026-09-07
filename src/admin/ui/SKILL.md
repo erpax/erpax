@@ -2,18 +2,18 @@
 name: ui
 description: "Use when reasoning about ui — The barrel re-exports what the panel needs: and for how a collection presents itself, the corpus-rollup readers that compute the dashboard's entropy figures, and the cells…"
 atomPath: "admin/ui"
-coordinate: "admin/ui · 5/round · cb8b8edb"
-contentUuid: "f2658961-cded-5c87-b176-7c09b135e90f"
-diamondUuid: "1a17f0b0-a6bc-8da2-b901-eacc0c8bea54"
-uuid: "cb8b8edb-298b-8796-b54c-4881cc3d8e4e"
-horo: 5
+coordinate: "admin/ui · 2/share · c73d5d32"
+contentUuid: "0e4b37d8-f88c-5cb7-b4f0-7d949b2ecdfe"
+diamondUuid: "8d08e388-198a-801d-b990-db6a077e00bc"
+uuid: "c73d5d32-1b5e-88c7-9eeb-798554a2623b"
+horo: 2
 typography:
   partition: admin
   bondDegree: 55
 standards: []
 bindings: []
 signatures:
-  computationUuid: "52c0fe1a-56ad-80d4-92a1-9af9ef9e33e9"
+  computationUuid: "b5378ab4-cefb-8288-806c-5600bcc58ec2"
   stages:
     - stage: path
       stageUuid: "41689037-1c12-8723-92ea-7de001101a12"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3f359fd3-1f7e-819a-ba64-7bdf7f38601a"
     - stage: horo
-      stageUuid: "ad9ec523-9b5c-88c6-84d7-fd7f6a7cc32f"
+      stageUuid: "769fdab4-c039-835b-a976-3b51a9121110"
     - stage: seal
       stageUuid: "3a28ba9e-8364-8dd9-8a45-415aa487982b"
     - stage: uuid
-      stageUuid: "a32aa22a-6dd1-89f3-8adb-6dd5aab6adaa"
+      stageUuid: "fe648883-5299-8814-a5a8-9932832457fe"
 version: 2
 ---
 # admin/ui — the admin surface erpax adds, gathered behind one import

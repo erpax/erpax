@@ -2,11 +2,11 @@
 name: capture
 description: "Use when reasoning about capture as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: capture
-coordinate: "capture · 4/weave · 10216fb7"
-contentUuid: "2ac13216-3902-5236-bfed-2bcc6bf50737"
-diamondUuid: "3a143272-644b-8572-be12-90cee713edf8"
-uuid: "10216fb7-93bd-88f5-a4fa-7b5bc1f07bb0"
-horo: 4
+coordinate: "capture · 2/share · 511637c6"
+contentUuid: "5f900da6-1842-5388-960b-6dd2a82f79cf"
+diamondUuid: "ee5d1f3f-9721-862b-ba60-6c27d87b027a"
+uuid: "511637c6-3f5f-8249-a076-5ad496e0598f"
+horo: 2
 typography:
   partition: capture
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a6a13332-ffa5-8008-bf03-c8b9ec0d14ca"
+  computationUuid: "6bfa552d-20d6-8dfe-9029-57c6da92e78d"
   stages:
     - stage: path
       stageUuid: "593e438a-b506-86c5-9405-471e51fc6c02"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "4d3a2595-fd02-8789-8535-6eca8c2d5b65"
     - stage: horo
-      stageUuid: "c4937193-bcae-8d00-a166-59dd9eac8501"
+      stageUuid: "409c9d76-3e1b-8bd0-9ffd-3bfb804b5474"
     - stage: seal
       stageUuid: "b529dfb0-1bad-8b28-aadf-4cccc634dbc4"
     - stage: uuid
-      stageUuid: "c3ab585b-6f59-8cd6-916e-c661d2264634"
+      stageUuid: "55432090-0725-849b-97bf-188003693dda"
 version: 2
 ---
 # capture

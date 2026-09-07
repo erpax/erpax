@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "timestamp",
-    "uuid": "6f0c9edf-7eb9-8f2b-922b-2e27c45e1192",
+    "uuid": "4ec9454f-7b5f-803c-a7cf-ee5cc8c6b556",
     "words": [
       "timestamp"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about timestamp — The instant the event occured.",
-    "uuid": "7e6a38af-65a6-8d3b-93dd-f47f331c5bf4",
+    "uuid": "069dd982-8b9c-81c0-8777-ce84da117058",
     "words": [
       "use",
       "when",

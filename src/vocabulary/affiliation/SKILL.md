@@ -2,11 +2,11 @@
 name: affiliation
 description: "Use when reasoning about affiliation — An organization that this person is affiliated with. For example, a school/university, a club, or a team."
 atomPath: "vocabulary/affiliation"
-coordinate: "vocabulary/affiliation · 2/share · 928ac5ae"
-contentUuid: "1047a1c0-cbd1-5969-8991-58853604310a"
-diamondUuid: "bc4ee7fa-2378-8951-9cf9-959b497d8c42"
-uuid: "928ac5ae-3143-8260-a609-69aad8b09781"
-horo: 2
+coordinate: "vocabulary/affiliation · 4/weave · 60b306f9"
+contentUuid: "c935fd31-36c6-5e1a-99f4-8114caff5290"
+diamondUuid: "310d2c6b-77bf-807e-80fa-c6204a6d79ee"
+uuid: "60b306f9-6a5a-8489-8d0b-d2ffe08ac329"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 9
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "521a8c38-4a8f-8645-8ea3-e6ed07e45093"
+  computationUuid: "374e1d6c-aca4-8654-b83b-4bf41a4c44a4"
   stages:
     - stage: path
       stageUuid: "effe1e77-33cc-8ed0-9b8a-a74c34558e81"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8e533b10-80bc-896d-a135-b22816607387"
     - stage: horo
-      stageUuid: "7ccaa924-a6e8-87b3-b374-84ae2c9de877"
+      stageUuid: "2b5e43e0-488e-8654-bbb0-443a91ee9f7a"
     - stage: seal
       stageUuid: "2f37afe7-830e-8d58-877a-5acde55a4282"
     - stage: uuid
-      stageUuid: "c485e34b-c774-8b33-9879-064e6fd61083"
+      stageUuid: "6f5e3de2-e4f0-8983-8f77-3adc9e003148"
 version: 2
 ---
 # affiliation

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "athlete",
-    "uuid": "e4d87d4c-6252-8175-a12c-1f738942634c",
+    "uuid": "6d03a071-e3ca-8724-9d26-5a82b2c0d792",
     "words": [
       "athlete"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about athlete — A person that acts as performing member of a sports team; a player as opposed to a coach.",
-    "uuid": "b62d6250-a0fd-8441-bae3-45726411451a",
+    "uuid": "57930cc0-498d-89ac-b190-d37a8d50520e",
     "words": [
       "use",
       "when",

@@ -2,10 +2,10 @@
 name: xml
 description: "Use when reasoning about xml — Peppol UBL, ISO-20022 pain.00x and OECD SAF-T all emit XML. What they share is not a document model — each owns its namespaces, element order and schema — it is the two layers…"
 atomPath: xml
-coordinate: "xml · 4/weave · 44d10f3c"
-contentUuid: "1c6b1af0-cb68-5ec6-91b2-232f8f23a097"
-diamondUuid: "d31b5a20-46dc-8a20-b1c1-c896165aa628"
-uuid: "44d10f3c-675f-8d5b-9da6-d72fd3738122"
+coordinate: "xml · 4/weave · 30053878"
+contentUuid: "7a204f85-1181-509b-a0f8-8445f1d5f69b"
+diamondUuid: "74d04572-9e1c-8945-a284-5dbbb162f000"
+uuid: "30053878-b765-8186-95ae-487dbdc73961"
 horo: 4
 typography:
   partition: xml
@@ -14,7 +14,7 @@ standards:
   - "XML-1.0 §2.4 predefined-entities · §3.1 element-content"
 bindings: []
 signatures:
-  computationUuid: "68e31ebe-9205-8b5a-86a3-ed31d17dcd64"
+  computationUuid: "aa44d4dc-31be-8d6c-9f71-b3e9ed135c0d"
   stages:
     - stage: path
       stageUuid: "55356f4d-86b3-8154-8921-0a55829a11bd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0926abec-ddd0-841d-ae27-84c936b5ada4"
     - stage: horo
-      stageUuid: "05c530a6-cdc6-8dfd-bd62-e198f688da55"
+      stageUuid: "f88e3153-b647-81f1-b941-395e7408359f"
     - stage: seal
       stageUuid: "2b4c69f9-cc49-872a-9d8f-b956d26f3959"
     - stage: uuid
-      stageUuid: "d4feb703-2268-8f24-8c09-6494ee61b48d"
+      stageUuid: "327b38ba-2c3d-84ed-8a09-a7f3f214edde"
 version: 2
 ---
 # xml — one escaper, one element set, three serializers

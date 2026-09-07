@@ -2,18 +2,18 @@
 name: algorithm
 description: "Use when running search/sort primitives under the machine — executable algorithms nested under computer."
 atomPath: "computer/algorithm"
-coordinate: "computer/algorithm · 2/share · 128bc731"
-contentUuid: "4464d7ab-a550-51f1-a08e-e6a769796bab"
-diamondUuid: "2188bc3d-f66d-8e05-b3d8-73543d7da8c7"
-uuid: "128bc731-ad77-8713-9292-1eaee38ce1f6"
-horo: 2
+coordinate: "computer/algorithm · 5/round · 7f6dc6ed"
+contentUuid: "cf850488-943a-54a7-a5e7-0b22b9a4bbba"
+diamondUuid: "5c7b3104-fd67-8b85-893e-cf484fa8b439"
+uuid: "7f6dc6ed-9507-80e3-ad84-5b1a23f3cf46"
+horo: 5
 typography:
   partition: computer
   bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a11e39ef-9004-8633-a52a-b7289b10d85d"
+  computationUuid: "4f096f12-b3ae-82d3-bdff-13d5fcbaaa7c"
   stages:
     - stage: path
       stageUuid: "fa2e80b9-73ce-8fdb-aabd-2e89a64c1a4a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a6a382cf-6763-8934-93b0-4733587e9e4f"
     - stage: horo
-      stageUuid: "d2f4518e-9742-81f1-9b8f-29cb3fce37fe"
+      stageUuid: "81d839ec-648e-8a4e-b499-b2807b72f8ef"
     - stage: seal
       stageUuid: "51ac12d0-c7d3-8733-8988-62168334b112"
     - stage: uuid
-      stageUuid: "4dc3cde3-9d11-82c7-afc4-566d51f9b944"
+      stageUuid: "c6f04915-f363-8445-8af5-1455318f291b"
 version: 2
 ---
 # computer/algorithm — search and sort

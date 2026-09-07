@@ -2,11 +2,11 @@
 name: fusion
 description: Use when reasoning about fusion — Google Workspace fusion — the merge law applied to external resources.
 atomPath: "google/workspace/fusion"
-coordinate: "google/workspace/fusion · 1/base · 7654c82f"
-contentUuid: "1ba3f125-ebe6-5396-93d5-c83a18b410c4"
-diamondUuid: "afbff3fa-87f7-8a65-bb86-f3195c82bd64"
-uuid: "7654c82f-a29c-896d-a8a5-8097ac54ab1e"
-horo: 1
+coordinate: "google/workspace/fusion · 5/round · 9f7f3d09"
+contentUuid: "67ab9438-5c04-5cba-a046-254bd1234e71"
+diamondUuid: "2ff0205c-5b32-891a-9b3f-5779c24b7fbc"
+uuid: "9f7f3d09-c326-8d96-9f29-24d7e1c50bc5"
+horo: 5
 typography:
   partition: google
   bondDegree: 119
@@ -14,7 +14,7 @@ standards:
   - "RFC 9562 §5.8 content-addressed uuidv8 (the fusion identity)"
 bindings: []
 signatures:
-  computationUuid: "c1e13d40-0d18-855a-8abb-3ca2c0b6ada9"
+  computationUuid: "f966555a-e799-828d-92a1-ec2911f99136"
   stages:
     - stage: path
       stageUuid: "c2a75c66-76dc-8a77-af34-9f804648f22d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0b1aee3e-71bc-88ac-8032-446d14685b51"
     - stage: horo
-      stageUuid: "0eae4542-6fff-8f03-aa5a-4034b01306c7"
+      stageUuid: "fa6703f6-def0-843f-a293-3fd1a62691fd"
     - stage: seal
       stageUuid: "735c1ed3-0573-86b1-afc3-27eaa5ca5dbe"
     - stage: uuid
-      stageUuid: "fa66ff5a-bb4b-89fc-a985-e449a3682c46"
+      stageUuid: "6edd2c2b-28d7-861e-b41f-a957ead88f2a"
 version: 2
 ---
 # google/workspace/fusion

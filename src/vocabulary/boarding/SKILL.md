@@ -2,11 +2,11 @@
 name: boarding
 description: "Use when reasoning about boarding as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/boarding"
-coordinate: "vocabulary/boarding · 5/round · b1e4a01c"
-contentUuid: "112a48b7-3de9-520b-9612-72942419e5bc"
-diamondUuid: "f898f112-55fd-8b62-a4e8-29fbfc02b24e"
-uuid: "b1e4a01c-4646-8988-99c6-fe7df5b51ac1"
-horo: 5
+coordinate: "vocabulary/boarding · 1/base · 2837ffd5"
+contentUuid: "79e6a328-f13b-5635-b1c2-58b76c734d80"
+diamondUuid: "37f32485-7173-8cd5-a5b1-5d0746579031"
+uuid: "2837ffd5-2088-88cf-a001-171d6809fc6a"
+horo: 1
 typography:
   partition: vocabulary
   bondDegree: 25
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "66cfc369-ccd0-8d64-a5c2-3d01df88fa07"
+  computationUuid: "72f0c66c-aaa3-87b3-9eb4-c51c84b5a893"
   stages:
     - stage: path
       stageUuid: "07a04cb9-92d6-8283-89bb-cc25f9d73d61"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "7218411a-db33-8adb-9be2-80e211f3f198"
     - stage: horo
-      stageUuid: "a49c3c11-f676-8ec3-bd10-712fd3a98da6"
+      stageUuid: "e8255dcc-e825-892b-95aa-cc912c8864ac"
     - stage: seal
       stageUuid: "0b278be9-c85d-84c9-ba43-f7f9ec24763d"
     - stage: uuid
-      stageUuid: "77123b98-2445-86b1-b1cf-af9822fde174"
+      stageUuid: "4c4f94d5-cbd8-8a73-9476-6cd18b903684"
 version: 2
 ---
 # boarding

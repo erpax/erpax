@@ -2,11 +2,11 @@
 name: types
 description: "Use when reasoning about types — Canonical audit-trail types per ISO 19011:2018 §6.4.6 (audit evidence)."
 atomPath: "iso/19011/types"
-coordinate: "iso/19011/types · 8/crest · e9e10fd3"
-contentUuid: "6be07602-61f8-5554-9e36-383ed9fa070b"
-diamondUuid: "24020ae7-5b0a-8272-9c12-3abcc1971e63"
-uuid: "e9e10fd3-5f80-85c5-bd07-294adc136985"
-horo: 8
+coordinate: "iso/19011/types · 1/base · dc81ea20"
+contentUuid: "90b0ebbd-1044-5e54-8638-a9e544501d2f"
+diamondUuid: "13e10592-2601-856f-8272-924c4457a537"
+uuid: "dc81ea20-567a-83bf-9868-89389f6cf8f9"
+horo: 1
 typography:
   partition: iso
   bondDegree: 85
@@ -23,7 +23,7 @@ standards:
   - "SOX §404 internal-controls evidence-preservation"
 bindings: []
 signatures:
-  computationUuid: "2cfde341-babf-8c05-8262-9c16009d2246"
+  computationUuid: "e30786a2-9565-80db-bd51-f407b00e24d0"
   stages:
     - stage: path
       stageUuid: "34af5be5-a1f1-84d3-b80a-c55144f005f4"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "73a06248-1958-8a15-a144-900d25208372"
     - stage: horo
-      stageUuid: "c4fb9f23-dd63-874b-8be6-55f930498e99"
+      stageUuid: "f3fc07c4-e767-853a-b776-0d6a45b31fc2"
     - stage: seal
       stageUuid: "65383d85-76a0-89ef-8ea6-5a8bf79053ce"
     - stage: uuid
-      stageUuid: "b1a0d93a-56e4-80f8-a258-6893e1456d05"
+      stageUuid: "db903784-d18f-8195-bb52-0bbfceaef77c"
 version: 2
 ---
 # iso/19011/types

@@ -2,18 +2,18 @@
 name: transplant
 description: "Use when setting greenhouse-raised seedlings into the field — transplanting (vs direct seeding): plug or bare-root starts set at spacing, after hardening off. Transplanting buys earliness, uniformity, and a weed jump; direct seeding saves labor but ~10–20% may not establish. A method of planting, downstream of propagation."
 atomPath: transplant
-coordinate: "transplant · 1/base · 2356d832"
-contentUuid: "4c7f9fd7-963c-5cc4-a925-9f38bcfc6d62"
-diamondUuid: "1e1ece8b-66e5-8ea7-9730-3f25ca25d9b5"
-uuid: "2356d832-b534-8069-a59d-18ab6451d635"
-horo: 1
+coordinate: "transplant · 7/descent · b0ea58e4"
+contentUuid: "a035befc-34e9-5767-b828-de00b8ca6662"
+diamondUuid: "5c8da40b-cf47-8c82-91ea-ffcd10eb6daf"
+uuid: "b0ea58e4-f00b-81bc-b717-c71416044c2b"
+horo: 7
 typography:
   partition: transplant
   bondDegree: 32
 standards: []
 bindings: []
 signatures:
-  computationUuid: "cb025c9a-9748-80eb-b6cd-2ca2d6cdfae1"
+  computationUuid: "f96684e7-870c-8e59-add1-b630c5606c53"
   stages:
     - stage: path
       stageUuid: "6c2b8700-d8b1-8df9-b044-bc0d5bb3c954"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c6e40dab-e966-838e-bb90-58f7fc642898"
     - stage: horo
-      stageUuid: "78dda8e7-5bcc-8fa1-92fa-3385b2bc9396"
+      stageUuid: "f837c59e-197b-8006-bcfb-0452809bd8b6"
     - stage: seal
       stageUuid: "766fe60f-c8b2-89fc-9ea9-4766b6902976"
     - stage: uuid
-      stageUuid: "eae000d5-ff8d-84c5-bba3-7665f976b2e2"
+      stageUuid: "ce84a1dd-1cd1-85e4-9053-4e0b1108f7b0"
 version: 2
 ---
 # transplant — setting raised seedlings into the field

@@ -2,18 +2,18 @@
 name: reduction
 description: "Use when constructing a Clay attempt rather than asserting one — the tools between theorem's reduce verdict and duel's door: proposeReduction measures a candidate against the graph WITHOUT editing it, reductionFrontier names the exact links still ungrounded (the fix list reduce only implied), problemFrontiers gives all seven as work items, jointReduction builds the 'solved at once' claim and reports that its frontier is all seven because no reduction between any two is known, and roundFromReduction bridges a FULLY GROUNDED reduction into a duel round — nothing here can set corpusSolves, which stays the literal false."
 atomPath: "millennium/reduction"
-coordinate: "millennium/reduction · 4/weave · 5c0b1f2d"
-contentUuid: "9961da1a-66f6-517e-8a0a-469b2cdadb58"
-diamondUuid: "4873ad23-4e9d-82a7-b057-28c35b38fa7a"
-uuid: "5c0b1f2d-e719-8c8c-9bd6-13bac45cbd66"
-horo: 4
+coordinate: "millennium/reduction · 5/round · 9c8bbfde"
+contentUuid: "7130384b-3973-5da2-8c59-9082d8ca30c2"
+diamondUuid: "8b2fdf96-fced-8a19-af95-01c25ad4844b"
+uuid: "9c8bbfde-bcd6-88b6-bca5-d77f580338cf"
+horo: 5
 typography:
   partition: millennium
   bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ee822e38-96d6-840f-b5aa-745ec09fd49a"
+  computationUuid: "c40adf39-6619-8255-9032-6e9b9326881d"
   stages:
     - stage: path
       stageUuid: "4ef3d421-e880-8ef7-95cf-fc34c28bd35c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "fb825514-7c15-8993-b1a9-a7f8e696a366"
     - stage: horo
-      stageUuid: "d41dcb88-a525-8802-b1e5-9c49cf23f2a7"
+      stageUuid: "e8b42b25-1ef0-8a52-ba3b-1c9b0695507c"
     - stage: seal
       stageUuid: "2a2b67a2-0ea8-8015-a6c0-9da7d27e1718"
     - stage: uuid
-      stageUuid: "bceacd0d-3801-8159-baac-e683af44f38a"
+      stageUuid: "439a2e2f-90a3-80c5-8c77-9f510780e2b5"
 version: 2
 ---
 # millennium/reduction — make the attempt constructible, not the claim louder

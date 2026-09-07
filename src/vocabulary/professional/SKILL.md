@@ -2,11 +2,11 @@
 name: professional
 description: "Use when reasoning about professional as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/professional"
-coordinate: "vocabulary/professional · 1/base · 44004235"
-contentUuid: "9a94dc28-d735-53e4-89c1-ea7eb9a19377"
-diamondUuid: "505d759c-9504-88d3-b9e0-50c0c61d06fe"
-uuid: "44004235-5a65-86a7-bbed-e0a68ac8f2b7"
-horo: 1
+coordinate: "vocabulary/professional · 7/descent · 6d7529fe"
+contentUuid: "0576a2bd-4fb4-5bc2-a454-cf23964e8243"
+diamondUuid: "3b2b1920-d212-89fd-9129-2949877dbcd5"
+uuid: "6d7529fe-b8ed-89af-a3cb-0f7e68e10d07"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 16
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a3e76f44-f7d2-80b1-b119-deed5c60bd5e"
+  computationUuid: "ff97c5a1-ddaf-8898-9e56-d66cd6a123b6"
   stages:
     - stage: path
       stageUuid: "b0b510d8-b06c-84c9-9a22-8aa8f4c2b492"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "f5c5bae2-7499-8d90-a10c-a9bbd366af4b"
     - stage: horo
-      stageUuid: "4726a237-0344-8b45-8b77-37fd1f2a71fb"
+      stageUuid: "9f6eb0df-45f4-8bd8-ba4b-9c11d70f64d4"
     - stage: seal
       stageUuid: "ffb4828d-8301-8d11-a2bb-d34de0760b6f"
     - stage: uuid
-      stageUuid: "4b1acaf8-e761-846b-a172-adf0843e2db8"
+      stageUuid: "0911a403-e405-83a2-8992-c1687b0c6bb5"
 version: 2
 ---
 # professional

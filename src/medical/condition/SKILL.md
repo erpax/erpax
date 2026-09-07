@@ -2,11 +2,11 @@
 name: condition
 description: "Use when reasoning about condition as a medical facet of medical — vocabulary pivot to @/condition; nested not duplicated."
 atomPath: "medical/condition"
-coordinate: "medical/condition · 5/round · 3d8dd188"
-contentUuid: "9c782e17-07c9-51c5-bb79-ced52a0a5831"
-diamondUuid: "375b6979-d05d-8653-9815-fcbd4964039b"
-uuid: "3d8dd188-6eab-81ee-a275-7c1765338e40"
-horo: 5
+coordinate: "medical/condition · 7/descent · af295d8a"
+contentUuid: "2dc75dfa-cbd1-590b-a4bc-b3b9cb8f0278"
+diamondUuid: "bc3ffd73-2cb3-86a2-a24e-f97b4d8153f3"
+uuid: "af295d8a-96c7-8f24-be37-b571ed1c5dd6"
+horo: 7
 typography:
   partition: medical
   bondDegree: 36
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1d4921ca-af72-8351-9453-41eb650e3060"
+  computationUuid: "5c3acd9f-4da8-83fa-837a-8ecf8469b9b6"
   stages:
     - stage: path
       stageUuid: "f82b8d0d-c3b8-8a82-818b-199549e01f24"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "36fccf6d-effd-824e-af43-a62bf139584c"
     - stage: horo
-      stageUuid: "76f2e0a9-34ef-8061-ba28-fbe8975b48b3"
+      stageUuid: "4c72989c-8a9d-8934-8aae-5b9b80f12327"
     - stage: seal
       stageUuid: "33f0b13d-9b76-8b1d-944c-bca229469442"
     - stage: uuid
-      stageUuid: "1f4d723a-f2f3-8837-a804-3d662b292376"
+      stageUuid: "8a719685-973b-81eb-9c2d-996294916013"
 version: 2
 ---
 # medical/condition — medical facet

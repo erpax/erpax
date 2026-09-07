@@ -2,10 +2,10 @@
 name: op
 description: "Use when reasoning about op as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/op"
-coordinate: "vocabulary/op · 7/descent · 9f50829a"
-contentUuid: "bd2ef254-da5f-5813-9986-1b899458de45"
-diamondUuid: "1dc31752-a3ef-87e9-9189-158d4f15abe7"
-uuid: "9f50829a-b00b-89a5-8a5e-8313513ff52d"
+coordinate: "vocabulary/op · 7/descent · 9d2471aa"
+contentUuid: "2117e4cf-599c-5540-97c0-9f01b1101a36"
+diamondUuid: "0d82f29d-d0ac-8a30-9553-f7216a1a8bce"
+uuid: "9d2471aa-8c27-81e4-ba9e-e58e9f78a4de"
 horo: 7
 typography:
   partition: vocabulary
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "07c3550e-38af-8b6c-a3b9-a736eb5d2cf2"
+  computationUuid: "58df6661-6067-884c-b9f0-4a856ce61931"
   stages:
     - stage: path
       stageUuid: "f85de56c-c795-8484-8692-b30c47ce2f94"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "b229dc0d-1bca-8eb5-ba39-f84c70d908e7"
     - stage: horo
-      stageUuid: "23ca16b9-daf7-8bc4-b547-d36fb8e2202b"
+      stageUuid: "6db0916f-38da-8a4e-9346-3619c843a43f"
     - stage: seal
       stageUuid: "14a5407c-622d-893d-ab1f-86b1b8593c70"
     - stage: uuid
-      stageUuid: "e8c8ab34-e3ef-8f9a-939a-d4b7cc695c1b"
+      stageUuid: "bd163fa6-28e9-859b-944e-2e2ce01506c9"
 version: 2
 ---
 # op

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "target",
-    "uuid": "1aeaf45d-e0e6-8bfc-8ad3-f5db9adaff83",
+    "uuid": "209bc9cf-a73e-841d-a27b-e127359153d7",
     "words": [
       "target"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about target — Indicates a target EntryPoint, or url, for an Action.",
-    "uuid": "5ca6fb1f-eba7-8967-a03c-c982982d5a26",
+    "uuid": "855597e8-472b-8220-8029-ee3330c166e1",
     "words": [
       "use",
       "when",

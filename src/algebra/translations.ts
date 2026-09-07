@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "algebra",
-    "uuid": "1767da01-39b3-8185-9468-93148d416cc9",
+    "uuid": "f46dc80e-22ea-8431-bc19-f11241e94a32",
     "words": [
       "algebra"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reducing the corpus's theorems to their only substance — all theorems are algebra: a carrier set and a closed operation. The theorem draws the movie (its orbit); algebras compose into products (theorem of theorems); the fold is a magma (the merkabas folding into themselves and each other). The overlay — torus, tetrahedron, mind — is named and stripped; the picture was never the theorem.",
-    "uuid": "39bdbde6-2b1f-806b-b92f-0315e0e768a9",
+    "uuid": "ef3a1754-afb8-8bed-a34b-6a0e11e8f9f3",
     "words": [
       "use",
       "when",

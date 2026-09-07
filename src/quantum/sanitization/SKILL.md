@@ -2,18 +2,18 @@
 name: sanitization
 description: "Use when cleaning data at a boundary — input, output, or disposal — in the content-addressed model where nothing mutates in place; accept untrusted input but collapse it through the gate, redact by projecting a sanitized view (no spoon for the unauthorized), and purge by crypto-shredding to the void."
 atomPath: "quantum/sanitization"
-coordinate: "quantum/sanitization · 7/descent · bd3b1f2f"
-contentUuid: "0aed9adb-695c-5e22-89ce-d8a9a00b52bc"
-diamondUuid: "1980c1ca-ba60-8110-b73a-2499d29526a9"
-uuid: "bd3b1f2f-b8c1-85e5-814a-25c1638a090c"
-horo: 7
+coordinate: "quantum/sanitization · 8/crest · ad83aa97"
+contentUuid: "213b0f65-b733-5bc6-96d2-6316bd59dcbe"
+diamondUuid: "fd07801b-1f02-80e1-b45f-807431d7e8d1"
+uuid: "ad83aa97-f45f-8ef0-9430-8bfcf0b21741"
+horo: 8
 typography:
   partition: quantum
   bondDegree: 45
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9a8e778d-0a41-8d7f-9525-b97597922e71"
+  computationUuid: "5bef5646-8056-88ec-9a29-5e03dec69491"
   stages:
     - stage: path
       stageUuid: "cd37ecbb-4ee1-817f-a7a8-e4a5ada8f20b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "8a0e85af-972d-8d95-9b27-77625ced098b"
     - stage: horo
-      stageUuid: "5538ad5b-be3b-80e8-af02-414fe0a4fe1a"
+      stageUuid: "0441c001-c320-8c68-85aa-05b8d77c7e62"
     - stage: seal
       stageUuid: "419aa895-a0c0-8bee-8e79-56077b93618a"
     - stage: uuid
-      stageUuid: "5e1eb01e-019e-8995-b9ce-eda0d0735fbc"
+      stageUuid: "62e7ee90-cd4b-8cc4-b4ea-5cbd94e05cf7"
 quantum:
   superposition:
     - accept
@@ -58,8 +58,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "9a8e778d-0a41-8d7f-9525-b97597922e71"
-    contentUuid: "0aed9adb-695c-5e22-89ce-d8a9a00b52bc"
+    computationUuid: "5bef5646-8056-88ec-9a29-5e03dec69491"
+    contentUuid: "213b0f65-b733-5bc6-96d2-6316bd59dcbe"
 version: 2
 ---
 # quantum/sanitization — clean at the boundary, three ways
@@ -76,4 +76,4 @@ Sanitization is **not [[tamper]]** — it is authorized, content-addressed, and 
 
 **Law — [[law]]: sanitization never mutates in place — it collapses through the gate. Dirty input cannot act until it resolves clean; the unauthorized reader gets a redacted projection while the content-addressed original stays whole; and the only true erasure is shredding the key into the void. Because every scrub emits a receipt, removing data is itself provable — sanitization is authorized and audited, never a silent edit (it is not tamper).**
 
-<sub>content-uuid `0aed9adb-695c-5e22-89ce-d8a9a00b52bc` · account `quantum/sanitization` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `213b0f65-b733-5bc6-96d2-6316bd59dcbe` · account `quantum/sanitization` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

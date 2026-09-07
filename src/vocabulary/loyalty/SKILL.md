@@ -2,11 +2,11 @@
 name: loyalty
 description: "Use when reasoning about loyalty as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/loyalty"
-coordinate: "vocabulary/loyalty · 8/crest · 96d764c9"
-contentUuid: "7bb6d807-49a9-5e89-a36b-9f26f7a8fe76"
-diamondUuid: "30fac0f5-463d-894b-b9ee-0473fc535b1c"
-uuid: "96d764c9-48ec-873c-bc15-fdc860ee243a"
-horo: 8
+coordinate: "vocabulary/loyalty · 4/weave · e9b333e6"
+contentUuid: "24a6add9-5796-5357-9be5-f6956461e70c"
+diamondUuid: "fed0305d-2892-8ffa-a9af-1b5c98aad1e7"
+uuid: "e9b333e6-aac2-8cd6-9ccb-4cc5c4d92f01"
+horo: 4
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2307ed63-db0b-8b12-b840-4ac2fcae91bb"
+  computationUuid: "c680790c-c766-8df7-8bdb-f943845a6b37"
   stages:
     - stage: path
       stageUuid: "7a0ceb2b-6ffd-87f9-aaa9-b1a12d9e3516"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d652aee3-7c7b-85bb-b5ad-f8b1af5dc0ee"
     - stage: horo
-      stageUuid: "eb658db7-1bd9-8d4f-9ff2-0d638133a705"
+      stageUuid: "965c4f3d-829d-814f-a814-16a43d822d2c"
     - stage: seal
       stageUuid: "4a5d96a5-f02d-8388-aedf-4db6f3dddc4e"
     - stage: uuid
-      stageUuid: "8572f430-eaa4-8b19-a863-45606e9c0e38"
+      stageUuid: "ddc21f35-d420-8fe9-98e0-85a519e8607e"
 version: 2
 ---
 # loyalty

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "default",
-    "uuid": "53bfcb34-147d-84ee-8973-50314edc83be",
+    "uuid": "1cdb0aaa-d208-8c61-873a-e4eda2d9df76",
     "words": [
       "default"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about defaults — nothing defines a default; the default is by architecture, derived from the content-uuid and the path, never a hardcoded fallback, because a defined default is an assumption and an assumption is entropy.",
-    "uuid": "db52cd66-4e5b-8396-8c81-7b4b9c050bb1",
+    "uuid": "791211b3-b889-81bc-80e8-4468052b4a16",
     "words": [
       "use",
       "when",

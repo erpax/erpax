@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reconciliation",
-    "uuid": "4347c715-0725-85f6-b39f-67dab958a796",
+    "uuid": "8ec00005-d061-8a2c-bb30-e50e1c387664",
     "words": [
       "reconciliation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when closing tax periods against fiscal periods — tax↔fiscal alignment (same period-end date) and transfer-pricing documentation completeness (OECD), each a proven, refutable invariant with a real tolerance rather than a bare assertion.",
-    "uuid": "f4e6cd34-5e30-8781-ba0f-4715da663ad1",
+    "uuid": "1f3fe6c3-393b-8d5e-b62f-2793a5462dbf",
     "words": [
       "use",
       "when",

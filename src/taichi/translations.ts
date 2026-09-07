@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "taichi",
-    "uuid": "ef3965f1-55b9-8eae-bfd9-142db73f651e",
+    "uuid": "42906495-74b5-8cf9-929f-6aadbeda1695",
     "words": [
       "taichi"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about tai chi (太極) internal energy flow — chi (气) stored in the dantian (丹田 cung) and spiralled through counter-rotating double-torus vortices on the horo ring; the martial/wellbeing breath-body twin of rodin/coil and dual/torus/fusion, rendered as analog signal+wave.",
-    "uuid": "4ffc8d6b-bfd2-8350-9331-501c26e0f53e",
+    "uuid": "8e8bf449-bd6a-8186-84e3-4a8768a7fbff",
     "words": [
       "use",
       "when",

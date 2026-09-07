@@ -2,11 +2,11 @@
 name: blocks
 description: "Use when reasoning about blocks — A schema.org component word, collided out of schema.org compounds — fused from UserBlocks (sti · collapse · merge)."
 atomPath: blocks
-coordinate: "blocks · 8/crest · 1e2f6fe2"
-contentUuid: "abb8cb2b-ba01-5294-b8e9-ffd2d31375e4"
-diamondUuid: "2afd0864-2d8a-8365-b621-a675b5b2de4d"
-uuid: "1e2f6fe2-1035-82fd-a3a0-5c5887d88d02"
-horo: 8
+coordinate: "blocks · 7/descent · 5b5ccc22"
+contentUuid: "67e6cf17-17e8-54b0-9cef-0c7a2d7e4c4b"
+diamondUuid: "afcaf8bb-088e-8992-8f0f-07bc50582168"
+uuid: "5b5ccc22-eded-88e6-84f6-03ed7ea685fa"
+horo: 7
 typography:
   partition: blocks
   bondDegree: 52
@@ -20,7 +20,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a07f0ba1-971f-8b9d-88d6-fb80197edd51"
+  computationUuid: "f35f1ee2-cf0e-8989-9187-2eff75ce1bb7"
   stages:
     - stage: path
       stageUuid: "a73ba077-a8dd-8eda-ab19-a6dbce005c6f"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "0a600cbd-8f45-8164-9928-5ff7dd9f8635"
     - stage: horo
-      stageUuid: "91ab42c8-44ca-8f92-a286-7c940a0b8e18"
+      stageUuid: "685ce2c7-6748-8b8d-9856-0743bb62c228"
     - stage: seal
       stageUuid: "d8abb6b7-79a0-8e60-b500-97f7b535dcd3"
     - stage: uuid
-      stageUuid: "77a456a4-2d20-8dc0-9ded-4c0fd4e22fda"
+      stageUuid: "89ae9f4f-ecff-8a06-ad2c-3b1214ce24a9"
 version: 2
 ---
 # blocks

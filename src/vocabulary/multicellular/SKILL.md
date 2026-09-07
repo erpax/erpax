@@ -2,11 +2,11 @@
 name: multicellular
 description: "Use when reasoning about multicellular as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/multicellular"
-coordinate: "vocabulary/multicellular · 5/round · 8ad1ac32"
-contentUuid: "0d9a6bfc-c261-5cb6-86bc-914950c95a76"
-diamondUuid: "4197fd6f-c2e2-8493-9edd-9aa08de144d8"
-uuid: "8ad1ac32-a5fe-837b-8529-530e3b7c5ca1"
-horo: 5
+coordinate: "vocabulary/multicellular · 8/crest · b854d9e8"
+contentUuid: "77076522-03a7-57ec-b45a-833a614f2bbe"
+diamondUuid: "754d07fd-b3d3-8bd6-87c4-9c0fea8097c3"
+uuid: "b854d9e8-e899-811b-8a8f-cd9c703f6cfa"
+horo: 8
 typography:
   partition: vocabulary
   bondDegree: 12
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "505b580d-b057-8a8b-923f-a2884a657e5c"
+  computationUuid: "a67c8f76-5181-890b-96dd-c1a4974396a7"
   stages:
     - stage: path
       stageUuid: "cd714b04-f4e7-8873-b549-5acc3004e111"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c0d3995c-0a19-833f-8c49-a8c41ade9b5d"
     - stage: horo
-      stageUuid: "67e59809-0456-8a88-86b3-f9f3c0428cd5"
+      stageUuid: "f60909b6-7767-86f8-9490-4d2939d8f37d"
     - stage: seal
       stageUuid: "ae4447b4-2547-8bde-a254-5b0592527127"
     - stage: uuid
-      stageUuid: "a0dfa880-9536-867c-aa9b-228d26c76e54"
+      stageUuid: "db993136-5732-8cd3-8cc3-31d0f8d6e77f"
 version: 2
 ---
 # multicellular

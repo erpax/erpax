@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "roles",
-    "uuid": "164ddf81-2964-8cc2-b0a7-cefd392d40e9",
+    "uuid": "14924a9d-3fe5-8fa6-9e69-3d346d0a2c94",
     "words": [
       "roles"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining RBAC roles — global, collection-scoped, or document-scoped — each carrying an optional capability (read/write/sign/admin/audit) and skill routes that users inherit on assignment. The NIST INCITS-359 role-definition collection.",
-    "uuid": "d587fab0-40ea-8447-b3a9-17fa8587004c",
+    "uuid": "fb7499b5-ffa1-8d7f-a7b6-7019d5a5e715",
     "words": [
       "use",
       "when",

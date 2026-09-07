@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "iso6523",
-    "uuid": "5bbf3177-f891-8475-b4b3-102cb098c62e",
+    "uuid": "eaa1775c-2c00-8017-b823-bb1d3e576755",
     "words": [
       "iso6523"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about iso6523 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "d062d3f6-c1f9-8fc4-af31-5ea469ec2eaf",
+    "uuid": "8727275e-f3fe-89f4-85ec-605acf74c4ac",
     "words": [
       "use",
       "when",

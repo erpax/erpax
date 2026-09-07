@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "boolean",
-    "uuid": "4aa25755-82b9-8a51-ad48-6b4fcad59317",
+    "uuid": "14a4f6c8-e349-8fd3-ae3d-f666e51f0806",
     "words": [
       "boolean"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about boolean — Boolean: True or False.",
-    "uuid": "9e30b81b-bad6-8c2f-b900-1482fcc847b3",
+    "uuid": "dab77049-ea39-8077-a4ef-8e240453ebb1",
     "words": [
       "use",
       "when",

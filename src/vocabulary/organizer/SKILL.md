@@ -2,11 +2,11 @@
 name: organizer
 description: Use when reasoning about organizer — An organizer of an Event.
 atomPath: "vocabulary/organizer"
-coordinate: "vocabulary/organizer · 2/share · 51b1760b"
-contentUuid: "3b8a2e5a-2ccd-5f6e-bde7-348b2a86f417"
-diamondUuid: "05e83851-d66c-8145-95e5-c5859678eb86"
-uuid: "51b1760b-4af1-809a-a5e3-952e8f38e0dd"
-horo: 2
+coordinate: "vocabulary/organizer · 7/descent · 9df45f7f"
+contentUuid: "30e19867-55cb-5820-999d-082a5627ef27"
+diamondUuid: "48fde7cf-584c-83aa-b2dd-0a0e16d197b2"
+uuid: "9df45f7f-4086-824a-9122-12ed6c5367ed"
+horo: 7
 typography:
   partition: vocabulary
   bondDegree: 6
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ee0021cb-b263-80af-b668-825e70075021"
+  computationUuid: "9cc0cfc9-eead-8aa0-912a-90cc8465d57d"
   stages:
     - stage: path
       stageUuid: "15ea795d-f1c9-89d4-8190-7341fe1cc95b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "506904df-29ce-86b0-b899-74b8233b16df"
     - stage: horo
-      stageUuid: "1b10f0ee-0dac-86e1-b01b-925fe2034825"
+      stageUuid: "eb7b8abc-a5a3-8038-a068-a995480f7975"
     - stage: seal
       stageUuid: "77d346e4-3918-8e1a-8dfc-60ba6e6d936c"
     - stage: uuid
-      stageUuid: "00e1179d-d508-88f8-a788-6b3a3a196d7b"
+      stageUuid: "257d0c0c-3fb1-8e01-a06f-078d3d368ea7"
 version: 2
 ---
 # organizer

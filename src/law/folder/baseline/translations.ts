@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "baseline",
-    "uuid": "fee131a2-f14a-8966-b211-808be55be9b1",
+    "uuid": "6253c26f-1e8e-8ac1-8b1a-1f97901310ac",
     "words": [
       "baseline"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about baseline — baseline — guardian ceilings from computed math + emitted snapshot.",
-    "uuid": "f3e6b233-c26b-8299-b566-b2151e5d3c2f",
+    "uuid": "67d910c1-44bb-8e9f-af8b-c160dc73fbab",
     "words": [
       "use",
       "when",
