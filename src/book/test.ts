@@ -40,9 +40,14 @@ describe('book — interactive page navigation', () => {
     const nav = interactiveBookNav('medical/clinic')
     expect(nav).toBeDefined()
     expect(nav!.parentBook).toBe('medical')
+    // A sibling belongs to the same BOOK — which includes the book's own root page. This asserted
+    // the path PREFIX `medical/`, and passed only while `medical` happened to sit in a different
+    // chapter from `medical/clinic`; chapters are horo digits, so a graph change moved one and the
+    // root arrived as a legitimate sibling. Assert membership, not the incidental shape.
     for (const s of nav!.siblings) {
-      expect(s.startsWith('medical/')).toBe(true)
+      expect(s === 'medical' || s.startsWith('medical/')).toBe(true)
     }
+    expect(nav!.siblings).not.toContain('medical/clinic')
   })
 
   it('chapterOf maps horo digits to measures', () => {
